@@ -1,0 +1,72 @@
+---
+title: Varningar i meddelanden
+description: Lär dig hur du kontrollerar validering och felsökning av meddelandeinnehåll
+source-git-commit: 627ffade10a420c6dea7377f6e39360abad44f32
+workflow-type: tm+mt
+source-wordcount: '400'
+ht-degree: 0%
+
+---
+
+# Varningar i dina meddelanden {#publish-manage-messages}
+
+![](assets/do-not-localize/badge.png)
+
+## Kontrollerar före publicering {#message-alerting}
+
+När du skapar ett meddelande varnar du när du behöver vidta viktiga åtgärder innan du publicerar meddelandet.
+
+Varningar visas högst upp till höger på skärmen, som visas nedan:
+
+![](assets/message-alerts.png)
+
+>[!NOTE]
+>
+>Om knappen inte visas har ingen varning identifierats.
+
+Två typer av varningar kan inträffa:
+
+* **Varningar** hänvisar till rekommendationer och bästa praxis. Ett meddelande visas till exempel om länken för avanmälan saknas.
+
+* **Fel** hindrar dig från att publicera meddelandet så länge som det inte har lösts. Du får t.ex. en varning om att ämnesraden saknas.
+
+Alla möjliga varningar och fel visas [nedan](#alerts-and-warnings).
+
+>[!CAUTION]
+>
+> Du måste åtgärda alla **fel**-varningar innan publicering.
+
+## Lista med varningar och fel {#alerts-and-warnings}
+
+De inställningar och element som kontrolleras av systemet visas nedan. Du hittar även information om hur du anpassar konfigurationen för att lösa motsvarande problem.
+
+**Varningar**:
+
+* **[!UICONTROL Opt out link not present in the email body]**: det är bra att lägga till en länk för att avbryta prenumerationen i e-postmeddelandet. Lär dig hur du konfigurerar den i [det här avsnittet](consent.md).
+
+* **[!UICONTROL Text version of html is empty]**: Glöm inte att definiera en textversion av e-posttexten, eftersom den kommer att användas när HTML-innehåll inte kan visas. Lär dig hur du skapar textversionen i [det här avsnittet](create-email-content.md#generate-text-version).
+
+* **[!UICONTROL Empty link is present in email body]**: kontrollera att alla länkar i e-postmeddelandet är korrekta. Lär dig hur du hanterar innehåll och länkar i [det här avsnittet](create-email-content.md).
+
+* **[!UICONTROL Email size has exceeded the limit of 100KB]**: för optimal leverans bör du kontrollera att e-postens storlek inte överstiger 100 kB. Lär dig hur du redigerar e-postinnehåll i [det här avsnittet](create-email-content.md).
+
+**Fel**:
+
+* **[!UICONTROL Subject Line Not Present]**: Ämnesraden för e-post är obligatorisk. Lär dig hur du definierar och anpassar den i [det här avsnittet](create-email.md).
+
+   <!--HTML is empty when Amp HTML is present-->
+
+* **[!UICONTROL Push Variant is empty]**: det här felet visas när meddelandetexten eller titeln för push-meddelanden saknas. Lär dig hur du definierar innehåll för push-meddelanden i [det här avsnittet](create-push.md).
+
+* **[!UICONTROL Email Variant is empty]**: det här felet visas när e-postinnehållet inte har konfigurerats. Lär dig hur du utformar e-postinnehåll i [det här avsnittet](design-emails.md).
+
+* **[!UICONTROL Preset doesn’t exist]**: Du kan inte publicera meddelandet om den förinställning du har valt tas bort efter att meddelandet har skapats. Om det här felet inträffar väljer du en annan förinställning i meddelandet **[!UICONTROL Properties]**. Läs mer om anpassning i [det här avsnittet](configuration/about-subdomain-delegation.md).
+
+* **[!UICONTROL Push iOS/Android payload has exceeded limit of 4KB]**: storleken på push-meddelanden får inte överskrida 4 kB. Om du vill iaktta den här gränsen försöker du minska användningen av bilder eller känslolägesikoner. Lär dig hur du hanterar ditt push-meddelandeinnehåll i [det här avsnittet](create-push.md).
+
+>[!CAUTION]
+>
+> Om du vill kunna publicera meddelandet måste du åtgärda alla **fel**-varningar.
+
+<!--Other issues can stop publication such as:
+* The push notification title is empty-->
