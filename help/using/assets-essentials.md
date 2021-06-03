@@ -1,10 +1,10 @@
 ---
 title: Adobe Experience Manager Assets Essentials
 description: Kom igång med Assets Essentials
-source-git-commit: b831fc0d0543c8f568299ea71d8b3259198a7590
+source-git-commit: ba350f4d482238b733594a71441e2d01e536e282
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 3%
+source-wordcount: '379'
+ht-degree: 2%
 
 ---
 
@@ -16,9 +16,13 @@ ht-degree: 3%
 
 [!DNL Adobe Experience Manager Assets Essentials] har ett enda centraliserat arkiv med resurser som du kan använda för att fylla i dina meddelanden. Den kan nås direkt från [!DNL Adobe Journey Optimizer] till **[!UICONTROL Assets]**-avsnittet. Du kan också komma åt resurser och mappar när du utformar ett e-postinnehåll. [Läs mer om e-postdesign](design-emails.md).
 
+Mer detaljerad information om [!DNL Assets Essentials] finns i [Adobe Experience Manager Assets Essentials-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html).
+
 ## Överför resurser{#add-asset}
 
-Om du vill överföra filer i [!DNL Assets Essentials] måste du först bläddra eller skapa mappen som den ska lagras i:
+Om du vill överföra filer i [!DNL Assets Essentials] måste du först bläddra i eller skapa den mapp som filen ska lagras i.
+
+Mer information om hur du överför resurser finns i [Adobe Experience Manager Assets Essentials-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/add-delete-assets.html).
 
 1. På startsidan för [!DNL Adobe Journey Optimizer] väljer du fliken **[!UICONTROL Assets]** för att komma åt [!DNL Assets Essentials].
 
@@ -59,6 +63,8 @@ Följande åtgärder är tillgängliga i verktygsfältet:
 * **[!UICONTROL Delete]** för att ta bort resursen från  [!DNL Assets Essentials].
 * **[!UICONTROL Copy]** om du vill kopiera/klistra in resursen i en annan mapp.
 * **[!UICONTROL Move]** om du vill flytta resursen till andra mappar.
+
+Mer information om hur du hanterar resurser finns i [Adobe Experience Manager Assets Essentials-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-assets.html).
 
 ## Infoga resurser i meddelanden {#use-assets}
 
