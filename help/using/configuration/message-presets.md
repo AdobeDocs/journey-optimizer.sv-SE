@@ -1,9 +1,9 @@
 ---
 title: Skapa meddelandeförinställningar
-description: Lär dig hur du skapar förinställningar för e-post och push-meddelanden
-source-git-commit: 4353b8f01bb4e47f6f2384e464341c0ee80ecaf2
+description: Lär dig hur du konfigurerar och övervakar meddelandeförinställningar
+source-git-commit: e76528caa407de9c8794bd2858ffa9bc8673d715
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,12 @@ ht-degree: 0%
 
 # Skapa meddelandeförinställningar
 
-Med [!DNL Journey Optimizer] kan du konfigurera meddelandeförinställningar som definierar alla tekniska parametrar som krävs för e-post och push-meddelanden (e-posttyp, avsändarens e-postadress och namn, mobilappar osv.).
+Med [!DNL Journey Optimizer] kan du konfigurera meddelandeförinställningar som definierar alla tekniska parametrar som krävs för e-post och push-meddelanden: e-posttyp, avsändarens e-postadress och namn, mobilappar med mera.
 
-Du kan ställa in så många meddelandeförinställningar som du vill, beroende på vilka olika varumärken du behöver kommunicera för.
+>[!CAUTION]
+>
+> Konfigurationen av meddelandeförinställningar är begränsad till Reseadministratörer. [Läs mer](../administration/ootb-product-profiles.md#journey-administrator)
+
 
 När meddelandeförinställningarna har konfigurerats kan du välja dem när du skapar meddelanden från **[!UICONTROL Presets]**-listan.
 
@@ -25,24 +28,48 @@ Så här skapar du en meddelandeförinställning:
 
    ![](../assets/preset-create.png)
 
-1. Ange ett namn och en beskrivning (valfritt) för förinställningen och ange sedan de kanaler som du vill konfigurera.
+1. Ange ett namn och en beskrivning (valfritt) för förinställningen och välj sedan de kanaler som ska konfigureras.
 
    ![](../assets/preset-general.png)
 
-1. Konfigurera inställningar för e-post och push-meddelanden:
 
-   Ange följande för e-postkanalen:
+   >[!NOTE]
+   >
+   > * Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken och `_`, `.`, `-` tecken.
 
-   * Den typ av kommunikation som skickas med förinställningen (transaktions- eller marknadsföringsmeddelanden).
-   * [underdomänen](about-subdomain-delegation.md) som ska användas för att skicka e-postmeddelanden,
-   * [IP-poolen](ip-pools.md) som ska associeras med förinställningen,
-   * Huvudparametrarna som ska användas för e-postmeddelanden som skickas med förinställningen.
+
+1. Konfigurera inställningarna för **e-post**.
 
    ![](../assets/preset-email.png)
 
-   Ange vilka IOS- och/eller Android-mobilprogram som ska användas för dina meddelanden i push-meddelandekanalen. Mer information om hur du konfigurerar miljön för att skicka push-meddelanden finns i [det här avsnittet](../push-configuration.md).
+   * Välj den typ av meddelande som ska skickas med förinställningen: **Transaktionell** eller **Markering**
+
+      >[!CAUTION]
+      >
+      > **Transaktionsmeddelanden** kan skickas till profiler som avbeställt marknadskommunikation. Dessa meddelanden kan bara skickas i särskilda sammanhang, t.ex. lösenordsåterställning, orderstatus eller leveransmeddelande.
+
+   * Välj den underdomän som ska användas för att skicka e-postmeddelanden. [Läs mer](about-subdomain-delegation.md)
+   * Välj den IP-pool som ska associeras med förinställningen. [Läs mer](ip-pools.md)
+   * Ange rubrikparametrarna för e-postmeddelanden som skickas med förinställningen.
+
+      >[!NOTE]
+      >
+      > * Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken och `_`, `.`, `-` tecken.
+         > 
+         > 
+      * Med undantag för **Svara på (vidarebefordrad e-post)** måste e-postadressdomänen använda den valda underdomänen.
+
+
+
+1. Konfigurera inställningar för **push-meddelanden**.
 
    ![](../assets/preset-push.png)
+
+   * Välj minst en plattform: iOS och/eller Android
+
+   * Välj de mobilprogram som ska användas för varje plattform.
+
+      Mer information om hur du konfigurerar miljön för att skicka push-meddelanden finns i [det här avsnittet](../push-configuration.md).
 
 1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara meddelandeförinställningen som utkast och återuppta konfigurationen senare.
 
@@ -54,13 +81,13 @@ Så här skapar du en meddelandeförinställning:
 
    Dessa kontroller omfattar leveranstester som utförs av Adobe-avdelningen:
 
-   * SPF-validering,
-   * DKIM-validering,
-   * MX-postvalidering,
-   * Kontrollera IP-svartlistning,
-   * Helovärdkontroll,
-   * IP-poolverifiering,
-   * A/PTR-post, t/m/res-underdomänverifiering.
+   * SPF-validering
+   * DKIM-validering
+   * MX-postvalidering
+   * Kontrollera IP-adresser som blocklist
+   * Kontroll av värddator
+   * Verifiering av IP-pool
+   * A/PTR-post, t/m/res-underdomänverifiering
 
 1. När kontrollerna är slutförda får meddelandeförinställningen statusen **[!UICONTROL Active]**. Den är klar att användas för att leverera meddelanden.
 
@@ -100,4 +127,5 @@ Om du vill redigera en meddelandeförinställning måste du först avaktivera de
 
    >[!NOTE]
    >
-   >Det går inte att ta bort förinställningar för inaktiverade meddelanden för att undvika problem i resor med dessa förinställningar för att skicka meddelanden.
+   >Det går inte att ta bort förinställningar för inaktiverade meddelanden för att undvika problem i resor som uppstår när du använder dessa förinställningar för att skicka meddelanden.
+
