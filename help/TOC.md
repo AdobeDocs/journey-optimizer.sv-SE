@@ -6,15 +6,15 @@ user-guide-description: Använd Journey Optimizer för att leverera sammankoppla
 type: Documentation
 solution: Journey Optimizer
 hide: true
-source-git-commit: fc39593802d296c035f1c77f237ae19cc73ce059
+source-git-commit: a4dd0cb3054a0f637068017fe1749a354e4d7e63
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 42%
+ht-degree: 48%
 
 ---
 
 
-# [!DNL Journey Optimizer] Hjälp {#using}
+# Hjälp om [!DNL Journey Optimizer] {#using}
 
 + [Produktdokumentation](ajo-home.md)
 + Kom igång{#get-started}
@@ -135,15 +135,15 @@ ht-degree: 42%
    + Exportera din erbjudandekatalog {#export-catalog}
       + [Kom igång med export av din erbjudandekatalog ](using/offers/export-catalog/get-started-export.md)
       + [Åtkomst till den exporterade erbjudandekatalogen](using/offers/export-catalog/access-dataset.md)
-      + [Personligt anpassade erbjudandedatauppsättningar](using/offers/export-catalog/export-offers.md)
-      + [Beslutsdatamängd](using/offers/export-catalog/export-decisions.md)
-      + [Placeringar, datauppsättning](using/offers/export-catalog/export-placements.md)
-      + [Reservdatamängd](using/offers/export-catalog/export-fallback.md)
+      + [Datauppsättning med personaliserade erbjudanden](using/offers/export-catalog/export-offers.md)
+      + [Datauppsättning med beslut](using/offers/export-catalog/export-decisions.md)
+      + [Datauppsättning med placeringar](using/offers/export-catalog/export-placements.md)
+      + [Datauppsättning med reserverbjudanden](using/offers/export-catalog/export-fallback.md)
    + API-referens {#api-reference}
       + [Komma igång](using/offers/api-reference/getting-started.md)
       + Skapa och hantera erbjudanden med API:er {#offers-api}
          + Placeringar {#placements}
-            + [Listplaceringar](using/offers/api-reference/offers-api/placements/placements-list.md)
+            + [Lista placeringar](using/offers/api-reference/offers-api/placements/placements-list.md)
             + [Söka efter en placering](using/offers/api-reference/offers-api/placements/lookup.md)
             + [Skapa en placering](using/offers/api-reference/offers-api/placements/create.md)
             + [Uppdatera en placering](using/offers/api-reference/offers-api/placements/update.md)
@@ -155,31 +155,31 @@ ht-degree: 42%
             + [Uppdatera en beslutsregel](using/offers/api-reference/offers-api/decision-rules/update.md)
             + [Ta bort en beslutsregel](using/offers/api-reference/offers-api/decision-rules/delete.md)
          + Taggar {#tags}
-            + [Listtaggar](using/offers/api-reference/offers-api/tags/tags-list.md)
+            + [Lista taggar](using/offers/api-reference/offers-api/tags/tags-list.md)
             + [Söka efter en tagg](using/offers/api-reference/offers-api/tags/lookup.md)
             + [Skapa en tagg](using/offers/api-reference/offers-api/tags/create.md)
             + [Uppdatera en tagg](using/offers/api-reference/offers-api/tags/update.md)
             + [Ta bort en tagg](using/offers/api-reference/offers-api/tags/delete.md)
          + Personaliserade erbjudanden {#personalized-offers}
             + [Lista personaliserade erbjudanden](using/offers/api-reference/offers-api/personalized-offers/offers-list.md)
-            + [Sök efter ett personaliserat erbjudande](using/offers/api-reference/offers-api/personalized-offers/lookup.md)
+            + [Söka efter ett personaliserat erbjudande](using/offers/api-reference/offers-api/personalized-offers/lookup.md)
             + [Skapa ett personaliserat erbjudande](using/offers/api-reference/offers-api/personalized-offers/create.md)
             + [Uppdatera ett personaliserat erbjudande](using/offers/api-reference/offers-api/personalized-offers/update.md)
             + [Ta bort ett personaliserat erbjudande](using/offers/api-reference/offers-api/personalized-offers/delete.md)
          + Samlingar {#collections}
-            + [Listsamlingar](using/offers/api-reference/offers-api/collections/collections-list.md)
+            + [Lista samlingar](using/offers/api-reference/offers-api/collections/collections-list.md)
             + [Söka efter en samling](using/offers/api-reference/offers-api/collections/lookup.md)
             + [Skapa en samling](using/offers/api-reference/offers-api/collections/create.md)
             + [Uppdatera en samling](using/offers/api-reference/offers-api/collections/update.md)
             + [Ta bort en samling](using/offers/api-reference/offers-api/collections/delete.md)
          + Reserverbjudanden {#fallback-offers}
             + [Lista reserverbjudanden](using/offers/api-reference/offers-api/fallback-offers/fallback-list.md)
-            + [Sök efter ett reserverbjudande](using/offers/api-reference/offers-api/fallback-offers/lookup.md)
+            + [Söka efter ett reserverbjudande](using/offers/api-reference/offers-api/fallback-offers/lookup.md)
             + [Skapa ett reserverbjudande](using/offers/api-reference/offers-api/fallback-offers/create.md)
-            + [Uppdatera ett sekundärt erbjudande](using/offers/api-reference/offers-api/fallback-offers/update.md)
+            + [Uppdatera ett reserverbjudande](using/offers/api-reference/offers-api/fallback-offers/update.md)
             + [Ta bort ett reserverbjudande](using/offers/api-reference/offers-api/fallback-offers/delete.md)
       + Skapa och hantera beslut med API:er {#activities-api}
-         + [Listbeslut](using/offers/api-reference/activities-api/activities/activities-list.md)
+         + [Lista beslut](using/offers/api-reference/activities-api/activities/activities-list.md)
          + [Söka efter ett beslut](using/offers/api-reference/activities-api/activities/lookup.md)
          + [Skapa ett beslut](using/offers/api-reference/activities-api/activities/create.md)
          + [Uppdatera ett beslut](using/offers/api-reference/activities-api/activities/update.md)
