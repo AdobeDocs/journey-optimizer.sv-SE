@@ -1,29 +1,22 @@
 ---
 title: Delegera underdomäner
 description: Lär dig hur du delegerar dina underdomäner
-page-status-flag: never-activated
-uuid: null
-contentOwner: null
-products: null
-audience: administrators
-content-type: reference
-topic-tags: null
-discoiquuid: null
 internal: n
 snippet: y
-source-git-commit: da995c56b59fb191934788c7aea9048123a2fe6d
+source-git-commit: e569e992530df5429ffb96f78ba28b53de0ded81
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 43%
+source-wordcount: '385'
+ht-degree: 26%
 
 ---
 
 
-# Kom igång med delegering till underdomäner
+# Delegering av underdomän i [!DNL Journey Optimizer]
 
-## Isolera era varumärken för att skydda ert rykte
+Genom att skapa en underdomän för e-postkampanjer kan varumärken isolera olika typer av trafik (till exempel marknadsföring kontra företag) i specifika IP-pooler och med specifika domäner, vilket snabbar upp IP-uppvärmningsprocessen och förbättrar leveransmöjligheterna generellt. Om du delar en domän och den blockeras eller läggs till i blockeringslista kan det påverka företagets e-postleverans. Men kända problem eller blockeringar på en domän som är specifik för din e-postmarknadsföring kommer att påverka just det e-postflödet. Om du använder huvuddomänen som avsändare eller Från-adress för flera e-postströmmar kan det också bryta e-postautentiseringen, vilket gör att dina meddelanden blockeras eller placeras i skräppostmappen.
 
-En underdomän är en division av din domän som kan användas för att isolera dina varumärken eller olika typer av trafik (transaktionsmeddelanden och marknadsföringsinformation osv.).
+En underdomän är en division av din domän som kan användas för att isolera dina varumärken eller olika typer av trafik, till exempel transaktionsmeddelanden och marknadsföringskommunikation.
+
 Låt oss ta exemplet med domänen ”mybrand.com” som används för att skicka både transaktions- och marknadsföringskommunikation. I det här fallet kan du konfigurera två underdomäner:
 
 * underdomänen ”info.mybrand.com” för transaktionskommunikation (inköpsbekräftelser och lösenordsåterställning osv.) och
@@ -31,16 +24,12 @@ Låt oss ta exemplet med domänen ”mybrand.com” som används för att skicka
 
 På så sätt kan du bevara domänens och andra underdomäners rykte. Om t.ex. underdomänen ”marketing.mybrand.com” läggs till i blockeringslistan hos internetleverantörer på grund av dålig levererbarhet förhindrar detta att hela domänen ”mybrand.com” och underdomänen ”info.mybrand.com” läggs till i blockeringslistan.
 
-## Se till att era resurs-URL:er är genomskinliga för kunderna
-
 När du implementerar en lösning finns det krav för externt vända komponenter: dessa innehåller bland annat inställningar av länkar och webbsidor som ska spåras, visning av spegelsidor.
 
-Dessa krav hanteras via komponenter som finns både på Adobe och hos kunden, men de innehåller URL:er som kan ses av mottagarna av e-postmeddelandena. För att undvika att ha URL:er som anger den underliggande tekniska lösningen eller värdtjänstleverantören, kan underdomäner konfigureras så att de blir genomskinliga för e-postmeddelandets mottagare. [Läs mer om domändelegering](https://helpx.adobe.com/se/campaign/kb/domain-name-delegation.html).
+Dessa krav hanteras via komponenter som finns både på Adobe och hos kunden, men de innehåller URL:er som kan ses av mottagarna av e-postmeddelandena. För att undvika att ha URL:er som anger den underliggande tekniska lösningen eller värdtjänstleverantören, kan underdomäner konfigureras så att de blir genomskinliga för e-postmeddelandets mottagare.
 
-## Delegering av underdomän i Journey Optimizer
+**Läs mer**
 
-Journey Optimizer har flera funktioner som hjälper dig att hantera underdomäner:
-
-* [Delegera dina ](delegate-subdomain.md) underdomäner direkt från gränssnittet,
-* [Lägg till Google TXT-](google-txt.md) poster i dina underdomäner för att säkerställa att e-postmeddelanden kan levereras till Gmail-adresser,
-* [Få åtkomst till PTR-](ptr-records.md) postgenererade för dina underdomäner, så att de kan verifieras genom att skicka e-postservrar.
+* Lär dig hur du [delegerar dina underdomäner](delegate-subdomain.md) direkt från gränssnittet
+* Lär dig hur du [lägger till Google TXT-poster](google-txt.md) i dina underdomäner för att se till att e-postmeddelanden skickas till Gmail-adresser
+* Lär dig hur du [får åtkomst till de PTR-poster](ptr-records.md) som genererats för dina underdomäner, så att de kan verifieras genom att skicka e-postservrar
