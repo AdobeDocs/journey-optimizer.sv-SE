@@ -11,9 +11,9 @@ topic-tags: null
 discoiquuid: null
 internal: n
 snippet: y
-source-git-commit: e569e992530df5429ffb96f78ba28b53de0ded81
+source-git-commit: 68716d6520848f4825e90106ea1cd76185ae0f87
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '433'
 ht-degree: 8%
 
 ---
@@ -23,10 +23,9 @@ ht-degree: 8%
 
 Delegering av domännamn är en metod som tillåter ägaren av ett domännamn (tekniskt: en DNS-zon) för att delegera en indelning av den (tekniskt: en DNS-zon under den, som kan kallas en underzon) till en annan entitet. Om en kund hanterar zonen&quot;example.com&quot; kan han delegera underzonen&quot;marketing.example.com&quot; till Adobe.
 
-Genom att delegera en underdomän för användning med Adobe Optimizer kan klienterna förlita sig på Adobe för att upprätthålla den DNS-infrastruktur som krävs för att uppfylla branschstandard för leveranskrav för e-postmarknadsföringsdomäner, samtidigt som de behåller och kontrollerar DNS för sina
-interna e-postdomäner.
+Genom att delegera en underdomän för användning med [!DNL Journey Optimizer] kan klienterna förlita sig på att Adobe upprätthåller den DNS-infrastruktur som krävs för att uppfylla branschstandardkraven för leverans för avsändardomäner för e-postmarknadsföring, samtidigt som de behåller och kontrollerar DNS för sina interna e-postdomäner.
 
-Med Journey Optimizer kan du delegera dina underdomäner helt till Adobe. På så sätt kan Adobe leverera meddelanden som en hanterad tjänst genom att kontrollera och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra e-postkampanjer.
+[!DNL Journey Optimizer] kan du delegera dina underdomäner till Adobe direkt från produktgränssnittet. På så sätt kan Adobe leverera meddelanden som en hanterad tjänst genom att kontrollera och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra e-postkampanjer.
 
 >[!NOTE]
 >
