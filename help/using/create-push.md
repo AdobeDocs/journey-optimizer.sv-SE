@@ -1,7 +1,7 @@
 ---
 title: Konfigurera ett push-meddelande
 description: Lär dig hur du skapar ett push-meddelande i Journey Optimizer
-source-git-commit: 9ea3f4eb7767f9ad4c608d9c28d9ee7ca4bb8e3b
+source-git-commit: 03d003682d796906fcf89af02aa98d549b5214a3
 workflow-type: tm+mt
 source-wordcount: '1163'
 ht-degree: 10%
@@ -83,7 +83,7 @@ Använd avsnittet **[!UICONTROL Custom data]** för att lägga till nyckel/värd
 
 ## Anpassade data
 
-I avsnittet **[!UICONTROL Custom data]** kan du lägga till anpassade variabler i nyttolasten, beroende på din mobilprogramkonfiguration. Mer information om hur du ställer in push-meddelanden i Adobe Experience Platform och Adobe Launch finns i [det här avsnittet](push-configuration.md)
+I avsnittet **[!UICONTROL Custom data]** kan du lägga till anpassade variabler i nyttolasten, beroende på din mobilprogramkonfiguration. Mer information om hur du ställer in push-meddelanden i Adobe Experience Platform och Adobe Launch finns i [det här avsnittet](push-gs.md)
 
 ## Avancerade alternativ
 
@@ -109,7 +109,7 @@ Du kan konfigurera **[!UICONTROL Advanced options]** för ditt push-meddelande. 
 * [Understand push notification flow](push-gs.md)
 -->
 
-* [Konfigurera push-kanal](push-configuration.md)
+* [Konfigurera push-kanal](push-gs.md)
 * [Skapa ett nytt meddelande](create-message.md)
 * [Lägg till ett meddelande i en resa](building-journeys/journeys-message.md)
 
