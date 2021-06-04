@@ -1,7 +1,7 @@
 ---
 title: Skapa meddelandeförinställningar
 description: Lär dig hur du konfigurerar och övervakar meddelandeförinställningar
-source-git-commit: 6cabe17f67d0207fc72d3c61498fae0affe5a785
+source-git-commit: 5490a12f7babc7d615f22f919e58b8eff51cf79c
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 0%
@@ -18,6 +18,7 @@ Med [!DNL Journey Optimizer] kan du konfigurera meddelandeförinställningar som
 > Konfigurationen av meddelandeförinställningar är begränsad till Reseadministratörer. [Läs mer](../administration/ootb-product-profiles.md#journey-administrator)
 
 
+
 När meddelandeförinställningarna har konfigurerats kan du välja dem när du skapar meddelanden från **[!UICONTROL Presets]**-listan.
 
 ## Skapa en meddelandeförinställning {#create-message-preset}
@@ -27,6 +28,7 @@ Så här skapar du en meddelandeförinställning:
 1. Gå till menyn **[!UICONTROL Channels]** / **[!UICONTROL Message presets]** och klicka sedan på **[!UICONTROL Create Message preset]**.
 
    ![](../assets/preset-create.png)
+
 
 1. Ange ett namn och en beskrivning (valfritt) för förinställningen och välj sedan de kanaler som ska konfigureras.
 
@@ -80,6 +82,7 @@ Så här skapar du en meddelandeförinställning:
 
    Dessa kontroller omfattar leveranstester som utförs av Adobe-avdelningen:
 
+
    * SPF-validering
    * DKIM-validering
    * MX-postvalidering
@@ -87,6 +90,7 @@ Så här skapar du en meddelandeförinställning:
    * Kontroll av värddator
    * Verifiering av IP-pool
    * A/PTR-post, t/m/res-underdomänverifiering
+
 
 1. När kontrollerna är slutförda får meddelandeförinställningen statusen **[!UICONTROL Active]**. Den är klar att användas för att leverera meddelanden.
 
