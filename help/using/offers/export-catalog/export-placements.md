@@ -1,14 +1,14 @@
 ---
-title: Placeringar, datauppsättning
+title: Datauppsättning med placeringar
 description: I det här avsnittet visas alla fält som används i den exporterade datauppsättningen för placeringar.
-source-git-commit: 958bf03f3d3c2dd1606daba9dfef1284e2ed5cdd
+source-git-commit: cd44676a7a0f60ce3e97652ec6459f708557e14c
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 0%
+source-wordcount: '365'
+ht-degree: 1%
 
 ---
 
-# Placeringar, datauppsättning {#placements-dataset}
+# Datauppsättning med placeringar {#placements-dataset}
 
 Varje gång ett erbjudande ändras uppdateras den autogenererade datauppsättningen för ersättningar.
 
@@ -60,11 +60,11 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 **fält:** contentTypes 
 **Type:** array
 
-* **MIME-mediatyp**
+**_experience > decisioning > contentTypes > MIME Media Type**
 
-   **Title:** MIME Media Type
-   **Beskrivning:** En begränsning för medietypen för komponenterna som förväntas i placeringen. Det kan finnas mer än en medietyp för en komponent, t.ex. ett annat bildformat.
-   **Typ:** sträng
+**Title:** MIME Media Type 
+**Description:** En begränsning för medietypen för komponenterna som förväntas i den placeringen. Det kan finnas mer än en medietyp för en komponent, t.ex. ett annat bildformat.
+**Typ:** sträng
 
 #### _experience > Decision > Placement Description
 
