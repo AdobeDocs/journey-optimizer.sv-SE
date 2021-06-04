@@ -6,10 +6,10 @@ user-guide-description: Använd Journey Optimizer för att leverera sammankoppla
 type: Documentation
 solution: Journey Optimizer
 hide: true
-source-git-commit: d2f17a273445a92f11eeb8968bd3082295c3aa09
+source-git-commit: 03d003682d796906fcf89af02aa98d549b5214a3
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 48%
+source-wordcount: '627'
+ht-degree: 49%
 
 ---
 
@@ -192,9 +192,8 @@ ht-degree: 48%
    + Konfigurera meddelanden {#configuration}
       + [Tekniska inställningar](using/administration/administration.md)
       + [Skapa meddelandeförinställningar](using/configuration/message-presets.md)
-      + Konfiguration för push-meddelanden{#push-config}
-         + [Kom igång med push-konfiguration](using/push-gs.md)
-         + [Konfigurera push-kanal](using/push-configuration.md)
+      + [Konfigurera push-kanal](using/push-configuration.md)
+      + [Konfiguration för push-meddelanden](using/push-gs.md)
       + E-postkonfiguration {#email-config}
          + Delegera underdomäner {#delegate-subdomains}
             + [Kom igång med delegering till underdomäner](using/configuration/about-subdomain-delegation.md)
