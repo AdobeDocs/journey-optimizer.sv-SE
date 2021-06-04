@@ -8,7 +8,7 @@ level: Intermediate
 product: Adobe Journey Optimizer
 solution: Journey Optimizer
 exl-id: 0964a484-f957-4aae-a571-61b2a1615026
-source-git-commit: 61de8dc27029e229a203be8a984d6fa2d4f365e0
+source-git-commit: 03d003682d796906fcf89af02aa98d549b5214a3
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 9%
@@ -24,7 +24,7 @@ För att kunna skapa dina resor och skicka meddelanden måste du gå igenom föl
 
 1. **Konfigurera meddelanden och kanaler**: definiera förinställningar, anpassa och anpassa e-post och push-meddelanden
 
-   * Definiera inställningar för push-meddelanden i både [!DNL Adobe Experience Platform] och [!DNL Adobe Experience Platform Launch]. [Läs mer](../push-configuration.md)
+   * Definiera inställningar för push-meddelanden i både [!DNL Adobe Experience Platform] och [!DNL Adobe Experience Platform Launch]. [Läs mer](../push-gs.md)
 
    * Skapa meddelandeförinställningar för att konfigurera alla tekniska parametrar som krävs för e-post och push-meddelanden. [Läs mer](message-presets.md)
 
