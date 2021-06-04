@@ -1,7 +1,7 @@
 ---
 title: Skapa meddelandeförinställningar
 description: Lär dig hur du konfigurerar och övervakar meddelandeförinställningar
-source-git-commit: 5490a12f7babc7d615f22f919e58b8eff51cf79c
+source-git-commit: 03d003682d796906fcf89af02aa98d549b5214a3
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Så här skapar du en meddelandeförinställning:
 
    * Välj de mobilprogram som ska användas för varje plattform.
 
-      Mer information om hur du konfigurerar miljön för att skicka push-meddelanden finns i [det här avsnittet](../push-configuration.md).
+      Mer information om hur du konfigurerar miljön för att skicka push-meddelanden finns i [det här avsnittet](../push-gs.md).
 
 1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara meddelandeförinställningen som utkast och återuppta konfigurationen senare.
 
