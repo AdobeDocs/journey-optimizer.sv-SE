@@ -1,9 +1,9 @@
 ---
 title: Skapa meddelandeförinställningar
 description: Lär dig hur du konfigurerar och övervakar meddelandeförinställningar
-source-git-commit: 68716d6520848f4825e90106ea1cd76185ae0f87
+source-git-commit: 6cabe17f67d0207fc72d3c61498fae0affe5a785
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Så här skapar du en meddelandeförinställning:
 
    >[!NOTE]
    >
-   > Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken och `_` `.` `-` tecken.
+   > Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-`.
 
 1. Konfigurera inställningarna för **e-post**.
 
@@ -53,7 +53,7 @@ Så här skapar du en meddelandeförinställning:
 
       >[!NOTE]
       >
-      > * Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken och `_`, `.`, `-` tecken.
+      > * Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-`.
          > 
          > 
       * Med undantag för **Svara på (vidarebefordrad e-post)** måste e-postadressdomänen använda den valda underdomänen.
