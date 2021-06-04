@@ -1,14 +1,14 @@
 ---
 title: Kom igång med push-konfiguration
 description: Förstå dataflöde och komponenter för push-meddelanden
-source-git-commit: d2f17a273445a92f11eeb8968bd3082295c3aa09
+source-git-commit: 03d003682d796906fcf89af02aa98d549b5214a3
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
 
-# Kom igång med push-konfiguration {#get-started-push}
+# Konfiguration för push-meddelanden {#get-started-push}
 
 ![](assets/do-not-localize/badge.png)
 
@@ -68,5 +68,3 @@ I följande bild visas de olika stegen, från början till slut, som används f�
 
 ![](assets/user-flow.png)
 
-
-Detaljerade steg för att konfigurera push-kanal och aktivera push-meddelanden i [!DNL Journey Optimizer] finns på [den här sidan](push-configuration.md).
