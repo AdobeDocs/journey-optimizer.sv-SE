@@ -1,7 +1,7 @@
 ---
 title: Skapa meddelandeförinställningar
 description: Lär dig hur du konfigurerar och övervakar meddelandeförinställningar
-source-git-commit: e76528caa407de9c8794bd2858ffa9bc8673d715
+source-git-commit: 68716d6520848f4825e90106ea1cd76185ae0f87
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
@@ -35,8 +35,7 @@ Så här skapar du en meddelandeförinställning:
 
    >[!NOTE]
    >
-   > * Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken och `_`, `.`, `-` tecken.
-
+   > Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken och `_` `.` `-` tecken.
 
 1. Konfigurera inställningarna för **e-post**.
 
@@ -65,7 +64,7 @@ Så här skapar du en meddelandeförinställning:
 
    ![](../assets/preset-push.png)
 
-   * Välj minst en plattform: iOS och/eller Android
+   * Välj minst en plattform: **iOS** och/eller **Android**
 
    * Välj de mobilprogram som ska användas för varje plattform.
 
@@ -77,7 +76,7 @@ Så här skapar du en meddelandeförinställning:
 
 1. När meddelandeförinställningen har skapats visas den i listan med statusen **[!UICONTROL Processing]**.
 
-   Under det här steget kommer flera kontroller att utföras för att verifiera att den har konfigurerats korrekt. Bearbetningstiden är mellan 48 och 72 timmar och kan ta upp till 7-10 dagar.
+   Under det här steget kommer flera kontroller att utföras för att verifiera att den har konfigurerats korrekt. Bearbetningstiden är ungefär **48h-72h** och kan ta upp till **7-10 dagar**.
 
    Dessa kontroller omfattar leveranstester som utförs av Adobe-avdelningen:
 
