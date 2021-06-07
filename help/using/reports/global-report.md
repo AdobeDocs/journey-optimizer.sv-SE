@@ -1,9 +1,9 @@
 ---
 title: Global rapport
 description: Lär dig använda data från den globala rapporten
-source-git-commit: 55b9e5d8ed259ec6ed7746e835691d7d6261a8a4
+source-git-commit: c2bbc0335b5f123c1d2b0052edf1b90937011e19
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -11,6 +11,10 @@ ht-degree: 0%
 # Global rapport {#global-report}
 
 ![](../assets/do-not-localize/badge.png)
+
+>[!NOTE]
+>
+> Om anpassade frågor ställs via API:er när du använder frågetjänsten kan du vänta dig en viss fördröjning för dina rapporter.
 
 Med **[!UICONTROL Global report]** kan du mäta effekten av dina resor och leveranser under en viss tidsperiod.
 
