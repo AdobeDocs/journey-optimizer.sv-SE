@@ -1,10 +1,10 @@
 ---
 title: Användargränssnitt
 description: Journey Optimizer användargränssnitt
-source-git-commit: 4464ea7169424c1ec6212394b8bda79a9bec1913
+source-git-commit: 539551998d311a4860ad01b1bfe37cc2f77f8030
 workflow-type: tm+mt
-source-wordcount: '1446'
-ht-degree: 36%
+source-wordcount: '1486'
+ht-degree: 34%
 
 ---
 
@@ -94,22 +94,30 @@ Standardspråket för gränssnittet avgörs av det språk du föredrar i använd
 
 Så här byter du språk:
 
-* Klicka på **Redigera inställningar** i din avatar, längst upp till höger.
-* Klicka sedan på **Gå till Adobe-konto** för att komma åt din Adobe-profil.
-* Välj fliken **Meddelanden** högst upp och klicka på **Inställningar**.
-* Välj önskat språk och klicka på **Spara**.
+* Klicka på **Inställningar** i din avatar högst upp till höger.
+   ![](assets/preferences.png)
+* Klicka sedan på det språk som visas under din e-postadress
+* Välj önskat språk och klicka på **Spara**. Du kan välja ett andra språk om komponenten som du använder inte är lokaliserad på ditt första språk.
+   ![](assets/select-language.png)
 
->[!NOTE]
->
->Du måste logga ut och logga in igen på [!DNL Journey Optimizer] för att tillämpa ändringarna.
+## Sökning
 
-## Söka och filtrera{#section_lgm_hpz_pgb}
+Använd Adobe Experience Cloud-sökningen mitt i den övre raden för att hitta resurser, resor eller meddelanden i dina sandlådor. Börja skriva in innehåll för att visa de bästa resultaten.
 
-I de flesta av listorna kan du söka efter ett objekt med hjälp av ett sökfält.
+![](assets/unified-search.png)
 
-Du kommer åt **[!UICONTROL Filters]** genom att klicka på filterikonen högst upp till vänster i listan. Med filtermenyn kan du filtrera de visade elementen enligt olika villkor. Du kan välja att endast visa element av en viss typ eller status, de element du har skapat eller de element som har ändrats under de senaste 30 dagarna.
+Tryck på **Enter** för att få tillgång till alla resultat och filter.
 
-I reselistan kan du, utöver **[!UICONTROL Creation filters]**, även filtrera de visade resorna efter status och version (**[!UICONTROL Status and version filters]**). Du kan välja att bara visa resor som använder en viss händelse, fältgrupp eller åtgärd (**[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**). Med **[!UICONTROL Publication filters]** kan du välja ett publiceringsdatum eller en användare. Du kan till exempel välja att visa de senaste versionerna av direktresor som publicerades igår. [Läs mer](building-journeys/using-the-journey-designer.md).
+![](assets/search-and-filter.png)
+
+
+## Filterlistor{#section_lgm_hpz_pgb}
+
+I de flesta av listorna kan du söka efter ett visst objekt och välja filtervillkor.
+
+Du kommer åt filter genom att klicka på filterikonen högst upp till vänster i listan. Med filtermenyn kan du filtrera de visade elementen enligt olika villkor. Du kan välja att endast visa element av en viss typ eller status, de element du har skapat eller de element som har ändrats under de senaste 30 dagarna. Alternativen varierar beroende på sammanhanget.
+
+I listan över resor kan du filtrera resorna efter status och version från **[!UICONTROL Status and version filters]**. Du kan välja att endast visa resor som använder en specifik händelse, fältgrupp eller åtgärd från **[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**. Med **[!UICONTROL Publication filters]** kan du välja ett publiceringsdatum eller en användare. Du kan till exempel välja att visa de senaste versionerna av direktresor som publicerades igår. [Läs mer](building-journeys/using-the-journey-designer.md).
 
 >[!NOTE]
 >
@@ -117,7 +125,7 @@ I reselistan kan du, utöver **[!UICONTROL Creation filters]**, även filtrera d
 
 Använd kolumnerna **[!UICONTROL Last update]** och **[!UICONTROL Last update by]** för att kontrollera när den senaste uppdateringen av dina resor gjordes och vem som sparade den.
 
-![](assets/journey74.png)
+![](assets/filter-journeys.png)
 
 I rutorna Händelse, Datakälla och Åtgärdskonfiguration visar fältet **[!UICONTROL Used in]** antalet resor som använder just den händelsen, fältgruppen eller åtgärden. Du kan klicka på knappen **[!UICONTROL View journeys]** för att visa en lista över motsvarande resor.
 
