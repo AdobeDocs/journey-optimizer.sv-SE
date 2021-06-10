@@ -1,10 +1,10 @@
 ---
 title: Användargränssnitt
 description: Journey Optimizer användargränssnitt
-source-git-commit: 539551998d311a4860ad01b1bfe37cc2f77f8030
+source-git-commit: 35fcbabd227f11890075955265b1178a91214607
 workflow-type: tm+mt
-source-wordcount: '1486'
-ht-degree: 34%
+source-wordcount: '1116'
+ht-degree: 18%
 
 ---
 
@@ -148,59 +148,3 @@ Om användarvänliga namn finns visas fältet som `<friendly-name>(<name>)`. Om 
 >[!NOTE]
 >
 >Användarvänliga namn hämtas inte när du väljer fält från en sammanslutning av scheman.
-
-## Tillgänglighet{#cjm-accessibility}
-
-Här är de olika kortkommandona som finns i gränssnittet i [!DNL Journey Optimizer].
-
-_I listan över resor, åtgärder, datakällor eller händelser:_
-
-* Tryck på **c** för att skapa en ny resa, åtgärd, datakälla eller händelse.
-
-_När du konfigurerar en aktivitet i en resa:_
-
-Arbetsytan sparas automatiskt. Sparstatus visas längst upp till vänster på arbetsytan.
-
-* Tryck på **Esc** för att stänga konfigurationsfönstret och ignorera ändringarna. Det här är motsvarigheten till knappen **[!UICONTROL Cancel]**.
-* Tryck på **Enter** eller klicka utanför fönstret för att stänga konfigurationsfönstret. Ändringarna sparas. Det här är motsvarigheten till knappen **[!UICONTROL Ok]**.
-* Om du trycker på **Delete** eller på **Backsteg** kan du sedan trycka på **Enter** för att bekräfta borttagningen.
-
-_I popup-fönster:_
-
-* Tryck på **Esc** för att stänga fönstret (motsvarar knappen **[!UICONTROL Cancel]**).
-* Tryck på **Enter** för att spara eller bekräfta (motsvarar knappen **[!UICONTROL Ok]** eller **[!UICONTROL Save]**).
-
-_I konfigurationsfönstret för händelser, datakällor eller åtgärder:_
-
-* Tryck på **Esc** för att stänga konfigurationsfönstret utan att spara.
-* Tryck på **Enter** för att spara ändringarna och stänga konfigurationsfönstret.
-* Tryck på **Tabb** för att hoppa mellan de olika fälten som ska konfigureras.
-
-_I den enkla uttrycksredigeraren:_
-
-* Dubbelklicka på ett fält till vänster för att lägga till en fråga (motsvarande dra och släpp).
-
-_När du bläddrar bland XDM-fält:_
-
-* Om du markerar en &quot;nod&quot; markeras alla fält i noden.
-
-_I alla textområden:_
-
-* Markera texten med tangentkombinationen **Ctrl/Kommando+A**. I nyttolastens förhandsvisning väljs nyttolasten.
-
-_På en skärm med ett sökfält:_
-
-* Markera sökfältet med tangentkombinationen **Ctrl/Kommando+F**.
-
-_På resans arbetsyta:_
-
-* Markera alla aktiviteter med tangentkombinationen **Ctrl/Kommando+A**.
-* Tryck på **Delete** eller på **Backsteg** för att radera en eller flera aktiviteter som är markerade. Därefter kan du trycka på **Enter** för att bekräfta i popup-fönstret.
-* Dubbelklicka på en aktivitet från den vänstra paletten för att lägga till den på den första tillgängliga positionen (uppifrån och ned).
-
-_Under en resa:_
-
-* Tryck på **T** för att aktivera/inaktivera testläget.
-* I en händelsebaserad resa i testläge trycker du på **E** för att aktivera en händelse.
-* Om alternativet **Enskild profil i taget** är markerat i testläge i en segmentbaserad resa trycker du på **P** för att aktivera en händelse.
-* I testläge trycker du på **L** för att visa loggarna.
