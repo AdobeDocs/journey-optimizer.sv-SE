@@ -6,10 +6,10 @@ user-guide-description: Använd Journey Optimizer för att leverera sammankoppla
 type: Documentation
 solution: Journey Optimizer
 hide: true
-source-git-commit: 03d003682d796906fcf89af02aa98d549b5214a3
+source-git-commit: b38f24f074671651a54cc4b5a5de9aa48809cb0a
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 49%
+source-wordcount: '635'
+ht-degree: 48%
 
 ---
 
@@ -66,6 +66,7 @@ ht-degree: 49%
       + [Begränsningar](using/building-journeys/limitations.md)
       + [Reseversioner](using/building-journeys/journey-versions.md)
       + [Testprofiler](using/building-journeys/creating-test-profiles.md)
+      + [Integrera med intelligenta tjänster](using/building-journeys/ai-services-overview.md)
    + Skapa en resa{#create-journey}
       + [Kom igång med resor](using/building-journeys/journey-gs.md)
       + [Utforma din resa](using/building-journeys/using-the-journey-designer.md)
@@ -208,6 +209,7 @@ ht-degree: 49%
          + [Ändra primär e-postadress](using/configuration/primary-email-addresses.md)
    + Konfigurera resor {#configure-journeys}
       + [Om datakällor, händelser och åtgärder](using/configuration/about-data-sources-events-actions.md)
+      + [Integrera med externa system](using/configuration/external-systems.md)
       + Händelsekonfiguration {#events-journeys}
          + [Allmän princip](using/event/about-events.md)
          + Konfigurera en enhetshändelse {#unitary-events}
