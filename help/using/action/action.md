@@ -2,9 +2,9 @@
 solution: Journey Orchestration
 title: Om åtgärder
 description: Läs om hur du konfigurerar en åtgärd
-source-git-commit: 4464ea7169424c1ec6212394b8bda79a9bec1913
+source-git-commit: 8ae771014808f0bf87087fe3dc926bf94d94495e
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '213'
 ht-degree: 73%
 
 ---
@@ -31,8 +31,6 @@ Med anpassade åtgärder kan du konfigurera anslutningar med ett tredjepartssyst
 >Konfigurationen av anpassade åtgärder måste utföras av en **teknisk användare**.
 
 Åtgärderna är tillgängliga på den vänstra paletten under din resa i kategorin **[!UICONTROL Action]**. Läs [den här sidan](../building-journeys/about-journey-activities.md#action-activities).
-
-I listan över **åtgärder** kan du trycka på c för att skapa en ny resa, åtgärd, datakälla eller händelse. Mer information om kortkommandon finns i [det här avsnittet](../user-interface.md#cjm-accessibility).
 
 Om du vill visa åtgärdslistan eller konfigurera en ny åtgärd går du till **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** i den vänstra navigeringen. Listan med åtgärder visas. Mer information om gränssnittet finns på [den här sidan](../user-interface.md).
 
