@@ -1,9 +1,9 @@
 ---
 title: Uppdatera profil
 description: Lär dig hur du använder aktiviteten Uppdatera profil under en resa
-source-git-commit: 55b9e5d8ed259ec6ed7746e835691d7d6261a8a4
+source-git-commit: ce9484905b359900096858e46c05aef09efaa760
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '460'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,11 @@ Mer information om hur du omvandlar en befintlig profil till en testprofil finns
 
    ![](../assets/profileupdate2.png)
 
-1. Välj en datauppsättning i listan. Datamängdsvalet avgör var det nya värdet i profilfältet ska lagras.
+1. Välj en datauppsättning i listan.
+
+   >[!NOTE]
+   >
+   >Åtgärden **Uppdatera profil** uppdaterar profildata i realtid, men uppdaterar inte datauppsättningar. Val av datauppsättning krävs eftersom profilen är en post som är relaterad till en datauppsättning.
 
 1. Klicka på fältet **Värde** för att definiera värdet som du vill använda:
 
