@@ -2,10 +2,10 @@
 solution: Journey Orchestration
 title: Om anpassad åtgärdskonfiguration
 description: Lär dig hur du konfigurerar en anpassad åtgärd
-source-git-commit: 55b9e5d8ed259ec6ed7746e835691d7d6261a8a4
+source-git-commit: 433d750f7fde36b049bc36be2325627270c154a0
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 9%
+source-wordcount: '578'
+ht-degree: 8%
 
 ---
 
@@ -69,6 +69,10 @@ När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICO
 I avsnittet **[!UICONTROL Message parameters]** klistrar du in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten.
 
 ![](../assets/customactionpayloadmessage.png)
+
+>[!NOTE]
+>
+>Fältnamn i nyttolasten får inte innehålla &quot;.&quot; tecken.
 
 Du kan definiera parametertypen (t.ex.: sträng, heltal osv.).
 
