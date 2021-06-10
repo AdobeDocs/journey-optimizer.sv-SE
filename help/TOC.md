@@ -6,9 +6,9 @@ user-guide-description: Använd Journey Optimizer för att leverera sammankoppla
 type: Documentation
 solution: Journey Optimizer
 hide: true
-source-git-commit: b38f24f074671651a54cc4b5a5de9aa48809cb0a
+source-git-commit: 48094061c6b36016d443f65cd9a882bc57425fff
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '633'
 ht-degree: 48%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 48%
    + [Vad är Journey Optimizer?](using/get-started.md)
    + [Snabbstart](using/quick-start.md)
    + [Användargränssnitt](using/user-interface.md)
-   + [Hantera behörigheter](using/permissions.md)
    + [Kända fel](using/known-issues.md)
 + Meddelanden {#create-messages}
    + [Kom igång med meddelanden](using/get-started-content.md)
