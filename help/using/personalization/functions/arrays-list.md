@@ -1,10 +1,14 @@
 ---
-title: Funktionsbibliotek
-description: Funktionsbibliotek
-source-git-commit: 8c58dd667ea59a17833bbe3482b1a233ac2e28fe
+title: Bibliotek för arrayfunktioner
+description: Bibliotek för arrayfunktioner
+feature: Personalisering
+topic: Personalisering
+role: Data Engineer
+level: Experienced
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 2%
+source-wordcount: '497'
+ht-degree: 3%
 
 ---
 
