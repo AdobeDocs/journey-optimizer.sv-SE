@@ -1,10 +1,14 @@
 ---
 title: Designa e-postmeddelanden
 description: Lär dig hur du utformar e-postmeddelanden
-source-git-commit: 55b9e5d8ed259ec6ed7746e835691d7d6261a8a4
+feature: Översikt
+topic: Innehållshantering
+role: User
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 0%
+source-wordcount: '138'
+ht-degree: 2%
 
 ---
 
