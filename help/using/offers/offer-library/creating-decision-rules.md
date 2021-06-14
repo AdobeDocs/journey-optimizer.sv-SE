@@ -1,9 +1,13 @@
 ---
 title: Skapa beslutsregler
 description: Lär dig hur du skapar beslutsregler i Adobe Experience Platform.
-source-git-commit: 741fe2b614e3ded57c4a7ecd9b7333bdd99ab359
+feature: Erbjudanden
+topic: Integreringar
+role: User
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '265'
 ht-degree: 4%
 
 ---
