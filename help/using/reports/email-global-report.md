@@ -1,9 +1,13 @@
 ---
 title: E-posta global rapport
 description: Lär dig hur du använder data från den globala e-postrapporten
-source-git-commit: f04e73187439462fc1e22c6c66398a139fbeaa5a
+feature: Rapportering
+topic: Innehållshantering
+role: User
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
