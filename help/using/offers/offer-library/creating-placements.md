@@ -1,10 +1,14 @@
 ---
 title: Skapa placeringar
 description: Lär dig hur du skapar praktik i Adobe Experience Platform.
-source-git-commit: db7fd318b14d01a0369c934a3e01c6e368d7658d
+feature: Erbjudanden
+topic: Integreringar
+role: User
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 4%
+source-wordcount: '217'
+ht-degree: 5%
 
 ---
 
