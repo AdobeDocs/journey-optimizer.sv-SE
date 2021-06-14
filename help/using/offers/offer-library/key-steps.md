@@ -1,9 +1,13 @@
 ---
 title: Viktiga steg för att skapa ett erbjudande
 description: Upptäck de viktigaste stegen som krävs för att skapa ett erbjudande.
-source-git-commit: b527186d0722492f5f509f1ae0a5315b9a9f771e
+feature: Erbjudanden
+topic: Integreringar
+role: User
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '151'
 ht-degree: 16%
 
 ---
