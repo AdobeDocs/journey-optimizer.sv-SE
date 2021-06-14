@@ -1,9 +1,13 @@
 ---
 title: Varningar i meddelanden
 description: Lär dig hur du kontrollerar validering och felsökning av meddelandeinnehåll
-source-git-commit: 627ffade10a420c6dea7377f6e39360abad44f32
+feature: Resor
+topic: Innehållshantering
+role: User
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
