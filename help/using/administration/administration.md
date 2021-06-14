@@ -3,10 +3,14 @@ title: Tekniska inställningar
 description: Läs riktlinjer för administration och inställningar
 hidefromtoc: true
 hide: true
-source-git-commit: 8a94c63b4a0cba1014e9778caa24720fb975ae52
+feature: Applikationsinställningar
+topic: Administrering
+role: Administrator
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 6%
+source-wordcount: '496'
+ht-degree: 7%
 
 ---
 
