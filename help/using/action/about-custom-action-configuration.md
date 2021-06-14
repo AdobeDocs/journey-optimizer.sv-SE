@@ -2,10 +2,14 @@
 solution: Journey Orchestration
 title: Om anpassad åtgärdskonfiguration
 description: Lär dig hur du konfigurerar en anpassad åtgärd
-source-git-commit: 433d750f7fde36b049bc36be2325627270c154a0
+feature: Instruktioner
+topic: Administrering
+role: Administrator
+level: Intermediate
+source-git-commit: 70d3bdaeec2a7a8f282b0e1a79bc751f7f837663
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 8%
+source-wordcount: '580'
+ht-degree: 9%
 
 ---
 
