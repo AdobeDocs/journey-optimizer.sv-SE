@@ -1,9 +1,13 @@
 ---
 title: Kom igång med beslutsledningshändelser
 description: Lär dig hur du skapar beslutsrapporter i Adobe Experience Platform.
-source-git-commit: db7fd318b14d01a0369c934a3e01c6e368d7658d
+feature: Erbjudanden
+topic: Integreringar
+role: User
+level: Beginner
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '174'
 ht-degree: 47%
 
 ---
