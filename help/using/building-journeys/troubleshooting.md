@@ -1,9 +1,13 @@
 ---
 title: Felsökning av resor
 description: Lär dig hur du felsöker fel under resor
-source-git-commit: 364861beb52e5663389a254ba145b31431b696ac
+feature: Resor
+topic: Innehållshantering
+role: User
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1040'
 ht-degree: 86%
 
 ---
