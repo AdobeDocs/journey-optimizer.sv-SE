@@ -3,10 +3,14 @@ title: Delegera underdomäner
 description: Lär dig hur du delegerar dina underdomäner
 internal: n
 snippet: y
-source-git-commit: e569e992530df5429ffb96f78ba28b53de0ded81
+feature: Applikationsinställningar
+topic: Administrering
+role: Administrator
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 26%
+source-wordcount: '388'
+ht-degree: 27%
 
 ---
 
