@@ -12,10 +12,14 @@ discoiquuid: null
 internal: n
 snippet: y
 exl-id: 0964a484-f957-4aae-a571-61b2a1615026
-source-git-commit: a65cefd0bbd15ffa389bac910eaceb40181cb38d
+feature: Applikationsinställningar
+topic: Administrering
+role: Administrator
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 17%
+source-wordcount: '155'
+ht-degree: 19%
 
 ---
 
