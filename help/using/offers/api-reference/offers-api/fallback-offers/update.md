@@ -1,14 +1,18 @@
 ---
-title: Uppdatera ett sekundärt erbjudande
+title: Uppdatera ett reserverbjudande
 description: Ett reserverbjudande skickas till kunderna om de inte är berättigade till andra erbjudanden
-source-git-commit: 4ff255b6b57823a1a4622dbc62b4b8886fd956a0
+feature: Erbjudanden
+topic: Integreringar
+role: Data Engineer
+level: Experienced
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '171'
 ht-degree: 7%
 
 ---
 
-# Uppdatera ett sekundärt erbjudande
+# Uppdatera ett reserverbjudande
 
 Du kan ändra eller uppdatera ett reserverbjudande i din behållare genom att göra en PATCH-begäran till API:t [!DNL Offer Library].
 
