@@ -1,9 +1,13 @@
 ---
 title: Global reserapport
 description: Lär dig använda data från den globala reserapporten
-source-git-commit: f04e73187439462fc1e22c6c66398a139fbeaa5a
+feature: Rapportering
+topic: Innehållshantering
+role: User
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
@@ -20,7 +24,7 @@ Sidan **[!UICONTROL Global report]** för resan visas med följande flikar:
 
 * [Resa](#journey-global)
 * [E-post](#email-global)
-* [Tryck](#push-global)
+* [Push](#push-global)
 
 Resan **[!UICONTROL Global report]** är uppdelad i olika widgetar som anger hur framgångsrik och felfri din resa är. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [avsnittet](global-report.md#modify-dashboard).
 
