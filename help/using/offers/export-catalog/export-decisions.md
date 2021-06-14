@@ -1,14 +1,18 @@
 ---
 title: Kom igång med export av din erbjudandekatalog
 description: I det här avsnittet visas alla fält som används i den exporterade datauppsättningen för beslut.
-source-git-commit: 95be47fbf6944f7e6a743056b6cc29b45ae291fe
+feature: Erbjudanden
+topic: Integreringar
+role: User
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '1552'
 ht-degree: 0%
 
 ---
 
-# Beslutsdatauppsättning {#decisions-dataset}
+# Datauppsättning med beslut {#decisions-dataset}
 
 Varje gång ett erbjudande ändras uppdateras den autogenererade datauppsättningen för beslut (som tidigare kallades aktiviteter).
 
