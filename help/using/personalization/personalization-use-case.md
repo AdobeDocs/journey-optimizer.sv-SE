@@ -1,9 +1,13 @@
 ---
 title: Personalisering - användningsfall
 description: Personalisering - användningsfall
-source-git-commit: cd1b07bbb4b247d1d8c0cc87be9e4bdad22377ed
+feature: Personalisering
+topic: Personalisering
+role: Data Engineer
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
