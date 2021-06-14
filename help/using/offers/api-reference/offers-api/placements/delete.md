@@ -1,10 +1,14 @@
 ---
 title: ta bort placeringar
 description: Placeringar är behållare som används för att visa upp dina erbjudanden.
-source-git-commit: 4ff255b6b57823a1a4622dbc62b4b8886fd956a0
+feature: Erbjudanden
+topic: Integreringar
+role: Data Engineer
+level: Experienced
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 3%
+source-wordcount: '145'
+ht-degree: 4%
 
 ---
 
