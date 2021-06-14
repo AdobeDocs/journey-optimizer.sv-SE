@@ -1,9 +1,13 @@
 ---
 title: Reserverbjudanden
 description: I det här avsnittet visas alla fält som används i den exporterade datauppsättningen för reserverbjudanden.
-source-git-commit: b6364879b2a64ba17f52020f7d27d02459a022b0
+feature: Erbjudanden
+topic: Integreringar
+role: User
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
