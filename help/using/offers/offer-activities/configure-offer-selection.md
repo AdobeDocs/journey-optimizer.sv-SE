@@ -1,14 +1,18 @@
 ---
 title: Konfigurera urval av erbjudanden i beslut
 description: Lär dig hur du hanterar urval av erbjudanden i beslut.
-source-git-commit: db7fd318b14d01a0369c934a3e01c6e368d7658d
+feature: Erbjudanden
+topic: Integreringar
+role: User
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 2%
+source-wordcount: '253'
+ht-degree: 7%
 
 ---
 
-# Konfigurera val av erbjudanden i beslut {#offers-selection-in-activities}
+# Konfigurera urval av erbjudanden i beslut {#offers-selection-in-activities}
 
 ## Om prioritet {#about-offers-priority} för erbjudanden
 
