@@ -1,14 +1,18 @@
 ---
-title: Personligt anpassade erbjudandedatauppsättningar
+title: Datauppsättning med personaliserade erbjudanden
 description: I det här avsnittet visas alla fält som används i den exporterade datauppsättningen för erbjudanden.
-source-git-commit: 57b6ffa4136eda80c41344db15d363d3107d4e32
+feature: Erbjudanden
+topic: Integreringar
+role: User
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '2005'
+source-wordcount: '2007'
 ht-degree: 0%
 
 ---
 
-# Personaliserade erbjudandedatauppsättningar {#offers-dataset}
+# Datauppsättning med personaliserade erbjudanden {#offers-dataset}
 
 Varje gång ett erbjudande ändras uppdateras den autogenererade datauppsättningen för personaliserade erbjudanden.
 
