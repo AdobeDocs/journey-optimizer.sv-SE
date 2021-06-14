@@ -1,9 +1,13 @@
 ---
 title: Undertryckningslista
 description: Lär dig vad suppressionslistan är, dess syfte och vad som ingår i den.
-source-git-commit: a2eee802f82552e56ced00f93e5e4c8a7b3feb7a
+feature: levererbarhet
+topic: Innehållshantering
+role: User
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '643'
 ht-degree: 4%
 
 ---
