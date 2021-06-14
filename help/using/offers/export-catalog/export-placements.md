@@ -1,9 +1,13 @@
 ---
 title: Datauppsättning med placeringar
 description: I det här avsnittet visas alla fält som används i den exporterade datauppsättningen för placeringar.
-source-git-commit: cd44676a7a0f60ce3e97652ec6459f708557e14c
+feature: Erbjudanden
+topic: Integreringar
+role: User
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '367'
 ht-degree: 1%
 
 ---
