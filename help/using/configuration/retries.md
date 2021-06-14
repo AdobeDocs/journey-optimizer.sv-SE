@@ -11,10 +11,14 @@ topic-tags: null
 discoiquuid: null
 internal: n
 snippet: y
-source-git-commit: 80c307a349a8ca7449639e7819683bf1f3ec3d13
+feature: Applikationsinställningar
+topic: Administrering
+role: Administrator
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 0%
+source-wordcount: '210'
+ht-degree: 2%
 
 ---
 
