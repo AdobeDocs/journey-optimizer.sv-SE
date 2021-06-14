@@ -12,10 +12,14 @@ discoiquuid: null
 internal: n
 snippet: y
 exl-id: null
-source-git-commit: e4c5adf788b1cdf5f0ba1c4be80c387b3da26bd1
+feature: Kontrollgrupper
+topic: Administrering
+role: Administrator
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 27%
+source-wordcount: '327'
+ht-degree: 28%
 
 ---
 
