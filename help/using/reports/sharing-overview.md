@@ -1,10 +1,14 @@
 ---
 title: Översikt över att dela steg i resan
 description: Översikt över att dela steg i resan
-source-git-commit: 55b9e5d8ed259ec6ed7746e835691d7d6261a8a4
+feature: Rapportering
+topic: Innehållshantering
+role: User
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 6%
+source-wordcount: '426'
+ht-degree: 7%
 
 ---
 
