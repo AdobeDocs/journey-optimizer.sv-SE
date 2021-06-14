@@ -1,10 +1,14 @@
 ---
 title: Skapa meddelandeförinställningar
 description: Lär dig hur du konfigurerar och övervakar meddelandeförinställningar
-source-git-commit: 03d003682d796906fcf89af02aa98d549b5214a3
+feature: Applikationsinställningar
+topic: Administrering
+role: Administrator
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 0%
+source-wordcount: '668'
+ht-degree: 1%
 
 ---
 
