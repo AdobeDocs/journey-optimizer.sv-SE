@@ -1,9 +1,13 @@
 ---
 title: Konfigurera en enhetshändelse
 description: Lär dig hur du konfigurerar en enhetshändelse
-source-git-commit: 4464ea7169424c1ec6212394b8bda79a9bec1913
+feature: Händelser
+topic: Administrering
+role: Administrator
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '1636'
+source-wordcount: '1638'
 ht-degree: 14%
 
 ---
