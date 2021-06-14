@@ -1,14 +1,18 @@
 ---
-title: Listtaggar
+title: Lista taggar
 description: Med taggar kan du bättre ordna och sortera bland dina erbjudanden.
-source-git-commit: 4ff255b6b57823a1a4622dbc62b4b8886fd956a0
+feature: Erbjudanden
+topic: Integreringar
+role: Data Engineer
+level: Experienced
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '308'
 ht-degree: 2%
 
 ---
 
-# Listtaggar
+# Lista taggar
 
 Med taggar kan du bättre ordna och sortera bland dina erbjudanden. Du kan till exempel märka dina erbjudanden på den svarta fredagen med taggen &quot;Black Friday&quot;. Du kan sedan använda sökfunktionen i erbjudandebiblioteket för att enkelt hitta alla erbjudanden med den taggen.
 
