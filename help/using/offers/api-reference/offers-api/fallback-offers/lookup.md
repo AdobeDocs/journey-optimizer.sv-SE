@@ -1,9 +1,13 @@
 ---
 title: erbjudanden för sökning efter reserverbjudanden
 description: Ett reserverbjudande skickas till kunderna om de inte är berättigade till andra erbjudanden
-source-git-commit: 4ff255b6b57823a1a4622dbc62b4b8886fd956a0
+feature: Erbjudanden
+topic: Integreringar
+role: Data Engineer
+level: Experienced
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '160'
 ht-degree: 1%
 
 ---
