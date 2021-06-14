@@ -1,10 +1,14 @@
 ---
 keywords: Journey Optimizer;home;populära topics
 title: Journey Optimizer produktdokumentation
-source-git-commit: 5ac2d00f3aa03ac5fe0c07eea20e9de96959c219
+feature: Översikt
+topic: Innehållshantering
+role: User
+level: Beginner
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 5%
+source-wordcount: '226'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +19,7 @@ ht-degree: 5%
 ![](using/assets/do-not-localize/badge.png)
 **[!DNL Journey Optimizer]** finns för närvarande i  **betaversionen** och kan ändras ofta utan föregående meddelande. Som användare kan du dela med dig av din upplevelse via knappen Betafeedback i produktgränssnittet. Kända fel visas på den här [sidan](using/known-issues.md).
 
-## Nyheter 
+## Nyheter?
 
 * [ÅtkomstkontrollLäs ](using/administration/permissions-overview.md) </br> om hur du definierar och hanterar behörigheter som tilldelats  [!DNL Journey Optimizer] användare
 
