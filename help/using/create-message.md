@@ -1,9 +1,13 @@
 ---
 title: Skapa ett meddelande
 description: Lär dig hur du skapar ett meddelande
-source-git-commit: d2928efec66cd42f86868449d0289a23c78dd7c1
+feature: Översikt
+topic: Innehållshantering
+role: User
+level: Beginner
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '475'
 ht-degree: 2%
 
 ---
