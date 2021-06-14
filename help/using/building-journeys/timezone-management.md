@@ -1,10 +1,14 @@
 ---
 title: Hantering av tidszoner
 description: Läs mer om hantering av tidszoner
-source-git-commit: bcc9f5c7bdb660462ca412ed2528dab16d610418
+feature: Resor
+topic: Innehållshantering
+role: User
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 2%
+source-wordcount: '262'
+ht-degree: 3%
 
 ---
 
