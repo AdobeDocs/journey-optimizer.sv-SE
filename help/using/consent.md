@@ -1,9 +1,13 @@
 ---
 title: Hantera avanmälan
 description: Lär dig hur du hanterar avanmälan och sekretess
-source-git-commit: 738d72e8f3ba204219086f19252220ff833369cb
+feature: Resor
+topic: Innehållshantering
+role: User
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '605'
 ht-degree: 1%
 
 ---
