@@ -1,10 +1,14 @@
 ---
 title: Anpassa innehåll i Journey Optimizer
 description: Kom igång med personalisering
-source-git-commit: 8c58dd667ea59a17833bbe3482b1a233ac2e28fe
+feature: Personalisering
+topic: Personalisering
+role: Data Engineer
+level: Beginner
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 3%
+source-wordcount: '179'
+ht-degree: 5%
 
 ---
 
