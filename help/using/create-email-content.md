@@ -1,9 +1,13 @@
 ---
 title: Designa e-postmeddelanden i Journey Optimizer
 description: Lär dig hur du utformar e-postinnehåll
-source-git-commit: 55b9e5d8ed259ec6ed7746e835691d7d6261a8a4
+feature: Översikt
+topic: Innehållshantering
+role: User
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1485'
 ht-degree: 1%
 
 ---
@@ -48,7 +52,7 @@ Följ stegen nedan för att börja skapa e-postinnehåll med e-postdesignern:
 
 1. Från **[!UICONTROL Assets picker]** kan du lägga till resurser som lagras i **[!UICONTROL Assets library]** direkt i e-postmeddelandet. [Läs mer om resurshantering](assets-essentials.md).
 
-   Dubbelklicka på mappen som innehåller dina resurser och dra och släpp den resurs som du vill lägga till i e-postmeddelandet.
+   Dubbelklicka på den mapp som innehåller dina resurser och dra och släpp den resurs som du vill lägga till i e-postmeddelandet.
 
    ![](assets/email_designer_5.png)
 
