@@ -1,10 +1,14 @@
 ---
 title: Snabbstart
 description: Journey Optimizer snabbstart
-source-git-commit: d2928efec66cd42f86868449d0289a23c78dd7c1
+feature: Översikt
+topic: Innehållshantering
+role: User
+level: Beginner
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 7%
+source-wordcount: '255'
+ht-degree: 8%
 
 ---
 
