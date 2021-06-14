@@ -8,10 +8,12 @@ level: Intermediate
 product: Adobe Journey Optimizer
 solution: Journey Optimizer
 exl-id: 0964a484-f957-4aae-a571-61b2a1615026
-source-git-commit: 03d003682d796906fcf89af02aa98d549b5214a3
+feature: Applikationsinställningar
+topic: Administrering
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 9%
+source-wordcount: '335'
+ht-degree: 10%
 
 ---
 
