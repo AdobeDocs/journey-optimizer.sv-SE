@@ -1,10 +1,14 @@
 ---
 title: Kända fel
 description: Kända fel
-source-git-commit: 4f2a1209225a7c707fdbd8de636a5356a5aa1929
+feature: Översikt
+topic: Innehållshantering
+role: User
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 2%
+source-wordcount: '138'
+ht-degree: 4%
 
 ---
 
