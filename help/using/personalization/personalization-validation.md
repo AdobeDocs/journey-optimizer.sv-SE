@@ -1,10 +1,14 @@
 ---
 title: Validering av personalisering
 description: Läs mer om validering av personalisering och felsökning
-source-git-commit: 7e20bef085d0fa6983f9ebd84f8cbc3bee2f4542
+feature: Personalisering
+topic: Personalisering
+role: Data Engineer
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 0%
+source-wordcount: '323'
+ht-degree: 1%
 
 ---
 
