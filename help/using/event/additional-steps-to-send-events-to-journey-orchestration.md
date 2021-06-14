@@ -1,10 +1,14 @@
 ---
 title: Ytterligare steg för att skicka händelser till en resa
 description: Lär dig ytterligare steg för att skicka händelser till en resa
-source-git-commit: 55b9e5d8ed259ec6ed7746e835691d7d6261a8a4
+feature: Händelser
+topic: Administrering
+role: Administrator
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 1%
+source-wordcount: '289'
+ht-degree: 2%
 
 ---
 
