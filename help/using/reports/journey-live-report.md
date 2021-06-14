@@ -1,9 +1,13 @@
 ---
 title: Rapport om resebesök
 description: Lär dig använda data från reserapporten
-source-git-commit: 55b9e5d8ed259ec6ed7746e835691d7d6261a8a4
+feature: Rapportering
+topic: Innehållshantering
+role: User
+level: Intermediate
+source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '679'
 ht-degree: 0%
 
 ---
@@ -20,7 +24,7 @@ Sidan **[!UICONTROL Live report]** för resan visas med följande flikar:
 
 * [Resa](#journey-live)
 * [E-post](#email-live)
-* [Tryck](#push-live)
+* [Push](#push-live)
 
 Resan **[!UICONTROL Live report]** är uppdelad i olika widgetar som anger hur framgångsrik och felfri din resa är. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [avsnittet](live-report.md#modify-dashboard).
 
