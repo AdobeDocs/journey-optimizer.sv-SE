@@ -5,16 +5,14 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: ea005587fdcdf3cb07da5d7cbd6080c12909d458
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1620'
 ht-degree: 2%
 
 ---
 
 # Testa resan{#testing_the_journey}
-
-![](../assets/do-not-localize/badge.png)
 
 Innan du kan testa din resa måste du åtgärda eventuella fel. Se [det här avsnittet](../building-journeys/troubleshooting.md#section_h3q_kqk_fhb).
 
@@ -61,6 +59,7 @@ Så här använder du testläget:
 * När du inaktiverar testläget töms resorna från alla som har gått in i det tidigare eller som befinner sig i det. Rapporten blir också tydligare.
 * Du kan aktivera/inaktivera testläget så många gånger som behövs.
 * Du kan inte ändra din resa när testläget är aktiverat. När du är i testläge kan du publicera resan direkt, du behöver inte inaktivera testläget tidigare.
+* När en delning nås väljs alltid den översta grenen. Du kan ordna om placeringen av de delade grenarna om du vill att testet ska välja en annan bana.
 
 ## Aktivera händelser {#firing_events}
 
