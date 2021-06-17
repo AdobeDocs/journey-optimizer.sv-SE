@@ -5,7 +5,7 @@ feature: Rapportering
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 1%
@@ -13,8 +13,6 @@ ht-degree: 1%
 ---
 
 # Skjut live-rapport {#push-live-report}
-
-![](../assets/do-not-localize/badge.png)
 
 Push-åtgärden **[!UICONTROL Live report]** avser endast en specifik push-leverans.
 
