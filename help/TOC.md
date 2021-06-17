@@ -5,11 +5,10 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att leverera sammankopplade, kontextuella och personaliserade upplevelser till kunder
 type: Documentation
 solution: Journey Optimizer
-hide: true
-source-git-commit: a73430f57d6e482de08b3e01a8acef081945405b
+source-git-commit: a904ee8fdcb5f634e856bf55432836e3649a1abc
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 48%
+source-wordcount: '668'
+ht-degree: 44%
 
 ---
 
@@ -21,7 +20,6 @@ ht-degree: 48%
    + [Vad är Journey Optimizer?](using/get-started.md)
    + [Snabbstart](using/quick-start.md)
    + [Användargränssnitt](using/user-interface.md)
-   + [Kända fel](using/known-issues.md)
 + Meddelanden {#create-messages}
    + [Kom igång med meddelanden](using/get-started-content.md)
    + Skapa meddelanden {#create-message}
@@ -35,8 +33,7 @@ ht-degree: 48%
       + [Importera eller koda ditt e-postinnehåll](using/existing-content.md)
       + [Använda e-postdesigners innehållskomponenter](using/content-components.md)
    + Personalisering{#personalization}
-      + [Kom igång](using/personalization/personalize.md)
-      + [Personaliseringsområden](using/personalization/personalization-aeras.md)
+      + [Kom igång med personalisering](using/personalization/personalize.md)
       + [Anpassningssyntax](using/personalization/personalization-syntax.md)
       + [Validering av personalisering](using/personalization/personalization-validation.md)
       + [Personalisering - användningsfall](using/personalization/personalization-use-case.md)
@@ -84,23 +81,25 @@ ht-degree: 48%
       + [Lässegment](using/building-journeys/read-segment.md)
       + [Meddelande](using/building-journeys/journeys-message.md)
       + [Anpassade åtgärder](using/building-journeys/using-custom-actions.md)
+      + [Adobe Campaign v7/v8-åtgärder](using/building-journeys/using-adobe-campaign-classic.md)
       + [Hoppa](using/building-journeys/jump.md)
       + [Uppdatera profil](using/building-journeys/update-profiles.md)
    + Användningsfall {#journey-use-cases}
       + [Skicka flerkanalsmeddelanden](using/building-journeys/journeys-uc.md)
+      + [Skicka ett meddelande med Campaign v7/v8](using/building-journeys/campaign-classic-use-case.md)
 + Spåra och övervaka {#reporting}
    + [Meddelandespårning](using/message-tracking.md)
    + [Meddelandeövervakning](using/message-monitoring.md)
    + Live-rapport {#live-report}
-      + [Översikt](using/reports/live-report.md)
-      + [Rapport om livesändning på resa](using/reports/journey-live-report.md)
-      + [E-postlive-rapport](using/reports/email-live-report.md)
-      + [Publicera live-rapport](using/reports/push-live-report.md)
+      + [Åtkomst till Live-rapportkontrollpanelen](using/reports/live-report.md)
+      + [Journey Live-rapport](using/reports/journey-live-report.md)
+      + [Email Live-rapport](using/reports/email-live-report.md)
+      + [Push Live-rapport](using/reports/push-live-report.md)
    + Global rapport {#global-report}
-      + [Översikt](using/reports/global-report.md)
-      + [Global reserapport](using/reports/journey-global-report.md)
-      + [E-posta global rapport](using/reports/email-global-report.md)
-      + [Skjut global rapport](using/reports/push-global-report.md)
+      + [Åtkomst till instrumentpanel för global rapport](using/reports/global-report.md)
+      + [Rapport om global resa](using/reports/journey-global-report.md)
+      + [Global e-postrapport](using/reports/email-global-report.md)
+      + [Push Global-rapport](using/reports/push-global-report.md)
    + Reserapporter {#reports}
       + [Skapa reserapporter](using/reports/sharing-overview.md)
       + [Resefält](using/reports/sharing-journey-fields.md)
@@ -112,19 +111,20 @@ ht-degree: 48%
       + [Kom igång med leverans](using/deliverability.md)
       + [Undertryckningslista](using/suppression-list.md)
 + Beslutshantering {#offer-decisioniong}
-   + Kom igång med Beslutshantering {#get-started}
+   + Kom igång med beslutshantering {#get-started}
       + [Om beslutshantering](using/offers/get-started/starting-offer-decisioning.md)
       + [Användargränssnitt](using/offers/get-started/user-interface.md)
-      + [Ordlista](using/offers/get-started/glossary.md)
-   + Skapa och hantera erbjudanden {#managing-offers-in-the-offer-library}
-      + [Viktiga steg för att skapa ett erbjudande](using/offers/offer-library/key-steps.md)
+      + [Viktiga steg för att skapa och hantera erbjudanden](using/offers/offer-library/key-steps.md)
+      + [Användningsfall: infoga erbjudanden i ett e-postmeddelande](using/offers/offers-e2e.md)
+   + Skapa komponenter {#create-components}
       + [Skapa placeringar](using/offers/offer-library/creating-placements.md)
       + [Skapa beslutsregler](using/offers/offer-library/creating-decision-rules.md)
       + [Skapa taggar](using/offers/offer-library/creating-tags.md)
+      + [Skapa rankningsformler](using/offers/offer-library/create-ranking-formulas.md)
+   + Skapa och hantera erbjudanden {#managing-offers-in-the-offer-library}
       + [Skapa personaliserade erbjudanden](using/offers/offer-library/creating-personalized-offers.md)
       + [Skapa reserverbjudanden](using/offers/offer-library/creating-fallback-offers.md)
       + [Skapa samlingar](using/offers/offer-library/creating-collections.md)
-      + [Skapa rankningsformler](using/offers/offer-library/create-ranking-formulas.md)
    + Skapa och hantera beslut {#create-manage-activities}
       + [Skapa beslut](using/offers/offer-activities/create-offer-activities.md)
       + [Konfigurera urval av erbjudanden i beslut](using/offers/offer-activities/configure-offer-selection.md)
@@ -190,10 +190,9 @@ ht-degree: 48%
 + Konfiguration{#get-started}
    + [Kom igång med Journey Optimizer](using/configuration/get-started-configuration.md)
    + Konfigurera meddelanden {#configuration}
-      + [Tekniska inställningar](using/administration/administration.md)
-      + [Skapa meddelandeförinställningar](using/configuration/message-presets.md)
-      + [Konfigurera push-kanal](using/push-configuration.md)
-      + [Konfiguration för push-meddelanden](using/push-gs.md)
+      + Konfiguration för push-meddelanden{#push-config}
+         + [Kom igång med push-konfiguration](using/push-gs.md)
+         + [Konfigurera kanal för push-meddelanden](using/push-configuration.md)
       + E-postkonfiguration {#email-config}
          + Delegera underdomäner {#delegate-subdomains}
             + [Kom igång med delegering till underdomäner](using/configuration/about-subdomain-delegation.md)
@@ -206,6 +205,7 @@ ht-degree: 48%
             + [Hantera undertryckningslista](using/configuration/manage-suppression-list.md)
             + [Återförsök](using/configuration/retries.md)
          + [Ändra primär e-postadress](using/configuration/primary-email-addresses.md)
+      + [Skapa meddelandeförinställningar](using/configuration/message-presets.md)
    + Konfigurera resor {#configure-journeys}
       + [Om datakällor, händelser och åtgärder](using/configuration/about-data-sources-events-actions.md)
       + [Integrera med externa system](using/configuration/external-systems.md)
@@ -225,6 +225,7 @@ ht-degree: 48%
       + Åtgärdskonfiguration {#action-journeys}
          + [Om åtgärder](using/action/action.md)
          + [Konfigurera en åtgärd](using/action/about-custom-action-configuration.md)
+         + [Integrera med Adobe Campaign v7/v8](using/action/acc-action.md)
 + Åtkomstkontroll {#administration}
    + [Översikt över åtkomstkontroll](using/administration/permissions-overview.md)
    + [Inbyggda produktprofiler](using/administration/ootb-product-profiles.md)
