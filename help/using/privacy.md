@@ -1,9 +1,9 @@
 ---
 title: Sekretess
 description: Lär dig hantera sekretess
-source-git-commit: f73e7ae0a5da002786778065894fab0d6a7b154d
+source-git-commit: b7c3b0e683cb5ae173c2ab979e3558cd0dbf6ee9
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '720'
 ht-degree: 50%
 
 ---
@@ -11,9 +11,7 @@ ht-degree: 50%
 
 # Sekretess {#privacy}
 
-![](assets/do-not-localize/badge.png)
-
-Journey Optimizer är ett kraftfullt verktyg för att hantera stora mängder data, inklusive personuppgifter och känsliga data.
+[!DNL Journey Optimizer] är ett kraftfullt verktyg för att behandla stora mängder data, inklusive personuppgifter och känsliga data.
 
 * **Personuppgifter** är information som direkt eller indirekt kan identifiera en levande individ.
 * **Känsliga personuppgifter** är information som är relaterad till en individs ras, politiska åsikter, religiösa övertygelser, kriminella bakgrund, genetiska uppgifter, hälsodata, sexuella preferenser, biometrisk information samt medlemskap i fackföreningar.
