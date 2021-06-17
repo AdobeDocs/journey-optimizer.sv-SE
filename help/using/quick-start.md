@@ -5,32 +5,40 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Beginner
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 8%
+source-wordcount: '345'
+ht-degree: 7%
 
 ---
 
 # Snabbstart {#cjm-quick-start}
 
-![](assets/do-not-localize/badge.png)
-
 ## Viktiga steg för att starta {#cjm-key-steps}
 
-Med Journey Optimizer kan ni importera befintligt innehåll och utforma nytt innehåll, personalisera meddelanden med kundprofildata, skapa händelser för att utlösa meddelanden, definiera segment och förfina målgrupper, skicka flerkanalsmeddelanden och få tillgång till en komplett uppsättning rapporterings- och övervakningsverktyg för att mäta effekten av era meddelanden och resor.
+Med [!DNL Adobe Journey Optimizer] kan du importera befintligt meddelandeinnehåll eller utforma ett nytt innehåll, anpassa meddelanden med kundprofildata, skapa händelser för att utlösa meddelanden, definiera segment och förfina målgrupper, skicka flerkanalsmeddelanden, skapa och lägga till erbjudanden och få tillgång till en komplett uppsättning rapporterings- och övervakningsverktyg för att mäta effekten av era meddelanden och kundresor.
 
 Beroende på din organisation kan du definiera flera typer av användare och ge dem åtkomst till vissa funktioner beroende på deras behörigheter.
 
 ### Förutsättningar {#cjm-prerequisites}
 
-Innan du börjar använda Adobe Journey Optimizer måste du:
+Innan du börjar använda [!DNL Adobe Journey Optimizer] måste du:
 
-* **Definiera användarbehörigheter**: logga in på Journey Optimizer och ge åtkomst till dina teammedlemmar. [Läs mer](../using/administration/permissions.md)
+* **Ange användarbehörigheter**: logga in  [!DNL Adobe Journey Optimizer] och ge åtkomst till dina teammedlemmar. [Läs mer](../using/administration/permissions.md)
 
-* **Konfigurera kanaler och förinställningar**: arbeta med Adobe för att definiera inställningar för e-post och push-meddelanden och skapa dina förinställningar. [Läs mer](../using/configuration/message-presets.md)
+* **Konfigurera kanalerna**: ange inställningar för e-post och push-meddelanden. [Läs mer](../using/configuration/get-started-configuration.md)
 
-* **Identifiera data och skapa schema och datauppsättning**: få in data i Adobe Experience Platform, skapa ett identitetsnamnutrymme och en datauppsättning som är aktiverad för profiler, skapa segment och testa profiler. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html)
+* **Definiera dina förinställningar**: skapa dina förinställningar och konfigurera dina brandingparametrar. [Läs mer](../using/configuration/message-presets.md)
+
+* **Identifiera data och skapa schema och datauppsättning**: få in data i Adobe Experience Platform, skapa ett identitetsnamnutrymme och en datauppsättning som är aktiverad för profiler, skapa segment och testa profiler.
+
+   * Lär dig hur du förhandsgranskar och skapar en datauppsättning i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html)
+
+   * Lär dig hur du skapar ett identitetsnamnutrymme i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=en#manage-namespaces)
+
+   * Lär dig hur du skapar testprofiler i [den här sidan](../using/building-journeys/creating-test-profiles.md)
+
+   * Läs mer om dataöverföring i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html)
 
 
 ### Användningsflöde
@@ -41,7 +49,9 @@ Se följande avsnitt för att konfigurera din första resa och skicka meddelande
 
 * **Överför resurser**: använda Adobe Experience Manager Assets Essentials för att hantera resurser och bilder. [Läs mer](assets-essentials.md)
 
-<!--* **Define audience**: create segments, create events, manage consent and privacy. [Read more](audiences.md)-->
+* **Lägg till erbjudanden**: Använd Journey Optimizer Decision Management för att lägga in skräddarsydda erbjudanden i era meddelanden. [Läs mer](../using/offers/get-started/starting-offer-decisioning.md)
+
+* **Definiera målgrupp**: skapa segment, skapa händelser, hantera samtycke och integritet. [Läs mer](../using/segment/about-segments.md)
 
 * **Skapa resor**: skicka meddelanden, utnyttja sammanhangsbaserade data, förfina målgrupper, utforma och köra flerstegsbaserade fallstudier. [Läs mer](building-journeys/journey.md)
 
