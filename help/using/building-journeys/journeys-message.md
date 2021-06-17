@@ -5,16 +5,14 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: d76eee0efa6735d6d81d7d7c752ed253b4cbebb5
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '265'
 ht-degree: 3%
 
 ---
 
 # Lägg till ett meddelande i en resa
-
-![](../assets/do-not-localize/badge.png)
 
 [!DNL Journey Optimizer] meddelandefunktionerna är inbyggda, du behöver bara utforma innehållet och publicera meddelandet. Se [det här avsnittet](../get-started-content.md). Sedan lägger du bara till ett push- eller e-postmeddelande som utformats med Journey Optimizer under resan.
 
@@ -22,7 +20,7 @@ Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa e
 
 ## Lägga till en meddelandeaktivitet
 
-1. Som alltid ska du påbörja din resa med en aktivitet eller en **Läs-aktivitet**.
+1. Som alltid ska du påbörja resan med en aktivitet eller en **Läs segment**-aktivitet.
 
    ![](../assets/jo-message0.png)
 
@@ -38,7 +36,7 @@ Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa e
 
    ![](../assets/jo-message3.png)
 
-1. Välj ett meddelande och klicka på **Välj**. Du kan också skapa ett nytt meddelande direkt från den här skärmen genom att klicka på **Skapa nytt**.
+1. Välj ett meddelande och klicka på **Välj**. Du kan också skapa ett nytt meddelande direkt från den här skärmen genom att klicka på **Skapa meddelande**.
 
    ![](../assets/jo-message4-ter.png)
 
@@ -48,10 +46,10 @@ Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa e
 
 1. Lägg till nästa steg på din resa.
 
-## Kanalparametrar
+## E-postparametrar och push-parametrar
 
-Parametrarna **Kanal** visas. Dessa fält är skrivskyddade. Den här konfigurationen utförs när meddelandet skapas. Se [det här avsnittet](../get-started-content.md).
+Avsnitten **[!UICONTROL Email parameters]** och **[!UICONTROL Push parameters]** visar skrivskyddade fält. Du utför vanligtvis den här konfigurationen när du skapar meddelandet. Se [det här avsnittet](../get-started-content.md).
 
 ![](../assets/jo-message4.png)
 
-Du kan använda ikonen **Aktivera redigeringsfält** till höger om fältet för att framtvinga ett visst värde. Detta kan vara användbart i testsyfte. Du kan till exempel lägga till din e-postadress för ett e-postmeddelande. När du publicerar resan skickas e-postmeddelandet till dig.
+Om du vill framtvinga ett visst värde kan du använda ikonen **Aktivera parameteråsidosättning** till höger om fältet. Det här alternativet kan vara användbart i testsyfte. Du kan till exempel lägga till din e-postadress för ett e-postmeddelande. När du har publicerat resan skickas e-postmeddelandet till dig.
