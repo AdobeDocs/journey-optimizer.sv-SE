@@ -5,9 +5,9 @@ feature: Applikationsinställningar
 topic: Administrering
 role: Administrator
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 705aa4c238eb1d6d6ce46b68f8690f639124a090
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '846'
 ht-degree: 1%
 
 ---
@@ -19,8 +19,10 @@ Med [!DNL Journey Optimizer] kan du konfigurera meddelandeförinställningar som
 
 >[!CAUTION]
 >
-> Konfigurationen av meddelandeförinställningar är begränsad till Reseadministratörer. [Läs mer](../administration/ootb-product-profiles.md#journey-administrator)
-
+> * Konfigurationen av meddelandeförinställningar är begränsad till Reseadministratörer. [Läs mer](../administration/ootb-product-profiles.md#journey-administrator)
+   >
+   > 
+* Du måste utföra konfigurationsstegen för e-post och push innan du kan skapa meddelandeförinställningar.
 
 
 När meddelandeförinställningarna har konfigurerats kan du välja dem när du skapar meddelanden från **[!UICONTROL Presets]**-listan.
@@ -33,11 +35,9 @@ Så här skapar du en meddelandeförinställning:
 
    ![](../assets/preset-create.png)
 
-
 1. Ange ett namn och en beskrivning (valfritt) för förinställningen och välj sedan de kanaler som ska konfigureras.
 
    ![](../assets/preset-general.png)
-
 
    >[!NOTE]
    >
@@ -57,13 +57,27 @@ Så här skapar du en meddelandeförinställning:
    * Välj den IP-pool som ska associeras med förinställningen. [Läs mer](ip-pools.md)
    * Ange rubrikparametrarna för e-postmeddelanden som skickas med förinställningen.
 
+      >[!CAUTION]
+      >
+      >Förutom fältet **Svara på (forward email)** måste e-postadressdomänen använda den valda [delegerade underdomänen](about-subdomain-delegation.md).
+
+      * **[!UICONTROL Sender name]**: Avsändarens namn, till exempel ditt varumärkes namn.
+
+      * **[!UICONTROL Sender email]**: E-postadressen som du vill använda för din kommunikation. Om den delegerade underdomänen till exempel är *marketing.luma.com* kan du använda *contact@marketing.luma.com*.
+
+      * **[!UICONTROL Reply to (name)]**: Namnet som ska användas när mottagaren klickar på knappen  **** Svara i sin e-postklientprogramvara.
+
+      * **[!UICONTROL Reply to (email)]**: Den e-postadress som ska användas när mottagaren klickar på knappen  **** Svar i sin e-postklientprogramvara. E-postmeddelanden som skickas till den här adressen vidarebefordras till den **[!UICONTROL Reply to (forward email)]**-adress som anges nedan. Du måste använda en adress som definierats på den delegerade underdomänen (till exempel *reply@marketing.luma.com*), annars kommer e-postmeddelandena att tas bort.
+
+      * **[!UICONTROL Reply to (forward email)]**: Alla e-postmeddelanden som tas emot  [!DNL Journey Optimizer] för den delegerade underdomänen vidarebefordras till den här e-postadressen. Du kan ange vilken adress som helst, förutom en e-postadress som är definierad i den delegerade underdomänen. Om den delegerade underdomänen till exempel är *marketing.luma.com*, är alla adresser som *abc@marketing.luma.com* inte tillåtna.
+
+      * **[!UICONTROL Error email]**: Alla fel som genereras av Internet-leverantörer efter några dagar efter att e-post har levererats (asynkrona studsar) tas emot på den här adressen.
+
+      ![](../assets/preset-header.png)
+
       >[!NOTE]
       >
-      > * Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-`.
-         > 
-         > 
-      * Med undantag för **Svara på (vidarebefordrad e-post)** måste e-postadressdomänen använda den valda underdomänen.
-
+      >Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-`.
 
 
 1. Konfigurera inställningar för **push-meddelanden**.
@@ -86,7 +100,6 @@ Så här skapar du en meddelandeförinställning:
 
    Dessa kontroller omfattar leveranstester som utförs av Adobe-avdelningen:
 
-
    * SPF-validering
    * DKIM-validering
    * MX-postvalidering
@@ -94,7 +107,6 @@ Så här skapar du en meddelandeförinställning:
    * Kontroll av värddator
    * Verifiering av IP-pool
    * A/PTR-post, t/m/res-underdomänverifiering
-
 
 1. När kontrollerna är slutförda får meddelandeförinställningen statusen **[!UICONTROL Active]**. Den är klar att användas för att leverera meddelanden.
 
