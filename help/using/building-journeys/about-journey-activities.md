@@ -5,7 +5,7 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 9e152f50c2360010d83ffccbe536380879ffb5da
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 25%
@@ -13,8 +13,6 @@ ht-degree: 25%
 ---
 
 # Om reseaktiviteter {#about-journey-activities}
-
-![](../assets/do-not-localize/badge.png)
 
 Kombinera de olika händelserna, orkestreringen och åtgärderna för att skapa scenarier i flera steg över olika kanaler.
 
@@ -39,7 +37,7 @@ På paletten till vänster på skärmen finns följande orkestreringsfunktioner:
 * [Villkor](../building-journeys/condition-activity.md)
 * [End](../building-journeys/end-activity.md)
 * [Vänta](../building-journeys/wait-activity.md)
-* [Lässegment](../building-journeys/read-segment.md)
+* [Läs segment](../building-journeys/read-segment.md)
 
 ![](../assets/journey49.png)
 
