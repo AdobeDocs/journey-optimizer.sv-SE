@@ -5,7 +5,7 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 6%
@@ -13,8 +13,6 @@ ht-degree: 6%
 ---
 
 # Skapa segment {#build-segments}
-
-![](../assets/do-not-localize/badge.png)
 
 I det här exemplet ska vi skapa ett segment som riktar sig till alla kunder som bor i Atlanta, San Francisco eller Seattle och som är födda efter 1980. Alla dessa kunder bör ha öppnat Luma-applikationen inom de senaste 7 dagarna och sedan köpt den inom 2 timmar efter att ansökan öppnats.
 
