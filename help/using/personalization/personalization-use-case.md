@@ -5,9 +5,9 @@ feature: Personalisering
 topic: Personalisering
 role: Data Engineer
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,13 @@ ht-degree: 0%
 
 # Användningsexempel för personalisering {#personalization-use-case}
 
-![](../assets/do-not-localize/badge.png)
-
 I det här fallet får du se hur du använder flera typer av personalisering i ett enda push-meddelande. Tre typer av personalisering kommer att användas:
 
 * **Profil**: meddelandepersonalisering baserad på ett profilfält
 * **Erbjudandebeslut**: personalisering baserad på beslutsvariabler för erbjudanden
 * **Kontext**: personalisering baserad på sammanhangsbaserade data från resan
 
-Målet med det här exemplet är att skicka en händelse till Journey Optimizer varje gång en kundorder uppdateras. Därefter skickas ett push-meddelande till kunden med information om beställningen och ett personligt erbjudande.
+Målet med det här exemplet är att skicka en händelse till [!DNL Journey Optimizer] varje gång en kundorder uppdateras. Därefter skickas ett push-meddelande till kunden med information om beställningen och ett personligt erbjudande.
 
 I detta fall krävs följande krav:
 
