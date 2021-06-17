@@ -5,7 +5,7 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 70d3bdaeec2a7a8f282b0e1a79bc751f7f837663
+source-git-commit: d76eee0efa6735d6d81d7d7c752ed253b4cbebb5
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 1%
@@ -14,9 +14,7 @@ ht-degree: 1%
 
 # Uppdatera profil {#update-profile}
 
-![](../assets/do-not-localize/badge.png)
-
-Med åtgärdsaktiviteten **[!UICONTROL Update profile]** kan du uppdatera en befintlig Adobe Experience Platform-profil med information som kommer från händelsen, en datakälla eller med ett specifikt värde.
+Med åtgärdsaktiviteten **[!UICONTROL Update Profile]** kan du uppdatera en befintlig Adobe Experience Platform-profil med information som kommer från händelsen, en datakälla eller med ett specifikt värde.
 
 ## Viktiga anteckningar
 
@@ -31,7 +29,7 @@ Med åtgärdsaktiviteten **[!UICONTROL Update profile]** kan du uppdatera en bef
 
 I testläge simuleras inte profiluppdateringen. Uppdateringen utförs på testprofilen.
 
-Det är bara testprofiler som kan gå in på en resa i testläge. Du kan antingen skapa en ny testprofil eller omvandla en befintlig profil till en testprofil. I Adobe Experience Platform kan du uppdatera profilattribut via csv-filimport eller API-anrop. En enklare metod är att använda en **Uppdatera profil**-åtgärdsaktivitet och ändra testprofilens booleska fält från false till true.
+Det är bara testprofiler som kan gå in på en resa i testläge. Du kan antingen skapa en ny testprofil eller omvandla en befintlig profil till en testprofil. I Adobe Experience Platform kan du uppdatera profilattribut via csv-filimport eller API-anrop. En enklare metod är att använda en **Uppdatera profil**-åtgärd och ändra testprofilens booleska fält från false till true.
 
 Mer information om hur du omvandlar en befintlig profil till en testprofil finns i [avsnittet](../building-journeys/creating-test-profiles.md#create-test-profiles-csv).
 
