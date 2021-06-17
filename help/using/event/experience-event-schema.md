@@ -5,16 +5,14 @@ feature: Scheman
 topic: Administrering
 role: Administrator
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 8f77802fcaa23790f9de4e8f15e593643b13fb1e
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
 
 # Om ExperienceEvent-scheman för [!DNL Journey Optimizer]-händelser
-
-![](../assets/do-not-localize/badge.png)
 
 [!DNL Journey Optimizer] -händelser är XDM Experience Events som skickas till Adobe Experience Platform via Streaming Ingmit.
 
@@ -32,7 +30,7 @@ Alla XDM-scheman som används för [!DNL Journey Optimizer]-händelser ska uppfy
 
    ![](../assets/schema2.png)
 
-* För systemgenererade händelser måste schemat innehålla Orchestration-händelseID-mixin. [!DNL Journey Optimizer] använder det här fältet för att identifiera händelser som används under resor.
+* För systemgenererade händelser måste schemat innehålla fältgruppen Orchestration-händelseID. [!DNL Journey Optimizer] använder det här fältet för att identifiera händelser som används under resor.
 
    ![](../assets/schema3.png)
 
