@@ -16,7 +16,7 @@ feature: Kontrollgrupper
 topic: Administrering
 role: Administrator
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 17%
@@ -24,8 +24,6 @@ ht-degree: 17%
 ---
 
 # Översikt över användarhantering {#permissions-overview}
-
-![](../assets/do-not-localize/badge.png)
 
 [!DNL Journey Optimizer]Med kan du definiera och hantera behörigheter som tilldelats till olika användare.  Behörigheter är en uppsättning rättigheter och begränsningar som ger eller nekar åtkomst till funktioner och funktioner i produkten.
 
