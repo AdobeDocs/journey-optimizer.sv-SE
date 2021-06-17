@@ -5,26 +5,24 @@ feature: Händelser
 topic: Administrering
 role: Administrator
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 8f77802fcaa23790f9de4e8f15e593643b13fb1e
 workflow-type: tm+mt
-source-wordcount: '1638'
-ht-degree: 14%
+source-wordcount: '1656'
+ht-degree: 13%
 
 ---
 
 # Konfigurera en enhetshändelse {#configure-an-event}
 
-![](../assets/do-not-localize/badge.png)
-
 Enhetshändelser är länkade till en viss profil. De kan vara regelbaserade eller systemgenererade.  Läs mer om enhetshändelse [det här avsnittet](../event/about-events.md).
 
 Här följer de första stegen för att konfigurera en ny händelse:
 
-1. I avsnittet Administration går du till **[!UICONTROL Configurations]** och klickar sedan på **[!UICONTROL Events]**. Listan med händelser visas.
+1. Välj **[!UICONTROL Configurations]** under ADMINISTRATION-menyn. Klicka på **[!UICONTROL Manage]** i **[!UICONTROL Events]**-avsnittet. Listan med händelser visas.
 
    ![](../assets/jo-event1.png)
 
-1. Klicka på **[!UICONTROL Add]** för att skapa en ny händelse. Konfigurationsfönstret för händelsen öppnas till höger på skärmen.
+1. Klicka på **[!UICONTROL Create Event]** för att skapa en ny händelse. Konfigurationsfönstret för händelsen öppnas till höger på skärmen.
 
    ![](../assets/jo-event2.png)
 
@@ -36,7 +34,7 @@ Här följer de första stegen för att konfigurera en ny händelse:
    >
    >Använd inte blanksteg eller specialtecken. Använd maximalt 30 tecken.
 
-1. I fältet **[!UICONTROL Type]** väljer du **Enhetshändelser**.
+1. Välj **Enhet** i fältet **[!UICONTROL Type]**.
 
    ![](../assets/jo-event3bis.png)
 
@@ -52,22 +50,24 @@ Här följer de första stegen för att konfigurera en ny händelse:
 
    >[!NOTE]
    >
-   >När du väljer typen **[!UICONTROL System Generated]** är endast scheman som har typen eventID tillgängliga. När du väljer typen **[!UICONTROL Rule Based]** är alla Experience Event-scheman tillgängliga.
+   >När du väljer typen **[!UICONTROL System Generated]** är endast scheman som har fältet för eventID tillgängliga. När du väljer typen **[!UICONTROL Rule Based]** är alla Experience Event-scheman tillgängliga.
 
 1. För regelbaserade händelser klickar du i fältet **[!UICONTROL Event ID condition]**. Använd den enkla uttrycksredigeraren för att definiera villkoret som ska användas av systemet för att identifiera de händelser som utlöser din resa.
    ![](../assets/jo-event6.png)
 
    I vårt exempel skrev vi ett villkor baserat på profilens stad. Det innebär att när systemet tar emot en händelse som matchar det här villkoret (**[!UICONTROL City]** fält och **[!UICONTROL Paris]** värde), skickas den till resorna.
 
+   >[!NOTE]
+   >
+   >Den avancerade uttrycksredigeraren är inte tillgänglig när du definierar **[!UICONTROL Event ID condition]**.
+
 1. Lägg till en namnrymd. Det här steget är valfritt men rekommenderas eftersom du kan lägga till en namnrymd vilket innebär att du kan utnyttja information som lagras i realtidskundprofilen. Denna definierar vilken typ av nyckel händelsen har. Se [det här avsnittet](../event/about-creating.md#select-the-namespace).
-1. Definiera nyckeln. Välj ett fält från dina fält med nyttolaster eller definiera en formel som identifierar den person som är associerad med händelsen. Den här nyckeln konfigureras automatiskt (men kan fortfarande redigeras) om du väljer en namnrymd. Resor väljer nyckeln som ska motsvara namnutrymmet (om du till exempel väljer ett e-postnamnutrymme markeras e-postnyckeln). Se [det här avsnittet](../event/about-creating.md#define-the-event-key).
+1. Definiera profilidentifieraren: Välj ett fält från dina nyttolastfält eller definiera en formel för att identifiera den person som är associerad med händelsen. Den här nyckeln konfigureras automatiskt (men kan fortfarande redigeras) om du väljer en namnrymd. Resor väljer nyckeln som ska motsvara namnutrymmet (om du till exempel väljer ett e-postnamnutrymme markeras e-postnyckeln). Se [det här avsnittet](../event/about-creating.md#define-the-event-key).
 
    ![](../assets/jo-event7.png)
 
 1. För systemgenererade händelser kan du lägga till ett villkor. Det här steget är valfritt. Med detta kan systemet endast bearbeta händelser som uppfyller villkoret. Villkoret kan endast baseras på information som finns i händelsen. Se [det här avsnittet](../event/about-creating.md#add-a-condition).
 1. Klicka på **[!UICONTROL Save]**.
-
-   ![](../assets/journey7.png)
 
    Händelsen är nu konfigurerad och klar att injiceras i en resa. Ytterligare konfigurationssteg krävs för att ta emot händelser. Läs [den här sidan](../event/additional-steps-to-send-events-to-journey-orchestration.md).
 
@@ -75,7 +75,7 @@ Här följer de första stegen för att konfigurera en ny händelse:
 
 Nyttolastdefinitionen gör att du kan välja vilken information systemet förväntar sig från händelsen under din resa och nyckeln för att identifiera vilken person som är associerad med händelsen. Nyttolasten baseras på Experience Cloud XDM-fältdefinitionen. Mer information om XDM finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv).
 
-1. Välj ett XDM-schema i listan och klicka på fältet **[!UICONTROL Payload]** eller på ikonen **[!UICONTROL Edit]**.
+1. Välj ett XDM-schema i listan och klicka på fältet **[!UICONTROL Fields]** eller på ikonen **[!UICONTROL Edit]**.
 
    ![](../assets/journey8.png)
 
@@ -83,23 +83,19 @@ Nyttolastdefinitionen gör att du kan välja vilken information systemet förvä
 
    >[!NOTE]
    >
-   >Kontrollera att du har lagt till&quot;orchestration&quot;-blandningen i XDM-schemat. Detta säkerställer att schemat innehåller all information som krävs för att arbeta med [!DNL Journey Optimizer].
+   >Kontrollera att du har lagt till fältgruppen &quot;orchestration&quot; i XDM-schemat för systemgenererade händelser. Detta säkerställer att schemat innehåller all information som krävs för att arbeta med [!DNL Journey Optimizer].
 
    ![](../assets/journey9.png)
 
 1. Markera de fält som du förväntar dig ska tas emot från händelsen. Det här är de områden som affärsanvändaren kommer att utnyttja under resan. De måste även innehålla den nyckel som ska användas för att identifiera den person som är associerad med händelsen (se [det här avsnittet](../event/about-creating.md#define-the-event-key)).
 
-   ![](../assets/journey10.png)
-
    >[!NOTE]
    >
    >För systemgenererade händelser läggs fältet **[!UICONTROL eventID]** automatiskt till i listan med markerade fält så att [!DNL Journey Optimizer] kan identifiera händelsen. Det system som skickar händelsen ska inte generera ett ID, det ska använda det som finns i nyttolastförhandsvisningen. Se [det här avsnittet](../event/about-creating.md#preview-the-payload).
 
-1. När du är klar med att markera de fält som behövs klickar du på **[!UICONTROL Save]** eller trycker på **[!UICONTROL Enter]**.
+1. När du är klar med att markera de fält som behövs klickar du på **[!UICONTROL Ok]** eller trycker på **[!UICONTROL Enter]**.
 
-   ![](../assets/journey11.png)
-
-   Antalet markerade fält visas i fältet **[!UICONTROL Payload]**.
+   Antalet markerade fält visas i fältet **[!UICONTROL Fields]**.
 
    ![](../assets/journey12.png)
 
@@ -109,7 +105,7 @@ Med namnutrymmet kan du definiera vilken typ av nyckel som används för att ide
 
 Du kan antingen använda en av de fördefinierade eller skapa en ny med hjälp av tjänsten Identity Namespace. Se den här [sidan](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html).
 
-Om du väljer ett schema som har en primär identitet är fälten **[!UICONTROL Key]** och **[!UICONTROL Namespace]** förfyllda. Om ingen identitet har definierats väljer vi _identityMap > id_ som primärnyckel. Sedan måste du markera ett namnutrymme och nyckeln kommer att vara förifylld (under fältet **[!UICONTROL Namespace]**) med _identityMap > id_.
+Om du väljer ett schema som har en primär identitet är fälten **[!UICONTROL Profiler identifier]** och **[!UICONTROL Namespace]** förfyllda. Om ingen identitet har definierats väljer vi _identityMap > id_ som primärnyckel. Sedan måste du markera ett namnutrymme och nyckeln kommer att vara förifylld (under fältet **[!UICONTROL Namespace]**) med _identityMap > id_.
 
 När du markerar fält taggas primära identitetsfält.
 
@@ -122,13 +118,13 @@ Välj ett namnutrymme i listrutan.
 
 Endast ett namnutrymme tillåts per resa. Om du använder flera händelser under samma resa måste de använda samma namnutrymme. Läs [den här sidan](../building-journeys/journey.md).
 
-## Definiera händelsenyckeln {#define-the-event-key}
+## Definiera profilidentifieraren {#define-the-event-key}
 
 Nyckeln är fältet eller kombinationen av fält som är en del av händelsenyttolastdata och som gör att systemet kan identifiera den person som är associerad med händelsen. Nyckeln kan till exempel vara Experience Cloud-ID, ett CRM-ID eller en e-postadress.
 
 Om du planerar att utnyttja data som lagras i kundprofildatabasen i realtid måste du som händelsenyckel välja information som du definierat som en profils identitet i [kundprofiltjänsten i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html).
 
-Det gör att systemet kan utföra avstämningen mellan händelsen och personens profil. Om du väljer ett schema som har en primär identitet är fälten **[!UICONTROL Key]** och **[!UICONTROL Namespace]** förfyllda. Om ingen identitet har definierats väljer vi _identityMap > id_ som primärnyckel. Sedan måste du markera ett namnutrymme och nyckeln kommer att vara förifylld (under fältet **[!UICONTROL Namespace]**) med _identityMap > id_.
+Det gör att systemet kan utföra avstämningen mellan händelsen och personens profil. Om du väljer ett schema som har en primär identitet är fälten **[!UICONTROL Profile identifier]** och **[!UICONTROL Namespace]** förfyllda. Om ingen identitet har definierats väljer vi _identityMap > id_ som primärnyckel. Sedan måste du markera ett namnutrymme och nyckeln kommer att vara förifylld (under fältet **[!UICONTROL Namespace]**) med _identityMap > id_.
 
 När du markerar fält taggas primära identitetsfält.
 
@@ -136,7 +132,7 @@ När du markerar fält taggas primära identitetsfält.
 
 Om du behöver använda en annan nyckel, till exempel ett CRM-ID eller en e-postadress, måste du lägga till den manuellt:
 
-1. Klicka i fältet **[!UICONTROL Key]** eller på pennikonen.
+1. Klicka i fältet **[!UICONTROL Profile identifier]** eller på pennikonen.
 
    ![](../assets/journey16.png)
 
