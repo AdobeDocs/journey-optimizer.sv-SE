@@ -5,7 +5,7 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 21476691c6e5c5a2f8c5e36a494206fc9779c9d2
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 4%
@@ -24,10 +24,10 @@ Listan med beslut finns på fliken **[!UICONTROL Offers]** / **[!UICONTROL Decis
 
 Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapats i Erbjudandebiblioteket:
 
-* [Placeringar](../offer-library/creating-placements.md),
-* [Samlingar](../offer-library/creating-collections.md),
-* [Personaliserade erbjudanden](../offer-library/creating-personalized-offers.md),
-* [Reserverbjudanden](../offer-library/creating-fallback-offers.md).
+* [Placeringar](../offer-library/creating-placements.md)
+* [Samlingar](../offer-library/creating-collections.md)
+* [Personaliserade erbjudanden](../offer-library/creating-personalized-offers.md)
+* [Reserverbjudanden](../offer-library/creating-fallback-offers.md)
 
 ## Skapa beslutet {#create-activity}
 
@@ -37,7 +37,7 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 
    ![](../../assets/activities-name.png)
 
-## Lägg till beslut {#add-decisions}
+## Lägg till erbjudanden {#add-offers}
 
 1. Dra och släpp en placering från listan för att lägga till den i beslutet och klicka sedan på **[!UICONTROL Add collection]**.
 
