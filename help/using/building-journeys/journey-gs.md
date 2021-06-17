@@ -5,16 +5,14 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: f2c280ba3d2148a62eebff421ef6c8c3c0352936
 workflow-type: tm+mt
-source-wordcount: '1468'
-ht-degree: 7%
+source-wordcount: '1703'
+ht-degree: 6%
 
 ---
 
 # Kom igång med resor{#jo-quick-start}
-
-![](../assets/do-not-localize/badge.png)
 
 ## Krav
 
@@ -22,7 +20,7 @@ För att kunna skicka meddelanden med resor krävs följande konfiguration:
 
 1. **Konfigurera en händelse**: Om du vill utlösa dina resor tills vidare när en händelse tas emot, måste du konfigurera en händelse. Du definierar den förväntade informationen och hur den ska behandlas. Det här steget utförs av en **teknisk användare**. [Läs mer](../event/about-events.md).
 
-   ![](../assets/jo-event7.png)
+   ![](../assets/jo-event7bis.png)
 
 1. **Skapa ett segment**: resan även kan avlyssna Adobe Experience Platform-segment för att skicka meddelanden i grupp till en viss uppsättning profiler. Därför måste ni skapa segment. [Läs mer](../segment/about-segments.md).
 
@@ -42,11 +40,11 @@ Det här steget utförs av **företagsanvändaren**. Här skapar du dina resor. 
 
 Här är de viktigaste stegen för att skicka meddelanden via resor:
 
-1. Klicka på **[!UICONTROL Journeys]** i avsnittet RESURSHANTERING. Listan över resor visas.
+1. Klicka på **[!UICONTROL Journeys]** i menyavsnittet RESURSHANTERING. Listan över resor visas.
 
    ![](../assets/interface-journeys.png)
 
-1. Klicka på **[!UICONTROL Create]** för att skapa en ny resa.
+1. Klicka på **[!UICONTROL Create Journey]** för att skapa en ny resa.
 
 1. Redigera resans egenskaper i konfigurationsrutan som visas till höger. Läs mer i det här [avsnittet](journey-gs.md#change-properties).
 
@@ -82,7 +80,7 @@ Med **Kopiera teknisk information** kan du kopiera teknisk information om den re
 
 Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet för engångsresor, till exempel om du vill erbjuda en engångsgåva när en person går in i en affär. I så fall vill ni inte att kunden ska kunna registrera sig på nytt och få erbjudandet igen.
 
-När en resa&quot;slutar&quot; får den statusen **[!UICONTROL Closed (no entrance)]**. Resan kommer att sluta låta nya individer komma in på resan. Personer som redan är på resan kommer att slutföra resan normalt.
+När en resa&quot;slutar&quot; får den statusen **[!UICONTROL Closed]**. Resan kommer att sluta låta nya individer komma in på resan. Personer som redan är på resan kommer att slutföra resan normalt.
 
 Efter den globala standardtidsgränsen på 30 dagar växlar resan till statusen **Slutförd**. Se det här [avsnittet](../building-journeys/journey-gs.md#global_timeout).
 
@@ -114,6 +112,32 @@ Du kan ange en fast tidszon eller använda Adobe Experience Platform-profiler f�
 
 Mer information om hantering av tidszoner finns på [den här sidan](../building-journeys/timezone-management.md).
 
+### Burst-läge {#burst}
+
+Burst-läget är ett betalt tillägg som gör att det går att skicka mycket snabba push-meddelanden i stora volymer. Det används för enkla resor som innehåller ett lässegment och ett enkelt push-meddelande. Burst används när fördröjning i meddelandeleverans är affärskritisk när du vill skicka en snabb push-varning på mobiltelefoner, till exempel ett meddelande om nyheter till användare som har installerat din nyhetskanalapp.
+
+Begränsningar:
+
+* Resan måste börja med ett lässegment. Händelser tillåts inte.
+* Nästa steg måste vara ett push-meddelande. Ingen annan aktivitet eller steg tillåts (förutom den valfria slutaktiviteten):
+   * Skjut bara kanal
+   * Ingen personalisering tillåts i meddelandet
+   * Meddelandet måste vara litet (&lt;2kB)
+
+Viktigt:
+
+Om något av kraven inte är fullständigt, är inte sprängningsläget tillgängligt under resan.
+
+Aktivera Burst-läget genom att öppna resan och klicka på pennikonen i det övre högra hörnet för att komma åt resans egenskaper. Aktivera sedan växlingsknappen **Aktivera burst-läge**.
+
+![](../assets/burst.png)
+
+Burst-läget inaktiveras om du ändrar en burst-resa och lägger till en aktivitet som inte är kompatibel med burst (meddelande, annan åtgärd, en händelse osv.). Ett meddelande visas.
+
+![](../assets/burst2.png)
+
+Testa och publicera sedan din resa som vanligt. Testlägesmeddelanden skickas inte via burst-läget.
+
 ## Avsluta en resa
 
 En resa kan ta slut för en individ på grund av två orsaker:
@@ -129,7 +153,7 @@ En resa kan avslutas på grund av följande orsaker:
 * En segmentbaserad resa som utförts i ett enda steg.
 * Efter den sista förekomsten av en återkommande segmentbaserad resa.
 
-När en resa stängs (av någon av anledningarna ovan) får den statusen **[!UICONTROL Closed (no entrance)]**. Resan kommer att sluta låta nya individer komma in på resan. Personer som redan är på resan kommer att slutföra resan normalt. Efter den globala standardtidsgränsen på 30 dagar växlar resan till statusen **Slutförd**. Se det här [avsnittet](../building-journeys/journey-gs.md#global_timeout).
+När en resa stängs (av någon av anledningarna ovan) får den statusen **[!UICONTROL Closed]**. Resan kommer att sluta låta nya individer komma in på resan. Personer som redan är på resan kommer att slutföra resan normalt. Efter den globala standardtidsgränsen på 30 dagar växlar resan till statusen **Slutförd**. Se det här [avsnittet](../building-journeys/journey-gs.md#global_timeout).
 
 Om ni behöver stoppa alla personers framsteg på resan kan ni stoppa den. Om du stoppar resan kommer alla personer på resan att tidsgränsen för timeout.
 
@@ -145,18 +169,18 @@ Med alternativen **[!UICONTROL Stop]** och **[!UICONTROL Close to new entrances]
 
 Du kan stänga en resa manuellt för att säkerställa att kunder som redan har gått in på resan kan slutföra sin resa, men nya användare inte kan ta sig in på resan.
 
-När en resa stängs får den statusen **[!UICONTROL Closed (no entrance)]**. Efter den globala standardtidsgränsen på 30 dagar växlar resan till statusen **Slutförd**. Se det här [avsnittet](../building-journeys/journey-gs.md#global_timeout).
+När en resa stängs får den statusen **[!UICONTROL Closed]**. Efter den globala standardtidsgränsen på 30 dagar växlar resan till statusen **Slutförd**. Se det här [avsnittet](../building-journeys/journey-gs.md#global_timeout).
 
 En stängd reseversion kan inte startas om eller tas bort. Du kan skapa en ny version av den eller duplicera den. Endast slutförda resor kan tas bort.
 
-Du kan stänga en resa genom att klicka på **[!UICONTROL Close to new entrances]** medan du hovrar över en resa i listan över resor.
+Om du vill stänga en resa från listan med resor klickar du på knappen **[!UICONTROL Ellipsis]** till höger om resenamnet och väljer **[!UICONTROL Close to new entrances]**.
 
-![](../assets/do-not-localize/journey-finish-quick-action.png)
+![](../assets/journey-finish-quick-action.png)
 
 Du kan även:
 
 1. Klicka på den resa du vill stänga i listan **[!UICONTROL Journeys]**.
-1. Klicka på nedpilen i det övre högra hörnet.
+1. Klicka på nedpilen längst upp till höger.
 
    ![](../assets/finish_drop_down_list.png)
 
@@ -171,9 +195,9 @@ Det går inte att starta om en stoppad reseversion.
 
 När den stoppas får en resa statusen **[!UICONTROL Stopped]**.
 
-Du kan stoppa en resa (till exempel om en marknadsförare upptäcker att resan riktar sig mot fel målgrupp eller en anpassad åtgärd som ska leverera meddelanden inte fungerar korrekt..) genom att klicka på **[!UICONTROL Stop]** medan du hovrar över en resa i listan över resor.
+Du kan till exempel stoppa en resa om en marknadsförare upptäcker att resan riktar sig mot fel målgrupp eller en anpassad åtgärd som ska leverera meddelanden inte fungerar korrekt. Om du vill stoppa en resa från listan med resor klickar du på knappen **[!UICONTROL Ellipsis]** till höger om resenamnet och väljer **[!UICONTROL Stop]**.
 
-![](../assets/do-not-localize/journey-stop-quick-action.png)
+![](../assets/journey-finish-quick-action.png)
 
 Du kan även:
 
