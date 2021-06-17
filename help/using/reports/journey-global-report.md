@@ -5,16 +5,14 @@ feature: Rapportering
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 42e5cdec54339f65cddd79df4deabbf28292d16b
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
 
 # Global reserapport {#journey-global-report}
-
-![](../assets/do-not-localize/badge.png)
 
 Den globala reserapporten kan nås direkt från din resa med knappen **[!UICONTROL Global report]**.
 
@@ -44,23 +42,27 @@ Widgeten **[!UICONTROL Journey`s statistics]** visar följande KPI:er:
 
 * **[!UICONTROL Failed individual journey]**: Totalt antal enskilda resor som inte har slutförts.
 
-Med widgetarna **[!UICONTROL Event Performance]** och **[!UICONTROL Top events]** kan du se vilken av dina **[!UICONTROL Events]**-åtgärder som har utförts genom diagram och tabeller.
+![](../assets/global_report_12.png)
 
-**[!UICONTROL Action Performance]** och  **[!UICONTROL Top Actions]** widgetar är de mest framgångsrika åtgärderna och felen som inträffade när dina  **[!UICONTROL Actions]** aktiverades. Tabellen **[!UICONTROL Top Actions]** innehåller data som är tillgängliga för **[!UICONTROL Actions]**, till exempel:
+Med widgetarna **[!UICONTROL Events received by event]**, **[!UICONTROL Events by origin]** och **[!UICONTROL Top events]** kan du se vilken av dina **[!UICONTROL Events]** som utfördes med diagram och tabeller.
+
+![](../assets/global_report_13.png)
+
+**[!UICONTROL Action Performance]**,  **[!UICONTROL Action Error Reasons]** och  **[!UICONTROL Top Actions]** widgetar representerar de mest framgångsrika åtgärderna och felen som inträffade när dina  **[!UICONTROL Actions]** utlöstes.
+
+Tabellen **[!UICONTROL Top Actions]** innehåller data som är tillgängliga för **[!UICONTROL Actions]**, till exempel:
 
 * **[!UICONTROL Actions successfully executed]**: Totalt antal  **[!UICONTROL Actions]** lyckade körningar för en resa.
 
 * **[!UICONTROL Error in action]**: Totalt antal fel som uppstått för  **[!UICONTROL Actions]**.
-
-Diagrammet **[!UICONTROL Error Reasons]** anger vilken typ av fel som inträffade för **[!UICONTROL Actions]**.
-
-<!--Events by origin-->
 
 ## Fliken E-post {#email-global}
 
 Från din resa **[!UICONTROL Global report]** anger fliken **[!UICONTROL Email]** huvudinformationen i relation till e-postleveranserna som skickas under din resa.
 
 En detaljerad rapport om en viss e-postleverans finns i avsnittet [E-posta global rapport](#email-global-report).
+
+![](../assets/global_report_14.png)
 
 I **[!UICONTROL Email Sending Statistics]**-diagrammet visas leveransframgången:
 
@@ -92,6 +94,10 @@ I **[!UICONTROL Email Sending Statistics]**-diagrammet visas leveransframgången
 
 * **[!UICONTROL Click through rate]**: Procentandel användare som interagerade med resan.
 
+* **[!UICONTROL Unsubscribe]**: Antal klick på länken för att avbryta prenumerationen.
+
+* **[!UICONTROL Spam complaints]**: Antal gånger ett meddelande har deklarerats som skräppost eller skräppost.
+
 Diagrammet **[!UICONTROL Sending Statistics]** innehåller data som är tillgängliga för skickade e-postmeddelanden, som:
 
 * **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
@@ -99,6 +105,8 @@ Diagrammet **[!UICONTROL Sending Statistics]** innehåller data som är tillgän
 * **[!UICONTROL Bounces]**: Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
 
 * **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
+
+![](../assets/global_report_15.png)
 
 Widgetarna **[!UICONTROL Bounce Reasons]** och **[!UICONTROL Bounce categories]** innehåller tillgängliga data för studsade meddelanden, till exempel:
 
@@ -110,15 +118,19 @@ Widgetarna **[!UICONTROL Bounce Reasons]** och **[!UICONTROL Bounce categories]*
 
 Mer information om studsar finns på sidan [Suppressionslista](../suppression-list.md).
 
+![](../assets/global_report_16.png)
+
 Diagrammet och tabellen **[!UICONTROL Email - Top Url]** visar vilka URL:er från din leverans som är mest besökta.
 
-Diagrammet och tabellen **[!UICONTROL Email - Best recipient domain]** visar vilka domäner som är de mest använda av mottagarna för att öppna e-postmeddelandet.
+Diagrammet och tabellen **[!UICONTROL Email - Top recipient domain]** visar vilka domäner som är de mest använda av mottagarna för att öppna e-postmeddelandet.
 
 ## Skjut fliken {#push-global}
 
 Från din resa **[!UICONTROL Global report]** anger fliken **[!UICONTROL Push]** huvudinformationen i relation till push-leveranserna som skickas under din resa.
 
 En detaljerad rapport om en viss push-leverans finns i den här [push Global-rapporten](#push-global-report).
+
+![](../assets/global_report_17.png)
 
 Tabellen **[!UICONTROL Push notification - Sending statistics]** innehåller huvudinformationen i förhållande till dina push-meddelanden med diagram och KPI:er:
 
@@ -160,6 +172,10 @@ Diagrammet **[!UICONTROL Push notification summary]** innehåller data som är t
 
 * **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
 
+![](../assets/global_report_18.png)
+
 Med diagrammet och tabellen **[!UICONTROL Error Reasons]** kan du se vilket fel som uppstod under leveransen.
+
+![](../assets/global_report_19.png)
 
 Diagram och tabeller för **[!UICONTROL Tracking by platform]**, **[!UICONTROL Sending by platform]** och **[!UICONTROL Breakdown by platform]** visar om push-meddelandet lyckades beroende på mottagarens operativsystem.
