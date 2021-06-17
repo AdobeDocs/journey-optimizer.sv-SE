@@ -6,7 +6,7 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 285942ec51859a4cea888d9974f79f52acf3aabf
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 2%
@@ -14,8 +14,6 @@ ht-degree: 2%
 ---
 
 # Allmänna händelser {#section_ofg_jss_dgb}
-
-![](../assets/do-not-localize/badge.png)
 
 För den här händelsetypen kan du bara lägga till en etikett och en beskrivning. Resten av konfigurationen kan inte redigeras. Den utfördes av den tekniska användaren. Läs [den här sidan](../event/about-events.md).
 
@@ -31,11 +29,11 @@ Resan lyssnar sedan på händelsen under den tid som anges i tidsgränsen. Om en
 
 Så här konfigurerar du en timeout för en händelse:
 
-1. Aktivera alternativet **[!UICONTROL Enable the event timeout]** från händelseegenskaperna.
+1. Aktivera alternativet **[!UICONTROL Define the event timeout]** från händelseegenskaperna.
 
 1. Ange hur lång tid resan ska vänta på händelsen.
 
-1. Om du vill skicka personerna till en timeout-sökväg när ingen händelse tas emot inom den angivna tidsgränsen aktiverar du alternativet **[!UICONTROL Set the timeout path]**. Om det här alternativet inte är aktiverat avslutas kundresan för personen när tidsgränsen nås.
+1. Om du vill skicka personerna till en timeout-sökväg när ingen händelse tas emot inom den angivna tidsgränsen aktiverar du alternativet **[!UICONTROL Set a timeout path]**. Om det här alternativet inte är aktiverat avslutas kundresan för personen när tidsgränsen nås.
 
    ![](../assets/event-timeout.png)
 
