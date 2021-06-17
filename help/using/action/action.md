@@ -6,16 +6,14 @@ feature: Instruktioner
 topic: Administrering
 role: Administrator
 level: Intermediate
-source-git-commit: 70d3bdaeec2a7a8f282b0e1a79bc751f7f837663
+source-git-commit: 10d8cb2002279a7ea679e2be6e9f632d0edcfbb8
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 73%
+source-wordcount: '237'
+ht-degree: 68%
 
 ---
 
 # Om åtgärder {#about_actions}
-
-![](../assets/do-not-localize/badge.png)
 
 >[!CONTEXTUALHELP]
 >id="jo_actions"
@@ -25,6 +23,8 @@ ht-degree: 73%
 Åtgärder är anslutningar genom vilka du levererar personaliserade upplevelser till kunder i realtid såsom push-meddelanden, e-post, SMS eller andra sätt för digitalt engagemang som du använder i företaget.
 
 [!DNL Journey Optimizer] levereras med inbyggd meddelandefunktion. Se [det här avsnittet](../get-started-content.md).
+
+Om du har Adobe Campaign v7 eller v8 blir en integrering tillgänglig på begäran. Se [den här sidan](../action/acc-action.md).
 
 Om du använder ett tredjepartssystem för att skicka meddelanden såsom Epsilon, Facebook, Adobe.io, Firebase osv. måste du lägga till och konfigurera en anpassad åtgärd. Se [den här sidan](../action/about-custom-action-configuration.md).
 
@@ -36,6 +36,6 @@ Med anpassade åtgärder kan du konfigurera anslutningar med ett tredjepartssyst
 
 Åtgärderna är tillgängliga på den vänstra paletten under din resa i kategorin **[!UICONTROL Action]**. Läs [den här sidan](../building-journeys/about-journey-activities.md#action-activities).
 
-Om du vill visa åtgärdslistan eller konfigurera en ny åtgärd går du till **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** i den vänstra navigeringen. Listan med åtgärder visas. Mer information om gränssnittet finns på [den här sidan](../user-interface.md).
+Om du vill visa åtgärdslistan eller konfigurera en ny åtgärd väljer du **[!UICONTROL Configurations]** i avsnittet ADMINISTRATION-menyn. Klicka på **[!UICONTROL Manage]** i **[!UICONTROL Actions]**-avsnittet. Listan med åtgärder visas. Mer information om gränssnittet finns på [den här sidan](../user-interface.md).
 
 ![](../assets/custom1.png)
