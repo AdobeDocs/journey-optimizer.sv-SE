@@ -5,16 +5,14 @@ feature: Datakällor
 topic: Administrering
 role: Administrator
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 265e15f3b56dfac7a5c35bf6817a5ff2da1d744a
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '691'
 ht-degree: 7%
 
 ---
 
 # Konfigurera en datakälla {#configure-data-source}
-
-![](../assets/do-not-localize/badge.png)
 
 Här följer de huvudsakliga konfigurationsstegen för datakällor:
 
@@ -22,9 +20,7 @@ Här följer de huvudsakliga konfigurationsstegen för datakällor:
 >
 >Datakällans konfiguration utförs alltid av en **teknisk användare**.
 
-1. Välj menyn **[!UICONTROL Admin]** / **[!UICONTROL Data Sources]**.
-
-   Listan med datakällor visas. Mer information om gränssnittet finns på [den här sidan](../user-interface.md).
+1. Välj **[!UICONTROL Configurations]** under ADMINISTRATION-menyn. Klicka på **[!UICONTROL Manage]** i **[!UICONTROL Data Sources]**-avsnittet. Listan med datakällor visas. Mer information om gränssnittet finns på [den här sidan](../user-interface.md).
 
    ![](../assets/journey18.png)
 
