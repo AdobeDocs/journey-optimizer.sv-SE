@@ -5,22 +5,20 @@ feature: Rapportering
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 233b97784843adb26cb37a612feeaf2a8e396f27
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '447'
 ht-degree: 7%
 
 ---
 
 # Skapa reserapporter{#design-jo-reports}
 
-![](../assets/do-not-localize/badge.png)
-
 Förutom [realtidsrapporter](live-report.md) och inbyggda [funktioner för global rapportering](global-report.md), kan [!DNL Journey Optimizer] automatiskt skicka data om reseprestanda till Adobe Experience Platform så att det kan kombineras med andra data för analysändamål.
 
 >[!NOTE]
 >
->Den här funktionen är inte aktiverad som standard för alla nyligen distribuerade instanser. Aktiveringen görs på begäran.
+>Den här funktionen aktiveras som standard för alla instanser för steg i kundresan. Vid portoplanssteg aktiveras aktiveringen på begäran. Scheman och datauppsättningarna som skapades under etableringen för den här funktionen får inte ändras.
 
 Du har till exempel konfigurerat en resa som skickar flera e-postmeddelanden. Med den här funktionen kan du kombinera [!DNL Journey Optimizer]-data med händelsedata längre fram i kedjan, som hur många konverteringar som har gjorts, hur mycket engagemang som har gjorts på webbplatsen eller hur många transaktioner som har gjorts i butiken. Reseinformationen kan kombineras med data om Adobe Experience Platform, antingen från andra digitala resurser eller från offlineanläggningar, för att ge en mer heltäckande bild av resultatet.
 
