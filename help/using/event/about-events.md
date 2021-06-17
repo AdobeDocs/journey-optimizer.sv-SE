@@ -5,16 +5,14 @@ feature: Händelser
 topic: Administrering
 role: Administrator
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 6e2526bd3c80ad2bff59502c6537a3e2213f7bf7
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 32%
+source-wordcount: '775'
+ht-degree: 30%
 
 ---
 
 # Om händelser{#concept_gfj_fqt_52b}
-
-![](../assets/do-not-localize/badge.png)
 
 >[!CONTEXTUALHELP]
 >id="jo_events"
@@ -51,6 +49,8 @@ För unitära händelser finns det två typer av händelse-ID:
    >En begränsningsregel definieras för regelbaserade händelser. Det begränsar antalet kvalificerade händelser som en resa kan behandla till 5 000 per sekund för en viss organisation (ORG). Det motsvarar Journey Optimizer SLA. Se den här [sidan](https://helpx.adobe.com/legal/product-descriptions/journey-orchestration.html).
 
 * **Systemgenererade** undantag: dessa händelser kräver ett eventID. Detta eventID-fält genereras automatiskt när händelsen skapas. Det system som skickar händelsen ska inte generera ett ID, det ska skicka det som finns i nyttolastförhandsvisningen.
+
+Journey Optimizer kräver att händelser direktuppspelas eller grupperas i Adobe Experience Platform. Dessa data behöver inte nödvändigtvis gå till realtidsprofilen. Om du vill använda händelserna för segmentering eller sökning i en separat resa rekommenderar vi att du aktiverar datauppsättningen för profil.
 
 ## Datacykel {#section_r1f_xqt_pgb}
 
