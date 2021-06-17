@@ -5,16 +5,14 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: da31b4faf476d090a3a45b8c14701c4addd1a02a
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1414'
 ht-degree: 1%
 
 ---
 
 # Utforma din resa
-
-![](../assets/do-not-localize/badge.png)
 
 Med resegränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan. Du kan också dubbelklicka på en aktivitet för att lägga till den på arbetsytan i nästa steg som är tillgängligt. Varje aktivitet har en särskild roll och plats i processen. Aktiviteterna är sekventierade. När en aktivitet är klar fortsätter flödet och bearbetar nästa aktivitet och så vidare.
 
@@ -40,7 +38,7 @@ Du kan också använda fältet **[!UICONTROL Search]**.
 
 Aktivitetskonfigurationsrutan **visas när du klickar på en aktivitet på paletten.** Fyll i de obligatoriska fälten. Klicka på ikonen **[!UICONTROL Delete]** för att ta bort aktiviteten. Klicka på **[!UICONTROL Cancel]** för att avbryta ändringarna eller **[!UICONTROL Ok]** för att bekräfta. Om du vill ta bort aktiviteter kan du även markera en aktivitet (eller flera) och trycka på backstegstangenten. Om du trycker på Esc stängs aktivitetskonfigurationsrutan.
 
-Som standard är skrivskyddade fält dolda. Om du vill visa dem klickar du på ikonen **Visa skrivskyddade fält** längst upp till vänster i aktivitetskonfigurationsrutan.
+Som standard är skrivskyddade fält dolda. Om du vill visa skrivskyddade fält klickar du på ikonen **Visa skrivskyddade fält** längst upp till vänster i aktivitetskonfigurationsrutan. Denna inställning gäller alla aktiviteter på alla resor.
 
 ![](../assets/journey59bis.png)
 
@@ -54,11 +52,11 @@ När du utformar din resa är den första frågan du vill ställa hur profiler k
 
 **Börja med en händelse**: När en resa är inställd på att avlyssna händelser, kommer individer in på resan  **** tillsammans i realtid. Meddelanden som ingår i din resa skickas till den person som för tillfället är på väg in på resan. [Läs mer om evenemang](../event/about-events.md)
 
-**Börja med ett Read-segment**: kan ni styra er resa så att ni lyssnar på Adobe Experience Platform segment. I det här fallet kommer alla personer som tillhör det angivna segmentet in på resan. Meddelanden som ingår i resan skickas till personer som tillhör segmentet. [Läs mer om att läsa segment](read-segment.md).
+**Börja med ett lässegment**: kan ni styra er resa så att ni lyssnar på Adobe Experience Platform segment. I det här fallet kommer alla personer som tillhör det angivna segmentet in på resan. Meddelanden som ingår i resan skickas till personer som tillhör segmentet. [Läs mer om att läsa segment](read-segment.md).
 
 ## Definiera nästa steg
 
-Efter din första händelse eller Läs-segment kan du kombinera de olika aktiviteterna för att skapa flerstegsscenarier för flera kanaler. Välj de steg du behöver på paletten.
+Efter din första händelse eller Läs segment kan du kombinera de olika aktiviteterna för att skapa flerstegsscenarier för flera kanaler. Välj de steg du behöver på paletten.
 
 **Händelser**
 
@@ -68,11 +66,11 @@ Du kan lägga till **flera händelser** under resan, så länge de använder sam
 
 Du kan också lägga till en **Reaction**-händelse efter ett meddelande för att reagera på spårningsdata som är relaterade till meddelandet. Detta gör att du till exempel kan skicka ett till meddelande om personen öppnade det föregående meddelandet eller klickade i det. Läs mer i det här [avsnittet](reaction-events.md).
 
-Med aktiviteten **Segmentkvalificering** kan du få individer att komma in på eller gå framåt i en resa baserat på Adobe Experience Platform segmentingångar och utgångar. Ni kan få alla nya silverkunder att delta i en resa och skicka personaliserade meddelanden. Läs mer i det här [avsnittet](segment-qualification-events.md).
+Med händelseaktiviteten **Segmentkvalificering** kan du få individer att komma in på eller gå framåt i en resa baserat på Adobe Experience Platform segmentingångar och utgångar. Ni kan få alla nya silverkunder att delta i en resa och skicka personaliserade meddelanden. Läs mer i det här [avsnittet](segment-qualification-events.md).
 
 **Orchestration**
 
-I orkestreringsaktiviteterna hittar du aktiviteten **Läs segment** som gör att du kan ställa in din resa så att den lyssnar på ett Adobe Experience Platform-segment. [Läs mer om Läs-segmentsaktiviteten](read-segment.md).
+I orkestreringsaktiviteterna hittar du aktiviteten **Läs segment** som gör att du kan ställa in din resa så att den lyssnar på ett Adobe Experience Platform-segment. [Läs mer om Läs segment-aktiviteten](read-segment.md).
 
 Med de andra aktiviteterna kan du lägga till villkor för din resa för att definiera flera olika vägar, ange en väntetid innan nästa aktivitet utförs eller avsluta din resa. Läs mer i det här [avsnittet](about-journey-activities.md#orchestration-activities).
 
@@ -92,7 +90,7 @@ Med olika aktiviteter (händelse, åtgärd, vänta) kan du lägga till flera sö
 
 När du lyssnar på en händelse rekommenderar vi att du inte väntar på händelsen i oändlighet. Det är inte obligatoriskt, bara en god praxis. Om du bara vill lyssna på en eller flera händelser under en viss tid, placerar du en eller flera händelser och en vänteaktivitet parallellt. Se [det här avsnittet](../building-journeys/general-events.md#events-specific-time).
 
-Om du vill ta bort banan placerar du markören på den och klickar på ikonen **[!UICONTROL Delete arrow]**.
+Om du vill ta bort banan placerar du markören på den och klickar på ikonen **[!UICONTROL Delete path]**.
 
 ![](../assets/journey42ter.png)
 
