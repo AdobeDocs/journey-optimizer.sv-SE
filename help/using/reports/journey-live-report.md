@@ -1,20 +1,18 @@
 ---
-title: Rapport om resebesök
+title: Rapport om livesändning på resa
 description: Lär dig använda data från reserapporten
 feature: Rapportering
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: dc858fb29a9059c11fd4d3ab77954d4dac2097c3
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
 
 # Direktfärdsrapport {#journey-live-report}
-
-![](../assets/do-not-localize/badge.png)
 
 Du kan komma åt liverapporten för resan direkt från din resa med knappen **[!UICONTROL Live report]**.
 
@@ -64,7 +62,7 @@ En detaljerad rapport om en viss e-postleverans finns i avsnittet [E-postlive ra
 
 ![](../assets/report_email_1.png)
 
-Widgetarna **[!UICONTROL Sending Statistics]** och **[!UICONTROL Sending metrics by Email]** visar hur bra leveransen är:
+Widgeten **[!UICONTROL Email Sending Statistics]** visar huvudinformationen i förhållande till meddelandet:
 
 * **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
 
@@ -72,9 +70,7 @@ Widgetarna **[!UICONTROL Sending Statistics]** och **[!UICONTROL Sending metrics
 
 * **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
 
-<!--Hard and bounce - by Email-->
-
-Diagrammet **[!UICONTROL Email summary]** visar huvudinformationen i förhållande till meddelandet:
+Tabellen **[!UICONTROL Sending metrics by Email]** och diagrammet **[!UICONTROL Email Summary]** visar hur leveransen lyckades:
 
 * **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
 
@@ -88,9 +84,13 @@ Diagrammet **[!UICONTROL Email summary]** visar huvudinformationen i förhållan
 
 * **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades i en leverans.
 
+* **[!UICONTROL Unsubscribe]**: Antal klick på länken för att avbryta prenumerationen.
+
+* **[!UICONTROL Spam complaints]**: Antal gånger ett meddelande har deklarerats som skräppost eller skräppost.
+
 ![](../assets/report_email_2.png)
 
-Widgetarna **[!UICONTROL Bounce Reasons]** och **[!UICONTROL Bounce categories]** innehåller tillgängliga data för studsade meddelanden, till exempel:
+Widgetarna **[!UICONTROL Bounce Reasons]**, **[!UICONTROL Bounce categories]** och **[!UICONTROL Hard and bounce - by Email]** innehåller tillgängliga data för studsade meddelanden, till exempel:
 
 * **[!UICONTROL Hard bounce]**: Det totala antalet permanenta fel, t.ex. fel e-postadress. Detta inbegriper ett felmeddelande som uttryckligen anger att adressen är ogiltig, till exempel Okänd användare.
 
