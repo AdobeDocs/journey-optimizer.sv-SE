@@ -5,21 +5,19 @@ feature: Rapportering
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '227'
 ht-degree: 1%
 
 ---
 
-# Live-rapport {#live-report}
+# Kom igång med Live-rapporten {#live-report}
 
-![](../assets/do-not-localize/badge.png)
+Använd **[!UICONTROL Live report]** för att i realtid mäta och visualisera påverkan och prestanda av dina resor och dina meddelanden på en inbyggd kontrollpanel.
+Data är tillgängliga i **[!UICONTROL Live report]** så snart leveransen har skickats eller din resa är genomförd.
 
-Med **[!UICONTROL Live report]** kan du i realtid mäta och visualisera hur effektiva dina resor och dina meddelanden är med en inbyggd kontrollpanel.
-Dina leveransdata blir tillgängliga i **[!UICONTROL Live report]** så snart leveransen eller resan är genomförd.
-
-* Om du vill rikta in dig på en resa eller leveranser i en resa går du till **[!UICONTROL Journeys]**-menyn och klickar på ikonen **[!UICONTROL Live report]**. Du kan sedan hitta liverapporter för resa, e-post och push.
+* Om du vill rikta in dig på en resa eller leveranser i samband med en resa går du till **[!UICONTROL Journeys]**-menyn och klickar på ikonen **[!UICONTROL Live report]**. Du kan sedan hitta liverapporter för resa, e-post och push.
 
    ![](../assets/report_journey.png)
 
@@ -27,11 +25,11 @@ Dina leveransdata blir tillgängliga i **[!UICONTROL Live report]** så snart le
 
    ![](../assets/report_2.png)
 
-## Ändra instrumentpanel {#modify-dashboard}
+## Anpassa kontrollpanelen {#modify-dashboard}
 
 Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort. Om du ändrar widgetarna påverkas bara den aktuella användarens kontrollpanel. Andra användare ser sina egna kontrollpaneler eller de som har angetts som standard.
 
-1. Klicka på **[!UICONTROL Modify dashboard]** i din live-rapport.
+1. Klicka på **[!UICONTROL Modify]** i din live-rapport.
 
    ![](../assets/report_modify_1.png)
 
