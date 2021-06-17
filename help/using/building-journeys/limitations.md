@@ -5,41 +5,32 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 12623f6f8a9571673b2b498a02da39608344ef1e
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
 
 # Begränsningar {#journey-limitations}
 
-![](../assets/do-not-localize/badge.png)
-
 Här är begränsningar för användningen av resor.
-
-## Begränsningar för reselista
-
-* I reselistan återställs filter, sökningar och kolumnval när sidan uppdateras.
 
 ## Allmänna åtgärdsbegränsningar
 
 * Det finns ingen sändande begränsning. 
-* Två försök görs systematiskt om ett fel uppstår. Du kan inte justera antalet försök enligt det mottagna felmeddelandet. 
+* Tre försök utförs systematiskt om ett fel uppstår. Du kan inte justera antalet försök enligt det mottagna felmeddelandet. 
 * Den inbyggda **Reaction**-händelsen gör att du kan reagera på åtgärder som inte finns i lådan (se den här [sidan](../building-journeys/reaction-events.md)). Om du vill reagera på ett meddelande som skickas via en anpassad åtgärd måste du konfigurera en dedikerad händelse. 
-* Det finns ingen Adobe Campaign Classic-integration.
 * Du kan inte placera två åtgärder parallellt. Du måste lägga till dem en i taget.
 
 ## Begränsningar för meddelandeåtgärd
-
-* Aktiviteten **Meddelande** tillåter inte att du använder sammanhangsberoende data som kommer från resan. Personaliseringen av meddelanden utförs direkt när meddelandet utformas i Journey Optimizer.
 
 * När du lägger till ett flerkanalsmeddelande skickas två meddelanden.
 
 ## Begränsningar för reseversioner {#journey-versions-limitations}
 
-* en resa som börjar med en händelseaktivitet i v1 kan inte börja med något annat än en händelse i andra versioner. Det går inte att starta en resa med en **segmentkvalificeringshändelse**.
-* en resa som börjar med en **segmentkvalificering**-aktivitet i v1 måste alltid börja med en **segmentkvalificering** i ytterligare versioner.
+* En resa som börjar med en händelseaktivitet i v1 kan inte börja med något annat än en händelse i andra versioner. Det går inte att starta en resa med en **segmentkvalificeringshändelse**.
+* En resa som börjar med en **segmentkvalificering**-aktivitet i v1 måste alltid börja med en **segmentkvalificering** i ytterligare versioner.
 * Det segment och namnområde som valts i **Segmentkvalificering** (första noden) kan inte ändras i nya versioner.
 * Regeln för återinträde måste vara densamma i alla reseversioner.
 * En resa som börjar med ett **Lässegment** kan inte börja med en annan händelse i nästa versioner.
