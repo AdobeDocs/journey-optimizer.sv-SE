@@ -5,16 +5,14 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: ad8648c3fe98caa1d6800ad3664c35c2c6f676f0
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '691'
 ht-degree: 1%
 
 ---
 
 # Hantera avanmälan {#consent}
-
-![](assets/do-not-localize/badge.png)
 
 Använd [!DNL Journey Optimizer] för att spåra mottagarnas samtycke till kommunikation och förstå hur de vill interagera med ert varumärke genom att hantera sina preferenser och prenumerationer. <!--Their preferences and subscriptions are handled through Consent management.-->
 
@@ -130,6 +128,18 @@ Begärandetext:
 ```
 
 <!--The Consent service /-->[!DNL Journey Optimizer] will <!--decrypt and-->use these parameters to update the corresponding profile's choice. <!--and provide an answer back to the landing page.-->
+
+## Avbeställ länk i rubriken {#unsubscribe-email}
+
+Om mottagarnas e-postklientprogram har stöd för att visa en länk för att avbryta prenumerationen i e-posthuvudet, kommer e-postmeddelanden som skickas med [!DNL Journey Optimizer] automatiskt att innehålla den här länken.
+
+Länken för att avbryta prenumerationen visas så här i Gmail:
+
+![](assets/unsubscribe-email.png)
+
+Om en mottagare klickar på den här länken väljs motsvarande profil omedelbart och det här alternativet uppdateras i Experience Platform.
+
+Om du klickar på länken för att avbryta prenumerationen i rubriken får det samma effekt som om du klickar på länken för att avbryta prenumerationen i e-postinnehållet. Läs mer om hantering av avanmälan i [det här avsnittet](#opt-out-management).
 
 ## Hantering av avanmälan {#push-opt-out-management}
 
