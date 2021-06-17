@@ -5,7 +5,7 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 5%
@@ -13,8 +13,6 @@ ht-degree: 5%
 ---
 
 # Vänta på aktivitet{#section_rlm_nft_dgb}
-
-![](../assets/do-not-localize/badge.png)
 
 Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en **[!UICONTROL Wait]**-aktivitet. Du kan definiera tidpunkten då nästa aktivitet ska köras. Tre alternativ är tillgängliga:
 
