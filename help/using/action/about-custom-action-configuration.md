@@ -6,23 +6,21 @@ feature: Instruktioner
 topic: Administrering
 role: Administrator
 level: Intermediate
-source-git-commit: 70d3bdaeec2a7a8f282b0e1a79bc751f7f837663
+source-git-commit: 265e15f3b56dfac7a5c35bf6817a5ff2da1d744a
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '588'
 ht-degree: 9%
 
 ---
 
 # Konfigurera en åtgärd {#configure-an-action}
 
-![](../assets/do-not-localize/badge.png)
-
 Om du använder ett tredjepartssystem för att skicka meddelanden eller om du vill att resor ska skicka API-anrop till ett tredjepartssystem, är det här du konfigurerar anslutningen till resor. Den anpassade åtgärden som definieras av tekniska användare är sedan tillgänglig på den vänstra paletten på din resa i kategorin **[!UICONTROL Action]** (se [den här sidan](../building-journeys/about-journey-activities.md#action-activities). Här är några exempel på system som du kan ansluta till med anpassade åtgärder: Epsilon, Facebook, Adobe.io, Firebase osv.
 Begränsningar visas i [den här sidan](../building-journeys/limitations.md).
 
 Här följer de huvudsteg som krävs för att konfigurera en anpassad åtgärd:
 
-1. Klicka på **[!UICONTROL Add]** i listan **[!UICONTROL Actions]** för att skapa en ny åtgärd. Åtgärdskonfigurationsrutan öppnas till höger på skärmen.
+1. Välj **[!UICONTROL Configurations]** under ADMINISTRATION-menyn. Klicka på **[!UICONTROL Manage]** i **[!UICONTROL Actions]**-avsnittet. Klicka på **[!UICONTROL Create Action]** för att skapa en ny åtgärd. Åtgärdskonfigurationsrutan öppnas till höger på skärmen.
 
    ![](../assets/custom2.png)
 
@@ -36,7 +34,7 @@ Här följer de huvudsteg som krävs för att konfigurera en anpassad åtgärd:
 1. Antalet resor som använder den här åtgärden visas i fältet **[!UICONTROL Used in]**. Du kan klicka på knappen **[!UICONTROL View journeys]** för att visa listan över resor med den här åtgärden.
 1. Definiera de olika **[!UICONTROL URL Configuration]**-parametrarna. Läs [den här sidan](../action/about-custom-action-configuration.md#url-configuration).
 1. Konfigurera avsnittet **[!UICONTROL Authentication]**. Den här konfigurationen är densamma som för datakällor.  Se [det här avsnittet](../datasource/external-data-sources.md#section_wjp_nl5_nhb).
-1. Definiera **[!UICONTROL Message parameters]**. Läs [den här sidan](../action/about-custom-action-configuration.md#define-the-message-parameters).
+1. Definiera **[!UICONTROL Action parameters]**. Läs [den här sidan](../action/about-custom-action-configuration.md#define-the-message-parameters).
 1. Klicka på **[!UICONTROL Save]**.
 
    Den anpassade åtgärden är nu konfigurerad och klar att användas på dina resor. Läs [den här sidan](../building-journeys/about-journey-activities.md#action-activities).
@@ -58,7 +56,7 @@ När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICO
    >Vi rekommenderar starkt att HTTPS används av säkerhetsskäl. Vi tillåter inte användning av Adobe-adresser som inte är offentliga och användning av IP-adresser.
 
 1. Markera samtalet **[!UICONTROL Method]**: det kan vara antingen **[!UICONTROL POST]** eller **[!UICONTROL PUT]**.
-1. I avsnittet **[!UICONTROL Headers]** klickar du på **[!UICONTROL Add a header field]** för att definiera ett nytt nyckel/värde-par. De motsvarar HTTP-rubrikerna för den begäran som görs till den externa tjänsten. Om du vill ta bort nyckel/värde-par placerar du markören i fältet **[!UICONTROL Headers]** och klickar på ikonen **[!UICONTROL Delete]**.
+1. I avsnittet **[!UICONTROL Headers]** klickar du på **[!UICONTROL Add a header field]** för att definiera ett nytt nyckel/värde-par. De motsvarar HTTP-rubrikerna för den begäran som görs till den externa tjänsten. Om du vill ta bort nyckel/värde-par placerar du markören i rubrikfältet och klickar på ikonen **[!UICONTROL Delete]**.
 
    **[!UICONTROL Content-Type]** och  **[!UICONTROL Charset]** anges som standard och kan inte tas bort eller åsidosättas.
 
@@ -66,11 +64,11 @@ När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICO
    >
    >Sidhuvuden valideras enligt följande [tolkningsregler](https://tools.ietf.org/html/rfc7230#section-3.2.4).
 
-## Definiera meddelandeparametrarna {#define-the-message-parameters}
+## Definiera åtgärdsparametrarna {#define-the-message-parameters}
 
 ![](../assets/messageparameterssection.png)
 
-I avsnittet **[!UICONTROL Message parameters]** klistrar du in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten.
+I avsnittet **[!UICONTROL Action parameters]** klistrar du in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten.
 
 ![](../assets/customactionpayloadmessage.png)
 
