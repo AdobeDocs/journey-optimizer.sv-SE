@@ -5,18 +5,16 @@ feature: Rapportering
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 8f77802fcaa23790f9de4e8f15e593643b13fb1e
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '71'
 ht-degree: 11%
 
 ---
 
 # Resefält {#sharing-journey-fields}
 
-![](../assets/do-not-localize/badge.png)
-
-Den här blandningen används i reseschemat (i relation till travelStepEvent). Den innehåller följande fält:
+Den här fältgruppen används i transportschemat (i relation till travelStepEvent). Den innehåller följande fält:
 
 ## travelID
 
