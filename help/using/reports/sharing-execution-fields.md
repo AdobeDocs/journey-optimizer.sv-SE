@@ -5,18 +5,16 @@ feature: Rapportering
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 8f77802fcaa23790f9de4e8f15e593643b13fb1e
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '324'
 ht-degree: 5%
 
 ---
 
 # journeyStep, händelser, körningsfält för åtgärder {#sharing-execution-fields}
 
-![](../assets/do-not-localize/badge.png)
-
-Den här mixinen delas av travelStepEvent och travelStepProfileEvent.
+Den här fältgruppen delas av travelStepEvent och travelStepProfileEvent.
 
 Om steget har en åtgärd som ska bearbetas läggs dessa fält till i händelsens nyttolast.
 
