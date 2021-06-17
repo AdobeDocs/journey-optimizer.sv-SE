@@ -5,7 +5,7 @@ feature: Övervakning
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 0%
@@ -13,8 +13,6 @@ ht-degree: 0%
 ---
 
 # Meddelandeövervakning {#monitor-message-execution}
-
-![](assets/do-not-localize/badge.png)
 
 [!DNL Journey Optimizer] ger möjlighet att övervaka meddelanden som är publicerade och utlösta för att vara säkra på att meddelandena körs, skickas och levereras. Du kan se hur dina meddelanden fungerar över resor <!--and APIs--> i realtid från listan **[!UICONTROL Executions]**.
 
