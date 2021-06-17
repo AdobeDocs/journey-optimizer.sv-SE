@@ -5,18 +5,16 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '225'
 ht-degree: 1%
 
 ---
 
 # Om Adobe Experience Platform-segment {#about-segments}
 
-![](../assets/do-not-localize/badge.png)
-
-Med Journey Optimizer kan ni skapa Adobe Experience Platform-segment med hjälp av kundprofildata i realtid direkt från **[!UICONTROL Segments]**-menyn och utnyttja dem i era resor.
+[!DNL Journey Optimizer]  Med kan ni skapa Adobe Experience Platform-segment med kundprofildata i realtid direkt från  **[!UICONTROL Segments]** menyn och utnyttja dem i era resor.
 
 Observera att segment också kan skapas från själva segmenteringstjänsten. Läs mer i [Adobe Experience Platform Segmentation Service-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
 
@@ -26,6 +24,6 @@ Du kan utnyttja segment i resor på olika sätt:
 
    Mer information om hur du använder aktiviteten **[!UICONTROL Read segment]** finns i [det här avsnittet](../building-journeys/read-segment.md#configuring-segment-trigger-activity).
 
-* Använd aktiviteten **Segmentkvalificering** för att få individer att komma in på eller gå framåt i en resa baserat på Adobe Experience Platform segmentingångar och utgångar. Du kan till exempel få alla nya silverkunder att resa och skicka meddelanden till dem. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../building-journeys/segment-qualification-events.md).
+* Använd aktiviteten **Segmentkvalificering** för att få individer att komma in eller gå framåt i en resa baserat på Adobe Experience Platform segmentingångar och utgångar. Du kan till exempel få alla nya silverkunder att resa och skicka meddelanden till dem. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../building-journeys/segment-qualification-events.md).
 
 * Bygg **komplexa villkor** på resorna med den enkla eller avancerade uttrycksredigeraren. Läs mer i [det här avsnittet](../building-journeys/condition-activity.md#using-a-segment).
