@@ -5,16 +5,14 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 9e152f50c2360010d83ffccbe536380879ffb5da
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 3%
+source-wordcount: '967'
+ht-degree: 4%
 
 ---
 
 # Använd ett segment i en resa {#segment-trigger-activity}
-
-![](../assets/do-not-localize/badge.png)
 
 ## Om aktiviteten Läs segment {#about-segment-trigger-actvitiy}
 
@@ -25,10 +23,12 @@ Låt oss som exempel ta segmentet&quot;Luma app opening and checkout&quot; som s
 >[!NOTE]
 >
 >Det är inte möjligt att utlösa en segmentbaserad resa inom en kortare tid än en timme.
+>
+>Det Burst-betalda tillägget gör det möjligt att skicka mycket snabba push-meddelanden i stora volymer för enkla resor som innehåller ett lässegment och ett enkelt push-meddelande. Mer information hittar du i [det här avsnittet](../building-journeys/journey-gs.md#burst)
 
 ### Konfigurera aktiviteten {#configuring-segment-trigger-activity}
 
-Så här konfigurerar du Läs-segmentaktiviteten:
+Så här konfigurerar du Läs segment-aktiviteten:
 
 1. Ta fram kategorin **[!UICONTROL Orchestration]** och släpp en **[!UICONTROL Read Segment]**-aktivitet på arbetsytan.
 
