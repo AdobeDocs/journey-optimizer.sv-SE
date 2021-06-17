@@ -5,16 +5,14 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Beginner
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 10%
+source-wordcount: '1196'
+ht-degree: 12%
 
 ---
 
 # Skapa ett push-meddelande {#create-push-notification}
-
-![](assets/do-not-localize/badge.png)
 
 När du har [skapat ett meddelande](create-message.md) klickar du på fliken **[!UICONTROL Push Notification]** för att definiera inställningar och innehåll för push-meddelandet.
 
@@ -30,7 +28,7 @@ Använd de dedikerade flikarna för att definiera inställningar för push-medde
 
 Klicka på fälten **[!UICONTROL Title]** och **[!UICONTROL Body]** för att skapa meddelandet. Använd uttrycksredigeraren för att definiera innehåll och personaliseringsdata. Läs mer om personalisering i uttrycksredigeraren i [det här avsnittet](personalization/personalize.md)
 
-Använd det centrala avsnittet för att visualisera hur push-meddelanden visas på iOS- och Android-enheter.
+Använd enhetens förhandsvisningsavsnitt för att se hur push-meddelanden visas på iOS- och Android-enheter.
 
 ## Vid klickbeteende {#on-click-behavior}
 
@@ -60,7 +58,6 @@ Det finns två alternativ. Ni kan:
 
 När mediet har lagts till visas det till höger om meddelandetexten.
 
-
 ## Lägg till knappar
 
 Du kan skapa ett användbart meddelande genom att lägga till knappar i ditt push-innehåll.
@@ -69,13 +66,15 @@ Om enhetsskärmen är låst visas inte dessa knappar: Endast **titeln** och **me
 
 I iOS-versionen kan du lägga till upp till fyra knappar. I Android-versionen kan du lägga till upp till tre knappar.
 
-Klicka på **[!UICONTROL Add button]** för att definiera inställningar: etiketten och tillhörande åtgärd. Möjliga åtgärder är desamma som för [klickbeteendet](#on-click-behavior).
-
-
 >[!NOTE]
 >
 >För iOS använder du fältet **[!UICONTROL iOS category]** för att associera åtgärder med en meddelandekategori.
 
+Klicka på **[!UICONTROL Add button]** för att definiera inställningar: etiketten och tillhörande åtgärd. Möjliga åtgärder är desamma som för [klickbeteendet](#on-click-behavior).
+
+Klicka på **[!UICONTROL Expand view]** om du vill förhandsgranska dina anpassade knappar.
+
+![](assets/push_buttons.png)
 
 ## Skicka ett tyst meddelande
 
@@ -95,17 +94,16 @@ Du kan konfigurera **[!UICONTROL Advanced options]** för ditt push-meddelande. 
 
 | Parameter | Beskrivning |
 |---------|---------|
-| **[!UICONTROL Collapsible]** (iOS / Android) | Ett komprimerbart meddelande är ett meddelande som kan ersättas av ett nytt. Ett program som till exempel uppdaterar användarna med de senaste nyheterna om ett ämne. I så fall är det bara det senaste meddelandet som är relevant. Å andra sidan, med icke-komprimeringsbara meddelanden, är alla meddelanden viktiga för klientappen och måste levereras. |
+| **[!UICONTROL Collapsible]** (iOS / Android) | Ett komprimerbart meddelande är ett meddelande som kan ersättas av ett nytt meddelande om det har blivit inaktuellt. Ett vanligt användningsfall för komprimerbara meddelanden är meddelanden som används för att instruera en mobilapp att synkronisera data från servern. Ett exempel är en sportapp som uppdaterar användare med den senaste poängen. Endast det senaste meddelandet är relevant. Å andra sidan, med icke-komprimerbara meddelanden, är varje meddelande viktigt för klientappen och måste levereras. |
 | **[!UICONTROL Custom sound]** (iOS / Android) | Det ljud som ska spelas upp av mobilterminalen när meddelandet tas emot. Ljudet måste paketeras i appen. |
 | **[!UICONTROL Badges]** (iOS / Android) | Ett märke används för att visa antalet nya olästa uppgifter direkt på programikonen. <br/>Märkesvärdet försvinner när användaren öppnar eller läser det nya innehållet från programmet. När ett meddelande tas emot på en enhet kan det uppdatera eller lägga till ett märkesvärde för den relaterade appen.<br/>Om du till exempel lagrar antalet olästa artiklar för dina kunder kan du använda personalisering för att skicka det unika märket för olästa artiklar för varje kund. Mer personalisering finns i [det här avsnittet](personalization/personalize.md). |
 | **[!UICONTROL Notification group]**  (endast iOS) | Associera en meddelandegrupp med push-meddelandet.<br/>Från och med iOS 12 kan du med meddelandegrupper konsolidera meddelandetrådar och meddelandeämnen i trådar-ID:n. Ett varumärke kan t.ex. skicka marknadsföringsmeddelanden under ett grupp-ID samtidigt som det behåller fler typmeddelanden under ett eller flera olika ID:n.<br/>Om du vill illustrera detta kan du ha groupID: 123&quot;kolla in den nya vårsamlingen av tröjor&quot; och grupp-ID: 456 Meddelandegrupper för&quot;ditt paket levererades&quot;. I det här exemplet paketeras alla leveransmeddelanden under grupp-ID: 456. |
 | **[!UICONTROL Notification channel]** (Endast Android) | Koppla en meddelandekanal till push-meddelandet.<br/>Från och med Android 8.0 (API-nivå 26) måste alla meddelanden tilldelas en kanal för att kunna visas. Mer information finns i [dokumentationen för Android-utvecklare](https://developer.android.com/guide/topics/ui/notifiers/notifications#ManageChannels). |
 | **[!UICONTROL Add content-availability flag]** (endast iOS) | Skickar flaggan för tillgängligt innehåll i push-nyttolasten för att säkerställa att appen aktiveras så fort den får push-meddelandet, vilket innebär att appen kan komma åt nyttolastdata.<br/> Detta fungerar även om appen körs i bakgrunden och utan att användaren behöver göra något (t.ex. trycka på ett push-meddelande). Detta gäller dock inte om programmet inte körs. Mer information om detta hittar du i [Apples dokumentation för utvecklare](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html). |
-| **[!UICONTROL Add mutable-content flag]** (endast iOS) | Skickar flaggan för ändringsbart innehåll i push-nyttolasten och tillåter att push-meddelandeinnehållet ändras med ett meddelandetjänstprogramtillägg som tillhandahålls i iOS SDK. Mer information om detta hittar du i [Apples dokumentation för utvecklare](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/ModifyingNotifications.html).<br/>Du kan sedan utnyttja dina mobilappstillägg för att ytterligare ändra innehållet i eller presentationen av inkommande push-meddelanden som skickas från  [!DNL Journey Optimizer] Användare kan till exempel utnyttja det här alternativet för att dekryptera data, ändra brödtexten eller titeltexten i ett meddelande, lägga till en trådidentifierare i ett meddelande osv. |
-| **[!UICONTROL Notification visibility]** (Endast Android) | Anger om push-meddelandet ska visas. <br/><b>Privatpersoner </b> visar meddelandet på alla låsskärmar, men döljer känslig eller privat information på säkra låsskärmar. <br/><b>Meddelandet </b> visas i sin helhet på alla låsskärmar. <br/><b>Sekretessen </b> visar inte någon del av meddelandet på en säker låsskärm. <br/>Mer information finns i dokumentationen [ för ](https://developer.android.com/reference/android/app/Notification)Android-utvecklare. |
+| **[!UICONTROL Add mutable-content flag]** (endast iOS) | Skickar flaggan för ändringsbart innehåll i push-nyttolasten och tillåter att push-meddelandeinnehållet ändras med ett meddelandetjänstprogramtillägg som tillhandahålls i iOS SDK. Mer information om detta hittar du i [Apples dokumentation för utvecklare](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/ModifyingNotifications.html).<br/>Sedan kan du utnyttja dina mobilappstillägg för att ytterligare ändra innehållet eller presentationen av inkommande push-meddelanden som skickas från [!DNL Journey Optimizer]. Användare kan till exempel utnyttja det här alternativet för att dekryptera data, ändra brödtexten eller rubriktexten i ett meddelande, lägga till en trådidentifierare i ett meddelande osv. |
+| **[!UICONTROL Notification visibility]** (Endast Android) | Anger om push-meddelandet ska visas. <br/><b>Sekretessen </b> visar meddelandet på alla låsskärmar, men döljer känslig eller privat information på säkra låsskärmar. <br/><b>Meddelandet </b> visas i sin helhet på alla låsskärmar. <br/><b>Sekretessen </b> visar inte någon del av meddelandet på en säker låsskärm. <br/>Mer information finns i dokumentationen [ för ](https://developer.android.com/reference/android/app/Notification)Android-utvecklare. |
 | **[!UICONTROL Notification priority]** (Endast Android) | Definierar push-meddelandets prioritet från Låg till Max. Detta avgör hur påträngande push-meddelandet blir när det levereras. Mer information finns i [dokumentationen till Android-utvecklare](https://developer.android.com/guide/topics/ui/notifiers/notifications#importance) |
 | **[!UICONTROL Delivery priority]** (Endast Android) | Ställer in hög eller normal prioritet för dina push-meddelanden. Mer information om meddelandeprioritet finns i [Googles dokumentation för utvecklare](https://firebase.google.com/docs/cloud-messaging/concept-options#setting-the-priority-of-a-message). |
-
 
 **Relaterade ämnen**
 
