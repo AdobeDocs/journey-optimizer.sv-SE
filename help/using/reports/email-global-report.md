@@ -5,16 +5,14 @@ feature: Rapportering
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 42e5cdec54339f65cddd79df4deabbf28292d16b
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
 
-# E-posta global rapport {#email-global-report}
-
-![](../assets/do-not-localize/badge.png)
+# Global e-postrapport {#email-global-report}
 
 E-postmeddelandet **[!UICONTROL Global report]** avser bara en viss e-postleverans.
 
@@ -42,7 +40,21 @@ E-postmeddelandet **[!UICONTROL Global report]** är uppdelat i olika widgetar s
 
 * **[!UICONTROL Spam Complaint Rate]**: Procentandel e-postmeddelanden som har markerats som skräppost av mottagare jämfört med levererade meddelanden. Mer information om klagomål finns på den här [sidan](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html#metrics-for-deliverability).
 
-* **[!UICONTROL Unsubscribe Rate]**: Antal unika avprenumerationer jämfört med levererade meddelanden.
+* **[!UICONTROL Unsubscribe Rate]**: Procent av unika avbeställningar jämfört med antalet levererade meddelanden. Den här indikatorn är inte beroende av antalet klick på länken för att avbryta prenumerationen, utan baseras på antalet prenumerationer som initierats av mottagarna. Läs mer om att avbryta prenumerationer på den här [sidan](../consent.md).
+
+**[!UICONTROL Email - Tracking statistics]** innehåller tillgängliga data för mottagaraktivitet för din leverans:
+
+* **[!UICONTROL Opens]**: Antal gånger som leveransen öppnades i en leverans.
+
+* **[!UICONTROL Unique Opens]**: Procent av öppnade leveranser.
+
+* **[!UICONTROL Open Rate]**: Totalt antal öppnade e-postmeddelanden jämfört med antalet levererade e-postmeddelanden.
+
+* **[!UICONTROL Clicks]**: Antal gånger ett innehåll klickades i ett e-postmeddelande.
+
+* **[!UICONTROL Unique Clicks]**:Antal mottagare som klickat på ett innehåll i ett e-postmeddelande.
+
+* **[!UICONTROL Click through rate]**: Procentandel användare som interagerade med resan.
 
 I **[!UICONTROL Sending Statistics]**-diagrammet visas leveransframgången:
 
@@ -51,6 +63,8 @@ I **[!UICONTROL Sending Statistics]**-diagrammet visas leveransframgången:
 * **[!UICONTROL Bounces]**: Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
 
 * **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
+
+![](../assets/global_report_5.png)
 
 Widgetarna **[!UICONTROL Bounce Reasons]** och **[!UICONTROL Bounce categories]** innehåller tillgängliga data för studsade meddelanden, till exempel:
 
@@ -62,27 +76,13 @@ Widgetarna **[!UICONTROL Bounce Reasons]** och **[!UICONTROL Bounce categories]*
 
 Mer information om studsar finns på sidan [Suppressionslista](../suppression-list.md).
 
-![](../assets/global_report_5.png)
-
 Med diagrammet och tabellen **[!UICONTROL Error Reasons]** kan du se vilket fel som uppstod under leveransen.
-
-Diagrammet och tabellen **[!UICONTROL Email - Best recipient domain]** visar vilka domäner som är de mest använda av mottagarna för att öppna e-postmeddelandet.
 
 ![](../assets/global_report_6.png)
 
-Tabellen **[!UICONTROL Email - Tracking statistics]** innehåller tillgängliga data för mottagaraktivitet för leveransen:
+Diagrammet och tabellen **[!UICONTROL Email - Top recipient domain]** visar vilka domäner som är de mest använda av mottagarna för att öppna e-postmeddelandet.
 
-* **[!UICONTROL Opens]**: Antal gånger som leveransen öppnades i en leverans.
-
-* **[!UICONTROL Unique Opens]**: Antal mottagare som öppnade leveransen.
-
-* **[!UICONTROL Open Rate]**: Procentandel öppnade meddelanden.
-
-* **[!UICONTROL Clicks]**: Antal gånger ett innehåll klickades i ett e-postmeddelande.
-
-* **[!UICONTROL Unique Clicks]**:Antal mottagare som klickat på ett innehåll i ett e-postmeddelande.
-
-* **[!UICONTROL Click through rate]**: Procentandel klick i en leverans.
+Diagrammet och tabellen **[!UICONTROL Email - Top Url]** visar vilka URL:er från din leverans som är mest besökta.
 
 **[!UICONTROL Open vs Click]** identifierar mottagarnas interaktion med leveransen:
 
@@ -90,4 +90,4 @@ Tabellen **[!UICONTROL Email - Tracking statistics]** innehåller tillgängliga 
 
 * **[!UICONTROL Unique Opens]**: Antal mottagare som öppnade leveransen.
 
-Diagrammet och tabellen **[!UICONTROL Email - Top Url]** visar vilka URL:er från din leverans som är mest besökta.
+
