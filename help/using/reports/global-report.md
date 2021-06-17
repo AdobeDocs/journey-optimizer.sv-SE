@@ -5,28 +5,26 @@ feature: Rapportering
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '242'
 ht-degree: 1%
 
 ---
 
 # Global rapport {#global-report}
 
-![](../assets/do-not-localize/badge.png)
-
 >[!NOTE]
 >
 > Om anpassade frågor ställs via API:er när du använder frågetjänsten kan du vänta dig en viss fördröjning för dina rapporter.
 
-Med **[!UICONTROL Global report]** kan du mäta effekten av dina resor och leveranser under en viss tidsperiod.
+Använd **[!UICONTROL Global report]** för att mäta effekten av dina resor och leveranser under en viss tidsperiod.
 
-* Om du vill rikta in dig på en resa eller leveranser i en resa går du till **[!UICONTROL Journeys]**-menyn och klickar på ikonen **[!UICONTROL Global report]**. Du kan sedan hitta resan, e-postmeddelandet och penseln **[!UICONTROL Global report]**.
+* Om du vill rikta in dig på en resa eller leveranser i samband med en resa går du till **[!UICONTROL Journeys]**-menyn och klickar på ikonen **[!UICONTROL Global report]**. Du kan sedan hitta resan, e-postmeddelandet och penseln **[!UICONTROL Global report]**.
 
 * Om du vill ange en viss leverans väljer du **[!UICONTROL Global view]** på fliken **[!UICONTROL Executions]** i dina meddelanden på den avancerade menyn för den valda leveransen.**[!UICONTROL Global Report]**
 
-## Ändra instrumentpanel {#modify-dashboard}
+## Anpassa kontrollpanelen {#modify-dashboard}
 
 Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort eller genom att den riktade tidsramen ändras. Om du ändrar widgetarna påverkas bara den aktuella användarens kontrollpanel. Andra användare ser sina egna kontrollpaneler eller de som har angetts som standard.
 
@@ -36,7 +34,7 @@ Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller 
 
    ![](../assets/global_report_6.png)
 
-1. klicka på **[!UICONTROL Modify dashboard]**.
+1. klicka på **[!UICONTROL Modify]**.
 
    ![](../assets/global_report_8.png)
 
