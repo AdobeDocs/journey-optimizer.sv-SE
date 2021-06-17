@@ -5,16 +5,14 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: ea005587fdcdf3cb07da5d7cbd6080c12909d458
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '930'
 ht-degree: 9%
 
 ---
 
 # Villkorsaktivitet{#section_e2n_pft_dgb}
-
-![](../assets/do-not-localize/badge.png)
 
 Det finns fyra typer av villkor:
 
@@ -76,6 +74,8 @@ På så sätt kan du utföra olika åtgärder beroende på timmen på dagen och/
 ## Procentdelning {#percentage_split}
 
 Med det här alternativet kan du slumpmässigt dela målgruppen för att definiera olika åtgärder för varje grupp. Definiera antalet delningar och partitioneringen för varje sökväg. Delningsberäkningen är statistisk eftersom systemet inte kan förutse hur många personer som kommer att flöda i den här kundresan. Därför har delningen en mycket låg felmarginal. Den här funktionen är baserad på en slumpmässig Java-mekanism (se den här [sidan](https://docs.oracle.com/javase/7/docs/api/java/util/Random.html)).
+
+I testläge väljs alltid den övre grenen när en delning nås. Du kan ordna om placeringen av de delade grenarna om du vill att testet ska välja en annan bana. Se [den här sidan](../building-journeys/testing-the-journey.md)
 
 >[!NOTE]
 >
