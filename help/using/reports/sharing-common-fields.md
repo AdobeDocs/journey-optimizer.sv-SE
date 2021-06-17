@@ -5,18 +5,16 @@ feature: Rapportering
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 8f77802fcaa23790f9de4e8f15e593643b13fb1e
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '585'
 ht-degree: 1%
 
 ---
 
 # guideStegen händelser vanliga fält {#sharing-common-fields}
 
-![](../assets/do-not-localize/badge.png)
-
-Den här mixinen delas av travelStepEvent och travelStepProfileEvent.
+Den här fältgruppen delas av travelStepEvent och travelStepProfileEvent.
 
 Detta är de vanliga XDM-fälten som [!DNL Journey Optimizer] skickar till Adobe Experience Platform. Vanliga fält skickas för varje steg som bearbetas under en resa. Mer specifika fält används för anpassade åtgärder och berikning.
 
