@@ -5,9 +5,9 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '252'
 ht-degree: 7%
 
 ---
@@ -20,7 +20,9 @@ När flera erbjudanden är berättigade till en viss placering i ett beslut (tid
 
 ![](../../assets/offer-priority.png)
 
-I Journey Optimizer kan du dessutom skapa **rankningsformler**. Detta är formler som avgör vilket erbjudande som ska presenteras först för en viss placering, i stället för att beakta offertens prioritetspoäng. Du kan till exempel öka prioriteten för alla erbjudanden där slutdatumet är mindre än 24 timmar från och med nu, eller öka erbjudandena från kategorin&quot;löpande&quot; om profilens intressepunkt är&quot;igång&quot;.
+I Journey Optimizer kan du dessutom skapa **rankningsformler**. Detta är formler som avgör vilket erbjudande som ska presenteras först för en viss placering, i stället för att beakta offertens prioritetspoäng.
+
+Du kan till exempel öka prioriteten för alla erbjudanden där slutdatumet är mindre än 24 timmar från och med nu, eller öka erbjudandena från kategorin&quot;löpande&quot; om profilens intressepunkt är&quot;igång&quot;.
 
 Mer information om hur du skapar en rankningsformel finns i [det här avsnittet](../offer-library/create-ranking-formulas.md).
 
@@ -28,14 +30,18 @@ Mer information om hur du skapar en rankningsformel finns i [det här avsnittet]
 
 När en rankningsformel har skapats kan du tilldela den till en placering i ett beslut. Följ stegen nedan för att göra detta:
 
-* Skapa ett beslut eller redigera ett befintligt, och skapa sedan de ersättningar som innehåller dina erbjudanden (se [Skapa beslut](../offer-activities/create-offer-activities.md)).
+1. Skapa ett beslut eller redigera ett befintligt, och skapa sedan de ersättningar som innehåller dina erbjudanden (se [Skapa beslut](../offer-activities/create-offer-activities.md)).
 
-* För varje placering väljer du **[!UICONTROL Ranking]** i listrutan och klickar sedan på **[!UICONTROL Add ranking]**.
+1. För varje placering väljer du **[!UICONTROL Ranking]** i listrutan.
+
+1. Klicka på **[!UICONTROL Add ranking]**.
 
    ![](../../assets/offer-activity-ranking.png)
 
-* Välj önskad rankningsformel och klicka sedan på **[!UICONTROL Select]**.
+1. Välj önskad rankningsformel och klicka sedan på **[!UICONTROL Select]**.
 
    ![](../../assets/ranking-selection.png)
 
-Rankningsformeln är nu kopplad till placeringen. Om flera erbjudanden kan presenteras i denna placering, kommer beslutet att använda rangordningsformelns formel för att beräkna vilket erbjudande som ska levereras först.
+Rankningsformeln är nu kopplad till placeringen.
+
+Om flera erbjudanden kan presenteras i denna placering, kommer beslutet att använda rangordningsformelns formel för att beräkna vilket erbjudande som ska levereras först.
