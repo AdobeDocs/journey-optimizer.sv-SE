@@ -5,17 +5,15 @@ feature: Personalisering
 topic: Personalisering
 role: Data Engineer
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 74662ee07422d507889788a790547c774b65f944
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '559'
 ht-degree: 4%
 
 ---
 
 
 # Anpassningssyntax {#personalization-syntax}
-
-![](../assets/do-not-localize/badge.png)
 
 Personalisering i [!DNL Journey Optimizer] baseras på den mallsyntax som kallas Handlebars.
 En fullständig beskrivning av Handlebars syntax finns i [HandlebarsJS-dokumentation](https://handlebarsjs.com/).
@@ -24,14 +22,12 @@ Den använder en mall och ett indataobjekt för att generera HTML eller andra te
 
 Exempel på enkla uttryck:
 
-```
-{{profile.person.name}}
-```
+`{{profile.person.name}}`
 
 där:
 
-* **profilen** är ett namnutrymme.
-* **person.** name är en token som består av attribut. Attributstrukturen definieras i ett Adobe Experience Platform XDM-schema. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv).
+* `profile` är ett namnutrymme.
+* `person.name` är en token som består av attribut. Attributstrukturen definieras i ett Adobe Experience Platform XDM-schema. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv).
 
 ## Allmänna syntaxregler
 
@@ -59,15 +55,19 @@ Attributen måste definieras i schemat innan de refereras i ett [!DNL Journey Op
 
 **Exempelreferenser:**
 
-```
-{{profile.person.name.fullName}}
-{{profile.person.name.firstName}}
-{{profile.person.gender}}
-{{profile.personalEmail.address}}
-{{profile.mobilePhone.number}}
-{{profile.homeAddress.city}}
-{{profile.faxPhone.number}}
-```
+`{{profile.person.name.fullName}}`
+
+`{{profile.person.name.firstName}}`
+
+`{{profile.person.gender}}`
+
+`{{profile.personalEmail.address}}`
+
+`{{profile.mobilePhone.number}}`
+
+`{{profile.homeAddress.city}}`
+
+`{{profile.faxPhone.number}}`
 
 ## Segment{#perso-segments}
 
@@ -84,20 +84,18 @@ Om du vill hänvisa till ett erbjudande måste du deklarera en sökväg med den 
 
 Sökvägen har följande struktur:
 
-```
-offers.Type.[Placement Id].[Activity Id].Attribute
-```
+`offers.Type.[Placement Id].[Activity Id].Attribute`
 
 där:
 
 * `offers` identifierar det sökvägsuttryck som tillhör namnutrymmet offer
 * `Type`  fastställer typen av erbjudanderepresentation. Möjliga värden är: `image`, `html` och `text`
 * `Placement Id` och  `Activity Id` är placerings- och aktivitetsidentifierare
-* `Attributes` är specifika attribut som är beroende av erbjudandetypen. Exempel: `deliveryUrl` för bilder.
+* `Attributes` är specifika attribut som är beroende av erbjudandetypen. Exempel: `deliveryUrl` för bilder
 
 Mer information om besluts-API och offerterepresentation finns på [den här sidan](../../using/offers/api-reference/decisions-api/deliver-offers.md)
 
-Alla referenser valideras mot offertschema med en valideringsmekanism som beskrivs i [den här sidan](personalization-validation.md).
+Alla referenser valideras mot offertschema med en valideringsmekanism som beskrivs i [den här sidan](personalization-validation.md)
 
 **Exempelreferenser:**
 
