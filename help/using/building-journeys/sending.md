@@ -1,7 +1,7 @@
 ---
 title: Starta körning av resa
 description: Lär dig hur du påbörjar din resa och skickar meddelanden
-source-git-commit: 4ff255b6b57823a1a4622dbc62b4b8886fd956a0
+source-git-commit: 9e152f50c2360010d83ffccbe536380879ffb5da
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 2%
@@ -10,8 +10,6 @@ ht-degree: 2%
 
 
 # Resekörning {#message-execution}
-
-![](../assets/do-not-localize/badge.png)
 
 ## Testa din resa
 
@@ -46,11 +44,11 @@ När ett meddelande har skickats kan du övervaka dess körning med hjälp av fl
 
 ## Schemalägg meddelanden {#schedule-messages}
 
-Meddelanden kan schemaläggas via aktiviteten **[!UICONTROL Read segment]** i en [resa](journey.md). Du kan ange när segmentet ska gå in i resan. [Läs mer om Läs-segmentsaktiviteten](read-segment.md).
+Meddelanden kan schemaläggas via aktiviteten **[!UICONTROL Read Segment]** i en [resa](journey.md). Du kan ange när segmentet ska gå in i resan. [Läs mer om Läs segment-aktiviteten](read-segment.md).
 
 Följ stegen nedan för att göra detta:
 
-1. Redigera en resa, dra och släpp en **[!UICONTROL Read segment]**-aktivitet och börja konfigurera den. [Läs mer om hur du konfigurerar Läs-segmentaktiviteten](read-segment.md#configuring-segment-trigger-activity).
+1. Redigera en resa, dra och släpp en **[!UICONTROL Read Segment]**-aktivitet och börja konfigurera den. [Läs mer om hur du konfigurerar Läs segment-aktiviteten](read-segment.md#configuring-segment-trigger-activity).
 
 1. Klicka på länken **[!UICONTROL Edit journey schedule]** för att komma åt resans egenskaper.
 
