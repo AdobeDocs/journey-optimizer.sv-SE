@@ -5,18 +5,16 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 62d83f69ebf50f36688e3db956bb3860a468c2d6
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '838'
 ht-degree: 2%
 
 ---
 
-# Användningsexempel på resa
+# Skicka flerkanalsmeddelanden
 
-![](../assets/do-not-localize/badge.png)
-
-I det här avsnittet visas ett användningsexempel som kombinerar ett Lässegment, en händelse, reaktionshändelser och e-post/push-meddelanden.
+I det här avsnittet presenteras ett användningsexempel som kombinerar ett Läs segment, en händelse, reaktionshändelser och e-post-/push-meddelanden.
 
 ![](../assets/jo-uc1.png)
 
@@ -44,7 +42,9 @@ Under vår resa vill vi utnyttja ett specifikt kundsegment. Alla personer som ti
 
 Mer information om segment finns på den här [sidan](../segment/about-segments.md).
 
-1. Klicka på **[!UICONTROL Create segment]** på menyn **[!UICONTROL Segments]**.
+1. Välj **[!UICONTROL Segments]** under KUND.
+
+1. Klicka på knappen **[!UICONTROL Create segment]** som finns längst upp till höger i segmentlistan.
 
 1. I rutan **[!UICONTROL Segment properties]** anger du ett namn för segmentet.
 
@@ -54,7 +54,7 @@ Mer information om segment finns på den här [sidan](../segment/about-segments.
 
    ![](../assets/add-attributes.png)
 
-Segmentet är nu skapat och klart att användas på din resa. Om du använder en **Läs-aktivitet** kan du få alla personer som tillhör segmentet att komma in på resan.
+Segmentet är nu skapat och klart att användas på din resa. Med en **Läs segment**-aktivitet kan du få alla personer som tillhör segmentet att komma in på resan.
 
 ### Konfigurera händelsen
 
@@ -62,7 +62,7 @@ Du måste konfigurera ett evenemang som skickas till din resa när en kund gör 
 
 För detta använder vi en regelbaserad händelse. Mer information om händelser finns på den här [sidan](../event/about-events.md).
 
-1. I avsnittet Administration går du till **[!UICONTROL Configurations]** och klickar sedan på **[!UICONTROL Events]**. Klicka på **[!UICONTROL Add]** för att skapa en ny händelse.
+1. Välj **[!UICONTROL Configurations]** under ADMINISTRATION-menyn och klicka sedan på **[!UICONTROL Events]**. Klicka på **[!UICONTROL Create event]** för att skapa en ny händelse.
 
 1. Ange namnet på händelsen.
 
@@ -72,7 +72,7 @@ För detta använder vi en regelbaserad händelse. Mer information om händelser
 
 1. I fältet **[!UICONTROL Event ID condition]** definierar du villkoret som används av systemet för att identifiera de händelser som utlöser din resa. Du kan till exempel lägga till ett `purchaseMessage`-fält och definiera följande regel: `purchaseMessage="thank you"`
 
-1. Definiera **[!UICONTROL Namespace]** och **[!UICONTROL Key]**.
+1. Definiera **[!UICONTROL Namespace]** och **[!UICONTROL Profile Identifier]**.
 
 1. Klicka på **[!UICONTROL Save]**.
 
