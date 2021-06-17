@@ -5,18 +5,16 @@ feature: Rapportering
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 8f77802fcaa23790f9de4e8f15e593643b13fb1e
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '374'
 ht-degree: 4%
 
 ---
 
 # journeyStep, händelser, datafält för hämtning {#sharing-fetch-fields}
 
-![](../assets/do-not-localize/badge.png)
-
-Den här mixinen delas av travelStepEvent och travelStepProfileEvent.
+Den här fältgruppen delas av travelStepEvent och travelStepProfileEvent.
 
 Under en stegvis bearbetning kan vi hämta N-data i fältgrupper.
 
