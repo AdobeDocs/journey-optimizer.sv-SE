@@ -15,7 +15,7 @@ feature: Applikationsinställningar
 topic: Administrering
 role: Administrator
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: f4b36903b7b961dd20442acaf446e2ce99cc2b31
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 3%
@@ -38,7 +38,7 @@ Kolumnen **[!UICONTROL Status]** innehåller information om delegeringsprocessen
 
 Om du vill ha detaljerad information om en underdomän öppnar du den i listan. Ni kan:
 
-* Hämta det underdomännamn (skrivskyddat) som konfigurerats under delegeringsprocessen samt de URL:er som genereras (resurser, speglingssida, spårnings-URL:er),
+* Hämta det underdomännamn (skrivskyddat) som konfigurerats under delegeringsprocessen samt de URL:er som genereras (resurser, spegelsidor, spårnings-URL:er),
 
 * Lägg till en TXT-post för Google Site verification i din underdomän för att se till att den är verifierad (se [Lägg till en Google TXT-post i en underdomän](google-txt.md)).
 
