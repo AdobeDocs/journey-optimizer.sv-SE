@@ -5,7 +5,7 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Beginner
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 10%
@@ -13,8 +13,6 @@ ht-degree: 10%
 ---
 
 # Kom igång med meddelanden {#get-sarted-contents-messages}
-
-![](assets/do-not-localize/badge.png)
 
 Använd [!DNL Journey Optimizer] för att utnyttja flera resurser, som resurser och innehåll på ett och samma ställe, och skapa och publicera personaliserade push-meddelanden och e-postmeddelanden.
 
