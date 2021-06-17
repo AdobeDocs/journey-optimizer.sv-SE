@@ -1,20 +1,18 @@
 ---
-title: Segment med kvalificeringshändelser
+title: Segmentkvalificeringshändelser
 description: Läs mer om kvalificeringshändelser för segment
 feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 8bcc1721f0d451e386b1fa0c5972c783ced01c7f
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 2%
+source-wordcount: '791'
+ht-degree: 1%
 
 ---
 
-# Segment med kvalificeringshändelser {#segment-qualification}
-
-![](../assets/do-not-localize/badge.png)
+# Segmentkvalificeringshändelser {#segment-qualification}
 
 ## Om segmentkvalificeringshändelser{#about-segment-qualification}
 
@@ -31,7 +29,7 @@ Den här typen av händelse kan placeras som det första steget eller senare und
 >Om det valda segmentet direktuppspelas kan de personer som tillhör det segmentet komma in på resan i realtid. Om segmentet är en batch kan personer som nyligen är kvalificerade för det här segmentet komma in på resan när segmentberäkningen körs på Adobe Experience Platform.
 
 
-1. Ta fram kategorin **[!UICONTROL Events]** och släpp en **[!UICONTROL Segment qualification]**-aktivitet på arbetsytan.
+1. Ta fram kategorin **[!UICONTROL Events]** och släpp en **[!UICONTROL Segment Qualification]**-aktivitet på arbetsytan.
 
    ![](../assets/segment5.png)
 
@@ -67,11 +65,13 @@ Nyttolasten innehåller följande kontextinformation som du kan använda i villk
 * tidsstämpel för kvalificeringen
 * segment-ID
 
-När du använder uttrycksredigeraren i ett villkor eller en åtgärd som följer på en **[!UICONTROL Segment qualification]**-aktivitet har du tillgång till noden **[!UICONTROL SegmentQualification]**. Du kan välja mellan **[!UICONTROL Last qualification time]** och **[!UICONTROL status]** (ange eller avsluta).
+När du använder uttrycksredigeraren i ett villkor eller en åtgärd som följer på en **[!UICONTROL Segment Qualification]**-aktivitet har du tillgång till noden **[!UICONTROL SegmentQualification]**. Du kan välja mellan **[!UICONTROL Last qualification time]** och **[!UICONTROL status]** (ange eller avsluta).
 
 Se [Villkorsaktivitet](../building-journeys/condition-activity.md#about_condition).
 
 ![](../assets/segment8.png)
+
+En ny resa som innehåller en segmentkvalificeringshändelse kan användas tio minuter efter att du har publicerat den. Det här tidsintervallet motsvarar cacheuppdateringsintervallet för den dedikerade tjänsten. Du måste därför vänta tio minuter innan du kan använda den här resan.
 
 ## God praxis {#best-practices-segments}
 
