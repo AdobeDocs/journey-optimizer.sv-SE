@@ -5,7 +5,7 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 9e152f50c2360010d83ffccbe536380879ffb5da
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 3%
@@ -13,8 +13,6 @@ ht-degree: 3%
 ---
 
 # Hoppa från en resa till en annan {#jump}
-
-![](../assets/do-not-localize/badge.png)
 
 Med åtgärden **[!UICONTROL Jump]** kan du flytta personer från en resa till en annan. Med den här funktionen kan du:
 
@@ -49,14 +47,14 @@ Under resa B utlöses den första händelsen internt via aktiviteten **[!UICONTR
 >
 >Resa B kan också utlösas via en extern händelse.
 
-## Bästa praxis och begränsningar
+## God praxis och begränsningar
 
 ### Redigering
 
 * Aktiviteten **[!UICONTROL Jump]** är bara tillgänglig på resor som använder ett namnutrymme.
 * Du kan bara hoppa till en resa som använder samma namnutrymme som ursprungsresan.
-* Du kan inte hoppa till en resa som börjar med en **segmentkvalificering**-händelse eller **Lässegment**.
-* Du kan inte ha en **[!UICONTROL Jump]**-aktivitet och en **Segmentkvalificering**-händelse eller **Lässegment** under samma resa.
+* Du kan inte hoppa till en resa som börjar med en **segmentkvalificeringshändelse** eller **Läs segment**.
+* Du kan inte ha en **[!UICONTROL Jump]**-aktivitet och en **Segmentkvalificeringshändelse** eller **Läs segment** under samma resa.
 * Du kan inkludera så många **[!UICONTROL Jump]**-aktiviteter som du behöver under en resa. Efter en **[!UICONTROL Jump]** kan du lägga till alla aktiviteter som behövs.
 * Du kan ha så många hoppnivåer som behövs. Till exempel hoppar resa A till resa B, som hoppar till resa C och så vidare.
 * Målresan kan även innehålla så många **[!UICONTROL Jump]**-aktiviteter som behövs.
@@ -78,7 +76,7 @@ Under resa B utlöses den första händelsen internt via aktiviteten **[!UICONTR
    ![](../assets/jump2.png)
 
 1. Klicka i fältet **Målresa**.
-I listan visas alla reseversioner som är utkast, live eller i testläge. Resurser som använder ett annat namnutrymme eller som börjar med en **segmentkvalificeringshändelse** är inte tillgängliga. Målresor som skulle skapa ett slingmönster filtreras också bort.
+I listan visas alla reseversioner som är utkast, live eller i testläge. Resor som använder ett annat namnutrymme eller som börjar med en **segment-kvalificeringshändelse** är inte tillgängliga. Målresor som skulle skapa ett slingmönster filtreras också bort.
 
    ![](../assets/jump3.png)
 
