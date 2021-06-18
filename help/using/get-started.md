@@ -5,9 +5,9 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Beginner
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 6783aaec0d050074624b9aa8219252ebf7618088
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '657'
 ht-degree: 1%
 
 ---
@@ -17,41 +17,40 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="test_id"
 >title="Testinnehåll"
->abstract="Testa innehållet för sammanhangsbaserad hjälpintegration i CJM."
+>abstract="Testa innehållet för sammanhangsbaserad hjälpintegration i AJO."
 
-![](assets/do-not-localize/badge.png)
+## Vad är [!DNL Adobe Journey Optimizer]?{#about-cjm}
 
-## Vad är [!DNL Journey Optimizer]?{#about-cjm}
+[!DNL Adobe Journey Optimizer] hjälper företag att leverera sammankopplade, kontextuella och personaliserade upplevelser till sina kunder. Kundresan är hela processen för en kunds interaktioner med varumärket, från det första kontaktytan tills kunden går ur. Det börjar med informationsfasen, där kunderna lär sig om varumärket och börjar engagera. Kunden kommer sedan att interagera ytterligare med varumärket, besöka webbplatser online och fysiska webbplatser samt göra inköp, skicka meddelanden eller genomföra granskningar.
 
-[!DNL Journey Optimizer] hjälper företag att leverera sammankopplade, kontextuella och personaliserade upplevelser till sina kunder. Kundresan är hela processen för en kunds interaktioner med varumärket, från det första kontaktytan tills kunden går ur. Det börjar med informationsfasen, där kunderna lär sig om varumärket och börjar engagera. Kunden kommer sedan att interagera ytterligare med varumärket, besöka webbplatser online och fysiska webbplatser samt göra inköp, skicka meddelanden eller genomföra granskningar.
+[!DNL Adobe Journey Optimizer] bygger på  [!DNL Adobe Experience Platform] och kombinerar en enhetlig kundprofil i realtid, ett API-första öppet ramverk, centraliserad offer decisioning och artificiell intelligens (AI) och maskininlärning (ML) för personalisering och optimering. Med Journey Optimizer kan varumärken på ett intelligent sätt avgöra nästa bästa interaktion med skala, hastighet och flexibilitet under hela kundresan. Med [!DNL Adobe Journey Optimizer] kan företag skapa och leverera både schemalagda marknadsföringskampanjer (till exempel veckokampanjer för en butik) och skräddarsydd individuell kommunikation (till exempel ett push-meddelande för en artikel som en lojalitetsappkund kan ha tittat på som tidigare inte fanns i lager) inom samma program.
 
-[!DNL Journey Optimizer] följer kunderna genom hela kundresan och ger företagen de insikter de behöver för att interagera med värdefulla kunder vid de viktigaste kontaktytorna. Det hjälper företag i processen att ta fram det bästa sättet att interagera med kunder i varje skede av kundresan.
+## Användningsfall
 
-Med [!DNL Journey Optimizer]-funktionerna, som har utökats med funktionerna Meddelanden och Lässegment, kan varumärken med [!DNL Journey Optimizer] leverera flerkanaliga, personaliserade upplevelser i realtid och i stor skala med en uppsättning intelligenta, utbyggbara API-funktioner som är enkla att prova, köpa och realisera &#x200B;. Den här uppsättningen nya funktioner ger möjlighet till realtidsresor, modern redigering och snabb leverans. &#x200B;
+* Marknadsförarna kan använda [!DNL Adobe Journey Optimizer] för att skicka både individanpassad kommunikation och målgruppsbaserad gruppkommunikation. En klädbutik skickar till exempel vanligen enkäter till alla kunder som köpt produkter den senaste veckan. På grund av infallsvädret försenades några leveranser. När man ser vilka kunder som inte har fått leveranser kan klädbutiken utesluta dem från den schemalagda kundnöjdheten och istället skicka ett personligt mejl med en ursäkt för fördröjningen och erbjuda en rabattkod med produktrekommendationer som baseras på kundens tidigare inköp.
 
->[!NOTE]
->
->[!DNL Journey Optimizer] är i betaversion. Åtkomsten är begränsad till en liten uppsättning Beta-kunder. Observera att både produktgränssnitt, funktioner och användningsflöden kan ändras utan föregående meddelande. Som betakund kan du dela [feedback](#cjm-share-feedback). Kända fel visas på den här [sidan](known-issues.md).
+   Marknadsförarna kan också använda programmet för att skicka beteendebaserad kommunikation i realtid. Samma återförsäljare skulle till exempel kunna engagera en lojal kund som i realtid tar sig in på parkeringsplatsen genom att skicka ett push-meddelande till dem om en tröja som finns i lager i kundens storlek.
 
-Viktiga funktioner är:
+* Icke-marknadsförare som verksamhetsteam och kundsupport som är engagerade i kundupplevelsen kan använda [!DNL Adobe Journey Optimizer] för att hantera en mängd olika uppgifter, till exempel operativa meddelanden eller till och med för att övervaka introduktionsprocessen. Exempel: en nöjespark där parkbesökare laddar ned en mobilapp som en del av sin parkupplevelse. Underhållspersonalen kan använda [!DNL Adobe Journey Optimizer] för att meddela parkeringsbesökare om de platser som för närvarande är stängda på grund av underhåll.
 
-* **Foundation of Data &amp; Segmentation**  - integrera data från hela företaget för en enda kundprofil i realtid och utnyttja kraftfulla målgruppssegmenteringsfunktioner för att säkerställa en optimal upplevelse för varje person.
+## Viktiga möjligheter
 
-* **Skapa innehåll och personalisering**  i sammanhang - Skapa enkelt snyggt, responsivt innehåll utan hjälp från IT.
+[!DNL Adobe Journey Optimizer] är en flexibel och skalbar applikation för att skapa och leverera personaliserade, sammankopplade och vältajmade kundupplevelser i alla appar, enheter och kanaler.
 
-* **Samordna upplevelser över flera kanaler**  - skapa komplexa kundresor visuellt med ett dra-och-släpp-gränssnitt för att orkestrera och automatisera personaliserade meddelanden via e-post och mobila kanaler.
+![](assets/ajo-capabilities.png)
 
-* **Rapportering och optimering av kampanjresultat**  - segmentera och minska kampanjernas resultatdata dynamiskt över segment med hjälp av färdiga eller anpassningsbara rapporter. Integrerat med Adobe Analytics för djupare analyser av kampanjresultat och konverteringar.
+Viktiga funktioner:
 
-## Dela feedback {#cjm-share-feedback}
+* **Kundinsikter och engagemang**  i realtid - En integrerad profil sammanför livedata från alla källor över kundens kontaktytor, inklusive beteendedata, transaktionsdata, ekonomiska data och driftdata för att optimera personliga och sammanhangsbaserade upplevelser för kunderna i deras tid.
 
-Som betakund kan du dela feedback med den blå knappen överst på arbetsytan.
+* **Modern flerkanalssamordning och -körning**  - en enda arbetsyta där man kan harmonisera och optimera kundresan för personligt kundengagemang och marknadsföringsutåtriktad marknadsföring - för att hjälpa varumärken att leverera mer värde under hela kundlivscykeln. Kundresor som utformats i [!DNL Adobe Journey Optimizer] kan vara dynamiska och händelsebaserade för att hjälpa varumärken att reagera på realtidssignaler och koppla samman dessa interaktioner med schemalagda kampanjer så att rätt beslut kan fattas om vilken kommunikation som ska skickas till en kund, när och via vilka kanaler.
 
-Ange ett ämne, dina kommentarer och klicka på **Skicka**. Om det behövs kan du bifoga en fil till din feedback.
+* **Intelligent Decisioning &amp; Personalization**  - Varumärken kan tillämpa centraliserad beslutsfattande och införliva artificiell intelligens och maskininlärning för att ta del av prediktiva insikter i hela kundupplevelsen, vilket gör det enklare att automatisera beslut och optimera upplevelsen i stor skala. offera decisioningen driver centraliserade erbjudanden över flera kanaler i stor skala via [!DNL Adobe Journey Optimizer].
 
 >[!NOTE]
 >
->Adobe Experience Cloud allmänna riktlinjer och förfaranden för integritetsskydd gäller för [!DNL Journey Optimizer]. [Läs mer om Adobe Experience Cloud sekretess](https://www.adobe.com/privacy/experience-cloud.html).
+> Adobe Experience Cloud allmänna riktlinjer och förfaranden för integritetsskydd gäller för [!DNL Journey Optimizer]. [Läs mer om Adobe Experience Cloud sekretess](https://www.adobe.com/privacy/experience-cloud.html).
+> Du måste också vara medveten om [Guardrails för kundprofildata i realtid innan du startar](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html).
 
 
 **Se även**
@@ -60,3 +59,4 @@ Ange ett ämne, dina kommentarer och klicka på **Skicka**. Om det behövs kan d
 * [Skapa ditt första meddelande](get-started-content.md)
 * [Designa resor och skicka meddelanden](building-journeys/journey-gs.md)
 * [Live-rapporter](reports/live-report.md)
+* [Journey Optimizer FAQ](assets/do-not-localize/AJO-FAQ.pdf)  (PDF)
