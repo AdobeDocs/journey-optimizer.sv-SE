@@ -5,26 +5,29 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 70d3bdaeec2a7a8f282b0e1a79bc751f7f837663
+source-git-commit: d85dfe519ebbbb27693c7283c19cc1d7171c25ba
 workflow-type: tm+mt
-source-wordcount: '1119'
-ht-degree: 18%
+source-wordcount: '1187'
+ht-degree: 5%
 
 ---
 
 # Användargränssnitt {#cjm-user-interface}
 
-![](assets/do-not-localize/badge.png)
-
-Dokumentationen uppdateras ofta för att återspegla de senaste ändringarna i produkten. Vissa skärmbilder kan dock skilja sig något från användargränssnittet.
-
-## Arbetsyta {#cjm-workspace}
-
 När du är ansluten till [Adobe Experience Cloud](http://experience.adobe.com) går du till [!DNL Journey Optimizer].
 
 >[!NOTE]
 >
->Viktiga begrepp för att bläddra i användargränssnittet beskrivs i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html?lang=en#adobe-experience-platform-ui-guide).
+>* De viktigaste begreppen när du bläddrar i användargränssnittet är vanliga i Adobe Experience Platform. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html?lang=en#adobe-experience-platform-ui-guide).
+   >
+   >
+* Den här dokumentationen uppdateras ofta för att återspegla de senaste ändringarna i produktanvändargränssnittet. Vissa skärmbilder kan dock skilja sig något från användargränssnittet.
+   >
+   > 
+* Vilka komponenter och funktioner som är tillgängliga i användargränssnittet beror på dina behörigheter och ditt licenspaket. Fråga din Adobe Customer Success Manager för alla frågor.
+
+
+## Vänster navigering
 
 Använd länkarna till vänster för att bläddra bland funktionerna.
 
@@ -84,9 +87,39 @@ Nedan finns en fullständig lista över tjänster och funktioner som är tillgä
 
 * **[!UICONTROL Sandboxes]** - Adobe Experience Platform tillhandahåller sandlådor som partitionerar en instans i separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. [Läs mer om sandlådor i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html)
 
-## Stöd för webbläsare och språk
+
+## Användningsexempel inifrån produkten
+
+Utnyttja [!DNL Adobe Journey Optimizer]-användningsexempel från startsidan och ge några snabba indata för att skapa en kundresa.
+
+![](assets/use-cases-home.png)
+
+Exempel:
+
+* **Skapa testprofiler** för att skapa testprofiler med vår CSV-mall för att testa personaliserade meddelanden och resor. Lär dig hur du implementerar det här användningsexemplet [på den här sidan](building-journeys/creating-test-profiles.md#use-case-1).
+* **Skicka ett födelsedagsmeddelande till kunder** för att automatiskt skicka ett e-postmeddelande och önska dina kunder en viss födelsedag. (kommer snart)
+* **Skicka e-postmeddelanden till nya kunder** för att enkelt skicka upp till två e-postmeddelanden för att välkomna dina nyregistrerade kunder. (kommer snart)
+* **Skicka push-meddelanden till importerade kundlistor** för att snabbt skicka ett push-meddelande till en lista över kunder som importerats från en CSV-fil. (kommer snart)
+
+Klicka på **[!UICONTROL View details]** om du vill veta mer om de olika användningsexemplen.
+
+Klicka på knappen **[!UICONTROL Begin]** för att starta användningsfallet.
+
+Du kommer åt körda användningsfall från knappen **[!UICONTROL View use case library]**.
+
+## Hitta hjälp och support
+
+Få åtkomst till Adobe Journey Optimizer hjälpsidor från startsidans nedre del.
+
+Använd ikonen **Hjälp** för att få åtkomst till hjälpsidor, kontakta support och dela feedback. Du kan söka efter hjälpartiklar och videoklipp i sökfältet.
+
+![](assets/ajo-help.png)
+
+## Webbläsare som stöds
 
 Gränssnittet Adobe [!DNL Journey Optimizer] är utformat för att fungera optimalt i den senaste versionen av Google Chrome. Du kan ha problem med att använda vissa funktioner i äldre versioner eller i andra webbläsare.
+
+## Språkinställningar
 
 Användargränssnittet finns för närvarande på följande språk:
 
@@ -106,7 +139,7 @@ Så här byter du språk:
 
 ## Sökning
 
-Använd Adobe Experience Cloud-sökningen mitt i den övre raden för att hitta resurser, resor eller meddelanden i dina sandlådor. Börja skriva in innehåll för att visa de bästa resultaten.
+Var som helst från Adobe Journey Optimizer-gränssnittet kan du använda Adobe Experience Cloud-sökningen i mitten av det övre fältet för att hitta resurser, resor eller meddelanden i dina sandlådor. Börja skriva in innehåll för att visa de bästa resultaten.
 
 ![](assets/unified-search.png)
 
@@ -138,17 +171,3 @@ I rutorna Händelse, Datakälla och Åtgärdskonfiguration visar fältet **[!UIC
 I de olika listorna kan du utföra grundläggande åtgärder för varje element. Du kan till exempel skapa dubbletter eller radera en post.
 
 ![](assets/journey4.png)
-
-## Bläddra bland Adobe Experience Platform-fält {#friendly-names-display}
-
-När du definierar [händelsers nyttolast](event/about-creating.md#define-the-payload-fields), [fältgruppers nyttolast](datasource/configure-data-sources.md#define-field-groups) och väljer fält i [uttrycksredigeraren](https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/expressionadvanced.html) visas visningsnamnet förutom fältnamnet. Den här informationen hämtas från schemadefinitionen i upplevelsedatamodellen.
-
-Om beskrivningar som &quot;xdm:alternateDisplayInfo&quot; anges när du ställer in scheman, ersätts visningsnamnen med de användarvänliga namnen. Det är särskilt användbart när du arbetar med&quot;eVars&quot; och generiska fält. Du kan konfigurera egna namnbeskrivningar via ett API-anrop. Mer information finns i [utvecklarhandboken för schemaregister](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html).
-
-![](assets/xdm-from-descriptors.png)
-
-Om användarvänliga namn finns visas fältet som `<friendly-name>(<name>)`. Om det inte finns något användarvänligt namn visas till exempel visningsnamnet som `<display-name>(<name>)`. Om inget av dem är definierade visas bara fältets tekniska namn `<name>`.
-
->[!NOTE]
->
->Användarvänliga namn hämtas inte när du väljer fält från en sammanslutning av scheman.
