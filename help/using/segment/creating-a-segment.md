@@ -5,7 +5,7 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+source-git-commit: 6639630c4049e36904ce722759320f276799d8f3
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 6%
@@ -38,10 +38,11 @@ I det här exemplet ska vi skapa ett segment som riktar sig till alla kunder som
 
    I det här exemplet måste vi förlita oss på fälten **Attribut** och **Händelser** för att skapa segmentet:
 
-   * **Attribut**: profiler som bor i Atlanta, San Francisco eller Seattle, född efter 1980,
-   * **Händelser**: som öppnade Luma-programmet inom de senaste 7 dagarna och sedan gjorde ett köp inom 2 timmar efter att programmet öppnats.
+   * **Attribut**: profiler som bor i Atlanta, San Francisco eller Seattle, född efter 1980
 
       ![](../assets/add-attributes.png)
+
+   * **Händelser**: som öppnade Luma-programmet inom de senaste 7 dagarna och sedan gjorde ett köp inom 2 timmar efter att programmet öppnats.
 
       ![](../assets/add-events.png)
 
