@@ -5,9 +5,9 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 780f51295459ac7a400e0060c817b49a1f632bff
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '978'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,6 @@ ht-degree: 1%
 >title="Om innehållskomponenter"
 >abstract="Innehållskomponenterna är tomma platshållare för innehåll som du kan använda för att skapa layouten för ett e-postmeddelande."
 
-![](assets/do-not-localize/badge.png)
 
 När du skapar ditt e-postinnehåll från grunden kan du med **[!UICONTROL Content components]** anpassa din e-post ytterligare med råa, tomma komponenter som du kan använda en gång i ett e-postmeddelande.
 Du kan lägga till så många **[!UICONTROL Content components]** som du behöver i en **[!UICONTROL Structure component]** som definierar layouten för ditt e-postmeddelande.
@@ -104,8 +103,6 @@ Adobe rekommenderar att du skapar ett meddelande från grunden och kopierar inne
 
 1. Kopiera och klistra in den HTML-kod som du vill lägga till i e-postmeddelandet och klicka på **[!UICONTROL Save]**.
 
-   ![](assets/email_designer_24.png)
-
 1. Nu kan du anpassa din HTML ytterligare genom att ändra till exempel **[!UICONTROL Style]**, **[!UICONTROL Margin]** och **[!UICONTROL Border]** eller lägga till en länk för att dirigera om publiken till ett annat innehåll.
 
 ## Bild {#image}
@@ -116,9 +113,9 @@ Använd komponenten **[!UICONTROL Image]** för att infoga en bildfil från dato
 
    ![](assets/email_designer_9.png)
 
-1. Klicka på **[!UICONTROL Browse]** för att välja en bildfil på datorn.
+1. Klicka på **[!UICONTROL Browse]** för att välja en bildfil från dina resurser.
 
-   Du kan också klicka på **[!UICONTROL Asset Picker]** om du vill lägga till en resurs i e-postmeddelandet. Mer information om Assets finns i [avsnittet](assets-essentials.md).
+   Mer information om [!DNL Assets Essentials] finns i [Adobe Experience Manager Assets Essentials-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html).
 
 1. Klicka på den nyligen tillagda komponenten för att börja konfigurera **[!UICONTROL Content Components]** och få åtkomst till **[!UICONTROL Components Settings]** i den högra rutan i e-postdesignern.
 
