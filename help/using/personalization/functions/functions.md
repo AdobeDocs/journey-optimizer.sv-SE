@@ -5,7 +5,7 @@ feature: Personalisering
 topic: Personalisering
 role: Data Engineer
 level: Experienced
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
 workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 1%
@@ -14,8 +14,6 @@ ht-degree: 1%
 
 
 # Mallar för språk och hjälpfunktioner {#functionsL}
-
-![](../../assets/do-not-localize/badge.png)
 
 Använd [!DNL Journey Optimizer]-mallspråk för att utföra dataåtgärder, som beräkningar, dataformatering eller konvertering, villkor och ändra dem i personaliseringssammanhang. Läs riktlinjerna för syntaxen för personalisering i [den här sidan](../personalization-syntax.md).
 
