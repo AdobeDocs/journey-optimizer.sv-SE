@@ -5,7 +5,7 @@ feature: Datakällor
 topic: Administrering
 role: Administrator
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: c67ed928e048dc163cc58430f7a02475f9a32eb0
 workflow-type: tm+mt
 source-wordcount: '1285'
 ht-degree: 98%
@@ -13,8 +13,6 @@ ht-degree: 98%
 ---
 
 # Externa datakällor {#concept_t2s_kqt_52b}
-
-![](../assets/do-not-localize/badge.png)
 
 Med externa datakällor kan du definiera en anslutning till tredjepartssystem om du till exempel använder ett bokningssystem för hotell som kontrollerar om personen har registrerat ett rum. I motsats till den inbyggda datakällan i Adobe Experience Platform kan du skapa så många externa datakällor som behövs.
 
@@ -31,7 +29,7 @@ Anropet består av en huvud-URL (_https://api.adobeweather.org/weather_), två p
 
 Här följer de viktigaste stegen för att skapa och konfigurera en ny extern datakälla:
 
-1. Klicka på **[!UICONTROL Add]** i listan med datakällor för att skapa en ny extern datakälla.
+1. Klicka på **[!UICONTROL Create Data Source]** i listan med datakällor för att skapa en ny extern datakälla.
 
    ![](../assets/journey25.png)
 
@@ -58,8 +56,8 @@ Här följer de viktigaste stegen för att skapa och konfigurera en ny extern da
 
 
    * **[!UICONTROL Type]**: &quot;API-nyckel&quot;
-   * **[!UICONTROL Value]**: &quot;1234&quot; (det här är värdet på vår API-nyckel)
    * **[!UICONTROL Name]**: &quot;appid&quot; (det här är API-nyckelns parameternamn)
+   * **[!UICONTROL Value]**: &quot;1234&quot; (det här är värdet på vår API-nyckel)
    * **[!UICONTROL Location]**: &quot;Frågeparameter&quot; (API-nyckeln finns i webbadressen)
 
    ![](../assets/journey28.png)
@@ -71,8 +69,8 @@ För parameteruppsättningen &quot;long/lat&quot; skapar vi en fältgrupp med f�
 * **[!UICONTROL Used in]**: visar antalet resor som använder en fältgrupp. Du kan klicka på ikonen **[!UICONTROL View journeys]** för att visa en lista över resor som använder den här fältgruppen.
 * **[!UICONTROL Method]**: välj metoden POST eller GET. I vårt fall väljer vi metoden GET.
 * **[!UICONTROL Cache duration]**: vi vill att vädret ska sparas i cacheminnet under tio minuter.
-* **[!UICONTROL Response Payload]**: klicka inuti fältet **[!UICONTROL Payload]** och klistra in ett exempel på nyttolasten som returneras av anropet. Vi har till exempel använt en nyttolast som finns på en API-webbplats för väder. Kontrollera att fälttyperna är korrekta. Varje gång API:et anropas hämtas alla fält som ingår i exemplets nyttolast. Observera att du kan klicka på **[!UICONTROL Paste a new payload]** för att ändra den nyttolast som för närvarande används.
 * **[!UICONTROL Dynamic Values]**: ange de olika parametrarna avgränsade med kommatecken – &quot;long,lat&quot; i vårt exempel. Eftersom parameterns värden är beroende av körningens sammanhang definieras de i resorna. Läs [den här sidan](https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/expressionadvanced.html).
+* **[!UICONTROL Response Payload]**: klicka inuti fältet **[!UICONTROL Payload]** och klistra in ett exempel på nyttolasten som returneras av anropet. Vi har till exempel använt en nyttolast som finns på en API-webbplats för väder. Kontrollera att fälttyperna är korrekta. Varje gång API:et anropas hämtas alla fält som ingår i exemplets nyttolast. Observera att du kan klicka på **[!UICONTROL Paste a new payload]** för att ändra den nyttolast som för närvarande används.
 * **[!UICONTROL Sent Payload]**: det här fältet visas inte i vårt exempel. Det är endast tillgängligt om du väljer metoden POST. Klistra in nyttolasten som ska skickas till tredjepartssystemet.
 
 Om ett GET-anrop som kräver parametrar används ska du ange parametrarna i fältet **[!UICONTROL Dynamic Values]** och de läggs sedan till automatiskt i slutet av anropet. Om ett POST-anrop används måste du:
