@@ -5,7 +5,7 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 5%
@@ -13,8 +13,6 @@ ht-degree: 5%
 ---
 
 # Importera eller koda ditt e-postinnehåll {#existing-content}
-
-![](assets/do-not-localize/badge.png)
 
 Med Journey Optimizer kan du importera befintligt HTML-innehåll för att utforma dina e-postmeddelanden. Det här innehållet kan vara rå HTML-kod eller innehåll från en befintlig HTML-fil eller en zip-mapp.
 
@@ -57,7 +55,6 @@ Använd läget **[!UICONTROL Code your own]** för att importera rå HTML och/el
 1. När koden är klar klickar du på **[!UICONTROL Save]** och går sedan tillbaka till fönstret där du skapade meddelandet för att slutföra meddelandet.
 
    ![](assets/code-editor-save.png)
-
 
 ## Importera HTML {#import-html-content-from-file}
 
