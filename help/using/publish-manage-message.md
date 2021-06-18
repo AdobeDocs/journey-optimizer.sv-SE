@@ -6,7 +6,7 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+source-git-commit: 7eceb7292c127c1b16a564fc19d0fc091808ee35
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 4%
@@ -56,4 +56,4 @@ Så här uppdaterar du ett publicerat meddelande:
 
 Så snart den nya versionen har publicerats genereras en ny meddelandekörning vid nästa API-anrop. Nästa inkommande profil får den nya versionen.
 
-<!--For batch messages, the audience/segment being processed in the previous execution will not be affected by the new version. Only the next incoming API call with an audience/segment will generate a new message execution with the new version.-->
+<!--For batch messages, the audience/segment being processed in the previous execution will not be affected by the new version. Only the next incoming API call with an audience/segment will generate a new message execution with the new version. -->
