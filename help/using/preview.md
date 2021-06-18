@@ -5,16 +5,14 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: f3421d6fcbf7400b8db344366be596e0bede762b
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
 
 # Förhandsgranska och testa dina meddelanden{#preview-and-proof}
-
-![](assets/do-not-localize/badge.png)
 
 När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du infogade [anpassat innehåll](personalization/personalize.md) kan du kontrollera hur det här innehållet visas i meddelandet genom att utnyttja testprofildata.
 
@@ -22,7 +20,10 @@ Om du vill identifiera eventuella fel i e-postinnehåll eller personaliseringsin
 
 >[!CAUTION]
 >
->Du måste ha testprofiler tillgängliga för att kunna förhandsgranska meddelanden och skicka korrektur. Lär dig hur du skapar testprofiler i [den här sidan](building-journeys/creating-test-profiles.md).
+>Du måste ha testprofiler tillgängliga för att kunna förhandsgranska meddelanden och skicka korrektur.
+>
+>Lär dig hur du skapar testprofiler i [den här sidan](building-journeys/creating-test-profiles.md).
+
 
 Om du vill testa ditt meddelandeinnehåll måste du:
 
@@ -33,13 +34,18 @@ Du kan sedan [skicka korrektur](#send-proofs) till dina testprofiler.
 
 Använd dessutom ditt **Litmus**-konto i [!DNL Journey Optimizer] för att omedelbart förhandsgranska din **e-poståtergivning** i vanliga e-postklienter. Sedan kan ni se till att e-postinnehållet ser bra ut och fungerar som det ska i alla inkorgar. Lär dig hur du låser upp förhandsvisningar för Litmus-e-post i [det här avsnittet](#email-rendering)
 
+>[!CAUTION]
+>
+>När du förhandsgranskar ett meddelande eller skickar korrektur visas endast profilpersonaliseringsdata. Personalisering som bygger på kontextdata, t.ex. händelseinformation, kan bara testas i samband med en resa. Lär dig hur du testar personalisering i [det här användningsexemplet](personalization/personalization-use-case.md).
+
+
 ## Välj testprofiler{#select-test-profiles}
 
 Använd [Testa profiler](building-journeys/creating-test-profiles.md) för att ange ytterligare mottagare som inte matchar de definierade målinriktningsvillkoren som mål.
 
 Så här väljer du testprofiler:
 
-1. Klicka på knappen **[!UICONTROL Preview]** i meddelandegränssnittet eller i e-postdesignern för att komma åt valet av testprofil.
+1. Klicka på knappen **[!UICONTROL Show preview]** i meddelandegränssnittet eller i e-postdesignern för att komma åt valet av testprofil.
 
    ![](assets/email-preview-button.png)
 
@@ -124,6 +130,10 @@ När [testprofiler](#select-test-profiles) har valts kan du skicka korrektur.
    ![](assets/send-proof-view.png)
 
 Du måste skicka korrektur när du har ändrat meddelandeinnehållet.
+
+>[!NOTE]
+>
+> I det korrektur som skickas till testprofilerna är länken till spegelsidan inte aktiv. Den aktiveras endast i de slutliga meddelandena.
 
 ## E-poståtergivning{#email-rendering}
 
