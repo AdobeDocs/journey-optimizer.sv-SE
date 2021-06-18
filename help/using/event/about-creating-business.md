@@ -5,16 +5,14 @@ feature: Händelser
 topic: Administrering
 role: Administrator
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 265e15f3b56dfac7a5c35bf6817a5ff2da1d744a
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '821'
 ht-degree: 14%
 
 ---
 
 # Konfigurera en affärshändelse {#configure-a-business-event}
-
-![](../assets/do-not-localize/badge.png)
 
 Till skillnad från enhetshändelser är affärshändelser inte länkade till en viss profil. Händelse-ID-typen är alltid regelbaserad. Läs mer om affärshändelser i [det här avsnittet](../event/about-events.md).
 
@@ -37,11 +35,11 @@ Affärshändelser kan vara&quot;en produkt är tillbaka i lager&quot;,&quot;ett 
 
 Här följer de första stegen för att konfigurera en affärshändelse:
 
-1. I avsnittet Administration går du till **[!UICONTROL Configurations]** och klickar sedan på **[!UICONTROL Events]**. Listan med händelser visas.
+1. Välj **[!UICONTROL Configurations]** under ADMINISTRATION-menyn. Klicka på **[!UICONTROL Manage]** i **[!UICONTROL Events]**-avsnittet. Listan med händelser visas.
 
    ![](../assets/jo-event1.png)
 
-1. Klicka på **[!UICONTROL Add]** för att skapa en ny händelse. Konfigurationsfönstret för händelsen öppnas till höger på skärmen.
+1. Klicka på **[!UICONTROL Create Event]** för att skapa en ny händelse. Konfigurationsfönstret för händelsen öppnas till höger på skärmen.
 
    ![](../assets/jo-event2.png)
 
@@ -82,7 +80,7 @@ Här följer de första stegen för att konfigurera en affärshändelse:
 
 Nyttolastdefinitionen gör att du kan välja vilken information systemet förväntar sig från händelsen under din resa och nyckeln för att identifiera vilken person som är associerad med händelsen. Nyttolasten baseras på Experience Cloud XDM-fältdefinitionen. Mer information om XDM finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv).
 
-1. Välj ett XDM-schema i listan och klicka på fältet **[!UICONTROL Payload]** eller på ikonen **[!UICONTROL Edit]**.
+1. Välj ett XDM-schema i listan och klicka på fältet **[!UICONTROL Fields]** eller på ikonen **[!UICONTROL Edit]**.
 
    ![](../assets/journey8-business.png)
 
@@ -92,11 +90,9 @@ Nyttolastdefinitionen gör att du kan välja vilken information systemet förvä
 
 1. Markera de fält som du förväntar dig ska tas emot från händelsen. Det här är de områden som affärsanvändaren kommer att utnyttja under resan.
 
-   ![](../assets/journey10-business.png)
-
 1. När du är klar med att markera de fält som behövs klickar du på **[!UICONTROL Save]** eller trycker på **[!UICONTROL Enter]**.
 
-   Antalet markerade fält visas i fältet **[!UICONTROL Payload]**.
+   Antalet markerade fält visas i fältet **[!UICONTROL Fields]**.
 
    ![](../assets/journey12-business.png)
 
