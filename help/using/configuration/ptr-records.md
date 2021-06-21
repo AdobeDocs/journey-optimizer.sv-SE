@@ -15,7 +15,7 @@ feature: Applikationsinställningar
 topic: Administrering
 role: Administrator
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Med PTR-poster kan e-postservrar som tar emot e-post kontrollera e-postservrarna
 
 ## Få åtkomst till dina underdomäners PTR-poster
 
-När en underdomän har delegerats i kundresehantering skapas en PTR-post automatiskt och kopplas till den här underdomänen. Du kommer åt den från menyn **[!UICONTROL Channels]** / **[!UICONTROL PTR records]**.
+När en underdomän har delegerats i kundresehantering skapas en PTR-post automatiskt och kopplas till den här underdomänen. Du kommer åt den från **[!UICONTROL Channels]** `>` **[!UICONTROL PTR records]**-menyn.
 
 ![](../assets/ptr-records.png)
 
