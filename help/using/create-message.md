@@ -5,9 +5,9 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Beginner
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+source-git-commit: 9872df0ac91fff249a7b41ecd99b7c25c25463a9
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '480'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ Meddelanden är tillgängliga från genvägen **[!UICONTROL Messages]** till vä
 
 >[!NOTE]
 >
->Alla användare har tillgång till, kan skapa, redigera och publicera meddelanden. Läs mer om användarbehörigheter [i det här avsnittet](../using/administration/permissions.md).
+>Användarna kan komma åt, skapa, redigera och/eller publicera meddelanden beroende på deras produktprofil. Läs mer om användarbehörigheter [i det här avsnittet](../using/administration/permissions.md).
 
 ![](assets/messages-list.png)
 
