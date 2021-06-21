@@ -15,21 +15,21 @@ feature: Applikationsinställningar
 topic: Administrering
 role: Administrator
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '119'
 ht-degree: 7%
 
 ---
 
 
-# Bestämma profilernas primära adresser
+# Ändra de primära e-postadresserna
 
 När du anger en profil som mål kan det finnas flera e-postadresser i databasen (personlig, professionell e-postadress osv.).
 
 Med Journey Optimizer kan du avgöra vilken e-postadress som ska användas från profiltjänsten och prioritera när flera adresser är tillgängliga. Följ dessa steg för att göra detta:
 
-1. Gå till menyn **[!UICONTROL Channels]** / **[!UICONTROL General]**.
+1. Gå till **[!UICONTROL Channels]** `>` **[!UICONTROL General]**-menyn.
 1. Det fält som för närvarande används som standard för att bestämma profilens e-postadresser visas på den här skärmen. Klicka på **[!UICONTROL Edit]** för att ändra den.
 
    ![](../assets/primary-address.png)
