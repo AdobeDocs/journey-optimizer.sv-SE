@@ -1,17 +1,20 @@
 ---
-title: Sekretess
+title: 'Integritet i [!DNL Journey Optimizer] '
 description: Lär dig hantera sekretess
-source-git-commit: b7c3b0e683cb5ae173c2ab979e3558cd0dbf6ee9
+topic: Sekretess
+role: User
+level: Intermediate
+source-git-commit: 9872df0ac91fff249a7b41ecd99b7c25c25463a9
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 50%
+source-wordcount: '778'
+ht-degree: 46%
 
 ---
 
 
-# Sekretess {#privacy}
+# Integritetshantering med [!DNL Journey Optimizer]{#privacy}
 
-[!DNL Journey Optimizer] är ett kraftfullt verktyg för att behandla stora mängder data, inklusive personuppgifter och känsliga data.
+[!DNL Journey Optimizer] är ett kraftfullt verktyg för att behandla stora mängder data, inklusive personuppgifter och känsliga data. För att kunna leverera bättre kundupplevelser måste ni samla in och lagra era kunders personuppgifter. När du använder dessa data är det viktigt att förstå och respektera dina kunders integritet. Nya juridiska och organisatoriska bestämmelser ger användarna rätt att få tillgång till eller ta bort sina personuppgifter från era datalager på begäran.
 
 * **Personuppgifter** är information som direkt eller indirekt kan identifiera en levande individ.
 * **Känsliga personuppgifter** är information som är relaterad till en individs ras, politiska åsikter, religiösa övertygelser, kriminella bakgrund, genetiska uppgifter, hälsodata, sexuella preferenser, biometrisk information samt medlemskap i fackföreningar.
