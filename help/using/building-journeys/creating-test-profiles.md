@@ -5,9 +5,9 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 8f77802fcaa23790f9de4e8f15e593643b13fb1e
+source-git-commit: 26cecf08f2032c58458f69ff1f2779e3c2603d18
 workflow-type: tm+mt
-source-wordcount: '1318'
+source-wordcount: '1319'
 ht-degree: 1%
 
 ---
@@ -93,7 +93,7 @@ Följande information krävs:
 2. **CSV-fil**: En kommaavgränsad fil som innehåller listan med testprofiler som ska skapas. Användningsfallet förväntar sig ett fördefinierat format för CSV-filen som innehåller listan med testprofiler som ska skapas. Varje rad i filen ska innehålla följande fält i rätt ordning:
 
    1. **Person-ID**: Unik identifierare för testprofilen. Värdena för det här fältet bör återspegla det valda identitetsnamnutrymmet. (Om du till exempel väljer **Telefon** för identitetsnamnutrymmet bör värdena i det här fältet vara telefonnummer. Om **E-post** är markerat bör värdena i det här fältet vara e-postmeddelanden)
-   1. **E-post**: Testa profilens e-postadress. (Fältet **Person-ID** och fältet **E-post** kan innehålla samma värden om **E-post** har valts som identitetsnamnområde)
+   1. **E-post**: Testa profilens e-postadress. (Fältet **Person-ID** och fältet **E-postadress** kan innehålla samma värden om **E-post** har valts som identitetsnamnområde)
    1. **Förnamn**: Testa profilens förnamn.
    1. **Efternamn**: Efternamn för testprofil.
    1. **Ort**: Testprofilens ort
