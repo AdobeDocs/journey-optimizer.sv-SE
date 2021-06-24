@@ -5,7 +5,7 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 8ffafb76b15ea7dfabd52c278833fc607f3338a5
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 3%
@@ -26,7 +26,7 @@ Du kan skapa två typer av samlingar:
 
 * **Dynamiska** samlingar är erbjudandesamlingar som baseras på taggar. Dessa samlingar uppdateras automatiskt. Om till exempel ett nytt erbjudande skapas med den valda taggen läggs det automatiskt till i samlingen.
 
-* **Statiska** samlingar är samlingar som skapats genom att du manuellt väljer enskilda erbjudanden som ska ingå i samlingen. Samlingen kan bara uppdateras och jag lägger till fler erbjudanden manuellt.
+* **Statiska** samlingar är samlingar som skapats genom att du manuellt väljer enskilda erbjudanden som ska ingå i samlingen. Samlingen kan bara uppdateras genom att fler erbjudanden läggs till manuellt.
 
 Så här skapar du en samling:
 
