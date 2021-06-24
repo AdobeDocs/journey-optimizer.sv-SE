@@ -5,7 +5,7 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+source-git-commit: 8ffafb76b15ea7dfabd52c278833fc607f3338a5
 workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 1%
@@ -98,7 +98,7 @@ Behörighetsregler och -begränsningar gör att du kan definiera villkoren för 
 
    ![](../../assets/offer_rule.png)
 
-1. Definiera **[!UICONTROL Priority]** för erbjudandet jämfört med andra om användaren kvalificerar för mer än ett erbjudande. Det högsta som ett erbjudande prioriterar kommer att vara att dess högsta prioritet kommer att jämföras med andra erbjudanden.
+1. Definiera **[!UICONTROL Priority]** för erbjudandet jämfört med andra om användaren kvalificerar för mer än ett erbjudande. Ju högre prioritet ett erbjudande har, desto högre blir prioriteringen jämfört med andra erbjudanden.
 
 1. Ange erbjudandets **[!UICONTROL Capping]**, vilket innebär hur många gånger erbjudandet kommer att visas totalt för alla användare. Om erbjudandet har levererats till alla användare det antal gånger som du har angett i det här fältet, upphör leveransen.
 
@@ -124,7 +124,7 @@ Du kan också spara erbjudandet som ett utkast för att redigera det och godkän
 
 ![](../../assets/offer_review.png)
 
-Erbjudandet visas i listan med statusen **[!UICONTROL Live]** eller **[!UICONTROL Draft]**, beroende på om du godkände det eller inte i föregående steg.
+Erbjudandet visas i listan med statusen **[!UICONTROL Live]** eller **[!UICONTROL Draft]**, beroende på om du godkände det eller inte i det föregående steget.
 
 Den är nu klar att levereras till användarna. Du kan markera den för att visa dess egenskaper och redigera eller inaktivera den.
 
