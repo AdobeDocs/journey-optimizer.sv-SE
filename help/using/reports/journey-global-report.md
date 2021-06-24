@@ -5,14 +5,14 @@ feature: Rapportering
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 42e5cdec54339f65cddd79df4deabbf28292d16b
+source-git-commit: c883930674b3856f1f7857f4072419be8c9d8738
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 0%
 
 ---
 
-# Global reserapport {#journey-global-report}
+# Rapport om global resa {#journey-global-report}
 
 Den globala reserapporten kan nås direkt från din resa med knappen **[!UICONTROL Global report]**.
 
@@ -26,15 +26,15 @@ Sidan **[!UICONTROL Global report]** för resan visas med följande flikar:
 
 Resan **[!UICONTROL Global report]** är uppdelad i olika widgetar som anger hur framgångsrik och felfri din resa är. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [avsnittet](global-report.md#modify-dashboard).
 
-## Reseflik {#journey-global}
+## Fliken Resor {#journey-global}
 
 Från din resa **[!UICONTROL Global report]** ger fliken **[!UICONTROL Journey]** en tydlig bild av de viktigaste spårningsdata som rör din resa.
 
 ![](../assets/global_report_2.png)
 
-Med widgeten **[!UICONTROL Journey`s performance]** kan du se sökvägen till dina målprofiler steg för steg under hela resan.
+Med widgeten **[!UICONTROL Journey Performance]** kan du se sökvägen till dina målprofiler steg för steg under hela resan.
 
-Widgeten **[!UICONTROL Journey`s statistics]** visar följande KPI:er:
+Widgeten **[!UICONTROL Journey Statistics]** visar följande KPI:er:
 
 * **[!UICONTROL Entered profiles]**: Totalt antal personer som har nått resans inträde.
 
@@ -124,7 +124,7 @@ Diagrammet och tabellen **[!UICONTROL Email - Top Url]** visar vilka URL:er frå
 
 Diagrammet och tabellen **[!UICONTROL Email - Top recipient domain]** visar vilka domäner som är de mest använda av mottagarna för att öppna e-postmeddelandet.
 
-## Skjut fliken {#push-global}
+## Push-flik {#push-global}
 
 Från din resa **[!UICONTROL Global report]** anger fliken **[!UICONTROL Push]** huvudinformationen i relation till push-leveranserna som skickas under din resa.
 
