@@ -5,14 +5,14 @@ feature: Rapportering
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: dc858fb29a9059c11fd4d3ab77954d4dac2097c3
+source-git-commit: c883930674b3856f1f7857f4072419be8c9d8738
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 0%
 
 ---
 
-# Direktfärdsrapport {#journey-live-report}
+# Rapport om livesändning på resa {#journey-live-report}
 
 Du kan komma åt liverapporten för resan direkt från din resa med knappen **[!UICONTROL Live report]**.
 
@@ -26,15 +26,15 @@ Sidan **[!UICONTROL Live report]** för resan visas med följande flikar:
 
 Resan **[!UICONTROL Live report]** är uppdelad i olika widgetar som anger hur framgångsrik och felfri din resa är. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [avsnittet](live-report.md#modify-dashboard).
 
-## Reseflik {#journey-live}
+## Fliken Resor {#journey-live}
 
 Från din resa **[!UICONTROL Live report]** ger fliken **[!UICONTROL Journey]** en tydlig bild av de viktigaste spårningsdata som rör din resa.
 
 ![](../assets/report_journey_2.png)
 
-**[!UICONTROL Journey`s performance]** gör att du kan se vägen för dina målprofiler steg för steg under hela kundresan.
+**[!UICONTROL Journey Performance]** gör att du kan se vägen för dina målprofiler steg för steg under hela kundresan.
 
-Widgeten **[!UICONTROL Journey`s statistics]** visar följande KPI:er:
+Widgeten **[!UICONTROL Journey Statistics]** visar följande KPI:er:
 
 * **[!UICONTROL Entered profiles]**: Totalt antal personer som har nått resans inträde.
 
@@ -100,7 +100,7 @@ Widgetarna **[!UICONTROL Bounce Reasons]**, **[!UICONTROL Bounce categories]** o
 
 Med diagrammet och tabellen **[!UICONTROL Error Reasons]** kan du se vilket fel som uppstod under leveransen.
 
-## Skjut fliken {#push-live}
+## Push-flik {#push-live}
 
 Från din resa **[!UICONTROL Live report]** anger fliken **[!UICONTROL Push]** huvudinformationen i relation till push-leveranserna som skickas under din resa.
 
