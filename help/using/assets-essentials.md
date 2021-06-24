@@ -5,10 +5,10 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Beginner
-source-git-commit: 9ad4eeb11094b384f68eeaa9aa4e8fd7fe3e20c0
+source-git-commit: 51699c3bf597bc878b61438c0d0720bca317ff47
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 2%
 
 Mer detaljerad information om [!DNL Assets Essentials] finns i [Adobe Experience Manager Assets Essentials-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html).
 
-## Överför och infoga resurser{#add-asset}
+## Överföra och infoga resurser{#add-asset}
 
 Om du vill överföra filer i [!DNL Assets Essentials] måste du först bläddra i eller skapa den mapp som filen ska lagras i. Du kan sedan infoga dem i ditt e-postinnehåll.
 
-Mer information om hur du överför resurser finns i [Adobe Experience Manager Assets Essentials-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/add-delete-assets.html).
+Mer information om hur du överför resurser finns i [Adobe Experience Manager Assets Essentials-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/add-delete.html).
 
 1. Välj fliken **[!UICONTROL Assets]** på **[!UICONTROL Content management]**-menyn för att komma åt [!DNL Assets Essentials] från startsidan för [!DNL Adobe Journey Optimizer].
 
