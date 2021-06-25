@@ -5,9 +5,9 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 94f3fb815fdeec9853351be9bc41b0579cfc6c5b
+source-git-commit: 6fc882827c2ba98af539abf90347483301d48edc
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,8 @@ Du kan t.ex. lägga till ett beslut som i ditt e-postmeddelande visas ett särsk
 Mer information om hur du skapar och hanterar erbjudanden finns i [det här avsnittet](offers/get-started/starting-offer-decisioning.md).
 
 Om du vill ha ett **fullständigt exempel** som visar hur du konfigurerar erbjudanden kan du använda dem i ett beslut och använda det här beslutet i ett e-postmeddelande kan du läsa [det här avsnittet](offers/offers-e2e.md#insert-decision-in-email).
+
+[!DNL :arrow_forward:] [Läs om hur du lägger till erbjudanden som personalisering i den här videon](#video-offers)
 
 
 ## Infoga ett beslut i ett e-postmeddelande {#insert-offers}
@@ -101,3 +103,9 @@ Följ stegen nedan för att visa de olika erbjudanden som ingår i beslutet med 
    ![](assets/deliver-offer-test-profile-male-preview.png)
 
 Läs mer om de detaljerade stegen för att kontrollera meddelandeförhandsgranskningen i [det här avsnittet](#preview-your-messages).
+
+## Instruktionsvideo{#video-offers}
+
+Lär dig hur du lägger till en offer decisioning i meddelanden i [!DNL Journey Optimizer].
+
+>[!VIDEO](https://video.tv.adobe.com/v/334088?quality=12)
