@@ -5,9 +5,9 @@ feature: Personalisering
 topic: Personalisering
 role: Data Engineer
 level: Intermediate
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+source-git-commit: 94f3fb815fdeec9853351be9bc41b0579cfc6c5b
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '324'
 ht-degree: 1%
 
 ---
@@ -17,10 +17,10 @@ ht-degree: 1%
 
 ## Valideringsmekanismer
 
-På skärmen för uttrycksredigeraren kan du med knappen **Validera** validera din personaliseringssyntax.
+Använd knappen **Validera** på skärmen **Expression Editor** för att kontrollera din personaliseringssyntax.
 
 >[!NOTE]
-> Valideringen utförs automatiskt när du klickar på **Lägg till** för att stänga redigeringsfönstret.
+> Valideringen körs automatiskt när du klickar på knappen **Lägg till** för att stänga redigeringsfönstret.
 
 
 ![](assets/perso_validation1.png)
@@ -69,7 +69,7 @@ Hanteringsfältsuttryck omges av **{{expression}}**
 No segment definition found for 988afe9f0-d4ae-42c8-a0be-8d90e66e151
 ```
 
-### Specifika fel relaterade till erbjudanden
+## Specifika fel relaterade till erbjudanden
 
 Felen som rör integrering av erbjudanden i ett e-postmeddelande eller push-meddelande har följande mönster:
 
