@@ -5,18 +5,16 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: ae821a04270587902ca5d7967ba3f5cd87128555
+source-git-commit: 94f3fb815fdeec9853351be9bc41b0579cfc6c5b
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
 
-# Lägg till anpassade erbjudanden {#deliver-personalized-offers}
+# Lägg till personaliserade erbjudanden {#deliver-personalized-offers}
 
-## Om beslutshantering {#about-offer-decisioning}
-
-Med [!DNL Journey Optimizer] kan du i dina e-postmeddelanden infoga beslut (som tidigare kallats erbjudandeaktiviteter) som utnyttjar beslutsmotorn för erbjudanden för att välja det bästa erbjudandet som ska levereras till dina kunder.
+I [!DNL Journey Optimizer]-e-postmeddelanden kan du infoga beslut (som tidigare kallats&quot;erbjudandeaktiviteter&quot;) som utnyttjar beslutsmotorn för erbjudanden för att välja det bästa erbjudandet som ska levereras till dina kunder.
 
 Du kan t.ex. lägga till ett beslut som i ditt e-postmeddelande visas ett särskilt rabatterbjudande som varierar beroende på mottagarens lojalitetsnivå.
 
@@ -29,7 +27,7 @@ Om du vill ha ett **fullständigt exempel** som visar hur du konfigurerar erbjud
 
 >[!CAUTION]
 >
->Du måste först definiera ett erbjudandebeslut. Lär dig hur du skapar beslut i [det här avsnittet](offers/offer-activities/create-offer-activities.md).
+>Innan du börjar måste du [definiera ett erbjudandebeslut](offers/offer-activities/create-offer-activities.md).
 
 Följ stegen nedan för att infoga ett beslut i ett e-postmeddelande:
 
@@ -60,7 +58,7 @@ Följ stegen nedan för att infoga ett beslut i ett e-postmeddelande:
 Erbjudandeaktiviteten har nu lagts till i komponenten.
 
 
-## Förhandsgranska erbjudanden i ett e-postmeddelande {#preview-offers-in-email}
+## Förhandsgranska erbjudanden via e-post {#preview-offers-in-email}
 
 Du kan förhandsgranska de olika erbjudanden som ingår i det beslut som läggs till i e-postmeddelandet med hjälp av **[!UICONTROL Offers]**-avsnittet eller innehållskomponentpilarna.
 
