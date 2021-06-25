@@ -5,21 +5,25 @@ feature: Personalisering
 topic: Personalisering
 role: Data Engineer
 level: Experienced
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+source-git-commit: 94f3fb815fdeec9853351be9bc41b0579cfc6c5b
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1181'
 ht-degree: 1%
 
 ---
 
 
-# Mallar för språk och hjälpfunktioner {#functionsL}
+# Bibliotek för hjälpfunktioner{#functionsL}
 
 Använd [!DNL Journey Optimizer]-mallspråk för att utföra dataåtgärder, som beräkningar, dataformatering eller konvertering, villkor och ändra dem i personaliseringssammanhang. Läs riktlinjerna för syntaxen för personalisering i [den här sidan](../personalization-syntax.md).
+
+[!DNL :arrow_forward:] [Upptäck hur du använder hjälpfunktioner i video](#video)
 
 Mallspråk används i hjälpfunktioner som är tillgängliga i listrutan för anpassning i uttrycksredigeraren, enligt nedan:
 
 ![](../assets/access-helper-functions.png)
+
+
 
 I [!DNL Journey Optimizer] Expression Editor är hjälpfunktionerna grupperade i tre kategorier: [Funktioner](#functions-helper), [Hjälpprogram](#helper-helper) och [Operatorer](#operators-helper).
 
@@ -189,7 +193,7 @@ I [!DNL Journey Optimizer] Expression Editor är hjälpfunktionerna grupperade i
 </table>
 
 
-## Hjälpprogram{#helper-helper}
+## Hjälpmedel{#helper-helper}
 
 Hjälpprogram beskrivs i [den här sidan](helpers.md).
 
@@ -279,3 +283,8 @@ Jämförelsefunktioner används för att jämföra mellan olika uttryck och vär
     </tr>
 </table>
 
+## Instruktionsvideo{#video}
+
+Lär dig omvandla personaliseringsvärden med hjälp av hjälpfunktioner för personalisering och förstå olika användningsexempel för hjälpfunktioner.
+
+>[!VIDEO](https://video.tv.adobe.com/v/334244?quality=12)
