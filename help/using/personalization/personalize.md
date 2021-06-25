@@ -5,9 +5,9 @@ feature: Personalisering
 topic: Personalisering
 role: Data Engineer
 level: Beginner
-source-git-commit: 9656fc4b9f0935949abfd83db194c00da0f35cf4
+source-git-commit: 6fc882827c2ba98af539abf90347483301d48edc
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '663'
 ht-degree: 2%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 2%
 # Kom igång med personalisering{#add-personalization}
 
 Upptäck [!DNL Adobe Journey Optimizer]-personaliseringsfunktioner för att anpassa dina meddelanden till varje specifik mottagare genom att utnyttja de data och den information du har om honom/henne. Det kan vara hans förnamn, intressen, var han bor, vad han köpte och mycket annat.
+
+[!DNL :arrow_forward:] [Lär dig hur du anpassar ett meddelande i dessa videofilmer](#video-perso)
 
 [!DNL Journey Optimizer] använder en  **** inlineenkel personaliseringssyntax baserad på Handlebars, som gör att du kan skapa uttryck med innehåll omslutet av dubbla klammerparenteser **{{}}**. Du kan lägga till flera uttryck i samma innehåll eller fält utan begränsningar. Läs mer i [Personaliseringssyntax](personalization-syntax.md).
 
@@ -32,7 +34,7 @@ Anpassningen baseras på profildata som hanteras av schemat **XDM Individual Pro
 När du bearbetar meddelandet (e-post och push) ersätter Journey Optimizer uttrycket med data som finns i databasen för Experience Cloud Platform:  `Hello {{profile.person.name.firstName}} {{profile.person.name.lastName}}` blir&quot;Hello John Doe&quot;.
 
 
-## Personaliseringskontexter{#personalization-areas}
+## Anpassningssammanhang{#personalization-areas}
 
 Innehållet i och visningen av meddelanden som levereras av [!DNL Journey Optimizer] kan anpassas på flera olika sätt.
 
@@ -103,3 +105,12 @@ I följande exempel kan du välja de profiler som har sin födelsedag i dag och 
 
 ![](assets/perso_ee2.png)
 
+## Instruktionsvideor{#video-perso}
+
+Lär dig hur du använder sammanhangsbaserad händelseinformation från en resa för att personalisera ett meddelande.
+
+>[!VIDEO](https://video.tv.adobe.com/v/334165?quality=12)
+
+Lär dig hur du använder sammanhangsbaserad händelseinformation från en resa för att personalisera ett meddelande.
+
+>[!VIDEO](https://video.tv.adobe.com/v/334078?quality=12)
