@@ -5,10 +5,10 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att leverera sammankopplade, kontextuella och personaliserade upplevelser till kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: a904ee8fdcb5f634e856bf55432836e3649a1abc
+source-git-commit: 94f3fb815fdeec9853351be9bc41b0579cfc6c5b
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 44%
+source-wordcount: '673'
+ht-degree: 43%
 
 ---
 
@@ -27,32 +27,32 @@ ht-degree: 44%
       + [Skapa ett e-postmeddelande](using/create-email.md)
       + [Skapa ett push-meddelande](using/create-push.md)
    + [Lägga till och hantera resurser](using/assets-essentials.md)
-   + Email Designer {#email-designer}
+   + Designa e-postmeddelanden {#email-designer}
       + [Kom igång med e-postdesign](using/design-emails.md)
       + [Designa ditt e-postinnehåll i användargränssnittet](using/create-email-content.md)
       + [Importera eller koda ditt e-postinnehåll](using/existing-content.md)
       + [Använda e-postdesigners innehållskomponenter](using/content-components.md)
-   + Personalisering{#personalization}
-      + [Kom igång med personalisering](using/personalization/personalize.md)
-      + [Anpassningssyntax](using/personalization/personalization-syntax.md)
-      + [Validering av personalisering](using/personalization/personalization-validation.md)
-      + [Personalisering - användningsfall](using/personalization/personalization-use-case.md)
-      + Hjälpfunktioner{#functions}
-         + [Lista över hjälpfunktioner](using/personalization/functions/functions.md)
-         + [Sammanställningsfunktioner](using/personalization/functions/aggregation.md)
-         + [Aritmetiska funktioner](using/personalization/functions/arithmetic-functions.md)
-         + [Arrayer och listfunktioner](using/personalization/functions/arrays-list.md)
-         + [Boolean- och jämförelsefunktioner](using/personalization/functions/operators.md)
-         + [Hjälpmedel](using/personalization/functions/helpers.md)
-         + [Kartfunktioner](using/personalization/functions/maps.md)
-         + [Objektfunktioner](using/personalization/functions/objects.md)
-         + [Strängfunktioner](using/personalization/functions/string.md)
-   + [Lägg till personaliserade erbjudanden](using/deliver-personalized-offers.md)
    + Validera och publicera {#create-message}
       + [Förhandsgranska och korrektur](using/preview.md)
       + [Kontrollera aviseringar](using/alerts.md)
       + [Publicera meddelanden](using/publish-manage-message.md)
    + [Hantera avanmälan](using/consent.md)
++ Personalisering{#personalization}
+   + [Kom igång med personalisering](using/personalization/personalize.md)
+   + [Anpassningssyntax](using/personalization/personalization-syntax.md)
+   + [Validering av personalisering](using/personalization/personalization-validation.md)
+   + [Användningsfall: lägg till personalisering i ett push-meddelande](using/personalization/personalization-use-case.md)
+   + Hjälpfunktioner{#functions}
+      + [Lista över hjälpfunktioner](using/personalization/functions/functions.md)
+      + [Sammanställningsfunktioner](using/personalization/functions/aggregation.md)
+      + [Aritmetiska funktioner](using/personalization/functions/arithmetic-functions.md)
+      + [Arrayer och listfunktioner](using/personalization/functions/arrays-list.md)
+      + [Boolean- och jämförelsefunktioner](using/personalization/functions/operators.md)
+      + [Hjälpmedel](using/personalization/functions/helpers.md)
+      + [Kartfunktioner](using/personalization/functions/maps.md)
+      + [Objektfunktioner](using/personalization/functions/objects.md)
+      + [Strängfunktioner](using/personalization/functions/string.md)
+   + [Lägg till personaliserade erbjudanden](using/deliver-personalized-offers.md)
 + Segment{#segment}
    + [Om segment](using/segment/about-segments.md)
    + [Skapa segment](using/segment/creating-a-segment.md)
