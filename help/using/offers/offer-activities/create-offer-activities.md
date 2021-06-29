@@ -5,9 +5,9 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: 8ffafb76b15ea7dfabd52c278833fc607f3338a5
+source-git-commit: 2388a43928f5ea52bafbc5173f7302d53b2c5857
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '588'
 ht-degree: 4%
 
 ---
@@ -37,11 +37,15 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 
    ![](../../assets/activities-name.png)
 
-## Lägg till erbjudanden {#add-offers}
+## Lägg till beslutsomfattningar {#add-decision-scopes}
 
 1. Dra och släpp en placering från listan för att lägga till den i beslutet och klicka sedan på **[!UICONTROL Add collection]**.
 
    ![](../../assets/activities-placement.png)
+
+   >[!NOTE]
+   >
+   >Samma placering kan väljas flera gånger i beslutet.
 
 1. Välj den samling som innehåller de erbjudanden som ska övervägas och klicka sedan på **[!UICONTROL Add]**.
 
