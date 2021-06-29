@@ -5,9 +5,9 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: dc858fb29a9059c11fd4d3ab77954d4dac2097c3
+source-git-commit: 587dcb4823f57132748c913410a6fc177ccf76f1
 workflow-type: tm+mt
-source-wordcount: '1456'
+source-wordcount: '1487'
 ht-degree: 1%
 
 ---
@@ -76,7 +76,7 @@ Följ stegen nedan för att börja skapa e-postinnehåll med e-postdesignern:
 
 1. Från **[!UICONTROL Assets picker]** kan du lägga till resurser som lagras i **[!UICONTROL Assets library]** direkt i e-postmeddelandet. [Läs mer om resurshantering](assets-essentials.md).
 
-   Dubbelklicka på mappen som innehåller dina resurser och dra och släpp den resurs som du vill lägga till i e-postmeddelandet.
+   Dubbelklicka på den mapp som innehåller dina resurser och dra och släpp den resurs som du vill lägga till i e-postmeddelandet.
 
    ![](assets/email_designer_5.png)
 
@@ -215,20 +215,29 @@ Nedan visas de tillgängliga bakgrundsinställningarna som du kan använda.
 
 ## Justera lodrät justering och utfyllnad {#adjusting-vertical-alignment-and-padding}
 
-Du vill justera utfyllnaden och den lodräta justeringen inuti en strukturkomponent som består av tre kolumner. Följ stegen nedan för att göra detta:
+I det här exemplet justerar vi utfyllnad och lodrät justering inuti en strukturkomponent som består av tre kolumner.
 
-1. Markera strukturkomponenten direkt i e-postmeddelandet eller använd det strukturträd som finns till vänster **Palett**.
-1. Klicka på **[!UICONTROL Select a column]** i det sammanhangsberoende verktygsfältet **och välj det som du vill redigera.** Du kan också välja det i strukturträdet.
+1. Markera strukturkomponenten direkt i e-postmeddelandet eller använd den **[!UICONTROL Navigation tree]** som finns i den vänstra menyn.
 
-   De redigerbara parametrarna för den kolumnen visas i rutan **[!UICONTROL Settings]** till höger.
+   ![](assets/alignment_1.png)
 
-1. Under **[!UICONTROL Vertical alignment]** väljer du **[!UICONTROL Up]**.
+1. Klicka på **[!UICONTROL Select a column]** i verktygsfältet och välj den som du vill redigera. Du kan också välja det i strukturträdet.
 
-   Innehållskomponenten visas ovanpå kolumnen.
+   De redigerbara parametrarna för den kolumnen visas på menyn **[!UICONTROL Column settings]**.
+
+   ![](assets/alignment_2.png)
+
+1. Under **[!UICONTROL Vertical alignment]** väljer du **[!UICONTROL Bottom]**.
+
+   Innehållskomponenten flyttas längst ned i kolumnen.
+
+   ![](assets/alignment_3.png)
 
 1. Ange den översta utfyllnaden i kolumnen under **[!UICONTROL Padding]**. Klicka på låsikonen om du vill bryta synkroniseringen med den nedre utfyllnaden.
 
    Definiera vänster och höger utfyllnad för den kolumnen.
+
+   ![](assets/alignment_4.png)
 
 1. Gör på samma sätt om du vill justera justeringen och utfyllnaden för de andra kolumnerna.
 
@@ -238,13 +247,25 @@ Du vill justera utfyllnaden och den lodräta justeringen inuti en strukturkompon
 
 Du kan stryka under en länk och välja dess färg och mål i e-postdesignern.
 
-1. I en komponent där en länk infogas, markerar du etikettexten för länken.
+1. Markera länken i en text **[!UICONTROL Content component]** där en länk infogas.
 
-1. Markera **[!UICONTROL Underline link]** i komponentinställningarna för att stryka under etikettexten för länken.
+1. Markera **[!UICONTROL Underline link]** på menyn **[!UICONTROL Component settings]** för att stryka under etikettexten för länken.
 
-1. Välj en **[!UICONTROL Target]** om du vill välja i vilket webbläsarsammanhang länken ska öppnas.
+   ![](assets/link_1.png)
+
+1. Välj hur målgruppen ska omdirigeras med listrutan **[!UICONTROL Target]**:
+
+   * **[!UICONTROL None]**: öppnar länken i samma ram som den klickades på (standard).
+   * **[!UICONTROL Blank]**: öppnar länken i ett nytt fönster eller på en ny flik.
+   * **[!UICONTROL Self]**: öppnar länken i samma ram som den klickades på.
+   * **[!UICONTROL Parent]**: öppnar länken i den överordnade ramen.
+   * **[!UICONTROL Top]**: öppnar länken i hela fönstret.
+
+   ![](assets/link_2.png)
 
 1. Om du vill ändra färg på länken klickar du på **[!UICONTROL Link color]**.
+
+   ![](assets/link_3.png)
 
 1. Välj den färg du behöver.
 
