@@ -7,14 +7,14 @@ feature: Journey Optimizer
 role: Business Practitioner
 level: Beginner
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: 30e916e834bfed304f246264cdb091cb5ad60d41
+source-git-commit: d713010e85936f7ce7b6389bc68d4eec2d8bdaae
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '1026'
 ht-degree: 1%
 
 ---
 
-# Integrera med externa system {#external-systems}
+# Integrering med externa system {#external-systems}
 
 På den här sidan presenteras de olika skyddsprofilerna som Journey Optimizer ger när man integrerar ett externt system, samt bästa praxis: hur du optimerar skyddet för ditt externa system med API:t för appning, hur du konfigurerar timeout för resan och hur nya försök fungerar.
 
@@ -32,7 +32,11 @@ När Journey Optimizer gör ett anrop till ett externt API körs de tekniska gar
 
 ## Takning{#capping}
 
-Det inbyggda Capping API:t erbjuder ett tekniskt skyddsräcke som hjälper till att skydda ditt externa system. Innan du gör det måste du utvärdera kapaciteten för det externa API:t. Om Journey Optimizer t.ex. skickar 1 000 samtal per sekund och systemet bara har stöd för 100 samtal per sekund, måste du definiera en spärrregel så att systemet inte blir mättat.
+Det inbyggda Capping API:t erbjuder ett tekniskt skyddsräcke som hjälper till att skydda ditt externa system.
+
+För externa datakällor är det maximala antalet anrop per sekund satt till 15. Om antalet anrop överstiger 15 per sekund ignoreras de återstående samtalen. Du kan öka den här gränsen för privata externa datakällor. Kontakta Adobe för att vitlista slutpunkten. Detta är inte möjligt för offentliga externa datakällor.
+
+För anpassade åtgärder måste du utvärdera kapaciteten för det externa API:t. Om Journey Optimizer t.ex. skickar 1 000 samtal per sekund och systemet bara har stöd för 100 samtal per sekund, måste du definiera en spärrregel så att systemet inte blir mättat.
 
 Takregler definieras på sandlådenivå för en specifik slutpunkt (URL:en anropas). Vid körning verifierar Journey Optimizer om det finns en definierad begränsningsregel och tillämpar den definierade hastigheten vid anrop till den slutpunkten. Om antalet anrop överstiger den definierade hastigheten, ignoreras de återstående samtalen och räknas som fel i rapporteringen.
 
