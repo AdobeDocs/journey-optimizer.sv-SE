@@ -5,9 +5,9 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 9e152f50c2360010d83ffccbe536380879ffb5da
+source-git-commit: 2e85e966dcff87717ce4a5f426f9e66526dab7c4
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '921'
 ht-degree: 4%
 
 ---
@@ -21,8 +21,6 @@ Med Läs segment-aktiviteten kan alla personer som tillhör ett Adobe Experience
 Låt oss som exempel ta segmentet&quot;Luma app opening and checkout&quot; som skapades i [Build segments](../segment/about-segments.md) use case. Med aktiviteten Läs segment kan du få alla personer som tillhör det här segmentet att komma in på en resa och få dem att flöda in i personaliserade resor som utnyttjar alla resefunktioner: villkor, timers, events, actions.
 
 >[!NOTE]
->
->Det är inte möjligt att utlösa en segmentbaserad resa inom en kortare tid än en timme.
 >
 >Det Burst-betalda tillägget gör det möjligt att skicka mycket snabba push-meddelanden i stora volymer för enkla resor som innehåller ett lässegment och ett enkelt push-meddelande. Mer information hittar du i [det här avsnittet](../building-journeys/journey-gs.md#burst)
 
@@ -62,7 +60,7 @@ Så här konfigurerar du Läs segment-aktiviteten:
 
    ![](../assets/read-segment-schedule.png)
 
-   Som standard anges resan **[!UICONTROL As soon as possible]** i segment, vilket innebär en timme efter att resan har publicerats. Om du vill att segmentet ska anges på en viss dag/tid eller på en återkommande basis, väljer du önskat värde i listan.
+   Som standard anger segment resan **[!UICONTROL As soon as possible]**. Om du vill att segmentet ska anges på en viss dag/tid eller på en återkommande basis, väljer du önskat värde i listan.
 
    >[!NOTE]
    >
@@ -93,8 +91,6 @@ När testet är klart kan du med **[!UICONTROL Show logs]**-knappen se testresul
 När testerna är slutförda kan du publicera din resa (se [Publicera resan](publishing-the-journey.md)). Individer som tillhör segmentet kommer att gå in i resan det datum/den tidpunkt som anges i avsnittet **[!UICONTROL Scheduler]** för färdens egenskaper.
 
 >[!NOTE]
->
->När en segmentbaserad resa som inte är återkommande (&quot;börjar så snart som möjligt&quot; eller&quot;en gång&quot;) utförs, ändras dess status automatiskt till&quot;stängd&quot;.
 >
 >Vid återkommande segmentbaserade resor stängs resan automatiskt när den sista förekomsten görs. Om inget slutdatum/sluttid har angetts måste du stänga resan till nya ingångar manuellt för att avsluta den.
 
