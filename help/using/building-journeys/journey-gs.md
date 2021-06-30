@@ -5,9 +5,9 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: f2c280ba3d2148a62eebff421ef6c8c3c0352936
+source-git-commit: c6f4369c98b28afe1c607996e3f993dbfe09f63e
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1724'
 ht-degree: 6%
 
 ---
@@ -72,7 +72,9 @@ Klicka på pennikonen i det övre högra hörnet för att komma åt resans egens
 
 Du kan ändra namnet på resan, lägga till en beskrivning, tillåta återinträde, välja start- och slutdatum och definiera en **[!UICONTROL Timeout and error]**-varaktighet om du är administratör.
 
-Med **Kopiera teknisk information** kan du kopiera teknisk information om den resa som supportteamet kan använda för att felsöka. Följande information kopieras: JourneyVersion UID, OrgID, orgName, sandboxName.
+På den här skärmen visas publiceringsdatumet och namnet på den användare som publicerade resan.
+
+Med **Kopiera teknisk information** kan du kopiera teknisk information om den resa som supportteamet kan använda för att felsöka. Följande information kopieras: JourneyVersion UID, OrgID, orgName, sandboxName, lastDeployedBy, lastDeployedAt.
 
 ![](../assets/journey32.png)
 
