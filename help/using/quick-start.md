@@ -5,9 +5,9 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Beginner
-source-git-commit: e367067bc7ab1b1ace7815213b921a4f90d12885
+source-git-commit: 4b65425389c64c867919746beede5456a6a08abd
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '395'
 ht-degree: 7%
 
 ---
@@ -26,7 +26,7 @@ Innan du börjar använda [!DNL Adobe Journey Optimizer] måste du:
 
 * **Ange användarbehörigheter**: logga in  [!DNL Adobe Journey Optimizer] och ge åtkomst till dina teammedlemmar. [Läs mer](../using/administration/permissions.md)
 
-* **Distribuera[!DNL Adobe Experience Manager Assets Essentials]**: om du vill hantera resurser och bilder i meddelanden måste du distribuera  [!DNL Assets Essentials] för din organisation och se till att du är en del av  **Assets Essentials** konsumentanvändarprofiler och  **Assets Essentials** användarproduktprofiler. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html)
+* **Distribuera[!DNL Adobe Experience Manager Assets Essentials]**: om du vill hantera resurser och bilder i meddelanden måste du distribuera  [!DNL Assets Essentials] för din organisation och se till att användare, som behöver åtkomst till  [!DNL Assets Essentials], är en del av  **Assets Essentials** konsumentanvändarprofiler  **och** Assets Essentialsanvändarproduktprofiler. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html)
 
 * **Konfigurera kanalerna**: ange inställningar för e-post och push-meddelanden. [Läs mer](../using/configuration/get-started-configuration.md)
 
