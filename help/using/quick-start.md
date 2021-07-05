@@ -5,16 +5,16 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Beginner
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+source-git-commit: e367067bc7ab1b1ace7815213b921a4f90d12885
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '391'
 ht-degree: 7%
 
 ---
 
 # Snabbstart {#cjm-quick-start}
 
-## Viktiga steg för att starta {#cjm-key-steps}
+## Viktiga steg att starta {#cjm-key-steps}
 
 Med [!DNL Adobe Journey Optimizer] kan du importera befintligt meddelandeinnehåll eller utforma ett nytt innehåll, anpassa meddelanden med kundprofildata, skapa händelser för att utlösa meddelanden, definiera segment och förfina målgrupper, skicka flerkanalsmeddelanden, skapa och lägga till erbjudanden och få tillgång till en komplett uppsättning rapporterings- och övervakningsverktyg för att mäta effekten av era meddelanden och kundresor.
 
@@ -25,6 +25,8 @@ Beroende på din organisation kan du definiera flera typer av användare och ge 
 Innan du börjar använda [!DNL Adobe Journey Optimizer] måste du:
 
 * **Ange användarbehörigheter**: logga in  [!DNL Adobe Journey Optimizer] och ge åtkomst till dina teammedlemmar. [Läs mer](../using/administration/permissions.md)
+
+* **Distribuera[!DNL Adobe Experience Manager Assets Essentials]**: om du vill hantera resurser och bilder i meddelanden måste du distribuera  [!DNL Assets Essentials] för din organisation och se till att du är en del av  **Assets Essentials** konsumentanvändarprofiler och  **Assets Essentials** användarproduktprofiler. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html)
 
 * **Konfigurera kanalerna**: ange inställningar för e-post och push-meddelanden. [Läs mer](../using/configuration/get-started-configuration.md)
 
