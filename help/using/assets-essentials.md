@@ -5,9 +5,9 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Beginner
-source-git-commit: e367067bc7ab1b1ace7815213b921a4f90d12885
+source-git-commit: 4b65425389c64c867919746beede5456a6a08abd
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '375'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> Om du vill arbeta med [!DNL Adobe Experience Manager Assets Essentials] måste du distribuera [!DNL Assets Essentials] till din organisation och kontrollera att du är en del av **Assets Essentials Consumer Users** eller/och **Assets Essentials Users** Produktprofiler. <br> Mer information finns på den här  [sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html).
+> Om du vill arbeta med [!DNL Adobe Experience Manager Assets Essentials] måste du distribuera [!DNL Assets Essentials] till din organisation och se till att användare som behöver åtkomst till [!DNL Assets Essentials] är en del av **Assets Essentials konsumentanvändare** eller/och **Assets Essentials-användare** produktprofiler. <br> Mer information finns på den här  [sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html).
 
 [!DNL Adobe Experience Manager Assets Essentials] har ett enda centraliserat arkiv med resurser som du kan använda för att fylla i dina meddelanden. Den kan nås direkt från [!DNL Adobe Journey Optimizer] till **[!UICONTROL Assets]**-avsnittet. Du kan också komma åt resurser och mappar när du utformar ett e-postinnehåll. [Läs mer om e-postdesign](design-emails.md).
 
