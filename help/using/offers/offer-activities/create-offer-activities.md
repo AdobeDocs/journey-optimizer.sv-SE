@@ -5,7 +5,7 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
+source-git-commit: d09eedce833b41037452bb46bc748e7e9f477d0a
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 4%
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 Besluten (tidigare kallade erbjudandeaktiviteter) är behållare för dina erbjudanden som utnyttjar beslutsmotorn för erbjudanden för att välja det bästa erbjudandet som ska levereras, beroende på leveransmålet.
 
-![](../../assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#video)
+➡️ [Upptäck den här funktionen i en video](#video)
 
 Listan med beslut finns på fliken **[!UICONTROL Offers]** / **[!UICONTROL Decisions]**. Det finns filter som hjälper dig att hämta beslut utifrån status eller start- och slutdatum.
 
