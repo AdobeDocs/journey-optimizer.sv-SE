@@ -6,10 +6,10 @@ feature: Kontrollgrupper
 topic: Administrering
 role: Administrator
 level: Intermediate
-source-git-commit: 9872df0ac91fff249a7b41ecd99b7c25c25463a9
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 13%
+source-wordcount: '726'
+ht-degree: 11%
 
 ---
 
@@ -101,7 +101,7 @@ Om det behövs kan du även skapa en ny produktprofil med specifika behörighete
 
 [!DNL Journey Optimizer] I kan du skapa egna  **[!UICONTROL Product profiles]** och tilldela en uppsättning behörigheter och sandlådor till dina användare. Med **[!UICONTROL Product profiles]** kan du auktorisera eller neka åtkomst till vissa funktioner eller objekt i gränssnittet.
 
-Se [dokumentationen om Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html) för mer information om hur du skapar och hanterar sandlådor.
+Mer information om hur du skapar och hanterar sandlådor finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html){target=&quot;_blank&quot;}.
 
 I det här exemplet skapar vi en produktprofil med namnet **Skrivskyddad resa** där vi ger skrivskyddad behörighet till resefunktionen. Användare kan bara komma åt och visa resor och kan inte komma åt andra funktioner som **[!UICONTROL Decision management]** eller **[!UICONTROL Messages]** i [!DNL Journey Optimizer].
 
@@ -141,7 +141,7 @@ Så här skapar du våra **resor med skrivskydd** **[!UICONTROL product profiles
 
    ![](../assets/access_control_13.png)
 
-1. Klicka på plusikonen (+) i **[!UICONTROL Available Permissions Items]** för att tilldela sandlådor till profilen. [Läs mer om sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html).
+1. Klicka på plusikonen (+) i **[!UICONTROL Available Permissions Items]** för att tilldela sandlådor till profilen. [Läs mer om sandlådor](sandboxes.md).
 
 1. Klicka på **[!UICONTROL Save]** när du är klar.
 
