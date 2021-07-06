@@ -5,7 +5,7 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 0e5cc9101ff382ce9fde442da38eb46aa28e9c77
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 6%
@@ -18,7 +18,7 @@ Genom att associera taggar med erbjudandena blir det enklare att hålla ordning 
 
 Taggar kan också användas för att gruppera erbjudanden i mängder. Se [Skapa samlingar](../offer-library/creating-collections.md).
 
-![](../../assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#video)
+➡️ [Upptäck den här funktionen i en video](#video)
 
 Listan med skapade taggar finns på **[!UICONTROL Components]**-menyn.
 
