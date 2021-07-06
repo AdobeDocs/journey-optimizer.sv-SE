@@ -5,7 +5,7 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 587dcb4823f57132748c913410a6fc177ccf76f1
+source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 1%
@@ -76,7 +76,7 @@ Följ stegen nedan för att börja skapa e-postinnehåll med e-postdesignern:
 
 1. Från **[!UICONTROL Assets picker]** kan du lägga till resurser som lagras i **[!UICONTROL Assets library]** direkt i e-postmeddelandet. [Läs mer om resurshantering](assets-essentials.md).
 
-   Dubbelklicka på den mapp som innehåller dina resurser och dra och släpp den resurs som du vill lägga till i e-postmeddelandet.
+   Dubbelklicka på mappen som innehåller dina resurser och dra och släpp den resurs som du vill lägga till i e-postmeddelandet.
 
    ![](assets/email_designer_5.png)
 
