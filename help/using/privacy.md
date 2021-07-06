@@ -4,9 +4,9 @@ description: Lär dig hantera sekretess
 topic: Sekretess
 role: User
 level: Intermediate
-source-git-commit: d09eedce833b41037452bb46bc748e7e9f477d0a
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '775'
 ht-degree: 46%
 
 ---
@@ -54,7 +54,7 @@ För att kunna hantera personuppgifter på ett korrekt sätt måste ni därför 
 
 [!DNL Journey Optimizer] ärver de flesta datauppsättningsändringar som gjorts i Adobe Experience Platform.
 
-Följaktligen hanteras förfrågningar om skydd av privatlivet (rätt att få åtkomst och rätt att bli glömd) via Experience Platform. Du måste skicka dina begäranden med [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) och välja **Profil** och **AEP Data Lake** i produktlistan när [du skapar din sekretessförfrågan](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=en#request-builder). <!--https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en).-->
+Följaktligen hanteras förfrågningar om skydd av privatlivet (rätt att få åtkomst och rätt att bli glömd) via Experience Platform. Du måste skicka dina begäranden med [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target=&quot;_blank&quot;} och välja **Profil** och **AEP Data Lake** i produktlistan när [du skapar din sekretessförfrågan](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=en#request-builder){target=&quot;_blank&quot;}. <!--https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en).-->
 
 >[!NOTE]
 >
