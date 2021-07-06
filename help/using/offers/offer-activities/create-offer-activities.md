@@ -5,9 +5,9 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: d09eedce833b41037452bb46bc748e7e9f477d0a
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '576'
 ht-degree: 4%
 
 ---
@@ -67,7 +67,7 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 
    Lägg till ett eller flera segment från den vänstra rutan, kombinera dem med de logiska operatorerna **[!UICONTROL And]** / **[!UICONTROL Or]** och klicka sedan på **[!UICONTROL Select]** för att bekräfta.
 
-   Mer information om hur du arbetar med segment finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
+   Mer information om hur du arbetar med segment finns på [den här sidan](../../segment/about-segments.md).
 
    ![](../../assets/activity_constraint_segment2.png)
 
@@ -102,7 +102,7 @@ Mer information om erbjudanden finns i följande avsnitt:
 
 >[!NOTE]
 >
->När ett beslut har skapats kan du klicka på dess namn i listan för att få tillgång till detaljerad information och visa alla ändringar som har gjorts i den på fliken **[!UICONTROL Change log]** (se [Ändringslogg för erbjudanden och beslut](../get-started/user-interface.md#changes-log)).
+>När ett beslut har skapats kan du klicka på dess namn i listan för att få tillgång till detaljerad information och visa alla ändringar som har gjorts på den på fliken **[!UICONTROL Change log]**. [Läs mer](../get-started/user-interface.md#changes-log).
 
 ## Videokurs {#video}
 
