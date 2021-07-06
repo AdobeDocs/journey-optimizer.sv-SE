@@ -1,24 +1,24 @@
 ---
-title: Personalisering - användningsfall
-description: Personalisering - användningsfall
+title: Personalisering använder case&kolon; orderstatusmeddelande
+description: Lär dig hur du personaliserar ett meddelande med profil, offertbeslut och kontextinformation
 feature: Personalisering
 topic: Personalisering
 role: Data Engineer
 level: Intermediate
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+source-git-commit: f05e968a29d76e8dcd8e96fb8a5a1c60c4b12529
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
 
 
-# Användningsexempel för personalisering {#personalization-use-case}
+# Personalisering: orderstatusmeddelande {#personalization-use-case}
 
 I det här fallet får du se hur du använder flera typer av personalisering i ett enda push-meddelande. Tre typer av personalisering kommer att användas:
 
 * **Profil**: meddelandepersonalisering baserad på ett profilfält
-* **Erbjudandebeslut**: personalisering baserad på beslutsvariabler för erbjudanden
+* **Erbjudandebeslut**: personalisering baserad på offer decisioning
 * **Kontext**: personalisering baserad på sammanhangsbaserade data från resan
 
 Målet med det här exemplet är att skicka en händelse till [!DNL Journey Optimizer] varje gång en kundorder uppdateras. Därefter skickas ett push-meddelande till kunden med information om beställningen och ett personligt erbjudande.
