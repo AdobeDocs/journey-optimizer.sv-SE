@@ -7,9 +7,9 @@ feature: Journey Optimizer
 role: Business Practitioner
 level: Beginner
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: d713010e85936f7ce7b6389bc68d4eec2d8bdaae
+source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1027'
 ht-degree: 1%
 
 ---
@@ -74,7 +74,7 @@ Låt oss ta ett exempel i 5 sekunder.
 
 Som standard finns det ingen begränsning. Takregler definieras på sandlådenivå för en specifik slutpunkt (den URL som anropas) med API:t för begränsning. Se [det här avsnittet](../configuration/external-systems.md#capping) och [den här sidan](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html).
 
-**Hur många försök utförs? Kan jag ändra antalet återförsök eller definiera en minimal vänteperiod mellan återförsök?**
+**Hur många försök utförs? Kan jag ändra antalet återförsök eller definiera en minsta vänteperiod mellan återförsök?**
 
 För ett visst anrop kan högst tre försök utföras efter det första anropet, tills tidsgränsen för anropet har nåtts. Antalet försök och tiden mellan varje nytt försök kan inte ändras. Se [det här avsnittet](../configuration/external-systems.md#timeout).
 
