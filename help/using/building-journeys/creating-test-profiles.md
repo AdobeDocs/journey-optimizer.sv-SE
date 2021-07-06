@@ -5,9 +5,9 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 8dfa7a7700e1bb452ea9cd5e7d0adb6df55de03b
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '1320'
+source-wordcount: '1328'
 ht-degree: 1%
 
 ---
@@ -22,9 +22,9 @@ Tillgängliga metoder för att skapa testprofiler beskrivs nedan:
 
 * Du kan skapa en testprofil genom att överföra en [csv-fil](#create-test-profiles-csv) eller använda [API-anrop](#create-test-profiles-api). Förutom dessa två metoder har Adobe Journey Optimizer ett specifikt [produktexempel](#use-case-1) som underlättar skapandet av testprofiler.
 
-* Du kan också överföra en json-fil i en datauppsättning. Mer information finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html#add-data-to-dataset).
+* Du kan också överföra en json-fil i en datauppsättning. Mer information finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html#add-data-to-dataset){target=&quot;_blank&quot;}.
 
-Observera att det liknar att skapa en testprofil att skapa vanliga profiler i Adobe Experience Platform. Mer information finns i [dokumentationen för kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html).
+Observera att det liknar att skapa en testprofil att skapa vanliga profiler i Adobe Experience Platform. Mer information finns i [Kundprofildokumentationen för realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target=&quot;_blank&quot;}.
 
 ## Förutsättningar {#test-profile-prerequisites}
 
@@ -59,7 +59,7 @@ När du är klar klickar du på  **[!UICONTROL Add field groups]**: listan över
 
 >[!NOTE]
 >
->Mer information om schemaskapande finns i [XDM-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#prerequisites).
+>Mer information om schemaskapande finns i [XDM-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#prerequisites){target=&quot;_blank&quot;}.
 
 Sedan måste du **skapa datauppsättningen** som profilerna ska importeras i. Följ de här stegen:
 
@@ -76,7 +76,7 @@ Sedan måste du **skapa datauppsättningen** som profilerna ska importeras i. F�
 
 >[!NOTE]
 >
-> Mer information om hur du skapar datauppsättningar finns i [dokumentationen för katalogtjänsten](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#getting-started).
+> Mer information om hur du skapar datauppsättningar finns i [dokumentationen för katalogtjänsten](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#getting-started){target=&quot;_blank&quot;}.
 
 ## Exempel på användning i produkten{#use-case-1}
 
@@ -88,7 +88,7 @@ Klicka på knappen **[!UICONTROL Begin]** för att starta användningsfallet.
 
 Följande information krävs:
 
-1. **Identitetsnamnutrymme**: Det  [ID-](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html) namn som används för att unikt identifiera testprofilerna. Om du till exempel använder e-post för att identifiera testprofilerna ska identitetsnamnrymden **E-post** vara markerad. Om den unika identifieraren är telefonnumret ska identitetsnamnutrymmet **Telefon** väljas.
+1. **Identitetsnamnutrymme**: Det  [ID-](../get-started-identity.md) namn som används för att unikt identifiera testprofilerna. Om du till exempel använder e-post för att identifiera testprofilerna ska identitetsnamnrymden **E-post** vara markerad. Om den unika identifieraren är telefonnumret ska identitetsnamnutrymmet **Telefon** väljas.
 
 2. **CSV-fil**: En kommaavgränsad fil som innehåller listan med testprofiler som ska skapas. Användningsfallet förväntar sig ett fördefinierat format för CSV-filen som innehåller listan med testprofiler som ska skapas. Varje rad i filen ska innehålla följande fält i rätt ordning:
 
@@ -171,11 +171,11 @@ I Adobe Experience Platform kan du skapa profiler genom att överföra en CSV-fi
 Testprofilerna läggs till och kan nu användas när du testar en resa. Se [det här avsnittet](../building-journeys/testing-the-journey.md).
 >[!NOTE]
 >
-> Mer information om csv-import finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html#tutorials).
+> Mer information om csv-import finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html#tutorials){target=&quot;_blank&quot;}.
 
 ## Skapa testprofiler med API-anrop{#create-test-profiles-api}
 
-Du kan också skapa testprofiler via API-anrop. Läs mer på den här [sidan](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html).
+Du kan också skapa testprofiler via API-anrop. Läs mer i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target=&quot;_blank&quot;}.
 
 Du måste använda ett profilschema som innehåller fältgruppen &quot;Profiltestinformation&quot;. Flaggan testProfile ingår i den här fältgruppen.
 När du skapar en profil måste du skicka värdet: testProfile = true.
