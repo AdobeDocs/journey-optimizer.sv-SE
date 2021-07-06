@@ -5,16 +5,16 @@ feature: Applikationsinställningar
 topic: Push
 role: Administrator
 level: Intermediate
-source-git-commit: 9872df0ac91fff249a7b41ecd99b7c25c25463a9
+source-git-commit: e51be6bf18f2e3dfec11e80d34bf63a8ce8b1012
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1432'
 ht-degree: 3%
 
 ---
 
-# Konfigurera push-meddelandekanal {#push-notification-configuration}
+# Konfigurera kanal för push-meddelanden {#push-notification-configuration}
 
-[!DNL Journey Optimizer] kan ni skapa resor och skicka meddelanden till riktade målgrupper. Innan du börjar skicka push-meddelanden med [!DNL Journey Optimizer] måste du se till att det finns konfigurationer och integreringar på mobilappen samt i [!DNL Adobe Experience Platform] och [!DNL Adobe Experience Platform Launch]. Om du vill veta mer om dataflödet för push-meddelanden i Adobe Journey-optimering kan du läsa [den här sidan](push-gs.md).
+[!DNL Journey Optimizer] kan ni skapa resor och skicka meddelanden till riktade målgrupper. Innan du börjar skicka push-meddelanden med [!DNL Journey Optimizer] måste du se till att det finns konfigurationer och integreringar på mobilappen samt i [!DNL Adobe Experience Platform] och [!DNL Adobe Experience Platform Launch]. Mer information om flödet av push-meddelanden i [!DNL Adobe Journey Optimizer] finns på [den här sidan](push-gs.md).
 
 ## Före start
 
@@ -54,7 +54,7 @@ Följ stegen nedan för att tilldela **Egenskap** och **Företag** rättigheter:
 
 1. Välj en befintlig **[!UICONTROL Product Profile]** eller skapa en ny med knappen **[!UICONTROL New profile]**. Lär dig hur du skapar en ny **[!UICONTROL New profile]** i [Admin Console-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html#ui).
 
-1. Välj **[!UICONTROL Property rights]** på fliken **[!UICONTROL Permissions]**.
+1. På fliken **[!UICONTROL Permissions]** väljer du **[!UICONTROL Property rights]**.
 
    ![](assets/push_product_2.png)
 
@@ -118,7 +118,7 @@ Adobe Experience Platform Mobile SDK innehåller API:er för integrering på kli
 När allt är klart bör du också ha skapat och konfigurerat en mobil egenskap i Adobe Experience Platform Launch. Du skapar vanligtvis en mobil egenskap för varje mobilprogram som du vill hantera. Lär dig hur du skapar och konfigurerar en mobil egenskap i [Adobe Experience Platform Launch-dokumentation](https://aep-sdks.gitbook.io/docs/getting-started/create-a-mobile-property).
 
 
-## Steg 1: Lägg till dina push-autentiseringsuppgifter för appar i Adobe Experience Platform Launch {#push-credentials-launch}
+## Steg 1: Lägg till push-autentiseringsuppgifter för appar i Adobe Experience Platform Launch {#push-credentials-launch}
 
 När du har gett rätt användarbehörigheter måste du nu lägga till dina push-autentiseringsuppgifter för mobilprogrammet i [!DNL Adobe Experience Platform Launch].
 
