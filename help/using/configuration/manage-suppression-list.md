@@ -15,7 +15,7 @@ feature: Applikationsinställningar
 topic: Administrering
 role: Administrator
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 ---
 
 
-# Hantera undertryckningslistan {#manage-suppression-list}
+# Hantera listan över inaktiveringar {#manage-suppression-list}
 
 Med [!DNL Journey Optimizer] kan du övervaka alla e-postadresser som automatiskt utesluts från att skickas under en resa, till exempel:
 
@@ -34,7 +34,7 @@ Med [!DNL Journey Optimizer] kan du övervaka alla e-postadresser som automatisk
 
 Sådana e-postadresser samlas automatiskt in i Journey Optimizer **listan**. Läs mer i [det här avsnittet](../suppression-list.md).
 
-## Åtkomst till listan {#access-suppression-list}
+## Åtkomst till listan över inaktiveringar {#access-suppression-list}
 
 Öppna menyn **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL General]** och klicka sedan på länken **[!UICONTROL View suppression lists]** om du vill få tillgång till en detaljerad lista över utelämnade e-postadresser.
 
@@ -77,7 +77,7 @@ Möjliga orsaker till leveransfel är:
 
 | Orsak | Beskrivning | Undertryckningskategori |
 ---------|----------|--------- |
-| **[!UICONTROL Undetermined]** | Det gick inte att identifiera den studsorsak som togs emot från mottagarens MTA-agent (Message Transfer Agent). | Ignorerad |
+| **[!UICONTROL Undetermined]** | Det gick inte att identifiera den studsorsak som togs emot från den mottagande domänens MTA-agent (Message Transfer Agent). | Ignorerad |
 | **[!UICONTROL Invalid Recipient]** | Mottagaren är ogiltig eller finns inte. | Hård |
 | **[!UICONTROL Soft Bounce]** | Meddelandet studsade på ett annat sätt än de mjuka fel som anges i den här tabellen, till exempel när det skickas över den tillåtna hastighet som rekommenderas av en Internet-leverantör. | Mjuk |
 | **[!UICONTROL DNS Failure]** | Meddelandet studsade på grund av ett DNS-fel. | Mjuk |
