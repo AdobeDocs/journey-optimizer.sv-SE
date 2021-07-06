@@ -5,9 +5,9 @@ feature: Personalisering
 topic: Personalisering
 role: Data Engineer
 level: Intermediate
-source-git-commit: d5060fcd70a02a24af579d5fa86c5225d417fdc4
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1016'
 ht-degree: 2%
 
 ---
@@ -84,7 +84,7 @@ Följ de här stegen:
 
       ![](../assets/personalization-uc-helpers-5.png)
 
-      Läs mer om datatypen [personnamn](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/person-name.html).
+      Läs mer om personnamnsdatatypen [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/person-name.html){target=&quot;_blank&quot;}.
 
 6. Klicka på **[!UICONTROL Validate]** och sedan på **[!UICONTROL Save]**.
 
@@ -98,7 +98,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 1. Skapa en händelse vars schema innehåller arrayen `productListItems`.
 2. Definiera alla fält från den här arrayen som nyttolastfält för den här händelsen.
 
-   Läs mer om datatypen [för produktlisteobjektet](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html).
+   Läs mer om datatypen för produktlisteobjektet i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html){target=&quot;_blank&quot;}.
 
 3. Skapa en resa som börjar med det här evenemanget.
 4. Lägg till meddelandet på resan.
@@ -328,15 +328,15 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 
 ### Handtag, funktioner
 
-[Hjälpmedel](functions/helpers.md)
+* [Hjälpmedel](functions/helpers.md)
 
-[Strängfunktioner](functions/string.md)
+* [Strängfunktioner](functions/string.md)
 
 ### Användningsfall
 
-[Personalisering med profilinformation, kontext och erbjudande](personalization-use-case.md)
+* [Personalisering med profilinformation, kontext och erbjudande](personalization-use-case.md)
 
-[Personalisering med beslutsbaserat erbjudande](../offers/offers-e2e.md)
+* [Personalisering med beslutsbaserat erbjudande](../offers/offers-e2e.md)
 
 ## Videokurs{#helper-functions-video}
 
