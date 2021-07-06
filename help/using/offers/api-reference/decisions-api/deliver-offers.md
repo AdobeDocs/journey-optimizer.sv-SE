@@ -5,7 +5,7 @@ feature: Erbjudanden
 topic: Integreringar
 role: Data Engineer
 level: Experienced
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 0e5cc9101ff382ce9fde442da38eb46aa28e9c77
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Du kan skapa och leverera erbjudanden genom att göra en POST-förfrågan till A
 
 Den här självstudiekursen kräver en fungerande förståelse av API:er, särskilt när det gäller beslutshantering. Mer information finns i [Utvecklarhandboken för API:t för beslutshantering](../getting-started.md). Den här självstudien kräver också att du har ett unikt placerings-ID och värde för besluts-ID tillgängligt. Om du inte har fått dessa värden kan du läsa självstudiekurserna för [att skapa en placering](../offers-api/placements/create.md) och [att skapa ett beslut](../activities-api/activities/create.md).
 
-![](../../../assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#video)
+➡️  [Upptäck den här funktionen i en video](#video)
 
 ## Sidhuvuden för acceptera och innehållstyp
 
