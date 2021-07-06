@@ -5,9 +5,9 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: 0e5cc9101ff382ce9fde442da38eb46aa28e9c77
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '903'
 ht-degree: 1%
 
 ---
@@ -90,7 +90,7 @@ Behörighetsregler och -begränsningar gör att du kan definiera villkoren för 
 
    Du kan begränsa erbjudandets presentation till medlemmarna i ett eller flera Adobe Experience Platform-segment. Aktivera alternativet **[!UICONTROL Visitors who fall into one or multiple segments]** och lägg sedan till ett eller flera segment från den vänstra rutan och kombinera dem med de logiska operatorerna **[!UICONTROL And]** / **[!UICONTROL Or]**.
 
-   Mer information om hur du arbetar med segment finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
+   Mer information om hur du arbetar med segment finns på [den här sidan](../../segment/about-segments.md).
 
    ![](../../assets/offer-eligibility-segment.png)
 
@@ -130,7 +130,7 @@ Den är nu klar att levereras till användarna. Du kan markera den för att visa
 
 ![](../../assets/offer_created.png)
 
-När du har skapat ett erbjudande kan du klicka på dess namn i listan för att få tillgång till detaljerad information, samt övervaka alla ändringar som har gjorts på den via fliken **[!UICONTROL Change log]** (se [Övervaka ändringar i erbjudanden och beslut](../get-started/user-interface.md#monitoring-changes)).
+När du har skapat ett erbjudande kan du klicka på dess namn i listan för att få tillgång till detaljerad information, samt övervaka alla ändringar som har gjorts på det på fliken **[!UICONTROL Change log]**. [Läs mer](../get-started/user-interface.md#monitoring-changes).
 
 ## Videokurs {#video}
 
