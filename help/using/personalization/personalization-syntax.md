@@ -5,10 +5,10 @@ feature: Personalisering
 topic: Personalisering
 role: Data Engineer
 level: Intermediate
-source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 4%
+source-wordcount: '563'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,7 @@ Exempel på enkla uttryck:
 där:
 
 * `profile` är ett namnutrymme.
-* `person.name` är en token som består av attribut. Attributstrukturen definieras i ett Adobe Experience Platform XDM-schema. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv).
+* `person.name` är en token som består av attribut. Attributstrukturen definieras i ett Adobe Experience Platform XDM-schema. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target=&quot;_blank&quot;}.
 
 ## Allmänna syntaxregler
 
@@ -45,7 +45,7 @@ I Handlebars är de värden som returneras av {{expression}} **HTML-escape**. Om
 
 ## Profil
 
-Med det här namnutrymmet kan du referera till alla attribut som definieras i det profilschema som beskrivs i [dokumentationen för Adobe Experience Platform datamodell (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
+Med det här namnutrymmet kan du referera till alla attribut som definieras i profilschemat som beskrivs i [dokumentationen för Adobe Experience Platform datamodell (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target=&quot;_blank&quot;}.
 
 Attributen måste definieras i schemat innan de refereras i ett [!DNL Journey Optimizer]-anpassningsblock.
 
