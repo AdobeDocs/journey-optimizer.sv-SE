@@ -5,9 +5,9 @@ feature: Personalisering
 topic: Personalisering
 role: Data Engineer
 level: Beginner
-source-git-commit: d09eedce833b41037452bb46bc748e7e9f477d0a
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '666'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ Upptäck [!DNL Adobe Journey Optimizer]-personaliseringsfunktioner för att anpa
 
 [!DNL Journey Optimizer] använder en  **** inlineenkel personaliseringssyntax baserad på Handlebars, som gör att du kan skapa uttryck med innehåll omslutet av dubbla klammerparenteser **{{}}**. Du kan lägga till flera uttryck i samma innehåll eller fält utan begränsningar. Läs mer i [Personaliseringssyntax](personalization-syntax.md).
 
-Anpassningen baseras på profildata som hanteras av schemat **XDM Individual Profile** som definieras i Adobe Experience Platform. Mer information finns i [dokumentationen för Adobe Experience Platform datamodell (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv).
+Anpassningen baseras på profildata som hanteras av schemat **XDM Individual Profile** som definieras i Adobe Experience Platform. Läs mer i [dokumentationen för Adobe Experience Platform datamodell (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target=&quot;_blank&quot;}.
 
 >[!CAUTION]
 >Schemat **XDM Individual Profile** är det enda schema som du kan använda för att anpassa innehåll i [!DNL Journey Optimizer].
@@ -89,8 +89,8 @@ I gränssnittet för uttrycksredigeraren väljer, ordnar, anpassar och validerar
 
 I den vänstra delen av skärmen visas en domänväljare där du kan välja källa för personalisering. Tillgängliga källor är:
 
-* **Profil** : visar alla referenser som är associerade med profilschemat som beskrivs i dokumentationen [ för ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)Adobe Experience Platform datamodell (XDM).
-* **Segmentmedlemskap** : listar alla segment som har skapats i Adobe Experience Platform Segmenteringstjänst. Mer information om segmentering finns [här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=en).
+* **Profil** : listar alla referenser som är associerade med profilschemat som beskrivs i dokumentationen [ för ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)Adobe Experience Platform datamodell (XDM) {target=&quot;_blank&quot;}.
+* **Segmentmedlemskap** : listar alla segment som har skapats i Adobe Experience Platform Segmenteringstjänst. Mer information om segmentering finns [här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=en){target=&quot;_blank&quot;}.
 * **Erbjudanden** : visar alla erbjudanden som är kopplade till en viss placering. Välj placering och infoga sedan erbjudandena i innehållet. En fullständig dokumentation om hur du hanterar erbjudanden finns i [det här avsnittet](../deliver-personalized-offers.md).
 * **Kontext** : När  **** Meddelandeaktiviteten används i en resa är sammanhangsberoende resefält tillgängliga på den här menyn. Läs mer i [det här avsnittet](personalization-use-case.md).
 * **Hjälpfunktioner** : visar alla hjälpfunktioner som är tillgängliga för att utföra dataåtgärder, t.ex. beräkningar, dataformatering eller konverteringar, villkor och manipulera dem i personaliseringssammanhang. Läs mer i [det här avsnittet](functions/functions.md).
