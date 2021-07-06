@@ -5,7 +5,7 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: c6f4369c98b28afe1c607996e3f993dbfe09f63e
+source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
 workflow-type: tm+mt
 source-wordcount: '1724'
 ht-degree: 6%
@@ -128,7 +128,7 @@ Begränsningar:
 
 Viktigt:
 
-Om något av kraven inte är fullständigt, är inte sprängningsläget tillgängligt under resan.
+Om något av kraven inte är uppfyllt, är inte sprängningsläget tillgängligt under resan.
 
 Aktivera Burst-läget genom att öppna resan och klicka på pennikonen i det övre högra hörnet för att komma åt resans egenskaper. Aktivera sedan växlingsknappen **Aktivera burst-läge**.
 
