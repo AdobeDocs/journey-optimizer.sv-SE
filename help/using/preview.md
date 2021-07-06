@@ -5,9 +5,9 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: f3421d6fcbf7400b8db344366be596e0bede762b
+source-git-commit: ff36b68efa639870b68997fca86ee1be24e2cc79
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,6 @@ Om du vill identifiera eventuella fel i e-postinnehåll eller personaliseringsin
 >
 >Lär dig hur du skapar testprofiler i [den här sidan](building-journeys/creating-test-profiles.md).
 
-
 Om du vill testa ditt meddelandeinnehåll måste du:
 
 * [välj testprofiler](#select-test-profiles)
@@ -38,6 +37,7 @@ Använd dessutom ditt **Litmus**-konto i [!DNL Journey Optimizer] för att omede
 >
 >När du förhandsgranskar ett meddelande eller skickar korrektur visas endast profilpersonaliseringsdata. Personalisering som bygger på kontextdata, t.ex. händelseinformation, kan bara testas i samband med en resa. Lär dig hur du testar personalisering i [det här användningsexemplet](personalization/personalization-use-case.md).
 
+![](assets/do-not-localize/how-to-video.png) [Lär dig hur du förhandsgranskar, korrekturläser och publicerar e-postmeddelanden i den här videon](#video-preview)
 
 ## Välj testprofiler{#select-test-profiles}
 
@@ -166,3 +166,8 @@ Följ sedan stegen nedan:
 >
 >När du ansluter ditt **Litmus**-konto med [!DNL Journey Optimizer] godkänner du att testmeddelanden skickas till Litmus: När de väl har skickats hanteras dessa e-postmeddelanden inte längre av Adobe. Följaktligen gäller Litmus-principen för datalagring i dessa e-postmeddelanden, inklusive personaliseringsdata som kan inkluderas i dessa testmeddelanden.
 
+## Instruktionsvideo{#video-preview}
+
+Lär dig hur du testar e-poståtergivning i olika inkorgar, hur du förhandsgranskar anpassade e-postmeddelanden mot testprofiler, skickar korrektur och publicerar e-postmeddelanden.
+
+>[!VIDEO](https://video.tv.adobe.com/v/334239?quality=12)
