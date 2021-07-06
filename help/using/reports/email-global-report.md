@@ -5,9 +5,9 @@ feature: Rapportering
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 42e5cdec54339f65cddd79df4deabbf28292d16b
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ E-postmeddelandet **[!UICONTROL Global report]** är uppdelat i olika widgetar s
 
 * **[!UICONTROL Click Rate]**: Procentandel klick i en leverans.
 
-* **[!UICONTROL Spam Complaint Rate]**: Procentandel e-postmeddelanden som har markerats som skräppost av mottagare jämfört med levererade meddelanden. Mer information om klagomål finns på den här [sidan](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html#metrics-for-deliverability).
+* **[!UICONTROL Spam Complaint Rate]**: Procentandel e-postmeddelanden som har markerats som skräppost av mottagare jämfört med levererade meddelanden. Mer information om klagomål finns i [Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html#metrics-for-deliverability){target=&quot;_blank&quot;}.
 
 * **[!UICONTROL Unsubscribe Rate]**: Procent av unika avbeställningar jämfört med antalet levererade meddelanden. Den här indikatorn är inte beroende av antalet klick på länken för att avbryta prenumerationen, utan baseras på antalet prenumerationer som initierats av mottagarna. Läs mer om att avbryta prenumerationer på den här [sidan](../consent.md).
 
