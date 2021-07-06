@@ -5,10 +5,10 @@ feature: Kontrollgrupper
 topic: Administrering
 role: Administrator
 level: Intermediate
-source-git-commit: 2c4a86f7beb10d1ce35e8fb5600a979164038e5f
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 28%
+source-wordcount: '335'
+ht-degree: 27%
 
 ---
 
@@ -20,7 +20,7 @@ Med [!DNL Journey Optimizer] kan du partitionera instansen i separerade virtuell
 Sandlådor tilldelas via produktprofiler i Admin Console. [Lär dig hur du tilldelar sandlådor](permissions.md#create-product-profile).
 
 [!DNL Journey Optimizer] speglar Adobe Experience Platform-sandlådor som har skapats för en viss organisation.
-Sandlådorna i Adobe Experience Platform kan skapas eller återställas från din instans i Adobe Experience Platform. [Läs mer i användarhandboken](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html) för Sandbox.
+Sandlådorna i Adobe Experience Platform kan skapas eller återställas från din instans i Adobe Experience Platform. [Läs mer i användarhandboken](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html) för Sandbox {target=&quot;_blank&quot;}.
 
 Du hittar kontrollen för att välja sandlåda längst upp till vänster på skärmen. Klicka på den för närvarande aktiva sandlådan i väljaren för att växla från en sandlåda till en annan och välj sedan en annan sandlåda på rullgardinsmenyn.
 
@@ -28,7 +28,7 @@ Du hittar kontrollen för att välja sandlåda längst upp till vänster på sk�
 
 >[!IMPORTANT]
 >
-> Hantering av sandlådor kan bara utföras av en **[!UICONTROL Product]**- eller **[!UICONTROL System]**-administratör. Mer information finns i [Admin Console-dokumentationen](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/admin-roles.ug.html).
+> Hantering av sandlådor kan bara utföras av en **[!UICONTROL Product]**- eller **[!UICONTROL System]**-administratör. Mer information finns i [Admin Console-dokumentationen](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/admin-roles.ug.html){target=&quot;_blank&quot;}.
 
 Du kan välja att tilldela olika sandlådor till körklara eller anpassade **[!UICONTROL Product profiles]**.
 
@@ -46,7 +46,7 @@ Så här tilldelar du sandlådor:
 
    ![](../assets/sandbox_2.png)
 
-1. Klicka på plusikonen (+) i **[!UICONTROL Available Permissions Items]** för att tilldela sandlådor till profilen. [Läs mer om sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html).
+1. Klicka på plusikonen (+) i **[!UICONTROL Available Permissions Items]** för att tilldela sandlådor till profilen. [Läs mer om sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html){target=&quot;_blank&quot;}.
 
    ![](../assets/sandbox_3.png)
 
@@ -64,4 +64,4 @@ Om du vill konfigurera innehållets tillgänglighet måste du tilldela en delad 
 
 Observera att om ditt innehåll ska kunna synkroniseras med rätt sandlåda måste du följa samma syntax som sandlådan, t.ex. om din sandlåda kallas för utveckling ska din delade mapp ha samma namn.
 
-[Lär dig hur du hanterar delade mappar](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-adobe-storage.ug.html).
+[Lär dig hur du hanterar delade mappar](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-adobe-storage.ug.html) {target=&quot;_blank&quot;}.
