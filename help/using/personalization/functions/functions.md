@@ -5,7 +5,7 @@ feature: Personalisering
 topic: Personalisering
 role: Data Engineer
 level: Experienced
-source-git-commit: 94f3fb815fdeec9853351be9bc41b0579cfc6c5b
+source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 1%
@@ -75,7 +75,7 @@ I [!DNL Journey Optimizer] Expression Editor är hjälpfunktionerna grupperade i
         <td><a href="aggregation.md#max">Maximal</a></td><td>Den här funktionen returnerar det största av alla markerade värden i en array</td>
     </tr>
     <tr>
-    <td><a href="arrays-list.md#superset">Supermängd till</a></td><td>Den här funktionen avslutas om en viss array (array A) är en överordnad mängd till en annan array (array B), dvs. om den arrayen A innehåller alla element i array B</td>
+    <td><a href="arrays-list.md#superset">Supermängd till</a></td><td>Den här funktionen avgör om en viss array (array A) är en överordnad mängd till en annan array (array B), d.v.s. om den arrayen A innehåller alla element i array B</td>
     </tr>
 </table>
 
