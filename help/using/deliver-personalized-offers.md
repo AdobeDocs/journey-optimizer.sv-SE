@@ -5,9 +5,9 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: f76f9c39b460bc3d70ba3258764d35583cd5fd77
+source-git-commit: fa025278c2e2cf02df22d31532b0d33786996915
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Mer information om hur du skapar och hanterar erbjudanden finns i [det här avsn
 
 Om du vill ha ett **fullständigt exempel** som visar hur du konfigurerar erbjudanden kan du använda dem i ett beslut och använda det här beslutet i ett e-postmeddelande kan du läsa [det här avsnittet](offers/offers-e2e.md#insert-decision-in-email).
 
-![](assets/do-not-localize/how-to-video.png) [Läs om hur du lägger till erbjudanden som personalisering i den här videon](#video-offers)
+![](assets/do-not-localize/how-to-video.png) [Lär dig hur du lägger till erbjudanden som personalisering i den här videon](#video-offers)
 
 ## Infoga ett beslut i ett e-postmeddelande {#insert-offers}
 
