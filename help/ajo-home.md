@@ -5,14 +5,14 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Beginner
-source-git-commit: 3afc6d822836490f5366cb806f25951d585ce63c
+source-git-commit: 8c25f548c59fae48dc627de21495474f14bb2614
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 8%
+source-wordcount: '196'
+ht-degree: 10%
 
 ---
 
-# Adobe Journey Optimizer Documentation {#cjm-documentation}
+# Adobe [!DNL Journey Optimizer]Dokumentation {#cjm-documentation}
 
 ![](using/assets/do-not-localize/banner-cjm.png)
 
@@ -26,7 +26,7 @@ ht-degree: 8%
     <em></em>
     <p>
     <div>
-      <a href="using/get-started.md">Vad är Journey Optimizer?</a>
+      <a href="using/get-started.md">Vad är [!DNL Journey Optimizer]?</a>
     </div>
     <p>Upptäck viktiga funktioner och hur du kommer igång
     <p>
@@ -67,6 +67,9 @@ ht-degree: 8%
     <p>
     <p>
     <div>
+      <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html">Adobe Journey Optimizer produktbeskrivning</a>
+    </div>
+    <div>
       <a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html">Adobe Experience Platform-dokumentation</a>
     </div>
       <div>
@@ -105,13 +108,13 @@ ht-degree: 8%
     <p>
     <p>DATAHANTERING</p>
     <li>
-      <a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html">Scheman</a>
+      <a href="using/get-started-schemas.md">Scheman</a>
     </li>
      <li>
-      <a href="https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html">Datauppsättningar</a>
+      <a href="using/get-started-datasets.md">Datauppsättningar</a>
     </li>
         <li>
-      <a href="https://experienceleague.adobe.com/docs/experience-platform/query/ui/overview.html">Frågor</a>
+      <a href="using/get-started-queries.md">Frågor</a>
     </li>
      <li>
       <a href="https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/monitor-data-ingestion.html">Övervakning</a>
@@ -119,7 +122,7 @@ ht-degree: 8%
     <p>
     <p>ANSLUTNINGAR</p>
     <li>
-      <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/home.html">Källor</a>
+      <a href="using/get-started-sources.md">Källor</a>
     </li>
     <p>
     <p>KUND</p>
@@ -127,10 +130,10 @@ ht-degree: 8%
       <a href="using/segment/about-segments.md">Segment</a>
     </li>
      <li>
-      <a href="https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html">Profiler</a>
+      <a href="using/get-started-profiles.md">Profiler</a>
     </li>
     <li>
-      <a href="https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html#manage-namespaces">Identitet</a>
+      <a href="using/get-started-identity.md">Identitet</a>
     </li>
     <p>
     <p>ADMINISTRATION</p>
