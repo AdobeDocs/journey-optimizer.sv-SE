@@ -4,7 +4,7 @@ description: Lär dig hur du skapar och hanterar profiler i Adobe Journey Optimi
 feature: Profiler
 role: User
 level: Beginner
-source-git-commit: e51be6bf18f2e3dfec11e80d34bf63a8ce8b1012
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 1%
