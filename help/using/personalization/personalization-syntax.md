@@ -5,7 +5,7 @@ feature: Personalisering
 topic: Personalisering
 role: Data Engineer
 level: Intermediate
-source-git-commit: 74662ee07422d507889788a790547c774b65f944
+source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 4%
@@ -116,12 +116,12 @@ Alla referenser valideras mot offertschema med en valideringsmekanism som beskri
    `offers.html.[offers:xcore:offer-placement:126f767d74b0da80].[xcore:offer-activity:125e2c6889798fd9].content`
 
 
-## Hjälpprogram{#helpers-all}
+## Hjälpmedel{#helpers-all}
 
 Handtag-hjälpen är en enkel identifierare som kan följas av parametrar.
 Varje parameter är ett Handlebars-uttryck. Hjälpprogrammen kan nås från alla sammanhang i en mall.
 
-Dessa blockhjälpare identifieras av ett # före hjälpnamnet och kräver en matchande avslutande /, med samma namn.
+Dessa blockhjälpare identifieras med # före hjälpnamnet och en matchande avslutande /, med samma namn krävs.
 Blocken är uttryck som har ett block som öppnas ({{# }}) och avslutas ({{/}}).
 
 
