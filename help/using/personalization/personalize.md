@@ -5,7 +5,7 @@ feature: Personalisering
 topic: Personalisering
 role: Data Engineer
 level: Beginner
-source-git-commit: adb915a2013d1d1bf17ed5efb7ac4eb9c655c501
+source-git-commit: d09eedce833b41037452bb46bc748e7e9f477d0a
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 Upptäck [!DNL Adobe Journey Optimizer]-personaliseringsfunktioner för att anpassa dina meddelanden till varje specifik mottagare genom att utnyttja de data och den information du har om honom/henne. Det kan vara hans förnamn, intressen, var han bor, vad han köpte och mycket annat.
 
-[!DNL :arrow_forward:] [Lär dig hur du anpassar ett meddelande i dessa videofilmer](#video-perso)
+➡️ [Lär dig hur du anpassar ett meddelande i dessa videofilmer](#video-perso)
 
 [!DNL Journey Optimizer] använder en  **** inlineenkel personaliseringssyntax baserad på Handlebars, som gör att du kan skapa uttryck med innehåll omslutet av dubbla klammerparenteser **{{}}**. Du kan lägga till flera uttryck i samma innehåll eller fält utan begränsningar. Läs mer i [Personaliseringssyntax](personalization-syntax.md).
 
