@@ -5,10 +5,10 @@ feature: Händelser
 topic: Administrering
 role: Administrator
 level: Intermediate
-source-git-commit: 6e2526bd3c80ad2bff59502c6537a3e2213f7bf7
+source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
 workflow-type: tm+mt
 source-wordcount: '775'
-ht-degree: 30%
+ht-degree: 48%
 
 ---
 
@@ -27,7 +27,7 @@ Med händelsekonfigurationen kan du definiera vilken information som [!DNL Journ
 
 Du kan konfigurera två typer av händelser:
 
-* **Unitaryevents:**  dessa händelser är kopplade till en person. De rör en persons beteende (t.ex. en person som köpt en produkt, besökt en butik, lämnat en webbplats) eller något som händer relaterat till en person (en person som till exempel har nått 10 000 lojalitetspoäng). Detta är vad [!DNL Journey Optimizer] läser av i resor för att orkestrera bästa åtgärder. Uniära händelser kan vara regelbaserade eller systemgenererade. Mer information om hur du skapar en enhetshändelse finns på den här [sidan](../event/about-creating.md).
+* **Unitaryevents:**  dessa händelser är kopplade till en person. De rör en persons beteende (t.ex. en person som köpt en produkt, besökt en butik, lämnat en webbplats) eller något som händer relaterat till en person (en person som till exempel har nått 10 000 lojalitetspoäng). Detta är vad [!DNL Journey Optimizer] läser av i resor för att orkestrera bästa åtgärder. Enhetshändelser kan vara regelbaserade eller systemgenererade. Mer information om hur du skapar en enhetshändelse finns på den här [sidan](../event/about-creating.md).
 
 * **** Företag: en affärshändelse är en händelse som, i motsats till en enhetshändelse, inte är kopplad till en viss profil. Det kan till exempel vara en nyhetsvarning, en idrottsuppdatering, en flygändring eller inställd flygning, en inventeringsuppdatering, väderhändelser osv. Även om dessa händelser inte är specifika för en profil kan de vara av intresse för ett valfritt antal profiler: enskilda abonnerar på särskilda nyhetsämnen, flygpassagerare, kunder som är intresserade av en produkt som inte finns i lager osv. Affärshändelser är alltid regelbaserade. När du släpper en affärshändelse under en resa läggs automatiskt en **Läs segment**-aktivitet till direkt efter. Mer information om hur du skapar en affärshändelse finns på den här [sidan](../event/about-creating-business.md).
 
@@ -42,13 +42,13 @@ För affärshändelser är händelse-ID-typen alltid regelbaserad.
 
 För unitära händelser finns det två typer av händelse-ID:
 
-* **Regelbaserade** händelser: den här händelsetypen genererar inget eventID. Med den enkla uttrycksredigeraren definierar du helt enkelt en regel som ska användas av systemet för att identifiera de relevanta händelser som utlöser dina resor. Den här regeln kan baseras på alla fält som är tillgängliga i händelsenyttolasten, till exempel profilens plats eller antalet objekt som läggs till i profilens kundvagn.
+* **Regelbaserade** händelser: Den här händelsetypen genererar inget eventID. Med den enkla uttrycksredigeraren definierar du helt enkelt en regel som ska användas av systemet för att identifiera de relevanta händelserna som utlöser dina resor. Den här regeln kan baseras på alla fält som är tillgängliga i händelsenyttolasten, till exempel profilens plats eller antalet objekt som läggs till i profilens kundvagn.
 
    >[!CAUTION]
    >
-   >En begränsningsregel definieras för regelbaserade händelser. Det begränsar antalet kvalificerade händelser som en resa kan behandla till 5 000 per sekund för en viss organisation (ORG). Det motsvarar Journey Optimizer SLA. Se den här [sidan](https://helpx.adobe.com/legal/product-descriptions/journey-orchestration.html).
+   >En begränsningsregel definieras för regelbaserade händelser. Det begränsar antalet kvalificerade händelser som en resa kan behandla till 5 000 per sekund för en viss organisation (ORG). Det motsvarar Journey Optimizer SLA. Läs den här [sidan](https://helpx.adobe.com/se/legal/product-descriptions/journey-orchestration.html).
 
-* **Systemgenererade** undantag: dessa händelser kräver ett eventID. Detta eventID-fält genereras automatiskt när händelsen skapas. Det system som skickar händelsen ska inte generera ett ID, det ska skicka det som finns i nyttolastförhandsvisningen.
+* **Systemgenererade** händelser: Dessa händelser kräver ett eventID. Det här eventID-fältet genereras automatiskt när händelsen skapas. Systemet som skickar händelsen ska inte generera ett ID utan det ska skicka det som finns i nyttolastförhandsvisningen.
 
 Journey Optimizer kräver att händelser direktuppspelas eller grupperas i Adobe Experience Platform. Dessa data behöver inte nödvändigtvis gå till realtidsprofilen. Om du vill använda händelserna för segmentering eller sökning i en separat resa rekommenderar vi att du aktiverar datauppsättningen för profil.
 
