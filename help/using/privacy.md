@@ -4,7 +4,7 @@ description: Lär dig hantera sekretess
 topic: Sekretess
 role: User
 level: Intermediate
-source-git-commit: 9872df0ac91fff249a7b41ecd99b7c25c25463a9
+source-git-commit: 4f80fd89c772ee4097a42fdaf1bff1f02ddbc004
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 46%
@@ -35,7 +35,7 @@ Personliga och känsliga data måste hanteras noggrant. Följ de allmänna princ
 
 * Undvik att skicka oönskade meddelanden (&quot;spam&quot;). Adobe tror starkt på principerna om tillståndsmarknadsföring när det gäller att främja kundens livstidsvärde och lojalitet, och förbjuder därför strikt användning av Journey Optimizer för att skicka oönskade meddelanden.
 
-Journey Optimizer ger dig möjlighet att hantera användarnas rättigheter via olika färdiga eller anpassade produktprofiler. Det här låter dig hantera vilka inom företaget som kan få åtkomst till, ändra eller exportera olika typer av data. Läs mer om hur du hanterar användaråtkomsträttigheter i [Hantera behörigheter](../administration/permissions.md).
+Journey Optimizer ger dig möjlighet att hantera användarnas rättigheter via olika färdiga eller anpassade produktprofiler. Det här låter dig hantera vilka inom företaget som kan få åtkomst till, ändra eller exportera olika typer av data. Läs mer om hur du hanterar användaråtkomsträttigheter i [Hantera behörigheter](administration/permissions.md).
 
 Med Journey Optimizer kan du också spåra skickade meddelanden och mottagarnas beteende genom att öppna och klicka på länkar. [Läs mer om spårningshantering](message-tracking.md).
 
