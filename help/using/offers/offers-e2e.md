@@ -5,14 +5,14 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: a6a421fc23f4564bb24061c019c9418b491e7eee
+source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
 workflow-type: tm+mt
 source-wordcount: '1307'
 ht-degree: 3%
 
 ---
 
-# Användningsfall: Konfigurera anpassade erbjudanden så att de kan användas i ett e-postmeddelande {#configure-add-personalized-offers-email}
+# Användningsfall: Konfigurera personaliserade erbjudanden så att de kan användas i ett e-postmeddelande {#configure-add-personalized-offers-email}
 
 I det här avsnittet presenteras ett exempel från början till slut som visar hur du konfigurerar erbjudanden och använder dem i ett e-postmeddelande baserat på ett beslut som du tidigare har skapat.
 
@@ -131,7 +131,7 @@ Nu kan du skapa och konfigurera dina erbjudanden. I det här exemplet skapar du 
 
    ![](../assets/offers-e2e-representations.png)
 
-1. I **[!UICONTROL Offer eligiblity]**-avsnittet väljer du **[!UICONTROL By defined decision rule]** och drar och släpper önskad regel.
+1. I **[!UICONTROL Offer eligibility]**-avsnittet väljer du **[!UICONTROL By defined decision rule]** och drar och släpper önskad regel.
 
    ![](../assets/offers-e2e-eligibility.png)
 
@@ -204,7 +204,7 @@ Följ stegen nedan för att skapa och konfigurera ett erbjudande:
 
    ![](../assets/offers-e2e-decision-collection.png)
 
-1. Om du definierade en rankning när [du skapade dina komponenter](#define-components) kan du tilldela den till en placering i beslutet. Om flera erbjudanden kan presenteras på den här platsen kommer beslutet att använda denna formel för att beräkna vilket erbjudande som ska levereras först.
+1. Om du definierade en rankning när [du skapade dina komponenter](#define-components) kan du tilldela den till en placering i beslutet. Om flera erbjudanden kan presenteras på den här platsen, kommer beslutet att använda den här formeln för att beräkna vilket erbjudande som ska levereras först.
 
    De detaljerade stegen för att tilldela en rankningsformel till en placering beskrivs i [det här avsnittet](../../using/offers/offer-activities/configure-offer-selection.md#assign-ranking-formula).
 
