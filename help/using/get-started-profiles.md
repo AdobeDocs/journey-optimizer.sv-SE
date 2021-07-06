@@ -4,10 +4,10 @@ description: Lär dig hur du skapar och hanterar profiler i Adobe Journey Optimi
 feature: Profiler
 role: User
 level: Beginner
-source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
+source-git-commit: 8bdefa46ff1ebde2c49ac1d2300797777967c038
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,5 +29,5 @@ Läs mer om **Sammanslagningsprinciper** i denna [dokumentation](https://experie
 
 **Se även**
 
-* [Profildokumentation](https://experienceleague-review.corp.adobe.com/docs/experience-platform/query/home.html) för realtidskassomer {target=&quot;_blank&quot;}
-* [Översiktsvideo](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) för realtidsprofilen Cistomer {target=&quot;_blank&quot;}
+* [Kundprofildokumentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv) i realtid{target=&quot;_blank&quot;}
+* [Översikt över kundprofiler i realtid, video](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target=&quot;_blank&quot;}
