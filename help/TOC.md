@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att leverera sammankopplade, kontextuella och personaliserade upplevelser till kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 3f0fe5079b32103aec6160f22900c14db7b0d304
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '691'
 ht-degree: 42%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 42%
    + [Lägg till personaliserade erbjudanden](using/deliver-personalized-offers.md)
 + Segment, profiler och identitet{#segment}
    + Segment {#segments}
-      + [Om segment](using/segment/about-segments.md)
+      + [Kom igång med segment](using/segment/about-segments.md)
       + [Skapa segment](using/segment/creating-a-segment.md)
    + [Profiler](using/get-started-profiles.md)
    + [Identitet](using/get-started-identity.md)
