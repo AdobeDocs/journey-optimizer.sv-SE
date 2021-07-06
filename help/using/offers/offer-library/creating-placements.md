@@ -5,7 +5,7 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 0e5cc9101ff382ce9fde442da38eb46aa28e9c77
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 5%
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 En placering säkerställer att rätt erbjudandeinnehåll visas på rätt plats i ert meddelande. När du lägger till innehåll i ett erbjudande blir du ombedd att välja en placering där innehållet kan visas.
 
-![](../../assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#video)
+➡️ [Upptäck den här funktionen i en video](#video)
 
 I exemplet nedan finns det tre placeringar som motsvarar olika typer av innehåll (bild, text, HTML).
 
