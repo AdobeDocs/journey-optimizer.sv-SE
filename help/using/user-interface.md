@@ -5,7 +5,7 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b495c96474e41d5b31cb3268434dbe36cfe13ec0
+source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 5%
@@ -98,7 +98,7 @@ Exempel:
 
 * **Skapa testprofiler** för att skapa testprofiler med vår CSV-mall för att testa personaliserade meddelanden och resor. Lär dig hur du implementerar det här användningsexemplet [på den här sidan](building-journeys/creating-test-profiles.md#use-case-1).
 * **Skicka ett födelsedagsmeddelande till kunder** för att automatiskt skicka ett e-postmeddelande och önska dina kunder en viss födelsedag. (kommer snart)
-* **Skicka e-postmeddelanden till nya kunder** för att enkelt skicka upp till två e-postmeddelanden för att välkomna dina nyregistrerade kunder. (kommer snart)
+* **Skicka e-post till nya kunder** för att enkelt skicka upp till två e-postmeddelanden för att välkomna dina nyregistrerade kunder. (kommer snart)
 * **Skicka push-meddelanden till importerade kundlistor** för att snabbt skicka ett push-meddelande till en lista över kunder som importerats från en CSV-fil. (kommer snart)
 
 Klicka på **[!UICONTROL View details]** om du vill veta mer om de olika användningsexemplen.
