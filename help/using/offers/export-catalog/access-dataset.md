@@ -5,10 +5,10 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 9%
+source-wordcount: '99'
+ht-degree: 11%
 
 ---
 
@@ -26,4 +26,4 @@ Med knappen **[!UICONTROL Preview dataset]** kan du visa den senaste lyckade gru
 
 ![](../../assets/dataset-preview.png)
 
-Mer information om hur du bläddrar bland och använder datauppsättningar finns i [dokumentationen för Adobe Experience Platform-datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en#getting-started).
+Mer information om hur du bläddrar bland och använder datauppsättningar finns på [den här sidan](../../get-started-datasets.md).
