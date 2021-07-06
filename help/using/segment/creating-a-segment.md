@@ -5,9 +5,9 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 6639630c4049e36904ce722759320f276799d8f3
+source-git-commit: 9e93a97ff793fec9fdf4aecd645f1df95b65b31a
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '300'
 ht-degree: 6%
 
 ---
@@ -53,3 +53,7 @@ I det här exemplet ska vi skapa ett segment som riktar sig till alla kunder som
 1. När segmentet är klart klickar du på **[!UICONTROL Save]**. Den visas i listan över Adobe Experience Platform-segment. Observera att det finns ett sökfält som du kan använda för att söka efter ett visst segment i listan.
 
 Segmentet kan nu användas på dina resor. Mer information om detta finns i [det här avsnittet](../segment/about-segments.md).
+
+## Videokurs{#create-segment-video}
+
+>[!VIDEO](https://video.tv.adobe.com/v/334281?quality=12)
