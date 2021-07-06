@@ -5,7 +5,7 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 2e85e966dcff87717ce4a5f426f9e66526dab7c4
+source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
 workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 4%
@@ -88,7 +88,7 @@ När testet är klart kan du med **[!UICONTROL Show logs]**-knappen se testresul
 
    ![](../assets/read-segment-log.png)
 
-När testerna är slutförda kan du publicera din resa (se [Publicera resan](publishing-the-journey.md)). Individer som tillhör segmentet kommer att gå in i resan det datum/den tidpunkt som anges i avsnittet **[!UICONTROL Scheduler]** för färdens egenskaper.
+När testen har slutförts kan du publicera din resa (se [Publicera resan](publishing-the-journey.md)). Individer som tillhör segmentet kommer att gå in i resan det datum/den tidpunkt som anges i avsnittet **[!UICONTROL Scheduler]** för färdens egenskaper.
 
 >[!NOTE]
 >
