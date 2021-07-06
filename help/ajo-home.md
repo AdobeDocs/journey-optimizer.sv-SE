@@ -5,14 +5,14 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Beginner
-source-git-commit: 8c25f548c59fae48dc627de21495474f14bb2614
+source-git-commit: 23120835969006b3c8004b8cd89c4a9ab976760a
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 10%
 
 ---
 
-# Adobe [!DNL Journey Optimizer]Dokumentation {#cjm-documentation}
+# Adobe [!DNL Journey Optimizer]-dokumentation {#cjm-documentation}
 
 ![](using/assets/do-not-localize/banner-cjm.png)
 
@@ -67,16 +67,24 @@ ht-degree: 10%
     <p>
     <p>
     <div>
+    <li>
       <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html">Adobe Journey Optimizer produktbeskrivning</a>
+    </li>
     </div>
     <div>
+    <li>
       <a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html">Adobe Experience Platform-dokumentation</a>
+    </li>
     </div>
       <div>
+      <li>
       <a href="https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html">Adobe Experience Platform - översikt</a>
+    </li>
     </div>
       <div>
+      <li>
       <a href="https://www.adobe.com/se/experience-platform/documentation-and-developer-resources.html">Resurser för Adobe Experience Platform-utvecklare</a>
+    </li>
     </div>
   </td>
    <td>
