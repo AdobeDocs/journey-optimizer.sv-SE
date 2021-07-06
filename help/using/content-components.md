@@ -5,14 +5,14 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 780f51295459ac7a400e0060c817b49a1f632bff
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '980'
 ht-degree: 1%
 
 ---
 
-# Använd e-postdesignerns innehållskomponenter {#content-components}
+# Använda e-postdesignerns innehållskomponenter {#content-components}
 
 >[!CONTEXTUALHELP]
 >id="ac_content_components"
@@ -115,7 +115,7 @@ Använd komponenten **[!UICONTROL Image]** för att infoga en bildfil från dato
 
 1. Klicka på **[!UICONTROL Browse]** för att välja en bildfil från dina resurser.
 
-   Mer information om [!DNL Assets Essentials] finns i [Adobe Experience Manager Assets Essentials-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html).
+   Mer information om [!DNL Assets Essentials] finns i [Adobe Experience Manager Assets Essentials-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target=&quot;_blank&quot;}.
 
 1. Klicka på den nyligen tillagda komponenten för att börja konfigurera **[!UICONTROL Content Components]** och få åtkomst till **[!UICONTROL Components Settings]** i den högra rutan i e-postdesignern.
 
