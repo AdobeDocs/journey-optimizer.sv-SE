@@ -5,7 +5,7 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 0e5cc9101ff382ce9fde442da38eb46aa28e9c77
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 Den här utvecklarhandboken innehåller steg som hjälper dig att börja använda API:t [!DNL Offer Library]. Handboken innehåller sedan exempel på API-anrop för att utföra nyckelåtgärder med hjälp av beslutsmotorn.
 
-![](../../assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#video)
+➡️ [Upptäck den här funktionen i en video](#video)
 
 ## Förutsättningar
 
