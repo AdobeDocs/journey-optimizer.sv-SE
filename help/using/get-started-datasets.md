@@ -4,7 +4,7 @@ description: Lär dig hur du använder Adobe Experience Platform-datauppsättnin
 feature: Datauppsättningar
 role: User
 level: Beginner
-source-git-commit: 8c25f548c59fae48dc627de21495474f14bb2614
+source-git-commit: 8bdefa46ff1ebde2c49ac1d2300797777967c038
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Alla data som importeras till Adobe Experience Platform lagras i Data Lake som datauppsättningar. En datauppsättning är en lagrings- och hanteringskonstruktion för en datamängd, vanligtvis en tabell, som innehåller ett schema (kolumner) och fält (rader).
 
-Lär dig hur du skapar datauppsättningar i [den här dokumentationen](https://experienceleague-review.corp.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target=&quot;_blank&quot;}.
+Lär dig hur du skapar datauppsättningar i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target=&quot;_blank&quot;}.
 
 Att lägga till data i Adobe Experience Platform är grunden för att skapa en profil. Du kan sedan använda profiler i [!DNL Adobe Journey Optimizer]. Börja med att definiera scheman, använd ETL-verktyg för att förbereda och standardisera data och skapa sedan datauppsättningar baserade på dina scheman.
 
