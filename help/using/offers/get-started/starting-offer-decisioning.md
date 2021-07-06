@@ -5,7 +5,7 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Beginner
-source-git-commit: ae821a04270587902ca5d7967ba3f5cd87128555
+source-git-commit: 0e5cc9101ff382ce9fde442da38eb46aa28e9c77
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 50%
@@ -30,7 +30,7 @@ Några fördelar:
 * Förbättrade arbetsflöden: I stället för att skapa flera leveranser eller kampanjer kan marknadsföringsteamen förbättra arbetsflödena genom att skapa en enda leverans och variera erbjudandena i olika delar av mallen.
 * Styr hur många gånger ett erbjudande visas för olika kampanjer och kunder.
 
-![](../../assets/do-not-localize/how-to-video.png) [Titta på de här självstudiekurserna ](#tutorial-videos) för mer information om beslutshantering.
+➡️ [Titta på de här självstudiekurserna](#tutorial-videos) för mer information om Beslutshantering.
 
 ## Om erbjudanden och beslut {#offers-offer-activities}
 
