@@ -5,7 +5,7 @@ feature: Rapportering
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 233b97784843adb26cb37a612feeaf2a8e396f27
+source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 7%
@@ -18,7 +18,7 @@ Förutom [realtidsrapporter](live-report.md) och inbyggda [funktioner för globa
 
 >[!NOTE]
 >
->Den här funktionen aktiveras som standard för alla instanser för steg i kundresan. Vid portoplanssteg aktiveras aktiveringen på begäran. Scheman och datauppsättningarna som skapades under etableringen för den här funktionen får inte ändras.
+>Den här funktionen aktiveras som standard för alla instanser för steg i kundresan. För steg i kundprofiler aktiveras aktiveringen på begäran. Scheman och datauppsättningarna som skapades under etableringen för den här funktionen får inte ändras.
 
 Du har till exempel konfigurerat en resa som skickar flera e-postmeddelanden. Med den här funktionen kan du kombinera [!DNL Journey Optimizer]-data med händelsedata längre fram i kedjan, som hur många konverteringar som har gjorts, hur mycket engagemang som har gjorts på webbplatsen eller hur många transaktioner som har gjorts i butiken. Reseinformationen kan kombineras med data om Adobe Experience Platform, antingen från andra digitala resurser eller från offlineanläggningar, för att ge en mer heltäckande bild av resultatet.
 
@@ -52,10 +52,10 @@ Följande datauppsättningar har skickats:
 
 Listorna med XDM-fält som skickas till Adobe Experience Platform finns här:
 
-* [journeySteps, händelser, vanliga fält](../reports/sharing-common-fields.md)
-* [journeyStep, händelser, körningsfält för åtgärder](../reports/sharing-execution-fields.md)
-* [journeyStep, händelser, datafält för hämtning](../reports/sharing-fetch-fields.md)
-* [journeyStep, händelser, identitetsfält](../reports/sharing-identity-fields.md)
-* [Resefält](../reports/sharing-journey-fields.md)
+* [vanliga fält för händelsen journeySteps](../reports/sharing-common-fields.md)
+* [fält för händelseexekvering för händelsen journeyStep](../reports/sharing-execution-fields.md)
+* [datafält för hämtning för händelsen journeyStep](../reports/sharing-fetch-fields.md)
+* [identitetsfält för händelsen journeyStep](../reports/sharing-identity-fields.md)
+* [resefält](../reports/sharing-journey-fields.md)
 
 Titta på den här [självstudievideon](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/reporting-step-events-to-adobe-experience-platform.html) om du vill ha mer information om steghändelser som rapporteras till Adobe Experience Platform.
