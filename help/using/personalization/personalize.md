@@ -5,7 +5,7 @@ feature: Personalisering
 topic: Personalisering
 role: Data Engineer
 level: Beginner
-source-git-commit: 6fc882827c2ba98af539abf90347483301d48edc
+source-git-commit: adb915a2013d1d1bf17ed5efb7ac4eb9c655c501
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 2%
@@ -90,10 +90,10 @@ I gränssnittet för uttrycksredigeraren väljer, ordnar, anpassar och validerar
 I den vänstra delen av skärmen visas en domänväljare där du kan välja källa för personalisering. Tillgängliga källor är:
 
 * **Profil** : visar alla referenser som är associerade med profilschemat som beskrivs i dokumentationen [ för ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)Adobe Experience Platform datamodell (XDM).
-* **Segmentmedlemskap** : listar alla segment som har skapats i Adobe Experience Platform Segmenteringstjänst. Mer information om segmentering finns [här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=en)
-* **Erbjudanden** : visar alla erbjudanden som är kopplade till en viss placering. Välj placering och infoga sedan erbjudandena i innehållet. En fullständig dokumentation om hur du hanterar erbjudanden finns i [det här avsnittet](../deliver-personalized-offers.md)
-* **Kontext** : När  **** Meddelandeaktiviteten används i en resa är sammanhangsberoende resefält tillgängliga på den här menyn. Läs mer i [det här avsnittet](personalization-use-case.md)
-* **Hjälpfunktioner** : visar alla hjälpfunktioner som är tillgängliga för att utföra dataåtgärder, t.ex. beräkningar, dataformatering eller konverteringar, villkor och manipulera dem i personaliseringssammanhang. Läs mer i [det här avsnittet](functions/functions.md)
+* **Segmentmedlemskap** : listar alla segment som har skapats i Adobe Experience Platform Segmenteringstjänst. Mer information om segmentering finns [här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=en).
+* **Erbjudanden** : visar alla erbjudanden som är kopplade till en viss placering. Välj placering och infoga sedan erbjudandena i innehållet. En fullständig dokumentation om hur du hanterar erbjudanden finns i [det här avsnittet](../deliver-personalized-offers.md).
+* **Kontext** : När  **** Meddelandeaktiviteten används i en resa är sammanhangsberoende resefält tillgängliga på den här menyn. Läs mer i [det här avsnittet](personalization-use-case.md).
+* **Hjälpfunktioner** : visar alla hjälpfunktioner som är tillgängliga för att utföra dataåtgärder, t.ex. beräkningar, dataformatering eller konverteringar, villkor och manipulera dem i personaliseringssammanhang. Läs mer i [det här avsnittet](functions/functions.md).
 
 Vid markering läggs referensen till i redigeraren.
 
