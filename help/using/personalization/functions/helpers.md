@@ -5,7 +5,7 @@ feature: Personalisering
 topic: Personalisering
 role: Data Engineer
 level: Experienced
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+source-git-commit: adb915a2013d1d1bf17ed5efb7ac4eb9c655c501
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 ---
 
 
-# Hjälpprogram {#gs-helpers}
+# Hjälpmedel {#gs-helpers}
 
 ## Villkor{#if-function}
 
@@ -70,7 +70,7 @@ Programsatsen `elseif` anger ett nytt villkor som ska testas om den första prog
 
 1. **Lägga till en villkorlig länk**
 
-   Följande åtgärd lägger till en länk till www.adobe.com/academia&#39; webbplats för profiler med e-postadresser endast med namnet .edu, till www.adobe.com/org&#39; webbplats för profiler med e-postadresserna .org och standardwebbadressen www.adobe.com/users&#39; för alla andra profiler:
+   Följande åtgärd lägger till en länk till www.adobe.com/academia&#39; webbplats för profiler med e-postadresserna .edu, till www.adobe.com/org&#39; webbplats för profiler med e-postadresserna .org och standardwebbadressen www.adobe.com/users&#39; för alla andra profiler:
 
    ```sql
    {%#if contains(profile.personalEmail.address, ".edu")%}
