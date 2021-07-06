@@ -5,9 +5,9 @@ feature: Händelser
 topic: Administrering
 role: Administrator
 level: Intermediate
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '296'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 Om du vill konfigurera händelser som ska skickas till **[!UICONTROL Streaming Ingestion APIs]** och användas i [!DNL Journey Optimizer] måste du följa dessa steg:
 
-1. Hämta URL:en för inlopp från Adobe Experience Platform API:er. Läs mer i [Översikt över API:er för direktuppspelning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html).
+1. Hämta URL:en för inlopp från Adobe Experience Platform API:er. Läs mer i [Översikt över API:er för direktuppspelning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html){target=&quot;_blank&quot;}.
 1. Kopiera nyttolasten från nyttolastförhandsvisningen på menyn **[!UICONTROL Event]**. Läs mer i [den här sidan](../event/about-creating.md#define-the-payload-fields).
 
 Sedan måste du konfigurera det datasystem som överför händelser till API:er för direktuppspelning av inmatning med den nyttolast som du kopierade:
@@ -84,6 +84,6 @@ Här är ett exempel på en API-händelse för direktuppspelning:
 }
 ```
 
-För att underlätta identifieringen av den plats där delen &quot;data&quot; ska klistras in kan du använda ett JSON-visualiseringsverktyg som [https://jsonformatter.curiousconcept.com](https://jsonformatter.curiousconcept.com)
+För att underlätta identifieringen av den plats där delen &quot;data&quot; ska klistras in kan du använda ett JSON-visualiseringsverktyg som [JSON-formatter](https://jsonformatter.curiousconcept.com){target=&quot;_blank&quot;}.
 
-Information om hur du felsöker API:er för direktuppspelning finns på den här [sidan](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html).
+Information om hur du felsöker API:er för direktuppspelning finns i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target=&quot;_blank&quot;}.
