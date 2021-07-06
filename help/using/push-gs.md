@@ -5,9 +5,9 @@ feature: Applikationsinställningar
 topic: Push
 role: Administrator
 level: Intermediate
-source-git-commit: 9872df0ac91fff249a7b41ecd99b7c25c25463a9
+source-git-commit: e51be6bf18f2e3dfec11e80d34bf63a8ce8b1012
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '793'
 ht-degree: 0%
 
 ---
@@ -20,16 +20,16 @@ Den här sidan hjälper dig att konfigurera och förstå viktiga tjänster och a
 
 Steg för att konfigurera push-kanal i [!DNL Adobe Journey Optimizer] beskrivs i [den här sidan](push-configuration.md).
 
-## Push-meddelanden och Adobe Journey Optimizer
+## Push-meddelanden och [!DNL Adobe Journey Optimizer]
 
 Följande bild visar vilka system och tjänster som är kopplade till tillhörande dataflöden och visar hur push-meddelanden levereras från en helhetslösning.
 
 ![](assets/push-flow.png)
 
 1. Registrering av din varumärkesanpassade mobilapp (Android eller iOS) med Apples APN:er och Google FCM push-meddelandetjänster
-1. Meddelandetjänster genererar en push-token, vilket är en identifierare som Adobe Journey Optimizer använder för att ange den specifika enheten som mål med ett push-meddelande.
+1. Meddelandetjänster genererar en push-token, vilket är en identifierare som [!DNL Adobe Journey Optimizer] använder för att ange den specifika enheten som mål med ett push-meddelande.
 1. Den tidigare genererade push-token skickas till Adobe Experience Platform och synkroniseras med kundprofilen i realtid. detta görs med OOTB med ett enkelt sätt att integrera klient-SDK
-1. Push-meddelanden skapas i Adobe Journey Optimizer, push-meddelanden skapas mot en meddelandeförinställning
+1. Push-meddelanden skapas i [!DNL Adobe Journey Optimizer], push-meddelanden skapas mot en meddelandeförinställning
 1. Push-meddelanden kan finnas på arbetsytan under orkestration i Journeys
 1. Vid en Journey-publikation är kundprofiler baserade på resevillkor kvalificerade att ta emot push-meddelanden, push-meddelandenyttolaster personaliseras i det här steget
 1. Personaliserade push-nyttolaster vidarebefordras till en intern push-meddelandeleveranstjänst
@@ -47,7 +47,7 @@ Följande bild visar vilka system och tjänster som är kopplade till tillhöran
    * [Firebase Cloud Messaging (FCM)](https://firebase.google.com/docs/cloud-messaging)  - skicka meddelanden till Android-mobilappen
    * [Apple Push Notification Service (APN:er)](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html)  - skicka meddelanden till iOS-mobilapp
 
-* **Adobe Experience Platform Mobile** SDKsom tillhandahåller API:er för integrering på klientsidan för mobiler via Android- och iOS-kompatibla SDK:er. SDK innehåller ett Adobe Journey Optimizer-tillägg som visar en mängd olika API:er som är specifika för push-meddelanden och möjliggör dataflöden, som att registrera push-token eller skicka push-spårningshändelser eller andra anpassade upplevelsehändelser till Adobe Experience Platform. SDK innehåller också en mängd andra tillägg som möjliggör både andra Adobe Experience Cloud-funktioner och tredjepartspartners.
+* **Adobe Experience Platform Mobile** SDKsom tillhandahåller API:er för integrering på klientsidan för mobiler via Android- och iOS-kompatibla SDK:er. SDK har ett [!DNL Adobe Journey Optimizer]-tillägg som visar en mängd olika API:er som är specifika för push-meddelanden och möjliggör dataflöden, som att registrera push-token eller skicka push-spårningshändelser eller andra anpassade upplevelsehändelser till Adobe Experience Platform. SDK innehåller också en mängd andra tillägg som möjliggör både andra Adobe Experience Cloud-funktioner och tredjepartspartners.
 
    SDK-integrering kräver även konfigurering av Adobe Experience Platform [datainsamling](https://experienceleague.adobe.com/docs/launch/using/home.html)-tjänster som:
 
@@ -57,7 +57,7 @@ Följande bild visar vilka system och tjänster som är kopplade till tillhöran
 
 * **Adobe Experience Platform kundprofiler i realtid**  ger en helhetsbild av varje enskild kund genom att kombinera data från flera kanaler, inklusive webben, mobiler, CRM och tredje part. Med hjälp av profilen kan ni sammanställa kunddata i en enhetlig vy som ger ett användbart, tidsstämplat konto för varje kundinteraktion. Push-token för en viss programanvändare lagras mot användarens profil som postdata medan de interaktioner som användaren gör med push-meddelanden spåras som händelsedata för tidsserier. [Läs mer om Adobe Experience Platform kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
 
-* **[!DNL Adobe Journey Optimizer]** : När era mobilappsintegreringar med ovan nämnda komponenter är på plats och era kundprofiler i Adobe Experience Platform kan ni skapa och samordna push-meddelanden i Adobe Journey Optimizer för att interagera med era användare.
+* **[!DNL Adobe Journey Optimizer]** : När era mobilappsintegreringar med ovan nämnda komponenter är på plats och era kundprofiler i Adobe Experience Platform kan ni skapa och samordna push-meddelanden i  [!DNL Adobe Journey Optimizer] för att interagera med era användare.
 
 ## Teknisk konfigurering och arbetsflöden för övrig personal
 
