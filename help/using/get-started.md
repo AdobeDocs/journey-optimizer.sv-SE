@@ -5,9 +5,9 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Beginner
-source-git-commit: 6783aaec0d050074624b9aa8219252ebf7618088
+source-git-commit: 8c25f548c59fae48dc627de21495474f14bb2614
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '688'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,9 @@ ht-degree: 1%
 [!DNL Adobe Journey Optimizer] hjälper företag att leverera sammankopplade, kontextuella och personaliserade upplevelser till sina kunder. Kundresan är hela processen för en kunds interaktioner med varumärket, från det första kontaktytan tills kunden går ur. Det börjar med informationsfasen, där kunderna lär sig om varumärket och börjar engagera. Kunden kommer sedan att interagera ytterligare med varumärket, besöka webbplatser online och fysiska webbplatser samt göra inköp, skicka meddelanden eller genomföra granskningar.
 
 [!DNL Adobe Journey Optimizer] bygger på  [!DNL Adobe Experience Platform] och kombinerar en enhetlig kundprofil i realtid, ett API-första öppet ramverk, centraliserad offer decisioning och artificiell intelligens (AI) och maskininlärning (ML) för personalisering och optimering. Med Journey Optimizer kan varumärken på ett intelligent sätt avgöra nästa bästa interaktion med skala, hastighet och flexibilitet under hela kundresan. Med [!DNL Adobe Journey Optimizer] kan företag skapa och leverera både schemalagda marknadsföringskampanjer (till exempel veckokampanjer för en butik) och skräddarsydd individuell kommunikation (till exempel ett push-meddelande för en artikel som en lojalitetsappkund kan ha tittat på som tidigare inte fanns i lager) inom samma program.
+
+➡️ [Upptäck Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/introduction-to-journey-optimizer/introduction.html){target=&quot;_blank&quot;} (video)
+
 
 ## Användningsfall
 
@@ -46,6 +49,13 @@ Viktiga funktioner:
 * **Modern flerkanalssamordning och -körning**  - en enda arbetsyta där man kan harmonisera och optimera kundresan för personligt kundengagemang och marknadsföringsutåtriktad marknadsföring - för att hjälpa varumärken att leverera mer värde under hela kundlivscykeln. Kundresor som utformats i [!DNL Adobe Journey Optimizer] kan vara dynamiska och händelsebaserade för att hjälpa varumärken att reagera på realtidssignaler och koppla samman dessa interaktioner med schemalagda kampanjer så att rätt beslut kan fattas om vilken kommunikation som ska skickas till en kund, när och via vilka kanaler.
 
 * **Intelligent Decisioning &amp; Personalization**  - Varumärken kan tillämpa centraliserad beslutsfattande och införliva artificiell intelligens och maskininlärning för att ta del av prediktiva insikter i hela kundupplevelsen, vilket gör det enklare att automatisera beslut och optimera upplevelsen i stor skala. offera decisioningen driver centraliserade erbjudanden över flera kanaler i stor skala via [!DNL Adobe Journey Optimizer].
+
+## Arkitektur
+
+Förstå den grundläggande arkitekturen för [!DNL Adobe Journey Optimizer], integreringspunkten och relationen mellan [!DNL Journey Optimizer] och andra Adobe-program.
+
+>[!VIDEO](https://video.tv.adobe.com/v/334205?quality=12)
+
 
 >[!NOTE]
 >
