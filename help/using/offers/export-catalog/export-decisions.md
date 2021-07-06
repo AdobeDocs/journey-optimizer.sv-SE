@@ -5,7 +5,7 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
 workflow-type: tm+mt
 source-wordcount: '1552'
 ht-degree: 0%
@@ -84,7 +84,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
    **fält:** optionSelectionType
    **titel:** Profilbegränsningstyp
-   **Beskrivning:** Avgör om några begränsningar är angivna och hur kontrasterna uttrycks. Det kan vara via en filterfråga eller genom ett eller flera segmentmedlemskap.
+   **Beskrivning:** Avgör om några begränsningar är angivna och hur begränsningarna uttrycks. Det kan vara via en filterfråga eller genom ett eller flera segmentmedlemskap.
    **Typ:** sträng
    **Möjliga värden:** &quot;none&quot; (standard), &quot;directList&quot;, &quot;filter&quot;
 
@@ -135,7 +135,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
    **fält:** profileConstraintType
    **titel:** Profilbegränsningstyp
-   **Beskrivning:** Avgör om några begränsningar är angivna och hur kontrasterna uttrycks. Det kan vara via en regel eller genom ett eller flera segmentmedlemskap.
+   **Beskrivning:** Avgör om några begränsningar är angivna och hur begränsningarna uttrycks. Det kan vara via en regel eller genom ett eller flera segmentmedlemskap.
    **Typ:** sträng
    **Möjliga värden:**
    * &quot;none&quot; (standard)
