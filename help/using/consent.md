@@ -5,9 +5,9 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: a1ce789ad78f70bdb2a1387ffb6c60cb40b8b0bb
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '737'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ I bestämmelser som GDPR anges att du måste uppfylla specifika krav innan du ka
 * Om ni inte följer dessa regler medför detta juridiska risker för ert varumärke.
 * Det hjälper er att undvika att skicka oombedda meddelanden till era mottagare, vilket kan få dem att märka era meddelanden som skräppost och skada ert rykte.
 
-Läs mer om hur du hanterar sekretess och tillämpliga regler i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv).
+Läs mer om hur du hanterar sekretess och tillämpliga regler i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv){target=&quot;_blank&quot;}.
 
 <!--* Recipients should be able to opt-in/opt-out from receiving electronic communication through one or more channel
 * Recipients expect the brand to offer preference centre capability that controls how brand should engage with them (example: channel of communication, invasive and non-invasive tracking etc). This helps to fulfil regulatory obligations and also facilitates quality engagement with recipient. 
@@ -31,7 +31,7 @@ Läs mer om hur du hanterar sekretess och tillämpliga regler i [Experience Plat
 
 ## Hantering av avanmälan {#opt-out-management}
 
-Att ge mottagarna möjlighet att avbryta prenumerationen på information från ett varumärke är ett juridiskt krav. Läs mer om gällande lagstiftning i [dokumentationen för Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html?lang=en#regulations).
+Att ge mottagarna möjlighet att avbryta prenumerationen på information från ett varumärke är ett juridiskt krav. Läs mer om gällande lagstiftning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html?lang=en#regulations){target=&quot;_blank&quot;}.
 
 Därför måste du alltid inkludera en **länk för att avbryta prenumerationen** i alla e-postmeddelanden som skickas till mottagarna:
 * När du klickar på den här länken dirigeras mottagarna till en landningssida med en knapp som bekräftar att de avanmäler sig.
@@ -79,7 +79,7 @@ Följ stegen nedan om du vill lägga till en länk för att avbryta prenumeratio
 
    Därför får den här användaren inte information från ert varumärke om han eller hon inte prenumererar igen.
 
-Om du vill kontrollera att den aktuella profilens val har uppdaterats går du till Experience Platform och öppnar profilen genom att markera ett identitetsnamnutrymme och ett motsvarande identitetsvärde. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html?lang=en#getting-started).
+Om du vill kontrollera att den aktuella profilens val har uppdaterats går du till Experience Platform och öppnar profilen genom att markera ett identitetsnamnutrymme och ett motsvarande identitetsvärde. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html?lang=en#getting-started){target=&quot;_blank&quot;}.
 
 ![](assets/opt-out-profile-choice.png)
 
@@ -129,7 +129,7 @@ Begärandetext:
 
 <!--The Consent service /-->[!DNL Journey Optimizer] will <!--decrypt and-->use these parameters to update the corresponding profile's choice. <!--and provide an answer back to the landing page.-->
 
-## Avbeställ länk i rubriken {#unsubscribe-email}
+## Avbeställ länk i rubrik {#unsubscribe-email}
 
 Om mottagarnas e-postklient har stöd för att visa en länk för att avbryta prenumerationen i e-posthuvudet, kommer e-postmeddelanden som skickas med [!DNL Journey Optimizer] automatiskt att innehålla den här länken.
 
@@ -139,7 +139,7 @@ Länken för att avbryta prenumerationen visas så här i Gmail:
 
 Beroende på e-postklienten kan du klicka på länken för att avbryta prenumerationen från rubriken på något av följande sätt:
 
-* Motsvarande profil väljs omedelbart och det här alternativet uppdateras i Experience Platform. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html?lang=en#getting-started).
+* Motsvarande profil väljs omedelbart och det här alternativet uppdateras i Experience Platform. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html?lang=en#getting-started){target=&quot;_blank&quot;}.
 
 * Det har samma effekt som att klicka på länken för att avbryta prenumerationen från e-postinnehållet: Mottagaren omdirigeras till en landningssida med en knapp som bekräftar att han eller hon avanmäler sig. Läs mer om hantering av avanmälan i [det här avsnittet](#opt-out-management).
 
