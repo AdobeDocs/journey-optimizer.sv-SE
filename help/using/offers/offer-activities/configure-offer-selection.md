@@ -5,7 +5,7 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 7%
@@ -14,7 +14,7 @@ ht-degree: 7%
 
 # Konfigurera urval av erbjudanden i beslut {#offers-selection-in-activities}
 
-## Om prioritet {#about-offers-priority} för erbjudanden
+## Prioritet för erbjudanden {#about-offers-priority}
 
 När flera erbjudanden är berättigade till en viss placering i ett beslut (tidigare kallat erbjudandeaktivitet) levereras erbjudandena med den högsta **prioriteten** till kunderna först. Prioritetspoäng för erbjudanden tilldelas när du skapar ett erbjudande (se [Skapa ett personaliserat erbjudande](../offer-library/creating-personalized-offers.md)).
 
