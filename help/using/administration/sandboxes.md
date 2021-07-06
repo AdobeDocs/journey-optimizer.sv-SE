@@ -1,22 +1,11 @@
 ---
 title: Hantering av sandlådor
 description: Lär dig hantera sandlådor
-page-status-flag: never-activated
-uuid: null
-contentOwner: null
-products: null
-audience: administrators
-content-type: reference
-topic-tags: null
-discoiquuid: null
-internal: n
-snippet: y
-exl-id: null
 feature: Kontrollgrupper
 topic: Administrering
 role: Administrator
 level: Intermediate
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+source-git-commit: 2c4a86f7beb10d1ce35e8fb5600a979164038e5f
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 28%
@@ -25,7 +14,7 @@ ht-degree: 28%
 
 # Hantering av sandlådor {#sandboxes}
 
-## Använd sandlådor {#using-sandbox}
+## Använda sandlådor {#using-sandbox}
 
 Med [!DNL Journey Optimizer] kan du partitionera instansen i separerade virtuella miljöer som kallas för sandlådor.
 Sandlådor tilldelas via produktprofiler i Admin Console. [Lär dig hur du tilldelar sandlådor](permissions.md#create-product-profile).
