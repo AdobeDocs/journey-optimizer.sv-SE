@@ -6,14 +6,14 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 7eceb7292c127c1b16a564fc19d0fc091808ee35
+source-git-commit: fa025278c2e2cf02df22d31532b0d33786996915
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 4%
 
 ---
 
-# Publicera dina meddelanden {#publish-manage-messages}
+# Publicera meddelanden {#publish-manage-messages}
 
 ## Publicera ett meddelande {#publish-message}
 
@@ -21,7 +21,7 @@ När meddelandet har skapats kan du publicera det så att det blir tillgängligt
 
 >[!CAUTION]
 >
->Kontrollera och åtgärda varningar innan du publicerar. [Läs mer](alerts.md).
+>Kontrollera och åtgärda varningar innan du publicerar. [Läs mer](alerts.md)
 
 ![](assets/publish-message.png)
 
