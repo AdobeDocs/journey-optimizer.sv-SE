@@ -5,9 +5,9 @@ feature: Applikationsinställningar
 topic: Administrering
 role: Administrator
 level: Intermediate
-source-git-commit: 705aa4c238eb1d6d6ce46b68f8690f639124a090
+source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '880'
 ht-degree: 1%
 
 ---
@@ -26,6 +26,8 @@ Med [!DNL Journey Optimizer] kan du konfigurera meddelandeförinställningar som
 
 
 När meddelandeförinställningarna har konfigurerats kan du välja dem när du skapar meddelanden från **[!UICONTROL Presets]**-listan.
+
+![](../assets/do-not-localize/how-to-video.png) [Lär dig hur du skapar och använder e-postförinställningar i den här videon](#video-presets)
 
 ## Skapa en meddelandeförinställning {#create-message-preset}
 
@@ -108,7 +110,7 @@ Så här skapar du en meddelandeförinställning:
    * Verifiering av IP-pool
    * A/PTR-post, t/m/res-underdomänverifiering
 
-1. När kontrollerna är slutförda får meddelandeförinställningen statusen **[!UICONTROL Active]**. Den är klar att användas för att leverera meddelanden.
+1. När kontrollerna har slutförts får meddelandeförinställningen statusen **[!UICONTROL Active]**. Den är klar att användas för att leverera meddelanden.
 
    <!-- later on, users will be notified in Pulse -->
 
@@ -148,3 +150,8 @@ Om du vill redigera en meddelandeförinställning måste du först avaktivera de
    >
    >Det går inte att ta bort förinställningar för inaktiverade meddelanden för att undvika problem i resor som uppstår när du använder dessa förinställningar för att skicka meddelanden.
 
+## Instruktionsvideo{#video-presets}
+
+Lär dig hur du skapar meddelandeförinställningar, hur du använder dem och hur du delegerar en underdomän och skapar en IP-pool.
+
+>[!VIDEO](https://video.tv.adobe.com/v/334343?quality=12)
