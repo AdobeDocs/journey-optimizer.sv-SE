@@ -5,10 +5,10 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: 0e5cc9101ff382ce9fde442da38eb46aa28e9c77
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 4%
+source-wordcount: '244'
+ht-degree: 5%
 
 ---
 
@@ -32,7 +32,7 @@ Så här skapar du en beslutsregel:
 
 1. Ge regeln ett namn och ange en beskrivning och konfigurera sedan regeln efter behov.
 
-   Det gör du genom att **Segment Builder** från Adobe Experience Platform är tillgänglig för att hjälpa dig att skapa regelns villkor. Mer information om hur du använder den finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).
+   Det gör du genom att använda funktionen **Segment Builder** för att skapa regelns villkor. [Läs mer](../../segment/about-segments.md)
 
    I det här exemplet är regeln riktad till kunder som har lojalitetsnivån&quot;Gold&quot;.
 
