@@ -1,20 +1,20 @@
 ---
 title: Spåra meddelanden
-description: Lär dig spåra skickade meddelanden
+description: Lär dig hur du lägger till länkar och spårar skickade meddelanden
 feature: Övervakning
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: e27472cc6186cf7cb25fdb93d15720fc837c58bb
+source-git-commit: f5a6a9b6c786b39b492a177de0b19a54b81729f7
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 2%
+source-wordcount: '536'
+ht-degree: 1%
 
 ---
 
-# Meddelandespårning {#tracking}
+# Lägga till länkar och spåra meddelanden {#tracking}
 
-Använd [!DNL Journey Optimizer] för att spåra skickade meddelanden och mottagarnas beteende.
+Använd [!DNL Journey Optimizer] för att lägga till länkar till ditt innehåll och spåra skickade meddelanden för att övervaka mottagarnas beteende.
 
 ## Aktivera spårning {#enable-tracking}
 
@@ -50,7 +50,7 @@ Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
 
    * **[!UICONTROL Unsubscription link]**: Infoga en länk för att avbeställa beställning av meddelanden från ert varumärke. Läs mer om hantering av avanmälan i [det här avsnittet](consent.md#opt-out-management).
 
-   * **[!UICONTROL Mirror page]**: Infoga en länk för att visa e-postinnehållet i en webbläsare.
+   * **[!UICONTROL Mirror page]**: Infoga en länk för att visa e-postinnehållet i en webbläsare. Läs mer i [det här avsnittet](#mirror-page).
 
    ![](assets/message-tracking-links.png)
 
@@ -64,6 +64,28 @@ Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
    * Du kan välja att stryka under länken eller inte genom att markera motsvarande alternativ.
 
    ![](assets/message-tracking-link-settings.png)
+
+## Länka till en spegelsida {#mirror-page}
+
+Spegelsidan är en HTML-sida som är tillgänglig online via en webbläsare. Innehållet är identiskt med innehållet i ditt e-postmeddelande.
+
+Om du vill lägga till en länk till en spegelsida i ditt e-postmeddelande [infogar du en länk](#insert-links) och väljer **[!UICONTROL Mirror page]** som typ av länk.
+
+![](assets/message-tracking-mirror-page.png)
+
+Spegelsidan skapas automatiskt.
+
+>[!NOTE]
+>
+>Du kan inte redigera den automatiskt genererade länken.
+
+När e-postmeddelandet har skickats visas innehållet i e-postmeddelandet i sin standardwebbläsare när mottagarna klickar på länken för spegelsidan.
+
+>[!NOTE]
+>
+>I det [korrektur](preview.md#send-proofs) som skickas till testprofilerna är länken till spegelsidan inte aktiv. Den aktiveras endast i de slutliga meddelandena.
+
+Kvarhållningsperioden för en spegelsida är 60 dagar. Efter den fördröjningen är spegelsidan inte längre tillgänglig.
 
 ## Hantera spårning {#manage-tracking}
 
