@@ -5,9 +5,9 @@ feature: Övervakning
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -87,6 +87,6 @@ För varje meddelandekörning visas ett antal indikatorer:
 
 * **[!UICONTROL Errors]**: Antal meddelanden som inte kan skickas på grund av ett tekniskt fel.
 
-* **[!UICONTROL Spam complaints]**: Antal meddelanden som har markerats som skräppost av mottagare. [Läs mer om klagomål](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html#metrics-for-deliverability).
+* **[!UICONTROL Spam complaints]**: Antal meddelanden som har markerats som skräppost av mottagare. Läs mer om klagomål i [Handbok om bästa praxis för slutprodukter](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html#metrics-for-deliverability){target=&quot;_blank&quot;}.
 
 Om du klickar på varje hyperlänk öppnas motsvarande meddelandesammanfattningsvy. [Läs mer om meddelanden](create-message.md).
