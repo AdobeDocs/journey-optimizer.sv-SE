@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att leverera sammankopplade, kontextuella och personaliserade upplevelser till kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 3afc6d822836490f5366cb806f25951d585ce63c
+source-git-commit: f5a6a9b6c786b39b492a177de0b19a54b81729f7
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '677'
 ht-degree: 43%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 43%
       + [Designa ditt e-postinnehåll i användargränssnittet](using/create-email-content.md)
       + [Importera eller koda ditt e-postinnehåll](using/existing-content.md)
       + [Använda e-postdesigners innehållskomponenter](using/content-components.md)
+   + [Lägga till länkar och spåra meddelanden](using/message-tracking.md)
    + Validera och publicera {#create-message}
       + [Förhandsgranska och korrektur](using/preview.md)
       + [Kontrollera aviseringar](using/alerts.md)
@@ -41,7 +42,9 @@ ht-degree: 43%
    + [Kom igång med personalisering](using/personalization/personalize.md)
    + [Anpassningssyntax](using/personalization/personalization-syntax.md)
    + [Validering av personalisering](using/personalization/personalization-validation.md)
-   + [Användningsfall: lägg till personalisering i ett push-meddelande](using/personalization/personalization-use-case.md)
+   + Användningsfall{#personalization-use-cases}
+      + [Meddelande om orderstatus](using/personalization/personalization-use-case.md)
+      + [E-post om att kunden överger en kundvagn](using/personalization/personalization-use-case-helper-functions.md)
    + Hjälpfunktioner{#functions}
       + [Lista över hjälpfunktioner](using/personalization/functions/functions.md)
       + [Sammanställningsfunktioner](using/personalization/functions/aggregation.md)
@@ -88,7 +91,6 @@ ht-degree: 43%
       + [Skicka flerkanalsmeddelanden](using/building-journeys/journeys-uc.md)
       + [Skicka ett meddelande med Campaign v7/v8](using/building-journeys/campaign-classic-use-case.md)
 + Spåra och övervaka {#reporting}
-   + [Meddelandespårning](using/message-tracking.md)
    + [Meddelandeövervakning](using/message-monitoring.md)
    + Live-rapport {#live-report}
       + [Åtkomst till Live-rapportkontrollpanelen](using/reports/live-report.md)
