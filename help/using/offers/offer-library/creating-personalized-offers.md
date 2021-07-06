@@ -5,7 +5,7 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: 8ffafb76b15ea7dfabd52c278833fc607f3338a5
+source-git-commit: 0e5cc9101ff382ce9fde442da38eb46aa28e9c77
 workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Innan du skapar ett erbjudande måste du kontrollera att du har skapat:
 * En **beslutsregel** som definierar det villkor som erbjudandet ska presenteras under. Se [Skapa beslutsregler](../offer-library/creating-decision-rules.md).
 * En eller flera **taggar** som du vill associera med erbjudandet. Se [Skapa taggar](../offer-library/creating-tags.md).
 
-![](../../assets/do-not-localize/how-to-video.png) [Upptäck den här funktionen i en video](#video)
+➡️ [Upptäck den här funktionen i en video](#video)
 
 Listan med personaliserade erbjudanden finns på **[!UICONTROL Offers]**-menyn.
 
