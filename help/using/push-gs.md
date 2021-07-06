@@ -5,9 +5,9 @@ feature: Applikationsinställningar
 topic: Push
 role: Administrator
 level: Intermediate
-source-git-commit: e51be6bf18f2e3dfec11e80d34bf63a8ce8b1012
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -49,13 +49,13 @@ Följande bild visar vilka system och tjänster som är kopplade till tillhöran
 
 * **Adobe Experience Platform Mobile** SDKsom tillhandahåller API:er för integrering på klientsidan för mobiler via Android- och iOS-kompatibla SDK:er. SDK har ett [!DNL Adobe Journey Optimizer]-tillägg som visar en mängd olika API:er som är specifika för push-meddelanden och möjliggör dataflöden, som att registrera push-token eller skicka push-spårningshändelser eller andra anpassade upplevelsehändelser till Adobe Experience Platform. SDK innehåller också en mängd andra tillägg som möjliggör både andra Adobe Experience Cloud-funktioner och tredjepartspartners.
 
-   SDK-integrering kräver även konfigurering av Adobe Experience Platform [datainsamling](https://experienceleague.adobe.com/docs/launch/using/home.html)-tjänster som:
+   För SDK-integrering krävs även konfigurering av Adobe Experience Platform [datainsamling](https://experienceleague.adobe.com/docs/launch/using/home.html){target=&quot;_blank&quot;}-tjänster som:
 
    * Skapa ett datastream för att konfigurera de profil- och upplevelsehändelsedatamängder som data flödar mot i Adobe Experience Platform
    * Skapar mobil egenskap på klientsidan och lägger till tillägg. SDK är nära integrerat med dessa tillägg för att ge en smidig datainsamling.
    * Registrerar identifierare och appreferenser för mobilappspaket
 
-* **Adobe Experience Platform kundprofiler i realtid**  ger en helhetsbild av varje enskild kund genom att kombinera data från flera kanaler, inklusive webben, mobiler, CRM och tredje part. Med hjälp av profilen kan ni sammanställa kunddata i en enhetlig vy som ger ett användbart, tidsstämplat konto för varje kundinteraktion. Push-token för en viss programanvändare lagras mot användarens profil som postdata medan de interaktioner som användaren gör med push-meddelanden spåras som händelsedata för tidsserier. [Läs mer om Adobe Experience Platform kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
+* **Adobe Experience Platform kundprofiler i realtid**  ger en helhetsbild av varje enskild kund genom att kombinera data från flera kanaler, inklusive webben, mobiler, CRM och tredje part. Med hjälp av profilen kan ni sammanställa kunddata i en enhetlig vy som ger ett användbart, tidsstämplat konto för varje kundinteraktion. Push-token för en viss programanvändare lagras mot användarens profil som postdata medan de interaktioner som användaren gör med push-meddelanden spåras som händelsedata för tidsserier. [Läs mer om Adobe Experience Platform kundprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) i realtid{target=&quot;_blank&quot;}.
 
 * **[!DNL Adobe Journey Optimizer]** : När era mobilappsintegreringar med ovan nämnda komponenter är på plats och era kundprofiler i Adobe Experience Platform kan ni skapa och samordna push-meddelanden i  [!DNL Adobe Journey Optimizer] för att interagera med era användare.
 
