@@ -5,7 +5,7 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Beginner
-source-git-commit: 4b65425389c64c867919746beede5456a6a08abd
+source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 7%
@@ -57,4 +57,4 @@ Se följande avsnitt för att konfigurera din första resa och skicka meddelande
 
 * **Skapa resor**: skicka meddelanden, utnyttja sammanhangsbaserade data, förfina målgrupper, utforma och köra flerstegsbaserade fallstudier. [Läs mer](building-journeys/journey.md)
 
-* **Övervaka meddelanden och resor**: kontrollera meddelandekörning, kontrollera meddelanden och reserapporter, uppföljningsstatistik. [Läs mer](message-monitoring.md)
+* **Övervaka meddelanden och resor**: kontrollera meddelandekörning, kontrollera meddelande- och reserapporter, uppföljningsstatistik. [Läs mer](message-monitoring.md)
