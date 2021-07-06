@@ -5,9 +5,9 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
 workflow-type: tm+mt
-source-wordcount: '2007'
+source-wordcount: '2005'
 ht-degree: 0%
 
 ---
@@ -125,7 +125,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
       **fält:** id
       **Beskrivning:** En valfri unik identifierare som refererar till resursen i en innehållsdatabas. När plattforms-API:er används för att hämta representationen kan klienten förvänta sig en ytterligare egenskap \&quot;repo:resolveUrl\&quot; för att hämta resursen.
       **Typ:** sträng
-      **Exempel:** &quot;urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e&quot;
+      **Exempel:** &quot;:aaid:urnsc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e&quot;
 
    * **name**
 
@@ -143,7 +143,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
    * **resolveURL**
 
       **fält:** resolveURL
-      **Beskrivning:** En unik resurslokaliserare (tillval) som kan läsa resursen i en innehållsdatabas. Detta gör det enklare att hämta resursen utan att kunden behöver förstå var resursen hanteras och vilka API:er som ska anropas. Detta liknar en HAL-länk, men semantiken är enklare och mer ändamålsenlig.
+      **Beskrivning:** En unik resurslokaliserare (tillval) som kan läsa resursen i en innehållsdatabas. Detta gör det enklare att hämta resursen utan att kunden förstår var resursen hanteras och vilka API:er som ska anropas. Detta liknar en HAL-länk, men semantiken är enklare och mer ändamålsenlig.
       **Typ:** sträng
       **Exempel:** &quot;https://plaftform.adobe.io/resolveByPath?path=&quot;/mycorp/content/projectx/fragment/prod/herobanners/banner14.html3&quot;&quot;
 
@@ -212,9 +212,9 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 **_experience > decisioning > profileConstraints > Profile Constraint Type**
 
-**Field:** profileConstraintType 
+**Fält:** profileConstraintType 
 **Title:** Profile Constraint Type 
-**Description:** Determines if any constraints are current and how the Contrints are expression. Det kan vara via en regel eller genom ett eller flera segmentmedlemskap.
+**Description:** Determines if any constraints are current and how the constraints are expression. Det kan vara via en regel eller genom ett eller flera segmentmedlemskap.
 **Typ:** sträng 
 **Möjliga värden:**
 * &quot;none&quot; (standard)
