@@ -5,18 +5,18 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 9e93a97ff793fec9fdf4aecd645f1df95b65b31a
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
 
-# Om Adobe Experience Platform-segment {#about-segments}
+# Kom igång med segment {#about-segments}
 
-[!DNL Journey Optimizer]  Med kan ni skapa Adobe Experience Platform-segment med kundprofildata i realtid direkt från  **[!UICONTROL Segments]** menyn och utnyttja dem i era resor.
+[!DNL Journey Optimizer] Med kan ni skapa Adobe Experience Platform-segment med kundprofildata i realtid direkt från  **[!UICONTROL Segments]** menyn och utnyttja dem i era resor.
 
-Observera att segment också kan skapas från själva segmenteringstjänsten. Läs mer i [Adobe Experience Platform Segmentation Service-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
+Observera att segment också kan skapas från själva segmenteringstjänsten. Läs mer i [Adobe Experience Platform Segmentation Service-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target=&quot;_blank&quot;}.
 
 Du kan utnyttja segment i resor på olika sätt:
 
