@@ -5,7 +5,7 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 1%
@@ -72,7 +72,7 @@ Observera att du även kan duplicera ett befintligt erbjudande eller beslut för
 
 ## Ändringsloggar för erbjudanden och beslut {#changes-logs}
 
-Med Erbjudandebiblioteket kan du se alla ändringar som har gjorts i ett erbjudande eller ett beslut. Det gör du genom att öppna erbjudandet eller beslutet genom att klicka på dess namn i listan och sedan välja fliken **[!UICONTROL Change log]**.
+Med Erbjudandebiblioteket kan du visualisera alla ändringar som har gjorts i ett erbjudande eller ett beslut. Det gör du genom att öppna erbjudandet eller beslutet genom att klicka på dess namn i listan och sedan välja fliken **[!UICONTROL Change log]**.
 
 Alla ändringar som har gjorts visas på den här skärmen, liksom namnet på användaren som utförde ändringarna.
 
