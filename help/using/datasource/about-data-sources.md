@@ -5,10 +5,10 @@ feature: Datakällor
 topic: Administrering
 role: Administrator
 level: Intermediate
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 86%
+source-wordcount: '283'
+ht-degree: 74%
 
 ---
 
@@ -35,4 +35,4 @@ Det finns två typer av datakällor:
 
 För varje datakälla definierar du den information som ska hämtas med fältgrupper. Fältgrupper är uppsättningar med fält som kan hämtas från en datakälla. Läs [den här sidan](../datasource/configure-data-sources.md#define-field-groups).
 
-Titta på den här [självstudievideon](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/configure-data-sources.html) för att få mer information om hur du konfigurerar en datakälla i Adobe Experience Platform och en extern datakälla samt hur du hittar och använder data i en resa.
+Mer information om hur du konfigurerar en Adobe Experience Platform-datakälla och en extern datakälla samt hur du söker efter och använder data under en resa finns i denna [självstudievideo](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/configure-data-sources.html){target=&quot;_blank&quot;}.
