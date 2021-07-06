@@ -5,9 +5,9 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 8c25f548c59fae48dc627de21495474f14bb2614
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Följ stegen nedan för att visa de olika erbjudanden som ingår i beslutet med 
 
    >[!NOTE]
    >
-   >I det här exemplet använder vi namnutrymmet **Email**. Läs mer om Adobe Experience Platform identitetsnamnutrymmen [i det här avsnittet](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=en#getting-started).
+   >I det här exemplet använder vi namnutrymmet **Email**. Läs mer om Adobe Experience Platform identitetsnamnutrymmen [i det här avsnittet](get-started-identity.md).
 
 1. Välj **[!UICONTROL Email]** i listan med identitetsnamnutrymmen och klicka på **[!UICONTROL Select]**.
 
