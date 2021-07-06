@@ -5,7 +5,7 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Beginner
-source-git-commit: 23120835969006b3c8004b8cd89c4a9ab976760a
+source-git-commit: 6a2304fc3b6262d339b7bf1f229f12ba68f1a993
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 10%
@@ -68,22 +68,22 @@ ht-degree: 10%
     <p>
     <div>
     <li>
-      <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html">Adobe Journey Optimizer produktbeskrivning</a>
+      <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html" target="_blank">Adobe Journey Optimizer produktbeskrivning</a>
     </li>
     </div>
     <div>
     <li>
-      <a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html">Adobe Experience Platform-dokumentation</a>
+      <a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html" target="_blank">Adobe Experience Platform-dokumentation</a>
     </li>
     </div>
       <div>
       <li>
-      <a href="https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html">Adobe Experience Platform - översikt</a>
+      <a href="https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html" target="_blank">Adobe Experience Platform - översikt</a>
     </li>
     </div>
       <div>
       <li>
-      <a href="https://www.adobe.com/se/experience-platform/documentation-and-developer-resources.html">Resurser för Adobe Experience Platform-utvecklare</a>
+      <a href="https://www.adobe.com/se/experience-platform/documentation-and-developer-resources.html" target="_blank">Resurser för Adobe Experience Platform-utvecklare</a>
     </li>
     </div>
   </td>
@@ -125,7 +125,7 @@ ht-degree: 10%
       <a href="using/get-started-queries.md">Frågor</a>
     </li>
      <li>
-      <a href="https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/monitor-data-ingestion.html">Övervakning</a>
+      <a href="https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/monitor-data-ingestion.html" target="_blank">Övervakning</a>
     </li>
     <p>
     <p>ANSLUTNINGAR</p>
