@@ -5,7 +5,7 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 8bcc1721f0d451e386b1fa0c5972c783ced01c7f
+source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 1%
@@ -55,7 +55,7 @@ Den här typen av händelse kan placeras som det första steget eller senare und
    >
    >Observera att **[!UICONTROL Enter]** och **[!UICONTROL Exit]** motsvarar **Realiserad** och **Avslutade** segmentdeltagarstatus från Adobe Experience Platform. Mer information om hur du utvärderar ett segment finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=en#interpret-segment-results).
 
-1. Välj ett namnutrymme. Detta behövs bara om händelsen placeras som det första steget i resan.
+1. Välj ett namnutrymme. Detta behövs bara om händelsen är placerad som det första steget i resan.
 
    ![](../assets/segment7.png)
 
