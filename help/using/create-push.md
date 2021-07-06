@@ -5,7 +5,7 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Beginner
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
 workflow-type: tm+mt
 source-wordcount: '1196'
 ht-degree: 12%
@@ -30,7 +30,7 @@ Klicka på fälten **[!UICONTROL Title]** och **[!UICONTROL Body]** för att ska
 
 Använd enhetens förhandsvisningsavsnitt för att se hur push-meddelanden visas på iOS- och Android-enheter.
 
-## Vid klickbeteende {#on-click-behavior}
+## Beteende vid klickning {#on-click-behavior}
 
 Välj beteende när en mottagare klickar på texten i push-meddelandet.
 
@@ -78,7 +78,7 @@ Klicka på **[!UICONTROL Expand view]** om du vill förhandsgranska dina anpassa
 
 ## Skicka ett tyst meddelande
 
-Ett tyst push-meddelande (eller bakgrundsmeddelande) är en dold instruktion som skickas till programmet. Den används till exempel för att meddela programmet om att nytt innehåll är tillgängligt eller för att initiera en hämtning i bakgrunden.
+Ett tyst push-meddelande (eller bakgrundsmeddelande) är en dold instruktion som skickas till programmet. Den används till exempel för att meddela programmet om att nytt innehåll är tillgängligt eller för att initiera en nedladdning i bakgrunden.
 
 Välj alternativet **[!UICONTROL Silent Notification]** för att tyst meddela programmet: I detta fall överförs anmälan direkt till ansökan. Ingen varning visas på enhetsskärmen.
 
