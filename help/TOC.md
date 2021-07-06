@@ -5,10 +5,10 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att leverera sammankopplade, kontextuella och personaliserade upplevelser till kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: f5a6a9b6c786b39b492a177de0b19a54b81729f7
+source-git-commit: d09eedce833b41037452bb46bc748e7e9f477d0a
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 43%
+source-wordcount: '689'
+ht-degree: 42%
 
 ---
 
@@ -56,9 +56,12 @@ ht-degree: 43%
       + [Objektfunktioner](using/personalization/functions/objects.md)
       + [Strängfunktioner](using/personalization/functions/string.md)
    + [Lägg till personaliserade erbjudanden](using/deliver-personalized-offers.md)
-+ Segment{#segment}
-   + [Om segment](using/segment/about-segments.md)
-   + [Skapa segment](using/segment/creating-a-segment.md)
++ Segment, profiler och identitet{#segment}
+   + Segment {#segments}
+      + [Om segment](using/segment/about-segments.md)
+      + [Skapa segment](using/segment/creating-a-segment.md)
+   + [Profiler](using/get-started-profiles.md)
+   + [Identitet](using/get-started-identity.md)
 + Resor {#orchestrate-journeys}
    + Om resor{#about-journeys}
       + [Allmän princip](using/building-journeys/journey.md)
@@ -189,6 +192,10 @@ ht-degree: 43%
       + Erbjudandeleverans med API:er {#offer-delivery}
          + [API för beslut](using/offers/api-reference/decisions-api/deliver-offers.md)
          + [Webb-SDK för Adobe Experience Platform](using/offers/api-reference/web-sdk.md)
++ Datahantering {#data-management}
+   + [Scheman](using/get-started-schemas.md)
+   + [Datauppsättningar](using/get-started-datasets.md)
+   + [Frågor](using/get-started-queries.md)
 + Konfiguration{#get-started}
    + [Kom igång med Journey Optimizer](using/configuration/get-started-configuration.md)
    + Konfigurera meddelanden {#configuration}
@@ -228,6 +235,7 @@ ht-degree: 43%
          + [Om åtgärder](using/action/action.md)
          + [Konfigurera en åtgärd](using/action/about-custom-action-configuration.md)
          + [Integrera med Adobe Campaign v7/v8](using/action/acc-action.md)
+      + [Källor](using/get-started-sources.md)
 + Åtkomstkontroll {#administration}
    + [Översikt över åtkomstkontroll](using/administration/permissions-overview.md)
    + [Inbyggda produktprofiler](using/administration/ootb-product-profiles.md)
