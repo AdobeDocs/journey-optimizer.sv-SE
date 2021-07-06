@@ -5,10 +5,10 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Beginner
-source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 7%
+source-wordcount: '403'
+ht-degree: 6%
 
 ---
 
@@ -26,7 +26,7 @@ Innan du börjar använda [!DNL Adobe Journey Optimizer] måste du:
 
 * **Ange användarbehörigheter**: logga in  [!DNL Adobe Journey Optimizer] och ge åtkomst till dina teammedlemmar. [Läs mer](../using/administration/permissions.md)
 
-* **Distribuera[!DNL Adobe Experience Manager Assets Essentials]**: om du vill hantera resurser och bilder i meddelanden måste du distribuera  [!DNL Assets Essentials] för din organisation och se till att användare, som behöver åtkomst till  [!DNL Assets Essentials], är en del av  **Assets Essentials** konsumentanvändarprofiler  **och** Assets Essentialsanvändarproduktprofiler. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html)
+* **Distribuera[!DNL Adobe Experience Manager Assets Essentials]**: om du vill hantera resurser och bilder i meddelanden måste du distribuera  [!DNL Assets Essentials] för din organisation och se till att användare, som behöver åtkomst till  [!DNL Assets Essentials], är en del av  **Assets Essentials** konsumentanvändarprofiler  **och** Assets Essentialsanvändarproduktprofiler. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}
 
 * **Konfigurera kanalerna**: ange inställningar för e-post och push-meddelanden. [Läs mer](../using/configuration/get-started-configuration.md)
 
@@ -34,13 +34,13 @@ Innan du börjar använda [!DNL Adobe Journey Optimizer] måste du:
 
 * **Identifiera data och skapa schema och datauppsättning**: få in data i Adobe Experience Platform, skapa ett identitetsnamnutrymme och en datauppsättning som är aktiverad för profiler, skapa segment och testa profiler.
 
-   * Lär dig hur du förhandsgranskar och skapar en datauppsättning i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html)
+   * Lär dig hur du förhandsgranskar och skapar en datauppsättning i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html){target=&quot;_blank&quot;}
 
-   * Lär dig hur du skapar ett identitetsnamnutrymme i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=en#manage-namespaces)
+   * Lär dig hur du skapar ett identitetsnamnutrymme i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=en#manage-namespaces){target=&quot;_blank&quot;}
 
    * Lär dig hur du skapar testprofiler i [den här sidan](../using/building-journeys/creating-test-profiles.md)
 
-   * Läs mer om dataöverföring i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html)
+   * Läs mer om dataöverföring i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target=&quot;_blank&quot;}
 
 
 ### Användningsflöde
