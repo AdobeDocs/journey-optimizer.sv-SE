@@ -5,9 +5,9 @@ feature: Personalisering
 topic: Personalisering
 role: Data Engineer
 level: Intermediate
-source-git-commit: f05e968a29d76e8dcd8e96fb8a5a1c60c4b12529
+source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '624'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ I detta fall krävs följande krav:
 1. Välj kategorin **Kontext**. Det här objektet är bara tillgängligt om en resa har passerat kontextdata till meddelandet. Klicka på **Journey Orchestration**. Följande sammanhangsberoende information visas:
 
    * **Händelser**: I den här kategorin grupperas alla fält från händelser som placerats före  **** meddelandeaktiviteten på resan.
-   * **Reseegenskaper**: de tekniska fält som rör resan för en viss profil, t.ex. rese-ID eller de specifika fel som påträffats. Se [Journey Orchestration-dokumentationen](https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/syntax/journey-properties.html#building-advanced-conditions-journeys).
+   * **Reseegenskaper**: de tekniska fält som rör resan för en viss profil, t.ex. rese-ID eller de specifika fel som påträffats. Läs mer i [Journey Orchestration-dokumentationen](https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/syntax/journey-properties.html#building-advanced-conditions-journeys){target=&quot;_blank&quot;}.
 
    ![](assets/perso-uc10.png)
 
