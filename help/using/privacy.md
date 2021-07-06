@@ -4,9 +4,9 @@ description: Lär dig hantera sekretess
 topic: Sekretess
 role: User
 level: Intermediate
-source-git-commit: 4f80fd89c772ee4097a42fdaf1bff1f02ddbc004
+source-git-commit: d09eedce833b41037452bb46bc748e7e9f477d0a
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '771'
 ht-degree: 46%
 
 ---
@@ -33,11 +33,11 @@ Personliga och känsliga data måste hanteras noggrant. Följ de allmänna princ
 
 * Använd alltid personlig information på ett ansvarsfullt och etiskt sätt.
 
-* Undvik att skicka oönskade meddelanden (&quot;spam&quot;). Adobe tror starkt på principerna om tillståndsmarknadsföring när det gäller att främja kundens livstidsvärde och lojalitet, och förbjuder därför strikt användning av Journey Optimizer för att skicka oönskade meddelanden.
+* Undvik att skicka oönskade meddelanden (&quot;spam&quot;). Adobe tror starkt på principerna för tillståndsmarknadsföring när det gäller att främja kundens livstidsvärde och lojalitet, och förbjuder därför strikt användning av [!DNL Adobe Journey Optimizer] för att skicka oönskade meddelanden.
 
-Journey Optimizer ger dig möjlighet att hantera användarnas rättigheter via olika färdiga eller anpassade produktprofiler. Det här låter dig hantera vilka inom företaget som kan få åtkomst till, ändra eller exportera olika typer av data. Läs mer om hur du hanterar användaråtkomsträttigheter i [Hantera behörigheter](administration/permissions.md).
+[!DNL Journey Optimizer] ger dig möjlighet att hantera användarnas rättigheter via olika färdiga eller anpassade produktprofiler. Det här låter dig hantera vilka inom företaget som kan få åtkomst till, ändra eller exportera olika typer av data. Lär dig hur du hanterar användarbehörigheter i [den här sidan](administration/permissions.md).
 
-Med Journey Optimizer kan du också spåra skickade meddelanden och mottagarnas beteende genom att öppna och klicka på länkar. [Läs mer om spårningshantering](message-tracking.md).
+[!DNL Journey Optimizer] Med kan du också spåra skickade meddelanden och mottagarnas beteende genom att öppna och klicka på länkar. Läs mer om spårningshantering i [den här sidan](message-tracking.md).
 
 ## Sekretesshantering {#privacy-management}
 
@@ -52,7 +52,7 @@ För att kunna hantera personuppgifter på ett korrekt sätt måste ni därför 
 * [CCPA](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&amp;division=3.&amp;title=1.81.5.&amp;part=4.&amp;chapter=&amp;article=) (California Consumer Privacy Act)
 * [PDPA](https://secureprivacy.ai/thailand-pdpa-summary-what-businesses-need-to-know/) (Thailand Personal Data Protection Act)
 
-Journey Optimizer ärver de flesta datauppsättningsändringarna som gjorts i Adobe Experience Platform.
+[!DNL Journey Optimizer] ärver de flesta datauppsättningsändringar som gjorts i Adobe Experience Platform.
 
 Följaktligen hanteras förfrågningar om skydd av privatlivet (rätt att få åtkomst och rätt att bli glömd) via Experience Platform. Du måste skicka dina begäranden med [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) och välja **Profil** och **AEP Data Lake** i produktlistan när [du skapar din sekretessförfrågan](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=en#request-builder). <!--https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en).-->
 
@@ -62,7 +62,7 @@ Följaktligen hanteras förfrågningar om skydd av privatlivet (rätt att få å
 
 ## Integritet i Adobe Experience Cloud {#experience-cloud-privacy}
 
-Journey Optimizer ingår i Adobe Experience Cloud lösningar. Sekretesssättet hanteras enligt Adobe Experience Cloud allmänna principer. [Läs mer om Adobe Experience Cloud sekretess](https://www.adobe.com/se/privacy/marketing-cloud.html).
+[!DNL Journey Optimizer] ingår i Adobe Experience Cloud lösningar. Sekretesssättet hanteras enligt Adobe Experience Cloud allmänna principer. Läs mer om Adobe Experience Cloud sekretess i [den här sidan](https://www.adobe.com/se/privacy/marketing-cloud.html).
 
 Som ett företag som använder Adobe Experience Cloud-lösningar väljer du vilken information som ska samlas in och skickas till ditt Adobe Experience Cloud-konto. Exempel på information som kan samlas in är webbläsaraktivitet, IP-adresser, platsinformation från mobila enheter, kampanjers framgång, artiklar som har köpts eller placerats i en kundvagn osv. Se [Adobes integritetspolicy](https://www.adobe.com/se/privacy/policy.html) för mer information.
 
@@ -73,6 +73,6 @@ Adobe ber att du erbjuder dina kunder en integritetspolicy som beskriver:
 
 >[!NOTE]
 >
->Precis som för alla Adobe-produkter kan Journey Optimizer-användare avanmäla delning av information som samlats in om dem via appar och webbplatser. Läs mer i [Vanliga frågor om användningsinformation för Adobe Experience Cloud](https://www.adobe.com/se/privacy/experience-cloud-usage-info-faq.html).
+>Precis som för alla Adobe-produkter kan [!DNL Adobe Journey Optimizer]-användare avanmäla delning av information som samlats in om dem via appar och webbplatser. Läs mer i [Vanliga frågor om användningsinformation för Adobe Experience Cloud](https://www.adobe.com/se/privacy/experience-cloud-usage-info-faq.html).
 
 <!--Because Journey Optimizer integrates with Adobe Experience Platform, where audiences are transferred from one system to another, you need to pay extra care to personal data protection.-->
