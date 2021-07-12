@@ -5,9 +5,9 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
+source-git-commit: 329e51e222c6424c4809e141c78ce81ce1ac23e6
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '952'
 ht-degree: 4%
 
 ---
@@ -55,6 +55,8 @@ Så här konfigurerar du Läs segment-aktiviteten:
    >[!NOTE]
    >
    >Individer som tillhör ett segment som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kan inte ta sig in på resan.
+
+1. I fältet **[!UICONTROL Throttling rate]** definierar du genomströmningen för Läs-segmentsaktiviteten. Det här värdet lagras i transportversionens nyttolast. Standardvärdet är 17 000 och måste vara mellan 500 och 17 000.
 
 1. Med aktiviteten **[!UICONTROL Read Segment]** kan du ange den tidpunkt då segmentet ska gå in i resan. Om du vill göra det klickar du på länken **[!UICONTROL Edit journey schedule]** för att komma åt resans egenskaper och konfigurerar sedan fältet **[!UICONTROL Scheduler type]**.
 
