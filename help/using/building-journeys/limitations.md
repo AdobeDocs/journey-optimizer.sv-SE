@@ -5,9 +5,9 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 12623f6f8a9571673b2b498a02da39608344ef1e
+source-git-commit: 329e51e222c6424c4809e141c78ce81ce1ac23e6
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Här är begränsningar för användningen av resor.
 
 * Externa datakällor kan utnyttjas inom en kundresa för att söka externa data i realtid. Dessa källor måste kunna användas via REST API, ha stöd för JSON och kunna hantera antalet begäranden.
 
-## Resor som börjar samtidigt som en profilgenerering {#journeys-limitation-profile-creation}
+## Resor som börjar samtidigt som en profil skapas {#journeys-limitation-profile-creation}
 
 Det finns en fördröjning i skapandet/uppdateringen av API-baserade profiler i Adobe Experience Platform. Servicenivåmålet (SLT) i form av fördröjning är &lt; 1 min från intag till en enhetlig profil för 95:e percentilen begäranden, vid en volym på 20 000 förfrågningar per sekund (RPS).
 
@@ -68,5 +68,4 @@ Du kan välja mellan följande två lösningar:
 
 ## Läs segmentbegränsningar
 
-* Det är inte möjligt att utlösa en segmentbaserad resa inom en kortare tid än en timme.
 * Strömmade segment är alltid uppdaterade, men gruppsegment beräknas inte vid hämtningen. De utvärderas endast varje dag vid den dagliga grupputvärderingen.
