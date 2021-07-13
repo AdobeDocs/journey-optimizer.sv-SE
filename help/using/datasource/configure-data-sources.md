@@ -3,9 +3,9 @@ title: Konfigurera en datakälla
 description: Läs om hur du konfigurerar en datakälla
 feature: Datakällor
 topic: Administrering
-role: Administrator
+role: Admin
 level: Intermediate
-source-git-commit: 265e15f3b56dfac7a5c35bf6817a5ff2da1d744a
+source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 7%
@@ -54,7 +54,7 @@ Antalet resor som använder en fältgrupp visas i fältet **[!UICONTROL Used in]
 
 ![](../assets/journey3bis.png)
 
-## Fältgruppens livscykel {#field-group-lifecycle}
+## Livscykel för fältgrupp {#field-group-lifecycle}
 
 Du kan lägga till eller ta bort fält från en fältgrupp som inte används i ett utkast eller en direktresa.
 
