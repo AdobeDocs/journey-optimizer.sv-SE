@@ -5,7 +5,7 @@ feature: Applikationsinställningar
 topic: Administrering
 role: Admin
 level: Intermediate
-source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
+source-git-commit: 7e879a56a5ed416cc12c2acc3131e17f9dd1e757
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Med [!DNL Journey Optimizer] kan du konfigurera meddelandeförinställningar som
 
 När meddelandeförinställningarna har konfigurerats kan du välja dem när du skapar meddelanden från **[!UICONTROL Presets]**-listan.
 
-![](../assets/do-not-localize/how-to-video.png) [Lär dig hur du skapar och använder e-postförinställningar i den här videon](#video-presets)
+➡️ [Lär dig hur du skapar och använder e-postförinställningar i den här videon](#video-presets)
 
 ## Skapa en meddelandeförinställning {#create-message-preset}
 
