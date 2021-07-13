@@ -5,36 +5,44 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
+source-git-commit: 807157d4d6fc1dba018bbe796c8bd213504589dc
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 7%
+source-wordcount: '311'
+ht-degree: 5%
 
 ---
 
 # Konfigurera urval av erbjudanden i beslut {#offers-selection-in-activities}
 
-## Prioritet för erbjudanden {#about-offers-priority}
+Om flera erbjudanden är berättigade för en viss placering kan du välja den metod som ska användas för att välja det bästa erbjudandet för varje profil när du konfigurerar ett beslut (som tidigare kallades erbjudandeaktivitet). Du kan rangordna erbjudanden genom att:
+* Prioritet
+* Rankningsformel
 
-När flera erbjudanden är berättigade till en viss placering i ett beslut (tidigare kallat erbjudandeaktivitet) levereras erbjudandena med den högsta **prioriteten** till kunderna först. Prioritetspoäng för erbjudanden tilldelas när du skapar ett erbjudande (se [Skapa ett personaliserat erbjudande](../offer-library/creating-personalized-offers.md)).
+## Prioritet {#about-offers-priority}
+
+När flera erbjudanden är berättigade till en viss placering i ett beslut (tidigare kallat erbjudandeaktivitet) levereras erbjudandena med den högsta **prioriteten** till kunderna först.
 
 ![](../../assets/offer-priority.png)
 
-I Journey Optimizer kan du dessutom skapa **rankningsformler**. Detta är formler som avgör vilket erbjudande som ska presenteras först för en viss placering, i stället för att beakta offertens prioritetspoäng.
+Prioritetspoäng tilldelas när ett erbjudande skapas. Lär dig hur du skapar ett personaliserat erbjudande i [det här avsnittet](../offer-library/creating-personalized-offers.md)).
+
+## Rankningsformel {#assign-ranking-formula}
+
+Förutom att erbjuda prioritet kan du med Journey Optimizer skapa **rankningsformler**. Detta är formler som avgör vilket erbjudande som ska presenteras först för en viss placering, i stället för att beakta offertens prioritetspoäng.
 
 Du kan till exempel öka prioriteten för alla erbjudanden där slutdatumet är mindre än 24 timmar från och med nu, eller öka erbjudandena från kategorin&quot;löpande&quot; om profilens intressepunkt är&quot;igång&quot;.
 
-Mer information om hur du skapar en rankningsformel finns i [det här avsnittet](../offer-library/create-ranking-formulas.md).
+Lär dig hur du skapar en rankningsformel i [det här avsnittet](../offer-library/create-ranking-formulas.md).
 
-## Tilldela en rankningsformel till en placering {#assign-ranking-formula}
+När en rankningsformel har skapats kan du tilldela den till en placering i ett beslut (som tidigare kallades erbjudandeaktivitet). Följ stegen nedan för att göra detta:
 
-När en rankningsformel har skapats kan du tilldela den till en placering i ett beslut. Följ stegen nedan för att göra detta:
+1. Skapa ett beslut eller redigera ett befintligt. Se [Skapa beslut](../offer-activities/create-offer-activities.md).
 
-1. Skapa ett beslut eller redigera ett befintligt, och skapa sedan de ersättningar som innehåller dina erbjudanden (se [Skapa beslut](../offer-activities/create-offer-activities.md)).
+1. Lägg till de placeringar som kommer att innehålla dina erbjudanden. Se [Skapa placeringar](../offer-library/creating-placements.md).
 
-1. För varje placering väljer du **[!UICONTROL Ranking]** i listrutan.
+1. Lägg till en samling för varje placering. Se [Skapa samlingar](../offer-library/creating-collections.md).
 
-1. Klicka på **[!UICONTROL Add ranking]**.
+1. Välj om du vill rangordna erbjudanden med **[!UICONTROL Ranking]** i listrutan och klicka sedan på **[!UICONTROL Add ranking]**.
 
    ![](../../assets/offer-activity-ranking.png)
 
