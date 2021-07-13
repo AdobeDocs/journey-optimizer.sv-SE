@@ -5,9 +5,9 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
+source-git-commit: 704d8c5b5a9f0ff8d90467db6ead8f77d68633b2
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1478'
 ht-degree: 1%
 
 ---
@@ -70,13 +70,13 @@ Följ stegen nedan för att börja skapa e-postinnehåll med e-postdesignern:
 
    ![](assets/email_designer_3.png)
 
-1. Varje komponent kan anpassas ytterligare med **[!UICONTROL Component settings]**-avsnittet. Du kan till exempel ändra textstil, utfyllnad eller marginal för komponenten. Läs mer om format i e-postredigeraren i [Adobe Campaign-dokumentation](https://experienceleague.adobe.com/docs/campaign-standard/using/designing-content/styles.html){target=&quot;_blank&quot;}.
+1. Varje komponent kan anpassas ytterligare med **[!UICONTROL Component settings]**-avsnittet. Du kan till exempel ändra textstil, utfyllnad eller marginal för komponenten. [Läs mer om justering och utfyllnad](#adjusting-vertical-alignment-and-padding).
 
    ![](assets/email_designer_4.png)
 
 1. Från **[!UICONTROL Assets picker]** kan du lägga till resurser som lagras i **[!UICONTROL Assets library]** direkt i e-postmeddelandet. [Läs mer om resurshantering](assets-essentials.md).
 
-   Dubbelklicka på mappen som innehåller dina resurser och dra och släpp den resurs som du vill lägga till i e-postmeddelandet.
+   Dubbelklicka på den mapp som innehåller dina resurser och dra och släpp den resurs som du vill lägga till i e-postmeddelandet.
 
    ![](assets/email_designer_5.png)
 
