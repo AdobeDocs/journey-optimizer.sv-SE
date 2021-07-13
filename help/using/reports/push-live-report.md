@@ -5,14 +5,14 @@ feature: Rapportering
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+source-git-commit: eba6ff87438325f58c453c12552c75c69dbdac0b
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 1%
 
 ---
 
-# Skjut live-rapport {#push-live-report}
+# Publicera live-rapport {#push-live-report}
 
 Push-åtgärden **[!UICONTROL Live report]** avser endast en specifik push-leverans.
 
@@ -21,6 +21,8 @@ Välj **[!UICONTROL Live view]** på fliken **[!UICONTROL Executions]** på meny
 ![](../assets/live_report_2.png)
 
 Push-åtgärden **[!UICONTROL Live report]** är uppdelad i olika widgetar som anger leveransens framgång och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [avsnittet](live-report.md#modify-dashboard).
+
+![](../assets/live_report_3.png)
 
 **[!UICONTROL Push notification performance]** och  **[!UICONTROL Push notification summary]** widgetar visar huvudinformationen i relation till meddelandet med diagram och nyckeltal:
 
@@ -37,6 +39,8 @@ Push-åtgärden **[!UICONTROL Live report]** är uppdelad i olika widgetar som a
 * **[!UICONTROL Actions]**: Totalt antal åtgärder för push-meddelandet som levererats, t.ex. knappklickning eller avbruten.
 
 * **[!UICONTROL Engagements]**: Totalt antal öppningar och åtgärder för det här push-meddelandet, dvs om profilen öppnade push-meddelandet eller om någon klickade på en knapp.
+
+![](../assets/live_report_4.png)
 
 Diagram och tabeller för **[!UICONTROL Tracking by platform]**, **[!UICONTROL Sending by platform]** och **[!UICONTROL Breakdown by platform]** visar om push-meddelandet är klart beroende på vilket operativsystem som används.
 
