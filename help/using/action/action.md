@@ -4,9 +4,9 @@ title: Om åtgärder
 description: Läs om hur du konfigurerar en åtgärd
 feature: Instruktioner
 topic: Administrering
-role: Administrator
+role: Admin
 level: Intermediate
-source-git-commit: 10d8cb2002279a7ea679e2be6e9f632d0edcfbb8
+source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 68%
