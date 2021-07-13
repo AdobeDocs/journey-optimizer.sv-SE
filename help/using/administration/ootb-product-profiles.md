@@ -14,9 +14,9 @@ snippet: y
 exl-id: null
 feature: Kontrollgrupper
 topic: Administrering
-role: Administrator
+role: Admin
 level: Intermediate
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 6%
@@ -53,7 +53,7 @@ Den här produktprofilen innehåller följande behörigheter:
 |Adobe Experience Platform| <ul><li>**Hantera segment**: läsa, skapa, redigera och ta bort segment.</li><li>**Hantera profiler**: läsa, skapa, redigera och ta bort profiler.</li><li>**Läs datauppsättningar**: skrivskyddad åtkomst till datauppsättningar.</li><li>**Läs scheman**: skrivskyddad åtkomst till scheman.</li><li>**Hantera sammanfogningsprinciper**: läsa, skapa, redigera och ta bort sammanfogningsprinciper.</li></ul>|
 |Administrering| <ul><li>**Visa meddelandeförinställningar**: skrivskyddad åtkomst till meddelandeförinställningar.</li></ul>|
 
-## Resehanteraren {#journey-manager}
+## Resechef {#journey-manager}
 
 Med **[!UICONTROL Journey Manager]**-produktprofilen kan användare skapa och redigera **[!UICONTROL Journeys]** och alla funktioner som är länkade till **[!UICONTROL Journeys]**, men de kan inte publiceras.
 
@@ -67,7 +67,7 @@ Den här produktprofilen innehåller följande behörigheter:
 |Adobe Experience Platform| <ul><li> **Hantera segment**: läsa, skapa, redigera och ta bort segment.</li><li>**Hantera profiler**: läsa, skapa, redigera och ta bort profiler.</li><li>**Läs datauppsättningar**: skrivskyddad åtkomst till datauppsättningar.</li><li>**Läs scheman**: skrivskyddad åtkomst till scheman.</li><li>**Hantera sammanfogningsprinciper**: läsa, skapa, redigera och ta bort sammanfogningsprinciper.</li></ul>|
 |Administrering| <ul><li>**Visa meddelandeförinställningar**: skrivskyddad åtkomst till meddelandeförinställningar.</li></ul>|
 
-## Resevisningsprogram {#journey-viewer}
+## Resevisare {#journey-viewer}
 
 Produktprofilen **[!UICONTROL Journey viewer]** ger skrivskyddad åtkomst till funktionerna **[!UICONTROL Journeys]**, **[!UICONTROL Goals]**, **[!UICONTROL Messages]** och **[!UICONTROL Decision management]**.
 
@@ -95,7 +95,7 @@ Den här produktprofilen innehåller följande behörigheter:
 |Adobe Experience Platform| <ul><li>**Läs profiler**: skrivskyddad åtkomst till profil för förhandsgranskning och testning.</li><li>**Läs datauppsättningar**: skrivskyddad åtkomst till datauppsättningar.</li><li>**Läs scheman**: skrivskyddad åtkomst till scheman.</li><li>**Hantera sammanfogningsprinciper**: läsa, skapa, redigera och ta bort sammanfogningsprinciper.</li></ul>|
 |Administrering| <ul><li>**Visa meddelandeförinställningar**: skrivskyddad åtkomst till meddelandeförinställningar.</li></ul>|
 
-## Beslutshanteraren {#decisioning-manager}
+## Beslutsfattare {#decisioning-manager}
 
 Produktprofilen **[!UICONTROL Decisioning manager]** tillåter bara menyn **[!UICONTROL Decision management]**. Användare som är tilldelade den här produktprofilen kan bara hantera, visa och publicera beslut.
 
