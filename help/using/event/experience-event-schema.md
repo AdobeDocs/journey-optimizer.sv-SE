@@ -3,9 +3,9 @@ title: Om ExperienceEvent-scheman för resehändelser
 description: Läs mer om ExperienceEvent-scheman för resehändelser
 feature: Scheman
 topic: Administrering
-role: Administrator
+role: Admin
 level: Intermediate
-source-git-commit: 8f77802fcaa23790f9de4e8f15e593643b13fb1e
+source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
