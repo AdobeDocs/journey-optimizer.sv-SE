@@ -13,9 +13,9 @@ internal: n
 snippet: y
 feature: Applikationsinställningar
 topic: Administrering
-role: Administrator
+role: Admin
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 1%
