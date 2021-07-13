@@ -14,9 +14,9 @@ snippet: y
 exl-id: 85fd386a-45fa-4f9a-89d1-cecc0749b90d
 feature: Kontrollgrupper
 topic: Administrering
-role: Administrator
+role: Admin
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 0%
@@ -36,9 +36,9 @@ De kan delas in i två typer:
 
 Produktprofilen **[!UICONTROL Journey administrator]** har till exempel tilldelats behörigheten **[!UICONTROL Manage journeys]**. Från det här behörigheten blir de lågnivåbehörigheter som gör att reseadministratören kan skriva, läsa och ta bort resor.
 
-## Reseförmåga {#journey-capability}
+## Resekapacitet {#journey-capability}
 
-### Hantera resebehörighet {#manage-journeys}
+### Hantera resetillstånd {#manage-journeys}
 
 Med behörigheten **[!UICONTROL Manage journeys]** på hög nivå kan användare skapa nya och redigera/ta bort befintliga resor samt få åtkomst till de objekt som används i arbetsytan för att skapa reseflödet.
 
@@ -58,7 +58,7 @@ Den innehåller följande lågnivåbehörigheter:
    * datasets.read
    * schemas.read
 
-### Publicera resebehörighet {#publish-journeys}
+### Publicera resetillstånd {#publish-journeys}
 
 Med högnivåbehörigheten **[!UICONTROL Publish journeys]** kan användare publicera resor.
 
@@ -68,7 +68,7 @@ Den innehåller följande lågnivåbehörigheter:
    * journeys.publish
    * journeys.read
 
-### Visa resebehörighet {#view-journeys}
+### Visa resetillstånd {#view-journeys}
 
 Med högnivåbehörigheten **[!UICONTROL View journeys]** kan användare bläddra och visa resor.
 
@@ -81,7 +81,7 @@ Den innehåller följande lågnivåbehörigheter:
    * segments.read
    * profiles.read
 
-### Hantera resthändelser, datakällor och åtgärdsbehörigheter {#manage-journeys-events}
+### Hantera resthändelser, datakällor och behörigheter för åtgärder {#manage-journeys-events}
 
 Med den höga behörigheten **[!UICONTROL Manage journeys events, data sources and actions]** kan användare konfigurera händelse- och datakonfigurationer.
 
@@ -136,7 +136,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ## Meddelandefunktion {#message-capability}
 
-### Hantera meddelandebehörighet {#manage-messages}
+### Hantera meddelandebehörigheter {#manage-messages}
 
 Med den höga behörigheten **[!UICONTROL Manage messages]** kan användare skapa och redigera/ta bort meddelanden.
 
@@ -152,7 +152,7 @@ Den innehåller följande lågnivåbehörigheter:
    * segments.read
    * schemas.read
 
-### Hantera meddelandeförhandsgranskning och testbehörighet {#mange-messages-preview}
+### Hantera förhandsgranskning och testbehörighet för meddelanden {#mange-messages-preview}
 
 Med den höga behörigheten **[!UICONTROL Manage messages preview and test]** kan användare förhandsgranska personaliserade meddelanden.
 
@@ -174,7 +174,7 @@ Den innehåller följande lågnivåbehörigheter:
    * queries.write
    * merge_policies.read
 
-### Publicera meddelanden, behörighet {#publish-messages}
+### Publicera meddelanden - behörighet {#publish-messages}
 
 Med den höga behörigheten **[!UICONTROL Publish messages]** kan användare publicera meddelanden.
 
@@ -216,7 +216,7 @@ Den innehåller följande lågnivåbehörigheter:
    * queries.delete
    * journey.read
 
-## Beslutshanteringsfunktion {#decisions-permissions}
+## Beslutsledningskapacitet {#decisions-permissions}
 
 ### Hantera beslutsbehörighet {#manage-decisioning}
 
@@ -342,7 +342,7 @@ Den innehåller följande lågnivåbehörigheter:
 * Specifikt för Adobe Experience Platform:
    * schemas.read
 
-### Visa allmänna inställningsbehörigheter för meddelanden {#view-message-settings}
+### Visa allmänna inställningar för meddelanden {#view-message-settings}
 
 Med behörigheten **[!UICONTROL View messages general settings]** på hög nivå kan användare visa allmänna inställningar för meddelanden, t.ex. inaktiveringsregler eller körningsadress.
 
@@ -353,7 +353,7 @@ Den innehåller följande lågnivåbehörigheter:
 * Specifikt för Adobe Experience Platform:
    * schemas.read
 
-### Hantera meddelandeförinställningar behörighet {#manage-message-presets}
+### Hantera behörigheter för meddelandeförinställningar {#manage-message-presets}
 
 Med den höga behörigheten **[!UICONTROL Manage messages presets]** kan användare skapa, redigera och ta bort meddelandeförinställningar i alla kanaler på sandlådenivå.
 
@@ -367,7 +367,7 @@ Den innehåller följande lågnivåbehörigheter:
    * IP_pools.read
    * mobile_setting.read (från Adobe Experience Platform Launch)
 
-### Visa meddelandeförinställningar behörighet {#view-message-presets}
+### Visa förinställda meddelanden, behörighet {#view-message-presets}
 
 Med den höga behörigheten **[!UICONTROL View messages presets]** kan användare visa meddelandeförinställningar för att veta vilka meddelandeförinställningar som ska användas när ett meddelande skapas.
 
