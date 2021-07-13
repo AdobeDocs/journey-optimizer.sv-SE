@@ -5,7 +5,7 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
+source-git-commit: ef1d19d6abfccf3455f94b454c9c863396159161
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Använd dessutom ditt **Litmus**-konto i [!DNL Journey Optimizer] för att omede
 >
 >När du förhandsgranskar ett meddelande eller skickar korrektur visas endast profilpersonaliseringsdata. Personalisering som bygger på kontextdata, t.ex. händelseinformation, kan bara testas i samband med en resa. Lär dig hur du testar personalisering i [det här användningsexemplet](personalization/personalization-use-case.md).
 
-![](assets/do-not-localize/how-to-video.png) [Lär dig hur du förhandsgranskar, korrekturläser och publicerar e-postmeddelanden i den här videon](#video-preview)
+➡️ [Lär dig hur du förhandsgranskar, korrekturläser och publicerar e-postmeddelanden i den här videon](#video-preview)
 
 ## Välj testprofiler{#select-test-profiles}
 
