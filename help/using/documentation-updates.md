@@ -1,10 +1,10 @@
 ---
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
-source-git-commit: 8ef68f64f8ef354bced99f0eaada78be22488920
+source-git-commit: 6c69bbb06de57c62d8894b451d9dab9b318c8ebc
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 15%
+source-wordcount: '207'
+ht-degree: 14%
 
 ---
 
@@ -15,9 +15,10 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 ## Juli 2021
 
-* Lagt till direkta länkar till Experience Platform-tjänstdokumentation på [!DNL Journey Optimizer]-startsidan och innehållsförteckningen
+* Lagt till direkta länkar till dokumentationen för Experience Platform-tjänster på [!DNL Journey Optimizer]-startsidan och innehållsförteckningen
+* Nya landningssidor för Experience Platform-tjänster finns i [!DNL Journey Optimizer]
 * Länkar har lagts till i produktbeskrivningen för [!DNL Journey Optimizer] på startsidan
-* Lagt till självstudievideor på dokumentsidor
+* Lagt till självstudievideor på flera sidor
 * Optimerade startsidesbilder
 * Avsnittet&quot;Meddelandespårning&quot; har flyttats, förbättrats och bytt namn till&quot;Lägg till länkar och spåra meddelanden&quot;. [Läs mer](message-tracking.md)
 * Ett underavsnitt har lagts till på spegelsidor. [Läs mer](message-tracking.md#mirror-page)
