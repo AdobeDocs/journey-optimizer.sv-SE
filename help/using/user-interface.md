@@ -5,10 +5,10 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
+source-git-commit: af60022d99c3f881b8d932682e92ed142deb75d2
 workflow-type: tm+mt
-source-wordcount: '1211'
-ht-degree: 5%
+source-wordcount: '1095'
+ht-degree: 8%
 
 ---
 
@@ -45,47 +45,47 @@ Nedan finns en fullständig lista över tjänster och funktioner som är tillgä
 
 **[!UICONTROL JOURNEY MANAGEMENT]**
 
-* **[!UICONTROL Journeys]** - Skapa, konfigurera och samordna era kundresor. Läs mer [i det här avsnittet](building-journeys/journey-gs.md#jo-build)
+* **[!UICONTROL Journeys]** - Skapa, konfigurera och samordna era kundresor. [Läs mer](building-journeys/journey-gs.md#jo-build)
 
-* **[!UICONTROL Messages]** - Skapa, utforma, testa och publicera e-post och push-meddelanden. Läs mer [i det här avsnittet](create-message.md)
+* **[!UICONTROL Messages]** - Skapa, utforma, testa och publicera e-post och push-meddelanden. [Läs mer](create-message.md)
 
 **[!UICONTROL DECISION MANAGEMENT]**
 
 * **[!UICONTROL Offers]** - Använd de senaste källorna och datauppsättningarna på den här menyn. Använd det här avsnittet för att skapa nya erbjudanden. [Läs mer](offers/offer-library/creating-personalized-offers.md)
 
-* **[!UICONTROL Components]** - Skapa placeringar, regler och taggar. Läs mer i [det här avsnittet](offers/offer-library/key-steps.md)
+* **[!UICONTROL Components]** - Skapa placeringar, regler och taggar. [Läs mer](offers/offer-library/key-steps.md)
 
 **[!UICONTROL CONTENT MANAGEMENT]**
 
-* **[!UICONTROL Assets]** -  [!DNL Adobe Experience Manager Assets Essentials] är en central databas med resurser som du kan använda för att fylla i dina meddelanden. Läs mer i [det här avsnittet](assets-essentials.md)
+* **[!UICONTROL Assets]** -  [!DNL Adobe Experience Manager Assets Essentials] är en central databas med resurser som du kan använda för att fylla i dina meddelanden. [Läs mer](assets-essentials.md)
 
 **[!UICONTROL DATA MANAGEMENT]**
 
-* **[!UICONTROL Schemas]** - Använd Adobe Experience Platform för att skapa och hantera XDM-scheman (Experience Data Model) på en interaktiv visuell arbetsyta som kallas Schemaredigeraren. [Läs mer i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html){target=&quot;_blank&quot;}
+* **[!UICONTROL Schemas]** - Använd Adobe Experience Platform för att skapa och hantera XDM-scheman (Experience Data Model) på en interaktiv visuell arbetsyta som kallas Schemaredigeraren. [Läs mer](get-started-schemas.md)
 
-* **[!UICONTROL Datasets]** - Alla data som importeras till Adobe Experience Platform lagras i Data Lake som datauppsättningar. En datauppsättning är en lagrings- och hanteringskonstruktion för en datamängd, vanligtvis en tabell, som innehåller ett schema (kolumner) och fält (rader). [Lär dig hur du förhandsgranskar och skapar en datauppsättning i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html){target=&quot;_blank&quot;}
+* **[!UICONTROL Datasets]** - Alla data som importeras till Adobe Experience Platform lagras i Data Lake som datauppsättningar. En datauppsättning är en lagrings- och hanteringskonstruktion för en datamängd, vanligtvis en tabell, som innehåller ett schema (kolumner) och fält (rader). [Läs mer](get-started-datasets.md)
 
-* **[!UICONTROL Queries]** - Använd Adobe Experience Platform Query Service för att skriva och köra frågor, visa frågor som körts tidigare och få åtkomst till frågor som sparats av användare i organisationen. [Läs mer i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/query/ui/overview.html){target=&quot;_blank&quot;}
+* **[!UICONTROL Queries]** - Använd Adobe Experience Platform Query Service för att skriva och köra frågor, visa frågor som körts tidigare och få åtkomst till frågor som sparats av användare i organisationen. [Läs mer](get-started-queries.md)
 
-* **[!UICONTROL Monitoring]** - Använd den här menyn för att övervaka dataanvändningen i Adobe Experience Platform användargränssnitt. [Läs mer i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/monitor-data-ingestion.html){target=&quot;_blank&quot;}
+* **[!UICONTROL Monitoring]** - Använd den här menyn för att övervaka dataanvändningen i Adobe Experience Platform användargränssnitt. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/monitor-data-ingestion.html){target=&quot;_blank&quot;}
 
 **[!UICONTROL CONNECTIONS]**
 
-* **[!UICONTROL Sources]** - Använd den här menyn för att importera data från en mängd olika källor - som Adobe-program, molnbaserade lagringsplatser, databaser med mera - samt strukturera, etikettera och förbättra inkommande data. [Läs mer i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html){target=&quot;_blank&quot;}
+* **[!UICONTROL Sources]** - Använd den här menyn för att importera data från en mängd olika källor - som Adobe-program, molnbaserade lagringsplatser, databaser med mera - samt strukturera, etikettera och förbättra inkommande data. [Läs mer](get-started-sources.md)
 
 **[!UICONTROL CUSTOMER]**
 
-* **[!UICONTROL Segments]** - Skapa och hantera definitioner av segment i Experience Platform och utnyttja dem på era resor. Läs mer i [den här sidan](segment/about-segments.md)
+* **[!UICONTROL Segments]** - Skapa och hantera definitioner av segment i Experience Platform och utnyttja dem på era resor. [Läs mer](segment/about-segments.md)
 
-* **[!UICONTROL Profiles]** - Kundprofil i realtid skapar en helhetsbild av varje enskild kund och kombinerar data från flera kanaler, inklusive online-, offline-, CRM- och tredjepartsdata. [Läs mer i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html){target=&quot;_blank&quot;}
+* **[!UICONTROL Profiles]** - Kundprofil i realtid skapar en helhetsbild av varje enskild kund och kombinerar data från flera kanaler, inklusive online-, offline-, CRM- och tredjepartsdata. [Läs mer](get-started-profiles.md)
 
-* **[!UICONTROL Identities]** - Adobe Experience Platform Identity Service hanterar identifieringen av era kunder i realtid, oavsett enhet, kanal och i det närmaste, i det som kallas identitetsdiagram inom Adobe Experience Platform. [Lär dig hur du skapar ett identitetsnamnutrymme i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=en#manage-namespaces){target=&quot;_blank&quot;}
+* **[!UICONTROL Identities]** - Adobe Experience Platform Identity Service hanterar identifieringen av era kunder i realtid, oavsett enhet, kanal och i det närmaste, i det som kallas identitetsdiagram inom Adobe Experience Platform. [Läs mer](get-started-identity.md)
 
 **[!UICONTROL ADMINISTRATION]**
 
 * **[!UICONTROL Journey Administration]** - Använd den här menyn för att konfigurera  [händelser](event/about-events.md),  [datakällor ](datasource/about-data-sources.md) och  [](action/action.md) åtgärder som ska användas på dina resor.
 
-* **[!UICONTROL Sandboxes]** - Adobe Experience Platform tillhandahåller sandlådor som partitionerar en instans i separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. [Läs mer om sandlådor i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html){target=&quot;_blank&quot;}
+* **[!UICONTROL Sandboxes]** - Adobe Experience Platform tillhandahåller sandlådor som partitionerar en instans i separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. [Läs mer](administration/sandboxes.md)
 
 
 ## Användningsexempel inifrån produkten
