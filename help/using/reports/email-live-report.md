@@ -5,7 +5,7 @@ feature: Rapportering
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+source-git-commit: eba6ff87438325f58c453c12552c75c69dbdac0b
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -21,6 +21,8 @@ Välj **[!UICONTROL Live view]** på fliken **[!UICONTROL Executions]** på meny
 ![](../assets/live_report.png)
 
 E-postmeddelandet **[!UICONTROL Live report]** är uppdelat i olika widgetar som anger leveransens framgång och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [avsnittet](live-report.md#modify-dashboard).
+
+![](../assets/live_report_5.png)
 
 **[!UICONTROL Email performance]** och  **[!UICONTROL Email summary]** widgetar visar huvudinformationen i förhållande till meddelandet med ett diagram och nyckeltal:
 
@@ -43,6 +45,8 @@ I **[!UICONTROL Sending Statistics]**-diagrammet visas leveransframgången:
 * **[!UICONTROL Bounces]**: Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
 
 * **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
+
+![](../assets/live_report_6.png)
 
 Med diagrammet och tabellen **[!UICONTROL Error Reasons]** kan du se vilket fel som uppstod under leveransen.
 
