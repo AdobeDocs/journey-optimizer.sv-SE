@@ -3,9 +3,9 @@ title: Adobe Campaign v7/v8-åtgärder
 description: Läs om åtgärder i Adobe Campaign v7/v8
 feature: Instruktioner
 topic: Administrering
-role: Administrator
+role: Admin
 level: Intermediate
-source-git-commit: 9ca747c4f46fd7eb24dbbf12350d7bbe409b1617
+source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 1%
