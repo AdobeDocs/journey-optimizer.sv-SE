@@ -1,20 +1,20 @@
 ---
 product: adobe campaign
 solution: Journey Optimizer
-title: Integrera med externa system
-description: Lär dig de bästa sätten att integrera externa system
+title: Integrera Journey Optimizer med externa system
+description: Lär dig de bästa sätten att integrera Journey Optimizer med externa system
 feature: Journey Optimizer
 role: User
 level: Beginner
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
+source-git-commit: 7e879a56a5ed416cc12c2acc3131e17f9dd1e757
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1038'
 ht-degree: 1%
 
 ---
 
-# Integrering med externa system {#external-systems}
+# Integrera med externa system {#external-systems}
 
 På den här sidan presenteras de olika skyddsprofilerna som Journey Optimizer ger när man integrerar ett externt system, samt bästa praxis: hur du optimerar skyddet för ditt externa system med API:t för appning, hur du konfigurerar timeout för resan och hur nya försök fungerar.
 
