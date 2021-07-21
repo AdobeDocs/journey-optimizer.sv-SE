@@ -5,8 +5,9 @@ git-repo: https://git.corp.adobe.com/AdobeDocs/journey-optimizer.sv-SE
 index: true
 product: Journey Optimizer
 solution: Journey Optimizer
+feature-set: Campaign
 solution-title: Journey Optimizer Documentation
-source-git-commit: 34b567ff172444e32251e0d1d3878f44ea342d5c
+source-git-commit: e7729e009c5a0becbd6a9ce1eb956bfbd172c127
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 94%
