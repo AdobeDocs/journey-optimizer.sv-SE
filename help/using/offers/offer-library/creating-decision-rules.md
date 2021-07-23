@@ -5,10 +5,10 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
+source-git-commit: dc3a5aacbd4b9bb20c384e0b057241f3080f09fa
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 5%
+source-wordcount: '284'
+ht-degree: 4%
 
 ---
 
@@ -32,7 +32,7 @@ Så här skapar du en beslutsregel:
 
 1. Ge regeln ett namn och ange en beskrivning och konfigurera sedan regeln efter behov.
 
-   Det gör du genom att använda funktionen **Segment Builder** för att skapa regelns villkor. [Läs mer](../../segment/about-segments.md)
+   Det gör du genom att **Segmentbyggaren** är tillgänglig som hjälp när du skapar regelns villkor. [Läs mer](../../segment/about-segments.md)
 
    I det här exemplet är regeln riktad till kunder som har lojalitetsnivån&quot;Gold&quot;.
 
@@ -47,6 +47,10 @@ Så här skapar du en beslutsregel:
 1. När regeln har skapats visas den i regellistan. Du kan markera den för att visa dess egenskaper och redigera eller ta bort den.
 
    ![](../../assets/rule_created.png)
+
+>[!CAUTION]
+>
+>Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [händelse](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#events){target=&quot;_blank&quot;} kan du inte utnyttja den i ett erbjudande.
 
 ## Videokurs {#video}
 
