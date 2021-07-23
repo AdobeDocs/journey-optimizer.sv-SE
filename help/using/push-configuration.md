@@ -5,9 +5,9 @@ feature: Applikationsinställningar
 topic: Push
 role: Admin
 level: Intermediate
-source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
+source-git-commit: ac6ba317909c962a81c7043bfa2a56e94bc5c9ad
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1450'
 ht-degree: 3%
 
 ---
@@ -35,7 +35,7 @@ Innan du skapar ett mobilprogram måste du kontrollera att du har eller tilldela
 
 >[!CAUTION]
 >
->Push-konfigurationen måste utföras av en expertanvändare. Beroende på din implementeringsmodell och vilka profiler som används i den här implementeringen kan du behöva tilldela en enskild produktprofil den fullständiga behörighetsuppsättningen eller dela behörigheter mellan apputvecklaren och **Adobe Journey Optimizer**-administratören. Läs mer om **Adobe Experience Platform Launch**-behörigheter i [den här dokumentationen](https://experienceleague.adobe.com/docs/launch/using/admin/user-permissions.html?lang=en#platform-launch-permissions){target=&quot;_blank&quot;}.
+>Push-konfigurationen måste utföras av en expertanvändare. Beroende på din implementeringsmodell och vilka profiler som används i den här implementeringen kan du behöva tilldela en enskild produktprofil den fullständiga behörighetsuppsättningen eller dela behörigheter mellan apputvecklaren och **Adobe Journey Optimizer**-administratören. Läs mer om **Adobe Experience Platform Launch**-behörigheter i [den här dokumentationen](https://experienceleague.adobe.com/docs/launch/using/admin/user-permissions.html#platform-launch-permissions){target=&quot;_blank&quot;}.
 
 <!--ou need to your have access to perform following roles :
 
@@ -253,7 +253,7 @@ När du har konfigurerat din mobilapp i både Adobe Experience Platform och Adob
 You can use a test mobile app for this use case. For more on this, refer to this [page](https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=CJM&title=Details+of+setting+the+mobile+test+app) (internal use only).
 -->
 
-För att den här resan ska fungera måste du skapa ett XDM-schema. Mer information finns i [XDM-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#schemas-and-data-ingestion){target=&quot;_blank&quot;}.
+För att den här resan ska fungera måste du skapa ett XDM-schema. Mer information finns i [XDM-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#schemas-and-data-ingestion){target=&quot;_blank&quot;}.
 
 1. I den vänstra menyn bläddrar du till **[!UICONTROL Schemas]**.
 
