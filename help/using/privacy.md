@@ -4,9 +4,9 @@ description: Lär dig hantera sekretess
 topic: Sekretess
 role: User
 level: Intermediate
-source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
+source-git-commit: ac6ba317909c962a81c7043bfa2a56e94bc5c9ad
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '773'
 ht-degree: 46%
 
 ---
@@ -39,7 +39,7 @@ Personliga och känsliga data måste hanteras noggrant. Följ de allmänna princ
 
 [!DNL Journey Optimizer] Med kan du också spåra skickade meddelanden och mottagarnas beteende genom att öppna och klicka på länkar. Läs mer om spårningshantering i [den här sidan](message-tracking.md).
 
-## Sekretesshantering {#privacy-management}
+## Integritetshantering {#privacy-management}
 
 Integritetshantering avser alla processer och verktyg som kan hjälpa er att följa sekretessbestämmelser.
 
@@ -54,7 +54,7 @@ För att kunna hantera personuppgifter på ett korrekt sätt måste ni därför 
 
 [!DNL Journey Optimizer] ärver de flesta datauppsättningsändringar som gjorts i Adobe Experience Platform.
 
-Följaktligen hanteras förfrågningar om skydd av privatlivet (rätt att få åtkomst och rätt att bli glömd) via Experience Platform. Du måste skicka dina begäranden med [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target=&quot;_blank&quot;} och välja **Profil** och **AEP Data Lake** i produktlistan när [du skapar din sekretessförfrågan](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=en#request-builder){target=&quot;_blank&quot;}. <!--https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en).-->
+Följaktligen hanteras förfrågningar om skydd av privatlivet (rätt att få åtkomst och rätt att bli glömd) via Experience Platform. Du måste skicka dina begäranden med [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target=&quot;_blank&quot;} och välja **Profil** och **AEP Data Lake** i produktlistan när [du skapar din sekretessförfrågan](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html#request-builder){target=&quot;_blank&quot;}. <!--https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html).-->
 
 >[!NOTE]
 >
