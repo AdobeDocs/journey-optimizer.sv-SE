@@ -5,9 +5,9 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: af60022d99c3f881b8d932682e92ed142deb75d2
+source-git-commit: ac6ba317909c962a81c7043bfa2a56e94bc5c9ad
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1093'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ När du är ansluten till [Adobe Experience Cloud](http://experience.adobe.com) 
 
 >[!NOTE]
 >
->* De viktigaste begreppen när du bläddrar i användargränssnittet är vanliga i Adobe Experience Platform. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html?lang=en#adobe-experience-platform-ui-guide){target=&quot;_blank&quot;}.
+>* De viktigaste begreppen när du bläddrar i användargränssnittet är vanliga i Adobe Experience Platform. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html#adobe-experience-platform-ui-guide){target=&quot;_blank&quot;}.
    >
    >
 * Den här dokumentationen uppdateras ofta för att återspegla de senaste ändringarna i produktanvändargränssnittet. Vissa skärmbilder kan dock skilja sig något från användargränssnittet.
