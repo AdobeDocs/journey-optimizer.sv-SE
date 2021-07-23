@@ -1,10 +1,10 @@
 ---
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
-source-git-commit: 6c69bbb06de57c62d8894b451d9dab9b318c8ebc
+source-git-commit: 3d0404651ebd39b29cf3fc64152359e1b5b479f5
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 14%
+source-wordcount: '253'
+ht-degree: 13%
 
 ---
 
@@ -29,6 +29,9 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * För direktresor visas nu publiceringsdatumet och namnet på den användare som publicerade resan på skärmen för reseegenskaper. [Läs mer](building-journeys/journey-gs.md#change-properties)
 * På skärmen för reselistan har filtret för resetyp lagts till. [Läs mer](user-interface.md#section_lgm_hpz_pgb)
 * Uppdaterade begränsningar för resan. [Läs mer](building-journeys/limitations.md)
-* Parametern [!UICONTROL Throttling rate] finns i segmentaktiviteten Läs. [Läs mer](building-journeys/read-segment.md#configuring-segment-trigger-activity)
-* Uppdaterat Konfigurera erbjuder urval i beslutsavsnittet. [Läs mer](offers/offer-activities/configure-offer-selection.md)
+* Parametern [!UICONTROL Throttling rate] har lagts till i Läs-segmentsaktiviteten. [Läs mer](building-journeys/read-segment.md#configuring-segment-trigger-activity)
+* Uppdaterat avsnittet Konfigurera erbjudandeurval i beslut. [Läs mer](offers/offer-activities/configure-offer-selection.md)
+* En varning har lagts till som anger att händelsebaserade erbjudanden för närvarande inte stöds. [Läs mer](offers/offer-library/creating-personalized-offers.md#eligibility)
+* Fliken Beslutshantering - nytt [!UICONTROL Overview] har dokumenterats. [Läs mer](offers/get-started/user-interface.md#overview)
+* Nya avsnitt har lagts till för att beskriva de åtgärder som är tillgängliga från erbjudandet och beslutslistorna: [Erbjudandelista](offers/offer-library/creating-personalized-offers.md#offer-list) och [Beslutslista](offers/offer-activities/create-offer-activities.md#decision-list).
  
