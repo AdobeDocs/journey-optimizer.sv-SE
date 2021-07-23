@@ -5,10 +5,10 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
+source-git-commit: 80451fcd012257c8648e751076ed668aa05c44c7
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 4%
+source-wordcount: '814'
+ht-degree: 3%
 
 ---
 
@@ -31,7 +31,7 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 
 ## Skapa beslutet {#create-activity}
 
-1. Gå till beslutslistan och klicka sedan på **[!UICONTROL Create activity]**.
+1. Gå till beslutslistan och klicka sedan på **[!UICONTROL Create decision]**.
 
 1. Ange beslutets namn samt start- och slutdatum och sluttid och klicka sedan på **[!UICONTROL Next]**.
 
@@ -83,26 +83,67 @@ Välj det reserverbjudande som ska presenteras som en sista utväg till kunder s
 
 ## Granska och spara beslutet {#review}
 
-Om allt är korrekt konfigurerat och ditt beslut är klart att användas för att presentera erbjudanden för kunderna klickar du på **[!UICONTROL Finish]** och väljer sedan **[!UICONTROL Save and activate]**.
+Om allt är korrekt konfigurerat visas en sammanfattning av beslutsegenskaperna.
 
-Du kan också spara beslutet som utkast för att redigera det och aktivera det senare.
+1. Se till att beslutet är klart att användas för att presentera erbjudanden för kunderna.
+1. Klicka på **[!UICONTROL Finish]**.
+1. Välj sedan **[!UICONTROL Save and activate]**.
 
-![](../../assets/save-activities.png)
+   ![](../../assets/save-activities.png)
+
+   Du kan också spara beslutet som utkast för att redigera det och aktivera det senare.
 
 Beslutet visas i listan med statusen **[!UICONTROL Live]** eller **[!UICONTROL Draft]**, beroende på om du aktiverade det eller inte i det föregående steget.
 
-Den är nu klar att användas för att leverera erbjudanden till kunder. Du kan markera den för att visa dess egenskaper och redigera eller inaktivera den.
+Den är nu klar att användas för att leverera erbjudanden till kunder.
 
-Mer information om erbjudanden finns i följande avsnitt:
+## Beslutslista {#decision-list}
 
-* [Lägg till personaliserade erbjudanden i meddelanden](../../deliver-personalized-offers.md)
-* [Leverera erbjudanden med API:er](../api-reference/decisions-api/deliver-offers.md)
+I beslutslistan kan du välja vilket beslut som ska visas. Därifrån kan du även redigera den, ändra dess status (**Utkast**, **Live**, **Fullständigt**, **Arkiverat**), duplicera beslutet eller ta bort det.
 
-![](../../assets/activities-created.png)
+![](../../assets/decision_created.png)
 
->[!NOTE]
->
->När ett beslut har skapats kan du klicka på dess namn i listan för att få tillgång till detaljerad information och visa alla ändringar som har gjorts på den på fliken **[!UICONTROL Change log]**. [Läs mer](../get-started/user-interface.md#changes-log).
+Klicka på knappen **[!UICONTROL Edit]** för att gå tillbaka till beslutsversionsläget, där du kan ändra beslutsbeslutets [information](#create-activity), [beslutsomfattningar](#add-decision-scopes) och [reserverbjudande](#add-fallback).
+
+Välj ett live-beslut och klicka på **[!UICONTROL Deactivate]** för att återställa beslutsstatusen till **[!UICONTROL Draft]**.
+
+Om du vill ange status till **[!UICONTROL Live]** igen väljer du knappen **[!UICONTROL Activate]** som nu visas.
+
+![](../../assets/decision_activate.png)
+
+Knappen **[!UICONTROL More actions]** aktiverar de åtgärder som beskrivs nedan.
+
+![](../../assets/decision_more-actions.png)
+
+* **[!UICONTROL Complete]**: anger beslutets status till  **[!UICONTROL Complete]**, vilket innebär att beslutet inte längre kan anropas. Den här åtgärden är bara tillgänglig för aktiverade beslut. Beslutet är fortfarande tillgängligt i listan, men du kan inte ange tillbaka status till **[!UICONTROL Draft]** eller **[!UICONTROL Approved]**. Du kan bara duplicera, ta bort eller arkivera den.
+
+* **[!UICONTROL Duplicate]**: skapar ett beslut med samma egenskaper, beslutsomfattningar och reserverbjudande. Som standard har det nya beslutet statusen **[!UICONTROL Draft]**.
+
+* **[!UICONTROL Delete]**: tar bort beslutet från listan.
+
+   >[!CAUTION]
+   >
+   >Beslutet och dess innehåll kommer inte längre att vara tillgängliga. Det går inte att ångra den här åtgärden.
+   >
+   >Om beslutet används i ett annat objekt kan det inte tas bort.
+
+* **[!UICONTROL Archive]**: anger beslutsstatus till  **[!UICONTROL Archived]**. Beslutet är fortfarande tillgängligt i listan, men du kan inte ange tillbaka status till **[!UICONTROL Draft]** eller **[!UICONTROL Approved]**. Du kan bara duplicera eller ta bort den.
+
+Du kan också ta bort eller ändra status för flera beslut samtidigt genom att markera motsvarande kryssrutor.
+
+![](../../assets/decision_multiple-selection.png)
+
+Om du vill ändra status för flera beslut med olika status, ändras bara statusen.
+
+![](../../assets/decision_change-status.png)
+
+När ett beslut har skapats kan du klicka på dess namn i listan.
+
+![](../../assets/decision_click-name.png)
+
+På så sätt kan du få tillgång till detaljerad information för det beslutet. Välj fliken **[!UICONTROL Change log]** för att [övervaka alla ändringar](../get-started/user-interface.md#changes-log) som har gjorts i beslutet.
+
+![](../../assets/decision_information.png)
 
 ## Videokurs {#video}
 
