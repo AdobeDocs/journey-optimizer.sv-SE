@@ -4,9 +4,9 @@ description: Lär dig hur du använder Adobe Experience Platform-scheman i Adobe
 feature: Scheman
 role: User
 level: Beginner
-source-git-commit: 8c25f548c59fae48dc627de21495474f14bb2614
+source-git-commit: ac6ba317909c962a81c7043bfa2a56e94bc5c9ad
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '319'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Med arbetsytan **Scheman** i [!DNL Adobe Journey Optimizer]-användargränssnitt
 
 ![](assets/schemas-home.png)
 
-Lär dig hur du använder schemats användargränssnitt i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en){target=&quot;_blank&quot;}
+Lär dig hur du använder schemats användargränssnitt i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html){target=&quot;_blank&quot;}
 
 Dokumentation steg för steg om hur du skapar ett schema med Schemaredigeraren finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html){target=&quot;_blank&quot;}
 
