@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att leverera sammankopplade, kontextuella och personaliserade upplevelser till kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 7914fd26371b9bd488256cb54f28b2dc5ab3c76b
+source-git-commit: 35536a6661983bc4b94336a0ffa088de3f4ca919
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '692'
 ht-degree: 43%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 43%
 
 + [Journey Optimizer-dokumentation](ajo-home.md)
 + [Senaste uppdateringar](using/documentation-updates.md)
-+ Kom igång{#get-started}
++ Komma igång{#get-started}
    + [Vad är Journey Optimizer?](using/get-started.md)
    + [Snabbstart](using/quick-start.md)
    + [Användargränssnitt](using/user-interface.md)
@@ -134,7 +134,7 @@ ht-degree: 43%
    + Skapa och hantera beslut {#create-manage-activities}
       + [Skapa beslut](using/offers/offer-activities/create-offer-activities.md)
       + [Konfigurera urval av erbjudanden i beslut](using/offers/offer-activities/configure-offer-selection.md)
-   + Skapa beslutshanteringsrapporter {create-reports}
+   + Skapa beslutshanteringsrapporter {#create-reports}
       + [Kom igång med beslutsledningshändelser](using/offers/reports/get-started-events.md)
       + [Viktig information om beslutshändelser](using/offers/reports/key-information.md)
       + [Åtkomst till XDM-fält för händelser](using/offers/reports/xdm-fields.md)
