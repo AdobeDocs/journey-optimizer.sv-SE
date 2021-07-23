@@ -5,9 +5,9 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
+source-git-commit: 80451fcd012257c8648e751076ed668aa05c44c7
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '1161'
 ht-degree: 1%
 
 ---
@@ -98,6 +98,10 @@ Behörighetsregler och -begränsningar gör att du kan definiera villkoren för 
 
    ![](../../assets/offer_rule.png)
 
+   >[!CAUTION]
+   >
+   >Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [händelse](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#events){target=&quot;_blank&quot;} kan du inte utnyttja den i ett erbjudande.
+
 1. Definiera **[!UICONTROL Priority]** för erbjudandet jämfört med andra om användaren kvalificerar för mer än ett erbjudande. Ju högre prioritet ett erbjudande har, desto högre blir prioriteringen jämfört med andra erbjudanden.
 
 1. Ange erbjudandets **[!UICONTROL Capping]**, vilket innebär hur många gånger erbjudandet kommer att visas totalt för alla användare. Om erbjudandet har levererats till alla användare det antal gånger som du har angett i det här fältet, upphör leveransen.
@@ -118,19 +122,68 @@ Behörighetsregler och -begränsningar gör att du kan definiera villkoren för 
 
 ## Se erbjudandet {#review}
 
-När regler och begränsningar för behörighet har definierats visas en sammanfattning av egenskaperna för erbjudandet. Om allt är korrekt konfigurerat och erbjudandet är klart att visas för användarna klickar du på **[!UICONTROL Finish]** och väljer sedan **[!UICONTROL Save and approve]**.
+När regler och begränsningar för behörighet har definierats visas en sammanfattning av egenskaperna för erbjudandet.
 
-Du kan också spara erbjudandet som ett utkast för att redigera det och godkänna det senare.
+1. Kontrollera att allt är rätt konfigurerat.
 
-![](../../assets/offer_review.png)
+1. När erbjudandet är klart att visas för användarna klickar du på **[!UICONTROL Finish]**.
 
-Erbjudandet visas i listan med statusen **[!UICONTROL Live]** eller **[!UICONTROL Draft]**, beroende på om du godkände det eller inte i det föregående steget.
+1. Välj **[!UICONTROL Save and approve]**.
 
-Den är nu klar att levereras till användarna. Du kan markera den för att visa dess egenskaper och redigera eller inaktivera den.
+   ![](../../assets/offer_review.png)
+
+   Du kan också spara erbjudandet som ett utkast för att redigera det och godkänna det senare.
+
+Erbjudandet visas i listan med statusen **[!UICONTROL Approved]** eller **[!UICONTROL Draft]**, beroende på om du godkände det eller inte i det föregående steget.
+
+Den är nu klar att levereras till användarna.
 
 ![](../../assets/offer_created.png)
 
-När du har skapat ett erbjudande kan du klicka på dess namn i listan för att få tillgång till detaljerad information, samt övervaka alla ändringar som har gjorts på det på fliken **[!UICONTROL Change log]**. [Läs mer](../get-started/user-interface.md#monitoring-changes).
+## Erbjudandelista {#offer-list}
+
+I erbjudandelistan kan du välja erbjudandet för att visa dess egenskaper. Du kan också redigera det, ändra dess status (**Utkast**, **Godkänd**, **Arkiverat**), duplicera erbjudandet eller ta bort det.
+
+![](../../assets/offer_created.png)
+
+Välj knappen **[!UICONTROL Edit]** om du vill gå tillbaka till erbjudandeversionsläget, där du kan ändra erbjudandets [information](#create-offer), [representationer](#representations), samt redigera [berättiganderegler och begränsningar](#eligibility).
+
+Välj ett godkänt erbjudande och klicka på **[!UICONTROL Undo approve]** för att ange erbjudandestatusen till **[!UICONTROL Draft]**.
+
+Om du vill ange status till **[!UICONTROL Approved]** igen väljer du motsvarande knapp som nu visas.
+
+![](../../assets/offer_approve.png)
+
+Knappen **[!UICONTROL More actions]** aktiverar de åtgärder som beskrivs nedan.
+
+![](../../assets/offer_more-actions.png)
+
+* **[!UICONTROL Duplicate]**: skapar ett erbjudande med samma egenskaper, representationer, regler och begränsningar för behörighet. Som standard har det nya erbjudandet statusen **[!UICONTROL Draft]**.
+* **[!UICONTROL Delete]**: tar bort erbjudandet från listan.
+
+   >[!CAUTION]
+   >
+   >Erbjudandet och dess innehåll kommer inte längre att vara tillgängliga. Det går inte att ångra den här åtgärden.
+   >
+   >Om erbjudandet används i en samling eller ett beslut kan det inte tas bort. Du måste ta bort erbjudandet från alla objekt först.
+
+* **[!UICONTROL Archive]**: anger erbjudandestatusen till  **[!UICONTROL Archived]**. Erbjudandet är fortfarande tillgängligt från listan, men du kan inte ange tillbaka status till **[!UICONTROL Draft]** eller **[!UICONTROL Approved]**. Du kan bara duplicera eller ta bort den.
+
+Du kan också ta bort eller ändra status för flera erbjudanden samtidigt genom att markera motsvarande kryssrutor.
+
+![](../../assets/offer_multiple-selection.png)
+
+Om du vill ändra status för flera erbjudanden med olika status, ändras bara statusen.
+
+![](../../assets/offer_change-status.png)
+
+När ett erbjudande har skapats kan du klicka på dess namn i listan.
+
+![](../../assets/offer_click-name.png)
+
+På så sätt kan du få tillgång till detaljerad information om erbjudandet. Välj fliken **[!UICONTROL Change log]** för att [övervaka alla ändringar](../get-started/user-interface.md#monitoring-changes) som har gjorts i erbjudandet.
+
+![](../../assets/offer_information.png)
 
 ## Videokurs {#video}
 
