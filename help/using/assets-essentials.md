@@ -5,9 +5,9 @@ feature: Översikt
 topic: Innehållshantering
 role: User
 level: Beginner
-source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
+source-git-commit: ac6ba317909c962a81c7043bfa2a56e94bc5c9ad
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '381'
 ht-degree: 2%
 
 ---
@@ -50,7 +50,7 @@ Mer information om hur du överför resurser finns i [Adobe Experience Manager A
 
 1. Markera filen som du vill överföra. När du är klar klickar du på **[!UICONTROL Upload]**.
 
-   Mer information om hur du hanterar dina resurser finns på den här [sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-organize.html?lang=en).
+   Mer information om hur du hanterar dina resurser finns på den här [sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-organize.html).
 
 1. När resursen har överförts kan du nu infoga dina resurser i något av dina meddelanden via e-postdesignern.
 
