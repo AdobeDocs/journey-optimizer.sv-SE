@@ -5,9 +5,9 @@ feature: Personalisering
 topic: Personalisering
 role: Data Engineer
 level: Beginner
-source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
+source-git-commit: ac6ba317909c962a81c7043bfa2a56e94bc5c9ad
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '664'
 ht-degree: 2%
 
 ---
@@ -90,7 +90,7 @@ I gränssnittet för uttrycksredigeraren väljer, ordnar, anpassar och validerar
 I den vänstra delen av skärmen visas en domänväljare där du kan välja källa för personalisering. Tillgängliga källor är:
 
 * **Profil** : listar alla referenser som är associerade med profilschemat som beskrivs i dokumentationen [ för ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)Adobe Experience Platform datamodell (XDM) {target=&quot;_blank&quot;}.
-* **Segmentmedlemskap** : listar alla segment som har skapats i Adobe Experience Platform Segmenteringstjänst. Mer information om segmentering finns [här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=en){target=&quot;_blank&quot;}.
+* **Segmentmedlemskap** : listar alla segment som har skapats i Adobe Experience Platform Segmenteringstjänst. Mer information om segmentering finns [här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target=&quot;_blank&quot;}.
 * **Erbjudanden** : visar alla erbjudanden som är kopplade till en viss placering. Välj placering och infoga sedan erbjudandena i innehållet. En fullständig dokumentation om hur du hanterar erbjudanden finns i [det här avsnittet](../deliver-personalized-offers.md).
 * **Kontext** : När  **** Meddelandeaktiviteten används i en resa är sammanhangsberoende resefält tillgängliga på den här menyn. Läs mer i [det här avsnittet](personalization-use-case.md).
 * **Hjälpfunktioner** : visar alla hjälpfunktioner som är tillgängliga för att utföra dataåtgärder, t.ex. beräkningar, dataformatering eller konverteringar, villkor och manipulera dem i personaliseringssammanhang. Läs mer i [det här avsnittet](functions/functions.md).
