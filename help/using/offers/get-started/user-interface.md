@@ -5,10 +5,10 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Intermediate
-source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
+source-git-commit: dda0f609056ac74e4f1b5b0d6069d4bdc43ccfb6
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 1%
+source-wordcount: '604'
+ht-degree: 0%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 1%
 Med Erbjudandebiblioteket kan du skapa och hantera dina praktik och erbjudanden på ett och samma ställe, samt få tillgång till alla beslut som skapats (tidigare kallade erbjudandeaktiviteter).
 
 Använd menyn **[!UICONTROL Offers]** för att hantera personaliserade erbjudanden och reserverbjudanden, ordna dem i samlingar och leverera dem genom att fatta beslut:
+
+* **[!UICONTROL Overview]**: Är du nybörjare  [!DNL Offer Decisioning]? Följ stegen på skärmen för att komma igång med att konfigurera ersättningar, erbjudanden och samlingar. När du redan är bekant med [!DNL Offer Decisioning] får du en översikt över dina senaste erbjudanden, samlingar och beslut. Se [Översikt](#overview).
 
 * **[!UICONTROL Offers]**: Få tillgång till dina personliga erbjudanden och reserverbjudanden eller skapa nya. Se [Skapa ett erbjudande](../offer-library/creating-personalized-offers.md) och [Skapa ett reserverbjudande](../offer-library/creating-fallback-offers.md).
 
@@ -37,6 +39,30 @@ Använd menyn **[!UICONTROL Components]** för att hantera de komponenter som kr
 * **[!UICONTROL Rankings]**: Skapa och hantera rankningsformler för att avgöra vilket erbjudande som ska presenteras först för en viss placering. Se [Skapa rankningsformler](../offer-library/create-ranking-formulas.md).
 
 ![](../../assets/offer_activities.png)
+
+## Översikt {#overview}
+
+När du inte har använt [!DNL Offer Decisioning] tidigare vägleder fliken **[!UICONTROL Overview]** dig genom de huvudsteg som behövs för att börja bygga ditt första erbjudandebeslut.
+
+![](../../assets/overview_onboarding.png)
+
+Följ stegen på skärmen för att börja skapa praktik, erbjudanden och samlingar.
+
+När du är klar med dessa första steg uppmanas du att skapa erbjudandebeslut (som tidigare kallades erbjudandeaktiviteter).
+
+![](../../assets/overview_collection-created.png)
+
+>[!NOTE]
+>
+>De viktigaste stegen för att skapa erbjudanden och använda dem i ett beslut finns i [det här avsnittet](../offer-library/key-steps.md).
+
+När du är mer bekant med [!DNL Offer Decisioning] och redan har skapat minst ett erbjudande visar fliken **[!UICONTROL Overview]** dina senaste erbjudanden, samlingar och beslut.
+
+Klicka på ett erbjudande eller på ett beslut om du vill få direkt tillgång till den valda artikelns information.
+
+Klicka på knappen **[!UICONTROL View all]** för att komma åt erbjudandet, samlingen eller beslutslistorna.
+
+![](../../assets/overview_view-all.png)
 
 ## Söka efter och filtrera information
 
