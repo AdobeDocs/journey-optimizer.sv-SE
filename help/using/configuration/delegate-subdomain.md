@@ -15,10 +15,10 @@ feature: Applikationsinställningar
 topic: Administrering
 role: Admin
 level: Intermediate
-source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
+source-git-commit: 29ebb0d8ba228ee8bf430d29f92cc30a9edac69a
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 9%
+source-wordcount: '472'
+ht-degree: 8%
 
 ---
 
@@ -49,7 +49,9 @@ Följ stegen nedan om du vill delegera en ny underdomän:
 
    >[!CAUTION]
    >
-   >Kontrollera att du har angett en giltig underdomän, till exempel marketing.company.com. Det är inte tillåtet att delegera en ogiltig underdomän till Adobe.
+   >Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.dincompany.com.
+   >
+   >Observera att underdomäner på flera nivåer, som email.marketing.your.com, inte stöds för närvarande.
 
 1. Listan med poster som ska placeras på dina DNS-servrar visas. Kopiera de här posterna, antingen en efter en eller genom att hämta en CSV-fil, och navigera sedan till din värdlösning för domänen för att generera matchande DNS-poster.
 
