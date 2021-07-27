@@ -5,10 +5,10 @@ feature: Datakällor
 topic: Administrering
 role: Admin
 level: Intermediate
-source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
+source-git-commit: d69779418d50fdc4b75cc777b27a62392d1634a0
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 74%
+source-wordcount: '291'
+ht-degree: 72%
 
 ---
 
@@ -34,5 +34,9 @@ Det finns två typer av datakällor:
 * De externa datakällor som du använder för att definiera en anslutning till externa system. Dessa är de du kan skapa. Läs [den här sidan](../datasource/external-data-sources.md).
 
 För varje datakälla definierar du den information som ska hämtas med fältgrupper. Fältgrupper är uppsättningar med fält som kan hämtas från en datakälla. Läs [den här sidan](../datasource/configure-data-sources.md#define-field-groups).
+
+>[!NOTE]
+>
+>Schemarelationer stöds nu för datakällor.
 
 Mer information om hur du konfigurerar en Adobe Experience Platform-datakälla och en extern datakälla samt hur du söker efter och använder data under en resa finns i denna [självstudievideo](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/configure-data-sources.html){target=&quot;_blank&quot;}.
