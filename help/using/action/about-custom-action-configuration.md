@@ -6,9 +6,9 @@ feature: Instruktioner
 topic: Administrering
 role: Admin
 level: Intermediate
-source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
+source-git-commit: e6d8d8ee637008a886ca308b5b0d9d53d90b11ce
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '594'
 ht-degree: 9%
 
 ---
@@ -74,7 +74,7 @@ I avsnittet **[!UICONTROL Action parameters]** klistrar du in ett exempel på JS
 
 >[!NOTE]
 >
->Fältnamn i nyttolasten får inte innehålla &quot;.&quot; tecken.
+>Fältnamn i nyttolasten får inte innehålla &quot;.&quot; tecken. De kan inte börja med tecknet &quot;$&quot;.
 
 Du kan definiera parametertypen (t.ex.: sträng, heltal osv.).
 
