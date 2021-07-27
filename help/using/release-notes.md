@@ -1,10 +1,10 @@
 ---
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
-source-git-commit: 0fb6d8f611a849696d83e0f129e6462431e5fe83
+source-git-commit: 4d3352184aac7fe19096c21650982e29506f2bff
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 12%
+source-wordcount: '233'
+ht-degree: 14%
 
 ---
 
@@ -26,8 +26,25 @@ Du kan även läsa de senaste [dokumentationsuppdateringarna](documentation-upda
 <tr>
 <td>
 <p>Med Adobe Experience Platform kan du definiera relationer mellan scheman för att kunna använda en datauppsättning som en uppslagstabell för en annan. Journey Optimizer kan nu utnyttja data från ett länkat schema.</p>
-<p>Dessa fält är tillgängliga i enhetlig händelsekonfiguration, resevillkor, meddelandepersonalisering och anpassad åtgärdspersonalisering.
+<p>Dessa fält är tillgängliga i enhetlig händelsekonfiguration, resevillkor, meddelandepersonalisering och anpassad åtgärdspersonalisering.</p>
 <p>Mer information finns i den <a href="event/experience-event-schema.md#leverage_schema_relationships">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Tillåtelselista</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du definiera en specifik sändningssäker lista på sandlådenivå för att undvika att skicka oönskade e-postmeddelanden till dina mottagare i en testmiljö, till exempel.
+</p>
+<p>Mer information finns i den <a href="allow-list.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
