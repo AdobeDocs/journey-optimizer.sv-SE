@@ -5,10 +5,10 @@ feature: Datakällor
 topic: Administrering
 role: Admin
 level: Intermediate
-source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
+source-git-commit: ed710e805a33616b20ce99bc5ac5e8ac26cbbb88
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 7%
+source-wordcount: '555'
+ht-degree: 9%
 
 ---
 
@@ -36,15 +36,13 @@ Här följer de huvudsakliga konfigurationsstegen för datakällor:
 
 Fältgrupper är uppsättningar fält som du kan hämta från en datakälla och använda under en resa.
 
-För varje datakälla kan du definiera flera fältgrupper, där var och en har en särskild cachevaraktighet.
+För varje datakälla kan du definiera flera fältgrupper.
 
 Du kan till exempel skapa en fältgrupp med telefonnummer, e-post, förnamn och adress för profilen. Sedan kan ni använda dessa data under resan för att skapa villkor. Du kan till exempel välja att bara skicka ett SMS om profilens telefonnummer inte är tomt. Om den är tom kan du skicka ett e-postmeddelande.
 
 Även om ett standardnamn läggs till automatiskt rekommenderar vi att du ger fältgruppen ett namn. Fältgruppnamnet visas för andra användare i [!DNL Journey Optimizer]. Att ge fältgrupper ett relevant namn är en god vana.
 
 När ett datakällfält används i en resa hämtas alla fält som är definierade för den fältgruppen. Därför är det bäst att bara välja de fält som du behöver för dina resor. Detta minskar svarstiden för förfrågningar i dina resor och därmed ökar prestandan. Observera att du enkelt kan lägga till fler fält i fältgrupper senare.
-
-**[!UICONTROL Cache duration]** är också viktigt eftersom det hjälper dig att optimera prestandan. Cachevaraktighet innebär att om data från en fältgrupp hämtas en gång, cachelagras den tillfälligt i en resa. Om samma data krävs senare under samma resa kommer systemet inte att göra någon ny begäran till datakällan. Konfigurationen av cachevaraktigheten bör anpassas för varje användningsfall. Om du behöver hämta realtidsdata, t.ex. hotellbokningsstatus, väderinformation eller antalet förmånspoäng, associerar du fältgruppen som innehåller dessa fält med en kort cachevaraktighet (t.ex. en sekund). För fält som uppdateras mindre ofta (namn, kön) skapar du en andra fältgrupp med längre cachevaraktighet (till exempel 5 dagar).
 
 Antalet resor som använder en fältgrupp visas i fältet **[!UICONTROL Used in]**. Du kan klicka på knappen **[!UICONTROL View journeys]** för att visa listan över resor som använder den här fältgruppen.
 
