@@ -5,7 +5,7 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: d76eee0efa6735d6d81d7d7c752ed253b4cbebb5
+source-git-commit: 7937c3b7c9247868a7a506991850537493a76cf1
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 3%
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en anpassad åtgärd. Läs mer i det här [avsnittet](../action/action.md).
 
-## Lägga till en meddelandeaktivitet
+## Lägg till en meddelandeaktivitet
 
 1. Som alltid ska du påbörja resan med en aktivitet eller en **Läs segment**-aktivitet.
 
