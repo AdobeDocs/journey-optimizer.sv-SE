@@ -1,10 +1,10 @@
 ---
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
-source-git-commit: 3d0404651ebd39b29cf3fc64152359e1b5b479f5
+source-git-commit: 670db54d4af8d5ecabcd27f22cac530a9f921af5
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 13%
+source-wordcount: '186'
+ht-degree: 14%
 
 ---
 
@@ -24,14 +24,9 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Ett underavsnitt har lagts till på spegelsidor. [Läs mer](message-tracking.md#mirror-page)
 * Namnet på&quot;erbjudandeaktiviteter&quot; har ändrats till&quot;beslut&quot; och&quot;beslut&quot; till&quot;beslutsomfattningar&quot; i dokumentation och skärmar. [Läs mer](offers/get-started/starting-offer-decisioning.md)
 * Nytt användningsfall: [anpassa ett meddelande med hjälpfunktioner](personalization/personalization-use-case-helper-functions.md)
-* För externa datakällor definieras nu en begränsningsregel på 15 anrop per sekund automatiskt. [Läs mer](configuration/external-systems.md#capping)
 * Dokumentationen för det lästa segmentet har uppdaterats för att återspegla materialiserade segmenteffekter. [Läs mer](building-journeys/read-segment.md)
-* För direktresor visas nu publiceringsdatumet och namnet på den användare som publicerade resan på skärmen för reseegenskaper. [Läs mer](building-journeys/journey-gs.md#change-properties)
-* På skärmen för reselistan har filtret för resetyp lagts till. [Läs mer](user-interface.md#section_lgm_hpz_pgb)
 * Uppdaterade begränsningar för resan. [Läs mer](building-journeys/limitations.md)
-* Parametern [!UICONTROL Throttling rate] har lagts till i Läs-segmentsaktiviteten. [Läs mer](building-journeys/read-segment.md#configuring-segment-trigger-activity)
 * Uppdaterat avsnittet Konfigurera erbjudandeurval i beslut. [Läs mer](offers/offer-activities/configure-offer-selection.md)
 * En varning har lagts till som anger att händelsebaserade erbjudanden för närvarande inte stöds. [Läs mer](offers/offer-library/creating-personalized-offers.md#eligibility)
 * Fliken Beslutshantering - nytt [!UICONTROL Overview] har dokumenterats. [Läs mer](offers/get-started/user-interface.md#overview)
 * Nya avsnitt har lagts till för att beskriva de åtgärder som är tillgängliga från erbjudandet och beslutslistorna: [Erbjudandelista](offers/offer-library/creating-personalized-offers.md#offer-list) och [Beslutslista](offers/offer-activities/create-offer-activities.md#decision-list).
- 
