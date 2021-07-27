@@ -5,9 +5,9 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
+source-git-commit: ed710e805a33616b20ce99bc5ac5e8ac26cbbb88
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '429'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,6 @@ Med åtgärdsaktiviteten **[!UICONTROL Update Profile]** kan du uppdatera en bef
 * Du kan inte använda åtgärden **Uppdatera profil** för att generera upplevelsehändelser, till exempel ett köp.
 * Precis som med andra åtgärder kan du definiera en alternativ sökväg om fel eller timeout inträffar, och du kan inte placera två åtgärder parallellt.
 * Uppdateringsbegäran som skickas till Platform kommer snabbt men inte omedelbart/inom en sekund. Det tar normalt några sekunder men ibland mer utan garanti. Om en åtgärd till exempel använder&quot;fält 1&quot; som har uppdaterats av en åtgärd av typen Uppdatera profil som har placerats precis tidigare, bör du därför inte förvänta dig att&quot;fält 1&quot; kommer att uppdateras i åtgärden.
-* Datakällor har en uppfattning om cache-varaktighet på fältgruppsnivå. Om du förväntar dig att under en resa återanvända ett profilfält som nyligen uppdaterats bör du vara noga med att definiera en mycket kort cachevaraktighet.
 
 ## Använda testläget {#using-the-test-mode}
 
