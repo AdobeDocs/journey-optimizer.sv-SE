@@ -5,9 +5,9 @@ feature: Resor
 topic: Innehållshantering
 role: User
 level: Intermediate
-source-git-commit: ef1d19d6abfccf3455f94b454c9c863396159161
+source-git-commit: b1a0d17a2f36b55b8ef692fa9056989a3884c2a8
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,13 @@ När [testprofiler](#select-test-profiles) har valts kan du skicka korrektur.
 
    ![](assets/send-proof-button.png)
 
-1. Välj de testprofiler som ska ta emot korrekturet och klicka på **[!UICONTROL Send proof]**. Du kan vid behov lägga till ett prefix till korrekturens ämnesrad.
+1. I fönstret **[!UICONTROL Send proof]** skriver du in mottagarens e-postadress och klickar på **[!UICONTROL Add]** för att skicka korrekturet till dig själv eller medlemmar i din organisation.
+
+   Observera att du kan lägga till upp till 10 mottagare för korrekturleveransen.
+
+   ![](assets/send-proof-button_2.png)
+
+1. Välj sedan de testprofiler som ska ta emot korrekturet och klicka på **[!UICONTROL Send proof]**. Du kan vid behov lägga till ett prefix till korrekturens ämnesrad. Endast alfanumeriska tecken och specialtecken, t.ex. . - _ ( ) [ ], tillåts som prefix till ämnesraden.
 
    ![](assets/send-proof-select.png)
 
