@@ -1,9 +1,9 @@
 ---
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
-source-git-commit: cd38b6ec9be0417f5c65e37805c0e7b072d1cb96
+source-git-commit: c9fa07efd03e84bf38fb1d67fabba4b6066c4179
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '373'
 ht-degree: 13%
 
 ---
@@ -50,21 +50,22 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 
 ### Förbättringar
 
-* **Resor**
-   * Den totala begränsningsfrekvensen för alla lässegment som körs samtidigt i samma sandlåda är begränsad till 17 000 meddelanden per sekund. [Läs mer](building-journeys/read-segment.md#configuring-segment-trigger-activity)
-   * Fältet **Cachevaraktighet** har tagits bort från konfigurationspanelen för datakällan. [Läs mer](datasource/about-data-sources.md)
-   * För externa datakällor definieras nu en begränsningsregel på 15 anrop per sekund automatiskt. [Läs mer](configuration/external-systems.md#capping)
-   * För direktresor visas nu publiceringsdatumet och namnet på den användare som publicerade resan på skärmen för reseegenskaper. [Läs mer](building-journeys/journey-gs.md#change-properties)
-   * På skärmen för reselistan har filtret för resetyp lagts till. [Läs mer](user-interface.md#section_lgm_hpz_pgb)
-   * Parametern **[!UICONTROL Throttling rate]** har lagts till i Läs-segmentsaktiviteten. [Läs mer](building-journeys/read-segment.md#configuring-segment-trigger-activity)
+**Resor**
 
-* **Förhandsgranska och testa**
-   * Identitet och namnutrymme visas nu på skärmen **[!UICONTROL Preview]**. [Läs mer](preview.md#preview-your-messages)
-   * Antalet testmeddelanden för korrektur är nu begränsat till 10.
-   * Tecken som tillåts för **ämnesradsprefixet** i korrektur är nu begränsade. [Läs mer](preview.md#send-proofs)
+* Den totala begränsningsfrekvensen för alla lässegment som körs samtidigt i samma sandlåda är begränsad till 17 000 meddelanden per sekund. [Läs mer](building-journeys/read-segment.md#configuring-segment-trigger-activity)
+* Fältet **Cachevaraktighet** har tagits bort från konfigurationspanelen för datakällan. [Läs mer](datasource/about-data-sources.md)
+* För externa datakällor definieras nu en begränsningsregel på 15 anrop per sekund automatiskt. [Läs mer](configuration/external-systems.md#capping)
+* För direktresor visas nu publiceringsdatumet och namnet på den användare som publicerade resan på skärmen för reseegenskaper. [Läs mer](building-journeys/journey-gs.md#change-properties)
+* På skärmen för reselistan har filtret för resetyp lagts till. [Läs mer](user-interface.md#section_lgm_hpz_pgb)
+* Parametern **[!UICONTROL Throttling rate]** har lagts till i Läs-segmentsaktiviteten. [Läs mer](building-journeys/read-segment.md#configuring-segment-trigger-activity)
 
-* **Redigerare för anpassningsuttryck**
-   * Hjälplistan har bytt namn och ordnats om.
+**Förhandsgranska och testa meddelanden**
+* Identitet och namnutrymme visas nu på skärmen **[!UICONTROL Preview]**. [Läs mer](preview.md#preview-your-messages)
+* Antalet testmeddelanden för korrektur är nu begränsat till 10.
+* Tecken som tillåts för **ämnesradsprefixet** i korrektur är nu begränsade. [Läs mer](preview.md#send-proofs)
+
+**Redigerare för anpassningsuttryck**
+* Hjälplistan har bytt namn och ordnats om.
 
 ### Korrigeringar
 
