@@ -1,10 +1,10 @@
 ---
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
-source-git-commit: c9fa07efd03e84bf38fb1d67fabba4b6066c4179
+source-git-commit: a1800c333bfbee178682d773c729aad7e23d86d0
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 13%
+source-wordcount: '394'
+ht-degree: 12%
 
 ---
 
@@ -60,11 +60,13 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 * Parametern **[!UICONTROL Throttling rate]** har lagts till i Läs-segmentsaktiviteten. [Läs mer](building-journeys/read-segment.md#configuring-segment-trigger-activity)
 
 **Förhandsgranska och testa meddelanden**
+
 * Identitet och namnutrymme visas nu på skärmen **[!UICONTROL Preview]**. [Läs mer](preview.md#preview-your-messages)
 * Antalet testmeddelanden för korrektur är nu begränsat till 10.
 * Tecken som tillåts för **ämnesradsprefixet** i korrektur är nu begränsade. [Läs mer](preview.md#send-proofs)
 
 **Redigerare för anpassningsuttryck**
+
 * Hjälplistan har bytt namn och ordnats om.
 
 ### Korrigeringar
@@ -74,3 +76,5 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 * Ett problem där IP-information saknades på PTR-inspelningsskärmen har korrigerats.
 * Lokalisering i erbjudandefältet i Expression Editor är nu implementerat.
 * Felaktigt avstånd i informationspopup-fönster har korrigerats.
+* Korrigerade ett fel i e-postdesignern vid överföring av en HTML-fil där en intern formatmall med egenskapen `background-image` inte stöds.
+
