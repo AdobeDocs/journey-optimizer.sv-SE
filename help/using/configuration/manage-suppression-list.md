@@ -15,7 +15,7 @@ feature: Applikationsinställningar
 topic: Administrering
 role: Admin
 level: Intermediate
-source-git-commit: 83d0cbdb7524f0317bd576ed7c689f9933bb658f
+source-git-commit: 661d43d3a39fcead068562dc6fb567bdc4027432
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 1%
@@ -76,7 +76,7 @@ För varje e-postadress som visas kan du även kontrollera **[!UICONTROL Reason]
 Möjliga orsaker till leveransfel är:
 
 | Orsak | Beskrivning | Undertryckningskategori |
----------|----------|--------- |
+| --- | --- | --- |
 | **[!UICONTROL Undetermined]** | Det gick inte att identifiera den studsorsak som togs emot från den mottagande domänens MTA-agent (Message Transfer Agent). | Ignorerad |
 | **[!UICONTROL Invalid Recipient]** | Mottagaren är ogiltig eller finns inte. | Hård |
 | **[!UICONTROL Soft Bounce]** | Meddelandet studsade på ett annat sätt än de mjuka fel som anges i den här tabellen, till exempel när det skickas över den tillåtna hastighet som rekommenderas av en Internet-leverantör. | Mjuk |
