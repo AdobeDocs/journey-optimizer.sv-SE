@@ -5,7 +5,7 @@ feature: Erbjudanden
 topic: Integreringar
 role: User
 level: Beginner
-source-git-commit: 0e5cc9101ff382ce9fde442da38eb46aa28e9c77
+source-git-commit: 22520570d96db43d39931149296b27a6211f7aa5
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 50%
@@ -58,7 +58,7 @@ Beslutshanteringsfunktionerna och integrationen med Adobe Experience Platform g�
 
 * Beslutshanteringen hjälper er också att förbättra kundernas upplevelse när ni kontaktar supportteamet. Med API:er för beslutshantering kan du i kundtjänstagentportalen visa information om kundens inlösta och nästa bästa erbjudanden.
 
-   ![](../../assets/call-center.png)
+   ![](../../assets/do-not-localize/call-center.png)
 
 
 ## Ordlista {#glossary}
@@ -104,7 +104,7 @@ I videon nedan ges en introduktion till nyckelfunktioner, arkitektur och använd
 
 >[!VIDEO](https://video.tv.adobe.com/v/326961?quality=12&learn=on)
 
-### Skapa och hantera erbjudanden {#use-offer-decisioning}
+### Definiera och hantera erbjudanden {#use-offer-decisioning}
 
 I videon nedan visas hur du använder Beslutshantering för att definiera och hantera dina erbjudanden och utnyttja kunddata i realtid.
 
