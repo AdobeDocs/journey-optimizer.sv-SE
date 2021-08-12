@@ -16,7 +16,7 @@ feature: Kontrollgrupper
 topic: Administrering
 role: Admin
 level: Intermediate
-source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
+source-git-commit: 4037e90926a19175c1508b78faf2c9167c682458
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 6%
@@ -103,4 +103,4 @@ Den här produktprofilen innehåller följande behörigheter:
 
 | Funktioner | Behörigheter|
 |-|-|
-|Beslutshantering| <ul><li>**Hantera beslut**: läsa, skapa, redigera och ta bort beslutsenheter.</li><li>**Visa beslut**: skrivskyddad åtkomst till beslutsenheter.</li><li>**Hantera rankningsstrategier**: läsa, skapa, redigera och ta bort anpassade meddelanderapporter och använda åtgärdsfunktioner.</li><li>**Publiceringsbeslut**: godkänna eller inte godkänna beslutsaktiviteter.</li></ul>|
+|Beslutshantering| <ul><li>**Hantera beslut**: läsa, skapa, redigera och ta bort beslutsenheter.</li><li>**Visa beslut**: skrivskyddad åtkomst till beslutsenheter.</li><li>**Hantera rankningsstrategier**: läsa, skapa, redigera och ta bort anpassade meddelanderapporter och använda åtgärdsfunktioner.</li><li>**Publiceringsbeslut**: aktivera eller inaktivera beslutsaktiviteter.</li></ul>|
