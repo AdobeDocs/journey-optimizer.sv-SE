@@ -1,11 +1,10 @@
 ---
 title: Kom igång med push-konfiguration
 description: Förstå dataflöde och komponenter för push-meddelanden
-feature: Applikationsinställningar
-topic: Push
+feature: Programinställningar, tryck
 role: Admin
 level: Intermediate
-source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
+source-git-commit: 1b11ff3848434a4cac1ca17318950481f20537c8
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 0%
@@ -55,7 +54,7 @@ Följande bild visar vilka system och tjänster som är kopplade till tillhöran
    * Skapar mobil egenskap på klientsidan och lägger till tillägg. SDK är nära integrerat med dessa tillägg för att ge en smidig datainsamling.
    * Registrerar identifierare och appreferenser för mobilappspaket
 
-* **Adobe Experience Platform kundprofiler i realtid**  ger en helhetsbild av varje enskild kund genom att kombinera data från flera kanaler, inklusive webben, mobiler, CRM och tredje part. Med hjälp av profilen kan ni sammanställa kunddata i en enhetlig vy som ger ett användbart, tidsstämplat konto för varje kundinteraktion. Push-token för en viss programanvändare lagras mot användarens profil som postdata medan de interaktioner som användaren gör med push-meddelanden spåras som händelsedata för tidsserier. [Läs mer om Adobe Experience Platform kundprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) i realtid{target=&quot;_blank&quot;}.
+* **Adobe Experience Platform kundprofiler i realtid**  ger en helhetsbild av varje enskild kund genom att kombinera data från flera kanaler, inklusive webben, mobiler, CRM och tredje part. Med hjälp av profilen kan ni sammanställa kunddata i en enhetlig vy som ger ett användbart, tidsstämplat konto för varje kundinteraktion. Push-token för en viss programanvändare lagras mot användarens profil som postdata medan de interaktioner som användaren gör med push-meddelanden spåras som händelsedata för tidsserier. [Läs mer om Adobe Experience Platform kundprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv) i realtid{target=&quot;_blank&quot;}.
 
 * **[!DNL Adobe Journey Optimizer]** : När era mobilappsintegreringar med ovan nämnda komponenter är på plats och era kundprofiler i Adobe Experience Platform kan ni skapa och samordna push-meddelanden i  [!DNL Adobe Journey Optimizer] för att interagera med era användare.
 
