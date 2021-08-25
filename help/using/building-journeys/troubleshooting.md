@@ -1,14 +1,14 @@
 ---
 title: Felsökning av resor
 description: Lär dig hur du felsöker fel under resor
-feature: Resor
-topic: Innehållshantering
+feature: Journeys
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
+source-git-commit: 6e18cc33154a8568c24ff92944c0bfa16b30eb80
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 85%
+source-wordcount: '1040'
+ht-degree: 84%
 
 ---
 
@@ -61,7 +61,7 @@ Här följer några saker som administratören bör kontrollera:
 * Innehåller händelsens nyttolast ett händelse-ID?
 * Angav du rätt URL?
 * Har du följt nyttolastens struktur gällande API:er för strömningsinmatning med hjälp av förhandsgranskningen av nyttolastens struktur i händelsens konfigurationsfönster? Läs [den här sidan](../event/about-creating.md#preview-the-payload).
-* Har du använt rätt nyckel/värde-par i rubriken på händelsen?
+* Använde du rätt nyckelvärdepar i huvudet på din händelse?
 
    ```
    X-gw-ims-org-id - your ORGID
