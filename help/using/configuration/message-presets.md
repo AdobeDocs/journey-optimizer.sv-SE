@@ -1,13 +1,13 @@
 ---
 title: Skapa meddelandeförinställningar
 description: Lär dig hur du konfigurerar och övervakar meddelandeförinställningar
-feature: Applikationsinställningar
-topic: Administrering
+feature: Application Settings
+topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: 7e879a56a5ed416cc12c2acc3131e17f9dd1e757
+source-git-commit: f52f73b1d7f2ad5a7ebd2e8b23b7c68c4dc99212
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '1206'
 ht-degree: 1%
 
 ---
@@ -20,9 +20,8 @@ Med [!DNL Journey Optimizer] kan du konfigurera meddelandeförinställningar som
 >[!CAUTION]
 >
 > * Konfigurationen av meddelandeförinställningar är begränsad till Reseadministratörer. [Läs mer](../administration/ootb-product-profiles.md#journey-administrator)
-   >
-   > 
-* Du måste utföra konfigurationsstegen för e-post och push innan du kan skapa meddelandeförinställningar.
+>
+> * Du måste utföra konfigurationsstegen för e-post och push innan du kan skapa meddelandeförinställningar.
 
 
 När meddelandeförinställningarna har konfigurerats kan du välja dem när du skapar meddelanden från **[!UICONTROL Presets]**-listan.
@@ -57,7 +56,7 @@ Så här skapar du en meddelandeförinställning:
 
    * Välj den underdomän som ska användas för att skicka e-postmeddelanden. [Läs mer](about-subdomain-delegation.md)
    * Välj den IP-pool som ska associeras med förinställningen. [Läs mer](ip-pools.md)
-   * Ange rubrikparametrarna för e-postmeddelanden som skickas med förinställningen.
+   * Ange rubrikparametrarna för e-postmeddelanden som skickas med den förinställningen.
 
       >[!CAUTION]
       >
@@ -81,8 +80,17 @@ Så här skapar du en meddelandeförinställning:
       >
       >Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-`.
 
+   * Konfigurera parametrarna **för e-poståterförsök**. Som standard är [återförsökstiden](retries.md#retry-duration) inställd på 84 timmar, men du kan justera den här inställningen så att den passar dina behov bättre.
 
-1. Konfigurera inställningar för **push-meddelanden**.
+      ![](../assets/preset-retry-paramaters.png)
+
+      Du måste ange ett heltalsvärde (i timmar eller minuter) inom följande intervall:
+      * För marknadsföringsmejl är den minsta återförsöksperioden 6 timmar.
+      * För transaktionell e-posttyp är den minsta återförsöksperioden 10 minuter.
+      * För båda e-posttyperna är den maximala återförsöksperioden 84 timmar (eller 5 040 minuter).
+
+
+1. Konfigurera inställningarna för **push-meddelanden**.
 
    ![](../assets/preset-push.png)
 
@@ -110,13 +118,17 @@ Så här skapar du en meddelandeförinställning:
    * Verifiering av IP-pool
    * A/PTR-post, t/m/res-underdomänverifiering
 
+   >[!NOTE]
+   >
+   >Om kontrollerna inte lyckas kan du läsa mer om möjliga felorsaker i [det här avsnittet](#monitor-message-presets).
+
 1. När kontrollerna har slutförts får meddelandeförinställningen statusen **[!UICONTROL Active]**. Den är klar att användas för att leverera meddelanden.
 
    <!-- later on, users will be notified in Pulse -->
 
    ![](../assets/preset-active.png)
 
-## Övervaka meddelandeförinställningar
+## Övervaka meddelandeförinställningar {#monitor-message-presets}
 
 Alla meddelandeförinställningar visas på menyn **[!UICONTROL Channels]** / **[!UICONTROL Message presets]**. Det finns filter som hjälper dig att bläddra igenom listan (kanaltyp, användare, status).
 
@@ -130,11 +142,29 @@ Meddelandeförinställningar kan ha följande status:
 * **[!UICONTROL Failed]**: En eller flera kontroller misslyckades under verifieringen av meddelandeförinställningen.
 * **[!UICONTROL De-activated]**: Meddelandeförinställningen inaktiveras. Det kan inte användas för att skapa nya meddelanden.
 
+Om det inte går att skapa en meddelandeförinställning beskrivs informationen för varje möjlig felorsak nedan.
+
+Om något av dessa fel inträffar kan du kontakta [Adobe kundtjänstsupport](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;} för att få hjälp.
+
+* **SPF-validering misslyckades**: SPF (Sender Policy Framework) är ett autentiseringsprotokoll för e-post som tillåter att auktoriserade IP-adresser kan skicka e-post från en viss underdomän.
+SPF-valideringsfel innebär att IP-adresserna i SPF-posten inte matchar IP-adresserna som används för att skicka e-post till postlådeprovidern.
+
+* **DKIM-validering misslyckades**: Med DKIM kan mottagarservern verifiera att det mottagna meddelandet skickades av den äkta avsändaren av den associerade domänen och att innehållet i det ursprungliga meddelandet inte ändrades på dess sätt.
+DKIM-valideringsfel innebär att de mottagande e-postservrarna inte kan verifiera meddelandeinnehållets autenticitet och dess association med den sändande domänen.
+
+* **MX-postvalidering misslyckades**: MX-postvalideringsfel innebär att de e-postservrar som ansvarar för att ta emot inkommande e-post för en viss underdomän inte är korrekt konfigurerade.
+
+* **Leveranskonfigurationer misslyckades**: Fel i leveranskonfigurationer kan uppstå på grund av någon av följande orsaker:
+   * Blockeringslistning av de tilldelade IP-adresserna
+   * Ogiltigt `helo`-namn
+   * E-postmeddelanden som skickas från andra IP-adresser än de som anges i IP-poolen för motsvarande förinställning
+   * Det går inte att leverera e-postmeddelanden till inkorg hos större internetleverantörer som Gmail och Yahoo
+
 ## Redigera meddelandeförinställningar
 
 Om du vill redigera en meddelandeförinställning måste du först avaktivera den så att den inte är tillgänglig för att skapa nya meddelanden (publicerade meddelanden som använder den här förinställningen påverkas inte och fortsätter att fungera). Du måste sedan duplicera meddelandeförinställningen för att skapa en ny version som du använder för att skapa nya meddelanden:
 
-1. Öppna listan med meddelandeförinställningar och inaktivera sedan den meddelandeförinställning som du vill redigera.
+1. Öppna listan med meddelandeförinställningar och avaktivera sedan den meddelandeförinställning som du vill redigera.
 
    ![](../assets/preset-deactivate.png)
 
@@ -148,7 +178,7 @@ Om du vill redigera en meddelandeförinställning måste du först avaktivera de
 
    >[!NOTE]
    >
-   >Det går inte att ta bort förinställningar för inaktiverade meddelanden för att undvika problem i resor som uppstår när du använder dessa förinställningar för att skicka meddelanden.
+   >Det går inte att ta bort förinställningar för inaktiverade meddelanden för att undvika problem i resor med dessa förinställningar för att skicka meddelanden.
 
 ## Instruktionsvideo{#video-presets}
 
