@@ -1,13 +1,13 @@
 ---
 title: Hantera avanmälan
 description: Lär dig hur du hanterar avanmälan och sekretess
-feature: Resor
-topic: Innehållshantering
+feature: Journeys
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 8798d73ace981c44ef896ac6983b50a14286eb57
+source-git-commit: cdc0909a296799c5c60e854474a23750cf7b1b2f
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,8 @@ Att ge mottagarna möjlighet att avbryta prenumerationen på information från e
 Därför måste du alltid inkludera en **länk för att avbryta prenumerationen** i alla e-postmeddelanden som skickas till mottagarna:
 * När du klickar på den här länken dirigeras mottagarna till en landningssida med en knapp som bekräftar att de avanmäler sig.
 * När du klickar på avanmälningsknappen kommer ett Adobe I/O-anrop att göras för att uppdatera profildata med den här informationen. [Läs mer om detta](#consent-service-api).
+
+### Lägg till en länk för att avbryta prenumerationen {#add-unsubscribe-link}
 
 Följ stegen nedan om du vill lägga till en länk för att avbryta prenumerationen:
 
@@ -87,7 +89,7 @@ På fliken **[!UICONTROL Attributes]** ser du att värdet för **[!UICONTROL cho
 
 <!--The opt-out URL is resolved upon each recipient receiving the message. It is then personalized with the relevant encrypted parameters (profile ID, profile name, journey ID, sandbox ID, and message execution ID).-->
 
-## Avanmäl API-anrop {#opt-out-api}
+### Avanmäl API-anrop {#opt-out-api}
 
 När mottagaren har avanmält sig genom att klicka på länken för att avbryta prenumerationen anropas ett Adobe I/O-API <!--Consent service API to capture the encrypted data and-->för att uppdatera motsvarande profils inställning.
 
@@ -129,6 +131,14 @@ Begärandetext:
 
 <!--The Consent service /-->[!DNL Journey Optimizer] will <!--decrypt and-->use these parameters to update the corresponding profile's choice.
 <!--and provide an answer back to the landing page.-->
+
+## Avanmäl dig med ett klick {#one-click-opt-out}
+
+Eftersom många kunder vill ha en enklare process för att avbryta prenumerationen kan du även lägga till en länk för att avanmäla dig med ett enda klick i ditt e-postinnehåll. Med den här länken kan dina mottagare snabbt avbeställa din kommunikation utan att omdirigeras till en landningssida där de måste bekräfta att de vill avanmäla sig.
+
+Lär dig hur du lägger till en länk för avanmälan i meddelandeinnehållet i [det här avsnittet](message-tracking.md#one-click-opt-out-link).
+
+När meddelandet har skickats via en [resa](building-journeys/journey.md) avanmälningslänk avanmäls han omedelbart om en mottagare klickar på avanmälningslänken.
 
 ## Avbeställ länk i rubrik {#unsubscribe-email}
 
