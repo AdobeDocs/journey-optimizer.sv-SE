@@ -1,14 +1,14 @@
 ---
 title: Konfigurera ett push-meddelande
 description: Lär dig hur du skapar ett push-meddelande i Journey Optimizer
-feature: Översikt
-topic: Innehållshantering
+feature: Overview
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
+source-git-commit: 6e18cc33154a8568c24ff92944c0bfa16b30eb80
 workflow-type: tm+mt
-source-wordcount: '1196'
-ht-degree: 12%
+source-wordcount: '1192'
+ht-degree: 11%
 
 ---
 
@@ -82,7 +82,7 @@ Ett tyst push-meddelande (eller bakgrundsmeddelande) är en dold instruktion som
 
 Välj alternativet **[!UICONTROL Silent Notification]** för att tyst meddela programmet: I detta fall överförs anmälan direkt till ansökan. Ingen varning visas på enhetsskärmen.
 
-Använd avsnittet **[!UICONTROL Custom data]** för att lägga till nyckel/värde-par.
+Använd avsnittet **[!UICONTROL Custom data]** för att lägga till nyckelvärdepar.
 
 ## Anpassade data
 
