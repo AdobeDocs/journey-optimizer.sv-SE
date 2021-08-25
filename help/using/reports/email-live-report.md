@@ -1,13 +1,13 @@
 ---
 title: E-postlive-rapport
 description: Lär dig hur du använder data från e-postrapporten
-feature: Rapportering
-topic: Innehållshantering
+feature: Reporting
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: eba6ff87438325f58c453c12552c75c69dbdac0b
+source-git-commit: c54e4443c0a8b6c2e427fa007adf5d800b2ba3b5
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -57,3 +57,9 @@ Widgetarna **[!UICONTROL Bounce Reasons]** och **[!UICONTROL Bounce categories]*
 * **[!UICONTROL Soft bounce]**: Det totala antalet tillfälliga fel, t.ex. en fullständig inkorg.
 
 * **[!UICONTROL Ignored]**: Det totala antalet tillfälliga, t.ex. frånvaro, eller ett tekniskt fel, t.ex. om avsändartypen är postmaster.
+
+>[!NOTE]
+>
+>Profilerna med **[!UICONTROL Suppressed]**- eller **[!UICONTROL Not allowed]**-status exkluderas när meddelandet skickas. Samtidigt som **reseservrapporterna** visar dessa profiler som om de har flyttats genom resan ([Läs segment](../building-journeys/read-segment.md) och [Meddelande](../building-journeys/journeys-message.md)-aktiviteter), kommer **e-postrapporterna** inte att inkludera dem i **[!UICONTROL Sent]**-måtten eftersom de filtreras ut innan e-postmeddelandet skickas.
+>
+>Läs mer i [Suppressionslistan](../suppression-list.md) och [Tillåtelselista](../allow-list.md). Om du vill ta reda på orsaken till alla undantagsfall kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html).
