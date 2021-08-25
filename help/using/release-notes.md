@@ -1,10 +1,10 @@
 ---
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
-source-git-commit: ff48c78cfa5c48f32073e9df1f126504e291ab5a
+source-git-commit: 77d392cc09bd0923faf3d27e951a17cd702d257c
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 9%
+source-wordcount: '964'
+ht-degree: 10%
 
 ---
 
@@ -124,7 +124,7 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 
 **Personalisering**
 
-* **Uttrycksredigeraren**  - Nu kan du enkelt lägga till ett reservvärde när du definierar personalisering: när anpassningsfältet är tomt för en profil visas reservvärdet. [Läs mer](documentation-updates.md)
+<!--* **Expression Editor** - You can now easily add a fall-back value when defining personalization: when personalization field is empty for a profile, the fall-back value will display. [Learn more](documentation-updates.md)-->
 
 **E-postkonfiguration**
 
