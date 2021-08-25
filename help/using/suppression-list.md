@@ -1,14 +1,14 @@
 ---
 title: Undertryckningslista
 description: Lär dig vad suppressionslistan är, dess syfte och vad som ingår i den.
-feature: levererbarhet
-topic: Innehållshantering
+feature: Deliverability
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+source-git-commit: ea2bb0c2956781138a0c7f2d0babfd91070dd351
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 4%
+source-wordcount: '697'
+ht-degree: 2%
 
 ---
 
@@ -36,9 +36,11 @@ E-postadresser läggs till i listan över inaktiveringar enligt följande:
 
 * Alla **pappershögarna** och **skräppostklagomål** skickar automatiskt motsvarande e-postadresser till listan över spärrade adresser efter en enstaka förekomst.
 
-* **Mjuka** markeringar och tillfälliga  **** ignoreringsfel skickar inte omedelbart en e-postadress till listan över inaktiveringar, men de ökar en felräknare. Flera försök görs sedan, och när felräknaren når tröskelvärdet läggs adressen till i listan över spärrade adresser. Läs mer om [återförsök](configuration/retries.md).
+* **Mjuka** <!--and temporary **ignored** errors--> markeringar skickar inte omedelbart en e-postadress till listan över inaktiveringar, men de ökar en felräknare. Flera [försök](configuration/retries.md) utförs sedan, och när felräknaren når tröskelvärdet läggs adressen till i listan.
 
-<!--You can also manually add an address to the suppression list. Manual category will be available when ability to manually add an address to the suppression list (via API) is released.-->
+* Du kan även [**manuellt** lägga till en adress eller en domän](configuration/manage-suppression-list.md#add-addresses-and-domains) i listan över inaktiveringar.
+
+Läs mer om hårda studsar och mjuka studsar i [det här avsnittet](#delivery-failures).
 
 >[!NOTE]
 >
@@ -49,21 +51,27 @@ För varje adress, den grundläggande orsaken till inaktiveringen och undertryck
 
 <!--Once a message is sent, the message logs allow you to view the delivery status for each recipient and the associated failure type and reason. [Learn more about monitoring message execution](monitoring.md). NO ACCESS TO LOGS YET-->
 
+>[!NOTE]
+>
+>Profilerna med **[!UICONTROL Suppressed]**-status exkluderas under meddelandesändningsprocessen. Samtidigt som **reseservrapporterna** visar dessa profiler som om de har flyttats genom resan ([Läs segment](building-journeys/read-segment.md) och [Meddelande](building-journeys/journeys-message.md)-aktiviteter), kommer **e-postrapporterna** inte att inkludera dem i **[!UICONTROL Sent]**-måtten eftersom de filtreras ut innan e-postmeddelandet skickas.
+>
+>Läs mer i [Live-rapporten](reports/live-report.md) och [Global Report](reports/global-report.md). Om du vill ta reda på orsaken till alla undantagsfall kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html).
+
 ### Leveransfel {#delivery-failures}
 
-Det finns tre typer av fel när en leverans misslyckas:
+Det finns två typer av fel när en leverans misslyckas:
 
-* **Hård studs**. Ett hårt studsande indikerar en ogiltig e-postadress (dvs. en e-postadress som inte finns). Detta innebär ett studsmeddelande från den mottagande e-postservern som uttryckligen anger att adressen är ogiltig, till exempel &#39;okänd användare&#39;.
+* **Hård studs**. Ett hårt studsande indikerar en ogiltig e-postadress (dvs. en e-postadress som inte finns). Detta innebär ett studsmeddelande från den mottagande e-postservern som uttryckligen anger att adressen är ogiltig.
 * **Mjuk studsa**. Detta är ett tillfälligt e-poststuds som inträffade för en giltig e-postadress.
-* **Ignorerad**. Detta är ett e-poststudsmeddelande som inträffade för en giltig e-postadress men som är känt som temporärt, till exempel ett misslyckat anslutningsförsök, ett tillfälligt skräppostrelaterat problem (e-postrykte) eller ett tillfälligt tekniskt problem.<!--does it exist in CJM?-->
+<!--* **Ignored**. This is an email bounce that occurred for a valid email address but is known to be temporary, such as a failed connection attempt, a temporary Spam-related issue (email reputation), or a temporary technical issue.-->
 
 Ett **hårt studsande** lägger automatiskt till e-postadressen i listan över spärrade adresser.
 
-Ett **mjukt studsfel** eller ett **ignorerat**-fel som inträffar för många gånger skickar även e-postadressen till listan efter flera försök. [Läs mer om återförsök](configuration/retries.md)
+Ett **mjukt studsande** <!--or an **ignored** error--> som inträffar för många gånger skickar även e-postadressen till listan efter flera försök. [Läs mer om återförsök](configuration/retries.md)
 
 Om du fortsätter att skicka till de här adresserna kan det påverka leveransfrekvensen, eftersom den talar om för Internet-leverantörer att du kanske inte följer god praxis för underhåll av e-postadresslistor och därför kanske inte är en betrodd avsändare.
 
-### Skräppostklagomål {#spam-complaints}
+### Skräppost {#spam-complaints}
 
 Supprestionslistan samlar in e-postadresser som markerar ditt meddelande som skräppost. Om någon till exempel skriver till en kundtjänst och begär att aldrig få e-post igen från dig, kommer personens e-postadress att undertryckas i din instans och du kommer inte att kunna leverera till den adressen längre.
 
