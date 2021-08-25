@@ -2,13 +2,13 @@
 keywords: Journey Optimizer;home;populära topics
 title: Journey Optimizer produktdokumentation
 description: Adobe Journey Optimizer produkthjälpcenter
-feature: Översikt
-topic: Innehållshantering
+feature: Overview
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 761241c0a09e0a3954b42688c4a0bb7f1571b716
+source-git-commit: ec880e9a42180221c3046aedf8ec46eff70d2493
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '208'
 ht-degree: 9%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 9%
 <table style="table-layout:fixed">
 <tr>
   <td>
-    <div><strong>Kom igång</strong>
+    <div><strong>Komma igång</strong>
     </div>
     <p>
     <em></em>
@@ -30,6 +30,11 @@ ht-degree: 9%
       <a href="using/get-started.md">Vad är [!DNL Journey Optimizer]?</a>
     </div>
     <p>Upptäck viktiga funktioner och hur du kommer igång
+    <p>
+    <div>
+      <a href="using/release-notes.md">Versionsinformation</a>
+    </div>
+    <p>Upptäck nya funktioner, senaste förbättringar och korrigeringar
     <p>
     <div>
       <a href="using/design-emails.md">Designa e-postinnehåll</a>
