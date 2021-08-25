@@ -1,14 +1,14 @@
 ---
 title: Använd ett segment i en resa
 description: Lär dig hur du använder ett segment i en resa
-feature: Resor
-topic: Innehållshantering
+feature: Journeys
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 670db54d4af8d5ecabcd27f22cac530a9f921af5
+source-git-commit: a5a3b23228a56cb16935dbc0f4d26d4a666d8fd2
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 4%
+source-wordcount: '997'
+ht-degree: 3%
 
 ---
 
@@ -62,7 +62,7 @@ Så här konfigurerar du Läs segment-aktiviteten:
 
    >[!NOTE]
    >
-   >Den totala begränsningsfrekvensen per sandlåda är inställd på 17 000 meddelanden per sekund. Begränsningsfrekvensen för alla lässegment som körs samtidigt i samma sandlåda uppgår därför till högst 17 000 meddelanden per sekund. Du kan inte ändra denna ände.
+   >Den totala begränsningsfrekvensen per sandlåda är inställd på 20 000 meddelanden per sekund. Begränsningsfrekvensen för alla lässegment som körs samtidigt i samma sandlåda uppgår därför till högst 20 000 meddelanden per sekund. Du kan inte ändra denna ände.
 
 1. Med aktiviteten **[!UICONTROL Read Segment]** kan du ange den tidpunkt då segmentet ska gå in i resan. Om du vill göra det klickar du på länken **[!UICONTROL Edit journey schedule]** för att komma åt resans egenskaper och konfigurerar sedan fältet **[!UICONTROL Scheduler type]**.
 
