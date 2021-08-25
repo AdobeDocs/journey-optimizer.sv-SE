@@ -2,14 +2,14 @@
 solution: Journey Orchestration
 title: Om anpassad åtgärdskonfiguration
 description: Lär dig hur du konfigurerar en anpassad åtgärd
-feature: Instruktioner
-topic: Administrering
+feature: Actions
+topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: e6d8d8ee637008a886ca308b5b0d9d53d90b11ce
+source-git-commit: c62048e0fb7e5de2e7cdf8bc6ae17d62ef04d35c
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 9%
+source-wordcount: '777'
+ht-degree: 6%
 
 ---
 
@@ -49,20 +49,41 @@ När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICO
 
 ![](../assets/journeyurlconfiguration.png)
 
-1. Lägg till **[!UICONTROL URL]** för den externa tjänsten.
+1. Ange URL-adressen för den externa tjänsten i fältet **[!UICONTROL URL]**:
 
+   * Om URL:en är statisk anger du URL:en i det här fältet.
+
+   * Om URL:en innehåller en dynamisk sökväg anger du bara den statiska delen av URL:en, det vill säga schemat, värden, porten och, eventuellt, en statisk del av sökvägen.
+
+      Exempel: `https://xxx.yyy.com:8080/somethingstatic/`
+
+      Du anger den dynamiska sökvägen för URL:en när du lägger till den anpassade åtgärden på en resa. [Läs mer](../building-journeys/using-custom-actions.md).
    >[!NOTE]
    >
-   >Vi rekommenderar starkt att HTTPS används av säkerhetsskäl. Vi tillåter inte användning av Adobe-adresser som inte är offentliga och användning av IP-adresser.
+   >Av säkerhetsskäl rekommenderar vi starkt att du använder HTTPS-schemat för URL:en. Vi tillåter inte användning av Adobe-adresser som inte är offentliga och användning av IP-adresser.
 
 1. Markera samtalet **[!UICONTROL Method]**: det kan vara antingen **[!UICONTROL POST]** eller **[!UICONTROL PUT]**.
-1. I avsnittet **[!UICONTROL Headers]** klickar du på **[!UICONTROL Add a header field]** för att definiera ett nytt nyckel/värde-par. De motsvarar HTTP-rubrikerna för den begäran som görs till den externa tjänsten. Om du vill ta bort nyckel/värde-par placerar du markören i rubrikfältet och klickar på ikonen **[!UICONTROL Delete]**.
+1. I avsnittet **[!UICONTROL Headers]** anger du HTTP-rubrikerna för det begärandemeddelande som ska skickas till den externa tjänsten:
+   1. Om du vill lägga till ett rubrikfält klickar du på **[!UICONTROL Add a header field]**.
+   1. Ange huvudfältets nyckel.
+   1. Om du vill ange ett dynamiskt värde för nyckelvärdepar väljer du **[!UICONTROL Variable]**. Annars väljer du **[!UICONTROL Constant]**.
 
-   **[!UICONTROL Content-Type]** och  **[!UICONTROL Charset]** anges som standard och kan inte tas bort eller åsidosättas.
+      Du kan till exempel ange ett dynamiskt värde för en tidsstämpel.
+
+   1. Om du har valt **[!UICONTROL Constant]** anger du konstantvärdet.
+
+      Om du har valt **[!UICONTROL Variable]** anger du den här variabeln när du lägger till den anpassade åtgärden på en resa. [Läs mer](../building-journeys/using-custom-actions.md).
+
+      ![](../assets/journeyurlconfiguration2.png)
+
+   1. Om du vill ta bort ett rubrikfält pekar du på rubrikfältet och klickar på ikonen **[!UICONTROL Delete]**.
+   Rubrikfälten **[!UICONTROL Content-Type]** och **[!UICONTROL Charset]** är inställda som standard. Du kan inte ändra eller ta bort dessa fält.
+
+   När du har lagt till den anpassade åtgärden för en resa kan du fortfarande lägga till rubrikfält i den om resan är i utkaststatus. Om du inte vill att resan ska påverkas av konfigurationsändringar duplicerar du den anpassade åtgärden och lägger till rubrikfälten i den nya anpassade åtgärden.
 
    >[!NOTE]
    >
-   >Sidhuvuden valideras enligt följande [tolkningsregler](https://tools.ietf.org/html/rfc7230#section-3.2.4).
+   >Huvuden valideras enligt fälttolkningsregler. [Läs mer](https://tools.ietf.org/html/rfc7230#section-3.2.4).
 
 ## Definiera åtgärdsparametrarna {#define-the-message-parameters}
 
