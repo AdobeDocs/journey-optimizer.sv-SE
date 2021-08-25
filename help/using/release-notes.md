@@ -1,10 +1,10 @@
 ---
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
-source-git-commit: a1800c333bfbee178682d773c729aad7e23d86d0
+source-git-commit: ff48c78cfa5c48f32073e9df1f126504e291ab5a
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 12%
+source-wordcount: '992'
+ht-degree: 9%
 
 ---
 
@@ -13,19 +13,151 @@ ht-degree: 12%
 
 På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journey Optimizer]. Du kan även läsa de senaste [dokumentationsuppdateringarna](documentation-updates.md).
 
-## juliversion 2021 {#july-2021-release}
+
+## Versionen från augusti 2021 {#august-2021-release}
+
+### Nya funktioner
 
 <table>
 <thead>
 <tr>
-<th><strong>Utnyttja schemarelationer</strong><br/></th>
+
+<th><strong>Skicka meddelanden vid rätt tidpunkt - optimering vid sändning</strong><br/></th>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Skicka automatiskt ditt push- eller e-postmeddelande vid den tidpunkt som passar varje kund du interagerar med Adobe Journey Optimizer. Med optimering för sändningstid, som bygger på Adobe:s AI-tjänster, förutspås den bästa tidpunkten för att skicka e-post eller push-meddelanden för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser.</p>
+<p>Den här funktionen är för närvarande i betaversion och endast tillgänglig för betakunder. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.</p>
+<p>Mer information finns i den <a href="building-journeys/journeys-message.md#send-time-optimization">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+
+<th><strong>Utnyttja schemarelationer i affärshändelser - Uppslagstabellhantering</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Med Adobe Experience Platform kan du definiera relationer mellan scheman för att kunna använda en datauppsättning som en uppslagstabell för en annan. [!DNL Journey Optimizer] kan nu utnyttja data från ett länkat schema.</p>
-<p>Dessa fält är tillgängliga i enhetlig händelsekonfiguration, resevillkor, meddelandepersonalisering och anpassad åtgärdspersonalisering.</p>
+<p>Nu kan du utnyttja relationer mellan scheman när du konfigurerar affärshändelser. Detta är utöver möjligheten att utnyttja fält från länkade tabeller när en enhetshändelse konfigureras, när villkor används under en resa, i meddelandepersonalisering och i personalisering av anpassade åtgärder.</p>
+<p>Mer information finns i den <a href="event/experience-event-schema.md#leverage_schema_relationships">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--
+<table>
+<thead>
+<tr>
+<th><strong>Personalized URLs</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Personalized URLs take recipients to specific pages of a website, or to a personalized microsite, depending on the profile attributes. In Adobe Journey Optimizer, you can now add personalization to URLs in your message content. URL personalization can be applied to text and images, and use profile data or contextual data.</p>
+<p>For more information, refer to the <a href="documentation-updates.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+-->
+
+<table>
+<thead>
+<tr>
+<th><strong>Se till att dina e-postmeddelanden når användarna - Försök igen med e-post</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Du kan nu definiera återförsöksperioden per förinställning för att säkerställa att återförsöksförsök inte utförs längre när de inte längre behövs. Du kan t.ex. ange återförsöksperioden till 24 timmar för ett transaktionsmeddelande om lösenordsåterställning som innehåller en länk som bara är giltig för en dag. Observera att inställningarna för nya försök endast gäller för e-postkanalen.</p>
+<p>Mer information finns i den <a href="configuration/retries.md">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--
+<table>
+<thead>
+<tr>
+<th><strong>Customer Alerts</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now subscribe to event-based alerts regarding Adobe Journey Optimizer activities. The user interface allows you to view a history of received alerts based on metrics revealed by Adobe Experience Platform Observability Insights. The UI also allows you to view, enable, and disable available alert rules.</p>
+<p>This feature is currently in beta version and only available to beta customers. To join the beta program, contact Adobe Customer Care.
+</p>
+<p>For more information, refer to the <a href="https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html">Adobe Experience Platform documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+-->
+
+### Förbättringar
+
+**Resor**
+
+* **Dynamiska rubriker**  - Nu kan du skicka dynamiska data i HTTP-rubrikparametrar. De här parametrarna kan användas av de integreringssystem som tar emot resans åtgärd via HTTP-anrop, till exempel tidsstämpel eller spårnings-ID. [Läs mer](action/about-custom-action-configuration.md#url-configuration)
+* **Dynamiska URL-sökvägar**  - Du kan nu ställa in dynamiska URL-sökvägar för anpassade åtgärder. [Läs mer](action/about-custom-action-configuration.md#url-configuration)
+* Den totala begränsningsfrekvensen för lässegment har ändrats från 17 000 till 20 000 meddelanden per sekund. [Läs mer](building-journeys/read-segment.md#configuring-segment-trigger-activity)
+
+**Användargränssnitt**
+
+* **Sök**  - På varje sida kan du nu söka efter affärsobjekt och hjälpartiklar direkt från sökfältet för enhetliga Experience Cloud. [Läs mer](user-interface.md#unified-search)
+* **Senaste nytt**  - Nu kan du visa nya element från Adobe Journey Optimizer hemsida även för andra affärsobjekt. I den här uppdateringen finns genvägar till nyligen använda meddelanden, resor, segment, scheman, datauppsättningar, datakällor, händelser, åtgärder, källor och mål. [Läs mer](action/about-custom-action-configuration.md#passing-collection)
+
+**Innehållsdesign**
+
+* **Bakgrund**  - Bakgrundsbilder stöds nu i direktförhandsvisning. [Läs mer](preview.md)
+* **Länk**  för avanmälan med ett klick - Du kan infoga en ny typ av länk i ditt e-postinnehåll: Med  **Opt-** outlink kan man avsluta abonnemanget på att få meddelanden med bara ett klick, utan att man behöver omdirigeras till en landningssida för att bekräfta avanmälan. [Läs mer](message-tracking.md#one-click-opt-out-link)
+
+**Personalisering**
+
+* **Uttrycksredigeraren**  - Nu kan du enkelt lägga till ett reservvärde när du definierar personalisering: när anpassningsfältet är tomt för en profil visas reservvärdet. [Läs mer](documentation-updates.md)
+
+**E-postkonfiguration**
+
+* **Tillåtelselista**  - tillåtelselista kan nu aktiveras och inaktiveras i en icke-produktionssandlåda via ett API-anrop. [Läs mer](allow-list.md#enable-allow-list)
+
+<!--* **Suppression list** - Adding email addresses and domains into the suppression list is now available from the user interface, either one by one, either in bulk mode through a CSV file upload. [Learn more](configuration/manage-suppression-list.md#add-addresses-and-domains)-->
+<!--* **Navigation** - The suppression list, which was accessible under the **Channels > Email configuration > General** menu, has been moved to the **Channels > Email configuration > Suppression list** menu for easier access. [Learn more](configuration/manage-suppression-list.md#access-suppression-list)-->
+
+
+### Korrigeringar
+
+* Korrigerade ett tillgänglighetsproblem vid navigering på meddelandeflikar.
+* Ett lokaliseringsfel har korrigerats i e-postdesignerns etiketter.
+* Ett problem har korrigerats när du valde mer än en nod i en resa och klickade på Ta bort på egenskapspanelen.
+* Korrigerade ett fel som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
+* Du kan nu ta reda på varför en meddelandeförinställning inte kunde skapas med hjälp av en tydligare varning i användargränssnittet.
+
+
+## juliversion 2021 {#july-2021-release}
+
+### Nya funktioner
+
+<table>
+<thead>
+<tr>
+<th><strong>Använd metadata i dina meddelanden - Sök tabellhantering</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Berika era upplevelser med referensdata som ni har läst in i Journey Optimizer. Det kan till exempel vara att söka efter metadata på ett reservations-ID i en upplevelsehändelse eller söka efter produktinformation från en sku i en upplevelsehändelse för användning på arbetsytan. </p>
+<p>Nu kan du utnyttja relationer mellan scheman för att använda en datauppsättning som en uppslagstabell för en annan. Sedan kan ni utnyttja alla fält från de länkade tabellerna när ni konfigurerar en enhetshändelse, när ni använder villkor under en resa, i meddelandepersonalisering och i personalisering av anpassade åtgärder.</p>
 <p>Mer information finns i den <a href="event/experience-event-schema.md#leverage_schema_relationships">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
