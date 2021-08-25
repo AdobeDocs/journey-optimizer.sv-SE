@@ -1,10 +1,10 @@
 ---
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
-source-git-commit: 77d392cc09bd0923faf3d27e951a17cd702d257c
+source-git-commit: cd077b6f1fd5c81955aec2475dfd8b52aeb23422
 workflow-type: tm+mt
-source-wordcount: '964'
-ht-degree: 10%
+source-wordcount: '963'
+ht-degree: 9%
 
 ---
 
@@ -79,7 +79,7 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 <tr>
 <td>
 <p>Du kan nu definiera återförsöksperioden per förinställning för att säkerställa att återförsöksförsök inte utförs längre när de inte längre behövs. Du kan t.ex. ange återförsöksperioden till 24 timmar för ett transaktionsmeddelande om lösenordsåterställning som innehåller en länk som bara är giltig för en dag. Observera att inställningarna för nya försök endast gäller för e-postkanalen.</p>
-<p>Mer information finns i den <a href="configuration/retries.md">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="configuration/retries.md#retry-duration">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -122,9 +122,9 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 * **Bakgrund**  - Bakgrundsbilder stöds nu i direktförhandsvisning. [Läs mer](preview.md)
 * **Länk**  för avanmälan med ett klick - Du kan infoga en ny typ av länk i ditt e-postinnehåll: Med  **Opt-** outlink kan man avsluta abonnemanget på att få meddelanden med bara ett klick, utan att man behöver omdirigeras till en landningssida för att bekräfta avanmälan. [Läs mer](message-tracking.md#one-click-opt-out-link)
 
-**Personalisering**
+<!--**Personalization**
 
-<!--* **Expression Editor** - You can now easily add a fall-back value when defining personalization: when personalization field is empty for a profile, the fall-back value will display. [Learn more](documentation-updates.md)-->
+* **Expression Editor** - You can now easily add a fall-back value when defining personalization: when personalization field is empty for a profile, the fall-back value will display. [Learn more](documentation-updates.md)-->
 
 **E-postkonfiguration**
 
