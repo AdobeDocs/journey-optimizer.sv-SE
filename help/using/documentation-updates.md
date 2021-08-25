@@ -1,7 +1,7 @@
 ---
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
-source-git-commit: 932a95691e80267a581072b3fa0b81ad108117a3
+source-git-commit: a80f9675741aeefa51857cf9fd47c5e7441229cd
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 12%
@@ -25,7 +25,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Ett nytt avsnitt har lagts till som beskriver hur du hämtar e-postadresser eller domäner som har uteslutits från en sändning eftersom de inte fanns på tillåtelselista. [Läs mer](allow-list.md#reporting)
 * Avsnittet Aktivera tillåtelselista har uppdaterats. [Läs mer](allow-list.md#enable-allow-list)
 * Avsnittet Monitor-meddelandets förinställningar har uppdaterats med orsaker till att förinställningarna inte kunde skapas och information om sådana fel. [Läs mer](configuration/message-presets.md#monitor-message-presets)
-* Uppdaterat och ändrat namn på avsnittet för återförsöksperiod för att återspegla det faktum att du nu kan ändra inställningen för återförsök via e-post i meddelandeförinställningarna. [Läs mer](configuration/retries.md)
+* Uppdaterat och ändrat namn på avsnittet för återförsöksperiod för att återspegla det faktum att du nu kan ändra inställningen för återförsök via e-post i meddelandeförinställningarna. [Läs mer](configuration/retries.md#retry-duration)
 * Ett nytt avsnitt har lagts till som beskriver hur du infogar en länk för att välja bort ett enstaka klick i e-postinnehåll. [Läs mer](message-tracking.md#one-click-opt-out-link)
 <!--* Added a section to describe how to manually add email addresses and domains to the suppression list. [Read more](configuration/manage-suppression-list.md#add-addresses-and-domains)-->
 
