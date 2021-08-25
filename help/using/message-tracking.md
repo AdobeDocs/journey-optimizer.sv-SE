@@ -1,14 +1,14 @@
 ---
 title: Spåra meddelanden
 description: Lär dig hur du lägger till länkar och spårar skickade meddelanden
-feature: Övervakning
-topic: Innehållshantering
+feature: Monitoring
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: f5a6a9b6c786b39b492a177de0b19a54b81729f7
+source-git-commit: 6ff5d093bac20248106be1f4478102c29703cb1d
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 1%
+source-wordcount: '777'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ Använd [!DNL Journey Optimizer] för att lägga till länkar till ditt innehål
 
 ## Aktivera spårning {#enable-tracking}
 
-Du kan aktivera spårning på meddelandenivå genom att kontrollera alternativen **[!UICONTROL Open Tracking for email]** och/eller **[!UICONTROL Click Tracking for email]** när [du skapar meddelandet](create-message.md).
+Du kan aktivera spårning på e-postmeddelandenivå genom att kontrollera alternativen **[!UICONTROL Open Tracking for email]** och/eller **[!UICONTROL Click Tracking for email]** när [du skapar meddelandet](create-message.md).
 
 ![](assets/message-tracking.png)
 
@@ -52,9 +52,11 @@ Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
 
    * **[!UICONTROL Mirror page]**: Infoga en länk för att visa e-postinnehållet i en webbläsare. Läs mer i [det här avsnittet](#mirror-page).
 
+   * **[!UICONTROL Opt-out]**: Infoga en länk som gör det möjligt för användare att snabbt avbeställa prenumerationer utan att behöva bekräfta att de vill avanmäla sig. Läs mer i [det här avsnittet](#one-click-opt-out-link).
+
    ![](assets/message-tracking-links.png)
 
-1. Du kan anpassa länkarna enbart med hjälp av ett enkelt uttryck. Läs mer om personalisering i [det här avsnittet](personalization/personalization-syntax.md).
+1. Du kan anpassa länkarna. Läs mer om anpassade URL:er i [det här avsnittet](personalization/personalization-syntax.md).
 
 1. Spara ändringarna.
 
@@ -86,6 +88,32 @@ När e-postmeddelandet har skickats visas innehållet i e-postmeddelandet i sin 
 >I det [korrektur](preview.md#send-proofs) som skickas till testprofilerna är länken till spegelsidan inte aktiv. Den aktiveras endast i de slutliga meddelandena.
 
 Kvarhållningsperioden för en spegelsida är 60 dagar. Efter den fördröjningen är spegelsidan inte längre tillgänglig.
+
+## Länk för avanmälan med ett klick {#one-click-opt-out-link}
+
+Om du vill att mottagarna snabbt ska kunna avbryta prenumerationen på meddelanden från varumärket kan du infoga en länk för att avanmäla dig i ditt e-postinnehåll med ett enda klick. Denna kapacitet förhindrar att användare dirigeras om till en landningssida där de måste bekräfta sitt val, vilket snabbar upp avanmälningsprocessen.
+
+Följ stegen nedan om du vill lägga till en länk för att avanmäla dig i ditt e-postmeddelande.
+
+1. [Infoga en ](#insert-links) länk och välj  **[!UICONTROL Opt-out]** som typ av länk.
+
+   ![](assets/message-tracking-opt-out.png)
+
+1. Välj hur du vill använda avanmälningen: på kanal-, identitet- eller prenumerationsnivå.
+
+   ![](assets/message-tracking-opt-out-level.png)
+
+   * **[!UICONTROL Channel]**: Avanmälningen gäller för framtida meddelanden som skickas till profilens mål (dvs. e-postadress) för den aktuella kanalen. Om flera mål är kopplade till en profil gäller avanmälan alla mål (t.ex. e-postadresser) i profilen för den kanalen.
+   * **[!UICONTROL Identity]**: Avanmälningen gäller för framtida meddelanden som skickas till det specifika målet (dvs. e-postadressen) som används för det aktuella meddelandet.
+   * **[!UICONTROL Subscription]**: Avanmälningen gäller för framtida meddelanden som är kopplade till en viss prenumerationslista. Det här alternativet kan bara väljas om det aktuella meddelandet är kopplat till en prenumerationslista.
+
+1. Ange URL-adressen till landningssidan där användaren omdirigeras när prenumerationen har upphört. Den här sidan är bara här för att bekräfta att avanmälan lyckades.
+
+   ![](assets/message-tracking-opt-out-confirmation.png)
+
+1. Klicka på **[!UICONTROL Save]**.
+
+När meddelandet har skickats och en mottagare klickar på länken för att avanmäla sig avanmäls han omedelbart.
 
 ## Hantera spårning {#manage-tracking}
 
