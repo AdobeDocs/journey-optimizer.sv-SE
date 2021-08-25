@@ -1,10 +1,10 @@
 ---
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
-source-git-commit: 670db54d4af8d5ecabcd27f22cac530a9f921af5
+source-git-commit: 50c3dfe4f756e7c6e8f210dc9d3f615965c3a053
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 14%
+source-wordcount: '406'
+ht-degree: 12%
 
 ---
 
@@ -13,8 +13,26 @@ ht-degree: 14%
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
 
+## Augusti 2021
+
+* Alla nya funktioner och förbättringar som kommer med [!DNL Journey Optimizer] August 21 finns detaljerade i dokumentationen. [Läs mer](release-notes.md)
+* Uppdaterade behörigheter för beslutshantering. [Läs mer](administration/ootb-product-profiles.md)
+* Uppdaterade skärmbilder för e-postdesigner med det senaste användargränssnittet.
+* Konfigurationsproceduren för anpassade åtgärder med dynamiska URL-sökvägar och dynamiska rubriker har uppdaterats. [Läs mer](action/about-custom-action-configuration.md#url-configuration)
+* Ett avsnitt om tillgänglighetsfunktioner och genvägar har lagts till. [Läs mer](user-interface.md#accessibility)
+* Ett avsnitt om metoder för segmentutvärdering har lagts till. [Läs mer](segment/about-segments.md#evaluation-method-in-journey-optimizer)
+* Anteckningar har lagts till i avsnitten om Suppression-listan, Tillåtelselista och e-post, global/liverapport, för att ange att profiler med statusen Inaktiverad och Inte tillåten ska uteslutas från e-postrapporten Skickade mått. [Läs mer](reports/email-global-report.md)
+* Ett nytt avsnitt har lagts till som beskriver hur du hämtar e-postadresser eller domäner som har uteslutits från en sändning eftersom de inte fanns på tillåtelselista. [Läs mer](allow-list.md#reporting)
+* Avsnittet Aktivera tillåtelselista har uppdaterats. [Läs mer](allow-list.md#enable-allow-list)
+* Avsnittet Monitor-meddelandets förinställningar har uppdaterats med orsaker till att förinställningarna inte kunde skapas och information om sådana fel. [Läs mer](configuration/message-presets.md#monitor-message-presets)
+* Uppdaterat och ändrat namn på avsnittet för återförsöksperiod för att återspegla det faktum att du nu kan ändra inställningen för återförsök via e-post i meddelandeförinställningarna. [Läs mer](configuration/retries.md)
+* Ett nytt avsnitt har lagts till som beskriver hur du infogar en länk för att välja bort ett enstaka klick i e-postinnehåll. [Läs mer](message-tracking.md#one-click-opt-out-link)
+<!--* Added a section to describe how to manually add email addresses and domains to the suppression list. [Read more](configuration/manage-suppression-list.md#add-addresses-and-domains)-->
+
+
 ## Juli 2021
 
+* Alla nya funktioner och förbättringar som kommer med [!DNL Journey Optimizer] juliversionen 21 finns detaljerade i dokumentationen. [Läs mer](release-notes.md)
 * Lagt till direkta länkar till dokumentationen för Experience Platform-tjänster på [!DNL Journey Optimizer]-startsidan och innehållsförteckningen
 * Nya landningssidor för Experience Platform-tjänster finns i [!DNL Journey Optimizer]
 * Länkar har lagts till i produktbeskrivningen för [!DNL Journey Optimizer] på startsidan
