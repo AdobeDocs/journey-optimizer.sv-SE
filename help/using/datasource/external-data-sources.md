@@ -1,14 +1,14 @@
 ---
 title: 'Externa datakällor '
 description: Läs om hur du konfigurerar externa datakällor
-feature: Datakällor
-topic: Administrering
+feature: Data Sources
+topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: e6d8d8ee637008a886ca308b5b0d9d53d90b11ce
+source-git-commit: ef9d9501f4307d7e9234de46b670a1fea605a1b3
 workflow-type: tm+mt
-source-wordcount: '1276'
-ht-degree: 98%
+source-wordcount: '1269'
+ht-degree: 91%
 
 ---
 
@@ -114,10 +114,10 @@ Definitionen av slutpunkten som ska anropas för att generera en åtkomsttoken:
 
 * slutpunkt: URL som ska användas för att generera slutpunkten
 * metoden för HTTP-begäran på slutpunkten (GET eller POST)
-* rubriker: nyckel-/värdepar som vid behov ska injiceras som rubriker i detta anrop
-* brödtext: beskriver anropets brödtext om metoden är POST. Vi har stöd för en begränsad struktur i brödtexten som definieras i bodyParams (nyckel/värde-par). Brödtextens typ beskriver formatet och kodningen för brödtexten i anropet:
-   * &quot;form&quot;: innebär att innehållstypen är application/x-www-form-urlencoded (charset UTF-8) och nyckel/värde-paren serialiseras som de är: key1=value1&amp;key2=value2&amp; ...
-   * &quot;json&quot;: innebär att innehållstypen är application/json (charset UTF-8) och nyckel-/värdeparen serialiseras som ett json-objekt som det är: _{ &quot;key1&quot;: &quot;value1&quot;, &quot;key2&quot;: &quot;value2&quot;, ...}_
+* sidhuvuden: nyckelvärdepar som vid behov ska matas in som rubriker i detta anrop
+* brödtext: beskriver anropets brödtext om metoden är POST. Vi stöder en begränsad brödstruktur, som definieras i bodyParams (key-value pairs). Brödtextens typ beskriver formatet och kodningen för brödtexten i anropet:
+   * &#39;form&#39;: vilket innebär att innehållstypen kommer att vara application/x-www-form-urlencoded (charset UTF-8) och nyckelvärdepar kommer att serialiseras som: key1=value1&amp;key2=value2&amp;...
+   * &#39;json&#39;: vilket innebär att innehållstypen blir application/json (charset UTF-8) och nyckelvärdepar kommer att serialiseras som ett json-objekt som är: _{ &quot;key1&quot;: &quot;value1&quot;, &quot;key2&quot;: &quot;value2&quot;, ...}_
 
 Definitionen av hur en åtkomsttoken måste injiceras i åtgärdens HTTP-begäran:
 
