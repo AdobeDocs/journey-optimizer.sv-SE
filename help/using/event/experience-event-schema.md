@@ -1,13 +1,13 @@
 ---
 title: Om ExperienceEvent-scheman för resehändelser
 description: Läs mer om ExperienceEvent-scheman för resehändelser
-feature: Scheman
-topic: Administrering
+feature: Schemas
+topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: e965372e3640b92f672bf03098c8e4fb487dfc7d
+source-git-commit: 96615a580b2211ea94522e94ba867a309e127ae3
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
@@ -72,14 +72,14 @@ Här är inköpsschemat med relationen definierad i produkt-ID-fältet.
 
 I Journey Optimizer kan du sedan använda alla fält från de länkade tabellerna:
 
-* när en enhetshändelse konfigureras, [Läs mer](../event/experience-event-schema.md#unitary_event_configuration)
+* [Läs mer](../event/experience-event-schema.md#unitary_event_configuration) när du konfigurerar en affärshändelse eller en enhetshändelse
 * när villkor används i en resa, [Läs mer](../event/experience-event-schema.md#journey_conditions_using_event_context)
 * i meddelandeanpassning, [Läs mer](../event/experience-event-schema.md#message_personalization)
 * i anpassad åtgärdspersonalisering, [Läs mer](../event/experience-event-schema.md#custom_action_personalization_with_journey_event_context)
 
-### Konfiguration av Unitary-händelse{#unitary_event_configuration}
+### Händelsekonfiguration{#unitary_event_configuration}
 
-De länkade schemafälten är tillgängliga i en händelsekonfiguration:
+De länkade schemafälten är tillgängliga i enhets- och affärshändelsekonfigurationen:
 
 * när du bläddrar genom händelseschemafälten på händelsens konfigurationsskärm.
 * när du definierar ett villkor för systemgenererade händelser.
@@ -90,7 +90,6 @@ De länkade fälten är inte tillgängliga:
 
 * i händelsenyckelformeln
 * händelse-id-villkor (regelbaserade händelser)
-* i affärshändelser (kommer senare)
 
 Mer information om hur du konfigurerar en enhetshändelse finns på den här [sidan](../event/about-creating.md).
 
