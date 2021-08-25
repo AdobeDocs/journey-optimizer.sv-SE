@@ -1,14 +1,14 @@
 ---
 title: Användargränssnitt
 description: Journey Optimizer användargränssnitt
-feature: Översikt
-topic: Innehållshantering
+feature: Overview
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: ac6ba317909c962a81c7043bfa2a56e94bc5c9ad
+source-git-commit: ec880e9a42180221c3046aedf8ec46eff70d2493
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 8%
+source-wordcount: '1457'
+ht-degree: 7%
 
 ---
 
@@ -19,12 +19,10 @@ När du är ansluten till [Adobe Experience Cloud](http://experience.adobe.com) 
 >[!NOTE]
 >
 >* De viktigaste begreppen när du bläddrar i användargränssnittet är vanliga i Adobe Experience Platform. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html#adobe-experience-platform-ui-guide){target=&quot;_blank&quot;}.
-   >
-   >
-* Den här dokumentationen uppdateras ofta för att återspegla de senaste ändringarna i produktanvändargränssnittet. Vissa skärmbilder kan dock skilja sig något från användargränssnittet.
-   >
-   > 
-* Vilka komponenter och funktioner som är tillgängliga i användargränssnittet beror på dina behörigheter och ditt licenspaket. Fråga din Adobe Customer Success Manager för alla frågor.
+>
+>* Den här dokumentationen uppdateras ofta för att återspegla de senaste ändringarna i produktanvändargränssnittet. Vissa skärmbilder kan dock skilja sig något från användargränssnittet.
+>
+> * Vilka komponenter och funktioner som är tillgängliga i användargränssnittet beror på dina behörigheter och ditt licenspaket. Fråga din Adobe Customer Success Manager för alla frågor.
 
 
 ## Vänster navigering
@@ -87,6 +85,9 @@ Nedan finns en fullständig lista över tjänster och funktioner som är tillgä
 
 * **[!UICONTROL Sandboxes]** - Adobe Experience Platform tillhandahåller sandlådor som partitionerar en instans i separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. [Läs mer](administration/sandboxes.md)
 
+<!--
+* **[!UICONTROL Alerts]** - The user interface allows you to view a history of received alerts based on metrics revealed by Adobe Experience Platform Observability Insights. The UI also allows you to view, enable, and disable available alert rules. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"}
+-->
 
 ## Användningsexempel inifrån produkten
 
@@ -106,6 +107,139 @@ Klicka på **[!UICONTROL View details]** om du vill veta mer om de olika använd
 Klicka på knappen **[!UICONTROL Begin]** för att starta användningsfallet.
 
 Du kommer åt körda användningsfall från knappen **[!UICONTROL View use case library]**.
+
+## Tillgänglighet{#accessibility}
+
+Tillgänglighetsfunktionerna i Adobe Journey Optimizer tillhandahålls av Adobe Experience Platform:
+
+* Tangentbordstillgänglighet
+* Färgkontrast
+* Bekräfta att du fyllt i samtliga obligatoriska fält
+
+[Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/features.html){target=&quot;_blank&quot;} i Adobe Experience Platform-dokumentationen.
+
+Du kan använda följande vanliga kortkommandon i Adobe Journey Optimizer:
+
+| Åtgärd | Genväg |
+| --- | --- |
+| Växla mellan element, avsnitt och menygrupper i användargränssnittet | Tabb |
+| Gå bakåt mellan element, avsnitt och menygrupper i användargränssnittet | Skift+Tabb |
+| Flytta inom avsnitt för att ange fokus till enskilda element | Pil |
+| Markera eller rensa ett element som är i fokus | Enter eller mellanslagstangenten |
+| Avbryt en markering, komprimera en panel eller stänga en dialogruta | Esc |
+
+[Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/custom.html){target=&quot;_blank&quot;} i Adobe Experience Platform-dokumentationen.
+
+Du kan använda dessa kortkommandon i vissa delar av Journey Optimizer:
+
+<table>
+  <thead>
+    <tr>
+      <th>Gränssnittselement</th>
+      <th>Åtgärd</th>
+      <th>Genväg</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>Förteckning över resor, åtgärder, datakällor eller händelser</td>
+    <td>Skapa en resa, en åtgärd, en datakälla eller en händelse</td>
+    <td>C</td>
+  </tr>
+  <tr>
+    <td rowspan="3">Researbetsyta med utkaststatus</td>
+    <td>Lägg till en aktivitet från den vänstra paletten vid den första tillgängliga positionen, uppifrån och ned</td>
+    <td>Dubbelklicka på aktiviteten</td>
+  </tr>
+  <tr>
+    <td>Välj alla aktiviteter</td>
+    <td>Ctrl + A (Windows)<br/>Kommando + A (Mac)</td>
+  </tr>
+  <tr>
+    <td>Ta bort de valda aktiviteterna</td>
+    <td>Ta bort eller Backsteg och bekräfta sedan borttagningen genom att ange</td>
+  </tr>
+  <tr>
+  <td rowspan="3">
+
+Konfigurationsruta för dessa element:
+
+<ul>
+  <li>Aktivitet under en resa</li>
+  <li>Händelse</li>
+  <li>Datakälla</li>
+  <li>Åtgärd</li>
+</ul>
+
+</td>
+    <td>Flytta till nästa fält som ska konfigureras</td>
+    <td>Tabb</td>
+  </tr>
+  <tr>
+    <td>Spara ändringar och stäng konfigurationsfönstret</td>
+    <td>Retur</td>
+  </tr>
+  <tr>
+    <td>Ignorera ändringar och stäng konfigurationsfönstret</td>
+    <td>Esc</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Resa i testläge</td>
+    <td>Aktivera eller inaktivera testläget</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>Utlösa en händelse i en händelsebaserad resa</td>
+    <td>E</td>
+  </tr>
+  <tr>
+    <td>
+
+Utlös en händelse i en segmentbaserad resa för vilken alternativet **[!UICONTROL Single profile at a time]** är aktiverat
+
+</td>
+    <td>P</td>
+  </tr>
+  <tr>
+    <td>Visa testloggarna</td>
+    <td>L</td>
+  </tr>
+<!-- //Ajouter ce raccourci quand il marchera (actuellement, le raccourci Ctrl/Cmd+F du navigateur a priorité sur celui de AJO).//
+  <tr>
+    <td>Page with a search bar</td>
+    <td>Select the search bar</td>
+    <td>Ctrl/Command + F</td>
+  </tr>
+-->
+  <tr>
+    <td>Textfält</td>
+    <td>Markera all text i det markerade fältet</td>
+    <td>Ctrl + A (Windows)<br/>Kommando + A (Mac)</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Popup-fönster</td>
+    <td>Spara ändringarna eller bekräfta åtgärden</td>
+    <td>Retur</td>
+  </tr>
+  <tr>
+    <td>Stäng fönstret</td>
+    <td>Esc</td>
+  </tr>
+  <tr>
+    <td>Enkel uttrycksredigerare</td>
+    <td>Markera och lägga till ett fält</td>
+    <td>Dubbelklicka på ett fält</td>
+  </tr>
+  <tr>
+    <td>Bläddra bland XDM-fält</td>
+    <td>Markera alla fält i en nod</td>
+    <td>Markera den överordnade noden</td>
+  </tr>
+  <tr>
+    <td>Förhandsgranska nyttolast</td>
+    <td>Välj nyttolast</td>
+    <td>Ctrl + A (Windows)<br/>Kommando + A (Mac)</td>
+  </tr>
+</table>
 
 ## Hitta hjälp och support
 
@@ -137,16 +271,17 @@ Så här byter du språk:
 * Välj önskat språk och klicka på **Spara**. Du kan välja ett andra språk om komponenten som du använder inte är lokaliserad på ditt första språk.
    ![](assets/select-language.png)
 
-## Sökning
+## Sökning{#unified-search}
 
-Var som helst från Adobe Journey Optimizer-gränssnittet kan du använda Adobe Experience Cloud-sökningen i mitten av det övre fältet för att hitta resurser, resor eller meddelanden i dina sandlådor. Börja skriva in innehåll för att visa de bästa resultaten.
+Var som helst från Adobe Journey Optimizer-gränssnittet kan du använda sökfunktionen för enhetliga Adobe Experience Cloud i mitten av det övre fältet för att hitta resurser, resor, datauppsättningar, meddelanden med mera i dina sandlådor.
+
+Börja skriva in innehåll för att visa de bästa resultaten. Hjälpartiklar om de angivna nyckelorden visas också i resultaten.
 
 ![](assets/unified-search.png)
 
-Tryck på **Enter** för att få tillgång till alla resultat och filter.
+Tryck på **Enter** för att få tillgång till alla resultat och filtrera efter affärsobjekt.
 
 ![](assets/search-and-filter.png)
-
 
 ## Filterlistor{#section_lgm_hpz_pgb}
 
