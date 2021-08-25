@@ -1,14 +1,14 @@
 ---
 title: Tillåtelselista
 description: Lär dig hur du använder tillåtelselista.
-feature: levererbarhet
-topic: Innehållshantering
+feature: Deliverability
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: e2743c8fa624a7a95b12c3adb5dc17a1b632c25d
+source-git-commit: 2edb3535c50f83d18ce4d6429a6d76f44b694ac6
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 1%
+source-wordcount: '558'
+ht-degree: 0%
 
 ---
 
@@ -24,18 +24,17 @@ Med tillåtelselista kan du ange enskilda e-postadresser eller domäner som ska 
 
 ## Aktivera tillåtelselista {#enable-allow-list}
 
-Om du vill aktivera den här funktionen i en icke-produktionssandlåda uppdaterar du tillåtelselista så att den inte längre är tom. Om du vill inaktivera det rensar du tillåtelselista så att det är tomt igen.
+Om du vill aktivera tillåtelselista i en icke-produktionssandlåda måste du uppdatera de allmänna inställningarna med motsvarande API-slutpunkt i tjänsten för meddelandeförinställningar.
 
-Läs mer om tillåtelselista-logiken i [det här avsnittet](#logic).
+* Med detta API kan du när som helst inaktivera funktionen.
 
-<!--
-To enable the allowed list on a non-production sandbox, you need to make an Adobe API call.
+* Du kan uppdatera tillåtelselista innan eller efter att du har aktiverat funktionen.
 
-* Using this API, you can also disable the feature at any time.
+* Logiken i tillåtelselista gäller när funktionen är aktiverad **och** om tillåtelselista är **inte** tom. Läs mer i [det här avsnittet](#logic).
 
-* You can update the allowed list before or after enabling the feature.
+<!--To enable this feature on a non-production sandbox, update the allowed list so that it is no longer empty. To disable it, clear up the allowed list so that it is again empty.
 
-* The allowed list logic applies when the feature is enabled and if the allowed list is not empty. Learn more in this section (logic).
+Learn more on the allowed list logic in this section.
 -->
 
 >[!NOTE]
@@ -54,7 +53,9 @@ Du kan utföra åtgärderna **Lägg till**, **Ta bort** och **Hämta**.
 >
 >Tillåtelselista kan innehålla upp till 1 000 poster.
 
-<!--Learn more on making Adobe API calls in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-guide.html?lang=en).-->
+<!--
+Learn more on making these API calls in the API reference documentation.
+Found this link in Experience Platform documentation, but may not be the final one: (https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-guide.html?lang=en).-->
 
 ## Tillåtelselista logik {#logic}
 
@@ -68,6 +69,31 @@ När tillåtelselista är **inte tom** används tillåtelselista-logiken:
 
 * Om en entitet är **på tillåtelselista**, och inte på listan över inaktiveringar, kan e-postmeddelandet skickas till motsvarande mottagare. Om entiteten också finns med i [listan](suppression-list.md) kommer den motsvarande mottagaren inte att få e-postmeddelandet. Orsaken är **[!UICONTROL Suppressed]**.
 
+>[!NOTE]
+>
+>Profilerna med **[!UICONTROL Not allowed]**-status exkluderas under meddelandesändningsprocessen. Samtidigt som **reseservrapporterna** visar dessa profiler som om de har flyttats genom resan ([Läs segment](building-journeys/read-segment.md) och [Meddelande](building-journeys/journeys-message.md)-aktiviteter), kommer **e-postrapporterna** inte att inkludera dem i **[!UICONTROL Sent]**-måtten eftersom de filtreras ut innan e-postmeddelandet skickas.
+>
+>Läs mer i [Live-rapporten](reports/live-report.md) och [Global Report](reports/global-report.md).
 
+## Uteslutningsrapportering {#reporting}
 
+När den här funktionen är aktiverad i en icke-produktionssandlåda kan du hämta e-postadresser eller domäner som har uteslutits från en sändning eftersom de inte fanns på tillåtelselista. För att göra detta kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html) för att göra API-anropen nedan.
+
+Använd följande fråga om du vill hämta **antalet e-postmeddelanden** som inte skickades eftersom mottagarna inte var i tillåtelselista:
+
+```
+SELECT count(distinct _id) from cjm_message_feedback_event_dataset WHERE
+_experience.customerJourneyManagement.messageExecution.messageExecutionID = '<MESSAGE_EXECUTION_ID>' AND
+_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus = 'exclude' AND
+_experience.customerJourneyManagement.messageDeliveryfeedback.messageExclusion.reason = 'EmailNotAllowed'
+```
+
+Använd följande fråga om du vill hämta **listan över e-postadresser** som inte skickades eftersom mottagarna inte var i tillåtelselista:
+
+```
+SELECT distinct(_experience.customerJourneyManagement.emailChannelContext.address) from cjm_message_feedback_event_dataset WHERE
+_experience.customerJourneyManagement.messageExecution.messageExecutionID IS NOT NULL AND
+_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus = 'exclude' AND
+_experience.customerJourneyManagement.messageDeliveryfeedback.messageExclusion.reason = 'EmailNotAllowed'
+```
 
