@@ -5,9 +5,9 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: a5a3b23228a56cb16935dbc0f4d26d4a666d8fd2
+source-git-commit: c1690e1d5db6b068a8611e88c88c8955de21b54f
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
@@ -105,5 +105,4 @@ Aktivera Send-Time Optimization för ett e-postmeddelande eller push-meddelande 
 
 För e-postmeddelanden väljer du om du vill optimera e-postöppningar eller e-postklick genom att välja lämplig alternativknapp. Standardinställningen för push-meddelanden är öppningsalternativet, eftersom klickningar inte gäller för push-meddelanden.
 
-Du kan också välja att klamra de sändningstider som används av systemet genom att ange ett värde för **Skicka inom nästa**-alternativ. Om du väljer värdet &quot;sex timmar&quot; kommer [!DNL Journey Optimizer]att kontrollera varje användarprofil för att se om den optimala sändningstiden inträffar inom sex timmar från körningstiden för resan och välja den tid som bestämts för optimering av sändningstid. Om den tiden inte är inom de kommande sex timmarna skickar [!DNL Journey Optimizer] automatiskt meddelandet vid körningstid för resan.
-
+Du kan också välja att klamra de sändningstider som används av systemet genom att ange ett värde för **Skicka inom nästa**-alternativ. Om du väljer&quot;sex timmar&quot; som värde kontrollerar [!DNL Journey Optimizer] varje användarprofil och väljer den optimala sändningstiden inom sex timmar från körningstiden.
