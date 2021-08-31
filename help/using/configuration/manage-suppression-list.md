@@ -15,10 +15,10 @@ feature: Application Settings
 topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: 50c3dfe4f756e7c6e8f210dc9d3f615965c3a053
+source-git-commit: 260513cd966ab8e579fa0af0fec0376110d0b53f
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 2%
+source-wordcount: '911'
+ht-degree: 1%
 
 ---
 
@@ -31,30 +31,51 @@ Med [!DNL Journey Optimizer] kan du övervaka alla e-postadresser som automatisk
 * Adresserar som konsekvent studsar utan extra kostnad och kan påverka e-postens anseende negativt om du fortsätter att inkludera dem i dina leveranser.
 * Mottagare som skickar skräppost av något slag mot ett av dina e-postmeddelanden.
 
-Sådana e-postadresser samlas automatiskt in i Journey Optimizer **listan**. Läs mer i [det här avsnittet](../suppression-list.md).
+Sådana e-postadresser samlas automatiskt in i Journey Optimizer **listan**. Läs mer om konceptet för inaktiveringslistan och användningen i [det här avsnittet](../suppression-list.md).
 
 ## Åtkomst till listan över inaktiveringar {#access-suppression-list}
 
-Öppna menyn **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL General]** och klicka sedan på länken **[!UICONTROL View suppression lists]** om du vill få tillgång till en detaljerad lista över utelämnade e-postadresser.
+Om du vill få tillgång till den detaljerade listan över undantagna e-postadresser går du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** och väljer **[!UICONTROL Suppression list]**.
 
-![](../assets/suppression-list-link.png)
+>[!CAUTION]
+>
+>Behörigheter att visa, exportera och hantera undertryckningslistan är begränsade till [reseadministratörer](../administration/ootb-product-profiles.md#journey-administrator). Läs mer om hur du hanterar [!DNL Journey Optimizer]-användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
 
-<!--To access the detailed list of excluded email addresses, go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]**, and select **[!UICONTROL Suppression list]**.
-You can also display the suppression list content using the **[!UICONTROL View suppression list]** link through the **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL General]** menu, but this view does not allow you to edit the list.
+<!--![](../assets/suppression-list-link.png)
 
-![](../assets/suppression-list-access-temp.png)-->
+You can also display the suppression list content using the **[!UICONTROL View suppression list]** link through the **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL General]** menu, but this view does not allow you to edit the list.-->
+
+![](../assets/suppression-list-access.png)
 
 Det finns filter som hjälper dig att bläddra igenom listan.
 
-![](../assets/suppression-list-filters-temp.png)
+<!--![](../assets/suppression-list-filters-temp.png)-->
 
-<!--![](../assets/suppression-list-filters.png)
+![](../assets/suppression-list-filters.png)
 
-You can filter on the **[!UICONTROL Suppression category]**, **[!UICONTROL Address type]**, or **[!UICONTROL Reason]**. Select the option(s) of your choice for each criterion.
+Du kan filtrera på **[!UICONTROL Suppression category]**, **[!UICONTROL Address type]** eller **[!UICONTROL Reason]**. Välj alternativ för varje kriterium. När du har valt det här alternativet kan du rensa alla filter eller alla filter som visas ovanpå listan.
 
 ![](../assets/suppression-list-filtering-example.png)
 
-Once selected, you can clear each filter or all filters displayed on top of the list.-->
+Om du lägger till en e-postadress eller en domän manuellt av misstag kan du ta bort posten med knappen **[!UICONTROL Delete]**.
+
+>[!CAUTION]
+>
+>Använd aldrig knappen **[!UICONTROL Delete]** för att ta bort undertryckta e-postadresser eller domäner.
+
+![](../assets/suppression-list-delete.png)
+
+Om du tar bort en e-postadress eller en domän från listan över inaktiveringar kommer du att börja leverera till den här adressen eller domänen igen. Detta kan få allvarliga konsekvenser för din leveransförmåga och IP-anseende, vilket i slutänden kan leda till att din IP-adress eller sändande domän blockeras. Läs mer om vikten av att undertryckningslistan sparas i [det här avsnittet](../suppression-list.md).
+
+>[!NOTE]
+>
+>Fortsätt med extra omsorg när du funderar på att ta bort en e-postadress eller domän. Om du är osäker kan du kontakta en expert på slutprodukter.
+
+I vyn **[!UICONTROL Suppression list]** kan du även redigera undertryckningsregler. [Läs mer](retries.md)
+
+Om du vill exportera undertryckningslistan som en CSV-fil väljer du knappen **[!UICONTROL Download CSV]**.
+
+![](../assets/suppression-list-download-csv.png)
 
 ## Undertryckningskategorier och orsaker {#suppression-categories-and-reasons}
 
@@ -84,7 +105,7 @@ Undertryckningskategorierna är följande:
 
 För varje e-postadress som visas kan du även kontrollera **[!UICONTROL Type]** (e-postadress eller domän), **[!UICONTROL Reason]** för att utesluta den, vem som lagt till den och datumet/tiden som den lades till i listan över inaktiveringar.
 
-<!--![](../assets/suppression-list.png)-->
+![](../assets/suppression-list.png)
 
 Möjliga orsaker till leveransfel är:
 
@@ -96,10 +117,11 @@ Möjliga orsaker till leveransfel är:
 | **[!UICONTROL Mailbox Full]** | Meddelandet studsade eftersom mottagarens postlåda är full och inte kan ta emot fler meddelanden. | Mjuk |
 | **[!UICONTROL Relaying Denied]** | Meddelandet blockerades av mottagaren eftersom återutläggning inte tillåts. | Mjuk |
 | **[!UICONTROL Challenge-Response]** | Meddelandet är en frågesvarsundersökning. | Mjuk |
+| **[!UICONTROL Spam Complaint]** | Meddelandet blockerades eftersom mottagaren har markerat det som skräppost. | Hård |
 
 >[!NOTE]
 >
->Användare som avbeställer prenumerationen får inte e-post från [!DNL Journey Optimizer], och deras e-postadresser kan därför inte skickas till listan över inaktiveringar. Deras val hanteras på Experience Platform-nivå. Läs mer om [avanmälan](../consent.md).
+>Användare som avbeställer prenumerationen får inte e-post från [!DNL Journey Optimizer], och deras e-postadresser kan därför inte skickas till listan över inaktiveringar. Deras val hanteras på Experience Platform-nivå. [Läs mer om att avanmäla dig](../consent.md)
 
 <!--
 Removed from the table provided by SparkPost/Momentum:
@@ -119,82 +141,82 @@ Removed from the table provided by SparkPost/Momentum:
 | **[!UICONTROL Unsubscribe]** | The message is an unsubscribe request. | Hard |
 -->
 
-<!--Note to add eventually: If a user is subscribed and [!DNL Journey Optimizer] fails to send emails to their subscribed email address, they will get added to the suppression list. (not sure it's possible to subscribe through AJO or need to find reference to Experience Platform doc?)-->
+<!--Note to add eventually: If a user is subscribed and [!DNL Journey Optimizer] fails to send emails to their subscribed email address, they will get added to the suppression list.-->
 
-<!--## Manually add addresses and domains {#add-addresses-and-domains}
+## Lägga till adresser och domäner manuellt {#add-addresses-and-domains}
 
-When a message fails to be delivered to an email address, this address is automatically added to the suppression list based on the defined suppression rule or bounce count.
+När ett meddelande inte kan levereras till en e-postadress läggs adressen automatiskt till i listan över undertryckningar baserat på den definierade undertryckningsregeln eller avhoppsantalet.
 
-However, you can also manually populate the [!DNL Journey Optimizer] suppression list to exclude specific email addresses and/or domains from your sending.
+Du kan också fylla i undertryckslistan [!DNL Journey Optimizer] manuellt om du vill utesluta vissa e-postadresser och/eller domäner från sändningen.
 
-You may add email addresses or domains [one at a time](#add-one-address-or-domain), or [in bulk mode](#upload-csv-file) through a CSV file upload.
+Du kan lägga till e-postadresser eller domäner [en åt gången, eller [i gruppläge](#upload-csv-file) genom en CSV-filöverföring.](#add-one-address-or-domain)
 
-To do this, select the **[!UICONTROL Add email or domain]** button, then follow one of the methods below.
+Det gör du genom att markera knappen **[!UICONTROL Add email or domain]** och sedan följa en av metoderna nedan.
 
 ![](../assets/suppression-list-add-email.png)
 
-### Add one address or domain {#add-one-address-or-domain}
+### Lägg till en adress eller domän {#add-one-address-or-domain}
 
-1. Select the **[!UICONTROL One by one]** option.
+1. Välj alternativet **[!UICONTROL One by one]**.
 
-    ![](../assets/suppression-list-add-email-address.png)
+   ![](../assets/suppression-list-add-email-address.png)
 
-1. Choose the address type: **[!UICONTROL Email address]** or **[!UICONTROL Domain address]**.
+1. Välj adresstyp: **[!UICONTROL Email address]** eller **[!UICONTROL Domain address]**.
 
-1. Enter the email address or domain you want to exclude from your sending.
+1. Ange den e-postadress eller domän som du vill utesluta från sändningen.
 
-    >[!NOTE]
-    >
-    >Make sure you enter a valid email address (such as abc@company) or domain (such as abc.company.com).
+   >[!NOTE]
+   >
+   >Kontrollera att du anger en giltig e-postadress (till exempel abc@company) eller domän (till exempel abc.company.com).
 
-1. Specify a reason if needed.
+1. Ange en orsak om det behövs.
 
-1. Click **[!UICONTROL Submit]**.
+1. Klicka på **[!UICONTROL Submit]**.
 
-### Upload a CSV file {#upload-csv-file}
+### Överföra en CSV-fil {#upload-csv-file}
 
-1. Select the **[!UICONTROL Upload CSV]** option.
+1. Välj alternativet **[!UICONTROL Upload CSV]**.
 
-    ![](../assets/suppression-list-upload-csv.png)
+   ![](../assets/suppression-list-upload-csv.png)
 
-1. Download the CSV template to use, which includes the columns and format below:
+1. Ladda ned CSV-mallen som ska användas, som innehåller kolumnerna och formatet nedan:
 
-    ```
-    TYPE,VALUE,COMMENT
-    EMAIL,abc@somedomain.com,Comment
-    DOMAIN,somedomain.com,Comment
-    ```
-    You can also download this template from the **[!UICONTROL Suppression list]** main view.
+   ```
+   TYPE,VALUE,COMMENT
+   EMAIL,abc@somedomain.com,Comment
+   DOMAIN,somedomain.com,Comment
+   ```
+   Du kan även hämta den här mallen från huvudvyn i **[!UICONTROL Suppression list]**.
 
-    >[!CAUTION]
-    >
-    >Do not change the names of the columns in the CSV template.
-    >
-    >The file size should not exceed 50 MB.
+   >[!CAUTION]
+   >
+   >Ändra inte namnen på kolumnerna i CSV-mallen.
+   >
+   >Filstorleken får inte överstiga 1 MB.
 
-1. Fill in the CSV template with the email addresses and/or domains you want to add to the suppression list.
+1. Fyll i CSV-mallen med de e-postadresser och/eller domäner som du vill lägga till i listan över inaktiveringar.
 
-1. Once completed, drag and drop your CSV file, then click **[!UICONTROL Upload file]**.
+1. När du är klar drar och släpper du CSV-filen och klickar sedan på **[!UICONTROL Upload file]**.
 
-    ![](../assets/suppression-list-upload-file-button.png)
+   ![](../assets/suppression-list-upload-file-button.png)
 
-1. Click **[!UICONTROL Submit]**.
+1. Klicka på **[!UICONTROL Submit]**.
 
-### Check recent uploads status {#recent-uploads}
+### Kontrollera status för senaste överföringar {#recent-uploads}
 
-You can check the list of the latest CSV files you uploaded.
+Du kan kontrollera listan med de senaste CSV-filerna som du har överfört.
 
-To do this, from the **[!UICONTROL Suppression list]** view, click the **[!UICONTROL Recent uploads]** button.
+Det gör du genom att klicka på knappen **[!UICONTROL Recent uploads]** i vyn **[!UICONTROL Suppression list]**.
 
 ![](../assets/suppression-list-recent-uploads-button.png)
 
-The latest uploads you submitted and their corresponding statuses are displayed.
+De senaste överföringarna du skickade och deras motsvarande status visas.
 
-If an error report is associated with a file, you can download it to check the errors encountered.
+Om en felrapport är kopplad till en fil kan du hämta den för att kontrollera de fel som påträffas.
 
 ![](../assets/suppression-list-recent-uploads-error.png)
 
-Below is an example of the type of entries you can find in the error report:
+Nedan visas ett exempel på den typ av poster som du kan hitta i felrapporten:
 
 ```
 type,value,comments,failureReason
@@ -206,6 +228,5 @@ Domain,example.!com,MANUAL,Invalid format for value: example.!com
 Domain,!examplecom,MANUAL,Invalid format for value: !examplecom
 ```
 
--->
 
 

@@ -1,9 +1,9 @@
 ---
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
-source-git-commit: 7742f2eb199fe0fbb57fa95e22bb464f8cd5c663
+source-git-commit: 61c6f63d8a61b3cdc0f08f7c9b2323cc4710eb88
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '455'
 ht-degree: 12%
 
 ---
@@ -28,8 +28,8 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Uppdaterat och ändrat namn på avsnittet för återförsöksperiod för att återspegla det faktum att du nu kan ändra inställningen för återförsök via e-post i meddelandeförinställningarna. [Läs mer](configuration/retries.md#retry-duration)
 * Ett nytt avsnitt har lagts till som beskriver hur du infogar en länk för att välja bort ett enstaka klick i e-postinnehåll. [Läs mer](message-tracking.md#one-click-opt-out-link)
 * Uppdaterade avsnittet Delegera en underdomän med mer detaljerad information om valideringsprocessen som utfördes av Adobe. [Läs mer](configuration/delegate-subdomain.md#subdomain-validation)
-
-<!--* Added a section to describe how to manually add email addresses and domains to the suppression list. [Read more](configuration/manage-suppression-list.md#add-addresses-and-domains)-->
+* Ett avsnitt har lagts till som beskriver hur du manuellt lägger till e-postadresser och domäner i listan över inaktiveringar. [Läs mer](configuration/manage-suppression-list.md#add-addresses-and-domains)
+* Uppdaterade avsnittet [Åtkomst till undertryckningslistan](configuration/manage-suppression-list.md#access-suppression-list) och [Nya försök](configuration/retries.md) för att återspegla det nya användargränssnittet.
 
 
 ## Juli 2021
@@ -44,9 +44,9 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Ett underavsnitt har lagts till på spegelsidor. [Läs mer](message-tracking.md#mirror-page)
 * Namnet på&quot;erbjudandeaktiviteter&quot; har ändrats till&quot;beslut&quot; och&quot;beslut&quot; till&quot;beslutsomfattningar&quot; i dokumentation och skärmar. [Läs mer](offers/get-started/starting-offer-decisioning.md)
 * Nytt användningsfall: [anpassa ett meddelande med hjälpfunktioner](personalization/personalization-use-case-helper-functions.md)
-* Dokumentationen för det lästa segmentet har uppdaterats för att återspegla materialiserade segmenteffekter. [Läs mer](building-journeys/read-segment.md)
+* Dokumentationen för Läs segment har uppdaterats för att återspegla materialiserad segmentpåverkan. [Läs mer](building-journeys/read-segment.md)
 * Uppdaterade begränsningar för resan. [Läs mer](building-journeys/limitations.md)
-* Uppdaterat avsnittet Konfigurera erbjudandeurval i beslut. [Läs mer](offers/offer-activities/configure-offer-selection.md)
+* Markeringen Konfigurera erbjudanden uppdaterades i avsnittet Beslut. [Läs mer](offers/offer-activities/configure-offer-selection.md)
 * En varning har lagts till som anger att händelsebaserade erbjudanden för närvarande inte stöds. [Läs mer](offers/offer-library/creating-personalized-offers.md#eligibility)
-* Fliken Beslutshantering - nytt [!UICONTROL Overview] har dokumenterats. [Läs mer](offers/get-started/user-interface.md#overview)
+* Dokumenterade den nya fliken för beslutshantering **[!UICONTROL Overview]**. [Läs mer](offers/get-started/user-interface.md#overview)
 * Nya avsnitt har lagts till för att beskriva de åtgärder som är tillgängliga från erbjudandet och beslutslistorna: [Erbjudandelista](offers/offer-library/creating-personalized-offers.md#offer-list) och [Beslutslista](offers/offer-activities/create-offer-activities.md#decision-list).

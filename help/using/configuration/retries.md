@@ -15,33 +15,49 @@ feature: Application Settings
 topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: 79c3c47eb6978f377bf4dc49f787e9a509aa3f61
+source-git-commit: b18f8c468157988be9cca44795b46f6fb4a0208e
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 0%
+source-wordcount: '384'
+ht-degree: 1%
 
 ---
 
 
 # Återförsök {#retries}
 
-När ett e-postmeddelande misslyckas på grund av ett tillfälligt **Mjukt studs** eller **Ignorerat**-fel, utförs flera försök. Varje fel ökar en felräknare. När den här räknaren når gränsvärdet läggs adressen till i listan över spärrade adresser.
+När ett e-postmeddelande misslyckas på grund av ett tillfälligt **fel av typen Mjuk studs** utförs flera försök. Varje fel ökar en felräknare. När den här räknaren når gränsvärdet läggs adressen till i listan över spärrade adresser.
 
 >[!NOTE]
 >
 >Läs mer om feltyperna i avsnittet [Leveransfel](../suppression-list.md#delivery-failures).
 
-I standardkonfigurationen anges tröskelvärdet till tre fel:
+I standardkonfigurationen är tröskelvärdet 5 fel.
 
-* Vid det tredje felet som påträffades vid samma leverans ignoreras adressen.
+* Adressen undertrycks vid det femte påträffade felet inom [tidsperioden](#retry-duration) för samma leverans.
 
-* Om det finns olika leveranser och två fel inträffar med minst 24 timmars mellanrum, ökas felräknaren vid varje fel och adressen visas inte vid det tredje försöket.
+* Om det finns olika leveranser och två fel inträffar med minst 24 timmars mellanrum, ökas felräknaren vid varje fel och adressen visas inte vid det femte försöket.
 
 Om en leverans lyckas efter ett nytt försök initieras adressräknaren på nytt.
 
-Du kan ändra gränsvärdet med knappen **[!UICONTROL Edit]** på menyn **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL General]**.
+Om standardvärdet 5 inte passar dina behov kan du ändra feltröskeln enligt stegen nedan.
 
-![](../assets/retries-edition.png)
+1. Gå till **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL Suppression list]**.
+
+1. Markera knappen **[!UICONTROL Edit suppression rules]**.
+
+   ![](../assets/suppression-list-edit-retries.png)
+
+1. Redigera det tillåtna antalet på varandra följande mjuka studsar efter dina behov.
+
+   ![](../assets/suppression-list-edit-soft-bounces.png)
+
+   Du måste ange ett heltalsvärde mellan 1 och 20, vilket innebär att det minsta antalet försök är 1 och det högsta antalet är 20.
+
+   >[!CAUTION]
+   >
+   >Värden över 10 kan orsaka problem med leveransens anseende, liksom IP-begränsning eller blockeringslistning från Internet-leverantörer. [Läs mer om leverans](../deliverability.md)
+
+<!--![](../assets/retries-edition.png)-->
 
 <!--The minimum delay between retries and the maximum number of retries to be performed are based on how well an IP is performing, both historically and currently, at a given domain.-->
 
@@ -62,3 +78,5 @@ Du kan t.ex. ange återförsöksperioden till 24 timmar för ett transaktionsmej
 Lär dig hur du justerar parametrarna för e-poståterförsök när du skapar en meddelandeförinställning i [det här avsnittet](message-presets.md#create-message-preset).
 
 <!--After 3.5 days, any message in the retry queue will be removed from the queue and sent back as a bounce.-->
+
+<!--Once a message has been in the retry queue for a maximum of 3.5 days and has failed to deliver, it will time out and its status will be updated to Failed??-->
