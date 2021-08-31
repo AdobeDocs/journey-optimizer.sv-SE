@@ -1,10 +1,10 @@
 ---
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
-source-git-commit: cd077b6f1fd5c81955aec2475dfd8b52aeb23422
+source-git-commit: 1c299ec022a3985c2e9b164bc57d36948f0941d5
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 9%
+source-wordcount: '1042'
+ht-degree: 10%
 
 ---
 
@@ -51,6 +51,7 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 </tr>
 </tbody>
 </table>
+
 <!--
 <table>
 <thead>
@@ -84,6 +85,23 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 </tr>
 </tbody>
 </table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Definiera adresser som ska uteslutas från sändning - Suppressionslista</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Det går nu att lägga till e-postadresser och domäner i listan över inaktiveringar från användargränssnittet, antingen en i taget, antingen i gruppläge via en CSV-filöverföring.</p>
+<p>Mer information finns i den <a href="configuration/manage-suppression-list.md#add-addresses-and-domains">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 <!--
 <table>
 <thead>
@@ -129,10 +147,8 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 **E-postkonfiguration**
 
 * **Tillåtelselista**  - tillåtelselista kan nu aktiveras och inaktiveras i en icke-produktionssandlåda via ett API-anrop. [Läs mer](allow-list.md#enable-allow-list)
-
+* **Navigering**  - Supprestionslistan, som fanns under  **Administration > Kanaler > E-postkonfiguration >** Allmänt, har flyttats till den nya  **** undermenyn Undertryckande, som samlar alla relaterade funktioner för enklare åtkomst. [Läs mer](configuration/manage-suppression-list.md#access-suppression-list)
 <!--* **Suppression list** - Adding email addresses and domains into the suppression list is now available from the user interface, either one by one, either in bulk mode through a CSV file upload. [Learn more](configuration/manage-suppression-list.md#add-addresses-and-domains)-->
-<!--* **Navigation** - The suppression list, which was accessible under the **Channels > Email configuration > General** menu, has been moved to the **Channels > Email configuration > Suppression list** menu for easier access. [Learn more](configuration/manage-suppression-list.md#access-suppression-list)-->
-
 
 ### Korrigeringar
 

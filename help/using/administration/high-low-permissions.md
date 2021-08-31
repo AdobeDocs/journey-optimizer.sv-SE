@@ -12,13 +12,13 @@ discoiquuid: null
 internal: n
 snippet: y
 exl-id: 85fd386a-45fa-4f9a-89d1-cecc0749b90d
-feature: Kontrollgrupper
-topic: Administrering
+feature: Control Groups
+topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
+source-git-commit: 0c7ca9a87a55c04b977a29c6be446da143722e37
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1093'
 ht-degree: 0%
 
 ---
@@ -303,7 +303,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Hantera delegeringsbehörighet för underdomäner {#manage-subdomain}
 
-Med den höga behörigheten **[!UICONTROL Manage subdomains delegation]** kan användare skapa, redigera och ta bort underdomändelegering (inklusive IP-pool).
+Med den höga behörigheten **[!UICONTROL Manage subdomains delegation]** kan användare skapa, redigera och ta bort underdomänsdelegeringar (inklusive IP-pool).
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -313,14 +313,16 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Visa behörighet för PTR-poster {#view-ptr}
 
-Med den höga behörigheten **[!UICONTROL View PTR records]** kan användare visa PTR-poster som har konfigurerats baserat på underdomäner och som har följande lågnivåbehörigheter:
+Med den höga behörigheten **[!UICONTROL View PTR records]** kan användare visa PTR-poster som har konfigurerats baserat på underdomänen.
+
+Den innehåller följande lågnivåbehörigheter:
 
 * PTR_records.read
 * underdomäner_delegering.read
 
 ### Hantera behörighet för IP-pooler {#manage-ip-pools}
 
-Med den höga behörigheten **[!UICONTROL Manage IP pools]** kan användare skapa, redigera och ta bort tillhörighetsdefinition.
+Med den höga behörigheten **[!UICONTROL Manage IP pools]** kan användare skapa, redigera och ta bort tillhörighetsdefinitionen.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -338,13 +340,12 @@ Den innehåller följande lågnivåbehörigheter:
    * messages_general_settings.read
    * messages_general_settings.write
    * messages_general_settings.delete
-
 * Specifikt för Adobe Experience Platform:
    * schemas.read
 
 ### Visa allmänna inställningar för meddelanden {#view-message-settings}
 
-Med behörigheten **[!UICONTROL View messages general settings]** på hög nivå kan användare visa allmänna inställningar för meddelanden, t.ex. inaktiveringsregler eller körningsadress.
+Med den höga behörigheten **[!UICONTROL View messages general settings]** kan användare visa allmänna inställningar för meddelanden, t.ex. körningsadressen.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -378,19 +379,21 @@ Den innehåller följande lågnivåbehörigheter:
 * IP_pools.read
 * mobile_setting.read (från Adobe Experience Platform Launch)
 
-### Hantera behörighet för undertryckningsregler {#manage-suppression-rules}
+### Hantera undertryckningsbehörighet {#manage-suppression}
 
-Med den höga behörigheten **[!UICONTROL Manage suppression rules]** kan användare definiera antalet studsar innan användarens e-postadress läggs till i listan över utelämnanden.
+Med behörigheten **[!UICONTROL Manage suppression]** på hög nivå kan användare definiera antalet studsar innan en e-postadress läggs till i listan samt lägga till och ta bort poster i/från listan.
 
 Den innehåller följande lågnivåbehörigheter:
 
 * suppression_rules.read
 * suppression_rules.write
 * suppression_rules.delete
+* suppression_list.write
+* suppression_list.delete
 
 ### Visa behörighet för undertryckningslista {#view-suppresion-list}
 
-Med den höga behörigheten **[!UICONTROL View suppression list]** kan användare visa meddelandekonfigurationer, inklusive meddelandeförinställningar och allmänna meddelandeinställningar.
+Med den höga behörigheten **[!UICONTROL View suppression list]** kan användare visa innehåll och inställningar i listan över utelämnanden.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -402,10 +405,12 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Behörighet för att exportera undertryckningslista {#export-suppression-list}
 
-Med den höga behörigheten **[!UICONTROL Export suppression list]** kan användare konfigurera meddelandekonfigurationer, inklusive meddelandeförinställningar och allmänna meddelandeinställningar.
+Med den höga behörigheten **[!UICONTROL Export suppression list]** kan användare hämta undertryckningslistan som en CSV-fil.
 
 Den innehåller följande lågnivåbehörigheter:
 
+* Specifikt för Journey Optimizer:
+   * suppression_list.export
 * Specifikt för Adobe Experience Platform:
    * profiles.read
    * datasets.read
