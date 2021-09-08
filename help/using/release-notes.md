@@ -1,13 +1,13 @@
 ---
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
-source-git-commit: 1c299ec022a3985c2e9b164bc57d36948f0941d5
+exl-id: 06fa956a-b500-416e-9d42-b683c328e837
+source-git-commit: 5df4856c7be31a75116d906320ae50cd5dc6a2dc
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1071'
 ht-degree: 10%
 
 ---
-
 
 # Versionsinformation {#release-notes}
 
@@ -140,9 +140,9 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 * **Bakgrund**  - Bakgrundsbilder stöds nu i direktförhandsvisning. [Läs mer](preview.md)
 * **Länk**  för avanmälan med ett klick - Du kan infoga en ny typ av länk i ditt e-postinnehåll: Med  **Opt-** outlink kan man avsluta abonnemanget på att få meddelanden med bara ett klick, utan att man behöver omdirigeras till en landningssida för att bekräfta avanmälan. [Läs mer](message-tracking.md#one-click-opt-out-link)
 
-<!--**Personalization**
+**Personalisering**
 
-* **Expression Editor** - You can now easily add a fall-back value when defining personalization: when personalization field is empty for a profile, the fall-back value will display. [Learn more](documentation-updates.md)-->
+* **Uttrycksredigeraren**  - Nu kan du enkelt lägga till ett reservvärde när du definierar personalisering: när anpassningsfältet är tomt för en profil visas reservvärdet. [Läs mer](personalization/functions/helper.md)
 
 **E-postkonfiguration**
 
@@ -225,4 +225,3 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 * Lokalisering i erbjudandefältet i Expression Editor är nu implementerat.
 * Felaktigt avstånd i informationspopup-fönster har korrigerats.
 * Korrigerade ett fel i e-postdesignern vid överföring av en HTML-fil där en intern formatmall med egenskapen `background-image` inte stöds.
-

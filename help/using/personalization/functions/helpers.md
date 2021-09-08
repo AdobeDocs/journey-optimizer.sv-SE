@@ -1,19 +1,31 @@
 ---
 title: Hjälpmedel
 description: Hjälpmedel
-feature: Personalisering
-topic: Personalisering
+feature: Personalization
+topic: Personalization
 role: Data Engineer
 level: Experienced
-source-git-commit: adb915a2013d1d1bf17ed5efb7ac4eb9c655c501
+exl-id: b08dc0f8-c85f-4aca-85eb-92dc76b0e588
+source-git-commit: 5df4856c7be31a75116d906320ae50cd5dc6a2dc
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 4%
+source-wordcount: '372'
+ht-degree: 3%
 
 ---
 
-
 # Hjälpmedel {#gs-helpers}
+
+## Standardvärde för reserv{#default-value}
+
+Hjälpen `Default Fallback Value` används för att returnera ett standardreservvärde om ett attribut är tomt eller null. Den här mekanismen fungerar för profilattribut och resthändelser.
+
+**Syntax**
+
+```sql
+Hello {%=profile.personalEmail.name.firstName ?: 'there' %}!
+```
+
+I det här exemplet visas värdet `there` om attributet `firstName` för den här profilen är tomt eller null.
 
 ## Villkor{#if-function}
 
