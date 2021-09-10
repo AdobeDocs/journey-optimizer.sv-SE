@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 3ca2d7a8a3a55cd7caad86d72a2ac2fa9f5b315c
+source-git-commit: 740d76fccf966d027c63ddc72241d91cb6c8928b
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1110'
 ht-degree: 10%
 
 ---
@@ -148,7 +148,10 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 
 * **Tillåtelselista**  - tillåtelselista kan nu aktiveras och inaktiveras i en icke-produktionssandlåda via ett API-anrop. [Läs mer](allow-list.md#enable-allow-list)
 * **Navigering**  - Supprestionslistan, som fanns under  **Administration > Kanaler > E-postkonfiguration >** Allmänt, har flyttats till den nya  **** undermenyn Undertryckande, som samlar alla relaterade funktioner för enklare åtkomst. [Läs mer](configuration/manage-suppression-list.md#access-suppression-list)
-<!--* **Suppression list** - Adding email addresses and domains into the suppression list is now available from the user interface, either one by one, either in bulk mode through a CSV file upload. [Learn more](configuration/manage-suppression-list.md#add-addresses-and-domains)-->
+
+**Beslutsledning**
+
+* Det sätt på vilket du lägger till och konfigurerar representationer när du skapar ett erbjudande har uppdaterats för att förbättra användarupplevelsen. Resursbiblioteket visas nu endast när du definierar bildtypsinnehåll för en representation. [Läs mer](offers/offer-library/creating-personalized-offers.md#representations)
 
 ### Korrigeringar
 

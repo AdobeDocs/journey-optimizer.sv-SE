@@ -5,10 +5,11 @@ feature: Offers
 topic: Integrations
 role: User
 level: Intermediate
-source-git-commit: ef9d9501f4307d7e9234de46b670a1fea605a1b3
+exl-id: 4a53ea96-632a-41c7-ab15-b85b99db4f3e
+source-git-commit: 024a450724aecfde0eab7ab97421052a0aa99f2e
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 1%
+source-wordcount: '1278'
+ht-degree: 0%
 
 ---
 
@@ -44,43 +45,67 @@ Så här skapar du ett **erbjudande**:
 
 ## Konfigurera offertens representationer {#representations}
 
-1. Lägg till en eller flera representationer för ditt erbjudande med knappen **[!UICONTROL Add representation]**.
+Ett erbjudande kan visas på olika platser i ett meddelande: i en övre banderoll med en bild, som text i ett stycke, som ett HTML-block osv. Ju fler representationer ett erbjudande har, desto fler möjligheter finns det att använda erbjudandet i olika placeringssammanhang.
 
-   >[!NOTE]
-   >
-   >Ett erbjudande kan visas på olika platser i ett meddelande: i en övre banderoll med en bild, som text i ett stycke, som ett html-block osv. Ju fler representationer ett erbjudande har, desto fler möjligheter finns det att använda erbjudandet i olika placeringssammanhang.
+Följ stegen nedan om du vill lägga till en eller flera representationer i ditt erbjudande och konfigurera dem.
 
-1. För varje representation anger du **[!UICONTROL Channel]** och **[!UICONTROL Placement]** där erbjudandet ska visas.
+1. För den första representationen börjar du med att välja **[!UICONTROL Channel]** som ska användas.
 
    ![](../../assets/channel-placement.png)
 
-   Med knappen **[!UICONTROL Browse]** kan du filtrera tillgängliga placeringar och filtrera dem efter kanal- och/eller innehållstyp.
+   Endast de tillgängliga placeringarna för den valda kanalen visas i listrutan **[!UICONTROL Placement]**.
+
+1. Välj en placering i listan eller använd knappen bredvid listrutan **[!UICONTROL Placement]** för att bläddra bland alla placeringar.
+
+   ![](../../assets/browse-button-placements.png)
+
+   Där kan du fortfarande filtrera placeringarna efter kanal- och/eller innehållstyp. Välj en placering och klicka på **[!UICONTROL Select]**.
 
    ![](../../assets/browse-placements.png)
 
-1. Lägg till innehåll i varje representation som kommer från Adobe Experience Cloud Assets-biblioteket eller från en extern offentlig plats.
+1. Lägg till innehåll i din representation.
 
-   * Om du vill lägga till innehåll från Adobe Experience Cloud Resurser-biblioteket drar och släpper du det från den vänstra rutan i visningsområdet och anger sedan den URL som ska associeras med innehållet i **[!UICONTROL Destination link]**-fältet.
+   >[!NOTE]
+   >
+   >Endast innehåll som motsvarar placeringens innehållstyp är tillgängligt för användning.
+
+   * Om den valda placeringen är av bildtyp kan du lägga till innehåll från Adobe Experience Cloud Asset-biblioteket, en central databas med resurser från [!DNL Adobe Experience Manager Assets Essentials].
 
       >[!NOTE]
       >
-      >Innehåll kan bara dras och släppas från resursväljaren i den vänstra panelen. Endast innehåll som motsvarar placeringens innehållstyp är tillgängligt för användning.
+      > Om du vill arbeta med [Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=en){target=&quot;_blank&quot;} måste du distribuera [!DNL Assets Essentials] för din organisation och se till att användare är en del av **Assets Essentials konsumentanvändare** eller/och **Assets Essentials-användare** produktprofiler. Läs mer på [den här sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}.
 
-      ![](../../assets/offer_drag_content.png)
+      Välj alternativet **[!UICONTROL Asset library]** och välj **[!UICONTROL Browse]**.
 
-   * Om du vill lägga till innehåll från en extern offentlig plats klickar du på knappen **[!UICONTROL Add content]** och anger sedan namnet, URL:en och destinationslänken för innehållet som ska läggas till.
+      ![](../../assets/offer-browse-asset-library.png)
 
-      Kontrollera att innehållet som du lägger till motsvarar den valda placeringens innehållstyp.
+      Bläddra bland resurserna för att välja den bild du vill använda och klicka på **[!UICONTROL Select]**.
 
-      ![](../../assets/offer_add_content.png)
+      ![](../../assets/offer-select-asset.png)
 
-   * Du kan också infoga text. Om du vill göra det klickar du på knappen **[!UICONTROL Add content]** och väljer sedan alternativet **[!UICONTROL Custom text]**. I fältet **[!UICONTROL Text]** skriver du den text som ska visas i erbjudandet.
+   * Om du vill lägga till innehåll från en extern offentlig plats väljer du **[!UICONTROL URL]** och anger sedan URL-adressen för innehållet som ska läggas till.
+
+      ![](../../assets/offer-content-url.png)
+
+   * Du kan också infoga text när du väljer en kompatibel placering. Välj alternativet **[!UICONTROL Custom]** och skriv den text som ska visas i erbjudandet.
+
+      ![](../../assets/offer-text-content.png)
 
       >[!NOTE]
       >
       >Det här alternativet är inte tillgängligt för bildtypsplaceringar.
 
-      ![](../../assets/offer_text_content.png)
+1. När du lägger till innehåll som en bild eller URL kan du ange en **[!UICONTROL Destination link]**: de användare som klickar på erbjudandet dirigeras till motsvarande sida.
+
+   ![](../../assets/offer-destination-link.png)
+
+1. Välj slutligen det språk du vill använda för att identifiera och hantera vad som ska visas för användarna.
+
+1. Om du vill lägga till ytterligare en representation använder du knappen **[!UICONTROL Add representation]** och lägger till så många representationer som behövs.
+
+   ![](../../assets/offer-add-representation.png)
+
+1. När du har lagt till alla representationer väljer du **[!UICONTROL Next]**.
 
 ## Lägg till regler och begränsningar för berättigande {#eligibility}
 

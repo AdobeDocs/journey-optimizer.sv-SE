@@ -1,13 +1,13 @@
 ---
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
-source-git-commit: 61c6f63d8a61b3cdc0f08f7c9b2323cc4710eb88
+exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
+source-git-commit: 04945572fc027fd063a1f52638205f39086767cf
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 12%
+source-wordcount: '472'
+ht-degree: 16%
 
 ---
-
 
 # Senaste uppdateringarna i den här dokumentationen
 
@@ -18,7 +18,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Alla nya funktioner och förbättringar som kommer med [!DNL Journey Optimizer] August 21 finns detaljerade i dokumentationen. [Läs mer](release-notes.md)
 * Uppdaterade behörigheter för beslutshantering. [Läs mer](administration/ootb-product-profiles.md)
 * Uppdaterade skärmbilder för e-postdesigner med det senaste användargränssnittet.
-* Konfigurationsproceduren för anpassade åtgärder med dynamiska URL-sökvägar och dynamiska rubriker har uppdaterats. [Läs mer](action/about-custom-action-configuration.md#url-configuration)
+* Konfigurationsproceduren för anpassade åtgärder med dynamiska URL-sökvägar och dynamiska huvuden har uppdaterats. [Läs mer](action/about-custom-action-configuration.md#url-configuration)
 * Ett avsnitt om tillgänglighetsfunktioner och genvägar har lagts till. [Läs mer](user-interface.md#accessibility)
 * Ett avsnitt om metoder för segmentutvärdering har lagts till. [Läs mer](segment/about-segments.md#evaluation-method-in-journey-optimizer)
 * Anteckningar har lagts till i avsnitten om Suppression-listan, Tillåtelselista och e-post, global/liverapport, för att ange att profiler med statusen Inaktiverad och Inte tillåten ska uteslutas från e-postrapporten Skickade mått. [Läs mer](reports/email-global-report.md)
@@ -30,6 +30,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Uppdaterade avsnittet Delegera en underdomän med mer detaljerad information om valideringsprocessen som utfördes av Adobe. [Läs mer](configuration/delegate-subdomain.md#subdomain-validation)
 * Ett avsnitt har lagts till som beskriver hur du manuellt lägger till e-postadresser och domäner i listan över inaktiveringar. [Läs mer](configuration/manage-suppression-list.md#add-addresses-and-domains)
 * Uppdaterade avsnittet [Åtkomst till undertryckningslistan](configuration/manage-suppression-list.md#access-suppression-list) och [Nya försök](configuration/retries.md) för att återspegla det nya användargränssnittet.
+* Det nya flödet för att lägga till och konfigurera representationer när ett erbjudande skapas har dokumenterats. [Läs mer](offers/offer-library/creating-personalized-offers.md#representations)
 
 
 ## Juli 2021
