@@ -1,14 +1,15 @@
 ---
 title: Snabbstart
 description: Journey Optimizer snabbstart
-feature: Översikt
-topic: Innehållshantering
+feature: Overview
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: ac6ba317909c962a81c7043bfa2a56e94bc5c9ad
+exl-id: 71ab7369-fd84-46eb-95d2-941bd887d565
+source-git-commit: c6592d16dc8bd9ea2bada4fc351c844985a1042f
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 6%
+source-wordcount: '522'
+ht-degree: 4%
 
 ---
 
@@ -20,40 +21,55 @@ Med [!DNL Adobe Journey Optimizer] kan du importera befintligt meddelandeinnehå
 
 Beroende på din organisation kan du definiera flera typer av användare och ge dem åtkomst till vissa funktioner beroende på deras behörigheter.
 
-### Förutsättningar {#cjm-prerequisites}
+## Förbered och konfigurera miljön
 
-Innan du börjar använda [!DNL Adobe Journey Optimizer] måste du:
+Innan du börjar använda [!DNL Adobe Journey Optimizer] måste du utföra flera steg för att förbereda miljön.
 
-* **Ange användarbehörigheter**: logga in  [!DNL Adobe Journey Optimizer] och ge åtkomst till dina teammedlemmar. [Läs mer](../using/administration/permissions.md)
+Som systemadministratör måste du **förstå produktprofiler och tilldela behörigheter** för sandlådeadministration och kanalkonfiguration. Du måste också konfigurera sandlådor och hantera dem för de tillgängliga produktprofilerna.
+Du kan sedan tilldela teammedlemmar till produktprofiler och **konfigurera kanalkonfiguration** för meddelanden.
 
-* **Distribuera[!DNL Adobe Experience Manager Assets Essentials]**: om du vill hantera resurser och bilder i meddelanden måste du distribuera  [!DNL Assets Essentials] för din organisation och se till att användare, som behöver åtkomst till  [!DNL Assets Essentials], är en del av  **Assets Essentials** konsumentanvändarprofiler  **och** Assets Essentialsanvändarproduktprofiler. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}
+Läs mer på följande sidor:
 
-* **Konfigurera kanalerna**: ange inställningar för e-post och push-meddelanden. [Läs mer](../using/configuration/get-started-configuration.md)
+* **Kom igång med produktprofiler och behörigheter**
 
-* **Definiera dina förinställningar**: skapa dina förinställningar och konfigurera dina brandingparametrar. [Läs mer](../using/configuration/message-presets.md)
+* **Ange** användarbehörigheter och ge åtkomst till dina teammedlemmar. [Läs mer](../using/administration/permissions.md)
 
-* **Identifiera data och skapa schema och datauppsättning**: få in data i Adobe Experience Platform, skapa ett identitetsnamnutrymme och en datauppsättning som är aktiverad för profiler, skapa segment och testa profiler.
+* **Distribuera[!DNL Adobe Experience Manager Assets Essentials]** för att hantera resurser och bilder i dina meddelanden: -användare som behöver åtkomst till  [!DNL Assets Essentials] måste vara en del av  **Assets Essentials** konsumentanvändare/och  **Assets Essentials** användarproduktprofiler. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}
 
-   * Lär dig hur du förhandsgranskar och skapar en datauppsättning i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html){target=&quot;_blank&quot;}
+* **Konfigurera** kanalerna och definiera inställningarna för e-post och push-meddelanden. [Läs mer](../using/configuration/get-started-configuration.md)
 
-   * Lär dig hur du skapar ett identitetsnamnutrymme i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html#manage-namespaces){target=&quot;_blank&quot;}
+* **Definiera dina** förinställningar och konfigurera brandingsparametrarna. [Läs mer](../using/configuration/message-presets.md)
 
-   * Lär dig hur du skapar testprofiler i [den här sidan](../using/building-journeys/creating-test-profiles.md)
-
-   * Läs mer om dataöverföring i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target=&quot;_blank&quot;}
+* **Hantera** sandlådor för att partitionera instansen i separata virtuella miljöer. [Läs mer](../using/administration/sandboxes.md)
 
 
-### Användningsflöde
+## Förbered era data och konfigurera era resor
 
-Se följande avsnitt för att konfigurera din första resa och skicka meddelanden:
+Som dataadministratör måste du **identifiera data och skapa schema och datauppsättning** för att kunna hämta data till Adobe Experience Platform.
+
+Steg för att skapa ett identitetsnamnutrymme och en datauppsättning som är aktiverad för profiler samt skapa segment och testprofiler beskrivs i avsnitten nedan:
+
+* Lär dig hur du förhandsgranskar och skapar en **datauppsättning** i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html){target=&quot;_blank&quot;}
+
+* Lär dig hur du skapar ett **identitetsnamnutrymme** i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html#manage-namespaces){target=&quot;_blank&quot;}
+
+* Lär dig hur du skapar **testprofiler** i [den här sidan](../using/building-journeys/creating-test-profiles.md)
+
+* Läs mer om **dataöverföring** i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target=&quot;_blank&quot;}
+
+* Lär dig hur du **definierar målgrupper**, skapar segment, hanterar samtycke och sekretess i [den här sidan](../using/segment/about-segments.md)
+
+För att kunna skicka meddelanden under resor måste du dessutom konfigurera **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** och **[!UICONTROL Actions]**. Läs mer i [det här avsnittet](../using/configuration/about-data-sources-events-actions.md)
+
+## Skapa meddelanden, erbjudanden och resor
+
+Som resande kan du se följande avsnitt för att konfigurera din första resa, lägga till erbjudanden, resurser och skicka meddelanden:
 
 * **Skapa meddelanden**: få tillgång till meddelanden, utforma eller läsa in e-post och push-innehåll, lägga till personalisering och förhandsgranskningsmeddelanden. [Läs mer](create-message.md)
 
 * **Överför resurser**: använda Adobe Experience Manager Assets Essentials för att hantera resurser och bilder. [Läs mer](assets-essentials.md)
 
 * **Lägg till erbjudanden**: Använd Journey Optimizer Decision Management för att lägga in skräddarsydda erbjudanden i era meddelanden. [Läs mer](../using/offers/get-started/starting-offer-decisioning.md)
-
-* **Definiera målgrupp**: skapa segment, skapa händelser, hantera samtycke och integritet. [Läs mer](../using/segment/about-segments.md)
 
 * **Skapa resor**: skicka meddelanden, utnyttja sammanhangsbaserade data, förfina målgrupper, utforma och köra flerstegsbaserade fallstudier. [Läs mer](building-journeys/journey.md)
 

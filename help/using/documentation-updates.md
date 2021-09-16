@@ -2,16 +2,21 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 967772bcf7413c4c916d045375a84807581ea6ae
+source-git-commit: c6592d16dc8bd9ea2bada4fc351c844985a1042f
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 16%
+source-wordcount: '492'
+ht-degree: 17%
 
 ---
 
 # Senaste uppdateringarna i den här dokumentationen
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
+
+## September 2021
+
+* En ny sida med **begränsningar** har lagts till. [Läs mer](limitations.md)
+* Förbättrade sidan **Snabbstart** med steg för olika profiler. [Läs mer](quick-start.md)
 
 ## Augusti 2021
 
