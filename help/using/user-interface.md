@@ -5,9 +5,10 @@ feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: ec880e9a42180221c3046aedf8ec46eff70d2493
+exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
+source-git-commit: 967772bcf7413c4c916d045375a84807581ea6ae
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1459'
 ht-degree: 7%
 
 ---
@@ -22,7 +23,7 @@ När du är ansluten till [Adobe Experience Cloud](http://experience.adobe.com) 
 >
 >* Den här dokumentationen uppdateras ofta för att återspegla de senaste ändringarna i produktanvändargränssnittet. Vissa skärmbilder kan dock skilja sig något från användargränssnittet.
 >
-> * Vilka komponenter och funktioner som är tillgängliga i användargränssnittet beror på dina behörigheter och ditt licenspaket. Fråga din Adobe Customer Success Manager för alla frågor.
+>* Vilka komponenter och funktioner som är tillgängliga i användargränssnittet beror på dina [behörigheter](administration/permissions.md) och ditt [licenspaket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target=&quot;_blank&quot;}. Fråga din Adobe Customer Success Manager för alla frågor.
 
 
 ## Vänster navigering
@@ -110,7 +111,7 @@ Du kommer åt körda användningsfall från knappen **[!UICONTROL View use case 
 
 ## Tillgänglighet{#accessibility}
 
-Tillgänglighetsfunktionerna i Adobe Journey Optimizer tillhandahålls av Adobe Experience Platform:
+Tillgänglighetsfunktionerna i [!DNL Adobe Journey Optimizer] ärvs från Adobe Experience Platform:
 
 * Tangentbordstillgänglighet
 * Färgkontrast
@@ -118,7 +119,7 @@ Tillgänglighetsfunktionerna i Adobe Journey Optimizer tillhandahålls av Adobe 
 
 [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/features.html){target=&quot;_blank&quot;} i Adobe Experience Platform-dokumentationen.
 
-Du kan använda följande vanliga kortkommandon i Adobe Journey Optimizer:
+Du kan använda dessa vanliga kortkommandon i [!DNL Journey Optimizer]:
 
 | Åtgärd | Genväg |
 | --- | --- |

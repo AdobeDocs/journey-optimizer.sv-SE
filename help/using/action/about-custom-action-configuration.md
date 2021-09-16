@@ -6,7 +6,8 @@ feature: Actions
 topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: c62048e0fb7e5de2e7cdf8bc6ae17d62ef04d35c
+exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
+source-git-commit: 967772bcf7413c4c916d045375a84807581ea6ae
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 6%
@@ -16,7 +17,7 @@ ht-degree: 6%
 # Konfigurera en åtgärd {#configure-an-action}
 
 Om du använder ett tredjepartssystem för att skicka meddelanden eller om du vill att resor ska skicka API-anrop till ett tredjepartssystem, är det här du konfigurerar anslutningen till resor. Den anpassade åtgärden som definieras av tekniska användare är sedan tillgänglig på den vänstra paletten på din resa i kategorin **[!UICONTROL Action]** (se [den här sidan](../building-journeys/about-journey-activities.md#action-activities). Här är några exempel på system som du kan ansluta till med anpassade åtgärder: Epsilon, Facebook, Adobe.io, Firebase osv.
-Begränsningar visas i [den här sidan](../building-journeys/limitations.md).
+Begränsningar visas i [den här sidan](../limitations.md).
 
 Här följer de huvudsteg som krävs för att konfigurera en anpassad åtgärd:
 

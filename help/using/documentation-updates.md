@@ -2,7 +2,7 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 04945572fc027fd063a1f52638205f39086767cf
+source-git-commit: 967772bcf7413c4c916d045375a84807581ea6ae
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 16%
@@ -46,7 +46,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Namnet på&quot;erbjudandeaktiviteter&quot; har ändrats till&quot;beslut&quot; och&quot;beslut&quot; till&quot;beslutsomfattningar&quot; i dokumentation och skärmar. [Läs mer](offers/get-started/starting-offer-decisioning.md)
 * Nytt användningsfall: [anpassa ett meddelande med hjälpfunktioner](personalization/personalization-use-case-helper-functions.md)
 * Dokumentationen för Läs segment har uppdaterats för att återspegla materialiserad segmentpåverkan. [Läs mer](building-journeys/read-segment.md)
-* Uppdaterade begränsningar för resan. [Läs mer](building-journeys/limitations.md)
+* Uppdaterade begränsningar för resan. [Läs mer](limitations.md)
 * Markeringen Konfigurera erbjudanden uppdaterades i avsnittet Beslut. [Läs mer](offers/offer-activities/configure-offer-selection.md)
 * En varning har lagts till som anger att händelsebaserade erbjudanden för närvarande inte stöds. [Läs mer](offers/offer-library/creating-personalized-offers.md#eligibility)
 * Dokumenterade den nya fliken för beslutshantering **[!UICONTROL Overview]**. [Läs mer](offers/get-started/user-interface.md#overview)
