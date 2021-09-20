@@ -1,17 +1,17 @@
 ---
 title: Anpassningssyntax
 description: Lär dig använda personaliseringssyntax
-feature: Personalisering
-topic: Personalisering
+feature: Personalization
+topic: Personalization
 role: Data Engineer
 level: Intermediate
-source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
+exl-id: fe39570b-cbd2-4b24-af10-e12990a9a885
+source-git-commit: 5a21ac0c199bf237972122ac46e58bf9f8d0f8ab
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '648'
 ht-degree: 3%
 
 ---
-
 
 # Anpassningssyntax {#personalization-syntax}
 
@@ -76,7 +76,6 @@ Lär dig hur du använder profilattribut i villkoren i [det här avsnittet](func
 >[!NOTE]
 >Mer information om segmenterings- och segmenteringstjänster finns i [det här avsnittet](../segment/about-segments.md).
 
-
 ## Erbjudanden
 
 Med det här namnutrymmet kan du referera till befintliga offertbeslut.
@@ -129,7 +128,6 @@ Blocken är uttryck som har ett block som öppnas ({{# }}) och avslutas ({{/}}).
 >
 >Hjälpfunktioner beskrivs i [det här avsnittet](functions/helpers.md).
 
-
 ## Literala typer
 
 [!DNL Adobe Journey Optimizer] har stöd för följande literala typer:
@@ -144,3 +142,24 @@ Blocken är uttryck som har ett block som öppnas ({{# }}) och avslutas ({{/}}).
 >[!CAUTION]
 >
 >Det går inte att använda variabeln **xEvent** i personaliseringsuttryck. Alla referenser till xEvent resulterar i valideringsfel.
+
+## URL-anpassning{#perso-urls}
+
+Med Journey Orchestration kan du anpassa en eller flera URL-adresser i meddelandet genom att lägga till anpassningsfält till dem. Så här gör du:
+
+* Skapa en länk i ditt e-postinnehåll eller push-innehåll. Mer information om hur du skapar länkar finns på [den här sidan](../message-tracking#insert-links)).
+* Klicka på personaliseringsikonen. Den här ikonen är tillgänglig för följande typer av länkar: **Extern länk**, **Ta bort prenumerationslänk** och **Avanmäl dig**.
+
+![](assets/perso-url.png)
+
+>[!NOTE]
+>`
+>När du redigerar en anpassad URL i uttrycksredigeraren inaktiveras hjälpfunktioner och segmentmedlemskap av säkerhetsskäl.
+
+** Exempel på personaliserade URL:er **
+
+* `https://www.adobe.com/users/{{profile.person.name.lastName}}`
+* `https://www.adobe.com/users?uid={{profile.person.name.firstName}}`
+* `https://www.adobe.com/usera?uid={{context.journey.technicalProperties.journeyUID}}`
+* `https://www.adobe.com/users?uid={{profile.person.crmid}}&token={{context.token}}`
+

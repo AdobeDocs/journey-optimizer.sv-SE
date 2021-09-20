@@ -5,7 +5,8 @@ feature: Monitoring
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 6ff5d093bac20248106be1f4478102c29703cb1d
+exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
+source-git-commit: 5a21ac0c199bf237972122ac46e58bf9f8d0f8ab
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 0%
@@ -56,7 +57,7 @@ Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
 
    ![](assets/message-tracking-links.png)
 
-1. Du kan anpassa länkarna. Läs mer om anpassade URL:er i [det här avsnittet](personalization/personalization-syntax.md).
+1. Du kan anpassa länkarna. Läs mer om anpassade URL:er i [det här avsnittet](personalization/personalization-syntax.md#perso-urls).
 
 1. Spara ändringarna.
 
@@ -142,5 +143,3 @@ Med [e-postdesignern](create-email-content.md) kan du hantera spårningsbara URL
 Antalet meddelanden som har öppnats och antalet länkar som har klickats visas på fliken [Körningar](message-monitoring.md).
 
 Rapportering om öppningar och klick finns i [e-postLive-rapporten](reports/email-live-report.md) och i [e-postGlobal-rapporten](reports/email-global-report.md).
-
-
