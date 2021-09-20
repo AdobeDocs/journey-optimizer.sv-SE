@@ -6,7 +6,7 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: fe39570b-cbd2-4b24-af10-e12990a9a885
-source-git-commit: 395ce682c52880bc67234b254f3ff55fae07f82e
+source-git-commit: 1cf3475d7b2b990db4b2217bb03a47b76692142c
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 3%
@@ -147,7 +147,7 @@ Blocken är uttryck som har ett block som öppnas ({{# }}) och avslutas ({{/}}).
 
 Med Journey Orchestration kan du anpassa en eller flera URL-adresser i meddelandet genom att lägga till anpassningsfält till dem. Så här gör du:
 
-* Skapa en länk i ditt e-postinnehåll eller push-innehåll. Mer information om hur du skapar länkar finns på [den här sidan](../message-tracking#insert-links)).
+* Skapa en länk i ditt e-postinnehåll eller push-innehåll. Mer information om hur du skapar länkar finns på [den här sidan](../message-tracking.md#insert-links)).
 * Klicka på personaliseringsikonen. Den här ikonen är tillgänglig för följande typer av länkar: **Extern länk**, **Ta bort prenumerationslänk** och **Avanmäl dig**.
 
 ![](assets/perso-url.png)
