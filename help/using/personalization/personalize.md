@@ -1,13 +1,14 @@
 ---
 title: Anpassa innehåll i Journey Optimizer
 description: Kom igång med personalisering
-feature: Personalisering
-topic: Personalisering
+feature: Personalization
+topic: Personalization
 role: Data Engineer
 level: Beginner
-source-git-commit: ac6ba317909c962a81c7043bfa2a56e94bc5c9ad
+exl-id: f448780b-91bc-455e-bf10-9a9aee0a0b24
+source-git-commit: c68aa48c7762b6d2d96a7c921025104247ceffa3
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '691'
 ht-degree: 2%
 
 ---
@@ -62,7 +63,6 @@ I båda fallen får du tillgång till personaliseringsredigeraren.
 
 ![](assets/perso_ee.png)
 
-
 ### Anpassa push-meddelanden
 
 Du kan också anpassa dina **push-meddelanden** i följande fält:
@@ -77,7 +77,13 @@ Du kan också anpassa dina **push-meddelanden** i följande fält:
 
 Läs mer om konfigurationen av push-meddelanden i [det här avsnittet](../push-gs.md).
 
-## Använda uttrycksredigeraren
+### Anpassa era erbjudanden {#personalize-offers}
+
+Du kan även komma åt personaliseringsredigeraren när du lägger till textinnehåll till offerternas representationer.
+
+Läs mer om hur du hanterar innehåll med beslutshantering i [det här avsnittet](../offers/offer-library/creating-personalized-offers.md#custom-text).
+
+## Använda uttrycksredigeraren {#use-expression-editor}
 
 Uttrycksredigeraren är navet i personaliseringen i [!DNL Journey Optimizer].
 

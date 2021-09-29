@@ -11,29 +11,29 @@ topic-tags: null
 discoiquuid: null
 internal: n
 snippet: y
-feature: Applikationsinställningar
-topic: Administrering
+feature: Application Settings
+topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
+exl-id: 606334c3-e3e6-41c1-a10e-63508a3ed747
+source-git-commit: 7d7c1b72530d99b8cceb1067f2576ad66c0052a6
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 1%
+source-wordcount: '471'
+ht-degree: 0%
 
 ---
 
-
 # Skapa IP-pooler
 
-## Om IP-pooler
+## Om IP-pooler {#about-ip-pools}
 
 Med Journey Optimizer kan du skapa IP-pooler för att gruppera IP-adresserna för dina underdomäner.
 
 Vi rekommenderar starkt att du skapar IP-pooler för e-postleverans. På så sätt kan du förhindra att en underdomän får ett anseende som påverkar dina andra underdomäner.
 
-Ett exempel är att ha en IP-pool för dina marknadsföringsmeddelanden och en annan för dina transaktionsmeddelanden. På så sätt påverkas inte transaktionsmeddelanden som skickas till samma kund om ett av dina marknadsföringsmeddelanden fungerar dåligt och deklareras som skräppost av en kund, som fortfarande får transaktionsmeddelanden (inköpsbekräftelser, meddelanden om återställning av lösenord osv.).
+Ett exempel är att ha en IP-pool för dina marknadsföringsmeddelanden och en annan för dina transaktionsmeddelanden. På så sätt påverkas inte transaktionsmeddelanden som skickas till samma kund om ett av dina marknadsföringsmeddelanden fungerar dåligt och deklareras som skräppost av en kund, som fortfarande får transaktionsmeddelanden (inköpsbekräftelser, meddelanden om lösenordsåterställning osv.).
 
-## Skapa en IP-pool
+## Skapa en IP-pool {#create-ip-pool}
 
 Så här skapar du en IP-pool:
 
@@ -59,8 +59,45 @@ IP-poolen skapas nu och visas i listan. Du kan markera den för att komma åt de
 
 ![](../assets/ip-pool-created.png)
 
-Om du vill redigera en IP-pool öppnar du den och redigerar sedan egenskaperna för den.
+## Redigera en IP-pool {#edit-ip-pool}
+
+Så här redigerar du en IP-pool:
+
+1. Öppna IP-poolnamnet genom att klicka på det i listan.
+
+   ![](../assets/ip-pool-list.png)
+
+1. Redigera egenskaperna efter behov. Du kan ändra beskrivningen och lägga till eller ta bort IP-adresser.
+
+   ![](../assets/ip-pool-edit.png)
+
+   >[!CAUTION]
+   >
+   >Fortsätt med extra omsorg när du funderar på att ta bort en IP-adress, eftersom detta medför ytterligare belastning på de andra IP-adresserna och kan få allvarliga konsekvenser för leveransen. Om du är osäker kan du kontakta en expert på slutprodukter.
+
+1. Spara ändringarna.
 
 >[!NOTE]
 >
->Om en meddelandeförinställning har kopplats till IP-poolen måste du först ta bort den innan du redigerar IP-poolen. När ändringarna är klara kan du koppla meddelandeförinställningen igen.
+>IP-poolnamnet kan inte redigeras. Om du vill ändra den måste du ta bort IP-poolen och skapa en annan med valfritt namn.
+
+Uppdateringen träder i kraft omedelbart eller asynkront, beroende på om IP-poolen är associerad med en [meddelandeförinställning](message-presets.md) eller inte:
+
+* Om IP-poolen **inte** är markerad i en meddelandeförinställning uppdateras den omedelbart (**[!UICONTROL Success]** status).
+* Om IP-poolen **är** markerad i en meddelandeförinställning kan uppdateringen ta upp till 7-10 arbetsdagar (**[!UICONTROL Processing]** status).
+
+<!--If a message preset has been associated with the IP pool, you first need to remove it before editing the IP pool. Once the your modifications have been done, you can associate the message preset again.-->
+
+Om du vill kontrollera IP-poolens uppdateringsstatus klickar du på knappen **[!UICONTROL More actions]** och väljer **[!UICONTROL Recent updates]**.
+
+![](../assets/ip-pool-recent-update.png)
+
+>[!NOTE]
+>
+>När en IP-pool har uppdaterats kan du behöva vänta:
+>* några minuter innan det konsumeras av enhetsmeddelanden,
+>* till nästa batch för att IP-poolen ska börja gälla i batchmeddelanden.
+
+
+Du kan också använda knappen **[!UICONTROL Delete]** för att ta bort en IP-pool. Observera att du inte kan ta bort en IP-pool som har kopplats till en meddelandeförinställning.
+

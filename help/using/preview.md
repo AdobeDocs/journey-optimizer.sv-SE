@@ -1,13 +1,14 @@
 ---
 title: Förhandsgranska meddelanden och skicka korrektur
 description: Lär dig hur du förhandsgranskar och testar meddelanden
-feature: Resor
-topic: Innehållshantering
+feature: Journeys
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: b1a0d17a2f36b55b8ef692fa9056989a3884c2a8
+exl-id: f2c2a360-a4b2-4416-bbd0-e27dd014e4ac
+source-git-commit: 5c4aca7666987ed188e69f3b5772950c0bf96488
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -97,7 +98,7 @@ När [testprofiler](#select-test-profiles) har valts kan du förhandsgranska din
 
 Om du vill förhandsgranska ett push-meddelande:
 
-1. Växla till kanalen **[!UICONTROL Push]** från listrutan **[!UICONTROL Channels]** högst upp till vänster på skärmen **[!UICONTROL Preview]**.
+1. Växla till kanalen **[!UICONTROL Push]** från listrutan **[!UICONTROL Channels]** högst upp till höger på skärmen **[!UICONTROL Preview]**.
 
    ![](assets/preview-select-channel.png)
 

@@ -1,14 +1,15 @@
 ---
-title: 'Externa datakällor '
+title: Externa datakällor
 description: Läs om hur du konfigurerar externa datakällor
 feature: Data Sources
 topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: ef9d9501f4307d7e9234de46b670a1fea605a1b3
+exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
+source-git-commit: 54d93df232b38608d3d02e837cea82e8965559e0
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 91%
+source-wordcount: '1324'
+ht-degree: 88%
 
 ---
 
@@ -181,3 +182,7 @@ Du kan ändra cachevaraktigheten på en token för en anpassad autentiseringsdat
              { "duration":5, "timeUnit":"seconds" }
     }
 ```
+
+>[!NOTE]
+>
+>Cachens varaktighet hjälper till att undvika för många anrop till slutpunkterna för autentisering. Kvarhållande av autentiseringstoken cachelagras i tjänster, det finns ingen beständighet. Om en tjänst startas om börjar den med ett rent cacheminne. Cachevaraktigheten är som standard 1 timme. I den anpassade åtgärdsnyttolasten kan den anpassas genom att ange en annan kvarhållningsperiod.

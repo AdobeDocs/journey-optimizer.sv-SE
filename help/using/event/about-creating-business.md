@@ -1,14 +1,15 @@
 ---
 title: Konfigurera en affärshändelse
 description: Lär dig hur du skapar en affärshändelse
-feature: Händelser
-topic: Administrering
+feature: Events
+topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: 709e320e53287319ff76adc7843c276740e7d435
+exl-id: 39eb40e1-d7f5-4a8e-9b64-c620940d5ff2
+source-git-commit: b219f900d8349c46c01a0dd3110e441694e47b5f
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 14%
+source-wordcount: '974'
+ht-degree: 12%
 
 ---
 
@@ -30,6 +31,18 @@ Affärshändelser kan vara&quot;en produkt är tillbaka i lager&quot;,&quot;ett 
 * När en affärshändelse har utlösts uppstår en fördröjning om segmentet exporteras från 15 minuter till upp till en timme.
 * När du testar en affärshändelse måste du godkänna händelseparametrarna och identifieraren för den testprofil som kommer att gå in i testet. När du testar en affärshändelsebaserad resa kan du dessutom bara utlösa en enskild profilentré. Se [det här avsnittet](../building-journeys/testing-the-journey.md#test-business). I testläge finns inget kodläge tillgängligt.
 * Vad händer med individer som för närvarande är på resa om en ny affärshändelse inträffar? Det fungerar på samma sätt som när enskilda personer fortfarande befinner sig på en återkommande resa när ett nytt återkommande händer. Deras väg är slut. Därför måste marknadsförarna vara uppmärksamma på att de inte behöver skapa för långa resor om de förväntar sig återkommande affärshändelser.
+
+## Flera affärshändelser
+
+Här är några viktiga kommentarer som gäller när flera affärshändelser tas emot i rad.
+
+**Hur beter sig en affärshändelse när resan pågår?**
+
+Affärshändelser följer reglerna för återinträde på samma sätt som för enhetshändelser. Om en resa tillåter återinträde kommer nästa affärshändelse att behandlas.
+
+**Vilka skyddsräcken finns för att undvika att överbelasta materialiserade segment?**
+
+För affärshändelser är ämnet återanvändbarhet inställt på en timme. Det innebär att det inte skapas något nytt exportjobb för en viss resa inom en timme. Data som skickats av det första händelsejobbet återanvänds. För schemalagda resor finns det ingen garanti.
 
 ## Kom igång med affärsevenemang
 
@@ -69,6 +82,10 @@ Här följer de första stegen för att konfigurera en affärshändelse:
    ![](../assets/jo-event6-business.png)
 
    I vårt exempel skrev vi ett villkor baserat på produktens id. Det innebär att när systemet tar emot en händelse som matchar det här villkoret, kommer det att skickas till resorna.
+
+   >[!NOTE]
+   >
+   >I den enkla uttrycksredigeraren är inte alla operatorer tillgängliga, de är beroende av datatypen. För en strängtyp av fält kan du till exempel använda &quot;contains&quot; eller &quot;equal to&quot;.
 
 1. Klicka på **[!UICONTROL Save]**.
 

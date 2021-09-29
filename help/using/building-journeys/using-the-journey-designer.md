@@ -1,13 +1,14 @@
 ---
 title: Utforma din resa
 description: Lär dig hur du utformar din resa
-feature: Resor
-topic: Innehållshantering
+feature: Journeys
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: da31b4faf476d090a3a45b8c14701c4addd1a02a
+exl-id: 1998f6fc-60fd-4038-8669-39cd55bc02d1
+source-git-commit: e9da4ec95a82d53e6fcf2cb99fb6215b0c325f08
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1417'
 ht-degree: 1%
 
 ---
@@ -30,7 +31,7 @@ Med ikonen **[!UICONTROL Filter items]** i det övre vänstra hörnet kan du vis
 
 * **Visa endast senaste objekt**: Med det här filtret kan du bara visa de fem senast använda händelserna och åtgärderna, förutom de som är färdiga. Detta är specifikt för varje användare. Som standard visas alla objekt.
 
-Du kan också använda fältet **[!UICONTROL Search]**.
+Du kan också använda fältet **[!UICONTROL Search]**. Endast händelser och åtgärder filtreras.
 
 **arbetsytan** är den centrala zonen i resedesignern. Det är i den här zonen som du kan släppa dina aktiviteter och konfigurera dem. Klicka på en aktivitet på arbetsytan för att konfigurera den. Aktivitetskonfigurationsrutan öppnas till höger.
 
@@ -98,7 +99,7 @@ När två aktiviteter inte är kopplade till arbetsytan visas en varning. Placer
 
 ![](../assets/canvas-disconnected.png)
 
-## Kopiera och klistra in aktiviteter {#copy-paste}
+## Kopierings- och inklistringsaktiviteter {#copy-paste}
 
 Du kan kopiera en eller flera aktiviteter under en resa och klistra in dem antingen under samma resa eller under en annan. På så sätt kan du spara tid om du vill återanvända flera aktiviteter som redan har konfigurerats under en tidigare resa.
 

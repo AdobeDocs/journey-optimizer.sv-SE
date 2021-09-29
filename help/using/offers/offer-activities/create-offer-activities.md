@@ -1,14 +1,15 @@
 ---
 title: Skapa beslut
 description: Lär dig hur du skapar beslut
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: User
 level: Intermediate
-source-git-commit: 80451fcd012257c8648e751076ed668aa05c44c7
+exl-id: 7a217c97-57e1-4f04-a92c-37632f8dfe91
+source-git-commit: 89e0223ebbf5015b61b55da693e0c6401307ce9f
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 3%
+source-wordcount: '1015'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +19,7 @@ Besluten (tidigare kallade erbjudandeaktiviteter) är behållare för dina erbju
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
-Listan med beslut finns på fliken **[!UICONTROL Offers]** / **[!UICONTROL Decisions]**. Det finns filter som hjälper dig att hämta beslut utifrån status eller start- och slutdatum.
+Listan med beslut finns på **[!UICONTROL Offers]**-menyn > fliken **[!UICONTROL Decisions]**. Det finns filter som hjälper dig att hämta beslut utifrån status eller start- och slutdatum.
 
 ![](../../assets/activities-list.png)
 
@@ -33,7 +34,9 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 
 1. Gå till beslutslistan och klicka sedan på **[!UICONTROL Create decision]**.
 
-1. Ange beslutets namn samt start- och slutdatum och sluttid och klicka sedan på **[!UICONTROL Next]**.
+1. Ange beslutets namn.
+
+1. Definiera start- och slutdatum och sluttid och klicka sedan på **[!UICONTROL Next]**.
 
    ![](../../assets/activities-name.png)
 
@@ -51,29 +54,53 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 
    ![](../../assets/activities-collection.png)
 
-1. De valda erbjudandena läggs till på placeringen. I det här exemplet valde vi två erbjudanden som ska visas i en JSON-typplacering i syfte att presentera erbjudanden i en call center-lösning.
+1. De valda erbjudandena läggs till på placeringen.
+
+   I det här exemplet valde vi två erbjudanden som ska visas i en JSON-typplacering i syfte att presentera erbjudanden i en call center-lösning.
 
    ![](../../assets/offers-added.png)
 
 1. Om flera erbjudanden kan komma i fråga för den här placeringen kommer erbjudandena med högst prioritet att levereras till kunden.
 
-   Om du vill använda en viss formel för att välja vilket erbjudande som ska levereras väljer du en rankningsformel i listrutan **[!UICONTROL Rank offers by]**. Mer information om detta finns i [det här avsnittet](../offer-activities/configure-offer-selection.md).
+   Om du vill använda en viss formel eller en rankningsstrategi för att välja vilket erbjudande som ska levereras väljer du en rankningsformel i listrutan **[!UICONTROL Rank offers by]**. Mer information om detta finns i [det här avsnittet](../offer-activities/configure-offer-selection.md).
 
-1. Fältet **[!UICONTROL Constraint]** begränsar valet av erbjudanden för den här placeringen. Den här begränsningen kan tillämpas med en beslutsregel eller ett eller flera Adobe Experience Platform-segment.
+1. Fältet **[!UICONTROL Constraint]** begränsar valet av erbjudanden för den här placeringen. Den här begränsningen kan tillämpas med en **beslutsregel**, eller ett eller flera **Adobe Experience Platform-segment**. Båda beskrivs i [det här avsnittet](#segments-vs-decision-rules).
 
-   Om du vill begränsa urvalet av erbjudanden till medlemmarna i ett Adobe Experience Platform-segment väljer du **[!UICONTROL Segments]** och klickar sedan på **[!UICONTROL Add segments]**.
+   * Om du vill begränsa urvalet av erbjudanden till medlemmarna i ett Adobe Experience Platform-segment väljer du **[!UICONTROL Segments]** och klickar sedan på **[!UICONTROL Add segments]**.
 
-   ![](../../assets/activity_constraint_segment.png)
+      ![](../../assets/activity_constraint_segment.png)
 
-   Lägg till ett eller flera segment från den vänstra rutan, kombinera dem med de logiska operatorerna **[!UICONTROL And]** / **[!UICONTROL Or]** och klicka sedan på **[!UICONTROL Select]** för att bekräfta.
+      Lägg till ett eller flera segment från den vänstra rutan, kombinera dem med de logiska operatorerna **[!UICONTROL And]** / **[!UICONTROL Or]** och klicka sedan på **[!UICONTROL Select]** för att bekräfta.
 
-   Mer information om hur du arbetar med segment finns på [den här sidan](../../segment/about-segments.md).
+      ![](../../assets/activity_constraint_segment2.png)
 
-   ![](../../assets/activity_constraint_segment2.png)
+      Läs mer om hur du arbetar med segment i [det här avsnittet](../../segment/about-segments.md).
 
-   Om du vill lägga till en markeringsbegränsning för den här placeringen med en beslutsregel, markerar du alternativet **[!UICONTROL Decision rule]** och drar sedan den önskade regeln från den vänstra rutan till **[!UICONTROL Decision rule]**-området. Mer information om hur du skapar en beslutsregel finns i [det här avsnittet](../offer-library/creating-decision-rules.md).
+   * Om du vill lägga till en markeringsbegränsning för den här placeringen med en beslutsregel, markerar du alternativet **[!UICONTROL Decision rule]** och drar sedan den önskade regeln från den vänstra rutan till **[!UICONTROL Decision rule]**-området.
 
-   ![](../../assets/activity_constraint_rule.png)
+      ![](../../assets/activity_constraint_rule.png)
+
+      Läs mer om hur du skapar en beslutsregel i [det här avsnittet](../offer-library/creating-decision-rules.md).
+
+### Använda segment och beslutsregler {#segments-vs-decision-rules}
+
+<!--to move to create-offers?-->
+
+Om du vill tillämpa en begränsning kan du begränsa urvalet av erbjudanden till medlemmarna i ett eller flera **Adobe Experience Platform-segment**, eller så kan du använda en **beslutsregel**, båda lösningarna som motsvarar olika användningar.
+
+I princip är utdata för ett segment en lista med profiler, medan en beslutsregel är en funktion som körs på begäran mot en enskild profil under beslutsprocessen. Skillnaden mellan dessa två användningar beskrivs nedan.
+
+* **Segment**
+
+   Å ena sidan är segment en grupp Adobe Experience Platform-profiler som matchar en viss logik baserat på profilattribut och upplevelsehändelser. Erbjudandehanteringen beräknar dock inte om segmentet, som kanske inte är aktuellt när erbjudandet presenteras.
+
+   Läs mer om segment i [det här avsnittet](../../segment/about-segments.md).
+
+* **Beslutsregler**
+
+   Å andra sidan baseras en beslutsregel på data som är tillgängliga i Adobe Experience Platform och avgör till vilka ett erbjudande kan visas. När regeln har valts i ett erbjudande eller i ett beslut för en viss placering verkställs den varje gång ett beslut fattas, vilket säkerställer att varje profil får det senaste och bästa erbjudandet.
+
+   Läs mer om beslutsregler i [det här avsnittet](../offer-library/creating-decision-rules.md).
 
 ## Lägg till ett reserverbjudande {#add-fallback}
 

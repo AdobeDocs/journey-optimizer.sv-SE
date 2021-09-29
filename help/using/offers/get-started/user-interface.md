@@ -1,13 +1,14 @@
 ---
 title: Användargränssnitt
 description: Läs mer om gränssnittet för Erbjudandebibliotek.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: User
 level: Intermediate
-source-git-commit: dda0f609056ac74e4f1b5b0d6069d4bdc43ccfb6
+exl-id: 722f9c3b-b505-48c0-b126-31a7a841c245
+source-git-commit: e55aecf274e2f5fbb696cc112dfb4428848d36d5
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -15,6 +16,10 @@ ht-degree: 0%
 # Användargränssnitt {#user-interface}
 
 Med Erbjudandebiblioteket kan du skapa och hantera dina praktik och erbjudanden på ett och samma ställe, samt få tillgång till alla beslut som skapats (tidigare kallade erbjudandeaktiviteter).
+
+>[!NOTE]
+>
+>Om du har problem med att få tillgång till erbjudandebiblioteket eller några av dess funktioner, bör du kontrollera med en administratör att du har fått de behörigheter som krävs. Se [Bevilja åtkomst till Beslutshantering](starting-offer-decisioning.md#granting-acess-to-decision-management).
 
 Använd menyn **[!UICONTROL Offers]** för att hantera personaliserade erbjudanden och reserverbjudanden, ordna dem i samlingar och leverera dem genom att fatta beslut:
 

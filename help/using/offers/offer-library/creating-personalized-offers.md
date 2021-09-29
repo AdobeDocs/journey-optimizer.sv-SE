@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4a53ea96-632a-41c7-ab15-b85b99db4f3e
-source-git-commit: 024a450724aecfde0eab7ab97421052a0aa99f2e
+source-git-commit: 41f43f6e702dbadfcd28d14154895a65ec15ed65
 workflow-type: tm+mt
-source-wordcount: '1278'
-ht-degree: 0%
+source-wordcount: '1319'
+ht-degree: 1%
 
 ---
 
@@ -53,9 +53,14 @@ Följ stegen nedan om du vill lägga till en eller flera representationer i ditt
 
    ![](../../assets/channel-placement.png)
 
-   Endast de tillgängliga placeringarna för den valda kanalen visas i listrutan **[!UICONTROL Placement]**.
+   >[!NOTE]
+   >
+   >Endast de tillgängliga placeringarna för den valda kanalen visas i listrutan **[!UICONTROL Placement]**.
 
-1. Välj en placering i listan eller använd knappen bredvid listrutan **[!UICONTROL Placement]** för att bläddra bland alla placeringar.
+
+1. Välj en placering i listan.
+
+   Du kan också använda knappen bredvid listrutan **[!UICONTROL Placement]** för att bläddra bland alla placeringar.
 
    ![](../../assets/browse-button-placements.png)
 
@@ -63,37 +68,7 @@ Följ stegen nedan om du vill lägga till en eller flera representationer i ditt
 
    ![](../../assets/browse-placements.png)
 
-1. Lägg till innehåll i din representation.
-
-   >[!NOTE]
-   >
-   >Endast innehåll som motsvarar placeringens innehållstyp är tillgängligt för användning.
-
-   * Om den valda placeringen är av bildtyp kan du lägga till innehåll från Adobe Experience Cloud Asset-biblioteket, en central databas med resurser från [!DNL Adobe Experience Manager Assets Essentials].
-
-      >[!NOTE]
-      >
-      > Om du vill arbeta med [Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=en){target=&quot;_blank&quot;} måste du distribuera [!DNL Assets Essentials] för din organisation och se till att användare är en del av **Assets Essentials konsumentanvändare** eller/och **Assets Essentials-användare** produktprofiler. Läs mer på [den här sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}.
-
-      Välj alternativet **[!UICONTROL Asset library]** och välj **[!UICONTROL Browse]**.
-
-      ![](../../assets/offer-browse-asset-library.png)
-
-      Bläddra bland resurserna för att välja den bild du vill använda och klicka på **[!UICONTROL Select]**.
-
-      ![](../../assets/offer-select-asset.png)
-
-   * Om du vill lägga till innehåll från en extern offentlig plats väljer du **[!UICONTROL URL]** och anger sedan URL-adressen för innehållet som ska läggas till.
-
-      ![](../../assets/offer-content-url.png)
-
-   * Du kan också infoga text när du väljer en kompatibel placering. Välj alternativet **[!UICONTROL Custom]** och skriv den text som ska visas i erbjudandet.
-
-      ![](../../assets/offer-text-content.png)
-
-      >[!NOTE]
-      >
-      >Det här alternativet är inte tillgängligt för bildtypsplaceringar.
+1. Lägg till innehåll i din representation. Läs mer i [det här avsnittet](#content).
 
 1. När du lägger till innehåll som en bild eller URL kan du ange en **[!UICONTROL Destination link]**: de användare som klickar på erbjudandet dirigeras till motsvarande sida.
 
@@ -107,25 +82,76 @@ Följ stegen nedan om du vill lägga till en eller flera representationer i ditt
 
 1. När du har lagt till alla representationer väljer du **[!UICONTROL Next]**.
 
+## Definiera innehåll för dina representationer {#content}
+
+Du kan lägga till olika typer av innehåll i en representation.
+
+>[!NOTE]
+>
+>Endast innehåll som motsvarar placeringens innehållstyp är tillgängligt för användning.
+
+### Lägg till bilder
+
+Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Adobe Experience Cloud Asset**-biblioteket, en centraliserad databas med resurser från [!DNL Adobe Experience Manager Assets Essentials].
+
+>[!NOTE]
+>
+> Om du vill arbeta med [Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=en){target=&quot;_blank&quot;} måste du distribuera [!DNL Assets Essentials] för din organisation och se till att användare är en del av **Assets Essentials konsumentanvändare** eller/och **Assets Essentials-användare** produktprofiler. Läs mer på [den här sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}.
+
+1. Välj alternativet **[!UICONTROL Asset library]**.
+
+1. Välj **[!UICONTROL Browse]**.
+
+   ![](../../assets/offer-browse-asset-library.png)
+
+1. Bläddra bland resurserna och välj den bild du vill använda
+
+1. Klicka på **[!UICONTROL Select]**.
+
+   ![](../../assets/offer-select-asset.png)
+
+### Lägg till URL:er
+
+Om du vill lägga till innehåll från en extern offentlig plats väljer du **[!UICONTROL URL]** och anger sedan URL-adressen för innehållet som ska läggas till.
+
+![](../../assets/offer-content-url.png)
+
+### Lägg till egen text {#custom-text}
+
+Du kan också infoga text när du väljer en kompatibel placering.
+
+1. Välj alternativet **[!UICONTROL Custom]**.
+
+   >[!NOTE]
+   >
+   >Det här alternativet är inte tillgängligt för bildtypsplaceringar.
+
+1. Skriv den text som ska visas i erbjudandet i det dedikerade området.
+
+   ![](../../assets/offer-text-content2.png)
+
 ## Lägg till regler och begränsningar för berättigande {#eligibility}
 
 Behörighetsregler och -begränsningar gör att du kan definiera villkoren för hur ett erbjudande ska visas.
 
-1. Konfigurera **[!UICONTROL Offer eligibility]**. Som standard är alternativet **[!UICONTROL All visitors]** för beslutsregel valt, vilket innebär att alla profiler kan presenteras erbjudandet.
+1. Konfigurera **[!UICONTROL Offer eligibility]**.
 
-   Du kan begränsa erbjudandets presentation till medlemmarna i ett eller flera Adobe Experience Platform-segment. Aktivera alternativet **[!UICONTROL Visitors who fall into one or multiple segments]** och lägg sedan till ett eller flera segment från den vänstra rutan och kombinera dem med de logiska operatorerna **[!UICONTROL And]** / **[!UICONTROL Or]**.
+   * Som standard är alternativet **[!UICONTROL All visitors]** för beslutsregel valt, vilket innebär att alla profiler kan presenteras erbjudandet.
 
-   Mer information om hur du arbetar med segment finns på [den här sidan](../../segment/about-segments.md).
+   * Du kan begränsa erbjudandets presentation till medlemmarna i ett eller flera Adobe Experience Platform-segment. Aktivera alternativet **[!UICONTROL Visitors who fall into one or multiple segments]** och lägg sedan till ett eller flera segment från den vänstra rutan och kombinera dem med de logiska operatorerna **[!UICONTROL And]** / **[!UICONTROL Or]**.
 
-   ![](../../assets/offer-eligibility-segment.png)
+      Mer information om hur du arbetar med segment finns på [den här sidan](../../segment/about-segments.md).
 
-   Om du vill koppla en viss beslutsregel till erbjudandet väljer du **[!UICONTROL By defined decision rule]** och drar sedan den önskade regeln från den vänstra rutan till **[!UICONTROL Decision rule]**-området. Mer information om hur du skapar en beslutsregel finns i [det här avsnittet](../offer-library/creating-decision-rules.md).
+      ![](../../assets/offer-eligibility-segment.png)
 
-   ![](../../assets/offer_rule.png)
+   * Om du vill koppla en viss beslutsregel till erbjudandet väljer du **[!UICONTROL By defined decision rule]** och drar sedan den önskade regeln från den vänstra rutan till **[!UICONTROL Decision rule]**-området. Mer information om hur du skapar en beslutsregel finns i [det här avsnittet](../offer-library/creating-decision-rules.md).
 
-   >[!CAUTION]
-   >
-   >Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [händelse](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#events){target=&quot;_blank&quot;} kan du inte utnyttja den i ett erbjudande.
+      ![](../../assets/offer_rule.png)
+
+      >[!CAUTION]
+      >
+      >Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [händelse](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#events){target=&quot;_blank&quot;} kan du inte utnyttja den i ett erbjudande.
+   Läs mer om hur du använder segment kontra beslutsregler i [det här avsnittet](../offer-activities/create-offer-activities.md#segments-vs-decision-rules).
 
 1. Definiera **[!UICONTROL Priority]** för erbjudandet jämfört med andra om användaren kvalificerar för mer än ett erbjudande. Ju högre prioritet ett erbjudande har, desto högre blir prioriteringen jämfört med andra erbjudanden.
 

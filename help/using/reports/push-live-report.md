@@ -1,14 +1,15 @@
 ---
 title: Direktrapport om push-meddelanden
 description: Lär dig hur du använder data från push-meddelanderapporten
-feature: Rapportering
-topic: Innehållshantering
+feature: Reporting
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: eba6ff87438325f58c453c12552c75c69dbdac0b
+exl-id: cab7c6da-aba7-439d-a638-79eb0c949837
+source-git-commit: d814fa98a08d91f1c0744f106c53dd991d544dc2
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 1%
+source-wordcount: '336'
+ht-degree: 0%
 
 ---
 
@@ -39,6 +40,22 @@ Push-åtgärden **[!UICONTROL Live report]** är uppdelad i olika widgetar som a
 * **[!UICONTROL Actions]**: Totalt antal åtgärder för push-meddelandet som levererats, t.ex. knappklickning eller avbruten.
 
 * **[!UICONTROL Engagements]**: Totalt antal öppningar och åtgärder för det här push-meddelandet, dvs om profilen öppnade push-meddelandet eller om någon klickade på en knapp.
+
+Tabellen **[!UICONTROL Sending metrics - by push]** visar hur leveransen lyckades:
+
+* **[!UICONTROL Targeted]**: Antal användarprofiler som kvalificerar sig som målprofiler för den här leveransen.
+
+* **[!UICONTROL Excluded]**: Antal användarprofiler, exkluderade från målprofilerna, som inte fick meddelandet.
+
+* **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
+
+* **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
+
+* **[!UICONTROL Bounces]**: Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
+
+* **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
+
+* **[!UICONTROL Opens]**: Antal gånger ett meddelande öppnades i en leverans.
 
 ![](../assets/live_report_4.png)
 

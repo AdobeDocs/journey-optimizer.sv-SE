@@ -5,9 +5,10 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 9408a93deecfb12f28a0a87c19fa0074c66844a9
+exl-id: 1ddfbf1a-3cd5-446a-b0fb-76b81b88c1b4
+source-git-commit: d814fa98a08d91f1c0744f106c53dd991d544dc2
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -26,19 +27,27 @@ E-postmeddelandet **[!UICONTROL Live report]** är uppdelat i olika widgetar som
 
 **[!UICONTROL Email performance]** och  **[!UICONTROL Email summary]** widgetar visar huvudinformationen i förhållande till meddelandet med ett diagram och nyckeltal:
 
+* **[!UICONTROL Targeted]**: Antal användarprofiler som kvalificerar sig som målprofiler för den här leveransen.
+
 * **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
 
 * **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
-
-* **[!UICONTROL Bounces]**: Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
-
-* **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
 
 * **[!UICONTROL Opens]**: Antal gånger ett meddelande öppnades i en leverans.
 
 * **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades i en leverans.
 
-I **[!UICONTROL Sending Statistics]**-diagrammet visas leveransframgången:
+* **[!UICONTROL Bounces]**: Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
+
+* **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
+
+* **[!UICONTROL Spam complaints]**: Antal meddelanden som klassificerats som skräppost.
+
+* **[!UICONTROL Unsubscriptions]**: Antal klick på länken för att avbryta prenumerationen.
+
+* **[!UICONTROL Excluded]**: Antal användarprofiler, exkluderade från målprofilerna, som inte fick meddelandet.
+
+Widgeten **[!UICONTROL Sending Statistics]** visar hur bra leveransen är:
 
 * **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
 

@@ -2,10 +2,10 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: c6592d16dc8bd9ea2bada4fc351c844985a1042f
+source-git-commit: d6228aade93bc9fa2b5f2ad2b76db5e193208242
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 17%
+source-wordcount: '711'
+ht-degree: 16%
 
 ---
 
@@ -15,8 +15,33 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 ## September 2021
 
+* Följande funktionssidor har uppdaterats: [sökter](https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/main-functions-journey/date/functionsethours.html), [getListItem](https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/main-functions-journey/list/functiongetlistitem.html), [inSegment](https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/main-functions-journey/adobe-experience-platform/functioninsegment.html)
+
+* Följande funktioner har lagts till: [filter](https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/main-functions-journey/list/functionfilter.html), [överlappa](https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/main-functions-journey/list/functiontintersect.html), [toDateOnly](https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/main-functions-journey/conversion/functiontodateonly.html)
+
+* Datumtypen dateOnly har lagts till i uttrycksredigerarens dokumentation. [Läs mer](https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/syntax/data-types.html?lang=en)
+
+* Lagt till information om varaktighet för anpassad åtgärdscache. [Läs mer](datasource/external-data-sources.md#section_wjp_nl5_nhb)
+
+* Lagt till information om standardportar för anpassade åtgärder. [Läs mer](action/about-custom-action-configuration.md#url-configuration)
+
+* Lagt till information om flera användningsfall för affärshändelser. [Läs mer](event/about-creating-business.md#multiple-business-events)
+
+* Vanliga exempel har lagts till för att fråga efter händelser för resesteg i datasjön. [Läs mer](reports/query-examples.md)
+
 * En ny sida med **begränsningar** har lagts till. [Läs mer](limitations.md)
+
 * Förbättrade sidan **Snabbstart** med steg för olika profiler. [Läs mer](quick-start.md)
+
+   <!--* Added a new section on how to define and personalize content for offers' representations. [Read more](offers/offer-library/creating-personalized-offers.md#content)-->
+
+* Nu gäller alla funktioner för beslutshantering som beskrivs i det särskilda avsnittet även för Adobe Experience Platform-användare som använder Offera decisioningens programtjänst. [Läs mer](offers/get-started/starting-offer-decisioning.md)
+
+* Ett underavsnitt lades till för att förtydliga skillnaderna mellan att använda segment kontra beslutsregler när en begränsning tillämpas för att begränsa urvalet av erbjudanden för en viss placering. [Läs mer](offers/offer-activities/create-offer-activities.md#segments-vs-decision-rules)
+
+* Specifika exempel på rankningsformler har lagts till för att illustrera exempel på verkliga användningsområden. [Läs mer](offers/offer-library/create-ranking-formulas.md#ranking-formula-examples)
+
+* Ett underavsnitt om hur du redigerar IP-pooler har lagts till. [Läs mer](configuration/ip-pools.md#edit-ip-pool)
 
 ## Augusti 2021
 

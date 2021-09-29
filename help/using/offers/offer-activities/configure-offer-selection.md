@@ -1,14 +1,15 @@
 ---
 title: Konfigurera urval av erbjudanden i beslut
 description: Lär dig hur du hanterar urval av erbjudanden i beslut.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: User
 level: Intermediate
-source-git-commit: 3db5756236b6ac05d9b95b8b051dd99dc7d5cf7e
+exl-id: 8c7135d7-bf5a-4671-afdf-afec60907a56
+source-git-commit: 43fb98a08555e6b889ad537e79dba78286dafeb9
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 5%
+source-wordcount: '453'
+ht-degree: 4%
 
 ---
 
@@ -17,6 +18,9 @@ ht-degree: 5%
 Om flera erbjudanden är berättigade för en viss placering kan du välja den metod som ska användas för att välja det bästa erbjudandet för varje profil när du konfigurerar ett beslut (som tidigare kallades erbjudandeaktivitet). Du kan rangordna erbjudanden genom att:
 * Prioritet
 * Rankningsformel
+* [AI-rankning](#use-ranking-strategy)  (endast för vissa användare i förtid)
+
+![](../../assets/offer-rank-by.png)
 
 ## Prioritet {#about-offers-priority}
 
@@ -53,3 +57,41 @@ När en rankningsformel har skapats kan du tilldela den till en placering i ett 
 Rankningsformeln är nu kopplad till placeringen.
 
 Om flera erbjudanden kan presenteras i denna placering, kommer beslutet att använda rangordningsformelns formel för att beräkna vilket erbjudande som ska levereras först.
+
+## AI-rankning {#use-ranking-strategy}
+
+<!--If you are an [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} user leveraging the **Offer Decisioning** application service,-->You can also use an trained model system that automatically ranks offers to display for a given profile by selecting a ranking strategy. Learn how to create a ranking strategy in [this section](../offer-library/create-ranking-strategies.md).
+
+>[!CAUTION]
+>
+>AI-rankningen är för närvarande tillgänglig i förtid och endast för vissa användare.
+
+När en rankningsstrategi har skapats kan du tilldela den till en placering i ett beslut (tidigare kallat erbjudandeaktivitet). Gör så här:
+
+1. Skapa ett beslut eller redigera ett befintligt. Se [Skapa beslut](../offer-activities/create-offer-activities.md).
+
+1. Lägg till de placeringar som kommer att innehålla dina erbjudanden. Se [Skapa placeringar](../offer-library/creating-placements.md).
+
+1. Lägg till en samling för varje placering. Se [Skapa samlingar](../offer-library/creating-collections.md).
+
+1. Välj om du vill rangordna erbjudanden med **[!UICONTROL AI ranking]** i listrutan.
+
+   ![](../../assets/ranking-selection-ai-ranking.png)
+
+1. Klicka på **[!UICONTROL Add ranking]**.
+
+   ![](../../assets/ranking-selection-ai-ranking-add.png)
+
+1. Välj den rankningsstrategi som du skapade. Alla detaljer om rankningsstrategin visas.
+
+   ![](../../assets/ranking-selection-ai-ranking-selected.png)
+
+1. Klicka på **[!UICONTROL Select]**.
+
+Rankningsstrategin är nu kopplad till placeringen.
+
+Om flera erbjudanden är giltiga, avgör det tränade modellsystemet vilket erbjudande som ska presenteras först för en viss placering.
+
+<!--Result? Describe the impact for the user, i.e. what's the effect of selecting this ranking strategy for this collection/placement.-->
+
+<!--Click **[!UICONTROL Next]** to confirm and save your decision.-->

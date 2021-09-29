@@ -1,21 +1,25 @@
 ---
 title: Kom igång med Beslutshantering
 description: Kom igång med Beslutshantering. Läs mer om dess arkitektur, erbjudanden och beslut, liksom om vanliga användningsfall som gör att du kan arbeta.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: User
 level: Beginner
-source-git-commit: 22520570d96db43d39931149296b27a6211f7aa5
+exl-id: 659984cb-b232-47ba-9f5a-604bf97a5e92
+source-git-commit: f186eeb09e9f9e0b8094baa8038ab0298b7e5148
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 50%
+source-wordcount: '913'
+ht-degree: 45%
 
 ---
-
 
 # Om beslutshantering {#about-offer-decision}
 
 Använd [!DNL Journey Optimizer] för att leverera det bästa erbjudandet och upplevelsen till era kunder via alla kontaktytor vid rätt tidpunkt. När ni väl utformat er målgrupp kan ni inrikta er på personaliserade erbjudanden.
+
+>[!NOTE]
+>
+>Om du är [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target=&quot;_blank&quot;}-användare och använder **Offer decisioning**-programtjänsten gäller även alla beslutshanteringsfunktioner som beskrivs i det här avsnittet dig.
 
 Beslutsledningskapaciteten består av två huvudkomponenter:
 
@@ -60,6 +64,13 @@ Beslutshanteringsfunktionerna och integrationen med Adobe Experience Platform g�
 
    ![](../../assets/do-not-localize/call-center.png)
 
+## Bevilja åtkomst till beslutsledning {#granting-acess-to-decision-management}
+
+Behörigheter att komma åt och använda offera decisioningen hanteras med [Adobe Admin Console](https://helpx.adobe.com/enterprise/managing/user-guide.html){target=&quot;_blank&quot;}.
+
+Om du vill ge åtkomst till beslutshanteringsfunktionen måste du skapa en **[!UICONTROL Product profile]** och tilldela användarna motsvarande behörigheter. Läs mer om hur du hanterar [!DNL Journey Optimizer] användare och behörigheter i [det här avsnittet](../../administration/permissions.md).
+
+Behörigheterna som är specifika för Beslutshantering listas i [det här avsnittet](../../administration/high-low-permissions.md#decisions-permissions).
 
 ## Ordlista {#glossary}
 
@@ -96,7 +107,7 @@ Nedan finns en lista över de viktigaste koncept du kommer att arbeta med när d
 
 >[!NOTE]
 >
->Dessa videofilmer gäller för den programtjänst för Offer decisioning som är byggd på Adobe Experience Platform och är inte specifika för [!DNL Adobe Journey Optimizer]. Det ger dock allmän vägledning om hur beslutsstöd ska användas i samband med [!DNL Journey Optimizer].
+>Dessa videofilmer gäller för den programtjänst för Offer decisioning som är byggd på Adobe Experience Platform och är inte specifika för [!DNL Adobe Journey Optimizer]. De ger dock allmän vägledning om hur beslutshantering kan användas inom ramen för [!DNL Journey Optimizer].
 
 ### Vad är beslutshantering? {#what-is-offer-decisioning}
 

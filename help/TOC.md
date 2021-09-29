@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att leverera sammankopplade, kontextuella och personaliserade upplevelser till kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 967772bcf7413c4c916d045375a84807581ea6ae
+source-git-commit: f186eeb09e9f9e0b8094baa8038ab0298b7e5148
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '710'
 ht-degree: 44%
 
 ---
@@ -96,6 +96,7 @@ ht-degree: 44%
    + Användningsfall {#journey-use-cases}
       + [Skicka flerkanalsmeddelanden](using/building-journeys/journeys-uc.md)
       + [Skicka ett meddelande med Campaign v7/v8](using/building-journeys/campaign-classic-use-case.md)
+      + [Skicka samlingar dynamiskt med anpassade åtgärder](using/building-journeys/collections.md)
 + Spåra och övervaka {#reporting}
    + [Meddelandeövervakning](using/message-monitoring.md)
    + Live-rapport {#live-report}
@@ -115,6 +116,7 @@ ht-degree: 44%
       + [Körningsfält för åtgärd](using/reports/sharing-execution-fields.md)
       + [Fält för datahämtning](using/reports/sharing-fetch-fields.md)
       + [Identitetsfält](using/reports/sharing-identity-fields.md)
+      + [Exempel på frågor](using/reports/query-examples.md)
    + levererbarhet {#deliverability}
       + [Kom igång med leverans](using/deliverability.md)
       + [Undertryckningslista](using/suppression-list.md)
@@ -130,6 +132,7 @@ ht-degree: 44%
       + [Skapa beslutsregler](using/offers/offer-library/creating-decision-rules.md)
       + [Skapa taggar](using/offers/offer-library/creating-tags.md)
       + [Skapa rankningsformler](using/offers/offer-library/create-ranking-formulas.md)
+      + [Skapa rankningsstrategier](using/offers/offer-library/create-ranking-strategies.md)
    + Skapa och hantera erbjudanden {#managing-offers-in-the-offer-library}
       + [Skapa personaliserade erbjudanden](using/offers/offer-library/creating-personalized-offers.md)
       + [Skapa reserverbjudanden](using/offers/offer-library/creating-fallback-offers.md)

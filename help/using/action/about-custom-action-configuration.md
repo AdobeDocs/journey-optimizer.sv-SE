@@ -7,9 +7,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: 967772bcf7413c4c916d045375a84807581ea6ae
+source-git-commit: 6907946a75904d601ca1f70c61b72fd92803db84
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '806'
 ht-degree: 6%
 
 ---
@@ -17,7 +17,10 @@ ht-degree: 6%
 # Konfigurera en åtgärd {#configure-an-action}
 
 Om du använder ett tredjepartssystem för att skicka meddelanden eller om du vill att resor ska skicka API-anrop till ett tredjepartssystem, är det här du konfigurerar anslutningen till resor. Den anpassade åtgärden som definieras av tekniska användare är sedan tillgänglig på den vänstra paletten på din resa i kategorin **[!UICONTROL Action]** (se [den här sidan](../building-journeys/about-journey-activities.md#action-activities). Här är några exempel på system som du kan ansluta till med anpassade åtgärder: Epsilon, Facebook, Adobe.io, Firebase osv.
+
 Begränsningar visas i [den här sidan](../limitations.md).
+
+Du kan skicka samlingar dynamiskt med anpassade åtgärder. Se det här [användningsexemplet](../limitations.md).
 
 Här följer de huvudsteg som krävs för att konfigurera en anpassad åtgärd:
 
@@ -56,12 +59,14 @@ När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICO
 
    * Om URL:en innehåller en dynamisk sökväg anger du bara den statiska delen av URL:en, det vill säga schemat, värden, porten och, eventuellt, en statisk del av sökvägen.
 
-      Exempel: `https://xxx.yyy.com:8080/somethingstatic/`
+      Exempel: `https://xxx.yyy.com/somethingstatic/`
 
       Du anger den dynamiska sökvägen för URL:en när du lägger till den anpassade åtgärden på en resa. [Läs mer](../building-journeys/using-custom-actions.md).
    >[!NOTE]
    >
    >Av säkerhetsskäl rekommenderar vi starkt att du använder HTTPS-schemat för URL:en. Vi tillåter inte användning av Adobe-adresser som inte är offentliga och användning av IP-adresser.
+   >
+   >Endast standardportar tillåts när en anpassad åtgärd definieras: 80 för http och 443 för https.
 
 1. Markera samtalet **[!UICONTROL Method]**: det kan vara antingen **[!UICONTROL POST]** eller **[!UICONTROL PUT]**.
 1. I avsnittet **[!UICONTROL Headers]** anger du HTTP-rubrikerna för det begärandemeddelande som ska skickas till den externa tjänsten:
@@ -106,3 +111,4 @@ Du kan också välja mellan att ange om en parameter är en konstant eller en va
 * Variabel innebär att parameterns värde varierar. Marknadsföraren som använder den här anpassade åtgärden i en resa kan skicka värdet han vill ha eller ange var värdet för den här parametern ska hämtas (t.ex. från händelsen, från Adobe Experience Platform). I så fall är fältet till höger om växlingskonstanten/variabeln den etikett som marknadsföraren kommer att se under resan för att namnge den här parametern.
 
 ![](../assets/customactionpayloadmessage2.png)
+

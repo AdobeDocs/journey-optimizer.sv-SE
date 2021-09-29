@@ -2,10 +2,10 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 5a21ac0c199bf237972122ac46e58bf9f8d0f8ab
+source-git-commit: 8f9c7ef2388624432a1601da0ce9502b3e68b58b
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 10%
+source-wordcount: '1490'
+ht-degree: 11%
 
 ---
 
@@ -14,7 +14,79 @@ ht-degree: 10%
 På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journey Optimizer]. Du kan även läsa de senaste [dokumentationsuppdateringarna](documentation-updates.md).
 
 
-## Versionen från augusti 2021 {#august-2021-release}
+
+## September 2021-utgåvan {#september-2021-release}
+
+### Nya funktioner
+
+<table>
+<thead>
+<tr>
+
+<th><strong>Rapportering - Bättre insikter om målgrupper</strong><br/></th>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Ett nytt mätvärde finns för rapportering: målgruppen för e-post- och push-meddelanden visas både i live- och globala rapporter.</p>
+<p>En ny kolumn i meddelandekörningslistan visar antalet målprofiler för varje meddelandekörning. </p>
+<p>Mer information finns i den <a href="message-monitoring.md">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+
+<th><strong>Skicka listor med data dynamiskt med anpassade åtgärder</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du skicka samlingar eller en lista med data i dina anpassade åtgärdsparametrar som fylls i dynamiskt vid körning. Två sorters samlingar stöds: enkla samlingar och objektsamlingar. Tidigare skapade anpassade åtgärder fortsätter att fungera. </p>
+<p>Mer information om samlingar finns i <a href="building-journeys/collections.md">den detaljerade dokumentationen</a>. </p>
+<p>Funktionerna för att filtrera och överlappa har lagts till i listan med funktioner som är tillgängliga i den avancerade uttrycksredigeraren. Det ger fler möjligheter att filtrera och jämföra samlingar.</p>
+<p>Läs dokumentationen om funktionerna <a href="https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/main-functions-journey/list/functionfilter.html">filter</a> och <a href="https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/main-functions-journey/list/functiontintersect.html">överlappa</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<!--
+<table>
+<thead>
+<tr>
+<th><strong>Decision Management - Personalize your offers</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now personalize content added to your offers' representations using the expression editor.</p>
+<p>For more information, refer to the <a href="offers/offer-library/creating-personalized-offers.md#content">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+-->
+
+### Förbättringar
+
+**Resor**
+
+* Systemgenererade scheman och datauppsättningar som har skapats under etablering av steghändelser är nu i skrivskyddat läge, vilket skyddar mot oavsiktliga ändringar av viktiga scheman. [Läs mer](reports/sharing-overview.md)
+* Etikettera aktiviteten **Wait** med en etikett som ska visas på arbetsytan. Etiketten används också i loggar för rapportering och testläge för att tydligt identifiera vad du gör. [Läs mer](building-journeys/about-journey-activities.md#best-practices)
+* Hitta händelser och åtgärder snabbare genom att filtrera element i kategorierna **Händelser** och **Åtgärd** med hjälp av sökning. Orchestration-aktiviteter är inte längre filtrerade. [Läs mer](building-journeys/using-the-journey-designer.md)
+* När du definierar ett händelse-ID-villkor i en regelbaserad händelse eller en affärshändelse är operatorn &quot;contains&quot; nu tillgänglig för strängtyper av fält. [Läs mer](event/about-creating.md)
+
+**E-postkonfiguration**
+
+* När en IP-pool har associerats med en meddelandeförinställning kan du nu redigera den, eftersom uppdateringen är asynkron. Du kan även kontrollera uppdateringsstatus för varje IP-pool. [Läs mer](configuration/ip-pools.md#edit-ip-pool)
+
+## Version från augusti 2021 {#august-2021-release}
 
 ### Nya funktioner
 
@@ -151,7 +223,7 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 
 **Beslutsledning**
 
-* Det sätt på vilket du lägger till och konfigurerar representationer när du skapar ett erbjudande har uppdaterats för att förbättra användarupplevelsen. Resursbiblioteket visas nu endast när du definierar bildtypsinnehåll för en representation. [Läs mer](offers/offer-library/creating-personalized-offers.md#representations)
+* Sättet på vilket du lägger till och konfigurerar representationer när du skapar ett erbjudande har uppdaterats för att förbättra användarupplevelsen. Specifikt visas nu resursbiblioteket endast när du definierar innehåll med bilder för en representation. [Läs mer](offers/offer-library/creating-personalized-offers.md#representations)
 
 ### Korrigeringar
 
@@ -162,7 +234,7 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 * Du kan nu ta reda på varför en meddelandeförinställning inte kunde skapas med hjälp av en tydligare varning i användargränssnittet.
 
 
-## juliversion 2021 {#july-2021-release}
+## Version från juli 2021 {#july-2021-release}
 
 ### Nya funktioner
 

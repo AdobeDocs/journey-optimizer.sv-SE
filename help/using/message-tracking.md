@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: 5a21ac0c199bf237972122ac46e58bf9f8d0f8ab
+source-git-commit: 11a42e404f79f07fb092892d5ebc53f3d1a4351b
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '792'
 ht-degree: 0%
 
 ---
@@ -112,7 +112,9 @@ Följ stegen nedan om du vill lägga till en länk för att avanmäla dig i ditt
 
    ![](assets/message-tracking-opt-out-confirmation.png)
 
-1. Klicka på **[!UICONTROL Save]**.
+   Du kan anpassa länkarna. Läs mer om anpassade URL:er i [det här avsnittet](personalization/personalization-syntax.md).
+
+1. Spara ändringarna.
 
 När meddelandet har skickats och en mottagare klickar på länken för att avanmäla sig avanmäls han omedelbart.
 
