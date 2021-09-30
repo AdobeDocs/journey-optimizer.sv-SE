@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 71ab7369-fd84-46eb-95d2-941bd887d565
-source-git-commit: f2ca9df4ff3441bd85e07b618f2f0559106db9c5
+source-git-commit: 9c1edc8d79c58fcf4f2048b9fe81cd31ea621777
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '519'
 ht-degree: 4%
 
 ---
@@ -30,11 +30,9 @@ Du kan sedan tilldela teammedlemmar till produktprofiler och **konfigurera kanal
 
 Läs mer på följande sidor:
 
-* **Kom igång med produktprofiler och behörigheter**
-
 * **Ange** användarbehörigheter och ge åtkomst till dina teammedlemmar. [Läs mer](../using/administration/permissions.md)
 
-* **Distribuera[!DNL Adobe Experience Manager Assets Essentials]** för att hantera resurser och bilder i dina meddelanden: -användare som behöver åtkomst till  [!DNL Assets Essentials] måste vara en del av  **Assets Essentials** konsumentanvändare/och  **Assets Essentials** användarproduktprofiler. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}
+* **Distribuera[!DNL Adobe Experience Manager Assets Essentials]** för att hantera resurser och bilder i dina meddelanden: -användare som behöver åtkomst till  [!DNL Assets Essentials] måste vara en del av  **Assets Essentials** konsumentanvändare/och  **Assets Essentials** användarproduktprofiler. [Läs mer i Assets Essentials-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}
 
 * **Konfigurera** kanalerna och definiera inställningarna för e-post och push-meddelanden. [Läs mer](../using/configuration/get-started-configuration.md)
 
@@ -47,7 +45,7 @@ Läs mer på följande sidor:
 
 Som dataadministratör måste du **identifiera data och skapa schema och datauppsättning** för att kunna hämta data till Adobe Experience Platform.
 
-Steg för att skapa ett identitetsnamnutrymme och en datauppsättning som är aktiverad för profiler samt skapa segment och testprofiler beskrivs i avsnitten nedan:
+Steg för att skapa ett identitetsnamnutrymme och en datauppsättning aktiverad för profiler, skapa segment och testprofiler beskrivs i avsnitten nedan:
 
 * Lär dig hur du förhandsgranskar och skapar en **datauppsättning** i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html){target=&quot;_blank&quot;}
 
@@ -63,7 +61,7 @@ För att kunna skicka meddelanden under resor måste du dessutom konfigurera **[
 
 ## Skapa meddelanden, erbjudanden och resor
 
-Som resande kan du se följande avsnitt för att konfigurera din första resa, lägga till erbjudanden, resurser och skicka meddelanden:
+Som resande lärare kan du läsa följande avsnitt för att konfigurera din första resa, lägga till erbjudanden och resurser och skicka meddelanden:
 
 * **Skapa meddelanden**: få tillgång till meddelanden, utforma eller läsa in e-post och push-innehåll, lägga till personalisering och förhandsgranskningsmeddelanden. [Läs mer](create-message.md)
 
