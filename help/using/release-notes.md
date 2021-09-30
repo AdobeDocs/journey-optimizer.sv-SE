@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 8f9c7ef2388624432a1601da0ce9502b3e68b58b
+source-git-commit: bb52c8e92621815c61528558aca6fbc326230e00
 workflow-type: tm+mt
-source-wordcount: '1490'
+source-wordcount: '1526'
 ht-degree: 11%
 
 ---
@@ -28,7 +28,7 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 <tbody>
 <tr>
 <td>
-<p>Ett nytt mätvärde finns för rapportering: målgruppen för e-post- och push-meddelanden visas både i live- och globala rapporter.</p>
+<p>Nya mätvärden är tillgängliga vid rapportering: Riktade och exkluderade för e-post- och push-meddelanden visas både i live- och globala rapporter. </br> Observera att du måste återställa de olika rapportinstrumentpanelerna för varje kanal och rapporttyp för att få tillgång till de senaste mätvärdena. Mer information om anpassning av kontrollpanelen finns i <a href="reports/live-report.md">den detaljerade dokumentationen.</a></p>
 <p>En ny kolumn i meddelandekörningslistan visar antalet målprofiler för varje meddelandekörning. </p>
 <p>Mer information finns i den <a href="message-monitoring.md">detaljerade dokumentationen</a>.</p>
 </td>
