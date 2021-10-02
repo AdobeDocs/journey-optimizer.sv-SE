@@ -5,9 +5,10 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: a5a3b23228a56cb16935dbc0f4d26d4a666d8fd2
+exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
+source-git-commit: 138adc4b548e5d8ba744037db2d35150b6876867
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '996'
 ht-degree: 3%
 
 ---
@@ -118,7 +119,7 @@ Du kan använda villkor för att utföra segmentering med aktiviteten **Villkor*
 Segmenteringen kan baseras på:
 
 * datakälldata
-* kontexten för händelser som ingår i resedata, t.ex. klickade någon på meddelandet hon fick för en timme sedan?
+* kontexten för händelser som ingår i resedata, t.ex. klickade någon på meddelandet som togs emot för en timme sedan?
 * ett datum, till exempel: Är vi i juni när en person går igenom resan?
 * en tid, till exempel: är det morgon i personens tidszon?
 * en algoritm som delar den målgrupp som flödar i resan baserat på en procentandel, till exempel: 90 % - 10 % för att exkludera en kontrollgrupp
