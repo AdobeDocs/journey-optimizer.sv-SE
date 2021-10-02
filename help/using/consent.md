@@ -5,9 +5,10 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: cdc0909a296799c5c60e854474a23750cf7b1b2f
+exl-id: c5bae757-a109-45f8-bf8d-182044a73cca
+source-git-commit: a174944bb8efcb67d758d4fe215674c1b8bbee13
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -138,7 +139,7 @@ Eftersom många kunder vill ha en enklare process för att avbryta prenumeration
 
 Lär dig hur du lägger till en länk för avanmälan i meddelandeinnehållet i [det här avsnittet](message-tracking.md#one-click-opt-out-link).
 
-När meddelandet har skickats via en [resa](building-journeys/journey.md) avanmälningslänk avanmäls han omedelbart om en mottagare klickar på avanmälningslänken.
+När meddelandet har skickats via en [resa](building-journeys/journey.md) avanmälningslänk avanmäls den här profilen omedelbart om en mottagare klickar på avanmälningslänken.
 
 ## Avbeställ länk i rubrik {#unsubscribe-email}
 

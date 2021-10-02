@@ -6,16 +6,16 @@ topic: Personalization
 role: Data Engineer
 level: Beginner
 exl-id: f448780b-91bc-455e-bf10-9a9aee0a0b24
-source-git-commit: c68aa48c7762b6d2d96a7c921025104247ceffa3
+source-git-commit: a174944bb8efcb67d758d4fe215674c1b8bbee13
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '689'
 ht-degree: 2%
 
 ---
 
 # Kom igång med personalisering{#add-personalization}
 
-Upptäck [!DNL Adobe Journey Optimizer]-personaliseringsfunktioner för att anpassa dina meddelanden till varje specifik mottagare genom att utnyttja de data och den information du har om honom/henne. Det kan vara hans förnamn, intressen, var han bor, vad han köpte och mycket annat.
+Upptäck [!DNL Adobe Journey Optimizer] personaliseringsfunktioner för att anpassa dina meddelanden till varje specifik mottagare genom att utnyttja de data och den information du har om dem. Det kan vara deras förnamn, intressen, var de bor, vad de har köpt och mycket annat.
 
 ➡️ [Lär dig hur du anpassar ett meddelande i dessa videofilmer](#video-perso)
 

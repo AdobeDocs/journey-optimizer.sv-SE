@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: 11a42e404f79f07fb092892d5ebc53f3d1a4351b
+source-git-commit: a174944bb8efcb67d758d4fe215674c1b8bbee13
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ Följ stegen nedan om du vill lägga till en länk för att avanmäla dig i ditt
 
 1. Spara ändringarna.
 
-När meddelandet har skickats och en mottagare klickar på länken för att avanmäla sig avanmäls han omedelbart.
+När meddelandet har skickats avanmäls mottagarna omedelbart om de klickar på avanmälningslänken.
 
 ## Hantera spårning {#manage-tracking}
 

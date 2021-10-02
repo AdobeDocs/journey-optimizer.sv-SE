@@ -5,9 +5,10 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 6e18cc33154a8568c24ff92944c0bfa16b30eb80
+exl-id: 03fbc4f4-b0a8-46d5-91f9-620685b11493
+source-git-commit: a174944bb8efcb67d758d4fe215674c1b8bbee13
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1039'
 ht-degree: 84%
 
 ---
@@ -81,7 +82,7 @@ Här följer några saker att kontrollera:
 
 Om enskilda personer flödar rätt väg i resan, men inte får meddelanden som de bör få, kan du kontrollera om:
 
-* [!DNL Journey Optimizer] har tagit hänsyn till begäran om att skicka meddelandet. En företagsanvändare kan komma åt meddelandet som ska skickas och kontrollera om tidpunkten för den senaste körningen motsvarar körningstiden för din resa. Han kan också kolla in de senaste API-anropen/händelserna.
+* [!DNL Journey Optimizer] har tagit hänsyn till begäran om att skicka meddelandet. Affärsanvändare kan komma åt meddelandet som ska skickas och kontrollera om tidpunkten för den senaste körningen motsvarar körningstiden för din resa. De kan även kontrollera de senaste API-anropen/händelserna som tagits emot.
 * [!DNL Journey Optimizer] har skickat meddelandet. I meddelandets sändningsloggar kan du se status för varje körning. Du kan se om den är grön eller röd och vad som var problemet. En företagsanvändare kan komma åt den här skärmen och skicka loggarna till en administratör för ytterligare undersökningar.
 
 Om ett meddelande skickas via en anpassad åtgärd är det enda som kan kontrolleras i resan det faktum att anropet till den anpassade åtgärdens system leder till ett fel eller inte. Det kan hända att anropet till det externa system som är kopplat till den anpassade åtgärden inte leder till ett fel men inte heller leder till att ett meddelande skickas. I dessa fall bör undersökningar utföras på det externa systemet.
