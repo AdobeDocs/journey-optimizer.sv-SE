@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4a53ea96-632a-41c7-ab15-b85b99db4f3e
-source-git-commit: 41f43f6e702dbadfcd28d14154895a65ec15ed65
+source-git-commit: 86fc6d9df06b975539652cc44ec41fd8c8318404
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1328'
 ht-degree: 1%
 
 ---
@@ -18,8 +18,8 @@ ht-degree: 1%
 Innan du skapar ett erbjudande måste du kontrollera att du har skapat:
 
 * En **placering** där erbjudandet ska visas. Se [Skapa placeringar](../offer-library/creating-placements.md)
-* En **beslutsregel** som definierar det villkor som erbjudandet ska presenteras under. Se [Skapa beslutsregler](../offer-library/creating-decision-rules.md).
-* En eller flera **taggar** som du vill associera med erbjudandet. Se [Skapa taggar](../offer-library/creating-tags.md).
+* Om du vill lägga till ett villkor för behörighet: en **beslutsregel** som definierar villkoren för erbjudandet. Se [Skapa beslutsregler](../offer-library/creating-decision-rules.md).
+* En eller flera **taggar** som du kanske vill associera med erbjudandet. Se [Skapa taggar](../offer-library/creating-tags.md).
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
