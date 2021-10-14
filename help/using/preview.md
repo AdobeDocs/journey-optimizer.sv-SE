@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: f2c2a360-a4b2-4416-bbd0-e27dd014e4ac
-source-git-commit: 5c4aca7666987ed188e69f3b5772950c0bf96488
+source-git-commit: c0c397818020126b175eeb8f75f3cfd56029a2f6
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '976'
 ht-degree: 0%
 
 ---
@@ -122,13 +122,19 @@ När [testprofiler](#select-test-profiles) har valts kan du skicka korrektur.
 
    ![](assets/send-proof-button.png)
 
-1. I fönstret **[!UICONTROL Send proof]** skriver du in mottagarens e-postadress och klickar på **[!UICONTROL Add]** för att skicka korrekturet till dig själv eller medlemmar i din organisation.
+1. I fönstret **[!UICONTROL Send proof]** skriver du in mottagarens e-postadress och klickar på **[!UICONTROL Add]** för att skicka korrekturet till dig själv eller medlemmar i organisationen.
 
-   Observera att du kan lägga till upp till 10 mottagare för korrekturleveransen.
+   Observera att du kan lägga till upp till tio mottagare för korrekturleveransen.
 
    ![](assets/send-proof-button_2.png)
 
-1. Välj sedan de testprofiler som ska ta emot korrekturet och klicka på **[!UICONTROL Send proof]**. Du kan vid behov lägga till ett prefix till korrekturens ämnesrad. Endast alfanumeriska tecken och specialtecken, t.ex. . - _ ( ) [ ], tillåts som prefix till ämnesraden.
+1. Välj sedan **Testprofiler** som ska användas för att anpassa meddelandeinnehållet.
+
+   Varje mottagare får lika många meddelanden som antalet valda testprofiler. Om du till exempel har lagt till fem e-postmeddelanden till mottagare och valt tio testprofiler, skickar du femtio korrekturmeddelanden och varje mottagare får tio.
+
+1. Du kan vid behov lägga till ett prefix till korrekturens ämnesrad. Endast alfanumeriska tecken och specialtecken, t.ex. . - _ ( ) [ ], tillåts som prefix till ämnesraden.
+
+1. Klicka på **[!UICONTROL Send proof]**.
 
    ![](assets/send-proof-select.png)
 
@@ -136,11 +142,11 @@ När [testprofiler](#select-test-profiles) har valts kan du skicka korrektur.
 
    ![](assets/send-proof-view.png)
 
-Du måste skicka korrektur när du har ändrat meddelandeinnehållet.
+Vi rekommenderar att du skickar korrektur efter varje ändring av meddelandeinnehållet.
 
 >[!NOTE]
 >
-> I det korrektur som skickas till testprofilerna är länken till spegelsidan inte aktiv. Den aktiveras endast i de slutliga meddelandena.
+>I det korrektur som skickas till testprofilerna är länken till spegelsidan inte aktiv. Den aktiveras endast i de slutliga meddelandena.
 
 ## E-poståtergivning{#email-rendering}
 
