@@ -6,7 +6,7 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: fe39570b-cbd2-4b24-af10-e12990a9a885
-source-git-commit: 1cf3475d7b2b990db4b2217bb03a47b76692142c
+source-git-commit: 676f81e1cb41ea65a1dd0444424b331ce54da786
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 # Anpassningssyntax {#personalization-syntax}
 
 Personalisering i [!DNL Journey Optimizer] baseras på den mallsyntax som kallas Handlebars.
-En fullständig beskrivning av Handlebars syntax finns i [HandlebarsJS-dokumentation](https://handlebarsjs.com/).
+En fullständig beskrivning av Handlebars-syntaxen finns i [HandlebarsJS-dokumentation](https://handlebarsjs.com/).
 
 Den använder en mall och ett indataobjekt för att generera HTML eller andra textformat. Mallar för handtag ser ut som vanlig text med inbäddade handtagsuttryck.
 
@@ -39,19 +39,19 @@ Whitespace ! " # % & ' ( ) * + , . / ; < = > @ [ \ ] ^ ` { | } ~
 
 Syntaxen är skiftlägeskänslig.
 
-Orden **true**, **false**, **null** och **undefined** tillåts bara i den första delen av ett sökvägsuttryck.
+Orden **true**, **false**, **null** och **undefined** tillåts endast i den första delen av ett sökvägsuttryck.
 
-I Handlebars är de värden som returneras av {{expression}} **HTML-escape**. Om uttrycket innehåller `&` genereras de returnerade HTML-escape-utdata som `&amp;`. Om du inte vill att Handlebars ska kringgå ett värde använder du &quot;trippelstreck&quot;.
+I Handlebars returneras värdena från {{expression}} **HTML-escape**. Om uttrycket innehåller `&`genereras returnerade utdata från HTML som `&amp;`. Om du inte vill att Handlebars ska kringgå ett värde använder du &quot;trippelstreck&quot;.
 
 ## Profil
 
-Med det här namnutrymmet kan du referera till alla attribut som definieras i profilschemat som beskrivs i [dokumentationen för Adobe Experience Platform datamodell (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target=&quot;_blank&quot;}.
+Med det här namnutrymmet kan du referera till alla attribut som definieras i profilschemat som beskrivs i [Dokumentation för Adobe Experience Platform Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target=&quot;_blank&quot;}.
 
-Attributen måste definieras i schemat innan de refereras i ett [!DNL Journey Optimizer]-anpassningsblock.
+Attributen måste definieras i schemat innan de refereras i en [!DNL Journey Optimizer] personaliseringsblock.
 
 >[!NOTE]
 >
->Lär dig hur du använder profilattribut i villkoren i [det här avsnittet](functions/helpers.md#if-function).
+>Lär dig hur du utnyttjar profilattribut under förhållanden i [det här avsnittet](functions/helpers.md#if-function).
 
 **Exempelreferenser:**
 
@@ -71,7 +71,7 @@ Attributen måste definieras i schemat innan de refereras i ett [!DNL Journey Op
 
 ## Segment{#perso-segments}
 
-Lär dig hur du använder profilattribut i villkoren i [det här avsnittet](functions/helpers.md#if-function).
+Lär dig hur du utnyttjar profilattribut under förhållanden i [det här avsnittet](functions/helpers.md#if-function).
 
 >[!NOTE]
 >Mer information om segmenterings- och segmenteringstjänster finns i [det här avsnittet](../segment/about-segments.md).
@@ -89,10 +89,10 @@ där:
 
 * `offers` identifierar det sökvägsuttryck som tillhör namnutrymmet offer
 * `Type`  fastställer typen av erbjudanderepresentation. Möjliga värden är: `image`, `html` och `text`
-* `Placement Id` och  `Activity Id` är placerings- och aktivitetsidentifierare
+* `Placement Id` och `Activity Id` är placerings- och aktivitetsidentifierare
 * `Attributes` är specifika attribut som är beroende av erbjudandetypen. Exempel: `deliveryUrl` för bilder
 
-Mer information om besluts-API och offerterepresentation finns på [den här sidan](../../using/offers/api-reference/decisions-api/deliver-offers.md)
+Mer information om beslut-API och offertrepresentation finns i [den här sidan](../../using/offers/api-reference/decisions-api/deliver-offers.md)
 
 Alla referenser valideras mot offertschema med en valideringsmekanism som beskrivs i [den här sidan](personalization-validation.md)
 
@@ -110,7 +110,7 @@ Alla referenser valideras mot offertschema med en valideringsmekanism som beskri
 
    `offers.text.[offers:xcore:offer-placement:126f767d74b0da80].[xcore:offer-activity:125e2c6889798fd9].content`
 
-* HTML-innehåll i erbjudandet som kommer från beslutsmotorn:
+* Innehållet i HTML i erbjudandet från beslutsmotorn:
 
    `offers.html.[offers:xcore:offer-placement:126f767d74b0da80].[xcore:offer-activity:125e2c6889798fd9].content`
 
@@ -121,12 +121,12 @@ Handtag-hjälpen är en enkel identifierare som kan följas av parametrar.
 Varje parameter är ett Handlebars-uttryck. Hjälpprogrammen kan nås från alla sammanhang i en mall.
 
 Dessa blockhjälpare identifieras med # före hjälpnamnet och en matchande avslutande /, med samma namn krävs.
-Blocken är uttryck som har ett block som öppnas ({{# }}) och avslutas ({{/}}).
+Block är uttryck som har ett blocköppningsblock ({{# }}) och closing ({/}}).
 
 
 >[!NOTE]
 >
->Hjälpfunktioner beskrivs i [det här avsnittet](functions/helpers.md).
+>Hjälpfunktionerna beskrivs i [det här avsnittet](functions/helpers.md).
 
 ## Literala typer
 
@@ -141,14 +141,14 @@ Blocken är uttryck som har ett block som öppnas ({{# }}) och avslutas ({{/}}).
 
 >[!CAUTION]
 >
->Det går inte att använda variabeln **xEvent** i personaliseringsuttryck. Alla referenser till xEvent resulterar i valideringsfel.
+>Användning av **xEvent** variabeln är inte tillgänglig i personaliseringsuttryck. Alla referenser till xEvent resulterar i valideringsfel.
 
 ## URL-anpassning{#perso-urls}
 
-Med Journey Orchestration kan du anpassa en eller flera URL-adresser i meddelandet genom att lägga till anpassningsfält till dem. Så här gör du:
+Med Journey Optimizer kan du anpassa en eller flera URL-adresser i meddelandet genom att lägga till anpassningsfält till dem. Så här gör du:
 
-* Skapa en länk i ditt e-postinnehåll eller push-innehåll. Mer information om hur du skapar länkar finns på [den här sidan](../message-tracking.md#insert-links)).
-* Klicka på personaliseringsikonen. Den här ikonen är tillgänglig för följande typer av länkar: **Extern länk**, **Ta bort prenumerationslänk** och **Avanmäl dig**.
+* Skapa en länk i ditt e-postinnehåll eller push-innehåll. Mer information om hur du skapar länkar finns i [den här sidan](../message-tracking.md#insert-links).
+* Klicka på personaliseringsikonen. Den här ikonen är tillgänglig för följande typer av länkar: **Extern länk**, **Länk för att avbryta prenumeration** och **Avanmäl dig**.
 
 ![](assets/perso-url.png)
 
@@ -156,7 +156,7 @@ Med Journey Orchestration kan du anpassa en eller flera URL-adresser i meddeland
 >
 >När du redigerar en anpassad URL i uttrycksredigeraren inaktiveras hjälpfunktioner och segmentmedlemskap av säkerhetsskäl.
 
-** Exempel på personaliserade URL:er **
+**Exempel på personaliserade URL:er**
 
 * `https://www.adobe.com/users/{{profile.person.name.lastName}}`
 * `https://www.adobe.com/users?uid={{profile.person.name.firstName}}`
