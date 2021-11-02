@@ -6,16 +6,16 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: f2c2a360-a4b2-4416-bbd0-e27dd014e4ac
-source-git-commit: c0c397818020126b175eeb8f75f3cfd56029a2f6
+source-git-commit: a9e65986c3ccd0dc54a54bc5f349f5c9c87c5039
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
 
 # Förhandsgranska och testa dina meddelanden{#preview-and-proof}
 
-När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du infogade [anpassat innehåll](personalization/personalize.md) kan du kontrollera hur det här innehållet visas i meddelandet genom att utnyttja testprofildata.
+När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du infogade [personaliserat innehåll](personalization/personalize.md)kommer du att kunna kontrollera hur det här innehållet visas i meddelandet, med hjälp av testprofildata.
 
 Om du vill identifiera eventuella fel i e-postinnehåll eller personaliseringsinställningar skickar du korrektur för att testa profiler. Ett korrektur ska skickas varje gång en ändring görs för att validera det senaste innehållet.
 
@@ -30,33 +30,42 @@ Om du vill testa ditt meddelandeinnehåll måste du:
 * [välj testprofiler](#select-test-profiles)
 * [kontrollera meddelandets förhandsgranskning](#preview-your-messages)
 
-Du kan sedan [skicka korrektur](#send-proofs) till dina testprofiler.
+Då kan du [skicka korrektur](#send-proofs) till testprofilerna.
 
-Använd dessutom ditt **Litmus**-konto i [!DNL Journey Optimizer] för att omedelbart förhandsgranska din **e-poståtergivning** i vanliga e-postklienter. Sedan kan ni se till att e-postinnehållet ser bra ut och fungerar som det ska i alla inkorgar. Lär dig hur du låser upp förhandsvisningar för Litmus-e-post i [det här avsnittet](#email-rendering)
+Dessutom kan du **Litmus** konto till [!DNL Journey Optimizer] för att omedelbart förhandsgranska **e-poståtergivning** i vanliga e-postklienter. Sedan kan ni se till att e-postinnehållet ser bra ut och fungerar som det ska i alla inkorgar. Lär dig hur du låser upp Litmus-e-postförhandsvisningar i [det här avsnittet](#email-rendering)
 
 >[!CAUTION]
 >
->När du förhandsgranskar ett meddelande eller skickar korrektur visas endast profilpersonaliseringsdata. Personalisering som bygger på kontextdata, t.ex. händelseinformation, kan bara testas i samband med en resa. Lär dig hur du testar personalisering i [det här användningsexemplet](personalization/personalization-use-case.md).
+>När du förhandsgranskar ett meddelande eller skickar korrektur visas endast profilpersonaliseringsdata. Personalisering som bygger på kontextdata, t.ex. händelseinformation, kan bara testas i samband med en resa. Lär dig hur du testar personalisering i [det här användningsfallet](personalization/personalization-use-case.md).
 
 ➡️ [Lär dig hur du förhandsgranskar, korrekturläser och publicerar e-postmeddelanden i den här videon](#video-preview)
 
 ## Välj testprofiler{#select-test-profiles}
 
-Använd [Testa profiler](building-journeys/creating-test-profiles.md) för att ange ytterligare mottagare som inte matchar de definierade målinriktningsvillkoren som mål.
+>[!CONTEXTUALHELP]
+>id="ac_preview_testprofiles"
+>title="Förhandsgranska och testa dina meddelanden"
+>abstract="När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/create-messages/create-message/preview.html?lang=en#email-rendering" text="E-poståtergivning"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/create-messages/create-message/preview.html?lang=en#preview-your-messages" text="Förhandsgranskning"
+
+
+
+Använd [Testprofiler](building-journeys/creating-test-profiles.md) om du vill ange fler mottagare som inte matchar de definierade målinriktningskriterierna som mål.
 
 Så här väljer du testprofiler:
 
-1. Klicka på knappen **[!UICONTROL Show preview]** i meddelandegränssnittet eller i e-postdesignern för att komma åt valet av testprofil.
+1. I meddelandegränssnittet eller i e-postdesignern klickar du på **[!UICONTROL Show preview]** för att komma åt valet av testprofil.
 
    ![](assets/email-preview-button.png)
 
-1. Markera det namnutrymme som ska användas för att identifiera testprofiler genom att klicka på markeringsikonen **[!UICONTROL Identity namespace]**.
+1. Markera namnutrymmet som ska användas för att identifiera testprofiler genom att klicka på **[!UICONTROL Identity namespace]** markeringsikon.
 
    ![](assets/previewselect-namespace.png)
 
    Läs mer om Adobe Experience Platform identitetsnamnutrymmen [i det här avsnittet](get-started-identity.md){target=&quot;_blank&quot;}.
 
-   I exemplet nedan använder vi namnutrymmet **Email**.
+   I exemplet nedan använder vi **E-post** namnutrymme.
 
 1. Använd sökfältet för att hitta namnutrymmet, markera det och klicka på **[!UICONTROL Select]**
 
@@ -74,15 +83,15 @@ Så här väljer du testprofiler:
 
 ## Förhandsgranska meddelanden{#preview-your-messages}
 
-När [testprofiler](#select-test-profiles) har valts kan du förhandsgranska dina meddelanden och kontrollera innehållet.
+En gång [testprofiler](#select-test-profiles) om du har valt det här alternativet kan du förhandsgranska meddelanden och kontrollera innehåll.
 
-1. Klicka på fliken **[!UICONTROL Preview]** för att testa meddelandet.
+1. Klicka på **[!UICONTROL Preview]** för att testa meddelandet.
 
 1. Välj en testprofil. Du kan kontrollera de värden som är tillgängliga i kolumnerna. Använd höger-/vänsterpilarna för att bläddra bland data.
 
    ![](assets/preview-tab-select-profile.png)
 
-1. Klicka på ikonen **[!UICONTROL Select data]** ovanför listan för att lägga till eller ta bort kolumner.
+1. Klicka på **[!UICONTROL Select data]** -ikonen ovanför listan för att lägga till eller ta bort kolumner.
 
    ![](assets/preview-select-data.png)
 
@@ -98,7 +107,7 @@ När [testprofiler](#select-test-profiles) har valts kan du förhandsgranska din
 
 Om du vill förhandsgranska ett push-meddelande:
 
-1. Växla till kanalen **[!UICONTROL Push]** från listrutan **[!UICONTROL Channels]** högst upp till höger på skärmen **[!UICONTROL Preview]**.
+1. Växla till **[!UICONTROL Push]** från **[!UICONTROL Channels]** nedrullningsbar lista längst upp till höger i **[!UICONTROL Preview]** skärm.
 
    ![](assets/preview-select-channel.png)
 
@@ -116,19 +125,19 @@ Om du vill förhandsgranska ett push-meddelande:
 
 Ett korrektur är ett specifikt meddelande som gör att du kan testa ett meddelande innan det skickas till huvudmålgruppen. Mottagarna av beviset ansvarar för att godkänna meddelandet: återgivning, innehåll, personaliseringsinställningar, konfiguration.
 
-När [testprofiler](#select-test-profiles) har valts kan du skicka korrektur.
+En gång [testprofiler](#select-test-profiles) om du har valt det här alternativet kan du skicka korrektur.
 
-1. Klicka på knappen **[!UICONTROL Send proof]** på skärmen **[!UICONTROL Preview]**.
+1. I **[!UICONTROL Preview]** klickar du på **[!UICONTROL Send proof]** -knappen.
 
    ![](assets/send-proof-button.png)
 
-1. I fönstret **[!UICONTROL Send proof]** skriver du in mottagarens e-postadress och klickar på **[!UICONTROL Add]** för att skicka korrekturet till dig själv eller medlemmar i organisationen.
+1. Från **[!UICONTROL Send proof]** fönster, skriv in mottagarens e-postadress och klicka på **[!UICONTROL Add]** för att skicka beviset till dig själv eller medlemmar i din organisation.
 
    Observera att du kan lägga till upp till tio mottagare för korrekturleveransen.
 
    ![](assets/send-proof-button_2.png)
 
-1. Välj sedan **Testprofiler** som ska användas för att anpassa meddelandeinnehållet.
+1. Välj sedan **Testprofiler** som kommer att användas för att anpassa meddelandeinnehållet.
 
    Varje mottagare får lika många meddelanden som antalet valda testprofiler. Om du till exempel har lagt till fem e-postmeddelanden till mottagare och valt tio testprofiler, skickar du femtio korrekturmeddelanden och varje mottagare får tio.
 
@@ -138,7 +147,7 @@ När [testprofiler](#select-test-profiles) har valts kan du skicka korrektur.
 
    ![](assets/send-proof-select.png)
 
-1. Klicka på knappen **[!UICONTROL View proofs]** på skärmen **[!UICONTROL Preview]** för att kontrollera status.
+1. Tillbaka i  **[!UICONTROL Preview]** klickar du på  **[!UICONTROL View proofs]** för att kontrollera status.
 
    ![](assets/send-proof-view.png)
 
@@ -150,7 +159,7 @@ Vi rekommenderar att du skickar korrektur efter varje ändring av meddelandeinne
 
 ## E-poståtergivning{#email-rendering}
 
-Du kan använda ditt **Litmus**-konto i [!DNL Journey Optimizer] för att omedelbart förhandsgranska din **e-poståtergivning** i vanliga e-postklienter.
+Du kan använda **Litmus** konto till [!DNL Journey Optimizer] för att omedelbart förhandsgranska **e-poståtergivning** i vanliga e-postklienter.
 
 Om du vill få åtkomst till funktionerna för e-poståtergivning måste du:
 
@@ -159,9 +168,9 @@ Om du vill få åtkomst till funktionerna för e-poståtergivning måste du:
 
 Följ sedan stegen nedan:
 
-1. Klicka på knappen **[!UICONTROL Preview]** i e-postdesignern och välj fliken **[!UICONTROL Email rendering]**.
+1. Klicka på knappen **[!UICONTROL Preview]** och väljer **[!UICONTROL Email rendering]** -fliken.
 
-1. Klicka på **Anslut ditt Litmus-konto** i det övre högra avsnittet.
+1. Klicka **Anslut ditt Litmus-konto** i det övre högra avsnittet.
 
    ![](assets/email-rendering-litmus.png)
 
@@ -169,7 +178,7 @@ Följ sedan stegen nedan:
 
    ![](assets/email-rendering-credentials.png)
 
-1. Klicka på knappen **Kör test** om du vill generera förhandsgranskningar via e-post.
+1. Klicka på **Kör test** om du vill generera förhandsgranskningar via e-post.
 
 1. Kontrollera e-postinnehållet i vanliga dator-, mobil- och webbaserade klienter.
 
@@ -177,7 +186,7 @@ Följ sedan stegen nedan:
 
 >[!CAUTION]
 >
->När du ansluter ditt **Litmus**-konto med [!DNL Journey Optimizer] godkänner du att testmeddelanden skickas till Litmus: När de väl har skickats hanteras dessa e-postmeddelanden inte längre av Adobe. Följaktligen gäller Litmus-principen för datalagring i dessa e-postmeddelanden, inklusive personaliseringsdata som kan inkluderas i dessa testmeddelanden.
+>När du ansluter **Litmus** konto med [!DNL Journey Optimizer]godkänner du att testmeddelanden skickas till Litmus: När de väl har skickats hanteras dessa e-postmeddelanden inte längre av Adobe. Följaktligen gäller Litmus-principen för datalagring i dessa e-postmeddelanden, inklusive personaliseringsdata som kan inkluderas i dessa testmeddelanden.
 
 ## Instruktionsvideo{#video-preview}
 
