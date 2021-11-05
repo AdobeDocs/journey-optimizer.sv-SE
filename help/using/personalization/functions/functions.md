@@ -1,21 +1,21 @@
 ---
-title: Bibliotek för hjälpfunktioner
+title: Kom igång med hjälp av hjälpfunktioner
 description: Journey Optimizer Helper functions library
-feature: Personalisering
-topic: Personalisering
+feature: Personalization
+topic: Personalization
 role: Data Engineer
 level: Experienced
-source-git-commit: d09eedce833b41037452bb46bc748e7e9f477d0a
+exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
+source-git-commit: 94dcf91e98ef343eed4c69a7251427809eece236
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1344'
 ht-degree: 1%
 
 ---
 
+# Kom igång med hjälp av hjälpfunktioner{#functionsL}
 
-# Bibliotek för hjälpfunktioner{#functionsL}
-
-Använd [!DNL Journey Optimizer]-mallspråk för att utföra dataåtgärder, som beräkningar, dataformatering eller konvertering, villkor och ändra dem i personaliseringssammanhang. Läs riktlinjerna för syntaxen för personalisering i [den här sidan](../personalization-syntax.md).
+Använd [!DNL Journey Optimizer] mallspråk för att utföra dataåtgärder, t.ex. beräkningar, dataformatering eller konvertering, villkor och hantera dem i personaliseringssammanhang. Läs riktlinjerna för syntaxen för personalisering i [den här sidan](../personalization-syntax.md).
 
 ➡️ [Upptäck hur du använder hjälpfunktioner](#video) (video)
 
@@ -23,13 +23,17 @@ Mallspråk används i hjälpfunktioner som är tillgängliga i listrutan för an
 
 ![](../assets/access-helper-functions.png)
 
+I [!DNL Journey Optimizer] Hjälpfunktionerna i uttrycksredigeraren är grupperade i tre kategorier: [Funktioner](#functions-helper), [Hjälpmedel](#helper-helper) och [Operatorer](#operators-helper).
 
+Välj en kategori för att komma åt underkategorier och funktioner.
 
-I [!DNL Journey Optimizer] Expression Editor är hjälpfunktionerna grupperade i tre kategorier: [Funktioner](#functions-helper), [Hjälpprogram](#helper-helper) och [Operatorer](#operators-helper).
+Åtkomst till underkategorier genom att klicka på `>` ikon. Välj en funktion genom att klicka på `+` ikon: funktionen läggs automatiskt till på skärmen för anpassning.
+
+Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den i dina favoriter. [Läs mer](../personalize.md#fav)
 
 ## Funktioner{#functions-helper}
 
-**Arrayfunktioner**
+### Arrayfunktioner
 
 <table>
     <tr>
@@ -79,8 +83,43 @@ I [!DNL Journey Optimizer] Expression Editor är hjälpfunktionerna grupperade i
     </tr>
 </table>
 
+### Funktioner för datum och tid{#date-functions}
 
-**Kartfunktioner**
+<table>
+    <tr>
+        <td><a href="dates.md#age">Ålder</a></td><td>Den här funktionen hämtar åldern från ett visst datum</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#current">Aktuell tid i millisekunder</a></td><td>Den här funktionen hämtar aktuell tid i epok millisekunder</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#date-diff">Datumdifferens</a></td><td>Den här funktionen hämtar skillnaden mellan två datum i antal dagar</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#day-week">Veckodag</a></td><td>Den här funktionen hämtar veckodag</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#day-year">Dag på året</a></td><td>Den här funktionen hämtar dagen på året</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#format-date">Formateringsdatum</a></td><td>Den här funktionen formaterar ett datum-/tidsvärde</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#set-days">Ange dagar</a></td><td>Den här funktionen anger dag i månaden för angivet datum/tid</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#set-hours">Ange dagar</a></td><td>Den här funktionen ställer in timmen för datum-/tidsvärdet</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#to-utc">Till UTC</a></td><td>Den här funktionen konverterar en datetime till UTC</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#week-of-year">Vecka på året</a></td><td>Den här funktionen returnerar årets vecka</td>
+    </tr>
+</table>
+</table>
+
+### Kartfunktioner
 
 <table>
     <tr>
@@ -105,7 +144,7 @@ I [!DNL Journey Optimizer] Expression Editor är hjälpfunktionerna grupperade i
     </tr>
 </table>
 
-**Strängfunktioner**
+### Strängfunktioner
 
 <table>
     <tr>

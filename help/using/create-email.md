@@ -1,31 +1,32 @@
 ---
 title: Skapa ett e-postmeddelande
 description: Lär dig hur du skapar e-postmeddelanden i Journey Optimizer
-feature: Översikt
-topic: Innehållshantering
+feature: Overview
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 80cd004d17dbbbe87fa5b15fc1bdc659fdc4e66f
+exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
+source-git-commit: 54b5a2c09ae9d7fd18f9b6a7d0053d78ae3e50b0
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 7%
+source-wordcount: '140'
+ht-degree: 4%
 
 ---
 
 # Skapa ett e-postmeddelande {#configure-email}
 
-När du har [skapat ett meddelande](create-message.md) använder du fliken **[!UICONTROL Email]** för att definiera inställningar och innehåll för e-postkanalen.
+En gång [skapade ett meddelande](create-message.md), använder du **[!UICONTROL Email]** för att definiera inställningar och innehåll för e-postkanalen.
 
 ![](assets/emails-configuration.png)
 
 >[!NOTE]
 >
->**[!UICONTROL From email]** och **[!UICONTROL From name]** är skrivskyddade och avgörs av **[!UICONTROL Preset]** som markerades när [meddelandet](create-message.md) skapades.
+>The **[!UICONTROL From email]** och **[!UICONTROL From name]** är skrivskyddade och bestäms av **[!UICONTROL Preset]** som har markerats när [skapar meddelandet](create-message.md).
 
 Så här konfigurerar du ett e-postmeddelande:
 
-1. Ange **[!UICONTROL Email subject]**. Det gör du genom att klicka på knappen till höger för att öppna uttrycksredigeraren och komponera e-postmeddelandets ämne. Lär dig hur du lägger till personalisering i [det här avsnittet](personalization/personalize.md)
+1. Ange e-postmeddelandets ämne i dialogrutan **[!UICONTROL Subject line]** fält. Det gör du genom att klicka på knappen till höger för att öppna uttrycksredigeraren och komponera e-postmeddelandets ämne. Lär dig hur du lägger till personalisering i [det här avsnittet](personalization/personalize.md)
 
-1. Klicka på knappen **[!UICONTROL Email Designer]** för att utforma e-postmeddelandet. Lär dig hur du utformar e-postmeddelanden i [det här avsnittet](design-emails.md).
+1. Klicka på **[!UICONTROL Email Designer]** för att utforma e-postmeddelandet. Lär dig hur du utformar e-postmeddelanden i [det här avsnittet](design-emails.md).
 
-1. Om du vill spåra mottagarnas beteende genom att öppna och/eller klicka på länkar kontrollerar du att alternativen **[!UICONTROL Open Tracking for email]** och **[!UICONTROL Click Tracking for email]** är aktiverade. Läs mer om spårning i [det här avsnittet](message-tracking.md).
+1. Om du vill spåra mottagarnas beteende genom att öppna och/eller klicka på länkar kontrollerar du att **[!UICONTROL Open Tracking for email]** och **[!UICONTROL Click Tracking for email]** är aktiverade. Läs mer om spårning i [det här avsnittet](message-tracking.md).

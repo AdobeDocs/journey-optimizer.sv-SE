@@ -6,28 +6,28 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 950f8186-07f6-4cc1-936c-d0984fb0f988
-source-git-commit: fa808a6d95468c40b9fbafb4cc8cc1cd74b1d00a
+source-git-commit: f99471ce5bca7272a6f25339c2de1d5f21657088
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---
 
 # Meddelandeövervakning {#monitor-message-execution}
 
-[!DNL Journey Optimizer] ger möjlighet att övervaka meddelanden som är publicerade och utlösta för att vara säkra på att meddelandena körs, skickas och levereras. Du kan se hur dina meddelanden fungerar över resor <!--and APIs--> i realtid från listan **[!UICONTROL Executions]**.
+För att vara säker på att dina meddelanden kan köras, skickas och levereras, [!DNL Journey Optimizer] har funktioner för att övervaka de meddelanden som för närvarande är publicerade och utlösta. Du kan se hur dina meddelanden fungerar på olika resor <!--and APIs--> i realtid från **[!UICONTROL Executions]** lista.
 
-Om du vill komma åt den här listan går du till startsidan för **[!DNL Journey Optimizer]**, väljer **[!UICONTROL Messages]** och klickar på fliken **[!UICONTROL Executions]**.
+Om du vill komma åt den här listan går du till **[!DNL Journey Optimizer]** startsida, välja **[!UICONTROL Messages]** och klickar på **[!UICONTROL Executions]** -fliken.
 
 På den här fliken finns två vyer: **[!UICONTROL Live view]** och **[!UICONTROL Global view]**.
 
-* På fliken **[!UICONTROL Live view]** finns en **realtidsöversikt över alla utförda meddelanden** som utlöses av en eller flera [resor](building-journeys/journey.md) **under de senaste 24 timmarna enbart**.
+* The **[!UICONTROL Live view]** -fliken innehåller en **realtidsöversikt över alla körda meddelanden** utlöses av en eller flera [resor](building-journeys/journey.md) **under de senaste 24 timmarna**.
 
    ![](assets/message-execution-tab-live.png)
 
    Den här listan uppdateras automatiskt var sextio sekund. Om ingen körning utfördes de senaste 24 timmarna för ett specifikt meddelande visas null-värden (0) för det meddelandet i alla kolumner.
 
-* På fliken **[!UICONTROL Global view]** finns en **översikt över alla meddelanden som körs** och som utlöses av en eller flera [resor](building-journeys/journey.md) **sedan meddelandets startdatum**.
+* The **[!UICONTROL Global view]** -fliken innehåller en **översikt över alla körda meddelanden** utlöses av en eller flera [resor](building-journeys/journey.md) **sedan meddelandets startdatum**.
 
    ![](assets/message-execution-tab-global.png)
 
@@ -47,24 +47,24 @@ Om ett meddelande publiceras men ännu inte aktiveras av en resa, visas det inte
 
 <!--If a message has been used in several journeys, the **[!UICONTROL Source]** column displays **[!UICONTROL Multiple]**.-->
 
-Som standard visas meddelandena med början från det senaste körningsdatumet. Klicka på ikonen **[!UICONTROL Filters]** för att söka efter meddelandena efter kanal, startdatum och/eller slutdatum.
+Som standard visas meddelandena med början från det senaste körningsdatumet. Klicka på **[!UICONTROL Filters]** -ikonen om du vill söka i meddelandena efter kanal, startdatum och/eller slutdatum.
 
 ![](assets/message-execution-tab-filters.png)
 
-Med den andra kolumnen i <!--**[!UICONTROL Quick action]**-->kan du öppna motsvarande [meddelande](create-message.md) och komma åt [Live-rapporten](reports/live-report.md) om du är i **[!UICONTROL Live view]** eller [Global Report](reports/global-report.md) om du är i **[!UICONTROL Global view]**.
+The <!--**[!UICONTROL Quick action]**-->den andra kolumnen öppnas [message](create-message.md) och få tillgång till [Live-rapport](reports/live-report.md) om du är i **[!UICONTROL Live view]** eller [Global rapport](reports/global-report.md) om du är i **[!UICONTROL Global view]**.
 
 ![](assets/message-execution-open-live-report.png)
 
 För varje meddelandekörning visas ett antal indikatorer:
 
-* **[!UICONTROL Message label]**: Meddelanderubrik som du definierade när du  [skapade meddelandet](create-message.md). Körnings-ID, som genereras automatiskt, visas inom parentes.
+* **[!UICONTROL Message label]**: Meddelanderubrik som du definierade på [skapar meddelandet](create-message.md). Körnings-ID, som genereras automatiskt, visas inom parentes.
 
    <!--**[!UICONTROL Execution ID]**: Automatically generated identifier.
   **[!UICONTROL Source]**: Name of the journey leveraging that message.-->
 
 * **[!UICONTROL Journey - Version - Action]**: Namn på den resa som utnyttjar meddelandet, version av resan och etikett på den åtgärd som drar nytta av meddelandet under resan.
 
-* **[!UICONTROL Status]**: Status för meddelandekörning.  <!--List all the possible statuses? For now only Live status? The user cannot stop or cancel the execution. TBC by Fred-->
+* **[!UICONTROL Status]**: Status för meddelandekörning. <!--List all the possible statuses? For now only Live status? The user cannot stop or cancel the execution. TBC by Fred-->
 
 * **[!UICONTROL Start date]**: Datum och tid när meddelandet har körts från resan.
 
@@ -88,6 +88,14 @@ För varje meddelandekörning visas ett antal indikatorer:
 
 * **[!UICONTROL Errors]**: Antal meddelanden som inte kan skickas på grund av ett tekniskt fel.
 
-* **[!UICONTROL Spam complaints]**: Antal meddelanden som har markerats som skräppost av mottagare. Läs mer om klagomål i [Handbok om bästa praxis för slutprodukter](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html#metrics-for-deliverability){target=&quot;_blank&quot;}.
+* **[!UICONTROL Spam complaints]**: Antal meddelanden som har markerats som skräppost av mottagare. Läs mer om klagomål i [Handbok om bästa praxis för leverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html#metrics-for-deliverability){target=&quot;_blank&quot;}.
+
+Du kan välja vilka kolumner som ska visas i tabellen. Om du vill göra det klickar du på **[!UICONTROL Customize table]** överst på skärmen och markera de kolumner som du vill visa.
+
+![](assets/message-execution-customize-table.png)
+
+I **Global vy** Du kan välja om du vill visa data som tal, procenttal eller både och. Klicka på **Dataformat** för att växla mellan de tre alternativen.
+
+![](assets/message-execution-data-format.png)
 
 Om du klickar på varje hyperlänk öppnas motsvarande meddelandesammanfattningsvy. [Läs mer om meddelanden](create-message.md).

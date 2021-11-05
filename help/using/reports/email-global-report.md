@@ -5,22 +5,23 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 9408a93deecfb12f28a0a87c19fa0074c66844a9
+exl-id: 2bead395-082a-4fea-ad10-b2b2c5f484e9
+source-git-commit: f0e34e040dd0e0ba2fa8293f4290ab55e1781426
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
 
 # Global e-postrapport {#email-global-report}
 
-E-postmeddelandet **[!UICONTROL Global report]** avser bara en viss e-postleverans.
+E-postmeddelandet **[!UICONTROL Global report]** avser endast en viss e-postleverans.
 
-Välj **[!UICONTROL Global view]** på fliken **[!UICONTROL Executions]** på menyn **[!UICONTROL Messages]** och välj sedan **[!UICONTROL Global report]** på den avancerade menyn för den valda leveransen.
+Från **[!UICONTROL Executions]** -fliken i **[!UICONTROL Messages]** meny, välja **[!UICONTROL Global view]** väljer du på den avancerade menyn för den valda leveransen **[!UICONTROL Global report]**.
 
 ![](../assets/global_report_3.png)
 
-E-postmeddelandet **[!UICONTROL Global report]** är uppdelat i olika widgetar som anger leveransens framgång och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [avsnittet](global-report.md#modify-dashboard).
+E-postmeddelandet **[!UICONTROL Global report]** är uppdelat i olika widgetar som detaljerat beskriver leveransens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](global-report.md#modify-dashboard).
 
 ![](../assets/global_report_4.png)
 
@@ -38,11 +39,11 @@ E-postmeddelandet **[!UICONTROL Global report]** är uppdelat i olika widgetar s
 
 * **[!UICONTROL Click Rate]**: Procentandel klick i en leverans.
 
-* **[!UICONTROL Spam Complaint Rate]**: Procentandel e-postmeddelanden som har markerats som skräppost av mottagare jämfört med levererade meddelanden. Mer information om klagomål finns i [Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html#metrics-for-deliverability){target=&quot;_blank&quot;}.
+* **[!UICONTROL Spam Complaint Rate]**: Procentandel e-postmeddelanden som har markerats som skräppost av mottagare jämfört med levererade meddelanden. Mer information om klagomål finns i [Handbok om bästa praxis för leverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html#metrics-for-deliverability){target=&quot;_blank&quot;}.
 
-* **[!UICONTROL Unsubscribe Rate]**: Procent av unika avbeställningar jämfört med antalet levererade meddelanden. Den här indikatorn är inte beroende av antalet klick på länken för att avbryta prenumerationen, utan baseras på antalet prenumerationer som initierats av mottagarna. Läs mer om att avbryta prenumerationer på den här [sidan](../consent.md).
+* **[!UICONTROL Unsubscribe Rate]**: Procent av unika avbeställningar jämfört med antalet levererade meddelanden. Den här indikatorn är inte beroende av antalet klick på länken för att avbryta prenumerationen, utan baseras på antalet prenumerationer som initierats av mottagarna. Läs mer om hur du säger upp prenumerationen i det här [page](../consent.md).
 
-**[!UICONTROL Email - Tracking statistics]** innehåller tillgängliga data för mottagaraktivitet för din leverans:
+The **[!UICONTROL Email - Tracking statistics]** innehåller tillgängliga data för mottagaraktivitet för leveransen:
 
 * **[!UICONTROL Opens]**: Antal gånger som leveransen öppnades i en leverans.
 
@@ -56,7 +57,7 @@ E-postmeddelandet **[!UICONTROL Global report]** är uppdelat i olika widgetar s
 
 * **[!UICONTROL Click through rate]**: Procentandel användare som interagerade med resan.
 
-I **[!UICONTROL Sending Statistics]**-diagrammet visas leveransframgången:
+The **[!UICONTROL Sending Statistics]** diagram visar hur framgångsrik leveransen är:
 
 * **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
 
@@ -66,7 +67,7 @@ I **[!UICONTROL Sending Statistics]**-diagrammet visas leveransframgången:
 
 ![](../assets/global_report_5.png)
 
-Widgetarna **[!UICONTROL Bounce Reasons]** och **[!UICONTROL Bounce categories]** innehåller tillgängliga data för studsade meddelanden, till exempel:
+The **[!UICONTROL Bounce Reasons]** och **[!UICONTROL Bounce categories]** widgetar innehåller tillgängliga data som är relaterade till studsade meddelanden, som:
 
 * **[!UICONTROL Hard bounce]**: Det totala antalet permanenta fel, t.ex. fel e-postadress. Detta inbegriper ett felmeddelande som uttryckligen anger att adressen är ogiltig, till exempel Okänd användare.
 
@@ -74,24 +75,50 @@ Widgetarna **[!UICONTROL Bounce Reasons]** och **[!UICONTROL Bounce categories]*
 
 * **[!UICONTROL Ignored]**: Det totala antalet tillfälliga, t.ex. frånvaro, eller ett tekniskt fel, t.ex. om avsändaren är postmaster.
 
-Mer information om studsar finns på sidan [Suppressionslista](../suppression-list.md).
+Mer information om studsar finns i [Undertryckningslista](../suppression-list.md) sida.
 
-Med diagrammet och tabellen **[!UICONTROL Error Reasons]** kan du se vilket fel som uppstod under leveransen.
+The **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilket fel som inträffade under leveransen.
 
 ![](../assets/global_report_6.png)
 
-Diagrammet och tabellen **[!UICONTROL Email - Top recipient domain]** visar vilka domäner som är de mest använda av mottagarna för att öppna e-postmeddelandet.
+The **[!UICONTROL Email - Top recipient domain]** diagram och tabeller visar vilka domäner som är de mest använda av mottagarna för att öppna e-postmeddelandet.
 
-Diagrammet och tabellen **[!UICONTROL Email - Top Url]** visar vilka URL:er från din leverans som är mest besökta.
+The **[!UICONTROL Email - Top Url]** diagram- och tabellinformation om vilka URL:er från leveransen som är mest besökta.
 
-**[!UICONTROL Open vs Click]** identifierar mottagarnas interaktion med leveransen:
+The **[!UICONTROL Open vs Click]** identifierar mottagarnas interaktion med leveransen:
 
 * **[!UICONTROL Unique Clicks]**:Antal mottagare som klickat på ett innehåll i ett e-postmeddelande.
 
 * **[!UICONTROL Unique Opens]**: Antal mottagare som öppnade leveransen.
 
+![](../assets/global_report_20.png)
+
 >[!NOTE]
 >
->Profilerna med **[!UICONTROL Suppressed]**- eller **[!UICONTROL Not allowed]**-status exkluderas när meddelandet skickas. Samtidigt som **reseservrapporterna** visar dessa profiler som om de har flyttats genom resan ([Läs segment](../building-journeys/read-segment.md) och [Meddelande](../building-journeys/journeys-message.md)-aktiviteter), kommer **e-postrapporterna** inte att inkludera dem i **[!UICONTROL Sent]**-måtten eftersom de filtreras ut innan e-postmeddelandet skickas.
+>Widgetarna och mätvärdena för erbjudanden är bara tillgängliga om ett beslut har infogats i ett e-postmeddelande. Mer information om beslutsförvaltning finns i denna [page](../offers/get-started/starting-offer-decisioning.md).
+
+The **[!UICONTROL Offers statistic]** och **[!UICONTROL Offers statistics]** med tidswidgetar mäter hur väl erbjudandet lyckats och påverkat er målgrupp. Den innehåller detaljerad huvudinformation om meddelandet med nyckeltal:
+
+* **[!UICONTROL Offer sent]**: Totalt antal utskick för erbjudandet.
+
+* **[!UICONTROL Offer impression]**: Antal gånger som erbjudandet öppnades i en leverans.
+
+* **[!UICONTROL Offer clicks]**: Antal gånger som man klickat på ett erbjudande i en leverans.
+
+The **[!UICONTROL Offers detailed statistic]** tabellen innehåller tillgängliga data för mottagaraktivitet med ditt erbjudande:
+
+* **[!UICONTROL Placement name]**: Namn på den placering som användes för att visa ditt erbjudande. Mer information om placering finns i [page](../offers/offer-library/creating-placements.md).
+
+* **[!UICONTROL Offer name]**: Namn på erbjudandet som lagts till i leveransen. Mer information om placering finns i [page](../offers/offer-library/creating-personalized-offers.md).
+
+* **[!UICONTROL Offer sent]**: Totalt antal utskick för erbjudandet.
+
+* **[!UICONTROL Offer impression rate]**: Procentandel öppnade erbjudanden jämfört med antalet skickade erbjudanden.
+
+* **[!UICONTROL Offer click rate]**: Procentandel användare som interagerade med erbjudandet.
+
+>[!NOTE]
 >
->Läs mer i [Suppressionslistan](../suppression-list.md) och [Tillåtelselista](../allow-list.md). Om du vill ta reda på orsaken till alla undantagsfall kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target=&quot;_blank&quot;}.
+>Profilerna med **[!UICONTROL Suppressed]** eller **[!UICONTROL Not allowed]** status utelämnas under meddelandesändningsprocessen. Därför är **Reserapporter** visar att dessa profiler har flyttats genom resan ([Läs segment](../building-journeys/read-segment.md) och [Meddelande](../building-journeys/journeys-message.md) verksamhet), **E-postrapporter** kommer inte att inkludera dem i **[!UICONTROL Sent]** mätvärden när de filtreras ut innan e-postmeddelanden skickas.
+>
+>Läs mer på [Undertryckningslista](../suppression-list.md) och [Tillåtelselista](../allow-list.md). Om du vill ta reda på orsaken till alla undantagsfall kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target=&quot;_blank&quot;}.

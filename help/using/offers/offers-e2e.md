@@ -1,13 +1,14 @@
 ---
 title: Använd personaliserade erbjudanden i ett e-postmeddelande
 description: Upptäck ett heltäckande exempel som visar alla steg som behövs för att konfigurera erbjudanden och använda dem i ett e-postmeddelande.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: User
 level: Intermediate
-source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
+exl-id: 851d988a-2582-4c30-80f3-b881d90771be
+source-git-commit: 8cb36038b2aeddd1662dcb7c84b36d9bc1265982
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1305'
 ht-degree: 3%
 
 ---
@@ -20,7 +21,7 @@ I det här avsnittet presenteras ett exempel från början till slut som visar h
 
 De viktigaste stegen för att konfigurera erbjudanden, inkludera dem i ett beslut och utnyttja detta beslut i ett e-postmeddelande är följande:
 
-1. [definiera dina komponenter](#define-components) innan du skapar erbjudanden
+1. Innan du skapar erbjudanden [definiera dina komponenter](#define-components)
 
    * Skapa placeringar
    * Skapa beslutsregler
@@ -38,7 +39,7 @@ De viktigaste stegen för att konfigurera erbjudanden, inkludera dem i ett beslu
 
 1. [Skapa ett reserverbjudande](#create-fallback)
 
-1. [Skapa en ](#create-collection) samling som innehåller de personaliserade erbjudanden du har skapat
+1. [Skapa en samling](#create-collection) för att inkludera de personaliserade erbjudanden du har skapat
 
 1. [Konfigurera beslutet](#configure-decision)
 
@@ -64,7 +65,7 @@ Innan du börjar skapa erbjudanden måste du definiera flera komponenter som du 
 
 Du hittar dem under **[!UICONTROL Decision Management]** > **[!UICONTROL Components menu]**.
 
-1. Börja med att skapa **placeringar** för dina erbjudanden.
+1. Börja med att skapa **placeringar** för era erbjudanden.
 
    Du använder dessa ersättningar för att definiera var erbjudandet ska visas när du definierar ditt beslut om erbjudande.
 
@@ -82,7 +83,7 @@ Du hittar dem under **[!UICONTROL Decision Management]** > **[!UICONTROL Compone
 
    Beslutsreglerna ger det bästa erbjudandet till en profil i Adobe Experience Platform.
 
-   Konfigurera två enkla regler med attributet **[!UICONTROL XDM Individual Profile > Person > Gender]**:
+   Konfigurera två enkla regler med **[!UICONTROL XDM Individual Profile > Person > Gender]** attribute:
 
    * *Kunder som är kvinnor*
    * *Manliga kunder*
@@ -91,11 +92,11 @@ Du hittar dem under **[!UICONTROL Decision Management]** > **[!UICONTROL Compone
 
    De detaljerade stegen för att skapa regler beskrivs i [det här avsnittet](../../using/offers/offer-library/creating-decision-rules.md).
 
-1. Du kan också skapa en **tagg**.
+1. Du kan också skapa en **tag**.
 
    Du kan sedan koppla erbjudandet till dina erbjudanden och använda den här taggen för att gruppera dina erbjudanden i en samling.
 
-   I det här exemplet skapar du taggen *Yoga*.
+   I det här exemplet skapar du *Yoga* -tagg.
 
    ![](../assets/offers-e2e-tag.png)
 
@@ -107,7 +108,7 @@ Du hittar dem under **[!UICONTROL Decision Management]** > **[!UICONTROL Compone
 
    >[!NOTE]
    >
-   >I det här exemplet använder vi bara prioritetspoängen. Läs mer om [regler och begränsningar för behörighet](../../using/offers/offer-library/creating-personalized-offers.md#eligibility).
+   >I det här exemplet använder vi bara prioritetspoängen. Läs mer på [regler och begränsningar för behörighet](../../using/offers/offer-library/creating-personalized-offers.md#eligibility).
 
 ## Konfigurera erbjudanden {#configure-offers}
 
@@ -117,9 +118,9 @@ Nu kan du skapa och konfigurera dina erbjudanden. I det här exemplet skapar du 
 
 1. Skapa tre representationer i det här erbjudandet. Varje representation måste vara en kombination av en placering som du skapade tidigare och en resurs:
 
-   * En som motsvarar placeringen *Webb - Bild*
-   * En som motsvarar placeringen *E-post - bild*
-   * En som motsvarar placeringen *Icke-digital - text*
+   * En som motsvarar *Webb - bild* placering
+   * En som motsvarar *E-post - bild* placering
+   * En som motsvarar *Icke-digital - text* placering
 
    >[!NOTE]
    >
@@ -127,11 +128,11 @@ Nu kan du skapa och konfigurera dina erbjudanden. I det här exemplet skapar du 
 
    Läs mer om representationer i [det här avsnittet](../../using/offers/offer-library/creating-personalized-offers.md#representations).
 
-1. Välj en lämplig bild för de två första placeringarna. Ange egen text för placeringen *Icke-digital - Text*.
+1. Välj en lämplig bild för de två första placeringarna. Ange egen text för *Icke-digital - text* placering.
 
    ![](../assets/offers-e2e-representations.png)
 
-1. I **[!UICONTROL Offer eligibility]**-avsnittet väljer du **[!UICONTROL By defined decision rule]** och drar och släpper önskad regel.
+1. I **[!UICONTROL Offer eligibility]** avsnitt, markera **[!UICONTROL By defined decision rule]** och dra och släpp valfri regel.
 
    ![](../assets/offers-e2e-eligibility.png)
 
@@ -143,8 +144,8 @@ Nu kan du skapa och konfigurera dina erbjudanden. I det här exemplet skapar du 
 
 1. I det här exemplet skapar du ytterligare tre erbjudanden med samma representationer, men med olika resurser. Tilldela dem olika regler och prioriteringar, till exempel:
 
-   * Första erbjudandet - Beslutsregel: *Kunder till kvinnor*, prioritet: *25*
-   * Andra erbjudandet - Beslutsregel: *Kunder till kvinnor*, prioritet: *15*
+   * Första erbjudandet - Beslutsregel: *Kunder som är kvinnor*, Prioritet: *25*
+   * Andra erbjudandet - Beslutsregel: *Kunder som är kvinnor*, Prioritet: *15*
    * Tredje erbjudandet - beslutsregel: *Manliga kunder*, Prioritet: *25*
    * Fjärde erbjudandet - beslutsregel: *Manliga kunder*, Prioritet: *15*
 
@@ -160,9 +161,9 @@ De detaljerade stegen för att skapa och konfigurera erbjudanden beskrivs i [det
 
    Varje representation måste vara en kombination av en placering som du skapade tidigare och en resurs:
 
-   * En som motsvarar placeringen *Webb - Bild*
-   * En som motsvarar placeringen *E-post - bild*
-   * En som motsvarar placeringen *Icke-digital - text*
+   * En som motsvarar *Webb - bild* placering
+   * En som motsvarar *E-post - bild* placering
+   * En som motsvarar *Icke-digital - text* placering
 
    ![](../assets/offers-e2e-fallback-representations.png)
 
@@ -180,7 +181,7 @@ När du konfigurerar beslutet måste du lägga till dina personliga erbjudanden 
 
 1. Om du vill snabba upp beslutsprocessen skapar du en dynamisk samling.
 
-1. Använd taggen *Yoga* för att välja de fyra personliga erbjudanden du skapade tidigare.
+1. Använd *Yoga* för att välja de fyra personliga erbjudanden du skapade tidigare.
 
    ![](../assets/offers-e2e-collection-using-tag.png)
 
@@ -196,7 +197,7 @@ Följ stegen nedan för att skapa och konfigurera ett erbjudande:
 
 1. Skapa ett beslut. Läs mer i [det här avsnittet](../../using/offers/offer-activities/create-offer-activities.md#create-activity).
 
-1. Välj *Webb - Bild*, *E-post - Bild* och *Icke-digital - Text*.
+1. Välj *Webb - bild*, *E-post - bild* och *Icke-digital - text* placeringar.
 
    ![](../assets/offers-e2e-decision-placements.png)
 
@@ -204,7 +205,7 @@ Följ stegen nedan för att skapa och konfigurera ett erbjudande:
 
    ![](../assets/offers-e2e-decision-collection.png)
 
-1. Om du definierade en rankning när [du skapade dina komponenter](#define-components) kan du tilldela den till en placering i beslutet. Om flera erbjudanden kan presenteras på den här platsen, kommer beslutet att använda den här formeln för att beräkna vilket erbjudande som ska levereras först.
+1. Om du definierade en rankning när [bygga komponenter](#define-components)kan du tilldela den till en placering i beslutet. Om flera erbjudanden kan presenteras på den här platsen, kommer beslutet att använda den här formeln för att beräkna vilket erbjudande som ska levereras först.
 
    De detaljerade stegen för att tilldela en rankningsformel till en placering beskrivs i [det här avsnittet](../../using/offers/offer-activities/configure-offer-selection.md#assign-ranking-formula).
 
@@ -224,25 +225,25 @@ De detaljerade stegen för att skapa och konfigurera ett beslut beskrivs i [det 
 
 Nu när ditt beslut är klart kan du infoga det i ett e-postmeddelande. För att göra detta, följ nedanstående steg:
 
-1. Skapa e-postmeddelandet och öppna sedan [e-postdesignern](../../using/design-emails.md) för att konfigurera innehållet.
+1. Skapa din e-post och öppna sedan [E-postdesigner](../../using/design-emails.md) för att konfigurera innehållet.
 
 1. Lägg till en strukturkomponent från den vänstra paletten.
 
-1. Lägg till en **[!UICONTROL Offer decision]**-innehållskomponent. Lär dig hur du använder innehållskomponenter i [det här avsnittet](../../using/content-components.md).
+1. Lägg till en **[!UICONTROL Offer decision]** innehållskomponent. Lär dig hur du använder innehållskomponenter i [det här avsnittet](../../using/content-components.md).
 
    ![](../assets/offers-e2e-decision-component.png)
 
-1. Markera den. Klicka på **[!UICONTROL Select offer decision]** på den högra paletten för att lägga till ett beslut.
+1. Markera den. Klicka på **[!UICONTROL Select offer decision]** för att lägga till ett beslut.
 
    ![](../assets/offers-e2e-select-offer-decision.png)
 
-1. Välj den placering som motsvarar de erbjudanden du vill visa i listrutan **[!UICONTROL Placements]**.
+1. Välj den placering som motsvarar de erbjudanden som du vill visa på panelen **[!UICONTROL Placements]** listruta.
 
-   I det här fallet är det bara placeringen **E-post - bild** som du vill använda beslutet i ett e-postmeddelande som är tillgänglig från de placeringar du skapade tidigare i det här exemplet. Läs mer om att [skapa placeringar](../../using/offers/offer-library/creating-placements.md).
+   I det här fallet är det bara den **E-post - bild** är tillgängligt så som du vill använda beslutet i ett e-postmeddelande. Läs mer på [skapa placeringar](../../using/offers/offer-library/creating-placements.md).
 
    ![](../assets/offers-e2e-select-placement-in-decision.png)
 
-1. Beslut som matchar placeringen **Email - Image** visas. Välj det beslut som ska användas i innehållskomponenten och klicka sedan på **[!UICONTROL Add]**.
+1. Beslut som matchar **E-post - bild** placeringen visas. Välj vilket beslut som ska användas i innehållskomponenten och klicka sedan på **[!UICONTROL Add]**.
 
    ![](../assets/offers-e2e-matching-placement-in-decision.png)
 
@@ -254,15 +255,20 @@ Nu kan du se alla personaliserade erbjudanden och reserverbjudandet visualiseras
 
 ![](../assets/offers-e2e-offers-displayed.png)
 
-Använd **[!UICONTROL Offers]**-avsnittet eller innehållskomponentpilarna (höger- och vänsterpilarna) för att bläddra bland data. Du kan även visa olika erbjudanden som ingår i beslutet med en kundprofil. Läs mer i [det här avsnittet](../../using/deliver-personalized-offers.md#preview-offers-in-email).
+Använd **[!UICONTROL Offers]** -avsnittet eller innehållskomponentpilarna (höger- och vänsterpilar) för att bläddra bland data. Du kan även visa olika erbjudanden som ingår i beslutet med en kundprofil. Läs mer i [det här avsnittet](../../using/deliver-personalized-offers.md#preview-offers-in-email).
 
 När du har sparat dina ändringar och när meddelandet har publicerats är dina erbjudanden klara att visas för de relevanta profilerna när du skickar meddelandet som en del av en resa.
 
 **Relaterade ämnen:**
 
-* Lär dig hur du kontrollerar förhandsvisningen av meddelanden i [det här avsnittet](../../using/preview.md#preview-your-messages).
+* Lär dig hur du kontrollerar förhandsgranskningen av meddelandet i [det här avsnittet](../../using/preview.md#preview-your-messages).
 
 * Lär dig hur du publicerar meddelanden i [det här avsnittet](../../using/publish-manage-message.md).
 
 * Lär dig hur meddelanden utlöses av en eller flera resor i [det här avsnittet](../building-journeys/journey.md).
+
+<!--
+* Learn how to measure your offer's success and impact on your targeted audience with reports in [this section](../reports/journey-global-report.md).
+-->
+
 

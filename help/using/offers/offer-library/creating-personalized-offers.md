@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4a53ea96-632a-41c7-ab15-b85b99db4f3e
-source-git-commit: 86fc6d9df06b975539652cc44ec41fd8c8318404
+source-git-commit: b08eb138bbdf9c8a594735824eeac3496a58daba
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1348'
 ht-degree: 1%
 
 ---
@@ -17,21 +17,21 @@ ht-degree: 1%
 
 Innan du skapar ett erbjudande måste du kontrollera att du har skapat:
 
-* En **placering** där erbjudandet ska visas. Se [Skapa placeringar](../offer-library/creating-placements.md)
-* Om du vill lägga till ett villkor för behörighet: en **beslutsregel** som definierar villkoren för erbjudandet. Se [Skapa beslutsregler](../offer-library/creating-decision-rules.md).
-* En eller flera **taggar** som du kanske vill associera med erbjudandet. Se [Skapa taggar](../offer-library/creating-tags.md).
+* A **placering** i vilket erbjudandet kommer att visas. Se [Skapa placeringar](../offer-library/creating-placements.md)
+* Om du vill lägga till ett villkor för behörighet: a **beslutsregel** som kommer att definiera villkoren för hur erbjudandet ska presenteras. Se [Skapa beslutsregler](../offer-library/creating-decision-rules.md).
+* En eller flera **taggar** som du kanske vill koppla till erbjudandet. Se [Skapa taggar](../offer-library/creating-tags.md).
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
-Listan med personaliserade erbjudanden finns på **[!UICONTROL Offers]**-menyn.
+Listan över personaliserade erbjudanden finns på **[!UICONTROL Offers]** -menyn.
 
 ![](../../assets/offers_list.png)
 
 ## Skapa erbjudandet {#create-offer}
 
-Så här skapar du ett **erbjudande**:
+Skapa en **erbjudande** gör du så här:
 
-1. Klicka på **[!UICONTROL Create offer]** och välj sedan **[!UICONTROL Personalized offer]**.
+1. Klicka **[!UICONTROL Create offer]** väljer **[!UICONTROL Personalized offer]**.
 
    ![](../../assets/create_offer.png)
 
@@ -41,7 +41,7 @@ Så här skapar du ett **erbjudande**:
 
    >[!NOTE]
    >
-   >I **[!UICONTROL Offer attributes]**-avsnittet kan du koppla nyckelvärdepar till erbjudandet för rapportering och analys.
+   >The **[!UICONTROL Offer attributes]** kan du koppla nyckelvärdepar till erbjudandet för rapportering och analys.
 
 ## Konfigurera offertens representationer {#representations}
 
@@ -49,18 +49,18 @@ Ett erbjudande kan visas på olika platser i ett meddelande: i en övre banderol
 
 Följ stegen nedan om du vill lägga till en eller flera representationer i ditt erbjudande och konfigurera dem.
 
-1. För den första representationen börjar du med att välja **[!UICONTROL Channel]** som ska användas.
+1. För den första representationen börjar du med att välja **[!UICONTROL Channel]** som kommer att användas.
 
    ![](../../assets/channel-placement.png)
 
    >[!NOTE]
    >
-   >Endast de tillgängliga placeringarna för den valda kanalen visas i listrutan **[!UICONTROL Placement]**.
+   >Endast de tillgängliga placeringarna för den valda kanalen visas i **[!UICONTROL Placement]** nedrullningsbar lista.
 
 
 1. Välj en placering i listan.
 
-   Du kan också använda knappen bredvid listrutan **[!UICONTROL Placement]** för att bläddra bland alla placeringar.
+   Du kan också använda knappen bredvid knappen **[!UICONTROL Placement]** om du vill bläddra bland alla placeringar.
 
    ![](../../assets/browse-button-placements.png)
 
@@ -76,7 +76,7 @@ Följ stegen nedan om du vill lägga till en eller flera representationer i ditt
 
 1. Välj slutligen det språk du vill använda för att identifiera och hantera vad som ska visas för användarna.
 
-1. Om du vill lägga till ytterligare en representation använder du knappen **[!UICONTROL Add representation]** och lägger till så många representationer som behövs.
+1. Om du vill lägga till en annan representation använder du **[!UICONTROL Add representation]** och lägg till så många representationer som behövs.
 
    ![](../../assets/offer-add-representation.png)
 
@@ -92,11 +92,11 @@ Du kan lägga till olika typer av innehåll i en representation.
 
 ### Lägg till bilder
 
-Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Adobe Experience Cloud Asset**-biblioteket, en centraliserad databas med resurser från [!DNL Adobe Experience Manager Assets Essentials].
+Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Adobe Experience Cloud Asset** bibliotek, ett centraliserat arkiv med resurser från [!DNL Adobe Experience Manager Assets Essentials].
 
 >[!NOTE]
 >
-> Om du vill arbeta med [Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=en){target=&quot;_blank&quot;} måste du distribuera [!DNL Assets Essentials] för din organisation och se till att användare är en del av **Assets Essentials konsumentanvändare** eller/och **Assets Essentials-användare** produktprofiler. Läs mer på [den här sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}.
+> Arbeta med [Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=en){target=&quot;_blank&quot;}, du måste distribuera [!DNL Assets Essentials] för din organisation och se till att användarna är en del av **Assets Essentials hemanvändare** eller/och **Assets Essentials-användare** Produktprofiler. Läs mer på [den här sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}.
 
 1. Välj alternativet **[!UICONTROL Asset library]**.
 
@@ -112,7 +112,7 @@ Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Ado
 
 ### Lägg till URL:er
 
-Om du vill lägga till innehåll från en extern offentlig plats väljer du **[!UICONTROL URL]** och anger sedan URL-adressen för innehållet som ska läggas till.
+Om du vill lägga till innehåll från en extern offentlig plats väljer du **[!UICONTROL URL]** anger du sedan URL-adressen till det innehåll som ska läggas till.
 
 ![](../../assets/offer-content-url.png)
 
@@ -120,15 +120,25 @@ Om du vill lägga till innehåll från en extern offentlig plats väljer du **[!
 
 Du kan också infoga text när du väljer en kompatibel placering.
 
-1. Välj alternativet **[!UICONTROL Custom]**.
+1. Välj **[!UICONTROL Custom]** och klicka **[!UICONTROL Add content]**.
+
+   ![](../../assets/offer-add-content.png)
 
    >[!NOTE]
    >
    >Det här alternativet är inte tillgängligt för bildtypsplaceringar.
 
-1. Skriv den text som ska visas i erbjudandet i det dedikerade området.
+1. Skriv den text som ska visas i erbjudandet.
 
-   ![](../../assets/offer-text-content2.png)
+   ![](../../assets/offer-text-content.png)
+
+   Du kan anpassa ditt innehåll med uttrycksredigeraren. Läs mer på [personalisering](../../personalization/personalize.md#use-expression-editor).
+
+   ![](../../assets/offer-personalization.png)
+
+   >[!NOTE]
+   >
+   >Endast **[!UICONTROL Profile attributes]**, **[!UICONTROL Segment memberships]** och **[!UICONTROL Helper functions]** Det finns källor för beslutsförvaltning.
 
 ## Lägg till regler och begränsningar för berättigande {#eligibility}
 
@@ -136,26 +146,26 @@ Behörighetsregler och -begränsningar gör att du kan definiera villkoren för 
 
 1. Konfigurera **[!UICONTROL Offer eligibility]**.
 
-   * Som standard är alternativet **[!UICONTROL All visitors]** för beslutsregel valt, vilket innebär att alla profiler kan presenteras erbjudandet.
+   * Som standard är **[!UICONTROL All visitors]** beslutsregelalternativet har valts, vilket innebär att alla profiler är berättigade att presenteras erbjudandet.
 
-   * Du kan begränsa erbjudandets presentation till medlemmarna i ett eller flera Adobe Experience Platform-segment. Aktivera alternativet **[!UICONTROL Visitors who fall into one or multiple segments]** och lägg sedan till ett eller flera segment från den vänstra rutan och kombinera dem med de logiska operatorerna **[!UICONTROL And]** / **[!UICONTROL Or]**.
+   * Du kan begränsa erbjudandets presentation till medlemmarna i ett eller flera Adobe Experience Platform-segment. Aktivera **[!UICONTROL Visitors who fall into one or multiple segments]** lägg sedan till ett eller flera segment från den vänstra rutan och kombinera dem med **[!UICONTROL And]** / **[!UICONTROL Or]** logiska operatorer.
 
-      Mer information om hur du arbetar med segment finns på [den här sidan](../../segment/about-segments.md).
+      Mer information om hur du arbetar med segment finns i [den här sidan](../../segment/about-segments.md).
 
       ![](../../assets/offer-eligibility-segment.png)
 
-   * Om du vill koppla en viss beslutsregel till erbjudandet väljer du **[!UICONTROL By defined decision rule]** och drar sedan den önskade regeln från den vänstra rutan till **[!UICONTROL Decision rule]**-området. Mer information om hur du skapar en beslutsregel finns i [det här avsnittet](../offer-library/creating-decision-rules.md).
+   * Om du vill koppla en viss beslutsregel till erbjudandet väljer du **[!UICONTROL By defined decision rule]** och sedan dra den önskade regeln från den vänstra rutan till **[!UICONTROL Decision rule]** område. Mer information om hur du skapar en beslutsregel finns i [det här avsnittet](../offer-library/creating-decision-rules.md).
 
       ![](../../assets/offer_rule.png)
 
       >[!CAUTION]
       >
-      >Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [händelse](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#events){target=&quot;_blank&quot;} kan du inte utnyttja den i ett erbjudande.
+      >Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [event](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#events){target=&quot;_blank&quot;} kan du inte utnyttja erbjudandet.
    Läs mer om hur du använder segment kontra beslutsregler i [det här avsnittet](../offer-activities/create-offer-activities.md#segments-vs-decision-rules).
 
-1. Definiera **[!UICONTROL Priority]** för erbjudandet jämfört med andra om användaren kvalificerar för mer än ett erbjudande. Ju högre prioritet ett erbjudande har, desto högre blir prioriteringen jämfört med andra erbjudanden.
+1. Definiera **[!UICONTROL Priority]** av erbjudandet jämfört med andra, om användaren kvalificerar sig för mer än ett erbjudande. Ju högre prioritet ett erbjudande har, desto högre blir prioriteringen jämfört med andra erbjudanden.
 
-1. Ange erbjudandets **[!UICONTROL Capping]**, vilket innebär hur många gånger erbjudandet kommer att visas totalt för alla användare. Om erbjudandet har levererats till alla användare det antal gånger som du har angett i det här fältet, upphör leveransen.
+1. Ange erbjudandets **[!UICONTROL Capping]**, vilket innebär det antal gånger som erbjudandet kommer att presenteras totalt för alla användare. Om erbjudandet har levererats till alla användare det antal gånger som du har angett i det här fältet, upphör leveransen.
 
    >[!NOTE]
    >
@@ -185,7 +195,7 @@ När regler och begränsningar för behörighet har definierats visas en sammanf
 
    Du kan också spara erbjudandet som ett utkast för att redigera det och godkänna det senare.
 
-Erbjudandet visas i listan med statusen **[!UICONTROL Approved]** eller **[!UICONTROL Draft]**, beroende på om du godkände det eller inte i det föregående steget.
+Erbjudandet visas i listan med **[!UICONTROL Approved]** eller **[!UICONTROL Draft]** status, beroende på om du har godkänt den eller inte i föregående steg.
 
 Den är nu klar att levereras till användarna.
 
@@ -193,23 +203,23 @@ Den är nu klar att levereras till användarna.
 
 ## Erbjudandelista {#offer-list}
 
-I erbjudandelistan kan du välja erbjudandet för att visa dess egenskaper. Du kan också redigera det, ändra dess status (**Utkast**, **Godkänd**, **Arkiverat**), duplicera erbjudandet eller ta bort det.
+I erbjudandelistan kan du välja erbjudandet för att visa dess egenskaper. Du kan också redigera det och ändra dess status (**Utkast**, **Godkänd**, **Arkiverad**), duplicera erbjudandet eller ta bort det.
 
 ![](../../assets/offer_created.png)
 
-Välj knappen **[!UICONTROL Edit]** om du vill gå tillbaka till erbjudandeversionsläget, där du kan ändra erbjudandets [information](#create-offer), [representationer](#representations), samt redigera [berättiganderegler och begränsningar](#eligibility).
+Välj **[!UICONTROL Edit]** för att gå tillbaka till erbjudandeversionen där du kan ändra erbjudandets [information](#create-offer), [representationer](#representations)och redigera [regler och begränsningar för behörighet](#eligibility).
 
-Välj ett godkänt erbjudande och klicka på **[!UICONTROL Undo approve]** för att ange erbjudandestatusen till **[!UICONTROL Draft]**.
+Välj ett godkänt erbjudande och klicka på **[!UICONTROL Undo approve]** för att återställa erbjudandestatusen till **[!UICONTROL Draft]**.
 
-Om du vill ange status till **[!UICONTROL Approved]** igen väljer du motsvarande knapp som nu visas.
+Om du vill ange status igen till **[!UICONTROL Approved]** markerar du motsvarande knapp som nu visas.
 
 ![](../../assets/offer_approve.png)
 
-Knappen **[!UICONTROL More actions]** aktiverar de åtgärder som beskrivs nedan.
+The **[!UICONTROL More actions]** aktiverar de åtgärder som beskrivs nedan.
 
 ![](../../assets/offer_more-actions.png)
 
-* **[!UICONTROL Duplicate]**: skapar ett erbjudande med samma egenskaper, representationer, regler och begränsningar för behörighet. Som standard har det nya erbjudandet statusen **[!UICONTROL Draft]**.
+* **[!UICONTROL Duplicate]**: skapar ett erbjudande med samma egenskaper, representationer, regler och begränsningar för behörighet. Som standard har det nya erbjudandet **[!UICONTROL Draft]** status.
 * **[!UICONTROL Delete]**: tar bort erbjudandet från listan.
 
    >[!CAUTION]
@@ -218,7 +228,7 @@ Knappen **[!UICONTROL More actions]** aktiverar de åtgärder som beskrivs nedan
    >
    >Om erbjudandet används i en samling eller ett beslut kan det inte tas bort. Du måste ta bort erbjudandet från alla objekt först.
 
-* **[!UICONTROL Archive]**: anger erbjudandestatusen till  **[!UICONTROL Archived]**. Erbjudandet är fortfarande tillgängligt från listan, men du kan inte ange tillbaka status till **[!UICONTROL Draft]** eller **[!UICONTROL Approved]**. Du kan bara duplicera eller ta bort den.
+* **[!UICONTROL Archive]**: anger erbjudandestatusen till **[!UICONTROL Archived]**. Erbjudandet är fortfarande tillgängligt från listan, men du kan inte återställa dess status till **[!UICONTROL Draft]** eller **[!UICONTROL Approved]**. Du kan bara duplicera eller ta bort den.
 
 Du kan också ta bort eller ändra status för flera erbjudanden samtidigt genom att markera motsvarande kryssrutor.
 
@@ -232,7 +242,7 @@ När ett erbjudande har skapats kan du klicka på dess namn i listan.
 
 ![](../../assets/offer_click-name.png)
 
-På så sätt kan du få tillgång till detaljerad information om erbjudandet. Välj fliken **[!UICONTROL Change log]** för att [övervaka alla ändringar](../get-started/user-interface.md#monitoring-changes) som har gjorts i erbjudandet.
+På så sätt kan du få tillgång till detaljerad information om erbjudandet. Välj **[!UICONTROL Change log]** tabba till [övervaka alla ändringar](../get-started/user-interface.md#monitoring-changes) som har gjorts i erbjudandet.
 
 ![](../../assets/offer_information.png)
 

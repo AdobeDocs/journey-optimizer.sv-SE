@@ -5,7 +5,8 @@ feature: Deliverability
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 9408a93deecfb12f28a0a87c19fa0074c66844a9
+exl-id: 70ab8f57-c132-4de1-847b-11f0ab14f422
+source-git-commit: e1d0afb70af4ab31db56f90c189c085ba8d1eb7c
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 0%
@@ -14,13 +15,13 @@ ht-degree: 0%
 
 # Tillåtelselista {#allow-list}
 
-Det är nu möjligt att definiera en specifik sändningssäker lista på [sandbox](administration/sandboxes.md)-nivå för att ha en säker miljö för testningsändamål. I icke-produktionssituationer, där misstag kan inträffa, ser tillåtelselista till att du inte löper någon risk att skicka ut oönskade meddelanden till dina kunder.
+Nu går det att definiera en specifik sändningssäker lista på [sandlåda](administration/sandboxes.md) för att ha en säker miljö för testningsändamål. I icke-produktionssituationer, där misstag kan inträffa, ser tillåtelselista till att du inte löper någon risk att skicka ut oönskade meddelanden till dina kunder.
 
 Med tillåtelselista kan du ange enskilda e-postadresser eller domäner som ska vara de enda mottagarna eller domänerna som ska ha behörighet att ta emot e-postmeddelanden som du skickar från en viss sandlåda. Detta kan förhindra att du av misstag skickar e-post till verkliga kundadresser när du befinner dig i en testmiljö.
 
 >[!CAUTION]
 >
->Den här funktionen är **inte** tillgänglig i produktionssandlådor. Det gäller bara för e-postkanalen.
+>Den här funktionen är **not** finns i produktionssandlådor. Det gäller bara för e-postkanalen.
 
 ## Aktivera tillåtelselista {#enable-allow-list}
 
@@ -30,7 +31,7 @@ Om du vill aktivera tillåtelselista i en icke-produktionssandlåda måste du up
 
 * Du kan uppdatera tillåtelselista innan eller efter att du har aktiverat funktionen.
 
-* Logiken i tillåtelselista gäller när funktionen är aktiverad **och** om tillåtelselista är **inte** tom. Läs mer i [det här avsnittet](#logic).
+* Logiken i tillåtelselista gäller när funktionen är aktiverad **och** om tillåtelselista är **not** tom. Läs mer i [det här avsnittet](#logic).
 
 <!--To enable this feature on a non-production sandbox, update the allowed list so that it is no longer empty. To disable it, clear up the allowed list so that it is again empty.
 
@@ -39,15 +40,15 @@ Learn more on the allowed list logic in this section.
 
 >[!NOTE]
 >
->När det här alternativet är aktiverat respekteras funktionen tillåtelselista vid körning av resor, men också när du testar meddelanden med [korrektur](preview.md#send-proofs) och testar resor med [testläge](building-journeys/testing-the-journey.md).
+>När det här alternativet är aktiverat respekteras funktionen tillåtelselista vid körning av resor, men också vid testning av meddelanden med [korrektur](preview.md#send-proofs) och testa resor med [testläge](building-journeys/testing-the-journey.md).
 
 ## Lägg till enheter i tillåtelselista {#add-entities}
 
-Om du vill lägga till nya e-postadresser eller domäner i tillåtelselista för en viss sandlåda måste du anropa API:t för inaktivering med `ALLOWED`-värdet för attributet `listType`. Exempel:
+Om du vill lägga till nya e-postadresser eller domäner i tillåtelselista för en viss sandlåda måste du anropa API:t för inaktivering med `ALLOWED` värdet för `listType` -attribut. Exempel:
 
 ![](assets/allow-list-api.png)
 
-Du kan utföra åtgärderna **Lägg till**, **Ta bort** och **Hämta**.
+Du kan utföra **Lägg till**, **Ta bort** och **Hämta** åtgärder.
 
 >[!NOTE]
 >
@@ -61,39 +62,38 @@ Found this link in Experience Platform documentation, but may not be the final o
 
 <!-- When the allowed list is enabled (enable-allow-list) at the sandbox level using the API call above, the following applies.-->
 
-När tillåtelselista är **tom** används inte logiken för tillåtelselista. Det innebär att du kan skicka e-postmeddelanden till alla profiler, förutsatt att de inte finns med i [listan](suppression-list.md).
+När tillåtelselista är **tom**, används inte logiken i tillåtelselista. Det innebär att du kan skicka e-postmeddelanden till alla profiler, förutsatt att de inte finns på [utelämningslista](suppression-list.md).
 
 När tillåtelselista är **inte tom** används tillåtelselista-logiken:
 
-* Om en entitet är **inte på tillåtelselista**, och inte på listan över inaktiveringar, kommer motsvarande mottagare inte att få e-postmeddelandet. Orsaken är **[!UICONTROL Not allowed]**.
+* Om en enhet **inte på tillåtelselista**, och inte i listan över inaktiveringar, kommer motsvarande mottagare inte att få e-postmeddelandet. Orsaken är **[!UICONTROL Not allowed]**.
 
-* Om en entitet är **på tillåtelselista**, och inte på listan över inaktiveringar, kan e-postmeddelandet skickas till motsvarande mottagare. Om entiteten också finns med i [listan](suppression-list.md) kommer den motsvarande mottagaren inte att få e-postmeddelandet. Orsaken är **[!UICONTROL Suppressed]**.
+* Om en enhet **på tillåtelselista**, och inte i listan över inaktiveringar, kan e-postmeddelandet skickas till motsvarande mottagare. Om företaget också finns på [utelämningslista](suppression-list.md), kommer motsvarande mottagare inte att få e-postmeddelandet, eftersom orsaken är **[!UICONTROL Suppressed]**.
 
 >[!NOTE]
 >
->Profilerna med **[!UICONTROL Not allowed]**-status exkluderas under meddelandesändningsprocessen. Samtidigt som **reseservrapporterna** visar dessa profiler som om de har flyttats genom resan ([Läs segment](building-journeys/read-segment.md) och [Meddelande](building-journeys/journeys-message.md)-aktiviteter), kommer **e-postrapporterna** inte att inkludera dem i **[!UICONTROL Sent]**-måtten eftersom de filtreras ut innan e-postmeddelandet skickas.
+>Profilerna med **[!UICONTROL Not allowed]** status utelämnas under meddelandesändningsprocessen. Därför är **Reserapporter** visar att dessa profiler har flyttats genom resan ([Läs segment](building-journeys/read-segment.md) och [Meddelande](building-journeys/journeys-message.md) verksamhet), **E-postrapporter** kommer inte att inkludera dem i **[!UICONTROL Sent]** mätvärden när de filtreras ut innan e-postmeddelanden skickas.
 >
->Läs mer i [Live-rapporten](reports/live-report.md) och [Global Report](reports/global-report.md).
+>Läs mer på [Live-rapport](reports/live-report.md) och [Global rapport](reports/global-report.md).
 
 ## Uteslutningsrapportering {#reporting}
 
-När den här funktionen är aktiverad i en icke-produktionssandlåda kan du hämta e-postadresser eller domäner som har uteslutits från en sändning eftersom de inte fanns på tillåtelselista. För att göra detta kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target=&quot;_blank&quot;} för att göra API-anropen nedan.
+När den här funktionen är aktiverad i en icke-produktionssandlåda kan du hämta e-postadresser eller domäner som har uteslutits från en sändning eftersom de inte fanns på tillåtelselista. Om du vill göra det kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target=&quot;_blank&quot;} för att göra API-anrop nedan.
 
-Använd följande fråga om du vill hämta **antalet e-postmeddelanden** som inte skickades eftersom mottagarna inte var i tillåtelselista:
+För att få **antal e-postmeddelanden** som inte skickades eftersom mottagarna inte var i tillåtelselista använder du följande fråga:
 
-```
+```sql
 SELECT count(distinct _id) from cjm_message_feedback_event_dataset WHERE
 _experience.customerJourneyManagement.messageExecution.messageExecutionID = '<MESSAGE_EXECUTION_ID>' AND
 _experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus = 'exclude' AND
 _experience.customerJourneyManagement.messageDeliveryfeedback.messageExclusion.reason = 'EmailNotAllowed'
 ```
 
-Använd följande fråga om du vill hämta **listan över e-postadresser** som inte skickades eftersom mottagarna inte var i tillåtelselista:
+För att få **lista med e-postadresser** som inte skickades eftersom mottagarna inte var i tillåtelselista använder du följande fråga:
 
-```
+```sql
 SELECT distinct(_experience.customerJourneyManagement.emailChannelContext.address) from cjm_message_feedback_event_dataset WHERE
 _experience.customerJourneyManagement.messageExecution.messageExecutionID IS NOT NULL AND
 _experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus = 'exclude' AND
 _experience.customerJourneyManagement.messageDeliveryfeedback.messageExclusion.reason = 'EmailNotAllowed'
 ```
-

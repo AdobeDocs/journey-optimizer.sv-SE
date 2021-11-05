@@ -1,14 +1,15 @@
 ---
 title: Skapa personaliserade erbjudanden
 description: Ett personaliserat erbjudande är ett anpassningsbart marknadsföringsmeddelande som baseras på regler och begränsningar för behörighet.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+exl-id: 97dc9af3-ca31-4512-aad2-f959dfc9ad0b
+source-git-commit: 701b8a46b5f22c31bee479ddfb63f8e399cee4a1
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 7%
+source-wordcount: '176'
+ht-degree: 6%
 
 ---
 
@@ -16,11 +17,11 @@ ht-degree: 7%
 
 Ett personaliserat erbjudande är ett anpassningsbart marknadsföringsmeddelande som baseras på regler och begränsningar för behörighet.
 
-Du kan skapa ett anpassat erbjudande genom att göra en POST-förfrågan till API:t [!DNL Offer Library] och samtidigt ange ditt behållar-ID.
+Du kan skapa ett personaliserat erbjudande genom att göra en POST till [!DNL Offer Library] API, samtidigt som du anger ditt behållar-ID.
 
 ## Sidhuvuden för acceptera och innehållstyp
 
-I följande tabell visas giltiga värden som består av fälten *Content-Type* och *Accept* i begärandehuvudet:
+I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
@@ -85,7 +86,7 @@ curl -X POST \
 
 **Svar**
 
-Ett svar returnerar information om det nya anpassade erbjudandet, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort ditt anpassade erbjudande.
+Ett lyckat svar returnerar information om det nya personaliserade erbjudandet, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort ditt anpassade erbjudande.
 
 ```json
 {
@@ -100,3 +101,7 @@ Ett svar returnerar information om det nya anpassade erbjudandet, inklusive dess
     "repo:lastModifiedByClientId": "{MODIFIED_CLIENT_ID}"
 }
 ```
+
+## Begränsningar {#limitations}
+
+Vissa begränsningar stöds för närvarande inte i mobilen [!DNL Experience Edge] arbetsflöden, till exempel `Capping`. The `Capping` fältvärdet anger hur många gånger ett erbjudande kan presenteras för alla användare. Mer information finns i [Dokumentation om regler och begränsningar för erbjudanden](../../../offer-library/creating-personalized-offers.md).

@@ -1,0 +1,46 @@
+---
+title: Journey Optimizer Get Started for Data Engineer
+description: Som datatekniker får du lära dig mer om hur du arbetar med Journey Optimizer
+level: Intermediate
+source-git-commit: a27a6d7ab96bd08e7a2601c2e86d1d9f0fc4be0a
+workflow-type: tm+mt
+source-wordcount: '574'
+ht-degree: 2%
+
+---
+
+# Kom igång med datatekniker {#data-engineer}
+
+![datatekniker](assets/do-not-localize/user-1.png)
+
+Som en **Adobe Journey Optimizer datatekniker**, förbereda och underhålla kundprofildata för att driva upplevelser som orkestreras av [!DNL Journey Optimizer], modellera kund- och affärsdata i scheman och konfigurera källkopplingar för datainhämtning. Du kan börja arbeta med [!DNL Adobe Journey Optimizer] en gång [Systemadministratör](administrator.md) har gett dig åtkomst och förberett din miljö.
+
+
+Lär dig hur **identifiera data och skapa schema och datauppsättning** för att få in data i Adobe Experience Platform på den här sidan.
+
+>[!NOTE]
+>
+>Läs mer om **dataintag** in [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target=&quot;_blank&quot;}.
+
+Steg för att skapa ett identitetsnamnutrymme och en datauppsättning som är aktiverad för profiler samt testprofiler beskrivs i avsnitten nedan:
+
+1. **Skapa ett identitetsnamnutrymme**. I Adobe [!DNL Journey Optimizer], **Identiteter** länka konsumenter mellan olika enheter och kanaler. Resultatet blir ett identitetsdiagram. Det länkade identitetsdiagrammet används för att personalisera upplevelser baserat på interaktioner över alla era affärskontaktytor.  Läs mer om identiteter och identitetsnamnutrymmen [på den här sidan](../get-started-identity.md).
+
+1. **Skapa ett schema** och aktivera det för profiler. Ett schema är en uppsättning regler som representerar och validerar datastrukturen och dataformatet. På en hög nivå ger scheman en abstrakt definition av ett objekt i verkligheten (till exempel en person) och ger en översikt över vilka data som ska inkluderas i varje instans av objektet (till exempel förnamn, efternamn, födelsedag o.s.v.).  Läs mer om scheman [på den här sidan](../get-started-schemas.md).
+
+1. **Skapa datauppsättningar** och aktivera det för profiler. En datauppsättning är en lagrings- och hanteringskonstruktion för en datamängd, vanligtvis en tabell, som innehåller ett schema (kolumner) och fält (rader). Datauppsättningar innehåller också metadata som beskriver olika aspekter av de data som lagras. När en datauppsättning har skapats kan du mappa den till ett befintligt schema och lägga till data i det. Läs mer om datauppsättningar [på den här sidan](../get-started-datasets.md).
+
+1. **Konfigurera källkopplingar**. Med Adobe Journey Optimzer kan data hämtas från externa källor samtidigt som du kan strukturera, märka och förbättra inkommande data med hjälp av plattformstjänster. Du kan importera data från en mängd olika källor, till exempel Adobe-program, molnbaserade lager, databaser och många andra. Läs mer om källanslutningar [på den här sidan](../get-started-sources.md).
+
+1. **Skapa testprofiler**. Testprofiler krävs när du använder [testläge](../building-journeys/testing-the-journey.md) på en resa och [förhandsgranska och testa dina meddelanden](../preview.md) före sändning. Upptäck steg för att skapa testprofiler [på den här sidan](../../using/building-journeys/creating-test-profiles.md).
+
+
+För att kunna skicka meddelanden under resor måste du dessutom konfigurera **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** och **[!UICONTROL Actions]**. Läs mer [i det här avsnittet](../../using/configuration/about-data-sources-events-actions.md).
+
+![](../assets/admin-menu.png)
+
+* The **Datakälla** kan du definiera en anslutning till ett system för att hämta ytterligare information som ska användas på dina resor. Läs mer om datakällor [i det här avsnittet](../datasource/about-data-sources.md).
+
+* **Händelser** gör det möjligt för er att utlösa era resor helt och hållet för att skicka meddelanden i realtid till den person som kommer in på resan. I händelsekonfigurationen konfigurerar du de händelser som förväntas under resorna. Data för inkommande händelser normaliseras enligt Adobe Experience Data Model (XDM). Händelser kommer från API för strömningsinmatning för autentiserade och ej autentiserade händelser (till exempel händelser i Adobe Mobile SDK). Läs mer om evenemang [i det här avsnittet](../event/about-events.md).
+
+* [!DNL Journey Optimizer] innehåller inbyggda meddelandefunktioner: kan du utforma innehållet och publicera meddelandet. Om du använder ett tredjepartssystem för att skicka meddelanden, till exempel Adobe Campaign, skapar du en **anpassad åtgärd**. Läs mer om åtgärder i det här [i det här avsnittet](../action/action.md).

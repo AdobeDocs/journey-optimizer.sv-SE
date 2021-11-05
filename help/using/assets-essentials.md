@@ -1,14 +1,15 @@
 ---
 title: Adobe Experience Manager Assets Essentials
 description: Kom igång med Assets Essentials
-feature: Översikt
-topic: Innehållshantering
+feature: Overview
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: ac6ba317909c962a81c7043bfa2a56e94bc5c9ad
+exl-id: d4fde14b-e2da-40bf-a387-ee9f2f7ff204
+source-git-commit: 0f79d465dd5a63ced107614407de167c7d9dad5a
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 2%
+source-wordcount: '378'
+ht-degree: 1%
 
 ---
 
@@ -16,49 +17,50 @@ ht-degree: 2%
 
 ## Kom igång med [!DNL Assets Essentials] {#get-started-assets-essentials}
 
+
+[!DNL Adobe Experience Manager Assets Essentials] har ett enda centraliserat arkiv med resurser som du kan använda för att fylla i dina meddelanden. Den kan nås direkt från [!DNL Adobe Journey Optimizer] via **[!UICONTROL Assets]** -avsnitt. Du kan också komma åt resurser och mappar när du utformar ett e-postinnehåll. [Läs mer om e-postdesign](design-emails.md).
+
 >[!NOTE]
 >
-> Om du vill arbeta med [!DNL Adobe Experience Manager Assets Essentials] måste du distribuera [!DNL Assets Essentials] till din organisation och se till att användare som behöver åtkomst till [!DNL Assets Essentials] är en del av **Assets Essentials konsumentanvändare** eller/och **Assets Essentials-användare** produktprofiler. <br> Mer information finns på den här  [sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}.
+> Arbeta med [!DNL Adobe Experience Manager Assets Essentials]måste du driftsätta [!DNL Assets Essentials] för din organisation och se till att användare, som behöver åtkomst till [!DNL Assets Essentials], är en del av **Assets Essentials hemanvändare** eller/och **Assets Essentials-användare** Produktprofiler. <br> Mer information finns i [page](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}.
 
-[!DNL Adobe Experience Manager Assets Essentials] har ett enda centraliserat arkiv med resurser som du kan använda för att fylla i dina meddelanden. Den kan nås direkt från [!DNL Adobe Journey Optimizer] till **[!UICONTROL Assets]**-avsnittet. Du kan också komma åt resurser och mappar när du utformar ett e-postinnehåll. [Läs mer om e-postdesign](design-emails.md).
-
-Mer detaljerad information om [!DNL Assets Essentials] finns i [Adobe Experience Manager Assets Essentials-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target=&quot;_blank&quot;}.
+För mer detaljerade procedurer om [!DNL Assets Essentials], se [Adobe Experience Manager Assets Essentials-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target=&quot;_blank&quot;}.
 
 ## Överföra och infoga resurser{#add-asset}
 
-Om du vill överföra filer i [!DNL Assets Essentials] måste du först bläddra i eller skapa den mapp som filen ska lagras i. Du kan sedan infoga dem i ditt e-postinnehåll.
+Så här överför du filer i [!DNL Assets Essentials]måste du först bläddra i eller skapa mappen som den ska lagras i. Du kan sedan infoga dem i ditt e-postinnehåll.
 
-Mer information om hur du överför resurser finns i [Adobe Experience Manager Assets Essentials-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/add-delete.html){target=&quot;_blank&quot;}.
+Mer information om hur du överför resurser finns i [Adobe Experience Manager Assets Essentials-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/add-delete.html){target=&quot;_blank&quot;}.
 
-1. Välj fliken **[!UICONTROL Assets]** på **[!UICONTROL Content management]**-menyn för att komma åt [!DNL Assets Essentials] från startsidan för [!DNL Adobe Journey Optimizer].
+1. Från [!DNL Adobe Journey Optimizer] startsida väljer du **[!UICONTROL Assets]** under **[!UICONTROL Content management]** meny för åtkomst [!DNL Assets Essentials].
 
    ![](assets/media_library_1.png)
 
 1. Dubbelklicka på en mapp från det centrala avsnittet eller från trädvyn för att öppna den.
 
-   Du kan också klicka på **[!UICONTROL Create folder]** för att skapa en ny mapp.
+   Du kan också klicka **[!UICONTROL Create folder]** för att skapa en ny mapp.
 
    ![](assets/media_library_8.png)
 
-1. Klicka på **[!UICONTROL Add Assets]** i den valda eller skapade mappen för att överföra den nya resursen till din mapp.
+1. Klicka på **[!UICONTROL Add Assets]** för att överföra nya resurser till din mapp.
 
    ![](assets/media_library_2.png)
 
-1. Klicka på **[!UICONTROL Browse]** i **[!UICONTROL Upload files]** och välj om du vill **[!UICONTROL Browse files]** eller **[!UICONTROL Browse folders]**.
+1. Från **[!UICONTROL Upload files]**, klicka **[!UICONTROL Browse]** och välj om du vill **[!UICONTROL Browse files]** eller **[!UICONTROL Browse folders]**.
 
    ![](assets/media_library_3.png)
 
 1. Markera filen som du vill överföra. När du är klar klickar du på **[!UICONTROL Upload]**.
 
-   Mer information om hur du hanterar dina resurser finns på den här [sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-organize.html).
+   Mer information om hur du hanterar dina resurser finns i [page](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-organize.html).
 
 1. När resursen har överförts kan du nu infoga dina resurser i något av dina meddelanden via e-postdesignern.
 
-   Resursen kan även redigeras ytterligare med **redigeringsläget** för [!DNL Assets Essentials]. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/edit-images.html){target=&quot;_blank&quot;}.
+   Du kan även redigera resursen ytterligare med **Redigera** läge för [!DNL Assets Essentials]. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/edit-images.html){target=&quot;_blank&quot;}.
 
    ![](assets/media_library_12.png)
 
-1. I [!DNL Adobe Journey Optimizer] väljer du **[!UICONTROL Asset picker]** i den vänstra rutan i e-postdesignern.
+1. Från [!DNL Adobe Journey Optimizer], markera **[!UICONTROL Asset picker]** i den vänstra rutan i e-postdesignern.
 
    ![](assets/media_library_5.png)
 

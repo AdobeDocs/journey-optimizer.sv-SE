@@ -6,14 +6,15 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: ec880e9a42180221c3046aedf8ec46eff70d2493
+exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
+source-git-commit: 1a55138dde7481a54141b3d3dd446e410c40c44c
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 9%
+source-wordcount: '202'
+ht-degree: 12%
 
 ---
 
-# Adobe [!DNL Journey Optimizer]-dokumentation {#cjm-documentation}
+# Adobe [!DNL Journey Optimizer] Dokumentation {#cjm-documentation}
 
 ![](using/assets/do-not-localize/banner-cjm.jpg)
 
@@ -21,7 +22,7 @@ ht-degree: 9%
 <table style="table-layout:fixed">
 <tr>
   <td>
-    <div><strong>Komma igång</strong>
+    <div><strong>Kom igång</strong>
     </div>
     <p>
     <em></em>
@@ -29,12 +30,19 @@ ht-degree: 9%
     <div>
       <a href="using/get-started.md">Vad är [!DNL Journey Optimizer]?</a>
     </div>
-    <p>Upptäck viktiga funktioner och hur du kommer igång
+    <p>Upptäck viktiga funktioner och användningsområden
     <p>
     <div>
       <a href="using/release-notes.md">Versionsinformation</a>
     </div>
-    <p>Upptäck nya funktioner, senaste förbättringar och korrigeringar
+    <p>Nya funktioner, senaste förbättringar och korrigeringar
+   <p>
+    <div>
+      <a href="using/quick-start.md">Snabbstartsguide</a>
+    </div>
+    <p>
+    Lär dig att börja som administratör, datatekniker eller resehandledare
+    <p>
     <p>
     <div>
       <a href="using/design-emails.md">Designa e-postinnehåll</a>
@@ -55,12 +63,12 @@ ht-degree: 9%
     <div>
     <a href="using/configuration/get-started-configuration.md">Konfigurera [!DNL Journey Optimizer]</a>
     </div>
-    <p>Lär dig de viktigaste stegen för att konfigurera [!DNL Journey Optimizer]
+    <p>Lär dig viktiga steg för att konfigurera [!DNL Journey Optimizer]
     <p>
     <div>
     <a href="using/administration/permissions-overview.md">Ge åtkomst till [!DNL Journey Optimizer]</a>
     </div>
-    <p>Lär dig hur du definierar och hanterar behörigheter som tilldelats [!DNL Journey Optimizer]-användare
+    <p>Definiera och hantera behörigheter som tilldelats till [!DNL Journey Optimizer] användare
     <p>
     <div>
     <a href="using/offers/get-started/starting-offer-decisioning.md">Beslutsledning</a>

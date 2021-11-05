@@ -5,15 +5,14 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att leverera sammankopplade, kontextuella och personaliserade upplevelser till kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: f186eeb09e9f9e0b8094baa8038ab0298b7e5148
+source-git-commit: 699ebab2051d9ddfde20713a462490f11f9f7f1b
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 44%
+source-wordcount: '756'
+ht-degree: 41%
 
 ---
 
-
-# Hjälp om [!DNL Journey Optimizer] {#using}
+# Hjälp om Adobe Journey Optimizer {#using}
 
 + [Journey Optimizer-dokumentation](ajo-home.md)
 + Nyheter? {#whats-new}
@@ -21,7 +20,12 @@ ht-degree: 44%
    + [Senaste uppdateringar](using/documentation-updates.md)
 + Kom igång{#get-started}
    + [Vad är Journey Optimizer?](using/get-started.md)
-   + [Snabbstart](using/quick-start.md)
+   + Snabbstart{#quick-start}
+      + [Översikt](using/quick-start.md)
+      + [Kom igång som marknadsförare](using/path/marketer.md)
+      + [Kom igång som datatekniker](using/path/data-engineer.md)
+      + [Kom igång som administratör](using/path/administrator.md)
+      + [Kom igång som utvecklare](using/path/developer.md)
    + [Användargränssnitt](using/user-interface.md)
    + [Begränsningar](using/limitations.md)
 + Meddelanden {#create-messages}
@@ -50,10 +54,11 @@ ht-degree: 44%
       + [Meddelande om orderstatus](using/personalization/personalization-use-case.md)
       + [E-post om att kunden överger en kundvagn](using/personalization/personalization-use-case-helper-functions.md)
    + Hjälpfunktioner{#functions}
-      + [Lista över hjälpfunktioner](using/personalization/functions/functions.md)
+      + [Kom igång med hjälpfunktioner](using/personalization/functions/functions.md)
       + [Sammanställningsfunktioner](using/personalization/functions/aggregation.md)
       + [Aritmetiska funktioner](using/personalization/functions/arithmetic-functions.md)
       + [Arrayer och listfunktioner](using/personalization/functions/arrays-list.md)
+      + [Datumfunktioner](using/personalization/functions/dates.md)
       + [Boolean- och jämförelsefunktioner](using/personalization/functions/operators.md)
       + [Hjälpmedel](using/personalization/functions/helpers.md)
       + [Kartfunktioner](using/personalization/functions/maps.md)
@@ -97,6 +102,7 @@ ht-degree: 44%
       + [Skicka flerkanalsmeddelanden](using/building-journeys/journeys-uc.md)
       + [Skicka ett meddelande med Campaign v7/v8](using/building-journeys/campaign-classic-use-case.md)
       + [Skicka samlingar dynamiskt med anpassade åtgärder](using/building-journeys/collections.md)
+      + [Skicka ett meddelande till prenumeranter](using/building-journeys/message-to-subscribers-uc.md)
 + Spåra och övervaka {#reporting}
    + [Meddelandeövervakning](using/message-monitoring.md)
    + Live-rapport {#live-report}
@@ -111,17 +117,20 @@ ht-degree: 44%
       + [Push Global-rapport](using/reports/push-global-report.md)
    + Reserapporter {#reports}
       + [Skapa reserapporter](using/reports/sharing-overview.md)
-      + [Resefält](using/reports/sharing-journey-fields.md)
-      + [Vanliga fält](using/reports/sharing-common-fields.md)
-      + [Körningsfält för åtgärd](using/reports/sharing-execution-fields.md)
-      + [Fält för datahämtning](using/reports/sharing-fetch-fields.md)
-      + [Identitetsfält](using/reports/sharing-identity-fields.md)
+      + [Stega händelsefältslista](using/reports/sharing-field-list.md)
+      + Händelsefält för äldre steg {#legacy-step-event-fields}
+         + [Om äldre fält](using/reports/sharing-legacy-fields.md)
+         + [Resefält](using/reports/sharing-journey-fields.md)
+         + [Vanliga fält](using/reports/sharing-common-fields.md)
+         + [Körningsfält för åtgärd](using/reports/sharing-execution-fields.md)
+         + [Fält för datahämtning](using/reports/sharing-fetch-fields.md)
+         + [Identitetsfält](using/reports/sharing-identity-fields.md)
       + [Exempel på frågor](using/reports/query-examples.md)
    + levererbarhet {#deliverability}
       + [Kom igång med leverans](using/deliverability.md)
       + [Undertryckningslista](using/suppression-list.md)
       + [Tillåtelselista](using/allow-list.md)
-+ Beslutshantering {#offer-decisioniong}
++ Beslutsledning {#offer-decisioniong}
    + Kom igång med beslutshantering {#get-started}
       + [Om beslutshantering](using/offers/get-started/starting-offer-decisioning.md)
       + [Användargränssnitt](using/offers/get-started/user-interface.md)
@@ -140,7 +149,8 @@ ht-degree: 44%
    + Skapa och hantera beslut {#create-manage-activities}
       + [Skapa beslut](using/offers/offer-activities/create-offer-activities.md)
       + [Konfigurera urval av erbjudanden i beslut](using/offers/offer-activities/configure-offer-selection.md)
-   + Skapa beslutshanteringsrapporter {#create-reports}
+      + [Skapa simuleringar](using/offers/offer-activities/simulation.md)
+   + Skapa rapporter om beslutshantering {#create-reports}
       + [Kom igång med beslutsledningshändelser](using/offers/reports/get-started-events.md)
       + [Viktig information om beslutshändelser](using/offers/reports/key-information.md)
       + [Åtkomst till XDM-fält för händelser](using/offers/reports/xdm-fields.md)

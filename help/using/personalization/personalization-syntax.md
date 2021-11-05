@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: fe39570b-cbd2-4b24-af10-e12990a9a885
-source-git-commit: 676f81e1cb41ea65a1dd0444424b331ce54da786
+source-git-commit: aad1fa2ca9c845e6362df69aaa9debf6c2dc5c80
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '659'
 ht-degree: 3%
 
 ---
@@ -163,3 +163,6 @@ Med Journey Optimizer kan du anpassa en eller flera URL-adresser i meddelandet g
 * `https://www.adobe.com/usera?uid={{context.journey.technicalProperties.journeyUID}}`
 * `https://www.adobe.com/users?uid={{profile.person.crmid}}&token={{context.token}}`
 
+>[!CAUTION]
+>
+>Blanksteg stöds inte i personaliseringstoken som används i URL:er.

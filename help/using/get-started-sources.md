@@ -1,20 +1,25 @@
 ---
 title: Kom igång med källanslutningar i Journey Optimizer
 description: Lär dig hur du importerar data från externa källor i Adobe Journey Optimizer
-feature: Scheman
+feature: Schemas
 role: User
 level: Beginner
-source-git-commit: 105cc40b88479b8a4e70b9556dee7dff1fedc9ca
+exl-id: 359ea3c6-7746-469e-8a24-624f9726f2d8
+source-git-commit: 0f79d465dd5a63ced107614407de167c7d9dad5a
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 0%
+source-wordcount: '111'
+ht-degree: 5%
 
 ---
 
 # Kom igång med källkopplingar {#sources-gs}
 
-Med Adobe Experience Platform kan data hämtas från externa källor samtidigt som du kan strukturera, märka och förbättra inkommande data med hjälp av plattformstjänster. Du kan importera data från en mängd olika källor, till exempel Adobe-program, molnbaserade lager, databaser och många andra.
+Med Adobe Journey Optimizer kan data hämtas från externa källor samtidigt som du kan strukturera, märka och förbättra inkommande data med hjälp av plattformstjänster. Du kan importera data från en mängd olika källor, till exempel Adobe-program, molnbaserade lager, databaser och många andra.
 
 ![](assets/sources-home.png)
 
-Läs mer om hur du importerar data från externa källor med källkopplingar i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html){target=&quot;_blank&quot;}.
+Läs om källanslutningar och hur du konfigurerar dem i Journey Optimizer i den här videon:
+
+>[!VIDEO](https://video.tv.adobe.com/v/335919?quality=12)
+
+Läs mer om hur du importerar data från externa källor med källkopplingar i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/home.htmll?lang=sv){target=&quot;_blank&quot;}.

@@ -1,68 +1,85 @@
 ---
 title: Rapport om livesändning på resa
 description: Lär dig använda data från reserapporten
-feature: Rapportering
-topic: Innehållshantering
+feature: Reporting
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: c883930674b3856f1f7857f4072419be8c9d8738
+exl-id: e3781f79-7c8d-4512-b44f-835639b1471f
+source-git-commit: 8cb36038b2aeddd1662dcb7c84b36d9bc1265982
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '696'
 ht-degree: 0%
 
 ---
 
 # Rapport om livesändning på resa {#journey-live-report}
 
-Du kan komma åt liverapporten för resan direkt från din resa med knappen **[!UICONTROL Live report]**.
+Du kan få åtkomst till liverapporten från din resa med **[!UICONTROL Live report]** -knappen.
 
 ![](../assets/report_1.png)
 
-Sidan **[!UICONTROL Live report]** för resan visas med följande flikar:
+Resan **[!UICONTROL Live report]** visas med följande flikar:
 
 * [Resa](#journey-live)
 * [E-post](#email-live)
 * [Push](#push-live)
 
-Resan **[!UICONTROL Live report]** är uppdelad i olika widgetar som anger hur framgångsrik och felfri din resa är. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [avsnittet](live-report.md#modify-dashboard).
+Resan **[!UICONTROL Live report]** är uppdelat i olika widgetar som detaljerat beskriver hur framgångsrik och felfri din resa är. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](live-report.md#modify-dashboard).
 
 ## Fliken Resor {#journey-live}
 
-Från din resa **[!UICONTROL Live report]** ger fliken **[!UICONTROL Journey]** en tydlig bild av de viktigaste spårningsdata som rör din resa.
+Från din resa **[!UICONTROL Live report]**, **[!UICONTROL Journey]** -fliken ger en tydlig bild av de viktigaste spårningsdata som rör kundresan.
 
 ![](../assets/report_journey_2.png)
 
 **[!UICONTROL Journey Performance]** gör att du kan se vägen för dina målprofiler steg för steg under hela kundresan.
 
-Widgeten **[!UICONTROL Journey Statistics]** visar följande KPI:er:
+The **[!UICONTROL Journey Statistics]** widgeten visar följande KPI:er:
 
 * **[!UICONTROL Entered profiles]**: Totalt antal personer som har nått resans inträde.
 
 * **[!UICONTROL Exited profiles]**: Totalt antal personer som avbrutit resan.
 
-* **[!UICONTROL Failed individual journey]**: Totalt antal enskilda resor som inte har slutförts.
+* **[!UICONTROL Failed individual journeys]**: Totalt antal enskilda resor som inte har slutförts.
 
 ![](../assets/report_journey_3.png)
 
-Med widgetarna **[!UICONTROL Event executed over the last 24 hours]**, **[!UICONTROL Events executed]** och **[!UICONTROL Events]** kan du se vilken av dina händelser som utfördes med sammanfattningsnummer, diagram och tabell.
+The **[!UICONTROL Event executed over the last 24 hours]** och **[!UICONTROL Events]** Med -widgetar kan du se vilken av dina händelser som har utförts genom sammanfattningsnummer, diagram och tabell.
 
 ![](../assets/report_journey_4.png)
 
-**[!UICONTROL Action executed over the last 24 hours]** och  **[!UICONTROL Actions executed and errors]** widgetar är de mest framgångsrika åtgärderna och felen som inträffade när åtgärderna utlöstes. Åtgärdsdiagrammet, tabellen och sammanfattningsnumren innehåller de data som är tillgängliga för åtgärder, till exempel:
+The **[!UICONTROL Action executed over the last 24 hours]** och **[!UICONTROL Actions executed and errors]** -widgetar är den mest framgångsrika åtgärden och de fel som inträffade när dina åtgärder utlöstes. Åtgärdsdiagrammet, tabellen och sammanfattningsnumren innehåller de data som är tillgängliga för åtgärder, till exempel:
 
-* **[!UICONTROL Actions successfully executed]**: Totalt antal genomförda åtgärder för en resa.
+* **[!UICONTROL Actions executed]**: Totalt antal genomförda åtgärder för en resa.
 
-* **[!UICONTROL Error in action]**: Totalt antal fel som uppstått för åtgärder.
+* **[!UICONTROL Error in actions]**: Totalt antal fel som uppstått för åtgärder.
+
+<!--
+![](../assets/live_report_7.png)
+
+>[!NOTE]
+>
+>The Offers widgets and metrics are only available if a decision was inserted in an email. For more information on Decision Management, refer to this [page](../offers/get-started/starting-offer-decisioning.md).
+
+The **[!UICONTROL Offers statistic]** and **[!UICONTROL Offers statistics]** over time widgets measure your offer's success and impact on your targeted audience. It detail the main information relative to your message with KPIs:
+
+* **[!UICONTROL Offer sent]**: Total number of sends for the offer.
+
+* **[!UICONTROL Offer impression]**: Number of times the offer was opened in a delivery.
+
+* **[!UICONTROL Offer clicks]**: Number of times an offer was clicked on in a delivery.
+-->
 
 ## Fliken E-post {#email-live}
 
-Från din resa **[!UICONTROL Live report]** anger fliken **[!UICONTROL Email]** huvudinformationen i relation till e-postleveranserna som skickas under din resa.
+Från din resa **[!UICONTROL Live report]**, **[!UICONTROL Email]** fliken innehåller huvudinformationen om de e-postleveranser som skickas under resan.
 
-En detaljerad rapport om en viss e-postleverans finns i avsnittet [E-postlive rapport](email-live-report.md).
+En detaljerad rapport om en viss e-postleverans finns i [E-postlive-rapport](email-live-report.md) -avsnitt.
 
 ![](../assets/report_email_1.png)
 
-Widgeten **[!UICONTROL Email Sending Statistics]** visar huvudinformationen i förhållande till meddelandet:
+The **[!UICONTROL Email Sending Statistics]** widgeten innehåller information om den viktigaste informationen i förhållande till ditt meddelande:
 
 * **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
 
@@ -70,7 +87,7 @@ Widgeten **[!UICONTROL Email Sending Statistics]** visar huvudinformationen i f�
 
 * **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
 
-Tabellen **[!UICONTROL Sending metrics by Email]** och diagrammet **[!UICONTROL Email Summary]** visar hur leveransen lyckades:
+The **[!UICONTROL Sending metrics by Email]** tabell och **[!UICONTROL Email Summary]** diagram visar hur framgångsrik leveransen är:
 
 * **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
 
@@ -90,7 +107,7 @@ Tabellen **[!UICONTROL Sending metrics by Email]** och diagrammet **[!UICONTROL 
 
 ![](../assets/report_email_2.png)
 
-Widgetarna **[!UICONTROL Bounce Reasons]**, **[!UICONTROL Bounce categories]** och **[!UICONTROL Hard and bounce - by Email]** innehåller tillgängliga data för studsade meddelanden, till exempel:
+The **[!UICONTROL Bounce Reasons]**, **[!UICONTROL Bounce categories]** och **[!UICONTROL Hard and bounce - by Email]** widgetar innehåller tillgängliga data som är relaterade till studsade meddelanden, som:
 
 * **[!UICONTROL Hard bounce]**: Det totala antalet permanenta fel, t.ex. fel e-postadress. Detta inbegriper ett felmeddelande som uttryckligen anger att adressen är ogiltig, till exempel Okänd användare.
 
@@ -98,17 +115,17 @@ Widgetarna **[!UICONTROL Bounce Reasons]**, **[!UICONTROL Bounce categories]** o
 
 * **[!UICONTROL Ignored]**: Det totala antalet tillfälliga, t.ex. frånvaro, eller ett tekniskt fel, t.ex. om avsändartypen är postmaster.
 
-Med diagrammet och tabellen **[!UICONTROL Error Reasons]** kan du se vilket fel som uppstod under leveransen.
+The **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilket fel som inträffade under leveransen.
 
 ## Push-flik {#push-live}
 
-Från din resa **[!UICONTROL Live report]** anger fliken **[!UICONTROL Push]** huvudinformationen i relation till push-leveranserna som skickas under din resa.
+Från din resa **[!UICONTROL Live report]**, **[!UICONTROL Push]** fliken innehåller huvudinformationen i förhållande till de push-leveranser som skickas under resan.
 
-En detaljerad rapport om en viss push-leverans finns i avsnittet [Push live report](push-live-report.md).
+En detaljerad rapport om en viss push-leverans finns i [Publicera live-rapport](push-live-report.md) -avsnitt.
 
 ![](../assets/report_push_1.png)
 
-**[!UICONTROL Push notification sending performance]**,  **[!UICONTROL Push notification summary]** och  **[!UICONTROL Sending metrics - by Push]** widgetar visar huvudinformationen i relation till ditt meddelande:
+**[!UICONTROL Push notification sending performance]**, **[!UICONTROL Push notification summary]** och **[!UICONTROL Sending metrics - by Push]** widgetar anger huvudinformationen i förhållande till meddelandet:
 
 * **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
 
@@ -124,10 +141,10 @@ En detaljerad rapport om en viss push-leverans finns i avsnittet [Push live repo
 
 * **[!UICONTROL Engagements]**: Totalt antal öppningar och åtgärder för det här push-meddelandet, dvs om profilen öppnade push-meddelandet eller om någon klickade på en knapp.
 
-Med diagrammet och tabellen **[!UICONTROL Error Reasons]** kan du se vilket fel som uppstod under leveransen.
+The **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilket fel som inträffade under leveransen.
 
 ![](../assets/report_push_2.png)
 
-Diagram och tabeller för **[!UICONTROL Tracking by platform]**, **[!UICONTROL Sending by platform]** och **[!UICONTROL Breakdown by platform]** visar om push-meddelandet är klart beroende på vilket operativsystem som används.
+The **[!UICONTROL Tracking by platform]**, **[!UICONTROL Sending by platform]** och **[!UICONTROL Breakdown by platform]** diagram och tabeller visar hur bra push-meddelandena är beroende på vilket operativsystem som används.
 
-Med widgeten **[!UICONTROL Sending statistics - Failed]** kan du se hur många fel och studs.
+The **[!UICONTROL Sending statistics - Failed]** kan du se hur många fel och studs.

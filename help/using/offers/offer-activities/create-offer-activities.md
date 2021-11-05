@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7a217c97-57e1-4f04-a92c-37632f8dfe91
-source-git-commit: 89e0223ebbf5015b61b55da693e0c6401307ce9f
+source-git-commit: 7f8871fdaf5bb543ce8dc894f3a7dc7304eccf36
 workflow-type: tm+mt
-source-wordcount: '1015'
-ht-degree: 2%
+source-wordcount: '1234'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ Besluten (tidigare kallade erbjudandeaktiviteter) är behållare för dina erbju
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
-Listan med beslut finns på **[!UICONTROL Offers]**-menyn > fliken **[!UICONTROL Decisions]**. Det finns filter som hjälper dig att hämta beslut utifrån status eller start- och slutdatum.
+Listan över beslut finns i **[!UICONTROL Offers]** meny > **[!UICONTROL Decisions]** -fliken. Det finns filter som hjälper dig att hämta beslut utifrån status eller start- och slutdatum.
 
 ![](../../assets/activities-list.png)
 
@@ -36,57 +36,93 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 
 1. Ange beslutets namn.
 
-1. Definiera start- och slutdatum och sluttid och klicka sedan på **[!UICONTROL Next]**.
+1. Definiera start- och slutdatum och sluttid om det behövs, och klicka sedan på **[!UICONTROL Next]**.
 
    ![](../../assets/activities-name.png)
 
-## Lägg till beslutsomfattningar {#add-decision-scopes}
+## Definiera beslutsomfattningar {#add-decision-scopes}
 
-1. Dra och släpp en placering från listan för att lägga till den i beslutet och klicka sedan på **[!UICONTROL Add collection]**.
+1. Välj en placering i listrutan. Den kommer att läggas till i det första beslutsomfånget i ditt beslut.
 
    ![](../../assets/activities-placement.png)
 
+1. Klicka **[!UICONTROL Add]** för att välja utvärderingskriterier för den här placeringen.
+
+   ![](../../assets/activities-evaluation-criteria.png)
+
+   Varje villkor består av en erbjudandesamling som är kopplad till en begränsning för behörighet och en rangordningsmetod för att fastställa vilka erbjudanden som ska visas i placeringen.
+
    >[!NOTE]
    >
-   >Samma placering kan väljas flera gånger i beslutet.
+   >Minst ett utvärderingskriterier krävs.
 
-1. Välj den samling som innehåller de erbjudanden som ska övervägas och klicka sedan på **[!UICONTROL Add]**.
+1. Välj den erbjudandesamling som innehåller de erbjudanden som ska övervägas och klicka sedan på **[!UICONTROL Add]**.
 
    ![](../../assets/activities-collection.png)
 
-1. De valda erbjudandena läggs till på placeringen.
+   >[!NOTE]
+   >
+   >Du kan klicka på **[!UICONTROL Open offer collections]** om du vill visa en lista med samlingar på en ny flik, som gör att du kan bläddra bland samlingarna och erbjudandena som de innehåller.
 
-   I det här exemplet valde vi två erbjudanden som ska visas i en JSON-typplacering i syfte att presentera erbjudanden i en call center-lösning.
+   Den valda samlingen läggs till i villkoren.
 
-   ![](../../assets/offers-added.png)
+   ![](../../assets/activities-collection-added.png)
 
-1. Om flera erbjudanden kan komma i fråga för den här placeringen kommer erbjudandena med högst prioritet att levereras till kunden.
+1. Använd **[!UICONTROL Eligibility]** om du vill begränsa urvalet av erbjudanden för den här placeringen.
 
-   Om du vill använda en viss formel eller en rankningsstrategi för att välja vilket erbjudande som ska levereras väljer du en rankningsformel i listrutan **[!UICONTROL Rank offers by]**. Mer information om detta finns i [det här avsnittet](../offer-activities/configure-offer-selection.md).
+   Den här begränsningen kan tillämpas med en **beslutsregel** eller en eller flera **Adobe Experience Platform segment**. Båda beskrivs i [det här avsnittet](#segments-vs-decision-rules).
 
-1. Fältet **[!UICONTROL Constraint]** begränsar valet av erbjudanden för den här placeringen. Den här begränsningen kan tillämpas med en **beslutsregel**, eller ett eller flera **Adobe Experience Platform-segment**. Båda beskrivs i [det här avsnittet](#segments-vs-decision-rules).
-
-   * Om du vill begränsa urvalet av erbjudanden till medlemmarna i ett Adobe Experience Platform-segment väljer du **[!UICONTROL Segments]** och klickar sedan på **[!UICONTROL Add segments]**.
+   * Om du vill begränsa urvalet av erbjudanden till medlemmarna i ett Experience Platform-segment väljer du **[!UICONTROL Segments]** och sedan klicka **[!UICONTROL Add segments]**.
 
       ![](../../assets/activity_constraint_segment.png)
 
-      Lägg till ett eller flera segment från den vänstra rutan, kombinera dem med de logiska operatorerna **[!UICONTROL And]** / **[!UICONTROL Or]** och klicka sedan på **[!UICONTROL Select]** för att bekräfta.
+      Lägg till ett eller flera segment från den vänstra rutan och kombinera dem med **[!UICONTROL And]** / **[!UICONTROL Or]** logiska operatorer.
 
       ![](../../assets/activity_constraint_segment2.png)
 
-      Läs mer om hur du arbetar med segment i [det här avsnittet](../../segment/about-segments.md).
+      Lär dig hur du arbetar med segment i [det här avsnittet](../../segment/about-segments.md).
 
-   * Om du vill lägga till en markeringsbegränsning för den här placeringen med en beslutsregel, markerar du alternativet **[!UICONTROL Decision rule]** och drar sedan den önskade regeln från den vänstra rutan till **[!UICONTROL Decision rule]**-området.
+   * Om du vill lägga till en markeringsbegränsning med en beslutsregel använder du kommandot **[!UICONTROL Decision rule]** och välj önskad regel.
 
       ![](../../assets/activity_constraint_rule.png)
 
-      Läs mer om hur du skapar en beslutsregel i [det här avsnittet](../offer-library/creating-decision-rules.md).
+      Lär dig hur du skapar en beslutsregel i [det här avsnittet](../offer-library/creating-decision-rules.md).
+
+1. Definiera den rangordningsmetod som du vill använda för att välja det bästa erbjudandet för varje profil.
+
+   ![](../../assets/activity_ranking-method.png)
+
+   * Om flera erbjudanden kan komma i fråga för den här placeringen kommer erbjudandet med högsta prioritet att levereras till kunden som standard.
+
+   * Om du vill använda en viss formel för att välja vilket erbjudande som ska levereras väljer du **[!UICONTROL Ranking formula]**. Lär dig rangordna erbjudanden i [det här avsnittet](../offer-activities/configure-offer-selection.md).
+
+1. Klicka **[!UICONTROL Add]** för att definiera fler villkor för samma placering.
+
+   ![](../../assets/activity_add-collection.png)
+
+1. När du lägger till flera villkor utvärderas de i en viss ordning. Den första samlingen som lades till i sekvensen utvärderas först och så vidare.
+
+   Om du vill ändra standardsekvensen kan du dra och släppa samlingarna för att ordna om dem som du vill.
+
+   ![](../../assets/activity_reorder-collections.png)
+
+1. Du kan också utvärdera flera villkor samtidigt. Det gör du genom att dra och släppa samlingen ovanpå en annan.
+
+   ![](../../assets/activity_move-collection.png)
+
+   De har nu samma rankning och kommer därför att utvärderas samtidigt.
+
+   ![](../../assets/activity_same-rank-collections.png)
+
+1. Använd **[!UICONTROL New scope]** -knappen. Upprepa stegen ovan för varje beslutsomfattning.
+
+   ![](../../assets/activity_new-scope.png)
 
 ### Använda segment och beslutsregler {#segments-vs-decision-rules}
 
 <!--to move to create-offers?-->
 
-Om du vill tillämpa en begränsning kan du begränsa urvalet av erbjudanden till medlemmarna i ett eller flera **Adobe Experience Platform-segment**, eller så kan du använda en **beslutsregel**, båda lösningarna som motsvarar olika användningar.
+Om du vill tillämpa en begränsning kan du begränsa urvalet av erbjudanden till medlemmarna i en eller flera **Adobe Experience Platform segment** eller så kan du använda en **beslutsregel**, båda lösningarna motsvarar olika användningsområden.
 
 I princip är utdata för ett segment en lista med profiler, medan en beslutsregel är en funktion som körs på begäran mot en enskild profil under beslutsprocessen. Skillnaden mellan dessa två användningar beskrivs nedan.
 
@@ -104,47 +140,60 @@ I princip är utdata för ett segment en lista med profiler, medan en beslutsreg
 
 ## Lägg till ett reserverbjudande {#add-fallback}
 
-Välj det reserverbjudande som ska presenteras som en sista utväg till kunder som inte matchar reglerna och begränsningarna för erbjudanden och klicka sedan på **[!UICONTROL Next]**.
+När du har definierat beslutsomfattningarna definierar du det reserverbjudande som presenteras som en sista utväg till de kunder som inte matchar reglerna och begränsningarna för erbjudanden.
+
+Det gör du genom att välja det i listan över tillgängliga reserverbjudanden för de ersättningar som definierats i beslutet och sedan klicka på **[!UICONTROL Next]**.
 
 ![](../../assets/add-fallback-offer.png)
+
+>[!NOTE]
+>
+>Du kan klicka på **[!UICONTROL Open offer library]** länk för att visa listan med erbjudanden på en ny flik.
 
 ## Granska och spara beslutet {#review}
 
 Om allt är korrekt konfigurerat visas en sammanfattning av beslutsegenskaperna.
 
-1. Se till att beslutet är klart att användas för att presentera erbjudanden för kunderna.
+1. Se till att beslutet är klart att användas för att presentera erbjudanden för kunderna. Alla beslutsomfattningar och det reserverbjudande som det innehåller visas.
+
+   ![](../../assets/review-decision.png)
+
+   Du kan expandera eller komprimera varje placering. Du kan också förhandsgranska tillgängliga erbjudanden, berättigandeinformation och rangordningsinformation för varje placering.
+
+   ![](../../assets/review-decision-details.png)
+
 1. Klicka på **[!UICONTROL Finish]**.
-1. Välj sedan **[!UICONTROL Save and activate]**.
+1. Välj **[!UICONTROL Save and activate]**.
 
    ![](../../assets/save-activities.png)
 
    Du kan också spara beslutet som utkast för att redigera det och aktivera det senare.
 
-Beslutet visas i listan med statusen **[!UICONTROL Live]** eller **[!UICONTROL Draft]**, beroende på om du aktiverade det eller inte i det föregående steget.
+Beslutet visas i listan med **[!UICONTROL Live]** eller **[!UICONTROL Draft]** status, beroende på om du har aktiverat den eller inte i föregående steg.
 
 Den är nu klar att användas för att leverera erbjudanden till kunder.
 
 ## Beslutslista {#decision-list}
 
-I beslutslistan kan du välja vilket beslut som ska visas. Därifrån kan du även redigera den, ändra dess status (**Utkast**, **Live**, **Fullständigt**, **Arkiverat**), duplicera beslutet eller ta bort det.
+I beslutslistan kan du välja vilket beslut som ska visas. Därifrån kan du även redigera den och ändra dess status (**Utkast**, **Live**, **Slutförd**, **Arkiverad**), duplicera beslutet eller ta bort det.
 
 ![](../../assets/decision_created.png)
 
-Klicka på knappen **[!UICONTROL Edit]** för att gå tillbaka till beslutsversionsläget, där du kan ändra beslutsbeslutets [information](#create-activity), [beslutsomfattningar](#add-decision-scopes) och [reserverbjudande](#add-fallback).
+Välj **[!UICONTROL Edit]** knapp för att gå tillbaka till beslutsversionsläget, där du kan ändra beslutets [information](#create-activity), [beslutsomfattningar](#add-decision-scopes) och [grunderbjudande](#add-fallback).
 
-Välj ett live-beslut och klicka på **[!UICONTROL Deactivate]** för att återställa beslutsstatusen till **[!UICONTROL Draft]**.
+Välj ett live-beslut och klicka **[!UICONTROL Deactivate]** för att återställa beslutsstatus till **[!UICONTROL Draft]**.
 
-Om du vill ange status till **[!UICONTROL Live]** igen väljer du knappen **[!UICONTROL Activate]** som nu visas.
+Om du vill ange status igen till **[!UICONTROL Live]** väljer du **[!UICONTROL Activate]** som nu visas.
 
 ![](../../assets/decision_activate.png)
 
-Knappen **[!UICONTROL More actions]** aktiverar de åtgärder som beskrivs nedan.
+The **[!UICONTROL More actions]** aktiverar de åtgärder som beskrivs nedan.
 
 ![](../../assets/decision_more-actions.png)
 
-* **[!UICONTROL Complete]**: anger beslutets status till  **[!UICONTROL Complete]**, vilket innebär att beslutet inte längre kan anropas. Den här åtgärden är bara tillgänglig för aktiverade beslut. Beslutet är fortfarande tillgängligt i listan, men du kan inte ange tillbaka status till **[!UICONTROL Draft]** eller **[!UICONTROL Approved]**. Du kan bara duplicera, ta bort eller arkivera den.
+* **[!UICONTROL Complete]**: anger beslutets status till **[!UICONTROL Complete]**, vilket innebär att beslutet inte kan anropas längre. Den här åtgärden är bara tillgänglig för aktiverade beslut. Beslutet är fortfarande tillgängligt i listan, men du kan inte återställa dess status till **[!UICONTROL Draft]** eller **[!UICONTROL Approved]**. Du kan bara duplicera, ta bort eller arkivera den.
 
-* **[!UICONTROL Duplicate]**: skapar ett beslut med samma egenskaper, beslutsomfattningar och reserverbjudande. Som standard har det nya beslutet statusen **[!UICONTROL Draft]**.
+* **[!UICONTROL Duplicate]**: skapar ett beslut med samma egenskaper, beslutsomfattningar och reserverbjudande. Som standard har det nya beslutet **[!UICONTROL Draft]** status.
 
 * **[!UICONTROL Delete]**: tar bort beslutet från listan.
 
@@ -154,7 +203,7 @@ Knappen **[!UICONTROL More actions]** aktiverar de åtgärder som beskrivs nedan
    >
    >Om beslutet används i ett annat objekt kan det inte tas bort.
 
-* **[!UICONTROL Archive]**: anger beslutsstatus till  **[!UICONTROL Archived]**. Beslutet är fortfarande tillgängligt i listan, men du kan inte ange tillbaka status till **[!UICONTROL Draft]** eller **[!UICONTROL Approved]**. Du kan bara duplicera eller ta bort den.
+* **[!UICONTROL Archive]**: anger beslutsstatus till **[!UICONTROL Archived]**. Beslutet är fortfarande tillgängligt i listan, men du kan inte återställa dess status till **[!UICONTROL Draft]** eller **[!UICONTROL Approved]**. Du kan bara duplicera eller ta bort den.
 
 Du kan också ta bort eller ändra status för flera beslut samtidigt genom att markera motsvarande kryssrutor.
 
@@ -168,7 +217,7 @@ När ett beslut har skapats kan du klicka på dess namn i listan.
 
 ![](../../assets/decision_click-name.png)
 
-På så sätt kan du få tillgång till detaljerad information för det beslutet. Välj fliken **[!UICONTROL Change log]** för att [övervaka alla ändringar](../get-started/user-interface.md#changes-log) som har gjorts i beslutet.
+På så sätt kan du få tillgång till detaljerad information för det beslutet. Välj **[!UICONTROL Change log]** tabba till [övervaka alla ändringar](../get-started/user-interface.md#changes-log) som har tagits till beslutet.
 
 ![](../../assets/decision_information.png)
 

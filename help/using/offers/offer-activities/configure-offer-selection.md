@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 8c7135d7-bf5a-4671-afdf-afec60907a56
-source-git-commit: 43fb98a08555e6b889ad537e79dba78286dafeb9
+source-git-commit: caaf3942853adb4e5eb16a3dd303ca1f088ce23b
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '450'
 ht-degree: 4%
 
 ---
@@ -18,13 +18,13 @@ ht-degree: 4%
 Om flera erbjudanden är berättigade för en viss placering kan du välja den metod som ska användas för att välja det bästa erbjudandet för varje profil när du konfigurerar ett beslut (som tidigare kallades erbjudandeaktivitet). Du kan rangordna erbjudanden genom att:
 * Prioritet
 * Rankningsformel
-* [AI-rankning](#use-ranking-strategy)  (endast för vissa användare i förtid)
+* [AI-rankning](#use-ranking-strategy) (för tidig åtkomst endast för utvalda användare)
 
 ![](../../assets/offer-rank-by.png)
 
 ## Prioritet {#about-offers-priority}
 
-När flera erbjudanden är berättigade till en viss placering i ett beslut (tidigare kallat erbjudandeaktivitet) levereras erbjudandena med den högsta **prioriteten** till kunderna först.
+När flera erbjudanden kan komma i fråga för en viss placering i ett beslut (tidigare kallat erbjudandeaktivitet) är det som standard det högsta erbjudandet **prioritet** kommer att levereras till kunderna först.
 
 ![](../../assets/offer-priority.png)
 
@@ -32,7 +32,7 @@ Prioritetspoäng tilldelas när ett erbjudande skapas. Lär dig hur du skapar et
 
 ## Rankningsformel {#assign-ranking-formula}
 
-Förutom att erbjuda prioritet kan du med Journey Optimizer skapa **rankningsformler**. Detta är formler som avgör vilket erbjudande som ska presenteras först för en viss placering, i stället för att beakta offertens prioritetspoäng.
+Förutom att ge prioritet kan du med Journey Optimizer skapa **rankningsformler**. Detta är formler som avgör vilket erbjudande som ska presenteras först för en viss placering, i stället för att beakta offertens prioritetspoäng.
 
 Du kan till exempel öka prioriteten för alla erbjudanden där slutdatumet är mindre än 24 timmar från och med nu, eller öka erbjudandena från kategorin&quot;löpande&quot; om profilens intressepunkt är&quot;igång&quot;.
 
@@ -46,7 +46,7 @@ När en rankningsformel har skapats kan du tilldela den till en placering i ett 
 
 1. Lägg till en samling för varje placering. Se [Skapa samlingar](../offer-library/creating-collections.md).
 
-1. Välj om du vill rangordna erbjudanden med **[!UICONTROL Ranking]** i listrutan och klicka sedan på **[!UICONTROL Add ranking]**.
+1. Välj **[!UICONTROL Ranking formula]** som rangordningsmetod och klicka sedan på **[!UICONTROL Add ranking]**.
 
    ![](../../assets/offer-activity-ranking.png)
 
@@ -74,21 +74,15 @@ När en rankningsstrategi har skapats kan du tilldela den till en placering i et
 
 1. Lägg till en samling för varje placering. Se [Skapa samlingar](../offer-library/creating-collections.md).
 
-1. Välj om du vill rangordna erbjudanden med **[!UICONTROL AI ranking]** i listrutan.
+1. Välj om du vill rangordna erbjudanden efter **[!UICONTROL AI ranking]** i listrutan och klicka på **[!UICONTROL Add ranking]**.
 
    ![](../../assets/ranking-selection-ai-ranking.png)
-
-1. Klicka på **[!UICONTROL Add ranking]**.
-
-   ![](../../assets/ranking-selection-ai-ranking-add.png)
 
 1. Välj den rankningsstrategi som du skapade. Alla detaljer om rankningsstrategin visas.
 
    ![](../../assets/ranking-selection-ai-ranking-selected.png)
 
-1. Klicka på **[!UICONTROL Select]**.
-
-Rankningsstrategin är nu kopplad till placeringen.
+1. Klicka på **[!UICONTROL Select]**. Rankningsstrategin är nu kopplad till placeringen.
 
 Om flera erbjudanden är giltiga, avgör det tränade modellsystemet vilket erbjudande som ska presenteras först för en viss placering.
 
