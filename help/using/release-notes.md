@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: cbd311f5fe648302ef589c32e9be1b0147e4d31c
+source-git-commit: 6cfd56d22cc18c044818dc73fc265ce5e882d36c
 workflow-type: tm+mt
-source-wordcount: '2019'
+source-wordcount: '1996'
 ht-degree: 10%
 
 ---
@@ -98,7 +98,8 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 **Rapportering**
 
 * **Dataformat i global vy** - Nu kan du växla mellan siffror och procenttal i dialogrutan **Global vy** i **Körning** -fliken. [Läs mer](message-monitoring.md)
-* **Nya mätvärden** - Nya mätvärden och widgetar finns nu i **Live** och **Global** rapporter för att mäta hur era erbjudanden påverkar mottagarna. [Läs mer](reports/journey-global-report.md)
+
+<!--* **New metrics** - New metrics and widgets are now available in **Live** and **Global** reports to measure your offers' impact on recipients. [Learn more](reports/journey-global-report.md)-->
 
 **Administrering**
 
