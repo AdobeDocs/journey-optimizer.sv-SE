@@ -7,7 +7,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
-source-git-commit: 1e62715f35b50bba639657a1bef37aa61922c715
+source-git-commit: 3f83ef8074fd52ab611117282015f60e2e57b61d
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -52,7 +52,7 @@ Du kan ändra en PTR-post om du vill redigera den underdomän som är associerad
    >
    >Du kan inte ändra **[!UICONTROL IP]** och **[!UICONTROL PTR record]** fält.
 
-1. Klicka **[!UICONTROL SAve]** för att bekräfta dina ändringar.
+1. Klicka **[!UICONTROL Save]** för att bekräfta dina ändringar.
 
 An **[!UICONTROL Updating]** visas bredvid namnet på PTR-posten i listan.
 

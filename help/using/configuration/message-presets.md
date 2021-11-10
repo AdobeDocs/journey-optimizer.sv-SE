@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 2e91fc884ea6e83a2590c5beca7840a6fc4c9b78
+source-git-commit: 18383a5a27aaf54cc859bdb66386648fe5fe2c41
 workflow-type: tm+mt
-source-wordcount: '1688'
+source-wordcount: '1682'
 ht-degree: 1%
 
 ---
@@ -192,6 +192,10 @@ Om du vill redigera en meddelandeförinställning följer du stegen nedan.
 
 När ändringarna har skickats går meddelandeförinställningen igenom en valideringscykel som liknar den som används när [skapa en förinställning](#create-message-preset).
 
+>[!NOTE]
+>
+>Om du bara redigerar **[!UICONTROL Description]**, **[!UICONTROL Email type]** och/eller **[!UICONTROL Email retry parameters]** uppdateras uppdateringen omedelbart.
+
 För meddelandeförinställningar som har **[!UICONTROL Active]** status kan du kontrollera uppdateringens information. För att göra detta:
 
 * Klicka på **[!UICONTROL Recent update]** som visas bredvid den aktiva förinställningens namn.
@@ -214,13 +218,17 @@ En uppdatering av en meddelandeförinställning kan ha följande status:
 * **[!UICONTROL Success]**: Den uppdaterade meddelandeförinställningen har verifierats och kan väljas för att skapa meddelanden.
 * **[!UICONTROL Failed]**: En eller flera kontroller misslyckades under verifieringen av uppdateringen av meddelandeförinställningen.
 
-**Bearbetar**
+Varje status visas nedan.
 
-Flera leveransåtgärder kommer att utföras för att kontrollera att förinställningen har uppdaterats korrekt. Bearbetningstiden är ungefär **48h-72h** och kan ta upp till **7-10 arbetsdagar**. Läs mer om kontroller som utförts under valideringscykeln i [det här avsnittet](#create-message-preset).
+### Bearbetar
+
+Flera leveransåtgärder kommer att utföras för att kontrollera att förinställningen har uppdaterats korrekt.
 
 >[!NOTE]
 >
->Du kan inte ändra en meddelandeförinställning medan uppdateringen pågår. Du kan fortfarande klicka på namnet, men alla fält är nedtonade. Ändringarna visas inte förrän uppdateringen har slutförts.
+>Om du bara redigerar **[!UICONTROL Description]**, **[!UICONTROL Email type]** och/eller **[!UICONTROL Email retry parameters]** uppdateras uppdateringen omedelbart.
+
+Bearbetningstiden är ungefär **48h-72h** och kan ta upp till **7-10 arbetsdagar**. Läs mer om kontroller som utförts under valideringscykeln i [det här avsnittet](#create-message-preset).
 
 Om du redigerar en förinställning som redan var aktiv:
 
@@ -230,7 +238,11 @@ Om du redigerar en förinställning som redan var aktiv:
 
 * Under valideringsprocessen används fortfarande den äldre versionen av förinställningen för meddelanden som konfigurerats med den här förinställningen.
 
-**Lyckades**
+>[!NOTE]
+>
+>Du kan inte ändra en meddelandeförinställning medan uppdateringen pågår. Du kan fortfarande klicka på namnet, men alla fält är nedtonade. Ändringarna visas inte förrän uppdateringen har slutförts.
+
+### Lyckades
 
 När valideringsprocessen har slutförts används den nya versionen av förinställningen automatiskt i alla meddelanden som använder den här förinställningen. Du kan dock behöva vänta:
 * några minuter innan det konsumeras av enhetsmeddelanden,
@@ -238,16 +250,16 @@ När valideringsprocessen har slutförts används den nya versionen av förinst�
 
 <!--Changes made to a message preset with the **[!UICONTROL Active]** status will automatically be applied to all messages currently using this preset.-->
 
-**Misslyckades**
+### Misslyckades
 
 Om valideringsprocessen misslyckas kommer den äldre versionen av förinställningen fortfarande att användas.
 
-Följande typer av uppdateringsfel är möjliga:
-* **Auktoriseringsfel**: innehavartoken är ogiltig eller inte auktoriserad.
-* **Ogiltig ändring**: en redigering utfördes på ett eller flera otillåtna fält.
-* **Förhandsvillkoret misslyckades**: vissa fält kan bara ha specifika värden och detta har inte följts.
+<!--The possible update error types are as follows:
+* **Authorization error**: the bearer token is invalid or not authorized.
+* **Illegal modification**: an edit was performed on one or more non-allowed fields.
+* **Precondition failed**: some fields can only have specific values and this has not been honored.-->
 
-<!--Learn more on the possible failure reasons in [this section](#monitor-message-presets).-->
+Läs mer om möjliga felorsaker i [det här avsnittet](#monitor-message-presets).
 
 När uppdateringen misslyckas blir förinställningen redigerbar igen. Du kan klicka på dess namn och uppdatera inställningarna som behöver korrigeras.
 

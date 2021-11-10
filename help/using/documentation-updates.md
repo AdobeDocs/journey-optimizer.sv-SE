@@ -2,9 +2,9 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 07382bdf4a9a7a75a5654cf81795c6c8e304360a
+source-git-commit: 5e93ccee2056814c25531fc13c3cd433a19077a6
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '834'
 ht-degree: 23%
 
 ---
@@ -25,8 +25,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Nya begränsningar i **Utvecklarhandbok för API för beslutshantering** begränsningar för erbjudandet som inte stöds av mobilen [!DNL Experience Edge] arbetsflöden. [Läs mer](offers/api-reference/offers-api/personalized-offers/create.md#limitations)
 * Nytt **Skapa simuleringar** -avsnitt. [Läs mer](offers/offer-activities/simulation.md)
 * Uppdaterat **Lägg till beslutsomfattningar** -avsnitt. [Läs mer](offers/offer-activities/create-offer-activities.md#add-decision-scopes)
-* Uppdaterat **Definiera innehåll för dina representationer** -avsnitt. [Läs mer](offers/offer-library/creating-personalized-offers.md#content)
-* Ett nytt avsnitt lades till om hur man definierar och personaliserar innehåll för offerternas representationer. [Läs mer](offers/offer-library/creating-personalized-offers.md#content)
+* Uppdaterat **Definiera innehåll för dina representationer** avsnitt, inklusive ett nytt [undersektion](offers/offer-library/creating-personalized-offers.md#custom-text) om hur man definierar och personaliserar egen text. [Läs mer](offers/offer-library/creating-personalized-offers.md#content)
 
 ## September 2021
 

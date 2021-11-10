@@ -2,7 +2,7 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 6cfd56d22cc18c044818dc73fc265ce5e882d36c
+source-git-commit: 5e93ccee2056814c25531fc13c3cd433a19077a6
 workflow-type: tm+mt
 source-wordcount: '1996'
 ht-degree: 10%
@@ -74,7 +74,7 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 <tr>
 <td>
 <p>Nu kan ni personalisera innehållet i era erbjudanden med Adobe Experience Platform profilattribut och segment, med samma uttrycksredigeringskomponent som finns i hela Journey Optimizer användargränssnitt. </p>
-<p>Mer information finns i den <a href="offers/offer-library/creating-personalized-offers.md#content">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="offers/offer-library/creating-personalized-offers.md#custom-text">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -320,7 +320,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 * Korrigerade ett tillgänglighetsproblem vid navigering på meddelandeflikar.
 * Ett lokaliseringsfel har korrigerats i e-postdesignerns etiketter.
 * Ett problem har korrigerats när du valde mer än en nod i en resa och klickade på Ta bort på egenskapspanelen.
-* Korrigerade ett fel som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
+* Korrigerade ett problem som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
 * Du kan nu ta reda på varför en meddelandeförinställning inte kunde skapas med hjälp av en tydligare varning i användargränssnittet.
 
 

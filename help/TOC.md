@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att leverera sammankopplade, kontextuella och personaliserade upplevelser till kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 699ebab2051d9ddfde20713a462490f11f9f7f1b
+source-git-commit: d575862cf7b6803e75b80ce6d1ff714ba319341b
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '758'
 ht-degree: 41%
 
 ---
@@ -225,7 +225,7 @@ ht-degree: 41%
             + [Delegera en underdomän](using/configuration/delegate-subdomain.md)
             + [Åtkomst till delegerade underdomäner](using/configuration/access-subdomains.md)
             + [Lägg till en Google TXT-post](using/configuration/google-txt.md)
-            + [Åtkomst till PTR-poster](using/configuration/ptr-records.md)
+            + [Få åtkomst till och redigera PTR-poster](using/configuration/ptr-records.md)
          + [Skapa IP-pooler](using/configuration/ip-pools.md)
          + Övervaka e-postadresser {#monitor-reputation}
             + [Hantera undertryckningslista](using/configuration/manage-suppression-list.md)
