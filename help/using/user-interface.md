@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: c6592d16dc8bd9ea2bada4fc351c844985a1042f
+source-git-commit: 1eb7e547019446ea946f7475730b01368f6a15eb
 workflow-type: tm+mt
 source-wordcount: '1459'
 ht-degree: 7%
@@ -15,11 +15,11 @@ ht-degree: 7%
 
 # Användargränssnitt {#cjm-user-interface}
 
-När du är ansluten till [Adobe Experience Cloud](http://experience.adobe.com) går du till [!DNL Journey Optimizer].
+Anslut till [Adobe Experience Cloud](http://experience.adobe.com) och bläddra till [!DNL Journey Optimizer].
 
-De viktigaste begreppen när du bläddrar i användargränssnittet är vanliga i Adobe Experience Platform. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html#adobe-experience-platform-ui-guide){target=&quot;_blank&quot;}.
+De viktigaste begreppen när du bläddrar i användargränssnittet är vanliga i Adobe Experience Platform. Se [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html#adobe-experience-platform-ui-guide){target=&quot;_blank&quot;} om du vill ha mer information.
 
-Vilka komponenter och funktioner som är tillgängliga i användargränssnittet beror på dina [behörigheter](administration/permissions.md) och ditt [licenspaket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target=&quot;_blank&quot;}. Fråga din Adobe Customer Success Manager för alla frågor.
+Vilka komponenter och funktioner som är tillgängliga i användargränssnittet beror på [behörigheter](administration/permissions.md) och [licensieringspaket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target=&quot;_blank&quot;}. Fråga din Adobe Customer Success Manager för alla frågor.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Nedan finns en fullständig lista över tjänster och funktioner som är tillgä
 
 **Start**
 
-[!DNL Journey Optimizer] startsidan innehåller viktiga länkar och resurser att starta. Listan **[!UICONTROL Recents]** innehåller genvägar till nyligen skapade eller uppdaterade meddelanden, händelser och resor. Den här listan visar datum och status för när de skapades och ändrades.
+[!DNL Journey Optimizer] startsidan innehåller viktiga länkar och resurser att starta. The **[!UICONTROL Recents]** listan innehåller genvägar till nyligen skapade eller uppdaterade meddelanden, händelser och resor. Den här listan visar datum och status för när de skapades och ändrades.
 
 **[!UICONTROL JOURNEY MANAGEMENT]**
 
@@ -56,7 +56,7 @@ Nedan finns en fullständig lista över tjänster och funktioner som är tillgä
 
 **[!UICONTROL CONTENT MANAGEMENT]**
 
-* **[!UICONTROL Assets]** -  [!DNL Adobe Experience Manager Assets Essentials] är en central databas med resurser som du kan använda för att fylla i dina meddelanden. [Läs mer](assets-essentials.md)
+* **[!UICONTROL Assets]** - [!DNL Adobe Experience Manager Assets Essentials] är en central databas med resurser som du kan använda för att fylla i dina meddelanden. [Läs mer](assets-essentials.md)
 
 **[!UICONTROL DATA MANAGEMENT]**
 
@@ -82,7 +82,7 @@ Nedan finns en fullständig lista över tjänster och funktioner som är tillgä
 
 **[!UICONTROL ADMINISTRATION]**
 
-* **[!UICONTROL Journey Administration]** - Använd den här menyn för att konfigurera  [händelser](event/about-events.md),  [datakällor ](datasource/about-data-sources.md) och  [](action/action.md) åtgärder som ska användas på dina resor.
+* **[!UICONTROL Journey Administration]** - Använd den här menyn för att konfigurera [händelser](event/about-events.md), [datakällor](datasource/about-data-sources.md) och [funktionsmakron](action/action.md) att använda på era resor.
 
 * **[!UICONTROL Sandboxes]** - Adobe Experience Platform tillhandahåller sandlådor som partitionerar en instans i separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. [Läs mer](administration/sandboxes.md)
 
@@ -92,22 +92,22 @@ Nedan finns en fullständig lista över tjänster och funktioner som är tillgä
 
 ## Användningsexempel inifrån produkten
 
-Utnyttja [!DNL Adobe Journey Optimizer]-användningsexempel från startsidan och ge några snabba indata för att skapa en kundresa.
+Utnyttja [!DNL Adobe Journey Optimizer] exempel från startsidan och ge några snabba indata för att skapa en kundresa.
 
 ![](assets/use-cases-home.png)
 
 Exempel:
 
-* **Skapa testprofiler** för att skapa testprofiler med vår CSV-mall för att testa personaliserade meddelanden och resor. Lär dig hur du implementerar det här användningsexemplet [på den här sidan](building-journeys/creating-test-profiles.md#use-case-1).
-* **Skicka ett födelsedagsmeddelande till kunder** för att automatiskt skicka ett e-postmeddelande och önska dina kunder en viss födelsedag. (kommer snart)
-* **Skicka e-post till nya kunder** för att enkelt skicka upp till två e-postmeddelanden för att välkomna dina nyregistrerade kunder. (kommer snart)
-* **Skicka push-meddelanden till importerade kundlistor** för att snabbt skicka ett push-meddelande till en lista över kunder som importerats från en CSV-fil. (kommer snart)
+* **Skapa testprofiler**, för att skapa testprofiler med vår CSV-mall för att testa personaliserade meddelanden och resor. Lär dig implementera det här användningsexemplet [på den här sidan](building-journeys/creating-test-profiles.md#use-case-1).
+* **Skicka ett födelsedagsmeddelande till kunder**, för att automatiskt skicka ett e-postmeddelande och önska dina kunder en viss födelsedag. (kommer snart)
+* **Skicka e-post till nya kunder**, för att enkelt skicka upp till två e-postmeddelanden till dina nyregistrerade kunder. (kommer snart)
+* **Skicka push-meddelanden till importerad lista över kunder**, för att snabbt skicka ett push-meddelande till en lista över kunder som importerats från en CSV-fil. (kommer snart)
 
-Klicka på **[!UICONTROL View details]** om du vill veta mer om de olika användningsexemplen.
+Klicka **[!UICONTROL View details]** om du vill veta mer om de olika användningsexemplen.
 
-Klicka på knappen **[!UICONTROL Begin]** för att starta användningsfallet.
+Klicka på **[!UICONTROL Begin]** för att starta användningsfallet.
 
-Du kommer åt körda användningsfall från knappen **[!UICONTROL View use case library]**.
+Du kan få åtkomst till körda användningsfall från **[!UICONTROL View use case library]** -knappen.
 
 ## Tillgänglighet{#accessibility}
 
@@ -153,7 +153,7 @@ Du kan använda dessa kortkommandon i vissa delar av Journey Optimizer:
   </tr>
   <tr>
     <td>Välj alla aktiviteter</td>
-    <td>Ctrl + A (Windows)<br/>Kommando + A (Mac)</td>
+    <td>Ctrl + A (Windows)<br/>Cmd + A (Mac)</td>
   </tr>
   <tr>
     <td>Ta bort de valda aktiviteterna</td>
@@ -195,7 +195,7 @@ Konfigurationsruta för dessa element:
   <tr>
     <td>
 
-Utlös en händelse i en segmentbaserad resa för vilken alternativet **[!UICONTROL Single profile at a time]** är aktiverat
+Utlös en händelse i en segmentbaserad resa för vilken **[!UICONTROL Single profile at a time]** alternativ är aktiverat
 
 </td>
     <td>P</td>
@@ -214,7 +214,7 @@ Utlös en händelse i en segmentbaserad resa för vilken alternativet **[!UICONT
   <tr>
     <td>Textfält</td>
     <td>Markera all text i det markerade fältet</td>
-    <td>Ctrl + A (Windows)<br/>Kommando + A (Mac)</td>
+    <td>Ctrl + A (Windows)<br/>Cmd + A (Mac)</td>
   </tr>
   <tr>
     <td rowspan="2">Popup-fönster</td>
@@ -238,7 +238,7 @@ Utlös en händelse i en segmentbaserad resa för vilken alternativet **[!UICONT
   <tr>
     <td>Förhandsgranska nyttolast</td>
     <td>Välj nyttolast</td>
-    <td>Ctrl + A (Windows)<br/>Kommando + A (Mac)</td>
+    <td>Ctrl + A (Windows)<br/>Cmd + A (Mac)</td>
   </tr>
 </table>
 
@@ -246,13 +246,13 @@ Utlös en händelse i en segmentbaserad resa för vilken alternativet **[!UICONT
 
 Få åtkomst till Adobe Journey Optimizer hjälpsidor från startsidans nedre del.
 
-Använd ikonen **Hjälp** för att få åtkomst till hjälpsidor, kontakta support och dela feedback. Du kan söka efter hjälpartiklar och videoklipp i sökfältet.
+Använd **Hjälp** ikon för att få tillgång till hjälpsidor, kontakta support och dela feedback. Du kan söka efter hjälpartiklar och videoklipp i sökfältet.
 
 ![](assets/ajo-help.png)
 
 ## Webbläsare som stöds
 
-Gränssnittet Adobe [!DNL Journey Optimizer] är utformat för att fungera optimalt i den senaste versionen av Google Chrome. Du kan ha problem med att använda vissa funktioner i äldre versioner eller i andra webbläsare.
+Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera optimalt i den senaste versionen av Google Chrome. Du kan ha problem med att använda vissa funktioner i äldre versioner eller i andra webbläsare.
 
 ## Språkinställningar
 
@@ -266,7 +266,7 @@ Standardspråket för gränssnittet avgörs av det språk du föredrar i använd
 
 Så här byter du språk:
 
-* Klicka på **Inställningar** i din avatar högst upp till höger.
+* Klicka **Inställningar** från din avatar, längst upp till höger.
    ![](assets/preferences.png)
 * Klicka sedan på det språk som visas under din e-postadress
 * Välj önskat språk och klicka på **Spara**. Du kan välja ett andra språk om komponenten som du använder inte är lokaliserad på ditt första språk.
@@ -280,7 +280,7 @@ Börja skriva in innehåll för att visa de bästa resultaten. Hjälpartiklar om
 
 ![](assets/unified-search.png)
 
-Tryck på **Enter** för att få tillgång till alla resultat och filtrera efter affärsobjekt.
+Tryck **Retur** för att få tillgång till alla resultat och filtrera efter affärsobjekt.
 
 ![](assets/search-and-filter.png)
 
@@ -290,17 +290,17 @@ I de flesta av listorna kan du söka efter ett visst objekt och välja filtervil
 
 Du kommer åt filter genom att klicka på filterikonen högst upp till vänster i listan. Med filtermenyn kan du filtrera de visade elementen enligt olika villkor. Du kan välja att endast visa element av en viss typ eller status, de element du har skapat eller de element som har ändrats under de senaste 30 dagarna. Alternativen varierar beroende på sammanhanget.
 
-I listan över resor kan du filtrera resor utifrån deras status, typ och version från **[!UICONTROL Status and version filters]**. Typen kan vara: **[!UICONTROL Unitary event]**, **[!UICONTROL Segment qualification]**, **[!UICONTROL Read segment]**, **[!UICONTROL Business event]** eller **[!UICONTROL Burst]**. Du kan välja att endast visa resor som använder en specifik händelse, fältgrupp eller åtgärd från **[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**. Med **[!UICONTROL Publication filters]** kan du välja ett publiceringsdatum eller en användare. Du kan till exempel välja att visa de senaste versionerna av direktresor som publicerades igår. [Läs mer](building-journeys/using-the-journey-designer.md).
+I listan över resor kan du filtrera resorna efter status, typ och version från **[!UICONTROL Status and version filters]**. Typen kan vara: **[!UICONTROL Unitary event]**, **[!UICONTROL Segment qualification]**, **[!UICONTROL Read segment]**, **[!UICONTROL Business event]** eller **[!UICONTROL Burst]**. Du kan välja att endast visa resor som använder en specifik händelse, fältgrupp eller åtgärd från **[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**. The **[!UICONTROL Publication filters]** gör att du kan välja ett publiceringsdatum eller en användare. Du kan till exempel välja att visa de senaste versionerna av direktresor som publicerades igår. [Läs mer](building-journeys/using-the-journey-designer.md).
 
 >[!NOTE]
 >
 >Observera att kolumner som visas kan personaliseras med hjälp av konfigurationsknappen längst upp till höger i listorna. Personalisering sparas per användare.
 
-Använd kolumnerna **[!UICONTROL Last update]** och **[!UICONTROL Last update by]** för att kontrollera när den senaste uppdateringen av dina resor gjordes och vem som sparade den.
+Använd **[!UICONTROL Last update]** och **[!UICONTROL Last update by]** kolumner för att kontrollera när den senaste uppdateringen av dina resor gjordes och vem som sparade den.
 
 ![](assets/filter-journeys.png)
 
-I rutorna Händelse, Datakälla och Åtgärdskonfiguration visar fältet **[!UICONTROL Used in]** antalet resor som använder just den händelsen, fältgruppen eller åtgärden. Du kan klicka på knappen **[!UICONTROL View journeys]** för att visa en lista över motsvarande resor.
+I konfigurationsrutorna Händelse, Datakälla och Åtgärd visas **[!UICONTROL Used in]** fältet visar antalet resor som använder den aktuella händelsen, fältgruppen eller åtgärden. Du kan klicka på knappen **[!UICONTROL View journeys]** för att visa en lista över motsvarande resor.
 
 ![](assets/journey3bis.png)
 
