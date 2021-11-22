@@ -5,8 +5,7 @@ description: Läs mer om funktionen i NextHours
 feature: Journeys
 role: Data Engineer
 level: Experienced
-exl-id: 079a91b6-49c5-4e68-a240-358ed0cded92
-source-git-commit: 2022b2c81738ae6d3e66280265948c5b88a117c8
+source-git-commit: 23f4e8224ea5b00e8132b6a3f3e32f73b0cc993f
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 15%
