@@ -5,8 +5,7 @@ description: Läs mer om funktionen inSegment
 feature: Journeys
 role: Data Engineer
 level: Experienced
-exl-id: 8417af75-6e97-4ad4-86b4-3ecd264a5560
-source-git-commit: 2022b2c81738ae6d3e66280265948c5b88a117c8
+source-git-commit: 23f4e8224ea5b00e8132b6a3f3e32f73b0cc993f
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 5%
