@@ -1,33 +1,31 @@
 ---
 title: Validering av personalisering
 description: Läs mer om validering av personalisering och felsökning
-feature: Personalisering
-topic: Personalisering
+feature: Personalization
+topic: Personalization
 role: Data Engineer
 level: Intermediate
-source-git-commit: 94f3fb815fdeec9853351be9bc41b0579cfc6c5b
+exl-id: 7abeec5e-743f-48fb-a4a6-056665e8bfda
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 1%
+source-wordcount: '322'
+ht-degree: 0%
 
 ---
-
 
 # Validering av personalisering {#personalization-validation}
 
 ## Valideringsmekanismer
 
-Använd knappen **Validera** på skärmen **Expression Editor** för att kontrollera din personaliseringssyntax.
+I **Uttrycksredigeraren** skärm, använd **Validera** för att kontrollera din personaliseringssyntax.
 
 >[!NOTE]
-> Valideringen körs automatiskt när du klickar på knappen **Lägg till** för att stänga redigeringsfönstret.
-
+> Valideringen utförs automatiskt när du klickar på **Lägg till** för att stänga redigeringsfönstret.
 
 ![](assets/perso_validation1.png)
 
 >[!IMPORTANT]
 > Om personaliseringssyntaxen inte är giltig kan du inte stänga uttrycksredigeringsfönstret.
-
 
 ## Vanliga fel
 
@@ -35,17 +33,17 @@ Använd knappen **Validera** på skärmen **Expression Editor** för att kontrol
 
 När du försöker referera till ett fält som inte är definierat i schemat.
 
-I det här fallet är **firstName1** inte definierat som attribut i profilschemat:
+I detta fall **firstName1** är inte definierad som attribut i profilschemat:
 
 ```
 {{profile.person.name.firstName1}}
 ```
 
-* **Typmatchningsfel för variabeln XYZ. Förväntad array. Hittade sträng.**
+* **Typmatchningsfel för variabeln XYZ. Förväntad array. En sträng hittades.**
 
 När du försöker iterera över en sträng i stället för en array:
 
-I det här fallet är **product** inte en matris:
+I detta fall **produkt** är inte en array:
 
 ```
 {{each profile.person.name.firstName as |product|}}
@@ -53,11 +51,11 @@ I det här fallet är **product** inte en matris:
 {{/each}}
 ```
 
-* **Ogiltig syntax för verktygsfält.`‘[XYZ}}’`** hittades
+* **Ogiltig syntax för verktygsfält. Hittade`‘[XYZ}}’`**
 
 När ogiltig syntax för verktygsfält används.
 
-Hanteringsfältsuttryck omges av **{{expression}}**
+Handlebars-uttryck omges av **{{expression}}**
 
 ```
    {{[profile.person.name.firstName}}
@@ -88,7 +86,7 @@ Valideringen utförs under meddelandepubliceringen eller under innehållsvalider
  </thead> 
  <tbody> 
   <tr> 
-   <td>Resurs med id placementID och typen OfferPlacement hittades inte <br/>
+   <td>Resurs med ID placementID och typen OfferPlacement hittades inte <br/>
 Resurs med id activityID och typen OfferActivity hittades inte<br/></td> 
    <td>Kontrollera om ActivityID och/eller PlacementID är tillgängliga</td> 
   </tr> 
@@ -112,9 +110,8 @@ Resurs med id activityID och typen OfferActivity hittades inte<br/></td>
    <td>Erbjudandeattributet offer-attribute är ogiltigt.</td> 
    <td>Kontrollera om erbjudandeattributet som refereras i erbjudandeofferten är giltigt. Följande attribut är giltiga: <br/>
 Bild: deliveryURL, linkURL<br/>
-Text: content<br/>
+Text: innehåll<br/>
 HTML: innehåll<br/></td> 
   </tr> 
  </tbody> 
 </table>
-

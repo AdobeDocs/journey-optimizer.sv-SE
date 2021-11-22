@@ -1,20 +1,21 @@
 ---
 title: Radera beslutsregler
 description: Beslutsregler läggs till i ett personaliserat erbjudande och tillämpas på en profil för att avgöra vem som är berättigad.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+exl-id: 52f4803b-9e9a-4ad0-ae24-de652006763d
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 4%
+source-wordcount: '159'
+ht-degree: 3%
 
 ---
 
 # Ta bort en beslutsregel
 
-Ibland kan det vara nödvändigt att ta bort (DELETE) en beslutsregel. Endast beslutsregler som du skapar i innehavarbehållaren kan tas bort. Detta görs genom att utföra en DELETE-begäran till API:t [!DNL Offer Library] med instans-ID:t för den beslutsregel som du vill ta bort.
+Ibland kan det vara nödvändigt att ta bort (DELETE) en beslutsregel. Endast beslutsregler som du skapar i innehavarbehållaren kan tas bort. Detta görs genom att DELETE begär [!DNL Offer Library] API som använder instans-ID för den beslutsregel som du vill ta bort.
 
 **API-format**
 

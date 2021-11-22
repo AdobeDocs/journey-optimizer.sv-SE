@@ -1,24 +1,25 @@
 ---
 title: Skapa taggar
 description: Med taggar kan du bättre ordna och sortera bland dina erbjudanden.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+exl-id: f3f7cccb-0173-409e-8b76-8b6e136a22ac
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '128'
 ht-degree: 6%
 
 ---
 
 # Skapa en tagg
 
-Du kan skapa en tagg genom att göra en POST-förfrågan till API:t [!DNL Offer Library] och samtidigt ange ditt behållar-ID.
+Du kan skapa en tagg genom att göra en POST-förfrågan till [!DNL Offer Library] API, samtidigt som du anger ditt behållar-ID.
 
 ## Sidhuvuden för acceptera och innehållstyp
 
-I följande tabell visas giltiga värden som består av fälten *Content-Type* och *Accept* i begärandehuvudet:
+I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
@@ -54,7 +55,7 @@ curl -X POST \
 
 **Svar**
 
-Ett lyckat svar returnerar information om den nyligen skapade taggen, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort taggen. Du kan använda din unika tagg `@id` i senare självstudier för att skapa samlingar och personaliserade erbjudanden.
+Ett godkänt svar returnerar information om den nyligen skapade taggen, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort taggen. Du kan använda din unika tagg `@id` i senare självstudiekurser för att skapa samlingar och personaliserade erbjudanden.
 
 ```json
 {

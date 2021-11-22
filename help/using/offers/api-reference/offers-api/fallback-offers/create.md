@@ -1,24 +1,25 @@
 ---
 title: Skapa ett reserverbjudande
 description: Ett reserverbjudande skickas till kunderna om de inte är berättigade till andra erbjudanden
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+exl-id: 156d6c71-d8fd-4631-ae0c-44452d664dde
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 8%
+source-wordcount: '139'
+ht-degree: 7%
 
 ---
 
 # Skapa ett reserverbjudande
 
-Du kan skapa ett reserverbjudande genom att göra en POST-förfrågan till API:t [!DNL Offer Library] och samtidigt ange ditt behållar-ID.
+Du kan skapa ett reserverbjudande genom att göra en POST till [!DNL Offer Library] API, samtidigt som du anger ditt behållar-ID.
 
 ## Sidhuvuden för acceptera och innehållstyp
 
-I följande tabell visas giltiga värden som består av fälten *Content-Type* och *Accept* i begärandehuvudet:
+I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
@@ -70,7 +71,7 @@ curl -X POST \
 
 **Svar**
 
-Ett lyckat svar returnerar information om det nya reserverbjudandet, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort ditt reserverbjudande. Du kan använda ditt unika reserverbjudande `@id` i en senare självstudiekurs för att fatta ett beslut.
+Ett lyckat svar returnerar information om det nya reserverbjudandet, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort ditt reserverbjudande. Du kan använda ditt unika reserverbjudande `@id` i en senare självstudiekurs för att skapa ett beslut.
 
 
 ```json

@@ -1,13 +1,14 @@
 ---
 title: Kom igång med resor
 description: Kom igång med resor
-feature: Resor
-topic: Innehållshantering
+feature: Journeys
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
+exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '1724'
+source-wordcount: '1721'
 ht-degree: 6%
 
 ---
@@ -30,39 +31,39 @@ För att kunna skicka meddelanden med resor krävs följande konfiguration:
 
    ![](../assets/jo-datasource.png)
 
-1. **Konfigurera en åtgärd**: Journey Optimizer meddelandefunktioner är inbyggda, du behöver bara utforma ditt innehåll och publicera ditt budskap. Se [det här avsnittet](../get-started-content.md). Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en anpassad åtgärd. Läs mer i det här [avsnittet](../action/action.md). Det här steget utförs av en **teknisk användare**.
+1. **Konfigurera en åtgärd**: Journey Optimizer meddelandefunktioner är inbyggda, du behöver bara utforma ditt innehåll och publicera ditt budskap. Se [det här avsnittet](../get-started-content.md). Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en anpassad åtgärd. Läs mer om detta [section](../action/action.md). Det här steget utförs av en **teknisk användare**.
 
    ![](../assets/create-content-push.png)
 
 ## Bygga din resa{#jo-build}
 
-Det här steget utförs av **företagsanvändaren**. Här skapar du dina resor. Kombinera de olika händelserna, orkestreringen och åtgärderna för att skapa scenarier i flera steg över olika kanaler.
+Det här steget utförs av **företagsanvändare**. Här skapar du dina resor. Kombinera de olika händelserna, orkestreringen och åtgärderna för att skapa scenarier i flera steg över olika kanaler.
 
 Här är de viktigaste stegen för att skicka meddelanden via resor:
 
-1. Klicka på **[!UICONTROL Journeys]** i menyavsnittet RESURSHANTERING. Listan över resor visas.
+1. Klicka på **[!UICONTROL Journeys]**. Listan över resor visas.
 
    ![](../assets/interface-journeys.png)
 
-1. Klicka på **[!UICONTROL Create Journey]** för att skapa en ny resa.
+1. Klicka **[!UICONTROL Create Journey]** för att skapa en ny resa.
 
-1. Redigera resans egenskaper i konfigurationsrutan som visas till höger. Läs mer i det här [avsnittet](journey-gs.md#change-properties).
+1. Redigera resans egenskaper i konfigurationsrutan som visas till höger. Läs mer om detta [section](journey-gs.md#change-properties).
 
    ![](../assets/jo-properties.png)
 
-1. Börja med att dra och släppa en händelse eller en **Läs segment**-aktivitet från paletten till arbetsytan. Mer information om resedesign finns i [det här avsnittet](using-the-journey-designer.md).
+1. Börja med att dra och släppa en händelse eller en **Läs segment** från paletten till arbetsytan. Mer information om resedesign finns i [det här avsnittet](using-the-journey-designer.md).
 
    ![](../assets/read-segment.png)
 
 1. Dra och släpp nästa steg som personen kommer att följa. Du kan till exempel lägga till ett villkor följt av ett meddelande. Mer information om aktiviteter finns i [det här avsnittet](using-the-journey-designer.md).
 
-1. Testa din resa med testprofiler. Läs mer i det här [avsnittet](testing-the-journey.md)
+1. Testa din resa med testprofiler. Läs mer om detta [section](testing-the-journey.md)
 
-1. Publicera resan för att aktivera den. Läs mer i det här [avsnittet](publishing-the-journey.md).
+1. Publicera resan för att aktivera den. Läs mer om detta [section](publishing-the-journey.md).
 
    ![](../assets/jo-journeyuc2_32bis.png)
 
-1. Övervaka din resa med de dedikerade rapportverktygen för att mäta hur effektiv din resa är. Läs mer i det här [avsnittet](../reports/live-report.md).
+1. Övervaka din resa med de dedikerade rapportverktygen för att mäta hur effektiv din resa är. Läs mer om detta [section](../reports/live-report.md).
 
    ![](../assets/jo-dynamic_report_journey_12.png)
 
@@ -70,11 +71,11 @@ Här är de viktigaste stegen för att skicka meddelanden via resor:
 
 Klicka på pennikonen i det övre högra hörnet för att komma åt resans egenskaper.
 
-Du kan ändra namnet på resan, lägga till en beskrivning, tillåta återinträde, välja start- och slutdatum och definiera en **[!UICONTROL Timeout and error]**-varaktighet om du är administratör.
+Du kan ändra namnet på resan, lägga till en beskrivning, tillåta återinträde, välja start- och slutdatum och definiera en **[!UICONTROL Timeout and error]** längd om du är administratör.
 
 På den här skärmen visas publiceringsdatumet och namnet på den användare som publicerade resan.
 
-Med **Kopiera teknisk information** kan du kopiera teknisk information om den resa som supportteamet kan använda för att felsöka. Följande information kopieras: JourneyVersion UID, OrgID, orgName, sandboxName, lastDeployedBy, lastDeployedAt.
+The **Kopiera teknisk information** Med kan du kopiera teknisk information om den resa som supportteamet kan använda för att felsöka. Följande information kopieras: JourneyVersion UID, OrgID, orgName, sandboxName, lastDeployedBy, lastDeployedAt.
 
 ![](../assets/journey32.png)
 
@@ -84,21 +85,21 @@ Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet f�
 
 När en resa&quot;slutar&quot; får den statusen **[!UICONTROL Closed]**. Resan kommer att sluta låta nya individer komma in på resan. Personer som redan är på resan kommer att slutföra resan normalt.
 
-Efter den globala standardtidsgränsen på 30 dagar växlar resan till statusen **Slutförd**. Se det här [avsnittet](../building-journeys/journey-gs.md#global_timeout).
+Efter den globala standardtidsgränsen på 30 dagar växlar resan till **Slutförd** status. Se det här [section](../building-journeys/journey-gs.md#global_timeout).
 
 ### Tidsgräns och fel i reseaktiviteter {#timeout_and_error}
 
-När du redigerar en åtgärd eller villkorsaktivitet kan du definiera en alternativ sökväg om ett fel eller en timeout inträffar. Om bearbetningen av aktiviteten som förhör ett tredjepartssystem överskrider den tidsgräns som anges i färdens egenskaper (**[!UICONTROL Timeout and  error]**-fält), väljs den andra vägen för att utföra en eventuell reservåtgärd.
+När du redigerar en åtgärd eller villkorsaktivitet kan du definiera en alternativ sökväg om ett fel eller en timeout inträffar. Om bearbetningen av aktiviteten som förhör ett tredjepartssystem överskrider den tidsgräns som anges i färdens egenskaper (**[!UICONTROL Timeout and  error]** -fält) väljs den andra sökvägen för att utföra en eventuell reservåtgärd.
 
 Giltiga värden är mellan 1 och 30 sekunder.
 
-Vi rekommenderar att du definierar ett mycket kort **[!UICONTROL Timeout and error]**-värde om din resa är tidskänslig (exempel: att reagera på en persons realtidsplats) eftersom du inte kan fördröja åtgärden i mer än några sekunder. Om resan är mindre tidskänslig kan du använda ett längre värde för att ge mer tid till det system som anropas för att skicka ett giltigt svar.
+Vi rekommenderar att du definierar en mycket kort **[!UICONTROL Timeout and error]** om resan är tidskänslig (exempel: att reagera på en persons realtidsplats) eftersom du inte kan fördröja åtgärden i mer än några sekunder. Om resan är mindre tidskänslig kan du använda ett längre värde för att ge mer tid till det system som anropas för att skicka ett giltigt svar.
 
 Journeys använder också en global tidsgräns. Se [nästa avsnitt](#global_timeout).
 
 ### Tidsgräns för global resa {#global_timeout}
 
-Förutom den [timeout](#timeout_and_error) som används i reseaktiviteter finns det också en global timeout som inte visas i gränssnittet och inte kan ändras. Den här tidsgränsen kommer att stoppa enskilda personers framsteg på resan 30 dagar efter att de har kommit in. Det innebär att en persons resa inte kan vara längre än 30 dagar. Efter timeoutperioden på 30 dagar tas personens data bort. Individer som fortfarande flyter på i slutet av tidsgränsen kommer att stoppas och de kommer att beaktas som fel vid rapporteringen.
+Förutom [timeout](#timeout_and_error) som används i reseaktiviteter finns det också en timeout för den globala resan som inte visas i gränssnittet och som inte kan ändras. Den här tidsgränsen kommer att stoppa enskilda personers framsteg på resan 30 dagar efter att de har kommit in. Det innebär att en persons resa inte kan vara längre än 30 dagar. Efter timeoutperioden på 30 dagar tas personens data bort. Individer som fortfarande flyter på i slutet av tidsgränsen kommer att stoppas och de kommer att beaktas som fel vid rapporteringen.
 
 >[!NOTE]
 >
@@ -112,7 +113,7 @@ Tidszonen definieras på resenivå.
 
 Du kan ange en fast tidszon eller använda Adobe Experience Platform-profiler för att definiera resetidszonen.
 
-Mer information om hantering av tidszoner finns på [den här sidan](../building-journeys/timezone-management.md).
+Mer information om hantering av tidszoner finns i [den här sidan](../building-journeys/timezone-management.md).
 
 ### Burst-läge {#burst}
 
@@ -130,7 +131,7 @@ Viktigt:
 
 Om något av kraven inte är uppfyllt, är inte sprängningsläget tillgängligt under resan.
 
-Aktivera Burst-läget genom att öppna resan och klicka på pennikonen i det övre högra hörnet för att komma åt resans egenskaper. Aktivera sedan växlingsknappen **Aktivera burst-läge**.
+Aktivera Burst-läget genom att öppna resan och klicka på pennikonen i det övre högra hörnet för att komma åt resans egenskaper. Aktivera sedan **Aktivera sprängningsläge** växla.
 
 ![](../assets/burst.png)
 
@@ -151,17 +152,17 @@ Personen kan sedan återinträda i resan om återinträde tillåts. Läs [den h�
 
 En resa kan avslutas på grund av följande orsaker:
 
-* Resan stängs manuellt med knappen **[!UICONTROL Close to new entrances]**.
+* Resan stängs manuellt via **[!UICONTROL Close to new entrances]** -knappen.
 * En segmentbaserad resa som utförts i ett enda steg.
 * Efter den sista förekomsten av en återkommande segmentbaserad resa.
 
-När en resa stängs (av någon av anledningarna ovan) får den statusen **[!UICONTROL Closed]**. Resan kommer att sluta låta nya individer komma in på resan. Personer som redan är på resan kommer att slutföra resan normalt. Efter den globala standardtidsgränsen på 30 dagar växlar resan till statusen **Slutförd**. Se det här [avsnittet](../building-journeys/journey-gs.md#global_timeout).
+När en resa stängs (av någon av anledningarna ovan) får den statusen **[!UICONTROL Closed]**. Resan kommer att sluta låta nya individer komma in på resan. Personer som redan är på resan kommer att slutföra resan normalt. Efter den globala standardtidsgränsen på 30 dagar växlar resan till **Slutförd** status. Se det här [section](../building-journeys/journey-gs.md#global_timeout).
 
 Om ni behöver stoppa alla personers framsteg på resan kan ni stoppa den. Om du stoppar resan kommer alla personer på resan att tidsgränsen för timeout.
 
 Så här stänger eller stoppar du en resa manuellt:
 
-Med alternativen **[!UICONTROL Stop]** och **[!UICONTROL Close to new entrances]** kan du avsluta **direktresor**. När en resa stängs innebär det **att nya kunder inte kan ta sig in på resan** och att de kunder som redan har tagit sig in på resan kan uppleva den till slutet. Det här är det mest rekommenderade sättet att få ett slut på en resa eftersom den erbjuder den bästa upplevelsen för kunderna. Att stoppa en resa innebär att alla som redan har tagit sig in på en resa stoppas i processen. Resan är i stort sett avstängd.
+The **[!UICONTROL Stop]** och **[!UICONTROL Close to new entrances]** kan du avsluta **live** resor. Att avsluta en resa innebär **att nya kunders ankomst till resan blockeras** och att de kunder som redan är med på resan kan uppleva det hela tiden. Det här är det mest rekommenderade sättet att få ett slut på en resa eftersom den erbjuder den bästa upplevelsen för kunderna. Att stoppa en resa innebär att alla som redan har tagit sig in på en resa stoppas i processen. Resan är i stort sett avstängd.
 
 >[!NOTE]
 >
@@ -171,23 +172,23 @@ Med alternativen **[!UICONTROL Stop]** och **[!UICONTROL Close to new entrances]
 
 Du kan stänga en resa manuellt för att säkerställa att kunder som redan har gått in på resan kan slutföra sin resa, men nya användare inte kan ta sig in på resan.
 
-När en resa stängs får den statusen **[!UICONTROL Closed]**. Efter den globala standardtidsgränsen på 30 dagar växlar resan till statusen **Slutförd**. Se det här [avsnittet](../building-journeys/journey-gs.md#global_timeout).
+När en resa stängs får den statusen **[!UICONTROL Closed]**. Efter den globala standardtidsgränsen på 30 dagar växlar resan till **Slutförd** status. Se det här [section](../building-journeys/journey-gs.md#global_timeout).
 
 En stängd reseversion kan inte startas om eller tas bort. Du kan skapa en ny version av den eller duplicera den. Endast slutförda resor kan tas bort.
 
-Om du vill stänga en resa från listan med resor klickar du på knappen **[!UICONTROL Ellipsis]** till höger om resenamnet och väljer **[!UICONTROL Close to new entrances]**.
+Om du vill stänga en resa från listan över resor klickar du på **[!UICONTROL Ellipsis]** knapp som finns till höger om resenamnet och väljer **[!UICONTROL Close to new entrances]**.
 
 ![](../assets/journey-finish-quick-action.png)
 
 Du kan även:
 
-1. Klicka på den resa du vill stänga i listan **[!UICONTROL Journeys]**.
+1. I **[!UICONTROL Journeys]** klickar du på den resa du vill stänga.
 1. Klicka på nedpilen längst upp till höger.
 
    ![](../assets/finish_drop_down_list.png)
 
 1. Klicka på **[!UICONTROL Close to new entrances]**. En dialogruta visas.
-1. Bekräfta genom att klicka på **[!UICONTROL Close to new entrances]**.
+1. Klicka **[!UICONTROL Close to new entrances]** för att bekräfta.
 
 ### Stoppa en resa
 
@@ -197,16 +198,16 @@ Det går inte att starta om en stoppad reseversion.
 
 När den stoppas får en resa statusen **[!UICONTROL Stopped]**.
 
-Du kan till exempel stoppa en resa om en marknadsförare upptäcker att resan riktar sig mot fel målgrupp eller en anpassad åtgärd som ska leverera meddelanden inte fungerar korrekt. Om du vill stoppa en resa från listan med resor klickar du på knappen **[!UICONTROL Ellipsis]** till höger om resenamnet och väljer **[!UICONTROL Stop]**.
+Du kan till exempel stoppa en resa om en marknadsförare upptäcker att resan riktar sig mot fel målgrupp eller en anpassad åtgärd som ska leverera meddelanden inte fungerar korrekt. Om du vill stoppa en resa från listan över resor klickar du på **[!UICONTROL Ellipsis]** knapp som finns till höger om resenamnet och väljer **[!UICONTROL Stop]**.
 
 ![](../assets/journey-finish-quick-action.png)
 
 Du kan även:
 
-1. Klicka på den resa du vill stoppa i listan **[!UICONTROL Journeys]**.
+1. I **[!UICONTROL Journeys]** klickar du på den resa du vill stoppa.
 1. Klicka på nedpilen i det övre högra hörnet.
 
 ![](../assets/finish_drop_down_list.png)
 
 1. Klicka på **[!UICONTROL Stop]**. En dialogruta visas.
-1. Bekräfta genom att klicka på **[!UICONTROL Stop]**.
+1. Klicka **[!UICONTROL Stop]** för att bekräfta.

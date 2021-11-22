@@ -1,26 +1,27 @@
 ---
 title: Lägg till personaliserade erbjudanden
 description: Lär dig hur du lägger till personaliserade erbjudanden i dina meddelanden
-feature: Resor
-topic: Innehållshantering
+feature: Journeys
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 1f93158f89e7e05e8e7978960f09cc7e1d4cdc7a
+exl-id: 1e648eca-b5ca-4767-b45d-c179243e347f
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
 
 # Lägg till personaliserade erbjudanden {#deliver-personalized-offers}
 
-I [!DNL Journey Optimizer]-e-postmeddelanden kan du infoga beslut (som tidigare kallats&quot;erbjudandeaktiviteter&quot;) som utnyttjar beslutsmotorn för erbjudanden för att välja det bästa erbjudandet som ska levereras till dina kunder.
+I [!DNL Journey Optimizer] e-postmeddelanden kan du infoga beslut (som tidigare kallats&quot;erbjudandeaktiviteter&quot;) som utnyttjar beslutsmotorn för erbjudanden för att välja det bästa erbjudandet som ska levereras till dina kunder.
 
 Du kan t.ex. lägga till ett beslut som i ditt e-postmeddelande visas ett särskilt rabatterbjudande som varierar beroende på mottagarens lojalitetsnivå.
 
 Mer information om hur du skapar och hanterar erbjudanden finns i [det här avsnittet](offers/get-started/starting-offer-decisioning.md).
 
-Om du vill ha ett **fullständigt exempel** som visar hur du konfigurerar erbjudanden kan du använda dem i ett beslut och använda det här beslutet i ett e-postmeddelande kan du läsa [det här avsnittet](offers/offers-e2e.md#insert-decision-in-email).
+För **ett komplett exempel** visa hur man konfigurerar erbjudanden, använda dem i ett beslut och utnyttja detta beslut i ett e-postmeddelande, se [det här avsnittet](offers/offers-e2e.md#insert-decision-in-email).
 
 ➡️ [Lär dig hur du lägger till erbjudanden som personalisering i den här videon](#video-offers)
 
@@ -28,25 +29,25 @@ Om du vill ha ett **fullständigt exempel** som visar hur du konfigurerar erbjud
 
 >[!CAUTION]
 >
->Innan du börjar måste du [definiera ett erbjudandebeslut](offers/offer-activities/create-offer-activities.md).
+>Innan du börjar måste du [definiera ett beslut om erbjudande](offers/offer-activities/create-offer-activities.md).
 
 Följ stegen nedan för att infoga ett beslut i ett e-postmeddelande:
 
 1. Skapa e-postmeddelandet och öppna sedan e-postdesignern för att konfigurera innehållet.
 
-1. Lägg till en **[!UICONTROL Offer decision]**-innehållskomponent.
+1. Lägg till en **[!UICONTROL Offer decision]** innehållskomponent.
 
    ![](assets/deliver-offer-component.png)
 
    Lär dig hur du använder innehållskomponenter i [det här avsnittet](content-components.md).
 
-1. Fliken **[!UICONTROL Offer decision]** visas på den högra paletten. Klicka på **[!UICONTROL Select Offer decision]**.
+1. The **[!UICONTROL Offer decision]** visas på den högra paletten. Klicka på **[!UICONTROL Select Offer decision]**.
 
    ![](assets/deliver-offer-tab.png)
 
 1. I det fönster som visas väljer du den placering som motsvarar de erbjudanden som du vill visa.
 
-   [Placeringar ](offers/offer-library/creating-placements.md) är behållare som används för att visa upp dina erbjudanden. I det här exemplet använder vi placeringen&quot;e-post top image&quot;. Den här placeringen har skapats i erbjudandebiblioteket för att visa erbjudanden av bildtyp som ligger överst i meddelandena.
+   [Placeringar](offers/offer-library/creating-placements.md) är behållare som används för att visa upp dina erbjudanden. I det här exemplet använder vi placeringen&quot;e-post top image&quot;. Den här placeringen har skapats i erbjudandebiblioteket för att visa erbjudanden av bildtyp som ligger överst i meddelandena.
 
 1. Välj den erbjudandeaktivitet som ska användas i innehållskomponenten och klicka sedan på **[!UICONTROL Add]**.
 
@@ -61,7 +62,7 @@ Erbjudandeaktiviteten har nu lagts till i komponenten.
 
 ## Förhandsgranska erbjudanden via e-post {#preview-offers-in-email}
 
-Du kan förhandsgranska de olika erbjudanden som ingår i det beslut som läggs till i e-postmeddelandet med hjälp av **[!UICONTROL Offers]**-avsnittet eller innehållskomponentpilarna.
+Du kan förhandsgranska de olika erbjudanden som ingår i det beslut som lagts till i e-postmeddelandet med **[!UICONTROL Offers]** -avsnittet eller innehållskomponentpilarna.
 
 ![](assets/deliver-offer-preview.png)
 
@@ -73,17 +74,17 @@ Följ stegen nedan för att visa de olika erbjudanden som ingår i beslutet med 
 
    >[!NOTE]
    >
-   >Du måste ha testprofiler tillgängliga för att kunna förhandsgranska dina meddelanden. Lär dig hur du [skapar testprofiler](building-journeys/creating-test-profiles.md).
+   >Du måste ha testprofiler tillgängliga för att kunna förhandsgranska dina meddelanden. Lär dig hur [skapa testprofiler](building-journeys/creating-test-profiles.md).
 
-1. Välj det namnutrymme som ska användas för att identifiera testprofiler genom att välja **[!UICONTROL Email]** i fältet **[!UICONTROL Identity namespace]**.
+1. Om du vill välja vilket namnutrymme som ska användas för att identifiera testprofiler väljer du **[!UICONTROL Email]** från **[!UICONTROL Identity namespace]** fält.
 
    >[!NOTE]
    >
-   >I det här exemplet använder vi namnutrymmet **Email**. Läs mer om Adobe Experience Platform identitetsnamnutrymmen [i det här avsnittet](get-started-identity.md).
+   >I det här exemplet använder vi **E-post** namnutrymme. Läs mer om Adobe Experience Platform identitetsnamnutrymmen [i det här avsnittet](get-started-identity.md).
 
-1. Välj **[!UICONTROL Email]** i listan med identitetsnamnutrymmen och klicka på **[!UICONTROL Select]**.
+1. I listan med identitetsnamnutrymmen väljer du **[!UICONTROL Email]** och klicka **[!UICONTROL Select]**.
 
-1. I fältet **[!UICONTROL Identity value]** anger du värdet som ska identifiera testprofilen. I det här exemplet anger du e-postadressen för en testprofil.
+1. I **[!UICONTROL Identity value]** anger du värdet för att identifiera testprofilen. I det här exemplet anger du e-postadressen för en testprofil.
 
    <!--For example enter smith@adobe.com and click the **[!UICONTROL Add profile]** button.-->
 
@@ -91,7 +92,7 @@ Följ stegen nedan för att visa de olika erbjudanden som ingår i beslutet med 
 
    ![](assets/deliver-offer-test-profiles.png)
 
-1. Klicka på fliken **[!UICONTROL Preview]** för att testa meddelandet.
+1. Klicka på **[!UICONTROL Preview]** för att testa meddelandet.
 
 1. Välj en testprofil. Erbjudandet som motsvarar den valda profilen (en kvinna) visas.
 
@@ -101,10 +102,10 @@ Följ stegen nedan för att visa de olika erbjudanden som ingår i beslutet med 
 
    ![](assets/deliver-offer-test-profile-male-preview.png)
 
-Läs mer om de detaljerade stegen för att kontrollera meddelandeförhandsgranskningen i [det här avsnittet](#preview-your-messages).
+Läs mer om de detaljerade stegen för att kontrollera förhandsgranskningen av meddelandet i [det här avsnittet](#preview-your-messages).
 
 ## Instruktionsvideo{#video-offers}
 
-Lär dig hur du lägger till en offer decisioning i meddelanden i [!DNL Journey Optimizer].
+Lär dig hur du lägger till en offer decisioning-komponent i meddelanden i [!DNL Journey Optimizer].
 
 >[!VIDEO](https://video.tv.adobe.com/v/334088?quality=12)

@@ -2,10 +2,10 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 5e93ccee2056814c25531fc13c3cd433a19077a6
+source-git-commit: 01313f84dc9d5260388574b3e1eb7e4a7df14d0e
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 23%
+source-wordcount: '770'
+ht-degree: 25%
 
 ---
 
@@ -29,11 +29,11 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 ## September 2021
 
-* Följande funktionssidor har uppdaterats: [sethours](https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/main-functions-journey/date/functionsethours.html), [getListItem](https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/main-functions-journey/list/functiongetlistitem.html), [inSegment](https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/main-functions-journey/adobe-experience-platform/functioninsegment.html)
+* Följande funktionssidor har uppdaterats: [sethours](building-journeys/functions/functionsethours.md), [getListItem](building-journeys/functions/functiongetlistitem.md), [inSegment](building-journeys/functions/functioninsegment.md)
 
-* Följande funktioner har lagts till: [filter](https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/main-functions-journey/list/functionfilter.html), [intersect](https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/main-functions-journey/list/functiontintersect.html), [toDateOnly](https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/main-functions-journey/conversion/functiontodateonly.html)
+* Följande funktioner har lagts till: [filter](building-journeys/functions/functionfilter.md), [intersect](building-journeys/functions/functionintersect.md), [toDateOnly](building-journeys/functions/functiontodateonly.md)
 
-* Datumtypen dateOnly har lagts till i dokumentationen för utrycksredigering. [Läs mer](https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/syntax/data-types.html?lang=en)
+* Datumtypen dateOnly har lagts till i dokumentationen för utrycksredigering. [Läs mer](building-journeys/expression/data-types.md)
 
 * Tillagda uppgifter om anpassad cachelängd på åtgärd. [Läs mer](datasource/external-data-sources.md#section_wjp_nl5_nhb)
 

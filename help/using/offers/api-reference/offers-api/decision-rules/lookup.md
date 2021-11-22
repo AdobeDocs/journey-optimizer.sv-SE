@@ -1,20 +1,21 @@
 ---
 title: Söka efter en beslutsregel
 description: Beslutsregler läggs till i ett personaliserat erbjudande och tillämpas på en profil för att avgöra vem som är berättigad.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+exl-id: 54368710-1021-43c0-87b7-5176cc6c72f7
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '170'
 ht-degree: 1%
 
 ---
 
 # Söka efter beslutsregler
 
-Du kan söka efter en specifik beslutsregel genom att göra en GET-begäran till API:t [!DNL Offer Library] som innehåller antingen beslutsregeln `@id` eller namnet på beslutsregeln i sökvägen för begäran.
+Du kan söka efter en specifik beslutsregel genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller antingen beslutsregeln `@id` eller namnet på beslutsregeln i sökvägen för begäran.
 
 **API-format**
 
@@ -27,7 +28,7 @@ GET /{ENDPOINT_PATH}/{CONTAINER_ID}/queries/core/search?schema={SCHEMA_ELIGIBILI
 | `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
 | `{CONTAINER_ID}` | Behållaren där beslutsreglerna finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
 | `{SCHEMA_ELIGIBILITY_RULE}` | Definierar det schema som är associerat med beslutsregler. | `https://ns.adobe.com/experience/offer-management/eligibility-rule;version=0.3` |
-| `id` | En sträng som används för att matcha egenskapen `@id` för entiteterna. Strängen matchas exakt. Parametrarna `id` och `name` kan inte användas tillsammans. | `xcore:eligibility-rule:124e0faf5b8ee89b` |
+| `id` | En sträng som används för att matcha `@id` enheternas egenskap. Strängen matchas exakt. Parametern s `id` och `name` kan inte användas tillsammans. | `xcore:eligibility-rule:124e0faf5b8ee89b` |
 | `name` | En sträng som används för att matcha egenskapen xdm:name för entiteterna. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametrarna `id` och `name` kan inte användas tillsammans | `Sales rule` |
 
 **Begäran**
@@ -44,7 +45,7 @@ curl -X GET \
 
 **Svar**
 
-Ett lyckat svar returnerar information om den specifika beslutsregel du sökte efter, inklusive information om dess behållar-ID, instans-ID och, unika beslutsregel `@id`.
+Ett godkänt svar returnerar information om den specifika beslutsregel du sökte efter, inklusive information om dess behållar-ID, instans-ID och, unik beslutsregel `@id`.
 
 ```json
 {

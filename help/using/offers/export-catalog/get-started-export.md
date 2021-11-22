@@ -1,14 +1,15 @@
 ---
 title: Kom igång med export av din erbjudandekatalog
 description: Lär dig hur du exporterar din erbjudandekatalog som en datauppsättning.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+exl-id: f30abea1-b204-4470-9836-75fae916bbb1
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 15%
+source-wordcount: '131'
+ht-degree: 14%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 15%
 
 Med Journey Optimizer kan du automatiskt exportera din erbjudandekatalog till Adobe Experience Platform.
 
-Exporten skapar en datauppsättning för varje objekt i ditt offertbibliotek (se [Få åtkomst till exporterade datauppsättningar](../export-catalog/access-dataset.md)). Den innehåller följande uppgifter:
+Exporten skapar en datauppsättning för varje objekt i ditt Erbjudandebibliotek (se [Få åtkomst till exporterade dataset](../export-catalog/access-dataset.md)). Den innehåller följande uppgifter:
 
 * Personaliserade erbjudanden
 * Reserverbjudanden

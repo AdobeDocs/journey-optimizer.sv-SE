@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
-source-git-commit: 54d93df232b38608d3d02e837cea82e8965559e0
+source-git-commit: daf5c6021a3efc8852b989fb602380c369758ead
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1315'
 ht-degree: 88%
 
 ---
@@ -68,7 +68,7 @@ För parameteruppsättningen &quot;long/lat&quot; skapar vi en fältgrupp med f�
 
 * **[!UICONTROL Used in]**: visar antalet resor som använder en fältgrupp. Du kan klicka på ikonen **[!UICONTROL View journeys]** för att visa en lista över resor som använder den här fältgruppen.
 * **[!UICONTROL Method]**: välj metoden POST eller GET. I vårt fall väljer vi metoden GET.
-* **[!UICONTROL Dynamic Values]**: ange de olika parametrarna avgränsade med kommatecken – &quot;long,lat&quot; i vårt exempel. Eftersom parameterns värden är beroende av körningens sammanhang definieras de i resorna. Se [Journey Orchestration-dokumentation](https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/expressionadvanced.html){target=&quot;_blank&quot;}.
+* **[!UICONTROL Dynamic Values]**: ange de olika parametrarna avgränsade med kommatecken – &quot;long,lat&quot; i vårt exempel. Eftersom parameterns värden är beroende av körningens sammanhang definieras de i resorna. Se [Journey Orchestration dokumentation](../building-journeys/expression/expressionadvanced.md).
 * **[!UICONTROL Response Payload]**: klicka inuti fältet **[!UICONTROL Payload]** och klistra in ett exempel på nyttolasten som returneras av anropet. Vi har till exempel använt en nyttolast som finns på en API-webbplats för väder. Kontrollera att fälttyperna är korrekta. Varje gång API:et anropas hämtas alla fält som ingår i exemplets nyttolast. Observera att du kan klicka på **[!UICONTROL Paste a new payload]** för att ändra den nyttolast som för närvarande används.
 * **[!UICONTROL Sent Payload]**: det här fältet visas inte i vårt exempel. Det är endast tillgängligt om du väljer metoden POST. Klistra in nyttolasten som ska skickas till tredjepartssystemet.
 
@@ -185,4 +185,4 @@ Du kan ändra cachevaraktigheten på en token för en anpassad autentiseringsdat
 
 >[!NOTE]
 >
->Cachens varaktighet hjälper till att undvika för många anrop till slutpunkterna för autentisering. Kvarhållande av autentiseringstoken cachelagras i tjänster, det finns ingen beständighet. Om en tjänst startas om börjar den med ett rent cacheminne. Cachevaraktigheten är som standard 1 timme. I den anpassade åtgärdsnyttolasten kan den anpassas genom att ange en annan kvarhållningsperiod.
+>Cachens varaktighet hjälper till att undvika för många anrop till slutpunkterna för autentisering. Kvarhållande av autentiseringstoken cachelagras i tjänster, det finns ingen beständighet. Om en tjänst startas om börjar den med ett rent cacheminne. Cachevaraktigheten är som standard 1 timme. I den anpassade åtgärdsnyttolasten kan den anpassas genom att ange en annan kvarhållningstid.

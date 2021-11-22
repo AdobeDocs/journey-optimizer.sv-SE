@@ -1,13 +1,14 @@
 ---
 title: Skapa beslutsregler
 description: Lär dig hur du skapar beslutsregler i Adobe Experience Platform.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: User
 level: Intermediate
-source-git-commit: dc3a5aacbd4b9bb20c384e0b057241f3080f09fa
+exl-id: 401ce05b-412b-4fa0-a516-bf75727f6387
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '282'
 ht-degree: 4%
 
 ---
@@ -20,19 +21,19 @@ Du kan till exempel ange att du bara vill att ett &quot;Kloderbjudande för kvin
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
-Listan med skapade beslutsregler finns på **[!UICONTROL Components]**-menyn.
+Listan med skapade beslutsregler finns i **[!UICONTROL Components]** -menyn.
 
 ![](../../assets/decision_rules_list.png)
 
 Så här skapar du en beslutsregel:
 
-1. Gå till fliken **[!UICONTROL Rules]** och klicka sedan på **[!UICONTROL Create rule]**.
+1. Gå till **[!UICONTROL Rules]** tabbtangenten och sedan klicka **[!UICONTROL Create rule]**.
 
    ![](../../assets/offers_decision_rule_creation.png)
 
 1. Ge regeln ett namn och ange en beskrivning och konfigurera sedan regeln efter behov.
 
-   Det gör du genom att **Segmentbyggaren** är tillgänglig som hjälp när du skapar regelns villkor. [Läs mer](../../segment/about-segments.md)
+   För att göra detta **Segment Builder** är tillgängligt för att hjälpa dig att skapa regelns villkor. [Läs mer](../../segment/about-segments.md)
 
    I det här exemplet är regeln riktad till kunder som har lojalitetsnivån&quot;Gold&quot;.
 
@@ -40,9 +41,9 @@ Så här skapar du en beslutsregel:
 
    >[!NOTE]
    >
-   >Segment Builder som tillhandahölls för att skapa beslutsregler har vissa särdrag jämfört med den som används med tjänsten **[!UICONTROL Audience Destinations]**. Fliken **[!UICONTROL Segments]** är till exempel inte tillgänglig för användning. Den globala processen som beskrivs i dokumentationen för Segment Builder är dock fortfarande giltig för att skapa regler för offertbeslut.
+   >Segment Builder som tillhandahålls för att skapa beslutsregler har vissa särdrag jämfört med den som används med **[!UICONTROL Audience Destinations]** service. Till exempel **[!UICONTROL Segments]** -fliken är inte tillgänglig för användning. Den globala processen som beskrivs i dokumentationen för Segment Builder är dock fortfarande giltig för att skapa regler för offertbeslut.
 
-1. Bekräfta genom att klicka på **[!UICONTROL Save]**.
+1. Klicka **[!UICONTROL Save]** för att bekräfta.
 
 1. När regeln har skapats visas den i regellistan. Du kan markera den för att visa dess egenskaper och redigera eller ta bort den.
 
@@ -50,7 +51,7 @@ Så här skapar du en beslutsregel:
 
 >[!CAUTION]
 >
->Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [händelse](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#events){target=&quot;_blank&quot;} kan du inte utnyttja den i ett erbjudande.
+>Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [event](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#events){target=&quot;_blank&quot;} kan du inte utnyttja erbjudandet.
 
 ## Videokurs {#video}
 

@@ -1,27 +1,28 @@
 ---
 title: Live-rapport
 description: Lär dig använda data från liverapporten
-feature: Rapportering
-topic: Innehållshantering
+feature: Reporting
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+exl-id: 8dd48bb2-a805-4c46-a16c-c68173a9ac08
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 1%
+source-wordcount: '224'
+ht-degree: 0%
 
 ---
 
-# Kom igång med Live-rapporten {#live-report}
+# Kom igång med Live Report {#live-report}
 
-Använd **[!UICONTROL Live report]** för att i realtid mäta och visualisera påverkan och prestanda av dina resor och dina meddelanden på en inbyggd kontrollpanel.
-Data är tillgängliga i **[!UICONTROL Live report]** så snart leveransen har skickats eller din resa är genomförd.
+Använd **[!UICONTROL Live report]** att i realtid mäta och visualisera påverkan och resultat av era resor och era meddelanden i en inbyggd kontrollpanel.
+Data finns i **[!UICONTROL Live report]** så snart leveransen är skickad eller resan är genomförd.
 
-* Om du vill rikta in dig på en resa eller leveranser i samband med en resa går du till **[!UICONTROL Journeys]**-menyn och klickar på ikonen **[!UICONTROL Live report]**. Du kan sedan hitta liverapporter för resa, e-post och push.
+* Om du vill rikta in dig på en resa eller leveranser i samband med en resa, från **[!UICONTROL Journeys]** -menyn, få åtkomst till din resa och klicka på **[!UICONTROL Live report]** ikon. Du kan sedan hitta liverapporter för resa, e-post och push.
 
    ![](../assets/report_journey.png)
 
-* Om du vill ange en viss leverans väljer du **[!UICONTROL Live view]** på fliken **[!UICONTROL Executions]** i dina meddelanden på den avancerade menyn för den valda leveransen.**[!UICONTROL Live Report]**
+* Om du vill ange en viss leverans som mål går du till **[!UICONTROL Live view]** i **[!UICONTROL Executions]** fliken med dina meddelanden väljer du **[!UICONTROL Live Report]** på den avancerade menyn för den valda leveransen.
 
    ![](../assets/report_2.png)
 
@@ -29,7 +30,7 @@ Data är tillgängliga i **[!UICONTROL Live report]** så snart leveransen har s
 
 Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort. Om du ändrar widgetarna påverkas bara den aktuella användarens kontrollpanel. Andra användare ser sina egna kontrollpaneler eller de som har angetts som standard.
 
-1. Klicka på **[!UICONTROL Modify]** i din live-rapport.
+1. Klicka på **[!UICONTROL Modify]**.
 
    ![](../assets/report_modify_1.png)
 
@@ -37,10 +38,10 @@ Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller 
 
    ![](../assets/report_modify_2.png)
 
-1. Klicka på **[!UICONTROL Remove]** för att ta bort andra widgetar som du inte behöver spåra studsar.
+1. Klicka **[!UICONTROL Remove]** om du vill ta bort andra widgetar som du inte behöver spåra studsar.
 
    ![](../assets/report_modify_3.png)
 
-1. När du är nöjd med visningsordningen och storleken på widgetarna klickar du på **[!UICONTROL Save]**.
+1. När du är nöjd med visningsordningen och widgetarnas storlek klickar du på **[!UICONTROL Save]**.
 
-Instrumentpanelen har nu sparats. Dina olika ändringar kommer att tillämpas på nytt för senare användning av dina liverapporter. Använd vid behov alternativet **[!UICONTROL Reset]** för att återställa standardordningen för widgetar och widgetar.
+Instrumentpanelen har nu sparats. Dina olika ändringar kommer att tillämpas på nytt för senare användning av dina liverapporter. Använd **[!UICONTROL Reset]** för att återställa standardordningen för widgetar och widgetar.

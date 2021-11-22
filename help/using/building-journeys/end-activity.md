@@ -1,19 +1,20 @@
 ---
 title: Avsluta aktivitet
 description: Lär dig hur du använder slutaktiviteten
-feature: Resor
-topic: Innehållshantering
+feature: Journeys
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+exl-id: 76c74ca3-edaa-48c5-8d6a-0906120e31a1
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 15%
+source-wordcount: '61'
+ht-degree: 11%
 
 ---
 
 # Avsluta aktivitet{#section_vqp_4ft_dgb}
 
-Med aktiviteten **[!UICONTROL End]** kan du markera slutet av varje väg på resan. Det är inte obligatoriskt men rekommenderas för att synskärpan ska bli tydlig. Om resan har flera slutaktiviteter rekommenderar vi att du lägger till en etikett i varje ände för att göra rapporter enklare att läsa. Läs [den här sidan](../reports/live-report.md).
+The **[!UICONTROL End]** kan du markera slutet på varje väg på resan. Det är inte obligatoriskt men rekommenderas för att synskärpan ska bli tydlig. Om resan har flera slutaktiviteter rekommenderar vi att du lägger till en etikett i varje ände för att göra rapporter enklare att läsa. Läs [den här sidan](../reports/live-report.md).
 
 ![](../assets/journey54.png)

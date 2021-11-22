@@ -15,9 +15,9 @@ ht-degree: 3%
 
 # Hjälpmedel {#gs-helpers}
 
-## Standardvärde för reserv{#default-value}
+## Standardvärde för reservalternativ{#default-value}
 
-Hjälpen `Default Fallback Value` används för att returnera ett standardreservvärde om ett attribut är tomt eller null. Den här mekanismen fungerar för profilattribut och resthändelser.
+The `Default Fallback Value` hjälpfunktionen används för att returnera ett standardreservvärde om ett attribut är tomt eller null. Den här mekanismen fungerar för profilattribut och resthändelser.
 
 **Syntax**
 
@@ -25,11 +25,11 @@ Hjälpen `Default Fallback Value` används för att returnera ett standardreserv
 Hello {%=profile.personalEmail.name.firstName ?: 'there' %}!
 ```
 
-I det här exemplet visas värdet `there` om attributet `firstName` för den här profilen är tomt eller null.
+I det här exemplet är värdet `there` visas om `firstName` Profilens attribut är tomt eller null.
 
 ## Villkor{#if-function}
 
-Hjälpprogrammet `if` används för att definiera ett villkorsstyrt block.
+The `if` hjälpfunktionen används för att definiera ett villkorsstyrt block.
 Om uttrycksutvärderingen returnerar true återges blocket, i annat fall hoppas det över.
 
 **Syntax**
@@ -39,8 +39,8 @@ Om uttrycksutvärderingen returnerar true återges blocket, i annat fall hoppas 
 <a href="https://www.adobe.com/academia">Check out this link</a>
 ```
 
-Efter `if`-hjälpen kan du ange en `else`-sats för att ange ett kodblock som ska köras, om samma villkor är false.
-Programsatsen `elseif` anger ett nytt villkor som ska testas om den första programsatsen returnerar false.
+Efter `if` kan du ange en `else` -programsats för att ange ett kodblock som ska köras, om samma villkor är false.
+The `elseif` -programsatsen anger ett nytt villkor som ska testas om den första programsatsen returnerar false.
 
 
 **Format**
@@ -116,12 +116,12 @@ Programsatsen `elseif` anger ett nytt villkor som ska testas om den första prog
 
 >[!NOTE]
 >
->Mer information om segmenterings- och segmenteringstjänster finns i det här [avsnittet](../../segment/about-segments.md).
+>Mer information om segmenterings- och segmenteringstjänster finns i [section](../../segment/about-segments.md).
 
 
 ## Om{#unless}
 
-Hjälpprogrammet `unless` används för att definiera ett villkorsstyrt block. Om uttrycksutvärderingen returnerar &quot;false&quot; återges blocket som motsatt till hjälpfunktionen `if`.
+The `unless` hjälpfunktionen används för att definiera ett villkorsstyrt block. Genom att motsätta sig `if`  helper, om uttrycksutvärderingen returnerar false återges blocket.
 
 **Syntax**
 
@@ -143,9 +143,8 @@ Some edu specific content Content
 
 ## Varje{#each}
 
-Hjälpprogrammet `each` används för att iterera över en array.
-Hjälpprogrammets syntax är ```{{#each ArrayName}}``` YourContent {{/each}}
-Vi kan referera till de enskilda arrayobjekten genom att använda nyckelordet **this** inuti blocket. Indexvärdet för arrayelementet kan återges med {{@index}}.
+The `each` helper används för att iterera över en array.
+Hjälpens syntax är ```{{#each ArrayName}}``` Ditt innehåll {{/each}} Vi kan referera till de enskilda arrayobjekten med nyckelordet **this** inuti blocket. Indexvärdet för arrayelementet kan återges med {{@index}}.
 
 **Syntax**
 
@@ -177,7 +176,7 @@ Visa en lista över produkter som den här användaren har i kundvagnen:
 
 ## Med{#with}
 
-Hjälpprogrammet `with` används för att ändra utvärderingstoken för malldel.
+The `with` hjälpfunktionen används för att ändra utvärderingstoken för malldel.
 
 **Syntax**
 
@@ -187,7 +186,7 @@ Hjälpprogrammet `with` används för att ändra utvärderingstoken för malldel
 {{/with}}
 ```
 
-Hjälpprogrammet `with` är också användbart för att definiera en variabel för genvägar.
+The `with` hjälpfunktionen är också användbar när du vill definiera en variabel för kortkommandon.
 
 **Exempel**
 
@@ -202,7 +201,7 @@ Använd med för att skapa alias för långa variabelnamn för kortare:
 
 ## Låt{#let}
 
-Med funktionen `let` kan ett uttryck lagras som en variabel som senare kan användas i en fråga.
+The `let` -funktionen tillåter att ett uttryck lagras som en variabel som kan användas senare i en fråga.
 
 **Syntax**
 

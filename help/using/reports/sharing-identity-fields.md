@@ -1,18 +1,19 @@
 ---
-title: journeyStep, händelser, identitetsfält
-description: journeyStep, händelser, identitetsfält
-feature: Rapportering
-topic: Innehållshantering
+title: identitetsfält för händelsen journeyStep
+description: identitetsfält för händelsen journeyStep
+feature: Reporting
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 8f77802fcaa23790f9de4e8f15e593643b13fb1e
+exl-id: c447fcf0-51ec-4d88-8b2d-f15db076bfbc
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 23%
+source-wordcount: '60'
+ht-degree: 20%
 
 ---
 
-# journeyStep, händelser, identitetsfält {#sharing-identity-fields}
+# identitetsfält för händelsen journeyStep {#sharing-identity-fields}
 
 Den här fältgruppen är specifik för travelStepEvent: den här händelsen är relaterad till resan och har inte identityMap, som beskriver profidentiteten, om någon.
 

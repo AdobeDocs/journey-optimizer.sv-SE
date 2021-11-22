@@ -27,19 +27,19 @@ ht-degree: 5%
 
 Delegering av domännamn är en metod som tillåter ägaren av ett domännamn (tekniskt: en DNS-zon) för att delegera en indelning av den (tekniskt: en DNS-zon under den, som kan kallas en underzon) till en annan entitet. Om du hanterar zonen&quot;example.com&quot; kan du som kund delegera underzonen&quot;marketing.example.com&quot; till Adobe.
 
-Genom att delegera en underdomän för användning med [!DNL Journey Optimizer] kan klienterna förlita sig på att Adobe upprätthåller den DNS-infrastruktur som krävs för att uppfylla branschstandardkraven för leverans för avsändardomäner för e-postmarknadsföring, samtidigt som de behåller och kontrollerar DNS för sina interna e-postdomäner.
+Genom att delegera en underdomän för användning med [!DNL Journey Optimizer], kan klienter förlita sig på att Adobe upprätthåller den DNS-infrastruktur som krävs för att uppfylla branschstandardkraven för leverans för avsändardomäner för e-postmarknadsföring, samtidigt som de behåller och kontrollerar DNS för sina interna e-postdomäner.
 
 [!DNL Journey Optimizer] kan du delegera dina underdomäner till Adobe direkt från produktgränssnittet. På så sätt kan Adobe leverera meddelanden som en hanterad tjänst genom att kontrollera och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra e-postkampanjer.
 
 >[!NOTE]
 >
->Som standard kan du med [!DNL Journey Optimizer] licensavtal delegera upp till 10 underdomäner. Kontakta Adobe om du vill öka begränsningen.
+>Som standard [!DNL Journey Optimizer] Med licensavtalet kan du delegera upp till 10 underdomäner. Kontakta Adobe om du vill öka begränsningen.
 >
 >Journey Optimizer stöder för närvarande inte användning av CNAME för delegering av underdomäner.
 
 Följ stegen nedan om du vill delegera en ny underdomän:
 
-1. Gå till menyn **[!UICONTROL Channels]** / **[!UICONTROL Subdomains]** och klicka sedan på **[!UICONTROL Delegate subdomain]**.
+1. Öppna **[!UICONTROL Channels]** / **[!UICONTROL Subdomains]** menyn och klicka sedan på **[!UICONTROL Delegate subdomain]**.
 
    ![](../assets/subdomain-delegate.png)
 
@@ -61,15 +61,15 @@ Följ stegen nedan om du vill delegera en ny underdomän:
 
    >[!NOTE]
    >
-   >Du kan skapa posterna och skicka konfigurationen för underdomänen senare med knappen **[!UICONTROL Save as draft]**. Du kan sedan återuppta delegeringen av underdomäner genom att öppna den från listan över underdomäner.
+   >Du kan skapa posterna och skicka konfigurationen för underdomänen senare med **[!UICONTROL Save as draft]** -knappen. Du kan sedan återuppta delegeringen av underdomäner genom att öppna den från listan över underdomäner.
 
-1. När underdomänsdelegeringen har skickats visas underdomänen i listan med statusen **[!UICONTROL Processing]**. Mer information om underdomäners status finns i [det här avsnittet](access-subdomains.md).
+1. När underdomänsdelegeringen har skickats visas underdomänen i listan med **[!UICONTROL Processing]** status. Mer information om underdomänernas status finns i [det här avsnittet](access-subdomains.md).
 
    ![](../assets/subdomain-processing.png)
 
    Innan du kan använda den underdomänen för att skicka meddelanden måste du vänta tills Adobe utför de kontroller som krävs, vilket kan ta upp till 3 timmar. Läs mer i [det här avsnittet](#subdomain-validation).
 
-1. När kontrollerna är slutförda får underdomänen **[!UICONTROL Success]**-status. Den är klar att användas för att leverera meddelanden.
+1. När kontrollerna är slutförda får underdomänen **[!UICONTROL Success]** status. Den är klar att användas för att leverera meddelanden.
 
    <!-- later on, users will be notified in Pulse -->
 
@@ -90,11 +90,11 @@ Kontrollerna och åtgärderna nedan utförs tills underdomänen har verifierats 
    * **MX-post**: Post för eXchange-post för e-postserver som bearbetar inkommande e-post som skickas till underdomänen.
    * **SPF-post**: Post för Sender Policy Framework - Visar IP-adresser för e-postservrar som kan skicka e-post från underdomänen.
    * **DKIM-post**: DomainKeys Identified Mail-standardpost - Använder kryptering med offentlig-privat nyckel för att autentisera meddelandet för att undvika förfalskning.
-   * **S**: Standard-IP-mappning.
+   * **A**: Standard-IP-mappning.
 
-1. **Skapa URL:er för spårning och spegling**: om domänen är email.example.com, blir spårnings-/spegeldomänen data.email.example.com. Den skyddas genom att SSL-certifikatet installeras.
+1. **Skapa spårnings- och spegeladresser**: om domänen är email.example.com, blir spårnings-/spegeldomänen data.email.example.com. Den skyddas genom att SSL-certifikatet installeras.
 
-1. **Provisionera CDN CloudFront**: om CDN inte redan är inställt, tillhandahåller Adobe det för imbern.
+1. **Tillhandahåll CDN CloudFront**: om CDN inte redan är inställt, tillhandahåller Adobe det för imbern.
 
 1. **Skapa CDN-domän**: Om domänen är email.example.com blir CDN-domänen cdn.email.example.com.
 
@@ -102,4 +102,4 @@ Kontrollerna och åtgärderna nedan utförs tills underdomänen har verifierats 
 
 1. **Skapa vanlig DNS**: Om det här är den första underdomänen som du delegerar, skapar Adobe den framåtriktade DNS som krävs för att skapa PTR-poster - en för varje IP-adress.
 
-1. **Skapa PTR-post**: PTR-posten, som också kallas omvänd DNS-post, krävs av Internet-leverantörer så att de inte markerar e-postmeddelanden som skräppost. Gmail rekommenderar också att du har PTR-poster för varje IP. Adobe skapar PTR-poster endast när du delegerar den första underdomänen, en för varje IP-adress, alla IP-adresser som pekar på den första underdomänen. Om till exempel IP är *192.1.2.1* och underdomänen är *email.example.com* blir PTR-posten: *192.1.2.1 PTR r1.email.example.com*. Du kan uppdatera PTR-posten efteråt för att peka på den nya delegerade domänen.
+1. **Skapa PTR-post**: PTR-posten, som också kallas omvänd DNS-post, krävs av Internet-leverantörer så att de inte markerar e-postmeddelanden som skräppost. Gmail rekommenderar också att du har PTR-poster för varje IP. Adobe skapar PTR-poster endast när du delegerar den första underdomänen, en för varje IP-adress, alla IP-adresser som pekar på den första underdomänen. Om IP-adressen till exempel är *192.1.2.1* och underdomänen är *email.example.com* blir PTR-posten: *192.1.2.1 PTR r1.email.example.com*. Du kan uppdatera PTR-posten efteråt för att peka på den nya delegerade domänen.

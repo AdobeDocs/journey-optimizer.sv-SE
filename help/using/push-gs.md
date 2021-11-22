@@ -42,7 +42,7 @@ Följande bild visar vilka system och tjänster som är kopplade till tillhöran
 
 ## Roller för nyckeltjänster i push-meddelanden
 
-* **Leverantörer av push-meddelandetjänster** är de viktigaste webbtjänsterna som levererar meddelanden från fjärrservrar till mobilappar.
+* **Leverantörer av push-meddelandetjänster** är de viktigaste webbtjänsterna för komponenter som levererar meddelanden från fjärrservrar till mobilappar.
 
    [!DNL Adobe Journey Optimizer]  har stöd för både Android- och iOS-plattformar och kan därför integreras med följande:
    * [Firebase Cloud Messaging (FCM)](https://firebase.google.com/docs/cloud-messaging) - för att skicka meddelanden till Android-mobilappen

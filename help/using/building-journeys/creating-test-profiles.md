@@ -1,30 +1,31 @@
 ---
 title: Skapa en testprofil
 description: Lär dig hur du skapar en testprofil
-feature: Resor
-topic: Innehållshantering
+feature: Journeys
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
+exl-id: bd5e053a-69eb-463b-add3-8b9168c8e280
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '1328'
-ht-degree: 1%
+source-wordcount: '1325'
+ht-degree: 2%
 
 ---
 
 # Skapa testprofiler {#create-test-profiles}
 
-Testprofiler krävs när du använder testläget Om du vill lära dig hur du använder testläget [på en resa och [förhandsgranska och testa meddelanden](../preview.md).](../building-journeys/testing-the-journey.md)
+Testprofiler krävs när du använder testläget För att lära dig hur du använder [testläge](../building-journeys/testing-the-journey.md) på en resa och [förhandsgranska och testa dina meddelanden](../preview.md).
 
 Tillgängliga metoder för att skapa testprofiler beskrivs nedan:
 
-* Du kan omvandla en [befintlig profil](#turning-profile-into-test) till en testprofil
+* Du kan vrida en [befintlig profil](#turning-profile-into-test) till en testprofil
 
-* Du kan skapa en testprofil genom att överföra en [csv-fil](#create-test-profiles-csv) eller använda [API-anrop](#create-test-profiles-api). Förutom dessa två metoder har Adobe Journey Optimizer ett specifikt [produktexempel](#use-case-1) som underlättar skapandet av testprofiler.
+* Du kan skapa en testprofil genom att överföra en [csv-fil](#create-test-profiles-csv) eller använda [API-anrop](#create-test-profiles-api). Förutom dessa två metoder har Adobe Journey Optimizer en [produktanvändningsfall](#use-case-1) för att underlätta skapandet av testprofiler.
 
-* Du kan också överföra en json-fil i en datauppsättning. Mer information finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html#add-data-to-dataset){target=&quot;_blank&quot;}.
+* Du kan också överföra en json-fil i en datauppsättning. Mer information finns i [Dokumentation för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html#add-data-to-dataset){target=&quot;_blank&quot;}.
 
-Observera att det liknar att skapa en testprofil att skapa vanliga profiler i Adobe Experience Platform. Mer information finns i [Kundprofildokumentationen för realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target=&quot;_blank&quot;}.
+Observera att det liknar att skapa en testprofil att skapa vanliga profiler i Adobe Experience Platform. Mer information finns i [Kundprofildokumentation i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target=&quot;_blank&quot;}.
 
 ## Förutsättningar {#test-profile-prerequisites}
 
@@ -32,38 +33,37 @@ För att kunna skapa profiler måste du först skapa ett schema och en dataupps�
 
 Först måste du **skapa ett schema**. Följ de här stegen:
 
-1. Klicka på **[!UICONTROL Schemas]** i menyavsnittet DATAHANTERING.
+1. Klicka på **[!UICONTROL Schemas]**.
    ![](../assets/test-profiles-0.png)
-1. Klicka på **[!UICONTROL Create schema]** i det övre högra hörnet och välj sedan en schematyp, till exempel **XDM Individual Profile**.
+1. Klicka **[!UICONTROL Create schema]**, i det övre högra hörnet, och sedan väljer du en schematyp, till exempel **Individuell XDM-profil**.
    ![](../assets/test-profiles-1.png)
-1. Välj rätt fältgrupper. Se till att du lägger till fältgruppen **Profiltestinformation**.
+1. Välj rätt fältgrupper. Se till att du lägger till **Profiltestdetaljer** fältgrupp.
    ![](../assets/test-profiles-1-ter.png)
-När du är klar klickar du på  **[!UICONTROL Add field groups]**: listan över fältgrupper visas på schemaöversiktsskärmen.
+När du är klar klickar du på **[!UICONTROL Add field groups]**: listan över fältgrupper visas på schemaöversiktsskärmen.
    ![](../assets/test-profiles-2.png)
 
    >[!NOTE]
    >
    >* Klicka på schemats namn för att ändra det och uppdatera dess egenskaper.
-      >
-      >
-   * Klicka på knappen **[!UICONTROL Add]** i avsnittet Fältgrupper för att välja andra fältgrupper att lägga till i schemat
+   >
+   >* Klicka på **[!UICONTROL Add]** knappen i avsnittet Fältgrupper för att välja andra fältgrupper att lägga till i schemat
 
 
 1. I listan med fält klickar du på det fält som du vill definiera som primär identitet.
    ![](../assets/test-profiles-3.png)
-1. I den högra rutan **[!UICONTROL Field properties]** kontrollerar du alternativen **[!UICONTROL Identity]** och **[!UICONTROL Primary Identity]** och väljer ett namnutrymme. Om du vill att den primära identiteten ska vara en e-postadress väljer du namnutrymmet **[!UICONTROL Email]**. Klicka på **[!UICONTROL Apply]**.
+1. I **[!UICONTROL Field properties]** höger ruta, kontrollera **[!UICONTROL Identity]** och **[!UICONTROL Primary Identity]** och markera ett namnutrymme. Om du vill att den primära identiteten ska vara en e-postadress väljer du **[!UICONTROL Email]** namnutrymme. Klicka på **[!UICONTROL Apply]**.
    ![](../assets/test-profiles-4bis.png)
-1. Markera schemat och aktivera alternativet **[!UICONTROL Profile]** i rutan **[!UICONTROL Schema properties]**.
+1. Markera schemat och aktivera **[!UICONTROL Profile]** i **[!UICONTROL Schema properties]** fönster.
    ![](../assets/test-profiles-5.png)
-1. Klicka på **Spara**.
+1. Klicka **Spara**.
 
 >[!NOTE]
 >
->Mer information om schemaskapande finns i [XDM-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#prerequisites){target=&quot;_blank&quot;}.
+>Mer information om att skapa scheman finns i [XDM-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#prerequisites){target=&quot;_blank&quot;}.
 
-Sedan måste du **skapa datauppsättningen** som profilerna ska importeras i. Följ de här stegen:
+Då måste du **skapa datauppsättningen** där profilerna importeras. Följ de här stegen:
 
-1. Bläddra till **[!UICONTROL Datasets]** och klicka sedan på **[!UICONTROL Create dataset]**.
+1. Bläddra till **[!UICONTROL Datasets]** och sedan klicka **[!UICONTROL Create dataset]**.
    ![](../assets/test-profiles-6.png)
 1. Välj **[!UICONTROL Create dataset from schema]**.
    ![](../assets/test-profiles-7.png)
@@ -71,12 +71,12 @@ Sedan måste du **skapa datauppsättningen** som profilerna ska importeras i. F�
    ![](../assets/test-profiles-8.png)
 1. Välj ett namn och klicka sedan på **[!UICONTROL Finish]**.
    ![](../assets/test-profiles-9.png)
-1. Aktivera alternativet **[!UICONTROL Profile]**.
+1. Aktivera **[!UICONTROL Profile]** alternativ.
    ![](../assets/test-profiles-10.png)
 
 >[!NOTE]
 >
-> Mer information om hur du skapar datauppsättningar finns i [dokumentationen för katalogtjänsten](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#getting-started){target=&quot;_blank&quot;}.
+> Mer information om hur du skapar datauppsättningar finns i [Katalogtjänstdokumentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#getting-started){target=&quot;_blank&quot;}.
 
 ## Exempel på användning i produkten{#use-case-1}
 
@@ -84,23 +84,23 @@ På Adobe Journey Optimizer hemsida kan du använda testprofilerna i programmet.
 
 ![](../assets/use-cases-home.png)
 
-Klicka på knappen **[!UICONTROL Begin]** för att starta användningsfallet.
+Klicka på **[!UICONTROL Begin]** för att starta användningsfallet.
 
 Följande information krävs:
 
-1. **Identitetsnamnutrymme**: Det  [ID-](../get-started-identity.md) namn som används för att unikt identifiera testprofilerna. Om du till exempel använder e-post för att identifiera testprofilerna ska identitetsnamnrymden **E-post** vara markerad. Om den unika identifieraren är telefonnumret ska identitetsnamnutrymmet **Telefon** väljas.
+1. **Namnutrymme för identitet**: The [identity namespace](../get-started-identity.md) används för att unikt identifiera testprofilerna. Om e-post till exempel används för att identifiera testprofilerna, kommer identitetsnamnutrymmet **E-post** ska vara markerat. Om den unika identifieraren är telefonnumret är identitetsnamnutrymmet **Telefon** ska vara markerat.
 
 2. **CSV-fil**: En kommaavgränsad fil som innehåller listan med testprofiler som ska skapas. Användningsfallet förväntar sig ett fördefinierat format för CSV-filen som innehåller listan med testprofiler som ska skapas. Varje rad i filen ska innehålla följande fält i rätt ordning:
 
-   1. **Person-ID**: Unik identifierare för testprofilen. Värdena för det här fältet bör återspegla det valda identitetsnamnutrymmet. (Om du till exempel väljer **Telefon** för identitetsnamnutrymmet bör värdena i det här fältet vara telefonnummer. Om **E-post** är markerat bör värdena i det här fältet vara e-postmeddelanden)
-   1. **E-postadress**: Testa profilens e-postadress. (Fältet **Person-ID** och fältet **E-postadress** kan innehålla samma värden om **E-post** har valts som identitetsnamnområde)
+   1. **Person-ID**: Unik identifierare för testprofilen. Värdena för det här fältet bör återspegla det valda identitetsnamnutrymmet. (Som ett exempel, om **Telefon** är markerat för identitetsnamnutrymmet, ska värdena i det här fältet vara telefonnummer. Liknande om **E-post** är markerat och värdena i det här fältet ska vara e-post)
+   1. **E-postadress**: Testa profilens e-postadress. (Med **Person-ID** fält och **E-postadress** kan innehålla samma värden om **E-post** är markerat som identitetsnamnutrymme)
    1. **Förnamn**: Testa profilens förnamn.
    1. **Efternamn**: Efternamn för testprofil.
    1. **Ort**: Testprofilens ort
    1. **Land**: Testprofilland
-   1. **Kön**: Testprofilens kön. Tillgängliga värden är **man**, **kvinna** och **ej specificerade**
+   1. **Kön**: Testprofilens kön. Tillgängliga värden är **man**, **hona** och **ej angivet**
 
-När du har valt identitetsnamnutrymmet och angett en CSV-fil baserat på formatet ovan, klickar du på **[!UICONTROL Run]** längst upp till höger. Användningsexemplet kan ta några minuter att slutföra. När användningsärendet har slutförts och testprofilerna har skapats skickas ett meddelande till användaren.
+När du har valt identitetsnamnutrymmet och tillhandahållit CSV-filen baserat på formatet ovan, klickar du på **[!UICONTROL Run]** längst upp till höger. Användningsexemplet kan ta några minuter att slutföra. När användningsärendet har slutförts och testprofilerna har skapats skickas ett meddelande till användaren.
 
 >[!NOTE]
 >
@@ -110,38 +110,38 @@ När du har valt identitetsnamnutrymmet och angett en CSV-fil baserat på format
 
 Du kan omvandla en befintlig profil till en testprofil: Du kan uppdatera profilattribut på samma sätt som när du skapar en profil.
 
-Ett enkelt sätt att göra detta är att använda en **[!UICONTROL Update Profile]**-åtgärd på en resa och ändra det booleska fältet testProfile från false till true.
+Ett enkelt sätt att göra detta är att använda en **[!UICONTROL Update Profile]** aktivitet i en resa och ändra det booleska fältet testProfile från false till true.
 
-Din resa består av en **[!UICONTROL Read Segment]**- och **[!UICONTROL Update Profile]**-aktivitet. Du måste först skapa ett segment som riktar sig till de profiler du vill omvandla till testprofiler.
+Din resa består av en **[!UICONTROL Read Segment]** och **[!UICONTROL Update Profile]** aktivitet. Du måste först skapa ett segment som riktar sig till de profiler du vill omvandla till testprofiler.
 
 >[!NOTE]
 >
-> Eftersom du kommer att uppdatera fältet **testProfile** måste de valda profilerna innehålla det här fältet. Det relaterade schemat måste ha fältgruppen **Profiltestinformation**. Se [det här avsnittet](../building-journeys/creating-test-profiles.md#test-profiles-prerequisites).
+> Eftersom du kommer att uppdatera **testProfile** måste de valda profilerna innehålla det här fältet. Det relaterade schemat måste ha **Profiltestdetaljer** fältgrupp. Se [det här avsnittet](../building-journeys/creating-test-profiles.md#test-profiles-prerequisites).
 
-1. Bläddra till **Segment** och **Skapa segment** i det övre högra hörnet.
+1. Bläddra till **Segment** sedan **Skapa segment**, längst upp till höger.
    ![](../assets/test-profiles-22.png)
 1. Definiera ett namn för segmentet och bygg segmentet: välj fält och värden för de profiler som du vill använda.
    ![](../assets/test-profiles-23.png)
-1. Klicka på **Spara** och kontrollera att profilerna har rätt mål för segmentet.
+1. Klicka **Spara** och kontrollera att profilerna har rätt mål för segmentet.
    ![](../assets/test-profiles-24.png)
 
    >[!NOTE]
    >
    > Segmentberäkning kan ta lite tid. Läs mer om segment i [det här avsnittet](../segment/about-segments.md).
 
-1. Skapa nu en ny resa och börja med en **[!UICONTROL Read Segment]**-koordinationsaktivitet.
+1. Skapa en ny resa och börja med en **[!UICONTROL Read Segment]** orkestreringsaktivitet.
 1. Välj det segment som skapats tidigare och det namnutrymme som profilerna använder.
    ![](../assets/test-profiles-25.png)
-1. Lägg till en **[!UICONTROL Update Profile]**-åtgärdsaktivitet.
-1. Markera schemat, fältet **testProfiles**, datauppsättningen och ange värdet **True**. Om du vill göra det klickar du på ikonen **Ritstift** till höger i fältet **[!UICONTROL VALUE]** och anger **true**.**[!UICONTROL Advanced mode]**
+1. Lägg till en **[!UICONTROL Update Profile]** Åtgärdsaktivitet.
+1. Välj schema, **testProfiles** -fältet, datauppsättningen och ange värdet till **True**. Om du vill göra det här går du till **[!UICONTROL VALUE]** klickar du på **Ritstift** ikon till höger, välj **[!UICONTROL Advanced mode]** och ange **true**.
    ![](../assets/test-profiles-26.png)
-1. Lägg till en **End**-aktivitet och klicka på **[!UICONTROL Publish]**.
-1. Kontrollera att profilerna har uppdaterats korrekt i avsnittet **[!UICONTROL Segments]**.
+1. Lägg till en **End** aktivitet och klicka **[!UICONTROL Publish]**.
+1. I **[!UICONTROL Segments]** kontrollerar du att profilerna har uppdaterats korrekt.
    ![](../assets/test-profiles-28.png)
 
    >[!NOTE]
    >
-   > Mer information om aktiviteten **[!UICONTROL Update Profile]** finns i [det här avsnittet](../building-journeys/update-profiles.md).
+   > Mer information om **[!UICONTROL Update Profile]** aktivitet, se [det här avsnittet](../building-journeys/update-profiles.md).
 
 ## Skapa en testprofil med en CSV-fil{#create-test-profiles-csv}
 
@@ -153,17 +153,17 @@ I Adobe Experience Platform kan du skapa profiler genom att överföra en CSV-fi
 1. Lägg till en rad per profil och fyll i värdena för varje fält.
    ![](../assets/test-profiles-12.png)
 1. Spara kalkylbladet som en CSV-fil. Se till att kommatecken används som avgränsare.
-1. Bläddra till Adobe Experience Platform **arbetsflöden**.
+1. Bläddra till Adobe Experience Platform **Arbetsflöden**.
    ![](../assets/test-profiles-14.png)
-1. Välj **Mappa CSV till XDM-schema** och klicka sedan på **Starta**.
+1. Välj **Mappa CSV till XDM-schema** och sedan klicka **Starta**.
    ![](../assets/test-profiles-16.png)
 1. Markera den datauppsättning som du vill importera profilerna till. Klicka på **Nästa**.
    ![](../assets/test-profiles-17.png)
-1. Klicka på **Välj filer** och välj din CSV-fil. När filen har överförts klickar du på **Nästa**.
+1. Klicka **Välj filer** och välj en CSV-fil. När filen har överförts klickar du på **Nästa**.
    ![](../assets/test-profiles-18.png)
 1. Mappa CSV-källfälten till schemafälten och klicka sedan på **Slutför**.
    ![](../assets/test-profiles-19.png)
-1. Dataimporten börjar. Statusen kommer att flyttas från **Bearbetning** till **Lyckades**. Klicka på **Förhandsgranska datauppsättning** i det övre högra hörnet.
+1. Dataimporten börjar. Statusen ändras från **Bearbetar** till **Lyckades**. Klicka **Förhandsgranska datauppsättning**, längst upp till höger.
    ![](../assets/test-profiles-20.png)
 1. Kontrollera att testprofilerna har lagts till korrekt.
    ![](../assets/test-profiles-21.png)
@@ -171,7 +171,7 @@ I Adobe Experience Platform kan du skapa profiler genom att överföra en CSV-fi
 Testprofilerna läggs till och kan nu användas när du testar en resa. Se [det här avsnittet](../building-journeys/testing-the-journey.md).
 >[!NOTE]
 >
-> Mer information om csv-import finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html#tutorials){target=&quot;_blank&quot;}.
+> Mer information om CSV-import finns i [Dokumentation för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html#tutorials){target=&quot;_blank&quot;}.
 
 ## Skapa testprofiler med API-anrop{#create-test-profiles-api}
 

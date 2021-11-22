@@ -1,14 +1,15 @@
 ---
 title: Lista placeringar
 description: Placeringar är behållare som används för att visa upp dina erbjudanden.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+exl-id: 36030ffe-eb7a-4487-914d-84ccb0a6bf6e
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 3%
+source-wordcount: '289'
+ht-degree: 2%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 3%
 
 Placeringar är behållare som används för att visa upp dina erbjudanden. En placering säkerställer att rätt erbjudandeinnehåll visas på rätt plats i ert meddelande. När du lägger till innehåll i ett erbjudande blir du ombedd att välja en placering där innehållet kan visas.
 
-Du kan visa en lista över alla placeringar i en behållare genom att utföra en enda GET-begäran till API:t [!DNL Offer Library].
+Du kan visa en lista över alla placeringar i en behållare genom att göra en enda GET-förfrågan till [!DNL Offer Library] API.
 
 **API-format**
 
@@ -41,10 +42,10 @@ De vanligaste frågeparametrarna för sidindelning är:
 
 | Parameter | Beskrivning | Exempel |
 | --------- | ----------- | ------- |
-| `q` | En valfri frågesträng att söka efter i markerade fält. Frågesträngen ska vara i gemener och kan omges av citattecken för att förhindra att den tokeniseras och för att undvika specialtecken. Tecknen `+ - = && || > < ! ( ) { } [ ] ^ \" ~ * ? : \ /` har en speciell innebörd och bör föregås av ett omvänt snedstreck när de visas i frågesträngen. | JSON-webbplats |
+| `q` | En valfri frågesträng att söka efter i markerade fält. Frågesträngen ska vara i gemener och kan omges av citattecken för att förhindra att den tokeniseras och för att undvika specialtecken. Tecknen `+ - = && || > < ! ( ) { } [ ] ^ \" ~ * ? : \ /` har en speciell betydelse och bör föregås av ett omvänt snedstreck när de visas i frågesträngen. | JSON-webbplats |
 | `qop` | Använder operatorn AND eller OR på värden i frågesträngsparam. | `AND` / `OR` |
-| `field` | Valfri lista med fält som sökningen ska begränsas till. Den här parametern kan upprepas så här: field=field1[,field=field2,...] och (sökvägsuttryck är i form av punktavgränsade banor som _instance.xdm:name) | `_instance.xdm:name` |
-| `orderBy` | Sortera resultaten efter en specifik egenskap. Om du lägger till en `-` före-titel (`orderby=-title`) sorteras objekt efter titel i fallande ordning (Z-A). | `-repo:createdDate` |
+| `field` | Valfri lista med fält som sökningen ska begränsas till. Den här parametern kan upprepas så här: field=field1[,field=field2,..] och (sökvägsuttryck är i form av punktavgränsade banor som _instance.xdm:name) | `_instance.xdm:name` |
+| `orderBy` | Sortera resultaten efter en specifik egenskap. Lägga till en `-` före rubrik (`orderby=-title`) sorterar objekten efter rubrik i fallande ordning (Z-A). | `-repo:createdDate` |
 | `limit` | Begränsa antalet returnerade placeringar. | `limit=5` |
 
 **Begäran**

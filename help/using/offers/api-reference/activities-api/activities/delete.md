@@ -1,20 +1,21 @@
 ---
 title: Ta bort beslut
 description: Ett beslut innehåller den logik som ligger till grund för valet av ett erbjudande.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+exl-id: 1eb19ff1-b210-4891-ab41-5488e2635527
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 4%
+source-wordcount: '146'
+ht-degree: 3%
 
 ---
 
 # Ta bort ett beslut
 
-Ibland kan det vara nödvändigt att ta bort (DELETE) ett beslut (tidigare kallat erbjudandeaktivitet). Endast beslut som du skapar i innehavarbehållaren kan tas bort. Detta görs genom att utföra en DELETE-begäran till [!DNL Offer Library]-API:t med $id för det reserverbjudande som du vill ta bort.
+Ibland kan det vara nödvändigt att ta bort (DELETE) ett beslut (tidigare kallat erbjudandeaktivitet). Endast beslut som du skapar i innehavarbehållaren kan tas bort. Detta görs genom att DELETE begär [!DNL Offer Library] API som använder $id för det reserverbjudande som du vill ta bort.
 
 **API-format**
 

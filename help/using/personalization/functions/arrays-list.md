@@ -1,14 +1,15 @@
 ---
 title: Bibliotek för arrayfunktioner
 description: Bibliotek för arrayfunktioner
-feature: Personalisering
-topic: Personalisering
+feature: Personalization
+topic: Personalization
 role: Data Engineer
 level: Experienced
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+exl-id: dfe611fb-9c50-473c-9eb7-b983e1e6f01e
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 3%
+source-wordcount: '495'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +19,7 @@ Använd de här funktionerna för att underlätta interaktionen med arrayer, lis
 
 ## Distinkt{#distinct}
 
-Funktionen `distinct` används för att hämta värden från en array eller lista där dubblettvärden har tagits bort.
+The `distinct` används för att hämta värden från en array eller lista där dubblettvärden har tagits bort.
 
 **Format**
 
@@ -36,7 +37,7 @@ Följande åtgärd anger personer som har gjort beställningar i mer än en buti
 
 ## Första objektet{#head}
 
-Funktionen `head` används för att returnera det första objektet i arrayen eller listan.
+The `head` -funktionen används för att returnera det första objektet i arrayen eller listan.
 
 **Format**
 
@@ -46,15 +47,15 @@ Funktionen `head` används för att returnera det första objektet i arrayen ell
 
 **Exempel**
 
-Följande åtgärd returnerar den första av de fem främsta beställningarna med det högsta priset. Mer information om funktionen `topN` finns i avsnittet [first `n` i array](#first-n).
+Följande åtgärd returnerar den första av de fem främsta beställningarna med det högsta priset. Mer information om `topN` finns i [först `n` i array](#first-n) -avsnitt.
 
 ```sql
 {%= head(topN(orders,price, 5)) %}
 ```
 
-## Första `n` i matrisen {#first-n}
+## Första `n` i array {#first-n}
 
-Funktionen `topN` används för att returnera de första `N` objekten i en array, när den sorteras i stigande ordning baserat på det angivna numeriska uttrycket.
+The `topN` -funktionen används för att returnera den första `N` objekt i en array, när de sorteras i stigande ordning baserat på det givna numeriska uttrycket.
 
 **Format**
 
@@ -78,7 +79,7 @@ Följande åtgärd returnerar de fem främsta beställningarna med det högsta p
 
 ## I{#in}
 
-Funktionen `in` används för att avgöra om ett objekt är medlem i en array eller lista.
+The `in` används för att avgöra om ett objekt är medlem i en array eller lista.
 
 **Format**
 
@@ -96,7 +97,7 @@ Följande åtgärd definierar personer med födelsedagar i mars, juni eller sept
 
 ## Inkluderar{#includes}
 
-Funktionen `includes` används för att avgöra om en array eller lista innehåller ett visst objekt.
+The `includes` används för att avgöra om en array eller lista innehåller ett visst objekt.
 
 **Format**
 
@@ -114,7 +115,7 @@ Följande åtgärd definierar personer vars favoritfärg är röd.
 
 ## Överlappningar{#intersects}
 
-Funktionen `intersects` används för att avgöra om två arrayer eller listor har minst en gemensam medlem.
+The `intersects` används för att avgöra om två arrayer eller listor har minst en gemensam medlem.
 
 **Format**
 
@@ -150,9 +151,9 @@ intersection(person1.favoriteColors,person2.favoriteColors) = ["red", "blue", "g
 ```
 -->
 
-## Senaste `n` i matris{#last-n}
+## Sista `n` i array{#last-n}
 
-Funktionen `bottomN` används för att returnera de sista `N` objekten i en array, när den sorteras i stigande ordning baserat på det angivna numeriska uttrycket.
+The `bottomN` -funktionen används för att returnera den sista `N` objekt i en array, när de sorteras i stigande ordning baserat på det givna numeriska uttrycket.
 
 **Format**
 
@@ -177,11 +178,11 @@ Följande åtgärd returnerar de fem främsta beställningarna med det lägsta p
 
 ## Inte i{#notin}
 
-Funktionen `notIn` används för att avgöra om ett objekt inte är medlem i en array eller lista.
+The `notIn` används för att avgöra om ett objekt inte är medlem i en array eller lista.
 
 >[!NOTE]
 >
->Funktionen `notIn` *säkerställer också* att inget av värdena är lika med null. Resultatet är därför inte en exakt negation av funktionen `in`.
+>The `notIn` function *även* säkerställer att inget av värdena är lika med null. Resultatet är därför inte en exakt negation av `in` funktion.
 
 **Format**
 
@@ -200,7 +201,7 @@ Följande åtgärd definierar personer med födelsedagar som inte är i mars, ju
 
 ## Delmängd av{#subset}
 
-Funktionen `subsetOf` används för att avgöra om en viss array (array A) är en delmängd av en annan array (array B). Det vill säga att alla element i array A är element i array B.
+The `subsetOf` används för att avgöra om en viss array (array A) är en delmängd av en annan array (array B). Det vill säga att alla element i array A är element i array B.
 
 **Format**
 
@@ -218,7 +219,7 @@ Följande åtgärd definierar personer som har besökt alla sina favoritstäder.
 
 ## Supermängd till{#superset}
 
-Funktionen `supersetOf` används för att avgöra om en viss array (array A) är en supermängd till en annan array (array B). Arrayen A innehåller alltså alla element i array B.
+The `supersetOf` används för att avgöra om en viss array (array A) är en överordnad mängd till en annan array (array B). Arrayen A innehåller alltså alla element i array B.
 
 **Format**
 
@@ -233,10 +234,3 @@ Följande åtgärd definierar personer som har ätit sushi och pizza minst en g�
 ```sql
 {%= supersetOf(person.eatenFoods,["sushi", "pizza"] %}
 ```
-
-
-
-
-
-
-

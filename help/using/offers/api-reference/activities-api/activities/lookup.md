@@ -1,20 +1,21 @@
 ---
 title: Lista beslut
 description: Ett beslut innehåller den logik som ligger till grund för valet av ett erbjudande.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
+exl-id: ee242f0f-f331-4f41-9418-938b4ca1dda3
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 3%
+source-wordcount: '155'
+ht-degree: 2%
 
 ---
 
 # Slå upp ett beslut
 
-Du kan söka efter specifika beslut (som tidigare kallats erbjudandeaktiviteter) genom att göra en GET-begäran till [!DNL Offer Library]-API:t som innehåller antingen besluten `@id` eller namnet på beslutet i begärandesökvägen.
+Du kan slå upp specifika beslut (som tidigare kallats erbjudandeaktiviteter) genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller antingen beslut `@id` eller namnet på beslutet i sökvägen till begäran.
 
 **API-format**
 
@@ -27,7 +28,7 @@ GET /{ENDPOINT_PATH}/{CONTAINER_ID}/queries/core/search?schema={SCHEMA_ACTIVITIE
 | `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
 | `{CONTAINER_ID}` | Behållaren där besluten finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
 | `{SCHEMA_ACTIVITIES}` | Definierar det schema som är associerat med beslut. | `https://ns.adobe.com/experience/offer-management/offer-activity;version=0.5` |
-| `id` | En sträng som används för att matcha egenskapen `@id` för entiteterna. Strängen matchas exakt. Parametrarna `id` och `name` kan inte användas tillsammans. | `xcore:offer-activity:124527ab00b2ebbc` |
+| `id` | En sträng som används för att matcha `@id` enheternas egenskap. Strängen matchas exakt. Parametrarna `id` och `name` kan inte användas tillsammans. | `xcore:offer-activity:124527ab00b2ebbc` |
 | `name` | En sträng som används för att matcha egenskapen xdm:name för entiteterna. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametern id och name kan inte användas tillsammans | `LBAR` |
 
 **Begäran**

@@ -1,14 +1,15 @@
 ---
 title: Bibliotek för strängfunktioner
 description: Bibliotek för strängfunktioner
-feature: Personalisering
-topic: Personalisering
+feature: Personalization
+topic: Personalization
 role: Data Engineer
 level: Experienced
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+exl-id: 8674ef9e-261b-49d9-800e-367f9f7ef979
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '1201'
-ht-degree: 4%
+source-wordcount: '1199'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +19,7 @@ Lär dig hur du använder strängfunktioner i uttrycksredigeraren.
 
 ## Camera Case {#camelCase}
 
-Funktionen `camelCase` ändrar inledande versal för varje ord i en sträng.
+The `camelCase` funktionen ändrar den första bokstaven i varje ord i en sträng till versal.
 
 **Format**
 
@@ -36,7 +37,7 @@ Med följande funktion infogas den första bokstaven i ordet i profilens gatuadr
 
 ## Concat {#concate}
 
-Funktionen `concat` kombinerar två strängar till en.
+The `concat` funktionen kombinerar två strängar till en.
 
 **Format**
 
@@ -54,7 +55,7 @@ Följande funktion kombinerar profilens ort och land i en enda sträng.
 
 ## Innehåller {#contains}
 
-Funktionen `contains` används för att avgöra om en sträng innehåller en angiven delsträng.
+The `contains` -funktionen används för att avgöra om en sträng innehåller en angiven delsträng.
 
 **Format**
 
@@ -84,7 +85,7 @@ Funktionen `contains` används för att avgöra om en sträng innehåller en ang
 
 ## Innehåller inte{#doesNotContain}
 
-Funktionen `doesNotContain` används för att avgöra om en sträng inte innehåller en angiven delsträng.
+The `doesNotContain` -funktionen används för att avgöra om en sträng inte innehåller en angiven delsträng.
 
 **Format**
 
@@ -109,7 +110,7 @@ Följande fråga avgör, med skiftlägeskänslighet, om personens e-postadress i
 
 ## Slutar inte med{#doesNotEndWith}
 
-Funktionen `doesNotEndWith` används för att avgöra om en sträng inte avslutas med en angiven delsträng.
+The `doesNotEndWith` -funktionen används för att avgöra om en sträng inte avslutas med en angiven delsträng.
 
 **Format**
 
@@ -133,7 +134,7 @@ doesNotEndWith(person.emailAddress,".com")
 
 ## Börjar inte med{#doesNotStartWith}
 
-Funktionen `doesNotStartWith` används för att avgöra om en sträng inte börjar med en angiven delsträng.
+The `doesNotStartWith` -funktionen används för att avgöra om en sträng inte börjar med en angiven delsträng.
 
 **Format**
 
@@ -157,7 +158,7 @@ Följande fråga avgör, med skiftlägeskänslighet, om personens namn inte bör
 
 ## Koda 64{#encode64}
 
-Funktionen `encode64` används för att koda en sträng för att bevara personlig information (PI) om den ska inkluderas t.ex. i en URL.
+The `encode64` -funktionen används för att koda en sträng för att bevara personlig information (PI) om den ska inkluderas t.ex. i en URL.
 
 **Format**
 
@@ -167,7 +168,7 @@ Funktionen `encode64` används för att koda en sträng för att bevara personli
 
 ## Slutar med{#endsWith}
 
-Funktionen `endsWith` används för att avgöra om en sträng avslutas med en angiven delsträng.
+The `endsWith` används för att avgöra om en sträng avslutas med en angiven delsträng.
 
 **Format**
 
@@ -192,7 +193,7 @@ Följande fråga avgör, med skiftlägeskänslighet, om personens e-postadress s
 
 ## Är lika med{#equals}
 
-Funktionen `equals` används för att avgöra om en sträng är lika med den angivna strängen, med skiftlägeskänslighet.
+The `equals` -funktionen används för att avgöra om en sträng är lika med den angivna strängen, med skiftlägeskänslighet.
 
 **Format**
 
@@ -215,7 +216,7 @@ Följande fråga avgör, med skiftlägeskänslighet, om personens namn är &quot
 
 ## Lika med Ignorera skiftläge{#equalsIgnoreCase}
 
-Funktionen `equalsIgnoreCase` används för att avgöra om en sträng är lika med den angivna strängen, utan skiftlägeskänslighet.
+The `equalsIgnoreCase` används för att avgöra om en sträng är lika med den angivna strängen, utan skiftlägeskänslighet.
 
 **Format**
 
@@ -238,7 +239,7 @@ Följande fråga avgör, utan skiftlägeskänslighet, om personens namn är &quo
 
 ## Extrahera e-postdomän {#extractEmailDomain}
 
-Funktionen `extractEmailDomain` används för att extrahera domänen för en e-postadress.
+The `extractEmailDomain` används för att extrahera domänen för en e-postadress.
 
 **Format**
 
@@ -256,7 +257,7 @@ Följande fråga extraherar e-postdomänen för den personliga e-postadressen.
 
 ## Is empty {#isEmpty}
 
-Funktionen `isEmpty` används för att fastställa om en sträng är tom.
+The `isEmpty` -funktionen används för att bestämma om en sträng är tom.
 
 **Format**
 
@@ -274,7 +275,7 @@ Följande funktion returnerar &#39;true&#39; om profilens mobiltelefonnummer är
 
 ## Vänster trimning {#leftTrim}
 
-Funktionen `leftTrim` används för att ta bort blanksteg från början av en sträng.
+The `leftTrim` används för att ta bort blanksteg från början av en sträng.
 
 **Format**
 
@@ -284,7 +285,7 @@ Funktionen `leftTrim` används för att ta bort blanksteg från början av en st
 
 ## Length {#length}
 
-Funktionen `length` används för att hämta antalet tecken i en sträng eller ett uttryck.
+The `length` används för att hämta antalet tecken i en sträng eller ett uttryck.
 
 **Format**
 
@@ -302,7 +303,7 @@ Följande funktion returnerar längden på profilens stadsnamn.
 
 ## Gilla{#like}
 
-Funktionen `like` används för att avgöra om en sträng matchar ett angivet mönster.
+The `like` används för att avgöra om en sträng matchar ett angivet mönster.
 
 **Format**
 
@@ -325,7 +326,7 @@ Följande fråga hämtar alla städer där profiler som innehåller mönstret &q
 
 ## Gemener{#lower}
 
-Funktionen `lowerCase` konverterar en sträng till gemena bokstäver.
+The `lowerCase` funktionen konverterar en sträng till gemener.
 
 **Syntax**
 
@@ -343,7 +344,7 @@ Den här funktionen konverterar profilens förnamn till gemener.
 
 ## Matchar{#matches}
 
-Funktionen `matches` används för att avgöra om en sträng matchar ett visst reguljärt uttryck. Mer information om att matcha mönster i reguljära uttryck finns i [det här dokumentet](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html).
+The `matches` används för att avgöra om en sträng matchar ett visst reguljärt uttryck. Se [det här dokumentet](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html) för mer information om att matcha mönster i reguljära uttryck.
 
 **Format**
 
@@ -361,7 +362,7 @@ Följande fråga avgör, utan skiftlägeskänslighet, om personens namn börjar 
 
 ## Inte lika med{#notEqualTo}
 
-Funktionen `notEqualTo` används för att avgöra om en sträng inte är lika med den angivna strängen.
+The `notEqualTo` -funktionen används för att avgöra om en sträng inte är lika med den angivna strängen.
 
 **Format**
 
@@ -384,7 +385,7 @@ Följande fråga avgör, med skiftlägeskänslighet, om personens namn inte är&
 
 ## Grupp för reguljära uttryck{#regexGroup}
 
-Funktionen `Group` används för att extrahera specifik information baserat på det reguljära uttrycket som anges.
+The `Group` -funktionen används för att extrahera specifik information baserat på det reguljära uttrycket.
 
 **Format**
 
@@ -408,7 +409,7 @@ Följande fråga används för att extrahera domännamnet från en e-postadress.
 
 ## Replace {#replace}
 
-Funktionen `replace` används för att ersätta en given delsträng i en sträng med en annan delsträng.
+The `replace` -funktionen används för att ersätta en viss delsträng i en sträng med en annan delsträng.
 
 **Format**
 
@@ -427,7 +428,7 @@ Följande funktion:
 
 ## Ersätt alla{#replaceAll}
 
-Funktionen `replaceAll` används för att ersätta alla delsträngar för en text som matchar&quot;target&quot; med den angivna strängen för literal&quot;replace&quot;. Ersättningen fortsätter från början av strängen till slutet, t.ex. om&quot;a&quot; ersätts med&quot;b&quot; i strängen&quot;aaa&quot; resulterar det i&quot;ba&quot; i stället för&quot;ab&quot;.
+The `replaceAll` används för att ersätta alla delsträngar i en text som matchar&quot;target&quot; med den angivna strängen&quot;teckenersättning&quot;. Ersättningen fortsätter från början av strängen till slutet, t.ex. om&quot;a&quot; ersätts med&quot;b&quot; i strängen&quot;aaa&quot; resulterar det i&quot;ba&quot; i stället för&quot;ab&quot;.
 
 **Format**
 
@@ -438,7 +439,7 @@ Funktionen `replaceAll` används för att ersätta alla delsträngar för en tex
 
 ## Högertrimning {#rightTrim}
 
-Funktionen `rightTrim` används för att ta bort tomrum från strängens slut.
+The `rightTrim` funktionen används för att ta bort blanksteg från slutet av en sträng.
 
 
 **Format**
@@ -449,7 +450,7 @@ Funktionen `rightTrim` används för att ta bort tomrum från strängens slut.
 
 ## Dela {#split}
 
-Funktionen `split` används för att dela en sträng med ett givet tecken.
+The `split` används för att dela en sträng med ett visst tecken.
 
 **Format**
 
@@ -470,7 +471,7 @@ The following function .
 
 ## Börjar med{#startsWith}
 
-Funktionen `startsWith` används för att avgöra om en sträng börjar med en angiven delsträng.
+The `startsWith` -funktionen används för att avgöra om en sträng börjar med en angiven delsträng.
 
 **Format**
 
@@ -494,7 +495,7 @@ Följande fråga avgör, med skiftlägeskänslighet, om personens namn börjar m
 
 ## Inledande versal{#titleCase}
 
-Funktionen **titleCase** används för att ändra första bokstäver i varje ord i en sträng till versaler.
+The **titleCase** -funktionen används för att ge inledande versal i varje ord i en sträng.
 
 **Syntax**
 
@@ -512,7 +513,7 @@ Om personen bor i Washington High Street, returnerar den här funktionen Washing
 
 ## Rensa{#trim}
 
-Funktionen **trim** tar bort alla blanksteg från början och slutet av en sträng.
+The **trimma** funktionen tar bort alla blanksteg från början och slutet av en sträng.
 
 **Syntax**
 
@@ -522,7 +523,7 @@ Funktionen **trim** tar bort alla blanksteg från början och slutet av en strä
 
 ## Versaler{#upper}
 
-Funktionen **upperCase** konverterar en sträng till versaler.
+The **upperCase** funktionen konverterar en sträng till versaler.
 
 **Syntax**
 

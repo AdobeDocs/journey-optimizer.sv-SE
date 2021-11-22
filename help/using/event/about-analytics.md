@@ -1,14 +1,15 @@
 ---
 title: Om Adobe Analytics-data
 description: Lär dig utnyttja Adobe Analytics data
-feature: Händelser
-topic: Administrering
+feature: Events
+topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
+exl-id: 9d842722-e5eb-4743-849d-b7ba9448062f
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 1%
+source-wordcount: '190'
+ht-degree: 0%
 
 ---
 
@@ -22,9 +23,9 @@ Ni kan utnyttja alla Adobe Analytics beteendehändelsedata som ni redan samlar i
 
 För att detta ska fungera måste du aktivera rapportsviten som du vill utnyttja i Adobe Experience Platform:
 
-1. I Adobe Experience Platform väljer du **[!UICONTROL Sources]** och sedan **[!UICONTROL Add data]** i avsnittet Adobe Analytics. En lista över tillgängliga Adobe Analytics-rapportsviter visas.
+1. I Adobe Experience Platform väljer du **[!UICONTROL Sources]** sedan **[!UICONTROL Add data]** i Adobe Analytics. En lista över tillgängliga Adobe Analytics-rapportsviter visas.
 
-1. Välj den rapportserie som du vill aktivera, klicka på **[!UICONTROL Next]** och klicka på **[!UICONTROL Finish]**.
+1. Välj den rapportsvit som du vill aktivera, klicka på **[!UICONTROL Next]** och klicka **[!UICONTROL Finish]**.
 
 1. Dela källdata-ID:t med kontaktpunkten för betaprogrammet.
 
@@ -32,4 +33,4 @@ Detta aktiverar Analytics-källkopplingen för den rapportsviten. När informati
 
 ![](../assets/jo-event9.png)
 
-Läs mer om Adobe Analytics källanslutning i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html){target=&quot;_blank&quot;} och [självstudiekurs](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html){target=&quot;_blank&quot;}.
+Läs mer om Adobe Analytics källanslutning i  [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html){target=&quot;_blank&quot;} och [självstudiekurs](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html){target=&quot;_blank&quot;}.

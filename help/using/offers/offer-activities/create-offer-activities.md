@@ -134,7 +134,7 @@ I princip är utdata för ett segment en lista med profiler, medan en beslutsreg
 
 * **Beslutsregler**
 
-   Å andra sidan baseras en beslutsregel på data som är tillgängliga i Adobe Experience Platform och avgör till vilka ett erbjudande kan visas. När regeln har valts i ett erbjudande eller i ett beslut för en viss placering verkställs den varje gång ett beslut fattas, vilket säkerställer att varje profil får det senaste och bästa erbjudandet.
+   Å andra sidan baseras en beslutsregel på data som är tillgängliga i Adobe Experience Platform och avgör till vem ett erbjudande kan visas. När regeln har valts i ett erbjudande eller i ett beslut för en viss placering verkställs den varje gång ett beslut fattas, vilket säkerställer att varje profil får det senaste och bästa erbjudandet.
 
    Läs mer om beslutsregler i [det här avsnittet](../offer-library/creating-decision-rules.md).
 
@@ -175,7 +175,7 @@ Den är nu klar att användas för att leverera erbjudanden till kunder.
 
 ## Beslutslista {#decision-list}
 
-I beslutslistan kan du välja vilket beslut som ska visas. Därifrån kan du även redigera den och ändra dess status (**Utkast**, **Live**, **Slutförd**, **Arkiverad**), duplicera beslutet eller ta bort det.
+I beslutslistan kan du välja vilket beslut som ska visas. Därifrån kan du också redigera den och ändra dess status (**Utkast**, **Live**, **Slutförd**, **Arkiverad**), duplicera beslutet eller ta bort det.
 
 ![](../../assets/decision_created.png)
 

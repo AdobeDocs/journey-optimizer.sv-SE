@@ -1,14 +1,15 @@
 ---
 title: Aritmetiskt funktionsbibliotek
 description: Aritmetiskt funktionsbibliotek
-feature: Personalisering
-topic: Personalisering
+feature: Personalization
+topic: Personalization
 role: Data Engineer
 level: Experienced
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+exl-id: 21ef8f50-8389-4675-a8e5-0438a3eee592
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 3%
+source-wordcount: '180'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +19,7 @@ Aritmetiska funktioner används för att utföra grundläggande beräkningar på
 
 ## Lägg till{#add}
 
-Funktionen `+` (addition) används för att hitta summan av två argumentuttryck.
+The `+` Funktionen (addition) används för att hitta summan av två argumentuttryck.
 
 **Format**
 
@@ -36,7 +37,7 @@ Följande operation summerar priset på två olika produkter.
 
 ## Multiplicera{#multiply}
 
-Funktionen `*` (multiplikation) används för att hitta produkten av två argumentuttryck.
+The `*` (multiplikation) används för att hitta produkten av två argumentuttryck.
 
 **Format**
 
@@ -54,7 +55,7 @@ Följande åtgärd hittar produkten i lagret och priset på en produkt för att 
 
 ## Subtrahera{#substract}
 
-Funktionen `-` (subtraktion) används för att hitta skillnaden mellan två argumentuttryck.
+The `-` (subtraktion) används för att hitta skillnaden mellan två argumentuttryck.
 
 **Format**
 
@@ -72,7 +73,7 @@ Följande åtgärd identifierar prisskillnaden mellan två olika produkter.
 
 ## Dela{#divide}
 
-Funktionen `/` (division) används för att hitta kvoten mellan två argumentuttryck.
+The `/` Funktionen (division) används för att hitta kvoten mellan två argumentuttryck.
 
 **Format**
 
@@ -90,7 +91,7 @@ I följande åtgärd hittas kvoten mellan de totala sålda produkterna och de to
 
 ## Återstående{#remainder}
 
-Funktionen `%` (modulo/rest) används för att hitta resten efter att de två argumentuttrycken har delats.
+The `%` Funktionen (modulo/rest) används för att hitta resten efter att de två argumentuttrycken har delats.
 
 **Format**
 

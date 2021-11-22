@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 5e93ccee2056814c25531fc13c3cd433a19077a6
+source-git-commit: 01313f84dc9d5260388574b3e1eb7e4a7df14d0e
 workflow-type: tm+mt
-source-wordcount: '1996'
+source-wordcount: '1978'
 ht-degree: 10%
 
 ---
@@ -25,7 +25,7 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 <tr>
 <td>
 <p>You can now trigger a journey targeting a subscription list. To perform this: add a Read segment activity followed by a message, and in the message email settings, define an expression that will fetch the subscriber email address from the profile, for the targeted subscription list. The expression editor has been enhanced to allow you to to select the first entry key of a map.</p>
-<p>Learn more in the <a href="https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/main-functions-journey/list/functionfilter.html">detailed documentation</a>.</p>>
+<p>Learn more in the <a href="building-journeys/functions/functionfilter.md">detailed documentation</a>.</p>>
 </td>
 </tr>
 </tbody>
@@ -155,7 +155,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 <p>Nu kan du skicka samlingar eller en lista med data i dina anpassade åtgärdsparametrar som fylls i dynamiskt vid körning. Två sorters samlingar stöds: enkla samlingar och objektsamlingar. Tidigare skapade anpassade åtgärder fortsätter att fungera. </p>
 <p>Mer information om samlingar finns i <a href="building-journeys/collections.md">detaljerad dokumentation</a>. </p>
 <p>Funktionerna för att filtrera och överlappa har lagts till i listan med funktioner som är tillgängliga i den avancerade uttrycksredigeraren. Det ger fler möjligheter att filtrera och jämföra samlingar.</p>
-<p>Läs dokumentationen på <a href="https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/main-functions-journey/list/functionfilter.html">filter</a> och <a href="https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/main-functions-journey/list/functionintersect.html">korsa</a> funktioner.</p>
+<p>Läs dokumentationen på <a href="building-journeys/functions/functionfilter.md">filter</a> och <a href="building-journeys/functions/functionintersect.md">korsa</a> funktioner.</p>
 </td>
 </tr>
 </tbody>

@@ -1,13 +1,14 @@
 ---
 title: Lista beslut
 description: Ett beslut innehåller den logik som ligger till grund för valet av ett erbjudande.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+exl-id: 123ed057-e15f-4110-9fc6-df0e9cb5b038
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '256'
 ht-degree: 3%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 3%
 
 Ett beslut (som tidigare kallades erbjudandeaktivitet) innehåller den logik som ligger till grund för valet av ett erbjudande.
 
-Du kan visa en lista över alla beslut i en behållare genom att utföra en enda GET-begäran till API:t [!DNL Offer Library].
+Du kan visa en lista över alla beslut i en behållare genom att utföra en enda GET-begäran till [!DNL Offer Library] API.
 
 **API-format**
 
@@ -53,10 +54,10 @@ De vanligaste frågeparametrarna för sidindelning är:
 
 | Parameter | Beskrivning | Exempel |
 | --------- | ----------- | ------- |
-| `q` | En valfri frågesträng att söka efter i markerade fält. Frågesträngen ska vara i gemener och kan omges av citattecken för att förhindra att den tokeniseras och för att undvika specialtecken. Tecknen `+ - = && || > < ! ( ) { } [ ] ^ \" ~ * ? : \ /` har en speciell innebörd och bör föregås av ett omvänt snedstreck när de visas i frågesträngen. | `default` |
+| `q` | En valfri frågesträng att söka efter i markerade fält. Frågesträngen ska vara i gemener och kan omges av citattecken för att förhindra att den tokeniseras och för att undvika specialtecken. Tecknen `+ - = && || > < ! ( ) { } [ ] ^ \" ~ * ? : \ /` har en speciell betydelse och bör föregås av ett omvänt snedstreck när de visas i frågesträngen. | `default` |
 | `qop` | Använder operatorn AND eller OR på värden i frågesträngsparam. | `AND` / `OR` |
-| `field` | Valfri lista med fält som sökningen ska begränsas till. Den här parametern kan upprepas så här: field=field1[,field=field2,...] och (sökvägsuttryck är i form av punktavgränsade banor som _instance.xdm:name) | `_instance.xdm:name` |
-| `orderBy` | Sortera resultaten efter en specifik egenskap. Om du lägger till en `-` före-titel (`orderby=-title`) sorteras objekt efter titel i fallande ordning (Z-A). | `-repo:createdDate` |
+| `field` | Valfri lista med fält som sökningen ska begränsas till. Den här parametern kan upprepas så här: field=field1[,field=field2,..] och (sökvägsuttryck är i form av punktavgränsade banor som _instance.xdm:name) | `_instance.xdm:name` |
+| `orderBy` | Sortera resultaten efter en specifik egenskap. Lägga till en `-` före rubrik (`orderby=-title`) sorterar objekten efter rubrik i fallande ordning (Z-A). | `-repo:createdDate` |
 | `limit` | Begränsa antalet beslut som returneras. | `limit=5` |
 
 **Svar**

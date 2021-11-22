@@ -3,19 +3,19 @@ title: Delegera underdomäner
 description: Lär dig hur du delegerar dina underdomäner
 internal: n
 snippet: y
-feature: Applikationsinställningar
-topic: Administrering
+feature: Application Settings
+topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
+exl-id: 1b5ca4db-44d9-49e2-ab39-a1abba223ec7
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 27%
+source-wordcount: '385'
+ht-degree: 26%
 
 ---
 
-
-# Delegering av underdomän i [!DNL Journey Optimizer]
+# Delegering till underdomän i [!DNL Journey Optimizer]
 
 Genom att skapa en underdomän för e-postkampanjer kan varumärken isolera olika typer av trafik (till exempel marknadsföring kontra företag) i specifika IP-pooler och med specifika domäner, vilket snabbar upp IP-uppvärmningsprocessen och förbättrar leveransmöjligheterna generellt. Om du delar en domän och den blockeras eller läggs till i blockeringslista kan det påverka företagets e-postleverans. Men kända problem eller blockeringar på en domän som är specifik för din e-postmarknadsföring kommer att påverka just det e-postflödet. Om du använder huvuddomänen som avsändare eller Från-adress för flera e-postströmmar kan det också bryta e-postautentiseringen, vilket gör att dina meddelanden blockeras eller placeras i skräppostmappen.
 
@@ -34,6 +34,6 @@ Dessa krav hanteras via komponenter som finns både på Adobe och hos kunden, me
 
 **Läs mer**
 
-* Lär dig hur du [delegerar dina underdomäner](delegate-subdomain.md) direkt från gränssnittet
-* Lär dig hur du [lägger till Google TXT-poster](google-txt.md) i dina underdomäner för att se till att e-postmeddelanden skickas till Gmail-adresser
-* Lär dig hur du [får åtkomst till de PTR-poster](ptr-records.md) som genererats för dina underdomäner, så att de kan verifieras genom att skicka e-postservrar
+* Lär dig hur [delegera dina underdomäner](delegate-subdomain.md) direkt från gränssnittet
+* Lär dig hur [lägg till Google TXT-poster](google-txt.md) till dina underdomäner för att säkerställa att e-postmeddelanden skickas till Gmail-adresser
+* Lär dig hur [få åtkomst till PTR-posterna](ptr-records.md) som har genererats för dina underdomäner, så att de kan verifieras genom att e-postservrar skickas

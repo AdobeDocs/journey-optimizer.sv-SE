@@ -2,7 +2,8 @@
 title: Journey Optimizer Get Started for System Admin
 description: Som systemadministratör får du lära dig mer om hur du arbetar med Journey Optimizer
 level: Intermediate
-source-git-commit: a27a6d7ab96bd08e7a2601c2e86d1d9f0fc4be0a
+exl-id: 24f85ced-aa45-493f-b2c4-7c7b58351b38
+source-git-commit: f0c5b42984b76fee005fe0c0e10312d47f9d10e8
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 2%
@@ -62,9 +63,7 @@ Följ stegen nedan:
 1. **Hantera inaktiveringen och tillåtelselista**: förbättra leveransen med dämpning och tillåtelselista
 
    * A [utelämningslista](../suppression-list.md) består av e-postadresser som du vill utesluta från leveranserna, eftersom det kan skada ditt anseende och din leveransfrekvens om du skickar till dessa kontakter. Du kan övervaka alla e-postadresser som automatiskt har uteslutits från att skickas under en resa, till exempel ogiltiga adresser, adresser som alltid har mjuka studsar, och som kan påverka ditt e-postanseende negativt, samt mottagare som gör något slags skräppostklagomål mot något av dina e-postmeddelanden. Lär dig hantera [utelämningslista](../configuration/manage-suppression-list.md) och [återförsök](../configuration/retries.md).
-
    ![](../assets/suppression-list-filtering-example.png)
 
    * The [tillåtelselista](../allow-list.md) Med kan du ange enskilda e-postadresser eller domäner som ska vara de enda mottagarna eller domänerna som har behörighet att ta emot e-postmeddelanden som du skickar från en viss sandlåda. Detta kan förhindra att du av misstag skickar e-post till verkliga kundadresser när du befinner dig i en testmiljö. Lär dig hur [aktivera tillåtelselista](../allow-list.md).
    Läs mer om hantering av slutprodukter i [!DNL Adobe Journey Optimizer] [på den här sidan](../deliverability.md).
-

@@ -51,7 +51,7 @@ Som standard visas meddelandena med början från det senaste körningsdatumet. 
 
 ![](assets/message-execution-tab-filters.png)
 
-The <!--**[!UICONTROL Quick action]**-->den andra kolumnen öppnas [message](create-message.md) och få tillgång till [Live-rapport](reports/live-report.md) om du är i **[!UICONTROL Live view]** eller [Global rapport](reports/global-report.md) om du är i **[!UICONTROL Global view]**.
+The <!--**[!UICONTROL Quick action]**-->den andra kolumnen öppnar motsvarande [message](create-message.md) och få tillgång till [Live-rapport](reports/live-report.md) om du är i **[!UICONTROL Live view]** eller [Global rapport](reports/global-report.md) om du är i **[!UICONTROL Global view]**.
 
 ![](assets/message-execution-open-live-report.png)
 

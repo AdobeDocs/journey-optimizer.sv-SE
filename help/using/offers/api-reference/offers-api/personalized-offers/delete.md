@@ -1,20 +1,21 @@
 ---
 title: Ta bort personaliserade erbjudanden
 description: Ett personaliserat erbjudande är ett anpassningsbart marknadsföringsmeddelande som baseras på regler och begränsningar för behörighet.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+exl-id: 52a5053d-3b94-47fd-a064-a20f9a595150
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '144'
 ht-degree: 4%
 
 ---
 
 # Ta bort ett personaliserat erbjudande
 
-Ibland kan det vara nödvändigt att ta bort (DELETE) ett personaliserat erbjudande. Endast personliga erbjudanden som du skapar i innehavarbehållaren kan tas bort. Detta görs genom att utföra en DELETE-begäran till API:t [!DNL Offer Library] med $id för det anpassade erbjudande som du vill ta bort.
+Ibland kan det vara nödvändigt att ta bort (DELETE) ett personaliserat erbjudande. Endast personliga erbjudanden som du skapar i innehavarbehållaren kan tas bort. Detta görs genom att DELETE begär [!DNL Offer Library] API som använder $id för det anpassade erbjudande som du vill ta bort.
 
 **API-format**
 

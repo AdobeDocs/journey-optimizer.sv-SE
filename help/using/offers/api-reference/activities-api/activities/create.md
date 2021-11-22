@@ -1,24 +1,25 @@
 ---
 title: Skapa beslut
 description: Ett beslut innehåller den logik som ligger till grund för valet av ett erbjudande.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+exl-id: 553501b0-30a9-4795-9a9d-f42df5f4f2ea
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 7%
+source-wordcount: '119'
+ht-degree: 6%
 
 ---
 
 # Skapa ett beslut
 
-Du kan skapa ett beslut (som tidigare kallades erbjudandeaktivitet) genom att göra en POST-förfrågan till API:t [!DNL Offer Library] och samtidigt ange ditt behållar-ID.
+Du kan skapa ett beslut (som tidigare kallades erbjudandeaktivitet) genom att göra en POST-förfrågan till [!DNL Offer Library] API, samtidigt som du anger ditt behållar-ID.
 
 ## Sidhuvuden för acceptera och innehållstyp
 
-I följande tabell visas giltiga värden som består av fälten *Content-Type* och *Accept* i begärandehuvudet:
+I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
@@ -68,7 +69,7 @@ curl -X POST \
 
 **Svar**
 
-Ett lyckat svar returnerar information om det nya beslutet, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort ditt beslut.
+Ett godkänt svar returnerar information om det nya beslutet, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort ditt beslut.
 
 ```json
 {

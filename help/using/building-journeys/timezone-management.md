@@ -1,20 +1,21 @@
 ---
 title: Hantering av tidszoner
 description: Läs mer om hantering av tidszoner
-feature: Resor
-topic: Innehållshantering
+feature: Journeys
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: d76eee0efa6735d6d81d7d7c752ed253b4cbebb5
+exl-id: 3bcc08d6-1210-4ff9-92f4-edee8285b469
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 3%
+source-wordcount: '277'
+ht-degree: 2%
 
 ---
 
 # Hantering av tidszoner {#timezone_management}
 
-Du kan definiera en tidszon i [egenskaperna](../building-journeys/journey-gs.md#change-properties) för din resa.
+Du kan definiera en tidszon i dialogrutan [egenskaper](../building-journeys/journey-gs.md#change-properties) av din resa.
 
 Du öppnar Egenskaper genom att klicka på pennikonen i skärmens övre högra hörn.
 
@@ -29,13 +30,13 @@ Du kan välja en tidszon eller välja att använda den tidszon som är definiera
 
 >[!NOTE]
 >
->Tidszonen för profilen fungerar med fältet **timeZone** i fältgruppen **Inställningsinformation**.
+>Tidszonen för profilen fungerar med **timeZone** fältet finns i **Inställningsinformation** fältgrupp.
 
 ## Definiera en fast tidszon {#fixed-timezone}
 
 Tidszonen kan också korrigeras. Rensa den fördefinierade tidszonen och välj en i listrutan. Om du använder en fast tidszon är den densamma för alla personer som deltar i resan.
 
-Om du vill göra det väljer du en tidszon i rutan **[!UICONTROL Journey Properties]**.
+Om du vill göra det går du till **[!UICONTROL Journey Properties]** väljer du en tidszon.
 
 ![](../assets/journey72.png)
 
@@ -47,7 +48,7 @@ Om en tidszon definieras i Adobe Experience Platform-profilen kan den hämtas un
 
 Om den enskilda personens profil inte innehåller någon tidszon är den tidszon som hämtas den som definieras i tidszonsfältet.
 
-Om du vill göra det i **[!UICONTROL Properties]** markerar du **[!UICONTROL Use Profile timezone in waits and conditions]**.
+Gör så här: **[!UICONTROL Properties]**, kontrollera **[!UICONTROL Use Profile timezone in waits and conditions]**.
 
 ![](../assets/journey73.png)
 

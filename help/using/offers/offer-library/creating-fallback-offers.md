@@ -1,14 +1,15 @@
 ---
 title: Skapa reserverbjudanden
 description: Lär dig hur du skapar erbjudanden i Adobe Experience Platform.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: User
 level: Intermediate
-source-git-commit: 0e5cc9101ff382ce9fde442da38eb46aa28e9c77
+exl-id: 9ba16ad9-a5e7-4ce7-8ed6-7707d37178c6
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 4%
+source-wordcount: '281'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +19,7 @@ Reserverbjudandet skickas till kunderna om de inte är berättigade till andra e
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
-Listan med reserverbjudanden finns på **[!UICONTROL Offers]**-menyn.
+Listan över reserverbjudanden finns i **[!UICONTROL Offers]** -menyn.
 
 ![](../../assets/offers_list.png)
 
@@ -28,7 +29,7 @@ Så här skapar du ett reserverbjudande:
 >
 >Observera, att till skillnad från personaliserade erbjudanden saknar reserverbjudanden regler och villkorsparametrar eftersom de presenteras för kunderna som sista utväg utan villkor.
 
-1. Klicka på **[!UICONTROL Create offer]** och välj sedan **[!UICONTROL Fallback offer]**.
+1. Klicka **[!UICONTROL Create offer]** väljer **[!UICONTROL Fallback offer]**.
 
    ![](../../assets/create_fallback.png)
 
@@ -40,13 +41,13 @@ Så här skapar du ett reserverbjudande:
 
    ![](../../assets/fallback_content.png)
 
-1. När reserverbjudandets representationer har lagts till visas en sammanfattning. Om allt är korrekt konfigurerat och ditt reserverbjudande är klart att presenteras för kunderna klickar du på **[!UICONTROL Finish]** och väljer sedan **[!UICONTROL Save and approve]**.
+1. När reserverbjudandets representationer har lagts till visas en sammanfattning. Om allt är korrekt konfigurerat och ditt reserverbjudande är klart att presenteras för kunderna klickar du **[!UICONTROL Finish]** väljer **[!UICONTROL Save and approve]**.
 
    Du kan också spara reserverbjudandet som ett utkast för att redigera och godkänna det senare.
 
    ![](../../assets/fallback_review.png)
 
-1. Reserverbjudandet visas i listan med statusen **[!UICONTROL Live]** eller **[!UICONTROL Draft]**, beroende på om du godkände det eller inte i det föregående steget.
+1. Reserverbjudandet visas i listan med **[!UICONTROL Live]** eller **[!UICONTROL Draft]** status, beroende på om du har godkänt den eller inte i föregående steg.
 
    Den är nu klar att levereras till kunderna. Du kan markera den för att visa dess egenskaper och redigera den. <!-- no suppression? -->
 

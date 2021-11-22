@@ -2,14 +2,15 @@
 title: Publicera och ändra ett meddelande
 description: Lär dig hur du publicerar och uppdaterar meddelanden
 snippet: y
-feature: Resor
-topic: Innehållshantering
+feature: Journeys
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: fa025278c2e2cf02df22d31532b0d33786996915
+exl-id: 116e2223-a806-4f68-9a8c-c0bde6008010
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 4%
+source-wordcount: '216'
+ht-degree: 3%
 
 ---
 
@@ -25,7 +26,7 @@ När meddelandet har skapats kan du publicera det så att det blir tillgängligt
 
 ![](assets/publish-message.png)
 
-När meddelandet har publicerats läggs det till i meddelandelistan med statusen **[!UICONTROL Published]**.
+När meddelandet har publicerats läggs det till i meddelandelistan med **[!UICONTROL Published]** status.
 
 Den är nu klar att aktiveras av en eller flera [resor](building-journeys/journey.md).
 

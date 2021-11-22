@@ -5,10 +5,10 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att leverera sammankopplade, kontextuella och personaliserade upplevelser till kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: d575862cf7b6803e75b80ce6d1ff714ba319341b
+source-git-commit: 4695c88b4372a0f2a804bef268ae6f2d39eb2f0b
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 41%
+source-wordcount: '855'
+ht-degree: 47%
 
 ---
 
@@ -98,6 +98,92 @@ ht-degree: 41%
       + [Adobe Campaign v7/v8-åtgärder](using/building-journeys/using-adobe-campaign-classic.md)
       + [Hoppa](using/building-journeys/jump.md)
       + [Uppdatera profil](using/building-journeys/update-profiles.md)
+   + Skapa uttryck {#building-advanced-conditions-journeys}
+      + [Översikt](using/building-journeys/expression/expressionadvanced.md)
+      + Syntax {#syntax}
+         + [Allmänt](using/building-journeys/expression/generalities.md)
+         + [Villkorlig instruktion](using/building-journeys/expression/conditional-instruction.md)
+         + [Datatyper](using/building-journeys/expression/data-types.md)
+         + [Fältreferenser](using/building-journeys/expression/field-references.md)
+         + [Funktioner för att hantera samlingar](using/building-journeys/expression/collection-management-functions.md)
+         + [Operatorer](using/building-journeys/expression/operators.md)
+         + [Resans egenskaper](using/building-journeys/expression/journey-properties.md)
+         + [Exempel](using/building-journeys/expression/advanced-editor-use-cases.md)
+      + Funktioner {#main-functions-journey}
+         + [Huvudfunktioner](using/building-journeys/expression/functions.md)
+         + Adobe Experience Platform {#adobe-experience-platform}
+            + [inSegment](using/building-journeys/functions/functioninsegment.md)
+         + Aggregera {#aggregation}
+            + [avg](using/building-journeys/functions/functionavg.md)
+            + [count](using/building-journeys/functions/functioncount.md)
+            + [countOnlyNull](using/building-journeys/functions/functioncountonlynull.md)
+            + [countWithNull](using/building-journeys/functions/functioncountwithnull.md)
+            + [distinctCount](using/building-journeys/functions/functiondistinctcount.md)
+            + [distinctCountWithNull](using/building-journeys/functions/functiondistinctcountwithnull.md)
+            + [max](using/building-journeys/functions/functionmax.md)
+            + [min](using/building-journeys/functions/functionmin.md)
+            + [sum](using/building-journeys/functions/functionsum.md)
+         + Konvertering {#conversion}
+            + [toBool](using/building-journeys/functions/functiontobool.md)
+            + [toDateOnly](using/building-journeys/functions/functiontodateonly.md)
+            + [toDateTime](using/building-journeys/functions/functiontodatetime.md)
+            + [toDateTimeOnly](using/building-journeys/functions/functiontodatetimeonly.md)
+            + [toDecimal](using/building-journeys/functions/functiontodecimal.md)
+            + [toDuration](using/building-journeys/functions/functiontoduration.md)
+            + [toInteger](using/building-journeys/functions/functiontointeger.md)
+            + [toString](using/building-journeys/functions/functiontostring.md)
+         + Datum {#date}
+            + [currentTimeInMillis](using/building-journeys/functions/functioncurrenttimeinmillis.md)
+            + [inLastDays](using/building-journeys/functions/functioninlastdays.md)
+            + [inLastHours](using/building-journeys/functions/functioninlasthours.md)
+            + [inLastMonths](using/building-journeys/functions/functioninlastmonths.md)
+            + [inLastYears](using/building-journeys/functions/functioninlastyears.md)
+            + [inNextDays](using/building-journeys/functions/functioninnextdays.md)
+            + [inNextHours](using/building-journeys/functions/functioninnexthours.md)
+            + [inNextMonths](using/building-journeys/functions/functioninnextmonths.md)
+            + [inNextYears](using/building-journeys/functions/functioninnextyears.md)
+            + [now](using/building-journeys/functions/functionnow.md)
+            + [nowWithDelta](using/building-journeys/functions/functionnowwithdelta.md)
+            + [setHours](using/building-journeys/functions/functionsethours.md)
+            + [setDays](using/building-journeys/functions/functionsetdays.md)
+            + [updateTimeZone](using/building-journeys/functions/functionupdatetimezone.md)
+         + Lista {#list}
+            + [distinct](using/building-journeys/functions/functiondistinct.md)
+            + [distinctWithNull](using/building-journeys/functions/functiondistinctwithnull.md)
+            + [filter](using/building-journeys/functions/functionfilter.md)
+            + [getListItem](using/building-journeys/functions/functiongetlistitem.md)
+            + [in](using/building-journeys/functions/functionin.md)
+            + [korsa](using/building-journeys/functions/functionintersect.md)
+            + [listSize](using/building-journeys/functions/functionlistsize.md)
+            + [serializeList](using/building-journeys/functions/functionserializelist.md)
+            + [sort](using/building-journeys/functions/functionsort.md)
+         + Matematik {#math}
+            + [random](using/building-journeys/functions/functionrandom.md)
+            + [round](using/building-journeys/functions/functionround.md)
+         + Sträng {#string}
+            + [concat](using/building-journeys/functions/functionconcat.md)
+            + [contain](using/building-journeys/functions/functioncontain.md)
+            + [containIgnoreCase](using/building-journeys/functions/functioncontainwithignorecase.md)
+            + [endWith](using/building-journeys/functions/functionendwith.md)
+            + [endWithIgnorecase](using/building-journeys/functions/functionendwithignorecase.md)
+            + [equalIgnoreCase](using/building-journeys/functions/functionequalignorecase.md)
+            + [indexOf](using/building-journeys/functions/functionindexof.md)
+            + [isEmpty](using/building-journeys/functions/functionisempty.md)
+            + [isNotEmpty](using/building-journeys/functions/functionisnotempty.md)
+            + [lastIndexOf](using/building-journeys/functions/functionlastindexof.md)
+            + [längd](using/building-journeys/functions/functionlength.md)
+            + [nedre](using/building-journeys/functions/functionlower.md)
+            + [matchRegExp](using/building-journeys/functions/functionmatchregexp.md)
+            + [notequalIgnoreCase](using/building-journeys/functions/functionnotequalignorecase.md)
+            + [ersätta](using/building-journeys/functions/functionreplace.md)
+            + [replaceAll](using/building-journeys/functions/functionreplaceall.md)
+            + [dela](using/building-journeys/functions/functionsplit.md)
+            + [startWith](using/building-journeys/functions/functionstartwith.md)
+            + [startWithIgnoreCase](using/building-journeys/functions/functionstartwithignorecase.md)
+            + [substr](using/building-journeys/functions/functionsubstr.md)
+            + [trim](using/building-journeys/functions/functiontrim.md)
+            + [övre](using/building-journeys/functions/functionupper.md)
+            + [uuid](using/building-journeys/functions/functionuuid.md)
    + Användningsfall {#journey-use-cases}
       + [Skicka flerkanalsmeddelanden](using/building-journeys/journeys-uc.md)
       + [Skicka ett meddelande med Campaign v7/v8](using/building-journeys/campaign-classic-use-case.md)

@@ -1,6 +1,6 @@
 ---
 title: Hantera listan över inaktiveringar
-description: 'Lär dig hur du får åtkomst till och hanterar Journey Optimizer-listan över inaktiveringar '
+description: Lär dig hur du får åtkomst till och hanterar Journey Optimizer-listan över inaktiveringar
 page-status-flag: never-activated
 uuid: null
 contentOwner: null
@@ -15,31 +15,31 @@ feature: Application Settings
 topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: 260513cd966ab8e579fa0af0fec0376110d0b53f
+exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
 source-wordcount: '911'
 ht-degree: 1%
 
 ---
 
-
 # Hantera listan över inaktiveringar {#manage-suppression-list}
 
-Med [!DNL Journey Optimizer] kan du övervaka alla e-postadresser som automatiskt utesluts från att skickas under en resa, till exempel:
+Med [!DNL Journey Optimizer]kan du övervaka alla e-postadresser som automatiskt utesluts från att skickas under en resa, till exempel:
 
 * Adresser som är ogiltiga (hårda studsar).
 * Adresserar som konsekvent studsar utan extra kostnad och kan påverka e-postens anseende negativt om du fortsätter att inkludera dem i dina leveranser.
 * Mottagare som skickar skräppost av något slag mot ett av dina e-postmeddelanden.
 
-Sådana e-postadresser samlas automatiskt in i Journey Optimizer **listan**. Läs mer om konceptet för inaktiveringslistan och användningen i [det här avsnittet](../suppression-list.md).
+Sådana e-postadresser samlas automatiskt in i Journey Optimizer **utelämningslista**. Läs mer om begrepp och användning i listan över inaktiveringar i [det här avsnittet](../suppression-list.md).
 
 ## Åtkomst till listan över inaktiveringar {#access-suppression-list}
 
-Om du vill få tillgång till den detaljerade listan över undantagna e-postadresser går du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** och väljer **[!UICONTROL Suppression list]**.
+Om du vill få tillgång till en detaljerad lista över e-postadresser som inte ingår går du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** och markera **[!UICONTROL Suppression list]**.
 
 >[!CAUTION]
 >
->Behörigheter att visa, exportera och hantera undertryckningslistan är begränsade till [reseadministratörer](../administration/ootb-product-profiles.md#journey-administrator). Läs mer om hur du hanterar [!DNL Journey Optimizer]-användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
+>Behörigheterna att visa, exportera och hantera undertryckningslistan är begränsade till [Reseadministratörer](../administration/ootb-product-profiles.md#journey-administrator). Läs mer om hantering [!DNL Journey Optimizer] användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
 
 <!--![](../assets/suppression-list-link.png)
 
@@ -53,33 +53,33 @@ Det finns filter som hjälper dig att bläddra igenom listan.
 
 ![](../assets/suppression-list-filters.png)
 
-Du kan filtrera på **[!UICONTROL Suppression category]**, **[!UICONTROL Address type]** eller **[!UICONTROL Reason]**. Välj alternativ för varje kriterium. När du har valt det här alternativet kan du rensa alla filter eller alla filter som visas ovanpå listan.
+Du kan filtrera på **[!UICONTROL Suppression category]**, **[!UICONTROL Address type]**, eller **[!UICONTROL Reason]**. Välj alternativ för varje kriterium. När du har valt det här alternativet kan du rensa alla filter eller alla filter som visas ovanpå listan.
 
 ![](../assets/suppression-list-filtering-example.png)
 
-Om du lägger till en e-postadress eller en domän manuellt av misstag kan du ta bort posten med knappen **[!UICONTROL Delete]**.
+Om du av misstag lägger till en e-postadress eller en domän manuellt, visas **[!UICONTROL Delete]** kan du ta bort inmatningen.
 
 >[!CAUTION]
 >
->Använd aldrig knappen **[!UICONTROL Delete]** för att ta bort undertryckta e-postadresser eller domäner.
+>Använd aldrig **[!UICONTROL Delete]** om du vill ta bort inaktiverade e-postadresser eller domäner.
 
 ![](../assets/suppression-list-delete.png)
 
-Om du tar bort en e-postadress eller en domän från listan över inaktiveringar kommer du att börja leverera till den här adressen eller domänen igen. Detta kan få allvarliga konsekvenser för din leveransförmåga och IP-anseende, vilket i slutänden kan leda till att din IP-adress eller sändande domän blockeras. Läs mer om vikten av att undertryckningslistan sparas i [det här avsnittet](../suppression-list.md).
+Om du tar bort en e-postadress eller en domän från listan över inaktiveringar kommer du att börja leverera till den här adressen eller domänen igen. Detta kan få allvarliga konsekvenser för din leveransförmåga och IP-anseende, vilket i slutänden kan leda till att din IP-adress eller sändande domän blockeras. Läs mer om hur viktigt det är att undertryckningslistan finns i [det här avsnittet](../suppression-list.md).
 
 >[!NOTE]
 >
 >Fortsätt med extra omsorg när du funderar på att ta bort en e-postadress eller domän. Om du är osäker kan du kontakta en expert på slutprodukter.
 
-I vyn **[!UICONTROL Suppression list]** kan du även redigera undertryckningsregler. [Läs mer](retries.md)
+Från **[!UICONTROL Suppression list]** kan du även redigera undertryckningsregler. [Läs mer](retries.md)
 
-Om du vill exportera undertryckningslistan som en CSV-fil väljer du knappen **[!UICONTROL Download CSV]**.
+Om du vill exportera listan över inaktiveringar som en CSV-fil väljer du **[!UICONTROL Download CSV]** -knappen.
 
 ![](../assets/suppression-list-download-csv.png)
 
 ## Undertryckningskategorier och orsaker {#suppression-categories-and-reasons}
 
-När ett meddelande inte kan levereras till en e-postadress avgör [!DNL Journey Optimizer] varför leveransen misslyckades och associerar den med en **[!UICONTROL Suppression category]**.
+När ett meddelande inte kan levereras till en e-postadress, [!DNL Journey Optimizer] avgör varför leveransen misslyckades och associerar den med en **[!UICONTROL Suppression category]**.
 
 Undertryckningskategorierna är följande:
 
@@ -87,7 +87,7 @@ Undertryckningskategorierna är följande:
 
    >[!NOTE]
    >
-   >När felet beror på ett skräppostklagomål tillhör det även kategorin **Hård**. E-postadressen till mottagaren som skickade klagomålet skickas omedelbart till suppressionslistan.
+   >När felet beror på ett skräppostklagomål hamnar det också i **Hård** kategori. E-postadressen till mottagaren som skickade klagomålet skickas omedelbart till suppressionslistan.
 
 * **Mjuk**: Mjuka fel skickar en adress till listan när felräknaren når gränsvärdet. [Läs mer om återförsök](retries.md)
 
@@ -101,9 +101,9 @@ Undertryckningskategorierna är följande:
 
 >[!NOTE]
 >
->Läs mer om mjuka studsar och fasta studsar i avsnittet [Leveransfel](../suppression-list.md#delivery-failures).
+>Läs mer om mjuka studsar och hårda studsar i [Leveransfel](../suppression-list.md#delivery-failures) -avsnitt.
 
-För varje e-postadress som visas kan du även kontrollera **[!UICONTROL Type]** (e-postadress eller domän), **[!UICONTROL Reason]** för att utesluta den, vem som lagt till den och datumet/tiden som den lades till i listan över inaktiveringar.
+För varje e-postadress som visas kan du även kontrollera **[!UICONTROL Type]** (e-post eller domän), **[!UICONTROL Reason]** för att utesluta den, vem som lagt till den och datumet/tiden som den lades till i listan över inaktiveringar.
 
 ![](../assets/suppression-list.png)
 
@@ -121,7 +121,7 @@ Möjliga orsaker till leveransfel är:
 
 >[!NOTE]
 >
->Användare som avbeställer prenumerationen får inte e-post från [!DNL Journey Optimizer], och deras e-postadresser kan därför inte skickas till listan över inaktiveringar. Deras val hanteras på Experience Platform-nivå. [Läs mer om att avanmäla dig](../consent.md)
+>Användare som avbeställer prenumerationen får inte e-post från [!DNL Journey Optimizer]Därför kan deras e-postadresser inte skickas till listan över inaktiveringar. Deras val hanteras på Experience Platform-nivå. [Läs mer om att avanmäla dig](../consent.md)
 
 <!--
 Removed from the table provided by SparkPost/Momentum:
@@ -147,17 +147,17 @@ Removed from the table provided by SparkPost/Momentum:
 
 När ett meddelande inte kan levereras till en e-postadress läggs adressen automatiskt till i listan över undertryckningar baserat på den definierade undertryckningsregeln eller avhoppsantalet.
 
-Du kan också fylla i undertryckslistan [!DNL Journey Optimizer] manuellt om du vill utesluta vissa e-postadresser och/eller domäner från sändningen.
+Du kan även fylla i [!DNL Journey Optimizer] utelämningslista om du vill exkludera specifika e-postadresser och/eller domäner från din sändning.
 
-Du kan lägga till e-postadresser eller domäner [en åt gången, eller [i gruppläge](#upload-csv-file) genom en CSV-filöverföring.](#add-one-address-or-domain)
+Du kan lägga till e-postadresser eller domäner [en åt gången](#add-one-address-or-domain), eller [i gruppläge](#upload-csv-file) via en CSV-filöverföring.
 
-Det gör du genom att markera knappen **[!UICONTROL Add email or domain]** och sedan följa en av metoderna nedan.
+Om du vill göra det väljer du **[!UICONTROL Add email or domain]** och därefter någon av metoderna nedan.
 
 ![](../assets/suppression-list-add-email.png)
 
 ### Lägg till en adress eller domän {#add-one-address-or-domain}
 
-1. Välj alternativet **[!UICONTROL One by one]**.
+1. Välj **[!UICONTROL One by one]** alternativ.
 
    ![](../assets/suppression-list-add-email-address.png)
 
@@ -175,7 +175,7 @@ Det gör du genom att markera knappen **[!UICONTROL Add email or domain]** och s
 
 ### Överföra en CSV-fil {#upload-csv-file}
 
-1. Välj alternativet **[!UICONTROL Upload CSV]**.
+1. Välj **[!UICONTROL Upload CSV]** alternativ.
 
    ![](../assets/suppression-list-upload-csv.png)
 
@@ -186,7 +186,7 @@ Det gör du genom att markera knappen **[!UICONTROL Add email or domain]** och s
    EMAIL,abc@somedomain.com,Comment
    DOMAIN,somedomain.com,Comment
    ```
-   Du kan även hämta den här mallen från huvudvyn i **[!UICONTROL Suppression list]**.
+   Du kan även hämta den här mallen från **[!UICONTROL Suppression list]** huvudvyn.
 
    >[!CAUTION]
    >
@@ -206,7 +206,7 @@ Det gör du genom att markera knappen **[!UICONTROL Add email or domain]** och s
 
 Du kan kontrollera listan med de senaste CSV-filerna som du har överfört.
 
-Det gör du genom att klicka på knappen **[!UICONTROL Recent uploads]** i vyn **[!UICONTROL Suppression list]**.
+Om du vill göra det går du till **[!UICONTROL Suppression list]** visa klickar du på **[!UICONTROL Recent uploads]** -knappen.
 
 ![](../assets/suppression-list-recent-uploads-button.png)
 
@@ -227,6 +227,3 @@ Domain,example,MANUAL,Invalid format for value: example
 Domain,example.!com,MANUAL,Invalid format for value: example.!com
 Domain,!examplecom,MANUAL,Invalid format for value: !examplecom
 ```
-
-
-

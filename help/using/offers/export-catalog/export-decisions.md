@@ -1,13 +1,14 @@
 ---
 title: Kom igång med export av din erbjudandekatalog
 description: I det här avsnittet visas alla fält som används i den exporterade datauppsättningen för beslut.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: User
 level: Intermediate
-source-git-commit: a25264cb43f77671c29f18522110fd85d0155697
+exl-id: 064762b7-9774-42eb-bcef-1d92bc94a988
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1550'
 ht-degree: 0%
 
 ---
@@ -24,74 +25,74 @@ Den senaste lyckade batchen i datauppsättningen visas till höger. Den hierarki
 >
 >Lär dig hur du får åtkomst till exporterade datauppsättningar för varje objekt i ditt Erbjudandebibliotek i [det här avsnittet](../export-catalog/access-dataset.md).
 
-Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Object Repository - Decisions]**-datauppsättningen (tidigare kallad beslutsobjektdatabas - aktiviteter).
+Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Object Repository - Decisions]** datauppsättning (kallades tidigare&quot;Decision Object Repository - Activities&quot;).
 
 <!--A decision (formerly known as offer decision) is used to control the decisioning process. It specifies the filter applied to the total inventory to narrow down offers by topic/category, the placement to narrow down the inventory to those offers that technically fit into the reserved space for the offer and specifies a fallback option should the combined constraints disqualify all available personalization offers.-->
 
 ## Identifierare
 
-**Fält:** _id 
-**Title:** Identifier 
-**Description:** A unique identifier for the record.
-**Typ:** sträng
+**Fält:** _id
+**Titel:** Identifierare
+**Beskrivning:** En unik identifierare för posten.
+**Typ:** string
 
 ## upplevelse
 
-**fält:** _upplevelsetyp 
-**:** objekt
+**Fält:** upplevelse
+**Typ:** object
 
 ### _experience > decisioning
 
-**fält:** bestämma 
-**typ:** objekt
+**Fält:** beslut
+**Typ:** object
 
 #### _experience > decisioning > conditions
 
-**Fält:** villkor 
-**Titel:** Kriteriebeskrivning:
-**** Definierar en uppsättning beslutskriterier där varje innehåller en uppsättning begränsningar.
+**Fält:** kriterier
+**Titel:** Kriterier
+**Beskrivning:** Definierar en uppsättning beslutskriterier där var och en innehåller en uppsättning begränsningar.
 **Typ:** array
 
 **_experience > decisioning > conditions > description**
 
-**fält:** description 
-**title:** Description 
-**Description:** Criterion description. Det används för att förmedla mänskliga, läsbara avsikter om hur eller varför detta kriterium konstruerades och hur det påverkar beslutet.
-**Typ:** sträng
+**Fält:** description
+**Titel:** Beskrivning
+**Beskrivning:** Villkorsbeskrivning. Det används för att förmedla mänskliga, läsbara avsikter om hur eller varför detta kriterium konstruerades och hur det påverkar beslutet.
+**Typ:** string
 
 **_experience > decisioning > conditions > optionSelection**
 
-**Fält:** optionSelection 
-**Title:** Option Selection 
-**Description:** Alternativvalet definierar giltigheten/tillämpligheten för alternativ i det här sammanhanget.
-**text:** objekt
+**Fält:** optionSelection
+**Titel:** Alternativ
+**Beskrivning:** Alternativvalet definierar giltigheten/tillämpligheten för alternativen i det här sammanhanget.
+**Typ:** object
 
 * **Beskrivning**
 
-   **fält:** beskrivning
-   **titel:** beskrivning
-   **Beskrivning:Beskrivning av** alternativval. Det används för att förmedla mänskliga läsbara avsikter om hur eller varför det här alternativvalet skapades och/eller vilket alternativ som matchar.
-   **Typ:** sträng
+   **Fält:** description
+   **Titel:** Beskrivning
+   **Beskrivning:** Beskrivning av alternativval. Det används för att förmedla mänskliga läsbara avsikter om hur eller varför det här alternativvalet skapades och/eller vilket alternativ som matchar.
+   **Typ:** string
 
 * **Alternativfilter**
 
-   **fält:** filter
-   **Titel:** alternativfilter
+   **Fält:** filter
+   **Titel:** Alternativfilter
    **Beskrivning:** Referensen till ett taggbaserat filter som matchar alternativ från ett lager med hjälp av deras kopplade taggar. Värdet är URI (@id) för den beslutsregel som refereras. Se schema https://ns.adobe.com/experience/decisioning/filter.
-   **Typ:** sträng
+   **Typ:** string
 
 * **Typ av profilbegränsning**
 
-   **fält:** optionSelectionType
-   **titel:** Profilbegränsningstyp
+   **Fält:** optionSelectionType
+   **Titel:** Typ av profilbegränsning
    **Beskrivning:** Avgör om några begränsningar är angivna och hur begränsningarna uttrycks. Det kan vara via en filterfråga eller genom ett eller flera segmentmedlemskap.
-   **Typ:** sträng
-   **Möjliga värden:** &quot;none&quot; (standard), &quot;directList&quot;, &quot;filter&quot;
+   **Typ:** string
+   **Möjliga värden:** &quot;none&quot; (default), &quot;directList&quot;, &quot;filter&quot;
 
 * **Alternativlista**
 
-   **fält:** alternativ
-   **Titel:** alternativlista
+   **Fält:** alternativ
+   **Titel:** Alternativlista
    **Beskrivning:** En lista som direkt anger alternativen utan att utvärdera en filterfråga. Du kan antingen ange en alternativlista eller en alternativfilterregel.
    **Typ:** array
 
@@ -99,44 +100,44 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 **_upplevelse > beslut > villkor > placeringar**
 
-**Fält:** placements 
-**Title:** Placement Restrictions 
-**Description:** Placeringsbegränsningen anger att det här kriteriet bara gäller för de listade placeringarna. Det är bara när målplaceringen finns i `xdm:placements`-listan som alternativet övervägs. Annars hoppas hela beslutskriterierna över. När listan &#39;xdm:placements&#39; utelämnas eller är tom, beaktas kriteriet för alla riktade placeringar. De placeringar som anges här innehåller implicita kriterier för alternativvalet. Ett alternativ som ska beaktas måste ha en representation för den avsedda placeringen.
+**Fält:** placeringar
+**Titel:** Placeringsbegränsningar
+**Beskrivning:** Placeringsbegränsningen anger att det här kriteriet bara gäller för de listade placeringarna. Endast när den riktade placeringen finns i `xdm:placements` list är det alternativ du väljer. Annars hoppas hela beslutskriterierna över. När listan &#39;xdm:placements&#39; utelämnas eller är tom, beaktas kriteriet för alla riktade placeringar. De placeringar som anges här innehåller implicita kriterier för alternativvalet. Ett alternativ som ska beaktas måste ha en representation för den avsedda placeringen.
 **Typ:** array
 
 * **Placement-ID**
 
-   **titel:** Placement-ID
+   **Titel:** Placement-ID
    **Beskrivning:** En referens till en placeringsenhet. Värdet är URI (@id) för placeringen som refereras. Se schema https://ns.adobe.com/experience/decisioning/placement.
-   **Typ:** sträng
+   **Typ:** string
 
 **_experience > decisioning > conditions > profileConstraints**
 
-**Fält:** profileConstraints 
-**Title:** Profile Constraint 
-**Description:** Profilbegränsningen avgör om ett alternativval är giltigt för den här profilidentiteten just nu, i det här sammanhanget. Om profilbegränsningen inte behöver ta hänsyn till värden för varje alternativ, d.v.s. det är en skillnad mellan alternativen från alternativmarkeringen, avbryts hela alternativmarkeringen av profilbegränsningen som utvärderas till &quot;false&quot;. Å andra sidan utvärderas en profilbegränsningsregel som tar ett alternativ som parameter för varje kvalificeringsalternativ i alternativvalet.
-**text:** objekt
+**Fält:** profileConstraints
+**Titel:** Profilbegränsning
+**Beskrivning:** Profilbegränsningen avgör om ett alternativ är tillgängligt för den här profilidentiteten just nu, i det här sammanhanget. Om profilbegränsningen inte behöver ta hänsyn till värdena för varje alternativ, d.v.s. det är en skillnad mellan alternativen från alternativmarkeringen, avbryts hela alternativmarkeringen av profilbegränsningen som utvärderas till &quot;false&quot;. Å andra sidan utvärderas en profilbegränsningsregel som tar ett alternativ som parameter för varje kvalificeringsalternativ i alternativvalet.
+**Typ:** object
 
 * **_experience > decisioning > conditions > profileConstraints > Description**
 
-   **fält:** beskrivning
-   **titel:** beskrivning
+   **Fält:** description
+   **Titel:** Beskrivning
    **Beskrivning:** Profilbegränsningsbeskrivning. Den används för att förmedla mänskliga läsbara avsikter om hur eller varför den här profilbegränsningen konstruerades och/eller vilket alternativ som kommer att inkluderas eller exkluderas av den.
-   **Typ:** sträng
+   **Typ:** string
 
 * **_experience > decisioning > conditions > profileConstraints > eligibility Rule**
 
    **Fält:** eligibilityRule
-   **Titel:** Kvalifikationsregel
+   **Titel:** Behörighetsregel
    **Beskrivning:** En referens till en beslutsregel som utvärderas till true eller false för en given profil och/eller andra angivna kontextuella XDM-objekt. Regeln används för att bestämma om alternativet kvalificerar sig för en viss profil. Värdet är URI (@id) för den beslutsregel som refereras. Se schema https://ns.adobe.com/experience/decisioning/rule.
-   **Typ:** sträng
+   **Typ:** string
 
 * **_experience > decisioning > conditions > profileConstraints > Profile Constraint Type**
 
-   **fält:** profileConstraintType
-   **titel:** Profilbegränsningstyp
+   **Fält:** profileConstraintType
+   **Titel:** Typ av profilbegränsning
    **Beskrivning:** Avgör om några begränsningar är angivna och hur begränsningarna uttrycks. Det kan vara via en regel eller genom ett eller flera segmentmedlemskap.
-   **Typ:** sträng
+   **Typ:** string
    **Möjliga värden:**
    * &quot;none&quot; (standard)
    * &quot;eligibilityRule&quot;: &quot;Profilbegränsningen uttrycks som en enskild regel som måste utvärderas till true innan den begränsade åtgärden tillåts.&quot;
@@ -146,121 +147,121 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 * **_experience > decisioning > conditions > profileConstraints > segmentIdentities**
 
-   **fält:** segmentIdentities
-   **titel:** Segmentidentifierare
+   **Fält:** segmentIdentities
+   **Titel:** Segmentidentifierare
    **Beskrivning:** Identifierare för segmenten.
    **Typ:** array
 
    * **Identifierare**
 
       **Fält:** _id
-      **titel:** identifierare
-      **Beskrivning:** Identiteten för segmentet i det relaterade namnutrymmet.
-      **Typ:** sträng
+      **Titel:** Identifierare
+      **Beskrivning:** Identitet för segmentet i det relaterade namnutrymmet.
+      **Typ:** string
 
    * **namespace**
 
-      **fält:** namnutrymme
-      **titel:** namnutrymme
-      **Beskrivning:** Det namnutrymme som är associerat med  `xid` attributet.
-      **text:** objekt
-      **Obligatoriskt:** &quot;kod&quot;
+      **Fält:** namespace
+      **Titel:** Namnutrymme
+      **Beskrivning:** Namnutrymmet som är associerat med `xid` -attribut.
+      **Typ:** object
+      **Obligatoriskt:** &quot;code&quot;
 
       * **Code**
 
-         **fält:** kod
-         **titel:** kod
+         **Fält:** kod
+         **Titel:** Code
          **Beskrivning:** Koden är en läsbar identifierare för namnutrymmet och kan användas för att begära det tekniska namnutrymmes-ID som används för bearbetning av identitetsdiagram.
-         **Typ:** sträng
+         **Typ:** string
    * **Upplevelseidentifierare**
 
-      **fält:** xid
-      **Title:** Experience identifier
-      **Beskrivning:** När det finns en representerar det här värdet en identifierare för korsnamnutrymme som är unik för alla namnutrymmesbegränsade identifierare i alla namnutrymmen.
-      **Typ:** sträng
+      **Fält:** xid
+      **Titel:** Upplevelseidentifierare
+      **Beskrivning:** Om det finns en sådan representerar det här värdet en identifierare för korsnamnutrymme som är unik för alla identifierare som har namnutrymmesomfång i alla namnutrymmen.
+      **Typ:** string
 
 
 **_experience > decisioning > conditions > ranking**
 
-**fält:** rankningstitel:
-**** rankningsdetaljer 
-**beskrivning:** Rankning (prioritet). Definierar hur det \&quot;bästa alternativet\&quot; bestäms utifrån beslutskriteriets sammanhang. Bland alla de valda alternativen som uppfyller profilbegränsningarna avgör rankningen vilket eller vilka översta N-alternativ som ska föreslås.
-**text:** objekt
+**Fält:** rankning
+**Titel:** Rankningsdetaljer
+**Beskrivning:** Rankning (prioritet). Definierar hur det \&quot;bästa alternativet\&quot; bestäms utifrån beslutskriteriets sammanhang. Bland alla de valda alternativen som uppfyller profilbegränsningarna avgör rankningen vilket eller vilka översta N-alternativ som ska föreslås.
+**Typ:** object
 
 * **_experience > decisioning > conditions > ranking > order**
 
-   **fält:** ordning
-   **Title:** Order Evaluation
+   **Fält:** order
+   **Titel:** Orderutvärdering
    **Beskrivning:** Utvärdering av en relativ ordning för ett eller flera beslutsalternativ. Alternativ med högre ordningstal markeras över alternativ med lägre ordningstal. De värden som bestäms med den här metoden kan ordnas, men avståndet mellan dem kan inte mätas och varken summor eller produkter kan beräknas. Medianen och läget är de enda måtten på central tendens som kan användas för ordningstal.
-   **text:** objekt
+   **Typ:** object
 
    * **Poängfunktion**
 
-      **fält:** funktion
-      **titel:** poängfunktion
+      **Fält:** function
+      **Titel:** Poängfunktion
       **Beskrivning:** En referens till en funktion som beräknar en numerisk poäng för det här beslutsalternativet. Beslutsalternativen kommer sedan att sorteras (rangordnas) efter den poängen. Värdet för den här egenskapen är URI (@id) för funktionen som ska anropas med alternativet on i taget. Se schema https://ns.adobe.com/experience/decisioning/function.
-      **Typ:** sträng
+      **Typ:** string
 
    * **Typ av orderutvärdering**
 
-      **fält:** orderEvaluationType
-      **Title:** Order Evaluation Type
+      **Fält:** orderEvaluationType
+      **Titel:** Typ av orderutvärdering
       **Beskrivning:** Anger vilken ordningsutvärderingsmekanism som används, statisk prioritet för beslutsalternativen, en poängsättningsfunktion som beräknar ett numeriskt värde för varje alternativ eller en rangordningsstrategi som tar emot en lista för att ordna den.
-      **Typ:** sträng
-      **Möjliga värden:** &quot;static&quot;,&quot;scoringFunction&quot;,&quot;rankingStrategy&quot;
+      **Typ:** string
+      **Möjliga värden:** &quot;static&quot;, &quot;scoringFunction&quot;, &quot;rankingStrategy&quot;
 
    * **Rankningsstrategi**
 
       **Fält:** rankingStrategy
-      **Titel:** rankningsstrategi
-      **Beskrivning:** En referens till en strategi som rankar en lista med beslutsalternativ. Beslutsalternativen returneras i en ordnad lista. Värdet för den här egenskapen är URI (@id) för funktionen som ska anropas med alternativet on i taget. Se schema https://ns.adobe.com/experience/decisioning/rankingStrategy.
-      **Typ:** sträng
+      **Titel:** Rankningsstrategi
+      **Beskrivning:** En referens till en strategi som rankar en lista över beslutsalternativ. Beslutsalternativen returneras i en ordnad lista. Värdet för den här egenskapen är URI (@id) för funktionen som ska anropas med alternativet on i taget. Se schema https://ns.adobe.com/experience/decisioning/rankingStrategy.
+      **Typ:** string
 
 * **_experience > decisioning > conditions > ranking > Priority**
 
-   **fält:** prioritet
-   **titel:** prioritet
-   **Beskrivning:Prioriteten** för ett enda beslutsalternativ i förhållande till alla andra alternativ. Alternativ som ingen orderfunktion har angetts för prioriteras med den här egenskapen. Alternativ med högre prioritetsvärden markeras före alternativ med lägre prioritet. Om två eller flera kvalificerande alternativ har det högsta prioritetsvärdet, väljs ett slumpmässigt och används för beslutsförslaget.
-   **text:** heltal
+   **Fält:** prioritet
+   **Titel:** Prioritet
+   **Beskrivning:** Prioriteten för ett enda beslutsalternativ i förhållande till alla andra alternativ. Alternativ som ingen orderfunktion har angetts för prioriteras med den här egenskapen. Alternativ med högre prioritetsvärden markeras före alternativ med lägre prioritet. Om två eller flera kvalificerande alternativ har det högsta prioritetsvärdet, väljs ett slumpmässigt och används för beslutsförslaget.
+   **Typ:** heltal
    **Minsta värde:** 0
    **Standardvärde:** 0
 
 #### _experience > decisioning > Activity End Date and Time
 
-**fält:** endTime-
-**titel:** Slutdatum och sluttid för aktivitet, 
-**beskrivning:** slutdatum och sluttid för beslut (tidigare kallat aktivitet). Egenskapen har semantiken för schema.orgs endTime-egenskap definierad på http://schema.org/Action.
-**Typ:** sträng
+**Fält:** endTime
+**Titel:** Slutdatum och tid för aktiviteten
+**Beskrivning:** Slutdatum och sluttid för beslut (tidigare kallat aktivitet). Egenskapen har semantiken för schema.orgs endTime-egenskap definierad på http://schema.org/Action.
+**Typ:** string
 
 #### _experience > decisioning > Fallback Option
 
-**Fält:** reservtitel:
-**reservalternativ:** 
-**Beskrivning:Referensen till ett reservalternativ som används vid beslut inom ramen för detta beslut uppfyller inte** de vanliga alternativen (detta inträffar vanligtvis när hårda begränsningar används). Värdet är URI (@id) för det reservalternativ som refereras.
-**Typ:** sträng
+**Fält:** fallback
+**Titel:** Reservalternativ
+**Beskrivning:** Referensen till ett reservalternativ som används vid beslut inom ramen för detta beslut kvalificerar inte något av de vanliga alternativen (detta inträffar vanligtvis när hårda begränsningar tillämpas). Värdet är URI (@id) för det reservalternativ som refereras.
+**Typ:** string
 
 #### _experience > Decision > Activity Name
 
-**Fält:** name 
-**Title:** Activity Name 
-**Description:** Decision (tidigare kallat activity) name som visas i olika användargränssnitt.
-**Typ:** sträng
+**Fält:** name
+**Titel:** Aktivitetsnamn
+**Beskrivning:** Beslutsnamn (tidigare kallat aktivitet) som visas i olika användargränssnitt.
+**Typ:** string
 
 #### _experience > decisioning > Activity Start Date and Time
 
-**Fält:** startTime-
-**titel:** Startdatum och -tid för aktivitet, 
-**beskrivning:** Startdatum och sluttid för beslut (tidigare kallat aktivitet). Egenskapen har semantiken för schema.orgs startTime-egenskap definierad på http://schema.org/Action.
-**Typ:** sträng
+**Fält:** startTime
+**Titel:** Startdatum och -tid för aktivitet
+**Beskrivning:** Startdatum och sluttid för beslut (tidigare kallat aktivitet). Egenskapen har semantiken för schema.orgs startTime-egenskap definierad på http://schema.org/Action.
+**Typ:** string
 
 ## repo
 
-**fält:** _repo-
-**typ:** objekt
+**Fält:** repo
+**Typ:** object
 
 ### _repo > Activity ETag
 
-**Fält:** etag 
-**Title:** Activity ETag 
-**Description:** Den revision som beslutsobjektet (tidigare kallat activity) var när ögonblicksbilden togs.
-**Typ:** sträng
+**Fält:** etag
+**Titel:** Aktivitet - ETag
+**Beskrivning:** Ändringen som beslutsobjektet (tidigare kallat activity) var när ögonblicksbilden togs.
+**Typ:** string

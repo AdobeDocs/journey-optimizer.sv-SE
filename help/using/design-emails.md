@@ -1,28 +1,29 @@
 ---
 title: Designa e-postmeddelanden
 description: Lär dig hur du utformar e-postmeddelanden
-feature: Översikt
-topic: Innehållshantering
+feature: Overview
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+exl-id: e4f91870-f06a-4cd3-98b7-4c413233e310
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 2%
+source-wordcount: '135'
+ht-degree: 0%
 
 ---
 
 # Kom igång med e-postdesign {#get-started-content-design}
 
-När du skapar e-postinnehåll med [!DNL Journey Optimizer] kan du:
+När du skapar e-postinnehåll med [!DNL Journey Optimizer]kan du:
 
-* **Designa din e-post från** scratch via e-postdesignerns gränssnitt och utnyttja bilder från  [Adobe Experience Manager Assets Essentials](assets-essentials.md). Lär dig hur du utformar ditt e-postinnehåll eller använder inbyggda mallar [i det här avsnittet](create-email-content.md).
+* **Designa din e-post från grunden** via e-postdesignerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets Essentials](assets-essentials.md). Lär dig hur du utformar e-postinnehåll eller använder inbyggda mallar [i det här avsnittet](create-email-content.md).
 
-* **Koda eller klistra in** råformaterad HTML direkt i e-postdesignern. Lär dig hur du kodar ditt eget innehåll [i det här avsnittet](existing-content.md#import-raw-html-code).
+* **Kod eller klistra in Raw HTML** direkt i e-postdesignern. Lär dig koda eget innehåll [i det här avsnittet](existing-content.md#import-raw-html-code).
 
-* **Importera befintligt HTML-** innehåll från en fil eller en ZIP-mapp. Lär dig hur du importerar ett e-postinnehåll [i det här avsnittet](existing-content.md#import-html-content-from-file).
+* **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig hur du importerar ett e-postinnehåll [i det här avsnittet](existing-content.md#import-html-content-from-file).
 
-Alla dessa funktioner är tillgängliga när du öppnar e-postdesignern från meddelandefönstret. [Läs mer om att skapa](create-message.md) meddelanden.
+Alla dessa funktioner är tillgängliga när du öppnar e-postdesignern från meddelandefönstret. [Läs mer om att skapa meddelanden](create-message.md).
 
 ![](assets/content-editors.png)
 

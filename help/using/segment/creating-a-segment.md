@@ -1,30 +1,31 @@
 ---
 title: Skapa ett segment
 description: Lär dig hur du skapar segment
-feature: Resor
-topic: Innehållshantering
+feature: Journeys
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
+exl-id: 289aac5d-6cdb-411f-985e-3acef58050a8
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 6%
+source-wordcount: '301'
+ht-degree: 5%
 
 ---
 
 # Skapa segment {#build-segments}
 
-I det här exemplet ska vi skapa ett segment som riktar sig till alla kunder som bor i Atlanta, San Francisco eller Seattle och som är födda efter 1980. Alla dessa kunder bör ha öppnat Luma-applikationen inom de senaste 7 dagarna och sedan köpt den inom 2 timmar efter att ansökan öppnats.
+I det här exemplet kommer vi att skapa ett segment för alla kunder som bor i Atlanta, San Francisco eller Seattle och som är födda efter 1980. Alla dessa kunder bör ha öppnat Luma-applikationen inom de senaste 7 dagarna och sedan köpt den inom 2 timmar efter att ansökan öppnats.
 
-1. Gå till menyn **[!UICONTROL Segments]** och klicka sedan på knappen **[!UICONTROL Create segment]**.
+1. Öppna **[!UICONTROL Segments]** klickar du på **[!UICONTROL Create segment]** -knappen.
 
    ![](../assets/create-segment.png)
 
-   På segmentdefinitionsskärmen kan du konfigurera alla obligatoriska fält för att definiera ditt segment. Lär dig hur du konfigurerar segment i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html){target=&quot;_blank&quot;}.
+   På segmentdefinitionsskärmen kan du konfigurera alla obligatoriska fält för att definiera ditt segment. Lär dig konfigurera segment i [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html){target=&quot;_blank&quot;}.
 
    ![](../assets/segment-builder.png)
 
-1. I rutan **[!UICONTROL Segment properties]** anger du ett namn och en beskrivning (valfritt) för segmentet.
+1. I **[!UICONTROL Segment properties]** anger du ett namn och en beskrivning (valfritt) för segmentet.
 
    ![](../assets/segment-properties.png)
 
@@ -32,11 +33,11 @@ I det här exemplet ska vi skapa ett segment som riktar sig till alla kunder som
 
    >[!NOTE]
    >
-   >Observera att fälten som är tillgängliga i den vänstra rutan varierar beroende på hur scheman **XDM Individual Profile** och **XDM ExperienceEvent** har konfigurerats för din organisation.  Läs mer i [XDM-dokumentationen (Experience Data Model)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target=&quot;_blank&quot;}.
+   >Observera att fälten som är tillgängliga i den vänstra rutan varierar beroende på hur **Individuell XDM-profil** och **XDM ExperienceEvent** scheman har konfigurerats för din organisation.  Läs mer i [XDM-dokumentation (Experience Data Model)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target=&quot;_blank&quot;}.
 
    ![](../assets/drag-fields.png)
 
-   I det här exemplet måste vi förlita oss på fälten **Attribut** och **Händelser** för att skapa segmentet:
+   I det här exemplet måste vi förlita oss på **Attribut** och **Händelser** fält för att skapa segmentet:
 
    * **Attribut**: profiler som bor i Atlanta, San Francisco eller Seattle, född efter 1980
 
@@ -46,7 +47,7 @@ I det här exemplet ska vi skapa ett segment som riktar sig till alla kunder som
 
       ![](../assets/add-events.png)
 
-1. När du lägger till och konfigurerar nya fält på arbetsytan uppdateras rutan **[!UICONTROL Segment Properties]** automatiskt med information om de uppskattade profiler som tillhör segmentet.
+1. När du lägger till och konfigurerar nya fält på arbetsytan visas **[!UICONTROL Segment Properties]** uppdateras automatiskt med information om de uppskattade profiler som tillhör segmentet.
 
    ![](../assets/segment-estimate.png)
 

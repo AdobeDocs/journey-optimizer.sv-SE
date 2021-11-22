@@ -1,14 +1,15 @@
 ---
 title: Viktiga steg för att skapa ett erbjudande
 description: Upptäck de viktigaste stegen som krävs för att skapa ett erbjudande.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: User
 level: Intermediate
-source-git-commit: 5631a1937b854c3e14d1816df9e8d30690588303
+exl-id: e375fd3a-b10d-45f4-a95b-ceb48116e841
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 8%
+source-wordcount: '342'
+ht-degree: 10%
 
 ---
 
@@ -18,17 +19,17 @@ Nedan beskrivs de viktigaste stegen för att skapa, konfigurera och hantera erbj
 
 ![](../../assets/offer-create-manage-process.png)
 
-Ett fullständigt exempel från början till slut som visar hur du konfigurerar erbjudanden får du om du använder dem i ett beslut och använder det här beslutet i ett e-postmeddelande. Läs [den här sidan](../offers-e2e.md).
+Ett komplett exempel som visar hur man konfigurerar erbjudanden får du om du använder dem i ett beslut och använder det i ett e-postmeddelande. [den här sidan](../offers-e2e.md).
 
 ## Skapa komponenter
 
 Innan du börjar skapa erbjudanden måste du definiera flera komponenter som du ska använda i dina erbjudanden.
 
-1. **Skapa placeringar**, som är behållare som ska användas för att visa upp dina erbjudanden. Du kan till exempel skapa en placering som är dedikerad till erbjudanden i endast bildformatet och som ligger högst upp i dina meddelanden.
+1. **Skapa placeringar**, som är behållare som kommer att användas för att visa upp dina erbjudanden. Du kan till exempel skapa en placering som är dedikerad till erbjudanden i endast bildformatet och som ligger högst upp i dina meddelanden.
 
-1. **Skapa** beslutsregler som anger villkoren för hur erbjudandena ska presenteras.
+1. **Skapa beslutsregler** som anger villkoren för att anbuden ska kunna lämnas in.
 
-1. **Skapa** taggar som du kopplar till erbjudandena, så att du enkelt kan ordna och söka efter dem i biblioteket.
+1. **Skapa taggar** som du kopplar till erbjudandena så att du enkelt kan ordna och söka efter dem i biblioteket.
 
 1. Om du vill definiera regler som avgör vilket erbjudande som ska presenteras först för en viss placering (i stället för att ta hänsyn till offertens prioritetspoäng), kan du **skapa en rankningsformel**.
 
@@ -46,7 +47,7 @@ Innan du börjar skapa erbjudanden måste du definiera flera komponenter som du 
 
 1. **Skapa reserverbjudanden**, som är det sista erbjudandet som visas om kunderna inte är berättigade till något av de valda erbjudandena.
 
-1. **Skapa en** samling för att inkludera de personaliserade erbjudanden du har skapat och använda dem i ett beslut.
+1. **Skapa en samling** för att inkludera de personaliserade erbjudanden ni skapat och använda dem i ett beslut.
 
 <table>
 <tr>
@@ -57,11 +58,11 @@ Innan du börjar skapa erbjudanden måste du definiera flera komponenter som du 
 
 ## Skapa och konfigurera beslut
 
-1. **Skapa ett** beslut som kombinerar ersättningar med personaliserade erbjudanden och reserverbjudanden. Den här kombinationen kommer att användas av Offera decisioningen för att hitta det bästa erbjudandet för en viss profil.
+1. **Skapa ett beslut** som kombinerar placeringar med personaliserade erbjudanden och reserverbjudanden. Den här kombinationen kommer att användas av Offera decisioningen för att hitta det bästa erbjudandet för en viss profil.
 
 1. **Konfigurera beslutet**. Om du vill göra det markerar du placeringarna och för varje placering väljer du en samling och en reserv.
 
-1. Vid behov kan du **tilldela en rankningsformel** till en placering när du konfigurerar beslutet.
+1. Om det behövs kan du **tilldela en rankningsformel** till en placering när beslutet konfigureras.
 
 <table>
 <tr>

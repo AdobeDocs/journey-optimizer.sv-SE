@@ -11,35 +11,35 @@ topic-tags: null
 discoiquuid: null
 internal: n
 snippet: y
-feature: Applikationsinställningar
-topic: Administrering
+feature: Application Settings
+topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
+exl-id: cb3248c5-f444-47aa-80b2-c1a9fbebfcc0
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 3%
+source-wordcount: '160'
+ht-degree: 1%
 
 ---
 
-
 # Åtkomst till delegerade underdomäner
 
-Alla dina delegerade underdomäner visas på menyn **[!UICONTROL Channels]** / **[!UICONTROL Subdomains]**. Det finns filter som hjälper dig att förfina listan (delegeringsdatum, användare eller status).
+Alla dina delegerade underdomäner visas i **[!UICONTROL Channels]** / **[!UICONTROL Subdomains]** -menyn. Det finns filter som hjälper dig att förfina listan (delegeringsdatum, användare eller status).
 
 ![](../assets/subdomain-list.png)
 
-Kolumnen **[!UICONTROL Status]** innehåller information om delegeringsprocessen för underdomäner:
+The **[!UICONTROL Status]** kolumnen innehåller information om delegeringsprocessen för underdomäner:
 
 * **[!UICONTROL Draft]**: Underdomändelegeringen har sparats som ett utkast. Klicka på underdomänens namn för att återuppta delegeringsprocessen,
 * **[!UICONTROL Processing]**: Underdomänen genomgår flera konfigurationskontroller innan den kan användas,
 * **[!UICONTROL Success]**: Underdomänen har gått igenom kontrollerna och kan användas för att leverera meddelanden,
 * **[!UICONTROL Failed]**: En eller flera kontroller misslyckades efter att delegeringen av underdomäner skickades.
 
-Om du vill ha detaljerad information om en underdomän öppnar du den i listan. Ni kan:
+Om du vill ha detaljerad information om en underdomän öppnar du den i listan. Du kan:
 
 * Hämta det underdomännamn (skrivskyddat) som konfigurerats under delegeringsprocessen samt de URL:er som genereras (resurser, spegelsidor, spårnings-URL:er),
 
-* Lägg till en TXT-post för Google Site verification i din underdomän för att se till att den är verifierad (se [Lägg till en Google TXT-post i en underdomän](google-txt.md)).
+* Lägg till en TXT-post för Google platsverifiering i din underdomän för att kontrollera att den är verifierad (se [Lägga till en Google TXT-post i en underdomän](google-txt.md)).
 
 ![](../assets/subdomain-delegated.png)

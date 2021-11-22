@@ -2,13 +2,13 @@
 title: Journey Optimizer Get started for Marketers
 description: Lär dig mer om hur du arbetar med Journey Optimizer som resande
 level: Intermediate
-source-git-commit: a27a6d7ab96bd08e7a2601c2e86d1d9f0fc4be0a
+exl-id: 34304142-3ee8-4081-94b9-e914968c75ba
+source-git-commit: f0c5b42984b76fee005fe0c0e10312d47f9d10e8
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
 
 ---
-
 
 # Kom igång med marknadsförare
 
@@ -51,4 +51,3 @@ Se följande avsnitt för att konfigurera din första resa, lägga till erbjudan
    Lär dig utforma och genomföra resor [i det här avsnittet](../building-journeys/journey-gs.md)
 
 1. **Övervaka meddelanden och resor**. För att vara säker på att dina meddelanden kan köras, skickas och levereras, [!DNL Journey Optimizer] har funktioner för att övervaka de meddelanden som för närvarande är publicerade och utlösta. Lär dig övervaka prestanda [i det här avsnittet](../message-monitoring.md).
-

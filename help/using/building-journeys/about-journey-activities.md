@@ -1,14 +1,15 @@
 ---
 title: Om reseaktiviteter
 description: Läs om reseaktiviteter
-feature: Resor
-topic: Innehållshantering
+feature: Journeys
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 9e152f50c2360010d83ffccbe536380879ffb5da
+exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 25%
+source-wordcount: '262'
+ht-degree: 24%
 
 ---
 
@@ -18,7 +19,7 @@ Kombinera de olika händelserna, orkestreringen och åtgärderna för att skapa 
 
 ## Händelseaktiviteter {#event-activities}
 
-De händelser som konfigureras av den tekniska användaren (se [den här sidan](../event/about-events.md)) visas alla i den första kategorin på paletten, till vänster på skärmen. Följande aktiviteter är tillgängliga:
+Händelser som konfigurerats av den tekniska användaren (se [den här sidan](../event/about-events.md)) visas i den första kategorin på paletten, till vänster på skärmen. Följande aktiviteter är tillgängliga:
 
 * [Allmänna händelser](../building-journeys/general-events.md)
 * [Reaktion](../building-journeys/reaction-events.md)
@@ -43,7 +44,7 @@ På paletten till vänster på skärmen finns följande orkestreringsfunktioner:
 
 ## Åtgärdsaktiviteter {#action-activities}
 
-På paletten, till vänster på skärmen, nedanför **[!UICONTROL Events]** och **[!UICONTROL Orchestration]** finns kategorin **[!UICONTROL Actions]**. Följande åtgärdsaktiviteter är tillgängliga:
+Från paletten, till vänster på skärmen, nedanför **[!UICONTROL Events]** och **[!UICONTROL Orchestration]** hittar du **[!UICONTROL Actions]** kategori. Följande åtgärdsaktiviteter är tillgängliga:
 
 * [Meddelande](../building-journeys/journeys-message.md)
 * [Anpassade åtgärder](../building-journeys/using-custom-actions.md)

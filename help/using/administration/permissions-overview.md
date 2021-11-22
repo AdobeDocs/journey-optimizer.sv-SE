@@ -5,7 +5,8 @@ feature: Control Groups
 topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: c6592d16dc8bd9ea2bada4fc351c844985a1042f
+exl-id: b8e266b1-d8eb-4c77-9341-9761b82609b0
+source-git-commit: 98fab634e64a1bdf084ebcddf6ffaf7e21c63c7e
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 15%
@@ -18,12 +19,12 @@ ht-degree: 15%
 
 Användarhantering i [!DNL Journey Optimizer] bygger på tre koncept:
 
-* **[!UICONTROL Product profile]**: En uppsättning enhetsbehörigheter som ger användarna tillgång till vissa funktioner eller objekt i gränssnittet. Se [Körklara produktprofiler](ootb-product-profiles.md)
+* **[!UICONTROL Product profile]**: En uppsättning enhetsbehörigheter som ger användarna tillgång till vissa funktioner eller objekt i gränssnittet. Se [Färdiga produktprofiler](ootb-product-profiles.md) section
 
-* **[!UICONTROL Permissions]**: Enhetsrättigheter som gör att du kan definiera de behörigheter som tilldelats  **[!UICONTROL Product profile]**. Varje behörighet samlas in under funktioner, t.ex. Resa, Meddelanden eller Erbjudanden, som representerar olika funktioner eller objekt i [!DNL Journey Optimizer]. Se avsnittet [Behörighetsnivåer](high-low-permissions.md).
+* **[!UICONTROL Permissions]**: Enhetsrättigheter som gör att du kan definiera de behörigheter som tilldelats **[!UICONTROL Product profile]**. Varje tillstånd samlas under funktioner, t.ex. Resa, Meddelanden eller Erbjudanden, som representerar olika funktioner eller objekt i [!DNL Journey Optimizer]. Se [Behörighetsnivåer](high-low-permissions.md) -avsnitt.
 
 * **[!UICONTROL Sandbox]**: Virtuella sandlådor som partitionerar instanser i separata, isolerade virtuella miljöer. Se [Använda sandlådor](sandboxes.md)
 
-Varje koncept kan hanteras av **[!UICONTROL Product administrators]** som har åtkomst till Admin Console. [Läs mer om Adobe Admin Console](https://helpx.adobe.com/enterprise/managing/user-guide.html).
+Varje koncept kan hanteras av **[!UICONTROL Product administrators]** som har tillgång till Admin Console. [Läs mer om Adobe Admin Console](https://helpx.adobe.com/enterprise/managing/user-guide.html).
 
 ![](../assets/do-not-localize/permissions_2.png)

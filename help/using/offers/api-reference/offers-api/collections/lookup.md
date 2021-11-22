@@ -1,13 +1,14 @@
 ---
 title: Söka efter en samling
 description: Samlingar är delmängder av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare, t.ex. erbjudandets kategori.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+exl-id: 723daab2-5590-4c44-acb6-93a77f2e7877
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '176'
 ht-degree: 1%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 1%
 
 Samlingar är delmängder av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare, t.ex. erbjudandets kategori.
 
-Du kan söka efter specifika samlingar genom att göra en GET-begäran till [!DNL Offer Library]-API:t som innehåller antingen samlingen `@id` eller namnet på samlingen i sökvägen för begäran.
+Du kan söka efter specifika samlingar genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller antingen samlingen `@id` eller namnet på samlingen i sökvägen för begäran.
 
 **API-format**
 
@@ -29,7 +30,7 @@ GET /{ENDPOINT_PATH}/{CONTAINER_ID}/queries/core/search?schema={SCHEMA_FILTER}&{
 | `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
 | `{CONTAINER_ID}` | Behållaren där samlingarna finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
 | `{SCHEMA_FILTER}` | Definierar det schema som är associerat med samlingar. | `https://ns.adobe.com/experience/offer-management/offer-filter;version=0.1` |
-| `id` | En sträng som används för att matcha egenskapen `@id` för entiteterna. Strängen matchas exakt. Parametrarna `id` och `name` kan inte användas tillsammans. | `xcore:offer-filter:124bd44648f17ec1` |
+| `id` | En sträng som används för att matcha `@id` enheternas egenskap. Strängen matchas exakt. Parametrarna `id` och `name` kan inte användas tillsammans. | `xcore:offer-filter:124bd44648f17ec1` |
 | `name` | En sträng som används för att matcha egenskapen xdm:name för entiteterna. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametrarna `id` och `name` kan inte användas tillsammans | `Mobile demo` |
 
 **Begäran**
@@ -46,7 +47,7 @@ curl -X GET \
 
 **Svar**
 
-Ett lyckat svar returnerar information om placeringen inklusive information om ditt behållar-ID, instans-ID och den unika samlingen `@id`.
+Ett godkänt svar returnerar information om placeringen inklusive information om ditt behållar-ID, instans-ID och unik samling `@id`.
 
 ```json
 {

@@ -1,20 +1,21 @@
 ---
 title: Söka efter en tagg
 description: Med taggar kan du bättre ordna och sortera bland dina erbjudanden.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+exl-id: e2d1f093-c1b8-4c4c-a20f-4bd7c2ea5269
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '149'
 ht-degree: 1%
 
 ---
 
 # Söka efter en tagg
 
-Du kan söka efter specifika taggar genom att göra en GET-förfrågan till [!DNL Offer Library]-API:t som innehåller antingen taggen `@id` eller namnet på taggen i sökvägen för begäran.
+Du kan söka efter specifika taggar genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller någon av taggarna `@id` eller namnet på taggen i sökvägen för begäran.
 
 **API-format**
 
@@ -27,7 +28,7 @@ GET /{ENDPOINT_PATH}/{CONTAINER_ID}/queries/core/search?schema={SCHEMA_TAG}&{QUE
 | `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
 | `{CONTAINER_ID}` | Behållaren där taggarna finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
 | `{SCHEMA_TAG}` | Definierar schemat som är associerat med taggar. | `https://ns.adobe.com/experience/offer-management/tag;version=0.1` |
-| `id` | En sträng som används för att matcha egenskapen `@id` för entiteterna. Strängen matchas exakt. Parametrarna `id` och `name` kan inte användas tillsammans. | `xcore:tag:124e147572cd7866` |
+| `id` | En sträng som används för att matcha `@id` enheternas egenskap. Strängen matchas exakt. Parametrarna `id` och `name` kan inte användas tillsammans. | `xcore:tag:124e147572cd7866` |
 | `name` | En sträng som används för att matcha egenskapen xdm:name för entiteterna. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametrarna `id` och `name` kan inte användas tillsammans | `Holiday sales and promotions` |
 
 **Begäran**
@@ -44,7 +45,7 @@ curl -X GET \
 
 **Svar**
 
-Ett lyckat svar returnerar detaljerna för taggen, inklusive information om ditt behållar-ID, instans-ID och den unika taggen `@id`.
+Ett lyckat svar returnerar detaljerna om taggen, inklusive information om behållar-ID, instans-ID och unik tagg `@id`.
 
 ```json
 {

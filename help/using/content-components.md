@@ -1,13 +1,14 @@
 ---
 title: Använda e-postdesigners innehållskomponenter
 description: Lär dig hur du använder innehållskomponenter i e-postmeddelanden
-feature: Översikt
-topic: Innehållshantering
+feature: Overview
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
+exl-id: a4aaa814-3fd4-439e-8f34-faf97208378a
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '977'
 ht-degree: 1%
 
 ---
@@ -20,24 +21,24 @@ ht-degree: 1%
 >abstract="Innehållskomponenterna är tomma platshållare för innehåll som du kan använda för att skapa layouten för ett e-postmeddelande."
 
 
-När du skapar ditt e-postinnehåll från grunden kan du med **[!UICONTROL Content components]** anpassa din e-post ytterligare med råa, tomma komponenter som du kan använda en gång i ett e-postmeddelande.
+När du skapar ditt e-postinnehåll från grunden, **[!UICONTROL Content components]** gör att du kan anpassa e-postmeddelandet ytterligare med råa, tomma komponenter som du kan använda en gång i ett e-postmeddelande.
 Du kan lägga till så många **[!UICONTROL Content components]** som du behöver i en **[!UICONTROL Structure component]** som definierar layouten för ditt e-postmeddelande.
 
 ## Knapp {#buttons}
 
-Använd **[!UICONTROL Button]**-komponenten för att infoga flera knappar i e-postmeddelandet och dirigera om din e-postmålgrupp till en annan sida.
+Använd **[!UICONTROL Button]** om du vill infoga flera knappar i e-postmeddelandet och dirigera om din e-postpublik till en annan sida.
 
-1. Dra och släpp **[!UICONTROL Button]** i en **[!UICONTROL Structure component]** från **[!UICONTROL Content components]**.
+1. Från **[!UICONTROL Content components]**, dra och släppa **[!UICONTROL Button]** i en **[!UICONTROL Structure component]**.
 
    ![](assets/email_designer_13.png)
 
-1. Klicka på knappen som du har lagt till för att anpassa texten och få tillgång till **[!UICONTROL Components Settings]** i den högra rutan i e-postdesignern.
+1. Klicka på den nya knappen för att anpassa texten och få tillgång till **[!UICONTROL Components Settings]** i den högra rutan i e-postdesignern.
 
    ![](assets/email_designer_14.png)
 
-1. I fältet **[!UICONTROL Link]** i **[!UICONTROL Components Settings]** lägger du till den URL som du vill att målgruppen ska omdirigeras till när du klickar på knappen.
+1. I **[!UICONTROL Link]** fält för **[!UICONTROL Components Settings]** lägger du till den URL som du vill att målgruppen ska omdirigeras till när du klickar på knappen.
 
-1. Välj hur målgruppen ska omdirigeras med listrutan **[!UICONTROL Target]**:
+1. Välj hur er målgrupp ska omdirigeras med **[!UICONTROL Target]** nedrullningsbar meny:
 
    * **[!UICONTROL None]**: öppnar länken i samma ram som den klickades på (standard).
    * **[!UICONTROL Blank]**: öppnar länken i ett nytt fönster eller på en ny flik.
@@ -47,13 +48,13 @@ Använd **[!UICONTROL Button]**-komponenten för att infoga flera knappar i e-po
 
    ![](assets/email_designer_15.png)
 
-1. Du kan nu anpassa knappen ytterligare genom att ändra exempelvis **[!UICONTROL Style]**, **[!UICONTROL Margin]** och **[!UICONTROL Border]**.
+1. Nu kan du anpassa knappen ytterligare genom att ändra **[!UICONTROL Style]**, **[!UICONTROL Margin]** och **[!UICONTROL Border]** till exempel.
 
 ## Text {#text}
 
-Använd **[!UICONTROL Text]**-komponenten för att infoga text i e-postmeddelandet. Du kan justera färg, stil och storlek på texten i **[!UICONTROL Component Settings]**.
+Använd **[!UICONTROL Text]** om du vill infoga text i e-postmeddelandet. Du kan justera färg, stil och storlek på texten i **[!UICONTROL Component Settings]**.
 
-1. I **[!UICONTROL Content Components]** drar och släpper du **[!UICONTROL Text]** i en **[!UICONTROL Structure component]**.
+1. I **[!UICONTROL Content Components]**, dra och släppa **[!UICONTROL Text]** i en **[!UICONTROL Structure component]**.
 
    ![](assets/email_designer_11.png)
 
@@ -82,51 +83,51 @@ Använd **[!UICONTROL Text]**-komponenten för att infoga text i e-postmeddeland
 
 ## Delare {#divider}
 
-Använd **[!UICONTROL Divider]**-komponenten för att infoga en delningslinje för att ordna layouten och innehållet i e-postmeddelandet.
-Du kan välja färg, format och storlek för brytningsraden i **[!UICONTROL Component Settings]**.
+Använd **[!UICONTROL Divider]** om du vill infoga en delningslinje för att ordna layouten och innehållet i ditt e-postmeddelande.
+Du kan välja färg, stil och storlek för den brutna linjen i **[!UICONTROL Component Settings]**.
 
 ![](assets/email_designer_16.png)
 
 ## HTML {#HTML}
 
-Använd **[!UICONTROL HTML]** för att kopiera och klistra in de olika delarna av din befintliga HTML. På så sätt kan du skapa kostnadsfria modulära HTML-komponenter.
+Använd **[!UICONTROL HTML]** om du vill kopiera och klistra in de olika delarna av din befintliga HTML. På så sätt kan du skapa kostnadsfria modulära HTML-komponenter.
 
 Adobe rekommenderar att du skapar ett meddelande från grunden och kopierar innehållet från ditt befintliga e-postmeddelande till komponenter, så att det externa innehållet helt enkelt blir kompatibelt med e-postdesignern.
 
-1. I **[!UICONTROL Content Components]** drar och släpper du **[!UICONTROL HTML]** i en **[!UICONTROL Structure component]**.
+1. I **[!UICONTROL Content Components]**, dra och släppa **[!UICONTROL HTML]** i en **[!UICONTROL Structure component]**.
 
    ![](assets/email_designer_22.png)
 
-1. Klicka på den nya komponenten och **[!UICONTROL Show the source code]** för att lägga till din HTML.
+1. Klicka på den nya komponenten och sedan **[!UICONTROL Show the source code]** för att lägga till HTML.
 
    ![](assets/email_designer_23.png)
 
 1. Kopiera och klistra in den HTML-kod som du vill lägga till i e-postmeddelandet och klicka på **[!UICONTROL Save]**.
 
-1. Nu kan du anpassa din HTML ytterligare genom att ändra till exempel **[!UICONTROL Style]**, **[!UICONTROL Margin]** och **[!UICONTROL Border]** eller lägga till en länk för att dirigera om publiken till ett annat innehåll.
+1. Nu kan du anpassa HTML ytterligare genom att ändra **[!UICONTROL Style]**, **[!UICONTROL Margin]** och **[!UICONTROL Border]** eller lägga till en länk för att dirigera om målgruppen till ett annat innehåll.
 
 ## Bild {#image}
 
-Använd komponenten **[!UICONTROL Image]** för att infoga en bildfil från datorn i e-postmeddelandet.
+Använd **[!UICONTROL Image]** om du vill infoga en bildfil från datorn i e-postmeddelandet.
 
-1. I **[!UICONTROL Content Components]** drar och släpper du **[!UICONTROL Image]** i en **[!UICONTROL Structure component]**.
+1. I **[!UICONTROL Content Components]**, dra och släppa **[!UICONTROL Image]** i en **[!UICONTROL Structure component]**.
 
    ![](assets/email_designer_9.png)
 
-1. Klicka på **[!UICONTROL Browse]** för att välja en bildfil från dina resurser.
+1. Klicka **[!UICONTROL Browse]** om du vill välja en bildfil bland dina resurser.
 
-   Mer information om [!DNL Assets Essentials] finns i [Adobe Experience Manager Assets Essentials-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target=&quot;_blank&quot;}.
+   Om du vill veta mer om [!DNL Assets Essentials], se [Adobe Experience Manager Assets Essentials-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target=&quot;_blank&quot;}.
 
-1. Klicka på den nyligen tillagda komponenten för att börja konfigurera **[!UICONTROL Content Components]** och få åtkomst till **[!UICONTROL Components Settings]** i den högra rutan i e-postdesignern.
+1. Klicka på den nyligen tillagda komponenten för att börja konfigurera **[!UICONTROL Content Components]** och få tillgång till **[!UICONTROL Components Settings]** i den högra rutan i e-postdesignern.
 
 1. Ange bildegenskaper:
 
    * **[!UICONTROL Image Title]** I kan du definiera en titel för bilden.
-   * **[!UICONTROL Alt text]** I kan du definiera den bildtext som är länkad till bilden. Detta motsvarar alt HTML-attributet.
+   * **[!UICONTROL Alt text]** I kan du definiera den bildtext som är länkad till bilden. Detta motsvarar attributet alt HTML.
 
    ![](assets/email_designer_10.png)
 
-1. Du kan nu anpassa din bild ytterligare genom att ändra exempelvis **[!UICONTROL Style]**, **[!UICONTROL Margin]** och **[!UICONTROL Border]** eller lägga till en länk för att dirigera om målgruppen till ett annat innehåll.
+1. Du kan nu anpassa din bild ytterligare genom att ändra **[!UICONTROL Style]**, **[!UICONTROL Margin]** och **[!UICONTROL Border]** eller lägga till en länk för att dirigera om målgruppen till ett annat innehåll.
 
 ## Video {#Video}
 
@@ -136,52 +137,51 @@ Använd komponenten **[!UICONTROL Image]** för att infoga en bildfil från dato
 >abstract="Använd den här komponenten för att infoga en video i e-postmeddelandet. Observera att videoklipp inte fungerar på alla e-postklienter. Vi rekommenderar att du ställer in en reservbild."
 >additional-url="https://www.emailonacid.com/blog/article/email-development/a_how_to_guide_to_embedding_html5_video_in_email/" text="Ytterligare information"
 
-Använd komponenten **[!UICONTROL Video]** för att infoga en video i e-postmeddelandet via en URL-länk.
+Använd **[!UICONTROL Video]** om du vill infoga en video i e-postmeddelandet via en URL-länk.
 
-1. I **[!UICONTROL Content Components]** drar och släpper du **[!UICONTROL Video]** i en **[!UICONTROL Structure component]**.
+1. I **[!UICONTROL Content Components]**, dra och släppa **[!UICONTROL Video]** i en **[!UICONTROL Structure component]**.
 
    ![](assets/email_designer_17.png)
 
-1. Klicka på den nyligen tillagda komponenten för att börja konfigurera **[!UICONTROL Content Components]** och få åtkomst till **[!UICONTROL Components Settings]** i den högra rutan i e-postdesignern.
+1. Klicka på den nyligen tillagda komponenten för att börja konfigurera **[!UICONTROL Content Components]** och få tillgång till **[!UICONTROL Components Settings]** i den högra rutan i e-postdesignern.
 
-1. Lägg till din video-URL i fältet **[!UICONTROL Video link]** i **[!UICONTROL Components Settings]**.
+1. I **[!UICONTROL Video link]** fält för **[!UICONTROL Components Settings]** lägger du till din video-URL.
 
    ![](assets/email_designer_18.png)
 
-1. Du kan lägga till en **[!UICONTROL Poster image]** i videon för att ange en bild som ska visas tills publiken klickar på uppspelningsknappen.
+1. Du kan lägga till en **[!UICONTROL Poster image]** till videon för att ange en bild som ska visas tills publiken klickar på uppspelningsknappen.
 
-1. Du kan nu anpassa din bild ytterligare genom att till exempel ändra **[!UICONTROL Style]**, **[!UICONTROL Margin]** och **[!UICONTROL Border]**.
+1. Du kan nu anpassa din bild ytterligare genom att ändra **[!UICONTROL Style]**, **[!UICONTROL Margin]** och **[!UICONTROL Border]** till exempel.
 
 ## Social {#social}
 
-Använd **[!UICONTROL Social]**-komponenten för att infoga länkar till sidor för sociala medier i ditt e-postmeddelande.
+Använd **[!UICONTROL Social]** om du vill infoga länkar till sidor för sociala medier i ditt e-postmeddelande.
 
-1. I **[!UICONTROL Content Components]** drar och släpper du **[!UICONTROL Social]** i en **[!UICONTROL Structure component]**.
+1. I **[!UICONTROL Content Components]**, dra och släppa **[!UICONTROL Social]** i en **[!UICONTROL Structure component]**.
 
    ![](assets/email_designer_19.png)
 
-1. Klicka på den nyligen tillagda komponenten för att börja konfigurera **[!UICONTROL Content Components]** och få åtkomst till **[!UICONTROL Components Settings]** i den högra rutan i e-postdesignern.
+1. Klicka på den nyligen tillagda komponenten för att börja konfigurera **[!UICONTROL Content Components]** och få tillgång till **[!UICONTROL Components Settings]** i den högra rutan i e-postdesignern.
 
-1. I fältet **[!UICONTROL Social]** i **[!UICONTROL Components Settings]** väljer du vilka sociala medier du vill lägga till eller ta bort.
+1. I **[!UICONTROL Social]** fält för **[!UICONTROL Components Settings]** väljer du vilka sociala medier du vill lägga till eller ta bort.
 
    ![](assets/email_designer_20.png)
 
-1. Välj storleken på ikonerna i fältet **[!UICONTROL Size of images]**.
+1. Välj storlek på ikonerna i dialogrutan **[!UICONTROL Size of images]** fält.
 
-1. Klicka på var och en av dina ikoner för sociala medier för att konfigurera **[!UICONTROL URL]** som din målgrupp ska omdirigeras till.
+1. Klicka på var och en av dina ikoner för sociala medier för att konfigurera **[!UICONTROL URL]** som er målgrupp kommer att omdirigeras till.
 
    ![](assets/email_designer_21.png)
 
-1. Du kan också ändra ikonerna för vart och ett av dina sociala medier om det behövs i fältet **[!UICONTROL Image]**.
+1. Du kan också ändra ikonerna för vart och ett av dina sociala medier om det behövs i **[!UICONTROL Image]** fält.
 
-1. Du kan nu anpassa dina ikoner för sociala medier ytterligare genom att ändra **[!UICONTROL Style]**, **[!UICONTROL Margin]** och **[!UICONTROL Border]**.
+1. Nu kan du anpassa dina ikoner för sociala medier ytterligare genom att ändra **[!UICONTROL Style]**, **[!UICONTROL Margin]** och **[!UICONTROL Border]**.
 
 ## Erbjudandebeslut {#offer-decision}
 
-Använd **[!UICONTROL Offer decision]**-komponenten för att infoga beslut (som tidigare kallats erbjudandeaktiviteter) i dina meddelanden. Besluten kommer att dra nytta av Beslutshantering för att välja det bästa erbjudandet att leverera till era kunder.
+Använd **[!UICONTROL Offer decision]** för att infoga beslut (som tidigare kallats erbjudandeaktiviteter) i dina meddelanden. Besluten kommer att dra nytta av Beslutshantering för att välja det bästa erbjudandet att leverera till era kunder.
 
 Relaterade ämnen:
 
 * [Kom igång med Beslutshantering](offers/get-started/starting-offer-decisioning.md).
 * [Lägg in personaliserade erbjudanden i meddelandena](deliver-personalized-offers.md).
-

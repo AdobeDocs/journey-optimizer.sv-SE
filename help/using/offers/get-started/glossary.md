@@ -1,14 +1,14 @@
 ---
 title: Glossary för erbjudanden
 description: Ordlista för erbjudanden
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: User
 level: Intermediate
 source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 75%
+source-wordcount: '314'
+ht-degree: 76%
 
 ---
 
@@ -20,7 +20,7 @@ Här är de viktigaste koncept du kommer att arbeta med när du använder Beslut
 
 * **Samlingar**: samlingar är underuppsättningar av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare såsom erbjudandets kategori.
 
-* **Beslut**  (tidigare kallat erbjudandeverksamhet): Ett beslut innehåller den logik som ligger till grund för valet av ett erbjudande.
+* **Beslut** (tidigare känt som Erbjudandeaktivitet): Ett beslut innehåller den logik som ligger till grund för valet av ett erbjudande.
 
 * **Beslutsregel**: beslutsregler är begränsningar som läggs till på ett personaliserat erbjudande och tillämpas på en profil för att fastställa berättigande.
 

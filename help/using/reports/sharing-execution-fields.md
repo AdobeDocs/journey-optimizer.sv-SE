@@ -1,18 +1,19 @@
 ---
-title: journeyStep, händelser, körningsfält för åtgärder
-description: journeyStep, händelser, körningsfält för åtgärder
-feature: Rapportering
-topic: Innehållshantering
+title: fält för händelseexekvering för händelsen journeyStep
+description: fält för händelseexekvering för händelsen journeyStep
+feature: Reporting
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 8f77802fcaa23790f9de4e8f15e593643b13fb1e
+exl-id: 273cda84-0261-4c5b-b5f4-0202e8874d05
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 5%
+source-wordcount: '321'
+ht-degree: 4%
 
 ---
 
-# journeyStep, händelser, körningsfält för åtgärder {#sharing-execution-fields}
+# fält för händelseexekvering för händelsen journeyStep {#sharing-execution-fields}
 
 Den här fältgruppen delas av travelStepEvent och travelStepProfileEvent.
 
@@ -58,7 +59,7 @@ Värden:
 * http
 * capping
 * timeout
-* fel
+* error
 
 ## actionExecutionErrorCode
 

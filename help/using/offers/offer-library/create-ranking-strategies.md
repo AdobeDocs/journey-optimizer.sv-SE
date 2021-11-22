@@ -24,19 +24,19 @@ ht-degree: 4%
 >
 >AI-rankningen är för närvarande tillgänglig i förtid och endast för vissa användare.
 
-Med den här funktionen kan du skapa olika **rankningsstrategier** utifrån dina affärsmål. Genom att använda dessa olika målbaserade strategier i ett beslut (tidigare kallat erbjudandeaktivitet) kommer det tränade modellsystemet att hjälpa dig förstå hur de olika rangordningsstrategierna påverkar era mål.
+Med den här funktionen kan du skapa olika **rankningsstrategier** baserat på era affärsmål. Genom att använda dessa olika målbaserade strategier i ett beslut (tidigare kallat erbjudandeaktivitet) kommer det tränade modellsystemet att hjälpa dig förstå hur de olika rangordningsstrategierna påverkar era mål.
 
-Du kan till exempel välja en rangordningsstrategi för e-postkanalen och en annan för push-kanalen. För varje kanal utnyttjar det tränade modellsystemet flera datapunkter för att avgöra vilket erbjudande som ska presenteras först för en viss placering, i stället för att ta hänsyn till offertens prioritetspoäng eller en [rankningsformel](create-ranking-formulas.md).
+Du kan till exempel välja en rangordningsstrategi för e-postkanalen och en annan för push-kanalen. För varje kanal utnyttjar det tränade modellsystemet flera datapunkter för att avgöra vilket erbjudande som ska presenteras först för en viss placering, i stället för att beakta offertens prioritetspoäng eller en [rankningsformel](create-ranking-formulas.md).
 
 <!--This feature is not enabled by default. To be able to use it, reach out to your Adobe contact.-->
 
-När en rankningsstrategi har skapats kan du tilldela den till en placering i ett beslut. Läs mer i [Konfigurera erbjudandeurval i beslut](../offer-activities/configure-offer-selection.md).
+När en rankningsstrategi har skapats kan du tilldela den till en placering i ett beslut. Läs mer i [Konfigurera urval av erbjudanden i beslut](../offer-activities/configure-offer-selection.md).
 
 ## Skapa en rankningsstrategi {#create-ranking-strategy}
 
 Så här skapar du en rankningsstrategi:
 
-1. Gå till menyn **[!UICONTROL Components]** och välj sedan fliken **[!UICONTROL AI rankings]**.
+1. Öppna **[!UICONTROL Components]** väljer du **[!UICONTROL AI rankings]** -fliken.
 
    ![](../../assets/ai-ranking-list.png)
 
@@ -50,7 +50,7 @@ Så här skapar du en rankningsstrategi:
 
    * **[!UICONTROL Name]**: Unikt namn som du måste ange.
 
-   * **[!UICONTROL Model type]**: Den enda modelltypen som stöds är  **[!UICONTROL Auto-optimization]**.<!--More will be supported in the future so the drop-down list will be enabled.-->
+   * **[!UICONTROL Model type]**: Den enda modelltypen som stöds är **[!UICONTROL Auto-optimization]**.<!--More will be supported in the future so the drop-down list will be enabled.-->
 
    * **[!UICONTROL Optimization metric]**:
 
@@ -64,7 +64,7 @@ Så här skapar du en rankningsstrategi:
       * **[!UICONTROL Impression]**: Inställningshändelser motsvarar alla erbjudanden som visas.
       * **[!UICONTROL Conversion]**: Konverteringshändelser motsvarar alla erbjudanden som resulterar i klick via e-post eller webben.
 
-      Alla valda intryckshändelser och/eller konverteringshändelser hämtas automatiskt med Web SDK eller Mobile SDK som har angetts. Läs mer om detta i [Adobe Experience Platform Web SDK overview](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en).
+      Alla valda intryckshändelser och/eller konverteringshändelser hämtas automatiskt med Web SDK eller Mobile SDK som har angetts. Läs mer om detta i [Adobe Experience Platform Web SDK - översikt](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en).
 
    * **[!UICONTROL Dataset ID]**: För konvertering måste du ange en datauppsättning där händelser samlas in genom att välja den i listrutan. Lär dig hur du skapar en sådan datauppsättning i [det här avsnittet](#create-dataset). <!--This dataset needs to be associated with a schema that must have the **[!UICONTROL Proposition Interactions]** field group (previously known as mixin) associated with it.-->
 
@@ -72,7 +72,7 @@ Så här skapar du en rankningsstrategi:
 
    >[!CAUTION]
    >
-   >Endast datauppsättningar som skapats från scheman som är kopplade till fältgruppen **[!UICONTROL Experience Event - Proposition Interactions]** (som tidigare kallades mixin) visas i listrutan.
+   >Endast datauppsättningar som skapats från scheman som är kopplade till **[!UICONTROL Experience Event - Proposition Interactions]** fältgruppen (som tidigare kallades mixin) visas i listrutan.
 
 1. Spara och aktivera rankningsstrategin.
 
@@ -84,7 +84,7 @@ Det är nu klart att användas i ett beslut om att rangordna kvalificerade erbju
 
 Du måste skapa en datauppsättning där konverteringshändelser samlas in. Börja med att skapa schemat som ska användas i din datauppsättning:
 
-1. Välj **[!UICONTROL Schema]** på **[!UICONTROL Data Management]**-menyn, gå till fliken **[!UICONTROL Browse]** och klicka på **[!UICONTROL Create schema]**.
+1. Från **[!UICONTROL Data Management]** meny, välja **[!UICONTROL Schema]**, går till **[!UICONTROL Browse]** och klicka **[!UICONTROL Create schema]**.
 
    ![](../../assets/ai-ranking-create-schema.png)
 
@@ -94,16 +94,16 @@ Du måste skapa en datauppsättning där konverteringshändelser samlas in. Bör
 
    >[!NOTE]
    >
-   >    Läs mer om XDM-scheman och fältgrupper i [översiktsdokumentationen för XDM-systemet](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en).
+   >    Läs mer om XDM-scheman och fältgrupper i [Översikt över XDM-systemet - dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en).
 
 
-1. I fältet **[!UICONTROL Search]** skriver du &quot;Föreslå interaktion&quot; och väljer fältgruppen **[!UICONTROL Experience Event - Proposition Interactions]**.
+1. I **[!UICONTROL Search]** -fält, skriv&quot;interaktion för förslag&quot; och välj **[!UICONTROL Experience Event - Proposition Interactions]** fältgrupp.
 
    ![](../../assets/ai-ranking-proposition-interactions.png)
 
    >[!CAUTION]
    >
-   >    Schemat som ska användas i datauppsättningen måste vara associerat med fältgruppen **[!UICONTROL Experience Event - Proposition Interactions]**. Annars kan du inte använda den i din rankningsstrategi.
+   >    Schemat som ska användas i datauppsättningen måste ha **[!UICONTROL Experience Event - Proposition Interactions]** fältgrupp som är associerad med den. Annars kan du inte använda den i din rankningsstrategi.
 
 1. Klicka på **[!UICONTROL Add field groups]**.
 
@@ -117,11 +117,11 @@ Du måste skapa en datauppsättning där konverteringshändelser samlas in. Bör
 
 >[!NOTE]
 >
->    Lär dig mer om att skapa scheman i [Grunderna i schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#understanding-schemas).
+>    Läs mer om scheman i [Grunderna för schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#understanding-schemas).
 
 Du är nu redo att skapa en datauppsättning med det här schemat. Följ stegen nedan för att göra detta:
 
-1. Välj **[!UICONTROL Datasets]** på **[!UICONTROL Data Management]**-menyn, gå till fliken **[!UICONTROL Browse]** och klicka på **[!UICONTROL Create dataset]**.
+1. Från **[!UICONTROL Data Management]** meny, välja **[!UICONTROL Datasets]**, går till **[!UICONTROL Browse]** och klicka **[!UICONTROL Create dataset]**.
 
    ![](../../assets/ai-ranking-create-dataset.png)
 
@@ -135,11 +135,11 @@ Du är nu redo att skapa en datauppsättning med det här schemat. Följ stegen 
 
 1. Klicka på **[!UICONTROL Next]**.
 
-1. Ange ett unikt namn för datauppsättningen i fältet **[!UICONTROL Name]** och klicka på **[!UICONTROL Finish]**.
+1. Ange ett unikt namn för datauppsättningen i **[!UICONTROL Name]** fält och klicka **[!UICONTROL Finish]**.
 
    ![](../../assets/ai-ranking-dataset-name.png)
 
-Datauppsättningen är nu klar att väljas för att samla in konverteringshändelser när [en rankningsstrategi](#create-ranking-strategy) skapas.
+Datamängden är nu klar att väljas för att samla in konverteringshändelser när [skapa en rankningsstrategi](#create-ranking-strategy).
 
 <!--## Using a ranking strategy {#using-ranking}
 

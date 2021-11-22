@@ -1,14 +1,15 @@
 ---
 title: Kartfunktionens bibliotek
 description: Kartfunktionens bibliotek
-feature: Personalisering
-topic: Personalisering
+feature: Personalization
+topic: Personalization
 role: Data Engineer
 level: Experienced
-source-git-commit: e3b7e80b72e6be71d5b38cd5507d20ad2e8ca8d4
+exl-id: de6a8da2-55cf-4105-ba93-40c556732626
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 4%
+source-wordcount: '102'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +19,7 @@ Använd kartfunktioner i personalisering för att underlätta interaktionen med 
 
 ## Hämta{#get}
 
-Funktionen `get` används för att hämta värdet för en karta för en given nyckel.
+The `get` används för att hämta värdet för en karta för en viss nyckel.
 
 **Format**
 
@@ -36,7 +37,7 @@ Följande åtgärd hämtar värdet för identitetskartan för nyckeln `example@e
 
 ## Tangenter{#keys}
 
-Funktionen `keys` används för att hämta alla nycklar för en given karta.
+The `keys` används för att hämta alla nycklar för en viss karta.
 
 **Format**
 
@@ -54,7 +55,7 @@ Följande åtgärd hämtar alla nycklar för kartan `identityMap`.
 
 ## Värden{#values}
 
-Funktionen `values` används för att hämta alla värden för en given karta.
+The `values` används för att hämta alla värden för en viss karta.
 
 **Format**
 

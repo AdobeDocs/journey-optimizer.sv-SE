@@ -33,7 +33,7 @@ Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa e
 
    ![](../assets/jo-message2.png)
 
-1. Klicka inuti **Meddelande** fält. The list of available messages designed in Journey Optimizer is displayed. Du kan filtrera listan efter status.
+1. Klicka inuti **Meddelande** fält. En lista över tillgängliga meddelanden som utformats i Journey Optimizer visas. Du kan filtrera listan efter status.
 
    ![](../assets/jo-message3.png)
 
@@ -47,13 +47,13 @@ Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa e
 
 1. Lägg till nästa steg på din resa.
 
-## Email parameters and push parameters
+## E-postparametrar och push-parametrar
 
 The **[!UICONTROL Email parameters]** och **[!UICONTROL Push parameters]** -avsnitt visar skrivskyddade fält. Du utför vanligtvis den här konfigurationen när du skapar meddelandet. Se [det här avsnittet](../get-started-content.md).
 
 ![](../assets/jo-message4.png)
 
-To force a specific value, you can use the **Enable parameter override** icon to the right of the field. This option may be useful for various purposes:
+Om du vill tvinga fram ett visst värde kan du använda **Aktivera åsidosättning av parametrar** till höger om fältet. Det här alternativet kan vara användbart för olika syften:
 
 * Om du till exempel vill testa ett e-postmeddelande kan du lägga till din e-postadress. När du har publicerat resan skickas e-postmeddelandet till dig.
 * Du kan hänvisa till e-postadressen till de som prenumererar på en lista. Se det här [användningsfall](message-to-subscribers-uc.md).
@@ -62,7 +62,7 @@ To force a specific value, you can use the **Enable parameter override** icon to
 
 >[!CONTEXTUALHELP]
 >id="jo_bestsendtime_disabled"
->title="About Sent time optimization"
+>title="Om Tidsoptimering för Skickat"
 >abstract="Adobe Journey Optimizer funktion för optimering av sändningstid, som bygger på Adobe:s AI-tjänster, kan förutsäga den bästa tidpunkten för att skicka e-post eller push-meddelanden för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser."
 
 Adobe Journey Optimizer funktion för optimering av sändningstid, som bygger på Adobe:s AI-tjänster, kan förutsäga den bästa tidpunkten för att skicka e-post eller push-meddelanden för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser. Använd vår maskininlärningsmodell för att schemalägga personliga sändningstider för varje användare så att de kan utöka öppnings- och klickfrekvensen för dina meddelanden.
@@ -71,16 +71,16 @@ Adobe Journey Optimizer funktion för optimering av sändningstid, som bygger p�
 >
 >Den här funktionen är för närvarande i betaversion och endast tillgänglig för betakunder. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
 
-The Send-Time Optimization model ingests your Adobe Journey Optimizer data and looks at user-level open (for email and push) and click (for email) rates to determine when your customers are most likely to engage with your messaging. För optimering av sändningstid krävs minst en månads meddelandespårningsdata för att kunna ge välgrundade rekommendationer. För varje användare väljer systemet automatiskt den bästa tiden med följande poäng:
+Modellen för optimering av sändningstid (Send-Time Optimization) innehåller information om dina Adobe Journey Optimizer-data och tittar på användarnivå som är öppen (för e-post och push) och klickar (för e-post) för att avgöra när kunderna är mest benägna att interagera med dina meddelanden. För optimering av sändningstid krävs minst en månads meddelandespårningsdata för att kunna ge välgrundade rekommendationer. För varje användare väljer systemet automatiskt den bästa tiden med följande poäng:
 
 * Den bästa timmen varje dag i veckan för att maximera engagemanget
-* The best day of the week to maximize engagement
+* Den bästa veckodagen för att maximera engagemanget
 * Den bästa timmen på den bästa veckodagen för att maximera engagemanget
 
 Modellen varierar oavsett om du talar om poängsättning eller utbildning. Utbildningen genomförs varje vecka, inledningsvis och därefter varje kvartal. Poängen är en gång i veckan och därefter en gång i månaden.
 
 * Utbildning - utveckling av den algoritm som används för att göra poängen
-* Scoring - the application of a score to individual profiles based on the trained model
+* Poäng - poängsättning för enskilda profiler baserat på den tränade modellen
 
 Den här informationen lagras med användarens profil och hänvisas till vid körning av resan för att tala om för Adobe Journey Optimizer när meddelandet ska skickas.
 
@@ -96,7 +96,7 @@ Den här informationen lagras med användarens profil och hänvisas till vid kö
 >[!CONTEXTUALHELP]
 >id="jo_bestsendtime_email"
 >title="Aktivera optimering av sändningstid"
->abstract="Välj om du vill optimera e-postöppningen eller skicka e-postklick genom att välja lämplig alternativknapp. You can also choose to bracket the send times used by the system by entering a value for the Send within the next option."
+>abstract="Välj om du vill optimera e-postöppningen eller skicka e-postklick genom att välja lämplig alternativknapp. Du kan också välja att klamra de sändningstider som används av systemet genom att ange ett värde för Skicka i nästa alternativ."
 
 >[!CONTEXTUALHELP]
 >id="jo_bestsendtime_push"
@@ -107,6 +107,6 @@ Aktivera optimering av sändningstid för ett e-postmeddelande eller push-meddel
 
 ![](../assets/jo-message5.png)
 
-For email messages, choose whether to optimize on email opens or email click-throughs by selecting the appropriate radio button. Standardinställningen för push-meddelanden är öppningsalternativet, eftersom klickningar inte gäller för push-meddelanden.
+För e-postmeddelanden väljer du om du vill optimera e-postöppningar eller e-postklick genom att välja lämplig alternativknapp. Standardinställningen för push-meddelanden är öppningsalternativet, eftersom klickningar inte gäller för push-meddelanden.
 
 Du kan också välja att klamra de sändningstider som används av systemet genom att ange ett värde för **Skicka inom nästa** alternativ. Om du väljer&quot;sex timmar&quot; som värde, [!DNL Journey Optimizer] kontrollerar varje användarprofil och väljer den optimala sändningstiden inom sex timmar från körningstiden för resan.

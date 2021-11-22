@@ -1,14 +1,15 @@
 ---
 title: Global rapport
 description: Lär dig använda data från den globala rapporten
-feature: Rapportering
-topic: Innehållshantering
+feature: Reporting
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+exl-id: ec15e700-7659-4dbf-8446-6534ea48c5c8
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 1%
+source-wordcount: '239'
+ht-degree: 0%
 
 ---
 
@@ -18,23 +19,23 @@ ht-degree: 1%
 >
 > Om anpassade frågor ställs via API:er när du använder frågetjänsten kan du vänta dig en viss fördröjning för dina rapporter.
 
-Använd **[!UICONTROL Global report]** för att mäta effekten av dina resor och leveranser under en viss tidsperiod.
+Använd **[!UICONTROL Global report]** för att mäta effekten av resor och leveranser under en viss tidsperiod.
 
-* Om du vill rikta in dig på en resa eller leveranser i samband med en resa går du till **[!UICONTROL Journeys]**-menyn och klickar på ikonen **[!UICONTROL Global report]**. Du kan sedan hitta resan, e-postmeddelandet och penseln **[!UICONTROL Global report]**.
+* Om du vill rikta in dig på en resa eller leveranser i samband med en resa, från **[!UICONTROL Journeys]** -menyn, få åtkomst till din resa och klicka på **[!UICONTROL Global report]** ikon. Du kan sedan hitta resan, e-postmeddelandet och penseln **[!UICONTROL Global report]**.
 
-* Om du vill ange en viss leverans väljer du **[!UICONTROL Global view]** på fliken **[!UICONTROL Executions]** i dina meddelanden på den avancerade menyn för den valda leveransen.**[!UICONTROL Global Report]**
+* Om du vill ange en viss leverans som mål går du till **[!UICONTROL Global view]** i **[!UICONTROL Executions]** fliken med dina meddelanden väljer du **[!UICONTROL Global Report]** på den avancerade menyn för den valda leveransen.
 
 ## Anpassa kontrollpanelen {#modify-dashboard}
 
-Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort eller genom att den riktade tidsramen ändras. Om du ändrar widgetarna påverkas bara den aktuella användarens kontrollpanel. Andra användare ser sina egna kontrollpaneler eller de som har angetts som standard.
+Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort eller genom att måltidsramen ändras. Om du ändrar widgetarna påverkas bara den aktuella användarens kontrollpanel. Andra användare ser sina egna kontrollpaneler eller de som har angetts som standard.
 
-1. Klicka på knappen Schemaläggaren på din **[!UICONTROL Global report]**-kontrollpanel.
+1. Från **[!UICONTROL Global report]** klickar du på knappen Schemaläggaren.
 
 1. Välj start- och slutdatum. Du kan finjustera dina rapporter ytterligare genom att välja en **[!UICONTROL Start time]** och **[!UICONTROL End time]**.
 
    ![](../assets/global_report_6.png)
 
-1. klicka på **[!UICONTROL Modify]**.
+1. klicka **[!UICONTROL Modify]**.
 
    ![](../assets/global_report_8.png)
 
@@ -42,10 +43,10 @@ Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller 
 
    ![](../assets/global_report_9.png)
 
-1. Klicka på **[!UICONTROL Remove]** för att ta bort andra widgetar som du inte behöver spåra studsar.
+1. Klicka **[!UICONTROL Remove]** om du vill ta bort andra widgetar som du inte behöver spåra studsar.
 
    ![](../assets/global_report_10.png)
 
-1. När du är nöjd med visningsordningen och storleken på widgetarna klickar du på **[!UICONTROL Save]**.
+1. När du är nöjd med visningsordningen och widgetarnas storlek klickar du på **[!UICONTROL Save]**.
 
-Instrumentpanelen har nu sparats. Dina olika ändringar kommer att tillämpas på nytt för senare användning av dina globala rapporter. Använd vid behov alternativet **[!UICONTROL Reset]** för att återställa standardordningen för widgetar och widgetar.
+Instrumentpanelen har nu sparats. Dina olika ändringar kommer att tillämpas på nytt för senare användning av dina globala rapporter. Använd **[!UICONTROL Reset]** för att återställa standardordningen för widgetar och widgetar.

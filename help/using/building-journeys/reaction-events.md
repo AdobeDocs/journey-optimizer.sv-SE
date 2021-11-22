@@ -1,35 +1,36 @@
 ---
 title: Reaktionshändelser
 description: Läs mer om reaktionshändelser
-feature: Resor
-topic: Innehållshantering
+feature: Journeys
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+exl-id: 235384f3-0dce-4797-8f42-1d4d01fa42d9
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 3%
+source-wordcount: '353'
+ht-degree: 2%
 
 ---
 
 # Reaktionshändelser {#section_dhx_gss_dgb}
 
-Bland de olika händelseaktiviteterna som finns på paletten finns den inbyggda **[!UICONTROL Reactions]**-händelsen. Med den här aktiviteten kan du reagera på spårningsdata som är relaterade till ett meddelande som skickas inom samma resa. Vi hämtar denna information i realtid när den delas med Adobe Experience Platform. För push-meddelanden kan du reagera på klickade, skickade eller misslyckade meddelanden. För SMS-meddelanden kan du reagera på skickade eller misslyckade meddelanden. För e-postmeddelanden kan du reagera på klickade, skickade, öppnade eller misslyckade meddelanden.
+Bland de olika aktiviteterna som finns på paletten finns de inbyggda **[!UICONTROL Reactions]** -händelse. Med den här aktiviteten kan du reagera på spårningsdata som är relaterade till ett meddelande som skickas inom samma resa. Vi hämtar denna information i realtid när den delas med Adobe Experience Platform. För push-meddelanden kan du reagera på klickade, skickade eller misslyckade meddelanden. För SMS-meddelanden kan du reagera på skickade eller misslyckade meddelanden. För e-postmeddelanden kan du reagera på klickade, skickade, öppnade eller misslyckade meddelanden.
 
 Du kan också använda den här funktionen för att utföra en åtgärd när det inte finns någon reaktion på dina meddelanden. Det gör du genom att skapa en andra sökväg parallellt med reaktionsaktiviteten och lägga till en vänteaktivitet. Om ingen reaktion inträffar under den period som anges i vänteaktiviteten väljs den andra banan. Du kan välja att skicka t.ex. ett uppföljningsmeddelande.
 
-Observera att du bara kan använda en reaktionsaktivitet på arbetsytan om det finns en **Message**-aktivitet tidigare.
+Observera att du bara kan använda en reaktionsaktivitet på arbetsytan om det finns en **Meddelande** aktivitet före.
 
-Se [Om åtgärdsaktiviteter](../building-journeys/about-journey-activities.md#action-activities).
+Se [Om funktionsmakron](../building-journeys/about-journey-activities.md#action-activities).
 
 ![](../assets/journey45.png)
 
 Här följer de olika stegen för att konfigurera reaktionshändelser:
 
-1. Lägg till en **[!UICONTROL Label]** i reaktionen. Det här steget är valfritt.
+1. Lägg till en **[!UICONTROL Label]** till reaktionen. Det här steget är valfritt.
 1. Välj den åtgärd som du vill reagera på i listrutan. Du kan välja vilken åtgärdsaktivitet som helst som placerats i banans tidigare steg.
 1. Beroende på vilken åtgärd du har valt väljer du vad du vill reagera på.
-1. Du kan definiera en timeout för en händelse (mellan 40 sekunder och 30 dagar) och en timeout-sökväg. Detta kommer att skapa en andra väg för individer som inte reagerade inom den definierade tidsperioden. När du testar en resa som använder en reaktionshändelse är standardläget **[!UICONTROL Wait time]** och det lägsta värdet 40 sekunder. Se [det här avsnittet](../building-journeys/testing-the-journey.md).
+1. Du kan definiera en timeout för en händelse (mellan 40 sekunder och 30 dagar) och en timeout-sökväg. Detta kommer att skapa en andra väg för individer som inte reagerade inom den definierade tidsperioden. När du testar en resa där en reaktionshändelse används, testläget **[!UICONTROL Wait time]** standard och minsta värde är 40 sekunder. Se [det här avsnittet](../building-journeys/testing-the-journey.md).
 
 >[!NOTE]
 >

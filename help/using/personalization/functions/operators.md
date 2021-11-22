@@ -1,14 +1,15 @@
 ---
 title: Bibliotek för operatorfunktioner
 description: Bibliotek för operatorfunktioner
-feature: Personalisering
-topic: Personalisering
+feature: Personalization
+topic: Personalization
 role: Data Engineer
 level: Experienced
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+exl-id: 75b0b380-d9a6-418e-b9f6-e64de385ba8d
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 8%
+source-wordcount: '302'
+ht-degree: 7%
 
 ---
 
@@ -20,7 +21,7 @@ Booleska funktioner används för att utföra boolesk logik för olika element.
 
 ### Och{#and}
 
-Funktionen `and` används för att skapa en logisk koppling.
+The `and` används för att skapa en logisk koppling.
 
 **Format**
 
@@ -38,7 +39,7 @@ Följande operation kommer att återlämna alla med hemland som Frankrike och f�
 
 ### eller{#or}
 
-Funktionen `or` används för att skapa en logisk koppling.
+The `or` används för att skapa en logisk förskjutning.
 
 **Format**
 
@@ -85,7 +86,7 @@ Jämförelsefunktioner används för att jämföra mellan olika uttryck och vär
 
 ### Är lika med{#equals}
 
-Funktionen `=` (lika med) kontrollerar om ett värde eller uttryck är lika med ett annat värde eller uttryck.
+The `=` (lika med)-funktionen kontrollerar om ett värde eller uttryck är lika med ett annat värde eller uttryck.
 
 **Format**
 
@@ -103,7 +104,7 @@ Följande åtgärd kontrollerar om hemadresslandet är Frankrike.
 
 ### Inte lika med{#notequal}
 
-Funktionen `!=` (inte lika med) kontrollerar om ett värde eller uttryck är **inte** lika med ett annat värde eller uttryck.
+The `!=` (inte lika med) kontrollerar funktionen om ett värde eller uttryck är **not** är lika med ett annat värde eller uttryck.
 
 **Format**
 
@@ -121,7 +122,7 @@ Följande åtgärd kontrollerar om hemadresslandet inte är Frankrike.
 
 ### Greater than{#greaterthan}
 
-Funktionen `>` (större än) används för att kontrollera om det första värdet är större än det andra värdet.
+The `>` (större än) används för att kontrollera om det första värdet är större än det andra värdet.
 
 **Format**
 
@@ -139,7 +140,7 @@ Följande operation definierar personer som är födda strikt efter 1970.
 
 ### Greater than or equal to{#greaterthanorequal}
 
-Funktionen `>=` (större än eller lika med) används för att kontrollera om det första värdet är större än eller lika med det andra värdet.
+The `>=` (större än eller lika med) används för att kontrollera om det första värdet är större än eller lika med det andra värdet.
 
 **Format**
 
@@ -157,7 +158,7 @@ Följande operation definierar personer födda i eller efter 1970.
 
 ### Less than{#lessthan}
 
-Jämförelsefunktionen `<` (mindre än) används för att kontrollera om det första värdet är mindre än det andra värdet.
+The `<` (mindre än) används för att kontrollera om det första värdet är mindre än det andra värdet.
 
 **Format**
 
@@ -175,7 +176,7 @@ Följande åtgärd definierar personer som är födda före 2000.
 
 ### Less than or equal to{#lessthanorequal}
 
-Jämförelsefunktionen `<=` (mindre än eller lika med) används för att kontrollera om det första värdet är mindre än eller lika med det andra värdet.
+The `<=` (mindre än eller lika med) används för att kontrollera om det första värdet är mindre än eller lika med det andra värdet.
 
 **Format**
 
@@ -192,4 +193,3 @@ Följande operation definierar personer födda år 2000 eller tidigare.
 ```
 
 **Åtgärder med siffror**
-

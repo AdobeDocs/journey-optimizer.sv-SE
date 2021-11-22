@@ -1,14 +1,15 @@
 ---
 title: Bibliotek för objektfunktioner
 description: Bibliotek för objektfunktioner
-feature: Personalisering
-topic: Personalisering
+feature: Personalization
+topic: Personalization
 role: Data Engineer
 level: Experienced
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+exl-id: 6ce70e32-aac3-4a2c-bfeb-c370521853ca
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '59'
-ht-degree: 6%
+source-wordcount: '57'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 6%
 
 ## Är null{#isNull}
 
-Funktionen `isNull` avgör om en objektreferens inte finns.
+The `isNull` funktionen avgör om en objektreferens inte finns.
 
 **Format**
 
@@ -34,7 +35,7 @@ Följande åtgärd kontrollerar om personens hemadress inte finns.
 
 ## Är inte null{#isNotNull}
 
-Funktionen `isNotNull` avgör om det finns en objektreferens.
+The `isNotNull` funktionen avgör om det finns en objektreferens.
 
 **Format**
 

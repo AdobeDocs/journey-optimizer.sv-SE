@@ -5,7 +5,8 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 40dd6e3714aea3dc95183e1decbf1b8f83dad50a
+exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
@@ -14,19 +15,19 @@ ht-degree: 0%
 
 # Om Adobe Experience Platform-segment {#about-segments}
 
-[!DNL Journey Optimizer]  Med kan ni skapa Adobe Experience Platform-segment med kundprofildata i realtid direkt från  **[!UICONTROL Segments]** menyn och utnyttja dem i era resor.
+[!DNL Journey Optimizer]  kan du skapa Adobe Experience Platform-segment med hjälp av kundprofildata i realtid direkt från **[!UICONTROL Segments]** och utnyttja dem på era resor.
 
-Observera att segment också kan skapas från själva segmenteringstjänsten. Läs mer i [Adobe Experience Platform Segmentation Service-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
+Observera att segment också kan skapas från själva segmenteringstjänsten. Läs mer i [Dokumentation för Adobe Experience Platform Segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
 
 Du kan utnyttja segment i resor på olika sätt:
 
-* Använd en **Läs segment**-koordinationsaktivitet för att få alla personer som tillhör det angivna segmentet att komma in på resan. Meddelanden som ingår i resan skickas till personer som tillhör segmentet. Säg att du har ett &quot;silverkundssegment&quot;. Med den här aktiviteten kan ni få alla silverkunder att ta sig in på en resa och skicka en serie personaliserade meddelanden till dem.
+* Använd en **Lässegment** orkestreringsaktivitet för att få alla personer som tillhör det angivna segmentet att komma in på resan. Meddelanden som ingår i resan skickas till personer som tillhör segmentet. Säg att du har ett &quot;silverkundssegment&quot;. Med den här aktiviteten kan ni få alla silverkunder att ta sig in på en resa och skicka en serie personaliserade meddelanden till dem.
 
-   Mer information om hur du använder aktiviteten **[!UICONTROL Read segment]** finns i [det här avsnittet](../building-journeys/read-segment.md#configuring-segment-trigger-activity).
+   Mer information om hur du använder **[!UICONTROL Read segment]** aktivitet, se [det här avsnittet](../building-journeys/read-segment.md#configuring-segment-trigger-activity).
 
-* Använd aktiviteten **Segmentkvalificering** för att få individer att komma in på eller gå framåt i en resa baserat på Adobe Experience Platform segmentingångar och utgångar. Du kan till exempel få alla nya silverkunder att resa och skicka meddelanden till dem. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../building-journeys/segment-qualification-events.md).
+* Använd **Segmentkvalificering** aktivitet för att få enskilda att komma in på eller gå vidare i en resa baserat på Adobe Experience Platform segmententréer och utträde. Du kan till exempel få alla nya silverkunder att resa och skicka meddelanden till dem. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../building-journeys/segment-qualification-events.md).
 
-* Bygg **komplexa villkor** på resorna med den enkla eller avancerade uttrycksredigeraren. Läs mer i [det här avsnittet](../building-journeys/condition-activity.md#using-a-segment).
+* Bygge **komplexa förhållanden** på resorna med den enkla eller avancerade uttrycksredigeraren. Läs mer i [det här avsnittet](../building-journeys/condition-activity.md#using-a-segment).
 
 ## Utvärderingsmetod i Adobe Journey Optimizer {#evaluation-method-in-journey-optimizer}
 
@@ -37,7 +38,7 @@ I Adobe Journey Optimizer genereras målgrupper från segmentdefinitioner med n�
 
 Fastställandet mellan gruppsegmentering och direktuppspelningssegmentering görs av systemet för varje segmentdefinition, baserat på komplexiteten och kostnaden för att utvärdera segmentregeln.
 
-Du kan visa utvärderingsmetoden för varje segment i kolumnen **[!UICONTROL Evaluation method]** i segmentlistan.
+Du kan visa utvärderingsmetoden för varje segment i **[!UICONTROL Evaluation method]** kolumn i segmentlistan.
 
 När du har definierat ett segment första gången läggs profiler till i målgruppen när de kvalificerar sig.
 

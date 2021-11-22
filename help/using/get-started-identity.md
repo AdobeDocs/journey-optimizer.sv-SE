@@ -1,13 +1,14 @@
 ---
 title: Kom igång med identiteter i Journey Optimizer
 description: Lär dig hantera identiteter i Adobe Journey Optimizer
-feature: Profiler
+feature: Profiles
 role: User
 level: Beginner
-source-git-commit: b07970ff11f1ba7c4e6db30dc2eca1252a579ca4
+exl-id: 90e892e9-33c2-4da5-be1d-496b42572897
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 0%
+source-wordcount: '348'
+ht-degree: 1%
 
 ---
 
@@ -17,23 +18,22 @@ En identitet är data som är unika för en enhet, vanligtvis en enskild person.
 
 Personligt identifierbar information (PII), t.ex. e-postadress och telefonnummer, används för att identifiera en kund direkt. Resultatet blir att PII används för att matcha en kunds olika identiteter i olika system.
 
-I [!DNL Adobe Journey Optimizer], **Identiteter** länkar konsumenter mellan enheter och kanaler är resultatet ett [identitetsdiagram](#id-graph). Det länkade identitetsdiagrammet används för att personalisera upplevelser baserat på interaktioner över alla era affärskontaktytor.
+I [!DNL Adobe Journey Optimizer], **Identiteter** länka konsumenter mellan olika enheter och kanaler, resultatet är [identitetsdiagram](#id-graph). Det länkade identitetsdiagrammet används för att personalisera upplevelser baserat på interaktioner över alla era affärskontaktytor.
 
 ![](assets/identities-home.png)
 
-Läs mer om **identitetstjänsten** i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html){target=&quot;_blank&quot;}.
+Läs mer om **Identitetstjänst** in [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=sv){target=&quot;_blank&quot;}.
 
 ## Identitetsnamnutrymmen
 
-**Identitetsnamnutrymmen är** en komponent i identitetstjänsten som fungerar som indikatorer för det sammanhang som en identitet relateras till. De särskiljer till exempel värdet `name@email.com` som en e-postadress eller `443522` som ett numeriskt CRM-ID. Att arbeta med identitetsnamnutrymmen kräver förståelse för de olika Adobe Experience Platform-tjänsterna. Innan du börjar arbeta med namnutrymmen bör du läsa dokumentationen för följande tjänster:
+**Identitetsnamnutrymmen** är en komponent i identitetstjänsten som fungerar som indikatorer för det sammanhang som en identitet relateras till. De skiljer till exempel på värdet `name@email.com` som e-postadress eller `443522` som ett numeriskt CRM-ID. Att arbeta med identitetsnamnutrymmen kräver förståelse för de olika Adobe Experience Platform-tjänsterna. Innan du börjar arbeta med namnutrymmen bör du läsa dokumentationen för följande tjänster:
 
-Läs mer om **Identitetsnamnutrymmen** i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html){target=&quot;_blank&quot;}.
+Läs mer om **Identitetsnamnutrymmen** in [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html){target=&quot;_blank&quot;}.
 
 ## Identitetsdiagram{#id-graph}
 
-**Identitetsdiagrammet** är en karta över relationer mellan olika identiteter för en viss kund, som ger dig en visuell representation av hur kunden interagerar med varumärket i olika kanaler. Alla kundidentitetsdiagram hanteras och uppdateras gemensamt av Adobe Experience Platform Identity Service i nära realtid som svar på kundaktivitet.
+The **Identitetsdiagram** är en karta över relationer mellan olika identiteter för en viss kund, vilket ger dig en visuell representation av hur kunden interagerar med ert varumärke i olika kanaler. Alla kundidentitetsdiagram hanteras och uppdateras gemensamt av Adobe Experience Platform Identity Service i nära realtid som svar på kundaktivitet.
 
-Med identitetsdiagramvisningsprogrammet i [!DNL Adobe Journey Optimizer]-användargränssnittet kan du visualisera och bättre förstå vilka kundidentiteter som sammanfogas och på vilka sätt. Med visningsprogrammet kan du dra och interagera med olika delar av diagrammet, vilket gör att du kan undersöka komplexa identitetsförhållanden, felsöka mer effektivt och dra nytta av ökad genomskinlighet när det gäller hur informationen används.
+Identitetsdiagramvisningsprogrammet i [!DNL Adobe Journey Optimizer] Med användargränssnittet kan ni visualisera och bättre förstå vilka kundidentiteter som sammanfogas och på vilka sätt. Med visningsprogrammet kan du dra och interagera med olika delar av diagrammet, vilket gör att du kan undersöka komplexa identitetsförhållanden, felsöka mer effektivt och dra nytta av ökad genomskinlighet när det gäller hur informationen används.
 
-Läs mer om **Identitetsdiagram** i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/identity/ui/identity-graph-viewer.html){target=&quot;_blank&quot;}.
-
+Läs mer om **Identitetsdiagram** in [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/identity/ui/identity-graph-viewer.html){target=&quot;_blank&quot;}.

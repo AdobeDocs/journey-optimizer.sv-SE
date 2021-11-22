@@ -1,28 +1,29 @@
 ---
 title: Kom igång med frågor i Journey Optimizer
 description: Lär dig hur du skapar frågor i Adobe Journey Optimizer
-feature: Scheman
+feature: Schemas
 role: User
 level: Beginner
-source-git-commit: 8bdefa46ff1ebde2c49ac1d2300797777967c038
+exl-id: 6f32f068-429a-4039-bb76-d190069e7402
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '122'
+ht-degree: 6%
 
 ---
 
 # Kom igång med frågor {#queries-gs}
 
-Frågeredigeraren är ett interaktivt verktyg som tillhandahålls av Adobe Experience Platform Query Service, som gör att du kan skriva, validera och köra frågor för kundupplevelsedata i [!DNL Adobe Journey Optimizer]-användargränssnittet.
+Frågeredigeraren är ett interaktivt verktyg från Adobe Experience Platform Query Service som gör att du kan skriva, validera och köra frågor för kundupplevelsedata i [!DNL Adobe Journey Optimizer] användargränssnitt.
 
-Frågeredigeraren stöder utveckling av frågor för analys och datautforskning och gör att du kan köra interaktiva frågor i utvecklingssyfte samt icke-interaktiva frågor för att fylla i [datamängder](get-started-datasets.md).
+Frågeredigeraren har stöd för att utveckla frågor för analys och datautforskning, och du kan köra interaktiva frågor i utvecklingssyfte samt icke-interaktiva frågor för att fylla i [datauppsättningar](get-started-datasets.md).
 
 
 ![](assets/queries-home.png)
 
-Lär dig hur du använder frågeredigeraren i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html){target=&quot;_blank&quot;}.
+Läs om hur du använder Frågeredigeraren i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html){target=&quot;_blank&quot;}.
 
 **Se även**
 
-* [Frågetjänstdokumentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv){target=&quot;_blank&quot;}
-* [Översikt över frågetjänsten](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html) {target=&quot;_blank&quot;}
+* [Dokumentation för frågetjänsten](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv){target=&quot;_blank&quot;}
+* [Video om översikt över frågetjänsten](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html){target=&quot;_blank&quot;}

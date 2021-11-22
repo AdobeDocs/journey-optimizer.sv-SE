@@ -1,26 +1,27 @@
 ---
 title: Uppdatera beslutsregler
 description: Beslutsregler läggs till i ett personaliserat erbjudande och tillämpas på en profil för att avgöra vem som är berättigad.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+exl-id: 42c531fd-0dc9-492d-8827-2e1460454064
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 5%
+source-wordcount: '174'
+ht-degree: 4%
 
 ---
 
 # Uppdatera en beslutsregel
 
-Du kan ändra eller uppdatera beslutsregler i behållaren genom att göra en PATCH-begäran till API:t [!DNL Offer Library].
+Du kan ändra eller uppdatera beslutsreglerna i behållaren genom att göra en PATCH-begäran till [!DNL Offer Library] API.
 
-Mer information om JSON Patch, inklusive tillgängliga åtgärder, finns i den officiella [JSON Patch-dokumentationen](http://jsonpatch.com/).
+Mer information om JSON Patch, inklusive tillgängliga åtgärder, finns i [JSON Patch-dokumentation](http://jsonpatch.com/).
 
 ## Sidhuvuden för acceptera och innehållstyp
 
-I följande tabell visas giltiga värden som består av fälten *Content-Type* och *Accept* i begärandehuvudet:
+I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
@@ -61,13 +62,13 @@ curl -X PATCH \
 
 | Parameter | Beskrivning |
 | --------- | ----------- |
-| `op` | Åtgärdsanropet som används för att definiera den åtgärd som krävs för att uppdatera anslutningen. Åtgärderna omfattar: `add`, `replace` och `remove`. |
+| `op` | Åtgärdsanropet som används för att definiera den åtgärd som krävs för att uppdatera anslutningen. Åtgärderna omfattar: `add`, `replace`och `remove`. |
 | `path` | Sökvägen till den parameter som ska uppdateras. |
 | `value` | Det nya värdet som du vill uppdatera parametern med. |
 
 **Svar**
 
-Ett lyckat svar returnerar den uppdaterade informationen om beslutsregeln, inklusive dess unika instans-ID och beslutsregel `@id`.
+Ett godkänt svar returnerar den uppdaterade informationen om beslutsregeln, inklusive dess unika instans-ID och beslutsregel `@id`.
 
 ```json
 {

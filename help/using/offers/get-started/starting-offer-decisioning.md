@@ -19,12 +19,12 @@ Använd [!DNL Journey Optimizer] för att leverera det bästa erbjudandet och up
 
 >[!NOTE]
 >
->Om du är [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target=&quot;_blank&quot;}-användare och använder **Offer decisioning**-programtjänsten gäller även alla beslutshanteringsfunktioner som beskrivs i det här avsnittet dig.
+>Om du är en [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target=&quot;_blank&quot;}-användare använder **offer decisioning** för programtjänsten gäller alla beslutsfunktioner som beskrivs i detta avsnitt även dig.
 
 Beslutsledningskapaciteten består av två huvudkomponenter:
 
-* **Centralized Offer Library**, som är gränssnittet där du skapar och hanterar de olika elementen som dina erbjudanden består av, och definierar deras regler och begränsningar.
-* Den **beslutsmotor för erbjudandet** som använder Adobe Experience Platform-data och kundprofiler i realtid, tillsammans med erbjudandebiblioteket, för att välja rätt tid, kunder och kanaler som erbjudandena ska levereras till.
+* The **Centraliserat offertbibliotek** vilket är gränssnittet där du skapar och hanterar de olika element som dina erbjudanden består av och definierar deras regler och begränsningar.
+* The **Beslutsmotor för erbjudande** som utnyttjar Adobe Experience Platform data och kundprofiler i realtid, tillsammans med erbjudandebiblioteket, för att välja rätt tidpunkt, kunder och kanaler som erbjudandena ska levereras till.
 
 ![](../../assets/architecture.png)
 
@@ -34,7 +34,7 @@ Några fördelar:
 * Förbättrade arbetsflöden: I stället för att skapa flera leveranser eller kampanjer kan marknadsföringsteamen förbättra arbetsflödena genom att skapa en enda leverans och variera erbjudandena i olika delar av mallen.
 * Styr hur många gånger ett erbjudande visas för olika kampanjer och kunder.
 
-➡️ [Titta på de här självstudiekurserna](#tutorial-videos) för mer information om Beslutshantering.
+➡️ [Titta på de här självstudiekurserna](#tutorial-videos) om du vill ha mer information om beslutshantering.
 
 ## Om erbjudanden och beslut {#offers-offer-activities}
 
@@ -44,7 +44,7 @@ Det skapas med **Erbjudandebiblioteket** som innehåller en central erbjudandeka
 
 ![](../../assets/offer_structure.png)
 
-När erbjudandebiblioteket har berikats med erbjudanden kan du integrera dina erbjudanden i **beslut** (tidigare kallat&quot;erbjudandeaktiviteter&quot;).
+När erbjudandebiblioteket har berikats med erbjudanden kan ni integrera era erbjudanden i **beslut** (kallades tidigare&quot;erbjudandeaktiviteter&quot;).
 
 Besluten är behållare för dina erbjudanden som utnyttjar beslutsmotorn för erbjudanden för att välja det bästa erbjudandet som ska levereras beroende på leveransmålet.
 
@@ -68,9 +68,9 @@ Beslutshanteringsfunktionerna och integrationen med Adobe Experience Platform g�
 
 Behörigheter att komma åt och använda offera decisioningen hanteras med [Adobe Admin Console](https://helpx.adobe.com/enterprise/managing/user-guide.html){target=&quot;_blank&quot;}.
 
-Om du vill ge åtkomst till beslutshanteringsfunktionen måste du skapa en **[!UICONTROL Product profile]** och tilldela användarna motsvarande behörigheter. Läs mer om hur du hanterar [!DNL Journey Optimizer] användare och behörigheter i [det här avsnittet](../../administration/permissions.md).
+Om du vill ge åtkomst till funktionen Beslutshantering måste du skapa en **[!UICONTROL Product profile]** och tilldela användarna motsvarande behörigheter. Läs mer om hantering [!DNL Journey Optimizer] användare och behörigheter i [det här avsnittet](../../administration/permissions.md).
 
-Behörigheterna som är specifika för Beslutshantering listas i [det här avsnittet](../../administration/high-low-permissions.md#decisions-permissions).
+De behörigheter som är specifika för beslutshanteringen finns i [det här avsnittet](../../administration/high-low-permissions.md#decisions-permissions).
 
 ## Ordlista {#glossary}
 
@@ -80,7 +80,7 @@ Nedan finns en lista över de viktigaste koncept du kommer att arbeta med när d
 
 * **Samlingar**: samlingar är underuppsättningar av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare såsom erbjudandets kategori.
 
-* **Beslut**  (tidigare kallat erbjudandeverksamhet): Ett beslut innehåller den logik som ligger till grund för valet av ett erbjudande.
+* **Beslut** (tidigare känt som Erbjudandeaktivitet): Ett beslut innehåller den logik som ligger till grund för valet av ett erbjudande.
 
 * **Beslutsregel**: beslutsregler är begränsningar som läggs till på ett personaliserat erbjudande och tillämpas på en profil för att fastställa berättigande.
 
@@ -107,7 +107,7 @@ Nedan finns en lista över de viktigaste koncept du kommer att arbeta med när d
 
 >[!NOTE]
 >
->Dessa videofilmer gäller för den programtjänst för Offer decisioning som är byggd på Adobe Experience Platform och är inte specifika för [!DNL Adobe Journey Optimizer]. De ger dock allmän vägledning om hur beslutshantering kan användas inom ramen för [!DNL Journey Optimizer].
+>Dessa videofilmer gäller för Offera decisioningens programtjänst som är byggd på Adobe Experience Platform och gäller inte specifikt för [!DNL Adobe Journey Optimizer]. De ger dock allmän vägledning för användning av beslutsstöd inom ramen för [!DNL Journey Optimizer].
 
 ### Vad är beslutshantering? {#what-is-offer-decisioning}
 

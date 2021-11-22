@@ -21,7 +21,7 @@ En gång [skapade ett meddelande](create-message.md), använder du **[!UICONTROL
 
 >[!NOTE]
 >
->The **[!UICONTROL From email]** och **[!UICONTROL From name]** är skrivskyddade och bestäms av **[!UICONTROL Preset]** som har markerats när [skapar meddelandet](create-message.md).
+>The **[!UICONTROL From email]** och **[!UICONTROL From name]** är skrivskyddade och avgörs av **[!UICONTROL Preset]** som har markerats när [skapar meddelandet](create-message.md).
 
 Så här konfigurerar du ett e-postmeddelande:
 

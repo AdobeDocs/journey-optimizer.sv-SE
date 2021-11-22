@@ -17,33 +17,33 @@ ht-degree: 1%
 
 ## Om rankningsformler {#about-ranking-formulas}
 
-**Med** rangordningsformler kan du definiera regler som avgör vilket erbjudande som ska presenteras först för en viss placering, i stället för att ta hänsyn till offertens prioritetspoäng.
+**Rankningsformler** gör det möjligt att definiera regler som avgör vilket erbjudande som ska presenteras först för en viss placering, i stället för att ta hänsyn till offertens prioritetspoäng.
 
-Rankningsformler uttrycks i **PQL-syntax** och kan utnyttja profilattribut, kontextdata och attribut. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
+Rankningsformler uttrycks i **PQL-syntax** och kan utnyttja profilattribut, kontextdata och erbjuda attribut. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
 
-När en rankningsformel har skapats kan du tilldela den till en placering i ett beslut (som tidigare kallades erbjudandeaktivitet). Mer information finns i [Konfigurera erbjudandeurval i beslut](../offer-activities/configure-offer-selection.md).
+När en rankningsformel har skapats kan du tilldela den till en placering i ett beslut (som tidigare kallades erbjudandeaktivitet). Mer information finns i [Konfigurera urval av erbjudanden i beslut](../offer-activities/configure-offer-selection.md).
 
 ## Skapa en rankningsformel {#create-ranking-formula}
 
 Så här skapar du en rankningsformel:
 
-1. Gå till menyn **[!UICONTROL Components]** och välj sedan fliken **[!UICONTROL Rankings]**. Listan med rangordningar som tidigare skapats visas.
+1. Öppna **[!UICONTROL Components]** väljer du **[!UICONTROL Rankings]** -fliken. Listan med rangordningar som tidigare skapats visas.
 
    ![](../../assets/rankings-list.png)
 
-1. Klicka på **[!UICONTROL Create ranking]** för att skapa en ny rankningsformel.
+1. Klicka **[!UICONTROL Create ranking]** för att skapa en ny rankningsformel.
 
    ![](../../assets/ranking-create-formula.png)
 
 1. Ange namn, beskrivning och formel för rankningsformeln.
 
-   I det här exemplet vill vi prioritera alla erbjudanden med attributet&quot;hot&quot; om vädret är varmt. För att göra detta skickades **contextData.wall=hot** i beslutsanropet.
+   I det här exemplet vill vi prioritera alla erbjudanden med attributet&quot;hot&quot; om vädret är varmt. För att göra detta **contextData.west=hot** har skickats i beslutsanropet.
 
    ![](../../assets/ranking-syntax.png)
 
 1. Klicka på **[!UICONTROL Save]**. Din rankningsformel skapas. Du kan välja den i listan för att få information och redigera eller ta bort den.
 
-   Det är nu klart att användas i ett beslut om att rangordna kvalificerade erbjudanden för en placering (se [Konfigurera val av erbjudanden i beslut](../offer-activities/configure-offer-selection.md)).
+   Det är nu klart att användas i ett beslut om att rangordna kvalificerade erbjudanden för en placering (se [Konfigurera urval av erbjudanden i beslut](../offer-activities/configure-offer-selection.md)).
 
    ![](../../assets/ranking-formula-created.png)
 
@@ -103,7 +103,7 @@ if( offer.selectionConstraint.endDate occurs <= 24 hours after now, offer.rank.p
 
 ### Förbättra erbjudanden med vissa attribut baserade på kontextdata
 
-Öka vissa erbjudanden baserat på de kontextdata som skickas i beslutsanropet. Om till exempel `contextData.weather=hot` skickas i beslutsanropet måste prioriteten för alla erbjudanden med `attribute=hot` öka.
+Öka vissa erbjudanden baserat på de kontextdata som skickas i beslutsanropet. Om `contextData.weather=hot` har skickats in i beslutsanropet, prioriteten för alla erbjudanden med `attribute=hot` måste förstärkas.
 
 **Rankningsformel:**
 
@@ -139,9 +139,9 @@ Observera att när du använder API:t för beslutsfattande läggs kontextdata ti
 
 ### Öka erbjudandena baserat på kundernas benägenhet att köpa den produkt som erbjuds
 
-Om vi har två förekomster av *CustomerAI* som beräknar benägenheten för inköp av *travelInsurance* och *extraBaggage* för ett flygbolag, kommer följande rankningsformel att öka prioriteten (med 50 poäng) för erbjudandet som är specifikt för antingen försäkring eller bagage om kundens benägenhetspoäng är högre än att köpa produkten 90.
+Om vi har 2 förekomster av *CustomerAI* beräkna köpbenägenhet *travelInsurance* och *extraBaggage* för ett flygbolag kommer följande rankningsformel att öka prioriteten (med 50 poäng) för erbjudandet som är specifikt för antingen försäkring eller bagage om kundens benägenhetspoäng för att köpa produkten är högre än 90.
 
-Men eftersom varje *CustomerAI*-instans skapar ett eget objekt i det enhetliga profilschemat går det inte att dynamiskt välja poängen baserat på erbjudandebenägenhetstypen. Därför måste du kedja `if`-programsatserna för att först kontrollera erbjudandebenägenhetstypen och sedan extrahera poängen från rätt profilfält.
+Men eftersom var och en *CustomerAI* -instansen skapar ett eget objekt i det enhetliga profilschemat. Det går inte att dynamiskt välja poängen baserat på offertens benägenhetstyp. Du måste alltså kedja `if` -programsatser för att först kontrollera erbjudandets benägenhetstyp och sedan extrahera poängen från rätt profilfält.
 
 **Rankningsformel:**
 
@@ -153,7 +153,7 @@ if ( offer.characteristics.propensityType = "extraBaggagePropensity" and _salesv
 )
 ```
 
-En bättre lösning är att lagra bakgrundsmusiken i en array i profilen. Följande exempel fungerar för en mängd olika benägenhetspoäng med bara en enkel rankningsformel. Förväntningen är att du har ett profilschema med en array med poäng. I det här exemplet är instansinnehavaren *_salesvelocity* och profilschemat innehåller följande:
+En bättre lösning är att lagra bakgrundsmusiken i en array i profilen. Följande exempel fungerar för en mängd olika benägenhetspoäng med bara en enkel rankningsformel. Förväntningen är att du har ett profilschema med en array med poäng. I det här exemplet är instansen tenant *_salesvelocity* och profilschemat innehåller följande:
 
 ![](../../assets/ranking-example-schema.png)
 
@@ -181,7 +181,7 @@ Erbjudandena skulle innehålla ett attribut för *propensityType* som matchar ka
 
 ![](../../assets/ranking-example-propensityType.png)
 
-Din rankningsformel kan sedan ange prioriteten för varje erbjudande till lika med kunderna *propensityScore* för *propensityType*. Om ingen poäng hittas, använd den statiska prioriteten som angetts i erbjudandet:
+Din rankningsformel kan sedan ange prioriteten för varje erbjudande som ska vara lika med kunderna *propensityScore* för *propensityType*. Om ingen poäng hittas, använd den statiska prioriteten som angetts i erbjudandet:
 
 ```
 let score = (select _Individual_Scoring1 from _salesvelocity.individualScoring

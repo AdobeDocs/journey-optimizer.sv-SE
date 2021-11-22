@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Begränsningar {#limitations}
 
-Tillstånd, produktbegränsningar och prestandaskydd listas i[ Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target=&quot;_blank&quot;}.
+Tillstånd, produktbegränsningar och prestandaskydd finns i[ Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target=&quot;_blank&quot;}.
 
 Nedan finns ytterligare begränsningar när du använder [!DNL Adobe Journey Optimizer].
 
@@ -30,7 +30,7 @@ Nedan finns ytterligare begränsningar när du använder [!DNL Adobe Journey Opt
 
 * Det finns ingen sändande begränsning. 
 * Tre försök utförs systematiskt om ett fel uppstår. Du kan inte justera antalet försök enligt det mottagna felmeddelandet. 
-* Den inbyggda **Reaction**-händelsen gör att du kan reagera på åtgärder som inte är i kartong. Läs mer i [den här sidan](building-journeys/reaction-events.md). Om du vill reagera på ett meddelande som skickas via en anpassad åtgärd måste du konfigurera en dedikerad händelse. 
+* Den inbyggda **Reaktion** -händelsen gör att du kan reagera på åtgärder som är klara. Läs mer i [den här sidan](building-journeys/reaction-events.md). Om du vill reagera på ett meddelande som skickas via en anpassad åtgärd måste du konfigurera en dedikerad händelse. 
 * Du kan inte placera två åtgärder parallellt. Du måste lägga till dem en i taget.
 
 ### Meddelandeåtgärd
@@ -39,11 +39,11 @@ Nedan finns ytterligare begränsningar när du använder [!DNL Adobe Journey Opt
 
 ### Reseversioner {#journey-versions-limitations}
 
-* En resa som börjar med en händelseaktivitet i v1 kan inte börja med något annat än en händelse i andra versioner. Det går inte att starta en resa med en **segmentkvalificeringshändelse**.
-* En resa som börjar med en **segmentkvalificering**-aktivitet i v1 måste alltid börja med en **segmentkvalificering** i ytterligare versioner.
-* Det segment och namnområde som valts i **Segmentkvalificering** (första noden) kan inte ändras i nya versioner.
+* En resa som börjar med en händelseaktivitet i v1 kan inte börja med något annat än en händelse i andra versioner. Du kan inte påbörja en resa med en **Segmentkvalificering** -händelse.
+* En resa som börjar med en **Segmentkvalificering** aktivitet i v1 måste alltid börja med **Segmentkvalificering** i andra versioner.
+* Det segment och namnutrymme som valts i **Segmentkvalificering** (första noden) kan inte ändras i nya versioner.
 * Regeln för återinträde måste vara densamma i alla reseversioner.
-* En resa som börjar med ett **Lässegment** kan inte börja med en annan händelse i nästa versioner.
+* En resa som börjar med en **Läs segment** kan inte börja med en annan händelse i nästa version.
  
 
 ### Anpassade åtgärder

@@ -1,14 +1,15 @@
 ---
 title: Skapa placeringar
 description: Lär dig hur du skapar praktik i Adobe Experience Platform.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: User
 level: Intermediate
-source-git-commit: 0e5cc9101ff382ce9fde442da38eb46aa28e9c77
+exl-id: dfaf887e-d4b3-45b0-8297-bffdb0abff4d
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 5%
+source-wordcount: '215'
+ht-degree: 4%
 
 ---
 
@@ -22,7 +23,7 @@ I exemplet nedan finns det tre placeringar som motsvarar olika typer av innehål
 
 ![](../../assets/offers_placement_schema.png)
 
-Listan med placeringar finns på **[!UICONTROL Components]**-menyn. Det finns filter som hjälper dig att hämta placeringar utifrån en viss kanal eller ett visst innehåll.
+Listan över placeringar finns i **[!UICONTROL Components]** -menyn. Det finns filter som hjälper dig att hämta placeringar utifrån en viss kanal eller ett visst innehåll.
 
 ![](../../assets/placements_filter.png)
 
@@ -41,7 +42,7 @@ Så här skapar du en placering:
 
    ![](../../assets/offers_placement_creation_properties.png)
 
-1. Bekräfta genom att klicka på **[!UICONTROL Save]**.
+1. Klicka **[!UICONTROL Save]** för att bekräfta.
 
 1. När placeringen har skapats visas den i placeringslistan. Du kan markera den för att visa dess egenskaper och redigera den.
 

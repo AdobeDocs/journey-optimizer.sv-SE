@@ -18,9 +18,9 @@ ht-degree: 7%
 
 Behörigheter att komma åt och använda offera decisioningen hanteras med [Adobe Admin Console](https://helpx.adobe.com/enterprise/managing/user-guide.html){target=&quot;_blank&quot;}.
 
-Om du vill ge åtkomst till beslutshanteringsfunktionen måste du skapa en **[!UICONTROL Product profile]** och tilldela användarna motsvarande behörigheter. Läs mer om hur du hanterar [!DNL Journey Optimizer] användare och behörigheter i [det här avsnittet](../../administration/permissions.md).
+Om du vill ge åtkomst till funktionen Beslutshantering måste du skapa en **[!UICONTROL Product profile]** och tilldela användarna motsvarande behörigheter. Läs mer om hantering [!DNL Journey Optimizer] användare och behörigheter i [det här avsnittet](../../administration/permissions.md).
 
-Behörigheterna som är specifika för Beslutshantering listas i [det här avsnittet](../../administration/high-low-permissions.md#manage-decisioning).
+De behörigheter som är specifika för beslutshanteringen finns i [det här avsnittet](../../administration/high-low-permissions.md#manage-decisioning).
 
 <!--If you are a [!DNL Journey Optimizer] user leveraging the **Decision Management** functionality, you need to have the [Decision management permissions](../../administration/high-low-permissions.md#decisions-permissions) enabled to acces all related capabilities. Learn more on managing [!DNL Journey Optimizer] users and permissions in [this section](../../administration/permissions.md).
 
@@ -30,11 +30,11 @@ Grant access to Offer Decisioning
 
 The steps below only apply to **Experience Platform users** leveraging the [!DNL Offer Decisioning] service.-->
 
-1. Öppna [Admin Console](https://helpx.adobe.com/enterprise/managing/user-guide.html) och välj **[!UICONTROL Adobe Experience Platform]**.
+1. Öppna [Admin Console](https://helpx.adobe.com/enterprise/managing/user-guide.html)väljer **[!UICONTROL Adobe Experience Platform]**.
 
    <!--![](../../assets/offers_admin_console.png)-->
 
-1. Produktprofiler för visningen av tjänsten. Om du vill skapa en ny produktprofil klickar du på knappen **[!UICONTROL New Profile]**.
+1. Produktprofiler för visningen av tjänsten. Om du vill skapa en ny produktprofil klickar du på **[!UICONTROL New Profile]** -knappen.
 
    ![](../../assets/offers_rights_productprofile.png)
 
@@ -52,7 +52,7 @@ The steps below only apply to **Experience Platform users** leveraging the [!DNL
 
    ![](../../assets/enable-services.png)
 
-1. I avsnittet **[!UICONTROL Decision Management]** klickar du på knappen **+** för att tilldela behörigheter till produktprofilen. Klicka sedan på **[!UICONTROL Save]**.
+1. I **[!UICONTROL Decision Management]** klickar du på **+** om du vill tilldela behörigheter till produktprofilen och sedan klicka på **[!UICONTROL Save]**.
 
    ![](../../assets/configure-profile.png)
 
@@ -84,5 +84,5 @@ The steps below only apply to **Experience Platform users** leveraging the [!DNL
 
 >[!NOTE]
 >
->Mer information om hur du hanterar användarbehörigheter finns i [Admin Console-dokumentationen](https://helpx.adobe.com/enterprise/managing/user-guide.html){target=&quot;_blank&quot;}.
+>Mer information om hur du hanterar användarbehörigheter finns i [Admin Console dokumentation](https://helpx.adobe.com/enterprise/managing/user-guide.html){target=&quot;_blank&quot;}.
 

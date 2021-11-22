@@ -17,15 +17,15 @@ ht-degree: 9%
 ---
 
 
-# Kom igång med konfigurationen [!DNL Journey Optimizer]
+# Kom igång med [!DNL Journey Optimizer] konfiguration
 
-När du använder [!DNL Journey Optimizer] för första gången tilldelas du en produktionssandlåda och ett visst antal IP-adresser beroende på ditt kontrakt.
+Vid åtkomst [!DNL Journey Optimizer] För första gången tilldelas du en produktionssandlåda och ett visst antal IP-adresser beroende på ditt kontrakt.
 
 För att kunna skapa dina resor och skicka meddelanden måste du gå igenom följande konfigurationssteg:
 
 1. **Konfigurera meddelanden och kanaler**: definiera förinställningar, anpassa och anpassa e-post och push-meddelanden
 
-   * Definiera inställningar för push-meddelanden i både [!DNL Adobe Experience Platform] och [!DNL Adobe Experience Platform Launch]. [Läs mer](../push-gs.md)
+   * Definiera inställningar för push-meddelanden i båda [!DNL Adobe Experience Platform] och [!DNL Adobe Experience Platform Launch]. [Läs mer](../push-gs.md)
 
    * Skapa meddelandeförinställningar för att konfigurera alla tekniska parametrar som krävs för e-post och push-meddelanden. [Läs mer](message-presets.md)
 
@@ -45,12 +45,12 @@ För att kunna skapa dina resor och skicka meddelanden måste du gå igenom föl
 
    ![](../assets/ip-pool.png)
 
-1. **Konfigurera resor**: för att kunna bygga resor måste ni konfigurera  **[!UICONTROL Data Sources]** och  **[!UICONTROL Events]**  **[!UICONTROL Actions]**. [Läs mer](about-data-sources-events-actions.md)
+1. **Konfigurera resor**: för att kunna bygga resor måste ni konfigurera **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** och **[!UICONTROL Actions]**. [Läs mer](about-data-sources-events-actions.md)
 
    ![](../assets/admin-menu.png)
 
-   * Med konfigurationen **Datakälla** kan du definiera en anslutning till ett system för att hämta ytterligare information som ska användas på dina resor. Läs mer om datakällor i det här [avsnittet](../datasource/about-data-sources.md)
+   * The **Datakälla** kan du definiera en anslutning till ett system för att hämta ytterligare information som ska användas på dina resor. Läs mer om datakällor i detta [section](../datasource/about-data-sources.md)
 
-   * **Med** händelser kan ni utlösa era resor styckvis för att skicka meddelanden i realtid till den person som flyger in på resan. I händelsekonfigurationen konfigurerar du de händelser som förväntas under resorna. Data för inkommande händelser normaliseras enligt Adobe Experience Data Model (XDM). Händelser kommer från API för strömningsinmatning för autentiserade och ej autentiserade händelser (till exempel händelser i Adobe Mobile SDK). Läs mer om händelser i det här [avsnittet](../event/about-events.md)
+   * **Händelser** gör det möjligt för er att utlösa era resor helt och hållet för att skicka meddelanden i realtid till den person som kommer in på resan. I händelsekonfigurationen konfigurerar du de händelser som förväntas under resorna. Data för inkommande händelser normaliseras enligt Adobe Experience Data Model (XDM). Händelser kommer från API för strömningsinmatning för autentiserade och ej autentiserade händelser (till exempel händelser i Adobe Mobile SDK). Läs mer om händelser i det här [section](../event/about-events.md)
 
-   * [!DNL Journey Optimizer] innehåller inbyggda meddelandefunktioner: kan du utforma innehållet och publicera meddelandet. Om du använder ett tredjepartssystem för att skicka meddelanden skapar du en **anpassad åtgärd**. Läs mer om åtgärder i det här [avsnittet](../action/action.md)
+   * [!DNL Journey Optimizer] innehåller inbyggda meddelandefunktioner: kan du utforma innehållet och publicera meddelandet. Om du använder ett tredjepartssystem för att skicka meddelanden skapar du en **anpassad åtgärd**. Läs mer om åtgärder i det här [section](../action/action.md)

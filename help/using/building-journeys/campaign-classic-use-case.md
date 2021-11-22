@@ -1,17 +1,17 @@
 ---
 title: Skicka ett meddelande med Campaign v7/v8
 description: Lär dig hur du skickar ett meddelande med Campaign v7/v8
-feature: Instruktioner
-topic: Administrering
+feature: Actions
+topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
+exl-id: b07feb98-b2ae-476c-8fcb-873b308176f0
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 1%
+source-wordcount: '397'
+ht-degree: 0%
 
 ---
-
 
 # Skicka ett meddelande med Campaign v7/v8 {#campaign-classic-use-case}
 
@@ -22,7 +22,7 @@ Vi skapar först en transaktionell e-postmall i Campaign. I Journey Optimizer sk
 Mer information om Campaign-integrationen finns på följande sidor:
 
 * [Skapa en Campaign-åtgärd](../action/acc-action.md)
-* [Använda åtgärden på en resa](../building-journeys/using-adobe-campaign-classic.md).
+* [Använda åtgärden i en resa](../building-journeys/using-adobe-campaign-classic.md).
 
 **Adobe Campaign**
 
@@ -30,13 +30,13 @@ Din Campaign-instans måste etableras för den här integreringen. Funktionen f�
 
 1. Logga in på din Campaign-kontrollinstans.
 
-1. Under **Administration** > **Plattform** > **Uppräkningar** väljer du uppräkningen **Händelsetyp** (eventType). Skapa en ny händelsetyp (&quot;travel-event&quot;, i vårt exempel). Du måste använda det interna namnet för händelsetypen när du skriver JSON-filen senare.
+1. Under **Administration** > **Plattform** > **Uppräkningar** väljer du **Händelsetyp** (eventType)-uppräkning. Skapa en ny händelsetyp (&quot;travel-event&quot;, i vårt exempel). Du måste använda det interna namnet för händelsetypen när du skriver JSON-filen senare.
 
    ![](../assets/accintegration-uc-1.png)
 
 1. Koppla från och återanslut till instansen för att skapa.
 
-1. Under **Message Center** > **Transactional message templates** skapar du en ny e-postmall baserad på den händelsetyp som skapats tidigare.
+1. Under **Meddelandecenter** > **Mallar för transaktionsmeddelanden** skapar du en ny e-postmall baserad på händelsetypen som skapades tidigare.
 
    ![](../assets/accintegration-uc-2.png)
 
@@ -72,11 +72,11 @@ Din Campaign-instans måste etableras för den här integreringen. Funktionen f�
 
    ![](../assets/accintegration-uc-5.png)
 
-1. Sedan måste ni i Journey Optimizer skapa en åtgärd som motsvarar er Campaign-mall. I listrutan **Åtgärdstyp** väljer du **Adobe Campaign Classic**.
+1. Sedan måste ni i Journey Optimizer skapa en åtgärd som motsvarar er Campaign-mall. I **Åtgärdstyp** nedrullningsbar meny, välja **Adobe Campaign Classic**.
 
    ![](../assets/accintegration-uc-6.png)
 
-1. Klicka på **Nyttolastfältet** och klistra in den JSON som skapades tidigare.
+1. Klicka på **Nyttolastfält** och klistra in den JSON som skapades tidigare.
 
    ![](../assets/accintegration-uc-7.png)
 
@@ -92,7 +92,7 @@ Din Campaign-instans måste etableras för den här integreringen. Funktionen f�
 
    ![](../assets/accintegration-uc-10.png)
 
-1. Lägg till en **End**-aktivitet och testa din resa.
+1. Lägg till en **End** aktivitet och testa din resa.
 
    ![](../assets/accintegration-uc-11.png)
 

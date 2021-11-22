@@ -37,7 +37,7 @@ Ett exempel är att ha en IP-pool för dina marknadsföringsmeddelanden och en a
 
 Så här skapar du en IP-pool:
 
-1. Gå till menyn **[!UICONTROL Channels]** / **[!UICONTROL IP pools]** och klicka sedan på **[!UICONTROL Create IP Pool]**.
+1. Öppna **[!UICONTROL Channels]** / **[!UICONTROL IP pools]** menyn och klicka sedan på **[!UICONTROL Create IP Pool]**.
 
    ![](../assets/ip-pool-create.png)
 
@@ -81,14 +81,14 @@ Så här redigerar du en IP-pool:
 >
 >IP-poolnamnet kan inte redigeras. Om du vill ändra den måste du ta bort IP-poolen och skapa en annan med valfritt namn.
 
-Uppdateringen träder i kraft omedelbart eller asynkront, beroende på om IP-poolen är associerad med en [meddelandeförinställning](message-presets.md) eller inte:
+Uppdateringen träder i kraft omedelbart eller asynkront, beroende på vilken IP-pool som är associerad med en [meddelandeförinställning](message-presets.md) eller inte:
 
-* Om IP-poolen **inte** är markerad i en meddelandeförinställning uppdateras den omedelbart (**[!UICONTROL Success]** status).
-* Om IP-poolen **är** markerad i en meddelandeförinställning kan uppdateringen ta upp till 7-10 arbetsdagar (**[!UICONTROL Processing]** status).
+* Om IP-poolen är **not** som valts i en meddelandeförinställning uppdateras omedelbart (**[!UICONTROL Success]** status).
+* Om IP-poolen **är** som valts i en meddelandeförinställning kan uppdateringen ta upp till 7-10 arbetsdagar (**[!UICONTROL Processing]** status).
 
 <!--If a message preset has been associated with the IP pool, you first need to remove it before editing the IP pool. Once the your modifications have been done, you can associate the message preset again.-->
 
-Om du vill kontrollera IP-poolens uppdateringsstatus klickar du på knappen **[!UICONTROL More actions]** och väljer **[!UICONTROL Recent updates]**.
+Om du vill kontrollera IP-poolens uppdateringsstatus klickar du på **[!UICONTROL More actions]** och markera **[!UICONTROL Recent updates]**.
 
 ![](../assets/ip-pool-recent-update.png)
 
@@ -99,5 +99,5 @@ Om du vill kontrollera IP-poolens uppdateringsstatus klickar du på knappen **[!
 >* till nästa batch för att IP-poolen ska börja gälla i batchmeddelanden.
 
 
-Du kan också använda knappen **[!UICONTROL Delete]** för att ta bort en IP-pool. Observera att du inte kan ta bort en IP-pool som har kopplats till en meddelandeförinställning.
+Du kan också använda **[!UICONTROL Delete]** för att ta bort en IP-pool. Observera att du inte kan ta bort en IP-pool som har kopplats till en meddelandeförinställning.
 

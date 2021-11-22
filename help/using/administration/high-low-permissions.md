@@ -15,7 +15,8 @@ feature: Control Groups
 topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: b32306f9561946a6c289e5e9c7cc3243349141bc
+exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
+source-git-commit: da885bd5e29ff3454fef1c6b362f0e646fe8c39a
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 0%
@@ -29,17 +30,17 @@ ht-degree: 0%
 Varje produktprofil består av behörigheter som ger användarna tillgång till de olika funktionerna.
 De kan delas in i två typer:
 
-* **Hög behörighet**: representerar de olika behörigheter som kan tilldelas  **[!UICONTROL Product profile]** i  [!DNL Admin console], till exempel  **[!UICONTROL Publish journeys]** och  **[!UICONTROL Manage subdomains delegation]**. Höga behörigheter omfattar behörigheter på låg nivå.
+* **Hög behörighet**: representerar de olika behörigheter som kan tilldelas till **[!UICONTROL Product profile]** i [!DNL Admin console], till exempel **[!UICONTROL Publish journeys]** och **[!UICONTROL Manage subdomains delegation]**. Höga behörigheter omfattar behörigheter på låg nivå.
 
-* **Lågnivåbehörighet**: representerar de olika behörigheter som kommer från behörigheten på hög nivå.
+* **Låg behörighet**: representerar de olika behörigheter som kommer från behörigheten på hög nivå.
 
-Produktprofilen **[!UICONTROL Journey administrator]** har till exempel tilldelats behörigheten **[!UICONTROL Manage journeys]**. Från det här behörigheten blir de lågnivåbehörigheter som gör att reseadministratören kan skriva, läsa och ta bort resor.
+Till exempel **[!UICONTROL Journey administrator]** produktprofilen har tilldelats **[!UICONTROL Manage journeys]** behörighet. Från det här behörigheten blir de lågnivåbehörigheter som gör att reseadministratören kan skriva, läsa och ta bort resor.
 
 ## Resekapacitet {#journey-capability}
 
 ### Hantera resetillstånd {#manage-journeys}
 
-Med behörigheten **[!UICONTROL Manage journeys]** på hög nivå kan användare skapa nya och redigera/ta bort befintliga resor samt få åtkomst till de objekt som används i arbetsytan för att skapa reseflödet.
+The **[!UICONTROL Manage journeys]** behörighet på hög nivå ger användare möjlighet att skapa nya och redigera/ta bort befintliga resor samt åtkomst till de objekt som används på arbetsytan för att skapa resans flöde.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -59,7 +60,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Publicera resetillstånd {#publish-journeys}
 
-Med högnivåbehörigheten **[!UICONTROL Publish journeys]** kan användare publicera resor.
+The **[!UICONTROL Publish journeys]** högnivåtillstånd ger användarna rätt att publicera resor.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -69,7 +70,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Visa resetillstånd {#view-journeys}
 
-Med högnivåbehörigheten **[!UICONTROL View journeys]** kan användare bläddra och visa resor.
+The **[!UICONTROL View journeys]** behörighet på hög nivå tillåter användare att bläddra och visa resor.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -82,7 +83,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Hantera resthändelser, datakällor och behörigheter för åtgärder {#manage-journeys-events}
 
-Med den höga behörigheten **[!UICONTROL Manage journeys events, data sources and actions]** kan användare konfigurera händelse- och datakonfigurationer.
+The **[!UICONTROL Manage journeys events, data sources and actions]** behörighet på hög nivå tillåter användare att konfigurera händelse- och datakonfigurationer.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -103,7 +104,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Visa resehändelser, datakällor och åtgärdsbehörigheter {#view-journeys-event}
 
-Med den höga behörigheten **[!UICONTROL View journeys events, data sources and actions]** kan användare använda händelser och data i reseflödet.
+The **[!UICONTROL View journeys events, data sources and actions]** behörighet på hög nivå tillåter användare att använda händelser och data i reseflödet.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -119,7 +120,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Visa behörighet för reserapport {#view-journeys-report}
 
-Med **[!UICONTROL View journeys report]**-behörigheten på hög nivå kan användare skriva en skrivskyddad reserapport.
+The **[!UICONTROL View journeys report]** behörighet på hög nivå tillåter användare att läsa skrivskyddade reserapporter.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -137,7 +138,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Hantera meddelandebehörigheter {#manage-messages}
 
-Med den höga behörigheten **[!UICONTROL Manage messages]** kan användare skapa och redigera/ta bort meddelanden.
+The **[!UICONTROL Manage messages]** behörighet på hög nivå ger användare möjlighet att skapa och redigera/ta bort meddelanden.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -153,7 +154,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Hantera förhandsgranskning och testbehörighet för meddelanden {#mange-messages-preview}
 
-Med den höga behörigheten **[!UICONTROL Manage messages preview and test]** kan användare förhandsgranska personaliserade meddelanden.
+The **[!UICONTROL Manage messages preview and test]** behörighet på hög nivå ger användarna möjlighet att förhandsgranska personaliserade meddelanden.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -175,7 +176,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Publicera meddelanden - behörighet {#publish-messages}
 
-Med den höga behörigheten **[!UICONTROL Publish messages]** kan användare publicera meddelanden.
+The **[!UICONTROL Publish messages]** behörighet på hög nivå tillåter användare att publicera meddelanden.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -189,7 +190,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Visa meddelandebehörighet {#view-messages}
 
-Med den höga behörigheten **[!UICONTROL View messages]** kan användare bara läsa meddelanden.
+The **[!UICONTROL View messages]** behörighet på hög nivå tillåter användare att endast läsa meddelanden.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -203,7 +204,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Visa rapportbehörighet för meddelanden {#view-message-reports}
 
-Med behörigheten **[!UICONTROL View messages report]** på hög nivå kan användare läsa och skicka rapporter via e-post.
+The **[!UICONTROL View messages report]** behörighet på hög nivå tillåter användare att läsa skrivskyddade e-postmeddelanden och skicka rapporter.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -219,7 +220,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Hantera beslutsbehörighet {#manage-decisioning}
 
-Med den höga behörigheten **[!UICONTROL Manage decisions]** kan användare skapa nya och redigera/ta bort befintliga **[!UICONTROL Activity entities]** samt hantera de objekt som används i dessa aktiviteter för att fatta beslut.
+The **[!UICONTROL Manage decisions]** behörighet på hög nivå ger användare möjlighet att skapa nya och redigera/ta bort befintliga **[!UICONTROL Activity entities]** samt hantera de objekt som används i dessa aktiviteter för att fatta beslut.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -245,7 +246,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Visa beslutsbehörighet {#view-decisions}
 
-Med den höga behörigheten **[!UICONTROL View decisions]** kan användare använda en befintlig aktivitet och relaterade affärsobjekt för att fatta beslut.
+The **[!UICONTROL View decisions]** behörighet på hög nivå tillåter användare att använda en befintlig aktivitet och relaterade affärsobjekt för att fatta beslut.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -264,7 +265,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Publicera erbjuder beslutsbehörighet {#publish-decisions}
 
-Med **[!UICONTROL Publish offers decisioning]**-behörigheten på hög nivå kan användare få åtkomst till att godkänna/avgodkänna erbjudandeaktiviteter.
+The **[!UICONTROL Publish offers decisioning]** behörighet på hög nivå ger användare åtkomst till att godkänna/avgodkänna erbjudandeaktiviteter.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -286,7 +287,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Hantera behörighet för rankningsstrategier {#manage-decisions}
 
-Med den höga behörigheten **[!UICONTROL Manage ranking strategies]** kan användare läsa, skapa, redigera och ta bort anpassade meddelanderapporter och använda åtgärdsfunktioner.
+The **[!UICONTROL Manage ranking strategies]** behörighet på hög nivå tillåter användare att läsa, skapa, redigera och ta bort anpassade meddelanden och använda åtgärdsfunktioner.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -302,7 +303,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Hantera delegeringsbehörighet för underdomäner {#manage-subdomain}
 
-Med den höga behörigheten **[!UICONTROL Manage subdomains delegation]** kan användare skapa, redigera och ta bort underdomänsdelegeringar (inklusive IP-pool).
+The **[!UICONTROL Manage subdomains delegation]** Med högnivåbehörighet kan användare skapa, redigera och ta bort underdomänsdelegeringar (inklusive IP-pool).
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -312,7 +313,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Visa behörighet för PTR-poster {#view-ptr}
 
-Med den höga behörigheten **[!UICONTROL View PTR records]** kan användare visa PTR-poster som har konfigurerats baserat på underdomänen.
+The **[!UICONTROL View PTR records]** behörighet på hög nivå tillåter användare att visa PTR-poster som har konfigurerats baserat på underdomänen.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -321,7 +322,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Hantera behörighet för IP-pooler {#manage-ip-pools}
 
-Med den höga behörigheten **[!UICONTROL Manage IP pools]** kan användare skapa, redigera och ta bort tillhörighetsdefinitionen.
+The **[!UICONTROL Manage IP pools]** behörighet på hög nivå tillåter användare att skapa, redigera och ta bort tillhörighetsdefinitionen.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -331,7 +332,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Hantera meddelanden med allmänna inställningar, behörighet {#manage-message-settings}
 
-Med den höga behörigheten **[!UICONTROL Manage messages general settings]** kan användare skapa, redigera och ta bort globala inställningar på sandlådenivå.
+The **[!UICONTROL Manage messages general settings]** behörighet på hög nivå ger användare möjlighet att skapa, redigera och ta bort globala inställningar på sandlådenivå.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -344,7 +345,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Visa allmänna inställningar för meddelanden {#view-message-settings}
 
-Med den höga behörigheten **[!UICONTROL View messages general settings]** kan användare visa allmänna inställningar för meddelanden, t.ex. körningsadressen.
+The **[!UICONTROL View messages general settings]** behörighet på hög nivå tillåter användare att visa meddelanden med allmänna inställningar, t.ex. körningsadressen.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -355,7 +356,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Hantera behörigheter för meddelandeförinställningar {#manage-message-presets}
 
-Med den höga behörigheten **[!UICONTROL Manage messages presets]** kan användare skapa, redigera och ta bort meddelandeförinställningar i alla kanaler på sandlådenivå.
+The **[!UICONTROL Manage messages presets]** behörighet på hög nivå ger användare möjlighet att skapa, redigera och ta bort meddelandeförinställningar över flera kanaler på sandlådenivå.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -369,7 +370,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Visa förinställda meddelanden, behörighet {#view-message-presets}
 
-Med den höga behörigheten **[!UICONTROL View messages presets]** kan användare visa meddelandeförinställningar för att veta vilka meddelandeförinställningar som ska användas när ett meddelande skapas.
+The **[!UICONTROL View messages presets]** behörighet på hög nivå gör det möjligt för användare att visa meddelandeförinställningar för att veta vilka meddelandeförinställningar som ska användas när ett meddelande skapas.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -380,7 +381,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Hantera undertryckningsbehörighet {#manage-suppression}
 
-Med behörigheten **[!UICONTROL Manage suppression]** på hög nivå kan användare definiera antalet studsar innan en e-postadress läggs till i listan samt lägga till och ta bort poster i/från listan.
+The **[!UICONTROL Manage suppression]** behörighet på hög nivå ger användare möjlighet att definiera antalet studsar innan en e-postadress läggs till i listan samt att lägga till och ta bort poster i/från listan.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -392,7 +393,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Visa behörighet för undertryckningslista {#view-suppresion-list}
 
-Med den höga behörigheten **[!UICONTROL View suppression list]** kan användare visa innehåll och inställningar i listan över utelämnanden.
+The **[!UICONTROL View suppression list]** behörighet på hög nivå ger användarna möjlighet att visa innehåll och inställningar i listan över utelämnanden.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -404,7 +405,7 @@ Den innehåller följande lågnivåbehörigheter:
 
 ### Behörighet för att exportera undertryckningslista {#export-suppression-list}
 
-Med den höga behörigheten **[!UICONTROL Export suppression list]** kan användare hämta undertryckningslistan som en CSV-fil.
+The **[!UICONTROL Export suppression list]** behörighet på hög nivå ger användarna möjlighet att ladda ned listan som en CSV-fil.
 
 Den innehåller följande lågnivåbehörigheter:
 

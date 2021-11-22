@@ -1,20 +1,21 @@
 ---
 title: Webb-SDK för Adobe Experience Platform
 description: Med Adobe Experience Platform Web SDK kan du hämta och återge anpassade erbjudanden som du har skapat med hjälp av API:er eller erbjudandebiblioteket.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: ac6ba317909c962a81c7043bfa2a56e94bc5c9ad
+exl-id: c3b842ff-e4f8-4fac-968c-6d23abac408e
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 6%
+source-wordcount: '171'
+ht-degree: 5%
 
 ---
 
 # Webb-SDK för Adobe Experience Platform
 
-[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html#video-overview){target=&quot;_blank&quot;} är ett JavaScript-bibliotek på klientsidan som gör att Adobe Experience Cloud kunder kan interagera med de olika tjänsterna på Experience Cloud via Adobe Experience Platform Edge Network.
+[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html#video-overview){target=&quot;_blank&quot;} är ett JavaScript-bibliotek på klientsidan som gör att Adobe Experience Cloud-kunder kan interagera med de olika tjänsterna i Experience Cloud via Adobe Experience Platform Edge Network.
 
 Adobe Experience Platform Web SDK stöder frågor om personaliseringslösningarna på Adobe, inklusive beslutsstöd, så att du kan hämta och återge personaliserade erbjudanden som du har skapat med hjälp av API:er eller erbjudandebiblioteket.
 

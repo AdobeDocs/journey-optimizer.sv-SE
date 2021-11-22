@@ -1,32 +1,33 @@
 ---
 title: Designa e-postmeddelanden i Journey Optimizer
 description: Lär dig hur du utformar e-postinnehåll
-feature: Översikt
-topic: Innehållshantering
+feature: Overview
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 704d8c5b5a9f0ff8d90467db6ead8f77d68633b2
+exl-id: 151594f2-85e4-4c79-9c15-334fbd3768c4
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1475'
 ht-degree: 1%
 
 ---
 
 # Designa ditt e-postinnehåll i användargränssnittet {#create-email-content}
 
-När du har [skapat meddelandet](create-message.md) kan du börja skapa ditt e-postinnehåll.
+När du har [skapade ditt meddelande](create-message.md)kan du börja skapa ditt e-postinnehåll.
 
-1. Välj **[!UICONTROL Email designer]** i avsnittet **[!UICONTROL Body]** från det nya meddelandet.
+1. Välj **[!UICONTROL Email designer]** i **[!UICONTROL Body]** -avsnitt.
 
    ![](assets/import-html_1.png)
 
 1. På hemsidan för e-postdesignern väljer du hur du vill utforma e-postmeddelandet bland följande alternativ:
 
-   * Välj **[!UICONTROL Design from scratch]** om du vill använda e-postdesignerfunktionerna för att skapa e-postinnehåll. [Läs mer](#design-scratch)
+   * Välj **[!UICONTROL Design from scratch]** för att använda e-postdesignerfunktionerna för att skapa e-postinnehåll. [Läs mer](#design-scratch)
 
-   * Välj **[!UICONTROL Start from template]** om du vill skapa e-postmeddelandet från en inbyggd lista med mallar. Observera att du inte kan skapa andra mallar.
+   * Välj **[!UICONTROL Start from template]** för att skapa e-post från en inbyggd lista med mallar. Observera att du inte kan skapa andra mallar.
 
-   * Välj **[!UICONTROL Code your own]** om du vill ange eller klistra in HTML Raw-kod. [Läs mer](existing-content.md#import-raw-html-code).
+   * Välj **[!UICONTROL Code your own]** för att ange eller klistra in HTML raw-kod. [Läs mer](existing-content.md#import-raw-html-code).
 
    * Välj **[!UICONTROL Import HTML]** om du vill importera en HTML-fil eller en ZIP-mapp. [Läs mer](existing-content.md#import-html-content-from-file).
 
@@ -48,7 +49,7 @@ Med e-postdesignern kan du enkelt definiera e-postens struktur. Genom att lägga
 
 Följ stegen nedan för att börja skapa e-postinnehåll med e-postdesignern:
 
-1. När du har valt alternativet **[!UICONTROL Design from scratch]** börjar du utforma e-postinnehållet genom att dra och släppa **[!UICONTROL Structure components]** för att definiera layouten för e-postmeddelandet.
+1. När du har valt **[!UICONTROL Design from scratch]** kan du börja designa ditt e-postinnehåll genom att dra och släppa **[!UICONTROL Structure components]** för att definiera layouten för e-postmeddelandet.
 
    >[!NOTE]
    >
@@ -58,23 +59,23 @@ Följ stegen nedan för att börja skapa e-postinnehåll med e-postdesignern:
 
    ![](assets/email_designer_2.png)
 
-1. Lägg till så många **[!UICONTROL Structure components]** som behövs.
+1. Lägg till så många **[!UICONTROL Structure components]** efter behov.
 
-   Välj **[!UICONTROL n:n column]**-komponenten för att definiera antalet kolumner du vill använda (mellan 3 och 10). Du kan också definiera bredden på varje kolumn genom att flytta pilarna längst ned i varje kolumn.
+   Välj **[!UICONTROL n:n column]** -komponent för att definiera hur många kolumner du vill ha (mellan 3 och 10). Du kan också definiera bredden på varje kolumn genom att flytta pilarna längst ned i varje kolumn.
 
    >[!NOTE]
    >
    >Varje kolumnstorlek får inte vara mindre än 10 % av strukturkomponentens totala bredd. Du kan inte ta bort en kolumn som inte är tom.
 
-1. I listrutan **[!UICONTROL Content components]** kan du lägga till så många **[!UICONTROL Content components]** som du behöver i strukturkomponenten. [Läs mer om innehållskomponenter](content-components.md).
+1. Från **[!UICONTROL Content components]** nedrullningsbar meny, du kan lägga till så många **[!UICONTROL Content components]** som du behöver i strukturkomponenten. [Läs mer om innehållskomponenter](content-components.md).
 
    ![](assets/email_designer_3.png)
 
-1. Varje komponent kan anpassas ytterligare med **[!UICONTROL Component settings]**-avsnittet. Du kan till exempel ändra textstil, utfyllnad eller marginal för komponenten. [Läs mer om justering och utfyllnad](#adjusting-vertical-alignment-and-padding).
+1. Varje komponent kan anpassas ytterligare med **[!UICONTROL Component settings]** -avsnitt. Du kan till exempel ändra textstil, utfyllnad eller marginal för komponenten. [Läs mer om justering och utfyllnad](#adjusting-vertical-alignment-and-padding).
 
    ![](assets/email_designer_4.png)
 
-1. Från **[!UICONTROL Assets picker]** kan du lägga till resurser som lagras i **[!UICONTROL Assets library]** direkt i e-postmeddelandet. [Läs mer om resurshantering](assets-essentials.md).
+1. Från **[!UICONTROL Assets picker]** kan du lägga till resurser som lagras i **[!UICONTROL Assets library]** till din e-postadress. [Läs mer om resurshantering](assets-essentials.md).
 
    Dubbelklicka på den mapp som innehåller dina resurser och dra och släpp den resurs som du vill lägga till i e-postmeddelandet.
 
@@ -84,15 +85,15 @@ Följ stegen nedan för att börja skapa e-postinnehåll med e-postdesignern:
 
    ![](assets/email_designer_6.png)
 
-1. På fliken **[!UICONTROL Links]** i den vänstra rutan kontrollerar du listan med alla URL:er för ditt innehåll som ska spåras. Du kan ändra deras **[!UICONTROL Tracking Type]**, **[!UICONTROL Label]** och **[!UICONTROL Tags]** om det behövs.
+1. I **[!UICONTROL Links]** i den vänstra rutan kontrollerar du listan med alla URL:er för ditt innehåll som ska spåras. Du kan ändra deras **[!UICONTROL Tracking Type]**, **[!UICONTROL Label]** och **[!UICONTROL Tags]** vid behov.
 
    ![](assets/email_designer_7.png)
 
    >[!NOTE]
    >
-   >Läs mer om länkar och meddelandespårning på [den här sidan](message-tracking.md).
+   >Läs mer om länkar och meddelandespårning i [den här sidan](message-tracking.md).
 
-1. Om det behövs kan du växla till kodredigeraren för att anpassa e-postmeddelandet ytterligare genom att klicka på **[!UICONTROL Switch to code editor]** på den avancerade menyn. Mer information om kodredigeraren finns på den här [sidan](existing-content.md#import-raw-html-code).
+1. Om det behövs kan du växla till kodredigeraren för att anpassa e-postmeddelandet ytterligare genom att klicka på **[!UICONTROL Switch to code editor]** på den avancerade menyn. Mer information om kodredigeraren finns i [page](existing-content.md#import-raw-html-code).
 
    >[!NOTE]
    >
@@ -100,7 +101,7 @@ Följ stegen nedan för att börja skapa e-postinnehåll med e-postdesignern:
 
    ![](assets/email_designer_26.png)
 
-1. Klicka på **[!UICONTROL Show preview]** för att kontrollera din e-poståtergivning. Du kan välja skrivbordsvy eller mobilvy.
+1. Klicka **[!UICONTROL Show preview]** för att kontrollera din e-poståtergivning. Du kan välja skrivbordsvy eller mobilvy.
 
    Mer information om hur du förhandsgranskar ditt e-postmeddelande finns i [Förhandsgranska och testa dina meddelanden](preview.md).
 
@@ -112,17 +113,17 @@ Ditt e-postinnehåll kan nu användas i ett meddelande. [Lär dig hur du skickar
 
 ## Skapa textversionen av ett e-postmeddelande {#generate-text-version}
 
-Vi rekommenderar att du skapar en textversion av e-postbrödtexten, som används när HTML-innehåll inte kan visas.
+Vi rekommenderar att du skapar en textversion av e-postbrödtexten, som används när HTML inte kan visas.
 
-Som standard skapar e-postdesignern en **[!UICONTROL Plain text]**-version av ditt e-postmeddelande, inklusive anpassningsfält. Den här versionen genereras och synkroniseras automatiskt med HTML-versionen av ditt innehåll.
+Som standard skapar e-postdesignern en **[!UICONTROL Plain text]** version av e-postmeddelandet, inklusive personaliseringsfält. Den här versionen genereras och synkroniseras automatiskt med HTML-versionen av ditt innehåll.
 
 Om du föredrar att använda ett annat innehåll för den oformaterade textversionen följer du stegen nedan:
 
-1. Välj fliken **[!UICONTROL Plain text]** i ditt e-postmeddelande.
+1. I ditt e-postmeddelande väljer du **[!UICONTROL Plain text]** -fliken.
 
    ![](assets/text_version_3.png)
 
-1. Använd alternativet **[!UICONTROL Sync with HTML]** för att inaktivera synkronisering.
+1. Använd **[!UICONTROL Sync with HTML]** om du vill inaktivera synkronisering.
 
    ![](assets/text_version_1.png)
 
@@ -134,10 +135,9 @@ Om du föredrar att använda ett annat innehåll för den oformaterade textversi
 
 >[!CAUTION]
 >
->* Ändringar som görs i vyn **[!UICONTROL Plain text]** återspeglas inte i HTML-vyn.
-   >
-   >
-* Om du aktiverar alternativet **[!UICONTROL Sync with HTML]** igen efter att du har uppdaterat innehållet i oformaterad text, kommer ändringarna att gå förlorade och ersättas med textinnehåll som genererats från HTML-versionen.
+>* Ändringar gjorda i **[!UICONTROL Plain text]** vyn inte visas i HTML.
+>
+>* Om du aktiverar **[!UICONTROL Sync with HTML]** när du har uppdaterat oformaterad text kommer ändringarna att gå förlorade och ersättas med textinnehåll som genererats från HTML-versionen.
 
 
 ## Använda en förrubrik {#preheader}
@@ -153,21 +153,21 @@ Om du föredrar att använda ett annat innehåll för den oformaterade textversi
 
 En preheader är en kort sammanfattningstext som följer efter ämnesraden när du visar ett e-postmeddelande från din e-postklient. Förrubriken kan hjälpa dig att spåra och anpassa dina e-postmeddelanden bättre.
 
-1. Från e-postdesignern lägger du till en **[!UICONTROL Structure components]** för att börja designa din e-post.
+1. Lägg till en **[!UICONTROL Structure components]** för att börja designa din e-post.
 
    ![](assets/preheader_1.png)
 
-1. Klicka på **Redigera** bredvid fältet **[!UICONTROL Preheader]** i den högra rutan **[!UICONTROL Body settings]** för att lägga till innehåll.
+1. Från **[!UICONTROL Body settings]** höger ruta, klicka **Redigera** bredvid **[!UICONTROL Preheader]** fält för att lägga till innehåll.
 
    ![](assets/preheader_2.png)
 
-1. Lägg till din förrubrik. Du kan anpassa den ytterligare genom att klicka på ikonen **[!UICONTROL Add personalization]**.
+1. Lägg till din förrubrik. Du kan anpassa den ytterligare genom att klicka på **[!UICONTROL Add personalization]** ikon.
 
    ![](assets/preheader_3.png)
 
-1. I fönstret **[!UICONTROL Edit Personalization]** kan du lägga till **[!UICONTROL Content block]**, **[!UICONTROL Dynamic content]** eller **[!UICONTROL Personalization fields]**.
+1. Från **[!UICONTROL Edit Personalization]** fönster, du kan lägga till **[!UICONTROL Content block]**, **[!UICONTROL Dynamic content]** eller **[!UICONTROL Personalization fields]**.
 
-1. Klicka på **[!UICONTROL Validate]** för att kontrollera din personaliseringssyntax.
+1. Klicka **[!UICONTROL Validate]** för att kontrollera din personaliseringssyntax.
 
    ![](assets/preheader_4.png)
 
@@ -191,15 +191,15 @@ När det gäller att ange bakgrunder med e-postdesignern rekommenderar Adobe fö
 
 Nedan visas de tillgängliga bakgrundsinställningarna som du kan använda.
 
-* Ange ett **[!UICONTROL Background color]**-värde för hela e-postmeddelandet. Se till att du väljer brödtextinställningarna i navigeringsträdet som du kommer åt från den vänstra paletten.
+* Ange en **[!UICONTROL Background color]** för hela e-postmeddelandet. Se till att du väljer brödtextinställningarna i navigeringsträdet som du kommer åt från den vänstra paletten.
 
-* Ange samma bakgrundsfärg för alla strukturkomponenter genom att välja **[!UICONTROL Viewport background color]**. Med det här alternativet kan du välja en annan inställning från bakgrundsfärgen.
+* Ange samma bakgrundsfärg för alla strukturkomponenter genom att markera **[!UICONTROL Viewport background color]**. Med det här alternativet kan du välja en annan inställning från bakgrundsfärgen.
 
 * Ange olika bakgrundsfärger för varje strukturelement. Välj en struktur i navigeringsträdet som du kommer åt från den vänstra paletten om du bara vill använda en viss bakgrundsfärg på den strukturen.
 
    Se till att du inte anger någon bakgrundsfärg för visningsrutan eftersom den kan dölja strukturens bakgrundsfärger.
 
-* Ange **[!UICONTROL Background image]** som innehåll för en strukturkomponent.
+* Ange en **[!UICONTROL Background image]** för innehållet i en strukturkomponent.
 
    >[!NOTE]
    >
@@ -217,13 +217,13 @@ Nedan visas de tillgängliga bakgrundsinställningarna som du kan använda.
 
 I det här exemplet justerar vi utfyllnad och lodrät justering inuti en strukturkomponent som består av tre kolumner.
 
-1. Markera strukturkomponenten direkt i e-postmeddelandet eller använd den **[!UICONTROL Navigation tree]** som finns i den vänstra menyn.
+1. Markera strukturkomponenten direkt i e-postmeddelandet eller med **[!UICONTROL Navigation tree]** finns i den vänstra menyn.
 
    ![](assets/alignment_1.png)
 
-1. Klicka på **[!UICONTROL Select a column]** i verktygsfältet och välj den som du vill redigera. Du kan också välja det i strukturträdet.
+1. I verktygsfältet klickar du på **[!UICONTROL Select a column]** och välj den som du vill redigera. Du kan också välja det i strukturträdet.
 
-   De redigerbara parametrarna för den kolumnen visas på menyn **[!UICONTROL Column settings]**.
+   De redigerbara parametrarna för den kolumnen visas i **[!UICONTROL Column settings]** -menyn.
 
    ![](assets/alignment_2.png)
 
@@ -233,7 +233,7 @@ I det här exemplet justerar vi utfyllnad och lodrät justering inuti en struktu
 
    ![](assets/alignment_3.png)
 
-1. Ange den översta utfyllnaden i kolumnen under **[!UICONTROL Padding]**. Klicka på låsikonen om du vill bryta synkroniseringen med den nedre utfyllnaden.
+1. Under **[!UICONTROL Padding]** definierar du den översta utfyllnaden i kolumnen. Klicka på låsikonen om du vill bryta synkroniseringen med den nedre utfyllnaden.
 
    Definiera vänster och höger utfyllnad för den kolumnen.
 
@@ -247,13 +247,13 @@ I det här exemplet justerar vi utfyllnad och lodrät justering inuti en struktu
 
 Du kan stryka under en länk och välja dess färg och mål i e-postdesignern.
 
-1. Markera länken i en text **[!UICONTROL Content component]** där en länk infogas.
+1. I en text **[!UICONTROL Content component]** där en länk infogas, markerar du länken.
 
-1. Markera **[!UICONTROL Underline link]** på menyn **[!UICONTROL Component settings]** för att stryka under etikettexten för länken.
+1. I **[!UICONTROL Component settings]** meny, kontrollera **[!UICONTROL Underline link]** om du vill stryka under etikettexten för länken.
 
    ![](assets/link_1.png)
 
-1. Välj hur målgruppen ska omdirigeras med listrutan **[!UICONTROL Target]**:
+1. Välj hur er målgrupp ska omdirigeras med **[!UICONTROL Target]** nedrullningsbar meny:
 
    * **[!UICONTROL None]**: öppnar länken i samma ram som den klickades på (standard).
    * **[!UICONTROL Blank]**: öppnar länken i ett nytt fönster eller på en ny flik.
@@ -276,11 +276,8 @@ Du kan stryka under en länk och välja dess färg och mål i e-postdesignern.
 När du markerar ett element och visar dess inställningar på sidopanelen i gränssnittet för e-postdesignern kan du anpassa infogade attribut och deras värde för det specifika elementet.
 
 1. Markera ett element i innehållet.
-1. På sidopanelen letar du efter **[!UICONTROL Styles Inline]**-inställningarna.
+1. På sidopanelen letar du efter **[!UICONTROL Styles Inline]** inställningar.
 
-1. Ändra värdena för befintliga attribut eller lägg till nya med knappen **+**. Du kan lägga till alla attribut och värden som är CSS-kompatibla.
+1. Ändra värdena för de befintliga attributen eller lägg till nya med **+** -knappen. Du kan lägga till alla attribut och värden som är CSS-kompatibla.
 
 Formateringen används sedan på det markerade elementet. Om de underordnade elementen inte har några definierade formatattribut ärvs det överordnade elementets formatering.
-
-
-

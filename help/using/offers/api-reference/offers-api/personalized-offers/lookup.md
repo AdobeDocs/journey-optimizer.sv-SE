@@ -1,14 +1,15 @@
 ---
 title: Lista personaliserade erbjudanden
 description: Ett personaliserat erbjudande är ett anpassningsbart marknadsföringsmeddelande som baseras på regler och begränsningar för behörighet.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+exl-id: 2e30b155-688b-432b-a703-d09de12ebdfd
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 3%
+source-wordcount: '174'
+ht-degree: 2%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 3%
 
 Ett personaliserat erbjudande är ett anpassningsbart marknadsföringsmeddelande som baseras på regler och begränsningar för behörighet.
 
-Du kan slå upp specifika anpassade erbjudanden genom att göra en GET-förfrågan till [!DNL Offer Library]-API:t som innehåller antingen det anpassade erbjudandet `@id` eller namnet på det anpassade erbjudandet i sökvägen till förfrågan.
+Du kan slå upp specifika personliga erbjudanden genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller antingen det anpassade erbjudandet `@id` eller namnet på det personaliserade erbjudandet i sökvägen.
 
 **API-format**
 
@@ -29,7 +30,7 @@ GET /{ENDPOINT_PATH}/{CONTAINER_ID}/queries/core/search?schema={SCHEMA_PERSONALI
 | `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
 | `{CONTAINER_ID}` | Behållaren där personaliserade erbjudanden finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
 | `{SCHEMA_PERSONALIZED_OFFER}` | Definierar det schema som är associerat med personaliserade erbjudanden. | `https://ns.adobe.com/experience/offer-management/personalized-offer;version=0.5` |
-| `id` | En sträng som används för att matcha egenskapen `@id` för entiteterna. Strängen matchas exakt. Parametern id och name kan inte användas tillsammans. | `xcore:personalized-offer:124cc332095cfa74` |
+| `id` | En sträng som används för att matcha `@id` enheternas egenskap. Strängen matchas exakt. Parametern id och name kan inte användas tillsammans. | `xcore:personalized-offer:124cc332095cfa74` |
 | `name` | En sträng som används för att matcha egenskapen xdm:name för entiteterna. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametrarna `id` och `name` kan inte användas tillsammans | `Discount offer` |
 
 **Begäran**

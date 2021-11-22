@@ -1,12 +1,12 @@
 ---
 title: 'Integritet i [!DNL Journey Optimizer] '
 description: Lär dig hantera sekretess
-topic: Sekretess
+topic: Privacy
 role: User
 level: Intermediate
 source-git-commit: ac6ba317909c962a81c7043bfa2a56e94bc5c9ad
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '772'
 ht-degree: 46%
 
 ---
@@ -33,7 +33,7 @@ Personliga och känsliga data måste hanteras noggrant. Följ de allmänna princ
 
 * Använd alltid personlig information på ett ansvarsfullt och etiskt sätt.
 
-* Undvik att skicka oönskade meddelanden (&quot;spam&quot;). Adobe tror starkt på principerna för tillståndsmarknadsföring när det gäller att främja kundens livstidsvärde och lojalitet, och förbjuder därför strikt användning av [!DNL Adobe Journey Optimizer] för att skicka oönskade meddelanden.
+* Undvik att skicka oönskade meddelanden (&quot;spam&quot;). Adobe tror starkt på principerna om tillståndsmarknadsföring när det gäller att främja kundens livstidsvärde och lojalitet, och förbjuder därför strikt användning av [!DNL Adobe Journey Optimizer] i att skicka oombedda meddelanden.
 
 [!DNL Journey Optimizer] ger dig möjlighet att hantera användarnas rättigheter via olika färdiga eller anpassade produktprofiler. Det här låter dig hantera vilka inom företaget som kan få åtkomst till, ändra eller exportera olika typer av data. Lär dig hur du hanterar användarbehörigheter i [den här sidan](administration/permissions.md).
 
@@ -54,11 +54,11 @@ För att kunna hantera personuppgifter på ett korrekt sätt måste ni därför 
 
 [!DNL Journey Optimizer] ärver de flesta datauppsättningsändringar som gjorts i Adobe Experience Platform.
 
-Följaktligen hanteras förfrågningar om skydd av privatlivet (rätt att få åtkomst och rätt att bli glömd) via Experience Platform. Du måste skicka dina begäranden med [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target=&quot;_blank&quot;} och välja **Profil** och **AEP Data Lake** i produktlistan när [du skapar din sekretessförfrågan](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html#request-builder){target=&quot;_blank&quot;}. <!--https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html).-->
+Följaktligen hanteras förfrågningar om skydd av privatlivet (rätt att få åtkomst och rätt att bli glömd) via Experience Platform. Du måste skicka dina förfrågningar med [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target=&quot;_blank&quot;} och välj **Profil** och **AEP Data Lake** från produktlistan när [skapa din sekretessförfrågan](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html#request-builder){target=&quot;_blank&quot;}. <!--https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html).-->
 
 >[!NOTE]
 >
->[Hantering av ](../../help/using/consent.md) samtycke hanteras direkt i Journey Optimizer.
+>[Hantering av samtycke](../../help/using/consent.md) hanteras direkt i Journey Optimizer.
 
 ## Integritet i Adobe Experience Cloud {#experience-cloud-privacy}
 
@@ -73,6 +73,6 @@ Adobe ber att du erbjuder dina kunder en integritetspolicy som beskriver:
 
 >[!NOTE]
 >
->Precis som för alla Adobe-produkter kan [!DNL Adobe Journey Optimizer]-användare avanmäla delning av information som samlats in om dem via appar och webbplatser. Läs mer i [Vanliga frågor om användningsinformation för Adobe Experience Cloud](https://www.adobe.com/se/privacy/experience-cloud-usage-info-faq.html).
+>Alla Adobe-produkter [!DNL Adobe Journey Optimizer] användare kan avanmäla delning av information som samlats in om dem via appar och webbplatser. Läs mer i [Vanliga frågor om användningsinformation för Adobe Experience Cloud](https://www.adobe.com/se/privacy/experience-cloud-usage-info-faq.html).
 
 <!--Because Journey Optimizer integrates with Adobe Experience Platform, where audiences are transferred from one system to another, you need to pay extra care to personal data protection.-->

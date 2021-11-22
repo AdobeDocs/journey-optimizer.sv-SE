@@ -1,14 +1,15 @@
 ---
 title: Sammanställningsfunktionens bibliotek
 description: Sammanställningsfunktionens bibliotek
-feature: Personalisering
-topic: Personalisering
+feature: Personalization
+topic: Personalization
 role: Data Engineer
 level: Experienced
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+exl-id: a029f716-ea1e-4d79-82b7-59770f05161b
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 5%
+source-wordcount: '157'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +19,7 @@ Sammanställningsfunktioner används för att gruppera flera värden för att sk
 
 ## Antal{#count}
 
-Funktionen `count` returnerar antalet element i den angivna arrayen.
+The `count` returnerar antalet element i den angivna arrayen.
 
 **Format**
 
@@ -36,7 +37,7 @@ Följande åtgärd returnerar antalet order i arrayen.
 
 ## Summa{#sum}
 
-Funktionen `sum` returnerar summan av alla markerade värden i arrayen.
+The `sum` returnerar summan av alla markerade värden i arrayen.
 
 **Format**
 
@@ -54,7 +55,7 @@ Följande operation returnerar summan av alla orderpriser.
 
 ## Genomsnittlig{#average}
 
-Funktionen `average` returnerar det aritmetiska medelvärdet för alla markerade värden i arrayen.
+The `average` returnerar det aritmetiska medelvärdet för alla markerade värden i arrayen.
 
 **Format**
 
@@ -72,7 +73,7 @@ Följande åtgärd returnerar genomsnittspriset för alla order.
 
 ## Minimum{#min}
 
-Funktionen `min` returnerar det minsta av alla markerade värden i arrayen.
+The `min` returnerar det minsta av alla markerade värden i arrayen.
 
 **Format**
 
@@ -90,7 +91,7 @@ Följande åtgärd returnerar det lägsta priset för alla order.
 
 ## Maximal{#max}
 
-Funktionen `max` returnerar det största av alla markerade värden i arrayen.
+The `max` returnerar den största av alla markerade värden i arrayen.
 
 **Format**
 

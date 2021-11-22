@@ -1,14 +1,15 @@
 ---
 title: Skapa taggar
 description: Lär dig hur du skapar erbjudanden i Adobe Experience Platform.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: User
 level: Intermediate
-source-git-commit: 0e5cc9101ff382ce9fde442da38eb46aa28e9c77
+exl-id: fe2b7ce4-dc63-477a-a64f-f3828c6a232e
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 6%
+source-wordcount: '162'
+ht-degree: 5%
 
 ---
 
@@ -20,13 +21,13 @@ Taggar kan också användas för att gruppera erbjudanden i mängder. Se [Skapa 
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
-Listan med skapade taggar finns på **[!UICONTROL Components]**-menyn.
+Listan med skapade taggar finns i **[!UICONTROL Components]** -menyn.
 
 ![](../../assets/tags_list.png)
 
 Så här skapar du en tagg:
 
-1. Gå till fliken **[!UICONTROL Tags]** och klicka sedan på **[!UICONTROL Create tag]**.
+1. Gå till **[!UICONTROL Tags]** tabbtangenten och sedan klicka **[!UICONTROL Create tag]**.
 
 1. Ange taggens namn och klicka sedan på **[!UICONTROL Save]**.
 

@@ -5,10 +5,11 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 59ee283f50850e160e7a6506c1f0deab1976f20c
+exl-id: 2540938f-8ac7-43fa-83ff-fed59f6bc417
+source-git-commit: 662158884291d90b6092c0aa70f41f27535f3637
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 2%
+source-wordcount: '277'
+ht-degree: 3%
 
 ---
 
@@ -32,7 +33,7 @@ Så här konfigurerar du den här resan:
 
       Om du vill kunna ändra e-postadressen måste du ha publicerat meddelandet tidigare.
 
-   1. I uttrycksredigeraren anger du uttrycket för att hämta prenumeranternas e-postadresser. [Läs mer](https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/expressionadvanced.html){target=&quot;_blank&quot;}.
+   1. I uttrycksredigeraren anger du uttrycket för att hämta prenumeranternas e-postadresser. [Läs mer](expression/expressionadvanced.md).
 
       I det här exemplet visas ett uttryck som innehåller referenser till mappningsfält:
 
@@ -49,7 +50,7 @@ Så här konfigurerar du den här resan:
 
       I det här exemplet heter prenumerationslistan `daily-email`. E-postadresser definieras som nycklar i `subscribers` karta, som är länkad till prenumerationslistan.
 
-      Läs mer om [referenser till fält](https://experienceleague.adobe.com/docs/journeys/using/building-advanced-conditions-journeys/syntax/field-references.html) i uttryck.
+      Läs mer om [referenser till fält](expression/field-references.md) i uttryck.
 
       ![](../assets/message-to-subscribers-uc-2.png)
 
@@ -58,7 +59,3 @@ Så här konfigurerar du den här resan:
    ![](../assets/message-to-subscribers-uc-3.png)
 
 1. Avsluta resan med en **[!UICONTROL End]** aktivitet.
-
-
-
-

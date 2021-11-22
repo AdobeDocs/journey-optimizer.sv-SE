@@ -1,28 +1,29 @@
 ---
 title: Kom igång med beslutsledningshändelser
 description: Lär dig hur du skapar beslutsrapporter i Adobe Experience Platform.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: User
 level: Beginner
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+exl-id: 51830c63-fa88-47e7-8605-192297fcf6b8
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '172'
 ht-degree: 47%
 
 ---
 
-# Kom igång med beslutshanteringshändelser {#monitor-offer-events}
+# Kom igång med beslutsledningshändelser {#monitor-offer-events}
 
 Varje gång beslutshanteringen fattar ett beslut om en viss profil skickas information om dessa händelser automatiskt till Adobe Experience Platform.
 
 På så sätt kan du exportera dessa data för att analysera dem i ditt eget rapporteringssystem. Du kan också använda [frågetjänsten](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv) i Adobe Experience Platform i kombination med andra verktyg för förbättrade analys- och rapporteringsändamål.
 
-Datamängderna som innehåller beslutshanteringshändelser är tillgängliga från Adobe Experience Platform **[!UICONTROL Datasets]**-menyn. En datauppsättning skapas automatiskt vid etablering för var och en av dina instanser.
+Datauppsättningar som innehåller beslutshanteringshändelser är tillgängliga från Adobe Experience Platform **[!UICONTROL Datasets]** -menyn. En datauppsättning skapas automatiskt vid etablering för var och en av dina instanser.
 
 ![](../../assets/events-datasets-list.png)
 
-Dessa datauppsättningar är baserade på schemat **[!UICONTROL ODE DecisionEvents]**, som innehåller alla XDM-fält som krävs för att skicka information från Beslutshantering till Adobe Experience Platform.
+Dessa datauppsättningar är baserade på **[!UICONTROL ODE DecisionEvents]** schema, som innehåller alla XDM-fält som krävs för att skicka information från Beslutshantering till Adobe Experience Platform.
 
 >[!NOTE]
 >

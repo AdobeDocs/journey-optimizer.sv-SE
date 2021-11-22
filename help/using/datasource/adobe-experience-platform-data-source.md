@@ -1,13 +1,14 @@
 ---
-title: 'Datakällan i Adobe Experience Platform '
+title: Datakällan i Adobe Experience Platform
 description: Lär dig konfigurera Adobe Experience Platform datakälla
-feature: Datakällor
-topic: Administrering
+feature: Data Sources
+topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: ed710e805a33616b20ce99bc5ac5e8ac26cbbb88
+exl-id: 9083e355-15e3-4d1f-91ae-03095e08ad16
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '350'
 ht-degree: 11%
 
 ---
@@ -32,12 +33,12 @@ Här är de viktigaste stegen för att lägga till fältgrupper i den inbyggda d
 
    ![](../assets/journey23.png)
 
-1. Klicka på **[!UICONTROL Add a New Field Group]** för att definiera en ny serie med fält som ska hämtas. Läs [den här sidan](../datasource/configure-data-sources.md#define-field-groups).
+1. Klicka **[!UICONTROL Add a New Field Group]** för att definiera en ny serie fält som ska hämtas. Läs [den här sidan](../datasource/configure-data-sources.md#define-field-groups).
 
    ![](../assets/journey24.png)
 
-1. Välj ett schema i listrutan **[!UICONTROL Schema]**. I det här fältet visas profilscheman och Experience Events-scheman som är tillgängliga i Adobe Experience Platform. Schemat skapas inte i [!DNL Journey Optimizer]. Det genomförs i Adobe Experience Platform.
+1. Välj ett schema från **[!UICONTROL Schema]** nedrullningsbar meny. I det här fältet visas profilscheman och Experience Events-scheman som är tillgängliga i Adobe Experience Platform. Schemat skapas inte i [!DNL Journey Optimizer]. Det genomförs i Adobe Experience Platform.
 1. Markera de fält som du vill använda.
 1. Klicka på **[!UICONTROL Save]**.
 
-När du placerar markören på namnet på en fältgrupp visas två ikoner till höger. De gör att du kan ta bort och duplicera fältgruppen. Observera att ikonen **[!UICONTROL Delete]** bara är tillgänglig om fältgruppen inte används i någon direktresa eller utkastresa (information visas i fältet **[!UICONTROL Used in]**).
+När du placerar markören på namnet på en fältgrupp visas två ikoner till höger. De gör att du kan ta bort och duplicera fältgruppen. Observera att **[!UICONTROL Delete]** ikonen är bara tillgänglig om fältgruppen inte används i någon live- eller utkastresa (information visas i **[!UICONTROL Used in]** fält).

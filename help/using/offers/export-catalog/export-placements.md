@@ -1,13 +1,14 @@
 ---
 title: Datauppsättning med placeringar
 description: I det här avsnittet visas alla fält som används i den exporterade datauppsättningen för placeringar.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: User
 level: Intermediate
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+exl-id: 3e45f3cf-e17e-43a6-8424-98afef07aaa3
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '365'
 ht-degree: 1%
 
 ---
@@ -24,74 +25,74 @@ Den senaste lyckade batchen i datauppsättningen visas till höger. Den hierarki
 >
 >Lär dig hur du får åtkomst till exporterade datauppsättningar för varje objekt i ditt Erbjudandebibliotek i [det här avsnittet](../export-catalog/access-dataset.md).
 
-Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Object Repository - Placements]**-datauppsättningen.
+Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Object Repository - Placements]** datauppsättning.
 
 <!--A placement describes a location or place in a personalized message. It is used to set technical constraints for content that the personalization decision supplies. The placement also represents a request to produce certain types of metrics when an experience event is produced where this placement is involved. For instance, the placement facilitates a personalized clickable image inside an email shown to an end-user. The placement may for instance request from the assembled experience that the click on its image gets reported in an experience event with a metric https://ns.adobe.com/xdm/data/metrics/web/linkclicks and a reference to this placement.-->
 
 ## Identifierare
 
-**Fält:** _id 
-**Title:** Identifier 
-**Description:** A unique identifier for the record.
-**Typ:** sträng
+**Fält:** _id
+**Titel:** Identifierare
+**Beskrivning:** En unik identifierare för posten.
+**Typ:** string
 
 ## upplevelse
 
-**fält:** _upplevelsetyp 
-**:** objekt
+**Fält:** upplevelse
+**Typ:** object
 
 ### _experience > decisioning
 
-**fält:** bestämma 
-**typ:** objekt
+**Fält:** beslut
+**Typ:** object
 
 #### _experience > decisioning > Placements Channel Identifier
 
-**Fält:** channelID 
-**Title:** Placement&#39;s Channel Identifier 
-**Description:** Den kanal som förslaget gjordes i. Värdet är en giltig kanal-URI. Se https://ns.adobe.com/xdm/channels/channel.
-**Typ:** sträng
+**Fält:** channelID
+**Titel:** Kanalidentifierare för placeringen
+**Beskrivning:** Kanalen som förslaget gjordes i. Värdet är en giltig kanal-URI. Se https://ns.adobe.com/xdm/channels/channel.
+**Typ:** string
 
 #### _experience > decisioning > Content Component Type
 
-**Fält:** componentType 
-**Title:** Content Component Type 
-**Description:** En uppräknad uppsättning URI:er där varje värde mappas till en typ som anges för innehållskomponenten. En del användare av innehållsrepresentationerna förväntar sig att värdet @type ska vara en referens till schema som beskriver ytterligare egenskaper för innehållskomponenten.
-**Typ:** sträng
+**Fält:** componentType
+**Titel:** Innehållskomponenttyp
+**Beskrivning:** En uppräknad uppsättning URI:er där varje värde mappas till en typ som ges till innehållskomponenten. En del användare av innehållsrepresentationerna förväntar sig att värdet @type ska vara en referens till schema som beskriver ytterligare egenskaper för innehållskomponenten.
+**Typ:** string
 
 #### _experience > decisioning > contentTypes
 
-**fält:** contentTypes 
-**Type:** array
+**Fält:** contentTypes
+**Typ:** array
 
 **_experience > decisioning > contentTypes > MIME Media Type**
 
-**Title:** MIME Media Type 
-**Description:** En begränsning för medietypen för komponenterna som förväntas i den placeringen. Det kan finnas mer än en medietyp för en komponent, t.ex. ett annat bildformat.
-**Typ:** sträng
+**Titel:** MIME-mediatyp
+**Beskrivning:** En begränsning för medietypen för komponenterna som förväntas i placeringen. Det kan finnas mer än en medietyp för en komponent, t.ex. ett annat bildformat.
+**Typ:** string
 
 #### _experience > Decision > Placement Description
 
-**Fält:** description 
-**Titel:** Placeringsbeskrivning 
-**Beskrivning:** Den används för att förmedla mänskliga läsbara avsikter om hur dynamiskt innehåll används i den övergripande meddelandeleveransen. Att ett visst utrymme är en \&quot;Banner\&quot; på en webbsida förmedlas ofta via beskrivningen och inte med en formell metod.
-**Typ:** sträng
+**Fält:** description
+**Titel:** Placeringsbeskrivning
+**Beskrivning:** Det används för att förmedla mänskliga, läsbara avsikter om hur dynamiskt innehåll används i det övergripande budskapet. Att ett visst utrymme är en \&quot;Banner\&quot; på en webbsida förmedlas ofta via beskrivningen och inte med en formell metod.
+**Typ:** string
 
 #### _experience > decisioning > Placement name
 
-**Fält:** name 
-**Title:** Placement Name 
-**Description:** An assign name for the placement to reference to it in human interactions.
-**Typ:** sträng
+**Fält:** name
+**Titel:** Placeringsnamn
+**Beskrivning:** Ett tilldelat namn för placeringen som refererar till den i mänsklig interaktion.
+**Typ:** string
 
 ## repo
 
-**fält:** _repo-
-**typ:** objekt
+**Fält:** repo
+**Typ:** object
 
 ### _repo > Placement ETag
 
-**Fält:** etag 
-**Title:** Placement ETag 
-**Description:** The revision that the Decision option object was at when the snapshot was taken.
-**Typ:** sträng
+**Fält:** etag
+**Titel:** Placement ETag
+**Beskrivning:** Revisionen som beslutsalternativsobjektet användes när ögonblicksbilden togs.
+**Typ:** string

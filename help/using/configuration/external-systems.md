@@ -43,7 +43,7 @@ En begränsningsregel är specifik för en slutpunkt men global för alla resor 
 
 Anta till exempel att du har definierat en begränsning på 100 anrop per sekund för det externa systemet. Ditt system anropas av en anpassad åtgärd på tio olika resor. Om en resa tar emot 200 samtal per sekund används de 100 tillgängliga kortplatserna och de 100 återstående kortplatserna tas bort. Eftersom den högsta nivån har överskridits kommer de övriga nio resorna inte att ha några platser kvar. Denna granularitet hjälper till att skydda det externa systemet från överbelastning och krascher.
 
-Mer information om API:t för capping och hur du konfigurerar regler för capping finns i [Journey Orchestration-dokumentationen](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html){target=&quot;_blank&quot;}.
+Mer information om API:t för appning och hur du konfigurerar regler för appning finns i [Journey Orchestration dokumentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html){target=&quot;_blank&quot;}.
 
 ## Timeout och försök igen{#timeout}
 
@@ -71,7 +71,7 @@ Låt oss ta ett exempel i 5 sekunder.
 
 **Hur konfigurerar jag en capping-regel? Finns det en standardregel för capping?**
 
-Som standard finns det ingen begränsning. Takregler definieras på sandlådenivå för en specifik slutpunkt (den URL som anropas) med API:t för begränsning. Mer information finns i [det här avsnittet](../configuration/external-systems.md#capping) och [Journey Orchestration-dokumentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html){target=&quot;_blank&quot;}.
+Som standard finns det ingen begränsning. Takregler definieras på sandlådenivå för en specifik slutpunkt (den URL som anropas) med API:t för begränsning. Se [det här avsnittet](../configuration/external-systems.md#capping) och [Journey Orchestration dokumentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html){target=&quot;_blank&quot;}.
 
 **Hur många försök utförs? Kan jag ändra antalet återförsök eller definiera en minsta vänteperiod mellan återförsök?**
 

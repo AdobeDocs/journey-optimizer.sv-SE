@@ -1,20 +1,21 @@
 ---
 title: Slå upp en placering
 description: Placeringar är behållare som används för att visa upp dina erbjudanden.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+exl-id: db337b5c-426a-4695-81e8-3a1b041791f2
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 2%
+source-wordcount: '147'
+ht-degree: 1%
 
 ---
 
 # Slå upp en placering
 
-Du kan söka efter specifika placeringar genom att göra en GET-förfrågan till [!DNL Offer Library]-API:t som innehåller antingen placeringen `@id` eller namnet på placeringen i sökvägen för begäran.
+Du kan söka efter specifika placeringar genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller antingen placeringen `@id` eller namnet på placeringen i begärandesökvägen.
 
 **API-format**
 
@@ -27,7 +28,7 @@ GET /{ENDPOINT_PATH}/{CONTAINER_ID}/queries/core/search?schema={SCHEMA_PLACEMENT
 | `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
 | `{CONTAINER_ID}` | Behållaren där placeringarna finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
 | `SCHEMA_PLACEMENT}` | Definierar schemat som är associerat med placeringar. | `https://ns.adobe.com/experience/offer-management/offer-placement;version=0.4` |
-| `id` | En sträng som används för att matcha egenskapen `@id` för entiteterna. Strängen matchas exakt. Parametrarna `id` och `name` kan inte användas tillsammans. | `xcore:offer-placement:124541309805b7e8` |
+| `id` | En sträng som används för att matcha `@id` enheternas egenskap. Strängen matchas exakt. Parametrarna `id` och `name` kan inte användas tillsammans. | `xcore:offer-placement:124541309805b7e8` |
 | `name` | En sträng som används för att matcha egenskapen xdm:name för entiteterna. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametrarna `id` och `name` kan inte användas tillsammans | `Sales and Promotions Placement` |
 
 ```shell
@@ -42,7 +43,7 @@ curl -X GET \
 
 **Svar**
 
-Ett godkänt svar returnerar information om placeringen inklusive information om ditt behållar-ID, instans-ID och, unik placering `@id`.
+Ett godkänt svar returnerar information om placeringen inklusive information om ditt behållar-ID, instans-ID och unik placering `@id`.
 
 ```json
 {

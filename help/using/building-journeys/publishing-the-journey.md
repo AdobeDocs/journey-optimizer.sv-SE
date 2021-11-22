@@ -1,14 +1,15 @@
 ---
 title: Publicera resan
 description: Lär dig hur du publicerar en resa
-feature: Resor
-topic: Innehållshantering
+feature: Journeys
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 4be1d6f4034a0bb0a24fe5e4f634253dc1ca798e
+exl-id: e0ca8aef-4f1d-4631-8c34-1692d96e8b51
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 8%
+source-wordcount: '176'
+ht-degree: 6%
 
 ---
 
@@ -21,7 +22,7 @@ Om du behöver göra ändringar i en publicerad resa måste du skapa en ny versi
 Om du avbryter en resa stoppas den permanent. Alla personer som flyter på resan kommer att stoppas permanent och resan kommer att upphöra så att nya deltagare tillåts. Om du behöver använda resan igen måste du duplicera den och publicera den.
 
 1. Innan du publicerar din resa kontrollerar du att den är giltig och att det inte finns något fel. Du kan inte publicera en resa med fel. Se [det här avsnittet](../building-journeys/troubleshooting.md#section_h3q_kqk_fhb). Vi rekommenderar även att du testar din resa innan du publicerar den. Läs [den här sidan](../building-journeys/testing-the-journey.md).
-1. Om du vill publicera resan klickar du på alternativet **[!UICONTROL Publish]**, som finns i den övre högra listrutan.
+1. Klicka på **[!UICONTROL Publish]** i den övre högra menyn.
 
    ![](../assets/journeyuc1_18.png)
 

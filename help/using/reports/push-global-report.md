@@ -1,30 +1,31 @@
 ---
 title: Global rapport för push-meddelanden
 description: Lär dig hur du använder data från den globala rapporten för push-meddelanden
-feature: Rapportering
-topic: Innehållshantering
+feature: Reporting
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 42e5cdec54339f65cddd79df4deabbf28292d16b
+exl-id: c50d73c8-d2ca-40a4-bec6-2ce8be814028
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 1%
+source-wordcount: '276'
+ht-degree: 0%
 
 ---
 
-# Push Global rapport {#push-global-report}
+# Push Global-rapport {#push-global-report}
 
-Push-åtgärden **[!UICONTROL Global report]** avser endast en specifik push-leverans.
+The push **[!UICONTROL Global report]** endast för en viss push-leverans.
 
-Välj **[!UICONTROL Global view]** på fliken **[!UICONTROL Executions]** på menyn **[!UICONTROL Messages]** och välj sedan **[!UICONTROL Global report]** på den avancerade menyn för den valda leveransen.
+Från **[!UICONTROL Executions]** -fliken i **[!UICONTROL Messages]** meny, välja **[!UICONTROL Global view]** väljer du på den avancerade menyn för den valda leveransen **[!UICONTROL Global report]**.
 
 ![](../assets/global_report_11.png)
 
-Push-åtgärden **[!UICONTROL Global report]** är uppdelad i olika widgetar som anger leveransens framgång och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [avsnittet](global-report.md#modify-dashboard).
+The push **[!UICONTROL Global report]** är uppdelat i olika widgetar som detaljerat beskriver leveransens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](global-report.md#modify-dashboard).
 
 ![](../assets/push_global_report.png)
 
-Widgeten **[!UICONTROL Push notification performance]** visar huvudinformationen i förhållande till dina push-meddelanden med KPI:er:
+The **[!UICONTROL Push notification performance]** widgeten innehåller information om huvudinformationen i förhållande till dina push-meddelanden med KPI:er:
 
 * **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
 
@@ -36,7 +37,7 @@ Widgeten **[!UICONTROL Push notification performance]** visar huvudinformationen
 
 * **[!UICONTROL Engagement Rate]**: Procentandel öppningar och åtgärder för det här push-meddelandet, dvs. om profilen öppnade push-meddelandet eller om någon klickade på en knapp.
 
-Diagrammet **[!UICONTROL Push notification summary]** innehåller data som är tillgängliga för skickade push-meddelanden, som:
+The **[!UICONTROL Push notification summary]** diagrammet innehåller data som är tillgängliga för skickade push-meddelanden, som:
 
 * **[!UICONTROL Opens]**: Antal gånger ett meddelande öppnades i en leverans.
 
@@ -48,8 +49,8 @@ Diagrammet **[!UICONTROL Push notification summary]** innehåller data som är t
 
 * **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
 
-Med diagrammet och tabellen **[!UICONTROL Error Reasons]** kan du se vilket fel som uppstod under leveransen.
+The **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilket fel som inträffade under leveransen.
 
 ![](../assets/push_global_report_2.png)
 
-Diagram och tabeller för **[!UICONTROL Tracking by platform]**, **[!UICONTROL Sending by platform]** och **[!UICONTROL Breakdown by platform]** visar om push-meddelandet lyckades beroende på mottagarens operativsystem.
+The **[!UICONTROL Tracking by platform]**, **[!UICONTROL Sending by platform]** och **[!UICONTROL Breakdown by platform]** diagram och tabeller visar hur bra push-meddelandena är beroende på mottagarens operativsystem.

@@ -1,14 +1,15 @@
 ---
 title: Adobe Campaign v7/v8-åtgärder
 description: Läs om åtgärder i Adobe Campaign v7/v8
-feature: Instruktioner
-topic: Administrering
+feature: Actions
+topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: 63de381ea3a87b9a77bc6f1643272597b50ed575
+exl-id: 3da712e7-0e08-4585-8ca4-b6ff79df0b68
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 1%
+source-wordcount: '163'
+ht-degree: 0%
 
 ---
 
@@ -18,12 +19,12 @@ Det finns en integrering om du har Adobe Campaign v7 eller v8. Det gör att du k
 
 Anslutningen mellan Journey Optimizer- och Campaign-instanserna konfigureras av Adobe vid etableringstidpunkten. Kontakta Adobe.
 
-För att detta ska fungera måste du konfigurera en dedikerad åtgärd. Se det här [avsnittet](../action/acc-action.md).
+För att detta ska fungera måste du konfigurera en dedikerad åtgärd. Se detta [section](../action/acc-action.md).
 
-Det finns ett användningsexempel från början till slut i det här [avsnittet](../building-journeys/campaign-classic-use-case.md).
+Ett heltäckande exempel på användning presenteras i detta [section](../building-journeys/campaign-classic-use-case.md).
 
-1. Designa din resa och börja med ett evenemang. Se det här [avsnittet](../building-journeys/journey.md).
-1. Välj en Campaign-åtgärd i **Åtgärd**-delen av paletten och lägg till den på din resa.
-1. I **åtgärdsparametrarna** visas alla fält som förväntas i meddelandets nyttolast. Du måste mappa vart och ett av dessa fält till det fält som du vill använda, antingen från händelsen eller från datakällan. Detta liknar anpassade åtgärder. Se det här [avsnittet](../building-journeys/using-custom-actions.md).
+1. Designa din resa och börja med ett evenemang. Se det här [section](../building-journeys/journey.md).
+1. I **Åtgärd** väljer du en Campaign-åtgärd och lägger till den på din resa.
+1. I **Åtgärdsparametrar** visas alla fält som förväntas i meddelandets nyttolast. Du måste mappa vart och ett av dessa fält till det fält som du vill använda, antingen från händelsen eller från datakällan. Detta liknar anpassade åtgärder. Se detta [section](../building-journeys/using-custom-actions.md).
 
 ![](../assets/accintegration2.png)

@@ -1,20 +1,21 @@
 ---
 title: erbjudanden för sökning efter reserverbjudanden
 description: Ett reserverbjudande skickas till kunderna om de inte är berättigade till andra erbjudanden
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+exl-id: 8f1fa116-30d2-4732-8973-bbce0dc66dec
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '158'
 ht-degree: 1%
 
 ---
 
 # Slå upp reserverbjudanden
 
-Du kan söka efter specifika reserverbjudanden genom att göra en GET-förfrågan till [!DNL Offer Library]-API:t som innehåller antingen reserverbjudandet `@id` eller namnet på reserverbjudandet i sökvägen för begäran.
+Du kan slå upp specifika reserverbjudanden genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller antingen reserverbjudandet `@id` eller namnet på reserverbjudandet i sökvägen för begäran.
 
 **API-format**
 
@@ -27,7 +28,7 @@ GET /{ENDPOINT_PATH}/{CONTAINER_ID}/queries/core/search?schema={SCHEMA_FALLBACK_
 | `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
 | `{CONTAINER_ID}` | Behållaren där reserverbjudandena finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
 | `{SCHEMA_FALLBACK_OFFER}` | Definierar det schema som är associerat med reserverbjudanden. | `https://ns.adobe.com/experience/offer-management/fallback-offer;version=0.1` |
-| `id` | En sträng som används för att matcha egenskapen `@id` för entiteterna. Strängen matchas exakt. Parametrarna `id` och `name` kan inte användas tillsammans. | `xcore:fallback-offer:122206064e0d98df` |
+| `id` | En sträng som används för att matcha `@id` enheternas egenskap. Strängen matchas exakt. Parametrarna `id` och `name` kan inte användas tillsammans. | `xcore:fallback-offer:122206064e0d98df` |
 | `name` | En sträng som används för att matcha egenskapen xdm:name för entiteterna. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametrarna `id` och `name` kan inte användas tillsammans | `F1: Web fallback` |
 
 **Begäran**
@@ -44,7 +45,7 @@ curl -X GET \
 
 **Svar**
 
-Ett lyckat svar returnerar information om placeringen inklusive information om ditt behållar-ID, instans-ID och unikt reserverbjudande `@id`.
+Ett godkänt svar returnerar information om placeringen inklusive information om ditt behållar-ID, instans-ID och unikt reserverbjudande `@id`.
 
 ```json
 {

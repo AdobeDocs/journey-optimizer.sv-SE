@@ -1,14 +1,15 @@
 ---
 title: Skapa en samling
 description: Samlingar är delmängder av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare, t.ex. erbjudandets kategori.
-feature: Erbjudanden
-topic: Integreringar
+feature: Offers
+topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: b58c5b527e594c03f3b415549e6b7cd15b050139
+exl-id: 683f8b86-8545-46d0-a4a8-25c5b3c7b9c3
+source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 6%
+source-wordcount: '155'
+ht-degree: 5%
 
 ---
 
@@ -16,11 +17,11 @@ ht-degree: 6%
 
 Samlingar är delmängder av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare, t.ex. erbjudandets kategori.
 
-Du kan skapa en samling genom att göra en POST-förfrågan till API:t [!DNL Offer Library] och samtidigt ange ditt behållar-ID.
+Du kan skapa en samling genom att göra en POST-förfrågan till [!DNL Offer Library] API, samtidigt som du anger ditt behållar-ID.
 
 ## Sidhuvuden för acceptera och innehållstyp
 
-I följande tabell visas giltiga värden som består av fälten *Content-Type* och *Accept* i begärandehuvudet:
+I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
@@ -60,7 +61,7 @@ curl -X POST \
 
 **Svar**
 
-Ett lyckat svar returnerar information om den nyligen skapade samlingen, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort din samling. Du kan använda din unika samling `@id` i en senare självstudiekurs för att skapa ett beslut.
+Ett godkänt svar returnerar information om den nyligen skapade samlingen, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort din samling. Du kan använda din unika samling `@id` i en senare självstudiekurs för att skapa ett beslut.
 
 ```json
 {
