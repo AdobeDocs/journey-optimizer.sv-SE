@@ -5,8 +5,7 @@ description: Läs mer om hur du skapar avancerade uttryck
 feature: Journeys
 role: Data Engineer
 level: Experienced
-exl-id: 9ea6cc3a-6a1b-4e8f-82ff-f8b1812617d7
-source-git-commit: 2022b2c81738ae6d3e66280265948c5b88a117c8
+source-git-commit: 4695c88b4372a0f2a804bef268ae6f2d39eb2f0b
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 85%
