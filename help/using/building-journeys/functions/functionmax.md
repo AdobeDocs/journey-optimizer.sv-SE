@@ -5,8 +5,7 @@ description: Läs mer om funktionen max
 feature: Journeys
 role: Data Engineer
 level: Experienced
-exl-id: 5c792d33-32b9-4b1b-ab99-3ebfac391678
-source-git-commit: 2022b2c81738ae6d3e66280265948c5b88a117c8
+source-git-commit: d786f3d42515d65a6574f51b6cff4b85063a0126
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 6%
