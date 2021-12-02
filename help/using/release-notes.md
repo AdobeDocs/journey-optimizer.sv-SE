@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 01313f84dc9d5260388574b3e1eb7e4a7df14d0e
+source-git-commit: 52d187f349cba45b43c38c20e45c1dff746d38bf
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '2074'
 ht-degree: 10%
 
 ---
@@ -12,6 +12,26 @@ ht-degree: 10%
 # Versionsinformation {#release-notes}
 
 På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journey Optimizer]. Du kan även läsa [senaste dokumentationsuppdateringar](documentation-updates.md).
+
+## November 2021-utgåvan
+
+<table>
+<thead>
+<tr>
+<th><strong>CNAME-delegering av underdomän</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Adobe Journey Optimizer har nu stöd för CNAME. En CNAME-post, eller kanoniskt namnpost, är en post som pekar på en annan domänadress i stället för en IP-adress. Med CNAME-delegering av underdomäner kan du skapa en underdomän och använda CNAME för att peka mot Adobe-specifika poster. Med den här konfigurationen delar både du och Adobe ansvaret för att underhålla DNS för att konfigurera miljön för att skicka, återge och spåra e-postmeddelanden.</p>
+<p>Den här metoden rekommenderas om din organisations principer begränsar den fullständiga delegeringsmetoden för underdomäner.</p>
+<p>Läs mer om delegering av CNAME-underdomäner i <a href="configuration/delegate-subdomain.md#cname-subdomain-delegation">detaljerad dokumentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 
 ## Oktober 2021-versionen {#oct-2021-release}
 
@@ -81,7 +101,7 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 </table>
 
 
-Se även [Versionsinformation om Adobe Experience Platform oktober](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target=&quot;_blank&quot;} om du vill ha fler ändringar.
+Se även [Versionsinformation om Adobe Experience Platform oktober](https://experienceleague.adobe.com/docs/experience-platform/release-notes/2021/october-2021.html){target=&quot;_blank&quot;} om du vill ha fler ändringar.
 
 ### Förbättringar
 

@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 18383a5a27aaf54cc859bdb66386648fe5fe2c41
+source-git-commit: 203f8545200d4a6c20a748807e20ba7aba1ab5f3
 workflow-type: tm+mt
-source-wordcount: '1682'
+source-wordcount: '1684'
 ht-degree: 1%
 
 ---
@@ -114,7 +114,7 @@ Så här skapar du en meddelandeförinställning:
 
    Under det här steget kommer flera kontroller att utföras för att verifiera att den har konfigurerats korrekt. Bearbetningstiden är ungefär **48h-72h** och kan ta upp till **7-10 arbetsdagar**.
 
-   Dessa kontroller omfattar leveranstester som utförs av Adobe-avdelningen:
+   Dessa kontroller omfattar konfigurations- och tekniska tester som utförs av Adobe-teamet:
 
    * SPF-validering
    * DKIM-validering

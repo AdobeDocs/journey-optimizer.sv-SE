@@ -5,7 +5,7 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att leverera sammankopplade, kontextuella och personaliserade upplevelser till kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 4695c88b4372a0f2a804bef268ae6f2d39eb2f0b
+source-git-commit: 43e4e089025721180a6b8ce9ea9104a2f73d3e47
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 47%
@@ -189,6 +189,10 @@ ht-degree: 47%
       + [Skicka ett meddelande med Campaign v7/v8](using/building-journeys/campaign-classic-use-case.md)
       + [Skicka samlingar dynamiskt med anpassade åtgärder](using/building-journeys/collections.md)
       + [Skicka ett meddelande till prenumeranter](using/building-journeys/message-to-subscribers-uc.md)
+
+      <!--
+    + [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
+    -->
 + Spåra och övervaka {#reporting}
    + [Meddelandeövervakning](using/message-monitoring.md)
    + Live-rapport {#live-report}

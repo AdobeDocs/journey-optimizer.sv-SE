@@ -7,7 +7,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: 2c27942ece935c715ed2dea4d998705224a75089
+source-git-commit: 9e6e4f30e2f0301157901ea211f984ebcfb99bc4
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 6%
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 # Konfigurera en åtgärd {#configure-an-action}
 
-Om du använder ett tredjepartssystem för att skicka meddelanden eller om du vill att resor ska skicka API-anrop till ett tredjepartssystem, är det här du konfigurerar anslutningen till resor. Den anpassade åtgärden som definieras av tekniska användare är sedan tillgänglig på den vänstra paletten av din resa, i **[!UICONTROL Action]** kategori (se [den här sidan](../building-journeys/about-journey-activities.md#action-activities). Här är några exempel på system som du kan ansluta till med anpassade åtgärder: Epsilon, Facebook, Adobe.io, Firebase osv.
+Om du använder ett tredjepartssystem för att skicka meddelanden eller om du vill att resor ska skicka API-anrop till ett tredjepartssystem, är det här du konfigurerar anslutningen till resor. Den anpassade åtgärden som definieras av tekniska användare är sedan tillgänglig på den vänstra paletten av din resa, i **[!UICONTROL Action]** kategori (se [den här sidan](../building-journeys/about-journey-activities.md#action-activities). Här är några exempel på system som du kan ansluta till med anpassade åtgärder: Epsilon, Slack, Adobe.io, Firebase osv.
 
 Begränsningar visas i [den här sidan](../limitations.md).
 

@@ -2,9 +2,9 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 01313f84dc9d5260388574b3e1eb7e4a7df14d0e
+source-git-commit: 4fc7271c96ffe87fe9b22a9d8bf93843468b2e79
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '794'
 ht-degree: 25%
 
 ---
@@ -13,6 +13,11 @@ ht-degree: 25%
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
 
+
+## November 2021
+
+* Nu finns en fullständig beskrivning av den avancerade uttrycksredigeraren som används i resor. [Läs mer](building-journeys/expression/expressionadvanced.md)
+* Ny delegeringsmetod för CNAME-underdomän. [Läs mer](configuration/delegate-subdomain.md#cname-subdomain-delegation)
 
 ## Oktober 2021
 

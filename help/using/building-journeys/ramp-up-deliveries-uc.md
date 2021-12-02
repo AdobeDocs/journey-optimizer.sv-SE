@@ -5,48 +5,46 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 0184614fb3203a1b5fee7603acd173042f223578
+source-git-commit: 980aedcd0fb4dba161dc0041a77e0f8d06d6fe68
 workflow-type: tm+mt
-source-wordcount: '11'
-ht-degree: 0%
+source-wordcount: '257'
+ht-degree: 3%
 
 ---
 
 
-<!--
-# Use case: ramp up your deliveries
+# Användningsfall: förbättra leveransen
 
-If you recently moved to another email service provider, IP address, or email domain or subdomain, you need to establish your reputation as a sender. Otherwise, your deliveries might be blocked or moved to the spam folder of the recipients' mailbox. Learn how to increase your email reputation with IP warming in the [Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html){target="_blank"}.
+Om du nyligen har flyttat till en annan e-postleverantör, IP-adress, e-postdomän eller underdomän måste du ange ditt rykte som avsändare. Annars kan leveranserna blockeras eller flyttas till skräppostmappen i mottagarens postlåda. Lär dig hur du kan förbättra ditt e-postanseende med IP-uppvärmning i [Handbok om bästa praxis för leverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html){target=&quot;_blank&quot;}.
 
-To warm up your IP, you can gradually ramp up the number of your deliveries. Read more about [optimizing deliverability in Journey Optimizer](../deliverability.md).
+För att värma upp era immateriella tillgångar kan ni gradvis öka antalet leveranser. Läs mer om [optimera leveransen i Journey Optimizer](../deliverability.md).
 
-The purpose of this use case is to create a journey to ramp up your email deliveries. To configure this journey, follow these steps:
+Syftet med det här användningsexemplet är att skapa en resa för att förbättra e-postleveranserna. Så här konfigurerar du den här resan:
 
-1. Create a journey. [Read more](journey-gs.md).
+1. Skapa en resa. [Läs mer](journey-gs.md).
 
-1. Add a **[!UICONTROL Condition]** activity to the journey. [Read more](condition-activity.md).
+1. Lägg till en **[!UICONTROL Condition]** till resan. [Läs mer](condition-activity.md).
 
-1. In the **[!UICONTROL Condition]** activity settings, set the maximum number of recipients for your delivery:
+1. I **[!UICONTROL Condition]** aktivitetsinställningar, ange maximalt antal mottagare för leveransen:
 
-   1. In the **[!UICONTROL Condition]** activity settings, set the **[!UICONTROL Type]** field to **[!UICONTROL Profile cap]**. [Read more](condition-activity.md#profile_cap).
+   1. I **[!UICONTROL Condition]** aktivitetsinställningar, ange **[!UICONTROL Type]** fält till **[!UICONTROL Profile cap]**. [Läs mer](condition-activity.md#profile_cap).
 
-   1. Set the **[!UICONTROL Limit]** field to the maximum number of recipients for this delivery.
+   1. Ange **[!UICONTROL Limit]** till maximalt antal mottagare för den här leveransen.
 
-    ![](../assets/profile-cap-condition.png)
+   ![](../assets/profile-cap-condition.png)
 
-      You can gradually increase this limit up to the total number of your subscribers.
+   Du kan gradvis öka gränsen upp till det totala antalet prenumeranter.
 
-1. Add a **[!UICONTROL Message]** activity to the first path after the **[!UICONTROL Condition]** activity.
+1. Lägg till en **[!UICONTROL Message]** aktivitet till den nominella banan efter **[!UICONTROL Condition]** aktivitet.
 
-    ![](../assets/ramp-up-deliveries-message.png)
+   ![](../assets/ramp-up-deliveries-message.png)
 
-    When the journey runs, the message is sent the selected recipients, up to the maximum number of recipients that you have specified. When this limit is reached, the selected recipients take the second path.
+   När resan körs skickas meddelandet till de profiler som anges, upp till det maximala antal profiler som du har angett. När den här gränsen nås får de inmatade profilerna den alternativa sökvägen.
 
-1. Complete the journey with the activities of your choice.
+1. Slutför resan med de aktiviteter du själv väljer.
 
-After your IP has warmed up, you can remove this condition.
+Du kan ta bort det här villkoret när IP-adressen har värmt upp.
 
--->
 
 
 

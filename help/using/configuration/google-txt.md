@@ -16,10 +16,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 311eb2d1-e445-43e6-bc2c-c6288b637f47
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 1d7f661dc0a89e4754a76ecf2cdce1e43a5275ec
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 24%
+source-wordcount: '162'
+ht-degree: 27%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 24%
 
 TXT-poster är en typ av DNS-poster som används för att tillhandahålla textinformation om en domän som kan läsas av externa källor.
 
-För att säkerställa att e-post kan levereras och levereras till Gmail-adresser kan du med Customer Journeys Management lägga till särskilda TXT-poster för Google platsverifiering i dina underdomäner för att säkerställa att den verifieras.
+För att säkerställa god levererbarhet och framgångsrik leverans av e-post till Gmail-adresser, [!DNL Journey Optimizer] I kan du lägga till särskilda TXT-poster för verifiering av Google-webbplatser i dina underdomäner för att säkerställa att de verifieras.
 
->[!NOTE]
+>[!CAUTION]
 >
 > Den här åtgärden kan bara utföras när en underdomän har **[!UICONTROL Success]** status. Mer information om underdomänernas status finns i [det här avsnittet](access-subdomains.md).
 
@@ -37,8 +37,8 @@ Så här lägger du till en Google TXT-post i din underdomän:
 
 1. Öppna underdomänen från **[!UICONTROL Channels]** / **[!UICONTROL Subdomains]** -menyn.
 
-1. Ange verifieringskoden som genererats i avsnittet Txt-post i Google [Administrationsverktyg för G Suite](https://support.google.com/a/answer/183895)och sedan klicka **[!UICONTROL Save]**.
+1. I **[!UICONTROL Google txt record]** anger du verifieringskoden som genereras från [Google Workspace](https://support.google.com/a/answer/183895){target=&quot;_blank&quot;}<!--G Suite Admin tools-->och sedan klicka **[!UICONTROL Save]**.
 
    ![](../assets/subdomain-google-txt.png)
 
-1. När TXT-posten har lagts till måste den verifieras av Google. Navigera till administrationsverktygen för G Suite och starta sedan verifieringssteget.
+1. När TXT-posten har lagts till måste den verifieras av Google. Navigera till [Google Workspace](https://support.google.com/a/answer/183895){target=&quot;_blank&quot;}<!--G Suite Admin tools-->startar du sedan verifieringssteget.

@@ -1,18 +1,19 @@
 ---
-product: adobe campaign
-title: Allmänt
-description: Lär dig mer om avancerad uttrycksgeneralitet
+product: Journey Optimizer
+title: Syntax
+description: Läs mer om den avancerade uttrycksredigeraren
 feature: Journeys
 role: Data Engineer
 level: Experienced
-source-git-commit: 23f4e8224ea5b00e8132b6a3f3e32f73b0cc993f
+exl-id: c9434b28-2750-4a53-985e-c4a3f940472c
+source-git-commit: eecf878334b22f82d75fdf7b7240475d695414d7
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '218'
 ht-degree: 2%
 
 ---
 
-# Allmänt {#concept_rcy_qj5_dgb}
+# Avancerad syntax för uttrycksredigeraren {#syntax}
 
 ## Parenteser och uttrycksprioritet{#section_edf_fks_bgb}
 

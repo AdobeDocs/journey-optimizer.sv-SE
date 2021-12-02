@@ -7,9 +7,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
-source-git-commit: 3f83ef8074fd52ab611117282015f60e2e57b61d
+source-git-commit: 6c200f4a162ea1a3763b353b01ce5fef74ed8462
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Med PTR-poster kan e-postservrar som tar emot e-post kontrollera e-postservrarna
 
 ## Få åtkomst till dina underdomäners PTR-poster
 
-När en underdomän har delegerats i Adobe Journey Optimizer skapas en PTR-post automatiskt och kopplas till den här underdomänen. Du kommer åt den via **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL PTR records]** -menyn.
+En gång [en underdomän har delegerats](delegate-subdomain.md) i Adobe Journey Optimizer skapas en PTR-post automatiskt och kopplas till den här underdomänen. Du kommer åt den via **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL PTR records]** -menyn.
 
 ![](../assets/ptr-records.png)
 
@@ -39,6 +39,10 @@ Du kan öppna en PTR-post från listan för att visa det associerade underdomän
 ## Redigera en PTR-post {#edit-ptr-record}
 
 Du kan ändra en PTR-post om du vill redigera den underdomän som är associerad med en IP-adress.
+
+>[!CAUTION]
+>
+>Du kan inte ändra en PTR-post som är kopplad till en underdomän som har delegerats till Adobe med [CNAME-metod](delegate-subdomain.md#cname-subdomain-delegation).
 
 1. Öppna en PTR-post genom att klicka på dess namn i listan.
 
