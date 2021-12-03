@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 186a43cd-c5eb-4de1-8713-95399d802d36
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: d8c95350ac17658ce477d6aec50a9f418f4af0f2
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '482'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ Meddelanden är tillgängliga från **[!UICONTROL Messages]** genväg till väns
 
 >[!NOTE]
 >
->Användarna kan komma åt, skapa, redigera och/eller publicera meddelanden beroende på deras produktprofil. Läs mer om användarbehörigheter [i det här avsnittet](../using/administration/permissions.md).
+>Användarna kan komma åt, skapa, redigera och/eller publicera meddelanden beroende på deras produktprofil. Läs mer om användarbehörigheter [i det här avsnittet](administration/permissions.md).
 
 ![](assets/messages-list.png)
 
@@ -43,15 +43,14 @@ Följ stegen nedan för att skapa ett nytt meddelande:
 
    * Ange **[!UICONTROL Title]** (obligatoriskt) och **[!UICONTROL Description]**.
 
+   * Välj **[!UICONTROL Message category]**: Marknadsföring eller Transactional.
+
    * Välj **[!UICONTROL Preset]** som ska användas för meddelandet.
 
-      Förinställningarna innehåller alla parametrar som krävs för att ett e-postmeddelande och/eller ett push-meddelande ska skickas enligt ert varumärke. [Läs mer om förinställningar](../using/configuration/message-presets.md).
+      Förinställningarna innehåller alla parametrar som krävs för att ett e-postmeddelande och/eller ett push-meddelande ska skickas enligt ert varumärke. [Läs mer om förinställningar](configuration/message-presets.md).
 
    * Markera de kanaler som du vill använda för det meddelandet: E-post och/eller push-meddelanden. Du måste välja minst en kanal för att kunna skapa meddelandet.
    Observera att du när som helst kan komma åt och ändra meddelandets titel, beskrivning och förinställning med **[!UICONTROL Properties]** i meddelandegränssnittet.
-
-   ![](assets/message-properties.png)
-
 
 1. Klicka **[!UICONTROL Create]** för att bekräfta att meddelandet har skapats. Meddelandet läggs till i meddelandelistan i **[!UICONTROL Draft]** status.
 

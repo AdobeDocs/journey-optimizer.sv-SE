@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att leverera sammankopplade, kontextuella och personaliserade upplevelser till kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 43e4e089025721180a6b8ce9ea9104a2f73d3e47
+source-git-commit: 049dbf7f4939bfc6db677000fee1cfb6dbdceb39
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '883'
 ht-degree: 47%
 
 ---
@@ -34,6 +34,7 @@ ht-degree: 47%
       + [Skapa ett meddelande](using/create-message.md)
       + [Skapa ett e-postmeddelande](using/create-email.md)
       + [Skapa ett push-meddelande](using/create-push.md)
+      + [Skapa ett SMS-meddelande](using/create-sms.md)
    + [Lägga till och hantera resurser](using/assets-essentials.md)
    + Designa e-postmeddelanden {#email-designer}
       + [Kom igång med e-postdesign](using/design-emails.md)
@@ -220,6 +221,12 @@ ht-degree: 47%
       + [Kom igång med leverans](using/deliverability.md)
       + [Undertryckningslista](using/suppression-list.md)
       + [Tillåtelselista](using/allow-list.md)
++ Landningssidor {#landing-pages}
+   + [Kom igång med landningssidor](using/landing-pages/get-started-lp.md)
+   + [Skapa en landningssida](using/landing-pages/create-lp.md)
+   + [Utforma en landningssida](using/landing-pages/design-lp.md)
+   + [Skapa en prenumerationslista](using/landing-pages/subscription-list.md)
+   + [Användningsfall](using/landing-pages/lp-use-cases.md)
 + Beslutsledning {#offer-decisioniong}
    + Kom igång med beslutshantering {#get-started}
       + [Om beslutshantering](using/offers/get-started/starting-offer-decisioning.md)
@@ -321,6 +328,7 @@ ht-degree: 47%
             + [Hantera undertryckningslista](using/configuration/manage-suppression-list.md)
             + [Återförsök](using/configuration/retries.md)
          + [Ändra primär e-postadress](using/configuration/primary-email-addresses.md)
+      + [Konfigurera SMS-kanal](using/configuration/sms-configuration.md)
       + [Skapa meddelandeförinställningar](using/configuration/message-presets.md)
    + Konfigurera resor {#configure-journeys}
       + [Om datakällor, händelser och åtgärder](using/configuration/about-data-sources-events-actions.md)

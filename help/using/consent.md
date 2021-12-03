@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c5bae757-a109-45f8-bf8d-182044a73cca
-source-git-commit: 9facba9d5dd804e51aad969ef83a964f64e63033
+source-git-commit: 049dbf7f4939bfc6db677000fee1cfb6dbdceb39
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,9 @@ Därför måste du alltid inkludera en **avbeställ länk** i varje e-postmeddel
 Följ stegen nedan om du vill lägga till en länk för att avbryta prenumerationen:
 
 1. Bygg en startsida för din prenumeration.
-1. Lägg landningssidan på valfritt tredjepartssystem.
+
+1. Lägg det på valfritt tredjepartssystem.
+
 1. [Skapa ett meddelande](../../help/using/create-message.md) in [!DNL Journey Optimizer].
 
    <!--The link to your landing page should contain a static URL and the profile ID.-->

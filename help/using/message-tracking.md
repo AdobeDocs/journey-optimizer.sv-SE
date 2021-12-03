@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: c6db89093e1ec5b7d9fe084cec58b8b7664c6ab2
+source-git-commit: 2879f460d4be4b570e47227b32fa3f979984cbbf
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '803'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,8 @@ Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
 1. Välj den typ av länk som du vill skapa:
 
    * **[!UICONTROL External link]**: Infoga en länk till en extern URL.
+
+   * **[!UICONTROL Landing page]**: Infoga en länk till en landningssida. Läs mer i [det här avsnittet](landing-pages/get-started-lp.md)
 
    * **[!UICONTROL Unsubscription link]**: Infoga en länk för att avbeställa beställning av meddelanden från ert varumärke. Läs mer om avanmälningshantering i [det här avsnittet](consent.md#opt-out-management).
 
