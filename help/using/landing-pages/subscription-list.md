@@ -7,14 +7,15 @@ role: User
 level: Beginner
 hidefromtoc: true
 hide: true
-source-git-commit: 4d564ff89a8cb6c6d76161f2e6cedf39d33e70a0
+exl-id: 5e5419a0-5121-4aa7-a975-b1f08e2918c9
+source-git-commit: 88b037e079a46e10f7ee4715e78e5edc5a34a6ce
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 0%
+source-wordcount: '352'
+ht-degree: 2%
 
 ---
 
-# Skapa en prenumerationslista {#create-subscription-list}
+# Prenumerationslistor {#create-subscription-list}
 
 ## Vad är en prenumerationslista?
 
@@ -22,13 +23,13 @@ En prenumerationstjänst avser marknadsföringsvaror och marknadsföringstjänst
 
 En prenumerationstjänst kan vara:
 
-* ett nyhetsbrev, t.ex.&quot;Körningsserie&quot;
-* en händelse, till exempel&quot;Summit 2021&quot;
-* ett webbinarium, till exempel&quot;Läs mer om krypto&quot;
-* en ränta på en viss produkt/sport/tjänst/osv., t.ex.&quot;Intresserad att köpa ett hus under de kommande 12 månaderna&quot;
-* en inställning för hur du ska meddelas, till exempel&quot;Ta emot nya låtmeddelanden via e-post&quot;
+* ett nyhetsbrev, till exempel: &quot;Löpande serier&quot;
+* en händelse, till exempel: &quot;Summit 2021&quot;
+* ett webbinarium, till exempel: &quot;Läs mer om kryptering&quot;
+* intresse för en viss produkt/sport/tjänst/etc., t.ex. &quot;Intresserad av att köpa ett hus de kommande 12 månaderna&quot;
+* en inställning för hur meddelanden ska meddelas, till exempel: &quot;Få nya låtmeddelanden via e-post&quot;
 
-Profilerna kan läggas till i en prenumerationslista via en [landningssida](create-lp.md). Ett exempel presenteras i [det här avsnittet](get-started-lp.md#subscription-to-a-service).
+Profilerna kan läggas till i en prenumerationslista via en [landningssida](create-lp.md). Ett exempel presenteras i [det här avsnittet](lp-use-cases.md#subscription-to-a-service).
 
 ## Definiera en prenumerationslista {#define-subscription-list}
 
@@ -38,7 +39,7 @@ Följ stegen nedan för att skapa en prenumerationslista.
 
    ![](../assets/lp_subscription-lists.png)
 
-1. Klicka på i prenumerationslistan **[!UICONTROL Create subscription]** lista.
+1. Markera knappen **[!UICONTROL Create subscription list]**.
 
    ![](../assets/lp_create-subscription-list.png)
 
@@ -50,31 +51,29 @@ Följ stegen nedan för att skapa en prenumerationslista.
 
 1. Klicka på **[!UICONTROL Save]**.
 
-I listan visas alla prenumerationslistor som skapats. Du kan filtrera dem baserat på skapandedatumet eller ändringsdatumet.
+I listan visas alla prenumerationslistor som skapats. Du kan filtrera dem baserat på skapandedatum eller ändringsdatum och deras status.
 
 ![](../assets/lp_subscription-filters.png)
 
 Möjliga statusvärden är följande:
 
-* **[!UICONTROL Not started]**: Du definierade ett startdatum som är senare än den aktuella dagen. Profilerna som prenumererar på den här listan får ännu inte meddelanden om den här prenumerationslistan.
+* **[!UICONTROL Not started]**: Du definierade ett startdatum som är senare än den aktuella dagen. De prenumererade profilerna kommer ännu inte att få några meddelanden om den här prenumerationslistan.
 * **[!UICONTROL Live]**: Den aktuella dagen ligger mellan prenumerationslistans startdatum och slutdatum, eller så har du inte definierat slut-/startdatum, vilket innebär att prenumerationslistan alltid är aktiv.
-* **[!UICONTROL Expired]**: Slutdatumet har passerats, prenumerationslistan är inte längre giltig. Alla profiler som prenumererar på den här listan kommer inte att få mer information om den här prenumerationslistan.
+* **[!UICONTROL Expired]**: Slutdatumet har passerats och prenumerationslistan är därför inte längre giltig. Prenumerationsprofiler får inte mer information om prenumerationslistan.
 
-När prenumerationslistan har skapats kan du använda den på en landningssida, så att profilerna kan anmäla sig via ett formulär och läggas till i listan. [Läs mer](design-lp.md)
+När prenumerationslistan har skapats kan du använda den på en landningssida. De profiler som anmäler sig via landningssidans formulär läggs till i listan. [Läs mer](design-lp.md)
 
-Du kan också använda prenumerationslistor som segment när du skapar resor och personalisering.
+Du kan också använda prenumerationslistor som segment när [byggnadsresor](../building-journeys/journey-gs.md#jo-build) och lägga till personalisering.
+
+>[!NOTE]
+>
+>Du kan övervaka hur din prenumerationslista påverkas genom specifika rapporter. [Läs mer](subscription-report.md)
 
 <!--
 
 **Questions**
 
 * Can't see the newly created subscription list in UI because their name included spacing > bug - to follow up (should be fixed for Dec. release)
-
-* How do you handle the different statuses? Live, Not started, Expired? Is it only through start/end dates?
-
-* What does it mean when a subscription list is expired or not started? You can't use it in a LP? And if a user is subscribed to this service, then he won't receive communications any more?
-
-* What else can you currently do with subscription lists apart from attach them to a landing page?
 
 * Can you update the subscription list in a way other than through a LP? Not in UI but with APIs > to follow up with Fred
 

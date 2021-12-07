@@ -7,10 +7,11 @@ role: User
 level: Beginner
 hidefromtoc: true
 hide: true
-source-git-commit: 4d564ff89a8cb6c6d76161f2e6cedf39d33e70a0
+exl-id: 0da96e32-52ad-4cc3-bac4-844b1f39ed16
+source-git-commit: 88b037e079a46e10f7ee4715e78e5edc5a34a6ce
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 1%
+source-wordcount: '176'
+ht-degree: 3%
 
 ---
 
@@ -30,29 +31,26 @@ En landningssida är en fristående webbsida som en användare dirigeras till ef
 
 <!--[!DNL Journey Optimizer] now allows you to:
 * Easily build landing pages to make users subscribe to your communications.
-* Set up opt-in and opt-out flows quickly and seamlessly.
+* Enable your customers to opt-in or opt-out from your communications.
 To move to RN-->
 
-[!DNL Journey Optimizer] gör att du kan:
-
-* Utnyttja [!DNL Journey Optimizer] funktioner för att enkelt bygga responsiva landningssidor.
-* Skapa prenumerationslistor så att användarna kan prenumerera på en tjänst.
-* Gör det möjligt för kunderna att välja bort eller avanmäla sig från kommunikationen.
-* Förse mottagarna med möjligheten att avbryta prenumerationen på era meddelanden.
+* Utnyttja [!DNL Journey Optimizer] funktioner för att enkelt bygga **responsiva landningssidor**.
+* Konfigurera **avanmälnings- och avanmälningsflöden** snabbt och smidigt.
+* Skapa prenumerationslistor så att användarna kan **prenumerera på en tjänst**. [Läs mer](lp-use-cases.md#subscription-to-a-service)
+* Ge mottagarna **möjlighet att avbryta prenumerationen** från att ta emot meddelanden. [Läs mer](lp-use-cases.md#opt-out)
+* Skicka en **bekräftelsemeddelande** vid anmälan eller avanmälan. [Läs mer](lp-use-cases.md#send-confirmation-email)
 
 <table>
 <tr>
 <td><img src="../assets/do-not-localize/icon_assets.svg" width="60px"><p><a href="create-lp.md">Skapa landningssidor</a></p></td>
 <td><img src="../assets/do-not-localize/icon_personalization.svg" width="60px"><p><a href="subscription-list.md">Skapa prenumerationslistor</a></p></td>
 <td><img src="../assets/do-not-localize/icon_design.svg" width="60px"><p><a href="design-lp.md">Utforma landningssidor</a></p></td>
-<td><img src="../assets/do-not-localize/icon_messages.svg" width="60px"><p><a href="lp-use-cases.md">Användningsfall</a></p></td>
+<td><img src="../assets/do-not-localize/monitor.svg" width="60px"><p><a href="lp-report.md">Rapportering</a></p></td>
 </tr>
 </table>
 
-<!--Easily build attractive/efficient landing pages to drive the best conversion.-->
+<!--
 
-<!--**Questions**
+<td><img src="../assets/do-not-localize/icon_messages.svg" width="60px"><p><a href="lp-use-cases.md">Use cases</a></p></td>
 
-* Can you leverage **Adobe Experience Manager Assets Essentials** to enrich your landing pages' content?
-
-* Can you personalize LP ? > Enhance customers' experience by creating **personalized landing pages** based on their profile attributes.-->
+-->

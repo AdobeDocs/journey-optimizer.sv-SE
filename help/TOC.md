@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att leverera sammankopplade, kontextuella och personaliserade upplevelser till kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 049dbf7f4939bfc6db677000fee1cfb6dbdceb39
+source-git-commit: 0c0110b24ccc9a5311d35d786f526319056c1c1a
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '890'
 ht-degree: 47%
 
 ---
@@ -227,6 +227,9 @@ ht-degree: 47%
    + [Utforma en landningssida](using/landing-pages/design-lp.md)
    + [Skapa en prenumerationslista](using/landing-pages/subscription-list.md)
    + [Användningsfall](using/landing-pages/lp-use-cases.md)
+   + Rapportering {#lp-reporting}
+      + [Rapportering av landningssida](using/landing-pages/lp-report.md)
+      + [Rapportering av prenumerationslista](using/landing-pages/subscription-report.md)
 + Beslutsledning {#offer-decisioniong}
    + Kom igång med beslutshantering {#get-started}
       + [Om beslutshantering](using/offers/get-started/starting-offer-decisioning.md)

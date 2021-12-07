@@ -7,16 +7,17 @@ role: User
 level: Intermediate
 hidefromtoc: true
 hide: true
-source-git-commit: 4d564ff89a8cb6c6d76161f2e6cedf39d33e70a0
+exl-id: 8c00d783-54a3-45d9-bd8f-4dc58804d922
+source-git-commit: 88b037e079a46e10f7ee4715e78e5edc5a34a6ce
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 0%
+source-wordcount: '772'
+ht-degree: 1%
 
 ---
 
 # Användningsexempel för landningssida
 
-Nedan finns exempel på hur du kan använda [!DNL Journey Optimizer] landningssidor så att dina kunder kan välja att inte ta emot vissa eller alla meddelanden.
+Nedan finns några exempel på hur du kan använda [!DNL Journey Optimizer] landningssidor så att dina kunder kan välja att inte ta emot vissa eller alla meddelanden.
 
 <!--The main use cases are:
 * Subscription to a service
@@ -25,33 +26,65 @@ Nedan finns exempel på hur du kan använda [!DNL Journey Optimizer] landningssi
 
 ## Prenumeration på en tjänst {#subscription-to-a-service}
 
-De viktigaste stegen för att få mottagarna att prenumerera på en tjänst beskrivs nedan.
+Ett av de vanligaste användningsområdena är att bjuda in kunderna till [prenumerera på en tjänst](subscription-list.md) (till exempel ett nyhetsbrev eller ett evenemang) via en landningssida. De viktigaste stegen visas i diagrammet nedan:
 
 ![](../assets/lp_subscription-uc.png)
 
-Anta till exempel att du ordnar ett event nästa månad och vill starta en kampanj för att registrera event så att dina kunder som är intresserade av det evenemanget hålls uppdaterade.
+Anta till exempel att du ordnar ett event nästa månad och vill starta en kampanj för att registrera event<!--to keep your customers that are interested updated on that event-->. För att göra detta ska du skicka ett e-postmeddelande med en länk till en landningssida där mottagarna kan registrera sig för evenemanget. De användare som registrerar sig läggs till i prenumerationslistan som du har skapat för detta ändamål.
 
-1. Skapa händelseregistreringens prenumerationslista. Läs mer på [prenumerationslistor](subscription-list.md)
+### Ställ in landningssida
 
-1. [Skapa en landningssida](create-lp.md), som gör det möjligt för mottagarna att registrera sig för evenemanget.
+1. Skapa händelseregistreringens prenumerationslista, som lagrar registrerade användare. Lär dig hur du skapar en prenumerationslista [här](subscription-list.md#define-subscription-list).
 
-1. Konfigurera och utforma landningssidan för registrering, inklusive länken till prenumerationslistan. Läs mer om hur du bygger [primär landningssida](create-lp.md#configure-primary-page)
+   ![](../assets/lp_subscription-uc-list.png)
 
-1. Skapa en tacksida som visas för mottagarna när de har skickat in registreringsformuläret. Läs mer på [landningsundersidor](create-lp.md#configure-subpages)
+1. [Skapa en landningssida](create-lp.md) för att göra det möjligt för mottagarna att registrera sig för evenemanget.
 
-1. Skapa ett e-postmeddelande. Läs mer på [skapa meddelanden](../create-message.md)
+1. Konfigurera registreringen [primär landningssida](create-lp.md#configure-primary-page).
 
-1. [Infoga en länk](../message-tracking.md#insert-links) i meddelandet. Välj **[!UICONTROL Landing page]** som **[!UICONTROL Link type]** och väljer [landningssida](create-lp.md#configure-primary-page) som du har skapat för registrering.
+1. När du utformar [innehåll på landningssidan](design-lp.md)markerar du den prenumerationslista som du skapade för att uppdatera den med de profiler som markerar kryssrutan för registrering.
+
+   ![](../assets/lp_subscription-uc-lp-list.png)
+
+1. Skapa en&quot;tack&quot;-sida som visas för mottagarna när de har skickat in registreringsformuläret. Lär dig konfigurera delsidor för landning [här](create-lp.md#configure-subpages).
+
+   ![](../assets/lp_subscription-uc-thanks.png)
+
+1. [Publicera](create-lp.md#publish) landningssidan.
+
+1. [Skapa ett e-postmeddelande](../create-message.md) för att meddela att registreringen nu är öppen för ditt event.
+
+1. [Infoga en länk](../message-tracking.md#insert-links) i ert meddelandeinnehåll. Välj **[!UICONTROL Landing page]** som **[!UICONTROL Link type]** och väljer [landningssida](create-lp.md#configure-primary-page) som du har skapat för registrering.
 
    ![](../assets/lp_subscription-uc-link.png)
 
 1. Spara innehåll och [publicera meddelandet](../publish-manage-message.md).
 
-1. Skicka ditt meddelande via en [resa](../building-journeys/journey.md) Nu kan du meddela att du har registrerat dig och skicka trafik till landningssidan för registrering.
+1. Skicka ditt meddelande via en [resa](../building-journeys/journey.md) att köra trafik till landningssidan för registrering.
 
-   När mottagarna har fått e-postmeddelandet och klickar på länken till landningssidan dirigeras de till din tacksida och läggs till i prenumerationslistan.
+   ![](../assets/lp_subscription-uc-journey.png)
 
-1. Du kan skicka ett bekräftelsemeddelande via e-post till de mottagare som har registrerat dig för din aktivitet. Om du vill göra det skickar du den genom en annan resa med **[!UICONTROL Segment qualification]** och välj den prenumerationslista som du skapade som segment.
+   När mottagarna har fått e-postmeddelandet och klickar på länken till landningssidan dirigeras de till&quot;tack&quot;-sidan och läggs till i prenumerationslistan.
+
+### Skicka ett bekräftelsemeddelande via e-post {#send-confirmation-email}
+
+Dessutom kan du skicka ett bekräftelsemeddelande via e-post till de mottagare som har registrerat sig för din aktivitet. För att göra detta, följ nedanstående steg.
+
+1. Skapa en till [resa](../building-journeys/journey.md). Du kan göra det direkt från landningssidan genom att klicka på **[!UICONTROL Create journey]** -knappen. Läs mer [här](create-lp.md#configure-primary-page)
+
+   ![](../assets/lp_subscription-uc-create-journey.png)
+
+1. Ta fram **[!UICONTROL Events]** kategori och släpp en **[!UICONTROL Segment Qualification]** på arbetsytan. Läs mer [här](../building-journeys/segment-qualification-events.md)
+
+1. Klicka på **[!UICONTROL Segment]** och välj den prenumerationslista du har skapat.
+
+   ![](../assets/lp_subscription-uc-confirm-journey.png)
+
+1. Välj ett bekräftelsemeddelande och skicka det via resan.
+
+   ![](../assets/lp_subscription-uc-confirm-email.png)
+
+Alla användare som har registrerat sig för din aktivitet får bekräftelsemeddelandet via e-post.
 
 <!--The event registration's subscription list tracks the profiles who registered and you can send them targeted event updates.-->
 
