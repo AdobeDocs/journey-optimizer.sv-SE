@@ -190,10 +190,9 @@ ht-degree: 47%
       + [Skicka ett meddelande med Campaign v7/v8](using/building-journeys/campaign-classic-use-case.md)
       + [Skicka samlingar dynamiskt med anpassade åtgärder](using/building-journeys/collections.md)
       + [Skicka ett meddelande till prenumeranter](using/building-journeys/message-to-subscribers-uc.md)
-
       <!--
-    + [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
-    -->
+      + [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
+      -->
 + Spåra och övervaka {#reporting}
    + [Meddelandeövervakning](using/message-monitoring.md)
    + Live-rapport {#live-report}
