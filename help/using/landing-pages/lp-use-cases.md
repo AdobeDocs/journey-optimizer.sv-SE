@@ -8,9 +8,9 @@ level: Intermediate
 hidefromtoc: true
 hide: true
 exl-id: 8c00d783-54a3-45d9-bd8f-4dc58804d922
-source-git-commit: 1db755ef3037ca743d86e229ab308e051bae8994
+source-git-commit: 847873b39476e3bd932f420a70c9dcac46de84f5
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '843'
 ht-degree: 1%
 
 ---
@@ -123,7 +123,7 @@ Följ stegen nedan om du vill att mottagarna av ett e-postmeddelande ska kunna a
 
    >[!NOTE]
    >
-   >Se till att du refererar till undersidan i **[!UICONTROL Form]** -komponenten **[!UICONTROL Call to action]** på den primära sidan. [Läs mer](design-lp.md)
+   >Se till att du refererar till undersidan på den primära sidans **[!UICONTROL Call to action]** i **[!UICONTROL Form]** -komponenten. [Läs mer](design-lp.md)
 
 1. När du har konfigurerat och definierat innehållet på dina sidor [publicera](create-lp.md#publish) landningssidan.
 
@@ -147,7 +147,7 @@ Följ stegen nedan om du vill att mottagarna av ett e-postmeddelande ska kunna a
 
    ![](../assets/lp_opt-out-submit-form.png)
 
-1. Om mottagaren markerar rutan och skickar in formuläret på landningssidan:
+   Om mottagaren markerar rutan och skickar formuläret:
 
    * Mottagaren omdirigeras till bekräftelsemeddelandeskärmen.
 
