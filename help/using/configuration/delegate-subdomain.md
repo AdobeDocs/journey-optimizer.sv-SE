@@ -16,10 +16,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: 1d8eabfee83d80f74c54ec8dee5ec924bc165ee7
+source-git-commit: c548852b976100935271afafd5267fd7f32a9b50
 workflow-type: tm+mt
-source-wordcount: '1336'
-ht-degree: 6%
+source-wordcount: '1396'
+ht-degree: 5%
 
 ---
 
@@ -87,6 +87,10 @@ Följ stegen nedan om du vill delegera en ny underdomän:
 
 När en underdomän har delegerats till Adobe i [!DNL Journey Optimizer]skapas en PTR-post automatiskt och kopplas till den här underdomänen. [Läs mer](ptr-records.md)
 
+>[!CAUTION]
+>
+>Parallell körning av underdomäner stöds för närvarande inte i [!DNL Journey Optimizer]. Om du försöker skicka en underdomän för delegering när en annan har **[!UICONTROL Processing]** får du ett felmeddelande.
+
 ## CNAME-delegering av underdomän {#cname-subdomain-delegation}
 
 Om du har domänspecifika begränsningsprinciper och du vill att Adobe endast ska ha partiell kontroll över DNS, kan du välja att utföra alla DNS-relaterade aktiviteter på din sida.
@@ -151,19 +155,9 @@ Följ stegen nedan för att delegera en underdomän med CNAME:
 
 När du validerar posten och installerar certifikatet skapar Adobe automatiskt PTR-posten för CNAME-underdomänen. [Läs mer](ptr-records.md)
 
-<!--
-
-**Questions**
-
-* Upon generating DNS records (i.e. copying them into your hosting solution), Adobe verifies that these records are generated without errors on your hosting solution, but I can see in the mocks that generating the record can take up to 2 minutes only vs 3 hours to validate record when using full delegation method, such as described here https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/configuration/email-config/delegate-subdomains/delegate-subdomain.html?lang=en. Do you confirm?
-
-* One you submit the CNAME subdomain delegation, do you go through the same validation steps as for full delegation (see here https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/configuration/email-config/delegate-subdomains/delegate-subdomain.html#subdomain-validation)? In that case, can it take up to 72 hours as seen in mocks vs up to 3 hours when using full delegation method?
-
-* Is a PTR record created for each CNAME subdomain? Is it different when fully delegating subdomain?
-
-* Question on existing documentation: I can read here https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/configuration/email-config/delegate-subdomains/delegate-subdomain.html#subdomain-validation that "Adobe creates PTR records only when you delegate the first subdomain, one for each IP, all IPs pointing to the first subdomain.": Does it mean "Adobe creates PTR records only when you delegate a subdomain for the first time"? If so, I'll change this sentence as I find it a bit confusing. Otherwise please advise.
-
--->
+>[!CAUTION]
+>
+>Parallell körning av underdomäner stöds för närvarande inte i [!DNL Journey Optimizer]. Om du försöker skicka en underdomän för delegering när en annan har **[!UICONTROL Processing]** får du ett felmeddelande.
 
 ## Underdomänvalidering {#subdomain-validation}
 

@@ -8,9 +8,9 @@ level: Intermediate
 hidefromtoc: true
 hide: true
 exl-id: 8c00d783-54a3-45d9-bd8f-4dc58804d922
-source-git-commit: 88b037e079a46e10f7ee4715e78e5edc5a34a6ce
+source-git-commit: 1db755ef3037ca743d86e229ab308e051bae8994
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '847'
 ht-degree: 1%
 
 ---
@@ -105,39 +105,53 @@ Därför måste du alltid inkludera en **avbeställ länk** i varje e-postmeddel
 
 ### Konfigurera avanmälan {#configure-opt-out}
 
-Följ stegen nedan om du vill att mottagarna av ett meddelande ska kunna avbeställa från din kommunikation via en landningssida.
+Följ stegen nedan om du vill att mottagarna av ett e-postmeddelande ska kunna avbeställa från din kommunikation via en landningssida.
 
-1. Bygg [landningssida](create-lp.md). Använd landningssidans specifika **[!UICONTROL Form]** -komponent, definiera **[!UICONTROL Opt-out]** kryssruta och välj att uppdatera **[!UICONTROL Channel (email)]**: profilen som markerar avanmälningsrutan på landningssidan avvisas från all kommunikation. [Läs mer](design-lp.md)
+1. Skapa en landningssida. [Läs mer](create-lp.md)
+
+1. Definiera den primära sidan. [Läs mer](create-lp.md#configure-primary-page)
+
+1. [Design](design-lp.md) det primära sidinnehållet: använda landningssidans specifika **[!UICONTROL Form]** -komponent, definiera **[!UICONTROL Opt-out]** kryssruta och välj att uppdatera **[!UICONTROL Channel (email)]**: profilen som markerar avanmälningsrutan på landningssidan avvisas från all kommunikation.
+
+   ![](../assets/lp_opt-out-primary-lp.png)
 
    <!--You can also build your own landing page and host it on the third-party system of your choice. To keep?-->
 
-1. [Skapa ett meddelande](../create-message.md) in [!DNL Journey Optimizer].
+1. Lägg till en bekräftelse [undersida](create-lp.md#configure-subpages) som visas för de användare som skickar formuläret.
+
+   ![](../assets/lp_opt-out-subpage.png)
+
+   >[!NOTE]
+   >
+   >Se till att du refererar till undersidan i **[!UICONTROL Form]** -komponenten **[!UICONTROL Call to action]** på den primära sidan. [Läs mer](design-lp.md)
+
+1. När du har konfigurerat och definierat innehållet på dina sidor [publicera](create-lp.md#publish) landningssidan.
+
+   ![](../assets/lp_opt-out-publish.png)
+
+1. [Skapa ett e-postmeddelande](../create-message.md) in [!DNL Journey Optimizer].
 
 1. Markera text i innehållet och [infoga en länk](../message-tracking.md#insert-links) med hjälp av kontextverktygsfältet. Du kan också använda en länk på en knapp.
 
    ![](../assets/lp_opt-out-insert-link.png)
 
-1. Välj **[!UICONTROL Landing page]** från **[!UICONTROL Link type]** nedrullningsbar lista.
-
-1. Välj [landningssida](create-lp.md#configure-primary-page) som du skapade för att avanmäla dig.
+1. Välj **[!UICONTROL Landing page]** från **[!UICONTROL Link type]** och väljer [landningssida](create-lp.md#configure-primary-page) som du skapade för att avanmäla dig.
 
    ![](../assets/lp_opt-out-landing-page.png)
 
-1. Klicka på **[!UICONTROL Save]**.
-
 1. Spara innehåll och [publicera meddelandet](../publish-manage-message.md).
 
-1. Skicka ditt meddelande via en [resa](../building-journeys/journey.md).
+1. Skicka ditt budskap genom en resa. [Läs mer](../building-journeys/journey.md).
 
-1. Om mottagaren klickar på länken för att avbryta prenumerationen visas din startsida när meddelandet har tagits emot.
+1. När meddelandet har tagits emot visas din startsida om en mottagare klickar på länken för att avbryta prenumerationen i e-postmeddelandet.
 
-   <!--![](../assets/lp_opt-out-lp-example.png)-->
+   ![](../assets/lp_opt-out-submit-form.png)
 
-1. Om mottagaren klickar på länken för avanmälan på landningssidan uppdateras profildata och kommer inte att få meddelanden från varumärket om han eller hon inte prenumererar igen.
+1. Om mottagaren markerar rutan och skickar in formuläret på landningssidan:
 
-   <!--The opted-out recipient is then redirected to a confirmation message screen indicating that opting out was successful.-->
+   * Mottagaren omdirigeras till bekräftelsemeddelandeskärmen.
 
-   <!--![](../assets/lp_opt-out-confirmation-example.png)-->
+   * Profildata uppdateras och kommer inte att få information från ert varumärke om ni inte prenumererar igen.
 
 Om du vill kontrollera att den aktuella profilens val har uppdaterats går du till Experience Platform och öppnar profilen genom att markera ett identitetsnamnutrymme och ett motsvarande identitetsvärde. Läs mer i [Experience Platform dokumentation](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target=&quot;_blank&quot;}.
 
