@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: d4fde14b-e2da-40bf-a387-ee9f2f7ff204
-source-git-commit: 4b7cfedbc5f2c724e28e5e6e0ab7e0d2f40dccac
+source-git-commit: 168579f8f560756282cb8ae8cb82a10e1227af02
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '366'
 ht-degree: 1%
 
 ---
@@ -19,11 +19,10 @@ ht-degree: 1%
 
 [!DNL Adobe Experience Manager Assets Essentials] har ett enda centraliserat arkiv med resurser som du kan använda för att fylla i dina meddelanden. Den kan nås direkt från [!DNL Adobe Journey Optimizer] via **[!UICONTROL Assets]** -avsnitt. Du kan också komma åt resurser och mappar när du utformar ett e-postinnehåll. [Läs mer om e-postdesign](design-emails.md).
 
->[!NOTE]
->
-> Arbeta med [!DNL Adobe Experience Manager Assets Essentials]måste du driftsätta [!DNL Assets Essentials] för din organisation och se till att användare, som behöver åtkomst till [!DNL Assets Essentials], är en del av **Assets Essentials hemanvändare** eller/och **Assets Essentials-användare** Produktprofiler. <br> Mer information finns i [page](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}.
+Innan du använder [!DNL Adobe Experience Manager Assets Essentials]måste du lägga till användare i **Assets Essentials hemanvändare** eller/och **Assets Essentials-användare** Produktprofiler. [Läs mer i Assets Essentials-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}.
 
-För mer detaljerade procedurer om [!DNL Assets Essentials], se [Adobe Experience Manager Assets Essentials-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target=&quot;_blank&quot;}.
+>[!NOTE]
+>För Journey Optimizer-produkter som köpts före 6 januari 2022 måste du driftsätta [!DNL Adobe Experience Manager Assets Essentials] för er organisation. Läs mer i [Distribuera Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}.
 
 ## Överföra och infoga resurser{#add-asset}
 
