@@ -7,9 +7,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
-source-git-commit: 6c200f4a162ea1a3763b353b01ce5fef74ed8462
+source-git-commit: cbb9aa1df7efd60407f4538edf519d96780c4961
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
@@ -40,25 +40,52 @@ Du kan öppna en PTR-post från listan för att visa det associerade underdomän
 
 Du kan ändra en PTR-post om du vill redigera den underdomän som är associerad med en IP-adress.
 
->[!CAUTION]
+>[!NOTE]
 >
->Du kan inte ändra en PTR-post som är kopplad till en underdomän som har delegerats till Adobe med [CNAME-metod](delegate-subdomain.md#cname-subdomain-delegation).
+>Du kan inte ändra **[!UICONTROL IP]** och **[!UICONTROL PTR record]** fält.
+
+### Fullt delegerade underdomäner
+
+Redigera en PTR-post med en underdomän som är [helt delegerad](delegate-subdomain.md#full-subdomain-delegation) till Adobe följer du stegen nedan.
 
 1. Öppna en PTR-post genom att klicka på dess namn i listan.
 
    ![](../assets/ptr-record-select.png)
 
-1. Redigera underdomänen efter behov.
+1. Välj en underdomän [helt delegerad](delegate-subdomain.md#full-subdomain-delegation) till Adobe från listan.
 
    ![](../assets/ptr-record-subdomain.png)
 
+1. Klicka **[!UICONTROL Save]** för att bekräfta dina ändringar.
+
+### Delegerade underdomäner med CNAME-metoden {#edit-ptr-subdomains-cname}
+
+Så här redigerar du en PTR-post med en underdomän som har delegerats till Adobe med [CNAME-metod](delegate-subdomain.md#cname-subdomain-delegation)följer du stegen nedan.
+
+1. Öppna en PTR-post genom att klicka på dess namn i listan.
+
+   ![](../assets/ptr-record-select-cname.png)
+
+1. Markera en underdomän som delegerats till Adobe med [CNAME-metod](delegate-subdomain.md#cname-subdomain-delegation) från listan.
+
+   ![](../assets/ptr-record-subdomain-cname.png)
+
+1. Du måste skapa en ny framåtriktad DNS-post på din värdplattform. Det gör du genom att kopiera posten som genererats av Adobe. När du är klar markerar du rutan &quot;Jag bekräftar..&quot;.
+
+   ![](../assets/ptr-record-subdomain-confirm.png)
+
    >[!NOTE]
    >
-   >Du kan inte ändra **[!UICONTROL IP]** och **[!UICONTROL PTR record]** fält.
+   >Om du får det här meddelandet: &quot;Skapa en vanlig DNS först och försök sedan igen&quot;, följ stegen nedan:
+   >   * Kontrollera DNS-providern om den vidarebefordrade DNS-posten har skapats.
+   >   * Poster i hela DNS kanske inte synkroniseras omedelbart. Vänta några minuter och försök igen.
+
 
 1. Klicka **[!UICONTROL Save]** för att bekräfta dina ändringar.
 
-An **[!UICONTROL Updating]** visas bredvid namnet på PTR-posten i listan.
+## Kontrollera uppdateringsinformation för PTR-post
+
+A **[!UICONTROL Processing]** visas bredvid namnet på PTR-posten i listan.
 
 ![](../assets/ptr-record-updating.png)
 
@@ -70,13 +97,13 @@ Du kan se information som uppdateringsstatus och begärda ändringar.
 
 ![](../assets/ptr-record-updates.png)
 
-## Uppdatera status
+## Uppdateringsstatus för PTR-post
 
 En PTR-postuppdatering kan ha följande status:
 
-* **[!UICONTROL Processing]**: Uppdateringen av PTR-posten har skickats och genomgår en verifieringsprocess.
-* **[!UICONTROL Success]**: Den uppdaterade PTR-posten har verifierats och den nya underdomänen är nu associerad med IP-adressen.
-* **[!UICONTROL Failed]**: En eller flera kontroller misslyckades under PTR-postuppdateringsverifieringen.
+* ![](../assets/do-not-localize/ptr-record-processing.png) **[!UICONTROL Processing]**: Uppdateringen av PTR-posten har skickats och genomgår en verifieringsprocess.
+* ![](../assets/do-not-localize/ptr-record-success.png) **[!UICONTROL Success]**: Den uppdaterade PTR-posten har verifierats och den nya underdomänen är nu associerad med IP-adressen.
+* ![](../assets/do-not-localize/ptr-record-failed.png) **[!UICONTROL Failed]**: En eller flera kontroller misslyckades under PTR-postuppdateringsverifieringen.
 
 ### Bearbetar
 

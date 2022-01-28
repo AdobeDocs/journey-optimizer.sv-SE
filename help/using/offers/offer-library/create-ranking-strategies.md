@@ -7,10 +7,10 @@ feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: 81d07ec8-e808-4bc6-97b1-b9f7db2aec22
-source-git-commit: 43fb98a08555e6b889ad537e79dba78286dafeb9
+source-git-commit: e01aacc63f0d395aed70bf9c332db19b322380f0
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 4%
+source-wordcount: '937'
+ht-degree: 2%
 
 ---
 
@@ -31,6 +31,22 @@ Du kan till exempel välja en rangordningsstrategi för e-postkanalen och en ann
 <!--This feature is not enabled by default. To be able to use it, reach out to your Adobe contact.-->
 
 När en rankningsstrategi har skapats kan du tilldela den till en placering i ett beslut. Läs mer i [Konfigurera urval av erbjudanden i beslut](../offer-activities/configure-offer-selection.md).
+
+### Automatisk optimeringsmodell {#auto-optimization}
+
+Ingår [!DNL Journey Optimizer] den enda modelltypen som stöds för AI-rankning är **automatisk optimering**.
+
+En automatisk optimeringsmodell syftar till att leverera erbjudanden som maximerar avkastningen, baserat på de nyckeltal (KPI) som du anger. <!--These KPIs could be in the form of conversion rates, revenue, etc.-->I nuläget fokuserar automatisk optimering på att optimera antalet erbjudanden med konvertering som mål.
+
+>[!NOTE]
+>
+>Den automatiska optimeringsmodellen använder inga kontextdata eller användarprofildata. Det optimerar resultaten baserat på erbjudandenas globala prestanda.
+
+Med automatisk optimering är utmaningen att balansera experimentellt lärande och utnyttjande av det inlärningen. Denna princip kallas **&quot;multiväpnad bandit&quot;-metod**.
+
+Den automatiska optimeringsmodellen använder **Thompson Sampling** som gör det möjligt att identifiera vilket alternativ som ska användas för att maximera de förväntade belöningarna. Thompson Sampling är med andra ord en typ av förstärkningsteknik för att lösa problemet med prospektering och exploatering i en flerarmad bandit.
+
+Thompson Sampling-metoden gör det även möjligt att hantera problem som &quot;kallstart&quot;, dvs. när ett nytt erbjudande introduceras i kampanjen har den ingen historik som den kan träna från.
 
 ## Skapa en rankningsstrategi {#create-ranking-strategy}
 
@@ -139,9 +155,80 @@ Du är nu redo att skapa en datauppsättning med det här schemat. Följ stegen 
 
    ![](../../assets/ai-ranking-dataset-name.png)
 
-Datamängden är nu klar att väljas för att samla in konverteringshändelser när [skapa en rankningsstrategi](#create-ranking-strategy).
+Datamängden är nu klar att väljas för att samla in händelsedata när [skapa en rankningsstrategi](#create-ranking-strategy).
 
-<!--## Using a ranking strategy {#using-ranking}
+## Schemakrav {#schema-requirements}
+
+Nu måste du ha:
+
+* skapade rankningsstrategin,
+* definierade vilken typ av händelse du vill fånga - erbjudandet visas (intryck) och/eller erbjudandet klickas (konvertering),
+* och i vilken datauppsättning du vill samla in händelsedata.
+
+Varje gång ett erbjudande visas och/eller klickas vill du att motsvarande händelse ska spelas in automatiskt av **[!UICONTROL Experience Event - Proposition Interactions]** fältgrupp med [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/web-sdk-faq.html#what-is-adobe-experience-platform-web-sdk%3F){target=&quot;_blank&quot;} eller Mobile SDK.
+
+För att kunna skicka i händelsetyper (erbjudandet visas eller erbjudandet klickas) måste du ange rätt värde för varje händelsetyp i en upplevelsehändelse som skickas till Adobe Experience Platform. Nedan följer schemakraven som du måste implementera i din JavaScript-kod:
+
+**Scenario:** Erbjudandet visas
+**Händelsetyp:** `decisioning.propositionDisplay`
+**Källa:** Web.sdk/Alloy.js (`sendEvent command -> xdm : {eventType, interactionMixin}`) eller batchförtäring
+**Exempel på nyttolast:**
+
+```
+{
+    "@id": "a7864a96-1eac-4934-ab44-54ad037b4f2b",
+    "xdm:timestamp": "2020-09-26T15:52:25+00:00",
+    "xdm:eventType": "decisioning.propositionDisplay",
+    "https://ns.adobe.com/experience/decisioning/propositions":
+    [
+        {
+            "xdm:items":
+            [
+                {
+                    "xdm:id": "personalized-offer:f67bab756ed6ee4",
+                },
+                {
+                    "xdm:id": "personalized-offer:f67bab756ed6ee5",
+                }
+            ],
+            "xdm:id": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a", //decision event id - taken from experience event for “nextBestOffer”
+            "xdm:scope": "scope:12cfc3fa94281acb", //decision scope id - taken from experience event for “nextBestOffer”
+        }
+    ]
+}
+```
+
+**Scenario:** Erbjudande klickat
+**Händelsetyp:** `decisioning.propositionInteract`
+**Källa:** Web.sdk/Alloy.js (`sendEvent command -> xdm : {eventType, interactionMixin}`) eller batchförtäring
+**Exempel på nyttolast:**
+
+```
+{
+    "@id": "a7864a96-1eac-4934-ab44-54ad037b4f2b",
+    "xdm:timestamp": "2020-09-26T15:52:25+00:00",
+    "xdm:eventType": "decisioning.propositionInteract",
+    "https://ns.adobe.com/experience/decisioning/propositions":
+    [
+        {
+            "xdm:items":
+            [
+                {
+                    "xdm:id": "personalized-offer:f67bab756ed6ee4"
+                },
+                {
+                    "xdm:id": "personalized-offer:f67bab756ed6ee5"
+                },
+            ],
+            "xdm:id": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a", //decision event id
+            "xdm:scope": "scope:12cfc3fa94281acb", //decision scope id
+        }
+    ]
+}
+```
+
+<!--
+## Using a ranking strategy {#using-ranking}
 
 To use the ranking strategy you created above, follow the steps below:
 
@@ -156,5 +243,6 @@ Once a ranking strategy has been created, you can assign it to a placement in a 
 1. Click Next to confirm.
 1. Save your decision.
 
-It is now ready to be used in a decision to rank eligible offers for a placement (see [Configure offers selection in decisions](../offer-activities/configure-offer-selection.md)).-->
+It is now ready to be used in a decision to rank eligible offers for a placement (see [Configure offers selection in decisions](../offer-activities/configure-offer-selection.md)).
+-->
 

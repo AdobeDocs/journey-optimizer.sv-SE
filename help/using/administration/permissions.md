@@ -6,7 +6,7 @@ feature: Control Groups
 topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: 7e879a56a5ed416cc12c2acc3131e17f9dd1e757
+source-git-commit: bbeecbacb4838dfb0794d5625eb2774cf4b983ef
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 11%
@@ -103,7 +103,7 @@ Om det behövs kan du även skapa en ny produktprofil med specifika behörighete
 
 Mer information om hur du skapar och hanterar sandlådor finns i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html){target=&quot;_blank&quot;}.
 
-I det här exemplet skapar vi en produktprofil med namnet **Skrivskyddade resor** där vi ger läsbehörighet till resefunktionen. Användare kommer endast att kunna komma åt och visa resor och kommer inte att kunna komma åt andra funktioner som **[!UICONTROL Decision management]** eller **[!UICONTROL Messages]** in [!DNL Journey Optimizer].
+I det här exemplet skapar vi en produktprofil med namnet **Skrivskyddade resor** där vi ger läsbehörighet till resefunktionen. Användare kommer endast att kunna komma åt och visa resor och kommer inte att kunna komma åt andra funktioner som **[!DNL  Decision management]** eller **[!DNL Messages]** in [!DNL Journey Optimizer].
 
 För att skapa **Skrivskyddade resor** **[!UICONTROL product profiles]**:
 
@@ -125,7 +125,7 @@ För att skapa **Skrivskyddade resor** **[!UICONTROL product profiles]**:
 
 1. Om du vill lägga till behörigheter för användare så att de får åtkomst till olika funktioner väljer du **[!UICONTROL Permissions]** -fliken.
 
-1. Välj mellan olika funktioner som **[!UICONTROL Messages]**, **[!UICONTROL Segments]** eller **[!UICONTROL Decision management]** finns i [!DNL Journey Optimizer] som visas på den vänstra menyn.
+1. Välj mellan olika funktioner som **[!DNL Messages]**, **[!DNL Segments]** eller **[!DNL Decision management]** finns i [!DNL Journey Optimizer] som visas på den vänstra menyn.
 
    Här väljer vi **[!UICONTROL Journeys]** funktioner.
 
@@ -133,7 +133,7 @@ För att skapa **Skrivskyddade resor** **[!UICONTROL product profiles]**:
 
 1. Från **[!UICONTROL Available Permission Items]** väljer du de behörigheter du vill tilldela **[!UICONTROL Product profile]** genom att klicka på plusikonen (+).
 
-   Här väljer vi **[!UICONTROL View journeys]** och **[!UICONTROL View journeys event, data sources, actions]**.
+   Här väljer vi **[!DNL View journeys]** och **[!DNL View journeys event, data sources, actions]**.
 
    ![](../assets/do-not-localize/access_control_12.png)
 

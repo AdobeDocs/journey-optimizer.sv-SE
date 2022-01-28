@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 496c7666-a133-4aeb-be8e-c37b3b9bf5f9
-source-git-commit: 43e4e089025721180a6b8ce9ea9104a2f73d3e47
+source-git-commit: c3997f572092ca8de7565b397f82dfa3b084bbd7
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 8%
+source-wordcount: '1167'
+ht-degree: 6%
 
 ---
 
@@ -21,9 +21,7 @@ Följande typer av villkor är tillgängliga:
 * [Tidsvillkor](#time_condition)
 * [Procentdelning](#percentage_split)
 * [Datumvillkor](#date_condition)
-<!--
-* [Profile cap](#profile_cap)
--->
+* [Profilände](#profile_cap)
 
 ![](../assets/journey49.png)
 
@@ -99,21 +97,26 @@ På så sätt kan du definiera ett annat flöde baserat på datumet. Om personen
 
 ![](../assets/journey53.png)
 
-<!--
-## Profile cap {#profile_cap}
+## Profilände {#profile_cap}
 
-Use this condition type to set a maximum number of profiles for a journey path. When this limit is reached, the entering profiles take an alternate path.
+Använd den här villkorstypen om du vill ange ett maximalt antal profiler för en resebana. När den här gränsen nås får de inmatade profilerna en alternativ sökväg. På så sätt kan du vara säker på att dina resor aldrig överskrider den definierade gränsen.
 
-You can use this condition type to ramp up the volume of your deliveries. See this [use case](ramp-up-deliveries-uc.md).
+Du kan använda den här villkorstypen för att öka volymen på dina leveranser. Se det här [användningsfall](ramp-up-deliveries-uc.md).
 
-The default cap is 1000. You can set an integer value from 1 to 20,000.
+Standardvärdet är 1 000.
 
-The counter applies only to the selected journey version. The counter is reset to zero after 180 days. After a reset, the entering profiles take the nominal path again until the counter limit is reached.
+Räknaren gäller endast den valda reseversionen. Räknaren återställs till noll efter en månad. Efter en återställning tar de infogade profilerna den nominella sökvägen igen tills räknargränsen nås.
 
-The nominal path always has priority over the alternate path, even if you move the alternate path above the nominal path on the journey canvas.
+Den nominella banan har alltid företräde framför den alternativa banan, även om du flyttar den alternativa banan ovanför den nominella banan på arbetsytan.
+
+Här följer de tröskelvärden som ska beaktas för att se till att gränsvärdet uppnås:
+
+* För ett lock som är större än 10000 måste antalet distinkta profiler som ska injiceras vara minst 1,3 gånger så stort som locket.
+* För ett lock under 10000 måste antalet distinkta profiler som ska injiceras vara 1000 plus sockeln.
+
+Profilände beaktas inte i testläge.
 
 ![](../assets/profile-cap-condition.png)
--->
 
 ## Använda segment i villkor {#using-a-segment}
 

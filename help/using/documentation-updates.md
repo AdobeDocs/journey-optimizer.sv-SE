@@ -2,10 +2,10 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 4fc7271c96ffe87fe9b22a9d8bf93843468b2e79
+source-git-commit: 74d6235042c7a94462cb4838186ca5d785d0764e
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 25%
+source-wordcount: '864'
+ht-degree: 23%
 
 ---
 
@@ -13,11 +13,18 @@ ht-degree: 25%
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
 
+## Januari 2022
+
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version 22 av jan finns utförlig i dokumentationen. [Läs mer](release-notes.md)
+
+* Avsnittet med Offera decisioningens AI-rankningar har uppdaterats med en mer detaljerad beskrivning av den automatiska optimeringsmodellen. [Läs mer](offers/offer-library/create-ranking-strategies.md#auto-optimization)
+
+* Ett nytt avsnitt om schemakraven som behövs för att kunna skicka in händelsetyper när en rankningsstrategi används har lagts till. [Läs mer](offers/offer-library/create-ranking-strategies.md#schema-requirements)
 
 ## November 2021
 
 * Nu finns en fullständig beskrivning av den avancerade uttrycksredigeraren som används i resor. [Läs mer](building-journeys/expression/expressionadvanced.md)
-* Ny delegeringsmetod för CNAME-underdomän. [Läs mer](configuration/delegate-subdomain.md#cname-subdomain-delegation)
+* Ett nytt avsnitt om delegeringsmetoden för CNAME-underdomäner har lagts till. [Läs mer](configuration/delegate-subdomain.md#cname-subdomain-delegation)
 
 ## Oktober 2021
 

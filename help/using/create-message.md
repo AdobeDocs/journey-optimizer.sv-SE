@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 186a43cd-c5eb-4de1-8713-95399d802d36
-source-git-commit: d8c95350ac17658ce477d6aec50a9f418f4af0f2
+source-git-commit: 3f545c68264164aeb40eec55631d50fa5c0bec4f
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 2%
@@ -66,7 +66,6 @@ Följ stegen nedan för att skapa ett nytt meddelande:
    >[!NOTE]
    >   
    >Du kan anpassa meddelanden med hjälp av profildata med uttrycksredigeraren. Mer information om personalisering finns i [det här avsnittet](personalization/personalize.md).
-
 
 1. Styr återgivningen av meddelanden och kontrollera personaliseringsinställningarna med testprofiler med förhandsgranskningsavsnittet till vänster. Mer information om detta finns i [det här avsnittet](preview.md).
 

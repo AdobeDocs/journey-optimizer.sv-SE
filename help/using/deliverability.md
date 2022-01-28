@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 8f33dda7-9bd5-4293-8d0d-222205cbc7d5
-source-git-commit: 4d5e4f4295997083eb257290043b014acdcd971a
+source-git-commit: 99bbe96fb4e6e001c4eaba38ff445afb847670eb
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 1%
+source-wordcount: '654'
+ht-degree: 0%
 
 ---
 
@@ -78,10 +78,8 @@ Om du vill förbättra leveransgraden och se till att dina e-postmeddelanden nå
 
 [Läs mer om hur du utformar e-postinnehåll](design-emails.md).
 
-<!--
-## Establish your reputation as a sender
+## Ange ditt rykte som avsändare
 
-If you recently moved to another email service provider, IP address, or email domain or subdomain, you need to establish your reputation as a sender. Otherwise, your deliveries might be blocked or moved to the spam folder of the recipients' mailbox.
+Om du nyligen har flyttat till en annan e-postleverantör, IP-adress, e-postdomän eller underdomän måste du ange ditt rykte som avsändare. Annars kan leveranserna blockeras eller flyttas till skräppostmappen i mottagarens postlåda.
 
-To warm up your IP, you can gradually ramp up the number of your deliveries. See this [use case](building-journeys/ramp-up-deliveries-uc.md).
--->
+För att värma upp era immateriella tillgångar kan ni gradvis öka antalet leveranser. Se det här [användningsfall](building-journeys/ramp-up-deliveries-uc.md).

@@ -7,10 +7,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 116e2223-a806-4f68-9a8c-c0bde6008010
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: ca4c2d916a2ebde643656b4573e34d6bb64053fa
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 3%
+source-wordcount: '258'
+ht-degree: 2%
 
 ---
 
@@ -29,6 +29,10 @@ När meddelandet har skapats kan du publicera det så att det blir tillgängligt
 När meddelandet har publicerats läggs det till i meddelandelistan med **[!UICONTROL Published]** status.
 
 Den är nu klar att aktiveras av en eller flera [resor](building-journeys/journey.md).
+
+>[!NOTE]
+>
+>När du uppdaterar ett erbjudande, ett reserverbjudande, en erbjudandesamling eller ett erbjudandebeslut som direkt eller indirekt hänvisas till i ett publicerat meddelande, återspeglas uppdateringarna nu automatiskt i motsvarande meddelande, utan att det behöver publiceras på nytt. [Läs mer om erbjudanden](offers/get-started/starting-offer-decisioning.md)
 
 ## Uppdatera ett skrivskyddat meddelande {#modify-message}
 

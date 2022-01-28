@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 07d25f8e-0065-4410-9895-ffa15d6447bb
-source-git-commit: 2731f3fef651f4d75e2d1e19199a6cd8050b3475
+source-git-commit: 4e3239a073f23505c79e98943d1f8bf6b7a8d363
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 2%
+source-wordcount: '558'
+ht-degree: 3%
 
 ---
 
@@ -53,7 +53,16 @@ Följande datauppsättningar har skickats:
 
 Listorna med XDM-fält som skickas till Adobe Experience Platform finns här:
 
-* [Stega händelsefältslista](../reports/sharing-field-list.md)
-* [Händelsefält för äldre steg](../reports/sharing-legacy-fields.md)
+* [Lista över steghändelsefält](../reports/sharing-field-list.md)
+* [Äldre steghändelsefält](../reports/sharing-legacy-fields.md)
 
 Om du vill ha mer information om steghändelser som rapporterar till Adobe Experience Platform kan du titta på den här [video med självstudiekurser](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/reporting-step-events-to-adobe-experience-platform.html){target=&quot;_blank&quot;}.
+
+## Integrering med kundreseanalys{#integration-cja}
+
+Journey Optimizer steg-händelser kan länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html). Här är det allmänna arbetsflödet:
+
+* Customer Journey Analytics inmatar datauppsättningen&quot;Journey Step Event&quot;.
+* The **profileID** fältet i det associerade schemat för resesegmenthändelse för Journey Orchestration definieras som ett identitetsfält. I Customer Journey Analytics kan du sedan länka den här datauppsättningen till andra datauppsättningar som har samma värde som den personbaserade identifieraren.
+* Om du vill använda den här datauppsättningen i Customer Journey Analytics, för analys av flerkanalsresor, se den här [dokumentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html).
+

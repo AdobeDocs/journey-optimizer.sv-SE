@@ -6,10 +6,10 @@ topic: Personalization
 role: Data Engineer
 level: Beginner
 exl-id: f448780b-91bc-455e-bf10-9a9aee0a0b24
-source-git-commit: 7be83409f7a594747963c5b125f3bf96c0b4f8b6
+source-git-commit: 244f05998098bf1770d5f33c955f09688f58ffe7
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 2%
+source-wordcount: '757'
+ht-degree: 1%
 
 ---
 
@@ -114,6 +114,24 @@ Vid markering läggs referensen till i redigeraren.
 I följande exempel kan du välja de profiler som har sin födelsedag i dag och sedan slutföra anpassningen genom att infoga ett specifikt erbjudande som motsvarar den här dagen.
 
 ![](assets/perso_ee2.png)
+
+### Lägg till i favoriter{#fav}
+
+Genom att lägga till olika attribut på Favoriter-menyn får du snabb åtkomst till de objekt du använder mest. Om du vill lägga till ett attribut i dina favoriter klickar du på ellipsmenyn och väljer **[!UICONTROL Add to favorites]**.
+
+![](assets/favorite-option.png)
+
+Om du vill få tillgång till objekt som du är nöjd med använder du **[!UICONTROL Favorites]** menyalternativ i listrutan.
+
+![](assets/favorite-menu.png)
+
+I den här listan kan du snabbt lägga till personaliseringsobjektet i det aktuella uttrycket.
+
+![](assets/favorite-list.png)
+
+Om du inte längre vill se ett objekt i favoritlistan kan du ta bort det från Favoriter.
+
+![](assets/favorite-remove.png)
 
 ## Instruktionsvideor{#video-perso}
 

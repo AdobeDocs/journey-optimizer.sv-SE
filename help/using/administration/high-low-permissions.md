@@ -16,9 +16,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
-source-git-commit: da885bd5e29ff3454fef1c6b362f0e646fe8c39a
+source-git-commit: bbeecbacb4838dfb0794d5625eb2774cf4b983ef
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1050'
 ht-degree: 0%
 
 ---
@@ -30,17 +30,17 @@ ht-degree: 0%
 Varje produktprofil består av behörigheter som ger användarna tillgång till de olika funktionerna.
 De kan delas in i två typer:
 
-* **Hög behörighet**: representerar de olika behörigheter som kan tilldelas till **[!UICONTROL Product profile]** i [!DNL Admin console], till exempel **[!UICONTROL Publish journeys]** och **[!UICONTROL Manage subdomains delegation]**. Höga behörigheter omfattar behörigheter på låg nivå.
+* **Hög behörighet**: representerar de olika behörigheter som kan tilldelas till **[!UICONTROL Product profile]** i [!DNL Admin console], till exempel **[!DNL Publish journeys]** och **[!DNL Manage subdomains delegation]**. Höga behörigheter omfattar behörigheter på låg nivå.
 
 * **Låg behörighet**: representerar de olika behörigheter som kommer från behörigheten på hög nivå.
 
-Till exempel **[!UICONTROL Journey administrator]** produktprofilen har tilldelats **[!UICONTROL Manage journeys]** behörighet. Från det här behörigheten blir de lågnivåbehörigheter som gör att reseadministratören kan skriva, läsa och ta bort resor.
+Till exempel **[!DNL Journey administrator]** produktprofilen har tilldelats **[!DNL Manage journeys]** behörighet. Från det här behörigheten blir de lågnivåbehörigheter som gör att reseadministratören kan skriva, läsa och ta bort resor.
 
 ## Resekapacitet {#journey-capability}
 
-### Hantera resetillstånd {#manage-journeys}
+### [!DNL Manage journeys] behörighet {#manage-journeys}
 
-The **[!UICONTROL Manage journeys]** behörighet på hög nivå ger användare möjlighet att skapa nya och redigera/ta bort befintliga resor samt åtkomst till de objekt som används på arbetsytan för att skapa resans flöde.
+The **[!DNL Manage journeys]** behörighet på hög nivå ger användare möjlighet att skapa nya och redigera/ta bort befintliga resor samt åtkomst till de objekt som används på arbetsytan för att skapa resans flöde.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -58,9 +58,9 @@ Den innehåller följande lågnivåbehörigheter:
    * datasets.read
    * schemas.read
 
-### Publicera resetillstånd {#publish-journeys}
+### [!DNL Publish journeys] behörighet {#publish-journeys}
 
-The **[!UICONTROL Publish journeys]** högnivåtillstånd ger användarna rätt att publicera resor.
+The **[!DNL Publish journeys]** högnivåtillstånd ger användarna rätt att publicera resor.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -68,9 +68,9 @@ Den innehåller följande lågnivåbehörigheter:
    * journeys.publish
    * journeys.read
 
-### Visa resetillstånd {#view-journeys}
+### [!DNL View journeys] behörighet {#view-journeys}
 
-The **[!UICONTROL View journeys]** behörighet på hög nivå tillåter användare att bläddra och visa resor.
+The **[!DNL View journeys]** behörighet på hög nivå tillåter användare att bläddra och visa resor.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -81,9 +81,9 @@ Den innehåller följande lågnivåbehörigheter:
    * segments.read
    * profiles.read
 
-### Hantera resthändelser, datakällor och behörigheter för åtgärder {#manage-journeys-events}
+### [!DNL Manage journeys events, data sources and actions] behörighet {#manage-journeys-events}
 
-The **[!UICONTROL Manage journeys events, data sources and actions]** behörighet på hög nivå tillåter användare att konfigurera händelse- och datakonfigurationer.
+The **[!DNL Manage journeys events, data sources and actions]** behörighet på hög nivå tillåter användare att konfigurera händelse- och datakonfigurationer.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -97,14 +97,15 @@ Den innehåller följande lågnivåbehörigheter:
    * travel_actions.read
    * travel_actions.write
    * travel_actions.delete
+
 * Specifikt för Adobe Experience Platform:
    * schemas.read
    * datasets.read
    * identity_namespace.read
 
-### Visa resehändelser, datakällor och åtgärdsbehörigheter {#view-journeys-event}
+### [!DNL View journeys events, data sources and actions] behörighet {#view-journeys-event}
 
-The **[!UICONTROL View journeys events, data sources and actions]** behörighet på hög nivå tillåter användare att använda händelser och data i reseflödet.
+The **[!DNL View journeys events, data sources and actions]** behörighet på hög nivå tillåter användare att använda händelser och data i reseflödet.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -118,9 +119,9 @@ Den innehåller följande lågnivåbehörigheter:
    * datasets.read
    * identity_namespace.read
 
-### Visa behörighet för reserapport {#view-journeys-report}
+### [!DNL View journeys report] behörighet {#view-journeys-report}
 
-The **[!UICONTROL View journeys report]** behörighet på hög nivå tillåter användare att läsa skrivskyddade reserapporter.
+The **[!DNL View journeys report]** behörighet på hög nivå tillåter användare att läsa skrivskyddade reserapporter.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -136,9 +137,9 @@ Den innehåller följande lågnivåbehörigheter:
 
 ## Meddelandefunktion {#message-capability}
 
-### Hantera meddelandebehörigheter {#manage-messages}
+### [!DNL Manage messages] behörighet {#manage-messages}
 
-The **[!UICONTROL Manage messages]** behörighet på hög nivå ger användare möjlighet att skapa och redigera/ta bort meddelanden.
+The **[!DNL Manage messages]** behörighet på hög nivå ger användare möjlighet att skapa och redigera/ta bort meddelanden.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -152,9 +153,9 @@ Den innehåller följande lågnivåbehörigheter:
    * segments.read
    * schemas.read
 
-### Hantera förhandsgranskning och testbehörighet för meddelanden {#mange-messages-preview}
+### [!DNL Manage messages preview and test] behörighet {#mange-messages-preview}
 
-The **[!UICONTROL Manage messages preview and test]** behörighet på hög nivå ger användarna möjlighet att förhandsgranska personaliserade meddelanden.
+The **[!DNL Manage messages preview and test]** behörighet på hög nivå ger användarna möjlighet att förhandsgranska personaliserade meddelanden.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -174,9 +175,9 @@ Den innehåller följande lågnivåbehörigheter:
    * queries.write
    * merge_policies.read
 
-### Publicera meddelanden - behörighet {#publish-messages}
+### [!DNL Publish messages] behörighet {#publish-messages}
 
-The **[!UICONTROL Publish messages]** behörighet på hög nivå tillåter användare att publicera meddelanden.
+The **[!DNL Publish messages]** behörighet på hög nivå tillåter användare att publicera meddelanden.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -188,9 +189,9 @@ Den innehåller följande lågnivåbehörigheter:
    * schemas.read
    * datasets.read
 
-### Visa meddelandebehörighet {#view-messages}
+### [!DNL View messages] behörighet {#view-messages}
 
-The **[!UICONTROL View messages]** behörighet på hög nivå tillåter användare att endast läsa meddelanden.
+The **[!DNL View messages]** behörighet på hög nivå tillåter användare att endast läsa meddelanden.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -202,9 +203,9 @@ Den innehåller följande lågnivåbehörigheter:
    * schemas.read
    * segments.read
 
-### Visa rapportbehörighet för meddelanden {#view-message-reports}
+### [!DNL View messages report] behörighet {#view-message-reports}
 
-The **[!UICONTROL View messages report]** behörighet på hög nivå tillåter användare att läsa skrivskyddade e-postmeddelanden och skicka rapporter.
+The **[!DNL View messages report]** behörighet på hög nivå tillåter användare att läsa skrivskyddade e-postmeddelanden och skicka rapporter.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -218,9 +219,9 @@ Den innehåller följande lågnivåbehörigheter:
 
 ## Beslutsledningskapacitet {#decisions-permissions}
 
-### Hantera beslutsbehörighet {#manage-decisioning}
+### [!DNL Manage decisions] behörighet {#manage-decisioning}
 
-The **[!UICONTROL Manage decisions]** behörighet på hög nivå ger användare möjlighet att skapa nya och redigera/ta bort befintliga **[!UICONTROL Activity entities]** samt hantera de objekt som används i dessa aktiviteter för att fatta beslut.
+The **[!DNL Manage decisions]** behörighet på hög nivå ger användare möjlighet att skapa nya och redigera/ta bort befintliga **[!DNL Activity entities]** samt hantera de objekt som används i dessa aktiviteter för att fatta beslut.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -244,9 +245,9 @@ Den innehåller följande lågnivåbehörigheter:
    * profile.read
    * segments.read
 
-### Visa beslutsbehörighet {#view-decisions}
+### [!DNL View decisions] behörighet {#view-decisions}
 
-The **[!UICONTROL View decisions]** behörighet på hög nivå tillåter användare att använda en befintlig aktivitet och relaterade affärsobjekt för att fatta beslut.
+The **[!DNL View decisions]** behörighet på hög nivå tillåter användare att använda en befintlig aktivitet och relaterade affärsobjekt för att fatta beslut.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -263,9 +264,9 @@ Den innehåller följande lågnivåbehörigheter:
    * datasets.write
    * datasets.delete
 
-### Publicera erbjuder beslutsbehörighet {#publish-decisions}
+### [!DNL Publish offers decisioning] behörighet {#publish-decisions}
 
-The **[!UICONTROL Publish offers decisioning]** behörighet på hög nivå ger användare åtkomst till att godkänna/avgodkänna erbjudandeaktiviteter.
+The **[!DNL Publish offers decisioning]** behörighet på hög nivå ger användare åtkomst till att godkänna/avgodkänna erbjudandeaktiviteter.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -285,9 +286,9 @@ Den innehåller följande lågnivåbehörigheter:
    * datasets.read
    * profiles.read
 
-### Hantera behörighet för rankningsstrategier {#manage-decisions}
+### [!DNL Manage ranking strategies] behörighet {#manage-decisions}
 
-The **[!UICONTROL Manage ranking strategies]** behörighet på hög nivå tillåter användare att läsa, skapa, redigera och ta bort anpassade meddelanden och använda åtgärdsfunktioner.
+The **[!DNL Manage ranking strategies]** behörighet på hög nivå tillåter användare att läsa, skapa, redigera och ta bort anpassade meddelanden och använda åtgärdsfunktioner.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -301,9 +302,9 @@ Den innehåller följande lågnivåbehörigheter:
 
 ## Administration {#administration-permissions}
 
-### Hantera delegeringsbehörighet för underdomäner {#manage-subdomain}
+### [!DNL Manage subdomains delegation] behörighet {#manage-subdomain}
 
-The **[!UICONTROL Manage subdomains delegation]** Med högnivåbehörighet kan användare skapa, redigera och ta bort underdomänsdelegeringar (inklusive IP-pool).
+The **[!DNL Manage subdomains delegation]** Med högnivåbehörighet kan användare skapa, redigera och ta bort underdomänsdelegeringar (inklusive IP-pool).
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -311,18 +312,28 @@ Den innehåller följande lågnivåbehörigheter:
 * subdomains_Delegering.write
 * underdomäner_delegering.delete
 
-### Visa behörighet för PTR-poster {#view-ptr}
+### [!DNL Manage PTR records] behörighet {#manage-ptr}
 
-The **[!UICONTROL View PTR records]** behörighet på hög nivå tillåter användare att visa PTR-poster som har konfigurerats baserat på underdomänen.
+The **[!DNL Manage PTR records]** behörighet på hög nivå tillåter användare att läsa, skapa, redigera och ta bort PTR-poster som har konfigurerats baserat på underdomänen.
+
+Den innehåller följande lågnivåbehörigheter:
+
+* PTR_records.read
+* PTR_records.write
+* underdomäner_delegering.read
+
+### [!DNL View PTR records] behörighet {#view-ptr}
+
+The **[!DNL View PTR records]** behörighet på hög nivå tillåter användare att visa PTR-poster som har konfigurerats baserat på underdomänen.
 
 Den innehåller följande lågnivåbehörigheter:
 
 * PTR_records.read
 * underdomäner_delegering.read
 
-### Hantera behörighet för IP-pooler {#manage-ip-pools}
+### [!DNL Manage IP pools] behörighet {#manage-ip-pools}
 
-The **[!UICONTROL Manage IP pools]** behörighet på hög nivå tillåter användare att skapa, redigera och ta bort tillhörighetsdefinitionen.
+The **[!DNL Manage IP pools]** behörighet på hög nivå tillåter användare att skapa, redigera och ta bort tillhörighetsdefinitionen.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -330,9 +341,9 @@ Den innehåller följande lågnivåbehörigheter:
 * IP_pools.write
 * IP_pools.delete
 
-### Hantera meddelanden med allmänna inställningar, behörighet {#manage-message-settings}
+### [!DNL Manage messages general settings] behörighet {#manage-message-settings}
 
-The **[!UICONTROL Manage messages general settings]** behörighet på hög nivå ger användare möjlighet att skapa, redigera och ta bort globala inställningar på sandlådenivå.
+The **[!DNL Manage messages general settings]** behörighet på hög nivå ger användare möjlighet att skapa, redigera och ta bort globala inställningar på sandlådenivå.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -343,9 +354,9 @@ Den innehåller följande lågnivåbehörigheter:
 * Specifikt för Adobe Experience Platform:
    * schemas.read
 
-### Visa allmänna inställningar för meddelanden {#view-message-settings}
+### [!DNL View messages general settings] behörighet {#view-message-settings}
 
-The **[!UICONTROL View messages general settings]** behörighet på hög nivå tillåter användare att visa meddelanden med allmänna inställningar, t.ex. körningsadressen.
+The **[!DNL View messages general settings]** behörighet på hög nivå tillåter användare att visa meddelanden med allmänna inställningar, t.ex. körningsadressen.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -354,9 +365,9 @@ Den innehåller följande lågnivåbehörigheter:
 * Specifikt för Adobe Experience Platform:
    * schemas.read
 
-### Hantera behörigheter för meddelandeförinställningar {#manage-message-presets}
+### [!DNL Manage messages presets] behörighet {#manage-message-presets}
 
-The **[!UICONTROL Manage messages presets]** behörighet på hög nivå ger användare möjlighet att skapa, redigera och ta bort meddelandeförinställningar över flera kanaler på sandlådenivå.
+The **[!DNL Manage messages presets]** behörighet på hög nivå ger användare möjlighet att skapa, redigera och ta bort meddelandeförinställningar över flera kanaler på sandlådenivå.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -368,20 +379,20 @@ Den innehåller följande lågnivåbehörigheter:
    * IP_pools.read
    * mobile_setting.read (från Adobe Experience Platform Launch)
 
-### Visa förinställda meddelanden, behörighet {#view-message-presets}
+### [!DNL View messages presets] behörighet {#view-message-presets}
 
-The **[!UICONTROL View messages presets]** behörighet på hög nivå gör det möjligt för användare att visa meddelandeförinställningar för att veta vilka meddelandeförinställningar som ska användas när ett meddelande skapas.
+The **[!DNL View messages presets]** behörighet på hög nivå gör det möjligt för användare att visa meddelandeförinställningar för att veta vilka meddelandeförinställningar som ska användas när ett meddelande skapas.
 
 Den innehåller följande lågnivåbehörigheter:
 
 * messages_presets.read
 * underdomäner_delegering.read
 * IP_pools.read
-* mobile_setting.read (från Adobe Experience Platform Launch)
+* mobile_setting.read (från Adobe Experience Platform Data Collection)
 
-### Hantera undertryckningsbehörighet {#manage-suppression}
+### [!DNL Manage suppression] behörighet {#manage-suppression}
 
-The **[!UICONTROL Manage suppression]** behörighet på hög nivå ger användare möjlighet att definiera antalet studsar innan en e-postadress läggs till i listan samt att lägga till och ta bort poster i/från listan.
+The **[!DNL Manage suppression]** behörighet på hög nivå ger användare möjlighet att definiera antalet studsar innan en e-postadress läggs till i listan samt att lägga till och ta bort poster i/från listan.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -391,26 +402,28 @@ Den innehåller följande lågnivåbehörigheter:
 * suppression_list.write
 * suppression_list.delete
 
-### Visa behörighet för undertryckningslista {#view-suppresion-list}
+### [!DNL View suppression list] behörighet {#view-suppression-list}
 
-The **[!UICONTROL View suppression list]** behörighet på hög nivå ger användarna möjlighet att visa innehåll och inställningar i listan över utelämnanden.
+The **[!DNL View suppression list]** behörighet på hög nivå ger användarna möjlighet att visa innehåll och inställningar i listan över utelämnanden.
 
 Den innehåller följande lågnivåbehörigheter:
 
 * Specifikt för Journey Optimizer:
    * suppression_list.view
+
 * Specifikt för Adobe Experience Platform:
    * profiles.read
    * datasets.read
 
-### Behörighet för att exportera undertryckningslista {#export-suppression-list}
+### [!DNL Export suppression list] behörighet {#export-suppression-list}
 
-The **[!UICONTROL Export suppression list]** behörighet på hög nivå ger användarna möjlighet att ladda ned listan som en CSV-fil.
+The **[!DNL Export suppression list]** behörighet på hög nivå ger användarna möjlighet att ladda ned listan som en CSV-fil.
 
 Den innehåller följande lågnivåbehörigheter:
 
 * Specifikt för Journey Optimizer:
    * suppression_list.export
+
 * Specifikt för Adobe Experience Platform:
    * profiles.read
    * datasets.read

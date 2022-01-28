@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 851d988a-2582-4c30-80f3-b881d90771be
-source-git-commit: 8cb36038b2aeddd1662dcb7c84b36d9bc1265982
+source-git-commit: 803fd15149391c069a50244bf29d7013bc6b00e2
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 3%
+source-wordcount: '1343'
+ht-degree: 2%
 
 ---
 
@@ -258,6 +258,10 @@ Nu kan du se alla personaliserade erbjudanden och reserverbjudandet visualiseras
 Använd **[!UICONTROL Offers]** -avsnittet eller innehållskomponentpilarna (höger- och vänsterpilar) för att bläddra bland data. Du kan även visa olika erbjudanden som ingår i beslutet med en kundprofil. Läs mer i [det här avsnittet](../../using/deliver-personalized-offers.md#preview-offers-in-email).
 
 När du har sparat dina ändringar och när meddelandet har publicerats är dina erbjudanden klara att visas för de relevanta profilerna när du skickar meddelandet som en del av en resa.
+
+>[!NOTE]
+>
+>När du uppdaterar ett erbjudande, ett reserverbjudande, en erbjudandesamling eller ett erbjudandebeslut som refereras direkt eller indirekt i en [publicerad](../../using/publish-manage-message.md) visas uppdateringarna automatiskt i motsvarande meddelande, utan att det behöver publiceras på nytt.
 
 **Relaterade ämnen:**
 

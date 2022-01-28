@@ -5,9 +5,10 @@ role: Admin
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: e4125d3e1f0c382c1f2ca13ad080aba830c5df46
+exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
+source-git-commit: 3f545c68264164aeb40eec55631d50fa5c0bec4f
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '360'
 ht-degree: 1%
 
 ---
@@ -87,8 +88,6 @@ Så här skapar du en meddelandeförinställning:
 1. När kontrollen är klar får meddelandeförinställningen **[!UICONTROL Active]** status. Den är klar att användas för att leverera meddelanden.
 
    ![](../assets/preset-active.png)
-
-Mer information om hur du konfigurerar en meddelandeförinställning för push-meddelanden och e-postmeddelanden finns i [det här avsnittet](message-presets.md).
 
 Du kan nu skicka SMS-meddelanden med Journey Optimizer.
 

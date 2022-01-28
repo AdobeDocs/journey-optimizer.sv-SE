@@ -2,16 +2,99 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 52d187f349cba45b43c38c20e45c1dff746d38bf
+source-git-commit: 244f05998098bf1770d5f33c955f09688f58ffe7
 workflow-type: tm+mt
-source-wordcount: '2074'
-ht-degree: 10%
+source-wordcount: '2379'
+ht-degree: 9%
 
 ---
 
 # Versionsinformation {#release-notes}
 
-På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journey Optimizer]. Du kan även läsa [senaste dokumentationsuppdateringar](documentation-updates.md).
+På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journey Optimizer]. Du kan även läsa [senaste dokumentationsuppdateringar](documentation-updates.md) sida för fler ändringar.
+
+## Version från januari 2022
+
+### Nya funktioner
+
+<table>
+<thead>
+<tr>
+<th><strong>Journeys - Optimera din IP-uppgradering med villkor för profilliffor</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>När en <strong>Villkor</strong> -aktivitet på en resa kan du nu definiera en profilövre gräns. Med den här nya villkorstypen kan du ange ett maximalt antal profiler för en resväg. När den här gränsen nås får de inmatade profilerna en alternativ sökväg. Detta gör att du kan öka volymen på dina leveranser (IP-förstärkning). Du kanske vill förbättra leveransen på en domän genom att dela körningen: skicka 1000 meddelanden dag 1, 2000 dag 2 osv.</p>
+<p>Mer information finns i <a href="building-journeys/condition-activity.md#profile_cap">detaljerad dokumentation</a> och relaterade <a href="building-journeys/ramp-up-deliveries-uc.md">exempel</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<!--th><strong>Journeys - Leverage segment entrances and exits in Read segment</strong><br/></th-->
+<th><strong>Journeys - förbättring av läs segment</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<!--p>You can now configure the <strong>Read Segment</strong> activity to target only the individuals who entered or exited the selected segment during a specific lookback period. For example, you can decide to only retrieve all the customers who entered the VIP segment since yesterday. Only the new VIP customers will be targeted. The customers who were already part of the segment before yesterday will be excluded.</p-->
+<p>The <strong>Inkrementell läsning</strong> har lagts till i återkommande <strong>Läs segment</strong> verksamhet. Med det här alternativet kan du bara rikta in dig på de personer som har gått in i segmentet sedan den senaste körningen av resan. Den första körningen riktar sig alltid till alla segmentmedlemmar.</p>
+<p>Mer information finns i den <a href="building-journeys/read-segment.md#configuring-segment-trigger-activity">detaljerade dokumentationen</a>.
+</td>
+</tr>
+</tbody>
+</table>
+
+### Förbättringar
+
+<!--
+**Performances**
+* The integration between Journey Optimizer and Adobe Campaign Classic has been optimized to improve performance. The capping default configuration has been changed to 4000 calls / 5 minutes.  
+-->
+
+**Resor**
+
+* Journey Optimizer steghändelser kan nu länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html). The **profileID** -fältet, i det inbyggda schemat för händelser i resan, definieras nu som ett identitetsfält. [Läs mer](reports/sharing-overview.md#integration-cja)
+
+<!--
+* To optimize performance and prevent obsolete resource usage, all journeys in test mode that have not been triggered for a week now switch back to the **Draft** status.
+-->
+
+**offer decisioning**
+
+<!--* When simulating which offers will be delivered for a given test profile, you can now define simulation settings and use the mode view for your simulations. [Learn more](offers/offer-activities/simulation.md#define-simulation-settings)-->
+
+* När du uppdaterar ett erbjudande, ett reserverbjudande, en erbjudandesamling eller ett erbjudandebeslut som direkt eller indirekt hänvisas till i ett publicerat meddelande, återspeglas uppdateringarna nu automatiskt i motsvarande meddelande, utan att det behöver publiceras på nytt. [Läs mer](offers/offers-e2e.md#insert-decision-in-email)
+
+**Administrering**
+
+* Administratörer kan nu redigera PTR-poster med en CNAME-konfigurerad underdomän. [Läs mer](configuration/ptr-records.md#edit-ptr-subdomains-cname)
+
+**Personalisering**
+
+* **Lägg till i favoriter** - För att förbättra effektiviteten i arbetet med personalisering har vi introducerat begreppet att spara favoriter. Genom att lägga till olika attribut på Favoriter-menyn får du snabb åtkomst till de objekt du använder mest. [Läs mer](personalization/personalize.md#fav)
+
+<!--
+
+**Reporting**
+
+* New metrics and widgets are now available in **Live** and **Global** reports to measure your offers' impact on recipients.
+* Deliveries can now be filtered depending on their status:
+
+    * From the Message Execution list, you can now exclude proofs from your deliveries' list.
+    * From your Live/Global reports, you can choose to exclude journey test events.
+
+    [Learn more](message-monitoring.md)
+
+* From your reports, you can now see if the [Send-Time Optimization](building-journeys/journeys-message.md#send-time-optimization) option has been activated for a given delivery.
+
+-->
 
 ## November 2021-utgåvan
 
@@ -32,7 +115,6 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 </tbody>
 </table>
 
-
 ## Oktober 2021-versionen {#oct-2021-release}
 
 <!--table>
@@ -51,22 +133,7 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 </tbody>
 </table-->
 
-
-
-<!--table>
-<thead>
-<tr>
-<th><strong>Journeys - Profile cap condition</strong><br/></th>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>When using a <strong>Condition</strong> activity in a journey, you can now define a <strong>Profile cap</strong> condition. This new condition type allows you set a maximum number of profiles for a journey path. When this limit is reached, the selected profiles take a second path. This allows you to optimize your IP ramp up. For example, you may want to ramp up your deliveries on a domain to 50 millions by splitting the execution: send 1000 messages on day 1, 2000 on day 2, etc.</p>
-<p>For more information, refer to the <a href="building-journeys/condition-activity.md#profile_cap">detailed documentation</a> and related <a href="building-journeys/ramp-up-deliveries-uc.md">sample use case</a>.</p>
-</td>
-</tr>
-</tbody>
-</table-->
+### Nya funktioner
 
 <table>
 <thead>
@@ -109,7 +176,6 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 
 * **Uttrycksredigerare** - Som kraftfull användare kan du nu använda funktioner för att arbeta med kartor. Den här funktionen kan utnyttjas med prenumerationslistorna. Från ett segment kan du nu till exempel hämta en e-postadress från en prenumerationslista. [Läs mer i det här exemplet](building-journeys/message-to-subscribers-uc.md)
 
-   <!-- * **Delta on segments** - When using a **Read segment** activity, you can now target the individuals who entered or exited a specific segment since the last execution.  -->
 * **Övervakning** - Steghändelser för direktresor och testläge har förbättrats. [Nya fält](reports/sharing-field-list.md#serviceevents) har lagts till i samband med profilexportjobb. För en bättre användarupplevelse är steghändelsefält nu ordnade i olika kategorier. Alla föregående steg-händelsefält är fortfarande tillgängliga i [stepEvents](reports/sharing-legacy-fields.md) kategori.
 * **Tillgänglighet** - Tillgänglighetsförbättringar har införts under resor.
 * **Samlingar** - Arrayer med objekt som innehåller underobjekt stöds nu. [Läs mer](building-journeys/collections.md)
@@ -129,6 +195,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 **Personalisering**
 
 * **Ny hjälpfunktion för datumformatering** - Du kan nu ange hur en datumsträng ska representeras. [Läs mer](personalization/functions/dates.md#format-date)
+
 
 **Beslutshantering**
 
@@ -340,7 +407,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 * Korrigerade ett tillgänglighetsproblem vid navigering på meddelandeflikar.
 * Ett lokaliseringsfel har korrigerats i e-postdesignerns etiketter.
 * Ett problem har korrigerats när du valde mer än en nod i en resa och klickade på Ta bort på egenskapspanelen.
-* Korrigerade ett problem som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
+* Korrigerade ett fel som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
 * Du kan nu ta reda på varför en meddelandeförinställning inte kunde skapas med hjälp av en tydligare varning i användargränssnittet.
 
 

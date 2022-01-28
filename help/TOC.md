@@ -5,10 +5,10 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att leverera sammankopplade, kontextuella och personaliserade upplevelser till kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 0c0110b24ccc9a5311d35d786f526319056c1c1a
+source-git-commit: ae60bf08a4f358b99e803f3fd17f9218acda9062
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 47%
+source-wordcount: '893'
+ht-degree: 48%
 
 ---
 
@@ -66,12 +66,12 @@ ht-degree: 47%
       + [Objektfunktioner](using/personalization/functions/objects.md)
       + [Strängfunktioner](using/personalization/functions/string.md)
    + [Lägg till personaliserade erbjudanden](using/deliver-personalized-offers.md)
-+ Segment, profiler och identitet{#segment}
++ Segment, profiler och identiteter{#segment}
    + Segment {#segments}
       + [Kom igång med segment](using/segment/about-segments.md)
       + [Skapa segment](using/segment/creating-a-segment.md)
    + [Profiler](using/get-started-profiles.md)
-   + [Identitet](using/get-started-identity.md)
+   + [Identiteter](using/get-started-identity.md)
 + Resor {#orchestrate-journeys}
    + Om resor{#about-journeys}
       + [Allmän princip](using/building-journeys/journey.md)
@@ -99,7 +99,7 @@ ht-degree: 47%
       + [Adobe Campaign v7/v8-åtgärder](using/building-journeys/using-adobe-campaign-classic.md)
       + [Hoppa](using/building-journeys/jump.md)
       + [Uppdatera profil](using/building-journeys/update-profiles.md)
-   + Skapa uttryck {#building-advanced-conditions-journeys}
+   + Bygga uttryck {#building-advanced-conditions-journeys}
       + [Översikt](using/building-journeys/expression/expressionadvanced.md)
       + Syntax {#syntax}
          + [Allmänt](using/building-journeys/expression/generalities.md)
@@ -190,9 +190,7 @@ ht-degree: 47%
       + [Skicka ett meddelande med Campaign v7/v8](using/building-journeys/campaign-classic-use-case.md)
       + [Skicka samlingar dynamiskt med anpassade åtgärder](using/building-journeys/collections.md)
       + [Skicka ett meddelande till prenumeranter](using/building-journeys/message-to-subscribers-uc.md)
-      <!--
-      + [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
-      -->
+      + [Rita upp leveranser](using/building-journeys/ramp-up-deliveries-uc.md)
 + Spåra och övervaka {#reporting}
    + [Meddelandeövervakning](using/message-monitoring.md)
    + Live-rapport {#live-report}
@@ -207,8 +205,8 @@ ht-degree: 47%
       + [Push Global-rapport](using/reports/push-global-report.md)
    + Reserapporter {#reports}
       + [Skapa reserapporter](using/reports/sharing-overview.md)
-      + [Stega händelsefältslista](using/reports/sharing-field-list.md)
-      + Händelsefält för äldre steg {#legacy-step-event-fields}
+      + [Lista över steghändelsefält](using/reports/sharing-field-list.md)
+      + Äldre steghändelsefält {#legacy-step-event-fields}
          + [Om äldre fält](using/reports/sharing-legacy-fields.md)
          + [Resefält](using/reports/sharing-journey-fields.md)
          + [Vanliga fält](using/reports/sharing-common-fields.md)
