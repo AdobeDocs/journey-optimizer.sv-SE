@@ -6,10 +6,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 14f80d5d-0840-4b79-9922-6d557a7e1247
-source-git-commit: 0f79d465dd5a63ced107614407de167c7d9dad5a
+source-git-commit: 7d466d87c337053b32489df6dedbfd4c350230bb
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 26%
+source-wordcount: '365'
+ht-degree: 22%
 
 ---
 
@@ -23,7 +23,9 @@ Sandlådor tilldelas via produktprofiler i Admin Console. [Lär dig hur du tilld
 [!DNL Journey Optimizer] speglar Adobe Experience Platform-sandlådor som har skapats för en viss organisation.
 Sandlådorna i Adobe Experience Platform kan skapas eller återställas från din instans i Adobe Experience Platform. [Läs mer i användarhandboken för Sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html){target=&quot;_blank&quot;}.
 
-Du hittar kontrollen för att välja sandlåda längst upp till vänster på skärmen. Klicka på den för närvarande aktiva sandlådan i väljaren för att växla från en sandlåda till en annan och välj sedan en annan sandlåda på rullgardinsmenyn.
+Du hittar kontrollen för sandlådeväljaren högst upp till höger på skärmen bredvid organisationens namn. Klicka på den för närvarande aktiva sandlådan i väljaren för att växla från en sandlåda till en annan och välj sedan en annan sandlåda på rullgardinsmenyn.
+
+![](../assets/sandbox_5.png)
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 

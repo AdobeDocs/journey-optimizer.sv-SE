@@ -2,9 +2,9 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 74d6235042c7a94462cb4838186ca5d785d0764e
+source-git-commit: 01a18d6a54775eb2cd0bfda5080e4007b80727de
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '878'
 ht-degree: 23%
 
 ---
@@ -20,6 +20,8 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Avsnittet med Offera decisioningens AI-rankningar har uppdaterats med en mer detaljerad beskrivning av den automatiska optimeringsmodellen. [Läs mer](offers/offer-library/create-ranking-strategies.md#auto-optimization)
 
 * Ett nytt avsnitt om schemakraven som behövs för att kunna skicka in händelsetyper när en rankningsstrategi används har lagts till. [Läs mer](offers/offer-library/create-ranking-strategies.md#schema-requirements)
+
+* Avsnittet som är relaterat till [!DNL Journey Optimizer] personaliseringsfunktionerna har omstrukturerats för att bli lättare att läsa. [Läs mer](personalization/personalize.md)
 
 ## November 2021
 

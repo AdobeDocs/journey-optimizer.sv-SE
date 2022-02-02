@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att leverera sammankopplade, kontextuella och personaliserade upplevelser till kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: ae60bf08a4f358b99e803f3fd17f9218acda9062
+source-git-commit: 01573675c28972f863e3516577d8a06b403de312
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '910'
 ht-degree: 48%
 
 ---
@@ -36,6 +36,7 @@ ht-degree: 48%
       + [Skapa ett push-meddelande](using/create-push.md)
       + [Skapa ett SMS-meddelande](using/create-sms.md)
    + [Lägga till och hantera resurser](using/assets-essentials.md)
+   + [Lägg till personaliserade erbjudanden](using/deliver-personalized-offers.md)
    + Designa e-postmeddelanden {#email-designer}
       + [Kom igång med e-postdesign](using/design-emails.md)
       + [Designa ditt e-postinnehåll i användargränssnittet](using/create-email-content.md)
@@ -49,24 +50,28 @@ ht-degree: 48%
    + [Hantera avanmälan](using/consent.md)
 + Personalisering{#personalization}
    + [Kom igång med personalisering](using/personalization/personalize.md)
-   + [Anpassningssyntax](using/personalization/personalization-syntax.md)
-   + [Validering av personalisering](using/personalization/personalization-validation.md)
+   + [Anpassningssammanhang](using/personalization/personalization-contexts.md)
+   + Arbeta med uttrycksredigeraren {#expression-editor}
+      + [Om uttrycksredigeraren](using/personalization/personalization-build-expressions.md)
+      + [Lägg till attribut i favoriter](using/personalization/personalization-favorites.md)
+      + [Validering av personalisering](using/personalization/personalization-validation.md)
+   + Bygga uttryck {#build-expressions}
+      + [Anpassningssyntax](using/personalization/personalization-syntax.md)
+      + Hjälpfunktioner{#functions}
+         + [Kom igång med hjälpfunktioner](using/personalization/functions/functions.md)
+         + [Sammanställningsfunktioner](using/personalization/functions/aggregation.md)
+         + [Aritmetiska funktioner](using/personalization/functions/arithmetic-functions.md)
+         + [Arrayer och listfunktioner](using/personalization/functions/arrays-list.md)
+         + [Datumfunktioner](using/personalization/functions/dates.md)
+         + [Boolean- och jämförelsefunktioner](using/personalization/functions/operators.md)
+         + [Hjälpmedel](using/personalization/functions/helpers.md)
+         + [Kartfunktioner](using/personalization/functions/maps.md)
+         + [Objektfunktioner](using/personalization/functions/objects.md)
+         + [Strängfunktioner](using/personalization/functions/string.md)
    + Användningsfall{#personalization-use-cases}
       + [Meddelande om orderstatus](using/personalization/personalization-use-case.md)
       + [E-post om att kunden överger en kundvagn](using/personalization/personalization-use-case-helper-functions.md)
-   + Hjälpfunktioner{#functions}
-      + [Kom igång med hjälpfunktioner](using/personalization/functions/functions.md)
-      + [Sammanställningsfunktioner](using/personalization/functions/aggregation.md)
-      + [Aritmetiska funktioner](using/personalization/functions/arithmetic-functions.md)
-      + [Arrayer och listfunktioner](using/personalization/functions/arrays-list.md)
-      + [Datumfunktioner](using/personalization/functions/dates.md)
-      + [Boolean- och jämförelsefunktioner](using/personalization/functions/operators.md)
-      + [Hjälpmedel](using/personalization/functions/helpers.md)
-      + [Kartfunktioner](using/personalization/functions/maps.md)
-      + [Objektfunktioner](using/personalization/functions/objects.md)
-      + [Strängfunktioner](using/personalization/functions/string.md)
-   + [Lägg till personaliserade erbjudanden](using/deliver-personalized-offers.md)
-+ Segment, profiler och identiteter{#segment}
++ Segment, profiler och identitet{#segment}
    + Segment {#segments}
       + [Kom igång med segment](using/segment/about-segments.md)
       + [Skapa segment](using/segment/creating-a-segment.md)
