@@ -16,14 +16,20 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: c548852b976100935271afafd5267fd7f32a9b50
+source-git-commit: af1c05cb51601ae92cc643353fa706b3771a8160
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1429'
 ht-degree: 5%
 
 ---
 
 # Delegera en underdomän
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_subdomainname"
+>title="Om delegering av underdomäner"
+>abstract="Med Journey Optimizer kan du delegera dina underdomäner helt till Adobe. Adobe kommer att kunna leverera meddelanden som en hanterad tjänst genom att kontrollera och underhålla alla aspekter av DNS."
+
 
 Delegering av domännamn är en metod som tillåter ägaren av ett domännamn (tekniskt: en DNS-zon) för att delegera en indelning av den (tekniskt: en DNS-zon under den, som kan kallas en underzon) till en annan entitet. Om du hanterar zonen&quot;example.com&quot; kan du som kund delegera underzonen&quot;marketing.example.com&quot; till Adobe.
 
