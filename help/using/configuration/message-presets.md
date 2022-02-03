@@ -6,14 +6,14 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 7039c816c459ba8cb5dbb52daf3c8265e1e1a511
+source-git-commit: bbc2adabac63ffb813ea2630f29aec552fc3f4df
 workflow-type: tm+mt
 source-wordcount: '1684'
 ht-degree: 1%
 
 ---
 
-# Skapa meddelandeförinställningar
+# Skapa meddelandeförinställningar {#message-presets-creation}
 
 Med [!DNL Journey Optimizer]kan du konfigurera meddelandeförinställningar som definierar alla tekniska parametrar som krävs för e-post och push-meddelanden: e-posttyp, avsändarens e-postadress och namn, mobilappar med mera.
 
@@ -36,7 +36,7 @@ Så här skapar du en meddelandeförinställning:
 
    ![](../assets/preset-create.png)
 
-1. Ange ett namn och en beskrivning (valfritt) för förinställningen och välj sedan de kanaler som ska konfigureras.
+1. Enter a name and a description (optional) for the preset, then select the channel(s) to configure.
 
    ![](../assets/preset-general.png)
 
@@ -52,7 +52,7 @@ Så här skapar du en meddelandeförinställning:
 
       >[!CAUTION]
       >
-      > **Transactional** meddelanden kan skickas till profiler som avbeställer marknadskommunikation. Dessa meddelanden kan bara skickas i särskilda sammanhang, t.ex. lösenordsåterställning, orderstatus eller leveransmeddelande.
+      > **Transactional** meddelanden kan skickas till profiler som avbeställer marknadskommunikation. These messages can only be sent in specific contexts, such as password reset, order status, delivery notification for example.
 
    * Välj den underdomän som ska användas för att skicka e-postmeddelanden. [Läs mer](about-subdomain-delegation.md)
    * Välj den IP-pool som ska associeras med förinställningen. [Läs mer](ip-pools.md)
@@ -168,9 +168,9 @@ Om något av dessa fel inträffar ska du kontakta [Adobe kundtjänstsupport](htt
 
 * **SPF-valideringen misslyckades**: SPF (Sender Policy Framework) är ett autentiseringsprotokoll för e-post som tillåter att auktoriserade IP-adresser kan skicka e-post från en viss underdomän. SPF-valideringsfel innebär att IP-adresserna i SPF-posten inte matchar IP-adresserna som används för att skicka e-post till postlådeprovidern.
 
-* **DKIM-validering misslyckades**: Med DKIM (DomainKeys Identified Mail) kan mottagarservern verifiera att det mottagna meddelandet skickades av den äkta avsändaren av den associerade domänen och att innehållet i det ursprungliga meddelandet inte ändrades. DKIM-valideringsfel innebär att de mottagande e-postservrarna inte kan verifiera meddelandeinnehållets autenticitet och dess koppling till den sändande domänen:
+* **DKIM validation failed**: DKIM (DomainKeys Identified Mail) allows the recipient server to verify that the received message was sent by the genuine sender of the associated domain and that the content of the original message was not altered on its way. DKIM validation failure means that the receiving mail servers are unable to verify the authenticity of the message content and its association with the sending domain.:
 
-* **MX-postvalideringen misslyckades**: MX-postvalideringsfel (Mail eXchange) innebär att de e-postservrar som ansvarar för att ta emot inkommande e-post för en viss underdomän inte är korrekt konfigurerade.
+* **MX record validation failed**: MX (Mail eXchange) record validation failure means that the mail servers responsible for accepting inbound emails on behalf of a given subdomain are not correctly configured.
 
 * **Konfigurationer för slutbarhet misslyckades**: Fel i leveranskonfigurationer kan uppstå på grund av någon av följande orsaker:
    * Blockeringslistning av de tilldelade IP-adresserna

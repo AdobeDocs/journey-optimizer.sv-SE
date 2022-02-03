@@ -16,14 +16,14 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 311eb2d1-e445-43e6-bc2c-c6288b637f47
-source-git-commit: 1d7f661dc0a89e4754a76ecf2cdce1e43a5275ec
+source-git-commit: bbc2adabac63ffb813ea2630f29aec552fc3f4df
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 27%
 
 ---
 
-# Lägga till en Google TXT-post i en underdomän
+# Lägga till en Google TXT-post i en underdomän {#google-txt-record}
 
 TXT-poster är en typ av DNS-poster som används för att tillhandahålla textinformation om en domän som kan läsas av externa källor.
 

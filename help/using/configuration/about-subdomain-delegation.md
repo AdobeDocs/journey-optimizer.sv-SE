@@ -8,14 +8,14 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 1b5ca4db-44d9-49e2-ab39-a1abba223ec7
-source-git-commit: 203f8545200d4a6c20a748807e20ba7aba1ab5f3
+source-git-commit: bbc2adabac63ffb813ea2630f29aec552fc3f4df
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 36%
 
 ---
 
-# Delegering till underdomän i [!DNL Journey Optimizer]
+# Delegering till underdomän i [!DNL Journey Optimizer] {#subdomain-delegation}
 
 Genom att skapa en underdomän för e-postkampanjer kan varumärken isolera olika typer av trafik (till exempel marknadsföring kontra företag) i specifika IP-pooler och med specifika domäner, vilket snabbar upp IP-uppvärmningsprocessen och förbättrar leveransmöjligheterna generellt. Om du delar en domän och den blockeras eller läggs till i blockeringslista kan det påverka företagets e-postleverans. Men kända problem eller blockeringar på en domän som är specifik för din e-postmarknadsföring kommer att påverka just det e-postflödet. Om du använder huvuddomänen som avsändare eller Från-adress för flera e-postströmmar kan det också bryta e-postautentiseringen, vilket gör att dina meddelanden blockeras eller placeras i skräppostmappen.
 
