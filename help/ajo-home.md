@@ -7,10 +7,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: e36b81fd3cdfa0cc6efe1a85316fcb4f5a9c9764
+source-git-commit: 750542adf2c8d468b34cc0d0f61c87afc9cd001f
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 12%
+source-wordcount: '218'
+ht-degree: 11%
 
 ---
 
@@ -27,24 +27,24 @@ ht-degree: 12%
     <em></em>
     <p>
     <div>
-      <a href="using/get-started.md">Vad är [!DNL Journey Optimizer]?</a>
+      <a href="using/start/get-started.md">Vad är [!DNL Journey Optimizer]?</a>
     </div>
     <p>Upptäck viktiga funktioner och användningsområden
     <p>
     <div>
-      <a href="using/release-notes.md">Versionsinformation</a>
+      <a href="using/rn/release-notes.md">Versionsinformation</a>
     </div>
     <p>Nya funktioner, senaste förbättringar och korrigeringar
    <p>
     <div>
-      <a href="using/quick-start.md">Snabbstartsguide</a>
+      <a href="using/start/quick-start.md">Snabbstartsguide</a>
     </div>
     <p>
     Lär dig att börja som administratör, datatekniker eller resehandledare
     <p>
     <p>
     <div>
-      <a href="using/design-emails.md">Designa e-postinnehåll</a>
+      <a href="using/messages/design-emails.md">Designa e-postinnehåll</a>
     </div>
     <p>
     Designa ett nytt e-postmeddelande eller importera ett befintligt HTML-innehåll
@@ -86,15 +86,20 @@ ht-degree: 12%
     </div>
     <div>
     <li>
+      <a href="https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf" target="_blank">Adobe Journey Optimizer - säkerhetsöversikt</a> (PDF)
+    </li>
+    </div>
+    <div>
+    <li>
+      <a href="https://experienceleague.adobe.com/docs/journey-optimizer/assets/AJO-FAQ.pdf" target="_blank">Adobe Journey Optimizer FAQ</a> (PDF)
+    </li>
+    </div>
+    <div>
+    <li>
       <a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html" target="_blank">Adobe Experience Platform-dokumentation</a>
     </li>
     </div>
-      <div>
-      <li>
-      <a href="https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html" target="_blank">Adobe Experience Platform - översikt</a>
-    </li>
-    </div>
-      <div>
+    <div>
       <li>
       <a href="https://www.adobe.com/se/experience-platform/documentation-and-developer-resources.html" target="_blank">Resurser för Adobe Experience Platform-utvecklare</a>
     </li>
@@ -111,7 +116,7 @@ ht-degree: 12%
       <a href="using/building-journeys/journey-gs.md">Resor</a>
     </li>
     <li>
-      <a href="using/create-message.md">Meddelanden</a>
+      <a href="using/messages/create-message.md">Meddelanden</a>
     </li>
     <p>
     <p>BESLUTSHANTERING</p>
@@ -124,18 +129,18 @@ ht-degree: 12%
     <p>
     <p>INNEHÅLLSHANTERING</p>
     <li>
-      <a href="using/assets-essentials.md">Assets</a>
+      <a href="using/messages/assets-essentials.md">Assets</a>
     </li>
     <p>
     <p>DATAHANTERING</p>
     <li>
-      <a href="using/get-started-schemas.md">Scheman</a>
+      <a href="using/start/get-started-schemas.md">Scheman</a>
     </li>
      <li>
-      <a href="using/get-started-datasets.md">Datauppsättningar</a>
+      <a href="using/start/get-started-datasets.md">Datauppsättningar</a>
     </li>
         <li>
-      <a href="using/get-started-queries.md">Frågor</a>
+      <a href="using/start/get-started-queries.md">Frågor</a>
     </li>
      <li>
       <a href="https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/monitor-data-ingestion.html" target="_blank">Övervakning</a>
@@ -143,7 +148,7 @@ ht-degree: 12%
     <p>
     <p>ANSLUTNINGAR</p>
     <li>
-      <a href="using/get-started-sources.md">Källor</a>
+      <a href="using/start/get-started-sources.md">Källor</a>
     </li>
     <p>
     <p>KUND</p>
@@ -151,10 +156,10 @@ ht-degree: 12%
       <a href="using/segment/about-segments.md">Segment</a>
     </li>
      <li>
-      <a href="using/get-started-profiles.md">Profiler</a>
+      <a href="using/start/get-started-profiles.md">Profiler</a>
     </li>
     <li>
-      <a href="using/get-started-identity.md">Identitet</a>
+      <a href="using/start/get-started-identity.md">Identitet</a>
     </li>
     <p>
     <p>ADMINISTRATION</p>
