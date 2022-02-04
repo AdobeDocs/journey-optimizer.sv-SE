@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 2ebbcd7d-dcfc-4528-974d-6230fc0dca3d
-source-git-commit: dc1dd69040086bd0fad332feb12cc817fec41544
+source-git-commit: 6bb0248c8bd3c15ff28e841b06a413dca83b354f
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1192'
 ht-degree: 11%
 
 ---
@@ -32,11 +32,6 @@ Klicka på knappen **[!UICONTROL Title]** och **[!UICONTROL Body]** fält. Anvä
 Använd enhetens förhandsgranskningssektion för att visualisera hur push-meddelanden visas på iOS- och Android-enheter.
 
 ## Beteende vid klickning {#on-click-behavior}
-
->[!CONTEXTUALHELP]
->id="ajo-message-push-onclick"
->title="Om klickbeteende"
->abstract="Välj beteende när en mottagare klickar på texten i push-meddelandet."
 
 Välj beteende när en mottagare klickar på texten i push-meddelandet.
 
