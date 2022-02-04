@@ -6,18 +6,14 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 2ebbcd7d-dcfc-4528-974d-6230fc0dca3d
-source-git-commit: 89d0ef7323d8e1e7f415a9b2a058e4dca7a6ecb0
+source-git-commit: dc1dd69040086bd0fad332feb12cc817fec41544
 workflow-type: tm+mt
-source-wordcount: '1388'
-ht-degree: 10%
+source-wordcount: '1210'
+ht-degree: 11%
 
 ---
 
 # Skapa ett push-meddelande {#create-push-notification}
-
-Push-meddelanden hjälper dig att nå mobilappsanvändare när som helst, särskilt när de inte aktivt använder din app. Push-meddelanden kan hjälpa dig att få en mängd olika användningsfall, som att tillhandahålla uppdateringar om tjänsten, be en användare att vidta åtgärder, varna användaren för ett nytt avtal osv. Enhetsplattformar kräver deltagande innan slutanvändarna kan ta emot eller visa dina meddelanden. Användaranmälan kan tas emot så snart appen startats för första gången efter installationen, eller i en efterföljande session eller arbetsflöde efter behov.
-
-[!DNL Journey Optimizer] har stöd för push-meddelanden och hjälper dig att skicka mycket relevanta meddelanden med branschledande dataöverföringshastigheter. Push-meddelanden kan omfatta personalisering och resebaserade sammanhang för att utnyttja de datainsikter ert varumärke har med Adobe Experience Cloud.
 
 En gång [skapade ett meddelande](create-message.md)klickar du på **[!UICONTROL Push Notification]** för att definiera inställningar och innehåll för push-meddelandet.
 
@@ -27,11 +23,11 @@ Använd de dedikerade flikarna för att definiera inställningar för push-medde
 
 >[!NOTE]
 >
->The **[!UICONTROL Compose Message]** -avsnittet är gemensamt för båda **[!UICONTROL iOS]** och **[!UICONTROL Android]** -tabbar. Alla ändringar i det här avsnittet gäller för båda inställningarna.
+>The **[!UICONTROL Compose Message]** -avsnittet är gemensamt för båda **[!UICONTROL iOS]** och **[!UICONTROL Android]** -tabbar. Alla ändringar i det här avsnittet gäller båda flikarna.
 
-## Titel och brödtext {#push-title-body}
+## Titel och brödtext
 
-Klicka på knappen **[!UICONTROL Title]** och **[!UICONTROL Body]** fält. Använd uttrycksredigeraren för att definiera innehåll och personaliseringsdata. Läs mer om personalisering i Expression Editor i [det här avsnittet](../personalization/personalize.md)
+Klicka på knappen **[!UICONTROL Title]** och **[!UICONTROL Body]** fält. Använd uttrycksredigeraren för att definiera innehåll och personaliseringsdata. Läs mer om personalisering i Expression Editor i [det här avsnittet](personalization/personalize.md)
 
 Använd enhetens förhandsgranskningssektion för att visualisera hur push-meddelanden visas på iOS- och Android-enheter.
 
@@ -42,15 +38,15 @@ Använd enhetens förhandsgranskningssektion för att visualisera hur push-medde
 >title="Om klickbeteende"
 >abstract="Välj beteende när en mottagare klickar på texten i push-meddelandet."
 
-Du kan välja beteende när en användare klickar på texten i push-meddelandet.
+Välj beteende när en mottagare klickar på texten i push-meddelandet.
 
 ![](assets/title-body-push.png)
 
-* Om du vill öppna appen väljer du **[!UICONTROL Open app]** alternativ. Appen som är associerad med meddelandet definieras i meddelandet **[!UICONTROL Preset]**. [Läs mer](../configuration/message-presets.md) om meddelandeförinställningar.
-* Om du vill dirigera om användaren till en viss del av innehållet i en app väljer du **[!UICONTROL Deeplink]** alternativ.  Det specifika innehållet kan vara en specifik vy, ett visst avsnitt på en sida eller en viss flik. När alternativet är markerat anger du länken i det tillhörande fältet.
-* Om du vill dirigera om användaren till en extern URL använder du **[!UICONTROL Web URL]** alternativ. När alternativet är markerat anger du URL-adressen i det associerade fältet.
+* Använd **[!UICONTROL Open app]** alternativ för att öppna programmet som är associerat med meddelandet **[!UICONTROL Preset]**.
+* Använd **[!UICONTROL Deeplink]** om du vill dirigera om mottagaren till ett visst innehåll som finns inuti programmet. Ange länken till länken i det associerade fältet.
+* Använd **[!UICONTROL Web URL]** om du vill dirigera om mottagaren till en extern URL. Ange URL-adressen i det associerade fältet.
 
-## Lägg till media {#add-media-push}
+## Lägg till media
 
 I iOS-versionen av ditt push-meddelande kan du lägga till en bild, en video eller ett GIF som visas i meddelandet.
 
@@ -60,17 +56,17 @@ I Android-versionen kan du bara lägga till en bildikon och en bild för utökad
 
 Det finns två alternativ. Du kan:
 
-* Använd **[!UICONTROL Add media]** knapp för att välja en resurs i **[!DNL Adobe Experience Manager Assets Essentials]**.
+* Klicka på **[!UICONTROL Add media]** knapp för att välja en resurs i **[!DNL Adobe Experience Manager Assets Essentials]**.
 
    Lär dig använda **[!DNL Adobe Experience Manager Assets Essentials]** in [den här sidan](assets-essentials.md).
 
-* Eller ange URL:en för mediet i **[!UICONTROL Add media]** fält. I så fall kan du lägga till personalisering i URL:en.
+* Du kan också ange mediets URL genom att klicka på **[!UICONTROL Add media]** fält. I så fall kan ni lägga till personalisering.
 
 När mediet har lagts till visas det till höger om meddelandetexten.
 
-## Lägg till knappar {#add-buttons-push}
+## Lägg till knappar
 
-Skapa ett användbart meddelande genom att lägga till knappar i ditt push-innehåll.
+Du kan skapa ett användbart meddelande genom att lägga till knappar i ditt push-innehåll.
 
 Om enhetsskärmen är låst visas inte dessa knappar: bara **Titel** och **Meddelande** om meddelandet visas. Om enheten är olåst ser mottagarna knapparna.
 
@@ -80,13 +76,13 @@ I iOS-versionen kan du lägga till upp till fyra knappar. I Android-versionen ka
 >
 >För iOS använder du **[!UICONTROL iOS category]** fält för att associera åtgärder med en meddelandekategori.
 
-1. Använd **[!UICONTROL Add button]** för att definiera inställningar: etiketten och tillhörande åtgärd. Möjliga åtgärder är desamma som för [klickbeteende](#on-click-behavior).
+Klicka **[!UICONTROL Add button]** för att definiera inställningar: etiketten och tillhörande åtgärd. Möjliga åtgärder är desamma som för [klickbeteende](#on-click-behavior).
 
-1. Använd **[!UICONTROL Expand view]** -ikonen under den centrala förhandsvisningsbilden för att förhandsgranska dina anpassade knappar.
+Klicka **[!UICONTROL Expand view]** för att förhandsgranska dina anpassade knappar.
 
 ![](assets/push_buttons.png)
 
-## Skicka ett tyst meddelande {#silent-notification}
+## Skicka ett tyst meddelande
 
 Ett tyst push-meddelande (eller bakgrundsmeddelande) är en dold instruktion som skickas till programmet. Den används till exempel för att meddela programmet om att nytt innehåll är tillgängligt eller för att initiera en nedladdning i bakgrunden.
 
@@ -98,7 +94,7 @@ Använd **[!UICONTROL Custom data]** för att lägga till nyckelvärdepar.
 
 I **[!UICONTROL Custom data]** kan du lägga till anpassade variabler i nyttolasten, beroende på din mobilprogramkonfiguration. Mer information om hur du ställer in push-meddelanden i Adobe Experience Platform och Adobe Launch finns i [det här avsnittet](push-gs.md)
 
-## Avancerade alternativ {#advanced-options-push}
+## Avancerade alternativ
 
 Du kan konfigurera **[!UICONTROL Advanced options]** för ditt push-meddelande. Tillgängliga parametrar visas nedan:
 
@@ -106,7 +102,7 @@ Du kan konfigurera **[!UICONTROL Advanced options]** för ditt push-meddelande. 
 |---------|---------|
 | **[!UICONTROL Collapsible]** (iOS/Android) | Ett komprimerbart meddelande är ett meddelande som kan ersättas av ett nytt meddelande om det har blivit inaktuellt. Ett vanligt användningsfall för komprimerbara meddelanden är meddelanden som används för att instruera en mobilapp att synkronisera data från servern. Ett exempel är en sportapp som uppdaterar användare med den senaste poängen. Endast det senaste meddelandet är relevant. Å andra sidan, med icke-komprimerbara meddelanden, är varje meddelande viktigt för klientappen och måste levereras. |
 | **[!UICONTROL Custom sound]** (iOS/Android) | Det ljud som ska spelas upp av mobilterminalen när meddelandet tas emot. Ljudet måste paketeras i appen. |
-| **[!UICONTROL Badges]** (iOS/Android) | Ett märke används för att visa antalet nya olästa uppgifter direkt på programikonen. <br/>Märkesvärdet försvinner när användaren öppnar eller läser det nya innehållet från programmet. När ett meddelande tas emot på en enhet kan det uppdatera eller lägga till ett märkesvärde för den relaterade appen.<br/>Om du till exempel lagrar antalet olästa artiklar för dina kunder kan du använda personalisering för att skicka det unika märket för olästa artiklar för varje kund. Mer personalisering finns i [det här avsnittet](../personalization/personalize.md). |
+| **[!UICONTROL Badges]** (iOS/Android) | Ett märke används för att visa antalet nya olästa uppgifter direkt på programikonen. <br/>Märkesvärdet försvinner när användaren öppnar eller läser det nya innehållet från programmet. När ett meddelande tas emot på en enhet kan det uppdatera eller lägga till ett märkesvärde för den relaterade appen.<br/>Om du till exempel lagrar antalet olästa artiklar för dina kunder kan du använda personalisering för att skicka det unika märket för olästa artiklar för varje kund. Mer personalisering finns i [det här avsnittet](personalization/personalize.md). |
 | **[!UICONTROL Notification group]**  (endast iOS) | Associera en meddelandegrupp med push-meddelandet.<br/>Från och med iOS 12 kan du med meddelandegrupper konsolidera meddelandetrådar och meddelandeämnen i kopplade ID:n. Ett varumärke kan t.ex. skicka marknadsföringsmeddelanden under ett grupp-ID samtidigt som det behåller fler typmeddelanden under ett eller flera olika ID:n.<br/>Om du vill illustrera detta kan du ha groupID: 123&quot;kolla in den nya vårsamlingen av tröjor&quot; och grupp-ID: 456 Meddelandegrupper för&quot;ditt paket levererades&quot;. I det här exemplet paketeras alla leveransmeddelanden under grupp-ID: 456. |
 | **[!UICONTROL Notification channel]** (Endast Android) | Koppla en meddelandekanal till push-meddelandet.<br/>Från och med Android 8.0 (API-nivå 26) måste alla meddelanden tilldelas en kanal för att kunna visas. Mer information finns i [Dokumentation för Android-utvecklare](https://developer.android.com/guide/topics/ui/notifiers/notifications#ManageChannels). |
 | **[!UICONTROL Add content-availability flag]** (endast iOS) | Skickar flaggan för tillgängligt innehåll i push-nyttolasten för att säkerställa att appen aktiveras så fort den får push-meddelandet, vilket innebär att appen kan komma åt nyttolastdata.<br/> Detta fungerar även om appen körs i bakgrunden och utan att användaren behöver göra något (t.ex. trycka på ett push-meddelande). Detta gäller dock inte om programmet inte körs. Mer information om detta hittar du i [Apples dokumentation för utvecklare](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html). |
@@ -123,4 +119,4 @@ Du kan konfigurera **[!UICONTROL Advanced options]** för ditt push-meddelande. 
 
 * [Konfigurera push-kanal](push-gs.md)
 * [Skapa ett nytt meddelande](create-message.md)
-* [Lägg till ett meddelande i en resa](../building-journeys/journeys-message.md)
+* [Lägg till ett meddelande i en resa](building-journeys/journeys-message.md)
