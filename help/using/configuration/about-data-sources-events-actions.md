@@ -1,15 +1,15 @@
 ---
-title: Administration och inställningar
-description: Läs riktlinjer för administration och inställningar
+title: Konfigurera resor
+description: Lär dig hur du konfigurerar datakällor, händelser och åtgärder.
 feature: Application Settings
 topic: Administration
 role: Admin
 level: Intermediate
 exl-id: c144d44f-031f-4ca2-800e-d3878af400a5
-source-git-commit: bbc2adabac63ffb813ea2630f29aec552fc3f4df
+source-git-commit: dcdbf4a0cd6a93e56cbe97535515c1a6143db81b
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 45%
+source-wordcount: '313'
+ht-degree: 44%
 
 ---
 
@@ -19,17 +19,17 @@ För att kunna skicka meddelanden med resor måste du konfigurera **[!UICONTROL 
 
 ![](../assets/admin-menu.png)
 
-## Datakällor
+## Datakällor {#data-sources}
 
 Med datakällkonfigurationen kan du definiera en anslutning till ett system för att hämta ytterligare information som ska användas i dina resor. [Läs mer](../../using/datasource/about-data-sources.md)
 
-## Händelser
+## Händelser {#events}
 
 Med händelser kan ni utlösa era resor helt och hållet för att skicka meddelanden i realtid till den person som flyger in på resan.
 
 I händelsekonfigurationen konfigurerar du de händelser som förväntas under resorna. Data för inkommande händelser normaliseras enligt Adobe Experience Data Model (XDM). Händelser kommer från API för strömningsinmatning för autentiserade och ej autentiserade händelser (till exempel händelser i Adobe Mobile SDK). [Läs mer](../../using/event/about-events.md)
 
-## Instruktioner
+## Instruktioner {#actions}
 
 Journey Optimizer meddelandefunktioner är inbyggda: behöver du bara utforma innehållet och publicera meddelandet. Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en anpassad åtgärd. [Läs mer](../../using/action/action.md)
 

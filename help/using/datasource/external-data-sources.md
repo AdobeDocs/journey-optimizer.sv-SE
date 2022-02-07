@@ -6,14 +6,14 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
-source-git-commit: bcc77934464b6211cbb03e8830b456ecc157cb80
+source-git-commit: 7588a675319324e43bbc61a71b1fdfaab9cce93a
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 88%
 
 ---
 
-# Externa datakällor {#concept_t2s_kqt_52b}
+# Externa datakällor {#external-data-sources}
 
 Med externa datakällor kan du definiera en anslutning till tredjepartssystem om du till exempel använder ett bokningssystem för hotell som kontrollerar om personen har registrerat ett rum. I motsats till den inbyggda datakällan i Adobe Experience Platform kan du skapa så många externa datakällor som behövs.
 
@@ -53,7 +53,7 @@ Här följer de viktigaste stegen för att skapa och konfigurera en ny extern da
 
    ![](../assets/journey27.png)
 
-1. Konfigurera autentiseringen beroende på den externa tjänstens konfiguration: **[!UICONTROL No authentication]**, **[!UICONTROL Basic]**, **[!UICONTROL Custom]** eller **[!UICONTROL API key]**. Mer information om det anpassade autentiseringsläget finns i [det här avsnittet](../datasource/external-data-sources.md#section_wjp_nl5_nhb). I vårt exempel väljer vi:
+1. Konfigurera autentiseringen beroende på den externa tjänstens konfiguration: **[!UICONTROL No authentication]**, **[!UICONTROL Basic]**, **[!UICONTROL Custom]** eller **[!UICONTROL API key]**. Mer information om det anpassade autentiseringsläget finns i [det här avsnittet](../datasource/external-data-sources.md#custom-authentication-mode). I vårt exempel väljer vi:
 
    * **[!UICONTROL Type]**: &quot;API-nyckel&quot;
    * **[!UICONTROL Name]**: &quot;appid&quot; (det här är API-nyckelns parameternamn)
@@ -87,7 +87,7 @@ Klicka på **[!UICONTROL Save]**.
 
 Datakällan är nu konfigurerad och redo att användas i dina resor. Du kan till exempel använda den i dina villkor eller för att personalisera ett e-postmeddelande. Om temperaturen är över 30 °C kan du välja att skicka ett visst meddelande.
 
-## Anpassat autentiseringsläge{#section_wjp_nl5_nhb}
+## Anpassat autentiseringsläge{#custom-authentication-mode}
 
 >[!CONTEXTUALHELP]
 >id="jo_authentication_payload"

@@ -1,11 +1,12 @@
 ---
 title: Anpassningssyntax
-description: Lär dig använda personaliseringssyntax
+description: Lär dig hur du använder personaliseringssyntax.
 feature: Personalization
 topic: Personalization
 role: Data Engineer
 level: Intermediate
-source-git-commit: 50e12a28ed9f94133a9810a460172d34ad3a4593
+exl-id: 5a562066-ece0-4a78-92a7-52bf3c3b2eea
+source-git-commit: b43e3432ede1d4985e0a6b57b57c5efc3cf60c50
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 3%
@@ -28,7 +29,7 @@ där:
 * `profile` är ett namnutrymme.
 * `person.name` är en token som består av attribut. Attributstrukturen definieras i ett Adobe Experience Platform XDM-schema. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target=&quot;_blank&quot;}.
 
-## Allmänna syntaxregler
+## Allmänna syntaxregler {#general-rules}
 
 Identifierare kan vara vilket Unicode-tecken som helst utom för följande:
 
@@ -75,7 +76,7 @@ Lär dig hur du utnyttjar profilattribut under förhållanden i [det här avsnit
 >[!NOTE]
 >Mer information om segmenterings- och segmenteringstjänster finns i [det här avsnittet](../segment/about-segments.md).
 
-## Erbjudanden
+## Erbjudanden {#offers-syntax}
 
 Med det här namnutrymmet kan du referera till befintliga offertbeslut.
 Om du vill hänvisa till ett erbjudande måste du deklarera en sökväg med den information som definierar ett erbjudande.
@@ -127,7 +128,7 @@ Block är uttryck som har ett blocköppningsblock ({{# }}) och closing ({/}}).
 >
 >Hjälpfunktionerna beskrivs i [det här avsnittet](functions/helpers.md).
 
-## Literala typer
+## Literala typer {#literal-types}
 
 [!DNL Adobe Journey Optimizer] har stöd för följande literala typer:
 
@@ -146,7 +147,7 @@ Block är uttryck som har ett blocköppningsblock ({{# }}) och closing ({/}}).
 
 Med Journey Optimizer kan du anpassa en eller flera URL-adresser i meddelandet genom att lägga till anpassningsfält till dem. Så här gör du:
 
-* Skapa en länk i ditt e-postinnehåll eller push-innehåll. Mer information om hur du skapar länkar finns i [den här sidan](../message-tracking.md#insert-links).
+* Skapa en länk i ditt e-postinnehåll eller push-innehåll. Mer information om hur du skapar länkar finns i [den här sidan](../messages/message-tracking.md#insert-links).
 * Klicka på personaliseringsikonen. Den här ikonen är tillgänglig för följande typer av länkar: **Extern länk**, **Länk för att avbryta prenumeration** och **Avanmäl dig**.
 
 ![](assets/perso-url.png)

@@ -6,16 +6,16 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: dc05d88773dc148dc0e5387953f49c4d03b1888f
+source-git-commit: b43e3432ede1d4985e0a6b57b57c5efc3cf60c50
 workflow-type: tm+mt
 source-wordcount: '793'
 ht-degree: 0%
 
 ---
 
-# Lägg till ett meddelande i en resa
+# Lägg till ett meddelande i en resa{#add-a-message-in-a-journey}
 
-[!DNL Journey Optimizer] meddelandefunktionerna är inbyggda, du behöver bara utforma innehållet och publicera meddelandet. Se [det här avsnittet](../get-started-content.md). Sedan lägger du bara till ett push- eller e-postmeddelande som utformats med Journey Optimizer under resan.
+[!DNL Journey Optimizer] meddelandefunktionerna är inbyggda, du behöver bara utforma innehållet och publicera meddelandet. Se [det här avsnittet](../messages/get-started-content.md). Sedan lägger du bara till ett push- eller e-postmeddelande som utformats med Journey Optimizer under resan.
 
 Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en anpassad åtgärd. Läs mer om detta [section](../action/action.md).
 
@@ -49,7 +49,7 @@ Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa e
 
 ## E-postparametrar och push-parametrar
 
-The **[!UICONTROL Email parameters]** och **[!UICONTROL Push parameters]** -avsnitt visar skrivskyddade fält. Du utför vanligtvis den här konfigurationen när du skapar meddelandet. Se [det här avsnittet](../get-started-content.md).
+The **[!UICONTROL Email parameters]** och **[!UICONTROL Push parameters]** -avsnitt visar skrivskyddade fält. Du utför vanligtvis den här konfigurationen när du skapar meddelandet. Se [det här avsnittet](../messages/get-started-content.md).
 
 ![](../assets/jo-message4.png)
 

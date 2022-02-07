@@ -6,20 +6,20 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 97dc9af3-ca31-4512-aad2-f959dfc9ad0b
-source-git-commit: 701b8a46b5f22c31bee479ddfb63f8e399cee4a1
+source-git-commit: 9873af4caf7cd8bc4e9672748414bf78f28ed30b
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 6%
 
 ---
 
-# Skapa ett personaliserat erbjudande
+# Skapa ett personaliserat erbjudande {#create-personalized-offer}
 
 Ett personaliserat erbjudande är ett anpassningsbart marknadsföringsmeddelande som baseras på regler och begränsningar för behörighet.
 
 Du kan skapa ett personaliserat erbjudande genom att göra en POST till [!DNL Offer Library] API, samtidigt som du anger ditt behållar-ID.
 
-## Sidhuvuden för acceptera och innehållstyp
+## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
 I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
 

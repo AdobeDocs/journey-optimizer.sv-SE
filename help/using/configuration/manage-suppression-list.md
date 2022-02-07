@@ -1,22 +1,12 @@
 ---
 title: Hantera listan över inaktiveringar
 description: Lär dig hur du får åtkomst till och hanterar Journey Optimizer-listan över inaktiveringar
-page-status-flag: never-activated
-uuid: null
-contentOwner: null
-products: null
-audience: administrators
-content-type: reference
-topic-tags: null
-discoiquuid: null
-internal: n
-snippet: y
 feature: Application Settings
 topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 06a7abc2ada930356cbaf45ce01eed5e3156f2e3
 workflow-type: tm+mt
 source-wordcount: '911'
 ht-degree: 1%
@@ -31,7 +21,7 @@ Med [!DNL Journey Optimizer]kan du övervaka alla e-postadresser som automatiskt
 * Adresserar som konsekvent studsar utan extra kostnad och kan påverka e-postens anseende negativt om du fortsätter att inkludera dem i dina leveranser.
 * Mottagare som skickar skräppost av något slag mot ett av dina e-postmeddelanden.
 
-Sådana e-postadresser samlas automatiskt in i Journey Optimizer **utelämningslista**. Läs mer om begrepp och användning i listan över inaktiveringar i [det här avsnittet](../suppression-list.md).
+Sådana e-postadresser samlas automatiskt in i Journey Optimizer **utelämningslista**. Läs mer om begrepp och användning i listan över inaktiveringar i [det här avsnittet](../messages/suppression-list.md).
 
 ## Åtkomst till listan över inaktiveringar {#access-suppression-list}
 
@@ -41,15 +31,9 @@ Om du vill få tillgång till en detaljerad lista över e-postadresser som inte 
 >
 >Behörigheterna att visa, exportera och hantera undertryckningslistan är begränsade till [Reseadministratörer](../administration/ootb-product-profiles.md#journey-administrator). Läs mer om hantering [!DNL Journey Optimizer] användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
 
-<!--![](../assets/suppression-list-link.png)
-
-You can also display the suppression list content using the **[!UICONTROL View suppression list]** link through the **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL General]** menu, but this view does not allow you to edit the list.-->
-
 ![](../assets/suppression-list-access.png)
 
 Det finns filter som hjälper dig att bläddra igenom listan.
-
-<!--![](../assets/suppression-list-filters-temp.png)-->
 
 ![](../assets/suppression-list-filters.png)
 
@@ -65,7 +49,7 @@ Om du av misstag lägger till en e-postadress eller en domän manuellt, visas **
 
 ![](../assets/suppression-list-delete.png)
 
-Om du tar bort en e-postadress eller en domän från listan över inaktiveringar kommer du att börja leverera till den här adressen eller domänen igen. Detta kan få allvarliga konsekvenser för din leveransförmåga och IP-anseende, vilket i slutänden kan leda till att din IP-adress eller sändande domän blockeras. Läs mer om hur viktigt det är att undertryckningslistan finns i [det här avsnittet](../suppression-list.md).
+Om du tar bort en e-postadress eller en domän från listan över inaktiveringar kommer du att börja leverera till den här adressen eller domänen igen. Detta kan få allvarliga konsekvenser för din leveransförmåga och IP-anseende, vilket i slutänden kan leda till att din IP-adress eller sändande domän blockeras. Läs mer om hur viktigt det är att undertryckningslistan finns i [det här avsnittet](../messages/suppression-list.md).
 
 >[!NOTE]
 >
@@ -91,17 +75,11 @@ Undertryckningskategorierna är följande:
 
 * **Mjuk**: Mjuka fel skickar en adress till listan när felräknaren når gränsvärdet. [Läs mer om återförsök](retries.md)
 
-   <!--
-    **Ignored**:
-    * When the error occurred for a valid email address but is known to be temporary, such as a failed connection attempt or a temporary technical issue, the email address is added to the suppression list once the error counter reaches the limit threshold. [Learn more on retries](retries.md).
-    * When the error is the result of a spam complaint, the email address of the recipient who issued the complaint is immediately sent to the suppression list.
-    -->
-
 * **Manuell**: Du kan också lägga till en e-postadress eller en domän manuellt i listan över inaktiveringar. [Läs mer](#add-addresses-and-domains)
 
 >[!NOTE]
 >
->Läs mer om mjuka studsar och hårda studsar i [Leveransfel](../suppression-list.md#delivery-failures) -avsnitt.
+>Läs mer om mjuka studsar och hårda studsar i [Leveransfel](../messages/suppression-list.md#delivery-failures) -avsnitt.
 
 För varje e-postadress som visas kan du även kontrollera **[!UICONTROL Type]** (e-post eller domän), **[!UICONTROL Reason]** för att utesluta den, vem som lagt till den och datumet/tiden som den lades till i listan över inaktiveringar.
 
@@ -121,27 +99,7 @@ Möjliga orsaker till leveransfel är:
 
 >[!NOTE]
 >
->Användare som avbeställer prenumerationen får inte e-post från [!DNL Journey Optimizer]Därför kan deras e-postadresser inte skickas till listan över inaktiveringar. Deras val hanteras på Experience Platform-nivå. [Läs mer om att avanmäla dig](../consent.md)
-
-<!--
-Removed from the table provided by SparkPost/Momentum:
-| **[!UICONTROL Undetermined]** | The bounce reason received from the recipient domain Message Transfer Agent (MTA) could not be identified. | Ignored |
-| **[!UICONTROL Too Large]** | The message bounced because it was too large for the recipient. [Retries](retries.md) will be performed: you can edit the message size and re-inject it for delivery. | Ignored |
-| **[!UICONTROL Timeout]** | The message timed out, meaning it soft bounced and reached the message retry limit (3.5 days). | Ignored |
-| **[!UICONTROL Admin Failure]** | The message was failed according to the policies configured by the sending system administrator. ///For example, if emails are blackholed at the global, domain or binding level using the "blackhole" directive, this bounce code is used. | Ignored |
-| **[!UICONTROL Generic Bounce: No RCPT]** | No recipient could be determined for the message. | Ignored |
-| **[!UICONTROL Generic Bounce]** | The message failed for unspecified reasons. | Ignored |
-| **[!UICONTROL Mail Block]** | The message was blocked by the receiver (i.e. recipient MTA). | Ignored |
-| **[!UICONTROL Spam Block]** | The message was blocked by the receiver as coming from a known spam source. It could be a sending IP block for example. | Ignored |
-| **[!UICONTROL Spam Content]** | The message content was blocked by the receiver (recipient MTA) as spam. | Ignored |
-| **[!UICONTROL Prohibited Attachment]** | The message was blocked by the receiver because it contained an attachment. | Ignored |
-| **[!UICONTROL Auto-Reply]** | The message is an auto-reply/vacation mail. | Ignored |
-| **[!UICONTROL Transient Failure]** | Message transmission has been temporarily delayed. | Ignored |
-| **[!UICONTROL Subscribe]** | The message is a subscribe request. | Ignored |
-| **[!UICONTROL Unsubscribe]** | The message is an unsubscribe request. | Hard |
--->
-
-<!--Note to add eventually: If a user is subscribed and [!DNL Journey Optimizer] fails to send emails to their subscribed email address, they will get added to the suppression list.-->
+>Användare som avbeställer prenumerationen får inte e-post från [!DNL Journey Optimizer]Därför kan deras e-postadresser inte skickas till listan över inaktiveringar. Deras val hanteras på Experience Platform-nivå. [Läs mer om att avanmäla dig](../messages/consent.md)
 
 ## Lägga till adresser och domäner manuellt {#add-addresses-and-domains}
 

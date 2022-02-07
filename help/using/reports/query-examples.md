@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 26ad12c3-0a2b-4f47-8f04-d25a6f037350
-source-git-commit: e1d0afb70af4ab31db56f90c189c085ba8d1eb7c
+source-git-commit: 6d744c0289e81ab2229f02c44ead43943b945b89
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 4%
@@ -17,9 +17,9 @@ ht-degree: 4%
 
 I det här avsnittet visas flera vanliga exempel för att fråga efter händelser i resesteg i datasjön.
 
-## Meddelande-/åtgärdsfel
+## Meddelande-/åtgärdsfel {#message-action-errors}
 
-### Lista över alla fel som påträffats under resor
+### Lista över alla fel som påträffats under resor {#error-list-journey}
 
 Med den här frågan kan du lista alla fel som påträffas under resor när ett meddelande/en åtgärd körs.
 
@@ -45,9 +45,9 @@ GROUP BY _experience.journeyOrchestration.stepEvents.actionExecutionError
 
 Den här frågan returnerar alla olika fel som inträffade när en åtgärd kördes i en resa tillsammans med antalet gånger åtgärden utfördes.
 
-## Profilbaserade frågor
+## Profilbaserade frågor {#profile-based-queries}
 
-### Sök efter om en profil har angett en viss resa
+### Sök efter om en profil har angett en viss resa {#profile-entered-journey}
 
 _Data Lake-fråga_
 
@@ -69,7 +69,7 @@ _experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com'
 
 Resultatet måste vara större än 0. Den här frågan returnerar det exakta antalet gånger en profil har påbörjat en resa.
 
-### Sök efter om en profil skickades ett visst meddelande
+### Sök efter om en profil skickades ett visst meddelande {#profile-specific-message}
 
 **Metod 1:** om namnet på ditt meddelande inte är unikt i resan (det används på flera platser).
 
@@ -119,7 +119,7 @@ _experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com'
 
 Frågan returnerar listan med alla meddelanden tillsammans med antalet som anropats för den valda profilen.
 
-## Hitta alla meddelanden en profil har tagit emot de senaste 30 dagarna
+## Hitta alla meddelanden en profil har tagit emot de senaste 30 dagarna {#message-received-30-days}
 
 _Data Lake-fråga_
 
@@ -145,7 +145,7 @@ GROUP BY _experience.journeyOrchestration.stepEvents.nodeName
 
 Frågan returnerar listan med alla meddelanden tillsammans med antalet som anropats för den valda profilen.
 
-### Hitta alla resor en profil har registrerat under de senaste 30 dagarna
+### Hitta alla resor en profil har registrerat under de senaste 30 dagarna {#profile-entered-30-days}
 
 _Data Lake-fråga_
 
@@ -169,7 +169,7 @@ GROUP BY _experience.journeyOrchestration.stepEvents.journeyVersionName
 
 Frågan returnerar listan med alla resenamn tillsammans med det antal gånger som den efterfrågade profilen angav resan.
 
-### Antal profiler som är kvalificerade för en resa dagligen
+### Antal profiler som är kvalificerade för en resa dagligen {#profile-qualified}
 
 _Data Lake-fråga_
 
@@ -193,9 +193,9 @@ ORDER BY DATE(timestamp) desc
 
 Frågan returnerar, för den angivna perioden, antalet profiler som har skickats in till resan varje dag. Om en profil anges via flera identiteter räknas den två gånger. Om återinträde är aktiverat kan antalet profiler dupliceras över olika dagar om det återgår till resan på en annan dag.
 
-## Resebaserade frågor
+## Resebaserade frågor {#journey-based-queries}
 
-### Antal dagliga aktiva resor
+### Antal dagliga aktiva resor {#daily-active-journeys}
 
 _Data Lake-fråga_
 

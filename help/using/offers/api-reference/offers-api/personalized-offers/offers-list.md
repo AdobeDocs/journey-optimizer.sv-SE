@@ -6,14 +6,14 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 45d51918-1106-4b6b-b383-8ab4d9a4f7af
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 9873af4caf7cd8bc4e9672748414bf78f28ed30b
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 3%
 
 ---
 
-# Lista personaliserade erbjudanden
+# Lista personaliserade erbjudanden {#list-personalized-offers}
 
 Ett personaliserat erbjudande är ett anpassningsbart marknadsföringsmeddelande som baseras på regler och begränsningar för behörighet.
 
@@ -44,11 +44,11 @@ curl -X GET \
   -H 'x-sandbox-name: {SANDBOX_NAME}'
 ```
 
-## Använda frågeparametrar
+## Använda frågeparametrar {#using-query-parameters}
 
 Du kan använda frågeparametrar för att sidgranska och filtrera resultat när du visar resurser.
 
-### Sidindelning
+### Sidindelning {#paging}
 
 De vanligaste frågeparametrarna för sidindelning är:
 

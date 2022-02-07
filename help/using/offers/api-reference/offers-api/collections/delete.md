@@ -6,14 +6,14 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 2eaa0092-2436-4679-83f1-7530ab4a858f
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 9873af4caf7cd8bc4e9672748414bf78f28ed30b
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 5%
 
 ---
 
-# Ta bort en samling
+# Ta bort en samling {#delete-collection}
 
 Ibland kan det vara nödvändigt att ta bort (DELETE) en samling. Endast samlingar som du skapar i innehavarbehållaren kan tas bort. Detta görs genom att DELETE begär [!DNL Offer Library] API som använder $id för den samling du vill ta bort.
 

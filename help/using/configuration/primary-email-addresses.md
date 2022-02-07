@@ -1,25 +1,15 @@
 ---
-title: Allmänna meddelandeinställningar
-description: Lär dig hur du anger e-postadresser
-page-status-flag: never-activated
-uuid: null
-contentOwner: null
-products: null
-audience: administrators
-content-type: reference
-topic-tags: null
-discoiquuid: null
-internal: n
-snippet: y
+title: 'Ändra de primära e-postadresserna '
+description: Lär dig hur du avgör vilken e-postadress som ska användas från profiltjänsten.
 feature: Application Settings
 topic: Administration
 role: Admin
 level: Intermediate
 exl-id: fe2f6516-7790-4501-a3a1-3d7cb94d7874
-source-git-commit: bbc2adabac63ffb813ea2630f29aec552fc3f4df
+source-git-commit: 4e52be8fb4a6b996d20cc831247b7e4f6d333840
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 5%
+source-wordcount: '125'
+ht-degree: 4%
 
 ---
 

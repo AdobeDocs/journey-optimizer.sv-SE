@@ -5,7 +5,8 @@ feature: Personalization
 topic: Personalization
 role: Data Engineer
 level: Intermediate
-source-git-commit: 50e12a28ed9f94133a9810a460172d34ad3a4593
+exl-id: d188bb6b-2924-4818-b007-be660cce249c
+source-git-commit: 06067a9fb5c7fb436bfa4843d07fc0a46fdf74ba
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 0%

@@ -1,19 +1,19 @@
 ---
 title: Konfigurera urval av erbjudanden i beslut
-description: Lär dig hur du hanterar urval av erbjudanden i beslut.
+description: Lär dig hur du hanterar urval av erbjudanden i beslut
 feature: Offers
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: 8c7135d7-bf5a-4671-afdf-afec60907a56
-source-git-commit: caaf3942853adb4e5eb16a3dd303ca1f088ce23b
+source-git-commit: 06a7abc2ada930356cbaf45ce01eed5e3156f2e3
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 4%
 
 ---
 
-# Konfigurera urval av erbjudanden i beslut {#offers-selection-in-activities}
+# Konfigurera urval av erbjudanden i beslut {#offers-selection-in-decisions}
 
 Om flera erbjudanden är berättigade för en viss placering kan du välja den metod som ska användas för att välja det bästa erbjudandet för varje profil när du konfigurerar ett beslut (som tidigare kallades erbjudandeaktivitet). Du kan rangordna erbjudanden genom att:
 * Prioritet
@@ -22,7 +22,7 @@ Om flera erbjudanden är berättigade för en viss placering kan du välja den m
 
 ![](../../assets/offer-rank-by.png)
 
-## Prioritet {#about-offers-priority}
+## Prioritet {#offer-priority}
 
 När flera erbjudanden kan komma i fråga för en viss placering i ett beslut (tidigare kallat erbjudandeaktivitet) är det som standard det högsta erbjudandet **prioritet** kommer att levereras till kunderna först.
 
@@ -86,6 +86,3 @@ När en rankningsstrategi har skapats kan du tilldela den till en placering i et
 
 Om flera erbjudanden är giltiga, avgör det tränade modellsystemet vilket erbjudande som ska presenteras först för en viss placering.
 
-<!--Result? Describe the impact for the user, i.e. what's the effect of selecting this ranking strategy for this collection/placement.-->
-
-<!--Click **[!UICONTROL Next]** to confirm and save your decision.-->

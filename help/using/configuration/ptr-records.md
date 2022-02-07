@@ -1,13 +1,12 @@
 ---
 title: PTR-poster
 description: Lär dig hantera PTR-poster
-audience: administrators
 feature: Application Settings
 topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
-source-git-commit: bbc2adabac63ffb813ea2630f29aec552fc3f4df
+source-git-commit: 06a7abc2ada930356cbaf45ce01eed5e3156f2e3
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -16,13 +15,13 @@ ht-degree: 0%
 
 # PTR-poster {#ptr-records}
 
-## Om PTR-poster
+## Om PTR-poster {#about-ptr-records}
 
 En pekarpost (PTR) är en typ av DNS-post (Domain Name System) som tillhandahåller det domännamn som är länkat till en IP-adress.
 
 Med PTR-poster kan e-postservrar som tar emot e-post kontrollera e-postservrarnas äkthet genom att identifiera om deras IP-adresser motsvarar de namn som servrarna ansluter till.
 
-## Få åtkomst till dina underdomäners PTR-poster
+## Få åtkomst till dina underdomäners PTR-poster {#access-ptr-records}
 
 En gång [en underdomän har delegerats](delegate-subdomain.md) i Adobe Journey Optimizer skapas en PTR-post automatiskt och kopplas till den här underdomänen. Du kommer åt den via **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL PTR records]** -menyn.
 
@@ -44,7 +43,7 @@ Du kan ändra en PTR-post om du vill redigera den underdomän som är associerad
 >
 >Du kan inte ändra **[!UICONTROL IP]** och **[!UICONTROL PTR record]** fält.
 
-### Fullt delegerade underdomäner
+### Fullt delegerade underdomäner {#fully-delegated-subdomains}
 
 Redigera en PTR-post med en underdomän som är [helt delegerad](delegate-subdomain.md#full-subdomain-delegation) till Adobe följer du stegen nedan.
 
@@ -83,7 +82,7 @@ Så här redigerar du en PTR-post med en underdomän som har delegerats till Ado
 
 1. Klicka **[!UICONTROL Save]** för att bekräfta dina ändringar.
 
-## Kontrollera uppdateringsinformation för PTR-post
+## Kontrollera uppdateringsinformation för PTR-post {#check-ptr-record-update}
 
 A **[!UICONTROL Processing]** visas bredvid namnet på PTR-posten i listan.
 
@@ -97,7 +96,7 @@ Du kan se information som uppdateringsstatus och begärda ändringar.
 
 ![](../assets/ptr-record-updates.png)
 
-## Uppdateringsstatus för PTR-post
+## Uppdateringsstatus för PTR-post {#ptr-record-update-statuses}
 
 En PTR-postuppdatering kan ha följande status:
 
@@ -105,9 +104,9 @@ En PTR-postuppdatering kan ha följande status:
 * ![](../assets/do-not-localize/ptr-record-success.png) **[!UICONTROL Success]**: Den uppdaterade PTR-posten har verifierats och den nya underdomänen är nu associerad med IP-adressen.
 * ![](../assets/do-not-localize/ptr-record-failed.png) **[!UICONTROL Failed]**: En eller flera kontroller misslyckades under PTR-postuppdateringsverifieringen.
 
-### Bearbetar
+### Bearbetar {#processing}
 
-Flera leveranskontroller kommer att utföras för att verifiera att den nya underdomänen som ska associeras med IP-adressen är giltig. <!--The processing time is around **48h-72h**, and can take up to **7-10 days**. Learn more on the checks performed during the validation cycle in [this section](#create-message-preset).-->
+Flera leveranskontroller kommer att utföras för att verifiera att den nya underdomänen som ska associeras med IP-adressen är giltig. <!--The processing time is around **48h-72h**, and can take up to **7-10 days**.-->
 
 >[!NOTE]
 >
@@ -115,11 +114,11 @@ Flera leveranskontroller kommer att utföras för att verifiera att den nya unde
 
 Under valideringsprocessen är den gamla underdomänen fortfarande kopplad till IP-adressen.
 
-### Lyckades
+### Lyckades {#success}
 
 När valideringsprocessen har slutförts kopplas den nya underdomänen automatiskt till IP-adressen.
 
-### Misslyckades
+### Misslyckades {#failes}
 
 Om valideringsprocessen misslyckas visas den äldre PTR-posten. Den giltiga underdomänen som tidigare var associerad med IP-adressen ändras inte.
 

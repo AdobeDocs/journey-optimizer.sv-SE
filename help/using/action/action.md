@@ -7,7 +7,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 7f0cda1d-daf0-4d4c-9978-ddef81473813
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: b43e3432ede1d4985e0a6b57b57c5efc3cf60c50
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 68%
@@ -23,7 +23,7 @@ ht-degree: 68%
 
 Åtgärder är anslutningar genom vilka du levererar personaliserade upplevelser till kunder i realtid såsom push-meddelanden, e-post, SMS eller andra sätt för digitalt engagemang som du använder i företaget.
 
-[!DNL Journey Optimizer] levereras med inbyggd meddelandefunktion. Se [det här avsnittet](../get-started-content.md).
+[!DNL Journey Optimizer] levereras med inbyggd meddelandefunktion. Se [det här avsnittet](../messages/get-started-content.md).
 
 Om du har Adobe Campaign v7 eller v8 blir en integrering tillgänglig på begäran. Se [den här sidan](../action/acc-action.md).
 
@@ -37,6 +37,6 @@ Med anpassade åtgärder kan du konfigurera anslutningar med ett tredjepartssyst
 
 Åtgärderna finns tillgängliga på den vänstra paletten under resan, i **[!UICONTROL Action]** kategori. Läs [den här sidan](../building-journeys/about-journey-activities.md#action-activities).
 
-Om du vill visa åtgärdslistan eller konfigurera en ny åtgärd väljer du **[!UICONTROL Configurations]** på menyn Administration. I  **[!UICONTROL Actions]** avsnitt, klicka **[!UICONTROL Manage]**. Listan med åtgärder visas. Se [den här sidan](../user-interface.md) för mer information om gränssnittet.
+Om du vill visa åtgärdslistan eller konfigurera en ny åtgärd väljer du **[!UICONTROL Configurations]** på menyn Administration. I  **[!UICONTROL Actions]** avsnitt, klicka **[!UICONTROL Manage]**. Listan med åtgärder visas. Se [den här sidan](../start/user-interface.md) för mer information om gränssnittet.
 
 ![](../assets/custom1.png)

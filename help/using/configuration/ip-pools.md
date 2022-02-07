@@ -1,29 +1,19 @@
 ---
 title: Skapa IP-pooler
 description: '"Lär dig hantera IP-pooler"'
-page-status-flag: never-activated
-uuid: null
-contentOwner: null
-products: null
-audience: administrators
-content-type: reference
-topic-tags: null
-discoiquuid: null
-internal: n
-snippet: y
 feature: Application Settings
 topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 606334c3-e3e6-41c1-a10e-63508a3ed747
-source-git-commit: 7d7c1b72530d99b8cceb1067f2576ad66c0052a6
+source-git-commit: 06a7abc2ada930356cbaf45ce01eed5e3156f2e3
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%
 
 ---
 
-# Skapa IP-pooler
+# Skapa IP-pooler {#create-ip-pools}
 
 ## Om IP-pooler {#about-ip-pools}
 
@@ -85,8 +75,6 @@ Uppdateringen träder i kraft omedelbart eller asynkront, beroende på vilken IP
 
 * Om IP-poolen är **not** som valts i en meddelandeförinställning uppdateras omedelbart (**[!UICONTROL Success]** status).
 * Om IP-poolen **är** som valts i en meddelandeförinställning kan uppdateringen ta upp till 7-10 arbetsdagar (**[!UICONTROL Processing]** status).
-
-<!--If a message preset has been associated with the IP pool, you first need to remove it before editing the IP pool. Once the your modifications have been done, you can associate the message preset again.-->
 
 Om du vill kontrollera IP-poolens uppdateringsstatus klickar du på **[!UICONTROL More actions]** och markera **[!UICONTROL Recent updates]**.
 

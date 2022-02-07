@@ -1,14 +1,14 @@
 ---
 title: Personalisering använder case&colon; e-post om att kunden överger en varukorg
-description: Lär dig hur du anpassar ett meddelande med hjälp av hjälpfunktioner.
+description: Lär dig hur du anpassar brödtexten i ett e-postmeddelande med hjälp av ett användningsfall.
 feature: Personalization
 topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 9c9598c0-6fb1-4e2f-b610-ccd1a80e516e
-source-git-commit: 67902b30bb24cad8d08d5bd6d83428885f4987b5
+source-git-commit: b43e3432ede1d4985e0a6b57b57c5efc3cf60c50
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1019'
 ht-degree: 2%
 
 ---
@@ -26,8 +26,8 @@ Du använder följande typer av hjälpfunktioner:
 <!-- **Context**: personalization based on contextual data from the journey -->
 
 Innan du börjar bör du kontrollera hur du konfigurerar dessa element:
-* Ett e-postmeddelande. [Läs mer](../create-message.md)
-* Innehållet i ett e-postmeddelande. [Läs mer](../create-email-content.md).
+* Ett e-postmeddelande. [Läs mer](../messages/create-message.md)
+* Innehållet i ett e-postmeddelande. [Läs mer](../messages/create-email-content.md).
 * En enastående händelse. [Läs mer](../event/about-events.md).
 * En resa som börjar med ett evenemang. [Läs mer](../building-journeys/using-the-journey-designer.md).
 
@@ -324,15 +324,15 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 1. Kontrollera att det inte finns något fel och publicera sedan resan.
 
 
-## Relaterade ämnen
+## Relaterade ämnen {#related-topics}
 
-### Handtag, funktioner
+### Handtag, funktioner {#handlebars}
 
 * [Hjälpmedel](functions/helpers.md)
 
 * [Strängfunktioner](functions/string.md)
 
-### Användningsfall
+### Användningsfall {#use-case}
 
 * [Personalisering med profilinformation, kontext och erbjudande](personalization-use-case.md)
 

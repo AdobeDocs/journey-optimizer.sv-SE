@@ -9,8 +9,7 @@ ht-degree: 15%
 
 Journey Optimizer produktdokumentation
 
-Adobe Journey Optimizer är en flexibel och skalbar tillämpning för att skapa och leverera personaliserade, uppkopplade och vältajmade
-kundupplevelser i alla appar, enheter och kanaler.
+Adobe Journey Optimizer är en flexibel och skalbar tillämpning för att skapa och leverera personaliserade, sammankopplade och vältajmade kundupplevelser i alla appar, enheter och kanaler.
 
 Ämnen:
 

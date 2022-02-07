@@ -6,14 +6,14 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: e2d1f093-c1b8-4c4c-a20f-4bd7c2ea5269
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 9873af4caf7cd8bc4e9672748414bf78f28ed30b
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 1%
 
 ---
 
-# Söka efter en tagg
+# Söka efter en tagg {#look-up-tag}
 
 Du kan söka efter specifika taggar genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller någon av taggarna `@id` eller namnet på taggen i sökvägen för begäran.
 

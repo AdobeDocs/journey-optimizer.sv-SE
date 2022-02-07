@@ -6,16 +6,16 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
-source-git-commit: 2c27942ece935c715ed2dea4d998705224a75089
+source-git-commit: 3c8c059e5e3953807b9fc2d8d0eded0d00e49003
 workflow-type: tm+mt
 source-wordcount: '1597'
 ht-degree: 2%
 
 ---
 
-# Testa resan{#testing_the_journey}
+# Testa din resa{#testing_the_journey}
 
-Innan du kan testa din resa måste du åtgärda eventuella fel. Se [det här avsnittet](../building-journeys/troubleshooting.md#section_h3q_kqk_fhb).
+Innan du kan testa din resa måste du åtgärda eventuella fel. Se [det här avsnittet](../building-journeys/troubleshooting.md#checking-for-errors-before-testing).
 
 Du kan testa din resa innan den publiceras med testprofiler. På så sätt kan ni analysera hur individer flödar in på resan och felsöka före publicering.
 
@@ -23,7 +23,7 @@ Det är bara testprofiler som kan gå in på en resa i testläge. Du kan antinge
 
 Så här använder du testläget:
 
-1. Innan du testar din resa kontrollerar du att den är giltig och att det inte finns något fel. Du kommer inte att kunna starta ett test av en resa med fel. Se [det här avsnittet](../building-journeys/troubleshooting.md#section_h3q_kqk_fhb). En varningssymbol visas om det finns fel.
+1. Innan du testar din resa kontrollerar du att den är giltig och att det inte finns något fel. Du kommer inte att kunna starta ett test av en resa med fel. Se [det här avsnittet](../building-journeys/troubleshooting.md#checking-for-errors-before-testing). En varningssymbol visas om det finns fel.
 
 1. Aktivera testläget genom att klicka på **[!UICONTROL Test]** i det övre högra hörnet.
 

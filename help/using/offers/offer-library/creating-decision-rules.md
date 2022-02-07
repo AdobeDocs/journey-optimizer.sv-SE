@@ -1,19 +1,19 @@
 ---
 title: Skapa beslutsregler
-description: Lär dig hur du skapar beslutsregler i Adobe Experience Platform.
+description: Lär dig hur du skapar beslutsregler som definierar vilka erbjudanden som kan visas
 feature: Offers
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: 401ce05b-412b-4fa0-a516-bf75727f6387
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 0545cda9f91ff18791310a4ee2463b2287ac7557
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '286'
 ht-degree: 4%
 
 ---
 
-# Skapa beslutsregler {#creating-decision-rules}
+# Skapa beslutsregler {#create-decision-rules}
 
 Du kan skapa beslutsregler för erbjudanden baserat på data som är tillgängliga i Adobe Experience Platform. Beslutsregler avgör vem som kan visa ett erbjudande.
 

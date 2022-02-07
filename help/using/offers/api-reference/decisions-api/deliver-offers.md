@@ -6,14 +6,14 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 692d0aae-6fa1-40b8-a35f-9845d78317a3
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 2088b5ba2ec77e56644683e118e734acfe6707fc
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 1%
 
 ---
 
-# Leverera erbjudanden med API:t för beslut
+# Leverera erbjudanden med API:t för beslut {#deliver-offers-using-decisions-api}
 
 Med Beslutshantering kan ni skapa och leverera personaliserade erbjudandeupplevelser för slutanvändare i alla kanaler och i alla tillämpningar med hjälp av logiska funktioner och beslutsregler. Ett erbjudande är ett marknadsföringsmeddelande som kan ha kopplade regler som anger vem som kan se erbjudandet.
 
@@ -23,7 +23,7 @@ Den här självstudiekursen kräver en fungerande förståelse av API:er, särsk
 
 ➡️  [Upptäck den här funktionen i en video](#video)
 
-## Sidhuvuden för acceptera och innehållstyp
+## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
 I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
 
@@ -109,7 +109,7 @@ curl -X POST \
 | `xdm:propositionRequests.xdm:activityId` | Den unika beslutsidentifieraren. | `"xdm:activityId": "xcore:offer-activity:ffed0123"` |
 | `xdm:itemCount` | Antalet erbjudanden som ska returneras. Det högsta antalet är 30. | `"xdm:itemCount": 2` |
 | `xdm:profiles` | Det här objektet innehåller information om profilen som beslutet begärs för. För en API-begäran innehåller detta en profil. |
-| `xdm:profiles.xdm:identityMap` | Det här objektet innehåller en uppsättning slutanvändaridentiteter baserat på ID:ts namnutrymmesintegrationskod. Identitetskartan kan innehålla mer än en identitet för varje namnutrymme. Mer information om namnutrymmen finns i [den här sidan](../../../get-started-identity.md). | `Email: [{"xdm:id": "123@abc.com"}]` |
+| `xdm:profiles.xdm:identityMap` | Det här objektet innehåller en uppsättning slutanvändaridentiteter baserat på ID:ts namnutrymmesintegrationskod. Identitetskartan kan innehålla mer än en identitet för varje namnutrymme. Mer information om namnutrymmen finns i [den här sidan](../../../start/get-started-identity.md). | `Email: [{"xdm:id": "123@abc.com"}]` |
 | `xdm:profiles.xdm:decisionRequestId` | Det ID som genereras av klienten som kan användas för att unikt identifiera en profilbeslutsbegäran. Detta ID återkommer i svaret och påverkar inte resultatet av beslutet. | `"xdm:decisionRequestId": "0AA00002-0000-1337-c0de-c0fefec0fefe"` |
 | `xdm:allowDuplicatePropositions` | Det här objektet är kontrollstrukturen för reglerna för borttagning av dubbletter. Det består av en serie flaggor som anger om samma alternativ kan föreslås i en viss dimension. En flagga som är inställd på true innebär att dubbletter tillåts och ska inte tas bort i den kategori som flaggan anger. En flagga som är inställd på false innebär att beslutsmotorn inte ska göra samma förslag över dimensionen och i stället välja nästa bästa alternativ för ett av delbesluten. |
 | `xdm:allowDuplicatePropositions.xdm:acrossActivities` | Om värdet är true kan flera beslut tilldelas samma alternativ. | `"xdm:acrossActivities": true` |
@@ -203,6 +203,6 @@ Följande video är avsedd att ge stöd för din förståelse av komponenterna i
 
 >[!VIDEO](https://video.tv.adobe.com/v/329919/?quality=12)
 
-## Nästa steg
+## Nästa steg {#next-steps}
 
 Genom att följa den här API-guiden har du skapat och levererat erbjudanden med [!DNL Decisions] API. Mer information finns i [Översikt över beslutsfattandet](../../../offers/get-started/starting-offer-decisioning.md).

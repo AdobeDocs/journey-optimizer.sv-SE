@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 109ba212-f04b-425f-9447-708c8e0b3f51
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: dcdbf4a0cd6a93e56cbe97535515c1a6143db81b
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Ett heltäckande exempel på användning presenteras i detta [section](../buildi
 
 För varje konfigurerad åtgärd finns en åtgärdsaktivitet tillgänglig på paletten Resursdesigner. Se detta [section](../building-journeys/using-adobe-campaign-classic.md).
 
-## Viktiga anteckningar
+## Viktiga anteckningar {#important-notes}
 
 * Det finns ingen begränsning för meddelanden. Vi har som gräns antalet meddelanden som kan skickas till 50 000/timme baserat på vårt aktuella Campaign-SLA. Därför bör Journey Optimizer endast användas i enstaka fall (enskilda händelser, inte segment).
 
@@ -35,7 +35,7 @@ För varje konfigurerad åtgärd finns en åtgärdsaktivitet tillgänglig på pa
 
 * Du kan inte använda en Campaign-åtgärd med en segmentkvalificeringshändelse.
 
-## Förutsättningar
+## Förutsättningar {#prerequisites}
 
 I Campaign måste du skapa och publicera ett transaktionsmeddelande och tillhörande händelse. Se [Adobe Campaign-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html#transactional-messaging){target=&quot;_blank&quot;}.
 
@@ -58,7 +58,7 @@ Här är ett exempel:
 * **eventType**: det interna namnet på Campaign-händelsen
 * **ctx**: variabeln baserat på den personalisering du har i ditt meddelande.
 
-## Konfigurera åtgärden
+## Konfigurera åtgärden {#configure-action}
 
 I Journey Optimizer måste du konfigurera en åtgärd per transaktionsmeddelande. Följ de här stegen:
 

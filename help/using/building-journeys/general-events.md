@@ -7,14 +7,14 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: b1813122-7031-452e-9ac5-a4ea7c6dc57c
-source-git-commit: 3c21d797c85c2dabbec77f109b160fbd77170da5
+source-git-commit: 7588a675319324e43bbc61a71b1fdfaab9cce93a
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 1%
 
 ---
 
-# Allmänna händelser {#section_ofg_jss_dgb}
+# Allmänna händelser {#general-events}
 
 För den här händelsetypen kan du bara lägga till en etikett och en beskrivning. Resten av konfigurationen kan inte redigeras. Den utfördes av den tekniska användaren. Läs [den här sidan](../event/about-events.md).
 

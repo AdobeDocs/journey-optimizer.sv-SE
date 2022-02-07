@@ -6,14 +6,14 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: f27ffbe0-a61a-428a-bc37-db6b56e38a83
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 9873af4caf7cd8bc4e9672748414bf78f28ed30b
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 3%
 
 ---
 
-# Lista samlingar
+# Lista samlingar {#list-collections}
 
 Samlingar är delmängder av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare, t.ex. erbjudandets kategori.
 
@@ -44,11 +44,11 @@ curl -X GET \
   -H 'x-sandbox-name: {SANDBOX_NAME}'
 ```
 
-## Använda frågeparametrar
+## Använda frågeparametrar {#using-query-parameters}
 
 Du kan använda frågeparametrar för att sidgranska och filtrera resultat när du visar resurser.
 
-### Sidindelning
+### Sidindelning {#paging}
 
 De vanligaste frågeparametrarna för sidindelning är:
 

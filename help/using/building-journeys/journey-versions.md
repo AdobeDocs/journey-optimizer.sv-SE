@@ -6,14 +6,14 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 8d5ea4c1-bf23-4b58-8654-c251b90c3458
-source-git-commit: 967772bcf7413c4c916d045375a84807581ea6ae
+source-git-commit: 2088b5ba2ec77e56644683e118e734acfe6707fc
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 2%
 
 ---
 
-# Reseversioner{#concept_ldc_k55_zgb}
+# Reseversioner{#journey-versions}
 
 I reselistan visas alla reseversioner med versionsnumret. Läs [den här sidan](../building-journeys/using-the-journey-designer.md).
 
@@ -25,7 +25,7 @@ Om du behöver ändra till en direktresa måste du skapa en ny version av din re
 
 >[!NOTE]
 >
->Om du vill veta mer om begränsningar för resversioner kan du läsa [den här sidan](../limitations.md#journey-versions-limitations)
+>Om du vill veta mer om begränsningar för resversioner kan du läsa [den här sidan](../start/limitations.md#journey-versions-limitations)
 
 1. Öppna den senaste versionen av din liveresa och klicka **[!UICONTROL Create a new version]** och bekräfta.
 

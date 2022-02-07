@@ -6,14 +6,14 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 8f1fa116-30d2-4732-8973-bbce0dc66dec
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 9873af4caf7cd8bc4e9672748414bf78f28ed30b
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 1%
 
 ---
 
-# Slå upp reserverbjudanden
+# Slå upp reserverbjudanden {#look-up-fallback-offers}
 
 Du kan slå upp specifika reserverbjudanden genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller antingen reserverbjudandet `@id` eller namnet på reserverbjudandet i sökvägen för begäran.
 

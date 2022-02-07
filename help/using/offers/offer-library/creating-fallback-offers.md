@@ -1,19 +1,18 @@
 ---
 title: Skapa reserverbjudanden
-description: Lär dig hur du skapar erbjudanden i Adobe Experience Platform.
-feature: Offers
+description: Lär dig hur du skapar reserverbjudanden för kunder som inte är berättigade till något erbjudande
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: 9ba16ad9-a5e7-4ce7-8ed6-7707d37178c6
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 0545cda9f91ff18791310a4ee2463b2287ac7557
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '289'
 ht-degree: 3%
 
 ---
 
-# Skapa reserverbjudanden {#creating-fallback-offers}
+# Skapa reserverbjudanden {#create-fallback-offers}
 
 Reserverbjudandet skickas till kunderna om de inte är berättigade till andra erbjudanden. Stegen för att skapa ett reserverbjudande består av att skapa en eller flera representationer, som när du skapar ett erbjudande.
 

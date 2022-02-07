@@ -1,19 +1,19 @@
 ---
 title: Skapa personaliserade erbjudanden
-description: Lär dig hur du skapar personaliserade erbjudanden i Adobe Experience Platform.
+description: Lär dig hur du skapar, konfigurerar och hanterar dina erbjudanden
 feature: Offers
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4a53ea96-632a-41c7-ab15-b85b99db4f3e
-source-git-commit: b08eb138bbdf9c8a594735824eeac3496a58daba
+source-git-commit: 0545cda9f91ff18791310a4ee2463b2287ac7557
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1347'
 ht-degree: 1%
 
 ---
 
-# Skapa personaliserade erbjudanden {#creating-personalized-offers}
+# Skapa personaliserade erbjudanden {#create-personalized-offers}
 
 Innan du skapar ett erbjudande måste du kontrollera att du har skapat:
 
@@ -90,7 +90,7 @@ Du kan lägga till olika typer av innehåll i en representation.
 >
 >Endast innehåll som motsvarar placeringens innehållstyp är tillgängligt för användning.
 
-### Lägg till bilder
+### Lägg till bilder {#images}
 
 Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Adobe Experience Cloud Asset** bibliotek, ett centraliserat arkiv med resurser från [!DNL Adobe Experience Manager Assets Essentials].
 
@@ -110,7 +110,7 @@ Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Ado
 
    ![](../../assets/offer-select-asset.png)
 
-### Lägg till URL:er
+### Lägg till URL:er {#urls}
 
 Om du vill lägga till innehåll från en extern offentlig plats väljer du **[!UICONTROL URL]** anger du sedan URL-adressen till det innehåll som ska läggas till.
 

@@ -6,14 +6,14 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: ee242f0f-f331-4f41-9418-938b4ca1dda3
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 9873af4caf7cd8bc4e9672748414bf78f28ed30b
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 2%
 
 ---
 
-# Slå upp ett beslut
+# Slå upp ett beslut {#look-up-decision}
 
 Du kan slå upp specifika beslut (som tidigare kallats erbjudandeaktiviteter) genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller antingen beslut `@id` eller namnet på beslutet i sökvägen till begäran.
 

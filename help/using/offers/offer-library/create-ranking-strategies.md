@@ -2,21 +2,21 @@
 product: experience platform
 solution: Experience Platform
 title: Skapa rankningsstrategier
-description: Lär dig hur du skapar rankningsstrategier i Adobe Experience Platform.
+description: Lär dig hur du skapar AI-modeller för att rangordna erbjudanden
 feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: 81d07ec8-e808-4bc6-97b1-b9f7db2aec22
-source-git-commit: e01aacc63f0d395aed70bf9c332db19b322380f0
+source-git-commit: 0545cda9f91ff18791310a4ee2463b2287ac7557
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '936'
 ht-degree: 2%
 
 ---
 
 # AI-rankningar {#ai-rankings}
 
-## Kom igång med AI-rankningar
+## Kom igång med AI-rankningar {#get-started-with-ai-rankings}
 
 <!--If you are an [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} user leveraging the **Offer Decisioning** application service,-->You can use an trained model system that ranks offers to display for a given profile.
 
@@ -127,7 +127,6 @@ Du måste skapa en datauppsättning där konverteringshändelser samlas in. Bör
 
    >[!NOTE]
    >Fältgruppen kallades tidigare för mixin.
-
 
 1. Skriv ett namn och spara schemat.<!--How do you edit the fields in this new schema? Examples?-->
 

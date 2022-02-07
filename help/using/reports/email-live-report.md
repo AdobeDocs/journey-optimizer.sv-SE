@@ -1,19 +1,19 @@
 ---
-title: E-postlive-rapport
+title: Email live report
 description: Lär dig hur du använder data från e-postrapporten
 feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
 exl-id: 1ddfbf1a-3cd5-446a-b0fb-76b81b88c1b4
-source-git-commit: 36c9b672e9e183cd0aac58582ddd54ccdebd84f7
+source-git-commit: 7a07f2348f08b4582a1310fb65d431c55451d9b6
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
 
 ---
 
-# E-postlive-rapport {#email-live-report}
+# Email live report {#email-live-report}
 
 E-postmeddelandet **[!UICONTROL Live report]** avser endast en viss e-postleverans.
 
@@ -21,7 +21,7 @@ Från **[!UICONTROL Executions]** -fliken i **[!UICONTROL Messages]** meny, väl
 
 ![](../assets/live_report.png)
 
-E-postmeddelandet **[!UICONTROL Live report]** är uppdelat i olika widgetar som detaljerat beskriver leveransens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](live-report.md#modify-dashboard).
+The email **[!UICONTROL Live report]** is divided into different widgets detailing your delivery&#39;s success and errors. Each widget can be resized and deleted if needed. Mer information finns i [section](live-report.md#modify-dashboard).
 
 ![](../assets/live_report_5.png)
 
@@ -37,15 +37,15 @@ E-postmeddelandet **[!UICONTROL Live report]** är uppdelat i olika widgetar som
 
 * **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades i en leverans.
 
-* **[!UICONTROL Bounces]**: Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
+* **[!UICONTROL Bounces]**: Total of errors cumulated during delivery and automatic return processing in relation to the total number of sent messages.
 
 * **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
 
-* **[!UICONTROL Spam complaints]**: Antal meddelanden som klassificerats som skräppost.
+* **[!UICONTROL Spam complaints]**: Number of messages classified as spam.
 
-* **[!UICONTROL Unsubscriptions]**: Antal klick på länken för att avbryta prenumerationen.
+* **[!UICONTROL Unsubscriptions]**: Number of clicks on the unsubscription link.
 
-* **[!UICONTROL Excluded]**: Antal användarprofiler, exkluderade från målprofilerna, som inte fick meddelandet.
+* **[!UICONTROL Excluded]**: Number of user profiles, excluded from the targeted profiles, who did not receive the message.
 
 The **[!UICONTROL Sending Statistics]** widgeten visar hur framgångsrik leveransen är:
 
@@ -84,6 +84,6 @@ The **[!UICONTROL Offers statistic]** and **[!UICONTROL Offers statistics]** ove
 -->
 >[!NOTE]
 >
->Profilerna med **[!UICONTROL Suppressed]** eller **[!UICONTROL Not allowed]** status utelämnas under meddelandesändningsprocessen. Därför är **Reserapporter** visar att dessa profiler har flyttats genom resan ([Läs segment](../building-journeys/read-segment.md) och [Meddelande](../building-journeys/journeys-message.md) verksamhet), **E-postrapporter** kommer inte att inkludera dem i **[!UICONTROL Sent]** mätvärden när de filtreras ut innan e-postmeddelanden skickas.
+>The profiles with **[!UICONTROL Suppressed]** or **[!UICONTROL Not allowed]** status are excluded during the message sending process. Därför är **Reserapporter** visar att dessa profiler har flyttats genom resan ([Läs segment](../building-journeys/read-segment.md) och [Meddelande](../building-journeys/journeys-message.md) verksamhet), **E-postrapporter** kommer inte att inkludera dem i **[!UICONTROL Sent]** mätvärden när de filtreras ut innan e-postmeddelanden skickas.
 >
->Läs mer på [Undertryckningslista](../suppression-list.md) och [Tillåtelselista](../allow-list.md). Om du vill ta reda på orsaken till alla undantagsfall kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target=&quot;_blank&quot;}.
+>Läs mer på [Undertryckningslista](../messages/suppression-list.md) och [Tillåtelselista](../messages/allow-list.md). Om du vill ta reda på orsaken till alla undantagsfall kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target=&quot;_blank&quot;}.

@@ -1,12 +1,12 @@
 ---
-title: Anpassningssyntax
+title: Anpassningssammanhang
 description: 'Läs mer om hur du kan anpassa innehållet och visningen av dina meddelanden. '
 feature: Personalization
 topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: fe39570b-cbd2-4b24-af10-e12990a9a885
-source-git-commit: 67902b30bb24cad8d08d5bd6d83428885f4987b5
+source-git-commit: 7a07f2348f08b4582a1310fb65d431c55451d9b6
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
@@ -21,7 +21,7 @@ I alla fält med redigeringsikonen kan du öppna redigeringsprogrammet för anpa
 
 ![](assets/perso_icon.png)
 
-## Anpassa e-postmeddelanden
+## Anpassa e-postmeddelanden {#personalize-emails}
 
 När du skapar ett e-postmeddelande kan du lägga till personalisering i **[!UICONTROL Subject line]** meddelandets fält.
 
@@ -29,7 +29,7 @@ När du skapar ett e-postmeddelande kan du lägga till personalisering i **[!UIC
 
 I e-postdesignern kan du anpassa innehållet:
 
-* I **message**: klicka i ett textblock och klicka på **Anpassa** ikonen i det sammanhangsberoende verktygsfältet och välj **Infoga personalisering** fält. Mer information om gränssnittet för e-postdesignern finns i [section](../design-emails.md).
+* I **message**: klicka i ett textblock och klicka på **Anpassa** ikonen i det sammanhangsberoende verktygsfältet och välj **Infoga personalisering** fält. Mer information om gränssnittet för e-postdesignern finns i [section](../messages/design-emails.md).
 
    ![](assets/perso_insert.png)
 
@@ -41,7 +41,7 @@ I båda fallen får du tillgång till personaliseringsredigeraren.
 
 ![](assets/perso_ee.png)
 
-## Anpassa push-meddelanden
+## Anpassa push-meddelanden {#personalize-push}
 
 Du kan också anpassa dina **Push-meddelanden** i följande fält:
 
@@ -53,7 +53,7 @@ Du kan också anpassa dina **Push-meddelanden** i följande fält:
 
 ![](assets/perso_push.png)
 
-Läs mer om konfigurationen för push-meddelanden i [det här avsnittet](../push-gs.md).
+Läs mer om konfigurationen för push-meddelanden i [det här avsnittet](../messages/push-gs.md).
 
 ## Anpassa era erbjudanden {#personalize-offers}
 

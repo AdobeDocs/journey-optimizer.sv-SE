@@ -6,7 +6,7 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
-source-git-commit: 94dcf91e98ef343eed4c69a7251427809eece236
+source-git-commit: baa98afcc8e5e9be3062c8c16adc7f4ae17b15b7
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 1%
@@ -119,7 +119,7 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
 </table>
 </table>
 
-### Kartfunktioner
+### Kartfunktioner {#map-functions}
 
 <table>
     <tr>
@@ -144,7 +144,7 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
     </tr>
 </table>
 
-### Strängfunktioner
+### Strängfunktioner {#string-functions}
 
 <table>
     <tr>
@@ -280,7 +280,7 @@ Aritmetiska funktioner används för att utföra grundläggande beräkningar på
 </table>
 
 
-### Booleska funktioner
+### Booleska funktioner {#boolean-functions}
 
 Booleska funktioner används för att utföra boolesk logik för olika element.
 
@@ -300,7 +300,7 @@ Booleska funktioner används för att utföra boolesk logik för olika element.
 </table>
 
 
-### Jämförelsefunktioner
+### Jämförelsefunktioner {#comparison-functions}
 
 Jämförelsefunktioner används för att jämföra mellan olika uttryck och värden och returnera sant eller falskt efter det.
 

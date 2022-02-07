@@ -1,19 +1,19 @@
 ---
 title: Kom igång med Beslutshantering
-description: Kom igång med Beslutshantering. Läs mer om dess arkitektur, erbjudanden och beslut, liksom om vanliga användningsfall som gör att du kan arbeta.
+description: Kom igång med Beslutshantering. Läs mer om dess arkitektur, erbjudanden och beslut, liksom om vanliga användningsområden som gör att du kan utföra
 feature: Offers
 topic: Integrations
 role: User
 level: Beginner
 exl-id: 659984cb-b232-47ba-9f5a-604bf97a5e92
-source-git-commit: f186eeb09e9f9e0b8094baa8038ab0298b7e5148
+source-git-commit: 0545cda9f91ff18791310a4ee2463b2287ac7557
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 45%
 
 ---
 
-# Om beslutshantering {#about-offer-decision}
+# Om beslutshantering {#about-decision-management}
 
 Använd [!DNL Journey Optimizer] för att leverera det bästa erbjudandet och upplevelsen till era kunder via alla kontaktytor vid rätt tidpunkt. När ni väl utformat er målgrupp kan ni inrikta er på personaliserade erbjudanden.
 
@@ -36,7 +36,7 @@ Några fördelar:
 
 ➡️ [Titta på de här självstudiekurserna](#tutorial-videos) om du vill ha mer information om beslutshantering.
 
-## Om erbjudanden och beslut {#offers-offer-activities}
+## Om erbjudanden och beslut {#about-offers-and-decisions}
 
 Ett **erbjudande** består av innehåll, berättiganderegler och begränsningar som definierar villkoren som gäller när det presenteras för dina kunder.
 
@@ -48,7 +48,7 @@ När erbjudandebiblioteket har berikats med erbjudanden kan ni integrera era erb
 
 Besluten är behållare för dina erbjudanden som utnyttjar beslutsmotorn för erbjudanden för att välja det bästa erbjudandet som ska levereras beroende på leveransmålet.
 
-## Vanliga användningsfall
+## Vanliga användningsfall {#common-use-cases}
 
 Beslutshanteringsfunktionerna och integrationen med Adobe Experience Platform gör att ni kan ta upp ett antal olika användningsfall som hjälper er att öka kundernas engagemang och konverteringar.
 

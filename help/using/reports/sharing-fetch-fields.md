@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 948fe843-47cf-4b20-976a-48069eb9cf5c
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 6d744c0289e81ab2229f02c44ead43943b945b89
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 4%
@@ -19,13 +19,13 @@ Den här fältgruppen delas av travelStepEvent och travelStepProfileEvent.
 
 Under en stegvis bearbetning kan vi hämta N-data i fältgrupper.
 
-## fetchTotalTime
+## fetchTotalTime {#fetchtotaltime-field}
 
 Total tid i millisekunder som datahämtningen pågick under stegbearbetningen.
 
 Typ: long
 
-## fetchTypeInError
+## fetchTypeInError {#fetchtypeinerror-field}
 
 Definierar om den felaktiga hämtningen finns i Adobe Experience Platform eller i en anpassad datakälla.
 
@@ -35,7 +35,7 @@ Värden:
 * aep
 * anpassad
 
-## fetchError
+## fetchError {#fetcherror-field}
 
 Typ av fel som inträffar när datahämtningen bearbetas.
 
@@ -47,13 +47,13 @@ Värden:
 * tidsgränsen
 * error
 
-## fetchErrorCode
+## fetchErrorCode {#fetcherrorcode-field}
 
 Kod för hämtningsfel. Visa om felet har en kod, t.ex. en HTTP-kod. Om actionExecError till exempel är http representerar koden 404 HTTP 404-felet.
 
 Typ: string
 
-## fetchOriginError
+## fetchOriginError {#fetchoriginerror-field}
 
 En timeout kan uppstå i två fall:
 
@@ -73,37 +73,37 @@ Data hämtas till exempel från Unified Profile Service och ett HTTP 500-fel ret
 
 Typ: string
 
-## fetchOriginErrorCode
+## fetchOriginErrorCode {#fetchoriginerrorcode-field}
 
 Felkoden som tillhandahålls av systemet [!DNL Journey Orchestration] frågar. Det kan till exempel vara en 404, 500 osv.
 
 Typ: string
 
-## fetchCount
+## fetchCount {#fetchcount-field}
 
 Hur många gånger data hämtas, oavsett källtyp.
 
 Typ: long
 
-## fetchPlatformTotalTime
+## fetchPlatformTotalTime {#fetchplatformtotaltime-field}
 
 Den totala tiden det tar att hämta data från Adobe Experience Platform i millisekunder. Anmärkning: denna tid beräknas från den tidpunkt då motorn skickar anrikningshändelsen till anrikningstjänsten och får svaret.
 
 Typ: long
 
-## fetchPlatformCount
+## fetchPlatformCount {#fetchplatformcount-field}
 
 Hur många gånger data hämtas från Adobe Experience Platform.
 
 Typ: long
 
-## fetchCustomTotalTime
+## fetchCustomTotalTime {#fetchcustomtotaltime-field}
 
 Hur lång tid det tar att hämta anpassade data i millisekunder. Anmärkning: denna tid beräknas från den tidpunkt då motorn skickar anrikningshändelsen till anrikningstjänsten och får svaret
 
 Typ: long
 
-## fetchCustomCount
+## fetchCustomCount {#fetchcustomcount-field}
 
 Hur många gånger som anpassade data hämtas från externa system.
 

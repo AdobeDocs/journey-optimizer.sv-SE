@@ -7,7 +7,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: 9e6e4f30e2f0301157901ea211f984ebcfb99bc4
+source-git-commit: 2088b5ba2ec77e56644683e118e734acfe6707fc
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 6%
@@ -18,7 +18,7 @@ ht-degree: 6%
 
 Om du använder ett tredjepartssystem för att skicka meddelanden eller om du vill att resor ska skicka API-anrop till ett tredjepartssystem, är det här du konfigurerar anslutningen till resor. Den anpassade åtgärden som definieras av tekniska användare är sedan tillgänglig på den vänstra paletten av din resa, i **[!UICONTROL Action]** kategori (se [den här sidan](../building-journeys/about-journey-activities.md#action-activities). Här är några exempel på system som du kan ansluta till med anpassade åtgärder: Epsilon, Slack, Adobe.io, Firebase osv.
 
-Begränsningar visas i [den här sidan](../limitations.md).
+Begränsningar visas i [den här sidan](../start/limitations.md).
 
 Du kan skicka samlingar dynamiskt med anpassade åtgärder. Se detta [användningsfall](../building-journeys/collections.md).
 
@@ -37,7 +37,7 @@ Här följer de huvudsteg som krävs för att konfigurera en anpassad åtgärd:
 1. Lägg till en beskrivning av åtgärden. Det här steget är valfritt.
 1. Antalet resor som använder den här åtgärden visas i **[!UICONTROL Used in]** fält. Du kan klicka på **[!UICONTROL View journeys]** om du vill visa en lista över resor som använder den här åtgärden.
 1. Definiera de olika **[!UICONTROL URL Configuration]** parametrar. Läs [den här sidan](../action/about-custom-action-configuration.md#url-configuration).
-1. Konfigurera **[!UICONTROL Authentication]** -avsnitt. Den här konfigurationen är densamma som för datakällor.  Se [det här avsnittet](../datasource/external-data-sources.md#section_wjp_nl5_nhb).
+1. Konfigurera **[!UICONTROL Authentication]** -avsnitt. Den här konfigurationen är densamma som för datakällor.  Se [det här avsnittet](../datasource/external-data-sources.md#custom-authentication-mode).
 1. Definiera **[!UICONTROL Action parameters]**. Läs [den här sidan](../action/about-custom-action-configuration.md#define-the-message-parameters).
 1. Klicka på **[!UICONTROL Save]**.
 

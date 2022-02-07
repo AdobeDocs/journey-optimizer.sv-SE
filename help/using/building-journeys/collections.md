@@ -4,15 +4,15 @@ solution: Journey Orchestration
 title: Skicka samlingar dynamiskt med anpassade åtgärder
 description: Skicka ett meddelande med Campaign v7/v8
 exl-id: 8832d306-5842-4be5-9fb9-509050fcbb01
-source-git-commit: 4b7cfedbc5f2c724e28e5e6e0ab7e0d2f40dccac
+source-git-commit: 3c8c059e5e3953807b9fc2d8d0eded0d00e49003
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '426'
 ht-degree: 4%
 
 ---
 
 
-# Skicka samlingar dynamiskt med anpassade åtgärder{#passing-collection}
+# Användningsfall: skicka samlingar dynamiskt med anpassade åtgärder{#passing-collection}
 
 Du kan skicka en samling i anpassade åtgärdsparametrar som fylls i dynamiskt vid körning. Två sorters samlingar stöds:
 

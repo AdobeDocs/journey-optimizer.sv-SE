@@ -1,12 +1,12 @@
 ---
 title: Validering av personalisering
-description: Läs mer om validering av personalisering och felsökning
+description: Läs mer om validering av personalisering och felsökning.
 feature: Personalization
 topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 7abeec5e-743f-48fb-a4a6-056665e8bfda
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: baa98afcc8e5e9be3062c8c16adc7f4ae17b15b7
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Validering av personalisering {#personalization-validation}
 
-## Valideringsmekanismer
+## Valideringsmekanismer {#validation-mechanisms}
 
 I **Uttrycksredigeraren** skärm, använd **Validera** för att kontrollera din personaliseringssyntax.
 
@@ -27,7 +27,7 @@ I **Uttrycksredigeraren** skärm, använd **Validera** för att kontrollera din 
 >[!IMPORTANT]
 > Om personaliseringssyntaxen inte är giltig kan du inte stänga uttrycksredigeringsfönstret.
 
-## Vanliga fel
+## Vanliga fel {#common-errors}
 
 * **Sökvägen &quot;XYZ&quot; hittades inte**
 
@@ -67,7 +67,7 @@ Handlebars-uttryck omges av **{{expression}}**
 No segment definition found for 988afe9f0-d4ae-42c8-a0be-8d90e66e151
 ```
 
-## Specifika fel relaterade till erbjudanden
+## Specifika fel relaterade till erbjudanden {#specific-errors}
 
 Felen som rör integrering av erbjudanden i ett e-postmeddelande eller push-meddelande har följande mönster:
 

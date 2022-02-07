@@ -6,14 +6,14 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 2540938f-8ac7-43fa-83ff-fed59f6bc417
-source-git-commit: 662158884291d90b6092c0aa70f41f27535f3637
+source-git-commit: 3c8c059e5e3953807b9fc2d8d0eded0d00e49003
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '279'
 ht-degree: 3%
 
 ---
 
-# Skicka ett meddelande till prenumeranterna av en lista
+# Användningsfall: skicka ett meddelande till prenumeranterna i en lista{#send-a-message-to-the-subscribers-of-a-list}
 
 Syftet med det här användningsexemplet är att skapa en resa för att skicka ett meddelande till prenumeranterna av en lista.
 

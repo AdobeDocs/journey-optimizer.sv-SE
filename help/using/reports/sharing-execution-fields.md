@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 273cda84-0261-4c5b-b5f4-0202e8874d05
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 6d744c0289e81ab2229f02c44ead43943b945b89
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 4%
@@ -19,37 +19,37 @@ Den här fältgruppen delas av travelStepEvent och travelStepProfileEvent.
 
 Om steget har en åtgärd som ska bearbetas läggs dessa fält till i händelsens nyttolast.
 
-## actionID
+## actionID {#actionid-field}
 
 ID för åtgärden som körs.
 
 Typ: string
 
-## actionName
+## actionName {#actionname-field}
 
 Åtgärdens namn. Om inget namn har angetts används stepName.
 
 Typ: string
 
-## actionType
+## actionType {#actionType-field}
 
 Typ av åtgärd.
 
 Typ: string
 
-## actionParametriszed
+## actionParametriszed {#actionparameterized-field}
 
 Anger om åtgärden är parametriserad eller inte.
 
 Typ: boolesk
 
-## actionExecutionTime
+## actionExecutionTime {#actionexecutiontime-field}
 
 Den tid (i millisekunder) som krävs för att köra en aktuell åtgärd.
 
 Typ: long
 
-## actionExecutionError
+## actionExecutionError {#actionexecutionerror-field}
 
 Typ av fel som inträffar när åtgärden anropas.
 
@@ -61,13 +61,13 @@ Värden:
 * timeout
 * error
 
-## actionExecutionErrorCode
+## actionExecutionErrorCode {#actionexecutionerrorcode-field}
 
 Kod för körningsfel för åtgärd. Visa om felet har en kod, t.ex. en HTTP-kod.
 
 Typ: string
 
-## actionExecutionOriginError
+## actionExecutionOriginError {#actionexecutionoriginerror-field}
 
 En timeout kan uppstå i två fall:
 
@@ -89,13 +89,13 @@ Ett e-postmeddelande skickas till exempel och ett HTTP 500-fel returneras vid de
 
 Typ: string
 
-## actionExecutionOriginCode
+## actionExecutionOriginCode {#actionexecutionorigincode-field}
 
 Felkod för actionExecOrigError.
 
 Typ: string
 
-## actionBusinessType
+## actionBusinessType {#actionbusinesstype-field}
 
 Anger typen av åtgärd.
 
@@ -111,25 +111,25 @@ Värden:
 
 Typ: string
 
-## deliveryJobID
+## deliveryJobID {#deliveryjobid-field}
 
 Detta beskriver leveransjobb-ID för batchresan.
 
 Typ: string
 
-## batchDeliveryID
+## batchDeliveryID {#batchdeliveryid-field}
 
 Detta beskriver leverans-ID för batchresan.
 
 Typ: string
 
-## fromSegmentTrigger
+## fromSegmentTrigger {#fromsegmenttrigger-field}
 
 Detta beskriver om batchresan aktiveras från målgruppssegmentet.
 
 Typ: boolesk
 
-## actionSchedulerCount
+## actionSchedulerCount {#actionschedulercount-field}
 
 Antal begäranden om schemaläggningsmeddelanden som skickats till schemaläggningstjänsten under stegbearbetningen.
 

@@ -6,14 +6,14 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: fb3e51b5-4cbb-4949-8992-1075959da67d
-source-git-commit: c5ec5ae03ce470a5c012fee4041d47c1856fbbc8
+source-git-commit: 7588a675319324e43bbc61a71b1fdfaab9cce93a
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 52%
 
 ---
 
-# Om händelser{#concept_gfj_fqt_52b}
+# Om händelser{#about-events}
 
 >[!CONTEXTUALHELP]
 >id="jo_events"
@@ -57,7 +57,7 @@ För unitära händelser finns det två typer av händelse-ID:
 
 Journey Optimizer kräver att händelser direktuppspelas eller grupperas i Adobe Experience Platform. Dessa data behöver inte nödvändigtvis gå till realtidsprofilen. Om du vill använda händelserna för segmentering eller sökning i en separat resa rekommenderar vi att du aktiverar datauppsättningen för profil.
 
-## Datacykel {#section_r1f_xqt_pgb}
+## Datacykel {#data-cycle}
 
 Händelser är POST API-anrop. Händelser skickas till Adobe Experience Platform via API:er för direktuppspelning. URL-destinationen för händelser som skickas via API:er för transaktionsmeddelanden kallas för ett &quot;inlet&quot;. Händelsers nyttolast följer XDM-formateringen.
 

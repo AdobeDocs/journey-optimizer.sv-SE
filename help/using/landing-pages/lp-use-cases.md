@@ -8,7 +8,7 @@ level: Intermediate
 hidefromtoc: true
 hide: true
 exl-id: 8c00d783-54a3-45d9-bd8f-4dc58804d922
-source-git-commit: bbc2adabac63ffb813ea2630f29aec552fc3f4df
+source-git-commit: b43e3432ede1d4985e0a6b57b57c5efc3cf60c50
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 1%
@@ -32,7 +32,7 @@ Ett av de vanligaste användningsområdena är att bjuda in kunderna till [prenu
 
 Anta till exempel att du ordnar ett event nästa månad och vill starta en kampanj för att registrera event<!--to keep your customers that are interested updated on that event-->. För att göra detta ska du skicka ett e-postmeddelande med en länk till en landningssida där mottagarna kan registrera sig för evenemanget. De användare som registrerar sig läggs till i prenumerationslistan som du har skapat för detta ändamål.
 
-### Ställ in landningssida
+### Ställ in landningssida {#set-up-lp}
 
 1. Skapa händelseregistreringens prenumerationslista, som lagrar registrerade användare. Lär dig hur du skapar en prenumerationslista [här](subscription-list.md#define-subscription-list).
 
@@ -52,13 +52,13 @@ Anta till exempel att du ordnar ett event nästa månad och vill starta en kampa
 
 1. [Publicera](create-lp.md#publish) landningssidan.
 
-1. [Skapa ett e-postmeddelande](../create-message.md) för att meddela att registreringen nu är öppen för ditt event.
+1. [Skapa ett e-postmeddelande](../messages/create-message.md) för att meddela att registreringen nu är öppen för ditt event.
 
-1. [Infoga en länk](../message-tracking.md#insert-links) i ert meddelandeinnehåll. Välj **[!UICONTROL Landing page]** som **[!UICONTROL Link type]** och väljer [landningssida](create-lp.md#configure-primary-page) som du har skapat för registrering.
+1. [Infoga en länk](../messages/message-tracking.md#insert-links) i ert meddelandeinnehåll. Välj **[!UICONTROL Landing page]** som **[!UICONTROL Link type]** och väljer [landningssida](create-lp.md#configure-primary-page) som du har skapat för registrering.
 
    ![](../assets/lp_subscription-uc-link.png)
 
-1. Spara innehåll och [publicera meddelandet](../publish-manage-message.md).
+1. Spara innehåll och [publicera meddelandet](../messages/publish-manage-message.md).
 
 1. Skicka ditt meddelande via en [resa](../building-journeys/journey.md) att köra trafik till landningssidan för registrering.
 
@@ -92,7 +92,7 @@ Alla användare som har registrerat sig för din aktivitet får bekräftelsemedd
 
 Om du vill att mottagarna ska kunna avbeställa din kommunikation kan du inkludera en länk till en avanmälningssida i dina e-postmeddelanden.
 
-Läs mer om hur du hanterar mottagarnas samtycke och varför detta är viktigt i [det här avsnittet](../consent.md).
+Läs mer om hur du hanterar mottagarnas samtycke och varför detta är viktigt i [det här avsnittet](../messages/consent.md).
 
 ### Hantering av avanmälan {#opt-out-management}
 
@@ -129,9 +129,9 @@ Följ stegen nedan om du vill att mottagarna av ett e-postmeddelande ska kunna a
 
    ![](../assets/lp_opt-out-publish.png)
 
-1. [Skapa ett e-postmeddelande](../create-message.md) in [!DNL Journey Optimizer].
+1. [Skapa ett e-postmeddelande](../messages/create-message.md) in [!DNL Journey Optimizer].
 
-1. Markera text i innehållet och [infoga en länk](../message-tracking.md#insert-links) med hjälp av kontextverktygsfältet. Du kan också använda en länk på en knapp.
+1. Markera text i innehållet och [infoga en länk](../messages/message-tracking.md#insert-links) med hjälp av kontextverktygsfältet. Du kan också använda en länk på en knapp.
 
    ![](../assets/lp_opt-out-insert-link.png)
 
@@ -139,7 +139,7 @@ Följ stegen nedan om du vill att mottagarna av ett e-postmeddelande ska kunna a
 
    ![](../assets/lp_opt-out-landing-page.png)
 
-1. Spara innehåll och [publicera meddelandet](../publish-manage-message.md).
+1. Spara innehåll och [publicera meddelandet](../messages/publish-manage-message.md).
 
 1. Skicka ditt budskap genom en resa. [Läs mer](../building-journeys/journey.md).
 
@@ -167,9 +167,9 @@ You can also enable your recipients to unsubscribe whithout using landing pages.
 
 * **One-click opt-out**
 
-    You can add a one-click opt-out link into your email content. This will enable your recipients to quickly unsubscribe from your communications, without being redirected to a landing page where they need to confirm opting out. [Learn more](../message-tracking.md#one-click-opt-out-link)
+    You can add a one-click opt-out link into your email content. This will enable your recipients to quickly unsubscribe from your communications, without being redirected to a landing page where they need to confirm opting out. [Learn more](../messages/message-tracking.md#one-click-opt-out-link)
 
 * **Unsubscribe link in header**
 
-    If the recipients' email client supports displaying an unsubscribe link in the email header, emails sent with [!DNL Journey Optimizer] automatically include this link. [Learn more](../consent.md#unsubscribe-email)
+    If the recipients' email client supports displaying an unsubscribe link in the email header, emails sent with [!DNL Journey Optimizer] automatically include this link. [Learn more](../messages/consent.md#unsubscribe-email)
 -->

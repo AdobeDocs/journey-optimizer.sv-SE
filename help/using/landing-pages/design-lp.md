@@ -8,7 +8,7 @@ level: Beginner
 hidefromtoc: true
 hide: true
 exl-id: c61b8d80-17e1-4fdd-a739-efcee032dc23
-source-git-commit: 88b037e079a46e10f7ee4715e78e5edc5a34a6ce
+source-git-commit: b43e3432ede1d4985e0a6b57b57c5efc3cf60c50
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 0%
@@ -23,15 +23,15 @@ Börja skapa innehåll för landningen [primär sida](create-lp.md#configure-pri
 
 Därifrån kan man
 
-* **Designa landningssidan från grunden** genom innehållsdesignerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets Essentials](../assets-essentials.md). Lär dig hur du utformar innehåll eller använder inbyggda mallar [i det här avsnittet](../create-email-content.md).
+* **Designa landningssidan från grunden** genom innehållsdesignerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets Essentials](../messages/assets-essentials.md). Lär dig hur du utformar innehåll eller använder inbyggda mallar [i det här avsnittet](../messages/create-email-content.md).
 
-* **Kod eller klistra in Raw HTML** direkt in i innehållsdesignern. Lär dig koda eget innehåll [i det här avsnittet](../existing-content.md#import-raw-html-code).
+* **Kod eller klistra in Raw HTML** direkt in i innehållsdesignern. Lär dig koda eget innehåll [i det här avsnittet](../messages/existing-content.md#import-raw-html-code).
 
-* **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig importera innehåll [i det här avsnittet](../existing-content.md#import-html-content-from-file).
+* **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig importera innehåll [i det här avsnittet](../messages/existing-content.md#import-html-content-from-file).
 
 >[!NOTE]
 >
->Innehållsdesignern för landningssidan liknar oftast e-postdesignern. Läs mer på [designa innehåll med [!DNL Journey Optimizer]](../design-emails.md).
+>Innehållsdesignern för landningssidan liknar oftast e-postdesignern. Läs mer på [designa innehåll med [!DNL Journey Optimizer]](../messages/design-emails.md).
 
 ## Definiera landningssidspecifikt innehåll {#define-lp-specific-content}
 
@@ -120,7 +120,7 @@ Följ stegen nedan för att definiera specifikt innehåll som gör det möjligt 
 
    ![](../assets/lp_designer-form-style-buttons.png)
 
-   Du kan förhandsgranska vissa inställningar, t.ex. knappetikettfärg vid hovring med hjälp av **[!UICONTROL Preview]** -knappen. Läs mer om testning av landningssidor [här](create-lp.md#test).
+   Du kan förhandsgranska vissa inställningar, t.ex. knappetikettfärg vid hovring med hjälp av **[!UICONTROL Preview]** -knappen. Läs mer om testning av landningssidor [här](create-lp.md#test-landing-page).
 
    ![](../assets/lp_designer-form-style-buttons-preview.png)
 

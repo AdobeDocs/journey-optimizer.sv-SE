@@ -1,12 +1,12 @@
 ---
 title: Kom igång med export av din erbjudandekatalog
-description: I det här avsnittet visas alla fält som används i den exporterade datauppsättningen för beslut.
+description: I det här avsnittet visas alla fält som används i den exporterade datauppsättningen för beslut
 feature: Offers
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: 064762b7-9774-42eb-bcef-1d92bc94a988
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 0545cda9f91ff18791310a4ee2463b2287ac7557
 workflow-type: tm+mt
 source-wordcount: '1550'
 ht-degree: 0%
@@ -29,14 +29,14 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 <!--A decision (formerly known as offer decision) is used to control the decisioning process. It specifies the filter applied to the total inventory to narrow down offers by topic/category, the placement to narrow down the inventory to those offers that technically fit into the reserved space for the offer and specifies a fallback option should the combined constraints disqualify all available personalization offers.-->
 
-## Identifierare
+## Identifierare {#identifier}
 
 **Fält:** _id
 **Titel:** Identifierare
 **Beskrivning:** En unik identifierare för posten.
 **Typ:** string
 
-## upplevelse
+## upplevelse {#experience}
 
 **Fält:** upplevelse
 **Typ:** object
@@ -254,7 +254,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 **Beskrivning:** Startdatum och sluttid för beslut (tidigare kallat aktivitet). Egenskapen har semantiken för schema.orgs startTime-egenskap definierad på http://schema.org/Action.
 **Typ:** string
 
-## repo
+## repo {#repo}
 
 **Fält:** repo
 **Typ:** object

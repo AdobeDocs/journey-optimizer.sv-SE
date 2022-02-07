@@ -6,14 +6,14 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 8cee44ed-5569-416c-b463-e75fb20d4c9c
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 9873af4caf7cd8bc4e9672748414bf78f28ed30b
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 2%
 
 ---
 
-# Lista taggar
+# Lista taggar {#list-tags}
 
 Med taggar kan du bättre ordna och sortera bland dina erbjudanden. Du kan till exempel märka dina erbjudanden på den svarta fredagen med taggen &quot;Black Friday&quot;. Du kan sedan använda sökfunktionen i erbjudandebiblioteket för att enkelt hitta alla erbjudanden med den taggen.
 
@@ -46,11 +46,11 @@ curl -X GET \
   -H 'x-sandbox-name: {SANDBOX_NAME}'
 ```
 
-## Använda frågeparametrar
+## Använda frågeparametrar {#using-query-parameters}
 
 Du kan använda frågeparametrar för att sidgranska och filtrera resultat när du visar resurser.
 
-### Sidindelning
+### Sidindelning {#paging}
 
 De vanligaste frågeparametrarna för sidindelning är:
 

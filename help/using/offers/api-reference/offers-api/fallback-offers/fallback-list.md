@@ -6,14 +6,14 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: dd95c040-d905-4f5a-8cc5-58e39082e57e
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 9873af4caf7cd8bc4e9672748414bf78f28ed30b
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 3%
 
 ---
 
-# Lista reserverbjudanden
+# Lista reserverbjudanden {#list-fallback-offers}
 
 Ett reserverbjudande skickas till kunderna om de inte är berättigade till andra erbjudanden. Stegen för att skapa ett reserverbjudande består av att skapa en eller flera representationer, som när du skapar ett erbjudande.
 
@@ -44,11 +44,11 @@ curl -X GET \
   -H 'x-sandbox-name: {SANDBOX_NAME}'
 ```
 
-## Använda frågeparametrar
+## Använda frågeparametrar {#using-query-parameters}
 
 Du kan använda frågeparametrar för att sidgranska och filtrera resultat när du visar resurser.
 
-### Sidindelning
+### Sidindelning {#paging}
 
 De vanligaste frågeparametrarna för sidindelning är:
 

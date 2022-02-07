@@ -6,20 +6,20 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 773bee50-849f-4b07-9423-67de5279ad28
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 9873af4caf7cd8bc4e9672748414bf78f28ed30b
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 3%
 
 ---
 
-# Utvecklarhandbok för API för beslutshantering
+# Utvecklarhandbok för API för beslutshantering {#decision-management-api-developer-guide}
 
 I den här utvecklarhandboken får du hjälp att börja använda [!DNL Offer Library] API. Handboken innehåller sedan exempel på API-anrop för att utföra nyckelåtgärder med hjälp av beslutsmotorn.
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
-## Förutsättningar
+## Förutsättningar {#prerequisites}
 
 Handboken kräver en fungerande förståelse av följande komponenter i Adobe Experience Platform:
 
@@ -28,11 +28,11 @@ Handboken kräver en fungerande förståelse av följande komponenter i Adobe Ex
 * [Beslutshantering](../../../using/offers/get-started/starting-offer-decisioning.md): Beskriver de begrepp och komponenter som används för Experience Decision i allmänhet och Offer decisioning i synnerhet. Illustrerar de strategier som används för att välja det bästa alternativet att presentera under en kunds upplevelse.
 * [[!DNL Profile Query Language (PQL)]](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html){target=&quot;_blank&quot;}: PQL är ett kraftfullt språk för att skriva uttryck över XDM-instanser. PQL används för att definiera beslutsregler.
 
-## Läser exempel-API-anrop
+## Läser exempel-API-anrop {#reading-sample-api-calls}
 
 Den här guiden innehåller exempel på API-anrop som visar hur du formaterar dina begäranden. Det kan vara sökvägar, obligatoriska rubriker och korrekt formaterade begärandenyttolaster. Ett exempel på JSON som returneras i API-svar finns också. Information om konventionerna som används i dokumentationen för exempel-API-anrop finns i avsnittet om [läsa exempel-API-anrop](https://experienceleague.adobe.com/docs/experience-platform/landing/troubleshooting.html#how-do-i-format-an-api-request){target=&quot;_blank&quot;} i [!DNL Experience Platform] felsökningsguide.
 
-## Samla in värden för obligatoriska rubriker
+## Samla in värden för obligatoriska rubriker {#gather-values-for-required-headers}
 
 För att ringa [!DNL Platform] API:er måste du först slutföra [självstudiekurs om autentisering](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html){target=&quot;_blank&quot;}. När du är klar med självstudiekursen för autentisering visas värdena för var och en av de obligatoriska rubrikerna i alla [!DNL Experience Platform] API-anrop enligt nedan:
 
@@ -44,7 +44,7 @@ Alla begäranden som innehåller en nyttolast (POST, PUT, PATCH) kräver ytterli
 
 * `Content-Type: application/json`
 
-## Hantera åtkomst till en behållare
+## Hantera åtkomst till en behållare {#manage-access-to-container}
 
 En behållare är en isoleringsmekanism för att hålla olika bekymmer isär. Behållar-ID är det första sökvägselementet för alla databas-API:er. Alla beslutsobjekt finns i en behållare.
 
@@ -52,7 +52,7 @@ En administratör kan gruppera liknande principer, resurser och åtkomstbehörig
 
 Administratörsbehörighet kan du ge eller återkalla behörigheter till användare via [Adobe Admin Console](https://adminconsole.adobe.com/){target=&quot;_blank&quot;}. Mer information finns i [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html){target=&quot;_blank&quot;}.
 
-### Visa behållare som är tillgängliga för användare och integreringar
+### Visa behållare som är tillgängliga för användare och integreringar {#list-containers-accessible-to-users-and-integrations}
 
 **API-format**
 
@@ -124,7 +124,7 @@ Ett lyckat svar returnerar information om beslutsbehållare. Detta inkluderar `i
 }
 ```
 
-## Nästa steg
+## Nästa steg {#next-steps}
 
 Det här dokumentet innehöll de nödvändiga kunskaperna som krävs för att ringa till [!DNL Offer Library] API, inklusive att hämta ditt behållar-ID. Du kan nu gå vidare till exempelsamtalen i den här utvecklarhandboken och följa med i instruktionerna för dessa.
 

@@ -6,14 +6,14 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: da9e898b-8e5d-43da-9226-5c9ccb78e174
-source-git-commit: 39b52f39ec19c185d2cd95634a60e37f62a66f83
+source-git-commit: b43e3432ede1d4985e0a6b57b57c5efc3cf60c50
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%
 
 ---
 
-# Skapa simuleringar
+# Skapa simuleringar {#create-simulations}
 
 ## Om simulering
 
@@ -47,7 +47,7 @@ Först måste du välja de testprofiler som du ska använda för simulering.
 
    >[!NOTE]
    >
-   >Ett identitetsnamnutrymme definierar kontexten för en identifierare, till exempel en e-postadress eller ett CRM-ID. Läs mer om Adobe Experience Platform identitetsnamnutrymmen [i det här avsnittet](../../get-started-identity.md){target=&quot;_blank&quot;}.
+   >Ett identitetsnamnutrymme definierar kontexten för en identifierare, till exempel en e-postadress eller ett CRM-ID. Läs mer om Adobe Experience Platform identitetsnamnutrymmen [i det här avsnittet](../../start/get-started-identity.md){target=&quot;_blank&quot;}.
 
 1. Ange identitetsvärdet och klicka på **[!UICONTROL View]** för att lista tillgängliga profiler.
 
@@ -63,7 +63,7 @@ Först måste du välja de testprofiler som du ska använda för simulering.
 
 1. Du kan klicka på **[!UICONTROL Profile details]** för att visa valda profildata.
 
-<!--Learn more on [selecting test profiles](preview.md#select-test-profiles)-->
+<!--Learn more on [selecting test profiles](messages/preview.md#select-test-profiles)-->
 
 ## Lägg till beslutsomfattningar
 

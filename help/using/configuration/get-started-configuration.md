@@ -1,17 +1,14 @@
 ---
-title: Riktlinjer för inställningar och konfigurering av Journey Optimizer
-description: Läs riktlinjerna för konfiguration av meddelanden och resor
-audience: administrators
-content-type: reference
+title: Kom igång med [!DNL Journey Optimizer] konfiguration
+description: Läs mer om [!DNL Journey Optimizer] konfiguration
 role: Admin
 level: Intermediate
-solution: Journey Optimizer
 exl-id: 0964a484-f957-4aae-a571-61b2a1615026
 feature: Application Settings
 topic: Administration
-source-git-commit: bbc2adabac63ffb813ea2630f29aec552fc3f4df
+source-git-commit: 7a07f2348f08b4582a1310fb65d431c55451d9b6
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '328'
 ht-degree: 9%
 
 ---
@@ -25,7 +22,7 @@ För att kunna skapa dina resor och skicka meddelanden måste du gå igenom föl
 
 1. **Konfigurera meddelanden och kanaler**: definiera förinställningar, anpassa och anpassa e-post och push-meddelanden
 
-   * Definiera inställningar för push-meddelanden i båda [!DNL Adobe Experience Platform] och [!DNL Adobe Experience Platform Launch]. [Läs mer](../push-gs.md)
+   * Definiera inställningar för push-meddelanden i båda [!DNL Adobe Experience Platform] och [!DNL Adobe Experience Platform Launch]. [Läs mer](../messages/push-gs.md)
 
    * Skapa meddelandeförinställningar för att konfigurera alla tekniska parametrar som krävs för e-post och push-meddelanden. [Läs mer](message-presets.md)
 
@@ -34,7 +31,7 @@ För att kunna skapa dina resor och skicka meddelanden måste du gå igenom föl
    * Hantera det antal dagar som nya försök utförs innan e-postadresser skickas till listan över inaktiveringar. [Läs mer](manage-suppression-list.md)
 
    <!--
-    * Understand push notification flow. [Learn more](../push-gs.md)
+    * Understand push notification flow. [Learn more](../messages/push-gs.md)
     -->
 
 1. **Delegera underdomäner**: för alla nya underdomäner som ska användas i Journey Optimizer är det första steget att delegera den. [Läs mer](about-subdomain-delegation.md)

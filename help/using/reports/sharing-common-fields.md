@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 42aec986-2352-456a-a725-7f1585ae01f8
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 6d744c0289e81ab2229f02c44ead43943b945b89
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Det här är de vanliga XDM-fälten som [!DNL Journey Optimizer] skickar till Ad
 
 Vissa av dessa fält är bara tillgängliga i specifika bearbetningsmönster (åtgärdskörning, datahämtning osv.) för att begränsa storleken på händelser.
 
-## entré
+## entré {#entrance-field}
 
 Anger om användaren har gått in på resan. Om det inte finns antar vi att värdet är falskt.
 
@@ -29,7 +29,7 @@ Typ: boolesk
 
 Värden: true/false
 
-## återinträde
+## återinträde {#reentrance-field}
 
 Anger om användaren har gjort om resan med samma instans. Om det inte finns antar vi att värdet är falskt.
 
@@ -37,37 +37,37 @@ Typ: boolesk
 
 Värden: true/false
 
-## instanceEnded
+## instanceEnded {#instance-ended-field}
 
 Anger om instansen har avslutats (utan fel eller inte).
 
 Typ: boolesk
 
-## eventID
+## eventID {#eventid-field}
 
 Händelse-ID under bearbetning för stegbearbetning. Om händelsen är en extern händelse är värdet dess eventId. Om händelsen är en intern händelse är värdet det interna eventId (till exempel scheduleNotificationReceived, executionAction).
 
 Typ: string
 
-## nodeID
+## nodeID {#nodeid-field}
 
 Klientnod-ID (från arbetsytan).
 
 Typ: string
 
-## stepID
+## stepID {#stepdid-field}
 
 Unikt ID för det steg som bearbetas just nu.
 
 Typ: string
 
-## stepName
+## stepName {#stepname-field}
 
 Namnet på det steg som bearbetas just nu.
 
 Typ: string
 
-## stepType
+## stepType {#steptype-field}
 
 Typ av steg.
 
@@ -80,7 +80,7 @@ Möjliga värden:
 * Schemaläggare
 * Timer
 
-## stepStatus
+## stepStatus {#stepstatus-field}
 
 Status för steget, som representerar status för steget, när bearbetningen har slutförts (och steghändelsen utlösts).
 
@@ -95,79 +95,79 @@ Status kan vara:
 * tidsgräns: steget har misslyckats på ett timeout-fel som uppstod under en åtgärd eller en anrikning.
 * instanceTimedout: steget har stoppat bearbetningen eftersom instansen har nått sin timeout.
 
-## travelID
+## travelID {#journeyid-field}
 
 ID för resan.
 
 Typ: string
 
-## travelVersionID
+## travelVersionID {#journeyversionid-field}
 
 ID för reseversionen. Detta id representerar identitetsreferensen till resan, när det gäller travelStepEvent.
 
 Typ: string
 
-## travelVersionName
+## travelVersionName {#journeyversionname-field}
 
 Namn på reseversionen.
 
 Typ: string
 
-## travelVersion
+## travelVersion {#journeyversion-field}
 
 Version av reseversionen.
 
 Typ: string
 
-## instanceID
+## instanceID {#instanceid-field}
 
 Internt ID för reseinstansen.
 
 Typ: string
 
-## externalKey
+## externalKey {#externalkey-field}
 
 Extern nyckel som extraherats från händelsen för att bearbeta den.
 
 Typ: string
 
-## parentStepID
+## parentStepID {#parenstepid-field}
 
 Steg-ID för den överordnade för det aktuella bearbetade steget i instansen.
 
 Typ: string
 
-## parentStepName
+## parentStepName {#parentstepname-field}
 
 Stegnamn för det överordnade steget i det aktuella steget.
 
 Typ: string
 
-## parentTransitionID
+## parentTransitionID {#parenttransitionid-field}
 
 ID för övergången som har fört instansen till det bearbetade steget.
 
 Typ: string
 
-## parentTransitionName
+## parentTransitionName {#parenttransitionname-field}
 
 Namnet på övergången som har fört instansen till det bearbetade steget.
 
 Typ: string
 
-## inTest
+## inTest {#intest-field}
 
 Anger om den här resan är i testläge eller inte.
 
 Typ: boolesk
 
-## processingTime
+## processingTime {#processingtime-field}
 
 Total tid i millisekunder från instansstegsinkomsten till behandlingens slut.
 
 Typ: long
 
-## instanceType
+## instanceType {#instancetype-field}
 
 Anger instanstypen, om den är batch eller unitary.
 
@@ -175,31 +175,31 @@ Typ: string
 
 Värden: batch/unitary
 
-## repeatIndex
+## repeatIndex {#recurrenceindex-field}
 
 Index för upprepningen om resan är batch och återkommande (den första körningen har recidiIndex = 1).
 
 Typ: long
 
-## isBatchToUnitary
+## isBatchToUnitary {#isbatchtounitary-field}
 
 Anger om den här enhetsförekomsten har utlösts från en gruppinstans.
 
 Typ: boolesk
 
-## batchExternalKey
+## batchExternalKey {#batchexternalkey-field}
 
 Extern nyckel för batchhändelse.
 
 Typ: string
 
-## batchInstanceID
+## batchInstanceID {#batchinstanceid-field}
 
 detta är batchförekomstens ID.
 
 Typ: string
 
-## batchUnitaryBranchID
+## batchUnitaryBranchID {#batchunitarybranchid-field}
 
 om instansen har utlösts från en gruppinstans, ett enhetsförgrunds-ID.
 

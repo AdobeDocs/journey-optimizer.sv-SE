@@ -1,22 +1,12 @@
 ---
 title: Återförsök
 description: Lär dig hur nya försök utförs innan du skickar en adress till listan över inaktiveringar
-page-status-flag: never-activated
-uuid: null
-contentOwner: null
-products: null
-audience: administrators
-content-type: reference
-topic-tags: null
-discoiquuid: null
-internal: n
-snippet: y
 feature: Application Settings
 topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 05564a99-da50-4837-8dfb-bb1d3e0f1097
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 06a7abc2ada930356cbaf45ce01eed5e3156f2e3
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 1%
@@ -29,7 +19,7 @@ När ett e-postmeddelande misslyckas på grund av ett tillfälligt **Mjuk studsa
 
 >[!NOTE]
 >
->Läs mer om olika typer av fel i [Leveransfel](../suppression-list.md#delivery-failures) -avsnitt.
+>Läs mer om olika typer av fel i [Leveransfel](../messages/suppression-list.md#delivery-failures) -avsnitt.
 
 I standardkonfigurationen är tröskelvärdet 5 fel.
 
@@ -55,11 +45,7 @@ Om standardvärdet 5 inte passar dina behov kan du ändra feltröskeln enligt st
 
    >[!CAUTION]
    >
-   >Värden över 10 kan orsaka problem med leveransens anseende, liksom IP-begränsning eller blockeringslistning från Internet-leverantörer. [Läs mer om leverans](../deliverability.md)
-
-<!--![](../assets/retries-edition.png)-->
-
-<!--The minimum delay between retries and the maximum number of retries to be performed are based on how well an IP is performing, both historically and currently, at a given domain.-->
+   >Värden över 10 kan orsaka problem med leveransens anseende, liksom IP-begränsning eller blockeringslistning från Internet-leverantörer. [Läs mer om leverans](../messages/deliverability.md)
 
 ## Tidsperiod för återförsök {#retry-duration}
 
@@ -77,6 +63,3 @@ Du kan t.ex. ange återförsöksperioden till 24 timmar för ett transaktionsmej
 
 Lär dig hur du justerar parametrarna för e-poståterförsök när du skapar en meddelandeförinställning i [det här avsnittet](message-presets.md#create-message-preset).
 
-<!--After 3.5 days, any message in the retry queue will be removed from the queue and sent back as a bounce.-->
-
-<!--Once a message has been in the retry queue for a maximum of 3.5 days and has failed to deliver, it will time out and its status will be updated to Failed??-->

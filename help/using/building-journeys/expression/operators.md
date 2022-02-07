@@ -5,14 +5,15 @@ description: Lär dig mer om operatorer i avancerade uttryck
 feature: Journeys
 role: Data Engineer
 level: Experienced
-source-git-commit: 23f4e8224ea5b00e8132b6a3f3e32f73b0cc993f
+exl-id: 706e2e02-9bd9-46e7-a73d-dda3c9ae4ba8
+source-git-commit: 7588a675319324e43bbc61a71b1fdfaab9cce93a
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 6%
 
 ---
 
-# Operatorer {#concept_wd5_pj5_dgb}
+# Operatorer {#operators}
 
 Det finns två typer av operatorer: unära operatorer och binära operatorer. Det finns unära operatorer till vänster och unära operatorer till höger.
 

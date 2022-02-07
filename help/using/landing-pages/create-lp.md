@@ -8,7 +8,7 @@ level: Beginner
 hidefromtoc: true
 hide: true
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: 88b037e079a46e10f7ee4715e78e5edc5a34a6ce
+source-git-commit: b43e3432ede1d4985e0a6b57b57c5efc3cf60c50
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 3%
@@ -21,7 +21,7 @@ ht-degree: 3%
 >
 >Användningen av landningssidor är för närvarande endast tillgänglig i ett tidigt skede för att vissa användare ska kunna välja. Om du vill använda den här funktionen kontaktar du din kontoansvarige på Adobe.
 
-## Åtkomst till landningssidor
+## Åtkomst till landningssidor {#access-landing-pages}
 
 Om du vill få åtkomst till landningssidans lista väljer du **[!UICONTROL Journey Management]** > **[!UICONTROL Landing pages]** från den vänstra menyn.
 
@@ -31,7 +31,7 @@ The **[!UICONTROL Landing Pages]** visas alla objekt som har skapats. Du kan fil
 
 ![](../assets/lp_access-list-filter.png)
 
-## Skapa en landningssida
+## Skapa en landningssida {#create-landing-page}
 
 Stegen för att skapa en landningssida är följande.
 
@@ -61,7 +61,7 @@ Stegen för att skapa en landningssida är följande.
 
    ![](../assets/lp_add-subpage.png)
 
-När du har konfigurerat och utformat [primär sida](#configure-primary-page)och [undersidor](#configure-subpages) om det finns något, kan du [test](#test) och [publicera](#publish) din landningssida.
+När du har konfigurerat och utformat [primär sida](#configure-primary-page)och [undersidor](#configure-subpages) om det finns något, kan du [test](#test-landing-page) och [publicera](#publish-landing-page) din landningssida.
 
 ## Konfigurera den primära sidan {#configure-primary-page}
 
@@ -121,7 +121,7 @@ Följ stegen nedan för att definiera inställningar för undersidan.
 
 ![](../assets/lp_subpage-settings.png)
 
-## Testa landningssidan {#test}
+## Testa landningssidan {#test-landing-page}
 
 När inställningarna för landningssidan och innehållet har definierats kan du använda testprofiler för att förhandsgranska den. Om du infogade [personaliserat innehåll](../personalization/personalize.md)kan du kontrollera hur det här innehållet visas på landningssidan genom att utnyttja testprofildata.
 
@@ -141,7 +141,7 @@ När inställningarna för landningssidan och innehållet har definierats kan du
 
    ![](../assets/lp_test-profiles.png)
 
-   Stegen för att välja testprofiler är desamma som när du testar ett meddelande. De beskrivs i [det här avsnittet](../preview.md#select-test-profiles).
+   Stegen för att välja testprofiler är desamma som när du testar ett meddelande. De beskrivs i [det här avsnittet](../messages/preview.md#select-test-profiles).
 
 1. Välj **[!UICONTROL Preview]** och klicka **[!UICONTROL Open preview]** för att testa landningssidan.
 
@@ -153,7 +153,7 @@ När inställningarna för landningssidan och innehållet har definierats kan du
 
 1. Välj andra testprofiler om du vill förhandsgranska återgivningen för varje variant av landningssidan.
 
-## Kontrollera aviseringar {#alerts}
+## Kontrollera aviseringar {#check-alerts}
 
 När du skapar en landningssida varnar du om du behöver vidta viktiga åtgärder innan du publicerar.
 
@@ -192,7 +192,7 @@ Två typer av varningar kan inträffa:
 > To be able to publish your message, you need to resolve all **error** alerts.
 -->
 
-## Publicera landningssidan {#publish}
+## Publicera landningssidan {#publish-landing-page}
 
 När landningssidan är klar kan du publicera den för att göra den tillgänglig för användning i ett meddelande.
 
@@ -200,11 +200,11 @@ När landningssidan är klar kan du publicera den för att göra den tillgängli
 
 >[!CAUTION]
 >
->Kontrollera och åtgärda varningar innan du publicerar. [Läs mer](#alerts)
+>Kontrollera och åtgärda varningar innan du publicerar. [Läs mer](#check-alerts)
 
 När landningssidan har publicerats läggs den till i listan över landningssidor med **[!UICONTROL Published]** status.
 
-Den är nu klar att användas i en [!DNL Journey Optimizer] [message](../create-message.md) som skickas via en [resa](../building-journeys/journey.md).
+Den är nu klar att användas i en [!DNL Journey Optimizer] [message](../messages/create-message.md) som skickas via en [resa](../building-journeys/journey.md).
 
 >[!NOTE]
 >

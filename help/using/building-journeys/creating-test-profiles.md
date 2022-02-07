@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: bd5e053a-69eb-463b-add3-8b9168c8e280
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: b43e3432ede1d4985e0a6b57b57c5efc3cf60c50
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Skapa testprofiler {#create-test-profiles}
 
-Testprofiler krävs när du använder testläget För att lära dig hur du använder [testläge](../building-journeys/testing-the-journey.md) på en resa och [förhandsgranska och testa dina meddelanden](../preview.md).
+Testprofiler krävs när du använder testläget För att lära dig hur du använder [testläge](../building-journeys/testing-the-journey.md) på en resa och [förhandsgranska och testa dina meddelanden](../messages/preview.md).
 
 Tillgängliga metoder för att skapa testprofiler beskrivs nedan:
 
@@ -88,7 +88,7 @@ Klicka på **[!UICONTROL Begin]** för att starta användningsfallet.
 
 Följande information krävs:
 
-1. **Namnutrymme för identitet**: The [identity namespace](../get-started-identity.md) används för att unikt identifiera testprofilerna. Om e-post till exempel används för att identifiera testprofilerna, kommer identitetsnamnutrymmet **E-post** ska vara markerat. Om den unika identifieraren är telefonnumret är identitetsnamnutrymmet **Telefon** ska vara markerat.
+1. **Namnutrymme för identitet**: The [identity namespace](../start/get-started-identity.md) används för att unikt identifiera testprofilerna. Om e-post till exempel används för att identifiera testprofilerna, kommer identitetsnamnutrymmet **E-post** ska vara markerat. Om den unika identifieraren är telefonnumret är identitetsnamnutrymmet **Telefon** ska vara markerat.
 
 2. **CSV-fil**: En kommaavgränsad fil som innehåller listan med testprofiler som ska skapas. Användningsfallet förväntar sig ett fördefinierat format för CSV-filen som innehåller listan med testprofiler som ska skapas. Varje rad i filen ska innehålla följande fält i rätt ordning:
 

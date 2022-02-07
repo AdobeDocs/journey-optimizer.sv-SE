@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9b0dcffb-f543-4066-850c-67ec33f74a31
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 2088b5ba2ec77e56644683e118e734acfe6707fc
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 8%
@@ -21,7 +21,7 @@ Här följer de huvudsakliga konfigurationsstegen för datakällor:
 >
 >Datakällans konfiguration utförs alltid av en **teknisk användare**.
 
-1. Välj **[!UICONTROL Configurations]**. I  **[!UICONTROL Data Sources]** avsnitt, klicka **[!UICONTROL Manage]**. Listan med datakällor visas. Se [den här sidan](../user-interface.md) för mer information om gränssnittet.
+1. Välj **[!UICONTROL Configurations]**. I  **[!UICONTROL Data Sources]** avsnitt, klicka **[!UICONTROL Manage]**. Listan med datakällor visas. Se [den här sidan](../start/user-interface.md) för mer information om gränssnittet.
 
    ![](../assets/journey18.png)
 

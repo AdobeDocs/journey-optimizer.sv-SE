@@ -1,12 +1,12 @@
 ---
 title: Användargränssnitt
-description: Läs mer om gränssnittet för Erbjudandebibliotek.
+description: Läs mer om användargränssnittet i Offer Library
 feature: Offers
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: 722f9c3b-b505-48c0-b126-31a7a841c245
-source-git-commit: e55aecf274e2f5fbb696cc112dfb4428848d36d5
+source-git-commit: 0545cda9f91ff18791310a4ee2463b2287ac7557
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Klicka på **[!UICONTROL View all]** för att komma åt erbjudandet, samlingen e
 
 ![](../../assets/overview_view-all.png)
 
-## Söka efter och filtrera information
+## Söka efter och filtrera information {#search-and-filter-information}
 
 Använd **sökfält** för att hitta ett specifikt objekt.
 
@@ -77,7 +77,7 @@ Använd **sökfält** för att hitta ett specifikt objekt.
 
 ![](../../assets/filters.png)
 
-## Anpassa visad information
+## Anpassa visad information {#customize-displayed-information}
 
 Listor från beslutshanteringsmenyer kan anpassas med konfigurationsknappen högst upp till höger i listorna.
 
@@ -87,7 +87,7 @@ Observera att kolumnanpassning sparas för varje användare.
 
 ![](../../assets/columns.png)
 
-## Informationsrutan
+## Informationsrutan {#information-pane}
 
 I de olika listorna väljer du ett element för att visa en informationsruta där du kan hämta information och utföra grundläggande åtgärder för elementet.
 

@@ -6,14 +6,14 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e0ca8aef-4f1d-4631-8c34-1692d96e8b51
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 3c8c059e5e3953807b9fc2d8d0eded0d00e49003
 workflow-type: tm+mt
 source-wordcount: '176'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
-# Publicera resan{#concept_mtc_lrt_52b}
+# Publicera din resa{#publishing-the-journey}
 
 Du kan publicera en resa efter att ha testat dess giltighet.
 
@@ -21,7 +21,7 @@ Om du behöver göra ändringar i en publicerad resa måste du skapa en ny versi
 
 Om du avbryter en resa stoppas den permanent. Alla personer som flyter på resan kommer att stoppas permanent och resan kommer att upphöra så att nya deltagare tillåts. Om du behöver använda resan igen måste du duplicera den och publicera den.
 
-1. Innan du publicerar din resa kontrollerar du att den är giltig och att det inte finns något fel. Du kan inte publicera en resa med fel. Se [det här avsnittet](../building-journeys/troubleshooting.md#section_h3q_kqk_fhb). Vi rekommenderar även att du testar din resa innan du publicerar den. Läs [den här sidan](../building-journeys/testing-the-journey.md).
+1. Innan du publicerar din resa kontrollerar du att den är giltig och att det inte finns något fel. Du kan inte publicera en resa med fel. Se [det här avsnittet](../building-journeys/troubleshooting.md#checking-for-errors-before-testing). Vi rekommenderar även att du testar din resa innan du publicerar den. Läs [den här sidan](../building-journeys/testing-the-journey.md).
 1. Klicka på **[!UICONTROL Publish]** i den övre högra menyn.
 
    ![](../assets/journeyuc1_18.png)

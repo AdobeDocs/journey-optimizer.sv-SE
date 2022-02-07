@@ -1,12 +1,12 @@
 ---
 title: Datauppsättning med personaliserade erbjudanden
-description: I det här avsnittet visas alla fält som används i den exporterade datauppsättningen för erbjudanden.
+description: I det här avsnittet visas alla fält som används i den exporterade datauppsättningen för erbjudanden
 feature: Offers
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: c7f691aa-8f89-4f23-b897-53211863eb6d
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 0545cda9f91ff18791310a4ee2463b2287ac7557
 workflow-type: tm+mt
 source-wordcount: '2003'
 ht-degree: 0%
@@ -29,14 +29,14 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 <!--Personalized offers form the set of choices for a decision. The objective for decisioning is to take a large inventory of items and apply numerous constraint rules to that inventory to narrow it down and then to rank the qualifying options according to a criteria. The resulting propositions assemble and personalize the experience for specific individuals.-->
 
-## Identifierare
+## Identifierare {#identifier}
 
 **Fält:** _id
 **Titel:** Identifierare
 **Beskrivning:** En unik identifierare för posten.
 **Typ:** string
 
-## upplevelse
+## upplevelse {#experience}
 
 **Fält:** upplevelse
 **Typ:** object
@@ -314,7 +314,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 <!--Field without name under tags: Description: An identifier of a tag object. The value is the @id of the tag that is referenced. See tag schema: https://ns.adobe.com/experience/decisioning/tag. Type: string-->
 
-## repo
+## repo {#repo}
 
 **Fält:** repo
 **Typ:** object

@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 851d988a-2582-4c30-80f3-b881d90771be
-source-git-commit: 803fd15149391c069a50244bf29d7013bc6b00e2
+source-git-commit: 7a07f2348f08b4582a1310fb65d431c55451d9b6
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 I det här avsnittet presenteras ett exempel från början till slut som visar hur du konfigurerar erbjudanden och använder dem i ett e-postmeddelande baserat på ett beslut som du tidigare har skapat.
 
-## Huvudsteg
+## Huvudsteg {#main-steps}
 
 De viktigaste stegen för att konfigurera erbjudanden, inkludera dem i ett beslut och utnyttja detta beslut i ett e-postmeddelande är följande:
 
@@ -225,11 +225,11 @@ De detaljerade stegen för att skapa och konfigurera ett beslut beskrivs i [det 
 
 Nu när ditt beslut är klart kan du infoga det i ett e-postmeddelande. För att göra detta, följ nedanstående steg:
 
-1. Skapa din e-post och öppna sedan [E-postdesigner](../../using/design-emails.md) för att konfigurera innehållet.
+1. Skapa din e-post och öppna sedan [E-postdesigner](../../using/messages/design-emails.md) för att konfigurera innehållet.
 
 1. Lägg till en strukturkomponent från den vänstra paletten.
 
-1. Lägg till en **[!UICONTROL Offer decision]** innehållskomponent. Lär dig hur du använder innehållskomponenter i [det här avsnittet](../../using/content-components.md).
+1. Lägg till en **[!UICONTROL Offer decision]** innehållskomponent. Lär dig hur du använder innehållskomponenter i [det här avsnittet](../../using/messages/content-components.md).
 
    ![](../assets/offers-e2e-decision-component.png)
 
@@ -255,19 +255,19 @@ Nu kan du se alla personaliserade erbjudanden och reserverbjudandet visualiseras
 
 ![](../assets/offers-e2e-offers-displayed.png)
 
-Använd **[!UICONTROL Offers]** -avsnittet eller innehållskomponentpilarna (höger- och vänsterpilar) för att bläddra bland data. Du kan även visa olika erbjudanden som ingår i beslutet med en kundprofil. Läs mer i [det här avsnittet](../../using/deliver-personalized-offers.md#preview-offers-in-email).
+Använd **[!UICONTROL Offers]** -avsnittet eller innehållskomponentpilarna (höger- och vänsterpilar) för att bläddra bland data. Du kan även visa olika erbjudanden som ingår i beslutet med en kundprofil. Läs mer i [det här avsnittet](../../using/messages/deliver-personalized-offers.md#preview-offers-in-email).
 
 När du har sparat dina ändringar och när meddelandet har publicerats är dina erbjudanden klara att visas för de relevanta profilerna när du skickar meddelandet som en del av en resa.
 
 >[!NOTE]
 >
->När du uppdaterar ett erbjudande, ett reserverbjudande, en erbjudandesamling eller ett erbjudandebeslut som refereras direkt eller indirekt i en [publicerad](../../using/publish-manage-message.md) visas uppdateringarna automatiskt i motsvarande meddelande, utan att det behöver publiceras på nytt.
+>När du uppdaterar ett erbjudande, ett reserverbjudande, en erbjudandesamling eller ett erbjudandebeslut som refereras direkt eller indirekt i en [publicerad](../../using/messages/publish-manage-message.md) visas uppdateringarna automatiskt i motsvarande meddelande, utan att det behöver publiceras på nytt.
 
 **Relaterade ämnen:**
 
-* Lär dig hur du kontrollerar förhandsgranskningen av meddelandet i [det här avsnittet](../../using/preview.md#preview-your-messages).
+* Lär dig hur du kontrollerar förhandsgranskningen av meddelandet i [det här avsnittet](../../using/messages/preview.md#preview-your-messages).
 
-* Lär dig hur du publicerar meddelanden i [det här avsnittet](../../using/publish-manage-message.md).
+* Lär dig hur du publicerar meddelanden i [det här avsnittet](../../using/messages/publish-manage-message.md).
 
 * Lär dig hur meddelanden utlöses av en eller flera resor i [det här avsnittet](../building-journeys/journey.md).
 

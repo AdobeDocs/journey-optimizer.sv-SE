@@ -6,18 +6,18 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 03fbc4f4-b0a8-46d5-91f9-620685b11493
-source-git-commit: a174944bb8efcb67d758d4fe215674c1b8bbee13
+source-git-commit: 3c8c059e5e3953807b9fc2d8d0eded0d00e49003
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 84%
+source-wordcount: '1041'
+ht-degree: 81%
 
 ---
 
-# Felsökning{#concept_nlv_bcv_2fb}
+# Felsök din resa{#troubleshooting}
 
 I det här avsnittet lär du dig att felsöka resor innan de testas eller publiceras. Alla kontroller som anges nedan kan utföras medan resan är i testläge eller när den är live. Rekommendationen är att göra alla kontroller nedan i testläget och sedan gå vidare till publiceringen. Läs [den här sidan](../building-journeys/testing-the-journey.md).
 
-## Söker efter fel före tester{#section_h3q_kqk_fhb}
+## Kontrollera om det finns fel före testning{#checking-for-errors-before-testing}
 
 Kontrollera att alla aktiviteter är konfigurerade korrekt innan du testar och publicerar din resa. Du kan inte utföra tester eller publikationer om fel fortfarande upptäcks av systemet.
 
@@ -41,7 +41,7 @@ Fel och varningar som är globala för resan visas först i listan. Fel och varn
 
 När ett fel inträffar i en åtgärd eller ett villkor upphör en individs resa. Det enda sättet att få den att fortsätta är att markera rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [det här avsnittet](../building-journeys/using-the-journey-designer.md#paths).
 
-## Kontrollera att händelser skickas korrekt{#section_rqz_11t_dgb}
+## Kontrollera att händelser skickas korrekt{#checking-that-events-are-properly-sent}
 
 Startpunkten för en resa är alltid en händelse. Du kan utföra tester med verktyg som Postman.
 
@@ -49,7 +49,7 @@ Du kan kontrollera om API-anropet som skickas via dessa verktyg skickas korrekt 
 
 Händelser skjuts inte direkt från källan till resor. Resorna är beroende av Adobe Experience Platform API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför hänvisa till [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target=&quot;_blank&quot;} för felsökning av API:er för direktuppspelning.
 
-## Kontrollera om någon kommer in i resan{#section_x4v_zzs_dgb}
+## Kontrollera om personer kommer in på resan{#checking-if-people-enter-the-journey}
 
 Reserapporter mäter människors inträde på en resa i realtid.
 
@@ -69,7 +69,7 @@ Här följer några saker som administratören bör kontrollera:
    Content-type - application/json
    ```
 
-## Kontrollera hur människor navigerar genom resan{#section_l5y_yzs_dgb}
+## Kontrollera hur människor navigerar genom resan{#checking-how-people-navigate-through-the-journey}
 
 Reserapportering mäter enskilda personers framsteg inom en resa. Det är enkelt att identifiera var och varför en person stoppats.
 
@@ -78,7 +78,7 @@ Här följer några saker att kontrollera:
 * Är det på grund av ett tillstånd som utesluter personen i fråga? Villkoret kan till exempel vara &quot;kön = man&quot; och personen är en kvinna. Den här kontrollen kan utföras av en företagsanvändare om villkoret inte är för komplext.
 * Är orsaken att ett anrop till en datakälla inte svarar? När resan är i testläge kan denna information visas i testlägets loggar. När resan är live kan en administratör testa direktanrop till datakällan och kontrollera svaret som tas emot. En administratör kan även göra dubbletter av resan och testa den.
 
-## Kontrollera att meddelanden har skickats{#section_qb1_yzs_dgb}
+## Kontrollera att meddelanden har skickats{#checking-that-messages-are-sent-successfully}
 
 Om enskilda personer flödar rätt väg i resan, men inte får meddelanden som de bör få, kan du kontrollera om:
 

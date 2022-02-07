@@ -6,14 +6,14 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 5c94842a-021c-4a3a-ad9c-ccc2af2c1526
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 9873af4caf7cd8bc4e9672748414bf78f28ed30b
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 6%
 
 ---
 
-# Ta bort ett reserverbjudande
+# Ta bort ett reserverbjudande {#delete-fallback-offer}
 
 Ibland kan det vara nödvändigt att ta bort (DELETE) ett reserverbjudande. Endast reserverbjudanden som du skapar i innehavarbehållaren kan tas bort. Detta görs genom att DELETE begär [!DNL Offer Library] API som använder $id för det reserverbjudande som du vill ta bort.
 

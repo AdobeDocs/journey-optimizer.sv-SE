@@ -1,24 +1,14 @@
 ---
-title: Delegera underdomäner
-description: Lär dig hur du delegerar dina underdomäner
-page-status-flag: never-activated
-uuid: null
-contentOwner: null
-products: null
-audience: administrators
-content-type: reference
-topic-tags: null
-discoiquuid: null
-internal: n
-snippet: y
+title: Åtkomst till delegerade underdomäner
+description: Lär dig hur du får åtkomst till delegerade underdomäner.
 feature: Application Settings
 topic: Administration
 role: Admin
 level: Intermediate
 exl-id: cb3248c5-f444-47aa-80b2-c1a9fbebfcc0
-source-git-commit: bbc2adabac63ffb813ea2630f29aec552fc3f4df
+source-git-commit: dcdbf4a0cd6a93e56cbe97535515c1a6143db81b
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '161'
 ht-degree: 1%
 
 ---

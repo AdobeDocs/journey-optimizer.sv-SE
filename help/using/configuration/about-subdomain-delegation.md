@@ -1,23 +1,25 @@
 ---
-title: Delegera underdomäner
+title: Delegering till underdomän i [!DNL Journey Optimizer]
 description: Lär dig hur du delegerar dina underdomäner
-internal: n
-snippet: y
 feature: Application Settings
 topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 1b5ca4db-44d9-49e2-ab39-a1abba223ec7
-source-git-commit: bbc2adabac63ffb813ea2630f29aec552fc3f4df
+source-git-commit: e5ebf038565329fdaa7b01a12042c2c4bba79f37
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 36%
+source-wordcount: '657'
+ht-degree: 35%
 
 ---
 
 # Delegering till underdomän i [!DNL Journey Optimizer] {#subdomain-delegation}
 
 Genom att skapa en underdomän för e-postkampanjer kan varumärken isolera olika typer av trafik (till exempel marknadsföring kontra företag) i specifika IP-pooler och med specifika domäner, vilket snabbar upp IP-uppvärmningsprocessen och förbättrar leveransmöjligheterna generellt. Om du delar en domän och den blockeras eller läggs till i blockeringslista kan det påverka företagets e-postleverans. Men kända problem eller blockeringar på en domän som är specifik för din e-postmarknadsföring kommer att påverka just det e-postflödet. Om du använder huvuddomänen som avsändare eller Från-adress för flera e-postströmmar kan det också bryta e-postautentiseringen, vilket gör att dina meddelanden blockeras eller placeras i skräppostmappen.
+
+>[!NOTE]
+>
+>Du kan inte använda samma sändande domän för att skicka ut meddelanden från [!DNL Adobe Journey Optimizer] och från en annan produkt, som [!DNL Adobe Campaign] eller [!DNL Adobe Marketo Engage].
 
 ## Varför konfigurera underdomäner? {#why-setting-up-subdomains}
 

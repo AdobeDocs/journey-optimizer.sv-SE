@@ -1,19 +1,19 @@
 ---
 title: Skapa placeringar
-description: Lär dig hur du skapar praktik i Adobe Experience Platform.
+description: Lär dig hur du skapar ersättningar för dina erbjudanden
 feature: Offers
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: dfaf887e-d4b3-45b0-8297-bffdb0abff4d
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 0545cda9f91ff18791310a4ee2463b2287ac7557
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '214'
 ht-degree: 4%
 
 ---
 
-# Skapa placeringar {#creating-placements}
+# Skapa placeringar {#create-placements}
 
 En placering säkerställer att rätt erbjudandeinnehåll visas på rätt plats i ert meddelande. När du lägger till innehåll i ett erbjudande blir du ombedd att välja en placering där innehållet kan visas.
 

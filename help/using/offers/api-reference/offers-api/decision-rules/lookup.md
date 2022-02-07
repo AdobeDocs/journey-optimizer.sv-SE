@@ -6,14 +6,14 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 54368710-1021-43c0-87b7-5176cc6c72f7
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 9873af4caf7cd8bc4e9672748414bf78f28ed30b
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 1%
 
 ---
 
-# Söka efter beslutsregler
+# Söka efter en beslutsregel {#lookup-decision-rule}
 
 Du kan söka efter en specifik beslutsregel genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller antingen beslutsregeln `@id` eller namnet på beslutsregeln i sökvägen för begäran.
 

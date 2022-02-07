@@ -5,14 +5,15 @@ description: Läs mer om hur du skapar avancerade uttryck
 feature: Journeys
 role: Data Engineer
 level: Experienced
-source-git-commit: 4695c88b4372a0f2a804bef268ae6f2d39eb2f0b
+exl-id: 753ef9f4-b39d-4de3-98ca-e69a1766a78b
+source-git-commit: eaa2cbad00fbbfade7ba98cf830f945e032f03d1
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 2%
 
 ---
 
-# Exempel på avancerade uttryck
+# Exempel på avancerade uttryck{#advanced-expression-examples}
 
 Den avancerade uttrycksredigeraren kan användas för att skapa villkor som gör att du kan filtrera användare på dina resor. Dessa villkor gör att ni kan inrikta er på användare i tid, på datum, plats, varaktighet eller åtgärder som att köpa eller avstå från kundvagnar så att de kan återställas under resan.
 

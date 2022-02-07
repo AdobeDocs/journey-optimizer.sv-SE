@@ -5,14 +5,15 @@ description: Läs om villkorlig instruktion
 feature: Journeys
 role: Data Engineer
 level: Experienced
-source-git-commit: d786f3d42515d65a6574f51b6cff4b85063a0126
+exl-id: 5a5b35a7-e3b5-4dc0-8a87-e985956b04a4
+source-git-commit: 7588a675319324e43bbc61a71b1fdfaab9cce93a
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
 
 ---
 
-# Villkorlig instruktion (if, then, else) {#section_cdz_lsk_w3b}
+# Villkorlig instruktion (if, then, else) {#conditional-instruction}
 
 Den villkorliga instruktionen (if, then, else) stöds i den avancerade redigeraren. Det gör det möjligt att definiera mer komplexa uttryck. Den består av följande element:
 

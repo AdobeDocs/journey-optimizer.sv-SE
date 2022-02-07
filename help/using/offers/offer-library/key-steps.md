@@ -1,19 +1,19 @@
 ---
 title: Viktiga steg för att skapa ett erbjudande
-description: Upptäck de viktigaste stegen som krävs för att skapa ett erbjudande.
+description: Upptäck de viktigaste stegen som krävs för att skapa ett erbjudande
 feature: Offers
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: e375fd3a-b10d-45f4-a95b-ceb48116e841
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 0545cda9f91ff18791310a4ee2463b2287ac7557
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 10%
 
 ---
 
-# Viktiga steg för att skapa och hantera erbjudanden {#key-steps}
+# Viktiga steg för att skapa och hantera erbjudanden {#key-steps-to-manage-offers}
 
 Nedan beskrivs de viktigaste stegen för att skapa, konfigurera och hantera erbjudanden samt för att använda dem i ett beslut.
 
@@ -21,7 +21,7 @@ Nedan beskrivs de viktigaste stegen för att skapa, konfigurera och hantera erbj
 
 Ett komplett exempel som visar hur man konfigurerar erbjudanden får du om du använder dem i ett beslut och använder det i ett e-postmeddelande. [den här sidan](../offers-e2e.md).
 
-## Skapa komponenter
+## Skapa komponenter {#create-components}
 
 Innan du börjar skapa erbjudanden måste du definiera flera komponenter som du ska använda i dina erbjudanden.
 
@@ -41,7 +41,7 @@ Innan du börjar skapa erbjudanden måste du definiera flera komponenter som du 
 <td><img src="../../assets/do-not-localize/icon-ranking.svg" width="60px"><p><a href="../offer-library/create-ranking-formulas.md">Skapa rankningsformler</a></p></td>
 </table>
 
-## Skapa och hantera erbjudanden
+## Skapa och hantera erbjudanden {#create-and-manage-offers}
 
 1. **Skapa erbjudanden** och konfigurera deras innehåll och egenskaper.
 
@@ -56,7 +56,7 @@ Innan du börjar skapa erbjudanden måste du definiera flera komponenter som du 
 <td><img src="../../assets/do-not-localize/icon-collection.svg" width="60px"><p><a href="../offer-library/creating-collections.md">Skapa samlingar</a></p></td></tr>
 </table>
 
-## Skapa och konfigurera beslut
+## Skapa och konfigurera beslut {#create-and-configure-decisions}
 
 1. **Skapa ett beslut** som kombinerar placeringar med personaliserade erbjudanden och reserverbjudanden. Den här kombinationen kommer att användas av Offera decisioningen för att hitta det bästa erbjudandet för en viss profil.
 

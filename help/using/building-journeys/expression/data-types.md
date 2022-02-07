@@ -1,18 +1,19 @@
 ---
 product: adobe campaign
 title: Datatyper
-description: Lär dig mer om datatyper i avancerade uttryck
+description: Learn about data types in advanced expressions
 feature: Journeys
 role: Data Engineer
 level: Experienced
-source-git-commit: 23f4e8224ea5b00e8132b6a3f3e32f73b0cc993f
+exl-id: fdfc3287-d733-45fb-ad11-b4238398820a
+source-git-commit: 7588a675319324e43bbc61a71b1fdfaab9cce93a
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 5%
 
 ---
 
-# Datatyper {#concept_gp3_rj5_dgb}
+# Datatyper {#data-types}
 
 Tekniskt sett innehåller en konstant alltid en datatyp. I det litterala uttrycket anger vi bara värdet. Datatypen kan härledas från värdet (t.ex. sträng, heltal, decimal). I särskilda fall, till exempel datum och tid, använder vi dedikerade funktioner för representationen.
 
@@ -28,7 +29,7 @@ JSON-format: Sträng
 
 Serialiseringsformat: UTF-8
 
-**Litteral representation**
+**Literal representation**
 
 ```json
 "<value>"
@@ -98,7 +99,7 @@ Serialiseringsformat: med &#39;.&#39; som decimalavgränsare.
 
 **Beskrivning**
 
-Bokfört booleskt värde med gemener: true eller false
+Boolean value written lowercase: true or false
 
 JSON-format: Boolean
 
@@ -122,9 +123,9 @@ true
 
 **Beskrivning**
 
-Representerar endast ett datum utan tidszon, vilket visas som en dag i månaden.
+Represents a date only without a time zone, viewed as a year-month-day.
 
-Det är en beskrivning av datumet, som används för födelsedagar.
+It is a description of the date, as used for birthdays.
 
 JSON-format: Sträng.
 
@@ -197,7 +198,7 @@ Du kan också skicka ett heltal som skickar ett epokvärde. [Läs mer](https://w
 
 Tidszonen kan anges med en förskjutningskod eller en tidszonskod (exempel: Europa/Paris, Z - betyder UTC).
 
-**Litteral representation**
+**Literal representation**
 
 ```json
 toDateTime("<dateTime in ISO-8601 format>")
@@ -247,7 +248,7 @@ toDateTime(1560762190189)
 
 Den representerar en tidsbaserad tidsmängd, till exempel &quot;34,5 sekunder&quot;. Den modellerar en kvantitet eller tid i millisekunder.
 
-De tidsenheter som stöds är: millisekunder, sekunder, minuter, timmar, dagar där en dag är lika med 24 timmar. År och månader stöds inte eftersom de inte är en fast tidsmängd.
+The supported temporal units are: milliseconds, seconds, minutes, hours, days where a day equals to 24 hours. År och månader stöds inte eftersom de inte är en fast tidsmängd.
 
 JSON-format: Sträng.
 
@@ -313,7 +314,7 @@ toDuration("-P-6H+3M") -- parses as "+6 hours and -3 minutes"
 
 **Beskrivning**
 
-Kommaavgränsad lista med uttryck som använder hakparenteser som avgränsare.
+Comma separated list of expressions using square brackets as delimiters.
 
 Polymorfism stöds inte, och därför bör alla uttryck i listan ha samma typ.
 

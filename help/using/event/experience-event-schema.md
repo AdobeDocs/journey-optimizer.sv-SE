@@ -6,20 +6,20 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: f19749c4-d683-4db6-bede-9360b9610eef
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: dcdbf4a0cd6a93e56cbe97535515c1a6143db81b
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 0%
 
 ---
 
-# Om ExperienceEvent-scheman för [!DNL Journey Optimizer] Händelser
+# Om ExperienceEvent-scheman för [!DNL Journey Optimizer] Händelser {#about-experienceevent-schemas}
 
 [!DNL Journey Optimizer] -händelser är XDM Experience Events som skickas till Adobe Experience Platform via Streaming Ingmit.
 
 Därför är en viktig förutsättning för att skapa händelser för [!DNL Journey Optimizer] är att du känner till Adobe Experience Platform Experience Data Model (eller XDM) och hur du skapar XDM Experience Event-scheman samt hur du direktuppspelar XDM-formaterade data till Adobe Experience Platform.
 
-## Schemakrav för [!DNL Journey Optimizer] Händelser
+## Schemakrav för [!DNL Journey Optimizer] Händelser  {#schema-requirements}
 
 Det första steget i att konfigurera en händelse för [!DNL Journey Optimizer] är att se till att du har ett definierat XDM-schema för att representera händelsen och en datauppsättning som skapas för att registrera instanser av händelsen på Adobe Experience Platform. Det är inte helt nödvändigt att ha en datauppsättning för dina händelser, men om du skickar händelserna till en viss datauppsättning kan du behålla användarens händelsehistorik för framtida referens och analyser, så det är alltid en bra idé. Om du inte redan har ett lämpligt schema och datamängd för händelsen kan båda dessa åtgärder utföras i Adobe Experience Platform webbgränssnitt.
 

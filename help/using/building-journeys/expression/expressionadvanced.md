@@ -5,14 +5,15 @@ description: Läs mer om hur du skapar avancerade uttryck
 feature: Journeys
 role: Data Engineer
 level: Experienced
-source-git-commit: 4695c88b4372a0f2a804bef268ae6f2d39eb2f0b
+exl-id: 9ea6cc3a-6a1b-4e8f-82ff-f8b1812617d7
+source-git-commit: 7588a675319324e43bbc61a71b1fdfaab9cce93a
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 85%
 
 ---
 
-# Om den avancerade uttrycksredigeraren {#concept_uyj_trt_52b}
+# Om den avancerade uttrycksredigeraren {#about-the-advanced-expression-editor}
 
 Använd den avancerade uttrycksredigeraren för att skapa avancerade uttryck på olika skärmar i gränssnittet. Du kan till exempel skapa uttryck när du konfigurerar och använder resor och när du definierar ett datakällsvillkor.
 Den är också tillgänglig varje gång du behöver definiera åtgärdsparametrar som kräver specifika dataändringar. Du kan utnyttja data från händelser eller ytterligare information som hämtats från datakällan. I en resa är den lista med händelsefält som visas sammanhangsberoende och varierar beroende på vilka händelser som läggs till i resan.
@@ -37,7 +38,7 @@ När det är möjligt kan du växla mellan de två lägena med hjälp av knappen
 >
 >Åtgärdsparametrar kan definieras genom fältval eller via den avancerade uttrycksredigeraren. De returnerar en viss datatyp enligt sina uttryck.
 
-## Komma åt den avancerade uttrycksredigeraren {#section_fdz_4nj_cjb}
+## Komma åt den avancerade uttrycksredigeraren {#accessing-the-advanced-expression-editor}
 
 Du kan komma åt den avancerade uttrycksredigeraren på olika sätt.
 
@@ -48,7 +49,7 @@ Du kan komma åt den avancerade uttrycksredigeraren på olika sätt.
 * När du skapar en anpassad timer visas den avancerade redigeraren direkt.
 * Klicka på **[!UICONTROL Advanced mode]** när du kartlägger en åtgärdsparameter.
 
-## Lära känna gränssnittet{#section_otq_tnj_cjb}
+## Lära känna gränssnittet{#discovering-the-interface}
 
 Med den här skärmen kan du ange ett uttryck manuellt.
 

@@ -7,7 +7,8 @@ role: User
 level: Intermediate
 hidefromtoc: true
 hide: true
-source-git-commit: 459bf9451ca86350713cf7f6d6977284b6d2eaf2
+exl-id: f5a42c69-0384-442b-acf6-b3149be8b0da
+source-git-commit: 1a2c87866404201ea4693ed58efe302b83db9efa
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -57,4 +58,3 @@ The **[!UICONTROL Subscription performance]** Diagram visar hur prenumerationern
 ![](../assets/subscription_report_2.png)
 
 The **Prenumerationer - uppdelning** och **Avbeställ - Uppdelning** representerar det totala antalet personer som under den valda tidsperioden har tecknat eller avbrutit prenumerationen, beroende på meddelanden, landningssidor och kanaler.
-

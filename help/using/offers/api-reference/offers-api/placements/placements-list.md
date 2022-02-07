@@ -6,14 +6,14 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 36030ffe-eb7a-4487-914d-84ccb0a6bf6e
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 9873af4caf7cd8bc4e9672748414bf78f28ed30b
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 2%
 
 ---
 
-# Lista placeringar
+# Lista placeringar {#list-placements}
 
 Placeringar är behållare som används för att visa upp dina erbjudanden. En placering säkerställer att rätt erbjudandeinnehåll visas på rätt plats i ert meddelande. När du lägger till innehåll i ett erbjudande blir du ombedd att välja en placering där innehållet kan visas.
 
@@ -32,11 +32,11 @@ GET /{ENDPOINT_PATH}/{CONTAINER_ID}/queries/core/search?schema={SCHEMA_PLACEMENT
 | `SCHEMA_PLACEMENT}` | Definierar schemat som är associerat med placeringar. | `https://ns.adobe.com/experience/offer-management/offer-placement;version=0.4` |
 | `{QUERY_PARAMS}` | Valfria frågeparametrar för att filtrera resultat efter. | `limit=2` |
 
-## Använda frågeparametrar
+## Använda frågeparametrar {#using-query-parameters}
 
 Du kan använda frågeparametrar för att sidgranska och filtrera resultat när du visar resurser.
 
-### Sidindelning
+### Sidindelning {#paging}
 
 De vanligaste frågeparametrarna för sidindelning är:
 

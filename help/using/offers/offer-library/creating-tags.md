@@ -1,19 +1,19 @@
 ---
 title: Skapa taggar
-description: Lär dig hur du skapar erbjudanden i Adobe Experience Platform.
+description: Lär dig hur du skapar taggar för dina erbjudanden
 feature: Offers
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: fe2b7ce4-dc63-477a-a64f-f3828c6a232e
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 0545cda9f91ff18791310a4ee2463b2287ac7557
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '161'
 ht-degree: 5%
 
 ---
 
-# Skapa taggar {#creating-tags}
+# Skapa taggar {#create-tags}
 
 Genom att associera taggar med erbjudandena blir det enklare att hålla ordning på dem. Du kan till exempel märka dina erbjudanden på den svarta fredagen med taggen &quot;Black Friday&quot;. Du kan sedan använda sökfunktionen i erbjudandebiblioteket för att enkelt hitta alla erbjudanden med den taggen.
 

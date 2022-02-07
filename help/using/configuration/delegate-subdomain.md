@@ -1,24 +1,14 @@
 ---
-title: Delegera underdomäner
-description: Lär dig hur du delegerar dina underdomäner
-page-status-flag: never-activated
-uuid: null
-contentOwner: null
-products: null
-audience: administrators
-content-type: reference
-topic-tags: null
-discoiquuid: null
-internal: n
-snippet: y
+title: Delegera en underdomän
+description: Lär dig hur du delegerar dina underdomäner.
 feature: Application Settings
 topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: bbc2adabac63ffb813ea2630f29aec552fc3f4df
+source-git-commit: 06a7abc2ada930356cbaf45ce01eed5e3156f2e3
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1430'
 ht-degree: 5%
 
 ---
@@ -113,8 +103,6 @@ Följ stegen nedan för att delegera en underdomän med CNAME:
 1. Välj **[!UICONTROL CNAME set up]** -metod.
 
    ![](../assets/subdomain-method-cname.png)
-
-   <!--The steps to specify the name of the subdomain to delegate and to generate the DNS records into your domain hosting solution are the same as for full subdomain delegation. See **steps 3 to 5** of the [Full subdomain delegation](#full-subdomain-delegation) section.)-->
 
 1. Ange namnet på den underdomän som ska delegeras.
 
