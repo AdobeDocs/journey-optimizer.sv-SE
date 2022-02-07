@@ -5,10 +5,10 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att leverera sammankopplade, kontextuella och personaliserade upplevelser till kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: bbc2adabac63ffb813ea2630f29aec552fc3f4df
+source-git-commit: 3c8c059e5e3953807b9fc2d8d0eded0d00e49003
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 48%
+source-wordcount: '911'
+ht-degree: 47%
 
 ---
 
@@ -16,38 +16,38 @@ ht-degree: 48%
 
 + [Journey Optimizer-dokumentation](ajo-home.md)
 + Nyheter? {#whats-new}
-   + [Versionsinformation](using/release-notes.md)
-   + [Senaste uppdateringar](using/documentation-updates.md)
+   + [Versionsinformation](using/rn/release-notes.md)
+   + [Senaste uppdateringar](using/rn/documentation-updates.md)
 + Kom igång{#get-started}
-   + [Vad är Journey Optimizer?](using/get-started.md)
+   + [Vad är Journey Optimizer?](using/start/get-started.md)
    + Snabbstart{#quick-start}
-      + [Översikt](using/quick-start.md)
-      + [Kom igång som marknadsförare](using/path/marketer.md)
-      + [Kom igång som datatekniker](using/path/data-engineer.md)
-      + [Kom igång som administratör](using/path/administrator.md)
-      + [Kom igång som utvecklare](using/path/developer.md)
-   + [Användargränssnitt](using/user-interface.md)
-   + [Begränsningar](using/limitations.md)
-+ Messages {#messages}
-   + [Kom igång med meddelanden](using/get-started-content.md)
+      + [Översikt](using/start/quick-start.md)
+      + [Kom igång som marknadsförare](using/start/path/marketer.md)
+      + [Kom igång som datatekniker](using/start/path/data-engineer.md)
+      + [Kom igång som administratör](using/start/path/administrator.md)
+      + [Kom igång som utvecklare](using/start/path/developer.md)
+   + [Användargränssnitt](using/start/user-interface.md)
+   + [Begränsningar](using/start/limitations.md)
++ Meddelanden {#messages}
+   + [Kom igång med meddelanden](using/messages/get-started-content.md)
    + Skapa meddelanden {#create-message}
-      + [Create a message](using/create-message.md)
-      + [Skapa ett e-postmeddelande](using/create-email.md)
-      + [Skapa ett push-meddelande](using/create-push.md)
-      + [Skapa ett SMS-meddelande](using/create-sms.md)
-   + [Lägga till och hantera resurser](using/assets-essentials.md)
-   + [Lägg till personaliserade erbjudanden](using/deliver-personalized-offers.md)
+      + [Skapa ett meddelande](using/messages/create-message.md)
+      + [Skapa ett e-postmeddelande](using/messages/create-email.md)
+      + [Skapa ett push-meddelande](using/messages/create-push.md)
+      + [Skapa ett SMS-meddelande](using/messages/create-sms.md)
+   + [Lägga till och hantera resurser](using/messages/assets-essentials.md)
+   + [Lägg till personaliserade erbjudanden](using/messages/deliver-personalized-offers.md)
    + Designa e-postmeddelanden {#email-designer}
-      + [Kom igång med e-postdesign](using/design-emails.md)
-      + [Designa ditt e-postinnehåll i användargränssnittet](using/create-email-content.md)
-      + [Importera eller koda ditt e-postinnehåll](using/existing-content.md)
-      + [Använda e-postdesigners innehållskomponenter](using/content-components.md)
-   + [Lägga till länkar och spåra meddelanden](using/message-tracking.md)
+      + [Kom igång med e-postdesign](using/messages/design-emails.md)
+      + [Designa ditt e-postinnehåll i användargränssnittet](using/messages/create-email-content.md)
+      + [Importera eller koda ditt e-postinnehåll](using/messages/existing-content.md)
+      + [Använda e-postdesigners innehållskomponenter](using/messages/content-components.md)
+   + [Lägga till länkar och spåra meddelanden](using/messages/message-tracking.md)
    + Validera och publicera {#validate}
-      + [Förhandsgranska och korrektur](using/preview.md)
-      + [Kontrollera aviseringar](using/alerts.md)
-      + [Publicera meddelanden](using/publish-manage-message.md)
-   + [Hantera avanmälan](using/consent.md)
+      + [Förhandsgranska och korrektur](using/messages/preview.md)
+      + [Kontrollera aviseringar](using/messages/alerts.md)
+      + [Publicera meddelanden](using/messages/publish-manage-message.md)
+   + [Hantera avanmälan](using/messages/consent.md)
 + Personalisering{#personalization}
    + [Kom igång med personalisering](using/personalization/personalize.md)
    + [Anpassningssammanhang](using/personalization/personalization-contexts.md)
@@ -75,13 +75,13 @@ ht-degree: 48%
    + Segment {#segments}
       + [Kom igång med segment](using/segment/about-segments.md)
       + [Skapa segment](using/segment/creating-a-segment.md)
-   + [Profiler](using/get-started-profiles.md)
-   + [Identiteter](using/get-started-identity.md)
+   + [Profiler](using/start/get-started-profiles.md)
+   + [Identiteter](using/start/get-started-identity.md)
 + Resor {#orchestrate-journeys}
    + Om resor{#about-journeys}
       + [Allmän princip](using/building-journeys/journey.md)
       + [Reseversioner](using/building-journeys/journey-versions.md)
-      + [Testprofiler](using/building-journeys/creating-test-profiles.md)
+      + [Skapa testprofiler](using/building-journeys/creating-test-profiles.md)
       + [Integrera med intelligenta tjänster](using/building-journeys/ai-services-overview.md)
    + Skapa en resa{#create-journey}
       + [Kom igång med resor](using/building-journeys/journey-gs.md)
@@ -195,38 +195,38 @@ ht-degree: 48%
       + [Skicka ett meddelande med Campaign v7/v8](using/building-journeys/campaign-classic-use-case.md)
       + [Skicka samlingar dynamiskt med anpassade åtgärder](using/building-journeys/collections.md)
       + [Skicka ett meddelande till prenumeranter](using/building-journeys/message-to-subscribers-uc.md)
-      + [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
+      + [Rita upp leveranser](using/building-journeys/ramp-up-deliveries-uc.md)
 + Spåra och övervaka {#reporting}
-   + [Meddelandeövervakning](using/message-monitoring.md)
+   + [Meddelandeövervakning](using/messages/message-monitoring.md)
    + Live-rapport {#live-report}
       + [Åtkomst till Live-rapportkontrollpanelen](using/reports/live-report.md)
       + [Journey Live-rapport](using/reports/journey-live-report.md)
       + [Email Live-rapport](using/reports/email-live-report.md)
       + [Push Live-rapport](using/reports/push-live-report.md)
-   + Global report {#global-report}
+   + Global rapport {#global-report}
       + [Åtkomst till instrumentpanel för global rapport](using/reports/global-report.md)
       + [Rapport om global resa](using/reports/journey-global-report.md)
       + [Global e-postrapport](using/reports/email-global-report.md)
-      + [Push Global report](using/reports/push-global-report.md)
+      + [Push Global-rapport](using/reports/push-global-report.md)
    + Reserapporter {#reports}
-      + [Create journey reports](using/reports/sharing-overview.md)
+      + [Skapa reserapporter](using/reports/sharing-overview.md)
       + [Lista över steghändelsefält](using/reports/sharing-field-list.md)
       + Äldre steghändelsefält {#legacy-step-event-fields}
          + [Om äldre fält](using/reports/sharing-legacy-fields.md)
          + [Resefält](using/reports/sharing-journey-fields.md)
-         + [Common fields](using/reports/sharing-common-fields.md)
+         + [Vanliga fält](using/reports/sharing-common-fields.md)
          + [Körningsfält för åtgärd](using/reports/sharing-execution-fields.md)
          + [Fält för datahämtning](using/reports/sharing-fetch-fields.md)
          + [Identitetsfält](using/reports/sharing-identity-fields.md)
       + [Exempel på frågor](using/reports/query-examples.md)
    + levererbarhet {#deliverability}
-      + [Kom igång med leverans](using/deliverability.md)
-      + [Suppression list](using/suppression-list.md)
-      + [Allowed list](using/allow-list.md)
+      + [Kom igång med leverans](using/messages/deliverability.md)
+      + [Undertryckningslista](using/messages/suppression-list.md)
+      + [Tillåtelselista](using/messages/allow-list.md)
 + Landningssidor {#landing-pages}
    + [Kom igång med landningssidor](using/landing-pages/get-started-lp.md)
    + [Skapa en landningssida](using/landing-pages/create-lp.md)
-   + [Design a landing page](using/landing-pages/design-lp.md)
+   + [Utforma en landningssida](using/landing-pages/design-lp.md)
    + [Skapa en prenumerationslista](using/landing-pages/subscription-list.md)
    + [Användningsfall](using/landing-pages/lp-use-cases.md)
    + Rapportering {#lp-reporting}
@@ -312,15 +312,15 @@ ht-degree: 48%
          + [API för beslut](using/offers/api-reference/decisions-api/deliver-offers.md)
          + [Webb-SDK för Adobe Experience Platform](using/offers/api-reference/web-sdk.md)
 + Datahantering {#data-management}
-   + [Scheman](using/get-started-schemas.md)
-   + [Datauppsättningar](using/get-started-datasets.md)
-   + [Frågor](using/get-started-queries.md)
+   + [Scheman](using/start/get-started-schemas.md)
+   + [Datauppsättningar](using/start/get-started-datasets.md)
+   + [Frågor](using/start/get-started-queries.md)
 + Konfiguration{#configuration}
    + [Kom igång med Journey Optimizer](using/configuration/get-started-configuration.md)
    + Konfigurera meddelanden {#configuration-message}
       + Konfiguration för push-meddelanden{#push-config}
-         + [Kom igång med push-konfiguration](using/push-gs.md)
-         + [Konfigurera kanal för push-meddelanden](using/push-configuration.md)
+         + [Kom igång med push-konfiguration](using/messages/push-gs.md)
+         + [Konfigurera kanal för push-meddelanden](using/messages/push-configuration.md)
       + E-postkonfiguration {#email-configuration}
          + Delegera underdomäner {#delegate-subdomains}
             + [Kom igång med delegering till underdomäner](using/configuration/about-subdomain-delegation.md)
@@ -340,11 +340,11 @@ ht-degree: 48%
       + [Integrera med externa system](using/configuration/external-systems.md)
       + Händelsekonfiguration {#events-journeys}
          + [Allmän princip](using/event/about-events.md)
-         + Configure a unitary event {#unitary-events}
+         + Konfigurera en enhetshändelse {#unitary-events}
             + [Kom igång med Unitary Events](using/event/about-creating.md)
             + [Om scheman i ExperienceEvent](using/event/experience-event-schema.md)
-            + [Leverage Adobe Analytics](using/event/about-analytics.md)
-         + [Configure a business event](using/event/about-creating-business.md)
+            + [Utnyttja Adobe Analytics](using/event/about-analytics.md)
+         + [Konfigurera en affärshändelse](using/event/about-creating-business.md)
          + [Ytterligare steg för att skicka händelser](using/event/additional-steps-to-send-events-to-journey-orchestration.md)
       + Datakällans konfiguration{#data-source-journeys}
          + [Om datakällor](using/datasource/about-data-sources.md)
@@ -355,7 +355,7 @@ ht-degree: 48%
          + [Om åtgärder](using/action/action.md)
          + [Konfigurera en åtgärd](using/action/about-custom-action-configuration.md)
          + [Integrera med Adobe Campaign v7/v8](using/action/acc-action.md)
-   + [Källor](using/get-started-sources.md)
+   + [Källor](using/start/get-started-sources.md)
 + Åtkomstkontroll {#access-control}
    + [Översikt över åtkomstkontroll](using/administration/permissions-overview.md)
    + [Inbyggda produktprofiler](using/administration/ootb-product-profiles.md)
