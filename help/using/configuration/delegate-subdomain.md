@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: 06a7abc2ada930356cbaf45ce01eed5e3156f2e3
+source-git-commit: b8ef0326952f26453440b9031fe121f4dc14807e
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1433'
 ht-degree: 5%
 
 ---
@@ -24,15 +24,15 @@ Delegering av domännamn är en metod som tillåter ägaren av ett domännamn (t
 
 Genom att delegera en underdomän för användning med [!DNL Journey Optimizer], kan klienter förlita sig på att Adobe upprätthåller den DNS-infrastruktur som krävs för att uppfylla branschstandardkraven för leverans för avsändardomäner för e-postmarknadsföring, samtidigt som de behåller och kontrollerar DNS för sina interna e-postdomäner.
 
-## Fullständig delegering av underdomäner {#full-subdomain-delegation}
-
-[!DNL Journey Optimizer] kan du delegera dina underdomäner till Adobe direkt från produktgränssnittet. På så sätt kan Adobe leverera meddelanden som en hanterad tjänst genom att kontrollera och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra e-postkampanjer.
-
 >[!NOTE]
 >
 >Som standard [!DNL Journey Optimizer] Med licensavtalet kan du delegera upp till 10 underdomäner. Kontakta Adobe om du vill öka begränsningen.
 
-Följ stegen nedan om du vill delegera en ny underdomän:
+## Fullständig delegering av underdomäner {#full-subdomain-delegation}
+
+[!DNL Journey Optimizer] kan du delegera dina underdomäner till Adobe direkt från produktgränssnittet. På så sätt kan Adobe leverera meddelanden som en hanterad tjänst genom att kontrollera och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra e-postkampanjer.
+
+Följ stegen nedan om du vill delegera en ny underdomän till Adobe helt:
 
 1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Subdomains]** menyn och klicka sedan på **[!UICONTROL Set up subdomain]**.
 

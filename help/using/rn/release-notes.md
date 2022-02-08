@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 7a07f2348f08b4582a1310fb65d431c55451d9b6
+source-git-commit: 1316d7564a26db3e5be30a1b35e97e4fd15decd1
 workflow-type: tm+mt
-source-wordcount: '2379'
+source-wordcount: '2416'
 ht-degree: 9%
 
 ---
@@ -56,10 +56,11 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 
 * Journey Optimizer steghändelser kan nu länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html). The **profileID** -fältet, i det inbyggda schemat för händelser i resan, definieras nu som ett identitetsfält. [Läs mer](../reports/sharing-overview.md#integration-cja)
 
-
 **offer decisioning**
 
 * När du uppdaterar ett erbjudande, ett reserverbjudande, en erbjudandesamling eller ett erbjudandebeslut som direkt eller indirekt hänvisas till i ett publicerat meddelande, återspeglas uppdateringarna nu automatiskt i motsvarande meddelande, utan att det behöver publiceras på nytt. [Läs mer](../offers/offers-e2e.md#insert-decision-in-email)
+
+* När du simulerar vilka erbjudanden som ska levereras för en viss testprofil kan du nu ändra standardsimuleringsinställningarna och visa koden som motsvarar dina simuleringar som kan användas i felsökningssyfte. [Läs mer](../offers/offer-activities/simulation.md#define-simulation-settings)
 
 **Administrering**
 
@@ -345,7 +346,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 * Korrigerade ett tillgänglighetsproblem vid navigering på meddelandeflikar.
 * Ett lokaliseringsfel har korrigerats i e-postdesignerns etiketter.
 * Ett problem har korrigerats när du valde mer än en nod i en resa och klickade på Ta bort på egenskapspanelen.
-* Korrigerade ett fel som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
+* Korrigerade ett problem som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
 * Du kan nu ta reda på varför en meddelandeförinställning inte kunde skapas med hjälp av en tydligare varning i användargränssnittet.
 
 

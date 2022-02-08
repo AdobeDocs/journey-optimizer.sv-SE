@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 1b5ca4db-44d9-49e2-ab39-a1abba223ec7
-source-git-commit: e5ebf038565329fdaa7b01a12042c2c4bba79f37
+source-git-commit: b8ef0326952f26453440b9031fe121f4dc14807e
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 35%
@@ -48,7 +48,7 @@ Med subdomänkonfigurationen kan du konfigurera ett underavsnitt av din domän (
 
 * **Fullständig delegering av underdomäner till Adobe** (rekommenderas): underdomänen delegeras helt till Adobe. Adobe kan styra och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra meddelanden. [Läs mer om fullständig delegering av underdomäner](delegate-subdomain.md#full-subdomain-delegation)
 
-* **Användning av CNAME**: Skapa en underdomän och använd CNAME:er för att peka på Adobe-specifika poster. Med den här konfigurationen har både du och Adobe ansvar för att underhålla DNS. [Läs mer om delegering av CNAME-underdomäner](delegate-subdomain.md#cname-subdomain-delegation)
+* **Användning av CNAME**: Skapa en underdomän och använd CNAME:er för att peka på Adobe-specifika poster. Med den här konfigurationen delar både du och Adobe ansvaret för att underhålla DNS. [Läs mer om delegering av CNAME-underdomäner](delegate-subdomain.md#cname-subdomain-delegation)
 
 Tabellen nedan tillhandahåller en sammanfattning av hur dessa metoder fungerar samt den troliga ansträngningsnivån:
 
