@@ -6,14 +6,14 @@ feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: 2348646a-b205-4b50-a08f-6625e92f44d7
-source-git-commit: 2022b2c81738ae6d3e66280265948c5b88a117c8
+source-git-commit: 7588a675319324e43bbc61a71b1fdfaab9cce93a
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 3%
 
 ---
 
-# Fältreferenser {#concept_fkj_ll5_dgb}
+# Fältreferenser {#field-references}
 
 En fältreferens kan bifogas till en händelse eller fältgrupp. Den enda meningsfulla informationen är fältets namn och sökväg.
 
