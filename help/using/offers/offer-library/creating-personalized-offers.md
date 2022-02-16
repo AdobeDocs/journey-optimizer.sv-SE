@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4a53ea96-632a-41c7-ab15-b85b99db4f3e
-source-git-commit: 0545cda9f91ff18791310a4ee2463b2287ac7557
+source-git-commit: 83bb29b7026c90560ffdb961b03944d8f94c8a8c
 workflow-type: tm+mt
-source-wordcount: '1347'
-ht-degree: 1%
+source-wordcount: '1491'
+ht-degree: 2%
 
 ---
 
@@ -28,6 +28,12 @@ Listan över personaliserade erbjudanden finns på **[!UICONTROL Offers]** -meny
 ![](../../assets/offers_list.png)
 
 ## Skapa erbjudandet {#create-offer}
+
+>[!CONTEXTUALHELP]
+>id="od_offer_attributes"
+>title="Om attribut för erbjudanden"
+>abstract="Med attribut för erbjudanden kan du koppla nyckelvärdepar till erbjudandet i rapporterings- och analyssyfte."
+>additional-url="https://video.tv.adobe.com/v/329375" text="Se demovideon"
 
 Skapa en **erbjudande** gör du så här:
 
@@ -141,6 +147,30 @@ Du kan också infoga text när du väljer en kompatibel placering.
    >Endast **[!UICONTROL Profile attributes]**, **[!UICONTROL Segment memberships]** och **[!UICONTROL Helper functions]** Det finns källor för beslutsförvaltning.
 
 ## Lägg till regler och begränsningar för berättigande {#eligibility}
+
+>[!CONTEXTUALHELP]
+>id="od_offer_constraints"
+>title="Om begränsningar för erbjudanden"
+>abstract="Med begränsningar kan ni ange hur erbjudandet ska prioriteras och presenteras för användaren jämfört med andra erbjudanden."
+>additional-url="https://video.tv.adobe.com/v/329375" text="Se demovideon"
+
+>[!CONTEXTUALHELP]
+>id="od_offer_eligibility"
+>title="Om rätt att köpa"
+>abstract="I det här avsnittet kan du använda beslutsregler för att avgöra vilka användare som är berättigade till erbjudandet."
+>additional-url="https://video.tv.adobe.com/v/329373" text="Se demovideon"
+
+>[!CONTEXTUALHELP]
+>id="od_offer_priority"
+>title="Prioritet för erbjudande"
+>abstract="I det här fältet kan du ange prioritetsinställningar för erbjudandet. Prioritet är ett nummer som används för att rangordna erbjudanden som uppfyller alla krav, som berättigande, datum och appning."
+>additional-url="https://video.tv.adobe.com/v/329375" text="Se demovideon"
+
+>[!CONTEXTUALHELP]
+>id="od_offer_globalcap"
+>title="Om begränsning av erbjudanden"
+>abstract="I det här fältet kan du ange hur många gånger erbjudandet kan presenteras för alla användare."
+>additional-url="https://video.tv.adobe.com/v/329375" text="Se demovideon"
 
 Behörighetsregler och -begränsningar gör att du kan definiera villkoren för hur ett erbjudande ska visas.
 
