@@ -2,7 +2,7 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 1316d7564a26db3e5be30a1b35e97e4fd15decd1
+source-git-commit: 09c285fb4481d00008627f31e3fdfbb516d63fd6
 workflow-type: tm+mt
 source-wordcount: '2416'
 ht-degree: 9%
@@ -326,7 +326,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 **Innehållsdesign**
 
 * **Bakgrund** - Nu stöds bakgrundsbilder i direktförhandsvisning. [Läs mer](../messages/preview.md)
-* **Länk för avanmälan med ett klick** - Du kan infoga en ny typ av länk i ditt e-postinnehåll: den **Avanmäl dig** kan man säga upp prenumerationen från att ta emot meddelanden med bara ett klick, utan att behöva omdirigeras till en landningssida för att bekräfta avanmälan. [Läs mer](../messages/message-tracking.md#one-click-opt-out-link)
+* **Länk för avanmälan med ett klick** - Du kan infoga en ny typ av länk i ditt e-postinnehåll: den **Avanmäl dig** kan man säga upp prenumerationen från att ta emot meddelanden med bara ett klick, utan att behöva omdirigeras till en landningssida för att bekräfta avanmälan. [Läs mer](../messages/consent.md#one-click-opt-out-link)
 
 **Personalisering**
 

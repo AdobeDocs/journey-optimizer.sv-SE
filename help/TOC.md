@@ -5,10 +5,10 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att leverera sammankopplade, kontextuella och personaliserade upplevelser till kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 3c8c059e5e3953807b9fc2d8d0eded0d00e49003
+source-git-commit: 9db2ec80a23add5d5d01affaf1a7e7772952d487
 workflow-type: tm+mt
 source-wordcount: '911'
-ht-degree: 47%
+ht-degree: 48%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 47%
       + [Förhandsgranska och korrektur](using/messages/preview.md)
       + [Kontrollera aviseringar](using/messages/alerts.md)
       + [Publicera meddelanden](using/messages/publish-manage-message.md)
-   + [Hantera avanmälan](using/messages/consent.md)
+   + [Hantera medgivande](using/messages/consent.md)
 + Personalisering{#personalization}
    + [Kom igång med personalisering](using/personalization/personalize.md)
    + [Anpassningssammanhang](using/personalization/personalization-contexts.md)

@@ -2,10 +2,10 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 3c8c059e5e3953807b9fc2d8d0eded0d00e49003
+source-git-commit: 09c285fb4481d00008627f31e3fdfbb516d63fd6
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 24%
+source-wordcount: '919'
+ht-degree: 23%
 
 ---
 
@@ -24,6 +24,11 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 * Avsnittet som är relaterat till [!DNL Journey Optimizer] personaliseringsfunktionerna har omstrukturerats för att bli lättare att läsa. [Läs mer](../personalization/personalize.md)
 
+* Avsnittet Skapa meddelandeförinställningar har delats upp i flera avsnitt för att bli tydligare. [Läs mer](../configuration/message-presets.md#create-message-preset)
+
+* Avsnittet om hantering av avanmälan har förtydligats och omorganiserats något. [Läs mer](../messages/consent.md#opt-out-management)
+
+* Avsnittet Infoga länkar har uppdaterats för att återspegla de senaste ändringarna i användargränssnittet. [Läs mer](../messages/message-tracking.md#insert-links)
 
 ## November 2021 {#november-2021}
 
@@ -87,7 +92,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Avsnittet Aktivera tillåtelselista har uppdaterats. [Läs mer](../messages/allow-list.md#enable-allow-list)
 * Avsnittet Monitor-meddelandets förinställningar har uppdaterats med orsaker till att förinställningarna inte kunde skapas och information om sådana fel. [Läs mer](../configuration/message-presets.md#monitor-message-presets)
 * Uppdaterat och ändrat namn på avsnittet för återförsöksperiod för att återspegla det faktum att du nu kan ändra inställningen för återförsök via e-post i meddelandeförinställningarna. [Läs mer](../configuration/retries.md#retry-duration)
-* Ett nytt avsnitt har lagts till som beskriver hur du infogar en länk för att välja bort ett enstaka klick i e-postinnehåll. [Läs mer](../messages/message-tracking.md#one-click-opt-out-link)
+* Ett nytt avsnitt har lagts till som beskriver hur du infogar en länk för att välja bort ett enstaka klick i e-postinnehåll. [Läs mer](../messages/consent.md#one-click-opt-out-link)
 * Uppdaterade avsnittet Delegera en underdomän med mer detaljerad information om valideringsprocessen som utfördes av Adobe. [Läs mer](../configuration/delegate-subdomain.md#subdomain-validation)
 * Ett avsnitt har lagts till som beskriver hur du manuellt lägger till e-postadresser och domäner i listan över inaktiveringar. [Läs mer](../configuration/manage-suppression-list.md#add-addresses-and-domains)
 * Uppdaterade [Åtkomst till listan över inaktiveringar](../configuration/manage-suppression-list.md#access-suppression-list) och [Försök igen](../configuration/retries.md) -avsnitt som återspeglar det nya användargränssnittet.

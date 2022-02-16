@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: a5c104539cae37197e0caa43cefcfed2bee23737
+source-git-commit: 4a0b1ee220cc05e4dfc10724554b39bdfd0b6678
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1694'
 ht-degree: 1%
 
 ---
@@ -44,76 +44,11 @@ Så här skapar du en meddelandeförinställning:
    >
    > Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-` tecken.
 
-1. Konfigurera **e-post** inställningar.
+1. Konfigurera **e-post** inställningar. [Läs mer](#configure-email-settings)
 
-   ![](../assets/preset-email.png)
+1. Konfigurera **push-meddelande** inställningar. [Läs mer](#configure-push-settings)
 
-   * Välj den typ av meddelande som ska skickas med förinställningen: **Transactional** eller **Marknadsföring**
-
-      >[!CAUTION]
-      >
-      > **Transactional** meddelanden kan skickas till profiler som avbeställer marknadskommunikation. Dessa meddelanden kan bara skickas i särskilda sammanhang, t.ex. lösenordsåterställning, orderstatus eller leveransmeddelande.
-
-   * Välj den underdomän som ska användas för att skicka e-postmeddelanden. [Läs mer](about-subdomain-delegation.md)
-   * Välj den IP-pool som ska associeras med förinställningen. [Läs mer](ip-pools.md)
-   * Ange rubrikparametrarna för e-postmeddelanden som skickas med den förinställningen.
-
-      >[!CAUTION]
-      >
-      >E-postadresser måste använda den aktuella valda [delegerad underdomän](about-subdomain-delegation.md).
-
-      * **[!UICONTROL Sender name]**: Avsändarens namn, till exempel ditt varumärkes namn.
-
-      * **[!UICONTROL Sender email]**: E-postadressen som du vill använda för din kommunikation. Om den delegerade underdomänen till exempel är *marketing.luma.com* kan du använda *contact@marketing.luma.com*.
-
-      * **[!UICONTROL Reply to (name)]**: Namnet som ska användas när mottagaren klickar på **Svara** i klientprogramvaran för e-post.
-
-      * **[!UICONTROL Reply to (email)]**: E-postadressen som ska användas när mottagaren klickar på **Svara** i klientprogramvaran för e-post. Du måste använda en adress som är definierad för den delegerade underdomänen (till exempel *reply@marketing.luma.com*), annars kommer e-postmeddelandena att tas bort.
-
-      * **[!UICONTROL Error email]**: Alla fel som genereras av Internet-leverantörer efter några dagar efter att e-post har levererats (asynkrona studsar) tas emot på den här adressen.
-      >[!NOTE]
-      >
-      >Från versionen från oktober 2021 är det inte längre möjligt att definiera en e-postadress från [!DNL Journey Optimizer] användargränssnitt. Om du vill ha alla e-postmeddelanden från [!DNL Journey Optimizer] för att den delegerade underdomänen ska vidarebefordras till en viss e-postadress, kontakta [Adobe kundtjänstsupport](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
-
-      ![](../assets/preset-header.png)
-
-      >[!NOTE]
-      >
-      >Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-` tecken.
-
-   * Konfigurera **parametrar för e-poståterförsök**. Som standard är [återförsökstid](retries.md#retry-duration) är inställt på 84 timmar, men du kan justera den här inställningen så att den passar dina behov bättre.
-
-      ![](../assets/preset-retry-paramaters.png)
-
-      Du måste ange ett heltalsvärde (i timmar eller minuter) inom följande intervall:
-      * För marknadsföringsmejl är den minsta återförsöksperioden 6 timmar.
-      * För transaktionell e-posttyp är den minsta återförsöksperioden 10 minuter.
-      * För båda e-posttyperna är den maximala återförsöksperioden 84 timmar (eller 5 040 minuter).
-
-
-1. Konfigurera **push-meddelande** inställningar.
-
-   ![](../assets/preset-push.png)
-
-   * Välj minst en plattform: **iOS** och/eller **Android**
-
-   * Välj de mobilprogram som ska användas för varje plattform.
-
-      Mer information om hur du konfigurerar miljön för att skicka push-meddelanden finns i [det här avsnittet](../messages/push-gs.md).
-
-<!--
-1. Configure the **SMS** settings.
-
-     ![](../assets/preset-sms.png)
-
-    * Select the **[!UICONTROL SMS Type]** that will be sent with the preset: **[!UICONTROL Transactional]** or **[!UICONTROL Marketing]**
-    
-    * Select the **[!UICONTROL SMS configuration]** to associate with the preset.
-        
-      For more on how to configure your environment to send SMS messages, refer to [this section](sms-configuration.md).
-
-    * Enter the **[!UICONTROL Sender number]** ​you want to use for your communications.
--->
+   <!--Configure SMS settings. [Learn more](#configure-sms-settings) -->
 
 1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara meddelandeförinställningen som utkast och återuppta konfigurationen senare.
 
@@ -140,6 +75,78 @@ Så här skapar du en meddelandeförinställning:
 1. När kontrollen är klar får meddelandeförinställningen **[!UICONTROL Active]** status. Den är klar att användas för att leverera meddelanden.
 
    ![](../assets/preset-active.png)
+
+## Konfigurera e-postinställningar {#configure-email-settings}
+
+![](../assets/preset-email.png)
+
+1. Välj den typ av meddelande som ska skickas med förinställningen: **Transactional** eller **Marknadsföring**.
+
+   >[!CAUTION]
+   >
+   > **Transactional** meddelanden kan skickas till profiler som avbeställer marknadskommunikation. Dessa meddelanden kan bara skickas i särskilda sammanhang, t.ex. lösenordsåterställning, orderstatus eller leveransmeddelande.
+
+1. Välj den underdomän som ska användas för att skicka e-postmeddelanden. [Läs mer](about-subdomain-delegation.md)
+
+1. Välj den IP-pool som ska associeras med förinställningen. [Läs mer](ip-pools.md)
+
+1. Ange rubrikparametrarna för e-postmeddelanden som skickas med den förinställningen.
+
+   >[!CAUTION]
+   >
+   >E-postadresser måste använda den aktuella valda [delegerad underdomän](about-subdomain-delegation.md).
+
+   * **[!UICONTROL Sender name]**: Avsändarens namn, till exempel ditt varumärkes namn.
+
+   * **[!UICONTROL Sender email]**: E-postadressen som du vill använda för din kommunikation. Om den delegerade underdomänen till exempel är *marketing.luma.com* kan du använda *contact@marketing.luma.com*.
+
+   * **[!UICONTROL Reply to (name)]**: Namnet som ska användas när mottagaren klickar på **Svara** i klientprogramvaran för e-post.
+
+   * **[!UICONTROL Reply to (email)]**: E-postadressen som ska användas när mottagaren klickar på **Svara** i klientprogramvaran för e-post. Du måste använda en adress som är definierad för den delegerade underdomänen (till exempel *reply@marketing.luma.com*), annars kommer e-postmeddelandena att tas bort.
+
+   * **[!UICONTROL Error email]**: Alla fel som genereras av Internet-leverantörer efter några dagar efter att e-post har levererats (asynkrona studsar) tas emot på den här adressen.
+   >[!NOTE]
+   >
+   >Från versionen från oktober 2021 är det inte längre möjligt att definiera en e-postadress från [!DNL Journey Optimizer] användargränssnitt. Om du vill ha alla e-postmeddelanden från [!DNL Journey Optimizer] för att den delegerade underdomänen ska vidarebefordras till en viss e-postadress, kontakta [Adobe kundtjänstsupport](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
+
+   ![](../assets/preset-header.png)
+
+   >[!NOTE]
+   >
+   >Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-` tecken.
+
+1. Konfigurera **parametrar för e-poståterförsök**. Som standard är [återförsökstid](retries.md#retry-duration) är inställt på 84 timmar, men du kan justera den här inställningen så att den passar dina behov bättre.
+
+   ![](../assets/preset-retry-paramaters.png)
+
+   Du måste ange ett heltalsvärde (i timmar eller minuter) inom följande intervall:
+   * För marknadsföringsmejl är den minsta återförsöksperioden 6 timmar.
+   * För transaktionell e-posttyp är den minsta återförsöksperioden 10 minuter.
+   * För båda e-posttyperna är den maximala återförsöksperioden 84 timmar (eller 5 040 minuter).
+
+## Konfigurera push-inställningar {#configure-push-settings}
+
+1. Välj minst en plattform: **iOS** och/eller **Android**.
+
+1. Välj de mobilprogram som ska användas för varje plattform.
+
+![](../assets/preset-push.png)
+
+Mer information om hur du konfigurerar miljön för att skicka push-meddelanden finns i [det här avsnittet](../messages/push-gs.md).
+
+<!--
+## Configure SMS settings {#configure-sms-settings}
+
+1. Select the **[!UICONTROL SMS Type]** that will be sent with the preset: **[!UICONTROL Transactional]** or **[!UICONTROL Marketing]**.
+
+    ![](../assets/preset-sms.png)
+    
+1. Select the **[!UICONTROL SMS configuration]** to associate with the preset.
+        
+    For more on how to configure your environment to send SMS messages, refer to [this section](sms-configuration.md).
+
+1. Enter the **[!UICONTROL Sender number]** ​you want to use for your communications.
+-->
 
 ## Övervaka meddelandeförinställningar {#monitor-message-presets}
 

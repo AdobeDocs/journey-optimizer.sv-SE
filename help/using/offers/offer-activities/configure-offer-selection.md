@@ -6,16 +6,16 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 8c7135d7-bf5a-4671-afdf-afec60907a56
-source-git-commit: 06a7abc2ada930356cbaf45ce01eed5e3156f2e3
+source-git-commit: 77d7694524eaca447f0cf4e19881f1688fc4e789
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '463'
 ht-degree: 4%
 
 ---
 
 # Konfigurera urval av erbjudanden i beslut {#offers-selection-in-decisions}
 
-Om flera erbjudanden är berättigade för en viss placering kan du välja den metod som ska användas för att välja det bästa erbjudandet för varje profil när du konfigurerar ett beslut (som tidigare kallades erbjudandeaktivitet). Du kan rangordna erbjudanden genom att:
+Om flera erbjudanden är berättigade till en viss placering kan du välja den metod som ska användas för att välja det bästa erbjudandet för varje profil när du konfigurerar ett beslut. Du kan rangordna erbjudanden genom att:
 * Prioritet
 * Rankningsformel
 * [AI-rankning](#use-ranking-strategy) (för tidig åtkomst endast för utvalda användare)
@@ -24,7 +24,7 @@ Om flera erbjudanden är berättigade för en viss placering kan du välja den m
 
 ## Prioritet {#offer-priority}
 
-När flera erbjudanden kan komma i fråga för en viss placering i ett beslut (tidigare kallat erbjudandeaktivitet) är det som standard det högsta erbjudandet **prioritet** kommer att levereras till kunderna först.
+När flera erbjudanden kan komma i fråga för en viss placering i ett beslut är de som har högst **prioritet** kommer att levereras till kunderna först.
 
 ![](../../assets/offer-priority.png)
 
@@ -38,7 +38,7 @@ Du kan till exempel öka prioriteten för alla erbjudanden där slutdatumet är 
 
 Lär dig hur du skapar en rankningsformel i [det här avsnittet](../offer-library/create-ranking-formulas.md).
 
-När en rankningsformel har skapats kan du tilldela den till en placering i ett beslut (som tidigare kallades erbjudandeaktivitet). Följ stegen nedan för att göra detta:
+När en rankningsformel har skapats kan du tilldela den till en placering i ett beslut. Följ stegen nedan för att göra detta:
 
 1. Skapa ett beslut eller redigera ett befintligt. Se [Skapa beslut](../offer-activities/create-offer-activities.md).
 
@@ -60,13 +60,15 @@ Om flera erbjudanden kan presenteras i denna placering, kommer beslutet att anv�
 
 ## AI-rankning {#use-ranking-strategy}
 
-<!--If you are an [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} user leveraging the **Offer Decisioning** application service,-->You can also use an trained model system that automatically ranks offers to display for a given profile by selecting a ranking strategy. Learn how to create a ranking strategy in [this section](../offer-library/create-ranking-strategies.md).
+<!--If you are an [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} user leveraging the **Offer Decisioning** application service,-->
+
+Du kan också använda ett utbildat modellsystem som automatiskt rangordnar erbjudanden för en viss profil genom att välja en rangordningsstrategi. Lär dig hur du skapar en rankningsstrategi i [det här avsnittet](../offer-library/create-ranking-strategies.md).
 
 >[!CAUTION]
 >
 >AI-rankningen är för närvarande tillgänglig i förtid och endast för vissa användare.
 
-När en rankningsstrategi har skapats kan du tilldela den till en placering i ett beslut (tidigare kallat erbjudandeaktivitet). Gör så här:
+När en rankningsstrategi har skapats kan du tilldela den till en placering i ett beslut. Gör så här:
 
 1. Skapa ett beslut eller redigera ett befintligt. Se [Skapa beslut](../offer-activities/create-offer-activities.md).
 

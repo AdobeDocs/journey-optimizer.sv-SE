@@ -7,7 +7,7 @@ feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: 81d07ec8-e808-4bc6-97b1-b9f7db2aec22
-source-git-commit: 0545cda9f91ff18791310a4ee2463b2287ac7557
+source-git-commit: 1bca78723ec8ff93f48b9afa360868c2b9bac670
 workflow-type: tm+mt
 source-wordcount: '936'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 ## Kom igång med AI-rankningar {#get-started-with-ai-rankings}
 
-<!--If you are an [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} user leveraging the **Offer Decisioning** application service,-->You can use an trained model system that ranks offers to display for a given profile.
+<!--If you are an [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} user leveraging the **Offer Decisioning** application service,-->You can use a trained model system that ranks offers to display for a given profile.
 
 >[!CAUTION]
 >
@@ -168,10 +168,11 @@ Varje gång ett erbjudande visas och/eller klickas vill du att motsvarande händ
 
 För att kunna skicka i händelsetyper (erbjudandet visas eller erbjudandet klickas) måste du ange rätt värde för varje händelsetyp i en upplevelsehändelse som skickas till Adobe Experience Platform. Nedan följer schemakraven som du måste implementera i din JavaScript-kod:
 
-**Scenario:** Erbjudandet visas
+### Visa scenario
+
 **Händelsetyp:** `decisioning.propositionDisplay`
 **Källa:** Web.sdk/Alloy.js (`sendEvent command -> xdm : {eventType, interactionMixin}`) eller batchförtäring
-**Exempel på nyttolast:**
++++**Exempel på nyttolast:**
 
 ```
 {
@@ -197,10 +198,13 @@ För att kunna skicka i händelsetyper (erbjudandet visas eller erbjudandet klic
 }
 ```
 
-**Scenario:** Erbjudande klickat
++++
+
+### Erbjud klickat scenario
+
 **Händelsetyp:** `decisioning.propositionInteract`
 **Källa:** Web.sdk/Alloy.js (`sendEvent command -> xdm : {eventType, interactionMixin}`) eller batchförtäring
-**Exempel på nyttolast:**
++++**Exempel på nyttolast:**
 
 ```
 {
@@ -226,12 +230,14 @@ För att kunna skicka i händelsetyper (erbjudandet visas eller erbjudandet klic
 }
 ```
 
++++
+
 <!--
 ## Using a ranking strategy {#using-ranking}
 
 To use the ranking strategy you created above, follow the steps below:
 
-Once a ranking strategy has been created, you can assign it to a placement in a decision (previously known as offer activity). For more on this, see [Configure offers selection in decisions](../offer-activities/configure-offer-selection.md).
+Once a ranking strategy has been created, you can assign it to a placement in a decision. For more on this, see [Configure offers selection in decisions](../offer-activities/configure-offer-selection.md).
 
 1. Create a decision.
 1. Add a placement.

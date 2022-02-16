@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: b43e3432ede1d4985e0a6b57b57c5efc3cf60c50
+source-git-commit: fc6ec2c916f6fbf3d6c6728b5a50ae7e54d9b42f
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
@@ -52,11 +52,13 @@ Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
 
    * **[!UICONTROL Landing page]**: Infoga en länk till en landningssida. Läs mer i [det här avsnittet](../landing-pages/get-started-lp.md)
 
-   * **[!UICONTROL Unsubscription link]**: Infoga en länk för att avbeställa beställning av meddelanden från ert varumärke. Läs mer om avanmälningshantering i [det här avsnittet](consent.md#opt-out-management).
+   * **[!UICONTROL One click Opt-out]**: Infoga en länk som gör det möjligt för användare att snabbt avbeställa prenumerationer utan att behöva bekräfta att de vill avanmäla sig. Läs mer i [det här avsnittet](consent.md#one-click-opt-out).
+
+   * **[!UICONTROL External Opt-in/Subscription]**: Infoga en länk för att ta emot meddelanden från ert varumärke.
+
+   * **[!UICONTROL External Opt-out/Unsubscription]**: Infoga en länk för att avbeställa beställning av meddelanden från ert varumärke. Läs mer om avanmälningshantering i [det här avsnittet](consent.md#opt-out-management).
 
    * **[!UICONTROL Mirror page]**: Infoga en länk för att visa e-postinnehållet i en webbläsare. Läs mer i [det här avsnittet](#mirror-page).
-
-   * **[!UICONTROL Opt-out]**: Infoga en länk som gör det möjligt för användare att snabbt avbeställa prenumerationer utan att behöva bekräfta att de vill avanmäla sig. Läs mer i [det här avsnittet](#one-click-opt-out-link).
 
    ![](assets/message-tracking-links.png)
 
@@ -66,7 +68,7 @@ Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
 
 1. När länken har skapats kan du fortfarande ändra den från **[!UICONTROL Component settings]** till höger.
 
-   * Klicka på pennikonen för att redigera länken.
+   * Du kan redigera länken och ändra dess typ.
    * Du kan välja att stryka under länken eller inte genom att markera motsvarande alternativ.
 
    ![](assets/message-tracking-link-settings.png)
@@ -93,34 +95,6 @@ När e-postmeddelandet har skickats visas innehållet i e-postmeddelandet i sin 
 
 Kvarhållningsperioden för en spegelsida är 60 dagar. Efter den fördröjningen är spegelsidan inte längre tillgänglig.
 
-## Länk för avanmälan med ett klick {#one-click-opt-out-link}
-
-Om du vill att mottagarna snabbt ska kunna avbryta prenumerationen på meddelanden från varumärket kan du infoga en länk för att avanmäla dig i ditt e-postinnehåll med ett enda klick. Denna kapacitet förhindrar att användare dirigeras om till en landningssida där de måste bekräfta sitt val, vilket snabbar upp avanmälningsprocessen.
-
-Följ stegen nedan om du vill lägga till en länk för att avanmäla dig i ditt e-postmeddelande.
-
-1. [Infoga en länk](#insert-links) och markera **[!UICONTROL Opt-out]** som typ av länk.
-
-   ![](assets/message-tracking-opt-out.png)
-
-1. Välj hur du vill använda avanmälningen: på kanal-, identitet- eller prenumerationsnivå.
-
-   ![](assets/message-tracking-opt-out-level.png)
-
-   * **[!UICONTROL Channel]**: Avanmälningen gäller för framtida meddelanden som skickas till profilens mål (dvs. e-postadress) för den aktuella kanalen. Om flera mål är kopplade till en profil gäller avanmälan alla mål (t.ex. e-postadresser) i profilen för den kanalen.
-   * **[!UICONTROL Identity]**: Avanmälningen gäller för framtida meddelanden som skickas till det specifika målet (dvs. e-postadressen) som används för det aktuella meddelandet.
-   * **[!UICONTROL Subscription]**: Avanmälningen gäller för framtida meddelanden som är kopplade till en viss prenumerationslista. Det här alternativet kan bara väljas om det aktuella meddelandet är kopplat till en prenumerationslista.
-
-1. Ange URL-adressen till landningssidan där användaren omdirigeras när prenumerationen har upphört. Den här sidan är bara här för att bekräfta att avanmälan lyckades.
-
-   ![](assets/message-tracking-opt-out-confirmation.png)
-
-   Du kan anpassa länkarna. Läs mer om personaliserade URL:er i [det här avsnittet](../personalization/personalization-syntax.md).
-
-1. Spara ändringarna.
-
-När meddelandet har skickats avanmäls mottagarna omedelbart om de klickar på avanmälningslänken.
-
 ## Hantera spårning {#manage-tracking}
 
 The [E-postdesigner](create-email-content.md) gör att du kan hantera spårade URL-adresser, till exempel redigera spårningstypen för varje länk.
@@ -134,7 +108,6 @@ The [E-postdesigner](create-email-content.md) gör att du kan hantera spårade U
    ![](assets/message-tracking-edit-links.png)
 
 1. Du kan ändra **[!UICONTROL Tracking Type]** vid behov:
-
 
    ![](assets/message-tracking-edit-a-link.png)
 

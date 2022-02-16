@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 8bc808da-4796-4767-9433-71f1f2f0a432
-source-git-commit: 0545cda9f91ff18791310a4ee2463b2287ac7557
+source-git-commit: 2d859a5dab19a419d424acefd17d254473c00818
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '602'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Rankningsformler uttrycks i **PQL-syntax** och kan utnyttja profilattribut, kontextdata och erbjuda attribut. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
 
-När en rankningsformel har skapats kan du tilldela den till en placering i ett beslut (som tidigare kallades erbjudandeaktivitet). Mer information finns i [Konfigurera urval av erbjudanden i beslut](../offer-activities/configure-offer-selection.md).
+När en rankningsformel har skapats kan du tilldela den till en placering i ett beslut. Mer information finns i [Konfigurera urval av erbjudanden i beslut](../offer-activities/configure-offer-selection.md).
 
 ## Skapa en rankningsformel {#create-ranking-formula}
 

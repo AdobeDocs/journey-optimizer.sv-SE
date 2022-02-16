@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 7abeec5e-743f-48fb-a4a6-056665e8bfda
-source-git-commit: baa98afcc8e5e9be3062c8c16adc7f4ae17b15b7
+source-git-commit: 2d859a5dab19a419d424acefd17d254473c00818
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ Resurs med id activityID och typen OfferActivity hittades inte<br/></td>
    <td>Image Offers (all Personalized and fallback associated with the Decision and placement pair) should have public URL populated (deliveryURL should not be empty).</td> 
   </tr> 
   <tr> 
-   <td>Beslutet (tidigare kallat erbjudandeaktivitet) innehåller attribut som inte är profiler.</td> 
+   <td>Beslutet innehåller attribut som inte är profiler.</td> 
    <td>Användning av modell för erbjudanden bör endast innehålla profilattributen.</td> 
   </tr> 
   <tr> 

@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 07be59e8-e994-4854-8089-25614d005dbe
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 2d859a5dab19a419d424acefd17d254473c00818
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 83%
+source-wordcount: '128'
+ht-degree: 78%
 
 ---
 
@@ -22,7 +22,7 @@ Varje händelse som skickas när ett beslut fattas innehåller fyra viktiga data
 * **[!UICONTROL Fallback]**: Namn och ID för det sekundära erbjudandet, om inget personaliserat erbjudande har valts,
 * **[!UICONTROL Placement]**: Namn, ID och kanal för placeringen som användes för att leverera erbjudandet.
 * **[!UICONTROL Selections]**: Namn och ID för erbjudandet som har valts för profilen.
-* **[!UICONTROL Activity]**: namn och ID för beslutet (tidigare kallat erbjudandeaktivitet).
+* **[!UICONTROL Activity]**: Namn och ID för beslutet.
 
 Dessutom kan du använda fälten **[!UICONTROL identityMap]** och **[!UICONTROL Timestamp]** för att hämta information om profilen och den tidpunkt då erbjudandet levererades.
 

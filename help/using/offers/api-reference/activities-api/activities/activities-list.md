@@ -6,16 +6,16 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 123ed057-e15f-4110-9fc6-df0e9cb5b038
-source-git-commit: 9873af4caf7cd8bc4e9672748414bf78f28ed30b
+source-git-commit: 2d859a5dab19a419d424acefd17d254473c00818
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '251'
 ht-degree: 3%
 
 ---
 
 # Lista beslut {#list-decisions}
 
-Ett beslut (som tidigare kallades erbjudandeaktivitet) innehåller den logik som ligger till grund för valet av ett erbjudande.
+Ett beslut innehåller den logik som ligger till grund för valet av ett erbjudande.
 
 Du kan visa en lista över alla beslut i en behållare genom att utföra en enda GET-begäran till [!DNL Offer Library] API.
 
