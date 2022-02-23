@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 950f8186-07f6-4cc1-936c-d0984fb0f988
-source-git-commit: 06a7abc2ada930356cbaf45ce01eed5e3156f2e3
+source-git-commit: 767f85337703b080fd5be87ccfd03a12c9482aaa
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Om ett meddelande publiceras men ännu inte aktiveras av en resa, visas det inte
 >
 >Om ett meddelande har använts på flera resor visas en rad per resa för varje körning.
 
-Som standard visas meddelandena med början från det senaste körningsdatumet. Klicka på **[!UICONTROL Filters]** -ikonen om du vill söka i meddelandena efter kanal, startdatum och/eller slutdatum.
+Som standard visas meddelandena med början från det senaste körningsdatumet. Klicka på **[!UICONTROL Filters]** -ikonen om du vill söka i meddelandena efter kanal, startdatum och/eller slutdatum. Du kan också välja att utesluta testhändelser från **Körningslista**.
 
 ![](assets/message-execution-tab-filters.png)
 

@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: 1abea49a0dce8d5866662235b243a3b82fb50c7b
+source-git-commit: c9f260444e1cd20e66421a87dd62c5ae7209ee06
 workflow-type: tm+mt
 source-wordcount: '1036'
 ht-degree: 3%
@@ -59,7 +59,7 @@ Så här konfigurerar du Läs segment-aktiviteten:
 
 1. Ange **[!UICONTROL Throttling rate]** till genomströmningsgränsen för lässegmentsaktiviteten.
 
-   Det här värdet lagras i transportversionens nyttolast. Standardvärdet är 17 000 meddelanden per sekund. Du kan ändra det här värdet från 500 till 17 000 meddelanden per sekund.
+   Det här värdet lagras i transportversionens nyttolast. Standardvärdet är 20 000 meddelanden per sekund. Du kan ändra det här värdet från 500 till 20 000 meddelanden per sekund.
 
    >[!NOTE]
    >

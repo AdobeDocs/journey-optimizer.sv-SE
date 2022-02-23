@@ -2,10 +2,10 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 09c285fb4481d00008627f31e3fdfbb516d63fd6
+source-git-commit: 7aaedb4c76afb34c4110dc64ad79af9cd2091adb
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 23%
+source-wordcount: '965'
+ht-degree: 22%
 
 ---
 
@@ -14,26 +14,26 @@ ht-degree: 23%
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
 
 
+## Februari 2022 {#feb-2022}
+
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] 22 februari-utgåvan finns utförlig i dokumentationen. [Läs mer](release-notes.md)
+* The [ersätt](../building-journeys/functions/functionreplace.md#example_2) och [replaceAll](../building-journeys/functions/functionreplaceall.md#example) funktionsdokumentationssidor har uppdaterats med ytterligare information och exempel om målparametern.
+* Bästa tillvägagångssätt har lagts till i [Operatorer](../building-journeys/expression/operators.md#important-notes) sida.
+
 ## Januari 2022 {#january-2022}
 
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version 22 av jan finns utförlig i dokumentationen. [Läs mer](release-notes.md)
-
-* Avsnittet med Offera decisioningens AI-rankningar har uppdaterats med en mer detaljerad beskrivning av den automatiska optimeringsmodellen. [Läs mer](../offers/offer-library/create-ranking-strategies.md#auto-optimization)
-
+* The **Offer decisioning AI-rankningar** -avsnittet har uppdaterats med en mer detaljerad beskrivning av den automatiska optimeringsmodellen. [Läs mer](../offers/offer-library/create-ranking-strategies.md#auto-optimization)
 * Ett nytt avsnitt om schemakraven som behövs för att kunna skicka in händelsetyper när en rankningsstrategi används har lagts till. [Läs mer](../offers/offer-library/create-ranking-strategies.md#schema-requirements)
-
 * Avsnittet som är relaterat till [!DNL Journey Optimizer] personaliseringsfunktionerna har omstrukturerats för att bli lättare att läsa. [Läs mer](../personalization/personalize.md)
-
-* Avsnittet Skapa meddelandeförinställningar har delats upp i flera avsnitt för att bli tydligare. [Läs mer](../configuration/message-presets.md#create-message-preset)
-
-* Avsnittet om hantering av avanmälan har förtydligats och omorganiserats något. [Läs mer](../messages/consent.md#opt-out-management)
-
-* Avsnittet Infoga länkar har uppdaterats för att återspegla de senaste ändringarna i användargränssnittet. [Läs mer](../messages/message-tracking.md#insert-links)
+* The **Skapa meddelandeförinställningar** har delats upp i flera avsnitt för att bli tydligare. [Läs mer](../configuration/message-presets.md#create-message-preset)
+* The **Hantering av avanmälan** har klargjorts och omorganiserats något. [Läs mer](../messages/consent.md#opt-out-management)
+* The **Infoga länkar** -avsnittet har uppdaterats för att återspegla de senaste ändringarna i användargränssnittet. [Läs mer](../messages/message-tracking.md#insert-links)
 
 ## November 2021 {#november-2021}
 
-* Nu finns en fullständig beskrivning av den avancerade uttrycksredigeraren som används i resor. [Läs mer](../building-journeys/expression/expressionadvanced.md)
-* Ett nytt avsnitt om delegeringsmetoden för CNAME-underdomäner har lagts till. [Läs mer](../configuration/delegate-subdomain.md#cname-subdomain-delegation)
+* En fullständig beskrivning av **avancerad uttrycksredigerare** som används i resor finns nu tillgängliga. [Läs mer](../building-journeys/expression/expressionadvanced.md)
+* Ett nytt avsnitt om **Delegeringsmetod för CNAME-underdomän** har lagts till. [Läs mer](../configuration/delegate-subdomain.md#cname-subdomain-delegation)
 
 
 ## Oktober 2021 {#october-2021}

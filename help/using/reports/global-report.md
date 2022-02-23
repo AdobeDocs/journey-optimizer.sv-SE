@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: ec15e700-7659-4dbf-8446-6534ea48c5c8
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 767f85337703b080fd5be87ccfd03a12c9482aaa
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -27,26 +27,28 @@ Använd **[!UICONTROL Global report]** för att mäta effekten av resor och leve
 
 ## Anpassa kontrollpanelen {#modify-dashboard}
 
-Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort eller genom att måltidsramen ändras. Om du ändrar widgetarna påverkas bara den aktuella användarens kontrollpanel. Andra användare ser sina egna kontrollpaneler eller de som har angetts som standard.
+Varje rapportkontrollpanel kan ändras genom att tidsperioden ändras och widgetar storleksändras eller tas bort. Om du ändrar widgetarna påverkas bara den aktuella användarens kontrollpanel. Andra användare ser sina egna kontrollpaneler eller de som har angetts som standard.
 
-1. Från **[!UICONTROL Global report]** klickar du på knappen Schemaläggaren.
+1. Välj en start- och sluttid från din globala rapport för att ange specifika data som mål.
 
-1. Välj start- och slutdatum. Du kan finjustera dina rapporter ytterligare genom att välja en **[!UICONTROL Start time]** och **[!UICONTROL End time]**.
+   ![](../assets/report_modify_1.png)
 
-   ![](../assets/global_report_6.png)
+1. Välj om du vill utesluta testhändelser från dina rapporter med hjälp av alternativfältet. Mer information om testhändelser finns i [den här sidan](../building-journeys/testing-the-journey.md).
 
-1. klicka **[!UICONTROL Modify]**.
+   ![](../assets/report_modify_2.png)
 
-   ![](../assets/global_report_8.png)
+1. Klicka **[!UICONTROL Modify]** för att börja anpassa kontrollpanelen.
+
+   ![](../assets/report_modify_3.png)
 
 1. Justera widgetarnas storlek genom att dra i det nedre högra hörnet.
 
-   ![](../assets/global_report_9.png)
+   ![](../assets/report_modify_4.png)
 
-1. Klicka **[!UICONTROL Remove]** om du vill ta bort andra widgetar som du inte behöver spåra studsar.
+1. Klicka **[!UICONTROL Remove]** för att ta bort widgetar du inte behöver.
 
-   ![](../assets/global_report_10.png)
+   ![](../assets/report_modify_5.png)
 
 1. När du är nöjd med visningsordningen och widgetarnas storlek klickar du på **[!UICONTROL Save]**.
 
-Instrumentpanelen har nu sparats. Dina olika ändringar kommer att tillämpas på nytt för senare användning av dina globala rapporter. Använd **[!UICONTROL Reset]** för att återställa standardordningen för widgetar och widgetar.
+Instrumentpanelen har nu sparats. Dina olika ändringar kommer att tillämpas på nytt för senare användning av dina liverapporter. Använd **[!UICONTROL Reset]** för att återställa standardordningen för widgetar och widgetar.

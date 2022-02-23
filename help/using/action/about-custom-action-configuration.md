@@ -1,26 +1,35 @@
 ---
 solution: Journey Orchestration
-title: Om anpassad åtgärdskonfiguration
+title: Konfigurera en anpassad åtgärd
 description: Lär dig hur du konfigurerar en anpassad åtgärd
 feature: Actions
 topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: 2088b5ba2ec77e56644683e118e734acfe6707fc
+source-git-commit: a101ee8cd7b57ee951d0ef2d5fd366757cb0a014
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Konfigurera en åtgärd {#configure-an-action}
+# Konfigurera en anpassad åtgärd {#configure-an-action}
 
-Om du använder ett tredjepartssystem för att skicka meddelanden eller om du vill att resor ska skicka API-anrop till ett tredjepartssystem, är det här du konfigurerar anslutningen till resor. Den anpassade åtgärden som definieras av tekniska användare är sedan tillgänglig på den vänstra paletten av din resa, i **[!UICONTROL Action]** kategori (se [den här sidan](../building-journeys/about-journey-activities.md#action-activities). Här är några exempel på system som du kan ansluta till med anpassade åtgärder: Epsilon, Slack, Adobe.io, Firebase osv.
+Om du använder ett tredjepartssystem för att skicka meddelanden eller om du vill att resor ska skicka API-anrop till ett tredjepartssystem, använder du anpassade åtgärder för att konfigurera anslutningen till din resa. Du kan till exempel ansluta till följande system med anpassade åtgärder: Epsilon, Slack, Adobe.io, Firebase osv.
 
-Begränsningar visas i [den här sidan](../start/limitations.md).
+Anpassade åtgärder är ytterligare åtgärder som definieras av tekniska användare och görs tillgängliga för marknadsförare. När de är konfigurerade visas de på den vänstra paletten på din resa i **[!UICONTROL Action]** kategori. Läs mer i [den här sidan](../building-journeys/about-journey-activities.md#action-activities).
 
-Du kan skicka samlingar dynamiskt med anpassade åtgärder. Se detta [användningsfall](../building-journeys/collections.md).
+## Begränsningar{#custom-actions-limitations}
+
+Anpassade åtgärder har några begränsningar som anges i [den här sidan](../start/limitations.md).
+
+I anpassade åtgärdsparametrar kan du skicka en enkel samling samt en samling med objekt. Läs mer om begränsningar för samlingar i [den här sidan](../building-journeys/collections.md#limitations).
+
+Observera också att de anpassade åtgärdsparametrarna har ett förväntat format (exempel: sträng, decimal osv.). Du måste vara försiktig med att ta hänsyn till dessa förväntade format. Läs mer om detta [användningsfall](../building-journeys/collections.md).
+
+
+## Konfigurationssteg {#configuration-steps}
 
 Här följer de huvudsteg som krävs för att konfigurera en anpassad åtgärd:
 
