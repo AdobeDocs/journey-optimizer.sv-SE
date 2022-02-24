@@ -2,10 +2,10 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 6c4b79ad4291d6206fbbbe831ea10b76b431389f
+source-git-commit: 97d5a5c3432d531fc11a212b9067323b93fc93bb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2642'
+ht-degree: 9%
 
 ---
 
@@ -35,21 +35,21 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 </tbody>
 </table-->
 
-<!--table>
+<table>
 <thead>
 <tr>
-<th><strong>Expression Personalization Library</strong><br/></th>
+<th><strong>Personaliseringsbibliotek för uttryck</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer now provides a library where you can access predefined personalization expressions. These expressions are configured by Admin users.</p>
-<!--p>For more information, refer to the <a href="../landing-pages/create-lp.md">detailed documentation</a> and related <a href="../landing-pages/lp-use-case.md">sample use case</a>.</p>
+<p>Journey Optimizer har nu ett bibliotek där du kan komma åt fördefinierade personaliseringsuttryck. Uttrycken konfigureras av Admin-användare.</p>
+<p>Mer information finns i den <a href="../personalization/personalization-library.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
 
 
 <!--table>

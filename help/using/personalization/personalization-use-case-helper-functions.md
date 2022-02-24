@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 9c9598c0-6fb1-4e2f-b610-ccd1a80e516e
-source-git-commit: b43e3432ede1d4985e0a6b57b57c5efc3cf60c50
+source-git-commit: fab36ea43e92babfacdbaeeaecf6c551c00b3c5b
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1025'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ Följ de här stegen:
 
 1. I **[!UICONTROL Edit HTML]** fönster, lägga till `upperCase` strängfunktion:
    1. Välj **[!UICONTROL Helper functions]**.
-   1. Använd sökfältet för att hitta &quot;versaler&quot;.
+   1. Använd sökfältet för att hitta &quot;versal case&quot;.
    1. Lägg till `upperCase` funktion. Det gör du genom att klicka på plustecknet (+) bredvid `{%= upperCase(string) %}: string`.
 
       Uttrycksredigeraren visar följande uttryck:
@@ -72,8 +72,8 @@ Följ de här stegen:
 
 1. Ta bort strängplatshållaren från uttrycket.
 1. Lägg till token för förnamn:
-   1. Välj **[!UICONTROL Profile]**.
-   1. Välj **[!UICONTROL Profile]** > **[!UICONTROL Person]** > **[!UICONTROL Full name]**.
+   1. Välj **[!UICONTROL Profile attributes]**.
+   1. Välj **[!UICONTROL Person]** > **[!UICONTROL Full name]**.
    1. Lägg till **[!UICONTROL First name]** -token till uttrycket.
 
       Uttrycksredigeraren visar följande uttryck:
@@ -84,7 +84,7 @@ Följ de här stegen:
 
       ![](../assets/personalization-uc-helpers-5.png)
 
-      Läs mer om personnamnets datatyp [Dokumentation för Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/person-name.html){target=&quot;_blank&quot;}.
+      Läs mer om personnamnets datatyp i [Dokumentation för Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/person-name.html){target=&quot;_blank&quot;}.
 
 1. Klicka **[!UICONTROL Validate]** och sedan klicka **[!UICONTROL Save]**.
 
@@ -141,9 +141,9 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 1. Lägg till `productListItems` matris till uttrycket:
 
    1. Ta bort platshållaren &quot;someArray&quot; från uttrycket.
-   1. Välj **[!UICONTROL Context]**.
+   1. Välj **[!UICONTROL Contextual attributes]**.
 
-      The **[!UICONTROL Context]** alternativet är bara tillgängligt efter att resekontexten har skickats till meddelandet.
+      **[!UICONTROL Contextual attributes]** är tillgängliga först efter att resekontexten har skickats till meddelandet.
 
    1. Välj **[!UICONTROL Journey Orchestration]** > **[!UICONTROL Events]** > ***[!UICONTROL event_name]*** och utöka sedan **[!UICONTROL productListItems]** nod.
 
@@ -248,7 +248,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 
 1. Lägg till produktnamnstoken i villkoret:
    1. Ta bort platshållaren &quot;condition1&quot; från uttrycket.
-   1. Välj **[!UICONTROL Context]**.
+   1. Välj **[!UICONTROL Contextual attributes]**.
    1. Välj **[!UICONTROL Journey Orchestration]** > **[!UICONTROL Events]** > ***[!UICONTROL event_name]*** och utöka sedan **[!UICONTROL productListItems]** nod.
 
       I det här exemplet *event_name* representerar namnet på din händelse.
