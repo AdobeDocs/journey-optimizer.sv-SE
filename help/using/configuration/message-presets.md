@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 4a0b1ee220cc05e4dfc10724554b39bdfd0b6678
+source-git-commit: 7bae4fbd42b7cf944622b7a42e843681f3e75d2b
 workflow-type: tm+mt
-source-wordcount: '1694'
+source-wordcount: '1868'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,11 @@ Så här skapar du en meddelandeförinställning:
 
 ## Konfigurera e-postinställningar {#configure-email-settings}
 
+E-postinställningarna definieras i ett dedikerat avsnitt i meddelandeförinställningskonfigurationen.
+
 ![](../assets/preset-email.png)
+
+Följ stegen nedan för att definiera e-postinställningarna som är kopplade till meddelandeförinställningen:
 
 1. Välj den typ av meddelande som ska skickas med förinställningen: **Transactional** eller **Marknadsföring**.
 
@@ -90,7 +94,31 @@ Så här skapar du en meddelandeförinställning:
 
 1. Välj den IP-pool som ska associeras med förinställningen. [Läs mer](ip-pools.md)
 
-1. Ange rubrikparametrarna för e-postmeddelanden som skickas med den förinställningen.
+1. För att identifiera var och varför en person klickade på länken kan du lägga till UTM-parametrar för URL-spårning i dialogrutan  **[!UICONTROL URL tracking configuration (web analytics)]** -avsnitt.
+
+   Utifrån de parametrar som du anger används en UTM-kod i slutet av den URL som finns i meddelandeinnehållet. Sedan kan du jämföra resultaten i ett webbanalysverktyg som Adobe Analytics. <!--For example: https://yourwebsite.com/?utm_source=Adobe_CJM&utm_medium=email&utm_campaign=cart_abandonment_journey... In this example, the UTM code identifies the link as an email from an abandonment cart journey. You can either select a journey/message attribute from a predefined list, or enter your own text.-->
+
+   ![](../assets/preset-url-tracking.png)
+
+   >[!NOTE]
+   >
+   >Du kan lägga till upp till 10 spårningsparametrar.
+
+   Du kan skriva texten direkt i **[!UICONTROL Name]** och **[!UICONTROL Value]** fält.
+
+   Du kan också välja från en lista med fördefinierade värden genom att navigera till följande objekt:
+
+   * Reseattribut: Käll-ID, källnamn, källversions-ID
+   * Meddelandeattribut: Åtgärds-ID, åtgärdsnamn
+   * Offer decisioning-attribut: Erbjudande-ID, erbjudandenamn
+
+   >[!CAUTION]
+   >
+   >Bläddra till önskad mapp och välj ett profilattribut som ska användas som UTM-värde.
+
+   ![](../assets/preset-url-tracking-source.png)
+
+1. Ange **[!UICONTROL Header parameters]** för de e-postmeddelanden som skickas med den förinställningen.
 
    >[!CAUTION]
    >
@@ -107,15 +135,15 @@ Så här skapar du en meddelandeförinställning:
    * **[!UICONTROL Error email]**: Alla fel som genereras av Internet-leverantörer efter några dagar efter att e-post har levererats (asynkrona studsar) tas emot på den här adressen.
    >[!NOTE]
    >
-   >Från versionen från oktober 2021 är det inte längre möjligt att definiera en e-postadress från [!DNL Journey Optimizer] användargränssnitt. Om du vill ha alla e-postmeddelanden från [!DNL Journey Optimizer] för att den delegerade underdomänen ska vidarebefordras till en viss e-postadress, kontakta [Adobe kundtjänstsupport](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
+   >Du kan inte definiera en e-postadress för vidarebefordran från [!DNL Journey Optimizer] användargränssnitt. Om du vill ha alla e-postmeddelanden från [!DNL Journey Optimizer] för den delegerade underdomänen som ska vidarebefordras till en viss e-postadress, kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
 
    ![](../assets/preset-header.png)
 
    >[!NOTE]
    >
-   >Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-` tecken.
+   >Namn måste börja med en bokstav (A-Z) och får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-` tecken.
 
-1. Konfigurera **parametrar för e-poståterförsök**. Som standard är [återförsökstid](retries.md#retry-duration) är inställt på 84 timmar, men du kan justera den här inställningen så att den passar dina behov bättre.
+1. Konfigurera **Parametrar för återförsök av e-post**. Som standard är [återförsökstid](retries.md#retry-duration) är inställt på 84 timmar, men du kan justera den här inställningen så att den passar dina behov bättre.
 
    ![](../assets/preset-retry-paramaters.png)
 
@@ -125,6 +153,10 @@ Så här skapar du en meddelandeförinställning:
    * För båda e-posttyperna är den maximala återförsöksperioden 84 timmar (eller 5 040 minuter).
 
 ## Konfigurera push-inställningar {#configure-push-settings}
+
+Push-inställningarna definieras i ett dedikerat avsnitt i meddelandeförinställningskonfigurationen.
+
+Följ stegen nedan för att definiera de push-inställningar som är kopplade till meddelandeförinställningen:
 
 1. Välj minst en plattform: **iOS** och/eller **Android**.
 
@@ -154,7 +186,7 @@ Alla dina meddelandeförinställningar visas i **[!UICONTROL Channels]** > **[!U
 
 ![](../assets/preset-filters.png)
 
-Meddelandeförinställningar kan ha följande status:
+När meddelandeförinställningarna har skapats kan de ha följande status:
 
 * **[!UICONTROL Draft]**: Meddelandeförinställningen har sparats som ett utkast och har inte skickats ännu. Öppna den för att återuppta konfigurationen.
 * **[!UICONTROL Processing]**: Meddelandeförinställningen har skickats och genomgår flera verifieringssteg.
@@ -164,7 +196,7 @@ Meddelandeförinställningar kan ha följande status:
 
 Om det inte går att skapa en meddelandeförinställning beskrivs informationen för varje möjlig felorsak nedan.
 
-Om något av dessa fel inträffar ska du kontakta [Adobe kundtjänstsupport](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;} om du vill ha hjälp.
+Om något av dessa fel inträffar, kontakta [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;} om du vill ha hjälp.
 
 * **SPF-valideringen misslyckades**: SPF (Sender Policy Framework) är ett autentiseringsprotokoll för e-post som tillåter att auktoriserade IP-adresser kan skicka e-post från en viss underdomän. SPF-valideringsfel innebär att IP-adresserna i SPF-posten inte matchar IP-adresserna som används för att skicka e-post till postlådeprovidern.
 
