@@ -2,11 +2,11 @@
 title: Hantera användare och produktprofiler
 description: Lär dig hur du hanterar behörigheter
 exl-id: 85fd386a-45fa-4f9a-89d1-cecc0749b90d
-feature: Control Groups
+feature: Access Management
 topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: bbeecbacb4838dfb0794d5625eb2774cf4b983ef
+source-git-commit: 7de0088c07c644c42f5def3657d2629ce5e7754e
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 11%
