@@ -5,9 +5,9 @@ feature: Personalization
 topic: Personalization
 role: Data Engineer
 level: Intermediate
-source-git-commit: fab36ea43e92babfacdbaeeaecf6c551c00b3c5b
+source-git-commit: 163211f95436a37dee7deffea9ced1a3fa09dc34
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
@@ -47,11 +47,22 @@ Så här sparar du ett uttryck i biblioteket:
 
    ![](assets/library-save.png)
 
-1. I den högra rutan ger du uttrycket en titel och en beskrivning som gör det enklare att hitta det. Klicka sedan på **[!UICONTROL Add]**.
+1. I den högra rutan anger du en rubrik och en beskrivning för uttrycket så att användarna enklare kan hitta det. Klicka sedan på **[!UICONTROL Add]**.
 
    ![](assets/add-expression.png)
 
 1. Uttrycket läggs till i biblioteket. Användarna kommer nu att kunna använda den för att bygga sitt personaliseringsinnehåll.
+
+
+>[!NOTE]
+>
+>* Du sparar upp till 40 uttryck i biblioteket.
+>
+>* Uttryck får inte överskrida 200 kB.
+>
+>* Sparade uttryck sorteras efter skapandedatum: nyligen tillagda uttryck visas först i listan.
+
+
 
 Om du vill redigera ett befintligt uttryck lägger du till det i redigeraren och ändrar det efter behov. Klicka **[!UICONTROL Add to library]** för att validera syntaxen och spara uttrycket.
 
