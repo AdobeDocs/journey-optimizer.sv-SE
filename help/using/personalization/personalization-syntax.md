@@ -6,10 +6,10 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 5a562066-ece0-4a78-92a7-52bf3c3b2eea
-source-git-commit: 1ffa268304ab6343847cdc57b54a3933eb61c902
+source-git-commit: 904fd645cba550fdb65821292293bf7d838c66f6
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 3%
+source-wordcount: '707'
+ht-degree: 2%
 
 ---
 
@@ -145,10 +145,12 @@ Block är uttryck som har ett blocköppningsblock ({{# }}) och closing ({/}}).
 
 ## URL-anpassning{#perso-urls}
 
-Med Journey Optimizer kan du anpassa en eller flera URL-adresser i meddelandet genom att lägga till anpassningsfält till dem. Så här gör du:
+Personaliserade URL:er tar mottagarna till specifika sidor på en webbplats eller till en personlig mikrowebbplats, beroende på profilattributen. I Adobe Journey Optimizer kan du lägga till personalisering i URL-adresser i ditt meddelandeinnehåll. URL-personalisering kan tillämpas på text och bilder och använda profildata eller kontextuella data.
 
-* Skapa en länk i meddelandeinnehållet. Mer information om hur du skapar länkar finns i [den här sidan](../messages/message-tracking.md#insert-links).
-* Välj personaliseringsikonen. Den här ikonen är tillgänglig för följande typer av länkar: **Extern länk**, **Länk för att avbryta prenumeration** och **Avanmäl dig**.
+Med Journey Optimizer kan du anpassa en eller flera URL-adresser i meddelandet genom att lägga till anpassningsfält till dem. Följ stegen nedan för att anpassa en URL-adress:
+
+1. Skapa en länk i meddelandeinnehållet. [Läs mer](../messages/message-tracking.md#insert-links)
+1. Välj attribut från personaliseringsikonen. Ikonen för anpassning är bara tillgänglig för följande typer av länkar: **Extern länk**, **Länk för att avbryta prenumeration** och **Avanmäl dig**.
 
 ![](assets/perso-url.png)
 
