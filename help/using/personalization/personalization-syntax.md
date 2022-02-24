@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 5a562066-ece0-4a78-92a7-52bf3c3b2eea
-source-git-commit: b43e3432ede1d4985e0a6b57b57c5efc3cf60c50
+source-git-commit: 1ffa268304ab6343847cdc57b54a3933eb61c902
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '656'
 ht-degree: 3%
 
 ---
@@ -147,8 +147,8 @@ Block är uttryck som har ett blocköppningsblock ({{# }}) och closing ({/}}).
 
 Med Journey Optimizer kan du anpassa en eller flera URL-adresser i meddelandet genom att lägga till anpassningsfält till dem. Så här gör du:
 
-* Skapa en länk i ditt e-postinnehåll eller push-innehåll. Mer information om hur du skapar länkar finns i [den här sidan](../messages/message-tracking.md#insert-links).
-* Klicka på personaliseringsikonen. Den här ikonen är tillgänglig för följande typer av länkar: **Extern länk**, **Länk för att avbryta prenumeration** och **Avanmäl dig**.
+* Skapa en länk i meddelandeinnehållet. Mer information om hur du skapar länkar finns i [den här sidan](../messages/message-tracking.md#insert-links).
+* Välj personaliseringsikonen. Den här ikonen är tillgänglig för följande typer av länkar: **Extern länk**, **Länk för att avbryta prenumeration** och **Avanmäl dig**.
 
 ![](assets/perso-url.png)
 

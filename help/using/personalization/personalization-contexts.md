@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: fe39570b-cbd2-4b24-af10-e12990a9a885
-source-git-commit: 7a07f2348f08b4582a1310fb65d431c55451d9b6
+source-git-commit: 1ffa268304ab6343847cdc57b54a3933eb61c902
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
@@ -60,3 +60,10 @@ Läs mer om konfigurationen för push-meddelanden i [det här avsnittet](../mess
 Du kan även komma åt personaliseringsredigeraren när du lägger till textinnehåll till offerternas representationer.
 
 Läs mer om hur du hanterar innehåll med beslutsstöd i [det här avsnittet](../offers/offer-library/creating-personalized-offers.md#custom-text).
+
+## Personaliserade URL:er{#personalize-urls}
+
+I ditt meddelandeinnehåll kan du skapa länkar med personalisering. Du kan till exempel lägga till länkar till en viss sida på webbplatsen för dina nya kunder.
+
+Lär dig hur du använder personaliseringsfunktioner för att infoga en personlig URL i [det här avsnittet](personalization-syntax.md#perso-urls).
+
