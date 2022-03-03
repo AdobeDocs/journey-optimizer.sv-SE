@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: c9f260444e1cd20e66421a87dd62c5ae7209ee06
+source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
 workflow-type: tm+mt
 source-wordcount: '1036'
 ht-degree: 3%
@@ -43,13 +43,13 @@ Så här konfigurerar du Läs segment-aktiviteten:
    >
    >Endast personer med **Realiserad** och **Befintlig** Deltagandestatus för segment kommer att gå in på resan. Mer information om hur du utvärderar ett segment finns i [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target=&quot;_blank&quot;}.
 
-   ![](../assets/read-segment-selection.png)
+   ![](assets/read-segment-selection.png)
 
    När segmentet har lagts till visas **[!UICONTROL Copy]** kan du kopiera dess namn och ID:
 
    `{"name":"Luma app opening and checkout",”id":"8597c5dc-70e3-4b05-8fb9-7e938f5c07a3"}`
 
-   ![](../assets/read-segment-copy.png)
+   ![](assets/read-segment-copy.png)
 
 1. I **[!UICONTROL Namespace]** väljer du det namnutrymme som ska användas för att identifiera de enskilda personerna. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace).
 
@@ -67,7 +67,7 @@ Så här konfigurerar du Läs segment-aktiviteten:
 
 1. The **[!UICONTROL Read Segment]** kan du ange vid vilken tidpunkt segmentet ska börja färden. Om du vill göra det klickar du på **[!UICONTROL Edit journey schedule]** länk för att komma åt resans egenskaper och konfigurera sedan **[!UICONTROL Scheduler type]** fält.
 
-   ![](../assets/read-segment-schedule.png)
+   ![](assets/read-segment-schedule.png)
 
    Som standard kommer segment in på resan **[!UICONTROL As soon as possible]**. Om du vill att segmentet ska anges på en viss dag/tid eller på en återkommande basis, väljer du önskat värde i listan.
 
@@ -75,7 +75,7 @@ Så här konfigurerar du Läs segment-aktiviteten:
    >
    >Observera att **[!UICONTROL Schedule]** -avsnittet är bara tillgängligt när en **[!UICONTROL Read Segment]** aktiviteten har släppts på arbetsytan.
 
-   ![](../assets/read-segment-schedule-list.png)
+   ![](assets/read-segment-schedule-list.png)
 
    The **Inkrementell läsning** kan du bara rikta in dig på de personer som har gått in i segmentet sedan den senaste körningen av resan. Den första körningen riktar sig alltid till alla segmentmedlemmar. Det här alternativet är endast tillgängligt för återkommande **Lässegment** verksamhet.
 
@@ -104,7 +104,7 @@ The **[!UICONTROL Read Segment]** kan du testa resan antingen med en enhetlig pr
 
 Aktivera testläget och välj sedan önskat alternativ i den vänstra rutan.
 
-![](../assets/read-segment-test-mode.png)
+![](assets/read-segment-test-mode.png)
 
 Sedan kan du konfigurera och köra testläget som vanligt. [Lär dig hur du testar en resa](testing-the-journey.md).
 
@@ -116,7 +116,7 @@ När testet är klart **[!UICONTROL Show logs]** kan du se testresultaten enligt
 
    Observera att det inte går att följa förloppet för de personer som befinner sig på resan med hjälp av det visuella flödet om du testar resan med upp till 100 profiler samtidigt.
 
-   ![](../assets/read-segment-log.png)
+   ![](assets/read-segment-log.png)
 
 När testerna är klara kan du publicera din resa (se [Publicera resan](publishing-the-journey.md)). Enskilda personer som tillhör segmentet kommer att resa in på den dag/tid som anges i färdens egenskaper **[!UICONTROL Scheduler]** -avsnitt.
 
@@ -144,7 +144,7 @@ Segmenteringen kan baseras på:
 * en tid, till exempel: är det morgon i personens tidszon?
 * en algoritm som delar den målgrupp som flödar i resan baserat på en procentandel, till exempel: 90 % - 10 % för att exkludera en kontrollgrupp
 
-![](../assets/read-segment-audience1.png)
+![](assets/read-segment-audience1.png)
 
 **Uteslutning**
 
@@ -152,7 +152,7 @@ Samma **Villkor** som används för segmentering (se ovan) gör det även möjli
 
 Detta kan inträffa direkt efter segmenthämtning, för populationsinventering eller längs en flerstegsresa.
 
-![](../assets/read-segment-audience2.png)
+![](assets/read-segment-audience2.png)
 
 **Union**
 
@@ -164,4 +164,4 @@ Om du till exempel har följt en annan upplevelse under tio dagar på en resa ka
 
 Efter en union kan du dela upp publiken igen genom att utföra en segmentering eller ett exkluderingsmoment.
 
-![](../assets/read-segment-audience3.png)
+![](assets/read-segment-audience3.png)

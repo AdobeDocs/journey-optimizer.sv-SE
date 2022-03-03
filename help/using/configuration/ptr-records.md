@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
-source-git-commit: 06a7abc2ada930356cbaf45ce01eed5e3156f2e3
+source-git-commit: 7c9f04b8d3faa171444bfa0adc537b5faabde37e
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Med PTR-poster kan e-postservrar som tar emot e-post kontrollera e-postservrarna
 
 En gång [en underdomän har delegerats](delegate-subdomain.md) i Adobe Journey Optimizer skapas en PTR-post automatiskt och kopplas till den här underdomänen. Du kommer åt den via **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL PTR records]** -menyn.
 
-![](../assets/ptr-records.png)
+![](assets/ptr-records.png)
 
 I listan visas de PTR-poster som genererats för varje delegerad underdomän med syntaxen nedan:
 
@@ -49,11 +49,11 @@ Redigera en PTR-post med en underdomän som är [helt delegerad](delegate-subdom
 
 1. Öppna en PTR-post genom att klicka på dess namn i listan.
 
-   ![](../assets/ptr-record-select.png)
+   ![](assets/ptr-record-select.png)
 
 1. Välj en underdomän [helt delegerad](delegate-subdomain.md#full-subdomain-delegation) till Adobe från listan.
 
-   ![](../assets/ptr-record-subdomain.png)
+   ![](assets/ptr-record-subdomain.png)
 
 1. Klicka **[!UICONTROL Save]** för att bekräfta dina ändringar.
 
@@ -63,15 +63,15 @@ Så här redigerar du en PTR-post med en underdomän som har delegerats till Ado
 
 1. Öppna en PTR-post genom att klicka på dess namn i listan.
 
-   ![](../assets/ptr-record-select-cname.png)
+   ![](assets/ptr-record-select-cname.png)
 
 1. Markera en underdomän som delegerats till Adobe med [CNAME-metod](delegate-subdomain.md#cname-subdomain-delegation) från listan.
 
-   ![](../assets/ptr-record-subdomain-cname.png)
+   ![](assets/ptr-record-subdomain-cname.png)
 
 1. Du måste skapa en ny framåtriktad DNS-post på din värdplattform. Det gör du genom att kopiera posten som genererats av Adobe. När du är klar markerar du rutan &quot;Jag bekräftar..&quot;.
 
-   ![](../assets/ptr-record-subdomain-confirm.png)
+   ![](assets/ptr-record-subdomain-confirm.png)
 
    >[!NOTE]
    >
@@ -86,23 +86,23 @@ Så här redigerar du en PTR-post med en underdomän som har delegerats till Ado
 
 A **[!UICONTROL Processing]** visas bredvid namnet på PTR-posten i listan.
 
-![](../assets/ptr-record-updating.png)
+![](assets/ptr-record-updating.png)
 
 Om du vill kontrollera uppdateringsinformationen för PTR-posten klickar du på **[!UICONTROL Updating]** eller **[!UICONTROL Recent updates]** ikon.
 
-![](../assets/ptr-record-recent-update.png)
+![](assets/ptr-record-recent-update.png)
 
 Du kan se information som uppdateringsstatus och begärda ändringar.
 
-![](../assets/ptr-record-updates.png)
+![](assets/ptr-record-updates.png)
 
 ## Uppdateringsstatus för PTR-post {#ptr-record-update-statuses}
 
 En PTR-postuppdatering kan ha följande status:
 
-* ![](../assets/do-not-localize/ptr-record-processing.png) **[!UICONTROL Processing]**: Uppdateringen av PTR-posten har skickats och genomgår en verifieringsprocess.
-* ![](../assets/do-not-localize/ptr-record-success.png) **[!UICONTROL Success]**: Den uppdaterade PTR-posten har verifierats och den nya underdomänen är nu associerad med IP-adressen.
-* ![](../assets/do-not-localize/ptr-record-failed.png) **[!UICONTROL Failed]**: En eller flera kontroller misslyckades under PTR-postuppdateringsverifieringen.
+* ![](assets/do-not-localize/ptr-record-processing.png) **[!UICONTROL Processing]**: Uppdateringen av PTR-posten har skickats och genomgår en verifieringsprocess.
+* ![](assets/do-not-localize/ptr-record-success.png) **[!UICONTROL Success]**: Den uppdaterade PTR-posten har verifierats och den nya underdomänen är nu associerad med IP-adressen.
+* ![](assets/do-not-localize/ptr-record-failed.png) **[!UICONTROL Failed]**: En eller flera kontroller misslyckades under PTR-postuppdateringsverifieringen.
 
 ### Bearbetar {#processing}
 

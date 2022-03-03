@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 2bead395-082a-4fea-ad10-b2b2c5f484e9
-source-git-commit: 7a07f2348f08b4582a1310fb65d431c55451d9b6
+source-git-commit: fad7eb9feea0d8c21494b4a7c1608369e725023e
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 0%
@@ -19,11 +19,11 @@ E-postmeddelandet **[!UICONTROL Global report]** avser endast en viss e-postleve
 
 Från **[!UICONTROL Executions]** -fliken i **[!UICONTROL Messages]** meny, välja **[!UICONTROL Global view]** väljer du på den avancerade menyn för den valda leveransen **[!UICONTROL Global report]**.
 
-![](../assets/global_report_3.png)
+![](assets/global_report_3.png)
 
 E-postmeddelandet **[!UICONTROL Global report]** är uppdelat i olika widgetar som detaljerat beskriver leveransens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](global-report.md#modify-dashboard).
 
-![](../assets/global_report_4.png)
+![](assets/global_report_4.png)
 
 **[!UICONTROL Email performance]** anger huvudinformationen i förhållande till meddelandet med KPI:er:
 
@@ -65,7 +65,7 @@ The **[!UICONTROL Sending Statistics]** diagram visar hur framgångsrik leverans
 
 * **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
 
-![](../assets/global_report_5.png)
+![](assets/global_report_5.png)
 
 The **[!UICONTROL Bounce Reasons]** och **[!UICONTROL Bounce categories]** widgetar innehåller tillgängliga data som är relaterade till studsade meddelanden, som:
 
@@ -79,7 +79,7 @@ Mer information om studsar finns i [Undertryckningslista](../messages/suppressio
 
 The **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilket fel som inträffade under leveransen.
 
-![](../assets/global_report_6.png)
+![](assets/global_report_6.png)
 
 The **[!UICONTROL Email - Top recipient domain]** diagram och tabeller visar vilka domäner som är de mest använda av mottagarna för att öppna e-postmeddelandet.
 
@@ -92,7 +92,7 @@ The **[!UICONTROL Open vs Click]** identifierar mottagarnas interaktion med leve
 * **[!UICONTROL Unique Opens]**: Antal mottagare som öppnade leveransen.
 
 <!--
-![](../assets/global_report_20.png)
+![](assets/global_report_20.png)
 
 >[!NOTE]
 >

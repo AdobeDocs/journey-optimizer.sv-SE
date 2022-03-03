@@ -8,7 +8,7 @@ level: Intermediate
 hidefromtoc: true
 hide: true
 exl-id: f5a42c69-0384-442b-acf6-b3149be8b0da
-source-git-commit: 1a2c87866404201ea4693ed58efe302b83db9efa
+source-git-commit: c988f0baa8b3c622dfb4f1ff060001a3462ed31e
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -25,11 +25,11 @@ Prenumerationsrapporten innehåller information om dina prenumeranters aktivitet
 
 Välj **Live** eller **[!UICONTROL Global report]** på den avancerade menyn i den valda prenumerationslistan.
 
-![](../assets/subscription_report_6.png)
+![](assets/subscription_report_6.png)
 
 ## Direktprenumerationsrapport {#subscription-live}
 
-![](../assets/subscription_report_3.png)
+![](assets/subscription_report_3.png)
 
 The **[!UICONTROL Subscription performance]** KPI:er och **[!UICONTROL Subscriptions by journey]**/**[!UICONTROL Unsubscribes by journey]** tabellerna innehåller detaljerad information om besökarnas engagemang på landningssidan. Tabellerna och KPI:erna innehåller tillgängliga uppgifter om landningssidan, t.ex.:
 
@@ -39,13 +39,13 @@ The **[!UICONTROL Subscription performance]** KPI:er och **[!UICONTROL Subscript
 
 The **[!UICONTROL Subscription performance]** I diagrammet visas hur prenumerationerna har utvecklats under de senaste 24 timmarna.
 
-![](../assets/subscription_report_4.png)
+![](assets/subscription_report_4.png)
 
 The **Prenumerationer - uppdelning** och **Avbeställ - Uppdelning** Diagram visar det totala antalet personer som under de senaste 24 timmarna har tecknat eller avbeställt, beroende på meddelanden, landningssidor och kanaler.
 
 ## Global prenumerationsrapport {#subscription-global}
 
-![](../assets/subscription_report_1.png)
+![](assets/subscription_report_1.png)
 
 The **[!UICONTROL Subscription performance]** KPI:er och **[!UICONTROL Subscriptions by journey]**/**[!UICONTROL Unsubscribes by journey]** tabellerna innehåller detaljerad information om besökarnas engagemang på landningssidan. Tabellerna och KPI:erna innehåller tillgängliga uppgifter om landningssidan, t.ex.:
 
@@ -55,6 +55,6 @@ The **[!UICONTROL Subscription performance]** KPI:er och **[!UICONTROL Subscript
 
 The **[!UICONTROL Subscription performance]** Diagram visar hur prenumerationerna har utvecklats under den berörda perioden.
 
-![](../assets/subscription_report_2.png)
+![](assets/subscription_report_2.png)
 
 The **Prenumerationer - uppdelning** och **Avbeställ - Uppdelning** representerar det totala antalet personer som under den valda tidsperioden har tecknat eller avbrutit prenumerationen, beroende på meddelanden, landningssidor och kanaler.

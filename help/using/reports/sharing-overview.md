@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 07d25f8e-0065-4410-9895-ffa15d6447bb
-source-git-commit: 6d744c0289e81ab2229f02c44ead43943b945b89
+source-git-commit: fad7eb9feea0d8c21494b4a7c1608369e725023e
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 3%
@@ -39,9 +39,9 @@ Följande scheman skapas:
 * Schema för resesegmenthändelse för [!DNL Journey Orchestration] - Resestegshändelse som är knuten till en resemetadata.
 * Reseschema med resefält för [!DNL Journey Orchestration] - Resemetadata för att beskriva resor.
 
-![](../assets/sharing1.png)
+![](assets/sharing1.png)
 
-![](../assets/sharing2.png)
+![](assets/sharing2.png)
 
 Följande datauppsättningar har skickats:
 
@@ -49,7 +49,7 @@ Följande datauppsättningar har skickats:
 * Resestegshändelser
 * Resor
 
-![](../assets/sharing3.png)
+![](assets/sharing3.png)
 
 Listorna med XDM-fält som skickas till Adobe Experience Platform finns här:
 

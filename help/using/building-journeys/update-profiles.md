@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 8b2b2d1e-9bd1-439d-a15e-acdbab387c4b
-source-git-commit: 778ab302a5c9835024fe324999cdf5acf19ad172
+source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -40,13 +40,13 @@ Mer information om hur du omvandlar en befintlig profil till en testprofil finns
 
 1. I **Åtgärd** väljer du **Uppdatera profil** till arbetsytan.
 
-   ![](../assets/profileupdate0.png)
+   ![](assets/profileupdate0.png)
 
 1. Välj ett schema i listan.
 
 1. Klicka på **Fält** för att markera det fält som du vill uppdatera. Endast ett fält kan markeras.
 
-   ![](../assets/profileupdate2.png)
+   ![](assets/profileupdate2.png)
 
 1. Välj en datauppsättning i listan.
 
@@ -58,12 +58,12 @@ Mer information om hur du omvandlar en befintlig profil till en testprofil finns
 
    * Med den enkla uttrycksredigeraren kan du välja ett fält från en datakälla eller från den inkommande händelsen.
 
-      ![](../assets/profileupdate4.png)
+      ![](assets/profileupdate4.png)
 
    * Om du vill definiera ett specifikt värde eller använda avancerade funktioner klickar du på **Avancerat läge**.
 
-      ![](../assets/profileupdate3.png)
+      ![](assets/profileupdate3.png)
 
 The **Uppdatera profil** har konfigurerats.
 
-![](../assets/profileupdate1.png)
+![](assets/profileupdate1.png)

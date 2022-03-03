@@ -8,7 +8,7 @@ level: Beginner
 hidefromtoc: true
 hide: true
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: b43e3432ede1d4985e0a6b57b57c5efc3cf60c50
+source-git-commit: c988f0baa8b3c622dfb4f1ff060001a3462ed31e
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 3%
@@ -25,11 +25,11 @@ ht-degree: 3%
 
 Om du vill få åtkomst till landningssidans lista väljer du **[!UICONTROL Journey Management]** > **[!UICONTROL Landing pages]** från den vänstra menyn.
 
-![](../assets/lp_access-list.png)
+![](assets/lp_access-list.png)
 
 The **[!UICONTROL Landing Pages]** visas alla objekt som har skapats. Du kan filtrera dem baserat på deras status eller ändringsdatum.
 
-![](../assets/lp_access-list-filter.png)
+![](assets/lp_access-list-filter.png)
 
 ## Skapa en landningssida {#create-landing-page}
 
@@ -37,15 +37,15 @@ Stegen för att skapa en landningssida är följande.
 
 1. I listan över landningssidor klickar du på **[!UICONTROL Create landing page]**.
 
-   ![](../assets/lp_create-lp.png)
+   ![](assets/lp_create-lp.png)
 
 1. Lägg till en titel. Du kan lägga till en beskrivning om det behövs.
 
-   ![](../assets/lp_create-lp-details.png)
+   ![](assets/lp_create-lp-details.png)
 
 1. Välj en förinställning.
 
-   ![](../assets/lp_create-lp-presets.png)
+   ![](assets/lp_create-lp-presets.png)
 
    >[!NOTE]
    >
@@ -55,11 +55,11 @@ Stegen för att skapa en landningssida är följande.
 
 1. Den primära sidan och dess egenskaper visas. Lär dig hur du konfigurerar inställningarna för den primära sidan [här](#configure-primary-page).
 
-   ![](../assets/lp_primary-page.png)
+   ![](assets/lp_primary-page.png)
 
 1. Klicka på ikonen + för att lägga till en undersida. Lär dig hur du konfigurerar inställningarna för undersidan [här](#configure-subpages).
 
-   ![](../assets/lp_add-subpage.png)
+   ![](assets/lp_add-subpage.png)
 
 När du har konfigurerat och utformat [primär sida](#configure-primary-page)och [undersidor](#configure-subpages) om det finns något, kan du [test](#test-landing-page) och [publicera](#publish-landing-page) din landningssida.
 
@@ -73,7 +73,7 @@ Följ stegen nedan för att definiera inställningarna för den primära sidan.
 
 1. Redigera innehållet på sidan med hjälp av innehållsdesignern. Lär dig definiera innehåll för landningssidor [här](design-lp.md).
 
-   ![](../assets/lp_open-designer.png)
+   ![](assets/lp_open-designer.png)
 
 1. Definiera URL-adressen till landningssidan. Den första delen av URL:en kräver att domändelegeringen utförs. Den är förfylld och kan inte redigeras via användargränssnittet. Kontakta din kontorepresentant på Adobe eller [Adobe kundtjänstsupport](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
 
@@ -81,7 +81,7 @@ Följ stegen nedan för att definiera inställningarna för den primära sidan.
    >
    >Landningssidans URL måste vara unik.
 
-   ![](../assets/lp_access-url.png)
+   ![](assets/lp_access-url.png)
 
 1. Du kan ange ett förfallodatum för sidan. I så fall måste du välja en åtgärd när sidan förfaller:
 
@@ -89,17 +89,17 @@ Följ stegen nedan för att definiera inställningarna för den primära sidan.
    * **[!UICONTROL Custom page]**: [Konfigurera en undersida](#configure-subpages) och välj den i listrutan som visas.
    * **[!UICONTROL Browser error]**: Skriv den feltext som ska visas i stället för sidan.
 
-   ![](../assets/lp_expiry-date.png)
+   ![](assets/lp_expiry-date.png)
 
    <!--1. In the **[!UICONTROL Additional data]** section, define a **[!UICONTROL Key]** and the corresponding **[!UICONTROL Parameter value]**. // you can define how the data entered in the landing page is managed once it has been submitted by a user??-->
 
 1. Om du valde en eller flera prenumerationer visas [utforma den primära sidan](design-lp.md)visas de i **[!UICONTROL Subscription list]** -avsnitt.
 
-   ![](../assets/lp_subscription-list.png)
+   ![](assets/lp_subscription-list.png)
 
 1. Från landningssidan kan du [skapa en resa](../building-journeys/journey-gs.md#jo-build) som skickar ett bekräftelsemeddelande till användarna när de skickar formuläret. Lär dig hur du skapar en sådan resa i slutet av detta [användningsfall](lp-use-cases.md#subscription-to-a-service).
 
-   ![](../assets/lp_create-journey.png)
+   ![](assets/lp_create-journey.png)
 
    Klicka **[!UICONTROL Create journey]** omdirigeras till **[!UICONTROL Journey Management]** > **[!UICONTROL Journeys]** lista.
 
@@ -119,7 +119,7 @@ Följ stegen nedan för att definiera inställningar för undersidan.
    >
    >Landningssidans URL måste vara unik.
 
-![](../assets/lp_subpage-settings.png)
+![](assets/lp_subpage-settings.png)
 
 ## Testa landningssidan {#test-landing-page}
 
@@ -131,7 +131,7 @@ När inställningarna för landningssidan och innehållet har definierats kan du
 
 1. I landningssidans gränssnitt klickar du på **[!UICONTROL Preview & test]** för att komma åt valet av testprofil.
 
-   ![](../assets/lp_preview-button.png)
+   ![](assets/lp_preview-button.png)
 
    >[!NOTE]
    >
@@ -139,17 +139,17 @@ När inställningarna för landningssidan och innehållet har definierats kan du
 
 1. Från **[!UICONTROL Preview & test]** väljer du en eller flera testprofiler.
 
-   ![](../assets/lp_test-profiles.png)
+   ![](assets/lp_test-profiles.png)
 
    Stegen för att välja testprofiler är desamma som när du testar ett meddelande. De beskrivs i [det här avsnittet](../messages/preview.md#select-test-profiles).
 
 1. Välj **[!UICONTROL Preview]** och klicka **[!UICONTROL Open preview]** för att testa landningssidan.
 
-   ![](../assets/lp_open-preview.png)
+   ![](assets/lp_open-preview.png)
 
 1. Förhandsgranskningen av landningssidan öppnas på en ny flik. Personaliserade element ersätts med valda testprofildata.
 
-   ![](../assets/lp_preview.png)
+   ![](assets/lp_preview.png)
 
 1. Välj andra testprofiler om du vill förhandsgranska återgivningen för varje variant av landningssidan.
 
@@ -159,7 +159,7 @@ När du skapar en landningssida varnar du om du behöver vidta viktiga åtgärde
 
 Varningar visas högst upp till höger på skärmen, som visas nedan:
 
-![](../assets/lp_alerts.png)
+![](assets/lp_alerts.png)
 
 >[!NOTE]
 >
@@ -196,7 +196,7 @@ Två typer av varningar kan inträffa:
 
 När landningssidan är klar kan du publicera den för att göra den tillgänglig för användning i ett meddelande.
 
-![](../assets/lp_publish.png)
+![](assets/lp_publish.png)
 
 >[!CAUTION]
 >

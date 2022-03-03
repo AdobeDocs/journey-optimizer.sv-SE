@@ -5,7 +5,7 @@ feature: Profiles
 role: User
 level: Beginner
 exl-id: 90e892e9-33c2-4da5-be1d-496b42572897
-source-git-commit: 2088b5ba2ec77e56644683e118e734acfe6707fc
+source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Personligt identifierbar information (PII), t.ex. e-postadress och telefonnummer
 
 I [!DNL Adobe Journey Optimizer], **Identiteter** länka konsumenter mellan olika enheter och kanaler, resultatet är [identitetsdiagram](#id-graph). Det länkade identitetsdiagrammet används för att personalisera upplevelser baserat på interaktioner över alla era affärskontaktytor.
 
-![](../assets/identities-home.png)
+![](assets/identities-home.png)
 
 Läs mer om **Identitetstjänst** in [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=sv){target=&quot;_blank&quot;}.
 

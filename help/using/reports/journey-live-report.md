@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e3781f79-7c8d-4512-b44f-835639b1471f
-source-git-commit: 8cb36038b2aeddd1662dcb7c84b36d9bc1265982
+source-git-commit: fad7eb9feea0d8c21494b4a7c1608369e725023e
 workflow-type: tm+mt
 source-wordcount: '696'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Du kan få åtkomst till liverapporten från din resa med **[!UICONTROL Live report]** -knappen.
 
-![](../assets/report_1.png)
+![](assets/report_1.png)
 
 Resan **[!UICONTROL Live report]** visas med följande flikar:
 
@@ -31,7 +31,7 @@ Resan **[!UICONTROL Live report]** är uppdelat i olika widgetar som detaljerat 
 
 Från din resa **[!UICONTROL Live report]**, **[!UICONTROL Journey]** -fliken ger en tydlig bild av de viktigaste spårningsdata som rör kundresan.
 
-![](../assets/report_journey_2.png)
+![](assets/report_journey_2.png)
 
 **[!UICONTROL Journey Performance]** gör att du kan se vägen för dina målprofiler steg för steg under hela kundresan.
 
@@ -43,11 +43,11 @@ The **[!UICONTROL Journey Statistics]** widgeten visar följande KPI:er:
 
 * **[!UICONTROL Failed individual journeys]**: Totalt antal enskilda resor som inte har slutförts.
 
-![](../assets/report_journey_3.png)
+![](assets/report_journey_3.png)
 
 The **[!UICONTROL Event executed over the last 24 hours]** och **[!UICONTROL Events]** Med -widgetar kan du se vilken av dina händelser som har utförts genom sammanfattningsnummer, diagram och tabell.
 
-![](../assets/report_journey_4.png)
+![](assets/report_journey_4.png)
 
 The **[!UICONTROL Action executed over the last 24 hours]** och **[!UICONTROL Actions executed and errors]** -widgetar är den mest framgångsrika åtgärden och de fel som inträffade när dina åtgärder utlöstes. Åtgärdsdiagrammet, tabellen och sammanfattningsnumren innehåller de data som är tillgängliga för åtgärder, till exempel:
 
@@ -56,7 +56,7 @@ The **[!UICONTROL Action executed over the last 24 hours]** och **[!UICONTROL Ac
 * **[!UICONTROL Error in actions]**: Totalt antal fel som uppstått för åtgärder.
 
 <!--
-![](../assets/live_report_7.png)
+![](assets/live_report_7.png)
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Från din resa **[!UICONTROL Live report]**, **[!UICONTROL Email]** fliken inneh
 
 En detaljerad rapport om en viss e-postleverans finns i [E-postlive-rapport](email-live-report.md) -avsnitt.
 
-![](../assets/report_email_1.png)
+![](assets/report_email_1.png)
 
 The **[!UICONTROL Email Sending Statistics]** widgeten innehåller information om den viktigaste informationen i förhållande till ditt meddelande:
 
@@ -105,7 +105,7 @@ The **[!UICONTROL Sending metrics by Email]** tabell och **[!UICONTROL Email Sum
 
 * **[!UICONTROL Spam complaints]**: Antal gånger ett meddelande har deklarerats som skräppost eller skräppost.
 
-![](../assets/report_email_2.png)
+![](assets/report_email_2.png)
 
 The **[!UICONTROL Bounce Reasons]**, **[!UICONTROL Bounce categories]** och **[!UICONTROL Hard and bounce - by Email]** widgetar innehåller tillgängliga data som är relaterade till studsade meddelanden, som:
 
@@ -123,7 +123,7 @@ Från din resa **[!UICONTROL Live report]**, **[!UICONTROL Push]** fliken inneh�
 
 En detaljerad rapport om en viss push-leverans finns i [Publicera live-rapport](push-live-report.md) -avsnitt.
 
-![](../assets/report_push_1.png)
+![](assets/report_push_1.png)
 
 **[!UICONTROL Push notification sending performance]**, **[!UICONTROL Push notification summary]** och **[!UICONTROL Sending metrics - by Push]** widgetar anger huvudinformationen i förhållande till meddelandet:
 
@@ -143,7 +143,7 @@ En detaljerad rapport om en viss push-leverans finns i [Publicera live-rapport](
 
 The **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilket fel som inträffade under leveransen.
 
-![](../assets/report_push_2.png)
+![](assets/report_push_2.png)
 
 The **[!UICONTROL Tracking by platform]**, **[!UICONTROL Sending by platform]** och **[!UICONTROL Breakdown by platform]** diagram och tabeller visar hur bra push-meddelandena är beroende på vilket operativsystem som används.
 

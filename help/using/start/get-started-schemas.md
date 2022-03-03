@@ -5,7 +5,7 @@ feature: Schemas
 role: User
 level: Beginner
 exl-id: c2a8df2e-ff94-4f9a-a53e-bbf9f663cc81
-source-git-commit: 2088b5ba2ec77e56644683e118e734acfe6707fc
+source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 2%
@@ -24,7 +24,7 @@ Lär dig skapa scheman i [den här dokumentationen](https://experienceleague.ado
 
 The **Scheman** arbetsytan i [!DNL Adobe Journey Optimizer] Med användargränssnittet kan du hantera XDM-resurser (Experience Data Model), inklusive scheman, klasser, schemafältgrupper och datatyper. Du kan visa och utforska kärnresurser från Adobe och skapa anpassade resurser och scheman för din organisation.
 
-![](../assets/schemas-home.png)
+![](assets/schemas-home.png)
 
 Lär dig hur du använder schemaanvändargränssnittet i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html){target=&quot;_blank&quot;}
 

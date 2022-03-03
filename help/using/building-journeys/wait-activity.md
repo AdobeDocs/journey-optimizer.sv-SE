@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
-source-git-commit: b4a356583b555451c8d42d1043691b5ff841851b
+source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 4%
@@ -39,13 +39,13 @@ Observera också att om två olika platser är parallella så kommer den första
 
 Ange väntetiden innan nästa aktivitet körs.
 
-![](../assets/journey55.png)
+![](assets/journey55.png)
 
 ## Vänta fast{#fixed_date}
 
 Välj datumet för körningen av nästa aktivitet.
 
-![](../assets/journey56.png)
+![](assets/journey56.png)
 
 ## Anpassad väntetid{#custom}
 
@@ -57,7 +57,7 @@ Med det här alternativet kan du definiera ett anpassat datum, till exempel 12 j
 >
 >The **tidszon** är förväntat i egenskaperna för din resa. Därför är det inte möjligt i dag från gränssnittet till en direkt punkt vid en fullständig ISO-8601-tidsstämpelblandningstid och tidszonsförskjutning som 2016-08-12T09:46:06.982-05. Läs [den här sidan](../building-journeys/timezone-management.md).
 
-![](../assets/journey57.png)
+![](assets/journey57.png)
 
 <!--## Email send time optimization{#email_send_time_optimization}
 
@@ -77,4 +77,4 @@ This type of wait uses a score calculated in Adobe Experience Platform. The scor
     >
     >Note that the send time score can be unavailable because there is not enough data to perform the calculation. In this case, you will be informed, at publication time, that the default time applies.
 
-![](../assets/journey57bis.png)-->
+![](assets/journey57bis.png)-->

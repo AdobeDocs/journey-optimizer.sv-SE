@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 8bc808da-4796-4767-9433-71f1f2f0a432
-source-git-commit: 2d859a5dab19a419d424acefd17d254473c00818
+source-git-commit: 14ab70aa32f4f7978b8c72b3981d3b55f56fd08b
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 1%
@@ -29,23 +29,23 @@ Så här skapar du en rankningsformel:
 
 1. Öppna **[!UICONTROL Components]** väljer du **[!UICONTROL Rankings]** -fliken. Listan med rangordningar som tidigare skapats visas.
 
-   ![](../../assets/rankings-list.png)
+   ![](../assets/rankings-list.png)
 
 1. Klicka **[!UICONTROL Create ranking]** för att skapa en ny rankningsformel.
 
-   ![](../../assets/ranking-create-formula.png)
+   ![](../assets/ranking-create-formula.png)
 
 1. Ange namn, beskrivning och formel för rankningsformeln.
 
    I det här exemplet vill vi prioritera alla erbjudanden med attributet&quot;hot&quot; om vädret är varmt. För att göra detta **contextData.west=hot** har skickats i beslutsanropet.
 
-   ![](../../assets/ranking-syntax.png)
+   ![](../assets/ranking-syntax.png)
 
 1. Klicka på **[!UICONTROL Save]**. Din rankningsformel skapas. Du kan välja den i listan för att få information och redigera eller ta bort den.
 
    Det är nu klart att användas i ett beslut om att rangordna kvalificerade erbjudanden för en placering (se [Konfigurera urval av erbjudanden i beslut](../offer-activities/configure-offer-selection.md)).
 
-   ![](../../assets/ranking-formula-created.png)
+   ![](../assets/ranking-formula-created.png)
 
 ## Exempel på rankningsformler {#ranking-formula-examples}
 
@@ -155,7 +155,7 @@ if ( offer.characteristics.propensityType = "extraBaggagePropensity" and _salesv
 
 En bättre lösning är att lagra bakgrundsmusiken i en array i profilen. Följande exempel fungerar för en mängd olika benägenhetspoäng med bara en enkel rankningsformel. Förväntningen är att du har ett profilschema med en array med poäng. I det här exemplet är instansen tenant *_salesvelocity* och profilschemat innehåller följande:
 
-![](../../assets/ranking-example-schema.png)
+![](../assets/ranking-example-schema.png)
 
 Med detta i åtanke för en profil som:
 
@@ -179,7 +179,7 @@ Med detta i åtanke för en profil som:
 
 Erbjudandena skulle innehålla ett attribut för *propensityType* som matchar kategorin från poängen:
 
-![](../../assets/ranking-example-propensityType.png)
+![](../assets/ranking-example-propensityType.png)
 
 Din rankningsformel kan sedan ange prioriteten för varje erbjudande som ska vara lika med kunderna *propensityScore* för *propensityType*. Om ingen poäng hittas, använd den statiska prioriteten som angetts i erbjudandet:
 

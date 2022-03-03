@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 1998f6fc-60fd-4038-8669-39cd55bc02d1
-source-git-commit: 4e52be8fb4a6b996d20cc831247b7e4f6d333840
+source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
 workflow-type: tm+mt
 source-wordcount: '1417'
 ht-degree: 1%
@@ -23,7 +23,7 @@ The **palett** finns till vänster på skärmen. Alla tillgängliga aktiviteter 
 
 När du påbörjar en ny resa döljs element som inte kan släppas på arbetsytan som det första steget. Detta gäller alla åtgärder, villkorsaktiviteten, väntetiden och reaktionen.
 
-![](../assets/journey38.png)
+![](assets/journey38.png)
 
 The **[!UICONTROL Filter items]** -ikonen i det övre vänstra hörnet kan du visa följande filter:
 
@@ -35,17 +35,17 @@ Du kan också använda **[!UICONTROL Search]** fält. Endast händelser och åtg
 
 The **arbetsyta** är den centrala zonen i resedesignern. Det är i den här zonen som du kan släppa dina aktiviteter och konfigurera dem. Klicka på en aktivitet på arbetsytan för att konfigurera den. Aktivitetskonfigurationsrutan öppnas till höger.
 
-![](../assets/journey39.png)
+![](assets/journey39.png)
 
 The **aktivitetskonfigurationsruta** visas när du klickar på en aktivitet på paletten. Fyll i de obligatoriska fälten. Klicka på **[!UICONTROL Delete]** -ikonen för att ta bort aktiviteten. Klicka **[!UICONTROL Cancel]** för att avbryta ändringarna eller **[!UICONTROL Ok]** för att bekräfta. Om du vill ta bort aktiviteter kan du även markera en aktivitet (eller flera) och trycka på backstegstangenten. Om du trycker på Esc stängs aktivitetskonfigurationsrutan.
 
 Som standard är skrivskyddade fält dolda. Om du vill visa skrivskyddade fält klickar du på **Visa skrivskyddade fält** ikonen längst upp till vänster i aktivitetskonfigurationsrutan. Denna inställning gäller alla aktiviteter på alla resor.
 
-![](../assets/journey59bis.png)
+![](assets/journey59bis.png)
 
 Beroende på resans status kan du utföra olika åtgärder under resan med hjälp av knapparna i det övre högra hörnet: **[!UICONTROL Publish]**, **[!UICONTROL Duplicate]**, **[!UICONTROL Delete]**, **[!UICONTROL Journey properties]**, **[!UICONTROL Test]**. De här knapparna visas när ingen aktivitet är markerad. Vissa knappar visas i sitt sammanhang. Loggknappen för testläget visas när testläget aktiveras.
 
-![](../assets/journey41.png)
+![](assets/journey41.png)
 
 ## Starta din resa
 
@@ -85,7 +85,7 @@ Du hittar också de anpassade åtgärder som du har konfigurerat för att skicka
 
 Flera verksamheter (**[!UICONTROL Condition]**, **[!UICONTROL Action]** aktiviteter) kan du definiera en reservåtgärd om ett fel eller en timeout inträffar. Markera kryssrutan i aktivitetskonfigurationsrutan: **[!UICONTROL Add an alternative path in case of a timeout or an error]**. En annan sökväg läggs till efter aktiviteten. Tidsgränsen definieras i resans egenskaper (se [den här sidan](../building-journeys/journey-gs.md#change-properties) av en administratörsanvändare. Om det t.ex. tar för lång tid att skicka ett e-postmeddelande eller om det är fel, kan du bestämma dig för att skicka ett SMS.
 
-![](../assets/journey42.png)
+![](assets/journey42.png)
 
 Med olika aktiviteter (händelse, åtgärd, vänta) kan du lägga till flera sökvägar efter dem. Placera markören på aktiviteten och klicka på plustecknet (+). Endast händelse- och vänteaktiviteter kan anges parallellt. Om flera händelser anges parallellt är den valda sökvägen den första händelsen som inträffar.
 
@@ -93,11 +93,11 @@ När du lyssnar på en händelse rekommenderar vi att du inte väntar på hände
 
 Om du vill ta bort banan placerar du markören på den och klickar på **[!UICONTROL Delete path]** ikon.
 
-![](../assets/journey42ter.png)
+![](assets/journey42ter.png)
 
 När två aktiviteter inte är kopplade till arbetsytan visas en varning. Placera markören på varningsikonen för att visa felmeddelandet. Åtgärda problemet genom att flytta den frånkopplade aktiviteten och koppla den till föregående aktivitet.
 
-![](../assets/canvas-disconnected.png)
+![](assets/canvas-disconnected.png)
 
 ## Kopierings- och inklistringsaktiviteter {#copy-paste}
 
@@ -116,9 +116,9 @@ Så här kopierar/klistrar du in aktiviteter:
 
 1. Öppna en resa.
 1. Välj de aktiviteter du vill kopiera genom att flytta musen medan du klickar. Du kan också klicka på varje aktivitet samtidigt som du trycker på **Ctrl/Kommando** nyckel. Använd **Ctrl/Kommando + A** om du vill markera alla aktiviteter.
-   ![](../assets/copy-paste1.png)
+   ![](assets/copy-paste1.png)
 1. Tryck **Ctrl/Kommando + C**.
 Om du bara vill kopiera en aktivitet kan du klicka på den och använda **Kopiera** ikonen i det övre vänstra hörnet i aktivitetskonfigurationsfönstret.
-   ![](../assets/copy-paste2.png)
+   ![](assets/copy-paste2.png)
 1. Under alla resor, tryck **Ctrl/Kommando + V** om du vill klistra in aktiviteterna utan att länka dem till en befintlig nod. Inklistrade aktiviteter placeras i samma ordning. När du har klistrat in aktiviteter förblir de markerade så att du enkelt kan flytta dem. Du kan också placera markören på en tom platshållare och trycka på **Ctrl/Kommando + V**. Inklistrade aktiviteter länkas till noden.
-   ![](../assets/copy-paste3.png)
+   ![](assets/copy-paste3.png)

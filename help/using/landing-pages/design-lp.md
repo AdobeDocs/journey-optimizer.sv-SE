@@ -8,7 +8,7 @@ level: Beginner
 hidefromtoc: true
 hide: true
 exl-id: c61b8d80-17e1-4fdd-a739-efcee032dc23
-source-git-commit: b43e3432ede1d4985e0a6b57b57c5efc3cf60c50
+source-git-commit: c988f0baa8b3c622dfb4f1ff060001a3462ed31e
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Börja skapa innehåll för landningen [primär sida](create-lp.md#configure-primary-page) eller [undersida](create-lp.md#configure-subpages)håller du muspekaren över det primära sidinnehållet och klickar **[!UICONTROL Open Designer]**. Du kan också klicka på motsvarande knapp på den högra paletten.
 
-![](../assets/lp_open-designer.png)
+![](assets/lp_open-designer.png)
 
 Därifrån kan man
 
@@ -39,7 +39,7 @@ Följ stegen nedan för att definiera specifikt innehåll som gör det möjligt 
 
 1. Dra och släpp den specifika landningssidan **[!UICONTROL Form]** från den vänstra paletten till huvudarbetsytan.
 
-   ![](../assets/lp_designer-form-component.png)
+   ![](assets/lp_designer-form-component.png)
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ Följ stegen nedan för att definiera specifikt innehåll som gör det möjligt 
 
 1. Markera den. The **[!UICONTROL Form content]** visas på den högra paletten så att du kan redigera de olika fälten i formuläret.
 
-   ![](../assets/lp_designer-form-content-options.png)
+   ![](assets/lp_designer-form-content-options.png)
 
    >[!NOTE]
    >
@@ -57,15 +57,15 @@ Följ stegen nedan för att definiera specifikt innehåll som gör det möjligt 
 
 1. Ange om den här kryssrutan ska avanmäla användare till eller från: samtycker de till att ta emot meddelanden eller ber de att inte bli kontaktade längre?
 
-   ![](../assets/lp_designer-form-update.png)
+   ![](assets/lp_designer-form-update.png)
 
 1. Välj vad som ska uppdateras mellan följande tre alternativ:
 
-   ![](../assets/lp_designer-form-update-options.png)
+   ![](assets/lp_designer-form-update-options.png)
 
    * **[!UICONTROL Subscription list]**: Du måste välja den prenumerationslista som ska uppdateras om profilen markerar den här kryssrutan. Läs mer på [prenumerationslistor](subscription-list.md).
 
-      ![](../assets/lp_designer-form-subs-list.png)
+      ![](assets/lp_designer-form-subs-list.png)
 
    * **[!UICONTROL Channel (email)]**: Avanmälningen eller avanmälningen gäller hela kanalen. Om en profil som avanmäls till exempel har två e-postadresser, kommer båda adresserna att uteslutas från all kommunikation.
 
@@ -73,11 +73,11 @@ Följ stegen nedan för att definiera specifikt innehåll som gör det möjligt 
 
 1. Klicka **[!UICONTROL Add field]** > **[!UICONTROL Checkbox]** om du vill lägga till ytterligare en kryssruta. Upprepa stegen ovan för att definiera dess egenskaper.
 
-   ![](../assets/lp_designer-form-checkbox-2.png)
+   ![](assets/lp_designer-form-checkbox-2.png)
 
 1. När du har lagt till alla önskade kryssrutor klickar du på **[!UICONTROL Call to action]** för att expandera motsvarande avsnitt. Här kan du definiera hur knappen ska fungera i **[!UICONTROL Form]** -komponenten.
 
-   ![](../assets/lp_designer-form-call-to-action.png)
+   ![](assets/lp_designer-form-call-to-action.png)
 
 1. Definiera vad som ska hända när du klickar på knappen:
 
@@ -85,7 +85,7 @@ Följ stegen nedan för att definiera specifikt innehåll som gör det möjligt 
    * **[!UICONTROL Confirmation text]**: Skriv den bekräftelsetext som ska visas.
    * **[!UICONTROL Link to a subpage]**: Konfigurera en [undersida](create-lp.md#configure-subpages) och välj den i listrutan som visas.
 
-   ![](../assets/lp_designer-form-confirmation-action.png)
+   ![](assets/lp_designer-form-confirmation-action.png)
 
 1. Definiera vad som ska hända när du klickar på knappen om ett fel inträffar:
 
@@ -94,15 +94,15 @@ Följ stegen nedan för att definiera specifikt innehåll som gör det möjligt 
 
    * **[!UICONTROL Link to a subpage]**: Konfigurera en [undersida](create-lp.md#configure-subpages) och välj den i listrutan som visas.
 
-   ![](../assets/lp_designer-form-error.png)
+   ![](assets/lp_designer-form-error.png)
 
 1. Om du vill göra ytterligare uppdateringar när du skickar in formuläret väljer du **[!UICONTROL Opt in]** eller **[!UICONTROL Opt out]** och ange om du vill uppdatera en prenumerationslista, kanalen eller bara den e-postadress som används.
 
-   ![](../assets/lp_designer-form-additionnal-update.png)
+   ![](assets/lp_designer-form-additionnal-update.png)
 
 1. Spara innehållet och klicka på pilen bredvid sidnamnet för att gå tillbaka till [egenskaper för landningssida](create-lp.md#configure-primary-page).
 
-   ![](../assets/lp_designer-form-save.png)
+   ![](assets/lp_designer-form-save.png)
 
 <!--Will the name Email Designer be kept if you can also design LP with the same tool? > To modify in Messages section > content designer or Designer-->
 
@@ -110,25 +110,25 @@ Följ stegen nedan för att definiera specifikt innehåll som gör det möjligt 
 
 1. Om du vill ändra formaten för formulärkomponentens innehåll växlar du när som helst till **[!UICONTROL Form style]** -fliken.
 
-   ![](../assets/lp_designer-form-style.png)
+   ![](assets/lp_designer-form-style.png)
 
 1. Expandera **[!UICONTROL Checkboxes]** för att definiera utseendet på kryssrutorna och motsvarande text. Du kan till exempel justera teckensnittsfamiljen eller storleken och kryssrutans kantlinjefärg.
 
-   ![](../assets/lp_designer-form-style-checkboxes.png)
+   ![](assets/lp_designer-form-style-checkboxes.png)
 
 1. Expandera **[!UICONTROL Buttons]** för att ändra utseendet på knappen i komponentformuläret. Du kan till exempel lägga till en kant, redigera etikettfärgen vid hovring eller justera knappens justering.
 
-   ![](../assets/lp_designer-form-style-buttons.png)
+   ![](assets/lp_designer-form-style-buttons.png)
 
    Du kan förhandsgranska vissa inställningar, t.ex. knappetikettfärg vid hovring med hjälp av **[!UICONTROL Preview]** -knappen. Läs mer om testning av landningssidor [här](create-lp.md#test-landing-page).
 
-   ![](../assets/lp_designer-form-style-buttons-preview.png)
+   ![](assets/lp_designer-form-style-buttons-preview.png)
 
 1. Expandera **[!UICONTROL Form layout]** om du vill redigera layoutinställningar som bakgrundsfärg, utfyllnad eller marginal.
 
-   ![](../assets/lp_designer-form-style-layout.png)
+   ![](assets/lp_designer-form-style-layout.png)
 
 1. Expandera **[!UICONTROL Form error]** för att justera visningen av felmeddelandet som visas om ett problem uppstår. Markera motsvarande alternativ om du vill förhandsgranska feltexten i formuläret.
 
-   ![](../assets/lp_designer-form-error-preview.png)
+   ![](assets/lp_designer-form-error-preview.png)
 

@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: b8e266b1-d8eb-4c77-9341-9761b82609b0
-source-git-commit: 7de0088c07c644c42f5def3657d2629ce5e7754e
+source-git-commit: db6e970230b4d22b50c2035ecf5e7307e66feb2d
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 15%
@@ -27,4 +27,4 @@ Användarhantering i [!DNL Journey Optimizer] bygger på tre koncept:
 
 Varje koncept kan hanteras av **[!UICONTROL Product administrators]** som har tillgång till Admin Console. [Läs mer om Adobe Admin Console](https://helpx.adobe.com/enterprise/managing/user-guide.html).
 
-![](../assets/do-not-localize/permissions_2.png)
+![](assets/do-not-localize/permissions_2.png)

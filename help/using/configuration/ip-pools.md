@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 606334c3-e3e6-41c1-a10e-63508a3ed747
-source-git-commit: 06a7abc2ada930356cbaf45ce01eed5e3156f2e3
+source-git-commit: 7c9f04b8d3faa171444bfa0adc537b5faabde37e
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Så här skapar du en IP-pool:
 
 1. Öppna **[!UICONTROL Channels]** / **[!UICONTROL IP pools]** menyn och klicka sedan på **[!UICONTROL Create IP Pool]**.
 
-   ![](../assets/ip-pool-create.png)
+   ![](assets/ip-pool-create.png)
 
 1. Ange ett namn och en beskrivning (valfritt) för IP-poolen.
 
@@ -39,7 +39,7 @@ Så här skapar du en IP-pool:
 
 1. Välj de IP-adresser som ska ingå i poolen i listrutan och klicka sedan på **[!UICONTROL Submit]**.
 
-   ![](../assets/ip-pool-config.png)
+   ![](assets/ip-pool-config.png)
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ Så här skapar du en IP-pool:
 
 IP-poolen skapas nu och visas i listan. Du kan markera den för att komma åt dess egenskaper och visa den tillhörande meddelandeförinställningen. Mer information om hur du associerar en meddelandeförinställning med en IP-pool finns i [det här avsnittet](message-presets.md)).
 
-![](../assets/ip-pool-created.png)
+![](assets/ip-pool-created.png)
 
 ## Redigera en IP-pool {#edit-ip-pool}
 
@@ -55,11 +55,11 @@ Så här redigerar du en IP-pool:
 
 1. Öppna IP-poolnamnet genom att klicka på det i listan.
 
-   ![](../assets/ip-pool-list.png)
+   ![](assets/ip-pool-list.png)
 
 1. Redigera egenskaperna efter behov. Du kan ändra beskrivningen och lägga till eller ta bort IP-adresser.
 
-   ![](../assets/ip-pool-edit.png)
+   ![](assets/ip-pool-edit.png)
 
    >[!CAUTION]
    >
@@ -78,7 +78,7 @@ Uppdateringen träder i kraft omedelbart eller asynkront, beroende på vilken IP
 
 Om du vill kontrollera IP-poolens uppdateringsstatus klickar du på **[!UICONTROL More actions]** och markera **[!UICONTROL Recent updates]**.
 
-![](../assets/ip-pool-recent-update.png)
+![](assets/ip-pool-recent-update.png)
 
 >[!NOTE]
 >

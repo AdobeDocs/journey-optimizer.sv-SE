@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: da9e898b-8e5d-43da-9226-5c9ccb78e174
-source-git-commit: 60ccb9b918284b3fcb62101bc94bf64d2272e8e2
+source-git-commit: 14ab70aa32f4f7978b8c72b3981d3b55f56fd08b
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
@@ -29,7 +29,7 @@ På så sätt kan ni testa och förfina olika versioner av era erbjudanden utan 
 
 Om du vill komma åt den här funktionen väljer du **[!UICONTROL Simulation]** från **[!UICONTROL Decision management]** > **[!UICONTROL Offers]** -menyn.
 
-![](../../assets/offers_simulation-tab.png)
+![](../assets/offers_simulation-tab.png)
 
 <!--
 ➡️ [Discover this feature in video](#video)
@@ -41,7 +41,7 @@ Först måste du välja de testprofiler som du ska använda för simulering.
 
 1. Klicka på **[!UICONTROL Manage profile]**.
 
-   ![](../../assets/offers_simulation-manage-profile.png)
+   ![](../assets/offers_simulation-manage-profile.png)
 
 1. Markera det identitetsnamnutrymme som du vill använda för att identifiera testprofiler. I det här exemplet använder vi **E-post** namnutrymme.
 
@@ -51,15 +51,15 @@ Först måste du välja de testprofiler som du ska använda för simulering.
 
 1. Ange identitetsvärdet och klicka på **[!UICONTROL View]** för att lista tillgängliga profiler.
 
-   ![](../../assets/offers_simulation-add-profile.png)
+   ![](../assets/offers_simulation-add-profile.png)
 
 1. Lägg till andra profiler om du vill testa olika profildata och spara urvalet.
 
-   ![](../../assets/offers_simulation-save-profiles.png)
+   ![](../assets/offers_simulation-save-profiles.png)
 
 1. När du har lagt till visas alla profiler i listrutan under **[!UICONTROL Test profile]**. Du kan växla mellan de sparade testprofilerna för att visa resultatet för varje vald profil.
 
-   ![](../../assets/offers_simulation-saved-profiles.png)
+   ![](../assets/offers_simulation-saved-profiles.png)
 
    >[!NOTE]
    >
@@ -75,11 +75,11 @@ Välj sedan de erbjudandebeslut som du vill simulera i dina testprofiler.
 
 1. Välj **[!UICONTROL Add decision scope]**.
 
-   ![](../../assets/offers_simulation-add-decision.png)
+   ![](../assets/offers_simulation-add-decision.png)
 
 1. Välj en placering i listan.
 
-   ![](../../assets/offers_simulation-add-decision-scope.png)
+   ![](../assets/offers_simulation-add-decision-scope.png)
 
 1. De tillgängliga besluten visas.
 
@@ -88,13 +88,13 @@ Välj sedan de erbjudandebeslut som du vill simulera i dina testprofiler.
 
    Välj önskat beslut och klicka på **[!UICONTROL Add]**.
 
-   ![](../../assets/offers_simulation-add-decision-scope-add.png)
+   ![](../assets/offers_simulation-add-decision-scope-add.png)
 
 1. Beslutsomfånget du just definierade visas på huvudarbetsytan.
 
    Du kan justera antalet erbjudanden som du vill begära. Om du till exempel väljer 2 visas de två bästa erbjudandena för detta beslutsområde.
 
-   ![](../../assets/offers_simulation-request-offer.png)
+   ![](../assets/offers_simulation-request-offer.png)
 
    >[!NOTE]
    >
@@ -102,7 +102,7 @@ Välj sedan de erbjudandebeslut som du vill simulera i dina testprofiler.
 
 1. Upprepa stegen ovan om du vill lägga till så många beslut du behöver.
 
-   ![](../../assets/offers_simulation-add-more-decisions.png)
+   ![](../assets/offers_simulation-add-more-decisions.png)
 
    >[!NOTE]
    >
@@ -114,11 +114,11 @@ Om du vill redigera standardinställningarna för dina simuleringar följer du s
 
 1. Klicka på **[!UICONTROL Settings]**.
 
-   ![](../../assets/offers_simulation-settings.png)
+   ![](../assets/offers_simulation-settings.png)
 
 1. I **[!UICONTROL Deduplication]** kan du välja att tillåta dubbla erbjudanden mellan beslut och/eller placeringar. Det innebär att flera beslut/ersättningar kan tilldelas samma erbjudande.
 
-   ![](../../assets/offers_simulation-settings-deduplication.png)
+   ![](../assets/offers_simulation-settings-deduplication.png)
 
    >[!NOTE]
    >
@@ -126,7 +126,7 @@ Om du vill redigera standardinställningarna för dina simuleringar följer du s
 
 1. I **[!UICONTROL Response format]** kan du välja att ta med metadata i kodvyn. Markera motsvarande alternativ och välj de metadata du vill använda. De visas i begäran- och svarsnyttolasterna när du väljer **[!UICONTROL View code]**. Läs mer i [Visa simuleringsresultat](#simulation-results) -avsnitt.
 
-   ![](../../assets/offers_simulation-settings-response-format.png)
+   ![](../assets/offers_simulation-settings-response-format.png)
 
    >[!NOTE]
    >
@@ -158,13 +158,13 @@ När du har lagt till ett beslutsområde och valt en testprofil kan du visa resu
 
 1. Klicka på **[!UICONTROL View results]**.
 
-   ![](../../assets/offers_simulation-view-results.png)
+   ![](../assets/offers_simulation-view-results.png)
 
 1. De bästa erbjudandena visas enligt den valda profilen för varje beslut.
 
    Välj ett erbjudande om du vill visa information om det.
 
-   ![](../../assets/offers_simulation-offer-details.png)
+   ![](../assets/offers_simulation-offer-details.png)
 
 1. Klicka **[!UICONTROL View code]** för att visa nyttolasterna för begäran och svar. [Läs mer](#view-code)
 
@@ -180,19 +180,19 @@ När du har lagt till ett beslutsområde och valt en testprofil kan du visa resu
 
 1. Använd **[!UICONTROL View code]** för att visa begäran- och svarsnyttolaster.
 
-   ![](../../assets/offers_simulation-view-code.png)
+   ![](../assets/offers_simulation-view-code.png)
 
    I kodvyn visas utvecklarinformationen för den aktuella användaren. Som standard är **[!UICONTROL Response payload]** visas.
 
-   ![](../../assets/offers_simulation-request-payload.png)
+   ![](../assets/offers_simulation-request-payload.png)
 
 1. Klicka **[!UICONTROL Response payload]** eller **[!UICONTROL Request payload]** för att navigera mellan de två flikarna.
 
-   ![](../../assets/offers_simulation-response-payload.png)
+   ![](../assets/offers_simulation-response-payload.png)
 
 1. Använda nyttolasten utanför [!DNL Journey Optimizer] - t.ex. för felsökningssyfte kopiera den med **[!UICONTROL Copy to clipboard]** överst i kodvyn.
 
-   ![](../../assets/offers_simulation-copy-payload.png)
+   ![](../assets/offers_simulation-copy-payload.png)
 
    <!--You cannot copy the response payload. ACTUALLY YES YOU CAN > to confirm with PM/dev? -->
 

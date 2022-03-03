@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
-source-git-commit: cae74818e60abc97cd8eb5ccd3f4337af591f488
+source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1625'
+ht-degree: 2%
 
 ---
 
@@ -27,11 +27,11 @@ Så här använder du testläget:
 
 1. Aktivera testläget genom att klicka på **[!UICONTROL Test]** i det övre högra hörnet.
 
-   ![](../assets/journeytest1.png)
+   ![](assets/journeytest1.png)
 
 1. Använd **[!UICONTROL Wait time]** i det nedre vänstra hörnet för att definiera den tid som varje vänteaktivitet och händelsetimeout ska vara i testläge. Standardtiden är 10 sekunder för timeout för väntetider och händelser. Detta säkerställer att du får testresultaten snabbt. Den här parametern visas bara om du har släppt en eller flera vänteaktiviteter under din resa.
 
-   ![](../assets/journeytest_wait.png)
+   ![](assets/journeytest_wait.png)
 
    >[!NOTE]
    >
@@ -39,15 +39,15 @@ Så här använder du testläget:
 
 1. Klicka **[!UICONTROL Trigger an event]** för att konfigurera och skicka händelser till resan.
 
-   ![](../assets/journeyuctest1.png)
+   ![](assets/journeyuctest1.png)
 
 1. Konfigurera de olika fälten. I **Profilidentifierare** anger du värdet för fältet som används för att identifiera testprofilen. Det kan till exempel vara e-postadressen. Se till att skicka händelser som rör testprofiler. Se [Aktivera händelser](#firing_events).
 
-   ![](../assets/journeyuctest1-bis.png)
+   ![](assets/journeyuctest1-bis.png)
 
 1. När du har tagit emot händelserna klickar du på **[!UICONTROL Show log]** för att visa testresultatet och verifiera dem. Se [Visa loggarna](#viewing_logs).
 
-   ![](../assets/journeyuctest2.png)
+   ![](assets/journeyuctest2.png)
 
 1. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa den igen. När testet är klart kan du publicera din resa. Läs [den här sidan](../building-journeys/publishing-the-journey.md).
 
@@ -75,17 +75,17 @@ Du måste känna till vilka profiler som är flaggade som testprofiler i Adobe E
 
 Om resan innehåller flera händelser använder du listrutan för att välja en händelse. Konfigurera sedan de fält som skickats och körningen av den händelse som skickats för varje händelse. Med gränssnittet kan du skicka rätt information i händelsens nyttolast och kontrollera att informationstypen är korrekt. Testläget sparar de senaste parametrarna som användes i en testsession för senare bruk.
 
-![](../assets/journeytest4.png)
+![](assets/journeytest4.png)
 
 Med gränssnittet kan du skicka enkla händelseparametrar. Om du vill skicka samlingar eller andra avancerade objekt i händelsen kan du klicka på **[!UICONTROL Code View]** för att se hela koden för nyttolasten och ändra den. Du kan till exempel kopiera och klistra in händelseinformation som har förberetts av en teknisk användare.
 
-![](../assets/journeytest5.png)
+![](assets/journeytest5.png)
 
 En teknisk användare kan också använda det här gränssnittet för att komponera händelsenyttolaster och utlösa händelser utan att behöva använda något tredjepartsverktyg.
 
 När du klickar på **[!UICONTROL Send]** testas. Personens förlopp under resan representeras av ett visuellt flöde. Vägen blir progressivt grön allt eftersom personen rör sig över resan. Om ett fel inträffar visas en varningssymbol i motsvarande steg. Du kan placera markören på den för att visa mer information om felet och få tillgång till fullständig information (när den är tillgänglig).
 
-![](../assets/journeytest6.png)
+![](assets/journeytest6.png)
 
 När du väljer en annan testprofil på händelsekonfigurationsskärmen och kör testet igen rensas det visuella flödet och den nya personens sökväg visas.
 
@@ -99,7 +99,7 @@ Testläget är även tillgängligt för resor som använder en regelbaserad hän
 
 När en händelse utlöses **Händelsekonfiguration** kan du definiera de händelseparametrar som ska godkännas i testet. Du kan visa händelse-ID-villkoret genom att klicka på verktygstipsikonen i det övre högra hörnet. Det finns också ett verktygstips bredvid varje fält som ingår i regelutvärderingen.
 
-![](../assets/jo-event8.png)
+![](assets/jo-event8.png)
 
 Mer information om hur du använder testläget finns i [den här sidan](../building-journeys/testing-the-journey.md).
 
@@ -113,7 +113,7 @@ Observera att du inte kan ändra definitionen för affärshändelser i samma tes
 
 The **[!UICONTROL Show log]** kan du visa testresultaten. På den här sidan visas resans aktuella information i JSON-format. Med en knapp kan du kopiera hela noder. Du måste uppdatera sidan manuellt för att kunna uppdatera resans testresultat.
 
-![](../assets/journeytest3.png)
+![](assets/journeytest3.png)
 
 >[!NOTE]
 >

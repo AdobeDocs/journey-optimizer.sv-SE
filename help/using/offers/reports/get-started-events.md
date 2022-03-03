@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Beginner
 exl-id: 51830c63-fa88-47e7-8605-192297fcf6b8
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: 14ab70aa32f4f7978b8c72b3981d3b55f56fd08b
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 47%
@@ -21,7 +21,7 @@ På så sätt kan du exportera dessa data för att analysera dem i ditt eget rap
 
 Datauppsättningar som innehåller beslutshanteringshändelser är tillgängliga från Adobe Experience Platform **[!UICONTROL Datasets]** -menyn. En datauppsättning skapas automatiskt vid etablering för var och en av dina instanser.
 
-![](../../assets/events-datasets-list.png)
+![](../assets/events-datasets-list.png)
 
 Dessa datauppsättningar är baserade på **[!UICONTROL ODE DecisionEvents]** schema, som innehåller alla XDM-fält som krävs för att skicka information från Beslutshantering till Adobe Experience Platform.
 

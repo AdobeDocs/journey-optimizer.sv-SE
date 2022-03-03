@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 8c7135d7-bf5a-4671-afdf-afec60907a56
-source-git-commit: 77d7694524eaca447f0cf4e19881f1688fc4e789
+source-git-commit: 14ab70aa32f4f7978b8c72b3981d3b55f56fd08b
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 4%
@@ -20,13 +20,13 @@ Om flera erbjudanden är berättigade till en viss placering kan du välja den m
 * Rankningsformel
 * [AI-rankning](#use-ranking-strategy) (för tidig åtkomst endast för utvalda användare)
 
-![](../../assets/offer-rank-by.png)
+![](../assets/offer-rank-by.png)
 
 ## Prioritet {#offer-priority}
 
 När flera erbjudanden kan komma i fråga för en viss placering i ett beslut är de som har högst **prioritet** kommer att levereras till kunderna först.
 
-![](../../assets/offer-priority.png)
+![](../assets/offer-priority.png)
 
 Prioritetspoäng tilldelas när ett erbjudande skapas. Lär dig hur du skapar ett personaliserat erbjudande i [det här avsnittet](../offer-library/creating-personalized-offers.md).
 
@@ -48,11 +48,11 @@ När en rankningsformel har skapats kan du tilldela den till en placering i ett 
 
 1. Välj **[!UICONTROL Ranking formula]** som rangordningsmetod och klicka sedan på **[!UICONTROL Add ranking]**.
 
-   ![](../../assets/offer-activity-ranking.png)
+   ![](../assets/offer-activity-ranking.png)
 
 1. Välj önskad rankningsformel och klicka sedan på **[!UICONTROL Select]**.
 
-   ![](../../assets/ranking-selection.png)
+   ![](../assets/ranking-selection.png)
 
 Rankningsformeln är nu kopplad till placeringen.
 
@@ -78,11 +78,11 @@ När en rankningsstrategi har skapats kan du tilldela den till en placering i et
 
 1. Välj om du vill rangordna erbjudanden efter **[!UICONTROL AI ranking]** i listrutan och klicka på **[!UICONTROL Add ranking]**.
 
-   ![](../../assets/ranking-selection-ai-ranking.png)
+   ![](../assets/ranking-selection-ai-ranking.png)
 
 1. Välj den rankningsstrategi som du skapade. Alla detaljer om rankningsstrategin visas.
 
-   ![](../../assets/ranking-selection-ai-ranking-selected.png)
+   ![](../assets/ranking-selection-ai-ranking-selected.png)
 
 1. Klicka på **[!UICONTROL Select]**. Rankningsstrategin är nu kopplad till placeringen.
 

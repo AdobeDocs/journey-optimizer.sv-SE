@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 401ce05b-412b-4fa0-a516-bf75727f6387
-source-git-commit: 0545cda9f91ff18791310a4ee2463b2287ac7557
+source-git-commit: 14ab70aa32f4f7978b8c72b3981d3b55f56fd08b
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 4%
@@ -23,13 +23,13 @@ Du kan till exempel ange att du bara vill att ett &quot;Kloderbjudande för kvin
 
 Listan med skapade beslutsregler finns i **[!UICONTROL Components]** -menyn.
 
-![](../../assets/decision_rules_list.png)
+![](../assets/decision_rules_list.png)
 
 Så här skapar du en beslutsregel:
 
 1. Gå till **[!UICONTROL Rules]** tabbtangenten och sedan klicka **[!UICONTROL Create rule]**.
 
-   ![](../../assets/offers_decision_rule_creation.png)
+   ![](../assets/offers_decision_rule_creation.png)
 
 1. Ge regeln ett namn och ange en beskrivning och konfigurera sedan regeln efter behov.
 
@@ -37,7 +37,7 @@ Så här skapar du en beslutsregel:
 
    I det här exemplet är regeln riktad till kunder som har lojalitetsnivån&quot;Gold&quot;.
 
-   ![](../../assets/offers_decision_rule_creation_segment.png)
+   ![](../assets/offers_decision_rule_creation_segment.png)
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ Så här skapar du en beslutsregel:
 
 1. När regeln har skapats visas den i regellistan. Du kan markera den för att visa dess egenskaper och redigera eller ta bort den.
 
-   ![](../../assets/rule_created.png)
+   ![](../assets/rule_created.png)
 
 >[!CAUTION]
 >

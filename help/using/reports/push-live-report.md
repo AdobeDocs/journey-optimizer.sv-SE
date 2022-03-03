@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: cab7c6da-aba7-439d-a638-79eb0c949837
-source-git-commit: d814fa98a08d91f1c0744f106c53dd991d544dc2
+source-git-commit: fad7eb9feea0d8c21494b4a7c1608369e725023e
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 0%
@@ -19,11 +19,11 @@ The push **[!UICONTROL Live report]** endast för en viss push-leverans.
 
 Från **[!UICONTROL Executions]** -fliken i **[!UICONTROL Messages]** meny, välja **[!UICONTROL Live view]** väljer du på den avancerade menyn för den valda leveransen **[!UICONTROL Live report]**.
 
-![](../assets/live_report_2.png)
+![](assets/live_report_2.png)
 
 The push **[!UICONTROL Live report]** är uppdelat i olika widgetar som detaljerat beskriver leveransens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](live-report.md#modify-dashboard).
 
-![](../assets/live_report_3.png)
+![](assets/live_report_3.png)
 
 **[!UICONTROL Push notification performance]** och **[!UICONTROL Push notification summary]** widgetar detaljerar huvudinformationen i förhållande till meddelandet med diagram och KPI:er:
 
@@ -57,7 +57,7 @@ The **[!UICONTROL Sending metrics - by push]** tabellen visar hur framgångsrik 
 
 * **[!UICONTROL Opens]**: Antal gånger ett meddelande öppnades i en leverans.
 
-![](../assets/live_report_4.png)
+![](assets/live_report_4.png)
 
 The **[!UICONTROL Tracking by platform]**, **[!UICONTROL Sending by platform]** och **[!UICONTROL Breakdown by platform]** diagram och tabeller visar hur bra push-meddelandena är beroende på vilket operativsystem som används.
 

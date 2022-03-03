@@ -5,7 +5,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
-source-git-commit: b1c4fb836d34cc6263f804c7a0f700571281b31a
+source-git-commit: db6e970230b4d22b50c2035ecf5e7307e66feb2d
 workflow-type: tm+mt
 source-wordcount: '1080'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Behörighetsnivåer {#high-low-permissions}
 
-![](../assets/do-not-localize/permissions.png)
+![](assets/do-not-localize/permissions.png)
 
 Varje produktprofil består av behörigheter som ger användarna tillgång till de olika funktionerna.
 De kan delas in i två typer:

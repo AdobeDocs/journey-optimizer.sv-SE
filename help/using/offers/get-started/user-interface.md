@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 722f9c3b-b505-48c0-b126-31a7a841c245
-source-git-commit: 0545cda9f91ff18791310a4ee2463b2287ac7557
+source-git-commit: 14ab70aa32f4f7978b8c72b3981d3b55f56fd08b
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Använd  **[!UICONTROL Offers]** meny för att hantera personaliserade erbjudand
 
 * **[!UICONTROL Decisions]**: Skapa och hantera beslut för att leverera era erbjudanden. Se [Skapa beslut](../offer-activities/create-offer-activities.md).
 
-![](../../assets/offers_menu.png)
+![](../assets/offers_menu.png)
 
 Använd  **[!UICONTROL Components]** meny för att hantera de komponenter som krävs för att skapa erbjudanden:
 
@@ -43,19 +43,19 @@ Använd  **[!UICONTROL Components]** meny för att hantera de komponenter som kr
 
 * **[!UICONTROL Rankings]**: Skapa och hantera rankningsformler för att avgöra vilket erbjudande som ska presenteras först för en viss placering. Se [Skapa rankningsformler](../offer-library/create-ranking-formulas.md).
 
-![](../../assets/offer_activities.png)
+![](../assets/offer_activities.png)
 
 ## Översikt {#overview}
 
 När du är nybörjare på [!DNL Offer Decisioning], **[!UICONTROL Overview]** hjälper dig steg för steg att börja bygga ditt första offertbeslut.
 
-![](../../assets/overview_onboarding.png)
+![](../assets/overview_onboarding.png)
 
 Följ stegen på skärmen för att börja skapa praktik, erbjudanden och samlingar.
 
 När du är klar med dessa första steg uppmanas du att skapa erbjudandebeslut (som tidigare kallades erbjudandeaktiviteter).
 
-![](../../assets/overview_collection-created.png)
+![](../assets/overview_collection-created.png)
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ Klicka på ett erbjudande eller på ett beslut om du vill få direkt tillgång t
 
 Klicka på **[!UICONTROL View all]** för att komma åt erbjudandet, samlingen eller beslutslistorna.
 
-![](../../assets/overview_view-all.png)
+![](../assets/overview_view-all.png)
 
 ## Söka efter och filtrera information {#search-and-filter-information}
 
@@ -75,7 +75,7 @@ Använd **sökfält** för att hitta ett specifikt objekt.
 
 **Filter** Du kan också komma åt filen genom att klicka på filterikonen längst upp till vänster i listan. De gör att du kan filtrera de visade elementen enligt olika villkor. Du kan till exempel filtrera de placeringar som har skapats för e-postkommunikationskanalen och bildtypsinnehållet.
 
-![](../../assets/filters.png)
+![](../assets/filters.png)
 
 ## Anpassa visad information {#customize-displayed-information}
 
@@ -85,21 +85,21 @@ På så sätt kan du välja vilken information som ska visas efter dina behov.
 
 Observera att kolumnanpassning sparas för varje användare.
 
-![](../../assets/columns.png)
+![](../assets/columns.png)
 
 ## Informationsrutan {#information-pane}
 
 I de olika listorna väljer du ett element för att visa en informationsruta där du kan hämta information och utföra grundläggande åtgärder för elementet.
 
-![](../../assets/information-pane.png)
+![](../assets/information-pane.png)
 
 I erbjudandelistorna och beslutslistorna kan du även utföra massåtgärder för flera element. Välj önskade erbjudanden eller beslut och välj sedan den åtgärd som du vill utföra i informationsrutan.
 
-![](../../assets/bulk-actions.png)
+![](../assets/bulk-actions.png)
 
 Observera att du även kan duplicera ett befintligt erbjudande eller beslut för att skapa en kopia med **[!UICONTROL Draft]** status. Detta kan utföras antingen från informationsrutan eller från ett erbjudande eller ett besluts detaljerade vy.
 
-![](../../assets/duplicate-offer.png)
+![](../assets/duplicate-offer.png)
 
 ## Ändringsloggar för erbjudanden och beslut {#changes-logs}
 
@@ -107,4 +107,4 @@ Med Erbjudandebiblioteket kan du visualisera alla ändringar som har gjorts i et
 
 Alla ändringar som har gjorts visas på den här skärmen, liksom namnet på användaren som utförde ändringarna.
 
-![](../../assets/change-logs.png)
+![](../assets/change-logs.png)

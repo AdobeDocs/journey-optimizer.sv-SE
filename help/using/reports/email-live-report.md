@@ -1,29 +1,29 @@
 ---
-title: Email live report
+title: E-postlive-rapport
 description: Lär dig hur du använder data från e-postrapporten
 feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
 exl-id: 1ddfbf1a-3cd5-446a-b0fb-76b81b88c1b4
-source-git-commit: 7a07f2348f08b4582a1310fb65d431c55451d9b6
+source-git-commit: fad7eb9feea0d8c21494b4a7c1608369e725023e
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
 
 ---
 
-# Email live report {#email-live-report}
+# E-postlive-rapport {#email-live-report}
 
 E-postmeddelandet **[!UICONTROL Live report]** avser endast en viss e-postleverans.
 
 Från **[!UICONTROL Executions]** -fliken i **[!UICONTROL Messages]** meny, välja **[!UICONTROL Live view]** väljer du på den avancerade menyn för den valda leveransen **[!UICONTROL Live report]**.
 
-![](../assets/live_report.png)
+![](assets/live_report.png)
 
-The email **[!UICONTROL Live report]** is divided into different widgets detailing your delivery&#39;s success and errors. Each widget can be resized and deleted if needed. Mer information finns i [section](live-report.md#modify-dashboard).
+E-postmeddelandet **[!UICONTROL Live report]** är uppdelat i olika widgetar som detaljerat beskriver leveransens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](live-report.md#modify-dashboard).
 
-![](../assets/live_report_5.png)
+![](assets/live_report_5.png)
 
 **[!UICONTROL Email performance]** och **[!UICONTROL Email summary]** widgetar detaljerar huvudinformationen i förhållande till meddelandet med ett diagram och KPI:er:
 
@@ -37,15 +37,15 @@ The email **[!UICONTROL Live report]** is divided into different widgets detaili
 
 * **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades i en leverans.
 
-* **[!UICONTROL Bounces]**: Total of errors cumulated during delivery and automatic return processing in relation to the total number of sent messages.
+* **[!UICONTROL Bounces]**: Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
 
 * **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
 
-* **[!UICONTROL Spam complaints]**: Number of messages classified as spam.
+* **[!UICONTROL Spam complaints]**: Antal meddelanden som klassificerats som skräppost.
 
-* **[!UICONTROL Unsubscriptions]**: Number of clicks on the unsubscription link.
+* **[!UICONTROL Unsubscriptions]**: Antal klick på länken för att avbryta prenumerationen.
 
-* **[!UICONTROL Excluded]**: Number of user profiles, excluded from the targeted profiles, who did not receive the message.
+* **[!UICONTROL Excluded]**: Antal användarprofiler, exkluderade från målprofilerna, som inte fick meddelandet.
 
 The **[!UICONTROL Sending Statistics]** widgeten visar hur framgångsrik leveransen är:
 
@@ -55,7 +55,7 @@ The **[!UICONTROL Sending Statistics]** widgeten visar hur framgångsrik leveran
 
 * **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
 
-![](../assets/live_report_6.png)
+![](assets/live_report_6.png)
 
 The **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilket fel som inträffade under leveransen.
 
@@ -68,7 +68,7 @@ The **[!UICONTROL Bounce Reasons]** och **[!UICONTROL Bounce categories]** widge
 * **[!UICONTROL Ignored]**: Det totala antalet tillfälliga, t.ex. frånvaro, eller ett tekniskt fel, t.ex. om avsändartypen är postmaster.
 
 <!--
-![](../assets/live_report_8.png)
+![](assets/live_report_8.png)
 
 >[!NOTE]
 >
@@ -84,6 +84,6 @@ The **[!UICONTROL Offers statistic]** and **[!UICONTROL Offers statistics]** ove
 -->
 >[!NOTE]
 >
->The profiles with **[!UICONTROL Suppressed]** or **[!UICONTROL Not allowed]** status are excluded during the message sending process. Därför är **Reserapporter** visar att dessa profiler har flyttats genom resan ([Läs segment](../building-journeys/read-segment.md) och [Meddelande](../building-journeys/journeys-message.md) verksamhet), **E-postrapporter** kommer inte att inkludera dem i **[!UICONTROL Sent]** mätvärden när de filtreras ut innan e-postmeddelanden skickas.
+>Profilerna med **[!UICONTROL Suppressed]** eller **[!UICONTROL Not allowed]** status utelämnas under meddelandesändningsprocessen. Därför är **Reserapporter** visar att dessa profiler har flyttats genom resan ([Läs segment](../building-journeys/read-segment.md) och [Meddelande](../building-journeys/journeys-message.md) verksamhet), **E-postrapporter** kommer inte att inkludera dem i **[!UICONTROL Sent]** mätvärden när de filtreras ut innan e-postmeddelanden skickas.
 >
 >Läs mer på [Undertryckningslista](../messages/suppression-list.md) och [Tillåtelselista](../messages/allow-list.md). Om du vill ta reda på orsaken till alla undantagsfall kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target=&quot;_blank&quot;}.

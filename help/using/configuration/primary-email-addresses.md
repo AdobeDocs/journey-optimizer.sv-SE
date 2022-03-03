@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: fe2f6516-7790-4501-a3a1-3d7cb94d7874
-source-git-commit: 4e52be8fb4a6b996d20cc831247b7e4f6d333840
+source-git-commit: 7c9f04b8d3faa171444bfa0adc537b5faabde37e
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 4%
@@ -22,14 +22,14 @@ Med Journey Optimizer kan du avgöra vilken e-postadress som ska användas från
 1. Öppna  **[!UICONTROL Channels]** `>` **[!UICONTROL General]** -menyn.
 1. Det fält som för närvarande används som standard för att bestämma profilens e-postadresser visas på den här skärmen. Klicka **[!UICONTROL Edit]** för att ändra det.
 
-   ![](../assets/primary-address.png)
+   ![](assets/primary-address.png)
 
 1. Klicka på knappen Ändra för att välja det nya fältet som ska användas som primär e-postadress.
 
-   ![](../assets/primary-address-edit.png)
+   ![](assets/primary-address-edit.png)
 
 1. Listan med tillgängliga XDM-fält av e-posttyp visas. Markera fältet som ska användas och klicka sedan på **[!UICONTROL Save]**.
 
-   ![](../assets/primary-address-field.png)
+   ![](assets/primary-address-field.png)
 
 <!--1. You can also select an additional field to use as secondary email address. This allows you to determine which field to use if the primary field is empty for a profile. >> will be done later on-->

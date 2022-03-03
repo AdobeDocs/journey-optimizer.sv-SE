@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: f19749c4-d683-4db6-bede-9360b9610eef
-source-git-commit: dcdbf4a0cd6a93e56cbe97535515c1a6143db81b
+source-git-commit: 587ac4a17db71790ed4d9ee07214293a2882180c
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 0%
@@ -23,33 +23,33 @@ Därför är en viktig förutsättning för att skapa händelser för [!DNL Jour
 
 Det första steget i att konfigurera en händelse för [!DNL Journey Optimizer] är att se till att du har ett definierat XDM-schema för att representera händelsen och en datauppsättning som skapas för att registrera instanser av händelsen på Adobe Experience Platform. Det är inte helt nödvändigt att ha en datauppsättning för dina händelser, men om du skickar händelserna till en viss datauppsättning kan du behålla användarens händelsehistorik för framtida referens och analyser, så det är alltid en bra idé. Om du inte redan har ett lämpligt schema och datamängd för händelsen kan båda dessa åtgärder utföras i Adobe Experience Platform webbgränssnitt.
 
-![](../assets/schema1.png)
+![](assets/schema1.png)
 
 Alla XDM-scheman som ska användas för [!DNL Journey Optimizer] ska uppfylla följande krav:
 
 * Schemat måste vara av klassen XDM ExperienceEvent.
 
-   ![](../assets/schema2.png)
+   ![](assets/schema2.png)
 
 * För systemgenererade händelser måste schemat innehålla fältgruppen Orchestration-händelseID. [!DNL Journey Optimizer] använder det här fältet för att identifiera händelser som används under resor.
 
-   ![](../assets/schema3.png)
+   ![](assets/schema3.png)
 
 * Deklarera ett identitetsfält för att identifiera föremålet för händelsen. Om ingen identitet anges kan en identitetskarta användas. Detta rekommenderas inte.
 
-   ![](../assets/schema4.png)
+   ![](assets/schema4.png)
 
 * Om du vill att dessa data ska vara tillgängliga för sökning senare i en resa markerar du schemat och datauppsättningen för profil.
 
-   ![](../assets/schema5.png)
+   ![](assets/schema5.png)
 
-   ![](../assets/schema6.png)
+   ![](assets/schema6.png)
 
 * Du kan inkludera datafält för att samla in andra kontextdata som du vill inkludera med händelsen, till exempel information om användaren, enheten som händelsen genererades från, plats eller andra meningsfulla omständigheter som rör händelsen.
 
-   ![](../assets/schema7.png)
+   ![](assets/schema7.png)
 
-   ![](../assets/schema8.png)
+   ![](assets/schema8.png)
 
 ## Utnyttja schemarelationer{#leverage_schema_relationships}
 
@@ -61,11 +61,11 @@ Om du vill definiera en relation måste du ha ett dedikerat fält i källschemat
 
 Här är produktkatalogschemat aktiverat för profilen med produkt-ID definierat som primär identitet.
 
-![](../assets/schema9.png)
+![](assets/schema9.png)
 
 Här är inköpsschemat med relationen definierad i produkt-ID-fältet.
 
-![](../assets/schema10.png)
+![](assets/schema10.png)
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ De länkade schemafälten är tillgängliga i enhets- och affärshändelsekonfig
 * när du bläddrar genom händelseschemafälten på händelsens konfigurationsskärm.
 * när du definierar ett villkor för systemgenererade händelser.
 
-![](../assets/schema11.png)
+![](assets/schema11.png)
 
 De länkade fälten är inte tillgängliga:
 
@@ -100,7 +100,7 @@ Du kan använda data från en uppslagstabell som är länkad till en händelse s
 
 Lägg till ett villkor i en resa, redigera uttrycket och visa händelsnoden i uttrycksredigeraren.
 
-![](../assets/schema12.png)
+![](assets/schema12.png)
 
 Mer information om hur du definierar resevillkor finns i detta [page](../building-journeys/condition-activity.md).
 
@@ -108,7 +108,7 @@ Mer information om hur du definierar resevillkor finns i detta [page](../buildin
 
 De länkade fälten är tillgängliga när du anpassar ett meddelande. De relaterade fälten visas i det sammanhang som skickas från resan till meddelandet.
 
-![](../assets/schema14.png)
+![](assets/schema14.png)
 
 Om du vill lära dig hur du anpassar ett meddelande med sammanhangsbaserad reseinformation kan du läsa detta [page](../personalization/personalization-use-case.md).
 
@@ -116,6 +116,6 @@ Om du vill lära dig hur du anpassar ett meddelande med sammanhangsbaserad resei
 
 De länkade fälten är tillgängliga när åtgärdsparametrarna för en anpassad åtgärdsaktivitet för resan konfigureras.
 
-![](../assets/schema13.png)
+![](assets/schema13.png)
 
 Mer information om hur du använder anpassade åtgärder finns i [page](../building-journeys/using-custom-actions.md).

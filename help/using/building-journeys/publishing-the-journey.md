@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e0ca8aef-4f1d-4631-8c34-1692d96e8b51
-source-git-commit: 3c8c059e5e3953807b9fc2d8d0eded0d00e49003
+source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 5%
@@ -24,6 +24,6 @@ Om du avbryter en resa stoppas den permanent. Alla personer som flyter på resan
 1. Innan du publicerar din resa kontrollerar du att den är giltig och att det inte finns något fel. Du kan inte publicera en resa med fel. Se [det här avsnittet](../building-journeys/troubleshooting.md#checking-for-errors-before-testing). Vi rekommenderar även att du testar din resa innan du publicerar den. Läs [den här sidan](../building-journeys/testing-the-journey.md).
 1. Klicka på **[!UICONTROL Publish]** i den övre högra menyn.
 
-   ![](../assets/journeyuc1_18.png)
+   ![](assets/journeyuc1_18.png)
 
 När resan publiceras är den i skrivskyddat läge.

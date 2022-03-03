@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 73bfdc24-28cf-4cfd-bac9-a4ff1ea543e3
-source-git-commit: 0545cda9f91ff18791310a4ee2463b2287ac7557
+source-git-commit: 14ab70aa32f4f7978b8c72b3981d3b55f56fd08b
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Varje gång ett erbjudande ändras uppdateras den autogenererade datauppsättningen för reserverbjudanden.
 
-![](../../assets/dataset-fallback.png)
+![](../assets/dataset-fallback.png)
 
 Den senaste lyckade batchen i datauppsättningen visas till höger. Den hierarkiska vyn av schemat för datauppsättningen visas i den vänstra rutan.
 

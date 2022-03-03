@@ -6,7 +6,7 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 9c9598c0-6fb1-4e2f-b610-ccd1a80e516e
-source-git-commit: fab36ea43e92babfacdbaeeaecf6c551c00b3c5b
+source-git-commit: 7c9f04b8d3faa171444bfa0adc537b5faabde37e
 workflow-type: tm+mt
 source-wordcount: '1025'
 ht-degree: 2%
@@ -42,20 +42,20 @@ Följ de här stegen:
 ## Steg 1: Skapa e-postmeddelandet{#configure-email}
 
 1. Skapa eller ändra ett e-postmeddelande och klicka sedan på **[!UICONTROL Email Designer]**.
-   ![](../assets/personalization-uc-helpers-1.png)
+   ![](assets/personalization-uc-helpers-1.png)
 
 1. Dra och släpp tre strukturkomponenter från den vänstra paletten på e-postdesignerns hemsida till meddelandets brödtext.
 
 1. Dra och släpp en HTML-innehållskomponent på varje ny strukturkomponent.
 
-   ![](../assets/personalization-uc-helpers-2.png)
+   ![](assets/personalization-uc-helpers-2.png)
 
 ## Steg 2: Infoga kundens förnamn med versaler {#uppercase-function}
 
 1. På startsidan för e-postdesignern klickar du på komponenten HTML där du vill lägga till kundens förnamn.
 1. I det sammanhangsberoende verktygsfältet klickar du på **[!UICONTROL Show the source code]**.
 
-   ![](../assets/personalization-uc-helpers-3.png)
+   ![](assets/personalization-uc-helpers-3.png)
 
 1. I **[!UICONTROL Edit HTML]** fönster, lägga till `upperCase` strängfunktion:
    1. Välj **[!UICONTROL Helper functions]**.
@@ -68,7 +68,7 @@ Följ de här stegen:
       {%= upperCase(string) %}
       ```
 
-      ![](../assets/personalization-uc-helpers-4.png)
+      ![](assets/personalization-uc-helpers-4.png)
 
 1. Ta bort strängplatshållaren från uttrycket.
 1. Lägg till token för förnamn:
@@ -82,13 +82,13 @@ Följ de här stegen:
       {%= upperCase(profile.person.name.firstName) %}
       ```
 
-      ![](../assets/personalization-uc-helpers-5.png)
+      ![](assets/personalization-uc-helpers-5.png)
 
       Läs mer om personnamnets datatyp i [Dokumentation för Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/person-name.html){target=&quot;_blank&quot;}.
 
 1. Klicka **[!UICONTROL Validate]** och sedan klicka **[!UICONTROL Save]**.
 
-   ![](../assets/personalization-uc-helpers-6.png)
+   ![](assets/personalization-uc-helpers-6.png)
 1. Spara meddelandet.
 
 ## Steg 3: Skapa den första händelsen och den relaterade resan {#create-context}
@@ -106,24 +106,24 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 
    Eftersom du ännu inte har publicerat meddelandet kan du varken testa eller publicera resan.
 
-   ![](../assets/personalization-uc-helpers-7.png)
+   ![](assets/personalization-uc-helpers-7.png)
 
 1. Klicka på **[!UICONTROL OK]**.
 
    Ett meddelande informerar dig om att resekontexten har skickats till meddelandet.
 
-   ![](../assets/personalization-uc-helpers-8.png)
+   ![](assets/personalization-uc-helpers-8.png)
 
 ## Steg 4: Infoga listan med artiklar från vagnen {#each-helper}
 
 1. Öppna meddelandet igen.
 
-   ![](../assets/personalization-uc-helpers-18.png)
+   ![](assets/personalization-uc-helpers-18.png)
 
 1. På startsidan för e-postdesignern klickar du på komponenten HTML där du vill visa kundvagnens innehåll.
 1. I det sammanhangsberoende verktygsfältet klickar du på **[!UICONTROL Show the source code]**.
 
-   ![](../assets/personalization-uc-helpers-3.png)
+   ![](assets/personalization-uc-helpers-3.png)
 
 1. I **[!UICONTROL Edit HTML]** fönster, lägga till `each` hjälpare:
    1. Välj **[!UICONTROL Helper functions]**.
@@ -136,7 +136,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
       {{#each someArray as |variable|}} {{/each}}
       ```
 
-      ![](../assets/personalization-uc-helpers-9.png)
+      ![](assets/personalization-uc-helpers-9.png)
 
 1. Lägg till `productListItems` matris till uttrycket:
 
@@ -158,7 +158,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
       ```
       I det här exemplet *event_ID* representerar ID:t för din händelse.
 
-      ![](../assets/personalization-uc-helpers-10.png)
+      ![](assets/personalization-uc-helpers-10.png)
 
    1. Ändra uttrycket:
       1. Ta bort strängen &quot;.product&quot;.
@@ -208,14 +208,14 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
    {{/each}}
    ```
 1. Klicka **[!UICONTROL Validate]** och sedan klicka **[!UICONTROL Save]**.
-   ![](../assets/personalization-uc-helpers-11.png)
+   ![](assets/personalization-uc-helpers-11.png)
 
 ## Steg 5: Infoga en produktspecifik anteckning {#if-helper}
 
 1. På startsidan för E-postdesignern klickar du på komponenten HTML där du vill infoga anteckningen.
 1. I det sammanhangsberoende verktygsfältet klickar du på **[!UICONTROL Show the source code]**.
 
-   ![](../assets/personalization-uc-helpers-3.png)
+   ![](assets/personalization-uc-helpers-3.png)
 
 1. I **[!UICONTROL Edit HTML]** fönster, lägga till `if` hjälpare:
    1. Välj **[!UICONTROL Helper functions]**.
@@ -230,7 +230,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
          {%else%} default_render
       {%/if%}
       ```
-      ![](../assets/personalization-uc-helpers-12.png)
+      ![](assets/personalization-uc-helpers-12.png)
 
 1. Ta bort det här villkoret från uttrycket:
 
@@ -263,7 +263,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
          {%else%} default_render
       {%/if%}
       ```
-      ![](../assets/personalization-uc-helpers-13.png)
+      ![](assets/personalization-uc-helpers-13.png)
 
 1. Ändra uttrycket:
    1. I uttrycksredigeraren anger du produktnamnet efter `name` token.
@@ -296,7 +296,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
    1. Ta bort platshållaren &quot;default_render&quot; från uttrycket.
 1. Klicka **[!UICONTROL Validate]** och sedan klicka **[!UICONTROL Save]**.
 
-   ![](../assets/personalization-uc-helpers-14.png)
+   ![](assets/personalization-uc-helpers-14.png)
 
 1. Spara och publicera meddelandet.
 
@@ -307,19 +307,19 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 
    Du kan bara aktivera testläget efter att du har publicerat meddelandet.
 
-   ![](../assets/personalization-uc-helpers-15.png)
+   ![](assets/personalization-uc-helpers-15.png)
 
 1. I **[!UICONTROL Event configuration]** anger du indatavärdena och klickar sedan **[!UICONTROL Send]**.
 
    Testläget fungerar bara med testprofiler.
 
-   ![](../assets/personalization-uc-helpers-16.png)
+   ![](assets/personalization-uc-helpers-16.png)
 
    E-postadressen skickas till testprofilens adress.
 
    I det här exemplet innehåller e-postmeddelandet en anteckning om Juno Jacket eftersom den här produkten finns i varukorgen:
 
-   ![](../assets/personalization-uc-helpers-17.png)
+   ![](assets/personalization-uc-helpers-17.png)
 
 1. Kontrollera att det inte finns något fel och publicera sedan resan.
 

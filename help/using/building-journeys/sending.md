@@ -1,7 +1,7 @@
 ---
 title: Starta körning av resa
 description: Lär dig hur du påbörjar din resa och skickar meddelanden
-source-git-commit: 9e152f50c2360010d83ffccbe536380879ffb5da
+source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 2%
@@ -21,14 +21,14 @@ Läs mer om detta [section](testing-the-journey.md).
 
 Du måste publicera din resa för att aktivera den.
 
-![](../assets/jo-journeyuc2_32bis.png)
+![](assets/jo-journeyuc2_32bis.png)
 
 Läs mer om detta [section](publishing-the-journey.md).
 
 
 När den publicerats kan ni övervaka er resa med de dedikerade rapporteringsverktygen för att mäta hur effektiv resan är.
 
-![](../assets/jo-dynamic_report_journey_12.png)
+![](assets/jo-dynamic_report_journey_12.png)
 
 [Läs mer om rapporter](../reports/live-report.md)
 
@@ -52,7 +52,7 @@ Följ stegen nedan för att göra detta:
 
 1. Klicka på **[!UICONTROL Edit journey schedule]** länk för att komma åt resans egenskaper.
 
-   ![](../assets/message-read-segment-schedule.png)
+   ![](assets/message-read-segment-schedule.png)
 
 1. Konfigurera **[!UICONTROL Scheduler type]** fält: välj önskat värde i listan för att få segmentet att komma in på resan ett visst datum/tid eller på återkommande basis.
 
@@ -60,15 +60,15 @@ Följ stegen nedan för att göra detta:
    >
    >The **[!UICONTROL Schedule]** -avsnittet är bara tillgängligt när en **[!UICONTROL Read Segment]** aktiviteten har släppts på arbetsytan.
 
-   ![](../assets/message-read-segment-scheduler.png)
+   ![](assets/message-read-segment-scheduler.png)
 
 1. Om du väljer **[!UICONTROL Once]**, anger ett specifikt datum och en viss tidpunkt då segmentet kommer att gå in i resan.
 
-   ![](../assets/message-read-segment-scheduler-once.png)
+   ![](assets/message-read-segment-scheduler-once.png)
 
 1. Om du väljer en återkommande metod redigerar du startdatum och starttid. Du kan också definiera ett valfritt slutdatum och en valfri sluttid.
 
-   ![](../assets/message-read-segment-scheduler-daily.png)
+   ![](assets/message-read-segment-scheduler-daily.png)
 
    >[!NOTE]
    >

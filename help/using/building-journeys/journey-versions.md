@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 8d5ea4c1-bf23-4b58-8654-c251b90c3458
-source-git-commit: 2088b5ba2ec77e56644683e118e734acfe6707fc
+source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 2%
@@ -19,7 +19,7 @@ I reselistan visas alla reseversioner med versionsnumret. Läs [den här sidan](
 
 När du söker efter en resa visas de senaste versionerna högst upp i listan första gången programmet öppnas. Sedan kan du definiera den sortering som du vill ha så att programmet behåller den som en användarinställning. Färdens version visas också överst i reseupplagans gränssnitt, ovanför arbetsytan.
 
-![](../assets/journeyversions1.png)
+![](assets/journeyversions1.png)
 
 Om du behöver ändra till en direktresa måste du skapa en ny version av din resa.
 
@@ -29,7 +29,7 @@ Om du behöver ändra till en direktresa måste du skapa en ny version av din re
 
 1. Öppna den senaste versionen av din liveresa och klicka **[!UICONTROL Create a new version]** och bekräfta.
 
-   ![](../assets/journeyversions2.png)
+   ![](assets/journeyversions2.png)
 
    >[!NOTE]
    >
@@ -37,7 +37,7 @@ Om du behöver ändra till en direktresa måste du skapa en ny version av din re
 
 1. Gör ändringarna genom att klicka **[!UICONTROL Publish]** och bekräfta.
 
-   ![](../assets/journeyversions3.png)
+   ![](assets/journeyversions3.png)
 
 Från det att resan har publicerats kommer individerna att börja flöda in i den senaste versionen av resan. Personer som redan har gått in i en tidigare version stannar kvar tills de är klara med resan. Om de senare återgår till samma resa, kommer de att gå till den senaste versionen.
 

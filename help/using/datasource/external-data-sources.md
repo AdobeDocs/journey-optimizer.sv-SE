@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
-source-git-commit: 7588a675319324e43bbc61a71b1fdfaab9cce93a
+source-git-commit: bd35bf2ec4c1b2898007d670fc20626f06cc3750
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 88%
@@ -32,11 +32,11 @@ Här följer de viktigaste stegen för att skapa och konfigurera en ny extern da
 
 1. Klicka på **[!UICONTROL Create Data Source]** i listan med datakällor för att skapa en ny extern datakälla.
 
-   ![](../assets/journey25.png)
+   ![](assets/journey25.png)
 
    Detta öppnar konfigurationsfönstret för datakällan till höger på skärmen.
 
-   ![](../assets/journey26.png)
+   ![](assets/journey26.png)
 
 1. Ange ett namn för datakällan.
 
@@ -51,7 +51,7 @@ Här följer de viktigaste stegen för att skapa och konfigurera en ny extern da
    >
    >Vi rekommenderar starkt att HTTPS används av säkerhetsskäl. Observera också att vi endast tillåter att Adobe-adresser som är allmänt tillgängliga samt IP-adresser används.
 
-   ![](../assets/journey27.png)
+   ![](assets/journey27.png)
 
 1. Konfigurera autentiseringen beroende på den externa tjänstens konfiguration: **[!UICONTROL No authentication]**, **[!UICONTROL Basic]**, **[!UICONTROL Custom]** eller **[!UICONTROL API key]**. Mer information om det anpassade autentiseringsläget finns i [det här avsnittet](../datasource/external-data-sources.md#custom-authentication-mode). I vårt exempel väljer vi:
 
@@ -60,7 +60,7 @@ Här följer de viktigaste stegen för att skapa och konfigurera en ny extern da
    * **[!UICONTROL Value]**: &quot;1234&quot; (det här är värdet på vår API-nyckel)
    * **[!UICONTROL Location]**: &quot;Frågeparameter&quot; (API-nyckeln finns i webbadressen)
 
-   ![](../assets/journey28.png)
+   ![](assets/journey28.png)
 
 1. Klicka på **[!UICONTROL Add a New Field Group]** för att lägga till en ny fältgrupp för varje API-parameteruppsättning. Använd inte blanksteg eller specialtecken i fältgruppens namn. I vårt exempel behöver vi skapa två fältgrupper. En för varje parameteruppsättning (&quot;city&quot; och &quot;long/lat&quot;).
 
@@ -81,7 +81,7 @@ Om ett GET-anrop som kräver parametrar används ska du ange parametrarna i fäl
    {"id":{"param":"identifier"}}
    ```
 
-![](../assets/journey29.png)
+![](assets/journey29.png)
 
 Klicka på **[!UICONTROL Save]**.
 
@@ -98,11 +98,11 @@ Det här autentiseringsläget används vid komplex autentisering som ofta använ
 
 När du konfigurerar den anpassade autentiseringen kan du klicka på knappen nedan för att kontrollera om den anpassade autentiserade nyttolasten är korrekt konfigurerad.
 
-![](../assets/journey29-bis.png)
+![](assets/journey29-bis.png)
 
 Om testet godkänns blir knappen grön.
 
-![](../assets/journey29-ter.png)
+![](assets/journey29-ter.png)
 
 Med den här autentiseringen blir åtgärdskörningen en process med två steg:
 

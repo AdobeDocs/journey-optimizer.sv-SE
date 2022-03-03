@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 3da712e7-0e08-4585-8ca4-b6ff79df0b68
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -27,4 +27,4 @@ Ett heltäckande exempel på användning presenteras i detta [section](../buildi
 1. I **Åtgärd** väljer du en Campaign-åtgärd och lägger till den på din resa.
 1. I **Åtgärdsparametrar** visas alla fält som förväntas i meddelandets nyttolast. Du måste mappa vart och ett av dessa fält till det fält som du vill använda, antingen från händelsen eller från datakällan. Detta liknar anpassade åtgärder. Se detta [section](../building-journeys/using-custom-actions.md).
 
-![](../assets/accintegration2.png)
+![](assets/accintegration2.png)

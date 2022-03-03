@@ -7,10 +7,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: a101ee8cd7b57ee951d0ef2d5fd366757cb0a014
+source-git-commit: 7c00fcf72ba001005b8e4ac548b789f37f9039a3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '863'
+ht-degree: 5%
 
 ---
 
@@ -35,7 +35,7 @@ Här följer de huvudsteg som krävs för att konfigurera en anpassad åtgärd:
 
 1. Välj **[!UICONTROL Configurations]**. I  **[!UICONTROL Actions]** avsnitt, klicka **[!UICONTROL Manage]**. Klicka **[!UICONTROL Create Action]** för att skapa en ny åtgärd. Åtgärdskonfigurationsrutan öppnas till höger på skärmen.
 
-   ![](../assets/custom2.png)
+   ![](assets/custom2.png)
 
 1. Ange ett namn för åtgärden.
 
@@ -60,7 +60,7 @@ Här följer de huvudsteg som krävs för att konfigurera en anpassad åtgärd:
 
 När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICONTROL URL Configuration]** parametrar:
 
-![](../assets/journeyurlconfiguration.png)
+![](assets/journeyurlconfiguration.png)
 
 1. I **[!UICONTROL URL]** anger du URL-adressen för den externa tjänsten:
 
@@ -89,7 +89,7 @@ När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICO
 
       Om du har valt **[!UICONTROL Variable]** anger du den här variabeln när du lägger till den anpassade åtgärden på en resa. [Läs mer](../building-journeys/using-custom-actions.md).
 
-      ![](../assets/journeyurlconfiguration2.png)
+      ![](assets/journeyurlconfiguration2.png)
 
    1. Om du vill ta bort ett rubrikfält pekar du på rubrikfältet och klickar på **[!UICONTROL Delete]** ikon.
    The **[!UICONTROL Content-Type]** och **[!UICONTROL Charset]** rubrikfält anges som standard. Du kan inte ändra eller ta bort dessa fält.
@@ -102,11 +102,11 @@ När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICO
 
 ## Definiera åtgärdsparametrarna {#define-the-message-parameters}
 
-![](../assets/messageparameterssection.png)
+![](assets/messageparameterssection.png)
 
 I **[!UICONTROL Action parameters]** klistra in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten.
 
-![](../assets/customactionpayloadmessage.png)
+![](assets/customactionpayloadmessage.png)
 
 >[!NOTE]
 >
@@ -119,5 +119,5 @@ Du kan också välja mellan att ange om en parameter är en konstant eller en va
 * Konstant innebär att parametervärdet definieras av en teknisk person i åtgärdskonfigurationsfönstret. Värdet är alltid detsamma oavsett resa. Det kommer inte att variera och marknadsföraren kommer inte att se det när han eller hon använder den anpassade åtgärden under resan. Det kan till exempel vara ett ID som tredjepartssystemet förväntar sig. I så fall är fältet till höger om växlingskonstanten/variabeln det värde som skickas.
 * Variabel innebär att parameterns värde varierar. Marknadsförare som använder den här anpassade åtgärden under en resa kan skicka det värde de vill ha eller ange var värdet för den här parametern ska hämtas (t.ex. från händelsen, från Adobe Experience Platform). I så fall är fältet till höger om växlingskonstanten/variabeln den etikett marknadsförarna kommer att se under resan för att namnge den här parametern.
 
-![](../assets/customactionpayloadmessage2.png)
+![](assets/customactionpayloadmessage2.png)
 

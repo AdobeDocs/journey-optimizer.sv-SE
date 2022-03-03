@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
-source-git-commit: 7138e1f031bd26caf9379c3ff19d79ac29442bc6
+source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 24%
@@ -25,11 +25,11 @@ Händelser som konfigurerats av den tekniska användaren (se [den här sidan](..
 * [Reaktion](../building-journeys/reaction-events.md)
 * [Segmentkvalificering](../building-journeys/segment-qualification-events.md)
 
-![](../assets/journey43.png)
+![](assets/journey43.png)
 
 Starta din resa genom att dra och släppa en händelseaktivitet. Du kan också dubbelklicka på den.
 
-![](../assets/journey44.png)
+![](assets/journey44.png)
 
 ## Orkestreringsaktiviteter {#orchestration-activities}
 
@@ -40,7 +40,7 @@ På paletten till vänster på skärmen finns följande orkestreringsfunktioner:
 * [Vänta](../building-journeys/wait-activity.md)
 * [Läs segment](../building-journeys/read-segment.md)
 
-![](../assets/journey49.png)
+![](assets/journey49.png)
 
 ## Åtgärdsaktiviteter {#action-activities}
 
@@ -50,7 +50,7 @@ Från paletten, till vänster på skärmen, nedanför **[!UICONTROL Events]** oc
 * [Anpassade åtgärder](../building-journeys/using-custom-actions.md)
 * [Hoppa](../building-journeys/jump.md)
 
-![](../assets/journey58.png)
+![](assets/journey58.png)
 
 Dessa aktiviteter representerar olika tillgängliga kommunikationskanaler. Du kan kombinera dem för att skapa ett flerkanalsscenario.
 
@@ -60,8 +60,8 @@ Om du har konfigurerat anpassade åtgärder visas de här (se [den här sidan](.
 
 De flesta aktiviteter gör att du kan definiera en **[!UICONTROL Label]**. Detta lägger till ett suffix till namnet som visas under din aktivitet på arbetsytan. Detta är användbart om du använder samma aktivitet flera gånger under resan och vill identifiera dem enklare. Felsökningen blir också enklare om fel uppstår, vilket gör det lättare att läsa rapporterna. Du kan också lägga till ett valfritt **[!UICONTROL Description]**.
 
-![](../assets/journey59bis.png)
+![](assets/journey59bis.png)
 
 När ett fel inträffar i en åtgärd eller ett villkor upphör en individs resa. Det enda sättet att få den att fortsätta är att markera rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [det här avsnittet](../building-journeys/using-the-journey-designer.md#paths).
 
-![](../assets/journey42.png)
+![](assets/journey42.png)

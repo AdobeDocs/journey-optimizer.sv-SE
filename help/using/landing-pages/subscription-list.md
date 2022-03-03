@@ -8,7 +8,7 @@ level: Beginner
 hidefromtoc: true
 hide: true
 exl-id: 5e5419a0-5121-4aa7-a975-b1f08e2918c9
-source-git-commit: 4609b071e6011bb2c28156b9638f40b7d6f29249
+source-git-commit: c988f0baa8b3c622dfb4f1ff060001a3462ed31e
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 2%
@@ -37,23 +37,23 @@ Följ stegen nedan för att skapa en prenumerationslista.
 
 1. Välj **[!UICONTROL Customer]** > **[!UICONTROL Subscription list]**.
 
-   ![](../assets/lp_subscription-lists.png)
+   ![](assets/lp_subscription-lists.png)
 
 1. Markera knappen **[!UICONTROL Create subscription list]**.
 
-   ![](../assets/lp_create-subscription-list.png)
+   ![](assets/lp_create-subscription-list.png)
 
 1. Lägg till ett namn och en beskrivning. Dessa fält är obligatoriska.
 
 1. Du kan definiera ett startdatum och ett slutdatum.
 
-   ![](../assets/lp_subscription-list-dates.png)
+   ![](assets/lp_subscription-list-dates.png)
 
 1. Klicka på **[!UICONTROL Save]**.
 
 I listan visas alla prenumerationslistor som skapats. Du kan filtrera dem baserat på skapandedatum eller ändringsdatum och deras status.
 
-![](../assets/lp_subscription-filters.png)
+![](assets/lp_subscription-filters.png)
 
 Möjliga statusvärden är följande:
 

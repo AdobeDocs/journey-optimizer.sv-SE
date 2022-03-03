@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: b8ef0326952f26453440b9031fe121f4dc14807e
+source-git-commit: 7c9f04b8d3faa171444bfa0adc537b5faabde37e
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 5%
@@ -36,15 +36,15 @@ Följ stegen nedan om du vill delegera en ny underdomän till Adobe helt:
 
 1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Subdomains]** menyn och klicka sedan på **[!UICONTROL Set up subdomain]**.
 
-   ![](../assets/subdomain-delegate.png)
+   ![](assets/subdomain-delegate.png)
 
 1. Välj **[!UICONTROL Fully delegated]** från **[!UICONTROL Set up method]** -avsnitt.
 
-   ![](../assets/subdomain-method-full.png)
+   ![](assets/subdomain-method-full.png)
 
 1. Ange namnet på den underdomän som ska delegeras.
 
-   ![](../assets/subdomain-name.png)
+   ![](assets/subdomain-name.png)
 
    >[!CAUTION]
    >
@@ -56,7 +56,7 @@ Följ stegen nedan om du vill delegera en ny underdomän till Adobe helt:
 
 1. Kontrollera att alla DNS-poster har skapats i din domänvärdslösning. Om allt är korrekt konfigurerat markerar du rutan &quot;Jag bekräftar ...&quot; och klickar sedan på **[!UICONTROL Submit]**.
 
-   ![](../assets/subdomain-submit.png)
+   ![](assets/subdomain-submit.png)
 
    >[!NOTE]
    >
@@ -64,7 +64,7 @@ Följ stegen nedan om du vill delegera en ny underdomän till Adobe helt:
 
 1. När den fullständiga underdomänsdelegeringen har skickats visas underdomänen i listan med **[!UICONTROL Processing]** status. Mer information om underdomänernas status finns i [det här avsnittet](access-subdomains.md).
 
-   ![](../assets/subdomain-processing.png)
+   ![](assets/subdomain-processing.png)
 
    Innan du kan använda den underdomänen för att skicka meddelanden måste du vänta tills Adobe utför de kontroller som krävs, vilket kan ta upp till 3 timmar. Läs mer i [det här avsnittet](#subdomain-validation).
 
@@ -102,7 +102,7 @@ Följ stegen nedan för att delegera en underdomän med CNAME:
 
 1. Välj **[!UICONTROL CNAME set up]** -metod.
 
-   ![](../assets/subdomain-method-cname.png)
+   ![](assets/subdomain-method-cname.png)
 
 1. Ange namnet på den underdomän som ska delegeras.
 
@@ -116,7 +116,7 @@ Följ stegen nedan för att delegera en underdomän med CNAME:
 
 1. Kontrollera att alla DNS-poster har skapats i din domänvärdslösning. Om allt är korrekt konfigurerat markerar du rutan &quot;Jag bekräftar ...&quot;.
 
-   ![](../assets/subdomain-create-dns-confirm.png)
+   ![](assets/subdomain-create-dns-confirm.png)
 
    >[!NOTE]
    >
@@ -130,7 +130,7 @@ Följ stegen nedan för att delegera en underdomän med CNAME:
 
 1. Adobe genererar en SSL CDN URL-valideringspost. Kopiera den här valideringsposten till din värdplattform. Om du har skapat den här posten på din värdlösning, markerar du kryssrutan &quot;Jag bekräftar..&quot; och klickar sedan på **[!UICONTROL Submit]**.
 
-   ![](../assets/subdomain-cdn-url-validation.png)
+   ![](assets/subdomain-cdn-url-validation.png)
 
    >[!NOTE]
    >

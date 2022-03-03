@@ -6,7 +6,7 @@ feature: Access Management
 topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: 7de0088c07c644c42f5def3657d2629ce5e7754e
+source-git-commit: db6e970230b4d22b50c2035ecf5e7307e66feb2d
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 11%
@@ -39,17 +39,17 @@ Tilldela en **[!UICONTROL Product profile]**:
 
 1. Välj en **[!UICONTROL Product profile]**.  
 
-   ![](../assets/do-not-localize/access_control_2.png)
+   ![](assets/do-not-localize/access_control_2.png)
 
 1. Klicka på **[!UICONTROL Add user]** på fliken **[!UICONTROL Users]**.
 
-   ![](../assets/do-not-localize/access_control_3.png)
+   ![](assets/do-not-localize/access_control_3.png)
 
 1. Skriv in användarens namn eller e-postadress och markera användaren.
 
    Om användaren inte redan har skapats i [!DNL Admin Console], se [Lägga till användardokumentation](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-users-individually.ug.html#add-users).
 
-   ![](../assets/do-not-localize/access_control_4.png)
+   ![](assets/do-not-localize/access_control_4.png)
 
 1. Utför samma steg som ovan för att lägga till andra användare i **[!UICONTROL Product profile]**. Klicka sedan på **[!UICONTROL Save]**.
 
@@ -59,7 +59,7 @@ Mer information om användarhantering finns i [Admin Console dokumentation](http
 
 När du får åtkomst till instansen visas en specifik vy beroende på de tilldelade behörigheterna i **[!UICONTROL Product profile]**. Om användaren inte har rätt åtkomst till en funktion visas följande skärm.
 
-![](../assets/do-not-localize/access_control_1.png)
+![](assets/do-not-localize/access_control_1.png)
 
 ## Redigera en befintlig produktprofil {#edit-product-profile}
 
@@ -77,23 +77,23 @@ Observera att om du ändrar ett ej ifyllt program eller anpassat **[!UICONTROL P
 
    The **[!UICONTROL Permissions]** -fliken visar en lista med funktioner som gäller för **[!UICONTROL Experience Cloud - Platform powered applications]** produkt.
 
-   ![](../assets/do-not-localize/access_control_5.png)
+   ![](assets/do-not-localize/access_control_5.png)
 
 1. Välj **[!UICONTROL Messages]** funktioner.
 
-   ![](../assets/do-not-localize/access_control_6.png)
+   ![](assets/do-not-localize/access_control_6.png)
 
 1. Från **[!UICONTROL Available Permission Items]** väljer du de behörigheter du vill tilldela **[!UICONTROL Product profile]** genom att klicka på plusikonen (+).
 
    Här lägger vi till **[!UICONTROL Publish messages]** behörighet.
 
-   ![](../assets/do-not-localize/access_control_7.png)
+   ![](assets/do-not-localize/access_control_7.png)
 
 1. Klicka vid behov på X-ikonen under **[!UICONTROL Included Permission Items]** bredvid respektive behörighet till din produktprofil.
 
 1. Klicka på **[!UICONTROL Save]** när du är klar.
 
-   ![](../assets/do-not-localize/access_control_8.png)
+   ![](assets/do-not-localize/access_control_8.png)
 
 Om det behövs kan du även skapa en ny produktprofil med specifika behörigheter. Mer information finns i [Skapa en produktprofil](#create-product-profile).
 
@@ -113,11 +113,11 @@ För att skapa **Skrivskyddade resor** **[!UICONTROL product profiles]**:
 
 1. Klicka på **[!UICONTROL New Profile]**.
 
-   ![](../assets/do-not-localize/access_control_9.png)
+   ![](assets/do-not-localize/access_control_9.png)
 
 1. Lägg till en **[!UICONTROL Product Profile Name]**, **[!UICONTROL Display Name]** och **[!UICONTROL Description]** för dina nya **[!UICONTROL product profiles]**.
 
-   ![](../assets/do-not-localize/access_control_10.png)
+   ![](assets/do-not-localize/access_control_10.png)
 
 1. I kategorin **[!UICONTROL Notifications]** väljer du om användare ska meddelas via e-post när de läggs till i eller tas bort från den här produktprofilen.
 
@@ -129,17 +129,17 @@ För att skapa **Skrivskyddade resor** **[!UICONTROL product profiles]**:
 
    Här väljer vi **[!UICONTROL Journeys]** funktioner.
 
-   ![](../assets/do-not-localize/access_control_11.png)
+   ![](assets/do-not-localize/access_control_11.png)
 
 1. Från **[!UICONTROL Available Permission Items]** väljer du de behörigheter du vill tilldela **[!UICONTROL Product profile]** genom att klicka på plusikonen (+).
 
    Här väljer vi **[!DNL View journeys]** och **[!DNL View journeys event, data sources, actions]**.
 
-   ![](../assets/do-not-localize/access_control_12.png)
+   ![](assets/do-not-localize/access_control_12.png)
 
 1. Välj **[!UICONTROL Sandbox access]** möjlighet att välja vilka sandlådor som ska tilldelas **[!UICONTROL Product profile]**.
 
-   ![](../assets/do-not-localize/access_control_13.png)
+   ![](assets/do-not-localize/access_control_13.png)
 
 1. Klicka på plusikonen (+) i **[!UICONTROL Available Permissions Items]** för att tilldela sandlådor till profilen. [Läs mer om sandlådor](sandboxes.md).
 

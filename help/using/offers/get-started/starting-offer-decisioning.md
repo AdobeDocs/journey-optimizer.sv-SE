@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Beginner
 exl-id: 659984cb-b232-47ba-9f5a-604bf97a5e92
-source-git-commit: 2d859a5dab19a419d424acefd17d254473c00818
+source-git-commit: 14ab70aa32f4f7978b8c72b3981d3b55f56fd08b
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 45%
@@ -26,7 +26,7 @@ Beslutsledningskapaciteten består av två huvudkomponenter:
 * The **Centraliserat offertbibliotek** vilket är gränssnittet där du skapar och hanterar de olika element som dina erbjudanden består av och definierar deras regler och begränsningar.
 * The **Beslutsmotor för erbjudande** som utnyttjar Adobe Experience Platform data och kundprofiler i realtid, tillsammans med erbjudandebiblioteket, för att välja rätt tidpunkt, kunder och kanaler som erbjudandena ska levereras till.
 
-![](../../assets/architecture.png)
+![](../assets/architecture.png)
 
 Några fördelar:
 
@@ -42,7 +42,7 @@ Ett **erbjudande** består av innehåll, berättiganderegler och begränsningar 
 
 Det skapas med **Erbjudandebiblioteket** som innehåller en central erbjudandekatalog där du kan koppla berättiganderegler och begränsningar till flera innehållsdelar för att skapa och publicera erbjudanden (se [Användargränssnitt för erbjudandebibliotek](../get-started/user-interface.md)).
 
-![](../../assets/offer_structure.png)
+![](../assets/offer_structure.png)
 
 När erbjudandebiblioteket har berikats med erbjudanden kan ni integrera era erbjudanden i **beslut** (kallades tidigare&quot;erbjudandeaktiviteter&quot;).
 
@@ -54,11 +54,11 @@ Beslutshanteringsfunktionerna och integrationen med Adobe Experience Platform g�
 
 * Visa erbjudanden på webbplatsens hemsida som matchar besökskundens intressen, baserat på data från Adobe Experience Platform.
 
-   ![](../../assets/website.png)
+   ![](../assets/website.png)
 
 * Om kunderna går nära en av era butiker skickar du push-meddelanden som påminner dem om tillgängliga erbjudanden enligt deras attribut (lojalitetsnivå, kön, tidigare köp ...).
 
-   ![](../../assets/push_sample.png)
+   ![](../assets/push_sample.png)
 
 * Beslutshanteringen hjälper er också att förbättra kundernas upplevelse när ni kontaktar supportteamet. Med API:er för beslutshantering kan du i kundtjänstagentportalen visa information om kundens inlösta och nästa bästa erbjudanden.
 

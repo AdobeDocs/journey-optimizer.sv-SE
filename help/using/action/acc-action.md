@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 109ba212-f04b-425f-9447-708c8e0b3f51
-source-git-commit: 7324b5dd448b770990aad485fa2b13bc131cbcb1
+source-git-commit: 51c63b196b11905289c3c0c450c1976eb551bbc8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -69,4 +69,4 @@ I Journey Optimizer måste du konfigurera en åtgärd per transaktionsmeddelande
 1. Justera de olika fälten så att de blir statiska eller variabla beroende på om du vill mappa dem på arbetsytan på resan. Vissa fält, till exempel kanalparametrar för e-postadresser och anpassningsfält (ctx), kan behöva definieras som variabler för mappning i samband med resan.
 1. Klicka **Spara**.
 
-![](../assets/accintegration1.png)
+![](assets/accintegration1.png)

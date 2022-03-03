@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: a1bbfcee-2235-4820-a391-d5d35f499cb0
-source-git-commit: 3c8c059e5e3953807b9fc2d8d0eded0d00e49003
+source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 I det här avsnittet presenteras ett användningsexempel som kombinerar ett Läs segment, en händelse, reaktionshändelser och e-post-/push-meddelanden.
 
-![](../assets/jo-uc1.png)
+![](assets/jo-uc1.png)
 
 ## Beskrivning av användningsfallet
 
@@ -53,7 +53,7 @@ Mer information om segment finns i [page](../segment/about-segments.md).
 
 1. Klicka på **[!UICONTROL Save]**.
 
-   ![](../assets/add-attributes.png)
+   ![](assets/add-attributes.png)
 
 Segmentet är nu skapat och klart att användas på din resa. Använda en **Läs segment** kan du göra så att alla personer som tillhör segmentet kommer in på resan.
 
@@ -77,7 +77,7 @@ För detta använder vi en regelbaserad händelse. Mer information om händelser
 
 1. Klicka på **[!UICONTROL Save]**.
 
-   ![](../assets/jo-uc2.png)
+   ![](assets/jo-uc2.png)
 
 Händelsen är nu konfigurerad och klar att användas under din resa. Genom att använda motsvarande händelseaktivitet kan du aktivera en åtgärd varje gång en kund gör ett köp.
 
@@ -89,7 +89,7 @@ I det här fallet måste vi skapa tre meddelanden:
 * ett push-tackmeddelande
 * ett uppföljningsmeddelande via e-post
 
-![](../assets/jo-uc3.png)
+![](assets/jo-uc3.png)
 
 Se detta [section](../segment/about-segments.md) om du vill lära dig att designa och publicera dessa meddelanden.
 
@@ -97,11 +97,11 @@ Se detta [section](../segment/about-segments.md) om du vill lära dig att design
 
 1. Påbörja resan med en **Läs segment** aktivitet. Markera det segment som skapades tidigare. Alla personer som tillhör segmentet deltar i resan.
 
-   ![](../assets/jo-uc4.png)
+   ![](assets/jo-uc4.png)
 
 1. Släpp **Meddelande** och välj push- och e-postmeddelandet först. Det här meddelandet skickas till alla personer på resan.
 
-   ![](../assets/jo-uc5.png)
+   ![](assets/jo-uc5.png)
 
 1. Placera markören på meddelandeaktiviteten och klicka på plustecknet (+) för att skapa en ny sökväg.
 

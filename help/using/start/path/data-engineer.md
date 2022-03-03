@@ -3,7 +3,7 @@ title: Journey Optimizer Get Started for Data Engineer
 description: Som datatekniker får du lära dig mer om hur du arbetar med Journey Optimizer
 level: Intermediate
 exl-id: 8beaafc2-e68d-46a1-be5c-e70892575bfb
-source-git-commit: b43e3432ede1d4985e0a6b57b57c5efc3cf60c50
+source-git-commit: a20bf3aa869ce73805c63323ac36e5d86a44746e
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 2%
@@ -38,7 +38,7 @@ Steg för att skapa ett identitetsnamnutrymme och en datauppsättning som är ak
 
 För att kunna skicka meddelanden under resor måste du dessutom konfigurera **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** och **[!UICONTROL Actions]**. Läs mer [i det här avsnittet](../../configuration/about-data-sources-events-actions.md).
 
-![](../../assets/admin-menu.png)
+![](../assets/admin-menu.png)
 
 * The **Datakälla** kan du definiera en anslutning till ett system för att hämta ytterligare information som ska användas på dina resor. Läs mer om datakällor [i det här avsnittet](../../datasource/about-data-sources.md).
 
