@@ -7,46 +7,14 @@ feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: 81d07ec8-e808-4bc6-97b1-b9f7db2aec22
-source-git-commit: 14ab70aa32f4f7978b8c72b3981d3b55f56fd08b
+source-git-commit: bf9b555d717fe8b6d1e9500ba0a97eaea243dd7f
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 2%
+source-wordcount: '620'
+ht-degree: 4%
 
 ---
 
-# AI-rankningar {#ai-rankings}
-
-## Kom igång med AI-rankningar {#get-started-with-ai-rankings}
-
-<!--If you are an [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} user leveraging the **Offer Decisioning** application service,-->You can use a trained model system that ranks offers to display for a given profile.
-
->[!CAUTION]
->
->AI-rankningen är för närvarande tillgänglig i förtid och endast för vissa användare.
-
-Med den här funktionen kan du skapa olika **rankningsstrategier** baserat på era affärsmål. Genom att använda dessa olika målbaserade strategier i ett beslut (tidigare kallat erbjudandeaktivitet) kommer det tränade modellsystemet att hjälpa dig förstå hur de olika rangordningsstrategierna påverkar era mål.
-
-Du kan till exempel välja en rangordningsstrategi för e-postkanalen och en annan för push-kanalen. För varje kanal utnyttjar det tränade modellsystemet flera datapunkter för att avgöra vilket erbjudande som ska presenteras först för en viss placering, i stället för att beakta offertens prioritetspoäng eller en [rankningsformel](create-ranking-formulas.md).
-
-<!--This feature is not enabled by default. To be able to use it, reach out to your Adobe contact.-->
-
-När en rankningsstrategi har skapats kan du tilldela den till en placering i ett beslut. Läs mer i [Konfigurera urval av erbjudanden i beslut](../offer-activities/configure-offer-selection.md).
-
-### Automatisk optimeringsmodell {#auto-optimization}
-
-Ingår [!DNL Journey Optimizer] den enda modelltypen som stöds för AI-rankning är **automatisk optimering**.
-
-En automatisk optimeringsmodell syftar till att leverera erbjudanden som maximerar avkastningen, baserat på de nyckeltal (KPI) som du anger. <!--These KPIs could be in the form of conversion rates, revenue, etc.-->I nuläget fokuserar automatisk optimering på att optimera antalet erbjudanden med konvertering som mål.
-
->[!NOTE]
->
->Den automatiska optimeringsmodellen använder inga kontextdata eller användarprofildata. Det optimerar resultaten baserat på erbjudandenas globala prestanda.
-
-Med automatisk optimering är utmaningen att balansera experimentellt lärande och utnyttjande av det inlärningen. Denna princip kallas **&quot;multiväpnad bandit&quot;-metod**.
-
-Den automatiska optimeringsmodellen använder **Thompson Sampling** som gör det möjligt att identifiera vilket alternativ som ska användas för att maximera de förväntade belöningarna. Thompson Sampling är med andra ord en typ av förstärkningsteknik för att lösa problemet med prospektering och exploatering i en flerarmad bandit.
-
-Thompson Sampling-metoden gör det även möjligt att hantera problem som &quot;kallstart&quot;, dvs. när ett nytt erbjudande introduceras i kampanjen har den ingen historik som den kan träna från.
+# Skapa AI-modeller {#ai-rankings}
 
 ## Skapa en rankningsstrategi {#create-ranking-strategy}
 
@@ -66,7 +34,7 @@ Så här skapar du en rankningsstrategi:
 
    * **[!UICONTROL Name]**: Unikt namn som du måste ange.
 
-   * **[!UICONTROL Model type]**: Den enda modelltypen som stöds är **[!UICONTROL Auto-optimization]**.<!--More will be supported in the future so the drop-down list will be enabled.-->
+   * **[!UICONTROL Model type]**: Ingår [!DNL Journey Optimizer] den enda modelltypen som stöds är **[!UICONTROL Auto-optimization]**. [Läs mer](ai-ranking.md#auto-optimization)
 
    * **[!UICONTROL Optimization metric]**:
 
