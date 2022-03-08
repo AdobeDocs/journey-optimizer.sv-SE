@@ -1,0 +1,51 @@
+---
+title: Live-rapport
+description: Lär dig använda data från liverapporten
+feature: Reporting
+topic: Content Management
+role: User
+level: Intermediate
+exl-id: 8dd48bb2-a805-4c46-a16c-c68173a9ac08
+source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 0%
+
+---
+
+# Kom igång med Live Report {#live-report}
+
+Använd **[!UICONTROL Live report]** att i realtid mäta och visualisera påverkan och resultat av era resor och era meddelanden i en inbyggd kontrollpanel.
+Data finns i **[!UICONTROL Live report]** så snart leveransen är skickad eller resan är genomförd.
+
+* Om du vill rikta in dig på en resa eller leveranser i samband med en resa, från **[!UICONTROL Journeys]** -menyn, få åtkomst till din resa och klicka på **[!UICONTROL Live report]** ikon. Du kan sedan hitta liverapporter för resa, e-post och push.
+
+   ![](assets/report_journey.png)
+
+* Om du vill ange en viss leverans som mål går du till **[!UICONTROL Live view]** i **[!UICONTROL Executions]** fliken med dina meddelanden väljer du **[!UICONTROL Live Report]** på den avancerade menyn för den valda leveransen.
+
+   ![](assets/report_2.png)
+
+## Anpassa kontrollpanelen {#modify-dashboard}
+
+Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort. Om du ändrar widgetarna påverkas bara den aktuella användarens kontrollpanel. Andra användare ser sina egna kontrollpaneler eller de som har angetts som standard.
+
+1. Välj om du vill utesluta testhändelser från dina rapporter med hjälp av alternativfältet. Mer information om testhändelser finns i [den här sidan](../building-journeys/testing-the-journey.md).
+
+   ![](assets/report_modify_6.png)
+
+1. Om du vill ändra storlek på eller ta bort widgetar klickar du på **[!UICONTROL Modify]**.
+
+   ![](assets/report_modify_7.png)
+
+1. Justera widgetarnas storlek genom att dra i det nedre högra hörnet.
+
+   ![](assets/report_modify_8.png)
+
+1. Klicka **[!UICONTROL Remove]** för att ta bort widgetar du inte behöver.
+
+   ![](assets/report_modify_9.png)
+
+1. När du är nöjd med visningsordningen och widgetarnas storlek klickar du på **[!UICONTROL Save]**.
+
+Instrumentpanelen har nu sparats. Dina olika ändringar kommer att tillämpas på nytt för senare användning av dina liverapporter. Använd **[!UICONTROL Reset]** för att återställa standardordningen för widgetar och widgetar.
