@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: d188bb6b-2924-4818-b007-be660cce249c
-source-git-commit: fab36ea43e92babfacdbaeeaecf6c551c00b3c5b
+source-git-commit: 68407db81224e9c2b6930c800e57b65e081781fe
 workflow-type: tm+mt
-source-wordcount: '89'
+source-wordcount: '90'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,9 @@ Genom att lägga till olika attribut på Favoriter-menyn får du snabb åtkomst 
 
 ![](assets/favorite-option.png)
 
-Använd **[!UICONTROL Favorites]** i den vänstra rutan.
+Om du vill få tillgång till objekt som du är nöjd med använder du **[!UICONTROL Favorites]** menyalternativ i listrutan.
+
+![](assets/favorite-menu.png)
 
 I den här listan kan du snabbt lägga till personaliseringsobjektet i det aktuella uttrycket.
 

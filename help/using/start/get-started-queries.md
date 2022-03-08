@@ -5,7 +5,7 @@ feature: Schemas
 role: User
 level: Beginner
 exl-id: 6f32f068-429a-4039-bb76-d190069e7402
-source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 6%
@@ -19,7 +19,7 @@ Frågeredigeraren är ett interaktivt verktyg från Adobe Experience Platform Qu
 Frågeredigeraren har stöd för att utveckla frågor för analys och datautforskning, och du kan köra interaktiva frågor i utvecklingssyfte samt icke-interaktiva frågor för att fylla i [datauppsättningar](get-started-datasets.md).
 
 
-![](assets/queries-home.png)
+![](../assets/queries-home.png)
 
 Läs om hur du använder Frågeredigeraren i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html){target=&quot;_blank&quot;}.
 

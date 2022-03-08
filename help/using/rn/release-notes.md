@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 482cdac27bded3ec451d93b5aac6dda4b0e182cb
+source-git-commit: 68407db81224e9c2b6930c800e57b65e081781fe
 workflow-type: tm+mt
-source-wordcount: '2643'
+source-wordcount: '2416'
 ht-degree: 9%
 
 ---
@@ -13,100 +13,6 @@ ht-degree: 9%
 
 På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journey Optimizer]. Du kan även läsa [senaste dokumentationsuppdateringar](documentation-updates.md) sida för fler ändringar.
 
-
-
-## Version från februari 2022 {#feb-2022-release}
-
-### Nya funktioner
-
-<!--table>
-<thead>
-<tr>
-<th><strong>Subscription Landing Pages</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now create and design landing pages in Journey Optimizer, and direct your users to online forms where they can opt-in or opt-out from receiving your communications, or subscribe to a specific service such as a newsletter.</p>
-<p>For more information, refer to the <a href="../landing-pages/create-lp.md">detailed documentation</a> and related <a href="../landing-pages/lp-use-cases.md">sample use case</a>.</p>
-</td>
-</tr>
-</tbody>
-</table-->
-
-<table>
-<thead>
-<tr>
-<th><strong>Nytt bibliotek för anpassningsuttryck</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer har nu ett bibliotek där du kan komma åt fördefinierade personaliseringsuttryck. Uttrycken konfigureras av Admin-användare.</p>
-<p>Mer information finns i den <a href="../personalization/personalization-library.md">detaljerade dokumentationen</a>.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-<!--table>
-<thead>
-<tr>
-<th><strong>API Developer Site and Suppression API</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer provide RESTful APIs that allow you to programmatically perform key operations in your applications.
-Developer SDK for Journey Optimizer is now available with the Suppression API (beta).</p>
-<p>With this API, you can control your outgoing messages using suppression and allow lists.
-The suppression list helps you with honoring the ISPs’ feedback to preserve sending IP reputation. The allow list helps you ensure that you send only to those email addresses which are in the allowed list, and typically to ensure that you don't send mails to customers from your development sandbox.</p>
-<p>See <a href="https://developer.adobe.com/journey-optimizer-apis/">Adobe Journey Optimizer APIs</a>.</p>
-</td>
-</tr>
-</tbody>
-</table-->
-
-<table>
-<thead>
-<tr>
-<th><strong>Skicka information för att spåra meddelanden med UTM-spårningsparametrar</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>I Journey Optimizer-meddelandeinnehåll kan du nu lägga till UTM-parametrar i länkarna: kan de tillhandahålla ytterligare data om länken och hjälpa dig att identifiera var och varför en person som klickat på länken.</p>
-<p>Mer information finns i den <a href="../configuration/message-presets.md#configure-email-settings">detaljerade dokumentationen</a>.</p-->
-</td>
-</tr>
-</tbody>
-</table>
-
-### Förbättringar
-
-**Resor**
-
-* För att optimera prestandan kommer alla resor i testläge som inte har utlösts på en vecka nu att återgå till statusen Utkast. [Läs mer](../building-journeys/testing-the-journey.md#important_notes)
-* Integrationen mellan Journey Optimizer och Adobe Campaign Classic har optimerats för att förbättra prestandan. Standardkonfigurationen för begränsning har ändrats till 4 000 anrop/5 minuter.	[Läs mer](../action/acc-action.md#important-notes)
-
-**Rapportering**
-
-* Leveranser kan nu filtreras beroende på status:
-   * I listan Meddelandekörning kan du nu utesluta korrektur från leveranslistan.
-   * I dina Live-/Global-rapporter kan du välja att exkludera testhändelser.
-
-* Nu kan du få åtkomst till rapporter om optimeringsdata för sändningstid: antalet personer som var omedelbart meddelandeansvariga och antalet personer som fick meddelanden med 1 timmes optimering, 2 timmars optimering osv.
-
-<!--* Offer Decisioning reports are now available in Journey Optimizer. You can access the following metrics: Offers sent - Offers' impression rate - Offers' click rate - Breakdown report on Offers' sent.-->
-
-**Beslutshantering**
-
-* Rankningar och AI-rankning grupperas nu tillsammans i en enda flik.
 
 ## Version från januari 2022 {#january-2022-release}
 
@@ -440,7 +346,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 * Korrigerade ett tillgänglighetsproblem vid navigering på meddelandeflikar.
 * Ett lokaliseringsfel har korrigerats i e-postdesignerns etiketter.
 * Ett problem har korrigerats när du valde mer än en nod i en resa och klickade på Ta bort på egenskapspanelen.
-* Korrigerade ett fel som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
+* Korrigerade ett problem som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
 * Du kan nu ta reda på varför en meddelandeförinställning inte kunde skapas med hjälp av en tydligare varning i användargränssnittet.
 
 

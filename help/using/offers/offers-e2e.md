@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 851d988a-2582-4c30-80f3-b881d90771be
-source-git-commit: 14ab70aa32f4f7978b8c72b3981d3b55f56fd08b
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 2%
@@ -57,7 +57,7 @@ De viktigaste stegen för att konfigurera erbjudanden, inkludera dem i ett beslu
 
 Den övergripande beslutsprocess som ska användas för erbjudanden i ett e-postmeddelande beskrivs på följande sätt:
 
-![](assets/offers-e2e-process.png)
+![](../assets/offers-e2e-process.png)
 
 ## Definiera komponenterna {#define-components}
 
@@ -75,7 +75,7 @@ Du hittar dem under **[!UICONTROL Decision Management]** > **[!UICONTROL Compone
    * *E-post - bild*
    * *Icke-digital - text*
 
-   ![](assets/offers-e2e-placements.png)
+   ![](../assets/offers-e2e-placements.png)
 
    De detaljerade stegen för att skapa placeringar beskrivs i [det här avsnittet](../../using/offers/offer-library/creating-placements.md).
 
@@ -88,7 +88,7 @@ Du hittar dem under **[!UICONTROL Decision Management]** > **[!UICONTROL Compone
    * *Kunder som är kvinnor*
    * *Manliga kunder*
 
-   ![](assets/offers-e2e-rules.png)
+   ![](../assets/offers-e2e-rules.png)
 
    De detaljerade stegen för att skapa regler beskrivs i [det här avsnittet](../../using/offers/offer-library/creating-decision-rules.md).
 
@@ -98,7 +98,7 @@ Du hittar dem under **[!UICONTROL Decision Management]** > **[!UICONTROL Compone
 
    I det här exemplet skapar du *Yoga* -tagg.
 
-   ![](assets/offers-e2e-tag.png)
+   ![](../assets/offers-e2e-tag.png)
 
    De detaljerade stegen för att skapa taggar beskrivs i [det här avsnittet](../../using/offers/offer-library/creating-tags.md).
 
@@ -130,17 +130,17 @@ Nu kan du skapa och konfigurera dina erbjudanden. I det här exemplet skapar du 
 
 1. Välj en lämplig bild för de två första placeringarna. Ange egen text för *Icke-digital - text* placering.
 
-   ![](assets/offers-e2e-representations.png)
+   ![](../assets/offers-e2e-representations.png)
 
 1. I **[!UICONTROL Offer eligibility]** avsnitt, markera **[!UICONTROL By defined decision rule]** och dra och släpp valfri regel.
 
-   ![](assets/offers-e2e-eligibility.png)
+   ![](../assets/offers-e2e-eligibility.png)
 
 1. Fyll i **[!UICONTROL Priority]**. I det här exemplet lägger du till *25*.
 
 1. Granska ditt erbjudande och klicka sedan på **[!UICONTROL Save and approve]**.
 
-   ![](assets/offers-e2e-review.png)
+   ![](../assets/offers-e2e-review.png)
 
 1. I det här exemplet skapar du ytterligare tre erbjudanden med samma representationer, men med olika resurser. Tilldela dem olika regler och prioriteringar, till exempel:
 
@@ -149,7 +149,7 @@ Nu kan du skapa och konfigurera dina erbjudanden. I det här exemplet skapar du 
    * Tredje erbjudandet - beslutsregel: *Manliga kunder*, Prioritet: *25*
    * Fjärde erbjudandet - beslutsregel: *Manliga kunder*, Prioritet: *15*
 
-   ![](assets/offers-e2e-offers-created.png)
+   ![](../assets/offers-e2e-offers-created.png)
 
 De detaljerade stegen för att skapa och konfigurera erbjudanden beskrivs i [det här avsnittet](../../using/offers/offer-library/creating-personalized-offers.md).
 
@@ -165,11 +165,11 @@ De detaljerade stegen för att skapa och konfigurera erbjudanden beskrivs i [det
    * En som motsvarar *E-post - bild* placering
    * En som motsvarar *Icke-digital - text* placering
 
-   ![](assets/offers-e2e-fallback-representations.png)
+   ![](../assets/offers-e2e-fallback-representations.png)
 
 1. Granska ditt reserverbjudande och klicka sedan på **[!UICONTROL Save and approve]**.
 
-![](assets/offers-e2e-fallback.png)
+![](../assets/offers-e2e-fallback.png)
 
 Ditt reserverbjudande är nu klart att användas i ett beslut.
 
@@ -183,7 +183,7 @@ När du konfigurerar beslutet måste du lägga till dina personliga erbjudanden 
 
 1. Använd *Yoga* för att välja de fyra personliga erbjudanden du skapade tidigare.
 
-   ![](assets/offers-e2e-collection-using-tag.png)
+   ![](../assets/offers-e2e-collection-using-tag.png)
 
 De detaljerade stegen för att skapa en samling beskrivs i [det här avsnittet](../../using/offers/offer-library/creating-collections.md).
 
@@ -199,11 +199,11 @@ Följ stegen nedan för att skapa och konfigurera ett erbjudande:
 
 1. Välj *Webb - bild*, *E-post - bild* och *Icke-digital - text* placeringar.
 
-   ![](assets/offers-e2e-decision-placements.png)
+   ![](../assets/offers-e2e-decision-placements.png)
 
 1. Lägg till den samling du skapade för varje placering.
 
-   ![](assets/offers-e2e-decision-collection.png)
+   ![](../assets/offers-e2e-decision-collection.png)
 
 1. Om du definierade en rankning när [bygga komponenter](#define-components)kan du tilldela den till en placering i beslutet. Om flera erbjudanden kan presenteras på den här platsen, kommer beslutet att använda den här formeln för att beräkna vilket erbjudande som ska levereras först.
 
@@ -211,11 +211,11 @@ Följ stegen nedan för att skapa och konfigurera ett erbjudande:
 
 1. Välj det reserverbjudande som du skapade. Det visas som ett tillgängligt reserverbjudande för de tre valda placeringarna.
 
-   ![](assets/offers-e2e-decision-fallback.png)
+   ![](../assets/offers-e2e-decision-fallback.png)
 
 1. Granska ditt beslut och klicka sedan på **[!UICONTROL Save and approve]**.
 
-   ![](assets/offers-e2e-review-decision.png)
+   ![](../assets/offers-e2e-review-decision.png)
 
 Ditt beslut är nu klart att användas för att leverera optimerade och personaliserade erbjudanden.
 
@@ -231,21 +231,21 @@ Nu när ditt beslut är klart kan du infoga det i ett e-postmeddelande. För att
 
 1. Lägg till en **[!UICONTROL Offer decision]** innehållskomponent. Lär dig hur du använder innehållskomponenter i [det här avsnittet](../../using/messages/content-components.md).
 
-   ![](assets/offers-e2e-decision-component.png)
+   ![](../assets/offers-e2e-decision-component.png)
 
 1. Markera den. Klicka på **[!UICONTROL Select offer decision]** för att lägga till ett beslut.
 
-   ![](assets/offers-e2e-select-offer-decision.png)
+   ![](../assets/offers-e2e-select-offer-decision.png)
 
 1. Välj den placering som motsvarar de erbjudanden som du vill visa på panelen **[!UICONTROL Placements]** listruta.
 
    I det här fallet är det bara den **E-post - bild** är tillgängligt så som du vill använda beslutet i ett e-postmeddelande. Läs mer på [skapa placeringar](../../using/offers/offer-library/creating-placements.md).
 
-   ![](assets/offers-e2e-select-placement-in-decision.png)
+   ![](../assets/offers-e2e-select-placement-in-decision.png)
 
 1. Beslut som matchar **E-post - bild** placeringen visas. Välj vilket beslut som ska användas i innehållskomponenten och klicka sedan på **[!UICONTROL Add]**.
 
-   ![](assets/offers-e2e-matching-placement-in-decision.png)
+   ![](../assets/offers-e2e-matching-placement-in-decision.png)
 
    >[!NOTE]
    >
@@ -253,7 +253,7 @@ Nu när ditt beslut är klart kan du infoga det i ett e-postmeddelande. För att
 
 Nu kan du se alla personaliserade erbjudanden och reserverbjudandet visualiseras i e-postdesignern.
 
-![](assets/offers-e2e-offers-displayed.png)
+![](../assets/offers-e2e-offers-displayed.png)
 
 Använd **[!UICONTROL Offers]** -avsnittet eller innehållskomponentpilarna (höger- och vänsterpilar) för att bläddra bland data. Du kan även visa olika erbjudanden som ingår i beslutet med en kundprofil. Läs mer i [det här avsnittet](../../using/messages/deliver-personalized-offers.md#preview-offers-in-email).
 

@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 2540938f-8ac7-43fa-83ff-fed59f6bc417
-source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 3%
@@ -19,7 +19,7 @@ Syftet med det här användningsexemplet är att skapa en resa för att skicka e
 
 I det här exemplet **[!UICONTROL Consent and Preference Details]** fältgrupp från [!DNL Adobe Experience Platform] används. Om du vill hitta den här fältgruppen går du till **[!UICONTROL Data Management]** meny, välja **[!UICONTROL Schemas]**. På **[!UICONTROL Field groups]** anger du namnet på fältgruppen i sökfältet.
 
-![Den här fältgruppen innehåller prenumerationselementet](assets/consent-and-preference-details-field-group.png)
+![Den här fältgruppen innehåller prenumerationselementet](../assets/consent-and-preference-details-field-group.png)
 
 Så här konfigurerar du den här resan:
 
@@ -29,7 +29,7 @@ Så här konfigurerar du den här resan:
 
    1. Klicka på **[!UICONTROL Enable parameter override]** ikonen till höger om **[!UICONTROL Address]** och klicka sedan på **[!UICONTROL Edit]** ikon.
 
-      ![](assets/message-to-subscribers-uc-1.png)
+      ![](../assets/message-to-subscribers-uc-1.png)
 
       Om du vill kunna ändra e-postadressen måste du ha publicerat meddelandet tidigare.
 
@@ -52,10 +52,10 @@ Så här konfigurerar du den här resan:
 
       Läs mer om [referenser till fält](expression/field-references.md) i uttryck.
 
-      ![](assets/message-to-subscribers-uc-2.png)
+      ![](../assets/message-to-subscribers-uc-2.png)
 
    1. I **[!UICONTROL Add an expression]** klickar du på **[!UICONTROL Ok]**.
 
-   ![](assets/message-to-subscribers-uc-3.png)
+   ![](../assets/message-to-subscribers-uc-3.png)
 
 1. Avsluta resan med en **[!UICONTROL End]** aktivitet.

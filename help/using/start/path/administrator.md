@@ -3,7 +3,7 @@ title: Journey Optimizer Get Started for System Admin
 description: Som systemadministratör får du lära dig mer om hur du arbetar med Journey Optimizer
 level: Intermediate
 exl-id: 24f85ced-aa45-493f-b2c4-7c7b58351b38
-source-git-commit: a20bf3aa869ce73805c63323ac36e5d86a44746e
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 2%
@@ -56,16 +56,16 @@ Följ stegen nedan:
 
 1. **Delegera underdomäner**: för alla nya underdomäner som ska användas i Journey Optimizer är det första steget att delegera den. [Läs mer](../../configuration/about-subdomain-delegation.md)
 
-   ![](../assets/subdomain.png)
+   ![](../../assets/subdomain.png)
 
 1. **Skapa IP-pooler**: förbättra e-postleveransen och ditt anseende genom att gruppera IP-adresser som har etablerats med din instans. [Läs mer](../../configuration/ip-pools.md)
 
-   ![](../assets/ip-pool.png)
+   ![](../../assets/ip-pool.png)
 
 1. **Hantera inaktiveringen och tillåtelselista**: förbättra leveransen med dämpning och tillåtelselista
 
    * A [utelämningslista](../../messages/suppression-list.md) består av e-postadresser som du vill utesluta från leveranserna, eftersom det kan skada ditt anseende och din leveransfrekvens om du skickar till dessa kontakter. Du kan övervaka alla e-postadresser som automatiskt har uteslutits från att skickas under en resa, till exempel ogiltiga adresser, adresser som alltid har mjuka studsar, och som kan påverka ditt e-postanseende negativt, samt mottagare som gör något slags skräppostklagomål mot något av dina e-postmeddelanden. Lär dig hantera [utelämningslista](../../configuration/manage-suppression-list.md) och [återförsök](../../configuration/retries.md).
-   ![](../assets/suppression-list-filtering-example.png)
+   ![](../../assets/suppression-list-filtering-example.png)
 
    * The [tillåtelselista](../../messages/allow-list.md) Med kan du ange enskilda e-postadresser eller domäner som ska vara de enda mottagarna eller domänerna som har behörighet att ta emot e-postmeddelanden som du skickar från en viss sandlåda. Detta kan förhindra att du av misstag skickar e-post till verkliga kundadresser när du befinner dig i en testmiljö. Lär dig hur [aktivera tillåtelselista](../../messages/allow-list.md).
    Läs mer om hantering av slutprodukter i [!DNL Adobe Journey Optimizer] [på den här sidan](../../messages/deliverability.md).

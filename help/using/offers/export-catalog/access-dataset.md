@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: d822c541-c043-41f5-916c-6a8e39fb148a
-source-git-commit: 14ab70aa32f4f7978b8c72b3981d3b55f56fd08b
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 10%
@@ -17,14 +17,14 @@ ht-degree: 10%
 
 Katalogen för exporterade erbjudanden är tillgänglig i Adobe Experience Platform **[!UICONTROL Datasets]** -menyn. En datauppsättning skapas för varje objekt i erbjudandebiblioteket.
 
-![](../assets/datasets-list.png)
+![](../../assets/datasets-list.png)
 
 Klicka på en datauppsättning för att komma åt informationen om den.
 
-![](../assets/dataset-activity.png)
+![](../../assets/dataset-activity.png)
 
 The **[!UICONTROL Preview dataset]** kan du visa den senaste lyckade gruppen i datauppsättningen. Den vänstra rutan innehåller information om de typer av data som har exporterats.
 
-![](../assets/dataset-preview.png)
+![](../../assets/dataset-preview.png)
 
 Mer information om hur du bläddrar bland och använder datauppsättningar finns i [den här sidan](../../start/get-started-datasets.md).

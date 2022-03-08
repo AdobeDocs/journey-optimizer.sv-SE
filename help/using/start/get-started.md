@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 956178c0-9985-4ff8-a29e-17dd367ce4d4
-source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 1%
@@ -41,7 +41,7 @@ ht-degree: 1%
 
 [!DNL Adobe Journey Optimizer] är en flexibel och skalbar applikation för att skapa och leverera personaliserade, sammankopplade och vältajmade kundupplevelser i alla appar, enheter och kanaler.
 
-![](assets/ajo-capabilities.png)
+![](../assets/ajo-capabilities.png)
 
 Viktiga funktioner:
 
@@ -70,5 +70,5 @@ Förstå den grundläggande arkitekturen i [!DNL Adobe Journey Optimizer], integ
 * [Skapa ditt första meddelande](../messages/get-started-content.md)
 * [Designa resor och skicka meddelanden](../building-journeys/journey-gs.md)
 * [Live-rapporter](../reports/live-report.md)
-* [Journey Optimizer FAQ](assets/do-not-localize/AJO-FAQ.pdf) (PDF)
+* [Journey Optimizer FAQ](../assets/do-not-localize/AJO-FAQ.pdf) (PDF)
 * [Journey Optimizer - säkerhetsöversikt](https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf) (PDF)

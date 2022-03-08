@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-source-git-commit: 7c9f04b8d3faa171444bfa0adc537b5faabde37e
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '911'
 ht-degree: 1%
@@ -31,15 +31,15 @@ Om du vill få tillgång till en detaljerad lista över e-postadresser som inte 
 >
 >Behörigheterna att visa, exportera och hantera undertryckningslistan är begränsade till [Reseadministratörer](../administration/ootb-product-profiles.md#journey-administrator). Läs mer om hantering [!DNL Journey Optimizer] användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
 
-![](assets/suppression-list-access.png)
+![](../assets/suppression-list-access.png)
 
 Det finns filter som hjälper dig att bläddra igenom listan.
 
-![](assets/suppression-list-filters.png)
+![](../assets/suppression-list-filters.png)
 
 Du kan filtrera på **[!UICONTROL Suppression category]**, **[!UICONTROL Address type]**, eller **[!UICONTROL Reason]**. Välj alternativ för varje kriterium. När du har valt det här alternativet kan du rensa alla filter eller alla filter som visas ovanpå listan.
 
-![](assets/suppression-list-filtering-example.png)
+![](../assets/suppression-list-filtering-example.png)
 
 Om du av misstag lägger till en e-postadress eller en domän manuellt, visas **[!UICONTROL Delete]** kan du ta bort inmatningen.
 
@@ -47,7 +47,7 @@ Om du av misstag lägger till en e-postadress eller en domän manuellt, visas **
 >
 >Använd aldrig **[!UICONTROL Delete]** om du vill ta bort inaktiverade e-postadresser eller domäner.
 
-![](assets/suppression-list-delete.png)
+![](../assets/suppression-list-delete.png)
 
 Om du tar bort en e-postadress eller en domän från listan över inaktiveringar kommer du att börja leverera till den här adressen eller domänen igen. Detta kan få allvarliga konsekvenser för din leveransförmåga och IP-anseende, vilket i slutänden kan leda till att din IP-adress eller sändande domän blockeras. Läs mer om hur viktigt det är att undertryckningslistan finns i [det här avsnittet](../messages/suppression-list.md).
 
@@ -59,7 +59,7 @@ Från **[!UICONTROL Suppression list]** kan du även redigera undertryckningsreg
 
 Om du vill exportera listan över inaktiveringar som en CSV-fil väljer du **[!UICONTROL Download CSV]** -knappen.
 
-![](assets/suppression-list-download-csv.png)
+![](../assets/suppression-list-download-csv.png)
 
 ## Undertryckningskategorier och orsaker {#suppression-categories-and-reasons}
 
@@ -83,7 +83,7 @@ Undertryckningskategorierna är följande:
 
 För varje e-postadress som visas kan du även kontrollera **[!UICONTROL Type]** (e-post eller domän), **[!UICONTROL Reason]** för att utesluta den, vem som lagt till den och datumet/tiden som den lades till i listan över inaktiveringar.
 
-![](assets/suppression-list.png)
+![](../assets/suppression-list.png)
 
 Möjliga orsaker till leveransfel är:
 
@@ -111,13 +111,13 @@ Du kan lägga till e-postadresser eller domäner [en åt gången](#add-one-addre
 
 Om du vill göra det väljer du **[!UICONTROL Add email or domain]** och därefter någon av metoderna nedan.
 
-![](assets/suppression-list-add-email.png)
+![](../assets/suppression-list-add-email.png)
 
 ### Lägg till en adress eller domän {#add-one-address-or-domain}
 
 1. Välj **[!UICONTROL One by one]** alternativ.
 
-   ![](assets/suppression-list-add-email-address.png)
+   ![](../assets/suppression-list-add-email-address.png)
 
 1. Välj adresstyp: **[!UICONTROL Email address]** eller **[!UICONTROL Domain address]**.
 
@@ -135,7 +135,7 @@ Om du vill göra det väljer du **[!UICONTROL Add email or domain]** och däreft
 
 1. Välj **[!UICONTROL Upload CSV]** alternativ.
 
-   ![](assets/suppression-list-upload-csv.png)
+   ![](../assets/suppression-list-upload-csv.png)
 
 1. Ladda ned CSV-mallen som ska användas, som innehåller kolumnerna och formatet nedan:
 
@@ -156,7 +156,7 @@ Om du vill göra det väljer du **[!UICONTROL Add email or domain]** och däreft
 
 1. När du är klar drar och släpper du CSV-filen och klickar sedan på **[!UICONTROL Upload file]**.
 
-   ![](assets/suppression-list-upload-file-button.png)
+   ![](../assets/suppression-list-upload-file-button.png)
 
 1. Klicka på **[!UICONTROL Submit]**.
 
@@ -166,13 +166,13 @@ Du kan kontrollera listan med de senaste CSV-filerna som du har överfört.
 
 Om du vill göra det går du till **[!UICONTROL Suppression list]** visa klickar du på **[!UICONTROL Recent uploads]** -knappen.
 
-![](assets/suppression-list-recent-uploads-button.png)
+![](../assets/suppression-list-recent-uploads-button.png)
 
 De senaste överföringarna du skickade och deras motsvarande status visas.
 
 Om en felrapport är kopplad till en fil kan du hämta den för att kontrollera de fel som påträffas.
 
-![](assets/suppression-list-recent-uploads-error.png)
+![](../assets/suppression-list-recent-uploads-error.png)
 
 Nedan visas ett exempel på den typ av poster som du kan hitta i felrapporten:
 

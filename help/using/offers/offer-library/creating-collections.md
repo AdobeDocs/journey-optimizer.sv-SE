@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 0c8808e3-9148-4a33-9fd5-9218e02c2dfd
-source-git-commit: 14ab70aa32f4f7978b8c72b3981d3b55f56fd08b
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 3%
@@ -21,7 +21,7 @@ Med samlingar kan du ordna dina erbjudanden genom att gruppera om dem i olika ka
 
 Listan med erbjudandesamlingar finns i **[!UICONTROL Offers]** -menyn.
 
-![](../assets/collections_list.png)
+![](../../assets/collections_list.png)
 
 Du kan skapa två typer av samlingar:
 
@@ -35,17 +35,17 @@ Så här skapar du en samling:
 
 1. Ange namn och typ av samling som ska skapas.
 
-   ![](../assets/collection_create.png)
+   ![](../../assets/collection_create.png)
 
 1. Om du vill skapa en dynamisk samling använder du den vänstra rutan för att välja taggen för erbjudandena som ska läggas till i samlingen. Klicka sedan på **[!UICONTROL Save]**. Alla erbjudanden med den valda taggen sparas i samlingen.
 
    Mer information om hur du skapar taggar finns i [Skapa taggar](../offer-library/creating-tags.md).
 
-   ![](../assets/dynamic_collection.png)
+   ![](../../assets/dynamic_collection.png)
 
 1. Om du vill skapa en statisk samling använder du den vänstra rutan för att filtrera listan med erbjudanden (status, tagg, datum, kanal, innehållstyp) och väljer sedan de erbjudanden som ska läggas till i samlingen.
 
-   ![](../assets/static_collection.png)
+   ![](../../assets/static_collection.png)
 
    >[!NOTE]
    >
@@ -53,7 +53,7 @@ Så här skapar du en samling:
 
 1. När samlingen har skapats visas den i listan. Du kan markera den om du vill redigera eller ta bort den.
 
-   ![](../assets/collection_created.png)
+   ![](../../assets/collection_created.png)
 
 ## Videokurs {#video}
 

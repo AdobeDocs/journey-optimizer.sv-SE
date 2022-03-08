@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 03fbc4f4-b0a8-46d5-91f9-620685b11493
-source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 81%
@@ -23,11 +23,11 @@ Kontrollera att alla aktiviteter är konfigurerade korrekt innan du testar och p
 
 Fel visas med en varningssymbol på själva aktiviteterna på arbetsytan. Placera markören på utropstecknet för att visa felmeddelandet. Klicka på aktiviteten för att se raden i felet med en varning. Om till exempel ett obligatoriskt fält är tomt visas ett fel.
 
-![](assets/journey63.png)
+![](../assets/journey63.png)
 
 Om till exempel två aktiviteter inte är kopplade visas en varning på arbetsytan.
 
-![](assets/canvas-disconnected.png)
+![](../assets/canvas-disconnected.png)
 
 Bredvid växlingsknappen **[!UICONTROL Test]** och knappen **[!UICONTROL Publish]** kan ett varningstecken visas. Det här varningstecknet visar fel som upptäckts av systemet och förhindrar aktivering av testläget eller publicering av resan. Vanligtvis är fel som upptäcks av systemet länkade till fel som visas i aktiviteterna. Ibland är de dock länkade till andra problem. I det här fallet kan du visa dem och försöka identifiera problemet med hjälp av felbeskrivningen. Om du inte kan identifiera problemet kan du kopiera informationen och skicka den till administratören eller till supporten. Observera att fel som blockerar testet och publikationen är snarlika.
 
@@ -35,7 +35,7 @@ Systemet upptäcker två typer av problem – fel och varningar. Fel blockerar p
 
 Två olika färger kan visas på tecknet bredvid växlingsknappen **[!UICONTROL Test]** och knappen **[!UICONTROL Publish]**. Vid fel visas tecknet i rött. Vid varningar visas tecknet i orange.
 
-![](assets/journey75.png)
+![](../assets/journey75.png)
 
 Fel och varningar som är globala för resan visas först i listan. Fel och varningar som rör specifika aktiviteter listas därefter per aktivitetsordning eller när de dyker upp i resan från vänster till höger. Med knappen **[!UICONTROL Copy details]** kopieras teknisk information om resan som supportteamet kan använda för att felsöka.
 

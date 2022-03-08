@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 7d9c3d31-af57-4f41-aa23-6efa5b785260
-source-git-commit: fab36ea43e92babfacdbaeeaecf6c551c00b3c5b
+source-git-commit: 68407db81224e9c2b6930c800e57b65e081781fe
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ I detta fall krävs följande krav:
 
    ![](assets/perso-uc9.png)
 
-1. Välj **Sammanhangsberoende attribut** -menyn. Sammanhangsberoende attribut är bara tillgängliga om en resa har skickat kontextuella data till meddelandet. Klicka **Journey Orchestration**. Följande sammanhangsberoende information visas:
+1. Välj **Kontext** kategori. Det här objektet är bara tillgängligt om en resa har passerat kontextdata till meddelandet. Klicka **Journey Orchestration**. Följande sammanhangsberoende information visas:
 
    * **Händelser**: den här kategorin grupperar alla fält från händelser som placerats före **Meddelande** verksamhet under resan.
    * **Reseegenskaper**: de tekniska fält som rör resan för en viss profil, t.ex. rese-ID eller de specifika fel som påträffats. Läs mer i [Journey Orchestration dokumentation](../building-journeys/expression/journey-properties.md).
@@ -94,11 +94,11 @@ I detta fall krävs följande krav:
 
    ![](assets/perso-uc12.png)
 
-1. Skriv meddelandet och infoga från ****[!UICONTROL Contextual attributes]** -menyn, namnet på orderobjektet och orderförloppet.
+1. Skriv meddelandet och infoga från **Kontext** kategori, orderartikelns namn och orderförloppet.
 
    ![](assets/perso-uc13.png)
 
-1. Välj **Erbjudandebeslut** om du vill infoga en offer decisioning-variabel. Välj placering och klicka på **+** -ikonen bredvid beslutet (tidigare kallat&quot;erbjudandeaktivitet&quot;) för att lägga till den i brödtexten.
+1. I listrutan väljer du **Beslut om erbjudandet** om du vill infoga en offer decisioning-variabel. Välj placering och klicka på **+** -ikonen bredvid beslutet (tidigare kallat&quot;erbjudandeaktivitet&quot;) för att lägga till den i brödtexten.
 
    ![](assets/perso-uc14.png)
 

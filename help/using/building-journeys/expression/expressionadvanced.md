@@ -6,7 +6,7 @@ feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: 9ea6cc3a-6a1b-4e8f-82ff-f8b1812617d7
-source-git-commit: 5d9a729c58cda2dd2600f2076a460f78d21641f8
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 85%
@@ -20,7 +20,7 @@ Den är också tillgänglig varje gång du behöver definiera åtgärdsparametra
 
 Den avancerade uttrycksredigeraren har en uppsättning inbyggda funktioner och operatorer som du använder för att manipulera värden och definiera ett uttryck som passar dina behov. Med den avancerade uttrycksredigeraren kan du även definiera värden för den externa datakällans parameter samt ändra kartläggningsfält och samlingar, till exempel upplevelsehändelser.
 
-![](../assets/journey65.png)
+![](../../assets/journey65.png)
 
 _Gränssnittet för den avancerade uttrycksredigeraren_
 
@@ -44,7 +44,7 @@ Du kan komma åt den avancerade uttrycksredigeraren på olika sätt.
 
 * När du skapar ett villkor för datakällan kan du klicka på **[!UICONTROL Advanced mode]** för att komma åt den avancerade redigeraren.
 
-   ![](../assets/journeyuc2_33.png)
+   ![](../../assets/journeyuc2_33.png)
 
 * När du skapar en anpassad timer visas den avancerade redigeraren direkt.
 * Klicka på **[!UICONTROL Advanced mode]** när du kartlägger en åtgärdsparameter.
@@ -53,7 +53,7 @@ Du kan komma åt den avancerade uttrycksredigeraren på olika sätt.
 
 Med den här skärmen kan du ange ett uttryck manuellt.
 
-![](../assets/journey70.png)
+![](../../assets/journey70.png)
 
 Till vänster på skärmen visas tillgängliga fält och funktioner:
 
@@ -63,20 +63,20 @@ Till vänster på skärmen visas tillgängliga fält och funktioner:
 * **[!UICONTROL Journey properties]**: I det här avsnittet grupperas de tekniska fält som rör resan för en viss profil. [Läs mer](journey-properties.md)
 * **[!UICONTROL Functions]**: välj i listan bland inbyggda funktioner som du använder för att utföra komplex filtrering. Funktionerna är organiserade per kategori. [Läs mer](functions.md)
 
-![](../assets/journey65.png)
+![](../../assets/journey65.png)
 
 En mekanism för automatisk komplettering visar sammanhangsberoende förslag.
 
-![](../assets/journey68.png)
+![](../../assets/journey68.png)
 
 En mekanism för syntaxvalidering kontrollerar kodens integritet. Fel visas överst på redigeraren.
 
-![](../assets/journey69.png)
+![](../../assets/journey69.png)
 
 **Behovet av parametrar när du skapar villkor med den avancerade uttrycksredigeraren**
 
 Om du väljer ett fält från en extern datakälla som kräver att en parameter anropas (se [den här sidan](../../datasource/external-data-sources.md). I en väderrelaterad datakälla används till exempel parametern &quot;city&quot; ofta. Därför måste du välja var du vill hämta den här parametern &quot;city&quot;. Funktioner kan även tillämpas på parametrar om man vill utföra formateringsändringar eller sammansättningar.
 
-![](../assets/journeyuc2_19.png)
+![](../../assets/journeyuc2_19.png)
 
 För mer komplicerade användningsfall kan du definiera parametrarnas värden med nyckelordet &quot;params&quot; för att inkludera dem från datakällan i huvuduttrycket. Läs [den här sidan](../expression/field-references.md).

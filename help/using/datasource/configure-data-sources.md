@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9b0dcffb-f543-4066-850c-67ec33f74a31
-source-git-commit: bd35bf2ec4c1b2898007d670fc20626f06cc3750
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 8%
@@ -23,11 +23,11 @@ Här följer de huvudsakliga konfigurationsstegen för datakällor:
 
 1. Välj **[!UICONTROL Configurations]**. I  **[!UICONTROL Data Sources]** avsnitt, klicka **[!UICONTROL Manage]**. Listan med datakällor visas. Se [den här sidan](../start/user-interface.md) för mer information om gränssnittet.
 
-   ![](assets/journey18.png)
+   ![](../assets/journey18.png)
 
 1. Sedan kan du antingen lägga till fältgrupper i den inbyggda datakällan (se [den här sidan](../datasource/adobe-experience-platform-data-source.md)) eller skapa en ny extern datakälla (se [den här sidan](../datasource/external-data-sources.md)) och associerade fältgrupper (se [den här sidan](../datasource/configure-data-sources.md#define-field-groups)).
 
-   ![](assets/journey23.png)
+   ![](../assets/journey23.png)
 
 1. Klicka på **[!UICONTROL Save]**.
 
@@ -51,7 +51,7 @@ Antalet resor som använder en fältgrupp visas i **[!UICONTROL Used in]** fält
 >
 >Observera att om en fältgrupp inte har något fält visas den inte i uttrycksredigeraren.
 
-![](assets/journey3bis.png)
+![](../assets/journey3bis.png)
 
 ## Livscykel för fältgrupp {#field-group-lifecycle}
 

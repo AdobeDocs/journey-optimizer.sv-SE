@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: f85563e2-fc83-49fb-8771-0f0656a90f9a
-source-git-commit: 14ab70aa32f4f7978b8c72b3981d3b55f56fd08b
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 67%
@@ -17,13 +17,13 @@ ht-degree: 67%
 
 Du kommer åt DecisioningEvents-XDM-schemat direkt från en datauppsättning som innehåller beslutshanteringshändelser.
 
-![](../assets/access-schema.png)
+![](../../assets/access-schema.png)
 
 Schemat innehåller alla fält som krävs för att skicka information från Beslutshantering till Adobe Experience Platform.
 
 Om du vill ha mer information om ett visst fält markerar du det för att visa en informationsruta med fältets egenskaper.
 
-![](../assets/schema-fields.png)
+![](../../assets/schema-fields.png)
 
 Detaljerad information om hur du arbetar med XDM-scheman och fält finns i Upplevelsedatamodell-dokumentationen:
 

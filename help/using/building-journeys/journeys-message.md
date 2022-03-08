@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '793'
 ht-degree: 0%
@@ -23,27 +23,27 @@ Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa e
 
 1. Som alltid, starta din resa med ett evenemang eller en **Läs segment** aktivitet.
 
-   ![](assets/jo-message0.png)
+   ![](../assets/jo-message0.png)
 
 1. Från **Åtgärder** dra och släpp en **Meddelande** till arbetsytan.
 
-   ![](assets/jo-message1.png)
+   ![](../assets/jo-message1.png)
 
 1. Lägg till en etikett och en beskrivning.
 
-   ![](assets/jo-message2.png)
+   ![](../assets/jo-message2.png)
 
 1. Klicka inuti **Meddelande** fält. En lista över tillgängliga meddelanden som utformats i Journey Optimizer visas. Du kan filtrera listan efter status.
 
-   ![](assets/jo-message3.png)
+   ![](../assets/jo-message3.png)
 
 1. Välj ett meddelande och klicka på **Välj**. Du kan också skapa ett nytt meddelande direkt från den här skärmen genom att klicka på **Skapa meddelande**.
 
-   ![](assets/jo-message4-ter.png)
+   ![](../assets/jo-message4-ter.png)
 
    Om du vill kontrollera meddelandet kan du klicka på **Öppna meddelandet** ikonen i **Meddelande** fält. Meddelandet öppnas på en ny flik.
 
-   ![](assets/jo-message4-bis.png)
+   ![](../assets/jo-message4-bis.png)
 
 1. Lägg till nästa steg på din resa.
 
@@ -51,7 +51,7 @@ Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa e
 
 The **[!UICONTROL Email parameters]** och **[!UICONTROL Push parameters]** -avsnitt visar skrivskyddade fält. Du utför vanligtvis den här konfigurationen när du skapar meddelandet. Se [det här avsnittet](../messages/get-started-content.md).
 
-![](assets/jo-message4.png)
+![](../assets/jo-message4.png)
 
 Om du vill tvinga fram ett visst värde kan du använda **Aktivera åsidosättning av parametrar** till höger om fältet. Det här alternativet kan vara användbart för olika syften:
 
@@ -105,7 +105,7 @@ Den här informationen lagras med användarens profil och hänvisas till vid kö
 
 Aktivera optimering av sändningstid för ett e-postmeddelande eller push-meddelande genom att välja **Sändningsoptimering** växla från meddelandeaktivitetsparametrarna.
 
-![](assets/jo-message5.png)
+![](../assets/jo-message5.png)
 
 För e-postmeddelanden väljer du om du vill optimera e-postöppningar eller e-postklick genom att välja lämplig alternativknapp. Standardinställningen för push-meddelanden är öppningsalternativet, eftersom klickningar inte gäller för push-meddelanden.
 

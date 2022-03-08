@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 7e70b8a9-7fac-4450-ad9c-597fe0496df9
-source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Den här typen av händelse kan placeras som det första steget eller senare und
 
 1. Ta fram **[!UICONTROL Events]** kategori och släpp en **[!UICONTROL Segment Qualification]** på arbetsytan.
 
-   ![](assets/segment5.png)
+   ![](../assets/segment5.png)
 
 1. Lägg till en **[!UICONTROL Label]** till aktiviteten. Det här steget är valfritt.
 
@@ -42,13 +42,13 @@ Den här typen av händelse kan placeras som det första steget eller senare und
    >
    >Observera att du kan anpassa kolumnerna som visas i listan och sortera dem.
 
-   ![](assets/segment6.png)
+   ![](../assets/segment6.png)
 
    När segmentet har lagts till visas **[!UICONTROL Copy]** kan du kopiera dess namn och ID:
 
    `{"name":"Loyalty membership“,”id":"8597c5dc-70e3-4b05-8fb9-7e938f5c07a3"}`
 
-   ![](assets/segment-copy.png)
+   ![](../assets/segment-copy.png)
 
 1. I **[!UICONTROL Behaviour]** väljer du om du vill lyssna på segmentingångar, utgångar eller både och.
 
@@ -58,7 +58,7 @@ Den här typen av händelse kan placeras som det första steget eller senare und
 
 1. Välj ett namnutrymme. Detta behövs bara om händelsen är placerad som det första steget i resan.
 
-   ![](assets/segment7.png)
+   ![](../assets/segment7.png)
 
 Nyttolasten innehåller följande kontextinformation som du kan använda i villkor och åtgärder:
 
@@ -70,7 +70,7 @@ När du använder uttrycksredigeraren i ett villkor eller en åtgärd som följe
 
 Se [Villkorsaktivitet](../building-journeys/condition-activity.md#about_condition).
 
-![](assets/segment8.png)
+![](../assets/segment8.png)
 
 En ny resa som innehåller en segmentkvalificeringshändelse kan användas tio minuter efter att du har publicerat den. Det här tidsintervallet motsvarar cacheuppdateringsintervallet för den dedikerade tjänsten. Du måste därför vänta tio minuter innan du kan använda den här resan.
 
@@ -98,10 +98,10 @@ Här följer några tips som hjälper dig att undvika överbelastade system som 
 
 Använd inte **[!UICONTROL Segment Qualification]** -aktiviteten, ett batchsegment omedelbart efter att det har skapats. Den första beräkningstopp undviks. Observera att det blir en gul varning på arbetsytan om du ska använda ett segment som aldrig har beräknats.
 
-![](assets/segment-error.png)
+![](../assets/segment-error.png)
 
 Införa en begränsning för datakällor och åtgärder som används under resor för att undvika att överbelasta dem. Läs mer i [Journey Orchestration dokumentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html){target=&quot;_blank&quot;}. Observera att begränsningsregeln inte har några nya försök. Om du vill försöka igen måste du markera kryssrutan för att använda en alternativ sökväg under resan **[!UICONTROL Add an alternative path in case of a timeout or an error]** i villkor eller åtgärder.
 
 Innan du använder segmentet i en produktionsresa ska du alltid först utvärdera antalet individer som kvalificerar sig för det här segmentet varje dag. Om du vill göra det kan du kontrollera **[!UICONTROL Segments]** öppnar du segmentet och tittar på **[!UICONTROL Profiles over time]** diagram.
 
-![](assets/segment-overload.png)
+![](../assets/segment-overload.png)

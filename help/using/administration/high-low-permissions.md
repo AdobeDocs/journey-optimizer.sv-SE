@@ -5,16 +5,16 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
-source-git-commit: db6e970230b4d22b50c2035ecf5e7307e66feb2d
+source-git-commit: 68407db81224e9c2b6930c800e57b65e081781fe
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
 
 # Behörighetsnivåer {#high-low-permissions}
 
-![](assets/do-not-localize/permissions.png)
+![](../assets/do-not-localize/permissions.png)
 
 Varje produktprofil består av behörigheter som ger användarna tillgång till de olika funktionerna.
 De kan delas in i två typer:
@@ -417,13 +417,16 @@ Den innehåller följande lågnivåbehörigheter:
    * profiles.read
    * datasets.read
 
-## Journey Optimizer Library-funktion {library-permissions}
+### [!DNL Manage landing page settings] behörighet {#manage-landing-page-settings}
 
-### Hantera biblioteksobjekt {#library-items}
-
-The **[!DNL Manage Library Items]** behörighet på hög nivå tillåter användare att lägga till och ta bort sparade uttryck i [!DNL Journey Optimizer] Bibliotek.
+The **[!DNL Manage landing page settings]** behörighet på hög nivå ger användare möjlighet att läsa, skapa och redigera underdomäner och förinställningar för landningssidor.
 
 Den innehåller följande lågnivåbehörigheter:
 
-* library_item.create
-* library_item.delete
+* Specifikt för Journey Optimizer:
+   * landing_page_subdomain.read
+   * landing_page_subdomain.write
+   * landing_page_subdomain.delete
+   * landing_page_preset.read
+   * landing_page_preset.write
+   * landing_page_preset.delete

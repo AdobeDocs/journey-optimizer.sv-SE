@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: dfaf887e-d4b3-45b0-8297-bffdb0abff4d
-source-git-commit: 14ab70aa32f4f7978b8c72b3981d3b55f56fd08b
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 4%
@@ -21,17 +21,17 @@ En placering säkerställer att rätt erbjudandeinnehåll visas på rätt plats 
 
 I exemplet nedan finns det tre placeringar som motsvarar olika typer av innehåll (bild, text, HTML).
 
-![](../assets/offers_placement_schema.png)
+![](../../assets/offers_placement_schema.png)
 
 Listan över placeringar finns i **[!UICONTROL Components]** -menyn. Det finns filter som hjälper dig att hämta placeringar utifrån en viss kanal eller ett visst innehåll.
 
-![](../assets/placements_filter.png)
+![](../../assets/placements_filter.png)
 
 Så här skapar du en placering:
 
 1. Klicka på **[!UICONTROL Create placement]**.
 
-   ![](../assets/offers_placement_creation.png)
+   ![](../../assets/offers_placement_creation.png)
 
 1. Definiera placeringens egenskaper:
 
@@ -40,13 +40,13 @@ Så här skapar du en placering:
    * **[!UICONTROL Content type]**: Den typ av innehåll som placeringen ska kunna visa: Text-, HTML- eller bildlänk.
    * **[!UICONTROL Description]**: En beskrivning av placeringen (valfritt).
 
-   ![](../assets/offers_placement_creation_properties.png)
+   ![](../../assets/offers_placement_creation_properties.png)
 
 1. Klicka **[!UICONTROL Save]** för att bekräfta.
 
 1. När placeringen har skapats visas den i placeringslistan. Du kan markera den för att visa dess egenskaper och redigera den.
 
-   ![](../assets/placement_created.png)
+   ![](../../assets/placement_created.png)
 
 ## Videokurs {#video}
 

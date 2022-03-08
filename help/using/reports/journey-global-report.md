@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e851646e-4cef-45e8-97c2-a8f4c9d2cc08
-source-git-commit: fad7eb9feea0d8c21494b4a7c1608369e725023e
+source-git-commit: 68407db81224e9c2b6930c800e57b65e081781fe
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Den globala reserapporten kan nås direkt från din resa med **[!UICONTROL Global report]** -knappen.
 
-![](assets/global_report_1.png)
+![](../assets/global_report_1.png)
 
 Resan **[!UICONTROL Global report]** visas med följande flikar:
 
@@ -31,7 +31,7 @@ Resan **[!UICONTROL Global report]** är uppdelat i olika widgetar som detaljera
 
 Från din resa **[!UICONTROL Global report]**, **[!UICONTROL Journey]** -fliken ger en tydlig bild av de viktigaste spårningsdata som rör kundresan.
 
-![](assets/global_report_2.png)
+![](../assets/global_report_2.png)
 
 The **[!UICONTROL Journey Performance]** kan du se sökvägen till dina målprofiler steg för steg under hela kundresan.
 
@@ -43,11 +43,11 @@ The **[!UICONTROL Journey Statistics]** widgeten visar följande KPI:er:
 
 * **[!UICONTROL Failed individual journey]**: Totalt antal enskilda resor som inte har slutförts.
 
-![](assets/global_report_12.png)
+![](../assets/global_report_12.png)
 
 The **[!UICONTROL Events received by event]**, **[!UICONTROL Events by origin]** och **[!UICONTROL Top events]** kan du se vilken av dina **[!UICONTROL Events]** har körts via diagram och tabeller.
 
-![](assets/global_report_13.png)
+![](../assets/global_report_13.png)
 
 **[!UICONTROL Action Performance]**, **[!UICONTROL Action Error Reasons]** och **[!UICONTROL Top Actions]** -widgetar är den mest framgångsrika åtgärden och felen som inträffade när **[!UICONTROL Actions]** har utlösts.
 
@@ -63,7 +63,7 @@ Från din resa **[!UICONTROL Global report]**, **[!UICONTROL Email]** fliken inn
 
 En detaljerad rapport om en viss e-postleverans finns i [E-posta global rapport](#email-global-report) -avsnitt.
 
-![](assets/global_report_14.png)
+![](../assets/global_report_14.png)
 
 The **[!UICONTROL Email Sending Statistics]** diagram visar hur framgångsrik leveransen är:
 
@@ -107,7 +107,7 @@ The **[!UICONTROL Sending Statistics]** diagrammet innehåller de data som är t
 
 * **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
 
-![](assets/global_report_15.png)
+![](../assets/global_report_15.png)
 
 The **[!UICONTROL Bounce Reasons]** och **[!UICONTROL Bounce categories]** widgetar innehåller tillgängliga data som är relaterade till studsade meddelanden, som:
 
@@ -119,37 +119,14 @@ The **[!UICONTROL Bounce Reasons]** och **[!UICONTROL Bounce categories]** widge
 
 Mer information om studsar finns i [Undertryckningslista](../messages/suppression-list.md) sida.
 
-![](assets/global_report_22.png)
-
-The **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilket fel som inträffade under leveransen.
-
-The **[!UICONTROL Excluded reasons]** I diagram och tabeller visas de olika anledningar som gjorde att användarprofiler som inte ingår i målprofilerna inte kunde ta emot meddelandet.
-
-![](assets/global_report_16.png)
+![](../assets/global_report_16.png)
 
 The **[!UICONTROL Email - Top Url]** diagram- och tabellinformation om vilka URL:er från leveransen som är mest besökta.
 
 The **[!UICONTROL Email - Top recipient domain]** diagram och tabeller visar vilka domäner som är de mest använda av mottagarna för att öppna e-postmeddelandet.
 
-![](assets/global_report_23.png)
-
->[!NOTE]
->
->The **[!UICONTROL Optimized vs non optimized]** och **[!UICONTROL Send time optimization]**  widgetar är bara tillgängliga om alternativet för optimering av sändningstid är aktiverat för leverans. Mer information om optimering av sändningstid finns i [page](../building-journeys/journeys-message.md#send-time-optimization).
-
-The **[!UICONTROL Optimized vs non optimized]** diagram anger huvudinformationen i förhållande till meddelandet, oavsett om de är optimerade eller inte:
-
-* **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
-* **[!UICONTROL Opens]**: Antal gånger som leveransen öppnades i en leverans.
-* **[!UICONTROL Clicks]**: Antal gånger ett innehåll klickades i ett e-postmeddelande.
-
-The **[!UICONTROL Send time optimization]** information om leveransens framgångar beroende på sändningsmetod: optimerad eller normal.
-
-* **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
-* **[!UICONTROL Bounces]**: Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
-
 <!--
-![](assets/global_report_21.png)
+![](../assets/global_report_21.png)
 
 >[!NOTE]
 >
@@ -182,7 +159,7 @@ Från din resa **[!UICONTROL Global report]**, **[!UICONTROL Push]** fliken inne
 
 En detaljerad rapport om en viss push-leverans finns i [Push Global-rapport](#push-global-report).
 
-![](assets/global_report_17.png)
+![](../assets/global_report_17.png)
 
 The **[!UICONTROL Push notification - Sending statistics]** tabellen visar huvudinformationen i förhållande till push-meddelanden med diagram och KPI:er:
 
@@ -224,25 +201,10 @@ The **[!UICONTROL Push notification summary]** diagrammet innehåller data som �
 
 * **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
 
->[!NOTE]
->
->The **[!UICONTROL Optimized vs non optimized]** och **[!UICONTROL Send time optimization]**  widgetar är bara tillgängliga om alternativet för optimering av sändningstid är aktiverat för leverans. Mer information om optimering av sändningstid finns i [page](../building-journeys/journeys-message.md#send-time-optimization).
-
-The **[!UICONTROL Optimized vs non optimized]** diagram anger huvudinformationen i förhållande till meddelandet, oavsett om de är optimerade eller inte:
-
-* **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
-* **[!UICONTROL Opens]**: Antal gånger som leveransen öppnades i en leverans.
-* **[!UICONTROL Actions]**: Totalt antal åtgärder för push-meddelandet som levererats, t.ex. knappklickning eller avbruten.
-
-The **[!UICONTROL Send time optimization]** information om leveransens framgångar beroende på sändningsmetod: optimerad eller normal.
-
-* **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
-* **[!UICONTROL Bounces]**: Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
-
-![](assets/global_report_18.png)
+![](../assets/global_report_18.png)
 
 The **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilket fel som inträffade under leveransen.
 
-![](assets/global_report_19.png)
+![](../assets/global_report_19.png)
 
 The **[!UICONTROL Tracking by platform]**, **[!UICONTROL Sending by platform]** och **[!UICONTROL Breakdown by platform]** diagram och tabeller visar hur bra push-meddelandena är beroende på mottagarens operativsystem.

@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 496c7666-a133-4aeb-be8e-c37b3b9bf5f9
-source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '1167'
 ht-degree: 6%
@@ -23,7 +23,7 @@ Följande typer av villkor är tillgängliga:
 * [Datumvillkor](#date_condition)
 * [Profilände](#profile_cap)
 
-![](assets/journey49.png)
+![](../assets/journey49.png)
 
 ## Om villkorsaktiviteten {#about_condition}
 
@@ -31,13 +31,13 @@ När du använder flera villkor under en resa kan du definiera etiketter för va
 
 Klicka **[!UICONTROL Add a path]** om du vill definiera flera villkor. För varje villkor läggs en ny bana till på arbetsytan efter aktiviteten.
 
-![](assets/journey47.png)
+![](../assets/journey47.png)
 
 Observera att utformningen av resorna har funktionell inverkan. När flera sökvägar definieras efter ett villkor kommer endast den första giltiga sökvägen att köras. Det innebär att du kan ändra prioriteringen av banor genom att placera dem över eller under varandra.
 
 Låt oss till exempel ta exemplet med den första sökvägens villkor&quot;Personen är en VIP&quot; och en andra sökvägs villkor&quot;Personen är en man&quot;. Om en person som uppfyller båda villkoren (en man som är en VIP) klarar det här steget väljs den första banan även om den personen även är berättigad till den andra, eftersom den första sökvägen är &quot;ovan&quot;. Om du vill ändra den här prioriteten flyttar du dina aktiviteter i en annan lodrät ordning.
 
-![](assets/journey48.png)
+![](../assets/journey48.png)
 
 Du kan skapa en annan sökväg för målgrupper som inte uppfyller de definierade villkoren genom att markera **[!UICONTROL Show path for other cases than the one(s) above]**. Observera att det här alternativet inte är tillgängligt vid delning. Se [Procentdelning](#percentage_split).
 
@@ -46,7 +46,7 @@ I det enkla läget kan du utföra enkla frågor baserat på en kombination av f�
 * OCH: en korsning av två kriterier. Endast de element som uppfyller alla villkor beaktas.
 * ELLER: en förening av två kriterier. Element som matchar minst ett av de två villkoren beaktas.
 
-![](assets/journey64.png)
+![](../assets/journey64.png)
 
 Om du använder [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target=&quot;_blank&quot;} för att skapa segment kan du utnyttja dem under dina reseförhållanden. Se [Använda segment i villkor](../building-journeys/condition-activity.md#using-a-segment).
 
@@ -63,7 +63,7 @@ I den enkla redigeraren hittar du även kategorin Reseegenskaper, nedanför kate
 
 På så sätt kan du definiera ett villkor baserat på fält från datakällorna eller händelser som tidigare placerats under resan. Mer information om hur du använder uttrycksredigeraren finns i [Dokumentation för Adobe Journey Orchestration](expression/expressionadvanced.md). Med den avancerade uttrycksredigeraren kan du ställa in mer avancerade villkor för att hantera samlingar eller använda datakällor som kräver att parametrar skickas. Läs [den här sidan](../datasource/external-data-sources.md).
 
-![](assets/journey50.png)
+![](../assets/journey50.png)
 
 ## Tidsvillkor{#time_condition}
 
@@ -73,7 +73,7 @@ På så sätt kan du utföra olika åtgärder beroende på timmen på dagen och/
 >
 >Tidszonen är inte längre specifik för ett villkor och har nu definierats på färdsnivå i färdegenskaperna. Se [den här sidan](../building-journeys/timezone-management.md).
 
-![](assets/journey51.png)
+![](../assets/journey51.png)
 
 ## Procentdelning {#percentage_split}
 
@@ -85,7 +85,7 @@ I testläge väljs alltid den övre grenen när en delning nås. Du kan ordna om
 >
 >Observera att det inte finns någon knapp för att lägga till en bana i det procentuella delningsvillkoret. Antalet banor beror på antalet delningar. I delningsvillkor kan du inte lägga till en sökväg för andra fall eftersom det inte kan ske. Folk kommer alltid att gå in på en av de delade vägarna.
 
-![](assets/journey52.png)
+![](../assets/journey52.png)
 
 ## Datumvillkor {#date_condition}
 
@@ -95,7 +95,7 @@ På så sätt kan du definiera ett annat flöde baserat på datumet. Om personen
 >
 >Tidszonen är inte längre specifik för ett villkor och har nu definierats på färdsnivå i färdegenskaperna. Läs [den här sidan](../building-journeys/timezone-management.md).
 
-![](assets/journey53.png)
+![](../assets/journey53.png)
 
 ## Profilände {#profile_cap}
 
@@ -116,7 +116,7 @@ Här följer de tröskelvärden som ska beaktas för att se till att gränsvärd
 
 Profilände beaktas inte i testläge.
 
-![](assets/profile-cap-condition.png)
+![](../assets/profile-cap-condition.png)
 
 ## Använda segment i villkor {#using-a-segment}
 
@@ -125,15 +125,15 @@ I det här avsnittet beskrivs hur du använder ett segment i ett resevillkor. Me
 Följ de här stegen om du vill använda ett segment i ett resevillkor:
 
 1. Öppna en resa, släpp en **[!UICONTROL Condition]** och välj **Villkor för datakälla**.
-   ![](assets/journey47.png)
+   ![](../assets/journey47.png)
 
 1. Klicka **[!UICONTROL Add a path]** för varje extra sökväg som behövs. För varje bana klickar du på **[!UICONTROL Expression]** fält.
 
-   ![](assets/segment3.png)
+   ![](../assets/segment3.png)
 
 1. På vänster sida, unfold **[!UICONTROL Segments]** nod. Dra och släpp det segment som du vill använda för villkoret. Som standard är villkoret i segmentet sant.
 
-   ![](assets/segment4.png)
+   ![](../assets/segment4.png)
 
    >[!NOTE]
    >

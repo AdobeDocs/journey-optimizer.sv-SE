@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 3bcc08d6-1210-4ff9-92f4-edee8285b469
-source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 2%
@@ -38,7 +38,7 @@ Tidszonen kan också korrigeras. Rensa den fördefinierade tidszonen och välj e
 
 Om du vill göra det går du till **[!UICONTROL Journey Properties]** väljer du en tidszon.
 
-![](assets/journey72.png)
+![](../assets/journey72.png)
 
 ## Använda profiler för att definiera resetidszonen {#timezone-from-profiles}
 
@@ -50,7 +50,7 @@ Om den enskilda personens profil inte innehåller någon tidszon är den tidszon
 
 Gör så här: **[!UICONTROL Properties]**, kontrollera **[!UICONTROL Use Profile timezone in waits and conditions]**.
 
-![](assets/journey73.png)
+![](../assets/journey73.png)
 
 ## Använda tidszoner i uttryck {#timezone-in-expressions}
 

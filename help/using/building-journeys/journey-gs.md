@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '1721'
 ht-degree: 6%
@@ -21,19 +21,19 @@ För att kunna skicka meddelanden med resor krävs följande konfiguration:
 
 1. **Konfigurera en händelse**: Om du vill utlösa dina resor tills vidare när en händelse tas emot, måste du konfigurera en händelse. Du definierar den förväntade informationen och hur den ska behandlas. Det här steget utförs av en **teknisk användare**. [Läs mer](../event/about-events.md).
 
-   ![](assets/jo-event7bis.png)
+   ![](../assets/jo-event7bis.png)
 
 1. **Skapa ett segment**: resan även kan avlyssna Adobe Experience Platform-segment för att skicka meddelanden i grupp till en viss uppsättning profiler. Därför måste ni skapa segment. [Läs mer](../segment/about-segments.md).
 
-   ![](assets/segment2.png)
+   ![](../assets/segment2.png)
 
 1. **Konfigurera datakällan**: Du kan definiera en anslutning till ett system för att hämta ytterligare information som ska användas i dina resor, till exempel under dina förhållanden. En inbyggd datakälla i Adobe Experience Platform konfigureras även vid tidpunkten för etablering. Det här steget är inte nödvändigt om du bara utnyttjar data från händelserna under din resa. Det här steget utförs av en **teknisk användare**. [Läs mer](../datasource/about-data-sources.md)
 
-   ![](assets/jo-datasource.png)
+   ![](../assets/jo-datasource.png)
 
 1. **Konfigurera en åtgärd**: Journey Optimizer meddelandefunktioner är inbyggda, du behöver bara utforma ditt innehåll och publicera ditt budskap. Se [det här avsnittet](../messages/get-started-content.md). Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en anpassad åtgärd. Läs mer om detta [section](../action/action.md). Det här steget utförs av en **teknisk användare**.
 
-   ![](assets/create-content-push.png)
+   ![](../assets/create-content-push.png)
 
 ## Bygga din resa{#jo-build}
 
@@ -43,17 +43,17 @@ Här är de viktigaste stegen för att skicka meddelanden via resor:
 
 1. Klicka på **[!UICONTROL Journeys]**. Listan över resor visas.
 
-   ![](assets/interface-journeys.png)
+   ![](../assets/interface-journeys.png)
 
 1. Klicka **[!UICONTROL Create Journey]** för att skapa en ny resa.
 
 1. Redigera resans egenskaper i konfigurationsrutan som visas till höger. Läs mer om detta [section](journey-gs.md#change-properties).
 
-   ![](assets/jo-properties.png)
+   ![](../assets/jo-properties.png)
 
 1. Börja med att dra och släppa en händelse eller en **Läs segment** från paletten till arbetsytan. Mer information om resedesign finns i [det här avsnittet](using-the-journey-designer.md).
 
-   ![](assets/read-segment.png)
+   ![](../assets/read-segment.png)
 
 1. Dra och släpp nästa steg som personen kommer att följa. Du kan till exempel lägga till ett villkor följt av ett meddelande. Mer information om aktiviteter finns i [det här avsnittet](using-the-journey-designer.md).
 
@@ -61,11 +61,11 @@ Här är de viktigaste stegen för att skicka meddelanden via resor:
 
 1. Publicera resan för att aktivera den. Läs mer om detta [section](publishing-the-journey.md).
 
-   ![](assets/jo-journeyuc2_32bis.png)
+   ![](../assets/jo-journeyuc2_32bis.png)
 
 1. Övervaka din resa med de dedikerade rapportverktygen för att mäta hur effektiv din resa är. Läs mer om detta [section](../reports/live-report.md).
 
-   ![](assets/jo-dynamic_report_journey_12.png)
+   ![](../assets/jo-dynamic_report_journey_12.png)
 
 ## Ändra egenskaper {#change-properties}
 
@@ -77,7 +77,7 @@ På den här skärmen visas publiceringsdatumet och namnet på den användare so
 
 The **Kopiera teknisk information** Med kan du kopiera teknisk information om den resa som supportteamet kan använda för att felsöka. Följande information kopieras: JourneyVersion UID, OrgID, orgName, sandboxName, lastDeployedBy, lastDeployedAt.
 
-![](assets/journey32.png)
+![](../assets/journey32.png)
 
 ### Ingång{#entrance}
 
@@ -133,11 +133,11 @@ Om något av kraven inte är uppfyllt, är inte sprängningsläget tillgängligt
 
 Aktivera Burst-läget genom att öppna resan och klicka på pennikonen i det övre högra hörnet för att komma åt resans egenskaper. Aktivera sedan **Aktivera sprängningsläge** växla.
 
-![](assets/burst.png)
+![](../assets/burst.png)
 
 Burst-läget inaktiveras om du ändrar en burst-resa och lägger till en aktivitet som inte är kompatibel med burst (meddelande, annan åtgärd, en händelse osv.). Ett meddelande visas.
 
-![](assets/burst2.png)
+![](../assets/burst2.png)
 
 Testa och publicera sedan din resa som vanligt. Testlägesmeddelanden skickas inte via burst-läget.
 
@@ -178,14 +178,14 @@ En stängd reseversion kan inte startas om eller tas bort. Du kan skapa en ny ve
 
 Om du vill stänga en resa från listan över resor klickar du på **[!UICONTROL Ellipsis]** knapp som finns till höger om resenamnet och väljer **[!UICONTROL Close to new entrances]**.
 
-![](assets/journey-finish-quick-action.png)
+![](../assets/journey-finish-quick-action.png)
 
 Du kan även:
 
 1. I **[!UICONTROL Journeys]** klickar du på den resa du vill stänga.
 1. Klicka på nedpilen längst upp till höger.
 
-   ![](assets/finish_drop_down_list.png)
+   ![](../assets/finish_drop_down_list.png)
 
 1. Klicka på **[!UICONTROL Close to new entrances]**. En dialogruta visas.
 1. Klicka **[!UICONTROL Close to new entrances]** för att bekräfta.
@@ -200,14 +200,14 @@ När den stoppas får en resa statusen **[!UICONTROL Stopped]**.
 
 Du kan till exempel stoppa en resa om en marknadsförare upptäcker att resan riktar sig mot fel målgrupp eller en anpassad åtgärd som ska leverera meddelanden inte fungerar korrekt. Om du vill stoppa en resa från listan över resor klickar du på **[!UICONTROL Ellipsis]** knapp som finns till höger om resenamnet och väljer **[!UICONTROL Stop]**.
 
-![](assets/journey-finish-quick-action.png)
+![](../assets/journey-finish-quick-action.png)
 
 Du kan även:
 
 1. I **[!UICONTROL Journeys]** klickar du på den resa du vill stoppa.
 1. Klicka på nedpilen i det övre högra hörnet.
 
-![](assets/finish_drop_down_list.png)
+![](../assets/finish_drop_down_list.png)
 
 1. Klicka på **[!UICONTROL Stop]**. En dialogruta visas.
 1. Klicka **[!UICONTROL Stop]** för att bekräfta.

@@ -5,7 +5,7 @@ feature: Schemas
 role: User
 level: Beginner
 exl-id: 359ea3c6-7746-469e-8a24-624f9726f2d8
-source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 5%
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 Med Adobe Journey Optimizer kan data hämtas från externa källor samtidigt som du kan strukturera, märka och förbättra inkommande data med hjälp av plattformstjänster. Du kan importera data från en mängd olika källor, till exempel Adobe-program, molnbaserade lager, databaser och många andra.
 
-![](assets/sources-home.png)
+![](../assets/sources-home.png)
 
 Läs om källanslutningar och hur du konfigurerar dem i Journey Optimizer i den här videon:
 

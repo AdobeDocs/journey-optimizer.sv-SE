@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att leverera sammankopplade, kontextuella och personaliserade upplevelser till kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: f2267f82453cc00be86f1a279496aaf4e9218c5f
+source-git-commit: dcadbbcf8b2cd8422a189b8d02f222f32dd12c54
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '921'
 ht-degree: 47%
 
 ---
@@ -48,6 +48,15 @@ ht-degree: 47%
       + [Kontrollera aviseringar](using/messages/alerts.md)
       + [Publicera meddelanden](using/messages/publish-manage-message.md)
    + [Hantera medgivande](using/messages/consent.md)
++ Landningssidor {#landing-pages}
+   + [Kom igång med landningssidor](using/landing-pages/get-started-lp.md)
+   + [Skapa en landningssida](using/landing-pages/create-lp.md)
+   + [Utforma en landningssida](using/landing-pages/design-lp.md)
+   + [Skapa en prenumerationslista](using/landing-pages/subscription-list.md)
+   + [Användningsfall](using/landing-pages/lp-use-cases.md)
+   + Rapportering {#lp-reporting}
+      + [Rapportering av landningssida](using/landing-pages/lp-report.md)
+      + [Rapportering av prenumerationslista](using/landing-pages/subscription-report.md)
 + Personalisering{#personalization}
    + [Kom igång med personalisering](using/personalization/personalize.md)
    + [Anpassningssammanhang](using/personalization/personalization-contexts.md)
@@ -56,7 +65,6 @@ ht-degree: 47%
       + Arbeta med uttrycksredigeraren {#expression-editor}
          + [Om uttrycksredigeraren](using/personalization/personalization-build-expressions.md)
          + [Lägg till attribut i favoriter](using/personalization/personalization-favorites.md)
-         + [Arbeta med sparade uttryck](using/personalization/personalization-library.md)
          + [Validering av personalisering](using/personalization/personalization-validation.md)
       + Hjälpfunktioner{#functions}
          + [Kom igång med hjälpfunktioner](using/personalization/functions/functions.md)
@@ -224,15 +232,6 @@ ht-degree: 47%
       + [Kom igång med leverans](using/messages/deliverability.md)
       + [Undertryckningslista](using/messages/suppression-list.md)
       + [Tillåtelselista](using/messages/allow-list.md)
-+ Landningssidor {#landing-pages}
-   + [Kom igång med landningssidor](using/landing-pages/get-started-lp.md)
-   + [Skapa en landningssida](using/landing-pages/create-lp.md)
-   + [Utforma en landningssida](using/landing-pages/design-lp.md)
-   + [Skapa en prenumerationslista](using/landing-pages/subscription-list.md)
-   + [Användningsfall](using/landing-pages/lp-use-cases.md)
-   + Rapportering {#lp-reporting}
-      + [Rapportering av landningssida](using/landing-pages/lp-report.md)
-      + [Rapportering av prenumerationslista](using/landing-pages/subscription-report.md)
 + Beslutsledning {#offer-decisioniong}
    + Kom igång med beslutshantering {#get-started-decision}
       + [Om beslutshantering](using/offers/get-started/starting-offer-decisioning.md)
@@ -338,6 +337,7 @@ ht-degree: 47%
          + [Ändra primär e-postadress](using/configuration/primary-email-addresses.md)
       + [Konfigurera SMS-kanal](using/configuration/sms-configuration.md)
       + [Skapa meddelandeförinställningar](using/configuration/message-presets.md)
+   + [Konfigurera landningssidor](using/configuration/lp-configuration.md)
    + Konfigurera resor {#configure-journeys}
       + [Om datakällor, händelser och åtgärder](using/configuration/about-data-sources-events-actions.md)
       + [Integrera med externa system](using/configuration/external-systems.md)

@@ -6,7 +6,7 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
-source-git-commit: 7c9f04b8d3faa171444bfa0adc537b5faabde37e
+source-git-commit: 68407db81224e9c2b6930c800e57b65e081781fe
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Så här konfigurerar du din SMS-leverantör med Journey Optimizer:
 
 1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL API Credentials]** menyn och klicka sedan på **[!UICONTROL Create API credential]**.
 
-   ![](assets/sms_4.png)
+   ![](../assets/sms_4.png)
 
 1. Välj Sinch som **[!UICONTROL SMS vendor]**.
 
@@ -39,7 +39,7 @@ Så här konfigurerar du din SMS-leverantör med Journey Optimizer:
    >
    > Sinch kräver speciella API-autentiseringsuppgifter. För att hitta **[!UICONTROL Service ID]** och **[!UICONTROL API Token]**, gå till SMS > API:er-menyn från ditt Sinch-konto,
 
-   ![](assets/sms_5.png)
+   ![](../assets/sms_5.png)
 
 1. Klicka **[!UICONTROL Submit]** när du är klar med konfigurationen av dina API-autentiseringsuppgifter.
 
@@ -53,11 +53,11 @@ Så här skapar du en meddelandeförinställning:
 
 1. Öppna **[!UICONTROL Channels]** > **[!UICONTROL Branding]** > **[!UICONTROL Message presets]** menyn och klicka sedan på **[!UICONTROL Create Message preset]**.
 
-   ![](assets/preset-create.png)
+   ![](../assets/preset-create.png)
 
 1. Ange ett namn och en beskrivning (valfritt) för förinställningen och välj sedan SMS-kanalen.
 
-   ![](assets/sms_preset.png)
+   ![](../assets/sms_preset.png)
 
    >[!NOTE]
    >
@@ -65,7 +65,7 @@ Så här skapar du en meddelandeförinställning:
 
 1. Konfigurera **SMS** inställningar.
 
-   ![](assets/preset-sms.png)
+   ![](../assets/preset-sms.png)
 
    * Välj **[!UICONTROL SMS Type]** som skickas med förinställningen: **[!UICONTROL Transactional]** eller **[!UICONTROL Marketing]**.
 
@@ -77,7 +77,7 @@ Så här skapar du en meddelandeförinställning:
 
 1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara meddelandeförinställningen som utkast och återuppta konfigurationen senare.
 
-   ![](assets/sms_preset_2.png)
+   ![](../assets/sms_preset_2.png)
 
 1. När meddelandeförinställningen har skapats visas den i listan med **[!UICONTROL Processing]** status.
 
@@ -87,7 +87,7 @@ Så här skapar du en meddelandeförinställning:
 
 1. När kontrollen är klar får meddelandeförinställningen **[!UICONTROL Active]** status. Den är klar att användas för att leverera meddelanden.
 
-   ![](assets/preset-active.png)
+   ![](../assets/preset-active.png)
 
 Du kan nu skicka SMS-meddelanden med Journey Optimizer.
 

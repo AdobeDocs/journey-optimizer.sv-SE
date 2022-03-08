@@ -7,7 +7,7 @@ feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: 81d07ec8-e808-4bc6-97b1-b9f7db2aec22
-source-git-commit: bf9b555d717fe8b6d1e9500ba0a97eaea243dd7f
+source-git-commit: dcadbbcf8b2cd8422a189b8d02f222f32dd12c54
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 4%
@@ -22,7 +22,7 @@ Så här skapar du en rankningsstrategi:
 
 1. Öppna **[!UICONTROL Components]** väljer du **[!UICONTROL AI rankings]** -fliken.
 
-   ![](../assets/ai-ranking-list.png)
+   ![](../../assets/ai-ranking-list.png)
 
    Alla rankningsstrategier som har skapats hittills listas.
 
@@ -30,7 +30,7 @@ Så här skapar du en rankningsstrategi:
 
 1. Fyll i följande fält:
 
-   ![](../assets/ai-ranking-fields.png)
+   ![](../../assets/ai-ranking-fields.png)
 
    * **[!UICONTROL Name]**: Unikt namn som du måste ange.
 
@@ -52,7 +52,7 @@ Så här skapar du en rankningsstrategi:
 
    * **[!UICONTROL Dataset ID]**: För konvertering måste du ange en datauppsättning där händelser samlas in genom att välja den i listrutan. Lär dig hur du skapar en sådan datauppsättning i [det här avsnittet](#create-dataset). <!--This dataset needs to be associated with a schema that must have the **[!UICONTROL Proposition Interactions]** field group (previously known as mixin) associated with it.-->
 
-   ![](../assets/ai-ranking-dataset-id.png)
+   ![](../../assets/ai-ranking-dataset-id.png)
 
    >[!CAUTION]
    >
@@ -60,7 +60,7 @@ Så här skapar du en rankningsstrategi:
 
 1. Spara och aktivera rankningsstrategin.
 
-   ![](../assets/ai-ranking-save-activate.png)
+   ![](../../assets/ai-ranking-save-activate.png)
 
 Det är nu klart att användas i ett beslut om att rangordna kvalificerade erbjudanden för en placering. Läs mer i [det här avsnittet](../offer-activities/configure-offer-selection.md#use-ranking-strategy).<!--TBC?-->
 
@@ -70,11 +70,11 @@ Du måste skapa en datauppsättning där konverteringshändelser samlas in. Bör
 
 1. Från **[!UICONTROL Data Management]** meny, välja **[!UICONTROL Schema]**, går till **[!UICONTROL Browse]** och klicka **[!UICONTROL Create schema]**.
 
-   ![](../assets/ai-ranking-create-schema.png)
+   ![](../../assets/ai-ranking-create-schema.png)
 
 1. Välj **[!UICONTROL XDM ExperienceEvent]**.
 
-   ![](../assets/ai-ranking-xdm-event.png)
+   ![](../../assets/ai-ranking-xdm-event.png)
 
    >[!NOTE]
    >
@@ -83,7 +83,7 @@ Du måste skapa en datauppsättning där konverteringshändelser samlas in. Bör
 
 1. I **[!UICONTROL Search]** -fält, skriv&quot;interaktion för förslag&quot; och välj **[!UICONTROL Experience Event - Proposition Interactions]** fältgrupp.
 
-   ![](../assets/ai-ranking-proposition-interactions.png)
+   ![](../../assets/ai-ranking-proposition-interactions.png)
 
    >[!CAUTION]
    >
@@ -91,7 +91,7 @@ Du måste skapa en datauppsättning där konverteringshändelser samlas in. Bör
 
 1. Klicka på **[!UICONTROL Add field groups]**.
 
-   ![](../assets/ai-ranking-add-field-group.png)
+   ![](../../assets/ai-ranking-add-field-group.png)
 
    >[!NOTE]
    >Fältgruppen kallades tidigare för mixin.
@@ -106,21 +106,21 @@ Du är nu redo att skapa en datauppsättning med det här schemat. Följ stegen 
 
 1. Från **[!UICONTROL Data Management]** meny, välja **[!UICONTROL Datasets]**, går till **[!UICONTROL Browse]** och klicka **[!UICONTROL Create dataset]**.
 
-   ![](../assets/ai-ranking-create-dataset.png)
+   ![](../../assets/ai-ranking-create-dataset.png)
 
 1. Välj **[!UICONTROL Create dataset from schema]**.
 
-   ![](../assets/ai-ranking-create-dataset-from-schema.png)
+   ![](../../assets/ai-ranking-create-dataset-from-schema.png)
 
 1. Välj det schema du just skapade från listan.
 
-   ![](../assets/ai-ranking-dataset-select-schema.png)
+   ![](../../assets/ai-ranking-dataset-select-schema.png)
 
 1. Klicka på **[!UICONTROL Next]**.
 
 1. Ange ett unikt namn för datauppsättningen i **[!UICONTROL Name]** fält och klicka **[!UICONTROL Finish]**.
 
-   ![](../assets/ai-ranking-dataset-name.png)
+   ![](../../assets/ai-ranking-dataset-name.png)
 
 Datamängden är nu klar att väljas för att samla in händelsedata när [skapa en rankningsstrategi](#create-ranking-strategy).
 

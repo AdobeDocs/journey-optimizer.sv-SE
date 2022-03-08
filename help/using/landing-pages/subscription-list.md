@@ -5,10 +5,8 @@ feature: Landing Pages
 topic: Content Management
 role: User
 level: Beginner
-hidefromtoc: true
-hide: true
 exl-id: 5e5419a0-5121-4aa7-a975-b1f08e2918c9
-source-git-commit: c988f0baa8b3c622dfb4f1ff060001a3462ed31e
+source-git-commit: 68407db81224e9c2b6930c800e57b65e081781fe
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 2%
@@ -37,23 +35,23 @@ Följ stegen nedan för att skapa en prenumerationslista.
 
 1. Välj **[!UICONTROL Customer]** > **[!UICONTROL Subscription list]**.
 
-   ![](assets/lp_subscription-lists.png)
+   ![](../assets/lp_subscription-lists.png)
 
 1. Markera knappen **[!UICONTROL Create subscription list]**.
 
-   ![](assets/lp_create-subscription-list.png)
+   ![](../assets/lp_create-subscription-list.png)
 
 1. Lägg till ett namn och en beskrivning. Dessa fält är obligatoriska.
 
 1. Du kan definiera ett startdatum och ett slutdatum.
 
-   ![](assets/lp_subscription-list-dates.png)
+   ![](../assets/lp_subscription-list-dates.png)
 
 1. Klicka på **[!UICONTROL Save]**.
 
 I listan visas alla prenumerationslistor som skapats. Du kan filtrera dem baserat på skapandedatum eller ändringsdatum och deras status.
 
-![](assets/lp_subscription-filters.png)
+![](../assets/lp_subscription-filters.png)
 
 Möjliga statusvärden är följande:
 
@@ -68,13 +66,3 @@ Du kan också använda prenumerationslistor som segment när [byggnadsresor](../
 >[!NOTE]
 >
 >Du kan övervaka hur din prenumerationslista påverkas genom specifika rapporter. [Läs mer](subscription-report.md)
-
-<!--
-
-**Questions**
-
-* Can't see the newly created subscription list in UI because their name included spacing > bug - to follow up (should be fixed for Dec. release)
-
-* Can you update the subscription list in a way other than through a LP? Not in UI but with APIs > to follow up with Fred
-
--->

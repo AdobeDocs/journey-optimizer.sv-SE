@@ -1,29 +1,35 @@
 ---
 title: Använd anpassade åtgärder
 description: Lär dig hur du använder anpassade åtgärder
-feature: Actions
+feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
 exl-id: 2b1b3613-3096-43ec-a860-600dda1d83b2
-source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
+source-git-commit: 68407db81224e9c2b6930c800e57b65e081781fe
 workflow-type: tm+mt
 source-wordcount: '300'
-ht-degree: 18%
+ht-degree: 5%
 
 ---
 
 # Använd anpassade åtgärder {#use-custom-actions}
 
-Med anpassade åtgärder kan du konfigurera anslutningar med ett tredjepartssystem för att skicka meddelanden eller API-anrop. En åtgärd kan konfigureras med alla tjänster från alla leverantörer som kan anropas via ett REST API med en JSON-formaterad nyttolast.
+I aktivitetskonfigurationsrutan visas URL-konfigurationsparametrarna och autentiseringsparametrarna som har konfigurerats för den anpassade åtgärden. [Läs mer](../action/about-custom-action-configuration.md).
+
+>[!NOTE]
+>
+>Du kan inte skicka en enkel samling i anpassade åtgärdsparametrar. Mer komplexa samlingsfält (arrayer med objekt) stöds inte.  Observera också att parametrarna har ett förväntat format (exempel: sträng, decimal osv.). Du måste vara försiktig med att ta hänsyn till dessa förväntade format.
 
 ## URL-konfiguration
-
-Konfigurationsrutan för **Anpassad åtgärd** aktiviteten visar URL-konfigurationsparametrarna och autentiseringsparametrarna som har konfigurerats för den anpassade åtgärden. Du kan inte konfigurera den statiska delen av URL-adressen i resan, utan i den globala konfigurationen för den anpassade åtgärden. [Läs mer](../action/about-custom-action-configuration.md).
 
 ### Dynamisk sökväg
 
 Om URL:en innehåller en dynamisk sökväg anger du sökvägen i **[!UICONTROL Path]** fält.
+
+>[!NOTE]
+>
+>Du kan inte konfigurera den statiska delen av URL-adressen i resan, utan i den globala konfigurationen för den anpassade åtgärden. [Läs mer](../action/about-custom-action-configuration.md).
 
 Om du vill sammanfoga fält och enkla textsträngar använder du strängfunktionerna eller plustecknet (+) i den avancerade uttrycksredigeraren. Omsluter enkla textsträngar med enkla citattecken (&#39;) eller inom dubbla citattecken (&quot;). [Läs mer](expression/expressionadvanced.md).
 
@@ -38,7 +44,7 @@ Den sammanfogade URL:en har följande format:
 
 `https://xxx.yyy.com:8080/somethingstatic/`\&lt;campaign id=&quot;&quot;>`/messages`
 
-![](assets/journey-custom-action-url.png)
+![](../assets/journey-custom-action-url.png)
 
 ### Sidhuvuden
 
@@ -49,7 +55,7 @@ Ange vid behov värdet för dynamiska rubrikfält:
 1. Välj den anpassade åtgärden under resan.
 1. Klicka på pennikonen bredvid rubrikfältet i konfigurationsfönstret **[!UICONTROL URL Configuration]** -avsnitt.
 
-   ![](assets/journey-dynamicheaderfield.png)
+   ![](../assets/journey-dynamicheaderfield.png)
 
 1. Markera ett fält och klicka på **[!UICONTROL OK]**.
 

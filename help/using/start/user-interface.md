@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '1464'
 ht-degree: 7%
@@ -30,7 +30,7 @@ Vilka komponenter och funktioner som är tillgängliga i användargränssnittet 
 
 Använd länkarna till vänster för att bläddra bland funktionerna.
 
-![](assets/ajo-home.png)
+![](../assets/ajo-home.png)
 
 >[!NOTE]
 >
@@ -94,7 +94,7 @@ Nedan finns en fullständig lista över tjänster och funktioner som är tillgä
 
 Utnyttja [!DNL Adobe Journey Optimizer] exempel från startsidan och ge några snabba indata för att skapa en kundresa.
 
-![](assets/use-cases-home.png)
+![](../assets/use-cases-home.png)
 
 Exempel:
 
@@ -248,7 +248,7 @@ Få åtkomst till Adobe Journey Optimizer hjälpsidor från startsidans nedre de
 
 Använd **Hjälp** ikon för att få tillgång till hjälpsidor, kontakta support och dela feedback. Du kan söka efter hjälpartiklar och videoklipp i sökfältet.
 
-![](assets/ajo-help.png)
+![](../assets/ajo-help.png)
 
 ## Webbläsare som stöds {#browsers}
 
@@ -267,10 +267,10 @@ Standardspråket för gränssnittet avgörs av det språk du föredrar i använd
 Så här byter du språk:
 
 * Klicka **Inställningar** från din avatar, längst upp till höger.
-   ![](assets/preferences.png)
+   ![](../assets/preferences.png)
 * Klicka sedan på det språk som visas under din e-postadress
 * Välj önskat språk och klicka på **Spara**. Du kan välja ett andra språk om komponenten som du använder inte är lokaliserad på ditt första språk.
-   ![](assets/select-language.png)
+   ![](../assets/select-language.png)
 
 ## Sökning{#unified-search}
 
@@ -278,11 +278,11 @@ Var som helst från Adobe Journey Optimizer-gränssnittet kan du använda sökfu
 
 Börja skriva in innehåll för att visa de bästa resultaten. Hjälpartiklar om de angivna nyckelorden visas också i resultaten.
 
-![](assets/unified-search.png)
+![](../assets/unified-search.png)
 
 Tryck **Retur** för att få tillgång till alla resultat och filtrera efter affärsobjekt.
 
-![](assets/search-and-filter.png)
+![](../assets/search-and-filter.png)
 
 ## Filterlistor{#filter-lists}
 
@@ -298,12 +298,12 @@ I listan över resor kan du filtrera resorna efter status, typ och version från
 
 Använd **[!UICONTROL Last update]** och **[!UICONTROL Last update by]** kolumner för att kontrollera när den senaste uppdateringen av dina resor gjordes och vem som sparade den.
 
-![](assets/filter-journeys.png)
+![](../assets/filter-journeys.png)
 
 I konfigurationsrutorna Händelse, Datakälla och Åtgärd visas **[!UICONTROL Used in]** fältet visar antalet resor som använder den aktuella händelsen, fältgruppen eller åtgärden. Du kan klicka på knappen **[!UICONTROL View journeys]** för att visa en lista över motsvarande resor.
 
-![](assets/journey3bis.png)
+![](../assets/journey3bis.png)
 
 I de olika listorna kan du utföra grundläggande åtgärder för varje element. Du kan till exempel skapa dubbletter eller radera en post.
 
-![](assets/journey4.png)
+![](../assets/journey4.png)

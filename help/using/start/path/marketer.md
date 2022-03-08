@@ -3,7 +3,7 @@ title: Journey Optimizer Get started for Marketers
 description: Lär dig mer om hur du arbetar med Journey Optimizer som resande
 level: Intermediate
 exl-id: 34304142-3ee8-4081-94b9-e914968c75ba
-source-git-commit: 56f7ec7f69f39ee0715ba65f52c194976f4aa479
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -22,17 +22,17 @@ Se följande avsnitt för att konfigurera din första resa, lägga till erbjudan
 
 1. **Skapa meddelanden**. Lär dig hur du skapar e-post- och push-meddelanden i Journey Optimizer [på den här sidan](../../messages/create-message.md).
 
-   ![](../assets/email_designer_7.png)
+   ![](../../assets/email_designer_7.png)
 
 1. **Lägg till personalisering**. Utnyttja Journey Optimizer personaliseringsmöjligheter för att anpassa budskapet till era målgrupper. Läs mer om personalisering [i det här avsnittet](../../personalization/personalize.md).
 
-   ![](../assets/perso_ee2.png)
+   ![](../../personalization/assets/perso_ee2.png)
 
 1. **Skapa och hantera resurser**. [!DNL Adobe Experience Manager Assets Essentials] har ett enda centraliserat arkiv med resurser som du kan använda för att fylla i dina meddelanden. Läs mer [i det här avsnittet](../../messages/assets-essentials.md).
 
 1. **Lägg till erbjudanden**. Använd [!DNL Journey Optimizer] för att leverera det bästa erbjudandet och upplevelsen till era kunder via alla kontaktytor vid rätt tidpunkt. När ni väl utformat er målgrupp kan ni inrikta er på personaliserade erbjudanden. Läs mer om beslutshantering [i det här avsnittet](../../offers/get-started/starting-offer-decisioning.md).
 
-   ![](../assets/offers-e2e-offers-displayed.png)
+   ![](../../assets/offers-e2e-offers-displayed.png)
 
 1. **Testa och validera dina meddelanden**. När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du infogade [personaliserat innehåll](../../personalization/personalize.md)kommer du att kunna kontrollera hur det här innehållet visas i meddelandet, med hjälp av testprofildata. Dessutom kan du **Litmus** konto till [!DNL Journey Optimizer] för att omedelbart förhandsgranska **e-poståtergivning** i vanliga e-postklienter. Sedan kan ni se till att e-postinnehållet ser bra ut och fungerar som det ska i alla inkorgar. Lär dig hur du testar och validerar meddelanden [i det här avsnittet](../../messages/preview.md).
 
@@ -46,7 +46,7 @@ Se följande avsnitt för att konfigurera din första resa, lägga till erbjudan
 
    * Med **resedesigner** bygg upp flerstegstillämpningar: enkelt dra och släppa en tävlingshändelse eller en aktivitet i ett lässegment, lägga till villkor och skicka personaliserade meddelanden.
 
-   ![](../assets/copy-paste3.png)
+   ![](../../assets/copy-paste3.png)
 
    Lär dig utforma och genomföra resor [i det här avsnittet](../../building-journeys/journey-gs.md)
 

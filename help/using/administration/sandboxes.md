@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 14f80d5d-0840-4b79-9922-6d557a7e1247
-source-git-commit: db6e970230b4d22b50c2035ecf5e7307e66feb2d
+source-git-commit: 7da910df3eda84884c7cda56af6ce5dcabc3a3db
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 22%
@@ -25,7 +25,7 @@ Sandlådorna i Adobe Experience Platform kan skapas eller återställas från di
 
 Du hittar kontrollen för sandlådeväljaren högst upp till höger på skärmen bredvid organisationens namn. Klicka på den för närvarande aktiva sandlådan i väljaren för att växla från en sandlåda till en annan och välj sedan en annan sandlåda på rullgardinsmenyn.
 
-![](assets/sandbox_5.png)
+![](../assets/sandbox_5.png)
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
@@ -43,21 +43,21 @@ Så här tilldelar du sandlådor:
 
 1. Välj en **[!UICONTROL Product profile]**.  
 
-   ![](assets/sandbox_1.png)
+   ![](../assets/sandbox_1.png)
 
 1. Klicka på fliken **[!UICONTROL Permissions]**.  
 
 1. Välj **[!UICONTROL Sandboxes]** funktioner.
 
-   ![](assets/sandbox_2.png)
+   ![](../assets/sandbox_2.png)
 
 1. Klicka på plusikonen (+) i **[!UICONTROL Available Permissions Items]** för att tilldela sandlådor till profilen. [Läs mer om sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html){target=&quot;_blank&quot;}.
 
-   ![](assets/sandbox_3.png)
+   ![](../assets/sandbox_3.png)
 
 1. Vid behov, under **[!UICONTROL Included Permission Items]** klickar du på X-ikonen bredvid för att ta bort sandlådeåtkomst till **[!UICONTROL Product profile]**.
 
-   ![](assets/sandbox_4.png)
+   ![](../assets/sandbox_4.png)
 
 1. Klicka på **[!UICONTROL Save]**.
 
@@ -65,7 +65,7 @@ Så här tilldelar du sandlådor:
 
 Om du vill konfigurera innehållets tillgänglighet måste du tilldela en delad mapp till var och en av sandlådorna. Du kan skapa och konfigurera din delade mapp i **[!UICONTROL Storage]** som visas i [!DNL Admin Console] för administratörer. Om du har åtkomst till [!DNL Admin Console] Som systemadministratör kan du skapa delade mappar och lägga till delegater med olika åtkomstnivå till dina delade mappar.
 
-![](assets/do-not-localize/content_access.png)
+![](../assets/do-not-localize/content_access.png)
 
 Observera att om ditt innehåll ska kunna synkroniseras med rätt sandlåda måste du följa samma syntax som sandlådan, t.ex. om din sandlåda kallas för utveckling ska din delade mapp ha samma namn.
 

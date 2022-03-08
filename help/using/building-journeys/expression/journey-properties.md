@@ -6,7 +6,7 @@ feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: eb1ab0ed-90bd-4613-b63d-b28693947db2
-source-git-commit: 5d9a729c58cda2dd2600f2076a460f78d21641f8
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 1%
@@ -21,7 +21,7 @@ I den avancerade uttrycksredigeraren hittar du **Reseegenskaper** -kategorin, un
 >
 >Attribut för reseegenskaper är också tillgängliga i redigeraren för enkla uttryck. Se det här [section](../condition-activity.md#about_condition)
 
-![](../assets/journey-properties.png)
+![](../../assets/journey-properties.png)
 
 Du hittar t.ex. information om:
 

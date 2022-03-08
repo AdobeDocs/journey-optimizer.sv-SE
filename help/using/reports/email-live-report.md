@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 1ddfbf1a-3cd5-446a-b0fb-76b81b88c1b4
-source-git-commit: fad7eb9feea0d8c21494b4a7c1608369e725023e
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -19,11 +19,11 @@ E-postmeddelandet **[!UICONTROL Live report]** avser endast en viss e-postlevera
 
 Från **[!UICONTROL Executions]** -fliken i **[!UICONTROL Messages]** meny, välja **[!UICONTROL Live view]** väljer du på den avancerade menyn för den valda leveransen **[!UICONTROL Live report]**.
 
-![](assets/live_report.png)
+![](../assets/live_report.png)
 
 E-postmeddelandet **[!UICONTROL Live report]** är uppdelat i olika widgetar som detaljerat beskriver leveransens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](live-report.md#modify-dashboard).
 
-![](assets/live_report_5.png)
+![](../assets/live_report_5.png)
 
 **[!UICONTROL Email performance]** och **[!UICONTROL Email summary]** widgetar detaljerar huvudinformationen i förhållande till meddelandet med ett diagram och KPI:er:
 
@@ -55,7 +55,7 @@ The **[!UICONTROL Sending Statistics]** widgeten visar hur framgångsrik leveran
 
 * **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
 
-![](assets/live_report_6.png)
+![](../assets/live_report_6.png)
 
 The **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilket fel som inträffade under leveransen.
 
@@ -68,7 +68,7 @@ The **[!UICONTROL Bounce Reasons]** och **[!UICONTROL Bounce categories]** widge
 * **[!UICONTROL Ignored]**: Det totala antalet tillfälliga, t.ex. frånvaro, eller ett tekniskt fel, t.ex. om avsändartypen är postmaster.
 
 <!--
-![](assets/live_report_8.png)
+![](../assets/live_report_8.png)
 
 >[!NOTE]
 >

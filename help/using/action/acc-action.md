@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 109ba212-f04b-425f-9447-708c8e0b3f51
-source-git-commit: 51c63b196b11905289c3c0c450c1976eb551bbc8
+source-git-commit: 68407db81224e9c2b6930c800e57b65e081781fe
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ För varje konfigurerad åtgärd finns en åtgärdsaktivitet tillgänglig på pa
 
 ## Viktiga anteckningar {#important-notes}
 
-* Det finns ingen begränsning för meddelanden. Systemet begränsar antalet meddelanden som kan skickas till 4 000 per 5 minuter, baserat på aktuellt Campaign-SLA. Därför bör Journey Optimizer endast användas i enstaka fall (enskilda händelser, inte segment).
+* Det finns ingen begränsning för meddelanden. Vi har som gräns antalet meddelanden som kan skickas till 50 000/timme baserat på vårt aktuella Campaign-SLA. Därför bör Journey Optimizer endast användas i enstaka fall (enskilda händelser, inte segment).
 
 * Du måste konfigurera en åtgärd på arbetsytan per mall som du vill använda. Du måste konfigurera en åtgärd i Journey Optimizer för varje mall som du vill använda från Adobe Campaign.
 
@@ -69,4 +69,4 @@ I Journey Optimizer måste du konfigurera en åtgärd per transaktionsmeddelande
 1. Justera de olika fälten så att de blir statiska eller variabla beroende på om du vill mappa dem på arbetsytan på resan. Vissa fält, till exempel kanalparametrar för e-postadresser och anpassningsfält (ctx), kan behöva definieras som variabler för mappning i samband med resan.
 1. Klicka **Spara**.
 
-![](assets/accintegration1.png)
+![](../assets/accintegration1.png)

@@ -5,7 +5,7 @@ feature: Profiles
 role: User
 level: Beginner
 exl-id: be3936e4-8185-4031-9daf-95eea58077d0
-source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 5%
@@ -20,7 +20,7 @@ Utnyttja kundprofilen i realtid i [!DNL Adobe Journey Optimizer] för att få en
 >
 >Om din organisation är ny i [!DNL Adobe Journey Optimizer] och ännu inte har aktiva profildatauppsättningar eller sammanfogningsprinciper skapade, **Profiler** Kontrollpanelen visas inte. I stället **Översikt** På fliken visas länkar till Adobe Experience Platform-dokumentation som hjälper dig att komma igång med kundprofilen i realtid.
 
-![](assets/profiles-home.png)
+![](../assets/profiles-home.png)
 
 Så här får du lära dig att komma åt och arbeta med **Kontrollpanel för profil** och detaljerad information om mätvärdena som visas på kontrollpanelen finns i [det här avsnittet](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html){target=&quot;_blank&quot;}.
 

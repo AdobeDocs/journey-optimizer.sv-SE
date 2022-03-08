@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 05564a99-da50-4837-8dfb-bb1d3e0f1097
-source-git-commit: 7c9f04b8d3faa171444bfa0adc537b5faabde37e
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 1%
@@ -35,11 +35,11 @@ Om standardvärdet 5 inte passar dina behov kan du ändra feltröskeln enligt st
 
 1. Markera knappen **[!UICONTROL Edit suppression rules]**.
 
-   ![](assets/suppression-list-edit-retries.png)
+   ![](../assets/suppression-list-edit-retries.png)
 
 1. Redigera det tillåtna antalet på varandra följande mjuka studsar efter dina behov.
 
-   ![](assets/suppression-list-edit-soft-bounces.png)
+   ![](../assets/suppression-list-edit-soft-bounces.png)
 
    Du måste ange ett heltalsvärde mellan 1 och 20, vilket innebär att det minsta antalet försök är 1 och det högsta antalet är 20.
 

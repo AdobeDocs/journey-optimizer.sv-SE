@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: c7f691aa-8f89-4f23-b897-53211863eb6d
-source-git-commit: 14ab70aa32f4f7978b8c72b3981d3b55f56fd08b
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '2003'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Varje gång ett erbjudande ändras uppdateras den autogenererade datauppsättningen för personaliserade erbjudanden.
 
-![](../assets/dataset-offers.png)
+![](../../assets/dataset-offers.png)
 
 Den senaste lyckade batchen i datauppsättningen visas till höger. Den hierarkiska vyn av schemat för datauppsättningen visas i den vänstra rutan.
 

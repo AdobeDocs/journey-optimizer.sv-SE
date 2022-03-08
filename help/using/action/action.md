@@ -7,7 +7,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 7f0cda1d-daf0-4d4c-9978-ddef81473813
-source-git-commit: 51c63b196b11905289c3c0c450c1976eb551bbc8
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 68%
@@ -39,4 +39,4 @@ Med anpassade åtgärder kan du konfigurera anslutningar med ett tredjepartssyst
 
 Om du vill visa åtgärdslistan eller konfigurera en ny åtgärd väljer du **[!UICONTROL Configurations]** på menyn Administration. I  **[!UICONTROL Actions]** avsnitt, klicka **[!UICONTROL Manage]**. Listan med åtgärder visas. Se [den här sidan](../start/user-interface.md) för mer information om gränssnittet.
 
-![](assets/custom1.png)
+![](../assets/custom1.png)

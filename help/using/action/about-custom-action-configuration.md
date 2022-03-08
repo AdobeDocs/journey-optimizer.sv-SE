@@ -1,41 +1,32 @@
 ---
 solution: Journey Orchestration
-title: Konfigurera en anpassad åtgärd
+title: Om anpassad åtgärdskonfiguration
 description: Lär dig hur du konfigurerar en anpassad åtgärd
 feature: Actions
 topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: 7c00fcf72ba001005b8e4ac548b789f37f9039a3
+source-git-commit: 68407db81224e9c2b6930c800e57b65e081781fe
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 5%
+source-wordcount: '804'
+ht-degree: 6%
 
 ---
 
-# Konfigurera en anpassad åtgärd {#configure-an-action}
+# Konfigurera en åtgärd {#configure-an-action}
 
-Om du använder ett tredjepartssystem för att skicka meddelanden eller om du vill att resor ska skicka API-anrop till ett tredjepartssystem, använder du anpassade åtgärder för att konfigurera anslutningen till din resa. Du kan till exempel ansluta till följande system med anpassade åtgärder: Epsilon, Slack, Adobe.io, Firebase osv.
+Om du använder ett tredjepartssystem för att skicka meddelanden eller om du vill att resor ska skicka API-anrop till ett tredjepartssystem, är det här du konfigurerar anslutningen till resor. Den anpassade åtgärden som definieras av tekniska användare är sedan tillgänglig på den vänstra paletten av din resa, i **[!UICONTROL Action]** kategori (se [den här sidan](../building-journeys/about-journey-activities.md#action-activities). Här är några exempel på system som du kan ansluta till med anpassade åtgärder: Epsilon, Slack, Adobe.io, Firebase osv.
 
-Anpassade åtgärder är ytterligare åtgärder som definieras av tekniska användare och görs tillgängliga för marknadsförare. När de är konfigurerade visas de på den vänstra paletten på din resa i **[!UICONTROL Action]** kategori. Läs mer i [den här sidan](../building-journeys/about-journey-activities.md#action-activities).
+Begränsningar visas i [den här sidan](../start/limitations.md).
 
-## Begränsningar{#custom-actions-limitations}
-
-Anpassade åtgärder har några begränsningar som anges i [den här sidan](../start/limitations.md).
-
-I anpassade åtgärdsparametrar kan du skicka en enkel samling samt en samling med objekt. Läs mer om begränsningar för samlingar i [den här sidan](../building-journeys/collections.md#limitations).
-
-Observera också att de anpassade åtgärdsparametrarna har ett förväntat format (exempel: sträng, decimal osv.). Du måste vara försiktig med att ta hänsyn till dessa förväntade format. Läs mer om detta [användningsfall](../building-journeys/collections.md).
-
-
-## Konfigurationssteg {#configuration-steps}
+Du kan skicka samlingar dynamiskt med anpassade åtgärder. Se detta [användningsfall](../building-journeys/collections.md).
 
 Här följer de huvudsteg som krävs för att konfigurera en anpassad åtgärd:
 
 1. Välj **[!UICONTROL Configurations]**. I  **[!UICONTROL Actions]** avsnitt, klicka **[!UICONTROL Manage]**. Klicka **[!UICONTROL Create Action]** för att skapa en ny åtgärd. Åtgärdskonfigurationsrutan öppnas till höger på skärmen.
 
-   ![](assets/custom2.png)
+   ![](../assets/custom2.png)
 
 1. Ange ett namn för åtgärden.
 
@@ -60,7 +51,7 @@ Här följer de huvudsteg som krävs för att konfigurera en anpassad åtgärd:
 
 När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICONTROL URL Configuration]** parametrar:
 
-![](assets/journeyurlconfiguration.png)
+![](../assets/journeyurlconfiguration.png)
 
 1. I **[!UICONTROL URL]** anger du URL-adressen för den externa tjänsten:
 
@@ -89,7 +80,7 @@ När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICO
 
       Om du har valt **[!UICONTROL Variable]** anger du den här variabeln när du lägger till den anpassade åtgärden på en resa. [Läs mer](../building-journeys/using-custom-actions.md).
 
-      ![](assets/journeyurlconfiguration2.png)
+      ![](../assets/journeyurlconfiguration2.png)
 
    1. Om du vill ta bort ett rubrikfält pekar du på rubrikfältet och klickar på **[!UICONTROL Delete]** ikon.
    The **[!UICONTROL Content-Type]** och **[!UICONTROL Charset]** rubrikfält anges som standard. Du kan inte ändra eller ta bort dessa fält.
@@ -102,11 +93,11 @@ När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICO
 
 ## Definiera åtgärdsparametrarna {#define-the-message-parameters}
 
-![](assets/messageparameterssection.png)
+![](../assets/messageparameterssection.png)
 
 I **[!UICONTROL Action parameters]** klistra in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten.
 
-![](assets/customactionpayloadmessage.png)
+![](../assets/customactionpayloadmessage.png)
 
 >[!NOTE]
 >
@@ -119,5 +110,5 @@ Du kan också välja mellan att ange om en parameter är en konstant eller en va
 * Konstant innebär att parametervärdet definieras av en teknisk person i åtgärdskonfigurationsfönstret. Värdet är alltid detsamma oavsett resa. Det kommer inte att variera och marknadsföraren kommer inte att se det när han eller hon använder den anpassade åtgärden under resan. Det kan till exempel vara ett ID som tredjepartssystemet förväntar sig. I så fall är fältet till höger om växlingskonstanten/variabeln det värde som skickas.
 * Variabel innebär att parameterns värde varierar. Marknadsförare som använder den här anpassade åtgärden under en resa kan skicka det värde de vill ha eller ange var värdet för den här parametern ska hämtas (t.ex. från händelsen, från Adobe Experience Platform). I så fall är fältet till höger om växlingskonstanten/variabeln den etikett marknadsförarna kommer att se under resan för att namnge den här parametern.
 
-![](assets/customactionpayloadmessage2.png)
+![](../assets/customactionpayloadmessage2.png)
 

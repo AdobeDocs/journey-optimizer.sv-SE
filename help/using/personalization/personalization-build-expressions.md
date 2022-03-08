@@ -6,19 +6,14 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 1ac2a376-a3a8-41ae-9b04-37886697f0fc
-source-git-commit: fab36ea43e92babfacdbaeeaecf6c551c00b3c5b
+source-git-commit: 68407db81224e9c2b6930c800e57b65e081781fe
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '315'
 ht-degree: 1%
 
 ---
 
 # Om uttrycksredigeraren {#build-personalization-expressions}
-
->[!CONTEXTUALHELP]
->id="ajo_perso_editor"
->title="Om uttrycksredigeraren"
->abstract="Med uttrycksredigeraren kan du välja, ordna, anpassa och validera alla data för att skapa en anpassad personalisering för ditt innehåll."
 
 Uttrycksredigeraren är navet i personaliseringen i [!DNL Journey Optimizer]. Det finns i alla sammanhang där du behöver definiera personalisering som e-post, push och erbjudanden.
 
@@ -38,13 +33,13 @@ Tillgängliga källor är:
 * **[!UICONTROL Contextual attributes]** : när **Meddelande** som används i en resa är sammanhangsberoende resefält tillgängliga via den här menyn. Läs mer i [det här avsnittet](personalization-use-case.md).
 * **[!UICONTROL Helper functions]** : visar alla hjälpfunktioner som är tillgängliga för att utföra dataåtgärder, t.ex. beräkningar, dataformatering eller konverteringar, villkor och manipulera dem i personaliseringssammanhang. Läs mer i [det här avsnittet](functions/functions.md).
 
-Klicka på plusknappen (+) för att lägga till ett attribut i redigeraren.
+Vid markering läggs referensen till i redigeraren.
 
 >[!NOTE]
 >
->Med ellipsmenyn bredvid ikonen&quot;+&quot; kan du få mer information om varje variabel och lägga till de mest frekventa attribut som används i [favoriter](personalization-favorites.md).
-
-![](assets/attribute-details.png)
+>Informationsikonen bredvid ikonen + öppnar ett verktygstips med mer information om varje variabel.
+>
+>Du kan lägga till de attribut som används mest i favoriter. Läs mer i [det här avsnittet](personalization-favorites.md).
 
 I följande exempel kan du välja de profiler som har sin födelsedag i dag och sedan slutföra anpassningen genom att infoga ett specifikt erbjudande som motsvarar den här dagen.
 

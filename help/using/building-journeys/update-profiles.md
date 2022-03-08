@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 8b2b2d1e-9bd1-439d-a15e-acdbab387c4b
-source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
+source-git-commit: 68407db81224e9c2b6930c800e57b65e081781fe
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,6 @@ The **[!UICONTROL Update Profile]** kan du uppdatera en befintlig Adobe Experien
 * Du kan inte använda **Uppdatera profil** åtgärd för att generera upplevelsehändelser, till exempel ett köp.
 * Precis som med andra åtgärder kan du definiera en alternativ sökväg om fel eller timeout inträffar, och du kan inte placera två åtgärder parallellt.
 * Uppdateringsbegäran som skickas till Platform kommer snabbt men inte omedelbart/inom en sekund. Det tar normalt några sekunder men ibland mer utan garanti. Om en åtgärd till exempel använder&quot;fält 1&quot; som har uppdaterats av en åtgärd av typen Uppdatera profil som har placerats precis tidigare, bör du därför inte förvänta dig att&quot;fält 1&quot; kommer att uppdateras i åtgärden.
-* The **Uppdatera profil** aktiviteten stöder inte XDM-fält som är definierade som en uppräkning.
 
 ## Använda testläget {#using-the-test-mode}
 
@@ -40,13 +39,13 @@ Mer information om hur du omvandlar en befintlig profil till en testprofil finns
 
 1. I **Åtgärd** väljer du **Uppdatera profil** till arbetsytan.
 
-   ![](assets/profileupdate0.png)
+   ![](../assets/profileupdate0.png)
 
 1. Välj ett schema i listan.
 
 1. Klicka på **Fält** för att markera det fält som du vill uppdatera. Endast ett fält kan markeras.
 
-   ![](assets/profileupdate2.png)
+   ![](../assets/profileupdate2.png)
 
 1. Välj en datauppsättning i listan.
 
@@ -58,12 +57,12 @@ Mer information om hur du omvandlar en befintlig profil till en testprofil finns
 
    * Med den enkla uttrycksredigeraren kan du välja ett fält från en datakälla eller från den inkommande händelsen.
 
-      ![](assets/profileupdate4.png)
+      ![](../assets/profileupdate4.png)
 
    * Om du vill definiera ett specifikt värde eller använda avancerade funktioner klickar du på **Avancerat läge**.
 
-      ![](assets/profileupdate3.png)
+      ![](../assets/profileupdate3.png)
 
 The **Uppdatera profil** har konfigurerats.
 
-![](assets/profileupdate1.png)
+![](../assets/profileupdate1.png)

@@ -4,7 +4,7 @@ solution: Journey Orchestration
 title: Skicka samlingar dynamiskt med anpassade åtgärder
 description: Skicka ett meddelande med Campaign v7/v8
 exl-id: 8832d306-5842-4be5-9fb9-509050fcbb01
-source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 4%
@@ -103,7 +103,7 @@ Du ser att&quot;products&quot; är en array med två objekt. Du måste ha minst 
 
 1. I **[!UICONTROL Action parameters]** -avsnittet, klistra in JSON-exemplet. Den visade strukturen är statisk: när du klistrar in nyttolasten definieras alla fält som konstanter.
 
-   ![](assets/uc-collection-1.png)
+   ![](../assets/uc-collection-1.png)
 
 1. Justera fälttyperna om det behövs. Följande fälttyper stöds för samlingar: listString, listInteger, listDecimal, listBoolean, listDateTime, listDateTimeOnly, listDateOnly, listObject
 
@@ -119,27 +119,27 @@ Du ser att&quot;products&quot; är en array med två objekt. Du måste ha minst 
 
 1. Definiera den etikett som ska visas på arbetsytan för varje fält.
 
-   ![](assets/uc-collection-2.png)
+   ![](../assets/uc-collection-2.png)
 
 1. Skapa din resa och lägg till den anpassade åtgärd du skapade. Läs [den här sidan](../building-journeys/using-custom-actions.md).
 
 1. I **[!UICONTROL Action parameters]** definierar du arrayparametern (&quot;products&quot; in our example) med den avancerade uttrycksredigeraren.
 
-   ![](assets/uc-collection-3.png)
+   ![](../assets/uc-collection-3.png)
 
 1. För vart och ett av följande objektfält anger du motsvarande fältnamn från XDM-källschemat. Om namnen är identiska behövs inte detta. I vårt exempel behöver vi bara definiera&quot;produkt-id&quot; och&quot;färg&quot;.
 
-   ![](assets/uc-collection-4.png)
+   ![](../assets/uc-collection-4.png)
 
 För arrayfältet kan du även använda den avancerade uttrycksredigeraren för att utföra datamanipulering. I följande exempel använder vi [filter](functions/functionfilter.md) och [korsa](functions/functionintersect.md) funktioner:
 
-![](assets/uc-collection-5.png)
+![](../assets/uc-collection-5.png)
 
 ## Särskilda fall{#examples}
 
 För heterogena typer och arrayer av arrayer definieras arrayen med typen listAny. Du kan bara mappa enskilda objekt, men inte ändra arrayen till variabel.
 
-![](assets/uc-collection-heterogeneous.png)
+![](../assets/uc-collection-heterogeneous.png)
 
 Exempel på heterogen typ:
 

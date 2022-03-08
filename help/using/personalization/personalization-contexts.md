@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: fe39570b-cbd2-4b24-af10-e12990a9a885
-source-git-commit: 1993dc5648bcd294ec2f8dfbbb783b81addf873f
+source-git-commit: 68407db81224e9c2b6930c800e57b65e081781fe
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -60,10 +60,3 @@ Läs mer om konfigurationen för push-meddelanden i [det här avsnittet](../mess
 Du kan även komma åt personaliseringsredigeraren när du lägger till textinnehåll till offerternas representationer.
 
 Läs mer om hur du hanterar innehåll med beslutsstöd i [det här avsnittet](../offers/offer-library/creating-personalized-offers.md#custom-text).
-
-## Skapa personliga URL:er{#personalize-urls}
-
-Personaliserade URL:er tar mottagarna till specifika sidor på en webbplats eller till en personlig mikrowebbplats, beroende på profilattributen. I Adobe Journey Optimizer kan du lägga till personalisering i URL-adresser i ditt meddelandeinnehåll. URL-personalisering kan tillämpas på text och bilder och använda profildata eller kontextuella data.
-
-Lär dig hur du infogar en anpassad URL i [det här avsnittet](personalization-syntax.md#perso-urls).
-

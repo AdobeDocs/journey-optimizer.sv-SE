@@ -5,7 +5,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 9ba16ad9-a5e7-4ce7-8ed6-7707d37178c6
-source-git-commit: 14ab70aa32f4f7978b8c72b3981d3b55f56fd08b
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 3%
@@ -20,7 +20,7 @@ Reserverbjudandet skickas till kunderna om de inte är berättigade till andra e
 
 Listan över reserverbjudanden finns i **[!UICONTROL Offers]** -menyn.
 
-![](../assets/offers_list.png)
+![](../../assets/offers_list.png)
 
 Så här skapar du ett reserverbjudande:
 
@@ -30,27 +30,27 @@ Så här skapar du ett reserverbjudande:
 
 1. Klicka **[!UICONTROL Create offer]** väljer **[!UICONTROL Fallback offer]**.
 
-   ![](../assets/create_fallback.png)
+   ![](../../assets/create_fallback.png)
 
 1. Ange namnet på reserverbjudandet. Du kan också koppla en eller flera befintliga taggar till den, så att du enklare kan söka efter och ordna erbjudandebiblioteket.
 
-   ![](../assets/fallback_details.png)
+   ![](../../assets/fallback_details.png)
 
 1. Skapa en eller flera representationer för reserverbjudandet. Det gör du genom att dra och släppa praktik från den vänstra rutan, som när du skapar ett personaliserat erbjudande. Se [Skapa personaliserade erbjudanden](../offer-library/creating-personalized-offers.md).
 
-   ![](../assets/fallback_content.png)
+   ![](../../assets/fallback_content.png)
 
 1. När reserverbjudandets representationer har lagts till visas en sammanfattning. Om allt är korrekt konfigurerat och ditt reserverbjudande är klart att presenteras för kunderna klickar du **[!UICONTROL Finish]** väljer **[!UICONTROL Save and approve]**.
 
    Du kan också spara reserverbjudandet som ett utkast för att redigera och godkänna det senare.
 
-   ![](../assets/fallback_review.png)
+   ![](../../assets/fallback_review.png)
 
 1. Reserverbjudandet visas i listan med **[!UICONTROL Live]** eller **[!UICONTROL Draft]** status, beroende på om du har godkänt den eller inte i föregående steg.
 
    Den är nu klar att levereras till kunderna. Du kan markera den för att visa dess egenskaper och redigera den. <!-- no suppression? -->
 
-   ![](../assets/fallback_created.png)
+   ![](../../assets/fallback_created.png)
 
 ## Videokurs {#video}
 

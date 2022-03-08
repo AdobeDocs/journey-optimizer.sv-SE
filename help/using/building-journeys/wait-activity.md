@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
-source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
+source-git-commit: 68407db81224e9c2b6930c800e57b65e081781fe
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '388'
 ht-degree: 4%
 
 ---
@@ -25,9 +25,11 @@ Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en
 
 ## Om aktiviteten Vänta{#about_wait}
 
-Så här prioriterar du vänta när du använder flera bilder parallellt. Om de har samma tidskonfiguration och ett annat, men överlappande, villkor är den ovan angivna väntetiden den som prioriteras. Till exempel är villkoret för den första väntetiden&quot;att vara kvinna&quot; och villkoret för den andra väntetiden parallellt är&quot;att vara en VIP&quot;. Den första vänteaktiviteten kommer att prioriteras.
+Så här prioriterar du vänta när du använder flera bilder parallellt. Om de har samma tidskonfiguration och ett annat, men överlappande, villkor är den ovan angivna väntetiden den som prioriteras. Till exempel är villkoret för den första väntetiden&quot;att vara kvinna&quot; och villkoret för den andra väntetiden parallellt är&quot;att vara en VIP&quot;. Den första vänteaktiviteten kommer att prioriteras
 
 Observera också att om två olika platser är parallella så kommer den första att prioriteras, oavsett dess lodräta position. Om t.ex. en 1-timmars väntan är över och en 30-minuters väntan är under, efter 30 minuter, kommer 30-minutersväntan att bearbetas.
+
+Du kan definiera ett villkor om du vill begränsa väntetiden till en viss population.
 
 >[!NOTE]
 >
@@ -39,13 +41,13 @@ Observera också att om två olika platser är parallella så kommer den första
 
 Ange väntetiden innan nästa aktivitet körs.
 
-![](assets/journey55.png)
+![](../assets/journey55.png)
 
 ## Vänta fast{#fixed_date}
 
 Välj datumet för körningen av nästa aktivitet.
 
-![](assets/journey56.png)
+![](../assets/journey56.png)
 
 ## Anpassad väntetid{#custom}
 
@@ -57,7 +59,7 @@ Med det här alternativet kan du definiera ett anpassat datum, till exempel 12 j
 >
 >The **tidszon** är förväntat i egenskaperna för din resa. Därför är det inte möjligt i dag från gränssnittet till en direkt punkt vid en fullständig ISO-8601-tidsstämpelblandningstid och tidszonsförskjutning som 2016-08-12T09:46:06.982-05. Läs [den här sidan](../building-journeys/timezone-management.md).
 
-![](assets/journey57.png)
+![](../assets/journey57.png)
 
 <!--## Email send time optimization{#email_send_time_optimization}
 
@@ -77,4 +79,4 @@ This type of wait uses a score calculated in Adobe Experience Platform. The scor
     >
     >Note that the send time score can be unavailable because there is not enough data to perform the calculation. In this case, you will be informed, at publication time, that the default time applies.
 
-![](assets/journey57bis.png)-->
+![](../assets/journey57bis.png)-->

@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 7565af5c8497caa4fc34e0cf399e1c5180982891
+source-git-commit: 68407db81224e9c2b6930c800e57b65e081781fe
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1704'
 ht-degree: 1%
 
 ---
@@ -28,17 +28,21 @@ När meddelandeförinställningarna har konfigurerats kan du välja dem när du 
 
 ➡️ [Lär dig hur du skapar och använder e-postförinställningar i den här videon](#video-presets)
 
+>[!NOTE]
+>
+>Lär dig hur du skapar förinställningar för landningssidor i [det här avsnittet](../configuration/lp-configuration.md#lp-create-preset).
+
 ## Skapa en meddelandeförinställning {#create-message-preset}
 
 Så här skapar du en meddelandeförinställning:
 
 1. Öppna **[!UICONTROL Channels]** > **[!UICONTROL Branding]** > **[!UICONTROL Message presets]** menyn och klicka sedan på **[!UICONTROL Create Message preset]**.
 
-   ![](assets/preset-create.png)
+   ![](../assets/preset-create.png)
 
 1. Ange ett namn och en beskrivning (valfritt) för förinställningen och välj sedan de kanaler som ska konfigureras.
 
-   ![](assets/preset-general.png)
+   ![](../assets/preset-general.png)
 
    >[!NOTE]
    >
@@ -52,7 +56,7 @@ Så här skapar du en meddelandeförinställning:
 
 1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara meddelandeförinställningen som utkast och återuppta konfigurationen senare.
 
-   ![](assets/preset-submit.png)
+   ![](../assets/preset-submit.png)
 
 1. När meddelandeförinställningen har skapats visas den i listan med **[!UICONTROL Processing]** status.
 
@@ -74,108 +78,63 @@ Så här skapar du en meddelandeförinställning:
 
 1. När kontrollen är klar får meddelandeförinställningen **[!UICONTROL Active]** status. Den är klar att användas för att leverera meddelanden.
 
-   ![](assets/preset-active.png)
+   ![](../assets/preset-active.png)
 
 ## Konfigurera e-postinställningar {#configure-email-settings}
 
-E-postinställningarna definieras i ett dedikerat avsnitt i meddelandeförinställningskonfigurationen.
+![](../assets/preset-email.png)
 
-![](assets/preset-email.png)
+1. Välj den typ av meddelande som ska skickas med förinställningen: **Transactional** eller **Marknadsföring**.
 
-Konfigurera inställningarna enligt beskrivningen nedan.
-
-
-### Typ av e-post{#email-type}
-
-I **E-POSTTYP** väljer du den typ av meddelande som ska skickas med förinställningen: **Marknadsföring** eller **Transactional**.
-
-Välj **Marknadsföring** för kampanjmeddelanden: dessa meddelanden kräver användarens samtycke.
-
-Välj **Transactional** för icke-kommersiella meddelanden, t.ex. orderbekräftelse, meddelanden om lösenordsåterställning eller leveransinformation.
-
->[!CAUTION]
->
->**Transactional** meddelanden kan skickas till profiler som avbeställer marknadskommunikation. Dessa meddelanden kan bara skickas i särskilda sammanhang.
-
-
-### Underdomän och IP-pool {#subdomains-and-ip-pools}
-
-I **INFORMATION OM UNDERDOMÄN- OCH IP-POOL** måste du
+   >[!CAUTION]
+   >
+   > **Transactional** meddelanden kan skickas till profiler som avbeställer marknadskommunikation. Dessa meddelanden kan bara skickas i särskilda sammanhang, t.ex. lösenordsåterställning, orderstatus eller leveransmeddelande.
 
 1. Välj den underdomän som ska användas för att skicka e-postmeddelanden. [Läs mer](about-subdomain-delegation.md)
 
 1. Välj den IP-pool som ska associeras med förinställningen. [Läs mer](ip-pools.md)
 
-### URL-spårning{#url-tracking}
+1. Ange rubrikparametrarna för e-postmeddelanden som skickas med den förinställningen.
 
-För att identifiera var och varför en person klickade på länken kan du lägga till UTM-parametrar för URL-spårning i dialogrutan  **[!UICONTROL URL TRACKING CONFIGURATION (web analytics)]** -avsnitt.
+   >[!CAUTION]
+   >
+   >E-postadresser måste använda den aktuella valda [delegerad underdomän](about-subdomain-delegation.md).
 
-Utifrån de parametrar som du anger används en UTM-kod i slutet av den URL som finns i meddelandeinnehållet. Sedan kan du jämföra resultaten i ett webbanalysverktyg som Adobe Analytics. <!--For example: https://yourwebsite.com/?utm_source=Adobe_CJM&utm_medium=email&utm_campaign=cart_abandonment_journey... In this example, the UTM code identifies the link as an email from an abandonment cart journey. You can either select a journey/message attribute from a predefined list, or enter your own text.-->
+   * **[!UICONTROL Sender name]**: Avsändarens namn, till exempel ditt varumärkes namn.
 
-![](assets/preset-url-tracking.png)
+   * **[!UICONTROL Sender email]**: E-postadressen som du vill använda för din kommunikation. Om den delegerade underdomänen till exempel är *marketing.luma.com* kan du använda *contact@marketing.luma.com*.
 
-Tre UTM-parametrar är tillgängliga som standard. Du kan lägga till upp till 10 spårningsparametrar. Om du vill lägga till en UTM-parameter väljer du **[!UICONTROL Add new UTM param]** -knappen.
+   * **[!UICONTROL Reply to (name)]**: Namnet som ska användas när mottagaren klickar på **Svara** i klientprogramvaran för e-post.
 
-Om du vill konfigurera en UTM-parameter kan du ange önskade värden direkt i **[!UICONTROL Name]** och **[!UICONTROL Value]** eller välj från en lista med fördefinierade värden genom att navigera till följande objekt:
+   * **[!UICONTROL Reply to (email)]**: E-postadressen som ska användas när mottagaren klickar på **Svara** i klientprogramvaran för e-post. Du måste använda en adress som är definierad för den delegerade underdomänen (till exempel *reply@marketing.luma.com*), annars kommer e-postmeddelandena att tas bort.
 
-* Reseattribut: Käll-ID, källnamn, källversions-ID
-* Meddelandeattribut: Åtgärds-ID, åtgärdsnamn
-* Offer decisioning-attribut: Erbjudande-ID, erbjudandenamn
+   * **[!UICONTROL Error email]**: Alla fel som genereras av Internet-leverantörer efter några dagar efter att e-post har levererats (asynkrona studsar) tas emot på den här adressen.
+   >[!NOTE]
+   >
+   >Från versionen från oktober 2021 är det inte längre möjligt att definiera en e-postadress från [!DNL Journey Optimizer] användargränssnitt. Om du vill ha alla e-postmeddelanden från [!DNL Journey Optimizer] för att den delegerade underdomänen ska vidarebefordras till en viss e-postadress, kontakta [Adobe kundtjänstsupport](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
 
-![](assets/preset-url-tracking-source.png)
+   ![](../assets/preset-header.png)
 
->[!CAUTION]
->
->Välj ingen mapp: Kontrollera att du bläddrar till den mapp som behövs och välj ett profilattribut som ska användas som UTM-värde.
+   >[!NOTE]
+   >
+   >Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-` tecken.
 
-### Huvudparametrar{#email-header}
+1. Konfigurera **parametrar för e-poståterförsök**. Som standard är [återförsökstid](retries.md#retry-duration) är inställt på 84 timmar, men du kan justera den här inställningen så att den passar dina behov bättre.
 
-I **[!UICONTROL HEADER PARAMETERS]** anger du de e-postadresser som är kopplade till meddelanden som skickas med den förinställningen. Dessa e-postadresser måste använda den aktuella [delegerad underdomän](about-subdomain-delegation.md).
+   ![](../assets/preset-retry-paramaters.png)
 
-Du måste konfigurera följande e-postadresser
-
-* **[!UICONTROL Sender name]**: Avsändarens namn, till exempel ditt varumärkes namn.
-
-* **[!UICONTROL Sender email]**: E-postadressen som du vill använda för din kommunikation. Om den delegerade underdomänen till exempel är *marketing.luma.com* kan du använda *contact@marketing.luma.com*.
-
-* **[!UICONTROL Reply to (name)]**: Namnet som ska användas när mottagaren klickar på **Svara** i klientprogramvaran för e-post.
-
-* **[!UICONTROL Reply to (email)]**: E-postadressen som ska användas när mottagaren klickar på **Svara** i klientprogramvaran för e-post. Du måste använda en adress som är definierad för den delegerade underdomänen (till exempel *reply@marketing.luma.com*), annars kommer e-postmeddelandena att tas bort.
-
-* **[!UICONTROL Error email]**: Alla fel som genereras av Internet-leverantörer efter några dagar efter att e-post har levererats (asynkrona studsar) tas emot på den här adressen.
-
-
-![](assets/preset-header.png)
-
->[!NOTE]
->
->Adresser måste börja med en bokstav (A-Z) och får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-` tecken.
-
-### Parametrar för återförsök av e-post{#email-retry}
-
-Du kan konfigurera **Parametrar för återförsök av e-post**.
-
-![](assets/preset-retry-parameters.png)
-
-Som standard är [återförsökstid](retries.md#retry-duration) är inställt på 84 timmar, men du kan justera den här inställningen så att den passar dina behov bättre.
-
-Du måste ange ett heltalsvärde (i timmar eller minuter) inom följande intervall:
-
-* För marknadsföringsmeddelanden är den minsta återförsöksperioden 6 timmar.
-* För transaktionsmeddelanden är den minsta återförsöksperioden 10 minuter.
-* För båda e-posttyperna är den maximala återförsöksperioden 84 timmar (eller 5 040 minuter).
+   Du måste ange ett heltalsvärde (i timmar eller minuter) inom följande intervall:
+   * För marknadsföringsmejl är den minsta återförsöksperioden 6 timmar.
+   * För transaktionell e-posttyp är den minsta återförsöksperioden 10 minuter.
+   * För båda e-posttyperna är den maximala återförsöksperioden 84 timmar (eller 5 040 minuter).
 
 ## Konfigurera push-inställningar {#configure-push-settings}
-
-Push-inställningarna definieras i ett dedikerat avsnitt i meddelandeförinställningskonfigurationen.
-
-Följ stegen nedan för att definiera de push-inställningar som är kopplade till meddelandeförinställningen:
 
 1. Välj minst en plattform: **iOS** och/eller **Android**.
 
 1. Välj de mobilprogram som ska användas för varje plattform.
 
-![](assets/preset-push.png)
+![](../assets/preset-push.png)
 
 Mer information om hur du konfigurerar miljön för att skicka push-meddelanden finns i [det här avsnittet](../messages/push-gs.md).
 
@@ -184,7 +143,7 @@ Mer information om hur du konfigurerar miljön för att skicka push-meddelanden 
 
 1. Select the **[!UICONTROL SMS Type]** that will be sent with the preset: **[!UICONTROL Transactional]** or **[!UICONTROL Marketing]**.
 
-    ![](assets/preset-sms.png)
+    ![](../assets/preset-sms.png)
     
 1. Select the **[!UICONTROL SMS configuration]** to associate with the preset.
         
@@ -197,9 +156,9 @@ Mer information om hur du konfigurerar miljön för att skicka push-meddelanden 
 
 Alla dina meddelandeförinställningar visas i **[!UICONTROL Channels]** > **[!UICONTROL Message presets]** -menyn. Det finns filter som hjälper dig att bläddra igenom listan (kanaltyp, användare, status).
 
-![](assets/preset-filters.png)
+![](../assets/preset-filters.png)
 
-När meddelandeförinställningarna har skapats kan de ha följande status:
+Meddelandeförinställningar kan ha följande status:
 
 * **[!UICONTROL Draft]**: Meddelandeförinställningen har sparats som ett utkast och har inte skickats ännu. Öppna den för att återuppta konfigurationen.
 * **[!UICONTROL Processing]**: Meddelandeförinställningen har skickats och genomgår flera verifieringssteg.
@@ -209,7 +168,7 @@ När meddelandeförinställningarna har skapats kan de ha följande status:
 
 Om det inte går att skapa en meddelandeförinställning beskrivs informationen för varje möjlig felorsak nedan.
 
-Om något av dessa fel inträffar, kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;} om du vill ha hjälp.
+Om något av dessa fel inträffar ska du kontakta [Adobe kundtjänstsupport](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;} om du vill ha hjälp.
 
 * **SPF-valideringen misslyckades**: SPF (Sender Policy Framework) är ett autentiseringsprotokoll för e-post som tillåter att auktoriserade IP-adresser kan skicka e-post från en viss underdomän. SPF-valideringsfel innebär att IP-adresserna i SPF-posten inte matchar IP-adresserna som används för att skicka e-post till postlådeprovidern.
 
@@ -233,7 +192,7 @@ Om du vill redigera en meddelandeförinställning följer du stegen nedan.
 
 1. Öppna en meddelandeförinställning genom att klicka på namnet i listan.
 
-   ![](assets/preset-name.png)
+   ![](../assets/preset-name.png)
 
 1. Redigera egenskaperna efter behov.
 
@@ -243,7 +202,7 @@ Om du vill redigera en meddelandeförinställning följer du stegen nedan.
 
 1. Klicka **[!UICONTROL Submit]** för att bekräfta dina ändringar.
 
-   ![](assets/preset-confirm-update.png)
+   ![](../assets/preset-confirm-update.png)
 
    >[!NOTE]
    >
@@ -259,15 +218,15 @@ För meddelandeförinställningar som har **[!UICONTROL Active]** status kan du 
 
 * Klicka på **[!UICONTROL Recent update]** som visas bredvid den aktiva förinställningens namn.
 
-   ![](assets/preset-recent-update-icon.png)
+   ![](../assets/preset-recent-update-icon.png)
 
 * Du kan även komma åt uppdateringsinformationen från en aktiv meddelandeförinställning medan uppdateringen pågår.
 
-   ![](assets/preset-view-update-details.png)
+   ![](../assets/preset-view-update-details.png)
 
 På **[!UICONTROL Recent update]** visas information som uppdateringsstatus och listan över begärda ändringar.
 
-![](assets/preset-recent-update-screen.png)
+![](../assets/preset-recent-update-screen.png)
 
 ### Uppdatera status {#update-statuses}
 
@@ -329,7 +288,7 @@ Skapa en **[!UICONTROL Active]** meddelandeförinställningen är inte tillgäng
 
 1. Välj **[!UICONTROL Deactivate]**.
 
-   ![](assets/preset-deactivate.png)
+   ![](../assets/preset-deactivate.png)
 
 >[!NOTE]
 >
@@ -337,7 +296,7 @@ Skapa en **[!UICONTROL Active]** meddelandeförinställningen är inte tillgäng
 
 Du kan inte redigera en inaktiverad meddelandeförinställning direkt. Du kan dock duplicera den och redigera kopian för att skapa en ny version som du använder för att skapa nya meddelanden. Du kan även aktivera den igen och vänta tills uppdateringen har redigerats.
 
-![](assets/preset-activate.png)
+![](../assets/preset-activate.png)
 
 ## Instruktionsvideo{#video-presets}
 

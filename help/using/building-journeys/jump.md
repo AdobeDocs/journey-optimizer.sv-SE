@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 46d8950b-8b02-4160-89b4-1c492533c0e2
-source-git-commit: dee8dbac067dac851af02d87a3dece1ba2b29376
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 2%
@@ -70,16 +70,16 @@ Under resa B utlöses den första händelsen internt via **[!UICONTROL Jump]** v
 
 1. Utforma **ursprunglig resa**.
 
-   ![](assets/jump1.png)
+   ![](../assets/jump1.png)
 
 1. Lägg till en **[!UICONTROL Jump]** aktivitet, från **[!UICONTROL ACTIONS]** kategori. Lägg till en etikett och en beskrivning.
 
-   ![](assets/jump2.png)
+   ![](../assets/jump2.png)
 
 1. Klicka inuti **Målresa** fält.
 I listan visas alla reseversioner som är utkast, live eller i testläge. Resor som använder ett annat namnutrymme eller som börjar med en **Segmentkvalificering** -händelsen är inte tillgänglig. Målresor som skulle skapa ett slingmönster filtreras också bort.
 
-   ![](assets/jump3.png)
+   ![](../assets/jump3.png)
 
    >[!NOTE]
    >
@@ -88,12 +88,12 @@ I listan visas alla reseversioner som är utkast, live eller i testläge. Resor 
 1. Välj den målresa som du vill hoppa till.
 The **Första händelsen** fältet är förifyllt med namnet på målresans första händelse. Om målresan innehåller flera händelser **[!UICONTROL Jump]** tillåts bara för den första händelsen.
 
-   ![](assets/jump4.png)
+   ![](../assets/jump4.png)
 
 1. The **Åtgärdsparametrar** -avsnittet visar alla fält för målhändelsen. På samma sätt som för andra typer av åtgärder mappar du varje fält med fält från ursprungshändelsen eller datakällan. Den här informationen skickas till målresan vid körning.
 1. Lägg till nästa aktiviteter för att slutföra din ursprungliga resa.
 
-   ![](assets/jump5.png)
+   ![](../assets/jump5.png)
 
 
    >[!NOTE]
@@ -104,7 +104,7 @@ Dina **[!UICONTROL Jump]** aktiviteten har konfigurerats. Så snart resan är li
 
 När en **[!UICONTROL Jump]** -aktiviteten konfigureras under en resa, en **[!UICONTROL Jump]** Inmatningsikonen läggs automatiskt till i början av målresan. Detta hjälper er att identifiera att resan kan utlösas externt men även internt från en **[!UICONTROL Jump]** aktivitet.
 
-![](assets/jump7.png)
+![](../assets/jump7.png)
 
 ## Felsökning
 
@@ -113,4 +113,4 @@ När resan publiceras eller i testläge inträffar fel om:
 * målresan är utkast, avslutad eller stoppad
 * om den första händelsen i målresan har ändrats och mappningen är bruten
 
-![](assets/jump6.png)
+![](../assets/jump6.png)

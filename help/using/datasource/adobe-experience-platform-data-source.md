@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9083e355-15e3-4d1f-91ae-03095e08ad16
-source-git-commit: bd35bf2ec4c1b2898007d670fc20626f06cc3750
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 11%
@@ -31,11 +31,11 @@ Här är de viktigaste stegen för att lägga till fältgrupper i den inbyggda d
 
    Detta öppnar konfigurationsfönstret för datakällan till höger på skärmen.
 
-   ![](assets/journey23.png)
+   ![](../assets/journey23.png)
 
 1. Klicka **[!UICONTROL Add a New Field Group]** för att definiera en ny serie fält som ska hämtas. Läs [den här sidan](../datasource/configure-data-sources.md#define-field-groups).
 
-   ![](assets/journey24.png)
+   ![](../assets/journey24.png)
 
 1. Välj ett schema från **[!UICONTROL Schema]** nedrullningsbar meny. I det här fältet visas profilscheman och Experience Events-scheman som är tillgängliga i Adobe Experience Platform. Schemat skapas inte i [!DNL Journey Optimizer]. Det genomförs i Adobe Experience Platform.
 1. Markera de fält som du vill använda.

@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c50d73c8-d2ca-40a4-bec6-2ce8be814028
-source-git-commit: fad7eb9feea0d8c21494b4a7c1608369e725023e
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 0%
@@ -19,11 +19,11 @@ The push **[!UICONTROL Global report]** endast för en viss push-leverans.
 
 Från **[!UICONTROL Executions]** -fliken i **[!UICONTROL Messages]** meny, välja **[!UICONTROL Global view]** väljer du på den avancerade menyn för den valda leveransen **[!UICONTROL Global report]**.
 
-![](assets/global_report_11.png)
+![](../assets/global_report_11.png)
 
 The push **[!UICONTROL Global report]** är uppdelat i olika widgetar som detaljerat beskriver leveransens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](global-report.md#modify-dashboard).
 
-![](assets/push_global_report.png)
+![](../assets/push_global_report.png)
 
 The **[!UICONTROL Push notification performance]** widgeten innehåller information om huvudinformationen i förhållande till dina push-meddelanden med KPI:er:
 
@@ -51,6 +51,6 @@ The **[!UICONTROL Push notification summary]** diagrammet innehåller data som �
 
 The **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilket fel som inträffade under leveransen.
 
-![](assets/push_global_report_2.png)
+![](../assets/push_global_report_2.png)
 
 The **[!UICONTROL Tracking by platform]**, **[!UICONTROL Sending by platform]** och **[!UICONTROL Breakdown by platform]** diagram och tabeller visar hur bra push-meddelandena är beroende på mottagarens operativsystem.

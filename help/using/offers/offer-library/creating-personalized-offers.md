@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4a53ea96-632a-41c7-ab15-b85b99db4f3e
-source-git-commit: 14ab70aa32f4f7978b8c72b3981d3b55f56fd08b
+source-git-commit: 51254efaab08a572def118d475dc18f74c9d29b7
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 2%
@@ -25,7 +25,7 @@ Innan du skapar ett erbjudande måste du kontrollera att du har skapat:
 
 Listan över personaliserade erbjudanden finns på **[!UICONTROL Offers]** -menyn.
 
-![](../assets/offers_list.png)
+![](../../assets/offers_list.png)
 
 ## Skapa erbjudandet {#create-offer}
 
@@ -39,11 +39,11 @@ Skapa en **erbjudande** gör du så här:
 
 1. Klicka **[!UICONTROL Create offer]** väljer **[!UICONTROL Personalized offer]**.
 
-   ![](../assets/create_offer.png)
+   ![](../../assets/create_offer.png)
 
 1. Ange erbjudandets namn samt start- och slutdatum och sluttid. Du kan också koppla en eller flera befintliga taggar till erbjudandet, så att du enklare kan söka efter och ordna erbjudandebiblioteket.
 
-   ![](../assets/offer_details.png)
+   ![](../../assets/offer_details.png)
 
    >[!NOTE]
    >
@@ -57,7 +57,7 @@ Följ stegen nedan om du vill lägga till en eller flera representationer i ditt
 
 1. För den första representationen börjar du med att välja **[!UICONTROL Channel]** som kommer att användas.
 
-   ![](../assets/channel-placement.png)
+   ![](../../assets/channel-placement.png)
 
    >[!NOTE]
    >
@@ -68,23 +68,23 @@ Följ stegen nedan om du vill lägga till en eller flera representationer i ditt
 
    Du kan också använda knappen bredvid knappen **[!UICONTROL Placement]** om du vill bläddra bland alla placeringar.
 
-   ![](../assets/browse-button-placements.png)
+   ![](../../assets/browse-button-placements.png)
 
    Där kan du fortfarande filtrera placeringarna efter kanal- och/eller innehållstyp. Välj en placering och klicka på **[!UICONTROL Select]**.
 
-   ![](../assets/browse-placements.png)
+   ![](../../assets/browse-placements.png)
 
 1. Lägg till innehåll i din representation. Läs mer i [det här avsnittet](#content).
 
 1. När du lägger till innehåll som en bild eller URL kan du ange en **[!UICONTROL Destination link]**: de användare som klickar på erbjudandet dirigeras till motsvarande sida.
 
-   ![](../assets/offer-destination-link.png)
+   ![](../../assets/offer-destination-link.png)
 
 1. Välj slutligen det språk du vill använda för att identifiera och hantera vad som ska visas för användarna.
 
 1. Om du vill lägga till en annan representation använder du **[!UICONTROL Add representation]** och lägg till så många representationer som behövs.
 
-   ![](../assets/offer-add-representation.png)
+   ![](../../assets/offer-add-representation.png)
 
 1. När du har lagt till alla representationer väljer du **[!UICONTROL Next]**.
 
@@ -108,19 +108,19 @@ Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Ado
 
 1. Välj **[!UICONTROL Browse]**.
 
-   ![](../assets/offer-browse-asset-library.png)
+   ![](../../assets/offer-browse-asset-library.png)
 
 1. Bläddra bland resurserna och välj den bild du vill använda
 
 1. Klicka på **[!UICONTROL Select]**.
 
-   ![](../assets/offer-select-asset.png)
+   ![](../../assets/offer-select-asset.png)
 
 ### Lägg till URL:er {#urls}
 
 Om du vill lägga till innehåll från en extern offentlig plats väljer du **[!UICONTROL URL]** anger du sedan URL-adressen till det innehåll som ska läggas till.
 
-![](../assets/offer-content-url.png)
+![](../../assets/offer-content-url.png)
 
 ### Lägg till egen text {#custom-text}
 
@@ -128,7 +128,7 @@ Du kan också infoga text när du väljer en kompatibel placering.
 
 1. Välj **[!UICONTROL Custom]** och klicka **[!UICONTROL Add content]**.
 
-   ![](../assets/offer-add-content.png)
+   ![](../../assets/offer-add-content.png)
 
    >[!NOTE]
    >
@@ -136,11 +136,11 @@ Du kan också infoga text när du väljer en kompatibel placering.
 
 1. Skriv den text som ska visas i erbjudandet.
 
-   ![](../assets/offer-text-content.png)
+   ![](../../assets/offer-text-content.png)
 
    Du kan anpassa ditt innehåll med uttrycksredigeraren. Läs mer på [personalisering](../../personalization/personalize.md#use-expression-editor).
 
-   ![](../assets/offer-personalization.png)
+   ![](../../assets/offer-personalization.png)
 
    >[!NOTE]
    >
@@ -182,11 +182,11 @@ Behörighetsregler och -begränsningar gör att du kan definiera villkoren för 
 
       Mer information om hur du arbetar med segment finns i [den här sidan](../../segment/about-segments.md).
 
-      ![](../assets/offer-eligibility-segment.png)
+      ![](../../assets/offer-eligibility-segment.png)
 
    * Om du vill koppla en viss beslutsregel till erbjudandet väljer du **[!UICONTROL By defined decision rule]** och sedan dra den önskade regeln från den vänstra rutan till **[!UICONTROL Decision rule]** område. Mer information om hur du skapar en beslutsregel finns i [det här avsnittet](../offer-library/creating-decision-rules.md).
 
-      ![](../assets/offer_rule.png)
+      ![](../../assets/offer_rule.png)
 
       >[!CAUTION]
       >
@@ -203,7 +203,7 @@ Behörighetsregler och -begränsningar gör att du kan definiera villkoren för 
    >
    >Om en e-postleverans tas bort eller om förberedelserna görs på nytt innan den skickas, uppdateras erbjudandets begränsningsvärde automatiskt.
 
-   ![](../assets/offer_capping.png)
+   ![](../../assets/offer_capping.png)
 
    I exemplet ovan:
 
@@ -221,7 +221,7 @@ När regler och begränsningar för behörighet har definierats visas en sammanf
 
 1. Välj **[!UICONTROL Save and approve]**.
 
-   ![](../assets/offer_review.png)
+   ![](../../assets/offer_review.png)
 
    Du kan också spara erbjudandet som ett utkast för att redigera det och godkänna det senare.
 
@@ -229,13 +229,13 @@ Erbjudandet visas i listan med **[!UICONTROL Approved]** eller **[!UICONTROL Dra
 
 Den är nu klar att levereras till användarna.
 
-![](../assets/offer_created.png)
+![](../../assets/offer_created.png)
 
 ## Erbjudandelista {#offer-list}
 
 I erbjudandelistan kan du välja erbjudandet för att visa dess egenskaper. Du kan också redigera det och ändra dess status (**Utkast**, **Godkänd**, **Arkiverad**), duplicera erbjudandet eller ta bort det.
 
-![](../assets/offer_created.png)
+![](../../assets/offer_created.png)
 
 Välj **[!UICONTROL Edit]** för att gå tillbaka till erbjudandeversionen där du kan ändra erbjudandets [information](#create-offer), [representationer](#representations)och redigera [regler och begränsningar för behörighet](#eligibility).
 
@@ -243,11 +243,11 @@ Välj ett godkänt erbjudande och klicka på **[!UICONTROL Undo approve]** för 
 
 Om du vill ange status igen till **[!UICONTROL Approved]** markerar du motsvarande knapp som nu visas.
 
-![](../assets/offer_approve.png)
+![](../../assets/offer_approve.png)
 
 The **[!UICONTROL More actions]** aktiverar de åtgärder som beskrivs nedan.
 
-![](../assets/offer_more-actions.png)
+![](../../assets/offer_more-actions.png)
 
 * **[!UICONTROL Duplicate]**: skapar ett erbjudande med samma egenskaper, representationer, regler och begränsningar för behörighet. Som standard har det nya erbjudandet **[!UICONTROL Draft]** status.
 * **[!UICONTROL Delete]**: tar bort erbjudandet från listan.
@@ -262,19 +262,19 @@ The **[!UICONTROL More actions]** aktiverar de åtgärder som beskrivs nedan.
 
 Du kan också ta bort eller ändra status för flera erbjudanden samtidigt genom att markera motsvarande kryssrutor.
 
-![](../assets/offer_multiple-selection.png)
+![](../../assets/offer_multiple-selection.png)
 
 Om du vill ändra status för flera erbjudanden med olika status, ändras bara statusen.
 
-![](../assets/offer_change-status.png)
+![](../../assets/offer_change-status.png)
 
 När ett erbjudande har skapats kan du klicka på dess namn i listan.
 
-![](../assets/offer_click-name.png)
+![](../../assets/offer_click-name.png)
 
 På så sätt kan du få tillgång till detaljerad information om erbjudandet. Välj **[!UICONTROL Change log]** tabba till [övervaka alla ändringar](../get-started/user-interface.md#monitoring-changes) som har gjorts i erbjudandet.
 
-![](../assets/offer_information.png)
+![](../../assets/offer_information.png)
 
 ## Videokurs {#video}
 

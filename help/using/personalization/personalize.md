@@ -6,10 +6,10 @@ topic: Personalization
 role: Data Engineer
 level: Beginner
 exl-id: f448780b-91bc-455e-bf10-9a9aee0a0b24
-source-git-commit: fab36ea43e92babfacdbaeeaecf6c551c00b3c5b
+source-git-commit: 68407db81224e9c2b6930c800e57b65e081781fe
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 2%
+source-wordcount: '211'
+ht-degree: 4%
 
 ---
 
@@ -18,37 +18,21 @@ ht-degree: 2%
 Upptäck [!DNL Adobe Journey Optimizer] personaliseringsfunktioner för att anpassa era meddelanden till varje specifik mottagare genom att utnyttja de data och den information ni har om dem. Det kan vara deras förnamn, intressen, var de bor, vad de har köpt och mycket annat.
 
 ➡️ [Lär dig hur du anpassar ett meddelande i dessa videofilmer](#video-perso)
-➡️ [Upptäck användningsfall som utnyttjar personalisering](personalization-use-case.md)
-
-## Bygg personaliseringsuttryck med en dedikerad syntax {#syntax}
 
 [!DNL Journey Optimizer] använder **inline** enkel personaliseringssyntax baserad på Handlebars, som gör att du kan skapa uttryck med innehåll inneslutet av dubbla klammerparenteser **{{}}**. Du kan lägga till flera uttryck i samma innehåll eller fält utan begränsningar. Läs mer i [Anpassningssyntax](personalization-syntax.md).
-
-**Exempel:**
-
-* `Hello {{profile.person.name.firstName}} {{profile.person.name.lastName}}`
-* `Hello {{profile.person.name.fullName}}`
-
-När du bearbetar meddelandet (e-post och push) ersätter Journey Optimizer uttrycket med data i Experience Platform-databasen:  `Hello {{profile.person.name.firstName}} {{profile.person.name.lastName}}` blir &quot;Hello John Doe&quot;.
-
-## Utnyttja profildata för att personalisera era meddelanden {#data}
 
 Personaliseringen baseras på profildata som hanteras av **Individuell XDM-profil** schema definierat i Adobe Experience Platform. Läs mer i [Dokumentation för Adobe Experience Platform Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target=&quot;_blank&quot;}.
 
 >[!CAUTION]
 >The **Individuell XDM-profil** schema är det enda schema som du kan använda för att anpassa innehåll i [!DNL Journey Optimizer].
 
-## Lägg till personalisering i olika sammanhang {#contexts}
+**Exempel:**
 
-[!DNL Journey Optimizer] gör att du kan anpassa innehållet och visningen av meddelanden på flera olika sätt. Läs mer om de sammanhang där du kan utföra personalisering i [det här avsnittet](personalization-contexts.md).
+* `Hello {{profile.person.name.firstName}} {{profile.person.name.lastName}}`
 
-## Arbeta med uttrycksredigeraren {#editor}
+* `Hello {{profile.person.name.fullName}}`
 
-[!DNL Journey Optimizer] innehåller en uttrycksredigerare där du kan välja, ordna, anpassa och validera alla data för att skapa en anpassad personalisering för ditt innehåll.
-
-Det finns flera verktyg som kan hjälpa dig att bygga ditt personaliseringsinnehåll (hjälpfunktioner, fördefinierat uttrycksbibliotek, attribut som gynnar..).
-
-Läs mer om [!DNL Journey Optimizer] uttrycksredigeraren i [det här avsnittet](personalization-build-expressions.md)
+När du bearbetar meddelandet (e-post och push) ersätter Journey Optimizer uttrycket med data som finns i databasen för Experience Cloud Platform:  `Hello {{profile.person.name.firstName}} {{profile.person.name.lastName}}` blir &quot;Hello John Doe&quot;.
 
 ## Instruktionsvideor{#video-perso}
 
