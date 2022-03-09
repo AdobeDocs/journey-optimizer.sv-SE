@@ -5,34 +5,19 @@ feature: Landing Pages
 topic: Content Management
 role: User
 level: Beginner
-hidefromtoc: true
-hide: true
 exl-id: 0da96e32-52ad-4cc3-bac4-844b1f39ed16
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 8a2e1bca59dfb291b459c729e4fbc62de4c5353f
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 3%
+source-wordcount: '149'
+ht-degree: 4%
 
 ---
 
 # Kom igång med landningssidor {#get-sarted-lp}
 
->[!CAUTION]
->
->Användningen av landningssidor är för närvarande endast tillgänglig i ett tidigt skede för att vissa användare ska kunna välja. Om du vill använda den här funktionen kontaktar du din kontoansvarige på Adobe.
-
 En landningssida är en fristående webbsida som en användare dirigeras till efter att ha klickat igenom från ett e-postmeddelande, en webbplats, en annons eller någon annan digital plats.
 
-<!--The landing page is driven toward a business goal like joining a subscription list, buying products, get to know more, etc. If the user takes that desired action, the landing page has converted. Landing pages often contain online forms that are used by marketers to acquire new consumers or get to know better their existing customers and nurture them.-->
-
 [!DNL Journey Optimizer] gör att du kan skapa och utforma landningssidor som dirigerar användarna till onlineformulär där de kan välja att inte ta emot meddelanden eller prenumerera på en viss tjänst, t.ex. ett nyhetsbrev.
-
-<!--Landing pages are online forms that are used by marketers to capture information on audiences, offer subscriptions to a service, display data and grow your database. These can also be used for acquiring or updating existing profiles.-->
-
-<!--[!DNL Journey Optimizer] now allows you to:
-* Easily build landing pages to make users subscribe to your communications.
-* Enable your customers to opt-in or opt-out from your communications.
-To move to RN-->
 
 * Utnyttja [!DNL Journey Optimizer] funktioner för att enkelt bygga **responsiva landningssidor**.
 * Konfigurera **avanmälnings- och avanmälningsflöden** snabbt och smidigt.

@@ -5,10 +5,8 @@ feature: Landing Pages
 topic: Content Management
 role: User
 level: Beginner
-hidefromtoc: true
-hide: true
 exl-id: 5e5419a0-5121-4aa7-a975-b1f08e2918c9
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 5e7db083affb7abcc33a76fa6fa7887f8fe73b06
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 2%
@@ -68,13 +66,3 @@ Du kan också använda prenumerationslistor som segment när [byggnadsresor](../
 >[!NOTE]
 >
 >Du kan övervaka hur din prenumerationslista påverkas genom specifika rapporter. [Läs mer](subscription-report.md)
-
-<!--
-
-**Questions**
-
-* Can't see the newly created subscription list in UI because their name included spacing > bug - to follow up (should be fixed for Dec. release)
-
-* Can you update the subscription list in a way other than through a LP? Not in UI but with APIs > to follow up with Fred
-
--->

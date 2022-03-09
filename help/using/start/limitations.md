@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 80de53e62da5fc3b0543ee09327e11edd277b234
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,14 @@ Nedan finns ytterligare begränsningar när du använder [!DNL Adobe Journey Opt
 * Du kan inte lägga till bilagor i ett e-postmeddelande med [!DNL Journey Optimizer].
 * BCC för e-post stöds inte i [!DNL Journey Optimizer].
 * Du kan inte använda samma sändande domän för att skicka ut meddelanden från [!DNL Adobe Journey Optimizer] och från en annan produkt, som [!DNL Adobe Campaign] eller [!DNL Adobe Marketo Engage] till exempel.
+
+## Begränsningar av landningssidor {#limitations-lp}
+
+* Bara en **Formulär** kan användas på en enda primär sida.
+* The **Formulär** -komponenten kan inte användas i undersidor.
+* Du kan inte lägga till en förrubrik på en landningssida.
+
+<!--You cannot select the **Code your own** option when designing a landing primary page.-->
 
 ## Begränsningar av resor {#limitations-journeys}
 
