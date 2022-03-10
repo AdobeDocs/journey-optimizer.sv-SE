@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 5e5419a0-5121-4aa7-a975-b1f08e2918c9
-source-git-commit: 5e7db083affb7abcc33a76fa6fa7887f8fe73b06
+source-git-commit: 8f0e85a08a0ab510f02aab3787f30933e430e3e4
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 2%
@@ -55,7 +55,7 @@ I listan visas alla prenumerationslistor som skapats. Du kan filtrera dem basera
 
 Möjliga statusvärden är följande:
 
-* **[!UICONTROL Not started]**: Du definierade ett startdatum som är senare än den aktuella dagen. De prenumererade profilerna kommer ännu inte att få några meddelanden om den här prenumerationslistan.
+* **[!UICONTROL Not started]**: Du definierade ett startdatum som är senare än den aktuella dagen. De prenumererade profilerna kommer ännu inte att få någon information om den här prenumerationslistan.
 * **[!UICONTROL Live]**: Den aktuella dagen ligger mellan prenumerationslistans startdatum och slutdatum, eller så har du inte definierat slut-/startdatum, vilket innebär att prenumerationslistan alltid är aktiv.
 * **[!UICONTROL Expired]**: Slutdatumet har passerats och prenumerationslistan är därför inte längre giltig. Prenumerationsprofiler får inte mer information om prenumerationslistan.
 

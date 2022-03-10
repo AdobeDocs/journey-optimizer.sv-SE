@@ -3,9 +3,10 @@ title: Konfiguration av landningssida
 description: Lär dig hur du konfigurerar miljön för att skapa och använda landningssidor med Journey Optimizer
 role: Admin
 level: Intermediate
-source-git-commit: 5e7db083affb7abcc33a76fa6fa7887f8fe73b06
+exl-id: 7cf1f083-bef0-40b5-8ddd-920a9d108eca
+source-git-commit: 8f0e85a08a0ab510f02aab3787f30933e430e3e4
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '804'
 ht-degree: 1%
 
 ---
@@ -93,7 +94,7 @@ Följ stegen nedan för att konfigurera en ny underdomän.
 
 1. Posten som ska placeras i dina DNS-servrar visas. Kopiera den här posten eller hämta en CSV-fil och navigera sedan till din värdlösning för domänen för att generera den matchande DNS-posten.
 
-1. Kontrollera att DNS-posten har genererats i domänens värdlösning. Om allt är korrekt konfigurerat markerar du rutan &quot;Jag bekräftar ...&quot; och klickar sedan på **[!UICONTROL Submit]**.
+1. Kontrollera att DNS-posten har genererats i din domänvärdslösning. Om allt är korrekt konfigurerat markerar du rutan &quot;Jag bekräftar ...&quot; och klickar sedan på **[!UICONTROL Submit]**.
 
    ![](assets/lp_add-your-own-subdomain-confirm.png)
 

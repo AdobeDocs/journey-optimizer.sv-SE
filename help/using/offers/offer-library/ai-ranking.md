@@ -6,7 +6,8 @@ description: Lär dig mer om AI-modeller som gör det möjligt att rangordna erb
 feature: Ranking Formulas
 role: User
 level: Intermediate
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+exl-id: 4f7f7d1d-a12a-4ff6-b0ff-1a1c3d305a9d
+source-git-commit: a7483965e3154d0ad34cfb56b6458bb63b46a26c
 workflow-type: tm+mt
 source-wordcount: '1530'
 ht-degree: 0%
@@ -77,7 +78,7 @@ Från Bayes Theorem:
 
 ***Posterior = Sannolikhet * Tidigare***
 
-The **tidigare sannolikhet** är den första gissningen om sannolikheten för att producera en utdata. Sannolikheten för att det ska gå att få fram vissa uppgifter kallas för **sannolikhet efter fel**. 
+The **tidigare sannolikhet** är den första gissningen om sannolikheten för att få fram ett resultat. Sannolikheten för att det ska gå att få fram vissa uppgifter kallas för **sannolikhet efter fel**. 
 
 Automatisk optimering är utformat för att ta hänsyn till binära belöningar (klicka/klicka inte). I detta fall representerar sannolikheten antalet lyckade försök från N-prövningar och modelleras av en **Binomialfördelning**. För vissa sannolikhetsfunktioner, om du väljer en viss tidigare version, hamnar den bakre delen i samma fördelning som den föregående. En sådan tidigare version kallas då **konjugera föregående**. Den här typen av förhandsversioner gör det väldigt enkelt att beräkna posteriorfördelningen. The **Betadistribution** är ett konjugat före binomialsannolikheten (binära belöningar) och är därför ett bekvämt och vettigt val för tidigare och senare sannolikhetsfördelningar.Betafördelningen har två parametrar. ***α*** och ***β***. Dessa parametrar kan ses som antalet lyckade och misslyckade samt medelvärdet som ges av:
 
@@ -116,4 +117,3 @@ Problemet med&quot;kallstart&quot; uppstår när ett nytt erbjudande läggs till
 Om vi t.ex. är intresserade av att mäta resultatet för en Thompson Sampling-strategi (TS) som används i rangordningstjänsten och KPI är konverteringsgraden (CVR), definieras&quot;lyften&quot; i TS-strategin mot baslinjestrategin som:
 
 ![](../assets/ai-ranking-lift.png)
-

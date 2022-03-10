@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c61b8d80-17e1-4fdd-a739-efcee032dc23
-source-git-commit: 5e7db083affb7abcc33a76fa6fa7887f8fe73b06
+source-git-commit: 8f0e85a08a0ab510f02aab3787f30933e430e3e4
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ Följ stegen nedan för att definiera specifikt innehåll som gör det möjligt 
 
    ![](assets/lp_designer-form-error.png)
 
-1. Om du vill göra ytterligare uppdateringar när du skickar in formuläret väljer du **[!UICONTROL Opt in]** eller **[!UICONTROL Opt out]** och ange om du vill uppdatera en prenumerationslista, kanalen eller bara den e-postadress som används.
+1. Om du vill göra ytterligare uppdateringar när du skickar formuläret väljer du **[!UICONTROL Opt in]** eller **[!UICONTROL Opt out]** och ange om du vill uppdatera en prenumerationslista, kanalen eller bara den e-postadress som används.
 
    ![](assets/lp_designer-form-additionnal-update.png)
 
@@ -114,7 +114,7 @@ Följ stegen nedan för att definiera specifikt innehåll som gör det möjligt 
 
    ![](assets/lp_designer-form-style-checkboxes.png)
 
-1. Expandera **[!UICONTROL Buttons]** för att ändra utseendet på knappen i komponentformuläret. Du kan till exempel lägga till en kant, redigera etikettfärgen vid hovring eller justera knappens justering.
+1. Expandera **[!UICONTROL Buttons]** för att ändra utseendet på knappen i komponentformuläret. Du kan till exempel lägga till en kant, redigera etikettfärgen vid hovring eller justera justeringen av knappen.
 
    ![](assets/lp_designer-form-style-buttons.png)
 
@@ -126,7 +126,7 @@ Följ stegen nedan för att definiera specifikt innehåll som gör det möjligt 
 
    ![](assets/lp_designer-form-style-layout.png)
 
-1. Expandera **[!UICONTROL Form error]** för att justera visningen av felmeddelandet som visas om ett problem uppstår. Markera motsvarande alternativ om du vill förhandsgranska feltexten i formuläret.
+1. Expandera **[!UICONTROL Form error]** för att justera visningen av felmeddelandet som visas om ett problem uppstår. Markera motsvarande alternativ för att förhandsgranska feltexten i formuläret.
 
    ![](assets/lp_designer-form-error-preview.png)
 

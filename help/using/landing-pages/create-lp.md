@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: 5e7db083affb7abcc33a76fa6fa7887f8fe73b06
+source-git-commit: 8f0e85a08a0ab510f02aab3787f30933e430e3e4
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 2%
+source-wordcount: '920'
+ht-degree: 1%
 
 ---
 
@@ -119,7 +119,7 @@ Följ stegen nedan för att definiera inställningar för undersidan.
 
 1. Redigera innehållet på sidan med hjälp av innehållsdesignern. Lär dig definiera innehåll för landningssidor [här](design-lp.md).
 
-1. Definiera URL-adressen till landningssidan. Den första delen av URL:en kräver att domändelegeringen utförs. Den är förfylld och kan inte redigeras via användargränssnittet. Kontakta din kontorepresentant på Adobe eller [Adobe kundtjänstsupport](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
+1. Definiera URL-adressen till landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan. [Läs mer](../configuration/lp-configuration.md#lp-subdomains)
 
    >[!CAUTION]
    >
@@ -133,7 +133,7 @@ När inställningarna för landningssidan och innehållet har definierats kan du
 
 >[!CAUTION]
 >
->Du måste ha testprofiler tillgängliga för att kunna förhandsgranska meddelanden och skicka korrektur. Lär dig hur [skapa testprofiler](../building-journeys/creating-test-profiles.md).
+>Du måste ha testprofiler tillgängliga för att kunna förhandsgranska dina meddelanden och skicka korrektur. Lär dig hur [skapa testprofiler](../building-journeys/creating-test-profiles.md).
 
 1. I landningssidans gränssnitt klickar du på **[!UICONTROL Preview & test]** för att komma åt valet av testprofil.
 
@@ -161,7 +161,7 @@ När inställningarna för landningssidan och innehållet har definierats kan du
 
 ## Kontrollera aviseringar {#check-alerts}
 
-När du skapar en landningssida varnar du om du behöver vidta viktiga åtgärder innan du publicerar.
+När du skapar en landningssida varnar du om när du måste vidta viktiga åtgärder innan du publicerar.
 
 Varningar visas högst upp till höger på skärmen, som visas nedan:
 
@@ -195,7 +195,7 @@ Två typer av varningar kan inträffa:
 
 >[!CAUTION]
 >
-> To be able to publish your message, you need to resolve all **error** alerts.
+> To be able to publish your message, you must resolve all **error** alerts.
 -->
 
 ## Publicera landningssidan {#publish-landing-page}

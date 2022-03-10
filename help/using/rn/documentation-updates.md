@@ -20,9 +20,9 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 ## Februari 2022 {#feb-2022}
 
-* All new features and improvements coming with [!DNL Journey Optimizer] Feb &#39;22 release have been detailed in the documentation. [Läs mer](release-notes.md)
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] 22 februari-utgåvan finns utförlig i dokumentationen. [Läs mer](release-notes.md)
 * The [ersätt](../building-journeys/functions/functionreplace.md#example_2) och [replaceAll](../building-journeys/functions/functionreplaceall.md#example) funktionsdokumentationssidor har uppdaterats med ytterligare information och exempel om målparametern.
-* Best practices have been added to the [Operators](../building-journeys/expression/operators.md#important-notes) page.
+* Bästa tillvägagångssätt har lagts till i [Operatorer](../building-journeys/expression/operators.md#important-notes) sida.
 
 ## Januari 2022 {#january-2022}
 
@@ -36,21 +36,21 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 ## November 2021 {#november-2021}
 
-* A full description of the **advanced expression editor** used in journeys is now available. [Läs mer](../building-journeys/expression/expressionadvanced.md)
+* En fullständig beskrivning av **avancerad uttrycksredigerare** som används i resor finns nu tillgängliga. [Läs mer](../building-journeys/expression/expressionadvanced.md)
 * Ett nytt avsnitt om **Delegeringsmetod för CNAME-underdomän** har lagts till. [Läs mer](../configuration/delegate-subdomain.md#cname-subdomain-delegation)
 
 
 ## Oktober 2021 {#october-2021}
 
-* All new features and improvements coming with [!DNL Journey Optimizer] Oct &#39;21 release have been detailed in the documentation. [Läs mer](release-notes.md)
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Okt &#39;21-versionen har beskrivits i dokumentationen. [Läs mer](release-notes.md)
 * Tillagd **Funktionen Datum och tid** lista. [Läs mer](../personalization/functions/dates.md)
 * Nytt **Komma igång-avsnitt per användarprofil**. Ta din egen väg för att nå dina mål snabbare! [Läs mer](../start/quick-start.md)
 * Nytt **Redigera en meddelandeförinställning** -avsnitt. [Läs mer](../configuration/message-presets.md#edit-message-preset)
 * Nytt **Redigera en PTR-post** -avsnitt. [Läs mer](../configuration/ptr-records.md#edit-ptr-record)
 * Nytt **Inaktivera en meddelandeförinställning** -avsnitt. [Läs mer](../configuration/message-presets.md#edit-message-preset#deactivate-preset)
 * Nya begränsningar i **Utvecklarhandbok för API för beslutshantering** begränsningar för erbjudandet som inte stöds av mobilen [!DNL Experience Edge] arbetsflöden. [Läs mer](../offers/api-reference/offers-api/personalized-offers/create.md#limitations)
-* New **Create simulations** section. [Läs mer](../offers/offer-activities/simulation.md)
-* Updated **Add decision scopes** section. [Läs mer](../offers/offer-activities/create-offer-activities.md#add-decision-scopes)
+* Nytt **Skapa simuleringar** -avsnitt. [Läs mer](../offers/offer-activities/simulation.md)
+* Uppdaterat **Lägg till beslutsomfattningar** -avsnitt. [Läs mer](../offers/offer-activities/create-offer-activities.md#add-decision-scopes)
 * Uppdaterat **Definiera innehåll för dina representationer** avsnitt, inklusive ett nytt [undersektion](../offers/offer-library/creating-personalized-offers.md#custom-text) om hur man definierar och personaliserar egen text. [Läs mer](../offers/offer-library/creating-personalized-offers.md#content)
 
 
@@ -66,7 +66,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 * Tillagd information om standardportar för anpassade åtgärder. [Läs mer](../action/about-custom-action-configuration.md#url-configuration)
 
-* Added information on multiple business event use cases. [Läs mer](../event/about-creating-business.md#multiple-business-events)
+* Lagt till information om flera användningsfall för affärshändelser. [Läs mer](../event/about-creating-business.md#multiple-business-events)
 
 * Tillagda vanligt förekommande exempel till frågor om Journey Step Events i Data Lake. [Läs mer](../reports/query-examples.md)
 
@@ -94,10 +94,10 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Anteckningar har lagts till i avsnitten om Suppression-listan, Tillåtelselista och e-post, global/liverapport, för att ange att profiler med statusen Inaktiverad och Inte tillåten ska uteslutas från e-postrapporten Skickade mått. [Läs mer](../reports/email-global-report.md)
 * Ett nytt avsnitt har lagts till som beskriver hur du hämtar e-postadresser eller domäner som har uteslutits från en sändning eftersom de inte fanns på tillåtelselista. [Läs mer](../messages/allow-list.md#reporting)
 * Avsnittet Aktivera tillåtelselista har uppdaterats. [Läs mer](../messages/allow-list.md#enable-allow-list)
-* Updated the Monitor message presets section with the possible preset creation failure reasons and details on such errors. [Läs mer](../configuration/message-presets.md#monitor-message-presets)
+* Avsnittet Monitor-meddelandets förinställningar har uppdaterats med orsaker till att förinställningarna inte kunde skapas och information om sådana fel. [Läs mer](../configuration/message-presets.md#monitor-message-presets)
 * Uppdaterat och ändrat namn på avsnittet för återförsöksperiod för att återspegla det faktum att du nu kan ändra inställningen för återförsök via e-post i meddelandeförinställningarna. [Läs mer](../configuration/retries.md#retry-duration)
 * Ett nytt avsnitt har lagts till som beskriver hur du infogar en länk för att välja bort ett enstaka klick i e-postinnehåll. [Läs mer](../messages/consent.md#one-click-opt-out-link)
-* Updated the Delegate a subdomain section with more detailed information on the validation process performed by Adobe. [Läs mer](../configuration/delegate-subdomain.md#subdomain-validation)
+* Uppdaterade avsnittet Delegera en underdomän med mer detaljerad information om valideringsprocessen som utfördes av Adobe. [Läs mer](../configuration/delegate-subdomain.md#subdomain-validation)
 * Ett avsnitt har lagts till som beskriver hur du manuellt lägger till e-postadresser och domäner i listan över inaktiveringar. [Läs mer](../configuration/manage-suppression-list.md#add-addresses-and-domains)
 * Uppdaterade [Åtkomst till listan över inaktiveringar](../configuration/manage-suppression-list.md#access-suppression-list) och [Försök igen](../configuration/retries.md) -avsnitt som återspeglar det nya användargränssnittet.
 * Det nya flödet för att lägga till och konfigurera representationer när ett erbjudande skapas har dokumenterats. [Läs mer](../offers/offer-library/creating-personalized-offers.md#representations)
@@ -105,19 +105,19 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 ## Juli 2021 {#july-2021}
 
-* All new features and improvements coming with [!DNL Journey Optimizer] July &#39;21 release have been detailed in the documentation. [Läs mer](release-notes.md)
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version från juli 210 finns utförlig i dokumentationen. [Läs mer](release-notes.md)
 * Lagt till direktlänkar till Experience Platform-tjänstdokumentation i [!DNL Journey Optimizer] hemsida och innehållsförteckning
-* New landing pages for Experience Platform services available in [!DNL Journey Optimizer]
+* Nya landningssidor för Experience Platform-tjänster finns tillgängliga på [!DNL Journey Optimizer]
 * Lagt till länkar till [!DNL Journey Optimizer] produktbeskrivning på startsidan
 * Lagt till självstudievideor på flera sidor
-* Optimized home page imagery
+* Optimerade startsidesbilder
 * Avsnittet&quot;Meddelandespårning&quot; har flyttats, förbättrats och bytt namn till&quot;Lägg till länkar och spåra meddelanden&quot;. [Läs mer](../messages/message-tracking.md)
 * Ett underavsnitt har lagts till på spegelsidor. [Läs mer](../messages/message-tracking.md#mirror-page)
 * Namnet på&quot;erbjudandeaktiviteter&quot; har ändrats till&quot;beslut&quot; och&quot;beslut&quot; till&quot;beslutsomfattningar&quot; i dokumentation och skärmar. [Läs mer](../offers/get-started/starting-offer-decisioning.md)
-* New use case: [personalize a message with helper functions](../personalization/personalization-use-case-helper-functions.md)
+* Nytt användningsfall: [personalisera ett meddelande med hjälpfunktioner](../personalization/personalization-use-case-helper-functions.md)
 * Dokumentationen för Läs segment har uppdaterats för att återspegla materialiserad segmentpåverkan. [Läs mer](../building-journeys/read-segment.md)
 * Uppdaterade begränsningar för resan. [Läs mer](../start/limitations.md)
-* Updated the Configure offers selection in decisions section. [Läs mer](../offers/offer-activities/configure-offer-selection.md)
+* Markeringen Konfigurera erbjudanden uppdaterades i avsnittet Beslut. [Läs mer](../offers/offer-activities/configure-offer-selection.md)
 * En varning har lagts till som anger att händelsebaserade erbjudanden för närvarande inte stöds. [Läs mer](../offers/offer-library/creating-personalized-offers.md#eligibility)
 * Dokumenterade beslutsledningens nya **[!UICONTROL Overview]** -fliken. [Läs mer](../offers/get-started/user-interface.md#overview)
 * Nya avsnitt har lagts till för att beskriva de åtgärder som är tillgängliga från erbjudandet och beslutslistorna: [Erbjudandelista](../offers/offer-library/creating-personalized-offers.md#offer-list) och [Beslutslista](../offers/offer-activities/create-offer-activities.md#decision-list).

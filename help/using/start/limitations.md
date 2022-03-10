@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 80de53e62da5fc3b0543ee09327e11edd277b234
+source-git-commit: d2ae8f7a2a44ac92d26520e5c85a19a2660ed8e2
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,7 @@ Nedan finns ytterligare begränsningar när du använder [!DNL Adobe Journey Opt
 * Bara en **Formulär** kan användas på en enda primär sida.
 * The **Formulär** -komponenten kan inte användas i undersidor.
 * Du kan inte lägga till en förrubrik på en landningssida.
-
-<!--You cannot select the **Code your own** option when designing a landing primary page.-->
+* Du kan inte välja **Koda din egen** när du utformar en primär landningssida.
 
 ## Begränsningar av resor {#limitations-journeys}
 
@@ -68,7 +67,7 @@ Nedan finns ytterligare begränsningar när du använder [!DNL Adobe Journey Opt
 
 ### Datakällor {#data-sources}
 
-* Externa datakällor kan utnyttjas inom en kundresa för att söka externa data i realtid. Dessa källor måste kunna användas via REST API, ha stöd för JSON och kunna hantera antalet begäranden.
+* Externa datakällor kan utnyttjas inom en kundresa för att söka efter externa data i realtid. Dessa källor måste kunna användas via REST API, ha stöd för JSON och kunna hantera antalet begäranden.
 
 ### Resor som börjar samtidigt som en profil skapas {#journeys-limitation-profile-creation}
 
