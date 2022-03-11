@@ -17,7 +17,7 @@ ht-degree: 1%
 
 När du har [skapade ditt meddelande](create-message.md)kan du börja skapa ditt e-postinnehåll.
 
-1. Välj **[!UICONTROL Email designer]** i **[!UICONTROL Body]** -avsnitt.
+1. From your newly created message, select **[!UICONTROL Email designer]** in the **[!UICONTROL Body]** section.
 
    ![](assets/import-html_1.png)
 
@@ -43,11 +43,11 @@ När du har [skapade ditt meddelande](create-message.md)kan du börja skapa ditt
 >[!CONTEXTUALHELP]
 >id="ac_edition_columns"
 >title="Definiera e-postkolumner"
->abstract="Med e-postdesignern kan du enkelt definiera layouten för e-postmeddelandet genom att definiera kolumnstrukturen."
+>abstract="The Email Designer allows you to easily define the layout of your email by defining column structure."
 
-Med e-postdesignern kan du enkelt definiera e-postens struktur. Genom att lägga till och flytta strukturella element med enkla dra-och-släpp-åtgärder kan du designa formen på e-postmeddelandet på några sekunder.
+Med e-postdesignern kan du enkelt definiera e-postens struktur. By adding and moving structural elements with simple drag-and-drop actions, you can design the shape of your email within seconds.
 
-Följ stegen nedan för att börja skapa e-postinnehåll med e-postdesignern:
+To start building your email content with the email designer, follow the steps below:
 
 1. När du har valt **[!UICONTROL Design from scratch]** kan du börja designa ditt e-postinnehåll genom att dra och släppa **[!UICONTROL Structure components]** för att definiera layouten för e-postmeddelandet.
 
@@ -115,9 +115,9 @@ Ditt e-postinnehåll kan nu användas i ett meddelande. [Lär dig hur du skickar
 
 Vi rekommenderar att du skapar en textversion av e-postbrödtexten, som används när HTML inte kan visas.
 
-Som standard skapar e-postdesignern en **[!UICONTROL Plain text]** version av e-postmeddelandet, inklusive personaliseringsfält. Den här versionen genereras och synkroniseras automatiskt med HTML-versionen av ditt innehåll.
+By default, the Email Designer creates a **[!UICONTROL Plain text]** version of your email, including personalization fields. This  version is automatically generated and synchronized with the HTML version of your content.
 
-Om du föredrar att använda ett annat innehåll för den oformaterade textversionen följer du stegen nedan:
+If you prefer using a different content for the plain text version, follow the steps below:
 
 1. I ditt e-postmeddelande väljer du **[!UICONTROL Plain text]** -fliken.
 
@@ -159,7 +159,7 @@ Följ stegen nedan för att definiera e-postprerubriken:
 
    ![](assets/preheader_1.png)
 
-1. Från **[!UICONTROL Body settings]** höger ruta, klicka **Redigera** bredvid **[!UICONTROL Preheader]** fält för att lägga till innehåll.
+1. From the **[!UICONTROL Body settings]** right pane, click **Edit** next to the **[!UICONTROL Preheader]** field to add content.
 
    ![](assets/preheader_2.png)
 
@@ -182,7 +182,7 @@ Din förrubrik har nu konfigurerats för din e-post.
 >[!CONTEXTUALHELP]
 >id="ac_edition_backgroundimage"
 >title="Bakgrundsinställningar"
->abstract="Du kan anpassa bakgrundsfärgen eller bakgrundsbilden för innehållet. Observera att bakgrundsbilden inte stöds av alla e-postklienter."
+>abstract="You can personalize the background color or background image for your content. Note that background image is not supported by all email clients."
 
 När det gäller att ange bakgrunder med e-postdesignern rekommenderar Adobe följande:
 
@@ -192,7 +192,7 @@ När det gäller att ange bakgrunder med e-postdesignern rekommenderar Adobe fö
 
 Nedan visas de tillgängliga bakgrundsinställningarna som du kan använda.
 
-* Ange en **[!UICONTROL Background color]** för hela e-postmeddelandet. Se till att du väljer brödtextinställningarna i navigeringsträdet som du kommer åt från den vänstra paletten.
+* Ange en **[!UICONTROL Background color]** för hela e-postmeddelandet. Make sure you select the body settings in the navigation tree accessible from the left Palette.
 
 * Ange samma bakgrundsfärg för alla strukturkomponenter genom att markera **[!UICONTROL Viewport background color]**. Med det här alternativet kan du välja en annan inställning från bakgrundsfärgen.
 

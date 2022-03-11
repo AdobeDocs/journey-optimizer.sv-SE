@@ -5,10 +5,12 @@ feature: Landing Pages
 topic: Content Management
 role: User
 level: Intermediate
+hidefromtoc: true
+hide: true
 exl-id: 8c00d783-54a3-45d9-bd8f-4dc58804d922
-source-git-commit: 8f0e85a08a0ab510f02aab3787f30933e430e3e4
+source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '843'
 ht-degree: 1%
 
 ---
@@ -16,6 +18,11 @@ ht-degree: 1%
 # Användningsexempel för landningssida {#lp-use-cases}
 
 Nedan finns några exempel på hur du kan använda [!DNL Journey Optimizer] landningssidor så att dina kunder kan välja att inte ta emot vissa eller alla meddelanden.
+
+<!--The main use cases are:
+* Subscription to a service
+* Opt-in
+* Opt-out-->
 
 ## Prenumeration på en tjänst {#subscription-to-a-service}
 
@@ -25,15 +32,13 @@ Ett av de vanligaste användningsområdena är att bjuda in kunderna till [prenu
 
 Anta till exempel att du ordnar ett event nästa månad och vill starta en kampanj för att registrera event<!--to keep your customers that are interested updated on that event-->. För att göra detta ska du skicka ett e-postmeddelande med en länk till en landningssida där mottagarna kan registrera sig för evenemanget. De användare som registrerar sig läggs till i prenumerationslistan som du har skapat för detta ändamål.
 
-### Konfigurera en landningssida {#set-up-lp}
+### Ställ in landningssida {#set-up-lp}
 
 1. Skapa händelseregistreringens prenumerationslista, som lagrar registrerade användare. Lär dig hur du skapar en prenumerationslista [här](subscription-list.md#define-subscription-list).
 
    ![](assets/lp_subscription-uc-list.png)
 
 1. [Skapa en landningssida](create-lp.md) för att göra det möjligt för mottagarna att registrera sig för evenemanget.
-
-   ![](assets/lp_create-lp-details.png)
 
 1. Konfigurera registreringen [primär landningssida](create-lp.md#configure-primary-page).
 
@@ -52,10 +57,6 @@ Anta till exempel att du ordnar ett event nästa månad och vill starta en kampa
 1. [Infoga en länk](../messages/message-tracking.md#insert-links) i ert meddelandeinnehåll. Välj **[!UICONTROL Landing page]** som **[!UICONTROL Link type]** och väljer [landningssida](create-lp.md#configure-primary-page) som du har skapat för registrering.
 
    ![](assets/lp_subscription-uc-link.png)
-
-   >[!NOTE]
-   >
-   >Om du vill kunna publicera meddelandet kontrollerar du att landningssidan du valt inte har gått ut ännu. Lär dig hur du uppdaterar förfallodatumet [i det här avsnittet](create-lp.md#configure-primary-page).
 
 1. Spara innehåll och [publicera meddelandet](../messages/publish-manage-message.md).
 
@@ -114,7 +115,7 @@ Följ stegen nedan om du vill att mottagarna av ett e-postmeddelande ska kunna a
 
    ![](assets/lp_opt-out-primary-lp.png)
 
-   <!--You can also build your own landing page and host it on the third-party system of your choice.-->
+   <!--You can also build your own landing page and host it on the third-party system of your choice. To keep?-->
 
 1. Lägg till en bekräftelse [undersida](create-lp.md#configure-subpages) som visas för de användare som skickar formuläret.
 
@@ -138,10 +139,6 @@ Följ stegen nedan om du vill att mottagarna av ett e-postmeddelande ska kunna a
 
    ![](assets/lp_opt-out-landing-page.png)
 
-   >[!NOTE]
-   >
-   >Om du vill kunna publicera meddelandet kontrollerar du att landningssidan du valt inte har gått ut ännu. Lär dig hur du uppdaterar förfallodatumet [i det här avsnittet](create-lp.md#configure-primary-page).
-
 1. Spara innehåll och [publicera meddelandet](../messages/publish-manage-message.md).
 
 1. Skicka ditt budskap genom en resa. [Läs mer](../building-journeys/journey.md).
@@ -160,7 +157,7 @@ Om du vill kontrollera att den aktuella profilens val har uppdaterats går du ti
 
 ![](assets/lp_opt-out-profile-choice.png)
 
-I **[!UICONTROL Attributes]** kan du se att värdet för **[!UICONTROL choice]** har ändrats till **[!UICONTROL no]**.
+I **[!UICONTROL Attributes]** kan du se värdet för **[!UICONTROL choice]** har ändrats till **[!UICONTROL no]**.
 
 <!--
 

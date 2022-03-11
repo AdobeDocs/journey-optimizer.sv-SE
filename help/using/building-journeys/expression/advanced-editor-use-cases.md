@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Exempel på avancerade uttryck{#advanced-expression-examples}
 
-Den avancerade uttrycksredigeraren kan användas för att skapa villkor som gör att du kan filtrera användare på dina resor. Dessa villkor gör att ni kan inrikta er på användare i tid, på datum, plats, varaktighet eller åtgärder som att köpa eller avstå från kundvagnar så att de kan återställas under resan.
+Den avancerade uttrycksredigeraren kan användas för att skapa villkor som gör att du kan filtrera användare på dina resor. These conditions enable you to target users on time, date, location, duration, or actions such as purchase or abandonment of carts so that they can be retargeted in the journey.
 
 >[!NOTE]
 >
@@ -28,9 +28,9 @@ Den avancerade uttrycksredigeraren är obligatorisk för att utföra frågor på
 Erfarenhetshändelserna hämtas från Adobe Experience Platform som en samling i omvänd kronologisk ordning, vilket innebär att
 
 * den första funktionen returnerar den senaste händelsen
-* den sista funktionen returnerar den äldsta.
+* last function will return the oldest one.
 
-Låt oss till exempel säga att ni vill rikta er mot kunder som har övergett en kundvagn de senaste 7 dagarna för att skicka ett meddelande när kunden närmar sig en butik, med ett erbjudande på artiklar de vill ha som finns i butik.
+For example, let&#39;s say you want to target customers with a cart abandonment in the last 7 days to send a message when the customer is getting near a store, with an offer on items they wanted that are in store.
 
 **Du måste skapa följande villkor:**
 
@@ -46,7 +46,7 @@ Sedan markeras alla tilläggshändelser som inte omvandlades till completePurcha
 
 >[!NOTE]
 >
->Om du snabbt vill infoga fält i uttrycket dubbelklickar du på fältet på den vänstra panelen i redigeraren.
+>To insert fields in the expression quickly, double-click the field in the left panel of the editor.
 
 Den angivna tidsstämpeln fungerar som datum-/tidsvärde, den andra är antalet dagar.
 
@@ -80,7 +80,7 @@ Det här uttrycket returnerar ett booleskt värde.
 
 `#{ArriveLumaStudio._acpevangelists1.location.location}`
 
-* Och ange SKU med funktionen `first` för att hämta den senaste&quot;addToCart&quot;-interaktionen:
+* And specify SKU, using the function `first` to retrieve the most recent &quot;addToCart&quot; interaction:
 
    ```json
        #{ExperiencePlatformDataSource
@@ -100,7 +100,7 @@ Därifrån kan ni lägga till ytterligare en väg på resan när produkten inte 
 
 **I villkor**
 
-Detta villkor hämtar endast geofence-händelser som utlöses i&quot;Arlington&quot;:
+This condition retrieve only the geofence events triggered in &quot;Arlington&quot;:
 
 ```json
         @{GeofenceEntry
@@ -110,7 +110,7 @@ Detta villkor hämtar endast geofence-händelser som utlöses i&quot;Arlington&q
                     .name} == "Arlington"
 ```
 
-Förklaring: Det här är en strikt strängjämförelse (skiftlägeskänslig), som motsvarar en fråga i enkelt läge som använder `equal to` med `Is sensitive` markerad.
+Explanation: This is a strict string comparison (case sensitive), equivalent to a query in simple mode that uses `equal to` with `Is sensitive` checked.
 
 Samma fråga med `Is sensitive` om du inte markerar det här alternativet genereras följande uttryck i avancerat läge:
 

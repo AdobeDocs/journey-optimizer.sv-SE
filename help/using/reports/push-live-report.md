@@ -41,7 +41,7 @@ The push **[!UICONTROL Live report]** är uppdelat i olika widgetar som detaljer
 
 * **[!UICONTROL Engagements]**: Totalt antal öppningar och åtgärder för det här push-meddelandet, dvs om profilen öppnade push-meddelandet eller om någon klickade på en knapp.
 
-The **[!UICONTROL Sending metrics - by push]** tabellen visar hur framgångsrik leveransen är:
+The **[!UICONTROL Sending metrics - by push]** table details the success of your delivery:
 
 * **[!UICONTROL Targeted]**: Antal användarprofiler som kvalificerar sig som målprofiler för den här leveransen.
 

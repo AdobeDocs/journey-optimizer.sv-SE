@@ -5,9 +5,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
-source-git-commit: 2a27c19766c84d8c65e8b21ba381754758d60cae
+source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1080'
 ht-degree: 0%
 
 ---
@@ -417,16 +417,13 @@ Den innehåller följande lågnivåbehörigheter:
    * profiles.read
    * datasets.read
 
-### [!DNL Manage landing page settings] behörighet {#manage-landing-page-settings}
+## Journey Optimizer Library-funktion {library-permissions}
 
-The **[!DNL Manage landing page settings]** behörighet på hög nivå ger användare möjlighet att läsa, skapa och redigera underdomäner och förinställningar för landningssidor.
+### Hantera biblioteksobjekt {#library-items}
+
+The **[!DNL Manage Library Items]** behörighet på hög nivå tillåter användare att lägga till och ta bort sparade uttryck i [!DNL Journey Optimizer] Bibliotek.
 
 Den innehåller följande lågnivåbehörigheter:
 
-* Specifikt för Journey Optimizer:
-   * landing_page_subdomain.read
-   * landing_page_subdomain.write
-   * landing_page_subdomain.delete
-   * landing_page_preset.read
-   * landing_page_preset.write
-   * landing_page_preset.delete
+* library_item.create
+* library_item.delete

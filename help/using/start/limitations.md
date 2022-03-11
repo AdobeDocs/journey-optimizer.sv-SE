@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: d2ae8f7a2a44ac92d26520e5c85a19a2660ed8e2
+source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
@@ -24,13 +24,6 @@ Nedan finns ytterligare begränsningar när du använder [!DNL Adobe Journey Opt
 * Du kan inte lägga till bilagor i ett e-postmeddelande med [!DNL Journey Optimizer].
 * BCC för e-post stöds inte i [!DNL Journey Optimizer].
 * Du kan inte använda samma sändande domän för att skicka ut meddelanden från [!DNL Adobe Journey Optimizer] och från en annan produkt, som [!DNL Adobe Campaign] eller [!DNL Adobe Marketo Engage] till exempel.
-
-## Begränsningar av landningssidor {#limitations-lp}
-
-* Bara en **Formulär** kan användas på en enda primär sida.
-* The **Formulär** -komponenten kan inte användas i undersidor.
-* Du kan inte lägga till en förrubrik på en landningssida.
-* Du kan inte välja **Koda din egen** när du utformar en primär landningssida.
 
 ## Begränsningar av resor {#limitations-journeys}
 
@@ -67,7 +60,7 @@ Nedan finns ytterligare begränsningar när du använder [!DNL Adobe Journey Opt
 
 ### Datakällor {#data-sources}
 
-* Externa datakällor kan utnyttjas inom en kundresa för att söka efter externa data i realtid. Dessa källor måste kunna användas via REST API, ha stöd för JSON och kunna hantera antalet begäranden.
+* Externa datakällor kan utnyttjas inom en kundresa för att söka externa data i realtid. Dessa källor måste kunna användas via REST API, ha stöd för JSON och kunna hantera antalet begäranden.
 
 ### Resor som börjar samtidigt som en profil skapas {#journeys-limitation-profile-creation}
 

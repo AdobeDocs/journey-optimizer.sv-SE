@@ -1,5 +1,5 @@
 ---
-keywords: Journey Optimizer;home;populära topics
+keywords: Journey Optimizer;home;popular topics
 title: Journey Optimizer produktdokumentation
 description: Adobe Journey Optimizer produkthjälpcenter
 feature: Overview
@@ -29,7 +29,7 @@ ht-degree: 11%
     <div>
       <a href="using/start/get-started.md">Vad är [!DNL Journey Optimizer]?</a>
     </div>
-    <p>Upptäck viktiga funktioner och användningsområden
+    <p>Discover key features and use cases
     <p>
     <div>
       <a href="using/rn/release-notes.md">Versionsinformation</a>
@@ -57,7 +57,7 @@ ht-degree: 11%
     <div>
     <a href="using/building-journeys/journeys-uc.md">Skapa din första resa</a>
     </div>
-    <p>Lär dig hur du bygger och utför en resa
+    <p>Learn how to build and execute a journey
     <p>
     <div>
     <a href="using/configuration/get-started-configuration.md">Konfigurera [!DNL Journey Optimizer]</a>
@@ -119,9 +119,9 @@ ht-degree: 11%
       <a href="using/messages/create-message.md">Meddelanden</a>
     </li>
     <p>
-    <p>BESLUTSHANTERING</p>
+    <p>DECISION MANAGEMENT</p>
     <li>
-      <a href="using/offers/get-started/starting-offer-decisioning.md">Erbjudanden</a>
+      <a href="using/offers/get-started/starting-offer-decisioning.md">Offers</a>
     </li>
      <li>
       <a href="using/offers/offer-library/key-steps.md">Komponenter</a>
@@ -146,7 +146,7 @@ ht-degree: 11%
       <a href="https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/monitor-data-ingestion.html" target="_blank">Övervakning</a>
     </li>
     <p>
-    <p>ANSLUTNINGAR</p>
+    <p>CONNECTIONS</p>
     <li>
       <a href="using/start/get-started-sources.md">Källor</a>
     </li>
@@ -159,7 +159,7 @@ ht-degree: 11%
       <a href="using/start/get-started-profiles.md">Profiler</a>
     </li>
     <li>
-      <a href="using/start/get-started-identity.md">Identitet</a>
+      <a href="using/start/get-started-identity.md">Identity</a>
     </li>
     <p>
     <p>ADMINISTRATION</p>
@@ -170,7 +170,7 @@ ht-degree: 11%
       <a href="using/configuration/get-started-configuration.md">Kanaler</a>
     </li>
      <li>
-      <a href="using/administration/sandboxes.md">Sandlådor</a>
+      <a href="using/administration/sandboxes.md">Sandboxes</a>
     </li>
   </td>
 </tr>

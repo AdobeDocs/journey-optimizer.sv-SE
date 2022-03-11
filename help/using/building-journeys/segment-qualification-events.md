@@ -1,6 +1,6 @@
 ---
 title: Segmentkvalificeringshändelser
-description: Learn about segment qualification events
+description: Läs mer om kvalificeringshändelser för segment
 feature: Journeys
 topic: Content Management
 role: User
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 Med den här aktiviteten kan din resa lyssna på ingångar och utgångar för profiler i Adobe Experience Platform-segment för att få individer att komma in på eller gå framåt under en resa. Mer information om att skapa segment finns i [section](../segment/about-segments.md).
 
-Let&#39;s say you have a &quot;silver customer&quot; segment. Med den här aktiviteten kan ni få alla nya silverkunder att ta sig in på en resa och skicka en serie personaliserade meddelanden till dem.
+Säg att du har ett &quot;silverkundssegment&quot;. Med den här aktiviteten kan ni få alla nya silverkunder att ta sig in på en resa och skicka en serie personaliserade meddelanden till dem.
 
-This type of event can be positioned as the first step or later in the journey.
+Den här typen av händelse kan placeras som det första steget eller senare under resan.
 
 >[!IMPORTANT]
 >
@@ -36,7 +36,7 @@ This type of event can be positioned as the first step or later in the journey.
 
 1. Lägg till en **[!UICONTROL Label]** till aktiviteten. Det här steget är valfritt.
 
-1. Click in the **[!UICONTROL Segment]** field and select the segments you want to leverage.
+1. Klicka på **[!UICONTROL Segment]** och markera de segment som du vill använda.
 
    >[!NOTE]
    >
@@ -56,43 +56,43 @@ This type of event can be positioned as the first step or later in the journey.
    >
    >Observera att **[!UICONTROL Enter]** och **[!UICONTROL Exit]** motsvarar **Realiserad** och **Avslutade** segmentdeltagarstatus från Adobe Experience Platform. Mer information om hur du utvärderar ett segment finns i [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target=&quot;_blank&quot;}.
 
-1. Select a namespace. Detta behövs bara om händelsen är placerad som det första steget i resan.
+1. Välj ett namnutrymme. Detta behövs bara om händelsen är placerad som det första steget i resan.
 
    ![](assets/segment7.png)
 
-The payload contains the following context information, which you can use in conditions and actions:
+Nyttolasten innehåller följande kontextinformation som du kan använda i villkor och åtgärder:
 
 * beteendet (entré, exit)
-* the timestamp of qualification
+* tidsstämpel för kvalificeringen
 * segment-ID
 
-When using the expression editor in a condition or action that follows a **[!UICONTROL Segment Qualification]** activity, you have access to the **[!UICONTROL SegmentQualification]** node. Du kan välja mellan **[!UICONTROL Last qualification time]** och **[!UICONTROL status]** (ange eller avsluta).
+När du använder uttrycksredigeraren i ett villkor eller en åtgärd som följer en **[!UICONTROL Segment Qualification]** -aktivitet, du har tillgång till **[!UICONTROL SegmentQualification]** nod. Du kan välja mellan **[!UICONTROL Last qualification time]** och **[!UICONTROL status]** (ange eller avsluta).
 
 Se [Villkorsaktivitet](../building-journeys/condition-activity.md#about_condition).
 
 ![](assets/segment8.png)
 
-En ny resa som innehåller en segmentkvalificeringshändelse kan användas tio minuter efter att du har publicerat den. Det här tidsintervallet motsvarar cacheuppdateringsintervallet för den dedikerade tjänsten. Therefore, you must wait ten minutes before using this journey.
+En ny resa som innehåller en segmentkvalificeringshändelse kan användas tio minuter efter att du har publicerat den. Det här tidsintervallet motsvarar cacheuppdateringsintervallet för den dedikerade tjänsten. Du måste därför vänta tio minuter innan du kan använda den här resan.
 
 ## God praxis {#best-practices-segments}
 
-The **[!UICONTROL Segment Qualification]** activity enables the immediate entrance in journeys of individuals getting qualified or disqualified from an Adobe Experience Platform segment.
+The **[!UICONTROL Segment Qualification]** Aktiviteten gör det möjligt att omedelbart ta sig in på resor för personer som kvalificerats eller diskvalificerats från ett Adobe Experience Platform-segment.
 
-Mottagningshastigheten för den här informationen är hög. Measurements made show a speed of 10 000 events received per seconds. Därför bör du se till att du förstår hur höga ingångstoppar kan bli, hur du undviker dem och hur du gör din resa redo för dem.
+Mottagningshastigheten för den här informationen är hög. Mätningarna visar en hastighet på 10 000 mottagna händelser per sekund. Därför bör du se till att du förstår hur höga ingångstoppar kan bli, hur du undviker dem och hur du gör din resa redo för dem.
 
 ### Gruppsegment{#batch-speed-segment-qualification}
 
 Observera att en ingångstopp kommer att inträffa vid tidpunkten för den dagliga beräkningen när du använder en segmentkvalificering för ett batchsegment. Toppens storlek beror på antalet personer som dagligen kommer in i (eller avslutar) segmentet.
 
-Moreover, if the batch segment is newly created and immediately used in a journey, the first batch of calculation might make a very large number of individuals enter the journey.
+Om gruppsegmentet dessutom är nyskapat och används omedelbart under en resa kan den första beräkningsomgången få ett mycket stort antal personer att komma in på resan.
 
 ### Strömmade segment{#streamed-speed-segment-qualification}
 
-When using segment qualification for streamed segments, there is less risk of getting large peaks of entrances/exits due to the continuous evaluation of the segment. Men om segmentdefinitionen leder till att ett stort antal kunder kvalificerar sig samtidigt kan det ändå bli en topp.
+Vid användning av segmentkvalificering för direktuppspelade segment är risken mindre för att få stora toppar av ingångar/utgångar på grund av den kontinuerliga utvärderingen av segmentet. Men om segmentdefinitionen leder till att ett stort antal kunder kvalificerar sig samtidigt kan det ändå bli en topp.
 
 Mer information om direktuppspelningssegmentering finns i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html#api)
 
-### How to avoid overloads{#overloads-speed-segment-qualification}
+### Så här undviker du överbelastningar{#overloads-speed-segment-qualification}
 
 Här följer några tips som hjälper dig att undvika överbelastade system som används i resor (datakällor, anpassade åtgärder, **Meddelande** verksamhet).
 

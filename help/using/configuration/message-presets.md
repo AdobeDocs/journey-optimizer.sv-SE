@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 653a5483fbdeb7a0b78dadc55ec71663e3ff0247
+source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
 workflow-type: tm+mt
 source-wordcount: '1900'
 ht-degree: 1%
@@ -110,7 +110,7 @@ I **INFORMATION OM UNDERDOMÄN- OCH IP-POOL** måste du
 
 För att identifiera var och varför en person klickade på länken kan du lägga till UTM-parametrar för URL-spårning i dialogrutan  **[!UICONTROL URL TRACKING CONFIGURATION (web analytics)]** -avsnitt.
 
-Utifrån de parametrar som du anger används en UTM-kod i slutet av den URL som finns i meddelandeinnehållet. Sedan kan du jämföra resultaten med ett webbanalysverktyg som Google Analytics. <!--For example: https://yourwebsite.com/?utm_source=Adobe_CJM&utm_medium=email&utm_campaign=cart_abandonment_journey... In this example, the UTM code identifies the link as an email from an abandonment cart journey. You can either select a journey/message attribute from a predefined list, or enter your own text.-->
+Utifrån de parametrar som du anger används en UTM-kod i slutet av den URL som finns i meddelandeinnehållet. Sedan kan du jämföra resultaten i ett webbanalysverktyg som Adobe Analytics. <!--For example: https://yourwebsite.com/?utm_source=Adobe_CJM&utm_medium=email&utm_campaign=cart_abandonment_journey... In this example, the UTM code identifies the link as an email from an abandonment cart journey. You can either select a journey/message attribute from a predefined list, or enter your own text.-->
 
 ![](assets/preset-url-tracking.png)
 

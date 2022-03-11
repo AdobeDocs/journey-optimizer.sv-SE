@@ -20,12 +20,12 @@ Följande typer av villkor är tillgängliga:
 * [Datakällans villkor](#data_source_condition)
 * [Tidsvillkor](#time_condition)
 * [Procentdelning](#percentage_split)
-* [Date condition](#date_condition)
+* [Datumvillkor](#date_condition)
 * [Profilände](#profile_cap)
 
 ![](assets/journey49.png)
 
-## About the Condition activity {#about_condition}
+## Om villkorsaktiviteten {#about_condition}
 
 När du använder flera villkor under en resa kan du definiera etiketter för var och en av dem för att lättare kunna identifiera dem.
 
@@ -33,13 +33,13 @@ Klicka **[!UICONTROL Add a path]** om du vill definiera flera villkor. För varj
 
 ![](assets/journey47.png)
 
-Note that the design of journeys has functional impacts. När flera sökvägar definieras efter ett villkor kommer endast den första giltiga sökvägen att köras. It means that you can vary the prioritization of paths by placing them above or below one another.
+Observera att utformningen av resorna har funktionell inverkan. När flera sökvägar definieras efter ett villkor kommer endast den första giltiga sökvägen att köras. Det innebär att du kan ändra prioriteringen av banor genom att placera dem över eller under varandra.
 
-Låt oss till exempel ta exemplet med den första sökvägens villkor&quot;Personen är en VIP&quot; och en andra sökvägs villkor&quot;Personen är en man&quot;. If a person meeting both conditions (a male who is a VIP) passes this step, the first path will be chosen even if this person is also eligible to the second one, because the first path is &quot;above&quot;. Om du vill ändra den här prioriteten flyttar du dina aktiviteter i en annan lodrät ordning.
+Låt oss till exempel ta exemplet med den första sökvägens villkor&quot;Personen är en VIP&quot; och en andra sökvägs villkor&quot;Personen är en man&quot;. Om en person som uppfyller båda villkoren (en man som är en VIP) klarar det här steget väljs den första banan även om den personen även är berättigad till den andra, eftersom den första sökvägen är &quot;ovan&quot;. Om du vill ändra den här prioriteten flyttar du dina aktiviteter i en annan lodrät ordning.
 
 ![](assets/journey48.png)
 
-You can create another path for audiences that are not eligible to the defined conditions by checking **[!UICONTROL Show path for other cases than the one(s) above]**. Note that this option is not available in split conditions. Se [Procentdelning](#percentage_split).
+Du kan skapa en annan sökväg för målgrupper som inte uppfyller de definierade villkoren genom att markera **[!UICONTROL Show path for other cases than the one(s) above]**. Observera att det här alternativet inte är tillgängligt vid delning. Se [Procentdelning](#percentage_split).
 
 I det enkla läget kan du utföra enkla frågor baserat på en kombination av fält. Alla tillgängliga fält visas till vänster på skärmen. Dra och släpp fält till huvudzonen. Om du vill kombinera de olika elementen, låser du ihop dem till varandra för att skapa olika grupper och/eller gruppnivåer. Du kan sedan välja en logisk operatör för att kombinera element på samma nivå:
 
@@ -57,7 +57,7 @@ Om du använder [Adobe Experience Platform segmenteringstjänst](https://experie
 
 När ett fel inträffar i en åtgärd eller ett villkor upphör en individs resa. Det enda sättet att få den att fortsätta är att markera rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [det här avsnittet](../building-journeys/using-the-journey-designer.md#paths).
 
-In the simple editor, you will also find the Journey Properties category, below the event and data source categories. This category contains technical fields related to the journey for a given profile. Det här är den information som hämtats av systemet från direktresor, till exempel rese-ID:t eller de specifika fel som påträffats. Mer information finns i [Dokumentation för Adobe Journey Orchestration](expression/journey-properties.md)
+I den enkla redigeraren hittar du även kategorin Reseegenskaper, nedanför kategorierna event och datakälla. Denna kategori innehåller tekniska fält som rör resan för en viss profil. Det här är den information som hämtats av systemet från direktresor, till exempel rese-ID:t eller de specifika fel som påträffats. Mer information finns i [Dokumentation för Adobe Journey Orchestration](expression/journey-properties.md)
 
 ## Datakällans villkor {#data_source_condition}
 
@@ -67,7 +67,7 @@ På så sätt kan du definiera ett villkor baserat på fält från datakällorna
 
 ## Tidsvillkor{#time_condition}
 
-På så sätt kan du utföra olika åtgärder beroende på timmen på dagen och/eller veckodagen. For example, you can decide to send SMS messages during daytime and emails at night during weekdays.
+På så sätt kan du utföra olika åtgärder beroende på timmen på dagen och/eller veckodagen. Du kan till exempel bestämma dig för att skicka SMS-meddelanden under dagtid och e-postmeddelanden på natten under vardagar.
 
 >[!NOTE]
 >
@@ -77,13 +77,13 @@ På så sätt kan du utföra olika åtgärder beroende på timmen på dagen och/
 
 ## Procentdelning {#percentage_split}
 
-Med det här alternativet kan du slumpmässigt dela målgruppen för att definiera olika åtgärder för varje grupp. Definiera antalet delningar och partitioneringen för varje sökväg. Delningsberäkningen är statistisk eftersom systemet inte kan förutse hur många personer som kommer att flöda i den här kundresan. As a result, the split has a very low error margin. Den här funktionen är baserad på en slumpmässig Java-mekanism (se det här [page](https://docs.oracle.com/javase/7/docs/api/java/util/Random.html)).
+Med det här alternativet kan du slumpmässigt dela målgruppen för att definiera olika åtgärder för varje grupp. Definiera antalet delningar och partitioneringen för varje sökväg. Delningsberäkningen är statistisk eftersom systemet inte kan förutse hur många personer som kommer att flöda i den här kundresan. Därför har delningen en mycket låg felmarginal. Den här funktionen är baserad på en slumpmässig Java-mekanism (se det här [page](https://docs.oracle.com/javase/7/docs/api/java/util/Random.html)).
 
-I testläge väljs alltid den övre grenen när en delning nås. You can reorganize the position of the split branches if you want the test to choose a different path. Se [den här sidan](../building-journeys/testing-the-journey.md)
+I testläge väljs alltid den övre grenen när en delning nås. Du kan ordna om placeringen av de delade grenarna om du vill att testet ska välja en annan bana. Se [den här sidan](../building-journeys/testing-the-journey.md)
 
 >[!NOTE]
 >
->Note that there is no button to add a path in the percentage split condition. The number of paths will depend on the number of splits. I delningsvillkor kan du inte lägga till en sökväg för andra fall eftersom det inte kan ske. Folk kommer alltid att gå in på en av de delade vägarna.
+>Observera att det inte finns någon knapp för att lägga till en bana i det procentuella delningsvillkoret. Antalet banor beror på antalet delningar. I delningsvillkor kan du inte lägga till en sökväg för andra fall eftersom det inte kan ske. Folk kommer alltid att gå in på en av de delade vägarna.
 
 ![](assets/journey52.png)
 
@@ -99,9 +99,9 @@ På så sätt kan du definiera ett annat flöde baserat på datumet. Om personen
 
 ## Profilände {#profile_cap}
 
-Använd den här villkorstypen om du vill ange ett maximalt antal profiler för en resebana. När den här gränsen nås får de inmatade profilerna en alternativ sökväg. This ensures that your journeys will never exceed the limit defined.
+Använd den här villkorstypen om du vill ange ett maximalt antal profiler för en resebana. När den här gränsen nås får de inmatade profilerna en alternativ sökväg. På så sätt kan du vara säker på att dina resor aldrig överskrider den definierade gränsen.
 
-You can use this condition type to ramp up the volume of your deliveries. Se det här [användningsfall](ramp-up-deliveries-uc.md).
+Du kan använda den här villkorstypen för att öka volymen på dina leveranser. Se det här [användningsfall](ramp-up-deliveries-uc.md).
 
 Standardvärdet är 1 000.
 
@@ -122,12 +122,12 @@ Profilände beaktas inte i testläge.
 
 I det här avsnittet beskrivs hur du använder ett segment i ett resevillkor. Mer information om segment och hur du skapar dem finns i [det här avsnittet](../segment/about-segments.md).
 
-To use a segment in a journey condition, follow these steps:
+Följ de här stegen om du vill använda ett segment i ett resevillkor:
 
 1. Öppna en resa, släpp en **[!UICONTROL Condition]** och välj **Villkor för datakälla**.
    ![](assets/journey47.png)
 
-1. Klicka **[!UICONTROL Add a path]** för varje extra sökväg som behövs. For each path, click the **[!UICONTROL Expression]** field.
+1. Klicka **[!UICONTROL Add a path]** för varje extra sökväg som behövs. För varje bana klickar du på **[!UICONTROL Expression]** fält.
 
    ![](assets/segment3.png)
 
@@ -137,4 +137,4 @@ To use a segment in a journey condition, follow these steps:
 
    >[!NOTE]
    >
-   >Observera att endast de personer som har **Realiserad** och **Befintlig** Deltagandestatus för segment betraktas som medlemmar i segmentet. For more on how to evaluate a segment, refer to the [Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target=&quot;_blank&quot;}.
+   >Observera att endast de personer som har **Realiserad** och **Befintlig** Deltagandestatus för segment betraktas som medlemmar i segmentet. Mer information om hur du utvärderar ett segment finns i [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target=&quot;_blank&quot;}.

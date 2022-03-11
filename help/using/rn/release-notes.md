@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: ca9cb62770c1c50b2683486de48435d5b47b8729
+source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
 workflow-type: tm+mt
-source-wordcount: '2697'
+source-wordcount: '2643'
 ht-degree: 9%
 
 ---
@@ -19,21 +19,21 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 
 ### Nya funktioner
 
-<table>
+<!--table>
 <thead>
 <tr>
-<th><strong>Prenumerationslandsidor</strong><br/></th>
+<th><strong>Subscription Landing Pages</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Nu kan du skapa och utforma landningssidor i Journey Optimizer och dirigera dina användare till onlineformulär där de kan välja att inte ta emot meddelanden eller prenumerera på en viss tjänst som ett nyhetsbrev.</p>
-<p>Mer information finns i <a href="../landing-pages/create-lp.md">detaljerad dokumentation</a> och relaterade <a href="../landing-pages/lp-use-cases.md">exempel</a>.</p>
+<p>You can now create and design landing pages in Journey Optimizer, and direct your users to online forms where they can opt-in or opt-out from receiving your communications, or subscribe to a specific service such as a newsletter.</p>
+<p>For more information, refer to the <a href="../landing-pages/create-lp.md">detailed documentation</a> and related <a href="../landing-pages/lp-use-cases.md">sample use case</a>.</p>
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 <table>
 <thead>
@@ -97,10 +97,10 @@ The suppression list helps you with honoring the ISPs’ feedback to preserve se
 **Rapportering**
 
 * Leveranser kan nu filtreras beroende på status:
-   * I listan Meddelandekörning kan du nu utesluta korrektur från leveranslistan.
+   * From the Message Execution list, you can now exclude proofs from your deliveries&#39; list.
    * I dina Live-/Global-rapporter kan du välja att exkludera testhändelser.
 
-* Nu kan du få åtkomst till rapporter om optimeringsdata för sändningstid: antalet personer som var omedelbart meddelandeansvariga och antalet personer som fick meddelanden med 1 timmes optimering, 2 timmars optimering osv.
+* You can now access to reports on Send Time Optimization data: the number of persons who were messages immediately and the number of persons who were messaged with 1-hour optimization, 2 hours optimization, etc.
 
 <!--* Offer Decisioning reports are now available in Journey Optimizer. You can access the following metrics: Offers sent - Offers' impression rate - Offers' click rate - Breakdown report on Offers' sent.-->
 
@@ -110,7 +110,7 @@ The suppression list helps you with honoring the ISPs’ feedback to preserve se
 
 ## Version från januari 2022 {#january-2022-release}
 
-### Nya funktioner
+### New capabilities
 
 <table>
 <thead>
@@ -121,8 +121,8 @@ The suppression list helps you with honoring the ISPs’ feedback to preserve se
 <tbody>
 <tr>
 <td>
-<p>När en <strong>Villkor</strong> -aktivitet på en resa kan du nu definiera en profilövre gräns. Med den här nya villkorstypen kan du ange ett maximalt antal profiler för en resväg. När den här gränsen nås får de inmatade profilerna en alternativ sökväg. Detta gör att du kan öka volymen på dina leveranser (IP-förstärkning). Du kanske vill förbättra leveransen på en domän genom att dela körningen: skicka 1000 meddelanden dag 1, 2000 dag 2 osv.</p>
-<p>Mer information finns i <a href="../building-journeys/condition-activity.md#profile_cap">detaljerad dokumentation</a> och relaterade <a href="../building-journeys/ramp-up-deliveries-uc.md">exempel</a>.</p>
+<p>När en <strong>Villkor</strong> -aktivitet på en resa kan du nu definiera en profilövre gräns. This new condition type allows you to set a maximum number of profiles for a journey path. När den här gränsen nås får de inmatade profilerna en alternativ sökväg. Detta gör att du kan öka volymen på dina leveranser (IP-förstärkning). Du kanske vill förbättra leveransen på en domän genom att dela körningen: skicka 1000 meddelanden dag 1, 2000 dag 2 osv.</p>
+<p>For more information, refer to the <a href="../building-journeys/condition-activity.md#profile_cap">detailed documentation</a> and related <a href="../building-journeys/ramp-up-deliveries-uc.md">sample use case</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -148,7 +148,7 @@ The suppression list helps you with honoring the ISPs’ feedback to preserve se
 
 **Resor**
 
-* Journey Optimizer steghändelser kan nu länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html). The **profileID** -fältet, i det inbyggda schemat för händelser i resan, definieras nu som ett identitetsfält. [Läs mer](../reports/sharing-overview.md#integration-cja)
+* Journey Optimizer step events can now be linked to other datasets in [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html). The **profileID** field, in the built-in Journey Step Event schema, is now defined as an identity field. [Läs mer](../reports/sharing-overview.md#integration-cja)
 
 **offer decisioning**
 
@@ -162,20 +162,20 @@ The suppression list helps you with honoring the ISPs’ feedback to preserve se
 
 **Personalisering**
 
-* **Lägg till i favoriter** - För att förbättra effektiviteten i arbetet med personalisering har vi introducerat begreppet att spara favoriter. Genom att lägga till olika attribut på Favoriter-menyn får du snabb åtkomst till de objekt du använder mest. [Läs mer](../personalization/personalize.md#fav)
+* **Add to favorites** - To help improve efficiency when working with personalization we’ve introduced the concept of saving favorites. Genom att lägga till olika attribut på Favoriter-menyn får du snabb åtkomst till de objekt du använder mest. [Läs mer](../personalization/personalize.md#fav)
 
 ## November 2021-utgåvan {#november-2021-release}
 
 <table>
 <thead>
 <tr>
-<th><strong>CNAME-delegering av underdomän</strong><br/></th>
+<th><strong>CNAME subdomain delegation</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Adobe Journey Optimizer har nu stöd för CNAME. En CNAME-post, eller kanoniskt namnpost, är en post som pekar på en annan domänadress i stället för en IP-adress. Med CNAME-delegering av underdomäner kan du skapa en underdomän och använda CNAME för att peka mot Adobe-specifika poster. Med den här konfigurationen delar både du och Adobe ansvaret för att underhålla DNS för att konfigurera miljön för att skicka, återge och spåra e-postmeddelanden.</p>
+<p>Adobe Journey Optimizer har nu stöd för CNAME. En CNAME-post, eller kanoniskt namnpost, är en post som pekar på en annan domänadress i stället för en IP-adress. CNAME subdomain delegation enables you to create a subdomain and use CNAMEs to point to Adobe-specific records. Using this configuration, both you and Adobe share responsibility for maintaining DNS in order to setup environment for sending, rendering and tracking emails.</p>
 <p>Den här metoden rekommenderas om din organisations principer begränsar den fullständiga delegeringsmetoden för underdomäner.</p>
 <p>Läs mer om delegering av CNAME-underdomäner i <a href="../configuration/delegate-subdomain.md#cname-subdomain-delegation">detaljerad dokumentation</a>.</p>
 </td>
@@ -184,7 +184,7 @@ The suppression list helps you with honoring the ISPs’ feedback to preserve se
 </table>
 
 
-## Oktober 2021-versionen {#oct-2021-release}
+## October 2021 Release {#oct-2021-release}
 
 ### Nya funktioner
 
@@ -242,21 +242,21 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 **Administrering**
 
 * **Redigera meddelandeförinställningar** - Nu kan du redigera meddelandeförinställningar och övervaka deras uppdateringsstatus. [Läs mer](../configuration/message-presets.md#edit-message-preset)
-* **Redigera PTR-poster** - Nu kan du redigera PTR-poster och övervaka deras uppdateringsstatus. [Läs mer](../configuration/ptr-records.md#edit-ptr-record)
+* **Edit PTR records** - You can now edit PTR records and monitor their update status. [Läs mer](../configuration/ptr-records.md#edit-ptr-record)
 
 **Personalisering**
 
 * **Ny hjälpfunktion för datumformatering** - Du kan nu ange hur en datumsträng ska representeras. [Läs mer](../personalization/functions/dates.md#format-date)
 
 
-**Beslutshantering**
+**Decision Management**
 
-* **Utvärderingssekvenser** - Med det nya och förbättrade beslutsflödet kan du inte bara navigera smidigare mellan beslutsobjekten, utan du får också en fullständig kontroll över hur offertsamlingar utvärderas av beslutsmotorn. Detta inkluderar vilka samlingar som utvärderas tillsammans jämfört med separat, och i vilken ordning samlingarna ska utvärderas. [Läs mer](../offers/offer-activities/create-offer-activities.md#add-decision-scopes)
+* **Evaluation sequencing** - The new and improved decision creation flow enables you to not only navigate between decision objects more seamlessly, but also gives you a complete control of how offer collections are evaluated by the decision engine. Detta inkluderar vilka samlingar som utvärderas tillsammans jämfört med separat, och i vilken ordning samlingarna ska utvärderas. [Läs mer](../offers/offer-activities/create-offer-activities.md#add-decision-scopes)
 
 ### Korrigeringar
 
 * Ett problem som gjorde att reselistan, meddelandelistan och e-postdesignern inte kunde visas när webbläsarspråket inte var engelska har åtgärdats.
-* Korrigerade ett syntaxfel som uppstod när personalisering lades till med ett uttryck i e-postdesignern: tecken undantogs felaktigt.
+* Fixed a syntax error which occured when adding personalization using an expression in the Email designer: characters were wrongly escaped.
 * Ett problem som orsakade ett 404-fel vid navigering i dialogrutan har korrigerats **Administration** -menyn.
 * Korrigerade ett problem som utlöste andra direktresor när en resa testades med hjälp av en affärshändelse.
 
@@ -269,12 +269,12 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 <thead>
 <tr>
 
-<th><strong>Rapportering - Bättre insikter om målgrupper</strong><br/></th>
+<th><strong>Reporting - Better insight to targeted audience</strong><br/></th>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Nya mätvärden är tillgängliga vid rapportering: Riktade och exkluderade för e-post- och push-meddelanden visas både i live- och globala rapporter. </br> Observera att du måste återställa de olika rapportinstrumentpanelerna för varje kanal och rapporttyp för att få tillgång till de senaste mätvärdena. Mer information om anpassning av kontrollpanelen finns i <a href="../reports/live-report.md">detaljerad dokumentation.</a></p>
+<p>New metrics are available in reporting: Targeted and Excluded for email &amp; push messages are visible in both live and global reports. </br> To have access to the latest metrics, please note that you will have to reset the different reporting dashboards for each channel and reporting type. Mer information om anpassning av kontrollpanelen finns i <a href="../reports/live-report.md">detaljerad dokumentation.</a></p>
 <p>En ny kolumn i meddelandekörningslistan visar antalet målprofiler för varje meddelandekörning. </p>
 <p>Mer information finns i den <a href="../messages/message-monitoring.md">detaljerade dokumentationen</a>.</p>
 </td>
@@ -292,10 +292,10 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 <tbody>
 <tr>
 <td>
-<p>Nu kan du skicka samlingar eller en lista med data i dina anpassade åtgärdsparametrar som fylls i dynamiskt vid körning. Två sorters samlingar stöds: enkla samlingar och objektsamlingar. Tidigare skapade anpassade åtgärder fortsätter att fungera. </p>
-<p>Mer information om samlingar finns i <a href="../building-journeys/collections.md">detaljerad dokumentation</a>. </p>
+<p>Nu kan du skicka samlingar eller en lista med data i dina anpassade åtgärdsparametrar som fylls i dynamiskt vid körning. Två sorters samlingar stöds: enkla samlingar och objektsamlingar. Previously created custom actions will continue working. </p>
+<p>For more information on collections, refer to the <a href="../building-journeys/collections.md">detailed documentation</a>. </p>
 <p>Funktionerna för att filtrera och överlappa har lagts till i listan med funktioner som är tillgängliga i den avancerade uttrycksredigeraren. Det ger fler möjligheter att filtrera och jämföra samlingar.</p>
-<p>Läs dokumentationen på <a href="../building-journeys/functions/functionfilter.md">filter</a> och <a href="../building-journeys/functions/functionintersect.md">korsa</a> funktioner.</p>
+<p>Consult the documentation on the <a href="../building-journeys/functions/functionfilter.md">filter</a> and <a href="../building-journeys/functions/functionintersect.md">intersect</a> functions.</p>
 </td>
 </tr>
 </tbody>
@@ -307,8 +307,8 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 
 * Systemgenererade scheman och datauppsättningar som har skapats under etablering av steghändelser är nu i skrivskyddat läge, vilket skyddar mot oavsiktliga ändringar av viktiga scheman. [Läs mer](../reports/sharing-overview.md)
 * Etikettera **Vänta** aktivitet med en etikett som ska visas på arbetsytan. Etiketten används också i loggar för rapportering och testläge för att tydligt identifiera vad du gör. [Läs mer](../building-journeys/about-journey-activities.md#best-practices)
-* Hitta händelser och funktionsmakron snabbare genom att filtrera elementen i **Händelser** och **Åtgärd** kategorier med hjälp av sökning. Orchestration-aktiviteter är inte längre filtrerade. [Läs mer](../building-journeys/using-the-journey-designer.md)
-* När du definierar ett händelse-ID-villkor i en regelbaserad händelse eller en affärshändelse är operatorn &quot;contains&quot; nu tillgänglig för strängtyper av fält. [Läs mer](../event/about-creating.md)
+* Find your events and actions faster by filtering elements in the **Events** and **Action** categories using search. Orchestration-aktiviteter är inte längre filtrerade. [Läs mer](../building-journeys/using-the-journey-designer.md)
+* When defining an event ID condition in a rule-based or business event, the &quot;contains&quot; operator is now available for string types of fields. [Läs mer](../event/about-creating.md)
 
 **E-postkonfiguration**
 
@@ -408,9 +408,9 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 
 **Resor**
 
-* **Dynamiska rubriker** - Du kan nu skicka dynamiska data i HTTP-rubrikparametrar. De här parametrarna kan användas av de integreringssystem som tar emot resans åtgärd via HTTP-anrop, till exempel tidsstämpel eller spårnings-ID. [Läs mer](../action/about-custom-action-configuration.md#url-configuration)
+* **Dynamiska rubriker** - Du kan nu skicka dynamiska data i HTTP-rubrikparametrar. These parameters can be used by the integration systems that receive the journey action HTTP calls, for example timestamp or tracking ID. [Läs mer](../action/about-custom-action-configuration.md#url-configuration)
 * **Dynamiska URL-sökvägar** - Nu kan du ställa in dynamiska URL-sökvägar för anpassade åtgärder. [Läs mer](../action/about-custom-action-configuration.md#url-configuration)
-* Den totala begränsningsfrekvensen för lässegment har ändrats från 17 000 till 20 000 meddelanden per sekund. [Läs mer](../building-journeys/read-segment.md#configuring-segment-trigger-activity)
+* The overall throttling rate for read segments has been changed from 17,000 to 20,000 messages per second. [Läs mer](../building-journeys/read-segment.md#configuring-segment-trigger-activity)
 
 **Användargränssnitt**
 
@@ -431,7 +431,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 * **Tillåtelselista** - tillåtelselista kan nu aktiveras och inaktiveras på en icke-produktionssandlåda via ett API-anrop. [Läs mer](../messages/allow-list.md#enable-allow-list)
 * **Navigering** - Suppressionslistan, som var tillgänglig under **Administration > Kanaler > E-postkonfiguration > Allmänt** har flyttats till den nya menyn **Undertryckningslista** undermeny, som samlar alla relaterade funktioner för enklare åtkomst. [Läs mer](../configuration/manage-suppression-list.md#access-suppression-list)
 
-**Beslutsledning**
+**Decision management**
 
 * Sättet på vilket du lägger till och konfigurerar representationer när du skapar ett erbjudande har uppdaterats för att förbättra användarupplevelsen. Specifikt visas nu resursbiblioteket endast när du definierar innehåll med bilder för en representation. [Läs mer](../offers/offer-library/creating-personalized-offers.md#representations)
 
@@ -440,7 +440,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 * Korrigerade ett tillgänglighetsproblem vid navigering på meddelandeflikar.
 * Ett lokaliseringsfel har korrigerats i e-postdesignerns etiketter.
 * Ett problem har korrigerats när du valde mer än en nod i en resa och klickade på Ta bort på egenskapspanelen.
-* Korrigerade ett problem som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
+* Fixed an issue which prevented from adding a new header to an action used in a journey.
 * Du kan nu ta reda på varför en meddelandeförinställning inte kunde skapas med hjälp av en tydligare varning i användargränssnittet.
 
 
@@ -457,7 +457,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 <tbody>
 <tr>
 <td>
-<p>Berika era upplevelser med referensdata som ni har läst in i Journey Optimizer. Det kan till exempel vara att söka efter metadata på ett reservations-ID i en upplevelsehändelse eller söka efter produktinformation från en sku i en upplevelsehändelse för användning på arbetsytan. </p>
+<p>Enrich your experiences with reference data you've loaded into Journey Optimizer. Det kan till exempel vara att söka efter metadata på ett reservations-ID i en upplevelsehändelse eller söka efter produktinformation från en sku i en upplevelsehändelse för användning på arbetsytan. </p>
 <p>Nu kan du utnyttja relationer mellan scheman för att använda en datauppsättning som en uppslagstabell för en annan. Sedan kan ni utnyttja alla fält från de länkade tabellerna när ni konfigurerar en enhetshändelse, när ni använder villkor under en resa, i meddelandepersonalisering och i personalisering av anpassade åtgärder.</p>
 <p>Mer information finns i den <a href="../event/experience-event-schema.md#leverage_schema_relationships">detaljerade dokumentationen</a>.</p>
 </td>
