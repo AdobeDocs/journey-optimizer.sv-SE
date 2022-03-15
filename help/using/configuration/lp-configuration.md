@@ -4,9 +4,9 @@ description: Lär dig hur du konfigurerar miljön för att skapa och använda la
 role: Admin
 level: Intermediate
 exl-id: 7cf1f083-bef0-40b5-8ddd-920a9d108eca
-source-git-commit: 8c7239aa399f5e172762c9d93d9c03832501adb0
+source-git-commit: 2cee54221871979bb1ae2c8b7990debe1c80ce67
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '813'
 ht-degree: 1%
 
 ---
@@ -17,8 +17,8 @@ ht-degree: 1%
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_config_lp_subdomain"
->title="Konfigurera underdomäner för landningssidor"
->abstract="Om du vill kunna välja en underdomän kontrollerar du att du tidigare har konfigurerat minst en underdomän för landningssida."
+>title="Skapa en förinställning för landningssida"
+>abstract="För att kunna skapa en förinställning för landningssida måste du se till att du tidigare har konfigurerat minst en underdomän för landningssida att välja från **Underdomänsnamn** lista."
 
 För att kunna [skapa förinställningar för landningssidor](#lp-create-preset)måste du konfigurera de underdomäner som du ska använda för dina landningssidor.
 
