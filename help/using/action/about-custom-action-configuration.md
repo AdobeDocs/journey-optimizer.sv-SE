@@ -1,13 +1,13 @@
 ---
 solution: Journey Orchestration
-title: Konfigurera en anpassad åtgärd
+title: Configure a custom action
 description: Lär dig hur du konfigurerar en anpassad åtgärd
 feature: Actions
 topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 5%
@@ -22,7 +22,7 @@ Anpassade åtgärder är ytterligare åtgärder som definieras av tekniska anvä
 
 ## Begränsningar{#custom-actions-limitations}
 
-Anpassade åtgärder har några begränsningar som anges i [den här sidan](../start/limitations.md).
+Custom actions come with a few limitations listed in [this page](../start/limitations.md).
 
 I anpassade åtgärdsparametrar kan du skicka en enkel samling samt en samling med objekt. Läs mer om begränsningar för samlingar i [den här sidan](../building-journeys/collections.md#limitations).
 
@@ -45,12 +45,12 @@ Här följer de huvudsteg som krävs för att konfigurera en anpassad åtgärd:
 
 1. Lägg till en beskrivning av åtgärden. Det här steget är valfritt.
 1. Antalet resor som använder den här åtgärden visas i **[!UICONTROL Used in]** fält. Du kan klicka på **[!UICONTROL View journeys]** om du vill visa en lista över resor som använder den här åtgärden.
-1. Definiera de olika **[!UICONTROL URL Configuration]** parametrar. Läs [den här sidan](../action/about-custom-action-configuration.md#url-configuration).
+1. Define the different **[!UICONTROL URL Configuration]** parameters. Läs [den här sidan](../action/about-custom-action-configuration.md#url-configuration).
 1. Konfigurera **[!UICONTROL Authentication]** -avsnitt. Den här konfigurationen är densamma som för datakällor.  Se [det här avsnittet](../datasource/external-data-sources.md#custom-authentication-mode).
-1. Definiera **[!UICONTROL Action parameters]**. Läs [den här sidan](../action/about-custom-action-configuration.md#define-the-message-parameters).
+1. Define the **[!UICONTROL Action parameters]**. Läs [den här sidan](../action/about-custom-action-configuration.md#define-the-message-parameters).
 1. Klicka på **[!UICONTROL Save]**.
 
-   Den anpassade åtgärden är nu konfigurerad och klar att användas på dina resor. Läs [den här sidan](../building-journeys/about-journey-activities.md#action-activities).
+   The custom action is now configured and ready to be used in your journeys. Läs [den här sidan](../building-journeys/about-journey-activities.md#action-activities).
 
    >[!NOTE]
    >
@@ -110,14 +110,13 @@ I **[!UICONTROL Action parameters]** klistra in ett exempel på JSON-nyttolasten
 
 >[!NOTE]
 >
->Fältnamn i nyttolasten får inte innehålla &quot;.&quot; tecken. De kan inte börja med tecknet &quot;$&quot;.
+>Fältnamn i nyttolasten får inte innehålla &quot;.&quot; tecken. They cannot start with a &quot;$&quot; character.
 
-Du kan definiera parametertypen (t.ex.: sträng, heltal osv.).
+You will be able to define the parameter type (e.g.: string, integer, etc.).
 
 Du kan också välja mellan att ange om en parameter är en konstant eller en variabel:
 
-* Konstant innebär att parametervärdet definieras av en teknisk person i åtgärdskonfigurationsfönstret. Värdet är alltid detsamma oavsett resa. Det kommer inte att variera och marknadsföraren kommer inte att se det när han eller hon använder den anpassade åtgärden under resan. Det kan till exempel vara ett ID som tredjepartssystemet förväntar sig. I så fall är fältet till höger om växlingskonstanten/variabeln det värde som skickas.
+* Constant means that the value of the parameter is defined in the action configuration pane by a technical persona. Värdet är alltid detsamma oavsett resa. Det kommer inte att variera och marknadsföraren kommer inte att se det när han eller hon använder den anpassade åtgärden under resan. Det kan till exempel vara ett ID som tredjepartssystemet förväntar sig. I så fall är fältet till höger om växlingskonstanten/variabeln det värde som skickas.
 * Variabel innebär att parameterns värde varierar. Marknadsförare som använder den här anpassade åtgärden under en resa kan skicka det värde de vill ha eller ange var värdet för den här parametern ska hämtas (t.ex. från händelsen, från Adobe Experience Platform). I så fall är fältet till höger om växlingskonstanten/variabeln den etikett marknadsförarna kommer att se under resan för att namnge den här parametern.
 
 ![](assets/customactionpayloadmessage2.png)
-

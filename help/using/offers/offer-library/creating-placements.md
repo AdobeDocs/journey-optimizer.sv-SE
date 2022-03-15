@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: dfaf887e-d4b3-45b0-8297-bffdb0abff4d
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 4%
+source-wordcount: '225'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 En placering säkerställer att rätt erbjudandeinnehåll visas på rätt plats i ert meddelande. När du lägger till innehåll i ett erbjudande blir du ombedd att välja en placering där innehållet kan visas.
 
-➡️ [Upptäck den här funktionen i en video](#video)
+➡️ [Lär dig hur du skapar placeringar i den här videon](#video)
 
 I exemplet nedan finns det tre placeringar som motsvarar olika typer av innehåll (bild, text, HTML).
 
@@ -48,10 +48,12 @@ Så här skapar du en placering:
 
    ![](../assets/placement_created.png)
 
-## Videokurs {#video}
+## Instruktionsvideo{#video}
+
+Lär dig hur du skapar placeringar i Offer decisioning.
+
+>[!VIDEO](https://video.tv.adobe.com/v/329372?quality=12)
 
 >[!NOTE]
 >
 >Den här videon gäller för Offera decisioningens programtjänst som är byggd på Adobe Experience Platform. Det ger dock allmän vägledning om hur man använder Erbjudandet inom ramen för Journey Optimizer.
-
->[!VIDEO](https://video.tv.adobe.com/v/329372?quality=12)

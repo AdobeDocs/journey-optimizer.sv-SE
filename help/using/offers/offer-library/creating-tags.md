@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: fe2b7ce4-dc63-477a-a64f-f3828c6a232e
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 5%
@@ -37,10 +37,10 @@ Så här skapar du en tagg:
 
    ![](../assets/tags_created.png)
 
-## Videokurs {#video}
+## Instruktionsvideo {#video}
+
+>[!VIDEO](https://video.tv.adobe.com/v/329374?quality=12)
 
 >[!NOTE]
 >
 >Den här videon gäller för Offera decisioningens programtjänst som är byggd på Adobe Experience Platform. Det ger dock allmän vägledning om hur man använder Erbjudandet inom ramen för Journey Optimizer.
-
->[!VIDEO](https://video.tv.adobe.com/v/329374?quality=12)

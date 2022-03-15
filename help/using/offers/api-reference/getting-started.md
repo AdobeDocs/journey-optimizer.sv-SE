@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 773bee50-849f-4b07-9423-67de5279ad28
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 3%
+source-wordcount: '617'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 I den här utvecklarhandboken får du hjälp att börja använda [!DNL Offer Library] API. Handboken innehåller sedan exempel på API-anrop för att utföra nyckelåtgärder med hjälp av beslutsmotorn.
 
-➡️ [Upptäck den här funktionen i en video](#video)
+➡️ [Läs mer om komponenterna i Beslutshantering i den här videon](#video)
 
 ## Förutsättningar {#prerequisites}
 
@@ -128,12 +128,12 @@ Ett lyckat svar returnerar information om beslutsbehållare. Detta inkluderar `i
 
 Det här dokumentet innehöll de nödvändiga kunskaperna som krävs för att ringa till [!DNL Offer Library] API, inklusive att hämta ditt behållar-ID. Du kan nu gå vidare till exempelsamtalen i den här utvecklarhandboken och följa med i instruktionerna för dessa.
 
-## Videokurs {#video}
+## Instruktionsvideo {#video}
 
 Följande video är avsedd att ge stöd för din förståelse av komponenterna i Beslutshantering.
+
+>[!VIDEO](https://video.tv.adobe.com/v/329919?quality=12)
 
 >[!NOTE]
 >
 >Den här videon gäller för Offera decisioningens programtjänst som är byggd på Adobe Experience Platform. Det ger dock allmän vägledning om hur man använder Erbjudandet inom ramen för Journey Optimizer.
-
->[!VIDEO](https://video.tv.adobe.com/v/329919?quality=12)

@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7a217c97-57e1-4f04-a92c-37632f8dfe91
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1247'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Besluten (tidigare kallade erbjudandeaktiviteter) är behållare för dina erbjudanden som utnyttjar beslutsmotorn för erbjudanden för att välja det bästa erbjudandet som ska levereras, beroende på leveransmålet.
 
-➡️ [Upptäck den här funktionen i en video](#video)
+➡️ [Lär dig hur du skapar erbjudandeaktiviteter i den här videon](#video)
 
 Listan över beslut finns i **[!UICONTROL Offers]** meny > **[!UICONTROL Decisions]** -fliken. Det finns filter som hjälper dig att hämta beslut utifrån status eller start- och slutdatum.
 
@@ -221,10 +221,12 @@ På så sätt kan du få tillgång till detaljerad information för det beslutet
 
 ![](../assets/decision_information.png)
 
-## Videokurs {#video}
+## Instruktionsvideo{#video}
+
+Lär dig skapa erbjudandeaktiviteter i Offer decisioning.
+
+>[!VIDEO](https://video.tv.adobe.com/v/329606?quality=12)
 
 >[!NOTE]
 >
 >Den här videon gäller för Offera decisioningens programtjänst som är byggd på Adobe Experience Platform. Det ger dock allmän vägledning om hur man använder Erbjudandet inom ramen för Journey Optimizer.
-
->[!VIDEO](https://video.tv.adobe.com/v/329606?quality=12)

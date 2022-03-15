@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 9c9598c0-6fb1-4e2f-b610-ccd1a80e516e
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1040'
 ht-degree: 2%
 
 ---
@@ -24,6 +24,8 @@ Du använder följande typer av hjälpfunktioner:
 * The `if` hjälper dig att infoga en produktspecifik anteckning om den relaterade produkten finns i varukorgen. [Läs mer](functions/helpers.md#if-function).
 
 <!-- **Context**: personalization based on contextual data from the journey -->
+
+➡️ [Lär dig hur du använder hjälpfunktioner i den här videon](#video)
 
 Innan du börjar bör du kontrollera hur du konfigurerar dessa element:
 * Ett e-postmeddelande. [Läs mer](../messages/create-message.md)
@@ -338,6 +340,8 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 
 * [Personalisering med beslutsbaserat erbjudande](../offers/offers-e2e.md)
 
-## Videokurs{#helper-functions-video}
+## Instruktionsvideo{#video}
+
+Lär dig hur du använder hjälpfunktioner.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334244?quality=12)

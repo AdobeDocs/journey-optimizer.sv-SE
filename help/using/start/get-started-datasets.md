@@ -4,9 +4,9 @@ description: Lär dig hur du använder Adobe Experience Platform-datauppsättnin
 role: User
 level: Beginner
 exl-id: dcdd3c81-0f00-4259-a8a5-9062a4c40b6f
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '261'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ Lär dig hur du skapar datauppsättningar i [den här dokumentationen](https://e
 
 Att lägga till data i Adobe Experience Platform är grunden för att skapa en profil. Sedan kan du använda profiler i [!DNL Adobe Journey Optimizer]. Börja med att definiera scheman, använd ETL-verktyg för att förbereda och standardisera data och skapa sedan datauppsättningar baserade på dina scheman.
 
-➡️ [Lär dig hur du skapar och konfigurerar en datauppsättning](#video-dataset) (video)
+➡️ [Lär dig hur du skapar och konfigurerar en datauppsättning i den här videon](#video-dataset)
 
 The **Datauppsättningar** arbetsytan i [!DNL Adobe Journey Optimizer] Med användargränssnittet kan du utforska data och skapa datauppsättningar.
 

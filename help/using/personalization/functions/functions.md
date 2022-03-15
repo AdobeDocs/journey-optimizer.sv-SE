@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1346'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Använd [!DNL Journey Optimizer] mallspråk för att utföra dataåtgärder, t.ex. beräkningar, dataformatering eller konvertering, villkor och hantera dem i personaliseringssammanhang. Läs riktlinjerna för syntaxen för personalisering i [den här sidan](../personalization-syntax.md).
 
-➡️ [Upptäck hur du använder hjälpfunktioner](#video) (video)
+➡️ [Lär dig hur du använder hjälpfunktioner i den här videon](#video)
 
 Mallspråk används i hjälpfunktioner som är tillgängliga i listrutan för anpassning i uttrycksredigeraren, enligt nedan:
 

@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Beginner
 exl-id: 659984cb-b232-47ba-9f5a-604bf97a5e92
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '907'
 ht-degree: 45%
 
 ---
@@ -34,7 +34,7 @@ Några fördelar:
 * Förbättrade arbetsflöden: I stället för att skapa flera leveranser eller kampanjer kan marknadsföringsteamen förbättra arbetsflödena genom att skapa en enda leverans och variera erbjudandena i olika delar av mallen.
 * Styr hur många gånger ett erbjudande visas för olika kampanjer och kunder.
 
-➡️ [Titta på de här självstudiekurserna](#tutorial-videos) om du vill ha mer information om beslutshantering.
+➡️ [Läs mer om beslutshantering i dessa videofilmer](#video)
 
 ## Om erbjudanden och beslut {#about-offers-and-decisions}
 
@@ -102,8 +102,7 @@ Nedan finns en lista över de viktigaste koncept du kommer att arbeta med när d
 
 * **Representationer**: en representation är information som används av en kanal, såsom plats eller språk, för att visa ett erbjudande.
 
-
-## Självstudievideor {#tutorial-videos}
+## Instruktionsvideor{#video}
 
 >[!NOTE]
 >
@@ -120,3 +119,5 @@ I videon nedan ges en introduktion till nyckelfunktioner, arkitektur och använd
 I videon nedan visas hur du använder Beslutshantering för att definiera och hantera dina erbjudanden och utnyttja kunddata i realtid.
 
 >[!VIDEO](https://video.tv.adobe.com/v/326841?quality=12&learn=on)
+
+

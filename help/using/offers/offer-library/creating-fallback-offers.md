@@ -5,7 +5,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 9ba16ad9-a5e7-4ce7-8ed6-7707d37178c6
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 3%
@@ -52,10 +52,10 @@ Så här skapar du ett reserverbjudande:
 
    ![](../assets/fallback_created.png)
 
-## Videokurs {#video}
+## Instruktionsvideo {#video}
+
+>[!VIDEO](https://video.tv.adobe.com/v/329383?quality=12)
 
 >[!NOTE]
 >
 >Den här videon gäller för Offera decisioningens programtjänst som är byggd på Adobe Experience Platform. Det ger dock allmän vägledning om hur man använder Erbjudandet inom ramen för Journey Optimizer.
-
->[!VIDEO](https://video.tv.adobe.com/v/329383?quality=12)

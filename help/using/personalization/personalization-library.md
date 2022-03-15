@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 74b1be18-4829-4c67-ae45-cf13278cda65
-source-git-commit: a7483965e3154d0ad34cfb56b6458bb63b46a26c
+source-git-commit: 96a7fc65cb59dd366d790a6fbe938ecfb062d93a
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -22,17 +22,19 @@ ht-degree: 0%
 
 [!DNL Journey Optimizer] I finns ett bibliotek där du kan komma åt tidigare sparade anpassningsuttryck som har lagts till av Admin-användare.
 
-1. Om du vill komma åt de sparade uttrycken klickar du på **[!UICONTROL Library]** i den vänstra rutan. I listan visas alla uttryck som har sparats av Admin-användare (se [Spara uttryck i biblioteket](#save-expressions)).
+➡️ [Lär dig hur du arbetar med sparade uttryck i den här videon](#video-preview)
 
-   >[!NOTE]
-   >
-   >Du kan använda infoknappen för att få mer information om innehållet i ett sparat uttryck. Om du har behörighet att hantera biblioteksobjekt visas informationsknappen på ellipsmenyn.
+Om du vill komma åt de sparade uttrycken klickar du på **[!UICONTROL Library]** i den vänstra rutan. I listan visas alla uttryck som har sparats av Admin-användare (se [Spara uttryck i biblioteket](#save-expressions)).
 
-   ![](assets/library-list.png)
+    >[!OBS!]
+    >
+    >Du kan använda infoknappen för att få mer information om innehållet i ett sparat uttryck. Om du har behörighet att hantera biblioteksobjekt visas informationsknappen på ellipsmenyn.
+    
+    ![](assets/library-list.png)
 
-1. Klicka på + för att infoga uttrycket i redigeraren. Sedan kan ni anpassa och validera ert personaliseringsinnehåll som vanligt. [Läs mer](../personalization/personalization-build-expressions.md)
+Klicka på + för att infoga uttrycket i redigeraren. Sedan kan ni anpassa och validera ert personaliseringsinnehåll som vanligt. [Läs mer](../personalization/personalization-build-expressions.md)
 
-   ![](assets/library-add.png)
+    ![](assets/library-add.png)
 
 ## Spara ett uttryck i biblioteket {#save-expressions}
 
@@ -68,3 +70,10 @@ Så här sparar du ett uttryck i biblioteket:
 Om du vill redigera ett befintligt uttryck lägger du till det i redigeraren och ändrar det efter behov. Klicka **[!UICONTROL Add to library]** för att validera syntaxen och spara uttrycket.
 
 Om du vill ta bort ett uttryck klickar du på ellipsknappen och sedan på **[!UICONTROL Delete]**.
+
+## Instruktionsvideo{#video}
+
+Lär dig hur du använder sparade personaliseringsbiblioteksobjekt i ett meddelande och hur du skapar och hanterar personaliseringsbiblioteksobjekt.
+
+>[!VIDEO](https://video.tv.adobe.com/v/340941?quality=12)
+

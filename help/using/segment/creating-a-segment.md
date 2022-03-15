@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 289aac5d-6cdb-411f-985e-3acef58050a8
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '314'
 ht-degree: 5%
 
 ---
@@ -16,6 +16,8 @@ ht-degree: 5%
 # Skapa segment {#build-segments}
 
 I det här exemplet kommer vi att skapa ett segment för alla kunder som bor i Atlanta, San Francisco eller Seattle och som är födda efter 1980. Alla dessa kunder bör ha öppnat Luma-applikationen inom de senaste 7 dagarna och sedan köpt den inom 2 timmar efter att ansökan öppnats.
+
+➡️ [Lär dig hur du skapar segment i den här videon](#video-segment)
 
 1. Öppna **[!UICONTROL Segments]** klickar du på **[!UICONTROL Create segment]** -knappen.
 
@@ -55,6 +57,8 @@ I det här exemplet kommer vi att skapa ett segment för alla kunder som bor i A
 
 Segmentet kan nu användas på dina resor. Mer information om detta finns i [det här avsnittet](../segment/about-segments.md).
 
-## Videokurs{#create-segment-video}
+## Instruktionsvideo{#video-segment}
+
+Lär dig hur du skapar segment.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334281?quality=12)

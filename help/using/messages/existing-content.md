@@ -6,16 +6,18 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 52011299-0c65-49c3-9edd-ba7bed5d7205
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 4%
+source-wordcount: '366'
+ht-degree: 5%
 
 ---
 
 # Importera eller koda ditt e-postinnehåll {#existing-content}
 
 Med Journey Optimizer kan du importera befintligt HTML-innehåll för att utforma dina e-postmeddelanden. Det här innehållet kan vara oformaterad HTML-kod eller innehåll från en befintlig HTML-fil eller en zip-mapp.
+
+➡️ [Upptäck den här funktionen i en video](#video)
 
 Följ stegen nedan om du vill koda HTML-innehåll eller importera befintligt innehåll:
 
@@ -79,3 +81,9 @@ Om du vill importera en fil som innehåller HTML-innehåll följer du stegen ned
 1. När HTML-innehållet har överförts kan du använda e-postdesignerns funktioner för att redigera och förhandsgranska e-postmeddelandet. [Läs mer i det här avsnittet](create-email-content.md).
 
    ![](assets/html-imported.png)
+
+## Instruktionsvideo {#video}
+
+Lär dig hur du importerar befintligt HTML-innehåll, ändrar designen, lägger till spegelsideslänkar och avbryter prenumerationen samt hur du kodar ditt innehåll.
+
+>[!VIDEO](https://video.tv.adobe.com/v/334102?quality=12)

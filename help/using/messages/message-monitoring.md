@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 950f8186-07f6-4cc1-936c-d0984fb0f988
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '617'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,8 @@ ht-degree: 0%
 # Meddelandeövervakning {#monitor-message-execution}
 
 För att vara säker på att dina meddelanden kan köras, skickas och levereras, [!DNL Journey Optimizer] har funktioner för att övervaka de meddelanden som för närvarande är publicerade och utlösta. Du kan se hur dina meddelanden fungerar på olika resor <!--and APIs--> i realtid från **[!UICONTROL Executions]** lista.
+
+➡️ [Upptäck den här funktionen i en video](#video)
 
 Om du vill komma åt den här listan går du till **[!DNL Journey Optimizer]** startsida, välja **[!UICONTROL Messages]** och klickar på **[!UICONTROL Executions]** -fliken.
 
@@ -93,3 +95,9 @@ I **Global vy** Du kan välja om du vill visa data som tal, procenttal eller bå
 ![](assets/message-execution-data-format.png)
 
 Om du klickar på varje hyperlänk öppnas motsvarande meddelandesammanfattningsvy. [Läs mer om meddelanden](create-message.md).
+
+## Instruktionsvideo {#video}
+
+Läs mer om live- och globala rapporter, hur du får tillgång till och analyserar resan och de meddelandespecifika rapporterna samt hur du ändrar rapportpanelerna.
+
+>[!VIDEO](https://video.tv.adobe.com/v/334108?quality=12)

@@ -6,10 +6,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: e0cb261f-7cf7-42de-8e56-576492e3b5cc
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 72%
+source-wordcount: '312'
+ht-degree: 68%
 
 ---
 
@@ -27,6 +27,8 @@ Med datakällans konfiguration kan du definiera en anslutning till ett system f�
 * [anpassade väntedefinitioner](../building-journeys/wait-activity.md#custom)
 * [definition av tidszoner](../building-journeys/timezone-management.md)
 
+➡️ [Upptäck den här funktionen i en video](#video)
+
 Den här konfigurationen krävs inte om dina resor endast utnyttjar lokala data som kommer från en händelses nyttolast. Om din resa till exempel består av en händelse som följs av en meddelandeaktivitet som bara använder data från händelsen behöver du inte konfigurera någon datakälla.
 
 Det finns två typer av datakällor:
@@ -41,3 +43,10 @@ För varje datakälla definierar du den information som ska hämtas med fältgru
 >Schemarelationer stöds nu för datakällor.
 
 Titta på det här om du vill ha mer information om hur du konfigurerar en Adobe Experience Platform-datakälla och en extern datakälla samt hur du söker efter och använder data under en resa [video med självstudiekurser](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/configure-data-sources.html){target=&quot;_blank&quot;}.
+
+## Instruktionsvideo {#video}
+
+Lär dig mer om vad en datakälla är och hur du konfigurerar Experience Platform och externa datakällor.
+
+>[!VIDEO](https://video.tv.adobe.com/v/334256?quality=12)
+

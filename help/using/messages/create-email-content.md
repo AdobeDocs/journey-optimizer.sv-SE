@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 151594f2-85e4-4c79-9c15-334fbd3768c4
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '1505'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,9 @@ ht-degree: 1%
 
 När du har [skapade ditt meddelande](create-message.md)kan du börja skapa ditt e-postinnehåll.
 
-1. From your newly created message, select **[!UICONTROL Email designer]** in the **[!UICONTROL Body]** section.
+➡️ [Upptäck den här funktionen i en video](#video)
+
+1. Välj **[!UICONTROL Email designer]** i **[!UICONTROL Body]** -avsnitt.
 
    ![](assets/import-html_1.png)
 
@@ -43,11 +45,11 @@ När du har [skapade ditt meddelande](create-message.md)kan du börja skapa ditt
 >[!CONTEXTUALHELP]
 >id="ac_edition_columns"
 >title="Definiera e-postkolumner"
->abstract="The Email Designer allows you to easily define the layout of your email by defining column structure."
+>abstract="Med e-postdesignern kan du enkelt definiera layouten för e-postmeddelandet genom att definiera kolumnstrukturen."
 
-Med e-postdesignern kan du enkelt definiera e-postens struktur. By adding and moving structural elements with simple drag-and-drop actions, you can design the shape of your email within seconds.
+Med e-postdesignern kan du enkelt definiera e-postens struktur. Genom att lägga till och flytta strukturella element med enkla dra-och-släpp-åtgärder kan du designa formen på e-postmeddelandet på några sekunder.
 
-To start building your email content with the email designer, follow the steps below:
+Följ stegen nedan för att börja skapa e-postinnehåll med e-postdesignern:
 
 1. När du har valt **[!UICONTROL Design from scratch]** kan du börja designa ditt e-postinnehåll genom att dra och släppa **[!UICONTROL Structure components]** för att definiera layouten för e-postmeddelandet.
 
@@ -115,9 +117,9 @@ Ditt e-postinnehåll kan nu användas i ett meddelande. [Lär dig hur du skickar
 
 Vi rekommenderar att du skapar en textversion av e-postbrödtexten, som används när HTML inte kan visas.
 
-By default, the Email Designer creates a **[!UICONTROL Plain text]** version of your email, including personalization fields. This  version is automatically generated and synchronized with the HTML version of your content.
+Som standard skapar e-postdesignern en **[!UICONTROL Plain text]** version av e-postmeddelandet, inklusive personaliseringsfält. Den här versionen genereras och synkroniseras automatiskt med HTML-versionen av ditt innehåll.
 
-If you prefer using a different content for the plain text version, follow the steps below:
+Om du föredrar att använda ett annat innehåll för den oformaterade textversionen följer du stegen nedan:
 
 1. I ditt e-postmeddelande väljer du **[!UICONTROL Plain text]** -fliken.
 
@@ -159,7 +161,7 @@ Följ stegen nedan för att definiera e-postprerubriken:
 
    ![](assets/preheader_1.png)
 
-1. From the **[!UICONTROL Body settings]** right pane, click **Edit** next to the **[!UICONTROL Preheader]** field to add content.
+1. Från **[!UICONTROL Body settings]** höger ruta, klicka **Redigera** bredvid **[!UICONTROL Preheader]** fält för att lägga till innehåll.
 
    ![](assets/preheader_2.png)
 
@@ -182,7 +184,7 @@ Din förrubrik har nu konfigurerats för din e-post.
 >[!CONTEXTUALHELP]
 >id="ac_edition_backgroundimage"
 >title="Bakgrundsinställningar"
->abstract="You can personalize the background color or background image for your content. Note that background image is not supported by all email clients."
+>abstract="Du kan anpassa bakgrundsfärgen eller bakgrundsbilden för innehållet. Observera att bakgrundsbilden inte stöds av alla e-postklienter."
 
 När det gäller att ange bakgrunder med e-postdesignern rekommenderar Adobe följande:
 
@@ -192,7 +194,7 @@ När det gäller att ange bakgrunder med e-postdesignern rekommenderar Adobe fö
 
 Nedan visas de tillgängliga bakgrundsinställningarna som du kan använda.
 
-* Ange en **[!UICONTROL Background color]** för hela e-postmeddelandet. Make sure you select the body settings in the navigation tree accessible from the left Palette.
+* Ange en **[!UICONTROL Background color]** för hela e-postmeddelandet. Se till att du väljer brödtextinställningarna i navigeringsträdet som du kommer åt från den vänstra paletten.
 
 * Ange samma bakgrundsfärg för alla strukturkomponenter genom att markera **[!UICONTROL Viewport background color]**. Med det här alternativet kan du välja en annan inställning från bakgrundsfärgen.
 
@@ -282,3 +284,9 @@ När du markerar ett element och visar dess inställningar på sidopanelen i gr�
 1. Ändra värdena för de befintliga attributen eller lägg till nya med **+** -knappen. Du kan lägga till alla attribut och värden som är CSS-kompatibla.
 
 Formateringen används sedan på det markerade elementet. Om de underordnade elementen inte har några definierade formatattribut ärvs det överordnade elementets formatering.
+
+## Instruktionsvideo {#video}
+
+Lär dig hur du skapar e-postinnehåll med meddelanderedigeraren.
+
+>[!VIDEO](https://video.tv.adobe.com/v/334150?quality=12)
