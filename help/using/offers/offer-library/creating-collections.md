@@ -6,14 +6,19 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 0c8808e3-9148-4a33-9fd5-9218e02c2dfd
-source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
+source-git-commit: 95c6b69aa881a691b96a073dd89bb448c9a25283
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 3%
+source-wordcount: '310'
+ht-degree: 2%
 
 ---
 
 # Skapa samlingar {#create-collections}
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_decision_collection"
+>title="Om erbjudandesamlingar"
+>abstract="Med erbjudandesamlingar kan ni ordna era erbjudanden genom att gruppera om dem i olika kategorier.
 
 Med samlingar kan du ordna dina erbjudanden genom att gruppera om dem i olika kategorier. Du kan till exempel skapa en&quot;sport&quot;-samling som bara innehåller sportrelaterade erbjudanden.
 
