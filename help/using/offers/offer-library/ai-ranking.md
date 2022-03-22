@@ -7,9 +7,9 @@ feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: 4f7f7d1d-a12a-4ff6-b0ff-1a1c3d305a9d
-source-git-commit: a7483965e3154d0ad34cfb56b6458bb63b46a26c
+source-git-commit: f5627a23ceb0d00dd01db8766e72fed1b5d652a3
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1508'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## Kom igång med AI-modeller {#get-started-with-ai-rankings}
 
-Du kan använda ett utbildat modellsystem som rangordnar erbjudanden för en viss profil.
+[!DNL Journey Optimizer] gör att du kan använda ett tränat modellsystem som rangordnar erbjudanden för en viss profil.
 
 >[!CAUTION]
 >
@@ -27,8 +27,6 @@ Du kan använda ett utbildat modellsystem som rangordnar erbjudanden för en vis
 Med den här funktionen kan du skapa olika **AI-modeller** baserat på era affärsmål. Genom att använda dessa olika målbaserade strategier i ett beslut kommer det tränade modellsystemet att hjälpa dig att förstå hur de olika AI-modellerna påverkar era mål.
 
 Du kan till exempel välja en AI-modell för e-postkanalen och en annan för push-kanalen. För varje kanal utnyttjar det tränade modellsystemet flera datapunkter för att avgöra vilket erbjudande som ska presenteras först för en viss placering, i stället för att beakta offertens prioritetspoäng eller en [rankningsformel](create-ranking-formulas.md).
-
-När en AI-modell har skapats tilldelar du den till en placering i ett beslut. Läs mer i [Konfigurera urval av erbjudanden i beslut](../offer-activities/configure-offer-selection.md).
 
 >[!NOTE]
 >

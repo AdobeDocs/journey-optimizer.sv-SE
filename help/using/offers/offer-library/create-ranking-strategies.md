@@ -7,18 +7,28 @@ feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: 81d07ec8-e808-4bc6-97b1-b9f7db2aec22
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: f5627a23ceb0d00dd01db8766e72fed1b5d652a3
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '693'
 ht-degree: 4%
 
 ---
 
 # Skapa AI-modeller {#ai-rankings}
 
+[!DNL Journey Optimizer] kan du skapa **AI-modeller** att rangordna erbjudanden baserat på era affärsmål.
+
+>[!CAUTION]
+>
+>Om du vill skapa, redigera eller ta bort AI-modeller måste du ha **Hantera rankningsstrategier** behörighet. [Läs mer](../../administration/high-low-permissions.md#manage-ranking-strategies)
+>
+>AI-modeller är för närvarande tillgängliga i ett tidigt skede och endast för vissa användare.
+
+När en AI-modell har skapats tilldelar du den till en placering i ett beslut. Läs mer i [Konfigurera urval av erbjudanden i beslut](../offer-activities/configure-offer-selection.md).
+
 ## Skapa en rankningsstrategi {#create-ranking-strategy}
 
-Så här skapar du en rankningsstrategi:
+Så här skapar du en AI-modell som en rankningsstrategi:
 
 1. Öppna **[!UICONTROL Components]** väljer du **[!UICONTROL AI rankings]** -fliken.
 
