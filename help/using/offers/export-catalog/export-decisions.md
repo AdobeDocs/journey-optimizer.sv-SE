@@ -1,14 +1,14 @@
 ---
-title: Kom igång med export av din erbjudandekatalog
+title: Datauppsättning med beslut
 description: I det här avsnittet visas alla fält som används i den exporterade datauppsättningen för beslut
 feature: Offers
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: 064762b7-9774-42eb-bcef-1d92bc94a988
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 353aaf2bc4f32b1b0d7bfc2f7f4f48537cc79df4
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '1546'
 ht-degree: 0%
 
 ---
