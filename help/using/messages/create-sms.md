@@ -8,14 +8,20 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: b2b9d52ea5f76a4c145542600597f37d6ef00161
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 6%
+source-wordcount: '222'
+ht-degree: 5%
 
 ---
 
 # Skapa ett SMS-meddelande {#create-sms}
+
+>[!CONTEXTUALHELP]
+>id="ajo_message_sms"
+>title="SMS-skapande"
+>abstract="Lägg till ditt textmeddelande och börja personalisera det med Uttrycksredigeraren."
+
 
 >[!CAUTION]
 >

@@ -6,14 +6,19 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: b2b9d52ea5f76a4c145542600597f37d6ef00161
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 4%
+source-wordcount: '151'
+ht-degree: 3%
 
 ---
 
 # Skapa ett e-postmeddelande {#configure-email}
+
+>[!CONTEXTUALHELP]
+>id="ajo_message_email"
+>title="Skapa e-post"
+>abstract="Definiera e-postparametrar i endast tre enkla steg."
 
 En gång [skapade ett meddelande](create-message.md), använder du **[!UICONTROL Email]** för att definiera inställningar och innehåll för e-postkanalen.
 
