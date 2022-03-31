@@ -60,19 +60,19 @@ Följ stegen nedan om du vill delegera en ny underdomän till Adobe helt:
 
    >[!NOTE]
    >
-   >You can create the records and submit the subdomain configuration later on using the **[!UICONTROL Save as draft]** button. Du kan sedan återuppta delegeringen av underdomäner genom att öppna den från listan över underdomäner.
+   >Du kan skapa posterna och skicka konfigurationen för underdomänen senare med **[!UICONTROL Save as draft]** -knappen. Du kan sedan återuppta delegeringen av underdomäner genom att öppna den från listan över underdomäner.
 
-1. Once the full subdomain delegation has been submitted, the subdomain displays in the list with the **[!UICONTROL Processing]** status. For more on subdomains&#39; statuses, refer to [this section](access-subdomains.md).
+1. När den fullständiga underdomänsdelegeringen har skickats visas underdomänen i listan med **[!UICONTROL Processing]** status. Mer information om underdomänernas status finns i [det här avsnittet](access-subdomains.md).
 
    ![](assets/subdomain-processing.png)
 
-   Before being able to use that subdomain to send messages, you must wait until Adobe performs the required checks, which can take up to 3 hours. Learn more in [this section](#subdomain-validation).
+   Innan du kan använda den underdomänen för att skicka meddelanden måste du vänta tills Adobe utför de kontroller som krävs, vilket kan ta upp till 3 timmar. Läs mer i [det här avsnittet](#subdomain-validation).
 
    >[!NOTE]
    >
-   >Any missing records, meaning the records not yet created on your hosting solution, will be listed out.
+   >Eventuella poster som saknas, det vill säga poster som ännu inte har skapats i din värdlösning, listas i listan.
 
-1. När kontrollerna är slutförda får underdomänen **[!UICONTROL Success]** status. It is ready to be used to deliver messages.
+1. När kontrollerna är slutförda får underdomänen **[!UICONTROL Success]** status. Den är klar att användas för att leverera meddelanden.
 
    >[!NOTE]
    >
@@ -80,11 +80,11 @@ Följ stegen nedan om du vill delegera en ny underdomän till Adobe helt:
 
    <!-- later on, users will be notified in Pulse -->
 
-Once a subdomain is delegated to Adobe in [!DNL Journey Optimizer], a PTR record is automatically created and associated with this subdomain. [Läs mer](ptr-records.md)
+När en underdomän har delegerats till Adobe i [!DNL Journey Optimizer]skapas en PTR-post automatiskt och kopplas till den här underdomänen. [Läs mer](ptr-records.md)
 
 >[!CAUTION]
 >
->Parallel execution of subdomains is currently not supported in [!DNL Journey Optimizer]. Om du försöker skicka en underdomän för delegering när en annan har **[!UICONTROL Processing]** får du ett felmeddelande.
+>Parallell körning av underdomäner stöds för närvarande inte i [!DNL Journey Optimizer]. Om du försöker skicka en underdomän för delegering när en annan har **[!UICONTROL Processing]** får du ett felmeddelande.
 
 ## CNAME-delegering av underdomän {#cname-subdomain-delegation}
 
@@ -136,9 +136,9 @@ Följ stegen nedan för att delegera en underdomän med CNAME:
 
    >[!NOTE]
    >
-   >Du kan också skapa valideringsposten och skicka underdomänskonfigurationen senare med **[!UICONTROL Save as draft]** -knappen. You will then be able to resume the subdomain delegation by opening it from the subdomains list.
+   >Du kan också skapa valideringsposten och skicka underdomänskonfigurationen senare med **[!UICONTROL Save as draft]** -knappen. Du kan sedan återuppta delegeringen av underdomäner genom att öppna den från listan över underdomäner.
 
-1. När delegeringen av CNAME-underdomänen har skickats visas underdomänen i listan med **[!UICONTROL Processing]** status. For more on subdomains&#39; statuses, refer to [this section](access-subdomains.md).
+1. När delegeringen av CNAME-underdomänen har skickats visas underdomänen i listan med **[!UICONTROL Processing]** status. Mer information om underdomänernas status finns i [det här avsnittet](access-subdomains.md).
 
    Innan du kan använda den underdomänen för att skicka meddelanden måste du vänta tills Adobe utför de nödvändiga kontrollerna, som normalt tar 2 till 3 timmar. Läs mer i [det här avsnittet](#subdomain-validation).
 
@@ -182,7 +182,7 @@ Kontrollerna och åtgärderna nedan utförs tills underdomänen har verifierats 
 
 1. **Skapa vanlig DNS**: Om det här är den första underdomänen som du delegerar, skapar Adobe den framåtriktade DNS som krävs för att skapa PTR-poster - en för varje IP-adress.
 
-1. **Skapa PTR-post**: PTR-posten, som också kallas omvänd DNS-post, krävs av Internet-leverantörer så att de inte markerar e-postmeddelanden som skräppost. Gmail rekommenderar också att du har PTR-poster för varje IP. Adobe skapar PTR-poster endast när du delegerar en underdomän för första gången, en för varje IP-adress, alla IP-adresser som pekar på den underdomänen. Om IP-adressen till exempel är *192.1.2.1* och underdomänen är *email.example.com* blir PTR-posten: *192.1.2.1 PTR r1.email.example.com*. Du kan uppdatera PTR-posten efteråt för att peka på den nya delegerade domänen. [Learn more on PTR records](ptr-records.md)
+1. **Skapa PTR-post**: PTR-posten, som också kallas omvänd DNS-post, krävs av Internet-leverantörer så att de inte markerar e-postmeddelanden som skräppost. Gmail rekommenderar också att du har PTR-poster för varje IP. Adobe skapar PTR-poster endast när du delegerar en underdomän för första gången, en för varje IP-adress, alla IP-adresser som pekar på den underdomänen. Om IP-adressen till exempel är *192.1.2.1* och underdomänen är *email.example.com* blir PTR-posten: *192.1.2.1 PTR r1.email.example.com*. Du kan uppdatera PTR-posten efteråt för att peka på den nya delegerade domänen. [Läs mer om PTR-poster](ptr-records.md)
 
 ## Instruktionsvideo{#video}
 

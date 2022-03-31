@@ -13,7 +13,7 @@ ht-degree: 2%
 
 ---
 
-# Exempel på avancerade uttryck{#advanced-expression-examples}
+# Advanced expression examples{#advanced-expression-examples}
 
 Den avancerade uttrycksredigeraren kan användas för att skapa villkor som gör att du kan filtrera användare på dina resor. These conditions enable you to target users on time, date, location, duration, or actions such as purchase or abandonment of carts so that they can be retargeted in the journey.
 
@@ -21,18 +21,18 @@ Den avancerade uttrycksredigeraren kan användas för att skapa villkor som gör
 >
 >Händelser börjar med @, datakällor med #.
 
-## Bygga villkor för upplevelsehändelser
+## Building conditions on Experience Events
 
 Den avancerade uttrycksredigeraren är obligatorisk för att utföra frågor på tidsserier som en lista över inköp eller tidigare klick på meddelanden. Sådana frågor kan inte utföras med den enkla redigeraren.
 
 Erfarenhetshändelserna hämtas från Adobe Experience Platform som en samling i omvänd kronologisk ordning, vilket innebär att
 
-* den första funktionen returnerar den senaste händelsen
-* last function will return the oldest one.
+* first function will return the most recent event
+* den sista funktionen returnerar den äldsta.
 
-For example, let&#39;s say you want to target customers with a cart abandonment in the last 7 days to send a message when the customer is getting near a store, with an offer on items they wanted that are in store.
+Låt oss till exempel säga att ni vill rikta er mot kunder som har övergett en kundvagn de senaste 7 dagarna för att skicka ett meddelande när kunden närmar sig en butik, med ett erbjudande på artiklar de vill ha som finns i butik.
 
-**Du måste skapa följande villkor:**
+**You need to build the following conditions:**
 
 Först och främst målkunder som surfar i onlinebutiken men inte slutfört beställningen de senaste sju dagarna.
 
@@ -40,13 +40,13 @@ Först och främst målkunder som surfar i onlinebutiken men inte slutfört best
 
 `In (“addToCart”, #{field reference from experience event})`-->
 
-**Det här uttrycket söker efter alla händelser för den här användaren som har angetts under de senaste 7 dagarna:**
+**This expression looks for all events for this user specified in the last 7 days:**
 
 Sedan markeras alla tilläggshändelser som inte omvandlades till completePurchase.
 
 >[!NOTE]
 >
->To insert fields in the expression quickly, double-click the field in the left panel of the editor.
+>Om du snabbt vill infoga fält i uttrycket dubbelklickar du på fältet på den vänstra panelen i redigeraren.
 
 Den angivna tidsstämpeln fungerar som datum-/tidsvärde, den andra är antalet dagar.
 
@@ -68,7 +68,7 @@ Den angivna tidsstämpeln fungerar som datum-/tidsvärde, den andra är antalet 
                         .productInteraction}))
 ```
 
-Det här uttrycket returnerar ett booleskt värde.
+This expression returns a boolean.
 
 **Nu ska vi skapa ett uttryck som kontrollerar att produkten finns i lager**
 
@@ -80,7 +80,7 @@ Det här uttrycket returnerar ett booleskt värde.
 
 `#{ArriveLumaStudio._acpevangelists1.location.location}`
 
-* And specify SKU, using the function `first` to retrieve the most recent &quot;addToCart&quot; interaction:
+* Och ange SKU med funktionen `first` för att hämta den senaste&quot;addToCart&quot;-interaktionen:
 
    ```json
        #{ExperiencePlatformDataSource
@@ -96,11 +96,11 @@ Det här uttrycket returnerar ett booleskt värde.
 
 Därifrån kan ni lägga till ytterligare en väg på resan när produkten inte finns i butik och skicka meddelanden med engagemangserbjudandet. Konfigurera meddelandena därefter och använd personaliseringsdata för att förbättra meddelandets mål.
 
-## Exempel på strängändringar med den avancerade uttrycksredigeraren
+## Examples of string manipulations with the advanced expression editor
 
 **I villkor**
 
-This condition retrieve only the geofence events triggered in &quot;Arlington&quot;:
+Detta villkor hämtar endast geofence-händelser som utlöses i&quot;Arlington&quot;:
 
 ```json
         @{GeofenceEntry
@@ -110,7 +110,7 @@ This condition retrieve only the geofence events triggered in &quot;Arlington&qu
                     .name} == "Arlington"
 ```
 
-Explanation: This is a strict string comparison (case sensitive), equivalent to a query in simple mode that uses `equal to` with `Is sensitive` checked.
+Förklaring: Det här är en strikt strängjämförelse (skiftlägeskänslig), som motsvarar en fråga i enkelt läge som använder `equal to` med `Is sensitive` markerad.
 
 Samma fråga med `Is sensitive` om du inte markerar det här alternativet genereras följande uttryck i avancerat läge:
 
@@ -122,7 +122,7 @@ Samma fråga med `Is sensitive` om du inte markerar det här alternativet genere
                         .name}, "Arlington")
 ```
 
-**I funktionsmakron**
+**In actions**
 
 Följande uttryck gör att du kan definiera CRM-ID:t i ett åtgärdspersonaliseringsfält:
 
@@ -145,4 +145,4 @@ substr(
 
 Förklaring: Det här exemplet använder `substr` och `lastIndexOf` funktioner för att ta bort klammerparenteser som omger det CRM-ID som skickas med en starthändelse för mobilappar.
 
-Mer information om hur du använder den avancerade uttrycksredigeraren finns i [den här videon](https://experienceleague.adobe.com/docs/platform-learn/tutorials/journey-orchestration/create-a-journey.html).
+For more on how to use the advanced expression editor, watch [this video](https://experienceleague.adobe.com/docs/platform-learn/tutorials/journey-orchestration/create-a-journey.html).

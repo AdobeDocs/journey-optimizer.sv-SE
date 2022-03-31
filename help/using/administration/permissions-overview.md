@@ -33,6 +33,6 @@ Varje koncept kan hanteras av **[!UICONTROL Product administrators]** som har ti
 
 ## Instruktionsvideo{#video}
 
-Learn more about the Adobe Journey Optimizer’s access control system and the eight custom product profiles. Lär dig hur du hanterar produktprofiler och behörigheter och hur du lägger till och hanterar användare.
+Läs mer om Adobe Journey Optimizer åtkomstkontrollsystem och de åtta anpassade produktprofilerna. Lär dig hur du hanterar produktprofiler och behörigheter och hur du lägger till och hanterar användare.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333998?quality=12)
