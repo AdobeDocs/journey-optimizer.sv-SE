@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Anpassningssyntax {#personalization-syntax}
 
-Personalisering i [!DNL Journey Optimizer] baseras på den mallsyntax som kallas Handlebars.
+Personalization i [!DNL Journey Optimizer] baseras på den mallsyntax som kallas Handlebars.
 En fullständig beskrivning av Handlebars-syntaxen finns i [HandlebarsJS-dokumentation](https://handlebarsjs.com/).
 
 Den använder en mall och ett indataobjekt för att generera HTML eller andra textformat. Mallar för handtag ser ut som vanlig text med inbäddade handtagsuttryck.
@@ -143,7 +143,7 @@ Block är uttryck som har ett blocköppningsblock ({{# }}) och closing ({/}}).
 >
 >Användning av **xEvent** variabeln är inte tillgänglig i personaliseringsuttryck. Alla referenser till xEvent resulterar i valideringsfel.
 
-## URL-anpassning{#perso-urls}
+## URL Personalization{#perso-urls}
 
 Personaliserade URL:er tar mottagarna till specifika sidor på en webbplats eller till en personlig mikrowebbplats, beroende på profilattributen. I Adobe Journey Optimizer kan du lägga till personalisering i URL-adresser i ditt meddelandeinnehåll. URL-personalisering kan tillämpas på text och bilder och använda profildata eller kontextuella data.
 

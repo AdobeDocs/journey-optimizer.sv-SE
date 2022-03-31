@@ -101,7 +101,7 @@ När du väljer en annan testprofil på händelsekonfigurationsskärmen och kör
 
 När du öppnar en resa i ett test motsvarar den visade sökvägen det senaste testet som utfördes.
 
-Det visuella flödet fungerar oavsett om händelsen aktiveras via gränssnittet eller externt (med till exempel Postman).
+Det visuella flödet fungerar oavsett om händelsen aktiveras via gränssnittet eller externt (med t.ex. Postman).
 
 ## Testläge för regelbaserade resor {#test-rule-based}
 

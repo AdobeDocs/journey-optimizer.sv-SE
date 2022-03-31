@@ -461,7 +461,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 * Korrigerade ett tillgänglighetsproblem vid navigering på meddelandeflikar.
 * Ett lokaliseringsfel har korrigerats i e-postdesignerns etiketter.
 * Ett problem har korrigerats när du valde mer än en nod i en resa och klickade på Ta bort på egenskapspanelen.
-* Korrigerade ett problem som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
+* Korrigerade ett fel som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
 * Du kan nu ta reda på varför en meddelandeförinställning inte kunde skapas med hjälp av en tydligare varning i användargränssnittet.
 
 
