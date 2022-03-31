@@ -6,14 +6,19 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 8a859af9ad09ca3f240ff6f355d4e5f34d2e4eac
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
 
 # Lägg till ett meddelande i en resa{#add-a-message-in-a-journey}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_message"
+>title="Meddelandeaktivitet"
+>abstract="Med aktiviteten Meddelande kan du skicka ett push- eller e-postmeddelande. Journey Optimizer meddelandefunktioner är inbyggda. Meddelandet är utformat och publicerat på menyn Meddelanden i Journey Optimizer."
 
 [!DNL Journey Optimizer] meddelandefunktionerna är inbyggda, du behöver bara utforma innehållet och publicera meddelandet. Se [det här avsnittet](../messages/get-started-content.md). Sedan lägger du bara till ett push- eller e-postmeddelande som utformats med Journey Optimizer under resan.
 

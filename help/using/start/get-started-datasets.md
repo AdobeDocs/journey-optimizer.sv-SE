@@ -4,7 +4,7 @@ description: Lär dig hur du använder Adobe Experience Platform-datauppsättnin
 role: User
 level: Beginner
 exl-id: dcdd3c81-0f00-4259-a8a5-9062a4c40b6f
-source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
+source-git-commit: 2cca25d16de520dd905143b2b3fe4bea6dbd7801
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 3%
@@ -38,6 +38,6 @@ Lär dig hur du skapar en datauppsättning, mappar den till ett schema, lägger 
 
 **Se även**
 
-* [Skapa ett schema, en datauppsättning och inmatningsdata för att lägga till testprofiler i Journey Optimizer](../building-journeys/creating-test-profiles.md)
+* [Skapa ett schema, en datauppsättning och inmatningsdata för att lägga till testprofiler i Journey Optimizer](../segment/creating-test-profiles.md)
 * [Översikt över direktuppspelning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=sv){target=&quot;_blank&quot;}
 * [Importera data till Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html){target=&quot;_blank&quot;}

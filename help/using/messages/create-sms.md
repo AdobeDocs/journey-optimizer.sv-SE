@@ -8,7 +8,7 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: b2b9d52ea5f76a4c145542600597f37d6ef00161
+source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 5%
@@ -27,7 +27,7 @@ ht-degree: 5%
 >
 > SMS-kanalen är för närvarande tillgänglig i ett tidigt skede och endast för utvalda användare. Om du vill använda den här funktionen kontaktar du din kontoansvarige på Adobe.
 
-En gång [skapade ett meddelande](create-message.md), använder du **[!UICONTROL SMS]** för att definiera inställningar och innehåll för SMS-kanalen.
+En gång [skapade ett meddelande](get-started-content.md), använder du **[!UICONTROL SMS]** för att definiera inställningar och innehåll för SMS-kanalen.
 
 ![](assets/sms_1.png)
 
@@ -47,7 +47,7 @@ Så här börjar du personalisera SMS-meddelandet:
 
 1. Klicka **[!UICONTROL Save]** när ditt personaliserade meddelande är klart.
 
-1. Klicka **[!UICONTROL Preview]** för att visualisera hur SMS-meddelandet kommer att visas på mobila enheter. Mer information om detta finns i [det här avsnittet](preview.md).
+1. Klicka **[!UICONTROL Preview]** för att visualisera hur SMS-meddelandet kommer att visas på mobila enheter. Mer information om detta finns i [det här avsnittet](../design/preview.md).
 
 1. När meddelandet är klart kan du publicera det för att göra det tillgängligt för körning med **[!UICONTROL Publish]** -knappen. Den här åtgärden kommer att publicera den nya versionen av meddelandet som ska användas för nästa körning på dina resor.
 
@@ -56,5 +56,5 @@ Ditt SMS-meddelande kan nu användas under en resa. [Lär dig skapa resor](../bu
 **Relaterade ämnen**
 
 * [Konfigurera SMS-kanal](../configuration/sms-configuration.md)
-* [Skapa ett nytt meddelande](create-message.md)
+* [Skapa ett nytt meddelande](get-started-content.md)
 * [Lägg till ett meddelande i en resa](../building-journeys/journeys-message.md)

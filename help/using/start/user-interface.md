@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
 workflow-type: tm+mt
 source-wordcount: '1464'
 ht-degree: 7%
@@ -46,7 +46,7 @@ Nedan finns en fullständig lista över tjänster och funktioner som är tillgä
 
 * **[!UICONTROL Journeys]** - Skapa, konfigurera och samordna era kundresor. [Läs mer](../building-journeys/journey-gs.md#jo-build)
 
-* **[!UICONTROL Messages]** - Skapa, utforma, testa och publicera e-post och push-meddelanden. [Läs mer](../messages/create-message.md)
+* **[!UICONTROL Messages]** - Skapa, utforma, testa och publicera e-post och push-meddelanden. [Läs mer](../messages/get-started-content.md)
 
 **[!UICONTROL DECISION MANAGEMENT]**
 
@@ -56,7 +56,7 @@ Nedan finns en fullständig lista över tjänster och funktioner som är tillgä
 
 **[!UICONTROL CONTENT MANAGEMENT]**
 
-* **[!UICONTROL Assets]** - [!DNL Adobe Experience Manager Assets Essentials] är en central databas med resurser som du kan använda för att fylla i dina meddelanden. [Läs mer](../messages/assets-essentials.md)
+* **[!UICONTROL Assets]** - [!DNL Adobe Experience Manager Assets Essentials] är en central databas med resurser som du kan använda för att fylla i dina meddelanden. [Läs mer](../design/assets-essentials.md)
 
 **[!UICONTROL DATA MANAGEMENT]**
 
@@ -76,9 +76,9 @@ Nedan finns en fullständig lista över tjänster och funktioner som är tillgä
 
 * **[!UICONTROL Segments]** - Skapa och hantera definitioner av segment i Experience Platform och utnyttja dem på era resor. [Läs mer](../segment/about-segments.md)
 
-* **[!UICONTROL Profiles]** - Kundprofil i realtid skapar en helhetsbild av varje enskild kund och kombinerar data från flera kanaler, inklusive online-, offline-, CRM- och tredjepartsdata. [Läs mer](get-started-profiles.md)
+* **[!UICONTROL Profiles]** - Kundprofil i realtid skapar en helhetsbild av varje enskild kund och kombinerar data från flera kanaler, inklusive online-, offline-, CRM- och tredjepartsdata. [Läs mer](../segment/get-started-profiles.md)
 
-* **[!UICONTROL Identities]** - Adobe Experience Platform Identity Service hanterar identifieringen av era kunder i realtid, oavsett enhet, kanal och i det närmaste, i det som kallas identitetsdiagram inom Adobe Experience Platform. [Läs mer](get-started-identity.md)
+* **[!UICONTROL Identities]** - Adobe Experience Platform Identity Service hanterar identifieringen av era kunder i realtid, oavsett enhet, kanal och i det närmaste, i det som kallas identitetsdiagram inom Adobe Experience Platform. [Läs mer](../segment/get-started-identity.md)
 
 **[!UICONTROL ADMINISTRATION]**
 
@@ -98,7 +98,7 @@ Utnyttja [!DNL Adobe Journey Optimizer] exempel från startsidan och ge några s
 
 Exempel:
 
-* **Skapa testprofiler**, för att skapa testprofiler med vår CSV-mall för att testa personaliserade meddelanden och resor. Lär dig implementera det här användningsexemplet [på den här sidan](../building-journeys/creating-test-profiles.md#use-case-1).
+* **Skapa testprofiler**, för att skapa testprofiler med vår CSV-mall för att testa personaliserade meddelanden och resor. Lär dig implementera det här användningsexemplet [på den här sidan](../segment/creating-test-profiles.md#use-case-1).
 * **Skicka ett födelsedagsmeddelande till kunder**, för att automatiskt skicka ett e-postmeddelande och önska dina kunder en viss födelsedag. (kommer snart)
 * **Skicka e-post till nya kunder**, för att enkelt skicka upp till två e-postmeddelanden till dina nyregistrerade kunder. (kommer snart)
 * **Skicka push-meddelanden till importerad lista över kunder**, för att snabbt skicka ett push-meddelande till en lista över kunder som importerats från en CSV-fil. (kommer snart)

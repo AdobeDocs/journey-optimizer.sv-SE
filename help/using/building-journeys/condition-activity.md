@@ -6,14 +6,19 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 496c7666-a133-4aeb-be8e-c37b3b9bf5f9
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 8a859af9ad09ca3f240ff6f355d4e5f34d2e4eac
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 6%
+source-wordcount: '1271'
+ht-degree: 7%
 
 ---
 
 # Villkorsaktivitet{#condition-activity}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_condition"
+>title="Villkorsaktivitet"
+>abstract="Med den här aktiviteten kan du definiera hur personen ska flöda under resan. Flera sökvägar skapas baserat på olika villkor. Du kan också skapa en alternativ sökväg om en timeout eller ett fel inträffar."
 
 Följande typer av villkor är tillgängliga:
 
@@ -26,6 +31,11 @@ Följande typer av villkor är tillgängliga:
 ![](assets/journey49.png)
 
 ## Om villkorsaktiviteten {#about_condition}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_expression_simple"
+>title="Om redigeraren för enkla uttryck"
+>abstract="I redigeringsläget för enkla uttryck kan du utföra enkla frågor baserat på en kombination av fält. Alla tillgängliga fält visas till vänster på skärmen. Dra och släpp fält till huvudzonen. Om du vill kombinera de olika elementen, låser du ihop dem till varandra för att skapa olika grupper och/eller gruppnivåer. Du kan sedan välja en logisk operatör för att kombinera element på samma nivå."
 
 När du använder flera villkor under en resa kan du definiera etiketter för var och en av dem för att lättare kunna identifiera dem.
 
@@ -53,15 +63,17 @@ Om du använder [Adobe Experience Platform segmenteringstjänst](https://experie
 
 >[!NOTE]
 >
->Du kan inte utföra frågor på tidsserier (till exempel en lista över inköp, tidigare klick på meddelanden) med den enkla redigeraren. För detta behöver du den avancerade redigeraren. Se [Dokumentation för Adobe Journey Orchestration](expression/expressionadvanced.md).
+>Du kan inte utföra frågor på tidsserier (till exempel en lista över inköp, tidigare klick på meddelanden) med den enkla redigeraren. För detta behöver du den avancerade redigeraren. Läs [den här sidan](expression/expressionadvanced.md).
 
 När ett fel inträffar i en åtgärd eller ett villkor upphör en individs resa. Det enda sättet att få den att fortsätta är att markera rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [det här avsnittet](../building-journeys/using-the-journey-designer.md#paths).
 
-I den enkla redigeraren hittar du även kategorin Reseegenskaper, nedanför kategorierna event och datakälla. Denna kategori innehåller tekniska fält som rör resan för en viss profil. Det här är den information som hämtats av systemet från direktresor, till exempel rese-ID:t eller de specifika fel som påträffats. Mer information finns i [Dokumentation för Adobe Journey Orchestration](expression/journey-properties.md)
+I den enkla redigeraren hittar du även kategorin Reseegenskaper, nedanför kategorierna event och datakälla. Denna kategori innehåller tekniska fält som rör resan för en viss profil. Det här är den information som hämtats av systemet från direktresor, till exempel rese-ID:t eller de specifika fel som påträffats. [Läs mer](expression/journey-properties.md)
 
 ## Datakällans villkor {#data_source_condition}
 
-På så sätt kan du definiera ett villkor baserat på fält från datakällorna eller händelser som tidigare placerats under resan. Mer information om hur du använder uttrycksredigeraren finns i [Dokumentation för Adobe Journey Orchestration](expression/expressionadvanced.md). Med den avancerade uttrycksredigeraren kan du ställa in mer avancerade villkor för att hantera samlingar eller använda datakällor som kräver att parametrar skickas. Läs [den här sidan](../datasource/external-data-sources.md).
+På så sätt kan du definiera ett villkor baserat på fält från datakällorna eller händelser som tidigare placerats under resan. Läs om hur du använder uttrycksredigeraren i [det här avsnittet](expression/expressionadvanced.md).
+
+Med den avancerade uttrycksredigeraren kan du ställa in mer avancerade villkor för att hantera samlingar eller använda datakällor som kräver att parametrar skickas. [Läs mer](../datasource/external-data-sources.md).
 
 ![](assets/journey50.png)
 
@@ -112,7 +124,7 @@ Den nominella banan har alltid företräde framför den alternativa banan, även
 Här följer de tröskelvärden som ska beaktas för att se till att gränsvärdet uppnås:
 
 * För ett lock som är större än 10000 måste antalet distinkta profiler som ska injiceras vara minst 1,3 gånger så stort som locket.
-* För ett lock under 10000 måste antalet distinkta profiler som ska injiceras vara 1000 plus sockeln.
+* För en kapsyl under 10000 måste antalet distinkta profiler som ska injiceras vara 1000 plus kapsylen.
 
 Profilände beaktas inte i testläge.
 

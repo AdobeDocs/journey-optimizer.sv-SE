@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c5bae757-a109-45f8-bf8d-182044a73cca
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1225'
 ht-degree: 1%
 
 ---
@@ -51,9 +51,9 @@ Du måste först lägga till en länk för att avbryta prenumerationen i ett med
 
 1. Lägg det på valfritt tredjepartssystem.
 
-1. [Skapa ett meddelande](create-message.md) in [!DNL Journey Optimizer].
+1. [Skapa ett meddelande](get-started-content.md) in [!DNL Journey Optimizer].
 
-1. Markera text i innehållet och [infoga en länk](message-tracking.md#insert-links) med hjälp av kontextverktygsfältet.
+1. Markera text i innehållet och [infoga en länk](../design/message-tracking.md#insert-links) med hjälp av kontextverktygsfältet.
 
    ![](assets/opt-out-insert-link.png)
 
@@ -141,7 +141,7 @@ Eftersom många kunder vill ha en enklare process för att avbryta prenumeration
 
 Följ stegen nedan om du vill lägga till en länk för att avanmäla dig i ditt e-postmeddelande.
 
-1. [Infoga en länk](message-tracking.md#insert-links) och markera **[!UICONTROL One click Opt-out]** som typ av länk.
+1. [Infoga en länk](../design/message-tracking.md#insert-links) och markera **[!UICONTROL One click Opt-out]** som typ av länk.
 
    ![](assets/message-tracking-opt-out.png)
 
@@ -155,6 +155,10 @@ Följ stegen nedan om du vill lägga till en länk för att avanmäla dig i ditt
 
 1. Ange URL-adressen till landningssidan där användaren omdirigeras när prenumerationen har upphört. Den här sidan är bara här för att bekräfta att avanmälan lyckades.
 
+   >[!NOTE]
+   >
+   >Om du har aktiverat **List-Unsubscribe** på meddelandeförinställningsnivå kommer denna URL också att användas när användarna klickar på länken för att avbryta prenumerationen i e-posthuvudet. [Läs mer](#unsubscribe-header)
+
    ![](assets/message-tracking-opt-out-confirmation.png)
 
    Du kan anpassa länkarna. Läs mer om personaliserade URL:er i [det här avsnittet](../personalization/personalization-syntax.md).
@@ -163,19 +167,41 @@ Följ stegen nedan om du vill lägga till en länk för att avanmäla dig i ditt
 
 När ditt meddelande har skickats via en [resa](../building-journeys/journey.md), om en mottagare klickar på länken för att avanmäla sig, avvisas deras profil omedelbart.
 
-### Avbeställ länk i meddelanderubriken {#unsubscribe-email}
+### Avbeställ länk i meddelanderubriken {#unsubscribe-header}
 
-Om mottagarnas e-postklient har stöd för att visa en länk för att avbryta prenumerationen i e-posthuvudet, skickas e-postmeddelanden med [!DNL Journey Optimizer] infogar automatiskt den här länken.
+>[!CONTEXTUALHELP]
+>id="ajo_admin_preset_unsubscribe"
+>title="Lägg till länken för att avbryta prenumerationen i e-posthuvudet"
+>abstract="Aktivera List-Unsubscribe om du vill lägga till en länk för att avbryta prenumerationen i e-posthuvudet. Om du vill ange en avanmälnings-URL infogar du en länk för avanmälan med ett klick i e-postmeddelandets innehåll."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/messages/consent.html?lang=en#one-click-opt-out" text="Avanmäl dig med ett klick"
+
+Om [Alternativet List-Unsubscribe](../configuration/message-presets.md#list-unsubscribe) är aktiverat på meddelandeförinställningsnivå, motsvarande e-postmeddelanden som skickas med [!DNL Journey Optimizer] kommer att innehålla en länk för att avbryta prenumerationen i e-posthuvudet.
 
 Länken för att avbryta prenumerationen visas så här i Gmail:
 
-![](assets/unsubscribe-email.png)
+![](assets/unsubscribe-header.png)
 
-Beroende på e-postklienten kan du klicka på länken för att avbryta prenumerationen från rubriken på något av följande sätt:
+>[!NOTE]
+>
+>Om du vill visa länken för att avbryta prenumerationen i e-posthuvudet måste mottagarens e-postklient ha stöd för den här funktionen.
+
+Avbeställningsadressen är standard **[!UICONTROL Mailto (unsubscribe)]** som visas i motsvarande meddelandeförinställning. [Läs mer](../configuration/message-presets.md#list-unsubscribe).
+
+Om du vill ange en personlig avanmälnings-URL infogar du en länk för att välja bort en anmälan med ett klick i e-postmeddelandets innehåll och anger den URL du vill använda. [Läs mer](#one-click-opt-out)
+
+Beroende på e-postklienten kan du klicka på länken för att avbryta prenumerationen från rubriken få följande effekter:
+
+* Avbeställningen skickas till avbeställningsadressen.
+
+* Mottagaren dirigeras till den URL för landningssidan som du angav när du lade till länken för avanmälan i meddelandet.
+
+   >[!NOTE]
+   >
+   >Om du inte lägger till en länk för avanmälan med ett enda klick i ditt meddelandeinnehåll visas ingen startsida.
 
 * Motsvarande profil väljs omedelbart och det här alternativet uppdateras i Experience Platform. Läs mer i [Experience Platform dokumentation](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target=&quot;_blank&quot;}.
 
-* Det har samma effekt som att klicka på länken för att avbryta prenumerationen från e-postinnehållet: Mottagaren omdirigeras till en landningssida med en knapp som bekräftar att han eller hon avanmäler sig. Läs mer om avanmälningshantering i [det här avsnittet](#opt-out-management).
+<!--To define a custom unsubscribe URL and email address, you must enable it in the message presets. [Learn more](../configuration/message-presets.md)-->
 
 ## Hantering av avanmälan {#push-opt-out-management}
 

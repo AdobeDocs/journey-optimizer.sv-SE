@@ -6,7 +6,7 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 7d9c3d31-af57-4f41-aa23-6efa5b785260
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Målet med det här exemplet är att skicka en händelse till [!DNL Journey Opti
 
 I detta fall krävs följande krav:
 
-* skapa och utforma ett push-meddelande, utan att publicera det. Se detta [section](../messages/create-message.md).
+* skapa och utforma ett push-meddelande, utan att publicera det. Se detta [section](../messages/get-started-content.md).
 * konfigurera en orderhändelse som innehåller ordernummer, status och artikelnamn. Se detta [section](../event/about-events.md).
 * skapa ett beslut (tidigare kallat&quot;erbjudandeaktivitet&quot;), se denna [section](../offers/offer-activities/create-offer-activities.md).
 

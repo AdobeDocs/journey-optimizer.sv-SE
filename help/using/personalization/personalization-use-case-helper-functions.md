@@ -6,7 +6,7 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 9c9598c0-6fb1-4e2f-b610-ccd1a80e516e
-source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
+source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 2%
@@ -28,8 +28,8 @@ Du använder följande typer av hjälpfunktioner:
 ➡️ [Lär dig hur du använder hjälpfunktioner i den här videon](#video)
 
 Innan du börjar bör du kontrollera hur du konfigurerar dessa element:
-* Ett e-postmeddelande. [Läs mer](../messages/create-message.md)
-* Innehållet i ett e-postmeddelande. [Läs mer](../messages/create-email-content.md).
+* Ett e-postmeddelande. [Läs mer](../messages/get-started-content.md)
+* Innehållet i ett e-postmeddelande. [Läs mer](../design/create-email-content.md).
 * En enastående händelse. [Läs mer](../event/about-events.md).
 * En resa som börjar med ett evenemang. [Läs mer](../building-journeys/using-the-journey-designer.md).
 
@@ -147,7 +147,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 
       **[!UICONTROL Contextual attributes]** är tillgängliga först efter att resekontexten har skickats till meddelandet.
 
-   1. Välj **[!UICONTROL Journey Orchestration]** > **[!UICONTROL Events]** > ***[!UICONTROL event_name]*** och utöka sedan **[!UICONTROL productListItems]** nod.
+   1. Välj **[!UICONTROL Journey Optimizer]** > **[!UICONTROL Events]** > ***[!UICONTROL event_name]*** och utöka sedan **[!UICONTROL productListItems]** nod.
 
       I det här exemplet *event_name* representerar namnet på din händelse.
 

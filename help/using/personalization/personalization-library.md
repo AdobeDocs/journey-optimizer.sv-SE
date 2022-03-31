@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 74b1be18-4829-4c67-ae45-cf13278cda65
-source-git-commit: 96a7fc65cb59dd366d790a6fbe938ecfb062d93a
+source-git-commit: 85aec983ac39c8d65b2a833ee17dc1e3cafb5900
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -58,8 +58,6 @@ Så här sparar du ett uttryck i biblioteket:
 
 
 >[!NOTE]
->
->* Du sparar upp till 40 uttryck i biblioteket.
 >
 >* Uttryck får inte överskrida 200 kB.
 >

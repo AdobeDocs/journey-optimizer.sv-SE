@@ -6,14 +6,19 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 39eb40e1-d7f5-4a8e-9b64-c620940d5ff2
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 8a859af9ad09ca3f240ff6f355d4e5f34d2e4eac
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 11%
+source-wordcount: '1116'
+ht-degree: 10%
 
 ---
 
 # Konfigurera en affärshändelse {#configure-a-business-event}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_event_business"
+>title="Affärshändelser"
+>abstract="Med händelsekonfigurationen kan du definiera den information som Journey Optimizer ska ta emot som händelser. Du kan använda flera händelser (i olika steg på en resa) och flera resor kan använda samma händelse. Till skillnad från enhetshändelser är affärshändelser inte länkade till en viss profil. Händelse-ID-typen är alltid regelbaserad."
 
 Till skillnad från enhetshändelser är affärshändelser inte länkade till en viss profil. Händelse-ID-typen är alltid regelbaserad. Läs mer om affärsevenemang i [det här avsnittet](../event/about-events.md).
 
@@ -23,11 +28,12 @@ Affärshändelser kan vara&quot;en produkt är tillbaka i lager&quot;,&quot;ett 
 
 >[!NOTE]
 >
->Du kan också titta på hur affärshändelser används [självstudiekurs](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-business-event.html).
+>Du kan också titta på hur affärshändelser används [självstudiekurs](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-business-event.html). Observera att schemat inte behöver aktiveras för profilen.
 
 ## Viktiga anteckningar {#important-notes}
 
-* Endast tidsseriescheman är tillgängliga. Scheman för upplevelsehändelser, beslutshändelser och resesteghändelser är inte tillgängliga. Händelseschemat måste innehålla en primär identitet. Följande fält måste anges efter behov: `_id` och `timestamp`
+* Endast tidsseriescheman är tillgängliga. Scheman för upplevelsehändelser, beslutshändelser och resesteghändelser är inte tillgängliga.
+* Händelseschemat måste innehålla en icke-personbaserad primär identitet. Följande fält måste markeras när händelsen definieras: `_id` och `timestamp`
 * Affärsevenemang kan bara tas bort som det första steget i en resa.
 * När du släpper en affärshändelse som första steg i en resa blir transportens schemaläggartyp&quot;affärshändelse&quot;.
 * Det går bara att ta bort en lässegmentaktivitet efter en affärshändelse. Det läggs automatiskt till som nästa steg.
@@ -78,7 +84,7 @@ Här följer de första stegen för att konfigurera en affärshändelse:
 
    ![](assets/jo-event5-business.png)
 
-   Endast tidsseriescheman är tillgängliga. Scheman för upplevelsehändelser, beslutshändelser och resesteghändelser är inte tillgängliga. Händelseschemat måste innehålla en primär identitet. Följande fält måste anges efter behov: `_id` och `timestamp`
+   Endast tidsseriescheman är tillgängliga. Scheman för upplevelsehändelser, beslutshändelser och resesteghändelser är inte tillgängliga. Händelseschemat måste innehålla en icke-personbaserad primär identitet. Följande fält måste markeras när händelsen definieras: `_id` och `timestamp`
 
    ![](assets/test-profiles-4.png)
 

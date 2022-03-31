@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e851646e-4cef-45e8-97c2-a8f4c9d2cc08
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1242'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ The **[!UICONTROL Bounce Reasons]** och **[!UICONTROL Bounce categories]** widge
 
 * **[!UICONTROL Ignored]**: Det totala antalet tillfälliga, t.ex. frånvaro, eller ett tekniskt fel, t.ex. om avsändartypen är postmaster.
 
-Mer information om studsar finns i [Undertryckningslista](../messages/suppression-list.md) sida.
+Mer information om studsar finns i [Undertryckningslista](../reports/suppression-list.md) sida.
 
 ![](assets/global_report_22.png)
 
@@ -212,6 +212,8 @@ The **[!UICONTROL Push - Tracking statistics]** innehåller tillgängliga data f
 
 * **[!UICONTROL Engagement Rate]**: Procentandel öppningar och åtgärder för det här push-meddelandet, dvs. om profilen öppnade push-meddelandet eller om någon klickade på en knapp.
 
+![](assets/global_report_24.png)
+
 The **[!UICONTROL Push notification summary]** diagrammet innehåller data som är tillgängliga för skickade push-meddelanden, som:
 
 * **[!UICONTROL Opens]**: Antal gånger ett meddelande öppnades i en leverans.
@@ -242,6 +244,8 @@ The **[!UICONTROL Send time optimization]** information om leveransens framgång
 ![](assets/global_report_18.png)
 
 The **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilket fel som inträffade under leveransen.
+
+The **[!UICONTROL Excluded reasons]** I diagram och tabeller visas de olika anledningar som gjorde att användarprofiler som inte ingår i målprofilerna inte kunde ta emot meddelandet.
 
 ![](assets/global_report_19.png)
 

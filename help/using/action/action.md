@@ -1,5 +1,5 @@
 ---
-solution: Journey Orchestration
+solution: Journey Optimizer
 title: Om åtgärder
 description: Läs om hur du konfigurerar en åtgärd
 feature: Actions
@@ -7,7 +7,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 7f0cda1d-daf0-4d4c-9978-ddef81473813
-source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
+source-git-commit: 22db9d3997e84d33ddb2febe7a07aaef4063a880
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 66%
@@ -37,9 +37,9 @@ Med anpassade åtgärder kan du konfigurera anslutningar med ett tredjepartssyst
 >
 >Konfigurationen av anpassade åtgärder måste utföras av en **teknisk användare**.
 
-The actions are available in the left palette of your journey, in the **[!UICONTROL Action]** category. Läs [den här sidan](../building-journeys/about-journey-activities.md#action-activities).
+Åtgärderna finns tillgängliga på den vänstra paletten under resan, i **[!UICONTROL Action]** kategori. Läs [den här sidan](../building-journeys/about-journey-activities.md#action-activities).
 
-To view the action list or configure a new action, select **[!UICONTROL Configurations]** in the ADMINISTRATION menu section. I  **[!UICONTROL Actions]** avsnitt, klicka **[!UICONTROL Manage]**. Listan med åtgärder visas. Se [den här sidan](../start/user-interface.md) för mer information om gränssnittet.
+Om du vill visa åtgärdslistan eller konfigurera en ny åtgärd väljer du **[!UICONTROL Configurations]** på menyn Administration. I  **[!UICONTROL Actions]** avsnitt, klicka **[!UICONTROL Manage]**. Listan med åtgärder visas. Se [den här sidan](../start/user-interface.md) för mer information om gränssnittet.
 
 ![](assets/custom1.png)
 

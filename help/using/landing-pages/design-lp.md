@@ -5,12 +5,10 @@ feature: Landing Pages
 topic: Content Management
 role: User
 level: Beginner
-hidefromtoc: true
-hide: true
 exl-id: c61b8d80-17e1-4fdd-a739-efcee032dc23
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -23,15 +21,15 @@ Börja skapa innehåll för landningen [primär sida](create-lp.md#configure-pri
 
 Därifrån kan man
 
-* **Designa landningssidan från grunden** genom innehållsdesignerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets Essentials](../messages/assets-essentials.md). Lär dig hur du utformar innehåll eller använder inbyggda mallar [i det här avsnittet](../messages/create-email-content.md).
+* **Designa landningssidan från grunden** genom innehållsdesignerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets Essentials](../design/assets-essentials.md). Lär dig hur du utformar innehåll eller använder inbyggda mallar [i det här avsnittet](../design/create-email-content.md).
 
-* **Kod eller klistra in Raw HTML** direkt in i innehållsdesignern. Lär dig koda eget innehåll [i det här avsnittet](../messages/existing-content.md#import-raw-html-code).
+* **Kod eller klistra in Raw HTML** direkt in i innehållsdesignern. Lär dig koda eget innehåll [i det här avsnittet](../design/code-content.md).
 
-* **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig importera innehåll [i det här avsnittet](../messages/existing-content.md#import-html-content-from-file).
+* **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig importera innehåll [i det här avsnittet](../design/existing-content.md).
 
 >[!NOTE]
 >
->Innehållsdesignern för landningssidan liknar oftast e-postdesignern. Läs mer på [designa innehåll med [!DNL Journey Optimizer]](../messages/design-emails.md).
+>Innehållsdesignern för landningssidan liknar oftast e-postdesignern. Läs mer på [designa innehåll med [!DNL Journey Optimizer]](../design/design-emails.md).
 
 ## Definiera landningssidspecifikt innehåll {#define-lp-specific-content}
 
@@ -96,7 +94,7 @@ Följ stegen nedan för att definiera specifikt innehåll som gör det möjligt 
 
    ![](assets/lp_designer-form-error.png)
 
-1. Om du vill göra ytterligare uppdateringar när du skickar in formuläret väljer du **[!UICONTROL Opt in]** eller **[!UICONTROL Opt out]** och ange om du vill uppdatera en prenumerationslista, kanalen eller bara den e-postadress som används.
+1. Om du vill göra ytterligare uppdateringar när du skickar formuläret väljer du **[!UICONTROL Opt in]** eller **[!UICONTROL Opt out]** och ange om du vill uppdatera en prenumerationslista, kanalen eller bara den e-postadress som används.
 
    ![](assets/lp_designer-form-additionnal-update.png)
 
@@ -116,7 +114,7 @@ Följ stegen nedan för att definiera specifikt innehåll som gör det möjligt 
 
    ![](assets/lp_designer-form-style-checkboxes.png)
 
-1. Expandera **[!UICONTROL Buttons]** för att ändra utseendet på knappen i komponentformuläret. Du kan till exempel lägga till en kant, redigera etikettfärgen vid hovring eller justera knappens justering.
+1. Expandera **[!UICONTROL Buttons]** för att ändra utseendet på knappen i komponentformuläret. Du kan till exempel lägga till en kant, redigera etikettfärgen vid hovring eller justera justeringen av knappen.
 
    ![](assets/lp_designer-form-style-buttons.png)
 
@@ -128,7 +126,7 @@ Följ stegen nedan för att definiera specifikt innehåll som gör det möjligt 
 
    ![](assets/lp_designer-form-style-layout.png)
 
-1. Expandera **[!UICONTROL Form error]** för att justera visningen av felmeddelandet som visas om ett problem uppstår. Markera motsvarande alternativ om du vill förhandsgranska feltexten i formuläret.
+1. Expandera **[!UICONTROL Form error]** för att justera visningen av felmeddelandet som visas om ett problem uppstår. Markera motsvarande alternativ för att förhandsgranska feltexten i formuläret.
 
    ![](assets/lp_designer-form-error-preview.png)
 

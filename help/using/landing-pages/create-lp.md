@@ -5,21 +5,15 @@ feature: Landing Pages
 topic: Content Management
 role: User
 level: Beginner
-hidefromtoc: true
-hide: true
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 3%
+source-wordcount: '926'
+ht-degree: 1%
 
 ---
 
 # Skapa och publicera landningssidor {#create-lp}
-
->[!CAUTION]
->
->Användningen av landningssidor är för närvarande endast tillgänglig i ett tidigt skede för att vissa användare ska kunna välja. Om du vill använda den här funktionen kontaktar du din kontoansvarige på Adobe.
 
 ## Åtkomst till landningssidor {#access-landing-pages}
 
@@ -30,6 +24,22 @@ Om du vill få åtkomst till landningssidans lista väljer du **[!UICONTROL Jour
 The **[!UICONTROL Landing Pages]** visas alla objekt som har skapats. Du kan filtrera dem baserat på deras status eller ändringsdatum.
 
 ![](assets/lp_access-list-filter.png)
+
+I den här listan kan du komma åt [landningssida Live-rapport](../reports/lp-report-live.md) eller [Global rapport för landningssida](../reports/lp-report-global.md) för publicerade objekt.
+
+Du kan också ta bort, duplicera och avpublicera en landningssida.
+
+>[!CAUTION]
+>
+>Om du avpublicerar en landningssida som det refereras till i ett opublicerat meddelande, kan meddelandet inte publiceras förrän landningssidan publiceras igen. Om meddelandet redan har publicerats bryts länken till landningssidan och en felsida visas.
+
+Klicka på de tre punkterna bredvid en landningssida för att välja önskad åtgärd.
+
+![](assets/lp_access-list-actions.png)
+
+>[!NOTE]
+>
+>Du kan inte ta bort en publicerad landningssida. Om du vill ta bort den måste du först avpublicera den.
 
 ## Skapa en landningssida {#create-landing-page}
 
@@ -43,13 +53,9 @@ Stegen för att skapa en landningssida är följande.
 
    ![](assets/lp_create-lp-details.png)
 
-1. Välj en förinställning.
+1. Välj en förinställning. Lär dig hur du skapar förinställningar för landningssidor i [det här avsnittet](../configuration/lp-configuration.md#lp-create-preset).
 
    ![](assets/lp_create-lp-presets.png)
-
-   >[!NOTE]
-   >
-   >Om du vill definiera förinställningar för landningssidor kontaktar du Adobe eller [Adobe kundtjänstsupport](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
 
 1. Klicka på **[!UICONTROL Create]**.
 
@@ -75,7 +81,7 @@ Följ stegen nedan för att definiera inställningarna för den primära sidan.
 
    ![](assets/lp_open-designer.png)
 
-1. Definiera URL-adressen till landningssidan. Den första delen av URL:en kräver att domändelegeringen utförs. Den är förfylld och kan inte redigeras via användargränssnittet. Kontakta din kontorepresentant på Adobe eller [Adobe kundtjänstsupport](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
+1. Definiera URL-adressen till landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan. [Läs mer](../configuration/lp-configuration.md#lp-subdomains)
 
    >[!CAUTION]
    >
@@ -113,7 +119,7 @@ Följ stegen nedan för att definiera inställningar för undersidan.
 
 1. Redigera innehållet på sidan med hjälp av innehållsdesignern. Lär dig definiera innehåll för landningssidor [här](design-lp.md).
 
-1. Definiera URL-adressen till landningssidan. Den första delen av URL:en kräver att domändelegeringen utförs. Den är förfylld och kan inte redigeras via användargränssnittet. Kontakta din kontorepresentant på Adobe eller [Adobe kundtjänstsupport](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
+1. Definiera URL-adressen till landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan. [Läs mer](../configuration/lp-configuration.md#lp-subdomains)
 
    >[!CAUTION]
    >
@@ -127,7 +133,7 @@ När inställningarna för landningssidan och innehållet har definierats kan du
 
 >[!CAUTION]
 >
->Du måste ha testprofiler tillgängliga för att kunna förhandsgranska meddelanden och skicka korrektur. Lär dig hur [skapa testprofiler](../building-journeys/creating-test-profiles.md).
+>Du måste ha testprofiler tillgängliga för att kunna förhandsgranska dina meddelanden och skicka korrektur. Lär dig hur [skapa testprofiler](../segment/creating-test-profiles.md).
 
 1. I landningssidans gränssnitt klickar du på **[!UICONTROL Preview & test]** för att komma åt valet av testprofil.
 
@@ -141,7 +147,7 @@ När inställningarna för landningssidan och innehållet har definierats kan du
 
    ![](assets/lp_test-profiles.png)
 
-   Stegen för att välja testprofiler är desamma som när du testar ett meddelande. De beskrivs i [det här avsnittet](../messages/preview.md#select-test-profiles).
+   Stegen för att välja testprofiler är desamma som när du testar ett meddelande. De beskrivs i [det här avsnittet](../design/preview.md#select-test-profiles).
 
 1. Välj **[!UICONTROL Preview]** och klicka **[!UICONTROL Open preview]** för att testa landningssidan.
 
@@ -155,7 +161,7 @@ När inställningarna för landningssidan och innehållet har definierats kan du
 
 ## Kontrollera aviseringar {#check-alerts}
 
-När du skapar en landningssida varnar du om du behöver vidta viktiga åtgärder innan du publicerar.
+När du skapar en landningssida varnar du om när du måste vidta viktiga åtgärder innan du publicerar.
 
 Varningar visas högst upp till höger på skärmen, som visas nedan:
 
@@ -189,7 +195,7 @@ Två typer av varningar kan inträffa:
 
 >[!CAUTION]
 >
-> To be able to publish your message, you need to resolve all **error** alerts.
+> To be able to publish your message, you must resolve all **error** alerts.
 -->
 
 ## Publicera landningssidan {#publish-landing-page}
@@ -204,9 +210,9 @@ När landningssidan är klar kan du publicera den för att göra den tillgängli
 
 När landningssidan har publicerats läggs den till i listan över landningssidor med **[!UICONTROL Published]** status.
 
-Den är nu klar att användas i en [!DNL Journey Optimizer] [message](../messages/create-message.md) som skickas via en [resa](../building-journeys/journey.md).
+Den är nu klar att användas i en [!DNL Journey Optimizer] [message](../messages/get-started-content.md) som skickas via en [resa](../building-journeys/journey.md).
 
 >[!NOTE]
 >
->Ni kan övervaka hur landningssidan påverkas genom specifika rapporter. [Läs mer](lp-report.md)
+>Ni kan övervaka hur landningssidan påverkas genom specifika rapporter. [Läs mer](../reports/lp-report-live.md)
 

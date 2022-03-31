@@ -1,5 +1,5 @@
 ---
-keywords: Journey Optimizer;home;popular topics
+keywords: Journey Optimizer;home;populära topics
 title: Journey Optimizer produktdokumentation
 description: Adobe Journey Optimizer produkthjälpcenter
 feature: Overview
@@ -7,7 +7,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 11%
@@ -29,7 +29,7 @@ ht-degree: 11%
     <div>
       <a href="using/start/get-started.md">Vad är [!DNL Journey Optimizer]?</a>
     </div>
-    <p>Discover key features and use cases
+    <p>Upptäck viktiga funktioner och användningsområden
     <p>
     <div>
       <a href="using/rn/release-notes.md">Versionsinformation</a>
@@ -44,7 +44,7 @@ ht-degree: 11%
     <p>
     <p>
     <div>
-      <a href="using/messages/design-emails.md">Designa e-postinnehåll</a>
+      <a href="using/design/design-emails.md">Designa e-postinnehåll</a>
     </div>
     <p>
     Designa ett nytt e-postmeddelande eller importera ett befintligt HTML-innehåll
@@ -57,7 +57,7 @@ ht-degree: 11%
     <div>
     <a href="using/building-journeys/journeys-uc.md">Skapa din första resa</a>
     </div>
-    <p>Learn how to build and execute a journey
+    <p>Lär dig hur du bygger och utför en resa
     <p>
     <div>
     <a href="using/configuration/get-started-configuration.md">Konfigurera [!DNL Journey Optimizer]</a>
@@ -116,12 +116,12 @@ ht-degree: 11%
       <a href="using/building-journeys/journey-gs.md">Resor</a>
     </li>
     <li>
-      <a href="using/messages/create-message.md">Meddelanden</a>
+      <a href="using/messages/get-started-content.md">Meddelanden</a>
     </li>
     <p>
-    <p>DECISION MANAGEMENT</p>
+    <p>BESLUTSHANTERING</p>
     <li>
-      <a href="using/offers/get-started/starting-offer-decisioning.md">Offers</a>
+      <a href="using/offers/get-started/starting-offer-decisioning.md">Erbjudanden</a>
     </li>
      <li>
       <a href="using/offers/offer-library/key-steps.md">Komponenter</a>
@@ -129,7 +129,7 @@ ht-degree: 11%
     <p>
     <p>INNEHÅLLSHANTERING</p>
     <li>
-      <a href="using/messages/assets-essentials.md">Assets</a>
+      <a href="using/design/assets-essentials.md">Assets</a>
     </li>
     <p>
     <p>DATAHANTERING</p>
@@ -146,7 +146,7 @@ ht-degree: 11%
       <a href="https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/monitor-data-ingestion.html" target="_blank">Övervakning</a>
     </li>
     <p>
-    <p>CONNECTIONS</p>
+    <p>ANSLUTNINGAR</p>
     <li>
       <a href="using/start/get-started-sources.md">Källor</a>
     </li>
@@ -156,10 +156,10 @@ ht-degree: 11%
       <a href="using/segment/about-segments.md">Segment</a>
     </li>
      <li>
-      <a href="using/start/get-started-profiles.md">Profiler</a>
+      <a href="using/segment/get-started-profiles.md">Profiler</a>
     </li>
     <li>
-      <a href="using/start/get-started-identity.md">Identity</a>
+      <a href="using/segment/get-started-identity.md">Identitet</a>
     </li>
     <p>
     <p>ADMINISTRATION</p>
@@ -170,7 +170,7 @@ ht-degree: 11%
       <a href="using/configuration/get-started-configuration.md">Kanaler</a>
     </li>
      <li>
-      <a href="using/administration/sandboxes.md">Sandboxes</a>
+      <a href="using/administration/sandboxes.md">Sandlådor</a>
     </li>
   </td>
 </tr>

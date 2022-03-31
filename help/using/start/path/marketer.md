@@ -3,7 +3,7 @@ title: Journey Optimizer Get started for Marketers
 description: Lär dig mer om hur du arbetar med Journey Optimizer som resande
 level: Intermediate
 exl-id: 34304142-3ee8-4081-94b9-e914968c75ba
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Se följande avsnitt för att konfigurera din första resa, lägga till erbjudan
 
 1. **Skapa segment**. Med Journey Optimizer kan ni skapa målgruppssegment direkt från **Segment** och utnyttja dem på era resor.  Läs mer om segment [på den här sidan](../../segment/about-segments.md). Upptäck hur man bygger segment [i det här exemplet](../../segment/creating-a-segment.md).
 
-1. **Skapa meddelanden**. Lär dig hur du skapar e-post- och push-meddelanden i Journey Optimizer [på den här sidan](../../messages/create-message.md).
+1. **Skapa meddelanden**. Lär dig hur du skapar e-post- och push-meddelanden i Journey Optimizer [på den här sidan](../../messages/get-started-content.md).
 
    ![](../assets/email_designer_7.png)
 
@@ -28,13 +28,13 @@ Se följande avsnitt för att konfigurera din första resa, lägga till erbjudan
 
    ![](../assets/perso_ee2.png)
 
-1. **Skapa och hantera resurser**. [!DNL Adobe Experience Manager Assets Essentials] har ett enda centraliserat arkiv med resurser som du kan använda för att fylla i dina meddelanden. Läs mer [i det här avsnittet](../../messages/assets-essentials.md).
+1. **Skapa och hantera resurser**. [!DNL Adobe Experience Manager Assets Essentials] har ett enda centraliserat arkiv med resurser som du kan använda för att fylla i dina meddelanden. Läs mer [i det här avsnittet](../../design/assets-essentials.md).
 
 1. **Lägg till erbjudanden**. Använd [!DNL Journey Optimizer] för att leverera det bästa erbjudandet och upplevelsen till era kunder via alla kontaktytor vid rätt tidpunkt. När ni väl utformat er målgrupp kan ni inrikta er på personaliserade erbjudanden. Läs mer om beslutshantering [i det här avsnittet](../../offers/get-started/starting-offer-decisioning.md).
 
    ![](../assets/offers-e2e-offers-displayed.png)
 
-1. **Testa och validera dina meddelanden**. När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du infogade [personaliserat innehåll](../../personalization/personalize.md)kommer du att kunna kontrollera hur det här innehållet visas i meddelandet, med hjälp av testprofildata. Dessutom kan du **Litmus** konto till [!DNL Journey Optimizer] för att omedelbart förhandsgranska **e-poståtergivning** i vanliga e-postklienter. Sedan kan ni se till att e-postinnehållet ser bra ut och fungerar som det ska i alla inkorgar. Lär dig hur du testar och validerar meddelanden [i det här avsnittet](../../messages/preview.md).
+1. **Testa och validera dina meddelanden**. När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du infogade [personaliserat innehåll](../../personalization/personalize.md)kommer du att kunna kontrollera hur det här innehållet visas i meddelandet, med hjälp av testprofildata. Dessutom kan du **Litmus** konto till [!DNL Journey Optimizer] för att omedelbart förhandsgranska **e-poståtergivning** i vanliga e-postklienter. Sedan kan ni se till att e-postinnehållet ser bra ut och fungerar som det ska i alla inkorgar. Lär dig hur du testar och validerar meddelanden [i det här avsnittet](../../design/preview.md).
 
 1. **Designa kundresor** för att leverera personaliserade, sammanhangsbaserade upplevelser. [!DNL Journey Optimizer] gör att du kan skapa användningsfall för realtidssamordning med hjälp av kontextuella data som lagras i händelser eller datakällor. Utforma avancerade scenarier i flera steg med följande funktioner:
 
@@ -50,4 +50,4 @@ Se följande avsnitt för att konfigurera din första resa, lägga till erbjudan
 
    Lär dig utforma och genomföra resor [i det här avsnittet](../../building-journeys/journey-gs.md)
 
-1. **Övervaka meddelanden och resor**. För att vara säker på att dina meddelanden kan köras, skickas och levereras, [!DNL Journey Optimizer] har funktioner för att övervaka de meddelanden som för närvarande är publicerade och utlösta. Lär dig övervaka prestanda [i det här avsnittet](../../messages/message-monitoring.md).
+1. **Övervaka meddelanden och resor**. För att vara säker på att dina meddelanden kan köras, skickas och levereras, [!DNL Journey Optimizer] har funktioner för att övervaka de meddelanden som för närvarande är publicerade och utlösta. Lär dig övervaka prestanda [i det här avsnittet](../../reports/message-monitoring.md).

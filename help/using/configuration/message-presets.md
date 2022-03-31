@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '2067'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Med [!DNL Journey Optimizer]kan du konfigurera meddelandeförinställningar som 
 >
 > * Konfigurationen av meddelandeförinställningar är begränsad till Reseadministratörer. [Läs mer](../administration/ootb-product-profiles.md#journey-administrator)
 >
-> * Du måste konfigurera e-post och [Push-konfiguration](../messages/push-configuration.md) steg innan du skapar meddelandeförinställningar.
+> * Du måste konfigurera e-post och [Push-konfiguration](../configuration/push-configuration.md) steg innan du skapar meddelandeförinställningar.
 
 
 När meddelandeförinställningarna har konfigurerats kan du välja dem när du skapar meddelanden från **[!UICONTROL Presets]** lista.
@@ -106,11 +106,47 @@ I **INFORMATION OM UNDERDOMÄN- OCH IP-POOL** måste du
 
 1. Välj den IP-pool som ska associeras med förinställningen. [Läs mer](ip-pools.md)
 
+### List-Unsubscribe {#list-unsubscribe}
+
+Vid [välja en underdomän](#subdomains-and-ip-pools) från listan, **[!UICONTROL Enable List-Unsubscribe]** visas.
+
+![](assets/preset-list-unsubscribe.png)
+
+Det här alternativet är aktiverat som standard.
+
+Om du låter det vara aktiverat inkluderas en länk för att avbryta prenumerationen automatiskt i e-posthuvudet, till exempel:
+
+![](assets/preset-list-unsubscribe-header.png)
+
+Om du inaktiverar det här alternativet visas ingen länk för att avbryta prenumerationen i e-posthuvudet.
+
+Länken för att avbryta prenumerationen består av två element:
+
+* An **avbeställ e-postadress** som alla avbeställningar skickas till.
+
+   I [!DNL Journey Optimizer], är e-postadressen för avanmälan standard **[!UICONTROL Mailto (unsubscribe)]** som visas i meddelandeförinställningen, baserat på [vald underdomän](#subdomains-and-ip-pools).
+
+   ![](assets/preset-list-unsubscribe-mailto.png)
+
+* The **avbeställ URL**, vilket är URL:en till landningssidan där användaren omdirigeras när prenumerationen har upphört.
+
+   Om du lägger till en [länk för avanmälan med ett klick](../messages/consent.md#one-click-opt-out) för ett meddelande som skapas med den här förinställningen blir avanmälnings-URL:en den URL som definierats för länken med ett klick.
+
+   ![](assets/preset-list-unsubscribe-opt-out-url.png)
+
+   >[!NOTE]
+   >
+   >Om du inte lägger till en länk för avanmälan med ett enda klick i meddelandeinnehållet visas ingen landningssida för användaren.
+
+Läs mer om hur du lägger till en länk för att avbryta prenumerationen i dina meddelanden i [det här avsnittet](../messages/consent.md#unsubscribe-header).
+
+<!--Select the **[!UICONTROL Custom List-Unsubscribe]** option to enter your own Unsubscribe URL and/or your own Unsubscribe email address.-->
+
 ### URL-spårning{#url-tracking}
 
 För att identifiera var och varför en person klickade på länken kan du lägga till UTM-parametrar för URL-spårning i dialogrutan  **[!UICONTROL URL TRACKING CONFIGURATION (web analytics)]** -avsnitt.
 
-Utifrån de parametrar som du anger används en UTM-kod i slutet av den URL som finns i meddelandeinnehållet. Sedan kan du jämföra resultaten i ett webbanalysverktyg som Adobe Analytics. <!--For example: https://yourwebsite.com/?utm_source=Adobe_CJM&utm_medium=email&utm_campaign=cart_abandonment_journey... In this example, the UTM code identifies the link as an email from an abandonment cart journey. You can either select a journey/message attribute from a predefined list, or enter your own text.-->
+Utifrån de parametrar som du anger används en UTM-kod i slutet av den URL som finns i meddelandeinnehållet. Sedan kan du jämföra resultaten med ett webbanalysverktyg som Google Analytics.
 
 ![](assets/preset-url-tracking.png)
 
@@ -130,9 +166,11 @@ Om du vill konfigurera en UTM-parameter kan du ange önskade värden direkt i **
 
 ### Huvudparametrar{#email-header}
 
-I **[!UICONTROL HEADER PARAMETERS]** anger du de e-postadresser som är kopplade till meddelanden som skickas med den förinställningen. Dessa e-postadresser måste använda den aktuella [delegerad underdomän](about-subdomain-delegation.md).
+I **[!UICONTROL HEADER PARAMETERS]** anger du avsändarens namn och e-postadresser som är kopplade till den typ av meddelanden som skickas med den förinställningen.
 
-Du måste konfigurera följande e-postadresser
+>[!CAUTION]
+>
+>E-postadresserna måste använda den valda [delegerad underdomän](about-subdomain-delegation.md).
 
 * **[!UICONTROL Sender name]**: Avsändarens namn, till exempel ditt varumärkes namn.
 
@@ -143,7 +181,6 @@ Du måste konfigurera följande e-postadresser
 * **[!UICONTROL Reply to (email)]**: E-postadressen som ska användas när mottagaren klickar på **Svara** i klientprogramvaran för e-post. Du måste använda en adress som är definierad för den delegerade underdomänen (till exempel *reply@marketing.luma.com*), annars kommer e-postmeddelandena att tas bort.
 
 * **[!UICONTROL Error email]**: Alla fel som genereras av Internet-leverantörer efter några dagar efter att e-post har levererats (asynkrona studsar) tas emot på den här adressen.
-
 
 ![](assets/preset-header.png)
 
@@ -177,7 +214,7 @@ Följ stegen nedan för att definiera de push-inställningar som är kopplade ti
 
 ![](assets/preset-push.png)
 
-Mer information om hur du konfigurerar miljön för att skicka push-meddelanden finns i [det här avsnittet](../messages/push-gs.md).
+Mer information om hur du konfigurerar miljön för att skicka push-meddelanden finns i [det här avsnittet](../configuration/push-gs.md).
 
 <!--
 ## Configure SMS settings {#configure-sms-settings}

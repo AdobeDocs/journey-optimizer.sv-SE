@@ -3,7 +3,7 @@ title: Journey Optimizer Get Started for Data Engineer
 description: Som datatekniker får du lära dig mer om hur du arbetar med Journey Optimizer
 level: Intermediate
 exl-id: 8beaafc2-e68d-46a1-be5c-e70892575bfb
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 2%
@@ -25,7 +25,7 @@ Lär dig hur **identifiera data och skapa schema och datauppsättning** för att
 
 Steg för att skapa ett identitetsnamnutrymme och en datauppsättning som är aktiverad för profiler samt testprofiler beskrivs i avsnitten nedan:
 
-1. **Skapa ett identitetsnamnutrymme**. I Adobe [!DNL Journey Optimizer], **Identiteter** länka konsumenter mellan olika enheter och kanaler. Resultatet blir ett identitetsdiagram. Det länkade identitetsdiagrammet används för att personalisera upplevelser baserat på interaktioner över alla era affärskontaktytor.  Läs mer om identiteter och identitetsnamnutrymmen [på den här sidan](../get-started-identity.md).
+1. **Skapa ett identitetsnamnutrymme**. I Adobe [!DNL Journey Optimizer], **Identiteter** länka konsumenter mellan olika enheter och kanaler. Resultatet blir ett identitetsdiagram. Det länkade identitetsdiagrammet används för att personalisera upplevelser baserat på interaktioner över alla era affärskontaktytor.  Läs mer om identiteter och identitetsnamnutrymmen [på den här sidan](../../segment/get-started-identity.md).
 
 1. **Skapa ett schema** och aktivera det för profiler. Ett schema är en uppsättning regler som representerar och validerar datastrukturen och dataformatet. På en hög nivå ger scheman en abstrakt definition av ett objekt i verkligheten (till exempel en person) och ger en översikt över vilka data som ska inkluderas i varje instans av objektet (till exempel förnamn, efternamn, födelsedag o.s.v.).  Läs mer om scheman [på den här sidan](../get-started-schemas.md).
 
@@ -33,7 +33,7 @@ Steg för att skapa ett identitetsnamnutrymme och en datauppsättning som är ak
 
 1. **Konfigurera källkopplingar**. Med Adobe Journey Optimzer kan data hämtas från externa källor samtidigt som du kan strukturera, märka och förbättra inkommande data med hjälp av plattformstjänster. Du kan importera data från en mängd olika källor, till exempel Adobe-program, molnbaserade lager, databaser och många andra. Läs mer om källanslutningar [på den här sidan](../get-started-sources.md).
 
-1. **Skapa testprofiler**. Testprofiler krävs när du använder [testläge](../../building-journeys/testing-the-journey.md) på en resa och [förhandsgranska och testa dina meddelanden](../../messages/preview.md) före sändning. Upptäck steg för att skapa testprofiler [på den här sidan](../../building-journeys/creating-test-profiles.md).
+1. **Skapa testprofiler**. Testprofiler krävs när du använder [testläge](../../building-journeys/testing-the-journey.md) på en resa och [förhandsgranska och testa dina meddelanden](../../design/preview.md) före sändning. Upptäck steg för att skapa testprofiler [på den här sidan](../../segment/creating-test-profiles.md).
 
 
 För att kunna skicka meddelanden under resor måste du dessutom konfigurera **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** och **[!UICONTROL Actions]**. Läs mer [i det här avsnittet](../../configuration/about-data-sources-events-actions.md).

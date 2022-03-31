@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: ec15e700-7659-4dbf-8446-6534ea48c5c8
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 2398bbad3949eae7b19ad36064ff767278e4fcf2
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,15 @@ Använd **[!UICONTROL Global report]** för att mäta effekten av resor och leve
 
 * Om du vill rikta in dig på en resa eller leveranser i samband med en resa, från **[!UICONTROL Journeys]** -menyn, få åtkomst till din resa och klicka på **[!UICONTROL Global report]** ikon. Du kan sedan hitta resan, e-postmeddelandet och penseln **[!UICONTROL Global report]**.
 
+   ![](assets/report_6.png)
+
 * Om du vill ange en viss leverans som mål går du till **[!UICONTROL Global view]** i **[!UICONTROL Executions]** fliken med dina meddelanden väljer du **[!UICONTROL Global Report]** på den avancerade menyn för den valda leveransen.
+
+   ![](assets/report_4.png)
+
+* Om du vill växla från **[!UICONTROL Global report]** till **[!UICONTROL Live report]** för leverans klickar du **[!UICONTROL Live view]** i flikväxlaren.
+
+   ![](assets/report_5.png)
 
 ## Anpassa kontrollpanelen {#modify-dashboard}
 
@@ -34,6 +42,8 @@ Varje rapportkontrollpanel kan ändras genom att tidsperioden ändras och widget
    ![](assets/report_modify_1.png)
 
 1. Välj om du vill utesluta testhändelser från dina rapporter med hjälp av alternativfältet. Mer information om testhändelser finns i [den här sidan](../building-journeys/testing-the-journey.md).
+
+   Observera att **[!UICONTROL Exclude test events]** alternativet är bara tillgängligt för reserapporter.
 
    ![](assets/report_modify_2.png)
 

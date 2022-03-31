@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 8a859af9ad09ca3f240ff6f355d4e5f34d2e4eac
 workflow-type: tm+mt
-source-wordcount: '1721'
+source-wordcount: '1752'
 ht-degree: 6%
 
 ---
@@ -68,6 +68,11 @@ Här är de viktigaste stegen för att skicka meddelanden via resor:
    ![](assets/jo-dynamic_report_journey_12.png)
 
 ## Ändra egenskaper {#change-properties}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_properties"
+>title="Resans egenskaper"
+>abstract="Du kan ändra namnet på resan, lägga till en beskrivning, tillåta återinträde, välja start- och slutdatum och definiera en timeout och felvaraktighet om du är administratör."
 
 Klicka på pennikonen i det övre högra hörnet för att komma åt resans egenskaper.
 

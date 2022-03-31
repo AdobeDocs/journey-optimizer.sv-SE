@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 851d988a-2582-4c30-80f3-b881d90771be
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 2%
@@ -225,11 +225,11 @@ De detaljerade stegen för att skapa och konfigurera ett beslut beskrivs i [det 
 
 Nu när ditt beslut är klart kan du infoga det i ett e-postmeddelande. För att göra detta, följ nedanstående steg:
 
-1. Skapa din e-post och öppna sedan [E-postdesigner](../../using/messages/design-emails.md) för att konfigurera innehållet.
+1. Skapa din e-post och öppna sedan [E-postdesigner](../../using/design/design-emails.md) för att konfigurera innehållet.
 
 1. Lägg till en strukturkomponent från den vänstra paletten.
 
-1. Lägg till en **[!UICONTROL Offer decision]** innehållskomponent. Lär dig hur du använder innehållskomponenter i [det här avsnittet](../../using/messages/content-components.md).
+1. Lägg till en **[!UICONTROL Offer decision]** innehållskomponent. Lär dig hur du använder innehållskomponenter i [det här avsnittet](../../using/design/content-components.md).
 
    ![](assets/offers-e2e-decision-component.png)
 
@@ -255,7 +255,7 @@ Nu kan du se alla personaliserade erbjudanden och reserverbjudandet visualiseras
 
 ![](assets/offers-e2e-offers-displayed.png)
 
-Använd **[!UICONTROL Offers]** -avsnittet eller innehållskomponentpilarna (höger- och vänsterpilar) för att bläddra bland data. Du kan även visa olika erbjudanden som ingår i beslutet med en kundprofil. Läs mer i [det här avsnittet](../../using/messages/deliver-personalized-offers.md#preview-offers-in-email).
+Använd **[!UICONTROL Offers]** -avsnittet eller innehållskomponentpilarna (höger- och vänsterpilar) för att bläddra bland data. Du kan även visa olika erbjudanden som ingår i beslutet med en kundprofil. Läs mer i [det här avsnittet](../../using/design/deliver-personalized-offers.md#preview-offers-in-email).
 
 När du har sparat dina ändringar och när meddelandet har publicerats är dina erbjudanden klara att visas för de relevanta profilerna när du skickar meddelandet som en del av en resa.
 
@@ -265,7 +265,7 @@ När du har sparat dina ändringar och när meddelandet har publicerats är dina
 
 **Relaterade ämnen:**
 
-* Lär dig hur du kontrollerar förhandsgranskningen av meddelandet i [det här avsnittet](../../using/messages/preview.md#preview-your-messages).
+* Lär dig hur du kontrollerar förhandsgranskningen av meddelandet i [det här avsnittet](../../using/design/preview.md#preview-your-messages).
 
 * Lär dig hur du publicerar meddelanden i [det här avsnittet](../../using/messages/publish-manage-message.md).
 

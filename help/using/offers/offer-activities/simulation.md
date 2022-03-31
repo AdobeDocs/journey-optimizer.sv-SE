@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: da9e898b-8e5d-43da-9226-5c9ccb78e174
-source-git-commit: 61d716fcc1394a32ca7cb9b4c13d28b073135592
+source-git-commit: 296c17048f0d3dbabd210b0522d061028d5890dc
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Om du vill komma åt den här funktionen väljer du **[!UICONTROL Simulation]** 
 
 ## Välj testprofiler {#select-test-profiles}
 
-Först måste du välja de testprofiler som du ska använda för simulering. Läs mer om testprofiler i [den här sidan](../../building-journeys/creating-test-profiles.md).
+Först måste du välja de testprofiler som du ska använda för simulering. Läs mer om testprofiler i [den här sidan](../../segment/creating-test-profiles.md).
 
 1. Klicka på **[!UICONTROL Manage profile]**.
 
@@ -47,7 +47,7 @@ Först måste du välja de testprofiler som du ska använda för simulering. Lä
 
    >[!NOTE]
    >
-   >Ett identitetsnamnutrymme definierar kontexten för en identifierare, till exempel en e-postadress eller ett CRM-ID. Läs mer om Adobe Experience Platform identitetsnamnutrymmen [i det här avsnittet](../../start/get-started-identity.md){target=&quot;_blank&quot;}.
+   >Ett identitetsnamnutrymme definierar kontexten för en identifierare, till exempel en e-postadress eller ett CRM-ID. Läs mer om Adobe Experience Platform identitetsnamnutrymmen [i det här avsnittet](../../segment/get-started-identity.md){target=&quot;_blank&quot;}.
 
 1. Ange identitetsvärdet och klicka på **[!UICONTROL View]** för att lista tillgängliga profiler.
 

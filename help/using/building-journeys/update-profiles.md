@@ -6,14 +6,19 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 8b2b2d1e-9bd1-439d-a15e-acdbab387c4b
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 8a859af9ad09ca3f240ff6f355d4e5f34d2e4eac
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
 
 # Uppdatera profil {#update-profile}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_update_profiles"
+>title="Uppdatera profilaktivitet"
+>abstract="Med aktiviteten Uppdatera profil kan du uppdatera en befintlig Adobe Experience Platform-profil med information som kommer från händelsen, en datakälla eller med ett specifikt värde."
 
 The **[!UICONTROL Update Profile]** kan du uppdatera en befintlig Adobe Experience Platform-profil med information från händelsen, en datakälla eller med ett specifikt värde.
 
@@ -32,7 +37,7 @@ I testläge simuleras inte profiluppdateringen. Uppdateringen utförs på testpr
 
 Det är bara testprofiler som kan gå in på en resa i testläge. Du kan antingen skapa en ny testprofil eller omvandla en befintlig profil till en testprofil. I Adobe Experience Platform kan du uppdatera profilattribut via csv-filimport eller API-anrop. En enklare metod är att använda en **Uppdatera profil** Åtgärdsaktivitet och ändra testprofilens booleska fält från false till true.
 
-Mer information om hur du omvandlar en befintlig profil till en testprofil finns i [section](../building-journeys/creating-test-profiles.md#create-test-profiles-csv).
+Mer information om hur du omvandlar en befintlig profil till en testprofil finns i [section](../segment/creating-test-profiles.md#create-test-profiles-csv).
 
 ## Använda profiluppdateringen
 

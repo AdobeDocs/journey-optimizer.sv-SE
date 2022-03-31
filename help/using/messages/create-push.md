@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 2ebbcd7d-dcfc-4528-974d-6230fc0dca3d
-source-git-commit: b2b9d52ea5f76a4c145542600597f37d6ef00161
+source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
 workflow-type: tm+mt
 source-wordcount: '1403'
 ht-degree: 10%
@@ -25,7 +25,7 @@ Push-meddelanden hjälper dig att nå mobilappsanvändare när som helst, särsk
 
 [!DNL Journey Optimizer] har stöd för push-meddelanden och hjälper dig att skicka mycket relevanta meddelanden med branschledande dataöverföringshastigheter. Push-meddelanden kan omfatta personalisering och resebaserade sammanhang för att utnyttja de datainsikter ert varumärke har med Adobe Experience Cloud.
 
-En gång [skapade ett meddelande](create-message.md)klickar du på **[!UICONTROL Push Notification]** för att definiera inställningar och innehåll för push-meddelandet.
+En gång [skapade ett meddelande](get-started-content.md)klickar du på **[!UICONTROL Push Notification]** för att definiera inställningar och innehåll för push-meddelandet.
 
 ![](assets/create-content-push.png)
 
@@ -68,7 +68,7 @@ Det finns två alternativ. Du kan:
 
 * Använd **[!UICONTROL Add media]** knapp för att välja en resurs i **[!DNL Adobe Experience Manager Assets Essentials]**.
 
-   Lär dig använda **[!DNL Adobe Experience Manager Assets Essentials]** in [den här sidan](assets-essentials.md).
+   Lär dig använda **[!DNL Adobe Experience Manager Assets Essentials]** in [den här sidan](../design/assets-essentials.md).
 
 * Eller ange URL:en för mediet i **[!UICONTROL Add media]** fält. I så fall kan du lägga till personalisering i URL:en.
 
@@ -102,7 +102,7 @@ Använd **[!UICONTROL Custom data]** för att lägga till nyckelvärdepar.
 
 ## Anpassade data
 
-I **[!UICONTROL Custom data]** kan du lägga till anpassade variabler i nyttolasten, beroende på din mobilprogramkonfiguration. Mer information om hur du ställer in push-meddelanden i Adobe Experience Platform och Adobe Launch finns i [det här avsnittet](push-gs.md)
+I **[!UICONTROL Custom data]** kan du lägga till anpassade variabler i nyttolasten, beroende på din mobilprogramkonfiguration. Mer information om hur du ställer in push-meddelanden i Adobe Experience Platform och Adobe Launch finns i [det här avsnittet](../configuration/push-gs.md)
 
 ## Avancerade alternativ {#advanced-options-push}
 
@@ -127,6 +127,6 @@ Du kan konfigurera **[!UICONTROL Advanced options]** för ditt push-meddelande. 
 * [Understand push notification flow](push-gs.md)
 -->
 
-* [Konfigurera push-kanal](push-gs.md)
-* [Skapa ett nytt meddelande](create-message.md)
+* [Konfigurera push-kanal](../configuration/push-gs.md)
+* [Skapa ett nytt meddelande](get-started-content.md)
 * [Lägg till ett meddelande i en resa](../building-journeys/journeys-message.md)

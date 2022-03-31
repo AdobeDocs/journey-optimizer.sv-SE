@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
 workflow-type: tm+mt
 source-wordcount: '911'
 ht-degree: 1%
@@ -21,7 +21,7 @@ Med [!DNL Journey Optimizer]kan du övervaka alla e-postadresser som automatiskt
 * Adresserar som konsekvent studsar utan extra kostnad och kan påverka e-postens anseende negativt om du fortsätter att inkludera dem i dina leveranser.
 * Mottagare som skickar skräppost av något slag mot ett av dina e-postmeddelanden.
 
-Sådana e-postadresser samlas automatiskt in i Journey Optimizer **utelämningslista**. Läs mer om begrepp och användning i listan över inaktiveringar i [det här avsnittet](../messages/suppression-list.md).
+Sådana e-postadresser samlas automatiskt in i Journey Optimizer **utelämningslista**. Läs mer om begrepp och användning i listan över inaktiveringar i [det här avsnittet](../reports/suppression-list.md).
 
 ## Åtkomst till listan över inaktiveringar {#access-suppression-list}
 
@@ -49,7 +49,7 @@ Om du av misstag lägger till en e-postadress eller en domän manuellt, visas **
 
 ![](assets/suppression-list-delete.png)
 
-Om du tar bort en e-postadress eller en domän från listan över inaktiveringar kommer du att börja leverera till den här adressen eller domänen igen. Detta kan få allvarliga konsekvenser för din leveransförmåga och IP-anseende, vilket i slutänden kan leda till att din IP-adress eller sändande domän blockeras. Läs mer om hur viktigt det är att undertryckningslistan finns i [det här avsnittet](../messages/suppression-list.md).
+Om du tar bort en e-postadress eller en domän från listan över inaktiveringar kommer du att börja leverera till den här adressen eller domänen igen. Detta kan få allvarliga konsekvenser för din leveransförmåga och IP-anseende, vilket i slutänden kan leda till att din IP-adress eller sändande domän blockeras. Läs mer om hur viktigt det är att undertryckningslistan finns i [det här avsnittet](../reports/suppression-list.md).
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Undertryckningskategorierna är följande:
 
 >[!NOTE]
 >
->Läs mer om mjuka studsar och hårda studsar i [Leveransfel](../messages/suppression-list.md#delivery-failures) -avsnitt.
+>Läs mer om mjuka studsar och hårda studsar i [Leveransfel](../reports/suppression-list.md#delivery-failures) -avsnitt.
 
 För varje e-postadress som visas kan du även kontrollera **[!UICONTROL Type]** (e-post eller domän), **[!UICONTROL Reason]** för att utesluta den, vem som lagt till den och datumet/tiden som den lades till i listan över inaktiveringar.
 

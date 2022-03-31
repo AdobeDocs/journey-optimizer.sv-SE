@@ -6,7 +6,7 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: fe39570b-cbd2-4b24-af10-e12990a9a885
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -29,7 +29,7 @@ När du skapar ett e-postmeddelande kan du lägga till personalisering i **[!UIC
 
 I e-postdesignern kan du anpassa innehållet:
 
-* I **message**: klicka i ett textblock och klicka på **Anpassa** ikonen i det sammanhangsberoende verktygsfältet och välj **Infoga personalisering** fält. Mer information om gränssnittet för e-postdesignern finns i [section](../messages/design-emails.md).
+* I **message**: klicka i ett textblock och klicka på **Anpassa** ikonen i det sammanhangsberoende verktygsfältet och välj **Infoga personalisering** fält. Mer information om gränssnittet för e-postdesignern finns i [section](../design/design-emails.md).
 
    ![](assets/perso_insert.png)
 
@@ -53,7 +53,7 @@ Du kan också anpassa dina **Push-meddelanden** i följande fält:
 
 ![](assets/perso_push.png)
 
-Läs mer om konfigurationen för push-meddelanden i [det här avsnittet](../messages/push-gs.md).
+Läs mer om konfigurationen för push-meddelanden i [det här avsnittet](../configuration/push-gs.md).
 
 ## Anpassa era erbjudanden {#personalize-offers}
 

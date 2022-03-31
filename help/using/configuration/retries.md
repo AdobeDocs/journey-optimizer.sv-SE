@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 05564a99-da50-4837-8dfb-bb1d3e0f1097
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 1%
@@ -19,7 +19,7 @@ När ett e-postmeddelande misslyckas på grund av ett tillfälligt **Mjuk studsa
 
 >[!NOTE]
 >
->Läs mer om olika typer av fel i [Leveransfel](../messages/suppression-list.md#delivery-failures) -avsnitt.
+>Läs mer om olika typer av fel i [Leveransfel](../reports/suppression-list.md#delivery-failures) -avsnitt.
 
 I standardkonfigurationen är tröskelvärdet 5 fel.
 
@@ -45,7 +45,7 @@ Om standardvärdet 5 inte passar dina behov kan du ändra feltröskeln enligt st
 
    >[!CAUTION]
    >
-   >Värden över 10 kan orsaka problem med leveransens anseende, liksom IP-begränsning eller blockeringslistning från Internet-leverantörer. [Läs mer om leverans](../messages/deliverability.md)
+   >Värden över 10 kan orsaka problem med leveransens anseende, liksom IP-begränsning eller blockeringslistning från Internet-leverantörer. [Läs mer om leverans](../reports/deliverability.md)
 
 ## Tidsperiod för återförsök {#retry-duration}
 

@@ -3,7 +3,7 @@ title: Journey Optimizer Get Started for System Admin
 description: Som systemadministratör får du lära dig mer om hur du arbetar med Journey Optimizer
 level: Intermediate
 exl-id: 24f85ced-aa45-493f-b2c4-7c7b58351b38
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 2%
@@ -48,7 +48,7 @@ Följ stegen nedan:
 
 1. **Konfigurera meddelanden och kanaler**: definiera förinställningar, anpassa och anpassa inställningar för e-post och push-meddelanden
 
-   * Definiera **inställningar för push-meddelanden** i båda [!DNL Adobe Experience Platform] och [!DNL Adobe Experience Platform Launch]. [Läs mer](../../messages/push-gs.md)
+   * Definiera **inställningar för push-meddelanden** i båda [!DNL Adobe Experience Platform] och [!DNL Adobe Experience Platform Launch]. [Läs mer](../../configuration/push-gs.md)
 
    * Skapa **meddelandeförinställningar** för att konfigurera alla tekniska parametrar som krävs för e-post och push-meddelanden. [Läs mer](../../configuration/message-presets.md)
 
@@ -64,8 +64,8 @@ Följ stegen nedan:
 
 1. **Hantera inaktiveringen och tillåtelselista**: förbättra leveransen med dämpning och tillåtelselista
 
-   * A [utelämningslista](../../messages/suppression-list.md) består av e-postadresser som du vill utesluta från leveranserna, eftersom det kan skada ditt anseende och din leveransfrekvens om du skickar till dessa kontakter. Du kan övervaka alla e-postadresser som automatiskt har uteslutits från att skickas under en resa, till exempel ogiltiga adresser, adresser som alltid har mjuka studsar, och som kan påverka ditt e-postanseende negativt, samt mottagare som gör något slags skräppostklagomål mot något av dina e-postmeddelanden. Lär dig hantera [utelämningslista](../../configuration/manage-suppression-list.md) och [återförsök](../../configuration/retries.md).
+   * A [utelämningslista](../../reports/suppression-list.md) består av e-postadresser som du vill utesluta från leveranserna, eftersom det kan skada ditt anseende och din leveransfrekvens om du skickar till dessa kontakter. Du kan övervaka alla e-postadresser som automatiskt har uteslutits från att skickas under en resa, till exempel ogiltiga adresser, adresser som alltid har mjuka studsar, och som kan påverka ditt e-postanseende negativt, samt mottagare som gör något slags skräppostklagomål mot något av dina e-postmeddelanden. Lär dig hantera [utelämningslista](../../configuration/manage-suppression-list.md) och [återförsök](../../configuration/retries.md).
    ![](../assets/suppression-list-filtering-example.png)
 
-   * The [tillåtelselista](../../messages/allow-list.md) Med kan du ange enskilda e-postadresser eller domäner som ska vara de enda mottagarna eller domänerna som har behörighet att ta emot e-postmeddelanden som du skickar från en viss sandlåda. Detta kan förhindra att du av misstag skickar e-post till verkliga kundadresser när du befinner dig i en testmiljö. Lär dig hur [aktivera tillåtelselista](../../messages/allow-list.md).
-   Läs mer om hantering av slutprodukter i [!DNL Adobe Journey Optimizer] [på den här sidan](../../messages/deliverability.md).
+   * The [tillåtelselista](../../reports/allow-list.md) Med kan du ange enskilda e-postadresser eller domäner som ska vara de enda mottagarna eller domänerna som har behörighet att ta emot e-postmeddelanden som du skickar från en viss sandlåda. Detta kan förhindra att du av misstag skickar e-post till verkliga kundadresser när du befinner dig i en testmiljö. Lär dig hur [aktivera tillåtelselista](../../reports/allow-list.md).
+   Läs mer om hantering av slutprodukter i [!DNL Adobe Journey Optimizer] [på den här sidan](../../reports/deliverability.md).

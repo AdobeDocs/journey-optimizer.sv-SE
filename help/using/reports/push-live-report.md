@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: cab7c6da-aba7-439d-a638-79eb0c949837
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 2398bbad3949eae7b19ad36064ff767278e4fcf2
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ The push **[!UICONTROL Live report]** är uppdelat i olika widgetar som detaljer
 
 * **[!UICONTROL Engagements]**: Totalt antal öppningar och åtgärder för det här push-meddelandet, dvs om profilen öppnade push-meddelandet eller om någon klickade på en knapp.
 
-The **[!UICONTROL Sending metrics - by push]** table details the success of your delivery:
+The **[!UICONTROL Sending metrics - by push]** tabellen visar hur framgångsrik leveransen är:
 
 * **[!UICONTROL Targeted]**: Antal användarprofiler som kvalificerar sig som målprofiler för den här leveransen.
 
@@ -57,10 +57,13 @@ The **[!UICONTROL Sending metrics - by push]** table details the success of your
 
 * **[!UICONTROL Opens]**: Antal gånger ett meddelande öppnades i en leverans.
 
+![](assets/live_report_9.png)
+
+The **[!UICONTROL Error Reasons]** och **[!UICONTROL Exclude Reasons]** Med diagram och tabeller kan du se vilka fel och undantag som inträffade under leveransen.
+
+The **[!UICONTROL Sending statistics - Failed]** kan du se hur många fel och studsar som har inträffat.
+
 ![](assets/live_report_4.png)
 
 The **[!UICONTROL Tracking by platform]**, **[!UICONTROL Sending by platform]** och **[!UICONTROL Breakdown by platform]** diagram och tabeller visar hur bra push-meddelandena är beroende på vilket operativsystem som används.
 
-The **[!UICONTROL Sending statistics - Failed]** kan du se hur många fel och studs.
-
-The **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilket fel som inträffade under leveransen.

@@ -2,10 +2,10 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 22%
+source-wordcount: '1072'
+ht-degree: 21%
 
 ---
 
@@ -13,10 +13,13 @@ ht-degree: 22%
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
 
-
 ## Mars 2022 {#march-2022}
 
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Mars 22-utgåvan finns utförlig i dokumentationen. [Läs mer](release-notes.md)
 * En ny sida om hur du kommer igång med AI-modeller har lagts till i **Offer decisioning** med en detaljerad beskrivning av [autooptimeringsmodell](../offers/offer-library/ai-ranking.md#auto-optimization), den algoritm som används och mer teknisk information. [Läs mer](../offers/offer-library/ai-ranking.md)
+* Sidan där testprofilen skapades har flyttats till  **Segment, profiler och identitet** -avsnitt. [Läs mer](../segment/creating-test-profiles.md)
+* Ett exempel har lagts till om hur du lägger till ett uttryck som standardvärde i uttrycksredigeraren. [Läs mer](../building-journeys/expression/field-references.md#default-value)
+* The **Ändra de primära e-postadresserna** -avsnittet har uppdaterats för att återspegla ändringar i användargränssnittet. [Läs mer](../configuration/primary-email-addresses.md)
 
 ## Februari 2022 {#feb-2022}
 
@@ -32,7 +35,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Avsnittet som är relaterat till [!DNL Journey Optimizer] personaliseringsfunktionerna har omstrukturerats för att bli lättare att läsa. [Läs mer](../personalization/personalize.md)
 * The **Skapa meddelandeförinställningar** har delats upp i flera avsnitt för att bli tydligare. [Läs mer](../configuration/message-presets.md#create-message-preset)
 * The **Hantering av avanmälan** har klargjorts och omorganiserats något. [Läs mer](../messages/consent.md#opt-out-management)
-* The **Infoga länkar** -avsnittet har uppdaterats för att återspegla de senaste ändringarna i användargränssnittet. [Läs mer](../messages/message-tracking.md#insert-links)
+* The **Infoga länkar** -avsnittet har uppdaterats för att återspegla de senaste ändringarna i användargränssnittet. [Läs mer](../design/message-tracking.md#insert-links)
 
 ## November 2021 {#november-2021}
 
@@ -92,8 +95,8 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Ett avsnitt om tillgänglighetsfunktioner och genvägar har lagts till. [Läs mer](../start/user-interface.md#accessibility)
 * Ett avsnitt om metoder för segmentutvärdering har lagts till. [Läs mer](../segment/about-segments.md#evaluation-method-in-journey-optimizer)
 * Anteckningar har lagts till i avsnitten om Suppression-listan, Tillåtelselista och e-post, global/liverapport, för att ange att profiler med statusen Inaktiverad och Inte tillåten ska uteslutas från e-postrapporten Skickade mått. [Läs mer](../reports/email-global-report.md)
-* Ett nytt avsnitt har lagts till som beskriver hur du hämtar e-postadresser eller domäner som har uteslutits från en sändning eftersom de inte fanns på tillåtelselista. [Läs mer](../messages/allow-list.md#reporting)
-* Avsnittet Aktivera tillåtelselista har uppdaterats. [Läs mer](../messages/allow-list.md#enable-allow-list)
+* Ett nytt avsnitt har lagts till som beskriver hur du hämtar e-postadresser eller domäner som har uteslutits från en sändning eftersom de inte fanns på tillåtelselista. [Läs mer](../reports/allow-list.md#reporting)
+* Avsnittet Aktivera tillåtelselista har uppdaterats. [Läs mer](../reports/allow-list.md#enable-allow-list)
 * Avsnittet Monitor-meddelandets förinställningar har uppdaterats med orsaker till att förinställningarna inte kunde skapas och information om sådana fel. [Läs mer](../configuration/message-presets.md#monitor-message-presets)
 * Uppdaterat och ändrat namn på avsnittet för återförsöksperiod för att återspegla det faktum att du nu kan ändra inställningen för återförsök via e-post i meddelandeförinställningarna. [Läs mer](../configuration/retries.md#retry-duration)
 * Ett nytt avsnitt har lagts till som beskriver hur du infogar en länk för att välja bort ett enstaka klick i e-postinnehåll. [Läs mer](../messages/consent.md#one-click-opt-out-link)
@@ -111,8 +114,8 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Lagt till länkar till [!DNL Journey Optimizer] produktbeskrivning på startsidan
 * Lagt till självstudievideor på flera sidor
 * Optimerade startsidesbilder
-* Avsnittet&quot;Meddelandespårning&quot; har flyttats, förbättrats och bytt namn till&quot;Lägg till länkar och spåra meddelanden&quot;. [Läs mer](../messages/message-tracking.md)
-* Ett underavsnitt har lagts till på spegelsidor. [Läs mer](../messages/message-tracking.md#mirror-page)
+* Avsnittet&quot;Meddelandespårning&quot; har flyttats, förbättrats och bytt namn till&quot;Lägg till länkar och spåra meddelanden&quot;. [Läs mer](../design/message-tracking.md)
+* Ett underavsnitt har lagts till på spegelsidor. [Läs mer](../design/message-tracking.md#mirror-page)
 * Namnet på&quot;erbjudandeaktiviteter&quot; har ändrats till&quot;beslut&quot; och&quot;beslut&quot; till&quot;beslutsomfattningar&quot; i dokumentation och skärmar. [Läs mer](../offers/get-started/starting-offer-decisioning.md)
 * Nytt användningsfall: [personalisera ett meddelande med hjälpfunktioner](../personalization/personalization-use-case-helper-functions.md)
 * Dokumentationen för Läs segment har uppdaterats för att återspegla materialiserad segmentpåverkan. [Läs mer](../building-journeys/read-segment.md)
