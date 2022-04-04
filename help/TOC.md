@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att leverera sammankopplade, kontextuella och personaliserade upplevelser till kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: ecd793299284ed744a8b65c6518dd4c906496f90
+source-git-commit: 0fa8ba1dc16062ea1553f9978752f3c018cec4c6
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '972'
 ht-degree: 45%
 
 ---
@@ -258,7 +258,10 @@ ht-degree: 45%
          + [Om AI-modeller](using/offers/offer-library/ai-ranking.md)
          + [Skapa AI-modeller](using/offers/offer-library/create-ranking-strategies.md)
    + Skapa och hantera erbjudanden {#managing-offers-in-the-offer-library}
-      + [Skapa personaliserade erbjudanden](using/offers/offer-library/creating-personalized-offers.md)
+      + Konfigurera erbjudanden {#configure-offers}
+         + [Skapa personaliserade erbjudanden](using/offers/offer-library/creating-personalized-offers.md)
+         + [Lägg till representationer](using/offers/offer-library/add-representations.md)
+         + [Lägg till begränsningar](using/offers/offer-library/add-constraints.md)
       + [Skapa reserverbjudanden](using/offers/offer-library/creating-fallback-offers.md)
       + [Skapa samlingar](using/offers/offer-library/creating-collections.md)
    + Skapa och hantera beslut {#create-manage-activities}

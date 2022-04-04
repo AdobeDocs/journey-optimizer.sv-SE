@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: da9e898b-8e5d-43da-9226-5c9ccb78e174
-source-git-commit: 296c17048f0d3dbabd210b0522d061028d5890dc
+source-git-commit: 0fa8ba1dc16062ea1553f9978752f3c018cec4c6
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,17 @@ Om du vill komma åt den här funktionen väljer du **[!UICONTROL Simulation]** 
 
 ![](../assets/offers_simulation-tab.png)
 
+>[!NOTE]
+>
+>Eftersom simuleringen inte genererar någon beslutshändelse kan [capping](../offer-library/creating-personalized-offers.md#capping) antalet påverkas inte.
+
 <!--
 ➡️ [Discover this feature in video](#video)
 -->
 
 ## Välj testprofiler {#select-test-profiles}
 
-Först måste du välja de testprofiler som du ska använda för simulering. Läs mer om testprofiler i [den här sidan](../../segment/creating-test-profiles.md).
+Först måste du välja de testprofiler som du ska använda för simulering. Läs mer om testprofiler i [det här avsnittet](../../segment/creating-test-profiles.md).
 
 1. Klicka på **[!UICONTROL Manage profile]**.
 

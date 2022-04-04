@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4a53ea96-632a-41c7-ab15-b85b99db4f3e
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 0fa8ba1dc16062ea1553f9978752f3c018cec4c6
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 2%
+source-wordcount: '624'
+ht-degree: 4%
 
 ---
 
@@ -27,13 +27,12 @@ Listan över personaliserade erbjudanden finns på **[!UICONTROL Offers]** -meny
 
 ![](../assets/offers_list.png)
 
-## Skapa erbjudandet {#create-offer}
+## Skapa ett erbjudande {#create-offer}
 
 >[!CONTEXTUALHELP]
 >id="od_offer_attributes"
 >title="Om attribut för erbjudanden"
 >abstract="Med attribut för erbjudanden kan du koppla nyckelvärdepar till erbjudandet i rapporterings- och analyssyfte."
->additional-url="https://video.tv.adobe.com/v/329375" text="Se demovideon"
 
 Skapa en **erbjudande** gör du så här:
 
@@ -41,175 +40,27 @@ Skapa en **erbjudande** gör du så här:
 
    ![](../assets/create_offer.png)
 
-1. Ange erbjudandets namn samt start- och slutdatum och sluttid. Du kan också koppla en eller flera befintliga taggar till erbjudandet, så att du enklare kan söka efter och ordna erbjudandebiblioteket.
+1. Ange erbjudandets namn samt start- och slutdatum och sluttid. Utanför dessa datum väljs inte erbjudandet av beslutsmotorn.
 
    ![](../assets/offer_details.png)
 
-   >[!NOTE]
+   >[!CAUTION]
    >
-   >The **[!UICONTROL Offer attributes]** kan du koppla nyckelvärdepar till erbjudandet för rapportering och analys.
+   >Uppdatering av start- och slutdatum kan påverka capping. [Läs mer](add-constraints.md#capping-change-date)
 
-## Konfigurera offertens representationer {#representations}
+1. Du kan också koppla en eller flera befintliga **[!UICONTROL tags]** så att du enklare kan söka efter och ordna erbjudandebiblioteket. [Läs mer](creating-tags.md).
 
-Ett erbjudande kan visas på olika platser i ett meddelande: i en övre banderoll med en bild, som text i ett stycke, som ett HTML-block osv. Ju fler representationer ett erbjudande har, desto fler möjligheter finns det att använda erbjudandet i olika placeringssammanhang.
+1. The **[!UICONTROL Offer attributes]** kan du koppla nyckelvärdepar till erbjudandet för rapportering och analys.
 
-Följ stegen nedan om du vill lägga till en eller flera representationer i ditt erbjudande och konfigurera dem.
-
-1. För den första representationen börjar du med att välja **[!UICONTROL Channel]** som kommer att användas.
+1. Lägg till representationer för att definiera var ditt erbjudande ska visas i meddelandet. [Läs mer](add-representations.md)
 
    ![](../assets/channel-placement.png)
 
-   >[!NOTE]
-   >
-   >Endast de tillgängliga placeringarna för den valda kanalen visas i **[!UICONTROL Placement]** nedrullningsbar lista.
+1. Lägg till begränsningar för att ange villkoren för erbjudandet som ska visas. [Läs mer](add-constraints.md)
 
+   ![](../assets/offer-constraints-example.png)
 
-1. Välj en placering i listan.
-
-   Du kan också använda knappen bredvid knappen **[!UICONTROL Placement]** om du vill bläddra bland alla placeringar.
-
-   ![](../assets/browse-button-placements.png)
-
-   Där kan du fortfarande filtrera placeringarna efter kanal- och/eller innehållstyp. Välj en placering och klicka på **[!UICONTROL Select]**.
-
-   ![](../assets/browse-placements.png)
-
-1. Lägg till innehåll i din representation. Läs mer i [det här avsnittet](#content).
-
-1. När du lägger till innehåll som en bild eller URL kan du ange en **[!UICONTROL Destination link]**: de användare som klickar på erbjudandet dirigeras till motsvarande sida.
-
-   ![](../assets/offer-destination-link.png)
-
-1. Välj slutligen det språk du vill använda för att identifiera och hantera vad som ska visas för användarna.
-
-1. Om du vill lägga till en annan representation använder du **[!UICONTROL Add representation]** och lägg till så många representationer som behövs.
-
-   ![](../assets/offer-add-representation.png)
-
-1. När du har lagt till alla representationer väljer du **[!UICONTROL Next]**.
-
-## Definiera innehåll för dina representationer {#content}
-
-Du kan lägga till olika typer av innehåll i en representation.
-
->[!NOTE]
->
->Endast innehåll som motsvarar placeringens innehållstyp är tillgängligt för användning.
-
-### Lägg till bilder {#images}
-
-Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Adobe Experience Cloud Asset** bibliotek, ett centraliserat arkiv med resurser från [!DNL Adobe Experience Manager Assets Essentials].
-
->[!NOTE]
->
-> Arbeta med [Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=en){target=&quot;_blank&quot;}, du måste distribuera [!DNL Assets Essentials] för din organisation och se till att användarna är en del av **Assets Essentials hemanvändare** eller/och **Assets Essentials-användare** Produktprofiler. Läs mer på [den här sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}.
-
-1. Välj alternativet **[!UICONTROL Asset library]**.
-
-1. Välj **[!UICONTROL Browse]**.
-
-   ![](../assets/offer-browse-asset-library.png)
-
-1. Bläddra bland resurserna och välj den bild du vill använda
-
-1. Klicka på **[!UICONTROL Select]**.
-
-   ![](../assets/offer-select-asset.png)
-
-### Lägg till URL:er {#urls}
-
-Om du vill lägga till innehåll från en extern offentlig plats väljer du **[!UICONTROL URL]** anger du sedan URL-adressen till det innehåll som ska läggas till.
-
-![](../assets/offer-content-url.png)
-
-### Lägg till egen text {#custom-text}
-
-Du kan också infoga text när du väljer en kompatibel placering.
-
-1. Välj **[!UICONTROL Custom]** och klicka **[!UICONTROL Add content]**.
-
-   ![](../assets/offer-add-content.png)
-
-   >[!NOTE]
-   >
-   >Det här alternativet är inte tillgängligt för bildtypsplaceringar.
-
-1. Skriv den text som ska visas i erbjudandet.
-
-   ![](../assets/offer-text-content.png)
-
-   Du kan anpassa ditt innehåll med uttrycksredigeraren. Läs mer på [personalisering](../../personalization/personalize.md#use-expression-editor).
-
-   ![](../assets/offer-personalization.png)
-
-   >[!NOTE]
-   >
-   >Endast **[!UICONTROL Profile attributes]**, **[!UICONTROL Segment memberships]** och **[!UICONTROL Helper functions]** Det finns källor för beslutsförvaltning.
-
-## Lägg till regler och begränsningar för berättigande {#eligibility}
-
->[!CONTEXTUALHELP]
->id="od_offer_constraints"
->title="Om begränsningar för erbjudanden"
->abstract="Med begränsningar kan ni ange hur erbjudandet ska prioriteras och presenteras för användaren jämfört med andra erbjudanden."
->additional-url="https://video.tv.adobe.com/v/329375" text="Se demovideon"
-
->[!CONTEXTUALHELP]
->id="od_offer_eligibility"
->title="Om rätt att köpa"
->abstract="I det här avsnittet kan du använda beslutsregler för att avgöra vilka användare som är berättigade till erbjudandet."
->additional-url="https://video.tv.adobe.com/v/329373" text="Se demovideon"
-
->[!CONTEXTUALHELP]
->id="od_offer_priority"
->title="Prioritet för erbjudande"
->abstract="I det här fältet kan du ange prioritetsinställningar för erbjudandet. Prioritet är ett nummer som används för att rangordna erbjudanden som uppfyller alla krav, som berättigande, datum och appning."
->additional-url="https://video.tv.adobe.com/v/329375" text="Se demovideon"
-
->[!CONTEXTUALHELP]
->id="od_offer_globalcap"
->title="Om begränsning av erbjudanden"
->abstract="I det här fältet kan du ange hur många gånger erbjudandet kan presenteras för alla användare."
->additional-url="https://video.tv.adobe.com/v/329375" text="Se demovideon"
-
-Behörighetsregler och -begränsningar gör att du kan definiera villkoren för hur ett erbjudande ska visas.
-
-1. Konfigurera **[!UICONTROL Offer eligibility]**.
-
-   * Som standard är **[!UICONTROL All visitors]** beslutsregelalternativet har valts, vilket innebär att alla profiler är berättigade att presenteras erbjudandet.
-
-   * Du kan begränsa erbjudandets presentation till medlemmarna i ett eller flera Adobe Experience Platform-segment. Aktivera **[!UICONTROL Visitors who fall into one or multiple segments]** lägg sedan till ett eller flera segment från den vänstra rutan och kombinera dem med **[!UICONTROL And]** / **[!UICONTROL Or]** logiska operatorer.
-
-      Mer information om hur du arbetar med segment finns i [den här sidan](../../segment/about-segments.md).
-
-      ![](../assets/offer-eligibility-segment.png)
-
-   * Om du vill koppla en viss beslutsregel till erbjudandet väljer du **[!UICONTROL By defined decision rule]** och sedan dra den önskade regeln från den vänstra rutan till **[!UICONTROL Decision rule]** område. Mer information om hur du skapar en beslutsregel finns i [det här avsnittet](../offer-library/creating-decision-rules.md).
-
-      ![](../assets/offer_rule.png)
-
-      >[!CAUTION]
-      >
-      >Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [event](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#events){target=&quot;_blank&quot;} kan du inte utnyttja erbjudandet.
-   Läs mer om hur du använder segment kontra beslutsregler i [det här avsnittet](../offer-activities/create-offer-activities.md#segments-vs-decision-rules).
-
-1. Definiera **[!UICONTROL Priority]** av erbjudandet jämfört med andra, om användaren kvalificerar sig för mer än ett erbjudande. Ju högre prioritet ett erbjudande har, desto högre blir prioriteringen jämfört med andra erbjudanden.
-
-1. Ange erbjudandets **[!UICONTROL Capping]**, vilket innebär det antal gånger som erbjudandet kommer att presenteras totalt för alla användare. Om erbjudandet har levererats till alla användare det antal gånger som du har angett i det här fältet, upphör leveransen.
-
-   >[!NOTE]
-   >
-   >Det antal gånger ett erbjudande föreslås beräknas vid e-postförberedelsen. Om du t.ex. förbereder ett e-postmeddelande med ett antal erbjudanden räknas dessa siffror mot det högsta antalet oavsett om e-postmeddelandet skickas eller inte.
-   >
-   >Om en e-postleverans tas bort eller om förberedelserna görs på nytt innan den skickas, uppdateras erbjudandets begränsningsvärde automatiskt.
-
-   ![](../assets/offer_capping.png)
-
-   I exemplet ovan:
-
-   * Prioriteten för erbjudandet är 50, vilket innebär att erbjudandet presenteras före erbjudanden med en prioritet mellan 1 och 49, och efter erbjudanden med en prioritet på minst 51.
-   * Erbjudandet gäller endast användare som matchar&quot;Gold Loyalty Customers&quot;-beslutsregeln.
-   * Erbjudandet gäller endast en gång per användare.
+1. Granska och spara erbjudandet. [Läs mer](#review)
 
 ## Se erbjudandet {#review}
 
@@ -231,7 +82,7 @@ Den är nu klar att levereras till användarna.
 
 ![](../assets/offer_created.png)
 
-## Erbjudandelista {#offer-list}
+## Hantera erbjudanden {#offer-list}
 
 I erbjudandelistan kan du välja erbjudandet för att visa dess egenskaper. Du kan också redigera det och ändra dess status (**Utkast**, **Godkänd**, **Arkiverad**), duplicera erbjudandet eller ta bort det.
 
