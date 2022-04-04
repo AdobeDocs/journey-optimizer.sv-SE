@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 74b1be18-4829-4c67-ae45-cf13278cda65
-source-git-commit: 85aec983ac39c8d65b2a833ee17dc1e3cafb5900
+source-git-commit: 49c09fbcf3be595e2a636f395fa89915e9e9c802
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -26,15 +26,15 @@ ht-degree: 0%
 
 Om du vill komma åt de sparade uttrycken klickar du på **[!UICONTROL Library]** i den vänstra rutan. I listan visas alla uttryck som har sparats av Admin-användare (se [Spara uttryck i biblioteket](#save-expressions)).
 
-    >[!OBS!]
-    >
-    >Du kan använda infoknappen för att få mer information om innehållet i ett sparat uttryck. Om du har behörighet att hantera biblioteksobjekt visas informationsknappen på ellipsmenyn.
-    
-    ![](assets/library-list.png)
+>[!NOTE]
+>
+>Du kan använda infoknappen för att få mer information om innehållet i ett sparat uttryck. Om du har behörighet att hantera biblioteksobjekt visas informationsknappen på ellipsmenyn.
+
+![](assets/library-list.png)
 
 Klicka på + för att infoga uttrycket i redigeraren. Sedan kan ni anpassa och validera ert personaliseringsinnehåll som vanligt. [Läs mer](../personalization/personalization-build-expressions.md)
 
-    ![](assets/library-add.png)
+![](assets/library-add.png)
 
 ## Spara ett uttryck i biblioteket {#save-expressions}
 
