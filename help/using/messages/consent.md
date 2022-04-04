@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c5bae757-a109-45f8-bf8d-182044a73cca
-source-git-commit: e1a9ac4a13f82312233fe4a34d06046b67c026dc
+source-git-commit: c07f664dad063d65d965c832bb68415acf61c700
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1220'
 ht-degree: 1%
 
 ---
@@ -71,9 +71,9 @@ Du måste först lägga till en länk för att avbryta prenumerationen i ett med
 
 #### Implementera ett API-anrop för avanmälan {#opt-out-api}
 
-Om du vill att mottagarna ska avanmäla sig när de skickar in sitt val från landningssidan måste du implementera en **Prenumerations-API-anrop** genom Adobe I/O för att uppdatera motsvarande profilers inställningar.
+Om du vill att mottagarna ska avanmäla sig när de skickar in sitt val från landningssidan måste du implementera en **Prenumerations-API-anrop** via [Adobe Developer](developer.adobe.com) om du vill uppdatera motsvarande profilers inställningar.
 
-Detta samtal till POSTEN i Adobe I/O är följande:
+Det här anropet till POSTEN är som följer:
 
 Slutpunkt: platform.adobe.io/journey/imp/consent/preferences
 
@@ -109,7 +109,7 @@ Begärandetext:
 }
 ```
 
-[!DNL Journey Optimizer] använder de här parametrarna för att uppdatera motsvarande profils val via anropet till Adobe I/O.
+[!DNL Journey Optimizer] använder de här parametrarna för att uppdatera motsvarande profils val via [Adobe Developer](developer.adobe.com) API-anrop.
 
 #### Skicka meddelandet med en länk för att avbryta prenumerationen {#send-message-unsubscribe-link}
 
@@ -121,7 +121,7 @@ När du har konfigurerat länken för att avbryta prenumerationen på din landni
 
    ![](assets/opt-out-lp-example.png)
 
-1. Om mottagaren skickar in formuläret (här, genom att klicka på **Avbeställ** på landningssidan) uppdateras profildata via [Adobe I/O call](#opt-out-api).
+1. Om mottagaren skickar in formuläret (här, genom att klicka på **Avbeställ** på landningssidan) uppdateras profildata via [API-anrop](#opt-out-api).
 
 1. Mottagaren omdirigeras sedan till ett bekräftelsemeddelande som anger att avanmälan lyckades.
 
