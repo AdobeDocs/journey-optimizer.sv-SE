@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c5bae757-a109-45f8-bf8d-182044a73cca
-source-git-commit: c07f664dad063d65d965c832bb68415acf61c700
+source-git-commit: 65fdbc0255b367cc30d3d220c128350af0d7b7ad
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1228'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ Du måste först lägga till en länk för att avbryta prenumerationen i ett med
 
 #### Implementera ett API-anrop för avanmälan {#opt-out-api}
 
-Om du vill att mottagarna ska avanmäla sig när de skickar in sitt val från landningssidan måste du implementera en **Prenumerations-API-anrop** via [Adobe Developer](developer.adobe.com) om du vill uppdatera motsvarande profilers inställningar.
+Om du vill att mottagarna ska avanmäla sig när de skickar in sitt val från landningssidan måste du implementera en **Prenumerations-API-anrop** via [Adobe Developer](https://developer.adobe.com){target=&quot;_blank&quot;} om du vill uppdatera motsvarande profilers inställningar.
 
 Det här anropet till POSTEN är som följer:
 
@@ -109,7 +109,7 @@ Begärandetext:
 }
 ```
 
-[!DNL Journey Optimizer] använder de här parametrarna för att uppdatera motsvarande profils val via [Adobe Developer](developer.adobe.com) API-anrop.
+[!DNL Journey Optimizer] använder de här parametrarna för att uppdatera motsvarande profils val via [Adobe Developer](https://developer.adobe.com){target=&quot;_blank&quot;} API-anrop.
 
 #### Skicka meddelandet med en länk för att avbryta prenumerationen {#send-message-unsubscribe-link}
 
