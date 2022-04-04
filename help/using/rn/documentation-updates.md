@@ -2,9 +2,9 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: c0c57150be1c9031728daddf1e0a320853bc545c
+source-git-commit: 88b9dbd690a4dc987ee0bfe31e2d8b38a39c3f43
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1095'
 ht-degree: 21%
 
 ---
@@ -19,6 +19,8 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * En ny sida om hur du kommer igång med AI-modeller har lagts till i **Offer decisioning** med en detaljerad beskrivning av [autooptimeringsmodell](../offers/offer-library/ai-ranking.md#auto-optimization), den algoritm som används och mer teknisk information. [Läs mer](../offers/offer-library/ai-ranking.md)
 * Sidan där testprofilen skapades har flyttats till  **Segment, profiler och identitet** -avsnitt. [Läs mer](../segment/creating-test-profiles.md)
 * Ett exempel har lagts till om hur du lägger till ett uttryck som standardvärde i uttrycksredigeraren. [Läs mer](../building-journeys/expression/field-references.md#default-value)
+* The **Skapa personaliserade erbjudanden** -avsnittet har omstrukturerats för förbättrad läsbarhet. [Läs mer](../offers/offer-library/creating-personalized-offers.md)
+* Ett nytt avsnitt har lagts till för att beskriva den påverkan som ett byte av ett erbjudandes start- och/eller slutdatum kan ha på det här erbjudandets frekvensbegränsning. [Läs mer](../offers/offer-library/add-constraints.md#capping-change-date)
 <!--* The **Change the primary email addresses** section has been updated to reflect the user interface changes. [Read more](../configuration/primary-email-addresses.md)-->
 
 ## Februari 2022 {#feb-2022}

@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: e1a9ac4a13f82312233fe4a34d06046b67c026dc
+source-git-commit: 88b9dbd690a4dc987ee0bfe31e2d8b38a39c3f43
 workflow-type: tm+mt
-source-wordcount: '2912'
+source-wordcount: '2938'
 ht-degree: 9%
 
 ---
@@ -27,7 +27,7 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 
 **Beslutshantering**
 
-<!--* You can now specify if offer capping is applied across all users or to one specific profile, and to all placements or per placement. [Learn more](../offers/offer-library/creating-personalized-offers.md)-->
+* Du kan nu ange om begränsningen av erbjudanden ska gälla för alla användare eller för en viss profil, och för alla placeringar eller per placering. [Läs mer](../offers/offer-library/add-constraints.md#capping)
 * Med API:t för gruppbeslut kan organisationer använda offer decisioning-funktionalitet för alla profiler i ett visst segment i ett enda anrop. Erbjudandeinnehållet för varje profil i segmentet placeras i en AEP-datauppsättning där det är tillgängligt för anpassade batcharbetsflöden. [Läs mer](../offers/api-reference/batch-api/deliver-offers-batch.md)
 
 **Administrering**
@@ -522,7 +522,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 * Antalet testmeddelanden för korrektur är nu begränsat till 10.
 * Tecken tillåts för **Subject line prefix** i korrektur är nu begränsade. [Läs mer](../design/preview.md#send-proofs)
 
-**Personalization uttrycksredigerare**
+**Redigerare för anpassningsuttryck**
 
 * Hjälplistan har bytt namn och ordnats om.
 
