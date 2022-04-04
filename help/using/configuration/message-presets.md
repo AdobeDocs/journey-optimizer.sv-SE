@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: e1a9ac4a13f82312233fe4a34d06046b67c026dc
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 1%
@@ -97,7 +97,6 @@ Välj **Transactional** för icke-kommersiella meddelanden, t.ex. orderbekräfte
 >
 >**Transactional** meddelanden kan skickas till profiler som avbeställer marknadskommunikation. Dessa meddelanden kan bara skickas i särskilda sammanhang.
 
-
 ### Underdomän och IP-pool {#subdomains-and-ip-pools}
 
 I **INFORMATION OM UNDERDOMÄN- OCH IP-POOL** måste du
@@ -140,7 +139,7 @@ Länken för att avbryta prenumerationen består av två element:
 
 Läs mer om hur du lägger till en länk för att avbryta prenumerationen i dina meddelanden i [det här avsnittet](../messages/consent.md#unsubscribe-header).
 
-<!--Select the **[!UICONTROL Custom List-Unsubscribe]** option to enter your own Unsubscribe URL and/or your own Unsubscribe email address.-->
+<!--Select the **[!UICONTROL Custom List-Unsubscribe]** option to enter your own Unsubscribe URL and/or your own Unsubscribe email address.(to add later)-->
 
 ### URL-spårning{#url-tracking}
 

@@ -6,30 +6,36 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 70ab8f57-c132-4de1-847b-11f0ab14f422
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: e1a9ac4a13f82312233fe4a34d06046b67c026dc
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '556'
 ht-degree: 1%
 
 ---
 
 # Tillåtelselista {#allow-list}
 
-Det går att definiera en specifik sändningssäker lista på [sandlåda](../administration/sandboxes.md) för att ha en säker miljö för testningsändamål. I icke-produktionssituationer, där misstag kan inträffa, ser tillåtelselista till att du inte löper någon risk att skicka ut oönskade meddelanden till dina kunder.
+Det går att definiera en specifik sändningssäker lista på [sandlåda](../administration/sandboxes.md) för att ha en säker miljö för testningsändamål.
+
+På en icke-produktionsinstans, där fel kan uppstå, ser tillåtelselista till att du inte löper någon risk att skicka ut oönskade meddelanden till dina kunder.
+
+>[!NOTE]
+>
+>Den här funktionen är nu tillgänglig i sandlådor av typen produktion och icke-produktion.
 
 Med tillåtelselista kan du ange enskilda e-postadresser eller domäner som ska vara de enda mottagarna eller domänerna som ska ha behörighet att ta emot e-postmeddelanden som du skickar från en viss sandlåda. Detta kan förhindra att du av misstag skickar e-post till verkliga kundadresser när du befinner dig i en testmiljö.
 
 >[!CAUTION]
 >
->Den här funktionen är **not** finns i produktionssandlådor. Det gäller bara för e-postkanalen.
+>Den här funktionen gäller endast för e-postkanalen.
 
 ## Aktivera tillåtelselista {#enable-allow-list}
 
-<!--To enable the allowed list on a non-production sandbox, you need to update the general settings using the corresponding API end point in the Message Presets Service. Using this API, you can also disable the feature at any time.-->
+<!--To enable the allowed list on a non-production sandbox, you need to update the general settings using the corresponding API end point in the Message Presets Service. Using this API, you can also disable the feature at any time.
 
-<!--You can update the allowed list before or after enabling the feature. To do so, you need to update the general settings using the corresponding API end point in the Message Presets Service.?-->
+You can update the allowed list before or after enabling the feature.-->
 
-Följ stegen nedan för att aktivera tillåtelselista i en icke-produktionssandlåda.
+Följ stegen nedan för att aktivera tillåtelselista.
 
 1. Gå till **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL Allow list]**-menyn.
 

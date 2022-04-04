@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c5bae757-a109-45f8-bf8d-182044a73cca
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: e1a9ac4a13f82312233fe4a34d06046b67c026dc
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1226'
 ht-degree: 1%
 
 ---
@@ -191,7 +191,7 @@ Om du vill ange en personlig avanmälnings-URL infogar du en länk för att väl
 
 Beroende på e-postklienten kan du klicka på länken för att avbryta prenumerationen från rubriken få följande effekter:
 
-* Avbeställningen skickas till avbeställningsadressen.
+* Begäran om att avbryta prenumerationen skickas till standardadressen för att avbryta prenumerationen.
 
 * Mottagaren dirigeras till den URL för landningssidan som du angav när du lade till länken för avanmälan i meddelandet.
 
@@ -200,8 +200,6 @@ Beroende på e-postklienten kan du klicka på länken för att avbryta prenumera
    >Om du inte lägger till en länk för avanmälan med ett enda klick i ditt meddelandeinnehåll visas ingen startsida.
 
 * Motsvarande profil väljs omedelbart och det här alternativet uppdateras i Experience Platform. Läs mer i [Experience Platform dokumentation](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target=&quot;_blank&quot;}.
-
-<!--To define a custom unsubscribe URL and email address, you must enable it in the message presets. [Learn more](../configuration/message-presets.md)-->
 
 ## Hantering av avanmälan {#push-opt-out-management}
 

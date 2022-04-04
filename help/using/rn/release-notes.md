@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: e1a9ac4a13f82312233fe4a34d06046b67c026dc
 workflow-type: tm+mt
-source-wordcount: '2821'
+source-wordcount: '2912'
 ht-degree: 9%
 
 ---
@@ -12,6 +12,9 @@ ht-degree: 9%
 # Versionsinformation {#release-notes}
 
 På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journey Optimizer]. Du kan även läsa [senaste dokumentationsuppdateringar](documentation-updates.md) sida för fler ändringar.
+
+![Nyhetsbrev](../assets/do-not-localize/nl-icon.png) Registrera dig för [Adobe Journey Optimizer kvartalsvis nyhetsbrev](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target=&quot;_blank&quot;} idag och få de senaste produktuppdateringarna, spännande historier, användningsexempel, tips och mycket annat levererat direkt till inkorgen varje kvartal.
+
 
 ## Version från mars 2022 {#march-2022-release}
 
@@ -27,10 +30,10 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 <!--* You can now specify if offer capping is applied across all users or to one specific profile, and to all placements or per placement. [Learn more](../offers/offer-library/creating-personalized-offers.md)-->
 * Med API:t för gruppbeslut kan organisationer använda offer decisioning-funktionalitet för alla profiler i ett visst segment i ett enda anrop. Erbjudandeinnehållet för varje profil i segmentet placeras i en AEP-datauppsättning där det är tillgängligt för anpassade batcharbetsflöden. [Läs mer](../offers/api-reference/batch-api/deliver-offers-batch.md)
 
-<!--**Administration**
+**Administrering**
 
-* You can now enable/disable the unsubscribe link in/from the email header at the message preset level, and set a custom unsubscribe URL at the message level. [Learn more](../configuration/message-presets.md#list-unsubscribe)
-* The allowed list will can now be enabled and disabled through the [!DNL Journey Optimizer] interface. [Learn more](../messages/allow-list.md#enable-allow-list)-->
+* Du kan nu aktivera/inaktivera länken för att avbryta prenumerationen i/från e-posthuvudet på den förinställda meddelandenivån och ange en anpassad URL för att avbryta prenumerationen på meddelandenivån. [Läs mer](../configuration/message-presets.md#list-unsubscribe)
+* Tillåtelselista kan nu aktiveras och inaktiveras via [!DNL Journey Optimizer] gränssnitt för produktions- och icke-produktionssandlådor. [Läs mer](../reports/allow-list.md#enable-allow-list)
 
 **Personalisering**
 
@@ -461,7 +464,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 * Korrigerade ett tillgänglighetsproblem vid navigering på meddelandeflikar.
 * Ett lokaliseringsfel har korrigerats i e-postdesignerns etiketter.
 * Ett problem har korrigerats när du valde mer än en nod i en resa och klickade på Ta bort på egenskapspanelen.
-* Korrigerade ett fel som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
+* Korrigerade ett problem som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
 * Du kan nu ta reda på varför en meddelandeförinställning inte kunde skapas med hjälp av en tydligare varning i användargränssnittet.
 
 
@@ -519,7 +522,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 * Antalet testmeddelanden för korrektur är nu begränsat till 10.
 * Tecken tillåts för **Subject line prefix** i korrektur är nu begränsade. [Läs mer](../design/preview.md#send-proofs)
 
-**Redigerare för anpassningsuttryck**
+**Personalization uttrycksredigerare**
 
 * Hjälplistan har bytt namn och ordnats om.
 
