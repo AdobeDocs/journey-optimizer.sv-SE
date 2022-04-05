@@ -8,9 +8,9 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '721'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Följ stegen nedan för att skapa en ny regel.
 
    >[!NOTE]
    >
-   >För närvarande bara **[!UICONTROL Marketing]** finns.
+   >För närvarande bara **[!UICONTROL Marketing]** finns tillgänglig.
 
 1. Ange begränsningen för regeln, vilket innebär det maximala antalet meddelanden som kan skickas till en enskild användarprofil varje månad.
 
@@ -83,7 +83,7 @@ Följ stegen nedan för att skapa en ny regel.
 
 ## Aktivera en regel {#activate-rule}
 
-Om du vill aktivera en regel för meddelandefrekvens klickar du på ellipsen bredvid regeln och väljer **[!UICONTROL Activate]**.
+När en regel för meddelandefrekvens skapas har den **[!UICONTROL Draft]** status och påverkar inte ännu något meddelande. Om du vill aktivera den klickar du på ellipsen bredvid regeln och väljer **[!UICONTROL Activate]**.
 
 ![](assets/message-rules-activate.png)
 
@@ -105,28 +105,70 @@ Regelens status ändras till **[!UICONTROL Inactive]** och regeln gäller inte f
 
 ## Tillämpa en frekvensregel på ett meddelande {#apply-frequency-rule}
 
-Om du vill tillämpa en frekvensregel på ett meddelande behöver du bara välja kategorin som du definierade för den här regeln när [skapar meddelandet](../messages/get-started-content.md#create-new-message).
+Följ stegen nedan för att tillämpa en frekvensregel på ett meddelande.
 
-![](assets/message-rules-properties.png)
+1. Skapa ett meddelande. [Läs mer](../messages/get-started-content.md#create-new-message)
 
-Genom att välja **[!UICONTROL Marketing]** -kategori kommer alla matchande regler för meddelandefrekvens automatiskt att tillämpas på det här meddelandet.
+1. Välj den kategori som du har definierat för [regel som du skapade](#create-new-rule).
+
+   ![](assets/message-rules-msg-properties.png)
+
+   >[!NOTE]
+   >
+   >För närvarande bara **[!UICONTROL Marketing]** finns för regler för meddelandefrekvens.
+
+1. Välj den eller de kanaler du vill använda för meddelandet.
+
+   ![](assets/message-rules-msg-channels.png)
+
+1. Du kan klicka på **[!UICONTROL Frequency rule]** om du vill visa de frekvensregler som gäller för den valda kategorin och de valda kanalerna.
+
+   ![](assets/message-rules-msg-link.png)
+
+   En ny flik öppnas för att visa matchande regler för meddelandefrekvens.
+
+1. [Design](../design/design-emails.md) och [publicera](../messages/publish-manage-message.md) ditt meddelande.
+
+Alla frekvensregler som matchar den valda kategorin och kanalen/kanalerna tillämpas automatiskt på det här meddelandet.
 
 <!--Clicking the link out button next to the category selector will jump you over to the rules inventory screen to see which rules will be applied to the message.-->
 
 Du kan visa antalet profiler som har uteslutits från leverans i [Live- och globala vyer](../reports/message-monitoring.md)och i [e-postLive-rapport](../reports/email-live-report.md), där frekvensreglerna listas som en möjlig orsak för användare som inte får leverera.
 
-## Exempel
+## Exempel: kombinera flera regler {#frequency-rule-example}
 
 Du kan kombinera flera regler för meddelandefrekvens, som beskrivs i exemplet nedan.
 
-1. Skapa en anropad regel *Total marknadsföringstak*:
+1. [Skapa en regel](#create-new-rule) anropad *Total marknadsföringstak*:
 
    * Markera alla kanaler (e-post, push).
    * Ange begränsning till 12.
 
-1. Om du vill begränsa antalet marknadsföringsbaserade push-meddelanden som en användare skickas vidare skapar du en andra regel som kallas *Begränsa marknadsföringspush*:
+   ![](assets/message-rules-ex-overall-cap.png)
+
+1. Om du vill begränsa antalet marknadsföringsbaserade push-meddelanden som en användare skickas vidare skapar du en andra regel som kallas *Push Marketing Cap*:
 
    * Välj Push-kanal.
    * Ställ in capping på 4.
 
-I det här scenariot kan en enskild profil ta emot upp till 12 marknadsföringsmeddelanden per månad, men de kommer inte att kunna skicka push-meddelanden efter att de har tagit emot 4 push-meddelanden.
+   ![](assets/message-rules-ex-push-cap.png)
+
+1. Spara och [activate](#activate-rule) regeln.
+
+1. Skapa ett meddelande. [Läs mer](../messages/get-started-content.md#create-new-message)
+
+1. Välj **[!UICONTROL Marketing]** kategori.
+
+   ![](assets/message-rules-ex-category-maktg.png)
+
+1. Välj **[!UICONTROL Email]** och **[!UICONTROL Push Notification]** kanaler.
+
+   ![](assets/message-rules-ex-channels.png)
+
+1. Du kan klicka på **[!UICONTROL Frequency rule]** om du vill visa de frekvensregler som gäller för den valda kategorin och de valda kanalerna.
+
+1. [Design](../design/design-emails.md) och [publicera](../messages/publish-manage-message.md) ditt meddelande.
+
+I det här scenariot finns en enskild profil:
+* kan ta emot upp till 12 marknadsföringsmeddelanden per månad,
+* men utesluts från push-meddelanden om marknadsföring när de har fått 4 push-meddelanden.

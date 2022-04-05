@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e4f91870-f06a-4cd3-98b7-4c413233e310
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '185'
 ht-degree: 2%
 
 ---
@@ -36,4 +36,11 @@ Alla dessa funktioner är tillgängliga när du öppnar e-postdesignern från me
 >[!NOTE]
 >
 >Observera att mallarna i det nedre området är statiska och inte kan redigeras. Dessa finns endast för illustrationsändamål.
-När du har [skapade ditt meddelande](../messages/get-started-content.md)kan du börja skapa ditt e-postinnehåll.
+>
+>När du har [skapade ditt meddelande](../messages/get-started-content.md)kan du börja skapa ditt e-postinnehåll.
+
+## Instruktionsvideo {#video}
+
+Lär dig hur du skapar e-postinnehåll med meddelanderedigeraren.
+
+>[!VIDEO](https://video.tv.adobe.com/v/334150?quality=12)

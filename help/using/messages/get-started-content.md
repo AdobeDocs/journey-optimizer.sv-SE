@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 712dc172-6c0d-4ce8-ba16-de99d65fc641
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 3%
+source-wordcount: '647'
+ht-degree: 2%
 
 ---
 
@@ -67,11 +67,15 @@ Följ stegen nedan för att skapa ett nytt meddelande:
 
    * Välj **[!UICONTROL Message category]**: Marknadsföring eller Transactional.
 
+   * Markera de kanaler som du vill använda för det meddelandet: E-post och/eller push-meddelanden. Du måste välja minst en kanal för att kunna skapa meddelandet.
+
    * Välj **[!UICONTROL Preset]** som ska användas för meddelandet.
 
       Förinställningarna innehåller alla parametrar som krävs för att ett e-postmeddelande och/eller ett push-meddelande ska skickas enligt ert varumärke. [Läs mer om förinställningar](../configuration/message-presets.md).
+   >[!CAUTION]
+   >
+   >Du måste välja en giltig meddelandeförinställning för den valda kategorin och de valda kanalerna.
 
-   * Markera de kanaler som du vill använda för det meddelandet: E-post och/eller push-meddelanden. Du måste välja minst en kanal för att kunna skapa meddelandet.
    Observera att du när som helst kan komma åt och ändra meddelandets titel, beskrivning och förinställning med **[!UICONTROL Properties]** i meddelandegränssnittet.
 
 1. Klicka **[!UICONTROL Create]** för att bekräfta att meddelandet har skapats. Meddelandet läggs till i meddelandelistan i **[!UICONTROL Draft]** status.

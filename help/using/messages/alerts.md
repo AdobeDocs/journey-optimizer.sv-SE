@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 89f445f2-df8a-4d2d-afe8-4f8b9cb001d9
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -45,27 +45,31 @@ De inställningar och element som kontrolleras av systemet visas nedan. Du hitta
 
 **Varningar**:
 
-* **[!UICONTROL The opt-out link is not present in the email body.]**: det är bra att lägga till en länk för att avbryta prenumerationen i e-postmeddelandet. Lär dig hur du konfigurerar det i [det här avsnittet](consent.md).
+* **[!UICONTROL The opt-out link is not present in the email body]**: det är bra att lägga till en länk för att avbryta prenumerationen i e-postmeddelandet. Lär dig hur du konfigurerar det i [det här avsnittet](consent.md#opt-out-management).
 
-* **[!UICONTROL Text version of HTML is empty.]**: Glöm inte att definiera en textversion av e-posttexten, eftersom den kommer att användas när HTML inte kan visas. Lär dig hur du skapar textversionen i [det här avsnittet](../design/text-version-email.md).
+   >[!NOTE]
+   >
+   >E-postmeddelanden av marknadsföringstyp måste innehålla en länk för avanmälan, vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [meddelandeförinställningsnivå](../configuration/message-presets.md#email-type) och när [skapar meddelandet](get-started-content.md#create-new-message).
 
-* **[!UICONTROL Empty link is present in email body.]**: kontrollera att alla länkar i e-postmeddelandet är korrekta. Lär dig hantera innehåll och länkar i [det här avsnittet](../design/create-email-content.md).
+* **[!UICONTROL Text version of HTML is empty]**: Glöm inte att definiera en textversion av e-posttexten, eftersom den kommer att användas när HTML inte kan visas. Lär dig hur du skapar textversionen i [det här avsnittet](../design/text-version-email.md).
 
-* **[!UICONTROL Email size has exceeded the limit of 100KB.]**: för optimal leverans bör du kontrollera att e-postens storlek inte överstiger 100 kB. Lär dig hur du redigerar e-postinnehåll i [det här avsnittet](../design/create-email-content.md).
+* **[!UICONTROL Empty link is present in email body]**: kontrollera att alla länkar i e-postmeddelandet är korrekta. Lär dig hantera innehåll och länkar i [det här avsnittet](../design/create-email-content.md).
+
+* **[!UICONTROL Email size has exceeded the limit of 100KB]**: för optimal leverans bör du kontrollera att e-postens storlek inte överstiger 100 kB. Lär dig hur du redigerar e-postinnehåll i [det här avsnittet](../design/create-email-content.md).
 
 **Fel**:
 
-* **[!UICONTROL The subject line is missing.]**: Ämnesraden för e-post är obligatorisk. Lär dig definiera och personalisera det i [det här avsnittet](create-email.md).
+* **[!UICONTROL The subject line is missing]**: Ämnesraden för e-post är obligatorisk. Lär dig definiera och personalisera det i [det här avsnittet](create-email.md).
 
    <!--HTML is empty when Amp HTML is present-->
 
-* **[!UICONTROL The push version of the message is empty.]**: det här felet visas när meddelandetexten eller titeln för push-meddelanden saknas. Lär dig definiera innehåll för push-meddelanden i [det här avsnittet](create-push.md).
+* **[!UICONTROL The push version of the message is empty]**: det här felet visas när meddelandetexten eller titeln för push-meddelanden saknas. Lär dig definiera innehåll för push-meddelanden i [det här avsnittet](create-push.md).
 
-* **[!UICONTROL The email version of the message is empty.]**: det här felet visas när e-postinnehållet inte har konfigurerats. Lär dig designa e-postinnehåll i [det här avsnittet](../design/design-emails.md).
+* **[!UICONTROL The email version of the message is empty]**: det här felet visas när e-postinnehållet inte har konfigurerats. Lär dig designa e-postinnehåll i [det här avsnittet](../design/design-emails.md).
 
-* **[!UICONTROL Preset doesn’t exist.]**: Du kan inte publicera meddelandet om den förinställning du har valt tas bort efter att meddelandet har skapats. Om det här felet inträffar väljer du en annan förinställning i meddelandet **[!UICONTROL Properties]**. Läs mer om varumärkesprofilering i [det här avsnittet](../configuration/about-subdomain-delegation.md).
+* **[!UICONTROL Preset doesn’t exist]**: Du kan inte publicera meddelandet om den förinställning du har valt tas bort efter att meddelandet har skapats. Om det här felet inträffar väljer du en annan förinställning i meddelandet **[!UICONTROL Properties]**. Läs mer om varumärkesprofilering i [det här avsnittet](../configuration/about-subdomain-delegation.md).
 
-* **[!UICONTROL Push iOS/Android payload has exceeded limit of 4KB.]**: storleken på push-meddelanden får inte överskrida 4 kB. Om du vill iaktta den här gränsen försöker du minska användningen av bilder eller känslolägesikoner. Lär dig hur du hanterar ditt push-meddelandeinnehåll i [det här avsnittet](create-push.md).
+* **[!UICONTROL Push iOS/Android payload has exceeded limit of 4KB]**: storleken på push-meddelanden får inte överskrida 4 kB. Om du vill iaktta den här gränsen försöker du minska användningen av bilder eller känslolägesikoner. Lär dig hur du hanterar ditt push-meddelandeinnehåll i [det här avsnittet](create-push.md).
 
 >[!CAUTION]
 >

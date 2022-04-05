@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,10 @@ Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
    * Du kan välja att stryka under länken eller inte genom att markera motsvarande alternativ.
 
    ![](assets/message-tracking-link-settings.png)
+
+>[!NOTE]
+>
+>E-postmeddelanden av marknadsföringstyp måste innehålla en [länk för avanmälan](../messages/consent.md#opt-out-management), vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [meddelandeförinställningsnivå](../configuration/message-presets.md#email-type) och när [skapar meddelandet](../messages/get-started-content.md#create-new-message).
 
 ## Länka till en spegelsida {#mirror-page}
 

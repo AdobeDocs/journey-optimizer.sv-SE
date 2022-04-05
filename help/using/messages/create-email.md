@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '182'
 ht-degree: 3%
 
 ---
@@ -35,3 +35,7 @@ Så här konfigurerar du ett e-postmeddelande:
 1. Klicka på **[!UICONTROL Email Designer]** för att utforma e-postmeddelandet. Lär dig hur du utformar e-postmeddelanden i [det här avsnittet](../design/design-emails.md).
 
 1. Om du vill spåra mottagarnas beteende genom att öppna och/eller klicka på länkar kontrollerar du att **[!UICONTROL Open Tracking for email]** och **[!UICONTROL Click Tracking for email]** är aktiverade. Läs mer om spårning i [det här avsnittet](../design/message-tracking.md).
+
+>[!NOTE]
+>
+>E-postmeddelanden av marknadsföringstyp måste innehålla en [länk för avanmälan](consent.md#opt-out-management), vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [meddelandeförinställningsnivå](../configuration/message-presets.md#email-type) och när [skapar meddelandet](get-started-content.md#create-new-message).

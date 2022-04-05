@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '960'
 ht-degree: 1%
 
 ---
@@ -88,6 +88,10 @@ Följ stegen nedan för att definiera inställningarna för den primära sidan.
    >Landningssidans URL måste vara unik.
 
    ![](assets/lp_access-url.png)
+
+   >[!NOTE]
+   >
+   >Du kan inte komma åt din landningssida genom att kopiera och klistra in URL-adressen i en webbläsare, även om den publicerats. I stället kan du testa den med förhandsvisningsfunktionen som beskrivs i [det här avsnittet](#test-landing-page).
 
 1. Du kan ange ett förfallodatum för sidan. I så fall måste du välja en åtgärd när sidan förfaller:
 
@@ -175,7 +179,7 @@ Två typer av varningar kan inträffa:
 
 * **Varningar** hänvisa till rekommendationer och bästa praxis. <!--For example, a message will display if -->
 
-* **Fel** förhindrar att du publicerar meddelandet så länge de inte är lösta. Du får till exempel en varning om den primära sidans URL saknas.
+* **Fel** hindra dig från att publicera landningssidan så länge som de inte är lösta. Du får till exempel en varning om den primära sidans URL saknas.
 
 <!--All possible warnings and errors are detailed [below](#alerts-and-warnings).-->
 

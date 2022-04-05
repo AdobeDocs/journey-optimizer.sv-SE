@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: da9e898b-8e5d-43da-9226-5c9ccb78e174
-source-git-commit: 0fa8ba1dc16062ea1553f9978752f3c018cec4c6
+source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,11 @@ Om du vill komma åt den här funktionen väljer du **[!UICONTROL Simulation]** 
 
 ## Välj testprofiler {#select-test-profiles}
 
-Först måste du välja de testprofiler som du ska använda för simulering. Läs mer om testprofiler i [det här avsnittet](../../segment/creating-test-profiles.md).
+Först måste du välja de testprofiler som du ska använda för simulering.
+
+>[!CAUTION]
+>
+>Du måste ha testprofiler tillgängliga för att kunna förhandsgranska dina meddelanden och skicka korrektur. Lär dig hur [skapa testprofiler](../../segment/creating-test-profiles.md).
 
 1. Klicka på **[!UICONTROL Manage profile]**.
 

@@ -2,9 +2,9 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 88b9dbd690a4dc987ee0bfe31e2d8b38a39c3f43
+source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1113'
 ht-degree: 21%
 
 ---
@@ -21,7 +21,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Ett exempel har lagts till om hur du lägger till ett uttryck som standardvärde i uttrycksredigeraren. [Läs mer](../building-journeys/expression/field-references.md#default-value)
 * The **Skapa personaliserade erbjudanden** -avsnittet har omstrukturerats för förbättrad läsbarhet. [Läs mer](../offers/offer-library/creating-personalized-offers.md)
 * Ett nytt avsnitt har lagts till för att beskriva den påverkan som ett byte av ett erbjudandes start- och/eller slutdatum kan ha på det här erbjudandets frekvensbegränsning. [Läs mer](../offers/offer-library/add-constraints.md#capping-change-date)
-<!--* The **Change the primary email addresses** section has been updated to reflect the user interface changes. [Read more](../configuration/primary-email-addresses.md)-->
+* The **Ändra de primära e-postadresserna** -avsnittet har uppdaterats för att återspegla ändringar i användargränssnittet. [Läs mer](../configuration/primary-email-addresses.md)
 
 ## Februari 2022 {#feb-2022}
 

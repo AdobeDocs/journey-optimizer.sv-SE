@@ -3,16 +3,14 @@ title: Journey Optimizer Get Started for Data Engineer
 description: Som datatekniker får du lära dig mer om hur du arbetar med Journey Optimizer
 level: Intermediate
 exl-id: 8beaafc2-e68d-46a1-be5c-e70892575bfb
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '572'
 ht-degree: 2%
 
 ---
 
 # Kom igång med datatekniker {#data-engineer}
-
-![datatekniker](assets/do-not-localize/user-1.png)
 
 Som en **Adobe Journey Optimizer datatekniker**, förbereda och underhålla kundprofildata för att driva upplevelser som orkestreras av [!DNL Journey Optimizer], modellera kund- och affärsdata i scheman och konfigurera källkopplingar för datainhämtning. Du kan börja arbeta med [!DNL Adobe Journey Optimizer] en gång [Systemadministratör](administrator.md) har gett dig åtkomst och förberett din miljö.
 

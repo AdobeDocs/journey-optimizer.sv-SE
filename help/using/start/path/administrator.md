@@ -3,16 +3,14 @@ title: Journey Optimizer Get Started for System Admin
 description: Som systemadministratör får du lära dig mer om hur du arbetar med Journey Optimizer
 level: Intermediate
 exl-id: 24f85ced-aa45-493f-b2c4-7c7b58351b38
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '704'
 ht-degree: 2%
 
 ---
 
 # Kom igång med systemadministratörer {#get-started-sys-admins}
-
-![administratör](assets/do-not-localize/user-2.png)
 
 Innan du börjar använda [!DNL Adobe Journey Optimizer]krävs flera steg för att förbereda miljön.  Du måste utföra dessa steg så att [Datatekniker](data-engineer.md) och [Journey Practicionner](marketer.md) kan börja arbeta med [!DNL Adobe Journey Optimizer].
 

@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: e1a9ac4a13f82312233fe4a34d06046b67c026dc
+source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2098'
 ht-degree: 1%
 
 ---
@@ -19,9 +19,9 @@ Med [!DNL Journey Optimizer]kan du konfigurera meddelandeförinställningar som 
 
 >[!CAUTION]
 >
-> * Konfigurationen av meddelandeförinställningar är begränsad till Reseadministratörer. [Läs mer](../administration/ootb-product-profiles.md#journey-administrator)
+> * Konfigurationen av meddelandeförinställningar är begränsad till [Reseadministratörer](../administration/ootb-product-profiles.md#journey-administrator). Om du vill skapa, redigera och ta bort meddelandeförinställningar måste du ha [Hantera meddelandeförinställningar](../administration/high-low-permissions.md#manage-message-presets).
 >
-> * Du måste konfigurera e-post och [Push-konfiguration](../configuration/push-configuration.md) steg innan du skapar meddelandeförinställningar.
+> * Du måste utföra [E-postkonfiguration](#configure-email-settings) och [Push-konfiguration](../configuration/push-configuration.md) steg innan du skapar meddelandeförinställningar.
 
 
 När meddelandeförinställningarna har konfigurerats kan du välja dem när du skapar meddelanden från **[!UICONTROL Presets]** lista.
@@ -84,14 +84,15 @@ E-postinställningarna definieras i ett dedikerat avsnitt i meddelandeförinstä
 
 Konfigurera inställningarna enligt beskrivningen nedan.
 
-
 ### Typ av e-post{#email-type}
 
 I **E-POSTTYP** väljer du den typ av meddelande som ska skickas med förinställningen: **Marknadsföring** eller **Transactional**.
 
-Välj **Marknadsföring** för kampanjmeddelanden: dessa meddelanden kräver användarens samtycke.
+* Välj **Marknadsföring** för kampanjmeddelanden: dessa meddelanden kräver användarens samtycke.
 
-Välj **Transactional** för icke-kommersiella meddelanden, t.ex. orderbekräftelse, meddelanden om lösenordsåterställning eller leveransinformation.
+* Välj **Transactional** för icke-kommersiella meddelanden, t.ex. orderbekräftelse, meddelanden om lösenordsåterställning eller leveransinformation.
+
+När [skapa ett meddelande](../messages/get-started-content.md#create-new-message)måste du välja en giltig meddelandeförinställning för den valda kategorin och de valda kanalerna.
 
 >[!CAUTION]
 >

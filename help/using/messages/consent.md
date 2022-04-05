@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c5bae757-a109-45f8-bf8d-182044a73cca
-source-git-commit: 65fdbc0255b367cc30d3d220c128350af0d7b7ad
+source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1259'
 ht-degree: 1%
 
 ---
@@ -38,6 +38,10 @@ Därför måste du alltid inkludera en **avbeställ länk** i varje e-postmeddel
 
 * När du klickar på den här länken dirigeras mottagarna till en landningssida där de kan bekräfta att de vill avanmäla sig.
 * När profilens val har bekräftats uppdateras profilens data med den här informationen.
+
+>[!NOTE]
+>
+>E-postmeddelanden av marknadsföringstyp måste innehålla en länk för avanmälan, vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [meddelandeförinställningsnivå](../configuration/message-presets.md#email-type) och när [skapar meddelandet](get-started-content.md#create-new-message).
 
 ### Extern avanmälan {#opt-out-external-lp}
 
