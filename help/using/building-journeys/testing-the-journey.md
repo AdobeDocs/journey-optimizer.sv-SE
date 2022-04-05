@@ -1,14 +1,14 @@
 ---
-title: Testa resan
-description: Läs om testning av resan
+title: Testa din resa
+description: Lär dig hur du testar din resa
 feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
 exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
-source-git-commit: 8a859af9ad09ca3f240ff6f355d4e5f34d2e4eac
+source-git-commit: 2ab1010ac97ef2116984fcd6985374aed3d6f9f6
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1600'
 ht-degree: 1%
 
 ---
@@ -18,23 +18,24 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ajo_journey_test"
 >title="Testa din resa"
->abstract="Du kan testa din resa innan den publiceras med testprofiler. På så sätt kan ni analysera hur individer flödar in på resan och felsöka före publicering."
+>abstract="Använd testprofiler för att testa resan innan du publicerar den. På så sätt kan ni analysera hur individer flödar in på resan och felsöka före publicering."
 
-Innan du kan testa din resa måste du åtgärda eventuella fel. Se [det här avsnittet](../building-journeys/troubleshooting.md#checking-for-errors-before-testing).
+Använd testprofiler för att testa resan innan du publicerar den. I det här läget kan du testa din resa och identifiera problem med testprofiler.
 
-Du kan testa din resa innan den publiceras med testprofiler. På så sätt kan ni analysera hur individer flödar in på resan och felsöka före publicering.
+Det är bara testprofiler som kan gå in på en resa i testläge. Du kan antingen skapa nya testprofiler eller omvandla befintliga profiler till testprofiler. Läs mer om testprofiler i [det här avsnittet](../segment/creating-test-profiles.md).
 
-Det är bara testprofiler som kan gå in på en resa i testläge. Du kan antingen skapa en ny testprofil eller omvandla en befintlig profil till en testprofil. Se detta [section](../segment/creating-test-profiles.md).
+>[!NOTE]
+>
+>Innan du testar din resa måste du åtgärda eventuella fel. Lär dig hur du kontrollerar fel innan du testar i [det här avsnittet](../building-journeys/troubleshooting.md#checking-for-errors-before-testing).
+
 
 Så här använder du testläget:
 
-1. Innan du testar din resa kontrollerar du att den är giltig och att det inte finns något fel. Du kommer inte att kunna starta ett test av en resa med fel. Se [det här avsnittet](../building-journeys/troubleshooting.md#checking-for-errors-before-testing). En varningssymbol visas om det finns fel.
-
-1. Aktivera testläget genom att klicka på **[!UICONTROL Test]** i det övre högra hörnet.
+1. Aktivera testläget genom att aktivera **[!UICONTROL Test]** i det övre högra hörnet.
 
    ![](assets/journeytest1.png)
 
-1. Använd **[!UICONTROL Wait time]** i det nedre vänstra hörnet för att definiera den tid som varje vänteaktivitet och händelsetimeout ska vara i testläge. Standardtiden är 10 sekunder för timeout för väntetider och händelser. Detta säkerställer att du får testresultaten snabbt. Den här parametern visas bara om du har släppt en eller flera vänteaktiviteter under din resa.
+1. Om resan har minst en **Vänta** aktivitet, ange **[!UICONTROL Wait time]** parameter för att definiera den tid som varje vänteaktivitet och händelsetimeout ska vara i testläge. Standardtiden är 10 sekunder för timeout för väntetider och händelser. Detta säkerställer att du får testresultaten snabbt.
 
    ![](assets/journeytest_wait.png)
 
@@ -42,19 +43,19 @@ Så här använder du testläget:
    >
    >När en reaktionshändelse används under en resa är väntetiden som standard och minimivärdet 40 sekunder. Se [det här avsnittet](../building-journeys/reaction-events.md).
 
-1. Klicka **[!UICONTROL Trigger an event]** för att konfigurera och skicka händelser till resan.
+1. Använd **[!UICONTROL Trigger an event]** för att konfigurera och skicka händelser till resan.
 
    ![](assets/journeyuctest1.png)
 
-1. Konfigurera de olika fälten. I **Profilidentifierare** anger du värdet för fältet som används för att identifiera testprofilen. Det kan till exempel vara e-postadressen. Se till att skicka händelser som rör testprofiler. Se [Aktivera händelser](#firing_events).
+1. Konfigurera de olika fälten. I **Profilidentifierare** anger du värdet för fältet som används för att identifiera testprofilen. Det kan till exempel vara e-postadressen. Se till att skicka händelser som rör testprofiler. Se [det här avsnittet](#firing_events).
 
    ![](assets/journeyuctest1-bis.png)
 
-1. När du har tagit emot händelserna klickar du på **[!UICONTROL Show log]** för att visa testresultatet och verifiera dem. Se [Visa loggarna](#viewing_logs).
+1. När du har tagit emot händelserna klickar du på **[!UICONTROL Show log]** för att visa testresultatet och verifiera dem. Se [det här avsnittet](#viewing_logs).
 
    ![](assets/journeyuctest2.png)
 
-1. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa den igen. När testet är klart kan du publicera din resa. Läs [den här sidan](../building-journeys/publishing-the-journey.md).
+1. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa den igen. När testerna är klara kan du publicera din resa. Läs [den här sidan](../building-journeys/publishing-the-journey.md).
 
 ## Viktiga anteckningar {#important_notes}
 
@@ -66,16 +67,16 @@ Så här använder du testläget:
 * Du kan aktivera/inaktivera testläget så många gånger som behövs.
 * Du kan inte ändra din resa när testläget är aktiverat. När du är i testläge kan du publicera resan direkt, du behöver inte inaktivera testläget tidigare.
 * När en delning nås väljs alltid den översta grenen. Du kan ordna om placeringen av de delade grenarna om du vill att testet ska välja en annan bana.
-* För att optimera prestandan och förhindra föråldrad resursanvändning kommer alla resor i testläge som inte har utlösts på en vecka att återgå till statusen Utkast.
+* För att optimera prestanda och förhindra föråldrad resursanvändning kommer alla resor i testläge som inte har utlösts på en vecka att växla tillbaka till **Utkast** status.
 
-## Aktivera händelser {#firing_events}
+## Utlös dina händelser {#firing_events}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_test_configuration"
 >title="Konfigurera testläget"
 >abstract="Om resan innehåller flera händelser använder du listrutan för att välja en händelse. Konfigurera sedan de fält som skickats och körningen av den händelse som skickats för varje händelse."
 
-The **[!UICONTROL Trigger an event]** kan du konfigurera en händelse som får en person att komma in på resan.
+Använd **[!UICONTROL Trigger an event]** för att konfigurera en händelse som får en person att komma in på resan.
 
 >[!NOTE]
 >
@@ -101,7 +102,7 @@ När du väljer en annan testprofil på händelsekonfigurationsskärmen och kör
 
 När du öppnar en resa i ett test motsvarar den visade sökvägen det senaste testet som utfördes.
 
-Det visuella flödet fungerar oavsett om händelsen aktiveras via gränssnittet eller externt (med t.ex. Postman).
+Det visuella flödet fungerar oavsett om händelsen aktiveras via gränssnittet eller externt (med till exempel Postman).
 
 ## Testläge för regelbaserade resor {#test-rule-based}
 
@@ -111,20 +112,18 @@ När en händelse utlöses **Händelsekonfiguration** kan du definiera de hände
 
 ![](assets/jo-event8.png)
 
-Mer information om hur du använder testläget finns i [den här sidan](../building-journeys/testing-the-journey.md).
-
 ## Testläge för affärshändelser {#test-business}
 
-När du använder en affärshändelse (se [det här avsnittet](../event/about-events.md)) kan du i testläge utlösa en enskild testprofilentré under resan, simulera händelsen och skicka rätt profil-ID. Du måste godkänna händelseparametrarna och identifieraren för den testprofil som ska gå in på resan i testet. Du kan inte använda **[!UICONTROL Up to 100 profiles at once]** alternativ som finns för andra segmentbaserade resor. I testläge finns det inget kodläge tillgängligt för resor baserat på affärshändelser.
+När en [affärshändelse](../event/about-events.md)använder du testläget för att utlösa en enskild testprofilentré under resan, simulera händelsen och skicka rätt profil-ID. Du måste godkänna händelseparametrarna och identifieraren för den testprofil som ska gå in på resan i testet. Du kan inte använda **[!UICONTROL Up to 100 profiles at once]** alternativ som finns för andra segmentbaserade resor. I testläge finns det inget kodläge tillgängligt för resor baserat på affärshändelser.
 
 Observera att du inte kan ändra definitionen för affärshändelser i samma testsession när du först utlöser en affärshändelse. Du kan bara göra så att samma person eller en annan person anger resan som går genom samma eller en annan identifierare. Om du vill ändra parametrar för affärshändelser måste du stoppa och starta om testläget.
 
-## Visa loggarna {#viewing_logs}
+## Visa loggar {#viewing_logs}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_test_logs"
 >title="Testlägesloggar"
->abstract="Du kan visa testresultaten. På den här sidan visas resans aktuella information i JSON-format. Med en knapp kan du kopiera hela noder. Du måste uppdatera sidan manuellt för att kunna uppdatera resans testresultat."
+>abstract="Knappen Visa logg visar testresultat i JSON-format. Dessa resultat visar antalet individer under resan och deras status."
 
 The **[!UICONTROL Show log]** kan du visa testresultaten. På den här sidan visas resans aktuella information i JSON-format. Med en knapp kan du kopiera hela noder. Du måste uppdatera sidan manuellt för att kunna uppdatera resans testresultat.
 
@@ -157,9 +156,11 @@ När en händelse aktiveras i testläget genereras en datauppsättning automatis
 
 Testläget skapar automatiskt en Experience Event och skickar den till Adobe Experience Platform. Källan för upplevelsehändelsen heter&quot;Journey Orchestration Test Events&quot;.
 
-Vid flera händelser som triggas av flera resor
+<!--
+In the case of multiple events triggered from multiple journeys
 
-Det finns ett scenario när flera händelser skickas från flera resor som kommer att ha olika scheman. Kan ett schema mappas till en datauppsättning? Annars behöver vi flera datauppsättningar.
+There is a scenario when there are multiple events sent from multiple journeys that will have different Schemas. Can n schema map to 1 dataset? If not, then we will have multiple datasets required.
+-->
 
 Dessa datauppsättningar skapas och namnges automatiskt om en måldatauppsättning inte ingår i upplevelsehändelsen. Därför ser vi dagens&quot;Automatiskt skapade datauppsättningar för resenärer&quot;.
 
