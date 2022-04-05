@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 948fe843-47cf-4b20-976a-48069eb9cf5c
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: c058c4835c560f12e3d53bfb766324405b12968f
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 4%
@@ -75,7 +75,7 @@ Typ: string
 
 ## fetchOriginErrorCode {#fetchoriginerrorcode-field}
 
-Felkoden som tillhandahålls av systemet [!DNL Journey Orchestration] frågar. Det kan till exempel vara en 404, 500 osv.
+Felkoden som tillhandahålls av systemet [!DNL Journey Optimizer] frågar. Det kan till exempel vara en 404, 500 osv.
 
 Typ: string
 

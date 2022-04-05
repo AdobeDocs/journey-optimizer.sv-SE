@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
-source-git-commit: 2ab1010ac97ef2116984fcd6985374aed3d6f9f6
+source-git-commit: c058c4835c560f12e3d53bfb766324405b12968f
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1524'
 ht-degree: 1%
 
 ---
@@ -156,12 +156,3 @@ När en händelse aktiveras i testläget genereras en datauppsättning automatis
 
 Testläget skapar automatiskt en Experience Event och skickar den till Adobe Experience Platform. Källan för upplevelsehändelsen heter&quot;Journey Orchestration Test Events&quot;.
 
-<!--
-In the case of multiple events triggered from multiple journeys
-
-There is a scenario when there are multiple events sent from multiple journeys that will have different Schemas. Can n schema map to 1 dataset? If not, then we will have multiple datasets required.
--->
-
-Dessa datauppsättningar skapas och namnges automatiskt om en måldatauppsättning inte ingår i upplevelsehändelsen. Därför ser vi dagens&quot;Automatiskt skapade datauppsättningar för resenärer&quot;.
-
-Namngivningen av vår källa skapar automatiskt. Om vi har flera händelser bör vi sammanfoga och låta det vara &quot;Journey Orchestration Test Event - NAME OF SCHEMA&quot;. Detta blir automatiskt&quot;Automatiskt genererad datauppsättning för testhändelsen Journey Orchestration - SCHEMAS NAMN&quot;.
