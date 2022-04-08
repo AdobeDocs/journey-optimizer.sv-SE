@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: de5e9e6026222ce57a7bb37e11aa6f8bbf583d19
+source-git-commit: 4ae0f9a43ecacb031168ea455db49a9241ab38fa
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2187'
 ht-degree: 1%
 
 ---
@@ -84,12 +84,12 @@ E-postinställningarna definieras i ett dedikerat avsnitt i meddelandeförinstä
 
 Konfigurera inställningarna enligt beskrivningen nedan.
 
-### Typ av e-post{#email-type}
+### Typ av e-post {#email-type}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_presets_emailtype"
->title="E-posttyp"
->abstract="Fylls i"
+>title="Definiera e-postkategorin"
+>abstract="Välj den typ av meddelanden som ska skickas när den här förinställningen används: Marknadsföring för kampanjmeddelanden, som kräver användargodkännande, eller Transactional för icke-kommersiella meddelanden, som också kan skickas till profiler som inte längre prenumererar i specifika sammanhang."
 
 I **E-POSTTYP** väljer du den typ av meddelande som ska skickas med förinställningen: **Marknadsföring** eller **Transactional**.
 
@@ -193,12 +193,13 @@ I **[!UICONTROL HEADER PARAMETERS]** anger du avsändarens namn och e-postadress
 >
 >Adresser måste börja med en bokstav (A-Z) och får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-` tecken.
 
-### Parametrar för återförsök av e-post{#email-retry}
+### Parametrar för återförsök av e-post {#email-retry}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_presets_retryperiod"
->title="Tidsperiod för nytt e-postförsök"
->abstract="Fylls i"
+>title="Justera tidsperioden för återförsök"
+>abstract="Försök utförs i 3,5 dagar (84 timmar) när ett e-postmeddelande inte kan skickas på grund av ett tillfälligt fel med mjuk studsning. Du kan justera den här standardperioden för återförsök så att den passar dina behov bättre."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/email-configuration/monitor-reputation/retries.html" text="Om återförsök"
 
 Du kan konfigurera **Parametrar för återförsök av e-post**.
 
