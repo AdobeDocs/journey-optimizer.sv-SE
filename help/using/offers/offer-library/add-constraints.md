@@ -5,9 +5,10 @@ feature: Offers
 topic: Integrations
 role: User
 level: Intermediate
-source-git-commit: 0fa8ba1dc16062ea1553f9978752f3c018cec4c6
+exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
+source-git-commit: 5ea04ea9f8ed76b616db1038b917f2d37dea003c
 workflow-type: tm+mt
-source-wordcount: '1490'
+source-wordcount: '1552'
 ht-degree: 1%
 
 ---
@@ -23,6 +24,11 @@ ht-degree: 1%
 >id="od_offer_priority"
 >title="Prioritet för erbjudande"
 >abstract="I det här fältet kan du ange prioritetsinställningar för erbjudandet. Prioritet är ett nummer som används för att rangordna erbjudanden som uppfyller alla krav, som berättigande, datum och appning."
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_priority"
+>title="Prioritet"
+>abstract="Prioriteten hjälper till att definiera prioriteten för erbjudandet jämfört med andra om användaren kvalificerar för mer än ett erbjudande. Ju högre prioritet ett erbjudande har, desto högre blir prioriteringen jämfört med andra erbjudanden."
 
 Med begränsningar kan du definiera villkoren för hur ett erbjudande ska visas.
 
@@ -49,6 +55,11 @@ Om du till exempel anger följande begränsningar:
 * Erbjudandet gäller endast en gång per användare och gäller för alla ersättningar.
 
 ## Kvalificering {#eligibility}
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_eligibility"
+>title="Kvalificering"
+>abstract="Du kan begränsa erbjudandet till specifika profiler som du definierar med hjälp av segment eller beslutsregler."
 
 >[!CONTEXTUALHELP]
 >id="od_offer_eligibility"
@@ -107,8 +118,8 @@ I princip är utdata för ett segment en lista med profiler, medan en beslutsreg
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_capping"
->title="Om begränsning av erbjudanden"
->abstract="I det här fältet kan du ange hur många gånger erbjudandet kan presenteras."
+>title="Takning"
+>abstract="Begränsning används som en begränsning för att definiera det maximala antal gånger ett erbjudande kan presenteras."
 
 Begränsning används som en begränsning för att definiera det maximala antal gånger ett erbjudande kan presenteras.
 

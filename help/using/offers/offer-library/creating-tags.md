@@ -6,14 +6,19 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: fe2b7ce4-dc63-477a-a64f-f3828c6a232e
-source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
+source-git-commit: 5ea04ea9f8ed76b616db1038b917f2d37dea003c
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '188'
 ht-degree: 5%
 
 ---
 
 # Skapa taggar {#create-tags}
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_offer_tags"
+>title="Taggar"
+>abstract="Associera en eller flera taggar med erbjudandet för att ordna ditt offertbibliotek och enklare hitta erbjudanden. Taggar skapas från menyn Komponent."
 
 Genom att associera taggar med erbjudandena blir det enklare att hålla ordning på dem. Du kan till exempel märka dina erbjudanden på den svarta fredagen med taggen &quot;Black Friday&quot;. Du kan sedan använda sökfunktionen i erbjudandebiblioteket för att enkelt hitta alla erbjudanden med den taggen.
 
