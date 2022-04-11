@@ -4,9 +4,9 @@ description: Lär dig hur du konfigurerar miljön för att skapa och använda la
 role: Admin
 level: Intermediate
 exl-id: 7cf1f083-bef0-40b5-8ddd-920a9d108eca
-source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
+source-git-commit: 62d8f4b0caa4ed74991e92475392c3278bdf5317
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '879'
 ht-degree: 1%
 
 ---
@@ -19,6 +19,13 @@ ht-degree: 1%
 >id="ajo_admin_config_lp_subdomain"
 >title="Skapa en förinställning för landningssida"
 >abstract="Om du vill kunna skapa en förinställning för landningssida måste du kontrollera att du tidigare har konfigurerat minst en underdomän för landningssida att välja från listan med underdomännamn."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/lp-configuration.html#lp-create-preset" text="Skapa förinställningar för landningssidor"
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_subdomain_lp"
+>title="Delegera en underdomän för landningssida"
+>abstract="Du måste konfigurera en underdomän att använda för dina landningssidor, eftersom du behöver den här underdomänen för att skapa en förinställning för landningssidor. Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en ny underdomän."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/lp-configuration.html#lp-create-preset" text="Skapa förinställningar för landningssidor"
 
 För att kunna [skapa förinställningar för landningssidor](#lp-create-preset)måste du konfigurera de underdomäner som du ska använda för dina landningssidor.
 
