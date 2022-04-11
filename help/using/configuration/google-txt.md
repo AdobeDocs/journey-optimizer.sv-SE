@@ -6,18 +6,23 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 311eb2d1-e445-43e6-bc2c-c6288b637f47
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: d568480005d9b4aad5982c26184a5add0be6c83a
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 26%
+source-wordcount: '205'
+ht-degree: 21%
 
 ---
 
 # Lägga till en Google TXT-post i en underdomän {#google-txt-record}
 
+>[!CONTEXTUALHELP]
+>id="ajo_admin_subdomain_google"
+>title="Google TXT-poster"
+>abstract="För att e-post ska kunna levereras till Gmail-adresser kan du lägga till särskilda TXT-poster för verifiering av Google-webbplatser i din underdomän för att se till att den är verifierad."
+
 TXT-poster är en typ av DNS-poster som används för att tillhandahålla textinformation om en domän som kan läsas av externa källor.
 
-För att säkerställa god levererbarhet och framgångsrik leverans av e-post till Gmail-adresser, [!DNL Journey Optimizer] I kan du lägga till särskilda TXT-poster för verifiering av Google-webbplatser i dina underdomäner för att säkerställa att de verifieras.
+För att säkerställa optimal leverans och framgångsrik leverans av e-post till Gmail-adresser, [!DNL Journey Optimizer] Med kan du lägga till särskilda TXT-poster för verifiering av Google-webbplatser i din underdomän för att kontrollera att den är verifierad.
 
 >[!CAUTION]
 >
