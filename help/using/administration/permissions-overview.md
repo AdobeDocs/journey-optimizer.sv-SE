@@ -6,10 +6,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: b8e266b1-d8eb-4c77-9341-9761b82609b0
-source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
+source-git-commit: f1ac47a0cb405eaadc5428e7e5479eaf776d7abe
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 11%
+source-wordcount: '190'
+ht-degree: 12%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 11%
 
 [!DNL Journey Optimizer]Med kan du definiera och hantera behörigheter som tilldelats till olika användare.  Behörigheter är en uppsättning rättigheter och begränsningar som ger eller nekar åtkomst till funktioner och funktioner i produkten.
 
-➡️ [Läs mer om Adobe Journey Optimizer åtkomstkontrollssystem i den här videon](#video)
+➡️ [Läs mer om åtkomstkontroll i Adobe Journey Optimizer i den här videon](#video)
 
 Användarhantering i [!DNL Journey Optimizer] bygger på tre koncept:
 
@@ -33,6 +33,6 @@ Varje koncept kan hanteras av **[!UICONTROL Product administrators]** som har ti
 
 ## Instruktionsvideo{#video}
 
-Läs mer om Adobe Journey Optimizer åtkomstkontrollsystem och de åtta anpassade produktprofilerna. Lär dig hur du hanterar produktprofiler och behörigheter och hur du lägger till och hanterar användare.
+Läs mer om åtkomstkontrollssystem och anpassade produktprofiler i Adobe Journey Optimizer. Lär dig hur du hanterar produktprofiler och behörigheter och hur du lägger till och hanterar användare.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333998?quality=12)

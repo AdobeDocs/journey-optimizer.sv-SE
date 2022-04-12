@@ -5,9 +5,9 @@ description: Översikt över AI-tjänsten
 role: User
 level: Intermediate
 exl-id: 2b6989b3-cefe-4ca9-85fc-961a437edef3
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: f1ac47a0cb405eaadc5428e7e5479eaf776d7abe
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Integration mellan [!DNL Journey Optimizer] och [!DNL Intelligent Services] kan 
 
 Kundens AI är en del av [!DNL Adobe Intelligent Services]. Det hjälper till att förutsäga vad en kund sannolikt kommer att göra. Se [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html){target=&quot;_blank&quot;}.
 
-Med kundens AI kan varumärken skapa maskininlärningsbaserade poäng som är tillgängliga som profilattribut i Adobe Experience Platform-profilerna (kundprofil i realtid).
+Med kundens AI kan varumärken skapa maskininlärningsbaserade poäng som är tillgängliga som profilattribut i Adobe Experience Platform-profiler (kundprofil i realtid).
 
 Det innebär att de kan användas som andra profilattribut i Journey Optimizer (för att fatta de bästa besluten), åtgärder eller segmentbyggen.
 

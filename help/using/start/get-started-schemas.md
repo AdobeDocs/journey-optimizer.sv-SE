@@ -5,9 +5,9 @@ feature: Schemas
 role: User
 level: Beginner
 exl-id: c2a8df2e-ff94-4f9a-a53e-bbf9f663cc81
-source-git-commit: 2cca25d16de520dd905143b2b3fe4bea6dbd7801
+source-git-commit: f1ac47a0cb405eaadc5428e7e5479eaf776d7abe
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '321'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ Ett schema är en uppsättning regler som representerar och validerar datastrukt
 
 Lär dig skapa scheman i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html){target=&quot;_blank&quot;}
 
-The **Scheman** arbetsytan i [!DNL Adobe Journey Optimizer] Med användargränssnittet kan du hantera XDM-resurser (Experience Data Model), inklusive scheman, klasser, schemafältgrupper och datatyper. Du kan visa och utforska kärnresurser från Adobe och skapa anpassade resurser och scheman för din organisation.
+The **Scheman** arbetsyta i [!DNL Adobe Journey Optimizer] Med användargränssnittet kan du hantera XDM-resurser (Experience Data Model), inklusive scheman, klasser, schemafältgrupper och datatyper. Du kan visa och utforska kärnresurser från Adobe och skapa anpassade resurser och scheman för din organisation.
 
 ![](assets/schemas-home.png)
 

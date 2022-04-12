@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-source-git-commit: 819e54313e3ec15b9c215455e25d9ff4fc60fb0b
+source-git-commit: f1ac47a0cb405eaadc5428e7e5479eaf776d7abe
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '992'
 ht-degree: 1%
 
 ---
@@ -103,6 +103,11 @@ Möjliga orsaker till leveransfel är:
 
 ## Lägga till adresser och domäner manuellt {#add-addresses-and-domains}
 
+>[!CONTEXTUALHELP]
+>id="ajo_admin_suppression_list"
+>title="Lägg till e-postmeddelanden/domäner i listan över inaktiveringar"
+>abstract="Du kan fylla i listan över Journey Optimizer-undertryckningar manuellt om du vill utesluta vissa e-postadresser och/eller domäner från sändningen."
+
 När ett meddelande inte kan levereras till en e-postadress läggs adressen automatiskt till i listan över undertryckningar baserat på den definierade undertryckningsregeln eller avhoppsantalet.
 
 Du kan även fylla i [!DNL Journey Optimizer] utelämningslista om du vill exkludera specifika e-postadresser och/eller domäner från din sändning.
@@ -114,6 +119,11 @@ Om du vill göra det väljer du **[!UICONTROL Add email or domain]** och däreft
 ![](assets/suppression-list-add-email.png)
 
 ### Lägg till en adress eller domän {#add-one-address-or-domain}
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_suppression_list_address"
+>title="Lägg till ett objekt i listan över inaktiveringar"
+>abstract="Du kan fylla i undertryckningslistan genom att lägga till e-postadresser och/eller domäner en i taget."
 
 1. Välj **[!UICONTROL One by one]** alternativ.
 
@@ -132,6 +142,11 @@ Om du vill göra det väljer du **[!UICONTROL Add email or domain]** och däreft
 1. Klicka på **[!UICONTROL Submit]**.
 
 ### Överföra en CSV-fil {#upload-csv-file}
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_suppression_list_csv"
+>title="Överför CSV för att lägga till objekt i undertryckningslistan"
+>abstract="Du kan fylla i undertryckningslistan genom att överföra en CSV-fil som är ifylld med de e-postadresser/domäner som du vill utesluta."
 
 1. Välj **[!UICONTROL Upload CSV]** alternativ.
 

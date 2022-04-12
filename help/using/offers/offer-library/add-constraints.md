@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
-source-git-commit: 5ea04ea9f8ed76b616db1038b917f2d37dea003c
+source-git-commit: f1ac47a0cb405eaadc5428e7e5479eaf776d7abe
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1553'
 ht-degree: 1%
 
 ---
@@ -133,7 +133,7 @@ Följ stegen nedan om du vill ställa in capping.
 
    >[!NOTE]
    >
-   >Talet måste vara större än 0.
+   >Talet måste vara ett heltal som är större än 0.
 
 1. Ange om du vill att appningen ska användas för alla användare eller för en viss profil:
 
@@ -147,15 +147,15 @@ Följ stegen nedan om du vill ställa in capping.
 
       Om du till exempel är en bank med ett Platinum-kreditkortserbjudande vill du inte att det här erbjudandet ska visas mer än fem gånger per profil. Ni tror faktiskt att om användaren har sett erbjudandet fem gånger och inte har följt det, har de större chans att agera på nästa bästa erbjudande.
 
-1. Om du har definierat flera [representationer](#representations) för ditt erbjudande, ange om du vill tillämpa begränsning för **[!UICONTROL All placements]** eller **[!UICONTROL Per placement]**.
+1. Om du har definierat flera [representationer](#representations) för ditt erbjudande, ange om du vill tillämpa begränsning **[!UICONTROL Across all placements]** eller **[!UICONTROL For each placement]**.
 
    ![](../assets/offer-capping-placement.png)
 
-   * **[!UICONTROL All placements]**: antalet licenser kommer att summera alla beslut för alla ersättningar som är kopplade till erbjudandet.
+   * **[!UICONTROL Across all placements]**: antalet licenser kommer att summera alla beslut för alla ersättningar som är kopplade till erbjudandet.
 
       Om ett erbjudande till exempel har **E-post** placering och en **Webb** placeringen och du ställer in cappen på **2 per profil för alla placeringar** kan varje profil få upp till två gånger i rabatt, oberoende av placeringsmix.
 
-   * **[!UICONTROL Per placement]**: antalet licenser tillämpas separat på antalet beslut för varje placering.
+   * **[!UICONTROL For each placement]**: antalet licenser tillämpas separat på antalet beslut för varje placering.
 
       Om ett erbjudande till exempel har **E-post** placering och en **Webb** placeringen och du ställer in cappen på **2 per profil för varje placering** kan varje profil få upp till två gånger för e-postplaceringen och ytterligare två gånger för webblatsplaceringen.
 

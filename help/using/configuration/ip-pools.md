@@ -6,18 +6,23 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 606334c3-e3e6-41c1-a10e-63508a3ed747
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: f1ac47a0cb405eaadc5428e7e5479eaf776d7abe
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '492'
 ht-degree: 0%
 
 ---
 
 # Skapa IP-pooler {#create-ip-pools}
 
+>[!CONTEXTUALHELP]
+>id="ajo_admin_ip_pool"
+>title="Konfigurera en IP-pool"
+>abstract="Du kan skapa IP-pooler för att gruppera IP-adresserna för dina underdomäner för att förbättra e-postleveransen."
+
 ## Om IP-pooler {#about-ip-pools}
 
-Med Journey Optimizer kan du skapa IP-pooler för att gruppera IP-adresserna för dina underdomäner.
+Med [!DNL Journey Optimizer]kan du skapa IP-pooler för att gruppera IP-adresserna för dina underdomäner.
 
 Vi rekommenderar starkt att du skapar IP-pooler för e-postleverans. På så sätt kan du förhindra att en underdomän får ett anseende som påverkar dina andra underdomäner.
 

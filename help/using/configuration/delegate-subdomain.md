@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
+source-git-commit: f1ac47a0cb405eaadc5428e7e5479eaf776d7abe
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1607'
 ht-degree: 5%
 
 ---
@@ -17,20 +17,28 @@ ht-degree: 5%
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomainname"
->title="Om delegering av underdomäner"
->abstract="Med Journey Optimizer kan du delegera dina underdomäner helt till Adobe. Adobe kommer att kunna leverera meddelanden som en hanterad tjänst genom att kontrollera och underhålla alla aspekter av DNS."
+>title="Delegering av underdomän"
+>abstract="Med Journey Optimizer kan du delegera dina underdomäner till Adobe. Du kan delegera en underdomän till Adobe helt eller skapa en underdomän med CNAME för att peka mot Adobe-specifika poster."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/email-configuration/delegate-subdomains/about-subdomain-delegation.html#subdomain-delegation-methods" text="Konfigurationsmetoder för underdomäner"
 
-Delegering av domännamn är en metod som tillåter ägaren av ett domännamn (tekniskt: en DNS-zon) för att delegera en indelning av den (tekniskt: en DNS-zon under den, som kan kallas en underzon) till en annan entitet. Om du hanterar zonen&quot;example.com&quot; kan du som kund delegera underzonen&quot;marketing.example.com&quot; till Adobe.
-
-Genom att delegera en underdomän för användning med [!DNL Journey Optimizer], kan klienter förlita sig på att Adobe upprätthåller den DNS-infrastruktur som krävs för att uppfylla branschstandardkraven för leverans för avsändardomäner för e-postmarknadsföring, samtidigt som de behåller och kontrollerar DNS för sina interna e-postdomäner.
+Delegering av domännamn är en metod som tillåter ägaren av ett domännamn (tekniskt: en DNS-zon) för att delegera en indelning av den (tekniskt: en DNS-zon under den, som kan kallas en underzon) till en annan entitet. Om du hanterar zonen&quot;example.com&quot; kan du som kund delegera underzonen&quot;marketing.example.com&quot; till Adobe. Läs mer på [delegering av underdomän](about-subdomain-delegation.md)
 
 >[!NOTE]
 >
 >Som standard [!DNL Journey Optimizer] Med licensavtalet kan du delegera upp till 10 underdomäner. Kontakta Adobe om du vill öka begränsningen.
 
+Du kan delegera en underdomän helt eller skapa en underdomän med CNAME för att peka mot Adobe-specifika poster. Läs mer om skillnaderna mellan [konfigurationsmetoder för underdomäner](about-subdomain-delegation.md#subdomain-delegation-methods).
+
 ## Fullständig delegering av underdomäner {#full-subdomain-delegation}
 
+>[!CONTEXTUALHELP]
+>id="ajo_admin_subdomain_dns"
+>title="Generera matchande DNS-poster"
+>abstract="Om du vill delegera en ny underdomän till Adobe måste du kopiera Adobe-namnserverinformationen som visas i Journey Optimizer-gränssnittet och klistra in den i din domänvärdslösning för att generera matchande DNS-poster. När kontrollerna är klara kan underdomänen användas för att leverera meddelanden."
+
 [!DNL Journey Optimizer] kan du delegera dina underdomäner till Adobe direkt från produktgränssnittet. På så sätt kan Adobe leverera meddelanden som en hanterad tjänst genom att kontrollera och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra e-postkampanjer.
+
+Du kan förlita dig på att Adobe upprätthåller den DNS-infrastruktur som krävs för att uppfylla branschstandardkraven för leverans för e-postmarknadsföringsavsändardomäner, samtidigt som du fortsätter att underhålla och kontrollera DNS för dina interna e-postdomäner.
 
 Följ stegen nedan om du vill delegera en ny underdomän till Adobe helt:
 
@@ -87,6 +95,11 @@ När en underdomän har delegerats till Adobe i [!DNL Journey Optimizer]skapas e
 >Parallell körning av underdomäner stöds för närvarande inte i [!DNL Journey Optimizer]. Om du försöker skicka en underdomän för delegering när en annan har **[!UICONTROL Processing]** får du ett felmeddelande.
 
 ## CNAME-delegering av underdomän {#cname-subdomain-delegation}
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_subdomain_dns_cname"
+>title="Generera matchande DNS- och valideringsposter"
+>abstract="Om du vill delegera en underdomän med CNAME måste du kopiera och klistra in informationen om Adobe-namnservern och den SSL CDN URL-valideringspost som visas i Journey Optimizer-gränssnittet i värdplattformen. När kontrollerna är klara kan underdomänen användas för att leverera meddelanden."
 
 Om du har domänspecifika begränsningsprinciper och du vill att Adobe endast ska ha partiell kontroll över DNS, kan du välja att utföra alla DNS-relaterade aktiviteter på din sida.
 

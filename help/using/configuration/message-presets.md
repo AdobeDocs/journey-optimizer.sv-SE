@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 4ae0f9a43ecacb031168ea455db49a9241ab38fa
+source-git-commit: f1ac47a0cb405eaadc5428e7e5479eaf776d7abe
 workflow-type: tm+mt
-source-wordcount: '2187'
+source-wordcount: '2266'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Med [!DNL Journey Optimizer]kan du konfigurera meddelandeförinställningar som 
 
 >[!CAUTION]
 >
-> * Konfigurationen av meddelandeförinställningar är begränsad till [Reseadministratörer](../administration/ootb-product-profiles.md#journey-administrator). Om du vill skapa, redigera och ta bort meddelandeförinställningar måste du ha [Hantera meddelandeförinställningar](../administration/high-low-permissions.md#manage-message-presets).
+> * Om du vill skapa, redigera och ta bort meddelandeförinställningar måste du ha [Hantera meddelandeförinställningar](../administration/high-low-permissions.md#manage-message-presets).
 >
 > * Du måste utföra [E-postkonfiguration](#configure-email-settings) och [Push-konfiguration](../configuration/push-configuration.md) steg innan du skapar meddelandeförinställningar.
 
@@ -29,6 +29,11 @@ När meddelandeförinställningarna har konfigurerats kan du välja dem när du 
 ➡️ [Lär dig hur du skapar och använder e-postförinställningar i den här videon](#video-presets)
 
 ## Skapa en meddelandeförinställning {#create-message-preset}
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_message_presets"
+>title="Information och inställningar för meddelandeförinställning"
+>abstract="Genom att ställa in en meddelandeförinställning kan du välja vilken kanal den gäller för och definiera alla tekniska parametrar som krävs för dina meddelanden, till exempel e-posttyp, underdomän som ska användas, avsändarnamn, mobilappar osv."
 
 Så här skapar du en meddelandeförinställning:
 
@@ -97,11 +102,11 @@ I **E-POSTTYP** väljer du den typ av meddelande som ska skickas med förinstäl
 
 * Välj **Transactional** för icke-kommersiella meddelanden, t.ex. orderbekräftelse, meddelanden om lösenordsåterställning eller leveransinformation.
 
-När [skapa ett meddelande](../messages/get-started-content.md#create-new-message)måste du välja en giltig meddelandeförinställning för den valda kategorin och de valda kanalerna.
-
 >[!CAUTION]
 >
 >**Transactional** meddelanden kan skickas till profiler som avbeställer marknadskommunikation. Dessa meddelanden kan bara skickas i särskilda sammanhang.
+
+När [skapa ett meddelande](../messages/get-started-content.md#create-new-message)måste du välja en giltig meddelandeförinställning som matchar den kategori du valde för meddelandet.
 
 ### Underdomän och IP-pool {#subdomains-and-ip-pools}
 
@@ -110,6 +115,10 @@ I **INFORMATION OM UNDERDOMÄN- OCH IP-POOL** måste du
 1. Välj den underdomän som ska användas för att skicka e-postmeddelanden. [Läs mer](about-subdomain-delegation.md)
 
 1. Välj den IP-pool som ska associeras med förinställningen. [Läs mer](ip-pools.md)
+
+>[!NOTE]
+>
+>I icke-produktionsmiljöer skapar inte Adobe körklara testunderdomäner och ger inte heller åtkomst till en delad sändande IP-pool. Du måste [delegera dina egna underdomäner](delegate-subdomain.md) och använd IP-adresserna från poolen som tilldelats din organisation.
 
 ### List-Unsubscribe {#list-unsubscribe}
 
@@ -212,6 +221,8 @@ Du måste ange ett heltalsvärde (i timmar eller minuter) inom följande interva
 * För marknadsföringsmeddelanden är den minsta återförsöksperioden 6 timmar.
 * För transaktionsmeddelanden är den minsta återförsöksperioden 10 minuter.
 * För båda e-posttyperna är den maximala återförsöksperioden 84 timmar (eller 5 040 minuter).
+
+Läs mer om återförsök i [det här avsnittet](retries.md).
 
 ## Konfigurera push-inställningar {#configure-push-settings}
 

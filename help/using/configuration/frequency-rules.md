@@ -8,9 +8,9 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
+source-git-commit: f1ac47a0cb405eaadc5428e7e5479eaf776d7abe
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,11 @@ För att göra detta kan du använda en frekvensregel som begränsar antalet med
 
 Regler är tillgängliga från **[!UICONTROL Administration]** > **[!UICONTROL Rules]** -menyn. Alla regler visas sorterade efter ändringsdatum.
 
-![](assets/message-rules-access.png)
+>[!NOTE]
+>
+>Om du vill komma åt, skapa, redigera eller ta bort regler för meddelandefrekvens måste du ha [Hantera frekvensregler](../administration/high-low-permissions.md#manage-frequency-rules) behörighet.
 
-<!--To access, create, edit or delete message frequency rules, you must have the message configuration permission. [Learn more](../administration/high-low-permissions.md#administration-permissions)-->
+![](assets/message-rules-access.png)
 
 Använd filterikonen för att filtrera efter kategori, status och/eller kanal. Du kan också söka på meddelandeetiketten.
 
@@ -134,6 +136,10 @@ Alla frekvensregler som matchar den valda kategorin och kanalen/kanalerna tillä
 <!--Clicking the link out button next to the category selector will jump you over to the rules inventory screen to see which rules will be applied to the message.-->
 
 Du kan visa antalet profiler som har uteslutits från leverans i [Live- och globala vyer](../reports/message-monitoring.md)och i [e-postLive-rapport](../reports/email-live-report.md), där frekvensreglerna listas som en möjlig orsak för användare som inte får leverera.
+
+>[!NOTE]
+>
+>Flera regler kan gälla för samma kanal, men när den nedre gränsen har nåtts utesluts profilen från nästa leverans.
 
 ## Exempel: kombinera flera regler {#frequency-rule-example}
 

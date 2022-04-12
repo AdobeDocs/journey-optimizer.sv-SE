@@ -4,9 +4,9 @@ description: Lär dig hur du använder Adobe Experience Platform-datauppsättnin
 role: User
 level: Beginner
 exl-id: dcdd3c81-0f00-4259-a8a5-9062a4c40b6f
-source-git-commit: 2cca25d16de520dd905143b2b3fe4bea6dbd7801
+source-git-commit: f1ac47a0cb405eaadc5428e7e5479eaf776d7abe
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '260'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ Att lägga till data i Adobe Experience Platform är grunden för att skapa en p
 
 ➡️ [Lär dig hur du skapar och konfigurerar en datauppsättning i den här videon](#video-dataset)
 
-The **Datauppsättningar** arbetsytan i [!DNL Adobe Journey Optimizer] Med användargränssnittet kan du utforska data och skapa datauppsättningar.
+The **Datauppsättningar** arbetsyta i [!DNL Adobe Journey Optimizer] Med användargränssnittet kan du utforska data och skapa datauppsättningar.
 
 ![](assets/datasets-home.png)
 

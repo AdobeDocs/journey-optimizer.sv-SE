@@ -6,33 +6,33 @@ feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: 753ef9f4-b39d-4de3-98ca-e69a1766a78b
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: f1ac47a0cb405eaadc5428e7e5479eaf776d7abe
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '491'
 ht-degree: 2%
 
 ---
 
-# Advanced expression examples{#advanced-expression-examples}
+# Exempel på avancerade uttryck{#advanced-expression-examples}
 
-Den avancerade uttrycksredigeraren kan användas för att skapa villkor som gör att du kan filtrera användare på dina resor. These conditions enable you to target users on time, date, location, duration, or actions such as purchase or abandonment of carts so that they can be retargeted in the journey.
+Den avancerade uttrycksredigeraren kan användas för att skapa villkor som gör att du kan filtrera användare på dina resor. Dessa villkor gör att ni kan inrikta er på användare i tid, på datum, plats, varaktighet eller åtgärder som att köpa eller avstå från kundvagnar så att de kan återställas under resan.
 
 >[!NOTE]
 >
 >Händelser börjar med @, datakällor med #.
 
-## Building conditions on Experience Events
+## Bygga villkor för upplevelsehändelser
 
 Den avancerade uttrycksredigeraren är obligatorisk för att utföra frågor på tidsserier som en lista över inköp eller tidigare klick på meddelanden. Sådana frågor kan inte utföras med den enkla redigeraren.
 
-Erfarenhetshändelserna hämtas från Adobe Experience Platform som en samling i omvänd kronologisk ordning, vilket innebär att
+Experience Events hämtas från Adobe Experience Platform som en samling i omvänd kronologisk ordning, vilket innebär att
 
-* first function will return the most recent event
+* den första funktionen returnerar den senaste händelsen
 * den sista funktionen returnerar den äldsta.
 
 Låt oss till exempel säga att ni vill rikta er mot kunder som har övergett en kundvagn de senaste 7 dagarna för att skicka ett meddelande när kunden närmar sig en butik, med ett erbjudande på artiklar de vill ha som finns i butik.
 
-**You need to build the following conditions:**
+**Du måste skapa följande villkor:**
 
 Först och främst målkunder som surfar i onlinebutiken men inte slutfört beställningen de senaste sju dagarna.
 
@@ -40,7 +40,7 @@ Först och främst målkunder som surfar i onlinebutiken men inte slutfört best
 
 `In (“addToCart”, #{field reference from experience event})`-->
 
-**This expression looks for all events for this user specified in the last 7 days:**
+**Det här uttrycket söker efter alla händelser för den här användaren som har angetts under de senaste 7 dagarna:**
 
 Sedan markeras alla tilläggshändelser som inte omvandlades till completePurchase.
 
@@ -68,7 +68,7 @@ Den angivna tidsstämpeln fungerar som datum-/tidsvärde, den andra är antalet 
                         .productInteraction}))
 ```
 
-This expression returns a boolean.
+Det här uttrycket returnerar ett booleskt värde.
 
 **Nu ska vi skapa ett uttryck som kontrollerar att produkten finns i lager**
 
@@ -96,7 +96,7 @@ This expression returns a boolean.
 
 Därifrån kan ni lägga till ytterligare en väg på resan när produkten inte finns i butik och skicka meddelanden med engagemangserbjudandet. Konfigurera meddelandena därefter och använd personaliseringsdata för att förbättra meddelandets mål.
 
-## Examples of string manipulations with the advanced expression editor
+## Exempel på strängändringar med den avancerade uttrycksredigeraren
 
 **I villkor**
 
@@ -122,7 +122,7 @@ Samma fråga med `Is sensitive` om du inte markerar det här alternativet genere
                         .name}, "Arlington")
 ```
 
-**In actions**
+**I funktionsmakron**
 
 Följande uttryck gör att du kan definiera CRM-ID:t i ett åtgärdspersonaliseringsfält:
 
@@ -145,4 +145,4 @@ substr(
 
 Förklaring: Det här exemplet använder `substr` och `lastIndexOf` funktioner för att ta bort klammerparenteser som omger det CRM-ID som skickas med en starthändelse för mobilappar.
 
-For more on how to use the advanced expression editor, watch [this video](https://experienceleague.adobe.com/docs/platform-learn/tutorials/journey-orchestration/create-a-journey.html).
+Mer information om hur du använder den avancerade uttrycksredigeraren finns i [den här videon](https://experienceleague.adobe.com/docs/platform-learn/tutorials/journey-orchestration/create-a-journey.html).
