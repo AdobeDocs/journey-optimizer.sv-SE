@@ -4,9 +4,9 @@ description: Lär dig hur du använder Adobe Experience Platform-datauppsättnin
 role: User
 level: Beginner
 exl-id: dcdd3c81-0f00-4259-a8a5-9062a4c40b6f
-source-git-commit: 9ebcfd6c41c17fe3be0423822209443fc55244a7
+source-git-commit: a196df7318e0c87afb5a5ee4498eaf20eab137ad
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '611'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ Välj **Datauppsättningar** i den vänstra navigeringen för att öppna kontrol
 
 ![](assets/datasets-home.png)
 
-Att lägga till data i Adobe Experience Platform är grunden för att skapa en profil. Sedan kan du använda profiler i [!DNL Adobe Journey Optimizer]. Börja med att definiera scheman, använd ETL-verktyg för att förbereda och standardisera data och skapa sedan datauppsättningar baserade på dina scheman.
+Lägga till data i [!DNL Adobe Experience Platform] är grunden till en profil. Sedan kan du använda profiler i [!DNL Adobe Journey Optimizer]. Börja med att definiera scheman, använd ETL-verktyg för att förbereda och standardisera data och skapa sedan datauppsättningar baserade på dina scheman.
 
 Välj **Bläddra** om du vill visa en lista över alla tillgängliga datauppsättningar för din organisation. Information visas för varje datamängd som anges, inklusive namn, schema som datauppsättningen följer och status för den senaste importen.
 
@@ -32,6 +32,13 @@ Som standard visas bara de datauppsättningar som du har kapslat in i. Om du vil
 ![](assets/ajo-system-datasets.png)
 
 Markera namnet på en datauppsättning för att komma åt aktivitetsskärmen för datauppsättningen och se information om den datauppsättning du valde. Fliken Aktivitet innehåller ett diagram som visar hur många meddelanden som har förbrukats samt en lista över lyckade och misslyckade batchar.
+
+## Förhandsgranska datauppsättningar{#preview-datasets}
+
+Välj **Förhandsgranska datauppsättning** i skärmens övre högra hörn för att förhandsgranska den senaste lyckade gruppen i den här datauppsättningen. När en datauppsättning är tom inaktiveras förhandsgranskningslänken.
+
+![](assets/dataset-preview.png)
+
 
 ## Skapa datauppsättningar{#create-datasets}
 
@@ -42,11 +49,21 @@ Du kan:
 * Skapa datauppsättning från schema. [Läs mer i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en#schema){target=&quot;_blank&quot;}
 * Skapa datauppsättning från CSV-fil. [Läs mer i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html){target=&quot;_blank&quot;}
 
-
 I den här videon får du lära dig hur du skapar en datauppsättning, mappar den till ett schema, lägger till data i den och bekräftar att data har importerats.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334293?quality=12)
 
+## Datastyrning
+
+I en datauppsättning bläddrar du till **Datastyrning** för att kontrollera etiketter på data- och fältnivå. Datastyrning kategoriserar data efter vilken typ av policyer som gäller.
+
+En av kärnfunktionerna i [!DNL Adobe Experience Platform] är att sammanföra data från olika affärssystem för att göra det lättare för marknadsförarna att identifiera, förstå och engagera kunderna. Dessa data kan vara föremål för användarbegränsningar som fastställts av din organisation eller av juridiska bestämmelser. Det är därför viktigt att se till att dataåtgärderna är kompatibla med dataanvändningspolicyer.
+
+[!DNL Adobe Experience Platform Data Governance] gör att ni kan hantera kunddata och säkerställa att ni följer regler, begränsningar och policyer som gäller för dataanvändning. Det spelar en nyckelroll på olika nivåer inom Experience Platform, bland annat för katalogisering, datalinje, märkning av dataanvändning, dataanvändningspolicyer och kontroll av användningen av data för marknadsföringsåtgärder.
+
+Läs mer om datastyrning och etiketter för dataanvändning i [Dokumentation för datastyrning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/user-guide.html){target=&quot;_blank&quot;}
+
+## Exempel och användningsområden{#uc-datasets}
 
 Lär dig hur du skapar ett schema, en datauppsättning och importerar data för att lägga till testprofiler i Adobe Journey Optimizer i [detta kompletta exempel](../segment/creating-test-profiles.md)
 
@@ -54,9 +71,7 @@ Läs mer om att skapa datauppsättningar i [Adobe Experience Platform-dokumentat
 
 Lär dig hur du använder användargränssnittet för datauppsättningar i [Översiktlig dokumentation för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target=&quot;_blank&quot;}.
 
-
 **Se även**
 
-* [Skapa ett schema, en datauppsättning och inmatningsdata för att lägga till testprofiler i Journey Optimizer](../segment/creating-test-profiles.md)
 * [Översikt över direktuppspelning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=sv){target=&quot;_blank&quot;}
 * [Importera data till Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html){target=&quot;_blank&quot;}
