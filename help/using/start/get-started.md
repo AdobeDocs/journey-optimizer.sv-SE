@@ -1,14 +1,14 @@
 ---
 title: Journey Optimizer
-description: Kom igång med Journey Optimizer
+description: Adobe Journey Optimizer viktigaste funktioner och användningsområden
 feature: Overview
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 956178c0-9985-4ff8-a29e-17dd367ce4d4
-source-git-commit: f1ac47a0cb405eaadc5428e7e5479eaf776d7abe
+source-git-commit: df5bb48130c715441fb02bc034edddcad1da7cbf
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '703'
 ht-degree: 1%
 
 ---

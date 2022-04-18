@@ -1,14 +1,14 @@
 ---
 title: Snabbstart
-description: Journey Optimizer snabbstart
+description: Som marknadsförare, administratör eller datainbyggd kan du lära dig och upptäcka Adobe Journey Optimizer styrka med stegvis vägledning
 feature: Overview
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 71ab7369-fd84-46eb-95d2-941bd887d565
-source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
+source-git-commit: df5bb48130c715441fb02bc034edddcad1da7cbf
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '182'
 ht-degree: 5%
 
 ---
