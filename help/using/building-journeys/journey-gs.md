@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: df5bb48130c715441fb02bc034edddcad1da7cbf
+source-git-commit: 6054e1729c2a231e19e56ca970b6b0b74f5f460a
 workflow-type: tm+mt
-source-wordcount: '1759'
+source-wordcount: '1793'
 ht-degree: 6%
 
 ---
@@ -36,6 +36,11 @@ För att kunna skicka meddelanden med resor krävs följande konfiguration:
    ![](assets/create-content-push.png)
 
 ## Bygga din resa{#jo-build}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_create"
+>title="Bygg upp din resa"
+>abstract="På den här skärmen visas en lista med tidigare skapade resor. Öppna en resa eller klicka på Skapa resa och kombinera de olika händelserna, samordningen och aktiviteterna för att skapa flerstegsscenarier för flera kanaler."
 
 Det här steget utförs av **företagsanvändare**. Här skapar du dina resor. Kombinera de olika händelserna, orkestreringen och åtgärderna för att skapa scenarier i flera steg över olika kanaler.
 

@@ -6,19 +6,19 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: fb3e51b5-4cbb-4949-8992-1075959da67d
-source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
+source-git-commit: 6054e1729c2a231e19e56ca970b6b0b74f5f460a
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 51%
+source-wordcount: '822'
+ht-degree: 49%
 
 ---
 
 # Om händelser{#about-events}
 
 >[!CONTEXTUALHELP]
->id="jo_events"
+>id="ajo_journey_event_list"
 >title="Om händelser"
->abstract="En händelse är länkad till en person. Den är relaterad till en persons beteende (till exempel om en person köpt en produkt, besökt en butik eller lämnat en webbplats) eller något som händer relaterat till en person (en person som till exempel har nått 10 000 lojalitetspoäng). Detta är vad [!DNL Journey Optimizer] läser av i resor för att orkestrera bästa åtgärder."
+>abstract="En händelse är länkad till en person. Den är relaterad till en persons beteende (till exempel om en person köpt en produkt, besökt en butik eller lämnat en webbplats) eller något som händer relaterat till en person (en person som till exempel har nått 10 000 lojalitetspoäng). Detta är vad Journey Optimizer kommer att lyssna på under resor för att samordna de bästa nästa åtgärderna."
 
 Med händelsekonfigurationen kan du definiera vilken information som [!DNL Journey Optimizer] ska tas emot som händelser. Du kan använda flera händelser (i olika steg på en resa) och flera resor kan använda samma händelse.
 

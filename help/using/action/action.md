@@ -7,7 +7,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 7f0cda1d-daf0-4d4c-9978-ddef81473813
-source-git-commit: 65fdbc0255b367cc30d3d220c128350af0d7b7ad
+source-git-commit: 6054e1729c2a231e19e56ca970b6b0b74f5f460a
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 55%
@@ -17,9 +17,9 @@ ht-degree: 55%
 # Om åtgärder {#about_actions}
 
 >[!CONTEXTUALHELP]
->id="jo_actions"
+>id="ajo_journey_action_list"
 >title="Om åtgärder"
->abstract="Här definierar du anslutningen till systemet som ska skicka meddelanden. De åtgärder som definieras här finns sedan tillgängliga på den vänstra paletten under din resa i kategorin Instruktioner. "
+>abstract="Här definierar du anslutningen till systemet som ska skicka meddelanden. De åtgärder som definieras här finns sedan tillgängliga på den vänstra paletten under din resa i kategorin Instruktioner."
 
 Åtgärder är anslutningar genom vilka du levererar personaliserade upplevelser till kunder i realtid såsom push-meddelanden, e-post, SMS eller andra sätt för digitalt engagemang som du använder i företaget.
 
