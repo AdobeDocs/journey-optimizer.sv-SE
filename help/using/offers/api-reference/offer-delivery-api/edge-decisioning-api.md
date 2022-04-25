@@ -5,7 +5,7 @@ feature: Offers
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: d3a22f223353dfa5d43acab400cea3d5c314662f
+source-git-commit: acd91848e24d5ca5340f6d0e22fca8b88523aed3
 workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 1%
@@ -94,14 +94,15 @@ Här beskrivs de steg som krävs för att använda Offer decisioning med den fä
 
 Inkludera följande JavaScript-utdrag från alternativ 2: Den fördefinierade fristående versionen på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=en) i `<head>` på HTML-sidan.
 
-```javascript
+```
+javascript
     <script>
         !function(n,o){o.forEach(function(o){n[o]||((n.__alloyNS=n.__alloyNS||
         []).push(o),n[o]=function(){var u=arguments;return new Promise(
         function(i,l){n[o].q.push([i,l,u])})},n[o].q=[])})}
         (window,["alloy"]);
     </script>
-    <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.js" async></script> 
+    <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.js" async></script>
 ```
 
 Du behöver två ID:n från ditt Adobe-konto för att konfigurera SDK-konfigurationen - ditt edgeConfigId och ditt orgId. edgeConfigId är samma som ditt DataStream ID, som du borde ha konfigurerat i Förutsättningar.
@@ -110,7 +111,8 @@ Om du vill hitta ditt edgeConfigID/datastream ID går du till Datainsamling och 
 
 Konfigurera SDK i JavaScript enligt instruktionerna på den här sidan. Du kommer alltid att använda edgeConfigId och orgId i konfigurationsfunktionen. Dokumentationen beskriver också vilka valfria parametrar som finns för din konfiguration. Den slutliga konfigurationen kan se ut ungefär så här:
 
-```javascript
+```
+javascript
     alloy("configure", {
         "edgeConfigId": "12345678-0ABC-DEF-GHIJ-KLMNOPQRSTUV",                            
         "orgId":"ABCDEFGHIJKLMNOPQRSTUVW@AdobeOrg",
@@ -131,7 +133,8 @@ När du redigerar webbplatsen inkluderar du skriptet med konfigurationen och `se
 
 **Exempel**:
 
-```javascript
+```
+javascript
     alloy("sendEvent", {
         "decisionScopes": 
         [
@@ -142,7 +145,8 @@ När du redigerar webbplatsen inkluderar du skriptet med konfigurationen och `se
 
 Se följande exempel på hur du hanterar svaret:
 
-```javascript
+```
+javascript
     alloy("sendEvent", {
         "decisionScopes": [
         "eyJ4ZG06YWN0aXZpdHlJZCI6Inhjb3JlOm9mZmVyLWFjdGl2aXR5OjE0ZWE4MDhhZjJjZDM1NzQiLCJ4ZG06cGxhY2VtZW50SWQiOiJ4Y29yZTpvZmZlci1wbGFjZW1lbnQ6MTRjNGFmZDI2OTXXXXXXXXXX"
@@ -164,7 +168,8 @@ Du kan använda felsökaren för att verifiera att du har anslutit till Edge-nä
 
 I det här exemplet är den JSON som ska returneras:
 
-```json
+```
+json
 {
    "name":"ABC Test",
    "description":"This is a test offer", 
@@ -175,7 +180,8 @@ I det här exemplet är den JSON som ska returneras:
 
 Hantera svarsobjektet och analysera de data du behöver. Du kan skicka flera beslutsomfattningar i ett `sendEvent` ditt svar kan se lite annorlunda ut.
 
-```json
+```
+json
     {
         "id": "abrxgl843d913",
         "scope": "eyJ4ZG06YWN0aXZpdHlJZCI6Inhjb3JlOm9mZmVyLWFjdGl2aXR5OjE0ZWE4MDhhZjJjZDM1NzQiLCJ4ZG06cGxhY2VtZW50SWQiOiJ4Y29yZTpvZmZlci1wbGFjZW1lbnQ6MTRjNGFmZDI2OTVlNWRmOSJ9",
@@ -199,7 +205,8 @@ Hantera svarsobjektet och analysera de data du behöver. Du kan skicka flera bes
 }
 ```
 
-```json
+```
+json
 {
     "propositions": [
     {
@@ -230,7 +237,8 @@ I det här exemplet var den väg som behövdes för att hantera och använda den
 
 Så här anger du JS-variabler:
 
-```javascript
+```
+javascript
 const offer = JSON.parse(result['decisions'][0]['items'][0]['data']['content']);
 
 let offerURL = offer['link'];
