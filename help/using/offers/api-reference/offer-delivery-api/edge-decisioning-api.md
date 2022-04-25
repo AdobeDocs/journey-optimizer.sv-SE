@@ -5,9 +5,9 @@ feature: Offers
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: b02981f2c0cf74c8dba657570157709bc422d94c
+source-git-commit: d18a0cb38bf5a3014a87f1dc5f1c3a3c21982b09
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '1050'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Leverera erbjudanden med Edge Decisioning API {#edge-decisioning-api}
 
-## Komma igång och krav {#aep-web-sdk-overview-and-prerequisites}
+## Komma igång och krav {#edge-overview-and-prerequisites}
 
 The [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html#video-overview) är ett JavaScript-bibliotek på klientsidan som gör att Adobe Experience Cloud-kunder kan interagera med de olika tjänsterna i Experience Cloud via Experience Platform Edge Network.
 
@@ -29,7 +29,7 @@ Läs dokumentationen om [offer decisioning](https://experienceleague.adobe.com/d
 >
 >Beslutshantering i Adobe Experience Platform Web SDK är för närvarande tillgängligt i ett tidigt skede för vissa användare. Den här funktionen är inte tillgänglig för alla IMS-organisationer.
 
-## Webb-SDK för Adobe Experience Platform  {#aep-web-sdk-overview-and-prerequisites}
+## Webb-SDK för Adobe Experience Platform {#aep-web-sdk}
 
 Platform Web SDK ersätter följande SDK:
 
@@ -94,6 +94,164 @@ Här beskrivs de steg som krävs för att använda Offer decisioning med den fä
 
 Inkludera följande JavaScript-utdrag från alternativ 2: Den fördefinierade fristående versionen på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=en) i `<head>` på HTML-sidan.
 
+```
+javascript
+    <script>
+        !function(n,o){o.forEach(function(o){n[o]||((n.__alloyNS=n.__alloyNS||
+        []).push(o),n[o]=function(){var u=arguments;return new Promise(
+        function(i,l){n[o].q.push([i,l,u])})},n[o].q=[])})}
+        (window,["alloy"]);
+    </script>
+    <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.js" async></script>
+```
+
+Du behöver två ID:n från ditt Adobe-konto för att konfigurera SDK-konfigurationen - ditt edgeConfigId och ditt orgId. edgeConfigId är samma som ditt DataStream ID, som du borde ha konfigurerat i Förutsättningar.
+
+Om du vill hitta ditt edgeConfigID/datastream ID går du till Datainsamling och väljer Datastream. Gå till din profil för att hitta ditt orgId.
+
+Konfigurera SDK i JavaScript enligt instruktionerna på den här sidan. Du kommer alltid att använda edgeConfigId och orgId i konfigurationsfunktionen. Dokumentationen beskriver också vilka valfria parametrar som finns för din konfiguration. Den slutliga konfigurationen kan se ut ungefär så här:
+
+```
+javascript
+    alloy("configure", {
+        "edgeConfigId": "12345678-0ABC-DEF-GHIJ-KLMNOPQRSTUV",                            
+        "orgId":"ABCDEFGHIJKLMNOPQRSTUVW@AdobeOrg",
+        "debugEnabled": true,
+        "edgeDomain": "edge.adobedc.net",
+        "clickCollectionEnabled": true,
+        "idMigrationEnabled": true,
+        "thirdPartyCookiesEnabled": true,
+        "defaultConsent":"in"  
+    });
+```
+
+Installera tillägget för felsökningskrom som ska användas med felsökning. Här hittar du: <https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob>
+
+Logga sedan in på ditt konto i felsökaren. Gå sedan till Loggar och kontrollera att du är ansluten till rätt arbetsyta. Nu kan du kopiera base64-kodad version av beslutsomfånget från ditt erbjudande.
+
+När du redigerar webbplatsen inkluderar du skriptet med konfigurationen och `sendEvent` funktion för att skicka beslutsomfånget till Adobe.
+
+**Exempel**:
+
+```
+javascript
+    alloy("sendEvent", {
+        "decisionScopes": 
+        [
+        "eyJ4ZG06YWN0aXZpdHlJZCI6Inhjb3JlOm9mZmVyLWFjdGl2aXR5OjE0ZWE4MDhhZjJjZDM1NzQiLCJ4ZG06cGxhY2VtZW50SWQiOiJ4Y29yZTpvZmZlci1wbGFjZW1lbnQ6MTRjNGFmZDI2OTXXXXXXXXXX"
+        ]
+    });
+```
+
+Se följande exempel på hur du hanterar svaret:
+
+```
+javascript
+    alloy("sendEvent", {
+        "decisionScopes":
+        [
+        "eyJ4ZG06YWN0aXZpdHlJZCI6Inhjb3JlOm9mZmVyLWFjdGl2aXR5OjE0ZWE4MDhhZjJjZDM1NzQiLCJ4ZG06cGxhY2VtZW50SWQiOiJ4Y29yZTpvZmZlci1wbGFjZW1lbnQ6MTRjNGFmZDI2OTXXXXXXXXXX"
+        ]
+    }).then(function(result) {
+        Object.entries(result).forEach(([key, value]) => {
+            console.log(key, value);
+        });
+    });
+```
+
+Du kan använda felsökaren för att verifiera att du har anslutit till Edge-nätverket.
+
+>[!NOTE]
+>
+>Om du inte ser någon anslutning till kanten i loggarna kan du behöva inaktivera annonsblockeraren.
+
+Återgå till hur du skapade erbjudandet och den formatering som användes. Baserat på de kriterier som anges i beslutet kommer du att få ett erbjudande med den information du angav när du skapade det i Adobe Experience Platform.
+
+I det här exemplet är den JSON som ska returneras:
+
+```
+json
+{
+   "name":"ABC Test",
+   "description":"This is a test offer", 
+   "link":"https://sampletesting.online/",
+   "image":"https://sample-demo-URL.png"
+}
+```
+
+Hantera svarsobjektet och analysera de data du behöver. Du kan skicka flera beslutsomfattningar i ett `sendEvent` ditt svar kan se lite annorlunda ut.
+
+```
+json
+    {
+        "id": "abrxgl843d913",
+        "scope": "eyJ4ZG06YWN0aXZpdHlJZCI6Inhjb3JlOm9mZmVyLWFjdGl2aXR5OjE0ZWE4MDhhZjJjZDM1NzQiLCJ4ZG06cGxhY2VtZW50SWQiOiJ4Y29yZTpvZmZlci1wbGFjZW1lbnQ6MTRjNGFmZDI2OTVlNWRmOSJ9",
+        "items": 
+        [
+            {
+                "id": "xcore:fallback-offer:14ea7f1ea26ebd0a",
+                "etag": "1",
+                "schema": "https://ns.adobe.com/experience/offer-management/content-component-json",
+                "data": {
+                    "id": "xcore:fallback-offer:14ea7f1ea26ebd0a",
+                    "format": "application/json",
+                    "language": [
+                        "en-us"
+                    ],
+                    "content": "{\"name\":\"ABC Test\",\"description\":\"This is a test offer\", \"link\":\"https://sampletesting.online/\",\"image\":\"https://sample-demo-URL.png\"}"
+                }
+            }
+        ]
+    }
+]
+}
+```
+
+```
+json
+{
+    "propositions": 
+    [
+    {
+        "renderAttempted": false,
+        "id": "e15ecb09-993e-4b66-93d8-0a4c77e3d913",
+        "scope": "eyJ4ZG06YWN0aXZpdHlJZCI6Inhjb3JlOm9mZmVyLWFjdGl2aXR5OjE0ZWE4MDhhZjJjZDM1NzQiLCJ4ZG06cGxhY2VtZW50SWQiOiJ4Y29yZTpvZmZlci1wbGFjZW1lbnQ6MTRjNGFmZDI2OTVlNWRmOSJ9",
+        "items": 
+        [
+            {
+                "id": "xcore:fallback-offer:14ea7f1ea26ebd0a",
+                "etag": "1",
+                "schema": "https://ns.adobe.com/experience/offer-management/content-component-json",
+                "data": {
+                    "id": "xcore:fallback-offer:14ea7f1ea26ebd0a",
+                    "format": "application/json",
+                    "language": [
+                        "en-us"
+                    ],
+                    "content": "{\"name\":\"Claire Hubacek Test\",\"description\":\"This is a test offer\", \"link\":\"https://sampletesting.online/\",\"image\":\"https://sample-demo-URL.png\"}"
+                }
+            }
+        ]
+    }
+    ]
+}
+```
+
+I det här exemplet var den väg som behövdes för att hantera och använda den erbjudandespecifika informationen på webbsidan: `result['decisions'][0]['items'][0]['data']['content']`
+
+Så här anger du JS-variabler:
+
+```
+javascript
+const offer = JSON.parse(result['decisions'][0]['items'][0]['data']['content']);
+
+let offerURL = offer['link'];
+let offerDescription = offer['description'];
+let offerImageURL = offer['image'];
+
+document.getElementById("offerDescription").innerHTML = offerDescription;
+document.getElementById('offerImage').src = offerImageURL;
+```
 
 ## Begränsningar
 
