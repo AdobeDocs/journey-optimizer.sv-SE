@@ -5,9 +5,9 @@ feature: Offers
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: acd91848e24d5ca5340f6d0e22fca8b88523aed3
+source-git-commit: ecd7b3095bf825742cad44e20d68bb3c787bcb6b
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1049'
 ht-degree: 1%
 
 ---
@@ -42,11 +42,11 @@ SDK kombinerade inte dessa bibliotek och är en ny implementering från grunden.
 
 1. Se till att din organisation har rätt behörighet att använda SDK och att du har konfigurerat behörigheterna korrekt.
 
-<!-- For more detailed instructions, refer to the documentation on using the [Adobe Experience Platform Web SDK](). -->
+   <!-- For more detailed instructions, refer to the documentation on using the [Adobe Experience Platform Web SDK](). -->
 
-2. [Konfigurera ditt datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=en) på fliken Datainsamling i ditt konto i Adobe Experience Cloud.
+1. [Konfigurera ditt datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=en) på fliken Datainsamling i ditt konto i Adobe Experience Cloud.
 
-3. Installera SDK. Det finns flera metoder för detta, som beskrivs i [Installera SDK-sidan](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=en). Den här sidan fortsätter med varje implementeringsmetod.
+1. Installera SDK. Det finns flera metoder för detta, som beskrivs i [Installera SDK-sidan](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=en). Den här sidan fortsätter med varje implementeringsmetod.
 
 För att kunna använda SDK måste du ha en [schema](../../../start/get-started-schemas.md) och [datastream](../../../start/get-started-datasets.md) definierad.
 
@@ -64,21 +64,21 @@ Det här alternativet är mer användarvänligt för personer som kan ha en mind
 
 1. [Skapa en taggegenskap](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en)
 
-2. [Lägg till inbäddningskoden](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html?lang=en)
+1. [Lägg till inbäddningskoden](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html?lang=en)
 
-3. Installera och konfigurera Platform Web SDK-tillägget med den dataström du skapade genom att välja konfigurationen i listrutan Datastream. Läs dokumentationen om [tillägg](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/overview.html?lang=en).
+1. Installera och konfigurera Platform Web SDK-tillägget med den dataström du skapade genom att välja konfigurationen i listrutan Datastream. Läs dokumentationen om [tillägg](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/overview.html?lang=en).
 
    ![Webb-SDK för Adobe Experience Platform](../../assets/installed-catalog-web-sdk.png)
 
    ![Konfigurera tillägg](../../assets/configure-sdk-extension.png)
 
-4. Skapa de nödvändiga [Dataelement](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=en). Minimikravet är att du måste skapa en plattformsbaserad SDK-identitetskarta och ett XDM-objektdataelement för plattformswebben.
+1. Skapa de nödvändiga [Dataelement](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=en). Minimikravet är att du måste skapa en plattformsbaserad SDK-identitetskarta och ett XDM-objektdataelement för plattformswebben.
 
    ![Identitetskarta](../../assets/sdk-identity-map.png)
 
    ![XDM-objekt](../../assets/xdm-object.png)
 
-5. Skapa [Regler](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=en):
+1. Skapa [Regler](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=en):
 
    i. Lägg till en SDK-sändningshändelse för en plattform och lägg till relevanta beslutsomfattningar i åtgärdens konfiguration
 
@@ -86,7 +86,7 @@ Det här alternativet är mer användarvänligt för personer som kan ha en mind
 
    ![Erbjudande](../../assets/rule-request-offer.png)
 
-6. [Skapa och publicera](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=en) ett bibliotek som innehåller alla relevanta regler, dataelement och tillägg som du har konfigurerat
+1. [Skapa och publicera](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=en) ett bibliotek som innehåller alla relevanta regler, dataelement och tillägg som du har konfigurerat
 
 ## Alternativ 2 - Implementera manuellt med den fristående versionen
 
@@ -125,7 +125,7 @@ javascript
     });
 ```
 
-Installera tillägget för felsökningskrom som ska användas med felsökning. Här hittar du: https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob
+Installera tillägget för felsökningskrom som ska användas med felsökning. Här hittar du: <https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob>
 
 Logga sedan in på ditt konto i felsökaren. Gå sedan till Loggar och kontrollera att du är ansluten till rätt arbetsyta. Nu kan du kopiera base64-kodad version av beslutsomfånget från ditt erbjudande.
 
