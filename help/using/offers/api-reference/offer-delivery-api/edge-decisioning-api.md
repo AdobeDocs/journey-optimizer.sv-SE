@@ -1,13 +1,13 @@
 ---
-title: Webb-SDK för Adobe Experience Platform
+title: Leverera erbjudanden med Edge Decisioning API
 description: Med Adobe Experience Platform Web SDK kan du hämta och återge anpassade erbjudanden som du har skapat med hjälp av API:er eller erbjudandebiblioteket.
 feature: Offers
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: 58ebc89bf2dfc3d1e23f22c1aa37144c572b74b9
+source-git-commit: fbceab397e836c0166df595e87a7ae3a74087477
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1050'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,7 @@ Det här alternativet är mer användarvänligt för personer som kan ha en mind
 
 1. Skapa [Regler](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=en):
 
-   i. Lägg till en SDK-sändningshändelse för en plattform och lägg till relevanta beslutsomfattningar i åtgärdens konfiguration
+   Lägg till en SDK-sändningshändelse för en plattform och lägg till relevanta beslutsomfattningar i åtgärdens konfiguration
 
    ![Renderingserbjudande](../../assets/rule-render-offer.png)
 
