@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: da9e898b-8e5d-43da-9226-5c9ccb78e174
-source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
+source-git-commit: d3a22f223353dfa5d43acab400cea3d5c314662f
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 0%
@@ -25,7 +25,7 @@ På så sätt kan ni testa och förfina olika versioner av era erbjudanden utan 
 
 >[!NOTE]
 >
->Den här funktionen simulerar en enda begäran till [!DNL Decisions] API. Läs mer på [Leverera erbjudanden med API:t för beslut](../api-reference/decisions-api/deliver-offers.md).
+>Den här funktionen simulerar en enda begäran till [!DNL Decisioning] API. Läs mer på [Leverera erbjudanden med hjälp av besluts-API](../api-reference/offer-delivery-api/decisioning-api.md).
 
 Om du vill komma åt den här funktionen väljer du **[!UICONTROL Simulation]** från **[!UICONTROL Decision management]** > **[!UICONTROL Offers]** -menyn.
 
@@ -130,7 +130,7 @@ Om du vill redigera standardinställningarna för dina simuleringar följer du s
 
    >[!NOTE]
    >
-   >Som standard är alla dedupliceringsflaggor aktiverade för simulering, vilket innebär att beslutsmotorn tillåter dubbletter och därmed kan göra samma förslag för flera beslut/placeringar. Läs mer på [!DNL Decisions] Egenskaper för API-begäran i [det här avsnittet](../api-reference/decisions-api/deliver-offers.md).
+   >Som standard är alla dedupliceringsflaggor aktiverade för simulering, vilket innebär att beslutsmotorn tillåter dubbletter och därmed kan göra samma förslag för flera beslut/placeringar. Läs mer på [!DNL Decisioning] Egenskaper för API-begäran i [det här avsnittet](../api-reference/offer-delivery-api/decisioning-api.md).
 
 1. I **[!UICONTROL Response format]** kan du välja att ta med metadata i kodvyn. Markera motsvarande alternativ och välj de metadata du vill använda. De visas i begäran- och svarsnyttolasterna när du väljer **[!UICONTROL View code]**. Läs mer i [Visa simuleringsresultat](#simulation-results) -avsnitt.
 

@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 773bee50-849f-4b07-9423-67de5279ad28
-source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
+source-git-commit: d3a22f223353dfa5d43acab400cea3d5c314662f
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '668'
 ht-degree: 2%
 
 ---
@@ -127,6 +127,10 @@ Ett lyckat svar returnerar information om beslutsbehållare. Detta inkluderar `i
 ## Nästa steg {#next-steps}
 
 Det här dokumentet innehöll de nödvändiga kunskaperna som krävs för att ringa till [!DNL Offer Library] API, inklusive att hämta ditt behållar-ID. Du kan nu gå vidare till exempelsamtalen i den här utvecklarhandboken och följa med i instruktionerna för dessa.
+
+>[!NOTE]
+>
+> I meddelandekanalen i Adobe Journey Optimizer används offera decisioningar. Om din organisation använder meddelandekanalen i appen kommer API-listbegäranden för objekt att innehålla objekt som har skapats av meddelandetjänsten i appen och kan ignoreras för offer decisioning. Objekt som skapats för meddelanden i programmet har `createdBy = “Mobile_Sheliak”`.
 
 ## Instruktionsvideo {#video}
 

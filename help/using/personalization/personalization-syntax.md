@@ -6,16 +6,16 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 5a562066-ece0-4a78-92a7-52bf3c3b2eea
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: d3a22f223353dfa5d43acab400cea3d5c314662f
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '706'
 ht-degree: 3%
 
 ---
 
 # Anpassningssyntax {#personalization-syntax}
 
-Personalization i [!DNL Journey Optimizer] baseras på den mallsyntax som kallas Handlebars.
+Personalisering i [!DNL Journey Optimizer] baseras på den mallsyntax som kallas Handlebars.
 En fullständig beskrivning av Handlebars-syntaxen finns i [HandlebarsJS-dokumentation](https://handlebarsjs.com/).
 
 Den använder en mall och ett indataobjekt för att generera HTML eller andra textformat. Mallar för handtag ser ut som vanlig text med inbäddade handtagsuttryck.
@@ -41,7 +41,7 @@ Syntaxen är skiftlägeskänslig.
 
 Orden **true**, **false**, **null** och **undefined** tillåts endast i den första delen av ett sökvägsuttryck.
 
-I Handlebars returneras värdena från {{expression}} **HTML-escape**. Om uttrycket innehåller `&`genereras returnerade utdata från HTML som `&amp;`. Om du inte vill att Handlebars ska kringgå ett värde använder du &quot;trippelstreck&quot;.
+I Handtag-fält returneras värdena av {{expression}} är **HTML-escape**. Om uttrycket innehåller `&`genereras returnerade utdata från HTML som `&amp;`. Om du inte vill att Handlebars ska kringgå ett värde använder du &quot;trippelstreck&quot;.
 
 ## Profil
 
@@ -92,7 +92,7 @@ där:
 * `Placement Id` och `Activity Id` är placerings- och aktivitetsidentifierare
 * `Attributes` är specifika attribut som är beroende av erbjudandetypen. Exempel: `deliveryUrl` för bilder
 
-Mer information om beslut-API och offertrepresentation finns i [den här sidan](../../using/offers/api-reference/decisions-api/deliver-offers.md)
+Mer information om beslut-API och offertrepresentation finns i [den här sidan](../offers/api-reference/offer-delivery-api/decisioning-api.md)
 
 Alla referenser valideras mot offertschema med en valideringsmekanism som beskrivs i [den här sidan](personalization-validation.md)
 
@@ -143,7 +143,7 @@ Block är uttryck som har ett blocköppningsblock ({{# }}) och closing ({/}}).
 >
 >Användning av **xEvent** variabeln är inte tillgänglig i personaliseringsuttryck. Alla referenser till xEvent resulterar i valideringsfel.
 
-## URL Personalization{#perso-urls}
+## URL-anpassning{#perso-urls}
 
 Personaliserade URL:er tar mottagarna till specifika sidor på en webbplats eller till en personlig mikrowebbplats, beroende på profilattributen. I Adobe Journey Optimizer kan du lägga till personalisering i URL-adresser i ditt meddelandeinnehåll. URL-personalisering kan tillämpas på text och bilder och använda profildata eller kontextuella data.
 
