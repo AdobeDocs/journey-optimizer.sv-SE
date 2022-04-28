@@ -2,7 +2,7 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 4402e8f98d732f7c11460c1ea1ce9e2de141b587
+source-git-commit: 150b724c94f656d8846f98acd774a87eef1c29d8
 workflow-type: tm+mt
 source-wordcount: '3192'
 ht-degree: 9%
@@ -46,8 +46,7 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 
 **Integrering med Adobe Campaign Standard**
 
-Som Adobe Campaign Standard-kund kan du nu skicka e-post, push-meddelanden och SMS med Journey Optimizer. Använd de nya inbyggda funktionerna för att utnyttja Campaign Standarden Transactional Messaging i Journey Optimizer.
-[Läs mer](../action/acs-action.md)
+Som Adobe Campaign Standard-kund kan du nu skicka e-post, push-meddelanden och SMS med Journey Optimizer. Använd de nya inbyggda funktionerna för att utnyttja Campaign Standarden Transactional Messaging i Journey Optimizer.  [Läs mer](../action/acs-action.md)
 
 <!--
 ### Fixes
