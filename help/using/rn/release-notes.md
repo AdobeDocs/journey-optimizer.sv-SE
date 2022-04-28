@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
+source-git-commit: 4402e8f98d732f7c11460c1ea1ce9e2de141b587
 workflow-type: tm+mt
-source-wordcount: '3200'
+source-wordcount: '3192'
 ht-degree: 9%
 
 ---
@@ -19,25 +19,6 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 
 
 ## Version från april 2022 {#april-2022-release}
-
-### Nya funktioner
-
-<table>
-<thead>
-<tr>
-<th><strong>Integrering med Adobe Campaign Standard</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Som Adobe Campaign Standard-kund kan du nu skicka e-post, push-meddelanden och SMS med Journey Optimizer. Använd de nya inbyggda funktionerna för att utnyttja Campaign Standarden Transactional Messaging i Journey Optimizer.</p>
-<p>Mer information finns i den <a href="../action/acs-action.md">detaljerade dokumentationen</a>.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
 
 ### Förbättringar
 
@@ -62,6 +43,11 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 **Användargränssnitt**
 
 * **Sammanhangsberoende hjälp i Journey Optimizer UI** - Sammanhangsberoende hjälplänkar har lagts till på flera sidor i Journey Optimizer. Om den är tillgänglig klickar du på ikonen i för att visa en snabb beskrivning av den aktuella funktionen och få tillgång till relaterade artiklar.
+
+**Integrering med Adobe Campaign Standard**
+
+Som Adobe Campaign Standard-kund kan du nu skicka e-post, push-meddelanden och SMS med Journey Optimizer. Använd de nya inbyggda funktionerna för att utnyttja Campaign Standarden Transactional Messaging i Journey Optimizer.
+[Läs mer](../action/acs-action.md)
 
 <!--
 ### Fixes
@@ -519,7 +505,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 * Korrigerade ett tillgänglighetsproblem vid navigering på meddelandeflikar.
 * Ett lokaliseringsfel har korrigerats i e-postdesignerns etiketter.
 * Ett problem har korrigerats när du valde mer än en nod i en resa och klickade på Ta bort på egenskapspanelen.
-* Korrigerade ett fel som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
+* Korrigerade ett problem som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
 * Du kan nu ta reda på varför en meddelandeförinställning inte kunde skapas med hjälp av en tydligare varning i användargränssnittet.
 
 
