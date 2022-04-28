@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
-source-git-commit: f1ac47a0cb405eaadc5428e7e5479eaf776d7abe
+source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -93,11 +93,15 @@ Så här redigerar du en PTR-post med en underdomän som har delegerats till Ado
 
 ## Kontrollera uppdateringsinformation för PTR-post {#check-ptr-record-update}
 
-A **[!UICONTROL Processing]** visas bredvid namnet på PTR-posten i listan.
+När du har bekräftat redigeringen av PTR-posten kan du **[!UICONTROL Processing]** visas bredvid namnet på PTR-posten i listan.
 
 ![](assets/ptr-record-updating.png)
 
-Om du vill kontrollera uppdateringsinformationen för PTR-posten klickar du på **[!UICONTROL Updating]** eller **[!UICONTROL Recent updates]** ikon.
+>[!NOTE]
+>
+>The [uppdateringsbearbetning](#processing) kan ta upp till några timmar.
+
+Om du vill kontrollera uppdateringsinformationen för PTR-posten klickar du på ikonen bredvid den. Läs mer om de statusar som är associerade med de olika ikonerna i [det här avsnittet](#ptr-record-update-statuses).
 
 ![](assets/ptr-record-recent-update.png)
 
@@ -115,7 +119,7 @@ En PTR-postuppdatering kan ha följande status:
 
 ### Bearbetar {#processing}
 
-Flera leveranskontroller kommer att utföras för att verifiera att den nya underdomänen som ska associeras med IP-adressen är giltig. <!--The processing time is around **48h-72h**, and can take up to **7-10 days**.-->
+Flera leveranskontroller kommer att utföras för att verifiera att den nya underdomänen som ska associeras med IP-adressen är giltig. Detta kan ta upp till några timmar.
 
 >[!NOTE]
 >

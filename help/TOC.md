@@ -5,10 +5,10 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: d3a22f223353dfa5d43acab400cea3d5c314662f
+source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 44%
+source-wordcount: '993'
+ht-degree: 43%
 
 ---
 
@@ -53,6 +53,7 @@ ht-degree: 44%
       + [Lägga till en förrubrik](using/design/preheader.md)
    + Lägga till och hantera resurser {#manage-asset}
       + [Arbeta med Assets Essentials](using/design/assets-essentials.md)
+      + [Arbeta med Adobe Stock](using/design/stock.md)
    + [Lägg till personaliserade erbjudanden](using/design/deliver-personalized-offers.md)
    + [Lägga till länkar och spåra meddelanden](using/design/message-tracking.md)
    + [Förhandsgranska och korrektur](using/design/preview.md)
@@ -117,6 +118,7 @@ ht-degree: 44%
       + [Lässegment](using/building-journeys/read-segment.md)
       + [Meddelande](using/building-journeys/journeys-message.md)
       + [Anpassade åtgärder](using/building-journeys/using-custom-actions.md)
+      + [Adobe Campaign Standard-åtgärder](using/building-journeys/using-adobe-campaign-standard.md)
       + [Adobe Campaign v7/v8-åtgärder](using/building-journeys/using-adobe-campaign-classic.md)
       + [Hoppa](using/building-journeys/jump.md)
       + [Uppdatera profil](using/building-journeys/update-profiles.md)
@@ -324,7 +326,7 @@ ht-degree: 44%
          + [Skapa ett beslut](using/offers/api-reference/activities-api/activities/create.md)
          + [Uppdatera ett beslut](using/offers/api-reference/activities-api/activities/update.md)
          + [Ta bort ett beslut](using/offers/api-reference/activities-api/activities/delete.md)
-      + Erbjudandeleverans med API:er {#offer-delivery}
+      + Erbjudandeleverans med API:er {#offer-delivery-api}
          + [Om API:er för beslutsfattande och Edge Decisioning](using/offers/api-reference/offer-delivery-api/decisioning-vs-edge-apis.md)
          + [Besluts-API](using/offers/api-reference/offer-delivery-api/decisioning-api.md)
          + [API för Edge Decisioning](using/offers/api-reference/offer-delivery-api/edge-decisioning-api.md)
@@ -374,6 +376,7 @@ ht-degree: 44%
       + Åtgärdskonfiguration {#action-journeys}
          + [Om åtgärder](using/action/action.md)
          + [Konfigurera en åtgärd](using/action/about-custom-action-configuration.md)
+         + [Integrera med Adobe Campaign Standard](using/action/acs-action.md)
          + [Integrera med Adobe Campaign v7/v8](using/action/acc-action.md)
          + [Godkännande](using/action/consent.md)
    + [Källor](using/start/get-started-sources.md)

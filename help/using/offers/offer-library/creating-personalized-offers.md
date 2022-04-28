@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4a53ea96-632a-41c7-ab15-b85b99db4f3e
-source-git-commit: 5ea04ea9f8ed76b616db1038b917f2d37dea003c
+source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 3%
+source-wordcount: '615'
+ht-degree: 4%
 
 ---
 
@@ -133,9 +133,5 @@ På så sätt kan du få tillgång till detaljerad information om erbjudandet. V
 ![](../assets/offer_information.png)
 
 ## Videokurs {#video}
-
->[!NOTE]
->
->Den här videon gäller för Offera decisioningens programtjänst som är byggd på Adobe Experience Platform. Det ger dock allmän vägledning om hur man använder Erbjudandet inom ramen för Journey Optimizer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329375?quality=12)

@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 606334c3-e3e6-41c1-a10e-63508a3ed747
-source-git-commit: f1ac47a0cb405eaadc5428e7e5479eaf776d7abe
+source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Så här skapar du en IP-pool:
    >
    >Alla IP-adresser som har etablerats med din instans är tillgängliga i listan.
 
-IP-poolen skapas nu och visas i listan. Du kan markera den för att komma åt dess egenskaper och visa den tillhörande meddelandeförinställningen. Mer information om hur du associerar en meddelandeförinställning med en IP-pool finns i [det här avsnittet](message-presets.md)).
+IP-poolen skapas nu och visas i listan. Du kan markera den för att komma åt dess egenskaper och visa den tillhörande meddelandeförinställningen. Mer information om hur du associerar en meddelandeförinställning med en IP-pool finns i [det här avsnittet](message-presets.md).
 
 ![](assets/ip-pool-created.png)
 
@@ -80,6 +80,10 @@ Uppdateringen träder i kraft omedelbart eller asynkront, beroende på vilken IP
 
 * Om IP-poolen är **not** som valts i en meddelandeförinställning uppdateras omedelbart (**[!UICONTROL Success]** status).
 * Om IP-poolen **är** som valts i en meddelandeförinställning kan uppdateringen ta upp till 7-10 arbetsdagar (**[!UICONTROL Processing]** status).
+
+>[!NOTE]
+>
+>När [skapa en meddelandeförinställning](message-presets.md#create-message-preset), om du väljer en IP-pool som ingår i utgåvan (**[!UICONTROL Processing]** status) och aldrig har kopplats till den underdomän som valts för den förinställningen. Du kan inte fortsätta skapa förinställningar. [Läs mer](message-presets.md#subdomains-and-ip-pools)
 
 Om du vill kontrollera IP-poolens uppdateringsstatus klickar du på **[!UICONTROL More actions]** och markera **[!UICONTROL Recent updates]**.
 

@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 0c8808e3-9148-4a33-9fd5-9218e02c2dfd
-source-git-commit: 150ad7b36f23f183d7724bdb4b69fa55d30ea4f1
+source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 2%
+source-wordcount: '282'
+ht-degree: 3%
 
 ---
 
@@ -64,6 +64,4 @@ Så här skapar du en samling:
 
 >[!VIDEO](https://video.tv.adobe.com/v/329376?quality=12)
 
->[!NOTE]
->
->Den här videon gäller för Offera decisioningens programtjänst som är byggd på Adobe Experience Platform. Det ger dock allmän vägledning om hur man använder Erbjudandet inom ramen för Journey Optimizer.
+

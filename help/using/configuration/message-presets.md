@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: f1ac47a0cb405eaadc5428e7e5479eaf776d7abe
+source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '2406'
 ht-degree: 1%
 
 ---
@@ -58,6 +58,12 @@ Så här skapar du en meddelandeförinställning:
 1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara meddelandeförinställningen som utkast och återuppta konfigurationen senare.
 
    ![](assets/preset-submit.png)
+
+   >[!NOTE]
+   >
+   >Du kan inte fortsätta skapa förinställningar medan den valda IP-poolen är under [utgåva](ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) och har aldrig kopplats till den valda underdomänen. [Läs mer](#subdomains-and-ip-pools)
+   >
+   >Spara förinställningen som utkast och vänta tills IP-poolen har **[!UICONTROL Success]** status för att fortsätta skapa förinställningar.
 
 1. När meddelandeförinställningen har skapats visas den i listan med **[!UICONTROL Processing]** status.
 
@@ -116,6 +122,10 @@ I **INFORMATION OM UNDERDOMÄN- OCH IP-POOL** måste du
 
 1. Välj den IP-pool som ska associeras med förinställningen. [Läs mer](ip-pools.md)
 
+![](assets/preset-subdomain-ip-pool.png)
+
+Du kan inte fortsätta skapa förinställningar medan den valda IP-poolen är under [utgåva](ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) och har aldrig kopplats till den valda underdomänen. Annars kommer den äldsta versionen av associationen för IP-poolen/underdomänen fortfarande att användas. I så fall sparar du förinställningen som utkast och försöker igen när IP-poolen har **[!UICONTROL Success]** status.
+
 >[!NOTE]
 >
 >I icke-produktionsmiljöer skapar inte Adobe körklara testunderdomäner och ger inte heller åtkomst till en delad sändande IP-pool. Du måste [delegera dina egna underdomäner](delegate-subdomain.md) och använd IP-adresserna från poolen som tilldelats din organisation.
@@ -155,28 +165,6 @@ Länken för att avbryta prenumerationen består av två element:
 Läs mer om hur du lägger till en länk för att avbryta prenumerationen i dina meddelanden i [det här avsnittet](../messages/consent.md#unsubscribe-header).
 
 <!--Select the **[!UICONTROL Custom List-Unsubscribe]** option to enter your own Unsubscribe URL and/or your own Unsubscribe email address.(to add later)-->
-
-### URL-spårning{#url-tracking}
-
-För att identifiera var och varför en person klickade på länken kan du lägga till UTM-parametrar för URL-spårning i dialogrutan  **[!UICONTROL URL TRACKING CONFIGURATION (web analytics)]** -avsnitt.
-
-Utifrån de parametrar som du anger används en UTM-kod i slutet av den URL som finns i meddelandeinnehållet. Sedan kan du jämföra resultaten med ett webbanalysverktyg som Google Analytics.
-
-![](assets/preset-url-tracking.png)
-
-Tre UTM-parametrar är tillgängliga som standard. Du kan lägga till upp till 10 spårningsparametrar. Om du vill lägga till en UTM-parameter väljer du **[!UICONTROL Add new UTM param]** -knappen.
-
-Om du vill konfigurera en UTM-parameter kan du ange önskade värden direkt i **[!UICONTROL Name]** och **[!UICONTROL Value]** eller välj från en lista med fördefinierade värden genom att navigera till följande objekt:
-
-* Reseattribut: Käll-ID, källnamn, källversions-ID
-* Meddelandeattribut: Åtgärds-ID, åtgärdsnamn
-* Offer decisioning-attribut: Erbjudande-ID, erbjudandenamn
-
-![](assets/preset-url-tracking-source.png)
-
->[!CAUTION]
->
->Välj ingen mapp: Kontrollera att du bläddrar till den mapp som behövs och välj ett profilattribut som ska användas som UTM-värde.
 
 ### Huvudparametrar{#email-header}
 
@@ -223,6 +211,35 @@ Du måste ange ett heltalsvärde (i timmar eller minuter) inom följande interva
 * För båda e-posttyperna är den maximala återförsöksperioden 84 timmar (eller 5 040 minuter).
 
 Läs mer om återförsök i [det här avsnittet](retries.md).
+
+### URL-spårning{#url-tracking}
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_preset_utm"
+>title="UTM-parametrar"
+>abstract="Använd det här avsnittet om du automatiskt vill lägga till spårningsparametrar till kampanj-URL:erna som finns i e-postinnehållet."
+
+Om du vill identifiera var och varför en person klickade på länken kan du lägga till UTM-parametrar för URL-spårning i dialogrutan  **[!UICONTROL URL Tracking Parameters]** -avsnitt.
+
+Utifrån de parametrar som du anger används en UTM-kod i slutet av den URL som finns i meddelandeinnehållet. Sedan kan du jämföra resultaten med ett webbanalysverktyg som Google Analytics.
+
+![](assets/preset-url-tracking.png)
+
+Tre UTM-parametrar är tillgängliga som standard. Du kan lägga till upp till 10 spårningsparametrar. Om du vill lägga till en UTM-parameter väljer du **[!UICONTROL Add new parameter]** -knappen.
+
+Om du vill konfigurera en UTM-parameter kan du ange önskade värden direkt i **[!UICONTROL Name]** och **[!UICONTROL Value]** eller välj från en lista med fördefinierade värden genom att navigera till följande objekt:
+
+* Reseattribut: **Käll-ID**, **Källnamn**, **Källversions-ID**
+* Meddelandeattribut: **Åtgärds-ID**, **Åtgärdsnamn**
+* Offer decisioning-attribut: **Erbjudande-ID**, **Namn på erbjudande**
+
+![](assets/preset-url-tracking-source.png)
+
+>[!CAUTION]
+>
+>Välj ingen mapp: Kontrollera att du bläddrar till den mapp som behövs och välj ett profilattribut som ska användas som UTM-värde.
+
+Du kan kombinera textvärden och välja fördefinierade värden. Varje **[!UICONTROL Value]** fält kan innehålla upp till 255 tecken totalt.
 
 ## Konfigurera push-inställningar {#configure-push-settings}
 

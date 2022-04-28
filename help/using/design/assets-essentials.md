@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: d4fde14b-e2da-40bf-a387-ee9f2f7ff204
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 3%
@@ -67,6 +67,13 @@ Mer information om hur du överför resurser finns i [Adobe Experience Manager A
 1. Dra och släpp materialet i e-postinnehållet.
 
    ![](assets/media_library_6.png)
+<!--
+1. After adding your asset to your email, use the **[!UICONTROL Find similar Stock photos]** option to locate Stock photos that match the content, color, and composition of your image. [Learn more about Adobe Stock](stock.md).
+
+    Note that this option is available for licensed/unlicensed Stock images and images from your Assets folder. 
+
+    ![](assets/media_library_14.png)
+-->
 
 1. Du kan anpassa dina resurser ytterligare, till exempel lägga till en extern länk eller en text med **[!UICONTROL Components settings]**. [Läs mer om komponentinställningar](content-components.md)
 

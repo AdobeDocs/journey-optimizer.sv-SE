@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c61b8d80-17e1-4fdd-a739-efcee032dc23
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '773'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,12 @@ Följ stegen nedan för att definiera specifikt innehåll som gör det möjligt 
 1. Ange om den här kryssrutan ska avanmäla användare till eller från: samtycker de till att ta emot meddelanden eller ber de att inte bli kontaktade längre?
 
    ![](assets/lp_designer-form-update.png)
+
+   Välj bland tre alternativ nedan:
+
+   * **[!UICONTROL Opt in if checked]**: -användare måste markera kryssrutan för att godkänna (anmälan).
+   * **[!UICONTROL Opt out if checked]**: användare måste markera kryssrutan för att ta bort sitt samtycke (avanmälan).
+   * **[!UICONTROL Opt in if checked, opt out if unchecked]**: Med det här alternativet kan du infoga en enda kryssruta för anmälan/avanmälan. Användarna måste markera kryssrutan för att godkänna (anmälan) och avmarkera den för att ta bort sitt samtycke (avanmälan).
 
 1. Välj vad som ska uppdateras mellan följande tre alternativ:
 

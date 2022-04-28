@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 496c7666-a133-4aeb-be8e-c37b3b9bf5f9
-source-git-commit: 8a859af9ad09ca3f240ff6f355d4e5f34d2e4eac
+source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 7%
@@ -79,7 +79,7 @@ Med den avancerade uttrycksredigeraren kan du ställa in mer avancerade villkor 
 
 ## Tidsvillkor{#time_condition}
 
-På så sätt kan du utföra olika åtgärder beroende på timmen på dagen och/eller veckodagen. Du kan till exempel bestämma dig för att skicka SMS-meddelanden under dagtid och e-postmeddelanden på natten under vardagar.
+På så sätt kan du utföra olika åtgärder beroende på timmen på dagen och/eller veckodagen. Du kan till exempel bestämma dig för att skicka push-meddelanden under dagtid och e-postmeddelanden på natten under vardagar.
 
 >[!NOTE]
 >

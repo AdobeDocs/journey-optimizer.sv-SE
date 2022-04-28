@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: d3a22f223353dfa5d43acab400cea3d5c314662f
+source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
 workflow-type: tm+mt
-source-wordcount: '2969'
+source-wordcount: '3200'
 ht-degree: 9%
 
 ---
@@ -17,6 +17,59 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 
 ![Nyhetsbrev](../assets/do-not-localize/nl-icon.png) Registrera dig för [Adobe Journey Optimizer kvartalsvis nyhetsbrev](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target=&quot;_blank&quot;} idag och få de senaste produktuppdateringarna, spännande historier, användningsexempel, tips och mycket annat levererat direkt till inkorgen varje kvartal.
 
+
+## Version från april 2022 {#april-2022-release}
+
+### Nya funktioner
+
+<table>
+<thead>
+<tr>
+<th><strong>Integrering med Adobe Campaign Standard</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Som Adobe Campaign Standard-kund kan du nu skicka e-post, push-meddelanden och SMS med Journey Optimizer. Använd de nya inbyggda funktionerna för att utnyttja Campaign Standarden Transactional Messaging i Journey Optimizer.</p>
+<p>Mer information finns i den <a href="../action/acs-action.md">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+### Förbättringar
+
+**Landningssidor**
+
+* **Nytt alternativ för kryssrutor för anmälan/avanmälan** - Nu kan du infoga en enda kryssruta för deltagande/avanmälan på prenumerationens landningssidor. Användarna måste markera kryssrutan för att godkänna (anmälan) och avmarkera den för att ta bort sitt samtycke (avanmälan). [Läs mer](../landing-pages/design-lp.md#define-lp-specific-content)
+
+* **förifyllda landningssidor** - Det är nu möjligt att ge användarna möjlighet att förifylla landningssidans fält med profilinformation. [Läs mer](../landing-pages/create-lp.md#configure-primary-page)
+
+**Beslutshantering**
+
+* **Besluts-API på Edge** - Edge Decisioning API kan leverera och återge personaliserade erbjudanden som hanteras i Offer decisioning. Du kan skapa erbjudanden och andra relaterade objekt med hjälp av användargränssnittet (UI) eller API:erna för Offera decisioningen. [Läs mer](../offers/api-reference/offer-delivery-api/edge-decisioning-api.md)
+
+**Administrering**
+
+* **PTR-varaktighet** - Tidslängden för PTR-redigering är nu några timmar. [Läs mer](../configuration/ptr-records.md#processing)
+
+**E-postdesign**
+
+* **Nya e-postmallar** kan nu utforma e-postinnehåll i Journey Optimizer.
+
+**Användargränssnitt**
+
+* **Sammanhangsberoende hjälp i Journey Optimizer UI** - Sammanhangsberoende hjälplänkar har lagts till på flera sidor i Journey Optimizer. Om den är tillgänglig klickar du på ikonen i för att visa en snabb beskrivning av den aktuella funktionen och få tillgång till relaterade artiklar.
+
+<!--
+### Fixes
+
+* Fixed an issue which caused tracking reports not to be available as the `JourneyActionId` was not properly populated. PLATIR-19854, CJM-26006
+* Fixed an error on business events which could block the journey publication. CJM-25931
+* Fixed an issue which could prevent images in Email Designer templates from being displayed. PLATIR-18176, CJM-25008
+-->
 
 ## Version från mars 2022 {#march-2022-release}
 
@@ -466,7 +519,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 * Korrigerade ett tillgänglighetsproblem vid navigering på meddelandeflikar.
 * Ett lokaliseringsfel har korrigerats i e-postdesignerns etiketter.
 * Ett problem har korrigerats när du valde mer än en nod i en resa och klickade på Ta bort på egenskapspanelen.
-* Korrigerade ett problem som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
+* Korrigerade ett fel som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
 * Du kan nu ta reda på varför en meddelandeförinställning inte kunde skapas med hjälp av en tydligare varning i användargränssnittet.
 
 
@@ -524,7 +577,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 * Antalet testmeddelanden för korrektur är nu begränsat till 10.
 * Tecken tillåts för **Subject line prefix** i korrektur är nu begränsade. [Läs mer](../design/preview.md#send-proofs)
 
-**Personalization uttrycksredigerare**
+**Redigerare för anpassningsuttryck**
 
 * Hjälplistan har bytt namn och ordnats om.
 

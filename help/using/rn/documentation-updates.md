@@ -2,10 +2,10 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
+source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 21%
+source-wordcount: '1254'
+ht-degree: 23%
 
 ---
 
@@ -13,12 +13,22 @@ ht-degree: 21%
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
 
+## April 2022 {#april-2022}
+
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Versionen från 22 april finns detaljerad i dokumentationen. [Läs mer](release-notes.md)
+* The **reaktioner** sidan med händelsedokumentation har uppdaterats. [Läs mer](../building-journeys/reaction-events.md)
+* Videoklippen för funktioner för beslutshantering har uppdaterats för att återspegla Journey Optimizer användargränssnitt. [Läs mer](../offers/get-started/starting-offer-decisioning.md)
+* The **Kom igång med datauppsättningar** -avsnittet har förbättrats för att ge detaljerad information om hur du får åtkomst till och skapar datauppsättningar. [Läs mer](../start/get-started-datasets.md)
+* Länkar till hjälplinjer och versionsinformation om produkten har lagts till i **Adobe Journey Optimizer Documentation** hemsida. [Läs mer](https://experienceleague.adobe.com/docs/journey-optimizer.html)
+* The **Skapa meddelandeförinställningar** anger nu att du inte kan fortsätta med att skapa förinställningar medan den valda IP-poolen är under utgåva (**[!UICONTROL Processing]** status) och har aldrig kopplats till den valda underdomänen. [Läs mer](../configuration/message-presets.md#subdomains-and-ip-pools)
+* Meddelandeförinställningarna **URL-spårning** -avsnittet har uppdaterats för att återspegla mindre ändringar i användargränssnittet. [Läs mer](../configuration/message-presets.md#url-tracking)
+
 ## Mars 2022 {#march-2022}
 
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Mars 22-utgåvan finns utförlig i dokumentationen. [Läs mer](release-notes.md)
 * En ny sida om hur du kommer igång med AI-modeller har lagts till i **Offer decisioning** med en detaljerad beskrivning av [autooptimeringsmodell](../offers/offer-library/ai-ranking.md#auto-optimization), den algoritm som används och mer teknisk information. [Läs mer](../offers/offer-library/ai-ranking.md)
 * Sidan där testprofilen skapades har flyttats till  **Segment, profiler och identitet** -avsnitt. [Läs mer](../segment/creating-test-profiles.md)
-* Ett exempel har lagts till om hur du lägger till ett uttryck som standardvärde i uttrycksredigeraren. [Läs mer](../building-journeys/expression/field-references.md#default-value)
+* Ett exempel har lagts till om hur du lägger till ett uttryck som ett standardvärde i uttrycksredigeraren. [Läs mer](../building-journeys/expression/field-references.md#default-value)
 * The **Skapa personaliserade erbjudanden** -avsnittet har omstrukturerats för förbättrad läsbarhet. [Läs mer](../offers/offer-library/creating-personalized-offers.md)
 * Ett nytt avsnitt har lagts till för att beskriva den påverkan som ett byte av ett erbjudandes start- och/eller slutdatum kan ha på det här erbjudandets frekvensbegränsning. [Läs mer](../offers/offer-library/add-constraints.md#capping-change-date)
 * The **Ändra de primära e-postadresserna** -avsnittet har uppdaterats för att återspegla ändringar i användargränssnittet. [Läs mer](../configuration/primary-email-addresses.md)
@@ -26,8 +36,8 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 ## Februari 2022 {#feb-2022}
 
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] 22 februari-utgåvan finns utförlig i dokumentationen. [Läs mer](release-notes.md)
-* The [ersätt](../building-journeys/functions/functionreplace.md#example_2) och [replaceAll](../building-journeys/functions/functionreplaceall.md#example) funktionsdokumentationssidor har uppdaterats med ytterligare information och exempel om målparametern.
-* Bästa tillvägagångssätt har lagts till i [Operatorer](../building-journeys/expression/operators.md#important-notes) sida.
+* Dokumentationssidorna för funktionerna [replace](../building-journeys/functions/functionreplace.md#example_2) och [replaceAll](../building-journeys/functions/functionreplaceall.md#example) har uppdaterats med ytterligare information och exempel angående målparametern.
+* Bästa praxis har lagts till på sidan [Operatorer](../building-journeys/expression/operators.md#important-notes).
 
 ## Januari 2022 {#january-2022}
 

@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
+source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '1047'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ Följ stegen nedan för att definiera inställningarna för den primära sidan.
 
    ![](assets/lp_open-designer.png)
 
-1. Definiera URL-adressen till landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan. [Läs mer](../configuration/lp-configuration.md#lp-subdomains)
+1. Definiera URL-adressen till landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan som en del av [förinställning](../configuration/lp-configuration.md#lp-create-preset) du markerade. [Läs mer](../configuration/lp-configuration.md#lp-subdomains)
 
    >[!CAUTION]
    >
@@ -92,6 +92,16 @@ Följ stegen nedan för att definiera inställningarna för den primära sidan.
    >[!NOTE]
    >
    >Du kan inte komma åt din landningssida genom att kopiera och klistra in URL-adressen i en webbläsare, även om den publicerats. I stället kan du testa den med förhandsvisningsfunktionen som beskrivs i [det här avsnittet](#test-landing-page).
+
+1. Om du vill att landningssidan ska förhandsladda formulärdata som redan är tillgängliga väljer du **[!UICONTROL Pre-fill form fields with profile information]**.
+
+   ![](assets/lp_prefill-form-fields.png)
+
+   Om det här alternativet är aktiverat och en profil redan har valt in/ut eller redan har lagts till i en prenumerationslista, återspeglas deras val när landningssidan visas.
+
+   Om en profil till exempel har valt att ta emot meddelanden om framtida händelser, kommer motsvarande kryssruta redan att vara markerad nästa gång landningssidan visas för den profilen.
+
+   ![](assets/lp_prefill-form-ex.png)
 
 1. Du kan ange ett förfallodatum för sidan. I så fall måste du välja en åtgärd när sidan förfaller:
 
