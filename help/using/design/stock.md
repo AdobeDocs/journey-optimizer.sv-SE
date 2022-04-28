@@ -7,9 +7,9 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
+source-git-commit: cc7a544b58c0caff4fd0b3d02c53622b506e98e2
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '404'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 3%
 # Hantera [!DNL Adobe Stock] bilder {#stock}
 
 ## Kom igång med [!DNL Adobe Stock] {#get-started-stock}
+
+>[!IMPORTANT]
+>
+> Användning av [!DNL Adobe Stock] integreringen är för närvarande endast tillgänglig i ett tidigt skede för att kunna välja användare. Om du vill använda den här funktionen kontaktar du din kontoansvarige på Adobe.
 
 [!DNL Adobe Stock] ger tillgång till miljontals utvalda och royaltyfria foton, videor, illustrationer och vektorbilder av hög kvalitet. Du kan välja att köpa ett kreditpaket för att licensiera mediefiler eller bara köpa en Standard- eller Extended-licens för den mediefil du behöver. Adobe Stock erbjuder också en kostnadsfri samling resurser.
 

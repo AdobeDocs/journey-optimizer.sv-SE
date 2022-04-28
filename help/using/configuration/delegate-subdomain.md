@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
+source-git-commit: cc7a544b58c0caff4fd0b3d02c53622b506e98e2
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1636'
 ht-degree: 5%
 
 ---
@@ -27,7 +27,11 @@ Delegering av domännamn är en metod som tillåter ägaren av ett domännamn (t
 >
 >Som standard [!DNL Journey Optimizer] Med licensavtalet kan du delegera upp till 10 underdomäner. Kontakta Adobe om du vill öka begränsningen.
 
-Du kan delegera en underdomän helt eller skapa en underdomän med CNAME för att peka mot Adobe-specifika poster. Läs mer om skillnaderna mellan [konfigurationsmetoder för underdomäner](about-subdomain-delegation.md#subdomain-delegation-methods).
+Du kan delegera en underdomän helt eller skapa en underdomän med CNAME för att peka mot Adobe-specifika poster.
+
+>[!CAUTION]
+>
+>Den fullständiga underdomänsdelegeringen rekommenderas. Läs mer om skillnaderna mellan [konfigurationsmetoder för underdomäner](about-subdomain-delegation.md#subdomain-delegation-methods).
 
 ## Fullständig delegering av underdomäner {#full-subdomain-delegation}
 
