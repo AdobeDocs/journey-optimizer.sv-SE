@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 3bcc08d6-1210-4ff9-92f4-edee8285b469
-source-git-commit: a473ffa25871cdf0e5acb48c6902f883bd8f74a2
+source-git-commit: afd6bec0151eb2c369ae68d369adf98e772841c9
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 2%
@@ -40,7 +40,7 @@ Om du vill göra det går du till **[!UICONTROL Journey Properties]** väljer du
 
 ![](assets/journey72.png)
 
-## Använda profiler för att definiera resetidszonen {#timezone-from-profiles}
+## Använd profiler för att definiera resetidszonen {#timezone-from-profiles}
 
 Om resans inträde-händelse har ett namnutrymme, vilket innebär att resan kan nå kundprofiltjänsten i realtid i Adobe Experience Platform, är tidszonen fördefinierad med den som anges i profilen för den person som löper på resan.
 
@@ -52,6 +52,6 @@ Gör så här: **[!UICONTROL Properties]**, kontrollera **[!UICONTROL Use Profil
 
 ![](assets/journey73.png)
 
-## Använda tidszoner i uttryck {#timezone-in-expressions}
+## Använd tidszoner i uttryck {#timezone-in-expressions}
 
 Start- och slutdatum för en resa kan inte länkas till en viss tidszon. De kopplas automatiskt till instansens tidszon.

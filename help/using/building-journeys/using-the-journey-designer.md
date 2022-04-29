@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 1998f6fc-60fd-4038-8669-39cd55bc02d1
-source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
+source-git-commit: afd6bec0151eb2c369ae68d369adf98e772841c9
 workflow-type: tm+mt
-source-wordcount: '1456'
+source-wordcount: '1457'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Med resegränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan. Du kan också dubbelklicka på en aktivitet för att lägga till den på arbetsytan i nästa steg som är tillgängligt. Varje aktivitet har en särskild roll och plats i processen. Aktiviteterna är sekventierade. När en aktivitet är klar fortsätter flödet och bearbetar nästa aktivitet och så vidare.
 
-## Kom igång med resedesign
+## Kom igång med resedesign {#gs-journey-design}
 
 The **palett** finns till vänster på skärmen. Alla tillgängliga aktiviteter är sorterade i flera kategorier: **[!UICONTROL Events]**, **[!UICONTROL Orchestration]** och **[!UICONTROL Actions]**. Du kan expandera/komprimera de olika kategorierna genom att klicka på deras namn. Om du vill använda en aktivitet på din resa drar och släpper du den från paletten till arbetsytan.
 
@@ -52,7 +52,7 @@ Beroende på resans status kan du utföra olika åtgärder under resan med hjäl
 
 ![](assets/journey41.png)
 
-## Starta din resa
+## Påbörja resan {#start-your-journey}
 
 När du utformar din resa är den första frågan du vill ställa hur profiler kommer in på resan. Det finns två möjligheter:
 
@@ -60,7 +60,7 @@ När du utformar din resa är den första frågan du vill ställa hur profiler k
 
 **Börja med ett lässegment**: kan ni styra er resa så att ni lyssnar på Adobe Experience Platform segment. I det här fallet kommer alla personer som tillhör det angivna segmentet in på resan. Meddelanden som ingår i resan skickas till personer som tillhör segmentet. [Läs mer om att läsa segment](read-segment.md).
 
-## Definiera nästa steg
+## Definiera nästa steg{#define-next-steps}
 
 Efter din första händelse eller Läs segment kan du kombinera de olika aktiviteterna för att skapa flerstegsscenarier för flera kanaler. Välj de steg du behöver på paletten.
 
@@ -86,9 +86,11 @@ Här hittar du **Meddelande** aktivitet som gör att du kan ta med ett meddeland
 
 Du hittar också de anpassade åtgärder som du har konfigurerat för att skicka meddelanden med tredjepartssystem. Läs mer om detta [section](about-journey-activities.md#action-activities).
 
-## Användning av banor på arbetsytan {#paths}
+## Lägg till alternativa banor{#paths}
 
-Flera verksamheter (**[!UICONTROL Condition]**, **[!UICONTROL Action]** aktiviteter) kan du definiera en reservåtgärd om ett fel eller en timeout inträffar. Markera kryssrutan i aktivitetskonfigurationsrutan: **[!UICONTROL Add an alternative path in case of a timeout or an error]**. En annan sökväg läggs till efter aktiviteten. Tidsgränsen definieras i resans egenskaper (se [den här sidan](../building-journeys/journey-gs.md#change-properties) av en administratörsanvändare. Om det t.ex. tar för lång tid att skicka ett e-postmeddelande eller om ett fel uppstår, kan du välja att skicka ett push-meddelande.
+Du kan definiera en reservåtgärd om ett fel uppstår eller tidsgränsen överskrids för följande reseaktiviteter: **[!UICONTROL Condition]** och **[!UICONTROL Action]**.
+
+Om du vill lägga till en reservåtgärd för en aktivitet väljer du **[!UICONTROL Add an alternative path in case of a timeout or an error]** i aktivitetsegenskaperna: en annan sökväg läggs till efter aktiviteten. Tidsgränsen definieras av administratörsanvändare i [egenskaper för resa](../building-journeys/journey-gs.md#change-properties). Om det t.ex. tar för lång tid att skicka ett e-postmeddelande eller om ett fel uppstår, kan du välja att skicka ett push-meddelande.
 
 ![](assets/journey42.png)
 
@@ -104,7 +106,7 @@ När två aktiviteter inte är kopplade till arbetsytan visas en varning. Placer
 
 ![](assets/canvas-disconnected.png)
 
-## Kopierings- och inklistringsaktiviteter {#copy-paste}
+## Kopiera och klistra in aktiviteter {#copy-paste}
 
 Du kan kopiera en eller flera aktiviteter under en resa och klistra in dem antingen under samma resa eller under en annan. På så sätt kan du spara tid om du vill återanvända flera aktiviteter som redan har konfigurerats under en tidigare resa.
 
