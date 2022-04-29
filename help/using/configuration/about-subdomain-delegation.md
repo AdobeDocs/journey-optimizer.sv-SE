@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 1b5ca4db-44d9-49e2-ab39-a1abba223ec7
-source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
+source-git-commit: d1204d7653a1fe32d068f974f425e10949065bc1
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 32%
@@ -52,9 +52,10 @@ Med subdomänkonfigurationen kan du konfigurera ett underavsnitt av din domän (
 
 >[!CAUTION]
 >
->Den fullständiga underdomänsdelegeringen är den rekommenderade metoden.
+>* Den fullständiga underdomänsdelegeringen är den rekommenderade metoden.
 >
->CNAME-metoden rekommenderas om din organisations principer begränsar den fullständiga delegeringsmetoden för underdomäner. På det här sättet måste du behålla och hantera DNS-poster på egen hand. Adobe kan inte hjälpa till med att ändra, underhålla eller hantera DNS för en underdomän som konfigurerats via CNAME-metoden.
+>* CNAME-metoden rekommenderas om organisationens principer begränsar den fullständiga delegeringsmetoden för underdomäner. På det här sättet måste du behålla och hantera DNS-poster på egen hand. Adobe kan inte hjälpa till med att ändra, underhålla eller hantera DNS för en underdomän som konfigurerats via CNAME-metoden.
+
 
 Tabellen nedan tillhandahåller en sammanfattning av hur dessa metoder fungerar samt den troliga ansträngningsnivån:
 

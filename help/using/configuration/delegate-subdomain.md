@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: cc7a544b58c0caff4fd0b3d02c53622b506e98e2
+source-git-commit: d1204d7653a1fe32d068f974f425e10949065bc1
 workflow-type: tm+mt
-source-wordcount: '1636'
+source-wordcount: '1637'
 ht-degree: 5%
 
 ---
@@ -111,7 +111,7 @@ Med CNAME-delegering av underdomäner kan du skapa en underdomän och använda C
 
 >[!CAUTION]
 >
->Den här metoden rekommenderas om din organisations principer begränsar den fullständiga delegeringsmetoden för underdomäner. På det här sättet måste du behålla och hantera DNS-poster på egen hand. Adobe kan inte hjälpa till med att ändra, underhålla eller hantera DNS för en underdomän som konfigurerats via CNAME-metoden.
+>CNAME-metoden rekommenderas om organisationens principer begränsar den fullständiga delegeringsmetoden för underdomäner. På det här sättet måste du behålla och hantera DNS-poster på egen hand. Adobe kan inte hjälpa till med att ändra, underhålla eller hantera DNS för en underdomän som konfigurerats via CNAME-metoden.
 
 ➡️ [Lär dig hur du skapar en underdomän med CNAME för att peka på Adobe-specifika poster i den här videon](#video)
 
