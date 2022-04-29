@@ -6,18 +6,18 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: a68cfae875b18266417e115d17c73cda7061475d
+source-git-commit: c5ddc1a5a3dc133819ba2f887dae73fc48690fe9
 workflow-type: tm+mt
-source-wordcount: '1793'
-ht-degree: 6%
+source-wordcount: '1846'
+ht-degree: 5%
 
 ---
 
 # Kom igång med resor{#jo-quick-start}
 
-## Krav
+## Krav{#start-prerequisites}
 
-För att kunna skicka meddelanden med resor krävs följande konfiguration:
+För att kunna skicka meddelanden med resor krävs följande konfigurationer:
 
 1. **Konfigurera en händelse**: Om du vill utlösa dina resor tills vidare när en händelse tas emot, måste du konfigurera en händelse. Du definierar den förväntade informationen och hur den ska behandlas. Det här steget utförs av en **teknisk användare**. [Läs mer](../event/about-events.md).
 
@@ -35,12 +35,12 @@ För att kunna skicka meddelanden med resor krävs följande konfiguration:
 
    ![](assets/create-content-push.png)
 
-## Bygga din resa{#jo-build}
+## Bygg upp din resa{#jo-build}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_create"
 >title="Bygg upp din resa"
->abstract="På den här skärmen visas en lista med tidigare skapade resor. Öppna en resa eller klicka på Skapa resa och kombinera olika aktiviteter för evenemang, samordning och åtgärder för att skapa flerstegsscenarier för flera kanaler."
+>abstract="På den här skärmen visas en lista över befintliga resor. Öppna en resa eller klicka på Skapa resa och kombinera olika aktiviteter för evenemang, samordning och åtgärder för att skapa flerstegsscenarier för flera kanaler."
 
 Det här steget utförs av **företagsanvändare**. Här skapar du dina resor. Kombinera de olika händelserna, orkestreringen och åtgärderna för att skapa scenarier i flera steg över olika kanaler.
 
@@ -72,16 +72,16 @@ Här är de viktigaste stegen för att skicka meddelanden via resor:
 
    ![](assets/jo-dynamic_report_journey_12.png)
 
-## Ändra egenskaper {#change-properties}
+## Definiera resans egenskaper {#change-properties}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties"
 >title="Resans egenskaper"
->abstract="Du kan ändra namnet på resan, lägga till en beskrivning, tillåta återinträde, välja start- och slutdatum och definiera en timeout och felvaraktighet om du är administratör."
+>abstract="I det här avsnittet visas resans egenskaper. Som standard är skrivskyddade parametrar dolda. Vilka inställningar som är tillgängliga beror på resans status, på dina behörigheter och din produktkonfiguration."
 
 Klicka på pennikonen i det övre högra hörnet för att komma åt resans egenskaper.
 
-Du kan ändra namnet på resan, lägga till en beskrivning, tillåta återinträde, välja start- och slutdatum och definiera en **[!UICONTROL Timeout and error]** längd om du är administratör.
+Du kan ändra namnet på resan, lägga till en beskrivning, tillåta återinträde, välja start- och slutdatum och, som administratör, definiera en **[!UICONTROL Timeout and error]** varaktighet. Om det är aktiverat för din organisation kan du även aktivera [burst messaging](#burst).
 
 På den här skärmen visas publiceringsdatumet och namnet på den användare som publicerade resan.
 
@@ -123,40 +123,46 @@ Tidszonen definieras på resenivå.
 
 Du kan ange en fast tidszon eller använda Adobe Experience Platform-profiler för att definiera resetidszonen.
 
+Om en tidszon definieras i Adobe Experience Platform-profilen kan den hämtas under resan.
+
 Mer information om hantering av tidszoner finns i [den här sidan](../building-journeys/timezone-management.md).
 
 ### Burst-läge {#burst}
 
-Burst-läget är ett betalt tillägg som gör att det går att skicka mycket snabba push-meddelanden i stora volymer. Det används för enkla resor som innehåller ett lässegment och ett enkelt push-meddelande. Burst används när fördröjning i meddelandeleverans är affärskritisk när du vill skicka en snabb push-varning på mobiltelefoner, till exempel ett meddelande om nyheter till användare som har installerat din nyhetskanalapp.
+Burst-läget är ett Journey Optimizer-tillägg som gör att det går att skicka mycket snabba push-meddelanden i stora volymer. Det används för enkla resor som innehåller en **Lässegment** och ett enkelt push-meddelande. Burst används när fördröjning i meddelandeleverans är affärskritisk när du vill skicka en snabb push-varning på mobiltelefoner, till exempel ett meddelande om nyheter till användare som har installerat din nyhetskanalapp.
 
-Begränsningar:
+Burst-meddelanden innehåller följande krav:
 
-* Resan måste börja med ett lässegment. Händelser tillåts inte.
-* Nästa steg måste vara ett push-meddelande. Ingen annan aktivitet eller steg tillåts (förutom den valfria slutaktiviteten):
-   * Skjut bara kanal
-   * Ingen personalisering tillåts i meddelandet
-   * Meddelandet måste vara litet (&lt;2kB)
+* Resan måste börja med en **Lässegment** aktivitet. Händelser tillåts inte.
+* Nästa steg måste vara ett push-meddelande. Ingen annan kanal, aktivitet eller steg är tillåten (förutom det valfria) **End** aktivitet).
+* Ingen personalisering tillåts i push-meddelandet.
+* Meddelandet måste vara litet (&lt;2kB).
 
-Viktigt:
+>[!CAUTION]
+>
+>Om något av kraven inte är uppfyllt, är inte sprängningsläget tillgängligt under resan.
 
-Om något av kraven inte är uppfyllt, är inte sprängningsläget tillgängligt under resan.
-
-Aktivera Burst-läget genom att öppna resan och klicka på pennikonen i det övre högra hörnet för att komma åt resans egenskaper. Aktivera sedan **Aktivera sprängningsläge** växla.
+Aktivera **Burst-läge**&#x200B;öppnar du resan och klickar på pennikonen längst upp till höger för att komma åt resans egenskaper. Aktivera sedan **Aktivera sprängningsläge** växla.
 
 ![](assets/burst.png)
 
-Burst-läget inaktiveras om du ändrar en burst-resa och lägger till en aktivitet som inte är kompatibel med burst (meddelande, annan åtgärd, en händelse osv.). Ett meddelande visas.
+Burst-läget inaktiveras automatiskt om du ändrar en burst-resa och lägger till en aktivitet som inte är kompatibel med burst-meddelanden, till exempel ett e-postmeddelande, andra åtgärder, en händelse osv.
 
 ![](assets/burst2.png)
 
-Testa och publicera sedan din resa som vanligt. Testlägesmeddelanden skickas inte via burst-läget.
+Testa och publicera sedan din resa som vanligt. Observera att meddelanden inte skickas i sprängningsläge i testläge.
 
-## Avsluta en resa
+I den här videon får du veta vilka användningsexempel som gäller för burst-meddelanden och hur du konfigurerar en resa för burst-meddelanden:
 
-En resa kan ta slut för en individ på grund av två orsaker:
+>[!VIDEO](https://video.tv.adobe.com/v/334523?quality=12)
 
-* Personen kommer till den sista aktiviteten i en bana. Den senaste aktiviteten kan vara en slutaktivitet eller en annan aktivitet. Det finns ingen skyldighet att avsluta ett tågläge med en slutaktivitet. Läs [den här sidan](../building-journeys/end-activity.md).
-* Personen kommer till en villkorsaktivitet (eller en vänteaktivitet med ett villkor) och matchar inte något av villkoren.
+
+## Avsluta, stoppa eller stänga en resa{#end-journey}
+
+En resa kan ta slut för en individ i två specifika sammanhang:
+
+* Personen kommer till den sista aktiviteten i en bana. Den senaste aktiviteten kan vara en **End** aktivitet eller annan aktivitet. Använda en **End** aktivitet är inte obligatorisk. Läs [den här sidan](../building-journeys/end-activity.md).
+* Personen kommer till **Villkor** aktivitet (eller **Vänta** aktivitet med ett villkor) och matchar inte något av villkoren.
 
 Personen kan sedan återinträda i resan om återinträde tillåts. Läs [den här sidan](../building-journeys/journey-gs.md#change-properties)
 
@@ -166,7 +172,7 @@ En resa kan avslutas på grund av följande orsaker:
 * En segmentbaserad resa som utförts i ett enda steg.
 * Efter den sista förekomsten av en återkommande segmentbaserad resa.
 
-När en resa stängs (av någon av anledningarna ovan) får den statusen **[!UICONTROL Closed]**. Resan kommer att sluta låta nya individer komma in på resan. Personer som redan är på resan kommer att slutföra resan normalt. Efter den globala standardtidsgränsen på 30 dagar växlar resan till **Slutförd** status. Se det här [section](../building-journeys/journey-gs.md#global_timeout).
+När en resa stängs (av någon av anledningarna ovan) får den statusen **[!UICONTROL Closed]**. Resan slutar med att nya individer kan komma in på resan. Personer som redan är på resan kan slutföra resan normalt. Efter den globala standardtidsgränsen på 30 dagar växlar resan till **Slutförd** status. Se det här [section](../building-journeys/journey-gs.md#global_timeout).
 
 Om ni behöver stoppa alla personers framsteg på resan kan ni stoppa den. Om du stoppar resan kommer alla personer på resan att tidsgränsen för timeout.
 
@@ -197,8 +203,7 @@ Du kan även:
 
    ![](assets/finish_drop_down_list.png)
 
-1. Klicka på **[!UICONTROL Close to new entrances]**. En dialogruta visas.
-1. Klicka **[!UICONTROL Close to new entrances]** för att bekräfta.
+1. Klicka **[!UICONTROL Close to new entrances]** och bekräfta i dialogrutan.
 
 ### Stoppa en resa
 
@@ -206,7 +211,7 @@ Du kan stoppa en resa när en kris inträffar och all behandling måste avslutas
 
 Det går inte att starta om en stoppad reseversion.
 
-När den stoppas får en resa statusen **[!UICONTROL Stopped]**.
+När det stoppas anges resans status till **[!UICONTROL Stopped]**.
 
 Du kan till exempel stoppa en resa om en marknadsförare upptäcker att resan riktar sig mot fel målgrupp eller en anpassad åtgärd som ska leverera meddelanden inte fungerar korrekt. Om du vill stoppa en resa från listan över resor klickar du på **[!UICONTROL Ellipsis]** knapp som finns till höger om resenamnet och väljer **[!UICONTROL Stop]**.
 
@@ -219,5 +224,4 @@ Du kan även:
 
 ![](assets/finish_drop_down_list.png)
 
-1. Klicka på **[!UICONTROL Stop]**. En dialogruta visas.
-1. Klicka **[!UICONTROL Stop]** för att bekräfta.
+1. Klicka **[!UICONTROL Stop]** och bekräfta i dialogrutan.

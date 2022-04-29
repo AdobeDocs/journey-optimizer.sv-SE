@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 3bcc08d6-1210-4ff9-92f4-edee8285b469
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: a473ffa25871cdf0e5acb48c6902f883bd8f74a2
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '278'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 Du kan definiera en tidszon i dialogrutan [egenskaper](../building-journeys/journey-gs.md#change-properties) av din resa.
 
-Du öppnar Egenskaper genom att klicka på pennikonen i skärmens övre högra hörn.
+Du öppnar Egenskaper för resa genom att klicka på pennikonen i skärmens övre högra hörn.
 
 Den här tidszonen kommer att användas för varje aktivitet i resan som innehåller ett tidselement som:
 
