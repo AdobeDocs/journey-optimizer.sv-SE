@@ -5,7 +5,8 @@ feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+exl-id: 1f43bcde-0786-45e8-baf4-065c3920fd4e
+source-git-commit: dc56f2dc461a11c9706b3572ccd4b9e0feb6f055
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%
@@ -19,6 +20,10 @@ När du markerar ett element och visar dess inställningar på sidopanelen i gr�
 1. Markera ett element i innehållet.
 1. På sidopanelen letar du efter **[!UICONTROL Styles Inline]** inställningar.
 
+   ![](assets/styles_1.png)
+
 1. Ändra värdena för de befintliga attributen eller lägg till nya med **+** -knappen. Du kan lägga till alla attribut och värden som är CSS-kompatibla.
+
+   ![](assets/styles_2.png)
 
 Formateringen används sedan på det markerade elementet. Om de underordnade elementen inte har några definierade formatattribut ärvs det överordnade elementets formatering.

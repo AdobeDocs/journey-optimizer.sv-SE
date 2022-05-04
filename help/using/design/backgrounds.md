@@ -5,7 +5,8 @@ feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+exl-id: 09a2e892-8c6f-460d-8b12-5026582c6ed0
+source-git-commit: dc56f2dc461a11c9706b3572ccd4b9e0feb6f055
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -29,17 +30,25 @@ Nedan visas de tillgängliga bakgrundsinställningarna som du kan använda.
 
 * Ange en **[!UICONTROL Background color]** för hela e-postmeddelandet. Se till att du väljer brödtextinställningarna i navigeringsträdet som du kommer åt från den vänstra paletten.
 
+   ![](assets/background_1.png)
+
 * Ange samma bakgrundsfärg för alla strukturkomponenter genom att markera **[!UICONTROL Viewport background color]**. Med det här alternativet kan du välja en annan inställning från bakgrundsfärgen.
+
+   ![](assets/background_2.png)
 
 * Ange olika bakgrundsfärger för varje strukturelement. Välj en struktur i navigeringsträdet som du kommer åt från den vänstra paletten om du bara vill använda en viss bakgrundsfärg på den strukturen.
 
    Se till att du inte anger någon bakgrundsfärg för visningsrutan eftersom den kan dölja strukturens bakgrundsfärger.
+
+   ![](assets/background_3.png)
 
 * Ange en **[!UICONTROL Background image]** för innehållet i en strukturkomponent.
 
    >[!NOTE]
    >
    >Vissa e-postprogram stöder inte bakgrundsbilder. Om alternativet inte stöds används radens bakgrundsfärg i stället. Se till att du väljer en lämplig bakgrundsfärg om bilden inte kan visas.
+
+   ![](assets/background_4.png)
 
 * Ange en bakgrundsfärg på kolumnnivå.
 
@@ -48,3 +57,5 @@ Nedan visas de tillgängliga bakgrundsinställningarna som du kan använda.
    >Detta är det vanligaste användningsfallet. Adobe rekommenderar att du ställer in bakgrundsfärger på kolumnnivå eftersom detta ger större flexibilitet när du redigerar hela e-postinnehållet.
 
    Du kan också ange en bakgrundsbild på kolumnnivå, men den används sällan.
+
+   ![](assets/background_5.png)

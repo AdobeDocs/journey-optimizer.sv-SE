@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e4f91870-f06a-4cd3-98b7-4c413233e310
-source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
+source-git-commit: dc56f2dc461a11c9706b3572ccd4b9e0feb6f055
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '195'
 ht-degree: 2%
 
 ---
@@ -24,6 +24,8 @@ ht-degree: 2%
 1. På hemsidan för e-postdesignern väljer du hur du vill utforma e-postmeddelandet bland följande alternativ:
 
    * **Designa din e-post från grunden** via e-postdesignerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets Essentials](assets-essentials.md). Lär dig hur du utformar e-postinnehåll eller använder inbyggda mallar [i det här avsnittet](create-email-content.md).
+
+   * **Kopiera från befintlig e-post** från en lista med exempelmallar.
 
    * **Kod eller klistra in Raw HTML** direkt i e-postdesignern. Lär dig koda eget innehåll [i det här avsnittet](code-content.md).
 
