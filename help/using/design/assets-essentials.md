@@ -1,15 +1,15 @@
 ---
-title: Adobe Experience Manager Assets Essentials
+title: Använd Assets Essentials i Journey Optimizer
 description: Kom igång med Assets Essentials
 feature: Overview
 topic: Content Management
 role: User
 level: Beginner
 exl-id: d4fde14b-e2da-40bf-a387-ee9f2f7ff204
-source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
+source-git-commit: ccc78d8d4276c33164adc4cc0ba46486c2093955
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 3%
+source-wordcount: '474'
+ht-degree: 2%
 
 ---
 
@@ -17,9 +17,17 @@ ht-degree: 3%
 
 ## Kom igång med [!DNL Assets Essentials] {#get-started-assets-essentials}
 
-[!DNL Adobe Experience Manager Assets Essentials] har ett enda centraliserat arkiv med resurser som du kan använda för att fylla i dina meddelanden. Den kan nås direkt från [!DNL Adobe Journey Optimizer] via **[!UICONTROL Assets]** -avsnitt. Du kan också komma åt resurser och mappar när du utformar ett e-postinnehåll. [Läs mer om e-postdesign](design-emails.md).
+Samla marknadsförings- och kreativa arbetsflöden med [!DNL Adobe Experience Manager Assets Essentials]. Inbyggt i [!DNL Adobe Journey Optimizer], åtkomst [!DNL Assets Essentials] att lagra, hantera, identifiera och distribuera digitala resurser. Det utgör en central databas med resurser som du kan använda för att fylla i dina meddelanden.
 
-Innan du använder [!DNL Adobe Experience Manager Assets Essentials]måste du lägga till användare i **Assets Essentials hemanvändare** eller/och **Assets Essentials-användare** Produktprofiler. [Läs mer i Assets Essentials-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}.
+[!DNL Adobe Experience Manager Assets Essentials] är en gemensam och centraliserad arbetsyta för resurser som utökar ert kreativa system och använder digitala resurser för upplevelseleverans. Ni kan enkelt ordna, märka och hitta godkända produktionsresurser för att säkerställa ett enhetligt varumärke i alla team. Med den intuitiva användarupplevelsen får du direkt tillgång till delade resurser i programmen Adobe Creative och Experience Cloud.
+
+Läs mer i [Adobe Experience Manager Assets Essentials-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target=&quot;_blank&quot;}.
+
+[!DNL Adobe Experience Manager Assets Essentials] kan nås direkt från [!DNL Adobe Journey Optimizer] via **[!UICONTROL Assets]** -avsnitt. Du kan även komma åt resurser och mappar när [utforma e-postinnehåll](design-emails.md).
+
+## Förutsättningar{#assets-prerequisites}
+
+Innan du använder [!DNL Adobe Experience Manager Assets Essentials]måste du lägga till användare i **Assets Essentials hemanvändare** eller/och **Assets Essentials-användare** Produktprofiler. Läs mer i [Assets Essentials-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}.
 
 >[!NOTE]
 >För Journey Optimizer-produkter som köpts före 6 januari 2022 måste du driftsätta [!DNL Adobe Experience Manager Assets Essentials] för er organisation. Läs mer i [Distribuera Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}.
