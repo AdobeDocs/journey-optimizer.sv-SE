@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: d1204d7653a1fe32d068f974f425e10949065bc1
+source-git-commit: 79d3bd42c208d38aaebce742e70b247106c21587
 workflow-type: tm+mt
-source-wordcount: '1637'
+source-wordcount: '1639'
 ht-degree: 5%
 
 ---
@@ -191,7 +191,7 @@ Kontrollerna och åtgärderna nedan utförs tills underdomänen har verifierats 
 
 1. **Skapa spårnings- och spegeladresser**: om domänen är email.example.com, blir spårnings-/spegeldomänen data.email.example.com. Den skyddas genom att SSL-certifikatet installeras.
 
-1. **Tillhandahåll CDN CloudFront**: om CDN inte redan är inställt, tillhandahåller Adobe det för imbern.
+1. **Tillhandahåll CDN CloudFront**: om CDN inte redan är konfigurerat, tillhandahåller Adobe det för din organisations-ID.
 
 1. **Skapa CDN-domän**: Om domänen är email.example.com blir CDN-domänen cdn.email.example.com.
 

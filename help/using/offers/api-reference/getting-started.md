@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 773bee50-849f-4b07-9423-67de5279ad28
-source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
+source-git-commit: 79d3bd42c208d38aaebce742e70b247106c21587
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 2%
@@ -34,7 +34,7 @@ Den här guiden innehåller exempel på API-anrop som visar hur du formaterar di
 
 ## Samla in värden för obligatoriska rubriker {#gather-values-for-required-headers}
 
-För att ringa [!DNL Platform] API:er måste du först slutföra [självstudiekurs om autentisering](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html){target=&quot;_blank&quot;}. När du är klar med självstudiekursen för autentisering visas värdena för var och en av de obligatoriska rubrikerna i alla [!DNL Experience Platform] API-anrop enligt nedan:
+För att ringa [!DNL Adobe Experience Platform] API:er måste du först slutföra [självstudiekurs om autentisering](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html){target=&quot;_blank&quot;}. När du är klar med självstudiekursen för autentisering visas värdena för var och en av de obligatoriska rubrikerna i alla [!DNL Experience Platform] API-anrop enligt nedan:
 
 * `Authorization: Bearer {ACCESS_TOKEN}`
 * `x-api-key: {API_KEY}`

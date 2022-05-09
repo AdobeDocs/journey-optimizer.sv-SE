@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: e0144151-6c54-4656-9650-b544d8e7be16
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 79d3bd42c208d38aaebce742e70b247106c21587
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '292'
 ht-degree: 4%
 
 ---
@@ -26,7 +26,7 @@ Sedan måste du konfigurera det datasystem som överför händelser till API:er 
 1. Använd nyttolasten som du kopierade från [!DNL Journey Optimizer] i brödtexten (&quot;dataavsnittet&quot;) för API-anropet till API:er för Streaming Ingmit. Se nedan för ett exempel
 1. Bestäm var alla variabler som finns i nyttolasten ska hämtas. Exempel: om händelsen ska förmedla adressen, kommer nyttolasten som klistras in att visa&quot;adress&quot;: &quot;string&quot;. &quot;string&quot; ska ersättas med variabeln som automatiskt fyller i rätt värde, e-postadressen till den person som meddelandet ska skickas till. Observera att i nyttolastförhandsvisningen i **[!UICONTROL Header]** fyller vi automatiskt i många värden som förväntas underlätta arbetet.
 1. Välj &quot;application/json&quot; som en texttyp.
-1. Skicka ditt IMS-organisations-ID i huvudet med tangenten &quot;x-gw-ims-org-id&quot;. Använd ditt IMS-organisations-ID (&quot;XXX@AdobeOrg&quot;) för värdet.
+1. Skicka ditt organisations-ID i huvudet med nyckeln &quot;x-gw-ims-org-id&quot;. Använd ditt företags-ID (&quot;XXX@AdobeOrg&quot;) för värdet.
 
 Här är ett exempel på en API-händelse för direktuppspelning:
 
