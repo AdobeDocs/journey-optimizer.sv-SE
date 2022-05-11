@@ -7,10 +7,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: 4812a9191eb16d622e5c9250b30096ca124d5781
+source-git-commit: 80e0fea3be11dcd594b1de04a0a903b87b9c7b68
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 7%
+source-wordcount: '336'
+ht-degree: 8%
 
 ---
 
@@ -118,6 +118,9 @@ ht-degree: 7%
     <li>
       <a href="using/messages/get-started-content.md">Meddelanden</a>
     </li>
+    <li>
+      <a href="using/landing-pages/get-started-lp.md">Landningssidor</a>
+    </li>
     <p>
     <p>BESLUTSHANTERING</p>
     <li>
@@ -155,12 +158,24 @@ ht-degree: 7%
     <li>
       <a href="using/segment/about-segments.md">Segment</a>
     </li>
-     <li>
+    </li>
+    <li>
+      <a href="using/landing-pages/subscription-list.md">Prenumerationslistor</a>
+    </li>     
+    <li>
       <a href="using/segment/get-started-profiles.md">Profiler</a>
     </li>
     <li>
       <a href="using/segment/get-started-identity.md">Identitet</a>
     </li>
+    <p>SEKRETESS</p>
+    <li>
+      <a href="https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html" target="_blank">Profiler</a>
+    </li>
+    <li>
+      <a href="https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html"target="_blank">Begäranden</a>
+    </li>
+    <p>
     <p>
     <p>ADMINISTRATION</p>
     <li>
@@ -175,7 +190,6 @@ ht-degree: 7%
   </td>
 </tr>
 </table>
-
 
 
 ![Nyhetsbrev](using/assets/do-not-localize/nl-icon.png) Registrera dig för [Adobe Journey Optimizer kvartalsvis nyhetsbrev](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target=&quot;_blank&quot;} idag!

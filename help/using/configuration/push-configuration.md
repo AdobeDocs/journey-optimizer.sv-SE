@@ -4,9 +4,9 @@ description: Lär dig hur du konfigurerar miljön för att skicka push-meddeland
 role: Admin
 level: Intermediate
 exl-id: 7099d44e-5d5d-4eef-9477-f68f4eaa1983
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: a6fabce744cb85c447327b6ceb809bf399d4b610
 workflow-type: tm+mt
-source-wordcount: '1437'
+source-wordcount: '1434'
 ht-degree: 3%
 
 ---
@@ -253,7 +253,7 @@ To configure the `ProfileDataSource`, use the `ProfileDCInletURL` from [!DNL Ado
 
 ## Steg 3: Testa din mobilapp med en händelse {#mobile-app-test}
 
-När du har konfigurerat din mobilapp i både Adobe Experience Platform och i [!DNL Adobe Experience Platform Data Collection]kan du testa den innan du skickar push-meddelanden till dina profiler. I det här fallet skapar vi en resa för att rikta in oss på vår mobilapp och ställa in en händelse som ska utlösa push-meddelandet.
+När du har konfigurerat din mobilapp i både Adobe Experience Platform och i [!DNL Adobe Experience Platform Data Collection]kan du testa den innan du skickar push-meddelanden till dina profiler. I det här fallet skapar vi en resa för att rikta in oss på vår mobilapp och ställa in en händelse som utlöser push-meddelandet.
 
 <!--
 You can use a test mobile app for this use case. For more on this, refer to this [page](https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=CJM&title=Details+of+setting+the+mobile+test+app) (internal use only).

@@ -6,10 +6,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 39eb40e1-d7f5-4a8e-9b64-c620940d5ff2
-source-git-commit: 8a859af9ad09ca3f240ff6f355d4e5f34d2e4eac
+source-git-commit: 68fb00679e2dd420570aa3b7b12f8c345aa32d12
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 10%
+source-wordcount: '1103'
+ht-degree: 9%
 
 ---
 
@@ -80,15 +80,16 @@ Här följer de första stegen för att konfigurera en affärshändelse:
 
 1. Antalet resor som använder den här händelsen visas i fältet **[!UICONTROL Used in]**. Du kan klicka på ikonen **[!UICONTROL View journeys]** för att visa en lista över resor som använder den här händelsen.
 
-1. Definiera schema- och nyttolastfälten: Här väljer du den händelseinformation (kallas vanligtvis nyttolast) som resor förväntar sig att ta emot. Du kan sedan använda den här informationen i din resa. Se [det här avsnittet](../event/about-creating-business.md#define-the-payload-fields).
+1. Definiera schema- och nyttolastfälten: Här väljer du den händelseinformation (eller nyttolast) som resor förväntar sig att ta emot. Du kommer att använda den här informationen senare under din resa. Se [det här avsnittet](../event/about-creating-business.md#define-the-payload-fields).
 
    ![](assets/jo-event5-business.png)
 
-   Endast tidsseriescheman är tillgängliga. Scheman för upplevelsehändelser, beslutshändelser och resesteghändelser är inte tillgängliga. Händelseschemat måste innehålla en icke-personbaserad primär identitet. Följande fält måste markeras när händelsen definieras: `_id` och `timestamp`
+   Endast tidsseriescheman är tillgängliga. `Experience Events`, `Decision Events` och `Journey Step Events` scheman är inte tillgängliga. Händelseschemat måste innehålla en icke-personbaserad primär identitet. Följande fält måste markeras när händelsen definieras: `_id` och `timestamp`
 
    ![](assets/test-profiles-4.png)
 
-1. Klicka inuti **[!UICONTROL Event ID condition]** fält. Använd den enkla uttrycksredigeraren för att definiera villkoret som ska användas av systemet för att identifiera de händelser som utlöser din resa.
+1. Klicka inuti **[!UICONTROL Event ID condition]** fält. Använd den enkla uttrycksredigeraren för att definiera villkoret som används av systemet för att identifiera de händelser som utlöser din resa.
+
    ![](assets/jo-event6-business.png)
 
    I vårt exempel skrev vi ett villkor baserat på produktens id. Det innebär att när systemet tar emot en händelse som matchar det här villkoret, kommer det att skickas till resorna.
@@ -101,7 +102,7 @@ Här följer de första stegen för att konfigurera en affärshändelse:
 
    ![](assets/journey7-business.png)
 
-   Händelsen är nu konfigurerad och klar att injiceras i en resa. Ytterligare konfigurationssteg krävs för att ta emot händelser. Läs [den här sidan](../event/additional-steps-to-send-events-to-journey-orchestration.md).
+   Händelsen är nu konfigurerad och klar att injiceras i en resa. Ytterligare konfigurationssteg krävs för att ta emot händelser. Läs mer i [den här sidan](../event/additional-steps-to-send-events-to-journey.md).
 
 ## Definiera nyttolastfälten {#define-the-payload-fields}
 
@@ -119,17 +120,17 @@ Nyttolastdefinitionen gör att du kan välja vilken information systemet förvä
    >
    > Kontrollera att följande fält är markerade: `_id` och `timestamp`
 
-1. Markera de fält som du förväntar dig ska tas emot från händelsen. Det här är de områden som affärsanvändaren kommer att utnyttja under resan.
+1. Markera de fält som du förväntar dig att ta emot från händelsen. Det här är de områden som affärsanvändaren kommer att utnyttja under resan.
 
 1. När du är klar med att markera de fält som behövs klickar du på **[!UICONTROL Save]** eller tryck **[!UICONTROL Enter]**.
 
-   Antalet markerade fält visas i **[!UICONTROL Fields]** fält.
+   Antalet markerade fält visas i **[!UICONTROL Fields]**.
 
    ![](assets/journey12-business.png)
 
 ## Förhandsgranska nyttolasten {#preview-the-payload}
 
-Med nyttolastförhandsvisningen kan du validera nyttolastdefinitionen.
+Använd nyttolastförhandsvisningen för att validera nyttolastdefinitionen.
 
 1. Klicka på **[!UICONTROL View Payload]** om du vill förhandsgranska den nyttolast som systemet förväntar sig.
 
@@ -141,4 +142,4 @@ Med nyttolastförhandsvisningen kan du validera nyttolastdefinitionen.
 
 1. Kontrollera förhandsgranskningen för att validera nyttolastdefinitionen.
 
-1. Sedan kan du dela nyttolastförhandsvisningen med den person som ansvarar för händelsen som skickar. Den här nyttolasten kan hjälpa dem att utforma konfigurationen av en händelse som [!DNL Journey Optimizer]. Läs [den här sidan](../event/additional-steps-to-send-events-to-journey-orchestration.md).
+1. Sedan kan du dela nyttolastförhandsvisningen med den person som ansvarar för händelsen som skickar. Den här nyttolasten kan hjälpa dem att utforma konfigurationen av en händelse som [!DNL Journey Optimizer]. Läs [den här sidan](../event/additional-steps-to-send-events-to-journey.md).

@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 46d8950b-8b02-4160-89b4-1c492533c0e2
-source-git-commit: c058c4835c560f12e3d53bfb766324405b12968f
+source-git-commit: 1fa91a841d4f941f2c5bd1efd4a06ac8a9938bc7
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '821'
 ht-degree: 2%
 
 ---
@@ -28,10 +28,6 @@ The **[!UICONTROL Jump]** kan ni med hjälp av en viss aktivitet föra individer
 Lägg bara till en **[!UICONTROL Jump]** och välj en målresa. När personen kommer in i **[!UICONTROL Jump]** skickas en intern händelse till målresans första händelse. Om **[!UICONTROL Jump]** åtgärden lyckas, den enskilda personen fortsätter att göra framsteg på resan. Beteendet liknar andra åtgärder.
 
 I målresan utlöses den första händelsen internt av **[!UICONTROL Jump]** aktiviteten kommer att få den enskilda resan att flyta.
-
->[!NOTE]
->
->Se även självstudievideon [här](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/building-a-journey/jumping-to-another-journey.html){target=&quot;_blank&quot;}
 
 ## Livscykel
 

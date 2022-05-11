@@ -7,10 +7,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: f1ac47a0cb405eaadc5428e7e5479eaf776d7abe
+source-git-commit: 0dedeae2e33615c3191e6277fc6f258118b49822
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 5%
+source-wordcount: '944'
+ht-degree: 4%
 
 ---
 
@@ -83,6 +83,11 @@ När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICO
    >Endast standardportar tillåts när en anpassad åtgärd definieras: 80 för http och 443 för https.
 
 1. Välj samtalet **[!UICONTROL Method]**: kan vara antingen **[!UICONTROL POST]** eller **[!UICONTROL PUT]**.
+
+   >[!NOTE]
+   >
+   > The **DELETE** -metoden stöds inte. Om du behöver uppdatera en befintlig resurs väljer du **PUT** -metod.
+
 1. I **[!UICONTROL Headers]** definierar du HTTP-rubrikerna för det begärandemeddelande som ska skickas till den externa tjänsten:
    1. Om du vill lägga till ett rubrikfält klickar du på **[!UICONTROL Add a header field]**.
    1. Ange huvudfältets nyckel.
@@ -103,7 +108,7 @@ När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICO
 
    >[!NOTE]
    >
-   >Huvuden valideras enligt fälttolkningsregler. [Läs mer](https://tools.ietf.org/html/rfc7230#section-3.2.4).
+   >Huvuden valideras enligt fälttolkningsregler. Läs mer i [den här dokumentationen](https://tools.ietf.org/html/rfc7230#section-3.2.4){_blank}.
 
 ## Definiera åtgärdsparametrarna {#define-the-message-parameters}
 

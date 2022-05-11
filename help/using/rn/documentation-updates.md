@@ -2,16 +2,26 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
+source-git-commit: 80e0fea3be11dcd594b1de04a0a903b87b9c7b68
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 23%
+source-wordcount: '1326'
+ht-degree: 22%
 
 ---
 
 # Dokumentationsuppdateringar {#latest-updates}
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
+
+
+## Maj 2022 {#may-2022}
+
+* I avsnittet för e-postdesign omnämns nu nya inbyggda mallar som kan användas för att börja innehåll med. Relaterade skärmbilder har uppdaterats. [Läs mer](../design/design-emails.md)
+* Länkar till viktiga resurser har uppdaterats på Journey Optimizer dokumentationsstartsida.
+* Skärmbilder för landningssidor och prenumerationsrapporter har uppdaterats. [Läs mer](../reports/live-report.md)
+* En anteckning om att metoden Delete inte stöds i anpassade åtgärder har lagts till. [Läs mer](../action/about-custom-action-configuration.md)
+* Länkar till instruktionsvideor har uppdaterats.
+
 
 ## April 2022 {#april-2022}
 

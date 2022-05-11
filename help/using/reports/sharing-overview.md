@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 07d25f8e-0065-4410-9895-ffa15d6447bb
-source-git-commit: 22db9d3997e84d33ddb2febe7a07aaef4063a880
+source-git-commit: 1fa91a841d4f941f2c5bd1efd4a06ac8a9938bc7
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '479'
 ht-degree: 3%
 
 ---
@@ -53,8 +53,6 @@ Listorna med XDM-fält som skickas till Adobe Experience Platform finns här:
 
 * [Lista över steghändelsefält](../reports/sharing-field-list.md)
 * [Äldre steghändelsefält](../reports/sharing-legacy-fields.md)
-
-Om du vill ha mer information om steghändelser som rapporterar till Adobe Experience Platform kan du titta på den här [video med självstudiekurser](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/reporting-step-events-to-adobe-experience-platform.html){target=&quot;_blank&quot;}.
 
 ## Integration med Customer Journey Analytics {#integration-cja}
 
