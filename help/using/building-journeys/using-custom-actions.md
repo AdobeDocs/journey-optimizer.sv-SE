@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 2b1b3613-3096-43ec-a860-600dda1d83b2
-source-git-commit: c058c4835c560f12e3d53bfb766324405b12968f
+source-git-commit: 94c2e889b38608aa173b62edb498eba7756e68e6
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 27%
+source-wordcount: '336'
+ht-degree: 26%
 
 ---
 
@@ -61,7 +61,3 @@ Ange vid behov värdet för dynamiska rubrikfält:
 ## Åtgärdsparametrar
 
 I **[!UICONTROL Action parameters]** visas meddelandeparametrar som _&quot;Variabel&quot;_. För de här parametrarna kan du definiera var informationen ska hämtas (exempel: händelser, datakällor), skicka värden manuellt eller använd den avancerade uttrycksredigeraren för avancerade användningsområden. Avancerade användningsområden kan vara datahantering och annan funktionsanvändning. Se detta [page](expression/expressionadvanced.md).
-
-**Relaterade ämnen**
-
-[Konfigurera en åtgärd](../action/about-custom-action-configuration.md)
