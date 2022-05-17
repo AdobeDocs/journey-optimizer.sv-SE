@@ -1,19 +1,19 @@
 ---
-title: Skapa meddelandeförinställningar
+title: Ställ in meddelandeförinställningar
 description: Lär dig hur du konfigurerar och övervakar meddelandeförinställningar
 feature: Application Settings
 topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
+source-git-commit: a485c58366f0690fb2515139658224d59468a24f
 workflow-type: tm+mt
-source-wordcount: '2406'
+source-wordcount: '1490'
 ht-degree: 1%
 
 ---
 
-# Skapa meddelandeförinställningar {#message-presets-creation}
+# Ställ in meddelandeförinställningar {#message-presets-creation}
 
 Med [!DNL Journey Optimizer]kan du konfigurera meddelandeförinställningar som definierar alla tekniska parametrar som krävs för e-post och push-meddelanden: e-posttyp, avsändarens e-postadress och namn, mobilappar med mera.
 
@@ -93,153 +93,7 @@ E-postinställningarna definieras i ett dedikerat avsnitt i meddelandeförinstä
 
 ![](assets/preset-email.png)
 
-Konfigurera inställningarna enligt beskrivningen nedan.
-
-### Typ av e-post {#email-type}
-
->[!CONTEXTUALHELP]
->id="ajo_admin_presets_emailtype"
->title="Definiera e-postkategorin"
->abstract="Välj den typ av meddelanden som ska skickas när den här förinställningen används: Marknadsföring för kampanjmeddelanden, som kräver användargodkännande, eller Transactional för icke-kommersiella meddelanden, som också kan skickas till profiler som inte längre prenumererar i specifika sammanhang."
-
-I **E-POSTTYP** väljer du den typ av meddelande som ska skickas med förinställningen: **Marknadsföring** eller **Transactional**.
-
-* Välj **Marknadsföring** för kampanjmeddelanden: dessa meddelanden kräver användarens samtycke.
-
-* Välj **Transactional** för icke-kommersiella meddelanden, t.ex. orderbekräftelse, meddelanden om lösenordsåterställning eller leveransinformation.
-
->[!CAUTION]
->
->**Transactional** meddelanden kan skickas till profiler som avbeställer marknadskommunikation. Dessa meddelanden kan bara skickas i särskilda sammanhang.
-
-När [skapa ett meddelande](../messages/get-started-content.md#create-new-message)måste du välja en giltig meddelandeförinställning som matchar den kategori du valde för meddelandet.
-
-### Underdomän och IP-pool {#subdomains-and-ip-pools}
-
-I **INFORMATION OM UNDERDOMÄN- OCH IP-POOL** måste du
-
-1. Välj den underdomän som ska användas för att skicka e-postmeddelanden. [Läs mer](about-subdomain-delegation.md)
-
-1. Välj den IP-pool som ska associeras med förinställningen. [Läs mer](ip-pools.md)
-
-![](assets/preset-subdomain-ip-pool.png)
-
-Du kan inte fortsätta skapa förinställningar medan den valda IP-poolen är under [utgåva](ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) och har aldrig kopplats till den valda underdomänen. Annars kommer den äldsta versionen av associationen för IP-poolen/underdomänen fortfarande att användas. I så fall sparar du förinställningen som utkast och försöker igen när IP-poolen har **[!UICONTROL Success]** status.
-
->[!NOTE]
->
->I icke-produktionsmiljöer skapar inte Adobe körklara testunderdomäner och ger inte heller åtkomst till en delad sändande IP-pool. Du måste [delegera dina egna underdomäner](delegate-subdomain.md) och använd IP-adresserna från poolen som tilldelats din organisation.
-
-### List-Unsubscribe {#list-unsubscribe}
-
-Vid [välja en underdomän](#subdomains-and-ip-pools) från listan, **[!UICONTROL Enable List-Unsubscribe]** visas.
-
-![](assets/preset-list-unsubscribe.png)
-
-Det här alternativet är aktiverat som standard.
-
-Om du låter det vara aktiverat inkluderas en länk för att avbryta prenumerationen automatiskt i e-posthuvudet, till exempel:
-
-![](assets/preset-list-unsubscribe-header.png)
-
-Om du inaktiverar det här alternativet visas ingen länk för att avbryta prenumerationen i e-posthuvudet.
-
-Länken för att avbryta prenumerationen består av två element:
-
-* An **avbeställ e-postadress** som alla avbeställningar skickas till.
-
-   I [!DNL Journey Optimizer], är e-postadressen för avanmälan standard **[!UICONTROL Mailto (unsubscribe)]** som visas i meddelandeförinställningen, baserat på [vald underdomän](#subdomains-and-ip-pools).
-
-   ![](assets/preset-list-unsubscribe-mailto.png)
-
-* The **avbeställ URL**, vilket är URL:en till landningssidan där användaren omdirigeras när prenumerationen har upphört.
-
-   Om du lägger till en [länk för avanmälan med ett klick](../messages/consent.md#one-click-opt-out) för ett meddelande som skapas med den här förinställningen blir avanmälnings-URL:en den URL som definierats för länken med ett klick.
-
-   ![](assets/preset-list-unsubscribe-opt-out-url.png)
-
-   >[!NOTE]
-   >
-   >Om du inte lägger till en länk för avanmälan med ett enda klick i meddelandeinnehållet visas ingen landningssida för användaren.
-
-Läs mer om hur du lägger till en länk för att avbryta prenumerationen i dina meddelanden i [det här avsnittet](../messages/consent.md#unsubscribe-header).
-
-<!--Select the **[!UICONTROL Custom List-Unsubscribe]** option to enter your own Unsubscribe URL and/or your own Unsubscribe email address.(to add later)-->
-
-### Huvudparametrar{#email-header}
-
-I **[!UICONTROL HEADER PARAMETERS]** anger du avsändarens namn och e-postadresser som är kopplade till den typ av meddelanden som skickas med den förinställningen.
-
->[!CAUTION]
->
->E-postadresserna måste använda den valda [delegerad underdomän](about-subdomain-delegation.md).
-
-* **[!UICONTROL Sender name]**: Avsändarens namn, till exempel ditt varumärkes namn.
-
-* **[!UICONTROL Sender email]**: E-postadressen som du vill använda för din kommunikation. Om den delegerade underdomänen till exempel är *marketing.luma.com* kan du använda *contact@marketing.luma.com*.
-
-* **[!UICONTROL Reply to (name)]**: Namnet som ska användas när mottagaren klickar på **Svara** i klientprogramvaran för e-post.
-
-* **[!UICONTROL Reply to (email)]**: E-postadressen som ska användas när mottagaren klickar på **Svara** i klientprogramvaran för e-post. Du måste använda en adress som är definierad för den delegerade underdomänen (till exempel *reply@marketing.luma.com*), annars kommer e-postmeddelandena att tas bort.
-
-* **[!UICONTROL Error email]**: Alla fel som genereras av Internet-leverantörer efter några dagar efter att e-post har levererats (asynkrona studsar) tas emot på den här adressen.
-
-![](assets/preset-header.png)
-
->[!NOTE]
->
->Adresser måste börja med en bokstav (A-Z) och får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-` tecken.
-
-### Parametrar för återförsök av e-post {#email-retry}
-
->[!CONTEXTUALHELP]
->id="ajo_admin_presets_retryperiod"
->title="Justera tidsperioden för återförsök"
->abstract="Försök utförs i 3,5 dagar (84 timmar) när ett e-postmeddelande inte kan skickas på grund av ett tillfälligt fel med mjuk studsning. Du kan justera den här standardperioden för återförsök så att den passar dina behov bättre."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/email-configuration/monitor-reputation/retries.html" text="Om återförsök"
-
-Du kan konfigurera **Parametrar för återförsök av e-post**.
-
-![](assets/preset-retry-parameters.png)
-
-Som standard är [återförsökstid](retries.md#retry-duration) är inställt på 84 timmar, men du kan justera den här inställningen så att den passar dina behov bättre.
-
-Du måste ange ett heltalsvärde (i timmar eller minuter) inom följande intervall:
-
-* För marknadsföringsmeddelanden är den minsta återförsöksperioden 6 timmar.
-* För transaktionsmeddelanden är den minsta återförsöksperioden 10 minuter.
-* För båda e-posttyperna är den maximala återförsöksperioden 84 timmar (eller 5 040 minuter).
-
-Läs mer om återförsök i [det här avsnittet](retries.md).
-
-### URL-spårning{#url-tracking}
-
->[!CONTEXTUALHELP]
->id="ajo_admin_preset_utm"
->title="UTM-parametrar"
->abstract="Använd det här avsnittet om du automatiskt vill lägga till spårningsparametrar till kampanj-URL:erna som finns i e-postinnehållet."
-
-Om du vill identifiera var och varför en person klickade på länken kan du lägga till UTM-parametrar för URL-spårning i dialogrutan  **[!UICONTROL URL Tracking Parameters]** -avsnitt.
-
-Utifrån de parametrar som du anger används en UTM-kod i slutet av den URL som finns i meddelandeinnehållet. Sedan kan du jämföra resultaten med ett webbanalysverktyg som Google Analytics.
-
-![](assets/preset-url-tracking.png)
-
-Tre UTM-parametrar är tillgängliga som standard. Du kan lägga till upp till 10 spårningsparametrar. Om du vill lägga till en UTM-parameter väljer du **[!UICONTROL Add new parameter]** -knappen.
-
-Om du vill konfigurera en UTM-parameter kan du ange önskade värden direkt i **[!UICONTROL Name]** och **[!UICONTROL Value]** eller välj från en lista med fördefinierade värden genom att navigera till följande objekt:
-
-* Reseattribut: **Käll-ID**, **Källnamn**, **Källversions-ID**
-* Meddelandeattribut: **Åtgärds-ID**, **Åtgärdsnamn**
-* Offer decisioning-attribut: **Erbjudande-ID**, **Namn på erbjudande**
-
-![](assets/preset-url-tracking-source.png)
-
->[!CAUTION]
->
->Välj ingen mapp: Kontrollera att du bläddrar till den mapp som behövs och välj ett profilattribut som ska användas som UTM-värde.
-
-Du kan kombinera textvärden och välja fördefinierade värden. Varje **[!UICONTROL Value]** fält kan innehålla upp till 255 tecken totalt.
+Konfigurera inställningarna enligt beskrivningen i [det här avsnittet](email-settings.md).
 
 ## Konfigurera push-inställningar {#configure-push-settings}
 

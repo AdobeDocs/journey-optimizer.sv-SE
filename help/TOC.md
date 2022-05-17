@@ -5,10 +5,10 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 1fa91a841d4f941f2c5bd1efd4a06ac8a9938bc7
+source-git-commit: a485c58366f0690fb2515139658224d59468a24f
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 43%
+source-wordcount: '1010'
+ht-degree: 42%
 
 ---
 
@@ -338,25 +338,30 @@ ht-degree: 43%
 + Konfiguration{#configuration}
    + [Kom igång med Journey Optimizer](using/configuration/get-started-configuration.md)
    + Konfigurera meddelanden {#configuration-message}
-      + Konfiguration för push-meddelanden{#push-config}
+      + Konfigurera push-meddelanden{#push-config}
          + [Kom igång med push-konfiguration](using/configuration/push-gs.md)
          + [Konfigurera kanal för push-meddelanden](using/configuration/push-configuration.md)
-      + E-postkonfiguration {#email-configuration}
+      + Konfigurera e-postmeddelanden {#email-configuration}
          + Delegera underdomäner {#delegate-subdomains}
             + [Kom igång med delegering till underdomäner](using/configuration/about-subdomain-delegation.md)
             + [Delegera en underdomän](using/configuration/delegate-subdomain.md)
             + [Åtkomst till delegerade underdomäner](using/configuration/access-subdomains.md)
+         + Hantera underdomänrelaterade åtgärder {#subdomain-related-actions}
             + [Lägg till en Google TXT-post](using/configuration/google-txt.md)
             + [Få åtkomst till och redigera PTR-poster](using/configuration/ptr-records.md)
-         + [Skapa IP-pooler](using/configuration/ip-pools.md)
+            + [Skapa IP-pooler](using/configuration/ip-pools.md)
          + Övervaka e-postadresser {#monitor-reputation}
             + [Hantera undertryckningslista](using/configuration/manage-suppression-list.md)
             + [Återförsök](using/configuration/retries.md)
-         + [Ändra primär e-postadress](using/configuration/primary-email-addresses.md)
       + [Konfigurera SMS-kanal](using/configuration/sms-configuration.md)
-      + [Skapa meddelandeförinställningar](using/configuration/message-presets.md)
+      + Ställ in meddelandeförinställningar {#set-up-message-presets}
+         + [Skapa meddelandeförinställningar](using/configuration/message-presets.md)
+         + [Konfigurera e-postinställningar](using/configuration/email-settings.md)
+      + [Hantera körningsadresser](using/configuration/primary-email-addresses.md)
       + [Konfigurera frekvensregler](using/configuration/frequency-rules.md)
-   + [Konfigurera landningssidor](using/configuration/lp-configuration.md)
+   + Konfigurera landningssidor {#lp-configuration}
+      + [Konfigurera underdomäner för landningssidor](using/configuration/lp-subdomains.md)
+      + [Definiera förinställningar för landningssidor](using/configuration/lp-presets.md)
    + Konfigurera resor {#configure-journeys}
       + [Om datakällor, händelser och åtgärder](using/configuration/about-data-sources-events-actions.md)
       + [Integrera med externa system](using/configuration/external-systems.md)

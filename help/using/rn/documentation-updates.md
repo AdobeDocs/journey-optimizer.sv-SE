@@ -2,9 +2,9 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 80e0fea3be11dcd594b1de04a0a903b87b9c7b68
+source-git-commit: a485c58366f0690fb2515139658224d59468a24f
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1355'
 ht-degree: 22%
 
 ---
@@ -21,7 +21,8 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Skärmbilder för landningssidor och prenumerationsrapporter har uppdaterats. [Läs mer](../reports/live-report.md)
 * En anteckning om att metoden Delete inte stöds i anpassade åtgärder har lagts till. [Läs mer](../action/about-custom-action-configuration.md)
 * Länkar till instruktionsvideor har uppdaterats.
-
+* The [E-postkonfiguration](../configuration/about-subdomain-delegation.md), [Meddelandeförinställningar](../configuration/message-presets.md) och [Konfigurera landningssidor](../configuration/lp-subdomains.md) -avsnitten har omstrukturerats för att bli enklare att läsa.
+* The **URL-spårning** -avsnittet har uppdaterats och förbättrats med exempel. [Läs mer](../configuration/email-settings.md#url-tracking)
 
 ## April 2022 {#april-2022}
 

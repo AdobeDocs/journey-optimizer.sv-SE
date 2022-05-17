@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
+source-git-commit: a485c58366f0690fb2515139658224d59468a24f
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 1%
@@ -53,7 +53,7 @@ Stegen för att skapa en landningssida är följande.
 
    ![](assets/lp_create-lp-details.png)
 
-1. Välj en förinställning. Lär dig hur du skapar förinställningar för landningssidor i [det här avsnittet](../configuration/lp-configuration.md#lp-create-preset).
+1. Välj en förinställning. Lär dig hur du skapar förinställningar för landningssidor i [det här avsnittet](../configuration/lp-presets.md#lp-create-preset).
 
    ![](assets/lp_create-lp-presets.png)
 
@@ -81,7 +81,7 @@ Följ stegen nedan för att definiera inställningarna för den primära sidan.
 
    ![](assets/lp_open-designer.png)
 
-1. Definiera URL-adressen till landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan som en del av [förinställning](../configuration/lp-configuration.md#lp-create-preset) du markerade. [Läs mer](../configuration/lp-configuration.md#lp-subdomains)
+1. Definiera URL-adressen till landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan som en del av [förinställning](../configuration/lp-presets.md#lp-create-preset) du markerade. [Läs mer](../configuration/lp-subdomains.md)
 
    >[!CAUTION]
    >
@@ -133,7 +133,7 @@ Följ stegen nedan för att definiera inställningar för undersidan.
 
 1. Redigera innehållet på sidan med hjälp av innehållsdesignern. Lär dig definiera innehåll för landningssidor [här](design-lp.md).
 
-1. Definiera URL-adressen till landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan. [Läs mer](../configuration/lp-configuration.md#lp-subdomains)
+1. Definiera URL-adressen till landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan. [Läs mer](../configuration/lp-subdomains.md)
 
    >[!CAUTION]
    >
