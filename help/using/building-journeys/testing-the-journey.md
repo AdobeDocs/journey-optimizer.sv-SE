@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
-source-git-commit: c058c4835c560f12e3d53bfb766324405b12968f
+source-git-commit: 0facae9e7eafc9f6fcbefbdc6d5563322eaf1251
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1527'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,6 @@ Det är bara testprofiler som kan gå in på en resa i testläge. Du kan antinge
 >
 >Innan du testar din resa måste du åtgärda eventuella fel. Lär dig hur du kontrollerar fel innan du testar i [det här avsnittet](../building-journeys/troubleshooting.md#checking-for-errors-before-testing).
 
-
 Så här använder du testläget:
 
 1. Aktivera testläget genom att aktivera **[!UICONTROL Test]** i det övre högra hörnet.
@@ -41,7 +40,7 @@ Så här använder du testläget:
 
    >[!NOTE]
    >
-   >När en reaktionshändelse används under en resa är väntetiden som standard och minimivärdet 40 sekunder. Se [det här avsnittet](../building-journeys/reaction-events.md).
+   >När en reaktionshändelse med en tidsgräns används i en resa är väntetiden som standard och det lägsta värdet 40 sekunder. Se [det här avsnittet](../building-journeys/reaction-events.md).
 
 1. Använd **[!UICONTROL Trigger an event]** för att konfigurera och skicka händelser till resan.
 
@@ -102,7 +101,7 @@ När du väljer en annan testprofil på händelsekonfigurationsskärmen och kör
 
 När du öppnar en resa i ett test motsvarar den visade sökvägen det senaste testet som utfördes.
 
-Det visuella flödet fungerar oavsett om händelsen aktiveras via gränssnittet eller externt (med till exempel Postman).
+Det visuella flödet fungerar oavsett om händelsen aktiveras via gränssnittet eller externt (med t.ex. Postman).
 
 ## Testläge för regelbaserade resor {#test-rule-based}
 

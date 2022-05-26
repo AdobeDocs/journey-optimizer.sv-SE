@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 26ad12c3-0a2b-4f47-8f04-d25a6f037350
-source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
+source-git-commit: c8e03687d82c6dcfea1195cf8ef091e3d9bc80a5
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1141'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ Se till att fälten som används i dina frågor har associerade värden i motsva
 
 ## Meddelande-/åtgärdsfel {#message-action-errors}
 
-### Lista över alla fel som påträffats under resor {#error-list-journey}
+**Lista över alla fel som påträffats under resor**
 
 Med den här frågan kan du lista alla fel som påträffas under resor när ett meddelande/en åtgärd körs.
 
@@ -49,7 +49,7 @@ Den här frågan returnerar alla olika fel som inträffade när en åtgärd kör
 
 ## Profilbaserade frågor {#profile-based-queries}
 
-### Sök efter om en profil har angett en viss resa {#profile-entered-journey}
+**Sök efter om en profil har angett en viss resa**
 
 _Data Lake-fråga_
 
@@ -71,9 +71,9 @@ _experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com'
 
 Resultatet måste vara större än 0. Den här frågan returnerar det exakta antalet gånger en profil har påbörjat en resa.
 
-### Sök efter om en profil skickades ett visst meddelande {#profile-specific-message}
+**Sök efter om en profil skickades ett visst meddelande**
 
-**Metod 1:** om namnet på ditt meddelande inte är unikt i resan (det används på flera platser).
+Metod 1: om namnet på ditt meddelande inte är unikt i resan (det används på flera platser).
 
 _Data Lake-fråga_
 
@@ -97,7 +97,7 @@ _experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com'
 
 Resultatet måste vara större än 0. Den här frågan talar bara om för oss om meddelandeåtgärden har utförts på kundsidan.
 
-**Metod 2:** om namnet på ditt meddelande är unikt under resan.
+Metod 2: om namnet på ditt meddelande är unikt under resan.
 
 _Data Lake-fråga_
 
@@ -121,7 +121,7 @@ _experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com'
 
 Frågan returnerar listan med alla meddelanden tillsammans med antalet som anropats för den valda profilen.
 
-## Hitta alla meddelanden en profil har tagit emot de senaste 30 dagarna {#message-received-30-days}
+**Hitta alla meddelanden en profil har tagit emot de senaste 30 dagarna**
 
 _Data Lake-fråga_
 
@@ -147,7 +147,7 @@ GROUP BY _experience.journeyOrchestration.stepEvents.nodeName
 
 Frågan returnerar listan med alla meddelanden tillsammans med antalet som anropats för den valda profilen.
 
-### Hitta alla resor en profil har registrerat under de senaste 30 dagarna {#profile-entered-30-days}
+**Hitta alla resor en profil har registrerat under de senaste 30 dagarna**
 
 _Data Lake-fråga_
 
@@ -171,7 +171,7 @@ GROUP BY _experience.journeyOrchestration.stepEvents.journeyVersionName
 
 Frågan returnerar listan med alla resenamn tillsammans med det antal gånger som den efterfrågade profilen angav resan.
 
-### Antal profiler som är kvalificerade för en resa dagligen {#profile-qualified}
+**Antal profiler som är kvalificerade för en resa dagligen**
 
 _Data Lake-fråga_
 
@@ -197,7 +197,7 @@ Frågan returnerar, för den angivna perioden, antalet profiler som har skickats
 
 ## Frågor relaterade till Lässegmentet {#read-segment-queries}
 
-### Tidsåtgång för att avsluta ett segmentexportjobb
+**Tidsåtgång för att avsluta ett segmentexportjobb**
 
 _Data Lake-fråga_
 
@@ -229,7 +229,7 @@ _experience.journeyOrchestration.serviceEvents.segmentExportJob.status = 'finish
 
 Frågan returnerar tidsskillnaden i minuter mellan den tidpunkt då segmentexportjobbet placerades i kö och den tidpunkt det slutligen avslutades.
 
-### Antal profiler som har ignorerats under resan eftersom de var dubbletter
+**Antal profiler som har ignorerats under resan eftersom de var dubbletter**
 
 _Data Lake-fråga_
 
@@ -251,7 +251,7 @@ _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERR
 
 Frågan returnerar alla profil-ID:n som ignorerades av resan eftersom de var dubbletter.
 
-### Antal profiler som har ignorerats under resan på grund av ogiltigt namnutrymme
+**Antal profiler som har ignorerats under resan på grund av ogiltigt namnutrymme**
 
 _Data Lake-fråga_
 
@@ -273,7 +273,7 @@ _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERR
 
 Frågan returnerar alla profil-ID:n som ignorerades under resan eftersom de hade ett ogiltigt namnutrymme eller ingen identitet för det namnutrymmet.
 
-### Antal profiler som har ignorerats under resan på grund av ingen identitetskarta
+**Antal profiler som har ignorerats under resan på grund av ingen identitetskarta**
 
 _Data Lake-fråga_
 
@@ -295,7 +295,7 @@ _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERR
 
 Frågan returnerar alla profil-ID:n som ignorerades under resan eftersom identitetskartan saknades.
 
-### Antal profiler som ignorerades under resan eftersom resan var i testnoden och profilen inte var en testprofil
+**Antal profiler som ignorerades under resan eftersom resan var i testnoden och profilen inte var en testprofil**
 
 _Data Lake-fråga_
 
@@ -317,7 +317,7 @@ _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERR
 
 Frågan returnerar alla profil-ID:n som ignorerades av resan eftersom exportjobbet kördes i testläge, men profilen hade inte attributet testProfile inställt på true.
 
-### Antal profiler som har ignorerats under resan på grund av ett internt fel
+**Antal profiler som har ignorerats under resan på grund av ett internt fel**
 
 _Data Lake-fråga_
 
@@ -339,7 +339,7 @@ _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERR
 
 Frågan returnerar alla profil-ID:n som ignorerades av resan på grund av ett internt fel.
 
-### Översikt över Läs segment för en viss reseversion
+**Översikt över Läs segment för en viss reseversion**
 
 _Data Lake-fråga_
 
@@ -377,7 +377,7 @@ VIKTIGT! Om ingen händelse returneras av frågan kan det bero på någon av fö
 * transportversionen inte har nått schemat
 * Om reseversionen ska ha startat exportjobbet genom att anropa orkestratorn, gick något fel i upstram-flödet: Problem med transportdistribution, affärshändelser eller problem med schemaläggare.
 
-### Hämta fel för lässegment för en viss reseversion
+**Hämta fel för lässegment för en viss reseversion**
 
 _Data Lake-fråga_
 
@@ -403,7 +403,7 @@ WHERE
     )
 ```
 
-### Hämta bearbetningsstatus för exportjobb
+**Hämta bearbetningsstatus för exportjobb**
 
 _Data Lake-fråga_
 
@@ -432,7 +432,7 @@ Om ingen post returneras betyder det att antingen:
 * ett fel uppstod när ämnet eller exportjobbet skapades
 * exportjobbet fortfarande körs
 
-### Få mätvärden för exporterade profiler, inklusive utkast och exportjobbstatistik för varje exportjobb
+**Få mätvärden för exporterade profiler, inklusive utkast och exportjobbstatistik för varje exportjobb**
 
 _Data Lake-fråga_
 
@@ -492,7 +492,7 @@ FROM
 WHERE T1.EXPORTJOB_ID = T2.EXPORTJOB_ID
 ```
 
-### Få aggregerade mätvärden (segmentexportjobb och utkast) för alla exportjobb
+**Få aggregerade mätvärden (segmentexportjobb och utkast) för alla exportjobb**
 
 _Data Lake-fråga_
 
@@ -557,31 +557,59 @@ Den returnerar den totala mätningen för en viss reseversion, oavsett vilka job
 
 ## Frågor relaterade till segmentkvalificering {#segment-qualification-queries}
 
-### Profilen ignoreras på grund av en annan segmentimplementering än den konfigurerade
+**Profilen ignoreras på grund av en annan segmentimplementering än den konfigurerade**
 
 _Data Lake-fråga_
 
 ```sql
-SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
+SELECT DATE(timestamp),  _experience.journeyOrchestration.profile.ID
+FROM journey_step_events
 where
-_experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
-_experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'ERROR_INSTANCE_WRONG_SEGMENT_REALIZATION'
+_experience.journeyOrchestration.journey.versionID = '<journey-version id>' AND
+_experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'ERROR_SEGMENT_REALISATION_CONDITION_MISMATCH'
 ```
 
 _Exempel_
 
 ```sql
-SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
+SELECT DATE(timestamp),  _experience.journeyOrchestration.profile.ID
+FROM journey_step_events
 where
-_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
-_experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'ERROR_INSTANCE_WRONG_SEGMENT_REALIZATION'
+_experience.journeyOrchestration.journey.versionID = 'a868f3c9-4888-46ac-a274-94cdf1c4159d' AND
+_experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'ERROR_SEGMENT_REALISATION_CONDITION_MISMATCH'
 ```
 
 Den här frågan returnerar alla profil-ID:n som togs bort av reseversionen på grund av felaktig segmentrealisering.
 
+**Segmentkvalificeringshändelser som ignorerats av någon annan orsak för en viss profil**
+
+_Data Lake-fråga_
+
+```sql
+SELECT DATE(timestamp),  _experience.journeyOrchestration.profile.ID, _experience.journeyOrchestration.serviceEvents.dispatcher.projectionID
+FROM journey_step_events
+where
+_experience.journeyOrchestration.profile.ID = '<profile-id>' AND
+_experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
+_experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'ERROR_SERVICE_INTERNAL';
+```
+
+_Exempel_
+
+```sql
+SELECT DATE(timestamp),  _experience.journeyOrchestration.profile.ID, _experience.journeyOrchestration.serviceEvents.dispatcher.projectionID
+FROM journey_step_events
+where
+_experience.journeyOrchestration.profile.ID = 'mandee@adobe.com' AND
+_experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
+_experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'ERROR_SERVICE_INTERNAL';
+```
+
+Den här frågan returnerar alla händelser (externa händelser/segmentkvalificeringshändelser) som ignorerades på grund av någon annan orsak till en profil.
+
 ## Händelsebaserade frågor {#event-based-queries}
 
-### Kontrollera om en affärshändelse har tagits emot för en resa
+**Kontrollera om en affärshändelse har tagits emot för en resa**
 
 _Data Lake-fråga_
 
@@ -607,9 +635,101 @@ _experience.journeyOrchestration.stepEvents.nodeType = 'start' AND
 WHERE DATE(timestamp) > (now() - interval '6' hour)
 ```
 
+**Kontrollera om en extern händelse för en profil ignorerades eftersom ingen relaterad resa hittades**
+
+_Data Lake-fråga_
+
+```sql
+SELECT _experience.journeyOrchestration.profile.ID, DATE(timestamp) FROM journey_step_events
+where
+_experience.journeyOrchestration.serviceEvents.dispatcher.eventID = '<eventId>' AND
+_experience.journeyOrchestration.profile.ID = '<profileId>' AND
+_experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
+_experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'EVENT_WITH_NO_JOURNEY'
+```
+
+_Exempel_
+
+```sql
+SELECT _experience.journeyOrchestration.profile.ID, DATE(timestamp) FROM journey_step_events
+where
+_experience.journeyOrchestration.serviceEvents.dispatcher.eventID = '515bff852185e434ca5c83bcfc4f24626b1545ca615659fc4cfff91626ce61a6' AND
+_experience.journeyOrchestration.profile.ID = 'mandee@adobe.com' AND
+_experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
+_experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'EVENT_WITH_NO_JOURNEY'
+```
+
+**Kontrollera om en extern händelse för en profil har ignorerats av någon annan anledning**
+
+_Data Lake-fråga_
+
+```sql
+SELECT _experience.journeyOrchestration.profile.ID, DATE(timestamp), _experience.journeyOrchestration.serviceEvents.dispatcher.eventID, _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode
+FROM journey_step_events
+where
+_experience.journeyOrchestration.profile.ID='<profileID>' AND
+_experience.journeyOrchestration.serviceEvents.dispatcher.eventID='<eventID>' AND
+_experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
+_experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'ERROR_SERVICE_INTERNAL';
+```
+
+_Exempel_
+
+```sql
+SELECT _experience.journeyOrchestration.profile.ID, DATE(timestamp), _experience.journeyOrchestration.serviceEvents.dispatcher.eventID, _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode
+FROM journey_step_events
+where
+_experience.journeyOrchestration.profile.ID='mandee@adobe.com' AND
+_experience.journeyOrchestration.serviceEvents.dispatcher.eventID='81c51be978d8bdf9ef497076b3e12b14533615522ecea9f5080a81c736491656' AND
+_experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
+_experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'ERROR_SERVICE_INTERNAL';
+```
+
+**Kontrollera antalet händelser som ignoreras av stateMachine av errorCode**
+
+_Data Lake-fråga_
+
+```sql
+SELECT _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode, COUNT() FROM journey_step_events
+where
+_experience.journeyOrchestration.serviceEvents.stateMachine.eventType = 'discard' GROUP BY _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode
+```
+
+_Exempel_
+
+```sql
+SELECT _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode, COUNT() FROM journey_step_events
+where
+_experience.journeyOrchestration.serviceEvents.stateMachine.eventType = 'discard' GROUP BY _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode
+```
+
+**Kontrollera alla ignorerade händelser eftersom återinträde inte tillåts**
+
+_Data Lake-fråga_
+
+```sql
+SELECT DATE(timestamp), _experience.journeyOrchestration.profile.ID,
+_experience.journeyOrchestration.journey.versionID,
+_experience.journeyOrchestration.serviceEvents.stateMachine.eventCode 
+FROM journey_step_events
+where
+_experience.journeyOrchestration.serviceEvents.stateMachine.eventType = 'discard' AND _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode='reentranceNotAllowed'
+```
+
+_Exempel_
+
+```sql
+SELECT DATE(timestamp), _experience.journeyOrchestration.profile.ID,
+_experience.journeyOrchestration.journey.versionID,
+_experience.journeyOrchestration.serviceEvents.stateMachine.eventCode 
+FROM journey_step_events
+where
+_experience.journeyOrchestration.serviceEvents.stateMachine.eventType = 'discard' AND _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode='reentranceNotAllowed'
+```
+
 ## Vanliga resebaserade frågor {#journey-based-queries}
 
-### Antal dagliga aktiva resor {#daily-active-journeys}
+**Antal dagliga aktiva resor**
 
 _Data Lake-fråga_
 
@@ -633,7 +753,7 @@ Frågan returnerar, för den angivna perioden, antalet unika resor som utlöstes
 
 ## Frågor om reseinstanser {#journey-instances-queries}
 
-### Antal profiler i ett specifikt tillstånd vid en viss tidpunkt
+**Antal profiler i ett specifikt tillstånd vid en viss tidpunkt**
 
 _Data Lake-fråga_
 
@@ -781,7 +901,7 @@ ORDER BY
     DATETIME DESC
 ```
 
-### Hur många profiler som slutade resan under den angivna tidsperioden
+**Hur många profiler som slutade resan under den angivna tidsperioden**
 
 _Data Lake-fråga_
 
@@ -819,7 +939,7 @@ ORDER BY
     DATETIME DESC
 ```
 
-### Hur många profiler slutade resan under den angivna tidsperioden med nod/status
+**Hur många profiler slutade resan under den angivna tidsperioden med nod/status**
 
 _Data Lake-fråga_
 

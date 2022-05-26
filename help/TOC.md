@@ -5,10 +5,10 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: a036f53b88425d64281d2ac530016d638e2d13c9
+source-git-commit: ea8ffc8cae5b180709951f0336060455cd5cb24f
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 42%
+source-wordcount: '1040'
+ht-degree: 41%
 
 ---
 
@@ -16,8 +16,11 @@ ht-degree: 42%
 
 + [Journey Optimizer-dokumentation](ajo-home.md)
 + Nyheter? {#whats-new}
-   + [Versionsinformation](using/rn/release-notes.md)
-   + [Senaste uppdateringar](using/rn/documentation-updates.md)
+   + [Senaste versionsinformation](using/rn/release-notes.md)
+   + Tidigare versionsinformation {#previous-rn-new}
+      + [Versionsinformation 2022](using/rn/release-notes-2022.md)
+      + [Versionsinformation 2021](using/rn/release-notes-2021.md)
+   + [Dokumentationsuppdateringar](using/rn/documentation-updates.md)
 + Kom igång{#get-started}
    + [Vad är Journey Optimizer?](using/start/get-started.md)
    + Snabbstart{#quick-start}
@@ -60,7 +63,11 @@ ht-degree: 42%
 + Landningssidor {#landing-pages}
    + [Kom igång med landningssidor](using/landing-pages/get-started-lp.md)
    + [Skapa en landningssida](using/landing-pages/create-lp.md)
-   + [Utforma en landningssida](using/landing-pages/design-lp.md)
+   + Designinnehåll {#landing-pages-design}
+      + [Om landningssidans design](using/landing-pages/design-lp.md)
+      + [Skapa innehållet på landningssidan](using/landing-pages/lp-content.md)
+      + [Skapa mallar](using/landing-pages/lp-templates.md)
+      + [Lägg till anpassat JavaScript](using/landing-pages/lp-custom-js.md)
    + [Skapa en prenumerationslista](using/landing-pages/subscription-list.md)
    + [Användningsfall](using/landing-pages/lp-use-cases.md)
 + Personalisering{#personalization}
@@ -179,6 +186,7 @@ ht-degree: 42%
             + [in](using/building-journeys/functions/functionin.md)
             + [korsa](using/building-journeys/functions/functionintersect.md)
             + [listSize](using/building-journeys/functions/functionlistsize.md)
+            + [limit](using/building-journeys/functions/functionlimit.md)
             + [serializeList](using/building-journeys/functions/functionserializelist.md)
             + [sort](using/building-journeys/functions/functionsort.md)
          + Matematik {#math}
@@ -245,6 +253,7 @@ ht-degree: 42%
       + [Kom igång med leverans](using/reports/deliverability.md)
       + [Undertryckningslista](using/reports/suppression-list.md)
       + [Tillåtelselista](using/reports/allow-list.md)
+   + [Granskningsåtgärder för Journey Optimizer-resurser](using/reports/audit-logs.md)
 + Beslutsledning {#offer-decisioniong}
    + Kom igång med beslutshantering {#get-started-decision}
       + [Om beslutshantering](using/offers/get-started/starting-offer-decisioning.md)
@@ -391,3 +400,5 @@ ht-degree: 42%
    + [Hantera användare och produktprofiler](using/administration/permissions.md)
    + [Behörighetsnivåer](using/administration/high-low-permissions.md)
    + [Hantering av sandlådor](using/administration/sandboxes.md)
+   + [Attributbaserad åtkomstkontroll](using/administration/attribute-based-access.md)
+

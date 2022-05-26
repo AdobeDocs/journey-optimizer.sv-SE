@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: dfaf887e-d4b3-45b0-8297-bffdb0abff4d
-source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
+source-git-commit: ea8ffc8cae5b180709951f0336060455cd5cb24f
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '234'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ Så här skapar du en placering:
 
    * **[!UICONTROL Name]**: Placeringens namn. Se till att definiera ett beskrivande namn så att det blir enklare att hämta det.
    * **[!UICONTROL Channel type]**: Kanalen som placeringen ska användas för.
-   * **[!UICONTROL Content type]**: Den typ av innehåll som placeringen ska kunna visa: Text-, HTML- eller bildlänk.
+   * **[!UICONTROL Content type]**: Den typ av innehåll som placeringen ska kunna visa: Text, HTML, Image Link eller JSON.
    * **[!UICONTROL Description]**: En beskrivning av placeringen (valfritt).
 
    ![](../assets/offers_placement_creation_properties.png)

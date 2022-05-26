@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 8674ef9e-261b-49d9-800e-367f9f7ef979
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: b9ebacf410f268e19bbaf1d43ee98f5376d0913f
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1237'
 ht-degree: 3%
 
 ---
@@ -359,6 +359,26 @@ Följande fråga avgör, utan skiftlägeskänslighet, om personens namn börjar 
 ```sql
 {%= matches(person.name.,"(?i)^John") %}
 ```
+
+## Mask (#mask)
+
+The `Mask` används för att ersätta en del av en sträng med &quot;X&quot;-tecken.
+
+**Format**
+
+```sql
+{%= mask(string,integer,integer) %}
+```
+
+**Exempel**
+
+Följande fråga ersätter strängen &quot;123456789&quot; med &quot;X&quot;-tecken, med undantag för de första och de sista två tecknen.
+
+```sql
+{%= mask("123456789",1,2) %}
+```
+
+Frågan returnerar `1XXXXXX89`.
 
 ## Inte lika med{#notEqualTo}
 

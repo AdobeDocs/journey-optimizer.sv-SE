@@ -6,10 +6,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: 79d3bd42c208d38aaebce742e70b247106c21587
+source-git-commit: 59cba4086cd198a8be597a9971105569d5db2eee
 workflow-type: tm+mt
-source-wordcount: '1639'
-ht-degree: 5%
+source-wordcount: '1667'
+ht-degree: 4%
 
 ---
 
@@ -38,7 +38,8 @@ Du kan delegera en underdomän helt eller skapa en underdomän med CNAME för at
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_dns"
 >title="Generera matchande DNS-poster"
->abstract="Om du vill delegera en ny underdomän till Adobe måste du kopiera Adobe-namnserverinformationen som visas i Journey Optimizer-gränssnittet och klistra in den i din domänvärdslösning för att generera matchande DNS-poster. När kontrollerna är klara kan underdomänen användas för att leverera meddelanden."
+>abstract="Om du vill delegera en ny underdomän till Adobe måste du kopiera och klistra in Adobe-namnserverinformationen som visas i Journey Optimizer-gränssnittet i din värdlösning för domäner för att generera matchande DNS-poster. Om du vill delegera en underdomän med CNAME måste du också kopiera och klistra in valideringsposten för SSL CDN-URL. När kontrollerna är klara kan underdomänen användas för att leverera meddelanden."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/email-configuration/delegate-subdomains/delegate-subdomain.html#cname-subdomain-delegation" text="CNAME-delegering av underdomän"
 
 [!DNL Journey Optimizer] kan du delegera dina underdomäner till Adobe direkt från produktgränssnittet. På så sätt kan Adobe leverera meddelanden som en hanterad tjänst genom att kontrollera och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra e-postkampanjer.
 

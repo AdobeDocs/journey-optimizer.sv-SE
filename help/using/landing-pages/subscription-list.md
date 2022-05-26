@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 5e5419a0-5121-4aa7-a975-b1f08e2918c9
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: f4b3a9de47e724f7b23df8a02b8106c131cf1b12
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '371'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,13 @@ Följ stegen nedan för att skapa en prenumerationslista.
 
    ![](assets/lp_create-subscription-list.png)
 
-1. Lägg till ett namn och en beskrivning. Dessa fält är obligatoriska.
+1. Lägg till en titel och en beskrivning. Dessa fält är obligatoriska.
+
+   ![](assets/lp_subscription-list-name.png)
+
+   >[!CAUTION]
+   >
+   >För närvarande kan du inte använda avstånd eller ange ett namn som redan finns för en annan prenumerationslista i **[!UICONTROL Title]** fält.
 
 1. Du kan definiera ett startdatum och ett slutdatum.
 

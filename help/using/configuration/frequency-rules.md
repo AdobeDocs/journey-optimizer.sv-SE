@@ -8,9 +8,9 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: f1ac47a0cb405eaadc5428e7e5479eaf776d7abe
+source-git-commit: dd60e576aaded21efd9718341d1c4f26267ae001
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '865'
 ht-degree: 0%
 
 ---
@@ -31,15 +31,19 @@ För att göra detta kan du använda en frekvensregel som begränsar antalet med
 
 Regler är tillgängliga från **[!UICONTROL Administration]** > **[!UICONTROL Rules]** -menyn. Alla regler visas sorterade efter ändringsdatum.
 
->[!NOTE]
->
->Om du vill komma åt, skapa, redigera eller ta bort regler för meddelandefrekvens måste du ha [Hantera frekvensregler](../administration/high-low-permissions.md#manage-frequency-rules) behörighet.
-
-![](assets/message-rules-access.png)
-
 Använd filterikonen för att filtrera efter kategori, status och/eller kanal. Du kan också söka på meddelandeetiketten.
 
 ![](assets/message-rules-filter.png)
+
+### Behörigheter{#permissions-frequency-rules}
+
+Om du vill komma åt, skapa, redigera eller ta bort regler för meddelandefrekvens måste du ha **[!UICONTROL Manage frequency rules]** behörighet.
+
+Användare med **[!UICONTROL View frequency rules]** behörighet kan visa regler, men inte ändra eller ta bort dem.
+
+![](assets/message-rules-access.png)
+
+Läs mer om behörigheter i [det här avsnittet](../administration/high-low-permissions.md).
 
 ## Skapa en regel {#create-new-rule}
 
@@ -85,7 +89,7 @@ Följ stegen nedan för att skapa en ny regel.
 
 ## Aktivera en regel {#activate-rule}
 
-När en regel för meddelandefrekvens skapas har den **[!UICONTROL Draft]** status och påverkar inte ännu något meddelande. Om du vill aktivera den klickar du på ellipsen bredvid regeln och väljer **[!UICONTROL Activate]**.
+När en regel för meddelandefrekvens skapas har den **[!UICONTROL Draft]** status och påverkar ännu inte något meddelande. Om du vill aktivera den klickar du på ellipsen bredvid regeln och väljer **[!UICONTROL Activate]**.
 
 ![](assets/message-rules-activate.png)
 
@@ -93,7 +97,7 @@ Om du aktiverar en regel påverkas alla meddelanden som gäller för nästa kör
 
 >[!NOTE]
 >
->Du behöver inte ändra eller publicera om meddelanden eller resor för att en regel ska börja gälla.
+>Det kan ta upp till 10 minuter innan en regel aktiveras helt. Du behöver inte ändra eller publicera om meddelanden eller resor för att en regel ska börja gälla.
 
 Om du vill inaktivera en regel för meddelandefrekvens klickar du på ellipsen bredvid regeln och väljer **[!UICONTROL Deactivate]**.
 
@@ -132,6 +136,10 @@ Följ stegen nedan för att tillämpa en frekvensregel på ett meddelande.
 1. [Design](../design/design-emails.md) och [publicera](../messages/publish-manage-message.md) ditt meddelande.
 
 Alla frekvensregler som matchar den valda kategorin och kanalen/kanalerna tillämpas automatiskt på det här meddelandet.
+
+>[!NOTE]
+>
+>Meddelanden <!--that do not have any selected category or messages -->där den valda kategorin är **[!UICONTROL Transactional]** utvärderas inte mot frekvensregler.
 
 <!--Clicking the link out button next to the category selector will jump you over to the rules inventory screen to see which rules will be applied to the message.-->
 
@@ -178,3 +186,7 @@ Du kan kombinera flera regler för meddelandefrekvens, som beskrivs i exemplet n
 I det här scenariot finns en enskild profil:
 * kan ta emot upp till 12 marknadsföringsmeddelanden per månad,
 * men utesluts från push-meddelanden om marknadsföring när de har fått 4 push-meddelanden.
+
+>[!NOTE]
+>
+>När du testar frekvensregler kan det vara praktiskt att börja med en nyligen skapad [testprofil](../segment/creating-test-profiles.md)eftersom det inte finns något sätt att återställa räknaren förrän nästa månad när en profils övre gräns för frekvens har nåtts. Om du inaktiverar en regel kan mappade profiler ta emot meddelanden, men inga räknarsteg tas bort eller tas bort.

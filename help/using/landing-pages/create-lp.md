@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: a485c58366f0690fb2515139658224d59468a24f
+source-git-commit: f4b3a9de47e724f7b23df8a02b8106c131cf1b12
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1100'
 ht-degree: 1%
 
 ---
@@ -132,6 +132,10 @@ Följ stegen nedan för att definiera inställningar för undersidan.
 1. Du kan ändra sidnamnet, vilket är **[!UICONTROL Subpage 1]** som standard.
 
 1. Redigera innehållet på sidan med hjälp av innehållsdesignern. Lär dig definiera innehåll för landningssidor [här](design-lp.md).
+
+   >[!NOTE]
+   >
+   >Du kan infoga en länk till den primära sidan från en undersida till samma landningssida. Om du till exempel vill dirigera om användare som har gjort ett misstag och vill prenumerera igen, kan du lägga till en länk från bekräftelseundersidan till den primära prenumerationssidan. Lär dig hur du infogar länkar i [det här avsnittet](../design/message-tracking.md#insert-links).
 
 1. Definiera URL-adressen till landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan. [Läs mer](../configuration/lp-subdomains.md)
 

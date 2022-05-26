@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
-source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
+source-git-commit: 59cba4086cd198a8be597a9971105569d5db2eee
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ptr_record"
 >title="Underdomäners PTR-poster"
->abstract="En pekarpost (PTR) är en typ av DNS-post som tillhandahåller det domännamn som är länkat till en IP-adress, vilket hjälper de mottagande e-postservrarna att verifiera avsändarens IP-adresser."
+>abstract="En pekarpost (PTR) är en typ av DNS-post som tillhandahåller det domännamn som är länkat till en IP-adress, vilket hjälper de mottagande e-postservrarna att verifiera avsändarens IP-adresser. Redigera bara en PTR-post efter vederbörlig hänsyn och diskussion med din produktexpert."
 
 ## Om PTR-poster {#about-ptr-records}
 

@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 712dc172-6c0d-4ce8-ba16-de99d65fc641
-source-git-commit: df5bb48130c715441fb02bc034edddcad1da7cbf
+source-git-commit: dd60e576aaded21efd9718341d1c4f26267ae001
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 2%
+source-wordcount: '671'
+ht-degree: 3%
 
 ---
 
@@ -69,9 +69,15 @@ Följ stegen nedan för att skapa ett nytt meddelande:
 
    * Markera de kanaler som du vill använda för det meddelandet: E-post och/eller push-meddelanden. Du måste välja minst en kanal för att kunna skapa meddelandet.
 
+   <!--
+   >[!NOTE]
+   >
+   >You can click the **[!UICONTROL Frequency rule]** link to view the frequency rules that will apply for the selected category and channel(s). Learn more on [frequency rules](../configuration/frequency-rules.md).
+   -->
+
    * Välj **[!UICONTROL Preset]** som ska användas för meddelandet.
 
-      Förinställningarna innehåller alla parametrar som krävs för att ett e-postmeddelande och/eller ett push-meddelande ska skickas enligt ert varumärke. [Läs mer om förinställningar](../configuration/message-presets.md).
+      Förinställningarna innehåller alla parametrar som krävs för att ett e-postmeddelande och/eller ett push-meddelande ska skickas enligt ert varumärke. Läs mer på [förinställningar](../configuration/message-presets.md).
    >[!CAUTION]
    >
    >Du måste välja en giltig meddelandeförinställning för den valda kategorin och de valda kanalerna.
@@ -83,6 +89,10 @@ Följ stegen nedan för att skapa ett nytt meddelande:
    En flik är tillgänglig för varje vald kanal. Använd dessa flikar för att konfigurera innehållet för varje kanal. Du kan ta bort en tabb genom att markera den och klicka på **[!UICONTROL Delete channel]** till höger.
 
    ![](assets/create-messages-content.png)
+
+   >[!NOTE]
+   >
+   >Om du har aktiverat **[!UICONTROL BCC email]** i förinställningen visas BCC-e-postadressen under avsändarens e-postadress. [Läs mer](../configuration/email-settings.md#bcc-email)
 
    Nu kan du skapa innehållet i meddelandet och anpassa inställningarna. Detaljerad information om konfigurationen av e-post och push-meddelanden finns i följande avsnitt:
 

@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: a4653378-b70f-454c-a446-ab4a14d2580a
-source-git-commit: 79d3bd42c208d38aaebce742e70b247106c21587
+source-git-commit: f4b3a9de47e724f7b23df8a02b8106c131cf1b12
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '769'
 ht-degree: 2%
 
 ---
@@ -20,6 +20,10 @@ En inaktiveringslista består av e-postadresser som du vill utesluta från lever
 The [!DNL Journey Optimizer] Suppressionslistan hanteras på din egen miljönivå.
 
 Den samlar in e-postadresser och domäner som inte används i alla e-postmeddelanden i en enda klientmiljö, vilket är specifikt för ett organisations-ID som är kopplat till ett sandbox-ID.
+
+>[!NOTE]
+>
+>Adobe håller en uppdaterad lista över kända dåliga e-postadresser som har visat sig vara skadliga för engagemanget och utskickets anseende och ser till att e-post inte skickas till dem. Den här listan hanteras i en global undertryckningslista som är gemensam för alla Adobe-kunder. Adresserna och domännamnen som finns i den globala undertryckningslistan är dolda. Endast antalet uteslutna mottagare anges i leveransrapporterna.
 
 ## Varför en lista över inaktiveringar? {#why-suppression-list}
 

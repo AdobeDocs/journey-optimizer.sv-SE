@@ -6,9 +6,9 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 1ed01a6b-5e42-47c8-a436-bdb388f50b4e
-source-git-commit: 79d3bd42c208d38aaebce742e70b247106c21587
+source-git-commit: c41bc43643bac4d8715469a18d6908846ddd6bf7
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '867'
 ht-degree: 1%
 
 ---
@@ -193,7 +193,7 @@ Sluttiden för varje gruppbeslut är den tid som arbetsbelastningen skapas fram 
 
 När du använder [!DNL Batch Decisioning] API, tänk på följande begränsningar:
 
-* **Ett batchjobb per datauppsättning**: För närvarande kan endast ett batchjobb köras per datauppsättning i taget. Andra begäranden med samma utdatauppsättning besvarar HTTP 429 (för många begäranden) innan den föregående begäran avslutas.
+* **Antalet batchjobb som körs per datamängd**: Upp till fem batchjobb kan köras åt gången, per datauppsättning. Alla andra gruppförfrågningar med samma utdatamängd läggs till i kön. Ett jobb i kö plockas upp för bearbetning när det föregående jobbet har slutförts.
 * **Frekvensbegränsning**: En batch körs bort från den profilögonblicksbild som inträffar en gång om dagen. The [!DNL Batch Decisioning] API kapslar frekvensen och läser alltid in profiler från den senaste ögonblicksbilden.
 
 ## Nästa steg {#next-steps}

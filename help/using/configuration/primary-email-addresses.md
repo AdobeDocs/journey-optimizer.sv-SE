@@ -6,19 +6,19 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: fe2f6516-7790-4501-a3a1-3d7cb94d7874
-source-git-commit: f1ac47a0cb405eaadc5428e7e5479eaf776d7abe
+source-git-commit: 59cba4086cd198a8be597a9971105569d5db2eee
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '164'
 ht-degree: 6%
 
 ---
 
-# Ändra de primära e-postadresserna {#change-primary-email}
+# Ändra primära adresser {#change-primary-email}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_execution_address"
 >title="Ange vilken adress som ska användas"
->abstract="Du kan välja vilken e-postadress som ska prioriteras när flera adresser är tillgängliga i databasen (personliga, professionella, osv.)."
+>abstract="När det finns flera tillgängliga adresser i databasen (personliga, professionella, osv.) kan du välja vilken adress som ska prioriteras för sändning."
 
 När du anger en profil som mål kan det finnas flera e-postadresser i databasen (personlig, professionell e-postadress osv.).
 
