@@ -2,9 +2,9 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: ea8ffc8cae5b180709951f0336060455cd5cb24f
+source-git-commit: 44fb6b2721d1f0c2ab1bb2755aa9cf5970dbad09
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1409'
 ht-degree: 21%
 
 ---
@@ -13,13 +13,10 @@ ht-degree: 21%
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
 
-## Juni 2022 {#june-2022}
-
-* Nya frågeexempel relaterade till [segmentkvalificering](../reports/query-examples.md#segment-qualification-queries) och [händelser](../reports/query-examples.md#event-based-queries) har lagts till i detta
-
 ## Maj 2022 {#may-2022}
 
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version från maj 22 finns utförlig i dokumentationen. [Läs mer](release-notes.md)
+* Nya frågeexempel relaterade till [segmentkvalificering](../reports/query-examples.md#segment-qualification-queries) och [händelser](../reports/query-examples.md#event-based-queries) har lagts till.
 * I avsnittet för e-postdesign omnämns nu nya inbyggda mallar som kan användas för att börja innehåll med. Relaterade skärmbilder har uppdaterats. [Läs mer](../design/design-emails.md)
 * Länkar till viktiga resurser har uppdaterats på Journey Optimizer dokumentationsstartsida.
 * Skärmbilder för landningssidor och prenumerationsrapporter har uppdaterats. [Läs mer](../reports/live-report.md)
