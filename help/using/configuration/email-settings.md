@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 13fbe0583affb48269932134ea6bc214180903dd
+source-git-commit: c48d083445d4e4c7cdbed1a61cee13ed3fcfcc8b
 workflow-type: tm+mt
-source-wordcount: '2152'
+source-wordcount: '2166'
 ht-degree: 1%
 
 ---
@@ -138,6 +138,10 @@ E-postadressen för vidarebefordran kommer att konfigureras av Adobe. Detta kan 
 
 Du kan skicka en identisk kopia (eller en blind kopia) av ett e-postmeddelande som skickats av [!DNL Journey Optimizer] till en BCC-inkorg. Med den här valfria funktionen kan du behålla kopior av e-postmeddelanden som du skickar till användarna för att uppfylla regelkrav och/eller arkivera. Detta visas inte för leveransmottagarna.
 
+>[!CAUTION]
+>
+>Den här funktionen är tillgänglig från och med **31 maj**.
+
 ### Aktivera BCC-e-post {#enable-bcc}
 
 Aktivera **[!UICONTROL BCC email]** anger du den e-postadress du vill använda i det dedikerade fältet. Du kan ange en extern adress i rätt format, förutom en e-postadress som har definierats på den delegerade underdomänen. Om den delegerade underdomänen till exempel är *marketing.luma.com*, alla adresser som *abc@marketing.luma.com* är förbjudet.
@@ -145,6 +149,8 @@ Aktivera **[!UICONTROL BCC email]** anger du den e-postadress du vill använda i
 >[!NOTE]
 >
 >Du kan bara definiera en e-postadress för hemlig kopia. Kontrollera att det finns tillräckligt med mottagningskapacitet på BCC-adressen för att lagra alla e-postmeddelanden som skickas med den aktuella förinställningen.
+>
+>Fler rekommendationer finns i [det här avsnittet](#bcc-recommendations-limitations).
 
 ![](assets/preset-bcc.png)
 
@@ -168,23 +174,26 @@ BCC-adressen hämtas dock upp för att skicka kommunikation enligt logiken nedan
 >
 >Du behöver inte publicera om ett meddelande eller en resa för att BCC-inställningen ska hämtas.
 
-### Recommendations och begränsningar {#recommendations-limitations}
+### Recommendations och begränsningar {#bcc-recommendations-limitations}
 
-* Kontrollera att e-postadressen för hemlig kopia är korrekt angiven. Om så inte är fallet kan dina kunders personligt identifierbara information (PII) skickas till en oönskad adress.
+* För att säkerställa att din integritet efterlevs måste e-post från innehållsförteckningen behandlas av ett arkiveringssystem som kan lagra säkert personligt identifierbar information (PII).
 
-* Av sekretesskäl måste e-post från innehållsförteckningen behandlas av ett arkiveringssystem som kan lagra säkert personligt identifierbar information (PII).
-
-* Den här funktionen kan leverera till e-postadressen för den lokala kopian innan den skickas till mottagarna, vilket kan leda till att BCC-meddelanden skickas trots att de ursprungliga leveranserna kan ha [studsade](../reports/suppression-list.md#delivery-failures).
-
-   <!--OR: Only successfully sent emails are taken in account. [Bounces](../reports/suppression-list.md#delivery-failures) are not. TO CHECK -->
-
-* Om e-postmeddelanden som skickas till BCC-adressen öppnas och klickas igenom, kommer detta att beaktas i det totala antalet öppningar och klick från sändningsanalysen, vilket kan orsaka felberäkningar i [rapporter](../reports/message-monitoring.md). På samma sätt kan du markera BCC-e-postmeddelanden som landar i din inkorg eftersom skräppost kan göra att e-postmeddelanden hamnar i skräppostmappen i din inkorg.
+* Eftersom meddelanden kan innehålla känsliga eller privata data, t.ex. personligt identifierbar information (PII), måste du se till att BCC-adressen är korrekt och skydda åtkomsten till meddelanden.
 
 * Din inkorg som används för BCC bör hanteras på rätt sätt för utrymme och leverans. Om inkorgen returnerar studsar kanske vissa e-postmeddelanden inte tas emot och kommer därför inte att arkiveras.
 
+* Meddelanden kan levereras till e-postadressen för den kopierade kopian före målmottagarna. BCC-meddelanden kan också skickas trots att de ursprungliga meddelandena kan ha [studsade](../reports/suppression-list.md#delivery-failures).
+
+   <!--OR: Only successfully sent emails are taken in account. [Bounces](../reports/suppression-list.md#delivery-failures) are not. TO CHECK -->
+
+* Öppna inte och klicka inte igenom de e-postmeddelanden som skickas till BCC-adressen eftersom den tas med i det totala antalet öppningar och klickningar från sändningsanalysen, vilket kan orsaka vissa felberäkningar i [rapporter](../reports/message-monitoring.md).
+
+* Markera inte meddelanden som skräppost i BCC-inkorgen eftersom det påverkar alla andra e-postmeddelanden som skickas till den här adressen.
+
+
 >[!CAUTION]
 >
->Undvik att klicka på länken för att avbryta prenumerationen i e-postmeddelanden som skickas till BCC-adressen eftersom du omedelbart kommer att avbeställa motsvarande mottagare.
+>Klicka inte på länken för att avbryta prenumerationen i de e-postmeddelanden som skickas till BCC-adressen eftersom du omedelbart kommer att avbeställa motsvarande mottagare.
 
 ### GDPR-efterlevnad {#gdpr-compliance}
 

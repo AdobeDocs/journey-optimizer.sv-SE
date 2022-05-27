@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: dd60e576aaded21efd9718341d1c4f26267ae001
+source-git-commit: 53a625c0e62fbfae703b40bb1d47105c168730ea
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '387'
 ht-degree: 11%
 
 ---
@@ -48,6 +48,7 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 <tbody>
 <tr>
 <td>
+<p>Tillgänglighetsdatum: <strong>31 maj</strong></p>
 <p>Nu kan du använda funktionen för hemlig kopia (Email BCC) för att lagra e-postmeddelanden som skickas av Adobe Journey Optimizer. Aktivera det här alternativet i dina e-postförinställningar så att alla e-postmeddelanden som skickas är blinda och kopieras till din BCC-adress.</p>
 <img src="assets/bcc-rn.gif"/>
 <p>Mer information finns i den <a href="../configuration/email-settings.md#bcc-email">detaljerade dokumentationen</a>.</p>
