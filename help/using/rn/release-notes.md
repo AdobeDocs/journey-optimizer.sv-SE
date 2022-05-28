@@ -2,10 +2,10 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 53a625c0e62fbfae703b40bb1d47105c168730ea
+source-git-commit: b890d7dc2e1508bb68d45a162236483ac6fc76bd
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 11%
+source-wordcount: '422'
+ht-degree: 12%
 
 ---
 
@@ -58,22 +58,22 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 </table>
 
 
-<!--table>
+<table>
 <thead>
 <tr>
-<th><strong>Decision Management - AI Ranking auto-optimization model</strong><br/></th>
+<th><strong>Beslutshantering - Automatisk optimeringsmodell för AI-rankning</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now use trained model systems in Decision Management. This new capability ranks offers to display for a given profile.</p>
+<p>Du kan nu använda utbildade modellsystem i Beslutshantering. Den nya funktionen rankar erbjudanden som kan visas för en viss profil.</p>
 <img src="assets/optimization.gif"/>
-<p>For more information, refer to the <a href="../offers/offer-activities/configure-offer-selection.md#use-ranking-strategy">detailed documentation</a>.</p>
+<p>Mer information finns i den <a href="../offers/offer-activities/configure-offer-selection.md#use-ranking-strategy">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
 
 <!--table>
 <thead>

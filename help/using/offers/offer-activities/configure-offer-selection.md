@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 8c7135d7-bf5a-4671-afdf-afec60907a56
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: b890d7dc2e1508bb68d45a162236483ac6fc76bd
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '441'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 4%
 Om flera erbjudanden är berättigade till en viss placering kan du välja den metod som ska användas för att välja det bästa erbjudandet för varje profil när du konfigurerar ett beslut. Du kan rangordna erbjudanden genom att:
 * Prioritet
 * Rankningsformel
-* [AI-rankning](#use-ranking-strategy) (för tidig åtkomst endast för utvalda användare)
+* [AI-rankning](#use-ranking-strategy)
 
 ![](../assets/offer-rank-by.png)
 
@@ -36,7 +36,7 @@ Förutom att ge prioritet kan du med Journey Optimizer skapa **rankningsformler*
 
 Du kan till exempel öka prioriteten för alla erbjudanden där slutdatumet är mindre än 24 timmar från och med nu, eller öka erbjudandena från kategorin&quot;löpande&quot; om profilens intressepunkt är&quot;igång&quot;.
 
-Lär dig hur du skapar en rankningsformel i [det här avsnittet](../offer-library/create-ranking-formulas.md).
+Lär dig hur du skapar en rankningsformel i [det här avsnittet](../ranking/create-ranking-formulas.md).
 
 När en rankningsformel har skapats kan du tilldela den till en placering i ett beslut. Följ stegen nedan för att göra detta:
 
@@ -62,11 +62,7 @@ Om flera erbjudanden kan presenteras i denna placering, kommer beslutet att anv�
 
 <!--If you are an [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} user leveraging the **Offer Decisioning** application service,-->
 
-Du kan också använda ett utbildat modellsystem som automatiskt rangordnar erbjudanden för en viss profil genom att välja en rangordningsstrategi. Lär dig hur du skapar en rankningsstrategi i [det här avsnittet](../offer-library/create-ranking-strategies.md).
-
->[!CAUTION]
->
->AI-rankningen är för närvarande tillgänglig i förtid och endast för vissa användare.
+Du kan också använda ett utbildat modellsystem som automatiskt rangordnar erbjudanden för en viss profil genom att välja en rangordningsstrategi. Lär dig hur du skapar en rankningsstrategi i [det här avsnittet](../ranking/create-ranking-strategies.md).
 
 När en rankningsstrategi har skapats kan du tilldela den till en placering i ett beslut. Gör så här:
 

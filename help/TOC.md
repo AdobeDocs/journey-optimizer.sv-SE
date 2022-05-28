@@ -5,10 +5,10 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: ea8ffc8cae5b180709951f0336060455cd5cb24f
+source-git-commit: 12b01cb9de84399e5ede987866609acc10b64c5f
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 41%
+source-wordcount: '1058'
+ht-degree: 40%
 
 ---
 
@@ -264,10 +264,16 @@ ht-degree: 41%
       + [Skapa placeringar](using/offers/offer-library/creating-placements.md)
       + [Skapa beslutsregler](using/offers/offer-library/creating-decision-rules.md)
       + [Skapa taggar](using/offers/offer-library/creating-tags.md)
-      + [Skapa rankningsformler](using/offers/offer-library/create-ranking-formulas.md)
-      + Skapa AI-rankningsmodeller {#create-ai-ranking-models}
-         + [Om AI-modeller](using/offers/offer-library/ai-ranking.md)
-         + [Skapa AI-modeller](using/offers/offer-library/create-ranking-strategies.md)
+   + Skapa rankningar {#rankings}
+      + [Kom igång med rankningar](using/offers/ranking/get-started-rankings.md)
+      + [Rankningsformler](using/offers/ranking/create-ranking-formulas.md)
+      + AI-modeller {#ai-models}
+         + [Om AI-modeller](using/offers/ranking/ai-models.md)
+         + [Automatisk optimeringsmodell](using/offers/ranking/auto-optimization-model.md)
+         + Skapa AI-modeller {#configure-ai-model}
+            + [Skapa en datauppsättning för att samla in händelser](using/offers/ranking/create-dataset.md)
+            + [Skapa en AI-modell](using/offers/ranking/create-ranking-strategies.md)
+            + [Konfigurera händelsehämtning](using/offers/ranking/schema-requirement.md)
    + Skapa och hantera erbjudanden {#managing-offers-in-the-offer-library}
       + Konfigurera erbjudanden {#configure-offers}
          + [Skapa personaliserade erbjudanden](using/offers/offer-library/creating-personalized-offers.md)

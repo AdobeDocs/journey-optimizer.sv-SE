@@ -2,7 +2,7 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 44fb6b2721d1f0c2ab1bb2755aa9cf5970dbad09
+source-git-commit: 12b01cb9de84399e5ede987866609acc10b64c5f
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 21%
@@ -39,7 +39,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 ## Mars 2022 {#march-2022}
 
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Mars 22-utgåvan finns utförlig i dokumentationen. [Läs mer](release-notes.md)
-* En ny sida om hur du kommer igång med AI-modeller har lagts till i **Offer decisioning** med en detaljerad beskrivning av [autooptimeringsmodell](../offers/offer-library/ai-ranking.md#auto-optimization), den algoritm som används och mer teknisk information. [Läs mer](../offers/offer-library/ai-ranking.md)
+* En ny sida om hur du kommer igång med AI-modeller har lagts till i **Offer decisioning** med en detaljerad beskrivning av [autooptimeringsmodell](../offers/ranking/auto-optimization-model.md), den algoritm som används och mer teknisk information. [Läs mer](../offers/ranking/ai-models.md)
 * Sidan där testprofilen skapades har flyttats till  **Segment, profiler och identitet** -avsnitt. [Läs mer](../segment/creating-test-profiles.md)
 * Ett exempel har lagts till om hur du lägger till ett uttryck som ett standardvärde i uttrycksredigeraren. [Läs mer](../building-journeys/expression/field-references.md#default-value)
 * The **Skapa personaliserade erbjudanden** -avsnittet har omstrukturerats för förbättrad läsbarhet. [Läs mer](../offers/offer-library/creating-personalized-offers.md)
@@ -55,8 +55,8 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 ## Januari 2022 {#january-2022}
 
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version 22 av jan finns utförlig i dokumentationen. [Läs mer](release-notes.md)
-* The **Offer decisioning AI-rankningar** -avsnittet har uppdaterats med en mer detaljerad beskrivning av den automatiska optimeringsmodellen. [Läs mer](../offers/offer-library/create-ranking-strategies.md#auto-optimization)
-* Ett nytt avsnitt om schemakraven som behövs för att kunna skicka in händelsetyper när en rankningsstrategi används har lagts till. [Läs mer](../offers/offer-library/create-ranking-strategies.md#schema-requirements)
+* The **Offer decisioning AI-rankningar** -avsnittet har uppdaterats med en mer detaljerad beskrivning av den automatiska optimeringsmodellen. [Läs mer](../offers/ranking/auto-optimization-model.md)
+* Ett nytt avsnitt om schemakraven som behövs för att kunna skicka in händelsetyper när en rankningsstrategi används har lagts till. [Läs mer](../offers/ranking/schema-requirement.md)
 * Avsnittet som är relaterat till [!DNL Journey Optimizer] personaliseringsfunktionerna har omstrukturerats för att bli lättare att läsa. [Läs mer](../personalization/personalize.md)
 * The **Skapa meddelandeförinställningar** har delats upp i flera avsnitt för att bli tydligare. [Läs mer](../configuration/message-presets.md#create-message-preset)
 * The **Hantering av avanmälan** har klargjorts och omorganiserats något. [Läs mer](../messages/consent.md#opt-out-management)
@@ -106,7 +106,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 * Ett underavsnitt lades till för att förtydliga skillnaderna mellan att använda segment kontra beslutsregler när en begränsning tillämpas för att begränsa urvalet av erbjudanden för en viss placering. [Läs mer](../offers/offer-activities/create-offer-activities.md#segments-vs-decision-rules)
 
-* Specifika exempel på rankningsformler har lagts till för att illustrera exempel på verkliga användningsområden. [Läs mer](../offers/offer-library/create-ranking-formulas.md#ranking-formula-examples)
+* Specifika exempel på rankningsformler har lagts till för att illustrera exempel på verkliga användningsområden. [Läs mer](../offers/ranking/create-ranking-formulas.md#ranking-formula-examples)
 
 * Ett underavsnitt om hur du redigerar IP-pooler har lagts till. [Läs mer](../configuration/ip-pools.md#edit-ip-pool)
 
