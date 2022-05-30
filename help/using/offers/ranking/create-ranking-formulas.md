@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 8bc808da-4796-4767-9433-71f1f2f0a432
-source-git-commit: 12b01cb9de84399e5ede987866609acc10b64c5f
+source-git-commit: a67cabc2078debb981ee17fae9202f9fd80ec977
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -139,21 +139,9 @@ Observera att när du använder API:t för beslutsfattande läggs kontextdata ti
 
 ### Öka erbjudandena baserat på kundernas benägenhet att köpa den produkt som erbjuds
 
-Om vi har 2 förekomster av *CustomerAI* beräkna köpbenägenhet *travelInsurance* och *extraBaggage* för ett flygbolag kommer följande rankningsformel att öka prioriteten (med 50 poäng) för erbjudandet som är specifikt för antingen försäkring eller bagage om kundens benägenhetspoäng för att köpa produkten är högre än 90.
+Ni kan höja poängen för ett erbjudande baserat på kundens benägenhetspoäng.
 
-Men eftersom var och en *CustomerAI* -instansen skapar ett eget objekt i det enhetliga profilschemat. Det går inte att dynamiskt välja poängen baserat på offertens benägenhetstyp. Du måste alltså kedja `if` -programsatser för att först kontrollera erbjudandets benägenhetstyp och sedan extrahera poängen från rätt profilfält.
-
-**Rankningsformel:**
-
-```
-if ( offer.characteristics.propensityType = "extraBaggagePropensity" and _salesvelocity.CustomerAI.extraBaggagePropensity.score > 90, offer.rank.priority + 50,
-    (
-        if ( offer.characteristics.propensityType = "travelInsurancePropensity" and _salesvelocity.CustomerAI.insurancePropensity.score > 90, offer.rank.priority + 50, offer.rank.priority )
-    )
-)
-```
-
-En bättre lösning är att lagra bakgrundsmusiken i en array i profilen. Följande exempel fungerar för en mängd olika benägenhetspoäng med bara en enkel rankningsformel. Förväntningen är att du har ett profilschema med en array med poäng. I det här exemplet är instansen tenant *_salesvelocity* och profilschemat innehåller följande:
+I det här exemplet är instansen tenant *_salesvelocity* och profilschemat innehåller ett intervall med bakgrundsmusik som lagras i en array:
 
 ![](../assets/ranking-example-schema.png)
 
