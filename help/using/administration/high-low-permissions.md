@@ -5,9 +5,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
-source-git-commit: dd60e576aaded21efd9718341d1c4f26267ae001
+source-git-commit: 76eb73e875cbdeb7b5821f0c63435cf96c532adc
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1139'
 ht-degree: 0%
 
 ---
@@ -431,24 +431,22 @@ Den innehåller följande lågnivåbehörigheter:
    * landing_page_preset.write
    * landing_page_preset.delete
 
-<!--
-### [!DNL Manage frequency rules] permission {#manage-frequency-rules}
+### [!DNL Manage frequency rules] behörighet {#manage-frequency-rules}
 
-The **[!DNL Manage frequency rules]** high-level permission allows users to read, create, edit, delete and activate/deactivate frequency rules.
+The **[!DNL Manage frequency rules]** behörighet på hög nivå tillåter användare att läsa, skapa, redigera, ta bort och aktivera/inaktivera frekvensregler.
 
-It includes the following low-level permissions:
+Den innehåller följande lågnivåbehörigheter:
 
-* Journey Optimizer specific: 
-  * frequency_rules.read
-  * frequency_rules.write
-  * frequency_rules.delete
+* Specifikt för Journey Optimizer:
+   * frequency_rules.read
+   * frequency_rules.write
+   * frequency_rules.delete
 
-### [!DNL View frequency rules] permission {#view-frequency-rules}
+### [!DNL View frequency rules] behörighet {#view-frequency-rules}
 
-The **[!DNL View frequency rules]** high-level permission allows users to view frequency rules. 
+The **[!DNL View frequency rules]** behörighet på hög nivå tillåter användare att visa frekvensregler.
 
-It includes the following low-level permissions:
+Den innehåller följande lågnivåbehörigheter:
 
-* Journey Optimizer specific: 
-  * frequency_rules.read
--->
+* Specifikt för Journey Optimizer:
+   * frequency_rules.read

@@ -2,10 +2,10 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 65c2ba7e0931f449a29d1e7ff01d6d68fccca448
+source-git-commit: 76eb73e875cbdeb7b5821f0c63435cf96c532adc
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 12%
+source-wordcount: '400'
+ht-degree: 13%
 
 ---
 
@@ -21,22 +21,22 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 
 ### Nya funktioner
 
-<!--table>
+<table>
 <thead>
 <tr>
-<th><strong>Message Frequency Rules</strong><br/></th>
+<th><strong>Regler för meddelandefrekvens</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now set cross-channel business rules that will automatically exclude over-solicited profiles from messages and actions.</p>
+<p>Nu kan du ange affärsregler för flera kanaler som automatiskt utesluter överbegärda profiler från meddelanden och åtgärder.</p>
 <img src="assets/frequency-rn.gif"/>
-<p>For more information, refer to the <a href="../configuration/frequency-rules.md">detailed documentation</a>.</p>
+<p>Mer information finns i den <a href="../configuration/frequency-rules.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
 
 
 <!--table>
