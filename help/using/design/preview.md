@@ -6,14 +6,19 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: f2c2a360-a4b2-4416-bbd0-e27dd014e4ac
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: 3f41545f41f258eede2167aa9ab45db51e91cacf
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
 
 # Förhandsgranska och testa dina meddelanden{#preview-and-proof}
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_simulation_test_profile"
+>title="Lägg till testprofil"
+>abstract="Du kan lägga till en testprofil genom att välja ett id-namnutrymme och ett motsvarande identitetsvärde."
 
 När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du infogade [personaliserat innehåll](../personalization/personalize.md)kommer du att kunna kontrollera hur det här innehållet visas i meddelandet, med hjälp av testprofildata.
 
