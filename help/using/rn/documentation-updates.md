@@ -2,7 +2,7 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 12b01cb9de84399e5ede987866609acc10b64c5f
+source-git-commit: bea7f6b9352103bee641b18b779bc3269b9657e2
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 21%
@@ -98,7 +98,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 * Tillagda vanligt förekommande exempel till frågor om Journey Step Events i Data Lake. [Läs mer](../reports/query-examples.md)
 
-* Lagt till en ny **Begränsningar** sida. [Läs mer](../start/limitations.md)
+* Lagt till en ny **Begränsningar** sida. [Läs mer](../start/guardrails.md)
 
 * Förbättrade **Snabbstart** sida med steg för olika profiler. [Läs mer](../start/quick-start.md)
 
@@ -144,7 +144,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Namnet på&quot;erbjudandeaktiviteter&quot; har ändrats till&quot;beslut&quot; och&quot;beslut&quot; till&quot;beslutsomfattningar&quot; i dokumentation och skärmar. [Läs mer](../offers/get-started/starting-offer-decisioning.md)
 * Nytt användningsfall: [personalisera ett meddelande med hjälpfunktioner](../personalization/personalization-use-case-helper-functions.md)
 * Dokumentationen för Läs segment har uppdaterats för att återspegla materialiserad segmentpåverkan. [Läs mer](../building-journeys/read-segment.md)
-* Uppdaterade begränsningar för resan. [Läs mer](../start/limitations.md)
+* Uppdaterade begränsningar för resan. [Läs mer](../start/guardrails.md)
 * Markeringen Konfigurera erbjudanden uppdaterades i avsnittet Beslut. [Läs mer](../offers/offer-activities/configure-offer-selection.md)
 * En varning har lagts till som anger att händelsebaserade erbjudanden för närvarande inte stöds. [Läs mer](../offers/offer-library/creating-personalized-offers.md#eligibility)
 * Dokumenterade beslutsledningens nya **[!UICONTROL Overview]** -fliken. [Läs mer](../offers/get-started/user-interface.md#overview)

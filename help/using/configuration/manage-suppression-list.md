@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-source-git-commit: f1ac47a0cb405eaadc5428e7e5479eaf776d7abe
+source-git-commit: bea7f6b9352103bee641b18b779bc3269b9657e2
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1105'
 ht-degree: 1%
 
 ---
@@ -22,6 +22,12 @@ Med [!DNL Journey Optimizer]kan du övervaka alla e-postadresser som automatiskt
 * Mottagare som skickar skräppost av något slag mot ett av dina e-postmeddelanden.
 
 Sådana e-postadresser samlas automatiskt in i Journey Optimizer **utelämningslista**. Läs mer om begrepp och användning i listan över inaktiveringar i [det här avsnittet](../reports/suppression-list.md).
+
+Du kan också [**manuellt** lägga till en adress eller en domän](#add-addresses-and-domains) till listan över undertryckningar.
+
+>[!NOTE]
+>
+>Det tar mellan 0 och 60 minuter i [!DNL Journey Optimizer] för att ta hänsyn till de utelämnade adresserna i utgående e-postmeddelanden.
 
 ## Åtkomst till listan över inaktiveringar {#access-suppression-list}
 
@@ -105,7 +111,7 @@ Möjliga orsaker till leveransfel är:
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_suppression_list"
->title="Lägg till e-postmeddelanden/domäner i listan över inaktiveringar"
+>title="Lägg till e-postmeddelanden eller domäner i listan över inaktiveringar"
 >abstract="Du kan fylla i listan över Journey Optimizer-undertryckningar manuellt om du vill utesluta vissa e-postadresser och/eller domäner från sändningen."
 
 När ett meddelande inte kan levereras till en e-postadress läggs adressen automatiskt till i listan över undertryckningar baserat på den definierade undertryckningsregeln eller avhoppsantalet.
@@ -139,6 +145,10 @@ Om du vill göra det väljer du **[!UICONTROL Add email or domain]** och däreft
 
 1. Ange en orsak om det behövs.
 
+   >[!NOTE]
+   >
+   >Endast ASCII-tecken mellan 32 och 126 tillåts. Den fullständiga listan finns på [den här sidan](https://en.wikipedia.org/wiki/Wikipedia:ASCII#ASCII_printable_characters){target=&quot;_blank&quot;} till exempel.
+
 1. Klicka på **[!UICONTROL Submit]**.
 
 ### Överföra en CSV-fil {#upload-csv-file}
@@ -159,6 +169,9 @@ Om du vill göra det väljer du **[!UICONTROL Add email or domain]** och däreft
    EMAIL,abc@somedomain.com,Comment
    DOMAIN,somedomain.com,Comment
    ```
+   >[!NOTE]
+   >
+   >I kolumnen Kommentar tillåts bara ASCII-tecken mellan 32 och 126. Den fullständiga listan finns på [den här sidan](https://en.wikipedia.org/wiki/Wikipedia:ASCII#ASCII_printable_characters){target=&quot;_blank&quot;} till exempel.
 
    Du kan även hämta den här mallen från **[!UICONTROL Suppression list]** huvudvyn.
 
@@ -175,6 +188,10 @@ Om du vill göra det väljer du **[!UICONTROL Add email or domain]** och däreft
    ![](assets/suppression-list-upload-file-button.png)
 
 1. Klicka på **[!UICONTROL Submit]**.
+
+>[!NOTE]
+>
+>När överföringen är klar kontrollerar du att den lyckades genom att kontrollera dess status från gränssnittet. [Lär dig mer](#recent-uploads)
 
 ### Kontrollera status för senaste överföringar {#recent-uploads}
 

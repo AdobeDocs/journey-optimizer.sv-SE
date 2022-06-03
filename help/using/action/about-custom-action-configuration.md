@@ -7,7 +7,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: a9c4bf20b170afd30ac17f6dec3778c1ae4be70c
+source-git-commit: bea7f6b9352103bee641b18b779bc3269b9657e2
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 4%
@@ -27,7 +27,7 @@ Anpassade åtgärder är ytterligare åtgärder som definieras av tekniska anvä
 
 ## Begränsningar{#custom-actions-limitations}
 
-Anpassade åtgärder har några begränsningar som anges i [den här sidan](../start/limitations.md).
+Anpassade åtgärder har några begränsningar som anges i [den här sidan](../start/guardrails.md).
 
 I anpassade åtgärdsparametrar kan du skicka en enkel samling samt en samling med objekt. Läs mer om begränsningar för samlingar i [den här sidan](../building-journeys/collections.md#limitations).
 

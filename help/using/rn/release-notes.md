@@ -2,10 +2,10 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 76eb73e875cbdeb7b5821f0c63435cf96c532adc
+source-git-commit: bea7f6b9352103bee641b18b779bc3269b9657e2
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 13%
+source-wordcount: '465'
+ht-degree: 12%
 
 ---
 
@@ -122,11 +122,11 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 * **Tillbaka till den primära sidan** - Du kan nu lägga till en länk till den primära sidan från en undersida på samma landningssida.
 * **Anpassat JavaScript-stöd** - Du kan nu lägga till egen JavaScript-kod i innehållet på landningssidan för att utföra avancerad formatering eller lägga till anpassade beteenden på landningssidorna.	[Läs mer](../landing-pages/lp-custom-js.md)
 
-<!--**Decision management**
-
-* **HTML and JSON files support** - You can now drag and drop external HTML and JSON files from the AEM repository into the offer representation content.-->
-
 **Resor**
 
 * **Lässegment** - Enbildsresor för Läs segment har flyttats till slutstatus 30 dagar efter det att resan körts. För schemalagda läs-segment är det 30 dagar efter körningen av den sista förekomsten. [Läs mer](../building-journeys/read-segment.md)
 * **Uttrycksredigerare** - [limit](../building-journeys/functions/functionlimit.md) -funktionen har lagts till så att du kan begränsa antalet objekt i en lista. The [sortera](../building-journeys/functions/functionsort.md) kan du nu sortera ut ett listobjekt. Stödet för listObject har också lagts till i [urskilja](../building-journeys/functions/functiondistinct.md) och [clearWithNull](../building-journeys/functions/functiondistinctwithnull.md) funktioner.
+
+**Administrering**
+
+**Uppdatering av kontrollpanelen för licensanvändning** - Kontrollpanelen för licensanvändning som finns i Adobe Experience Platform användargränssnitt ger nu det rätta värdet för **Licensierad** Genomsnittlig profilrikedom. Som Journey Optimizer-kund ser du en nedgång i den här metriska representationen, vilket innebär att den användning du är licensierad för nu rapporteras korrekt. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/dashboards/guides/license-usage.html#available-metrics){target=&quot;_blank&quot;}

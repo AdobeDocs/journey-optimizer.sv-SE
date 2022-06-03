@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
-source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
+source-git-commit: bea7f6b9352103bee641b18b779bc3269b9657e2
 workflow-type: tm+mt
-source-wordcount: '1346'
+source-wordcount: '1361'
 ht-degree: 1%
 
 ---
@@ -198,6 +198,9 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
     </tr>
     <tr>
         <td><a href="string.md#matches">Matchar</a></td><td>Den här funktionen används för att avgöra om en sträng matchar ett visst reguljärt uttryck</td>
+    </tr>
+    <tr>
+        <td><a href="string.md#mask">Mask</a></td><td>Den här funktionen används för att ersätta en del av en sträng med "X"-tecken.</td>
     </tr>
     <tr>
         <td><a href="string.md#notEqualTo">Inte lika med</a></td><td>Den här funktionen används för att avgöra om en sträng inte är lika med den angivna strängen</td>
