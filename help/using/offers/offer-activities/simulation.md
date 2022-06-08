@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: da9e898b-8e5d-43da-9226-5c9ccb78e174
-source-git-commit: d3a22f223353dfa5d43acab400cea3d5c314662f
+source-git-commit: f50617dc5ea07d01d1f7ec1ab3f9790557dcd957
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
@@ -41,11 +41,17 @@ Om du vill komma åt den här funktionen väljer du **[!UICONTROL Simulation]** 
 
 ## Välj testprofiler {#select-test-profiles}
 
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_simulation_test_profile"
+>title="Lägga till testprofiler"
+>abstract="Du kan lägga till en testprofil genom att välja ett identitetsnamnutrymme och ett motsvarande identitetsvärde. Du måste ha testprofiler tillgängliga för att kunna använda dem för simulering."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/segment/profiles/creating-test-profiles.html" text="Skapa testprofiler"
+
 Först måste du välja de testprofiler som du ska använda för simulering.
 
 >[!CAUTION]
 >
->Du måste ha testprofiler tillgängliga för att kunna förhandsgranska dina meddelanden och skicka korrektur. Lär dig hur [skapa testprofiler](../../segment/creating-test-profiles.md).
+>Du måste ha testprofiler tillgängliga för att simulera vilka erbjudanden som ska levereras till dem. Lär dig hur [skapa testprofiler](../../segment/creating-test-profiles.md).
 
 1. Klicka på **[!UICONTROL Manage profile]**.
 
