@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: bea7f6b9352103bee641b18b779bc3269b9657e2
+source-git-commit: 284d95976ab1b58aaea2a4c41db20a3ea5a9b761
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '445'
 ht-degree: 12%
 
 ---
@@ -129,4 +129,4 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 
 **Administrering**
 
-**Uppdatering av kontrollpanelen för licensanvändning** - Kontrollpanelen för licensanvändning som finns i Adobe Experience Platform användargränssnitt ger nu det rätta värdet för **Licensierad** Genomsnittlig profilrikedom. Som Journey Optimizer-kund ser du en nedgång i den här metriska representationen, vilket innebär att den användning du är licensierad för nu rapporteras korrekt. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/dashboards/guides/license-usage.html#available-metrics){target=&quot;_blank&quot;}
+* **Uppdatering av kontrollpanelen för licensanvändning** - Kontrollpanelen för licensanvändning finns i [!DNL Adobe Journey Optimizer] användargränssnittet återspeglar nu det korrekta värdet för **Licensierad** Genomsnittlig profilrikedom. Du kommer att se en minskning i den här måttvisningen, vilket innebär att licensgränsen nu rapporteras korrekt. [Läs mer](../start/licence-usage.md)

@@ -6,7 +6,7 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: a029f716-ea1e-4d79-82b7-59770f05161b
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 284d95976ab1b58aaea2a4c41db20a3ea5a9b761
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 3%
@@ -16,42 +16,6 @@ ht-degree: 3%
 # Sammanställningsfunktioner {#aggregation}
 
 Sammanställningsfunktioner används för att gruppera flera värden för att skapa ett enda sammanfattningsvärde.
-
-## Antal{#count}
-
-The `count` returnerar antalet element i den angivna arrayen.
-
-**Format**
-
-```sql
-{%= count(array) %}
-```
-
-**Exempel**
-
-Följande åtgärd returnerar antalet order i arrayen.
-
-```sql
-{%= count(orders) %}
-```
-
-## Summa{#sum}
-
-The `sum` returnerar summan av alla markerade värden i arrayen.
-
-**Format**
-
-```sql
-{%= sum(array) %}
-```
-
-**Exempel**
-
-Följande operation returnerar summan av alla orderpriser.
-
-```sql
-{%=sum(orders.order.price)%}
-```
 
 ## Genomsnittlig{#average}
 
@@ -71,22 +35,22 @@ Följande åtgärd returnerar genomsnittspriset för alla order.
 {%=average(orders.order.price)%}
 ```
 
-## Minimum{#min}
+## Antal{#count}
 
-The `min` returnerar det minsta av alla markerade värden i arrayen.
+The `count` returnerar antalet element i den angivna arrayen.
 
 **Format**
 
 ```sql
-{%= min(array) %}
+{%= count(array) %}
 ```
 
 **Exempel**
 
-Följande åtgärd returnerar det lägsta priset för alla order.
+Följande åtgärd returnerar antalet order i arrayen.
 
 ```sql
-{%=min(orders.order.price)%}
+{%= count(orders) %}
 ```
 
 ## Maximal{#max}
@@ -105,4 +69,40 @@ Följande åtgärd returnerar det högsta priset för alla order.
 
 ```sql
 {%=max(orders.order.price)%}
+```
+
+## Minimum{#min}
+
+The `min` returnerar det minsta av alla markerade värden i arrayen.
+
+**Format**
+
+```sql
+{%= min(array) %}
+```
+
+**Exempel**
+
+Följande åtgärd returnerar det lägsta priset för alla order.
+
+```sql
+{%=min(orders.order.price) %}
+```
+
+## Summa{#sum}
+
+The `sum` returnerar summan av alla markerade värden i arrayen.
+
+**Format**
+
+```sql
+{%= sum(array) %}
+```
+
+**Exempel**
+
+Följande operation returnerar summan av alla orderpriser.
+
+```sql
+{%=sum(orders.order.price)%}
 ```

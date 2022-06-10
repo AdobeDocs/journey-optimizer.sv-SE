@@ -6,14 +6,14 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
-source-git-commit: bea7f6b9352103bee641b18b779bc3269b9657e2
+source-git-commit: 284d95976ab1b58aaea2a4c41db20a3ea5a9b761
 workflow-type: tm+mt
-source-wordcount: '1361'
+source-wordcount: '1738'
 ht-degree: 1%
 
 ---
 
-# Kom igång med hjälp av hjälpfunktioner{#functionsL}
+# Kom igång med hjälp av hjälpfunktioner{#functions}
 
 Använd [!DNL Journey Optimizer] mallspråk för att utföra dataåtgärder, t.ex. beräkningar, dataformatering eller konvertering, villkor och hantera dem i personaliseringssammanhang. Läs riktlinjerna för syntaxen för personalisering i [den här sidan](../personalization-syntax.md).
 
@@ -33,50 +33,59 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
 
 ## Funktioner{#functions-helper}
 
-### Arrayfunktioner
+### Funktioner för aggregering och array
 
 <table>
     <tr>
         <td><a href="aggregation.md#average">Genomsnittlig</a></td><td>Den här funktionen returnerar det aritmetiska medelvärdet för alla markerade värden i arrayen</td>
     </tr>
     <tr>
-        <td><a href="arrays-list.md#in">I</a></td><td>Den här funktionen används för att avgöra om ett objekt är medlem i en array eller lista</td>
-    </tr>
-    <tr>
-        <td><a href="aggregation.md#min">Minimum</a></td><td>Den här funktionen returnerar det minsta av alla markerade värden i arrayen</td>
-    </tr>
-    <tr>
         <td><a href="aggregation.md#count">Antal</a></td><td>Den här funktionen returnerar antalet element i den angivna arrayen</td>
     </tr>
     <tr>
-        <td><a href="arrays-list.md#includes">Inkluderar</a></td><td>Den här funktionen avgör om en array eller lista innehåller ett visst objekt</td>
+        <td><a href="aggregation.md#count-only-null">Endast antal null</a></td><td>Den här funktionen räknar antalet null-värden i listan.</td>
     </tr>
     <tr>
-        <td><a href="arrays-list.md#notin">Inte i</a></td><td>Den här funktionen avgör om ett objekt inte är medlem i en array eller lista</td>
+        <td><a href="aggregation.md#count-with-null">Antal med null</a></td><td>Den här funktionen räknar alla element i listan inklusive null-värden</td>
     </tr>
     <tr>
         <td><a href="arrays-list.md#distinct">Distinkt</a></td><td>Den här funktionen hämtar värden från en array eller en lista med dubblettvärden borttagna</td>
     </tr>
     <tr>
-        <td><a href="arrays-list.md#intersects">Överlappningar</a></td><td>Den här funktionen avgör om två arrayer eller listor har minst en gemensam medlem</td>
-    </tr>
-    <tr>
-        <td><a href="arrays-list.md#subset">Delmängd av</a></td><td>Den här funktionen avgör om en viss array (array A) är en delmängd av en annan array (array B), d.v.s. om alla element i array A är element i array B</td>
+        <td><a href="arrays-list.md#distinct-count-with-null">Distinkt antal med null</a></td><td>Den här funktionen räknar antalet olika värden inklusive null-värden</td>
     </tr>
     <tr>
         <td><a href="arrays-list.md#head">Första objektet</a></td><td>Den här funktionen returnerar det första objektet i en array eller lista</td>
     </tr>
     <tr>
-        <td><a href="arrays-list.md#last-n">Senaste n i matris</a></td><td>Den här funktionen returnerar de sista "N"-objekten i en array, sorterade i stigande ordning baserat på det givna numeriska uttrycket</td>
-    </tr>
-    <tr>
-        <td><a href="aggregation.md#sum">Summa</a></td><td>Den här funktionen returnerar summan av alla markerade värden i arrayen</td>
-    </tr>
-    <tr>
         <td><a href="arrays-list.md#first-n">Första n i matris</a></td><td>Den här funktionen returnerar de första "N"-objekten i en array, sorterade i stigande ordning baserat på det givna numeriska uttrycket</td>
     </tr>
     <tr>
+        <td><a href="arrays-list.md#in">I</a></td><td>Den här funktionen används för att avgöra om ett objekt är medlem i en array eller lista</td>
+    </tr>
+    <tr>
+        <td><a href="arrays-list.md#includes">Inkluderar</a></td><td>Den här funktionen avgör om en array eller lista innehåller ett visst objekt</td>
+    </tr>
+    <tr>
+        <td><a href="arrays-list.md#intersects">Överlappningar</a></td><td>Den här funktionen avgör om två arrayer eller listor har minst en gemensam medlem</td>
+    </tr>
+    <tr>
+        <td><a href="arrays-list.md#last-n">Senaste n i matris</a></td><td>Den här funktionen returnerar de sista "N"-objekten i en array, sorterade i stigande ordning baserat på det givna numeriska uttrycket</td>
+    </tr>
+    <tr>
         <td><a href="aggregation.md#max">Maximal</a></td><td>Den här funktionen returnerar det största av alla markerade värden i en array</td>
+    </tr>
+    <tr>
+        <td><a href="aggregation.md#min">Minimum</a></td><td>Den här funktionen returnerar det minsta av alla markerade värden i arrayen</td>
+    </tr>
+    <tr>
+        <td><a href="arrays-list.md#notin">Inte i</a></td><td>Den här funktionen avgör om ett objekt inte är medlem i en array eller lista</td>
+    </tr>
+    <tr>
+        <td><a href="arrays-list.md#subset">Delmängd av</a></td><td>Den här funktionen avgör om en viss array (array A) är en delmängd av en annan array (array B), d.v.s. om alla element i array A är element i array B</td>
+    </tr>
+    <tr>
+        <td><a href="aggregation.md#sum">Summa</a></td><td>Den här funktionen returnerar summan av alla markerade värden i arrayen</td>
     </tr>
     <tr>
     <td><a href="arrays-list.md#superset">Supermängd till</a></td><td>Den här funktionen avgör om en viss array (array A) är en överordnad mängd till en annan array (array B), d.v.s. om den arrayen A innehåller alla element i array B</td>
@@ -108,7 +117,7 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
         <td><a href="dates.md#set-days">Ange dagar</a></td><td>Den här funktionen anger dag i månaden för angivet datum/tid</td>
     </tr>
     <tr>
-        <td><a href="dates.md#set-hours">Ange dagar</a></td><td>Den här funktionen ställer in timmen för datum-/tidsvärdet</td>
+        <td><a href="dates.md#set-hours">Ange timmar</a></td><td>Den här funktionen ställer in timmen för datum-/tidsvärdet</td>
     </tr>
     <tr>
         <td><a href="dates.md#to-utc">Till UTC</a></td><td>Den här funktionen konverterar en datetime till UTC</td>
@@ -133,7 +142,30 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
     </tr>
 </table>
 
-**Objektfunktioner**
+### Matematiska funktioner {#math-functions}
+
+<table>
+    <tr>
+        <td><a href="objects.md#absolute">Absolut</a></td><td>Den här funktionen konverterar ett tal som är dess absoluta värde</td>
+    </tr>
+    <tr>
+        <td><a href="objects.md#random">Random</a></td><td>Den här funktionen returnerar ett slumpvärde mellan 0 och 1</td>
+    </tr>
+    <tr>
+        <td><a href="objects.md#round-down">Avrunda nedåt</a></td><td>Den här funktionen avrundar ett tal nedåt</td>
+    </tr>
+    <tr>
+        <td><a href="objects.md#round-up">Avrunda uppåt</a></td><td>Den här funktionen avrundar ett tal</td>
+    </tr>
+    <tr>
+        <td><a href="objects.md#to-percentage">Till procent</a></td><td>Den här funktionen konverterar ett tal till procent</td>
+    </tr>
+    <tr>
+        <td><a href="objects.md#to-precision">Till precision</a></td><td>Den här funktionen konverterar ett tal till nödvändig precision</td>
+    </tr>
+</table>
+
+### Objektfunktioner {#object-functions}
 
 <table>
     <tr>
@@ -182,7 +214,25 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
         <td><a href="string.md#extractEmailDomain">Extrahera e-postdomän</a></td><td>Den här funktionen används för att extrahera domänen för en e-postadress</td>
     </tr>
     <tr>
+        <td><a href="string.md#get-url-host">Hämta URL-värd</a></td><td>Den här funktionen används för att hämta URL-värden.</td>
+    </tr>
+    <tr>
+        <td><a href="string.md#get-url-path">Hämta URL-sökväg</a></td><td>Den här funktionen används för att hämta URL-sökvägen</td>
+    </tr>
+    <tr>
+        <td><a href="string.md#get-url-protocol">Hämta URL-protokoll</a></td><td>Den här funktionen används för att hämta URL-protokoll</td>
+    </tr>
+    <tr>
+        <td><a href="string.md#index-of">index för</a></td><td>Den här funktionen returnerar positionen (i det första argumentet) för den första förekomsten av den andra parametern. Returnerar -1 om det inte finns någon matchning</td>
+    </tr>
+    <tr>
         <td><a href="string.md#isEmpty">IsEmpty</a></td><td>Den här funktionen används för att kontrollera om en sträng eller ett uttryck är tomt.</td>
+    </tr>
+    <tr>
+        <td><a href="string.md#is-not-empty">Är inte tom</a></td><td>Den här funktionen returnerar true om strängen i parametern inte är tom.</td>
+    </tr>
+    <tr>
+        <td><a href="string.md#last-index-of">Senaste index för</a></td><td>Den här funktionen returnerar positionen (i det första argumentet) för den sista förekomsten av den andra parametern. Returnerar -1 om det inte finns någon matchning.</td>
     </tr>
     <tr>
         <td><a href="string.md#leftTrim">Vänster trimning</a></td><td>Den här funktionen tar bort blanksteg från början av en sträng</td>
@@ -197,13 +247,19 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
         <td><a href="string.md#lower">Gemener</a></td><td>Den här funktionen konverterar en sträng till gemener</td>
     </tr>
     <tr>
-        <td><a href="string.md#matches">Matchar</a></td><td>Den här funktionen används för att avgöra om en sträng matchar ett visst reguljärt uttryck</td>
-    </tr>
-    <tr>
         <td><a href="string.md#mask">Mask</a></td><td>Den här funktionen används för att ersätta en del av en sträng med "X"-tecken.</td>
     </tr>
     <tr>
+        <td><a href="string.md#matches">Matchar</a></td><td>Den här funktionen används för att avgöra om en sträng matchar ett visst reguljärt uttryck</td>
+    </tr>
+    <tr>
+        <td><a href="string.md#md5">MD5</a></td><td>Den här funktionen returnerar md5-hash av indatasträngen.</td>
+    </tr>
+    <tr>
         <td><a href="string.md#notEqualTo">Inte lika med</a></td><td>Den här funktionen används för att avgöra om en sträng inte är lika med den angivna strängen</td>
+    </tr>
+    <tr>
+        <td><a href="string.md#not-equal-with-ignore-case">Inte lika med Ignorera skiftläge</a></td><td>Den här funktionen jämför två strängar utan skiftläge.</td>
     </tr>
     <tr>
         <td><a href="string.md#regexGroup">Grupp för reguljära uttryck</a></td><td>Den här funktionen används för att extrahera specifik information baserat på det reguljära uttrycket</td>
@@ -224,13 +280,40 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
         <td><a href="string.md#startsWith">Börjar med</a></td><td>Den här funktionen används för att avgöra om en sträng börjar med en angiven delsträng</td>
     </tr>
     <tr>
+        <td><a href="string.md#string-to-date">Sträng till datum</a></td><td>Den här funktionen används för att konvertera en sträng till ett datum. Det returnerar epokdatumet som utdata för ogiltiga indata.</td>
+    </tr>
+    <tr>
+        <td><a href="string.md#string-to-integer">Sträng till heltal</a></td><td>Den här funktionen konverterar ett strängvärde till ett heltalsvärde.</td>
+    </tr>
+    <tr>
+        <td><a href="string.md#string-to-number">Sträng till tal</a></td><td>Den här funktionen används för att konvertera en sträng till ett tal. Den returnerar samma sträng som utdata för ogiltiga indata.</td>
+    </tr>
+    <tr>
+        <td><a href="string.md#sub-string">Delsträng</a></td><td>Den här funktionen returnerar delsträngen för stränguttrycket mellan startindexet och slutindexet.</td>
+    </tr>
+    <tr>
         <td><a href="string.md#titleCase">Inledande versal</a></td><td>Den här funktionen används för att ge inledande versal i varje ord i en sträng</td>
+    </tr>
+    <tr>
+        <td><a href="string.md#to-bool">Till boolesk</a></td><td>Den här funktionen konverterar ett argumentvärde till ett booleskt värde, beroende på dess typ.</td>
+    </tr>
+    <tr>
+        <td><a href="string.md#to-date-time">Till datum och tid</a></td><td>Den här funktionen används för att konvertera en sträng till ett datum. Det returnerar epokdatumet som utdata för ogiltiga indata.</td>
+    </tr>
+    <tr>
+        <td><a href="string.md#to-date-time-only">Endast till datum och tid</a></td><td>Den här funktionen konverterar ett argumentvärde till ett värde för endast datum och tid. Det returnerar epokdatumet som utdata för ogiltiga indata.</td>
     </tr>
     <tr>
         <td><a href="string.md#trim">Rensa</a></td><td>Den här funktionen tar bort blanksteg från början och slutet av en sträng</td>
     </tr>
     <tr>
         <td><a href="string.md#upper">Versaler</a></td><td>Den här funktionen konverterar en sträng till versaler</td>
+    </tr>
+    <tr>
+        <td><a href="string.md#url-decode">URL-avkodning</a></td><td>Den här funktionen används för att avkoda en URL-kodad sträng.</td>
+    </tr>
+    <tr>
+        <td><a href="string.md#url-encode">URL-encore</a></td><td>Den här funktionen används för att URL-koda en sträng.</td>
     </tr>
 </table>
 
@@ -241,6 +324,9 @@ Hjälpprogram beskrivs i [den här sidan](helpers.md).
 
 
 <table>
+    <tr>
+        <td><a href="helpers.md#default">Standardreservvärde</a></td><td>Med den här funktionen kan du återge en variabel med standardvärdet</td>
+    </tr>
     <tr>
         <td><a href="helpers.md#each">Varje</a></td><td>Den här funktionen används för att iterera över en array</td>
     </tr>
@@ -292,12 +378,6 @@ Booleska funktioner används för att utföra boolesk logik för olika element.
         <td><a href="operators.md#and">Och</a></td><td>Den här operatorn skapar en logisk koppling</td>
     </tr>
     <tr>
-        <td><a href="operators.md#not">If</a></td><td>Operatorn löser ett uttryck beroende på om ett angivet villkor är sant</td>
-    </tr>
-    <tr>
-        <td><a href="operators.md#not">Inte</a></td><td>Den här operatorn skapar en logisk negation</td>
-    </tr>
-    <tr>
         <td><a href="operators.md#or">eller</a></td><td>Den här operatorn skapar en logisk koppling</td>
     </tr>
 </table>
@@ -309,7 +389,7 @@ Jämförelsefunktioner används för att jämföra mellan olika uttryck och vär
 
 <table>
     <tr>
-        <td><a href="operators.md#and">Lika med</a></td><td>Den här åtgärden kontrollerar om värdena är lika</td>
+        <td><a href="operators.md#equals">Är lika med</a></td><td>Den här åtgärden kontrollerar om värdena är lika</td>
     </tr>
     <tr>
         <td><a href="operators.md#greaterthan">Greater than</a></td><td>Den här operatorn kontrollerar om det första värdet är större än det andra värdet</td>
@@ -318,10 +398,10 @@ Jämförelsefunktioner används för att jämföra mellan olika uttryck och vär
         <td><a href="operators.md#greaterthanorequal">Större eller lika med</a></td><td>Den här operatorn kontrollerar om det första värdet är större än eller lika med det andra värdet</td>
     </tr>
     <tr>
-        <td><a href="operators.md#notequal">Inte lika med</a></td><td>Den här operatorn kontrollerar om det angivna uttrycket inte är lika med värdet</td>
+        <td><a href="operators.md#lessthanorequal">Mindre än eller lika med</a> </td><td>Den här operatorn kontrollerar om det första värdet är mindre än eller lika med det andra värdet</td>
     </tr>
     <tr>
-        <td><a href="operators.md#lessthanorequal">Mindre än eller lika med</a> </td><td>Den här operatorn kontrollerar om det första värdet är mindre än eller lika med det andra värdet</td>
+        <td><a href="operators.md#notequal">Inte lika med</a></td><td>Den här operatorn kontrollerar om det angivna uttrycket inte är lika med värdet</td>
     </tr>
 </table>
 

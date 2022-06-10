@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 8674ef9e-261b-49d9-800e-367f9f7ef979
-source-git-commit: b9ebacf410f268e19bbaf1d43ee98f5376d0913f
+source-git-commit: 284d95976ab1b58aaea2a4c41db20a3ea5a9b761
 workflow-type: tm+mt
-source-wordcount: '1237'
+source-wordcount: '1686'
 ht-degree: 3%
 
 ---
@@ -255,9 +255,86 @@ Följande fråga extraherar e-postdomänen för den personliga e-postadressen.
 {%= extractEmailDomain(profile.personalEmail.address) %}
 ```
 
+## Hämta URL-värd {#get-url-host}
+
+The `getUrlHost` används för att hämta värdnamnet för en URL.
+
+**Format**
+
+```sql
+{%= getUrlHost(string) %}: string
+```
+
+**Exempel**
+
+```sql
+{%= getUrlHost("http://www.myurl.com/contact") %}
+```
+
+Returnerar &quot;www.myurl.com&quot;
+
+## Hämta URL-sökväg {#get-url-path}
+
+The `getUrlPath` används för att hämta sökvägen efter domännamnet för en URL.
+
+**Format**
+
+```sql
+{%= getUrlPath(string) %}: string
+```
+
+**Exempel**
+
+```sql
+{%= getUrlPath("http://www.myurl.com/contact.html") %}
+```
+
+Returnerar &quot;/contact.html&quot;
+
+## Hämta URL-protokoll {#get-url-protocol}
+
+The `getUrlProtocol` -funktionen används för att hämta protokollet för en URL.
+
+**Format**
+
+```sql
+{%= getUrlProtocol(string) %}: string
+```
+
+**Exempel**
+
+```sql
+{%= getUrlProtocol("http://www.myurl.com/contact.html") %}
+```
+
+Returnerar &quot;http&quot;
+
+## index för {#index-of}
+
+The `indexOf` -funktionen används för att returnera positionen (i det första argumentet) för den första förekomsten av den andra parametern. Returnerar -1 om det inte finns någon matchning.
+
+**Format**
+
+```sql
+{%= indexOf(STRING_1, STRING_2) %}: integer
+```
+
+| Argument | Beskrivning |
+| --------- | ----------- |
+| `{STRING_1}` | Strängen som kontrollen ska utföras på. |
+| `{STRING_2}` | Strängen som ska sökas i den första parametern |
+
+**Exempel**
+
+```sql
+{%= indexOf("hello world","world" ) %}
+```
+
+Returnerar 6.
+
 ## Is empty {#isEmpty}
 
-The `isEmpty` -funktionen används för att bestämma om en sträng är tom.
+The `isEmpty` -funktionen används för att avgöra om en sträng är tom.
 
 **Format**
 
@@ -272,6 +349,47 @@ Följande funktion returnerar &#39;true&#39; om profilens mobiltelefonnummer är
 ```sql
 {%= isEmpty(profile.mobilePhone.number) %}
 ```
+
+## Är inte tom {#is-not-empty}
+
+The `isNotEmpty` -funktionen används för att avgöra om en sträng inte är tom.
+
+**Format**
+
+```sql
+{= isNotEmpty(string) %}: boolean
+```
+
+**Exempel**
+
+Följande funktion returnerar &#39;true&#39; om profilens mobiltelefonnummer inte är tomt. Annars returneras &quot;false&quot;.
+
+```sql
+{%= isNotEmpty(profile.mobilePhone.number) %}
+```
+
+## Senaste index för {#last-index-of}
+
+The `lastIndexOf` -funktionen används för att returnera positionen (i det första argumentet) för den sista förekomsten av den andra parametern. Returnerar -1 om det inte finns någon matchning.
+
+**Format**
+
+```sql
+{= lastIndexOf(STRING_1, STRING_2) %}: integer
+```
+
+| Argument | Beskrivning |
+| --------- | ----------- |
+| `{STRING_1}` | Strängen som kontrollen ska utföras på. |
+| `{STRING_2}` | Strängen som ska sökas i den första parametern |
+
+**Exempel**
+
+```sql
+{%= lastIndexOf("hello world","o" ) %}
+```
+
+Returnerar 7.
 
 ## Vänster trimning {#leftTrim}
 
@@ -380,6 +498,24 @@ Följande fråga ersätter strängen &quot;123456789&quot; med &quot;X&quot;-tec
 
 Frågan returnerar `1XXXXXX89`.
 
+## MD5 {#md5}
+
+The `md5` -funktionen används för att beräkna och returnera md5-hash för en sträng.
+
+**Format**
+
+```sql
+{%= md5(string) %}: string
+```
+
+**Exempel**
+
+```sql
+{%= md5("hello world") %}
+```
+
+Returnerar &quot;5eb63bbbe01eed093cb22bb8f5acdc3&quot;
+
 ## Inte lika med{#notEqualTo}
 
 The `notEqualTo` -funktionen används för att avgöra om en sträng inte är lika med den angivna strängen.
@@ -401,6 +537,29 @@ Följande fråga avgör, med skiftlägeskänslighet, om personens namn inte är&
 
 ```sql
 {%= notEqualTo(profile.person.name,"John") %}
+```
+
+## Inte lika med Ignorera skiftläge {#not-equal-with-ignore-case}
+
+The `notEqualWithIgnoreCase` används för att jämföra två strängar utan skiftläge.
+
+**Format**
+
+```sql
+{= notEqualWithIgnoreCase(STRING_1,STRING_2) %}: boolean
+```
+
+| Argument | Beskrivning |
+| --------- | ----------- |
+| `{STRING_1}` | Strängen som kontrollen ska utföras på. |
+| `{STRING_2}` | Strängen som ska jämföras med den första strängen. |
+
+**Exempel**
+
+Följande fråga avgör om personens namn inte är &quot;john&quot;, utan skiftlägeskänslighet.
+
+```sql
+{%= notEqualTo(profile.person.name,"john") %}
 ```
 
 ## Grupp för reguljära uttryck{#regexGroup}
@@ -434,17 +593,22 @@ The `replace` -funktionen används för att ersätta en viss delsträng i en str
 **Format**
 
 ```sql
-{%= replace(string,string,string) %}
+{%= replace(STRING_1,STRING_2,STRING_3) %}:string
 ```
+
+| Argument | Beskrivning |
+| --------- | ----------- |
+| `{STRING_1}` | Strängen där delsträngen måste ersättas. |
+| `{STRING_2}` | Den delsträng som ska ersättas. |
+| `{STRING_3}` | Ersättningsdelsträngen. |
 
 **Exempel**
 
-Följande funktion:
-
 ```sql
-
+{%= replace("Hello John, here is your monthly newsletter!","John","Mark") %}
 ```
 
+Returnerar&quot;Hello Mark, här kommer ditt månatliga nyhetsbrev!&quot;
 
 ## Ersätt alla{#replaceAll}
 
@@ -456,11 +620,9 @@ The `replaceAll` används för att ersätta alla delsträngar i en text som matc
 {%= replaceAll(string,string,string) %}
 ```
 
-
 ## Högertrimning {#rightTrim}
 
 The `rightTrim` funktionen används för att ta bort blanksteg från slutet av en sträng.
-
 
 **Format**
 
@@ -477,17 +639,6 @@ The `split` används för att dela en sträng med ett visst tecken.
 ```sql
 {%= split(string,string) %}
 ```
-
-<!--
-**Example**
-
-The following function .
-
-```sql
-
-```
-
--->
 
 ## Börjar med{#startsWith}
 
@@ -513,6 +664,35 @@ Följande fråga avgör, med skiftlägeskänslighet, om personens namn börjar m
 {%= startsWith(person.name,"Joe") %}
 ```
 
+## Sträng till heltal {#string-to-integer}
+
+The `string_to_integer` används för att konvertera ett strängvärde till ett heltalsvärde.
+
+**Format**
+
+```sql
+{= string_to_integer(string) %}: int
+```
+
+## Sträng till tal {#string-to-number}
+
+The `stringToNumber` används för att konvertera en sträng till tal. Den returnerar samma sträng som utdata för ogiltiga indata.
+
+**Format**
+
+```sql
+{%= stringToNumber(string) %}: double
+```
+
+## Delsträng {#sub-string}
+
+The `Count string` -funktionen används för att returnera delsträngen för stränguttrycket mellan startindexet och slutindexet.
+**Format**
+
+```sql
+{= substr(string, integer, integer) %}: string
+```
+
 ## Inledande versal{#titleCase}
 
 The **titleCase** -funktionen används för att ge inledande versal i varje ord i en sträng.
@@ -529,6 +709,36 @@ Om personen bor i Washington High Street, returnerar den här funktionen Washing
 
 ```sql
 {%= titleCase(profile.person.location.Street) %}
+```
+
+## Till boolesk {#to-bool}
+
+The `toBool` -funktionen används för att konvertera ett argumentvärde till ett booleskt värde, beroende på dess typ.
+
+**Format**
+
+```sql
+{= toBool(string) %}: boolean
+```
+
+## Till datum och tid {#to-date-time}
+
+The `toDateTime` -funktionen används för att konvertera strängen till ett datum. Det returnerar epokdatumet som utdata för ogiltiga indata.
+
+**Format**
+
+```sql
+{%= toDateTime(string, string) %}: date-time
+```
+
+## Endast till datum och tid {#to-date-time-only}
+
+The `toDateTimeOnly` -funktionen används för att konvertera ett argumentvärde till ett värde för endast datum och tid. Det returnerar epokdatumet som utdata för ogiltiga indata.
+
+**Format**
+
+```sql
+{%= toDateTimeOnly(string) %}: date-time
 ```
 
 ## Rensa{#trim}
@@ -557,4 +767,24 @@ Den här funktionen konverterar profilens efternamn till versaler.
 
 ```sql
 {%= upperCase(profile.person.name.lastName) %}
+```
+
+## url-avkodning {#url-decode}
+
+The `urlDecode` används för att avkoda en URL-kodad sträng.
+
+**Format**
+
+```sql
+{%= urlDecode(string) %}: string
+```
+
+## URL-kodning {#url-encode}
+
+The `Count only null` -funktionen används för att URL-koda en sträng.
+
+**Format**
+
+```sql
+{%= urlEncode(string) %}: string
 ```

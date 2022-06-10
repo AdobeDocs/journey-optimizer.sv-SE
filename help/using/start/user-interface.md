@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: 284d95976ab1b58aaea2a4c41db20a3ea5a9b761
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1462'
 ht-degree: 7%
 
 ---
@@ -82,7 +82,7 @@ Nedan finns en fullständig lista över tjänster och funktioner som är tillgä
 
 **[!UICONTROL ADMINISTRATION]**
 
-* **[!UICONTROL Journey Administration]** - Använd den här menyn för att konfigurera [händelser]../event/about-events.md), [datakällor](../datasource/about-data-sources.md) och [funktionsmakron](../action/action.md) att använda på era resor.
+* **[!UICONTROL Journey Administration]** - Använd den här menyn för att konfigurera [händelser](../event/about-events.md), [datakällor](../datasource/about-data-sources.md) och [funktionsmakron](../action/action.md) att använda på era resor.
 
 * **[!UICONTROL Sandboxes]** - Adobe Experience Platform tillhandahåller sandlådor som partitionerar en instans i separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. [Läs mer](../administration/sandboxes.md)
 
