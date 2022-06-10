@@ -5,7 +5,7 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 1dbab2e71ba4a1caf2802d0f05699ef313630cfd
+source-git-commit: 06eb2ebec284f807de7ddca5d26e13fc08194642
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Kontrollpanel för licensanvändning {#licence-usage}
 
-The [!DNL Adobe Journey Optimizer] [användargränssnitt](user-interface.md) innehåller en kontrollpanel som visar viktig information om din organisations licensanvändning, som den fångats in under en ögonblicksbild.
+The [!DNL Adobe Journey Optimizer] [användargränssnitt](../start/user-interface.md) innehåller en kontrollpanel som visar viktig information om din organisations licensanvändning, som den fångats in under en ögonblicksbild.
 
 Om du vill komma åt den här instrumentpanelen går du till **[!UICONTROL Administration]** > **[!UICONTROL Licence Usage]**. Då öppnas **[!UICONTROL Overview]** -fliken som visar kontrollpanelen.
 
