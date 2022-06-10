@@ -5,9 +5,9 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 06eb2ebec284f807de7ddca5d26e13fc08194642
+source-git-commit: 1fc97e13411dc337af51705ac66df371dba46736
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '124'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,6 @@ Om du vill komma åt den här instrumentpanelen går du till **[!UICONTROL Admin
 
 Läs mer i Adobe Experience Platform-dokumentationen:
 
-* [Översikt över kontrollpanelen för licensanvändning](https://experienceleague.adobe.com/docs/experience-platform/dashboards/guides/license-usage.html)
+* [Översikt över kontrollpanelen för licensanvändning](https://experienceleague.adobe.com/docs/experience-platform/dashboards/guides/license-usage.html){target=&quot;_blank&quot;}
 * [Utforska kontrollpanelen för licensanvändning](https://experienceleague.adobe.com/docs/experience-platform/dashboards/guides/license-usage.html#exploring-the-license-usage-dashboard){target=&quot;_blank&quot;}
 * [Tillgängliga mått](https://experienceleague.adobe.com/docs/experience-platform/dashboards/guides/license-usage.html#available-metrics){target=&quot;_blank&quot;}
