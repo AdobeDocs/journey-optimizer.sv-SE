@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-source-git-commit: bea7f6b9352103bee641b18b779bc3269b9657e2
+source-git-commit: 0ca491315e214e3c12bec11a93da1a2b98b493b6
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1108'
 ht-degree: 1%
 
 ---
@@ -147,7 +147,7 @@ Om du vill göra det väljer du **[!UICONTROL Add email or domain]** och däreft
 
    >[!NOTE]
    >
-   >Endast ASCII-tecken mellan 32 och 126 tillåts. Den fullständiga listan finns på [den här sidan](https://en.wikipedia.org/wiki/Wikipedia:ASCII#ASCII_printable_characters){target=&quot;_blank&quot;} till exempel.
+   >Alla ASCII-tecken mellan 32 och 126 tillåts i **[!UICONTROL Reason]** fält. Den fullständiga listan finns på [den här sidan](https://en.wikipedia.org/wiki/Wikipedia:ASCII#ASCII_printable_characters){target=&quot;_blank&quot;} till exempel.
 
 1. Klicka på **[!UICONTROL Submit]**.
 
@@ -171,7 +171,7 @@ Om du vill göra det väljer du **[!UICONTROL Add email or domain]** och däreft
    ```
    >[!NOTE]
    >
-   >I kolumnen Kommentar tillåts bara ASCII-tecken mellan 32 och 126. Den fullständiga listan finns på [den här sidan](https://en.wikipedia.org/wiki/Wikipedia:ASCII#ASCII_printable_characters){target=&quot;_blank&quot;} till exempel.
+   >Alla ASCII-tecken mellan 32 och 126 tillåts i **Kommentar** kolumn. Den fullständiga listan finns på [den här sidan](https://en.wikipedia.org/wiki/Wikipedia:ASCII#ASCII_printable_characters){target=&quot;_blank&quot;} till exempel.
 
    Du kan även hämta den här mallen från **[!UICONTROL Suppression list]** huvudvyn.
 

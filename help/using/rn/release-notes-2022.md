@@ -1,7 +1,8 @@
 ---
 title: Versionsinformation 2022
 description: Versionsinformation om Journey Optimizer 2022
-source-git-commit: 4626237ce629dcaec8d20c89db3cb8b517671502
+exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
+source-git-commit: 0ca491315e214e3c12bec11a93da1a2b98b493b6
 workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 8%
@@ -69,7 +70,7 @@ Som Adobe Campaign Standard-kund kan du nu skicka e-post, push-meddelanden och S
 **Administrering**
 
 * Du kan nu aktivera/inaktivera länken för att avbryta prenumerationen i/från e-posthuvudet på den förinställda meddelandenivån och ange en anpassad URL för att avbryta prenumerationen på meddelandenivån. [Läs mer](../configuration/message-presets.md#list-unsubscribe)
-* Tillåtelselista kan nu aktiveras och inaktiveras via [!DNL Journey Optimizer] gränssnitt för produktions- och icke-produktionssandlådor. [Läs mer](../reports/allow-list.md#enable-allow-list)
+* Tillåtelselista kan nu aktiveras och inaktiveras via [!DNL Journey Optimizer] gränssnitt för produktions- och icke-produktionssandlådor. [Läs mer](../configuration/allow-list.md#enable-allow-list)
 
 **Personalisering**
 

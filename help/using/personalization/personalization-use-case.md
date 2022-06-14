@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 7d9c3d31-af57-4f41-aa23-6efa5b785260
-source-git-commit: c058c4835c560f12e3d53bfb766324405b12968f
+source-git-commit: 0ca491315e214e3c12bec11a93da1a2b98b493b6
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ I detta fall krävs följande krav:
 
 * skapa och utforma ett push-meddelande, utan att publicera det. Se detta [section](../messages/get-started-content.md).
 * konfigurera en orderhändelse som innehåller ordernummer, status och artikelnamn. Se detta [section](../event/about-events.md).
-* skapa ett beslut (tidigare kallat&quot;erbjudandeaktivitet&quot;), se denna [section](../offers/offer-activities/create-offer-activities.md).
+* skapa ett beslut, se [section](../offers/offer-activities/create-offer-activities.md).
 
 ## Steg 1 - Lägg till personalisering i profil {#add-perso}
 
@@ -98,7 +98,7 @@ I detta fall krävs följande krav:
 
    ![](assets/perso-uc13.png)
 
-1. Välj **Erbjudandebeslut** om du vill infoga en offer decisioning-variabel. Välj placering och klicka på **+** -ikonen bredvid beslutet (tidigare kallat&quot;erbjudandeaktivitet&quot;) för att lägga till den i brödtexten.
+1. Välj **Erbjudandebeslut** om du vill infoga en offer decisioning-variabel. Välj placering och klicka på **+** -ikonen bredvid beslutet om att lägga till den i brödtexten.
 
    ![](assets/perso-uc14.png)
 

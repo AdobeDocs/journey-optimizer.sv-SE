@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: a4aaa814-3fd4-439e-8f34-faf97208378a
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: 0ca491315e214e3c12bec11a93da1a2b98b493b6
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '972'
 ht-degree: 1%
 
 ---
@@ -179,7 +179,7 @@ Använd **[!UICONTROL Social]** om du vill infoga länkar till sidor för social
 
 ## Erbjudandebeslut {#offer-decision}
 
-Använd **[!UICONTROL Offer decision]** för att infoga beslut (som tidigare kallats erbjudandeaktiviteter) i dina meddelanden. Besluten kommer att dra nytta av Beslutshantering för att välja det bästa erbjudandet att leverera till era kunder.
+Använd **[!UICONTROL Offer decision]** för att infoga beslut i meddelanden. Besluten kommer att dra nytta av Beslutshantering för att välja det bästa erbjudandet att leverera till era kunder.
 
 Relaterade ämnen:
 

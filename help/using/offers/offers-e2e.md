@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 851d988a-2582-4c30-80f3-b881d90771be
-source-git-commit: 12b01cb9de84399e5ede987866609acc10b64c5f
+source-git-commit: 0ca491315e214e3c12bec11a93da1a2b98b493b6
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1061'
 ht-degree: 2%
 
 ---
@@ -223,56 +223,6 @@ De detaljerade stegen för att skapa och konfigurera ett beslut beskrivs i [det 
 
 ## Infoga beslutet i ett e-postmeddelande {#insert-decision-in-email}
 
-Nu när ditt beslut är klart kan du infoga det i ett e-postmeddelande. För att göra detta, följ nedanstående steg:
-
-1. Skapa din e-post och öppna sedan [E-postdesigner](../../using/design/design-emails.md) för att konfigurera innehållet.
-
-1. Lägg till en strukturkomponent från den vänstra paletten.
-
-1. Lägg till en **[!UICONTROL Offer decision]** innehållskomponent. Lär dig hur du använder innehållskomponenter i [det här avsnittet](../../using/design/content-components.md).
-
-   ![](assets/offers-e2e-decision-component.png)
-
-1. Markera den. Klicka på **[!UICONTROL Select offer decision]** för att lägga till ett beslut.
-
-   ![](assets/offers-e2e-select-offer-decision.png)
-
-1. Välj den placering som motsvarar de erbjudanden som du vill visa på panelen **[!UICONTROL Placements]** listruta.
-
-   I det här fallet är det bara den **E-post - bild** är tillgängligt så som du vill använda beslutet i ett e-postmeddelande. Läs mer på [skapa placeringar](../../using/offers/offer-library/creating-placements.md).
-
-   ![](assets/offers-e2e-select-placement-in-decision.png)
-
-1. Beslut som matchar **E-post - bild** placeringen visas. Välj vilket beslut som ska användas i innehållskomponenten och klicka sedan på **[!UICONTROL Add]**.
-
-   ![](assets/offers-e2e-matching-placement-in-decision.png)
-
-   >[!NOTE]
-   >
-   >Endast beslut som är kompatibla med den valda placeringen visas i listan.
-
-Nu kan du se alla personaliserade erbjudanden och reserverbjudandet visualiseras i e-postdesignern.
+Nu när ditt beslut är klart kan du infoga det i ett e-postmeddelande. Gör så här: [den här sidan](../../using/design/deliver-personalized-offers.md).
 
 ![](assets/offers-e2e-offers-displayed.png)
-
-Använd **[!UICONTROL Offers]** -avsnittet eller innehållskomponentpilarna (höger- och vänsterpilar) för att bläddra bland data. Du kan även visa olika erbjudanden som ingår i beslutet med en kundprofil. Läs mer i [det här avsnittet](../../using/design/deliver-personalized-offers.md#preview-offers-in-email).
-
-När du har sparat dina ändringar och när meddelandet har publicerats är dina erbjudanden klara att visas för de relevanta profilerna när du skickar meddelandet som en del av en resa.
-
->[!NOTE]
->
->När du uppdaterar ett erbjudande, ett reserverbjudande, en erbjudandesamling eller ett erbjudandebeslut som refereras direkt eller indirekt i en [publicerad](../../using/messages/publish-manage-message.md) visas uppdateringarna automatiskt i motsvarande meddelande, utan att det behöver publiceras på nytt.
-
-**Relaterade ämnen:**
-
-* Lär dig hur du kontrollerar förhandsgranskningen av meddelandet i [det här avsnittet](../../using/design/preview.md#preview-your-messages).
-
-* Lär dig hur du publicerar meddelanden i [det här avsnittet](../../using/messages/publish-manage-message.md).
-
-* Lär dig hur meddelanden utlöses av en eller flera resor i [det här avsnittet](../building-journeys/journey.md).
-
-<!--
-* Learn how to measure your offer's success and impact on your targeted audience with reports in [this section](../reports/journey-global-report.md).
--->
-
-

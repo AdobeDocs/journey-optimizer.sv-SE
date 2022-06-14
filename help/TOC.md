@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 1dbab2e71ba4a1caf2802d0f05699ef313630cfd
+source-git-commit: 0ca491315e214e3c12bec11a93da1a2b98b493b6
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1064'
 ht-degree: 40%
 
 ---
@@ -103,7 +103,7 @@ ht-degree: 40%
       + [Kom igång med profiler](using/segment/get-started-profiles.md)
       + [Skapa testprofiler](using/segment/creating-test-profiles.md)
    + [Identiteter](using/segment/get-started-identity.md)
-   + [Licensanvändning](using/segment/licence-usage.md)
+   + [Licensanvändning](using/segment/license-usage.md)
 + Resor {#orchestrate-journeys}
    + Om resor{#about-journeys}
       + [Allmän princip](using/building-journeys/journey.md)
@@ -253,8 +253,7 @@ ht-degree: 40%
       + [Exempel på frågor](using/reports/query-examples.md)
    + levererbarhet {#deliverability}
       + [Kom igång med leverans](using/reports/deliverability.md)
-      + [Undertryckningslista](using/reports/suppression-list.md)
-      + [Tillåtelselista](using/reports/allow-list.md)
+      + [Om listan över inaktiveringar](using/reports/suppression-list.md)
    + [Granskningsåtgärder för Journey Optimizer-resurser](using/reports/audit-logs.md)
 + Beslutsledning {#offer-decisioniong}
    + Kom igång med beslutshantering {#get-started-decision}
@@ -368,8 +367,9 @@ ht-degree: 40%
             + [Få åtkomst till och redigera PTR-poster](using/configuration/ptr-records.md)
             + [Skapa IP-pooler](using/configuration/ip-pools.md)
          + Övervaka e-postadresser {#monitor-reputation}
-            + [Hantera undertryckningslista](using/configuration/manage-suppression-list.md)
+            + [Undertryckningslista](using/configuration/manage-suppression-list.md)
             + [Återförsök](using/configuration/retries.md)
+            + [Tillåtelselista](using/configuration/allow-list.md)
       + [Konfigurera SMS-kanal](using/configuration/sms-configuration.md)
       + Ställ in meddelandeförinställningar {#set-up-message-presets}
          + [Skapa meddelandeförinställningar](using/configuration/message-presets.md)

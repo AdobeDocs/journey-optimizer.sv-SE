@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Beginner
 exl-id: 659984cb-b232-47ba-9f5a-604bf97a5e92
-source-git-commit: df5bb48130c715441fb02bc034edddcad1da7cbf
+source-git-commit: 0ca491315e214e3c12bec11a93da1a2b98b493b6
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 44%
+source-wordcount: '939'
+ht-degree: 46%
 
 ---
 
@@ -47,7 +47,7 @@ Det skapas med **Erbjudandebiblioteket** som innehåller en central erbjudandeka
 
 ![](../assets/offer_structure.png)
 
-När erbjudandebiblioteket har berikats med erbjudanden kan ni integrera era erbjudanden i **beslut** (kallades tidigare&quot;erbjudandeaktiviteter&quot;).
+När erbjudandebiblioteket har berikats med erbjudanden kan du integrera dina erbjudanden i **beslut**.
 
 Besluten är behållare för dina erbjudanden som utnyttjar beslutsmotorn för erbjudanden för att välja det bästa erbjudandet som ska levereras beroende på leveransmålet.
 

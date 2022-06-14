@@ -1,7 +1,8 @@
 ---
 title: Information om föregående version (2021)
 description: Versionsinformation om Journey Optimizer 2021
-source-git-commit: 4626237ce629dcaec8d20c89db3cb8b517671502
+exl-id: 0e43be98-f471-4860-be84-8f99ab93e983
+source-git-commit: 0ca491315e214e3c12bec11a93da1a2b98b493b6
 workflow-type: tm+mt
 source-wordcount: '2070'
 ht-degree: 9%
@@ -277,7 +278,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 
 **E-postkonfiguration**
 
-* **Tillåtelselista** - tillåtelselista kan nu aktiveras och inaktiveras på en icke-produktionssandlåda via ett API-anrop. [Läs mer](../reports/allow-list.md#enable-allow-list)
+* **Tillåtelselista** - tillåtelselista kan nu aktiveras och inaktiveras på en icke-produktionssandlåda via ett API-anrop. [Läs mer](../configuration/allow-list.md#enable-allow-list)
 * **Navigering** - Suppressionslistan, som var tillgänglig under **Administration > Kanaler > E-postkonfiguration > Allmänt** har flyttats till den nya menyn **Undertryckningslista** undermeny, som samlar alla relaterade funktioner för enklare åtkomst. [Läs mer](../configuration/manage-suppression-list.md#access-suppression-list)
 
 **Beslutsledning**
@@ -324,7 +325,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 <tr>
 <td>
 <p>Du kan nu definiera en specifik sändningssäker lista på sandlådenivå för att ha en säker miljö för testningsändamål. I icke-produktionssituationer, där misstag kan inträffa, ser tillåtelselista till att du inte löper någon risk att skicka ut oönskade meddelanden till dina kunder. Den här funktionen aktiveras med hjälp av API:er för undertryckning.</p>
-<p>Mer information finns i den <a href="../reports/allow-list.md">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="../configuration/allow-list.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>

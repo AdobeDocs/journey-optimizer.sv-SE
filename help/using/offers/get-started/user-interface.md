@@ -6,16 +6,16 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 722f9c3b-b505-48c0-b126-31a7a841c245
-source-git-commit: 12b01cb9de84399e5ede987866609acc10b64c5f
+source-git-commit: 0ca491315e214e3c12bec11a93da1a2b98b493b6
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
 
 # Användargränssnitt {#user-interface}
 
-Med Erbjudandebiblioteket kan du skapa och hantera dina praktik och erbjudanden på ett och samma ställe, samt få tillgång till alla beslut som skapats (tidigare kallade erbjudandeaktiviteter).
+Med Erbjudandebiblioteket kan du skapa och hantera dina praktik och erbjudanden på ett och samma ställe, samt få tillgång till alla beslut som skapats.
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ När du är nybörjare på [!DNL Offer Decisioning], **[!UICONTROL Overview]** h
 
 Följ stegen på skärmen för att börja skapa praktik, erbjudanden och samlingar.
 
-När du är klar med dessa första steg uppmanas du att skapa erbjudandebeslut (som tidigare kallades erbjudandeaktiviteter).
+När du är klar med de här första stegen uppmanas du att skapa offertbeslut.
 
 ![](../assets/overview_collection-created.png)
 
