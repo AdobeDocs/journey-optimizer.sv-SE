@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 2540938f-8ac7-43fa-83ff-fed59f6bc417
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 8a68d1e6d498ef3055c703d4e73471ab6d7bff40
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '273'
 ht-degree: 3%
 
 ---
@@ -55,7 +55,4 @@ Så här konfigurerar du den här resan:
       ![](assets/message-to-subscribers-uc-2.png)
 
    1. I **[!UICONTROL Add an expression]** klickar du på **[!UICONTROL Ok]**.
-
    ![](assets/message-to-subscribers-uc-3.png)
-
-1. Avsluta resan med en **[!UICONTROL End]** aktivitet.

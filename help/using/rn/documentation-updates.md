@@ -2,9 +2,9 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 0ca491315e214e3c12bec11a93da1a2b98b493b6
+source-git-commit: 7483b1e7a37b1a8a757ce5cc90a60a829a580389
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1553'
 ht-degree: 21%
 
 ---
@@ -12,6 +12,20 @@ ht-degree: 21%
 # Dokumentationsuppdateringar {#latest-updates}
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
+
+
+## Juni 2022 {#june-2022}
+
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version från 22 juni finns utförlig i dokumentationen. [Läs mer](release-notes.md)
+* Ett nytt avsnitt om dataanvändningsprinciper har lagts till i dokumentationen. [Läs mer](../privacy/policies.md)
+* Ett nytt avsnitt om sekretessförfrågningar har lagts till i dokumentationen. [Läs mer](../privacy/requests.md)
+* Ett nytt avsnitt om granskningsloggar på resurser har lagts till i dokumentationen. [Läs mer](../privacy/audit-logs.md)
+* Ett nytt avsnitt om hur du lägger till HTML eller JSON-innehåll som kommer från Adobe Experience Cloud Asset-biblioteket i en offertrepresentation har lagts till i dokumentationen. [Läs mer](../offers/offer-library/add-representations.md#html-json)
+* En ny sida om resans livscykel har lagts till. [Läs mer](../building-journeys/journey-end.md)
+* Sidan Vänta aktivitet har uppdaterats. [Läs mer](../building-journeys/wait-activity.md)
+* Listan med Adobe Journey Optimizer datauppsättningar har lagts till med frågeexempel. [Läs mer](../start/datasets-query-examples.md)
+* Sidan Tillåtelselista har flyttats till avsnittet Konfiguration. [Läs mer](../configuration/allow-list.md)
+* Sidan Suppression List har uppdaterats. [Läs mer](../configuration/manage-suppression-list.md)
 
 ## Maj 2022 {#may-2022}
 

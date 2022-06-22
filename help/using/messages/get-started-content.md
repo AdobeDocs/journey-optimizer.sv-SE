@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 712dc172-6c0d-4ce8-ba16-de99d65fc641
-source-git-commit: 76eb73e875cbdeb7b5821f0c63435cf96c532adc
+source-git-commit: 5bb7df1b02712da3b496aa92be30d4ea02750c39
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '681'
 ht-degree: 2%
 
 ---
@@ -67,7 +67,7 @@ Följ stegen nedan för att skapa ett nytt meddelande:
 
    * Välj **[!UICONTROL Message category]**: Marknadsföring eller Transactional.
 
-   * Markera de kanaler som du vill använda för det meddelandet: E-post och/eller push-meddelanden. Du måste välja minst en kanal för att kunna skapa meddelandet.
+   * Markera de kanaler som du vill använda för det meddelandet: E-post, push-meddelanden och/eller SMS. Du måste välja minst en kanal för att kunna skapa meddelandet.
    >[!NOTE]
    >
    >Du kan klicka på **[!UICONTROL Frequency rule]** om du vill visa de frekvensregler som gäller för den valda kategorin och de valda kanalerna. Läs mer på [frekvensregler](../configuration/frequency-rules.md).
@@ -97,6 +97,7 @@ Följ stegen nedan för att skapa ett nytt meddelande:
 
    * [Skapa ett e-postmeddelande](create-email.md)
    * [Skapa push-meddelanden](create-push.md)
+   * [Skapa ett SMS-meddelande](create-sms.md)
 
    >[!NOTE]
    >   

@@ -5,10 +5,10 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 169ad138ea27b9049698d8d3bfa8a0817ed39fee
+source-git-commit: 4d211b9a0087526fe81d7b989195f21ceab42865
 workflow-type: tm+mt
-source-wordcount: '1067'
-ht-degree: 40%
+source-wordcount: '1104'
+ht-degree: 39%
 
 ---
 
@@ -32,6 +32,13 @@ ht-degree: 40%
       + [Kom igång som utvecklare](using/start/path/developer.md)
    + [Användargränssnitt](using/start/user-interface.md)
    + [Guardrails](using/start/guardrails.md)
++ Kampanjer {#campaigns}
+   + [Kom igång med kampanjer](using/campaigns/get-started-with-campaigns.md)
+   + [Skapa en kampanj](using/campaigns/create-campaign.md)
+   + [Ändra eller stoppa en kampanj](using/campaigns/modify-stop-campaign.md)
+   + Rapporter {#reports}
+      + [Kampanjrapport](using/campaigns/campaign-live-report.md)
+      + [Global kampanjrapport](using/campaigns/campaign-global-report.md)
 + Meddelanden {#messages}
    + [Kom igång med meddelanden](using/messages/get-started-content.md)
    + [Skapa ett e-postmeddelande](using/messages/create-email.md)
@@ -107,6 +114,7 @@ ht-degree: 40%
 + Resor {#orchestrate-journeys}
    + Om resor{#about-journeys}
       + [Allmän princip](using/building-journeys/journey.md)
+      + [Resans livscykel](using/building-journeys/journey-end.md)
       + [Reseversioner](using/building-journeys/journey-versions.md)
       + [Integrera med intelligenta tjänster](using/building-journeys/ai-services-overview.md)
    + Skapa en resa{#create-journey}
@@ -115,6 +123,7 @@ ht-degree: 40%
       + [Testa din resa](using/building-journeys/testing-the-journey.md)
       + [Publicera din resa](using/building-journeys/publishing-the-journey.md)
       + [Hantering av tidszoner](using/building-journeys/timezone-management.md)
+      + [Kopiera en resa](using/building-journeys/copy-to-sandbox.md)
       + [Felsök din resa](using/building-journeys/troubleshooting.md)
    + Aktiviteter {#about-journey-building}
       + [Om reseaktiviteter](using/building-journeys/about-journey-activities.md)
@@ -254,7 +263,6 @@ ht-degree: 40%
    + levererbarhet {#deliverability}
       + [Kom igång med leverans](using/reports/deliverability.md)
       + [Om listan över inaktiveringar](using/reports/suppression-list.md)
-   + [Granskningsåtgärder för Journey Optimizer-resurser](using/reports/audit-logs.md)
 + Beslutsledning {#offer-decisioniong}
    + Kom igång med beslutshantering {#get-started-decision}
       + [Om beslutshantering](using/offers/get-started/starting-offer-decisioning.md)
@@ -349,7 +357,9 @@ ht-degree: 40%
          + [API för gruppbeslut](using/offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
 + Datahantering {#data-management}
    + [Scheman](using/start/get-started-schemas.md)
-   + [Datauppsättningar](using/start/get-started-datasets.md)
+   + Datauppsättningar {#datasets}
+      + [Kom igång med datauppsättningar](using/start/get-started-datasets.md)
+      + [Frågeexempel](using/start/datasets-query-examples.md)
    + [Frågor](using/start/get-started-queries.md)
 + Konfiguration{#configuration}
    + [Kom igång med Journey Optimizer](using/configuration/get-started-configuration.md)
@@ -410,4 +420,7 @@ ht-degree: 40%
    + [Behörighetsnivåer](using/administration/high-low-permissions.md)
    + [Hantering av sandlådor](using/administration/sandboxes.md)
    + [Attributbaserad åtkomstkontroll](using/administration/attribute-based-access.md)
-
++ Sekretess {#privacy}
+   + [Dataanvändningspolicyer](using/privacy/policies.md)
+   + [Förfrågningar om användarens information](using/privacy/requests.md)
+   + [Granskningsåtgärder för Journey Optimizer-resurser](using/privacy/audit-logs.md)

@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: 832abe25f79c8c526dd5da0ff37eb91755d687e4
+source-git-commit: 8a68d1e6d498ef3055c703d4e73471ab6d7bff40
 workflow-type: tm+mt
-source-wordcount: '1846'
-ht-degree: 5%
+source-wordcount: '1277'
+ht-degree: 7%
 
 ---
 
@@ -134,7 +134,7 @@ Burst-läget är ett Journey Optimizer-tillägg som gör att det går att skicka
 Burst-meddelanden innehåller följande krav:
 
 * Resan måste börja med en **Lässegment** aktivitet. Händelser tillåts inte.
-* Nästa steg måste vara ett push-meddelande. Ingen annan kanal, aktivitet eller steg är tillåten (förutom det valfria) **End** aktivitet).
+* Nästa steg måste vara ett push-meddelande. Ingen annan kanal, aktivitet eller steg tillåts.
 * Ingen personalisering tillåts i push-meddelandet.
 * Meddelandet måste vara litet (&lt;2kB).
 
@@ -155,73 +155,3 @@ Testa och publicera sedan din resa som vanligt. Observera att meddelanden inte s
 I den här videon får du veta vilka användningsexempel som gäller för burst-meddelanden och hur du konfigurerar en resa för burst-meddelanden:
 
 >[!VIDEO](https://video.tv.adobe.com/v/334523?quality=12)
-
-
-## Avsluta, stoppa eller stänga en resa{#end-journey}
-
-En resa kan ta slut för en individ i två specifika sammanhang:
-
-* Personen kommer till den sista aktiviteten i en bana. Den senaste aktiviteten kan vara en **End** aktivitet eller annan aktivitet. Använda en **End** aktivitet är inte obligatorisk. Läs [den här sidan](../building-journeys/end-activity.md).
-* Personen kommer till **Villkor** aktivitet (eller **Vänta** aktivitet med ett villkor) och matchar inte något av villkoren.
-
-Personen kan sedan återinträda i resan om återinträde tillåts. Läs [den här sidan](../building-journeys/journey-gs.md#change-properties)
-
-En resa kan avslutas på grund av följande orsaker:
-
-* Resan stängs manuellt via **[!UICONTROL Close to new entrances]** -knappen.
-* En segmentbaserad resa som utförts i ett enda steg.
-* Efter den sista förekomsten av en återkommande segmentbaserad resa.
-
-När en resa stängs (av någon av anledningarna ovan) får den statusen **[!UICONTROL Closed]**. Resan slutar med att nya individer kan komma in på resan. Personer som redan är på resan kan slutföra resan normalt. Efter den globala standardtidsgränsen på 30 dagar växlar resan till **Slutförd** status. Se det här [section](../building-journeys/journey-gs.md#global_timeout).
-
-Om ni behöver stoppa alla personers framsteg på resan kan ni stoppa den. Om du stoppar resan kommer alla personer på resan att tidsgränsen för timeout.
-
-Så här stänger eller stoppar du en resa manuellt:
-
-The **[!UICONTROL Stop]** och **[!UICONTROL Close to new entrances]** kan du avsluta **live** resor. Att avsluta en resa innebär **att nya kunders ankomst till resan blockeras** och att de kunder som redan är med på resan kan uppleva det hela tiden. Det här är det mest rekommenderade sättet att få ett slut på en resa eftersom den erbjuder den bästa upplevelsen för kunderna. Att stoppa en resa innebär att alla som redan har tagit sig in på en resa stoppas i processen. Resan är i stort sett avstängd.
-
->[!NOTE]
->
->Observera att du inte kan återuppta en stängd eller stoppad resa.
-
-### Stänga en resa
-
-Du kan stänga en resa manuellt för att säkerställa att kunder som redan har gått in på resan kan slutföra sin resa, men nya användare inte kan ta sig in på resan.
-
-När en resa stängs får den statusen **[!UICONTROL Closed]**. Efter den globala standardtidsgränsen på 30 dagar växlar resan till **Slutförd** status. Se det här [section](../building-journeys/journey-gs.md#global_timeout).
-
-En stängd reseversion kan inte startas om eller tas bort. Du kan skapa en ny version av den eller duplicera den. Endast slutförda resor kan tas bort.
-
-Om du vill stänga en resa från listan över resor klickar du på **[!UICONTROL Ellipsis]** knapp som finns till höger om resenamnet och väljer **[!UICONTROL Close to new entrances]**.
-
-![](assets/journey-finish-quick-action.png)
-
-Du kan även:
-
-1. I **[!UICONTROL Journeys]** klickar du på den resa du vill stänga.
-1. Klicka på nedpilen längst upp till höger.
-
-   ![](assets/finish_drop_down_list.png)
-
-1. Klicka **[!UICONTROL Close to new entrances]** och bekräfta i dialogrutan.
-
-### Stoppa en resa
-
-Du kan stoppa en resa när en kris inträffar och all behandling måste avslutas omedelbart under en resa.
-
-Det går inte att starta om en stoppad reseversion.
-
-När det stoppas anges resans status till **[!UICONTROL Stopped]**.
-
-Du kan till exempel stoppa en resa om en marknadsförare upptäcker att resan riktar sig mot fel målgrupp eller en anpassad åtgärd som ska leverera meddelanden inte fungerar korrekt. Om du vill stoppa en resa från listan över resor klickar du på **[!UICONTROL Ellipsis]** knapp som finns till höger om resenamnet och väljer **[!UICONTROL Stop]**.
-
-![](assets/journey-finish-quick-action.png)
-
-Du kan även:
-
-1. I **[!UICONTROL Journeys]** klickar du på den resa du vill stoppa.
-1. Klicka på nedpilen i det övre högra hörnet.
-
-![](assets/finish_drop_down_list.png)
-
-1. Klicka **[!UICONTROL Stop]** och bekräfta i dialogrutan.

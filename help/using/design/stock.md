@@ -5,22 +5,17 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-hide: true
-hidefromtoc: true
-source-git-commit: cc7a544b58c0caff4fd0b3d02c53622b506e98e2
+exl-id: 0715f65f-04bd-4dc2-a152-98111f4c42e6
+source-git-commit: f2426b8696983b22dd2c80296e2c9dfc2426c439
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Hantera [!DNL Adobe Stock] bilder {#stock}
 
 ## Kom igång med [!DNL Adobe Stock] {#get-started-stock}
-
->[!IMPORTANT]
->
-> Användning av [!DNL Adobe Stock] integreringen är för närvarande endast tillgänglig i ett tidigt skede för att kunna välja användare. Om du vill använda den här funktionen kontaktar du din kontoansvarige på Adobe.
 
 [!DNL Adobe Stock] ger tillgång till miljontals utvalda och royaltyfria foton, videor, illustrationer och vektorbilder av hög kvalitet. Du kan välja att köpa ett kreditpaket för att licensiera mediefiler eller bara köpa en Standard- eller Extended-licens för den mediefil du behöver. Adobe Stock erbjuder också en kostnadsfri samling resurser.
 
@@ -30,6 +25,10 @@ Med [!DNL Adobe Journey Optimizer]kan du överföra bilder till e-postmeddelande
 [Läs mer om e-postdesign](design-emails.md).
 
 ## Infoga och importera [!DNL Adobe Stock] bilder {#add-stock-image}
+
+>[!NOTE]
+>
+> The **[!UICONTROL Find Adobe Stock photos]** är endast tillgängligt för användare som har tillgång till en AEM Assets Essentials-produktprofil. Mer information finns i [Grundläggande dokumentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html#add-users-to-essentials).
 
 När du har redigerat och anpassat e-postmeddelandet kan du lägga till bilder från [!DNL Adobe Stock] till din mall:
 
@@ -54,7 +53,8 @@ När du har redigerat och anpassat e-postmeddelandet kan du lägga till bilder f
 
 1. Från [!DNL Adobe Stock] måste du köpa resursen för att kunna hämta bilden och ta bort vattenstämpeln.
 
-   Köpet beror på din Adobe Stock-plan eller prenumeration. Se denna [sida](https://stock.adobe.com/plans) för mer information om detta.
+   Köpet beror på din Adobe Stock-plan eller prenumeration. Observera att om du har flera Adobe Stock-konton kommer du att omdirigeras till det senast använda Stock ID:t. I så fall måste du se till att du är inloggad på rätt konto innan du licensierar resursen.
+Se denna [sida](https://stock.adobe.com/plans) för mer information om detta.
 
    >[!WARNING]
    > Om ett e-postmeddelande med en olicensierad bild skickas behåller bilden sin olicensierade form med vattenstämpeln.

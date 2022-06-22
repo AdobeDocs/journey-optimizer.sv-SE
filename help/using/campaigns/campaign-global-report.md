@@ -1,71 +1,60 @@
 ---
-title: Global reserapport
-description: Lär dig använda data från den globala reserapporten
+title: Global kampanjrapport
+description: Lär dig använda data från kampanjens globala rapport
 feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-exl-id: e851646e-4cef-45e8-97c2-a8f4c9d2cc08
-source-git-commit: 5bb7df1b02712da3b496aa92be30d4ea02750c39
+hide: true
+hidefromtoc: true
+source-git-commit: cc20ecf0a019cecb8a4ae9420c5dbdcb28443c91
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1225'
 ht-degree: 0%
 
 ---
 
-# Rapport om global resa {#journey-global-report}
+# Global kampanjrapport {#campaign-global-report}
 
-Den globala reserapporten kan nås direkt från din resa med **[!UICONTROL Global report]** -knappen.
+Kampanjens globala rapport kan nås direkt från er Campaign via **[!UICONTROL Global view]** -knappen.
 
-![](assets/global_report_1.png)
+Kampanjen **[!UICONTROL Global report]** visas med följande flikar:
 
-Resan **[!UICONTROL Global report]** visas med följande flikar:
-
-* [Resa](#journey-global)
+* [Campaign](#campaign-global)
 * [E-post](#email-global)
 * [Push](#push-global)
 
-Resan **[!UICONTROL Global report]** är uppdelat i olika widgetar som detaljerat beskriver hur framgångsrik och felfri din resa är. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](global-report.md#modify-dashboard).
+Kampanjen **[!UICONTROL Global report]** är uppdelat i olika widgetar som detaljerat beskriver kampanjens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](../reports/global-report.md#modify-dashboard).
 
-## Fliken Resor {#journey-global}
+## Fliken Kampanj {#campaign-global}
 
-Från din resa **[!UICONTROL Global report]**, **[!UICONTROL Journey]** -fliken ger en tydlig bild av de viktigaste spårningsdata som rör kundresan.
+### Leverans {#delivery-global}
 
-![](assets/global_report_2.png)
+![](assets/campaign_report_global_1.png)
 
-The **[!UICONTROL Journey Performance]** kan du se sökvägen till dina målprofiler steg för steg under hela kundresan.
+The **[!UICONTROL Campaign's Statistics]** widgetinformation om huvudinformationen i förhållande till kampanjen:
 
-The **[!UICONTROL Journey Statistics]** widgeten visar följande KPI:er:
+* **[!UICONTROL Entered profiles]**: Antal profiler som påbörjade resan.
 
-* **[!UICONTROL Entered profiles]**: Totalt antal personer som har nått resans inträde.
+* **[!UICONTROL Actions delivered]**: Totalt antal unika gånger som en åtgärd i resan har utförts.
 
-* **[!UICONTROL Exited profiles]**: Totalt antal personer som avbrutit resan.
+* **[!UICONTROL Actions failed in %]**: Totalt antal unika gånger en åtgärd misslyckades under resan jämfört med det totala antalet unika gånger en åtgärd har levererats.
 
-* **[!UICONTROL Failed individual journey]**: Totalt antal enskilda resor som inte har slutförts.
+<!--
+### Experimentation tab (#experimentation-global)
 
-![](assets/global_report_12.png)
-
-The **[!UICONTROL Events received by event]**, **[!UICONTROL Events by origin]** och **[!UICONTROL Top events]** kan du se vilken av dina **[!UICONTROL Events]** har körts via diagram och tabeller.
-
-![](assets/global_report_13.png)
-
-**[!UICONTROL Action Performance]**, **[!UICONTROL Action Error Reasons]** och **[!UICONTROL Top Actions]** -widgetar är den mest framgångsrika åtgärden och felen som inträffade när **[!UICONTROL Actions]** har utlösts.
-
-The **[!UICONTROL Top Actions]** tabellen innehåller tillgängliga data för **[!UICONTROL Actions]**, till exempel:
-
-* **[!UICONTROL Actions successfully executed]**: Totalt antal **[!UICONTROL Actions]** har slutförts för en resa.
-
-* **[!UICONTROL Error in action]**: Totalt antal fel som uppstått för **[!UICONTROL Actions]**.
+From your Campaign **[!UICONTROL Global report]**, the **[!UICONTROL Experimentation]** tab details the main information relative to how each variant is performing and if there is was winner during the test.
+-->
 
 ## Fliken E-post {#email-global}
 
-Från din resa **[!UICONTROL Global report]**, **[!UICONTROL Email]** fliken innehåller huvudinformationen om de e-postleveranser som skickas under resan.
+Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Email]** -fliken innehåller huvudinformationen om de e-postleveranser som skickas i din kampanj.
 
-En detaljerad rapport om en viss e-postleverans finns i [E-posta global rapport](#email-global-report) -avsnitt.
-
-![](assets/global_report_14.png)
+En detaljerad rapport om en viss e-postleverans finns i [E-posta global rapport](../reports/email-global-report.md) -avsnitt.
 
 The **[!UICONTROL Email Sending Statistics]** diagram visar hur framgångsrik leveransen är:
+
+* **[!UICONTROL Targeted]**: Totalt antal meddelanden som bearbetats under leveransanalysen.
 
 * **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
 
@@ -81,6 +70,10 @@ The **[!UICONTROL Email Sending Statistics]** diagram visar hur framgångsrik le
 
 * **[!UICONTROL Error Rate]**: Procentandel fel som uppstod under en leverans och som förhindrar att den skickas jämfört med skickade e-postmeddelanden.
 
+* **[!UICONTROL Retries]**: Antal e-postmeddelanden i kön för återförsök.
+
+* **[!UICONTROL Excluded]**: Antal profiler som har uteslutits av Adobe Journey Optimizer.
+
 The **[!UICONTROL Email - Tracking statistics]** innehåller tillgängliga data för mottagaraktivitet för leveransen:
 
 * **[!UICONTROL Opens]**: Antal gånger som leveransen öppnades i en leverans.
@@ -93,9 +86,9 @@ The **[!UICONTROL Email - Tracking statistics]** innehåller tillgängliga data 
 
 * **[!UICONTROL Unique Clicks]**:Antal mottagare som klickat på ett innehåll i ett e-postmeddelande.
 
-* **[!UICONTROL Click through rate]**: Procentandel användare som interagerade med resan.
+* **[!UICONTROL Unique Click Rate]**: Procentandel användare som interagerade med leveransen.
 
-* **[!UICONTROL Unsubscribe]**: Antal klick på länken för att avbryta prenumerationen.
+* **[!UICONTROL Unsubscriptions]**: Antal klick på länken för att avbryta prenumerationen.
 
 * **[!UICONTROL Spam complaints]**: Antal gånger ett meddelande har deklarerats som skräppost eller skräppost.
 
@@ -105,9 +98,9 @@ The **[!UICONTROL Sending Statistics]** diagrammet innehåller de data som är t
 
 * **[!UICONTROL Bounces]**: Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
 
-* **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
+* **[!UICONTROL Retries]**: Antal e-postmeddelanden i kön för återförsök.
 
-![](assets/global_report_15.png)
+* **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
 
 The **[!UICONTROL Bounce Reasons]** och **[!UICONTROL Bounce categories]** widgetar innehåller tillgängliga data som är relaterade till studsade meddelanden, som:
 
@@ -119,19 +112,13 @@ The **[!UICONTROL Bounce Reasons]** och **[!UICONTROL Bounce categories]** widge
 
 Mer information om studsar finns i [Undertryckningslista](../reports/suppression-list.md) sida.
 
-![](assets/global_report_22.png)
-
 The **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilket fel som inträffade under leveransen.
 
 The **[!UICONTROL Excluded reasons]** I diagram och tabeller visas de olika anledningar som gjorde att användarprofiler som inte ingår i målprofilerna inte kunde ta emot meddelandet.
 
-![](assets/global_report_16.png)
-
 The **[!UICONTROL Email - Top Url]** diagram- och tabellinformation om vilka URL:er från leveransen som är mest besökta.
 
 The **[!UICONTROL Email - Top recipient domain]** diagram och tabeller visar vilka domäner som är de mest använda av mottagarna för att öppna e-postmeddelandet.
-
-![](assets/global_report_23.png)
 
 >[!NOTE]
 >
@@ -148,41 +135,15 @@ The **[!UICONTROL Send time optimization]** information om leveransens framgång
 * **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
 * **[!UICONTROL Bounces]**: Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
 
-![](assets/global_report_21.png)
-
->[!NOTE]
->
->Widgetarna och mätvärdena för erbjudanden är bara tillgängliga om ett beslut har infogats i ett e-postmeddelande. Mer information om beslutsförvaltning finns i denna [page](../offers/get-started/starting-offer-decisioning.md).
-
-The **[!UICONTROL Offers statistic]** och **[!UICONTROL Offers statistics]** med tidswidgetar mäter hur väl erbjudandet lyckats och påverkat er målgrupp. Den innehåller detaljerad huvudinformation om meddelandet med nyckeltal:
-
-* **[!UICONTROL Offer sent]**: Totalt antal utskick för erbjudandet.
-
-* **[!UICONTROL Offer impression]**: Antal gånger som erbjudandet öppnades i en leverans.
-
-* **[!UICONTROL Offer clicks]**: Antal gånger som man klickat på ett erbjudande i en leverans.
-
-The **[!UICONTROL Offers detailed statistic]** tabellen innehåller tillgängliga data för mottagaraktivitet med ditt erbjudande:
-
-* **[!UICONTROL Placement name]**: Namn på den placering som användes för att visa ditt erbjudande. Mer information om placering finns i [page](../offers/offer-library/creating-placements.md).
-
-* **[!UICONTROL Offer name]**: Namn på erbjudandet som lagts till i leveransen. Mer information om placering finns i [page](../offers/offer-library/creating-personalized-offers.md).
-
-* **[!UICONTROL Offer sent]**: Totalt antal utskick för erbjudandet.
-
-* **[!UICONTROL Offer impression rate]**: Procentandel öppnade erbjudanden jämfört med antalet skickade erbjudanden.
-
-* **[!UICONTROL Offer click rate]**: Procentandel användare som interagerade med erbjudandet.
-
 ## Push-flik {#push-global}
 
-Från din resa **[!UICONTROL Global report]**, **[!UICONTROL Push]** fliken innehåller huvudinformationen i förhållande till de push-leveranser som skickas under resan.
+Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Push]** -fliken innehåller huvudinformationen i förhållande till push-leveranser som skickas i kampanjen.
 
-En detaljerad rapport om en viss push-leverans finns i [Push Global-rapport](#push-global-report).
-
-![](assets/global_report_17.png)
+En detaljerad rapport om en viss push-leverans finns i [Push Global-rapport](../reports/push-global-report.md).
 
 The **[!UICONTROL Push notification - Sending statistics]** tabellen visar huvudinformationen i förhållande till push-meddelanden med diagram och KPI:er:
+
+* **[!UICONTROL Targeted]**: Totalt antal meddelanden som bearbetats under leveransanalysen.
 
 * **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
 
@@ -198,6 +159,8 @@ The **[!UICONTROL Push notification - Sending statistics]** tabellen visar huvud
 
 * **[!UICONTROL Error Rate]**: Procentandel fel som uppstod under en leverans och som förhindrar att den skickas jämfört med push-meddelanden som skickas.
 
+* **[!UICONTROL Excluded]**: Antal profiler som har uteslutits av Adobe Journey Optimizer.
+
 The **[!UICONTROL Push - Tracking statistics]** innehåller tillgängliga data för mottagaraktivitet för leveransen:
 
 * **[!UICONTROL Opens]**: Antal gånger ett meddelande öppnades i en leverans.
@@ -209,8 +172,6 @@ The **[!UICONTROL Push - Tracking statistics]** innehåller tillgängliga data f
 * **[!UICONTROL Engagements]**: Totalt antal öppningar och åtgärder för det här push-meddelandet, dvs om profilen öppnade push-meddelandet eller om någon klickade på en knapp.
 
 * **[!UICONTROL Engagement Rate]**: Procentandel öppningar och åtgärder för det här push-meddelandet, dvs. om profilen öppnade push-meddelandet eller om någon klickade på en knapp.
-
-![](assets/global_report_24.png)
 
 The **[!UICONTROL Push notification summary]** diagrammet innehåller data som är tillgängliga för skickade push-meddelanden, som:
 
@@ -239,42 +200,8 @@ The **[!UICONTROL Send time optimization]** information om leveransens framgång
 * **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
 * **[!UICONTROL Bounces]**: Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
 
-![](assets/global_report_18.png)
-
 The **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilket fel som inträffade under leveransen.
 
 The **[!UICONTROL Excluded reasons]** I diagram och tabeller visas de olika anledningar som gjorde att användarprofiler som inte ingår i målprofilerna inte kunde ta emot meddelandet.
 
-![](assets/global_report_19.png)
-
 The **[!UICONTROL Tracking by platform]**, **[!UICONTROL Sending by platform]** och **[!UICONTROL Breakdown by platform]** diagram och tabeller visar hur bra push-meddelandena är beroende på mottagarens operativsystem.
-
-SMS **[!UICONTROL Global report]** är uppdelat i olika widgetar som detaljerat beskriver leveransens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](global-report.md#modify-dashboard).
-
-## fliken SMS {#sms-global}
-
-The **[!UICONTROL SMS - Sending statistics]** tabellen visar hur framgångsrik leveransen är:
-
-* **[!UICONTROL Targeted]**: Antal användarprofiler som kvalificerar sig som målprofiler för den här leveransen.
-
-* **[!UICONTROL Excluded]**: Antal användarprofiler, exkluderade från målprofilerna, som inte fick meddelandet.
-
-* **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
-
-* **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
-
-* **[!UICONTROL Bounces]**: Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
-
-* **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
-
-The **[!UICONTROL SMS summary]** widgeten visar huvudinformationen i förhållande till meddelandet med ett diagram:
-
-* **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
-
-* **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
-
-* **[!UICONTROL Bounces]**: Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
-
-* **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
-
-The **[!UICONTROL Exclude Reasons]** Med diagram och tabeller kan du se vilka fel och undantag som inträffade under leveransen.

@@ -8,7 +8,8 @@ role: Admin
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 7a5f7ea85075821f0788bd9a58d9994afd058c61
+exl-id: 01ca4b3e-3778-4537-81e9-97ef92c9aa9e
+source-git-commit: 8a68d1e6d498ef3055c703d4e73471ab6d7bff40
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -38,6 +39,8 @@ Med samtyckeshantering analyseras två olika reseaktiviteter:
 
 * Lässegment: det hämtade segmentet beaktas.
 * Anpassad åtgärd: när det gäller hantering av samtycke beaktas de attribut som används ([åtgärdsparametrar](../action/about-custom-action-configuration.md#define-the-message-parameters)) och de definierade marknadsföringsåtgärderna (nödvändiga marknadsföringsåtgärder och ytterligare marknadsföringsåtgärder).
+
+Samtycke gäller endast när en marknadsföringsåtgärd (obligatorisk eller ytterligare) har ställts in på den anpassade åtgärdsnivån.
 
 Alla andra aktiviteter som används under en resa beaktas inte. Om du påbörjar en resa med en segmentkvalificering beaktas inte segmentet.
 

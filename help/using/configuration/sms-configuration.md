@@ -3,21 +3,15 @@ title: SMS-konfiguration
 description: Lär dig hur du konfigurerar miljön för att skicka SMS-meddelanden med Journey Optimizer
 role: Admin
 level: Intermediate
-hide: true
-hidefromtoc: true
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 5bb7df1b02712da3b496aa92be30d4ea02750c39
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '350'
 ht-degree: 1%
 
 ---
 
 # Konfigurera SMS-kanal {#sms-configuration}
-
->[!CAUTION]
->
-> SMS-kanalen är för närvarande tillgänglig i ett tidigt skede och endast för utvalda användare. Om du vill använda den här funktionen kontaktar du din kontoansvarige på Adobe.
 
 [!DNL Journey Optimizer] kan ni skapa resor och skicka meddelanden till riktade målgrupper.
 
@@ -29,15 +23,14 @@ Så här konfigurerar du din SMS-leverantör med Journey Optimizer:
 
    ![](assets/sms_4.png)
 
-1. Välj Sinch som **[!UICONTROL SMS vendor]**.
+1. Välj **[!UICONTROL SMS vendor]**:
+
+   * [!DNL Sinch]. För att hitta **[!UICONTROL Service ID]** och **[!UICONTROL API Token]**&#x200B;öppnar du SMS > API:er-menyn från ditt Sinch-konto.
+   * [!DNL Twilio]. För att hitta **[!UICONTROL Service ID]** och **[!UICONTROL API Token]**&#x200B;öppnar du panelen Kontoinformation på sidan Konsolinstrumentpanel.
 
 1. Ange **[!UICONTROL Name]** för dina API-autentiseringsuppgifter.
 
 1. Ange **[!UICONTROL Service ID]** och **[!UICONTROL API Token]**.
-
-   >[!NOTE]
-   >
-   > Sinch kräver speciella API-autentiseringsuppgifter. För att hitta **[!UICONTROL Service ID]** och **[!UICONTROL API Token]**, gå till SMS > API:er-menyn från ditt Sinch-konto,
 
    ![](assets/sms_5.png)
 
@@ -74,6 +67,8 @@ Så här skapar du en meddelandeförinställning:
       Mer information om hur du konfigurerar miljön för att skicka SMS-meddelanden finns i [det här avsnittet](sms-configuration.md).
 
    * Ange **[!UICONTROL Sender number]** &#x200B; som du vill använda för din kommunikation.
+
+   * Välj **[!UICONTROL SMS Execution Field]** för att välja **[!UICONTROL Profile attribute]** som är kopplade till profilens telefonnummer.
 
 1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara meddelandeförinställningen som utkast och återuppta konfigurationen senare.
 

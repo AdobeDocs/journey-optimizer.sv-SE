@@ -6,10 +6,10 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 9c9598c0-6fb1-4e2f-b610-ccd1a80e516e
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: 8a68d1e6d498ef3055c703d4e73471ab6d7bff40
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -104,7 +104,6 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 
 1. Skapa en resa som börjar med det här evenemanget.
 1. Lägg till meddelandet på resan.
-1. Avsluta resan med en slutaktivitet.
 
    Eftersom du ännu inte har publicerat meddelandet kan du varken testa eller publicera resan.
 

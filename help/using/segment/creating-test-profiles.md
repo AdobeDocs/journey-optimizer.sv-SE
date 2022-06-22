@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: bd5e053a-69eb-463b-add3-8b9168c8e280
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: 8a68d1e6d498ef3055c703d4e73471ab6d7bff40
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1329'
 ht-degree: 2%
 
 ---
@@ -139,7 +139,7 @@ Din resa består av en **[!UICONTROL Read Segment]** och **[!UICONTROL Update Pr
 1. Lägg till en **[!UICONTROL Update Profile]** Åtgärdsaktivitet.
 1. Välj schema, **testProfiles** -fältet, datauppsättningen och ange värdet till **True**. Om du vill göra det här går du till **[!UICONTROL VALUE]** klickar du på **Ritstift** ikon till höger, välj **[!UICONTROL Advanced mode]** och ange **true**.
    ![](assets/test-profiles-26.png)
-1. Lägg till en **End** aktivitet och klicka **[!UICONTROL Publish]**.
+1. Klicka på **[!UICONTROL Publish]**.
 1. I **[!UICONTROL Segments]** kontrollerar du att profilerna har uppdaterats korrekt.
    ![](assets/test-profiles-28.png)
 

@@ -4,10 +4,10 @@ description: Lär dig hur du konfigurerar miljön för att skicka push-meddeland
 role: Admin
 level: Intermediate
 exl-id: 7099d44e-5d5d-4eef-9477-f68f4eaa1983
-source-git-commit: a6fabce744cb85c447327b6ceb809bf399d4b610
+source-git-commit: 8a68d1e6d498ef3055c703d4e73471ab6d7bff40
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -334,8 +334,6 @@ Din aktivitet har skapats och kan nu användas på en resa.
 1. Från **[!UICONTROL Actions]** nedrullningsbar meny, dra och släppa **[!UICONTROL Message]** till er resa.
 
 1. Markera ett tidigare skapat meddelande. Mer information om hur du skapar push-meddelanden finns i [page](../messages/get-started-content.md).
-
-1. Dra och släpp en **[!UICONTROL End]** till er resa.
 
 1. Klicka på **[!UICONTROL Test]** växla för att börja testa dina push-meddelanden och klicka **[!UICONTROL Trigger an event]**.
 

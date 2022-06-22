@@ -5,13 +5,11 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-hide: true
-hidefromtoc: true
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: 5bb7df1b02712da3b496aa92be30d4ea02750c39
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 5%
+source-wordcount: '220'
+ht-degree: 6%
 
 ---
 
@@ -22,10 +20,9 @@ ht-degree: 5%
 >title="SMS-skapande"
 >abstract="Lägg till ditt textmeddelande och börja personalisera det med Uttrycksredigeraren."
 
-
->[!CAUTION]
+>[!NOTE]
 >
-> SMS-kanalen är för närvarande tillgänglig i ett tidigt skede och endast för utvalda användare. Om du vill använda den här funktionen kontaktar du din kontoansvarige på Adobe.
+>Reglerna kräver att SMS-mottagare kan svara med nyckelord för deltagande och avanmälan. Adobe Journey Optimizer bearbetar automatiskt följande nyckelord: Starta, Stoppa och Stoppa.
 
 En gång [skapade ett meddelande](get-started-content.md), använder du **[!UICONTROL SMS]** för att definiera inställningar och innehåll för SMS-kanalen.
 
@@ -56,5 +53,6 @@ Ditt SMS-meddelande kan nu användas under en resa. [Lär dig skapa resor](../bu
 **Relaterade ämnen**
 
 * [Konfigurera SMS-kanal](../configuration/sms-configuration.md)
+* [SMS-rapport](../reports/journey-global-report.md#sms-global)
 * [Skapa ett nytt meddelande](get-started-content.md)
 * [Lägg till ett meddelande i en resa](../building-journeys/journeys-message.md)

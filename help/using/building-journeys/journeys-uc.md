@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: a1bbfcee-2235-4820-a391-d5d35f499cb0
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 8a68d1e6d498ef3055c703d4e73471ab6d7bff40
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -120,8 +120,6 @@ Se detta [section](../segment/about-segments.md) om du vill lära dig att design
 1. Koppla de tre sökvägarna till inköpshändelsen som skapades tidigare. Händelsen utlöses när en person gör ett köp.
 
 1. Efter händelsen släpper du en **Meddelande** och välj e-postmeddelandet&quot;Tack&quot;.
-
-1. Lägg till en **End** aktivitet.
 
 ## Testa och publicera resan
 

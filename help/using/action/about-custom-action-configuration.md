@@ -7,9 +7,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: bea7f6b9352103bee641b18b779bc3269b9657e2
+source-git-commit: 8a68d1e6d498ef3055c703d4e73471ab6d7bff40
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '951'
 ht-degree: 4%
 
 ---
@@ -120,7 +120,7 @@ I **[!UICONTROL Action parameters]** klistra in ett exempel på JSON-nyttolasten
 
 >[!NOTE]
 >
->Fältnamn i nyttolasten får inte innehålla &quot;.&quot; tecken. De kan inte börja med tecknet &quot;$&quot;.
+>Nyttolastexemplet får inte innehålla null-värden. Fältnamn i nyttolasten får inte innehålla &quot;.&quot; tecken. De kan inte börja med tecknet &quot;$&quot;.
 
 Du kan definiera parametertypen (t.ex.: sträng, heltal osv.).
 

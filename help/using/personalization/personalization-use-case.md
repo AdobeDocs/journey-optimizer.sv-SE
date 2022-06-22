@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 7d9c3d31-af57-4f41-aa23-6efa5b785260
-source-git-commit: 0ca491315e214e3c12bec11a93da1a2b98b493b6
+source-git-commit: 8a68d1e6d498ef3055c703d4e73471ab6d7bff40
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ I detta fall krävs följande krav:
 
    ![](assets/perso-uc4.png)
 
-1. Lägg till ditt tävlingsbidrag, en **Meddelande** och **End** aktivitet.
+1. Lägg till ditt tävlingsbidrag och en **Meddelande** aktivitet.
 
    ![](assets/perso-uc5.png)
 

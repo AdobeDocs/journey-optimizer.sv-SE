@@ -6,10 +6,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 169ad138ea27b9049698d8d3bfa8a0817ed39fee
+source-git-commit: 8f089e885098917d2ebf455b807ac5e6da020190
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -163,10 +163,15 @@ Läs mer om återförsök i [det här avsnittet](retries.md).
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_utm"
->title="URL-spårningsparametrar"
->abstract="Använd det här avsnittet om du automatiskt vill lägga till spårningsparametrar till kampanj-URL:erna som finns i ditt e-postinnehåll."
+>title="Definiera parametrar för URL-spårning"
+>abstract="Använd det här avsnittet om du automatiskt vill lägga till spårningsparametrar till de URL:er som finns i ditt e-postinnehåll. Den här funktionen är valfri.  "
 
-Du kan använda **[!UICONTROL URL Tracking Parameters]** för att mäta effektiviteten i era marknadsföringssatsningar över olika kanaler. Den här funktionen är valfri.  
+>[!CONTEXTUALHELP]
+>id="ajo_admin_preset_url_preview"
+>title="Förhandsgranska parametrar för URL-spårning"
+>abstract="Granska hur spårningsparametrar läggs till i de URL:er som finns i ditt e-postinnehåll."
+
+Du kan använda **[!UICONTROL URL tracking parameters]** för att mäta effektiviteten i era marknadsföringssatsningar över olika kanaler. Den här funktionen är valfri.  
 
 Parametrarna som definieras i det här avsnittet läggs till i slutet av de URL:er som ingår i e-postmeddelandeinnehållet. Du kan sedan hämta parametrarna i webbanalysverktyg som Adobe Analytics eller Google Analytics och skapa olika resultatrapporter.
 
@@ -174,8 +179,9 @@ Parametrarna som definieras i det här avsnittet läggs till i slutet av de URL:
 
 Tre parametrar för URL-spårning fylls i automatiskt som exempel när du skapar en meddelandeförinställning. Du kan redigera dessa och lägga till upp till 10 spårningsparametrar med **[!UICONTROL Add new parameter]** -knappen.
 
-Om du vill konfigurera en URL-spårningsparameter kan du ange önskade värden direkt i dialogrutan **[!UICONTROL Name]** och **[!UICONTROL Value]** eller välj från en lista med fördefinierade värden genom att navigera till följande objekt:
+Om du vill konfigurera en URL-spårningsparameter kan du ange önskade värden direkt i dialogrutan **[!UICONTROL Name]** och **[!UICONTROL Value]** fält.
 
+Du kan också välja från en lista med fördefinierade värden genom att navigera till följande objekt:
 * Reseattribut: **Käll-ID**, **Källnamn**, **Källversions-ID**
 * Åtgärdsattribut: **Åtgärds-ID**, **Åtgärdsnamn**
 * Offer decisioning-attribut: **Erbjudande-ID**, **Namn på erbjudande**
@@ -186,6 +192,10 @@ Om du vill konfigurera en URL-spårningsparameter kan du ange önskade värden d
 >
 >Välj ingen mapp: Kontrollera att du bläddrar till den mapp som behövs och välj ett profilattribut som ska användas som spårningsparametervärde.
 
+<!--or edit it using the Expression Editor. Learn more on [personalization](../../personalization/personalize.md#use-expression-editor). Select the contextual attribute of your choice.
+
+You can drag and drop the parameters to reorder them.-->
+
 Nedan finns exempel på Adobe Analytics- och Google Analytics-kompatibla URL:er.
 
 * Adobe Analytics-kompatibel URL: `www.YourLandingURL.com?cid=email_AJO_{{context.system.source.id}}_image_{{context.system.source.name}}`
@@ -195,3 +205,7 @@ Nedan finns exempel på Adobe Analytics- och Google Analytics-kompatibla URL:er.
 >[!NOTE]
 >
 >Du kan kombinera textvärden och välja fördefinierade värden. Varje **[!UICONTROL Value]** fält kan innehålla upp till 255 tecken totalt.
+
+Du kan dynamiskt förhandsgranska den resulterande spårnings-URL:en. Varje gång du lägger till, redigerar eller tar bort en parameter uppdateras förhandsvisningen automatiskt.
+
+![](assets/preset-url-tracking-preview.png)
