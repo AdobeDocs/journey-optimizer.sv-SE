@@ -6,9 +6,9 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 1ed01a6b-5e42-47c8-a436-bdb388f50b4e
-source-git-commit: c41bc43643bac4d8715469a18d6908846ddd6bf7
+source-git-commit: 9aa8b8c33eae6fd595643c5fefb4b4ea46ae7b73
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '930'
 ht-degree: 1%
 
 ---
@@ -107,7 +107,7 @@ curl -X POST 'https://platform.adobe.io/data/core/ode/0948b1c5-fff8-3b76-ba17-90
 | `xdm:itemCount` | Det här är ett valfritt fält som visar antalet objekt, t.ex. alternativ som begärts för beslutsomfånget. Som standard returnerar API ett alternativ per omfång, men du kan uttryckligen be om fler alternativ genom att ange det här fältet. Minst 1 och högst 30 alternativ kan begäras per omfång. | `1` |
 | `xdm:includeContent` | Detta är ett valfritt fält och är `false` som standard. If `true`, ingår erbjudandeinnehållet i beslutshändelserna för datauppsättningen. | `false` |
 
-Se [Beslutsledningens dokumentation](../../get-started/starting-offer-decisioning.md) om du vill ha en översikt över de viktigaste begreppen och egenskaperna.
+Se [Beslutsledningens dokumentation](../../get-started/starting-offer-decisioning.md) för en översikt över de viktigaste begreppen och egenskaperna.
 
 **Svar**
 
@@ -181,13 +181,23 @@ curl -X GET 'https://platform.adobe.io/data/core/ode/0948b1c5-fff8-3b76-ba17-909
 
 ## Tjänstnivåer {#service-levels}
 
-Sluttiden för varje gruppbeslut är den tid som arbetsbelastningen skapas fram till den tidpunkt då beslutsresultatet är tillgängligt i utdatauppsättningen. Segmentstorleken i POSTENS nyttolast är huvudfaktorn som påverkar batchbeslutstiden från början till slut.  Nedan visas några observationer för olika segmentstorlekar:
+Sluttiden för varje satsbeslut är den tid som förflyter från det att arbetsbelastningen skapas till den tidpunkt då beslutsresultatet blir tillgängligt i utdatauppsättningen. Segmentstorleken i POSTENS nyttolast är huvudfaktorn som påverkar batchbeslutstiden från början till slut. Om det valbara erbjudandet har ett globalt frekvenstak aktiverat tar batchbeslutet ytterligare tid att slutföra. Nedan visas några approximationer av total bearbetningstid för respektive segmentstorlek, både med och utan frekvensbegränsning för giltiga erbjudanden:
+
+Med frekvensbegränsning aktiverad för berättigade erbjudanden:
+
+| Segmentstorlek | Tid för hela processen |
+|--------------|----------------------------|
+| 10 000 profiler eller mindre | 7 minuter |
+| 1 miljon profiler eller mindre | 30 minuter |
+| 15 miljoner profiler eller mindre | 50 minuter |
+
+Utan frekvensbegränsning för berättigade erbjudanden:
 
 | Segmentstorlek | Tid för hela processen |
 |--------------|----------------------------|
 | 10 000 profiler eller mindre | 6 minuter |
-| 1 miljon profiler eller mindre | 10 minuter |
-| 15 miljoner profiler eller mindre | 75 minuter |
+| 1 miljon profiler eller mindre | 8 minuter |
+| 15 miljoner profiler eller mindre | 16 minuter |
 
 ## Begränsningar {#limitations}
 
