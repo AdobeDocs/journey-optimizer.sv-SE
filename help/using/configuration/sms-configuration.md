@@ -4,7 +4,7 @@ description: Lär dig hur du konfigurerar miljön för att skicka SMS-meddelande
 role: Admin
 level: Intermediate
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
-source-git-commit: e6924d1bffca7f56f2e5020a0af429b0f2b1c811
+source-git-commit: 47b1c2832f82a5c168cd03f1d1b43a9223c945b3
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 1%
@@ -70,7 +70,7 @@ Så här skapar du en meddelandeförinställning:
 
    * Välj **[!UICONTROL SMS configuration]** för att associera med förinställningen.
 
-      Mer information om hur du konfigurerar miljön för att skicka SMS-meddelanden finns i [det här avsnittet](sms-configuration.md).
+      Mer information om hur du konfigurerar miljön för att skicka SMS-meddelanden finns i [det här avsnittet](#create-api).
 
    * Ange **[!UICONTROL Sender number]** &#x200B; som du vill använda för din kommunikation.
 

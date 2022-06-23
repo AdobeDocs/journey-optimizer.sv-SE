@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e3781f79-7c8d-4512-b44f-835639b1471f
-source-git-commit: 5bb7df1b02712da3b496aa92be30d4ea02750c39
+source-git-commit: 47b1c2832f82a5c168cd03f1d1b43a9223c945b3
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,7 @@ Resan **[!UICONTROL Live report]** visas med följande flikar:
 * [Resa](#journey-live)
 * [E-post](#email-live)
 * [Push](#push-live)
+* [SMS](#sms-live)
 
 Resan **[!UICONTROL Live report]** är uppdelat i olika widgetar som detaljerat beskriver hur framgångsrik och felfri din resa är. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](live-report.md#modify-dashboard).
 

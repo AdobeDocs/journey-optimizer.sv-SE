@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 38addfd8b2f81991616ae93b6268fa1415fe80d2
+source-git-commit: 47b1c2832f82a5c168cd03f1d1b43a9223c945b3
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 4%
@@ -57,7 +57,6 @@ Om du vill se hur ditt SMS-meddelande visas på mobila enheter går du till **[!
 
 Mer information om detta finns i [det här avsnittet](../design/preview.md).
 
-
 ## Publicera ditt SMS {#sms-publish}
 
 När meddelandet är klart kan du publicera det för att göra det tillgängligt för körning med **[!UICONTROL Publish]** -knappen. Den här åtgärden publicerar den nya versionen av meddelandet som ska användas för nästa körning på dina resor.
@@ -69,7 +68,6 @@ Ditt SMS-meddelande kan nu användas under en resa. [Lär dig skapa resor](../bu
 För alla marknadsföringsmeddelanden måste SMS:et innehålla ett sätt för mottagarna att enkelt avbryta prenumerationen. När prenumerationen har avbrutits tas profilerna automatiskt bort från målgruppen för framtida marknadsföringsmeddelanden. Det är inte obligatoriskt att lägga till en länk för att avbryta prenumerationen för transaktionsmeddelanden.
 
 SMS-mottagare kan svara med nyckelord för deltagande och avanmälan. I enlighet med branschens standarder och bestämmelser bearbetar Adobe Journey Optimizer automatiskt följande nyckelord i inkommande meddelanden: STARTA, STOPPA OCH AVSTOPPA. Dessa nyckelord utlöser automatiska standardsvar från SMS-providern.
-
 
 **Relaterade ämnen**
 

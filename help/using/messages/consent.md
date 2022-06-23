@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c5bae757-a109-45f8-bf8d-182044a73cca
-source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
+source-git-commit: 47b1c2832f82a5c168cd03f1d1b43a9223c945b3
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1314'
 ht-degree: 1%
 
 ---
@@ -210,3 +210,10 @@ Beroende på e-postklienten kan du klicka på länken för att avbryta prenumera
 Push-mottagare kan avbeställa prenumerationen via sina enheter själva.
 
 När du till exempel hämtar eller använder programmet kan de välja att stoppa meddelanden. På samma sätt kan de ändra meddelandeinställningarna via det mobila operativsystemet.
+
+## Hantering av SMS-avanmälan {#sms-opt-out-management}
+
+I enlighet med branschens standarder och bestämmelser kan SMS-mottagare svara med nyckelord för deltagande och avanmälan.
+Adobe Journey Optimizer bearbetar automatiskt följande nyckelord i inkommande meddelanden: STARTA, STOPPA OCH AVSTOPPA. Dessa nyckelord utlöser automatiska standardsvar från SMS-providern.
+
+Mer information om SMS-avanmälan finns i [page](../messages/create-sms.md#opt-in-and-opt-out).
