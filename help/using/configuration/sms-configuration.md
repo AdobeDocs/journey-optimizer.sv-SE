@@ -4,9 +4,9 @@ description: Lär dig hur du konfigurerar miljön för att skicka SMS-meddelande
 role: Admin
 level: Intermediate
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
-source-git-commit: 67fcddc77ad5493905a0f1894a0cf497b0bfa2f9
+source-git-commit: e6924d1bffca7f56f2e5020a0af429b0f2b1c811
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '404'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 1%
 # Konfigurera SMS-kanal {#sms-configuration}
 
 [!DNL Journey Optimizer] kan ni skapa resor och skicka meddelanden till riktade målgrupper.
+
+Konfigurera instansen innan du skickar SMS. Du måste [integrera providerinställningarna](#create-api) med Journey Optimizer och [skapa en SMS-förinställning](#message-preset-sms). Dessa steg måste utföras av en [Adobe Journey Optimizer systemadministratör](../start/path/administrator.md).
 
 >[!AVAILABILITY]
 >

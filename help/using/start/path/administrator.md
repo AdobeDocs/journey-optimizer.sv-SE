@@ -3,9 +3,9 @@ title: Journey Optimizer Get Started for System Admin
 description: Som systemadministratör får du lära dig mer om hur du arbetar med Journey Optimizer
 level: Intermediate
 exl-id: 24f85ced-aa45-493f-b2c4-7c7b58351b38
-source-git-commit: 0ca491315e214e3c12bec11a93da1a2b98b493b6
+source-git-commit: e6924d1bffca7f56f2e5020a0af429b0f2b1c811
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '719'
 ht-degree: 2%
 
 ---
@@ -49,6 +49,8 @@ Följ stegen nedan:
    * Definiera **inställningar för push-meddelanden** i båda [!DNL Adobe Experience Platform] och [!DNL Adobe Experience Platform Launch]. [Läs mer](../../configuration/push-gs.md)
 
    * Skapa **meddelandeförinställningar** för att konfigurera alla tekniska parametrar som krävs för e-post och push-meddelanden. [Läs mer](../../configuration/message-presets.md)
+
+   * Konfigurera **SMS-kanal** för att konfigurera alla tekniska parametrar som krävs för SMS. [Läs mer](../../configuration/sms-configuration.md)
 
    * Hantera antalet dagar som **återförsök** utförs innan e-postadresser skickas till listan. [Läs mer](../../configuration/manage-suppression-list.md)
 

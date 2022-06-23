@@ -6,16 +6,16 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: f2c2a360-a4b2-4416-bbd0-e27dd014e4ac
-source-git-commit: f50617dc5ea07d01d1f7ec1ab3f9790557dcd957
+source-git-commit: 38addfd8b2f81991616ae93b6268fa1415fe80d2
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1018'
 ht-degree: 0%
 
 ---
 
 # Förhandsgranska och testa dina meddelanden{#preview-and-proof}
 
-När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du infogade [personaliserat innehåll](../personalization/personalize.md)kommer du att kunna kontrollera hur det här innehållet visas i meddelandet, med hjälp av testprofildata.
+När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du infogade [personaliserat innehåll](../personalization/personalize.md)kan du kontrollera hur det här innehållet visas i meddelandet och dra nytta av testprofildata.
 
 Om du vill identifiera eventuella fel i e-postinnehåll eller personaliseringsinställningar skickar du korrektur för att testa profiler. Ett korrektur ska skickas varje gång en ändring görs för att validera det senaste innehållet.
 

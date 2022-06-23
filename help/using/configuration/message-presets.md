@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: a485c58366f0690fb2515139658224d59468a24f
+source-git-commit: e6924d1bffca7f56f2e5020a0af429b0f2b1c811
 workflow-type: tm+mt
-source-wordcount: '1490'
+source-wordcount: '1495'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ Så här skapar du en meddelandeförinställning:
 
 1. Konfigurera **push-meddelande** inställningar. [Läs mer](#configure-push-settings)
 
-   <!--Configure SMS settings. [Learn more](#configure-sms-settings) -->
+1. Konfigurera **SMS** inställningar. [Läs mer](sms-configuration.md)
 
 1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara meddelandeförinställningen som utkast och återuppta konfigurationen senare.
 
