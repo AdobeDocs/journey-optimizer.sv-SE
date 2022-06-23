@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 5bb7df1b02712da3b496aa92be30d4ea02750c39
+source-git-commit: 067453ee3c19c7f269b4b1791ead8b5421adf95b
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 6%
+source-wordcount: '262'
+ht-degree: 5%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->Reglerna kräver att SMS-mottagare kan svara med nyckelord för deltagande och avanmälan. Adobe Journey Optimizer bearbetar automatiskt följande nyckelord: Starta, Stoppa och Stoppa.
+>SMS-kanalen är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
 
 En gång [skapade ett meddelande](get-started-content.md), använder du **[!UICONTROL SMS]** för att definiera inställningar och innehåll för SMS-kanalen.
 
@@ -49,6 +49,10 @@ Så här börjar du personalisera SMS-meddelandet:
 1. När meddelandet är klart kan du publicera det för att göra det tillgängligt för körning med **[!UICONTROL Publish]** -knappen. Den här åtgärden kommer att publicera den nya versionen av meddelandet som ska användas för nästa körning på dina resor.
 
 Ditt SMS-meddelande kan nu användas under en resa. [Lär dig skapa resor](../building-journeys/journey-gs.md).
+
+## Anmäl dig och avanmäl dig{#sms-opt-in-out}
+
+SMS-mottagare kan svara med nyckelord för deltagande och avanmälan. I enlighet med branschens standarder och bestämmelser bearbetar Adobe Journey Optimizer automatiskt följande nyckelord i inkommande meddelanden: STARTA, STOPPA OCH AVSTOPPA. Dessa nyckelord utlöser automatiska standardsvar från SMS-providern.
 
 **Relaterade ämnen**
 
