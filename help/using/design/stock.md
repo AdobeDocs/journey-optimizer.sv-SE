@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 0715f65f-04bd-4dc2-a152-98111f4c42e6
-source-git-commit: fb56b69a74aa8c727bf75f1c7988ece845f43b5f
+source-git-commit: c5230359d91416f16f51899e5a86b3926fb721f6
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 1%
@@ -48,6 +48,28 @@ Lägga till bilder från [!DNL Adobe Stock] Följ stegen nedan om du vill visa d
    Om bilden du valde inte är licensierad måste du [skaffa licensen](#license-stock-image).
 
 
+## Söka efter liknande foton {#similar-stock-image}
+
+Du kan ersätta en befintlig bild i ditt e-postinnehåll med ett foto från [!DNL Adobe Stock]. Observera att det här alternativet är tillgängligt för alla bilder: licensierade/olicensierade Stock-bilder och bilder från din Assets-mapp.
+
+Följ stegen nedan om du vill bläddra bland liknande foton:
+
+1. Markera bilden som ska ersättas.
+1. Klicka på **[!UICONTROL Find similar Stock photos]** knapp för att visa resurser i [!DNL Adobe Stock] som matchar bildens innehåll, färg och komposition.
+
+   ![](assets/stock-similar.png)
+
+1. Markera den valda bilden och klicka på **[!UICONTROL Save]**.
+
+   ![](assets/stock-similar-results.png)
+
+   Om bilden du valde inte är licensierad måste du [skaffa licensen](#license-stock-image).
+
+1. Anpassa bilden, om det behövs, med **[!UICONTROL Components settings]** -menyn. [Läs mer om komponentinställningar](content-components.md)
+
+När ditt meddelande har skapats och anpassats kan du publicera det så att det blir tillgängligt för exekvering. [Läs mer](../messages/publish-manage-message.md)
+
+
 ## Hämta licensen från [!DNL Adobe Stock] {#license-stock-image}
 
 Om din bild redan är licensierad visas den av ![](assets/stock_10.png) ikon. Annars måste du licensiera den.
@@ -76,28 +98,6 @@ Följ stegen nedan för att licensiera och hämta din bild:
    ![](assets/stock_6.png)
 
 1. Välj i vilken mapp resursen ska lagras. Mer information om [!DNL Assets Essentials], se [page](assets-essentials.md#get-started-assets-essentials).
-
-## Söka efter liknande foton {#similar-stock-image}
-
-Du kan ersätta en befintlig bild i ditt e-postinnehåll med ett foto från [!DNL Adobe Stock]. Observera att det här alternativet är tillgängligt för alla bilder: licensierade/olicensierade Stock-bilder och bilder från din Assets-mapp.
-
-Följ stegen nedan om du vill bläddra bland liknande foton:
-
-1. Markera bilden som ska ersättas.
-1. Klicka på **[!UICONTROL Find similar Stock photos]** knapp för att visa resurser i [!DNL Adobe Stock] som matchar bildens innehåll, färg och komposition.
-
-   ![](assets/stock-similar.png)
-
-1. Markera den valda bilden och klicka på **[!UICONTROL Save]**.
-
-   ![](assets/stock-similar-results.png)
-
-   Om bilden du valde inte är licensierad måste du [skaffa licensen](#license-stock-image).
-
-1. Anpassa bilden, om det behövs, med **[!UICONTROL Components settings]** -menyn. [Läs mer om komponentinställningar](content-components.md)
-
-När ditt meddelande har skapats och anpassats kan du publicera det så att det blir tillgängligt för exekvering. [Läs mer](../messages/publish-manage-message.md)
-
 
 ### Relaterade ämnen{#stock-related-topics}
 
