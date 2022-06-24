@@ -2,9 +2,9 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 7483b1e7a37b1a8a757ce5cc90a60a829a580389
+source-git-commit: 33b079e0ee1d81e06de24f7170a5f29e10df657b
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1568'
 ht-degree: 21%
 
 ---
@@ -26,6 +26,8 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Listan med Adobe Journey Optimizer datauppsättningar har lagts till med frågeexempel. [Läs mer](../start/datasets-query-examples.md)
 * Sidan Tillåtelselista har flyttats till avsnittet Konfiguration. [Läs mer](../configuration/allow-list.md)
 * Sidan Suppression List har uppdaterats. [Läs mer](../configuration/manage-suppression-list.md)
+* Länken till skyddsförslag och statiska gränser för beslutshantering har lagts till. [Läs mer](../start/guardrails.md)
+
 
 ## Maj 2022 {#may-2022}
 

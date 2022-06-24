@@ -6,14 +6,14 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: d4fde14b-e2da-40bf-a387-ee9f2f7ff204
-source-git-commit: 97bb3497d3cdab53511610da600d0e646572ed77
+source-git-commit: 80a5edec92377753e6bfd96699591b1a87e25248
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '477'
 ht-degree: 2%
 
 ---
 
-# Skapa och hantera resurser {#experience-manager-assets}
+# Skapa och hantera resurser med [!DNL Assets Essentials]{#experience-manager-assets}
 
 ## Kom igång med [!DNL Assets Essentials] {#get-started-assets-essentials}
 
