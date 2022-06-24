@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 0715f65f-04bd-4dc2-a152-98111f4c42e6
-source-git-commit: d172be602766a22c51018376d81de363c0ffe54b
+source-git-commit: d953fc78ffdc5c84823a903e0b4032b45f45bfcd
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '570'
 ht-degree: 1%
 
 ---
@@ -21,11 +21,11 @@ The [!DNL Adobe Stock] och [!DNL Adobe Journey Optimizer] Integrationspluginen f
 
 [Adobe Stock](https://helpx.adobe.com/stock/get-started.html){target=&quot;_blank&quot;} ger tillgång till miljontals utvalda och royaltyfria foton, videor, illustrationer och vektorbilder av hög kvalitet. Du kan välja att köpa ett kreditpaket för att licensiera mediefiler eller bara köpa en Standard- eller Extended-licens för den mediefil du behöver. Adobe Stock erbjuder också en kostnadsfri samling resurser.
 
-Med [!DNL Adobe Journey Optimizer]kan du överföra bilder till e-postmeddelanden direkt från [!DNL Adobe Stock] och lägga till den i resursmappen. The **[!UICONTROL Find Similar Image]** kan du söka efter bilder som matchar innehållet, färgen och kompositionen för resursen som används i leveransen.
+Med [!DNL Adobe Journey Optimizer]kan du överföra bilder till e-postmeddelanden direkt från [!DNL Adobe Stock] och lägga till den i resursmappen med **[!UICONTROL Find Adobe Stock photos]** alternativ. Dessutom är **[!UICONTROL Find Similar Image]** kan du söka efter bilder som matchar innehållet, färgen och kompositionen för resursen som används i leveransen.
 
 ## Behörigheter{#stock-permissions}
 
-The **[!UICONTROL Find Adobe Stock photos]** är tillgängligt för användare som har tillgång till en AEM Assets Essentials-produktprofil.
+The **[!UICONTROL Find Adobe Stock photos]** och **[!UICONTROL Find Similar Image]** är tillgängliga för användare med tillgång till en AEM Assets Essentials-produktprofil.
 
 Mer information finns i [Grundläggande dokumentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html#add-users-to-essentials){target=&quot;_blank&quot;}.
 
