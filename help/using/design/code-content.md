@@ -5,16 +5,17 @@ feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+exl-id: 5fb79300-08c6-4c06-a77c-d0420aafca31
+source-git-commit: e152099f81305c4f045ce7195eea810109eb2f2e
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '158'
 ht-degree: 13%
 
 ---
 
 # Koda eget innehåll {#code-content}
 
-Använd **[!UICONTROL Code your own]** läge för att importera råformat HTML och/eller koda ditt e-postinnehåll. Den här metoden kräver kunskaper i HTML.
+Använd **[!UICONTROL Code your own]** läge för att importera obearbetat HTML och/eller koda ditt e-postinnehåll. Den här metoden kräver kunskaper i HTML.
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 

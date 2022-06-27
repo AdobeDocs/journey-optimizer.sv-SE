@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: bd30bbd6ac1230bdb02e1b5a4f9eba19c1fa2ccc
+source-git-commit: e152099f81305c4f045ce7195eea810109eb2f2e
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '375'
 ht-degree: 10%
 
 ---
@@ -136,11 +136,12 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 
 * **Stöd för HTML och JSON-filer** - Nu kan du dra och släppa externa HTML- och JSON-filer från Adobe Experience Cloud resursbibliotek till erbjudanderepresentationsinnehållet. [Läs mer](../offers/offer-library/add-representations.md#html-json)
 
+
+**E-post**
+
+* **Spara som mall** - Du kan nu spara ett e-postinnehåll som en mall och återanvända det när du skapar andra meddelanden. [Läs mer](../design/email-templates.md)
+
 <!--
-**Email**
-
-* **Save as template** - You can now save an email content as a template and reuse it when creating other messages.
-
 **Journeys**
 
 * **Ending a journey** - In the journey canvas, the **End** activity has been removed from the palette. End tags are now added by default at the end of each path and cannot be removed. This improvement allows better reporting of where a customer dropped out of the journey, without any action from the user.
