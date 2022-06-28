@@ -5,9 +5,10 @@ feature: Application Settings
 topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: 4f6d018d5e5d127e5eb26b2d1b59dc0a248db45b
+exl-id: 186a5044-80d5-4633-a7a7-133e155c5e9f
+source-git-commit: 8fe960e490722878dfd6dce52a88c3a9ccb037c2
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1088'
 ht-degree: 1%
 
 ---
@@ -17,13 +18,13 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_bcc"
 >title="Definiera en e-postadress för hemlig kopia"
->abstract="Du kan behålla en kopia av skickade e-postmeddelanden genom att skicka dem till en inkorg för hemlig kopia. Ange den e-postadress du vill använda så att alla e-postmeddelanden som skickas är blinda och kopieras till den här BCC-adressen. Den här funktionen är valfri.  "
+>abstract="Du kan behålla en kopia av skickade e-postmeddelanden genom att skicka dem till en inkorg för hemlig kopia. Ange den e-postadress du vill använda så att alla e-postmeddelanden som skickas är blinda och kopieras till den här BCC-adressen. Observera att BCC-adressdomänen inte ska vara samma som alla underdomäner som delegerats till Adobe. Den här funktionen är valfri.  "
 
 Du kan skicka en identisk kopia (eller en blind kopia) av ett e-postmeddelande som skickats av [!DNL Journey Optimizer] till en BCC-inkorg. Med den här valfria funktionen kan du behålla kopior av e-postmeddelanden som du skickar till användarna för att uppfylla regelkrav och/eller arkivera. Detta visas inte för leveransmottagarna.
 
 ## Aktivera BCC-e-post {#enable-bcc}
 
-Aktivera **[!UICONTROL BCC email]** anger du den e-postadress du vill använda i det dedikerade fältet. Du kan ange en extern adress i rätt format, förutom en e-postadress som har definierats på den delegerade underdomänen. Om den delegerade underdomänen till exempel är *marketing.luma.com*, alla adresser som *abc@marketing.luma.com* är förbjudet.
+Aktivera **[!UICONTROL BCC email]** anger du den e-postadress du vill använda i det dedikerade fältet. Du kan ange en extern adress i rätt format, förutom en e-postadress som har definierats för en underdomän som har delegerats till Adobe. Om du till exempel har delegerat *marketing.luma.com* subdomain to Adobe, any address like *abc@marketing.luma.com* är förbjudet.
 
 >[!NOTE]
 >

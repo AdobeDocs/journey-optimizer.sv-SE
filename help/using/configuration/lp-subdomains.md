@@ -3,9 +3,10 @@ title: Konfigurera underdomäner för landningssidor
 description: Lär dig konfigurera underdomäner för landningssidor med Journey Optimizer
 role: Admin
 level: Intermediate
-source-git-commit: a485c58366f0690fb2515139658224d59468a24f
+exl-id: dd1af8dc-3920-46cb-ae4d-a8f4d4c26e89
+source-git-commit: 8fe960e490722878dfd6dce52a88c3a9ccb037c2
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
@@ -58,6 +59,10 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 
    ![](assets/lp_prefix-and-subdomain.png)
 
+   Observera att du inte kan använda flera delegerade underdomäner för samma överordnade domän. Om till exempel marketing1.your.company.com redan har delegerats till Adobe för dina landningssidor, kommer du inte att kunna använda marketing2.yourCompany.com. Underdomäner på flera nivåer stöds emellertid för landningssidor, så du kan använda email.marketing1.your.com.
+
+   <!--For landing pages, multi-level subdomains are supported. For example, you can use 'email.marketing.yourcompany.com'.-->
+
    >[!CAUTION]
    >
    >Om du väljer en domän som delegerats till Adobe med [CNAME-metod](delegate-subdomain.md#cname-subdomain-delegation)måste du skapa DNS-posten på din värdplattform. För att generera DNS-posten är processen densamma som när du konfigurerar en ny underdomän för landningssida. Läs mer i [det här avsnittet](#lp-configure-new-subdomain).
@@ -99,7 +104,11 @@ Följ stegen nedan för att konfigurera en ny underdomän.
 
    Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.dincompany.com.
 
-   Underdomäner på flera nivåer, till exempel &#39;email.marketing.your.com&#39;, stöds för närvarande inte.
+   >[!NOTE]
+   >
+   >För landningssidor stöds underdomäner på flera nivåer. Du kan till exempel använda&quot;email.marketing.your.com&quot;.
+
+   <!--Journey Optimizer currently does not support multiple subdomains of the same parent domain for landing page configuration-->
 
 1. Posten som ska placeras i dina DNS-servrar visas. Kopiera den här posten eller hämta en CSV-fil och navigera sedan till din värdlösning för domänen för att generera den matchande DNS-posten.
 
