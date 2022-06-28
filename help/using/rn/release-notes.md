@@ -2,10 +2,10 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: e152099f81305c4f045ce7195eea810109eb2f2e
+source-git-commit: ffa1da19732f4c0bd5297e2d123140b9ba1b0103
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 10%
+source-wordcount: '369'
+ht-degree: 11%
 
 ---
 
@@ -30,8 +30,6 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 <tbody>
 <tr>
 <td>
-<p>Tillgänglighetsdatum: <b>27 juni</b></p>
-<p></p>
 <p>Nu kan du skapa, anpassa och skicka SMS i Journey Optimizer via en integrering med <b>Sinch</b> eller <b>Twilio</b>.</p>
 <img src="assets/do-not-localize/SMS.gif"/>
 <p>SMS-kanalen är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.</p>
@@ -51,8 +49,6 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 <tbody>
 <tr>
 <td>
-<p>Tillgänglighetsdatum: <b>27 juni</b></p>
-<p></p>
 <p>Integreringspluginen för Adobe Stock och Adobe Journey Optimizer Email Designer ger kunderna ett enkelt sätt att navigera, licensiera och spara bilder för användning i meddelandeframställning. </br> Den nya <b>Hitta liknande Stock-foton</b> kan du också söka efter Stock-foton som matchar innehållet, färgen och kompositionen för dina bilder. </p>
 <img src="assets/do-not-localize/stock-rn.gif"/>
 <p>Mer information finns i den <a href="../design/stock.md">detaljerade dokumentationen</a>.</p>

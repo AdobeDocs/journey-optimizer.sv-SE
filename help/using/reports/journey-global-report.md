@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e851646e-4cef-45e8-97c2-a8f4c9d2cc08
-source-git-commit: 47b1c2832f82a5c168cd03f1d1b43a9223c945b3
+source-git-commit: ffa1da19732f4c0bd5297e2d123140b9ba1b0103
 workflow-type: tm+mt
 source-wordcount: '1605'
 ht-degree: 0%
@@ -253,6 +253,8 @@ The **[!UICONTROL Tracking by platform]**, **[!UICONTROL Sending by platform]** 
 SMS **[!UICONTROL Global report]** är uppdelat i olika widgetar som detaljerat beskriver leveransens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](global-report.md#modify-dashboard).
 
 ## fliken SMS {#sms-global}
+
+![](assets/report_sms_global.png)
 
 The **[!UICONTROL SMS - Sending statistics]** tabellen visar hur framgångsrik leveransen är:
 

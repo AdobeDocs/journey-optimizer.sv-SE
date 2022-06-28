@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 2ebbcd7d-dcfc-4528-974d-6230fc0dca3d
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: ffa1da19732f4c0bd5297e2d123140b9ba1b0103
 workflow-type: tm+mt
-source-wordcount: '1403'
-ht-degree: 10%
+source-wordcount: '1423'
+ht-degree: 9%
 
 ---
 
@@ -93,6 +93,11 @@ I iOS-versionen kan du lägga till upp till fyra knappar. I Android-versionen ka
 ![](assets/push_buttons.png)
 
 ## Skicka ett tyst meddelande {#silent-notification}
+
+>[!CONTEXTUALHELP]
+>id="ajo_message_push_silent_notification"
+>title="Om tyst meddelande"
+>abstract="Skicka meddelanden utan att störa användaren. Meddelanden visas inte i meddelandecentret eller meddelandefältet."
 
 Ett tyst push-meddelande (eller bakgrundsmeddelande) är en dold instruktion som skickas till programmet. Den används till exempel för att meddela programmet om att nytt innehåll är tillgängligt eller för att initiera en nedladdning i bakgrunden.
 
