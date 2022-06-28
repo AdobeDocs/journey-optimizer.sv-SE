@@ -4,7 +4,7 @@ description: Lär dig konfigurera underdomäner för landningssidor med Journey 
 role: Admin
 level: Intermediate
 exl-id: dd1af8dc-3920-46cb-ae4d-a8f4d4c26e89
-source-git-commit: 8fe960e490722878dfd6dce52a88c3a9ccb037c2
+source-git-commit: 911df5b5b81c0e803c41e4e12817c4773d498b73
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 
    ![](assets/lp_prefix-and-subdomain.png)
 
-   Observera att du inte kan använda flera delegerade underdomäner för samma överordnade domän. Om till exempel marketing1.your.company.com redan har delegerats till Adobe för dina landningssidor, kommer du inte att kunna använda marketing2.yourCompany.com. Underdomäner på flera nivåer stöds emellertid för landningssidor, så du kan använda email.marketing1.your.com.
+   Observera att du inte kan använda flera delegerade underdomäner för samma överordnade domän. Om till exempel&quot;marketing1.your.company.com&quot; redan har delegerats till Adobe för dina landningssidor kommer du inte att kunna använda&quot;marketing2.your.company.com&quot;. Underdomäner på flera nivåer stöds emellertid för landningssidor, så du kan använda email.marketing1.your.com.
 
    <!--For landing pages, multi-level subdomains are supported. For example, you can use 'email.marketing.yourcompany.com'.-->
 
