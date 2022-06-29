@@ -2,10 +2,10 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: ffa1da19732f4c0bd5297e2d123140b9ba1b0103
+source-git-commit: 108a7aab025aa92fab59c26d0bf5bf5339b81bb3
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 11%
+source-wordcount: '447'
+ht-degree: 10%
 
 ---
 
@@ -92,22 +92,21 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 </tbody>
 </table>-->
 
-<!--table>
+<table>
 <thead>
 <tr>
-<th><strong>Copy objects between sandboxes</strong><br/></th>
+<th><strong>Kopiera objekt mellan sandlådor</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now re-create the experiences from a Journey Optimizer sandbox to another, for example from a non-production sandbox to a production sandbox. This new capability copies an entire Journey, including any objects the Journey depends on to run correctly, from one environment to another. In addition to Journeys, you can also copy other components, such as Offers, Messages, Schemas, Datasets, Data Sources, Events, and Actions.</p>
-<p>This feature is currently in beta version and only available to beta customers. To join the beta program, contact Adobe Customer Care.</p>
-<p>For more information, refer to the <a href="../building-journeys/read-segment.md#configuring-segment-trigger-activity">detailed documentation</a>.
+<p>Nu kan du återskapa upplevelser från en Journey Optimizer-sandlåda till en annan, till exempel från en icke-produktionssandlåda till en produktionssandlåda. Den nya funktionen kopierar en hel resa, inklusive alla objekt som resan är beroende av för att kunna köras korrekt, från en miljö till en annan. Förutom Resor kan du även kopiera andra komponenter, som erbjudanden, meddelanden, scheman, datauppsättningar, datakällor, händelser och åtgärder.</p>
+<p>Mer information finns i den <a href="../building-journeys/copy-to-sandbox.md">detaljerade dokumentationen</a>.
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
 
 <!--table>
 <thead>
