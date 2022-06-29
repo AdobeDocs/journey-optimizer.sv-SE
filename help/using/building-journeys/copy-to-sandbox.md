@@ -5,11 +5,9 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
-hidefromtoc: true
-source-git-commit: 4d211b9a0087526fe81d7b989195f21ceab42865
+source-git-commit: 6c9e4920f57a7f52cf52da706f309ef3a9f8f5fc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
@@ -80,7 +78,7 @@ Följande objekt kopieras:
 
 * Segment
 
-   Ett segment kan bara kopieras en gång från en sandlåda till en annan. Efterföljande begäranden om att kopiera segmentet misslyckas. När ett segment har kopierats går det inte att redigera det i målsandlådan.
+   Ett segment kan bara kopieras en gång från en sandlåda till en annan. När ett segment har kopierats går det inte att redigera det i målsandlådan.
 
 * Schema
 
@@ -103,4 +101,8 @@ Följande objekt kopieras:
    De åtgärder och åtgärdsdetaljer som används under resan kopieras.
 
 Förinställningar kopieras inte över. Systemet väljer automatiskt närmaste matchning i målsandlådan baserat på meddelandetyp och förinställningsnamn. Om det inte finns några förinställningar i målsandlådan misslyckas kopieringen av förinställningen. Det innebär att meddelandekopian inte fungerar eftersom ett meddelande kräver en förinställning för att kunna konfigureras. I det här fallet måste minst en förinställning skapas för den högra kanalen i meddelandet för att kopian ska fungera.
+
+För scheman, sammanfogningsprinciper och segment refereras bara de objekten till andra gången de kopieras. De behandlas som objekt som redan finns och kommer att kopieras igen. Det innebär att dessa objekt bara kan kopieras en gång.
+
+Det tar fem minuter innan Adobe Journey Optimizer kan referera till scheman, sammanfogningsprinciper och segment utan att ett fel visas på arbetsytan. Vänta i fem minuter så kommer dessa referenser att vara tillgängliga.
 
