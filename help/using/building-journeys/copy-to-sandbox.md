@@ -5,7 +5,7 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 6c9e4920f57a7f52cf52da706f309ef3a9f8f5fc
+source-git-commit: f75ed263fd8226a6b5f55bbb50f4aae17cbfe9d4
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 >title="Beroende objekt"
 >abstract="Det här är listan över associerade objekt som används under resan. I den här listan visas namn, objekttyp och internt Journey Optimizer-id."
 
-Med Journey Optimizer kan du kopiera en hel resa från en sandlåda till en annan. Du kan t.ex. kopiera en resa från sandlådemiljön på scenen till produktionssandlådan. Förutom själva resan kopierar Journey Optimizer även de flesta av de objekt som resan är beroende av: meddelanden, segment, förinställningar, scheman, händelser och åtgärder. Se [begränsningar](../event/about-events.md)
+Med Journey Optimizer kan du kopiera en hel resa från en sandlåda till en annan. Du kan t.ex. kopiera en resa från sandlådemiljön på scenen till produktionssandlådan. Förutom själva resan kopierar Journey Optimizer även de flesta av de objekt som resan är beroende av: meddelanden, segment, förinställningar, scheman, händelser och åtgärder. Se [begränsningar](../building-journeys/copy-to-sandbox.md#limitations)
 
 >[!CAUTION]
 >
