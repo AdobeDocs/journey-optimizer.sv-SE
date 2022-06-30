@@ -7,9 +7,9 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: b9fa6bff926eb8cee476fa53feb38ed783e048fc
+source-git-commit: 1e4c5ab80336238283df041fdb4d323005acd325
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '254'
 ht-degree: 2%
 
 ---
@@ -28,12 +28,11 @@ Med kampanjer kan ni leverera engångsinnehåll till ett visst segment med hjäl
 
 Till skillnad från resor, där åtgärder är utformade för att utföras i sekvens, kör kampanjer samtidigt, antingen direkt eller enligt ett angivet schema. Ni kan till exempel använda dem för att leverera kampanjerbjudanden, engagemangskampanjer, meddelanden, juridiska meddelanden eller policyuppdateringar.
 
-<!--Additionally, campaigns' content experiment feature allows you to test multiple variables of a delivery on populations samples, in order to define which treatment has the biggest impact on the targeted population.-->
-
-Lär dig hantera kampanjer &lt;!>—och innehållsexperiment&lt;>:
+Lär dig hur du arbetar med kampanjer:
 * [Skapa en kampanj](create-campaign.md)
 * [Ändra eller stoppa en kampanj](modify-stop-campaign.md)
-<!--* [Create a content experiment](content-experiment.md)-->
+* [Kampanjrapport](campaign-live-report.md)
+* [Global kampanjrapport](campaign-global-report.md)
 
 ## Åtkomst till kampanjer {#access}
 
