@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: e6924d1bffca7f56f2e5020a0af429b0f2b1c811
+source-git-commit: 492acb7c7474964bb27cd562db5cd4cb2ed42784
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1483'
 ht-degree: 1%
 
 ---
@@ -67,7 +67,7 @@ Så här skapar du en meddelandeförinställning:
 
 1. När meddelandeförinställningen har skapats visas den i listan med **[!UICONTROL Processing]** status.
 
-   Under det här steget kommer flera kontroller att utföras för att verifiera att den har konfigurerats korrekt. Bearbetningstiden är ungefär **48h-72h** och kan ta upp till **7-10 arbetsdagar**.
+   Under det här steget kommer flera kontroller att utföras för att verifiera att den har konfigurerats korrekt. Bearbetningstiden kan ta upp till **3 timmar**.
 
    Dessa kontroller omfattar konfigurations- och tekniska tester som utförs av Adobe-teamet:
 
@@ -217,7 +217,7 @@ Flera leveransåtgärder kommer att utföras för att kontrollera att förinstä
 >
 >Om du bara redigerar **[!UICONTROL Description]**, **[!UICONTROL Email type]** och/eller **[!UICONTROL Email retry parameters]** uppdateras uppdateringen omedelbart.
 
-Bearbetningstiden är ungefär **48h-72h** och kan ta upp till **7-10 arbetsdagar**. Läs mer om kontroller som utförts under valideringscykeln i [det här avsnittet](#create-message-preset).
+Bearbetningstiden kan ta upp till **3 timmar**. Läs mer om kontroller som utförts under valideringscykeln i [det här avsnittet](#create-message-preset).
 
 Om du redigerar en förinställning som redan var aktiv:
 

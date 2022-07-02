@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 606334c3-e3e6-41c1-a10e-63508a3ed747
-source-git-commit: a485c58366f0690fb2515139658224d59468a24f
+source-git-commit: b29ab43f56b64d5bf972a45036c639454b650099
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Så här redigerar du en IP-pool:
 Uppdateringen träder i kraft omedelbart eller asynkront, beroende på vilken IP-pool som är associerad med en [meddelandeförinställning](message-presets.md) eller inte:
 
 * Om IP-poolen är **not** som valts i en meddelandeförinställning uppdateras omedelbart (**[!UICONTROL Success]** status).
-* Om IP-poolen **är** som valts i en meddelandeförinställning kan uppdateringen ta upp till 7-10 arbetsdagar (**[!UICONTROL Processing]** status).
+* Om IP-poolen **är** som valts i en meddelandeförinställning kan uppdateringen ta upp till 3 timmar (**[!UICONTROL Processing]** status).
 
 >[!NOTE]
 >
