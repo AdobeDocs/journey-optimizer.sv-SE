@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: fedc0f70f336a9fa7917ad34a06e4d1845c1fdd4
+source-git-commit: ac3c49c16a2496b3d5bc9b803589644b69c6565c
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '487'
 ht-degree: 10%
 
 ---
@@ -149,9 +149,9 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 
 * **URL-parametrar för förhandsspårning** - När du konfigurerar en meddelandeförinställning och definierar parametrar för URL-spårning, visas nu en dynamisk förhandsgranskning av den resulterande spårnings-URL:en. [Läs mer](../configuration/email-settings.md#url-tracking)
 
-* **Skapa meddelandeförinställning** - Nu kan bearbetningstiden när du skapar en meddelandeförinställning ta upp till 3 timmar. [Läs mer](../configuration/message-presets.md#create-message-preset)
+* **Meddelandeförinställningsutgåva** - När du nu uppdaterar en meddelandeförinställning kan bearbetningstiden bara ta upp till 3 timmar. [Läs mer](../configuration/message-presets.md#edit-message-preset)
 
-* **IP-poolversion** - Bearbetningstiden för IP-pooluppdatering kan nu ta upp till 3 timmar. [Läs mer](../configuration/ip-pools.md#edit-ip-pool)
+* **IP-poolversion** - När du nu uppdaterar en IP-pool kan bearbetningstiden bara ta upp till 3 timmar. [Läs mer](../configuration/ip-pools.md#edit-ip-pool)
 
 <!--* **Personalize tracking URL parameters** - You can now use the Expression Editor to configure URL tracking parameters in your message presets. [Learn more](../configuration/email-settings.md#url-tracking)-->
 
