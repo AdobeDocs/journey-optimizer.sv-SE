@@ -2,9 +2,9 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: de71f321dfb85575269623e37cc4b18f70ebc358
+source-git-commit: 630b8ef5a140709161b24256083b2104be5b6121
 workflow-type: tm+mt
-source-wordcount: '1606'
+source-wordcount: '1632'
 ht-degree: 20%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 20%
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
 
+## Juli 2022 {#july-2022}
+
+* The **Skapa en meddelandeförinställning** -avsnittet har klargjorts och uppdaterats med länkar till sidan som beskriver hur SMS-kanalen konfigureras. [Läs mer](../configuration/message-presets.md#create-message-preset)
 
 ## Juni 2022 {#june-2022}
 
@@ -30,7 +33,6 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Tidsoptimering är nu tillgängligt för alla kunder. Betaversionen har tagits bort. [Läs mer](../building-journeys/journeys-message.md#send-time-optimization)
 
 
-
 ## Maj 2022 {#may-2022}
 
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version från maj 22 finns utförlig i dokumentationen. [Läs mer](release-notes.md)
@@ -41,7 +43,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * En anteckning om att metoden Delete inte stöds i anpassade åtgärder har lagts till. [Läs mer](../action/about-custom-action-configuration.md)
 * Länkar till instruktionsvideor har uppdaterats.
 * The [E-postkonfiguration](../configuration/about-subdomain-delegation.md), [Meddelandeförinställningar](../configuration/message-presets.md) och [Konfigurera landningssidor](../configuration/lp-subdomains.md) -avsnitten har omstrukturerats för att bli enklare att läsa.
-* The **URL-spårning** -avsnittet har uppdaterats och förbättrats med exempel. [Läs mer](../configuration/email-settings.md#url-tracking)
+* Avsnittet för URL-spårning har uppdaterats och förbättrats med exempel. [Läs mer](../configuration/email-settings.md#url-tracking)
 * Ett nytt underavsnitt om hur du konfigurerar en e-postadress för vidarebefordran har lagts till. Observera att du inte kan göra det via användargränssnittet. [Läs mer](../configuration/email-settings.md#forward-email)
 
 ## April 2022 {#april-2022}

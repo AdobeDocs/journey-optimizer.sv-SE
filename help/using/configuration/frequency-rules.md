@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: 76eb73e875cbdeb7b5821f0c63435cf96c532adc
+source-git-commit: 630b8ef5a140709161b24256083b2104be5b6121
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 0%
+source-wordcount: '883'
+ht-degree: 1%
 
 ---
 
@@ -24,6 +24,8 @@ För att göra detta kan du använda en frekvensregel som begränsar antalet med
 >[!NOTE]
 >
 >Reglerna för meddelandefrekvens skiljer sig från reglerna för avanmälningshantering, som gör det möjligt för användare att avbryta prenumerationen från att ta emot meddelanden från ett varumärke. [Läs mer](../messages/consent.md#opt-out-management)
+
+➡️ [Upptäck den här funktionen i en video](#video)
 
 ## Åtkomstregler {#access-rules}
 
@@ -188,3 +190,9 @@ I det här scenariot finns en enskild profil:
 >[!NOTE]
 >
 >När du testar frekvensregler kan det vara praktiskt att börja med en nyligen skapad [testprofil](../segment/creating-test-profiles.md)eftersom det inte finns något sätt att återställa räknaren förrän nästa månad när en profils övre gräns för frekvens har nåtts. Om du inaktiverar en regel kan mappade profiler ta emot meddelanden, men inga räknarsteg tas bort eller tas bort.
+
+## Instruktionsvideo {#video}
+
+Lär dig hur du skapar, aktiverar, testar och rapporterar frekvensregler.
+
+>[!VIDEO](https://video.tv.adobe.com/v/344451?quality=12)

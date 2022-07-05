@@ -7,9 +7,10 @@ role: Admin
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: f00d503ef5ea38b35b7f56821a9f523dca9fbb94
+exl-id: 162b0848-313a-447e-9237-5a6dbc8102c6
+source-git-commit: 630b8ef5a140709161b24256083b2104be5b6121
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Användningen av attributbaserad åtkomstkontroll är för närvarande tillgänglig i ett tidigt skede och endast för vissa användare. Om du vill använda den här funktionen kontaktar du din kontoansvarige på Adobe.
+>Attributbaserad åtkomstkontroll är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Om du vill använda den här funktionen kontaktar du din kontoansvarige på Adobe.
 
 Med attributbaserad åtkomstkontroll (ABAC) kan du definiera behörigheter för att hantera dataåtkomst för specifika team eller grupper av användare. Syftet är att skydda känsliga digitala resurser mot obehöriga användare, vilket ger ytterligare skydd för personuppgifter.
 
@@ -159,4 +160,3 @@ Om användaren Y utan åtkomst till etikett C2-objekt behöver komma åt den hä
 * Användare Y kan inte testa resan eller meddelandet.
 
 * Användare Y kan inte publicera resan eller meddelandet.
-

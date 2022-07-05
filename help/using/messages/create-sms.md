@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 47b1c2832f82a5c168cd03f1d1b43a9223c945b3
+source-git-commit: 630b8ef5a140709161b24256083b2104be5b6121
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '420'
 ht-degree: 4%
 
 ---
@@ -68,6 +68,16 @@ Ditt SMS-meddelande kan nu användas under en resa. [Lär dig skapa resor](../bu
 För alla marknadsföringsmeddelanden måste SMS:et innehålla ett sätt för mottagarna att enkelt avbryta prenumerationen. När prenumerationen har avbrutits tas profilerna automatiskt bort från målgruppen för framtida marknadsföringsmeddelanden. Det är inte obligatoriskt att lägga till en länk för att avbryta prenumerationen för transaktionsmeddelanden.
 
 SMS-mottagare kan svara med nyckelord för deltagande och avanmälan. I enlighet med branschens standarder och bestämmelser bearbetar Adobe Journey Optimizer automatiskt följande nyckelord i inkommande meddelanden: STARTA, STOPPA OCH AVSTOPPA. Dessa nyckelord utlöser automatiska standardsvar från SMS-providern.
+
+Mer information om hur inbyggt stöd för inkommande nyckelord (start, stopp och stopp) fungerar för SMS finns i följande video.
+
+>[!VIDEO](https://video.tv.adobe.com/v/344026?quality=12)
+
+## Instruktionsvideo
+
+Lär dig hur du konfigurerar, redigerar och inkluderar SMS-meddelanden i dina kundresor.
+
+>[!VIDEO](https://video.tv.adobe.com/v/344460?quality=12)
 
 **Relaterade ämnen**
 

@@ -6,10 +6,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: ac3c49c16a2496b3d5bc9b803589644b69c6565c
+source-git-commit: 630b8ef5a140709161b24256083b2104be5b6121
 workflow-type: tm+mt
-source-wordcount: '1498'
-ht-degree: 1%
+source-wordcount: '1476'
+ht-degree: 0%
 
 ---
 
@@ -49,11 +49,25 @@ Så här skapar du en meddelandeförinställning:
    >
    > Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-` tecken.
 
-1. Konfigurera **e-post** inställningar. [Läs mer](#configure-email-settings)
+1. Om du valde **[!UICONTROL Email]** kanal, konfigurera dina inställningar enligt beskrivningen i [det här avsnittet](email-settings.md).
 
-1. Konfigurera **push-meddelande** inställningar. [Läs mer](#configure-push-settings)
+   ![](assets/preset-email.png)
 
-1. Konfigurera **SMS** inställningar. [Läs mer](sms-configuration.md)
+1. Om du valde **[!UICONTROL Push Notification]** kanal, välj minst en plattform (**iOS** och/eller **Android**) och välj de mobilprogram som ska användas för respektive plattform.
+
+   ![](assets/preset-push.png)
+
+   >[!NOTE]
+   >
+   >Mer information om hur du konfigurerar miljön för att skicka push-meddelanden finns i [det här avsnittet](push-gs.md).
+
+1. Om du valde **[!UICONTROL SMS]** kanal, konfigurera dina inställningar enligt beskrivningen i [det här avsnittet](sms-configuration.md#message-preset-sms).
+
+   ![](assets/preset-sms.png)
+
+   >[!NOTE]
+   >
+   >Mer information om hur du konfigurerar miljön för att skicka SMS-meddelanden finns i [det här avsnittet](sms-configuration.md).
 
 1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara meddelandeförinställningen som utkast och återuppta konfigurationen senare.
 
@@ -86,42 +100,6 @@ Så här skapar du en meddelandeförinställning:
 1. När kontrollen är klar får meddelandeförinställningen **[!UICONTROL Active]** status. Den är klar att användas för att leverera meddelanden.
 
    ![](assets/preset-active.png)
-
-## Konfigurera e-postinställningar {#configure-email-settings}
-
-E-postinställningarna definieras i ett dedikerat avsnitt i meddelandeförinställningskonfigurationen.
-
-![](assets/preset-email.png)
-
-Konfigurera inställningarna enligt beskrivningen i [det här avsnittet](email-settings.md).
-
-## Konfigurera push-inställningar {#configure-push-settings}
-
-Push-inställningarna definieras i ett dedikerat avsnitt i meddelandeförinställningskonfigurationen.
-
-Följ stegen nedan för att definiera de push-inställningar som är kopplade till meddelandeförinställningen:
-
-1. Välj minst en plattform: **iOS** och/eller **Android**.
-
-1. Välj de mobilprogram som ska användas för varje plattform.
-
-![](assets/preset-push.png)
-
-Mer information om hur du konfigurerar miljön för att skicka push-meddelanden finns i [det här avsnittet](../configuration/push-gs.md).
-
-<!--
-## Configure SMS settings {#configure-sms-settings}
-
-1. Select the **[!UICONTROL SMS Type]** that will be sent with the preset: **[!UICONTROL Transactional]** or **[!UICONTROL Marketing]**.
-
-    ![](assets/preset-sms.png)
-    
-1. Select the **[!UICONTROL SMS configuration]** to associate with the preset.
-        
-    For more on how to configure your environment to send SMS messages, refer to [this section](sms-configuration.md).
-
-1. Enter the **[!UICONTROL Sender number]** ​you want to use for your communications.
--->
 
 ## Övervaka meddelandeförinställningar {#monitor-message-presets}
 
@@ -185,6 +163,8 @@ När ändringarna har skickats går meddelandeförinställningen igenom en valid
 >
 >Om du bara redigerar **[!UICONTROL Description]**, **[!UICONTROL Email type]** och/eller **[!UICONTROL Email retry parameters]** uppdateras uppdateringen omedelbart.
 
+### Uppdatera information {#update-details}
+
 För meddelandeförinställningar som har **[!UICONTROL Active]** status kan du kontrollera uppdateringens information. För att göra detta:
 
 * Klicka på **[!UICONTROL Recent update]** som visas bredvid den aktiva förinställningens namn.
@@ -209,7 +189,7 @@ En uppdatering av en meddelandeförinställning kan ha följande status:
 
 Varje status visas nedan.
 
-### Bearbetar
+#### Bearbetar
 
 Flera leveransåtgärder kommer att utföras för att kontrollera att förinställningen har uppdaterats korrekt.
 
@@ -231,13 +211,13 @@ Om du redigerar en förinställning som redan var aktiv:
 >
 >Du kan inte ändra en meddelandeförinställning medan uppdateringen pågår. Du kan fortfarande klicka på namnet, men alla fält är nedtonade. Ändringarna visas inte förrän uppdateringen har slutförts.
 
-### Lyckades {#success}
+#### Lyckades {#success}
 
 När valideringsprocessen har slutförts används den nya versionen av förinställningen automatiskt i alla meddelanden som använder den här förinställningen. Du kan dock behöva vänta:
 * några minuter innan det konsumeras av enhetsmeddelanden,
 * till nästa grupp för att förinställningen ska vara effektiv i gruppmeddelanden.
 
-### Misslyckades {#failed}
+#### Misslyckades {#failed}
 
 Om valideringsprocessen misslyckas kommer den äldre versionen av förinställningen fortfarande att användas.
 

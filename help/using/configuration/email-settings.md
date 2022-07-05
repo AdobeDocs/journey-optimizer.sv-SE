@@ -6,10 +6,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 8f089e885098917d2ebf455b807ac5e6da020190
+source-git-commit: 630b8ef5a140709161b24256083b2104be5b6121
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1192'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Definiera e-postinställningarna i det dedikerade avsnittet i meddelandeförinställningskonfigurationen. Lär dig hur du skapar meddelandeförinställningar i [det här avsnittet](message-presets.md).
 
-![](assets/preset-email.png)
+![](assets/preset-email-settings.png)
 
 ## Typ av e-post {#email-type}
 
