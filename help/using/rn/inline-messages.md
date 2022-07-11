@@ -3,13 +3,13 @@ title: Migrering till onlineframtagning av resan
 description: Lär dig hur du migrerar meddelanden
 hide: true
 hidefromtoc: true
-source-git-commit: 8db51560c5733afac64785d1ef07cbd9558a0bbe
+exl-id: accdebba-5322-401e-8a40-3e1539e65a7e
+source-git-commit: 696855bad3638a83c865b3d1d47fb4b05924155a
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
-
 
 # Migrering till onlineframtagning av resan{#inline-authoring}
 
@@ -30,6 +30,10 @@ ht-degree: 0%
 >title="Lär dig hur du migrerar meddelanden"
 >abstract="Från och med Journey Optimizer juliversion 22 skapas meddelanden direkt från en resa. Befintliga meddelanden har nu migrerats till den nya modellen. Som resehandledare krävs nu ytterligare åtgärder."
 
+>[!CONTEXTUALHELP]
+>id="ajo_messages_depecrated_inventory"
+>title="Lär dig hur du migrerar meddelanden"
+>abstract="Från och med den 25 juli 2022 försvinner menyn Meddelanden och meddelanden skapas direkt från en resa. Om du vill återanvända dina gamla meddelanden under resor måste du spara dem som mallar."
 
 Adobe Journey Optimizer har släppt en ny funktion som förbättrar det sätt på vilket yrkesverksamma skapar upplevelser för Journey Optimizer levererade kanaler som e-post, push, SMS. Den här funktionen kräver en migrering av befintliga resor som använder meddelanden.
 
