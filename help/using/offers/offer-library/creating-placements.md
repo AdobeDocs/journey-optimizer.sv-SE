@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: dfaf887e-d4b3-45b0-8297-bffdb0abff4d
-source-git-commit: 12b01cb9de84399e5ede987866609acc10b64c5f
+source-git-commit: 1b181ae4330f0efe209944980344c6726e8d595c
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 2%
+source-wordcount: '234'
+ht-degree: 3%
 
 ---
 
@@ -36,7 +36,7 @@ Så här skapar du en placering:
 
 1. Klicka på **[!UICONTROL Create placement]**.
 
-   !![](../assets/offers_placement_creation.png)
+   ![](../assets/offers_placement_creation.png)
 
 1. Definiera placeringens egenskaper:
 
@@ -47,7 +47,7 @@ Så här skapar du en placering:
 
    ![](../assets/offers_placement_creation_properties.png)
 
-1. Klicka **[!UICONTROL Save]** för att bekräfta.
+1. Klicka på **[!UICONTROL Save]** för att bekräfta.
 
 1. När placeringen har skapats visas den i placeringslistan. Du kan markera den för att visa dess egenskaper och redigera den.
 
