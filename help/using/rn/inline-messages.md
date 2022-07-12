@@ -2,9 +2,9 @@
 title: Migrera till onlineredigering av resan
 description: Lär dig hur du migrerar meddelanden
 exl-id: accdebba-5322-401e-8a40-3e1539e65a7e
-source-git-commit: 12eb8df6ff41714f6035721558fce7d8c2b4407a
+source-git-commit: cddee8d37e53c3bc6fa662143c3751f35b5e764f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
