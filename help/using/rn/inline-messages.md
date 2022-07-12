@@ -4,9 +4,9 @@ description: Lär dig hur du migrerar meddelanden
 hide: true
 hidefromtoc: true
 exl-id: accdebba-5322-401e-8a40-3e1539e65a7e
-source-git-commit: 8aecf71f61efb4c2a8f80991d30089a90e2b4705
+source-git-commit: 99a6a9d771cf519210caeab02d4a993185083439
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ ht-degree: 0%
 >abstract="Från och med den 25 juli 2022 försvinner menyn Meddelanden och meddelanden skapas direkt från en resa. Om du vill återanvända dina gamla meddelanden under resor måste du spara dem som mallar."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/design/email-templates.html#save-as-template" text="Spara meddelanden som mallar"
 
-Adobe Journey Optimizer har släppt en ny funktion som förbättrar det sätt på vilket yrkesverksamma skapar upplevelser för Journey Optimizer levererade kanaler som e-post, push, SMS. Den här funktionen kräver en migrering av befintliga resor som använder meddelanden.
+Adobe Journey Optimizer släpper en ny funktion som förbättrar det sätt på vilket du skapar innehåll för Journey Optimizer-kanaler (e-post, push, SMS). Som Journey Optimizer-läkare kommer du nu att skapa och skriva dina meddelanden direkt från en resa.
 
-Som resehandledare kan du nu skapa och skriva meddelanden direkt från en resa.
+Den här funktionen kräver en migrering av befintliga resor som använder meddelanden.
 
 ![](assets/inline-message.png)
 
