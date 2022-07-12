@@ -7,10 +7,10 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: b1210a562f809d368e251a6652aed9a920436804
+source-git-commit: 6177a33edeb3b8381c3eb5609762b4d974dc93e3
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 3%
+source-wordcount: '204'
+ht-degree: 5%
 
 ---
 
@@ -24,8 +24,6 @@ När en kampanj har aktiverats kan du när som helst redigera den. Följ stegen 
 Så här ändrar du och skapar en ny version av en kampanj:
 
 1. Öppna kampanjen och klicka sedan på **[!UICONTROL Modify campaign]** -knappen.
-
-   ![](assets/create-campaign-edit.png)
 
 1. En ny version av kampanjen skapas. Du kan kontrollera live-versionen genom att klicka på **[!UICONTROL Open live version]**.
 
@@ -41,8 +39,6 @@ Så här ändrar du och skapar en ny version av en kampanj:
    >
    >När du aktiverar utkastet ersätts kampanjens liveversion.
 
-   ![](assets/create-campaign-activate-draft.png)
-
 ## Stoppa en kampanj {#stop}
 
 Om du vill stoppa en kampanj öppnar du den och klickar sedan på **[!UICONTROL Stop campaign]** -knappen.
@@ -52,3 +48,11 @@ Om du vill stoppa en kampanj öppnar du den och klickar sedan på **[!UICONTROL 
 >[!IMPORTANT]
 >
 >När du har stoppat en kampanj är den endast tillgänglig i skrivskyddat läge. Du kommer inte att kunna aktivera den igen eller använda den för att skapa en ny kampanj.
+
+## Ytterligare resurser
+
+* [Kom igång med kampanjer](get-started-with-campaigns.md)
+* [Skapa en kampanj](create-campaign.md)
+* [Skapa API-utlösta kampanjer](api-triggered-campaigns.md)
+* [Kampanjrapport](campaign-live-report.md)
+* [Global kampanjrapport](campaign-global-report.md)

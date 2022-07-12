@@ -7,9 +7,9 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 1e4c5ab80336238283df041fdb4d323005acd325
+source-git-commit: 6177a33edeb3b8381c3eb5609762b4d974dc93e3
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '300'
 ht-degree: 2%
 
 ---
@@ -24,12 +24,16 @@ ht-degree: 2%
 
 ## Om kampanjer {#about}
 
-Med kampanjer kan ni leverera engångsinnehåll till ett visst segment med hjälp av flera kanaler.
+Med kampanjer kan ni leverera engångsinnehåll till ett visst segment med hjälp av flera kanaler. Till skillnad från resor, där åtgärder är utformade för att utföras i sekvens, kör kampanjer samtidigt, antingen direkt eller enligt ett angivet schema.
 
-Till skillnad från resor, där åtgärder är utformade för att utföras i sekvens, kör kampanjer samtidigt, antingen direkt eller enligt ett angivet schema. Ni kan till exempel använda dem för att leverera kampanjerbjudanden, engagemangskampanjer, meddelanden, juridiska meddelanden eller policyuppdateringar.
+Du kan skapa två typer av kampanjer:
+
+* **Schemalagda kampanjer** möjliggör enkel ad hoc-batchkommunikation för marknadsföringsfall som reklamerbjudanden, engagemangskampanjer, meddelanden, juridiska meddelanden eller policyuppdateringar.
+* **API-utlösta kampanjer** möjliggör enkla transaktions-/driftsmeddelanden med REST API:er (lösenordsåterställning, övergivna kort osv.), där behovet kan innebära personalisering med hjälp av profilattribut och sammanhangsbaserade data från nyttolast.
 
 Lär dig hur du arbetar med kampanjer:
 * [Skapa en kampanj](create-campaign.md)
+* [Skapa API-utlösta kampanjer](api-triggered-campaigns.md)
 * [Ändra eller stoppa en kampanj](modify-stop-campaign.md)
 * [Kampanjrapport](campaign-live-report.md)
 * [Global kampanjrapport](campaign-global-report.md)

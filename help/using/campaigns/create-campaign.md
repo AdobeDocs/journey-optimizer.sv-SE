@@ -7,9 +7,9 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: b9fa6bff926eb8cee476fa53feb38ed783e048fc
+source-git-commit: 6177a33edeb3b8381c3eb5609762b4d974dc93e3
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '724'
 ht-degree: 2%
 
 ---
@@ -33,20 +33,22 @@ Så här skapar du en kampanj:
 
    ![](assets/create-campaign.png)
 
-<!--1. In the **[!UICONTROL Properties]** section, specify when you want to execute the campaign:
+1. I **[!UICONTROL Properties]** anger du när kampanjen ska köras:
 
-    * **[!UICONTROL Scheduled]**: execute the campaign immediately or on a specified date,
-    * **[!UICONTROL API-triggered]**: execute the campaign using an API call. In this case, profiles to be targeted and triggers for actions need to be set via the API call.-->
+   * **[!UICONTROL Scheduled]**: köra kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka **marknadsföring** typmeddelanden.
+   * **[!UICONTROL API-triggered]**: köra kampanjen med ett API-anrop. API-utlösta kampanjer är avsedda att skicka **transaktionsbaserad** meddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförts av en individ: lösenordsåterställning, övergivna kort osv. [Lär dig hur du utlöser en kampanj med API:er](api-triggered-campaigns.md)
 
-1. I **[!UICONTROL Actions]** väljer du kanal och meddelandeyta (d.v.s. meddelandeförinställning) som ska användas för att skicka meddelandet.
+1. I **[!UICONTROL Actions]** väljer du kanal och meddelandeyta (d.v.s. meddelandeförinställning) som ska användas för att skicka meddelandet. Klicka sedan på **[!UICONTROL Create]**.
 
    ![](assets/create-campaign-action.png)
+
+   >[!NOTE]
+   >
+   >Endast meddelandeytor som är kompatibla med kampanjtypen (marknadsföring eller transaktion) visas i listrutan.
 
 1. Ange en titel och en beskrivning för kampanjen.
 
    <!--To test the content of your message, toggle the **[!UICONTROL Content experiment]** option on. This allows you to test multiple variables of a delivery on populations samples, in order to define which treatment has the biggest impact on the targeted population.[Learn more about content experiment](../campaigns/content-experiment.md).-->
-
-   ![](assets/create-campaign-properties.png)
 
 1. I **[!UICONTROL Actions]** konfigurerar du meddelandet som ska skickas med kampanjen:
 
@@ -60,13 +62,11 @@ Så här skapar du en kampanj:
 
       Spåra resultat kan nås från kampanjrapporten när kampanjen har genomförts. [Läs mer om kampanjrapporter](campaign-global-report.md)
 
-      ![](assets/create-campaign-action-properties.png)
-
 1. Definiera målgruppen. Om du vill göra det klickar du på **[!UICONTROL Select audience]** om du vill visa en lista över tillgängliga Adobe Experience Platform-segment. [Läs mer om segment](../segment/about-segments.md)
 
-   ![](assets/create-campaign-audience.png)
-
-   <!--By default, the targeted audience for in-app messages includes all the users of the selected mobile application.-->
+   >[!NOTE]
+   >
+   >För API-utlösta kampanjer måste målgruppen anges via API-anrop. [Läs mer](api-triggered-campaigns.md)
 
    I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera individerna från det valda segmentet. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace)
 
@@ -74,18 +74,19 @@ Så här skapar du en kampanj:
 
    >[!NOTE]
    >
-   >Individer som tillhör ett segment som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kommer inte att omfattas av kampanjen. <!--info vue dans section journeys, read segment-->
+   >Individer som tillhör ett segment som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kommer inte att omfattas av kampanjen.
 
-   <!--If you are creating a campaign to send an in-app message, you can choose how and when the message will be shown to the audience using existing mobile app triggers.-->
-   <!-- where are triggers configured?-->
+1. Konfigurera kampanjens start- och slutdatum. Som standard är kampanjer konfigurerade att starta när de har aktiverats manuellt och att sluta så fort meddelandet har skickats.
 
-1. Konfigurera kampanjens start- och slutdatum.
+1. Dessutom kan du ange en frekvens för körningen av åtgärden som konfigurerats i kampanjen.
 
-   Som standard är kampanjer konfigurerade att starta när de har aktiverats manuellt och att sluta så fort meddelandet har skickats.
-
-1. Dessutom kan du konfigurera en frekvens för körning av åtgärden som konfigurerats i kampanjen.
+   >[!NOTE]
+   >
+   >För API-utlösta kampanjer är schemaläggning vid ett visst datum och en viss tid med upprepning inte tillgängligt eftersom åtgärden utlöses via API. Start- och slutdatumet är dock relevanta för att säkerställa att API-anrop som görs före efter fönstret felskickas.
 
    ![](assets/create-campaign-schedule.png)
+
+1. Om du skapar en API-utlöst kampanj kan **[!UICONTROL cURL request]** kan du hämta **[!UICONTROL Campaign ID]** som ska användas i API-anropet. [Läs mer](api-triggered-campaigns.md)
 
 När kampanjen är klar kan du granska och publicera den (se [Granska och aktivera en kampanj](#review-activate)).
 
@@ -124,3 +125,11 @@ När kampanjen har konfigurerats måste du granska dess parameter och innehåll 
    >[!IMPORTANT]
    >
    >Meddelanden som skapas i kampanjer är specifika för [!DNL Journey Optimizer] kampanjfunktioner. När de har skapats är de tillgängliga endast för kampanjer, och visas inte i **[!UICONTROL Messages]** -menyn.
+
+## Ytterligare resurser
+
+* [Kom igång med kampanjer](get-started-with-campaigns.md)
+* [Skapa API-utlösta kampanjer](api-triggered-campaigns.md)
+* [Ändra eller stoppa en kampanj](modify-stop-campaign.md)
+* [Kampanjrapport](campaign-live-report.md)
+* [Global kampanjrapport](campaign-global-report.md)

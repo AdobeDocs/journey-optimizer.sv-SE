@@ -7,9 +7,9 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: cc20ecf0a019cecb8a4ae9420c5dbdcb28443c91
+source-git-commit: 6177a33edeb3b8381c3eb5609762b4d974dc93e3
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1245'
 ht-degree: 0%
 
 ---
@@ -205,3 +205,11 @@ The **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilket fel
 The **[!UICONTROL Excluded reasons]** I diagram och tabeller visas de olika anledningar som gjorde att användarprofiler som inte ingår i målprofilerna inte kunde ta emot meddelandet.
 
 The **[!UICONTROL Tracking by platform]**, **[!UICONTROL Sending by platform]** och **[!UICONTROL Breakdown by platform]** diagram och tabeller visar hur bra push-meddelandena är beroende på mottagarens operativsystem.
+
+## Ytterligare resurser
+
+* [Kom igång med kampanjer](get-started-with-campaigns.md)
+* [Skapa en kampanj](create-campaign.md)
+* [Skapa API-utlösta kampanjer](api-triggered-campaigns.md)
+* [Ändra eller stoppa en kampanj](modify-stop-campaign.md)
+* [Kampanjrapport](campaign-live-report.md)

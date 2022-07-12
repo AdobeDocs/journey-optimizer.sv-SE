@@ -7,10 +7,10 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 43a076632d2f2195ce0293f741dfbc28d4eea24a
+source-git-commit: 6177a33edeb3b8381c3eb5609762b4d974dc93e3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '618'
+ht-degree: 1%
 
 ---
 
@@ -110,3 +110,11 @@ The **[!UICONTROL Error Reasons]** och **[!UICONTROL Exclude Reasons]** Med diag
 The **[!UICONTROL Sending statistics - Failed]** kan du se hur många fel och studsar som har inträffat.
 
 The **[!UICONTROL Tracking by platform]**, **[!UICONTROL Sending by platform]** och **[!UICONTROL Breakdown by platform]** diagram och tabeller visar hur bra push-meddelandena är beroende på vilket operativsystem som används.
+
+## Ytterligare resurser
+
+* [Kom igång med kampanjer](get-started-with-campaigns.md)
+* [Skapa en kampanj](create-campaign.md)
+* [Skapa API-utlösta kampanjer](api-triggered-campaigns.md)
+* [Ändra eller stoppa en kampanj](modify-stop-campaign.md)
+* [Global kampanjrapport](campaign-global-report.md)
