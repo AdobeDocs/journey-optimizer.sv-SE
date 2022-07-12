@@ -2,7 +2,7 @@
 title: Migrera till onlineredigering av resan
 description: Lär dig hur du migrerar meddelanden
 exl-id: accdebba-5322-401e-8a40-3e1539e65a7e
-source-git-commit: 3f9844dec9caf520ab59c5f2b433a5c2e86ef44f
+source-git-commit: 8404cbe345879bdd3c90a4ce542135fb7cbf1eb3
 workflow-type: tm+mt
 source-wordcount: '1700'
 ht-degree: 0%
@@ -114,8 +114,8 @@ Det krävs en migrering för att du ska kunna vända dina befintliga resor med *
 
 Migreringen kommer att ske för varje region på natten, via flera iterationer. Här är migreringstidslinjen:
 
-* 25 juli 2002: GA - första upprepningen
-* 1 augusti 2002: Andra upprepningen
+* 25 juli 2022: GA - första upprepningen
+* 1 augusti 2022: Andra upprepningen
 * 5 september 2022: 3:e upprepningen
 * 6 september 2022: borttagning
 
