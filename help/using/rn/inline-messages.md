@@ -2,9 +2,9 @@
 title: Migrera till onlineredigering av resan
 description: Lär dig hur du migrerar meddelanden
 exl-id: accdebba-5322-401e-8a40-3e1539e65a7e
-source-git-commit: f98ef26fa9c6075c852d33d19c796351296a3f94
+source-git-commit: d27bcae95f1890292eb8f2eae8b2e72c3ad501e3
 workflow-type: tm+mt
-source-wordcount: '1673'
+source-wordcount: '1684'
 ht-degree: 0%
 
 ---
@@ -16,25 +16,25 @@ ht-degree: 0%
 >id="ajo_messages_migration_before"
 >title="Läs mer om det nya textbundna redigeringsmeddelandet"
 >abstract="Från och med 25 juli 2022 skapas meddelanden direkt från en resa. Befintliga meddelanden migreras automatiskt till den nya modellen. Ytterligare åtgärder krävs efter migreringen."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/whats-new/inline-messages-steps.html" text="Migreringssteg"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/whats-new/inline-authoring/inline-messages-steps.html?lang=en" text="Migreringssteg"
 
 >[!CONTEXTUALHELP]
 >id="ajo_messages_migration_during"
 >title="Lär dig vad som händer"
 >abstract="Från och med 25 juli 2022 skapas meddelanden direkt från en resa. Din miljö migreras. Ytterligare åtgärder krävs efter migreringen."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/whats-new/inline-messages-steps.html" text="Migreringssteg"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/whats-new/inline-authoring/inline-messages-steps.html?lang=en" text="Migreringssteg"
 
 >[!CONTEXTUALHELP]
 >id="ajo_messages_migration_after"
 >title="Lär dig hur du migrerar meddelanden"
 >abstract="Från och med 25 juli 2022 skapas meddelanden direkt från en resa. Befintliga meddelanden har nu migrerats till den nya modellen. Som resehandledare krävs nu ytterligare åtgärder."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/whats-new/inline-messages-steps.html" text="Migreringssteg"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/whats-new/inline-authoring/inline-messages-steps.html?lang=en" text="Migreringssteg"
 
 >[!CONTEXTUALHELP]
 >id="ajo_messages_depecrated_inventory"
 >title="Lär dig hur du migrerar meddelanden"
 >abstract="Från och med den 25 juli 2022 försvinner menyn Meddelanden och meddelanden skapas direkt från en resa. Om du vill återanvända dina gamla meddelanden under resor måste du spara dem som mallar."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/design/email-templates.html#save-as-template" text="Spara meddelanden som mallar"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/design/email-templates.html#save-as-template?lang=en" text="Spara meddelanden som mallar"
 
 Adobe Journey Optimizer släpper en ny funktion som förbättrar det sätt på vilket du skapar innehåll för Journey Optimizer-kanaler (e-post, push, SMS). Som Journey Optimizer-läkare kan du nu skapa och skriva meddelanden direkt från en resa.
 
