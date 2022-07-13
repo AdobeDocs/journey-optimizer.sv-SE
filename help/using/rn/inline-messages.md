@@ -2,9 +2,9 @@
 title: Migrera till onlineredigering av resan
 description: Lär dig hur du migrerar meddelanden
 exl-id: accdebba-5322-401e-8a40-3e1539e65a7e
-source-git-commit: 3146071854a02650c6f1632839e3dcd913a46676
+source-git-commit: ea8e133475eb86ff7ad9463950d81d36fe3b5504
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1696'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_messages_migration_during"
 >title="Lär dig vad som händer"
->abstract="Från och med 25 juli 2022 skapas meddelanden direkt från en resa. Din miljö migreras. Ytterligare åtgärder krävs efter migreringen."
+>abstract="Från och med 25 juli 2022 skapas meddelanden direkt från en resa. Din miljö migreras. Ytterligare åtgärder krävs efter migreringen om du för närvarande använder meddelanden under dina resor."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/whats-new/inline-authoring/inline-messages-steps.html" text="Migreringssteg"
 
 >[!CONTEXTUALHELP]
 >id="ajo_messages_migration_after"
 >title="Lär dig hur du migrerar meddelanden"
->abstract="Från och med 25 juli 2022 skapas meddelanden direkt från en resa. Befintliga meddelanden har nu migrerats till den nya modellen. Som resehandledare krävs nu ytterligare åtgärder."
+>abstract="Från och med 25 juli 2022 skapas meddelanden direkt från en resa. Befintliga meddelanden har nu migrerats till den nya modellen. Som resehandledare krävs nu ytterligare åtgärder för resor med meddelanden."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/whats-new/inline-authoring/inline-messages-steps.html" text="Migreringssteg"
 
 >[!CONTEXTUALHELP]
