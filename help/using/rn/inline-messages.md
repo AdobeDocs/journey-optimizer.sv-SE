@@ -2,9 +2,9 @@
 title: Migrera till onlineredigering av resan
 description: Lär dig hur du migrerar meddelanden
 exl-id: accdebba-5322-401e-8a40-3e1539e65a7e
-source-git-commit: d27bcae95f1890292eb8f2eae8b2e72c3ad501e3
+source-git-commit: 5ff9e34c70f13a6ebf12d106759c927f0b506520
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1692'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="ajo_messages_migration_before"
->title="Läs mer om det nya textbundna redigeringsmeddelandet"
->abstract="Från och med 25 juli 2022 skapas meddelanden direkt från en resa. Befintliga meddelanden migreras automatiskt till den nya modellen. Ytterligare åtgärder krävs efter migreringen."
+>title="Läs mer om den nya funktionen för textbunden redigering"
+>abstract="Från och med 25 juli 2022 skapas meddelanden direkt från en resa. Befintliga meddelanden migreras automatiskt till den nya modellen. Ytterligare åtgärder krävs efter migreringen om du för närvarande använder meddelanden under dina resor."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/whats-new/inline-authoring/inline-messages-steps.html?lang=en" text="Migreringssteg"
 
 >[!CONTEXTUALHELP]
