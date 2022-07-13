@@ -2,9 +2,9 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 630b8ef5a140709161b24256083b2104be5b6121
+source-git-commit: bf738ebac09d5c852872a8ea85f6532ad9d4222d
 workflow-type: tm+mt
-source-wordcount: '1632'
+source-wordcount: '1651'
 ht-degree: 20%
 
 ---
@@ -31,7 +31,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Sidan Suppression List har uppdaterats för att förtydliga viss information, inklusive det faktum att alla ASCII-tecken mellan 32 och 126 tillåts i fältet för undertryckning. [Läs mer](../configuration/manage-suppression-list.md)
 * Länken till skyddsförslag och statiska gränser för beslutshantering har lagts till. [Läs mer](../start/guardrails.md)
 * Tidsoptimering är nu tillgängligt för alla kunder. Betaversionen har tagits bort. [Läs mer](../building-journeys/journeys-message.md#send-time-optimization)
-
+* API:t för gruppbeslut har lagts till i listan över tillgängliga API:er för leverans av personaliserade erbjudanden. [Läs mer](../offers/api-reference/offer-delivery-api/start-offer-delivery-apis.md)
 
 ## Maj 2022 {#may-2022}
 
@@ -169,3 +169,4 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * En varning har lagts till som anger att händelsebaserade erbjudanden för närvarande inte stöds. [Läs mer](../offers/offer-library/creating-personalized-offers.md#eligibility)
 * Dokumenterade beslutsledningens nya **[!UICONTROL Overview]** -fliken. [Läs mer](../offers/get-started/user-interface.md#overview)
 * Nya avsnitt har lagts till för att beskriva de åtgärder som är tillgängliga från erbjudandet och beslutslistorna: [Erbjudandelista](../offers/offer-library/creating-personalized-offers.md#offer-list) och [Beslutslista](../offers/offer-activities/create-offer-activities.md#decision-list).
+
