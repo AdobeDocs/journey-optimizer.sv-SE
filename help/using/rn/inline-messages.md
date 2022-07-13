@@ -2,9 +2,9 @@
 title: Migrera till onlineredigering av resan
 description: Lär dig hur du migrerar meddelanden
 exl-id: accdebba-5322-401e-8a40-3e1539e65a7e
-source-git-commit: 8404cbe345879bdd3c90a4ce542135fb7cbf1eb3
+source-git-commit: f98ef26fa9c6075c852d33d19c796351296a3f94
 workflow-type: tm+mt
-source-wordcount: '1700'
+source-wordcount: '1673'
 ht-degree: 0%
 
 ---
@@ -36,11 +36,9 @@ ht-degree: 0%
 >abstract="Från och med den 25 juli 2022 försvinner menyn Meddelanden och meddelanden skapas direkt från en resa. Om du vill återanvända dina gamla meddelanden under resor måste du spara dem som mallar."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/design/email-templates.html#save-as-template" text="Spara meddelanden som mallar"
 
-Adobe Journey Optimizer släpper en ny funktion som förbättrar det sätt på vilket du skapar innehåll för Journey Optimizer-kanaler (e-post, push, SMS). Som Journey Optimizer-läkare kommer du nu att skapa och skriva dina meddelanden direkt från en resa.
+Adobe Journey Optimizer släpper en ny funktion som förbättrar det sätt på vilket du skapar innehåll för Journey Optimizer-kanaler (e-post, push, SMS). Som Journey Optimizer-läkare kan du nu skapa och skriva meddelanden direkt från en resa.
 
-Den här funktionen kräver en migrering av befintliga resor som använder meddelanden.
-
-På den här sidan hittar du nödvändig information om den här ändringen samt de steg som krävs av dig.
+Den här funktionen kräver en migrering av befintliga resor som använder meddelanden. På den här sidan hittar du nödvändig information om den här ändringen samt de steg som krävs av dig.
 
 Mer information om vilka roller och ansvarsområden du har som Journey Optimizer-läkare finns i [page](../start/path/marketer.md).
 
@@ -61,23 +59,23 @@ Here are the main changes in the interface:
 
 * **Påverkas jag?**: du påverkas om du skapar meddelanden från **Meddelanden** menyn i den vänstra navigeringen och använd dem på dina resor. Om du använder ett system från en annan leverantör (t.ex. Adobe Campaign) påverkas inte migreringen.
 
-* **Produktändringar**: på GA (25 juli) kommer ditt kanalinnehåll att skapas och hanteras under varje resa. The **Meddelanden** kommer navigeringen till vänster inte längre att vara tillgänglig ([Läs mer](../rn/inline-messages.md#change)). Vi går vidare till en övergång för era befintliga resor.
+* **Produktändringar**: på GA (25 juli) skapas och hanteras ditt kanalinnehåll under varje resa. The **Meddelanden** finns inte längre i den vänstra navigeringsmenyn ([läs mer](../rn/inline-messages.md#change)). Vi går vidare till en övergång för era befintliga resor.
 
-* **Tidslinje**: migrering kommer att ske för varje region på natten, via flera [iterationer](../rn/inline-messages.md#iterations).
+* **Tidslinje**: migrering sker för varje region på natten, via flera [iterationer](../rn/inline-messages.md#iterations).
 
    ![](assets/inline-migration-timeline.png)
 
-* **Nödvändiga åtgärder**: en automatisk omräkning av resorna kommer att utföras åt er. Men vi kommer att behöva din hjälp med några steg. Läs mer om de steg som krävs i detta [page](../rn/inline-messages-steps.md).
+* **Nödvändiga åtgärder**: en automatisk omräkning av resorna utförs åt er. Vi behöver er hjälp med några steg. Läs mer om de steg som krävs i detta [page](../rn/inline-messages-steps.md).
 
-* **Föråldring**: efter den 6 september kommer alla resor som fortfarande använder äldre meddelanden att stoppas och tas bort senare.
+* **Föråldring**: efter den 6 september stoppas alla resor som fortfarande använder äldre meddelanden och tas bort senare.
 
 ## Fördelar och produktändringar{#change}
 
-Adobe förenklar produkten kontinuerligt för att ge effektiva och optimerade användarflöden. Detta nya sätt att skapa meddelanden ger en smidigare användarprocess.
+Adobe förenklar produkten kontinuerligt för att ge effektiva och optimerade användarflöden. Detta nya sätt att skapa meddelanden ger en effektivare användarprocess.
 
-Vi har utformat det nya arbetsflödet för att placera innehåll på ett och samma ställe, direkt där det används.
+Vi har utformat det nya arbetsflödet för att centralisera innehåll på ett och samma ställe, direkt där det används.
 
-Nu kan du skapa innehåll direkt under resan. Den omedelbara **fördelar** får du följande:
+Nu kan du skapa innehåll direkt under resan. Den omedelbara **fördelar** får du:
 
 * Snabbare resebyggande med Journey Optimizer-kanaler i ett enda flöde.
 * Snabb visualisering av innehåll genom att smidigt växla mellan allt e-postinnehåll, push-innehåll och SMS-innehåll under en resa.
@@ -110,9 +108,9 @@ Vid GA (25 juli) gäller det nya användarflödet alla nya resor. The **Meddelan
 
 ## Tidslinje för migrering{#iterations}
 
-Det krävs en migrering för att du ska kunna vända dina befintliga resor med **Meddelanden** till resor med textbundna åtgärder. En automatisk omräkning av resorna kommer att utföras åt dig. Men vi kommer att behöva din hjälp med några steg.
+Det krävs en migrering för att du ska kunna vända dina befintliga resor med **Meddelanden** till resor med textbundna åtgärder. En automatisk omräkning av resor utförs åt dig. Vi behöver er hjälp med några steg.
 
-Migreringen kommer att ske för varje region på natten, via flera iterationer. Här är migreringstidslinjen:
+Migrering sker för varje region på natten, via flera iterationer. Här är migreringstidslinjen:
 
 * 25 juli 2022: GA - första upprepningen
 * 1 augusti 2022: Andra upprepningen
@@ -129,7 +127,7 @@ Under en upprepning går vi igenom varje resa och migrerar dem när det är möj
 
 Adobe kommunicerar med dig före första iterationen.
 
-Ändringen kommer att genomföras över en natt, genom flera iterationer. Läs mer på [iterationer](../rn/inline-messages.md#inline-authoring).
+Ändringen genomförs över en natt, genom flera iterationer. Läs mer på [iterationer](../rn/inline-messages.md#inline-authoring).
 
 Du informeras även av meddelanden i produkten som visas på Journeys-skärmar:
 
@@ -153,31 +151,31 @@ Du informeras även av meddelanden i produkten som visas på Journeys-skärmar:
 
 Migreringen är helt automatisk för resor som inte är direktsända eller stängda. Vi vill inte påverka pågående eller slutna resor för att undvika eventuella produktionseffekter. Vi ber dig publicera den nya versionen som vi har skapat åt dig.
 
-Alla sandlådor för en kund-ORG bearbetas samtidigt. Under ändringsdistributionen kommer följande åtgärder att utföras:
+Alla sandlådor för en kund-ORG bearbetas samtidigt. Under ändringsdistributionen utförs följande åtgärder:
 
-**ALLA resor som inte använder meddelanden**
+**ALL resa som inte använder meddelanden**
 
 Dessa påverkas inte av ändringen. Det är endast resor med meddelanden som är inriktade på migreringen. Du kommer dock fortfarande att kunna komma åt meddelanden som inte används i en resa via följande URL: https://experience.adobe.com/#/@[ORG]/sname:[SANDLÅDA]/travel-optimizer/messages/
 
 **UTKAST till resor med minst ett meddelande**
 
-Utkastversioner av meddelanden ändras under migreringen. De kommer inte att referera till ett meddelande längre. The **Meddelande** Verksamheterna kommer att ersättas med lämpliga kanalåtgärder. Var och en av dem innehåller kanalparametrar och innehåll.
+Utkastversioner av meddelanden ändras under migreringen. De hänvisar inte längre till något meddelande. The **Meddelande** Verksamheter ersätts med lämpliga kanalåtgärder. Var och en av dem innehåller kanalparametrar och innehåll.
 
 Som vanligt testar du utkastet innan du publicerar det.
 
-**LIVE Journeys använder minst ett meddelande**
+**LIVE-resor med minst ett meddelande**
 
 Live-versionen av en resa fortsätter att fungera för att undvika eventuella produktionseffekter.
 
-Ett nytt utkast av den här resan kommer att skapas under migreringen. Det nya utkastet kommer att vara en kopia av din liveversion, men meddelanden kommer att ersättas med inline-redigerade kanalåtgärder. Varje kanalåtgärd innehåller kanalparametrar och innehåll. Innehållet går inte förlorat. Rapporteringen går inte förlorad
+Ett nytt utkast av den här resan skapas under migreringen. Den nya utkastversionen är en kopia av din liveversion, men meddelanden ersätts med inline-redigerade kanalåtgärder. Varje kanalåtgärd omfattar kanalparametrar och innehåll. Innehållet går inte förlorat. Rapporteringen går inte förlorad.
 
 Vi förväntar oss att du granskar utkastet, testar det och publicerar det så att det blir den aktiva versionen.
 
 **Färdigställda eller STOPPADE resor med minst ett meddelande**
 
-Även dessa resor kommer att migreras.
+Dessa resor migreras också.
 
-När du tittar på reserapporten blir rapporterna mer omfattande och innehåller den informationsnivå som tidigare fanns i meddelanderapporten.
+När du tittar på reserapporten blir rapporterna nu mer omfattande och innehåller den informationsnivå som tidigare fanns tillgänglig i meddelanderapporten.
 
 **AVSLUTADE resor med minst ett meddelande**
 
@@ -191,7 +189,7 @@ De här är inte migrerade. Du måste återskapa dem.
 
 ### Vad är mina åtgärdsobjekt som kund?{#actions}
 
-En automatisk omräkning av resorna kommer att utföras åt dig, men några steg krävs. Läs mer om de steg som krävs i detta [page](../rn/inline-messages-steps.md).
+En automatisk omräkning av resor utförs åt dig, men några steg krävs. Läs mer om de steg som krävs i detta [page](../rn/inline-messages-steps.md).
 
 <!--
 
@@ -293,7 +291,7 @@ Det kommer att bli en förändring i hur du redigerar meddelandet. Funktionsbort
 
 ### Kommer det att finnas tillgång till miljön under migreringsprocessen?
 
-Migreringen kommer att ske nattetid. Du kommer att kunna använda produkten. Men skapa, redigera eller radera inte resor.
+Migreringen sker på natten. Du kommer att kunna använda produkten. Men skapa, redigera eller radera inte resor.
 
 ### Kommer meddelandena att fortsätta att skickas?
 

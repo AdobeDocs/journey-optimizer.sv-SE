@@ -1,9 +1,9 @@
 ---
 title: Steg för att migrera till onlineredigering för resan
 description: Steg för att migrera till onlineredigering av resan
-source-git-commit: 3f9844dec9caf520ab59c5f2b433a5c2e86ef44f
+source-git-commit: f98ef26fa9c6075c852d33d19c796351296a3f94
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1048'
 ht-degree: 1%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # Inline-redigeringssteg{#migration-steps}
 
-Den nya processen för att skapa meddelanden i Adobe Journey Optimizer beskrivs i detta [page](../rn/inline-messages.md). En automatisk omräkning av resorna kommer att utföras åt dig. Men vi kommer att behöva din hjälp med några steg.
+Den nya processen för att skapa innehåll i Adobe Journey Optimizer beskrivs i detta [page](../rn/inline-messages.md). En automatisk omräkning av resor utförs åt dig. Vi behöver er hjälp med några steg.
 
 >[!VIDEO](https://video.tv.adobe.com/v/344699)
 
@@ -28,7 +28,7 @@ Här följer de huvudsakliga faserna och stegen:
 1. Lista alla nya versioner som skapas av migreringen. [Läs mer](../rn/inline-messages-steps.md#migration-step-2-2)
 1. Testa och publicera dem en i taget. [Läs mer](../rn/inline-messages-steps.md#migration-step-2-3)
 1. Lista alla liveversioner. [Läs mer](../rn/inline-messages-steps.md#migration-step-2-4)
-1. Titta på felen vid migrering av utkast. [Läs mer](../rn/inline-messages-steps.md#migration-step-2-5)
+1. Sök efter fel i migrerade utkastversioner. [Läs mer](../rn/inline-messages-steps.md#migration-step-2-5)
 
 **[Efter den andra upprepningen](../rn/inline-messages-steps.md#migration-step-3)**
 
@@ -45,7 +45,7 @@ Verifiera att allt har migrerats före borttagningen.
 
 ### 1. Stoppa alla pågående och stängda resor{#migration-step-1-1}
 
-På **icke-produktionssandlådor**, stoppa alla resor live och stängda. Detta gör att den automatiska migreringsprocessen kan migrera alla resor från dessa sandlådor utan att du behöver göra något. Efter migreringen kan du duplicera stoppade reseversioner och använda dem.
+På **icke-produktionssandlådor**, stoppa alla resor live och stängda. Detta gör att den automatiserade migreringsprocessen kan migrera alla resor från dessa sandlådor utan att du behöver göra något. Efter migreringen kan du duplicera versioner av stoppade resor och använda dem.
 
 ### 2. Stoppa alla direktsända ad hoc-resor utan profil fortfarande i{#migration-step-1-2}
 
@@ -53,14 +53,14 @@ På **produktionssandlåda**, stoppa alla direktsända ad hoc-resor som inte lä
 
 +++Hur hittar jag de här resorna?
 
-Navigera till **Resor** och filtrera listan på&quot;Status = Live&quot; och&quot;Type = Read&quot;. Du kan också beställa kronologiskt från det tidigaste till det senaste publicerade datumet.
+Navigera till **Resor** och filtrera listan på&quot;Status = Live&quot; och&quot;Type = Read&quot;. Du kan också beställa resor kronologiskt från det tidigaste till det senaste publicerade datumet.
 
 ![](assets/inline-migration-steps1.png)
 
 Öppna dem uppifrån och ned.
 
 * Kontrollera att resan innehåller ett meddelande.
-* Kontrollera att de inte är återkommande resor. Dessa är inte tillfälliga. Du vill förmodligen behålla dem Live. Den här resan är till exempel en återkommande resa (inte ad hoc):
+* Kontrollera att de inte är återkommande resor. Dessa är inte tillfälliga. Du vill antagligen hålla dem levande. Den här resan är till exempel en återkommande resa (inte ad hoc):
 
    ![](assets/inline-migration-steps2.png)
 
@@ -74,15 +74,13 @@ Navigera till **Resor** och filtrera listan på&quot;Status = Live&quot; och&quo
 
 * Om du har resor som inte är den senaste versionen, vilket innebär att du har skapat en ny version i utkast, kan du publicera den eller ta bort den.
 
-* Om du har meddelanden som inte används på resor och som du vill behålla, sparar du dem som mallar. Observera att du fortfarande kan komma åt dem tills de är borttagna.
+* Om du har meddelanden som inte används på resor och som du vill behålla, sparar du dem som mallar. Se detta [page](../design/email-templates.md#save-as-template). Observera att du fortfarande kan komma åt dem tills de är borttagna.
 
 ## Efter migreringens första iteration (25 juli){#migration-step-2}
 
 Migreringen sker i två faser: den automatiserade fasen (nattetid, mellan 25 juli och 26 juli) och den manuella fasen (med början 26 juli) som kräver åtgärder.
 
-För den automatiska fasen, se [page](../rn/inline-messages.md#process).
-
-För den manuella fasen finns följande åtgärder att utföra på **produktionssandlåda**:
+För den automatiska fasen, se [page](../rn/inline-messages.md#process). För den manuella fasen finns följande åtgärder att utföra på **produktionssandlåda**:
 
 <!--
 _On non-production sandboxes:_
@@ -108,7 +106,9 @@ _On the production sandbox:_
 
 ### 1. Kontrollera om det finns några fel på dina migrerade liveresor{#migration-step-2-1}
 
-Kontrollera om det finns fel på de automatiskt migrerade direktresorna i statusrapporten.
+Kontrollera om det finns fel på de automatiskt migrerade direktresorna i statusrapporten ([läs mer](../rn/inline-messages.md#status). Klicka på **Kontrollera status** i den övre banderollen.
+
+![](assets/inline-migration-steps3.png)
 
 Leta efter &quot;ERROR_NEW_VERSION_CREATION&quot;:
 
@@ -117,6 +117,8 @@ Leta efter &quot;ERROR_NEW_VERSION_CREATION&quot;:
 * Om det inte finns något fel innebär det att alla versioner av live-resor som kräver migrering har bearbetats och att ett nytt migrerat utkast har skapats automatiskt.
 
 * Om du ser ett fel kan du söka efter &quot;errorMessage&quot; och kontrollera felmeddelandet i loggarna. Flerkanalsmeddelanden migreras inte. Du måste skapa en ny resa.
+
+   ![](assets/inline-migration-steps5.png)
 
 * Kontakta din CSM eller någon annan representant på Adobe för att få hjälp med andra fel.
 
@@ -132,7 +134,7 @@ Se till att resan fortfarande behöver köras i produktionen. Om [förberedelse 
 
 Testa den utkastversion av resan som nu innehåller textbundna kanalåtgärder.
 
-Publicera en ny version för resan. Din tidigare version kommer att ha statusen &quot;Stängd&quot;.
+Publicera en ny version för resan. Din tidigare liveversion går sedan vidare till statusen&quot;Stängd&quot;.
 
 ### 4. Lista alla liveversioner{#migration-step-2-4}
 
@@ -140,9 +142,9 @@ De ska alla markeras som senaste. om inte, leta efter den nyare versionen, testa
 
 ![](assets/inline-migration-steps8.png)
 
-### 5. Titta på fel vid migrering av utkast{#migration-step-2-5}
+### 5. Kontrollera om det finns fel i migrerade utkastversioner {#migration-step-2-5}
 
-Klicka på **Kontrollera status** i den övre banderollen och kontrollera att det inte har uppstått något fel under den automatiska migreringen och att det inte finns något kvar att migrera. Observera att all felfri resa (med meddelanden) kommer att bli inaktuell efter 5 september (för alla sandlådor).
+Klicka på **Kontrollera status** i den övre banderollen ([läs mer](../rn/inline-messages.md#status) och kontrollera att det inte har uppstått något fel under den automatiska migreringen och att det inte finns något kvar att migrera. Observera att all felfri resa (med meddelanden) kommer att bli inaktuell efter 5 september (för alla sandlådor).
 
 ![](assets/inline-migration-steps11.png)
 
@@ -154,11 +156,11 @@ Leta efter statusen&quot;FEL&quot;.
 
 * Om det finns fel söker du efter felet genom att söka efter &quot;errorMessage&quot;. Följande fel förväntas eftersom migrering av flerkanalsmeddelanden inte stöds: &quot;Migrering av flerkanalsmeddelanden stöds inte&quot;. Du måste bygga om den här resan.
 
-![](assets/inline-migration-steps6.png)
+![](assets/inline-migration-steps5.png)
 
 ## Efter den andra upprepningen (1 augusti){#migration-step-3}
 
-Den andra upprepningen kommer att äga rum nattetid mellan 1 augusti och 2 augusti.
+Den andra upprepningen sker nattetid mellan 1 augusti och 2 augusti.
 
 <!--
 _On non-production sandboxes:_
@@ -179,7 +181,11 @@ Om det inte finns några fel bör du inte ha några resor i&quot;eligibilityStat
 
 ### 2. Stoppa tidigare versioner{#migration-step-3-2}
 
-Om du inte har publicerat nyare reseversioner (se det här [section](../rn/inline-messages-steps.md#migration-step-2-3)) i tid, vilket innebär före iteration 2 (1 augusti), och sedan publicera den nyare versionen och **stoppa föregående version, annars förlorar du den** och tillhörande rapportering.
+Om du inte har publicerat nyare reseversioner (se det här [section](../rn/inline-messages-steps.md#migration-step-2-3)) i tid före iteration 2 (1 augusti) och sedan publicera den nyare versionen.
+
+>[!NOTE]
+>
+>Stoppa den tidigare versionen, annars förlorar du den och den tillhörande rapporteringen.
 
 ## Före den tredje och sista upprepningen (5 september){#migration-step-4}
 
