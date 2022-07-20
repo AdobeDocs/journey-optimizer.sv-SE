@@ -2,9 +2,9 @@
 title: Migrera till onlineredigering av resan
 description: Lär dig hur du migrerar meddelanden
 exl-id: accdebba-5322-401e-8a40-3e1539e65a7e
-source-git-commit: ea8e133475eb86ff7ad9463950d81d36fe3b5504
+source-git-commit: 3ba2c604a99c53e95c4ef083f5ee43d2d6f5477a
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -287,7 +287,10 @@ Inga dataförluster och ingen påverkan på direktresor kommer att förekomma. D
 
 ### Kommer funktionaliteten att gå förlorad?{#functionality}
 
-Det kommer att bli en förändring i hur du redigerar meddelandet. Funktionsbortfall uppstår inte.
+Det kommer att bli en förändring i hur du redigerar meddelandet. Funktionsbortfall uppstår inte. Observera att efter den 25 juli (funktionen för redigering online) gäller begränsningar för åtgärder som kan utföras på resor med **Meddelande** verksamhet:
+
+* Du kan inte kopiera/klistra in några **Meddelande** aktivitet. Du kan dock kopiera/klistra in de nya kanalåtgärdsaktiviteterna.
+* På dessa resor kan du inte utföra följande åtgärder: testa, publicera, duplicera, skapa en ny version, stänga eller kopiera till en annan sandlåda. Dessa begränsningar gäller så länge som **Meddelanden** verksamhet förekommer på dessa resor. Du kan vänta på att migreringsprocessen ska köras och uppdateras **Meddelanden** aktiviteter för att kanalisera funktionsmakron eller så kan du ta bort dessa **Meddelanden** manuellt.
 
 ### Kommer det att finnas tillgång till miljön under migreringsprocessen?
 
