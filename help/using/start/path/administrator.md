@@ -3,9 +3,9 @@ title: Journey Optimizer Get Started for System Admin
 description: Som systemadministratör får du lära dig mer om hur du arbetar med Journey Optimizer
 level: Intermediate
 exl-id: 24f85ced-aa45-493f-b2c4-7c7b58351b38
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: 63e250919cac5f7a3c010805d3333d204a6f99dc
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '725'
 ht-degree: 2%
 
 ---
@@ -37,18 +37,18 @@ Dessutom måste du lägga till användare som behöver åtkomst till Assets Esse
 
 Vid åtkomst [!DNL Journey Optimizer] För första gången tilldelas du en produktionssandlåda och ett visst antal IP-adresser beroende på ditt kontrakt.
 
-Om du vill kunna skapa dina resor och skicka meddelanden går du till **ADMINISTRATION** -menyn. Bläddra i **[!UICONTROL Channels]** -menyn för att konfigurera meddelanden och ytor (t.ex. förinställningar).
+Om du vill kunna skapa dina resor och skicka meddelanden går du till **ADMINISTRATION** -menyn. Bläddra i **[!UICONTROL Channels]** -menyn för att konfigurera meddelanden och kanalytor (t.ex. meddelandeförinställningar).
 
 >[!NOTE]
 >Som **Systemadministratör** om du inte ser **[!UICONTROL Channels]** menyn i [!DNL Journey Optimizer], uppdatera dina behörigheter i [Admin Console](https://adminconsole.adobe.com/){_blank}. Lär dig hur du uppdaterar din produktprofil i [den här sidan](../../administration/permissions.md#edit-product-profile).
 
 Följ stegen nedan:
 
-1. **Konfigurera meddelanden och kanaler**: definiera ytor, anpassa och anpassa inställningar för e-post och push-meddelanden
+1. **Konfigurera meddelanden och kanaler**: definiera ytor, anpassa och anpassa inställningar för e-post, sms och push-meddelanden
 
    * Definiera **inställningar för push-meddelanden** i båda [!DNL Adobe Experience Platform] och [!DNL Adobe Experience Platform Launch]. [Läs mer](../../configuration/push-gs.md)
 
-   * Skapa **kanalytor** (dvs. meddelandeförinställningar) för att konfigurera alla tekniska parametrar som krävs för e-post och push-meddelanden. [Läs mer](../../configuration/message-presets.md)
+   * Skapa **kanalytor** (t.ex. meddelandeförinställningar) för att konfigurera alla tekniska parametrar som krävs för e-post, sms och push-meddelanden. [Läs mer](../../configuration/message-presets.md)
 
    * Konfigurera **SMS-kanal** för att konfigurera alla tekniska parametrar som krävs för SMS. [Läs mer](../../configuration/sms-configuration.md)
 

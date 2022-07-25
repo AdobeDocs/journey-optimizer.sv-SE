@@ -3,9 +3,9 @@ title: Journey Optimizer Get Started for Data Engineer
 description: Som datatekniker får du lära dig mer om hur du arbetar med Journey Optimizer
 level: Intermediate
 exl-id: 8beaafc2-e68d-46a1-be5c-e70892575bfb
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: 63e250919cac5f7a3c010805d3333d204a6f99dc
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '576'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ Steg för att skapa ett identitetsnamnutrymme och en datauppsättning som är ak
 
 1. **Konfigurera källkopplingar**. Med Adobe Journey Optimzer kan data hämtas från externa källor samtidigt som du kan strukturera, märka och förbättra inkommande data med hjälp av plattformstjänster. Du kan importera data från en mängd olika källor, till exempel Adobe-program, molnbaserade lager, databaser och många andra. Läs mer om källanslutningar [på den här sidan](../get-started-sources.md).
 
-1. **Skapa testprofiler**. Testprofiler krävs när du använder [testläge](../../building-journeys/testing-the-journey.md) på en resa och [förhandsgranska och testa dina meddelanden](../../design/preview.md) före sändning. Upptäck steg för att skapa testprofiler [på den här sidan](../../segment/creating-test-profiles.md).
+1. **Skapa testprofiler**. Testprofiler krävs när du använder [testläge](../../building-journeys/testing-the-journey.md) på en resa och [förhandsgranska och testa dina meddelanden](../../design/preview.md) före sändning. Steg för att skapa testprofiler är detaljerade [på den här sidan](../../segment/creating-test-profiles.md).
 
 
 För att kunna skicka meddelanden under resor måste du dessutom konfigurera **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** och **[!UICONTROL Actions]**. Läs mer [i det här avsnittet](../../configuration/about-data-sources-events-actions.md).
@@ -42,4 +42,4 @@ För att kunna skicka meddelanden under resor måste du dessutom konfigurera **[
 
 * **Händelser** gör det möjligt för er att utlösa era resor helt och hållet för att skicka meddelanden i realtid till den person som kommer in på resan. I händelsekonfigurationen konfigurerar du de händelser som förväntas under resorna. Data för inkommande händelser normaliseras enligt Adobe Experience Data Model (XDM). Händelser kommer från API för strömningsinmatning för autentiserade och ej autentiserade händelser (till exempel händelser i Adobe Mobile SDK). Läs mer om evenemang [i det här avsnittet](../../event/about-events.md).
 
-* [!DNL Journey Optimizer] innehåller inbyggda meddelandefunktioner: kan ni skapa meddelanden inom en resa och utforma innehållet. Om du använder ett tredjepartssystem för att skicka meddelanden, till exempel Adobe Campaign, skapar du en **anpassad åtgärd**. Läs mer om åtgärder i det här [i det här avsnittet](../../action/action.md).
+* [!DNL Journey Optimizer] följer med [inbyggda meddelandefunktioner](../../messages/get-started-content.md): kan ni skapa meddelanden inom en resa och utforma innehållet. Om du använder ett tredjepartssystem för att skicka meddelanden, till exempel Adobe Campaign, skapar du en **anpassad åtgärd**. Läs mer om åtgärder i det här [i det här avsnittet](../../action/action.md).
