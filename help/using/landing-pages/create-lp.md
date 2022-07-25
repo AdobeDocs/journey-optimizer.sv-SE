@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: f4b3a9de47e724f7b23df8a02b8106c131cf1b12
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1082'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Du kan också ta bort, duplicera och avpublicera en landningssida.
 
 >[!CAUTION]
 >
->Om du avpublicerar en landningssida som det refereras till i ett opublicerat meddelande, kan meddelandet inte publiceras förrän landningssidan publiceras igen. Om meddelandet redan har publicerats bryts länken till landningssidan och en felsida visas.
+>Om du avpublicerar en landningssida som refereras i ett opublicerat meddelande bryts länken till landningssidan och en felsida visas.
 
 Klicka på de tre punkterna bredvid en landningssida för att välja önskad åtgärd.
 

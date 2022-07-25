@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: 8a68d1e6d498ef3055c703d4e73471ab6d7bff40
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1284'
 ht-degree: 7%
 
 ---
@@ -31,9 +31,9 @@ För att kunna skicka meddelanden med resor krävs följande konfigurationer:
 
    ![](assets/jo-datasource.png)
 
-1. **Konfigurera en åtgärd**: Journey Optimizer meddelandefunktioner är inbyggda, du behöver bara utforma ditt innehåll och publicera ditt budskap. Se [det här avsnittet](../messages/get-started-content.md). Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en anpassad åtgärd. Läs mer om detta [section](../action/action.md). Det här steget utförs av en **teknisk användare**.
+1. **Konfigurera en åtgärd**: Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en anpassad åtgärd. Läs mer om detta [section](../action/action.md). Det här steget utförs av en **teknisk användare**. Om du använder Journey Optimizer inbyggda meddelandefunktioner behöver du bara lägga till en kanalåtgärd på kundresan och utforma innehållet. Se [det här avsnittet](../messages/get-started-content.md).
 
-   ![](assets/create-content-push.png)
+   ![](assets/custom2.png)
 
 ## Bygg upp din resa{#jo-build}
 
@@ -60,7 +60,7 @@ Här är de viktigaste stegen för att skicka meddelanden via resor:
 
    ![](assets/read-segment.png)
 
-1. Dra och släpp nästa steg som personen kommer att följa. Du kan till exempel lägga till ett villkor följt av ett meddelande. Mer information om aktiviteter finns i [det här avsnittet](using-the-journey-designer.md).
+1. Dra och släpp nästa steg som personen kommer att följa. Du kan till exempel lägga till ett villkor följt av en kanalåtgärd. Mer information om aktiviteter finns i [det här avsnittet](using-the-journey-designer.md).
 
 1. Testa din resa med testprofiler. Läs mer om detta [section](testing-the-journey.md)
 

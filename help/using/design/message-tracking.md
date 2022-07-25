@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Använd [!DNL Journey Optimizer] för att lägga till länkar till ditt innehål
 
 ## Aktivera spårning {#enable-tracking}
 
-Du kan aktivera spårning på e-postmeddelandenivå genom att kontrollera **[!UICONTROL Open Tracking for email]** och/eller **[!UICONTROL Click Tracking for email]** alternativ när [skapa ett meddelande](../messages/get-started-content.md).
+Du kan aktivera spårning på e-postmeddelandenivå genom att kontrollera **[!UICONTROL Email opens]** och/eller **[!UICONTROL Click on email]** alternativ när [skapa ett meddelande](../messages/get-started-content.md).
 
 ![](assets/message-tracking.png)
 
@@ -29,8 +29,8 @@ Du kan aktivera spårning på e-postmeddelandenivå genom att kontrollera **[!UI
 
 På så sätt kan du spåra mottagarnas beteende via:
 
-* **[!UICONTROL Open Tracking for email]**: Meddelanden som har öppnats.
-* **[!UICONTROL Click Tracking for email]**: Klicka på länkar i ett e-postmeddelande.
+* **[!UICONTROL Email opens]**: Meddelanden som har öppnats.
+* **[!UICONTROL Click on email]**: Klicka på länkar i ett e-postmeddelande.
 
 ## Infoga länkar {#insert-links}
 
@@ -75,7 +75,7 @@ Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
 
 >[!NOTE]
 >
->E-postmeddelanden av marknadsföringstyp måste innehålla en [länk för avanmälan](../messages/consent.md#opt-out-management), vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [meddelandeförinställningsnivå](../configuration/message-presets.md#email-type) och när [skapar meddelandet](../messages/get-started-content.md#create-new-message).
+>E-postmeddelanden av marknadsföringstyp måste innehålla en [länk för avanmälan](../messages/consent.md#opt-out-management), vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [kanalyta](../configuration/message-presets.md#email-type) (t.ex. meddelandeförinställning) nivå och när [skapar meddelandet](../messages/get-started-content.md#create-new-message).
 
 ## Länka till en spegelsida {#mirror-page}
 
@@ -122,6 +122,4 @@ The [E-postdesigner](create-email-content.md) gör att du kan hantera spårade U
    * **[!UICONTROL Mirror page]**: Den här URL:en är en URL för en spegelsida.
    * **[!UICONTROL Never]**: Aktiverar aldrig spårning av den här URL:en. <!--This information is saved: if the URL appears again in a future message, its tracking is automatically deactivated.-->
 
-Antalet meddelanden som har öppnats och antalet länkar som har klickats visas i [Fliken Körningar](../reports/message-monitoring.md).
-
-Rapportering om öppningar och klick finns i [Email Live-rapport](../reports/email-live-report.md) och i [Global e-postrapport](../reports/email-global-report.md).
+Rapportering om öppningar och klick finns i [Live-rapport](../reports/live-report.md) och i [Global rapport](../reports/global-report.md).

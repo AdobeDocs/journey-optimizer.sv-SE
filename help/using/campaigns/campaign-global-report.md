@@ -7,9 +7,10 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 6177a33edeb3b8381c3eb5609762b4d974dc93e3
+exl-id: fa64f5b8-75f2-40e6-8566-5766fafe6cd6
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1213'
 ht-degree: 0%
 
 ---
@@ -49,8 +50,6 @@ From your Campaign **[!UICONTROL Global report]**, the **[!UICONTROL Experimenta
 ## Fliken E-post {#email-global}
 
 Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Email]** -fliken innehåller huvudinformationen om de e-postleveranser som skickas i din kampanj.
-
-En detaljerad rapport om en viss e-postleverans finns i [E-posta global rapport](../reports/email-global-report.md) -avsnitt.
 
 The **[!UICONTROL Email Sending Statistics]** diagram visar hur framgångsrik leveransen är:
 
@@ -122,7 +121,7 @@ The **[!UICONTROL Email - Top recipient domain]** diagram och tabeller visar vil
 
 >[!NOTE]
 >
->The **[!UICONTROL Optimized vs non optimized]** och **[!UICONTROL Send time optimization]**  widgetar är bara tillgängliga om alternativet för optimering av sändningstid är aktiverat för leverans. Mer information om optimering av sändningstid finns i [page](../building-journeys/journeys-message.md#send-time-optimization).
+>The **[!UICONTROL Optimized vs non optimized]** och **[!UICONTROL Send time optimization]**  widgetar är bara tillgängliga om alternativet för optimering av sändningstid är aktiverat för leverans. Mer information om optimering av sändningstid finns i [den här sidan](../messages/send-time-optimization.md).
 
 The **[!UICONTROL Optimized vs non optimized]** diagram anger huvudinformationen i förhållande till meddelandet, oavsett om de är optimerade eller inte:
 
@@ -138,8 +137,6 @@ The **[!UICONTROL Send time optimization]** information om leveransens framgång
 ## Push-flik {#push-global}
 
 Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Push]** -fliken innehåller huvudinformationen i förhållande till push-leveranser som skickas i kampanjen.
-
-En detaljerad rapport om en viss push-leverans finns i [Push Global-rapport](../reports/push-global-report.md).
 
 The **[!UICONTROL Push notification - Sending statistics]** tabellen visar huvudinformationen i förhållande till push-meddelanden med diagram och KPI:er:
 
@@ -187,7 +184,7 @@ The **[!UICONTROL Push notification summary]** diagrammet innehåller data som �
 
 >[!NOTE]
 >
->The **[!UICONTROL Optimized vs non optimized]** och **[!UICONTROL Send time optimization]**  widgetar är bara tillgängliga om alternativet för optimering av sändningstid är aktiverat för leverans. Mer information om optimering av sändningstid finns i [page](../building-journeys/journeys-message.md#send-time-optimization).
+>The **[!UICONTROL Optimized vs non optimized]** och **[!UICONTROL Send time optimization]**  widgetar är bara tillgängliga om alternativet för optimering av sändningstid är aktiverat för leverans. Mer information om optimering av sändningstid finns i [den här sidan](../messages/send-time-optimization.md).
 
 The **[!UICONTROL Optimized vs non optimized]** diagram anger huvudinformationen i förhållande till meddelandet, oavsett om de är optimerade eller inte:
 

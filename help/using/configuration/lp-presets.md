@@ -4,9 +4,9 @@ description: Lär dig hur du konfigurerar miljön för att skapa och använda la
 role: Admin
 level: Intermediate
 exl-id: 7cf1f083-bef0-40b5-8ddd-920a9d108eca
-source-git-commit: a036f53b88425d64281d2ac530016d638e2d13c9
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '300'
 ht-degree: 2%
 
 ---
@@ -74,10 +74,10 @@ Följ stegen nedan för att skapa en förinställning för landningssidan.
    ![](assets/lp-preset-active-temp.png)
 
 Du är nu redo att [skapa landningssidor](../landing-pages/create-lp.md) in [!DNL Journey Optimizer].
-
+<!--
 >[!NOTE]
 >
->Lär dig hur du skapar meddelandeförinställningar för push-meddelanden och e-postmeddelanden i [det här avsnittet](message-presets.md).
+>Learn how to create channel surfaces for push notifications and emails in [this section](message-presets.md).-->
 
 **Relaterade ämnen**:
 

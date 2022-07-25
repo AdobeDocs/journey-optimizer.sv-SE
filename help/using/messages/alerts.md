@@ -6,22 +6,22 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 89f445f2-df8a-4d2d-afe8-4f8b9cb001d9
-source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
 
-# Kontrollera aviseringar i meddelanden {#publish-manage-messages}
+# Kontrollera aviseringar i meddelanden {#messages-alerts}
 
-## Kontrollerar före publicering {#message-alerting}
+## Kontroller före sändning {#message-alerting}
 
-När du skapar ett meddelande varnar du när du behöver vidta viktiga åtgärder innan du publicerar meddelandet.
+När du utformar meddelanden visas varningar i gränssnittet när nyckelinställningar saknas.
 
-Varningar visas högst upp till höger på skärmen, som visas nedan:
+Varningar visas högst upp till höger på skärmen när meddelandeinnehållet redigeras.
 
-![](assets/message-alerts.png)
+![](assets/alerts-details.png)
 
 >[!NOTE]
 >
@@ -31,13 +31,13 @@ Två typer av varningar kan inträffa:
 
 * **Varningar** hänvisa till rekommendationer och bästa praxis. Ett meddelande visas till exempel om länken för avanmälan saknas.
 
-* **Fel** förhindrar att du publicerar meddelandet så länge de inte är lösta. Du får t.ex. en varning om att ämnesraden saknas.
+* **Fel** hindra dig från att testa eller aktivera resan så länge som de inte är lösta. Du får t.ex. en varning om att ämnesraden saknas.
 
 Alla möjliga varningar och fel är detaljerade [nedan](#alerts-and-warnings).
 
 >[!CAUTION]
 >
-> Du måste lösa alla **fel** aviseringar före publicering.
+> Du måste lösa alla **fel** varningar innan resan testas eller aktiveras med meddelandet.
 
 ## Lista över varningar och fel {#alerts-and-warnings}
 
@@ -49,7 +49,7 @@ De inställningar och element som kontrolleras av systemet visas nedan. Du hitta
 
    >[!NOTE]
    >
-   >E-postmeddelanden av marknadsföringstyp måste innehålla en länk för avanmälan, vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [meddelandeförinställningsnivå](../configuration/message-presets.md#email-type) och när [skapar meddelandet](get-started-content.md#create-new-message).
+   >E-postmeddelanden av marknadsföringstyp måste innehålla en länk för avanmälan, vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [kanalyta](../configuration/message-presets.md#email-type) (t.ex. meddelandeförinställning) nivå och när [skapar meddelandet](get-started-content.md#create-new-message).
 
 * **[!UICONTROL Text version of HTML is empty]**: Glöm inte att definiera en textversion av e-posttexten, eftersom den kommer att användas när HTML inte kan visas. Lär dig hur du skapar textversionen i [det här avsnittet](../design/text-version-email.md).
 
@@ -67,13 +67,13 @@ De inställningar och element som kontrolleras av systemet visas nedan. Du hitta
 
 * **[!UICONTROL The email version of the message is empty]**: det här felet visas när e-postinnehållet inte har konfigurerats. Lär dig designa e-postinnehåll i [det här avsnittet](../design/design-emails.md).
 
-* **[!UICONTROL Preset doesn’t exist]**: Du kan inte publicera meddelandet om den förinställning du har valt tas bort efter att meddelandet har skapats. Om det här felet inträffar väljer du en annan förinställning i meddelandet **[!UICONTROL Properties]**. Läs mer om varumärkesprofilering i [det här avsnittet](../configuration/about-subdomain-delegation.md).
+* **[!UICONTROL Surface doesn’t exist]**: Du kan inte använda meddelandet om den yta som du har markerat tas bort efter att meddelandet har skapats. Om det här felet inträffar väljer du en annan yta i meddelandet **[!UICONTROL Properties]**. Läs mer om kanalytor i [det här avsnittet](../configuration/message-presets.md).
 
 * **[!UICONTROL Push iOS/Android payload has exceeded limit of 4KB]**: storleken på push-meddelanden får inte överskrida 4 kB. Om du vill iaktta den här gränsen försöker du minska användningen av bilder eller känslolägesikoner. Lär dig hur du hanterar ditt push-meddelandeinnehåll i [det här avsnittet](create-push.md).
 
 >[!CAUTION]
 >
-> För att kunna publicera ditt meddelande måste du åtgärda alla **fel** varningar.
+> För att kunna använda meddelandet måste du åtgärda alla **fel** varningar.
 
 <!--Other issues can stop publication such as:
 * The push notification title is empty-->

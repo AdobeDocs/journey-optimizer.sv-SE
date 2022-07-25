@@ -2,9 +2,9 @@
 title: Information om föregående version (2021)
 description: Versionsinformation om Journey Optimizer 2021
 exl-id: 0e43be98-f471-4860-be84-8f99ab93e983
-source-git-commit: 0ca491315e214e3c12bec11a93da1a2b98b493b6
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '2070'
+source-wordcount: '2067'
 ht-degree: 9%
 
 ---
@@ -86,7 +86,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 
 **Rapportering**
 
-* **Dataformat i global vy** - Nu kan du växla mellan siffror och procenttal i dialogrutan **Global vy** i **Körning** -fliken. [Läs mer](../reports/message-monitoring.md)
+* **Dataformat i global vy** - Nu kan du växla mellan siffror och procenttal i dialogrutan **Global vy** i **Körning** -fliken.
 
 
 **Administrering**
@@ -126,7 +126,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 <td>
 <p>Nya mätvärden är tillgängliga vid rapportering: Riktade och exkluderade för e-post- och push-meddelanden visas både i live- och globala rapporter. </br> Observera att du måste återställa de olika rapportinstrumentpanelerna för varje kanal och rapporttyp för att få tillgång till de senaste mätvärdena. Mer information om anpassning av kontrollpanelen finns i <a href="../reports/live-report.md">detaljerad dokumentation.</a></p>
 <p>En ny kolumn i meddelandekörningslistan visar antalet målprofiler för varje meddelandekörning. </p>
-<p>Mer information finns i den <a href="../reports/message-monitoring.md">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="../reports/global-report.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -180,7 +180,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 <td>
 <p>Skicka automatiskt ditt push- eller e-postmeddelande vid den tidpunkt som passar varje kund du interagerar med Adobe Journey Optimizer. Med optimering för sändningstid, som bygger på Adobe:s AI-tjänster, förutspås den bästa tidpunkten för att skicka e-post eller push-meddelanden för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser.</p>
 <p>Den här funktionen är för närvarande i betaversion och endast tillgänglig för betakunder. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.</p>
-<p>Mer information finns i den <a href="../building-journeys/journeys-message.md#send-time-optimization">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="../messages/send-time-optimization.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -274,7 +274,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 
 **Personalisering**
 
-* **Uttrycksredigeraren** - Du kan nu enkelt lägga till ett reservvärde när du definierar personalisering: när anpassningsfältet är tomt för en profil visas reservvärdet. [Läs mer](../personalization/functions/helpers.md)
+* **Uttrycksredigerare** - Du kan nu enkelt lägga till ett reservvärde när du definierar personalisering: när anpassningsfältet är tomt för en profil visas reservvärdet. [Läs mer](../personalization/functions/helpers.md)
 
 **E-postkonfiguration**
 
@@ -289,8 +289,8 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 
 * Korrigerade ett tillgänglighetsproblem vid navigering på meddelandeflikar.
 * Ett lokaliseringsfel har korrigerats i e-postdesignerns etiketter.
-* Ett problem har korrigerats när du valde mer än en nod i en resa och klickade på Ta bort på egenskapspanelen.
-* Korrigerade ett fel som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
+* Ett problem har korrigerats när du valde mer än en nod i en resa och klickade på Ta bort i egenskapsfönstret.
+* Korrigerade ett problem som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
 * Du kan nu ta reda på varför en meddelandeförinställning inte kunde skapas med hjälp av en tydligare varning i användargränssnittet.
 
 
@@ -342,7 +342,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 * På skärmen för reselistan har filtret för resetyp lagts till. [Läs mer](../start/user-interface.md#filter-lists)
 * The **[!UICONTROL Throttling rate]** parametern har lagts till i Läs-segmentsaktiviteten. [Läs mer](../building-journeys/read-segment.md#configuring-segment-trigger-activity)
 
-**Förhandsgranska och testa meddelanden**
+**Förhandsgranska och testa**
 
 * Identitet och namnutrymme visas nu i **[!UICONTROL Preview]** skärm. [Läs mer](../design/preview.md#preview-your-messages)
 * Antalet testmeddelanden för korrektur är nu begränsat till 10.

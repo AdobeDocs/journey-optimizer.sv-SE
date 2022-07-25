@@ -6,18 +6,18 @@ feature: Push
 role: Admin
 level: Intermediate
 exl-id: 9718c4b6-2558-4dfd-9d8f-f8845def19ba
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
 
 # Kom igång med push-konfiguration {#get-started-push}
 
-Den här sidan hjälper dig att konfigurera och förstå viktiga tjänster och arbetsflöden som är kopplade till push-meddelanden i [!DNL Journey Optimizer]. Lär dig hur du skapar push-meddelanden i [den här sidan](../messages/create-push.md).
+Den här sidan hjälper dig att konfigurera och förstå viktiga tjänster och arbetsflöden som är kopplade till push-meddelanden i [!DNL Journey Optimizer]. Lär dig hur du skapar push-meddelanden på [den här sidan](../messages/create-push.md).
 
-Steg för att konfigurera push-kanal i [!DNL Adobe Journey Optimizer] beskrivs i [den här sidan](push-configuration.md).
+Steg för att konfigurera push-kanal i [!DNL Adobe Journey Optimizer] anges på [den här sidan](push-configuration.md).
 
 ## Push-meddelanden och [!DNL Adobe Journey Optimizer] {#push-notifications-and-journey-optimizer}
 
@@ -28,7 +28,7 @@ Följande bild visar vilka system och tjänster som är kopplade till tillhöran
 1. Registrering av din varumärkesanpassade mobilapp (Android eller iOS) med Apple APN:er och Google FCM push messaging services
 1. Meddelandetjänster genererar en push-token, vilket är en identifierare som [!DNL Adobe Journey Optimizer] använder för att ange den specifika enheten som mål med ett push-meddelande.
 1. Den tidigare genererade push-token skickas till Adobe Experience Platform och synkroniseras med kundprofilen i realtid. detta görs med OOTB med ett enkelt sätt att integrera klient-SDK
-1. Push-meddelanden skapas i [!DNL Adobe Journey Optimizer], push-meddelanden skapas mot en meddelandeförinställning
+1. Push-meddelanden skapas i [!DNL Adobe Journey Optimizer], skickas push-meddelanden mot en kanalyta (d.v.s. meddelandeförinställning)
 1. Push-meddelanden kan finnas på arbetsytan under orkestration i Journeys
 1. Vid en Journey-publikation är kundprofiler baserade på resevillkor kvalificerade att ta emot push-meddelanden, push-meddelandenyttolaster personaliseras i det här steget
 1. Personaliserade push-nyttolaster vidarebefordras till en intern push-meddelandeleveranstjänst

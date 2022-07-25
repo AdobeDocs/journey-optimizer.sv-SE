@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 80a5edec92377753e6bfd96699591b1a87e25248
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -47,10 +47,6 @@ Prestationsgarantier och statiska gränser för beslutshantering anges i [Produk
 * Du kan inte placera två åtgärder parallellt. Du måste lägga till dem en i taget.
 * Det finns en teknisk begränsning av resorna idag som förhindrar att en profil förekommer flera gånger under samma resa samtidigt. En profil kan fortfarande återinträda i en resa (baserat på en inställning), men kan inte göra det förrän han har avslutat hela den tidigare instansen av resan.
 * I de flesta fall kan en profil inte finnas flera gånger på samma resa samtidigt. Om återinträde är aktiverat kan en profil återansluta en resa, men kan inte göra det förrän den tidigare instansen av resan har avslutats helt. [Läs mer](../building-journeys/journey-end.md)
-
-### Meddelandeåtgärd {#message-action-g}
-
-* När du lägger till ett flerkanalsmeddelande skickas två meddelanden.
 
 ### Reseversioner {#journey-versions-g}
 

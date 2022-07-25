@@ -7,20 +7,20 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 6177a33edeb3b8381c3eb5609762b4d974dc93e3
+exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 2%
+source-wordcount: '303'
+ht-degree: 1%
 
 ---
-
 
 # Kom igång med kampanjer {#get-started-campaigns}
 
 >[!CONTEXTUALHELP]
 >id="campaigns_list"
 >title="Kampanjer"
->abstract="Med Campaigns kan ni leverera engångsinnehåll till ett visst segment i flera kanaler. Innan du skapar en ny kampanj måste du se till att du har en meddelandeförinställning och ett Adobe Experience Platform-segment klart att användas."
+>abstract="Med Campaigns kan ni leverera engångsinnehåll till ett visst segment i flera kanaler. Innan du skapar en ny kampanj måste du se till att du har en kanalyta (t.ex. en meddelandeförinställning) och ett Adobe Experience Platform-segment som är klart att användas."
 
 ## Om kampanjer {#about}
 

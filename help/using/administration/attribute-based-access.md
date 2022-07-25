@@ -8,9 +8,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 162b0848-313a-447e-9237-5a6dbc8102c6
-source-git-commit: 630b8ef5a140709161b24256083b2104be5b6121
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Genom att använda en **[!UICONTROL Label]** till **[!UICONTROL Field name]** Ob
 **[!UICONTROL Roles]** är en uppsättning användare som delar samma behörigheter, etiketter och sandlådor inom organisationen. Varje användare som tillhör en **[!UICONTROL Role]** har rätt till de program och tjänster i Adobe som ingår i produkten.
 Du kan också skapa egna **[!UICONTROL Roles]** om du vill finjustera användarnas åtkomst till vissa funktioner eller objekt i gränssnittet.
 
-Vi vill nu ge utvalda användare åtkomst till **Nationalitet** fält, märkt C2. För att göra det måste vi skapa en ny **[!UICONTROL Role]** med en specifik uppsättning användare och ge dem etiketten C2 så att de kan använda **Nationalitet** information i en **[!UICONTROL Message]** eller **[!UICONTROL Journey]**.
+Vi vill nu ge utvalda användare åtkomst till **Nationalitet** fält, märkt C2. För att göra det måste vi skapa en ny **[!UICONTROL Role]** med en specifik uppsättning användare och ge dem etiketten C2 så att de kan använda **Nationalitet** information i en **[!UICONTROL Journey]**.
 
 1. Från [!DNL Permissions] produkt, välj **[!UICONTROL Role]** från den vänstra panelmenyn och klicka på **[!UICONTROL Create role]**. Observera att du även kan lägga till **[!UICONTROL Label]** till inbyggda roller.
 

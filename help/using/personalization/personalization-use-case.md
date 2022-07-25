@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 7d9c3d31-af57-4f41-aa23-6efa5b785260
-source-git-commit: 8a68d1e6d498ef3055c703d4e73471ab6d7bff40
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -25,15 +25,24 @@ Målet med det här exemplet är att skicka en händelse till [!DNL Journey Opti
 
 I detta fall krävs följande krav:
 
-* skapa och utforma ett push-meddelande, utan att publicera det. Se detta [section](../messages/get-started-content.md).
 * konfigurera en orderhändelse som innehåller ordernummer, status och artikelnamn. Se detta [section](../event/about-events.md).
 * skapa ett beslut, se [section](../offers/offer-activities/create-offer-activities.md).
 
-## Steg 1 - Lägg till personalisering i profil {#add-perso}
+## Steg 1 - Skapa resan {#create-journey}
 
-1. Klicka på **[!UICONTROL Message]** och markera meddelandet.
+1. Klicka på **[!UICONTROL Journeys]** och skapa en ny resa.
 
-   ![](assets/perso-uc.png)
+   ![](assets/perso-uc4.png)
+
+1. Lägg till ditt tävlingsbidrag och en **Push** Åtgärdsaktivitet.
+
+   ![](assets/perso-uc5.png)
+
+1. Konfigurera och utforma push-meddelanden. Se detta [section](../messages/get-started-content.md).
+
+## Steg 2 - Lägg till personalisering i profil {#add-perso}
+
+1. I **Push** aktivitet, klicka **Redigera innehåll**.
 
 1. Klicka på **Titel** fält.
 
@@ -43,45 +52,15 @@ I detta fall krävs följande krav:
 
    ![](assets/perso-uc3.png)
 
-   >[!NOTE]
-   >
-   >Lämna meddelandet i utkast. Publicera den inte än.
-
-## Steg 2 - Skapa resan {#create-journey}
-
-1. Klicka på **[!UICONTROL Journeys]** och skapa en ny resa.
-
-   ![](assets/perso-uc4.png)
-
-1. Lägg till ditt tävlingsbidrag och en **Meddelande** aktivitet.
-
-   ![](assets/perso-uc5.png)
-
-1. I **Meddelande** väljer du det meddelande som skapades tidigare. Klicka **OK**.
-
-   ![](assets/perso-uc6.png)
-
-   Ett meddelande visas som informerar dig om att informationen om tävlingshändelsen och reseegenskaperna har skickats till meddelandet.
-
-   ![](assets/perso-uc7.png)
-
-   >[!NOTE]
-   >
-   >Meddelandet visas med en varningsikon. Det beror på att meddelandet inte har publicerats än.
-
 ## Steg 3 - Lägg till personalisering på kontextuella data {#add-perso-contextual-data}
 
-1. Från **Meddelande** aktivitet, klicka på **Öppna meddelandet** ikon. Meddelandet öppnas på en ny flik.
-
-   ![](assets/perso-uc8.png)
-
-1. Klicka på **Titel** fält.
+1. I **Push** aktivitet, klicka **Redigera innehåll** och klicka på **Titel** fält.
 
    ![](assets/perso-uc9.png)
 
 1. Välj **Sammanhangsberoende attribut** -menyn. Sammanhangsberoende attribut är bara tillgängliga om en resa har skickat kontextuella data till meddelandet. Klicka **Journey Orchestration**. Följande sammanhangsberoende information visas:
 
-   * **Händelser**: den här kategorin grupperar alla fält från händelser som placerats före **Meddelande** verksamhet under resan.
+   * **Händelser**: I den här kategorin grupperas alla fält från händelser som placerats före kanalåtgärdsaktiviteten på resan.
    * **Reseegenskaper**: de tekniska fält som rör resan för en viss profil, t.ex. rese-ID eller de specifika fel som påträffats. Läs mer i [Journey Orchestration dokumentation](../building-journeys/expression/journey-properties.md).
 
    ![](assets/perso-uc10.png)
@@ -106,13 +85,9 @@ I detta fall krävs följande krav:
 
    ![](assets/perso-uc15.png)
 
-1. Publicera meddelandet nu.
-
-   ![](assets/perso-uc16.png)
-
 ## Steg 4 - Testa och publicera resan {#test-publish}
 
-1. Öppna resan igen. Om resan redan är öppen ser du till att du uppdaterar sidan. Nu när meddelandet har publicerats ser du att det inte finns något fel under resan. Klicka på **Testa** och sedan klicka **Utlös en händelse**.
+1. Klicka på **Testa** och sedan klicka **Utlös en händelse**.
 
    ![](assets/perso-uc17.png)
 

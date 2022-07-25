@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: bf738ebac09d5c852872a8ea85f6532ad9d4222d
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1106'
 ht-degree: 39%
 
 ---
@@ -47,10 +47,9 @@ ht-degree: 39%
    + [Skapa ett e-postmeddelande](using/messages/create-email.md)
    + [Skapa ett push-meddelande](using/messages/create-push.md)
    + [Skapa ett SMS-meddelande](using/messages/create-sms.md)
-   + Validera och publicera {#validate}
-      + [Kontrollera aviseringar](using/messages/alerts.md)
-      + [Publicera meddelanden](using/messages/publish-manage-message.md)
+   + [Kontrollera aviseringar](using/messages/alerts.md)
    + [Hantera medgivande](using/messages/consent.md)
+   + [Tidsoptimering för sändning](using/messages/send-time-optimization.md)
 + Designinnehåll {#design}
    + [Kom igång med e-postdesign](using/design/design-emails.md)
    + [Börja från början ](using/design/create-email-content.md)
@@ -138,7 +137,7 @@ ht-degree: 39%
       + [End](using/building-journeys/end-activity.md)
       + [Vänta](using/building-journeys/wait-activity.md)
       + [Lässegment](using/building-journeys/read-segment.md)
-      + [Meddelande](using/building-journeys/journeys-message.md)
+      + [E-post, SMS, push](using/building-journeys/journeys-message.md)
       + [Anpassade åtgärder](using/building-journeys/using-custom-actions.md)
       + [Adobe Campaign Standard-åtgärder](using/building-journeys/using-adobe-campaign-standard.md)
       + [Adobe Campaign v7/v8-åtgärder](using/building-journeys/using-adobe-campaign-classic.md)
@@ -238,19 +237,14 @@ ht-degree: 39%
       + [Skicka ett meddelande till prenumeranter](using/building-journeys/message-to-subscribers-uc.md)
       + [Rita upp leveranser](using/building-journeys/ramp-up-deliveries-uc.md)
 + Spåra och övervaka {#reporting}
-   + [Meddelandeövervakning](using/reports/message-monitoring.md)
    + Live-rapport {#live-report}
       + [Åtkomst till Live-rapportkontrollpanelen](using/reports/live-report.md)
       + [Journey Live-rapport](using/reports/journey-live-report.md)
-      + [Email Live-rapport](using/reports/email-live-report.md)
-      + [Push Live-rapport](using/reports/push-live-report.md)
       + [Live-rapport för landningssida](using/reports/lp-report-live.md)
       + [Live-rapport om prenumerationslista](using/reports/subscription-report-live.md)
    + Global rapport {#global-report}
       + [Åtkomst till instrumentpanel för global rapport](using/reports/global-report.md)
       + [Rapport om global resa](using/reports/journey-global-report.md)
-      + [Global e-postrapport](using/reports/email-global-report.md)
-      + [Push Global-rapport](using/reports/push-global-report.md)
       + [Global rapport för landningssida](using/reports/lp-report-global.md)
       + [Global rapport om prenumerationslista](using/reports/subscription-report-global.md)
    + Reserapporter {#reports}
@@ -385,8 +379,8 @@ ht-degree: 39%
             + [Återförsök](using/configuration/retries.md)
             + [Tillåtelselista](using/configuration/allow-list.md)
       + [Konfigurera SMS-kanal](using/configuration/sms-configuration.md)
-      + Ställ in meddelandeförinställningar {#set-up-message-presets}
-         + [Skapa meddelandeförinställningar](using/configuration/message-presets.md)
+      + Konfigurera kanalytor {#set-up-message-presets}
+         + [Skapa kanalytor](using/configuration/message-presets.md)
          + [Konfigurera e-postinställningar](using/configuration/email-settings.md)
          + [Använd BCC-e-post](using/configuration/bcc-email.md)
       + [Hantera körningsadresser](using/configuration/primary-email-addresses.md)

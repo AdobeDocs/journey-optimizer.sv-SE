@@ -3,9 +3,9 @@ title: Journey Optimizer Get Started for System Admin
 description: Som systemadministratör får du lära dig mer om hur du arbetar med Journey Optimizer
 level: Intermediate
 exl-id: 24f85ced-aa45-493f-b2c4-7c7b58351b38
-source-git-commit: e6924d1bffca7f56f2e5020a0af429b0f2b1c811
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '722'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ Läs mer om åtkomsthantering på följande sidor:
 
 1. **Förstå produktprofiler**. Produktprofiler är en uppsättning enhetsbehörigheter som ger användarna tillgång till vissa funktioner eller objekt i gränssnittet. Läs mer i [Färdiga produktprofiler](../../administration/ootb-product-profiles.md) -avsnitt.
 
-1. **Ange behörigheter** för produktprofiler, inklusive **Sandlådor** och ge teammedlemmarna tillgång genom att tilldela dem till olika produktprofiler. Det här steget utförs i [Admin Console](https://adminconsole.adobe.com/){_blank}. Behörigheter är enhetsbehörigheter som gör att du kan definiera de behörigheter som tilldelats till **[!UICONTROL Product profile]**. Varje tillstånd samlas under funktioner, t.ex. Resa, Meddelanden eller Erbjudanden, som representerar olika funktioner eller objekt i [!DNL Journey Optimizer]. Läs mer i [Behörighetsnivåer](../../administration/high-low-permissions.md) -avsnitt.
+1. **Ange behörigheter** för produktprofiler, inklusive **Sandlådor** och ge teammedlemmarna tillgång genom att tilldela dem till olika produktprofiler. Det här steget utförs i [Admin Console](https://adminconsole.adobe.com/){_blank}. Behörigheter är enhetsbehörigheter som gör att du kan definiera de behörigheter som tilldelats till **[!UICONTROL Product profile]**. Varje tillstånd samlas under funktioner, t.ex. Resor eller Erbjudanden, som representerar de olika funktionerna eller objekten i [!DNL Journey Optimizer]. Läs mer i [Behörighetsnivåer](../../administration/high-low-permissions.md) -avsnitt.
 
 Dessutom måste du lägga till användare som behöver åtkomst till Assets Essentials i **Assets Essentials hemanvändare** eller/och **Assets Essentials-användare** Produktprofiler. [Läs mer i Assets Essentials-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}.
 
@@ -37,18 +37,18 @@ Dessutom måste du lägga till användare som behöver åtkomst till Assets Esse
 
 Vid åtkomst [!DNL Journey Optimizer] För första gången tilldelas du en produktionssandlåda och ett visst antal IP-adresser beroende på ditt kontrakt.
 
-Om du vill kunna skapa dina resor och skicka meddelanden går du till **ADMINISTRATION** -menyn. Bläddra i **[!UICONTROL Channels]** för att konfigurera e-postmeddelanden och förinställningar.
+Om du vill kunna skapa dina resor och skicka meddelanden går du till **ADMINISTRATION** -menyn. Bläddra i **[!UICONTROL Channels]** -menyn för att konfigurera meddelanden och ytor (t.ex. förinställningar).
 
 >[!NOTE]
 >Som **Systemadministratör** om du inte ser **[!UICONTROL Channels]** menyn i [!DNL Journey Optimizer], uppdatera dina behörigheter i [Admin Console](https://adminconsole.adobe.com/){_blank}. Lär dig hur du uppdaterar din produktprofil i [den här sidan](../../administration/permissions.md#edit-product-profile).
 
 Följ stegen nedan:
 
-1. **Konfigurera meddelanden och kanaler**: definiera förinställningar, anpassa och anpassa inställningar för e-post och push-meddelanden
+1. **Konfigurera meddelanden och kanaler**: definiera ytor, anpassa och anpassa inställningar för e-post och push-meddelanden
 
    * Definiera **inställningar för push-meddelanden** i båda [!DNL Adobe Experience Platform] och [!DNL Adobe Experience Platform Launch]. [Läs mer](../../configuration/push-gs.md)
 
-   * Skapa **meddelandeförinställningar** för att konfigurera alla tekniska parametrar som krävs för e-post och push-meddelanden. [Läs mer](../../configuration/message-presets.md)
+   * Skapa **kanalytor** (dvs. meddelandeförinställningar) för att konfigurera alla tekniska parametrar som krävs för e-post och push-meddelanden. [Läs mer](../../configuration/message-presets.md)
 
    * Konfigurera **SMS-kanal** för att konfigurera alla tekniska parametrar som krävs för SMS. [Läs mer](../../configuration/sms-configuration.md)
 

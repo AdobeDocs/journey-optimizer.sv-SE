@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: a1bbfcee-2235-4820-a391-d5d35f499cb0
-source-git-commit: 8a68d1e6d498ef3055c703d4e73471ab6d7bff40
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '836'
+ht-degree: 2%
 
 ---
 
@@ -35,7 +35,6 @@ För att detta ska fungera måste du konfigurera följande:
 
 * ett segment för alla kunder som bor i Atlanta, San Francisco eller Seattle och som är födda efter 1980.
 * en köphändelse
-* tre meddelanden
 
 ### Skapa segmentet
 
@@ -81,29 +80,17 @@ För detta använder vi en regelbaserad händelse. Mer information om händelser
 
 Händelsen är nu konfigurerad och klar att användas under din resa. Genom att använda motsvarande händelseaktivitet kan du aktivera en åtgärd varje gång en kund gör ett köp.
 
-### Skapa meddelanden
-
-I det här fallet måste vi skapa tre meddelanden:
-
-* ett push- och e-postmeddelande
-* ett push-tackmeddelande
-* ett uppföljningsmeddelande via e-post
-
-![](assets/jo-uc3.png)
-
-Se detta [section](../segment/about-segments.md) om du vill lära dig att designa och publicera dessa meddelanden.
-
 ## Designa resan
 
 1. Påbörja resan med en **Läs segment** aktivitet. Markera det segment som skapades tidigare. Alla personer som tillhör segmentet deltar i resan.
 
    ![](assets/jo-uc4.png)
 
-1. Släpp **Meddelande** och välj push- och e-postmeddelandet först. Det här meddelandet skickas till alla personer på resan.
+1. Släpp **E-post** Åtgärdsaktivitet och definiera innehållet i det&quot;första meddelandet&quot;. Det här meddelandet skickas till alla personer på resan. Se detta [section](../messages/create-email.md) om du vill lära dig hur du konfigurerar och utformar ett e-postmeddelande.
 
    ![](assets/jo-uc5.png)
 
-1. Placera markören på meddelandeaktiviteten och klicka på plustecknet (+) för att skapa en ny sökväg.
+1. Placera markören på e-postaktiviteten och klicka på plustecknet (+) för att skapa en ny sökväg.
 
 1. Lägg till en **Reaktion** event och select **Push öppnad**. Händelsen utlöses när en person som tillhör segmentet öppnar den push-versionen av det första meddelandet.
 
@@ -115,11 +102,11 @@ Se detta [section](../segment/about-segments.md) om du vill lära dig att design
    >
    >När du konfigurerar en timeout för flera händelser (de två reaktionerna i det här fallet) behöver du bara konfigurera timeout för en av dessa händelser.
 
-1. Släpp en **Meddelande** och välj e-postmeddelandet. Det här meddelandet skickas till de personer som inte öppnar e-postmeddelandet eller skickar det första meddelandet nästa dag.
+1. Släpp en **E-post** Åtgärdsaktivitet och definiera innehållet i&quot;uppföljningsmeddelandet&quot;. Det här meddelandet skickas till de personer som inte öppnar e-postmeddelandet eller skickar det första meddelandet nästa dag. Se detta [section](../messages/create-email.md) om du vill lära dig hur du konfigurerar och utformar ett e-postmeddelande.
 
 1. Koppla de tre sökvägarna till inköpshändelsen som skapades tidigare. Händelsen utlöses när en person gör ett köp.
 
-1. Efter händelsen släpper du en **Meddelande** och välj e-postmeddelandet&quot;Tack&quot;.
+1. Efter händelsen släpper du en **Push** aktiviteten och definiera innehållet i tackmeddelandet. Se detta [section](../messages/create-push.md) om du vill lära dig hur du konfigurerar och utformar en push-lösning.
 
 ## Testa och publicera resan
 

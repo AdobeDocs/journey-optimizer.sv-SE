@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: 630b8ef5a140709161b24256083b2104be5b6121
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '827'
 ht-degree: 1%
 
 ---
@@ -97,7 +97,7 @@ Om du aktiverar en regel påverkas alla meddelanden som gäller för nästa kör
 
 >[!NOTE]
 >
->Det kan ta upp till 10 minuter innan en regel aktiveras helt. Du behöver inte ändra eller publicera om meddelanden eller resor för att en regel ska börja gälla.
+>Det kan ta upp till 10 minuter innan en regel aktiveras helt. Du behöver inte ändra meddelanden eller publicera om resor för att en regel ska börja gälla.
 
 Om du vill inaktivera en regel för meddelandefrekvens klickar du på ellipsen bredvid regeln och väljer **[!UICONTROL Deactivate]**.
 
@@ -113,37 +113,26 @@ Regelens status ändras till **[!UICONTROL Inactive]** och regeln gäller inte f
 
 Följ stegen nedan för att tillämpa en frekvensregel på ett meddelande.
 
-1. Skapa ett meddelande. [Läs mer](../messages/get-started-content.md#create-new-message)
+1. [Skapa ett meddelande](../messages/get-started-content.md#create-new-message) genom att välja en av de kanaler som du har definierat för regeln.
 
 1. Välj den kategori som du har definierat för [regel som du skapade](#create-new-rule).
 
-   ![](assets/message-rules-msg-properties.png)
+   ![](assets/inline-message-category.png)
 
    >[!NOTE]
    >
    >För närvarande bara **[!UICONTROL Marketing]** finns för regler för meddelandefrekvens.
 
-1. Välj den eller de kanaler du vill använda för meddelandet.
+   <!--
+   1. You can click the **[!UICONTROL Frequency rule]** link to view the frequency rules that will apply for the selected category and channel(s). A new tab will open to display the matching message frequency rules.-->
 
-   ![](assets/message-rules-msg-channels.png)
+1. Alla frekvensregler som matchar den valda kategorin och kanalen/kanalerna tillämpas automatiskt på det här meddelandet.
 
-1. Du kan klicka på **[!UICONTROL Frequency rule]** om du vill visa de frekvensregler som gäller för den valda kategorin och de valda kanalerna.
+   >[!NOTE]
+   >
+   >Meddelanden där den valda kategorin är **[!UICONTROL Transactional]** utvärderas inte mot frekvensregler.
 
-   ![](assets/message-rules-msg-link.png)
-
-   En ny flik öppnas för att visa matchande regler för meddelandefrekvens.
-
-1. [Design](../design/design-emails.md) och [publicera](../messages/publish-manage-message.md) ditt meddelande.
-
-Alla frekvensregler som matchar den valda kategorin och kanalen/kanalerna tillämpas automatiskt på det här meddelandet.
-
->[!NOTE]
->
->Meddelanden <!--that do not have any selected category or messages -->där den valda kategorin är **[!UICONTROL Transactional]** utvärderas inte mot frekvensregler.
-
-<!--Clicking the link out button next to the category selector will jump you over to the rules inventory screen to see which rules will be applied to the message.-->
-
-Du kan visa antalet profiler som har uteslutits från leverans i [Live- och globala vyer](../reports/message-monitoring.md)och i [e-postLive-rapport](../reports/email-live-report.md), där frekvensreglerna listas som en möjlig orsak för användare som inte får leverera.
+1. Du kan visa antalet profiler som har uteslutits från leverans i [Global rapport](../reports/global-report.md)och i [Live-rapport](../reports/live-report.md), där frekvensreglerna listas som en möjlig orsak för användare som inte får leverera.
 
 >[!NOTE]
 >
@@ -155,7 +144,7 @@ Du kan kombinera flera regler för meddelandefrekvens, som beskrivs i exemplet n
 
 1. [Skapa en regel](#create-new-rule) anropad *Total marknadsföringstak*:
 
-   * Markera alla kanaler (e-post, push).
+   * Välj E-post- och push-kanaler.
    * Ange begränsning till 12.
 
    ![](assets/message-rules-ex-overall-cap.png)
@@ -169,19 +158,9 @@ Du kan kombinera flera regler för meddelandefrekvens, som beskrivs i exemplet n
 
 1. Spara och [activate](#activate-rule) regeln.
 
-1. Skapa ett meddelande. [Läs mer](../messages/get-started-content.md#create-new-message)
+1. Skapa ett e-postmeddelande och välj **[!UICONTROL Marketing]** kategori för det meddelandet. [Läs mer](../messages/get-started-content.md#create-new-message)
 
-1. Välj **[!UICONTROL Marketing]** kategori.
-
-   ![](assets/message-rules-ex-category-maktg.png)
-
-1. Välj **[!UICONTROL Email]** och **[!UICONTROL Push Notification]** kanaler.
-
-   ![](assets/message-rules-ex-channels.png)
-
-1. Du kan klicka på **[!UICONTROL Frequency rule]** om du vill visa de frekvensregler som gäller för den valda kategorin och de valda kanalerna.
-
-1. [Design](../design/design-emails.md) och [publicera](../messages/publish-manage-message.md) ditt meddelande.
+1. Skapa ett push-meddelande och välj **[!UICONTROL Marketing]** kategori för det meddelandet. [Läs mer](../messages/get-started-content.md#create-new-message)
 
 I det här scenariot finns en enskild profil:
 * kan ta emot upp till 12 marknadsföringsmeddelanden per månad,
@@ -189,7 +168,7 @@ I det här scenariot finns en enskild profil:
 
 >[!NOTE]
 >
->När du testar frekvensregler kan det vara praktiskt att börja med en nyligen skapad [testprofil](../segment/creating-test-profiles.md)eftersom det inte finns något sätt att återställa räknaren förrän nästa månad när en profils övre gräns för frekvens har nåtts. Om du inaktiverar en regel kan mappade profiler ta emot meddelanden, men inga räknarsteg tas bort eller tas bort.
+>När du testar frekvensregler bör du använda en ny [testprofil](../segment/creating-test-profiles.md)eftersom det inte finns något sätt att återställa räknaren förrän nästa månad när en profils övre gräns för frekvens har nåtts. Om du inaktiverar en regel kan mappade profiler ta emot meddelanden, men inga räknarsteg tas bort eller tas bort.
 
 ## Instruktionsvideo {#video}
 

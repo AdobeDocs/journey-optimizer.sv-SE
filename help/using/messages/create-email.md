@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
-source-git-commit: 1d0e28583c500d5eddf9f88250f279d188c4784a
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 3%
+source-wordcount: '243'
+ht-degree: 5%
 
 ---
 
@@ -20,22 +20,39 @@ ht-degree: 3%
 >title="Skapa e-post"
 >abstract="Definiera e-postparametrar i endast tre enkla steg."
 
-En gång [skapade ett meddelande](get-started-content.md), använder du **[!UICONTROL Email]** för att definiera inställningar och innehåll för e-postkanalen.
 
-![](assets/emails-configuration.png)
+En gång [lade till ett e-postmeddelande](get-started-content.md) på din resa <!--or a campaign--> och definierade grundläggande inställningar kan du konfigurera e-postmeddelandet och definiera dess innehåll.
+
+## Definiera ditt e-postinnehåll{#email-content}
+
+Klicka på **[!UICONTROL Edit content]** för att utforma e-postmeddelandet.
+
+![](assets/email-edit-content.png)
+
+Använd [!DNL Journey Optimizer] E-postdesigner till [designa din e-post från grunden](../design/create-email-content.md). Om du har ett befintligt innehåll kan du [importera det till e-postdesignern](../design/existing-content.md), eller [koda eget innehåll](../design/code-content.md) in [!DNL Journey Optimizer].
+
+[!DNL Journey Optimizer] innehåller en uppsättning [inbyggda mallar](../design/email-templates.md) för att hindra dig från att börja. Alla e-postmeddelanden kan också sparas som mallar.
+
+Läs mer om e-postdesign i [det här avsnittet](../design/design-emails.md).
+
+Använd [!DNL Journey Optimizer] Uttrycksredigeraren för att anpassa dina meddelanden med profildata. Mer information om personalisering finns i [det här avsnittet](../personalization/personalize.md).
+
+## E-postspårning{#email-tracking}
+
+Aktivera följande alternativ om du vill spåra mottagarnas beteende genom att öppna och/eller klicka på länkar: **[!UICONTROL Email opens]** och **[!UICONTROL Click on email]**. Läs mer om spårning i [det här avsnittet](../design/message-tracking.md).
+
+
+## Validera ditt e-postinnehåll{#email-content-validate}
+
+Styr återgivningen av e-postmeddelandet och kontrollera personaliseringsinställningarna med testprofiler med förhandsgranskningsavsnittet till vänster. Mer information om detta finns i [det här avsnittet](../design/preview.md).
+
+![](assets/messages-simple-preview.png)
+
+
+Du måste även kontrollera varningar i den övre delen av redigeraren.  Vissa av dem är enkla varningar, men andra kan hindra dig från att använda meddelandet. Läs mer i [det här avsnittet](alerts.md).
+
 
 >[!NOTE]
 >
->The **[!UICONTROL From email]** och **[!UICONTROL From name]** är skrivskyddade och avgörs av **[!UICONTROL Preset]** som har markerats när [skapar meddelandet](get-started-content.md).
+>The **[!UICONTROL From email]** och **[!UICONTROL From name]** bestäms av **[!UICONTROL Surface]** som har markerats när [skapar meddelandet](get-started-content.md).
 
-Så här konfigurerar du ett e-postmeddelande:
-
-1. Ange e-postmeddelandets ämne i dialogrutan **[!UICONTROL Subject line]** fält. Det gör du genom att klicka på knappen till höger för att öppna uttrycksredigeraren och komponera e-postmeddelandets ämne. Lär dig hur du lägger till personalisering i [det här avsnittet](../personalization/personalize.md)
-
-1. Klicka på **[!UICONTROL Email Designer]** för att utforma e-postmeddelandet. Lär dig hur du utformar e-postmeddelanden i [det här avsnittet](../design/design-emails.md).
-
-1. Om du vill spåra mottagarnas beteende genom att öppna och/eller klicka på länkar kontrollerar du att **[!UICONTROL Open Tracking for email]** och **[!UICONTROL Click Tracking for email]** är aktiverade. Läs mer om spårning i [det här avsnittet](../design/message-tracking.md).
-
->[!NOTE]
->
->E-postmeddelanden av marknadsföringstyp måste innehålla en [länk för avanmälan](consent.md#opt-out-management), vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [meddelandeförinställningsnivå](../configuration/message-presets.md#email-type) och när [skapar meddelandet](get-started-content.md#create-new-message).

@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 8c00d783-54a3-45d9-bd8f-4dc58804d922
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '888'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,11 @@ Anta till exempel att du ordnar ett event nästa månad och vill starta en kampa
 
 1. [Publicera](create-lp.md#publish) landningssidan.
 
-1. [Skapa ett e-postmeddelande](../messages/get-started-content.md) för att meddela att registreringen nu är öppen för ditt event.
+1. I en [resa](../building-journeys/journey.md), lägga till **E-post** verksamhet för att köra trafik till landningssidan för registrering.
+
+   ![](assets/lp_subscription-uc-journey.png)
+
+1. [Designa e-postmeddelandet](../messages/get-started-content.md) för att meddela att registreringen nu är öppen för ditt event.
 
 1. [Infoga en länk](../design/message-tracking.md#insert-links) i ert meddelandeinnehåll. Välj **[!UICONTROL Landing page]** som **[!UICONTROL Link type]** och väljer [landningssida](create-lp.md#configure-primary-page) som du har skapat för registrering.
 
@@ -55,13 +59,7 @@ Anta till exempel att du ordnar ett event nästa månad och vill starta en kampa
 
    >[!NOTE]
    >
-   >Om du vill kunna publicera meddelandet kontrollerar du att landningssidan du valt inte har gått ut ännu. Lär dig hur du uppdaterar förfallodatumet [i det här avsnittet](create-lp.md#configure-primary-page).
-
-1. Spara innehåll och [publicera meddelandet](../messages/publish-manage-message.md).
-
-1. Skicka ditt meddelande via en [resa](../building-journeys/journey.md) att köra trafik till landningssidan för registrering.
-
-   ![](assets/lp_subscription-uc-journey.png)
+   >Om du vill kunna skicka meddelandet kontrollerar du att landningssidan du valt inte har gått ut ännu. Lär dig hur du uppdaterar förfallodatumet [i det här avsnittet](create-lp.md#configure-primary-page).
 
    När mottagarna har fått e-postmeddelandet och klickar på länken till landningssidan dirigeras de till&quot;tack&quot;-sidan och läggs till i prenumerationslistan.
 
@@ -79,7 +77,7 @@ Dessutom kan du skicka ett bekräftelsemeddelande via e-post till de mottagare s
 
    ![](assets/lp_subscription-uc-confirm-journey.png)
 
-1. Välj ett bekräftelsemeddelande och skicka det via resan.
+1. Lägg till ett bekräftelsemeddelande som du väljer och skicka det genom resan.
 
    ![](assets/lp_subscription-uc-confirm-email.png)
 
@@ -128,7 +126,7 @@ Följ stegen nedan om du vill att mottagarna av ett e-postmeddelande ska kunna a
 
    ![](assets/lp_opt-out-publish.png)
 
-1. [Skapa ett e-postmeddelande](../messages/get-started-content.md) in [!DNL Journey Optimizer].
+1. [Skapa ett e-postmeddelande](../messages/get-started-content.md) på en resa.
 
 1. Markera text i innehållet och [infoga en länk](../design/message-tracking.md#insert-links) med hjälp av kontextverktygsfältet. Du kan också använda en länk på en knapp.
 
@@ -140,11 +138,9 @@ Följ stegen nedan om du vill att mottagarna av ett e-postmeddelande ska kunna a
 
    >[!NOTE]
    >
-   >Om du vill kunna publicera meddelandet kontrollerar du att landningssidan du valt inte har gått ut ännu. Lär dig hur du uppdaterar förfallodatumet [i det här avsnittet](create-lp.md#configure-primary-page).
+   >Om du vill kunna skicka meddelandet kontrollerar du att landningssidan du valt inte har gått ut ännu. Lär dig hur du uppdaterar förfallodatumet [i det här avsnittet](create-lp.md#configure-primary-page).
 
-1. Spara innehåll och [publicera meddelandet](../messages/publish-manage-message.md).
-
-1. Skicka ditt budskap genom en resa. [Läs mer](../building-journeys/journey.md).
+1. Publicera och kör resan. [Läs mer](../building-journeys/journey.md).
 
 1. När meddelandet har tagits emot visas din startsida om en mottagare klickar på länken för att avbryta prenumerationen i e-postmeddelandet.
 

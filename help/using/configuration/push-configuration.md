@@ -4,10 +4,10 @@ description: Lär dig hur du konfigurerar miljön för att skicka push-meddeland
 role: Admin
 level: Intermediate
 exl-id: 7099d44e-5d5d-4eef-9477-f68f4eaa1983
-source-git-commit: 8a68d1e6d498ef3055c703d4e73471ab6d7bff40
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1427'
+ht-degree: 3%
 
 ---
 
@@ -75,7 +75,7 @@ Tilldela **Egenskap** och **Företag** gör du så här:
    * **[!UICONTROL Manage App Configurations]**
    * **[!UICONTROL Manage Properties]**
 
-   Dessa behörigheter krävs för att mobilappsutvecklaren ska kunna ställa in push-autentiseringsuppgifter i **Adobe Experience Launch** och definiera förinställningar för push-meddelanden i **Adobe Journey Optimizer**.
+   Dessa behörigheter krävs för att mobilappsutvecklaren ska kunna ställa in push-autentiseringsuppgifter i **Adobe Experience Launch** och definiera kanalytor för push-meddelanden (t.ex. meddelandeförinställningar) i **Adobe Journey Optimizer**.
 
    ![](assets/push_product_5.png)
 
@@ -125,7 +125,7 @@ Registrering av push-autentiseringsuppgifter krävs för mobilappen för att god
 
 1. Från [!DNL Adobe Experience Platform Data Collection]väljer du **[!UICONTROL App Surfaces]** i den vänstra panelen.
 
-1. Klicka **[!UICONTROL Create App Surfaces]** för att skapa en ny konfiguration.
+1. Klicka **[!UICONTROL Create App Surface]** för att skapa en ny konfiguration.
 
    ![](assets/add-app-config.png)
 
@@ -331,9 +331,9 @@ Din aktivitet har skapats och kan nu användas på en resa.
 
    ![](assets/test_push_11.png)
 
-1. Från **[!UICONTROL Actions]** nedrullningsbar meny, dra och släppa **[!UICONTROL Message]** till er resa.
+1. Från **[!UICONTROL Actions]** nedrullningsbar meny, dra och släppa **[!UICONTROL Push]** till er resa.
 
-1. Markera ett tidigare skapat meddelande. Mer information om hur du skapar push-meddelanden finns i [page](../messages/get-started-content.md).
+1. Konfigurera push-meddelandet. Mer information om hur du skapar push-meddelanden finns i [page](../messages/get-started-content.md).
 
 1. Klicka på **[!UICONTROL Test]** växla för att börja testa dina push-meddelanden och klicka **[!UICONTROL Trigger an event]**.
 
@@ -347,13 +347,13 @@ Din aktivitet har skapats och kan nu användas på en resa.
 
 Din händelse kommer att utlösas och du kommer att få ditt push-meddelande till din mobilapp.
 
-## Steg 4: Skapa en meddelandeförinställning för push{#message-preset}
+## Steg 4: Skapa en kanalyta för push{#message-preset}
 
-När mobilappen har konfigurerats i [!DNL Adobe Experience Platform Data Collection]måste du skapa en meddelandeförinställning för att kunna skicka push-meddelanden från **[!DNL Journey Optimizer]**.
+När mobilappen har konfigurerats i [!DNL Adobe Experience Platform Data Collection]måste du skapa en yta för att kunna skicka push-meddelanden från **[!DNL Journey Optimizer]**.
 
-Lär dig hur du skapar och konfigurerar en meddelandeförinställning i [det här avsnittet](../configuration/message-presets.md).
+Lär dig hur du skapar och konfigurerar en kanalyta i [det här avsnittet](../configuration/message-presets.md).
 
 Nu kan du skicka push-meddelanden med Journey Optimizer.
 
 * Lär dig hur du skapar ett push-meddelande i [den här sidan](../messages/create-push.md).
-* Lär dig hur du skickar ett meddelande under en resa i [det här avsnittet](../building-journeys/journeys-message.md).
+* Lär dig hur du lägger till ett meddelande till en resa i [det här avsnittet](../building-journeys/journeys-message.md).

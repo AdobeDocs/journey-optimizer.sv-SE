@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: b8e266b1-d8eb-4c77-9341-9761b82609b0
-source-git-commit: f1ac47a0cb405eaadc5428e7e5479eaf776d7abe
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '189'
 ht-degree: 12%
 
 ---
@@ -23,7 +23,7 @@ Användarhantering i [!DNL Journey Optimizer] bygger på tre koncept:
 
 * **[!UICONTROL Product profile]**: En uppsättning enhetsbehörigheter som ger användarna tillgång till vissa funktioner eller objekt i gränssnittet. Se [Färdiga produktprofiler](ootb-product-profiles.md) section
 
-* **[!UICONTROL Permissions]**: Enhetsrättigheter som gör att du kan definiera de behörigheter som tilldelats **[!UICONTROL Product profile]**. Varje tillstånd samlas under funktioner, t.ex. Resa, Meddelanden eller Erbjudanden, som representerar olika funktioner eller objekt i [!DNL Journey Optimizer]. Se [Behörighetsnivåer](high-low-permissions.md) -avsnitt.
+* **[!UICONTROL Permissions]**: Enhetsrättigheter som gör att du kan definiera de behörigheter som tilldelats **[!UICONTROL Product profile]**. Varje tillstånd samlas under funktioner, t.ex. Resor eller Erbjudanden, som representerar de olika funktionerna eller objekten i [!DNL Journey Optimizer]. Se [Behörighetsnivåer](high-low-permissions.md) -avsnitt.
 
 * **[!UICONTROL Sandbox]**: Virtuella sandlådor som partitionerar instanser i separata, isolerade virtuella miljöer. Se [Använda sandlådor](sandboxes.md)
 

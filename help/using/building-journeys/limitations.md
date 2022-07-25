@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -23,10 +23,6 @@ Här är begränsningar för användningen av resor.
 * Tre försök utförs systematiskt om ett fel uppstår. Du kan inte justera antalet försök enligt det mottagna felmeddelandet. 
 * Den inbyggda **Reaktion** gör att du kan reagera på åtgärder som är klara (se det här [page](../building-journeys/reaction-events.md)). Om du vill reagera på ett meddelande som skickas via en anpassad åtgärd måste du konfigurera en dedikerad händelse. 
 * Du kan inte placera två åtgärder parallellt. Du måste lägga till dem en i taget.
-
-## Begränsningar för meddelandeåtgärd
-
-* När du lägger till ett flerkanalsmeddelande skickas två meddelanden.
 
 ## Begränsningar för reseversioner {#journey-versions-limitations}
 

@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 1e648eca-b5ca-4767-b45d-c179243e347f
-source-git-commit: 0ca491315e214e3c12bec11a93da1a2b98b493b6
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -59,11 +59,11 @@ Följ stegen nedan för att infoga ett beslut i ett e-postmeddelande:
 
 Erbjudandeaktiviteten har nu lagts till i komponenten.
 
-När du har sparat dina ändringar och när meddelandet har publicerats är dina erbjudanden klara att visas för de relevanta profilerna när du skickar meddelandet som en del av en resa.
+När du har sparat dina ändringar är dina erbjudanden klara att visas för de relevanta profilerna när du skickar meddelandet som en del av en resa.
 
 >[!NOTE]
 >
->När du uppdaterar ett erbjudande, ett reserverbjudande, en erbjudandesamling eller ett erbjudandebeslut som direkt eller indirekt hänvisas till i ett publicerat meddelande, visas uppdateringarna automatiskt i motsvarande meddelande, utan att det behöver publiceras på nytt.
+>När du uppdaterar ett erbjudande, ett reserverbjudande, en erbjudandesamling eller ett erbjudandebeslut som refereras direkt eller indirekt i ett meddelande, visas uppdateringarna automatiskt i motsvarande meddelande.
 
 ## Förhandsgranska erbjudanden via e-post {#preview-offers-in-email}
 

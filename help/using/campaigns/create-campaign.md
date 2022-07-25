@@ -7,21 +7,21 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 6177a33edeb3b8381c3eb5609762b4d974dc93e3
+exl-id: 7c4afc98-0d79-4e26-90f8-558bac037169
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '699'
 ht-degree: 2%
 
 ---
-
 
 # Skapa en kampanj {#create-campaign}
 
 >[!NOTE]
 >
->Innan du skapar en ny kampanj måste du se till att du har en meddelandeförinställning och ett Adobe Experience Platform-segment klart att användas. Läs mer i följande avsnitt:
+>Innan du skapar en ny kampanj måste du se till att du har en ytkanal (dvs. meddelandeförinställning) och ett Adobe Experience Platform-segment som är klart att använda. Läs mer i följande avsnitt:
 >
->* [Skapa meddelandeförinställningar](../configuration/message-presets.md)
+>* [Skapa kanalytor](../configuration/message-presets.md)
 >* [Kom igång med segment](../segment/about-segments.md)
 
 
@@ -38,13 +38,13 @@ Så här skapar du en kampanj:
    * **[!UICONTROL Scheduled]**: köra kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka **marknadsföring** typmeddelanden.
    * **[!UICONTROL API-triggered]**: köra kampanjen med ett API-anrop. API-utlösta kampanjer är avsedda att skicka **transaktionsbaserad** meddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförts av en individ: lösenordsåterställning, övergivna kort osv. [Lär dig hur du utlöser en kampanj med API:er](api-triggered-campaigns.md)
 
-1. I **[!UICONTROL Actions]** väljer du kanal och meddelandeyta (d.v.s. meddelandeförinställning) som ska användas för att skicka meddelandet. Klicka sedan på **[!UICONTROL Create]**.
+1. I **[!UICONTROL Actions]** väljer du kanal och kanal för att skicka meddelandet och klickar sedan på **[!UICONTROL Create]**.
 
    ![](assets/create-campaign-action.png)
 
    >[!NOTE]
    >
-   >Endast meddelandeytor som är kompatibla med kampanjtypen (marknadsföring eller transaktion) visas i listrutan.
+   >Endast kanalytor som är kompatibla med kampanjtypen (marknadsföring eller transaktion) visas i listrutan.
 
 1. Ange en titel och en beskrivning för kampanjen.
 
@@ -52,7 +52,7 @@ Så här skapar du en kampanj:
 
 1. I **[!UICONTROL Actions]** konfigurerar du meddelandet som ska skickas med kampanjen:
 
-   1. Klicka på **[!UICONTROL Edit content]** och sedan konfigurera och utforma meddelandet. [Lär dig hur du konfigurerar meddelanden](../messages/get-started-content.md).
+   1. Klicka på **[!UICONTROL Edit content]** och sedan konfigurera och utforma meddelandeinnehållet. [Läs mer om meddelanden](../messages/get-started-content.md).
 
       När innehållet är klart klickar du på pilen för att gå tillbaka till skärmen för att skapa kampanjer.
 
@@ -121,10 +121,6 @@ När kampanjen har konfigurerats måste du granska dess parameter och innehåll 
    Du kan även få ytterligare statistik i dedikerade rapporter genom att klicka på **[!UICONTROL Reports]** -knappen. [Läs mer](campaign-global-report.md)
 
    ![](assets/create-campaign-summary.png)
-
-   >[!IMPORTANT]
-   >
-   >Meddelanden som skapas i kampanjer är specifika för [!DNL Journey Optimizer] kampanjfunktioner. När de har skapats är de tillgängliga endast för kampanjer, och visas inte i **[!UICONTROL Messages]** -menyn.
 
 ## Ytterligare resurser
 

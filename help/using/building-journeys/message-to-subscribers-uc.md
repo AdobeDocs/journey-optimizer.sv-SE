@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 2540938f-8ac7-43fa-83ff-fed59f6bc417
-source-git-commit: 8a68d1e6d498ef3055c703d4e73471ab6d7bff40
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '256'
 ht-degree: 3%
 
 ---
@@ -24,14 +24,12 @@ I det här exemplet **[!UICONTROL Consent and Preference Details]** fältgrupp f
 Så här konfigurerar du den här resan:
 
 1. Skapa en resa som börjar med en **[!UICONTROL Read]** aktivitet. [Läs mer](journey-gs.md).
-1. Lägg till en **[!UICONTROL Message]** aktivitet, med e-post, på resan. [Läs mer](journeys-message.md).
-1. I **[!UICONTROL Email parameters]** i **[!UICONTROL Message]** aktivitetsinställningar, ersätt standardadress för e-post (`PersonalEmail.adress`) med e-postadressen till listprenumeranterna:
+1. Lägg till en **[!UICONTROL Email]** verksamhet som rör resan. [Läs mer](journeys-message.md).
+1. I **[!UICONTROL Email parameters]** i **[!UICONTROL Email]** aktivitetsinställningar, ersätt standardadress för e-post (`PersonalEmail.adress`) med e-postadressen till listprenumeranterna:
 
    1. Klicka på **[!UICONTROL Enable parameter override]** ikonen till höger om **[!UICONTROL Address]** och klicka sedan på **[!UICONTROL Edit]** ikon.
 
       ![](assets/message-to-subscribers-uc-1.png)
-
-      Om du vill kunna ändra e-postadressen måste du ha publicerat meddelandet tidigare.
 
    1. I uttrycksredigeraren anger du uttrycket för att hämta prenumeranternas e-postadresser. [Läs mer](expression/expressionadvanced.md).
 
@@ -55,4 +53,3 @@ Så här konfigurerar du den här resan:
       ![](assets/message-to-subscribers-uc-2.png)
 
    1. I **[!UICONTROL Add an expression]** klickar du på **[!UICONTROL Ok]**.
-   ![](assets/message-to-subscribers-uc-3.png)

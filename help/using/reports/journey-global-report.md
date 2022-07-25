@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e851646e-4cef-45e8-97c2-a8f4c9d2cc08
-source-git-commit: ffa1da19732f4c0bd5297e2d123140b9ba1b0103
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1607'
 ht-degree: 0%
 
 ---
@@ -62,11 +62,11 @@ The **[!UICONTROL Top Actions]** tabellen innehåller tillgängliga data för **
 
 Från din resa **[!UICONTROL Global report]**, **[!UICONTROL Email]** fliken innehåller huvudinformationen om de e-postleveranser som skickas under resan.
 
-En detaljerad rapport om en viss e-postleverans finns i [E-posta global rapport](#email-global-report) -avsnitt.
-
 ![](assets/global_report_14.png)
 
 The **[!UICONTROL Email Sending Statistics]** diagram visar hur framgångsrik leveransen är:
+
+* **[!UICONTROL Targeted]**: Antal profiler som Adobe Journey Orchestration har som mål för åtgärder som att skicka e-post eller SMS.
 
 * **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
 
@@ -88,7 +88,7 @@ The **[!UICONTROL Email - Tracking statistics]** innehåller tillgängliga data 
 
 * **[!UICONTROL Unique Opens]**: Procent av öppnade leveranser.
 
-* **[!UICONTROL Open Rate]**: Totalt antal öppnade e-postmeddelanden jämfört med antalet levererade e-postmeddelanden.
+* **[!UICONTROL Unique Open Rate]**: Totalt antal öppnade e-postmeddelanden jämfört med antalet levererade e-postmeddelanden.
 
 * **[!UICONTROL Clicks]**: Antal gånger ett innehåll klickades i ett e-postmeddelande.
 
@@ -136,7 +136,7 @@ The **[!UICONTROL Email - Top recipient domain]** diagram och tabeller visar vil
 
 >[!NOTE]
 >
->The **[!UICONTROL Optimized vs non optimized]** och **[!UICONTROL Send time optimization]**  widgetar är bara tillgängliga om alternativet för optimering av sändningstid är aktiverat för leverans. Mer information om optimering av sändningstid finns i [page](../building-journeys/journeys-message.md#send-time-optimization).
+>The **[!UICONTROL Optimized vs non optimized]** och **[!UICONTROL Send time optimization]**  widgetar är bara tillgängliga om alternativet för optimering av sändningstid är aktiverat för leverans. Mer information om optimering av sändningstid finns i [den här sidan](../messages/send-time-optimization.md).
 
 The **[!UICONTROL Optimized vs non optimized]** diagram anger huvudinformationen i förhållande till meddelandet, oavsett om de är optimerade eller inte:
 
@@ -179,11 +179,11 @@ The **[!UICONTROL Offers detailed statistic]** tabellen innehåller tillgänglig
 
 Från din resa **[!UICONTROL Global report]**, **[!UICONTROL Push]** fliken innehåller huvudinformationen i förhållande till de push-leveranser som skickas under resan.
 
-En detaljerad rapport om en viss push-leverans finns i [Push Global-rapport](#push-global-report).
-
 ![](assets/global_report_17.png)
 
 The **[!UICONTROL Push notification - Sending statistics]** tabellen visar huvudinformationen i förhållande till push-meddelanden med diagram och KPI:er:
+
+* **[!UICONTROL Targeted]**: Antal profiler som Adobe Journey Orchestration har som mål för åtgärder som att skicka e-post eller SMS.
 
 * **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
 
@@ -227,7 +227,7 @@ The **[!UICONTROL Push notification summary]** diagrammet innehåller data som �
 
 >[!NOTE]
 >
->The **[!UICONTROL Optimized vs non optimized]** och **[!UICONTROL Send time optimization]**  widgetar är bara tillgängliga om alternativet för optimering av sändningstid är aktiverat för leverans. Mer information om optimering av sändningstid finns i [page](../building-journeys/journeys-message.md#send-time-optimization).
+>The **[!UICONTROL Optimized vs non optimized]** och **[!UICONTROL Send time optimization]**  widgetar är bara tillgängliga om alternativet för optimering av sändningstid är aktiverat för leverans. Mer information om optimering av sändningstid finns i [den här sidan](../messages/send-time-optimization.md).
 
 The **[!UICONTROL Optimized vs non optimized]** diagram anger huvudinformationen i förhållande till meddelandet, oavsett om de är optimerade eller inte:
 

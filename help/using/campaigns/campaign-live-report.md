@@ -7,9 +7,10 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 6177a33edeb3b8381c3eb5609762b4d974dc93e3
+exl-id: 925494b6-e08a-4bd3-8a2f-96a5d9cbc387
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '586'
 ht-degree: 1%
 
 ---
@@ -42,8 +43,6 @@ From your Campaign **[!UICONTROL Live report]**, the **[!UICONTROL Experimentati
 ## Fliken E-post {#email-live}
 
 Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL Email]** -fliken innehåller huvudinformationen om de e-postleveranser som skickas i kampanjen.
-
-En detaljerad rapport om en viss e-postleverans finns i [E-postlive-rapport](../reports/email-live-report.md) -avsnitt.
 
 The **[!UICONTROL Email Sending Statistics]** widgeten innehåller information om den viktigaste informationen i förhållande till ditt meddelande:
 
@@ -86,8 +85,6 @@ The **[!UICONTROL Email - Top recipient domain]** diagram och tabeller visar vil
 ## Push-flik {#push-live}
 
 Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL Push]** -fliken innehåller huvudinformationen i förhållande till push-leveranser som skickas i kampanjen.
-
-En detaljerad rapport om en viss push-leverans finns i [Publicera live-rapport](../reports/push-live-report.md) -avsnitt.
 
 **[!UICONTROL Push notification sending performance]**, **[!UICONTROL Push notification summary]** och **[!UICONTROL Sending metrics - by Push]** widgetar anger huvudinformationen i förhållande till meddelandet:
 

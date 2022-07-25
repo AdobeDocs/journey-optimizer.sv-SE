@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 1998f6fc-60fd-4038-8669-39cd55bc02d1
-source-git-commit: afd6bec0151eb2c369ae68d369adf98e772841c9
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1459'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,7 @@ Med de andra aktiviteterna kan du lägga till villkor för din resa för att def
 
 **Instruktioner**
 
-Här hittar du **Meddelande** aktivitet som gör att du kan ta med ett meddelande som är utformat i [!DNL Journey Optimizer]. [Läs mer om meddelandeaktiviteten](journeys-message.md)
+Här finns kanalåtgärdsaktiviteten som gör att du kan inkludera ett meddelande som är utformat i [!DNL Journey Optimizer]. [Läs mer om kanalaktiviteter](journeys-message.md)
 
 Du hittar också de anpassade åtgärder som du har konfigurerat för att skicka meddelanden med tredjepartssystem. Läs mer om detta [section](about-journey-activities.md#action-activities).
 

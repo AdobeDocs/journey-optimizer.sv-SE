@@ -4,9 +4,9 @@ description: Lär dig hur du konfigurerar miljön för att skicka SMS-meddelande
 role: Admin
 level: Intermediate
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
-source-git-commit: 47b1c2832f82a5c168cd03f1d1b43a9223c945b3
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '410'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 [!DNL Journey Optimizer] kan ni skapa resor och skicka meddelanden till riktade målgrupper.
 
-Konfigurera instansen innan du skickar SMS. Du måste [integrera providerinställningarna](#create-api) med Journey Optimizer och [skapa en SMS-förinställning](#message-preset-sms). Dessa steg måste utföras av en [Adobe Journey Optimizer systemadministratör](../start/path/administrator.md).
+Konfigurera instansen innan du skickar SMS. Du måste [integrera providerinställningarna](#create-api) med Journey Optimizer och [skapa en SMS-yta](#message-preset-sms) (t.ex. SMS-förinställning). Dessa steg måste utföras av en [Adobe Journey Optimizer systemadministratör](../start/path/administrator.md).
 
 >[!AVAILABILITY]
 >
@@ -42,19 +42,19 @@ Så här konfigurerar du din SMS-leverantör med Journey Optimizer:
 
 1. Klicka **[!UICONTROL Submit]** när du är klar med konfigurationen av dina API-autentiseringsuppgifter.
 
-När du har skapat och konfigurerat dina API-autentiseringsuppgifter måste du nu skapa en meddelandeförinställning för SMS-meddelanden.
+När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu skapa en kanalyta (t.ex. meddelandeförinställning) för SMS-meddelanden.
 
-## Skapa en meddelandeförinställning för SMS-meddelanden {#message-preset-sms}
+## Skapa en kanalyta för SMS-meddelanden {#message-preset-sms}
 
-När SMS-kanalen har konfigurerats måste du skapa en meddelandeförinställning för att kunna skicka SMS-meddelanden från **[!DNL Journey Optimizer]**.
+När SMS-kanalen har konfigurerats måste du skapa en kanalyta för att kunna skicka SMS-meddelanden från **[!DNL Journey Optimizer]**.
 
-Så här skapar du en meddelandeförinställning:
+Så här skapar du en kanalyta:
 
-1. Öppna **[!UICONTROL Channels]** > **[!UICONTROL Branding]** > **[!UICONTROL Message presets]** menyn och klicka sedan på **[!UICONTROL Create Message preset]**.
+1. Öppna **[!UICONTROL Channels]** > **[!UICONTROL Branding]** > **[!UICONTROL Channel surfaces]** menyn och klicka sedan på **[!UICONTROL Create channel surface]**.
 
    ![](assets/preset-create.png)
 
-1. Ange ett namn och en beskrivning (valfritt) för förinställningen och välj sedan SMS-kanalen.
+1. Ange ett namn och en beskrivning (valfritt) för ytan och välj sedan SMS-kanalen.
 
    ![](assets/sms_preset.png)
 
@@ -66,9 +66,9 @@ Så här skapar du en meddelandeförinställning:
 
    ![](assets/preset-sms.png)
 
-   * Välj **[!UICONTROL SMS Type]** som skickas med förinställningen: **[!UICONTROL Transactional]** eller **[!UICONTROL Marketing]**.
+   * Välj **[!UICONTROL SMS Type]** som ska skickas med ytan: **[!UICONTROL Transactional]** eller **[!UICONTROL Marketing]**.
 
-   * Välj **[!UICONTROL SMS configuration]** för att associera med förinställningen.
+   * Välj **[!UICONTROL SMS configuration]** för att associera med ytan.
 
       Mer information om hur du konfigurerar miljön för att skicka SMS-meddelanden finns i [det här avsnittet](#create-api).
 
@@ -76,17 +76,17 @@ Så här skapar du en meddelandeförinställning:
 
    * Välj **[!UICONTROL SMS Execution Field]** för att välja **[!UICONTROL Profile attribute]** som är kopplade till profilens telefonnummer.
 
-1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara meddelandeförinställningen som utkast och återuppta konfigurationen senare.
+1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara kanalytan som ett utkast och återuppta konfigurationen senare.
 
    ![](assets/sms_preset_2.png)
 
-1. När meddelandeförinställningen har skapats visas den i listan med **[!UICONTROL Processing]** status.
+1. När kanalytan har skapats visas den i listan med **[!UICONTROL Processing]** status.
 
    >[!NOTE]
    >
    >Om kontrollerna inte lyckas kan du läsa mer om orsakerna till eventuella fel i [det här avsnittet](#monitor-message-presets).
 
-1. När kontrollen är klar får meddelandeförinställningen **[!UICONTROL Active]** status. Den är klar att användas för att leverera meddelanden.
+1. När kontrollerna är klara får kanalytan **[!UICONTROL Active]** status. Den är klar att användas för att leverera meddelanden.
 
    ![](assets/preset-active.png)
 

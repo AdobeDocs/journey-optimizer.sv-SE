@@ -6,18 +6,18 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e3781f79-7c8d-4512-b44f-835639b1471f
-source-git-commit: ffa1da19732f4c0bd5297e2d123140b9ba1b0103
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
 
 # Rapport om livesändning på resa {#journey-live-report}
 
-Du kan få åtkomst till liverapporten från din resa med **[!UICONTROL Live report]** -knappen.
+Du kan få åtkomst till liverapporten från din resa med **[!UICONTROL View report]** -knappen.
 
-![](assets/report_1.png)
+![](assets/report_journey.png)
 
 Resan **[!UICONTROL Live report]** visas med följande flikar:
 
@@ -44,8 +44,6 @@ The **[!UICONTROL Journey Statistics]** widgeten visar följande KPI:er:
 
 * **[!UICONTROL Failed individual journeys]**: Totalt antal enskilda resor som inte har slutförts.
 
-![](assets/report_journey_3.png)
-
 The **[!UICONTROL Event executed over the last 24 hours]** och **[!UICONTROL Events]** Med -widgetar kan du se vilken av dina händelser som har utförts genom sammanfattningsnummer, diagram och tabell.
 
 ![](assets/report_journey_4.png)
@@ -59,8 +57,6 @@ The **[!UICONTROL Action executed over the last 24 hours]** och **[!UICONTROL Ac
 ## Fliken E-post {#email-live}
 
 Från din resa **[!UICONTROL Live report]**, **[!UICONTROL Email]** fliken innehåller huvudinformationen om de e-postleveranser som skickas under resan.
-
-En detaljerad rapport om en viss e-postleverans finns i [E-postlive-rapport](email-live-report.md) -avsnitt.
 
 ![](assets/report_email_1.png)
 
@@ -123,8 +119,6 @@ The **[!UICONTROL Offers statistic]** och **[!UICONTROL Offers statistics]** med
 ## Push-flik {#push-live}
 
 Från din resa **[!UICONTROL Live report]**, **[!UICONTROL Push]** fliken innehåller huvudinformationen i förhållande till de push-leveranser som skickas under resan.
-
-En detaljerad rapport om en viss push-leverans finns i [Publicera live-rapport](push-live-report.md) -avsnitt.
 
 ![](assets/report_push_1.png)
 

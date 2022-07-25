@@ -1,14 +1,14 @@
 ---
 title: Använd BCC-e-post
-description: Lär dig hur du konfigurerar BCC-e-post på den förinställda meddelandenivån
+description: Lär dig hur du konfigurerar BCC-e-post på kanalytnivå
 feature: Application Settings
 topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 186a5044-80d5-4633-a7a7-133e155c5e9f
-source-git-commit: 8fe960e490722878dfd6dce52a88c3a9ccb037c2
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1094'
 ht-degree: 1%
 
 ---
@@ -24,23 +24,23 @@ Du kan skicka en identisk kopia (eller en blind kopia) av ett e-postmeddelande s
 
 ## Aktivera BCC-e-post {#enable-bcc}
 
-Aktivera **[!UICONTROL BCC email]** anger du den e-postadress du vill använda i det dedikerade fältet. Du kan ange en extern adress i rätt format, förutom en e-postadress som har definierats för en underdomän som har delegerats till Adobe. Om du till exempel har delegerat *marketing.luma.com* subdomain to Adobe, any address like *abc@marketing.luma.com* är förbjudet.
+Aktivera **[!UICONTROL BCC email]** anger du den e-postadress du vill använda i det dedikerade fältet i [kanalyta](message-presets.md) (t.ex. meddelandeförinställning). Du kan ange en extern adress i rätt format, förutom en e-postadress som har definierats för en underdomän som har delegerats till Adobe. Om du till exempel har delegerat *marketing.luma.com* subdomain to Adobe, any address like *abc@marketing.luma.com* är förbjudet.
 
 >[!NOTE]
 >
->Du kan bara definiera en e-postadress för hemlig kopia. Kontrollera att det finns tillräckligt med mottagningskapacitet på BCC-adressen för att lagra alla e-postmeddelanden som skickas med den aktuella förinställningen.
+>Du kan bara definiera en e-postadress för hemlig kopia. Kontrollera att det finns tillräckligt med mottagningskapacitet på BCC-adressen för att lagra alla e-postmeddelanden som skickas med den aktuella kanalytan.
 >
 >Fler rekommendationer finns i [det här avsnittet](#bcc-recommendations-limitations).
 
 ![](assets/preset-bcc.png)
 
-Alla e-postmeddelanden som använder den här förinställningen kopieras automatiskt till den e-postadress för hemkopia som du angav. Därifrån kan de bearbetas och arkiveras i ett externt system.
+Alla e-postmeddelanden som använder den här ytan kommer att kopieras till den e-postadress som du har angett för BCC. Därifrån kan de bearbetas och arkiveras i ett externt system.
 
 >[!CAUTION]
 >
->Användningen av din BCC-funktion räknas av mot det antal meddelanden som du har licens för. Aktivera det därför bara i de förinställningar som används för viktig kommunikation som du vill arkivera. Kontrollera om det finns licensierade volymer i ditt avtal.
+>Användningen av din BCC-funktion räknas av mot det antal meddelanden som du har licens för. Aktivera det därför bara i de ytor som används för viktig kommunikation som du vill arkivera. Kontrollera om det finns licensierade volymer i ditt avtal.
 
-Inställningen för e-postadress för hemlig kopia sparas och bearbetas omedelbart på förinställningsnivå. När du [skapa ett nytt meddelande](../messages/get-started-content.md#create-new-message) med den här förinställningen visas e-postadressen för BCC automatiskt.
+Inställningen för BCC-e-postadressen sparas och bearbetas omedelbart på ytnivå. När du [skapa ett nytt meddelande](../messages/get-started-content.md#create-new-message) När du använder den här ytan visas e-postadressen för den kontroll av webbläsarkompatibilitet automatiskt.
 
 ![](assets/preset-bcc-in-msg.png)
 
@@ -52,7 +52,7 @@ BCC-adressen hämtas dock upp för att skicka kommunikation enligt logiken nedan
 
 >[!NOTE]
 >
->Du behöver inte publicera om ett meddelande eller en resa för att BCC-inställningen ska hämtas.
+>Du behöver inte publicera om din resa för att inställningen för Hemlig kopia ska hämtas.
 
 ## Recommendations och begränsningar {#bcc-recommendations-limitations}
 
@@ -66,7 +66,7 @@ BCC-adressen hämtas dock upp för att skicka kommunikation enligt logiken nedan
 
    <!--OR: Only successfully sent emails are taken in account. [Bounces](../reports/suppression-list.md#delivery-failures) are not. TO CHECK -->
 
-* Öppna inte och klicka inte igenom de e-postmeddelanden som skickas till BCC-adressen eftersom den tas med i det totala antalet öppningar och klickningar från sändningsanalysen, vilket kan orsaka vissa felberäkningar i [rapporter](../reports/message-monitoring.md).
+* Öppna inte och klicka inte igenom de e-postmeddelanden som skickas till BCC-adressen eftersom den tas med i det totala antalet öppningar och klickningar från sändningsanalysen, vilket kan orsaka vissa felberäkningar i [rapporter](../reports/global-report.md).
 
 * Markera inte meddelanden som skräppost i BCC-inkorgen eftersom det påverkar alla andra e-postmeddelanden som skickas till den här adressen.
 

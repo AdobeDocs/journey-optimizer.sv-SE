@@ -5,9 +5,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
-source-git-commit: 76eb73e875cbdeb7b5821f0c63435cf96c532adc
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '1139'
+source-wordcount: '905'
 ht-degree: 0%
 
 ---
@@ -123,88 +123,6 @@ Den innehåller följande lågnivåbehörigheter:
    * queries.read
    * queries.write
    * queries.delete
-
-## Meddelandefunktion {#message-capability}
-
-### [!DNL Manage messages] behörighet {#manage-messages}
-
-The **[!DNL Manage messages]** behörighet på hög nivå ger användare möjlighet att skapa och redigera/ta bort meddelanden.
-
-Den innehåller följande lågnivåbehörigheter:
-
-* Specifikt för Journey Optimizer:
-   * messages.write
-   * messages.read
-   * messages.delete
-   * messages_presets.read
-
-* Specifikt för Adobe Experience Platform:
-   * segments.read
-   * schemas.read
-
-### [!DNL Manage messages preview and test] behörighet {#mange-messages-preview}
-
-The **[!DNL Manage messages preview and test]** behörighet på hög nivå ger användarna möjlighet att förhandsgranska personaliserade meddelanden.
-
-Den innehåller följande lågnivåbehörigheter:
-
-* Specifikt för Journey Optimizer:
-   * messages.publish
-   * messages_preview_and_test.write
-   * messages.publish
-
-* Specifikt för Adobe Experience Platform:
-   * profiles.read
-   * profiles.write
-   * schemas.read
-   * datasets.write
-   * datasets.read
-   * identity_namespace.read
-   * segments.read
-   * queries.write
-   * merge_policies.read
-
-### [!DNL Publish messages] behörighet {#publish-messages}
-
-The **[!DNL Publish messages]** behörighet på hög nivå tillåter användare att publicera meddelanden.
-
-Den innehåller följande lågnivåbehörigheter:
-
-* Specifikt för Journey Optimizer:
-   * messages.publish
-
-* Specifikt för Adobe Experience Platform:
-   * profiles.read
-   * schemas.read
-   * datasets.read
-
-### [!DNL View messages] behörighet {#view-messages}
-
-The **[!DNL View messages]** behörighet på hög nivå tillåter användare att endast läsa meddelanden.
-
-Den innehåller följande lågnivåbehörigheter:
-
-* Specifikt för Journey Optimizer:
-   * messages.read
-   * messages_presets.read
-
-* Specifikt för Adobe Experience Platform:
-   * schemas.read
-   * segments.read
-
-### [!DNL View messages report] behörighet {#view-message-reports}
-
-The **[!DNL View messages report]** behörighet på hög nivå tillåter användare att läsa skrivskyddade e-postmeddelanden och skicka rapporter.
-
-Den innehåller följande lågnivåbehörigheter:
-
-* Specifikt för Journey Optimizer:
-   * messages_report.read
-   * datasets.read
-   * queries.read
-   * queries.write
-   * queries.delete
-   * journey.read
 
 ## Beslutsledningskapacitet {#decisions-permissions}
 
@@ -330,33 +248,34 @@ Den innehåller följande lågnivåbehörigheter:
 * IP_pools.write
 * IP_pools.delete
 
-### [!DNL Manage messages general settings] behörighet {#manage-message-settings}
+<!--
+### [!DNL Manage messages general settings] permission {#manage-message-settings}
 
-The **[!DNL Manage messages general settings]** behörighet på hög nivå ger användare möjlighet att skapa, redigera och ta bort globala inställningar på sandlådenivå.
+The **[!DNL Manage messages general settings]** high-level permission allows users to create, edit and delete global settings at the sandbox level.
 
-Den innehåller följande lågnivåbehörigheter:
+It includes the following low-level permissions: 
 
-* Specifikt för Journey Optimizer:
-   * messages_general_settings.read
-   * messages_general_settings.write
-   * messages_general_settings.delete
-* Specifikt för Adobe Experience Platform:
-   * schemas.read
+* Journey Optimizer specific: 
+  * messages_general_settings.read
+  * messages_general_settings.write
+  * messages_general_settings.delete
+* Adobe Experience Platform specific:
+  * schemas.read
 
-### [!DNL View messages general settings] behörighet {#view-message-settings}
+### [!DNL View messages general settings] permission {#view-message-settings}
 
-The **[!DNL View messages general settings]** behörighet på hög nivå tillåter användare att visa meddelanden med allmänna inställningar, t.ex. körningsadressen.
+The **[!DNL View messages general settings]** high-level permission allows users to view messages general settings such as the execution address.
 
-Den innehåller följande lågnivåbehörigheter:
+It includes the following low-level permissions:
 
-* Specifikt för Journey Optimizer:
-   * messages_general_settings.read
-* Specifikt för Adobe Experience Platform:
-   * schemas.read
+* Journey Optimizer specific: 
+  * messages_general_settings.read
+* Adobe Experience Platform specific: 
+  * schemas.read
+-->
+### [!DNL Manage channel surface] behörighet {#manage-channel-surface}
 
-### [!DNL Manage messages presets] behörighet {#manage-message-presets}
-
-The **[!DNL Manage messages presets]** behörighet på hög nivå ger användare möjlighet att skapa, redigera och ta bort meddelandeförinställningar över flera kanaler på sandlådenivå.
+The **[!DNL Manage channel surface]** behörighet på hög nivå ger användare möjlighet att skapa, redigera och ta bort kanalytor över kanaler på sandlådenivå.
 
 Den innehåller följande lågnivåbehörigheter:
 
@@ -368,9 +287,9 @@ Den innehåller följande lågnivåbehörigheter:
    * IP_pools.read
    * mobile_setting.read (från Adobe Experience Platform Launch)
 
-### [!DNL View messages presets] behörighet {#view-message-presets}
+### [!DNL View channel surface] behörighet {#view-channel-surface}
 
-The **[!DNL View messages presets]** behörighet på hög nivå gör det möjligt för användare att visa meddelandeförinställningar för att veta vilka meddelandeförinställningar som ska användas när ett meddelande skapas.
+The **[!DNL View channel surface]** behörighet på hög nivå gör det möjligt för användare att visa kanalytor för att veta vilka kanalytor som ska användas.
 
 Den innehåller följande lågnivåbehörigheter:
 

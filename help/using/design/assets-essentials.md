@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: d4fde14b-e2da-40bf-a387-ee9f2f7ff204
-source-git-commit: 80a5edec92377753e6bfd96699591b1a87e25248
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '457'
 ht-degree: 2%
 
 ---
@@ -87,4 +87,3 @@ Mer information om hur du överför resurser finns i [Adobe Experience Manager A
 
    ![](assets/media_library_13.png)
 
-När ditt meddelande har skapats och anpassats kan du publicera det så att det blir tillgängligt för exekvering. [Läs mer](../messages/publish-manage-message.md)

@@ -1,47 +1,47 @@
 ---
-title: Ställ in meddelandeförinställningar
-description: Lär dig hur du konfigurerar och övervakar meddelandeförinställningar
+title: Konfigurera kanalytor
+description: Lär dig konfigurera och övervaka kanalytor
 feature: Application Settings
 topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 630b8ef5a140709161b24256083b2104be5b6121
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1462'
 ht-degree: 0%
 
 ---
 
-# Ställ in meddelandeförinställningar {#message-presets-creation}
+# Konfigurera kanalytor {#message-presets-creation}
 
-Med [!DNL Journey Optimizer]kan du konfigurera meddelandeförinställningar som definierar alla tekniska parametrar som krävs för e-post och push-meddelanden: e-posttyp, avsändarens e-postadress och namn, mobilappar med mera.
+Med [!DNL Journey Optimizer]kan du skapa kanalytor (t.ex. meddelandeförinställningar) som definierar alla tekniska parametrar som krävs för dina meddelanden: e-posttyp, avsändarens e-postadress och namn, mobilappar med mera.
 
 >[!CAUTION]
 >
-> * Om du vill skapa, redigera och ta bort meddelandeförinställningar måste du ha [Hantera meddelandeförinställningar](../administration/high-low-permissions.md#manage-message-presets).
+> * Om du vill skapa, redigera och ta bort kanalytor måste du ha [Hantera kanalyta](../administration/high-low-permissions.md#manage-channel-surface).
 >
-> * Du måste utföra [E-postkonfiguration](#configure-email-settings) och [Push-konfiguration](../configuration/push-configuration.md) steg innan du skapar meddelandeförinställningar.
+> * Du måste utföra [E-postkonfiguration](#configure-email-settings), [Push-konfiguration](../configuration/push-configuration.md) och [SMS-konfiguration](../configuration/sms-configuration.md) innan du skapar kanalytor.
 
 
-När meddelandeförinställningarna har konfigurerats kan du välja dem när du skapar meddelanden från **[!UICONTROL Presets]** lista.
+När kanalytorna har konfigurerats kan du välja dem när du skapar meddelanden från en resa.
 
-➡️ [Lär dig hur du skapar och använder e-postförinställningar i den här videon](#video-presets)
+➡️ [Lär dig hur du skapar och använder e-postytor i den här videon](#video-presets)
 
-## Skapa en meddelandeförinställning {#create-message-preset}
+## Skapa en kanalyta {#create-message-preset}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_message_presets"
->title="Information och inställningar för meddelandeförinställning"
->abstract="Genom att ställa in en meddelandeförinställning kan du välja vilken kanal den gäller för och definiera alla tekniska parametrar som krävs för dina meddelanden, till exempel e-posttyp, underdomän som ska användas, avsändarnamn, mobilappar osv."
+>title="Information om Kanalyta och inställningar"
+>abstract="Genom att ställa in en kanalyta kan du välja vilken kanal den gäller och definiera alla tekniska parametrar som krävs för dina leveranser, till exempel e-posttyp, underdomän som ska användas, avsändarnamn, mobilappar osv."
 
-Så här skapar du en meddelandeförinställning:
+Så här skapar du en kanalyta:
 
-1. Öppna **[!UICONTROL Channels]** > **[!UICONTROL Branding]** > **[!UICONTROL Message presets]** menyn och klicka sedan på **[!UICONTROL Create Message preset]**.
+1. Öppna **[!UICONTROL Channels]** > **[!UICONTROL Branding]** > **[!UICONTROL Channel surfaces]** menyn och klicka sedan på **[!UICONTROL Create channel surface]**.
 
    ![](assets/preset-create.png)
 
-1. Ange ett namn och en beskrivning (valfritt) för förinställningen och välj sedan de kanaler som ska konfigureras.
+1. Ange ett namn och en beskrivning (valfritt) för ytan och välj sedan de kanaler som ska konfigureras.
 
    ![](assets/preset-general.png)
 
@@ -69,17 +69,17 @@ Så här skapar du en meddelandeförinställning:
    >
    >Mer information om hur du konfigurerar miljön för att skicka SMS-meddelanden finns i [det här avsnittet](sms-configuration.md).
 
-1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara meddelandeförinställningen som utkast och återuppta konfigurationen senare.
+1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara kanalytan som ett utkast och återuppta konfigurationen senare.
 
    ![](assets/preset-submit.png)
 
    >[!NOTE]
    >
-   >Du kan inte fortsätta skapa förinställningar medan den valda IP-poolen är under [utgåva](ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) och har aldrig kopplats till den valda underdomänen. [Läs mer](#subdomains-and-ip-pools)
+   >Du kan inte fortsätta skapa en yta medan den valda IP-poolen är under [utgåva](ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) och har aldrig kopplats till den valda underdomänen. [Läs mer](#subdomains-and-ip-pools)
    >
-   >Spara förinställningen som utkast och vänta tills IP-poolen har **[!UICONTROL Success]** status för att fortsätta skapa förinställningar.
+   >Spara ytan som utkast och vänta tills IP-poolen har **[!UICONTROL Success]** status för att återuppta skapande av yta.
 
-1. När meddelandeförinställningen har skapats visas den i listan med **[!UICONTROL Processing]** status.
+1. När kanalytan har skapats visas den i listan med **[!UICONTROL Processing]** status.
 
    Under det här steget kommer flera kontroller att utföras för att verifiera att den har konfigurerats korrekt. Bearbetningstiden är ungefär **48h-72h** och kan ta upp till **7-10 arbetsdagar**.
 
@@ -97,25 +97,25 @@ Så här skapar du en meddelandeförinställning:
    >
    >Om kontrollerna inte lyckas kan du läsa mer om orsakerna till eventuella fel i [det här avsnittet](#monitor-message-presets).
 
-1. När kontrollen är klar får meddelandeförinställningen **[!UICONTROL Active]** status. Den är klar att användas för att leverera meddelanden.
+1. När kontrollerna är klara får kanalytan **[!UICONTROL Active]** status. Den är klar att användas för att leverera meddelanden.
 
    ![](assets/preset-active.png)
 
-## Övervaka meddelandeförinställningar {#monitor-message-presets}
+## Skärmkanalsytor {#monitor-message-presets}
 
-Alla dina meddelandeförinställningar visas i **[!UICONTROL Channels]** > **[!UICONTROL Message presets]** -menyn. Det finns filter som hjälper dig att bläddra igenom listan (kanaltyp, användare, status).
+Alla kanalytor visas i **[!UICONTROL Channels]** > **[!UICONTROL Channel surfaces]** -menyn. Det finns filter som hjälper dig att bläddra igenom listan (kanal, användare, status).
 
 ![](assets/preset-filters.png)
 
-När meddelandeförinställningarna har skapats kan de ha följande status:
+När kanalytorna har skapats kan de ha följande status:
 
-* **[!UICONTROL Draft]**: Meddelandeförinställningen har sparats som ett utkast och har inte skickats ännu. Öppna den för att återuppta konfigurationen.
-* **[!UICONTROL Processing]**: Meddelandeförinställningen har skickats och genomgår flera verifieringssteg.
-* **[!UICONTROL Active]**: Meddelandeförinställningen har verifierats och kan väljas för att skapa meddelanden.
-* **[!UICONTROL Failed]**: En eller flera kontroller misslyckades under verifieringen av meddelandeförinställningen.
-* **[!UICONTROL Deactivated]**: Meddelandeförinställningen är inaktiverad. Det kan inte användas för att skapa nya meddelanden.
+* **[!UICONTROL Draft]**: Kanalytan har sparats som ett utkast och har inte skickats ännu. Öppna den för att återuppta konfigurationen.
+* **[!UICONTROL Processing]**: Kanalytan har skickats och genomgår flera verifieringssteg.
+* **[!UICONTROL Active]**: Kanalytan har verifierats och kan väljas för att skapa meddelanden.
+* **[!UICONTROL Failed]**: En eller flera kontroller misslyckades under verifieringen av kanalens yta.
+* **[!UICONTROL Deactivated]**: Kanalytan är inaktiverad. Det kan inte användas för att skapa nya meddelanden.
 
-Om det inte går att skapa en meddelandeförinställning beskrivs informationen för varje möjlig felorsak nedan.
+Om det inte går att skapa en kanalyta beskrivs detaljerna för varje möjlig felorsak nedan.
 
 Om något av dessa fel inträffar, kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;} om du vill ha hjälp.
 
@@ -128,18 +128,18 @@ Om något av dessa fel inträffar, kontakta [Adobe kundtjänst](https://helpx.ad
 * **Konfigurationer för slutbarhet misslyckades**: Fel i leveranskonfigurationer kan uppstå på grund av någon av följande orsaker:
    * Blockeringslistning av de tilldelade IP-adresserna
    * Ogiltig `helo` name
-   * E-postmeddelanden som skickas från andra IP-adresser än de som anges i IP-poolen för motsvarande förinställning
+   * E-postmeddelanden skickas från andra IP-adresser än de som anges i IP-poolen för motsvarande yta
    * Det går inte att leverera e-postmeddelanden till inkorg hos större internetleverantörer som Gmail och Yahoo
 
-## Redigera en meddelandeförinställning {#edit-message-preset}
+## Redigera en kanalyta {#edit-message-preset}
 
-Om du vill redigera en meddelandeförinställning följer du stegen nedan.
+Om du vill redigera en kanalyta följer du stegen nedan.
 
 >[!NOTE]
 >
->Du kan inte redigera **[!UICONTROL Push notification settings]**. Om en meddelandeförinställning bara är konfigurerad för push-meddelandekanalen går det inte att redigera den.
+>Du kan inte redigera **[!UICONTROL Push notification settings]**. Om en kanalyta bara är konfigurerad för Push-meddelandekanalen går det inte att redigera den.
 
-1. Öppna en meddelandeförinställning genom att klicka på namnet i listan.
+1. Öppna en kanalyta genom att klicka på dess namn i listan.
 
    ![](assets/preset-name.png)
 
@@ -147,7 +147,7 @@ Om du vill redigera en meddelandeförinställning följer du stegen nedan.
 
    >[!NOTE]
    >
-   >Om en meddelandeförinställning har **[!UICONTROL Active]** status, **[!UICONTROL Name]**, **[!UICONTROL Select channel]** och **[!UICONTROL Subdomain]** fält är nedtonade och kan inte redigeras.
+   >Om en kanalyta har **[!UICONTROL Active]** status, **[!UICONTROL Name]**, **[!UICONTROL Select channel]** och **[!UICONTROL Subdomain]** fält är nedtonade och kan inte redigeras.
 
 1. Klicka **[!UICONTROL Submit]** för att bekräfta dina ändringar.
 
@@ -155,9 +155,9 @@ Om du vill redigera en meddelandeförinställning följer du stegen nedan.
 
    >[!NOTE]
    >
-   >Du kan också spara meddelandeförinställningen som utkast och återuppta uppdateringen senare.
+   >Du kan också spara kanalytan som utkast och återuppta uppdateringen senare.
 
-När ändringarna har skickats går meddelandeförinställningen igenom en valideringscykel som liknar den som används när [skapa en förinställning](#create-message-preset). Versionshanteringstiden kan ta upp till **3 timmar**.
+När ändringarna har skickats går kanalytan igenom en valideringscykel som liknar den som finns när [skapa en kanalyta](#create-message-preset). Versionshanteringstiden kan ta upp till **3 timmar**.
 
 >[!NOTE]
 >
@@ -165,15 +165,13 @@ När ändringarna har skickats går meddelandeförinställningen igenom en valid
 
 ### Uppdatera information {#update-details}
 
-För meddelandeförinställningar som har **[!UICONTROL Active]** status kan du kontrollera uppdateringens information. För att göra detta:
+För kanalytor som har **[!UICONTROL Active]** status kan du kontrollera uppdateringens information. För att göra detta:
 
-* Klicka på **[!UICONTROL Recent update]** som visas bredvid den aktiva förinställningens namn.
+Klicka på **[!UICONTROL Recent update]** -ikonen som visas bredvid det aktiva ytnamnet.
 
-   ![](assets/preset-recent-update-icon.png)
+![](assets/preset-recent-update-icon.png)
 
-* Du kan även komma åt uppdateringsinformationen från en aktiv meddelandeförinställning medan uppdateringen pågår.
-
-   ![](assets/preset-view-update-details.png)
+<!--You can also access the update details from an active channel surface while update is in progress.-->
 
 På **[!UICONTROL Recent update]** visas information som uppdateringsstatus och listan över begärda ändringar.
 
@@ -181,17 +179,17 @@ På **[!UICONTROL Recent update]** visas information som uppdateringsstatus och 
 
 ### Uppdatera status {#update-statuses}
 
-En uppdatering av en meddelandeförinställning kan ha följande status:
+En uppdatering av en kanalyta kan ha följande status:
 
-* **[!UICONTROL Processing]**: Uppdateringen av meddelandeförinställningen har skickats och genomgår flera verifieringssteg.
-* **[!UICONTROL Success]**: Den uppdaterade meddelandeförinställningen har verifierats och kan väljas för att skapa meddelanden.
-* **[!UICONTROL Failed]**: En eller flera kontroller misslyckades under verifieringen av uppdateringen av meddelandeförinställningen.
+* **[!UICONTROL Processing]**: Kanalytans uppdatering har skickats och genomgår flera verifieringssteg.
+* **[!UICONTROL Success]**: Den uppdaterade kanalytan har verifierats och kan väljas för att skapa meddelanden.
+* **[!UICONTROL Failed]**: En eller flera kontroller misslyckades under verifieringen av kanalytans uppdatering.
 
 Varje status visas nedan.
 
 #### Bearbetar
 
-Flera leveransåtgärder kommer att utföras för att kontrollera att förinställningen har uppdaterats korrekt.
+Flera leveranskontroller kommer att utföras för att kontrollera att ytan har uppdaterats på rätt sätt.
 
 >[!NOTE]
 >
@@ -199,41 +197,41 @@ Flera leveransåtgärder kommer att utföras för att kontrollera att förinstä
 
 Bearbetningstiden kan ta upp till **3 timmar**. Läs mer om kontroller som utförts under valideringscykeln i [det här avsnittet](#create-message-preset).
 
-Om du redigerar en förinställning som redan var aktiv:
+Om du redigerar en yta som redan var aktiv:
 
 * Dess status kvarstår **[!UICONTROL Active]** när valideringsprocessen pågår.
 
-* The **[!UICONTROL Recent update]** visas bredvid namnet på förinställningen i listan med meddelandeförinställningar.
+* The **[!UICONTROL Recent update]** visas bredvid namnet på ytan i kanalens ytlista.
 
-* Under valideringsprocessen används fortfarande den äldre versionen av förinställningen för meddelanden som konfigurerats med den här förinställningen.
+* Under valideringsprocessen används fortfarande den äldre versionen av ytan för meddelanden som konfigurerats med den här ytan.
 
 >[!NOTE]
 >
->Du kan inte ändra en meddelandeförinställning medan uppdateringen pågår. Du kan fortfarande klicka på namnet, men alla fält är nedtonade. Ändringarna visas inte förrän uppdateringen har slutförts.
+>Du kan inte ändra en kanalyta medan uppdateringen pågår. Du kan fortfarande klicka på namnet, men alla fält är nedtonade. Ändringarna visas inte förrän uppdateringen har slutförts.
 
 #### Lyckades {#success}
 
-När valideringsprocessen har slutförts används den nya versionen av förinställningen automatiskt i alla meddelanden som använder den här förinställningen. Du kan dock behöva vänta:
+När valideringsprocessen har slutförts används den nya versionen av ytan automatiskt i alla meddelanden som använder den här ytan. Du kan dock behöva vänta:
 * några minuter innan det konsumeras av enhetsmeddelanden,
-* till nästa grupp för att förinställningen ska vara effektiv i gruppmeddelanden.
+* tills nästa omgång för att ytan ska vara effektiv i gruppmeddelanden.
 
 #### Misslyckades {#failed}
 
-Om valideringsprocessen misslyckas kommer den äldre versionen av förinställningen fortfarande att användas.
+Om valideringsprocessen misslyckas kommer den äldre versionen av ytan fortfarande att användas.
 
 Läs mer om möjliga felorsaker i [det här avsnittet](#monitor-message-presets).
 
-När uppdateringen misslyckas blir förinställningen redigerbar igen. Du kan klicka på dess namn och uppdatera inställningarna som behöver korrigeras.
+När uppdateringen misslyckas blir ytan redigerbar igen. Du kan klicka på dess namn och uppdatera inställningarna som behöver korrigeras.
 
-## Inaktivera en meddelandeförinställning {#deactivate-preset}
+## Inaktivera en kanalyta {#deactivate-preset}
 
-Skapa en **[!UICONTROL Active]** meddelandeförinställningen är inte tillgänglig för att skapa nya meddelanden. Du kan inaktivera den. De publicerade meddelanden som använder den här förinställningen påverkas dock inte och fortsätter att fungera.
+Skapa en **[!UICONTROL Active]** Kanalytan är inte tillgänglig för att skapa nya meddelanden. Du kan inaktivera den. Resebudskap som för närvarande använder denna yta kommer dock inte att påverkas och kommer att fortsätta fungera.
 
 >[!NOTE]
 >
->Du kan inte inaktivera en meddelandeförinställning medan en uppdatering bearbetas. Du måste vänta tills uppdateringen har slutförts eller misslyckats. Läs mer på [redigera meddelandeförinställningar](#edit-message-preset) och [uppdateringsstatus](#update-statuses).
+>Du kan inte inaktivera en kanalyta medan en uppdatering bearbetas. Du måste vänta tills uppdateringen har slutförts eller misslyckats. Läs mer på [redigera kanalytor](#edit-message-preset) och [uppdateringsstatus](#update-statuses).
 
-1. Öppna listan med meddelandeförinställningar.
+1. Öppna listan över kanalytor.
 
 1. Klicka på **[!UICONTROL More actions]** -knappen.
 
@@ -243,14 +241,14 @@ Skapa en **[!UICONTROL Active]** meddelandeförinställningen är inte tillgäng
 
 >[!NOTE]
 >
->Det går inte att ta bort förinställningar för inaktiverade meddelanden för att undvika problem i resor som uppstår när du använder dessa förinställningar för att skicka meddelanden.
+>Inaktiverade kanalytor kan inte tas bort för att undvika problem i resor som använder dessa ytor för att skicka meddelanden.
 
-Du kan inte redigera en inaktiverad meddelandeförinställning direkt. Du kan dock duplicera den och redigera kopian för att skapa en ny version som du använder för att skapa nya meddelanden. Du kan även aktivera den igen och vänta tills uppdateringen har redigerats.
+Du kan inte redigera en inaktiverad kanalyta direkt. Du kan dock duplicera den och redigera kopian för att skapa en ny version som du använder för att skapa nya meddelanden. Du kan även aktivera den igen och vänta tills uppdateringen har redigerats.
 
 ![](assets/preset-activate.png)
 
 ## Instruktionsvideo{#video-presets}
 
-Lär dig hur du skapar meddelandeförinställningar, hur du använder dem och hur du delegerar en underdomän och skapar en IP-pool.
+Lär dig hur du skapar kanalytor, hur du använder dem och hur du delegerar en underdomän och skapar en IP-pool.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334343?quality=12)

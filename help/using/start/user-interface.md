@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 0ca491315e214e3c12bec11a93da1a2b98b493b6
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '1462'
-ht-degree: 7%
+source-wordcount: '1456'
+ht-degree: 6%
 
 ---
 
@@ -28,7 +28,7 @@ Vilka komponenter och funktioner som är tillgängliga i användargränssnittet 
 
 ## Vänster navigering {#left-nav}
 
-Använd länkarna till vänster för att bläddra bland funktionerna.
+Bläddra bland länkarna till vänster för att komma åt dem [!DNL Journey Optimizer] funktioner.
 
 ![](assets/ajo-home.png)
 
@@ -36,17 +36,17 @@ Använd länkarna till vänster för att bläddra bland funktionerna.
 >
 >Tillgängliga funktioner kan variera beroende på dina behörigheter och licensavtal.
 
-Nedan finns en fullständig lista över tjänster och funktioner som är tillgängliga i den vänstra navigeringen samt länkar till tillhörande dokumentation.
+Nedan finns en fullständig lista över tjänster och funktioner som är tillgängliga i den vänstra navigeringen samt länkar till tillhörande hjälpsidor.
 
 **Start**
 
-[!DNL Journey Optimizer] startsidan innehåller viktiga länkar och resurser att starta. The **[!UICONTROL Recents]** listan innehåller genvägar till nyligen skapade eller uppdaterade meddelanden, händelser och resor. Den här listan visar datum och status för när de skapades och ändrades.
+[!DNL Journey Optimizer] startsidan innehåller viktiga länkar och resurser att starta. The **[!UICONTROL Recents]** listan innehåller genvägar till nyligen skapade händelser och resor. Den här listan visar datum och status för när de skapades och ändrades.
 
 **[!UICONTROL JOURNEY MANAGEMENT]**
 
 * **[!UICONTROL Journeys]** - Skapa, konfigurera och samordna era kundresor. [Läs mer](../building-journeys/journey-gs.md#jo-build)
 
-* **[!UICONTROL Messages]** - Skapa, utforma, testa och publicera e-post och push-meddelanden. [Läs mer](../messages/get-started-content.md)
+* **[!UICONTROL Landing pages]** - Skapa, utforma, testa och publicera landningssidor. [Läs mer](../landing-pages/get-started-lp.md)
 
 **[!UICONTROL DECISION MANAGEMENT]**
 
@@ -127,7 +127,7 @@ Du kan använda dessa vanliga kortkommandon i [!DNL Journey Optimizer]:
 | Gå bakåt mellan element, avsnitt och menygrupper i användargränssnittet | Skift+Tabb |
 | Flytta inom avsnitt för att ange fokus till enskilda element | Pil |
 | Markera eller rensa ett element som är i fokus | Enter eller mellanslagstangenten |
-| Avbryt en markering, komprimera en panel eller stänga en dialogruta | Esc |
+| Avbryt en markering, komprimera en ruta eller stänga en dialogruta | Esc |
 
 [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/custom.html){target=&quot;_blank&quot;} i Adobe Experience Platform-dokumentationen.
 
@@ -274,7 +274,7 @@ Så här byter du språk:
 
 ## Sökning{#unified-search}
 
-Var som helst från Adobe Journey Optimizer-gränssnittet kan du använda sökfunktionen för enhetliga Adobe Experience Cloud i mitten av det övre fältet för att hitta resurser, resor, datauppsättningar, meddelanden med mera i dina sandlådor.
+Var som helst från Adobe Journey Optimizer-gränssnittet kan du använda sökfunktionen för enhetliga Adobe Experience Cloud i mitten av det övre fältet för att hitta resurser, resor, datauppsättningar med mera i dina sandlådor.
 
 Börja skriva in innehåll för att visa de bästa resultaten. Hjälpartiklar om de angivna nyckelorden visas också i resultaten.
 
@@ -304,6 +304,6 @@ I konfigurationsrutorna Händelse, Datakälla och Åtgärd visas **[!UICONTROL U
 
 ![](assets/journey3bis.png)
 
-I de olika listorna kan du utföra grundläggande åtgärder för varje element. Du kan till exempel skapa dubbletter eller radera en post.
+I listorna kan du utföra grundläggande åtgärder för varje element. Du kan till exempel skapa dubbletter eller radera en post.
 
 ![](assets/journey4.png)

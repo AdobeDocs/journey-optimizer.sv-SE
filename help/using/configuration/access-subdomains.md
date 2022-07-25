@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: cb3248c5-f444-47aa-80b2-c1a9fbebfcc0
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Åtkomst till delegerade underdomäner {#access-delegated-subdomains}
 
-Alla dina delegerade underdomäner visas i **[!UICONTROL Channels]** / **[!UICONTROL Subdomains]** -menyn. Det finns filter som hjälper dig att förfina listan (delegeringsdatum, användare eller status).
+Alla dina delegerade underdomäner visas i **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Subdomains]** -menyn. Det finns filter som hjälper dig att förfina listan (delegeringsdatum, användare eller status).
 
 ![](assets/subdomain-list.png)
 

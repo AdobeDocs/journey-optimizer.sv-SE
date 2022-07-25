@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 630b8ef5a140709161b24256083b2104be5b6121
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 4%
+source-wordcount: '402'
+ht-degree: 2%
 
 ---
 
@@ -18,16 +18,17 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms"
 >title="SMS-skapande"
->abstract="Lägg till ditt textmeddelande och börja personalisera det med Uttrycksredigeraren."
+>abstract="Lägg till ditt textmeddelande och börja personalisera det med uttrycksredigeraren."
 
-En gång [skapade ett meddelande](get-started-content.md), använder du **[!UICONTROL SMS]** för att definiera inställningar och innehåll för SMS-meddelandet.
+Använd [!DNL Journey Optimizer] för att skicka textmeddelanden till kunderna på deras mobila enheter. Du kan skapa, anpassa och förhandsgranska meddelanden i textformat från SMS-redigeraren.
 
+En gång [lade till ett SMS](get-started-content.md) -aktiviteten på din resa och definierade grundläggande inställningar, använd **[!UICONTROL Actions: SMS]** höger ruta för att skapa innehållet för SMS-meddelandet.
 
 >[!AVAILABILITY]
 >
 >SMS-kanalen är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
 
-![](assets/sms_1.png)
+![](assets/sms-edit-content.png)
 
 Om det är första gången du skapar ett SMS-meddelande kontrollerar du att SMS-kanalen har konfigurerats. [Läs mer](../configuration/sms-configuration.md).
 
@@ -35,33 +36,27 @@ Om det är första gången du skapar ett SMS-meddelande kontrollerar du att SMS-
 
 Så här börjar du personalisera SMS-meddelandet:
 
-1. Klicka på **[!UICONTROL Add text message]** för att öppna uttrycksredigeraren.
+1. Klicka på **[!UICONTROL Message]** för att öppna uttrycksredigeraren.
 
-   ![](assets/sms_3.png)
+   ![](assets/sms-content.png)
 
-1. Använd uttrycksredigeraren för att definiera innehåll. Du kan använda alla attribut för att anpassa innehåll, till exempel profilnamnet eller staden. Läs mer om personalisering i Expression Editor i [det här avsnittet](../personalization/personalize.md)
+1. Använd uttrycksredigeraren för att definiera innehåll. Du kan använda alla attribut för att anpassa innehåll, till exempel profilnamnet eller staden. Läs mer om personalisering i uttrycksredigeraren i [det här avsnittet](../personalization/personalize.md).
 
-   >[!NOTE]
-   >
-   > Ett SMS-meddelande kan innehålla upp till 160 tecken, inklusive mellanslag och radbrytningar.
+1. Klicka **[!UICONTROL Save]** och kontrollera meddelandet i förhandsgranskningen.
 
-   ![](assets/sms_2.png)
+   ![](assets/sms-content-preview.png)
 
-1. Klicka **[!UICONTROL Save]** när meddelandet är klart.
 
 ## Validera ditt SMS{#sms-preview}
 
 När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du infogade [personaliserat innehåll](../personalization/personalize.md)kan du kontrollera hur det här innehållet visas i meddelandet och dra nytta av testprofildata.
 
-Om du vill se hur ditt SMS-meddelande visas på mobila enheter går du till **[!UICONTROL Preview]** -fliken.
+Om du vill se hur SMS-meddelandet visas på mobila enheter klickar du på **[!UICONTROL Simulate content]** -fliken. Läs mer om simulering av innehåll i [det här avsnittet](../design/preview.md).
 
-Mer information om detta finns i [det här avsnittet](../design/preview.md).
+Du måste även kontrollera varningar i den övre delen av redigeraren.  Vissa av dem är enkla varningar, men andra kan hindra dig från att använda meddelandet. Läs mer i [det här avsnittet](alerts.md).
 
-## Publicera ditt SMS {#sms-publish}
+![](assets/sms-alert-button.png)
 
-När meddelandet är klart kan du publicera det för att göra det tillgängligt för körning med **[!UICONTROL Publish]** -knappen. Den här åtgärden publicerar den nya versionen av meddelandet som ska användas för nästa körning på dina resor.
-
-Ditt SMS-meddelande kan nu användas under en resa. [Lär dig skapa resor](../building-journeys/journey-gs.md).
 
 ## Anmäl dig och avanmäl dig{#sms-opt-in-out}
 
@@ -73,12 +68,13 @@ Mer information om hur inbyggt stöd för inkommande nyckelord (start, stopp och
 
 >[!VIDEO](https://video.tv.adobe.com/v/344026?quality=12)
 
-## Instruktionsvideo
+<!--
+## How-to video
 
-Lär dig hur du konfigurerar, redigerar och inkluderar SMS-meddelanden i dina kundresor.
+Learn how to configure, author, and include SMS messaging into your customer journeys.
 
 >[!VIDEO](https://video.tv.adobe.com/v/344460?quality=12)
-
+-->
 **Relaterade ämnen**
 
 * [Konfigurera SMS-kanal](../configuration/sms-configuration.md)

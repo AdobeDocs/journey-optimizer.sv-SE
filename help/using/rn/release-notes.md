@@ -2,10 +2,10 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: ac3c49c16a2496b3d5bc9b803589644b69c6565c
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 10%
+source-wordcount: '552'
+ht-degree: 9%
 
 ---
 
@@ -16,6 +16,10 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver av sina senaste innovationer och förbättringar. Läs mer om de här ändringarna i [Versionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target=&quot;_blank&quot;}.
 
 ![Nyhetsbrev](../assets/do-not-localize/nl-icon.png) Registrera dig för [Adobe Journey Optimizer kvartalsvis nyhetsbrev](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target=&quot;_blank&quot;} idag och få de senaste produktuppdateringarna, spännande historier, användningsexempel, tips och mycket annat levererat direkt till inkorgen varje kvartal.
+
+>[!CAUTION]
+>
+>Den 25 juli släpper Adobe Journey Optimizer en [ny funktion](../rn/inline-messages.md) vilket förbättrar det sätt på vilket du skapar innehåll för Journey Optimizer-kanaler (e-post, push, SMS). Som Journey Optimizer-läkare har du nu [skapa och skriva](../messages/get-started-content.md) meddelanden direkt från en resa. En automatisk omräkning av resor utförs åt dig. Vi behöver er hjälp med några steg. Läs mer på [obligatoriska steg](../rn/inline-messages-steps.md).
 
 ## Version från juni 2022 {#june-2022-release}
 
@@ -117,7 +121,7 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 <tbody>
 <tr>
 <td>
-<p>You can now create conditional content blocks across different authoring services to personalize your content. In addition to the Personalization Expression Library, the Expression Editor provides a new Conditional Rule Builder to help you design and save your content blocks.</p>
+<p>You can now create conditional content blocks across different authoring services to personalize your content. In addition to the Personalization Expression Library, the Expression editor provides a new Conditional Rule Builder to help you design and save your content blocks.</p>
 <p>For more information, refer to the <a href="../building-journeys/read-segment.md#configuring-segment-trigger-activity">detailed documentation</a>.
 </td>
 </tr>
@@ -153,7 +157,7 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 
 * **IP-poolversion** - När du nu uppdaterar en IP-pool kan bearbetningstiden bara ta upp till 3 timmar. [Läs mer](../configuration/ip-pools.md#edit-ip-pool)
 
-<!--* **Personalize tracking URL parameters** - You can now use the Expression Editor to configure URL tracking parameters in your message presets. [Learn more](../configuration/email-settings.md#url-tracking)-->
+<!--* **Personalize tracking URL parameters** - You can now use the Expression editor to configure URL tracking parameters in your message presets. [Learn more](../configuration/email-settings.md#url-tracking)-->
 
 <!--
 **Reporting**

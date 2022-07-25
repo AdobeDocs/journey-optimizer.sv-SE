@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 0715f65f-04bd-4dc2-a152-98111f4c42e6
-source-git-commit: 7f524b7ed9092465be996eeca36e6102e8e1c405
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '550'
 ht-degree: 1%
 
 ---
@@ -65,10 +65,7 @@ Följ stegen nedan om du vill bläddra bland liknande foton:
 
    Om bilden du valde inte är licensierad måste du [skaffa licensen](#license-stock-image).
 
-1. Anpassa bilden, om det behövs, med **[!UICONTROL Components settings]** -menyn. [Läs mer om komponentinställningar](content-components.md)
-
-När ditt meddelande har skapats och anpassats kan du publicera det så att det blir tillgängligt för exekvering. [Läs mer](../messages/publish-manage-message.md)
-
+1. Anpassa bilden, om det behövs, med **[!UICONTROL Components settings]** -menyn. [Läs mer om komponentinställningar](content-components.md).
 
 ## Hämta licensen från [!DNL Adobe Stock] {#license-stock-image}
 

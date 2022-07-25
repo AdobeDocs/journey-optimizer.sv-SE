@@ -6,10 +6,10 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 9c9598c0-6fb1-4e2f-b610-ccd1a80e516e
-source-git-commit: 8a68d1e6d498ef3055c703d4e73471ab6d7bff40
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '977'
+ht-degree: 2%
 
 ---
 
@@ -28,22 +28,38 @@ Du använder följande typer av hjälpfunktioner:
 ➡️ [Lär dig hur du använder hjälpfunktioner i den här videon](#video)
 
 Innan du börjar bör du kontrollera hur du konfigurerar dessa element:
-* Ett e-postmeddelande. [Läs mer](../messages/get-started-content.md)
-* Innehållet i ett e-postmeddelande. [Läs mer](../design/create-email-content.md).
+
 * En enastående händelse. [Läs mer](../event/about-events.md).
 * En resa som börjar med ett evenemang. [Läs mer](../building-journeys/using-the-journey-designer.md).
+* Ett e-postmeddelande under din resa. [Läs mer](../messages/get-started-content.md)
+* Innehållet i ett e-postmeddelande. [Läs mer](../design/create-email-content.md).
 
 Följ de här stegen:
+
+1. [Skapa det första evenemanget och resan](#create-context).
 1. [Skapa ett e-postmeddelande](#configure-email).
 1. [Infoga kundens förnamn med versaler](#uppercase-function).
-1. [Skapa det första evenemanget och resan](#create-context).
 1. [Lägg till kundvagnsinnehållet i e-postmeddelandet](#each-helper).
 1. [Infoga en produktspecifik anteckning](#if-helper).
 1. [Testa och publicera resan](#test-and-publish).
 
-## Steg 1: Skapa e-postmeddelandet{#configure-email}
+## Steg 1: Skapa den första händelsen och den relaterade resan {#create-context}
 
-1. Skapa eller ändra ett e-postmeddelande och klicka sedan på **[!UICONTROL Email Designer]**.
+Kundvagnens innehåll är sammanhangsberoende information från resan. Därför måste du lägga till en första händelse och e-postmeddelandet till en resa innan du kan lägga till kundspecifik information i e-postmeddelandet.
+
+1. Skapa en händelse vars schema innehåller `productListItems` array.
+1. Definiera alla fält från den här arrayen som nyttolastfält för den här händelsen.
+
+   Läs mer om datatypen i produktlistan [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html){target=&quot;_blank&quot;}.
+
+1. Skapa en resa som börjar med det här evenemanget.
+1. Lägg till en **E-post** till resan.
+
+   ![](assets/personalization-uc-helpers-8.png)
+
+## Steg 2: Skapa e-postmeddelandet{#configure-email}
+
+1. I **E-post** aktivitet, klicka **[!UICONTROL Edit content]** och sedan klicka **[!UICONTROL Email Designer]**.
    ![](assets/personalization-uc-helpers-1.png)
 
 1. Dra och släpp tre strukturkomponenter från den vänstra paletten på e-postdesignerns hemsida till meddelandets brödtext.
@@ -52,7 +68,7 @@ Följ de här stegen:
 
    ![](assets/personalization-uc-helpers-2.png)
 
-## Steg 2: Infoga kundens förnamn med versaler {#uppercase-function}
+## Steg 3: Infoga kundens förnamn med versaler {#uppercase-function}
 
 1. På startsidan för e-postdesignern klickar du på komponenten HTML där du vill lägga till kundens förnamn.
 1. I det sammanhangsberoende verktygsfältet klickar du på **[!UICONTROL Show the source code]**.
@@ -93,33 +109,9 @@ Följ de här stegen:
    ![](assets/personalization-uc-helpers-6.png)
 1. Spara meddelandet.
 
-## Steg 3: Skapa den första händelsen och den relaterade resan {#create-context}
-
-Kundvagnens innehåll är sammanhangsberoende information från resan. Därför måste du lägga till en första händelse och e-postmeddelandet till en resa innan du kan lägga till kundspecifik information i e-postmeddelandet.
-
-1. Skapa en händelse vars schema innehåller `productListItems` array.
-1. Definiera alla fält från den här arrayen som nyttolastfält för den här händelsen.
-
-   Läs mer om datatypen i produktlistan [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html){target=&quot;_blank&quot;}.
-
-1. Skapa en resa som börjar med det här evenemanget.
-1. Lägg till meddelandet på resan.
-
-   Eftersom du ännu inte har publicerat meddelandet kan du varken testa eller publicera resan.
-
-   ![](assets/personalization-uc-helpers-7.png)
-
-1. Klicka på **[!UICONTROL OK]**.
-
-   Ett meddelande informerar dig om att resekontexten har skickats till meddelandet.
-
-   ![](assets/personalization-uc-helpers-8.png)
-
 ## Steg 4: Infoga listan med artiklar från vagnen {#each-helper}
 
-1. Öppna meddelandet igen.
-
-   ![](assets/personalization-uc-helpers-18.png)
+1. Öppna meddelandeinnehållet igen.
 
 1. På startsidan för e-postdesignern klickar du på komponenten HTML där du vill visa kundvagnens innehåll.
 1. I det sammanhangsberoende verktygsfältet klickar du på **[!UICONTROL Show the source code]**.
@@ -299,14 +291,11 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 
    ![](assets/personalization-uc-helpers-14.png)
 
-1. Spara och publicera meddelandet.
+1. Spara meddelandet.
 
 ## Steg 6: Testa och publicera resan {#test-and-publish}
 
-1. Öppna resan. Uppdatera sidan om resan redan är öppen.
 1. Aktivera **[!UICONTROL Test]** växla och klicka sedan **[!UICONTROL Trigger an event]**.
-
-   Du kan bara aktivera testläget efter att du har publicerat meddelandet.
 
    ![](assets/personalization-uc-helpers-15.png)
 

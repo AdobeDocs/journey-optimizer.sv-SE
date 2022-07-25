@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: ec15e700-7659-4dbf-8446-6534ea48c5c8
-source-git-commit: 2398bbad3949eae7b19ad36064ff767278e4fcf2
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -21,15 +21,11 @@ ht-degree: 0%
 
 Använd **[!UICONTROL Global report]** för att mäta effekten av resor och leveranser under en viss tidsperiod.
 
-* Om du vill rikta in dig på en resa eller leveranser i samband med en resa, från **[!UICONTROL Journeys]** -menyn, få åtkomst till din resa och klicka på **[!UICONTROL Global report]** ikon. Du kan sedan hitta resan, e-postmeddelandet och penseln **[!UICONTROL Global report]**.
+* Om du vill rikta in dig på en resa eller leveranser i samband med en resa, från **[!UICONTROL Journeys]** -menyn, få åtkomst till din resa och klicka på **[!UICONTROL View report]** -knappen. Du kan sedan hitta de globala rapporterna Resa, E-post, SMS och Push.
 
-   ![](assets/report_6.png)
+   ![](assets/report_journey.png)
 
-* Om du vill ange en viss leverans som mål går du till **[!UICONTROL Global view]** i **[!UICONTROL Executions]** fliken med dina meddelanden väljer du **[!UICONTROL Global Report]** på den avancerade menyn för den valda leveransen.
-
-   ![](assets/report_4.png)
-
-* Om du vill växla från **[!UICONTROL Global report]** till **[!UICONTROL Live report]** för leverans klickar du **[!UICONTROL Live view]** i flikväxlaren.
+* Om du vill växla från **[!UICONTROL Live report]** till **[!UICONTROL Global report]** för leverans klickar du **[!UICONTROL Global view]** i flikväxlaren.
 
    ![](assets/report_5.png)
 

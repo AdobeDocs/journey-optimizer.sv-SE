@@ -1,10 +1,10 @@
 ---
 title: Starta körning av resa
 description: Lär dig hur du påbörjar din resa och skickar meddelanden
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 2%
+source-wordcount: '274'
+ht-degree: 3%
 
 ---
 
@@ -34,13 +34,9 @@ När den publicerats kan ni övervaka er resa med de dedikerade rapporteringsver
 
 ## Skicka meddelanden {#send-messages}
 
-När ett meddelande har ett definierat innehåll och publiceras är det klart att skickas via en [resa](journey.md).
+När ditt meddelande har ett definierat innehåll är det klart att skickas via en [resa](journey.md).
 
->[!NOTE]
->
->Du kan lägga till ett meddelande som fortfarande är i utkastläge för en resa, men se till att meddelandet publiceras innan du publicerar resan.
-
-När ett meddelande har skickats kan du övervaka dess körning med hjälp av flera indikatorer. [Läs mer om övervakning av meddelandekörning](../message-monitoring.md).
+När ett meddelande har skickats kan du övervaka dess körning med hjälp av flera indikatorer. [Läs mer om rapportering](../global-report.md).
 
 ## Schemalägg meddelanden {#schedule-messages}
 

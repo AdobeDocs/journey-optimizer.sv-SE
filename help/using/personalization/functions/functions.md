@@ -6,7 +6,7 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
-source-git-commit: 284d95976ab1b58aaea2a4c41db20a3ea5a9b761
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
 source-wordcount: '1738'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Mallspråk används i hjälpfunktioner som är tillgängliga i listrutan för an
 
 ![](../assets/access-helper-functions.png)
 
-I [!DNL Journey Optimizer] Hjälpfunktionerna i uttrycksredigeraren är grupperade i tre kategorier: [Funktioner](#functions-helper), [Hjälpmedel](#helper-helper) och [Operatorer](#operators-helper).
+I [!DNL Journey Optimizer] Uttrycksredigeraren, hjälpfunktionerna är grupperade i tre kategorier: [Funktioner](#functions-helper), [Hjälpmedel](#helper-helper) och [Operatorer](#operators-helper).
 
 Välj en kategori för att komma åt underkategorier och funktioner.
 

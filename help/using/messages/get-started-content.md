@@ -1,137 +1,164 @@
 ---
 title: Kom igång med meddelanden
-description: Lär dig hur du skapar, testar och publicerar personaliserade meddelanden i Journey Optimizer
+description: Lär dig hur du skapar och levererar personaliserade meddelanden i Journey Optimizer
 feature: Overview
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 712dc172-6c0d-4ce8-ba16-de99d65fc641
-source-git-commit: 5bb7df1b02712da3b496aa92be30d4ea02750c39
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '811'
 ht-degree: 2%
 
 ---
 
-# Kom igång med meddelanden {#get-started-contents-messages}
+# Kom igång med kanalåtgärder {#get-started-messages}
 
-Använd [!DNL Journey Optimizer] för att utnyttja olika resurser som resurser och innehåll på ett och samma ställe, och skapa och publicera personaliserade push-meddelanden och e-postmeddelanden.
+>[!CONTEXTUALHELP]
+>id="ajo_journey_message"
+>title="Kanalåtgärder"
+>abstract="Använd kanalåtgärder för att skicka ett push-, SMS- eller e-postmeddelande."
 
-* Utnyttja [!DNL Journey Optimizer] **funktioner för e-postdesign** för att skapa eller importera responsiva e-postmeddelanden.
+Använd [!DNL Journey Optimizer] för att skapa och leverera personaliserade push-meddelanden, SMS och e-postmeddelanden. Alla meddelanden kan redigeras online som en del av en åtgärd på arbetsytan på resan.  Använd funktionen Spara som mall för att enkelt återanvända innehållet. Du kan:
 
-* Utnyttja **Adobe Experience Manager Assets Essentials** för att bygga upp en egen databas och berika era e-postmeddelanden.
+* Använd [!DNL Journey Optimizer] **funktioner för e-postdesign** för att skapa eller importera responsiva e-postmeddelanden.
 
-* Förbättra kundernas upplevelse genom att skapa **personaliserade push- och e-postmeddelanden** baserat på deras profilattribut.
+* Utnyttja **Adobe Experience Manager Assets Essentials** för att berika era e-postmeddelanden, bygga och hantera er egen databas för mediefiler.
 
-* **Skapa push- och e-postmeddelanden** baserat på innehållet och publicera dem sedan.
+* Sök **Adobe Stock foton** för att skapa innehåll och förbättra e-postdesignen.
 
-## Åtkomstmeddelanden {#access-messages}
+* Förbättra kundernas upplevelse genom att skapa personaliserade **push-meddelanden, SMS och e-post** baserat på deras profilattribut.
 
-Meddelanden är tillgängliga från **[!UICONTROL Messages]** genväg till vänster. Alla meddelanden visas sorterade efter publiceringsdatum (för publicerade meddelanden) eller skapandedatum (för utkastmeddelanden).
+* **Skicka leveranser** baserat på innehållet och spåra kundbeteende.
 
 >[!NOTE]
 >
->Användarna kan komma åt, skapa, redigera och/eller publicera meddelanden beroende på deras produktprofil. Läs mer om användarbehörigheter [i det här avsnittet](../administration/permissions.md).
+>Användarna kan öppna, skapa, redigera och/eller publicera resor beroende på deras produktprofil. Läs mer om användarbehörigheter [i det här avsnittet](../administration/permissions.md).
 
-![](assets/messages-list.png)
 
-* Använd **[!UICONTROL Show recents]** växla för att lägga till direktlänkar till meddelanden som du har haft tillgång till de senaste fem dagarna.
+## Lägg till meddelanden på dina resor{#messages-in-journeys}
 
-   ![](assets/show-recent-messages.png)
+>[!CONTEXTUALHELP]
+>id="ajo_message_category"
+>title="Meddelandekategori"
+>abstract="Välj Marknadsföring för kommersiella meddelanden eller Transactional för icke-kommersiella meddelanden som orderbekräftelse, meddelanden om lösenordsåterställning eller leveransinformation"
 
-* Använd filterikonen om du bara vill visa utkast, publicerade meddelanden eller meddelanden som publiceras. Du kan även söka på meddelandeetiketten enligt nedan:
+>[!CONTEXTUALHELP]
+>id="ajo_message_surface"
+>title="Kanalyta"
+>abstract="En kanalyta är en instans av den kanalen som har alla inställningar för att kunna leverera en åtgärd via en kampanj eller en resa. Den definieras av en systemadministratör."
 
-   ![](assets/filter-messages.png)
+Om du vill lägga till meddelanden på dina resor lägger du bara till en push-, SMS- eller e-postaktivitet i kundresan.
 
-* Du kan arkivera oanvända meddelanden för att rensa meddelandelistan med hjälp av den dedikerade ikonen på snabbåtgärdsmenyn.
+1. Påbörja resan med en [Händelse](../building-journeys/general-events.md) eller en [Läs segment](../building-journeys/read-segment.md) aktivitet.
 
-   ![](assets/archive-message.png)
+1. Från **Åtgärder** dra och släpp en **e-post**, en **SMS** eller en **Push** till arbetsytan.
 
-   Använd filterikonen för att visa alla arkiverade meddelanden och klicka på **[!UICONTROL Unarchive]** om du vill ta bort ett objekt från listan med arkiverade meddelanden.
+   ![](assets/add-a-message.png)
+
+1. Ange en etikett och en beskrivning.
+
+1. Markera meddelandet **[!UICONTROL Category]**: välj **Marknadsföring** för kommersiella meddelanden, eller **Transactional** för icke-kommersiella meddelanden som orderbekräftelse, meddelanden om lösenordsåterställning eller leveransinformation.
 
    >[!NOTE]
    >
-   >Du kan inte öppna ett arkiverat meddelande. Du måste avarkivera det först.
+   >Om du har definierat [frekvensregler](../configuration/frequency-rules.md) för en viss kanal och kategori tillämpas de automatiskt på meddelandet när den kanalen och kategorin väljs. För närvarande bara **[!UICONTROL Marketing]** finns för frekvensregler.
 
-## Skapa ett nytt meddelande {#create-new-message}
+   ![](assets/inline-message-category.png)
 
-Följ stegen nedan för att skapa ett nytt meddelande:
-
-1. Öppna meddelandelistan och klicka sedan på **[!UICONTROL Create Message]**.
-
-1. Definiera meddelandeegenskaperna.
-
-   ![](assets/create-message-properties.png)
-
-   * Ange **[!UICONTROL Title]** (obligatoriskt) och **[!UICONTROL Description]**.
-
-   * Välj **[!UICONTROL Message category]**: Marknadsföring eller Transactional.
-
-   * Markera de kanaler som du vill använda för det meddelandet: E-post, push-meddelanden och/eller SMS. Du måste välja minst en kanal för att kunna skapa meddelandet.
-   >[!NOTE]
-   >
-   >Du kan klicka på **[!UICONTROL Frequency rule]** om du vill visa de frekvensregler som gäller för den valda kategorin och de valda kanalerna. Läs mer på [frekvensregler](../configuration/frequency-rules.md).
-
-   * Välj **[!UICONTROL Preset]** som ska användas för meddelandet.
-
-      Förinställningarna innehåller alla parametrar som krävs för att ett e-postmeddelande och/eller ett push-meddelande ska skickas enligt ert varumärke. Läs mer på [förinställningar](../configuration/message-presets.md).
    >[!CAUTION]
    >
-   >Du måste välja en giltig meddelandeförinställning för den valda kategorin och de valda kanalerna.
+   >Marknadsföringsmeddelanden måste innehålla en [länk för avanmälan](../messages/consent.md#opt-out-management). Detta krävs inte för transaktionsmeddelanden eftersom dessa meddelanden kan skickas till profiler som avbeställer marknadskommunikation.
 
-   Observera att du när som helst kan komma åt och ändra meddelandets titel, beskrivning och förinställning med **[!UICONTROL Properties]** i meddelandegränssnittet.
+1. Välj kanalen **[!UICONTROL Surface]** (t.ex. meddelandeförinställning) för att skicka meddelandet.
 
-1. Klicka **[!UICONTROL Create]** för att bekräfta att meddelandet har skapats. Meddelandet läggs till i meddelandelistan i **[!UICONTROL Draft]** status.
+   En yta är en konfiguration som har definierats av en [Systemadministratör](../start/path/administrator.md). Den innehåller alla tekniska parametrar för att skicka meddelandet, som rubrikparametrar, underdomän, mobilappar osv. [Läs mer](../configuration/message-presets.md).
 
-   En flik är tillgänglig för varje vald kanal. Använd dessa flikar för att konfigurera innehållet för varje kanal. Du kan ta bort en tabb genom att markera den och klicka på **[!UICONTROL Delete channel]** till höger.
-
-   ![](assets/create-messages-content.png)
-
-   <!--
-   >[!NOTE]
+   >[!CAUTION]
    >
-   >If you enabled the **[!UICONTROL BCC email]** option in the preset, the BCC email address will display under the sender email. [Learn more](../configuration/email-settings.md#bcc-email)
-   -->
+   >Du måste välja en giltig kanalyta för den valda meddelandekategorin och kanalen.
 
-   Nu kan du skapa innehållet i meddelandet och anpassa inställningarna. Detaljerad information om konfigurationen av e-post och push-meddelanden finns i följande avsnitt:
+   Du kan när som helst komma åt och ändra meddelandets etikett, beskrivning och yta med hjälp av **[!UICONTROL Properties]** i meddelandegränssnittet.
+
+1. Skapa meddelandeinnehållet.
+
+   Lär dig detaljerade steg för att skapa meddelandeinnehåll på följande sida:
 
    * [Skapa ett e-postmeddelande](create-email.md)
    * [Skapa push-meddelanden](create-push.md)
    * [Skapa ett SMS-meddelande](create-sms.md)
 
-   >[!NOTE]
-   >   
-   >Du kan anpassa meddelanden med hjälp av profildata med uttrycksredigeraren. Mer information om personalisering finns i [det här avsnittet](../personalization/personalize.md).
+## Aktivera optimering vid sändning{#sto-in-journeys}
 
-1. Styr återgivningen av meddelanden och kontrollera personaliseringsinställningarna med testprofiler med förhandsgranskningsavsnittet till vänster. Mer information om detta finns i [det här avsnittet](../design/preview.md).
+För e-post- och push-meddelanden kan du aktivera **[!UICONTROL Send-time optimization]**.
 
-   ![](assets/messages-simple-preview.png)
+Använd **[!UICONTROL Send-time optimization]** för att schemalägga personliga sändningstider för varje användare så att de kan utöka både öppnings- och klickfrekvensen för dina meddelanden. [Läs mer](../messages/send-time-optimization.md).
 
-1. Kontrollera varningar i den övre delen av redigeraren.  Vissa av dem är enkla varningar, men andra kan hindra dig från att publicera meddelandet. Läs mer i [det här avsnittet](alerts.md).
 
-1. Nu kan du publicera meddelandet genom att klicka på **[!UICONTROL Publish]** eller behålla det som ett utkast och publicera det senare. Mer information om hur du publicerar meddelanden finns i [det här avsnittet](publish-manage-message.md).
+## Avancerade parametrar{#adv-settings}
+
+Avancerade parametrar är skrivskyddade och dolda som standard.
+
+Om du vill komma åt avancerade parametrar klickar du på **[!UICONTROL Show read-only fields]** -ikonen högst upp i meddelandefönstret.
+
+![](assets/show-read-only.png)
+
+Avancerade parametrar visas längst ned i meddelandefönstret. Dessa parametrar definieras av [systemadministratör](../start/path/administrator.md) i [kanalyta](../configuration/message-presets.md) (t.ex. meddelandeförinställning) som är kopplad till meddelandet.
+
+För push-meddelanden kan du visa följande parametrar: Token, AppID, AppPlatform.
+
+![](assets/push-adv-parameters.png)
+
+För e-post kan du visa den primära e-postadressen.
+
+Du kan åsidosätta dessa värden i specifika sammanhang om du vill använda dem. Om du vill tvinga fram ett värde klickar du på **Aktivera åsidosättning av parametrar** till höger om fältet. Det här alternativet kan vara användbart till exempel för att:
+
+* Testa ett e-postmeddelande så kan du lägga till din e-postadress. När du har publicerat resan skickas e-postmeddelandet till dig.
+* Se e-postadressen till prenumeranterna i en lista. Läs mer i [det här användningsfallet](../building-journeys/message-to-subscribers-uc.md).
+
+Klicka på samma ikon om du vill återställa till standardparametern.
+
+
+## Bläddra bland meddelanden{#browse-message}
+
+När flera meddelanden används under en resa kan du växla från ett till ett annat från **Redigera innehåll** skärm.
+
+![](assets/inline-messages-multi-content.png)
+
+Då kan du [kontrollera aviseringar](alerts.md) och [simulera](../design/preview.md) varje innehåll från en och samma vy.
 
 ## Duplicera ett meddelande {#duplicate-message}
 
-Följ stegen nedan om du vill skapa ett meddelande från en befintlig.
+Du kan kopiera ett befintligt meddelande från arbetsytan för resan.
 
-1. Öppna meddelandet som du vill kopiera.
+Gör så här:
 
-1. Använd **[!UICONTROL Duplicate]** från meddelandegränssnittet.
+1. Markera meddelandet som du vill kopiera.
+
+1. Använd **[!UICONTROL Copy]** från **[!UICONTROL Action]** fönster.
 
    ![](assets/message-duplicate.png)
 
-   Alla inställningar och konfigurationer kopieras till det nya meddelandet.
+1. Retur **Ctrl+V** för att klistra in meddelandet.
 
-1. Du kan byta namn på meddelandet innan du bekräftar duplicering.
+   Meddelandet läggs till i kundresan. Alla inställningar och konfigurationer kopieras till det nya meddelandet.
 
-   ![](assets/message-duplicate-confirm.png)
+   ![](assets/message-duplicated.png)
 
-1. Ett bekräftelsemeddelande visas längst ned i fönstret när det nya meddelandet har skapats.
+1. Byt namn på meddelandet så att det kan skilja det ursprungliga meddelandet från kopian, till exempel när du redigerar meddelanden, enligt nedan:
 
-Du kan också duplicera ett meddelande från meddelandelistan med hjälp av den dedikerade ikonen på snabbåtgärdsmenyn.
+   ![](assets/multi-message.png)
 
-![](assets/message-duplicate-from-list.png)
 
-Samma bekräftelseprocess gäller.
+>[!NOTE]
+>
+>För e-postmeddelanden kan du även omvandla ett befintligt meddelande till en mall. [Läs mer](../design/email-templates.md).
 
+## Ta bort ett meddelande
+
+Om du vill ta bort ett meddelande använder du papperskorgsikonen högst upp i åtgärdsrutan för kanaler.
+
+![](assets/delete-message.png)
+
+Använd **[!UICONTROL Confirm]** valideringsknapp.

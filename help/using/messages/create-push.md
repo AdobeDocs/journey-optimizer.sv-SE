@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 2ebbcd7d-dcfc-4528-974d-6230fc0dca3d
-source-git-commit: ffa1da19732f4c0bd5297e2d123140b9ba1b0103
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1543'
 ht-degree: 9%
 
 ---
@@ -18,18 +18,23 @@ ht-degree: 9%
 >[!CONTEXTUALHELP]
 >id="ajo_message_push"
 >title="Skapa push-meddelanden"
->abstract="Lägg till ditt push-meddelande och börja personalisera det med Expression Editor."
+>abstract="Lägg till ditt push-meddelande och börja personalisera det med uttrycksredigeraren."
 
 
 Push-meddelanden hjälper dig att nå mobilappsanvändare när som helst, särskilt när de inte aktivt använder din app. Push-meddelanden kan hjälpa dig att få en mängd olika användningsfall, som att tillhandahålla uppdateringar om tjänsten, be en användare att vidta åtgärder, varna användaren för ett nytt avtal osv. Enhetsplattformar kräver deltagande innan slutanvändarna kan ta emot eller visa dina meddelanden. Användaranmälan kan tas emot så snart appen startats för första gången efter installationen, eller i en efterföljande session eller arbetsflöde efter behov.
 
 [!DNL Journey Optimizer] har stöd för push-meddelanden och hjälper dig att skicka mycket relevanta meddelanden med branschledande dataöverföringshastigheter. Push-meddelanden kan omfatta personalisering och resebaserade sammanhang för att utnyttja de datainsikter ert varumärke har med Adobe Experience Cloud.
 
-En gång [skapade ett meddelande](get-started-content.md)klickar du på **[!UICONTROL Push Notification]** för att definiera inställningar och innehåll för push-meddelandet.
+En gång [lade till en push](get-started-content.md) -aktiviteten på din resa och definierade grundläggande inställningar, använd **[!UICONTROL Actions: Push]** höger ruta för att skapa innehållet för push-meddelandet.
+
+![](assets/add-a-push.png)
+
+
+Använd de dedikerade flikarna för att definiera inställningar för push-meddelanden för **iOS** och **Android** operativsystem.
 
 ![](assets/create-content-push.png)
 
-Använd de dedikerade flikarna för att definiera inställningar för push-meddelanden för **iOS** och **Android** operativsystem.
+Om det är första gången du skapar ett push-meddelande kontrollerar du att push-kanalen har konfigurerats. [Läs mer](../configuration/push-gs.md).
 
 >[!NOTE]
 >
@@ -37,7 +42,7 @@ Använd de dedikerade flikarna för att definiera inställningar för push-medde
 
 ## Titel och brödtext {#push-title-body}
 
-Klicka på knappen **[!UICONTROL Title]** och **[!UICONTROL Body]** fält. Använd uttrycksredigeraren för att definiera innehåll och personaliseringsdata. Läs mer om personalisering i Expression Editor i [det här avsnittet](../personalization/personalize.md)
+Klicka på knappen **[!UICONTROL Title]** och **[!UICONTROL Body]** fält. Använd uttrycksredigeraren för att definiera innehåll och personaliseringsdata. Läs mer om personalisering i uttrycksredigeraren i [det här avsnittet](../personalization/personalize.md)
 
 Använd enhetens förhandsgranskningssektion för att visualisera hur push-meddelanden visas på iOS- och Android-enheter.
 
@@ -52,7 +57,7 @@ Du kan välja beteende när en användare klickar på texten i push-meddelandet.
 
 ![](assets/title-body-push.png)
 
-* Om du vill öppna appen väljer du **[!UICONTROL Open app]** alternativ. Appen som är associerad med meddelandet definieras i meddelandet **[!UICONTROL Preset]**. [Läs mer](../configuration/message-presets.md) om meddelandeförinställningar.
+* Om du vill öppna appen väljer du **[!UICONTROL Open app]** alternativ. Programmet som är associerat med meddelandet definieras i [kanalyta](../configuration/message-presets.md) (t.ex. meddelandeförinställning).
 * Om du vill dirigera om användaren till en viss del av innehållet i en app väljer du **[!UICONTROL Deeplink]** alternativ.  Det specifika innehållet kan vara en specifik vy, ett visst avsnitt på en sida eller en viss flik. När alternativet är markerat anger du länken i det tillhörande fältet.
 * Om du vill dirigera om användaren till en extern URL använder du **[!UICONTROL Web URL]** alternativ. När alternativet är markerat anger du URL-adressen i det associerade fältet.
 
@@ -125,6 +130,17 @@ Du kan konfigurera **[!UICONTROL Advanced options]** för ditt push-meddelande. 
 | **[!UICONTROL Notification visibility]** (Endast Android) | Anger om push-meddelandet ska visas. <br/><b>Privat</b> visar meddelandet på alla låsskärmar, men döljer känslig eller privat information på säkra låsskärmar. <br/><b>Offentlig</b> visar meddelandet i sin helhet på alla låsskärmar. <br/><b>Hemlighet</b> visar inte någon del av meddelandet på en säker låsskärm. <br/>Mer information finns i [Dokumentation för Android-utvecklare](https://developer.android.com/reference/android/app/Notification). |
 | **[!UICONTROL Notification priority]** (Endast Android) | Definierar push-meddelandets prioritet från Låg till Max. Detta avgör hur påträngande push-meddelandet blir när det levereras. Mer information finns i [Dokumentation för Android-utvecklare](https://developer.android.com/guide/topics/ui/notifiers/notifications#importance) |
 | **[!UICONTROL Delivery priority]** (Endast Android) | Ställer in hög eller normal prioritet för dina push-meddelanden. Mer information om meddelandeprioritet finns i [Googles dokumentation för utvecklare](https://firebase.google.com/docs/cloud-messaging/concept-options#setting-the-priority-of-a-message). |
+
+
+## Validera ditt push-meddelande{#push-preview}
+
+När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du infogade [personaliserat innehåll](../personalization/personalize.md)kan du kontrollera hur det här innehållet visas i meddelandet och dra nytta av testprofildata.
+
+Om du vill se hur push-meddelanden visas på mobila enheter klickar du på **[!UICONTROL Simulate content]** -fliken. Läs mer om simulering av innehåll i [det här avsnittet](../design/preview.md).
+
+Du måste även kontrollera varningar i den övre delen av redigeraren.  Vissa av dem är enkla varningar, men andra kan hindra dig från att använda meddelandet. Läs mer i [det här avsnittet](alerts.md).
+
+![](assets/push-alert-button.png)
 
 **Relaterade ämnen**
 

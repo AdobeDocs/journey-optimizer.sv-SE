@@ -5,9 +5,10 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: f75ed263fd8226a6b5f55bbb50f4aae17cbfe9d4
+exl-id: 8c63f2f2-5cec-4cb2-b3bf-2387eefb5002
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '830'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ ht-degree: 0%
 >title="Beroende objekt"
 >abstract="Det här är listan över associerade objekt som används under resan. I den här listan visas namn, objekttyp och internt Journey Optimizer-id."
 
-Med Journey Optimizer kan du kopiera en hel resa från en sandlåda till en annan. Du kan t.ex. kopiera en resa från sandlådemiljön på scenen till produktionssandlådan. Förutom själva resan kopierar Journey Optimizer även de flesta av de objekt som resan är beroende av: meddelanden, segment, förinställningar, scheman, händelser och åtgärder. Se [begränsningar](../building-journeys/copy-to-sandbox.md#limitations)
+Med Journey Optimizer kan du kopiera en hel resa från en sandlåda till en annan. Du kan t.ex. kopiera en resa från sandlådemiljön på scenen till produktionssandlådan. Förutom själva resan kopierar Journey Optimizer även de flesta av de objekt som resan är beroende av: segment, ytor (t.ex. förinställningar), scheman, händelser och åtgärder. Se [begränsningar](../building-journeys/copy-to-sandbox.md#limitations)
 
 >[!CAUTION]
 >
@@ -86,7 +87,7 @@ Följande objekt kopieras:
 
 * Meddelande
 
-   Det eller de fysiska meddelanden som används i resan (antingen e-post eller push-meddelanden). Fält som används för personalisering i meddelandet kontrolleras inte för fullständighet. Innehållsblock kopieras inte.
+   De kanalåtgärder som används under resan. Fält som används för personalisering i meddelandet kontrolleras inte för fullständighet. Innehållsblock kopieras inte.
 
 * Resa - arbetsytedetaljer
 
@@ -100,9 +101,8 @@ Följande objekt kopieras:
 
    De åtgärder och åtgärdsdetaljer som används under resan kopieras.
 
-Förinställningar kopieras inte över. Systemet väljer automatiskt närmaste matchning i målsandlådan baserat på meddelandetyp och förinställningsnamn. Om det inte finns några förinställningar i målsandlådan misslyckas kopieringen av förinställningen. Det innebär att meddelandekopian inte fungerar eftersom ett meddelande kräver en förinställning för att kunna konfigureras. I det här fallet måste minst en förinställning skapas för den högra kanalen i meddelandet för att kopian ska fungera.
+Ytor (t.ex. förinställningar) kopieras inte över. Systemet väljer automatiskt den närmaste matchningen i målsandlådan baserat på meddelandetyp och ytnamn. Om det inte finns några ytor i målsandlådan misslyckas kopieringen av ytan. Det innebär att meddelandekopian också kommer att misslyckas eftersom ett meddelande kräver att en yta är tillgänglig för konfiguration. I det här fallet måste minst en yta skapas för den högra kanalen i meddelandet för att kopian ska fungera.
 
 För scheman, sammanfogningsprinciper och segment refereras bara de objekten till andra gången de kopieras. De behandlas som objekt som redan finns och kommer att kopieras igen. Det innebär att dessa objekt bara kan kopieras en gång.
 
 Det tar fem minuter innan Adobe Journey Optimizer kan referera till scheman, sammanfogningsprinciper och segment utan att ett fel visas på arbetsytan. Vänta i fem minuter så kommer dessa referenser att vara tillgängliga.
-

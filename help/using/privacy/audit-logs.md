@@ -5,7 +5,7 @@ feature: Monitoring
 role: User
 level: Intermediate
 exl-id: 759b014a-c834-4331-bffd-5bc159ec555d
-source-git-commit: 6177a33edeb3b8381c3eb5609762b4d974dc93e3
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Följande tabell visar vilka åtgärder som Journey Optimizer-resurser registrer
 | Förinställning för AJO-landningssida | Skapa/ta bort/uppdatera |
 | AJO - underdomän för landningssida | Skapa/ta bort/uppdatera |
 | AJO-meddelande | Skapa/ta bort/uppdatera/publicera |
-| AJO-meddelandeförinställning | Skapa/ta bort/uppdatera |
+| AJO-kanalsyta | Skapa/ta bort/uppdatera |
 | AJO PTR-post | Skapa/ta bort/uppdatera |
 | AJO sparad uttrycksmall | Skapa/ta bort/uppdatera |
 | AJO SMS API-autentiseringsuppgifter | Skapa/ta bort/uppdatera |

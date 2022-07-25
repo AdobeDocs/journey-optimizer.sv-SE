@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 8f33dda7-9bd5-4293-8d0d-222205cbc7d5
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
@@ -54,8 +54,6 @@ Använd funktionerna i [!DNL Journey Optimizer] för att övervaka leveransen.
 The **[!UICONTROL Executions]** -fliken i meddelandelistan gör att du kan kontrollera hur leveranserna fungerar med hjälp av en uppsättning realtidsindikatorer. På den här fliken visas bland annat:
 * Antalet meddelanden som har körts, skickats och levererats.
 * Antalet meddelanden som har öppnats och antalet meddelanden/länkar som har klickats.
-
-[Läs mer om övervakning av meddelandekörning](message-monitoring.md).
 
 ## Anpassa meddelandeinnehåll {#adapt-message-content}
 

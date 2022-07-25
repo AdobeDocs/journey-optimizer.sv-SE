@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: f2c2a360-a4b2-4416-bbd0-e27dd014e4ac
-source-git-commit: 38addfd8b2f81991616ae93b6268fa1415fe80d2
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Dessutom kan du **Litmus** konto till [!DNL Journey Optimizer] för att omedelba
 >
 >När du förhandsgranskar ett meddelande eller skickar korrektur visas endast profilpersonaliseringsdata. Personalisering som bygger på kontextdata, t.ex. händelseinformation, kan bara testas i samband med en resa. Lär dig hur du testar personalisering i [det här användningsfallet](../personalization/personalization-use-case.md).
 
-➡️ [Lär dig hur du förhandsgranskar, korrekturläser och publicerar e-postmeddelanden i den här videon](#video-preview)
+➡️ [Lär dig hur du förhandsgranskar och korrekturerar e-postmeddelanden i den här videon](#video-preview)
 
 ## Välj testprofiler{#select-test-profiles}
 
@@ -53,7 +53,7 @@ Använd [Testprofiler](../segment/creating-test-profiles.md) om du vill ange fle
 
 Så här väljer du testprofiler:
 
-1. I meddelandegränssnittet eller i e-postdesignern klickar du på **[!UICONTROL Show preview]** för att komma åt valet av testprofil.
+1. I meddelandegränssnittet eller i e-postdesignern klickar du på **[!UICONTROL Simulate Content]** för att komma åt valet av testprofil.
 
    ![](assets/email-preview-button.png)
 
@@ -69,7 +69,7 @@ Så här väljer du testprofiler:
 
    ![](assets/preview-email-namespace.png)
 
-1. Ange värdet för att identifiera testprofilen och klicka på **[!UICONTROL Find test profile]**.
+1. Ange värdet för att identifiera testprofilen och klicka på **[!UICONTROL Add profile]**.
 
    ![](assets/preview-identity-value.png)
 
@@ -83,7 +83,11 @@ Så här väljer du testprofiler:
 
 En gång [testprofiler](#select-test-profiles) om du har valt det här alternativet kan du förhandsgranska meddelanden och kontrollera innehåll.
 
-1. Klicka på **[!UICONTROL Preview]** för att testa meddelandet.
+### Förhandsgranska e-post{#preview-email}
+
+Om du vill förhandsgranska ett e-postinnehåll följer du stegen nedan:
+
+1. Klicka på **[!UICONTROL Simulate content]** ovanför e-postinnehållet.
 
 1. Välj en testprofil. Du kan kontrollera de värden som är tillgängliga i kolumnerna. Använd höger-/vänsterpilarna för att bläddra bland data.
 
@@ -103,11 +107,15 @@ En gång [testprofiler](#select-test-profiles) om du har valt det här alternati
 
 1. Välj andra testprofiler om du vill förhandsgranska e-poståtergivningen för varje variant av meddelandet.
 
-Om du vill förhandsgranska ett push-meddelande:
+### Förhandsgranska push{#preview-push}
 
-1. Växla till **[!UICONTROL Push]** från **[!UICONTROL Channels]** nedrullningsbar lista längst upp till höger i **[!UICONTROL Preview]** skärm.
+Om du vill förhandsgranska ett innehåll i ett push-meddelande följer du stegen nedan:
 
-   ![](assets/preview-select-channel.png)
+1. Klicka på **[!UICONTROL Simulate content]** ovanför push-innehållet.
+
+1. Välj en testprofil. Du kan kontrollera de värden som är tillgängliga i kolumnerna. Använd höger-/vänsterpilarna för att bläddra bland data.
+
+1. Växla till **[!UICONTROL Push]** meddelande.
 
 1. Använd samma steg som beskrivs ovan för att välja en testprofil och välj typ av enhet för att förhandsgranska innehåll: **[!UICONTROL iOS]** eller **[!UICONTROL Android]**.
 
@@ -188,6 +196,6 @@ Följ sedan stegen nedan:
 
 ## Instruktionsvideo{#video-preview}
 
-Lär dig hur du testar e-poståtergivning i olika inkorgar, hur du förhandsgranskar anpassade e-postmeddelanden mot testprofiler, skickar korrektur och publicerar e-postmeddelanden.
+Lär dig hur du testar e-poståtergivning i olika inkorgar, hur du förhandsgranskar anpassade e-postmeddelanden mot testprofiler och skickar korrektur.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334239?quality=12)

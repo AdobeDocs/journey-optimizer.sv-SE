@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 235384f3-0dce-4797-8f42-1d4d01fa42d9
-source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '366'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ Du kan reagera på klickade eller öppna meddelanden.
 
 Du kan också använda den här funktionen för att utföra en åtgärd när det inte finns någon reaktion på dina meddelanden. Det gör du genom att skapa en andra sökväg parallellt med reaktionsaktiviteten och lägga till en vänteaktivitet. Om ingen reaktion inträffar under den period som anges i vänteaktiviteten väljs den andra banan. Du kan välja att skicka t.ex. ett uppföljningsmeddelande.
 
-Observera att du bara kan använda en reaktionsaktivitet på arbetsytan om det finns en **Meddelande** aktivitet före.
+Observera att du bara kan använda en reaktionsaktivitet på arbetsytan om det finns en kanalåtgärdsaktivitet tidigare (E-post, push, SMS).
 
 Se [Om funktionsmakron](../building-journeys/about-journey-activities.md#action-activities).
 

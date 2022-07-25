@@ -1,21 +1,21 @@
 ---
 title: Konfigurera e-postinställningar
-description: Lär dig hur du konfigurerar e-postinställningar på den förinställda nivån för meddelanden
+description: Lär dig hur du konfigurerar e-postinställningar på kanalytnivå
 feature: Application Settings
 topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 630b8ef5a140709161b24256083b2104be5b6121
+source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1198'
 ht-degree: 1%
 
 ---
 
 # Konfigurera e-postinställningar {#email-settings}
 
-Definiera e-postinställningarna i det dedikerade avsnittet i meddelandeförinställningskonfigurationen. Lär dig hur du skapar meddelandeförinställningar i [det här avsnittet](message-presets.md).
+Definiera e-postinställningarna i det dedikerade avsnittet av kanalytans konfiguration (dvs. meddelandeförinställning). Lär dig hur du skapar ytor i [det här avsnittet](message-presets.md).
 
 ![](assets/preset-email-settings.png)
 
@@ -24,19 +24,19 @@ Definiera e-postinställningarna i det dedikerade avsnittet i meddelandeförinst
 >[!CONTEXTUALHELP]
 >id="ajo_admin_presets_emailtype"
 >title="Definiera e-postkategorin"
->abstract="Välj den typ av meddelanden som ska skickas när den här förinställningen används: Marknadsföring för kampanjmeddelanden, som kräver användargodkännande, eller Transactional för icke-kommersiella meddelanden, som också kan skickas till profiler som inte längre prenumererar i specifika sammanhang."
+>abstract="Välj den typ av e-postmeddelanden som ska skickas när den här kanalytan används: Marknadsföring för e-postreklam, som kräver användargodkännande, eller Transactional för icke-kommersiella e-postmeddelanden, som också kan skickas till profiler som inte längre prenumererar i specifika sammanhang."
 
-I **E-POSTTYP** väljer du den typ av meddelande som ska skickas med förinställningen: **Marknadsföring** eller **Transactional**.
+I **E-POSTTYP** väljer du den typ av meddelande som ska skickas med kanalens yta: **Marknadsföring** eller **Transactional**.
 
-* Välj **Marknadsföring** för kampanjmeddelanden: dessa meddelanden kräver användarens samtycke.
+* Välj **Marknadsföring** för e-postreklam: dessa meddelanden kräver användarens samtycke.
 
-* Välj **Transactional** för icke-kommersiella meddelanden, t.ex. orderbekräftelse, meddelanden om lösenordsåterställning eller leveransinformation.
+* Välj **Transactional** för icke-kommersiell e-post, t.ex. orderbekräftelse, meddelanden om lösenordsåterställning eller leveransinformation.
 
 >[!CAUTION]
 >
->**Transactional** meddelanden kan skickas till profiler som avbeställer marknadskommunikation. Dessa meddelanden kan bara skickas i särskilda sammanhang.
+>**Transactional** e-postmeddelanden kan skickas till profiler som avbeställer marknadskommunikation. Dessa meddelanden kan bara skickas i särskilda sammanhang.
 
-När [skapa ett meddelande](../messages/get-started-content.md#create-new-message)måste du välja en giltig meddelandeförinställning som matchar den kategori du valde för meddelandet.
+När [skapa ett meddelande](../messages/get-started-content.md#create-new-message)måste du välja en giltig kanalyta som matchar den kategori du valde för e-postmeddelandet.
 
 ## Underdomän och IP-pool {#subdomains-and-ip-pools}
 
@@ -44,11 +44,11 @@ I **INFORMATION OM UNDERDOMÄN- OCH IP-POOL** måste du
 
 1. Välj den underdomän som ska användas för att skicka e-postmeddelanden. [Läs mer](about-subdomain-delegation.md)
 
-1. Välj den IP-pool som ska associeras med förinställningen. [Läs mer](ip-pools.md)
+1. Välj den IP-pool som ska associeras med ytan. [Läs mer](ip-pools.md)
 
 ![](assets/preset-subdomain-ip-pool.png)
 
-Du kan inte fortsätta skapa förinställningar medan den valda IP-poolen är under [utgåva](ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) och har aldrig kopplats till den valda underdomänen. Annars kommer den äldsta versionen av associationen för IP-poolen/underdomänen fortfarande att användas. I så fall sparar du förinställningen som utkast och försöker igen när IP-poolen har **[!UICONTROL Success]** status.
+Du kan inte fortsätta skapa en yta medan den valda IP-poolen är under [utgåva](ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) och har aldrig kopplats till den valda underdomänen. Annars kommer den äldsta versionen av associationen för IP-poolen/underdomänen fortfarande att användas. I så fall sparar du ytan som utkast och försöker igen när IP-poolen har **[!UICONTROL Success]** status.
 
 >[!NOTE]
 >
@@ -72,13 +72,13 @@ Länken för att avbryta prenumerationen består av två element:
 
 * An **avbeställ e-postadress** som alla avbeställningar skickas till.
 
-   I [!DNL Journey Optimizer], är e-postadressen för avanmälan standard **[!UICONTROL Mailto (unsubscribe)]** som visas i meddelandeförinställningen, baserat på [vald underdomän](#subdomains-and-ip-pools).
+   I [!DNL Journey Optimizer], är e-postadressen för avanmälan standard **[!UICONTROL Mailto (unsubscribe)]** som visas i kanalytan, baserat på [vald underdomän](#subdomains-and-ip-pools).
 
    ![](assets/preset-list-unsubscribe-mailto.png)
 
 * The **avbeställ URL**, vilket är URL:en till landningssidan där användaren omdirigeras när prenumerationen har upphört.
 
-   Om du lägger till en [länk för avanmälan med ett klick](../messages/consent.md#one-click-opt-out) för ett meddelande som skapas med den här förinställningen blir avanmälnings-URL:en den URL som definierats för länken med ett klick.
+   Om du lägger till en [länk för avanmälan med ett klick](../messages/consent.md#one-click-opt-out) för ett meddelande som skapas med den här ytan är avanmälnings-URL:en den URL som definierats för länken med ett klick.
 
    ![](assets/preset-list-unsubscribe-opt-out-url.png)
 
@@ -92,7 +92,7 @@ Läs mer om hur du lägger till en länk för att avbryta prenumerationen i dina
 
 ## Huvudparametrar{#email-header}
 
-I **[!UICONTROL HEADER PARAMETERS]** anger du avsändarens namn och e-postadresser som är kopplade till den typ av meddelanden som skickas med den förinställningen.
+I **[!UICONTROL HEADER PARAMETERS]** anger du avsändarens namn och e-postadresser som är kopplade till den typ av e-post som skickas med den aktuella ytan.
 
 >[!CAUTION]
 >
@@ -120,12 +120,12 @@ Om du vill vidarebefordra till en viss e-postadress får du alla e-postmeddeland
 
 * Den e-postadress som du väljer. Observera att domänen för e-postadressen för vidarebefordran inte kan matcha någon underdomän som har delegerats till Adobe.
 * Namn på din sandlåda.
-* Förinställningsnamnet som e-postadressen ska användas för.
-* Aktuell **[!UICONTROL Reply to (email)]** adressuppsättningen på förinställningsnivå.
+* Ytnamnet som e-postadressen ska användas för.
+* Aktuell **[!UICONTROL Reply to (email)]** som anges på kanalens ytnivå.
 
 >[!NOTE]
 >
->Det får bara finnas en e-postadress per underdomän. Om flera förinställningar använder samma underdomän måste därför samma e-postadress för alla förinställningar användas.
+>Det får bara finnas en e-postadress per underdomän. Om flera ytor använder samma underdomän måste därför samma e-postadress för alla ytor användas.
 
 E-postadressen för vidarebefordran kommer att konfigureras av Adobe. Detta kan ta 3 till 4 dagar.
 
@@ -133,7 +133,7 @@ E-postadressen för vidarebefordran kommer att konfigureras av Adobe. Detta kan 
 
 Du kan skicka en identisk kopia (eller en kopia med kopia) av e-postmeddelanden som skickas av [!DNL Journey Optimizer] till en inkorg för kontroll av webbläsarkompatibilitet där de lagras för att uppfylla regelkrav eller arkiveras.
 
-Aktivera **[!UICONTROL BCC email]** valfri funktion på förinställningsnivå. [Läs mer](bcc-email.md)
+Aktivera **[!UICONTROL BCC EMAIL]** valfri funktion på kanalytnivå. [Läs mer](bcc-email.md)
 
 ![](assets/preset-bcc.png)
 
@@ -142,10 +142,10 @@ Aktivera **[!UICONTROL BCC email]** valfri funktion på förinställningsnivå. 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_presets_retryperiod"
 >title="Justera tidsperioden för återförsök"
->abstract="Försök utförs i 3,5 dagar (84 timmar) när ett e-postmeddelande inte kan skickas på grund av ett tillfälligt fel med mjuk studsning. Du kan justera den här standardperioden för återförsök så att den passar dina behov bättre."
+>abstract="Försök utförs i 3,5 dagar (84 timmar) när en e-postleverans misslyckas på grund av ett tillfälligt fel med mjuk avhoppning. Du kan justera den här standardperioden för återförsök så att den passar dina behov bättre."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/email-configuration/monitor-reputation/retries.html" text="Om återförsök"
 
-Du kan konfigurera **Parametrar för återförsök av e-post**.
+Du kan konfigurera **PARAMETRAR FÖR E-POSTFÖRSÖK**.
 
 ![](assets/preset-retry-parameters.png)
 
@@ -171,13 +171,13 @@ Läs mer om återförsök i [det här avsnittet](retries.md).
 >title="Förhandsgranska parametrar för URL-spårning"
 >abstract="Granska hur spårningsparametrar läggs till i de URL:er som finns i ditt e-postinnehåll."
 
-Du kan använda **[!UICONTROL URL tracking parameters]** för att mäta effektiviteten i era marknadsföringssatsningar över olika kanaler. Den här funktionen är valfri.  
+Du kan använda **[!UICONTROL URL TRACKING PARAMETERS]** för att mäta effektiviteten i era marknadsföringssatsningar över olika kanaler. Den här funktionen är valfri.  
 
 Parametrarna som definieras i det här avsnittet läggs till i slutet av de URL:er som ingår i e-postmeddelandeinnehållet. Du kan sedan hämta parametrarna i webbanalysverktyg som Adobe Analytics eller Google Analytics och skapa olika resultatrapporter.
 
 ![](assets/preset-url-tracking.png)
 
-Tre parametrar för URL-spårning fylls i automatiskt som exempel när du skapar en meddelandeförinställning. Du kan redigera dessa och lägga till upp till 10 spårningsparametrar med **[!UICONTROL Add new parameter]** -knappen.
+Tre URL-spårningsparametrar fylls i automatiskt som exempel när du skapar en kanalyta. Du kan redigera dessa och lägga till upp till 10 spårningsparametrar med **[!UICONTROL Add new parameter]** -knappen.
 
 Om du vill konfigurera en URL-spårningsparameter kan du ange önskade värden direkt i dialogrutan **[!UICONTROL Name]** och **[!UICONTROL Value]** fält.
 
@@ -192,7 +192,7 @@ Du kan också välja från en lista med fördefinierade värden genom att navige
 >
 >Välj ingen mapp: Kontrollera att du bläddrar till den mapp som behövs och välj ett profilattribut som ska användas som spårningsparametervärde.
 
-<!--or edit it using the Expression Editor. Learn more on [personalization](../../personalization/personalize.md#use-expression-editor). Select the contextual attribute of your choice.
+<!--or edit it using the Expression editor. Learn more on [personalization](../../personalization/personalize.md#use-expression-editor). Select the contextual attribute of your choice.
 
 You can drag and drop the parameters to reorder them.-->
 
