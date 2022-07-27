@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 3bcc08d6-1210-4ff9-92f4-edee8285b469
-source-git-commit: afd6bec0151eb2c369ae68d369adf98e772841c9
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '280'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,10 @@ Den här tidszonen kommer att användas för varje aktivitet i resan som innehå
 * [Tidsvillkor](../building-journeys/condition-activity.md#time_condition)
 * [Datumvillkor](../building-journeys/condition-activity.md#date_condition)
 * [Anpassad väntetid](../building-journeys/wait-activity.md#custom)
-* [Vänta fast](../building-journeys/wait-activity.md#fixed_date)
+
+<!--
+* [Fixed date wait](../building-journeys/wait-activity.md#fixed_date)
+-->
 
 Du kan välja en tidszon eller välja att använda den tidszon som är definierad i användarprofilen.
 
@@ -42,13 +45,9 @@ Om du vill göra det går du till **[!UICONTROL Journey Properties]** väljer du
 
 ## Använd profiler för att definiera resetidszonen {#timezone-from-profiles}
 
-Om resans inträde-händelse har ett namnutrymme, vilket innebär att resan kan nå kundprofiltjänsten i realtid i Adobe Experience Platform, är tidszonen fördefinierad med den som anges i profilen för den person som löper på resan.
+Om resans inträde-händelse har ett namnutrymme, vilket innebär att resan kan nå kundprofiltjänsten i realtid i Adobe Experience Platform, kanske du vill använda den tidszon som har definierats på profilnivån. Gör så här: **Egenskaper**, kontrollera **Använd profilens tidszon i väntetider och villkor**. Det här alternativet är inte markerat som standard.
 
-Om en tidszon definieras i Adobe Experience Platform-profilen kan den hämtas under resan.
-
-Om den enskilda personens profil inte innehåller någon tidszon är den tidszon som hämtas den som definieras i tidszonsfältet.
-
-Gör så här: **[!UICONTROL Properties]**, kontrollera **[!UICONTROL Use Profile timezone in waits and conditions]**.
+Om en tidszon har definierats för en profil hämtas den och används av resan. Om så inte är fallet används tidszonen som definieras i tidszonsfältet.
 
 ![](assets/journey73.png)
 

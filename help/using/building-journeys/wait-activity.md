@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
-source-git-commit: 8a68d1e6d498ef3055c703d4e73471ab6d7bff40
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '322'
 ht-degree: 5%
 
 ---
@@ -18,15 +18,17 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="ajo_journey_wait"
 >title="Vänta på aktivitet"
->abstract="Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en Wait-aktivitet. Du kan definiera tidpunkten då nästa aktivitet ska köras. Tre alternativ är tillgängliga: varaktighet, fast datum och anpassad tid."
+>abstract="Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en Wait-aktivitet. Du kan definiera tidpunkten då nästa aktivitet ska köras. Det finns två alternativ: längd och anpassad längd."
 
 Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en **[!UICONTROL Wait]** aktivitet. Du kan definiera tidpunkten då nästa aktivitet ska köras. Tre alternativ är tillgängliga:
 
 * [Varaktighet](#duration)
-* [Fast datum](#fixed_date)
 * [Anpassat](#custom)
 
-<!--* [Email send time optimization](#email_send_time_optimization)-->
+<!--
+* [Email send time optimization](#email_send_time_optimization)
+* [Fixed date](#fixed_date) 
+-->
 
 ## Om aktiviteten Vänta{#about_wait}
 
@@ -40,11 +42,14 @@ Ange väntetiden innan nästa aktivitet körs.
 
 ![](assets/journey55.png)
 
-## Vänta fast{#fixed_date}
+<!--
+## Fixed date wait{#fixed_date}
 
-Välj datumet för körningen av nästa aktivitet.
+Select the date for the execution of the next activity.
 
 ![](assets/journey56.png)
+
+-->
 
 ## Anpassad väntetid{#custom}
 

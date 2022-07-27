@@ -5,12 +5,10 @@ feature: Access Management
 topic: Administration
 role: Admin
 level: Intermediate
-hide: true
-hidefromtoc: true
 exl-id: 162b0848-313a-447e-9237-5a6dbc8102c6
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '991'
 ht-degree: 0%
 
 ---
@@ -25,15 +23,64 @@ Med attributbaserad åtkomstkontroll (ABAC) kan du definiera behörigheter för 
 
 I Adobe Journey Optimizer kan du med ABAC skydda data och ge specifik åtkomst till specifika fältelement, inklusive XDM-scheman (Experience Data Model), profilattribut och segment.
 
-<!--For a more detailed list of the terminology used with ABAC, refer to Adobe Experience Platform documentation.-->
+En mer detaljerad lista över de termer som används med ABAC finns i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/overview.html).
 
 I det här exemplet vill vi lägga till en etikett i **Nationalitet** schemafält för att hindra obehöriga användare från att använda det. För att detta ska fungera måste du utföra följande steg:
 
+1. Skapa ett nytt  **[!UICONTROL Role]** och tilldela den med motsvarande  **[!UICONTROL Label]** så att användare kan komma åt och använda schemafältet.
+
 1. Tilldela en  **[!UICONTROL Label]** till **Nationalitet** schemafält i Adobe Experience Platform.
 
-2. Skapa ett nytt  **[!UICONTROL Role]** och tilldela den med motsvarande  **[!UICONTROL Label]** så att användare kan komma åt och använda schemafältet.
+1. Använd  **[!UICONTROL Schema field]** i Adobe Journey Optimizer.
 
-3. Använd  **[!UICONTROL Schema field]** i Adobe Journey Optimizer.
+Observera att **[!UICONTROL Roles]**, **[!UICONTROL Policies]** och **[!UICONTROL Products]** kan också nås med attributbaserad API för åtkomstkontroll. Mer information finns i [dokumentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/abac-api/overview.html).
+
+## Skapa en roll och tilldela etiketter {#assign-role}
+
+>[!IMPORTANT]
+>
+>Innan du hanterar behörigheter för en roll måste du skapa en profil. Mer information finns i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/policies.html).
+
+**[!UICONTROL Roles]** är en uppsättning användare som delar samma behörigheter, etiketter och sandlådor inom organisationen. Varje användare som tillhör en **[!UICONTROL Role]** har rätt till de program och tjänster i Adobe som ingår i produkten.
+Du kan också skapa egna **[!UICONTROL Roles]** om du vill finjustera användarnas åtkomst till vissa funktioner eller objekt i gränssnittet.
+
+Vi vill nu ge utvalda användare åtkomst till **Nationalitet** fält, märkt C2. För att göra det måste vi skapa en ny **[!UICONTROL Role]** med en specifik uppsättning användare och ge dem etiketten C2 så att de kan använda **Nationalitet** information i en **[!UICONTROL Journey]**.
+
+1. Från [!DNL Permissions] produkt, välj **[!UICONTROL Role]** från den vänstra panelmenyn och klicka på **[!UICONTROL Create role]**. Observera att du även kan lägga till **[!UICONTROL Label]** till inbyggda roller.
+
+   ![](assets/role_1.png)
+
+1. Lägg till en **[!UICONTROL Name]** och **[!UICONTROL Description]** till dina nya **[!UICONTROL Role]**, här: Begränsad rolldemografi.
+
+1. I listrutan väljer du **[!UICONTROL Sandbox]**.
+
+   ![](assets/role_2.png)
+
+1. Från **[!UICONTROL Resources]** meny, klicka **[!UICONTROL Adobe Experience Platform]** för att öppna de olika funktionerna. Här väljer vi **[!UICONTROL Journeys]**.
+
+   ![](assets/role_3.png)
+
+1. I listrutan väljer du **[!UICONTROL Permissions]** länkad till den valda funktionen, t.ex. **[!UICONTROL View journeys]** eller **[!UICONTROL Publish journeys]**.
+
+   ![](assets/role_6.png)
+
+1. När du har sparat dina nyskapade **[!UICONTROL Role]**, klicka **[!UICONTROL Properties]** för att ytterligare konfigurera åtkomst till din roll.
+
+   ![](assets/role_7.png)
+
+1. Klicka på **[!UICONTROL Add users]** på fliken **[!UICONTROL Users]**.
+
+   ![](assets/role_8.png)
+
+1. På fliken **[!UICONTROL Labels]** väljer du **[!UICONTROL Add label]**.
+
+   ![](assets/role_9.png)
+
+1. Välj **[!UICONTROL Labels]** du vill lägga till i din roll och klicka på **[!UICONTROL Save]**. I det här exemplet ger vi användare etiketten C2 åtkomst till det tidigare begränsade schemats fält.
+
+   ![](assets/role_4.png)
+
+Användarna i **Begränsad rolldemografi** rollen har nu åtkomst till de C2-märkta objekten.
 
 ## Tilldela etiketter till ett objekt i Adobe Experience Platform {#assign-label}
 
@@ -69,49 +116,6 @@ Genom att använda en **[!UICONTROL Label]** till **[!UICONTROL Field name]** Ob
 
 ![](assets/label_5.png)
 
-## Skapa en roll och tilldela etiketter {#assign-role}
-
-**[!UICONTROL Roles]** är en uppsättning användare som delar samma behörigheter, etiketter och sandlådor inom organisationen. Varje användare som tillhör en **[!UICONTROL Role]** har rätt till de program och tjänster i Adobe som ingår i produkten.
-Du kan också skapa egna **[!UICONTROL Roles]** om du vill finjustera användarnas åtkomst till vissa funktioner eller objekt i gränssnittet.
-
-Vi vill nu ge utvalda användare åtkomst till **Nationalitet** fält, märkt C2. För att göra det måste vi skapa en ny **[!UICONTROL Role]** med en specifik uppsättning användare och ge dem etiketten C2 så att de kan använda **Nationalitet** information i en **[!UICONTROL Journey]**.
-
-1. Från [!DNL Permissions] produkt, välj **[!UICONTROL Role]** från den vänstra panelmenyn och klicka på **[!UICONTROL Create role]**. Observera att du även kan lägga till **[!UICONTROL Label]** till inbyggda roller.
-
-   ![](assets/role_1.png)
-
-1. Lägg till en **[!UICONTROL Name]** och **[!UICONTROL Description]** till dina nya **[!UICONTROL Role]**, här: Begränsad rolldemografi.
-
-1. I listrutan väljer du **[!UICONTROL Sandbox]**.
-
-   ![](assets/role_2.png)
-
-1. Från **[!UICONTROL Resources]** meny, klicka **[!UICONTROL Adobe Experience Platform]** för att öppna de olika funktionerna. Här väljer vi **[!UICONTROL Messages]**.
-
-   ![](assets/role_3.png)
-
-1. I listrutan väljer du **[!UICONTROL Permissions]** länkad till den valda funktionen, t.ex. **[!UICONTROL View messages]** eller **[!UICONTROL Publish journeys]**.
-
-   ![](assets/role_6.png)
-
-1. När du har sparat dina nyskapade **[!UICONTROL Role]**, klicka **[!UICONTROL Properties]** för att ytterligare konfigurera åtkomst till din roll.
-
-   ![](assets/role_7.png)
-
-1. Klicka på **[!UICONTROL Add users]** på fliken **[!UICONTROL Users]**.
-
-   ![](assets/role_8.png)
-
-1. På fliken **[!UICONTROL Labels]** väljer du **[!UICONTROL Add label]**.
-
-   ![](assets/role_9.png)
-
-1. Välj **[!UICONTROL Labels]** du vill lägga till i din roll och klicka på **[!UICONTROL Save]**. I det här exemplet ger vi användare etiketten C2 åtkomst till det tidigare begränsade schemats fält.
-
-   ![](assets/role_4.png)
-
-Användarna i **Begränsad rolldemografi** rollen har nu åtkomst till de C2-märkta objekten.
-
 ## Få åtkomst till märkta objekt i Adobe Journey Optimizer {#attribute-access-ajo}
 
 Efter märkning av **Nationalitet** fältnamn i ett nytt schema och vår nya roll, vi kan nu se hur den här begränsningen påverkar Adobe Journey Optimizer.
@@ -133,7 +137,7 @@ Till exempel kommer den första användaren X med åtkomst till objekt som är m
 
    ![](assets/journey_4.png)
 
-1. Skapa sedan en resa som skickar ett meddelande till användare med en viss nationalitet. Lägg till en **[!UICONTROL Event]** sedan en **[!UICONTROL Condition]**.
+1. Skapa sedan en resa som skickar ett e-postmeddelande till användare med en viss nationalitet. Lägg till en **[!UICONTROL Event]** sedan en **[!UICONTROL Condition]**.
 
    ![](assets/journey_5.png)
 
@@ -145,11 +149,11 @@ Till exempel kommer den första användaren X med åtkomst till objekt som är m
 
    ![](assets/journey_7.png)
 
-1. Anpassa din resa efter behov, här lägger vi till en **[!UICONTROL Message]** åtgärd.
+1. Anpassa din resa efter behov, här lägger vi till en **[!UICONTROL Email]** åtgärd.
 
    ![](assets/journey_8.png)
 
-Om användaren Y utan åtkomst till etikett C2-objekt behöver komma åt den här resan eller meddelanden med det här begränsade fältet:
+Om användaren Y utan åtkomst till etikett C2-objekt behöver komma åt den här resan med det här begränsade fältet:
 
 * Användare Y kan inte använda det begränsade fältnamnet eftersom det inte visas.
 
@@ -157,6 +161,6 @@ Om användaren Y utan åtkomst till etikett C2-objekt behöver komma åt den hä
 
 * Användare Y kan ta bort uttrycket.
 
-* Användare Y kan inte testa resan eller meddelandet.
+* Användare Y kan inte testa resan.
 
-* Användare Y kan inte publicera resan eller meddelandet.
+* Användare Y kan inte publicera resan.

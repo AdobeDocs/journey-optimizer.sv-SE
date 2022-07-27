@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 606334c3-e3e6-41c1-a10e-63508a3ed747
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Så här skapar du en IP-pool:
    >
    >Alla IP-adresser som har etablerats med din instans är tillgängliga i listan.
 
-IP-poolen skapas nu och visas i listan. Du kan markera den för att komma åt dess egenskaper och visa den associerade kanalytan (t.ex. meddelandeförinställning). Mer information om hur du associerar en kanalyta med en IP-pool finns i [det här avsnittet](message-presets.md).
+IP-poolen skapas nu och visas i listan. Du kan markera den för att komma åt dess egenskaper och visa den associerade kanalytan (t.ex. meddelandeförinställning). Mer information om hur du associerar en kanalyta med en IP-pool finns i [det här avsnittet](channel-surfaces.md).
 
 ![](assets/ip-pool-created.png)
 
@@ -76,14 +76,14 @@ Så här redigerar du en IP-pool:
 
 1. Spara ändringarna.
 
-Uppdateringen träder i kraft omedelbart eller asynkront, beroende på vilken IP-pool som är associerad med en [kanalyta](message-presets.md) eller inte:
+Uppdateringen träder i kraft omedelbart eller asynkront, beroende på vilken IP-pool som är associerad med en [kanalyta](channel-surfaces.md) eller inte:
 
 * Om IP-poolen är **not** som är associerad med valfri kanalyta, uppdateras omedelbart (**[!UICONTROL Success]** status).
 * Om IP-poolen **är** som är kopplad till en kanalyta kan uppdateringen ta upp till 3 timmar (**[!UICONTROL Processing]** status).
 
 >[!NOTE]
 >
->När [skapa en kanalyta](message-presets.md#create-message-preset), om du väljer en IP-pool som ingår i utgåvan (**[!UICONTROL Processing]** status) och aldrig har associerats med den underdomän som har valts för den ytan, kan du inte fortsätta med att skapa en yta. [Läs mer](message-presets.md#subdomains-and-ip-pools)
+>När [skapa en kanalyta](channel-surfaces.md#create-channel-surface), om du väljer en IP-pool som ingår i utgåvan (**[!UICONTROL Processing]** status) och aldrig har associerats med den underdomän som har valts för den ytan, kan du inte fortsätta med att skapa en yta. [Läs mer](channel-surfaces.md#subdomains-and-ip-pools)
 
 Om du vill kontrollera IP-poolens uppdateringsstatus klickar du på **[!UICONTROL More actions]** och markera **[!UICONTROL Recent updates]**.
 

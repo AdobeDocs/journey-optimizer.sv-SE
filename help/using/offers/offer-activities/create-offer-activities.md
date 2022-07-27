@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7a217c97-57e1-4f04-a92c-37632f8dfe91
-source-git-commit: 0ca491315e214e3c12bec11a93da1a2b98b493b6
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1036'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 
 1. Använd **[!UICONTROL Eligibility]** om du vill begränsa urvalet av erbjudanden för den här placeringen.
 
-   Den här begränsningen kan tillämpas med en **beslutsregel** eller en eller flera **Adobe Experience Platform segment**. Båda beskrivs i [det här avsnittet](#segments-vs-decision-rules).
+   Den här begränsningen kan tillämpas med en **beslutsregel** eller en eller flera **Adobe Experience Platform segment**. Båda beskrivs i [det här avsnittet](../offer-library/add-constraints.md#segments-vs-decision-rules).
 
    * Om du vill begränsa urvalet av erbjudanden till medlemmarna i ett Experience Platform-segment väljer du **[!UICONTROL Segments]** och sedan klicka **[!UICONTROL Add segments]**.
 
@@ -87,6 +87,10 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
       ![](../assets/activity_constraint_rule.png)
 
       Lär dig hur du skapar en beslutsregel i [det här avsnittet](../offer-library/creating-decision-rules.md).
+
+      >[!NOTE]
+      >
+      >När du väljer segment eller beslutsregler visas information om de uppskattade kvalificerade profilerna. Klicka **[!UICONTROL Refresh]** för att uppdatera data.
 
 1. Definiera den rangordningsmetod som du vill använda för att välja det bästa erbjudandet för varje profil.
 
@@ -117,26 +121,6 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 1. Använd **[!UICONTROL New scope]** -knappen. Upprepa stegen ovan för varje beslutsomfattning.
 
    ![](../assets/activity_new-scope.png)
-
-### Använda segment och beslutsregler {#segments-vs-decision-rules}
-
-<!--to move to create-offers?-->
-
-Om du vill tillämpa en begränsning kan du begränsa urvalet av erbjudanden till medlemmarna i en eller flera **Adobe Experience Platform segment** eller så kan du använda en **beslutsregel**, båda lösningarna motsvarar olika användningsområden.
-
-I princip är utdata för ett segment en lista med profiler, medan en beslutsregel är en funktion som körs på begäran mot en enskild profil under beslutsprocessen. Skillnaden mellan dessa två användningar beskrivs nedan.
-
-* **Segment**
-
-   Å ena sidan är segment en grupp Adobe Experience Platform-profiler som matchar en viss logik baserat på profilattribut och upplevelsehändelser. Erbjudandehanteringen beräknar dock inte om segmentet, som kanske inte är aktuellt när erbjudandet presenteras.
-
-   Läs mer om segment i [det här avsnittet](../../segment/about-segments.md).
-
-* **Beslutsregler**
-
-   Å andra sidan baseras en beslutsregel på data som är tillgängliga i Adobe Experience Platform och avgör till vem ett erbjudande kan visas. När regeln har valts i ett erbjudande eller i ett beslut för en viss placering verkställs den varje gång ett beslut fattas, vilket säkerställer att varje profil får det senaste och bästa erbjudandet.
-
-   Läs mer om beslutsregler i [det här avsnittet](../offer-library/creating-decision-rules.md).
 
 ## Lägg till ett reserverbjudande {#add-fallback}
 

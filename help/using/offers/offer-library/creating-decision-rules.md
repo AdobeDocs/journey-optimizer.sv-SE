@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 401ce05b-412b-4fa0-a516-bf75727f6387
-source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '288'
 ht-degree: 5%
 
 ---
@@ -35,15 +35,19 @@ Så här skapar du en beslutsregel:
 
    För att göra detta **Segment Builder** är tillgängligt för att hjälpa dig att skapa regelns villkor. [Läs mer](../../segment/about-segments.md)
 
-   I det här exemplet är regeln riktad till kunder som har lojalitetsnivån&quot;Gold&quot;.
+   <!--In this example, the rule will target customers that have the "Gold" loyalty level.-->
 
    ![](../assets/offers_decision_rule_creation_segment.png)
 
    >[!NOTE]
    >
-   >Segment Builder som tillhandahålls för att skapa beslutsregler har vissa särdrag jämfört med den som används med **[!UICONTROL Audience Destinations]** service. Till exempel **[!UICONTROL Segments]** -fliken är inte tillgänglig för användning. Den globala processen som beskrivs i dokumentationen för Segment Builder är dock fortfarande giltig för att skapa regler för offertbeslut.
+   >Segment Builder som tillhandahålls för att skapa beslutsregler har vissa särdrag jämfört med den som används med **[!UICONTROL Audience Destinations]** service. Till exempel **[!UICONTROL Segments]** -fliken är inte tillgänglig för användning. Den globala processen som beskrivs i [Segment Builder](../../segment/about-segments.md) Dokumentationen kan fortfarande användas för att skapa beslutsregler för erbjudanden. Läs mer i [Dokumentation för Adobe Experience Platform Segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).
 
-1. Klicka **[!UICONTROL Save]** för att bekräfta.
+1. När du lägger till och konfigurerar nya fält på arbetsytan visas **[!UICONTROL Segment properties]** visas information om de uppskattade profiler som tillhör segmentet. Klicka **[!UICONTROL Refresh estimate]** för att uppdatera data.
+
+   ![](../assets/offers_decision_rule_creation_estimate.png)
+
+1. Klicka på **[!UICONTROL Save]** för att bekräfta.
 
 1. När regeln har skapats visas den i regellistan. Du kan markera den för att visa dess egenskaper och redigera eller ta bort den.
 

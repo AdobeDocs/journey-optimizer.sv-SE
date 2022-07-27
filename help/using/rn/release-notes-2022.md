@@ -2,9 +2,9 @@
 title: Versionsinformation 2022
 description: Versionsinformation om Journey Optimizer 2022
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
-source-git-commit: bfd12553c653a4d4caccc969cb51b1416c64ba65
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1790'
 ht-degree: 9%
 
 ---
@@ -13,9 +13,136 @@ ht-degree: 9%
 
 På den här sidan visas alla funktioner och förbättringar för [!DNL Journey Optimizer] släppt 2022.
 
-Den senaste versionsinformationen är tillgänglig [på den här sidan](release-notes.md).
+## Version från juni 2022 {#june-2022-release}
 
-varje kvartal.
+### Nya funktioner
+
+<table>
+<thead>
+<tr>
+<th><strong>Skicka SMS till användarna (begränsad tillgänglighet)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du skapa, anpassa och skicka SMS i Journey Optimizer via en integrering med <b>Sinch</b> eller <b>Twilio</b>.</p>
+<img src="assets/do-not-localize/SMS.gif"/>
+<p>SMS-kanalen är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.</p>
+<p>Lär dig hur du skapar och skickar ett SMS i det här <a href="../messages/create-sms.md">detaljerad dokumentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Hitta slagkraftigare bilder snabbare tack vare Adobe Stock integration</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Integreringspluginen för Adobe Stock och Adobe Journey Optimizer Email Designer ger kunderna ett enkelt sätt att navigera, licensiera och spara bilder för användning i meddelandeframställning. </br> Den nya <b>Hitta liknande Stock-foton</b> kan du också söka efter Stock-foton som matchar innehållet, färgen och kompositionen för dina bilder. </p>
+<img src="assets/do-not-localize/stock-rn.gif"/>
+<p>Mer information finns i den <a href="../design/stock.md">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Använd BCC för e-post för alla e-postmeddelanden</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du använda funktionen för hemlig kopia (Email BCC) för att lagra e-postmeddelanden som skickas av Adobe Journey Optimizer. Aktivera det här alternativet i dina e-postförinställningar så att alla e-postmeddelanden som skickas är blinda och kopieras till din BCC-adress.</p>
+<img src="assets/do-not-localize/bcc-rn.gif"/>
+<p>Mer information finns i den <a href="../configuration/bcc-email.md">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<!--<table>
+<thead>
+<tr>
+<th><strong>Automatically use the best performing offer in your decisions</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now use personalized optimization model systems in Decision Management. This new type of model allows you to optimize and personalize offers based on segments and offer performance.</p>
+<p>The use of personalized optimization AI models is currently restricted to selected users, and will be deployed to all environments in a future release.</p>
+<img src="assets/do-not-localize/ai-ranking.gif"/>
+<p>For more information, refer to the <a href="../offers/ranking/personalized-optimization-model.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>-->
+
+<table>
+<thead>
+<tr>
+<th><strong>Kopiera objekt mellan sandlådor</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du återskapa upplevelser från en Journey Optimizer-sandlåda till en annan, till exempel från en icke-produktionssandlåda till en produktionssandlåda. Den nya funktionen kopierar en hel resa, inklusive alla objekt som resan är beroende av för att kunna köras korrekt, från en miljö till en annan. Förutom Resor kan du även kopiera andra komponenter, som erbjudanden, meddelanden, scheman, datauppsättningar, datakällor, händelser och åtgärder.</p>
+<p>Mer information finns i den <a href="../building-journeys/copy-to-sandbox.md">detaljerade dokumentationen</a>.
+</td>
+</tr>
+</tbody>
+</table>
+
+<!--table>
+<thead>
+<tr>
+<th><strong>Dynamic Expression Builder</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now create conditional content blocks across different authoring services to personalize your content. In addition to the Personalization Expression Library, the Expression Editor provides a new Conditional Rule Builder to help you design and save your content blocks.</p>
+<p>For more information, refer to the <a href="../building-journeys/read-segment.md#configuring-segment-trigger-activity">detailed documentation</a>.
+</td>
+</tr>
+</tbody>
+</table-->
+
+
+### Förbättringar
+
+**Beslutshantering**
+
+* **Stöd för HTML och JSON-filer** - Nu kan du dra och släppa externa HTML- och JSON-filer från Adobe Experience Cloud resursbibliotek till erbjudanderepresentationsinnehållet. [Läs mer](../offers/offer-library/add-representations.md#html-json)
+
+
+**E-post**
+
+* **Spara som mall** - Du kan nu spara ett e-postinnehåll som en mall och återanvända det när du skapar andra meddelanden. [Läs mer](../design/email-templates.md)
+
+
+**Administrering**
+
+* **URL-parametrar för förhandsspårning** - När du konfigurerar en meddelandeförinställning och definierar parametrar för URL-spårning, visas nu en dynamisk förhandsgranskning av den resulterande spårnings-URL:en. [Läs mer](../configuration/email-settings.md#url-tracking)
+
+* **Meddelandeförinställningsutgåva** - När du nu uppdaterar en meddelandeförinställning kan bearbetningstiden bara ta upp till 3 timmar. [Läs mer](../configuration/channel-surfaces.md#edit-channel-surface)
+
+* **IP-poolversion** - När du nu uppdaterar en IP-pool kan bearbetningstiden bara ta upp till 3 timmar. [Läs mer](../configuration/ip-pools.md#edit-ip-pool)
+
+
+
 
 ## Version från maj 2022 {#may-2022-release}
 
@@ -166,7 +293,7 @@ Som Adobe Campaign Standard-kund kan du nu skicka e-post, push-meddelanden och S
 
 **Administrering**
 
-* Du kan nu aktivera/inaktivera länken för att avbryta prenumerationen i/från e-posthuvudet på den förinställda meddelandenivån och ange en anpassad URL för att avbryta prenumerationen på meddelandenivån. [Läs mer](../configuration/message-presets.md#list-unsubscribe)
+* Du kan nu aktivera/inaktivera länken för att avbryta prenumerationen i/från e-posthuvudet på den förinställda meddelandenivån och ange en anpassad URL för att avbryta prenumerationen på meddelandenivån. [Läs mer](../configuration/channel-surfaces.md#list-unsubscribe)
 * Tillåtelselista kan nu aktiveras och inaktiveras via [!DNL Journey Optimizer] gränssnitt för produktions- och icke-produktionssandlådor. [Läs mer](../configuration/allow-list.md#enable-allow-list)
 
 **Personalisering**
@@ -239,7 +366,7 @@ The suppression list helps you with honoring the ISPs’ feedback to preserve se
 <tr>
 <td>
 <p>I Journey Optimizer-meddelandeinnehåll kan du nu lägga till UTM-parametrar i länkarna: kan de tillhandahålla ytterligare data om länken och hjälpa dig att identifiera var och varför en person som klickat på länken.</p>
-<p>Mer information finns i den <a href="../configuration/message-presets.md#configure-email-settings">detaljerade dokumentationen</a>.</p-->
+<p>Mer information finns i den <a href="../configuration/channel-surfaces.md#configure-email-settings">detaljerade dokumentationen</a>.</p-->
 </td>
 </tr>
 </tbody>

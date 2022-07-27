@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '877'
 ht-degree: 1%
 
 ---
@@ -128,9 +128,19 @@ Följ stegen nedan för att tillämpa en frekvensregel på ett meddelande.
 
 1. Alla frekvensregler som matchar den valda kategorin och kanalen/kanalerna tillämpas automatiskt på det här meddelandet.
 
-   >[!NOTE]
-   >
-   >Meddelanden där den valda kategorin är **[!UICONTROL Transactional]** utvärderas inte mot frekvensregler.
+1. Du kan klicka på **[!UICONTROL Frequency rule]** om du vill visa de frekvensregler som gäller för den valda kategorin och de valda kanalerna.
+
+   ![](assets/message-rules-msg-link.png)
+
+   En ny flik öppnas för att visa matchande regler för meddelandefrekvens.
+
+Alla frekvensregler som matchar den valda kategorin och kanalen/kanalerna tillämpas automatiskt på det här meddelandet.
+
+>[!NOTE]
+>
+>Meddelanden <!--that do not have any selected category or messages -->där den valda kategorin är **[!UICONTROL Transactional]** utvärderas inte mot frekvensregler.
+
+<!--Clicking the link out button next to the category selector will jump you over to the rules inventory screen to see which rules will be applied to the message.-->
 
 1. Du kan visa antalet profiler som har uteslutits från leverans i [Global rapport](../reports/global-report.md)och i [Live-rapport](../reports/live-report.md), där frekvensreglerna listas som en möjlig orsak för användare som inte får leverera.
 

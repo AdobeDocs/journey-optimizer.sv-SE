@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1140'
 ht-degree: 4%
 
 ---
@@ -82,7 +82,7 @@ Så här konfigurerar du Läs segment-aktiviteten:
 
    ![](assets/read-segment-schedule-list.png)
 
-   The **Inkrementell läsning** kan du bara rikta in dig på de personer som har gått in i segmentet sedan den senaste körningen av resan. Den första körningen riktar sig alltid till alla segmentmedlemmar. Det här alternativet är endast tillgängligt för återkommande **Lässegment** verksamhet.
+   **Inkrementell läsning** alternativ: när en resa med återkommande **Lässegment** körs för första gången så att alla profiler i segmentet kommer in på resan. Vid nästa tillfälle kommer alla profiler in på resan igen, även om de redan var inne. Den gamla instansen av profilen i resan stoppas och en ny instans skapas. The **Inkrementell läsning** kan ni efter den första förekomsten inrikta er på de personer som har gått in i segmentet sedan den senaste körningen av resan.
 
 <!--
 

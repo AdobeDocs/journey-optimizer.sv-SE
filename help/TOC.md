@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1108'
 ht-degree: 39%
 
 ---
@@ -261,7 +261,7 @@ ht-degree: 39%
    + levererbarhet {#deliverability}
       + [Kom igång med leverans](using/reports/deliverability.md)
       + [Om listan över inaktiveringar](using/reports/suppression-list.md)
-+ Beslutsledning {#offer-decisioniong}
++ Beslutsledning {#offer-decisioning}
    + Kom igång med beslutshantering {#get-started-decision}
       + [Om beslutshantering](using/offers/get-started/starting-offer-decisioning.md)
       + [Användargränssnitt](using/offers/get-started/user-interface.md)
@@ -292,6 +292,7 @@ ht-degree: 39%
       + [Skapa beslut](using/offers/offer-activities/create-offer-activities.md)
       + [Konfigurera urval av erbjudanden i beslut](using/offers/offer-activities/configure-offer-selection.md)
       + [Skapa simuleringar](using/offers/offer-activities/simulation.md)
+   + [Gruppbeslut](using/offers/batch-delivery.md)
    + Skapa rapporter om beslutshantering {#create-reports}
       + [Kom igång med beslutsledningshändelser](using/offers/reports/get-started-events.md)
       + [Viktig information om beslutshändelser](using/offers/reports/key-information.md)
@@ -379,8 +380,8 @@ ht-degree: 39%
             + [Återförsök](using/configuration/retries.md)
             + [Tillåtelselista](using/configuration/allow-list.md)
       + [Konfigurera SMS-kanal](using/configuration/sms-configuration.md)
-      + Konfigurera kanalytor {#set-up-message-presets}
-         + [Skapa kanalytor](using/configuration/message-presets.md)
+      + Konfigurera kanalytor {#set-up-channels}
+         + [Skapa kanalytor](using/configuration/channel-surfaces.md)
          + [Konfigurera e-postinställningar](using/configuration/email-settings.md)
          + [Använd BCC-e-post](using/configuration/bcc-email.md)
       + [Hantera körningsadresser](using/configuration/primary-email-addresses.md)

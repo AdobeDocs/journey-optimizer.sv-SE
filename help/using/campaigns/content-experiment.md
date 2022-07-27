@@ -5,7 +5,7 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 
    ![](assets/content_experiment_1.png)
 
-1. Välj **[!UICONTROL Email]** sedan **[!UICONTROL Surface]** du vill använda för den här leveransen. Mer information finns i [Kanalytor](../configuration/message-presets.md) sida.
+1. Välj **[!UICONTROL Email]** sedan **[!UICONTROL Surface]** du vill använda för den här leveransen. Mer information finns i [Kanalytor](../configuration/channel-surfaces.md) sida.
 
    ![](assets/content_experiment_2.png)
 

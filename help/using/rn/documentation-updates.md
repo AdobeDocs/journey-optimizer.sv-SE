@@ -2,9 +2,9 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1731'
 ht-degree: 20%
 
 ---
@@ -15,7 +15,13 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 ## Juli 2022 {#july-2022}
 
-* The **Skapa en meddelandeförinställning** -avsnittet har klargjorts och uppdaterats med länkar till sidan som beskriver hur SMS-kanalen konfigureras. [Läs mer](../configuration/message-presets.md#create-message-preset)
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version 22 från juli finns utförlig i dokumentationen. [Läs mer](release-notes.md)
+* The **Konfigurera kanalytor** -avsnittet har klargjorts och uppdaterats med länkar till sidan som beskriver hur SMS-kanalen konfigureras. [Läs mer](../configuration/channel-surfaces.md#create-channel-surface)
+* I reseegenskaperna **Tidszon för profil** är nu inaktiverat som standard. [Läs mer](../building-journeys/timezone-management.md#timezone-from-profiles)
+* I **Vänta** aktivitet, **Fast datum** är inte längre tillgängligt. [Läs mer](../building-journeys/wait-activity.md)
+* Ytterligare information om **Inkrementell läsning** i **Lässegment** aktivitet. [Läs mer](../building-journeys/read-segment.md#configuring-segment-trigger-activity)
+* Rekommendationer om **Profilände** villkorstyp. [Läs mer](../building-journeys/condition-activity.md#profile_cap)
+* Lagt till en begränsning av affärshändelser. [Läs mer](../start/guardrails.md#events-g)
 
 ## Juni 2022 {#june-2022}
 
@@ -42,7 +48,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Skärmbilder för landningssidor och prenumerationsrapporter har uppdaterats. [Läs mer](../reports/live-report.md)
 * En anteckning om att metoden Delete inte stöds i anpassade åtgärder har lagts till. [Läs mer](../action/about-custom-action-configuration.md)
 * Länkar till instruktionsvideor har uppdaterats.
-* The [E-postkonfiguration](../configuration/about-subdomain-delegation.md), [Meddelandeförinställningar](../configuration/message-presets.md) och [Konfigurera landningssidor](../configuration/lp-subdomains.md) -avsnitten har omstrukturerats för att bli enklare att läsa.
+* The [E-postkonfiguration](../configuration/about-subdomain-delegation.md), [Meddelandeförinställningar](../configuration/channel-surfaces.md) och [Konfigurera landningssidor](../configuration/lp-subdomains.md) -avsnitten har omstrukturerats för att bli enklare att läsa.
 * Avsnittet för URL-spårning har uppdaterats och förbättrats med exempel. [Läs mer](../configuration/email-settings.md#url-tracking)
 * Ett nytt underavsnitt om hur du konfigurerar en e-postadress för vidarebefordran har lagts till. Observera att du inte kan göra det via användargränssnittet. [Läs mer](../configuration/email-settings.md#forward-email)
 
@@ -53,8 +59,8 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Videoklippen för funktioner för beslutshantering har uppdaterats för att återspegla Journey Optimizer användargränssnitt. [Läs mer](../offers/get-started/starting-offer-decisioning.md)
 * The **Kom igång med datauppsättningar** -avsnittet har förbättrats för att ge detaljerad information om hur du får åtkomst till och skapar datauppsättningar. [Läs mer](../start/get-started-datasets.md)
 * Länkar till hjälplinjer och versionsinformation om produkten har lagts till i **Adobe Journey Optimizer Documentation** hemsida. [Läs mer](https://experienceleague.adobe.com/docs/journey-optimizer.html)
-* The **Skapa meddelandeförinställningar** anger nu att du inte kan fortsätta med att skapa förinställningar medan den valda IP-poolen är under utgåva (**[!UICONTROL Processing]** status) och har aldrig kopplats till den valda underdomänen. [Läs mer](../configuration/message-presets.md#subdomains-and-ip-pools)
-* Meddelandeförinställningarna **URL-spårning** -avsnittet har uppdaterats för att återspegla mindre ändringar i användargränssnittet. [Läs mer](../configuration/message-presets.md#url-tracking)
+* The **Skapa meddelandeförinställningar** anger nu att du inte kan fortsätta med att skapa förinställningar medan den valda IP-poolen är under utgåva (**[!UICONTROL Processing]** status) och har aldrig kopplats till den valda underdomänen. [Läs mer](../configuration/channel-surfaces.md#subdomains-and-ip-pools)
+* Meddelandeförinställningarna **URL-spårning** -avsnittet har uppdaterats för att återspegla mindre ändringar i användargränssnittet. [Läs mer](../configuration/channel-surfaces.md#url-tracking)
 
 ## Mars 2022 {#march-2022}
 
@@ -78,7 +84,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * The **Offer decisioning AI-rankningar** -avsnittet har uppdaterats med en mer detaljerad beskrivning av den automatiska optimeringsmodellen. [Läs mer](../offers/ranking/auto-optimization-model.md)
 * Ett nytt avsnitt om schemakraven som behövs för att kunna skicka in händelsetyper när en rankningsstrategi används har lagts till. [Läs mer](../offers/ranking/schema-requirement.md)
 * Avsnittet som är relaterat till [!DNL Journey Optimizer] personaliseringsfunktionerna har omstrukturerats för att bli lättare att läsa. [Läs mer](../personalization/personalize.md)
-* The **Skapa meddelandeförinställningar** har delats upp i flera avsnitt för att bli tydligare. [Läs mer](../configuration/message-presets.md#create-message-preset)
+* The **Skapa meddelandeförinställningar** har delats upp i flera avsnitt för att bli tydligare. [Läs mer](../configuration/channel-surfaces.md#create-channel-surface)
 * The **Hantering av avanmälan** har klargjorts och omorganiserats något. [Läs mer](../messages/consent.md#opt-out-management)
 * The **Infoga länkar** -avsnittet har uppdaterats för att återspegla de senaste ändringarna i användargränssnittet. [Läs mer](../design/message-tracking.md#insert-links)
 
@@ -93,14 +99,13 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Okt &#39;21-versionen har beskrivits i dokumentationen. [Läs mer](release-notes.md)
 * Tillagd **Funktionen Datum och tid** lista. [Läs mer](../personalization/functions/dates.md)
 * Nytt **Komma igång-avsnitt per användarprofil**. Ta din egen väg för att nå dina mål snabbare! [Läs mer](../start/quick-start.md)
-* Nytt **Redigera en meddelandeförinställning** -avsnitt. [Läs mer](../configuration/message-presets.md#edit-message-preset)
+* Nytt **Redigera en meddelandeförinställning** -avsnitt. [Läs mer](../configuration/channel-surfaces.md#edit-channel-surface)
 * Nytt **Redigera en PTR-post** -avsnitt. [Läs mer](../configuration/ptr-records.md#edit-ptr-record)
-* Nytt **Inaktivera en meddelandeförinställning** -avsnitt. [Läs mer](../configuration/message-presets.md#edit-message-preset#deactivate-preset)
+* Nytt **Inaktivera en meddelandeförinställning** -avsnitt. [Läs mer](../configuration/channel-surfaces.md#edit-channel-surface#deactivate-a-surface)
 * Nya begränsningar i **Utvecklarhandbok för API för beslutshantering** begränsningar för erbjudandet som inte stöds av mobilen [!DNL Experience Edge] arbetsflöden. [Läs mer](../offers/api-reference/offers-api/personalized-offers/create.md#limitations)
 * Nytt **Skapa simuleringar** -avsnitt. [Läs mer](../offers/offer-activities/simulation.md)
 * Uppdaterat **Lägg till beslutsomfattningar** -avsnitt. [Läs mer](../offers/offer-activities/create-offer-activities.md#add-decision-scopes)
 * Uppdaterat **Definiera innehåll för dina representationer** avsnitt, inklusive ett nytt [undersektion](../offers/offer-library/creating-personalized-offers.md#custom-text) om hur man definierar och personaliserar egen text. [Läs mer](../offers/offer-library/creating-personalized-offers.md#content)
-
 
 ## September 2021 {#september-2021}
 
@@ -142,7 +147,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Anteckningar har lagts till i avsnitten om Suppression-listan, Tillåtelselista och e-post, global/liverapport, för att ange att profiler med statusen Inaktiverad och Inte tillåten ska uteslutas från e-postrapporten Skickade mått. [Läs mer](../reports/global-report.md)
 * Ett nytt avsnitt har lagts till som beskriver hur du hämtar e-postadresser eller domäner som har uteslutits från en sändning eftersom de inte fanns på tillåtelselista. [Läs mer](../configuration/allow-list.md#reporting)
 * Avsnittet Aktivera tillåtelselista har uppdaterats. [Läs mer](../configuration/allow-list.md#enable-allow-list)
-* Avsnittet Monitor-meddelandets förinställningar har uppdaterats med orsaker till att förinställningarna inte kunde skapas och information om sådana fel. [Läs mer](../configuration/message-presets.md#monitor-message-presets)
+* Avsnittet Monitor-meddelandets förinställningar har uppdaterats med orsaker till att förinställningarna inte kunde skapas och information om sådana fel. [Läs mer](../configuration/channel-surfaces.md#monitor-channel-surfaces)
 * Uppdaterat och ändrat namn på avsnittet för återförsöksperiod för att återspegla det faktum att du nu kan ändra inställningen för återförsök via e-post i meddelandeförinställningarna. [Läs mer](../configuration/retries.md#retry-duration)
 * Ett nytt avsnitt har lagts till som beskriver hur du infogar en länk för att välja bort ett enstaka klick i e-postinnehåll. [Läs mer](../messages/consent.md#one-click-opt-out-link)
 * Uppdaterade avsnittet Delegera en underdomän med mer detaljerad information om valideringsprocessen som utfördes av Adobe. [Läs mer](../configuration/delegate-subdomain.md#subdomain-validation)

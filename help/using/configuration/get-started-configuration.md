@@ -6,7 +6,7 @@ level: Intermediate
 exl-id: 0964a484-f957-4aae-a571-61b2a1615026
 feature: Application Settings
 topic: Administration
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 11%
@@ -22,7 +22,7 @@ För att kunna skapa dina resor och skicka meddelanden måste du gå igenom föl
 
 1. **Konfigurera meddelanden och kanaler**: definiera kanalytor, anpassa och anpassa meddelandena.
 
-   * Skapa kanalytor för att konfigurera alla tekniska parametrar som krävs för att leverera meddelanden. [Läs mer](message-presets.md)
+   * Skapa kanalytor för att konfigurera alla tekniska parametrar som krävs för att leverera meddelanden. [Läs mer](channel-surfaces.md)
 
    * Avgör vilken e-postadress som ska användas i prioritetsordning för mottagarna när det finns flera tillgängliga adresser i Adobe Experience Platform. [Läs mer](primary-email-addresses.md)
 

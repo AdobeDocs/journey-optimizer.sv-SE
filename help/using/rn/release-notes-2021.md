@@ -2,7 +2,7 @@
 title: Information om föregående version (2021)
 description: Versionsinformation om Journey Optimizer 2021
 exl-id: 0e43be98-f471-4860-be84-8f99ab93e983
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 9%
@@ -91,7 +91,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 
 **Administrering**
 
-* **Redigera meddelandeförinställningar** - Nu kan du redigera meddelandeförinställningar och övervaka deras uppdateringsstatus. [Läs mer](../configuration/message-presets.md#edit-message-preset)
+* **Redigera meddelandeförinställningar** - Nu kan du redigera meddelandeförinställningar och övervaka deras uppdateringsstatus. [Läs mer](../configuration/channel-surfaces.md#edit-channel-surface)
 * **Redigera PTR-poster** - Nu kan du redigera PTR-poster och övervaka deras uppdateringsstatus. [Läs mer](../configuration/ptr-records.md#edit-ptr-record)
 
 **Personalisering**

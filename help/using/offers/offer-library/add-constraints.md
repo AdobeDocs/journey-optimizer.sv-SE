@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
-source-git-commit: 3f41545f41f258eede2167aa9ab45db51e91cacf
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
-source-wordcount: '1575'
+source-wordcount: '1600'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 1%
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_priority"
->title="Prioritet"
+>title="Ange prioritet"
 >abstract="Prioriteten hjälper till att definiera prioriteten för erbjudandet jämfört med andra om användaren kvalificerar för mer än ett erbjudande. Ju högre prioritet ett erbjudande har, desto högre blir prioriteringen jämfört med andra erbjudanden."
 
 Med begränsningar kan du definiera villkoren för hur ett erbjudande ska visas.
@@ -40,6 +40,10 @@ Med begränsningar kan du definiera villkoren för hur ett erbjudande ska visas.
 1. Konfigurera **[!UICONTROL Offer eligibility]**. [Läs mer](#eligibility)
 
    ![](../assets/offer-eligibility.png)
+
+   >[!NOTE]
+   >
+   >När du väljer segment eller beslutsregler visas information om de uppskattade kvalificerade profilerna. Klicka **[!UICONTROL Refresh]** för att uppdatera data.
 
 1. Definiera **[!UICONTROL Priority]** av erbjudandet jämfört med andra, om användaren kvalificerar sig för mer än ett erbjudande. Ju högre prioritet ett erbjudande har, desto högre blir prioriteringen jämfört med andra erbjudanden.
 
@@ -63,8 +67,8 @@ Om du till exempel anger följande begränsningar:
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_eligibility"
->title="Kvalificering"
->abstract="Du kan begränsa erbjudandet till specifika profiler som du definierar med hjälp av segment eller beslutsregler."
+>title="Definiera berättigande"
+>abstract="Som standard är alla profiler berättigade att presenteras för erbjudandet, men du kan använda segment eller beslutsregler för att begränsa erbjudandet till specifika profiler."
 
 >[!CONTEXTUALHELP]
 >id="od_offer_eligibility"
@@ -114,7 +118,7 @@ I princip är utdata för ett segment en lista med profiler, medan en beslutsreg
 
    Läs mer om beslutsregler i [det här avsnittet](creating-decision-rules.md).
 
-## Frekvensbegränsning {#capping}
+## Takning {#capping}
 
 >[!CONTEXTUALHELP]
 >id="od_offer_globalcap"
@@ -123,8 +127,8 @@ I princip är utdata för ett segment en lista med profiler, medan en beslutsreg
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_capping"
->title="Takning"
->abstract="Begränsning används som en begränsning för att definiera det maximala antal gånger ett erbjudande kan presenteras."
+>title="Använd begränsning"
+>abstract="För att undvika att kunderna blir överdrivna bör du definiera hur många gånger ett erbjudande får presenteras med capping."
 
 Begränsning används som en begränsning för att definiera det maximala antal gånger ett erbjudande kan presenteras.
 
@@ -178,7 +182,7 @@ Det antal gånger ett erbjudande föreslås beräknas vid e-postförberedelsen. 
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_offer_change_date"
->title="Om du ändrar datumet kan det påverka takstorleken"
+>title="Ändrade datum kan påverka capping"
 >abstract="Om begränsning tillämpas på erbjudandet kan det påverkas när du ändrar start- och slutdatumet."
 
 Du måste vara försiktig när du ändrar datumet för ett erbjudande, eftersom detta kan påverka antalet capping om följande villkor uppfylls:
@@ -191,7 +195,7 @@ Du måste vara försiktig när du ändrar datumet för ett erbjudande, eftersom 
 >
 >Lär dig hur du definierar ett erbjudandes datum i [det här avsnittet](creating-personalized-offers.md#create-offer).
 
-Antalet capping per profil lagras för varje profil. När du ändrar start- och slutdatumet för ett godkänt erbjudande kan antalet appar för vissa profiler påverkas enligt de olika scenarier som beskrivs nedan.
+Vid kap per profil sparas antalet på varje profil. När du ändrar start- och slutdatumet för ett godkänt erbjudande kan antalet appar för vissa profiler påverkas enligt de olika scenarier som beskrivs nedan.
 
 ![](../assets/offer-capping-change-date.png)
 

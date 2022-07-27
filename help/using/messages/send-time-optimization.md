@@ -5,7 +5,8 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+exl-id: ec604e91-4c7f-459c-b6ff-d825919e7181
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 0%
@@ -36,8 +37,7 @@ Den här informationen lagras med användarens profil och hänvisas till vid kö
 
 >[!CAUTION]
 >
->* Den här funktionen är inte kompatibel med sprängningsläge.
-
+>Den här funktionen är inte kompatibel med sprängningsläge.
 
 ### Aktivera optimering av sändningstid{#activate-send-time-optimization}
 

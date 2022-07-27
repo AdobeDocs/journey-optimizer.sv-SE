@@ -6,9 +6,9 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 1ed01a6b-5e42-47c8-a436-bdb388f50b4e
-source-git-commit: 9aa8b8c33eae6fd595643c5fefb4b4ea46ae7b73
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '751'
 ht-degree: 1%
 
 ---
@@ -32,19 +32,20 @@ För att göra detta skulle organisationen:
 
 <!-- (Refer to the [export jobs endpoint documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=en) to learn more about exporting segments.) -->
 
+>[!NOTE]
+>
+>Gruppbeslut kan också utföras med Journey Optimizer gränssnitt. Mer information finns i [det här avsnittet](../../batch-delivery.md), som innehåller information om globala krav och begränsningar som ska beaktas vid gruppbeslut.
+
+* **Antalet batchjobb som körs per datamängd**: Upp till fem batchjobb kan köras åt gången, per datauppsättning. Alla andra gruppförfrågningar med samma utdatamängd läggs till i kön. Ett jobb i kö plockas upp för bearbetning när det föregående jobbet har slutförts.
+* **Frekvensbegränsning**: En batch körs bort från den profilögonblicksbild som inträffar en gång om dagen. The [!DNL Batch Decisioning] API kapslar frekvensen och läser alltid in profiler från den senaste ögonblicksbilden.
+
 ## Komma igång {#getting-started}
 
 Innan du använder detta API måste du utföra följande steg.
 
 ### Förbered beslutet {#prepare-decision}
 
-Följ stegen nedan för att förbereda ett eller flera beslut:
-
-* Om du vill exportera beslutsresultatet skapar du en datauppsättning med ODE-schema för beslutshändelser.
-
-* Skapa ett plattformssegment som ska utvärderas och sedan uppdateras. Se [segmenteringsdokumentation](http://www.adobe.com/go/segmentation-overview-en) om du vill veta mer om hur du uppdaterar utvärderingen av segmentmedlemskap.
-
-* Skapa ett beslut (som har en beslutsomfattning som består av ett beslut-ID och ett Placement-ID) i Adobe Journey Optimizer. Se [avsnitt om definition av beslutsomfattningar](../../offer-activities/create-offer-activities.md) av guiden för att fatta beslut för att lära sig mer.
+Om du vill förbereda ett eller flera beslut måste du skapa en datauppsättning, ett segment och ett beslut. Dessa förutsättningar beskrivs närmare i [det här avsnittet](../../batch-delivery.md).
 
 ### API-krav {#api-requirements}
 
@@ -58,6 +59,10 @@ Alla [!DNL Batch Decisioning] kräver följande rubriker förutom de som anges i
 ## Starta en gruppbearbetning {#start-a-batch-process}
 
 Om du vill starta en arbetsbelastning för att gruppbearbeta beslut, skickar du en POST till `/workloads/decisions` slutpunkt.
+
+>[!NOTE]
+>
+>Detaljerad information om bearbetningstiden för batchjobb finns i [det här avsnittet](../../batch-delivery.md).
 
 **API-format**
 
@@ -107,7 +112,7 @@ curl -X POST 'https://platform.adobe.io/data/core/ode/0948b1c5-fff8-3b76-ba17-90
 | `xdm:itemCount` | Det här är ett valfritt fält som visar antalet objekt, t.ex. alternativ som begärts för beslutsomfånget. Som standard returnerar API ett alternativ per omfång, men du kan uttryckligen be om fler alternativ genom att ange det här fältet. Minst 1 och högst 30 alternativ kan begäras per omfång. | `1` |
 | `xdm:includeContent` | Detta är ett valfritt fält och är `false` som standard. If `true`, ingår erbjudandeinnehållet i beslutshändelserna för datauppsättningen. | `false` |
 
-Se [Beslutsledningens dokumentation](../../get-started/starting-offer-decisioning.md) för en översikt över de viktigaste begreppen och egenskaperna.
+Se [Beslutsledningens dokumentation](../../get-started/starting-offer-decisioning.md) om du vill ha en översikt över de viktigaste begreppen och egenskaperna.
 
 **Svar**
 
@@ -178,33 +183,6 @@ curl -X GET 'https://platform.adobe.io/data/core/ode/0948b1c5-fff8-3b76-ba17-909
 | `ode:createDate` | Den tid då begäran om beslutsarbetsbelastning skapades. | `1648076994405` |
 | `ode:status` | Arbetsbelastningens status börjar med &quot;QUEUED&quot; och ändras till &quot;PROCESSING&quot;, &quot;INGESTING&quot;, &quot;COMPLETED&quot; eller &quot;ERROR&quot;. | `ode:status: "COMPLETED"` |
 | `ode:statusDetail` | Detta visar mer information, till exempel sparkJobId och batchID, om statusen är &quot;PROCESSING&quot; eller &quot;INGESTING&quot;. Felinformationen visas om statusen är FEL. |  |
-
-## Tjänstnivåer {#service-levels}
-
-Sluttiden för varje satsbeslut är den tid som förflyter från det att arbetsbelastningen skapas till den tidpunkt då beslutsresultatet blir tillgängligt i utdatauppsättningen. Segmentstorleken i POSTENS nyttolast är huvudfaktorn som påverkar batchbeslutstiden från början till slut. Om det valbara erbjudandet har ett globalt frekvenstak aktiverat tar batchbeslutet ytterligare tid att slutföra. Nedan visas några approximationer av total bearbetningstid för respektive segmentstorlek, både med och utan frekvensbegränsning för giltiga erbjudanden:
-
-Med frekvensbegränsning aktiverad för berättigade erbjudanden:
-
-| Segmentstorlek | Tid för hela processen |
-|--------------|----------------------------|
-| 10 000 profiler eller mindre | 7 minuter |
-| 1 miljon profiler eller mindre | 30 minuter |
-| 15 miljoner profiler eller mindre | 50 minuter |
-
-Utan frekvensbegränsning för berättigade erbjudanden:
-
-| Segmentstorlek | Tid för hela processen |
-|--------------|----------------------------|
-| 10 000 profiler eller mindre | 6 minuter |
-| 1 miljon profiler eller mindre | 8 minuter |
-| 15 miljoner profiler eller mindre | 16 minuter |
-
-## Begränsningar {#limitations}
-
-När du använder [!DNL Batch Decisioning] API, tänk på följande begränsningar:
-
-* **Antalet batchjobb som körs per datamängd**: Upp till fem batchjobb kan köras åt gången, per datauppsättning. Alla andra gruppförfrågningar med samma utdatamängd läggs till i kön. Ett jobb i kö plockas upp för bearbetning när det föregående jobbet har slutförts.
-* **Frekvensbegränsning**: En batch körs bort från den profilögonblicksbild som inträffar en gång om dagen. The [!DNL Batch Decisioning] API kapslar frekvensen och läser alltid in profiler från den senaste ögonblicksbilden.
 
 ## Nästa steg {#next-steps}
 

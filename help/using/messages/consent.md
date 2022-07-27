@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c5bae757-a109-45f8-bf8d-182044a73cca
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 1%
@@ -41,7 +41,7 @@ Därför måste du alltid inkludera en **avbeställ länk** i varje e-postmeddel
 
 >[!NOTE]
 >
->E-postmeddelanden av marknadsföringstyp måste innehålla en länk för avanmälan, vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [kanalyta](../configuration/message-presets.md#email-type) (t.ex. meddelandeförinställning) nivå och när [skapar meddelandet](get-started-content.md#create-new-message).
+>E-postmeddelanden av marknadsföringstyp måste innehålla en länk för avanmälan, vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [kanalyta](../configuration/channel-surfaces.md#email-type) (t.ex. meddelandeförinställning) nivå och när [skapar meddelandet](get-started-content.md#create-new-message).
 
 ### Extern avanmälan {#opt-out-external-lp}
 
@@ -177,7 +177,7 @@ När ditt meddelande har skickats via en [resa](../building-journeys/journey.md)
 >abstract="Aktivera List-Unsubscribe om du vill lägga till en länk för att avbryta prenumerationen i e-posthuvudet. Om du vill ange en avanmälnings-URL infogar du en länk för avanmälan med ett klick i e-postinnehållet."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/messages/consent.html?lang=en#one-click-opt-out" text="Avanmäl dig med ett klick"
 
-Om [Alternativet List-Unsubscribe](../configuration/message-presets.md#list-unsubscribe) är aktiverat på kanalytnivå, motsvarande e-postmeddelanden som skickas med [!DNL Journey Optimizer] kommer att innehålla en länk för att avbryta prenumerationen i e-posthuvudet.
+Om [Alternativet List-Unsubscribe](../configuration/channel-surfaces.md#list-unsubscribe) är aktiverat på kanalytnivå, motsvarande e-postmeddelanden som skickas med [!DNL Journey Optimizer] kommer att innehålla en länk för att avbryta prenumerationen i e-posthuvudet.
 
 Länken för att avbryta prenumerationen visas så här i Gmail:
 
@@ -187,7 +187,7 @@ Länken för att avbryta prenumerationen visas så här i Gmail:
 >
 >Om du vill visa länken för att avbryta prenumerationen i e-posthuvudet måste mottagarens e-postklient ha stöd för den här funktionen.
 
-Avbeställningsadressen är standard **[!UICONTROL Mailto (unsubscribe)]** som visas i motsvarande kanalyta. [Läs mer](../configuration/message-presets.md#list-unsubscribe).
+Avbeställningsadressen är standard **[!UICONTROL Mailto (unsubscribe)]** som visas i motsvarande kanalyta. [Läs mer](../configuration/channel-surfaces.md#list-unsubscribe).
 
 Om du vill ange en personlig avanmälnings-URL infogar du en länk för att välja bort en anmälan med ett klick i e-postmeddelandets innehåll och anger den URL du vill använda. [Läs mer](#one-click-opt-out)
 

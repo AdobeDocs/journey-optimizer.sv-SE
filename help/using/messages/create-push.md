@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 2ebbcd7d-dcfc-4528-974d-6230fc0dca3d
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
 source-wordcount: '1543'
 ht-degree: 9%
@@ -57,7 +57,7 @@ Du kan välja beteende när en användare klickar på texten i push-meddelandet.
 
 ![](assets/title-body-push.png)
 
-* Om du vill öppna appen väljer du **[!UICONTROL Open app]** alternativ. Programmet som är associerat med meddelandet definieras i [kanalyta](../configuration/message-presets.md) (t.ex. meddelandeförinställning).
+* Om du vill öppna appen väljer du **[!UICONTROL Open app]** alternativ. Programmet som är associerat med meddelandet definieras i [kanalyta](../configuration/channel-surfaces.md) (t.ex. meddelandeförinställning).
 * Om du vill dirigera om användaren till en viss del av innehållet i en app väljer du **[!UICONTROL Deeplink]** alternativ.  Det specifika innehållet kan vara en specifik vy, ett visst avsnitt på en sida eller en viss flik. När alternativet är markerat anger du länken i det tillhörande fältet.
 * Om du vill dirigera om användaren till en extern URL använder du **[!UICONTROL Web URL]** alternativ. När alternativet är markerat anger du URL-adressen i det associerade fältet.
 

@@ -8,7 +8,7 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 7c4afc98-0d79-4e26-90f8-558bac037169
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 >
 >Innan du skapar en ny kampanj måste du se till att du har en ytkanal (dvs. meddelandeförinställning) och ett Adobe Experience Platform-segment som är klart att använda. Läs mer i följande avsnitt:
 >
->* [Skapa kanalytor](../configuration/message-presets.md)
+>* [Skapa kanalytor](../configuration/channel-surfaces.md)
 >* [Kom igång med segment](../segment/about-segments.md)
 
 

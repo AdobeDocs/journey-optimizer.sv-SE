@@ -4,9 +4,9 @@ description: Lär dig hur du aktiverar kampanjer med [!DNL Journey Optimizer] AP
 hide: true
 hidefromtoc: true
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '696'
 ht-degree: 1%
 
 ---
@@ -15,15 +15,16 @@ ht-degree: 1%
 
 ## Om API-utlösta kampanjer {#about}
 
+>[!NOTE]
+>
+>API:t för interaktiv meddelandekörning finns för närvarande i betaversion, som kan uppdateras ofta utan föregående meddelande.
+
+
 Med [!DNL Journey Optimizer]kan ni skapa kampanjer och sedan anropa dem från ett externt system baserat på användarens utlösare med [REST API för körning av interaktivt meddelande](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution). På så sätt kan du täcka olika behov av användnings- och transaktionsmeddelanden, som lösenordsåterställningar och OTP-token.
 
 För att göra detta måste du först skapa en API-utlöst kampanj i Journey Optimizer och sedan starta körningen via ett API-anrop.
 
 Tillgängliga kanaler för API-utlösta kampanjer är e-post-, SMS- och push-meddelanden.
-
->[!NOTE]
->
->API:t för interaktiv meddelandekörning finns för närvarande i betaversion, som kan uppdateras ofta utan föregående meddelande.
 
 ## Skapa en API-utlöst kampanj {#create}
 
@@ -86,9 +87,11 @@ Om du vill köra en API-utlöst kampanj måste du först hämta dess ID och skic
 
 Du kan sedan använda detta ID i API-nyttolasten för att utlösa kampanjen. Se [API-dokumentation för interaktiv meddelandekörning](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution) för mer information.
 
+Observera att om du har konfigurerat ett specifikt start- och/eller slutdatum när du skapar kampanjen kommer den inte att köras utanför dessa datum och API-anrop misslyckas.
+
 >[!NOTE]
 >
->Om du har konfigurerat ett specifikt start- och/eller slutdatum när du skapar kampanjen kommer den inte att köras utanför dessa datum och API-anrop misslyckas.
+>I vissa fall kan du behöva skicka transaktionsmeddelanden till profiler som inte finns i systemet. Om en okänd användare till exempel försöker logga in på webbplatsen. I så fall skapas motsvarande profil automatiskt i Adobe Experience Platform i **AJO Interactive Messaging Profile - datauppsättning** datauppsättning.
 
 ## Ytterligare resurser
 

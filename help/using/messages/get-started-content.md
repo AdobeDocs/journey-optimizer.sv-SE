@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 712dc172-6c0d-4ce8-ba16-de99d65fc641
-source-git-commit: 9b681f04100e25362b9093a3de2e3603457c2744
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 2%
@@ -61,7 +61,7 @@ Om du vill lägga till meddelanden på dina resor lägger du bara till en push-,
 
 1. Markera meddelandet **[!UICONTROL Category]**: välj **Marknadsföring** för kommersiella meddelanden, eller **Transactional** för icke-kommersiella meddelanden som orderbekräftelse, meddelanden om lösenordsåterställning eller leveransinformation.
 
-   >[!NOTE]
+   >[!CAUTION]
    >
    >Om du har definierat [frekvensregler](../configuration/frequency-rules.md) för en viss kanal och kategori tillämpas de automatiskt på meddelandet när den kanalen och kategorin väljs. För närvarande bara **[!UICONTROL Marketing]** finns för frekvensregler.
 
@@ -73,7 +73,7 @@ Om du vill lägga till meddelanden på dina resor lägger du bara till en push-,
 
 1. Välj kanalen **[!UICONTROL Surface]** (t.ex. meddelandeförinställning) för att skicka meddelandet.
 
-   En yta är en konfiguration som har definierats av en [Systemadministratör](../start/path/administrator.md). Den innehåller alla tekniska parametrar för att skicka meddelandet, som rubrikparametrar, underdomän, mobilappar osv. [Läs mer](../configuration/message-presets.md).
+   En yta är en konfiguration som har definierats av en [Systemadministratör](../start/path/administrator.md). Den innehåller alla tekniska parametrar för att skicka meddelandet, som rubrikparametrar, underdomän, mobilappar osv. [Läs mer](../configuration/channel-surfaces.md).
 
    >[!CAUTION]
    >
@@ -104,7 +104,7 @@ Om du vill komma åt avancerade parametrar klickar du på **[!UICONTROL Show rea
 
 ![](assets/show-read-only.png)
 
-Avancerade parametrar visas längst ned i meddelandefönstret. Dessa parametrar definieras av [systemadministratör](../start/path/administrator.md) i [kanalyta](../configuration/message-presets.md) (t.ex. meddelandeförinställning) som är kopplad till meddelandet.
+Avancerade parametrar visas längst ned i meddelandefönstret. Dessa parametrar definieras av [systemadministratör](../start/path/administrator.md) i [kanalyta](../configuration/channel-surfaces.md) (t.ex. meddelandeförinställning) som är kopplad till meddelandet.
 
 För push-meddelanden kan du visa följande parametrar: Token, AppID, AppPlatform.
 
@@ -155,7 +155,7 @@ Gör så här:
 >
 >För e-postmeddelanden kan du även omvandla ett befintligt meddelande till en mall. [Läs mer](../design/email-templates.md).
 
-## Ta bort ett meddelande
+## Ta bort ett meddelande{#delete-message}
 
 Om du vill ta bort ett meddelande använder du papperskorgsikonen högst upp i åtgärdsrutan för kanaler.
 

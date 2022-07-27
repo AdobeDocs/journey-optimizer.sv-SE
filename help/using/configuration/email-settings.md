@@ -6,16 +6,16 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1173'
 ht-degree: 1%
 
 ---
 
 # Konfigurera e-postinställningar {#email-settings}
 
-Definiera e-postinställningarna i det dedikerade avsnittet av kanalytans konfiguration (dvs. meddelandeförinställning). Lär dig hur du skapar ytor i [det här avsnittet](message-presets.md).
+Definiera e-postinställningarna i det dedikerade avsnittet av kanalytans konfiguration (dvs. meddelandeförinställning). Lär dig hur du skapar ytor i [det här avsnittet](channel-surfaces.md).
 
 ![](assets/preset-email-settings.png)
 
@@ -24,9 +24,9 @@ Definiera e-postinställningarna i det dedikerade avsnittet av kanalytans konfig
 >[!CONTEXTUALHELP]
 >id="ajo_admin_presets_emailtype"
 >title="Definiera e-postkategorin"
->abstract="Välj den typ av e-postmeddelanden som ska skickas när den här kanalytan används: Marknadsföring för e-postreklam, som kräver användargodkännande, eller Transactional för icke-kommersiella e-postmeddelanden, som också kan skickas till profiler som inte längre prenumererar i specifika sammanhang."
+>abstract="Välj den typ av meddelanden som ska skickas när den här ytan används: Marknadsföring för kampanjmeddelanden, som kräver användargodkännande, eller Transactional för icke-kommersiella meddelanden, som också kan skickas till profiler som inte längre prenumererar i specifika sammanhang."
 
-I **E-POSTTYP** väljer du den typ av meddelande som ska skickas med kanalens yta: **Marknadsföring** eller **Transactional**.
+I **E-POSTTYP** väljer du den typ av meddelande som ska skickas med ytan: **Marknadsföring** eller **Transactional**.
 
 * Välj **Marknadsföring** för e-postreklam: dessa meddelanden kräver användarens samtycke.
 
@@ -181,20 +181,22 @@ Tre URL-spårningsparametrar fylls i automatiskt som exempel när du skapar en k
 
 Om du vill konfigurera en URL-spårningsparameter kan du ange önskade värden direkt i dialogrutan **[!UICONTROL Name]** och **[!UICONTROL Value]** fält.
 
-Du kan också välja från en lista med fördefinierade värden genom att navigera till följande objekt:
-* Reseattribut: **Käll-ID**, **Källnamn**, **Källversions-ID**
-* Åtgärdsattribut: **Åtgärds-ID**, **Åtgärdsnamn**
-* Offer decisioning-attribut: **Erbjudande-ID**, **Namn på erbjudande**
+<!--You can also choose from a list of predefined values by navigating to the following objects:
+* Journey attributes: **Source id**, **Source name**, **Source version id**
+* Action attributes: **Action id**, **Action name**
+* Offer decisioning attributes: **Offer id**, **Offer name**
 
 ![](assets/preset-url-tracking-source.png)
 
 >[!CAUTION]
 >
->Välj ingen mapp: Kontrollera att du bläddrar till den mapp som behövs och välj ett profilattribut som ska användas som spårningsparametervärde.
+>Do not select a folder: make sure to browse to the necessary folder and select a profile attribute to use as a tracking parameter value.-->
 
-<!--or edit it using the Expression editor. Learn more on [personalization](../../personalization/personalize.md#use-expression-editor). Select the contextual attribute of your choice.
+Du kan också redigera varje **[!UICONTROL Value]** fält med [Uttrycksredigeraren](../personalization/personalization-build-expressions.md). Klicka på utgåveikonen för att öppna uttrycksredigeraren. Därifrån kan du välja vilka kontextattribut du vill använda och/eller redigera texten direkt.
 
-You can drag and drop the parameters to reorder them.-->
+![](assets/preset-url-tracking-editor.png)
+
+<!--You can drag and drop the parameters to reorder them.-->
 
 Nedan finns exempel på Adobe Analytics- och Google Analytics-kompatibla URL:er.
 
@@ -204,7 +206,7 @@ Nedan finns exempel på Adobe Analytics- och Google Analytics-kompatibla URL:er.
 
 >[!NOTE]
 >
->Du kan kombinera textvärden och välja fördefinierade värden. Varje **[!UICONTROL Value]** fält kan innehålla upp till 255 tecken totalt.
+>Du kan kombinera textvärden och använda sammanhangsberoende attribut från uttrycksredigeraren. Varje **[!UICONTROL Value]** fält kan innehålla upp till 255 tecken totalt.
 
 Du kan dynamiskt förhandsgranska den resulterande spårnings-URL:en. Varje gång du lägger till, redigerar eller tar bort en parameter uppdateras förhandsvisningen automatiskt.
 

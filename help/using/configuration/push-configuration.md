@@ -4,7 +4,7 @@ description: Lär dig hur du konfigurerar miljön för att skicka push-meddeland
 role: Admin
 level: Intermediate
 exl-id: 7099d44e-5d5d-4eef-9477-f68f4eaa1983
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
 source-wordcount: '1427'
 ht-degree: 3%
@@ -351,7 +351,7 @@ Din händelse kommer att utlösas och du kommer att få ditt push-meddelande til
 
 När mobilappen har konfigurerats i [!DNL Adobe Experience Platform Data Collection]måste du skapa en yta för att kunna skicka push-meddelanden från **[!DNL Journey Optimizer]**.
 
-Lär dig hur du skapar och konfigurerar en kanalyta i [det här avsnittet](../configuration/message-presets.md).
+Lär dig hur du skapar och konfigurerar en kanalyta i [det här avsnittet](../configuration/channel-surfaces.md).
 
 Nu kan du skicka push-meddelanden med Journey Optimizer.
 

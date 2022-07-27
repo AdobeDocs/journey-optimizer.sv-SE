@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 186a5044-80d5-4633-a7a7-133e155c5e9f
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
 source-wordcount: '1094'
 ht-degree: 1%
@@ -24,7 +24,7 @@ Du kan skicka en identisk kopia (eller en blind kopia) av ett e-postmeddelande s
 
 ## Aktivera BCC-e-post {#enable-bcc}
 
-Aktivera **[!UICONTROL BCC email]** anger du den e-postadress du vill använda i det dedikerade fältet i [kanalyta](message-presets.md) (t.ex. meddelandeförinställning). Du kan ange en extern adress i rätt format, förutom en e-postadress som har definierats för en underdomän som har delegerats till Adobe. Om du till exempel har delegerat *marketing.luma.com* subdomain to Adobe, any address like *abc@marketing.luma.com* är förbjudet.
+Aktivera **[!UICONTROL BCC email]** anger du den e-postadress du vill använda i det dedikerade fältet i [kanalyta](channel-surfaces.md) (t.ex. meddelandeförinställning). Du kan ange en extern adress i rätt format, förutom en e-postadress som har definierats för en underdomän som har delegerats till Adobe. Om du till exempel har delegerat *marketing.luma.com* subdomain to Adobe, any address like *abc@marketing.luma.com* är förbjudet.
 
 >[!NOTE]
 >

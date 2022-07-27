@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 05564a99-da50-4837-8dfb-bb1d3e0f1097
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 1%
@@ -53,7 +53,7 @@ The **återförsökstid** är den tidsram inom vilken ett e-postmeddelande om le
 
 Som standard utförs återförsök för **3,5 dagar** (eller **84 timmar**) när meddelandet lades till i e-postkön.
 
-För att vara säker på att försök inte utförs igen när de inte längre behövs kan du ändra den här inställningen efter behov när du skapar eller redigerar en [kanalyta](message-presets.md) (t.ex. meddelandeförinställning) som gäller för e-postkanalen.
+För att vara säker på att försök inte utförs igen när de inte längre behövs kan du ändra den här inställningen efter behov när du skapar eller redigerar en [kanalyta](channel-surfaces.md) (t.ex. meddelandeförinställning) som gäller för e-postkanalen.
 
 Du kan t.ex. ange återförsöksperioden till 24 timmar för ett transaktionsmejl som relaterar till lösenordsåterställning och som innehåller en länk som bara är giltig för en dag. På samma sätt kan du vid midnatt-försäljning definiera en återförsöksperiod på 6 timmar.
 
@@ -61,5 +61,5 @@ Du kan t.ex. ange återförsöksperioden till 24 timmar för ett transaktionsmej
 >
 >Återförsöksperioden får inte vara längre än 84 timmar. Den minsta återförsöksperioden är 6 timmar för marknadsföringsmeddelanden och 10 minuter för transaktionsmeddelanden.
 
-Lär dig hur du justerar parametrarna för återförsök i e-postmeddelanden när du skapar en kanalyta i [det här avsnittet](message-presets.md#create-message-preset).
+Lär dig hur du justerar parametrarna för återförsök i e-postmeddelanden när du skapar en kanalyta i [det här avsnittet](channel-surfaces.md#create-channel-surface).
 

@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ När du har bekräftat redigeringen av PTR-posten kan du **[!UICONTROL Processin
 
 >[!NOTE]
 >
->The [uppdateringsbearbetning](#processing) kan ta upp till några timmar.
+>The [uppdateringsbearbetning](#processing) kan ta upp till 3 timmar.
 
 Om du vill kontrollera uppdateringsinformationen för PTR-posten klickar du på ikonen bredvid den. Läs mer om de statusar som är associerade med de olika ikonerna i [det här avsnittet](#ptr-record-update-statuses).
 
@@ -119,7 +119,7 @@ En PTR-postuppdatering kan ha följande status:
 
 ### Bearbetar {#processing}
 
-Flera leveranskontroller kommer att utföras för att verifiera att den nya underdomänen som ska associeras med IP-adressen är giltig. Detta kan ta upp till några timmar.
+Flera leveranskontroller kommer att utföras för att verifiera att den nya underdomänen som ska associeras med IP-adressen är giltig. Detta kan ta upp till 3 timmar.
 
 >[!NOTE]
 >

@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-source-git-commit: 0ca491315e214e3c12bec11a93da1a2b98b493b6
+source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 1%
@@ -141,7 +141,7 @@ Om du vill göra det väljer du **[!UICONTROL Add email or domain]** och däreft
 
    >[!NOTE]
    >
-   >Kontrollera att du anger en giltig e-postadress (till exempel abc@company) eller domän (till exempel abc.company.com).
+   >Kontrollera att du anger en giltig e-postadress (till exempel abc@company.com) eller domän (till exempel abc.company.com).
 
 1. Ange en orsak om det behövs.
 
