@@ -7,10 +7,10 @@ feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: 81d07ec8-e808-4bc6-97b1-b9f7db2aec22
-source-git-commit: 12b01cb9de84399e5ede987866609acc10b64c5f
+source-git-commit: 3188bc97b8103d2a01101a23d8c242a3e2924f76
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 2%
+source-wordcount: '293'
+ht-degree: 3%
 
 ---
 
@@ -34,10 +34,10 @@ Så här skapar du en AI-modell:
 
 1. Klicka på knappen **[!UICONTROL Create AI model]**.
 
-1. Ange ett unikt namn och en beskrivning för AI-modellen.
+1. Ange ett unikt namn och en beskrivning för AI-modellen och välj sedan den typ av AI-modell som du vill skapa:
 
-   <!--* **[!UICONTROL Auto-optimization]** optimizes offers based on past offer performance. [Learn more](auto-optimization-model.md)
-    * **[!UICONTROL Personalized]** optimizes and personalizes offers based on segments and offer performance. [Learn more](personalized-optimization-model.md)-->
+   * **[!UICONTROL Auto-optimization]** optimerar erbjudanden baserat på tidigare erbjudanden. [Läs mer](auto-optimization-model.md)
+   * **[!UICONTROL Personalized]** optimerar och personaliserar erbjudanden baserat på segment och erbjudanden. [Läs mer](personalized-optimization-model.md)
 
    ![](../assets/ai-ranking-fields.png)
 
@@ -60,13 +60,13 @@ Så här skapar du en AI-modell:
    >
    >Endast datauppsättningar som skapats från scheman som är kopplade till **[!UICONTROL Experience Event - Proposition Interactions]** fältgruppen (som tidigare kallades mixin) visas i listrutan.
 
-<!--1. If you are creating a **[!UICONTROL Personalization]** AI model, select the segment(s) to use to train the AI model.
+1. Om du skapar en **[!UICONTROL Personalization]** AI-modellen väljer du de segment som ska användas för att utbilda AI-modellen.
 
-    ![](../assets/ai-ranking-segments.png)
+   ![](../assets/ai-ranking-segments.png)
 
-    >[!NOTE]
-    >
-    >You can select up to 5 segments.-->
+   >[!NOTE]
+   >
+   >Du kan markera upp till 5 segment.
 
 1. Spara och aktivera AI-modellen.
 

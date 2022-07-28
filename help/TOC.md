@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
+source-git-commit: 3188bc97b8103d2a01101a23d8c242a3e2924f76
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1114'
 ht-degree: 39%
 
 ---
@@ -276,7 +276,9 @@ ht-degree: 39%
       + [Rankningsformler](using/offers/ranking/create-ranking-formulas.md)
       + AI-modeller {#ai-models}
          + [Om AI-modeller](using/offers/ranking/ai-models.md)
-         + [Automatisk optimeringsmodell](using/offers/ranking/auto-optimization-model.md)
+         + AI-modelltyper {#ai-model-types}
+            + [Automatisk optimeringsmodell](using/offers/ranking/auto-optimization-model.md)
+            + [Anpassad optimeringsmodell](using/offers/ranking/personalized-optimization-model.md)
          + Skapa AI-modeller {#configure-ai-model}
             + [Skapa en datauppsättning för att samla in händelser](using/offers/ranking/create-dataset.md)
             + [Skapa en AI-modell](using/offers/ranking/create-ranking-strategies.md)

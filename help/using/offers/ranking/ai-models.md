@@ -7,9 +7,9 @@ feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: 4f7f7d1d-a12a-4ff6-b0ff-1a1c3d305a9d
-source-git-commit: 12b01cb9de84399e5ede987866609acc10b64c5f
+source-git-commit: 3188bc97b8103d2a01101a23d8c242a3e2924f76
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '310'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,15 @@ Du kan till exempel välja en AI-modell för e-postkanalen och en annan för pus
 
 ## AI-modelltyper {#ai-model-types}
 
-För tillfället [!DNL Journey Optimizer]** har en AI-modell, **Automatisk optimering**, som optimerar erbjudanden baserat på tidigare erbjudanden. Detaljerad information om den här typen av AI-modell finns i [det här avsnittet](auto-optimization-model.md).
+Det finns två typer av AI-modeller i [!DNL Journey Optimizer]:
+
+* **Automatiskt optimerade modeller** sträva efter att leverera erbjudanden som maximerar den avkastning (KPI) som affärsklienterna sätter. Dessa nyckeltal kan vara i form av konverteringsgrader, intäkter osv. I nuläget fokuserar automatisk optimering på att optimera erbjudandeklick med erbjudandekonvertering som mål. Automatisk optimering är icke-personaliserat och optimerar baserat på erbjudandets&quot;globala&quot; prestanda. [Läs mer](auto-optimization-model.md)
+
+* **Personaliseringsmodeller** kan ni definiera affärsmål och använda kunddata för att utbilda affärsinriktade modeller för att leverera personaliserade erbjudanden och maximera nyckeltal. [Läs mer](personalized-optimization-model.md)
+
+>[!CAUTION]
+>
+>Personaliserade optimeringsmodeller är för närvarande tillgängliga i ett tidigt skede och endast för vissa användare.
 
 ## Skapa en AI-modell {#create-ai-model}
 
