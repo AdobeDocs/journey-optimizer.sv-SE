@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 3188bc97b8103d2a01101a23d8c242a3e2924f76
+source-git-commit: 85686ace0b7a8255c795f821caac481bbee1e6d6
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '625'
 ht-degree: 10%
 
 ---
@@ -93,11 +93,9 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 
 ### Förbättringar
 
-<!--
-**Journeys**
+**Resor**
 
-* **Ending a journey** - In the journey canvas, the **End** activity has been removed from the palette. End tags are now added by default at the end of each path and cannot be removed. This improvement allows better reporting of where a customer dropped out of the journey, without any action from the user.
--->
+* **Avsluta en resa** - På arbetsytan **End** aktiviteten har tagits bort från paletten. Sluttaggar läggs nu till som standard i slutet av varje bana och kan inte tas bort. Förbättringen gör det möjligt att bättre rapportera var en kund har lämnat resan, utan att användaren behöver göra något. [Läs mer](../building-journeys/journey-end.md)
 
 **Meddelanden**
 

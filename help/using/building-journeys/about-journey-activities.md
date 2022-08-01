@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: 85686ace0b7a8255c795f821caac481bbee1e6d6
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '263'
 ht-degree: 24%
 
 ---
@@ -36,7 +36,6 @@ Starta din resa genom att dra och släppa en händelseaktivitet. Du kan också d
 På paletten till vänster på skärmen finns följande orkestreringsfunktioner:
 
 * [Villkor](../building-journeys/condition-activity.md)
-* [End](../building-journeys/end-activity.md)
 * [Vänta](../building-journeys/wait-activity.md)
 * [Läs segment](../building-journeys/read-segment.md)
 
