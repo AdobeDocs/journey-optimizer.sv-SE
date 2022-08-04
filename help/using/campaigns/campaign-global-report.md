@@ -1,6 +1,6 @@
 ---
 title: Global kampanjrapport
-description: Lär dig använda data från kampanjens globala rapport
+description: Lär dig hur du använder data från rapporten Campaign Global
 feature: Reporting
 topic: Content Management
 role: User
@@ -8,16 +8,16 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: fa64f5b8-75f2-40e6-8566-5766fafe6cd6
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: 0036c905b9344a6f99e8525acbe9caab5932f361
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1542'
 ht-degree: 0%
 
 ---
 
 # Global kampanjrapport {#campaign-global-report}
 
-Kampanjens globala rapport kan nås direkt från er Campaign via **[!UICONTROL Global view]** -knappen.
+Kampanjglobala rapporter kan nås direkt från din kampanj med **[!UICONTROL Global view]** -knappen.
 
 Kampanjen **[!UICONTROL Global report]** visas med följande flikar:
 
@@ -41,11 +41,53 @@ The **[!UICONTROL Campaign's Statistics]** widgetinformation om huvudinformation
 
 * **[!UICONTROL Actions failed in %]**: Totalt antal unika gånger en åtgärd misslyckades under resan jämfört med det totala antalet unika gånger en åtgärd har levererats.
 
-<!--
-### Experimentation tab (#experimentation-global)
+### Mål (#aim-global)
 
-From your Campaign **[!UICONTROL Global report]**, the **[!UICONTROL Experimentation]** tab details the main information relative to how each variant is performing and if there is was winner during the test.
--->
+>[!AVAILABILITY]
+>
+>Funktionen för innehållsexperiment är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
+
+![](assets/performance_report.gif)
+
+The **[!UICONTROL Objectives]** kan ni finjustera era leveransrapporter bättre genom att rikta in er på ett specifikt mätvärde.
+
+The **[!UICONTROL Objectives]** listade är länkade till **[!UICONTROL Datasets]** som definierar en anslutning till ett system för att hämta ytterligare information. En lista med inbyggda **[!UICONTROL Objectives]** är tillgängligt, men du kan lägga till egna genom att lägga till nya **[!UICONTROL Dataset]**. Detaljerade anvisningar finns i den här dokumentationen.
+
+När du har valt de mål som du vill ha som mål för **[!UICONTROL Performance overview]** och **[!UICONTROL Campaign objective]** -widgetar ger en detaljerad sammanfattning av leveransresultatet.
+
+Med **[!UICONTROL Campaign objective]** kan du också välja att jämföra huvudmålet med ett annat mätvärde.
+
+Observera att varje widget kan storleksändras och tas bort om det behövs. Mer information finns i [section](../reports/global-report.md#modify-dashboard).
+
+### Experimentation (#experiment-global)
+
+>[!AVAILABILITY]
+>
+>Funktionen för innehållsexperiment är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
+
+![](assets/experimentation_report_3.png)
+
+Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Experimentation]** innehåller huvudinformationen om hur varje variant fungerar och om det finns en bästa utförare.
+
+Observera att det kan ta en stund att definiera den bästa utföraren, men den representeras av den här ikonen ![](assets/experimentation_report_1.png).
+
+The **[!UICONTROL Experiment result]** widgeten anger prestanda för varje variant. Du kan ändra din baslinje genom att välja en av behandlingarna i **[!UICONTROL Baseline]** listrutan. Den bästa behandlingen visas med en stjärnikon.
+
+Tabellen visar följande mått:
+
+* **[!UICONTROL Profiles]**: Antal profiler som är avsedda för denna behandling.
+
+* **[!UICONTROL Unique outbound clicks]**: Totalt antal klick i utgående kanaler.
+
+* **[!UICONTROL Count per profile]**: Det totala värdet för det experimentella målmåttet delat med antalet profiler.
+
+* **[!UICONTROL Confidence interval]**: Procentskillnad i prestanda mellan baslinjen och den bästa behandlingen. [Läs mer](../campaigns/experiment-calculations.md#confidence-intervals).
+
+* **[!UICONTROL Average lift]**: Procentuell förbättring av konverteringsgraden för en given behandling jämfört med baslinjen. [Läs mer](../campaigns/experiment-calculations.md#understand-lift)
+
+* **[!UICONTROL Confidence]**: Bevis på att en viss behandling är densamma som den initiala behandlingen. [Läs mer](../campaigns/experiment-calculations.md#understand-confidence)
+
+En djupdykning i dessa resultat och hur du tolkar dem finns i [den här sidan](../campaigns/get-started-experiment.md#interpret-results).
 
 ## Fliken E-post {#email-global}
 
@@ -73,7 +115,7 @@ The **[!UICONTROL Email Sending Statistics]** diagram visar hur framgångsrik le
 
 * **[!UICONTROL Excluded]**: Antal profiler som har uteslutits av Adobe Journey Optimizer.
 
-The **[!UICONTROL Email - Tracking statistics]** innehåller tillgängliga data för mottagaraktivitet för leveransen:
+The **[!UICONTROL Email - Tracking statistics]** widgeten innehåller tillgängliga data för mottagaraktivitet för leveransen:
 
 * **[!UICONTROL Opens]**: Antal gånger som leveransen öppnades i en leverans.
 

@@ -5,14 +5,20 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
+hide: true
+hidefromtoc: true
+source-git-commit: 0036c905b9344a6f99e8525acbe9caab5932f361
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
 
 # Skapa ett innehållsexperiment {#content-experiment}
+
+>[!AVAILABILITY]
+>
+>Funktionen för innehållsexperiment är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
 
 Med funktionen för innehållsexperiment kan du definiera flera olika leveranssätt. Intressemålgruppen fördelas slumpmässigt till varje behandling för att avgöra vilken som fungerar bäst med avseende på intressemätningen. Du kan välja att ändra e-postmeddelandets innehåll, ämne eller avsändare.
 
@@ -121,4 +127,12 @@ När du har anpassat dina behandlingar kan du börja konfigurera ditt innehålls
 1. Kontrollera att kampanjen är korrekt konfigurerad och klicka sedan på **[!UICONTROL Activate]** för att starta den.
 
    ![](assets/content_experiment_14.png)
+
+## Experimentationsrapport {#experimentation-report}
+
+![](assets/experimentation_report_3.png)
+
+Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Experimentation]** innehåller huvudinformationen om hur varje variant fungerar och om det fanns en bästa utförare under testet.
+
+Mer information om den här rapporten finns i [Global kampanjrapport](../campaigns/content-experiment.md#experimentation-report) sida.
 
