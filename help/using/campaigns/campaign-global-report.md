@@ -8,9 +8,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: fa64f5b8-75f2-40e6-8566-5766fafe6cd6
-source-git-commit: 0036c905b9344a6f99e8525acbe9caab5932f361
+source-git-commit: b56df2c22f041114805e10fee7156855c2cbbfa9
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ The **[!UICONTROL Campaign's Statistics]** widgetinformation om huvudinformation
 
 * **[!UICONTROL Actions failed in %]**: Totalt antal unika gånger en åtgärd misslyckades under resan jämfört med det totala antalet unika gånger en åtgärd har levererats.
 
-### Mål (#aim-global)
+### Mål {#objectives-global}
 
 >[!AVAILABILITY]
 >
@@ -59,7 +59,7 @@ Med **[!UICONTROL Campaign objective]** kan du också välja att jämföra huvud
 
 Observera att varje widget kan storleksändras och tas bort om det behövs. Mer information finns i [section](../reports/global-report.md#modify-dashboard).
 
-### Experimentation (#experiment-global)
+### Experimentation {#experimentation-global}
 
 >[!AVAILABILITY]
 >
