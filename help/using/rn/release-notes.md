@@ -2,10 +2,10 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 16bda5dcdfdc65f236d814ec02c6222b98a5652f
+source-git-commit: 8766f64c4ea7985c6c9d6e4ba022ef6b1fc0dbed
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 9%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -109,7 +109,7 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 
 * **Tillåtelselista logikuppdatering** - Nu gäller logiken i tillåtelselista så snart funktionen är aktiverad, även om listan är tom. [Läs mer](../configuration/allow-list.md#logic)
 
-* **URL-spårningsparametrar** - Du kan nu använda uttrycksredigeraren för att konfigurera parametrar för URL-spårning i dina e-postytor (t.ex. meddelandeförinställningar). [Läs mer](../configuration/email-settings.md#url-tracking)
+* **URL-spårningsparametrar** - Du kan nu använda uttrycksredigeraren för att konfigurera parametrar för URL-spårning i dina e-postytor (t.ex. förinställningar). [Läs mer](../configuration/email-settings.md#url-tracking)
 
 **offer decisioning**
 

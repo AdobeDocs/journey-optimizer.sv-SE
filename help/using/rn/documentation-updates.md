@@ -2,9 +2,9 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
+source-git-commit: 8766f64c4ea7985c6c9d6e4ba022ef6b1fc0dbed
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1772'
 ht-degree: 20%
 
 ---
@@ -13,11 +13,17 @@ ht-degree: 20%
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
 
+## Augusti 2022 {#august-2022}
+
+* Avsnittet Frekvensregler har uppdaterats för att återspegla det nya textbundna meddelandeflödet. [Läs mer](../configuration/frequency-rules.md#apply-frequency-rule)
+* En video som visar hur du konfigurerar prenumerationer och skapar landningssidor finns nu i avsnittet Kom igång med landningssidor. [Läs mer](../landing-pages/get-started-lp.md#video)
+
 ## Juli 2022 {#july-2022}
 
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version 22 från juli finns utförlig i dokumentationen. [Läs mer](release-notes.md)
 * The **Konfigurera kanalytor** -avsnittet har klargjorts och uppdaterats med länkar till sidan som beskriver hur SMS-kanalen konfigureras. [Läs mer](../configuration/channel-surfaces.md#create-channel-surface)
 * I reseegenskaperna **Tidszon för profil** är nu inaktiverat som standard. [Läs mer](../building-journeys/timezone-management.md#timezone-from-profiles)
+
 * I **Vänta** aktivitet, **Fast datum** är inte längre tillgängligt. [Läs mer](../building-journeys/wait-activity.md)
 * Ytterligare information om **Inkrementell läsning** i **Lässegment** aktivitet. [Läs mer](../building-journeys/read-segment.md#configuring-segment-trigger-activity)
 * Rekommendationer om **Profilände** villkorstyp. [Läs mer](../building-journeys/condition-activity.md#profile_cap)

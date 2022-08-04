@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 401ce05b-412b-4fa0-a516-bf75727f6387
-source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
+source-git-commit: 8766f64c4ea7985c6c9d6e4ba022ef6b1fc0dbed
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '287'
 ht-degree: 5%
 
 ---
@@ -49,7 +49,7 @@ Så här skapar du en beslutsregel:
 
 1. Klicka på **[!UICONTROL Save]** för att bekräfta.
 
-1. När regeln har skapats visas den i regellistan. Du kan markera den för att visa dess egenskaper och redigera eller ta bort den.
+1. När regeln har skapats visas den i **[!UICONTROL Rules]** lista. Du kan markera den för att visa dess egenskaper och redigera eller ta bort den.
 
    ![](../assets/rule_created.png)
 

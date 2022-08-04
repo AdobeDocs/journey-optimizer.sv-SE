@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 0da96e32-52ad-4cc3-bac4-844b1f39ed16
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+source-git-commit: 8766f64c4ea7985c6c9d6e4ba022ef6b1fc0dbed
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 4%
+source-wordcount: '198'
+ht-degree: 3%
 
 ---
 
@@ -18,6 +18,8 @@ ht-degree: 4%
 En landningssida är en fristående webbsida som en användare dirigeras till efter att ha klickat igenom från ett e-postmeddelande, en webbplats, en annons eller någon annan digital plats.
 
 [!DNL Journey Optimizer] gör att du kan skapa och utforma landningssidor som dirigerar användarna till onlineformulär där de kan välja att inte ta emot meddelanden eller prenumerera på en viss tjänst, t.ex. ett nyhetsbrev.
+
+➡️ [Läs mer om hur du konfigurerar prenumerationer och skapar landningssidor i den här videon](#video)
 
 * Utnyttja [!DNL Journey Optimizer] funktioner för att enkelt bygga **responsiva landningssidor**.
 * Konfigurera **avanmälnings- och avanmälningsflöden** snabbt och smidigt.
@@ -34,8 +36,8 @@ En landningssida är en fristående webbsida som en användare dirigeras till ef
 </tr>
 </table>
 
-<!--
+## Instruktionsvideo{#video}
 
-<td><img src="../assets/do-not-localize/icon_messages.svg" width="60px"><p><a href="lp-use-cases.md">Use cases</a></p></td>
+I videon nedan visas hur du skapar en prenumerationslista, ställer in landningssidor för att erbjuda prenumerationer på eller ta bort prenumerationer från en tjänst, integrerar prenumerationsalternativet (un) i ett meddelande och konfigurerar relevanta resor.
 
--->
+>[!VIDEO](https://video.tv.adobe.com/v/341280?quality=12&learn=on)

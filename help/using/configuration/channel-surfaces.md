@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
+source-git-commit: 8766f64c4ea7985c6c9d6e4ba022ef6b1fc0dbed
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Med [!DNL Journey Optimizer]kan du skapa kanalytor (t.ex. meddelandeförinställ
 
 >[!CAUTION]
 >
-> * Om du vill skapa, redigera och ta bort kanalytor måste du ha [Hantera kanalyta](../administration/high-low-permissions.md#manage-channel-surface).
+> * Om du vill skapa, redigera och ta bort kanalytor måste du ha [Hantera kanalyta](../administration/high-low-permissions.md#manage-channel-surface) behörighet.
 >
 > * Du måste utföra [E-postkonfiguration](#configure-email-settings), [Push-konfiguration](../configuration/push-configuration.md) och [SMS-konfiguration](../configuration/sms-configuration.md) innan du skapar kanalytor.
 

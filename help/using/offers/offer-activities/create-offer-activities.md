@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7a217c97-57e1-4f04-a92c-37632f8dfe91
-source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
+source-git-commit: 8766f64c4ea7985c6c9d6e4ba022ef6b1fc0dbed
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -88,9 +88,9 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 
       Lär dig hur du skapar en beslutsregel i [det här avsnittet](../offer-library/creating-decision-rules.md).
 
-      >[!NOTE]
-      >
-      >När du väljer segment eller beslutsregler visas information om de uppskattade kvalificerade profilerna. Klicka **[!UICONTROL Refresh]** för att uppdatera data.
+1. När du väljer segment eller beslutsregler kan du se information om de uppskattade kvalificerade profilerna. Klicka **[!UICONTROL Refresh]** för att uppdatera data.
+
+   ![](../assets/activity_constraint-estimate.png)
 
 1. Definiera den rangordningsmetod som du vill använda för att välja det bästa erbjudandet för varje profil.
 
@@ -142,7 +142,7 @@ Om allt är korrekt konfigurerat visas en sammanfattning av beslutsegenskaperna.
 
    ![](../assets/review-decision.png)
 
-   Du kan expandera eller komprimera varje placering. Du kan också förhandsgranska tillgängliga erbjudanden, berättigandeinformation och rangordningsinformation för varje placering.
+1. Du kan expandera eller komprimera varje placering. Du kan förhandsgranska tillgängliga erbjudanden, berättigandeinformation och rankningsinformation för varje placering. Du kan även visa information om de uppskattade kvalificerade profilerna. Klicka **[!UICONTROL Refresh]** för att uppdatera data.
 
    ![](../assets/review-decision-details.png)
 

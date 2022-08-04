@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4a53ea96-632a-41c7-ab15-b85b99db4f3e
-source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
+source-git-commit: 8766f64c4ea7985c6c9d6e4ba022ef6b1fc0dbed
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 4%
+source-wordcount: '648'
+ht-degree: 3%
 
 ---
 
@@ -63,6 +63,10 @@ Skapa en **erbjudande** gör du så här:
 
 1. Lägg till begränsningar för att ange villkoren för erbjudandet som ska visas. [Läs mer](add-constraints.md)
 
+   >[!NOTE]
+   >
+   >När du väljer segment eller beslutsregler kan du se information om de uppskattade kvalificerade profilerna. Klicka **[!UICONTROL Refresh]** för att uppdatera data.
+
    ![](../assets/offer-constraints-example.png)
 
 1. Granska och spara erbjudandet. [Läs mer](#review)
@@ -72,6 +76,10 @@ Skapa en **erbjudande** gör du så här:
 När regler och begränsningar för behörighet har definierats visas en sammanfattning av egenskaperna för erbjudandet.
 
 1. Kontrollera att allt är rätt konfigurerat.
+
+1. Du kan visa information om de uppskattade kvalificerade profilerna. Klicka **[!UICONTROL Refresh]** för att uppdatera data.
+
+   ![](../assets/offer-summary-estimate.png)
 
 1. När erbjudandet är klart att visas för användarna klickar du på **[!UICONTROL Finish]**.
 
