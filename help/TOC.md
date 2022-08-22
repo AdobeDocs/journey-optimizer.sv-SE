@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 0036c905b9344a6f99e8525acbe9caab5932f361
+source-git-commit: 7c801e7a63d3e5c899549fa0c0dd5d48f9fbc245
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1129'
 ht-degree: 38%
 
 ---
@@ -46,6 +46,7 @@ ht-degree: 38%
    + Rapporter {#reports}
       + [Kampanjrapport](using/campaigns/campaign-live-report.md)
       + [Global kampanjrapport](using/campaigns/campaign-global-report.md)
+      + [Rapporteringskonfiguration](using/campaigns/reporting-configuration.md)
 + Meddelanden {#messages}
    + [Kom igång med meddelanden](using/messages/get-started-content.md)
    + [Skapa ett e-postmeddelande](using/messages/create-email.md)
