@@ -4,9 +4,9 @@ description: Lär dig hur du konfigurerar miljön för att skicka SMS-meddelande
 role: Admin
 level: Intermediate
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
-source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
+source-git-commit: f44638ac7cfb078b6914635433feedb0f48ef099
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '481'
 ht-degree: 1%
 
 ---
@@ -22,6 +22,11 @@ Konfigurera instansen innan du skickar SMS. Du måste [integrera providerinstäl
 >SMS-kanalen är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
 
 ## Skapa nya API-autentiseringsuppgifter {#create-api}
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_api"
+>title="Konfigurera SMS-leverantören"
+>abstract="Välj leverantör och fyll i dina SMS API-autentiseringsuppgifter."
 
 Så här konfigurerar du din SMS-leverantör med Journey Optimizer:
 
@@ -45,6 +50,12 @@ Så här konfigurerar du din SMS-leverantör med Journey Optimizer:
 När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu skapa en kanalyta (t.ex. meddelandeförinställning) för SMS-meddelanden.
 
 ## Skapa en kanalyta för SMS-meddelanden {#message-preset-sms}
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_surface_sms_type"
+>title="Definiera SMS-kategorin"
+>abstract="Välj den typ av SMS-meddelanden som ska skickas när den här ytan används: Marknadsföring för SMS-kampanjmeddelanden, som kräver användarens samtycke, eller Transactional för icke-kommersiella SMS-meddelanden, som också kan skickas till avabonnerade profiler i specifika sammanhang."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/messages/create-sms.html#sms-opt-in-out" text="Avanmäl dig i SMS-marknadsföringsmeddelanden"
 
 När SMS-kanalen har konfigurerats måste du skapa en kanalyta för att kunna skicka SMS-meddelanden från **[!DNL Journey Optimizer]**.
 
