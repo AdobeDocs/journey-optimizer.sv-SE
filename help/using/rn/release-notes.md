@@ -2,10 +2,10 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 30d197f3eab05e2e38025189a6948a6c0fbd6d54
+source-git-commit: 711fdf1dce0688d2e21d405a4e3e8777612b2f3b
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 10%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,21 +21,22 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 
 ### Nya funktioner
 
-<!--table>
+<table>
 <thead>
 <tr>
-<th><strong>Create and manage campaigns in Journey Optimizer</strong><br/></th>
+<th><strong>Skapa och hantera kampanjer i Journey Optimizer</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Use Journey Optimizer campaigns to deliver one-time content to a specific segment using various channels. When using journeys, actions are designed to be executed in sequence. With campaigns actions are performed simultaneously, either immediately, or based on a specified schedule. </p>
-<p>For more information, refer to the <a href="../campaigns/get-started-with-campaigns.md">detailed documentation</a>.
+<p>Använd Journey Optimizer kampanjer för att leverera engångsinnehåll till ett visst segment via olika kanaler. När du använder resor är åtgärderna utformade för att utföras i sekvens. Med kampanjer utförs åtgärder samtidigt, antingen omedelbart eller baserat på ett angivet schema. </p>
+<img src="assets/do-not-localize/campaigns.gif"/>
+<p>Lär dig hur du skapar en kampanj i det här <a href="../campaigns/get-started-with-campaigns.md">detaljerad dokumentation</a>.
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
 
 <table>
 <thead>

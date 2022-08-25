@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 2ebbcd7d-dcfc-4528-974d-6230fc0dca3d
-source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
+source-git-commit: 711fdf1dce0688d2e21d405a4e3e8777612b2f3b
 workflow-type: tm+mt
-source-wordcount: '1543'
-ht-degree: 9%
+source-wordcount: '1595'
+ht-degree: 8%
 
 ---
 
@@ -25,10 +25,15 @@ Push-meddelanden hjälper dig att nå mobilappsanvändare när som helst, särsk
 
 [!DNL Journey Optimizer] har stöd för push-meddelanden och hjälper dig att skicka mycket relevanta meddelanden med branschledande dataöverföringshastigheter. Push-meddelanden kan omfatta personalisering och resebaserade sammanhang för att utnyttja de datainsikter ert varumärke har med Adobe Experience Cloud.
 
-En gång [lade till en push](get-started-content.md) -aktiviteten på din resa och definierade grundläggande inställningar, använd **[!UICONTROL Actions: Push]** höger ruta för att skapa innehållet för push-meddelandet.
+Push-meddelanden kan skapas:
 
-![](assets/add-a-push.png)
+* I en **Resa**: När du har lagt till en push-aktivitet på din resa och definierat grundläggande inställningar använder du **[!UICONTROL Actions: Push]** till höger för att skapa innehåll för push-meddelanden.
 
+   Mer information om hur du konfigurerar din resa finns i [page](../building-journeys/journey-gs.md).
+
+* I en **Campaign**: När du har skapat en kampanj väljer du Push-meddelande som åtgärd och definierar grundläggande inställningar.
+
+   Mer information om hur du konfigurerar kampanjen finns i [page](../campaigns/create-campaign.md#configure).
 
 Använd de dedikerade flikarna för att definiera inställningar för push-meddelanden för **iOS** och **Android** operativsystem.
 

@@ -7,9 +7,10 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 0036c905b9344a6f99e8525acbe9caab5932f361
+exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
+source-git-commit: 711fdf1dce0688d2e21d405a4e3e8777612b2f3b
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -128,11 +129,52 @@ När du har anpassat dina behandlingar kan du börja konfigurera ditt innehålls
 
    ![](assets/content_experiment_14.png)
 
-## Experimentationsrapport {#experimentation-report}
+När du har konfigurerat dina experiment och kampanjer kan du följa resultatet av leveransen med Campaign-rapporten.
+
+## Målrapport {#objectives-global}
+
+>[!AVAILABILITY]
+>
+>Funktionen för innehållsexperiment är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
+
+![](assets/performance_report.gif)
+
+The **[!UICONTROL Objectives]** kan ni finjustera era leveransrapporter bättre genom att rikta in er på ett specifikt mätvärde.
+
+The **[!UICONTROL Objectives]** listade är länkade till **[!UICONTROL Datasets]** som definierar en anslutning till ett system för att hämta ytterligare information. En lista med inbyggda **[!UICONTROL Objectives]** är tillgängligt, men du kan lägga till egna genom att lägga till nya **[!UICONTROL Dataset]**. För det detaljerade förfarandet, se [section](reporting-configuration.md).
+
+När du har valt de mål som du vill ha som mål för **[!UICONTROL Performance overview]** och **[!UICONTROL Campaign objective]** -widgetar ger en detaljerad sammanfattning av leveransresultatet.
+
+Med **[!UICONTROL Campaign objective]** kan du också välja att jämföra huvudmålet med ett annat mätvärde.
+
+Observera att varje widget kan storleksändras och tas bort om det behövs. Mer information finns i [section](../reports/global-report.md#modify-dashboard).
+
+## Experimentationsrapport {#experimentation-global}
+
+>[!AVAILABILITY]
+>
+>Funktionen för innehållsexperiment är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
 
 ![](assets/experimentation_report_3.png)
 
-Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Experimentation]** innehåller huvudinformationen om hur varje variant fungerar och om det fanns en bästa utförare under testet.
+Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Experimentation]** innehåller huvudinformationen om hur varje variant fungerar och om det finns en bästa utförare.
 
-Mer information om den här rapporten finns i [Global kampanjrapport](../campaigns/content-experiment.md#experimentation-report) sida.
+Observera att det kan ta en stund att definiera den bästa utföraren, men den representeras av den här ikonen ![](assets/experimentation_report_1.png).
 
+The **[!UICONTROL Experiment result]** widgeten anger prestanda för varje variant. Du kan ändra din baslinje genom att välja en av behandlingarna i **[!UICONTROL Baseline]** listrutan. Den bästa behandlingen visas med en stjärnikon.
+
+Tabellen visar följande mått:
+
+* **[!UICONTROL Profiles]**: Antal profiler som är avsedda för denna behandling.
+
+* **[!UICONTROL Unique outbound clicks]**: Totalt antal klick i utgående kanaler.
+
+* **[!UICONTROL Count per profile]**: Det totala värdet för det experimentella målmåttet delat med antalet profiler.
+
+* **[!UICONTROL Confidence interval]**: Procentskillnad i prestanda mellan baslinjen och den bästa behandlingen. [Läs mer](../campaigns/experiment-calculations.md#confidence-intervals).
+
+* **[!UICONTROL Average lift]**: Procentuell förbättring av konverteringsgraden för en given behandling jämfört med baslinjen. [Läs mer](../campaigns/experiment-calculations.md#understand-lift)
+
+* **[!UICONTROL Confidence]**: Bevis på att en viss behandling är densamma som den initiala behandlingen. [Läs mer](../campaigns/experiment-calculations.md#understand-confidence)
+
+En djupdykning i dessa resultat och hur du tolkar dem finns i [den här sidan](../campaigns/get-started-experiment.md#interpret-results).

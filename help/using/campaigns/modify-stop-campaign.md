@@ -1,27 +1,27 @@
 ---
 title: Ändra eller stoppa en kampanj
-description: Lär dig hur du kan skapa eller stoppa en aktiverad kampanj i [!DNL Journey Optimizer]
+description: Lär dig hur du ändrar, stoppar eller duplicerar live-kampanjer i [!DNL Journey Optimizer]
 feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
-hidefromtoc: true
-source-git-commit: 6177a33edeb3b8381c3eb5609762b4d974dc93e3
+exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
+source-git-commit: 711fdf1dce0688d2e21d405a4e3e8777612b2f3b
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
+# Hantera livekampanjer {#modify-stop-campaign}
 
-# Ändra eller stoppa en kampanj {#modify-stop-campaign}
+När en kampanj har aktiverats kan du när som helst ändra eller stoppa den. Dessa åtgärder är endast tillgängliga för kampanjer med en återkommande körning.
 
-När en kampanj har aktiverats kan du när som helst redigera den. Följ stegen nedan för att göra detta.
+Dessutom kan du duplicera live-kampanjer (som körs en gång eller med en återkommande körning) för att skapa nya.
 
-## Ändra en aktiverad kampanj {#modify}
+## Ändra en återkommande kampanj {#modify}
 
-Så här ändrar du och skapar en ny version av en kampanj:
+Så här ändrar du och skapar en ny version av en återkommande kampanj:
 
 1. Öppna kampanjen och klicka sedan på **[!UICONTROL Modify campaign]** -knappen.
 
@@ -39,20 +39,20 @@ Så här ändrar du och skapar en ny version av en kampanj:
    >
    >När du aktiverar utkastet ersätts kampanjens liveversion.
 
-## Stoppa en kampanj {#stop}
+## Stoppa en återkommande kampanj {#stop}
 
-Om du vill stoppa en kampanj öppnar du den och klickar sedan på **[!UICONTROL Stop campaign]** -knappen.
+Om du vill stoppa en återkommande kampanj öppnar du den och klickar sedan på **[!UICONTROL Stop campaign]** -knappen.
 
 ![](assets/create-campaign-stop.png)
 
 >[!IMPORTANT]
 >
->När du har stoppat en kampanj är den endast tillgänglig i skrivskyddat läge. Du kommer inte att kunna aktivera den igen eller använda den för att skapa en ny kampanj.
+>Att stoppa en kampanj kommer inte att stoppa en pågående sändning, men det kommer att stoppa en schemalagd sändning eller nästa förekomst om sändning redan pågår.
 
-## Ytterligare resurser
+<!-- inbound campaign (inapp): can stop and resume -->
 
-* [Kom igång med kampanjer](get-started-with-campaigns.md)
-* [Skapa en kampanj](create-campaign.md)
-* [Skapa API-utlösta kampanjer](api-triggered-campaigns.md)
-* [Kampanjrapport](campaign-live-report.md)
-* [Global kampanjrapport](campaign-global-report.md)
+## Duplicera en kampanj {#duplicate}
+
+Du kan duplicera en livekampanj och skapa en ny. Det gör du genom att öppna kampanjen och sedan klicka på **[!UICONTROL Duplicate]**.
+
+![](assets/create-campaign-duplicate.png)

@@ -5,13 +5,11 @@ feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
-hidefromtoc: true
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: 711fdf1dce0688d2e21d405a4e3e8777612b2f3b
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,19 +22,18 @@ ht-degree: 1%
 
 ## Om kampanjer {#about}
 
+>[!IMPORTANT]
+>
+>Den här funktionen är bara tillgänglig för användare med tillgång till en Campaign-relaterad produktprofil, till exempel Campaign-administratör, Campaign-godkännare, Campaign-hanterare och/eller Campaign-visningsprogram. Mer information om hur du tilldelar produktprofiler finns i [den här sidan](../administration/permissions.md).
+
 Med kampanjer kan ni leverera engångsinnehåll till ett visst segment med hjälp av flera kanaler. Till skillnad från resor, där åtgärder är utformade för att utföras i sekvens, kör kampanjer samtidigt, antingen direkt eller enligt ett angivet schema.
 
-Du kan skapa två typer av kampanjer:
+På så sätt kan ni skicka enkla ad hoc-batchmeddelanden för marknadsföringsändamål som kampanjerbjudanden, engagemangskampanjer, meddelanden, juridiska meddelanden eller policyuppdateringar.
 
-* **Schemalagda kampanjer** möjliggör enkel ad hoc-batchkommunikation för marknadsföringsfall som reklamerbjudanden, engagemangskampanjer, meddelanden, juridiska meddelanden eller policyuppdateringar.
-* **API-utlösta kampanjer** möjliggör enkla transaktions-/driftsmeddelanden med REST API:er (lösenordsåterställning, övergivna kort osv.), där behovet kan innebära personalisering med hjälp av profilattribut och sammanhangsbaserade data från nyttolast.
+<!--You can create two types of campaigns:
 
-Lär dig hur du arbetar med kampanjer:
-* [Skapa en kampanj](create-campaign.md)
-* [Skapa API-utlösta kampanjer](api-triggered-campaigns.md)
-* [Ändra eller stoppa en kampanj](modify-stop-campaign.md)
-* [Kampanjrapport](campaign-live-report.md)
-* [Global kampanjrapport](campaign-global-report.md)
+* **Scheduled campaigns** allow for simple ad-hoc batch communications for marketing use cases like promotional offers, engagement campaigns, announcements, legal notices, or policy updates.
+* **API Triggered Campaigns** allow for simple transactional/operational messages with REST APIs (password reset, card abandonment, etc.), where the need may involve personalization using profile attributes and contextual data from payload.-->
 
 ## Åtkomst till kampanjer {#access}
 
@@ -55,7 +52,7 @@ Kampanjer kan ha flera statusvärden:
 * **[!UICONTROL Live]**: Kampanjen har aktiverats.
 * **[!UICONTROL Scheduled]**: Kampanjen har konfigurerats för att aktiveras ett visst startdatum.
 * **[!UICONTROL Stopped]**: Kampanjen har stoppats manuellt. Du kan inte aktivera eller återanvända den längre (se [Stoppa en kampanj](modify-stop-campaign.md#stop))
-* **[!UICONTROL Completed]**: Kampanjen är färdig.
+* **[!UICONTROL Completed]**: Kampanjen är färdig. Den här statusen tilldelas automatiskt 3 dagar efter att en kampanj har aktiverats, eller vid kampanjens slutdatum om den har en återkommande körning.
 * **[!UICONTROL Archived]**: Kampanjen har arkiverats.
 
 >[!NOTE]

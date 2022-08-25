@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: ad09f4ec728e95da23f862e0e59fe827c71f0024
+source-git-commit: 711fdf1dce0688d2e21d405a4e3e8777612b2f3b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '461'
+ht-degree: 1%
 
 ---
 
@@ -22,9 +22,15 @@ ht-degree: 0%
 
 Använd [!DNL Journey Optimizer] för att skicka textmeddelanden till kunderna på deras mobila enheter. Du kan skapa, anpassa och förhandsgranska meddelanden i textformat från SMS-redigeraren.
 
-En gång [lade till ett SMS](get-started-content.md) -aktiviteten på din resa och definierade grundläggande inställningar, använd **[!UICONTROL Actions: SMS]** höger ruta för att skapa innehållet för SMS-meddelandet.
+SMS-leveranser kan skapas:
 
-![](assets/sms-edit-content.png)
+* I en **Resa**: När du har lagt till en SMS-aktivitet under resan och definierat grundläggande inställningar använder du **[!UICONTROL Actions: SMS]** höger ruta för att skapa innehållet för SMS-meddelandet.
+
+   Mer information om hur du konfigurerar din resa finns i [page](../building-journeys/journey-gs.md).
+
+* I en **Campaign**: När du har skapat en kampanj väljer du SMS som åtgärd och definierar grundläggande inställningar.
+
+   Mer information om hur du konfigurerar kampanjen finns i [page](../campaigns/create-campaign.md#configure).
 
 Om det är första gången du skapar ett SMS-meddelande kontrollerar du att SMS-kanalen har konfigurerats. [Läs mer](../configuration/sms-configuration.md).
 

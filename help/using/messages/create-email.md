@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: 711fdf1dce0688d2e21d405a4e3e8777612b2f3b
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 5%
+source-wordcount: '282'
+ht-degree: 4%
 
 ---
 
@@ -20,27 +20,33 @@ ht-degree: 5%
 >title="Skapa e-post"
 >abstract="Definiera e-postparametrar i endast tre enkla steg."
 
+Du kan skapa e-postmeddelanden:
 
-En gång [lade till ett e-postmeddelande](get-started-content.md) på din resa <!--or a campaign--> och definierade grundläggande inställningar kan du konfigurera e-postmeddelandet och definiera dess innehåll.
+* I en **Resa**: När du har lagt till en e-postaktivitet under resan och definierat grundläggande inställningar använder du **[!UICONTROL Actions: Email]** till höger för att skapa innehåll för push-meddelanden.
+
+   Mer information om hur du konfigurerar din resa finns i [page](../building-journeys/journey-gs.md).
+
+   ![](assets/email-edit-content.png)
+
+* I en **Campaign**: När du har skapat en kampanj väljer du E-post som åtgärd och definierar grundläggande inställningar.
+
+   Mer information om hur du konfigurerar kampanjen finns i [page](../campaigns/create-campaign.md#configure).
+
+   ![](assets/email_campaign.png)
 
 ## Definiera ditt e-postinnehåll{#email-content}
 
-Klicka på **[!UICONTROL Edit content]** för att utforma e-postmeddelandet.
-
-![](assets/email-edit-content.png)
-
 Använd [!DNL Journey Optimizer] E-postdesigner till [designa din e-post från grunden](../design/create-email-content.md). Om du har ett befintligt innehåll kan du [importera det till e-postdesignern](../design/existing-content.md), eller [koda eget innehåll](../design/code-content.md) in [!DNL Journey Optimizer].
 
-[!DNL Journey Optimizer] innehåller en uppsättning [inbyggda mallar](../design/email-templates.md) för att hindra dig från att börja. Alla e-postmeddelanden kan också sparas som mallar.
-
-Läs mer om e-postdesign i [det här avsnittet](../design/design-emails.md).
+[!DNL Journey Optimizer] innehåller en uppsättning [inbyggda mallar](../design/email-templates.md) för att hjälpa dig att komma igång. Alla e-postmeddelanden kan också sparas som mallar.
 
 Använd [!DNL Journey Optimizer] Uttrycksredigeraren för att anpassa dina meddelanden med profildata. Mer information om personalisering finns i [det här avsnittet](../personalization/personalize.md).
 
 ## E-postspårning{#email-tracking}
 
-Aktivera följande alternativ om du vill spåra mottagarnas beteende genom att öppna och/eller klicka på länkar: **[!UICONTROL Email opens]** och **[!UICONTROL Click on email]**. Läs mer om spårning i [det här avsnittet](../design/message-tracking.md).
+Aktivera följande alternativ om du vill spåra mottagarnas beteende genom att öppna och/eller klicka på länkar: **[!UICONTROL Email opens]** och **[!UICONTROL Click on email]**.
 
+Läs mer om spårning i [det här avsnittet](../design/message-tracking.md).
 
 ## Validera ditt e-postinnehåll{#email-content-validate}
 

@@ -4,10 +4,10 @@ description: Lär dig hur du aktiverar kampanjer med [!DNL Journey Optimizer] AP
 hide: true
 hidefromtoc: true
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
+source-git-commit: 711fdf1dce0688d2e21d405a4e3e8777612b2f3b
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 1%
+source-wordcount: '676'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,6 @@ ht-degree: 1%
 >
 >API:t för interaktiv meddelandekörning finns för närvarande i betaversion, som kan uppdateras ofta utan föregående meddelande.
 
-
 Med [!DNL Journey Optimizer]kan ni skapa kampanjer och sedan anropa dem från ett externt system baserat på användarens utlösare med [REST API för körning av interaktivt meddelande](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution). På så sätt kan du täcka olika behov av användnings- och transaktionsmeddelanden, som lösenordsåterställningar och OTP-token.
 
 För att göra detta måste du först skapa en API-utlöst kampanj i Journey Optimizer och sedan starta körningen via ett API-anrop.
@@ -28,7 +27,7 @@ Tillgängliga kanaler för API-utlösta kampanjer är e-post-, SMS- och push-med
 
 ## Skapa en API-utlöst kampanj {#create}
 
-Processen att skapa API-utlösta kampanjer är fortfarande densamma som schemalagda kampanjer, med undantag för valet av målgrupp som görs i API-nyttolasten. Detaljerad information om hur du skapar en kampanj finns i [det här avsnittet](create-campaign.md).
+Processen för att skapa API-utlösta kampanjer är fortfarande densamma som för schemalagda kampanjer, med undantag för valet av målgrupp som görs i API-nyttolasten. Detaljerad information om hur du skapar en kampanj finns i [det här avsnittet](create-campaign.md).
 
 Så här skapar du en API-utlöst kampanj:
 
@@ -92,11 +91,3 @@ Observera att om du har konfigurerat ett specifikt start- och/eller slutdatum n�
 >[!NOTE]
 >
 >I vissa fall kan du behöva skicka transaktionsmeddelanden till profiler som inte finns i systemet. Om en okänd användare till exempel försöker logga in på webbplatsen. I så fall skapas motsvarande profil automatiskt i Adobe Experience Platform i **AJO Interactive Messaging Profile - datauppsättning** datauppsättning.
-
-## Ytterligare resurser
-
-* [Kom igång med kampanjer](get-started-with-campaigns.md)
-* [Skapa en kampanj](create-campaign.md)
-* [Ändra eller stoppa en kampanj](modify-stop-campaign.md)
-* [Kampanjrapport](campaign-live-report.md)
-* [Global kampanjrapport](campaign-global-report.md)

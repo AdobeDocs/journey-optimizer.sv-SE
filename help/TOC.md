@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 55d9befff9b9bf1bc81c6553cd76f015fdd3116e
+source-git-commit: 711fdf1dce0688d2e21d405a4e3e8777612b2f3b
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1124'
 ht-degree: 38%
 
 ---
@@ -37,16 +37,13 @@ ht-degree: 38%
 + Kampanjer {#campaigns}
    + [Kom igång med kampanjer](using/campaigns/get-started-with-campaigns.md)
    + [Skapa en kampanj](using/campaigns/create-campaign.md)
-   + [Ändra eller stoppa en kampanj](using/campaigns/modify-stop-campaign.md)
+   + [Hantera livekampanjer](using/campaigns/modify-stop-campaign.md)
    + Innehållsexperiment {#content-experiment}
       + [Kom igång med innehållsexperiment](using/campaigns/get-started-experiment.md)
       + [Skapa ett innehållsexperiment](using/campaigns/content-experiment.md)
       + [Förstå statistiska beräkningar](using/campaigns/experiment-calculations.md)
-   + [Utlösa kampanjer med API:er](using/campaigns/api-triggered-campaigns.md)
-   + Rapporter {#reports}
-      + [Kampanjrapport](using/campaigns/campaign-live-report.md)
-      + [Global kampanjrapport](using/campaigns/campaign-global-report.md)
       + [Rapporteringskonfiguration](using/campaigns/reporting-configuration.md)
+   + [Utlösa kampanjer med API:er](using/campaigns/api-triggered-campaigns.md)
 + Meddelanden {#messages}
    + [Kom igång med meddelanden](using/messages/get-started-content.md)
    + [Skapa ett e-postmeddelande](using/messages/create-email.md)
@@ -244,11 +241,13 @@ ht-degree: 38%
    + Live-rapport {#live-report}
       + [Åtkomst till Live-rapportkontrollpanelen](using/reports/live-report.md)
       + [Journey Live-rapport](using/reports/journey-live-report.md)
+      + [Campaign Live-rapport](using/reports/campaign-live-report.md)
       + [Live-rapport för landningssida](using/reports/lp-report-live.md)
       + [Live-rapport om prenumerationslista](using/reports/subscription-report-live.md)
    + Global rapport {#global-report}
       + [Åtkomst till instrumentpanel för global rapport](using/reports/global-report.md)
       + [Rapport om global resa](using/reports/journey-global-report.md)
+      + [Global kampanjrapport](using/reports/campaign-global-report.md)
       + [Global rapport för landningssida](using/reports/lp-report-global.md)
       + [Global rapport om prenumerationslista](using/reports/subscription-report-global.md)
    + Reserapporter {#reports}

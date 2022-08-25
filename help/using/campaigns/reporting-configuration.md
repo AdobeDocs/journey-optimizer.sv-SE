@@ -7,10 +7,11 @@ role: Admin
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 11f7ce37dc1a99de4ed29fa7793f126e259f518d
+exl-id: 327a0c45-0805-4f64-9bab-02d67276eff8
+source-git-commit: 711fdf1dce0688d2e21d405a4e3e8777612b2f3b
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -94,7 +95,7 @@ Om du till exempel vill veta vilken effekt en e-postkampanj har på e-handelsdat
    >
    >Om du valde en datauppsättning som inte är av händelsetyp kan du inte fortsätta.
 
-När du skapar leveransrapporter kan du nu använda data från den här datauppsättningen för att hämta ytterligare anpassad information och finjustera dina rapporter bättre. [Läs mer](campaign-global-report.md#objectives-global)
+När du skapar leveransrapporter kan du nu använda data från den här datauppsättningen för att hämta ytterligare anpassad information och finjustera dina rapporter bättre. [Läs mer](content-experiment.md#objectives-global)
 
 >[!NOTE]
 >

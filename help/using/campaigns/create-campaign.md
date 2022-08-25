@@ -5,13 +5,11 @@ feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
-hidefromtoc: true
 exl-id: 7c4afc98-0d79-4e26-90f8-558bac037169
-source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
+source-git-commit: 711fdf1dce0688d2e21d405a4e3e8777612b2f3b
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -33,10 +31,14 @@ Så här skapar du en kampanj:
 
    ![](assets/create-campaign.png)
 
-1. I **[!UICONTROL Properties]** anger du när kampanjen ska köras:
+   >[!NOTE]
+   >
+   >Du kan också duplicera en befintlig livekampanj och skapa en ny.[Läs mer](modify-stop-campaign.md#duplicate) <!-- check if only live campaigns-->
 
-   * **[!UICONTROL Scheduled]**: köra kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka **marknadsföring** typmeddelanden.
-   * **[!UICONTROL API-triggered]**: köra kampanjen med ett API-anrop. API-utlösta kampanjer är avsedda att skicka **transaktionsbaserad** meddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförts av en individ: lösenordsåterställning, övergivna kort osv. [Lär dig hur du utlöser en kampanj med API:er](api-triggered-campaigns.md)
+<!--1. In the **[!UICONTROL Properties]** section, specify when you want to execute the campaign:
+
+    * **[!UICONTROL Scheduled]**: execute the campaign immediately or on a specified date. Scheduled campaigns are aimed at sending **marketing** type messages.
+    * **[!UICONTROL API-triggered]**: execute the campaign using an API call. API-triggered campaigns are aimed at sending **transactional** messages, i.e. messages sent out following an action performed by an individual: password reset, card abandonment etc. [Learn how to trigger a campaign using APIs](api-triggered-campaigns.md)-->
 
 1. I **[!UICONTROL Actions]** väljer du kanal och kanal för att skicka meddelandet och klickar sedan på **[!UICONTROL Create]**.
 
@@ -52,21 +54,23 @@ Så här skapar du en kampanj:
 
 1. I **[!UICONTROL Actions]** konfigurerar du meddelandet som ska skickas med kampanjen:
 
-   1. Klicka på **[!UICONTROL Edit content]** och sedan konfigurera och utforma meddelandeinnehållet. [Läs mer om meddelanden](../messages/get-started-content.md).
+   1. Klicka på **[!UICONTROL Edit content]** och sedan konfigurera och utforma meddelandeinnehållet. [Läs mer om meddelanden](../messages/get-started-content.md)
 
-      När innehållet är klart klickar du på pilen för att gå tillbaka till skärmen för att skapa kampanjer.
+      >[!NOTE]
+      >
+      >The **[!UICONTROL Simulate content]** kan du använda testprofiler för att förhandsgranska och testa innehållet. [Läs mer](../design/preview.md)
+
+   1. När innehållet är klart klickar du på pilen för att gå tillbaka till skärmen för att skapa kampanjer.
 
       ![](assets/create-campaign-design.png)
 
    1. I **[!UICONTROL Actions tracking]** anger du om du vill spåra hur mottagarna svarar på leveransen.
 
-      Spåra resultat kan nås från kampanjrapporten när kampanjen har genomförts. [Läs mer om kampanjrapporter](campaign-global-report.md)
+      Spåra resultat kan nås från kampanjrapporten när kampanjen har genomförts. [Läs mer om kampanjrapporter](../reports/campaign-global-report.md)
 
 1. Definiera målgruppen. Om du vill göra det klickar du på **[!UICONTROL Select audience]** om du vill visa en lista över tillgängliga Adobe Experience Platform-segment. [Läs mer om segment](../segment/about-segments.md)
 
-   >[!NOTE]
-   >
-   >För API-utlösta kampanjer måste målgruppen anges via API-anrop. [Läs mer](api-triggered-campaigns.md)
+   <!-- NOTE For API-triggered campaigns, the audience needs to be set via API call. [Learn more](api-triggered-campaigns.md)-->
 
    I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera individerna från det valda segmentet. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace)
 
@@ -80,13 +84,11 @@ Så här skapar du en kampanj:
 
 1. Dessutom kan du ange en frekvens för körningen av åtgärden som konfigurerats i kampanjen.
 
-   >[!NOTE]
-   >
-   >För API-utlösta kampanjer är schemaläggning vid ett visst datum och en viss tid med upprepning inte tillgängligt eftersom åtgärden utlöses via API. Start- och slutdatumet är dock relevanta för att säkerställa att API-anrop som görs före efter fönstret felskickas.
+   <!-- NOTE For API-triggered campaigns, scheduling at a specific date and time with recurrence is not available as action is triggered via API. However, start and end date are relevant to ensure that, if an API call is made prior of after the window, then those get errored.-->
 
    ![](assets/create-campaign-schedule.png)
 
-1. Om du skapar en API-utlöst kampanj kan **[!UICONTROL cURL request]** kan du hämta **[!UICONTROL Campaign ID]** som ska användas i API-anropet. [Läs mer](api-triggered-campaigns.md)
+<!--1. If you are are creating an API-triggered campaign, the **[!UICONTROL cURL request]** section allows you to retrieve the **[!UICONTROL Campaign ID]** to use in the API call. [Learn more](api-triggered-campaigns.md)-->
 
 När kampanjen är klar kan du granska och publicera den (se [Granska och aktivera en kampanj](#review-activate)).
 
@@ -108,24 +110,16 @@ När kampanjen har konfigurerats måste du granska dess parameter och innehåll 
 
    ![](assets/create-campaign-review.png)
 
-1. Kampanjen är nu aktiverad och har **[!UICONTROL Live]** status (eller **[!UICONTROL Scheduled]**  om du angav ett startdatum). [Läs mer om kampanjstatus](get-started-with-campaigns.md#statuses)
-
-   Meddelandet som konfigurerats i kampanjen körs omedelbart eller på det angivna datumet.
+1. Kampanjen är nu aktiverad och har **[!UICONTROL Live]** status (eller **[!UICONTROL Scheduled]**  om du angav ett startdatum). [Läs mer om kampanjstatus](get-started-with-campaigns.md#statuses). Meddelandet som konfigurerats i kampanjen körs omedelbart eller på det angivna datumet.
 
    >[!NOTE]
    >
-   >När en kampanj har aktiverats behåller den statusen&quot;Live&quot; även efter att meddelandet har körts. Om du vill ändra dess status måste du stoppa den manuellt. [Lär dig stoppa en kampanj](modify-stop-campaign.md)
+   >The **[!UICONTROL Completed]** status tilldelas automatiskt en kampanj 3 dagar efter att den har aktiverats eller vid kampanjens slutdatum om den har ett återkommande körningsfel.
+   >
+   >Om inget slutdatum har angetts behåller kampanjen statusen&quot;Live&quot;. Om du vill ändra den måste du stoppa kampanjen manuellt. [Lär dig stoppa en kampanj](modify-stop-campaign.md)
 
 1. När en kampanj har aktiverats kan du när som helst kontrollera dess information genom att öppna den. Sammanfattningen gör att du kan få statistik om antalet målprofiler och levererade och misslyckade åtgärder.
 
-   Du kan även få ytterligare statistik i dedikerade rapporter genom att klicka på **[!UICONTROL Reports]** -knappen. [Läs mer](campaign-global-report.md)
+   Du kan även få ytterligare statistik i dedikerade rapporter genom att klicka på **[!UICONTROL Reports]** -knappen. [Läs mer](../reports/campaign-global-report.md)
 
    ![](assets/create-campaign-summary.png)
-
-## Ytterligare resurser
-
-* [Kom igång med kampanjer](get-started-with-campaigns.md)
-* [Skapa API-utlösta kampanjer](api-triggered-campaigns.md)
-* [Ändra eller stoppa en kampanj](modify-stop-campaign.md)
-* [Kampanjrapport](campaign-live-report.md)
-* [Global kampanjrapport](campaign-global-report.md)
