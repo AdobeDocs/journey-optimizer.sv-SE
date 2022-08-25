@@ -5,9 +5,9 @@ feature: Monitoring
 role: User
 level: Intermediate
 exl-id: 759b014a-c834-4331-bffd-5bc159ec555d
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: 2f89b3a2e067d269a6316ae26d280924a530fe51
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Följande tabell visar vilka åtgärder som Journey Optimizer-resurser registrer
 | AJO-underdomän | Skapa/ta bort/uppdatera |
 | AJO-undertryckningslista | Skapa/ta bort/hämta CSV |
 | Fältgrupp | Skapa/ta bort/uppdatera |
-| Resa | Skapa/ta bort/stoppa/publicera |
+| Resa | Skapa/ta bort/uppdatera/stoppa/publicera |
 | Anpassad reseåtgärd | Skapa/ta bort/uppdatera |
 | Resurs, datakälla | Skapa/ta bort/uppdatera |
 | Resehändelse | Skapa/ta bort/uppdatera |

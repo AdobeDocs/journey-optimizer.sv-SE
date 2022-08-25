@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
+source-git-commit: 1780310da6d8a952dd22b9ee9a0b23516efddb5f
 workflow-type: tm+mt
-source-wordcount: '1140'
+source-wordcount: '1203'
 ht-degree: 4%
 
 ---
@@ -27,6 +27,8 @@ Använd **Läs segment** aktivitet för att få alla individer i ett segment att
 Låt oss som exempel ta segmentet&quot;Luma app opening and checkout&quot; som skapats i [Skapa segment](../segment/about-segments.md) användningsfall. Med aktiviteten Läs segment kan du få alla personer som tillhör det här segmentet att komma in på en resa och få dem att flöda in i personaliserade resor som utnyttjar alla resefunktioner: villkor, timers, events, actions.
 
 >[!NOTE]
+>
+>För resor som använder en Läs segment-aktivitet finns det ett maximalt antal resor som kan påbörjas exakt samtidigt. Återförsök kommer att utföras av systemet men undvik att ha fler än fem resor (med Läs segment, schemalagd eller starta&quot;så snart som möjligt&quot;) med början vid exakt samma tidpunkt genom att sprida dem över tiden, t.ex. mellan 5 och 10 minuter.
 >
 >Det Burst-betalda tillägget gör det möjligt att skicka mycket snabba push-meddelanden i stora volymer för enkla resor som innehåller ett lässegment och ett enkelt push-meddelande. Mer information hittar du i [det här avsnittet](../building-journeys/journey-gs.md#burst)
 

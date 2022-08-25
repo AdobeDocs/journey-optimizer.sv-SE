@@ -6,10 +6,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 8766f64c4ea7985c6c9d6e4ba022ef6b1fc0dbed
+source-git-commit: 5abcef4ff057bb351abaafbf4dcb99e1ab61c6a9
 workflow-type: tm+mt
-source-wordcount: '1172'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ Definiera e-postinställningarna i det dedikerade avsnittet av kanalytans konfig
 >[!CONTEXTUALHELP]
 >id="ajo_admin_presets_emailtype"
 >title="Definiera e-postkategorin"
->abstract="Välj den typ av meddelanden som ska skickas när den här ytan används: Marknadsföring för kampanjmeddelanden, som kräver användargodkännande, eller Transactional för icke-kommersiella meddelanden, som också kan skickas till profiler som inte längre prenumererar i specifika sammanhang."
+>abstract="Välj den typ av e-postmeddelanden som ska skickas när du använder den här ytan: Marknadsföring för e-postreklam, som kräver användargodkännande, eller Transactional för icke-kommersiella e-postmeddelanden, som också kan skickas till profiler som inte längre prenumererar i specifika sammanhang."
 
 I **E-POSTTYP** väljer du den typ av meddelande som ska skickas med ytan: **Marknadsföring** eller **Transactional**.
 

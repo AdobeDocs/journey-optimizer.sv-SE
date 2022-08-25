@@ -2,9 +2,9 @@
 title: Versionsinformation 2022
 description: Versionsinformation om Journey Optimizer 2022
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
-source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
+source-git-commit: 5aae2f685969460329f241720b0faf9c681fa668
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '2337'
 ht-degree: 9%
 
 ---
@@ -12,6 +12,109 @@ ht-degree: 9%
 # Versionsinformation för 2022 {#release-notes-2022}
 
 På den här sidan visas alla funktioner och förbättringar för [!DNL Journey Optimizer] släppt 2022.
+
+
+## Version från juli 2022 {#july-2022-release}
+
+### Nya funktioner
+
+<table>
+<thead>
+<tr>
+<th><strong>Nytt textbundet meddelandeflöde</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer har ett nytt flöde för att skapa meddelanden i Journeys. Med textbundna meddelanden sparar man mycket tid och effektiviserar arbetsflödet för att skapa och leverera e-post, push-meddelanden eller SMS i Journey Optimizer. Genom att ta bort meddelanden som ett separat steg och i stället göra dem redigerbara online som en del av en åtgärd på arbetsytan på resan, måste användarna klicka på färre knappar och navigera bland färre skärmar för att utforma och redigera innehållet.</p>
+<img src="assets/do-not-localize/inline.gif"/>
+<p>Mer information finns i den <a href="../messages/get-started-content.md">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Attributbaserad åtkomstkontroll (begränsad tillgänglighet)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du identifiera schemafält med etiketter som definierar användningsområde för organisation eller data. Administratörer kan använda gränssnittet Behörigheter för att definiera åtkomstprinciper som omfattar XDM-schemafält och bättre hantera åtkomsten som ges till användare eller grupper av användare (interna, externa eller externa användare) samt hantera åtkomsten till specifika typer av data (dvs känsliga personuppgifter/SPD).</p>
+<p>Attributbaserad åtkomstkontroll är för närvarande begränsad till vissa användare och kommer att distribueras till alla miljöer i en framtida version.</p>
+<p>Mer information finns i den <a href="../administration/attribute-based-access.md">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Batchbeslutsjobb</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du köra batchbeslutsjobb från användargränssnittet, så att jag inte behöver någon utvecklare för att köra batchAPI-jobb och jag kan minska tiden som krävs för marknadsföring. Med det här nya gränssnittet kan du skapa jobb och hantera aktuella/tidigare jobb.</p>
+<img src="assets/do-not-localize/batch.gif"/>
+<p>Mer information finns i den <a href="../offers/batch-delivery.md">detaljerade dokumentationen.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Använd automatiskt det bästa erbjudandet i dina beslut (begränsad tillgänglighet)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Ni kan nu använda personaliserade optimeringsmodellsystem i Beslutshantering. Med den här nya typen av modell kan ni optimera och personalisera erbjudanden baserat på segment och erbjudanden.</p>
+<p>Användningen av anpassade optimerings-AI-modeller är för närvarande begränsad till utvalda användare och kommer att användas i alla miljöer i en framtida version.</p>
+<img src="assets/do-not-localize/ai-ranking.gif"/>
+<p>Mer information finns i den <a href="../offers/ranking/personalized-optimization-model.md">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Förbättringar
+
+**Resor**
+
+* **Avsluta en resa** - På arbetsytan **End** aktiviteten har tagits bort från paletten. Sluttaggar läggs nu till som standard i slutet av varje bana och kan inte tas bort. Denna förbättring gör det möjligt att bättre rapportera var en kund lämnade resan, utan att någon åtgärd krävs från kundens sida. Se [dokumentation](../building-journeys/journey-end.md) och [funktionsvideo](https://video.tv.adobe.com/v/345376){target=&quot;_blank&quot;}.
+
+
+* The **Tidszon för profil** alternativet är nu avmarkerat som standard i resans egenskaper. [Läs mer](../building-journeys/timezone-management.md#timezone-from-profiles)
+
+**Meddelanden**
+
+* Meddelandeförinställningar är nu **kanalytor**. [Läs mer](../configuration/channel-surfaces.md)
+
+**Administrering**
+
+* **PTR-postversion** - När du nu uppdaterar en PTR-post tar bearbetningstiden endast upp till 3 timmar. [Läs mer](../configuration/ptr-records.md#processing)
+
+* **Tillåtelselista UI** - Nu kan du använda Journey Optimizer användargränssnitt för att lägga till nya e-postadresser eller domäner i tillåtelselista. [Läs mer](../configuration/allow-list.md)
+
+* **Tillåtelselista logikuppdatering** - Nu gäller logiken i tillåtelselista så snart funktionen är aktiverad, även om listan är tom. [Läs mer](../configuration/allow-list.md#logic)
+
+* **URL-spårningsparametrar** - Du kan nu använda uttrycksredigeraren för att konfigurera parametrar för URL-spårning i dina e-postytor (t.ex. förinställningar). [Läs mer](../configuration/email-settings.md#url-tracking)
+
+**offer decisioning**
+
+* **Målgruppsstorlek** - En ny uppskattningskomponent för målgruppsstorlek visas nu i användargränssnittet när du skapar en beslutsregel, när du väljer ett segment eller en regel för att ange ett erbjudande eller när du lägger till ett segment eller en regel i ett beslutsomfång.
+
 
 ## Version från juni 2022 {#june-2022-release}
 
@@ -27,7 +130,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <tr>
 <td>
 <p>Nu kan du skapa, anpassa och skicka SMS i Journey Optimizer via en integrering med <b>Sinch</b> eller <b>Twilio</b>.</p>
-<img src="assets/do-not-localize/SMS.gif"/>
+<!--img src="assets/do-not-localize/SMS.gif"/-->
 <p>SMS-kanalen är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.</p>
 <p>Lär dig hur du skapar och skickar ett SMS i det här <a href="../messages/create-sms.md">detaljerad dokumentation</a>.</p>
 </td>
@@ -46,7 +149,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <tr>
 <td>
 <p>Integreringspluginen för Adobe Stock och Adobe Journey Optimizer Email Designer ger kunderna ett enkelt sätt att navigera, licensiera och spara bilder för användning i meddelandeframställning. </br> Den nya <b>Hitta liknande Stock-foton</b> kan du också söka efter Stock-foton som matchar innehållet, färgen och kompositionen för dina bilder. </p>
-<img src="assets/do-not-localize/stock-rn.gif"/>
+<!--img src="assets/do-not-localize/stock-rn.gif"/-->
 <p>Mer information finns i den <a href="../design/stock.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
@@ -63,7 +166,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <tr>
 <td>
 <p>Nu kan du använda funktionen för hemlig kopia (Email BCC) för att lagra e-postmeddelanden som skickas av Adobe Journey Optimizer. Aktivera det här alternativet i dina e-postförinställningar så att alla e-postmeddelanden som skickas är blinda och kopieras till din BCC-adress.</p>
-<img src="assets/do-not-localize/bcc-rn.gif"/>
+<!--img src="assets/do-not-localize/bcc-rn.gif"/-->
 <p>Mer information finns i den <a href="../configuration/bcc-email.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
@@ -104,21 +207,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 </tbody>
 </table>
 
-<!--table>
-<thead>
-<tr>
-<th><strong>Dynamic Expression Builder</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now create conditional content blocks across different authoring services to personalize your content. In addition to the Personalization Expression Library, the Expression Editor provides a new Conditional Rule Builder to help you design and save your content blocks.</p>
-<p>For more information, refer to the <a href="../building-journeys/read-segment.md#configuring-segment-trigger-activity">detailed documentation</a>.
-</td>
-</tr>
-</tbody>
-</table-->
+
 
 
 ### Förbättringar
@@ -158,7 +247,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <tr>
 <td>
 <p>Nu kan du ange affärsregler för flera kanaler som automatiskt utesluter överbegärda profiler från meddelanden och åtgärder.</p>
-<img src="assets/do-not-localize/frequency-rn.gif"/>
+<!--img src="assets/do-not-localize/frequency-rn.gif"/-->
 <p>Mer information finns i den <a href="../configuration/frequency-rules.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
@@ -175,7 +264,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <tr>
 <td>
 <p>Du kan nu använda utbildade modellsystem i Beslutshantering. Den nya funktionen rankar erbjudanden som kan visas för en viss profil.</p>
-<img src="assets/do-not-localize/optimization.gif"/>
+<!--img src="assets/do-not-localize/optimization.gif"/-->
 <p>Mer information finns i den <a href="../offers/offer-activities/configure-offer-selection.md#use-ranking-strategy">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
@@ -209,7 +298,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <tr>
 <td>
 <p>Nu kan du övervaka åtgärder som utförs av användare på Adobe Journey Optimizer-resurser.</p>
-<img src="assets/do-not-localize/audit-rn.gif"/>
+<!--img src="assets/do-not-localize/audit-rn.gif"/-->
 <p>Mer information finns i den <a href="../privacy/audit-logs.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>

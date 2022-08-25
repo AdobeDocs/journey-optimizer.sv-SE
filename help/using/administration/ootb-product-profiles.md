@@ -6,10 +6,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 5a968bd8-cf76-4242-aa80-3cfb3d551511
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: 5087c5a13eda0b9b5894197b393788f82413690b
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 7%
+source-wordcount: '684'
+ht-degree: 6%
 
 ---
 
@@ -42,7 +42,7 @@ The **[!DNL Journey Administrator]** produktprofilen gör det möjligt för admi
 Den här produktprofilen innehåller följande behörigheter:
 
 | Funktioner | Behörigheter| |-|-| |Resor| <ul><li> **[!DNL Manage journeys]**: läsa, skapa, redigera och radera resor.</li><li>**[!DNL Publish journeys]**: publicera resor.</li><li>**[!DNL Manage journeys events, data sources and actions]**: läsa, skapa, redigera och ta bort händelser, källor eller åtgärder.</li><li>**[!DNL View journeys report]**: läsa och redigera reserapport.</li></ul>|
-|Administrering|<ul><li>**[!DNL Manage subdomains delegation]**: läsa, skapa, redigera och ta bort delegering av underdomäner.</li><li>**[!DNL Manage IP pools]**: läsa, skapa, redigera och ta bort ip-pool.</li><li>**[!DNL Manage PTR records]**: läsa och redigera PTR-poster.</li><li>**[!DNL View PTR records]**: skrivskyddad åtkomst till PTR-poster.</li><li> **[!DNL Manage messages general settings]**: läsa, skapa, redigera och ta bort allmänna inställningar för meddelanden.</li><li>**[!DNL Manage channel surfaces]**: läsa, skapa, redigera och ta bort innehållsmärkning.</li><li>**[!DNL Manage suppression rules]**: få åtkomst till regler för att läsa, skapa, redigera och ta bort.</li><li>**[!DNL View suppression list]**: läsa och exportera en lokal undertryckningslista.</li><li>**[!DNL Manage alerts]**: aktivera/inaktivera registreringar för resor och berättiganden.</li></ul>| |Beslutshantering|<ul><li>**[!DNL Manage decisions]**: läsa, skapa, redigera och ta bort beslut.</li><li>**[!DNL Manage ranking strategies]**: läsa, skapa, redigera och ta bort rankningsstrategier.</li></ul>|
+|Administrering|<ul><li>**[!DNL Manage subdomains delegation]**: läsa, skapa, redigera och ta bort delegering av underdomäner.</li><li>**[!DNL Manage IP pools]**: läsa, skapa, redigera och ta bort ip-pool.</li><li>**[!DNL Manage PTR records]**: läsa och redigera PTR-poster.</li><li>**[!DNL View PTR records]**: skrivskyddad åtkomst till PTR-poster.</li><li>**[!DNL Manage channel surfaces]**: läsa, skapa, redigera och ta bort innehållsmärkning.</li><li>**[!DNL Manage Landing page settings]**: skapa, redigera och ta bort deldomäner för landningssidor och förinställningar för landningssidor.</li><li> **[!DNL Manage messages general settings]**: läsa, skapa, redigera och ta bort allmänna inställningar för meddelanden.</li><li>**[!DNL Manage SMS settings]**: skapa, redigera och ta bort API-autentiseringsuppgifter och SMS-kanalsytor som krävs för att aktivera SMS-kanalen.</li><li>**[!DNL Manage suppression rules]**: få åtkomst till regler för att läsa, skapa, redigera och ta bort.</li><li>**[!DNL View suppression list]**: läsa och exportera en lokal undertryckningslista.</li><li>**[!DNL Manage alerts]**: aktivera/inaktivera registreringar för resor och berättiganden.</li></ul>| |Beslutshantering|<ul><li>**[!DNL Manage decisions]**: läsa, skapa, redigera och ta bort beslut.</li><li>**[!DNL Manage ranking strategies]**: läsa, skapa, redigera och ta bort rankningsstrategier.</li></ul>|
 |Adobe Experience Platform|<ul><li>**[!DNL Sandbox]**: ge åtkomst till sandlådor.</li><li>**[!DNL Manage segments]**: läsa, skapa, redigera och ta bort segment.</li><li>**[!DNL Manage profiles]**: läsa, skapa, redigera och ta bort profiler.</li><li>**[!DNL Read datasets]**: skrivskyddad åtkomst till datauppsättningar.</li><li>**[!DNL Read schemas]**: skrivskyddad åtkomst till scheman.</li><li>**[!DNL Read Identity namespace]**: skrivskyddad åtkomst till identitetsnamnutrymmet.</li><li>**[!DNL Manage merge policies]**: läsa, skapa, redigera och ta bort sammanfogningsprinciper.</li></ul>| |Journey Optimizer Library|<ul><li>**[!DNL Manage Library Items]**: lägga till och ta bort sparade uttryck i [!DNL Journey Optimizer] Bibliotek.</li></ul>|
 
 ## [!DNL Journey Approver] {#journey-approver}

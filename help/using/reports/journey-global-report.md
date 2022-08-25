@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e851646e-4cef-45e8-97c2-a8f4c9d2cc08
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: d431673dd55b41b8d2de21ec82fa4b15baa13a0f
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1664'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,13 @@ The **[!UICONTROL Top Actions]** tabellen innehåller tillgängliga data för **
 * **[!UICONTROL Actions successfully executed]**: Totalt antal **[!UICONTROL Actions]** har slutförts för en resa.
 
 * **[!UICONTROL Error in action]**: Totalt antal fel som uppstått för **[!UICONTROL Actions]**.
+
+![](assets/global_report_25.png)
+
+The **[!UICONTROL Consent policies]** tabellen och diagrammet visar antalet profiler som utesluts från varje princip i dina anpassade åtgärder.
+Mer information om anpassade åtgärder finns i [detaljerad dokumentation](../action/about-custom-action-configuration.md).
+
+Observera att för att dessa widgetar ska visas i dina Journeys-rapporter måste du återställa dina instrumentpaneler. Om du vill göra det klickar du **[!UICONTROL Modify]** sedan **[!UICONTROL Reset]** överst i rapporten.
 
 ## Fliken E-post {#email-global}
 

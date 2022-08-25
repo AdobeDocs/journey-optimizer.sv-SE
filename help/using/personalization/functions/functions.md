@@ -6,7 +6,7 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: 315c3e8c04b2e3944d0d5b2befb205acbe0ef7c9
 workflow-type: tm+mt
 source-wordcount: '1738'
 ht-degree: 1%
@@ -313,7 +313,7 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
         <td><a href="string.md#url-decode">URL-avkodning</a></td><td>Den här funktionen används för att avkoda en URL-kodad sträng.</td>
     </tr>
     <tr>
-        <td><a href="string.md#url-encode">URL-encore</a></td><td>Den här funktionen används för att URL-koda en sträng.</td>
+        <td><a href="string.md#url-encode">URL-kodning</a></td><td>Den här funktionen används för att URL-koda en sträng.</td>
     </tr>
 </table>
 

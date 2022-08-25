@@ -6,9 +6,10 @@ description: Lär dig hur du skapar en datauppsättning för att samla in hände
 feature: Ranking Formulas
 role: User
 level: Intermediate
-source-git-commit: 12b01cb9de84399e5ede987866609acc10b64c5f
+exl-id: 99963ef4-0b19-475e-96f4-2eac3f680c6f
+source-git-commit: 5abcef4ff057bb351abaafbf4dcb99e1ab61c6a9
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '237'
 ht-degree: 7%
 
 ---
@@ -27,8 +28,11 @@ Innan du skapar en AI-modell måste du skapa en datauppsättning där konverteri
 
    >[!NOTE]
    >
-   >    Läs mer om XDM-scheman och fältgrupper i [Översikt över XDM-systemet - dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv).
+   >Läs mer om XDM-scheman och fältgrupper i [Översikt över XDM-systemet - dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target=&quot;_blank&quot;}.
 
+1. Från **[!UICONTROL Field groups]** till vänster väljer du **[!UICONTROL Add]**.
+
+   ![](../assets/ai-ranking-fields-groups.png)
 
 1. I **[!UICONTROL Search]** -fält, skriv&quot;interaktion för förslag&quot; och välj **[!UICONTROL Experience Event - Proposition Interactions]** fältgrupp.
 
@@ -36,7 +40,7 @@ Innan du skapar en AI-modell måste du skapa en datauppsättning där konverteri
 
    >[!CAUTION]
    >
-   >    Schemat som ska användas i datauppsättningen måste ha **[!UICONTROL Experience Event - Proposition Interactions]** fältgrupp som är associerad med den. Annars kan du inte använda den i din rankningsstrategi.
+   >Schemat som ska användas i datauppsättningen måste ha **[!UICONTROL Experience Event - Proposition Interactions]** fältgrupp som är associerad med den. Annars kan du inte använda den i din rankningsstrategi.
 
 1. Klicka på **[!UICONTROL Add field groups]**.
 
@@ -45,11 +49,11 @@ Innan du skapar en AI-modell måste du skapa en datauppsättning där konverteri
    >[!NOTE]
    >Fältgruppen kallades tidigare för mixin.
 
-1. Skriv ett namn och spara schemat.<!--How do you edit the fields in this new schema? Examples?-->
+1. Skriv ett namn och spara schemat.
 
 >[!NOTE]
 >
->    Läs mer om scheman i [Grunderna för schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#understanding-schemas).
+>Läs mer om scheman i [Grunderna för schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#understanding-schemas){target=&quot;_blank&quot;}.
 
 Du är nu redo att skapa en datauppsättning med det här schemat. Följ stegen nedan för att göra detta:
 

@@ -7,9 +7,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: 9b681f04100e25362b9093a3de2e3603457c2744
+source-git-commit: 4b9de36d951308425e54924908b7b80b83c94e51
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '400'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->Den 25 juli släpper Adobe Journey Optimizer en [ny funktion](using/rn/inline-messages.md) vilket förbättrar det sätt på vilket du skapar innehåll för Journey Optimizer-kanaler (e-post, push, SMS). Som Journey Optimizer-läkare har du nu [skapa och skriva](using/messages/get-started-content.md) meddelanden direkt från en resa. En automatisk omräkning av resor utförs åt dig. Vi behöver er hjälp med några steg. Läs mer på [obligatoriska steg](using/rn/inline-messages-steps.md).
+>22 juli publicerade Adobe Journey Optimizer en [ny funktion](using/rn/inline-messages.md) vilket förbättrar det sätt på vilket du skapar innehåll för Journey Optimizer-kanaler (e-post, push, SMS). Som Journey Optimizer-läkare har du nu [skapa och skriva](using/messages/get-started-content.md) meddelanden direkt från en resa. En automatisk omräkning av resor utförs åt dig. Vi behöver er hjälp med några steg. Läs mer på [obligatoriska steg](using/rn/inline-messages-steps.md).
 
 <table style="table-layout:fixed">
 <tr>

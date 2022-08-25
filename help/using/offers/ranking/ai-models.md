@@ -7,7 +7,7 @@ feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: 4f7f7d1d-a12a-4ff6-b0ff-1a1c3d305a9d
-source-git-commit: 3188bc97b8103d2a01101a23d8c242a3e2924f76
+source-git-commit: 12bc2373ac5c391764df3880c5c87666a19e99b2
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 3%
@@ -30,9 +30,9 @@ Det finns två typer av AI-modeller i [!DNL Journey Optimizer]:
 
 * **Personaliseringsmodeller** kan ni definiera affärsmål och använda kunddata för att utbilda affärsinriktade modeller för att leverera personaliserade erbjudanden och maximera nyckeltal. [Läs mer](personalized-optimization-model.md)
 
->[!CAUTION]
->
->Personaliserade optimeringsmodeller är för närvarande tillgängliga i ett tidigt skede och endast för vissa användare.
+   >[!CAUTION]
+   >
+   >Personaliserade optimeringsmodeller är för närvarande tillgängliga i ett tidigt skede och endast för vissa användare.
 
 ## Skapa en AI-modell {#create-ai-model}
 

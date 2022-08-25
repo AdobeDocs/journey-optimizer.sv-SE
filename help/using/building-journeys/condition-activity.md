@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 496c7666-a133-4aeb-be8e-c37b3b9bf5f9
-source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
+source-git-commit: 9eebc64476b1fb7c1d0300cf66b0377dfbf0754f
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1328'
 ht-degree: 7%
 
 ---
@@ -113,9 +113,9 @@ På så sätt kan du definiera ett annat flöde baserat på datumet. Om personen
 
 Använd den här villkorstypen om du vill ange ett maximalt antal profiler för en resebana. När den här gränsen nås får de inmatade profilerna en alternativ sökväg. På så sätt kan du vara säker på att dina resor aldrig överskrider den definierade gränsen.
 
-    >[!OBS!]
-    >
-    >Vi rekommenderar att du definierar ett högt värde för profilen. Precisionen och sannolikheten för att en population kommer att nå det exakta högsta tillåtna talet ökar bara när det övre gränsvärdet ökar. För små tal (till exempel ett tak på 50) kommer siffrorna inte alltid att matcha upp eftersom gränsen kanske inte nås innan profilerna använder en alternativ sökväg.
+>[!NOTE]
+>
+>Vi rekommenderar att du definierar ett högt profiltak. Precisionen och sannolikheten för att en population kommer att nå det exakta högsta tillåtna talet ökar bara när det övre gränsvärdet ökar. För små tal (till exempel ett tak på 50) kommer siffrorna inte alltid att matcha upp eftersom gränsen kanske inte nås innan profilerna använder en alternativ sökväg.
 
 Du kan använda den här villkorstypen för att öka volymen på dina leveranser. Se det här [användningsfall](ramp-up-deliveries-uc.md).
 

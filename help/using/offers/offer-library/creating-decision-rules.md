@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 401ce05b-412b-4fa0-a516-bf75727f6387
-source-git-commit: 8766f64c4ea7985c6c9d6e4ba022ef6b1fc0dbed
+source-git-commit: 55d9befff9b9bf1bc81c6553cd76f015fdd3116e
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '317'
 ht-degree: 5%
 
 ---
@@ -46,6 +46,10 @@ Så här skapar du en beslutsregel:
 1. När du lägger till och konfigurerar nya fält på arbetsytan visas **[!UICONTROL Segment properties]** visas information om de uppskattade profiler som tillhör segmentet. Klicka **[!UICONTROL Refresh estimate]** för att uppdatera data.
 
    ![](../assets/offers_decision_rule_creation_estimate.png)
+
+   >[!NOTE]
+   >
+   >Profiluppskattningar är inte tillgängliga när regelparametrar innehåller data som inte finns i profilen, till exempel kontextdata. Exempel: en regel som kräver att det aktuella vädret är ≥80 grader.
 
 1. Klicka på **[!UICONTROL Save]** för att bekräfta.
 
