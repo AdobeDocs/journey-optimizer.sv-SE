@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: 711fdf1dce0688d2e21d405a4e3e8777612b2f3b
+source-git-commit: bc036fc52424adaf129ab379872dedfc5994c3bb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '321'
+ht-degree: 2%
 
 ---
 
@@ -29,6 +29,8 @@ ht-degree: 0%
 Med kampanjer kan ni leverera engångsinnehåll till ett visst segment med hjälp av flera kanaler. Till skillnad från resor, där åtgärder är utformade för att utföras i sekvens, kör kampanjer samtidigt, antingen direkt eller enligt ett angivet schema.
 
 På så sätt kan ni skicka enkla ad hoc-batchmeddelanden för marknadsföringsändamål som kampanjerbjudanden, engagemangskampanjer, meddelanden, juridiska meddelanden eller policyuppdateringar.
+
+➡️ [Upptäck den här funktionen i en video](#video)
 
 <!--You can create two types of campaigns:
 
@@ -58,3 +60,9 @@ Kampanjer kan ha flera statusvärden:
 >[!NOTE]
 >
 >Ikonen&quot;Öppna utkast&quot; bredvid en **[!UICONTROL Live]** eller **[!UICONTROL Scheduled]** status anger att en ny version av kampanjen har skapats och ännu inte har aktiverats (se [Ändra en kampanj](modify-stop-campaign.md#modify)).
+
+## Instruktionsvideo {#video}
+
+Lär dig hur du skapar din första kampanj.
+
+>[!VIDEO](https://video.tv.adobe.com/v/346680?quality=12)
