@@ -2,10 +2,10 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: bc036fc52424adaf129ab379872dedfc5994c3bb
+source-git-commit: 4576fbc4f75951e0576787b7631e164a87fdb83d
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 <td>
 <p>Använd Journey Optimizer kampanjer för att leverera engångsinnehåll till ett visst segment via olika kanaler. När du använder resor är åtgärderna utformade för att utföras i sekvens. Med kampanjer utförs åtgärder samtidigt, antingen omedelbart eller baserat på ett angivet schema. </p>
 <img src="assets/do-not-localize/campaigns.gif"/>
-<p>Lär dig hur du skapar en kampanj i <a href="../campaigns/get-started-with-campaigns.md">detaljerad dokumentation</a> och <a href="https://video.tv.adobe.com/v/345376">funktionsvideo</a>.
+<p>Lär dig hur du skapar en kampanj i <a href="../campaigns/get-started-with-campaigns.md">detaljerad dokumentation</a> och <a href="https://video.tv.adobe.com/v/346680">funktionsvideo</a>.
 </td>
 </tr>
 </tbody>
