@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: bc036fc52424adaf129ab379872dedfc5994c3bb
+source-git-commit: 8d8586a6c70b6fc01dbd1c2a8833079f422c93f7
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '373'
 ht-degree: 2%
 
 ---
@@ -22,10 +22,6 @@ ht-degree: 2%
 
 ## Om kampanjer {#about}
 
->[!IMPORTANT]
->
->Den här funktionen är bara tillgänglig för användare med tillgång till en Campaign-relaterad produktprofil, till exempel Campaign-administratör, Campaign-godkännare, Campaign-hanterare och/eller Campaign-visningsprogram. Mer information om hur du tilldelar produktprofiler finns i [den här sidan](../administration/permissions.md).
-
 Med kampanjer kan ni leverera engångsinnehåll till ett visst segment med hjälp av flera kanaler. Till skillnad från resor, där åtgärder är utformade för att utföras i sekvens, kör kampanjer samtidigt, antingen direkt eller enligt ett angivet schema.
 
 På så sätt kan ni skicka enkla ad hoc-batchmeddelanden för marknadsföringsändamål som kampanjerbjudanden, engagemangskampanjer, meddelanden, juridiska meddelanden eller policyuppdateringar.
@@ -36,6 +32,28 @@ På så sätt kan ni skicka enkla ad hoc-batchmeddelanden för marknadsförings�
 
 * **Scheduled campaigns** allow for simple ad-hoc batch communications for marketing use cases like promotional offers, engagement campaigns, announcements, legal notices, or policy updates.
 * **API Triggered Campaigns** allow for simple transactional/operational messages with REST APIs (password reset, card abandonment, etc.), where the need may involve personalization using profile attributes and contextual data from payload.-->
+
+## Förutsättningar {#campaign-prerequisites}
+
+Campaign är bara tillgängligt för användare som har åtkomst till en Campaign-relaterad **[!UICONTROL Product profile]** som Campaign-administratör, Campaign-godkännare, Campaign-chef och/eller Campaign-visningsprogram.
+
+Tilldela motsvarande **[!UICONTROL Product profile]** till användarna:
+
+1. Från [!DNL Admin console]väljer du [!DNL Adobe Experience Platform] produkt.
+
+1. Från **[!UICONTROL Product profile]** väljer du en av de inbyggda Campaign-relaterade **[!UICONTROL Product profile]**: Kampanjadministratör, Kampanjgodkännare, Kampanjhanterare eller Kampanjvisningsprogram.
+
+   Mer information om Campaign **[!UICONTROL Product profiles]** och **[!UICONTROL Permissions]**, se [page](../administration/ootb-product-profiles.md).
+
+   ![](assets/do-not-localize/admin_1.png)
+
+1. Klicka **[!UICONTROL Add user]** för att tilldela användaren det valda **[!UICONTROL Product profile]**.
+
+   ![](assets/do-not-localize/admin_2.png)
+
+1. Ange användarens namn, grupp eller e-postadress och klicka på **[!UICONTROL Save]**.
+
+Användaren kan nu komma åt **[!UICONTROL Campaigns]**.
 
 ## Åtkomst till kampanjer {#access}
 
