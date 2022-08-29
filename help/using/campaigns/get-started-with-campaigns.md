@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: d747cc9a4d065ea9110cb8065c113326959e2a41
+source-git-commit: b73d4495a231a40d833f4fee4dc094b808d659bd
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 2%
@@ -35,32 +35,33 @@ Skapa kampanjer för att skicka enkla ad hoc-batchmeddelanden för marknadsföri
 
 Kontrollera följande innan du börjar skapa din första kampanj i Journey Optimizer:
 
-1. **Du behöver rätt behörigheter**. Kampanjer är bara tillgängliga för användare med tillgång till en kampanjrelaterad **[!UICONTROL Product profile]** som Campaign-administratör, Campaign-godkännare, Campaign-chef och/eller Campaign-visningsprogram. Om du inte kan komma åt kampanjer måste din behörighet utökas. Om du har åtkomst till [Adobe Admin Console](https://adminconsole.adobe.com/){target=&quot;_blank&quot;} för din organisation, följ stegen nedan. Om inte, kontakta Journey Optimizer-administratören.
+1. **Du behöver rätt behörigheter**. Kampanjer är bara tillgängliga för användare med tillgång till en kampanjrelaterad **[!UICONTROL Product profile]** som Campaign-administratör, Campaign-godkännare, Campaign-chef och/eller Campaign-visningsprogram.
 
-+++Lär dig hur du tilldelar kampanjbehörigheter
+   Om du inte kan komma åt kampanjer måste din behörighet utökas. Om du har åtkomst till [Adobe Admin Console](https://adminconsole.adobe.com/){target=&quot;_blank&quot;} för din organisation, följ stegen nedan. Om inte, kontakta Journey Optimizer-administratören.
 
-Tilldela motsvarande **[!UICONTROL Product profile]** till användarna:
+   +++Lär dig hur du tilldelar kampanjbehörigheter
 
-1. Från [!DNL Admin console]väljer du [!DNL Adobe Experience Platform] produkt.
+   Tilldela motsvarande **[!UICONTROL Product profile]** till användarna:
 
-1. Från **[!UICONTROL Product profile]** väljer du en av de inbyggda Campaign-relaterade **[!UICONTROL Product profile]**: Kampanjadministratör, Kampanjgodkännare, Kampanjhanterare eller Kampanjvisningsprogram.
+   1. Från [!DNL Admin console]väljer du [!DNL Adobe Experience Platform] produkt.
 
-   Mer information om Journey Optimizer kampanj **[!UICONTROL Product profiles]** och **[!UICONTROL Permissions]**, [hänvisa till denna sida](../administration/ootb-product-profiles.md).
+   1. Från **[!UICONTROL Product profile]** väljer du en av de inbyggda Campaign-relaterade **[!UICONTROL Product profile]**: Kampanjadministratör, Kampanjgodkännare, Kampanjhanterare eller Kampanjvisningsprogram.
 
-   ![](assets/do-not-localize/admin_1.png)
+      Mer information om Journey Optimizer kampanj **[!UICONTROL Product profiles]** och **[!UICONTROL Permissions]**, [hänvisa till denna sida](../administration/ootb-product-profiles.md).
 
-1. Klicka **[!UICONTROL Add user]** för att tilldela användaren det valda **[!UICONTROL Product profile]**.
+      ![](assets/do-not-localize/admin_1.png)
 
-   ![](assets/do-not-localize/admin_2.png)
+   1. Klicka **[!UICONTROL Add user]** för att tilldela användaren det valda **[!UICONTROL Product profile]**.
 
-1. Ange användarens namn, grupp eller e-postadress och klicka på **[!UICONTROL Save]**.
+      ![](assets/do-not-localize/admin_2.png)
 
-Användaren kan nu komma åt **[!UICONTROL Campaigns]**.
+   1. Ange användarens namn, grupp eller e-postadress och klicka på **[!UICONTROL Save]**.
+   Användaren kan nu komma åt **[!UICONTROL Campaigns]**.
 
 +++
 
 1. **Ni behöver en målgrupp**. Målgruppssegment måste vara tillgängliga innan kampanjen kan skapas. Läs mer om målgruppsframtagning [på den här sidan](../segment/about-segments.md).
-1. **Du behöver en kanalyta**. Om du vill kunna välja en kanal måste du ha motsvarande kanalyta skapad och tillgänglig. Läs mer om kanalytor (t.ex. förinställningar) [på den här sidan](../configuration/channel-surfaces.md)
+1. **Du behöver en kanalyta**. Om du vill kunna markera en kanal måste du ha motsvarande kanalyta (dvs. förinställning) skapad och tillgänglig. Läs mer om kanalytor [på den här sidan](../configuration/channel-surfaces.md)
 
 ## Åtkomst till kampanjer {#access}
 
