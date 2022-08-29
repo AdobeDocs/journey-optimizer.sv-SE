@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: b73d4495a231a40d833f4fee4dc094b808d659bd
+source-git-commit: bbcafe364ca13501972b3d8e1150aa2f51ba88a0
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 2%
+source-wordcount: '486'
+ht-degree: 3%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 >title="Kampanjer"
 >abstract="Skapa kampanjer för att leverera engångsinnehåll till ett specifikt segment i olika kanaler. Innan du skapar din kampanj måste du se till att du har en kanalyta (t.ex. en meddelandeförinställning) och ett Adobe Experience Platform-segment som är klart att användas."
 
-Använd Journey Optimizer kampanjer för att leverera engångsinnehåll till ett visst segment via olika kanaler. När du använder resor är åtgärderna utformade för att utföras i sekvens. Med kampanjer utförs åtgärder samtidigt, antingen omedelbart eller baserat på ett angivet schema.
+Använd Journey Optimizer kampanjer för att leverera engångsinnehåll till ett visst segment via olika kanaler. När du använder resor utförs åtgärderna i sekvens. Med kampanjer utförs åtgärder samtidigt, antingen omedelbart eller baserat på ett angivet schema.
 
 Skapa kampanjer för att skicka enkla ad hoc-batchmeddelanden för marknadsföringsfall som kampanjerbjudanden, engagemangskampanjer, meddelanden, juridiska meddelanden eller policyuppdateringar.
 
@@ -43,9 +43,9 @@ Kontrollera följande innan du börjar skapa din första kampanj i Journey Optim
 
    Tilldela motsvarande **[!UICONTROL Product profile]** till användarna:
 
-   1. Från [!DNL Admin console]väljer du [!DNL Adobe Experience Platform] produkt.
+   1. Från [Adobe Admin Console](https://adminconsole.adobe.com/){target=&quot;_blank&quot;} väljer du [!DNL Adobe Experience Platform] produkt.
 
-   1. Från **[!UICONTROL Product profile]** väljer du en av de inbyggda Campaign-relaterade **[!UICONTROL Product profile]**: Kampanjadministratör, Kampanjgodkännare, Kampanjhanterare eller Kampanjvisningsprogram.
+   1. Bläddra till **[!UICONTROL Product profile]** väljer du en av de inbyggda kampanjrelaterade **[!UICONTROL Product profile]**: Kampanjadministratör, Kampanjgodkännare, Kampanjhanterare eller Kampanjvisningsprogram.
 
       Mer information om Journey Optimizer kampanj **[!UICONTROL Product profiles]** och **[!UICONTROL Permissions]**, [hänvisa till denna sida](../administration/ootb-product-profiles.md).
 
@@ -56,12 +56,12 @@ Kontrollera följande innan du börjar skapa din första kampanj i Journey Optim
       ![](assets/do-not-localize/admin_2.png)
 
    1. Ange användarens namn, grupp eller e-postadress och klicka på **[!UICONTROL Save]**.
-   Användaren kan nu komma åt **[!UICONTROL Campaigns]**.
+   Användaren har nu åtkomst **[!UICONTROL Campaigns]**.
 
 +++
 
 1. **Ni behöver en målgrupp**. Målgruppssegment måste vara tillgängliga innan kampanjen kan skapas. Läs mer om målgruppsframtagning [på den här sidan](../segment/about-segments.md).
-1. **Du behöver en kanalyta**. Om du vill kunna markera en kanal måste du ha motsvarande kanalyta (dvs. förinställning) skapad och tillgänglig. Läs mer om kanalytor [på den här sidan](../configuration/channel-surfaces.md)
+1. **Du behöver en kanalyta**. Om du vill kunna markera en kanal måste du ha motsvarande kanalyta (dvs. förinställning) skapad och tillgänglig. Läs mer om kanalytor [på den här sidan](../configuration/channel-surfaces.md).
 
 ## Åtkomst till kampanjer {#access}
 
@@ -78,14 +78,14 @@ Kampanjer kan ha flera statusvärden:
 * **[!UICONTROL Draft]**: Kampanjen redigeras, den har inte aktiverats.
 * **[!UICONTROL Activating]**: Kampanjen aktiveras.
 * **[!UICONTROL Live]**: Kampanjen har aktiverats.
-* **[!UICONTROL Scheduled]**: Kampanjen har konfigurerats för att aktiveras ett visst startdatum.
-* **[!UICONTROL Stopped]**: Kampanjen har stoppats manuellt. Du kan inte aktivera eller återanvända den längre (se [Stoppa en kampanj](modify-stop-campaign.md#stop))
+* **[!UICONTROL Scheduled]**: Kampanjen är konfigurerad att aktiveras ett visst startdatum.
+* **[!UICONTROL Stopped]**: Kampanjen har stoppats manuellt. Du kan inte aktivera eller återanvända den längre. [Läs mer](modify-stop-campaign.md#stop)
 * **[!UICONTROL Completed]**: Kampanjen är färdig. Den här statusen tilldelas automatiskt 3 dagar efter att en kampanj har aktiverats, eller vid kampanjens slutdatum om den har en återkommande körning.
 * **[!UICONTROL Archived]**: Kampanjen har arkiverats.
 
 >[!NOTE]
 >
->Ikonen&quot;Öppna utkast&quot; bredvid en **[!UICONTROL Live]** eller **[!UICONTROL Scheduled]** status anger att en ny version av kampanjen har skapats och ännu inte har aktiverats (se [Ändra en kampanj](modify-stop-campaign.md#modify)).
+>Ikonen&quot;Öppna utkast&quot; bredvid en **[!UICONTROL Live]** eller **[!UICONTROL Scheduled]** status anger att en ny version av kampanjen har skapats och ännu inte har aktiverats. [Läs mer](modify-stop-campaign.md#modify).
 
 ## Instruktionsvideo {#video}
 

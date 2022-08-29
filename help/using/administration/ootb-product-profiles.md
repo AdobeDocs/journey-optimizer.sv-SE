@@ -6,20 +6,19 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 5a968bd8-cf76-4242-aa80-3cfb3d551511
-source-git-commit: 711fdf1dce0688d2e21d405a4e3e8777612b2f3b
+source-git-commit: 3afef10461ce29b811cb20a2c8c4e94f452daf1f
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1113'
 ht-degree: 7%
 
 ---
 
 # Inbyggda produktprofiler {#ootb-product-profiles}
 
-Adobe Journey Optimizer har släppt en ny funktion, onlineredigering, som gör att du kan skapa och skriva meddelanden direkt under en resa. Mer information om den här nya funktionen finns på den här sidan.
 
->[!WARNING]
->
->Om du har användare tilldelade till **[!DNL Message Manager]** endast produktprofil, utan **[!DNL Journey manager]** produktprofil måste du tilldela en ny produktprofil så att de kan fortsätta redigera innehåll.
+## Om behörigheter för meddelanden{#message-permissions}
+
+Adobe Journey Optimizer har släppt nya funktioner för onlineframtagning som gör att ni kan skapa och skriva meddelanden direkt från en resa eller en kampanj. Mer information om den här nya funktionen finns i [hänvisa till denna sida](../rn/inline-messages.md).
 
 Den här funktionen påverkar behörigheterna enligt följande:
 
@@ -31,9 +30,14 @@ Den här funktionen påverkar behörigheterna enligt följande:
 | **[!DNL Publish Messages]** | **[!DNL Publish Journeys]** |
 | **[!DNL Manage Messages Preview and Test]** | **[!DNL Manage Journeys]** |
 
-**Efter 25 juli**, är behörigheter för meddelanden fortfarande tillgängliga eftersom meddelanden fortfarande är tillgängliga för att aktivera övergångar och du kan fortfarande spara dem som mallar.
+**Efter 25 juli**, behörigheter relaterade till **Meddelanden** är fortfarande tillgängliga eftersom det fortfarande går att komma åt meddelanden för att aktivera övergången och du kan fortfarande spara dem som mallar.
 
-**Från och med 6 september**, behörigheter för meddelanden tas bort och meddelanden är inte längre tillgängliga.
+**Från och med 6 september**, behörigheter relaterade till **Meddelanden** tas bort och meddelanden är inte längre tillgängliga.
+
+>[!WARNING]
+>
+>Om du har användare tilldelade till **[!DNL Message Manager]** endast produktprofil, utan **[!DNL Journey manager]** produktprofil måste du tilldela en ny produktprofil så att de kan fortsätta redigera innehåll.
+
 
 ## [!DNL Campaign Administrator] {#campaign-administrator}
 
@@ -61,9 +65,9 @@ Den här produktprofilen innehåller följande behörigheter:
 | Funktioner | Behörigheter| |-|-| |Kampanjer| <ul><li>**[!DNL Manage campaigns]**: läsa, skapa, redigera och ta bort kampanjer.</li><li>**[!DNL View campaigns report]**: läsa, redigera reserapport.</li></ul>| |Beslutshantering| <ul><li>**[!DNL Manage decisions]**: läsa, skapa, redigera och ta bort beslutsenheter.</li><li>**[!DNL Manage ranking strategies]**: läsa, skapa, redigera och ta bort anpassade meddelanderapporter och använda åtgärdsfunktioner.</li></ul>| |Adobe Experience Platform| <ul><li> **[!DNL Manage segments]**: läsa, skapa, redigera och ta bort segment.</li><li>**[!DNL Manage profiles]**: läsa, skapa, redigera och ta bort profiler.</li><li>**[!DNL Read datasets]**: skrivskyddad åtkomst till datauppsättningar.</li><li>**[!DNL Read schemas]**: skrivskyddad åtkomst till scheman.</li><li>**[!DNL Manage merge policies]**: läsa, skapa, redigera och ta bort sammanfogningsprinciper.</li></ul>|
 |Administrering| <ul><li>**[!DNL View messages presets]**: skrivskyddad åtkomst till meddelandeförinställningar.</li></ul>|
 
-## [!DNL Campaign viewer] {#campaign-viewer}
+## [!DNL Campaign Viewer] {#campaign-viewer}
 
-The **[!DNL Campaign viewer]** produktprofilen tillåter skrivskyddad åtkomst till **[!UICONTROL Campaigns]** och **[!UICONTROL Decision management]** funktioner.
+The **[!DNL Campaign Viewer]** produktprofilen tillåter skrivskyddad åtkomst till **[!UICONTROL Campaigns]** och **[!UICONTROL Decision management]** funktioner.
 
 Användare som är tilldelade den här produktprofilen kan inte redigera eller publicera.
 
