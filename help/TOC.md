@@ -5,10 +5,10 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 5b8a895f628a71291684c8a17d8d7a2cf947fb2f
+source-git-commit: 14b0928821e0c1815869711a0bb68a09beb1b7e4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1130'
+ht-degree: 38%
 
 ---
 
@@ -44,7 +44,81 @@ ht-degree: 0%
       + [Förstå statistiska beräkningar](using/campaigns/experiment-calculations.md)
       + [Rapporteringskonfiguration](using/campaigns/reporting-configuration.md)
    + [Utlösa kampanjer med API:er](using/campaigns/api-triggered-campaigns.md)
-+ Resor{#orchestrate-journeys}
++ Meddelanden {#messages}
+   + [Kom igång med meddelanden](using/messages/get-started-content.md)
+   + [Lägg till meddelanderesor](using/messages/messages-in-journeys.md)
+   + [Lägg till meddelandekampanjer](using/messages/messages-in-campaigns.md)
+   + [Skapa ett e-postmeddelande](using/messages/create-email.md)
+   + [Skapa ett push-meddelande](using/messages/create-push.md)
+   + [Skapa ett SMS-meddelande](using/messages/create-sms.md)
+   + [Kontrollera aviseringar](using/messages/alerts.md)
+   + [Hantera medgivande](using/messages/consent.md)
+   + [Tidsoptimering för sändning](using/messages/send-time-optimization.md)
++ Designinnehåll {#design}
+   + [Kom igång med e-postdesign](using/design/design-emails.md)
+   + [Börja från början ](using/design/create-email-content.md)
+   + [Importera e-postinnehåll](using/design/existing-content.md)
+   + [Koda eget innehåll](using/design/code-content.md)
+   + [Arbeta med mallar](using/design/email-templates.md)
+   + Innehållsdesign {#design-content}
+      + [Använda innehållskomponenter](using/design/content-components.md)
+      + [Bakgrundsinställningar](using/design/backgrounds.md)
+      + [Justera lodrät justering och utfyllnad](using/design/adjusting-vertical-alignment-and-padding.md)
+      + [Definiera ett format för länkar](using/design/styling-links.md)
+      + [Lägg till textbundna formatattribut](using/design/adding-inline-styling-attributes.md)
+   + E-postinställningar {#design-email}
+      + [Generera textversionen](using/design/text-version-email.md)
+      + [Lägga till en förrubrik](using/design/preheader.md)
+   + Lägga till och hantera resurser {#manage-asset}
+      + [Arbeta med Assets Essentials](using/design/assets-essentials.md)
+      + [Arbeta med Adobe Stock](using/design/stock.md)
+   + [Lägg till personaliserade erbjudanden](using/design/deliver-personalized-offers.md)
+   + [Lägga till länkar och spåra meddelanden](using/design/message-tracking.md)
+   + [Förhandsgranska och korrektur](using/design/preview.md)
++ Landningssidor {#landing-pages}
+   + [Kom igång med landningssidor](using/landing-pages/get-started-lp.md)
+   + [Skapa en landningssida](using/landing-pages/create-lp.md)
+   + Designinnehåll {#landing-pages-design}
+      + [Om landningssidans design](using/landing-pages/design-lp.md)
+      + [Skapa innehållet på landningssidan](using/landing-pages/lp-content.md)
+      + [Skapa mallar](using/landing-pages/lp-templates.md)
+      + [Lägg till anpassat JavaScript](using/landing-pages/lp-custom-js.md)
+   + [Skapa en prenumerationslista](using/landing-pages/subscription-list.md)
+   + [Användningsfall](using/landing-pages/lp-use-cases.md)
++ Personalisering{#personalization}
+   + [Kom igång med personalisering](using/personalization/personalize.md)
+   + [Anpassningssammanhang](using/personalization/personalization-contexts.md)
+   + Bygga uttryck {#build-expressions}
+      + [Anpassningssyntax](using/personalization/personalization-syntax.md)
+      + Arbeta med uttrycksredigeraren {#expression-editor}
+         + [Om uttrycksredigeraren](using/personalization/personalization-build-expressions.md)
+         + [Lägg till attribut i favoriter](using/personalization/personalization-favorites.md)
+         + [Arbeta med sparade uttryck](using/personalization/personalization-library.md)
+         + [Validering av personalisering](using/personalization/personalization-validation.md)
+      + Hjälpfunktioner{#functions}
+         + [Kom igång med hjälpfunktioner](using/personalization/functions/functions.md)
+         + [Sammanställningsfunktioner](using/personalization/functions/aggregation.md)
+         + [Aritmetiska funktioner](using/personalization/functions/arithmetic-functions.md)
+         + [Arrayer och listfunktioner](using/personalization/functions/arrays-list.md)
+         + [Funktioner för datum och tid](using/personalization/functions/dates.md)
+         + [Boolean- och jämförelsefunktioner](using/personalization/functions/operators.md)
+         + [Hjälpmedel](using/personalization/functions/helpers.md)
+         + [Kartfunktioner](using/personalization/functions/maps.md)
+         + [Objektfunktioner](using/personalization/functions/objects.md)
+         + [Strängfunktioner](using/personalization/functions/string.md)
+   + Användningsfall{#personalization-use-cases}
+      + [Meddelande om orderstatus](using/personalization/personalization-use-case.md)
+      + [E-post om att kunden överger en kundvagn](using/personalization/personalization-use-case-helper-functions.md)
++ Segment, profiler och identitet{#segment}
+   + Segment {#segments}
+      + [Kom igång med segment](using/segment/about-segments.md)
+      + [Skapa segment](using/segment/creating-a-segment.md)
+   + Profiler{#profiles}
+      + [Kom igång med profiler](using/segment/get-started-profiles.md)
+      + [Skapa testprofiler](using/segment/creating-test-profiles.md)
+   + [Identiteter](using/segment/get-started-identity.md)
+   + [Licensanvändning](using/segment/license-usage.md)
++ Resor {#orchestrate-journeys}
    + Om resor{#about-journeys}
       + [Allmän princip](using/building-journeys/journey.md)
       + [Resans livscykel](using/building-journeys/journey-end.md)
@@ -165,80 +239,6 @@ ht-degree: 0%
       + [Skicka samlingar dynamiskt med anpassade åtgärder](using/building-journeys/collections.md)
       + [Skicka ett meddelande till prenumeranter](using/building-journeys/message-to-subscribers-uc.md)
       + [Rita upp leveranser](using/building-journeys/ramp-up-deliveries-uc.md)
-+ Meddelanden {#messages}
-   + [Kom igång med meddelanden](using/messages/get-started-content.md)
-   + [Lägg till meddelanderesor](using/messages/messages-in-journeys.md)
-   + [Lägg till meddelandekampanjer](using/messages/messages-in-campaigns.md)
-   + [Skapa ett e-postmeddelande](using/messages/create-email.md)
-   + [Skapa ett push-meddelande](using/messages/create-push.md)
-   + [Skapa ett SMS-meddelande](using/messages/create-sms.md)
-   + [Kontrollera aviseringar](using/messages/alerts.md)
-   + [Hantera medgivande](using/messages/consent.md)
-   + [Tidsoptimering för sändning](using/messages/send-time-optimization.md)
-+ Designinnehåll {#design}
-   + [Kom igång med e-postdesign](using/design/design-emails.md)
-   + [Börja från början ](using/design/create-email-content.md)
-   + [Importera e-postinnehåll](using/design/existing-content.md)
-   + [Koda eget innehåll](using/design/code-content.md)
-   + [Arbeta med mallar](using/design/email-templates.md)
-   + Innehållsdesign {#design-content}
-      + [Använda innehållskomponenter](using/design/content-components.md)
-      + [Bakgrundsinställningar](using/design/backgrounds.md)
-      + [Justera lodrät justering och utfyllnad](using/design/adjusting-vertical-alignment-and-padding.md)
-      + [Definiera ett format för länkar](using/design/styling-links.md)
-      + [Lägg till textbundna formatattribut](using/design/adding-inline-styling-attributes.md)
-   + E-postinställningar {#design-email}
-      + [Generera textversionen](using/design/text-version-email.md)
-      + [Lägga till en förrubrik](using/design/preheader.md)
-   + Lägga till och hantera resurser {#manage-asset}
-      + [Arbeta med Assets Essentials](using/design/assets-essentials.md)
-      + [Arbeta med Adobe Stock](using/design/stock.md)
-   + [Lägg till personaliserade erbjudanden](using/design/deliver-personalized-offers.md)
-   + [Lägga till länkar och spåra meddelanden](using/design/message-tracking.md)
-   + [Förhandsgranska och korrektur](using/design/preview.md)
-+ Landningssidor {#landing-pages}
-   + [Kom igång med landningssidor](using/landing-pages/get-started-lp.md)
-   + [Skapa en landningssida](using/landing-pages/create-lp.md)
-   + Designinnehåll {#landing-pages-design}
-      + [Om landningssidans design](using/landing-pages/design-lp.md)
-      + [Skapa innehållet på landningssidan](using/landing-pages/lp-content.md)
-      + [Skapa mallar](using/landing-pages/lp-templates.md)
-      + [Lägg till anpassat JavaScript](using/landing-pages/lp-custom-js.md)
-   + [Skapa en prenumerationslista](using/landing-pages/subscription-list.md)
-   + [Användningsfall](using/landing-pages/lp-use-cases.md)
-+ Personalisering{#personalization}
-   + [Kom igång med personalisering](using/personalization/personalize.md)
-   + [Anpassningssammanhang](using/personalization/personalization-contexts.md)
-   + Bygga uttryck {#build-expressions}
-      + [Anpassningssyntax](using/personalization/personalization-syntax.md)
-      + Arbeta med uttrycksredigeraren {#expression-editor}
-         + [Om uttrycksredigeraren](using/personalization/personalization-build-expressions.md)
-         + [Lägg till attribut i favoriter](using/personalization/personalization-favorites.md)
-         + [Arbeta med sparade uttryck](using/personalization/personalization-library.md)
-         + [Validering av personalisering](using/personalization/personalization-validation.md)
-      + Hjälpfunktioner{#functions}
-         + [Kom igång med hjälpfunktioner](using/personalization/functions/functions.md)
-         + [Sammanställningsfunktioner](using/personalization/functions/aggregation.md)
-         + [Aritmetiska funktioner](using/personalization/functions/arithmetic-functions.md)
-         + [Arrayer och listfunktioner](using/personalization/functions/arrays-list.md)
-         + [Funktioner för datum och tid](using/personalization/functions/dates.md)
-         + [Boolean- och jämförelsefunktioner](using/personalization/functions/operators.md)
-         + [Hjälpmedel](using/personalization/functions/helpers.md)
-         + [Kartfunktioner](using/personalization/functions/maps.md)
-         + [Objektfunktioner](using/personalization/functions/objects.md)
-         + [Strängfunktioner](using/personalization/functions/string.md)
-   + Användningsfall{#personalization-use-cases}
-      + [Meddelande om orderstatus](using/personalization/personalization-use-case.md)
-      + [E-post om att kunden överger en kundvagn](using/personalization/personalization-use-case-helper-functions.md)
-+ Segment, profiler och identitet{#segment}
-   + Segment {#segments}
-      + [Kom igång med segment](using/segment/about-segments.md)
-      + [Skapa segment](using/segment/creating-a-segment.md)
-   + Profiler{#profiles}
-      + [Kom igång med profiler](using/segment/get-started-profiles.md)
-      + [Skapa testprofiler](using/segment/creating-test-profiles.md)
-   + [Identiteter](using/segment/get-started-identity.md)
-   + [Licensanvändning](using/segment/license-usage.md)
 + Spåra och övervaka {#reporting}
    + Live-rapport {#live-report}
       + [Åtkomst till Live-rapportkontrollpanelen](using/reports/live-report.md)
