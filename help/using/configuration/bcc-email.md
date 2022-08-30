@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 186a5044-80d5-4633-a7a7-133e155c5e9f
-source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
+source-git-commit: b5f779a67dd4f5a08981a0d16d1a902e78b775d6
 workflow-type: tm+mt
 source-wordcount: '1094'
 ht-degree: 1%
@@ -40,7 +40,7 @@ Alla e-postmeddelanden som använder den här ytan kommer att kopieras till den 
 >
 >Användningen av din BCC-funktion räknas av mot det antal meddelanden som du har licens för. Aktivera det därför bara i de ytor som används för viktig kommunikation som du vill arkivera. Kontrollera om det finns licensierade volymer i ditt avtal.
 
-Inställningen för BCC-e-postadressen sparas och bearbetas omedelbart på ytnivå. När du [skapa ett nytt meddelande](../messages/get-started-content.md#create-new-message) När du använder den här ytan visas e-postadressen för den kontroll av webbläsarkompatibilitet automatiskt.
+Inställningen för BCC-e-postadressen sparas och bearbetas omedelbart på ytnivå. När du [skapa ett nytt meddelande](../messages/get-started-content.md) När du använder den här ytan visas e-postadressen för den kontroll av webbläsarkompatibilitet automatiskt.
 
 ![](assets/preset-bcc-in-msg.png)
 

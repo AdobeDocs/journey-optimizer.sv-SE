@@ -7,7 +7,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 7f0cda1d-daf0-4d4c-9978-ddef81473813
-source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
+source-git-commit: b5f779a67dd4f5a08981a0d16d1a902e78b775d6
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 55%
@@ -25,7 +25,7 @@ ht-degree: 55%
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
-[!DNL Journey Optimizer] levereras med inbyggd meddelandefunktion. Se [det här avsnittet](../messages/get-started-content.md).
+[!DNL Journey Optimizer] levereras med inbyggd meddelandefunktion. Se [det här avsnittet](../messages/messages-in-journeys.md).
 
 Om du har Adobe Campaign v7 eller v8 blir en integrering tillgänglig på begäran. Se [den här sidan](../action/acc-action.md).
 

@@ -6,10 +6,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 5abcef4ff057bb351abaafbf4dcb99e1ab61c6a9
+source-git-commit: b5f779a67dd4f5a08981a0d16d1a902e78b775d6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1172'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,7 @@ I **E-POSTTYP** väljer du den typ av meddelande som ska skickas med ytan: **Mar
 >
 >**Transactional** e-postmeddelanden kan skickas till profiler som avbeställer marknadskommunikation. Dessa meddelanden kan bara skickas i särskilda sammanhang.
 
-När [skapa ett meddelande](../messages/get-started-content.md#create-new-message)måste du välja en giltig kanalyta som matchar den kategori du valde för e-postmeddelandet.
+När [skapa ett meddelande](../messages/get-started-content.md)måste du välja en giltig kanalyta som matchar den kategori du valde för e-postmeddelandet.
 
 ## Underdomän och IP-pool {#subdomains-and-ip-pools}
 
