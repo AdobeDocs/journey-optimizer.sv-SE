@@ -5,10 +5,10 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 8b2796fd5a133fe1a11b79927be0919ccae65ddb
+source-git-commit: 5b8a895f628a71291684c8a17d8d7a2cf947fb2f
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 38%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 38%
       + [Kom igång som utvecklare](using/start/path/developer.md)
    + [Användargränssnitt](using/start/user-interface.md)
    + [Guardrails](using/start/guardrails.md)
-+ Kampanjer {#campaigns}
++ Kampanjer{#campaigns}
    + [Kom igång med kampanjer](using/campaigns/get-started-with-campaigns.md)
    + [Skapa en kampanj](using/campaigns/create-campaign.md)
    + [Hantera livekampanjer](using/campaigns/modify-stop-campaign.md)
@@ -44,7 +44,7 @@ ht-degree: 38%
       + [Förstå statistiska beräkningar](using/campaigns/experiment-calculations.md)
       + [Rapporteringskonfiguration](using/campaigns/reporting-configuration.md)
    + [Utlösa kampanjer med API:er](using/campaigns/api-triggered-campaigns.md)
-+ Resor {#orchestrate-journeys}
++ Resor{#orchestrate-journeys}
    + Om resor{#about-journeys}
       + [Allmän princip](using/building-journeys/journey.md)
       + [Resans livscykel](using/building-journeys/journey-end.md)
