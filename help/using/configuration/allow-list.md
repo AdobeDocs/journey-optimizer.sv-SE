@@ -5,13 +5,10 @@ feature: Deliverability
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
-hidefromtoc: true
-exl-id: 70ab8f57-c132-4de1-847b-11f0ab14f422
-source-git-commit: 634e46c70aa272785950d669938f3b35ec07ab1e
+source-git-commit: 28380dbadf485ba05f7ef6788a50253876718441
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 2%
+source-wordcount: '589'
+ht-degree: 1%
 
 ---
 
@@ -35,19 +32,9 @@ Med tillåtelselista kan du ange enskilda e-postadresser eller domäner som ska 
 
 Om du vill få tillgång till en detaljerad lista över tillåtna e-postadresser och domäner går du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** och markera **[!UICONTROL Allowed list]**.
 
-![](assets/allow-list-access.png)
-
 >[!CAUTION]
 >
 >Tillstånd att visa, exportera och hantera tillåtelselista är begränsade till [Reseadministratörer](../administration/ootb-product-profiles.md#journey-administrator). Läs mer om hantering [!DNL Journey Optimizer] användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
-
-Om du vill exportera tillåtelselista som en CSV-fil väljer du **[!UICONTROL Download CSV]** -knappen.
-
-Använd **[!UICONTROL Delete]** om du vill ta bort en post permanent.
-
-Du kan söka efter e-postadresser eller domäner och filtrera på **[!UICONTROL Address type]**. När du har valt det här alternativet kan du rensa filtret som visas högst upp i listan.
-
-![](assets/allowed-list-filtering-example.png)
 
 ## Aktivera tillåtelselista {#enable-allow-list}
 
@@ -55,13 +42,9 @@ Följ stegen nedan för att aktivera tillåtelselista.
 
 1. Gå till **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL Allow list]**-menyn.
 
-1. Klicka på **[!UICONTROL Enable/Disable allowed list]**.
-
-   ![](assets/allow-list-edit.png)
+1. Klicka på **[!UICONTROL Edit]**.
 
 1. Välj **[!UICONTROL Enable allowed list]**.
-
-   ![](assets/allow-list-enable.png)
 
 1. Klicka på **[!UICONTROL Save]**. Tillåtelselista är aktiverat.
 
@@ -73,48 +56,11 @@ Logiken i tillåtelselista gäller när funktionen är aktiverad. Läs mer i [de
 
 ## Lägg till enheter i tillåtelselista {#add-entities}
 
-Om du vill lägga till nya e-postadresser eller domäner i tillåtelselista för en viss sandlåda kan du antingen [fylla i listan manuellt](#manually-populate-list)eller använda [API-anrop](#api-call-allowed-list).
+Om du vill lägga till nya e-postadresser eller domäner i tillåtelselista för en viss sandlåda kan du använda en [API-anrop](#api-call-allowed-list).
 
 >[!NOTE]
 >
 >Tillåtelselista kan innehålla upp till 1 000 poster.
-
-### Fyll i tillåtelselista manuellt {#manually-populate-list}
-
->[!CONTEXTUALHELP]
->id="ajo_admin_allowed_list_add"
->title="Lägg till adresser eller domäner i tillåtelselista"
->abstract="Du kan lägga till nya e-postadresser eller domäner manuellt till tillåtelselista genom att markera dem en i taget."
-
-Du kan fylla i [!DNL Journey Optimizer] tillåtelselista genom att lägga till en e-postadress eller en domän via användargränssnittet.
-
->[!NOTE]
->
->Du kan bara lägga till en e-postadress eller domän åt gången.
-
-Följ stegen nedan för att göra detta.
-
-1. Markera knappen **[!UICONTROL Add email or domain]**.
-
-   ![](assets/allowed-list-add-email.png)
-
-1. Välj adresstyp: **[!UICONTROL Email address]** eller **[!UICONTROL Domain address]**.
-
-1. Ange den e-postadress eller domän som du vill skicka e-post till.
-
-   >[!NOTE]
-   >
-   >Kontrollera att du anger en giltig e-postadress (till exempel abc@company.com) eller domän (till exempel abc.company.com).
-
-1. Ange en orsak om det behövs.
-
-   ![](assets/allowed-list-add-email-address.png)
-
-   >[!NOTE]
-   >
-   >Alla ASCII-tecken mellan 32 och 126 tillåts i **[!UICONTROL Reason]** fält. Den fullständiga listan finns på [den här sidan](https://en.wikipedia.org/wiki/Wikipedia:ASCII#ASCII_printable_characters){target=&quot;_blank&quot;} till exempel.
-
-1. Klicka på **[!UICONTROL Submit]**.
 
 ### Lägga till entiteter med ett API-anrop {#api-call-allowed-list}
 

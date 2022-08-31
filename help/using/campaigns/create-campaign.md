@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 7c4afc98-0d79-4e26-90f8-558bac037169
-source-git-commit: 87f9a4661b64cf24a8cd62bb9c70d5f1c9fcaddf
+source-git-commit: 28380dbadf485ba05f7ef6788a50253876718441
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '700'
 ht-degree: 3%
 
 ---
@@ -23,15 +23,15 @@ ht-degree: 3%
 >* [Kom igång med segment](../segment/about-segments.md)
 
 
-Så här skapar du en kampanj:
+## Skapa din första kampanj {#create}
 
 1. Öppna **[!UICONTROL Campaigns]** menyn och klicka sedan på **[!UICONTROL Create campaign]**.
 
-   ![](assets/create-campaign.png)
-
    >[!NOTE]
    >
-   >Du kan också duplicera en befintlig livekampanj och skapa en ny. [Läs mer](modify-stop-campaign.md#duplicate) <!-- check if only live campaigns-->
+   >Du kan också duplicera en befintlig livekampanj och skapa en ny. [Läs mer](modify-stop-campaign.md#duplicate)
+
+   ![](assets/create-campaign.png)
 
 <!--1. In the **[!UICONTROL Properties]** section, specify when you want to execute the campaign:
 
@@ -40,13 +40,15 @@ Så här skapar du en kampanj:
 
 1. I **[!UICONTROL Actions]** väljer du kanal och kanal för att skicka meddelandet och klickar sedan på **[!UICONTROL Create]**.
 
-   ![](assets/create-campaign-action.png)
-
    En yta är en konfiguration som har definierats av en [Systemadministratör](../start/path/administrator.md). Den innehåller alla tekniska parametrar för att skicka meddelandet, som rubrikparametrar, underdomän, mobilappar osv. [Läs mer](../configuration/channel-surfaces.md).
+
+   ![](assets/create-campaign-action.png)
 
    >[!NOTE]
    >
-   >Endast kanalytor som är kompatibla med kampanjtypen (marknadsföring eller transaktion) visas i listrutan.
+   >Endast kanalytor som är kompatibla med marknadsföringskampanjtypen visas i listrutan.
+
+<!--Only channel surfaces compatible with the campaign type (marketing or transactional) are listed in the drop-down list.-->
 
 1. Ange en titel och en beskrivning för kampanjen.
 
@@ -62,6 +64,7 @@ Så här skapar du en kampanj:
       * [Skapa push-meddelanden](../messages/create-push.md)
       * [Skapa ett SMS-meddelande](../messages/create-sms.md)
    1. När innehållet är definierat kan du använda **[!UICONTROL Simulate content]** för att förhandsgranska och testa innehållet med testprofiler. [Läs mer](../design/preview.md).
+
    1. Klicka på pilen för att gå tillbaka till skärmen för att skapa kampanjer.
 
       ![](assets/create-campaign-design.png)
@@ -83,17 +86,11 @@ Så här skapar du en kampanj:
    >
    >Individer som tillhör ett segment som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kommer inte att omfattas av kampanjen.
 
-1. Konfigurera kampanjschemat i fälten för start- och slutdatum. Som standard börjar kampanjer när de har aktiverats manuellt och avslutas så snart meddelandet har skickats en gång.
+   <!--If you are are creating an API-triggered campaign, the **[!UICONTROL cURL request]** section allows you to retrieve the **[!UICONTROL Campaign ID]** to use in the API call. [Learn more](api-triggered-campaigns.md)-->
 
-1. Dessutom kan du ange en frekvens för körningen av åtgärden som konfigurerats i kampanjen.
+1. Konfigurera **[!UICONTROL Schedule]** -avsnitt. [Lär dig schemalägga kampanjer](#schedule)
 
-   <!-- NOTE For API-triggered campaigns, scheduling at a specific date and time with recurrence is not available as action is triggered via API. However, start and end date are relevant to ensure that, if an API call is made prior of after the window, then those get errored.-->
-
-   ![](assets/create-campaign-schedule.png)
-
-<!--1. If you are are creating an API-triggered campaign, the **[!UICONTROL cURL request]** section allows you to retrieve the **[!UICONTROL Campaign ID]** to use in the API call. [Learn more](api-triggered-campaigns.md)-->
-
-När kampanjen är klar kan ni granska och publicera den. [Läs mer](#review-activate);
+När kampanjen är klar kan ni granska och publicera den. [Läs mer](#review-activate)
 
 ## Granska och aktivera en kampanj {#review-activate}
 
@@ -128,3 +125,13 @@ När kampanjen har konfigurerats måste du granska dess parameter och innehåll 
    Du kan även få ytterligare statistik i dedikerade rapporter genom att klicka på **[!UICONTROL Reports]** -knappen. [Läs mer](../reports/campaign-global-report.md)
 
    ![](assets/create-campaign-summary.png)
+
+## Schemalägg en kampanj {#schedule}
+
+Som standard börjar kampanjer när de har aktiverats manuellt och avslutas så snart meddelandet har skickats en gång.
+
+Du kan definiera hur ofta kampanjens meddelande ska skickas. Om du vill göra det använder du **[!UICONTROL Action triggers]** alternativ på skärmen för att skapa kampanjer för att ange om kampanjen ska köras varje dag, varje vecka eller varje månad.
+
+Om du inte vill genomföra kampanjen direkt efter aktiveringen kan du ange ett datum och en tidpunkt då meddelandet ska skickas med **[!UICONTROL Campaign start]** alternativ. The  **[!UICONTROL Campaign end]** kan du ange när en återkommande kampanj ska sluta köras.
+
+![](assets/create-campaign-schedule.png)

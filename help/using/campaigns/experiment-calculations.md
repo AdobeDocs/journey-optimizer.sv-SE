@@ -8,9 +8,9 @@ level: Experienced
 hide: true
 hidefromtoc: true
 exl-id: 60a1a488-a119-475b-8f80-3c6f43c80ec9
-source-git-commit: 29c9b8d9e48192b940cb726ed0c116d0782d849a
+source-git-commit: 28380dbadf485ba05f7ef6788a50253876718441
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ I den här artikeln beskrivs de statistiska beräkningar som används när du k�
 
 I den här artikeln beskrivs hur Experimentation fungerar och en intuitiv introduktion till Adobe **Valfri tidsgiltig konfidenssekvens**.
 
-För expertanvändare beskrivs de tekniska detaljerna och referenserna i [den här sidan](https://experienceleague.adobe.com/docs/journey-optimizer/assets/confidence_sequence_technical_details.pdf?lang=en).
+För expertanvändare beskrivs de tekniska detaljerna och referenserna i [den här sidan](../campaigns/assets/confidence_sequence_technical_details.pdf).
 
 ## Statistisk testning och kontroll av fel {#statistical-testing}
 
@@ -34,11 +34,11 @@ För expertanvändare beskrivs de tekniska detaljerna och referenserna i [den h�
 Som framgår av tabellen ovan är många statistiska undersökningsmetoder utformade för att kontrollera två typer av fel:
 
 * **Falska positiva värden (Type-I-fel)**: är ett felaktigt avvisande av nollhypotesen, när det faktiskt är sant. När det gäller onlineundersökningar innebär detta att vi felaktigt drar slutsatsen att resultatmåttet är olika för varje behandling, även om det var samma.
-   </br>Innan vi genomför experimentet väljer vi vanligtvis ett tröskelvärde `$\alpha$`. När experimentet är klart `$p$-value` beräknas och vi avvisar `null if $p < \alpha$`. En vanlig tröskel är `$\alpha = 0.05$`, vilket innebär att vi i längden förväntar oss att 5 av 100 experiment ska vara falska positiva.
+   </br>Innan vi genomför experimentet väljer vi vanligtvis ett tröskelvärde `\alpha`. När experimentet är klart `p-value` beräknas och vi avvisar `null if p < \alpha`. En vanlig tröskel är `\alpha = 0.05`, vilket innebär att vi i längden förväntar oss att 5 av 100 experiment ska vara falska positiva.
 
-* **Falska negativ (typ II-fel)**: innebär att vi inte kan avvisa den nollhypotesen trots att den är falsk. För experiment innebär detta att vi inte avvisar nollhypotesen, när den faktiskt är annorlunda. För att kontrollera den här typen av fel måste vi i allmänhet ha tillräckligt många användare i vårt experiment för att garantera en viss styrka, definierad som `$1 - \beta$`(dvs. ett minus sannolikheten för ett typ II-fel).
+* **Falska negativ (typ II-fel)**: innebär att vi inte kan avvisa den nollhypotesen trots att den är falsk. För experiment innebär detta att vi inte avvisar nollhypotesen, när den faktiskt är annorlunda. För att kontrollera den här typen av fel måste vi i allmänhet ha tillräckligt många användare i vårt experiment för att garantera en viss styrka, definierad som `1 - \beta`(dvs. ett minus sannolikheten för ett typ II-fel).
 
-De flesta statistiska startmetoder kräver att du korrigerar provstorleken i förväg, baserat på den effektstorlek som du vill bestämma samt feltolerans (`$\alpha$` och `$\beta$`) i förväg. Adobe Journey Optimizer metod är dock utformad för att du kontinuerligt ska kunna se dina resultat, oavsett provstorlek.
+De flesta statistiska startmetoder kräver att du korrigerar provstorleken i förväg, baserat på den effektstorlek som du vill bestämma samt feltolerans (`\alpha` och `\beta`) i förväg. Adobe Journey Optimizer metod är dock utformad för att du kontinuerligt ska kunna se dina resultat, oavsett provstorlek.
 
 ## Adobe Statistisk metod: Valfri tidsgiltig konfidenssekvens
 
@@ -50,11 +50,13 @@ Skillnaden mellan konfidenssekvenser och konfidensintervall för ett enskilt exp
 
 **Konfidenssekvenser** ändra fokus på experiment till uppskattningar i stället för hypotesstester, dvs. med fokus på en korrekt uppskattning av skillnaden i medel mellan behandlingar, i stället för om en nollhypotes ska avvisas baserat på ett tröskelvärde för statistisk signifikans eller inte.
 
-På liknande sätt som för relationen mellan `$p$-values`, eller **Förtroende** och **Konfidensintervall**, finns det också en relation mellan **Konfidenssekvenser** och när som helst `$p$-values`eller när som helst med giltig tillförlitlighet. Med tanke på hur välkända kvantiteter som Konfidensen är, tillhandahåller Adobe båda **Konfidenssekvenser** och varje gång det finns giltig tillförlitlighet i rapporterna.
+På liknande sätt som för relationen mellan `p-values`, eller **Förtroende** och **Konfidensintervall**, finns det också en relation mellan **Konfidenssekvenser** och när som helst `p-values`eller när som helst med giltig tillförlitlighet. Med tanke på hur välkända kvantiteter som Konfidensen är, tillhandahåller Adobe båda **Konfidenssekvenser** och varje gång det finns giltig tillförlitlighet i rapporterna.
 
 Den teoretiska grunden för **Konfidenssekvenser** kommer från studien av sekvenser av slumpmässiga variabler som kallas martingales. Nedan finns några viktiga resultat för expertläsare, men det är tydligt att yrkesutövare har gjort detta:
 
-    Konfidenssekvenser kan tolkas som säkra sekventiella analoger med konfidensintervall. Du kan titta på och tolka data i dina Experimenter när du vill och stoppa eller fortsätta med experimenten. Motsvarande värde för Valfri tid, Giltig konfidens, eller `$p$-value`, är också säkert att tolka.
+>[!NOTE]
+>
+>Konfidenssekvenser kan tolkas som säkra sekventiella analoger med konfidensintervall. Du kan titta på och tolka data i dina Experimenter när du vill och stoppa eller fortsätta med experimenten. motsvarande valfri tid som är giltig, eller `p-value`, är också säkert att tolka.
 
 Det är viktigt att notera att eftersom konfidenssekvenser är&quot;när som helst giltiga&quot;, är de mer försiktiga än en metod med fast horisont som används med samma provstorlek. Konfidenssekvensens gränser är i allmänhet bredare än en beräkning av konfidensintervall, medan alla tidsperioder som är giltiga konfidensintervall är mindre än en beräkning av en fast horisont. Fördelen med denna konservatism är att du säkert kan tolka dina resultat hela tiden.
 

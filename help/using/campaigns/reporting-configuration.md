@@ -8,10 +8,10 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 327a0c45-0805-4f64-9bab-02d67276eff8
-source-git-commit: 711fdf1dce0688d2e21d405a4e3e8777612b2f3b
+source-git-commit: 28380dbadf485ba05f7ef6788a50253876718441
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '698'
+ht-degree: 2%
 
 ---
 
@@ -20,36 +20,63 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_admin_reporting_config"
 >title="Ställ in datauppsättningar för rapportering"
->abstract="Med rapportkonfigurationen kan du definiera en anslutning till ett system för att hämta ytterligare anpassad information som ska användas i dina rapporter. Den måste utföras av en teknisk användare."
+>abstract="Med rapportkonfigurationen kan du hämta ytterligare mätvärden som ska användas på fliken Mål i kampanjrapporterna. Den måste utföras av en teknisk användare."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_reporting_dataset"
 >title="Välj en datauppsättning"
->abstract="Du kan bara välja en datamängd av händelsetyp som måste innehålla minst en av de fältgrupper som stöds: experience-event-web, experience-event-application, experience-event-commerce."
+>abstract="Du kan bara välja en datamängd av händelsetyp som måste innehålla minst en av de fältgrupper som stöds: Programinformation, handelsinformation, webbinformation."
 
-Med rapportdatakällans konfiguration kan du definiera en anslutning till ett system för att hämta ytterligare information som ska användas i dina rapporter.
+<!--The reporting data source configuration allows you to define a connection to a system in order to retrieve additional information that will be used in your reports.-->
+
+Med rapportdatakällans konfiguration kan du hämta ytterligare mått som ska användas i **[!UICONTROL Objectives]** fliken med kampanjrapporter. [Läs mer](content-experiment.md#objectives-global)
 
 >[!NOTE]
 >
->Datakällans konfiguration måste utföras av en teknisk användare. <!--Rights?-->
+>Rapportkonfigurationen måste utföras av en teknisk användare. <!--Rights?-->
 
-För den här konfigurationen måste du lägga till en eller flera datauppsättningar som innehåller de attribut som du vill använda för dina rapporter. Följ stegen nedan för att göra detta.
-
->[!CAUTION]
->
->Innan du kan lägga till en datauppsättning i rapportkonfigurationen måste du skapa den. Läs mer i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en#create){target=&quot;_blank&quot;}.
->
->Du kan bara lägga till datamängder av händelsetyp, som måste innehålla minst en av de datamängder som stöds [fältgrupper](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target=&quot;_blank&quot;}: **experience-event-web**, **experience-event-application**, **experience-event-commerce**.
+För den här konfigurationen måste du lägga till en eller flera datauppsättningar som innehåller ytterligare element som du vill använda för dina rapporter. Gör så här: [nedan](#add-datasets).
 
 <!--
 ➡️ [Discover this feature in video](#video)
 -->
 
-Om du till exempel vill veta vilken effekt en e-postkampanj har på e-handelsdata som inköp eller beställningar måste du skapa en händelsedatamängd för upplevelser med **experience-event-commerce** fältgrupp. Om du vill rapportera om mobilinteraktioner måste du också skapa en upplevelsehändelsedatauppsättning med **experience-event-application** fältgrupp. <!--If you want to report on web interactions then you need to include the web field group.--> Du kan lägga till de här fältgrupperna i ett eller flera scheman som ska användas i en datauppsättning eller i olika datauppsättningar.
+## Förutsättningar
+
+
+Innan du kan lägga till en datauppsättning i rapportkonfigurationen måste du skapa den datauppsättningen. Läs mer i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en#create){target=&quot;_blank&quot;}.
+
+* Du kan bara lägga till datamängder av händelsetyp.
+
+* Dessa datauppsättningar måste innehålla minst ett av följande [fältgrupper](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target=&quot;_blank&quot;}: **Programinformation**, **Handelsinformation**, **Webbinformation**.
+
+   >[!NOTE]
+   >
+   >Endast dessa fältgrupper stöds för närvarande.
+
+   Om du till exempel vill veta vilken effekt en e-postkampanj har på e-handelsdata som inköp eller beställningar måste du skapa en händelsedatamängd för upplevelser med **Handelsinformation** fältgrupp.
+
+   Om du vill rapportera om mobilinteraktioner måste du också skapa en upplevelsehändelsedatauppsättning med **Programinformation** fältgrupp.
+
+   De mått som motsvarar varje fältgrupp visas [här](#objective-list).
+
+* Du kan lägga till dessa fältgrupper i ett eller flera scheman som ska användas i en eller flera datauppsättningar.
 
 >[!NOTE]
 >
 >Läs mer om XDM-scheman och fältgrupper i [Översikt över XDM-systemet - dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target=&quot;_blank&quot;}.
+
+## Mål som motsvarar varje fältgrupp {#objective-list}
+
+Tabellen nedan visar vilka mätvärden som kommer att läggas till i **[!UICONTROL Objectives]** -fliken i era kampanjrapporter för varje fältgrupp.
+
+| Fältgrupp | Mål |
+|--- |--- |
+| Handelsinformation | Prissumma<br>Betalningsbelopp<br>(Unik) utcheckningar<br>(Unikt) Produktlista lägger till<br>(Unikt) Produktlistan öppnas<br>(Unik) Borttagning av produktlista<br>(Unik) Produktlistvyer<br>(Unik) Produktvyer<br>(Unikt) Inköp<br>(Unikt) Spara för senare<br>Totalt produktpris<br>Produktkvantitet |
+| Programinformation | (Unikt) Applanseringar<br>Första programstarten<br>(Unik) Appinstallationer<br>(Unikt) Appuppgraderingar |
+| Webbinformation | (Unik) Sidvyer |
+
+## Lägg till datauppsättningar {#add-datasets}
 
 1. Från **[!UICONTROL ADMINISTRATION]** meny, välja **[!UICONTROL Configurations]**. I  **[!UICONTROL Reporting]** avsnitt, klicka **[!UICONTROL Manage]**.
 
@@ -69,7 +96,7 @@ Om du till exempel vill veta vilken effekt en e-postkampanj har på e-handelsdat
 
    >[!CAUTION]
    >
-   >Du kan bara välja en datamängd av händelsetyp, som måste innehålla minst en av de data som stöds [fältgrupper](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target=&quot;_blank&quot;}: **experience-event-web**, **experience-event-application**, **experience-event-commerce**. Om du väljer en datauppsättning som inte matchar dessa villkor, kommer du inte att kunna spara ändringarna.
+   >Du kan bara välja en datamängd av händelsetyp, som måste innehålla minst en av de data som stöds [fältgrupper](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target=&quot;_blank&quot;}: **Programinformation**, **Handelsinformation**, **Webbinformation**. Om du väljer en datauppsättning som inte matchar dessa villkor, kommer du inte att kunna spara ändringarna.
 
    ![](assets/reporting-config-datasets.png)
 
@@ -95,12 +122,13 @@ Om du till exempel vill veta vilken effekt en e-postkampanj har på e-handelsdat
    >
    >Om du valde en datauppsättning som inte är av händelsetyp kan du inte fortsätta.
 
-När du skapar leveransrapporter kan du nu använda data från den här datauppsättningen för att hämta ytterligare anpassad information och finjustera dina rapporter bättre. [Läs mer](content-experiment.md#objectives-global)
+När ni skapar kampanjrapporter kan ni nu se mätvärden som motsvarar fältgrupperna som används i de datamängder ni har lagt till. Gå till **[!UICONTROL Objectives]** och välj de mätvärden du vill ha för att finjustera dina rapporter. [Läs mer](content-experiment.md#objectives-global)
+
+![](assets/reporting-config-objectives.png)
 
 >[!NOTE]
 >
 >Om du lägger till flera datauppsättningar blir alla data från alla datauppsättningar tillgängliga för rapportering.
-
 
 <!--
 ## How-to video {#video}

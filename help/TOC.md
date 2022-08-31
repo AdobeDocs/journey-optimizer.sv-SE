@@ -5,7 +5,7 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 634e46c70aa272785950d669938f3b35ec07ab1e
+source-git-commit: 28380dbadf485ba05f7ef6788a50253876718441
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 38%
@@ -265,7 +265,7 @@ ht-degree: 38%
       + [Exempel på frågor](using/reports/query-examples.md)
    + levererbarhet {#deliverability}
       + [Kom igång med leverans](using/reports/deliverability.md)
-      + [Undertryckningslista](using/reports/suppression-list.md)
+      + [Förstå listan över inaktiveringar](using/reports/suppression-list.md)
 + Beslutsledning {#offer-decisioning}
    + Kom igång med beslutshantering {#get-started-decision}
       + [Om beslutshantering](using/offers/get-started/starting-offer-decisioning.md)
@@ -385,7 +385,6 @@ ht-degree: 38%
          + Övervaka e-postadresser {#monitor-reputation}
             + [Undertryckningslista](using/configuration/manage-suppression-list.md)
             + [Återförsök](using/configuration/retries.md)
-            + [Tillåtelselista](using/configuration/allow-list-temp.md)
             + [Tillåtelselista](using/configuration/allow-list.md)
       + [Konfigurera SMS-kanal](using/configuration/sms-configuration.md)
       + Konfigurera kanalytor {#set-up-channels}

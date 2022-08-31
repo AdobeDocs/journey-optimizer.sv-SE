@@ -4,9 +4,9 @@ description: Lär dig hur du konfigurerar miljön för att skicka SMS-meddelande
 role: Admin
 level: Intermediate
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
-source-git-commit: 44ef82f03752933269c1a8d9e65266c3132dd664
+source-git-commit: 28380dbadf485ba05f7ef6788a50253876718441
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
@@ -25,12 +25,12 @@ Konfigurera instansen innan du skickar SMS. Du måste [integrera providerinstäl
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_api"
->title="Konfigurera SMS-leverantören"
+>title="Välj SMS-leverantörskonfiguration"
 >abstract="Välj leverantör och fyll i dina SMS API-autentiseringsuppgifter."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_configuration"
->title="Konfigurera SMS-leverantören"
+>title="Välj SMS-leverantörskonfiguration"
 >abstract="Välj API-autentiseringsuppgifter som konfigurerats för din SMS-leverantör."
 
 Så här konfigurerar du din SMS-leverantör med Journey Optimizer:

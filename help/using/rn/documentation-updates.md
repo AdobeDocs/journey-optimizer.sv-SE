@@ -2,9 +2,9 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: c46be4a8054f27c6c3ef75c179b7c4c2641559ad
+source-git-commit: 28380dbadf485ba05f7ef6788a50253876718441
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1825'
 ht-degree: 19%
 
 ---
@@ -20,6 +20,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * En video som visar hur du konfigurerar prenumerationer och skapar landningssidor finns nu i avsnittet Kom igång med landningssidor. [Läs mer](../landing-pages/get-started-lp.md#video)
 * En begränsning har lagts till för resor som använder Läs segment-aktiviteter. [Läs mer](../building-journeys/read-segment.md)
 * Sidan med uttrycksredigeraroperatorer har förbättrats. [Läs mer](../building-journeys/expression/operators.md)
+* Ett avsnitt om schemaläggning av en kampanj har lagts till. [Läs mer](../campaigns/create-campaign.md)
 
 ## Juli 2022 {#july-2022}
 

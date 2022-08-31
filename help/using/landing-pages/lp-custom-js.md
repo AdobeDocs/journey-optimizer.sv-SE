@@ -5,7 +5,8 @@ feature: Landing Pages
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: f4b3a9de47e724f7b23df8a02b8106c131cf1b12
+exl-id: 2a7ebead-5f09-4ea5-8f00-8b5625963290
+source-git-commit: 28380dbadf485ba05f7ef6788a50253876718441
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 2%
@@ -65,7 +66,7 @@ Här är de krokar du kan använda:
 | Namn | Beskrivning |
 |--- |--- |
 | addBeforeSubmitHook | Anpassad krok som ska anropas innan formuläret skickas. Returnerar true om du vill fortsätta skicka, annars returneras false om du vill blockera överföringen. |
-| addBeforeSubmitHook | Anpassad krok som ska anropas vid misslyckad formuläröverföring. |
+| addOnFailureHook | Anpassad krok som ska anropas vid misslyckad formuläröverföring. |
 | addOnSuccessHook | Anpassad krok som anropas när formuläret skickas. |
 
 **Exempel:**
