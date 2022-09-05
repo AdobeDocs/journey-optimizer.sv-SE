@@ -6,10 +6,10 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 8674ef9e-261b-49d9-800e-367f9f7ef979
-source-git-commit: b0f8d97feb7a7f650395d3b91e26d2f837a274a9
+source-git-commit: 1d9fc184bb67362aac608e9816fe3afe64eb055c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1685'
+ht-degree: 3%
 
 ---
 
@@ -583,7 +583,7 @@ The `Group` -funktionen används för att extrahera specifik information baserat
 Följande fråga används för att extrahera domännamnet från en e-postadress.
 
 ```sql
-{%= regexGroup(emailAddress,"@(\w+)", 1) %}
+{%= regexGroup(emailAddress,"@(\\w+)", 1) %}
 ```
 
 ## Replace {#replace}

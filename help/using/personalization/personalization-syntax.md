@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 5a562066-ece0-4a78-92a7-52bf3c3b2eea
-source-git-commit: d3a22f223353dfa5d43acab400cea3d5c314662f
+source-git-commit: 1d9fc184bb67362aac608e9816fe3afe64eb055c
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '730'
 ht-degree: 3%
 
 ---
@@ -42,6 +42,10 @@ Syntaxen är skiftlägeskänslig.
 Orden **true**, **false**, **null** och **undefined** tillåts endast i den första delen av ett sökvägsuttryck.
 
 I Handtag-fält returneras värdena av {{expression}} är **HTML-escape**. Om uttrycket innehåller `&`genereras returnerade utdata från HTML som `&amp;`. Om du inte vill att Handlebars ska kringgå ett värde använder du &quot;trippelstreck&quot;.
+
+När det gäller argument för literala funktioner saknar den mallande språkparsern stöd för ett omvänt snedstreck (&#39;\&#39;) som inte kan föregås av ett undantag. Det här tecknet måste föregås av ett extra omvänt snedstreck (&#39;\&#39;). Exempel :
+
+`{%= regexGroup("abc@xyz.com","@(\\w+)", 1)%}`
 
 ## Profil
 
@@ -121,7 +125,7 @@ Handtag-hjälpen är en enkel identifierare som kan följas av parametrar.
 Varje parameter är ett Handlebars-uttryck. Hjälpprogrammen kan nås från alla sammanhang i en mall.
 
 Dessa blockhjälpare identifieras med # före hjälpnamnet och en matchande avslutande /, med samma namn krävs.
-Block är uttryck som har ett blocköppningsblock ({{# }}) och closing ({/}}).
+Block är uttryck som har en blocköppning ({{# }}) and closing ({{/}}).
 
 
 >[!NOTE]

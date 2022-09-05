@@ -2,9 +2,9 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 28380dbadf485ba05f7ef6788a50253876718441
+source-git-commit: 1d9fc184bb67362aac608e9816fe3afe64eb055c
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1871'
 ht-degree: 19%
 
 ---
@@ -19,8 +19,9 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Avsnittet Frekvensregler har uppdaterats för att återspegla det nya textbundna meddelandeflödet. [Läs mer](../configuration/frequency-rules.md#apply-frequency-rule)
 * En video som visar hur du konfigurerar prenumerationer och skapar landningssidor finns nu i avsnittet Kom igång med landningssidor. [Läs mer](../landing-pages/get-started-lp.md#video)
 * En begränsning har lagts till för resor som använder Läs segment-aktiviteter. [Läs mer](../building-journeys/read-segment.md)
-* Sidan med uttrycksredigeraroperatorer har förbättrats. [Läs mer](../building-journeys/expression/operators.md)
+* Operatorsidan för uttrycksredigeraren har förbättrats. [Läs mer](../building-journeys/expression/operators.md)
 * Ett avsnitt om schemaläggning av en kampanj har lagts till. [Läs mer](../campaigns/create-campaign.md)
+* Avsnittet med allmänna syntaxregler för uttrycksredigeraren har uppdaterats för att ta hänsyn till den nya regeln för den omvända snedstreckssymbol som undgår bokstavsfunktioner. De befintliga publicerade meddelandena påverkas inte av den här ändringen. Endast de nya meddelandena eller utkastmeddelandena måste uppdateras. [Läs mer](../personalization/personalization-syntax.md#general-rules)
 
 ## Juli 2022 {#july-2022}
 
