@@ -6,7 +6,7 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 5a562066-ece0-4a78-92a7-52bf3c3b2eea
-source-git-commit: 1d9fc184bb67362aac608e9816fe3afe64eb055c
+source-git-commit: 7476c50f82c0fdd63f282b3ee2dc3756862f598c
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 3%
@@ -43,7 +43,7 @@ Orden **true**, **false**, **null** och **undefined** tillåts endast i den för
 
 I Handtag-fält returneras värdena av {{expression}} är **HTML-escape**. Om uttrycket innehåller `&`genereras returnerade utdata från HTML som `&amp;`. Om du inte vill att Handlebars ska kringgå ett värde använder du &quot;trippelstreck&quot;.
 
-När det gäller argument för literala funktioner saknar den mallande språkparsern stöd för ett omvänt snedstreck (&#39;\&#39;) som inte kan föregås av ett undantag. Det här tecknet måste föregås av ett extra omvänt snedstreck (&#39;\&#39;). Exempel :
+När det gäller argument för literala funktioner stöder inte mallspråksparsern ett omvänt snedstreck (`\`). Det här tecknet måste föregås av ett extra omvänt snedstreck (`\`). Exempel :
 
 `{%= regexGroup("abc@xyz.com","@(\\w+)", 1)%}`
 
