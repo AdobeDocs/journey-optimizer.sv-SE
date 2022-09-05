@@ -2,14 +2,15 @@
 title: Kom igång med innehållsexperiment
 description: Läs mer om att experimentera med innehåll i [!DNL Journey Optimizer]
 feature: Overview
-topic: Content Management
+topic: Content Management, A/B Testing
 role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 0036c905b9344a6f99e8525acbe9caab5932f361
+exl-id: 7fe4b24e-f60a-4107-a064-00010b0cbbfc
+source-git-commit: 19c52b7c10659305bb729470bf5fa6b9b581bf82
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1494'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Funktionen för innehållsexperiment är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
+>Funktionen Innehållsexperiment är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
 
 ## Vad är en Content Experiment?
 
@@ -34,7 +35,7 @@ Experimentera för att isolera de ändringar som leder till förbättringar av m
 
 På så sätt kan ni fatta datadrivna beslut för att optimera era era affärsmål.
 
-När det gäller innehållsexperiment i Adobe Journey Optimizer kan du testa idéer som:
+För Content Experimentes i Adobe Journey Optimizer kan du testa idéer som:
 
 * **Subject line**: Vilka konsekvenser kan en ändring av tonen eller graden av personalisering av en ämnesrad få?
 * **Meddelandeinnehåll**: Kommer en ändring av den visuella layouten för ett e-postmeddelande att resultera i fler klick på e-postmeddelandet?
@@ -60,7 +61,7 @@ Om du till exempel ändrar innehållet i meddelandetexten påverkas inte öppnin
 +++Kör testet på rätt målgruppsstorlek eller tillräckligt länge
 
 Om du kör testerna längre kan du upptäcka mindre skillnader i målmåttet mellan behandlingarna. Om baslinjevärdet för målmåttet är litet behöver du större samplingsstorlekar.
-Antalet användare som måste ingå i ditt experiment beror på vilken effektstorlek du vill identifiera, variationen eller spridningen av målmåttet samt din tolerans för falska positiva och falska negativa fel. I klassiska experiment kan du använda en [exempelstorlekskalkylator](https://experienceleague.adobe.com/tools/calculator/testcalculator.html) för att avgöra hur länge du måste köra testet.
+Antalet användare som måste ingå i ditt experiment beror på vilken effektstorlek du vill identifiera, variationen eller spridningen av målmåttet samt din tolerans för falska positiva och falska negativa fel. I klassiska experiment kan du använda en [exempelstorlekskalkylator](https://experienceleague.adobe.com/tools/calculator/testcalculator.html){_blank} för att avgöra hur länge du måste köra testet.
 +++
 
 +++Förstå statistisk osäkerhet
@@ -104,11 +105,11 @@ Om konfidensintervallen för två behandlingar knappt överlappar varandra betyd
 
 Adobe använder 95 % Anytime Valid Confidence Intervals, eller Confidence Sequences, vilket betyder att resultatet kan visas när som helst under försöket.
 
-### 3. Förstå lyft {#understand-lift}
+### 3. Förstå Lyft {#understand-lift}
 
 Sammanfattningen av expertrapporten visar **[!UICONTROL Lift over Baseline]**, vilket är ett mått på den procentuella förbättringen av konverteringsgraden för en given behandling jämfört med baslinjen. Definierat exakt är det skillnaden i prestanda mellan en given behandling och baslinjen, dividerat med baslinjens prestanda, uttryckt i procent.
 
-### 3. Förtroende {#understand-confidence}
+### 3. Förstå förtroende {#understand-confidence}
 
 Du bör fokusera på **[!UICONTROL Confidence interval]** För varje behandlingsstart visar Adobe också förtroendet, vilket är ett sannolikhetsmått på hur mycket det finns belägg för att en viss behandling är densamma som ursprungsbehandlingen. Ett högre konfidensintervall tyder på att det inte finns tillräckligt med belägg för antagandet att behandlingar före och efter utgångsvärdet har samma resultat. Mer exakt är den säkerhet som visas en sannolikhet (uttryckt i procent) att vi skulle ha observerat en mindre skillnad i konverteringsgraden mellan en viss behandling och baslinjen, om det i själva verket inte finns någon skillnad i den verkliga underliggande konverteringsgraden. När det gäller p-värden är den konfidensnivå som visas 1 - p-värde.
 
@@ -144,5 +145,3 @@ När du har kört din Experiment finns det flera möjliga uppföljningsåtgärde
    >[!CAUTION]
    >
    >Fler analyser innebär en större risk för att upptäcka en falsk effekt eller falskt positiv.
-
-

@@ -1,5 +1,5 @@
 ---
-title: Skapa ett innehållsexperiment
+title: Skapa en innehållsexperiment
 description: Lär dig skapa ett innehållsexperiment i era kampanjer
 feature: Overview
 topic: Content Management
@@ -8,9 +8,9 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: 28380dbadf485ba05f7ef6788a50253876718441
+source-git-commit: 19c52b7c10659305bb729470bf5fa6b9b581bf82
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '898'
 ht-degree: 1%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 1%
 
 >[!AVAILABILITY]
 >
->Funktionen för innehållsexperiment är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
+>The **Content Experiment** är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
+
+Använd Journey Optimizer Content Experiment för att definiera olika leveranssätt. Intressemålgruppen fördelas slumpmässigt till varje behandling för att avgöra vilken som fungerar bäst med avseende på intressemätningen. Du kan välja att ändra e-postmeddelandets innehåll, ämne eller avsändare.
 
 >[!NOTE]
 >
->Innan du använder innehållsexperiment bör du kontrollera att rapportkonfigurationen är inställd för dina anpassade datamängder. Läs mer i [det här avsnittet](reporting-configuration.md).
-
-Med funktionen för innehållsexperiment kan du definiera flera leveranssätt. Intressemålgruppen fördelas slumpmässigt till varje behandling för att avgöra vilken som fungerar bäst med avseende på intressemätningen. Du kan välja att ändra e-postmeddelandets innehåll, ämne eller avsändare.
+>Innan du börjar med Content Experiment bör du kontrollera att rapportkonfigurationen är inställd för dina anpassade datauppsättningar. Läs mer i [det här avsnittet](reporting-configuration.md).
 
 I exemplet nedan har leveransmålet delats upp i två grupper, som var och en representerar 45 % av målpopulationen, och en slutgruppsgrupp på 10 % som inte får leveransen.
 
@@ -40,7 +40,7 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 
 ## Skapa en kampanj {#campaign-experiment}
 
-1. Från **[!UICONTROL Campaigns]** sida, klicka **[!UICONTROL Create Campaign]**.
+1. Från **[!UICONTROL Campaigns]** sida, klicka **[!UICONTROL Create campaign]**.
 
    ![](assets/content_experiment_1.png)
 

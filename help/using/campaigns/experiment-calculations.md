@@ -1,16 +1,16 @@
 ---
-title: Statistiska beräkningar som används i experimenterande
+title: Statistiska beräkningar som används av Adobe Journey Optimizer Experimentation
 description: Läs mer om statistiska beräkningar som används vid försök
 feature: Overview
-topic: Content Management
+topic: Content Management, A/B Testing
 role: User
 level: Experienced
 hide: true
 hidefromtoc: true
 exl-id: 60a1a488-a119-475b-8f80-3c6f43c80ec9
-source-git-commit: 28380dbadf485ba05f7ef6788a50253876718441
+source-git-commit: 19c52b7c10659305bb729470bf5fa6b9b581bf82
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,11 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Funktionen för innehållsexperiment är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
+>The **Content Experiment** är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
 
-I den här artikeln beskrivs de statistiska beräkningar som används när du kör Experiment i Adobe Journey Optimizer. Experimentationen använder avancerade statistiska metoder för att beräkna **Konfidenssekvenser** och **Förtroende**, som gör att du kan köra dina experiment så länge som det behövs och kontinuerligt övervaka dina resultat.
+I den här artikeln beskrivs de statistiska beräkningar som används när du kör Experiment i Adobe Journey Optimizer.
+
+Experimentationen använder avancerade statistiska metoder för att beräkna **Konfidenssekvenser** och **Förtroende**, som gör att du kan köra dina experiment så länge som det behövs och kontinuerligt övervaka dina resultat.
 
 I den här artikeln beskrivs hur Experimentation fungerar och en intuitiv introduktion till Adobe **Valfri tidsgiltig konfidenssekvens**.
 
@@ -68,4 +70,4 @@ Varje gång du tittar på experimentrapporten analyserar Adobe de data som har a
 
 I det här skedet kommer den behandling som ger bäst resultat (baserat på konverteringsgraden eller det profilnormaliserade måttvärdet) att markeras överst på rapportskärmen och markeras med en stjärna i tabellrapporten. Endast behandlingar med ett konfidensintervall på mer än 95% tillsammans med utgångsvärdet beaktas vid denna bestämning.
 
-När det finns mer än två behandlingar används länken för korrigering av Bonferroni för att korrigera flera jämförelseproblem, och styr den familjvisa felfrekvensen. I detta scenario är det också möjligt att det finns flera behandlingar vars konfidensgrad är större än 95 procent och vars konfidensintervall överlappar varandra. I det här fallet deklarerar Adobe den med den högsta konverteringsgraden (eller profilnormaliserade mätvärden) som den bästa prestandan.
+När det finns mer än två behandlingar används länken för korrigering av Bonferroni för att korrigera flera jämförelseproblem, och styr den familjvisa felfrekvensen. I detta scenario är det också möjligt att det finns flera behandlingar vars konfidensgrad är större än 95 procent och vars konfidensintervall överlappar varandra. I det här fallet deklarerar Adobe Journey Optimizer den som har den högsta konverteringsgraden (eller profilnormaliserade mätvärden) som den bästa prestandan.
