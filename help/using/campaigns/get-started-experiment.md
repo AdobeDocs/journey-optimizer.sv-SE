@@ -1,16 +1,16 @@
 ---
 title: Kom igång med innehållsexperiment
 description: Läs mer om att experimentera med innehåll i [!DNL Journey Optimizer]
-feature: Content Management, A/B Testing
+feature: A/B Testing
 topic: Content Management
 role: User
 level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 7fe4b24e-f60a-4107-a064-00010b0cbbfc
-source-git-commit: 14a428a0f8b17d9f29d9dfff18c5e9bb7eb77b97
+source-git-commit: f0e2f80a815aebb7574582fbf33770aa5da0abab
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
