@@ -2,7 +2,7 @@
 title: Information om föregående version (2021)
 description: Versionsinformation om Journey Optimizer 2021
 exl-id: 0e43be98-f471-4860-be84-8f99ab93e983
-source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
+source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 9%
@@ -47,7 +47,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <tbody>
 <tr>
 <td>
-<p>Nu kan du simulera vilka erbjudanden som ska levereras till en testprofil för en viss placering i Journey Optimizer användargränssnitt. På så sätt kan du validera din beslutslogik, inklusive behörighetskrav och rangordningsalgoritmer, enkelt innan du sätter dem i produktion. Med den här funktionen kan icke-tekniska och tekniska användare snabbt testa offer decisioning och felsöka potentiella problem.</p>
+<p>Nu kan du simulera vilka erbjudanden som ska levereras till en testprofil för en viss placering i Journey Optimizer användargränssnitt. På så sätt kan du validera din beslutslogik, inklusive behörighetskrav och rangordningsalgoritmer, enkelt innan du sätter dem i produktion. Med den här funktionen kan icke-tekniska och tekniska användare snabbt testa beslutshantering och felsöka potentiella problem.</p>
 <p>Mer information finns i den <a href="../offers/offer-activities/simulation.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
@@ -290,7 +290,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 * Korrigerade ett tillgänglighetsproblem vid navigering på meddelandeflikar.
 * Ett lokaliseringsfel har korrigerats i e-postdesignerns etiketter.
 * Ett problem har korrigerats när du valde mer än en nod i en resa och klickade på Ta bort i egenskapsfönstret.
-* Korrigerade ett problem som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
+* Korrigerade ett fel som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
 * Du kan nu ta reda på varför en meddelandeförinställning inte kunde skapas med hjälp av en tydligare varning i användargränssnittet.
 
 

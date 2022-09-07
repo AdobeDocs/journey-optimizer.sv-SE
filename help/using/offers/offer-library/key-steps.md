@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: e375fd3a-b10d-45f4-a95b-ceb48116e841
-source-git-commit: 12b01cb9de84399e5ede987866609acc10b64c5f
+source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '341'
 ht-degree: 10%
 
 ---
@@ -58,7 +58,7 @@ Innan du börjar skapa erbjudanden måste du definiera flera komponenter som du 
 
 ## Skapa och konfigurera beslut {#create-and-configure-decisions}
 
-1. **Skapa ett beslut** som kombinerar placeringar med personaliserade erbjudanden och reserverbjudanden. Den här kombinationen kommer att användas av Offera decisioningen för att hitta det bästa erbjudandet för en viss profil.
+1. **Skapa ett beslut** som kombinerar placeringar med personaliserade erbjudanden och reserverbjudanden. Den här kombinationen används av beslutsmotorn för att hitta det bästa erbjudandet för en viss profil.
 
 1. **Konfigurera beslutet**. Om du vill göra det markerar du placeringarna och för varje placering väljer du en samling och en reserv.
 

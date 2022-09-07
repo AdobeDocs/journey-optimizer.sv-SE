@@ -6,7 +6,8 @@ description: Läs mer om modeller för automatisk optimering
 feature: Ranking Formulas
 role: User
 level: Intermediate
-source-git-commit: 12b01cb9de84399e5ede987866609acc10b64c5f
+exl-id: a85de6a9-ece2-43da-8789-e4f8b0e4a0e7
+source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
 workflow-type: tm+mt
 source-wordcount: '1404'
 ht-degree: 0%
@@ -19,7 +20,7 @@ En automatisk optimeringsmodell syftar till att leverera erbjudanden som maximer
 
 ## Begränsningar {#limitations}
 
-Användningen av automatiska optimeringsmodeller för Offer decisioning omfattas av nedanstående begränsningar:
+Användningen av automatiska optimeringsmodeller för beslutshantering omfattas av nedanstående begränsningar:
 
 * Automatiska optimeringsmodeller fungerar inte med API:t för gruppbeslut.
 * Feedback som behövs för att skapa en modell måste skickas in som en upplevelsehändelse. Den ska inte skickas in automatiskt [!DNL Journey Optimizer] kanaler.
@@ -64,7 +65,7 @@ Från Bayes Theorem:
 
 ***Posterior = Sannolikhet * Tidigare***
 
-The **tidigare sannolikhet** är den första gissningen om sannolikheten för att producera en utdata. Sannolikheten för att det ska gå att få fram vissa uppgifter kallas för **sannolikhet efter fel**. 
+The **tidigare sannolikhet** är den första gissningen om sannolikheten för att få fram ett resultat. Sannolikheten för att det ska gå att få fram vissa uppgifter kallas för **sannolikhet efter fel**. 
 
 Automatisk optimering är utformat för att ta hänsyn till binära belöningar (klicka/klicka inte). I detta fall representerar sannolikheten antalet lyckade försök från N-prövningar och modelleras av en **Binomialfördelning**. För vissa sannolikhetsfunktioner, om du väljer en viss tidigare version, hamnar den bakre delen i samma fördelning som den föregående. En sådan tidigare version kallas då **konjugera föregående**. Den här typen av förhandsversioner gör det väldigt enkelt att beräkna posteriorfördelningen. The **Betadistribution** är ett konjugat före binomialsannolikheten (binära belöningar) och är därför ett bekvämt och vettigt val för tidigare och senare sannolikhetsfördelningar.Betafördelningen har två parametrar. ***α*** och ***β***. Dessa parametrar kan ses som antalet lyckade och misslyckade samt medelvärdet som ges av:
 

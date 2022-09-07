@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
+source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1107'
 ht-degree: 1%
 
 ---
@@ -183,11 +183,9 @@ Om du vill göra det väljer du **[!UICONTROL Add email or domain]** och däreft
 
 1. Fyll i CSV-mallen med de e-postadresser och/eller domäner som du vill lägga till i listan över inaktiveringar.
 
-1. När du är klar drar och släpper du CSV-filen och klickar sedan på **[!UICONTROL Upload file]**.
+1. När du är klar drar och släpper du CSV-filen och klickar sedan på **[!UICONTROL Submit]**.
 
-   ![](assets/suppression-list-upload-file-button.png)
-
-1. Klicka på **[!UICONTROL Submit]**.
+   ![](assets/suppression-list-upload-csv-submit.png)
 
 >[!NOTE]
 >

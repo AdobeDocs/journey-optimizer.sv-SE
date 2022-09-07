@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 05564a99-da50-4837-8dfb-bb1d3e0f1097
-source-git-commit: 28380dbadf485ba05f7ef6788a50253876718441
+source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '446'
 ht-degree: 1%
 
 ---
@@ -29,11 +29,11 @@ I standardkonfigurationen är tröskelvärdet 5 fel.
 
 Om en leverans lyckas efter ett nytt försök initieras adressräknaren på nytt.
 
-## Redigera tröskelvärdet för återförsök {#edit-retry-threshold}
+## Försök igen med tröskelversionen {#edit-retry-threshold}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_suppression_list_bounces"
->title="Uppdatera tröskelvärdet för antal fel"
+>title="Uppdatera tröskelvärdet för återförsök"
 >abstract="Om standardvärdet inte passar dina behov kan du ändra det tillåtna antalet på varandra följande mjuka studsar. När räknaren för nya försök når feltröskeln för en viss e-postadress läggs den här adressen till i listan över spärrade adresser."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/deliverability/suppression-list.html" text="Förstå listan över undantag"
 

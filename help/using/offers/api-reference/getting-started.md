@@ -6,16 +6,16 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 773bee50-849f-4b07-9423-67de5279ad28
-source-git-commit: 79d3bd42c208d38aaebce742e70b247106c21587
+source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '638'
 ht-degree: 2%
 
 ---
 
 # Utvecklarhandbok för API för beslutshantering {#decision-management-api-developer-guide}
 
-I den här utvecklarhandboken får du hjälp att börja använda [!DNL Offer Library] API. Handboken innehåller sedan exempel på API-anrop för att utföra nyckelåtgärder med hjälp av beslutsmotorn.
+I den här utvecklarhandboken får du hjälp att börja använda [!DNL Offer Library] API. Handboken innehåller sedan exempel på API-anrop för att utföra nyckelåtgärder med beslutsmotorn.
 
 ➡️ [Läs mer om komponenterna i Beslutshantering i den här videon](#video)
 
@@ -25,7 +25,7 @@ Handboken kräver en fungerande förståelse av följande komponenter i Adobe Ex
 
 * [[!DNL Experience Data Model (XDM) System]](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target=&quot;_blank&quot;}: Det standardiserade ramverk som [!DNL Experience Platform] organiserar kundupplevelsedata.
    * [Grunderna för schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html){target=&quot;_blank&quot;}: Lär dig mer om grundstenarna i XDM-scheman.
-* [Beslutshantering](../../../using/offers/get-started/starting-offer-decisioning.md): Beskriver de begrepp och komponenter som används för Experience Decision i allmänhet och Offer decisioning i synnerhet. Illustrerar de strategier som används för att välja det bästa alternativet att presentera under en kunds upplevelse.
+* [Beslutshantering](../../../using/offers/get-started/starting-offer-decisioning.md): Beskriver de begrepp och komponenter som används för Experience Decision i allmänhet och i synnerhet för beslutshantering. Illustrerar de strategier som används för att välja det bästa alternativet att presentera under en kunds upplevelse.
 * [[!DNL Profile Query Language (PQL)]](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html){target=&quot;_blank&quot;}: PQL är ett kraftfullt språk för att skriva uttryck över XDM-instanser. PQL används för att definiera beslutsregler.
 
 ## Läser exempel-API-anrop {#reading-sample-api-calls}
@@ -130,7 +130,7 @@ Det här dokumentet innehöll de nödvändiga kunskaperna som krävs för att ri
 
 >[!NOTE]
 >
-> I meddelandekanalen i Adobe Journey Optimizer används offera decisioningar. Om din organisation använder meddelandekanalen i appen kommer API-listbegäranden för objekt att innehålla objekt som har skapats av meddelandetjänsten i appen och kan ignoreras för offer decisioning. Objekt som skapats för meddelanden i programmet har `createdBy = “Mobile_Sheliak”`.
+> Meddelandekanalen i appen i Adobe Journey Optimizer använder beslutshanteringsobjekt. Om din organisation använder meddelandekanalen i appen kommer API-listbegäranden för objekt att innehålla objekt som har skapats av meddelandetjänsten i appen och kan ignoreras för beslutshanteringsfall. Objekt som skapats för meddelanden i programmet har `createdBy = “Mobile_Sheliak”`.
 
 ## Instruktionsvideo {#video}
 

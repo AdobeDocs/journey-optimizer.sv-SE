@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 8766f64c4ea7985c6c9d6e4ba022ef6b1fc0dbed
+source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -153,8 +153,6 @@ Om du vill redigera en kanalyta följer du stegen nedan.
 
 1. Klicka **[!UICONTROL Submit]** för att bekräfta dina ändringar.
 
-   ![](assets/preset-confirm-update.png)
-
    >[!NOTE]
    >
    >Du kan också spara kanalytan som utkast och återuppta uppdateringen senare.
@@ -177,7 +175,7 @@ Klicka på **[!UICONTROL Recent update]** -ikonen som visas bredvid det aktiva y
 
 På **[!UICONTROL Recent update]** visas information som uppdateringsstatus och listan över begärda ändringar.
 
-![](assets/preset-recent-update-screen.png)
+<!--![](assets/preset-recent-update-screen.png)-->
 
 ### Uppdatera status {#update-statuses}
 

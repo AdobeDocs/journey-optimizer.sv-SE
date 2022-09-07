@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 1780310da6d8a952dd22b9ee9a0b23516efddb5f
+source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Nedan finns ytterligare skyddsutkast och begränsningar när du använder [!DNL 
 
 ## Handläggningsgaranti {#offer-guardrails}
 
-Prestationsgarantier och statiska gränser för beslutshantering anges i [Produktbeskrivningssida för Adobe Offer decisioning App Service](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html){target=&quot;_blank&quot;}.
+Prestandaskydd och statiska gränser för beslut finns listade i [Produktbeskrivningssida för Adobe Offer decisioning App Service](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html){target=&quot;_blank&quot;}.
 
 
 ## Garantier för landningssidor {#lp-guardrails}

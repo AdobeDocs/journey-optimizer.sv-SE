@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 7d9c3d31-af57-4f41-aa23-6efa5b785260
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 I det här fallet får du se hur du använder flera typer av personalisering i ett enda push-meddelande. Tre typer av personalisering kommer att användas:
 
 * **Profil**: meddelandepersonalisering baserad på ett profilfält
-* **Beslut om erbjudandet**: personalisering baserad på offer decisioning
+* **Beslut om erbjudandet**: personalisering baserad på variabler för beslutshantering
 * **Kontext**: personalisering baserad på sammanhangsbaserade data från resan
 
 Målet med det här exemplet är att skicka en händelse till [!DNL Journey Optimizer] varje gång en kundorder uppdateras. Därefter skickas ett push-meddelande till kunden med information om beställningen och ett personligt erbjudande.
@@ -77,7 +77,7 @@ I detta fall krävs följande krav:
 
    ![](assets/perso-uc13.png)
 
-1. Välj **Erbjudandebeslut** om du vill infoga en offer decisioning-variabel. Välj placering och klicka på **+** -ikonen bredvid beslutet om att lägga till den i brödtexten.
+1. Välj **Erbjudandebeslut** om du vill infoga en decimalvariabel. Välj placering och klicka på **+** -ikonen bredvid beslutet om att lägga till den i brödtexten.
 
    ![](assets/perso-uc14.png)
 

@@ -5,9 +5,10 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 5a6e18e6ff236d25bd5f81b42430be2998208321
+exl-id: 26ba8093-8b6d-4ba7-becf-b41c9a06e1e8
+source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ På den här sidan hittar du en lista över Adobe Journey Optimizer datamängder
 [Händelsedatauppsättning för meddelandefeedback](../start/datasets-query-examples.md#message-feedback-event-dataset)
 [Händelsedatauppsättning för push-spårning](../start/datasets-query-examples.md#push-tracking-experience-event-dataset)
 [Resestegshändelse](../start/datasets-query-examples.md#journey-step-event)
-[offer decisioning, händelsedatauppsättning](../start/datasets-query-examples.md#ode-decisionevents)
+[Datamängd för beslutshändelse](../start/datasets-query-examples.md#ode-decisionevents)
 [Samtycketjänstens datauppsättning](../start/datasets-query-examples.md#consent-service-dataset)
 [BCC Feedback, händelsedatauppsättning](../start/datasets-query-examples.md#bcc-feedback-event-dataset)
 
@@ -198,7 +199,7 @@ group by
     _experience.journeyOrchestration.stepEvents.nodeName; 
 ```
 
-## offer decisioning, händelsedatauppsättning{#ode-decisionevents}
+## Datamängd för beslutshändelse{#ode-decisionevents}
 
 _Namn i gränssnittet: ODE-beslutshändelser (systemdatauppsättning)_
 

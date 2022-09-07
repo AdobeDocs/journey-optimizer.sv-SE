@@ -6,9 +6,10 @@ description: Läs mer om personaliserade optimeringsmodeller
 feature: Ranking Formulas
 role: User
 level: Intermediate
-source-git-commit: 3188bc97b8103d2a01101a23d8c242a3e2924f76
+exl-id: c73b3092-e96d-4957-88e6-500e99542782
+source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -40,9 +41,9 @@ Det finns tre typer av funktioner:
 
 | Funktionstyper | Så här lägger du till funktioner i modeller |
 |--------------|----------------------------|
-| offer decisioning Objects (placementID, activityID, DecisionScopeID) | Ingår i Offera decisioningens feedback Experience Events skickas till AEP |
+| Beslutsobjekt (placementID, activityID, DecisionScopeID) | Ingår i beslutsledningens feedback Experience Events skickas till AEP |
 | Segment | 0-50 segment kan läggas till som funktioner när du skapar AI-modellen för rankning |
-| Kontextdata | En del av Offera decisioningens feedback Experience Events skickas till AEP. Tillgängliga kontextdata att lägga till i schema: Commerce Details, Channel Details, Application Details, Web Details, Environment Details, Device Details, placeContext |
+| Kontextdata | En del av beslutsfeedback Experience Events skickas till AEP. Tillgängliga kontextdata att lägga till i schema: Commerce Details, Channel Details, Application Details, Web Details, Environment Details, Device Details, placeContext |
 
 Modellen har två faser:
 

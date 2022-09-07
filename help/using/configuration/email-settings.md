@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: b5f779a67dd4f5a08981a0d16d1a902e78b775d6
+source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1153'
 ht-degree: 1%
 
 ---
@@ -38,9 +38,9 @@ I **E-POSTTYP** väljer du den typ av meddelande som ska skickas med ytan: **Mar
 
 När [skapa ett meddelande](../messages/get-started-content.md)måste du välja en giltig kanalyta som matchar den kategori du valde för e-postmeddelandet.
 
-## Underdomän och IP-pool {#subdomains-and-ip-pools}
+## Underdomän- och IP-pooler {#subdomains-and-ip-pools}
 
-I **INFORMATION OM UNDERDOMÄN- OCH IP-POOL** måste du
+I **Underdomän- och IP-pooler** måste du
 
 1. Välj den underdomän som ska användas för att skicka e-postmeddelanden. [Läs mer](about-subdomain-delegation.md)
 
@@ -92,7 +92,7 @@ Läs mer om hur du lägger till en länk för att avbryta prenumerationen i dina
 
 ## Huvudparametrar{#email-header}
 
-I **[!UICONTROL HEADER PARAMETERS]** anger du avsändarens namn och e-postadresser som är kopplade till den typ av e-post som skickas med den aktuella ytan.
+I **[!UICONTROL Header parameters]** anger du avsändarens namn och e-postadresser som är kopplade till den typ av e-post som skickas med den aktuella ytan.
 
 >[!CAUTION]
 >
@@ -133,7 +133,7 @@ E-postadressen för vidarebefordran kommer att konfigureras av Adobe. Detta kan 
 
 Du kan skicka en identisk kopia (eller en kopia med kopia) av e-postmeddelanden som skickas av [!DNL Journey Optimizer] till en inkorg för kontroll av webbläsarkompatibilitet där de lagras för att uppfylla regelkrav eller arkiveras.
 
-Aktivera **[!UICONTROL BCC EMAIL]** valfri funktion på kanalytnivå. [Läs mer](bcc-email.md)
+Aktivera **[!UICONTROL BCC email]** valfri funktion på kanalytnivå. [Läs mer](bcc-email.md)
 
 ![](assets/preset-bcc.png)
 
@@ -145,7 +145,7 @@ Aktivera **[!UICONTROL BCC EMAIL]** valfri funktion på kanalytnivå. [Läs mer]
 >abstract="Försök utförs i 3,5 dagar (84 timmar) när en e-postleverans misslyckas på grund av ett tillfälligt fel med mjuk avhoppning. Du kan justera den här standardperioden för återförsök så att den passar dina behov bättre."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/email-configuration/monitor-reputation/retries.html" text="Om återförsök"
 
-Du kan konfigurera **PARAMETRAR FÖR E-POSTFÖRSÖK**.
+Du kan konfigurera **Parametrar för återförsök av e-post**.
 
 ![](assets/preset-retry-parameters.png)
 
@@ -171,13 +171,15 @@ Läs mer om återförsök i [det här avsnittet](retries.md).
 >title="Förhandsgranska parametrar för URL-spårning"
 >abstract="Granska hur spårningsparametrar läggs till i de URL:er som finns i ditt e-postinnehåll."
 
-Du kan använda **[!UICONTROL URL TRACKING PARAMETERS]** för att mäta effektiviteten i era marknadsföringssatsningar över olika kanaler. Den här funktionen är valfri.  
+Du kan använda **[!UICONTROL URL tracking parameters]** för att mäta effektiviteten i era marknadsföringssatsningar över olika kanaler. Den här funktionen är valfri.  
 
 Parametrarna som definieras i det här avsnittet läggs till i slutet av de URL:er som ingår i e-postmeddelandeinnehållet. Du kan sedan hämta parametrarna i webbanalysverktyg som Adobe Analytics eller Google Analytics och skapa olika resultatrapporter.
 
-![](assets/preset-url-tracking.png)
+<!--Three URL tracking parameters are auto-populated as an example when you create a channel surface. You can edit these and add up to 10 tracking parameters using the **[!UICONTROL Add new parameter]** button.-->
 
-Tre URL-spårningsparametrar fylls i automatiskt som exempel när du skapar en kanalyta. Du kan redigera dessa och lägga till upp till 10 spårningsparametrar med **[!UICONTROL Add new parameter]** -knappen.
+Du kan lägga till upp till 10 spårningsparametrar med **[!UICONTROL Add new parameter]** -knappen.
+
+![](assets/preset-url-tracking.png)
 
 Om du vill konfigurera en URL-spårningsparameter kan du ange önskade värden direkt i dialogrutan **[!UICONTROL Name]** och **[!UICONTROL Value]** fält.
 

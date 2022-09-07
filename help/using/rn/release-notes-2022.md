@@ -2,7 +2,7 @@
 title: Versionsinformation 2022
 description: Versionsinformation om Journey Optimizer 2022
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
-source-git-commit: 5aae2f685969460329f241720b0faf9c681fa668
+source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
 workflow-type: tm+mt
 source-wordcount: '2337'
 ht-degree: 9%
@@ -111,7 +111,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 * **URL-spårningsparametrar** - Du kan nu använda uttrycksredigeraren för att konfigurera parametrar för URL-spårning i dina e-postytor (t.ex. förinställningar). [Läs mer](../configuration/email-settings.md#url-tracking)
 
-**offer decisioning**
+**beslutsfattande**
 
 * **Målgruppsstorlek** - En ny uppskattningskomponent för målgruppsstorlek visas nu i användargränssnittet när du skapar en beslutsregel, när du väljer ett segment eller en regel för att ange ett erbjudande eller när du lägger till ett segment eller en regel i ett beslutsomfång.
 
@@ -340,7 +340,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 **Beslutshantering**
 
-* **Besluts-API på Edge** - Edge Decisioning API kan leverera och återge personaliserade erbjudanden som hanteras i Offer decisioning. Du kan skapa erbjudanden och andra relaterade objekt med hjälp av användargränssnittet (UI) eller API:erna för Offera decisioningen. [Läs mer](../offers/api-reference/offer-delivery-api/edge-decisioning-api.md)
+* **Besluts-API på Edge** - Edge Decisioning API kan leverera och återge personaliserade erbjudanden som hanteras i beslutsprocessen. Du kan skapa erbjudanden och andra relaterade objekt med hjälp av användargränssnittet (UI) eller API:erna för beslutshanteringen. [Läs mer](../offers/api-reference/offer-delivery-api/edge-decisioning-api.md)
 
 **Administrering**
 
@@ -378,7 +378,7 @@ Som Adobe Campaign Standard-kund kan du nu skicka e-post, push-meddelanden och S
 **Beslutshantering**
 
 * Du kan nu ange om begränsningen av erbjudanden ska gälla för alla användare eller för en viss profil, och för alla placeringar eller per placering. [Läs mer](../offers/offer-library/add-constraints.md#capping)
-* Med API:t för gruppbeslut kan organisationer använda offer decisioning-funktionalitet för alla profiler i ett visst segment i ett enda anrop. Erbjudandeinnehållet för varje profil i segmentet placeras i en AEP-datauppsättning där det är tillgängligt för anpassade batcharbetsflöden. [Läs mer](../offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
+* Med API:t för gruppbeslut kan organisationer använda beslutsstyrningsfunktioner för alla profiler i ett visst segment i ett enda anrop. Erbjudandeinnehållet för varje profil i segmentet placeras i en AEP-datauppsättning där det är tillgängligt för anpassade batcharbetsflöden. [Läs mer](../offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
 
 **Administrering**
 
@@ -476,7 +476,7 @@ The suppression list helps you with honoring the ISPs’ feedback to preserve se
 
 * Nu kan du få åtkomst till rapporter om optimeringsdata för sändningstid: antalet personer som var omedelbart meddelandeansvariga och antalet personer som fick meddelanden med 1 timmes optimering, 2 timmars optimering osv.
 
-<!--* Offer Decisioning reports are now available in Journey Optimizer. You can access the following metrics: Offers sent - Offers' impression rate - Offers' click rate - Breakdown report on Offers' sent.-->
+<!--* decision management reports are now available in Journey Optimizer. You can access the following metrics: Offers sent - Offers' impression rate - Offers' click rate - Breakdown report on Offers' sent.-->
 
 **Beslutshantering**
 
@@ -524,7 +524,7 @@ The suppression list helps you with honoring the ISPs’ feedback to preserve se
 
 * Journey Optimizer steghändelser kan nu länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html). The **profileID** -fältet, i det inbyggda schemat för händelser i resan, definieras nu som ett identitetsfält. [Läs mer](../reports/sharing-overview.md#integration-cja)
 
-**offer decisioning**
+**beslutsfattande**
 
 * När du uppdaterar ett erbjudande, ett reserverbjudande, en erbjudandesamling eller ett erbjudandebeslut som direkt eller indirekt hänvisas till i ett publicerat meddelande, återspeglas uppdateringarna nu automatiskt i motsvarande meddelande, utan att det behöver publiceras på nytt. [Läs mer](../offers/offers-e2e.md#insert-decision-in-email)
 

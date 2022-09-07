@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 851d988a-2582-4c30-80f3-b881d90771be
-source-git-commit: 0ca491315e214e3c12bec11a93da1a2b98b493b6
+source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1060'
 ht-degree: 2%
 
 ---
@@ -191,7 +191,7 @@ De detaljerade stegen för att skapa en samling beskrivs i [det här avsnittet](
 
 Nu måste ni ta ett beslut som kombinerar praktik med personaliserade erbjudanden och det reserverbjudande ni just skapade.
 
-Den här kombinationen kommer att användas av Offera decisioningen för att hitta det bästa erbjudandet för en viss profil: i det här exemplet baseras på den prioritet och beslutsregel som du tilldelade varje erbjudande.
+Den här kombinationen används av beslutsmotorn för att hitta det bästa erbjudandet för en viss profil: i det här exemplet baseras på den prioritet och beslutsregel som du tilldelade varje erbjudande.
 
 Följ stegen nedan för att skapa och konfigurera ett erbjudande:
 

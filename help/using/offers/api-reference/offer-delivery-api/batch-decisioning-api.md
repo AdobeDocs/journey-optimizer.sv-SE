@@ -6,9 +6,9 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 1ed01a6b-5e42-47c8-a436-bdb388f50b4e
-source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
+source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '750'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Leverera erbjudanden med [!DNL Batch Decisioning] API {#deliver-offers-batch}
 
-The [!DNL Batch Decisioning] Med API kan organisationer använda offer decisioning-funktionalitet för alla profiler i ett visst segment i ett enda anrop. Erbjudandeinnehållet för varje profil i segmentet placeras i en Adobe Experience Platform-datauppsättning där det är tillgängligt för anpassade grupparbetsflöden.
+The [!DNL Batch Decisioning] Med API kan organisationer använda beslutsfunktioner för alla profiler i ett visst segment i ett enda anrop. Erbjudandeinnehållet för varje profil i segmentet placeras i en Adobe Experience Platform-datauppsättning där det är tillgängligt för anpassade grupparbetsflöden.
 
 Med [!DNL Batch Decisioning] API kan du fylla i en datauppsättning med de bästa erbjudandena för alla profiler i ett Adobe Experience Platform-segment för beslutsomfattningar. En organisation kanske vill köra [!DNL Batch Decisioning] så att de kan skicka erbjudanden till en meddelandeleverantör. Erbjudandena används sedan som innehåll som skickas ut för batchmeddelandeleverans till samma användarsegment.
 
@@ -112,7 +112,7 @@ curl -X POST 'https://platform.adobe.io/data/core/ode/0948b1c5-fff8-3b76-ba17-90
 | `xdm:itemCount` | Det här är ett valfritt fält som visar antalet objekt, t.ex. alternativ som begärts för beslutsomfånget. Som standard returnerar API ett alternativ per omfång, men du kan uttryckligen be om fler alternativ genom att ange det här fältet. Minst 1 och högst 30 alternativ kan begäras per omfång. | `1` |
 | `xdm:includeContent` | Detta är ett valfritt fält och är `false` som standard. If `true`, ingår erbjudandeinnehållet i beslutshändelserna för datauppsättningen. | `false` |
 
-Se [Beslutsledningens dokumentation](../../get-started/starting-offer-decisioning.md) om du vill ha en översikt över de viktigaste begreppen och egenskaperna.
+Se [Beslutsledningens dokumentation](../../get-started/starting-offer-decisioning.md) för en översikt över de viktigaste begreppen och egenskaperna.
 
 **Svar**
 
@@ -128,7 +128,7 @@ Se [Beslutsledningens dokumentation](../../get-started/starting-offer-decisionin
 
 | Egenskap | Beskrivning | Exempel |
 | -------- | ----------- | ------- |
-| `@id` | UUID som genereras av Offer decisioning som identifierar en enskild arbetsbelastning. | `5d0ffb5e-dfc6-4280-99b6-0bf3131cb8b8` |
+| `@id` | UUID som genereras av beslutshantering som identifierar en enskild arbetsbelastning. | `5d0ffb5e-dfc6-4280-99b6-0bf3131cb8b8` |
 | `xdm:imsOrgId` | Organisations-ID. | `9GTO98D5F@AdobeOrg` |
 | `xdm:containerId` | Behållar-ID. | `0948b1c5-fff8-3b76-ba17-909c6b93b5a2` |
 | `ode:createDate` | Den tid då begäran om beslutsarbetsbelastning skapades. | `1648078924834` |
@@ -148,7 +148,7 @@ GET  {ENDPOINT_PATH}/{CONTAINER_ID}/workloads/decisions/{WORKLOAD_ID}
 | --------- | ----------- | ------- |
 | `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/ode` |
 | `{CONTAINER_ID}` | Behållaren där besluten finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
-| `{WORKLOAD_ID}` | UUID som genereras av Offer decisioning som identifierar en enskild arbetsbelastning. | `47efef25-4bcf-404f-96e2-67c4f784a1f5` |
+| `{WORKLOAD_ID}` | UUID som genereras av beslutshantering som identifierar en enskild arbetsbelastning. | `47efef25-4bcf-404f-96e2-67c4f784a1f5` |
 
 **Begäran**
 
@@ -177,7 +177,7 @@ curl -X GET 'https://platform.adobe.io/data/core/ode/0948b1c5-fff8-3b76-ba17-909
 
 | Egenskap | Beskrivning | Exempel |
 | -------- | ----------- | ------- |
-| `@id` | UUID som genereras av Offer decisioning som identifierar en enskild arbetsbelastning. | `5d0ffb5e-dfc6-4280-99b6-0bf3131cb8b8` |
+| `@id` | UUID som genereras av beslutshantering som identifierar en enskild arbetsbelastning. | `5d0ffb5e-dfc6-4280-99b6-0bf3131cb8b8` |
 | `xdm:imsOrgId` | Organisations-ID | `9GTO98D5F@AdobeOrg` |
 | `xdm:containerId` | Behållar-ID | `0948b1c5-fff8-3b76-ba17-909c6b93b5a2` |
 | `ode:createDate` | Den tid då begäran om beslutsarbetsbelastning skapades. | `1648076994405` |
