@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 70ab8f57-c132-4de1-847b-11f0ab14f422
-source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
+source-git-commit: c90dd7bb12461ada1d70da52a5024a5c6e860647
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '952'
 ht-degree: 2%
 
 ---
@@ -149,6 +149,11 @@ Du kan utföra **Lägg till**, **Ta bort** och **Hämta** åtgärder.
 Läs mer om hur du gör API-anrop i [Adobe Experience Platform API:er](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-guide.html)Referensdokumentation för {target=&quot;_blank&quot;}.
 
 ## Tillåtelselista logik {#logic}
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_allowed_list_logic"
+>title="Hantera tillåtelselista"
+>abstract="När tillåtelselista är aktiverat kommer endast de mottagare som ingår i tillåtelselista att få e-postmeddelanden från den här sandlådan."
 
 När tillåtelselista är [aktiv](#enable-allow-list), gäller följande logik:
 
