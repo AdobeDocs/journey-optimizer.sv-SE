@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: d21ab858913844d655a2b23d22b562b62eb7743c
 workflow-type: tm+mt
-source-wordcount: '1456'
+source-wordcount: '1502'
 ht-degree: 6%
 
 ---
@@ -86,9 +86,8 @@ Nedan finns en fullständig lista över tjänster och funktioner som är tillgä
 
 * **[!UICONTROL Sandboxes]** - Adobe Experience Platform tillhandahåller sandlådor som partitionerar en instans i separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. [Läs mer](../administration/sandboxes.md)
 
-<!--
-* **[!UICONTROL Alerts]** - The user interface allows you to view a history of received alerts based on metrics revealed by Adobe Experience Platform Observability Insights. The UI also allows you to view, enable, and disable available alert rules. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"}
--->
+* **[!UICONTROL Alerts]** - Med användargränssnittet kan du visa en historik över mottagna aviseringar baserat på mätvärden som visas av Adobe Experience Platform Observability Insights. I gränssnittet kan du även visa, aktivera och inaktivera tillgängliga varningsregler. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target=&quot;_blank&quot;}
+
 
 ## Användningsexempel inifrån produkten {#in-product-uc}
 
