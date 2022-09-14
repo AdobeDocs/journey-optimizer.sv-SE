@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-source-git-commit: e81e21f714a3c5450defa1129e1e2b9969dc1de7
+source-git-commit: 9e499fd6523e18ecb78e25b306c49f2fc0e4a7c9
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1137'
 ht-degree: 1%
 
 ---
@@ -112,12 +112,15 @@ Möjliga orsaker till leveransfel är:
 >[!CONTEXTUALHELP]
 >id="ajo_admin_suppression_list_header"
 >title="Lägg till e-postmeddelanden eller domäner i listan över inaktiveringar"
->abstract="Du kan fylla i listan över Journey Optimizer-undertryckningar manuellt om du vill utesluta vissa e-postadresser och/eller domäner från sändningen."
+>abstract="Du kan fylla i listan över Journey Optimizer-undertryckningar manuellt för att utesluta vissa e-postadresser och/eller domäner från din sändning."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_suppression_list"
 >title="Lägg till e-postmeddelanden eller domäner i listan över inaktiveringar"
->abstract="Om du vill fylla i listan över utelämningar för Journey Optimizer kan du lägga till e-postadresser eller domäner manuellt, en åt gången eller i gruppläge, via en CSV-filöverföring. Dessa specifika e-postadresser och/eller domäner kommer inte att kunna skickas."
+>abstract="Du kan fylla i listan över Journey Optimizer-undertryckningar manuellt om du vill utesluta vissa e-postadresser och/eller domäner från sändningen."
+
+<!--New contextual help content for September release:
+To populate the Journey Optimizer suppression list, you can manually add email addresses or domains - one at a time, or in bulk mode through a CSV file upload. These specific email addresses and/or domains will be excluded from your sending.-->
 
 När ett meddelande inte kan levereras till en e-postadress läggs adressen automatiskt till i listan över undertryckningar baserat på den definierade undertryckningsregeln eller avhoppsantalet.
 

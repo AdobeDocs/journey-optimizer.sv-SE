@@ -4,14 +4,19 @@ description: Lär dig hur du konfigurerar miljön för att skapa och använda la
 role: Admin
 level: Intermediate
 exl-id: 7cf1f083-bef0-40b5-8ddd-920a9d108eca
-source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
+source-git-commit: 9e499fd6523e18ecb78e25b306c49f2fc0e4a7c9
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '333'
 ht-degree: 2%
 
 ---
 
 # Definiera förinställningar för landningssidor {#lp-presets}
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_config_lp_subdomain_header"
+>title="Skapa en förinställning för landningssida"
+>abstract="För att kunna bygga en landningssida och använda den via Journey Optimizer måste du skapa en förinställning för landningssidan som innehåller den underdomän som ska användas."
 
 När [skapa en landningssida](../landing-pages/create-lp.md#create-a-lp)måste du välja en förinställning för landningssidan för att kunna bygga landningssidan och använda den **[!DNL Journey Optimizer]**.
 

@@ -4,9 +4,9 @@ description: Lär dig hur du konfigurerar miljön för att skicka SMS-meddelande
 role: Admin
 level: Intermediate
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
-source-git-commit: e81e21f714a3c5450defa1129e1e2b9969dc1de7
+source-git-commit: 9e499fd6523e18ecb78e25b306c49f2fc0e4a7c9
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -31,8 +31,10 @@ Konfigurera instansen innan du skickar SMS. Du måste [integrera providerinstäl
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_api"
 >title="Konfigurera SMS-leverantören med Journey Optimizer"
->abstract="Innan du skickar SMS måste du integrera providerinställningarna med Journey Optimizer. När du är klar måste du skapa en SMS-yta. Dessa steg måste utföras av en Adobe Journey Optimizer-systemadministratör."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/sms-configuration.html#message-preset-sms" text="Skapa en SMS-kanalyta"
+>abstract="Välj leverantör och fyll i dina SMS API-autentiseringsuppgifter."
+
+<!--New contextual help content for September release: >abstract="Before sending SMS, you must integrate the provider settings with Journey Optimizer. Once done, you will need to create an SMS surface. These steps must be performed by an Adobe Journey Optimizer system administrator."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/sms-configuration.html#message-preset-sms" text="Create an SMS channel surface"-->
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_configuration"

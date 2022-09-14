@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: e81e21f714a3c5450defa1129e1e2b9969dc1de7
+source-git-commit: 9e499fd6523e18ecb78e25b306c49f2fc0e4a7c9
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -40,139 +40,141 @@ När kanalytorna har konfigurerats kan du välja dem när du skapar meddelanden 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_message_presets"
 >title="Kanalytans inställningar"
->abstract="En kanalyta definierar alla tekniska parametrar som krävs för dina meddelanden (e-posttyp, avsändarnamn, mobilappar, SMS-konfiguration osv.): när du har konfigurerat det kan du välja det när du skapar åtgärder från en resa eller en kampanj. Observera att du måste ha behörigheten Hantera kanalyta för att skapa, redigera och ta bort kanalytor."
+>abstract="När du konfigurerar en kanalyta väljer du den kanal som den gäller för och definierar alla tekniska parametrar som krävs för dina meddelanden, till exempel e-posttyp, avsändarnamn, mobilappar, SMS-konfiguration och mycket mer."
 
-Så här skapar du en kanalyta:
+<!--New contextual help content for September release: A channel surface defines all the technical parameters required for your messages (email type, sender name, mobile apps, SMS configuration, etc.): once configured, you will be able to select it when creating actions from a journey or a campaign. Note that you must have the Manage channel surface permission to create, edit and delete channel surfaces.
 
-1. Öppna **[!UICONTROL Channels]** > **[!UICONTROL Branding]** > **[!UICONTROL Channel surfaces]** menyn och klicka sedan på **[!UICONTROL Create channel surface]**.
+To create a channel surface, follow these steps:
 
-   ![](assets/preset-create.png)
+1. Access the **[!UICONTROL Channels]** > **[!UICONTROL Branding]** > **[!UICONTROL Channel surfaces]** menu, then click **[!UICONTROL Create channel surface]**.
 
-1. Ange ett namn och en beskrivning (valfritt) för ytan och välj sedan de kanaler som ska konfigureras.
+    ![](assets/preset-create.png)
 
-   ![](assets/preset-general.png)
+1. Enter a name and a description (optional) for the surface, then select the channel(s) to configure.
 
-   >[!NOTE]
-   >
-   > Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-` tecken.
+    ![](assets/preset-general.png)
 
-1. Om du valde **[!UICONTROL Email]** kanal, konfigurera dina inställningar enligt beskrivningen i [det här avsnittet](email-settings.md).
+    >[!NOTE]
+    >
+    > Names must begin with a letter (A-Z). It can only contain alpha-numeric characters. You can also use underscore `_`, dot`.` and hyphen `-` characters. 
 
-   ![](assets/preset-email.png)
+1. If you selected the **[!UICONTROL Email]** channel, configure your settings as described in [this section](email-settings.md).
 
-1. För **[!UICONTROL Push Notification]** kanal, välj minst en plattform -  **iOS** och/eller **Android** - och de mobilappar som ska användas för varje plattform.
+    ![](assets/preset-email.png)
 
-   ![](assets/preset-push.png)
+1. For the **[!UICONTROL Push Notification]** channel, select at least one platform  -  **iOS** and/or **Android** -, and the mobile applications to use for each platform.
 
-   >[!NOTE]
-   >
-   >Mer information om hur du konfigurerar miljön för att skicka push-meddelanden finns i [det här avsnittet](push-gs.md).
+    ![](assets/preset-push.png)
+        
+    >[!NOTE]
+    >
+    >For more on how to configure your environment to send push notifications, refer to [this section](push-gs.md).
 
-1. För **[!UICONTROL SMS]** kanal, ange dina inställningar enligt [det här avsnittet](sms-configuration.md#message-preset-sms).
+1. For the **[!UICONTROL SMS]** channel, define your settings as detailed in [this section](sms-configuration.md#message-preset-sms).
 
-   ![](assets/preset-sms.png)
+    ![](assets/preset-sms.png)
 
-   >[!NOTE]
-   >
-   >Mer information om hur du konfigurerar miljön för att skicka SMS-meddelanden finns i [det här avsnittet](sms-configuration.md).
+    >[!NOTE]
+    >
+    >For more on how to configure your environment to send SMS messages, refer to [this section](sms-configuration.md).
 
-1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara kanalytan som ett utkast och återuppta konfigurationen senare.
+1. Once all the parameters have been configured, click **[!UICONTROL Submit]** to confirm. You can also save the channel surface as draft and resume its configuration later on.
 
-   ![](assets/preset-submit.png)
+    ![](assets/preset-submit.png)
 
-   >[!NOTE]
-   >
-   >Du kan inte fortsätta skapa en yta medan den valda IP-poolen är under [utgåva](ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) och har aldrig kopplats till den valda underdomänen. [Läs mer](#subdomains-and-ip-pools)
-   >
-   >Spara ytan som utkast och vänta tills IP-poolen har **[!UICONTROL Success]** status för att återuppta skapande av yta.
+    >[!NOTE]
+    >
+    >You cannot proceed with surface creation while the selected IP pool is under [edition](ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status), and has never been associated with the selected subdomain. [Learn more](#subdomains-and-ip-pools)
+    >
+    >Save the surface as draft and wait until the IP pool has the **[!UICONTROL Success]** status to resume surface creation.
+    
+1. Once the channel surface has been created, it displays in the list with the **[!UICONTROL Processing]** status.
 
-1. När kanalytan har skapats visas den i listan med **[!UICONTROL Processing]** status.
+    During this step, several checks will be performed to verify that it has been configured properly. The processing time is around **48h-72h**, and can take up to **7-10 business days**.
 
-   Under det här steget kommer flera kontroller att utföras för att verifiera att den har konfigurerats korrekt. Bearbetningstiden är ungefär **48h-72h** och kan ta upp till **7-10 arbetsdagar**.
+    These checks include configuration and technical tests that are performed by the Adobe team:
 
-   Dessa kontroller omfattar konfigurations- och tekniska tester som utförs av Adobe-teamet:
+    * SPF validation
+    * DKIM validation
+    * MX record validation
+    * Check IPs denylisting
+    * Helo host check
+    * IP pool verification
+    * A/PTR record, t/m/res subdomain verification
 
-   * SPF-validering
-   * DKIM-validering
-   * MX-postvalidering
-   * Kontrollera IP-adresser som blocklist
-   * Kontroll av värddator
-   * Verifiering av IP-pool
-   * A/PTR-post, t/m/res-underdomänverifiering
+    >[!NOTE]
+    >
+    >If the checks are not successful, learn more on the possible failure reasons in [this section](#monitor-channel-surfaces).  
 
-   >[!NOTE]
-   >
-   >Om kontrollerna inte lyckas kan du läsa mer om orsakerna till eventuella fel i [det här avsnittet](#monitor-channel-surfaces).
+1. Once the checks are successful, the channel surface gets the **[!UICONTROL Active]** status. It is ready to be used to deliver messages.
 
-1. När kontrollerna är klara får kanalytan **[!UICONTROL Active]** status. Den är klar att användas för att leverera meddelanden.
+    ![](assets/preset-active.png)
 
-   ![](assets/preset-active.png)
+## Monitor channel surfaces {#monitor-channel-surfaces}
 
-## Skärmkanalsytor {#monitor-channel-surfaces}
-
-Alla kanalytor visas i **[!UICONTROL Channels]** > **[!UICONTROL Channel surfaces]** -menyn. Det finns filter som hjälper dig att bläddra igenom listan (kanal, användare, status).
+All your channel surfaces display in the **[!UICONTROL Channels]** > **[!UICONTROL Channel surfaces]** menu. Filters are available to help you browse through the list (channel, user, status).
 
 ![](assets/preset-filters.png)
 
-När kanalytorna har skapats kan de ha följande status:
+Once created, channel surfaces can have the following statuses:
 
-* **[!UICONTROL Draft]**: Kanalytan har sparats som ett utkast och har inte skickats ännu. Öppna den för att återuppta konfigurationen.
-* **[!UICONTROL Processing]**: Kanalytan har skickats och genomgår flera verifieringssteg.
-* **[!UICONTROL Active]**: Kanalytan har verifierats och kan väljas för att skapa meddelanden.
-* **[!UICONTROL Failed]**: En eller flera kontroller misslyckades under verifieringen av kanalens yta.
-* **[!UICONTROL Deactivated]**: Kanalytan är inaktiverad. Det kan inte användas för att skapa nya meddelanden.
+* **[!UICONTROL Draft]**: The channel surface has been saved as a draft and has not been submitted yet. Open it to resume the configuration.
+* **[!UICONTROL Processing]**: The channel surface has been submitted and is going through several verifications steps.
+* **[!UICONTROL Active]**: The channel surface has been verified and can be selected to create messages.
+* **[!UICONTROL Failed]**: One or several checks have failed during the channel surface verification.
+* **[!UICONTROL Deactivated]**: The channel surface is deactivated. It cannot be used to create new messages.
 
-Om det inte går att skapa en kanalyta beskrivs detaljerna för varje möjlig felorsak nedan.
+In case a channel surface creation fails, the details on each possible failure reason are described below.
 
-Om något av dessa fel inträffar, kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;} om du vill ha hjälp.
+If one of these errors occurs, contact [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} to get assistance.
 
-* **SPF-valideringen misslyckades**: SPF (Sender Policy Framework) är ett autentiseringsprotokoll för e-post som tillåter att auktoriserade IP-adresser kan skicka e-post från en viss underdomän. SPF-valideringsfel innebär att IP-adresserna i SPF-posten inte matchar IP-adresserna som används för att skicka e-post till postlådeprovidern.
+* **SPF validation failed**: SPF (Sender Policy Framework) is an email authentication protocol that allows to specify authorized IPs that can send emails from a given subdomain. SPF validation failure means that the IP addresses in the SPF record do not match the IP addresses used for sending emails to the mailbox providers. 
 
-* **DKIM-validering misslyckades**: Med DKIM (DomainKeys Identified Mail) kan mottagarservern verifiera att det mottagna meddelandet skickades av den äkta avsändaren av den associerade domänen och att innehållet i det ursprungliga meddelandet inte ändrades. DKIM-valideringsfel innebär att de mottagande e-postservrarna inte kan verifiera meddelandeinnehållets autenticitet och dess koppling till den sändande domänen:
+* **DKIM validation failed**: DKIM (DomainKeys Identified Mail) allows the recipient server to verify that the received message was sent by the genuine sender of the associated domain and that the content of the original message was not altered on its way. DKIM validation failure means that the receiving mail servers are unable to verify the authenticity of the message content and its association with the sending domain.:
 
-* **MX-postvalideringen misslyckades**: MX-postvalideringsfel (Mail eXchange) innebär att de e-postservrar som ansvarar för att ta emot inkommande e-post för en viss underdomän inte är korrekt konfigurerade.
+* **MX record validation failed**: MX (Mail eXchange) record validation failure means that the mail servers responsible for accepting inbound emails on behalf of a given subdomain are not correctly configured.
 
-* **Konfigurationer för slutbarhet misslyckades**: Fel i leveranskonfigurationer kan uppstå på grund av någon av följande orsaker:
-   * Blockeringslistning av de tilldelade IP-adresserna
-   * Ogiltig `helo` name
-   * E-postmeddelanden skickas från andra IP-adresser än de som anges i IP-poolen för motsvarande yta
-   * Det går inte att leverera e-postmeddelanden till inkorg hos större internetleverantörer som Gmail och Yahoo
+* **Deliverability configurations failed**: Deliverability configurations failure can happen due to any of the following reasons:
+    * Blocklisting of the allocated IPs
+    * Invalid `helo` name
+    * Emails being sent from IPs other than the ones specified in the IP pool of the corresponding surface
+    * Unable to deliver emails to inboxes of major ISPs like Gmail and Yahoo
 
-## Redigera en kanalyta {#edit-channel-surface}
+## Edit a channel surface {#edit-channel-surface}
 
-Om du vill redigera en kanalyta följer du stegen nedan.
-
->[!NOTE]
->
->Du kan inte redigera **[!UICONTROL Push notification settings]**. Om en kanalyta bara är konfigurerad för Push-meddelandekanalen går det inte att redigera den.
-
-1. Öppna en kanalyta genom att klicka på dess namn i listan.
-
-   ![](assets/preset-name.png)
-
-1. Redigera egenskaperna efter behov.
-
-   >[!NOTE]
-   >
-   >Om en kanalyta har **[!UICONTROL Active]** status, **[!UICONTROL Name]**, **[!UICONTROL Select channel]** och **[!UICONTROL Subdomain]** fält är nedtonade och kan inte redigeras.
-
-1. Klicka **[!UICONTROL Submit]** för att bekräfta dina ändringar.
-
-   >[!NOTE]
-   >
-   >Du kan också spara kanalytan som utkast och återuppta uppdateringen senare.
-
-När ändringarna har skickats går kanalytan igenom en valideringscykel som liknar den som finns när [skapa en kanalyta](#create-channel-surface). Versionshanteringstiden kan ta upp till **3 timmar**.
+To edit a channel surface, follow the steps below.
 
 >[!NOTE]
 >
->Om du bara redigerar **[!UICONTROL Description]**, **[!UICONTROL Email type]** och/eller **[!UICONTROL Email retry parameters]** uppdateras uppdateringen omedelbart.
+>You cannot edit the **[!UICONTROL Push notification settings]**. If a channel surface is only configured for the Push notification channel, it is not editable.
 
-### Uppdatera information {#update-details}
+1. From the list, click a channel surface name to open it.
 
-För kanalytor som har **[!UICONTROL Active]** status kan du kontrollera uppdateringens information. För att göra detta:
+    ![](assets/preset-name.png)
 
-Klicka på **[!UICONTROL Recent update]** -ikonen som visas bredvid det aktiva ytnamnet.
+1. Edit its properties as desired.
+
+    >[!NOTE]
+    >
+    >If a channel surface has the **[!UICONTROL Active]** status, the **[!UICONTROL Name]**, **[!UICONTROL Select channel]** and **[!UICONTROL Subdomain]** fields are greyed out and cannot be edited.
+
+1. Click **[!UICONTROL Submit]** to confirm your changes.
+
+    >[!NOTE]
+    >
+    >You can also save the channel surface as draft and resume update later on.
+
+Once the changes are submitted, the channel surface will go through a validation cycle similar to the one in place when [creating a channel surface](#create-channel-surface). The edition processing time can take up to **3 hours**.
+
+>[!NOTE]
+>
+>If you only edit the **[!UICONTROL Description]**, **[!UICONTROL Email type]** and/or **[!UICONTROL Email retry parameters]** fields, the update is instantaneous.
+
+### Update details {#update-details}
+
+For channel surfaces that have the **[!UICONTROL Active]** status, you can check the details of the update. To do so:
+
+Click the **[!UICONTROL Recent update]** icon that is displayed next to the active surface name.
 
 ![](assets/preset-recent-update-icon.png)
 
