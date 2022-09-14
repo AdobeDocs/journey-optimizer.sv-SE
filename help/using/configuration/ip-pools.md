@@ -6,14 +6,19 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 606334c3-e3e6-41c1-a10e-63508a3ed747
-source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
+source-git-commit: e81e21f714a3c5450defa1129e1e2b9969dc1de7
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
 
 # Skapa IP-pooler {#create-ip-pools}
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_ip_pool_header"
+>title="Konfigurera en IP-pool"
+>abstract="Du kan skapa IP-pooler för att gruppera IP-adresserna för dina underdomäner för att förbättra e-postleveransen."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_pool"

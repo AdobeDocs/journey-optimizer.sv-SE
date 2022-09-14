@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
+source-git-commit: e81e21f714a3c5450defa1129e1e2b9969dc1de7
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1156'
 ht-degree: 1%
 
 ---
@@ -110,9 +110,14 @@ Möjliga orsaker till leveransfel är:
 ## Lägga till adresser och domäner manuellt {#add-addresses-and-domains}
 
 >[!CONTEXTUALHELP]
->id="ajo_admin_suppression_list"
+>id="ajo_admin_suppression_list_header"
 >title="Lägg till e-postmeddelanden eller domäner i listan över inaktiveringar"
 >abstract="Du kan fylla i listan över Journey Optimizer-undertryckningar manuellt om du vill utesluta vissa e-postadresser och/eller domäner från sändningen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_suppression_list"
+>title="Lägg till e-postmeddelanden eller domäner i listan över inaktiveringar"
+>abstract="Om du vill fylla i listan över utelämningar för Journey Optimizer kan du lägga till e-postadresser eller domäner manuellt, en åt gången eller i gruppläge, via en CSV-filöverföring. Dessa specifika e-postadresser och/eller domäner kommer inte att kunna skickas."
 
 När ett meddelande inte kan levereras till en e-postadress läggs adressen automatiskt till i listan över undertryckningar baserat på den definierade undertryckningsregeln eller avhoppsantalet.
 

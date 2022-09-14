@@ -8,9 +8,9 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 7fe4b24e-f60a-4107-a064-00010b0cbbfc
-source-git-commit: f0e2f80a815aebb7574582fbf33770aa5da0abab
+source-git-commit: e81e21f714a3c5450defa1129e1e2b9969dc1de7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1924'
 ht-degree: 0%
 
 ---
@@ -21,17 +21,17 @@ ht-degree: 0%
 >
 >Funktionen Innehållsexperiment är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
 
-## Vad är en Content Experiment?
+## Vad är ett innehållsexperiment?
 
-Med Content Experiments kan ni optimera innehåll för åtgärderna i era kampanjer.
+Med hjälp av innehållsexperiment kan ni optimera innehåll för åtgärderna i era kampanjer.
 
-Experiment är en uppsättning randomiserade prövningar, som i samband med onlinetestning innebär att vissa slumpmässigt utvalda användare exponeras för en viss variant av ett meddelande och en annan slumpmässigt utvald uppsättning användare för en annan behandling. När du har skickat meddelandet kan du mäta de resultatvärden du är intresserad av, t.ex. öppningar av e-postmeddelanden eller klick.
+Experiment är en uppsättning randomiserade prövningar, som i samband med onlinetestning innebär att vissa slumpmässigt utvalda användare exponeras för en viss variant av ett meddelande och en annan slumpmässigt utvald uppsättning användare för en annan behandling. När du har skickat meddelandet kan du mäta de resultatvärden du är intresserad av, till exempel öppningar av e-postmeddelanden eller klick.
 
 ## Varför ska du köra Experiment?
 
 ![](assets/content_experiment_schema.png)
 
-Experimentera för att isolera de ändringar som leder till förbättringar av mätvärdena. Se bilden ovan: vissa slumpmässigt utvalda användare exponeras för varje behandlingsgrupp vilket innebär att grupperna i genomsnitt har samma egenskaper. Skillnader i utfall kan således tolkas som att de beror på skillnader i behandlingarna, d.v.s. att du kan fastställa ett orsakssamband mellan de ändringar du gjort och de utfall du är intresserad av.
+Experimentera för att isolera de ändringar som leder till förbättringar av mätvärdena. Se bilden ovan: vissa slumpmässigt utvalda användare exponeras för varje behandlingsgrupp vilket innebär att grupperna i genomsnitt har samma egenskaper. Skillnader i utfall kan således tolkas som att de beror på skillnader i behandlingarna, dvs. att du kan fastställa ett orsakssamband mellan de ändringar du gjort och de utfall du är intresserad av.
 
 På så sätt kan ni fatta datadrivna beslut för att optimera era era affärsmål.
 
@@ -39,6 +39,38 @@ För Content Experimentes i Adobe Journey Optimizer kan du testa idéer som:
 
 * **Subject line**: Vilka konsekvenser kan en ändring av tonen eller graden av personalisering av en ämnesrad få?
 * **Meddelandeinnehåll**: Kommer en ändring av den visuella layouten för ett e-postmeddelande att resultera i fler klick på e-postmeddelandet?
+
+## Hur fungerar innehållsexperiment? {#content-experiment-work}
+
+### Slumpmässig tilldelning
+
+Innehållsexperiment i Adobe Journey Optimizer använder en pseudoslumpmässig hash av besöksidentiteten för att slumpmässigt tilldela användare i målgruppen en av de behandlingar som du har definierat. Hash-mekanismen säkerställer att besökarna får samma behandling i scenarier där besökaren går in i en kampanj flera gånger.
+
+MumurHash3 32-bitarsalgoritmen används i detalj för att hash-koda användaridentitetssträngen till en av 10 000 bucket. I ett innehållsexperiment, där 50% av all trafik tilldelas till varje behandling, får användare som hamnar i bucket 1-5 000 den första behandlingen, medan användare i bucketerna 5 001-10 000 får den andra behandlingen. Eftersom pseudoslumpmässiga hashningar används kanske den delade besökaren som du observerar inte är exakt 50-50. delningen är dock statistiskt likvärdig med måldelningsprocenten.
+
+Observera att du måste välja ett identitetsnamnutrymme som userId väljs från för slumpgenereringsalgoritmen när du konfigurerar varje kampanj med ett innehållsexperiment. Detta är oberoende av [körningsadresser](../configuration/primary-email-addresses.md).
+
+### Datainsamling och -analys
+
+Vid tidpunkten för tilldelningen, dvs. när meddelandet skickas i utgående kanaler, eller när användaren går in i kampanjen i inkommande kanaler, loggas en tilldelningspost i lämplig systemdatauppsättning. Detta registrerar vilken behandling användaren har tilldelats, tillsammans med experiment- och kampanjidentifierare.
+
+Målsättningsstatistik kan grupperas i två huvudklasser:
+
+* Direktmått, där användaren reagerar direkt på behandlingen, t.ex. öppnar ett e-postmeddelande eller klickar på en länk.
+* Indirekt eller &quot;bottenströms&quot;-statistik som inträffar efter att användaren har exponerats för behandlingen.
+
+För direkta objektiva mätvärden där Adobe Journey Optimizer spårar era meddelanden taggas slutanvändarnas svarshändelser automatiskt med kampanj- och behandlingsidentifierarna, vilket möjliggör direkt koppling av svarsmätningen med en behandling. [Läs mer om spårning](../design/message-tracking.md).
+
+![](assets/technote_2.png)
+
+För mål som rör indirekt eller&quot;bottendel av tratten&quot;, t.ex. inköp, är slutanvändarnas responshändelser inte taggade med kampanj- och behandlingsidentifierare, dvs. en köphändelse inträffar efter exponering för en behandling, det finns inget direkt samband mellan köpet och en tidigare behandlingstilldelning. För dessa mätvärden kopplar Adobe behandlingen till nederdelen av trattkonverteringshändelsen om:
+
+* Användaridentiteten är densamma vid tilldelning och konverteringshändelsetid.
+* Omvandlingen sker inom sju dagar efter behandlingstilldelningen.
+
+![](assets/technote_3.png)
+
+Adobe Journey Optimizer använder sedan avancerade &quot;närsomhelst giltiga&quot; statistiska metoder för att tolka denna rådatarapportering, som gör att du kan tolka dina experimentella rapporter. Mer information finns på [den här sidan](../campaigns/experiment-calculations.md).
 
 ## Tips för att köra Experiment
 

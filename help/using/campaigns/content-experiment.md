@@ -8,9 +8,9 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: 6068060e66f75a7727f4a0fdae580c11542fa13b
+source-git-commit: e81e21f714a3c5450defa1129e1e2b9969dc1de7
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '916'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 >
 >The **Content Experiment** är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
 
-Använd Journey Optimizer Content Experiment för att definiera olika leveranssätt. Intressemålgruppen fördelas slumpmässigt till varje behandling för att avgöra vilken som fungerar bäst med avseende på intressemätningen. Du kan välja att ändra e-postmeddelandets innehåll, ämne eller avsändare.
+Använd Journey Optimizer Content Experiment för att definiera olika leveranssätt. Intressemålgruppen fördelas slumpmässigt till varje behandling för att avgöra vilken som fungerar bäst med avseende på intressemätningen. Du kan välja att variera leveransinnehåll, ämne eller avsändare.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Använd Journey Optimizer Content Experiment för att definiera olika leveranss�
 
 I exemplet nedan har leveransmålet delats upp i två grupper, som var och en representerar 45 % av målpopulationen, och en slutgruppsgrupp på 10 % som inte får leveransen.
 
-Varje person i målgruppen får en version av e-postmeddelandet med en ämnesrad som är en av följande två:
+Varje person i målgruppen får en version av ett e-postmeddelande med en ämnesrad som är en av följande två:
 
 * en som direkt marknadsför ett 10-procentigt erbjudande på den nya samlingen och en bild.
 * den andra bara ger ut ett specialerbjudande utan att ange 10 % rabatt utan någon bild.
@@ -44,7 +44,7 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 
    ![](assets/content_experiment_1.png)
 
-1. Välj **[!UICONTROL Email]** sedan **[!UICONTROL Surface]** du vill använda för den här leveransen. Mer information finns i [Kanalytor](../configuration/channel-surfaces.md) sida.
+1. Välj kanal och sedan **[!UICONTROL Surface]** du vill använda för den här leveransen. Mer information finns i [Kanalytor](../configuration/channel-surfaces.md) sida.
 
    ![](assets/content_experiment_2.png)
 
@@ -59,7 +59,11 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 
    ![](assets/content_experiment_3.png)
 
-1. Konfigurera **[!UICONTROL Audience]** och **[!UICONTROL Schedule]** parametrar för leveranser. [Läs mer](create-campaign.md)
+1. Definiera målgruppen. Om du vill göra det klickar du på **[!UICONTROL Select audience]** om du vill visa en lista över tillgängliga Adobe Experience Platform-segment. [Läs mer om segment](../segment/about-segments.md)
+
+   I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera individerna från det valda segmentet. [Läs mer](get-started-experiment.md#content-experiment-work)
+
+1. Konfigurera avsnittet Schema om du vill köra kampanjen på ett visst datum eller med en återkommande frekvens. [Läs mer](create-campaign.md)
 
 1. Klicka **[!UICONTROL Edit content]** för att personalisera din egen **[!UICONTROL Treatments]**.
 
@@ -67,21 +71,15 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 
 ## Skapa egna behandlingar {#treatment-experiment}
 
-1. Från **[!UICONTROL Edit content]** fönster, lägga till **[!UICONTROL Subject line]** för din behandling Ett e-postmeddelande och klicka **[!UICONTROL Save]**.
+1. Från **[!UICONTROL Edit content]** börja personalisera din behandling A.
 
-   För denna behandling anger vi erbjudandet direkt i ämnesraden.
+   Vi kommer att specificera specialerbjudandet direkt i ämnesraden.
 
    ![](assets/content_experiment_5.png)
 
-1. Klicka **[!UICONTROL Email designer]** för att personalisera era leveranser.
+1. När du har designat din första behandling kan du **[!UICONTROL More actions]** knapp, klicka **[!UICONTROL Duplicate]**.
 
-   ![](assets/content_experiment_6.png)
-
-1. När du har utformat e-postmeddelandet klickar du på **[!UICONTROL Save]** och gå tillbaka till **[!UICONTROL Edit content]** för att skapa Behandling B.
-
-1. Från **[!UICONTROL More actions]** knapp, klicka **[!UICONTROL Duplicate]**.
-
-   Du kan också välja att starta en ny behandling från början genom att klicka på **[!UICONTROL Content experiment]** för att komma åt de avancerade alternativen och sedan **[!UICONTROL Add treatment]**.
+   Du kan också välja att starta en ny behandling från början genom att klicka på **[!UICONTROL Content experiment]** knapp ![](assets/content_experiment_16.png) för att komma åt de avancerade alternativen och sedan **[!UICONTROL Add treatment]**.
 
    ![](assets/content_experiment_7.png)
 
@@ -89,15 +87,11 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 
    ![](assets/content_experiment_8.png)
 
-1. Välj den e-postleverans som är länkad till din nya e-postleverans **[!UICONTROL Treatment]**.
+1. Anpassa din andra behandling efter behov.
 
-1. Lägg till **[!UICONTROL Subject line]** för leverans.
-
-   För den här behandlingen väljer vi att inte ange erbjudandet i **[!UICONTROL Subject line]**.
+   Här väljer vi att inte ange erbjudandet i **[!UICONTROL Subject line]**.
 
    ![](assets/content_experiment_9.png)
-
-1. Klicka **[!UICONTROL Email designer]** för att ytterligare personalisera leveransen av behandling B vid behov.
 
 När du har anpassat dina behandlingar kan du börja konfigurera ditt innehållsexperiment.
 

@@ -4,9 +4,9 @@ description: Lär dig hur du konfigurerar miljön för att skicka SMS-meddelande
 role: Admin
 level: Intermediate
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
-source-git-commit: 28380dbadf485ba05f7ef6788a50253876718441
+source-git-commit: e81e21f714a3c5450defa1129e1e2b9969dc1de7
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,15 @@ Konfigurera instansen innan du skickar SMS. Du måste [integrera providerinstäl
 ## Skapa nya API-autentiseringsuppgifter {#create-api}
 
 >[!CONTEXTUALHELP]
->id="ajo_admin_sms_api"
->title="Välj SMS-leverantörskonfiguration"
+>id="ajo_admin_sms_api_header"
+>title="Konfigurera SMS-leverantören med Journey Optimizer"
 >abstract="Välj leverantör och fyll i dina SMS API-autentiseringsuppgifter."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_api"
+>title="Konfigurera SMS-leverantören med Journey Optimizer"
+>abstract="Innan du skickar SMS måste du integrera providerinställningarna med Journey Optimizer. När du är klar måste du skapa en SMS-yta. Dessa steg måste utföras av en Adobe Journey Optimizer-systemadministratör."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/sms-configuration.html#message-preset-sms" text="Skapa en SMS-kanalyta"
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_configuration"

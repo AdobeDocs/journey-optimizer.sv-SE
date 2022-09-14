@@ -6,16 +6,16 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
+source-git-commit: e81e21f714a3c5450defa1129e1e2b9969dc1de7
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1481'
 ht-degree: 0%
 
 ---
 
 # Konfigurera kanalytor {#set-up-channel-surfaces}
 
-Med [!DNL Journey Optimizer]kan du skapa kanalytor (t.ex. meddelandeförinställningar) som definierar alla tekniska parametrar som krävs för dina meddelanden: e-posttyp, avsändarens e-postadress och namn, mobilappar med mera.
+Med [!DNL Journey Optimizer]kan du skapa kanalytor (t.ex. meddelandeförinställningar) som definierar alla tekniska parametrar som krävs för dina meddelanden: e-posttyp, avsändarens e-postadress och namn, mobilappar, SMS-konfiguration med mera.
 
 >[!CAUTION]
 >
@@ -33,9 +33,14 @@ När kanalytorna har konfigurerats kan du välja dem när du skapar meddelanden 
 ## Skapa en kanalyta {#create-channel-surface}
 
 >[!CONTEXTUALHELP]
+>id="ajo_admin_message_presets_header"
+>title="Kanalytans inställningar"
+>abstract="När du konfigurerar en kanalyta väljer du den kanal som den gäller för och definierar alla tekniska parametrar som krävs för dina meddelanden, till exempel e-posttyp, underdomän, avsändarnamn, mobilappar, SMS-konfiguration med mera."
+
+>[!CONTEXTUALHELP]
 >id="ajo_admin_message_presets"
 >title="Kanalytans inställningar"
->abstract="När du konfigurerar en kanalyta väljer du den kanal som den gäller för och definierar alla tekniska parametrar som krävs för dina meddelanden, till exempel meddelandetyp, underdomän, avsändarnamn, mobilappar och mycket annat."
+>abstract="En kanalyta definierar alla tekniska parametrar som krävs för dina meddelanden (e-posttyp, avsändarnamn, mobilappar, SMS-konfiguration osv.): när du har konfigurerat det kan du välja det när du skapar åtgärder från en resa eller en kampanj. Observera att du måste ha behörigheten Hantera kanalyta för att skapa, redigera och ta bort kanalytor."
 
 Så här skapar du en kanalyta:
 

@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
-source-git-commit: e9aab8f3e686a6858e401101f751a35933a21c0a
+source-git-commit: e81e21f714a3c5450defa1129e1e2b9969dc1de7
 workflow-type: tm+mt
-source-wordcount: '1772'
+source-wordcount: '1673'
 ht-degree: 0%
 
 ---
@@ -169,18 +169,17 @@ Följ stegen nedan om du vill ställa in capping.
    * Välj **[!UICONTROL Per profile]** för att definiera hur många gånger ett erbjudande kan erbjudas en och samma användare.
 
       Om du till exempel är en bank med ett Platinum-kreditkortserbjudande vill du inte att det här erbjudandet ska visas mer än fem gånger per profil. Ni tror faktiskt att om användaren har sett erbjudandet fem gånger och inte har följt det, har de större chans att agera på nästa bästa erbjudande.
+   <!--
+    Set the **[!UICONTROL Frequency]** to define how often the capping count is reset. To do so, define the time period for the counting (daily, weekly or monthly) and enter the number of days/weeks/months of your choice.
+    ![](../assets/offer-capping-frequency.png)
+    >[!NOTE]
+    >
+    >The reset happens at 12am UTC, on the day that you defined or on the first day of the week/month when applicable. The week start day is Sunday.
+    
+    For example, if you want the capping count to be reset every 2 weeks, select **[!UICONTROL Weekly]** from the **[!UICONTROL Repeat]** drop-down list and type **2** in the other field. The reset will happen every other Sunday at 12pm UTC.
+    -->
 
-1. Ange **[!UICONTROL Frequency]** för att definiera hur ofta antalet capping återställs. Om du vill göra det anger du tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och anger hur många dagar/veckor/månader du vill ha.
-
-   ![](../assets/offer-capping-frequency.png)
-
-   >[!NOTE]
-   >
-   >Återställningen sker kl. 12.00 UTC, den dag du har definierat eller den första dagen i veckan/månaden när det är tillämpligt. Veckostartdagen är söndag.
-
-   Om du till exempel vill att antalet fästingar ska återställas varannan vecka väljer du **[!UICONTROL Weekly]** från **[!UICONTROL Repeat]** nedrullningsbar lista och typ **2** i det andra fältet. Återställningen sker varannan söndag kl. 12.00 UTC.
-
-1. Om du har definierat flera [representationer](#representations) för ditt erbjudande, ange om du vill tillämpa begränsning **[!UICONTROL Across all placements]** eller **[!UICONTROL For each placement]**.
+1. Om du har definierat flera [representationer](add-representations.md) för ditt erbjudande, ange om du vill tillämpa begränsning **[!UICONTROL Across all placements]** eller **[!UICONTROL For each placement]**.
 
    ![](../assets/offer-capping-placement.png)
 
