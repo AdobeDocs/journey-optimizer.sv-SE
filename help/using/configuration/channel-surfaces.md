@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 59da1d75885ffc6f4b97e218ea131233c198a7ae
+source-git-commit: eff4cef0ea868802c734d16cf5000ff3efa6503c
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -138,7 +138,7 @@ Om något av dessa fel inträffar, kontakta [Adobe kundtjänst](https://helpx.ad
    * Blockeringslistning av de tilldelade IP-adresserna
    * Ogiltig `helo` name
    * E-postmeddelanden skickas från andra IP-adresser än de som anges i IP-poolen för motsvarande yta
-   * Det går inte att leverera e-postmeddelanden till inkorg hos större internetleverantörer som Gmail och Yahoo
+   * Det går inte att leverera e-postmeddelanden till inkorg hos viktiga Internet-leverantörer
 
 ## Redigera en kanalyta {#edit-channel-surface}
 

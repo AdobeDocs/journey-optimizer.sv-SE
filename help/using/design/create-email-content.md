@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 151594f2-85e4-4c79-9c15-334fbd3768c4
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: 3c1da5b789ad3f1b010f3d5be9c521f296035b83
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -16,14 +16,46 @@ ht-degree: 0%
 # Börja från början {#create-email-content}
 
 >[!CONTEXTUALHELP]
->id="ac_structure_components"
+>id="ac_structure_components_email"
 >title="Om strukturkomponenter"
 >abstract="Strukturkomponenter definierar layouten för e-postmeddelandet."
 
 >[!CONTEXTUALHELP]
->id="ac_edition_columns"
+>id="ac_structure_components_landing_page"
+>title="Om strukturkomponenter"
+>abstract="Strukturkomponenter definierar landningssidans layout."
+
+>[!CONTEXTUALHELP]
+>id="ac_structure_components_fragment"
+>title="Om strukturkomponenter"
+>abstract="Strukturkomponenter definierar fragmentets layout."
+
+>[!CONTEXTUALHELP]
+>id="ac_structure_components_template"
+>title="Om strukturkomponenter"
+>abstract="Strukturkomponenter definierar mallens layout."
+
+
+>[!CONTEXTUALHELP]
+>id="ac_edition_columns_email"
 >title="Definiera e-postkolumner"
 >abstract="Med e-postdesignern kan du enkelt definiera layouten för e-postmeddelandet genom att definiera kolumnstrukturen."
+
+>[!CONTEXTUALHELP]
+>id="ac_edition_columns_landing_page"
+>title="Definiera landningssidans kolumner"
+>abstract="Med e-postdesignern kan du enkelt definiera layouten för landningssidan genom att definiera kolumnstrukturen."
+
+>[!CONTEXTUALHELP]
+>id="ac_edition_columns_fragment"
+>title="Definiera fragmentkolumner"
+>abstract="Med e-postdesignern kan du enkelt definiera fragmentets layout genom att definiera kolumnstrukturen."
+
+>[!CONTEXTUALHELP]
+>id="ac_edition_columns_template"
+>title="Definiera mallkolumner"
+>abstract="Med e-postdesignern kan du enkelt definiera mallens layout genom att definiera kolumnstrukturen."
+
 
 Med e-postdesignern kan du enkelt definiera e-postens struktur. Genom att lägga till och flytta strukturella element med enkla dra-och-släpp-åtgärder kan du designa formen på e-postmeddelandet på några sekunder.
 

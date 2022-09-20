@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-source-git-commit: 9e499fd6523e18ecb78e25b306c49f2fc0e4a7c9
+source-git-commit: 769c5cb4c609a9c97223103216713dbec44847a4
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1127'
 ht-degree: 1%
 
 ---
@@ -177,11 +177,6 @@ Om du vill göra det väljer du **[!UICONTROL Add email or domain]** och däreft
    EMAIL,abc@somedomain.com,Comment
    DOMAIN,somedomain.com,Comment
    ```
-   >[!NOTE]
-   >
-   >Alla ASCII-tecken mellan 32 och 126 tillåts i **Kommentar** kolumn. Den fullständiga listan finns på [den här sidan](https://en.wikipedia.org/wiki/Wikipedia:ASCII#ASCII_printable_characters){target=&quot;_blank&quot;} till exempel.
-
-   Du kan även hämta den här mallen från **[!UICONTROL Suppression list]** huvudvyn.
 
    >[!CAUTION]
    >
@@ -190,6 +185,10 @@ Om du vill göra det väljer du **[!UICONTROL Add email or domain]** och däreft
    >Filstorleken får inte överstiga 1 MB.
 
 1. Fyll i CSV-mallen med de e-postadresser och/eller domäner som du vill lägga till i listan över inaktiveringar.
+
+   >[!NOTE]
+   >
+   >Alla ASCII-tecken mellan 32 och 126 tillåts i **Kommentar** kolumn. Den fullständiga listan finns på [den här sidan](https://en.wikipedia.org/wiki/Wikipedia:ASCII#ASCII_printable_characters){target=&quot;_blank&quot;} till exempel.
 
 1. När du är klar drar och släpper du CSV-filen och klickar sedan på **[!UICONTROL Submit]**.
 

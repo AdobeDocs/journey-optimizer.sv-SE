@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: a4aaa814-3fd4-439e-8f34-faf97208378a
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: 3c1da5b789ad3f1b010f3d5be9c521f296035b83
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '1172'
 ht-degree: 1%
 
 ---
@@ -16,9 +16,24 @@ ht-degree: 1%
 # Använda e-postdesignerns innehållskomponenter {#content-components}
 
 >[!CONTEXTUALHELP]
->id="ac_content_components"
+>id="ac_content_components_email"
 >title="Om innehållskomponenter"
 >abstract="Innehållskomponenterna är tomma platshållare för innehåll som du kan använda för att skapa layouten för ett e-postmeddelande."
+
+>[!CONTEXTUALHELP]
+>id="ac_content_components_landing_page"
+>title="Om innehållskomponenter"
+>abstract="Innehållskomponenterna är tomma platshållare för innehåll som du kan använda för att skapa layouten för en landningssida."
+
+>[!CONTEXTUALHELP]
+>id="ac_content_components_fragment"
+>title="Om innehållskomponenter"
+>abstract="Innehållskomponenter är tomma platshållare för innehåll som du kan använda för att skapa layouten för ett fragment."
+
+>[!CONTEXTUALHELP]
+>id="ac_content_components_template"
+>title="Om innehållskomponenter"
+>abstract="Innehållskomponenter är tomma platshållare för innehåll som du kan använda för att skapa layouten för en mall."
 
 
 När du skapar ditt e-postinnehåll från grunden, **[!UICONTROL Content components]** gör att du kan anpassa e-postmeddelandet ytterligare med råa, tomma komponenter som du kan använda en gång i ett e-postmeddelande.
@@ -132,9 +147,27 @@ Använd **[!UICONTROL Image]** om du vill infoga en bildfil från datorn i e-pos
 ## Video {#Video}
 
 >[!CONTEXTUALHELP]
->id="ac_edition_video"
+>id="ac_edition_video_email"
 >title="Videoinställningar"
 >abstract="Använd den här komponenten för att infoga en video i e-postmeddelandet. Observera att videoklipp inte fungerar på alla e-postklienter. Vi rekommenderar att du ställer in en reservbild."
+>additional-url="https://www.emailonacid.com/blog/article/email-development/a_how_to_guide_to_embedding_html5_video_in_email/" text="Ytterligare information"
+
+>[!CONTEXTUALHELP]
+>id="ac_edition_video_landing_page"
+>title="Videoinställningar"
+>abstract="Använd den här komponenten för att infoga en video på landningssidan. Observera att videoklipp inte fungerar på alla meddelandeklienter. Vi rekommenderar att du ställer in en reservbild."
+>additional-url="https://www.emailonacid.com/blog/article/email-development/a_how_to_guide_to_embedding_html5_video_in_email/" text="Ytterligare information"
+
+>[!CONTEXTUALHELP]
+>id="ac_edition_video_fragment"
+>title="Videoinställningar"
+>abstract="Använd den här komponenten för att infoga en video i fragmentet. Observera att videoklipp inte fungerar på alla meddelandeklienter. Vi rekommenderar att du ställer in en reservbild."
+>additional-url="https://www.emailonacid.com/blog/article/email-development/a_how_to_guide_to_embedding_html5_video_in_email/" text="Ytterligare information"
+
+>[!CONTEXTUALHELP]
+>id="ac_edition_video_template"
+>title="Videoinställningar"
+>abstract="Använd den här komponenten för att infoga en video i mallen. Observera att videoklipp inte fungerar på alla meddelandeklienter. Vi rekommenderar att du ställer in en reservbild."
 >additional-url="https://www.emailonacid.com/blog/article/email-development/a_how_to_guide_to_embedding_html5_video_in_email/" text="Ytterligare information"
 
 Använd **[!UICONTROL Video]** om du vill infoga en video i e-postmeddelandet via en URL-länk.
