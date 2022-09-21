@@ -6,26 +6,29 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: fa64f5b8-75f2-40e6-8566-5766fafe6cd6
-source-git-commit: 711fdf1dce0688d2e21d405a4e3e8777612b2f3b
+source-git-commit: aecbf0f8bcfb8f6747ee072d891029a38f8f2ed1
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1468'
 ht-degree: 0%
 
 ---
 
 # Global kampanjrapport {#campaign-global-report}
 
-Kampanjglobala rapporter kan nås direkt från din kampanj med **[!UICONTROL Reports]** -knappen.
+Kampanjglobala rapporter kan nås direkt från din kampanj med **[!UICONTROL All time]** -knappen.
 
-![](assets/campaign_report_1.png)
+![](assets/campaign_report_global_5.png)
 
-När du har valt **[!UICONTROL All time]** -fliken, Campaign **[!UICONTROL Global report]** visas med följande flikar:
+Kampanjen **[!UICONTROL Global report]** visas med följande flikar:
 
 * [Campaign](#campaign-global)
 * [E-post](#email-global)
 * [Push](#push-global)
+* [SMS](#sms-global)
 
 Kampanjen **[!UICONTROL Global report]** är uppdelat i olika widgetar som detaljerat beskriver kampanjens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](../reports/global-report.md#modify-dashboard).
+
+En detaljerad lista över alla mätvärden som är tillgängliga i Adobe Journey Optimizer finns på [den här sidan](global-report.md#list-of-components-global.md)
 
 ## Fliken Kampanj {#campaign-global}
 
@@ -43,7 +46,11 @@ The **[!UICONTROL Campaign's Statistics]** widgetinformation om huvudinformation
 
 ## Fliken E-post {#email-global}
 
+![](assets/campaign_report_global_2.png)
+
 Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Email]** -fliken innehåller huvudinformationen om de e-postleveranser som skickas i din kampanj.
+
++++Läs mer om de olika mätvärden och widgetar som är tillgängliga för e-postrapporten.
 
 The **[!UICONTROL Email Sending Statistics]** diagram visar hur framgångsrik leveransen är:
 
@@ -127,10 +134,15 @@ The **[!UICONTROL Send time optimization]** information om leveransens framgång
 
 * **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
 * **[!UICONTROL Bounces]**: Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
++++
 
-## Push-flik {#push-global}
+## Fliken Push-meddelanden {#push-global}
 
-Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Push]** -fliken innehåller huvudinformationen i förhållande till push-leveranser som skickas i kampanjen.
+Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Push notification]** -fliken innehåller huvudinformationen i förhållande till push-leveranser som skickas i kampanjen.
+
+![](assets/campaign_report_global_3.png)
+
++++Läs mer om de olika mätvärden och widgetar som finns för rapporten Push.
 
 The **[!UICONTROL Push notification - Sending statistics]** tabellen visar huvudinformationen i förhållande till push-meddelanden med diagram och KPI:er:
 
@@ -196,3 +208,47 @@ The **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilket fel
 The **[!UICONTROL Excluded reasons]** I diagram och tabeller visas de olika anledningar som gjorde att användarprofiler som inte ingår i målprofilerna inte kunde ta emot meddelandet.
 
 The **[!UICONTROL Tracking by platform]**, **[!UICONTROL Sending by platform]** och **[!UICONTROL Breakdown by platform]** diagram och tabeller visar hur bra push-meddelandena är beroende på mottagarens operativsystem.
++++
+
+## fliken SMS {#sms-global}
+
+Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL SMS]** -fliken innehåller huvudinformationen om SMS-leveranser som skickas i kampanjen.
+
+![](assets/campaign_report_global_4.png)
+
++++Läs mer om de olika mätvärden och widgetar som är tillgängliga för SMS-rapporten.
+
+The **[!UICONTROL SMS - Sending statistics]** tabellen visar hur framgångsrik leveransen är:
+
+* **[!UICONTROL Targeted]**: Antal användarprofiler som kvalificerar sig som målprofiler för den här leveransen.
+
+* **[!UICONTROL Excluded]**: Antal användarprofiler, exkluderade från målprofilerna, som inte fick meddelandet.
+
+* **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
+
+* **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
+
+* **[!UICONTROL Bounces]**: Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
+
+* **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
+
+The **[!UICONTROL SMS Performance by date]** widgeten visar huvudinformationen i förhållande till meddelandet med ett diagram:
+
+* **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
+
+* **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
+
+* **[!UICONTROL Bounces]**: Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
+
+* **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
+
+The **[!UICONTROL Exclude Reasons]**, **[!UICONTROL Bounces Reasons]** och **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilka fel och undantag som inträffade under leveransen.
++++
+
+## Ytterligare resurser
+
+* [Kom igång med kampanjer](../campaigns/get-started-with-campaigns.md)
+* [Skapa en kampanj](../campaigns/create-campaign.md)
+* [Skapa API-utlösta kampanjer](../campaigns/api-triggered-campaigns.md)
+* [Ändra eller stoppa en kampanj](../campaigns/modify-stop-campaign.md)
+* [Kampanjrapport](campaign-live-report.md)

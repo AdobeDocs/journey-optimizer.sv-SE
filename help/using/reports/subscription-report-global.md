@@ -5,9 +5,10 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+exl-id: 4509c1e9-02e6-4c00-83ba-0b5512e70c41
+source-git-commit: aecbf0f8bcfb8f6747ee072d891029a38f8f2ed1
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 Prenumerationen **[!UICONTROL Global report]** visar information om din prenumerations aktivitet under en vald tidsperiod. Om du bara vill mäta dina prenumerationer under de senaste 24 timmarna kan du läsa [Direktprenumerationsrapport](subscription-report-live.md).
 
-Välj **[!UICONTROL Global report]** på den avancerade menyn i den valda prenumerationslistan.
+Klicka på **[!UICONTROL Report]** ikonen för den valda prenumerationslistan.
 
 ![](assets/subscription_report_7.png)
 

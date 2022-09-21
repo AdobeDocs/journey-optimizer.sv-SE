@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 1f0b9507c557140efe5e2aa170d4acfa28ed4b88
+source-git-commit: aecbf0f8bcfb8f6747ee072d891029a38f8f2ed1
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1151'
 ht-degree: 38%
 
 ---
@@ -246,13 +246,13 @@ ht-degree: 38%
       + [Rita upp leveranser](using/building-journeys/ramp-up-deliveries-uc.md)
 + Spåra och övervaka {#reporting}
    + Live-rapport {#live-report}
-      + [Åtkomst till Live-rapportkontrollpanelen](using/reports/live-report.md)
+      + [Kom igång med Live Report](using/reports/live-report.md)
       + [Journey Live-rapport](using/reports/journey-live-report.md)
       + [Campaign Live-rapport](using/reports/campaign-live-report.md)
       + [Live-rapport för landningssida](using/reports/lp-report-live.md)
       + [Live-rapport om prenumerationslista](using/reports/subscription-report-live.md)
    + Global rapport {#global-report}
-      + [Åtkomst till instrumentpanel för global rapport](using/reports/global-report.md)
+      + [Kom igång med global rapport](using/reports/global-report.md)
       + [Rapport om global resa](using/reports/journey-global-report.md)
       + [Global kampanjrapport](using/reports/campaign-global-report.md)
       + [Global rapport för landningssida](using/reports/lp-report-global.md)

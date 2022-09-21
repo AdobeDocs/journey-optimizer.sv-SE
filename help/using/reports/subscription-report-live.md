@@ -5,9 +5,10 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+exl-id: 140c858d-9566-403c-a0e7-395437bb4e42
+source-git-commit: aecbf0f8bcfb8f6747ee072d891029a38f8f2ed1
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
@@ -16,9 +17,9 @@ ht-degree: 0%
 
 Prenumerationen **[!UICONTROL Live report]** visar endast information om din prenumerations aktivitet under de senaste 24 timmarna. Information om hur du mäter dina prenumerationer under en viss tidsperiod finns i [Global prenumerationsrapport](subscription-report-global.md).
 
-Välj **[!UICONTROL Live report]** på den avancerade menyn i den valda prenumerationslistan.
+Klicka på **[!UICONTROL Report]** ikonen för den valda prenumerationslistan.
 
-![](assets/subscription_report_6.png)
+![](assets/subscription_report_7.png)
 
 Prenumerationen **[!UICONTROL Live report]** är uppdelat i olika widgetar som detaljerat beskriver dina prenumerationer och avbeställningar. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](live-report.md).
 
@@ -35,4 +36,3 @@ The **[!UICONTROL Subscription performance]** I diagrammet visas hur prenumerati
 ![](assets/subscription_report_4.png)
 
 The **Prenumerationer - uppdelning** och **Avbeställ - Uppdelning** Diagram visar det totala antalet personer som under de senaste 24 timmarna har tecknat eller avbeställt, beroende på meddelanden, landningssidor och kanaler.
-

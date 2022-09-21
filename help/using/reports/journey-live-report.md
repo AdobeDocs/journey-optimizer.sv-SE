@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e3781f79-7c8d-4512-b44f-835639b1471f
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: aecbf0f8bcfb8f6747ee072d891029a38f8f2ed1
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,15 @@ Resan **[!UICONTROL Live report]** visas med följande flikar:
 
 Resan **[!UICONTROL Live report]** är uppdelat i olika widgetar som detaljerat beskriver hur framgångsrik och felfri din resa är. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](live-report.md#modify-dashboard).
 
+En detaljerad lista över alla mätvärden som är tillgängliga i Adobe Journey Optimizer finns på [den här sidan](live-report.md#list-of-components-live).
+
 ## Fliken Resor {#journey-live}
 
 Från din resa **[!UICONTROL Live report]**, **[!UICONTROL Journey]** -fliken ger en tydlig bild av de viktigaste spårningsdata som rör kundresan.
 
-![](assets/report_journey_2.png)
+![](assets/journey_live_1.png)
+
++++Läs mer om de olika mätvärden och widgetar som är tillgängliga för reserapporten.
 
 **[!UICONTROL Journey Performance]** gör att du kan se vägen för dina målprofiler steg för steg under hela kundresan.
 
@@ -46,19 +50,20 @@ The **[!UICONTROL Journey Statistics]** widgeten visar följande KPI:er:
 
 The **[!UICONTROL Event executed over the last 24 hours]** och **[!UICONTROL Events]** Med -widgetar kan du se vilken av dina händelser som har utförts genom sammanfattningsnummer, diagram och tabell.
 
-![](assets/report_journey_4.png)
-
 The **[!UICONTROL Action executed over the last 24 hours]** och **[!UICONTROL Actions executed and errors]** -widgetar är den mest framgångsrika åtgärden och de fel som inträffade när dina åtgärder utlöstes. Åtgärdsdiagrammet, tabellen och sammanfattningsnumren innehåller de data som är tillgängliga för åtgärder, till exempel:
 
 * **[!UICONTROL Actions executed]**: Totalt antal genomförda åtgärder för en resa.
 
 * **[!UICONTROL Error in actions]**: Totalt antal fel som uppstått för åtgärder.
++++
 
 ## Fliken E-post {#email-live}
 
 Från din resa **[!UICONTROL Live report]**, **[!UICONTROL Email]** fliken innehåller huvudinformationen om de e-postleveranser som skickas under resan.
 
-![](assets/report_email_1.png)
+![](assets/journey_live_2.png)
+
++++Läs mer om de olika mätvärden och widgetar som är tillgängliga för e-postrapporten.
 
 The **[!UICONTROL Email Sending Statistics]** widgeten innehåller information om den viktigaste informationen i förhållande till ditt meddelande:
 
@@ -86,8 +91,6 @@ The **[!UICONTROL Sending metrics by Email]** tabell och **[!UICONTROL Email Sum
 
 * **[!UICONTROL Spam complaints]**: Antal gånger ett meddelande har deklarerats som skräppost eller skräppost.
 
-![](assets/report_email_2.png)
-
 The **[!UICONTROL Bounce Reasons]**, **[!UICONTROL Bounce categories]** och **[!UICONTROL Hard and bounce - by Email]** widgetar innehåller tillgängliga data som är relaterade till studsade meddelanden, som:
 
 * **[!UICONTROL Hard bounce]**: Det totala antalet permanenta fel, t.ex. fel e-postadress. Detta inbegriper ett felmeddelande som uttryckligen anger att adressen är ogiltig, till exempel Okänd användare.
@@ -96,13 +99,9 @@ The **[!UICONTROL Bounce Reasons]**, **[!UICONTROL Bounce categories]** och **[!
 
 * **[!UICONTROL Ignored]**: Det totala antalet tillfälliga, t.ex. frånvaro, eller ett tekniskt fel, t.ex. om avsändartypen är postmaster.
 
-![](assets/report_email_3.png)
-
 The **[!UICONTROL Error Reasons]** och **[!UICONTROL Exclude Reasons]** Med diagram och tabeller kan du se vilka fel och undantag som inträffade under leveransen.
 
 The **[!UICONTROL Email - Top recipient domain]** diagram och tabeller visar vilka domäner som är de mest använda av mottagarna för att öppna e-postmeddelandet.
-
-![](assets/live_report_7.png)
 
 >[!NOTE]
 >
@@ -115,12 +114,15 @@ The **[!UICONTROL Offers statistic]** och **[!UICONTROL Offers statistics]** med
 * **[!UICONTROL Offer impression]**: Antal gånger som erbjudandet öppnades i en leverans.
 
 * **[!UICONTROL Offer clicks]**: Antal gånger som man klickat på ett erbjudande i en leverans.
++++
 
-## Push-flik {#push-live}
+## Fliken Push-meddelanden {#push-live}
 
-Från din resa **[!UICONTROL Live report]**, **[!UICONTROL Push]** fliken innehåller huvudinformationen i förhållande till de push-leveranser som skickas under resan.
+Från din resa **[!UICONTROL Live report]**, **[!UICONTROL Push notification]** fliken innehåller huvudinformationen i förhållande till de push-leveranser som skickas under resan.
 
-![](assets/report_push_1.png)
+![](assets/journey_live_3.png)
+
++++Läs mer om de olika mätvärden och widgetar som finns för rapporten Push.
 
 **[!UICONTROL Push notification sending performance]**, **[!UICONTROL Push notification summary]** och **[!UICONTROL Sending metrics - by Push]** widgetar anger huvudinformationen i förhållande till meddelandet:
 
@@ -138,19 +140,18 @@ Från din resa **[!UICONTROL Live report]**, **[!UICONTROL Push]** fliken inneh�
 
 * **[!UICONTROL Engagements]**: Totalt antal öppningar och åtgärder för det här push-meddelandet, dvs om profilen öppnade push-meddelandet eller om någon klickade på en knapp.
 
-![](assets/report_push_3.png)
-
 The **[!UICONTROL Error Reasons]** och **[!UICONTROL Exclude Reasons]** Med diagram och tabeller kan du se vilka fel och undantag som inträffade under leveransen.
 
 The **[!UICONTROL Sending statistics - Failed]** kan du se hur många fel och studsar som har inträffat.
 
-![](assets/report_push_2.png)
-
 The **[!UICONTROL Tracking by platform]**, **[!UICONTROL Sending by platform]** och **[!UICONTROL Breakdown by platform]** diagram och tabeller visar hur bra push-meddelandena är beroende på vilket operativsystem som används.
++++
 
 ## fliken SMS {#sms-live}
 
-![](assets/report_sms_live.png)
+![](assets/journey_live_4.png)
+
++++Läs mer om de olika mätvärden och widgetar som är tillgängliga för SMS-rapporten.
 
 The **[!UICONTROL SMS - Sending statistics]** tabellen visar hur framgångsrik leveransen är:
 
@@ -179,3 +180,4 @@ The **[!UICONTROL SMS Summary]** diagram visar hur framgångsrik leveransen är:
 * **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
 
 The **[!UICONTROL Exclude Reasons]** Med diagram och tabeller kan du se vilka fel och undantag som inträffade under leveransen.
++++

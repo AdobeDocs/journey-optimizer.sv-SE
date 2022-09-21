@@ -5,9 +5,10 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+exl-id: e88cf8ad-986a-4e4c-8921-d406c6876031
+source-git-commit: aecbf0f8bcfb8f6747ee072d891029a38f8f2ed1
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -16,13 +17,15 @@ ht-degree: 0%
 
 Landningssidan **[!UICONTROL Global report]** rapporten innehåller information om landningssidornas inverkan under en vald tidsperiod. Information om hur du mäter landningssiduppgifter under de senaste 24 timmarna finns i [Landningssidans Live-rapport](lp-report-live.md).
 
-Välj **[!UICONTROL Global report]** på den avancerade menyn på den valda landningssidan.
+Välj **[!UICONTROL Report]** på den avancerade menyn på den valda landningssidan.
 
-![](assets/landing_page_report_7.png)
+![](assets/landing_page_report.png)
 
 Landningssidan **[!UICONTROL Global report]** är uppdelat i olika widgetar som detaljerat beskriver hur leveransen fungerar och vilka fel den innehåller. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](global-report.md).
 
-![](assets/landing_page_report_4.png)
+![](assets/landing_page_global.png)
+
++++Läs mer om de olika mätvärden och widgetar som är tillgängliga för den globala rapporten om landningssidan.
 
 The **[!UICONTROL Number of visits]** och **[!UICONTROL Number of visits over time]** Med widgetar kan du se effekten av landningssidan under den valda tidsperioden genom ett diagram och KPI:er med följande mått:
 
@@ -35,8 +38,6 @@ The **[!UICONTROL Landing page performance]** widgeten innehåller information o
 * **[!UICONTROL Conversion rate]**: Antal personer som interagerat med landningssidan, t.ex. prenumererat på ett formulär, i förhållande till det totala antalet besök.
 
 * **[!UICONTROL Bounce rate]**: Antal personer som inte interagerade med landningssidan och inte slutförde prenumerationsåtgärden i förhållande till det totala antalet besök.
-
-![](assets/landing_page_report_5.png)
 
 The **[!UICONTROL Visit sources]** widgeten visar hur besökare kommer åt din landningssida:
 
@@ -56,8 +57,9 @@ The **[!UICONTROL Journey(s)]** widgeten visar antalet besök på din landningss
 
 The **[!UICONTROL Other sources]** widgeten representerar antalet besök på din landningssida från en extern källa i stället för en resa.
 
-![](assets/landing_page_report_6.png)
-
 The **[!UICONTROL Visits by messages]** / **[!UICONTROL Conversions by messages]** diagram visar det totala antalet besök och personer som lyckades interagera med landningssidan under den aktuella perioden, beroende på skickade meddelanden.
 
 The **[!UICONTROL Visits by channels]** / **[!UICONTROL Conversions by channels]** Diagrammen visar det totala antalet besök och personer som lyckades interagera med landningssidan under den aktuella perioden, beroende på kanalerna.
++++
+
+En detaljerad lista över alla mätvärden som är tillgängliga i Adobe Journey Optimizer finns på [den här sidan](global-report.md#list-of-components-global).
