@@ -5,7 +5,7 @@ feature: Monitoring
 role: User
 level: Intermediate
 exl-id: d74295e6-53b2-46f9-809c-1ef479aba5ab
-source-git-commit: 40061255a2fcec3de1b39a168cadbdedd2e12d87
+source-git-commit: 8b9f2a51b758583cc23f3d21c79235825b26ca0c
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%
@@ -13,6 +13,7 @@ ht-degree: 0%
 ---
 
 # Dataanvändningspolicyer {#Policies}
+
 
 Med Adobe Experience Platform **Datastyrningstjänst** kan ni införa begränsningar för användning av data genom användning av etiketter, marknadsföringsåtgärder och policyer.
 
