@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: a4aaa814-3fd4-439e-8f34-faf97208378a
-source-git-commit: 3c1da5b789ad3f1b010f3d5be9c521f296035b83
+source-git-commit: 030dc5f3a5d1927076c87aa600097a3b5761e803
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1104'
+ht-degree: 1%
 
 ---
 
@@ -150,25 +150,21 @@ Använd **[!UICONTROL Image]** om du vill infoga en bildfil från datorn i e-pos
 >id="ac_edition_video_email"
 >title="Videoinställningar"
 >abstract="Använd den här komponenten för att infoga en video i e-postmeddelandet. Observera att videoklipp inte fungerar på alla e-postklienter. Vi rekommenderar att du ställer in en reservbild."
->additional-url="https://www.emailonacid.com/blog/article/email-development/a_how_to_guide_to_embedding_html5_video_in_email/" text="Ytterligare information"
 
 >[!CONTEXTUALHELP]
 >id="ac_edition_video_landing_page"
 >title="Videoinställningar"
 >abstract="Använd den här komponenten för att infoga en video på landningssidan. Observera att videoklipp inte fungerar på alla meddelandeklienter. Vi rekommenderar att du ställer in en reservbild."
->additional-url="https://www.emailonacid.com/blog/article/email-development/a_how_to_guide_to_embedding_html5_video_in_email/" text="Ytterligare information"
 
 >[!CONTEXTUALHELP]
 >id="ac_edition_video_fragment"
 >title="Videoinställningar"
 >abstract="Använd den här komponenten för att infoga en video i fragmentet. Observera att videoklipp inte fungerar på alla meddelandeklienter. Vi rekommenderar att du ställer in en reservbild."
->additional-url="https://www.emailonacid.com/blog/article/email-development/a_how_to_guide_to_embedding_html5_video_in_email/" text="Ytterligare information"
 
 >[!CONTEXTUALHELP]
 >id="ac_edition_video_template"
 >title="Videoinställningar"
 >abstract="Använd den här komponenten för att infoga en video i mallen. Observera att videoklipp inte fungerar på alla meddelandeklienter. Vi rekommenderar att du ställer in en reservbild."
->additional-url="https://www.emailonacid.com/blog/article/email-development/a_how_to_guide_to_embedding_html5_video_in_email/" text="Ytterligare information"
 
 Använd **[!UICONTROL Video]** om du vill infoga en video i e-postmeddelandet via en URL-länk.
 
