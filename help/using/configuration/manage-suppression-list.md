@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-source-git-commit: 769c5cb4c609a9c97223103216713dbec44847a4
+source-git-commit: b720134ae82a596321aa2815a36e92e6b19c71ba
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1159'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,11 @@ Du kan också [**manuellt** lägga till en adress eller en domän](#add-addresse
 >Det tar mellan 0 och 60 minuter i [!DNL Journey Optimizer] för att ta hänsyn till de utelämnade adresserna i utgående e-postmeddelanden.
 
 ## Åtkomst till listan över inaktiveringar {#access-suppression-list}
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_suppression_list_download"
+>title="Exportera listan som en CSV-fil"
+>abstract="Om du vill hämta listan kan du antingen exportera den aktuella listan genom att generera en ny fil eller hämta filen som tidigare har skapats."
 
 Om du vill få tillgång till en detaljerad lista över e-postadresser som inte ingår går du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** och markera **[!UICONTROL Suppression list]**.
 
