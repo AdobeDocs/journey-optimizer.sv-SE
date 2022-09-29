@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 7e70b8a9-7fac-4450-ad9c-597fe0496df9
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: 9c0f604680787dbdf5fb820074408edad78f8bfb
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '852'
 ht-degree: 1%
 
 ---
@@ -33,6 +33,8 @@ Den här typen av händelse kan placeras som det första steget eller senare und
 >Tänk på att Adobe Experience Platform-segment beräknas en gång om dagen (**batch** segment) eller i realtid (**direktuppspelad** segment, med alternativet High Frequency Audiences i Adobe Experience Platform).
 >
 >Om det valda segmentet direktuppspelas kan de personer som tillhör det segmentet komma in på resan i realtid. Om segmentet är en batch kan personer som nyligen är kvalificerade för det här segmentet komma in på resan när segmentberäkningen körs på Adobe Experience Platform.
+>
+>Det går inte att använda fältgrupper för upplevelsehändelser i resor som börjar med ett Lässegment, en segmentkvalificering eller en affärshändelseaktivitet.
 
 
 1. Ta fram **[!UICONTROL Events]** kategori och släpp en **[!UICONTROL Segment Qualification]** på arbetsytan.

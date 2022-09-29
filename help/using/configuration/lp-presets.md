@@ -4,9 +4,9 @@ description: Lär dig hur du konfigurerar miljön för att skapa och använda la
 role: Admin
 level: Intermediate
 exl-id: 7cf1f083-bef0-40b5-8ddd-920a9d108eca
-source-git-commit: 9e499fd6523e18ecb78e25b306c49f2fc0e4a7c9
+source-git-commit: 8bc6b3a5b8836b547e9c697f9420532fdea4acbc
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '319'
 ht-degree: 2%
 
 ---
@@ -70,9 +70,9 @@ Följ stegen nedan för att skapa en förinställning för landningssidan.
 
    Om till exempel landningssidans URL är pages.mail.luma.com och spårnings-URL:en är data.mail.luma.com kan du välja pages.mail.luma.com som ska användas som spårningsunderdomän.
 
-1. Klicka **[!UICONTROL Submit]** för att bekräfta att förinställningen för landningssidan har skapats. Du kan också spara förinställningen som utkast och återuppta konfigurationen senare.
+1. Klicka **[!UICONTROL Submit]** för att bekräfta att förinställningen för landningssidan har skapats. <!--You can also save the preset as draft and resume its configuration later on.-->
 
-   ![](assets/lp_preset-subdomain-settings-submit.png)
+   <!--![](assets/lp_preset-subdomain-settings-submit.png)-->
 
 1. När förinställningen för landningssidan har skapats visas den i listan med **[!UICONTROL Active]** status. Den är klar att användas för dina landningssidor.
 

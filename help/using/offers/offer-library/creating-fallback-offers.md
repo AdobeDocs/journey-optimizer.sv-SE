@@ -5,10 +5,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 9ba16ad9-a5e7-4ce7-8ed6-7707d37178c6
-source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
+source-git-commit: 11596bfbe5f98e362224384d51ba32d61275bc1d
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 4%
+source-wordcount: '281'
+ht-degree: 3%
 
 ---
 
@@ -35,6 +35,8 @@ Så här skapar du ett reserverbjudande:
 1. Ange namnet på reserverbjudandet. Du kan också koppla en eller flera befintliga taggar till den, så att du enklare kan söka efter och ordna erbjudandebiblioteket.
 
    ![](../assets/fallback_details.png)
+
+1. Om du vill tilldela etiketter för anpassad eller viktig dataanvändning till erbjudandet väljer du **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../../administration/object-based-access.md)
 
 1. Skapa en eller flera representationer för reserverbjudandet. Det gör du genom att dra och släppa praktik från den vänstra rutan, som när du skapar ett personaliserat erbjudande. Se [Skapa personaliserade erbjudanden](../offer-library/creating-personalized-offers.md).
 

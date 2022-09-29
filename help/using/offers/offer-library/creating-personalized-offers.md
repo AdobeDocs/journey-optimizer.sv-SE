@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4a53ea96-632a-41c7-ab15-b85b99db4f3e
-source-git-commit: 55d9befff9b9bf1bc81c6553cd76f015fdd3116e
+source-git-commit: 11596bfbe5f98e362224384d51ba32d61275bc1d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '700'
+ht-degree: 3%
 
 ---
 
@@ -56,6 +56,10 @@ Skapa en **erbjudande** gör du så här:
 1. Du kan också koppla en eller flera befintliga **[!UICONTROL tags]** så att du enklare kan söka efter och ordna erbjudandebiblioteket. [Läs mer](creating-tags.md).
 
 1. The **[!UICONTROL Offer attributes]** kan du koppla nyckelvärdepar till erbjudandet för rapportering och analys.
+
+1. Om du vill tilldela etiketter för anpassad eller viktig dataanvändning till erbjudandet väljer du **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../../administration/object-based-access.md)
+
+   ![](../assets/offer_manage-access.png)
 
 1. Lägg till representationer för att definiera var ditt erbjudande ska visas i meddelandet. [Läs mer](add-representations.md)
 

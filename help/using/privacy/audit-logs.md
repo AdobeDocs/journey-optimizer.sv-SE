@@ -5,9 +5,9 @@ feature: Monitoring
 role: User
 level: Intermediate
 exl-id: 759b014a-c834-4331-bffd-5bc159ec555d
-source-git-commit: 2f89b3a2e067d269a6316ae26d280924a530fe51
+source-git-commit: 0167ce16198acc485da687a4a05c13fae85d088d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,7 @@ Följande tabell visar vilka åtgärder som Journey Optimizer-resurser registrer
 
 | Resurs | Åtgärd |
 |-----------|------------------|
+| AJO-kampanj | Skapa/ta bort/uppdatera/aktivera/stoppa |
 | Allmän inställning för AJO-kanal | Skapa/ta bort/uppdatera |
 | AJO IP-pool | Skapa/ta bort/uppdatera |
 | AJO - startsida | Skapa/ta bort/uppdatera/publicera/avpublicera |
@@ -41,7 +42,7 @@ Följande tabell visar vilka åtgärder som Journey Optimizer-resurser registrer
 | Förinställning för AJO-landningssida | Skapa/ta bort/uppdatera |
 | AJO - underdomän för landningssida | Skapa/ta bort/uppdatera |
 | AJO-meddelande | Skapa/ta bort/uppdatera/publicera |
-| AJO-kanalsyta | Skapa/ta bort/uppdatera |
+| AJO-meddelandeförinställning | Skapa/ta bort/uppdatera |
 | AJO PTR-post | Skapa/ta bort/uppdatera |
 | AJO sparad uttrycksmall | Skapa/ta bort/uppdatera |
 | AJO SMS API-autentiseringsuppgifter | Skapa/ta bort/uppdatera |

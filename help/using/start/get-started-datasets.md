@@ -4,10 +4,10 @@ description: Lär dig hur du använder Adobe Experience Platform-datauppsättnin
 role: User
 level: Beginner
 exl-id: dcdd3c81-0f00-4259-a8a5-9062a4c40b6f
-source-git-commit: 1de18fa479a54c09751324a67793ce50e5657ce3
+source-git-commit: 4cf9a45ee9cc7169d060799de7d1ea128caa140f
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 2%
+source-wordcount: '820'
+ht-degree: 1%
 
 ---
 
@@ -33,12 +33,30 @@ Som standard visas bara de datauppsättningar som du har kapslat in i. Om du vil
 
 Markera namnet på en datauppsättning för att komma åt aktivitetsskärmen för datauppsättningen och se information om den datauppsättning du valde. Fliken Aktivitet innehåller ett diagram som visar hur många meddelanden som har förbrukats samt en lista över lyckade och misslyckade batchar.
 
+Här är de olika datamängderna som är tillgängliga:
+
+**Rapportering**
+
+* _Rapportering - händelsedatauppsättning för meddelandefeedback_: Meddelandeleveransloggar. Information om alla meddelandeleveranser från Journey Optimizer för rapportering och skapande av segment. Feedback från e-postleverantörer om studsar registreras också i den här datauppsättningen.
+* _Rapportering - händelsedatauppsättning för e-postspårning_: Interaktionsloggar för e-postkanal som används för att skapa rapporter och segment. Information som lagras om åtgärder som slutanvändaren utför via e-post (öppningar, klick etc.).
+* _Rapportering - händelsedatauppsättning för push-spårning_: Interaktionsloggar för push-kanal som används för att skapa rapporter och segment. Information som lagras om åtgärder som slutanvändaren utför i push-meddelanden.
+* _Rapportering - resesegmentshändelse_: Hämtar alla händelser av typen&quot;Journey Step Experience&quot; som genererats från Journey Optimizer och som ska användas av tjänster som Reporting. Viktigt för att skapa rapporter i Customer Journey Analytics för YY-analys. Kopplad till en resemetadata.
+* _Rapportering - Resor_: Införlivningsinformation för metadatadatauppsättningar för varje steg i en resa.
+* _Rapportering - hemlig kopia_: Feedback Event Dataset som lagrar leveransloggar för BCC-e-postmeddelanden. Ska användas för rapportering.
+
+**Godkännande**
+
+* _Samtycketjänstens datauppsättning_: lagrar information om samtycke för en profil.
+
+**Intelligenta tjänster**
+
+* _Poäng för optimering av sändningstid/engagemangsmoment_: Poängvärden för Journey AI.
+
 ## Förhandsgranska datauppsättningar{#preview-datasets}
 
 Välj **Förhandsgranska datauppsättning** i skärmens övre högra hörn för att förhandsgranska den senaste lyckade gruppen i den här datauppsättningen. När en datauppsättning är tom inaktiveras förhandsgranskningslänken.
 
 ![](assets/dataset-preview.png)
-
 
 ## Skapa datauppsättningar{#create-datasets}
 

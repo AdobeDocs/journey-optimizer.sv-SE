@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 496c7666-a133-4aeb-be8e-c37b3b9bf5f9
-source-git-commit: 9eebc64476b1fb7c1d0300cf66b0377dfbf0754f
+source-git-commit: cca94d15da5473aa9890c67af7971f2e745d261e
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1409'
 ht-degree: 7%
 
 ---
@@ -83,9 +83,15 @@ På så sätt kan du utföra olika åtgärder beroende på timmen på dagen och/
 
 >[!NOTE]
 >
->Tidszonen är inte längre specifik för ett villkor och har nu definierats på färdsnivå i färdegenskaperna. Se [den här sidan](../building-journeys/timezone-management.md).
+>Tidszonen är inte specifik för ett villkor och definieras på färdsnivå i reseegenskaperna. Se [den här sidan](../building-journeys/timezone-management.md).
 
 ![](assets/journey51.png)
+
+Tre filtreringsalternativ är tillgängliga:
+
+* Timme: gör att du kan ställa in ett villkor baserat på tidpunkten på dagen. Sedan definierar du start- och sluttider. Enskilda personer anger bara sökvägen under angivet timintervall.
+* Veckodag: gör att du kan ställa in ett villkor baserat på veckodag. Sedan väljer du vilka dagar du vill att enskilda personer ska ange sökvägen.
+* Veckodag och timma: det här alternativet kombinerar de två första alternativen.
 
 ## Procentdelning {#percentage_split}
 

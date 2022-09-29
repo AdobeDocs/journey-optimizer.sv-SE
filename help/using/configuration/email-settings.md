@@ -6,7 +6,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
+source-git-commit: 8a8950dbbda9a0a3aa498e304e41294ad343d0be
 workflow-type: tm+mt
 source-wordcount: '1153'
 ht-degree: 1%
@@ -133,7 +133,7 @@ E-postadressen för vidarebefordran kommer att konfigureras av Adobe. Detta kan 
 
 Du kan skicka en identisk kopia (eller en kopia med kopia) av e-postmeddelanden som skickas av [!DNL Journey Optimizer] till en inkorg för kontroll av webbläsarkompatibilitet där de lagras för att uppfylla regelkrav eller arkiveras.
 
-Aktivera **[!UICONTROL BCC email]** valfri funktion på kanalytnivå. [Läs mer](bcc-email.md)
+Aktivera **[!UICONTROL BCC email]** valfri funktion på kanalytnivå. [Läs mer](archiving-support.md#bcc-email)
 
 ![](assets/preset-bcc.png)
 

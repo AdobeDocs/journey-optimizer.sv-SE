@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: eff4cef0ea868802c734d16cf5000ff3efa6503c
+source-git-commit: bb90f582b9767b1aaeb5d86b0e68f500871fab3a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1511'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Med [!DNL Journey Optimizer]kan du skapa kanalytor (t.ex. meddelandeförinställ
 > * Du måste utföra [E-postkonfiguration](#configure-email-settings), [Push-konfiguration](../configuration/push-configuration.md) och [SMS-konfiguration](../configuration/sms-configuration.md) innan du skapar kanalytor.
 
 
-När kanalytorna har konfigurerats kan du välja dem när du skapar meddelanden från en resa.
+När kanalytorna har konfigurerats kan du välja dem när du skapar meddelanden från en resa eller en kampanj.
 
 <!--
 ➡️ [Learn how to create and use email surfaces in this video](#video-presets)
@@ -35,14 +35,12 @@ När kanalytorna har konfigurerats kan du välja dem när du skapar meddelanden 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_message_presets_header"
 >title="Kanalytans inställningar"
->abstract="När du konfigurerar en kanalyta väljer du den kanal som den gäller för och definierar alla tekniska parametrar som krävs för dina meddelanden, till exempel e-posttyp, underdomän, avsändarnamn, mobilappar, SMS-konfiguration med mera."
+>abstract="När du konfigurerar en kanalyta väljer du den kanal som den ska användas på och definierar alla tekniska parametrar som krävs för din sändning, till exempel e-posttyp, avsändarnamn, mobilappar, SMS-konfiguration med mera."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_message_presets"
 >title="Kanalytans inställningar"
->abstract="När du konfigurerar en kanalyta väljer du den kanal som den gäller för och definierar alla tekniska parametrar som krävs för dina meddelanden, till exempel e-posttyp, avsändarnamn, mobilappar, SMS-konfiguration och mycket mer."
-
-<!--New contextual help content for September release: A channel surface defines all the technical parameters required for your messages (email type, sender name, mobile apps, SMS configuration, etc.): once configured, you will be able to select it when creating actions from a journey or a campaign. Note that you must have the Manage channel surface permission to create, edit and delete channel surfaces.-->
+>abstract="För att kunna skapa åtgärder som e-post från en resa eller en kampanj måste du först skapa en kanalyta som definierar alla tekniska inställningar som krävs för dina meddelanden. Du måste ha behörigheten Hantera kanalyta för att skapa, redigera och ta bort kanalytor."
 
 Så här skapar du en kanalyta:
 
@@ -90,7 +88,10 @@ Så här skapar du en kanalyta:
 
 1. När kanalytan har skapats visas den i listan med **[!UICONTROL Processing]** status.
 
-   Under det här steget kommer flera kontroller att utföras för att verifiera att den har konfigurerats korrekt. Bearbetningstiden är ungefär **48h-72h** och kan ta upp till **7-10 arbetsdagar**.
+   Under det här steget kommer flera kontroller att utföras för att verifiera att den har konfigurerats korrekt. <!--The processing time is around **48h-72h**, and can take up to **7-10 business days**.-->
+
+   >[!NOTE]
+   >När du skapar den första kanalytan för en viss underdomän kan bearbetningstiden ta **10 minuter till 10 dagar**. Om den valda underdomänen redan används på en annan yta tar det bara upp till 3 timmar.
 
    Dessa kontroller omfattar konfigurations- och tekniska tester som utförs av Adobe-teamet:
 
@@ -101,6 +102,7 @@ Så här skapar du en kanalyta:
    * Kontroll av värddator
    * Verifiering av IP-pool
    * A/PTR-post, t/m/res-underdomänverifiering
+   * FBL-registrering (den här kontrollen utförs endast första gången en e-postyta skapas för en viss underdomän)
 
    >[!NOTE]
    >

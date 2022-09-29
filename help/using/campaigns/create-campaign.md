@@ -5,11 +5,10 @@ feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
-exl-id: 7c4afc98-0d79-4e26-90f8-558bac037169
-source-git-commit: 28380dbadf485ba05f7ef6788a50253876718441
+source-git-commit: 0167ce16198acc485da687a4a05c13fae85d088d
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 3%
+source-wordcount: '825'
+ht-degree: 2%
 
 ---
 
@@ -33,10 +32,10 @@ ht-degree: 3%
 
    ![](assets/create-campaign.png)
 
-<!--1. In the **[!UICONTROL Properties]** section, specify when you want to execute the campaign:
+1. I **[!UICONTROL Properties]** anger du när kampanjen ska köras:
 
-    * **[!UICONTROL Scheduled]**: execute the campaign immediately or on a specified date. Scheduled campaigns are aimed at sending **marketing** type messages.
-    * **[!UICONTROL API-triggered]**: execute the campaign using an API call. API-triggered campaigns are aimed at sending **transactional** messages, i.e. messages sent out following an action performed by an individual: password reset, card abandonment etc. [Learn how to trigger a campaign using APIs](api-triggered-campaigns.md)-->
+   * **[!UICONTROL Scheduled]**: köra kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka **marknadsföring** typmeddelanden.
+   * **[!UICONTROL API-triggered]**: köra kampanjen med ett API-anrop. API-utlösta kampanjer är avsedda att skicka **transaktionsbaserad** meddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförts av en individ: lösenordsåterställning, övergivna kort osv. [Lär dig hur du utlöser en kampanj med API:er](api-triggered-campaigns.md)
 
 1. I **[!UICONTROL Actions]** väljer du kanal och kanal för att skicka meddelandet och klickar sedan på **[!UICONTROL Create]**.
 
@@ -47,8 +46,6 @@ ht-degree: 3%
    >[!NOTE]
    >
    >Endast kanalytor som är kompatibla med marknadsföringskampanjtypen visas i listrutan.
-
-<!--Only channel surfaces compatible with the campaign type (marketing or transactional) are listed in the drop-down list.-->
 
 1. Ange en titel och en beskrivning för kampanjen.
 
@@ -76,7 +73,9 @@ ht-degree: 3%
 
 1. Definiera målgruppen. Om du vill göra det klickar du på **[!UICONTROL Select audience]** om du vill visa en lista över tillgängliga Adobe Experience Platform-segment. [Läs mer om segment](../segment/about-segments.md)
 
-   <!-- NOTE For API-triggered campaigns, the audience needs to be set via API call. [Learn more](api-triggered-campaigns.md)-->
+   >[!NOTE]
+   >
+   >För API-utlösta kampanjer måste målgruppen anges via API-anrop. [Läs mer](api-triggered-campaigns.md)
 
    I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera individerna från det valda segmentet. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace)
 
@@ -90,41 +89,9 @@ ht-degree: 3%
 
 1. Konfigurera **[!UICONTROL Schedule]** -avsnitt. [Lär dig schemalägga kampanjer](#schedule)
 
+1. Klicka på knappen **[!UICONTROL Manage access]** -knappen. [Läs mer om OLA (Object Level Access Control)](../administration/object-based-access.md)
+
 När kampanjen är klar kan ni granska och publicera den. [Läs mer](#review-activate)
-
-## Granska och aktivera en kampanj {#review-activate}
-
-När kampanjen har konfigurerats måste du granska dess parameter och innehåll innan du aktiverar den. Följ dessa steg för att göra detta:
-
-1. Klicka på **[!UICONTROL Review to activate]** för att visa en sammanfattning av kampanjen.
-
-   Sammanfattningen gör att du kan ändra kampanjen om det behövs och kontrollera om någon parameter är felaktig eller saknas.
-
-   >[!IMPORTANT]
-   >
-   >Om fel uppstår kan du inte aktivera kampanjen. Åtgärda felen innan du fortsätter.
-
-   ![](assets/create-campaign-alerts.png)
-
-1. Kontrollera att kampanjen är korrekt konfigurerad och klicka sedan på **[!UICONTROL Activate]**.
-
-   ![](assets/create-campaign-review.png)
-
-1. Kampanjen är nu aktiverad. Dess status är **[!UICONTROL Live]**, eller **[!UICONTROL Scheduled]** om du angav ett startdatum. [Läs mer om kampanjstatus](get-started-with-campaigns.md#statuses).
-
-   Meddelandet som konfigurerats i kampanjen skickas omedelbart eller på det angivna datumet.
-
-   >[!NOTE]
-   >
-   >The **[!UICONTROL Completed]** status tilldelas automatiskt en kampanj 3 dagar efter att den har aktiverats eller vid kampanjens slutdatum om den har ett återkommande körningsfel.
-   >
-   >Om inget slutdatum har angetts kommer kampanjen att behålla **[!UICONTROL Live]** status. Om du vill ändra den måste du stoppa kampanjen manuellt. [Lär dig stoppa en kampanj](modify-stop-campaign.md)
-
-1. När en kampanj har aktiverats kan du när som helst kontrollera dess information genom att öppna den. Sammanfattningen gör att du kan få statistik om antalet målprofiler och levererade och misslyckade åtgärder.
-
-   Du kan även få ytterligare statistik i dedikerade rapporter genom att klicka på **[!UICONTROL Reports]** -knappen. [Läs mer](../reports/campaign-global-report.md)
-
-   ![](assets/create-campaign-summary.png)
 
 ## Schemalägg en kampanj {#schedule}
 
@@ -135,3 +102,40 @@ Du kan definiera hur ofta kampanjens meddelande ska skickas. Om du vill göra de
 Om du inte vill genomföra kampanjen direkt efter aktiveringen kan du ange ett datum och en tidpunkt då meddelandet ska skickas med **[!UICONTROL Campaign start]** alternativ. The  **[!UICONTROL Campaign end]** kan du ange när en återkommande kampanj ska sluta köras.
 
 ![](assets/create-campaign-schedule.png)
+
+## Snabb leverans {#rapid-delivery}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_rapid_delivery"
+>title="Snabb leverans"
+>abstract="Snabb leverans är ett Journey Optimizer-tillägg som gör att du snabbt kan använda icke-personaliserade meddelanden till målgrupper under 30M-profiler."
+
+Snabb leverans, som tidigare kallades Burst-läge under resor, är ett [!DNL Journey Optimizer] tillägg som gör det möjligt att skicka mycket snabba push-meddelanden i stora volymer via kampanjer.
+
+Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp.
+
+Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journye Optimizer - produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html).
+
+
+### Förutsättningar {#prerequisites}
+
+Snabba leveransmeddelanden innehåller följande krav:
+
+* Snabb leverans av **[!UICONTROL Scheduled]** endast kampanjer och inte för API-utlösta kampanjer,
+* Ingen personalisering tillåts i push-meddelandet,
+* Målgruppen måste innehålla färre än 30M profiler,
+* Du kan köra upp till 5 kampanjer samtidigt i läget Snabb leverans.
+
+### Aktivera läget Snabb leverans
+
+1. Skapa en push-meddelandekampanj och aktivera **[!UICONTROL Rapid delivery]** alternativ.
+
+![](assets/create-campaign-burst.png)
+
+1. Konfigurera meddelandeinnehållet och välj målgrupp. [Lär dig hur du skapar en kampanj](#create)
+
+   >[!IMPORTANT]
+   >
+   >Se till att meddelandeinnehållet inte innehåller någon personalisering och att målgruppen innehåller färre än 30 miljoner profiler.
+
+1. Granska och aktivera kampanjen som vanligt. Observera att i testläge skickas inga meddelanden via läget Snabb leverans. [Lär dig hur du granskar och aktiverar en kampanj](review-activate-campaign.md)

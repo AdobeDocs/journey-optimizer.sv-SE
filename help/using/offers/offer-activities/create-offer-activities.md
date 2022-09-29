@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7a217c97-57e1-4f04-a92c-37632f8dfe91
-source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
+source-git-commit: 11596bfbe5f98e362224384d51ba32d61275bc1d
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1100'
 ht-degree: 1%
 
 ---
@@ -39,6 +39,8 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 1. Definiera start- och slutdatum och sluttid om det behövs, och klicka sedan på **[!UICONTROL Next]**.
 
    ![](../assets/activities-name.png)
+
+1. Om du vill tilldela egna eller centrala dataanvändningsetiketter till ett beslut väljer du **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../../administration/object-based-access.md)
 
 ## Definiera beslutsomfattningar {#add-decision-scopes}
 

@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 5a968bd8-cf76-4242-aa80-3cfb3d551511
-source-git-commit: 3afef10461ce29b811cb20a2c8c4e94f452daf1f
+source-git-commit: 8ca0d2bbd01451de613d8ae985e10a711fcc6316
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1103'
 ht-degree: 7%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 ## Om behörigheter för meddelanden{#message-permissions}
 
-Adobe Journey Optimizer har släppt nya funktioner för onlineframtagning som gör att ni kan skapa och skriva meddelanden direkt från en resa eller en kampanj. Mer information om den här nya funktionen finns i [hänvisa till denna sida](../rn/inline-messages.md).
+Adobe Journey Optimizer har släppt nya funktioner för onlineframtagning som gör att ni kan skapa och skriva meddelanden direkt från en resa eller en kampanj.
 
 Den här funktionen påverkar behörigheterna enligt följande:
 

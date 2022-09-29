@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: 1780310da6d8a952dd22b9ee9a0b23516efddb5f
+source-git-commit: 9c0f604680787dbdf5fb820074408edad78f8bfb
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 4%
+source-wordcount: '1284'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ Låt oss som exempel ta segmentet&quot;Luma app opening and checkout&quot; som s
 >
 >För resor som använder en Läs segment-aktivitet finns det ett maximalt antal resor som kan påbörjas exakt samtidigt. Återförsök kommer att utföras av systemet men undvik att ha fler än fem resor (med Läs segment, schemalagd eller starta&quot;så snart som möjligt&quot;) med början vid exakt samma tidpunkt genom att sprida dem över tiden, t.ex. mellan 5 och 10 minuter.
 >
->Det Burst-betalda tillägget gör det möjligt att skicka mycket snabba push-meddelanden i stora volymer för enkla resor som innehåller ett lässegment och ett enkelt push-meddelande. Mer information hittar du i [det här avsnittet](../building-journeys/journey-gs.md#burst)
+>Det går inte att använda fältgrupper för upplevelsehändelser i resor som börjar med ett Lässegment, en segmentkvalificering eller en affärshändelseaktivitet.
 
 ### Konfigurera aktiviteten {#configuring-segment-trigger-activity}
 
@@ -108,6 +108,8 @@ To activate this mode, click the **Segment Filters** toggle. Two fields are disp
 >[!NOTE]
 >
 >Enbildsresor för Läs segment flyttas till statusen Slutförd 30 dagar efter körningen. För schemalagda läs-segment är det 30 dagar efter körningen av den sista förekomsten.
+>
+>Du måste vara försiktig när du använder vänteaktiviteter i återkommande lässegmentsresor när livslängden för sådana resor slutar vid nästa körning. Det innebär att om en resa körs dagligen varar den resa som påbörjades idag tills imorgon. Om du t.ex. lade till en 2-dagars väntan på den resan kommer profiler alltid att flyttas på nästa körning (så dagen efter), oavsett om de är i nästa körda målgrupp eller inte. Profiler kommer aldrig att kunna stanna på den resan i två dagar.
 
 ### Testa och publicera resan {#testing-publishing}
 

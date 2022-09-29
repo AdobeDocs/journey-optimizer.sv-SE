@@ -5,10 +5,10 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 40061255a2fcec3de1b39a168cadbdedd2e12d87
+source-git-commit: d6ff34a36abcf2b2233079aeddb5a5f0919f2590
 workflow-type: tm+mt
-source-wordcount: '1155'
-ht-degree: 37%
+source-wordcount: '1153'
+ht-degree: 38%
 
 ---
 
@@ -21,9 +21,6 @@ ht-degree: 37%
       + [Versionsinformation 2022](using/rn/release-notes-2022.md)
       + [Versionsinformation 2021](using/rn/release-notes-2021.md)
    + [Dokumentationsuppdateringar](using/rn/documentation-updates.md)
-   + Ny textbunden redigeringsfunktion {#inline-authoring}
-      + [Migreringsöversikt](using/rn/inline-messages.md)
-      + [Migreringssteg](using/rn/inline-messages-steps.md)
 + Kom igång{#get-started}
    + [Vad är Journey Optimizer?](using/start/get-started.md)
    + Snabbstart{#quick-start}
@@ -37,6 +34,7 @@ ht-degree: 37%
 + Kampanjer{#campaigns}
    + [Kom igång med kampanjer](using/campaigns/get-started-with-campaigns.md)
    + [Skapa en kampanj](using/campaigns/create-campaign.md)
+   + [Granska och aktivera en kampanj](using/campaigns/review-activate-campaign.md)
    + [Hantera livekampanjer](using/campaigns/modify-stop-campaign.md)
    + Innehållsexperiment {#content-experiment}
       + [Kom igång med innehållsexperiment](using/campaigns/get-started-experiment.md)
@@ -271,6 +269,7 @@ ht-degree: 37%
    + levererbarhet {#deliverability}
       + [Kom igång med leverans](using/reports/deliverability.md)
       + [Förstå listan över inaktiveringar](using/reports/suppression-list.md)
+   + [Larm](using/reports/alerts.md)
 + Beslutsledning {#offer-decisioning}
    + Kom igång med beslutshantering {#get-started-decision}
       + [Om beslutshantering](using/offers/get-started/starting-offer-decisioning.md)
@@ -395,7 +394,7 @@ ht-degree: 37%
       + Konfigurera kanalytor {#set-up-channels}
          + [Skapa kanalytor](using/configuration/channel-surfaces.md)
          + [Konfigurera e-postinställningar](using/configuration/email-settings.md)
-         + [Använd BCC-e-post](using/configuration/bcc-email.md)
+      + [Stöd för arkivering](using/configuration/archiving-support.md)
       + [Hantera körningsadresser](using/configuration/primary-email-addresses.md)
       + [Konfigurera frekvensregler](using/configuration/frequency-rules.md)
    + Konfigurera landningssidor {#lp-configuration}
@@ -422,7 +421,6 @@ ht-degree: 37%
          + [Konfigurera en åtgärd](using/action/about-custom-action-configuration.md)
          + [Integrera med Adobe Campaign Standard](using/action/acs-action.md)
          + [Integrera med Adobe Campaign v7/v8](using/action/acc-action.md)
-         + [Godkännande](using/action/consent.md)
    + [Källor](using/start/get-started-sources.md)
 + Åtkomstkontroll {#access-control}
    + [Översikt över åtkomstkontroll](using/administration/permissions-overview.md)
@@ -435,4 +433,6 @@ ht-degree: 37%
 + Sekretess {#privacy}
    + [Dataanvändningspolicyer](using/privacy/policies.md)
    + [Förfrågningar om användarens information](using/privacy/requests.md)
-   + [Granskningsåtgärder för Journey Optimizer-resurser](using/privacy/audit-logs.md)
+   + [Granskningsåtgärder för resurser](using/privacy/audit-logs.md)
+   + [Godkännande](using/action/consent.md)
+   + [Datastyrning](using/action/action-privacy.md)

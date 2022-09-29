@@ -6,17 +6,15 @@ feature: Actions
 topic: Administration
 role: Admin
 level: Intermediate
-hide: true
-hidefromtoc: true
 exl-id: 01ca4b3e-3778-4537-81e9-97ef92c9aa9e
-source-git-commit: 8a68d1e6d498ef3055c703d4e73471ab6d7bff40
+source-git-commit: 30171e362e0dc70f5647bb2413031946062e8df3
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '899'
 ht-degree: 0%
 
 ---
 
-# Hantering av samtycke (beta) {#consent-management}
+# Medgivandehantering {#consent-management}
 
 Med Adobe Experience Platform kan ni enkelt införa och tillämpa marknadsföringspolicyer för att respektera kundernas samtycke. Samtyckesregler definieras i Adobe Experience Platform. Se [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=en#consent-policy).
 
@@ -24,7 +22,7 @@ I Journey Optimizer kan du tillämpa dessa medgivandeprinciper på dina anpassad
 
 >[!NOTE]
 >
->Den här funktionen är en privat betaversion. Det är inte tillgängligt för alla Journey Optimizer-kunder.
+>Samtyckespolicyer är för närvarande bara tillgängliga för organisationer som har köpt tilläggserbjudandet för hälso- och sjukvård.
 
 I Journey Optimizer definieras samtycke på flera nivåer:
 
@@ -39,8 +37,8 @@ Med samtyckeshantering analyseras två olika reseaktiviteter:
 
 * Lässegment: det hämtade segmentet beaktas.
 * Anpassad åtgärd: när det gäller hantering av samtycke beaktas de attribut som används ([åtgärdsparametrar](../action/about-custom-action-configuration.md#define-the-message-parameters)) och de definierade marknadsföringsåtgärderna (nödvändiga marknadsföringsåtgärder och ytterligare marknadsföringsåtgärder).
-
-Samtycke gäller endast när en marknadsföringsåtgärd (obligatorisk eller ytterligare) har ställts in på den anpassade åtgärdsnivån.
+* Attribut som är en del av en fältgrupp som använder det färdiga unionsschemat stöds inte. Dessa attribut döljs från gränssnittet. Du måste skapa en annan fältgrupp med ett annat schema.
+* Samtyckesprinciper gäller bara när en marknadsföringsåtgärd (obligatorisk eller ytterligare) har ställts in på den anpassade åtgärdsnivån.
 
 Alla andra aktiviteter som används under en resa beaktas inte. Om du påbörjar en resa med en segmentkvalificering beaktas inte segmentet.
 

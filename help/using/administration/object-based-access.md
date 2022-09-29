@@ -5,12 +5,10 @@ feature: Access Management
 topic: Administration
 role: Admin
 level: Intermediate
-hide: true
-hidefromtoc: true
-source-git-commit: 40061255a2fcec3de1b39a168cadbdedd2e12d87
+source-git-commit: 61293a2ad45d30d24e1b38d8a5df81534dc19b40
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 3%
+source-wordcount: '406'
+ht-degree: 2%
 
 ---
 
@@ -20,6 +18,10 @@ ht-degree: 3%
 >id="ajo_olac_manage_access"
 >title="Åtkomstkontroll på objektnivå"
 >abstract="Om du använder etiketter som du inte har åtkomst till kommer åtkomsten till objektet att återkallas."
+
+>[!IMPORTANT]
+>
+>Åtkomstkontrollen på objektnivå är för närvarande begränsad till utvalda kunder och kommer att distribueras till alla miljöer i en framtida version.
 
 Med åtkomstkontrollen på objektnivå (OLAC) kan du definiera behörigheter för att hantera dataåtkomst till ett urval av objekt:
 
@@ -86,6 +88,7 @@ Så här tilldelar du anpassade eller grundläggande dataanvändningsetiketter t
 1. Klicka **[!UICONTROL Save]** om du vill tillämpa den här etikettbegränsningen.
 
 För att få åtkomst till det här objektet måste användarna ha den specifika **[!UICONTROL Label]** ingår i **[!UICONTROL Roles]**.
+En användare med etiketten C1 har till exempel bara åtkomst till objekt som är märkta eller omärkta med C1.
 
 Mer information om hur du tilldelar **[!UICONTROL Label]** till **[!UICONTROL Role]**, se [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/permissions.html?lang=en#manage-labels-for-a-role).
 

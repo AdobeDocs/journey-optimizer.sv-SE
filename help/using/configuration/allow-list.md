@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 70ab8f57-c132-4de1-847b-11f0ab14f422
-source-git-commit: e81e21f714a3c5450defa1129e1e2b9969dc1de7
+source-git-commit: 50f6b965b50b1ffe4dab9102657d43888cb6d5ea
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '986'
 ht-degree: 2%
 
 ---
@@ -158,7 +158,7 @@ Läs mer om hur du gör API-anrop i [Adobe Experience Platform API:er](https://e
 >[!CONTEXTUALHELP]
 >id="ajo_admin_allowed_list_logic"
 >title="Hantera tillåtelselista"
->abstract="När tillåtelselista är aktiverat kommer endast de mottagare som ingår i tillåtelselista att få e-postmeddelanden från den här sandlådan."
+>abstract="När tillåtelselista är aktiverat kommer endast de mottagare som ingår i tillåtelselista att få e-postmeddelanden från den här sandlådan. När den är inaktiverad får alla mottagare e-post."
 
 När tillåtelselista är [aktiv](#enable-allow-list), gäller följande logik:
 

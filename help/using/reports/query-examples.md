@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 26ad12c3-0a2b-4f47-8f04-d25a6f037350
-source-git-commit: c8e03687d82c6dcfea1195cf8ef091e3d9bc80a5
+source-git-commit: e75f26d7112627d63977cafa8a7fbf602c5a3eb1
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1339'
 ht-degree: 2%
 
 ---
@@ -18,6 +18,90 @@ ht-degree: 2%
 I det här avsnittet visas flera vanliga exempel för att fråga efter händelser i resesteg i datasjön.
 
 Se till att fälten som används i dina frågor har associerade värden i motsvarande schema.
+
+**Vad är skillnaden mellan id, instanceid och profileid?**
+
+* id: unika för alla steg-händelseposter. Två olika steghändelser kan inte ha samma ID.
+* instanceId: instanceID är samma för alla steg-händelser som är kopplade till en profil inom en körning. Om en profil återgår till resan används ett annat instanceId. Detta nya instanceId är samma för alla steg-händelser för den ommatade instansen (från start till slut).
+* profileID: Profilens identitet som motsvarar resenamnutrymmet.
+
+## Grundläggande användningsfall/vanliga frågor {#common-queries}
+
+**Hur många profiler som pågick en resa inom en viss tidsram**
+
+Den här frågan ger antalet distinkta profiler som har passerat den angivna resan under den angivna tidsramen.
+
+_Data Lake-fråga_
+
+```sql
+SELECT count(distinct _experience.journeyOrchestration.stepEvents.profileID)
+FROM journey_step_events WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journeyVersionID>'
+AND _experience.journeyOrchestration.stepEvents.nodeType='start'
+AND _experience.journeyOrchestration.stepEvents.instanceType = 'unitary'
+AND DATE(timestamp) > (now() - interval '<last x hours>' hour);
+```
+
+**Hur många fel som har uppstått på varje nod i en viss resa under en viss tid**
+
+_Data Lake-fråga_
+
+```sql
+SELECT
+_experience.journeyOrchestration.stepEvents.nodeName,
+count(distinct _experience.journeyOrchestration.stepEvents.profileID)
+FROM journey_step_events
+WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID='<journeyVersiionID>'
+AND DATE(timestamp) > (now() - interval '<last x hours>' hour)
+AND
+  (_experience.journeyOrchestration.stepEvents.actionExecutionError not NULL
+    OR _experience.journeyOrchestration.stepEvents.actionExecutionErrorCode not NULL
+    OR _experience.journeyOrchestration.stepEvents.actionExecutionOriginCode not NULL
+    OR _experience.journeyOrchestration.stepEvents.actionExecutionOriginError not NULL
+    OR _experience.journeyOrchestration.stepEvents.fetchError not NULL
+    OR _experience.journeyOrchestration.stepEvents.fetchErrorCode  not NULL
+  )
+GROUP BY _experience.journeyOrchestration.stepEvents.nodeName;
+```
+
+**Hur många händelser som har tagits bort från en viss resa under en viss tidsperiod**
+
+_Data Lake-fråga_
+
+```sql
+SELECT
+count(_id) AS NUMBER_OF_EVENTS_DISCARDED
+FROM journey_step_events
+WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID='<journeyVersiionID>'
+AND DATE(timestamp) > (now() - interval '<last x hours>' hour);
+```
+
+**Vad som händer med en viss profil under en viss resa inom en viss tidsram**
+
+_Data Lake-fråga_
+
+Den här frågan returnerar alla steg-händelser och tjänsthändelser för den angivna profilen och resan för den angivna tiden i kronologisk ordning.
+
+```sql
+SELECT
+timestamp,
+_experience.journeyOrchestration.stepEvents.journeyVersionID,
+_experience.journeyOrchestration.stepEvents.profileID,
+_experience.journeyOrchestration.stepEvents.nodeName,
+_experience.journeyOrchestration.stepEvents.journeyNodeProcessed,
+_experience.journeyOrchestration.serviceType,
+to_json(_experience.journeyOrchestration.profile),
+to_json(_experience.journeyOrchestration.serviceEvents)
+FROM journey_step_events
+WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID='<journeyVersionID>'
+AND DATE(timestamp) > (now() - interval '<last x hours>' hour)
+AND
+  (
+    _experience.journeyOrchestration.stepEvents.profileID='<profileID>'
+    OR _experience.journeyOrchestration.profile.ID='<profileID>'
+  );
+ORDER BY timestamp;
+```
+
 
 ## Meddelande-/åtgärdsfel {#message-action-errors}
 

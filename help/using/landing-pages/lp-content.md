@@ -5,10 +5,11 @@ feature: Landing Pages
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: f4b3a9de47e724f7b23df8a02b8106c131cf1b12
+exl-id: 5bf023b4-4218-4110-b171-3e70e0507fca
+source-git-commit: 75f29dacf54d29172039ac0a098ecafe467ad35d
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 1%
+source-wordcount: '1124'
+ht-degree: 2%
 
 ---
 
@@ -95,8 +96,6 @@ Använd **[!UICONTROL Form]** -komponenten. För att göra detta, följ nedanst�
 
    ![](assets/lp_designer-form-save.png)
 
-<!--Will the name Email Designer be kept if you can also design LP with the same tool? > To modify in Messages section > content designer or Designer-->
-
 ## Definiera format för landningssidor {#lp-form-styles}
 
 1. Om du vill ändra formaten för formulärkomponentens innehåll växlar du när som helst till **[!UICONTROL Form style]** -fliken.
@@ -123,3 +122,85 @@ Använd **[!UICONTROL Form]** -komponenten. För att göra detta, följ nedanst�
 
    ![](assets/lp_designer-form-error-preview.png)
 
+## Använd primär sidkontext {#use-primary-page-context}
+
+Du kan använda kontextuella data från en annan sida på samma landningssida.
+
+Om du till exempel länkar en kryssruta<!-- or the submission of the page--> till [prenumerationslista](subscription-list.md) på den primära landningssidan kan du använda den prenumerationslistan på undersidan&quot;Tack&quot;.
+
+Låt oss säga att du länkar två kryssrutor på din primära sida till två olika prenumerationslistor. Om en användare prenumererar på något av dessa, vill du visa ett specifikt meddelande när formuläret skickas, beroende på vilken kryssruta de har markerat.
+
+För att göra detta, följ nedanstående steg:
+
+1. På den primära sidan länkar du varje kryssruta till den relevanta prenumerationslistan. [Läs mer](#use-form-component).
+
+   ![](assets/lp_designer-form-luma-newsletter.png)
+
+1. Placera muspekaren på den underordnade sidan där du vill infoga texten och markera **[!UICONTROL Add personalization]** i kontextverktygsfältet.
+
+   ![](assets/lp_designer-form-subpage-perso.png)
+
+1. I **[!UICONTROL Edit personalization]** fönster, markera **[!UICONTROL Contextual attributes]** > **[!UICONTROL Landing Pages]** > **[!UICONTROL Primary Page Context]** > **[!UICONTROL Subscription]**.
+
+1. Alla prenumerationslistor som du har valt på den primära sidan visas. Markera de relevanta objekten med ikonen +.
+
+   ![](assets/lp_designer-form-add-subscription.png)
+
+1. Lägg till relevanta villkor med hjälpfunktionerna i uttrycksredigeraren. [Läs mer](../personalization/functions/functions.md)
+
+   ![](assets/lp_designer-form-add-subscription-condition.png)
+
+   >[!CAUTION]
+   >
+   >Om det finns ett specialtecken som ett bindestreck i uttrycket måste du undvika texten, inklusive bindestrecket.
+
+1. Spara ändringarna.
+
+![](assets/lp_designer-form-preview-checked-box.png)
+
+När användaren markerar en av kryssrutorna visas meddelandet som motsvarar den markerade kryssrutan när formuläret skickas.
+
+![](assets/lp_designer-form-thankyou-preview.png)
+
+>[!NOTE]
+>
+>Om en användare markerar de två kryssrutorna visas båda texterna.
+
+
+## Använd ytterligare data på landningssidan {#use-additional-data}
+
+När [konfigurera den primära sidan](create-lp.md#configure-primary-page)kan du skapa ytterligare data för att kunna lagra information när landningssidan skickas.
+
+>[!NOTE]
+>
+>Dessa data kanske inte är synliga för användare som besöker sidan.
+
+Om du definierade en eller flera tangenter med deras motsvarande värden när [konfigurera den primära sidan](create-lp.md#configure-primary-page)kan du använda dessa tangenter i innehållet på din primära sida och dina underordnade sidor med [Uttrycksredigerare](../personalization/personalization-build-expressions.md).
+
+<!--When you reuse the same text on a page, this enables you to dynamically change that text if needed, without going through each occurrence.
+
+For example, if you define the company name as a key, you can quickly update it everywhere (on all the pages of a given landing page) by changing it only once in the [primary page settings](create-lp.md#configure-primary-page).-->
+
+Följ stegen nedan för att använda dessa tangenter på en landningssida:
+
+1. När du konfigurerar den primära sidan definierar du en nyckel och dess motsvarande värde i **[!UICONTROL Additional data]** -avsnitt. [Läs mer](create-lp.md#configure-primary-page)
+
+   ![](assets/lp_create-lp-additional-data.png)
+
+1. När du redigerar den primära sidan med designern placerar du pekaren på musen där du vill infoga tangenten och väljer **[!UICONTROL Add personalization]** i kontextverktygsfältet.
+
+   ![](assets/lp_designer-context-add-perso.png)
+
+1. I **[!UICONTROL Edit Personalization]** fönster, markera **[!UICONTROL Contextual attributes]** > **[!UICONTROL Landing Pages]** > **[!UICONTROL Additional Context]**.
+
+   ![](assets/lp_designer-contextual-attributes.png)
+
+1. Alla nycklar som du skapade när du konfigurerade den primära sidan visas. Välj önskad tangent med ikonen +.
+
+   ![](assets/lp_designer-context-select-key.png)
+
+1. Spara ändringarna och upprepa stegen ovan så många gånger som behövs.
+
+   ![](assets/lp_designer-context-keys-inserted.png)
+
+   Du kan se att det anpassningsobjekt som motsvarar din nyckel nu visas överallt där du har infogat den.

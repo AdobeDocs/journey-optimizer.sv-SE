@@ -6,16 +6,22 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 5e5419a0-5121-4aa7-a975-b1f08e2918c9
-source-git-commit: f4b3a9de47e724f7b23df8a02b8106c131cf1b12
+source-git-commit: 61dac9f39ed0fc8f4403071049f14d34a43acbb4
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 2%
+source-wordcount: '408'
+ht-degree: 1%
 
 ---
 
 # Prenumerationslistor {#create-subscription-list}
 
 ## Vad är en prenumerationslista? {#subscription-list-definition}
+
+>[!CONTEXTUALHELP]
+>id="ajo_subscription_list"
+>title="Konfigurera en prenumerationslista"
+>abstract="Skapa en prenumerationslista för att samla in profiler som har valt att ta emot meddelanden om ett visst ämne eller evenemang. "
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/subscription-list.html#define-subscription-list" text="Skapa en prenumerationslista"
 
 En prenumerationstjänst avser marknadsföringsvaror och marknadsföringstjänster som tillhandahålls kunder som har valt att ta emot meddelanden om ett visst ämne/evenemang/intresse/osv. fortlöpande. I [!DNL Journey Optimizer], samlas dessa kunder i en prenumerationslista.
 
@@ -29,7 +35,7 @@ En prenumerationstjänst kan vara:
 
 Profilerna kan läggas till i en prenumerationslista via en [landningssida](create-lp.md). Ett exempel presenteras i [det här avsnittet](lp-use-cases.md#subscription-to-a-service).
 
-## Definiera en prenumerationslista {#define-subscription-list}
+## Skapa en prenumerationslista {#define-subscription-list}
 
 Följ stegen nedan för att skapa en prenumerationslista.
 

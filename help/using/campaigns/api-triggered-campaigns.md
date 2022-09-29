@@ -1,12 +1,10 @@
 ---
 title: Utlösa kampanjer med API:er
 description: Lär dig hur du aktiverar kampanjer med [!DNL Journey Optimizer] API:er
-hide: true
-hidefromtoc: true
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: 711fdf1dce0688d2e21d405a4e3e8777612b2f3b
+source-git-commit: 9fbfeef292e4b71396680573007e062b525b24c9
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '753'
 ht-degree: 0%
 
 ---
@@ -14,10 +12,6 @@ ht-degree: 0%
 # Utlösa kampanjer med API:er {#trigger-campaigns}
 
 ## Om API-utlösta kampanjer {#about}
-
->[!NOTE]
->
->API:t för interaktiv meddelandekörning finns för närvarande i betaversion, som kan uppdateras ofta utan föregående meddelande.
 
 Med [!DNL Journey Optimizer]kan ni skapa kampanjer och sedan anropa dem från ett externt system baserat på användarens utlösare med [REST API för körning av interaktivt meddelande](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution). På så sätt kan du täcka olika behov av användnings- och transaktionsmeddelanden, som lösenordsåterställningar och OTP-token.
 
@@ -44,8 +38,12 @@ Så här skapar du en API-utlöst kampanj:
    >[!NOTE]
    >
    >Du kan skicka ytterligare data till API-nyttolasten som du kan använda för att anpassa meddelandet. [Läs mer](#contextual)
+   >
+   >Om du använder ett stort antal eller stora sammanhangsberoende data i ditt innehåll kan det påverka prestanda.
 
-1. Ange det namnutrymme som ska användas för att identifiera individerna från segmentet.
+1. I **[!UICONTROL Audience]** anger du det namnutrymme som ska användas för att identifiera individer från segmentet.
+
+   The **[!UICONTROL Create new profiles]** kan du automatiskt skapa profiler som inte finns i databasen. [Läs mer om att skapa profiler vid kampanjkörning](#profile-creation)
 
 1. Konfigurera kampanjens start- och slutdatum.
 
@@ -88,6 +86,16 @@ Du kan sedan använda detta ID i API-nyttolasten för att utlösa kampanjen. Se 
 
 Observera att om du har konfigurerat ett specifikt start- och/eller slutdatum när du skapar kampanjen kommer den inte att köras utanför dessa datum och API-anrop misslyckas.
 
+## Skapa profiler vid kampanjkörning {#profile-creation}
+
+I vissa fall kan du behöva skicka transaktionsmeddelanden till profiler som inte finns i systemet. Om en okänd användare till exempel försöker logga in på webbplatsen.
+
+När det inte finns någon profil i databasen kan du i Journey Optimizer automatiskt skapa den när kampanjen körs för att tillåta att meddelandet skickas till den här profilen.
+
+Om du vill göra det växlar du **[!UCONTROL Skapa nya profiler]** på i **[!UICONTROL Audience]** -avsnitt.
+
+![](assets/api-triggered-create-profile.png)
+
 >[!NOTE]
 >
->I vissa fall kan du behöva skicka transaktionsmeddelanden till profiler som inte finns i systemet. Om en okänd användare till exempel försöker logga in på webbplatsen. I så fall skapas motsvarande profil automatiskt i Adobe Experience Platform i **AJO Interactive Messaging Profile - datauppsättning** datauppsättning.
+>Okända profiler skapas i **AJO Interactive Messaging Profile - datauppsättning** datauppsättningen, i tre standardnamnutrymmen (e-post, telefon och ECID) för varje utgående kanal (e-post, SMS och push).

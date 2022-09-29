@@ -6,16 +6,16 @@ feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: 1929644f-8b51-4f95-aea5-627fc1dd115d
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: cca94d15da5473aa9890c67af7971f2e745d261e
 workflow-type: tm+mt
-source-wordcount: '52'
-ht-degree: 13%
+source-wordcount: '96'
+ht-degree: 7%
 
 ---
 
 # toDateOnly{#toDateOnly}
 
-Konverterar ett argumentvärde till ett värde för endast datum.
+Konverterar ett argument till ett dateOnly-typvärde. Mer information om datatyper finns i [section](../expression/data-types.md).
 
 ## Kategori
 
@@ -29,19 +29,33 @@ Konvertering
 
 | Parameter | Typ |
 |-----------|------------------|
-| datum i ISO-8601- eller &quot;YYY-MM-DD&quot;-format (XDM-datumformat) | string |
-| datum | datum |
+| Strängbeteckning för ett datum som &quot;YYY-MM-DD&quot; (XDM-format). Stöder även ISO-8601-format: endast **fulldatum** part beaktas (se [RFC 3339, avsnitt 5.6](https://www.rfc-editor.org/rfc/rfc3339#section-5.6) | string |
+| tid | dateTime |
+| datum tid utan tidszon | dateTimeOnly |
+| heltalsvärde för en epok i millisekunder | heltal |
 
 ## Underskrifter och returnerade typer
 
-`toDateOnly(<date>)`
+`toDateOnly(<dateTime>)`
+
+`toDateOnly(<dateTimeOnly>)`
 
 `toDateOnly(<string>)`
 
-Returnera en datetime utan att överväga tidszon.
+`toDateOnly(<integer>, <integer>, <integer>)`
+
+Returnerar ett dateOnly-typvärde.
 
 ## Exempel
 
 `toDateOnly("2016-08-18")`
 
-returnerar ett dateOnly-objekt som representerar 2016-08-18.
+`toDateOnly("2016-08-18T00:00:00.000Z")`
+
+`toDateOnly("2016-08-18T00:00:00")`
+
+alla returnerar ett dateOnly-objekt som representerar 2016-08-18.
+
+`toDateOnly(#{ExperiencePlatform.ProfileFieldGroup.person.birthDate})`
+
+Returnerar ett dateOnly.

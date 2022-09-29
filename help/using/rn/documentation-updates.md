@@ -2,9 +2,9 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 1d9fc184bb67362aac608e9816fe3afe64eb055c
+source-git-commit: a5bbcfb84cb1be5770d91cc844e42e808dbe2957
 workflow-type: tm+mt
-source-wordcount: '1871'
+source-wordcount: '2000'
 ht-degree: 19%
 
 ---
@@ -12,6 +12,19 @@ ht-degree: 19%
 # Dokumentationsuppdateringar {#latest-updates}
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
+
+## September 2022 {#september-2022}
+
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Septemberversionen 22 har detaljerats i dokumentationen. [Läs mer](release-notes.md)
+* Lagt till en metodtips som är relaterad till användningen av vänteaktiviteter i återkommande lässegmentsresor. [Läs mer](../building-journeys/read-segment.md#configuring-segment-trigger-activity)
+* Frågeexempel för det nya steget har lagts till samt information om skillnaden mellan id, instanceid och profileid. [Läs mer](../reports/query-examples.md).
+* Uppdaterade sidor relaterade till [toDateOnly](../building-journeys/functions/functiontodateonly.md) och [toString](../building-journeys/functions/functiontostring.md) funktioner.
+* Information om tidsvillkorsparametrar har lagts till. [Läs mer](../building-journeys/condition-activity.md#time_condition)
+* Lagt till information om inbyggda datauppsättningar. [Läs mer](../start/get-started-datasets.md#access-datasets)
+* Delarna i den globala rapporten och Live-rapporten har omstrukturerats för att bli enklare att läsa. [Läs mer](../reports/global-report.md)
+* En lista över alla rapporteringsmått som är tillgängliga i Adobe Journey Optimizer har lagts till.
+   [Läs mer](../reports/global-report.md#email-and-sms-metrics)
+* BCC-e-postavsnittet har flyttats till den nya sidan Stöd för arkivering. [Läs mer](../configuration/archiving-support.md)
 
 ## Augusti 2022 {#august-2022}
 

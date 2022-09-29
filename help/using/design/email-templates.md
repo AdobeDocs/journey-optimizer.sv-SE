@@ -5,10 +5,11 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: e152099f81305c4f045ce7195eea810109eb2f2e
+exl-id: 94d5e615-a7d6-468c-bee8-1ae5fcd4a694
+source-git-commit: cca94d15da5473aa9890c67af7971f2e745d261e
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 7%
+source-wordcount: '218'
+ht-degree: 5%
 
 ---
 
@@ -23,6 +24,11 @@ Du kan välja mellan:
 * Sparade mallar. [Läs mer](#save-as-template)
 
 ## Spara som mall {#save-as-template}
+
+>[!CONTEXTUALHELP]
+>id="ajo_messages_depecrated_inventory"
+>title="Lär dig hur du migrerar meddelanden"
+>abstract="Den 25 juli 2022 försvann menyn Meddelanden och meddelanden skrivs nu direkt från en resa. Om du vill återanvända dina gamla meddelanden under resor måste du spara dem som mallar."
 
 När du designat [e-postinnehåll](design-emails.md)kan du spara den för framtida bruk. Följ stegen nedan för att göra detta.
 
@@ -63,4 +69,3 @@ Nästa gång du skapar ett e-postmeddelande kan du använda den här mallen för
 1. Klicka **[!UICONTROL Use this email]** längst upp till höger på skärmen.
 
 1. Redigera ditt innehåll efter behov med e-postdesignern.
-

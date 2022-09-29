@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: cca94d15da5473aa9890c67af7971f2e745d261e
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 7%
+source-wordcount: '1132'
+ht-degree: 8%
 
 ---
 
@@ -81,7 +81,7 @@ Här är de viktigaste stegen för att skicka meddelanden via resor:
 
 Klicka på pennikonen i det övre högra hörnet för att komma åt resans egenskaper.
 
-Du kan ändra namnet på resan, lägga till en beskrivning, tillåta återinträde, välja start- och slutdatum och, som administratör, definiera en **[!UICONTROL Timeout and error]** varaktighet. Om det är aktiverat för din organisation kan du även aktivera [burst messaging](#burst).
+Du kan ändra namnet på resan, lägga till en beskrivning, tillåta återinträde, välja start- och slutdatum och, som administratör, definiera en **[!UICONTROL Timeout and error]** varaktighet.
 
 På den här skärmen visas publiceringsdatumet och namnet på den användare som publicerade resan.
 
@@ -96,6 +96,10 @@ Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet f�
 När en resa&quot;slutar&quot; får den statusen **[!UICONTROL Closed]**. Resan kommer att sluta låta nya individer komma in på resan. Personer som redan är på resan kommer att slutföra resan normalt.
 
 Efter den globala standardtidsgränsen på 30 dagar växlar resan till **Slutförd** status. Se det här [section](../building-journeys/journey-gs.md#global_timeout).
+
+>[!NOTE]
+>
+>Enhetsresor (med början vid en händelse eller en segmentkvalificering) innehåller ett skyddsräcke som förhindrar att resorna aktiveras felaktigt flera gånger för samma händelse. Återinträde av profiler blockeras tillfälligt som standard i 5 minuter. Om en händelse till exempel utlöser en resa kl. 12:01 för en viss profil och en annan tar emot kl. 12:03 (oavsett om det är samma händelse eller en annan som utlöser samma resa) kommer den resan inte att starta igen för den här profilen.
 
 ### Tidsgräns och fel i reseaktiviteter {#timeout_and_error}
 
@@ -127,31 +131,8 @@ Om en tidszon definieras i Adobe Experience Platform-profilen kan den hämtas un
 
 Mer information om hantering av tidszoner finns i [den här sidan](../building-journeys/timezone-management.md).
 
-### Burst-läge {#burst}
+### Hantera åtkomst {#access}
 
-Burst-läget är ett Journey Optimizer-tillägg som gör att det går att skicka mycket snabba push-meddelanden i stora volymer. Det används för enkla resor som innehåller en **Lässegment** och ett enkelt push-meddelande. Burst används när fördröjning i meddelandeleverans är affärskritisk när du vill skicka en snabb push-varning på mobiltelefoner, till exempel ett meddelande om nyheter till användare som har installerat din nyhetskanalapp.
+Klicka på **[!UICONTROL Manage access]** -knappen. [Läs mer om OLA (Object Level Access Control)](../administration/object-based-access.md)
 
-Burst-meddelanden innehåller följande krav:
-
-* Resan måste börja med en **Lässegment** aktivitet. Händelser tillåts inte.
-* Nästa steg måste vara ett push-meddelande. Ingen annan kanal, aktivitet eller steg tillåts.
-* Ingen personalisering tillåts i push-meddelandet.
-* Meddelandet måste vara litet (&lt;2kB).
-
->[!CAUTION]
->
->Om något av kraven inte är uppfyllt, är inte sprängningsläget tillgängligt under resan.
-
-Aktivera **Burst-läge**&#x200B;öppnar du resan och klickar på pennikonen längst upp till höger för att komma åt resans egenskaper. Aktivera sedan **Aktivera sprängningsläge** växla.
-
-![](assets/burst.png)
-
-Burst-läget inaktiveras automatiskt om du ändrar en burst-resa och lägger till en aktivitet som inte är kompatibel med burst-meddelanden, till exempel ett e-postmeddelande, andra åtgärder, en händelse osv.
-
-![](assets/burst2.png)
-
-Testa och publicera sedan din resa som vanligt. Observera att meddelanden inte skickas i sprängningsläge i testläge.
-
-I den här videon får du veta vilka användningsexempel som gäller för burst-meddelanden och hur du konfigurerar en resa för burst-meddelanden:
-
->[!VIDEO](https://video.tv.adobe.com/v/334523?quality=12)
+![](assets/journeys-manage-access.png)

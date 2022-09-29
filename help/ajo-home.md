@@ -7,20 +7,16 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: b5f779a67dd4f5a08981a0d16d1a902e78b775d6
+source-git-commit: 8ca0d2bbd01451de613d8ae985e10a711fcc6316
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 6%
+source-wordcount: '336'
+ht-degree: 8%
 
 ---
 
 # Adobe [!DNL Journey Optimizer] Dokumentation {#cjm-documentation}
 
 ![](using/assets/do-not-localize/banner-cjm.jpg)
-
->[!CAUTION]
->
->22 juli publicerade Adobe Journey Optimizer en [ny funktion](using/rn/inline-messages.md) vilket förbättrar det sätt på vilket du skapar innehåll för Journey Optimizer-kanaler (e-post, push, SMS). Som Journey Optimizer-läkare har du nu [skapa och skriva](using/messages/messages-in-journeys.md) meddelanden direkt från en resa. En automatisk omräkning av resor utförs åt dig. Vi behöver er hjälp med några steg. Läs mer på [obligatoriska steg](using/rn/inline-messages-steps.md).
 
 <table style="table-layout:fixed">
 <tr>

@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: 11596bfbe5f98e362224384d51ba32d61275bc1d
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1424'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Du kan också ta bort, duplicera och avpublicera en landningssida.
 
 >[!CAUTION]
 >
->Om du avpublicerar en landningssida som refereras i ett opublicerat meddelande bryts länken till landningssidan och en felsida visas.
+>Om du avpublicerar en landningssida som det refereras till i ett meddelande bryts länken till landningssidan och en felsida visas.
 
 Klicka på de tre punkterna bredvid en landningssida för att välja önskad åtgärd.
 
@@ -39,9 +39,16 @@ Klicka på de tre punkterna bredvid en landningssida för att välja önskad åt
 
 >[!NOTE]
 >
->Du kan inte ta bort en publicerad landningssida. Om du vill ta bort den måste du först avpublicera den.
+>Du kan inte ta bort en [publicerad](#publish-landing-page) landningssida. Om du vill ta bort den måste du först avpublicera den.
 
 ## Skapa en landningssida {#create-landing-page}
+
+>[!CONTEXTUALHELP]
+>id="ajo_lp_create"
+>title="Definiera och konfigurera landningssidan"
+>abstract="Om du vill skapa en landningssida måste du välja en förinställning, konfigurera den primära sidan och underordnade sidor och slutligen testa sidan innan du publicerar den."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/lp-configuration/lp-presets.html#lp-create-preset" text="Skapa förinställningar för landningssidor"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/create-lp.html#publish-landing-page" text="Publicera landningssidan"
 
 Stegen för att skapa en landningssida är följande.
 
@@ -52,6 +59,10 @@ Stegen för att skapa en landningssida är följande.
 1. Lägg till en titel. Du kan lägga till en beskrivning om det behövs.
 
    ![](assets/lp_create-lp-details.png)
+
+1. Om du vill tilldela etiketter för anpassad eller grundläggande dataanvändning till landningssidan väljer du **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md)
+
+   <!--You can add a tag. See AEP documentation?-->
 
 1. Välj en förinställning. Lär dig hur du skapar förinställningar för landningssidor i [det här avsnittet](../configuration/lp-presets.md#lp-create-preset).
 
@@ -70,6 +81,19 @@ Stegen för att skapa en landningssida är följande.
 När du har konfigurerat och utformat [primär sida](#configure-primary-page)och [undersidor](#configure-subpages) om det finns något, kan du [test](#test-landing-page) och [publicera](#publish-landing-page) din landningssida.
 
 ## Konfigurera den primära sidan {#configure-primary-page}
+
+>[!CONTEXTUALHELP]
+>id="ajo_lp_primary_page"
+>title="Ange inställningar för den primära sidan"
+>abstract="Den primära sidan visas omedelbart för användarna när de klickar på länken till din landningssida, till exempel från ett e-postmeddelande eller en webbplats."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/landing-pages-design/design-lp.html" text="Utforma innehållet på landningssidan"
+
+>[!CONTEXTUALHELP]
+>id="ajo_lp_access_settings"
+>title="Ange URL-adress för landningssida"
+>abstract="I det här avsnittet definierar du en unik URL för landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan som en del av den förinställning du valde."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/lp-configuration/lp-subdomains.html" text="Konfigurera underdomäner för landningssidor"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/lp-configuration/lp-presets.html#lp-create-preset" text="Skapa förinställningar för landningssidor"
 
 Den primära sidan är den sida som visas omedelbart för användarna efter att de har klickat på länken till din landningssida, till exempel från ett e-postmeddelande eller en webbplats.
 
@@ -111,7 +135,9 @@ Följ stegen nedan för att definiera inställningarna för den primära sidan.
 
    ![](assets/lp_expiry-date.png)
 
-   <!--1. In the **[!UICONTROL Additional data]** section, define a **[!UICONTROL Key]** and the corresponding **[!UICONTROL Parameter value]**. // you can define how the data entered in the landing page is managed once it has been submitted by a user??-->
+1. I **[!UICONTROL Additional data]** definierar du en eller flera nycklar och deras motsvarande parametervärden. Du kan använda dessa tangenter i innehållet på din primära sida och dina underordnade sidor med [Uttrycksredigerare](../personalization/personalization-build-expressions.md). Läs mer i [det här avsnittet](lp-content.md#use-form-component#use-additional-data).
+
+   ![](assets/lp_create-lp-additional-data.png)
 
 1. Om du valde en eller flera prenumerationer visas [utforma den primära sidan](design-lp.md)visas de i **[!UICONTROL Subscription list]** -avsnitt.
 
@@ -124,6 +150,19 @@ Följ stegen nedan för att definiera inställningarna för den primära sidan.
    Klicka **[!UICONTROL Create journey]** omdirigeras till **[!UICONTROL Journey Management]** > **[!UICONTROL Journeys]** lista.
 
 ## Konfigurera undersidor {#configure-subpages}
+
+>[!CONTEXTUALHELP]
+>id="ajo_lp_subpage"
+>title="Definiera inställningar för undersidan"
+>abstract="Du kan lägga till upp till två undersidor. Du kan till exempel skapa en&quot;tack&quot;-sida som visas när användarna skickar in formuläret, och du kan definiera en felsida som anropas om ett problem uppstår med landningssidan."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/landing-pages-design/design-lp.html" text="Utforma innehållet på landningssidan"
+
+>[!CONTEXTUALHELP]
+>id="ajo_lp_access_settings-subpage"
+>title="Ange URL-adress för landningssida"
+>abstract="I det här avsnittet definierar du en unik URL för landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan som en del av den förinställning du valde."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/lp-configuration/lp-subdomains.html" text="Konfigurera underdomäner för landningssidor"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/lp-configuration/lp-presets.html#lp-create-preset" text="Skapa förinställningar för landningssidor"
 
 Du kan lägga till upp till två undersidor. Du kan till exempel skapa en&quot;tack&quot;-sida som visas när användarna skickar in formuläret, och du kan definiera en felsida som anropas om ett problem uppstår med landningssidan.
 
