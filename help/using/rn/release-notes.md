@@ -2,9 +2,9 @@
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 056ff0d4532126e22884d73e92fb2e7d3a2319b9
+source-git-commit: ad04aeddac78a6910258d924148fceca8fd7b6d9
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '986'
 ht-degree: 9%
 
 ---
@@ -176,9 +176,10 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 
 * När du aktiverar eller inaktiverar tillåtelselista visas nu en ny varning som detaljerar effekterna av varje åtgärd. [Läs mer](../configuration/allow-list.md#enable-allow-list)
 * Användargränssnittet för att skapa kanalytor, skapa IP-pooler, hantera suppressionslistan och tillåtelselista samt konfigurera SMS-kanalen har uppdaterats.
-<!--* Now when creating the first channel surface for a given subdomain, the processing time will take 10 minutes to 10 days, and only up to 3 hours for subsequent surfaces using that subdomain. Learn more
-* Now when downloading the suppression list as a CSV file, you can choose the file that was previously generated, or generate a new file.
-* The user interface for creating landing page presets and landing page subdomains has been improved. Learn more -->
+* När du nu skapar den första kanalytan för en viss underdomän tar bearbetningstiden 10 minuter till 10 dagar och bara upp till 3 timmar för efterföljande ytor som använder den underdomänen. [Läs mer](../configuration/channel-surfaces.md#create-channel-surface)
+
+<!--* Now when downloading the suppression list as a CSV file, you can choose the file that was previously generated, or generate a new file.-->
+* Användargränssnittet för att skapa förinställningar för landningssidor och underdomäner för landningssidor har uppdaterats. [Läs mer](../configuration/lp-subdomains.md)
 
 **Granskningskontroller**
 
@@ -192,7 +193,7 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 
 * Nu kan du använda kontextuella data från en annan sida på samma landningssida. Om du t.ex. länkar en kryssruta till en prenumerationslista på den primära landningssidan kan du använda den prenumerationslistan på undersidan&quot;Tack&quot;. [Läs mer](../landing-pages/lp-content.md#use-primary-page-context)
 
-* När du konfigurerar den primära sidan kan du nu skapa ytterligare data som gör det möjligt att lagra information när landningssidan skickas. [Läs mer](../landing-pages/lp-content.md#use-additional-data)
+<!--* When configuring the primary page, you can now create additional data to enable storing information when the landing page is being submitted. [Learn more](../landing-pages/lp-content.md#use-additional-data)-->
 
 <!--* You can now use information that was submitted on a landing page to send communications to your customers. For example, if a user subscribes to a given subscription list, you can leverage that information to send an email recommending other subscription lists to that user.-->
 

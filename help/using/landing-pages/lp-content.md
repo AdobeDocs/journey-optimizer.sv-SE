@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 5bf023b4-4218-4110-b171-3e70e0507fca
-source-git-commit: 75f29dacf54d29172039ac0a098ecafe467ad35d
+source-git-commit: ad04aeddac78a6910258d924148fceca8fd7b6d9
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '939'
 ht-degree: 2%
 
 ---
@@ -166,41 +166,42 @@ När användaren markerar en av kryssrutorna visas meddelandet som motsvarar den
 >
 >Om en användare markerar de två kryssrutorna visas båda texterna.
 
+<!--
+## Use landing page additional data {#use-additional-data}
 
-## Använd ytterligare data på landningssidan {#use-additional-data}
-
-När [konfigurera den primära sidan](create-lp.md#configure-primary-page)kan du skapa ytterligare data för att kunna lagra information när landningssidan skickas.
+When [configuring the primary page](create-lp.md#configure-primary-page), you can create additional data to enable storing information when the landing page is being submitted.
 
 >[!NOTE]
 >
->Dessa data kanske inte är synliga för användare som besöker sidan.
+>This data may not be visible to users who visit the page.
 
-Om du definierade en eller flera tangenter med deras motsvarande värden när [konfigurera den primära sidan](create-lp.md#configure-primary-page)kan du använda dessa tangenter i innehållet på din primära sida och dina underordnade sidor med [Uttrycksredigerare](../personalization/personalization-build-expressions.md).
+If you defined one or more keys with their corresponding values when [configuring the primary page](create-lp.md#configure-primary-page), you can leverage these keys in the content of your primary page and subpages using the [Expression editor](../personalization/personalization-build-expressions.md).
 
-<!--When you reuse the same text on a page, this enables you to dynamically change that text if needed, without going through each occurrence.
+///When you reuse the same text on a page, this enables you to dynamically change that text if needed, without going through each occurrence.
 
-For example, if you define the company name as a key, you can quickly update it everywhere (on all the pages of a given landing page) by changing it only once in the [primary page settings](create-lp.md#configure-primary-page).-->
+For example, if you define the company name as a key, you can quickly update it everywhere (on all the pages of a given landing page) by changing it only once in the [primary page settings](create-lp.md#configure-primary-page).///
 
-Följ stegen nedan för att använda dessa tangenter på en landningssida:
+To leverage these keys in a landing page, follow the steps below:
 
-1. När du konfigurerar den primära sidan definierar du en nyckel och dess motsvarande värde i **[!UICONTROL Additional data]** -avsnitt. [Läs mer](create-lp.md#configure-primary-page)
+1. When configuring the primary page, define a key and its corresponding value in the **[!UICONTROL Additional data]** section. [Learn more](create-lp.md#configure-primary-page)
 
-   ![](assets/lp_create-lp-additional-data.png)
+    ![](assets/lp_create-lp-additional-data.png)
 
-1. När du redigerar den primära sidan med designern placerar du pekaren på musen där du vill infoga tangenten och väljer **[!UICONTROL Add personalization]** i kontextverktygsfältet.
+1. When editing your primary page with the designer, place the pointer of your mouse where you want to insert your key and select **[!UICONTROL Add personalization]** from the contextual toolbar.
 
-   ![](assets/lp_designer-context-add-perso.png)
+    ![](assets/lp_designer-context-add-perso.png)
 
-1. I **[!UICONTROL Edit Personalization]** fönster, markera **[!UICONTROL Contextual attributes]** > **[!UICONTROL Landing Pages]** > **[!UICONTROL Additional Context]**.
+1. In the **[!UICONTROL Edit Personalization]** window, select **[!UICONTROL Contextual attributes]** > **[!UICONTROL Landing Pages]** > **[!UICONTROL Additional Context]**.
 
-   ![](assets/lp_designer-contextual-attributes.png)
+    ![](assets/lp_designer-contextual-attributes.png)
 
-1. Alla nycklar som du skapade när du konfigurerade den primära sidan visas. Välj önskad tangent med ikonen +.
+1. All the keys that you created when configuring the primary page are listed. Select the key of your choice using the + icon.
 
-   ![](assets/lp_designer-context-select-key.png)
+    ![](assets/lp_designer-context-select-key.png)
 
-1. Spara ändringarna och upprepa stegen ovan så många gånger som behövs.
+1. Save your changes and repeat the steps above as many times as needed.
 
-   ![](assets/lp_designer-context-keys-inserted.png)
+    ![](assets/lp_designer-context-keys-inserted.png)
 
-   Du kan se att det anpassningsobjekt som motsvarar din nyckel nu visas överallt där du har infogat den.
+    You can see that the personalization item corresponding to your key is now displayed everywhere you inserted it.
+-->
