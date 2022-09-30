@@ -2,9 +2,9 @@
 title: Utlösa kampanjer med API:er
 description: Lär dig hur du aktiverar kampanjer med [!DNL Journey Optimizer] API:er
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: 9fbfeef292e4b71396680573007e062b525b24c9
+source-git-commit: 845a8324d96d8891bf1edf64a0962d23976bb29e
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '784'
 ht-degree: 0%
 
 ---
@@ -88,11 +88,15 @@ Observera att om du har konfigurerat ett specifikt start- och/eller slutdatum n�
 
 ## Skapa profiler vid kampanjkörning {#profile-creation}
 
-I vissa fall kan du behöva skicka transaktionsmeddelanden till profiler som inte finns i systemet. Om en okänd användare till exempel försöker logga in på webbplatsen.
+I vissa fall kan du behöva skicka transaktionsmeddelanden till profiler som inte finns i systemet. Om en okänd användare till exempel försöker återställa lösenordet på webbplatsen.
 
 När det inte finns någon profil i databasen kan du i Journey Optimizer automatiskt skapa den när kampanjen körs för att tillåta att meddelandet skickas till den här profilen.
 
-Om du vill göra det växlar du **[!UCONTROL Skapa nya profiler]** på i **[!UICONTROL Audience]** -avsnitt.
+>[!IMPORTANT]
+>
+>Den här funktionen finns för **mycket små volymprofiler** i en stor volym transaktionsbaserad sändningsanvändning, med en stor del av de profiler som redan finns på plattformen.
+
+Om du vill aktivera skapande av profiler vid kampanjkörning växlar du **[!UCONTROL Skapa nya profiler]** på i **[!UICONTROL Audience]** -avsnitt.
 
 ![](assets/api-triggered-create-profile.png)
 

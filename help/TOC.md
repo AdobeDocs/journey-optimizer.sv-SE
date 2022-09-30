@@ -5,10 +5,10 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: d6ff34a36abcf2b2233079aeddb5a5f0919f2590
+source-git-commit: 845a8324d96d8891bf1edf64a0962d23976bb29e
 workflow-type: tm+mt
-source-wordcount: '1153'
-ht-degree: 38%
+source-wordcount: '1158'
+ht-degree: 37%
 
 ---
 
@@ -270,6 +270,7 @@ ht-degree: 38%
       + [Kom igång med leverans](using/reports/deliverability.md)
       + [Förstå listan över inaktiveringar](using/reports/suppression-list.md)
    + [Larm](using/reports/alerts.md)
+   + [Arbeta med Customer Journey Analytics](using/reports/cja-ajo.md)
 + Beslutsledning {#offer-decisioning}
    + Kom igång med beslutshantering {#get-started-decision}
       + [Om beslutshantering](using/offers/get-started/starting-offer-decisioning.md)

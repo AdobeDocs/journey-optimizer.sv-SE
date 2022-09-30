@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 70ab8f57-c132-4de1-847b-11f0ab14f422
-source-git-commit: 50f6b965b50b1ffe4dab9102657d43888cb6d5ea
+source-git-commit: 845a8324d96d8891bf1edf64a0962d23976bb29e
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '992'
 ht-degree: 2%
 
 ---
@@ -55,7 +55,7 @@ Följ stegen nedan för att aktivera tillåtelselista.
 
 1. Gå till **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL Allow list]**-menyn.
 
-1. Klicka på **[!UICONTROL Deactivated]**.
+1. Markera växlingsknappen.
 
    ![](assets/allow-list-edit.png)
 
@@ -79,7 +79,7 @@ Följ stegen nedan för att inaktivera tillåtelselista.
 
 1. Gå till **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL Allow list]**-menyn.
 
-1. Klicka på **[!UICONTROL Active]**.
+1. Markera växlingsknappen.
 
    ![](assets/allow-list-edit-active.png)
 

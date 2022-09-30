@@ -6,9 +6,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: bb90f582b9767b1aaeb5d86b0e68f500871fab3a
+source-git-commit: 845a8324d96d8891bf1edf64a0962d23976bb29e
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Så här skapar du en kanalyta:
    Under det här steget kommer flera kontroller att utföras för att verifiera att den har konfigurerats korrekt. <!--The processing time is around **48h-72h**, and can take up to **7-10 business days**.-->
 
    >[!NOTE]
-   >När du skapar den första kanalytan för en viss underdomän kan bearbetningstiden ta **10 minuter till 10 dagar**. Om den valda underdomänen redan används på en annan yta tar det bara upp till 3 timmar.
+   >När du skapar den första e-postytan för en viss underdomän kan bearbetningstiden ta **10 minuter till 10 dagar**. Om den valda underdomänen redan används i en annan e-postyta tar det bara upp till 3 timmar.
 
    Dessa kontroller omfattar konfigurations- och tekniska tester som utförs av Adobe-teamet:
 
