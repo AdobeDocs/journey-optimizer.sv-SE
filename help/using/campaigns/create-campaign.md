@@ -5,7 +5,7 @@ feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 0167ce16198acc485da687a4a05c13fae85d088d
+source-git-commit: bb1a9b35ce93f9b0ba635a89e781856f19b7d655
 workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 2%
@@ -114,7 +114,7 @@ Snabb leverans, som tidigare kallades Burst-läge under resor, är ett [!DNL Jou
 
 Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp.
 
-Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journye Optimizer - produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html).
+Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html).
 
 
 ### Förutsättningar {#prerequisites}
