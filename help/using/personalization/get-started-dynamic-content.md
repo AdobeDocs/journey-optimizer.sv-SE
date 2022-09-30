@@ -5,12 +5,10 @@ feature: Personalization
 topic: Personalization
 role: Data Engineer
 level: Intermediate
-hidefromtoc: true
-hide: true
-source-git-commit: 0fbcdbbf547f24ef78f810e34ba14c78956c760c
+source-git-commit: 9593ea40853221e0eec45f30f7635d8a116b03c1
 workflow-type: tm+mt
-source-wordcount: '43'
-ht-degree: 2%
+source-wordcount: '104'
+ht-degree: 0%
 
 ---
 
@@ -18,6 +16,15 @@ ht-degree: 2%
 # Kom igång med dynamiskt innehåll {#start-dynamic-content}
 
 >[!CONTEXTUALHELP]
->id="ajo_expression_editor_conditions"
+>id="ajo_conditions_list"
 >title="Villkor"
->abstract="Villkoren är uppsättningar regler som definierar vilket innehåll som ska visas i dina meddelanden, beroende på olika kriterier som profilens attribut, segmentmedlemskap eller sammanhangsbaserade händelser."
+>abstract="Med villkorliga regler kan du visa flera innehållsvarianter i meddelanden baserat på profilattribut, sammanhangsbaserade händelser eller målgruppssegment."
+
+Med dynamiskt innehåll kan ni anpassa innehållet i era meddelanden baserat på villkorliga regler som kan bestå av profilattribut, sammanhangsbaserade händelser eller målgruppssegment.
+
+Villkorliga regler skapas med en visuell regelbyggare i uttrycksredigeraren, där du kan lagra dem för ytterligare återanvändning under resor och kampanjer.
+
+![](assets/conditions-overview.png)
+
+* [Lär dig hur du arbetar med villkorliga regler](create-conditions.md)
+* [Lär dig hur du skapar dynamiskt innehåll](dynamic-content.md)

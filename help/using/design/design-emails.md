@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e4f91870-f06a-4cd3-98b7-4c413233e310
-source-git-commit: b5f779a67dd4f5a08981a0d16d1a902e78b775d6
+source-git-commit: 9593ea40853221e0eec45f30f7635d8a116b03c1
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 5%
+source-wordcount: '253'
+ht-degree: 4%
 
 ---
 
@@ -23,7 +23,7 @@ Du kan importera ett befintligt innehåll i [!DNL Journey Optimizer] eller utnyt
 
 * Sök **Adobe Stock foton** för att skapa innehåll och förbättra e-postdesignen. [Läs mer](../design/stock.md)
 
-* Förbättra kundernas upplevelse genom att skapa personaliserade meddelanden baserat på deras profilattribut. [Läs mer](../personalization/personalize.md)
+* Förbättra kundernas upplevelse genom att skapa personaliserade och dynamiska meddelanden utifrån deras profilattribut. Läs mer om [personalisering](../personalization/personalize.md) och [dynamiskt innehåll](../personalization/get-started-dynamic-content.md).
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 

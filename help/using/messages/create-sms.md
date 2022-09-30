@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 711fdf1dce0688d2e21d405a4e3e8777612b2f3b
+source-git-commit: 9593ea40853221e0eec45f30f7635d8a116b03c1
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '462'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Så här börjar du personalisera SMS-meddelandet:
 
    ![](assets/sms-content.png)
 
-1. Använd uttrycksredigeraren för att definiera innehåll. Du kan använda alla attribut för att anpassa innehåll, till exempel profilnamnet eller staden. Läs mer om personalisering i uttrycksredigeraren i [det här avsnittet](../personalization/personalize.md).
+1. Använd uttrycksredigeraren för att definiera innehåll och lägga till dynamiskt innehåll. Du kan använda alla attribut, till exempel profilnamnet eller stad. Läs mer om [personalisering](../personalization/personalize.md) och [dynamiskt innehåll](../personalization/get-started-dynamic-content.md) i uttrycksredigeraren.
 
 1. Klicka **[!UICONTROL Save]** och kontrollera meddelandet i förhandsgranskningen.
 

@@ -3,9 +3,9 @@ title: Journey Optimizer Get started for Marketers
 description: Lär dig mer om hur du arbetar med Journey Optimizer som resande
 level: Intermediate
 exl-id: 34304142-3ee8-4081-94b9-e914968c75ba
-source-git-commit: 63e250919cac5f7a3c010805d3333d204a6f99dc
+source-git-commit: 9593ea40853221e0eec45f30f7635d8a116b03c1
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Se följande avsnitt för att konfigurera din första resa, lägga till erbjudan
 
 1. **Skapa segment**. Med Journey Optimizer kan ni skapa målgruppssegment direkt från **Segment** och utnyttja dem på era resor.  Läs mer om segment [på den här sidan](../../segment/about-segments.md). Upptäck hur man bygger segment [i det här exemplet](../../segment/creating-a-segment.md).
 
-1. **Lägg till personalisering**. Utnyttja Journey Optimizer personaliseringsmöjligheter för att anpassa budskapet till era målgrupper. Läs mer om personalisering [i det här avsnittet](../../personalization/personalize.md).
+1. **Lägg in personalisering och dynamiskt innehåll**. Utnyttja Journey Optimizer personalisering och dynamiska innehållsfunktioner för att anpassa budskapet till er målgrupp. Läs mer om [personalisering](../../personalization/personalize.md) och [dynamiskt innehåll](../../personalization/get-started-dynamic-content.md).
 
    ![](../assets/perso_ee2.png)
 

@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
-source-git-commit: 711fdf1dce0688d2e21d405a4e3e8777612b2f3b
+source-git-commit: 9593ea40853221e0eec45f30f7635d8a116b03c1
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '302'
 ht-degree: 4%
 
 ---
@@ -41,6 +41,8 @@ Använd [!DNL Journey Optimizer] E-postdesigner till [designa din e-post från g
 [!DNL Journey Optimizer] innehåller en uppsättning [inbyggda mallar](../design/email-templates.md) för att hjälpa dig att komma igång. Alla e-postmeddelanden kan också sparas som mallar.
 
 Använd [!DNL Journey Optimizer] Uttrycksredigeraren för att anpassa dina meddelanden med profildata. Mer information om personalisering finns i [det här avsnittet](../personalization/personalize.md).
+
+Anpassa innehållet i era meddelanden till målprofilerna genom att utnyttja [!DNL Journey Optimizer] funktioner för dynamiskt innehåll. [Kom igång med dynamiskt innehåll](../personalization/get-started-dynamic-content.md)
 
 ## E-postspårning{#email-tracking}
 

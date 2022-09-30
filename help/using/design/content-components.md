@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: a4aaa814-3fd4-439e-8f34-faf97208378a
-source-git-commit: 030dc5f3a5d1927076c87aa600097a3b5761e803
+source-git-commit: 9593ea40853221e0eec45f30f7635d8a116b03c1
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 1%
+source-wordcount: '1106'
+ht-degree: 0%
 
 ---
 
@@ -89,8 +89,7 @@ Använd **[!UICONTROL Text]** om du vill infoga text i e-postmeddelandet. Du kan
    * **[!UICONTROL Duplicate]**: lägga till en kopia av textkomponenten.
    * **[!UICONTROL Delete]**: ta bort den markerade textkomponenten från e-postmeddelandet.
    * **[!UICONTROL Add personalization]**: lägga till anpassningsfält för att anpassa innehållet utifrån dina profildata. [Läs mer om innehållspersonalisering](../personalization/personalize.md).
-
-1. För en bättre användarupplevelse kan ni lägga till anpassningsfält för att rikta in er målgrupp. Mer information om detta hittar du i det här [avsnittet](../personalization/personalize.md).
+   * **[!UICONTROL Enable conditional content]**: lägga till villkorsstyrt innehåll för att anpassa komponentens innehåll till målprofilerna. [Läs mer om dynamiskt innehåll](../personalization/get-started-dynamic-content.md).
 
 1. Justera **[!UICONTROL Text color]**, **[!UICONTROL Font family]** och **[!UICONTROL Size]** i **[!UICONTROL Components Settings]**.
 
@@ -208,7 +207,7 @@ Använd **[!UICONTROL Social]** om du vill infoga länkar till sidor för social
 
 ## Erbjudandebeslut {#offer-decision}
 
-Använd **[!UICONTROL Offer decision]** för att infoga beslut i meddelanden. Besluten kommer att dra nytta av Beslutshantering för att välja det bästa erbjudandet att leverera till era kunder.
+Använd **[!UICONTROL Offer decision]** för att infoga beslut (som tidigare kallats erbjudandeaktiviteter) i dina meddelanden. Besluten kommer att dra nytta av Beslutshantering för att välja det bästa erbjudandet att leverera till era kunder.
 
 Relaterade ämnen:
 
