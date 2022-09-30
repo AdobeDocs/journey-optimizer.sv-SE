@@ -2,13 +2,13 @@
 title: Arbeta med Customer Journey Analytics
 description: Kom igång med Customer Journey Analytics
 feature: Overview
-topic: Content Management
-role: Reporting
+topic: Reporting
+role: User
 level: Beginner
-source-git-commit: 845a8324d96d8891bf1edf64a0962d23976bb29e
+source-git-commit: b7bda87c3e2d6e1841ca231aa4acc3a406655244
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
