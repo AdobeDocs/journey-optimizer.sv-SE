@@ -5,9 +5,9 @@ feature: Personalization
 topic: Personalization
 role: Data Engineer
 level: Intermediate
-source-git-commit: 9593ea40853221e0eec45f30f7635d8a116b03c1
+source-git-commit: 3205b992a1dd6774d3ef89533d9ae6af9ff50ba3
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 0%
 >title="Villkor"
 >abstract="Med villkorliga regler kan du visa flera innehållsvarianter i meddelanden baserat på profilattribut, sammanhangsbaserade händelser eller målgruppssegment."
 
-Med dynamiskt innehåll kan ni anpassa innehållet i era meddelanden baserat på villkorliga regler som kan bestå av profilattribut, sammanhangsbaserade händelser eller målgruppssegment.
+Med dynamiskt innehåll kan ni anpassa innehållet i era meddelanden baserat på **villkorliga regler** som kan bestå av profilattribut, sammanhangsbaserade händelser eller målgruppssegment. Villkorliga regler skapas med en visuell regelbyggare i uttrycksredigeraren, där du kan lagra dem för ytterligare återanvändning under resor och kampanjer.
 
-Villkorliga regler skapas med en visuell regelbyggare i uttrycksredigeraren, där du kan lagra dem för ytterligare återanvändning under resor och kampanjer.
+Villkorliga regler kan användas i e-postdesignern och uttrycksredigeraren för att **skapa dynamiskt innehåll** som anpassar sig till de profiler som ni riktar er till.
 
 ![](assets/conditions-overview.png)
 
