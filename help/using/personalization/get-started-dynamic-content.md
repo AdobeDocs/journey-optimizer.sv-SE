@@ -5,9 +5,9 @@ feature: Personalization
 topic: Personalization
 role: Data Engineer
 level: Intermediate
-source-git-commit: 3205b992a1dd6774d3ef89533d9ae6af9ff50ba3
+source-git-commit: e98bde090129ad1c32662719911ec6a3e68f69d6
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -28,3 +28,9 @@ Villkorliga regler kan användas i e-postdesignern och uttrycksredigeraren för 
 
 * [Lär dig hur du arbetar med villkorliga regler](create-conditions.md)
 * [Lär dig hur du skapar dynamiskt innehåll](dynamic-content.md)
+
+## Instruktionsvideo {#video}
+
+Lär dig hur du skapar dynamiskt innehåll med villkorsregelbyggaren.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3409815?quality=12)
