@@ -7,9 +7,9 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: a51b41ddbb562137dc1f6cf15160ce326cc0564a
+source-git-commit: f439e4387139b3136c46d25ecb43f304e29b0f17
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ The **[!UICONTROL Exclude]** kan du utesluta profiler från din komposition. Det
 
    ![](assets/audiences-exclude-attribute.png)
 
-### Rankningsaktivitet a {#rank}
+### Rankningsaktivitet {#rank}
 
 >[!CONTEXTUALHELP]
 >id="ajo_ao_ranking"
