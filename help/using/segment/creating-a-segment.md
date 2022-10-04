@@ -6,14 +6,19 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 289aac5d-6cdb-411f-985e-3acef58050a8
-source-git-commit: d9f7c64358be3c3355337ba0db12e5b8c17bba4c
+source-git-commit: a51b41ddbb562137dc1f6cf15160ce326cc0564a
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 5%
+source-wordcount: '336'
+ht-degree: 4%
 
 ---
 
 # Skapa segment {#build-segments}
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_create_rule"
+>title="Skapa en regel"
+>abstract="Med metoden Skapa regel kan du skapa en ny segmentdefinition med Adobe Experience Platform segmenteringstjänst."
 
 I det här exemplet kommer vi att skapa ett segment för alla kunder som bor i Atlanta, San Francisco eller Seattle och som är födda efter 1980. Alla dessa kunder bör ha öppnat Luma-applikationen inom de senaste 7 dagarna och sedan köpt den inom 2 timmar efter att ansökan öppnats.
 
