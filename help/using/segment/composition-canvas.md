@@ -7,7 +7,7 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: e68a234e52b40fbf988b74dfa90b347659203ea0
+source-git-commit: b6f61a7a3ad1aaab90119c3a3a69254e55733271
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 0%
@@ -113,7 +113,7 @@ The **[!UICONTROL Exclude]** kan du utesluta profiler från din komposition. Det
 >[!CONTEXTUALHELP]
 >id="ajo_ao_rank_profilelimit_text"
 >title="Lägg till profilgräns"
->abstract="Aktivera det här alternativet om du vill ange ett maximalt antal profiler som ska ingå i kompositionen.
+>abstract="Aktivera det här alternativet om du vill ange ett maximalt antal profiler som ska ingå i kompositionen."
 
 The **[!UICONTROL Rank]** Med -aktivitet kan du rangordna profiler baserat på ett specifikt attribut och inkludera dem i din komposition. Du kan till exempel inkludera de 50 profilerna med det största antalet förmånspoäng.
 
