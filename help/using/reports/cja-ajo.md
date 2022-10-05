@@ -5,16 +5,17 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: bf4857f63b44d557304ef05e490fe6659f0ad888
+source-git-commit: ce0906afb8561c586cb080c4a49c58fb5bfac6a9
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Arbeta med [!DNL Customer Journey Analytics] {#cja-ajo}
 
 ![](assets/cja.png)
+[!DNL Journey Optimizer] integrering med [!DNL Customer Journey Analytics] ger en helhetsbild av alla era resor med automatiserad rapportdistribution och anpassade visualiseringar av data.
 
 När du har skapat din resa i [!DNL Journey Optimizer]kan du importera dina kunddata till [!DNL Customer Journey Analytics] för att ta fram rapporter och förstå effekten av varje interaktion en kund har med era resor.
 
@@ -23,6 +24,11 @@ När du har skapat din resa i [!DNL Journey Optimizer]kan du importera dina kund
 Innan du använder [!DNL Customer Journey Analytics] För dina resor måste du först konfigurera den här integreringen:
 
 1. [Skapa en anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html) in [!DNL Customer Journey Analytics] med **[!UICONTROL Dataset]** du vill skicka till plattformen.
+
+   Följande [!DNL Journey Optimizer] kan konfigureras:
+   * [Resestegshändelse](../start/datasets-query-examples.md#journey-step-event): låter er se vilka som deltar i era resor och hur långt de kommer.
+   * [Meddelandefeedback/spårningsdata](../start/datasets-query-examples.md#message-feedback-event-dataset): gör att du kan visa leveransinformation om meddelanden som skickas via [!DNL Journey Optimizer].
+   * [Enhetsdata och resedatamängder](../start/datasets-query-examples.md#entity-dataset): I kan du söka efter egna namn och använda dem i din rapportering.
 
 1. [Skapa en datavy](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html) för att konfigurera de dimensioner och mätvärden som du vill använda för rapporten.
 
