@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 9d9183a8114aff2d17fc65eddaf2a7a8424e3f95
+source-git-commit: d8537d27fab4472c64bd46b056cf221825051bfe
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1180'
 ht-degree: 37%
 
 ---
@@ -121,11 +121,12 @@ ht-degree: 37%
       + [Kom igång med profiler](using/segment/get-started-profiles.md)
       + [Skapa testprofiler](using/segment/creating-test-profiles.md)
    + [Identiteter](using/segment/get-started-identity.md)
+   + Disponera målgrupper {#audience-orchestration}
+      + [Kom igång med målgruppsmaterial](using/segment/get-started-audience-orchestration.md)
+      + [Skapa kompositionsarbetsflöden](using/segment/create-compositions.md)
+      + [Arbeta med arbetsytan](using/segment/composition-canvas.md)
+      + [Få åtkomst till och hantera målgrupper](using/segment/access-audiences.md)
    + [Licensanvändning](using/segment/license-usage.md)
-   + [Kom igång med målgruppsmaterial](using/segment/get-started-audience-orchestration.md)
-   + [Skapa kompositionsarbetsflöden](using/segment/create-compositions.md)
-   + [Arbeta med arbetsytan](using/segment/composition-canvas.md)
-   + [Få åtkomst till och hantera målgrupper](using/segment/access-audiences.md)
 + Resor {#orchestrate-journeys}
    + Om resor{#about-journeys}
       + [Allmän princip](using/building-journeys/journey.md)
