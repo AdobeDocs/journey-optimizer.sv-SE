@@ -4,7 +4,7 @@ description: Lär dig hur du aktiverar kampanjer med [!DNL Journey Optimizer] AP
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
 source-git-commit: 1fb9c759032211979d24daf8a885e82fc359060e
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
