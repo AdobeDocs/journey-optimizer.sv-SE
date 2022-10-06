@@ -5,10 +5,10 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: a36f0b1c8d59d49e38b21725621d5b276741bd8e
+source-git-commit: ed1ae405367a0b0f37e61ceb81fc1f1d1b907ea7
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,14 +25,14 @@ ht-degree: 1%
 >title="Kanalyta"
 >abstract="En kanalyta är en instans av den kanalen som har alla inställningar för att kunna leverera en åtgärd via en kampanj eller en resa. Den definieras av en systemadministratör."
 
-Använd kanalåtgärderna på era resor för att utforma och personalisera det budskap ni vill skicka till er målgrupp. När du lägger till ett e-postmeddelande, ett SMS-meddelande eller en push-åtgärd till resevagnen skapar du en utlöst sändning. När kontakterna kommer till den kanalåtgärden skickar Adobe Journey Optimizer automatiskt meddelandet.
+Använd kanalåtgärderna på era resor för att utforma och personalisera det budskap ni vill skicka till er målgrupp. När du lägger till ett e-postmeddelande, ett SMS-meddelande eller en push-åtgärd på arbetsytan skapas en utlöst sändning. När kontakterna kommer till den kanalåtgärden skickar Adobe Journey Optimizer automatiskt meddelandet.
 
 
 >[!NOTE]
 >Du kan också skapa kampanjer för att skicka schemalagda meddelanden. Läs mer [i det här avsnittet](../campaigns/get-started-with-campaigns.md).
 
 
-Om du vill lägga till meddelanden under en resa lägger du till en push-, SMS- eller e-postaktivitet i kundresan.
+Om du vill lägga till meddelanden under en resa lägger du till en push-, SMS- eller e-postaktivitet på arbetsytan för resan.
 
 1. Påbörja resan med en [Händelse](../building-journeys/general-events.md) eller en [Läs segment](../building-journeys/read-segment.md) aktivitet.
 
@@ -123,7 +123,7 @@ Gör så här:
 
 1. Retur **Ctrl+V** för att klistra in meddelandet.
 
-   Meddelandet läggs till i kundresan. Alla inställningar och konfigurationer kopieras till det nya meddelandet.
+   Meddelandet läggs till på arbetsytan för resan. Alla inställningar och konfigurationer kopieras till det nya meddelandet.
 
    ![](assets/message-duplicated.png)
 
