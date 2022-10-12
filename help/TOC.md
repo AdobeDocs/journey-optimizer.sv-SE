@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: d8537d27fab4472c64bd46b056cf221825051bfe
+source-git-commit: 1b81ed696d4b2b47ab9b736be695983f5e18d8ae
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1183'
 ht-degree: 37%
 
 ---
@@ -43,9 +43,10 @@ ht-degree: 37%
       + [Konfigurera experimentrapporter](using/campaigns/reporting-configuration.md)
    + [Utlösa kampanjer med API:er](using/campaigns/api-triggered-campaigns.md)
 + Meddelanden {#messages}
-   + [Kom igång med meddelanden](using/messages/get-started-content.md)
-   + [Lägg till meddelanderesor](using/messages/messages-in-journeys.md)
-   + [Lägg till meddelandekampanjer](using/messages/messages-in-campaigns.md)
+   + Kom igång med meddelanden{#get-started-msg}
+      + [Översikt](using/messages/get-started-content.md)
+      + [Lägg till meddelanden under resor](using/messages/messages-in-journeys.md)
+      + [Lägg till meddelanden i kampanjer](using/messages/messages-in-campaigns.md)
    + [Skapa ett e-postmeddelande](using/messages/create-email.md)
    + [Skapa ett push-meddelande](using/messages/create-push.md)
    + [Skapa ett SMS-meddelande](using/messages/create-sms.md)
