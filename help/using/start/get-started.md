@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 956178c0-9985-4ff8-a29e-17dd367ce4d4
-source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
+source-git-commit: 22672ba22713bcc354d5cc4acdba68995d47a685
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '703'
 ht-degree: 1%
 
 ---
@@ -53,9 +53,9 @@ Viktiga funktioner:
 
 ## Arkitektur {#architecture}
 
-Förstå den grundläggande arkitekturen i [!DNL Adobe Journey Optimizer], integreringspunkten och relationen mellan [!DNL Journey Optimizer] med andra Adobe-program.
+Förstå den grundläggande arkitekturen i [!DNL Adobe Journey Optimizer], integreringspunkten och relationen mellan [!DNL Journey Optimizer] och [!DNL Experience Platform]i diagrammet nedan.
 
->[!VIDEO](https://video.tv.adobe.com/v/334205?quality=12)
+![](assets/ajo-architecture.png)
 
 
 >[!NOTE]
