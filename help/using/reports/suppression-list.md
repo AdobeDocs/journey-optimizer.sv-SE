@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: a4653378-b70f-454c-a446-ab4a14d2580a
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: 32c69ef268c78ba834612d16b2ac1c721fb5df56
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 2%
@@ -47,7 +47,7 @@ Läs mer om hårda studsar och mjuka studsar i [det här avsnittet](#delivery-fa
 
 >[!NOTE]
 >
->Det går inte att skicka adresser för att avbryta prenumerationen till listan över inaktiveringar eftersom de inte får e-post från [!DNL Journey Optimizer]. Deras val hanteras på Experience Platform-nivå. Läs mer på [avanmäl](../messages/consent.md).
+>Det går inte att skicka adresser för att avbryta prenumerationen till listan över inaktiveringar eftersom de inte får e-post från [!DNL Journey Optimizer]. Deras val hanteras på Experience Platform-nivå. Läs mer på [avanmäl](../privacy/opt-out.md).
 
 För varje adress, den grundläggande orsaken till inaktiveringen och undertryckningskategorin (mjuk, hård, osv.) visas i listan. Läs mer om hur du använder och hanterar listan över inaktiveringar i [det här avsnittet](../configuration/manage-suppression-list.md).
 

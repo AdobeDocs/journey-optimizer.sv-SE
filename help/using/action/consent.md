@@ -1,20 +1,20 @@
 ---
 solution: Journey Optimizer
-title: Godkännande
-description: Godkännande
+title: Arbeta med policyer för samtycke
+description: Lär dig hur du arbetar med Adobe Experience Platform medgivandepolicyer
 feature: Actions
 topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 01ca4b3e-3778-4537-81e9-97ef92c9aa9e
-source-git-commit: 30171e362e0dc70f5647bb2413031946062e8df3
+source-git-commit: 32c69ef268c78ba834612d16b2ac1c721fb5df56
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
 
-# Medgivandehantering {#consent-management}
+# Arbeta med policyer för samtycke {#consent-management}
 
 Med Adobe Experience Platform kan ni enkelt införa och tillämpa marknadsföringspolicyer för att respektera kundernas samtycke. Samtyckesregler definieras i Adobe Experience Platform. Se [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=en#consent-policy).
 
