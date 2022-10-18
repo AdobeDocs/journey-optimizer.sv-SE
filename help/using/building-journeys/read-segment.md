@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: 9c0f604680787dbdf5fb820074408edad78f8bfb
+source-git-commit: 15dc5e2854358f7f200a54a3f06fa6e98f146efe
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1253'
 ht-degree: 3%
 
 ---
@@ -84,7 +84,9 @@ Så här konfigurerar du Läs segment-aktiviteten:
 
    ![](assets/read-segment-schedule-list.png)
 
-   **Inkrementell läsning** alternativ: när en resa med återkommande **Lässegment** körs för första gången så att alla profiler i segmentet kommer in på resan. Vid nästa tillfälle kommer alla profiler in på resan igen, även om de redan var inne. Den gamla instansen av profilen i resan stoppas och en ny instans skapas. The **Inkrementell läsning** kan ni efter den första förekomsten inrikta er på de personer som har gått in i segmentet sedan den senaste körningen av resan.
+   **Inkrementell läsning** alternativ: när en resa med återkommande **Lässegment** körs för första gången så att alla profiler i segmentet kommer in på resan. Med det här alternativet kan du efter den första förekomsten endast rikta in dig på de personer som har gått in i segmentet sedan den senaste körningen av resan.
+
+   **Tvinga återinträde vid upprepning**: Med det här alternativet kan du göra så att alla profiler fortfarande finns kvar på resan automatiskt avslutar den vid nästa körning. Om du till exempel har två dagar på dig att vänta på en daglig återkommande resa, genom att aktivera det här alternativet, kommer profiler alltid att flyttas på nästa körning (så dagen efter), oavsett om de är i nästa körda målgrupp eller inte. Om livscykeln för dina profiler under den här resan kan vara längre än frekvensen för återkommande aktiviteter ska du inte aktivera det här alternativet för att säkerställa att profilerna kan slutföra sin resa.
 
 <!--
 
@@ -108,8 +110,6 @@ To activate this mode, click the **Segment Filters** toggle. Two fields are disp
 >[!NOTE]
 >
 >Enbildsresor för Läs segment flyttas till statusen Slutförd 30 dagar efter körningen. För schemalagda läs-segment är det 30 dagar efter körningen av den sista förekomsten.
->
->Du måste vara försiktig när du använder vänteaktiviteter i återkommande lässegmentsresor när livslängden för sådana resor slutar vid nästa körning. Det innebär att om en resa körs dagligen varar den resa som påbörjades idag tills imorgon. Om du t.ex. lade till en 2-dagars väntan på den resan kommer profiler alltid att flyttas på nästa körning (så dagen efter), oavsett om de är i nästa körda målgrupp eller inte. Profiler kommer aldrig att kunna stanna på den resan i två dagar.
 
 ### Testa och publicera resan {#testing-publishing}
 

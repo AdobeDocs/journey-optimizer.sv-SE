@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 26ba8093-8b6d-4ba7-becf-b41c9a06e1e8
-source-git-commit: 3012d5492205e99f4d6c22d4cc07ddef696e6f1f
+source-git-commit: 15dc5e2854358f7f200a54a3f06fa6e98f146efe
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
@@ -311,7 +311,17 @@ Datauppsättning som lagrar enhetsmetadata för meddelanden som skickas till slu
 
 Det relaterade schemat är AJO-entitetsschema.
 
-Med den här datauppsättningen kan du utöka olika datauppsättningar med nyckelmarknadsföringsvänliga metadata. Attributet messageID hjälper dig att sammanfoga olika datauppsättningar, t.ex. datauppsättningar för meddelandefeedback och händelsespårning, för att få information om en meddelandeleverans från sändning till spårning på profilnivå.
+Den här datauppsättningen ger er tillgång till marknadsföringsdefinierade metadata som gör att ni får bättre rapportinsikter när Journey Optimizer datauppsättningar exporteras ut för att rapportera visualisering i externa verktyg. Detta uppnås med messageID-attributet som hjälper till att sammanfoga olika datauppsättningar, t.ex. datauppsättningar för meddelandefeedback och datauppsättningar för uppföljning av upplevelsehändelser, för att få information om en meddelandeleverans från sändning till spårning på profilnivå.
+
+**Viktiga anteckningar**
+
+* En post för ett meddelande skapas först när resan eller kampanjen har publicerats.
+
+* Du kan se bidraget 30 minuter efter att kampanjen/resan har publicerats.
+
+>[!NOTE]
+>
+>För närvarande finns det två poster för varje meddelandepublikation i entitetsdatauppsättningen för framtida kompatibilitetsorsaker. Detta påverkar inte din möjlighet att använda kopplingsfrågor efter behov i datauppsättningar för att hämta önskad information.
 
 Följande fråga hjälper dig att hämta den associerade meddelandemallen för en viss kampanj:
 

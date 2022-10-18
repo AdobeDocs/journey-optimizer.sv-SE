@@ -2,9 +2,9 @@
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 32c69ef268c78ba834612d16b2ac1c721fb5df56
+source-git-commit: 15dc5e2854358f7f200a54a3f06fa6e98f146efe
 workflow-type: tm+mt
-source-wordcount: '2018'
+source-wordcount: '2003'
 ht-degree: 19%
 
 ---
@@ -53,7 +53,6 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 ## Juni 2022 {#june-2022}
 
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version från 22 juni finns utförlig i dokumentationen. [Läs mer](release-notes.md)
-* Ett nytt avsnitt om dataanvändningsprinciper har lagts till i dokumentationen. [Läs mer](../privacy/policies.md)
 * Ett nytt avsnitt om sekretessförfrågningar har lagts till i dokumentationen. [Läs mer](../privacy/requests.md)
 * Ett nytt avsnitt om granskningsloggar på resurser har lagts till i dokumentationen. [Läs mer](../privacy/audit-logs.md)
 * Ett nytt avsnitt om hur du lägger till HTML eller JSON-innehåll som kommer från Adobe Experience Cloud Asset-biblioteket i en offertrepresentation har lagts till i dokumentationen. [Läs mer](../offers/offer-library/add-representations.md#html-json)

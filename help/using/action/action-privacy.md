@@ -6,9 +6,9 @@ feature: Actions
 topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: f2f55f42739509c50223d01e25fb1f16bf19a0de
+source-git-commit: 15dc5e2854358f7f200a54a3f06fa6e98f146efe
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '922'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,12 @@ Med styrningsramverket DULE (Data Usage Labeling and Enforcement) kan Journey Op
 Med Adobe Experience Platform kan ni sätta etiketter på era fält och skapa marknadsföringsåtgärder för varje kanal. Sedan definierar ni en styrningspolicy som är kopplad till en etikett och en marknadsföringsåtgärd.
 
 I Journey Optimizer kan du tillämpa dessa profiler på dina anpassade åtgärder för att förhindra att specifika fält exporteras till tredjepartssystem.
+
+Mer information om ramverket för datastyrning och hur du arbetar med etiketter och policyer finns i Adobe Experience Platform-dokumentationen:
+
+* [Översikt över tjänsten Datastyrning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html)
+* [Översikt över etiketter för dataanvändning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/overview.html?lang=en)
+* [Dataanvändningspolicyer](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html)
 
 ## Viktiga anteckningar {#important-notes}
 
