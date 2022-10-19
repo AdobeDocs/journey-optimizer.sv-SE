@@ -1,11 +1,14 @@
 ---
+solution: Journey Optimizer
+product: journey optimizer
 title: Lägga till ett sidhuvud i Journey Optimizer
 description: Lär dig hur du utformar e-postinnehåll
 feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+exl-id: 7ed52b2e-eabf-414f-b169-4b004733dea9
+source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%

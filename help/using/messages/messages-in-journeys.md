@@ -1,11 +1,13 @@
 ---
+solution: Journey Optimizer
+product: journey optimizer
 title: Lägg till meddelanden under resor
 description: Lär dig hur du lägger till meddelanden under en resa
 feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 32c69ef268c78ba834612d16b2ac1c721fb5df56
+source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 1%

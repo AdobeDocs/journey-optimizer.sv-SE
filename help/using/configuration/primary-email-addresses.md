@@ -1,12 +1,14 @@
 ---
-title: 'Ändra de primära e-postadresserna '
+solution: Journey Optimizer
+product: journey optimizer
+title: Ändra de primära e-postadresserna
 description: Lär dig hur du avgör vilken e-postadress som ska användas från profiltjänsten.
 feature: Application Settings
 topic: Administration
 role: Admin
 level: Intermediate
 exl-id: fe2f6516-7790-4501-a3a1-3d7cb94d7874
-source-git-commit: 5abcef4ff057bb351abaafbf4dcb99e1ab61c6a9
+source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 5%

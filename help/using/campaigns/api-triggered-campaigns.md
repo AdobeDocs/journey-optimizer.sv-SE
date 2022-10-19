@@ -1,10 +1,12 @@
 ---
+solution: Journey Optimizer
+product: journey optimizer
 title: Utlösa kampanjer med API:er
 description: Lär dig hur du aktiverar kampanjer med [!DNL Journey Optimizer] API:er
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: 1fb9c759032211979d24daf8a885e82fc359060e
+source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---

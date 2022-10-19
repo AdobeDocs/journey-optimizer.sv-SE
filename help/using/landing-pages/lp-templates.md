@@ -1,11 +1,14 @@
 ---
+solution: Journey Optimizer
+product: journey optimizer
 title: Arbeta med landningssidmallar
 description: Lär dig hur du sparar en landningssida som en mall och återanvänder den i Journey Optimizer
 feature: Landing Pages
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: f4b3a9de47e724f7b23df8a02b8106c131cf1b12
+exl-id: 393b36ad-0a37-46d9-b455-ae6684e0acbd
+source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 5%

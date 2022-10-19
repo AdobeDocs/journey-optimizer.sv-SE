@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer
+product: journey optimizer
 title: Ytterligare steg för att skicka händelser till en resa
 description: Lär dig ytterligare steg för att skicka händelser till en resa
 feature: Events
@@ -6,7 +8,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: e0144151-6c54-4656-9650-b544d8e7be16
-source-git-commit: 03a5741e4f79f6a551eed64364e3a9d36e6473dc
+source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 4%

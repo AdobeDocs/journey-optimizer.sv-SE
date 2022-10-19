@@ -1,7 +1,9 @@
 ---
+solution: Journey Optimizer
+product: journey optimizer
 title: Starta körning av resa
 description: Lär dig hur du påbörjar din resa och skickar meddelanden
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 3%

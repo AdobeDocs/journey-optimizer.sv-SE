@@ -1,17 +1,19 @@
 ---
+solution: Journey Optimizer
+product: journey optimizer
 title: Definiera ett format för länkar
 description: Lär dig hur du definierar ett format för länkar
 feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+exl-id: d5e148a8-a6d9-4e17-9cf0-46ff3c14871c
+source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 2%
 
 ---
-
 
 # Definiera ett format för länkar {#styling-links}
 

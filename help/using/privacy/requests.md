@@ -1,10 +1,13 @@
 ---
+solution: Journey Optimizer
+product: journey optimizer
 title: Förfrågningar om användarens information
 description: Läs mer om sekretess och Privacy Service.
 feature: Monitoring
 role: User
 level: Intermediate
-source-git-commit: b800a4a1b87e5e0ea23985dce4d12c60045b1eab
+exl-id: 19ec3410-761e-4a9c-a277-f105fc446d7a
+source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 3%

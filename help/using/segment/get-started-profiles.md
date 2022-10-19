@@ -1,11 +1,13 @@
 ---
+solution: Journey Optimizer
+product: journey optimizer
 title: Kom igång med profiler i Journey Optimizer
 description: Lär dig hur du skapar och hanterar profiler i Adobe Journey Optimizer
 feature: Profiles
 role: User
 level: Beginner
 exl-id: be3936e4-8185-4031-9daf-95eea58077d0
-source-git-commit: 7d628ecd7c54455847c2cfb48bf59ff3f602c51f
+source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 5%

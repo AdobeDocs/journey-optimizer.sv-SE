@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer
+product: journey optimizer
 title: Publicera och ändra ett meddelande
 description: Lär dig hur du publicerar och uppdaterar meddelanden
 feature: Journeys
@@ -8,7 +10,7 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 116e2223-a806-4f68-9a8c-c0bde6008010
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 2%

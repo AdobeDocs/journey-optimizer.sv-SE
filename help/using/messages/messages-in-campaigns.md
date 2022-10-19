@@ -1,11 +1,13 @@
 ---
+solution: Journey Optimizer
+product: journey optimizer
 title: Lägg till meddelanden i kampanjer
 description: Lär dig hur du lägger till meddelanden i en kampanj
 feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: bd27e094ae437e6e0bffdb128f70d1e9f2d7de40
+source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 2%

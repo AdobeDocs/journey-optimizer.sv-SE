@@ -1,14 +1,16 @@
 ---
+solution: Journey Optimizer
+product: journey optimizer
 title: Arkiveringsstöd i Journey Optimizer
-description: Lär dig hur du konfigurerar BCC-e-post på kanalytnivå
+description: Lär dig arkivera meddelanden
 feature: Application Settings
 topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 186a5044-80d5-4633-a7a7-133e155c5e9f
-source-git-commit: 38b8b0634ac0b1e59d848a5a661e3905abaec358
+source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1257'
 ht-degree: 1%
 
 ---

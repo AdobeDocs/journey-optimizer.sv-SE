@@ -2,12 +2,10 @@
 keywords: Journey Optimizer;home;populära topics
 title: Journey Optimizer produktdokumentation
 description: Adobe Journey Optimizer produkthjälpcenter
-feature: Overview
-topic: Content Management
-role: User
-level: Beginner
+solution: Journey Optimizer
+product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: 8ca0d2bbd01451de613d8ae985e10a711fcc6316
+source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 8%

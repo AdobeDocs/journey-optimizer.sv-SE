@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer
+product: journey optimizer
 title: Inbyggda produktprofiler
 description: Läs om de inbyggda produktprofilerna
 feature: Access Management
@@ -6,7 +8,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 5a968bd8-cf76-4242-aa80-3cfb3d551511
-source-git-commit: 8ca0d2bbd01451de613d8ae985e10a711fcc6316
+source-git-commit: d17e64e03d093a8a459caef2fb0197a5710dfb7d
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 7%

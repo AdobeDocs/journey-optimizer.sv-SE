@@ -1,11 +1,14 @@
 ---
+solution: Journey Optimizer
+product: journey optimizer
 title: Justera lodrät justering och utfyllnad i Journey Optimizer
 description: Lär dig justera lodrät justering och utfyllnad
 feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 40c42303b8013c1d9f4dd214ab1acbec2942e094
+exl-id: 1e1d90ff-df5d-4432-a63a-a32d0d281d48
+source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 3%

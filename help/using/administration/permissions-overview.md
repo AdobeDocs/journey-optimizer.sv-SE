@@ -1,15 +1,17 @@
 ---
+solution: Journey Optimizer
+product: journey optimizer
 title: Översikt över användarhantering
-description: Läs om behörighet
+description: Lär dig hur du definierar och hanterar behörigheter
 feature: Access Management
 topic: Administration
 role: Admin
 level: Intermediate
 exl-id: b8e266b1-d8eb-4c77-9341-9761b82609b0
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: d17e64e03d093a8a459caef2fb0197a5710dfb7d
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 12%
+source-wordcount: '193'
+ht-degree: 11%
 
 ---
 

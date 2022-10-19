@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer
+product: journey optimizer
 title: Konfigurera Journey Optimizer-rapportering för experimenterande
 description: Lär dig hur du ställer in rapportdatakälla
 feature: Data Sources
@@ -8,7 +10,7 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 327a0c45-0805-4f64-9bab-02d67276eff8
-source-git-commit: 16c156d715a6b39652191909ca88f90e7f971706
+source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 2%

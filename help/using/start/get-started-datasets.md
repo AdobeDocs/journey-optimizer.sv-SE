@@ -1,10 +1,12 @@
 ---
+solution: Journey Optimizer
+product: journey optimizer
 title: Kom igång med datauppsättningar
 description: Lär dig hur du använder Adobe Experience Platform-datauppsättningar i Adobe Journey Optimizer
 role: User
 level: Beginner
 exl-id: dcdd3c81-0f00-4259-a8a5-9062a4c40b6f
-source-git-commit: 4cf9a45ee9cc7169d060799de7d1ea128caa140f
+source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 1%
