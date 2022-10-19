@@ -1,14 +1,15 @@
 ---
-product: adobe campaign
+solution: Journey Optimizer
+product: journey optimizer
 title: Fältreferenser
 description: Lär dig mer om fältreferenser i avancerade uttryck
 feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: 2348646a-b205-4b50-a08f-6625e92f44d7
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: d17e64e03d093a8a459caef2fb0197a5710dfb7d
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '553'
 ht-degree: 3%
 
 ---
@@ -39,7 +40,7 @@ I uttrycket refereras händelsefält till&quot;@&quot; och datakällfält refere
 
 En syntaxfärg används för att visuellt skilja händelsefält (grönt) från fältgrupper (blått).
 
-## Standardvärden för fältreferenser
+## Standardvärden för fältreferenser {#default-value}
 
 Ett standardvärde kan associeras med ett fältnamn. Syntaxen är följande:
 
@@ -54,7 +55,7 @@ Ett standardvärde kan associeras med ett fältnamn. Syntaxen är följande:
 
 >[!NOTE]
 >
->Fälttypen och standardvärdet måste vara samma. Till exempel @{LobbyBeacon.endUserID:n._experience.emailid.id, defaultValue : 2} will be invalid because the default value is an integer whereas the expected value should be a string.
+>Fälttypen och standardvärdet måste vara samma. Till exempel @{LobbyBeacon.endUserID:n._experience.emailid.id, defaultValue : 2} blir ogiltigt eftersom standardvärdet är ett heltal medan det förväntade värdet ska vara en sträng.
 
 Exempel:
 
@@ -86,6 +87,13 @@ expression examples:
 - #{ACP.Profile.emails.at(1).email}              -> "snow@thewall.westeros"
 - #{ACP.Profile.person.age, defaultValue : -1}   -> -1 // default value, age is not a field present in the payload
 - #{ACP.Profile.person.age}                      -> null
+```
+
+Du kan lägga till vilken typ av uttryck som helst som standardvärde. Den enda begränsningen är att uttrycket måste returnera den förväntade datatypen. När du använder en funktion måste du kapsla in funktionen med ().
+
+```
+#{ExperiencePlatform.Subscriptions.profile.consents.marketing.any.time, defaultValue : (now())} 
+== date("2022-02-10T00:00:00Z")
 ```
 
 ## Referens till ett fält i samlingar
