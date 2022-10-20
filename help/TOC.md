@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 15dc5e2854358f7f200a54a3f06fa6e98f146efe
+source-git-commit: e3ae60321aac340328e1fcd7b1060192fbc7ee06
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1188'
 ht-degree: 37%
 
 ---
@@ -398,6 +398,7 @@ ht-degree: 37%
             + [Återförsök](using/configuration/retries.md)
             + [Tillåtelselista](using/configuration/allow-list.md)
       + [Konfigurera SMS-kanal](using/configuration/sms-configuration.md)
+      + [Konfigurera direktreklam](using/configuration/direct-mail-configuration.md)
       + Konfigurera kanalytor {#set-up-channels}
          + [Skapa kanalytor](using/configuration/channel-surfaces.md)
          + [Konfigurera e-postinställningar](using/configuration/email-settings.md)
