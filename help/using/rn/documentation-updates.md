@@ -4,10 +4,10 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: 8e3753927e16cc0c4bebf83be2fded6f19d9487e
 workflow-type: tm+mt
-source-wordcount: '2003'
-ht-degree: 19%
+source-wordcount: '2052'
+ht-degree: 18%
 
 ---
 
@@ -17,6 +17,9 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 ## Oktober 2022 {#october-2022}
 
+* Ett exempel på hur man begränsar genomströmningen med hjälp av externa datakällor och anpassade åtgärder har lagts till. [Läs mer](../building-journeys/limit-throughput.md)
+* Fallavsnittet för resans användning har omorganiserats i två kategorier: [Användningsexempel](../building-journeys/journeys-uc.md) och [Tekniska användningsfall](../building-journeys/collections.md).
+* The **Enhetsdatauppsättning** -avsnittet har uppdaterats med mer information. [Läs mer](../start/datasets-query-examples.md#entity-dataset)
 * Information om reglerna för hantering av avanmälan och medgivande har omorganiserats till ett nytt avsnitt. [Läs mer](../privacy/opt-out.md)
 
 ## September 2022 {#september-2022}

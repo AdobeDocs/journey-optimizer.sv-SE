@@ -5,10 +5,10 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: e3ae60321aac340328e1fcd7b1060192fbc7ee06
+source-git-commit: 8e3753927e16cc0c4bebf83be2fded6f19d9487e
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 37%
+source-wordcount: '1203'
+ht-degree: 36%
 
 ---
 
@@ -243,11 +243,14 @@ ht-degree: 37%
             + [övre](using/building-journeys/functions/functionupper.md)
             + [uuid](using/building-journeys/functions/functionuuid.md)
    + Användningsfall {#journey-use-cases}
-      + [Skicka flerkanalsmeddelanden](using/building-journeys/journeys-uc.md)
-      + [Skicka ett meddelande med Campaign v7/v8](using/building-journeys/campaign-classic-use-case.md)
-      + [Skicka samlingar dynamiskt med anpassade åtgärder](using/building-journeys/collections.md)
-      + [Skicka ett meddelande till prenumeranter](using/building-journeys/message-to-subscribers-uc.md)
-      + [Rita upp leveranser](using/building-journeys/ramp-up-deliveries-uc.md)
+      + Användningsexempel {#business-use-cases}
+         + [Skicka flerkanalsmeddelanden](using/building-journeys/journeys-uc.md)
+         + [Skicka ett meddelande med Campaign v7/v8](using/building-journeys/campaign-classic-use-case.md)
+         + [Skicka ett meddelande till prenumeranter](using/building-journeys/message-to-subscribers-uc.md)
+      + Tekniska användningsfall {#technical-use-cases}
+         + [Skicka samlingar dynamiskt med anpassade åtgärder](using/building-journeys/collections.md)
+         + [Rita upp leveranser](using/building-journeys/ramp-up-deliveries-uc.md)
+         + [Begränsa genomströmning med externa datakällor och anpassade åtgärder](using/building-journeys/limit-throughput.md)
 + Spåra och övervaka {#reporting}
    + Live-rapport {#live-report}
       + [Kom igång med Live Report](using/reports/live-report.md)
