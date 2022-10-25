@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 8e3753927e16cc0c4bebf83be2fded6f19d9487e
+source-git-commit: 50bafd20671912ecbcb595a59fed0e7bad95a200
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1222'
 ht-degree: 36%
 
 ---
@@ -53,6 +53,12 @@ ht-degree: 36%
    + [Skapa direktreklam](using/messages/create-direct-mail.md)
    + [Kontrollera aviseringar](using/messages/alerts.md)
    + [Tidsoptimering för sändning](using/messages/send-time-optimization.md)
++ Webbkanal{#web}
+   + [Kom igång med webbkanalen](using/web/get-started-web.md)
+   + [Skapa webbupplevelser](using/web/create-web.md)
+   + [Skapa webbsidor](using/web/author-web.md)
+   + [Hjälptillägg för visuell redigering](using/web/visual-editing-helper.md)
+   + [Webbrapportering](using/web/web-report.md)
 + Designinnehåll {#design}
    + [Kom igång med e-postdesign](using/design/design-emails.md)
    + [Börja från början ](using/design/create-email-content.md)
