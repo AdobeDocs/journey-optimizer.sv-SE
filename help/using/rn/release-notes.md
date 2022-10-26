@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: 0433e312db84ee16a076c183a82345de372c6ae7
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '1112'
 ht-degree: 9%
 
 ---
@@ -27,6 +27,10 @@ På den här sidan listas alla nya funktioner och förbättringar i [!DNL Journe
 **Resor**
 
 * The **Tvinga återinträde vid upprepning** har lagts till i återkommande parametrar för lässegmentschema. Med det här alternativet kan du göra så att alla profiler som fortfarande finns i resan automatiskt avslutar den vid nästa körning. När alternativet är inaktiverat måste profilerna slutföra resan innan de kan återkomma i en annan förekomst. [Läs mer](../building-journeys/read-segment.md#configuring-segment-trigger-activity)
+
+**Kampanjer**
+
+* Nu kan ni arkivera slutförda och stoppade kampanjer. [Läs mer](../campaigns/modify-stop-campaign.md#archive)
 
 ## September 2022-utgåvan{#sept-2022-release}
 

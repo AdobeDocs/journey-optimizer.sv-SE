@@ -7,9 +7,9 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: f64a6571609c69262670ac45a88cda0112aea5fa
+source-git-commit: ef66b30870fabf882bd368294e8a3b388d7ec182
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '796'
 ht-degree: 3%
 
 ---
@@ -27,12 +27,12 @@ Om du vill skicka ett direktmeddelande måste du skapa en fil och överföra den
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_details"
 >title="Definiera inställningarna för filroutningskonfigurationen"
->abstract="Du måste ange var filen ska exporteras och överföras för att din direktmeddelandeleverantör ska kunna använda den."
+>abstract="När du skapar ett direktmeddelande genereras filen som innehåller all nödvändig profilinformation. Den här filen måste exporteras och överföras till en server så att din direktreklamleverantör kan komma åt och använda den filen för att leverera direktreklam."
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_details_header"
 >title="Definiera inställningarna för filroutningskonfigurationen"
->abstract="När du skapar ett direktmeddelande genereras filen som innehåller all nödvändig profilinformation. Den här filen måste exporteras och överföras till en server så att din direktreklamleverantör kan komma åt och använda den filen för att leverera direktreklam."
+>abstract="Du måste ange var filen ska exporteras och överföras för att din direktmeddelandeleverantör ska kunna använda den."
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_select_file_routing"
@@ -42,12 +42,12 @@ Om du vill skicka ett direktmeddelande måste du skapa en fil och överföra den
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_type"
 >title="Välj servertyp för filflödet"
->abstract="Välj den server som du vill använda för att överföra och lagra direktmeddelandefiler."
+>abstract="Välj vilken server du vill använda för att överföra och lagra direktmeddelandefilerna. För närvarande stöds endast Amazon S3 och SFTP."
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_aws_region"
 >title="Välj AWS"
->abstract="Välj den server som du vill använda för att överföra och lagra direktmeddelandefiler. För närvarande stöds endast Amazon S3 och SFTP."
+>abstract="Välj det geografiska område där du vill exportera och överföra dina direktmeddelandefiler. För optimal användning rekommenderar vi att du väljer den närmaste regionen som värd för din molninfrastruktur."
 
 1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL File routing configuration]** > **[!UICONTROL File Routing]** menyn och klicka sedan på **[!UICONTROL Create routing configuration]**.
 
@@ -55,7 +55,7 @@ Om du vill skicka ett direktmeddelande måste du skapa en fil och överföra den
 
 1. Ange ett namn för konfigurationen.
 
-1. Välj konfigurationen **[!UICONTROL Type]**, dvs. den server som du vill använda för att överföra och lagra direktmeddelandefiler.<!--why is it Type and not Server or Server type? asked to PM-->
+1. Välj konfigurationen **[!UICONTROL Server type]**, dvs. den server som du vill använda för att överföra och lagra direktmeddelandefiler.
 
    ![](assets/file-routing-config-type.png)
 
@@ -65,9 +65,7 @@ Om du vill skicka ett direktmeddelande måste du skapa en fil och överföra den
 
    När du skapar ett direktmeddelande genereras filen som innehåller all nödvändig profilinformation. Den här filen måste exporteras och överföras till en server så att din direktreklamleverantör kan komma åt och använda den filen för att leverera direktreklam.
 
-1. Fyll i information och autentiseringsuppgifter som är specifika för den valda konfigurationstypen, t.ex. serveradress, åtkomstnyckel. <!--need to detail more?-->
-
-   <!--![](assets/file-routing-config-aws-details.png)-->
+1. Fyll i information och autentiseringsuppgifter som är specifika för den valda konfigurationstypen, t.ex. serveradress, åtkomstnyckel.
 
    ![](assets/file-routing-config-sftp-details.png)
 
@@ -90,12 +88,13 @@ Om du vill skicka ett direktmeddelande måste du skapa en fil och överföra den
 >[!CONTEXTUALHELP]
 >id="ajo_dm_surface_settings"
 >title="Definiera inställningar för direktreklam"
->abstract="En yta för direktreklam innehåller inställningar för formatering av filen som innehåller profildata för direktreklam. Du kan (definiera sorteringskonfigurationen), ta bort dubblettrader, dela poster i flera filer och välja filroutningskonfigurationen."
+>abstract="En yta för direktreklam innehåller inställningar för formatering av filen som innehåller profildata för direktreklam. Du måste också definiera var filen ska exporteras genom att välja filroutningskonfigurationen."
 
+<!--
 >[!CONTEXTUALHELP]
 >id="ajo_dm_surface_sort"
->title="Definiera sorteringsordningen"
->abstract="Om du väljer det här alternativet sorteras det efter profil-ID, stigande eller fallande. Om du avmarkerar det, den sorteringskonfiguration som definierades när direktmeddelandet skapades under en resa eller en kampanj."
+>title="Define the sort order"
+>abstract="If you select this option, the sort will be by profile ID, ascending or descending. If you unselect it, the sorting configuration defined when creating the direct mail message within a journey or a campaign."-->
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_surface_split"
@@ -128,7 +127,7 @@ När filflödet har konfigurerats måste du skapa en kanal för att kunna levere
    >
    >Du kan ange valfritt antal mellan 1 och 200 000 poster, vilket innebär att varje fil måste innehålla minst 1 rad och inte mer än 200 000 rader.
 
-1. Slutligen väljer du [konfiguration för filroutning](#file-routing-configuration) bland de som du skapade. Detta anger var filen ska exporteras och överföras så att din direktmeddelandeleverantör kan använda den.
+1. Slutligen väljer du **[!UICONTROL File routing configuration]** bland de som du skapade. Detta anger var filen ska exporteras och överföras så att din direktmeddelandeleverantör kan använda den.
 
    >[!CAUTION]
    >

@@ -8,18 +8,18 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: 0433e312db84ee16a076c183a82345de372c6ae7
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
 
-# Hantera livekampanjer {#modify-stop-campaign}
+# Hantera kampanjer {#modify-stop-campaign}
 
 När en kampanj har aktiverats kan du när som helst ändra eller stoppa den. Dessa åtgärder är endast tillgängliga för kampanjer med en återkommande körning.
 
-Dessutom kan du duplicera live-kampanjer (som körs en gång eller med en återkommande körning) för att skapa nya.
+Dessutom kan ni duplicera live-kampanjer (som körs en gång eller med en återkommande körning) för att skapa nya, och arkivera slutförda eller stoppade kampanjer.
 
 ## Ändra en återkommande kampanj {#modify}
 
@@ -58,3 +58,13 @@ Om du vill stoppa en återkommande kampanj öppnar du den och klickar sedan på 
 Du kan duplicera en livekampanj och skapa en ny. Det gör du genom att öppna kampanjen och sedan klicka på **[!UICONTROL Duplicate]**.
 
 ![](assets/create-campaign-duplicate.png)
+
+## Arkivera en kampanj {#archive}
+
+Med tiden växer listan över kampanjer och blir så småningom svårare att hitta färdiga och stoppade kampanjer.
+
+För att förhindra detta kan ni arkivera slutförda och stoppade kampanjer som ni inte längre behöver. Det gör du genom att klicka på ellipsknappen och sedan välja **[!UICONTROL Archive]**.
+
+![](assets/create-campaign-archive.png)
+
+Arkiverade kampanjer kan sedan hämtas med det dedikerade filtret i listan. [Lär dig hur du får tillgång till kampanjer](get-started-with-campaigns.md#access)
