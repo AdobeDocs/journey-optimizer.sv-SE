@@ -7,9 +7,9 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: ef66b30870fabf882bd368294e8a3b388d7ec182
+source-git-commit: 1f6b29d781abc17e238e4a3e051dc61d250b37a0
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '794'
 ht-degree: 3%
 
 ---
@@ -69,7 +69,7 @@ Om du vill skicka ett direktmeddelande måste du skapa en fil och överföra den
 
    ![](assets/file-routing-config-sftp-details.png)
 
-1. Om du valde **[!UICONTROL Amazon S3]** kan du välja den region i AWS där du vill exportera och överföra dina direktmeddelandefiler.
+1. Om du valde **[!UICONTROL Amazon S3]** väljer du den region i AWS där du vill exportera och överföra dina direktmeddelandefiler.
 
    ![](assets/file-routing-config-aws-region.png)
 
