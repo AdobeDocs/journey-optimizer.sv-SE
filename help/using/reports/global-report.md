@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: ec15e700-7659-4dbf-8446-6534ea48c5c8
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: e7431d1b69e460471b01439c9bd2577fd69944ed
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1421'
 ht-degree: 2%
 
 ---
@@ -433,3 +433,105 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
  </tbody> 
 </table>
 
+### Mätvärden för push-meddelanden {#push-notification-metrics}
+
+<table> 
+ <thead> 
+  <tr> 
+   <th> Mått<br/> </th> 
+   <th> Definition<br/> </th> 
+</tr>
+ </thead> 
+ <tbody>
+ <tr> 
+   <td>Instruktioner<br/> </td> 
+   <td> Totalt antal åtgärder för push-meddelandet som levererats, t.ex. knappklickning eller avbruten.<br/> </td> 
+</tr>
+  <tr> 
+   <td>Studsar<br/> </td> 
+   <td> Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.<br/> </td> 
+</tr> 
+  <tr> 
+   <td> Studsfrekvens<br/> </td> 
+   <td> Procentandel push-meddelanden som studsade jämfört med skickade push-meddelanden.<br/> </td>
+</tr>
+  <tr> 
+   <td> Levererat<br/> </td> 
+   <td> Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.<br/> </td> 
+</tr> 
+  <tr> 
+   <td> Leveransnivå<br/> </td> 
+   <td> Procentandel push-meddelanden som har skickats.<br/> </td> 
+</tr>
+  <tr> 
+   <td>Åtaganden<br/> </td> 
+   <td> Totalt antal öppningar och åtgärder för det här push-meddelandet, dvs om profilen öppnade push-meddelandet eller om någon klickade på en knapp.<br/> </td> 
+</tr> 
+  <tr> 
+   <td> Hastighet<br/> </td> 
+   <td> Procentandel öppningar och åtgärder för det här push-meddelandet, dvs. om profilen öppnade push-meddelandet eller om någon klickade på en knapp.<br/> </td> 
+</tr>
+  <tr> 
+   <td> Fel<br/> </td> 
+   <td> Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.<br/> </td> 
+</tr>
+  <tr> 
+   <td> Felfrekvens<br/> </td> 
+   <td> Procentandel fel som uppstod under en leverans och som förhindrar att den skickas jämfört med push-meddelanden som skickas.<br/> </td> 
+</tr> 
+  <tr> 
+   <td> Exkluderad<br/> </td> 
+   <td> Antal profiler som har uteslutits av Adobe Journey Optimizer.<br/> </td> 
+</tr>
+  <tr> 
+   <td> Öppnar<br/> </td> 
+   <td> Totalt antal push-meddelanden som levererats till enheten och användaren klickat på för att öppna appen. Detta liknar kommandot Push Click, men Push Open aktiveras inte om meddelandet stängs.<br/> </td> 
+</tr> 
+  <tr> 
+   <td> Öppen kurs<br/> </td> 
+   <td> Procentandel öppnade push-meddelanden.<br/> </td> 
+</tr> 
+  <tr> 
+   <td> Skickat<br/> </td> 
+   <td> Totalt antal försändelser för leveransen.<br/> </td> 
+</tr> 
+  <tr> 
+   <td> Målinriktad<br/> </td> 
+   <td> Totalt antal push-meddelanden som bearbetats under leveransanalysen.<br/> </td> 
+</tr>  
+ </tbody> 
+</table>
+
+<!--
+### In-app metrics {#inapp-metrics}
+<table> 
+ <thead> 
+  <tr> 
+   <th> Metric<br/> </th> 
+   <th> Definition<br/> </th> 
+</tr>
+ </thead> 
+ <tbody>
+ <tr> 
+   <td>Clicks<br/> </td> 
+   <td>Total number of recipients who interacted with the buttons included in the In-app message.<br/> </td> 
+</tr>
+  <tr> 
+   <td>Click rate<br/> </td> 
+   <td>Percentage of users who interacted with the buttons included in the In-app message compared to users who saw the message.<br/> </td> 
+</tr> 
+  <tr> 
+   <td>Dismiss rate<br/> </td> 
+   <td> Percentage of In-app messages that recipients dismissed.<br/> </td> 
+</tr> 
+  <tr> 
+   <td>Impressions<br/> </td> 
+   <td> Total number of In-app messages delivered to all users.<br/> </td>
+</tr>
+  <tr> 
+   <td>Unique impressions<br/> </td> 
+   <td>Number of unique users to whom the In-app message was delivered.<br/> </td>
+</tr>
+ </tbody> 
+</table>
+-->
