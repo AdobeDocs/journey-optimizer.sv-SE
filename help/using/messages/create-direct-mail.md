@@ -7,7 +7,7 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: fe6fedfd3fb0a8b083f7b047e2879ef6510b041b
+source-git-commit: 2160d52f24af50417cdcf8c6ec553b746a544c2f
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 8%
@@ -30,6 +30,7 @@ Direktutskick kan bara skapas i samband med schemalagda kampanjer. De är inte t
 >[!IMPORTANT]
 >
 >Kontrollera att du har konfigurerat innan du skickar ett direktmeddelande:
+>
 >* A [konfiguration för filroutning](../configuration/direct-mail-configuration.md#file-routing-configuration) som anger den server där extraheringsfilen ska överföras och lagras,
 >* A [meddelandeyta för direktreklam](../configuration/direct-mail-configuration.md#direct-mail-surface) som kommer att referera till filroutningskonfigurationen.
 

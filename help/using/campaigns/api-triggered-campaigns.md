@@ -4,7 +4,7 @@ product: journey optimizer
 title: Utlösa kampanjer med API:er
 description: Lär dig hur du aktiverar kampanjer med [!DNL Journey Optimizer] API:er
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: 2160d52f24af50417cdcf8c6ec553b746a544c2f
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 0%
@@ -76,6 +76,7 @@ The `{{context.<contextualAttribute>}}` syntaxen mappas endast till datatypen St
 >[!IMPORTANT]
 >
 >The `context.system` syntaxen är begränsad till intern användning i Adobe och ska inte användas för att skicka kontextuella attribut.
+
 Observera att det för närvarande inte finns något sammanhangsberoende attribut tillgängligt för användning på den vänstra menyn. Attribut måste anges direkt i ditt personaliseringsuttryck, utan att någon kontroll utförs av [!DNL Journey Optimizer].
 
 ## Kör kampanjen {#execute}

@@ -2,7 +2,7 @@
 title: Migrera till onlineredigering av resan
 description: Lär dig hur du migrerar meddelanden
 exl-id: accdebba-5322-401e-8a40-3e1539e65a7e
-source-git-commit: b31eb2bcf52bb57aec8e145ad8e94790a1fb44bf
+source-git-commit: 2160d52f24af50417cdcf8c6ec553b746a544c2f
 workflow-type: tm+mt
 source-wordcount: '1732'
 ht-degree: 0%
@@ -121,7 +121,7 @@ Varför behöver vi flera iterationer?
 
 Under en upprepning går vi igenom varje resa och migrerar dem när det är möjligt. Det finns fall där vi inte vill migrera automatiskt: när resan är live (vilket innebär att det fortfarande kan finnas profiler i den). I dessa fall ber vi dig att utföra en åtgärd, och nästa iteration migrerar de här resorna som inte kunde migreras i tidigare iteration.
 
-## Vanliga frågor och svar  {#faq}
+## Vanliga frågor och svar {#faq}
 
 ### Hur får jag information om ändringen?{#inform}
 

@@ -7,9 +7,9 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 50bafd20671912ecbcb595a59fed0e7bad95a200
+source-git-commit: 2160d52f24af50417cdcf8c6ec553b746a544c2f
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '120'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ Om ni redan använder utgående kanaler som e-post, SMS eller push-meddelanden k
 
 Tack vare ett intuitivt visuellt gränssnitt kan ni enkelt ändra era webbegenskaper för att experimentera, optimera och personalisera era slutanvändarkampanjer.
 
-<!-->
-➡️ [Läs mer om webbkanalen i den här videon](#video)
-—>
+<!--
+[Learn more on web channel in this video](#video)
+-->
 
 <table>
 <tr>
@@ -42,10 +42,10 @@ Tack vare ett intuitivt visuellt gränssnitt kan ni enkelt ändra era webbegensk
 </tr>
 </table>
 
-<!-->
-## Instruktionsvideo{#video}
+<!--
+## How-to video{#video}
 
-I videon nedan visas hur du
+The video below shows how to 
 
 >[!VIDEO]()
 -->
