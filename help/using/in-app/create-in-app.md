@@ -7,10 +7,10 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: e7431d1b69e460471b01439c9bd2577fd69944ed
+source-git-commit: 74f24c4ccdecd5afe52706e1ecb2d323c3200152
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 4%
+source-wordcount: '541'
+ht-degree: 3%
 
 ---
 
@@ -43,9 +43,18 @@ Följ stegen nedan för att skapa ett meddelande i appen:
 
 1. Välj hur ofta utlösaren ska visas när meddelandet i appen är aktivt:
 
-   * **[!UICONTROL Show every time]**
-   * **[!UICONTROL Show once]**
-   * **[!UICONTROL Show until click through]**
+   * **[!UICONTROL Show every time]**: Visa alltid meddelandet när de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
+   * **[!UICONTROL Show once]**: Visa endast det här meddelandet första gången de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
+   * **[!UICONTROL Show until click through]**: Visa det här meddelandet när händelser har markerats i **[!UICONTROL Mobile app trigger]** nedrullningsbar meny inträffar tills en interaktionshändelse skickas av SDK med åtgärden&quot;klickad&quot;.
+
+1. Från **[!UICONTROL Mobile app trigger]** väljer du de händelser och villkor som ska utlösa meddelandet:
+
+   1. I den vänstra listrutan väljer du den händelse som krävs för att utlösa meddelandet.
+   1. Välj den validering som krävs för den valda händelsen i den högra listrutan.
+   1. Klicka på **[!UICONTROL Add]** om du vill att utlösaren ska ta hänsyn till flera händelser eller villkor. Upprepa sedan stegen ovan.
+   1. Välj hur dina händelser ska länkas, t.ex. **[!UICONTROL And]** om du vill **båda** utlösare är true för att ett meddelande ska kunna visas och **[!UICONTROL Or]** om du vill att meddelandet ska visas om **antingen** av utlösarna är sanna.
+
+   ![](assets/in_app_create_3.png)
 
 1. Välj den händelse som utlöser ditt meddelande i dialogrutan **[!UICONTROL Mobile app trigger]**
 nedrullningsbar meny.
