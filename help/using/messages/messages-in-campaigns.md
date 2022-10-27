@@ -7,7 +7,7 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: 9fc05acf695396814ecfaec7cc086b07a63d4afd
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 ---
 
 
-# Lägg till meddelanden i kampanjer{#messages-in- campaigns}
+# Lägg till meddelanden i kampanjer{#messages-in-campaigns}
 
 I era kampanjer väljer du kanal för att utforma och personalisera det budskap som du vill skicka till er målgrupp. När du lägger till ett e-postmeddelande, ett SMS eller ett push-meddelande till kampanjen kan du skicka det direkt eller schemalägga meddelandet.
 

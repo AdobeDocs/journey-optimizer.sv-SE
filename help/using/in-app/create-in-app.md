@@ -7,9 +7,9 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 74f24c4ccdecd5afe52706e1ecb2d323c3200152
+source-git-commit: 9fc05acf695396814ecfaec7cc086b07a63d4afd
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '543'
 ht-degree: 3%
 
 ---
@@ -52,7 +52,7 @@ Följ stegen nedan för att skapa ett meddelande i appen:
    1. I den vänstra listrutan väljer du den händelse som krävs för att utlösa meddelandet.
    1. Välj den validering som krävs för den valda händelsen i den högra listrutan.
    1. Klicka på **[!UICONTROL Add]** om du vill att utlösaren ska ta hänsyn till flera händelser eller villkor. Upprepa sedan stegen ovan.
-   1. Välj hur dina händelser ska länkas, t.ex. **[!UICONTROL And]** om du vill **båda** utlösare är true för att ett meddelande ska kunna visas och **[!UICONTROL Or]** om du vill att meddelandet ska visas om **antingen** av utlösarna är sanna.
+   1. Välj hur dina händelser ska länkas, t.ex. välj **[!UICONTROL And]** om du vill **båda** utlösare är true för att ett meddelande ska kunna visas eller väljas **[!UICONTROL Or]** om du vill att meddelandet ska visas om **antingen** av utlösarna är sanna.
 
    ![](assets/in_app_create_3.png)
 
