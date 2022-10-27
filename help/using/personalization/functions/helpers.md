@@ -8,7 +8,7 @@ level: Experienced
 exl-id: b08dc0f8-c85f-4aca-85eb-92dc76b0e588
 source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '370'
 ht-degree: 3%
 
 ---
@@ -144,7 +144,8 @@ Some edu specific content Content
 ## Varje{#each}
 
 The `each` helper används för att iterera över en array.
-Hjälpens syntax är ```{{#each ArrayName}}``` Ditt innehåll {{/each}} Vi kan referera till de enskilda arrayobjekten med nyckelordet **this** inuti blocket. Indexvärdet för arrayelementet kan återges med {{@index}}.
+Hjälpens syntax är ```{{#each ArrayName}}``` Ditt innehåll {{/each}}
+Vi kan referera till de enskilda arrayobjekten med hjälp av nyckelordet **this** inuti blocket. Index för arrayens element kan återges med {{@index}}.
 
 **Syntax**
 

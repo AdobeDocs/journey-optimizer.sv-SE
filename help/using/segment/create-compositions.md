@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 2160d52f24af50417cdcf8c6ec553b746a544c2f
+source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Med arbetsflöden för kompositioner kan ni kombinera och ordna befintliga målg
 
    ![](assets/audiences-publish.png)
 
-1. När kompositionen är klar klickar du på **[!UICONTROL Publish]** för att publicera kompositionen och spara målgrupperna i Adobe Experience Platform.
+1. När kompositionen är klar klickar du på [**!UICONTROL-publicering]** för att publicera kompositionen och spara målgrupperna i Adobe Experience Platform.
 
    Om något fel inträffar under publiceringen visas varningar med information om hur du löser problemet.
 

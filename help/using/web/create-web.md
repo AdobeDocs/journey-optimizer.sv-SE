@@ -7,9 +7,9 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: d94f0690629f924245d7a672ecf81decd0724861
+source-git-commit: 50bafd20671912ecbcb595a59fed0e7bad95a200
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '952'
 ht-degree: 4%
 
 ---
@@ -40,9 +40,7 @@ För att kunna komma åt och skriva webbsidor i [!DNL Journey Optimizer] följer
 
 För att webbupplevelsen ska kunna levereras på rätt sätt måste följande inställningar definieras:
 
-* I [Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html){target=&quot;_blank&quot;}, kontrollera att du har en datastream definierad, till exempel under **[!UICONTROL Adobe Experience Platform]** den tjänst du har båda **[!UICONTROL Edge Segmentation]** och **[!UICONTROL Adobe Journey Optimizer]** aktiverade alternativ.
-
-   Detta säkerställer att Journey Optimizer inkommande händelser hanteras korrekt av Adobe Experience Platform Edge. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html){target=&quot;_blank&quot;}
+* I [Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html){target=&quot;_blank&quot;}, kontrollera att du har en datastream definierad, till exempel under **[!UICONTROL Adobe Experience Platform]** den tjänst du har båda **[!UICONTROL Edge Segmentation]** och **[!UICONTROL Adobe Journey Optimizer]** aktiverade alternativ. Detta säkerställer att Journey Optimizer inkommande händelser hanteras korrekt av Adobe Experience Platform Edge. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html){target=&quot;_blank&quot;}
 
    ![](assets/web-aep-datastream-ajo.png)
 
@@ -51,8 +49,6 @@ För att webbupplevelsen ska kunna levereras på rätt sätt måste följande in
    >The **[!UICONTROL Adobe Journey Optimizer]** kan bara aktiveras när **[!UICONTROL Edge Segmentation]** är redan aktiverat.
 
 * I [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target=&quot;_blank&quot;}, kontrollera att du har en sammanfogningsprincip med **[!UICONTROL Active-On-Edge Merge Policy]** aktiverat alternativ. Välj en profil under **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** > **[!UICONTROL Merge Policies]** Experience Platform-menyn. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html#configure){target=&quot;_blank&quot;}
-
-   Den här sammanfogningsprincipen används av [!DNL Journey Optimizer] inkommande kanaler för att korrekt aktivera och publicera inkommande kampanjer. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html){target=&quot;_blank&quot;}
 
    ![](assets/web-aep-merge-policy.png)
 

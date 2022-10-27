@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: 0433e312db84ee16a076c183a82345de372c6ae7
+source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 2%
+source-wordcount: '534'
+ht-degree: 3%
 
 ---
 
@@ -71,9 +71,7 @@ Kontrollera följande innan du börjar skapa din första kampanj i Journey Optim
 
 Kampanjerna är tillgängliga via **[!UICONTROL Campaigns]** -menyn.
 
-Som standard visas alla kampanjer med **[!UICONTROL Draft]**, **[!UICONTROL Scheduled]** och **[!UICONTROL Live]** status.
-
-Om du vill visa stoppade, slutförda och arkiverade kampanjer måste du rensa filtret.
+Som standard visas alla kampanjer med **[!UICONTROL Draft]**, **[!UICONTROL Scheduled]** och **[!UICONTROL Live]** status. Om du vill visa stoppade, slutförda och arkiverade kampanjer måste du rensa filtret.
 
 ![](assets/create-campaign-list.png)
 
@@ -85,9 +83,9 @@ Kampanjer kan ha flera statusvärden:
 * **[!UICONTROL Activating]**: Kampanjen aktiveras.
 * **[!UICONTROL Live]**: Kampanjen har aktiverats.
 * **[!UICONTROL Scheduled]**: Kampanjen är konfigurerad att aktiveras ett visst startdatum.
-* **[!UICONTROL Stopped]**: Kampanjen har stoppats manuellt. Du kan inte aktivera eller återanvända den längre. [Lär dig stoppa en kampanj](modify-stop-campaign.md#stop)
+* **[!UICONTROL Stopped]**: Kampanjen har stoppats manuellt. Du kan inte aktivera eller återanvända den längre. [Läs mer](modify-stop-campaign.md#stop)
 * **[!UICONTROL Completed]**: Kampanjen är färdig. Den här statusen tilldelas automatiskt 3 dagar efter att en kampanj har aktiverats, eller vid kampanjens slutdatum om den har en återkommande körning.
-* **[!UICONTROL Archived]**: Kampanjen har arkiverats. [Lär dig arkivera kampanjer](modify-stop-campaign.md#archive)
+* **[!UICONTROL Archived]**: Kampanjen har arkiverats.
 
 >[!NOTE]
 >

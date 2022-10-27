@@ -5,10 +5,10 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: e7431d1b69e460471b01439c9bd2577fd69944ed
+source-git-commit: 50bafd20671912ecbcb595a59fed0e7bad95a200
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 35%
+source-wordcount: '1222'
+ht-degree: 36%
 
 ---
 
@@ -59,12 +59,6 @@ ht-degree: 35%
    + [Skapa webbsidor](using/web/author-web.md)
    + [Hjälptillägg för visuell redigering](using/web/visual-editing-helper.md)
    + [Webbrapportering](using/web/web-report.md)
-+ Kanal i appen{#in-app}
-   + [Kom igång med kanalen i appen](using/in-app/get-started-in-app.md)
-   + [Konfigurera kanal i appen](using/in-app/inapp-configuration.md)
-   + [Skapa ett meddelande i appen](using/in-app/create-in-app.md)
-   + [Designa ditt innehåll i appen](using/in-app/design-in-app.md)
-   + [Rapport i appen](using/in-app/inapp-report.md)
 + Designinnehåll {#design}
    + [Kom igång med e-postdesign](using/design/design-emails.md)
    + [Börja från början ](using/design/create-email-content.md)

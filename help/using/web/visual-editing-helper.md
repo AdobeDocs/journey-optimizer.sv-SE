@@ -7,9 +7,9 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 2160d52f24af50417cdcf8c6ec553b746a544c2f
+source-git-commit: 50bafd20671912ecbcb595a59fed0e7bad95a200
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '387'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Med webbläsartillägget Adobe Experience Cloud Visual Editing Helper för Googl
 
 Följ stegen nedan om du vill hämta och installera tillägget för hjälpen för visuell redigering.
 
-1. I Google Chrome Web Store går du till [Adobe Experience Cloud Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca){target=&quot;_blank&quot;} webbläsartillägg.
+1. I Google Chrome Web Store går du till [Adobe Experience Cloud Visual Editing Helper ]((https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca){target="_blank"}) webbläsartillägg.
 
 1. Klicka på **[!UICONTROL Add to Chrome]** > **[!UICONTROL Add Extension]**.
 

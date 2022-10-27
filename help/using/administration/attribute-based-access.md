@@ -8,9 +8,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 162b0848-313a-447e-9237-5a6dbc8102c6
-source-git-commit: 2160d52f24af50417cdcf8c6ec553b746a544c2f
+source-git-commit: d17e64e03d093a8a459caef2fb0197a5710dfb7d
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '985'
 ht-degree: 0%
 
 ---
@@ -127,7 +127,7 @@ Till exempel kommer den första användaren X med åtkomst till objekt som är m
 
    ![](assets/journey_1.png)
 
-1. Lägg till en ny **[!UICONTROL Field group]** av dina nyskapade **[!UICONTROL Schema]** till det inbyggda **[!UICONTROL Data source]**. Du kan också skapa en ny extern **[!UICONTROL data source]** och associerade **[!UICONTROL Field groups]**.
+1. Lägg till en ny **[!UICONTROL Field group]** av dina nyskapade **[!UICONTROL Schema]** till det inbyggda **[!UICONTROL Data source]**. Du kan också skapa en ny extern **[!UICONTROLDdatakälla]** och associerade **[!UICONTROL Field groups]**.
 
    ![](assets/journey_2.png)
 

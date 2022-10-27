@@ -1,13 +1,13 @@
 ---
 title: Steg för att migrera till onlineredigering för resan
 description: Steg för att migrera till onlineredigering av resan
-source-git-commit: f98ef26fa9c6075c852d33d19c796351296a3f94
+exl-id: 8412a0bd-674c-4d6a-aa5b-443655d2943a
+source-git-commit: 1ab038e8b2f0582ad947400c7d070a70e1a84b9b
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 1%
 
 ---
-
 
 # Inline-redigeringssteg{#migration-steps}
 
@@ -190,4 +190,3 @@ Om du inte har publicerat nyare reseversioner (se det här [section](../rn/inlin
 ## Före den tredje och sista upprepningen (5 september){#migration-step-4}
 
 Mellan 1 augusti och 5 september måste ni verifiera att allt har migrerats och att det inte finns några resor kvar med meddelanden, annars kommer de att bli inaktuella den 5 september.
-

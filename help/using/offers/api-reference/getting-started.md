@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 773bee50-849f-4b07-9423-67de5279ad28
-source-git-commit: e7431d1b69e460471b01439c9bd2577fd69944ed
+source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '638'
 ht-degree: 2%
 
 ---
@@ -127,11 +127,10 @@ Ett lyckat svar returnerar information om beslutsbehållare. Detta inkluderar `i
 ## Nästa steg {#next-steps}
 
 Det här dokumentet innehöll de nödvändiga kunskaperna som krävs för att ringa till [!DNL Offer Library] API, inklusive att hämta ditt behållar-ID. Du kan nu gå vidare till exempelsamtalen i den här utvecklarhandboken och följa med i instruktionerna för dessa.
-<!--
+
 >[!NOTE]
 >
-> The In-app messaging channel in Adobe Journey Optimizer uses decision management objects. If your organization uses the in-app messaging channel, then API list requests for objects will include objects created by the in-app messaging service and can be ignored for decision management use cases. Objects created for in-app messages will have `createdBy = “Mobile_Sheliak”`.
--->
+> Meddelandekanalen i appen i Adobe Journey Optimizer använder beslutshanteringsobjekt. Om din organisation använder meddelandekanalen i appen kommer API-listbegäranden för objekt att innehålla objekt som har skapats av meddelandetjänsten i appen och kan ignoreras för beslutshanteringsfall. Objekt som skapats för meddelanden i programmet har `createdBy = “Mobile_Sheliak”`.
 
 ## Instruktionsvideo {#video}
 
