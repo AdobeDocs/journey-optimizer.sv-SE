@@ -7,10 +7,10 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: f64a6571609c69262670ac45a88cda0112aea5fa
+source-git-commit: bca233ab888e2ca33b866bc3def31653f2d55ea9
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 3%
+source-wordcount: '915'
+ht-degree: 0%
 
 ---
 
@@ -18,36 +18,51 @@ ht-degree: 3%
 
 [!DNL Journey Optimizer] gör att du kan anpassa och generera de filer som direktreklamleverantörer behöver för att skicka e-post till dina kunder.
 
-När du förbereder en direktleverans, [!DNL Journey Optimizer] genererar en fil som innehåller alla målprofiler och vald kontaktinformation (till exempel postadress). Du kan sedan skicka den här filen till din leverantör för direktmeddelanden som i sin tur tar hand om själva utskicket.
+När [skapa ett direktpostmeddelande](../messages/create-direct-mail.md)definierar du målgruppsdata, inklusive vald kontaktinformation (t.ex. postadress). En fil som innehåller dessa data genereras och exporteras sedan automatiskt till en server, där din direktmeddelandeleverantör kan hämta den och ta hand om själva sändningen.
 
-Om du vill skicka ett direktmeddelande måste du skapa en fil och överföra den till en server. Innan du kan göra det måste du skapa en [konfiguration för filroutning](#file-routing-configuration) och [direktreklamyta](#direct-mail-surface) som refererar till filroutningskonfigurationen.
+Innan du kan generera den här filen måste du skapa:
+
+1. A [konfiguration för filroutning](#file-routing-configuration) för att ange på vilken server filen ska exporteras.
+
+1. A [direktreklamyta](#direct-mail-surface) som refererar till filroutningskonfigurationen.
+
+>[!CAUTION]
+>
+>Om du inte har konfigurerat något alternativ för filroutning kan du inte skapa en direktreklamyta.
 
 ## Konfigurera filroutning {#file-routing-configuration}
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_details"
->title="Definiera inställningarna för filroutningskonfigurationen"
->abstract="Du måste ange var filen ska exporteras och överföras för att din direktmeddelandeleverantör ska kunna använda den."
+>title="Definiera filroutningskonfigurationen"
+>abstract="När du har skapat ett direktutskick kommer filen som innehåller målgruppsdata att genereras och exporteras till en server. Du måste ange serverinformationen så att din direktreklamleverantör kan komma åt och använda filen för att leverera direktreklam."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/messages/create-direct-mail.html" text="Skapa ett direktutskick"
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_details_header"
->title="Definiera inställningarna för filroutningskonfigurationen"
->abstract="När du skapar ett direktmeddelande genereras filen som innehåller all nödvändig profilinformation. Den här filen måste exporteras och överföras till en server så att din direktreklamleverantör kan komma åt och använda den filen för att leverera direktreklam."
+>title="Definiera filroutningskonfigurationen"
+>abstract="Du måste ange var filen ska exporteras för att din direktmeddelandeleverantör ska kunna använda den."
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_select_file_routing"
 >title="Konfiguration av filroutning"
->abstract="Välj valfri konfiguration för filroutning, som anger var filen ska exporteras och överföras så att din direktreklamleverantör kan använda den."
+>abstract="Välj valfri konfiguration för filroutning, som anger var filen ska exporteras så att din direktmeddelandeleverantör kan använda den."
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_type"
->title="Välj servertyp för filflödet"
->abstract="Välj den server som du vill använda för att överföra och lagra direktmeddelandefiler."
+>title="Välj servertyp för filen"
+>abstract="Välj vilken typ av server du vill använda för att exportera dina direktmeddelandefiler. För närvarande stöds endast Amazon S3 och SFTP av Journey Optimizer."
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_aws_region"
 >title="Välj AWS"
->abstract="Välj den server som du vill använda för att överföra och lagra direktmeddelandefiler. För närvarande stöds endast Amazon S3 och SFTP."
+>abstract="Markera det geografiska område på AWS-servern där du vill exportera dina direktmeddelandefiler. Som allmän praxis är det att föredra att välja den närmaste regionen till den plats där direktreklamleverantören finns."
+
+För att leverera ett direktmejl [!DNL Journey Optimizer] genererar och exporterar filen som innehåller målgruppsdata till en server.
+
+Du måste ange den serverinformationen så att din e-postleverantör kan komma åt och använda filen för att leverera e-post.
+
+Följ stegen nedan för att konfigurera filflödet.
 
 1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL File routing configuration]** > **[!UICONTROL File Routing]** menyn och klicka sedan på **[!UICONTROL Create routing configuration]**.
 
@@ -55,31 +70,27 @@ Om du vill skicka ett direktmeddelande måste du skapa en fil och överföra den
 
 1. Ange ett namn för konfigurationen.
 
-1. Välj konfigurationen **[!UICONTROL Type]**, dvs. den server som du vill använda för att överföra och lagra direktmeddelandefiler.<!--why is it Type and not Server or Server type? asked to PM-->
+1. Välj **[!UICONTROL Server type]** som du vill använda för att exportera direktmeddelandefiler.
 
    ![](assets/file-routing-config-type.png)
 
    >[!NOTE]
    >
-   >För närvarande är endast Amazon S3 och SFTP tillgängliga.
+   >För närvarande stöds endast Amazon S3 och SFTP i [!DNL Journey Optimizer].
 
-   När du skapar ett direktmeddelande genereras filen som innehåller all nödvändig profilinformation. Den här filen måste exporteras och överföras till en server så att din direktreklamleverantör kan komma åt och använda den filen för att leverera direktreklam.
-
-1. Fyll i information och autentiseringsuppgifter som är specifika för den valda konfigurationstypen, t.ex. serveradress, åtkomstnyckel. <!--need to detail more?-->
-
-   <!--![](assets/file-routing-config-aws-details.png)-->
+1. Fyll i information och autentiseringsuppgifter för servern, t.ex. serveradress, åtkomstnyckel.
 
    ![](assets/file-routing-config-sftp-details.png)
 
-1. Om du valde **[!UICONTROL Amazon S3]** kan du välja den region i AWS där du vill exportera och överföra dina direktmeddelandefiler.
+1. Om du valde **[!UICONTROL Amazon S3]** väljer du **[!UICONTROL AWS region]** var serverinfrastrukturen ska placeras.
 
    ![](assets/file-routing-config-aws-region.png)
 
    >[!NOTE]
    >
-   >AWS-regionerna är separata geografiska områden som distribueras runt om i världen och som AWS använder för sin infrastruktur. För optimal användning rekommenderar vi att du väljer den närmaste regionen som värd för din molninfrastruktur.
+   >AWS-regioner är geografiska områden som AWS använder för sin molninfrastruktur. Som allmän praxis är det att föredra att välja den region som ligger närmast din direktreklamleverantörs plats.
 
-1. Välj **[!UICONTROL Submit]**. Filroutningskonfigurationen skapas med **[!UICONTROL Active]** status. Den kan nu användas i direktreklam för att leverera direktreklam från [!DNL Journey Optimizer].
+1. Välj **[!UICONTROL Submit]**. Filroutningskonfigurationen skapas med **[!UICONTROL Active]** status. Den är nu klar att användas i en [direktreklamyta](#direct-mail-surface).
 
    >[!NOTE]
    >
@@ -90,19 +101,23 @@ Om du vill skicka ett direktmeddelande måste du skapa en fil och överföra den
 >[!CONTEXTUALHELP]
 >id="ajo_dm_surface_settings"
 >title="Definiera inställningar för direktreklam"
->abstract="En yta för direktreklam innehåller inställningar för formatering av filen som innehåller profildata för direktreklam. Du kan (definiera sorteringskonfigurationen), ta bort dubblettrader, dela poster i flera filer och välja filroutningskonfigurationen."
+>abstract="En yta för direktreklam innehåller formateringsinställningarna för filen som innehåller målgruppsdata och kommer att användas av e-postleverantören. Du måste också definiera var filen ska exporteras genom att välja filroutningskonfigurationen."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/direct-mail-configuration.html#file-routing-configuration" text="Konfigurera filroutning"
 
+<!--
 >[!CONTEXTUALHELP]
 >id="ajo_dm_surface_sort"
->title="Definiera sorteringsordningen"
->abstract="Om du väljer det här alternativet sorteras det efter profil-ID, stigande eller fallande. Om du avmarkerar det, den sorteringskonfiguration som definierades när direktmeddelandet skapades under en resa eller en kampanj."
+>title="Define the sort order"
+>abstract="If you select this option, the sort will be by profile ID, ascending or descending. If you unselect it, the sorting configuration defined when creating the direct mail message within a journey or a campaign."-->
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_surface_split"
 >title="Definiera tröskelvärdet för fildelning"
->abstract="Du måste ange maximalt antal poster för varje fil som innehåller profildata. När det angivna tröskelvärdet har nåtts skapas en annan fil för de återstående posterna."
+>abstract="Du måste ange maximalt antal poster för varje fil som innehåller målgruppsdata. Du kan välja valfritt tal mellan 1 och 200 000 poster. När det angivna tröskelvärdet har nåtts skapas en annan fil för de återstående posterna."
 
-När filflödet har konfigurerats måste du skapa en kanal för att kunna leverera direktreklam från [!DNL Journey Optimizer]. På varje yta måste du välja en filroutningskonfiguration.
+För direktreklam med [!DNL Journey Optimizer]måste du skapa en kanal för att definiera formateringsinställningarna för filen som ska användas av e-postleverantören.
+
+En direktreklamyta måste också innehålla den filroutningskonfiguration som definierar den server där direktpostfilen ska exporteras.
 
 1. Skapa en kanalyta. [Läs mer](channel-surfaces.md)
 
@@ -128,10 +143,14 @@ När filflödet har konfigurerats måste du skapa en kanal för att kunna levere
    >
    >Du kan ange valfritt antal mellan 1 och 200 000 poster, vilket innebär att varje fil måste innehålla minst 1 rad och inte mer än 200 000 rader.
 
-1. Slutligen väljer du [konfiguration för filroutning](#file-routing-configuration) bland de som du skapade. Detta anger var filen ska exporteras och överföras så att din direktmeddelandeleverantör kan använda den.
+1. Slutligen väljer du **[!UICONTROL File routing configuration]** bland de som du skapade. Detta anger var filen exporteras så att din direktmeddelandeleverantör kan använda den.
 
    >[!CAUTION]
    >
    >Om du inte har konfigurerat något alternativ för filroutning kan du inte skapa en direktreklamyta. [Läs mer](#file-routing-configuration)
 
    ![](assets/surface-direct-mail-file-routing.png)
+
+1. Skicka direktreklamytan.
+
+Nu kan du [skapa ett direktmeddelandemeddelande](../messages/create-direct-mail.md) i en kampanj. När kampanjen har startats exporteras filen som innehåller målgruppsdata automatiskt till den server som du har definierat. Leverantören av direktreklam kan då hämta filen och fortsätta med leveransen av direktreklam.
