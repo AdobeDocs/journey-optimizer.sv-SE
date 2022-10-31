@@ -6,9 +6,9 @@ description: Lär dig hur du konfigurerar miljön för att skicka SMS med Journe
 role: Admin
 level: Intermediate
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: 3a932747de33ced59d68835a96386b7ac560e4fe
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu s
 >id="ajo_admin_surface_sms_type"
 >title="Definiera SMS-kategorin"
 >abstract="Välj den typ av SMS-meddelanden som ska skickas när den här ytan används: Marknadsföring för SMS-kampanjmeddelanden, som kräver användarens samtycke, eller Transactional för icke-kommersiella SMS-meddelanden, som också kan skickas till avabonnerade profiler i specifika sammanhang."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/messages/create-sms.html#sms-opt-in-out" text="Avanmäl dig i SMS-marknadsföringsmeddelanden"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/privacy/consent/opt-out.html#sms-opt-out-management" text="Avanmäl dig i SMS-marknadsföringsmeddelanden"
 
 När SMS-kanalen har konfigurerats måste du skapa en kanalyta för att kunna skicka SMS-meddelanden från **[!DNL Journey Optimizer]**.
 

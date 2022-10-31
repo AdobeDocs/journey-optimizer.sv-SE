@@ -8,9 +8,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: cb3248c5-f444-47aa-80b2-c1a9fbebfcc0
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: 3a932747de33ced59d68835a96386b7ac560e4fe
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '183'
 ht-degree: 1%
 
 ---
@@ -28,10 +28,17 @@ The **[!UICONTROL Status]** kolumnen innehåller information om delegeringsproce
 * **[!UICONTROL Success]**: Underdomänen har gått igenom kontrollerna och kan användas för att leverera meddelanden,
 * **[!UICONTROL Failed]**: En eller flera kontroller misslyckades efter att delegeringen av underdomäner skickades.
 
-Om du vill ha detaljerad information om en underdomän öppnar du den i listan. Du kan:
+Få detaljerad information om en underdomän med **[!UICONTROL Success]** status, öppna den i listan.
+
+![](assets/subdomain-delegated.png)
+
+Du kan:
 
 * Hämta det underdomännamn (skrivskyddat) som konfigurerats under delegeringsprocessen samt de URL:er som genereras (resurser, spegelsidor, spårnings-URL:er),
 
 * Lägg till en TXT-post för Google platsverifiering i din underdomän för att kontrollera att den är verifierad (se [Lägga till en Google TXT-post i en underdomän](google-txt.md)).
 
-![](assets/subdomain-delegated.png)
+
+>[!CAUTION]
+>
+>Underdomänskonfigurationen är gemensam för alla miljöer. Därför kommer alla ändringar av en underdomän också att påverka produktionssandlådorna.

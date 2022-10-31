@@ -4,9 +4,9 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 8e3753927e16cc0c4bebf83be2fded6f19d9487e
+source-git-commit: 3a932747de33ced59d68835a96386b7ac560e4fe
 workflow-type: tm+mt
-source-wordcount: '2052'
+source-wordcount: '2126'
 ht-degree: 18%
 
 ---
@@ -21,6 +21,8 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Fallavsnittet för resans användning har omorganiserats i två kategorier: [Användningsexempel](../building-journeys/journeys-uc.md) och [Tekniska användningsfall](../building-journeys/collections.md).
 * The **Enhetsdatauppsättning** -avsnittet har uppdaterats med mer information. [Läs mer](../start/datasets-query-examples.md#entity-dataset)
 * Information om reglerna för hantering av avanmälan och medgivande har omorganiserats till ett nytt avsnitt. [Läs mer](../privacy/opt-out.md)
+* Avsnittet om avancerade parametrar i resemeddelanden har klargjorts och anger nu att åsidosättning av e-postadresser endast ska användas för särskilda användningsfall. Det värde som oftast definieras som den primära adressen i **Körningsfält** är den som bör användas. [Läs mer](../messages/messages-in-journeys.md#adv-settings)
+* En anteckning har lagts till i **Konfigurera underdomäner för landningssidor** för att ange att versaler inte tillåts i underdomäner för landningssidor. [Läs mer](../configuration/lp-subdomains.md)
 
 ## September 2022 {#september-2022}
 

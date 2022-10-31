@@ -7,9 +7,9 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: 3a932747de33ced59d68835a96386b7ac560e4fe
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '767'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ Använd **[!UICONTROL Send-time optimization]** för att schemalägga personliga
 
 Avancerade parametrar är skrivskyddade och dolda som standard.
 
-Om du vill komma åt avancerade parametrar klickar du på **[!UICONTROL Show read-only fields]** -ikonen högst upp i meddelandefönstret.
+Om du vill komma åt avancerade parametrar klickar du på **[!UICONTROL Show read-only fields]** -ikonen högst upp i meddelandefönstret. Klicka på samma ikon om du vill dölja de avancerade inställningarna.
 
 ![](assets/show-read-only.png)
 
@@ -93,14 +93,20 @@ För push-meddelanden kan du visa följande parametrar: Token, AppID, AppPlatfor
 
 ![](assets/push-adv-parameters.png)
 
-För e-post kan du visa den primära e-postadressen.
+För e-post kan du visa [primär e-postadress](../configuration/primary-email-addresses.md).
 
-Du kan åsidosätta dessa värden i specifika sammanhang om du vill använda dem. Om du vill tvinga fram ett värde klickar du på **Aktivera åsidosättning av parametrar** till höger om fältet. Det här alternativet kan vara användbart till exempel för att:
+I specifika sammanhang kan du åsidosätta dessa värden för specifik användning. Om du vill tvinga fram ett värde klickar du på **[!UICONTROL Enable parameter override]** till höger om fältet.
 
-* Testa ett e-postmeddelande så kan du lägga till din e-postadress. När du har publicerat resan skickas e-postmeddelandet till dig.
+![](assets/email-adv-parameters.png)
+
+Det här alternativet kan vara användbart till exempel för att:
+
+* Testa ett e-postmeddelande. Du kan lägga till din e-postadress; när du har publicerat resan skickas e-postmeddelandet till dig.
 * Se e-postadressen till prenumeranterna i en lista. Läs mer i [det här användningsfallet](../building-journeys/message-to-subscribers-uc.md).
 
-Klicka på samma ikon om du vill dölja de avancerade inställningarna.
+>[!NOTE]
+>
+>Åsidosättning av e-postadresser ska endast användas för särskilda användningsfall. Oftast behöver du inte ändra e-postadressen eftersom värdet är definierat som den primära adressen i **[!UICONTROL Execution fields]** är den som bör användas. [Läs mer](../configuration/primary-email-addresses.md)
 
 ## Bläddra bland meddelanden{#browse-message}
 

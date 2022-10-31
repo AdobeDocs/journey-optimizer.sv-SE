@@ -8,9 +8,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: 3a932747de33ced59d68835a96386b7ac560e4fe
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '736'
 ht-degree: 0%
 
 ---
@@ -48,11 +48,9 @@ Du kan ändra en PTR-post om du vill redigera den underdomän som är associerad
 
 >[!CAUTION]
 >
->Fortsätt med extra omsorg när du redigerar PTR-poster. Om du är osäker kan du kontakta en expert på slutprodukter.<!--why?-->
-
->[!NOTE]
+>PTR-poster är gemensamma för alla miljöer. Alla ändringar av en PTR-post kommer därför också att påverka produktionssandlådorna.
 >
->Du kan inte ändra **[!UICONTROL IP]** och **[!UICONTROL PTR record]** fält.
+>Fortsätt med extra omsorg när du redigerar PTR-poster. Om du är osäker kan du kontakta en expert på slutprodukter.
 
 ### Fullt delegerade underdomäner {#fully-delegated-subdomains}
 
@@ -67,6 +65,10 @@ Redigera en PTR-post med en underdomän som är [helt delegerad](delegate-subdom
    ![](assets/ptr-record-subdomain.png)
 
 1. Klicka **[!UICONTROL Save]** för att bekräfta dina ändringar.
+
+>[!NOTE]
+>
+>Du kan inte ändra **[!UICONTROL IP]** och **[!UICONTROL PTR record]** fält.
 
 ### Delegerade underdomäner med CNAME-metoden {#edit-ptr-subdomains-cname}
 
@@ -92,6 +94,10 @@ Så här redigerar du en PTR-post med en underdomän som har delegerats till Ado
 
 
 1. Klicka **[!UICONTROL Save]** för att bekräfta dina ändringar.
+
+>[!NOTE]
+>
+>Du kan inte ändra **[!UICONTROL IP]** och **[!UICONTROL PTR record]** fält.
 
 ## Kontrollera uppdateringsinformation för PTR-post {#check-ptr-record-update}
 

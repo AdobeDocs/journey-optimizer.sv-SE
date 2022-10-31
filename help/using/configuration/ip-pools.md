@@ -8,9 +8,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 606334c3-e3e6-41c1-a10e-63508a3ed747
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: 3a932747de33ced59d68835a96386b7ac560e4fe
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_pool_header"
 >title="Konfigurera en IP-pool"
->abstract="Du kan skapa IP-pooler för att gruppera IP-adresserna för dina underdomäner för att förbättra e-postleveransen."
+>abstract="IP-pooler samlar in IP-adresserna för dina underdomäner för att förbättra e-postleveransen."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_pool"
@@ -34,6 +34,10 @@ Med [!DNL Journey Optimizer]kan du skapa IP-pooler för att gruppera IP-adresser
 Vi rekommenderar starkt att du skapar IP-pooler för e-postleverans. På så sätt kan du förhindra att en underdomän får ett anseende som påverkar dina andra underdomäner.
 
 Ett exempel är att ha en IP-pool för dina marknadsföringsmeddelanden och en annan för dina transaktionsmeddelanden. På så sätt påverkas inte transaktionsmeddelanden som skickas till samma kund om ett av dina marknadsföringsmeddelanden fungerar dåligt och deklareras som skräppost av en kund, som fortfarande får transaktionsmeddelanden (inköpsbekräftelser, meddelanden om lösenordsåterställning osv.).
+
+>[!CAUTION]
+>
+>Konfigurationen av IP-poolen är gemensam för alla miljöer. Därför kommer alla IP-pooler som skapas eller publiceras också att påverka produktionssandlådorna.
 
 ## Skapa en IP-pool {#create-ip-pool}
 
@@ -63,7 +67,7 @@ IP-poolen skapas nu och visas i listan. Du kan markera den för att komma åt de
 
 ## Redigera en IP-pool {#edit-ip-pool}
 
-Så här redigerar du en IP-pool:
+Om du vill redigera en IP-pool följer du stegen nedan.
 
 1. Öppna IP-poolnamnet genom att klicka på det i listan.
 

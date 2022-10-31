@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: a4653378-b70f-454c-a446-ab4a14d2580a
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: 3a932747de33ced59d68835a96386b7ac560e4fe
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '768'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 En inaktiveringslista består av e-postadresser som du vill utesluta från leveranser, eftersom det kan skada ditt sändningsrykte och din leveransfrekvens om du skickar till dessa kontakter.
 
-The [!DNL Journey Optimizer] Suppressionslistan hanteras på din egen miljönivå.
+The [!DNL Journey Optimizer] Suppressionslistan hanteras på din egen miljönivå, dvs. för en viss sandlåda.
 
 Den samlar in e-postadresser och domäner som inte används i alla e-postmeddelanden i en enda klientmiljö, vilket är specifikt för ett organisations-ID som är kopplat till ett sandbox-ID.
 

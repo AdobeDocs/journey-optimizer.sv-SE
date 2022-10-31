@@ -6,9 +6,9 @@ description: Lär dig konfigurera underdomäner för landningssidor med Journey 
 role: Admin
 level: Intermediate
 exl-id: dd1af8dc-3920-46cb-ae4d-a8f4d4c26e89
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: 3a932747de33ced59d68835a96386b7ac560e4fe
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,12 @@ ht-degree: 0%
 För att kunna [skapa förinställningar för landningssidor](lp-presets.md)måste du konfigurera de underdomäner som du ska använda för dina landningssidor.
 
 Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en annan underdomän. Läs mer om hur du delegerar underdomäner till Adobe in [det här avsnittet](delegate-subdomain.md).
+
+>[!CAUTION]
+>
+>Konfigurationen av deldomäner för landningssidor är gemensam för alla miljöer. Därför kommer alla ändringar av en underdomän för landningssidor också att påverka produktionssandlådorna.
+
+Observera att versaler inte får användas i en underdomän
 
 ## Använd en befintlig underdomän {#lp-use-existing-subdomain}
 
@@ -63,6 +69,8 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
    >[!NOTE]
    >
    >Du kan inte välja en underdomän som redan används som underdomän för landningssida.
+
+   <!--Capital letters are not allowed in subdomains. TBC by PM-->
 
    ![](assets/lp_prefix-and-subdomain.png)
 
@@ -106,6 +114,8 @@ Följ stegen nedan för att konfigurera en ny underdomän.
    >[!CAUTION]
    >
    >Du kan inte använda en befintlig underdomän för landningssida.
+   >
+   >Versaler tillåts inte i underdomäner.
 
    Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.dincompany.com.
 

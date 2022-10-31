@@ -8,9 +8,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: 3a932747de33ced59d68835a96386b7ac560e4fe
 workflow-type: tm+mt
-source-wordcount: '1667'
+source-wordcount: '1686'
 ht-degree: 4%
 
 ---
@@ -34,6 +34,8 @@ Du kan delegera en underdomän helt eller skapa en underdomän med CNAME för at
 >[!CAUTION]
 >
 >Den fullständiga underdomänsdelegeringen rekommenderas. Läs mer om skillnaderna mellan [konfigurationsmetoder för underdomäner](about-subdomain-delegation.md#subdomain-delegation-methods).
+>
+>Underdomänskonfigurationen är gemensam för alla miljöer. Därför kommer alla ändringar av en underdomän också att påverka produktionssandlådorna.
 
 ## Fullständig delegering av underdomäner {#full-subdomain-delegation}
 
@@ -67,6 +69,8 @@ Följ stegen nedan om du vill delegera en ny underdomän till Adobe helt:
    >
    >Observera att underdomäner på flera nivåer, som email.marketing.your.com, inte stöds för närvarande.
 
+   <!--Capital letters are not allowed in subdomains. TBC by PM-->
+
 1. Listan med poster som ska placeras på dina DNS-servrar visas. Kopiera de här posterna, antingen en efter en eller genom att hämta en CSV-fil, och navigera sedan till din värdlösning för domänen för att generera matchande DNS-poster.
 
 1. Kontrollera att alla DNS-poster har skapats i din domänvärdslösning. Om allt är korrekt konfigurerat markerar du rutan &quot;Jag bekräftar ...&quot; och klickar sedan på **[!UICONTROL Submit]**.
@@ -92,8 +96,6 @@ Följ stegen nedan om du vill delegera en ny underdomän till Adobe helt:
    >[!NOTE]
    >
    >Underdomänen markeras som **[!UICONTROL Failed]** om du inte skapar valideringsposten i din värdlösning.
-
-   <!-- later on, users will be notified in Pulse -->
 
 När en underdomän har delegerats till Adobe i [!DNL Journey Optimizer]skapas en PTR-post automatiskt och kopplas till den här underdomänen. [Läs mer](ptr-records.md)
 
@@ -133,6 +135,8 @@ Följ stegen nedan för att delegera en underdomän med CNAME:
    >Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.dincompany.com.
    >
    >Observera att underdomäner på flera nivåer, som email.marketing.your.com, inte stöds för närvarande.
+
+   <!--Capital letters are not allowed in subdomains. TBC by PM-->
 
 1. Listan med poster som ska placeras på dina DNS-servrar visas. Kopiera de här posterna, antingen en efter en eller genom att hämta en CSV-fil, och navigera sedan till din värdlösning för domänen för att generera matchande DNS-poster.
 
