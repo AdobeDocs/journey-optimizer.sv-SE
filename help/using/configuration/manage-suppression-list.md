@@ -8,9 +8,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-source-git-commit: 3a932747de33ced59d68835a96386b7ac560e4fe
+source-git-commit: 0c5a4291cdd46572faf2ab10c1c06987e4073b54
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1239'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Med [!DNL Journey Optimizer]kan du övervaka alla e-postadresser som automatiskt
 
 >[!NOTE]
 >
->Supprestionslistan används på sandlådenivå.
+>Supprestionslistan hanteras på sandlådenivå.
 
 Sådana e-postadresser samlas automatiskt in i Journey Optimizer **utelämningslista**. Läs mer om begrepp och användning i listan över inaktiveringar i [det här avsnittet](../reports/suppression-list.md).
 
@@ -90,7 +90,7 @@ Om du vill exportera listan över inaktiveringar som en CSV-fil följer du stege
 
    >[!NOTE]
    >
-   >Hämtningstiden beror på filstorleken, vilket innebär antalet e-postadresser som finns i listan över inaktiveringar.
+   >Hämtningstiden beror på filstorleken, vilket innebär antalet adresser som finns i listan över inaktiveringar.
    >
    >En hämtningsbegäran kan bearbetas åt gången för en viss sandlåda.
 
