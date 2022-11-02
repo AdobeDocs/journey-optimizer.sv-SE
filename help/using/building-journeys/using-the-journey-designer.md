@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 1998f6fc-60fd-4038-8669-39cd55bc02d1
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: 7d69fba9dc01fd36dd7a4360204ef318c3264b60
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1479'
 ht-degree: 1%
 
 ---
@@ -22,11 +22,13 @@ ht-degree: 1%
 >title="Utforma din resa"
 >abstract="Med resegränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan. Du kan också dubbelklicka på en aktivitet för att lägga till den på arbetsytan i nästa steg som är tillgängligt."
 
-Med resegränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan. Du kan också dubbelklicka på en aktivitet för att lägga till den på arbetsytan i nästa steg som är tillgängligt. Varje aktivitet har en särskild roll och plats i processen. Aktiviteterna är sekventierade. När en aktivitet är klar fortsätter flödet och bearbetar nästa aktivitet och så vidare.
+Adobe Journey Optimizer har en flerkanalig orkestreringsyta som gör att marknadsförarna kan harmonisera marknadsföringen med ett-till-ett-kundengagemang. Med användargränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan för att skapa din resa. Observera att du även kan dubbelklicka på en aktivitet för att lägga till den på arbetsytan i nästa tillgängliga steg.
+
+Händelser, samordning och åtgärder har en särskild roll och plats i processen. Aktiviteterna är sekventiella: När en aktivitet är klar fortsätter flödet och bearbetar nästa aktivitet och så vidare.
 
 ## Kom igång med resedesign {#gs-journey-design}
 
-The **palett** finns till vänster på skärmen. Alla tillgängliga aktiviteter är sorterade i flera kategorier: **[!UICONTROL Events]**, **[!UICONTROL Orchestration]** och **[!UICONTROL Actions]**. Du kan expandera/komprimera de olika kategorierna genom att klicka på deras namn. Om du vill använda en aktivitet på din resa drar och släpper du den från paletten till arbetsytan.
+The **palett** finns till vänster på skärmen. Alla tillgängliga aktiviteter är sorterade i flera kategorier: [Händelser](#jo-event), [Orchestration](#jo-orch) och [Åtgärder](#jo-actions). Du kan expandera/komprimera de olika kategorierna genom att klicka på deras namn. Om du vill använda en aktivitet på din resa drar och släpper du den från paletten till arbetsytan.
 
 När du påbörjar en ny resa döljs element som inte kan släppas på arbetsytan som det första steget. Detta gäller alla åtgärder, villkorsaktiviteten, väntetiden och reaktionen.
 
@@ -66,27 +68,27 @@ När du utformar din resa är den första frågan du vill ställa hur profiler k
 
 Efter din första händelse eller Läs segment kan du kombinera de olika aktiviteterna för att skapa flerstegsscenarier för flera kanaler. Välj de steg du behöver på paletten.
 
-**Händelser**
+### Händelser{#jo-event}
 
-När du påbörjar din resa med en händelse aktiveras resan när händelsen tas emot. Personen kommer sedan, individuellt, att följa nästa steg som definieras under din resa.
+När du påbörjar din resa med en händelse aktiveras resan när händelsen tas emot. Varje person på resan följer sedan, individuellt, de steg som definieras på din resa.
 
-Du kan lägga till **flera händelser** under resan, så länge de använder samma namnutrymme. Händelser konfigureras i förväg. [Läs mer om evenemang](about-journey-activities.md#event-activities)
+Du kan lägga till **flera händelser** under resan, så länge de använder samma namnutrymme. Händelser konfigureras i förväg. [Läs mer om reseevenemang](about-journey-activities.md#event-activities)
 
-Du kan också lägga till en **Reaktion** händelse efter ett meddelande om att reagera på spårningsdata som är relaterade till meddelandet. Detta gör att du till exempel kan skicka ett till meddelande om personen öppnade det föregående meddelandet eller klickade i det. Läs mer om detta [section](reaction-events.md).
+Du kan också lägga till en **Reaktion** händelse efter ett meddelande om att reagera på spårningsdata som är relaterade till meddelandet. Detta gör att du till exempel kan skicka ett till meddelande om personen öppnade det föregående meddelandet eller klickade i det. [Läs mer om reaktionshändelser](reaction-events.md).
 
-The **Segmentkvalificering** Med händelseaktivitet kan du få individer att komma in på eller gå framåt i en resa baserat på Adobe Experience Platform segmentingångar och utgångar. Ni kan få alla nya silverkunder att delta i en resa och skicka personaliserade meddelanden. Läs mer om detta [section](segment-qualification-events.md).
+Använd **Segmentkvalificering** aktivitet för att få enskilda att komma in på eller gå vidare i en resa baserat på Adobe Experience Platform segmententréer och utträde. Ni kan få alla nya silverkunder att delta i en resa och skicka personaliserade meddelanden. Läs mer om detta [section](segment-qualification-events.md).
 
-**Orchestration**
+### Orchestration{#jo-orch}
 
-I orkestreringsaktiviteterna hittar du **Läs segment** som gör att du kan ställa in din resa så att du lyssnar på ett Adobe Experience Platform-segment. [Läs mer om Läs segment-aktiviteten](read-segment.md).
+I orkestreringsaktiviteterna använder du **Läs segment** aktivitet som sätter din resa att lyssna på ett Adobe Experience Platform-segment. [Läs mer om Läs segment-aktiviteten](read-segment.md).
 
-Med de andra aktiviteterna kan du lägga till villkor för din resa för att definiera flera olika vägar, ange en väntetid innan nästa aktivitet utförs eller avsluta din resa. Läs mer om detta [section](about-journey-activities.md#orchestration-activities).
+Med de andra aktiviteterna kan du lägga till villkor för din resa för att definiera flera olika vägar, ange en väntetid innan nästa aktivitet utförs eller avsluta din resa. [Läs mer om orkestreringsaktiviteter](about-journey-activities.md#orchestration-activities).
 
-**Instruktioner**
+### Instruktioner{#jo-actions}
 
-Här finns kanalåtgärdsaktiviteten som gör att du kan inkludera ett meddelande som är utformat i [!DNL Journey Optimizer]. [Läs mer om kanalaktiviteter](journeys-message.md)
+Med kanalåtgärdsaktiviteterna kan du inkludera ett meddelande som är utformat i [!DNL Journey Optimizer]. [Läs mer om kanalaktiviteter](journeys-message.md)
 
-Du hittar också de anpassade åtgärder som du har konfigurerat för att skicka meddelanden med tredjepartssystem. Läs mer om detta [section](about-journey-activities.md#action-activities).
+Använd anpassade åtgärder från åtgärdsaktiviteterna för att skicka meddelanden med tredjepartssystem. [Läs mer om anpassade åtgärder](about-journey-activities.md#action-activities).
 
 ## Lägg till alternativa banor{#paths}
 
