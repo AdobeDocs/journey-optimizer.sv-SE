@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 09a2e892-8c6f-460d-8b12-5026582c6ed0
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: 9b4ab81a362c38dce5ff4b10fb301c81ed117688
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '295'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 När det gäller att ange bakgrunder med e-postdesignern rekommenderar Adobe följande:
 
 1. Använd en bakgrundsfärg på e-postmeddelandets brödtext om det behövs i designen.
-1. I de flesta fall anger du bakgrundsfärger på kolumnnivå.
+1. Vanligtvis anger du bakgrundsfärger på kolumnnivå.
 1. Försök att inte använda bakgrundsfärger i bild- eller textkomponenter eftersom de är svåra att hantera.
 
 Nedan visas de tillgängliga bakgrundsinställningarna som du kan använda.
