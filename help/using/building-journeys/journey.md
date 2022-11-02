@@ -7,7 +7,7 @@ feature: Journeys
 role: User
 level: Beginner
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
-source-git-commit: 23946a9d61275254ddaab6bb547682cecdc4c457
+source-git-commit: 9b4ab81a362c38dce5ff4b10fb301c81ed117688
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Kom igång med resor{#jo-general-principle}
 
-Använd [!DNL Journey Optimizer] för att skapa realtidssamordning med hjälp av kontextuella data som lagras i händelser eller datakällor.
+Använd [!DNL Journey Optimizer] för att skapa användningsfall för realtidssamordning med hjälp av kontextuella data lagrade i händelser eller datakällor.
 
 Utforma avancerade scenarier i flera steg med följande funktioner:
 
@@ -74,7 +74,7 @@ När du söker efter en resa visas de senaste versionerna högst upp i listan f�
 
 >[!NOTE]
 >
->I de flesta fall kan en profil inte finnas flera gånger på samma resa samtidigt. Om återinträde är aktiverat kan en profil återansluta en resa, men kan inte göra det förrän den tidigare instansen av resan har avslutats helt. [Läs mer](end-journey.md).
+>Vanligtvis kan en profil inte finnas flera gånger på samma resa samtidigt. Om återinträde är aktiverat kan en profil återansluta en resa, men kan inte göra det förrän den tidigare instansen av resan har avslutats helt. [Läs mer](end-journey.md).
 
 Om du behöver ändra till en direktresa skapar du en ny version av din resa.
 
