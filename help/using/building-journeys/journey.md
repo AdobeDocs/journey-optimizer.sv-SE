@@ -1,22 +1,21 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Allmän princip
-description: Allmän princip
+title: Kom igång med resor
+description: Kom igång med resor
 feature: Journeys
-topic: Content Management
 role: User
 level: Beginner
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
-source-git-commit: ab2956ab1dc3dfdf2ff67c3b6bcb1e3090d34ee3
+source-git-commit: 23946a9d61275254ddaab6bb547682cecdc4c457
 workflow-type: tm+mt
-source-wordcount: '568'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Allmän princip{#jo-general-principle}
+# Kom igång med resor{#jo-general-principle}
 
 Använd [!DNL Journey Optimizer] för att skapa realtidssamordning med hjälp av kontextuella data som lagras i händelser eller datakällor.
 
@@ -32,7 +31,7 @@ Utforma avancerade scenarier i flera steg med följande funktioner:
 
 ## Steg för att skapa en resa{#steps-journey}
 
-Använd Adobe Journey Optimizer för att designa och samordna personaliserade resor från en enda arbetsyta.
+Använd Adobe Journey Optimizer för att utforma och samordna personaliserade resor från en arbetsyta.
 
 Adobe Journey Optimizer har en flerkanalig orkestreringsyta som gör att marknadsförarna kan harmonisera marknadsföringen med ett-till-ett-kundengagemang. Med användargränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan för att skapa din resa.
 
