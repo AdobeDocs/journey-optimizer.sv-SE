@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: af59c7ed83f18932fe13791b50713eabfba3b549
+source-git-commit: ca423c25d39162838368b2242c1aff99388df768
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1244'
 ht-degree: 35%
 
 ---
@@ -32,21 +32,18 @@ ht-degree: 35%
    + [Användargränssnitt](using/start/user-interface.md)
    + [Guardrails](using/start/guardrails.md)
 + Resor {#orchestrate-journeys}
-   + Om resor{#about-journeys}
-      + [Allmän princip](using/building-journeys/journey.md)
-      + [Resans livscykel](using/building-journeys/journey-end.md)
-      + [Reseversioner](using/building-journeys/journey-versions.md)
-      + [Integrera med intelligenta tjänster](using/building-journeys/ai-services-overview.md)
+   + [Kom igång med resor](using/building-journeys/journey.md)
    + Skapa en resa{#create-journey}
-      + [Kom igång med resor](using/building-journeys/journey-gs.md)
+      + [Skapa din första resa](using/building-journeys/journey-gs.md)
       + [Utforma din resa](using/building-journeys/using-the-journey-designer.md)
       + [Testa din resa](using/building-journeys/testing-the-journey.md)
       + [Publicera din resa](using/building-journeys/publishing-the-journey.md)
       + [Hantering av tidszoner](using/building-journeys/timezone-management.md)
       + [Kopiera en resa till en annan sandlåda](using/building-journeys/copy-to-sandbox.md)
       + [Felsök din resa](using/building-journeys/troubleshooting.md)
+      + [Integrera med intelligenta tjänster](using/building-journeys/ai-services-overview.md)
    + Aktiviteter {#about-journey-building}
-      + [Om reseaktiviteter](using/building-journeys/about-journey-activities.md)
+      + [Kom igång med reseaktiviteter](using/building-journeys/about-journey-activities.md)
       + [Allmänna händelser](using/building-journeys/general-events.md)
       + [Reaktion](using/building-journeys/reaction-events.md)
       + [Segmentkvalificering](using/building-journeys/segment-qualification-events.md)

@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e0ca8aef-4f1d-4631-8c34-1692d96e8b51
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: ca423c25d39162838368b2242c1aff99388df768
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 7%
@@ -21,7 +21,7 @@ Du kan publicera en resa efter att ha testat dess giltighet.
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
-Om du behöver göra ändringar i en publicerad resa måste du skapa en ny version av din resa. Läs [den här sidan](../building-journeys/journey-versions.md). När en resa är skrivskyddad kan du bara ändra aktivitetsetiketter och beskrivningar, kundens namn och resans beskrivning.
+Om du behöver göra ändringar i en publicerad resa måste du skapa en ny version av din resa. Läs [den här sidan](../building-journeys/journey.md). När en resa är skrivskyddad kan du bara ändra aktivitetsetiketter och beskrivningar, kundens namn och resans beskrivning.
 
 Om du avbryter en resa stoppas den permanent. Alla personer som flyter på resan kommer att stoppas permanent och resan kommer att upphöra så att nya deltagare tillåts. Om du behöver använda resan igen måste du duplicera den och publicera den.
 

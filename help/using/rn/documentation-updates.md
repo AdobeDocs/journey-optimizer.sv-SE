@@ -4,7 +4,7 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 3a932747de33ced59d68835a96386b7ac560e4fe
+source-git-commit: ca423c25d39162838368b2242c1aff99388df768
 workflow-type: tm+mt
 source-wordcount: '2126'
 ht-degree: 18%
@@ -63,7 +63,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Ett nytt avsnitt om sekretessförfrågningar har lagts till i dokumentationen. [Läs mer](../privacy/requests.md)
 * Ett nytt avsnitt om granskningsloggar på resurser har lagts till i dokumentationen. [Läs mer](../privacy/audit-logs.md)
 * Ett nytt avsnitt om hur du lägger till HTML eller JSON-innehåll som kommer från Adobe Experience Cloud Asset-biblioteket i en offertrepresentation har lagts till i dokumentationen. [Läs mer](../offers/offer-library/add-representations.md#html-json)
-* En ny sida om resans livscykel har lagts till. [Läs mer](../building-journeys/journey-end.md)
+* En ny sida om resans livscykel har lagts till. [Läs mer](../building-journeys/journey.md#journey-versions)
 * Sidan Vänta aktivitet har uppdaterats. [Läs mer](../building-journeys/wait-activity.md)
 * Listan med Adobe Journey Optimizer datauppsättningar har lagts till med frågeexempel. [Läs mer](../start/datasets-query-examples.md)
 * Sidan Tillåtelselista har flyttats till avsnittet Konfiguration. [Läs mer](../configuration/allow-list.md)

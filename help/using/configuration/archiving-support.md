@@ -8,7 +8,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 186a5044-80d5-4633-a7a7-133e155c5e9f
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: ca423c25d39162838368b2242c1aff99388df768
 workflow-type: tm+mt
 source-wordcount: '1257'
 ht-degree: 1%
@@ -156,7 +156,7 @@ Beroende på vilken information du söker kan du köra följande frågor.
    
    >[!NOTE]
    >
-   >För att få `<journey version id>`väljer du motsvarande [reseversion](../building-journeys/journey-versions.md) från **[!UICONTROL Journey management]** > **[!UICONTROL Journeys]** -menyn. Resursversions-ID visas i slutet av den URL som visas i webbläsaren.
+   >För att få `<journey version id>`väljer du motsvarande [reseversion](../building-journeys/journey.md#journey-versions) från **[!UICONTROL Journey management]** > **[!UICONTROL Journeys]** -menyn. Resursversions-ID visas i slutet av den URL som visas i webbläsaren.
    >
    >![](assets/preset-bcc-action-id.png)
 
@@ -216,18 +216,18 @@ Beroende på vilken information du söker kan du köra följande frågor.
 1. Kör den här frågan för att hämta alla mottagaradresser som inte har fått meddelandet, medan dess BCC-post finns inom de senaste 30 dagarna:
 
    ```
-   SELECT
-       DISTINCT 
-   bcc._experience.customerJourneyManagement.secondaryRecipientDetail.originalRecipientAddress AS RecipientAddressesNotRecievedMessage
-   FROM ajo_bcc_feedback_event_dataset bcc
-   LEFT JOIN cjm_message_feedback_event_dataset mfe
-   ON 
+    SELECT
+        DISTINCT 
+    bcc._experience.customerJourneyManagement.secondaryRecipientDetail.originalRecipientAddress AS RecipientAddressesNotRecievedMessage
+    FROM ajo_bcc_feedback_event_dataset bcc
+    LEFT JOIN cjm_message_feedback_event_dataset mfe
+    ON 
    bcc._experience.customerJourneyManagement.messageExecution.journeyVersionID =
-           mfe._experience.customerJourneyManagement.messageExecution.journeyVersionID AND    bcc._experience.customerJourneyManagement.messageExecution.journeyActionID = mfe._experience.customerJourneyManagement.messageExecution.journeyActionID AND 
+            mfe._experience.customerJourneyManagement.messageExecution.journeyVersionID AND    bcc._experience.customerJourneyManagement.messageExecution.journeyActionID = mfe._experience.customerJourneyManagement.messageExecution.journeyActionID AND 
    bcc._experience.customerJourneyManagement.secondaryRecipientDetail.originalRecipientAddress = mfe._experience.customerJourneyManagement.emailChannelContext.address AND
    mfe._experience.customerJourneyManagement.messageExecution.journeyVersionID = '<journey version id>' AND 
    mfe._experience.customerJourneyManagement.messageExecution.journeyActionID = '<journey action id>' AND
    mfe.timestamp > now() - INTERVAL '30' DAY AND
    mfe._experience.customerjourneymanagement.messagedeliveryfeedback.feedbackstatus IN ('bounce', 'out_of_band') 
-   WHERE bcc.timestamp > now() - INTERVAL '30' DAY;
+    WHERE bcc.timestamp > now() - INTERVAL '30' DAY;
    ```

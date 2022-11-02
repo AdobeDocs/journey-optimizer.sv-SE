@@ -1,24 +1,27 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-description: Läs om reseaktiviteter
+title: Kom igång med reseaktiviteter
+description: Kom igång med reseaktiviteter
 feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
 exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
-source-git-commit: d17e64e03d093a8a459caef2fb0197a5710dfb7d
+source-git-commit: ca423c25d39162838368b2242c1aff99388df768
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 25%
+source-wordcount: '411'
+ht-degree: 16%
 
 ---
 
-# Om reseaktiviteter {#about-journey-activities}
+# Kom igång med reseaktiviteter {#about-journey-activities}
 
 Kombinera de olika händelserna, orkestreringen och åtgärderna för att skapa scenarier i flera steg över olika kanaler.
 
 ## Händelseaktiviteter {#event-activities}
+
+Det är händelser som utlöser en personaliserad resa, till exempel ett onlineköp. När någon väl går in på en resa förflyttas de som en individ, och inga två personer följer med på samma hastighet eller längs samma väg. När du påbörjar din resa med en händelse aktiveras resan när händelsen tas emot. Varje person på resan följer sedan, individuellt, de steg som definieras på din resa.
 
 Händelser som konfigurerats av den tekniska användaren (se [den här sidan](../event/about-events.md)) visas i den första kategorin på paletten, till vänster på skärmen. Följande aktiviteter är tillgängliga:
 
@@ -34,6 +37,8 @@ Starta din resa genom att dra och släppa en händelseaktivitet. Du kan också d
 
 ## Orkestreringsaktiviteter {#orchestration-activities}
 
+Orchestration-aktiviteter är olika villkor som hjälper till att bestämma nästa steg i resan. Det kan vara om personen har ett öppet supportärende eller inte, väderprognosen på sin nuvarande plats, om de slutförde ett köp eller inte, eller uppnådde 10 000 förmånspoäng.
+
 På paletten till vänster på skärmen finns följande orkestreringsfunktioner:
 
 * [Villkor](../building-journeys/condition-activity.md)
@@ -43,6 +48,8 @@ På paletten till vänster på skärmen finns följande orkestreringsfunktioner:
 ![](assets/journey49.png)
 
 ## Åtgärdsaktiviteter {#action-activities}
+
+Åtgärder är vad du vill ska hända som ett resultat av någon typ av utlösare, som att skicka ett meddelande. Det är den del av resan som kundupplevelsen innebär.
 
 Från paletten, till vänster på skärmen, nedanför **[!UICONTROL Events]** och **[!UICONTROL Orchestration]** hittar du **[!UICONTROL Actions]** kategori. Följande åtgärdsaktiviteter är tillgängliga:
 
@@ -54,7 +61,7 @@ Från paletten, till vänster på skärmen, nedanför **[!UICONTROL Events]** oc
 
 Dessa aktiviteter representerar olika tillgängliga kommunikationskanaler. Du kan kombinera dem för att skapa ett flerkanalsscenario.
 
-Om du har konfigurerat anpassade åtgärder visas de här (se [den här sidan](../building-journeys/using-custom-actions.md)).
+Om du har konfigurerat anpassade åtgärder visas de också här. [Läs mer](../building-journeys/using-custom-actions.md)).
 
 ## God praxis {#best-practices}
 

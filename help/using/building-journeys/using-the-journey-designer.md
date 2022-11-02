@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 1998f6fc-60fd-4038-8669-39cd55bc02d1
-source-git-commit: 7d69fba9dc01fd36dd7a4360204ef318c3264b60
+source-git-commit: ca423c25d39162838368b2242c1aff99388df768
 workflow-type: tm+mt
-source-wordcount: '1479'
+source-wordcount: '1577'
 ht-degree: 1%
 
 ---
@@ -60,15 +60,17 @@ Beroende på resans status kan du utföra olika åtgärder under resan med hjäl
 
 När du utformar din resa är den första frågan du vill ställa hur profiler kommer in på resan. Det finns två möjligheter:
 
-**Börja med en händelse**: när en resa är inställd på att avlyssna händelser, kommer individer in på resan **unitärt** i realtid. Meddelanden som ingår i din resa skickas till den person som för tillfället är på väg in på resan. [Läs mer om evenemang](../event/about-events.md)
+1. **Börja med en händelse**: när en resa är inställd på att avlyssna händelser, kommer individer in på resan **unitärt** i realtid. Meddelanden som ingår i din resa skickas till den person som för tillfället är på väg in på resan. [Läs mer om evenemang](../event/about-events.md)
 
-**Börja med ett lässegment**: kan ni styra er resa så att ni lyssnar på Adobe Experience Platform segment. I det här fallet kommer alla personer som tillhör det angivna segmentet in på resan. Meddelanden som ingår i resan skickas till personer som tillhör segmentet. [Läs mer om att läsa segment](read-segment.md).
+1. **Börja med ett lässegment**: kan ni styra er resa så att ni lyssnar på Adobe Experience Platform segment. I det här fallet kommer alla personer som tillhör det angivna segmentet in på resan. Meddelanden som ingår i resan skickas till personer som tillhör segmentet. [Läs mer om att läsa segment](read-segment.md).
 
 ## Definiera nästa steg{#define-next-steps}
 
 Efter din första händelse eller Läs segment kan du kombinera de olika aktiviteterna för att skapa flerstegsscenarier för flera kanaler. Välj de steg du behöver på paletten.
 
 ### Händelser{#jo-event}
+
+Det är händelser som utlöser en personaliserad resa, till exempel ett onlineköp. När någon väl går in på en resa förflyttas de som en individ, och inga två personer följer med på samma hastighet eller längs samma väg.
 
 När du påbörjar din resa med en händelse aktiveras resan när händelsen tas emot. Varje person på resan följer sedan, individuellt, de steg som definieras på din resa.
 
@@ -80,11 +82,15 @@ Använd **Segmentkvalificering** aktivitet för att få enskilda att komma in p�
 
 ### Orchestration{#jo-orch}
 
-I orkestreringsaktiviteterna använder du **Läs segment** aktivitet som sätter din resa att lyssna på ett Adobe Experience Platform-segment. [Läs mer om Läs segment-aktiviteten](read-segment.md).
+Orchestration-aktiviteter är olika villkor som hjälper till att bestämma nästa steg i resan.
+
+I orkestreringsaktiviteterna använder du **Läs segment** -aktivitet för att få din resa att lyssna på ett Adobe Experience Platform-segment. [Läs mer om Läs segment-aktiviteten](read-segment.md).
 
 Med de andra aktiviteterna kan du lägga till villkor för din resa för att definiera flera olika vägar, ange en väntetid innan nästa aktivitet utförs eller avsluta din resa. [Läs mer om orkestreringsaktiviteter](about-journey-activities.md#orchestration-activities).
 
 ### Instruktioner{#jo-actions}
+
+Åtgärder är vad du vill ska hända som ett resultat av någon typ av utlösare, som att skicka ett meddelande. Det är den del av resan som kundupplevelsen innebär. Det kan vara ett e-postmeddelande, SMS eller push-meddelande eller en åtgärd från tredje part, som ett Slack-meddelande.
 
 Med kanalåtgärdsaktiviteterna kan du inkludera ett meddelande som är utformat i [!DNL Journey Optimizer]. [Läs mer om kanalaktiviteter](journeys-message.md)
 
