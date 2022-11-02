@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: af59c7ed83f18932fe13791b50713eabfba3b549
+source-git-commit: 4d3c79438056be6e97cfa877f1f7d6dfeba74548
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Med arbetsflöden för kompositioner kan ni kombinera och ordna befintliga målg
 
    ![](assets/audiences-alerts.png)
 
-1. Dispositionen publiceras. De resulterande målgrupperna sparas i Adobe Experience Platform och är redo att målinrikta sig i Journey Optimizer-kampanjer. [Kom igång med kampanjer](../campaigns/get-started-with-campaigns.md)
+1. Dispositionen publiceras. De resulterande målgrupperna sparas i Adobe Experience Platform och är redo att målinrikta sig i Journey Optimizer-kampanjer. [Lär dig hur du arbetar med kampanjer](../campaigns/get-started-with-campaigns.md)
 
 ## Åtkomst till kompositioner {#access}
 

@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: af59c7ed83f18932fe13791b50713eabfba3b549
+source-git-commit: 4d3c79438056be6e97cfa877f1f7d6dfeba74548
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 Målgruppsdisposition gör att du kan skapa **arbetsflöden för disposition**, där ni kan kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och utnyttja olika aktiviteter (dela, exkludera..) för att skapa nya målgrupper.
 
-När du är klar **resulterande målgrupper** sparas i Adobe Experience Platform tillsammans med befintliga målgrupper och kan **används i kampanjer** målgruppsanpassning.
+När du är klar **resulterande målgrupper** sparas i Adobe Experience Platform tillsammans med befintliga målgrupper och kan **används i kampanjer** målgruppsanpassning. [Lär dig hur du arbetar med kampanjer](../campaigns/get-started-with-campaigns.md)
 
 ![](assets/audiences-process.png)
 
