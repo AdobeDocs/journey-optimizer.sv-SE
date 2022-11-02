@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: af59c7ed83f18932fe13791b50713eabfba3b549
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '1004'
 ht-degree: 0%
 
 ---
@@ -28,24 +28,28 @@ Så här konfigurerar du en komposition på arbetsytan:
 
 ## Välj den inledande målgruppen {#starting-audience}
 
->[!CONTEXTUALHELP]
->id="ajo_ao_merge_types"
->title="Sammanfoga typer"
->abstract="Ange hur profilerna för de valda målgrupperna ska sammanfogas."
-
 Det första steget för att skapa en komposition är att välja en eller flera befintliga målgrupper som grund för din komposition.
 
-Välj **[!UICONTROL Audience]** klickar du sedan på **[!UICONTROL Add audience]** sedan en eller flera målgrupper.
+1. Välj **[!UICONTROL Audience]** aktiviteten anger sedan en etikett för aktiviteten.
+
+1. Välj målgrupp:
+
+   * Klicka på **[!UICONTROL Add audience]** knapp för att välja en eller flera befintliga målgrupper,
+   * Klicka på **[!UICONTROL Build rule]** för att skapa en ny segmentdefinition med [Segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html).
+
+   ![](assets/audiences-choose-audience.png)
+
+1. Om du väljer flera målgrupper anger du hur profilerna för dessa målgrupper ska sammanfogas:
+
+* **[!UICONTROL Union]**: inkludera alla profiler från de valda målgrupperna,
+* **[!UICONTROL Intersection]**: innehåller profiler som är gemensamma för alla valda målgrupper,
+* **[!UICONTROL Exclude overlap]**: innehåller profiler som bara tillhör en av målgrupperna. Profiler som tillhör fler än en publik inkluderas inte.
 
 I det här exemplet vill vi inrikta oss på alla profiler som tillhör publikerna guld och silver.
 
 ![](assets/audiences-starting-audience.png)
 
-Om du väljer flera målgrupper anger du hur profilerna för dessa målgrupper ska sammanfogas:
-
-* **[!UICONTROL Union]**: inkludera alla profiler från de valda målgrupperna,
-* **[!UICONTROL Intersection]**: innehåller profiler som är gemensamma för alla valda målgrupper,
-* **[!UICONTROL Exclude overlap]**: innehåller profiler som bara tillhör en av målgrupperna. Profiler som tillhör fler än en publik inkluderas inte.
+När målgrupper har valts visas det uppskattade antalet profiler längst ned i aktiviteten.
 
 ## Lägg till aktiviteter {#action-activities}
 
@@ -74,6 +78,11 @@ Tillgängliga aktiviteter är:
 >id="ajo_ao_audience"
 >title="Målgruppsaktivitet"
 >abstract="Med hjälp av Audience-aktiviteten kan du i din komposition inkludera ytterligare profiler som tillhör en befintlig målgrupp."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_merge_types"
+>title="Sammanfoga typer"
+>abstract="Ange hur profilerna för de valda målgrupperna ska sammanfogas."
 
 The **[!UICONTROL Audience]** kan du i din komposition inkludera ytterligare profiler som tillhör en befintlig målgrupp.
 
@@ -121,7 +130,7 @@ The **[!UICONTROL Rank]** Med -aktivitet kan du rangordna profiler baserat på e
 
 1. Markera det attribut som du vill söka efter och ange en rangordningsordning (stigande eller fallande).
 
-   >[OBS!]
+   >[!NOTE]
    >
    >Du kan välja attribut med följande datatyper: heltal, tal, kort <!--(other?)-->
 

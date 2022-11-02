@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: af59c7ed83f18932fe13791b50713eabfba3b549
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -39,25 +39,23 @@ Med arbetsflöden för kompositioner kan ni kombinera och ordna befintliga målg
    * **[!UICONTROL Save]**: det sista steget i kompositionen. Med den här aktiviteten kan du spara resultatet av arbetsflödet till en ny målgrupp.
    Mer information om hur du konfigurerar aktiviteter på arbetsytan för dispositionsarbetsflöden finns i [Arbeta med arbetsytan](composition-canvas.md).
 
-1. Välj **[!UICONTROL Audience]** och sedan ange en etikett för kompositionen.
+1. Öppna dispositionsegenskaperna för att ange en titel och en beskrivning.
 
-   >[!IMPORTANT]
-   >
-   >The **[!UICONTROL Audience]** aktivitetsetiketten är etiketten för din komposition. Ange ett beskrivande namn för att enklare hämta kompositionen i listan.
+   Om ingen rubrik har definierats i egenskaperna är dispositionsetiketten den som börjar **[!UICONTROL Audience]** aktivitet.
 
-   ![](assets/audiences-new-composition.png)
+   ![](assets/audiences-properties.png)
 
 1. Konfigurera kompositionen genom att lägga till så många aktiviteter som behövs mellan **[!UICONTROL Audience]** och **[!UICONTROL Save]** verksamhet. [Lär dig arbeta med arbetsytan](composition-canvas.md)
 
    ![](assets/audiences-publish.png)
 
-1. När kompositionen är klar klickar du på [**!UICONTROL-publicering]** för att publicera kompositionen och spara målgrupperna i Adobe Experience Platform.
+1. När kompositionen är klar klickar du på **[!UICONTROL Publish]** för att publicera kompositionen och spara målgrupperna i Adobe Experience Platform.
 
    Om något fel inträffar under publiceringen visas varningar med information om hur du löser problemet.
 
    ![](assets/audiences-alerts.png)
 
-1. Dispositionen publiceras. De resulterande målgrupperna sparas i Adobe Experience Platform. <!-- and are ready to be targeted in Journey Optimizer campaigns. [Get started with campaigns](../campaigns/get-started-with-campaigns.md)-->
+1. Dispositionen publiceras. De resulterande målgrupperna sparas i Adobe Experience Platform och är redo att målinrikta sig i Journey Optimizer-kampanjer. [Kom igång med kampanjer](../campaigns/get-started-with-campaigns.md)
 
 ## Åtkomst till kompositioner {#access}
 
@@ -69,7 +67,7 @@ Med arbetsflöden för kompositioner kan ni kombinera och ordna befintliga målg
 Alla skapade kompositioner kan nås via **[!UICONTROL Compositions]** -fliken. De kan ha flera statusar:
 
 * **[!UICONTROL Draft]**: kompositionen pågår och har inte publicerats.
-* **[!UICONTROL Published]**: kompositionen har publicerats, målgrupperna har sparats. <!-- and are available for use.-->
+* **[!UICONTROL Published]**: kompositionen har publicerats, målgrupperna har sparats och är tillgängliga för användning.
 * **[!UICONTROL Archived]**: kompositionen har arkiverats.
 
 ![](assets/audiences-compositions.png)

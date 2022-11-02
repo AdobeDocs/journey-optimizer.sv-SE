@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: af59c7ed83f18932fe13791b50713eabfba3b549
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,13 @@ ht-degree: 0%
 
 Målgruppsdisposition gör att du kan skapa **arbetsflöden för disposition**, där ni kan kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och utnyttja olika aktiviteter (dela, exkludera..) för att skapa nya målgrupper.
 
-När du är klar **resulterande målgrupper** sparas i Adobe Experience Platform tillsammans med befintliga målgrupper.<!--, and can be **leveraged in campaigns** to target customers.-->
+När du är klar **resulterande målgrupper** sparas i Adobe Experience Platform tillsammans med befintliga målgrupper och kan **används i kampanjer** målgruppsanpassning.
 
 ![](assets/audiences-process.png)
 
 >[!IMPORTANT]
 >
->För närvarande kan målgrupper som är ett resultat av kompositionsarbetsflöden inte riktas in på Journey Optimizer. De kan inte heller ha Adobe Experience Platform Destinations som mål.
+>Målgrupper från arbetsflöden för disposition kan endast användas i Journey Optimizer-kampanjer. De är inte tillgängliga för användning under resor.
 
 ## Få åtkomst till publikens sammansättning {#access}
 
