@@ -5,7 +5,7 @@ title: Journey Optimizer Get started for Marketers
 description: Lär dig mer om hur du arbetar med Journey Optimizer som resande
 level: Intermediate
 exl-id: 34304142-3ee8-4081-94b9-e914968c75ba
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: 9b4ab81a362c38dce5ff4b10fb301c81ed117688
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%
@@ -30,9 +30,9 @@ Se följande avsnitt för att konfigurera din första resa, lägga till erbjudan
 
    ![](../assets/offers-e2e-offers-displayed.png)
 
-1. **Testa och validera**. När innehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du infogade [personaliserat innehåll](../../personalization/personalize.md)kommer du att kunna kontrollera hur det här innehållet visas i meddelandet, med hjälp av testprofildata. Dessutom kan du **Litmus** konto till [!DNL Journey Optimizer] för att omedelbart förhandsgranska **e-poståtergivning** i vanliga e-postklienter. Sedan kan ni se till att e-postinnehållet ser bra ut och fungerar som det ska i alla inkorgar. Lär dig hur du testar och validerar meddelanden [i det här avsnittet](../../design/preview.md).
+1. **Testa och validera**. När innehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du infogade [personaliserat innehåll](../../personalization/personalize.md)kan du med hjälp av testprofildata kontrollera hur det här innehållet visas i meddelandet. Dessutom kan du **Litmus** konto till [!DNL Journey Optimizer] för att omedelbart förhandsgranska **e-poståtergivning** i vanliga e-postklienter. Sedan kan ni se till att e-postinnehållet ser bra ut och fungerar som det ska i alla inkorgar. Lär dig hur du testar och validerar meddelanden [i det här avsnittet](../../design/preview.md).
 
-1. **Designa kundresor** för att leverera personaliserade, sammanhangsbaserade upplevelser. [!DNL Journey Optimizer] gör att du kan skapa användningsfall för realtidssamordning med hjälp av kontextuella data som lagras i händelser eller datakällor. Utforma avancerade scenarier i flera steg med följande funktioner:
+1. **Designa kundresor** för att leverera personaliserade, sammanhangsbaserade upplevelser. [!DNL Journey Optimizer] gör att du kan skapa användningsfall för realtidssamordning med kontextuella data lagrade i händelser eller datakällor. Utforma avancerade scenarier i flera steg med följande funktioner:
 
    * Skicka i realtid **enhetlig leverans** aktiveras när en händelse tas emot, eller **i batch** med Adobe Experience Platform-segment.
 
