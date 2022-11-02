@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: af59c7ed83f18932fe13791b50713eabfba3b549
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '138'
 ht-degree: 1%
 
 ---
@@ -20,10 +20,6 @@ ht-degree: 1%
 # Få åtkomst till och hantera målgrupper {#access-manage-audiences}
 
 Publiken är tillgänglig från **[!UICONTROL Audiences]** i **[!UICONTROL Segments]** -menyn.
-
->[!IMPORTANT]
->
->För närvarande kan målgrupper som är ett resultat av kompositionsarbetsflöden inte riktas in på Journey Optimizer.
 
 På den här fliken visas alla målgrupper som lagras i Adobe Experience Platform. Målgrupper som skapats med målgruppskompositioner kan identifieras av **[!UICONTROL Audience composition]** ursprung.
 
