@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: 412f7efe2da9f9b1a8fa49f1243ca63c4e0d01c0
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 8%
+source-wordcount: '998'
+ht-degree: 9%
 
 ---
 
@@ -93,15 +93,9 @@ The **Kopiera teknisk information** Med kan du kopiera teknisk information om de
 
 ### Ingång{#entrance}
 
-Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet för engångsresor, till exempel om du vill erbjuda en engångsgåva när en person går in i en affär. I så fall vill ni inte att kunden ska kunna registrera sig på nytt och få erbjudandet igen.
+Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet för engångsresor, till exempel om du vill erbjuda en engångsgåva när en person går in i en affär.
 
-När en resa&quot;slutar&quot; får den statusen **[!UICONTROL Closed]**. Resan kommer att sluta låta nya individer komma in på resan. Personer som redan är på resan kommer att slutföra resan normalt.
-
-Efter den globala standardtidsgränsen på 30 dagar växlar resan till **Slutförd** status. Se det här [section](../building-journeys/journey-gs.md#global_timeout).
-
->[!NOTE]
->
->Enhetsresor (med början vid en händelse eller en segmentkvalificering) innehåller ett skyddsräcke som förhindrar att resorna aktiveras felaktigt flera gånger för samma händelse. Återinträde av profiler blockeras tillfälligt som standard i 5 minuter. Om en händelse till exempel utlöser en resa kl. 12:01 för en viss profil och en annan tar emot kl. 12:03 (oavsett om det är samma händelse eller en annan som utlöser samma resa) kommer den resan inte att starta igen för den här profilen.
+Läs mer om hantering av profilinträde i [det här avsnittet](entry-management.md).
 
 ### Tidsgräns och fel i reseaktiviteter {#timeout_and_error}
 
