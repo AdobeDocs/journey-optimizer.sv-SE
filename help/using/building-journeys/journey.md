@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
-source-git-commit: f04454860ebe597d3306e62b58de5f32e08342ee
+source-git-commit: ab2956ab1dc3dfdf2ff67c3b6bcb1e3090d34ee3
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '568'
 ht-degree: 2%
 
 ---
@@ -32,27 +32,38 @@ Utforma avancerade scenarier i flera steg med följande funktioner:
 
 ## Steg för att skapa en resa{#steps-journey}
 
-Adobe Journey Optimizer har en flerkanalig orkestreringsyta som gör att marknadsförarna kan harmonisera marknadsföringen med ett-till-ett-kundengagemang. Med användargränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan för att skapa din resa. Observera att du även kan dubbelklicka på en aktivitet för att lägga till den på arbetsytan i nästa tillgängliga steg.
+Använd Adobe Journey Optimizer för att designa och samordna personaliserade resor från en enda arbetsyta.
+
+Adobe Journey Optimizer har en flerkanalig orkestreringsyta som gör att marknadsförarna kan harmonisera marknadsföringen med ett-till-ett-kundengagemang. Med användargränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan för att skapa din resa.
+
+![](assets/interface-journeys.png)
 
 Lär dig hur du påbörjar och skapar din första resa på [den här sidan](journey-gs.md).
 
-Lär dig använda resedesignern och kombinera aktiviteter för att skapa kraftfulla flerkanalsresor i [det här avsnittet](using-the-journey-designer.md).
+Flerkanalsdesignern hjälper er att skapa flerstegsresor med riktade målgrupper, uppdateringar baserade på kundinteraktioner eller affärsinteraktioner i realtid och flerkanalsmeddelanden med ett intuitivt dra-och-släpp-gränssnitt.
 
-Som datatekniker kan du lära dig hur du konfigurerar dina resor, inklusive datakällor, händelser och åtgärder i [det här avsnittet](../configuration/about-data-sources-events-actions.md).
+![](assets/journey38.png)
+
+Läs mer i [det här avsnittet](using-the-journey-designer.md).
+
+Som datatekniker beskrivs stegen för att konfigurera dina resor, inklusive datakällor, händelser och åtgärder i [det här avsnittet](../configuration/about-data-sources-events-actions.md).
 
 
 ## Användningsfall{#uc-journey}
 
-Upptäck följande kompletta användningsexempel för att utnyttja
-* Användningsexempel
-   * [Skicka flerkanalsmeddelanden](journeys-uc.md)
-   * [Skicka ett meddelande med Campaign v7/v8](campaign-classic-use-case.md)
-   * [Skicka ett meddelande till prenumeranter](message-to-subscribers-uc.md)
+Lär dig hur du bygger resor i följande situationer:
 
-* Tekniska användningsfall
-   * [Skicka samlingar dynamiskt med anpassade åtgärder](collections.md)
-   * [Rita upp leveranser](ramp-up-deliveries-uc.md)
-   * [Begränsa genomströmning med externa datakällor och anpassade åtgärder](limit-throughput.md)
+Affärsexempel:
+
+* [Skicka flerkanalsmeddelanden](journeys-uc.md)
+* [Skicka ett meddelande med Campaign v7/v8](campaign-classic-use-case.md)
+* [Skicka ett meddelande till prenumeranter](message-to-subscribers-uc.md)
+
+Tekniska användningsfall:
+
+* [Skicka samlingar dynamiskt med anpassade åtgärder](collections.md)
+* [Rita upp leveranser](ramp-up-deliveries-uc.md)
+* [Begränsa genomströmning med externa datakällor och anpassade åtgärder](limit-throughput.md)
 
 ## Reseversioner{#journey-versions}
 
