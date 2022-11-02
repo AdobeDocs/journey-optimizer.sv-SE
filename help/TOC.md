@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 7d69fba9dc01fd36dd7a4360204ef318c3264b60
+source-git-commit: af59c7ed83f18932fe13791b50713eabfba3b549
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1246'
 ht-degree: 35%
 
 ---
@@ -32,19 +32,19 @@ ht-degree: 35%
    + [Användargränssnitt](using/start/user-interface.md)
    + [Guardrails](using/start/guardrails.md)
 + Resor {#orchestrate-journeys}
-   + Kom igång med resor{#about-journeys}
+   + Om resor{#about-journeys}
       + [Allmän princip](using/building-journeys/journey.md)
       + [Resans livscykel](using/building-journeys/journey-end.md)
       + [Reseversioner](using/building-journeys/journey-versions.md)
+      + [Integrera med intelligenta tjänster](using/building-journeys/ai-services-overview.md)
    + Skapa en resa{#create-journey}
-      + [Skapa din första resa](using/building-journeys/journey-gs.md)
+      + [Kom igång med resor](using/building-journeys/journey-gs.md)
       + [Utforma din resa](using/building-journeys/using-the-journey-designer.md)
       + [Testa din resa](using/building-journeys/testing-the-journey.md)
       + [Publicera din resa](using/building-journeys/publishing-the-journey.md)
       + [Hantering av tidszoner](using/building-journeys/timezone-management.md)
       + [Kopiera en resa till en annan sandlåda](using/building-journeys/copy-to-sandbox.md)
       + [Felsök din resa](using/building-journeys/troubleshooting.md)
-      + [Integrera med intelligenta tjänster](using/building-journeys/ai-services-overview.md)
    + Aktiviteter {#about-journey-building}
       + [Om reseaktiviteter](using/building-journeys/about-journey-activities.md)
       + [Allmänna händelser](using/building-journeys/general-events.md)
