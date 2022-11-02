@@ -5,7 +5,7 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: f04454860ebe597d3306e62b58de5f32e08342ee
+source-git-commit: 2acc398732805d5fdb9f6ba2feaabcb0fa22093e
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 34%
@@ -41,7 +41,7 @@ ht-degree: 34%
    + Hantera dina resor{#mannage-journey}
       + [Avsluta din resa](using/building-journeys/end-journey.md)
       + [Hantering av tidszoner](using/building-journeys/timezone-management.md)
-      + [Profilhantering](using/building-journeys/entry-management.md)
+      + [Profilingångshantering](using/building-journeys/entry-management.md)
       + [Kopiera en resa till en annan sandlåda](using/building-journeys/copy-to-sandbox.md)
       + [Felsök din resa](using/building-journeys/troubleshooting.md)
       + [Integrera med intelligenta tjänster](using/building-journeys/ai-services-overview.md)
