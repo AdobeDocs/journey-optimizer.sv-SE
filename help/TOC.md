@@ -5,10 +5,10 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: ca423c25d39162838368b2242c1aff99388df768
+source-git-commit: f04454860ebe597d3306e62b58de5f32e08342ee
 workflow-type: tm+mt
-source-wordcount: '1244'
-ht-degree: 35%
+source-wordcount: '1253'
+ht-degree: 34%
 
 ---
 
@@ -38,7 +38,10 @@ ht-degree: 35%
       + [Utforma din resa](using/building-journeys/using-the-journey-designer.md)
       + [Testa din resa](using/building-journeys/testing-the-journey.md)
       + [Publicera din resa](using/building-journeys/publishing-the-journey.md)
+   + Hantera dina resor{#mannage-journey}
+      + [Avsluta din resa](using/building-journeys/end-journey.md)
       + [Hantering av tidszoner](using/building-journeys/timezone-management.md)
+      + [Profilhantering](using/building-journeys/entry-management.md)
       + [Kopiera en resa till en annan sandlåda](using/building-journeys/copy-to-sandbox.md)
       + [Felsök din resa](using/building-journeys/troubleshooting.md)
       + [Integrera med intelligenta tjänster](using/building-journeys/ai-services-overview.md)
@@ -144,6 +147,14 @@ ht-degree: 35%
             + [övre](using/building-journeys/functions/functionupper.md)
             + [uuid](using/building-journeys/functions/functionuuid.md)
    + Användningsfall {#journey-use-cases}
+      + Användningsexempel {#business-use-cases}
+         + [Skicka flerkanalsmeddelanden](using/building-journeys/journeys-uc.md)
+         + [Skicka ett meddelande med Campaign v7/v8](using/building-journeys/campaign-classic-use-case.md)
+         + [Skicka ett meddelande till prenumeranter](using/building-journeys/message-to-subscribers-uc.md)
+      + Tekniska användningsfall {#technical-use-cases}
+         + [Skicka samlingar dynamiskt med anpassade åtgärder](using/building-journeys/collections.md)
+         + [Rita upp leveranser](using/building-journeys/ramp-up-deliveries-uc.md)
+         + [Begränsa genomströmning med externa datakällor och anpassade åtgärder](using/building-journeys/limit-throughput.md)
 + Kampanjer{#campaigns}
    + [Kom igång med kampanjer](using/campaigns/get-started-with-campaigns.md)
    + [Skapa en kampanj](using/campaigns/create-campaign.md)
@@ -252,14 +263,6 @@ ht-degree: 35%
       + [Skapa kompositionsarbetsflöden](using/segment/create-compositions.md)
       + [Arbeta med arbetsytan](using/segment/composition-canvas.md)
       + [Få åtkomst till och hantera målgrupper](using/segment/access-audiences.md)
-      + Användningsexempel {#business-use-cases}
-         + [Skicka flerkanalsmeddelanden](using/building-journeys/journeys-uc.md)
-         + [Skicka ett meddelande med Campaign v7/v8](using/building-journeys/campaign-classic-use-case.md)
-         + [Skicka ett meddelande till prenumeranter](using/building-journeys/message-to-subscribers-uc.md)
-      + Tekniska användningsfall {#technical-use-cases}
-         + [Skicka samlingar dynamiskt med anpassade åtgärder](using/building-journeys/collections.md)
-         + [Rita upp leveranser](using/building-journeys/ramp-up-deliveries-uc.md)
-         + [Begränsa genomströmning med externa datakällor och anpassade åtgärder](using/building-journeys/limit-throughput.md)
 + Spåra och övervaka {#reporting}
    + Live-rapport {#live-report}
       + [Kom igång med Live Report](using/reports/live-report.md)
