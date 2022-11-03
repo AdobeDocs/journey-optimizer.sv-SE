@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: adfd47f23188935f6382a18d0de4a6101f022d78
+source-git-commit: bfd262db2fd12afbb7df6c73c68b29d18a1abf98
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Du kan utnyttja segment i resor på olika sätt:
 
 * Bygge **komplexa förhållanden** på resorna med den enkla eller avancerade uttrycksredigeraren. Läs mer i [det här avsnittet](../building-journeys/condition-activity.md#using-a-segment).
 
-## Målgruppsbedömningsmetod {#evaluation-method-in-journey-optimizer}
+## Metoder för utvärdering av målgrupper{#evaluation-method-in-journey-optimizer}
 
 I Adobe Journey Optimizer genereras målgrupper från segmentdefinitioner med någon av dessa utvärderingsmetoder:
 
