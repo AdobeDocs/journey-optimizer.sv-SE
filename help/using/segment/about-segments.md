@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: df16e6be53629ef529b765c9e36a293234244867
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -35,8 +35,9 @@ Du kan utnyttja segment i resor på olika sätt:
 
 I Adobe Journey Optimizer genereras målgrupper från segmentdefinitioner med någon av dessa utvärderingsmetoder:
 
-* Direktuppspelningssegmentering - målgruppslistan för segmentet hålls uppdaterad i realtid medan nya data flödar in i systemet.
-* Gruppsegmentering - målgruppslistan för segmentet uppdateras varje timme baserat på data som erhållits under den senaste timmen.
+* Direktuppspelningssegmentering - målgruppslistan för segmentet hålls uppdaterad i realtid medan nya data flödar in i systemet. Direktuppspelningssegmentering är en kontinuerlig process för val av data som uppdaterar era segment som svar på användaraktivitet. När ett segment har skapats och sparats tillämpas segmentdefinitionen på inkommande data till Journey Optimizer. Tillägg och borttagningar av segment behandlas regelbundet, vilket säkerställer att målgruppen förblir relevant.
+
+* Gruppsegmentering - målgruppslistan för segmentet utvärderas var 24:e timme. Som ett alternativ till en pågående dataurvalsprocess flyttar gruppsegmentering alla profildata samtidigt genom segmentdefinitioner för att skapa motsvarande målgrupper. När segmentet har skapats sparas det och lagras så att du kan exportera det för användning.
 
 Fastställandet mellan gruppsegmentering och direktuppspelningssegmentering görs av systemet för varje segmentdefinition, baserat på komplexiteten och kostnaden för att utvärdera segmentregeln.
 
