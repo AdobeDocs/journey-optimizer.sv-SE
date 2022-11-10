@@ -8,9 +8,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: 6014088011c41fd5f673eb3d36fb0609c4a01270
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1376'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,16 @@ ht-degree: 1%
 Definiera e-postinställningarna i det dedikerade avsnittet av kanalytans konfiguration (dvs. meddelandeförinställning). Lär dig hur du skapar ytor i [det här avsnittet](channel-surfaces.md).
 
 ![](assets/preset-email-settings.png)
+
+E-postytans konfiguration hämtas för att skicka kommunikation enligt logiken nedan:
+
+* För batch- och burst-resor gäller det inte batch- eller burst-körning som redan hade startats innan e-postytans konfiguration gjordes. Ändringarna hämtas vid nästa upprepning eller vid nästa körning.
+
+* För transaktionsmeddelanden hämtas ändringen omedelbart för nästa kommunikation (upp till fem minuters fördröjning).
+
+>[!NOTE]
+>
+>De uppdaterade inställningarna för e-postyta hämtas automatiskt under den eller de resor eller kampanjer där ytan används.
 
 ## Typ av e-post {#email-type}
 
@@ -96,25 +106,39 @@ Läs mer om hur du lägger till en länk för att avbryta prenumerationen i dina
 
 I **[!UICONTROL Header parameters]** anger du avsändarens namn och e-postadresser som är kopplade till den typ av e-post som skickas med den aktuella ytan.
 
->[!CAUTION]
->
->E-postadresserna måste använda den valda [delegerad underdomän](about-subdomain-delegation.md).
-
 * **[!UICONTROL Sender name]**: Avsändarens namn, till exempel ditt varumärkes namn.
 
-* **[!UICONTROL Sender email]**: E-postadressen som du vill använda för din kommunikation. Om den delegerade underdomänen till exempel är *marketing.luma.com* kan du använda *contact@marketing.luma.com*.
+* **[!UICONTROL Sender email]**: E-postadressen som du vill använda för din kommunikation.
 
 * **[!UICONTROL Reply to (name)]**: Namnet som ska användas när mottagaren klickar på **Svara** i klientprogramvaran för e-post.
 
-* **[!UICONTROL Reply to (email)]**: E-postadressen som ska användas när mottagaren klickar på **Svara** i klientprogramvaran för e-post. Du måste använda en adress som är definierad för den delegerade underdomänen (till exempel *reply@marketing.luma.com*), annars kommer e-postmeddelandena att tas bort.
+* **[!UICONTROL Reply to (email)]**: E-postadressen som ska användas när mottagaren klickar på **Svara** i klientprogramvaran för e-post. [Läs mer](#reply-to-email)
 
 * **[!UICONTROL Error email]**: Alla fel som genereras av Internet-leverantörer efter några dagar efter att e-post har levererats (asynkrona studsar) tas emot på den här adressen.
+
+>[!CAUTION]
+>
+>The **[!UICONTROL Sender email]** och **[!UICONTROL Error email]** adresser måste använda de aktuella markerade [delegerad underdomän](about-subdomain-delegation.md). Om den delegerade underdomänen till exempel är *marketing.luma.com* kan du använda *contact@marketing.luma.com* och *error@marketing.luma.com*.
 
 ![](assets/preset-header.png)
 
 >[!NOTE]
 >
 >Adresser måste börja med en bokstav (A-Z) och får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-` tecken.
+
+### Svara på e-post {#reply-to-email}
+
+När du definierar **[!UICONTROL Reply to (email)]** kan du ange vilken e-postadress som helst, förutsatt att det är en giltig adress, i korrekt format och utan att du behöver skriva någon.
+
+Följ nedanstående rekommendationer för att säkerställa korrekt svarshantering:
+
+* Den inkorg som används för svar kommer att få alla svar i e-postmeddelanden, inklusive meddelanden utanför kontoret och svar på frågor, och på så sätt se till att du har en manuell eller automatiserad process för att bearbeta de e-postmeddelanden som landar i den här inkorgen.
+
+* Se till att den dedikerade inkorgen har tillräcklig mottagningskapacitet för att kunna ta emot alla svar som skickas via e-post med e-postytan. Om inkorgen returnerar studsar kanske vissa svar från dina kunder inte tas emot.
+
+* Svar måste behandlas med hänsyn till sekretess och efterlevnadsskyldigheter eftersom de kan innehålla personligt identifierbar information.
+
+* Markera inte meddelanden som skräppost i svarsinkorgen eftersom det påverkar alla andra svar som skickas till den här adressen.
 
 ### Vidarebefordra e-post {#forward-email}
 

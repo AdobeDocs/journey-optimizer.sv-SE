@@ -8,16 +8,16 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: a4653378-b70f-454c-a446-ab4a14d2580a
-source-git-commit: 3a932747de33ced59d68835a96386b7ac560e4fe
+source-git-commit: 6014088011c41fd5f673eb3d36fb0609c4a01270
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '765'
 ht-degree: 2%
 
 ---
 
 # Undertryckningslista {#suppression-list}
 
-En inaktiveringslista består av e-postadresser som du vill utesluta från leveranser, eftersom det kan skada ditt sändningsrykte och din leveransfrekvens om du skickar till dessa kontakter.
+En undertryckningslista består av adresser och domäner som du vill utesluta från leveranser, eftersom det kan skada ditt sändningsrykte och din leveransfrekvens om du skickar till dessa kontakter.
 
 The [!DNL Journey Optimizer] Suppressionslistan hanteras på din egen miljönivå, dvs. för en viss sandlåda.
 
@@ -25,7 +25,7 @@ Den samlar in e-postadresser och domäner som inte används i alla e-postmeddela
 
 >[!NOTE]
 >
->Adobe håller en uppdaterad lista över kända dåliga e-postadresser som har visat sig vara skadliga för engagemanget och utskickets anseende och ser till att e-post inte skickas till dem. Den här listan hanteras i en global undertryckningslista som är gemensam för alla Adobe-kunder. Adresserna och domännamnen som finns i den globala undertryckningslistan är dolda. Endast antalet uteslutna mottagare anges i leveransrapporterna.
+>Adobe håller en uppdaterad lista över kända dåliga adresser som har visat sig vara skadliga för engagemanget och utskickets anseende och ser till att e-post inte skickas till dem. Den här listan hanteras i en global undertryckningslista som är gemensam för alla Adobe-kunder. Adresserna och domännamnen som finns i den globala undertryckningslistan är dolda. Endast antalet uteslutna mottagare anges i leveransrapporterna.
 
 ## Varför en lista över inaktiveringar? {#why-suppression-list}
 
@@ -37,11 +37,11 @@ Mottagare vars e-postadresser inte visas exkluderas automatiskt från meddelande
 
 ## Vad finns på listan över spärrar? {#what-s-on-suppression-list}
 
-E-postadresser läggs till i listan över inaktiveringar enligt följande:
+Adresser läggs till i listan över undertryckningar enligt följande:
 
-* Alla **skarpa studsar** och **skräppost** skickar automatiskt motsvarande e-postadresser till suppresslistan efter en enstaka förekomst.
+* Alla **skarpa studsar** och **skräppost** skickar automatiskt motsvarande adresser till suppressionslistan efter en enstaka förekomst.
 
-* **Mjuka studsar** skickar inte omedelbart en e-postadress till listan, men de ökar felräknaren. Flera [återförsök](../configuration/retries.md) utförs sedan och när felräknaren når tröskelvärdet läggs adressen till i listan över utelämnanden.
+* **Mjuka studsar** skickar inte omedelbart en adress till listan, men de ökar en felräknare. Flera [återförsök](../configuration/retries.md) utförs sedan och när felräknaren når tröskelvärdet läggs adressen till i listan över utelämnanden.
 
 * Du kan också [**manuellt** lägga till en adress eller en domän](../configuration/manage-suppression-list.md#add-addresses-and-domains) till listan över undertryckningar.
 

@@ -8,9 +8,9 @@ topic: Personalization
 role: Data Engineer
 level: Beginner
 exl-id: f448780b-91bc-455e-bf10-9a9aee0a0b24
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: 6014088011c41fd5f673eb3d36fb0609c4a01270
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '322'
 ht-degree: 2%
 
 ---
@@ -58,6 +58,6 @@ Lär dig hur du använder sammanhangsbaserad händelseinformation från en resa 
 
 >[!VIDEO](https://video.tv.adobe.com/v/334165?quality=12)
 
-Lär dig hur du använder sammanhangsbaserad händelseinformation från en resa för att personalisera ett meddelande.
+Lär dig hur du lägger till profilbaserad personalisering i ett meddelande och hur du använder segmentmedlemskap som en förutsättning för ett personaliseringsblock.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334078?quality=12)
