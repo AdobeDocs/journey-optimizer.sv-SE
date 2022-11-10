@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: 9b4ab81a362c38dce5ff4b10fb301c81ed117688
+source-git-commit: 38ad3289def56440ef8e78db870a36ee14e965df
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1460'
 ht-degree: 1%
 
 ---
@@ -51,6 +51,12 @@ Klicka på de tre punkterna bredvid en landningssida för att välja önskad åt
 >abstract="Om du vill skapa en landningssida måste du välja en förinställning, konfigurera den primära sidan och underordnade sidor och slutligen testa sidan innan du publicerar den."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/lp-configuration/lp-presets.html#lp-create-preset" text="Skapa förinställningar för landningssidor"
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/create-lp.html#publish-landing-page" text="Publicera landningssidan"
+
+>[!CONTEXTUALHELP]
+>id="ajo_lp_access_management_labels"
+>title="Tilldela etiketter till landningssidan"
+>abstract="För att skydda känsliga digitala resurser kan du definiera auktoriseringar för att hantera dataåtkomst till din landningssida med hjälp av etiketter."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/object-based-access.html" text="Skapa förinställningar för landningssidor"
 
 Stegen för att skapa en landningssida är följande.
 

@@ -7,9 +7,10 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: bca233ab888e2ca33b866bc3def31653f2d55ea9
+exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
+source-git-commit: dbb668b219b8d2ccea4d340c019918d6a6e387bb
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -129,21 +130,11 @@ En direktreklamyta måste också innehålla den filroutningskonfiguration som de
 
    ![](assets/surface-direct-mail-settings.png)
 
+   <!--![](assets/surface-direct-mail-settings-with-insertion.png)-->
+
 1. Välj filformat: **[!UICONTROL CSV]** eller **[!UICONTROL Text delimited]**.
 
-1. I **[!UICONTROL Insertion]** kan du välja att automatiskt ta bort dubblettrader.
-
-1. Definiera det maximala antalet poster (t.ex. rader) för varje fil som innehåller profildata. När det angivna tröskelvärdet har nåtts skapas en annan fil för de återstående posterna.
-
-   ![](assets/surface-direct-mail-split.png)
-
-   Om det till exempel finns 100 000 poster i filen och tröskelvärdet är 60 000, delas posterna i två filer. Den första filen innehåller 60 000 rader och den andra filen innehåller de återstående 40 000 raderna.
-
-   >[!NOTE]
-   >
-   >Du kan ange valfritt antal mellan 1 och 200 000 poster, vilket innebär att varje fil måste innehålla minst 1 rad och inte mer än 200 000 rader.
-
-1. Slutligen väljer du **[!UICONTROL File routing configuration]** bland de som du skapade. Detta anger var filen exporteras så att din direktmeddelandeleverantör kan använda den.
+1. Välj **[!UICONTROL File routing configuration]** bland de som du skapade. Detta anger var filen exporteras så att din direktmeddelandeleverantör kan använda den.
 
    >[!CAUTION]
    >
@@ -151,6 +142,29 @@ En direktreklamyta måste också innehålla den filroutningskonfiguration som de
 
    ![](assets/surface-direct-mail-file-routing.png)
 
+   <!--![](assets/surface-direct-mail-file-routing-with-insertion.png)-->
+
 1. Skicka direktreklamytan.
 
 Nu kan du [skapa ett direktmeddelandemeddelande](../messages/create-direct-mail.md) i en kampanj. När kampanjen har startats exporteras filen som innehåller målgruppsdata automatiskt till den server som du har definierat. Leverantören av direktreklam kan då hämta filen och fortsätta med leveransen av direktreklam.
+
+>[!NOTE]
+>
+>Duplicerade rader tas bort automatiskt.
+>
+>Om det maximala antalet poster (t.ex. rader) för varje fil som innehåller profildata är för högt skapas en annan fil automatiskt för de återstående posterna.
+
+<!--
+    In the **[!UICONTROL Insertion]** section, you can choose to automatically remove duplicate rows.
+
+    Define the maximum number of records (i.e. rows) for each file containing profile data. After the specified threshold is reached, another file will be created for the remaining records.
+
+    ![](assets/surface-direct-mail-split.png)
+
+    For example, if there are 100,000 records in the file and the threshold limit is set to 60,000, the records will be split into two files. The first file will contain 60,000 rows, and the second file will contain the remaining 40,000 rows.
+
+    >[!NOTE]
+    >
+    >NOTE You can set any number between 1 and 200,000 records, meaning each file must contain at least 1 row and no more than 200,000 rows.
+
+-->
