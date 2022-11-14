@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: d822c541-c043-41f5-916c-6a8e39fb148a
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: a2d05c7f2c00172a6f4e7b9d9f60d1732c91af8a
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 10%
@@ -27,4 +27,4 @@ The **[!UICONTROL Preview dataset]** kan du visa den senaste lyckade gruppen i d
 
 ![](../assets/dataset-preview.png)
 
-Mer information om hur du bläddrar bland och använder datauppsättningar finns i [den här sidan](../../start/get-started-datasets.md).
+Mer information om hur du bläddrar bland och använder datauppsättningar finns i [den här sidan](../../data/get-started-datasets.md).

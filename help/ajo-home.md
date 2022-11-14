@@ -5,7 +5,7 @@ description: Adobe Journey Optimizer produkthjälpcenter
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: 6014088011c41fd5f673eb3d36fb0609c4a01270
+source-git-commit: a2d05c7f2c00172a6f4e7b9d9f60d1732c91af8a
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 8%
@@ -132,13 +132,13 @@ ht-degree: 8%
     <p>
     <p>DATAHANTERING</p>
     <li>
-      <a href="using/start/get-started-schemas.md">Scheman</a>
+      <a href="using/data/get-started-schemas.md">Scheman</a>
     </li>
      <li>
-      <a href="using/start/get-started-datasets.md">Datauppsättningar</a>
+      <a href="using/data/get-started-datasets.md">Datauppsättningar</a>
     </li>
         <li>
-      <a href="using/start/get-started-queries.md">Frågor</a>
+      <a href="using/data/get-started-queries.md">Frågor</a>
     </li>
      <li>
       <a href="https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/monitor-data-ingestion.html" target="_blank">Övervakning</a>
