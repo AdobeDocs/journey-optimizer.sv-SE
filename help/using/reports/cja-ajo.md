@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 5349b0cf-da4e-458c-89be-c75a38e4721a
-source-git-commit: f6db4f7cbb1951c009fa7915f340da96eea74120
+source-git-commit: 7e27f5502d64d0c91de2c67e4011e650e77c6a92
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 1%
@@ -29,9 +29,9 @@ Innan du använder [!DNL Customer Journey Analytics] För dina resor måste du f
 1. [Skapa en anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html) in [!DNL Customer Journey Analytics] med **[!UICONTROL Dataset]** som du vill skicka till Adobe Experience Platform.
 
    Följande [!DNL Journey Optimizer] kan konfigureras:
-   * [Resestegshändelse](../start/datasets-query-examples.md#journey-step-event): låter er se vilka som deltar i era resor och hur långt de kommer.
-   * [Meddelandefeedback/spårningsdata](../start/datasets-query-examples.md#message-feedback-event-dataset): gör att du kan visa leveransinformation om meddelanden som skickas via [!DNL Journey Optimizer].
-   * [Enhetsdata och resedatamängder](../start/datasets-query-examples.md#entity-dataset): I kan du söka efter egna namn och använda dem i din rapportering.
+   * [Resestegshändelse](../data/datasets-query-examples.md#journey-step-event): låter er se vilka som deltar i era resor och hur långt de kommer.
+   * [Meddelandefeedback/spårningsdata](../data/datasets-query-examples.md#message-feedback-event-dataset): gör att du kan visa leveransinformation om meddelanden som skickas via [!DNL Journey Optimizer].
+   * [Enhetsdata och resedatamängder](../data/datasets-query-examples.md#entity-dataset): I kan du söka efter egna namn och använda dem i din rapportering.
 
 1. [Skapa en datavy](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html) för att konfigurera de dimensioner och mätvärden som du vill använda för rapporten.
 

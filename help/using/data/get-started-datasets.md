@@ -6,7 +6,7 @@ description: Lär dig hur du använder Adobe Experience Platform-datauppsättnin
 role: User
 level: Beginner
 exl-id: dcdd3c81-0f00-4259-a8a5-9062a4c40b6f
-source-git-commit: f6db4f7cbb1951c009fa7915f340da96eea74120
+source-git-commit: 7e27f5502d64d0c91de2c67e4011e650e77c6a92
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 1%
@@ -91,7 +91,7 @@ Läs mer om att skapa datauppsättningar i [Adobe Experience Platform-dokumentat
 
 Lär dig hur du använder användargränssnittet för datauppsättningar i [Översiktlig dokumentation för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target=&quot;_blank&quot;}.
 
-Det finns en lista med användningsfall med frågeexempel [här](../start/datasets-query-examples.md).
+Det finns en lista med användningsfall med frågeexempel [här](../data/datasets-query-examples.md).
 
 **Se även**
 
