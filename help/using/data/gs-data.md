@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: f6db4f7cbb1951c009fa7915f340da96eea74120
+source-git-commit: 34f6f25560cbe7873f8aea9edda3d63dab63935a
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 0%
@@ -34,7 +34,10 @@ Den flexibilitet du vill ha från dina data är dessutom tre gånger så stor:
     <br>
   </td>
   <td>
-    <div>Finns för andra destinationer - Journey Optimizer ger möjlighet till samverkan och integrering av data för en hyperpersonaliserad kundupplevelse, men ni vill ha dessa data i andra system i er övergripande teknikmiljö, samtidigt som ni letar efter andra sätt att utnyttja dessa data. <a href="../start/ajo-integrations.md">Läs mer</a>&lt;</div>
+    <div>Finns för andra destinationer - Journey Optimizer ger möjlighet till samverkan och integrering av data för en hyperpersonaliserad kundupplevelse, men ni vill ha dessa data i andra system i er övergripande teknikmiljö, samtidigt som ni letar efter andra sätt att utnyttja dessa data.
+    <div>
+     <a href="../start/ajo-integrations.md">Läs mer</a></div>
+    </div>
     <br>
   </td>
 </tr>
