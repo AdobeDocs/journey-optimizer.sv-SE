@@ -5,7 +5,7 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 2acc398732805d5fdb9f6ba2feaabcb0fa22093e
+source-git-commit: 56b0726c0d8db3025d3ba3ef2b863fec7f03c726
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 34%
@@ -257,12 +257,12 @@ ht-degree: 34%
       + [Kom igång med profiler](using/segment/get-started-profiles.md)
       + [Skapa testprofiler](using/segment/creating-test-profiles.md)
    + [Identiteter](using/segment/get-started-identity.md)
-   + [Licensanvändning](using/segment/license-usage.md)
    + Disponera målgrupper {#audience-orchestration}
       + [Kom igång med målgruppsmaterial](using/segment/get-started-audience-orchestration.md)
       + [Skapa kompositionsarbetsflöden](using/segment/create-compositions.md)
       + [Arbeta med arbetsytan](using/segment/composition-canvas.md)
       + [Få åtkomst till och hantera målgrupper](using/segment/access-audiences.md)
+   + [Licensanvändning](using/segment/license-usage.md)
 + Spåra och övervaka {#reporting}
    + Live-rapport {#live-report}
       + [Kom igång med Live Report](using/reports/live-report.md)
