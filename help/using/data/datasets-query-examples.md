@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 26ba8093-8b6d-4ba7-becf-b41c9a06e1e8
-source-git-commit: 7e27f5502d64d0c91de2c67e4011e650e77c6a92
+source-git-commit: 6f509a2518866b8e16a16a5550c41f7fb4154642
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 0%
@@ -19,14 +19,14 @@ ht-degree: 0%
 
 På den här sidan hittar du en lista över Adobe Journey Optimizer datamängder och relaterade användningsfall:
 
-[Händelsedatauppsättning för e-postspårning](../start/datasets-query-examples.md#email-tracking-experience-event-dataset)
-[Händelsedatauppsättning för meddelandefeedback](../data/datasets-query-examples.md#message-feedback-event-dataset)
-[Händelsedatauppsättning för push-spårning](../data/datasets-query-examples.md#push-tracking-experience-event-dataset)
-[Resestegshändelse](../data/datasets-query-examples.md#journey-step-event)
-[Datamängd för beslutshändelse](../data/datasets-query-examples.md#ode-decisionevents)
-[Samtycketjänstens datauppsättning](../data/datasets-query-examples.md#consent-service-dataset)
-[BCC Feedback, händelsedatauppsättning](../data/datasets-query-examples.md#bcc-feedback-event-dataset)
-[Enhetsdatauppsättning](../data/datasets-query-examples.md#entity-dataset)
+[Händelsedatauppsättning för e-postspårning](#email-tracking-experience-event-dataset)
+[Händelsedatauppsättning för meddelandefeedback](#message-feedback-event-dataset)
+[Händelsedatauppsättning för push-spårning](#push-tracking-experience-event-dataset)
+[Resestegshändelse](#journey-step-event)
+[Datamängd för beslutshändelse](#ode-decisionevents)
+[Samtycketjänstens datauppsättning](#consent-service-dataset)
+[BCC Feedback, händelsedatauppsättning](#bcc-feedback-event-dataset)
+[Enhetsdatauppsättning](#entity-dataset)
 
 ## Händelsedatauppsättning för e-postspårning{#email-tracking-experience-event-dataset}
 
