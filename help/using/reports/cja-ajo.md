@@ -7,9 +7,10 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+exl-id: 5349b0cf-da4e-458c-89be-c75a38e4721a
+source-git-commit: f6db4f7cbb1951c009fa7915f340da96eea74120
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '330'
 ht-degree: 1%
 
 ---
@@ -25,7 +26,7 @@ När du har skapat din resa i [!DNL Journey Optimizer]kan du importera dina kund
 
 Innan du använder [!DNL Customer Journey Analytics] För dina resor måste du först konfigurera den här integreringen:
 
-1. [Skapa en anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html) in [!DNL Customer Journey Analytics] med **[!UICONTROL Dataset]** du vill skicka till plattformen.
+1. [Skapa en anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html) in [!DNL Customer Journey Analytics] med **[!UICONTROL Dataset]** som du vill skicka till Adobe Experience Platform.
 
    Följande [!DNL Journey Optimizer] kan konfigureras:
    * [Resestegshändelse](../start/datasets-query-examples.md#journey-step-event): låter er se vilka som deltar i era resor och hur långt de kommer.

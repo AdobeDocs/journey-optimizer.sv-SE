@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: c92587670a56adf6811fcad49873a8ef0c5b7e84
+source-git-commit: f6db4f7cbb1951c009fa7915f340da96eea74120
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1264'
 ht-degree: 34%
 
 ---
@@ -150,7 +150,7 @@ ht-degree: 34%
    + Användningsfall {#journey-use-cases}
       + Användningsexempel {#business-use-cases}
          + [Skicka flerkanalsmeddelanden](using/building-journeys/journeys-uc.md)
-         + [Skicka ett meddelande med Campaign v7/v8](using/building-journeys/campaign-classic-use-case.md)
+         + [Skicka ett meddelande med Campaign v7/v8](using/building-journeys/ajo-ac.md)
          + [Skicka ett meddelande till prenumeranter](using/building-journeys/message-to-subscribers-uc.md)
       + Tekniska användningsfall {#technical-use-cases}
          + [Skicka samlingar dynamiskt med anpassade åtgärder](using/building-journeys/collections.md)
@@ -389,11 +389,12 @@ ht-degree: 34%
          + [API för Edge Decisioning](using/offers/api-reference/offer-delivery-api/edge-decisioning-api.md)
          + [API för gruppbeslut](using/offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
 + Datahantering {#data-management}
-   + [Scheman](using/start/get-started-schemas.md)
-   + Datauppsättningar {#datasets}
-      + [Kom igång med datauppsättningar](using/start/get-started-datasets.md)
-      + [Frågeexempel](using/start/datasets-query-examples.md)
-   + [Frågor](using/start/get-started-queries.md)
+   + [Kom igång med datahantering](using/data/gs-data.md)
+   + [Arbeta med scheman](using/data/get-started-schemas.md)
+   + Journey Optimizer dataset {#datasets}
+      + [Kom igång med datauppsättningar](using/data/get-started-datasets.md)
+      + [Frågeexempel](using/data/datasets-query-examples.md)
+   + [Frågor](using/data/get-started-queries.md)
 + Konfiguration{#configuration}
    + [Kom igång med Journey Optimizer](using/configuration/get-started-configuration.md)
    + Konfigurera meddelanden {#configuration-message}

@@ -7,7 +7,7 @@ feature: Journeys
 role: User
 level: Beginner
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
-source-git-commit: 9b4ab81a362c38dce5ff4b10fb301c81ed117688
+source-git-commit: f6db4f7cbb1951c009fa7915f340da96eea74120
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 1%
@@ -55,7 +55,7 @@ Lär dig hur du bygger resor i följande situationer:
 Affärsexempel:
 
 * [Skicka flerkanalsmeddelanden](journeys-uc.md)
-* [Skicka ett meddelande med Campaign v7/v8](campaign-classic-use-case.md)
+* [Skicka ett meddelande med Campaign v7/v8](ajo-ac.md)
 * [Skicka ett meddelande till prenumeranter](message-to-subscribers-uc.md)
 
 Tekniska användningsfall:

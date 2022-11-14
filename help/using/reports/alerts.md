@@ -7,9 +7,10 @@ feature: Alerts
 topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
+source-git-commit: f6db4f7cbb1951c009fa7915f340da96eea74120
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -25,11 +26,11 @@ I den vänstra menyn, under **Administration**, klicka **Varningar**. Det finns 
 
 ![](assets/alerts1.png)
 
-Om ett sådant oväntat beteende inträffar skickas ett varningsmeddelande till de som prenumererar på varningen via e-post och meddelanden i appen i det övre högra hörnet av gränssnittet.
+Om ett sådant oväntat beteende inträffar, skickas ett varningsmeddelande till de som prenumererar på varningen via e-post i det övre högra hörnet av gränssnittet.
 
 ![](assets/alerts2.png)
 
-När [visa varningsregler i plattformsgränssnittet](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html)kan du prenumerera på varje regel separat. När du prenumererar på aviseringar via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html)Men varningsreglerna är ordnade i olika prenumerationspaket. Prenumerationsnamnet för I/O-händelsen som motsvarar varningen för Läs segment är: &quot;Besök lässegmentet Fördröjningar, Fel och fel&quot;.
+När [visa varningsregler i Adobe Experience Platform UI](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html)kan du prenumerera på varje regel separat. När du prenumererar på aviseringar via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html)Men varningsreglerna är ordnade i olika prenumerationspaket. Prenumerationsnamnet för I/O-händelsen som motsvarar varningen för Läs segment är: &quot;Besök lässegmentet Fördröjningar, Fel och fel&quot;.
 
 >[!WARNING]
 >

@@ -8,7 +8,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 3da712e7-0e08-4585-8ca4-b6ff79df0b68
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: f6db4f7cbb1951c009fa7915f340da96eea74120
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Anslutningen mellan Journey Optimizer- och Campaign-instanserna konfigureras av 
 
 För att detta ska fungera måste du konfigurera en dedikerad åtgärd. Se detta [section](../action/acc-action.md).
 
-Ett heltäckande exempel på användning presenteras i detta [section](../building-journeys/campaign-classic-use-case.md).
+Ett heltäckande exempel på användning presenteras i detta [section](../building-journeys/ajo-ac.md).
 
 1. Designa din resa och börja med ett evenemang. Se det här [section](../building-journeys/journey.md).
 1. I **Åtgärd** väljer du en Campaign-åtgärd och lägger till den på din resa.
