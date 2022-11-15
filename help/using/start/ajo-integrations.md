@@ -9,9 +9,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 700dc66e-ae2d-418f-b75e-ece15af57ab3
-source-git-commit: 12ae84646e69870564406066e102c540ac920df7
+source-git-commit: 6c322a979ec4918228162799453b144765d69b28
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '515'
 ht-degree: 4%
 
 ---
@@ -24,9 +24,8 @@ Med Adobe Journey Optimizer kan ni enkelt hantera, behålla och exportera dessa 
 >
 > Adobe Journey Optimizer är uppkopplat till Adobe Experience Platform [Adobe kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target=&quot;_blank&quot;}. Den här inbyggda datakällan är förkonfigurerad och utformad för att hämta och använda data från kundprofilen i realtid (kontrollera till exempel om den person som angav en resa är en klient eller inte). Ni kan använda profildata och Experience Events-data. [Läs mer](../datasource/adobe-experience-platform-data-source.md).
 
-## Rapportering{#integration-reporting}
 
-### Adobe Customer Journey Analytics{#integration-cja}
+## Adobe Customer Journey Analytics{#integration-cja}
 
 Du kan exportera data som genererats av Journey Optimizer för att utföra avancerad analys i Customer Journey Analytics.
 
@@ -36,7 +35,7 @@ När ni har skapat er resa i Journey Optimizer kan ni importera kunddata till Cu
 
 Läs mer om [Journey Optimizer + Customer Journey Analytics](../reports/cja-ajo.md).
 
-### Adobe Analytics{#integration-aa}
+## Adobe Analytics{#integration-aa}
 
 Ni kan utnyttja alla Adobe Analytics beteendehändelsedata som ni redan samlar in och strömmar till Adobe Experience Platform för att utlösa resor och automatisera kundernas upplevelser.
 
@@ -46,11 +45,8 @@ Läs mer om [Journey Optimizer + Analytics](../event/about-analytics.md).
 
 Tack vare integreringen med Adobe Intelligent Services kan ni utnyttja kraften i artificiell intelligens och maskininlärning i kundupplevelsefall. På så sätt kan marknadsföringsanalytiker skapa prediktioner som är specifika för ett företags behov med hjälp av konfigurationer på företagsnivå utan behov av datavetenskaplig expertis. [Läs mer](../building-journeys/ai-services-overview.md).
 
-## Skicka meddelanden {#integration-messages}
 
-Du kan använda ett tredjepartssystem för att skicka meddelanden.
-
-### Adobe Campaign{#integration-ac}
+## Adobe Campaign{#integration-ac}
 
 Det finns en integrering om du har Adobe Campaign v7 eller v8. Använd den här integreringen för att skicka e-post, push-meddelanden och SMS med Adobe Campaign Transactional Messaging-funktioner.
 
@@ -60,7 +56,7 @@ Du kan också konfigurera en integrering med Adobe Campaign Standard för att sk
 
 Läs mer om [Journey Optimizer + Campaign Standard](../building-journeys/ajo-ac.md).
 
-### Egna kanaler{#integration-custom}
+## Egna kanaler{#integration-custom}
 
 Om du använder ett tredjepartssystem för att skicka meddelanden eller om du vill att resor ska skicka API-anrop till ett tredjepartssystem, använder du anpassade åtgärder för att konfigurera anslutningen till din resa. Du kan till exempel ansluta till följande system med anpassade åtgärder: Epsilon, Slack, [Adobe Developer](https://developer.adobe.com){target=&quot;_blank&quot;}, Firebase osv.
 
