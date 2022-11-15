@@ -9,9 +9,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 700dc66e-ae2d-418f-b75e-ece15af57ab3
-source-git-commit: 6c322a979ec4918228162799453b144765d69b28
+source-git-commit: 69037a070f43fa89d0971cedc03adb577e1450d9
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '516'
 ht-degree: 4%
 
 ---
@@ -41,7 +41,7 @@ Ni kan utnyttja alla Adobe Analytics beteendehändelsedata som ni redan samlar i
 
 Läs mer om [Journey Optimizer + Analytics](../event/about-analytics.md).
 
-## Maskinininlärning{#integration-intelligent-service}
+## Adobe Intelligent Services{#integration-intelligent-service}
 
 Tack vare integreringen med Adobe Intelligent Services kan ni utnyttja kraften i artificiell intelligens och maskininlärning i kundupplevelsefall. På så sätt kan marknadsföringsanalytiker skapa prediktioner som är specifika för ett företags behov med hjälp av konfigurationer på företagsnivå utan behov av datavetenskaplig expertis. [Läs mer](../building-journeys/ai-services-overview.md).
 
