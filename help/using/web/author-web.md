@@ -7,10 +7,11 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 50bafd20671912ecbcb595a59fed0e7bad95a200
+exl-id: 3847ac1d-2c0a-4f80-8df9-e8e304faf261
+source-git-commit: e8888ed6847fd04317e361e01a3e1dd277a9a4e5
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 2%
+source-wordcount: '878'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +29,11 @@ För att kunna komma åt och skriva webbsidor i [!DNL Journey Optimizer] -använ
 
 När du har skapat en webbåtgärd från kampanjen kan du redigera innehållet med webbdesignern. För att göra detta, följ nedanstående steg.
 
-1. Från **[!UICONTROL Action]** fliken för kampanjen, välj **[!UICONTROL Edit content]** för att börja skapa webbkampanjer. [Läs mer](create-web.md#configure-web-campaign)
+>[!CAUTION]
+>
+>Ska öppnas i [!DNL Journey Optimizer]måste webbsidan implementeras med [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target=&quot;_blank&quot;}.
+
+1. Från **[!UICONTROL Action]** fliken för kampanjen, välj **[!UICONTROL Edit content]** för att börja skapa webbkampanjer.
 
 1. Om du har skapat en sidmatchningsregel måste du ange en URL som matchar den här regeln. Ändringarna tillämpas på alla sidor som matchar regeln.
 
@@ -42,7 +47,7 @@ När du har skapat en webbåtgärd från kampanjen kan du redigera innehållet m
 
    >[!CAUTION]
    >
-   >Webbsidan måste implementeras med [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target=&quot;_blank&quot;}.
+   >Webbsidan måste innehålla [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target=&quot;_blank&quot;}.
 
 1. Klicka **[!UICONTROL Open web designer]** för att redigera den. [Läs mer](author-web.md)
 
