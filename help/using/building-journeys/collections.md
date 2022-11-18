@@ -4,7 +4,7 @@ product: journey optimizer
 title: Skicka samlingar dynamiskt med anpassade åtgärder
 description: Skicka ett meddelande med Campaign v7/v8
 exl-id: 8832d306-5842-4be5-9fb9-509050fcbb01
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: 23627545ffe290a5a482b3cecf54b2f51d2053e3
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 4%
@@ -67,6 +67,7 @@ Du kan skicka en samling i anpassade åtgärdsparametrar som fylls i dynamiskt v
     ]
    }
    ```
+
 * Om du vill testa samlingar i testläge måste du använda kodvisningsläget. Kodvyn stöds för närvarande inte för affärshändelser. Du kan bara skicka en samling med ett enda element.
 
 ## Allmänt förfarande {#general-procedure}

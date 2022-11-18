@@ -8,7 +8,7 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 9c9598c0-6fb1-4e2f-b610-ccd1a80e516e
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: 23627545ffe290a5a482b3cecf54b2f51d2053e3
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 2%
@@ -62,6 +62,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 ## Steg 2: Skapa e-postmeddelandet{#configure-email}
 
 1. I **E-post** aktivitet, klicka **[!UICONTROL Edit content]** och sedan klicka **[!UICONTROL Email Designer]**.
+
    ![](assets/personalization-uc-helpers-1.png)
 
 1. Dra och släpp tre strukturkomponenter från den vänstra paletten på e-postdesignerns hemsida till meddelandets brödtext.
@@ -109,6 +110,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 1. Klicka **[!UICONTROL Validate]** och sedan klicka **[!UICONTROL Save]**.
 
    ![](assets/personalization-uc-helpers-6.png)
+
 1. Spara meddelandet.
 
 ## Steg 4: Infoga listan med artiklar från vagnen {#each-helper}
@@ -164,6 +166,8 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
       ```handlebars
       {{#each context.journey.events.event_ID.productListItems as |product|}}
       ```
+
+
 1. Klistra in koden mellan öppningarna `{{#each}}` -taggen och den avslutande `{/each}}` tagg:
 
    ```html
@@ -184,6 +188,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
    1. Lägg till **[!UICONTROL Name]** -token till uttrycket.
 
    Upprepa dessa steg två gånger:
+
    * Ersätt platshållaren &quot;#quantity&quot; med **[!UICONTROL Quantity]** token.
    * Ersätt platshållaren &quot;#priceTotal&quot; med **[!UICONTROL Total price]** token.
 
@@ -202,7 +207,9 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
       </table>
    {{/each}}
    ```
+
 1. Klicka **[!UICONTROL Validate]** och sedan klicka **[!UICONTROL Save]**.
+
    ![](assets/personalization-uc-helpers-11.png)
 
 ## Steg 5: Infoga en produktspecifik anteckning {#if-helper}
@@ -225,6 +232,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
          {%else%} default_render
       {%/if%}
       ```
+
       ![](assets/personalization-uc-helpers-12.png)
 
 1. Ta bort det här villkoret från uttrycket:
@@ -258,6 +266,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
          {%else%} default_render
       {%/if%}
       ```
+
       ![](assets/personalization-uc-helpers-13.png)
 
 1. Ändra uttrycket:
@@ -288,6 +297,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
          {%else%} default_render
       {%/if%}
       ```
+
    1. Ta bort platshållaren &quot;default_render&quot; från uttrycket.
 1. Klicka **[!UICONTROL Validate]** och sedan klicka **[!UICONTROL Save]**.
 
