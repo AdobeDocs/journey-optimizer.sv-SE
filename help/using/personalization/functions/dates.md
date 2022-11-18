@@ -6,7 +6,7 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: edc040de-dfb3-4ebc-91b4-239e10c2260b
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: f06e1e03b3660be36b32437647a8329d0c0d296e
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%
@@ -24,7 +24,7 @@ The `age` används för att hämta åldern från ett visst datum.
 **Format**
 
 ```sql
- {%= age(date) %}
+ {%= age(datetime) %}
 ```
 
 <!--
@@ -33,7 +33,7 @@ The `age` används för att hämta åldern från ett visst datum.
 The following operation gets the value of the identity map for the key `example@example.com`.
 
 ```sql
- {%= age(date) %}
+ {%= age(datetime) %}
 ```
 -->
 
@@ -125,7 +125,7 @@ The `formatDate` -funktionen används för att formatera ett datum/tid-värde. F
 **Format**
 
 ```sql
-{%= formatDate(date, format) %}
+{%= formatDate(datetime, format) %}
 ```
 
 Där den första strängen är datumattributet och det andra värdet är hur du vill att datumet ska konverteras och visas.
@@ -151,7 +151,7 @@ The `setDays` -funktionen används för att ange dag i månaden för angivet dat
 **Format**
 
 ```sql
-{%= setDays(date, day) %}
+{%= setDays(datetime, day) %}
 ```
 
 <!--
@@ -171,7 +171,7 @@ The `setHours` -funktionen används för att ställa in timmen för datum-tid.
 **Format**
 
 ```sql
-{%= setHours(date, hour) %}
+{%= setHours(datetime, hour) %}
 ```
 
 <!--
