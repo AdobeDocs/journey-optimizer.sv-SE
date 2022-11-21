@@ -4,9 +4,9 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 90d7d4d39fe04198707be3d5b24888cfe5bed308
+source-git-commit: 2dcfcc8d7006c92e046152db5ac1288bdde8b063
 workflow-type: tm+mt
-source-wordcount: '2151'
+source-wordcount: '2143'
 ht-degree: 18%
 
 ---
@@ -17,15 +17,15 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 ## November 2022 {#november-2022}
 
-* En ny sida om Journey Optimizer-integrering har lagts till. [Läs mer](../start/ajo-integrations.md)
-* En rekommendation har lagts till om längden på URL:er för spegelsidor. [Läs mer](../design/message-tracking.md)
+* En ny sida om Journey Optimizer integreringar har lagts till. [Läs mer](../start/ajo-integrations.md)
+* En rekommendation om längden på URL:er för spegelsidor har lagts till. [Läs mer](../design/message-tracking.md)
 
 ## Oktober 2022 {#october-2022}
 
 * Ett exempel på hur man begränsar genomströmningen med hjälp av externa datakällor och anpassade åtgärder har lagts till. [Läs mer](../building-journeys/limit-throughput.md)
 * Fallavsnittet för resans användning har omorganiserats i två kategorier: [Användningsexempel](../building-journeys/journeys-uc.md) och [Tekniska användningsfall](../building-journeys/collections.md).
 * The **Enhetsdatauppsättning** -avsnittet har uppdaterats med mer information. [Läs mer](../data/datasets-query-examples.md#entity-dataset)
-* Information om reglerna för hantering av avanmälan och medgivande har omorganiserats till ett nytt avsnitt. [Läs mer](../privacy/opt-out.md)
+* Avsnitten för hantering av avanmälan och godkännandepolicyer har omorganiserats. [Läs mer](../privacy/opt-out.md)
 * Avsnittet om avancerade parametrar i resemeddelanden har klargjorts och anger nu att åsidosättning av e-postadresser endast ska användas för särskilda användningsfall. Det värde som oftast definieras som den primära adressen i **Körningsfält** är den som bör användas. [Läs mer](../messages/messages-in-journeys.md#adv-settings)
 * En anteckning har lagts till i **Konfigurera underdomäner för landningssidor** för att ange att versaler inte tillåts i underdomäner för landningssidor. [Läs mer](../configuration/lp-subdomains.md)
 
@@ -37,7 +37,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Uppdaterade sidor relaterade till [toDateOnly](../building-journeys/functions/functiontodateonly.md) och [toString](../building-journeys/functions/functiontostring.md) funktioner.
 * Information om tidsvillkorsparametrar har lagts till. [Läs mer](../building-journeys/condition-activity.md#time_condition)
 * Lagt till information om inbyggda datauppsättningar. [Läs mer](../data/get-started-datasets.md#access-datasets)
-* Delarna i den globala rapporten och Live-rapporten har omstrukturerats för att bli enklare att läsa. [Läs mer](../reports/global-report.md)
+* Delarna i den globala rapporten och Live-rapporten har förbättrats och omorganiserats. [Läs mer](../reports/global-report.md)
 * En lista över alla rapporteringsmått som är tillgängliga i Adobe Journey Optimizer har lagts till.
    [Läs mer](../reports/global-report.md#email-and-sms-metrics)
 * BCC-e-postavsnittet har flyttats till den nya sidan Stöd för arkivering. [Läs mer](../configuration/archiving-support.md)

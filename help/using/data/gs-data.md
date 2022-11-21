@@ -10,9 +10,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 25519acb-a017-446a-992b-653d3a8a3d96
-source-git-commit: f418570a82d7b56dfb4c83df22b8109f506ec73a
+source-git-commit: 2dcfcc8d7006c92e046152db5ac1288bdde8b063
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Du kan använda Journey Optimizer flexibilitet för att uppfylla dina specifika 
 
 * **Rensa och arkivera**: Rensning av data och arkivering kan definieras fritt och automatiseras i Journey Optimizer för att automatisera datalagringspolicyer. Det är möjligt att definiera olika strategier för åldersfördelning för olika datatabeller. Exportmekanismer kan också definieras för att automatiskt exportera åldersfördelningsdata innan de rensas eller arkiveras.
 
-   Med arbetsytan Datahygien i Adobe Experience Platform-gränssnittet kan du skapa och övervaka olika datahygien, bland annat ta bort konsumentidentiteter och schemalägga förfallodatum för datauppsättningar. Läs mer i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/hygiene/ui/overview.html){target=&quot;_blank&quot;}.
+   Med arbetsytan Datahygien i Adobe Experience Platform-gränssnittet kan du skapa och övervaka olika datahygien, bland annat ta bort konsumentidentiteter och schemalägga förfallodatum för datauppsättningar. Den här arbetsytan är tillgänglig med skölden för skydd och integritet och med hälso- och sjukvårdsskölden. Läs mer i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/hygiene/ui/overview.html){target=&quot;_blank&quot;}.
 
 * **Data Lake och Deletions**: Kunddata som lagras i Data Lake kan lagras av Journey Optimizer:
 
