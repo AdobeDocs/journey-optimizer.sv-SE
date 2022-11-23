@@ -8,9 +8,9 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 3847ac1d-2c0a-4f80-8df9-e8e304faf261
-source-git-commit: 0f69a47dccad20f3e978613b349a29f9daab94bd
+source-git-commit: f39e2094db24e7d0e8a304750624c985ff631572
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1063'
 ht-degree: 1%
 
 ---
@@ -28,9 +28,15 @@ För att kunna komma åt och skriva webbsidor i [!DNL Journey Optimizer] -använ
 ## Redigera webbsidesinnehåll {#edit-web-content}
 
 >[!CONTEXTUALHELP]
->id="ajo_web_url_to_personalize_header"
+>id="ajo_web_url_to_edit_surface"
 >title="Ange den URL som ska redigeras"
->abstract="Ange URL-adressen till en viss webbsida som ska användas för att redigera innehållet som ska användas på den webbyta som definieras ovan. Sidan måste implementeras med Adobe Experience Platform Web SDK."
+>abstract="Ange URL-adressen till en viss webbsida som ska användas för att redigera innehållet som ska användas på den webbyta som definieras ovan. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
+
+>[!CONTEXTUALHELP]
+>id="ajo_web_url_to_edit_rule"
+>title="Ange den URL som ska redigeras"
+>abstract="Ange URL-adressen till en viss webbsida som ska användas för att redigera innehållet som ska användas på alla sidor som matchar regeln. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
 >additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
 
 <!--Confirm the URL to use for authoring content on the surface. Typically the Authoring URL will be the surface URL itself, but you may include extra parameters if required. The page must include the Adobe Experience Platform Web SDK.-->
