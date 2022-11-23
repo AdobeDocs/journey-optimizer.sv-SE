@@ -4,9 +4,9 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 2dcfcc8d7006c92e046152db5ac1288bdde8b063
+source-git-commit: 0f69a47dccad20f3e978613b349a29f9daab94bd
 workflow-type: tm+mt
-source-wordcount: '2143'
+source-wordcount: '2169'
 ht-degree: 18%
 
 ---
@@ -19,6 +19,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 * En ny sida om Journey Optimizer integreringar har lagts till. [Läs mer](../start/ajo-integrations.md)
 * En rekommendation om längden på URL:er för spegelsidor har lagts till. [Läs mer](../design/message-tracking.md)
+* Ett nytt underavsnitt i konfigurationen av e-postinställningarna har lagts till i svaret på e-postadressen, inklusive rekommendationer för att säkerställa korrekt svarshantering. [Läs mer](../configuration/email-settings.md#reply-to-email)
 
 ## Oktober 2022 {#october-2022}
 

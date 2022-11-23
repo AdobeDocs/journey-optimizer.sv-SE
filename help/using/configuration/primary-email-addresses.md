@@ -8,10 +8,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: fe2f6516-7790-4501-a3a1-3d7cb94d7874
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: 0f69a47dccad20f3e978613b349a29f9daab94bd
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 5%
+source-wordcount: '204'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +20,12 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="ajo_admin_execution_address"
 >title="Ange vilken adress som ska användas"
->abstract="När det finns flera tillgängliga adresser i databasen (personliga, professionella, osv.) kan du välja vilken adress som ska prioriteras för sändning."
+>abstract="När det finns flera e-postadresser eller telefonnummer i databasen (personliga, professionella, osv.) kan du välja vilken som ska prioriteras för sändning."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_execution_address_header"
+>title="Ange vilken adress som ska användas"
+>abstract="Redigera fälten som används för att bestämma profilens e-postadress eller telefonnummer som ska prioriteras för sändning."
 
 När du anger en profil som mål kan det finnas flera e-postadresser eller telefonnummer i databasen (professionell e-postadress, personligt telefonnummer osv.).
 

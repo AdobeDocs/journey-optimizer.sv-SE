@@ -8,9 +8,9 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 3847ac1d-2c0a-4f80-8df9-e8e304faf261
-source-git-commit: e8888ed6847fd04317e361e01a3e1dd277a9a4e5
+source-git-commit: 0f69a47dccad20f3e978613b349a29f9daab94bd
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '1013'
 ht-degree: 1%
 
 ---
@@ -26,6 +26,14 @@ I [!DNL Journey Optimizer] webbredigering drivs av webbläsartillägget Adobe Ex
 För att kunna komma åt och skriva webbsidor i [!DNL Journey Optimizer] -användargränssnittet, följ de krav som anges i [det här avsnittet](create-web.md#prerequesites).
 
 ## Redigera webbsidesinnehåll {#edit-web-content}
+
+>[!CONTEXTUALHELP]
+>id="ajo_web_url_to_personalize_header"
+>title="Ange den URL som ska redigeras"
+>abstract="Ange URL-adressen till en viss webbsida som ska användas för att redigera innehållet som ska användas på den webbyta som definieras ovan. Sidan måste implementeras med Adobe Experience Platform Web SDK."
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
+
+<!--Confirm the URL to use for authoring content on the surface. Typically the Authoring URL will be the surface URL itself, but you may include extra parameters if required. The page must include the Adobe Experience Platform Web SDK.-->
 
 När du har skapat en webbåtgärd från kampanjen kan du redigera innehållet med webbdesignern. För att göra detta, följ nedanstående steg.
 
@@ -73,6 +81,11 @@ När du har skapat en webbåtgärd från kampanjen kan du redigera innehållet m
 
 ## Använda innehållskomponenter {#content-components}
 
+>[!CONTEXTUALHELP]
+>id="ajo_web_designer_components"
+>title="Lägga till innehållskomponenter på webbsidan"
+>abstract="Du kan lägga till ett antal komponenter på webbsidan och redigera dem efter behov."
+
 1. Från **[!UICONTROL Components]** till vänster kan du lägga till följande komponenter på webbsidan och redigera dem efter behov:
 
    * [Delare](../design/content-components.md#divider)
@@ -113,6 +126,11 @@ När du har skapat en webbåtgärd från kampanjen kan du redigera innehållet m
 
 ### Växla till bläddringsläge {#browse-mode}
 
+>[!CONTEXTUALHELP]
+>id="ajo_web_designer_browse"
+>title="Använda bläddringsläget"
+>abstract="I det här läget kan du navigera till den exakta sidan från den markerade ytan som du vill anpassa."
+
 Du kan växla från standardinställningen **[!UICONTROL Design]** till **[!UICONTROL Browse]** läge med den dedikerade knappen.
 
 ![](assets/web-designer-browse-mode.png)
@@ -130,6 +148,11 @@ Du kan också ändra zoomfokus - från 25 % till 400 %.
 ![](assets/web-designer-device.png)
 
 ## Hantera ändringar {#manage-modifications}
+
+>[!CONTEXTUALHELP]
+>id="ajo_web_designer_modifications"
+>title="Hantera enkelt alla ändringar"
+>abstract="I den här rutan kan du navigera och hantera alla justeringar och format som du har lagt till på webbsidan."
 
 Du kan enkelt hantera alla komponenter, justeringar och format som du har lagt till på webbsidan.
 
@@ -164,6 +187,11 @@ Använd **[!UICONTROL Offer decision]** komponent som ska infogas [erbjudanden](
 ![](assets/web-designer-offer.png)
 
 ## Testa webbkampanjen {#test-web-campaign}
+
+>[!CONTEXTUALHELP]
+>id="ajo_web_designer_preview"
+>title="Förhandsgranska webbupplevelsen"
+>abstract="Få en simulering av hur webbupplevelsen kommer att se ut."
 
 Följ stegen nedan för att visa en förhandsvisning av den ändrade webbupplevelsen.
 

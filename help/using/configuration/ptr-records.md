@@ -8,9 +8,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
-source-git-commit: 3a932747de33ced59d68835a96386b7ac560e4fe
+source-git-commit: 0f69a47dccad20f3e978613b349a29f9daab94bd
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,11 @@ ht-degree: 0%
 >id="ajo_admin_ptr_record"
 >title="Underdomäners PTR-poster"
 >abstract="En pekarpost (PTR) är en typ av DNS-post som tillhandahåller det domännamn som är länkat till en IP-adress, vilket hjälper de mottagande e-postservrarna att verifiera avsändarens IP-adresser. Redigera bara en PTR-post efter vederbörlig hänsyn och diskussion med din produktexpert."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_ptr_record_header"
+>title="Underdomäners PTR-poster"
+>abstract="När en underdomän har delegerats till Adobe i Journey Optimizer skapas en PTR-post automatiskt och kopplas till den här underdomänen."
 
 ## Om PTR-poster {#about-ptr-records}
 
