@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 0da96e32-52ad-4cc3-bac4-844b1f39ed16
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: c4683e10e4a15f99206a3e8702c1ad20591f1d67
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 3%
+source-wordcount: '202'
+ht-degree: 4%
 
 ---
 
@@ -29,14 +29,42 @@ En landningssida är en fristående webbsida som en användare dirigeras till ef
 * Ge mottagarna **möjlighet att avbryta prenumerationen** från att ta emot meddelanden. [Läs mer](lp-use-cases.md#opt-out)
 * Skicka en **bekräftelsemeddelande** vid anmälan eller avanmälan. [Läs mer](lp-use-cases.md#send-confirmation-email)
 
-<table>
-<tr>
-<td><img src="../assets/do-not-localize/icon_assets.svg" width="60px"><p><a href="create-lp.md">Skapa landningssidor</a></p></td>
-<td><img src="../assets/do-not-localize/icon_personalization.svg" width="60px"><p><a href="subscription-list.md">Skapa prenumerationslistor</a></p></td>
-<td><img src="../assets/do-not-localize/icon_design.svg" width="60px"><p><a href="design-lp.md">Utforma landningssidor</a></p></td>
-<td><img src="../assets/do-not-localize/monitor.svg" width="60px"><p><a href="../reports/lp-report-live.md">Rapportering</a></p></td>
-</tr>
-</table>
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td>
+<a href="create-lp.md">
+<img alt="Lead" src="../assets/do-not-localize/lp-subscription.jpeg">
+</a>
+<div><a href="create-lp.md"><strong>Skapa landningssidor</strong>
+</div>
+<p>
+</td>
+<td>
+<a href="subscription-list.md">
+<img alt="Sällan" src="../assets/do-not-localize/lp-list.jpg">
+</a>
+<div>
+<a href="subscription-list.md"><strong>Skapa prenumerationslistor</strong></a>
+</div>
+<p></td>
+<td>
+<a href="design-lp.md">
+<img alt="Validering" src="../assets/do-not-localize/lp-design.jpg">
+</a>
+<div>
+<a href="design-lp.md"><strong>Utforma landningssidor</strong></a>
+</div>
+<p>
+</td>
+<td>
+<a href="../reports/lp-report-live.md">
+<img alt="Validering" src="../assets/do-not-localize/lp-reporting.jpg">
+</a>
+<div>
+<a href="../reports/lp-report-live.md"><strong>Rapportering</strong></a>
+</div>
+<p>
+</td>
+</tr></table>
 
 ## Instruktionsvideo{#video}
 
