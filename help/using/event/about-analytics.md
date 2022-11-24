@@ -8,10 +8,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9d842722-e5eb-4743-849d-b7ba9448062f
-source-git-commit: f6db4f7cbb1951c009fa7915f340da96eea74120
+source-git-commit: a6735063ec68b40b1441b379a20cba8953b59447
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 0%
+source-wordcount: '198'
+ht-degree: 3%
 
 ---
 
@@ -23,11 +23,12 @@ Ni kan utnyttja alla Adobe Analytics beteendehändelsedata som ni redan samlar i
 >
 >Det här avsnittet gäller endast för regelbaserade händelser och kunder som behöver använda Adobe Analytics-data.
 
-För att detta ska fungera måste du aktivera rapportsviten som du vill utnyttja i Adobe Experience Platform:
+För att detta ska fungera måste du aktivera rapportsviten som du vill använda i Adobe Experience Platform. Följ stegen nedan för att göra detta:
 
-1. I Adobe Experience Platform väljer du **[!UICONTROL Sources]** sedan **[!UICONTROL Add data]** i Adobe Analytics. En lista över tillgängliga Adobe Analytics-rapportsviter visas.
+1. Anslut till Adobe Experience Platform och gå till **[!UICONTROL Sources]**.
+1. I Adobe Analytics väljer du **[!UICONTROL Add data]**: en lista över tillgängliga Adobe Analytics-rapportsviter visas.
 
-1. Välj den rapportsvit som du vill aktivera, klicka på **[!UICONTROL Next]** och klicka **[!UICONTROL Finish]**.
+1. Välj den rapportsvit som du vill aktivera, klicka på **[!UICONTROL Next]** och **[!UICONTROL Finish]**.
 
 1. Dela källdata-ID:t med kontaktpunkten för betaprogrammet.
 
