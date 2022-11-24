@@ -7,13 +7,13 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 3a932747de33ced59d68835a96386b7ac560e4fe
+exl-id: acb5b65b-8787-4428-9924-36aa0a115926
+source-git-commit: 88182f9f685efbd45dd5ecf8a09745f55305a78f
 workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 1%
 
 ---
-
 
 # Lägg till meddelanden under resor{#messages-in-journeys}
 
@@ -134,7 +134,7 @@ Gör så här:
 
    ![](assets/message-duplicated.png)
 
-1. Byt namn på meddelandet så att det kan skilja det ursprungliga meddelandet från kopian, till exempel när du redigerar meddelanden, enligt nedan:
+1. Byt namn på meddelandet för att kunna skilja det ursprungliga meddelandet från kopian, till exempel när du redigerar meddelanden, enligt nedan:
 
    ![](assets/multi-message.png)
 
