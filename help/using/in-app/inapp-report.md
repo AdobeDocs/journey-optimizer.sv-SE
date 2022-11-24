@@ -8,10 +8,10 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 3d496efc-1bf9-4895-906c-3757f92c6fe3
-source-git-commit: 3f43cfac56e4665dc16ce24e9736bcfcd3c544bf
+source-git-commit: 6b3207f8da2f022d6094e6a2f321ac1b4f137e83
 workflow-type: tm+mt
-source-wordcount: '858'
-ht-degree: 3%
+source-wordcount: '545'
+ht-degree: 2%
 
 ---
 
@@ -95,79 +95,6 @@ The **[!UICONTROL Clicks by button]** diagram och tabell innehåller tillgängli
    * Månadsvis
 
 >[!ENDTABS]
-
-Test 2:
-
-1. Detta är ett test
-
->[!BEGINTABS]
-
-    >[!TAB Lägg till en push-funktion på en resa]
-    
-    1. Öppna resan och dra och släpp en push-aktivitet från funktionsmakroavsnittet på paletten.
-    
-    1. Ange grundläggande information i meddelandet (etikett, beskrivning, kategori) och välj sedan den meddelandeyta som ska användas.
-    
-    >[!TAB Add a Push to a Campaign]
-    
-    1. Skapa en ny schemalagd eller API-utlöst kampanj, välj **[!UICONTROL Push notification]** som du vill och välj **[!UICONTROL App surface]** att använda.
-    
-    1. Klicka på **[!UICONTROL Create]**.
-    
-    1. Från **[!UICONTROL Properties]**, redigera Campaigns **[!UICONTROL Title]** och **[!UICONTROL Description]**.
-    
-    1. Klicka på **[!UICONTROL Select audience]** för att definiera målgruppen i listan över tillgängliga Adobe Experience Platform-segment.
-    
-    1. I[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera personerna i det valda segmentet.
-    
-    1. Kampanjer är utformade för att köras ett visst datum eller med en återkommande frekvens. Lär dig konfigurera **[!UICONTROL Schedule]** av er kampanj.
-    
-    1. Från **[!UICONTROL Action triggers]** väljer du **[!UICONTROL Frequency]** av ditt push-meddelande:
-    
-    * En gång
-    * Daglig
-    * Vecka
-    * Månadsvis
-
->[!ENDTABS]
-
-1. Detta är en del av testet
-
-Test 3:
-
-1. Detta är ett test
-
-   >[!BEGINTABS]
-
-   >[!TAB Lägg till en push-funktion på en resa]
-
-   1. Öppna resan och dra och släpp en push-aktivitet från funktionsmakroavsnittet på paletten.
-
-   1. Ange grundläggande information i meddelandet (etikett, beskrivning, kategori) och välj sedan den meddelandeyta som ska användas.
-   >[!TAB Lägga till en push-knapp i en kampanj]
-
-   1. Skapa en ny schemalagd eller API-utlöst kampanj, välj **[!UICONTROL Push notification]** som din åtgärd och väljer **[!UICONTROL App surface]** att använda.
-
-   1. Klicka på **[!UICONTROL Create]**.
-
-   1. Från **[!UICONTROL Properties]** redigerar du Campaigns **[!UICONTROL Title]** och **[!UICONTROL Description]**.
-
-   1. Klicka på **[!UICONTROL Select audience]** för att definiera målgruppen i listan över tillgängliga Adobe Experience Platform-segment.
-
-   1. I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera individerna från det valda segmentet.
-
-   1. Kampanjer är utformade för att köras ett visst datum eller med en återkommande frekvens. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** av er kampanj.
-
-   1. Från **[!UICONTROL Action triggers]** väljer du **[!UICONTROL Frequency]** av ditt push-meddelande:
-
-      * En gång
-      * Dagligen
-      * Veckovis
-      * Månadsvis
-
-   >[!ENDTABS]
-
-1. Detta är en del av testet
 
 Test 3:
 
