@@ -7,9 +7,10 @@ feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 5c12ea559876d30a08f9aaf593d1b40b1f5b8bae
+exl-id: 617d623c-e038-4b5b-a367-5254116b7815
+source-git-commit: efea1bbd5154d378daf1f52315384156b6d23ae3
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '864'
 ht-degree: 2%
 
 ---
@@ -34,10 +35,12 @@ ht-degree: 2%
 
    ![](assets/create-campaign.png)
 
-1. I **[!UICONTROL Properties]** anger du när kampanjen ska köras:
+1. I **[!UICONTROL Properties]** anger du hur kampanjen ska köras:
 
-   * **[!UICONTROL Scheduled]**: köra kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka **marknadsföring** typmeddelanden.
-   * **[!UICONTROL API-triggered]**: köra kampanjen med ett API-anrop. API-utlösta kampanjer är avsedda att skicka **transaktionsbaserad** meddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförts av en individ: lösenordsåterställning, övergivna kort osv. [Lär dig hur du utlöser en kampanj med API:er](api-triggered-campaigns.md)
+   * **[!UICONTROL Scheduled]**
+   * **[!UICONTROL API-triggered]**
+
+   Mer information om kampanjtypen och associerade engagemang finns i [section](#campaigntype).
 
 1. I **[!UICONTROL Actions]** väljer du kanal och kanal för att skicka meddelandet och klickar sedan på **[!UICONTROL Create]**.
 
@@ -95,7 +98,40 @@ ht-degree: 2%
 
 När kampanjen är klar kan ni granska och publicera den. [Läs mer](#review-activate)
 
+## Kampanjtyp {#campaigntype}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_campaign_type"
+>title="Kampanjtyp"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_campaign_category"
+>title="Kampanjkategori"
+>abstract="TBC"
+
+Det finns två typer av kampanjer:
+
+* **[!UICONTROL Scheduled]**: köra kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka **marknadsföring** typmeddelanden.
+
+* **[!UICONTROL API-triggered]**: köra kampanjen med ett API-anrop. API-utlösta kampanjer är avsedda att skicka **transaktionsbaserad** meddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförts av en individ: lösenordsåterställning, övergivna kort osv. [Lär dig hur du utlöser en kampanj med API:er](api-triggered-campaigns.md)
+
 ## Schemalägg en kampanj {#schedule}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_schedule_start"
+>title="Kampanjstart"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_schedule_end"
+>title="Kampanjslut"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_schedule_triggers"
+>title="Kampanjåtgärdsutlösare"
+>abstract="TBC"
 
 Som standard börjar kampanjer när de har aktiverats manuellt och avslutas så snart meddelandet har skickats en gång.
 
@@ -105,7 +141,7 @@ Om du inte vill genomföra kampanjen direkt efter aktiveringen kan du ange ett d
 
 ![](assets/create-campaign-schedule.png)
 
-## Snabb leverans {#rapid-delivery}
+## Snabb leverans för push-kampanj {#rapid-delivery}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_rapid_delivery"

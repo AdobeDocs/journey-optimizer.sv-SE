@@ -10,14 +10,19 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: efea1bbd5154d378daf1f52315384156b6d23ae3
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '919'
 ht-degree: 1%
 
 ---
 
 # Skapa ett innehållsexperiment {#content-experiment}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_content_experiment"
+>title="Innehållsexperiment"
+>abstract="TBC"
 
 >[!AVAILABILITY]
 >
