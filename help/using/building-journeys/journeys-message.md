@@ -8,16 +8,16 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: 0b19af568b33d29f4b35deeab6def17919cfe824
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
 
 # E-post, SMS, push{#add-a-message-in-a-journey}
 
-[!DNL Journey Optimizer] levereras med inbyggda meddelandefunktioner. Du kan enkelt lägga till en push-, SMS- eller e-postmeddelandeaktivitet under din resa och [definiera inställningar och innehåll](../messages/messages-in-journeys.md). Sedan utförs den och skickas i samband med resan.
+[!DNL Journey Optimizer] innehåller inbyggda meddelandefunktioner. Du kan enkelt lägga till en push-, SMS- eller e-postmeddelandeaktivitet under din resa och [definiera inställningar och innehåll](../messages/messages-in-journeys.md). Sedan utförs den och skickas i samband med resan.
 
 Du kan också ange specifika åtgärder för att skicka meddelanden till dig:
 
@@ -39,4 +39,12 @@ Följ stegen nedan om du vill lägga till ett meddelande under en resa:
 
    Alla steg för att konfigurera meddelandet och definiera dess innehåll beskrivs i [det här avsnittet](../messages/get-started-content.md).
 
+## Uppdatera liveinnehåll{#update-live-content}
 
+Du kan uppdatera innehållet i ett meddelande (e-post, sms, push) i en direktresa.
+
+Det gör du genom att öppna din liveresa, välja meddelandeaktivitet och klicka på **Redigera innehåll**.
+
+![](assets/add-a-message2.png)
+
+Du kan dock inte ändra de attribut som används i personaliseringen, vare sig det är profilattribut eller kontextuella data (från händelse- eller reseegenskaper).

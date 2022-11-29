@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 26ba8093-8b6d-4ba7-becf-b41c9a06e1e8
-source-git-commit: 6f509a2518866b8e16a16a5550c41f7fb4154642
+source-git-commit: 0b19af568b33d29f4b35deeab6def17919cfe824
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -325,6 +325,8 @@ Den här datauppsättningen ger er tillgång till marknadsföringsdefinierade me
 >[!NOTE]
 >
 >För närvarande finns det två poster för varje meddelandepublikation i entitetsdatauppsättningen för framtida kompatibilitetsorsaker. Detta påverkar inte din möjlighet att använda kopplingsfrågor efter behov i datauppsättningar för att hämta önskad information.
+
+Om du vill sortera, i dina rapporter, de e-postmeddelanden som skickas av en viss resa enligt den åtgärd som har skickat dem. du kan ansluta till datamängden för meddelandefeedback med entitetsdatauppsättningen. De fält som ska användas är: `_experience.decisioning.propositions.scopeDetails.correlationID` och `_id field in entity dataset`.
 
 Följande fråga hjälper dig att hämta den associerade meddelandemallen för en viss kampanj:
 

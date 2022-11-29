@@ -6,16 +6,20 @@ feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: 2c3f629f-2220-44a4-9b0c-8aa602301098
-source-git-commit: d17e64e03d093a8a459caef2fb0197a5710dfb7d
+source-git-commit: 0b19af568b33d29f4b35deeab6def17919cfe824
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 30%
+source-wordcount: '66'
+ht-degree: 22%
 
 ---
 
 # clearCountWithNull {#distinctCountWithNull}
 
 Räknar antalet olika värden inklusive null-värden.
+
+>[!NOTE]
+>
+>Om mållistan är ett listObject kan den här funktionen bara användas i anpassade åtgärdsuttryck.
 
 ## Kategori
 

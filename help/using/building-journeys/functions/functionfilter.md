@@ -6,16 +6,20 @@ feature: Journeys
 role: Data Engineer
 level: Experienced
 exl-id: 05e3d2ba-1a27-4f27-88cc-3d83eb3b14af
-source-git-commit: d17e64e03d093a8a459caef2fb0197a5710dfb7d
+source-git-commit: 0b19af568b33d29f4b35deeab6def17919cfe824
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 8%
+source-wordcount: '126'
+ht-degree: 7%
 
 ---
 
 # filter{#filter}
 
 Returnerar ett listObject med objekt som har nyckelattributet som matchar ett av de angivna nyckelvärdena.
+
+>[!NOTE]
+>
+>Om mållistan är ett listObject kan den här funktionen bara användas i anpassade åtgärdsuttryck.
 
 ## Kategori
 
