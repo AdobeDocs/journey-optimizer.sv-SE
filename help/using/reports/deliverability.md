@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 8f33dda7-9bd5-4293-8d0d-222205cbc7d5
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: 146e2384e44fc040ddb73a96742cae0dea6f17da
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '694'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 0%
 # Kom igång med leverans {#manage-deliverability}
 
 Leverans är ett mått på hur väl leveransen når mottagarnas inkorgar.
+
+>[!NOTE]
+>
+>För kunder som licensierar hälsovård använder Adobe TLS 1.2 (Transport Layer Security) för att säkra datautbytet mellan användarnas system (mottagare) och Journey Optimizer (avsändare). Om den mottagande e-postservern inte har stöd för TLS 1.2 kommer kunderna att få leveransproblem, inklusive e-poststudsar tillbaka till den ursprungliga avsändaren.
 
 **E-postleverans** avser den uppsättning egenskaper som avgör om ett meddelande kan nå sin destination via en personlig e-postadress inom en kort tid och med den förväntade kvaliteten i fråga om innehåll och format. Dessa egenskaper kan delas in i fyra huvudkategorier: datakvalitet, meddelande och innehåll, utskick av infrastruktur och anseende. Tillsammans utgör de grunden för ett framgångsrikt program för e-postleverans.
 
