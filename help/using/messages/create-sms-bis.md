@@ -9,7 +9,7 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: b7b333e96e0f4b32a0f94c3f1e67f0f3d3fc2816
+source-git-commit: 5e5b078fa61e2c615a2242f50439c2f20ea5216a
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >I enlighet med branschens standarder och bestämmelser måste alla SMS-marknadsföringsmeddelanden innehålla ett sätt för mottagarna att enkelt avbryta prenumerationen. För att göra detta kan SMS-mottagare svara med nyckelord för deltagande och avanmälan.
 
-## Skapa ett SMS-meddelande i en resa eller kampanj {#sms-content}
+## Skapa ett SMS-meddelande i en resa eller kampanj
 
 Så här börjar du personalisera SMS-meddelandet:
 
@@ -65,7 +65,7 @@ Nu kan du börja designa ditt SMS-meddelande via **[!UICONTROL Edit content]** -
 
 >[!ENDTABS]
 
-## Definiera ditt SMS-innehåll{#sms-content}
+## Definiera ditt SMS-innehåll
 
 1. Klicka på **[!UICONTROL Edit content]** för att konfigurera SMS-innehållet.
 
@@ -77,7 +77,7 @@ Nu kan du börja designa ditt SMS-meddelande via **[!UICONTROL Edit content]** -
 
 1. När SMS-meddelandet är klart slutför du konfigurationen för att skicka det.
 
-## Validera ditt SMS{#sms-preview}
+## Validera ditt SMS
 
 >[!NOTE]
 >

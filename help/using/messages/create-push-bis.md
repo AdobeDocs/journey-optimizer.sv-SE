@@ -9,7 +9,7 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: b7b333e96e0f4b32a0f94c3f1e67f0f3d3fc2816
+source-git-commit: 5e5b078fa61e2c615a2242f50439c2f20ea5216a
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Skapa ett push-meddelande {#create-push-notification-bis}
 
-## Skapa push-meddelanden i en resa eller kampanj {#create}
+## Skapa push-meddelanden i en resa eller kampanj
 
 Så här skapar du ett push-meddelande:
 
@@ -71,7 +71,7 @@ Så här skapar du ett push-meddelande:
 
 >[!ENDTABS]
 
-## Snabb leverans {#rapid-delivery}
+## Snabb leverans
 
 Snabb leverans, som tidigare kallades Burst-läge under resor, är ett [!DNL Journey Optimizer] tillägg som gör det möjligt att skicka mycket snabba push-meddelanden i stora volymer via kampanjer.
 
@@ -79,7 +79,7 @@ Snabba leveranser används när fördröjningar i meddelandeleverans är affärs
 
 Mer information om prestanda när du använder läget Snabb leverans finns i.
 
-### Förutsättningar {#prerequisites}
+### Förutsättningar
 
 Snabba leveransmeddelanden innehåller följande krav:
 
