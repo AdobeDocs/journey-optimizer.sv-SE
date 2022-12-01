@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: f6db4f7cbb1951c009fa7915f340da96eea74120
+source-git-commit: b7b333e96e0f4b32a0f94c3f1e67f0f3d3fc2816
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1278'
 ht-degree: 34%
 
 ---
@@ -116,7 +116,7 @@ ht-degree: 34%
             + [getListItem](using/building-journeys/functions/functiongetlistitem.md)
             + [in](using/building-journeys/functions/functionin.md)
             + [korsa](using/building-journeys/functions/functionintersect.md)
-            + [limit](using/building-journeys/functions/functionlimit.md)
+            + [gräns](using/building-journeys/functions/functionlimit.md)
             + [listSize](using/building-journeys/functions/functionlistsize.md)
             + [serializeList](using/building-journeys/functions/functionserializelist.md)
             + [sort](using/building-journeys/functions/functionsort.md)
@@ -173,8 +173,11 @@ ht-degree: 34%
       + [Lägg till meddelanden under resor](using/messages/messages-in-journeys.md)
       + [Lägg till meddelanden i kampanjer](using/messages/messages-in-campaigns.md)
    + [Skapa ett e-postmeddelande](using/messages/create-email.md)
+   + [Skapa ett e-postmeddelande](using/messages/create-email-bis.md)
    + [Skapa ett push-meddelande](using/messages/create-push.md)
    + [Skapa ett SMS-meddelande](using/messages/create-sms.md)
+   + [Skapa en SMS-meddelandebis](using/messages/create-sms-bis.md)
+   + [Skapa en bisnos för push-meddelanden](using/messages/create-push-bis.md)
    + [Skapa direktreklam](using/messages/create-direct-mail.md)
    + [Kontrollera aviseringar](using/messages/alerts.md)
    + [Tidsoptimering för sändning](using/messages/send-time-optimization.md)
