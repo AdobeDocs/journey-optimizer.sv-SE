@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 50a6e19640c497176022b17370e3ae810686b84f
+source-git-commit: 8026a214919e468b355aeb030ac1b387307e3e67
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1264'
 ht-degree: 34%
 
 ---
@@ -173,7 +173,6 @@ ht-degree: 34%
       + [Lägg till meddelanden under resor](using/messages/messages-in-journeys.md)
       + [Lägg till meddelanden i kampanjer](using/messages/messages-in-campaigns.md)
    + [Skapa ett e-postmeddelande](using/messages/create-email.md)
-   + [Skapa ett e-postmeddelande](using/messages/create-email-bis.md)
    + [Skapa ett push-meddelande](using/messages/create-push.md)
    + [Skapa ett SMS-meddelande](using/messages/create-sms.md)
    + [Skapa direktreklam](using/messages/create-direct-mail.md)
