@@ -4,7 +4,7 @@ product: journey optimizer
 title: Information om föregående version (2021)
 description: Versionsinformation om Journey Optimizer 2021
 exl-id: 0e43be98-f471-4860-be84-8f99ab93e983
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 9%
@@ -182,7 +182,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 <td>
 <p>Skicka automatiskt ditt push- eller e-postmeddelande vid den tidpunkt som passar varje kund du interagerar med Adobe Journey Optimizer. Med optimering för sändningstid, som bygger på Adobe:s AI-tjänster, förutspås den bästa tidpunkten för att skicka e-post eller push-meddelanden för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser.</p>
 <p>Den här funktionen är för närvarande i betaversion och endast tillgänglig för betakunder. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.</p>
-<p>Mer information finns i den <a href="../messages/send-time-optimization.md">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="../building-journeys/journeys-message.md#send-time-optimization">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -271,7 +271,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 
 **Innehållsdesign**
 
-* **Bakgrund** - Nu stöds bakgrundsbilder i direktförhandsvisning. [Läs mer](../design/preview.md)
+* **Bakgrund** - Nu stöds bakgrundsbilder i direktförhandsvisning. [Läs mer](../email/preview.md)
 * **Länk för avanmälan med ett klick** - Du kan infoga en ny typ av länk i ditt e-postinnehåll: den **Avanmäl dig** kan man säga upp prenumerationen från att ta emot meddelanden med bara ett klick, utan att behöva omdirigeras till en landningssida för att bekräfta avanmälan. [Läs mer](../privacy/opt-out.md#one-click-opt-out-link)
 
 **Personalisering**
@@ -292,7 +292,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 * Korrigerade ett tillgänglighetsproblem vid navigering på meddelandeflikar.
 * Ett lokaliseringsfel har korrigerats i e-postdesignerns etiketter.
 * Ett problem har korrigerats när du valde mer än en nod i en resa och klickade på Ta bort i egenskapsfönstret.
-* Korrigerade ett fel som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
+* Korrigerade ett problem som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
 * Du kan nu ta reda på varför en meddelandeförinställning inte kunde skapas med hjälp av en tydligare varning i användargränssnittet.
 
 
@@ -346,9 +346,9 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 
 **Förhandsgranska och testa**
 
-* Identitet och namnutrymme visas nu i **[!UICONTROL Preview]** skärm. [Läs mer](../design/preview.md#preview-your-messages)
+* Identitet och namnutrymme visas nu i **[!UICONTROL Preview]** skärm. [Läs mer](../email/preview.md#preview-your-messages)
 * Antalet testmeddelanden för korrektur är nu begränsat till 10.
-* Tecken tillåts för **Subject line prefix** i korrektur är nu begränsade. [Läs mer](../design/preview.md#send-proofs)
+* Tecken tillåts för **Subject line prefix** i korrektur är nu begränsade. [Läs mer](../email/preview.md#send-proofs)
 
 **Redigerare för anpassningsuttryck**
 

@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: efea1bbd5154d378daf1f52315384156b6d23ae3
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 2%
+source-wordcount: '533'
+ht-degree: 3%
 
 ---
 
@@ -56,25 +56,58 @@ ht-degree: 2%
 
    <!--To test the content of your message, toggle the **[!UICONTROL Content experiment]** option on. This allows you to test multiple variables of a delivery on populations samples, in order to define which treatment has the biggest impact on the targeted population.[Learn more about content experiment](../campaigns/content-experiment.md).-->
 
-1. I **[!UICONTROL Actions]** konfigurerar du meddelandet som ska skickas med kampanjen:
+1. Klicka på knappen **[!UICONTROL Manage access]** -knappen. [Läs mer om OLA (Object Level Access Control)](../administration/object-based-access.md)
 
-   1. Klicka på **[!UICONTROL Edit content]** och sedan konfigurera och utforma meddelandeinnehållet. [Läs mer om meddelanden](../messages/get-started-content.md).
+## Skapa meddelandet {#content}
 
-      Lär dig detaljerade steg för att skapa meddelandeinnehåll på följande sida:
+I **[!UICONTROL Actions]** skapar du meddelandet som ska skickas med kampanjen.
 
-      * [Skapa ett e-postmeddelande](../messages/create-email.md)
-      * [Skapa push-meddelanden](../messages/create-push.md)
-      * [Skapa ett SMS-meddelande](../messages/create-sms.md)
-   1. När innehållet är definierat kan du använda **[!UICONTROL Simulate content]** för att förhandsgranska och testa innehållet med testprofiler. [Läs mer](../design/preview.md).
+1. Klicka på **[!UICONTROL Edit content]** och sedan skapa och utforma meddelandeinnehållet.
 
-   1. Klicka på pilen för att gå tillbaka till skärmen för att skapa kampanjer.
+   Lär dig detaljerade steg för att skapa meddelandeinnehåll på följande sidor:
 
-      ![](assets/create-campaign-design.png)
+   <table style="table-layout:fixed">
+    <tr style="border: 0;">
+    <td>
+    <a href="../email/create-email.md">
+    <img alt="Lead" src="../assets/do-not-localize/email.jpg">
+    </a>
+    <div><a href="../email/create-email.md"><strong>Skapa e-postmeddelanden</strong>
+    </div>
+    <p>
+    </td>
+    <td>
+    <a href="../push/create-push.md">
+      <img alt="Sällan" src="../assets/do-not-localize/push.jpg">
+    </a>
+    <div>
+    <a href="../push/create-push.md"><strong>Skapa push-meddelanden</strong></a>
+    </div>
+    <p>
+    </td>
+    <td>
+    <a href="../sms/create-sms.md">
+      <img alt="Validering" src="../assets/do-not-localize/sms.jpg">
+    </a>
+    <div>
+    <a href="../sms/create-sms.md"><strong>Skapa SMS-meddelanden</strong></a>
+    </div>
+    <p>
+    </td>
+    </tr>
+    </table>
 
-   1. I **[!UICONTROL Actions tracking]** anger du om du vill spåra hur mottagarna svarar på leveransen: du kan spåra klick och/eller öppningar.
+1. När innehållet är definierat kan du använda **[!UICONTROL Simulate content]** för att förhandsgranska och testa innehållet med testprofiler. [Läs mer](../email/preview.md).
 
-      Spåra resultat kan nås från kampanjrapporten när kampanjen har genomförts. [Läs mer om kampanjrapporter](../reports/campaign-global-report.md)
+1. Klicka på pilen för att gå tillbaka till skärmen för att skapa kampanjer.
 
+   ![](assets/create-campaign-design.png)
+
+1. I **[!UICONTROL Actions tracking]** anger du om du vill spåra hur mottagarna svarar på leveransen: du kan spåra klick och/eller öppningar.
+
+   Spåra resultat kan nås från kampanjrapporten när kampanjen har genomförts. [Läs mer om kampanjrapporter](../reports/campaign-global-report.md)
+
+## Definiera målgruppen {#audience}
 
 1. Definiera målgruppen. Om du vill göra det klickar du på **[!UICONTROL Select audience]** om du vill visa en lista över tillgängliga Adobe Experience Platform-segment. [Läs mer om segment](../segment/about-segments.md)
 
@@ -91,6 +124,8 @@ ht-degree: 2%
    >Individer som tillhör ett segment som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kommer inte att omfattas av kampanjen.
 
    <!--If you are are creating an API-triggered campaign, the **[!UICONTROL cURL request]** section allows you to retrieve the **[!UICONTROL Campaign ID]** to use in the API call. [Learn more](api-triggered-campaigns.md)-->
+
+## Schemalägg kampanjen {#schedule}
 
 1. Konfigurera **[!UICONTROL Schedule]** -avsnitt. [Lär dig schemalägga kampanjer](#schedule)
 
@@ -115,64 +150,3 @@ Det finns två typer av kampanjer:
 * **[!UICONTROL Scheduled]**: köra kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka **marknadsföring** typmeddelanden.
 
 * **[!UICONTROL API-triggered]**: köra kampanjen med ett API-anrop. API-utlösta kampanjer är avsedda att skicka **transaktionsbaserad** meddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförts av en individ: lösenordsåterställning, övergivna kort osv. [Lär dig hur du utlöser en kampanj med API:er](api-triggered-campaigns.md)
-
-## Schemalägg en kampanj {#schedule}
-
->[!CONTEXTUALHELP]
->id="ajo_campaigns_schedule_start"
->title="Kampanjstart"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_campaigns_schedule_end"
->title="Kampanjslut"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_campaigns_schedule_triggers"
->title="Kampanjåtgärdsutlösare"
->abstract="TBC"
-
-Som standard börjar kampanjer när de har aktiverats manuellt och avslutas så snart meddelandet har skickats en gång.
-
-Du kan definiera hur ofta kampanjens meddelande ska skickas. Om du vill göra det använder du **[!UICONTROL Action triggers]** alternativ på skärmen för att skapa kampanjer för att ange om kampanjen ska köras varje dag, varje vecka eller varje månad.
-
-Om du inte vill genomföra kampanjen direkt efter aktiveringen kan du ange ett datum och en tidpunkt då meddelandet ska skickas med **[!UICONTROL Campaign start]** alternativ. The  **[!UICONTROL Campaign end]** kan du ange när en återkommande kampanj ska sluta köras.
-
-![](assets/create-campaign-schedule.png)
-
-## Snabb leverans för push-kampanj {#rapid-delivery}
-
->[!CONTEXTUALHELP]
->id="ajo_campaigns_rapid_delivery"
->title="Snabb leverans"
->abstract="I läget för snabb leverans kan du skicka meddelanden med hög hastighet via push-kanalen till en målgrupp på under 30 MB."
-
-Snabb leverans, som tidigare kallades Burst-läge under resor, är ett [!DNL Journey Optimizer] tillägg som gör det möjligt att skicka mycket snabba push-meddelanden i stora volymer via kampanjer.
-
-Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp.
-
-Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html).
-
-### Förutsättningar {#prerequisites}
-
-Snabba leveransmeddelanden innehåller följande krav:
-
-* Snabb leverans av **[!UICONTROL Scheduled]** endast kampanjer och inte för API-utlösta kampanjer,
-* Ingen personalisering tillåts i push-meddelandet,
-* Målgruppen måste innehålla färre än 30M profiler,
-* Du kan köra upp till 5 kampanjer samtidigt i läget Snabb leverans.
-
-### Aktivera läget Snabb leverans
-
-1. Skapa en push-meddelandekampanj och aktivera **[!UICONTROL Rapid delivery]** alternativ.
-
-![](assets/create-campaign-burst.png)
-
-1. Konfigurera meddelandeinnehållet och välj målgrupp. [Lär dig hur du skapar en kampanj](#create)
-
-   >[!IMPORTANT]
-   >
-   >Se till att meddelandeinnehållet inte innehåller någon personalisering och att målgruppen innehåller färre än 30 miljoner profiler.
-
-1. Granska och aktivera kampanjen som vanligt. Observera att i testläge skickas inga meddelanden via läget Snabb leverans. [Lär dig hur du granskar och aktiverar en kampanj](review-activate-campaign.md)

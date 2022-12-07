@@ -8,7 +8,7 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 3847ac1d-2c0a-4f80-8df9-e8e304faf261
-source-git-commit: f39e2094db24e7d0e8a304750624c985ff631572
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
@@ -94,13 +94,13 @@ När du har skapat en webbåtgärd från kampanjen kan du redigera innehållet m
 
 1. Från **[!UICONTROL Components]** till vänster kan du lägga till följande komponenter på webbsidan och redigera dem efter behov:
 
-   * [Delare](../design/content-components.md#divider)
-   * [HTML](../design/content-components.md#HTML)
-   * [Bild](../design/content-components.md#image)
-   * Rubrik - Att använda den här komponenten påminner om att använda **[!UICONTROL Text]** i e-postdesignern. [Läs mer](../design/content-components.md#text)
-   * Stycke - Att använda den här komponenten påminner om att använda **[!UICONTROL Text]** i e-postdesignern. [Läs mer](../design/content-components.md#text)
-   * Länk - Lär dig hur du definierar länkformat i [det här avsnittet](../design/styling-links.md)
-   * [Beslut om erbjudandet](../design/deliver-personalized-offers.md)
+   * [Delare](../email/content-components.md#divider)
+   * [HTML](../email/content-components.md#HTML)
+   * [Bild](../email/content-components.md#image)
+   * Rubrik - Att använda den här komponenten påminner om att använda **[!UICONTROL Text]** i e-postdesignern. [Läs mer](../email/content-components.md#text)
+   * Stycke - Att använda den här komponenten påminner om att använda **[!UICONTROL Text]** i e-postdesignern. [Läs mer](../email/content-components.md#text)
+   * Länk - Lär dig hur du definierar länkformat i [det här avsnittet](../email/styling-links.md)
+   * [Beslut om erbjudandet](../email/add-offers-email.md)
 
    ![](assets/web-designer-components.png)
 
@@ -188,7 +188,7 @@ Om du vill lägga till personalisering markerar du en behållare och väljer per
 
 ![](assets/web-designer-personalization.png)
 
-Använd **[!UICONTROL Offer decision]** komponent som ska infogas [erbjudanden](../offers/get-started/starting-offer-decisioning.md) till dina webbsidor. Processen är densamma som när [lägga till ett erbjudande i ett e-postmeddelande](../design/deliver-personalized-offers.md). Det kommer att utnyttja Beslutshantering för att välja det bästa erbjudandet att leverera till era kunder.
+Använd **[!UICONTROL Offer decision]** komponent som ska infogas [erbjudanden](../offers/get-started/starting-offer-decisioning.md) till dina webbsidor. Processen är densamma som när [lägga till ett erbjudande i ett e-postmeddelande](../email/add-offers-email.md). Det kommer att utnyttja Beslutshantering för att välja det bästa erbjudandet att leverera till era kunder.
 
 ![](assets/web-designer-offer.png)
 

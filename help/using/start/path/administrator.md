@@ -5,7 +5,7 @@ title: Journey Optimizer Get Started for System Admin
 description: Som systemadministratör får du lära dig mer om hur du arbetar med Journey Optimizer
 level: Intermediate
 exl-id: 24f85ced-aa45-493f-b2c4-7c7b58351b38
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
 source-wordcount: '725'
 ht-degree: 2%
@@ -48,11 +48,11 @@ Följ stegen nedan:
 
 1. **Konfigurera meddelanden och kanaler**: definiera ytor, anpassa och anpassa inställningar för e-post, sms och push-meddelanden
 
-   * Definiera **inställningar för push-meddelanden** i båda [!DNL Adobe Experience Platform] och [!DNL Adobe Experience Platform Launch]. [Läs mer](../../configuration/push-gs.md)
+   * Definiera **inställningar för push-meddelanden** i båda [!DNL Adobe Experience Platform] och [!DNL Adobe Experience Platform Launch]. [Läs mer](../../push/push-gs.md)
 
    * Skapa **kanalytor** (t.ex. meddelandeförinställningar) för att konfigurera alla tekniska parametrar som krävs för e-post, sms och push-meddelanden. [Läs mer](../../configuration/channel-surfaces.md)
 
-   * Konfigurera **SMS-kanal** för att konfigurera alla tekniska parametrar som krävs för SMS. [Läs mer](../../configuration/sms-configuration.md)
+   * Konfigurera **SMS-kanal** för att konfigurera alla tekniska parametrar som krävs för SMS. [Läs mer](../../sms/sms-configuration.md)
 
    * Hantera antalet dagar som **återförsök** utförs innan e-postadresser skickas till listan. [Läs mer](../../configuration/manage-suppression-list.md)
 

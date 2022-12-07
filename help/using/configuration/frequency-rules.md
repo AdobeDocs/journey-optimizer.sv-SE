@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 1%
@@ -115,7 +115,7 @@ Regelens status ändras till **[!UICONTROL Inactive]** och regeln gäller inte f
 
 Följ stegen nedan för att tillämpa en frekvensregel på ett meddelande.
 
-1. [Skapa ett meddelande](../messages/get-started-content.md#create-new-message) genom att välja en av de kanaler som du har definierat för regeln.
+1. Skapa ett meddelande genom att välja en av de kanaler som du har definierat för regeln.
 
 1. Välj den kategori som du har definierat för [regel som du skapade](#create-new-rule).
 
@@ -162,9 +162,9 @@ Du kan kombinera flera regler för meddelandefrekvens, som beskrivs i exemplet n
 
 1. Spara och [activate](#activate-rule) regeln.
 
-1. Skapa ett e-postmeddelande och välj **[!UICONTROL Marketing]** kategori för det meddelandet. [Läs mer](../messages/get-started-content.md#create-new-message)
+1. Skapa ett e-postmeddelande och välj **[!UICONTROL Marketing]** kategori för det meddelandet. [Läs mer](../email/create-email.md)
 
-1. Skapa ett push-meddelande och välj **[!UICONTROL Marketing]** kategori för det meddelandet. [Läs mer](../messages/get-started-content.md#create-new-message)
+1. Skapa ett push-meddelande och välj **[!UICONTROL Marketing]** kategori för det meddelandet. [Läs mer](../push/create-push.md)
 
 I det här scenariot finns en enskild profil:
 * kan ta emot upp till 12 marknadsföringsmeddelanden per månad,

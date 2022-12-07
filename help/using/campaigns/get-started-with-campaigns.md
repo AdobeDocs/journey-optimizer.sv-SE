@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '386'
 ht-degree: 3%
 
 ---
@@ -66,30 +66,6 @@ Kontrollera följande innan du börjar skapa din första kampanj i Journey Optim
 
 1. **Ni behöver en målgrupp**. Målgruppssegment måste vara tillgängliga innan kampanjen kan skapas. Läs mer om målgruppsframtagning [på den här sidan](../segment/about-segments.md).
 1. **Du behöver en kanalyta**. Om du vill kunna markera en kanal måste du ha motsvarande kanalyta (dvs. förinställning) skapad och tillgänglig. Läs mer om kanalytor [på den här sidan](../configuration/channel-surfaces.md).
-
-## Åtkomst till kampanjer {#access}
-
-Kampanjerna är tillgängliga via **[!UICONTROL Campaigns]** -menyn.
-
-Som standard visas alla kampanjer med **[!UICONTROL Draft]**, **[!UICONTROL Scheduled]** och **[!UICONTROL Live]** status. Om du vill visa stoppade, slutförda och arkiverade kampanjer måste du rensa filtret.
-
-![](assets/create-campaign-list.png)
-
-## Kampanjstatus {#statuses}
-
-Kampanjer kan ha flera statusvärden:
-
-* **[!UICONTROL Draft]**: Kampanjen redigeras, den har inte aktiverats.
-* **[!UICONTROL Activating]**: Kampanjen aktiveras.
-* **[!UICONTROL Live]**: Kampanjen har aktiverats.
-* **[!UICONTROL Scheduled]**: Kampanjen är konfigurerad att aktiveras ett visst startdatum.
-* **[!UICONTROL Stopped]**: Kampanjen har stoppats manuellt. Du kan inte aktivera eller återanvända den längre. [Läs mer](modify-stop-campaign.md#stop)
-* **[!UICONTROL Completed]**: Kampanjen är färdig. Den här statusen tilldelas automatiskt 3 dagar efter att en kampanj har aktiverats, eller vid kampanjens slutdatum om den har en återkommande körning.
-* **[!UICONTROL Archived]**: Kampanjen har arkiverats.
-
->[!NOTE]
->
->Ikonen&quot;Öppna utkast&quot; bredvid en **[!UICONTROL Live]** eller **[!UICONTROL Scheduled]** status anger att en ny version av kampanjen har skapats och ännu inte har aktiverats. [Läs mer](modify-stop-campaign.md#modify).
 
 ## Instruktionsvideo {#video}
 

@@ -5,7 +5,7 @@ title: Journey Optimizer Get started for Marketers
 description: Lär dig mer om hur du arbetar med Journey Optimizer som resande
 level: Intermediate
 exl-id: 34304142-3ee8-4081-94b9-e914968c75ba
-source-git-commit: 9b4ab81a362c38dce5ff4b10fb301c81ed117688
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%
@@ -24,13 +24,13 @@ Se följande avsnitt för att konfigurera din första resa, lägga till erbjudan
 
    ![](../assets/perso_ee2.png)
 
-1. **Skapa och hantera resurser**. [!DNL Adobe Experience Manager Assets Essentials] har ett enda centraliserat arkiv med resurser som du kan använda för att fylla i dina meddelanden. Läs mer [i det här avsnittet](../../design/assets-essentials.md).
+1. **Skapa och hantera resurser**. [!DNL Adobe Experience Manager Assets Essentials] har ett enda centraliserat arkiv med resurser som du kan använda för att fylla i dina meddelanden. Läs mer [i det här avsnittet](../../email/assets-essentials.md).
 
 1. **Lägg till erbjudanden**. Använd [!DNL Journey Optimizer] för att leverera det bästa erbjudandet och upplevelsen till era kunder via alla kontaktytor vid rätt tidpunkt. När ni väl utformat er målgrupp kan ni inrikta er på personaliserade erbjudanden. Läs mer om beslutshantering [i det här avsnittet](../../offers/get-started/starting-offer-decisioning.md).
 
    ![](../assets/offers-e2e-offers-displayed.png)
 
-1. **Testa och validera**. När innehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du infogade [personaliserat innehåll](../../personalization/personalize.md)kan du med hjälp av testprofildata kontrollera hur det här innehållet visas i meddelandet. Dessutom kan du **Litmus** konto till [!DNL Journey Optimizer] för att omedelbart förhandsgranska **e-poståtergivning** i vanliga e-postklienter. Sedan kan ni se till att e-postinnehållet ser bra ut och fungerar som det ska i alla inkorgar. Lär dig hur du testar och validerar meddelanden [i det här avsnittet](../../design/preview.md).
+1. **Testa och validera**. När innehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du infogade [personaliserat innehåll](../../personalization/personalize.md)kan du med hjälp av testprofildata kontrollera hur det här innehållet visas i meddelandet. Dessutom kan du **Litmus** konto till [!DNL Journey Optimizer] för att omedelbart förhandsgranska **e-poståtergivning** i vanliga e-postklienter. Sedan kan ni se till att e-postinnehållet ser bra ut och fungerar som det ska i alla inkorgar. Lär dig hur du testar och validerar meddelanden [i det här avsnittet](../../email/preview.md).
 
 1. **Designa kundresor** för att leverera personaliserade, sammanhangsbaserade upplevelser. [!DNL Journey Optimizer] gör att du kan skapa användningsfall för realtidssamordning med kontextuella data lagrade i händelser eller datakällor. Utforma avancerade scenarier i flera steg med följande funktioner:
 

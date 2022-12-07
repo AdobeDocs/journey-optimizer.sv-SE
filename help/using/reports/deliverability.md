@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 8f33dda7-9bd5-4293-8d0d-222205cbc7d5
-source-git-commit: 146e2384e44fc040ddb73a96742cae0dea6f17da
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 0%
@@ -71,7 +71,7 @@ Om du vill förbättra leveransgraden och se till att dina e-postmeddelanden nå
 
 * **Avbeställ länk- och landningssida**: Länken för att avbryta prenumerationen är viktig. Den måste vara synlig och giltig och formuläret måste vara funktionellt.
 
-[Läs mer om hur du utformar e-postinnehåll](../design/design-emails.md).
+[Läs mer om hur du utformar e-postinnehåll](../email/get-started-email-design.md).
 
 ## Ange ditt rykte som avsändare
 

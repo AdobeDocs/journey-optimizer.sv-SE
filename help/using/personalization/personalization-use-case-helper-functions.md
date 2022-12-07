@@ -8,7 +8,7 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 9c9598c0-6fb1-4e2f-b610-ccd1a80e516e
-source-git-commit: 23627545ffe290a5a482b3cecf54b2f51d2053e3
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 2%
@@ -33,8 +33,8 @@ Innan du börjar bör du kontrollera hur du konfigurerar dessa element:
 
 * En enastående händelse. [Läs mer](../event/about-events.md).
 * En resa som börjar med ett evenemang. [Läs mer](../building-journeys/using-the-journey-designer.md).
-* Ett e-postmeddelande under din resa. [Läs mer](../messages/get-started-content.md)
-* Innehållet i ett e-postmeddelande. [Läs mer](../design/create-email-content.md).
+* Ett e-postmeddelande under din resa. [Läs mer](../email/create-email.md)
+* Innehållet i ett e-postmeddelande. [Läs mer](../email/content-from-scratch.md).
 
 Följ de här stegen:
 

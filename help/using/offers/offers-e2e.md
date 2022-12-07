@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 851d988a-2582-4c30-80f3-b881d90771be
-source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 2%
@@ -223,6 +223,6 @@ De detaljerade stegen för att skapa och konfigurera ett beslut beskrivs i [det 
 
 ## Infoga beslutet i ett e-postmeddelande {#insert-decision-in-email}
 
-Nu när ditt beslut är klart kan du infoga det i ett e-postmeddelande. Gör så här: [den här sidan](../../using/design/deliver-personalized-offers.md).
+Nu när ditt beslut är klart kan du infoga det i ett e-postmeddelande. Gör så här: [den här sidan](../../using/email/add-offers-email.md).
 
 ![](assets/offers-e2e-offers-displayed.png)

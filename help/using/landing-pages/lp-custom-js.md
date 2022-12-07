@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 2a7ebead-5f09-4ea5-8f00-8b5625963290
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 2%
@@ -23,13 +23,13 @@ Du kan definiera innehållet på landningssidan med hjälp av anpassad JavaScrip
 
 Om du vill infoga anpassad JavaScript i innehållet på landningssidan kan du antingen göra följande:
 
-* Importera befintligt HTML-innehåll när du börjar skapa ditt innehåll och markera filen som innehåller din anpassade JavaScript-kod. Lär dig importera innehåll [i det här avsnittet](../design/existing-content.md).
+* Importera befintligt HTML-innehåll när du börjar skapa ditt innehåll och markera filen som innehåller din anpassade JavaScript-kod. Lär dig importera innehåll [i det här avsnittet](../email/existing-content.md).
 
-* Utforma landningssidan från grunden eller från en sparad mall. Dra och släpp **[!UICONTROL HTML]** innehållskomponenten på arbetsytan och visa källkoden för att lägga till JavaSCript i komponenten. Lär dig hur du använder komponenten HTML i [det här avsnittet](../design/content-components.md#HTML). <!--You can also simply switch the whole landing page content to code view and enter or paste your JavaScript code.-->
+* Utforma landningssidan från grunden eller från en sparad mall. Dra och släpp **[!UICONTROL HTML]** innehållskomponenten på arbetsytan och visa källkoden för att lägga till JavaSCript i komponenten. Lär dig hur du använder komponenten HTML i [det här avsnittet](../email/content-components.md#HTML). <!--You can also simply switch the whole landing page content to code view and enter or paste your JavaScript code.-->
 
    ![](assets/lp_designer-html-component.png)
 
-* Ange eller klistra in JavaScript-kod direkt i innehållsdesignern. Lär dig koda eget innehåll [i det här avsnittet](../design/code-content.md).
+* Ange eller klistra in JavaScript-kod direkt i innehållsdesignern. Lär dig koda eget innehåll [i det här avsnittet](../email/code-content.md).
 
 >[!NOTE]
 >

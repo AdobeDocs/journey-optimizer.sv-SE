@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 8c00d783-54a3-45d9-bd8f-4dc58804d922
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 1%
@@ -53,9 +53,9 @@ Anta till exempel att du ordnar ett event nästa månad och vill starta en kampa
 
    ![](assets/lp_subscription-uc-journey.png)
 
-1. [Designa e-postmeddelandet](../messages/get-started-content.md) för att meddela att registreringen nu är öppen för ditt event.
+1. [Designa e-postmeddelandet](../email/get-started-email-design.md) för att meddela att registreringen nu är öppen för ditt event.
 
-1. [Infoga en länk](../design/message-tracking.md#insert-links) i ert meddelandeinnehåll. Välj **[!UICONTROL Landing page]** som **[!UICONTROL Link type]** och väljer [landningssida](create-lp.md#configure-primary-page) som du har skapat för registrering.
+1. [Infoga en länk](../email/message-tracking.md#insert-links) i ert meddelandeinnehåll. Välj **[!UICONTROL Landing page]** som **[!UICONTROL Link type]** och väljer [landningssida](create-lp.md#configure-primary-page) som du har skapat för registrering.
 
    ![](assets/lp_subscription-uc-link.png)
 
@@ -128,9 +128,9 @@ Följ stegen nedan om du vill att mottagarna av ett e-postmeddelande ska kunna a
 
    ![](assets/lp_opt-out-publish.png)
 
-1. [Skapa ett e-postmeddelande](../messages/get-started-content.md) på en resa.
+1. [Skapa ett e-postmeddelande](../email/get-started-email-design.md) på en resa.
 
-1. Markera text i innehållet och [infoga en länk](../design/message-tracking.md#insert-links) med hjälp av kontextverktygsfältet. Du kan också använda en länk på en knapp.
+1. Markera text i innehållet och [infoga en länk](../email/message-tracking.md#insert-links) med hjälp av kontextverktygsfältet. Du kan också använda en länk på en knapp.
 
    ![](assets/lp_opt-out-insert-link.png)
 

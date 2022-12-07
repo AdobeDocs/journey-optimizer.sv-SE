@@ -7,7 +7,8 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: e7431d1b69e460471b01439c9bd2577fd69944ed
+exl-id: 7d7aa721-96aa-4ebc-a51c-e693f893f34f
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 9%
@@ -80,7 +81,7 @@ The **[!UICONTROL Media]** I kan du lägga till media i dina meddelanden i appen
 
 ![](assets/in_app_content_3.png)
 
-Ange din medie-URL eller klicka på **[!UICONTROL Select Assets]** om du vill lägga till resurser som lagras i ditt resursbibliotek direkt i ditt meddelande i appen. [Läs mer om resurshantering](../design/assets-essentials.md).
+Ange din medie-URL eller klicka på **[!UICONTROL Select Assets]** om du vill lägga till resurser som lagras i ditt resursbibliotek direkt i ditt meddelande i appen. [Läs mer om resurshantering](../email/assets-essentials.md).
 Du kan också lägga till en **[!UICONTROL Alternative text]** för skärmläsningsprogram.
 
 +++Fler alternativ med avancerad formatering
@@ -192,4 +193,3 @@ Om **[!UICONTROL Advanced formatting mode]** är aktiverat kan du anpassa meddel
 * [Skapa meddelande i appen](create-in-app.md)
 * [Rapport i appen](inapp-report.md)
 * [Konfiguration i appen](inapp-configuration.md)
-

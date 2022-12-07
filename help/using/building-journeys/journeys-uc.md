@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: a1bbfcee-2235-4820-a391-d5d35f499cb0
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 2%
@@ -88,7 +88,7 @@ Händelsen är nu konfigurerad och klar att användas under din resa. Genom att 
 
    ![](assets/jo-uc4.png)
 
-1. Släpp **E-post** Åtgärdsaktivitet och definiera innehållet i det&quot;första meddelandet&quot;. Det här meddelandet skickas till alla personer på resan. Se detta [section](../messages/create-email.md) om du vill lära dig hur du konfigurerar och utformar ett e-postmeddelande.
+1. Släpp **E-post** Åtgärdsaktivitet och definiera innehållet i det&quot;första meddelandet&quot;. Det här meddelandet skickas till alla personer på resan. Se detta [section](../email/create-email.md) om du vill lära dig hur du konfigurerar och utformar ett e-postmeddelande.
 
    ![](assets/jo-uc5.png)
 
@@ -104,11 +104,11 @@ Händelsen är nu konfigurerad och klar att användas under din resa. Genom att 
    >
    >När du konfigurerar en timeout för flera händelser (de två reaktionerna i det här fallet) behöver du bara konfigurera timeout för en av dessa händelser.
 
-1. Släpp en **E-post** Åtgärdsaktivitet och definiera innehållet i&quot;uppföljningsmeddelandet&quot;. Det här meddelandet skickas till de personer som inte öppnar e-postmeddelandet eller skickar det första meddelandet nästa dag. Se detta [section](../messages/create-email.md) om du vill lära dig hur du konfigurerar och utformar ett e-postmeddelande.
+1. Släpp en **E-post** Åtgärdsaktivitet och definiera innehållet i&quot;uppföljningsmeddelandet&quot;. Det här meddelandet skickas till de personer som inte öppnar e-postmeddelandet eller skickar det första meddelandet nästa dag. Se detta [section](../email/create-email.md) om du vill lära dig hur du konfigurerar och utformar ett e-postmeddelande.
 
 1. Koppla de tre sökvägarna till inköpshändelsen som skapades tidigare. Händelsen utlöses när en person gör ett köp.
 
-1. Efter händelsen släpper du en **Push** aktiviteten och definiera innehållet i tackmeddelandet. Se detta [section](../messages/create-push.md) om du vill lära dig hur du konfigurerar och utformar en push-lösning.
+1. Efter händelsen släpper du en **Push** aktiviteten och definiera innehållet i tackmeddelandet. Se detta [section](../push/create-push.md) om du vill lära dig hur du konfigurerar och utformar en push-lösning.
 
 ## Testa och publicera resan
 

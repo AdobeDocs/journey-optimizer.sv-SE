@@ -5,10 +5,10 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 8026a214919e468b355aeb030ac1b387307e3e67
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 34%
+source-wordcount: '1301'
+ht-degree: 33%
 
 ---
 
@@ -160,57 +160,71 @@ ht-degree: 34%
    + [Kom igång med kampanjer](using/campaigns/get-started-with-campaigns.md)
    + [Skapa en kampanj](using/campaigns/create-campaign.md)
    + [Granska och aktivera en kampanj](using/campaigns/review-activate-campaign.md)
-   + [Hantera livekampanjer](using/campaigns/modify-stop-campaign.md)
+   + [Hantera kampanjer](using/campaigns/modify-stop-campaign.md)
    + Innehållsexperiment {#content-experiment}
       + [Kom igång med innehållsexperiment](using/campaigns/get-started-experiment.md)
       + [Skapa ett innehållsexperiment](using/campaigns/content-experiment.md)
       + [Förstå statistiska beräkningar](using/campaigns/experiment-calculations.md)
       + [Konfigurera experimentrapporter](using/campaigns/reporting-configuration.md)
    + [Utlösa kampanjer med API:er](using/campaigns/api-triggered-campaigns.md)
-+ Meddelanden {#messages}
-   + Kom igång med meddelanden{#get-started-msg}
-      + [Översikt](using/messages/get-started-content.md)
-      + [Lägg till meddelanden under resor](using/messages/messages-in-journeys.md)
-      + [Lägg till meddelanden i kampanjer](using/messages/messages-in-campaigns.md)
-   + [Skapa ett e-postmeddelande](using/messages/create-email.md)
-   + [Skapa ett push-meddelande](using/messages/create-push.md)
-   + [Skapa ett SMS-meddelande](using/messages/create-sms.md)
-   + [Skapa direktreklam](using/messages/create-direct-mail.md)
-   + [Kontrollera aviseringar](using/messages/alerts.md)
-   + [Tidsoptimering för sändning](using/messages/send-time-optimization.md)
-+ Webbkanal{#web}
-   + [Kom igång med webbkanalen](using/web/get-started-web.md)
-   + [Skapa webbupplevelser](using/web/create-web.md)
-   + [Skapa webbsidor](using/web/author-web.md)
-   + [Hjälptillägg för visuell redigering](using/web/visual-editing-helper.md)
-   + [Webbrapportering](using/web/web-report.md)
++ E-postkanal {#email}
+   + [Kom igång med e-post](using/email/get-started-email.md)
+   + [Skapa ett e-postmeddelande](using/email/create-email.md)
+   + Designa e-postinnehåll {#design-email}
+      + [Kom igång med e-postdesign](using/email/get-started-email-design.md)
+      + Börja skapa innehåll {#start-creating-content}
+         + [Börja från början](using/email/content-from-scratch.md)
+         + [Importera e-postinnehåll](using/email/existing-content.md)
+         + [Koda eget innehåll](using/email/code-content.md)
+         + [Arbeta med mallar](using/email/email-templates.md)
+      + Designa innehåll {#add-content}
+         + [Använda innehållskomponenter](using/email/content-components.md)
+         + [Lägga till länkar och spåra meddelanden](using/email/message-tracking.md)
+         + Hantera resurser {#manage-asset}
+            + [Arbeta med Assets Essentials](using/email/assets-essentials.md)
+            + [Arbeta med Adobe Stock](using/email/stock.md)
+         + [Lägg till personaliserade erbjudanden](using/email/add-offers-email.md)
+         + [Generera textversionen](using/email/text-version-email.md)
+         + [Lägga till en förrubrik](using/email/preheader.md)
+      + Redigera stil {#edit-style}
+         + [Redigera bakgrundsinställningar](using/email/backgrounds.md)
+         + [Justera lodrät justering och utfyllnad](using/email/alignment-and-padding.md)
+         + [Definiera ett format för länkar](using/email/styling-links.md)
+         + [Lägg till textbundna formatattribut](using/email/inline-styling.md)
+   + [Förhandsgranska och testa din e-post](using/email/preview.md)
+   + [Hantera e-postavanmälan](using/email/email-opt-out.md)
+   + Konfigurera e-postkanal {#configure-email}
+      + [Kom igång med e-postkonfiguration](using/email/get-started-email-config.md)
+      + [Konfigurera inställningar för e-postyta](using/email/email-settings.md)
 + Kanal i appen{#in-app}
    + [Kom igång med kanalen i appen](using/in-app/get-started-in-app.md)
    + [Konfigurera kanal i appen](using/in-app/inapp-configuration.md)
    + [Skapa ett meddelande i appen](using/in-app/create-in-app.md)
    + [Designa ditt innehåll i appen](using/in-app/design-in-app.md)
    + [Rapport i appen](using/in-app/inapp-report.md)
-+ Designinnehåll {#design}
-   + [Kom igång med e-postdesign](using/design/design-emails.md)
-   + [Börja från början ](using/design/create-email-content.md)
-   + [Importera e-postinnehåll](using/design/existing-content.md)
-   + [Koda eget innehåll](using/design/code-content.md)
-   + [Arbeta med mallar](using/design/email-templates.md)
-   + Innehållsdesign {#design-content}
-      + [Använda innehållskomponenter](using/design/content-components.md)
-      + [Bakgrundsinställningar](using/design/backgrounds.md)
-      + [Justera lodrät justering och utfyllnad](using/design/adjusting-vertical-alignment-and-padding.md)
-      + [Definiera ett format för länkar](using/design/styling-links.md)
-      + [Lägg till textbundna formatattribut](using/design/adding-inline-styling-attributes.md)
-   + E-postinställningar {#design-email}
-      + [Generera textversionen](using/design/text-version-email.md)
-      + [Lägga till en förrubrik](using/design/preheader.md)
-   + Lägga till och hantera resurser {#manage-asset}
-      + [Arbeta med Assets Essentials](using/design/assets-essentials.md)
-      + [Arbeta med Adobe Stock](using/design/stock.md)
-   + [Lägg till personaliserade erbjudanden](using/design/deliver-personalized-offers.md)
-   + [Lägga till länkar och spåra meddelanden](using/design/message-tracking.md)
-   + [Förhandsgranska och korrektur](using/design/preview.md)
++ Push-meddelandekanal{#push}
+   + [Kom igång med push-meddelanden](using/push/get-started-push.md)
+   + [Skapa ett push-meddelande](using/push/create-push.md)
+   + [Utforma ett push-meddelande](using/push/design-push.md)
+   + [Skicka push-meddelanden](using/push/send-push.md)
+   + Konfigurera push-meddelanden{#push-config}
+      + [Push-meddelanden och Adobe Journey Optimizer](using/push/push-gs.md)
+      + [Konfigurera kanal för push-meddelanden](using/push/push-configuration.md)
++ SMS-kanal{#sms}
+   + [Kom igång med SMS](using/sms/get-started-sms.md)
+   + [Skapa ett SMS-meddelande](using/sms/create-sms.md)
+   + [Skicka ett SMS-meddelande](using/sms/send-sms.md)
+   + [Hantera SMS-avanmälan](using/sms/sms-opt-out.md)
+   + [Konfigurera SMS-kanal](using/sms/sms-configuration.md)
++ Direktutskick {#direct-mail}
+   + [Skapa direktreklam](using/direct-mail/create-direct-mail.md)
+   + [Konfigurera direktreklam](using/direct-mail/direct-mail-configuration.md)
++ Webbkanal{#web}
+   + [Kom igång med webbkanalen](using/web/get-started-web.md)
+   + [Skapa webbupplevelser](using/web/create-web.md)
+   + [Skapa webbsidor](using/web/author-web.md)
+   + [Hjälptillägg för visuell redigering](using/web/visual-editing-helper.md)
+   + [Webbrapportering](using/web/web-report.md)
 + Landningssidor {#landing-pages}
    + [Kom igång med landningssidor](using/landing-pages/get-started-lp.md)
    + [Skapa en landningssida](using/landing-pages/create-lp.md)
@@ -398,9 +412,6 @@ ht-degree: 34%
 + Konfiguration{#configuration}
    + [Kom igång med Journey Optimizer](using/configuration/get-started-configuration.md)
    + Konfigurera meddelanden {#configuration-message}
-      + Konfigurera push-meddelanden{#push-config}
-         + [Kom igång med push-konfiguration](using/configuration/push-gs.md)
-         + [Konfigurera kanal för push-meddelanden](using/configuration/push-configuration.md)
       + Konfigurera e-postmeddelanden {#email-configuration}
          + Delegera underdomäner {#delegate-subdomains}
             + [Kom igång med delegering till underdomäner](using/configuration/about-subdomain-delegation.md)
@@ -414,11 +425,8 @@ ht-degree: 34%
             + [Undertryckningslista](using/configuration/manage-suppression-list.md)
             + [Återförsök](using/configuration/retries.md)
             + [Tillåtelselista](using/configuration/allow-list.md)
-      + [Konfigurera SMS-kanal](using/configuration/sms-configuration.md)
-      + [Konfigurera direktreklam](using/configuration/direct-mail-configuration.md)
       + Konfigurera kanalytor {#set-up-channels}
          + [Skapa kanalytor](using/configuration/channel-surfaces.md)
-         + [Konfigurera e-postinställningar](using/configuration/email-settings.md)
       + [Stöd för arkivering](using/configuration/archiving-support.md)
       + [Hantera körningsadresser](using/configuration/primary-email-addresses.md)
       + [Konfigurera frekvensregler](using/configuration/frequency-rules.md)

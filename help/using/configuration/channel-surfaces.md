@@ -8,7 +8,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: efea1bbd5154d378daf1f52315384156b6d23ae3
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 0%
@@ -22,14 +22,13 @@ ht-degree: 0%
 >title="Appyta"
 >abstract="En yta är en konfiguration som har definierats av en systemadministratör. Den innehåller alla tekniska parametrar för att skicka meddelandet, som rubrikparametrar, underdomän, mobilappar osv."
 
-
 Med [!DNL Journey Optimizer]kan du skapa kanalytor (t.ex. meddelandeförinställningar) som definierar alla tekniska parametrar som krävs för dina meddelanden: e-posttyp, avsändarens e-postadress och namn, mobilappar, SMS-konfiguration med mera.
 
 >[!CAUTION]
 >
 > * Om du vill skapa, redigera och ta bort kanalytor måste du ha [Hantera kanalyta](../administration/high-low-permissions.md#manage-channel-surface) behörighet.
 >
-> * Du måste utföra [E-postkonfiguration](email-settings.md), [Push-konfiguration](../configuration/push-configuration.md) och [SMS-konfiguration](../configuration/sms-configuration.md) innan du skapar kanalytor.
+> * Du måste utföra [E-postkonfiguration](../email/get-started-email-config.md), [Push-konfiguration](../push/push-configuration.md) och [SMS-konfiguration](../sms/sms-configuration.md) innan du skapar kanalytor.
 
 
 När kanalytorna har konfigurerats kan du välja dem när du skapar meddelanden från en resa eller en kampanj.
@@ -64,7 +63,7 @@ Så här skapar du en kanalyta:
    >
    > Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-` tecken.
 
-1. Om du valde **[!UICONTROL Email]** kanal, konfigurera dina inställningar enligt beskrivningen i [det här avsnittet](email-settings.md).
+1. Om du valde **[!UICONTROL Email]** kanal, konfigurera dina inställningar enligt beskrivningen i [det här avsnittet](../email/email-settings.md).
 
    ![](assets/preset-email.png)
 
@@ -74,15 +73,15 @@ Så här skapar du en kanalyta:
 
    >[!NOTE]
    >
-   >Mer information om hur du konfigurerar miljön för att skicka push-meddelanden finns i [det här avsnittet](push-gs.md).
+   >Mer information om hur du konfigurerar miljön för att skicka push-meddelanden finns i [det här avsnittet](../push/push-gs.md).
 
-1. För **[!UICONTROL SMS]** kanal, ange dina inställningar enligt [det här avsnittet](sms-configuration.md#message-preset-sms).
+1. För **[!UICONTROL SMS]** kanal, ange dina inställningar enligt [det här avsnittet](../sms/sms-configuration.md#message-preset-sms).
 
    ![](assets/preset-sms.png)
 
    >[!NOTE]
    >
-   >Mer information om hur du konfigurerar miljön för att skicka SMS-meddelanden finns i [det här avsnittet](sms-configuration.md).
+   >Mer information om hur du konfigurerar miljön för att skicka SMS-meddelanden finns i [det här avsnittet](../sms/sms-configuration.md).
 
 1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara kanalytan som ett utkast och återuppta konfigurationen senare.
 

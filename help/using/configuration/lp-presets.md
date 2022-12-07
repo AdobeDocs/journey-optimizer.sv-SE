@@ -6,7 +6,7 @@ description: Lär dig hur du konfigurerar miljön för att skapa och använda la
 role: Admin
 level: Intermediate
 exl-id: 7cf1f083-bef0-40b5-8ddd-920a9d108eca
-source-git-commit: 3a932747de33ced59d68835a96386b7ac560e4fe
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 2%
@@ -66,7 +66,7 @@ Följ stegen nedan för att skapa en förinställning för landningssidan.
 
    De inställningar som motsvarar den valda underdomänens visning.
 
-1. Om du vill välja landningssidans underdomän för spårnings-URL:en kontrollerar du **[!UICONTROL Same as landing page subdomain]** alternativ. [Läs mer om spårning](../design/message-tracking.md)
+1. Om du vill välja landningssidans underdomän för spårnings-URL:en kontrollerar du **[!UICONTROL Same as landing page subdomain]** alternativ. [Läs mer om spårning](../email/message-tracking.md)
 
    ![](assets/lp_preset-subdomain-settings-same.png)
 

@@ -5,7 +5,7 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 5053dd4f-d050-415f-bc74-d6d061bdcbe1
-source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 0%
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 Som utvecklare måste du **konfigurera din mobilapp** för att kunna skicka push-meddelanden med [!DNL Adobe Journey Optimizer].
 
-[!DNL Journey Optimizer] kan ni skapa resor och skicka meddelanden till riktade målgrupper. Innan du börjar skicka push-meddelanden med [!DNL Journey Optimizer]måste ni se till att konfigurationer och integreringar finns på plats i mobilappen och i [!DNL Adobe Experience Platform] och [!DNL Adobe Experience Platform Launch]. För att förstå dataflödet för push-meddelanden i [!DNL Adobe Journey Optimizer] se [den här sidan](../../configuration/push-gs.md).
+[!DNL Journey Optimizer] kan ni skapa resor och skicka meddelanden till riktade målgrupper. Innan du börjar skicka push-meddelanden med [!DNL Journey Optimizer]måste ni se till att konfigurationer och integreringar finns på plats i mobilappen och i [!DNL Adobe Experience Platform] och [!DNL Adobe Experience Platform Launch]. För att förstå dataflödet för push-meddelanden i [!DNL Adobe Journey Optimizer] se [den här sidan](../../push/push-gs.md).
 
-Steg för att konfigurera push-meddelandekanalen och testa mobilappsintegreringen finns i [den här sidan](../../configuration/push-configuration.md).
+Steg för att konfigurera push-meddelandekanalen och testa mobilappsintegreringen finns i [den här sidan](../../push/push-configuration.md).
 
 ## Arbeta med API:er {#work-apis}
 

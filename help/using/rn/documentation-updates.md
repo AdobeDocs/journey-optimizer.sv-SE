@@ -4,9 +4,9 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 0b19af568b33d29f4b35deeab6def17919cfe824
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
-source-wordcount: '2187'
+source-wordcount: '2185'
 ht-degree: 18%
 
 ---
@@ -18,8 +18,8 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 ## November 2022 {#november-2022}
 
 * En ny sida om Journey Optimizer integreringar har lagts till. [Läs mer](../start/ajo-integrations.md)
-* En rekommendation om längden på URL:er för spegelsidor har lagts till. [Läs mer](../design/message-tracking.md)
-* Ett nytt underavsnitt i konfigurationen av e-postinställningarna har lagts till i svaret på e-postadressen, inklusive rekommendationer för att säkerställa korrekt svarshantering. [Läs mer](../configuration/email-settings.md#reply-to-email)
+* En rekommendation om längden på URL:er för spegelsidor har lagts till. [Läs mer](../email/message-tracking.md)
+* Ett nytt underavsnitt i konfigurationen av e-postinställningarna har lagts till i svaret på e-postadressen, inklusive rekommendationer för att säkerställa korrekt svarshantering. [Läs mer](../email/email-settings.md#reply-to-email)
 * Ett avsnitt har lagts till om hur du ändrar innehållet i ett meddelande i en direktresa. [Läs mer](../building-journeys/journeys-message.md#update-live-content)
 
 ## Oktober 2022 {#october-2022}
@@ -28,7 +28,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Fallavsnittet för resans användning har omorganiserats i två kategorier: [Användningsexempel](../building-journeys/journeys-uc.md) och [Tekniska användningsfall](../building-journeys/collections.md).
 * The **Enhetsdatauppsättning** -avsnittet har uppdaterats med mer information. [Läs mer](../data/datasets-query-examples.md#entity-dataset)
 * Avsnitten för hantering av avanmälan och godkännandepolicyer har omorganiserats. [Läs mer](../privacy/opt-out.md)
-* Avsnittet om avancerade parametrar i resemeddelanden har klargjorts och anger nu att åsidosättning av e-postadresser endast ska användas för särskilda användningsfall. Det värde som oftast definieras som den primära adressen i **Körningsfält** är den som bör användas. [Läs mer](../messages/messages-in-journeys.md#adv-settings)
+* Avsnittet om avancerade parametrar i resemeddelanden har klargjorts och anger nu att åsidosättning av e-postadresser endast ska användas för särskilda användningsfall. Det värde som oftast definieras som den primära adressen i **Körningsfält** är den som bör användas.
 * En anteckning har lagts till i **Konfigurera underdomäner för landningssidor** för att ange att versaler inte tillåts i underdomäner för landningssidor. [Läs mer](../configuration/lp-subdomains.md)
 
 ## September 2022 {#september-2022}
@@ -76,21 +76,21 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Sidan Tillåtelselista har flyttats till avsnittet Konfiguration. [Läs mer](../configuration/allow-list.md)
 * Sidan Suppression List har uppdaterats för att förtydliga viss information, inklusive det faktum att alla ASCII-tecken mellan 32 och 126 tillåts i fältet för undertryckning. [Läs mer](../configuration/manage-suppression-list.md)
 * Länken till skyddsförslag och statiska gränser för beslutshantering har lagts till. [Läs mer](../start/guardrails.md)
-* Tidsoptimering är nu tillgängligt för alla kunder. Betaversionen har tagits bort. [Läs mer](../messages/send-time-optimization.md)
+* Tidsoptimering är nu tillgängligt för alla kunder. Betaversionen har tagits bort. [Läs mer](../building-journeys/journeys-message.md#send-time-optimization)
 * API:t för gruppbeslut har lagts till i listan över tillgängliga API:er för leverans av personaliserade erbjudanden. [Läs mer](../offers/api-reference/offer-delivery-api/start-offer-delivery-apis.md)
 
 ## Maj 2022 {#may-2022}
 
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version från maj 22 finns utförlig i dokumentationen. [Läs mer](release-notes.md)
 * Nya frågeexempel relaterade till [segmentkvalificering](../reports/query-examples.md#segment-qualification-queries) och [händelser](../reports/query-examples.md#event-based-queries) har lagts till.
-* I avsnittet för e-postdesign omnämns nu nya inbyggda mallar som kan användas för att börja innehåll med. Relaterade skärmbilder har uppdaterats. [Läs mer](../design/design-emails.md)
+* I avsnittet för e-postdesign omnämns nu nya inbyggda mallar som kan användas för att börja innehåll med. Relaterade skärmbilder har uppdaterats. [Läs mer](../email/get-started-email-design.md)
 * Länkar till viktiga resurser har uppdaterats på Journey Optimizer dokumentationsstartsida.
 * Skärmbilder för landningssidor och prenumerationsrapporter har uppdaterats. [Läs mer](../reports/live-report.md)
 * En anteckning om att metoden Delete inte stöds i anpassade åtgärder har lagts till. [Läs mer](../action/about-custom-action-configuration.md)
 * Länkar till instruktionsvideor har uppdaterats.
 * The [E-postkonfiguration](../configuration/about-subdomain-delegation.md), [Meddelandeförinställningar](../configuration/channel-surfaces.md) och [Konfigurera landningssidor](../configuration/lp-subdomains.md) -avsnitten har omstrukturerats för att bli enklare att läsa.
-* Avsnittet för URL-spårning har uppdaterats och förbättrats med exempel. [Läs mer](../configuration/email-settings.md#url-tracking)
-* Ett nytt underavsnitt om hur du konfigurerar en e-postadress för vidarebefordran har lagts till. Observera att du inte kan göra det via användargränssnittet. [Läs mer](../configuration/email-settings.md#forward-email)
+* Avsnittet för URL-spårning har uppdaterats och förbättrats med exempel. [Läs mer](../email/email-settings.md#url-tracking)
+* Ett nytt underavsnitt om hur du konfigurerar en e-postadress för vidarebefordran har lagts till. Observera att du inte kan göra det via användargränssnittet. [Läs mer](../email/email-settings.md#forward-email)
 
 ## April 2022 {#april-2022}
 
@@ -126,7 +126,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Avsnittet som är relaterat till [!DNL Journey Optimizer] personaliseringsfunktionerna har omstrukturerats för att bli lättare att läsa. [Läs mer](../personalization/personalize.md)
 * The **Skapa meddelandeförinställningar** har delats upp i flera avsnitt för att bli tydligare. [Läs mer](../configuration/channel-surfaces.md#create-channel-surface)
 * The **Hantering av avanmälan** har klargjorts och omorganiserats något. [Läs mer](../privacy/opt-out.md#opt-out-management)
-* The **Infoga länkar** -avsnittet har uppdaterats för att återspegla de senaste ändringarna i användargränssnittet. [Läs mer](../design/message-tracking.md#insert-links)
+* The **Infoga länkar** -avsnittet har uppdaterats för att återspegla de senaste ändringarna i användargränssnittet. [Läs mer](../email/message-tracking.md#insert-links)
 
 ## November 2021 {#november-2021}
 
@@ -204,8 +204,8 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Lagt till länkar till [!DNL Journey Optimizer] produktbeskrivning på startsidan
 * Lagt till självstudievideor på flera sidor
 * Optimerade startsidesbilder
-* Avsnittet&quot;Meddelandespårning&quot; har flyttats, förbättrats och bytt namn till&quot;Lägg till länkar och spåra meddelanden&quot;. [Läs mer](../design/message-tracking.md)
-* Ett underavsnitt har lagts till på spegelsidor. [Läs mer](../design/message-tracking.md#mirror-page)
+* Avsnittet&quot;Meddelandespårning&quot; har flyttats, förbättrats och bytt namn till&quot;Lägg till länkar och spåra meddelanden&quot;. [Läs mer](../email/message-tracking.md)
+* Ett underavsnitt har lagts till på spegelsidor. [Läs mer](../email/message-tracking.md#mirror-page)
 * Namnet på&quot;erbjudandeaktiviteter&quot; har ändrats till&quot;beslut&quot; och&quot;beslut&quot; till&quot;beslutsomfattningar&quot; i dokumentation och skärmar. [Läs mer](../offers/get-started/starting-offer-decisioning.md)
 * Nytt användningsfall: [personalisera ett meddelande med hjälpfunktioner](../personalization/personalization-use-case-helper-functions.md)
 * Dokumentationen för Läs segment har uppdaterats för att återspegla materialiserad segmentpåverkan. [Läs mer](../building-journeys/read-segment.md)

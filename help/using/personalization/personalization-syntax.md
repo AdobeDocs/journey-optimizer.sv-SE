@@ -8,7 +8,7 @@ topic: Personalization
 role: Data Engineer
 level: Intermediate
 exl-id: 5a562066-ece0-4a78-92a7-52bf3c3b2eea
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 3%
@@ -155,7 +155,7 @@ Personaliserade URL:er tar mottagarna till specifika sidor på en webbplats elle
 
 Med Journey Optimizer kan du anpassa en eller flera URL-adresser i meddelandet genom att lägga till anpassningsfält till dem. Följ stegen nedan för att anpassa en URL-adress:
 
-1. Skapa en länk i meddelandeinnehållet. [Läs mer](../design/message-tracking.md#insert-links)
+1. Skapa en länk i meddelandeinnehållet. [Läs mer](../email/message-tracking.md#insert-links)
 1. Välj attribut från personaliseringsikonen. Ikonen för anpassning är bara tillgänglig för följande typer av länkar: **Extern länk**, **Länk för att avbryta prenumeration** och **Avanmäl dig**.
 
 ![](assets/perso-url.png)

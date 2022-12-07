@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c61b8d80-17e1-4fdd-a739-efcee032dc23
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 1%
@@ -23,14 +23,14 @@ Börja skapa innehåll för landningen [primär sida](create-lp.md#configure-pri
 
 Därifrån kan man
 
-* **Designa landningssidan från grunden** genom innehållsdesignerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets Essentials](../design/assets-essentials.md). Lär dig designa innehåll <!--or use built-in templates--> [i det här avsnittet](../design/create-email-content.md).
+* **Designa landningssidan från grunden** genom innehållsdesignerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets Essentials](../email/assets-essentials.md). Lär dig designa innehåll <!--or use built-in templates--> [i det här avsnittet](../email/content-from-scratch.md).
 
-* **Kod eller klistra in Raw HTML** direkt in i innehållsdesignern. Lär dig koda eget innehåll [i det här avsnittet](../design/code-content.md).
+* **Kod eller klistra in Raw HTML** direkt in i innehållsdesignern. Lär dig koda eget innehåll [i det här avsnittet](../email/code-content.md).
 
-* **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig importera innehåll [i det här avsnittet](../design/existing-content.md).
+* **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig importera innehåll [i det här avsnittet](../email/existing-content.md).
 
 * **Använda en sparad landningssidmall** skapad i [!DNL Journey Optimizer]. [Läs mer](lp-templates.md)
 
 >[!NOTE]
 >
->Innehållsdesignern för landningssidan liknar oftast e-postdesignern. Läs mer på [designa innehåll med [!DNL Journey Optimizer]](../design/design-emails.md).
+>Innehållsdesignern för landningssidan liknar oftast e-postdesignern. Läs mer på [designa innehåll med [!DNL Journey Optimizer]](../email/get-started-email-design.md).

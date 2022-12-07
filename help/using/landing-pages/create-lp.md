@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: 38ad3289def56440ef8e78db870a36ee14e965df
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
 source-wordcount: '1460'
 ht-degree: 1%
@@ -182,7 +182,7 @@ Följ stegen nedan för att definiera inställningar för undersidan.
 
    >[!NOTE]
    >
-   >Du kan infoga en länk till den primära sidan från en undersida till samma landningssida. Om du till exempel vill dirigera om användare som har gjort ett misstag och vill prenumerera igen, kan du lägga till en länk från bekräftelseundersidan till den primära prenumerationssidan. Lär dig hur du infogar länkar i [det här avsnittet](../design/message-tracking.md#insert-links).
+   >Du kan infoga en länk till den primära sidan från en undersida till samma landningssida. Om du till exempel vill dirigera om användare som har gjort ett misstag och vill prenumerera igen, kan du lägga till en länk från bekräftelseundersidan till den primära prenumerationssidan. Lär dig hur du infogar länkar i [det här avsnittet](../email/message-tracking.md#insert-links).
 
 1. Definiera URL-adressen till landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan. [Läs mer](../configuration/lp-subdomains.md)
 
@@ -212,7 +212,7 @@ När inställningarna för landningssidan och innehållet har definierats kan du
 
    ![](assets/lp_test-profiles.png)
 
-   Stegen för att välja testprofiler är desamma som när du testar ett meddelande. De beskrivs i [det här avsnittet](../design/preview.md#select-test-profiles).
+   Stegen för att välja testprofiler är desamma som när du testar ett meddelande. De beskrivs i [det här avsnittet](../email/preview.md#select-test-profiles).
 
 1. Välj **[!UICONTROL Preview]** och klicka **[!UICONTROL Open preview]** för att testa landningssidan.
 
@@ -275,7 +275,7 @@ När landningssidan är klar kan du publicera den för att göra den tillgängli
 
 När landningssidan har publicerats läggs den till i listan över landningssidor med **[!UICONTROL Published]** status.
 
-Den är nu klar att användas i en [!DNL Journey Optimizer] [message](../messages/get-started-content.md) som skickas via en [resa](../building-journeys/journey.md).
+Den är nu klar att användas i en [!DNL Journey Optimizer] som skickas via en [resa](../building-journeys/journey.md).
 
 >[!NOTE]
 >

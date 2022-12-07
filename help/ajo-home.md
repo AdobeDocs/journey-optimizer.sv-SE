@@ -5,10 +5,10 @@ description: Adobe Journey Optimizer produkthjälpcenter
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: a2d05c7f2c00172a6f4e7b9d9f60d1732c91af8a
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 8%
+source-wordcount: '321'
+ht-degree: 7%
 
 ---
 
@@ -42,15 +42,10 @@ ht-degree: 8%
     <p>
     <p>
     <div>
-      <a href="using/design/design-emails.md">Designa e-postinnehåll</a>
+      <a href="using/email/get-started-email-design.md">Designa e-postinnehåll</a>
     </div>
     <p>
     Designa ett nytt e-postmeddelande eller importera ett befintligt HTML-innehåll
-    <p>
-    <div>
-      <a href="using/messages/get-started-content.md">Skicka meddelanden</a>
-    </div>
-    <p>Lär dig hur du lägger till push-, SMS- och e-postmeddelanden i kundresor
     <p>
     <div>
     <a href="using/building-journeys/journeys-uc.md">Skapa din första resa</a>
@@ -127,7 +122,7 @@ ht-degree: 8%
     <p>
     <p>INNEHÅLLSHANTERING</p>
     <li>
-      <a href="using/design/assets-essentials.md">Assets</a>
+      <a href="using/email/assets-essentials.md">Assets</a>
     </li>
     <p>
     <p>DATAHANTERING</p>

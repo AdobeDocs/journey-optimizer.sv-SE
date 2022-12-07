@@ -4,10 +4,10 @@ product: journey optimizer
 title: Versionsinformation 2022
 description: Versionsinformation om Journey Optimizer 2022
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
-source-git-commit: 7e27f5502d64d0c91de2c67e4011e650e77c6a92
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
-source-wordcount: '3461'
-ht-degree: 9%
+source-wordcount: '3453'
+ht-degree: 8%
 
 ---
 
@@ -232,7 +232,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <td>
 <p>Nu kan du skapa, anpassa och skicka SMS i Journey Optimizer via en integrering med <b>Sinch</b> eller <b>Twilio</b>.</p>
 <img src="assets/do-not-localize/SMS.gif"/>
-<p>Lär dig hur du skapar och skickar ett SMS i det här <a href="../messages/create-sms.md">detaljerad dokumentation</a>.</p>
+<p>Lär dig hur du skapar och skickar ett SMS i det här <a href="../sms/create-sms.md">detaljerad dokumentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -284,7 +284,6 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <td>
 <p>Journey Optimizer har ett nytt flöde för att skapa meddelanden i Journeys. Med textbundna meddelanden sparar man mycket tid och effektiviserar arbetsflödet för att skapa och leverera e-post, push-meddelanden eller SMS i Journey Optimizer. Genom att ta bort meddelanden som ett separat steg och i stället göra dem redigerbara online som en del av en åtgärd på arbetsytan på resan, måste användarna klicka på färre knappar och navigera bland färre skärmar för att utforma och redigera innehållet.</p>
 <img src="assets/do-not-localize/inline.gif"/>
-<p>Mer information finns i den <a href="../messages/get-started-content.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -364,7 +363,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 * **Tillåtelselista logikuppdatering** - Nu gäller logiken i tillåtelselista så snart funktionen är aktiverad, även om listan är tom. [Läs mer](../configuration/allow-list.md#logic)
 
-* **URL-spårningsparametrar** - Du kan nu använda uttrycksredigeraren för att konfigurera parametrar för URL-spårning i dina e-postytor (t.ex. förinställningar). [Läs mer](../configuration/email-settings.md#url-tracking)
+* **URL-spårningsparametrar** - Du kan nu använda uttrycksredigeraren för att konfigurera parametrar för URL-spårning i dina e-postytor (t.ex. förinställningar). [Läs mer](../email/email-settings.md#url-tracking)
 
 **Beslutsledning**
 
@@ -387,7 +386,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <p>Nu kan du skapa, anpassa och skicka SMS i Journey Optimizer via en integrering med <b>Sinch</b> eller <b>Twilio</b>.</p>
 <!--img src="assets/do-not-localize/SMS.gif"/-->
 <p>SMS-kanalen är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.</p>
-<p>Lär dig hur du skapar och skickar ett SMS i det här <a href="../messages/create-sms.md">detaljerad dokumentation</a>.</p>
+<p>Lär dig hur du skapar och skickar ett SMS i det här <a href="../sms/create-sms.md">detaljerad dokumentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -405,7 +404,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <td>
 <p>Integreringspluginen för Adobe Stock och Adobe Journey Optimizer Email Designer ger kunderna ett enkelt sätt att navigera, licensiera och spara bilder för användning i meddelandeframställning. </br> Den nya <b>Hitta liknande Stock-foton</b> kan du också söka efter Stock-foton som matchar innehållet, färgen och kompositionen för dina bilder. </p>
 <!--img src="assets/do-not-localize/stock-rn.gif"/-->
-<p>Mer information finns i den <a href="../design/stock.md">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="../email/stock.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -474,12 +473,12 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 **E-post**
 
-* **Spara som mall** - Du kan nu spara ett e-postinnehåll som en mall och återanvända det när du skapar andra meddelanden. [Läs mer](../design/email-templates.md)
+* **Spara som mall** - Du kan nu spara ett e-postinnehåll som en mall och återanvända det när du skapar andra meddelanden. [Läs mer](../email/email-templates.md)
 
 
 **Administrering**
 
-* **URL-parametrar för förhandsspårning** - När du konfigurerar en meddelandeförinställning och definierar parametrar för URL-spårning, visas nu en dynamisk förhandsgranskning av den resulterande spårnings-URL:en. [Läs mer](../configuration/email-settings.md#url-tracking)
+* **URL-parametrar för förhandsspårning** - När du konfigurerar en meddelandeförinställning och definierar parametrar för URL-spårning, visas nu en dynamisk förhandsgranskning av den resulterande spårnings-URL:en. [Läs mer](../email/email-settings.md#url-tracking)
 
 * **Meddelandeförinställningsutgåva** - När du nu uppdaterar en meddelandeförinställning kan bearbetningstiden bara ta upp till 3 timmar. [Läs mer](../configuration/channel-surfaces.md#edit-channel-surface)
 

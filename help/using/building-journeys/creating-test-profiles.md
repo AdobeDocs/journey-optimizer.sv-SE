@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: bd5e053a-69eb-463b-add3-8b9168c8e280
-source-git-commit: 9fc05acf695396814ecfaec7cc086b07a63d4afd
+source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Skapa testprofiler {#create-test-profiles}
 
-Testprofiler krävs när du använder [testläge](../building-journeys/testing-the-journey.md) på en resa och [förhandsgranska och testa ditt innehåll](../design/preview.md).
+Testprofiler krävs när du använder [testläge](../building-journeys/testing-the-journey.md) på en resa och [förhandsgranska och testa ditt innehåll](../email/preview.md).
 
 Det finns flera sätt att skapa testprofiler. På den här sidan hittar du information om:
 
