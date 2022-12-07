@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: f2c2a360-a4b2-4416-bbd0-e27dd014e4ac
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: a7c9cbcc23e4a2ef8a3acd887c0f51e51c5befc0
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '974'
 ht-degree: 1%
 
 ---
@@ -48,8 +48,8 @@ Dessutom kan du **Litmus** konto till [!DNL Journey Optimizer] för att omedelba
 >id="ac_preview_testprofiles"
 >title="Förhandsgranska och testa dina meddelanden"
 >abstract="När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/messages/validate/preview.html?lang=en#email-rendering" text="E-poståtergivning"
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/messages/validate/preview.html?lang=en#preview-your-messages" text="Förhandsgranskning"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/email/preview.html?lang=en#email-rendering" text="E-poståtergivning"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/email/preview.html?lang=en#preview-email" text="Förhandsgranskning"
 
 Använd [Testprofiler](../segment/creating-test-profiles.md) om du vill ange fler mottagare som inte matchar de definierade målinriktningskriterierna som mål.
 
