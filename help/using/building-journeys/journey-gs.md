@@ -1,21 +1,21 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Kom igång med resor
+title: Skapa din första resa
 description: Viktiga steg för att skapa din första resa med Adobe Journey Optimizer
 feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: 978751263ba2ed21e35e41e767f1e31ddbe59d53
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 8%
 
 ---
 
-# Kom igång med resor{#jo-quick-start}
+# Skapa din första resa{#jo-quick-start}
 
 ## Förutsättningar{#start-prerequisites}
 
