@@ -8,9 +8,9 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
-source-git-commit: 978751263ba2ed21e35e41e767f1e31ddbe59d53
+source-git-commit: 64e53e250504f5fd42f84d51809fd38c8e0d99a9
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,9 @@ Innan du kan generera den här filen måste du skapa:
 >id="ajo_dm_file_routing_details"
 >title="Definiera filroutningskonfigurationen"
 >abstract="När du har skapat ett direktutskick kommer filen som innehåller målgruppsdata att genereras och exporteras till en server. Du måste ange serverinformationen så att din direktreklamleverantör kan komma åt och använda filen för att leverera direktreklam."
-<!-->
->additional-url=&quot;https://experienceleague.adobe.com/docs/journey-optimizer/using/direct-mail/create-direct-mail.html&quot; text=&quot;Create a direct mail message&quot;—>
+
+<!--
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/direct-mail/create-direct-mail.html" text="Create a direct mail message"-->
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_details_header"
