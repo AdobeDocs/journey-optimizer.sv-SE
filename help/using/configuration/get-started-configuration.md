@@ -8,9 +8,9 @@ level: Intermediate
 exl-id: 0964a484-f957-4aae-a571-61b2a1615026
 feature: Application Settings
 topic: Administration
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: c6498633fdfdc9442203a3bf980f1b12bd1c6a6b
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '377'
 ht-degree: 15%
 
 ---
@@ -24,21 +24,31 @@ För att kunna skapa dina resor och skicka meddelanden måste du gå igenom konf
 
 ## Konfigurera meddelanden och kanaler
 
-Definiera kanalytor, anpassa och anpassa meddelandena.
+1. För att kunna skapa och skicka meddelanden måste du utföra specifika konfigurationer beroende på kanalen.
 
-* [Delegera till underdomänerna Adobe](about-subdomain-delegation.md) du vill använda för att skicka e-post och [skapa IP-pooler](ip-pools.md) för att gruppera IP-adresser som har etablerats med din instans.
+   * För **E-post** kanal måste du delegera underdomäner till Adobe och skapa IP-pooler för att gruppera IP-adresser. [Läs mer](../email/get-started-email-config.md)
 
-* Hantera det antal dagar som nya försök utförs innan e-postadresser skickas till listan över inaktiveringar. [Läs mer](manage-suppression-list.md)
+   * För **Push** måste du definiera inställningar för push-meddelanden i båda [!DNL Adobe Experience Platform] och [!DNL Adobe Experience Platform Launch]. [Läs mer](../push/push-configuration.md)
 
-* Definiera inställningar för push-meddelanden i båda [!DNL Adobe Experience Platform] och [!DNL Adobe Experience Platform Launch]. [Läs mer](../push/push-gs.md)
+   * För **SMS** kanal måste du konfigurera instansen för att skicka SMS, inklusive att integrera providerinställningarna med [!DNL Journey Optimizer]. [Läs mer](../sms/sms-configuration.md)
 
-   <!--* Understand the push notification flow. [Learn more](../push/push-gs.md)-->
+1. När du är klar måste du skapa **kanalytor** för att konfigurera alla tekniska parametrar som krävs för att leverera meddelanden. [Läs mer](channel-surfaces.md)
 
-* Konfigurera instansen för att skicka SMS (för närvarande endast tillgängligt för en uppsättning organisationer - begränsad tillgänglighet). [Läs mer](../sms/sms-configuration.md)
+1. Du kan även:
 
-* Skapa kanalytor för att konfigurera alla tekniska parametrar som krävs för att leverera meddelanden. [Läs mer](channel-surfaces.md)
+   * Hantera det antal dagar som nya försök utförs innan e-postadresser skickas till listan över inaktiveringar. [Läs mer](manage-suppression-list.md)
 
-* Avgör vilken e-postadress och/eller vilket telefonnummer som ska användas i prioritetsordning för dina mottagare när flera adresser/nummer är tillgängliga i Adobe Experience Platform. [Läs mer](primary-email-addresses.md)
+   * Aktivera **BBC-e-postalternativ** för att behålla en kopia av meddelanden som skickas till enskilda personer. [Läs mer](archiving-support.md#enable-bcc)
+
+   * Konfigurera **frekvensregler** för att undvika att mottagarna blir överdrivna. [Läs mer](frequency-rules.md)
+
+   * Avgör vilken e-postadress och/eller vilket telefonnummer som ska användas i prioritetsordning för dina mottagare när flera adresser/nummer är tillgängliga i Adobe Experience Platform. [Läs mer](primary-email-addresses.md)
+
+<!--* Understand the push notification flow. [Learn more](../push/push-gs.md)-->
+
+>[!NOTE]
+>
+>Dessa steg måste utföras av en [Adobe Journey Optimizer systemadministratör](../start/path/administrator.md).
 
 ## Konfigurera resor
 

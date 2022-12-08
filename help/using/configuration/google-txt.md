@@ -8,7 +8,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 311eb2d1-e445-43e6-bc2c-c6288b637f47
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: c6498633fdfdc9442203a3bf980f1b12bd1c6a6b
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 21%
@@ -28,7 +28,7 @@ För att säkerställa optimal leverans och framgångsrik leverans av e-post til
 
 >[!CAUTION]
 >
-> Den här åtgärden kan bara utföras när en underdomän har **[!UICONTROL Success]** status. Mer information om underdomänernas status finns i [det här avsnittet](access-subdomains.md).
+> Den här åtgärden kan bara utföras när en underdomän har **[!UICONTROL Success]** status. Mer information om underdomänernas status finns i [det här avsnittet](about-subdomain-delegation.md#access-delegated-subdomains).
 
 Så här lägger du till en Google TXT-post i din underdomän:
 

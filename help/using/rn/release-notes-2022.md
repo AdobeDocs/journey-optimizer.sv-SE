@@ -4,7 +4,7 @@ product: journey optimizer
 title: Versionsinformation 2022
 description: Versionsinformation om Journey Optimizer 2022
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: c6498633fdfdc9442203a3bf980f1b12bd1c6a6b
 workflow-type: tm+mt
 source-wordcount: '3453'
 ht-degree: 8%
@@ -173,7 +173,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 * När du aktiverar eller inaktiverar tillåtelselista visas nu en ny varning som detaljerar effekterna av varje åtgärd. [Läs mer](../configuration/allow-list.md#enable-allow-list)
 * Användargränssnittet för att skapa kanalytor, skapa IP-pooler, hantera suppressionslistan och tillåtelselista samt konfigurera SMS-kanalen har uppdaterats.
 * När du nu skapar den första kanalytan för en viss underdomän tar bearbetningstiden 10 minuter till 10 dagar och bara upp till 3 timmar för efterföljande ytor som använder den underdomänen. [Läs mer](../configuration/channel-surfaces.md#create-channel-surface)
-* Användargränssnittet för att skapa förinställningar för landningssidor och underdomäner för landningssidor har uppdaterats. [Läs mer](../configuration/lp-subdomains.md)
+* Användargränssnittet för att skapa förinställningar för landningssidor och underdomäner för landningssidor har uppdaterats. [Läs mer](../landing-pages/lp-subdomains.md)
 
 **Granskningskontroller**
 

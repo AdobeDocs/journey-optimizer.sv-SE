@@ -4,9 +4,9 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: c6498633fdfdc9442203a3bf980f1b12bd1c6a6b
 workflow-type: tm+mt
-source-wordcount: '2185'
+source-wordcount: '2207'
 ht-degree: 18%
 
 ---
@@ -14,6 +14,14 @@ ht-degree: 18%
 # Dokumentationsuppdateringar {#latest-updates}
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
+
+## December 2022 {#december-2022}
+
+* Meddelandeguiden har omstrukturerats och delats upp i dedikerade guider för varje kanal:
+
+   * [E-postkanal](../email/get-started-email.md)
+   * [Push-meddelandekanal](../push/get-started-push.md)
+   * [SMS-kanal](../sms/get-started-sms.md)
 
 ## November 2022 {#november-2022}
 
@@ -29,7 +37,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * The **Enhetsdatauppsättning** -avsnittet har uppdaterats med mer information. [Läs mer](../data/datasets-query-examples.md#entity-dataset)
 * Avsnitten för hantering av avanmälan och godkännandepolicyer har omorganiserats. [Läs mer](../privacy/opt-out.md)
 * Avsnittet om avancerade parametrar i resemeddelanden har klargjorts och anger nu att åsidosättning av e-postadresser endast ska användas för särskilda användningsfall. Det värde som oftast definieras som den primära adressen i **Körningsfält** är den som bör användas.
-* En anteckning har lagts till i **Konfigurera underdomäner för landningssidor** för att ange att versaler inte tillåts i underdomäner för landningssidor. [Läs mer](../configuration/lp-subdomains.md)
+* En anteckning har lagts till i **Konfigurera underdomäner för landningssidor** för att ange att versaler inte tillåts i underdomäner för landningssidor. [Läs mer](../landing-pages/lp-subdomains.md)
 
 ## September 2022 {#september-2022}
 
@@ -88,7 +96,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Skärmbilder för landningssidor och prenumerationsrapporter har uppdaterats. [Läs mer](../reports/live-report.md)
 * En anteckning om att metoden Delete inte stöds i anpassade åtgärder har lagts till. [Läs mer](../action/about-custom-action-configuration.md)
 * Länkar till instruktionsvideor har uppdaterats.
-* The [E-postkonfiguration](../configuration/about-subdomain-delegation.md), [Meddelandeförinställningar](../configuration/channel-surfaces.md) och [Konfigurera landningssidor](../configuration/lp-subdomains.md) -avsnitten har omstrukturerats för att bli enklare att läsa.
+* The [E-postkonfiguration](../configuration/about-subdomain-delegation.md), [Meddelandeförinställningar](../configuration/channel-surfaces.md) och [Konfigurera landningssidor](../landing-pages/lp-subdomains.md) -avsnitten har omstrukturerats för att bli enklare att läsa.
 * Avsnittet för URL-spårning har uppdaterats och förbättrats med exempel. [Läs mer](../email/email-settings.md#url-tracking)
 * Ett nytt underavsnitt om hur du konfigurerar en e-postadress för vidarebefordran har lagts till. Observera att du inte kan göra det via användargränssnittet. [Läs mer](../email/email-settings.md#forward-email)
 

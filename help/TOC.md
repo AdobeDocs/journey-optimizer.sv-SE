@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: c6498633fdfdc9442203a3bf980f1b12bd1c6a6b
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1296'
 ht-degree: 33%
 
 ---
@@ -183,10 +183,11 @@ ht-degree: 33%
          + Hantera resurser {#manage-asset}
             + [Arbeta med Assets Essentials](using/email/assets-essentials.md)
             + [Arbeta med Adobe Stock](using/email/stock.md)
-         + [Lägg till personaliserade erbjudanden](using/email/add-offers-email.md)
+         + [Infoga personaliserade erbjudanden](using/email/add-offers-email.md)
          + [Generera textversionen](using/email/text-version-email.md)
          + [Lägga till en förrubrik](using/email/preheader.md)
       + Redigera stil {#edit-style}
+         + [Kom igång med e-postformat](using/email/get-started-email-style.md)
          + [Redigera bakgrundsinställningar](using/email/backgrounds.md)
          + [Justera lodrät justering och utfyllnad](using/email/alignment-and-padding.md)
          + [Definiera ett format för länkar](using/email/styling-links.md)
@@ -234,7 +235,10 @@ ht-degree: 33%
       + [Skapa mallar](using/landing-pages/lp-templates.md)
       + [Lägg till anpassat JavaScript](using/landing-pages/lp-custom-js.md)
    + [Skapa en prenumerationslista](using/landing-pages/subscription-list.md)
-   + [Användningsfall](using/landing-pages/lp-use-cases.md)
+   + [Lär dig mer om användningsexempel](using/landing-pages/lp-use-cases.md)
+   + Konfigurera landningssidor {#lp-configuration}
+      + [Konfigurera underdomäner för landningssidor](using/landing-pages/lp-subdomains.md)
+      + [Definiera förinställningar för landningssidor](using/landing-pages/lp-presets.md)
 + Personalisering och dynamiskt innehåll {#personalized-dynamic-content}
    + Personalisering {#personalization}
       + [Kom igång med personalisering](using/personalization/personalize.md)
@@ -411,28 +415,20 @@ ht-degree: 33%
    + [Frågor](using/data/get-started-queries.md)
 + Konfiguration{#configuration}
    + [Kom igång med Journey Optimizer](using/configuration/get-started-configuration.md)
-   + Konfigurera meddelanden {#configuration-message}
-      + Konfigurera e-postmeddelanden {#email-configuration}
-         + Delegera underdomäner {#delegate-subdomains}
-            + [Kom igång med delegering till underdomäner](using/configuration/about-subdomain-delegation.md)
-            + [Delegera en underdomän](using/configuration/delegate-subdomain.md)
-            + [Åtkomst till delegerade underdomäner](using/configuration/access-subdomains.md)
-         + Hantera underdomänsrelaterade åtgärder {#subdomain-related-actions}
-            + [Lägg till en Google TXT-post](using/configuration/google-txt.md)
-            + [Få åtkomst till och redigera PTR-poster](using/configuration/ptr-records.md)
-            + [Skapa IP-pooler](using/configuration/ip-pools.md)
-         + Övervaka e-postadresser {#monitor-reputation}
-            + [Undertryckningslista](using/configuration/manage-suppression-list.md)
-            + [Återförsök](using/configuration/retries.md)
-            + [Tillåtelselista](using/configuration/allow-list.md)
-      + Konfigurera kanalytor {#set-up-channels}
-         + [Skapa kanalytor](using/configuration/channel-surfaces.md)
-      + [Stöd för arkivering](using/configuration/archiving-support.md)
-      + [Hantera körningsadresser](using/configuration/primary-email-addresses.md)
-      + [Konfigurera frekvensregler](using/configuration/frequency-rules.md)
-   + Konfigurera landningssidor {#lp-configuration}
-      + [Konfigurera underdomäner för landningssidor](using/configuration/lp-subdomains.md)
-      + [Definiera förinställningar för landningssidor](using/configuration/lp-presets.md)
+   + Delegera e-postunderdomäner {#delegate-subdomains}
+      + [Kom igång med delegering till underdomäner](using/configuration/about-subdomain-delegation.md)
+      + [Delegera en underdomän](using/configuration/delegate-subdomain.md)
+      + [Lägg till en Google TXT-post](using/configuration/google-txt.md)
+      + [Få åtkomst till och redigera PTR-poster](using/configuration/ptr-records.md)
+      + [Skapa IP-pooler](using/configuration/ip-pools.md)
+   + [Konfigurera kanalytor](using/configuration/channel-surfaces.md)
+   + Övervaka e-postadresser {#monitor-reputation}
+      + [Undertryckningslista](using/configuration/manage-suppression-list.md)
+      + [Återförsök](using/configuration/retries.md)
+      + [Tillåtelselista](using/configuration/allow-list.md)
+   + [Stöd för arkivering](using/configuration/archiving-support.md)
+   + [Konfigurera frekvensregler](using/configuration/frequency-rules.md)
+   + [Hantera körningsadresser](using/configuration/primary-email-addresses.md)
    + Konfigurera resor {#configure-journeys}
       + [Om datakällor, händelser och åtgärder](using/configuration/about-data-sources-events-actions.md)
       + [Integrera med externa system](using/configuration/external-systems.md)

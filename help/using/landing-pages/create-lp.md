@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: c6498633fdfdc9442203a3bf980f1b12bd1c6a6b
 workflow-type: tm+mt
 source-wordcount: '1460'
 ht-degree: 1%
@@ -72,7 +72,7 @@ Stegen för att skapa en landningssida är följande.
 
    <!--You can add a tag. See AEP documentation?-->
 
-1. Välj en förinställning. Lär dig hur du skapar förinställningar för landningssidor i [det här avsnittet](../configuration/lp-presets.md#lp-create-preset).
+1. Välj en förinställning. Lär dig hur du skapar förinställningar för landningssidor i [det här avsnittet](../landing-pages/lp-presets.md#lp-create-preset).
 
    ![](assets/lp_create-lp-presets.png)
 
@@ -113,7 +113,7 @@ Följ stegen nedan för att definiera inställningarna för den primära sidan.
 
    ![](assets/lp_open-designer.png)
 
-1. Definiera URL-adressen till landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan som en del av [förinställning](../configuration/lp-presets.md#lp-create-preset) du markerade. [Läs mer](../configuration/lp-subdomains.md)
+1. Definiera URL-adressen till landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan som en del av [förinställning](../landing-pages/lp-presets.md#lp-create-preset) du markerade. [Läs mer](../landing-pages/lp-subdomains.md)
 
    >[!CAUTION]
    >
@@ -184,7 +184,7 @@ Följ stegen nedan för att definiera inställningar för undersidan.
    >
    >Du kan infoga en länk till den primära sidan från en undersida till samma landningssida. Om du till exempel vill dirigera om användare som har gjort ett misstag och vill prenumerera igen, kan du lägga till en länk från bekräftelseundersidan till den primära prenumerationssidan. Lär dig hur du infogar länkar i [det här avsnittet](../email/message-tracking.md#insert-links).
 
-1. Definiera URL-adressen till landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan. [Läs mer](../configuration/lp-subdomains.md)
+1. Definiera URL-adressen till landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan. [Läs mer](../landing-pages/lp-subdomains.md)
 
    >[!CAUTION]
    >
