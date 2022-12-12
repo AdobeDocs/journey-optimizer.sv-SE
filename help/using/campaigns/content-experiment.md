@@ -10,9 +10,9 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: efea1bbd5154d378daf1f52315384156b6d23ae3
+source-git-commit: ef838945e0c3595de8ad920203b278bb51671d16
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '944'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_content_experiment"
 >title="Innehållsexperiment"
->abstract="TBC"
+>abstract="Du kan välja att variera leveransinnehåll, ämne eller avsändare för att definiera flera leveransbehandlingar och fastställa den bästa kombinationen för era målgrupper."
 
 >[!AVAILABILITY]
 >

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: ef838945e0c3595de8ad920203b278bb51671d16
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '592'
 ht-degree: 3%
 
 ---
@@ -138,12 +138,12 @@ När kampanjen är klar kan ni granska och publicera den. [Läs mer](#review-act
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_type"
 >title="Kampanjtyp"
->abstract="TBC"
+>abstract="För ett marknadsföringsmeddelande genom att ange ett sändningsdatum visas **Schemalagd** är den mest lämpliga typen. Men om du vill skicka transaktionsmeddelanden som lösenordsåterställning eller övergivna kort kan du **API-utlöst** text är det bästa alternativet."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_category"
 >title="Kampanjkategori"
->abstract="TBC"
+>abstract="Kategorivärdet är direkt länkat till kampanjtypsvärdet. Schemalägg kampanjtyp för **Marknadsföring** kategori och API-utlösad typ för kategorin **Transactional**"
 
 Det finns två typer av kampanjer:
 

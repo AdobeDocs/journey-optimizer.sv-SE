@@ -8,9 +8,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: e22e2bc7-0c15-457a-8980-97bea5da7784
-source-git-commit: efea1bbd5154d378daf1f52315384156b6d23ae3
+source-git-commit: ef838945e0c3595de8ad920203b278bb51671d16
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1496'
 ht-degree: 13%
 
 ---
@@ -111,7 +111,7 @@ Nyttolastdefinitionen gör att du kan välja vilken information systemet förvä
 >[!CONTEXTUALHELP]
 >id="ajo_journey_namespace"
 >title="Identitetsnamnutrymme"
->abstract="TBC"
+>abstract="Välj nyckeln för att identifiera kundprofilen som är kopplad till händelsen."
 
 Med namnutrymmet kan du definiera vilken typ av nyckel som används för att identifiera den person som är associerad med händelsen. Dess konfiguration är valfri. Det krävs om du under dina resor vill hämta ytterligare information som kommer från [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target=&quot;_blank&quot;}. Namnutrymmesdefinitionen behövs inte om du bara använder data från ett tredjepartssystem via en anpassad datakälla.
 
