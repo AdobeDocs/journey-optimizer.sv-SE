@@ -10,8 +10,8 @@ level: Beginner
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
 source-git-commit: e7add9627a9938b861ddbcc40f168f41c871119b
 workflow-type: tm+mt
-source-wordcount: '1460'
-ht-degree: 1%
+source-wordcount: '1397'
+ht-degree: 0%
 
 ---
 
@@ -76,7 +76,7 @@ Stegen för att skapa en landningssida är följande.
 
    ![](assets/lp_create-lp-presets.png)
 
-1. Klicka på **[!UICONTROL Create]**.
+1. Klicka **[!UICONTROL Create]**.
 
 1. Den primära sidan och dess egenskaper visas. Lär dig hur du konfigurerar inställningarna för den primära sidan [här](#configure-primary-page).
 
