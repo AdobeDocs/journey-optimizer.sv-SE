@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: c6498633fdfdc9442203a3bf980f1b12bd1c6a6b
+source-git-commit: e7add9627a9938b861ddbcc40f168f41c871119b
 workflow-type: tm+mt
 source-wordcount: '1460'
 ht-degree: 1%
@@ -49,7 +49,7 @@ Klicka på de tre punkterna bredvid en landningssida för att välja önskad åt
 >id="ajo_lp_create"
 >title="Definiera och konfigurera landningssidan"
 >abstract="Om du vill skapa en landningssida måste du välja en förinställning, konfigurera den primära sidan och underordnade sidor och slutligen testa sidan innan du publicerar den."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/lp-configuration/lp-presets.html#lp-create-preset" text="Skapa förinställningar för landningssidor"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/lp-configuration/lp-presets.html#lp-create-preset" text="Skapa förinställningar för landningssidor"
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/create-lp.html#publish-landing-page" text="Publicera landningssidan"
 
 >[!CONTEXTUALHELP]
@@ -100,8 +100,8 @@ När du har konfigurerat och utformat [primär sida](#configure-primary-page)och
 >id="ajo_lp_access_settings"
 >title="Ange URL-adress för landningssida"
 >abstract="I det här avsnittet definierar du en unik URL för landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan som en del av den förinställning du valde."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/lp-configuration/lp-subdomains.html" text="Konfigurera underdomäner för landningssidor"
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/lp-configuration/lp-presets.html#lp-create-preset" text="Skapa förinställningar för landningssidor"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/lp-configuration/lp-subdomains.html" text="Konfigurera underdomäner för landningssidor"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/lp-configuration/lp-presets.html#lp-create-preset" text="Skapa förinställningar för landningssidor"
 
 Den primära sidan är den sida som visas omedelbart för användarna efter att de har klickat på länken till din landningssida, till exempel från ett e-postmeddelande eller en webbplats.
 
