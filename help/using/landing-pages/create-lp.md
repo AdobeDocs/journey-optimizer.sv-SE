@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: e7add9627a9938b861ddbcc40f168f41c871119b
+source-git-commit: 61c90f39fa2bddb384e5581e3935c43d4691c355
 workflow-type: tm+mt
 source-wordcount: '1397'
 ht-degree: 0%
@@ -169,8 +169,8 @@ Följ stegen nedan för att definiera inställningarna för den primära sidan.
 >id="ajo_lp_access_settings-subpage"
 >title="Ange URL-adress för landningssida"
 >abstract="I det här avsnittet definierar du en unik URL för landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan som en del av den förinställning du valde."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/lp-configuration/lp-subdomains.html" text="Konfigurera underdomäner för landningssidor"
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/lp-configuration/lp-presets.html#lp-create-preset" text="Skapa förinställningar för landningssidor"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/lp-configuration/lp-subdomains.html" text="Konfigurera underdomäner för landningssidor"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/lp-configuration/lp-presets.html#lp-create-preset" text="Skapa förinställningar för landningssidor"
 
 Du kan lägga till upp till två undersidor. Du kan till exempel skapa en&quot;tack&quot;-sida som visas när användarna skickar in formuläret, och du kan definiera en felsida som anropas om ett problem uppstår med landningssidan.
 

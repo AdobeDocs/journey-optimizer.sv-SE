@@ -8,10 +8,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: c6498633fdfdc9442203a3bf980f1b12bd1c6a6b
+source-git-commit: 61c90f39fa2bddb384e5581e3935c43d4691c355
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 4%
+source-wordcount: '1704'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 4%
 >id="ajo_admin_subdomainname"
 >title="Delegering av underdomän"
 >abstract="Med Journey Optimizer kan du delegera dina underdomäner till Adobe. Du kan delegera en underdomän helt till Adobe, vilket är den rekommenderade metoden. Du kan också skapa en underdomän med CNAME för att peka på poster som är specifika för Adobe, men på det här sättet måste du behålla och hantera DNS-poster på egen hand."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/email-configuration/delegate-subdomains/about-subdomain-delegation.html#subdomain-delegation-methods" text="Konfigurationsmetoder för underdomäner"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/delegate-subdomains/about-subdomain-delegation.html#subdomain-delegation-methods" text="Konfigurationsmetoder för underdomäner"
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomainname_header"
@@ -42,13 +42,13 @@ Du kan delegera en underdomän helt eller skapa en underdomän med CNAME för at
 >
 >Underdomänskonfigurationen är gemensam för alla miljöer. Därför kommer alla ändringar av en underdomän också att påverka produktionssandlådorna.
 
-## Fullständig delegering av underdomäner {#full-subdomain-delegation}
+## Full underdomänsdelegering {#full-subdomain-delegation}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_dns"
 >title="Generera matchande DNS-poster"
->abstract="Om du vill delegera en ny underdomän till Adobe måste du kopiera och klistra in Adobe-namnserverinformationen som visas i Journey Optimizer-gränssnittet i din värdlösning för domäner för att generera matchande DNS-poster. Om du vill delegera en underdomän med CNAME måste du också kopiera och klistra in valideringsposten för SSL CDN-URL. När kontrollerna är klara kan underdomänen användas för att leverera meddelanden."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/email-configuration/delegate-subdomains/delegate-subdomain.html#cname-subdomain-delegation" text="CNAME-delegering av underdomän"
+>abstract="Om du vill delegera en ny underdomän till Adobe måste du kopiera och klistra in Adobe-namnserverinformationen som visas i gränssnittet för Resursoptimering i din värdlösning för domänen för att generera matchande DNS-poster. Om du vill delegera en underdomän med CNAME måste du också kopiera och klistra in valideringsposten för SSL CDN-URL. När kontrollerna är klara kan underdomänen användas för att leverera meddelanden."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/delegate-subdomains/delegate-subdomain.html#cname-subdomain-delegation" text="CNAME-delegering av underdomän"
 
 [!DNL Journey Optimizer] kan du delegera dina underdomäner till Adobe direkt från produktgränssnittet. På så sätt kan Adobe leverera meddelanden som en hanterad tjänst genom att kontrollera och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra e-postkampanjer.
 
@@ -70,13 +70,13 @@ Följ stegen nedan om du vill delegera en ny underdomän till Adobe helt:
 
    >[!CAUTION]
    >
-   >Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.dincompany.com.
+   >Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.yourcompany.com.
    >
-   >Observera att underdomäner på flera nivåer, som email.marketing.your.com, inte stöds för närvarande.
+   >Observera att underdomäner på flera nivåer, som email.marketing.yourcompany.com, inte stöds för närvarande.
 
    <!--Capital letters are not allowed in subdomains. TBC by PM-->
 
-1. Listan med poster som ska placeras på dina DNS-servrar visas. Kopiera de här posterna, antingen en efter en eller genom att hämta en CSV-fil, och navigera sedan till din värdlösning för domänen för att generera matchande DNS-poster.
+1. Listan med poster som ska placeras på dina DNS-servrar visas. Kopiera dessa poster, antingen en efter en, eller genom att hämta en CSV-fil, och navigera sedan till din värdlösning för domänen för att generera matchande DNS-poster.
 
 1. Kontrollera att alla DNS-poster har skapats i din domänvärdslösning. Om allt är korrekt konfigurerat markerar du rutan &quot;Jag bekräftar ...&quot; och klickar sedan på **[!UICONTROL Submit]**.
 
@@ -113,7 +113,7 @@ När en underdomän har delegerats till Adobe i [!DNL Journey Optimizer]skapas e
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_dns_cname"
 >title="Generera matchande DNS- och valideringsposter"
->abstract="Om du vill delegera en underdomän med CNAME måste du kopiera och klistra in informationen om Adobe-namnservern och den SSL CDN URL-valideringspost som visas i Journey Optimizer-gränssnittet i värdplattformen. När kontrollerna är klara kan underdomänen användas för att leverera meddelanden."
+>abstract="Om du vill delegera en underdomän med CNAME-filer måste du kopiera och klistra in informationen om Adobe-namnservern och SSL CDN URL-valideringsposten som visas i gränssnittet för Journey-optimering i värdplattformen. När kontrollerna är klara kan underdomänen användas för att leverera meddelanden."
 
 Om du har domänspecifika begränsningsprinciper och du vill att Adobe endast ska ha partiell kontroll över DNS, kan du välja att utföra alla DNS-relaterade aktiviteter på din sida.
 
@@ -137,13 +137,13 @@ Följ stegen nedan för att delegera en underdomän med CNAME:
 
    >[!CAUTION]
    >
-   >Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.dincompany.com.
+   >Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.yourcompany.com.
    >
-   >Observera att underdomäner på flera nivåer, som email.marketing.your.com, inte stöds för närvarande.
+   >Observera att underdomäner på flera nivåer, som email.marketing.yourcompany.com, inte stöds för närvarande.
 
    <!--Capital letters are not allowed in subdomains. TBC by PM-->
 
-1. Listan med poster som ska placeras på dina DNS-servrar visas. Kopiera de här posterna, antingen en efter en eller genom att hämta en CSV-fil, och navigera sedan till din värdlösning för domänen för att generera matchande DNS-poster.
+1. Listan med poster som ska placeras på dina DNS-servrar visas. Kopiera dessa poster, antingen en efter en, eller genom att hämta en CSV-fil, och navigera sedan till din värdlösning för domänen för att generera matchande DNS-poster.
 
 1. Kontrollera att alla DNS-poster har skapats i din domänvärdslösning. Om allt är korrekt konfigurerat markerar du rutan &quot;Jag bekräftar ...&quot;.
 
@@ -201,11 +201,11 @@ Kontrollerna och åtgärderna nedan utförs tills underdomänen har verifierats 
    * **A**: Standard-IP-mappning.
    * **CNAME**: Ett kanoniskt namn eller en CNAME-post är en typ av DNS-post som mappar ett aliasnamn till ett sant eller kanoniskt domännamn.
 
-1. **Skapa spårnings- och spegeladresser**: om domänen är email.example.com, blir spårnings-/spegeldomänen data.email.example.com. Den skyddas genom att SSL-certifikatet installeras.
+1. **Skapa spårnings- och spegeladresser**: om domänen är email.example.com blir spårnings-/spegeldomänen data.email.example.com. Den skyddas genom att SSL-certifikatet installeras.
 
 1. **Tillhandahåll CDN CloudFront**: om CDN inte redan är konfigurerat, tillhandahåller Adobe det för din organisations-ID.
 
-1. **Skapa CDN-domän**: Om domänen är email.example.com blir CDN-domänen cdn.email.example.com.
+1. **Skapa CDN-domän**: om domänen är email.example.com blir CDN-domänen cdn.email.example.com.
 
 1. **Skapa och bifoga CDN SSL-certifikat**: Adobe skapar CDN-certifikatet för CDN-domänen och kopplar certifikatet till CDN-domänen.
 
