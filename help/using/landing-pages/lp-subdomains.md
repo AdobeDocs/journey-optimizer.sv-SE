@@ -8,7 +8,7 @@ level: Intermediate
 exl-id: dd1af8dc-3920-46cb-ae4d-a8f4d4c26e89
 source-git-commit: 61c90f39fa2bddb384e5581e3935c43d4691c355
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '774'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 
    ![](assets/lp_access-subdomains.png)
 
-1. Klicka **[!UICONTROL Set up subdomain]**.
+1. Klicka på **[!UICONTROL Set up subdomain]**.
 
    ![](assets/lp_set-up-subdomain.png)
 
@@ -80,7 +80,7 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
    >
    >Om du väljer en domän som delegerats till Adobe med [CNAME-metod](../configuration/delegate-subdomain.md#cname-subdomain-delegation)måste du skapa DNS-posten på din värdplattform. För att generera DNS-posten är processen densamma som när du konfigurerar en ny underdomän för landningssida. Läs mer i [det här avsnittet](#lp-configure-new-subdomain).
 
-1. Klicka **[!UICONTROL Submit]**.
+1. Klicka på **[!UICONTROL Submit]**.
 
 1. När den har skickats visas underdomänen i listan med **[!UICONTROL Processing]** status. Mer information om underdomänernas status finns i [det här avsnittet](../configuration/about-subdomain-delegation.md#access-delegated-subdomains).<!--Same statuses?-->
 
@@ -97,13 +97,13 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 >[!CONTEXTUALHELP]
 >id="ajo_admin_lp_subdomain_dns"
 >title="Generera matchande DNS-post"
->abstract="Om du vill konfigurera en ny underdomän för landningssidor måste du kopiera den Adobe-namnserverinformation som visas i gränssnittet för Journey Optimizer och klistra in den i din värdlösning för domäner för att generera matchande DNS-post. När kontrollerna är slutförda kan underdomänen användas för att skapa förinställningar för landningssidor."
+>abstract="Om du vill konfigurera en ny underdomän för landningssidan måste du kopiera den Adobe-namnserverinformation som visas i Journey Optimizer-gränssnittet och klistra in den i din värdlösning för domäner för att generera matchande DNS-post. När kontrollerna är slutförda kan underdomänen användas för att skapa förinställningar för landningssidor."
 
 Följ stegen nedan för att konfigurera en ny underdomän.
 
 1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** väljer du **[!UICONTROL Email configuration]** > **[!UICONTROL Landing page subdomains]**.
 
-1. Klicka **[!UICONTROL Set up subdomain]**.
+1. Klicka på **[!UICONTROL Set up subdomain]**.
 
 1. Välj **[!UICONTROL Add your own domain]** från **[!UICONTROL Configuration type]** -avsnitt.
 
@@ -117,7 +117,7 @@ Följ stegen nedan för att konfigurera en ny underdomän.
    >
    >Versaler tillåts inte i underdomäner.
 
-   Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.yourcompany.com.
+   Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.dincompany.com.
 
    >[!NOTE]
    >
