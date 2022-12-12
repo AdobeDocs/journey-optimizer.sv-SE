@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: ef838945e0c3595de8ad920203b278bb51671d16
+source-git-commit: 5f8a765eefe4033a642c46e18be518d29b196bc3
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -127,6 +127,21 @@ I **[!UICONTROL Actions]** skapar du meddelandet som ska skickas med kampanjen.
 
 ## Schemalägg kampanjen {#schedule}
 
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_schedule_start"
+>title="Kampanjstart"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_schedule_end"
+>title="Kampanjslut"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_schedule_triggers"
+>title="Kampanjåtgärdsutlösare"
+>abstract="TBC"
+
 1. Konfigurera **[!UICONTROL Schedule]** -avsnitt. [Lär dig schemalägga kampanjer](#schedule)
 
 1. Klicka på knappen **[!UICONTROL Manage access]** -knappen. [Läs mer om OLA (Object Level Access Control)](../administration/object-based-access.md)
@@ -143,7 +158,7 @@ När kampanjen är klar kan ni granska och publicera den. [Läs mer](#review-act
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_category"
 >title="Kampanjkategori"
->abstract="Kategorivärdet är direkt länkat till kampanjtypsvärdet. Schemalägg kampanjtyp för **Marknadsföring** kategori och API-utlösad typ för kategorin **Transactional**"
+>abstract="Kategorivärdet är direkt associerat till kampanjtypsvärdet. Schemalägg kampanjtyp för **Marknadsföring** kategori och API-utlösad typ för kategorin **Transactional**"
 
 Det finns två typer av kampanjer:
 
