@@ -10,8 +10,8 @@ level: Intermediate
 exl-id: 186a5044-80d5-4633-a7a7-133e155c5e9f
 source-git-commit: 43137871e8f45e05c6fe00c51bc3c9847fabd0da
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 0%
+source-wordcount: '1084'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +34,7 @@ Regeringar som HIPAA kräver att [!DNL Journey Optimizer] bör vara ett sätt at
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_bcc"
 >title="Definiera en e-postadress för hemlig kopia"
->abstract="Du kan behålla en kopia av skickade e-postmeddelanden genom att skicka dem till en inkorg för hemlig kopia. Ange den e-postadress du vill använda så att alla e-postmeddelanden som skickas är blinda och kopieras till den här BCC-adressen. Observera att BCC-adressdomänen inte ska vara samma som alla underdomäner som delegerats till Adobe. Den här funktionen är valfri."
+>abstract="Du kan behålla en kopia av skickade e-postmeddelanden genom att skicka dem till en inkorg för hemlig kopia. Ange den e-postadress du vill använda så att alla e-postmeddelanden som skickas är blinda och kopieras till den här BCC-adressen. Observera att BCC-adressdomänen inte ska vara samma som alla underdomäner som delegerats till Adobe. Den här funktionen är valfri.  "
 
 Du kan skicka en identisk kopia (eller en blind kopia) av ett e-postmeddelande som skickats av [!DNL Journey Optimizer] till en BCC-inkorg. Med den här valfria funktionen kan du behålla kopior av e-postmeddelanden som du skickar till användarna för att uppfylla regelkrav och/eller arkivera. Detta visas inte för leveransmottagarna.
 
@@ -91,7 +91,7 @@ BCC-adressen hämtas dock upp för att skicka kommunikation enligt den logik som
 
 I sådana förordningar som GDPR anges att registrerade bör kunna ändra sitt samtycke när som helst. Eftersom de BCC-e-postmeddelanden du skickar med Journey Optimizer innehåller personligt identifierbar information (PII) måste du redigera **[!UICONTROL CJM Email BCC Feedback Event Schema]** kunna hantera dessa PII i enlighet med GDPR och liknande regler.
 
-Gör så här:
+Följ stegen nedan för att göra detta.
 
 1. Gå till **[!UICONTROL Data management]** > **[!UICONTROL Schemas]** > **[!UICONTROL Browse]** och markera **[!UICONTROL CJM Email BCC Feedback Event Schema]**.
 
@@ -109,7 +109,7 @@ Gör så här:
 
    ![](assets/preset-bcc-schema-identity.png)
 
-1. Klicka **[!UICONTROL Apply]**.
+1. Klicka på **[!UICONTROL Apply]**.
 
 >[!NOTE]
 >
