@@ -8,10 +8,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 186a5044-80d5-4633-a7a7-133e155c5e9f
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: 43137871e8f45e05c6fe00c51bc3c9847fabd0da
 workflow-type: tm+mt
-source-wordcount: '1187'
-ht-degree: 1%
+source-wordcount: '1078'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ Regeringar som HIPAA kräver att [!DNL Journey Optimizer] bör vara ett sätt at
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_bcc"
 >title="Definiera en e-postadress för hemlig kopia"
->abstract="Du kan behålla en kopia av skickade e-postmeddelanden genom att skicka dem till en inkorg för hemlig kopia. Ange den e-postadress du vill använda så att alla e-postmeddelanden som skickas är blinda och kopieras till den här BCC-adressen. Observera att BCC-adressdomänen inte ska vara samma som alla underdomäner som delegerats till Adobe. Den här funktionen är valfri.  "
+>abstract="Du kan behålla en kopia av skickade e-postmeddelanden genom att skicka dem till en inkorg för hemlig kopia. Ange den e-postadress du vill använda så att alla e-postmeddelanden som skickas är blinda och kopieras till den här BCC-adressen. Observera att BCC-adressdomänen inte ska vara samma som alla underdomäner som delegerats till Adobe. Den här funktionen är valfri."
 
 Du kan skicka en identisk kopia (eller en blind kopia) av ett e-postmeddelande som skickats av [!DNL Journey Optimizer] till en BCC-inkorg. Med den här valfria funktionen kan du behålla kopior av e-postmeddelanden som du skickar till användarna för att uppfylla regelkrav och/eller arkivera. Detta visas inte för leveransmottagarna.
 
@@ -91,7 +91,7 @@ BCC-adressen hämtas dock upp för att skicka kommunikation enligt den logik som
 
 I sådana förordningar som GDPR anges att registrerade bör kunna ändra sitt samtycke när som helst. Eftersom de BCC-e-postmeddelanden du skickar med Journey Optimizer innehåller personligt identifierbar information (PII) måste du redigera **[!UICONTROL CJM Email BCC Feedback Event Schema]** kunna hantera dessa PII i enlighet med GDPR och liknande regler.
 
-Följ stegen nedan för att göra detta.
+Gör så här:
 
 1. Gå till **[!UICONTROL Data management]** > **[!UICONTROL Schemas]** > **[!UICONTROL Browse]** och markera **[!UICONTROL CJM Email BCC Feedback Event Schema]**.
 
@@ -109,7 +109,7 @@ Följ stegen nedan för att göra detta.
 
    ![](assets/preset-bcc-schema-identity.png)
 
-1. Klicka på **[!UICONTROL Apply]**.
+1. Klicka **[!UICONTROL Apply]**.
 
 >[!NOTE]
 >
@@ -131,21 +131,21 @@ Beroende på vilken information du söker kan du köra följande frågor.
 
 1. För alla andra frågor nedan behöver du reseåtgärds-ID:t. Kör den här frågan för att hämta alla åtgärds-ID:n som är kopplade till ett visst reseversion-ID inom de senaste två dagarna:
 
-       &quot;
-       MARKERA
-       DISTINCT
-       CAST(TIMESTAMP AS DATE) AS EventTime,
-       _experience.travelOrchestration.stepEvents.travelVersionID,
-       _experience.travelOrchestration.stepEvents.actionName,
-       _experience.travelOrchestration.stepEvents.actionID
-       FROM travel_step_events
-       VAR
-       _experience.travelOrchestration.stepEvents.travelVersionID = &#39;&lt;journey version=&quot;&quot; id=&quot;&quot;>OCH
-       _experience.travelOrchestration.stepEvents.actionID är inte NULL AND
-       TIDSSTÄMPEL > NOW() - INTERVAL &#39;2&#39; DAY
-       BESTÄLL AV EventTime DESC;
-       &quot;
-   
+   ```
+   SELECT
+   DISTINCT
+   CAST(TIMESTAMP AS DATE) AS EventTime,
+   _experience.journeyOrchestration.stepEvents.journeyVersionID,
+   _experience.journeyOrchestration.stepEvents.actionName, 
+   _experience.journeyOrchestration.stepEvents.actionID 
+   FROM journey_step_events 
+   WHERE 
+   _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey version id>' AND 
+   _experience.journeyOrchestration.stepEvents.actionID is not NULL AND 
+   TIMESTAMP > NOW() - INTERVAL '2' DAY 
+   ORDER BY EventTime DESC;
+   ```
+
    >[!NOTE]
    >
    >För att få `<journey version id>`väljer du motsvarande [reseversion](../building-journeys/journey.md#journey-versions) från **[!UICONTROL Journey management]** > **[!UICONTROL Journeys]** -menyn. Resursversions-ID visas i slutet av den URL som visas i webbläsaren.
@@ -154,28 +154,28 @@ Beroende på vilken information du söker kan du köra följande frågor.
 
 1. Kör den här frågan om du vill hämta alla meddelandefeedbackhändelser (särskilt feedbackstatus) som har genererats för ett visst meddelande som är riktat till en viss användare under de senaste två dagarna:
 
-       &quot;
-       MARKERA
-       _experience.customerJourneyManagement.messageExecution.travelVersionID AS JourneyVersionID,
-       _experience.customerJourneyManagement.messageExecution.travelActionID AS JourneyActionID,
-       tidsstämpel AS EventTime,
-       _experience.customerJourneyManagement.emailChannelContext.address AS RecipientAddress,
-       _experience.customerjournalManagement.messagedeliveryfeedback.feedbackStatus AS FeedbackStatus,
-       CASE_experience.customerjournalManagement.messageDeliveryfeedback.feedbackStatus
-       NÄR&quot;skickat&quot; SÅ&quot;skickat&quot;
-       NÄR &#39;delay&#39; SEDAN &#39;Retry&#39;
-       WHEN &#39;out_of_band&#39; THEN &#39;Bounce&#39;
-       NÄR &#39;studsa&#39; SÅ &#39;studsar&#39;
-       END AS FeedbackStatusCategory
-       FROM cjm_message_feedback_event_dataset
-       VAR
-       timestamp > now() - INTERVAL &#39;2&#39; day AND
-       _experience.customerJourneyManagement.messageExecution.travelVersionID = &#39;&lt;journey version=&quot;&quot; id=&quot;&quot;>OCH
-       _experience.customerJourneyManagement.messageExecution.travelActionID = &#39;&lt;journey action=&quot;&quot; id=&quot;&quot;>OCH
-       _experience.customerJourneyManagement.emailChannelContext.address = &#39;&lt;recipient email=&quot;&quot; address=&quot;&quot;>&#39;
-       BESTÄLL AV EventTime DESC;
-       &quot;
-   
+   ```
+   SELECT  
+   _experience.customerJourneyManagement.messageExecution.journeyVersionID AS JourneyVersionID, 
+   _experience.customerJourneyManagement.messageExecution.journeyActionID AS JourneyActionID, 
+   timestamp AS EventTime, 
+   _experience.customerJourneyManagement.emailChannelContext.address AS RecipientAddress, 
+   _experience.customerjourneymanagement.messagedeliveryfeedback.feedbackStatus AS FeedbackStatus,
+   CASE _experience.customerjourneymanagement.messagedeliveryfeedback.feedbackStatus
+       WHEN 'sent' THEN 'Sent'
+       WHEN 'delay' THEN 'Retry'
+       WHEN 'out_of_band' THEN 'Bounce' 
+       WHEN 'bounce' THEN 'Bounce'
+   END AS FeedbackStatusCategory
+   FROM cjm_message_feedback_event_dataset 
+   WHERE  
+       timestamp > now() - INTERVAL '2' day  AND
+       _experience.customerJourneyManagement.messageExecution.journeyVersionID = '<journey version id>' AND 
+       _experience.customerJourneyManagement.messageExecution.journeyActionID = '<journey action id>' AND  
+       _experience.customerJourneyManagement.emailChannelContext.address = '<recipient email address>'
+       ORDER BY EventTime DESC;
+   ```
+
    >[!NOTE]
    >
    >För att få `<journey action id>` kör du den första frågan som beskrivs ovan med resversion-ID:t. The `<recipient email address>` parametern är målmottagarens eller den faktiska mottagarens e-postadress.
