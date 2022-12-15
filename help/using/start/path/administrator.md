@@ -5,10 +5,10 @@ title: Journey Optimizer Get Started for System Admin
 description: Som systemadministratör får du lära dig mer om hur du arbetar med Journey Optimizer
 level: Intermediate
 exl-id: 24f85ced-aa45-493f-b2c4-7c7b58351b38
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: 9f67172f31ddc1caef9d014c365f71e470e45390
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 2%
+source-wordcount: '712'
+ht-degree: 0%
 
 ---
 
@@ -26,23 +26,23 @@ Läs mer om åtkomsthantering på följande sidor:
 1. **Skapa sandlådor** för att partitionera instanserna i separata, isolerade virtuella miljöer. **Sandlådor** skapas i [!DNL Journey Optimizer]. Läs mer i [Sandlådor](../../administration/sandboxes.md) -avsnitt.
 
    >[!NOTE]
-   >Som **Systemadministratör** om du inte ser **[!UICONTROL Sandboxes]** menyn i [!DNL Journey Optimizer], uppdatera dina behörigheter i [Admin Console](https://adminconsole.adobe.com/){_blank}. Lär dig hur du uppdaterar din produktprofil i [den här sidan](../../administration/permissions.md#edit-product-profile).
+   >Som **Systemadministratör** om du inte ser **[!UICONTROL Sandboxes]** menyn i [!DNL Journey Optimizer], uppdatera dina behörigheter i [Admin Console](https://adminconsole.adobe.com/){target=&quot;_blank&quot;}. Lär dig hur du uppdaterar din produktprofil i [den här sidan](../../administration/permissions.md#edit-product-profile).
 
 1. **Förstå produktprofiler**. Produktprofiler är en uppsättning enhetsbehörigheter som ger användarna tillgång till vissa funktioner eller objekt i gränssnittet. Läs mer i [Färdiga produktprofiler](../../administration/ootb-product-profiles.md) -avsnitt.
 
-1. **Ange behörigheter** för produktprofiler, inklusive **Sandlådor** och ge teammedlemmarna tillgång genom att tilldela dem till olika produktprofiler. Det här steget utförs i [Admin Console](https://adminconsole.adobe.com/){_blank}. Behörigheter är enhetsbehörigheter som gör att du kan definiera de behörigheter som tilldelats till **[!UICONTROL Product profile]**. Varje tillstånd samlas under funktioner, t.ex. Resor eller Erbjudanden, som representerar de olika funktionerna eller objekten i [!DNL Journey Optimizer]. Läs mer i [Behörighetsnivåer](../../administration/high-low-permissions.md) -avsnitt.
+1. **Ange behörigheter** för produktprofiler, inklusive **Sandlådor** och ge teammedlemmarna tillgång genom att tilldela dem till olika produktprofiler. Det här steget utförs i [Admin Console](https://adminconsole.adobe.com/){target=&quot;_blank&quot;}. Behörigheter är enhetsbehörigheter som gör att du kan definiera de behörigheter som tilldelats till **[!UICONTROL Product profile]**. Varje tillstånd samlas under funktioner, t.ex. Resor eller Erbjudanden, som representerar de olika funktionerna eller objekten i [!DNL Journey Optimizer]. Läs mer i [Behörighetsnivåer](../../administration/high-low-permissions.md) -avsnitt.
 
-Dessutom måste du lägga till användare som behöver åtkomst till Assets Essentials i **Assets Essentials hemanvändare** eller/och **Assets Essentials-användare** Produktprofiler. [Läs mer i Assets Essentials-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}.
+Dessutom måste du lägga till användare som behöver åtkomst till Assets Essentials i **Assets Essentials Consumer Users** eller/och **Resurser - viktiga användare** Produktprofiler. [Läs mer i dokumentationen om Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}.
 
 >[!NOTE]
->För Journey Optimizer-produkter som köpts före 6 januari 2022 måste du driftsätta [!DNL Adobe Experience Manager Assets Essentials] för er organisation. Läs mer i [Distribuera Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}.
+>För produkter som optimerats för resan och som köpts före 6 januari 2022 måste du driftsätta [!DNL Adobe Experience Manager Assets Essentials] för er organisation. Läs mer i [Distribuera Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target=&quot;_blank&quot;}.
 
 Vid åtkomst [!DNL Journey Optimizer] För första gången tilldelas du en produktionssandlåda och ett visst antal IP-adresser beroende på ditt kontrakt.
 
 Om du vill kunna skapa dina resor och skicka meddelanden går du till **ADMINISTRATION** -menyn. Bläddra i **[!UICONTROL Channels]** -menyn för att konfigurera meddelanden och kanalytor (t.ex. meddelandeförinställningar).
 
 >[!NOTE]
->Som **Systemadministratör** om du inte ser **[!UICONTROL Channels]** menyn i [!DNL Journey Optimizer], uppdatera dina behörigheter i [Admin Console](https://adminconsole.adobe.com/){_blank}. Lär dig hur du uppdaterar din produktprofil i [den här sidan](../../administration/permissions.md#edit-product-profile).
+>Som **Systemadministratör** om du inte ser **[!UICONTROL Channels]** menyn i [!DNL Journey Optimizer], uppdatera dina behörigheter i [Admin Console](https://adminconsole.adobe.com/){target=&quot;_blank&quot;}. Lär dig hur du uppdaterar din produktprofil i [den här sidan](../../administration/permissions.md#edit-product-profile).
 
 Följ stegen nedan:
 
@@ -64,10 +64,10 @@ Följ stegen nedan:
 
    ![](../assets/ip-pool.png)
 
-1. **Hantera inaktiveringen och tillåtelselista**: förbättra leveransen med dämpning och tillåtelselista
+1. **Hantera undertrycknings- och tillåtna listor**: förbättra leveransen med nedtryckning och tillåtna listor
 
    * A [utelämningslista](../../reports/suppression-list.md) består av e-postadresser som du vill utesluta från leveranserna, eftersom det kan skada ditt anseende och din leveransfrekvens om du skickar till dessa kontakter. Du kan övervaka alla e-postadresser som automatiskt har uteslutits från att skickas under en resa, till exempel ogiltiga adresser, adresser som alltid har mjuka studsar, och som kan påverka ditt e-postanseende negativt, samt mottagare som gör något slags skräppostklagomål mot något av dina e-postmeddelanden. Lär dig hantera [utelämningslista](../../configuration/manage-suppression-list.md) och [återförsök](../../configuration/retries.md).
    ![](../assets/suppression-list-filtering-example.png)
 
-   * The [tillåtelselista](../../configuration/allow-list.md) Med kan du ange enskilda e-postadresser eller domäner som ska vara de enda mottagarna eller domänerna som har behörighet att ta emot e-postmeddelanden som du skickar från en viss sandlåda. Detta kan förhindra att du av misstag skickar e-post till verkliga kundadresser när du befinner dig i en testmiljö. Lär dig hur [aktivera tillåtelselista](../../configuration/allow-list.md).
+   * The [tillåten lista](../../configuration/allow-list.md) Med kan du ange enskilda e-postadresser eller domäner som ska vara de enda mottagarna eller domänerna som har behörighet att ta emot e-postmeddelanden som du skickar från en viss sandlåda. Detta kan förhindra att du av misstag skickar e-post till verkliga kundadresser när du befinner dig i en testmiljö. Lär dig hur [aktivera listan över tillåtna](../../configuration/allow-list.md).
    Läs mer om hantering av slutprodukter i [!DNL Adobe Journey Optimizer] [på den här sidan](../../reports/deliverability.md).
