@@ -47,7 +47,7 @@ För **[!UICONTROL Email]** och **[!UICONTROL SMS]**, parametrarna är identiska
 
 >[!NOTE]
 >
->Om du använder en transaktionsmall för profiler i e-postmeddelanden hanteras avprenumerationsfunktionen som Campaign Standard. Du lägger bara till en **[!UICONTROL Unsubscription link]** innehållsblock i mallen ([läs mer](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html)). Om du använder en händelsebaserad mall (rtEvent) måste du i meddelandet lägga till en länk som skickar personens e-post i URL-parametern och pekar på en startsida som inte är en prenumeration. Du måste skapa den här landningssidan och se till att personens beslut att avbryta prenumerationen skickas till Adobe.
+>Om du använder en transaktionsmall för profiler i e-postmeddelanden hanteras avprenumerationsfunktionen som Campaign Standard. Du lägger bara till en **[!UICONTROL Unsubscription link]** innehållsblock i mallen ([läs mer](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv)). Om du använder en händelsebaserad mall (rtEvent) måste du i meddelandet lägga till en länk som skickar personens e-post i URL-parametern och pekar på en startsida som inte är en prenumeration. Du måste skapa den här landningssidan och se till att personens beslut att avbryta prenumerationen skickas till Adobe.
 
 Först måste du välja en transaktionsmall.
 

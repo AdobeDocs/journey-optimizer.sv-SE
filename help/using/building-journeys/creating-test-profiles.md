@@ -181,7 +181,7 @@ Testprofilerna läggs till och kan nu användas när du testar en resa. Se [det 
 
 ## Skapa testprofiler med API-anrop{#create-test-profiles-api}
 
-Du kan också skapa testprofiler via API-anrop. Läs mer i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target=&quot;_blank&quot;}.
+Du kan också skapa testprofiler via API-anrop. Läs mer i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target=&quot;_blank&quot;}.
 
 Du måste använda ett profilschema som innehåller fältgruppen &quot;Profiltestinformation&quot;. Flaggan testProfile ingår i den här fältgruppen.
 När du skapar en profil måste du skicka värdet: testProfile = true.

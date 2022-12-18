@@ -7,7 +7,8 @@ feature: Access Management
 topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: d17e64e03d093a8a459caef2fb0197a5710dfb7d
+exl-id: 02ccdd95-426c-4b61-9834-7f2dcd5abdbb
+source-git-commit: 8d56e3060e78422b028ced17f415497789908ff9
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 2%
@@ -93,6 +94,3 @@ För att få åtkomst till det här objektet måste användarna ha den specifika
 En användare med etiketten C1 har till exempel bara åtkomst till objekt som är märkta eller omärkta med C1.
 
 Mer information om hur du tilldelar **[!UICONTROL Label]** till **[!UICONTROL Role]**, se [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/permissions.html?lang=en#manage-labels-for-a-role).
-
-
-

@@ -51,7 +51,7 @@ När det gäller argument för literala funktioner stöder inte mallspråksparse
 
 ## Profil
 
-Med det här namnutrymmet kan du referera till alla attribut som definieras i profilschemat som beskrivs i [Dokumentation för Adobe Experience Platform Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target=&quot;_blank&quot;}.
+Med det här namnutrymmet kan du referera till alla attribut som definieras i profilschemat som beskrivs i [Dokumentation för Adobe Experience Platform Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target=&quot;_blank&quot;}.
 
 Attributen måste definieras i schemat innan de refereras i en [!DNL Journey Optimizer] personaliseringsblock.
 

@@ -12,8 +12,8 @@ hidefromtoc: true
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
 source-git-commit: ef838945e0c3595de8ad920203b278bb51671d16
 workflow-type: tm+mt
-source-wordcount: '949'
-ht-degree: 0%
+source-wordcount: '944'
+ht-degree: 1%
 
 ---
 
@@ -55,7 +55,7 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 
    ![](assets/content_experiment_2.png)
 
-1. Klicka **[!UICONTROL Create]**.
+1. Klicka på **[!UICONTROL Create]**.
 
 1. Konfigurera **[!UICONTROL Properties]** av leveransen:
    * **[!UICONTROL Title]**

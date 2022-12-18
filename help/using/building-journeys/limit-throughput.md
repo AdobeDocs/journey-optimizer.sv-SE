@@ -2,13 +2,13 @@
 solution: Journey Optimizer
 title: Begränsa genomströmning med externa datakällor och anpassade åtgärder
 description: Begränsa genomströmning med externa datakällor och anpassade åtgärder
-source-git-commit: 8e3753927e16cc0c4bebf83be2fded6f19d9487e
+exl-id: 45d6bb82-88ea-4510-a023-a75a82cc6f7b
+source-git-commit: 8d56e3060e78422b028ced17f415497789908ff9
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 0%
 
 ---
-
 
 # Användningsfall: begränsa dataflödet med externa datakällor och anpassade åtgärder{#limit-throughput}
 
@@ -65,4 +65,3 @@ Som extra skydd kan du också använda funktionen för att hämta innehåll.
 >[!NOTE]
 >
 >Till skillnad från Kapning, som skyddar en slutpunkt genom att vara global till alla resor i en sandlåda, fungerar den här lösningen bara på resenivå. Det innebär att om flera resor körs parallellt och har samma slutpunkt som mål, måste du ta hänsyn till detta när du utformar din resa. Den här lösningen passar därför inte för alla användningsområden.
-

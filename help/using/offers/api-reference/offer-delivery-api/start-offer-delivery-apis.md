@@ -22,7 +22,7 @@ På den här sidan hittar du information om specifika funktioner som är tillgä
 |  | Begäranden/sek | Latens |
 |---|---|---|
 | Besluts-API | 2000 | &lt;500ms |
-| API för Edge Decisioning | 5000 | &lt;250 ms |
+| API för Edge Decisioning | 5000 | &lt;250ms |
 
 Mer information om hur du arbetar med API:erna finns i följande avsnitt:
 * [Besluts-API](decisioning-api.md)

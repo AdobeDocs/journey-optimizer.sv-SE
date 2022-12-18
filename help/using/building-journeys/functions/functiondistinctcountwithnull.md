@@ -13,7 +13,7 @@ ht-degree: 22%
 
 ---
 
-# clearCountWithNull {#distinctCountWithNull}
+# distinctCountWithNull {#distinctCountWithNull}
 
 Räknar antalet olika värden inklusive null-värden.
 

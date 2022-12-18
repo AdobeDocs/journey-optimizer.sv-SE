@@ -7,13 +7,13 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 9fc05acf695396814ecfaec7cc086b07a63d4afd
+exl-id: b3b79fe2-7db3-490d-9c3d-87267aa55eea
+source-git-commit: 8d56e3060e78422b028ced17f415497789908ff9
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 3%
 
 ---
-
 
 # Skapa ett meddelande i appen {#create-in-app}
 

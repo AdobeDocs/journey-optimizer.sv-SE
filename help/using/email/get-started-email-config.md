@@ -7,13 +7,13 @@ role: Admin
 level: Intermediate
 feature: Application Settings
 topic: Administration
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+exl-id: 1fc9a4f6-6c34-4414-b400-aac6bda9ee25
+source-git-commit: d1c11881654580247e8d7c92237cad130f11f749
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 7%
 
 ---
-
 
 # Kom igång med e-postkonfiguration {#get-starte-email-config}
 

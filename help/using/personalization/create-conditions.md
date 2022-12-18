@@ -7,13 +7,13 @@ feature: Personalization
 topic: Personalization
 role: Data Engineer
 level: Intermediate
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+exl-id: 246a4a55-059e-462c-ac1e-43b90f4abda4
+source-git-commit: 8d56e3060e78422b028ced17f415497789908ff9
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 1%
 
 ---
-
 
 # Arbeta med villkorliga regler {#conditions}
 
@@ -63,7 +63,7 @@ Så här skapar du en villkorlig regel:
 
    * **[!UICONTROL Profile]**:
       * **[!UICONTROL Segment Membership]** visar alla segmentattribut (t.ex. status, version osv.) for [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html),
-      * **[!UICONTROL XDM Individual profiles]** visar alla profilattribut som är kopplade till [XDM-schema (Experience Data Model)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) som definieras i Adobe Experience Platform.
+      * **[!UICONTROL XDM Individual profiles]** visar alla profilattribut som är kopplade till [XDM-schema (Experience Data Model)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv) som definieras i Adobe Experience Platform.
    * **[!UICONTROL Contextual]**: när ditt meddelande används i en resa är fält för sammanhangsbaserad resa tillgängliga via den här fliken.
    * **[!UICONTROL Audiences]**: listar alla målgrupper som genererats från segment som skapats i [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
 
