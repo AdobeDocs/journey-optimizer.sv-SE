@@ -8,9 +8,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: f19749c4-d683-4db6-bede-9360b9610eef
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: dd65c4155320c818f97400548c0f9d4d6d4e2507
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
@@ -79,6 +79,16 @@ I Journey Optimizer kan du sedan använda alla fält från de länkade tabellern
 * vid användning av villkor under en resa, [Läs mer](../event/experience-event-schema.md#journey_conditions_using_event_context)
 * personalisering av meddelanden, [Läs mer](../event/experience-event-schema.md#message_personalization)
 * personalisering av anpassade åtgärder, [Läs mer](../event/experience-event-schema.md#custom_action_personalization_with_journey_event_context)
+
+### Arrayer{#relationships_limitations}
+
+Du kan definiera en schemarelation för en array med strängar, till exempel en lista med produkt-ID:n.
+
+![](assets/schema15.png)
+
+Du kan dock inte definiera en schemarelation med ett attribut inuti en objektmatris, till exempel en lista med inköpsinformation (produkt-ID, produktnamn, pris, rabatt). Uppslagsvärdena är inte tillgängliga i resor (villkor, anpassade åtgärder osv.) och personalisering av meddelanden.
+
+![](assets/schema16.png)
 
 ### Händelsekonfiguration{#unitary_event_configuration}
 
