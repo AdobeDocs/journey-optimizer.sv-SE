@@ -8,14 +8,19 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 140c858d-9566-403c-a0e7-395437bb4e42
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: 0ec122bbf134c41f95755a3b6f08eb7ef68506df
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
 
 # Direktprenumerationsrapport {#subscription-report-live}
+
+>[!CONTEXTUALHELP]
+>id="ajo_subscription_live_report"
+>title="Direktprenumerationsrapport"
+>abstract="Med prenumerationens Live-rapport kan du mäta och visualisera dina prenumeranters aktivitet i realtid bara under de senaste 24 timmarna. Din rapport är uppdelad i olika widgetar som detaljerar dina prenumerationer och avbeställningar. Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort."
 
 Prenumerationen **[!UICONTROL Live report]** visar endast information om din prenumerations aktivitet under de senaste 24 timmarna. Information om hur du mäter dina prenumerationer under en viss tidsperiod finns i [Global prenumerationsrapport](subscription-report-global.md).
 

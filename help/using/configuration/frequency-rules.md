@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: 0ec122bbf134c41f95755a3b6f08eb7ef68506df
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '942'
 ht-degree: 1%
 
 ---
@@ -48,6 +48,21 @@ Användare med **[!UICONTROL View frequency rules]** behörighet kan visa regler
 Läs mer om behörigheter i [det här avsnittet](../administration/high-low-permissions.md).
 
 ## Skapa en regel {#create-new-rule}
+
+>[!CONTEXTUALHELP]
+>id="ajo_rules_category"
+>title="Välj meddelanderegelkategori"
+>abstract="När det aktiveras och används för ett meddelande, kommer alla frekvensregler som matchar den valda kategorin automatiskt att tillämpas på det här meddelandet. För närvarande är endast marknadsföringskategorin tillgänglig."
+
+>[!CONTEXTUALHELP]
+>id="ajo_rules_capping"
+>title="Ange begränsning för din regel"
+>abstract="Ange det maximala antalet meddelanden som skickas till en kundprofil varje månad. Frekvensgränsen baseras på en månadskalenderperiod och återställs i början av varje månad."
+
+>[!CONTEXTUALHELP]
+>id="ajo_rules_channel"
+>title="Definiera de kanaler som regeln gäller för"
+>abstract="Välj minst en kanal. Taket tillämpas över alla kanaler som ett totalt antal."
 
 Följ stegen nedan för att skapa en ny regel.
 
@@ -115,26 +130,23 @@ Regelens status ändras till **[!UICONTROL Inactive]** och regeln gäller inte f
 
 Följ stegen nedan för att tillämpa en frekvensregel på ett meddelande.
 
-1. Skapa ett meddelande genom att välja en av de kanaler som du har definierat för regeln.
+1. När en [resa](../building-journeys/journey-gs.md)lägger du till ett meddelande genom att välja någon av de kanaler som du har definierat för regeln.
 
 1. Välj den kategori som du har definierat för [regel som du skapade](#create-new-rule).
 
-   ![](assets/inline-message-category.png)
+   ![](assets/journey-message-category.png)
 
    >[!NOTE]
    >
    >För närvarande bara **[!UICONTROL Marketing]** finns för regler för meddelandefrekvens.
 
-   <!--
-   1. You can click the **[!UICONTROL Frequency rule]** link to view the frequency rules that will apply for the selected category and channel(s). A new tab will open to display the matching message frequency rules.-->
+1. Du kan klicka på **[!UICONTROL Frequency rule]** om du vill visa skärmen med frekvensregler på en ny flik. [Läs mer](#access-rules)
 
-1. Alla frekvensregler som matchar den valda kategorin och kanalen/kanalerna tillämpas automatiskt på det här meddelandet.
+   Alla frekvensregler som matchar den valda kategorin och kanalen/kanalerna tillämpas automatiskt på det här meddelandet.
 
    >[!NOTE]
    >
-   >Meddelanden <!--that do not have any selected category or messages -->där den valda kategorin är **[!UICONTROL Transactional]** utvärderas inte mot frekvensregler.
-
-   <!--Clicking the link out button next to the category selector will jump you over to the rules inventory screen to see which rules will be applied to the message.-->
+   >Meddelanden där den valda kategorin är **[!UICONTROL Transactional]** utvärderas inte mot frekvensregler.
 
 1. Du kan visa antalet profiler som har uteslutits från leverans i [Global rapport](../reports/global-report.md)och i [Live-rapport](../reports/live-report.md), där frekvensreglerna listas som en möjlig orsak för användare som inte får leverera.
 

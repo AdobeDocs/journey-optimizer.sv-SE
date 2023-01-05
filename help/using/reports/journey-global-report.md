@@ -8,14 +8,19 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e851646e-4cef-45e8-97c2-a8f4c9d2cc08
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: 0ec122bbf134c41f95755a3b6f08eb7ef68506df
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1777'
 ht-degree: 0%
 
 ---
 
 # Global reserapport {#journey-global-report}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_global_report"
+>title="Global reserapport"
+>abstract="Med den globala rapporten om resan kan du mäta effekten av dina resor under en viss tidsperiod. Din rapport är uppdelad i olika widgetar som detaljerar hur framgångsrik och felfri din resa är. Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort."
 
 Den globala reserapporten kan nås direkt från din resa med **[!UICONTROL View report]** -knappen.
 

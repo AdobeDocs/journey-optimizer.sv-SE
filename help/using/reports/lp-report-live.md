@@ -8,14 +8,19 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: df13e473-8003-4dde-aaf8-df8385c9ee21
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: 0ec122bbf134c41f95755a3b6f08eb7ef68506df
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
 
 # Landningssidans Live-rapport {#lp-report-live}
+
+>[!CONTEXTUALHELP]
+>id="ajo_landing_page_live_report"
+>title="Landningssidans Live-rapport"
+>abstract="Med landningssidans Live-rapport kan du i realtid mäta och visualisera landningssidans effekt och prestanda endast under de senaste 24 timmarna. Din rapport är uppdelad i olika widgetar som beskriver hur landningssidan fungerar och vilka fel den innehåller. Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort."
 
 Landningssidan **[!UICONTROL Live report]** rapporten innehåller endast information om landningssidornas inverkan under de senaste 24 timmarna. För att mäta landningssidans data under en viss tidsperiod, se [Global rapport för landningssida](lp-report-global.md).
 

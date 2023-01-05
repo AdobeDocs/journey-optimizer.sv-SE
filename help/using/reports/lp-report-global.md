@@ -8,14 +8,19 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e88cf8ad-986a-4e4c-8921-d406c6876031
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: 0ec122bbf134c41f95755a3b6f08eb7ef68506df
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
 
 # Global rapport för landningssida {#lp-report-global}
+
+>[!CONTEXTUALHELP]
+>id="ajo_landing_page_global_report"
+>title="Global rapport för landningssida"
+>abstract="Med den globala rapporten för landningssidan kan du mäta effekten av dina landningssidor under en vald tidsperiod. Din rapport är uppdelad i olika widgetar som beskriver hur landningssidan fungerar och vilka fel den innehåller. Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort."
 
 Landningssidan **[!UICONTROL Global report]** rapporten innehåller information om landningssidornas inverkan under en vald tidsperiod. Information om hur du mäter landningssiduppgifter under de senaste 24 timmarna finns i [Landningssidans Live-rapport](lp-report-live.md).
 

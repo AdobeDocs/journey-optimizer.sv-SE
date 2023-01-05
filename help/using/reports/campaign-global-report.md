@@ -8,16 +8,21 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: fa64f5b8-75f2-40e6-8566-5766fafe6cd6
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: 0ec122bbf134c41f95755a3b6f08eb7ef68506df
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
 
 # Global kampanjrapport {#campaign-global-report}
 
-Kampanjglobala rapporter kan nås direkt från din kampanj med **[!UICONTROL All time]** -knappen.
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_report"
+>title="Global kampanjrapport"
+>abstract="Med den globala rapporten Campaign kan ni mäta effekten av era kampanjer under en viss tidsperiod. Din rapport är uppdelad i olika widgetar som detaljerat beskriver kampanjens framgångar och fel. Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort."
+
+Kampanjens globala rapport kan nås direkt från er Campaign via **[!UICONTROL View report]** -knappen.
 
 ![](assets/campaign_report_global_5.png)
 
