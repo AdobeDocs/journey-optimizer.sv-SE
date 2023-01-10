@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 8c63f2f2-5cec-4cb2-b3bf-2387eefb5002
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: b320a69b12abe14f745097403d7447e47c101596
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 >title="Beroende objekt"
 >abstract="Det här är listan över associerade objekt som används under resan. I den här listan visas namn, objekttyp och internt Journey Optimizer-id."
 
-Med Journey Optimizer kan du kopiera en hel resa från en sandlåda till en annan. Du kan t.ex. kopiera en resa från sandlådemiljön på scenen till produktionssandlådan. Förutom själva resan kopierar Journey Optimizer även de flesta av de objekt som resan är beroende av: segment, ytor (t.ex. förinställningar), scheman, händelser och åtgärder. Mer information om kopierade objekt finns i [section](../building-journeys/copy-to-sandbox.md#limitations).
+Med Journey Optimizer kan du kopiera en hel resa från en sandlåda till en annan. Du kan t.ex. kopiera en resa från sandlådemiljön på scenen till produktionssandlådan. Förutom själva resan kopierar Journey Optimizer även de flesta av de objekt som resan är beroende av: segment, ytor (t.ex. förinställningar), scheman, händelser och åtgärder. Mer information om kopierade objekt finns i [section](#limitations).
 
 >[!CAUTION]
 >
@@ -75,7 +75,7 @@ Så här kopierar du en resa till en annan sandlåda:
 
 ## Kopiera processer och begränsningar {#limitations}
 
-Vi garanterar inte att alla länkade element kopieras till målsandlådan. Vi rekommenderar att du gör en grundlig kontroll. Identifiera eventuella saknade objekt och skapa dem manuellt innan resan publiceras.
+Alla länkade element kanske inte kopieras till målsandlådan. Adobe rekommenderar starkt att du gör en grundlig kontroll. Identifiera eventuella saknade objekt och skapa dem manuellt innan resan publiceras.
 
 Följande objekt kopieras:
 
