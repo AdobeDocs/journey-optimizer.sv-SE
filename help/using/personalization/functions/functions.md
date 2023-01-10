@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
-source-git-commit: 315c3e8c04b2e3944d0d5b2befb205acbe0ef7c9
+source-git-commit: 075a90130696877d5dea39b7bfe4e85b2aac4791
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1739'
 ht-degree: 1%
 
 ---
@@ -146,22 +146,22 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
 
 <table>
     <tr>
-        <td><a href="objects.md#absolute">Absolut</a></td><td>Den här funktionen konverterar ett tal som är dess absoluta värde</td>
+        <td><a href="math.md#absolute">Absolut</a></td><td>Den här funktionen konverterar ett tal till dess absoluta värde</td>
     </tr>
     <tr>
-        <td><a href="objects.md#random">Random</a></td><td>Den här funktionen returnerar ett slumpvärde mellan 0 och 1</td>
+        <td><a href="math.md#random">Random</a></td><td>Den här funktionen returnerar ett slumpvärde mellan 0 och 1</td>
     </tr>
     <tr>
-        <td><a href="objects.md#round-down">Avrunda nedåt</a></td><td>Den här funktionen avrundar ett tal nedåt</td>
+        <td><a href="math.md#round-down">Avrunda nedåt</a></td><td>Den här funktionen avrundar ett tal nedåt</td>
     </tr>
     <tr>
-        <td><a href="objects.md#round-up">Avrunda uppåt</a></td><td>Den här funktionen avrundar ett tal</td>
+        <td><a href="math.md#round-up">Avrunda uppåt</a></td><td>Den här funktionen avrundar ett tal</td>
     </tr>
     <tr>
-        <td><a href="objects.md#to-percentage">Till procent</a></td><td>Den här funktionen konverterar ett tal till procent</td>
+        <td><a href="math.md#to-percentage">Till procent</a></td><td>Den här funktionen konverterar ett tal till procent</td>
     </tr>
     <tr>
-        <td><a href="objects.md#to-precision">Till precision</a></td><td>Den här funktionen konverterar ett tal till nödvändig precision</td>
+        <td><a href="math.md#to-precision">Till precision</a></td><td>Den här funktionen konverterar ett tal till nödvändig precision</td>
     </tr>
 </table>
 
@@ -301,7 +301,7 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
         <td><a href="string.md#to-date-time">Till datum och tid</a></td><td>Den här funktionen används för att konvertera en sträng till ett datum. Det returnerar epokdatumet som utdata för ogiltiga indata.</td>
     </tr>
     <tr>
-        <td><a href="string.md#to-date-time-only">Endast till datum och tid</a></td><td>Den här funktionen konverterar ett argumentvärde till ett värde för endast datum och tid. Det returnerar epokdatumet som utdata för ogiltiga indata.</td>
+        <td><a href="string.md#to-date-time-only">Endast till datum och tid</a></td><td>Den här funktionen konverterar ett argumentvärde till ett värde som bara gäller för datum och tid. Det returnerar epokdatumet som utdata för ogiltiga indata.</td>
     </tr>
     <tr>
         <td><a href="string.md#trim">Rensa</a></td><td>Den här funktionen tar bort blanksteg från början och slutet av en sträng</td>
@@ -325,7 +325,7 @@ Hjälpprogram beskrivs i [den här sidan](helpers.md).
 
 <table>
     <tr>
-        <td><a href="helpers.md#default">Standardreservvärde</a></td><td>Med den här funktionen kan du återge en variabel med standardvärdet</td>
+        <td><a href="helpers.md#default">Standardreservvärde</a></td><td>Den här funktionen används för att återge en variabel med standardvärdet</td>
     </tr>
     <tr>
         <td><a href="helpers.md#each">Varje</a></td><td>Den här funktionen används för att iterera över en array</td>
