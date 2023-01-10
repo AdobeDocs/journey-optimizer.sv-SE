@@ -6,7 +6,7 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: dfe611fb-9c50-473c-9eb7-b983e1e6f01e
-source-git-commit: 2160d52f24af50417cdcf8c6ec553b746a544c2f
+source-git-commit: 91f221781f1655066ec0f6b1c3f2c1faefd09d69
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 2%
@@ -125,7 +125,7 @@ The `topN` -funktionen används för att returnera den första `N` objekt i en a
 
 **Exempel**
 
-Följande åtgärd returnerar de fem främsta beställningarna med det högsta priset.
+Följande åtgärd returnerar de första fem beställningarna med det lägsta priset.
 
 ```sql
 {%= topN(orders,price, 5) %}
@@ -223,7 +223,7 @@ The `bottomN` -funktionen används för att returnera den sista `N` objekt i en 
 
 **Exempel**
 
-Följande åtgärd returnerar de fem främsta beställningarna med det lägsta priset.
+Följande åtgärd returnerar de fem sista beställningarna med det högsta priset.
 
 ```sql
 {%= bottomN(orders,price, 5) %}
