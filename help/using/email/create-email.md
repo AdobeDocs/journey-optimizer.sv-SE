@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: 23f1ad4580d714acaefd7a5948ee674ce5203bc6
 workflow-type: tm+mt
-source-wordcount: '737'
-ht-degree: 2%
+source-wordcount: '763'
+ht-degree: 1%
 
 ---
 
@@ -71,6 +71,13 @@ Mer information om hur du konfigurerar en kampanj finns i [den här sidan](../ca
 >[!ENDTABS]
 
 ## Definiera ditt e-postinnehåll {#define-email-content}
+
+<!-- update the quarry component with right ID value-->
+
+>[!CONTEXTUALHELP]
+>id="test_id"
+>title="Konfigurera e-postinnehåll"
+>abstract="Skapa innehållet i e-postmeddelandet. Definiera ämnet och använd sedan e-postdesignern för att skapa och anpassa e-postmeddelandets brödtext."
 
 1. Klicka på **[!UICONTROL Edit content]** för att konfigurera e-postinnehållet. [Läs mer](get-started-email-design.md)
 
