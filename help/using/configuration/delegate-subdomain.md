@@ -8,9 +8,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: 61c90f39fa2bddb384e5581e3935c43d4691c355
+source-git-commit: fc88faceceea0312417e1176a5a61c1c03a6f01b
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1736'
 ht-degree: 4%
 
 ---
@@ -114,6 +114,11 @@ När en underdomän har delegerats till Adobe i [!DNL Journey Optimizer]skapas e
 >id="ajo_admin_subdomain_dns_cname"
 >title="Generera matchande DNS- och valideringsposter"
 >abstract="Om du vill delegera en underdomän med CNAME måste du kopiera och klistra in informationen om Adobe-namnservern och den SSL CDN URL-valideringspost som visas i Journey Optimizer-gränssnittet i värdplattformen. När kontrollerna är klara kan underdomänen användas för att leverera meddelanden."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_subdomain_cdn_cname"
+>title="Kopiera valideringsposten"
+>abstract="Adobe genererar en valideringspost. Du måste skapa motsvarande post på värdplattformen för CDN URL-validering."
 
 Om du har domänspecifika begränsningsprinciper och du vill att Adobe endast ska ha partiell kontroll över DNS, kan du välja att utföra alla DNS-relaterade aktiviteter på din sida.
 
