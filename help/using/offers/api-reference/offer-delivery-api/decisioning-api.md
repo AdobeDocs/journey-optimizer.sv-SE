@@ -6,7 +6,7 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 692d0aae-6fa1-40b8-a35f-9845d78317a3
-source-git-commit: d3a22f223353dfa5d43acab400cea3d5c314662f
+source-git-commit: f5d5c9dacd640b130dd4bcbaab803ecc7e999d10
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 1%
@@ -75,7 +75,7 @@ curl -X POST \
                 }
                 ]
             },
-            "xdm:decisionRequestId": "0AA00002-0000-1337-c0de-c0fefec0fefe"
+            "xdm:decisionRequestId": "0AA00002-0000-1224-c0de-cjf98Csj43"
             }
         ],
         "xdm:allowDuplicatePropositions": {
@@ -110,7 +110,7 @@ curl -X POST \
 | `xdm:itemCount` | Antalet erbjudanden som ska returneras. Det högsta antalet är 30. | `"xdm:itemCount": 2` |
 | `xdm:profiles` | Det här objektet innehåller information om profilen som beslutet begärs för. För en API-begäran innehåller detta en profil. |
 | `xdm:profiles.xdm:identityMap` | Det här objektet innehåller en uppsättning slutanvändaridentiteter baserat på ID:ts namnutrymmesintegrationskod. Identitetskartan kan innehålla mer än en identitet för varje namnutrymme. Mer information om namnutrymmen finns i [den här sidan](../../../segment/get-started-identity.md). | `Email: [{"xdm:id": "123@abc.com"}]` |
-| `xdm:profiles.xdm:decisionRequestId` | Det ID som genereras av klienten som kan användas för att unikt identifiera en profilbeslutsbegäran. Detta ID återkommer i svaret och påverkar inte resultatet av beslutet. | `"xdm:decisionRequestId": "0AA00002-0000-1337-c0de-c0fefec0fefe"` |
+| `xdm:profiles.xdm:decisionRequestId` | Det ID som genereras av klienten som kan användas för att unikt identifiera en profilbeslutsbegäran. Detta ID återkommer i svaret och påverkar inte resultatet av beslutet. | `"xdm:decisionRequestId": "0AA00002-0000-1224-c0de-cjf98Csj43"` |
 | `xdm:allowDuplicatePropositions` | Det här objektet är kontrollstrukturen för reglerna för borttagning av dubbletter. Det består av en serie flaggor som anger om samma alternativ kan föreslås i en viss dimension. En flagga som är inställd på true innebär att dubbletter tillåts och ska inte tas bort i den kategori som flaggan anger. En flagga som är inställd på false innebär att beslutsmotorn inte ska göra samma förslag över dimensionen och i stället välja nästa bästa alternativ för ett av delbesluten. |
 | `xdm:allowDuplicatePropositions.xdm:acrossActivities` | Om värdet är true kan flera beslut tilldelas samma alternativ. | `"xdm:acrossActivities": true` |
 | `xdm:allowDuplicatePropositions.xdm:acrossPlacements` | Om värdet är true kan flera placeringar tilldelas samma alternativ. | `"xdm:acrossPlacements": true` |
