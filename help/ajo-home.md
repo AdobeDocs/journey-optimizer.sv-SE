@@ -1,13 +1,13 @@
 ---
 keywords: Journey Optimizer;home;populära topics
 title: Journey Optimizer produktdokumentation
-description: Adobe Journey Optimizer produkthjälpcenter
+description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: 5fd4f8c5ffaf2c417d95f88fa31c850bc88db13f
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '320'
 ht-degree: 7%
 
 ---
@@ -182,7 +182,7 @@ ht-degree: 7%
 </table>
 
 
-![Nyhetsbrev](using/assets/do-not-localize/nl-icon.png) Registrera dig för [Adobe Journey Optimizer kvartalsvis nyhetsbrev](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target=&quot;_blank&quot;} idag!
+![Nyhetsbrev](using/assets/do-not-localize/nl-icon.png) Registrera dig för [Adobe Journey Optimizer kvartalsvis nyhetsbrev](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} idag!
 
 Få de senaste produktuppdateringarna, spännande historier, användningsexempel, tips och mycket mer levererade direkt till inkorgen varje kvartal.
 

@@ -8,10 +8,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 1b5ca4db-44d9-49e2-ab39-a1abba223ec7
-source-git-commit: c6498633fdfdc9442203a3bf980f1b12bd1c6a6b
+source-git-commit: a5b49f113fa0f1375f74368a63ea19789f3798c2
 workflow-type: tm+mt
 source-wordcount: '888'
-ht-degree: 26%
+ht-degree: 25%
 
 ---
 
@@ -23,7 +23,7 @@ Genom att skapa en underdomän för e-postkampanjer kan varumärken isolera olik
 >
 >Du kan inte använda samma sändande domän för att skicka ut meddelanden från [!DNL Adobe Journey Optimizer] och från en annan produkt, som [!DNL Adobe Campaign] eller [!DNL Adobe Marketo Engage].
 
-## Varför konfigurera underdomäner? {#why-setting-up-subdomains}
+## Varför konfigurera underdomäner? {#why-set-up-subdomains}
 
 En underdomän är en division av din domän som kan användas för att isolera dina varumärken eller olika typer av trafik, till exempel transaktionsmeddelanden och marknadsföringskommunikation.
 
