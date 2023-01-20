@@ -5,12 +5,13 @@ title: Om åtgärder
 description: Läs om hur du konfigurerar en åtgärd
 feature: Actions
 topic: Administration
-role: Admin
+role: Admin,Developer
 level: Intermediate
+keywords: åtgärder, resa, meddelanden, sändning, anslutningar
 exl-id: 7f0cda1d-daf0-4d4c-9978-ddef81473813
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: 16738786e4ebeef3417fd0f6e5be741b348c2744
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '251'
 ht-degree: 54%
 
 ---
@@ -30,7 +31,7 @@ ht-degree: 54%
 
 Om du har Adobe Campaign v7 eller v8 blir en integrering tillgänglig på begäran. Se [den här sidan](../action/acc-action.md).
 
-Om du använder ett tredjepartssystem för att skicka meddelanden som Epsilon, Facebook, [Adobe Developer](https://developer.adobe.com){target=&quot;_blank&quot;}, Firebase osv., du måste lägga till och konfigurera en anpassad åtgärd. Se [den här sidan](../action/about-custom-action-configuration.md).
+Om du använder ett tredjepartssystem för att skicka meddelanden som Epsilon, Facebook, [Adobe Developer](https://developer.adobe.com){target="_blank"}, Firebase osv., du måste lägga till och konfigurera en anpassad åtgärd. Se [den här sidan](../action/about-custom-action-configuration.md).
 
 Med anpassade åtgärder kan du konfigurera anslutningar med ett tredjepartssystem för att skicka meddelanden eller API-anrop. En åtgärd kan konfigureras med alla tjänster från alla leverantörer som kan anropas via ett REST API med en JSON-formaterad nyttolast.
 

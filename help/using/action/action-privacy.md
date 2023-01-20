@@ -2,15 +2,16 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Datastyrning
-description: Datastyrning
-feature: Actions
+description: Definiera en styrningspolicy som är kopplad till en etikett och en marknadsföringsåtgärd
+feature: Data Governance
 topic: Administration
 role: Admin
 level: Intermediate
+keywords: data, styrning, DULE, etiketter, märkning, plattform, policy
 exl-id: be3efd3b-35d5-4cf7-9015-29d1e305355d
-source-git-commit: 8d56e3060e78422b028ced17f415497789908ff9
+source-git-commit: 16738786e4ebeef3417fd0f6e5be741b348c2744
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---

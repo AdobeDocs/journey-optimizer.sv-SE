@@ -2,15 +2,16 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Attributbaserad åtkomstkontroll
-description: Läs mer om Attributbaserad åtkomstkontroll
+description: Med attributbaserad åtkomstkontroll (ABAC) kan du definiera behörigheter för att hantera dataåtkomst för specifika team eller grupper av användare.
 feature: Access Management
 topic: Administration
-role: Admin
+role: Admin,Leader
 level: Intermediate
+keywords: abac, attribute, authorized, data, access, sensitive, assets
 exl-id: 162b0848-313a-447e-9237-5a6dbc8102c6
-source-git-commit: 2160d52f24af50417cdcf8c6ec553b746a544c2f
+source-git-commit: 16738786e4ebeef3417fd0f6e5be741b348c2744
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '1004'
 ht-degree: 0%
 
 ---

@@ -2,15 +2,16 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Integrera med Adobe Campaign v7/v8
-description: Lär dig integrera med Adobe Campaign v7/v8
+description: Lär dig integrera Journey Optimizer med Adobe Campaign v7/v8
 feature: Actions
 topic: Administration
-role: Admin
+role: Admin,Developer
 level: Intermediate
+keywords: kampanj, acc, integration
 exl-id: 109ba212-f04b-425f-9447-708c8e0b3f51
-source-git-commit: f6db4f7cbb1951c009fa7915f340da96eea74120
+source-git-commit: 16738786e4ebeef3417fd0f6e5be741b348c2744
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -44,7 +45,7 @@ För varje konfigurerad åtgärd finns en åtgärdsaktivitet tillgänglig på pa
 
 ## Förutsättningar {#prerequisites}
 
-I Campaign måste du skapa och publicera ett transaktionsmeddelande och tillhörande händelse. Se [Adobe Campaign-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html#transactional-messaging){target=&quot;_blank&quot;}.
+I Campaign måste du skapa och publicera ett transaktionsmeddelande och tillhörande händelse. Se [Adobe Campaign-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html#transactional-messaging){target="_blank"}.
 
 Du kan skapa din JSON-nyttolast som motsvarar varje meddelande enligt mönstret nedan. Du klistrar sedan in den här nyttolasten när du konfigurerar åtgärden i Journey Optimizer (se nedan)
 

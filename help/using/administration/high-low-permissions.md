@@ -2,14 +2,15 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Behörighetsnivåer
-description: Läs om behörigheter på hög och låg nivå
+description: Lär dig mer om höga och låga behörigheter som ger användarna tillgång till de olika funktionerna.
 topic: Administration
-role: Admin
-level: Intermediate
+role: Admin, Architect, Developer
+level: Experienced
+keywords: behörighet, hög nivå, låg nivå, profil, administratörskonsol
 exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
-source-git-commit: 2160d52f24af50417cdcf8c6ec553b746a544c2f
+source-git-commit: 16738786e4ebeef3417fd0f6e5be741b348c2744
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---

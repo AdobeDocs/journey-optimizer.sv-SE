@@ -2,15 +2,16 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Hantera användare och produktprofiler
-description: Lär dig hur du hanterar behörigheter
+description: Lär dig hantera användare och produktprofiler
 exl-id: 85fd386a-45fa-4f9a-89d1-cecc0749b90d
 feature: Access Management
 topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: d17e64e03d093a8a459caef2fb0197a5710dfb7d
+keywords: produkt, profiler, sandlåda
+source-git-commit: 16738786e4ebeef3417fd0f6e5be741b348c2744
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '726'
 ht-degree: 11%
 
 ---
@@ -99,7 +100,7 @@ Om det behövs kan du även skapa en ny produktprofil med specifika behörighete
 
 [!DNL Journey Optimizer] kan du skapa egna **[!UICONTROL Product profiles]** och tilldela en uppsättning behörigheter och sandlådor till användarna. Med **[!UICONTROL Product profiles]** kan du tillåta eller neka åtkomst till vissa funktioner eller objekt i gränssnittet.
 
-Mer information om hur du skapar och hanterar sandlådor finns i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html){target=&quot;_blank&quot;}.
+Mer information om hur du skapar och hanterar sandlådor finns i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html){target="_blank"}.
 
 I det här exemplet skapar vi en produktprofil med namnet **Skrivskyddade resor** där vi ger läsbehörighet till resefunktionen. Användare kommer endast att kunna komma åt och visa resor och kommer inte att kunna komma åt andra funktioner som **[!DNL  Decision management]** in [!DNL Journey Optimizer].
 
