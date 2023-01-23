@@ -7,10 +7,11 @@ feature: Personalization
 topic: Personalization
 role: Data Engineer
 level: Intermediate
+keywords: uttryck, redigerare, hjälpprogram, användningsfall, personalisering
 exl-id: 9c9598c0-6fb1-4e2f-b610-ccd1a80e516e
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '979'
 ht-degree: 2%
 
 ---
@@ -52,7 +53,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 1. Skapa en händelse vars schema innehåller `productListItems` array.
 1. Definiera alla fält från den här arrayen som nyttolastfält för den här händelsen.
 
-   Läs mer om datatypen i produktlistan [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html){target=&quot;_blank&quot;}.
+   Läs mer om datatypen i produktlistan [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html){target="_blank"}.
 
 1. Skapa en resa som börjar med det här evenemanget.
 1. Lägg till en **E-post** till resan.
@@ -105,7 +106,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 
       ![](assets/personalization-uc-helpers-5.png)
 
-      Läs mer om personnamnets datatyp i [Dokumentation för Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/person-name.html){target=&quot;_blank&quot;}.
+      Läs mer om personnamnets datatyp i [Dokumentation för Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/person-name.html){target="_blank"}.
 
 1. Klicka **[!UICONTROL Validate]** och sedan klicka **[!UICONTROL Save]**.
 

@@ -7,10 +7,11 @@ feature: Landing Pages
 topic: Content Management
 role: User
 level: Beginner
+keywords: landning, landningssida, javascript, kod
 exl-id: 2a7ebead-5f09-4ea5-8f00-8b5625963290
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '563'
 ht-degree: 2%
 
 ---

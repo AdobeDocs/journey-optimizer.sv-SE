@@ -7,10 +7,11 @@ feature: Events
 topic: Administration
 role: Admin
 level: Intermediate
+keywords: analys, integrering, web sdk, plattform
 exl-id: 9d842722-e5eb-4743-849d-b7ba9448062f
-source-git-commit: 53d89f216961daba72e96a728301572b83824655
+source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '569'
 ht-degree: 7%
 
 ---
@@ -49,7 +50,7 @@ Detta aktiverar Analytics-källkopplingen för den rapportsviten. När informati
 
 ![](assets/ajo-aa_4.png)
 
-Läs mer om Adobe Analytics källanslutning i  [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html){target=&quot;_blank&quot;} och [självstudiekurs](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html){target=&quot;_blank&quot;}.
+Läs mer om Adobe Analytics källanslutning i  [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html){target="_blank"} and [tutorial](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html){target="_blank"}.
 
 ## Skapa en resa med en händelse med hjälp av Adobe Analytics- eller Web SDK-data {#event-analytics}
 

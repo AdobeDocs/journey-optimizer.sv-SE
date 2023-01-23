@@ -7,10 +7,11 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
+keywords: avanmälan, e-post, länk, avanmälan
 exl-id: 4bb51bef-5dab-4a72-8511-1a5e528f4b95
-source-git-commit: d1c11881654580247e8d7c92237cad130f11f749
+source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1016'
 ht-degree: 1%
 
 ---
@@ -59,7 +60,7 @@ Du måste först lägga till en länk för att avbryta prenumerationen i ett med
 
 ### Implementera ett API-anrop för avanmälan {#opt-out-api}
 
-Om du vill att mottagarna ska avanmäla sig när de skickar in sitt val från landningssidan måste du implementera en **Prenumerations-API-anrop** via [Adobe Developer](https://developer.adobe.com){target=&quot;_blank&quot;} om du vill uppdatera motsvarande profilers inställningar.
+Om du vill att mottagarna ska avanmäla sig när de skickar in sitt val från landningssidan måste du implementera en **Prenumerations-API-anrop** via [Adobe Developer](https://developer.adobe.com){target="_blank"} om du vill uppdatera motsvarande profilers inställningar.
 
 Det här anropet till POSTEN är som följer:
 
@@ -97,7 +98,7 @@ Begärandetext:
 }
 ```
 
-[!DNL Journey Optimizer] använder de här parametrarna för att uppdatera motsvarande profils val via [Adobe Developer](https://developer.adobe.com){target=&quot;_blank&quot;} API-anrop.
+[!DNL Journey Optimizer] använder de här parametrarna för att uppdatera motsvarande profils val via [Adobe Developer](https://developer.adobe.com){target="_blank"} API-anrop.
 
 ### Skicka meddelandet med en länk för att avbryta prenumerationen {#send-message-unsubscribe-link}
 
@@ -117,7 +118,7 @@ När du har konfigurerat länken för att avbryta prenumerationen på din landni
 
    Därför får den här användaren inte information från ert varumärke om han eller hon inte prenumererar igen.
 
-1. Om du vill kontrollera att den aktuella profilens val har uppdaterats går du till Experience Platform och öppnar profilen genom att markera ett identitetsnamnutrymme och ett motsvarande identitetsvärde. Läs mer i [Experience Platform dokumentation](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target=&quot;_blank&quot;}.
+1. Om du vill kontrollera att den aktuella profilens val har uppdaterats går du till Experience Platform och öppnar profilen genom att markera ett identitetsnamnutrymme och ett motsvarande identitetsvärde. Läs mer i [Experience Platform dokumentation](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
 
    ![](assets/opt-out-profile-choice.png)
 
@@ -185,4 +186,4 @@ Beroende på e-postklienten kan du klicka på länken för att avbryta prenumera
    >
    >Om du inte lägger till en länk för avanmälan med ett enda klick i ditt meddelandeinnehåll visas ingen startsida.
 
-* Motsvarande profil väljs omedelbart och det här alternativet uppdateras i Experience Platform. Läs mer i [Experience Platform dokumentation](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target=&quot;_blank&quot;}.
+* Motsvarande profil väljs omedelbart och det här alternativet uppdateras i Experience Platform. Läs mer i [Experience Platform dokumentation](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.

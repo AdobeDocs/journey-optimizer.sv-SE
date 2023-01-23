@@ -7,10 +7,11 @@ feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
+keywords: e-post, stil, css, brödtext, struktur
 exl-id: 2e20ecc5-bb58-4dc8-a2bc-ec5a02c16ae8
-source-git-commit: 0e9037ddcbb61ae84a6487ec24be45462e871169
+source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '120'
 ht-degree: 0%
 
 ---

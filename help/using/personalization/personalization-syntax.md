@@ -7,8 +7,9 @@ feature: Personalization
 topic: Personalization
 role: Data Engineer
 level: Intermediate
+keywords: uttryck, redigerare, syntax, personalisering
 exl-id: 5a562066-ece0-4a78-92a7-52bf3c3b2eea
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 3%
@@ -29,7 +30,7 @@ Exempel på enkla uttryck:
 där:
 
 * `profile` är ett namnutrymme.
-* `person.name` är en token som består av attribut. Attributstrukturen definieras i ett Adobe Experience Platform XDM-schema. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target=&quot;_blank&quot;}.
+* `person.name` är en token som består av attribut. Attributstrukturen definieras i ett Adobe Experience Platform XDM-schema. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}.
 
 ## Allmänna syntaxregler {#general-rules}
 
@@ -51,7 +52,7 @@ När det gäller argument för literala funktioner stöder inte mallspråksparse
 
 ## Profil
 
-Med det här namnutrymmet kan du referera till alla attribut som definieras i profilschemat som beskrivs i [Dokumentation för Adobe Experience Platform Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target=&quot;_blank&quot;}.
+Med det här namnutrymmet kan du referera till alla attribut som definieras i profilschemat som beskrivs i [Dokumentation för Adobe Experience Platform Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}.
 
 Attributen måste definieras i schemat innan de refereras i en [!DNL Journey Optimizer] personaliseringsblock.
 

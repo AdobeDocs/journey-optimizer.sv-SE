@@ -7,10 +7,11 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
+keywords: stock, bilder, integration, foton
 exl-id: 0715f65f-04bd-4dc2-a152-98111f4c42e6
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '545'
 ht-degree: 1%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 1%
 
 The [!DNL Adobe Stock] och [!DNL Adobe Journey Optimizer] Integrationspluginen för e-postdesignern ger kunderna ett enkelt sätt att navigera, licensiera och spara bilder för användning i meddelanderedigering.
 
-[Adobe Stock](https://helpx.adobe.com/stock/get-started.html){target=&quot;_blank&quot;} ger tillgång till miljontals utvalda och royaltyfria foton, videor, illustrationer och vektorbilder av hög kvalitet. Du kan välja att köpa ett kreditpaket för att licensiera mediefiler eller bara köpa en Standard- eller Extended-licens för den mediefil du behöver. Adobe Stock erbjuder också en kostnadsfri samling resurser.
+[Adobe Stock](https://helpx.adobe.com/stock/get-started.html){target="_blank"} ger tillgång till miljontals utvalda och royaltyfria foton, videor, illustrationer och vektorbilder av hög kvalitet. Du kan välja att köpa ett kreditpaket för att licensiera mediefiler eller bara köpa en Standard- eller Extended-licens för den mediefil du behöver. Adobe Stock erbjuder också en kostnadsfri samling resurser.
 
 Med [!DNL Adobe Journey Optimizer]kan du överföra bilder till e-postmeddelanden direkt från [!DNL Adobe Stock] och lägga in **[!UICONTROL Assets]** mapp med **[!UICONTROL Find Adobe Stock photos]** alternativ. Dessutom är **[!UICONTROL Find Similar Stock photos]** kan du söka efter bilder som matchar innehållet, färgen och kompositionen för resursen som används i leveransen.
 
@@ -29,7 +30,7 @@ Med [!DNL Adobe Journey Optimizer]kan du överföra bilder till e-postmeddelande
 
 The **[!UICONTROL Find Adobe Stock photos]** och **[!UICONTROL Find Similar Image]** är tillgängliga för användare med tillgång till en AEM Assets Essentials-produktprofil.
 
-Mer information finns i [Grundläggande dokumentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html#add-users-to-essentials){target=&quot;_blank&quot;}.
+Mer information finns i [Grundläggande dokumentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html#add-users-to-essentials){target="_blank"}.
 
 ## Infoga en bild från [!DNL Adobe Stock] {#add-stock-image}
 
@@ -87,7 +88,7 @@ Följ stegen nedan för att licensiera och hämta din bild:
 
    Köpet beror på din Adobe Stock-plan eller prenumeration. Observera att om du har flera Adobe Stock-konton kommer du att omdirigeras till det senast använda Stock ID:t. I så fall måste du se till att du är inloggad på rätt konto innan du licensierar resursen.
 
-   Läs mer om Adobe Stock planer och priser i [Adobe Stock-dokumentation](https://stock.adobe.com/plans){target=&quot;_blank&quot;}.
+   Läs mer om Adobe Stock planer och priser i [Adobe Stock-dokumentation](https://stock.adobe.com/plans){target="_blank"}.
 
    >[!WARNING]
    > Om ett e-postmeddelande med en olicensierad bild skickas behåller bilden sin olicensierade form med vattenstämpeln.
@@ -102,5 +103,5 @@ Följ stegen nedan för att licensiera och hämta din bild:
 
 * [E-postdesign i Journey Optimizer](get-started-email-design.md)
 * [Komponentinställningar för e-postdesign](content-components.md)
-* [Kom igång med Adobe Stock](https://helpx.adobe.com/stock/get-started.html){target=&quot;_blank&quot;}.
+* [Kom igång med Adobe Stock](https://helpx.adobe.com/stock/get-started.html){target="_blank"}.
 

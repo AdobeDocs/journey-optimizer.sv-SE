@@ -5,12 +5,13 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
+keywords: direktreklam, meddelande, kampanj
 hide: true
 hidefromtoc: true
 exl-id: 6b438268-d983-4ab8-9276-c4b7de74e6bd
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '467'
 ht-degree: 3%
 
 ---

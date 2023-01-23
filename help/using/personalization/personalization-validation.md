@@ -7,10 +7,11 @@ feature: Personalization
 topic: Personalization
 role: Data Engineer
 level: Intermediate
+keywords: uttryck, redigerare, validering, fel, personalisering
 exl-id: 7abeec5e-743f-48fb-a4a6-056665e8bfda
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---

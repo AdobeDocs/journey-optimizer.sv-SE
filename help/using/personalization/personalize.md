@@ -7,10 +7,11 @@ feature: Personalization
 topic: Personalization
 role: Data Engineer
 level: Beginner
+keywords: uttryck, redigerare, start, personalisering
 exl-id: f448780b-91bc-455e-bf10-9a9aee0a0b24
-source-git-commit: 6014088011c41fd5f673eb3d36fb0609c4a01270
+source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '324'
 ht-degree: 2%
 
 ---
@@ -35,7 +36,7 @@ När du bearbetar meddelandet (e-post och push) ersätter Journey Optimizer uttr
 
 ## Utnyttja profildata för att personalisera era meddelanden {#data}
 
-Personaliseringen baseras på profildata som hanteras av **Individuell XDM-profil** schema definierat i Adobe Experience Platform. Läs mer i [Dokumentation för Adobe Experience Platform Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target=&quot;_blank&quot;}.
+Personaliseringen baseras på profildata som hanteras av **Individuell XDM-profil** schema definierat i Adobe Experience Platform. Läs mer i [Dokumentation för Adobe Experience Platform Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}.
 
 >[!CAUTION]
 >The **Individuell XDM-profil** schema är det enda schema som du kan använda för att anpassa innehåll i [!DNL Journey Optimizer].

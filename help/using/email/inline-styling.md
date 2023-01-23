@@ -7,10 +7,11 @@ feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
+keywords: infogad, formatera, attribut, redigerare
 exl-id: 1f43bcde-0786-45e8-baf4-065c3920fd4e
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '116'
 ht-degree: 0%
 
 ---

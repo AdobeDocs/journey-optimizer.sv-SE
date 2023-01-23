@@ -5,10 +5,11 @@ title: Definiera förinställningar för landningssidor
 description: Lär dig hur du konfigurerar miljön för att skapa och använda landningssidor med Journey Optimizer
 role: Admin
 level: Intermediate
+keywords: landning, landningssida, konfigurera, miljö, underdomän, förinställningar
 exl-id: 7cf1f083-bef0-40b5-8ddd-920a9d108eca
-source-git-commit: c6498633fdfdc9442203a3bf980f1b12bd1c6a6b
+source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '324'
 ht-degree: 2%
 
 ---
