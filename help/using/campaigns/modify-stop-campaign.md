@@ -2,15 +2,16 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Ändra eller stoppa en kampanj
-description: Lär dig hur du ändrar, stoppar eller duplicerar live-kampanjer i [!DNL Journey Optimizer]
+description: Lär dig hur du ändrar, stoppar eller duplicerar live-kampanjer i Journey Optimizer
 feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
+keywords: hantera kampanjer, status, schema, åtkomst, optimering
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '463'
 ht-degree: 1%
 
 ---

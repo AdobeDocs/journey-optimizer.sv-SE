@@ -7,12 +7,13 @@ feature: A/B Testing
 topic: Content Management
 role: User
 level: Beginner
+keywords: innehåll, experiment, multipelt, målgrupp, behandling
 hide: true
 hidefromtoc: true
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: ef838945e0c3595de8ad920203b278bb51671d16
+source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '949'
 ht-degree: 1%
 
 ---

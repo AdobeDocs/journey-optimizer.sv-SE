@@ -2,15 +2,16 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Skapa en kampanj
-description: Lär dig hur du skapar kampanjer i [!DNL Journey Optimizer]
+description: Lär dig hur du skapar kampanjer i Journey Optimizer
 feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
+keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: ef7c1ac61a59407507e9570e1114e6ef0cb8a7ca
+source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '694'
 ht-degree: 2%
 
 ---

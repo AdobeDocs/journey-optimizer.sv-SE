@@ -2,17 +2,18 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Kom igång med innehållsexperiment
-description: Läs mer om att experimentera med innehåll i [!DNL Journey Optimizer]
+description: Läs mer om att experimentera med innehåll i Journey Optimizer
 feature: A/B Testing
 topic: Content Management
 role: User
 level: Beginner
+keywords: komma igång, börja, innehåll, experimentera
 hide: true
 hidefromtoc: true
 exl-id: 7fe4b24e-f60a-4107-a064-00010b0cbbfc
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
 workflow-type: tm+mt
-source-wordcount: '1924'
+source-wordcount: '1931'
 ht-degree: 0%
 
 ---

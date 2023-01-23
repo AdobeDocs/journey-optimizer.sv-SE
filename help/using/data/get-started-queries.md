@@ -6,10 +6,11 @@ description: Lär dig hur du skapar frågor i Adobe Journey Optimizer
 feature: Schemas
 role: User
 level: Beginner
+keywords: frågor, plattform, data, utforskning
 exl-id: 6f32f068-429a-4039-bb76-d190069e7402
-source-git-commit: f6db4f7cbb1951c009fa7915f340da96eea74120
+source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '120'
 ht-degree: 6%
 
 ---
@@ -22,9 +23,9 @@ Frågeredigeraren har stöd för att utveckla frågor för analys och datautfors
 
 ![](assets/queries-home.png)
 
-Läs om hur du använder Frågeredigeraren i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html){target=&quot;_blank&quot;}.
+Läs om hur du använder Frågeredigeraren i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html){target="_blank"}.
 
 **Se även**
 
-* [Dokumentation för frågetjänsten](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv){target=&quot;_blank&quot;}
-* [Video om översikt över frågetjänsten](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html){target=&quot;_blank&quot;}
+* [Dokumentation för frågetjänsten](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv){target="_blank"}
+* [Video om översikt över frågetjänsten](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html){target="_blank"}

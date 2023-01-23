@@ -1,16 +1,17 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Kom igång med data i [!DNL Journey Optimizer]
-description: Lär dig arbeta med data i [!DNL Journey Optimizer]
+title: Kom igång med data i Journey Optimizer
+description: Lär dig arbeta med data i Journey Optimizer
 feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
+keywords: data, hantering, plattform
 exl-id: 25519acb-a017-446a-992b-653d3a8a3d96
-source-git-commit: 504e93a5c21baadf6ac938a9298c1adeb2a2d878
+source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
@@ -60,7 +61,7 @@ Alla data betraktas som kundens egendom och kan bara underhållas, krypteras, di
 
 Du kan använda [!DNL Journey Optimizer]Med sin flexibilitet att hantera dina specifika krav vad gäller datalagring, arkivering eller radering:
 
-* **Extrahering/export av data**: Du kan initiera extraheringen av källdata när som helst via API:t för dataåtkomst utan straffavgifter eller tidsfördröjningar. The [API för dataåtkomst](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html){target=&quot;_blank&quot;} ger användarna ett RESTful-gränssnitt som fokuserar på att upptäcka och tillgängliggöra inkapslade datauppsättningar i [!DNL Adobe Experience Platform]. <!--In the future (on roadmap), you can use file-based destinations to export and migrate log data from Adobe Journey Optimizer. -->
+* **Extrahering/export av data**: Du kan initiera extraheringen av källdata när som helst via API:t för dataåtkomst utan straffavgifter eller tidsfördröjningar. The [API för dataåtkomst](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html){target="_blank"} ger användarna ett RESTful-gränssnitt som fokuserar på att upptäcka om inkapslade datauppsättningar är tillgängliga eller inte [!DNL Adobe Experience Platform]. <!--In the future (on roadmap), you can use file-based destinations to export and migrate log data from Adobe Journey Optimizer. -->
 
    Observera att innehåll som används i resor eller kampanjer inte kan extraheras via API- eller målmetoder som nämns ovan.
 
@@ -72,7 +73,7 @@ Du kan använda [!DNL Journey Optimizer]Med sin flexibilitet att hantera dina sp
 
 * **Rensa och arkivera**: Rensning av data och arkivering kan definieras fritt och automatiseras i [!DNL Adobe Journey Optimizer] att automatisera datalagringspolicyer. Det är möjligt att definiera olika strategier för åldersfördelning för olika datatabeller. Exportmekanismer kan också definieras för att automatiskt exportera åldersfördelningsdata innan de rensas eller arkiveras.
 
-   Med arbetsytan Datahygien i Adobe Experience Platform-gränssnittet kan du skapa och övervaka olika datahygien, bland annat ta bort konsumentidentiteter och schemalägga förfallodatum för datauppsättningar. Den här arbetsytan är tillgänglig med skölden för skydd och integritet och med hälso- och sjukvårdsskölden. Läs mer i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/hygiene/ui/overview.html){target=&quot;_blank&quot;}.
+   Med arbetsytan Datahygien i Adobe Experience Platform-gränssnittet kan du skapa och övervaka olika datahygien, bland annat ta bort konsumentidentiteter och schemalägga förfallodatum för datauppsättningar. Den här arbetsytan är tillgänglig med skölden för skydd och integritet och med hälso- och sjukvårdsskölden. Läs mer i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/hygiene/ui/overview.html){target="_blank"}.
 
 <!--
 * **Data Lake and Deletions**: Customer Data stored in the Data Lake can be retained by Journey Optimizer:

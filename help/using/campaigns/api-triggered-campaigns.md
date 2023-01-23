@@ -2,11 +2,15 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Utlösa kampanjer med API:er
-description: Lär dig hur du aktiverar kampanjer med [!DNL Journey Optimizer] API:er
+description: Lär dig hur du aktiverar kampanjer med Journey Optimizer API:er
+topic: Content Management
+role: Developer, Admin
+level: Intermediate, Experienced
+keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: 2160d52f24af50417cdcf8c6ec553b746a544c2f
+source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---

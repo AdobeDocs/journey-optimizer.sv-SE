@@ -2,15 +2,16 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Granska och aktivera en kampanj
-description: Lär dig hur du granskar och aktiverar kampanjer i [!DNL Journey Optimizer]
+description: Lär dig hur du granskar och aktiverar kampanjer i Journey Optimizer
 feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
+keywords: kampanj, granskning, validering, aktivering, aktivering, optimering
 exl-id: 7c4afc98-0d79-4e26-90f8-558bac037169
-source-git-commit: fa5a3cc25fa083754e00dbde7743e032c065f210
+source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '243'
 ht-degree: 3%
 
 ---

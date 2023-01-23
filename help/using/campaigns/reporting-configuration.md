@@ -7,12 +7,13 @@ feature: Data Sources
 topic: Administration
 role: Admin
 level: Intermediate
+keywords: konfiguration, experiment, rapportering, optimering
 hide: true
 hidefromtoc: true
 exl-id: 327a0c45-0805-4f64-9bab-02d67276eff8
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '696'
 ht-degree: 2%
 
 ---
@@ -46,11 +47,11 @@ För den här konfigurationen måste du lägga till en eller flera datauppsättn
 ## Förutsättningar
 
 
-Innan du kan lägga till en datauppsättning i rapportkonfigurationen måste du skapa den datauppsättningen. Läs mer i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en#create){target=&quot;_blank&quot;}.
+Innan du kan lägga till en datauppsättning i rapportkonfigurationen måste du skapa den datauppsättningen. Läs mer i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en#create){target="_blank"}.
 
 * Du kan bara lägga till datamängder av händelsetyp.
 
-* Dessa datauppsättningar måste innehålla minst ett av följande [fältgrupper](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target=&quot;_blank&quot;}: **Programinformation**, **Handelsinformation**, **Webbinformation**.
+* Dessa datauppsättningar måste innehålla minst ett av följande [fältgrupper](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"}: **Programinformation**, **Handelsinformation**, **Webbinformation**.
 
    >[!NOTE]
    >
@@ -66,7 +67,7 @@ Innan du kan lägga till en datauppsättning i rapportkonfigurationen måste du 
 
 >[!NOTE]
 >
->Läs mer om XDM-scheman och fältgrupper i [Översikt över XDM-systemet - dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target=&quot;_blank&quot;}.
+>Läs mer om XDM-scheman och fältgrupper i [Översikt över XDM-systemet - dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}.
 
 ## Mål som motsvarar varje fältgrupp {#objective-list}
 
@@ -98,11 +99,11 @@ Tabellen nedan visar vilka mätvärden som kommer att läggas till i **[!UICONTR
 
    >[!CAUTION]
    >
-   >Du kan bara välja en datamängd av händelsetyp, som måste innehålla minst en av de data som stöds [fältgrupper](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target=&quot;_blank&quot;}: **Programinformation**, **Handelsinformation**, **Webbinformation**. Om du väljer en datauppsättning som inte matchar dessa villkor, kommer du inte att kunna spara ändringarna.
+   >Du kan bara välja en datamängd av händelsetyp, som måste innehålla minst en av de data som stöds [fältgrupper](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"}: **Programinformation**, **Handelsinformation**, **Webbinformation**. Om du väljer en datauppsättning som inte matchar dessa villkor, kommer du inte att kunna spara ändringarna.
 
    ![](assets/reporting-config-datasets.png)
 
-   Läs mer om datauppsättningar i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target=&quot;_blank&quot;}.
+   Läs mer om datauppsättningar i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"}.
 
 1. Från **[!UICONTROL Profile ID]** väljer du det datamängdsfältsattribut som ska användas för att identifiera varje profil i dina rapporter.
 
@@ -116,7 +117,7 @@ Tabellen nedan visar vilka mätvärden som kommer att läggas till i **[!UICONTR
 
    ![](assets/reporting-config-namespace.png)
 
-   Läs mer om namnutrymmen i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html){target=&quot;_blank&quot;}.
+   Läs mer om namnutrymmen i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html){target="_blank"}.
 
 1. Spara ändringarna och lägg till den valda datauppsättningen i rapportkonfigurationslistan.
 

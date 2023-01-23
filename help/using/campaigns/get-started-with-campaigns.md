@@ -2,15 +2,16 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Kom igång med kampanjer
-description: Läs mer om kampanjer i [!DNL Journey Optimizer]
+description: Läs mer om kampanjer i Journey Optimizer
 feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
+keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '389'
 ht-degree: 3%
 
 ---
@@ -41,13 +42,13 @@ Kontrollera följande innan du börjar skapa din första kampanj i Journey Optim
 
 1. **Du behöver rätt behörigheter**. Kampanjer är bara tillgängliga för användare med tillgång till en kampanjrelaterad **[!UICONTROL Product profile]** som Campaign-administratör, Campaign-godkännare, Campaign-chef och/eller Campaign-visningsprogram.
 
-   Om du inte kan komma åt kampanjer måste din behörighet utökas. Om du har åtkomst till [Adobe Admin Console](https://adminconsole.adobe.com/){target=&quot;_blank&quot;} för din organisation, följ stegen nedan. Om inte, kontakta Journey Optimizer-administratören.
+   Om du inte kan komma åt kampanjer måste din behörighet utökas. Om du har åtkomst till [Adobe Admin Console](https://adminconsole.adobe.com/){target="_blank"} för din organisation, följ stegen nedan. Om inte, kontakta Journey Optimizer-administratören.
 
    +++Lär dig hur du tilldelar kampanjbehörigheter
 
    Tilldela motsvarande **[!UICONTROL Product profile]** till användarna:
 
-   1. Från [Adobe Admin Console](https://adminconsole.adobe.com/){target=&quot;_blank&quot;} väljer du [!DNL Adobe Experience Platform] produkt.
+   1. Från [Adobe Admin Console](https://adminconsole.adobe.com/){target="_blank"}väljer du [!DNL Adobe Experience Platform] produkt.
 
    1. Bläddra till **[!UICONTROL Product profile]** väljer du en av de inbyggda kampanjrelaterade **[!UICONTROL Product profile]**: Kampanjadministratör, Kampanjgodkännare, Kampanjhanterare eller Kampanjvisningsprogram.
 

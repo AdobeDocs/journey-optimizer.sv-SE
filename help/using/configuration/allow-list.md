@@ -7,10 +7,11 @@ feature: Deliverability
 topic: Content Management
 role: User
 level: Intermediate
+keywords: tillåtelselista, lista, säker, konfiguration
 exl-id: 70ab8f57-c132-4de1-847b-11f0ab14f422
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '991'
 ht-degree: 2%
 
 ---
@@ -141,7 +142,7 @@ Följ stegen nedan för att göra detta.
 
    >[!NOTE]
    >
-   >Alla ASCII-tecken mellan 32 och 126 tillåts i **[!UICONTROL Reason]** fält. Den fullständiga listan finns på [den här sidan](https://en.wikipedia.org/wiki/Wikipedia:ASCII#ASCII_printable_characters){target=&quot;_blank&quot;} till exempel.
+   >Alla ASCII-tecken mellan 32 och 126 tillåts i **[!UICONTROL Reason]** fält. Den fullständiga listan finns på [den här sidan](https://en.wikipedia.org/wiki/Wikipedia:ASCII#ASCII_printable_characters){target="_blank"} till exempel.
 
 1. Klicka på **[!UICONTROL Submit]**.
 
@@ -153,7 +154,7 @@ Om du vill fylla tillåtelselista kan du även anropa API:t för inaktivering me
 
 Du kan utföra **Lägg till**, **Ta bort** och **Hämta** åtgärder.
 
-Läs mer om hur du gör API-anrop i [Adobe Experience Platform API:er](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-guide.html)Referensdokumentation för {target=&quot;_blank&quot;}.
+Läs mer om hur du gör API-anrop i [Adobe Experience Platform API:er](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-guide.html){target="_blank"} referensdokumentation.
 
 ## Tillåtelselista logik {#logic}
 
@@ -180,7 +181,7 @@ När tillåtelselista är [inaktiverad](#deactivate-allow-list), skickas alla e-
 
 ## Uteslutningsrapportering {#reporting}
 
-När tillåtelselista är aktivt kan du hämta e-postadresser eller domäner som har uteslutits från en sändning eftersom de inte fanns på tillåtelselista. Om du vill göra det kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target=&quot;_blank&quot;} för att göra API-anrop nedan.
+När tillåtelselista är aktivt kan du hämta e-postadresser eller domäner som har uteslutits från en sändning eftersom de inte fanns på tillåtelselista. Om du vill göra det kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} för att göra API-anrop nedan.
 
 För att få **antal e-postmeddelanden** som inte skickades eftersom mottagarna inte var i tillåtelselista använder du följande fråga:
 

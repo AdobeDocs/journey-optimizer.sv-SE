@@ -7,10 +7,11 @@ feature: Application Settings
 topic: Administration
 role: Admin
 level: Intermediate
+keywords: IP, pooler, grupp, underdomäner, leveransbarhet
 exl-id: 606334c3-e3e6-41c1-a10e-63508a3ed747
-source-git-commit: 3a932747de33ced59d68835a96386b7ac560e4fe
+source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---

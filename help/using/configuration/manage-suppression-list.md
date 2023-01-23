@@ -7,10 +7,11 @@ feature: Application Settings
 topic: Administration
 role: Admin
 level: Intermediate
+keywords: dämpning, lista, studsa, e-post, optimering
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-source-git-commit: 0c5a4291cdd46572faf2ab10c1c06987e4073b54
+source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1240'
 ht-degree: 1%
 
 ---
@@ -195,7 +196,7 @@ Om du vill göra det väljer du **[!UICONTROL Add email or domain]** och däreft
 
    >[!NOTE]
    >
-   >Alla ASCII-tecken mellan 32 och 126 tillåts i **[!UICONTROL Reason]** fält. Den fullständiga listan finns på [den här sidan](https://en.wikipedia.org/wiki/Wikipedia:ASCII#ASCII_printable_characters){target=&quot;_blank&quot;} till exempel.
+   >Alla ASCII-tecken mellan 32 och 126 tillåts i **[!UICONTROL Reason]** fält. Den fullständiga listan finns på [den här sidan](https://en.wikipedia.org/wiki/Wikipedia:ASCII#ASCII_printable_characters){target="_blank"} till exempel.
 
 1. Klicka på **[!UICONTROL Submit]**.
 
@@ -228,7 +229,7 @@ Om du vill göra det väljer du **[!UICONTROL Add email or domain]** och däreft
 
    >[!NOTE]
    >
-   >Alla ASCII-tecken mellan 32 och 126 tillåts i **Kommentar** kolumn. Den fullständiga listan finns på [den här sidan](https://en.wikipedia.org/wiki/Wikipedia:ASCII#ASCII_printable_characters){target=&quot;_blank&quot;} till exempel.
+   >Alla ASCII-tecken mellan 32 och 126 tillåts i **Kommentar** kolumn. Den fullständiga listan finns på [den här sidan](https://en.wikipedia.org/wiki/Wikipedia:ASCII#ASCII_printable_characters){target="_blank"} till exempel.
 
 1. När du är klar drar och släpper du CSV-filen och klickar sedan på **[!UICONTROL Submit]**.
 
