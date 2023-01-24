@@ -4,12 +4,13 @@ product: journey optimizer
 title: Resans egenskaper
 description: Läs om reseegenskaper
 feature: Journeys
-role: Data Engineer
+role: Data Engineer, Architect
 level: Experienced
+keywords: resa, uttryck, redigerare, egenskaper
 exl-id: eb1ab0ed-90bd-4613-b63d-b28693947db2
-source-git-commit: d17e64e03d093a8a459caef2fb0197a5710dfb7d
+source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '590'
 ht-degree: 1%
 
 ---

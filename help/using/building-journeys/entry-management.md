@@ -6,10 +6,11 @@ description: Lär dig hantera profilpost
 feature: Journeys
 role: User
 level: Intermediate
+keywords: återinträde, resa, profil, återkommande
 exl-id: 8874377c-6594-4a5a-9197-ba5b28258c02
-source-git-commit: 8d56e3060e78422b028ced17f415497789908ff9
+source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet f�
 
 ![](assets/journey-re-entrance.png)
 
-När en resa avslutas är dess status **[!UICONTROL Closed]**. Nya individer kan inte längre ta sig in på resan. Personer som redan är på resan slutför resan normalt.
+När en resa avslutas är dess status **[!UICONTROL Closed]**. Nya individer kan inte längre komma in på resan. Personer som redan är på resan slutför resan normalt.
 
 Efter den globala standardtidsgränsen på 30 dagar ändras resan till **Slutförd** status.  [Läs mer](journey-gs.md#global_timeout).
 

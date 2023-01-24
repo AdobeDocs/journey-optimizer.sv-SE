@@ -7,10 +7,11 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
+keywords: kvalificering, evenemang, segment, resa, plattform
 exl-id: 7e70b8a9-7fac-4450-ad9c-597fe0496df9
-source-git-commit: dd65c4155320c818f97400548c0f9d4d6d4e2507
+source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '889'
 ht-degree: 1%
 
 ---
@@ -63,7 +64,7 @@ Den här typen av händelse kan placeras som det första steget eller senare und
 
    >[!NOTE]
    >
-   >Observera att **[!UICONTROL Enter]** och **[!UICONTROL Exit]** motsvarar **Realiserad** och **Avslutade** segmentdeltagarstatus från Adobe Experience Platform. Mer information om hur du utvärderar ett segment finns i [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target=&quot;_blank&quot;}.
+   >Observera att **[!UICONTROL Enter]** och **[!UICONTROL Exit]** motsvarar **Realiserad** och **Avslutade** segmentdeltagarstatus från Adobe Experience Platform. Mer information om hur du utvärderar ett segment finns i [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
 
 1. Välj ett namnutrymme. Detta behövs bara om händelsen är placerad som det första steget i resan.
 
@@ -113,7 +114,7 @@ Använd inte **[!UICONTROL Segment Qualification]** -aktiviteten, ett batchsegme
 
 ![](assets/segment-error.png)
 
-Införa en begränsning för datakällor och åtgärder som används under resor för att undvika att överbelasta dem. Läs mer i [Journey Orchestration dokumentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html){target=&quot;_blank&quot;}. Observera att begränsningsregeln inte har några nya försök. Om du vill försöka igen måste du markera kryssrutan för att använda en alternativ sökväg under resan **[!UICONTROL Add an alternative path in case of a timeout or an error]** i villkor eller åtgärder.
+Införa en begränsning för datakällor och åtgärder som används under resor för att undvika att överbelasta dem. Läs mer i [Journey Orchestration dokumentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html){target="_blank"}. Observera att begränsningsregeln inte har några nya försök. Om du vill försöka igen måste du markera kryssrutan för att använda en alternativ sökväg under resan **[!UICONTROL Add an alternative path in case of a timeout or an error]** i villkor eller åtgärder.
 
 Innan du använder segmentet i en produktionsresa ska du alltid först utvärdera antalet individer som kvalificerar sig för det här segmentet varje dag. Om du vill göra det kan du kontrollera **[!UICONTROL Segments]** öppnar du segmentet och tittar på **[!UICONTROL Profiles over time]** diagram.
 

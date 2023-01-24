@@ -7,10 +7,11 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
+keywords: resa, aktiviteter, komma igång, händelser, åtgärd
 exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
-source-git-commit: ca423c25d39162838368b2242c1aff99388df768
+source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '417'
 ht-degree: 16%
 
 ---

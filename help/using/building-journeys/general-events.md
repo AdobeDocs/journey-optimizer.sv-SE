@@ -7,10 +7,11 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
+keywords: skräddarsydd, allmän, evenemang, resa
 exl-id: b1813122-7031-452e-9ac5-a4ea7c6dc57c
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '431'
 ht-degree: 2%
 
 ---

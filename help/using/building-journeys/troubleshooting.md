@@ -7,11 +7,12 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
+keywords: felsökning, felsökning, resa, kontroll, fel
 exl-id: 03fbc4f4-b0a8-46d5-91f9-620685b11493
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 81%
+source-wordcount: '1012'
+ht-degree: 80%
 
 ---
 
@@ -49,7 +50,7 @@ Startpunkten för en resa är alltid en händelse. Du kan utföra tester med ver
 
 Du kan kontrollera om API-anropet som skickas via dessa verktyg skickas korrekt eller inte. Om du får tillbaka ett fel innebär det att ditt anrop har ett problem. Kontrollera nyttolasten igen, rubriken (och särskilt ditt organisations-ID) och destinationswebbadressen. Du kan fråga administratören om vilken webbadress som ska användas.
 
-Händelser skjuts inte direkt från källan till resor. Resorna är beroende av Adobe Experience Platform API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför hänvisa till [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target=&quot;_blank&quot;} för felsökning av API:er för direktuppspelning.
+Händelser skjuts inte direkt från källan till resor. Resorna är beroende av Adobe Experience Platform API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför hänvisa till [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target="_blank"} för felsökning av API:er för direktuppspelning.
 
 ## Kontrollera om personer kommer in på resan{#checking-if-people-enter-the-journey}
 

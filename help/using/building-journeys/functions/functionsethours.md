@@ -3,12 +3,13 @@ product: journey optimizer
 title: setHours
 description: Läs mer om funktionen setHours
 feature: Journeys
-role: Data Engineer
+role: Data Engineer, Architect
 level: Experienced
+keywords: setHours, function, expression, travel
 exl-id: ed78c2a9-d83a-4fac-a2e9-7383da131a1f
-source-git-commit: d17e64e03d093a8a459caef2fb0197a5710dfb7d
+source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '105'
 ht-degree: 6%
 
 ---

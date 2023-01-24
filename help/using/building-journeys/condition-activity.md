@@ -7,8 +7,9 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
+keywords: aktivitet, villkor, arbetsyta, resa
 exl-id: 496c7666-a133-4aeb-be8e-c37b3b9bf5f9
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 7%
@@ -60,7 +61,7 @@ I det enkla läget kan du utföra enkla frågor baserat på en kombination av f�
 
 ![](assets/journey64.png)
 
-Om du använder [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target=&quot;_blank&quot;} för att skapa segment kan du utnyttja dem under dina reseförhållanden. Se [Använda segment i villkor](../building-journeys/condition-activity.md#using-a-segment).
+Om du använder [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} för att skapa era segment kan ni utnyttja dem i era resevillkor. Se [Använda segment i villkor](../building-journeys/condition-activity.md#using-a-segment).
 
 
 >[!NOTE]
@@ -161,4 +162,4 @@ Följ de här stegen om du vill använda ett segment i ett resevillkor:
 
    >[!NOTE]
    >
-   >Observera att endast de personer som har **Realiserad** och **Befintlig** Deltagandestatus för segment betraktas som medlemmar i segmentet. Mer information om hur du utvärderar ett segment finns i [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target=&quot;_blank&quot;}.
+   >Observera att endast de personer som har **Realiserad** och **Befintlig** Deltagandestatus för segment betraktas som medlemmar i segmentet. Mer information om hur du utvärderar ett segment finns i [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.

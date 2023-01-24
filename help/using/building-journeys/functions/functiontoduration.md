@@ -3,12 +3,13 @@ product: journey optimizer
 title: toDuration
 description: Lär dig mer om funktionen toDuration
 feature: Journeys
-role: Data Engineer
+role: Data Engineer, Architect
 level: Experienced
+keywords: toVaraktighet, funktion, uttryck, resa
 exl-id: c78e30c5-99ee-4dc7-a03a-17f7ee65f83a
-source-git-commit: d17e64e03d093a8a459caef2fb0197a5710dfb7d
+source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '283'
 ht-degree: 2%
 
 ---

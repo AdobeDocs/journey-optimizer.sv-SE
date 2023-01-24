@@ -7,10 +7,11 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
+keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: e0ca8aef-4f1d-4631-8c34-1692d96e8b51
-source-git-commit: ca423c25d39162838368b2242c1aff99388df768
+source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '194'
 ht-degree: 7%
 
 ---

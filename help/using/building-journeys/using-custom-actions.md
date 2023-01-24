@@ -5,13 +5,14 @@ title: Använd anpassade åtgärder
 description: Lär dig hur du använder anpassade åtgärder
 feature: Actions
 topic: Content Management
-role: User
+role: User, Developer
 level: Intermediate
+keywords: åtgärd, anpassad, API, resa, konfiguration, tjänst
 exl-id: 2b1b3613-3096-43ec-a860-600dda1d83b2
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 24%
+source-wordcount: '401'
+ht-degree: 23%
 
 ---
 

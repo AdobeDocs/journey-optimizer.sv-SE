@@ -3,12 +3,13 @@ product: journey optimizer
 title: gräns
 description: Läs mer om funktionsgränsen
 feature: Journeys
-role: Data Engineer
+role: Data Engineer, Architect
 level: Experienced
+keywords: gräns, funktion, uttryck, resa
 exl-id: 7fa1e393-2912-4392-b759-e54d08d5635a
-source-git-commit: 0b19af568b33d29f4b35deeab6def17919cfe824
+source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '156'
 ht-degree: 5%
 
 ---

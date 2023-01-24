@@ -7,10 +7,11 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
+keywords: aktivitet, resa, läsning, segment, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: dd65c4155320c818f97400548c0f9d4d6d4e2507
+source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1292'
 ht-degree: 3%
 
 ---
@@ -50,7 +51,7 @@ Så här konfigurerar du Läs segment-aktiviteten:
 
    >[!NOTE]
    >
-   >Endast personer med **Realiserad** och **Befintlig** Deltagandestatus för segment kommer att gå in på resan. Mer information om hur du utvärderar ett segment finns i [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target=&quot;_blank&quot;}.
+   >Endast personer med **Realiserad** och **Befintlig** Deltagandestatus för segment kommer att gå in på resan. Mer information om hur du utvärderar ett segment finns i [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
 
    ![](assets/read-segment-selection.png)
 

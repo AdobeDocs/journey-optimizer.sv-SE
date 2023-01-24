@@ -7,10 +7,11 @@ feature: Actions
 topic: Administration
 role: Admin
 level: Intermediate
+keywords: resa, integrering, standard, kampanj, ACS
 exl-id: 50565cd9-7415-4c6a-9651-24fefeded3f5
-source-git-commit: 021cf48ab4b5ea8975135a20d5cef8846faa5991
+source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '887'
 ht-degree: 3%
 
 ---

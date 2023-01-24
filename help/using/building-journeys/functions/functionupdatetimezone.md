@@ -3,13 +3,14 @@ product: journey optimizer
 title: updateTimeZone
 description: Läs mer om funktionen updateTimeZone
 feature: Journeys
-role: Data Engineer
+role: Data Engineer, Architect
 level: Experienced
+keywords: updateTimeZone, funktion, uttryck, resa
 exl-id: 1bf4662e-55d0-4631-af93-1430ec7ed7e2
-source-git-commit: d17e64e03d093a8a459caef2fb0197a5710dfb7d
+source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 11%
+source-wordcount: '57'
+ht-degree: 10%
 
 ---
 
