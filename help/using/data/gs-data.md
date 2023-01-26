@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: data, hantering, plattform
 exl-id: 25519acb-a017-446a-992b-653d3a8a3d96
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: ef34cb0207d3011eca6d76ad6568f3edc00e13a3
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,11 @@ Den flexibilitet du vill ha från dina data är dessutom:
 <tr style="border: 0;">
   <td>
     <div><img alt="policy" src="assets/do-not-localize/policy.png" /> 
-    <br>Borttagen bas - en överenskommen tidslinje eller er policy - Dataradering är en viktig del av dataskyddet och är ett viktigt steg i alla processer för datastyrning. [!DNL Adobe Journey Optimizer] kan producera mer data än vad som krävs. Dessutom vill ni ta största möjliga hand om vad som händer efter att en datamängd har fått den varaktighet som krävs - oavsett om det beror på verktyg eller reglering. Den kontroll du behöver är att ta bort data vid en given tidpunkt. <a href="https://experienceleague.adobe.com/docs/experience-platform/hygiene/ui/overview.html">Läs mer om datahygien i Adobe Experience Platform-dokumentationen</a></div>
+    <br>Borttagen bas - en överenskommen tidslinje eller er policy - Dataradering är en viktig del av dataskyddet och är ett viktigt steg i alla processer för datastyrning. [!DNL Adobe Journey Optimizer] kan producera mer data än vad som krävs. Dessutom vill ni ta största möjliga hand om vad som händer efter att en datamängd har fått den varaktighet som krävs - oavsett om det beror på verktyg eller reglering. Den kontroll du behöver är att ta bort data vid en given tidpunkt. 
+    </div>
+      <div>
+     <a href="../privacy/data-hygiene.md">Läs mer</a></div>
+    </div>
   </td>
 </tr>
 </table>
@@ -73,7 +77,7 @@ Du kan använda [!DNL Journey Optimizer]Med sin flexibilitet att hantera dina sp
 
 * **Rensa och arkivera**: Rensning av data och arkivering kan definieras fritt och automatiseras i [!DNL Adobe Journey Optimizer] att automatisera datalagringspolicyer. Det är möjligt att definiera olika strategier för åldersfördelning för olika datatabeller. Exportmekanismer kan också definieras för att automatiskt exportera åldersfördelningsdata innan de rensas eller arkiveras.
 
-   Med arbetsytan Datahygien i Adobe Experience Platform-gränssnittet kan du skapa och övervaka olika datahygien, bland annat ta bort konsumentidentiteter och schemalägga förfallodatum för datauppsättningar. Den här arbetsytan är tillgänglig med skölden för skydd och integritet och med hälso- och sjukvårdsskölden. Läs mer i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/hygiene/ui/overview.html){target="_blank"}.
+   Med arbetsytan Datahygien kan du skapa och övervaka olika datahygien-uppgifter, som att ta bort konsumentidentiteter och schemalägga förfallodatum för datauppsättningar. Den här arbetsytan är tillgänglig med skölden för skydd och integritet och med hälso- och sjukvårdsskölden. Läs mer i [den här sidan](../privacy/data-hygiene.md).
 
 <!--
 * **Data Lake and Deletions**: Customer Data stored in the Data Lake can be retained by Journey Optimizer:
