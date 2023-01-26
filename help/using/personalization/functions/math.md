@@ -5,10 +5,10 @@ feature: Personalization
 topic: Personalization
 role: Data Engineer
 level: Experienced
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 1%
+source-wordcount: '215'
+ht-degree: 6%
 
 ---
 
@@ -20,17 +20,39 @@ Lär dig hur du använder matematiska funktioner i uttrycksredigeraren.
 
 The `absolute` -funktionen används för att konvertera ett tal som det är absolut värde för.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= absolute(int) %}: int
+```
+
+## formatNumber {#format-number}
+
+The `formatNumber` -funktionen används för att formatera valfritt tal till sin språkkänsliga representation.
+
+Den accepterar ett tal och en sträng som representerar språkområdet och returnerar en formaterad sträng med talet i det önskade språkområdet.
+
+**Syntax**
+
+```sql
+{%= formatNumber(number/double,string) %}: string
+```
+
+Du kan använda formatering och giltiga språkområden enligt sammanfattningen i [Oraclets dokumentation](https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html) och [Språk som stöds](https://www.oracle.com/java/technologies/javase/jdk11-suported-locales.html){_blank}
+
+**Exempel**
+
+Den här frågan returnerar en formaterad sträng på arabiska som motsvarar 123456.789 som indatanummer.
+
+```sql
+{%= formatNumber(123456.789, "ar_EG") %}
 ```
 
 ## Random {#random}
 
 The `random` -funktionen används för att returnera ett slumpmässigt värde mellan 0 och 1.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= random() %}: double
@@ -40,7 +62,7 @@ The `random` -funktionen används för att returnera ett slumpmässigt värde me
 
 The `roundDown` -funktionen används för att avrunda ett tal nedåt.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= roundDown(double) %}: double
@@ -50,17 +72,35 @@ The `roundDown` -funktionen används för att avrunda ett tal nedåt.
 
 The `Count only null` -funktionen används för att avrunda ett tal.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= roundUp(double) %}: double
+```
+
+## Till hexadecimal sträng {#to-hex-string}
+
+The `toHexString` funktionen konverterar alla tal till sin hexadecimala sträng.
+
+**Syntax**
+
+```sql
+{%= toHexString(number) %}: string
+```
+
+**Exempel**
+
+Den här frågan returnerar det hexadecimala värdet 158, dvs 9e.
+
+```sql
+{%= toHexString(158) %}
 ```
 
 ## Till procent {#to-percentage}
 
 The `toPercentage` används för att konvertera ett tal till ett procenttal.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= toPercentage(double) %}: string
@@ -70,8 +110,26 @@ The `toPercentage` används för att konvertera ett tal till ett procenttal.
 
 The `toPrecision` -funktionen används för att konvertera ett tal till önskad precision.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= toPrecision(double,int) %}: string
+```
+
+## Till sträng {#to-string}
+
+The **toString** funktionen konverterar alla tal till sin strängbeteckning.
+
+**Syntax**
+
+```sql
+{%= toString(string) %}: string
+```
+
+**Exempel**
+
+Frågan returnerar &quot;12&quot;.
+
+```sql
+{%= toString(12) %} 
 ```

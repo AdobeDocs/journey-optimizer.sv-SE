@@ -6,10 +6,10 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: edc040de-dfb3-4ebc-91b4-239e10c2260b
-source-git-commit: f06e1e03b3660be36b32437647a8329d0c0d296e
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ Datum- och tidsfunktioner används för att utföra datum- och tidsåtgärder p�
 
 The `age` används för att hämta åldern från ett visst datum.
 
-**Format**
+**Syntax**
 
 ```sql
  {%= age(datetime) %}
@@ -41,7 +41,7 @@ The following operation gets the value of the identity map for the key `example@
 
 The `currentTimeInMillis` används för att hämta aktuell tid i epok millisekunder.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= currentTimeInMillis() %}
@@ -61,7 +61,7 @@ The following operation gets all the keys for the map `identityMap`.
 
 The `dateDiff` -funktionen används för att hämta skillnaden mellan två datum i antal dagar.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= dateDiff(datetime,datetime) %}
@@ -82,7 +82,7 @@ The following operation gets all the values for the map `identityMap`.
 
 The `dayOfWeek` används för att hämta veckodag.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= dayOfWeek(datetime) %}
@@ -102,7 +102,7 @@ The following operation gets all the values for the map `identityMap`.
 
 The `dayOfYear` -funktionen används för att hämta dagen på året.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= dayOfYear(datetime) %}
@@ -122,7 +122,7 @@ The following operation gets all the values for the map `identityMap`.
 
 The `formatDate` -funktionen används för att formatera ett datum/tid-värde. Formatet ska vara ett giltigt Java DateTimeFormat-mönster.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= formatDate(datetime, format) %}
@@ -134,7 +134,7 @@ Där den första strängen är datumattributet och det andra värdet är hur du 
 >
 > Om ett datummönster är ogiltigt återgår datumet till ISO-standardformat.
 >
-> Du kan använda Java-datumformateringsfunktioner som sammanfattningar [i Oraclets dokumentation](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html){_blank}
+> Du kan använda Java-datumformateringsfunktioner enligt sammanfattningen i [Oraclets dokumentation](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html){_blank}
 
 **Exempel**
 
@@ -148,7 +148,7 @@ Följande åtgärd returnerar datumet i följande format: MM/DD/YY.
 
 The `setDays` -funktionen används för att ange dag i månaden för angivet datum/tid.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= setDays(datetime, day) %}
@@ -168,7 +168,7 @@ The following operation gets all the values for the map `identityMap`.
 
 The `setHours` -funktionen används för att ställa in timmen för datum-tid.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= setHours(datetime, hour) %}
@@ -190,7 +190,7 @@ The following operation gets all the values for the map `identityMap`.
 The `toUTC` används för att konvertera en datetime till UTC.
 
 
-**Format**
+**Syntax**
 
 ```sql
 {%= toUTC(datetime) %}
@@ -211,7 +211,7 @@ The following operation gets all the values for the map `identityMap`.
 
 The `weekOfYear` används för att hämta årets vecka.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= weekOfYear(datetime) %}

@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
-source-wordcount: '1394'
+source-wordcount: '1436'
 ht-degree: 1%
 
 ---
@@ -68,6 +68,14 @@ Du kan inte fortsätta skapa en yta medan den valda IP-poolen är under [utgåva
 >[!NOTE]
 >
 >I icke-produktionsmiljöer skapar inte Adobe körklara testunderdomäner och ger inte heller åtkomst till en delad sändande IP-pool. Du måste [delegera dina egna underdomäner](../configuration/delegate-subdomain.md) och använd IP-adresserna från poolen som tilldelats din organisation.
+
+När en IP-pool har valts visas PTR-information när du hovrar över IP-adresserna som visas under listrutan IP-pool. [Läs mer om PTR-poster](../configuration/ptr-records.md)
+
+![](assets/email-surface-ptr-record.png)
+
+>[!NOTE]
+>
+>Om en PTR-post inte är konfigurerad kan du kontakta din Adobe-representant.
 
 ## List-Unsubscribe {#list-unsubscribe}
 

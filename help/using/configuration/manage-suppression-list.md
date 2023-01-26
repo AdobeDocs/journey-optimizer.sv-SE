@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: dämpning, lista, studsa, e-post, optimering
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1293'
 ht-degree: 1%
 
 ---
@@ -247,11 +247,17 @@ Om du vill göra det går du till **[!UICONTROL Suppression list]** visa klickar
 
 ![](assets/suppression-list-recent-uploads-button.png)
 
-De senaste överföringarna du skickade och deras motsvarande status visas.
+De senaste överföringarna du skickade och deras motsvarande status visas:
 
-Om en felrapport är kopplad till en fil kan du hämta den för att kontrollera de fel som påträffas.
+* **[!UICONTROL Pending]**: Filöverföringen bearbetas.
+* **[!UICONTROL Error]**: Filöverföringen misslyckades på grund av ett tekniskt fel eller ett filformatsfel.
+* **[!UICONTROL Complete]**: Filöverföringen har slutförts.
 
-![](assets/suppression-list-recent-uploads-error.png)
+Om vissa adresser inte har rätt format läggs de inte till i [!DNL Journey Optimizer] lista över inaktiveringar.
+
+När överföringen är klar kopplas den då till en rapport. Du kan ladda ned den för att kontrollera de fel som påträffats<!-- and understand why they were not added to the suppression list-->.
+
+![](assets/suppression-list-recent-uploads-report.png)
 
 Nedan visas ett exempel på den typ av poster som du kan hitta i felrapporten:
 

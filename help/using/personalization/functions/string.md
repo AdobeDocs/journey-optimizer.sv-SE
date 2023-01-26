@@ -6,10 +6,10 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 8674ef9e-261b-49d9-800e-367f9f7ef979
-source-git-commit: 1d9fc184bb67362aac608e9816fe3afe64eb055c
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
-source-wordcount: '1685'
-ht-degree: 3%
+source-wordcount: '1809'
+ht-degree: 5%
 
 ---
 
@@ -21,7 +21,7 @@ Lär dig hur du använder strängfunktioner i uttrycksredigeraren.
 
 The `camelCase` funktionen ändrar den första bokstaven i varje ord i en sträng till versal.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= camelCase(string)%}
@@ -35,11 +35,29 @@ Med följande funktion infogas den första bokstaven i ordet i profilens gatuadr
 {%= camelCase(profile.homeAddress.street) %}
 ```
 
+## Teckenkod på {#char-code-at}
+
+The `charCodeAt` funktionen returnerar ASCII-värdet för ett tecken, som funktionen charCodeAt i JavaScript. Den tar en sträng och ett heltal (som definierar positionen för tecknet) som indataargument och returnerar motsvarande ASCII-värde.
+
+**Syntax**
+
+```sql
+{%= charCodeAt(string,int) %}: int
+```
+
+**Exempel**
+
+Följande funktion returnerar ASCII-värdet för o, d.v.s. 111.
+
+```sql
+{%= charCodeAt("some", 1)%}
+```
+
 ## Concat {#concate}
 
 The `concat` funktionen kombinerar två strängar till en.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= concat(string,string) %}
@@ -57,7 +75,7 @@ Följande funktion kombinerar profilens ort och land i en enda sträng.
 
 The `contains` -funktionen används för att avgöra om en sträng innehåller en angiven delsträng.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= contains(STRING_1, STRING_2, CASE_SENSITIVE) %}
@@ -87,7 +105,7 @@ The `contains` -funktionen används för att avgöra om en sträng innehåller e
 
 The `doesNotContain` -funktionen används för att avgöra om en sträng inte innehåller en angiven delsträng.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= doesNotContain(STRING_1, STRING_2, CASE_SENSITIVE)%}
@@ -112,7 +130,7 @@ Följande fråga avgör, med skiftlägeskänslighet, om personens e-postadress i
 
 The `doesNotEndWith` -funktionen används för att avgöra om en sträng inte avslutas med en angiven delsträng.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= doesNotEndWith(STRING_1, STRING_2, CASE_SENSITIVE)%}
@@ -136,7 +154,7 @@ doesNotEndWith(person.emailAddress,".com")
 
 The `doesNotStartWith` -funktionen används för att avgöra om en sträng inte börjar med en angiven delsträng.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= doesNotStartWith(STRING_1, STRING_2, CASE_SENSITIVE)%}
@@ -160,7 +178,7 @@ Följande fråga avgör, med skiftlägeskänslighet, om personens namn inte bör
 
 The `encode64` -funktionen används för att koda en sträng för att bevara personlig information (PI) om den ska inkluderas t.ex. i en URL.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= encode64(string) %}
@@ -170,7 +188,7 @@ The `encode64` -funktionen används för att koda en sträng för att bevara per
 
 The `endsWith` används för att avgöra om en sträng avslutas med en angiven delsträng.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= endsWith(STRING_1, STRING_2, CASE_SENSITIVE) %}
@@ -195,7 +213,7 @@ Följande fråga avgör, med skiftlägeskänslighet, om personens e-postadress s
 
 The `equals` -funktionen används för att avgöra om en sträng är lika med den angivna strängen, med skiftlägeskänslighet.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= equals(STRING_1, STRING_2) %}
@@ -218,7 +236,7 @@ Följande fråga avgör, med skiftlägeskänslighet, om personens namn är &quot
 
 The `equalsIgnoreCase` används för att avgöra om en sträng är lika med den angivna strängen, utan skiftlägeskänslighet.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= equalsIgnoreCase(STRING_1, STRING_2) %}
@@ -241,7 +259,7 @@ Följande fråga avgör, utan skiftlägeskänslighet, om personens namn är &quo
 
 The `extractEmailDomain` används för att extrahera domänen för en e-postadress.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= extractEmailDomain(string) %}
@@ -255,11 +273,29 @@ Följande fråga extraherar e-postdomänen för den personliga e-postadressen.
 {%= extractEmailDomain(profile.personalEmail.address) %}
 ```
 
+## Formatera valuta {#format-currency}
+
+The `formatCurrency` används för att konvertera ett tal till motsvarande språkkänsliga valutarepresentation beroende på vilket språk som skickas som en sträng i det andra argumentet.
+
+**Syntax**
+
+```sql
+{%= formatCurrency(number/double,string) %}: string
+```
+
+**Exempel**
+
+Frågan returnerar 56,00 GBP
+
+```sql
+{%= formatCurrency(56L,"en_GB") %}
+```
+
 ## Hämta URL-värd {#get-url-host}
 
 The `getUrlHost` används för att hämta värdnamnet för en URL.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= getUrlHost(string) %}: string
@@ -277,7 +313,7 @@ Returnerar &quot;www.myurl.com&quot;
 
 The `getUrlPath` används för att hämta sökvägen efter domännamnet för en URL.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= getUrlPath(string) %}: string
@@ -295,7 +331,7 @@ Returnerar &quot;/contact.html&quot;
 
 The `getUrlProtocol` -funktionen används för att hämta protokollet för en URL.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= getUrlProtocol(string) %}: string
@@ -313,7 +349,7 @@ Returnerar &quot;http&quot;
 
 The `indexOf` -funktionen används för att returnera positionen (i det första argumentet) för den första förekomsten av den andra parametern. Returnerar -1 om det inte finns någon matchning.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= indexOf(STRING_1, STRING_2) %}: integer
@@ -336,7 +372,7 @@ Returnerar 6.
 
 The `isEmpty` -funktionen används för att avgöra om en sträng är tom.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= isEmpty(string) %}
@@ -354,7 +390,7 @@ Följande funktion returnerar &#39;true&#39; om profilens mobiltelefonnummer är
 
 The `isNotEmpty` -funktionen används för att avgöra om en sträng inte är tom.
 
-**Format**
+**Syntax**
 
 ```sql
 {= isNotEmpty(string) %}: boolean
@@ -372,7 +408,7 @@ Följande funktion returnerar &#39;true&#39; om profilens mobiltelefonnummer int
 
 The `lastIndexOf` -funktionen används för att returnera positionen (i det första argumentet) för den sista förekomsten av den andra parametern. Returnerar -1 om det inte finns någon matchning.
 
-**Format**
+**Syntax**
 
 ```sql
 {= lastIndexOf(STRING_1, STRING_2) %}: integer
@@ -395,7 +431,7 @@ Returnerar 7.
 
 The `leftTrim` används för att ta bort blanksteg från början av en sträng.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= leftTrim(string) %}
@@ -405,7 +441,7 @@ The `leftTrim` används för att ta bort blanksteg från början av en sträng.
 
 The `length` används för att hämta antalet tecken i en sträng eller ett uttryck.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= length(string) %}
@@ -423,7 +459,7 @@ Följande funktion returnerar längden på profilens stadsnamn.
 
 The `like` används för att avgöra om en sträng matchar ett angivet mönster.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= like(STRING_1, STRING_2) %}
@@ -464,7 +500,7 @@ Den här funktionen konverterar profilens förnamn till gemener.
 
 The `matches` används för att avgöra om en sträng matchar ett visst reguljärt uttryck. Se [det här dokumentet](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html) för mer information om att matcha mönster i reguljära uttryck.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= matches(STRING_1, STRING_2) %}
@@ -482,7 +518,7 @@ Följande fråga avgör, utan skiftlägeskänslighet, om personens namn börjar 
 
 The `Mask` används för att ersätta en del av en sträng med &quot;X&quot;-tecken.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= mask(string,integer,integer) %}
@@ -502,7 +538,7 @@ Frågan returnerar `1XXXXXX89`.
 
 The `md5` -funktionen används för att beräkna och returnera md5-hash för en sträng.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= md5(string) %}: string
@@ -520,7 +556,7 @@ Returnerar &quot;5eb63bbbe01eed093cb22bb8f5acdc3&quot;
 
 The `notEqualTo` -funktionen används för att avgöra om en sträng inte är lika med den angivna strängen.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= notEqualTo(STRING_1, STRING_2) %}
@@ -543,7 +579,7 @@ Följande fråga avgör, med skiftlägeskänslighet, om personens namn inte är&
 
 The `notEqualWithIgnoreCase` används för att jämföra två strängar utan skiftläge.
 
-**Format**
+**Syntax**
 
 ```sql
 {= notEqualWithIgnoreCase(STRING_1,STRING_2) %}: boolean
@@ -566,7 +602,7 @@ Följande fråga avgör om personens namn inte är &quot;john&quot;, utan skiftl
 
 The `Group` -funktionen används för att extrahera specifik information baserat på det reguljära uttrycket.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= regexGroup(STRING, EXPRESSION, GROUP) %}
@@ -590,7 +626,7 @@ Följande fråga används för att extrahera domännamnet från en e-postadress.
 
 The `replace` -funktionen används för att ersätta en viss delsträng i en sträng med en annan delsträng.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= replace(STRING_1,STRING_2,STRING_3) %}:string
@@ -614,7 +650,7 @@ Returnerar&quot;Hello Mark, här kommer ditt månatliga nyhetsbrev!&quot;
 
 The `replaceAll` används för att ersätta alla delsträngar i en text som matchar&quot;target&quot; med den angivna strängen&quot;teckenersättning&quot;. Ersättningen fortsätter från början av strängen till slutet, t.ex. om&quot;a&quot; ersätts med&quot;b&quot; i strängen&quot;aaa&quot; resulterar det i&quot;ba&quot; i stället för&quot;ab&quot;.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= replaceAll(string,string,string) %}
@@ -624,7 +660,7 @@ The `replaceAll` används för att ersätta alla delsträngar i en text som matc
 
 The `rightTrim` funktionen används för att ta bort blanksteg från slutet av en sträng.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= rightTrim(string) %}
@@ -634,7 +670,7 @@ The `rightTrim` funktionen används för att ta bort blanksteg från slutet av e
 
 The `split` används för att dela en sträng med ett visst tecken.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= split(string,string) %}
@@ -644,7 +680,7 @@ The `split` används för att dela en sträng med ett visst tecken.
 
 The `startsWith` -funktionen används för att avgöra om en sträng börjar med en angiven delsträng.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= startsWith(STRING_1, STRING_2, CASE_SENSITIVE) %}
@@ -664,11 +700,27 @@ Följande fråga avgör, med skiftlägeskänslighet, om personens namn börjar m
 {%= startsWith(person.name,"Joe") %}
 ```
 
+## Sträng till datum {#string-to-date}
+
+Funktionen &quot;stringToDate&quot; konverterar ett strängvärde till ett datum/tid-värde. Det finns två argument: strängrepresentation av ett datum- och tidsbeteckning samt strängbeteckning för formateringen.
+
+**Syntax**
+
+```sql
+{= stringToDate("date-time value","formatter" %}
+```
+
+**Exempel**
+
+```sql
+{= stringToDate("2023-01-10 23:13:26", "yyyy-MM-dd HH:mm:ss") %}
+```
+
 ## Sträng till heltal {#string-to-integer}
 
 The `string_to_integer` används för att konvertera ett strängvärde till ett heltalsvärde.
 
-**Format**
+**Syntax**
 
 ```sql
 {= string_to_integer(string) %}: int
@@ -678,7 +730,7 @@ The `string_to_integer` används för att konvertera ett strängvärde till ett 
 
 The `stringToNumber` används för att konvertera en sträng till tal. Den returnerar samma sträng som utdata för ogiltiga indata.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= stringToNumber(string) %}: double
@@ -687,7 +739,7 @@ The `stringToNumber` används för att konvertera en sträng till tal. Den retur
 ## Delsträng {#sub-string}
 
 The `Count string` -funktionen används för att returnera delsträngen för stränguttrycket mellan startindexet och slutindexet.
-**Format**
+**Syntax**
 
 ```sql
 {= substr(string, integer, integer) %}: string
@@ -715,7 +767,7 @@ Om personen bor i Washington High Street, returnerar den här funktionen Washing
 
 The `toBool` -funktionen används för att konvertera ett argumentvärde till ett booleskt värde, beroende på dess typ.
 
-**Format**
+**Syntax**
 
 ```sql
 {= toBool(string) %}: boolean
@@ -725,7 +777,7 @@ The `toBool` -funktionen används för att konvertera ett argumentvärde till et
 
 The `toDateTime` -funktionen används för att konvertera strängen till ett datum. Det returnerar epokdatumet som utdata för ogiltiga indata.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= toDateTime(string, string) %}: date-time
@@ -733,15 +785,15 @@ The `toDateTime` -funktionen används för att konvertera strängen till ett dat
 
 ## Endast till datum och tid {#to-date-time-only}
 
-The `toDateTimeOnly` -funktionen används för att konvertera ett argumentvärde till ett värde för endast datum och tid. Det returnerar epokdatumet som utdata för ogiltiga indata.
+The `toDateTimeOnly` -funktionen används för att konvertera ett argumentvärde till ett värde som bara gäller för datum och tid. Det returnerar epokdatumet som utdata för ogiltiga indata. Den här funktionen accepterar fälttyperna string, date, long och int.
 
-**Format**
+**Syntax**
 
 ```sql
-{%= toDateTimeOnly(string) %}: date-time
+{%= toDateTimeOnly(string/date/long/int) %}: date-time
 ```
 
-## Rensa{#trim}
+## Rensa {#trim}
 
 The **trimma** funktionen tar bort alla blanksteg från början och slutet av en sträng.
 
@@ -769,11 +821,11 @@ Den här funktionen konverterar profilens efternamn till versaler.
 {%= upperCase(profile.person.name.lastName) %}
 ```
 
-## url-avkodning {#url-decode}
+## URL-avkodning {#url-decode}
 
 The `urlDecode` används för att avkoda en URL-kodad sträng.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= urlDecode(string) %}: string
@@ -783,7 +835,7 @@ The `urlDecode` används för att avkoda en URL-kodad sträng.
 
 The `Count only null` -funktionen används för att URL-koda en sträng.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= urlEncode(string) %}: string

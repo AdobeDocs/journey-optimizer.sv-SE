@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
-source-git-commit: 075a90130696877d5dea39b7bfe4e85b2aac4791
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1805'
 ht-degree: 1%
 
 ---
@@ -146,7 +146,10 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
 
 <table>
     <tr>
-        <td><a href="math.md#absolute">Absolut</a></td><td>Den här funktionen konverterar ett tal till dess absoluta värde</td>
+        <td><a href="math.md#absolute">Absolut</a></td><td>Den här funktionen formaterar alla tal i sin språkkänsliga representation.</td>
+    </tr>
+    <tr>
+        <td><a href="math.md#format-number">Formatnummer</a></td><td>Den här funktionen formaterar alla tal i sin språkkänsliga representation.</td>
     </tr>
     <tr>
         <td><a href="math.md#random">Random</a></td><td>Den här funktionen returnerar ett slumpvärde mellan 0 och 1</td>
@@ -158,10 +161,16 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
         <td><a href="math.md#round-up">Avrunda uppåt</a></td><td>Den här funktionen avrundar ett tal</td>
     </tr>
     <tr>
+    <td><a href="math.md#to-hex-string">Till hexadecimal sträng</a></td><td>konverterar alla tal till sin hexadecimala sträng.</td>
+    </tr>
+    <tr>
         <td><a href="math.md#to-percentage">Till procent</a></td><td>Den här funktionen konverterar ett tal till procent</td>
     </tr>
     <tr>
         <td><a href="math.md#to-precision">Till precision</a></td><td>Den här funktionen konverterar ett tal till nödvändig precision</td>
+    </tr>
+    <tr>
+        <td><a href="math.md#to-string">Till sträng</a></td><td>Den här funktionen konverterar alla tal till strängbeteckningen. </td>
     </tr>
 </table>
 
@@ -181,6 +190,9 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
 <table>
     <tr>
         <td><a href="string.md#camelCase">Camera Case</a></td><td>Den här funktionen används för att ge den första bokstaven i varje ord i en sträng inledande versal</td>
+    </tr>
+    <tr>
+        <td><a href="string.md#char-code-at">Teckenkod på</a></td><td>Den här funktionen returnerar ASCII-värdet för ett tecken, precis som funktionen charCodeAt i JavaScript</td>
     </tr>
     <tr>
         <td><a href="string.md#concat">Concat</a></td><td>Den här funktionen används för att kombinera två strängar till en</td>
@@ -212,6 +224,9 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
     </tr>
     <tr>
         <td><a href="string.md#extractEmailDomain">Extrahera e-postdomän</a></td><td>Den här funktionen används för att extrahera domänen för en e-postadress</td>
+    </tr>
+    <tr>
+        <td><a href="string.md#format-currency">Formatera valuta</a></td><td>Den här funktionen konverterar alla tal till motsvarande språkkänsliga valutarepresentation beroende på vilket språk som skickas som en sträng i det andra argumentet</td>
     </tr>
     <tr>
         <td><a href="string.md#get-url-host">Hämta URL-värd</a></td><td>Den här funktionen används för att hämta URL-värden.</td>
@@ -280,7 +295,7 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
         <td><a href="string.md#startsWith">Börjar med</a></td><td>Den här funktionen används för att avgöra om en sträng börjar med en angiven delsträng</td>
     </tr>
     <tr>
-        <td><a href="string.md#string-to-date">Sträng till datum</a></td><td>Den här funktionen används för att konvertera en sträng till ett datum. Det returnerar epokdatumet som utdata för ogiltiga indata.</td>
+        <td><a href="string.md#string-to-date">Sträng till datum</a></td><td>Den här funktionen konverterar ett strängvärde till ett datum/tid-värde</td>
     </tr>
     <tr>
         <td><a href="string.md#string-to-integer">Sträng till heltal</a></td><td>Den här funktionen konverterar ett strängvärde till ett heltalsvärde.</td>

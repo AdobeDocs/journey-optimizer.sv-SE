@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: IP, pooler, grupp, underdomäner, leveransbarhet
 exl-id: 606334c3-e3e6-41c1-a10e-63508a3ed747
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
@@ -61,6 +61,18 @@ Så här skapar du en IP-pool:
    >[!NOTE]
    >
    >Alla IP-adresser som har etablerats med din instans är tillgängliga i listan.
+
+När du väljer IP-adresser kan du se de PTR-poster som är associerade med IP-adresserna i listan. På så sätt kan du verifiera varumärkesinformationen för varje IP-adress när du skapar en IP-pool och välja IP-adresser med samma varumärkesinformation, till exempel. [Läs mer om PTR-poster](ptr-records.md)
+
+![](assets/ip-pool-ptr-record.png)
+
+>[!NOTE]
+>
+>Om ingen PTR-post har konfigurerats för en IP-adress kan du inte välja den IP-adressen. Kontakta din Adobe-representant för att konfigurera PTR-posten för den IP-adressen.
+
+När en IP-pool har skapats visas PTR-information när du hovrar över IP-adresserna som visas under listrutan IP-pool.
+
+![](assets/ip-pool-ptr-record-tooltip.png)
 
 IP-poolen skapas nu och visas i listan. Du kan markera den för att komma åt dess egenskaper och visa den associerade kanalytan (t.ex. meddelandeförinställning). Mer information om hur du associerar en kanalyta med en IP-pool finns i [det här avsnittet](channel-surfaces.md).
 

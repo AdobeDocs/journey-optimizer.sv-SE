@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: scheman, XDM, plattform, direktuppspelning, förtäring, resa
 exl-id: f19749c4-d683-4db6-bede-9360b9610eef
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Alla XDM-scheman som ska användas för [!DNL Journey Optimizer] ska uppfylla f�
 
    ![](assets/schema3.png)
 
-* Deklarera ett identitetsfält för att identifiera föremålet för händelsen. Om ingen identitet anges kan en identitetskarta användas. Detta rekommenderas inte.
+* Deklarera ett identitetsfält för att identifiera enskilda profiler i händelsen. Om ingen identitet anges kan en identitetskarta användas. Detta rekommenderas inte.
 
    ![](assets/schema4.png)
 

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1572'
 ht-degree: 6%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 6%
 
 Anslut till [Adobe Experience Cloud](http://experience.adobe.com) och bläddra till [!DNL Journey Optimizer].
 
-De viktigaste begreppen när du bläddrar i användargränssnittet är vanliga i Adobe Experience Platform. Se [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html#adobe-experience-platform-ui-guide){target=&quot;_blank&quot;} om du vill ha mer information.
+De viktigaste begreppen när du bläddrar i användargränssnittet är vanliga i Adobe Experience Platform. Se [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html#adobe-experience-platform-ui-guide){target="_blank"} för mer information.
 
-Vilka komponenter och funktioner som är tillgängliga i användargränssnittet beror på [behörigheter](../administration/permissions.md) och [licensieringspaket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target=&quot;_blank&quot;}. Fråga din Adobe Customer Success Manager för alla frågor.
+Vilka komponenter och funktioner som är tillgängliga i användargränssnittet beror på [behörigheter](../administration/permissions.md) och [licensieringspaket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Fråga din Adobe Customer Success Manager för alla frågor.
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Nedan finns en fullständig lista över tjänster och funktioner som är tillgä
 
 * **[!UICONTROL Queries]** - Använd Adobe Experience Platform Query Service för att skriva och köra frågor, visa frågor som körts tidigare och få åtkomst till frågor som sparats av användare i organisationen. [Läs mer](../data/get-started-queries.md)
 
-* **[!UICONTROL Monitoring]** - Använd den här menyn för att övervaka dataanvändningen i Adobe Experience Platform användargränssnitt. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/monitor-data-ingestion.html){target=&quot;_blank&quot;}
+* **[!UICONTROL Monitoring]** - Använd den här menyn för att övervaka dataanvändningen i Adobe Experience Platform användargränssnitt. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/monitor-data-ingestion.html){target="_blank"}
 
 **[!UICONTROL CONNECTIONS]**
 
@@ -88,7 +88,7 @@ Nedan finns en fullständig lista över tjänster och funktioner som är tillgä
 
 * **[!UICONTROL Sandboxes]** - Adobe Experience Platform tillhandahåller sandlådor som partitionerar en instans i separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. [Läs mer](../administration/sandboxes.md)
 
-* **[!UICONTROL Alerts]** - Med användargränssnittet kan du visa en historik över mottagna aviseringar baserat på mätvärden som visas av Adobe Experience Platform Observability Insights. I gränssnittet kan du även visa, aktivera och inaktivera tillgängliga varningsregler. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target=&quot;_blank&quot;}
+* **[!UICONTROL Alerts]** - Med användargränssnittet kan du visa en historik över mottagna aviseringar baserat på mätvärden som visas av Adobe Experience Platform Observability Insights. I gränssnittet kan du även visa, aktivera och inaktivera tillgängliga varningsregler. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"}
 
 
 ## Användningsexempel inifrån produkten {#in-product-uc}
@@ -118,7 +118,7 @@ Tillgänglighetsfunktionerna i [!DNL Adobe Journey Optimizer] ärvs från Adobe 
 * Färgkontrast
 * Bekräfta att du fyllt i samtliga obligatoriska fält
 
-[Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/features.html){target=&quot;_blank&quot;} i Adobe Experience Platform-dokumentationen.
+[Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/features.html){target="_blank"} i Adobe Experience Platform-dokumentationen.
 
 Du kan använda dessa vanliga kortkommandon i [!DNL Journey Optimizer]:
 
@@ -130,7 +130,7 @@ Du kan använda dessa vanliga kortkommandon i [!DNL Journey Optimizer]:
 | Markera eller rensa ett element som är i fokus | Enter eller mellanslagstangenten |
 | Avbryt en markering, komprimera en ruta eller stänga en dialogruta | Esc |
 
-[Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/custom.html){target=&quot;_blank&quot;} i Adobe Experience Platform-dokumentationen.
+[Läs mer](https://experienceleague.adobe.com/docs/experience-platform/accessibility/custom.html){target="_blank"} i Adobe Experience Platform-dokumentationen.
 
 Du kan använda dessa kortkommandon i vissa delar av Journey Optimizer:
 
@@ -154,12 +154,32 @@ Du kan använda dessa kortkommandon i vissa delar av Journey Optimizer:
   </tr>
   <tr>
     <td>Välj alla aktiviteter</td>
-    <td>Ctrl + A (Windows)<br/>Cmd + A (Mac)</td>
+    <td>CTRL + A (Windows)<br/>CMD + A (Mac)</td>
   </tr>
   <tr>
     <td>Ta bort de valda aktiviteterna</td>
     <td>Ta bort eller Backsteg och bekräfta sedan borttagningen genom att ange</td>
   </tr>
+  <tr>
+    <td>Zooma in och ut (fokus på arbetsytan eller något av dess underordnade element)</td>
+    <td>CTRL +/- (Windows) eller CMD +/- (Mac)</td>
+  </tr>  
+  <tr>
+    <td>Navigera mellan varje aktivitet och bana (fokus på arbetsytan) eller mellan knappar i verktygsfältet (fokus på verktygsfältet)</td>
+    <td>PIL-tangenter</td>
+  </tr>   
+  <tr>
+    <td>Flytta fokus till nästa åtgärdbara element på arbetsytan, där verktygsfältet är det första</td>
+    <td>Tabb</td>
+  </tr>  
+  <tr>
+    <td>Öppna den högra konfigurationsrutan (fokus på en aktivitet)</td>
+    <td>ANGE</td>
+  </tr>   
+  <tr>
+    <td>Flytta en aktivitet på arbetsytan (fokus på en aktivitet)</td>
+    <td>SKIFT + piltangenter</td>
+  </tr>  
   <tr>
   <td rowspan="3">
 

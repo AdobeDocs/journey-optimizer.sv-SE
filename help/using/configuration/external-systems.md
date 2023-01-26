@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
-source-wordcount: '1039'
+source-wordcount: '1070'
 ht-degree: 1%
 
 ---
@@ -35,6 +35,10 @@ När Journey Optimizer gör ett anrop till ett externt API körs de tekniska gar
 Det inbyggda Capping API:t erbjuder ett tekniskt skyddsräcke som hjälper till att skydda ditt externa system.
 
 För externa datakällor är det maximala antalet anrop per sekund satt till 15. Om antalet anrop överstiger 15 per sekund ignoreras de återstående samtalen. Du kan öka den här gränsen för privata externa datakällor. Kontakta Adobe för att inkludera slutpunkten i tillåtelselista. Detta är inte möjligt för offentliga externa datakällor.
+
+>[!NOTE]
+>
+> Om en datakälla använder en anpassad autentisering med en annan slutpunkt än den som används för datakällan måste du kontakta Adobe för att även inkludera den slutpunkten i tillåtelselista.
 
 För anpassade åtgärder måste du utvärdera kapaciteten för det externa API:t. Om Journey Optimizer t.ex. skickar 1 000 samtal per sekund och systemet bara har stöd för 100 samtal per sekund, måste du definiera en spärrregel så att systemet inte blir mättat.
 

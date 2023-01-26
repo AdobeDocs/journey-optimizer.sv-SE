@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: underdomän, delegering, domän, DNS
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
 source-wordcount: '1740'
 ht-degree: 4%
@@ -167,13 +167,15 @@ Följ stegen nedan för att delegera en underdomän med CNAME:
 
 1. Adobe genererar en SSL CDN URL-valideringspost. Kopiera den här valideringsposten till din värdplattform. Om du har skapat den här posten på din värdlösning, markerar du kryssrutan &quot;Jag bekräftar..&quot; och klickar sedan på **[!UICONTROL Submit]**.
 
-   ![](assets/subdomain-cdn-url-validation.png)
+   <!--![](assets/subdomain-cdn-url-validation.png)-->
 
    >[!NOTE]
    >
    >Du kan också skapa valideringsposten och skicka underdomänskonfigurationen senare med **[!UICONTROL Save as draft]** -knappen. Du kan sedan återuppta delegeringen av underdomäner genom att öppna den från listan över underdomäner.
 
 1. När delegeringen av CNAME-underdomänen har skickats visas underdomänen i listan med **[!UICONTROL Processing]** status. Mer information om underdomänernas status finns i [det här avsnittet](about-subdomain-delegation.md#access-delegated-subdomains).
+
+   ![](assets/subdomain-cname-processing.png)
 
    Innan du kan använda den underdomänen för att skicka meddelanden måste du vänta tills Adobe utför de nödvändiga kontrollerna, som normalt tar 2 till 3 timmar. Läs mer i [det här avsnittet](#subdomain-validation).
 

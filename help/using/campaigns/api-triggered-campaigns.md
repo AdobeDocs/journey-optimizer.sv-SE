@@ -8,9 +8,9 @@ role: Developer, Admin
 level: Intermediate, Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,8 @@ För att göra detta måste du först skapa en API-utlöst kampanj i Journey Opt
 Tillgängliga kanaler för API-utlösta kampanjer är e-post-, SMS- och push-meddelanden.
 
 ## Skapa en API-utlöst kampanj {#create}
+
+### Konfigurera och aktivera kampanjen {#create-activate}
 
 Processen för att skapa API-utlösta kampanjer är fortfarande densamma som för schemalagda kampanjer, med undantag för valet av målgrupp som görs i API-nyttolasten. Detaljerad information om hur du skapar en kampanj finns i [det här avsnittet](create-campaign.md).
 
@@ -55,11 +57,23 @@ Så här skapar du en API-utlöst kampanj:
 
    Om du konfigurerar ett specifikt start- och/eller slutdatum för en kampanj körs det inte utanför dessa datum, och API-anrop misslyckas om kampanjen aktiveras av API:er.
 
-1. I **[!UICONTROL cURL request]** -sektion, hämta **[!UICONTROL Campaign ID]** som ska användas i API-nyttolasten.
+1. Klicka **[!UICONTROL Review to activate]** för att kontrollera att kampanjen är korrekt konfigurerad aktiverar du den.
+
+Nu kan du köra kampanjen från API:erna. [Läs mer](#execute)
+
+### Kör kampanjen {#execute}
+
+När kampanjen har aktiverats måste du hämta den genererade cURL-exempelbegäran och använda den i API:t för att skapa din nyttolast och utlösa kampanjen.
+
+1. Öppna kampanjen och kopiera och klistra sedan in exempelbegäran från **[!UICONTROL cURL request]** -avsnitt.
 
    ![](assets/api-triggered-curl.png)
 
-1. Klicka **[!UICONTROL Review to activate]** för att kontrollera att kampanjen är korrekt konfigurerad aktiverar du den.
+1. Använd denna cURL-begäran i API:erna för att bygga upp din nyttolast och utlösa kampanjen. Mer information finns i [API-dokumentation för interaktiv meddelandekörning](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution).
+
+   >[!NOTE]
+   >
+   >Om du har konfigurerat ett specifikt start- och/eller slutdatum när du skapar kampanjen kommer den inte att köras utanför dessa datum och API-anrop misslyckas.
 
 ## Använd kontextuella attribut i API-utlösta kampanjer {#contextual}
 
@@ -82,16 +96,6 @@ The `{{context.<contextualAttribute>}}` syntaxen mappas endast till datatypen St
 >The `context.system` syntaxen är begränsad till intern användning i Adobe och ska inte användas för att skicka kontextuella attribut.
 
 Observera att det för närvarande inte finns något sammanhangsberoende attribut tillgängligt för användning på den vänstra menyn. Attribut måste anges direkt i ditt personaliseringsuttryck, utan att någon kontroll utförs av [!DNL Journey Optimizer].
-
-## Kör kampanjen {#execute}
-
-Om du vill köra en API-utlöst kampanj måste du först hämta dess ID och skicka det till API-nyttolasten. Det gör du genom att öppna kampanjen och sedan kopiera och klistra in ID:t från **[!UICONTROL cURL request]** -avsnitt.
-
-![](assets/api-triggered-id.png)
-
-Du kan sedan använda detta ID i API-nyttolasten för att utlösa kampanjen. Se [API-dokumentation för interaktiv meddelandekörning](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution) för mer information.
-
-Observera att om du har konfigurerat ett specifikt start- och/eller slutdatum när du skapar kampanjen kommer den inte att köras utanför dessa datum och API-anrop misslyckas.
 
 ## Skapa profiler vid kampanjkörning {#profile-creation}
 

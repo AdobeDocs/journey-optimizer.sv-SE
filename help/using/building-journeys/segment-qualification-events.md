@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: kvalificering, evenemang, segment, resa, plattform
 exl-id: 7e70b8a9-7fac-4450-ad9c-597fe0496df9
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '900'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ Den här typen av händelse kan placeras som det första steget eller senare und
    >
    >Observera att **[!UICONTROL Enter]** och **[!UICONTROL Exit]** motsvarar **Realiserad** och **Avslutade** segmentdeltagarstatus från Adobe Experience Platform. Mer information om hur du utvärderar ett segment finns i [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
 
-1. Välj ett namnutrymme. Detta behövs bara om händelsen är placerad som det första steget i resan.
+1. Välj ett namnutrymme. Detta behövs bara om händelsen är placerad som det första steget i resan. Som standard är fältet förifyllt med det senast använda namnutrymmet.
 
    >[!NOTE]
    >

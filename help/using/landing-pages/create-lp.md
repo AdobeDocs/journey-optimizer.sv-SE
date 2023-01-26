@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, publicering
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
 source-wordcount: '1465'
 ht-degree: 1%
@@ -57,7 +57,7 @@ Klicka på de tre punkterna bredvid en landningssida för att välja önskad åt
 >id="ajo_lp_access_management_labels"
 >title="Tilldela etiketter till landningssidan"
 >abstract="För att skydda känsliga digitala resurser kan du definiera auktoriseringar för att hantera dataåtkomst till din landningssida med hjälp av etiketter."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/object-based-access.html" text="Skapa förinställningar för landningssidor"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/object-based-access.html" text="Åtkomstkontroll på objektnivå"
 
 Stegen för att skapa en landningssida är följande.
 

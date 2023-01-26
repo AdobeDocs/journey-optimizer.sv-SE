@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: e-post, design, stockinnehåll, resurser
 exl-id: e4f91870-f06a-4cd3-98b7-4c413233e310
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 5%
+source-wordcount: '309'
+ht-degree: 4%
 
 ---
 
@@ -52,6 +52,10 @@ När du har [lade till ett e-postmeddelande](create-email.md) till en resa eller
    * **Välj ett befintligt innehåll** från en lista med inbyggda eller anpassade mallar. Lär dig hur du arbetar med e-postmallar [det här avsnittet](email-templates.md).
 
    ![](assets/email_designer_create_options.png)
+
+1. När e-postinnehållet har definierats och anpassats kan du exportera innehållet för validering eller för senare bruk. Klicka **[!UICONTROL Export HTML]** om du vill spara en ZIP-fil på datorn som innehåller HTML och resurser.
+
+   ![](assets/email_designer_export.png)
 
 ## Instruktionsvideo {#video}
 

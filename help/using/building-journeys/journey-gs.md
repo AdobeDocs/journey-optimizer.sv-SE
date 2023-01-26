@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, segment, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1047'
 ht-degree: 8%
 
 ---
@@ -94,9 +94,35 @@ The **Kopiera teknisk information** Med kan du kopiera teknisk information om de
 
 ### Ingång{#entrance}
 
-Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet för engångsresor, till exempel om du vill erbjuda en engångsgåva när en person går in i en affär.
-
+Som standard tillåter nya resor återinträde. Du kan avmarkera **Tillåt återinträde** om du vill erbjuda en engångsgåva när en person går in i en affär.
+<!--
+When the **Allow re-entrance** option is activated, the **Re-entrance wait period** field is displayed. This field allows you to define the time to wait before allowing a profile to enter the journey again in unitary journeys (starting with an event or a segment qualification). This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes.
+-->
 Läs mer om hantering av profilinträde i [det här avsnittet](entry-management.md).
+
+### Hantera åtkomst {#access}
+
+Klicka på **[!UICONTROL Manage access]** -knappen. [Läs mer om OLA (Object Level Access Control)](../administration/object-based-access.md)
+
+![](assets/journeys-manage-access.png)
+
+### Tidszon och profiltidszon {#timezone}
+
+Tidszonen definieras på resenivå.
+
+Du kan ange en fast tidszon eller använda Adobe Experience Platform-profiler för att definiera resetidszonen.
+
+Om en tidszon definieras i Adobe Experience Platform-profilen kan den hämtas under resan.
+
+Mer information om hantering av tidszoner finns i [den här sidan](../building-journeys/timezone-management.md).
+
+### Start- och slutdatum {#dates}
+<!--
+You can define a **Start date**. If you haven't specified one, it will be automatically defined at publication time. 
+
+You can also add an **End date**. This allows profiles to exit automatically when the date is reached. If you don't specify an end date, pofiles can stay until the default journey timeout (generally 30 days, 7 days with Healthcare Shield add-on offering). The only exception is recurring read segment journeys with **Force re-entrance on recurrence** activated, which end at the start date of the next occurrence. 
+-->
+Du kan definiera en **Startdatum**. Du kan också lägga till en **Slutdatum**. Detta gör att profiler kan avslutas automatiskt när datumet nås. Om du inte anger ett slutdatum kan profiler stanna tills standardtidsgränsen för resan uppnås.
 
 ### Tidsgräns och fel i reseaktiviteter {#timeout_and_error}
 
@@ -118,18 +144,3 @@ Förutom [timeout](#timeout_and_error) som används i reseaktiviteter finns det 
 
 På grund av den 30-dagars tidsgränsen för resan kan vi inte säkerställa att återinträdesspärren fungerar mer än 30 dagar när resan inte tillåts. Eftersom vi tar bort all information om personer som tagit sig in på resan 30 dagar efter ankomsten, kan vi inte veta vem som tagit sig in tidigare, mer än 30 dagar sedan.
 
-### Tidszon och profiltidszon {#timezone}
-
-Tidszonen definieras på resenivå.
-
-Du kan ange en fast tidszon eller använda Adobe Experience Platform-profiler för att definiera resetidszonen.
-
-Om en tidszon definieras i Adobe Experience Platform-profilen kan den hämtas under resan.
-
-Mer information om hantering av tidszoner finns i [den här sidan](../building-journeys/timezone-management.md).
-
-### Hantera åtkomst {#access}
-
-Klicka på **[!UICONTROL Manage access]** -knappen. [Läs mer om OLA (Object Level Access Control)](../administration/object-based-access.md)
-
-![](assets/journeys-manage-access.png)

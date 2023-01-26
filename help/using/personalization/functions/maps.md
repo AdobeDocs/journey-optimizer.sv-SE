@@ -6,10 +6,10 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: de6a8da2-55cf-4105-ba93-40c556732626
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
 source-wordcount: '102'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -21,7 +21,7 @@ Använd kartfunktioner i personalisering för att underlätta interaktionen med 
 
 The `get` används för att hämta värdet för en karta för en viss nyckel.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= get(map, string) %}
@@ -39,7 +39,7 @@ Följande åtgärd hämtar värdet för identitetskartan för nyckeln `example@e
 
 The `keys` används för att hämta alla nycklar för en viss karta.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= keys(map) %}
@@ -57,7 +57,7 @@ Följande åtgärd hämtar alla nycklar för kartan `identityMap`.
 
 The `values` används för att hämta alla värden för en viss karta.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= values(map) %}

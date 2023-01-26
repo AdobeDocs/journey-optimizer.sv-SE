@@ -5,10 +5,10 @@ description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: 5fd4f8c5ffaf2c417d95f88fa31c850bc88db13f
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 7%
+source-wordcount: '321'
+ht-degree: 8%
 
 ---
 
@@ -98,7 +98,7 @@ ht-degree: 7%
     </li>
     </div>
   </td>
-   <td align="right">
+   <td>
    <div><strong>Direktlänkar till viktiga resurser</strong>
     </div>
     <p>
@@ -106,6 +106,9 @@ ht-degree: 7%
     <p>
     <p>RESEHANTERING</p>
     <li>
+      <a href="using/campaigns/get-started-with-campaigns.md">Kampanjer</a>
+    </li>
+        <li>
       <a href="using/building-journeys/journey-gs.md">Resor</a>
     </li>
     <li>

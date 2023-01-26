@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation 2022
 description: Versionsinformation om Journey Optimizer 2022
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
-source-git-commit: c6498633fdfdc9442203a3bf980f1b12bd1c6a6b
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
-source-wordcount: '3453'
+source-wordcount: '3583'
 ht-degree: 8%
 
 ---
@@ -14,6 +14,47 @@ ht-degree: 8%
 # Versionsinformation för 2022 {#release-notes-2022}
 
 På den här sidan visas alla funktioner och förbättringar för [!DNL Journey Optimizer] släppt 2022.
+
+
+
+## Oktober 2022-versionen {#oct-2022-release}
+
+<!--
+
+### New capability{#oct-2022-features}
+
+<table>
+<thead>
+<tr>
+<th><strong>Direct Mail Channel (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now add direct mail messages in your campaigns and journeys. Direct mail is an offline channel that allows you to personalize and generate the files required by direct mail providers to send mail to your customers.</p>
+<p>When you prepare a direct mail delivery, Journey Optimizer generates a file including all the targeted profiles and the chosen contact information (postal address for example). You will then be able to send this file to your direct mail provider who will take care of the actual sending.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+-->
+
+### Förbättringar {#oct-2022-improvements}
+
+**Resor**
+
+* The **Tvinga återinträde vid upprepning** har lagts till i återkommande parametrar för lässegmentschema. Med det här alternativet kan du göra så att alla profiler som fortfarande finns i resan automatiskt avslutar den vid nästa körning. När alternativet är inaktiverat måste profilerna slutföra resan innan de kan återkomma i en annan förekomst. [Läs mer](../building-journeys/read-segment.md#configuring-segment-trigger-activity)
+
+**Administrering**
+
+* Ett meddelande lades till i användargränssnittet för att varna för att underdomäner, underdomäner för landningssidor, PTR-poster och IP-poolkonfigurationer är gemensamma för alla sandlådor och därför kommer ändringar i någon av dessa konfigurationer även att påverka produktionssandlådorna.
+* Stegen för att överföra undertryckningslistan som en CSV-fil från användargränssnittet har ändrats. [Läs mer](../configuration/manage-suppression-list.md#download-suppression-list)
+
+**Kampanjer**
+
+* Nu kan ni arkivera slutförda och stoppade kampanjer. [Läs mer](../campaigns/modify-stop-campaign.md#archive)
 
 
 ## September 2022-utgåvan{#sept-2022-release}
@@ -346,7 +387,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 **Resor**
 
-* **Avsluta en resa** - På arbetsytan **End** aktiviteten har tagits bort från paletten. Sluttaggar läggs nu till som standard i slutet av varje bana och kan inte tas bort. Denna förbättring gör det möjligt att bättre rapportera var en kund lämnade resan, utan att någon åtgärd krävs från kundens sida. Se [dokumentation](../building-journeys/end-journey.md) och [funktionsvideo](https://video.tv.adobe.com/v/345376){target=&quot;_blank&quot;}.
+* **Avsluta en resa** - På arbetsytan **End** aktiviteten har tagits bort från paletten. Sluttaggar läggs nu till som standard i slutet av varje bana och kan inte tas bort. Denna förbättring gör det möjligt att bättre rapportera var en kund lämnade resan, utan att någon åtgärd krävs från kundens sida. Se [dokumentation](../building-journeys/end-journey.md) och [funktionsvideo](https://video.tv.adobe.com/v/345376){target="_blank"}.
 
 
 * The **Tidszon för profil** alternativet är nu avmarkerat som standard i resans egenskaper. [Läs mer](../building-journeys/timezone-management.md#timezone-from-profiles)

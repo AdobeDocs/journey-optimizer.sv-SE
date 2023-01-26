@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: cd8217a7f28f30a259863ecce0c062ddc5d2667b
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1307'
 ht-degree: 33%
 
 ---
@@ -166,6 +166,7 @@ ht-degree: 33%
       + [Skapa ett innehållsexperiment](using/campaigns/content-experiment.md)
       + [Förstå statistiska beräkningar](using/campaigns/experiment-calculations.md)
       + [Konfigurera experimentrapporter](using/campaigns/reporting-configuration.md)
+      + [Statistiska beräkningar i experimentrapporten](using/campaigns/experiment-report-calculations.md)
    + [Utlösa kampanjer med API:er](using/campaigns/api-triggered-campaigns.md)
 + E-postkanal {#email}
    + [Kom igång med e-post](using/email/get-started-email.md)
@@ -464,6 +465,7 @@ ht-degree: 33%
    + [Kom igång med sekretess](using/privacy/get-started-privacy.md)
    + [Förfrågningar om användarens information](using/privacy/requests.md)
    + [Granskningsåtgärder för resurser](using/privacy/audit-logs.md)
+   + [Utför datahygien](using/privacy/data-hygiene.md)
    + Hantera medgivande {#consent}
       + [Hantera avanmälan](using/privacy/opt-out.md)
       + [Arbeta med policyer för samtycke](using/action/consent.md)

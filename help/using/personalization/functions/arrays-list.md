@@ -6,10 +6,10 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: dfe611fb-9c50-473c-9eb7-b983e1e6f01e
-source-git-commit: 91f221781f1655066ec0f6b1c3f2c1faefd09d69
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
 source-wordcount: '561'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -21,7 +21,7 @@ Använd de här funktionerna för att underlätta interaktionen med arrayer, lis
 
 The `countOnlyNull` används för att räkna antalet null-värden i en lista.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= countOnlyNull(array) %}
@@ -39,7 +39,7 @@ Returnerar 3.
 
 The `countWithNull` används för att räkna alla element i en lista inklusive null-värden.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= countWithNull(array) %}
@@ -57,7 +57,7 @@ Returnerar 6.
 
 The `distinct` används för att hämta värden från en array eller lista där dubblettvärden har tagits bort.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= distinct(array) %}
@@ -75,7 +75,7 @@ Följande åtgärd anger personer som har gjort beställningar i mer än en buti
 
 The `distinctCountWithNull` används för att räkna antalet olika värden i en lista inklusive null-värden.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= distinctCountWithNull(array) %}
@@ -93,7 +93,7 @@ Returnerar 3.
 
 The `head` -funktionen används för att returnera det första objektet i en array eller lista.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= head(array) %}
@@ -111,7 +111,7 @@ Följande åtgärd returnerar den första av de fem främsta beställningarna me
 
 The `topN` -funktionen används för att returnera den första `N` objekt i en array, när de sorteras i stigande ordning baserat på det givna numeriska uttrycket.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= topN(array, value, amount) %}
@@ -135,7 +135,7 @@ Följande åtgärd returnerar de första fem beställningarna med det lägsta pr
 
 The `in` används för att avgöra om ett objekt är medlem i en array eller lista.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= in(value, array) %}
@@ -153,7 +153,7 @@ Följande åtgärd definierar personer med födelsedagar i mars, juni eller sept
 
 The `includes` används för att avgöra om en array eller lista innehåller ett visst objekt.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= includes(array,item) %}
@@ -171,7 +171,7 @@ Följande åtgärd definierar personer vars favoritfärg är röd.
 
 The `intersects` används för att avgöra om två arrayer eller listor har minst en gemensam medlem.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= intersects(array1, array2) %}
@@ -190,7 +190,7 @@ Följande åtgärd definierar personer vars favoritfärger innehåller minst en 
 
 The `intersection` function is used to determine the common members of two arrays or lists.
 
-**Format**
+**Syntax**
 
 ```sql
 intersection({ARRAY},{ARRAY})
@@ -209,7 +209,7 @@ intersection(person1.favoriteColors,person2.favoriteColors) = ["red", "blue", "g
 
 The `bottomN` -funktionen används för att returnera den sista `N` objekt i en array, när de sorteras i stigande ordning baserat på det givna numeriska uttrycket.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= bottomN(array, value, amount) %}
@@ -237,7 +237,7 @@ The `notIn` används för att avgöra om ett objekt inte är medlem i en array e
 >
 >The `notIn` function *även* säkerställer att inget av värdena är lika med null. Resultatet är därför inte en exakt negation av `in` funktion.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= notIn(value, array) %}
@@ -256,7 +256,7 @@ Följande åtgärd definierar personer med födelsedagar som inte är i mars, ju
 
 The `subsetOf` används för att avgöra om en viss array (array A) är en delmängd av en annan array (array B). Det vill säga att alla element i array A är element i array B.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= subsetOf(array1, array2) %}
@@ -274,7 +274,7 @@ Följande åtgärd definierar personer som har besökt alla sina favoritstäder.
 
 The `supersetOf` används för att avgöra om en viss array (array A) är en överordnad mängd till en annan array (array B). Arrayen A innehåller alltså alla element i array B.
 
-**Format**
+**Syntax**
 
 ```sql
 {%= supersetOf(array1, array2) %}

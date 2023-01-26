@@ -9,10 +9,10 @@ role: Admin
 level: Intermediate
 keywords: externa, källor, data, konfiguration, anslutning, tredje part
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
-source-wordcount: '1384'
-ht-degree: 88%
+source-wordcount: '1414'
+ht-degree: 86%
 
 ---
 
@@ -171,30 +171,67 @@ Autentiseringsformatet är:
 
 Du kan ändra cachevaraktigheten på en token för en anpassad autentiseringsdatakälla. Nedan visas ett exempel på en anpassad autentiseringsnyttolast. Cachevaraktigheten definieras i parametern &quot;cacheDuration&quot;. Den anger varaktigheten för den genererade token i cachen. Enheten kan vara millisekunder, sekunder, minuter, timmar, dagar, månader och år.
 
+Här följer ett exempel på autentiseringstypen för innehavare:
+
 ```
-"authentication": {
-    "type":"customAuthorization",
-    "authorizationType":"Bearer",
-    "endpoint":"http://localhost:${port}/epsilon/oauth2/access_token",
-    "method":"POST",
+{
+  "authentication": {
+    "type": "customAuthorization",
+    "authorizationType": "Bearer",
+    "endpoint": "http://localhost:${port}/epsilon/oauth2/access_token",
+    "method": "POST",
     "headers": {
-        "Authorization":"Basic EncodeBase64(${epsilonClientId}:${epsilonClientSecret})"
-        },
+      "Authorization": "Basic EncodeBase64(<epsilon Client Id>:<epsilon Client Secret>)"
+    },
     "body": {
-        "bodyType":"form",
-        "bodyParams": {
-             "scope":"cn mail givenname uid employeeNumber",
-             "grant_type":"password",
-             "username":"${epsilonUserName}",
-             "password":"${epsilonUserPassword}"
-             }
-        },
-    "tokenInResponse":"json://access_token",
-    "cacheDuration":
-             { "duration":5, "timeUnit":"seconds" }
+      "bodyType": "form",
+      "bodyParams": {
+        "scope": "cn mail givenname uid employeeNumber",
+        "grant_type": "password",
+        "username": "<epsilon User Name>",
+        "password": "<epsilon User Password>"
+      }
+    },
+    "tokenInResponse": "json://access_token",
+    "cacheDuration": {
+      "duration": 5,
+      "timeUnit": "minutes"
     }
+  }
+}
 ```
 
 >[!NOTE]
 >
 >Cachens varaktighet hjälper till att undvika för många anrop till slutpunkterna för autentisering. Kvarhållande av autentiseringstoken cachelagras i tjänster, det finns ingen beständighet. Om en tjänst startas om börjar den med ett rent cacheminne. Cachevaraktigheten är som standard 1 timme. I den anpassade autentiseringsnyttolasten kan den anpassas genom att ange en annan kvarhållningstid.
+
+Här är ett exempel på autentiseringstypen för sidhuvud:
+
+```
+{
+  "type": "customAuthorization",
+  "authorizationType": "header",
+  "tokenTarget": "x-auth-token",
+  "endpoint": "https://myapidomain.com/v2/user/login",
+  "method": "POST",
+  "headers": {
+    "x-retailer": "any value"
+  },
+  "body": {
+    "bodyType": "form",
+    "bodyParams": {
+      "secret": "any value",
+      "username": "any value"
+    }
+  },
+  "tokenInResponse": "json://token"
+} 
+```
+
+Här är ett exempel på svaret på inloggnings-API-anropet:
+
+```
+{
+  "token": "xDIUssuYE9beucIE_TFOmpdheTqwzzISNKeysjeODSHUibdzN87S"
+}
+```
