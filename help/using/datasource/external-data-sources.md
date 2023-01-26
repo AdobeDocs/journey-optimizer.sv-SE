@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: externa, källor, data, konfiguration, anslutning, tredje part
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
-source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
+source-git-commit: dc313d7cbee9e412b9294b644fddbc7840f90339
 workflow-type: tm+mt
 source-wordcount: '1414'
 ht-degree: 86%

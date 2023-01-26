@@ -5,7 +5,7 @@ feature: Personalization
 topic: Personalization
 role: Data Engineer
 level: Experienced
-source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
+source-git-commit: dc313d7cbee9e412b9294b644fddbc7840f90339
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 6%

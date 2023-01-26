@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, segment, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
+source-git-commit: dc313d7cbee9e412b9294b644fddbc7840f90339
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 8%
@@ -95,9 +95,11 @@ The **Kopiera teknisk information** Med kan du kopiera teknisk information om de
 ### Ingång{#entrance}
 
 Som standard tillåter nya resor återinträde. Du kan avmarkera **Tillåt återinträde** om du vill erbjuda en engångsgåva när en person går in i en affär.
+
 <!--
 When the **Allow re-entrance** option is activated, the **Re-entrance wait period** field is displayed. This field allows you to define the time to wait before allowing a profile to enter the journey again in unitary journeys (starting with an event or a segment qualification). This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes.
 -->
+
 Läs mer om hantering av profilinträde i [det här avsnittet](entry-management.md).
 
 ### Hantera åtkomst {#access}
@@ -117,11 +119,13 @@ Om en tidszon definieras i Adobe Experience Platform-profilen kan den hämtas un
 Mer information om hantering av tidszoner finns i [den här sidan](../building-journeys/timezone-management.md).
 
 ### Start- och slutdatum {#dates}
+
 <!--
 You can define a **Start date**. If you haven't specified one, it will be automatically defined at publication time. 
 
 You can also add an **End date**. This allows profiles to exit automatically when the date is reached. If you don't specify an end date, pofiles can stay until the default journey timeout (generally 30 days, 7 days with Healthcare Shield add-on offering). The only exception is recurring read segment journeys with **Force re-entrance on recurrence** activated, which end at the start date of the next occurrence. 
 -->
+
 Du kan definiera en **Startdatum**. Du kan också lägga till en **Slutdatum**. Detta gör att profiler kan avslutas automatiskt när datumet nås. Om du inte anger ett slutdatum kan profiler stanna tills standardtidsgränsen för resan uppnås.
 
 ### Tidsgräns och fel i reseaktiviteter {#timeout_and_error}
