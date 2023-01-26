@@ -6,9 +6,9 @@ description: Lär dig hur du utför datahygien-åtgärder
 feature: Monitoring
 role: User
 level: Intermediate
-source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
+source-git-commit: 645db980155993155a10d27f4ff59967b000442f
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '133'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Datahygienfunktionerna är för närvarande bara tillgängliga för organisationer som har köpt tilläggserbjudandet till hälso- och sjukvårdsskölden. Det är även tillgängligt för skölden för skydd av privatlivet och säkerheten, med undantag för hälso- och sjukvårdsskölden
+>Datahygienfunktionerna är för närvarande bara tillgängliga för organisationer som har köpt **Hälsovårdssköld** och **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
 
 
 När data hela tiden importeras till Adobe Experience Platform blir det viktigt att dina data används på rätt sätt, uppdateras vid behov och raderas enligt organisationsprofiler.
