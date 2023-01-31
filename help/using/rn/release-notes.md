@@ -4,10 +4,10 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 645db980155993155a10d27f4ff59967b000442f
+source-git-commit: 4df89a36705fb53984ba04ba1ae2f45554e47f77
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 7%
+source-wordcount: '509'
+ht-degree: 8%
 
 ---
 
@@ -45,22 +45,25 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 </tbody>
 </table>
 
-<!--table>
+<table>
 <thead>
 <tr>
-<th><strong>Email content templates</strong><br/></th>
+<th><strong>Mallar för e-postinnehåll</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now create standalone content templates that can be leveraged across journeys and campaigns for quick reuse.</p> 
-<p>For more information, refer to the <a href="../personalization/get-started-dynamic-content.md">detailed documentation</a>.
+<p>Nu kan ni skapa fristående innehållsmallar som kan utnyttjas på olika resor och i kampanjer för snabb återanvändning.</p> 
+</p>
+<!--img src="assets/do-not-localize/"/-->
+<p>Lär dig hur du skapar, redigerar och använder innehållsmallar i <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/email-channel/content-templates.html">den här videon</a>.
+<p>Mer information finns i den <a href="../email/content-templates.md">detaljerade dokumentationen</a>.
+</p>
 </td>
 </tr>
 </tbody>
 </table>
--->
 
 ### Förbättringar {#jan-2023-improvements}
 

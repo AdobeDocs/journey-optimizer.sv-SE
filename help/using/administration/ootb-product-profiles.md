@@ -9,9 +9,9 @@ role: Admin, User
 level: Intermediate
 keywords: behörigheter, författare, meddelanden
 exl-id: 5a968bd8-cf76-4242-aa80-3cfb3d551511
-source-git-commit: 78675ca22d8ee9a93d9af128d5708c305523da78
+source-git-commit: 4df89a36705fb53984ba04ba1ae2f45554e47f77
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1128'
 ht-degree: 8%
 
 ---
@@ -99,8 +99,17 @@ Den här produktprofilen innehåller följande behörigheter:
 
 ## [!DNL Decisioning manager] {#decisioning-manager}
 
-The **[!DNL Decisioning manager]** produktprofilen tillåter bara **[!UICONTROL Decision management]** -menyn. Användare som är tilldelade den här produktprofilen kan bara hantera, visa och publicera beslut.
+The **[!DNL Decisioning manager]** produktprofilen tillåter bara åtkomst till **[!UICONTROL Decision management]** -menyn. Användare som är tilldelade den här produktprofilen kan bara hantera, visa och publicera beslut.
 
 Den här produktprofilen innehåller följande behörigheter:
 
 | Funktioner | Behörigheter| |-|-| |Beslutshantering| <ul><li>**[!DNL Manage decisions]**: läsa, skapa, redigera och ta bort beslutsenheter.</li><li>**[!DNL View decisions]**: skrivskyddad åtkomst till beslutsenheter.</li><li>**[!DNL Manage ranking strategies]**: läsa, skapa, redigera och ta bort anpassade rapporter och använda åtgärdsfunktioner.</li><li>**[!DNL Publish decisions]**: aktivera eller inaktivera beslutsaktiviteter.</li></ul>|
+
+## [!DNL Content Library Manager] {#content-library-manager}
+
+The **[!DNL Content Library Manager]** produktprofilen tillåter bara åtkomst till **[!UICONTROL Content templates]** -menyn. Användare som är tilldelade den här produktprofilen kan bara komma åt mallbiblioteket för att skapa innehåll utan att komma åt resor eller kampanjer.
+
+Den här produktprofilen innehåller följande behörigheter:
+
+| Funktioner | Behörigheter| |-|-| |Journey Optimizer Library| <ul><li>**[!DNL Manage library items]**: läsa, skapa, redigera och ta bort objekt i Journey Optimizer-biblioteket.</li><li>**[!DNL Manage simulate content]**: åtkomst till **[!UICONTROL Simulate content]** för förhandsgranskning och korrektur.</li></ul>| |Beslutshantering|<ul><li>**[!DNL Manage decisions]**: läsa, skapa, redigera och ta bort beslutsenheter.</li><li>**[!DNL Manage ranking strategies]**: läsa, skapa, redigera och ta bort anpassade rapporter och använda åtgärdsfunktioner.</li></ul>|
+|Adobe Experience Platform| <ul><li> **[!DNL Manage segments]**: läsa, skapa, redigera och ta bort segment.</li><li>**[!DNL Manage profiles]**: läsa, skapa, redigera och ta bort profiler.</li><li>**[!DNL Read datasets]**: skrivskyddad åtkomst till datauppsättningar.</li><li>**[!DNL Read schemas]**: skrivskyddad åtkomst till scheman.</li><li>**[!DNL Manage merge policies]**: läsa, skapa, redigera och ta bort sammanfogningsprinciper.</li></ul>|

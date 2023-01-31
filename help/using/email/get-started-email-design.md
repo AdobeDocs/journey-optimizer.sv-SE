@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: e-post, design, stockinnehåll, resurser
 exl-id: e4f91870-f06a-4cd3-98b7-4c413233e310
-source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
+source-git-commit: 4df89a36705fb53984ba04ba1ae2f45554e47f77
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 4%
@@ -45,7 +45,6 @@ När du har [lade till ett e-postmeddelande](create-email.md) till en resa eller
       >[!NOTE]
       >
       >I en kampanj kan du även välja **[!UICONTROL Code Editor]** från **[!UICONTROL Edit content]** skärm. [Läs mer](create-email.md#define-email-content)
-
 
    * **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig hur du importerar ett e-postinnehåll i [det här avsnittet](existing-content.md).
 

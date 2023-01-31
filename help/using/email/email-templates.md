@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: e-post, mallar, design
 exl-id: 94d5e615-a7d6-468c-bee8-1ae5fcd4a694
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: 4df89a36705fb53984ba04ba1ae2f45554e47f77
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 5%
+source-wordcount: '255'
+ht-degree: 8%
 
 ---
 
@@ -24,7 +24,8 @@ Använd **[!UICONTROL Select design template]** för att börja skapa innehåll 
 
 Du kan välja mellan:
 * 20 färdiga e-postmallar.
-* Sparade mallar. [Läs mer](#use-saved-template)
+* Sparade e-postmallar. [Läs mer](#use-saved-template)
+* Innehållsmallar. [Läs mer](content-templates.md)
 
 ## Spara som mall {#save-as-template}
 
@@ -34,6 +35,10 @@ Du kan välja mellan:
 >abstract="Den 25 juli 2022 försvann menyn Meddelanden och meddelanden skrivs nu direkt från en resa. Om du vill återanvända dina gamla meddelanden under resor måste du spara dem som mallar."
 
 När du designat [e-postinnehåll](get-started-email-design.md)kan du spara den för framtida bruk. Följ stegen nedan för att göra detta.
+
+>[!CAUTION]
+>
+>Om du vill spara ett innehåll som en mall måste du ha **[!DNL Manage Library Items]** behörighet som ingår i **[!DNL Content Library Manager]** produktprofil. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager)
 
 1. Klicka på ellipsen högst upp till höger på skärmen.
 
@@ -46,6 +51,8 @@ När du designat [e-postinnehåll](get-started-email-design.md)kan du spara den 
    ![](assets/email_designer-template-name.png)
 
 1. Klicka på **[!UICONTROL Save]**.
+
+Den här mallen sparas i innehållsmalllistan. [Läs mer](content-templates.md)
 
 Nästa gång du skapar ett e-postmeddelande kan du använda den här mallen för att skapa ditt innehåll. [Lär dig mer](#use-saved-template)
 
