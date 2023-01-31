@@ -5,9 +5,9 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
+source-git-commit: 78675ca22d8ee9a93d9af128d5708c305523da78
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1308'
 ht-degree: 33%
 
 ---
@@ -30,6 +30,7 @@ ht-degree: 33%
       + [Kom igång som administratör](using/start/path/administrator.md)
       + [Kom igång som utvecklare](using/start/path/developer.md)
    + [Användargränssnitt](using/start/user-interface.md)
+   + [Tillgänglighet](using/start/accessibility.md)
    + [Integreringar](using/start/ajo-integrations.md)
    + [Guardrails](using/start/guardrails.md)
 + Resor {#orchestrate-journeys}

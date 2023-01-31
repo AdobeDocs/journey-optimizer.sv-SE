@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: 78675ca22d8ee9a93d9af128d5708c305523da78
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 2%
+source-wordcount: '724'
+ht-degree: 3%
 
 ---
 
@@ -52,11 +52,13 @@ Om du vill skapa en ny kampanj öppnar du **[!UICONTROL Campaigns]** menyn och k
 
    En yta är en konfiguration som har definierats av en [Systemadministratör](../start/path/administrator.md). Den innehåller alla tekniska parametrar för att skicka meddelandet, som rubrikparametrar, underdomän, mobilappar osv. [Läs mer](../configuration/channel-surfaces.md).
 
+   Endast kanalytor som är kompatibla med marknadsföringskampanjtypen visas i listrutan.
+
    ![](assets/create-campaign-action.png)
 
    >[!NOTE]
    >
-   >Endast kanalytor som är kompatibla med marknadsföringskampanjtypen visas i listrutan.
+   >Om du skapar en kampanj för push-meddelanden kan du aktivera **[!UICONTROL Rapid delivery mode]**, som är ett Journey Optimizer-tillägg som gör att det går att skicka mycket snabba push-meddelanden i stora volymer. [Läs mer](../push/create-push.md#rapid-delivery)
 
 1. Klicka **[!UICONTROL Create]** för att skapa kampanjen.
 

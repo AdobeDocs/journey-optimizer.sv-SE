@@ -8,16 +8,18 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: dd65c4155320c818f97400548c0f9d4d6d4e2507
+source-git-commit: 78675ca22d8ee9a93d9af128d5708c305523da78
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
 
 # Skyddsritningar och begränsningar {#limitations}
 
-Tillstånd, produktbegränsningar och prestandaskydd finns i [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target=&quot;_blank&quot;}.
+Tillstånd, produktbegränsningar och prestandaskydd finns i [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+
+Du måste också vara medveten om [Garantier för kundprofildata i realtid innan du startar](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"}.
 
 Nedan finns ytterligare skyddsutkast och begränsningar när du använder [!DNL Adobe Journey Optimizer].
 
@@ -29,7 +31,7 @@ Nedan finns ytterligare skyddsutkast och begränsningar när du använder [!DNL 
 
 ## Handläggningsgaranti {#offer-guardrails}
 
-Prestandaskydd och statiska gränser för beslut finns listade i [Produktbeskrivningssida för Adobe Offer decisioning App Service](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html){target=&quot;_blank&quot;}.
+Prestandaskydd och statiska gränser för beslut finns listade i [Produktbeskrivningssida för Adobe Offer decisioning App Service](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html){target="_blank"}.
 
 
 ## Garantier för landningssidor {#lp-guardrails}

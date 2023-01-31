@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 73bfdc24-28cf-4cfd-bac9-a4ff1ea543e3
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 78675ca22d8ee9a93d9af128d5708c305523da78
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 0%
@@ -27,40 +27,50 @@ Den senaste lyckade batchen i datauppsättningen visas till höger. Den hierarki
 
 Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Object Repository - Fallback Offers]** datauppsättning.
 
-## Identifierare {#identifier}
++++ Identifierare
 
 **Fält:** _id
 **Titel:** Identifierare
 **Beskrivning:** En unik identifierare för posten.
 **Typ:** string
 
-## upplevelse {#experience}
++++
+
++++ upplevelse
 
 **Fält:** upplevelse
 **Typ:** object
 
-### _experience > decisioning
++++
+
++++ _experience > decisioning
 
 **Fält:** beslut
 **Typ:** object
 
-#### _experience > decisioning > properties
++++
+
++++ _experience > decisioning > properties
 
 **Fält:** egenskaper
 **Titel:** Beslutsalternativsegenskaper
 **Beskrivning:** Ytterligare egenskaper eller attribut som tillhör det här särskilda beslutsalternativet. Olika instanser kan ha olika egenskaper (tangenter på kartan). Egenskaperna är namnvärdespar som används för att skilja mellan olika beslutsalternativ. Egenskaper används som värden i innehåll som representerar det här alternativet och som funktioner för att analysera och optimera prestanda för ett alternativ. När alla instanser har samma attribut eller egenskap bör den aspekten modelleras som ett tilläggsschema som härleds från beslutsalternativsinformationen.
 **Typ:** object
 
++++
+
 <!--Field under Characteristics without title = additionalProperties? Desc = Value of the property. Type: string-->
 
-#### _experience > decisioning > contents
++++ _experience > decisioning > contents
 
 **Fält:** innehåll
 **Titel:** Innehållsinformation
 **Beskrivning:** Innehållsobjekt som återger beslutsobjektet i olika sammanhang. Ett enda beslutsalternativ kan ha flera innehållsvarianter. Innehåll är information som riktar sig till en målgrupp som konsumeras i en (digital) upplevelse. Innehållet levereras via kanaler till en viss plats.
 **Typ:** array
 
-**_experience > decisioning > contents > components**
++++
+
+++_experience > decisioning > contents > components
 
 **Fält:** komponenter
 **Beskrivning:** Komponenterna i det innehåll som representerar beslutsalternativet, inklusive alla deras språkvarianter. Specifika komponenter hittas av &#39;dx:format&#39;, &#39;dc:subject&#39; och &#39;dc:language&#39; eller en kombination av dessa. Dessa metadata används för att hitta eller representera innehållet som är kopplat till ett erbjudande och integrera det enligt placeringskontraktet.
@@ -148,14 +158,18 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
    **Typ:** string
    **Exempel:** &quot;https://cdn.adobe.io/tracker?code=23432&amp;redirect=/content/projectx/fragment/prod/static/1232324wd32.jpeg&quot;
 
-**_experience > decisioning > contents > Placement**
++++
+
++++ _experience > decisioning > contents > Placement
 
 **Fält:** placering
 **Titel:** Placement
 **Beskrivning:** Placering att följa. Värdet är URI (@id) för erbjudandeplaceringen som refereras. Se schema https://ns.adobe.com/experience/decisioning/placement.
 **Typ:** string
 
-#### _experience > Decision > Lifecycle Status
++++
+
++++ _experience > Decision > Lifecycle Status
 
 **Fält:** lifecycleStatus
 **Titel:** Livscykelstatus
@@ -163,30 +177,40 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 **Typ:** string
 **Möjliga värden:** &quot;Utkast&quot; (standard), &quot;Godkänd&quot;, &quot;Live&quot;, &quot;Slutförd&quot;, &quot;Arkiverad&quot;
 
-#### _experience > Decision > Decision Option Name
++++
+
++++ _experience > Decision > Decision Option Name
 
 **Fält:** name
 **Titel:** Namn på beslutsalternativ
 **Beskrivning:** Alternativnamn som visas i olika användargränssnitt.
 **Typ:** string
 
-#### _experience > decisioning > taggar
++++
+
++++ _experience > decisioning > taggar
 
 **Fält:** taggar
 **Titel:** Taggar
 **Beskrivning:** Den uppsättning taggar som är associerade med den här entiteten. Taggarna används i filteruttryck för att begränsa det totala lagret till en delmängd (kategori).
 **Typ:** array
 
++++
+
 <!--Field without name under tags: Description: An identifier of a tag object. The value is the @id of the tag that is referenced. See tag schema: https://ns.adobe.com/experience/decisioning/tag. Type: string-->
 
-## repo {#repo}
++++ repo {#repo}
 
 **Fält:** repo
 **Typ:** object
 
-### _repo > Decision Option ETag
++++
+
++++ _repo > Decision Option ETag
 
 **Fält:** etag
 **Titel:** Beslutsalternativ ETag
 **Beskrivning:** Revisionen som beslutsalternativsobjektet användes när ögonblicksbilden togs.
 **Typ:** string
+
++++

@@ -6,10 +6,10 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 692d0aae-6fa1-40b8-a35f-9845d78317a3
-source-git-commit: f5d5c9dacd640b130dd4bcbaab803ecc7e999d10
+source-git-commit: 78675ca22d8ee9a93d9af128d5708c305523da78
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 1%
+source-wordcount: '1058'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +32,9 @@ I följande tabell visas giltiga värden som utgör *Content-Type* och *Accepter
 | Acceptera | `application/vnd.adobe.xdm+json; schema="https://ns.adobe.com/experience/offer-management/decision-response;version=1.0"` |
 | Content-Type | `application/vnd.adobe.xdm+json; schema="https://ns.adobe.com/experience/offer-management/decision-request;version=1.0"` |
 
-**API-format**
+## API-begäran {#request}
+
+### API-format
 
 ```https
 POST /{ENDPOINT_PATH}/{CONTAINER_ID}/decisions
@@ -43,7 +45,7 @@ POST /{ENDPOINT_PATH}/{CONTAINER_ID}/decisions
 | `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/ode/` |
 | `{CONTAINER_ID}` | Behållaren där besluten finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
 
-**Begäran**
+### Begäran
 
 ```shell
 curl -X POST \
@@ -122,7 +124,7 @@ curl -X POST \
 | `xdm:responseFormat.xdm:option` | Den här flaggan identifierar den specifika metadatainformationen som returneras för `xdm:option`. | `name`, `characteristics` |
 | `xdm:responseFormat.xdm:placement` | Den här flaggan identifierar den specifika metadatainformationen som returneras för `xdm:placement`. | `name`, `channel`, `componentType` |
 
-**Svar**
+### Svar
 
 Ett lyckat svar returnerar information om ditt förslag, inklusive dess unika `xdm:propositionId`.
 
@@ -192,6 +194,20 @@ Ett lyckat svar returnerar information om ditt förslag, inklusive dess unika `x
 | `xdm:propositions.xdm:fallback.dc:format` | Resursens fysiska eller digitala manifestation. Formatet bör vanligtvis innehålla resursens medietyp. Formatet kan användas för att avgöra vilken programvara, maskinvara eller annan utrustning som behövs för att visa eller använda resursen. Vi rekommenderar att du väljer ett värde från ett styrt vokabulär, till exempel listan med [Internetmedietyper](http://www.iana.org/assignments/media-types/) definiera datormedieformat. | `"dc:format": "image/png"` eller `"image/jpeg"` |
 | `xdm:propositions.xdm:fallback.xdm:deliveryURL` | En valfri URL för att läsa resursen från ett leveransnätverk eller en tjänstslutpunkt. Den här URL:en används för att komma åt resursen offentligt från en användaragent. | `https://d37yhxrr0p3l3l.cloudfront.net/0fd0f090-a148-11ea-89e3-f1f2ad52f7e8/urn:aaid:sc:US:a68c86a6-9295-4940-a083-11916b665500/0/40d78a12-f8b6-3f07-8e67-7cb8ae2cc7ec` |
 | `ode:createDate` | Den tid då beslutssvarsmeddelandet skapades. Detta representeras som epoktid. | `"ode:createDate": 1566497582038` |
+
+**Svarskoder**
+
+Tabellen nedan visar alla koder som kan returneras i svaret:
+
+| Code | Beskrivning |
+|  ---  |  ---  |
+| 200 | Lyckades. Beslut har fattats om vissa verksamheter |
+| 400 | Ogiltig begärandeparameter. Servern kan inte tolka begäran på grund av felaktig syntax. |
+| 403 | Otillåten, otillräcklig behörighet. |
+| 422 | Enhet som inte kan bearbetas. Syntaxen för begäran är korrekt, men på grund av semantiska fel kan den inte behandlas. |
+| 429 | För många förfrågningar. Användaren har skickat för många begäranden under en viss tid. |
+| 500 | Internt serverfel. Servern påträffade ett oväntat tillstånd som gjorde att den inte kunde slutföra begäran. |
+| 503 | Tjänsten är inte tillgänglig på grund av serveröverbelastning. Servern kan för närvarande inte hantera begäran på grund av en tillfällig överbelastning. |
 
 ## Videokurs {#video}
 

@@ -4,9 +4,9 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 3adcd750089d81e6216316dc3d39f6a7982033f4
+source-git-commit: 78675ca22d8ee9a93d9af128d5708c305523da78
 workflow-type: tm+mt
-source-wordcount: '2218'
+source-wordcount: '2280'
 ht-degree: 18%
 
 ---
@@ -14,6 +14,13 @@ ht-degree: 18%
 # Dokumentationsuppdateringar {#latest-updates}
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
+
+## Januari 2023 {#jan-2023}
+
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version 23 av jan har beskrivits i dokumentationen. [Läs mer](release-notes.md)
+* Tillgänglighetsfunktioner i [!DNL Journey Optimizer] grupperas nu på en dedikerad sida. [Läs mer](../start/accessibility.md)
+* En ny sida om datahantering har lagts till i [!DNL Journey Optimizer]. [Läs mer](../data/gs-data.md)
+* En tabell med alla koder som kan returneras i svaret har lagts till när erbjudanden levereras med hjälp av besluts-API:t. [Läs mer](../offers/api-reference/offer-delivery-api/decisioning-api.md)
 
 ## December 2022 {#december-2022}
 

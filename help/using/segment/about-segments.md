@@ -8,40 +8,54 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: bfd262db2fd12afbb7df6c73c68b29d18a1abf98
+source-git-commit: 78675ca22d8ee9a93d9af128d5708c305523da78
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
 
 # Kom igång med Adobe Experience Platform {#about-segments}
 
-[!DNL Journey Optimizer]  kan du skapa Adobe Experience Platform-segment med hjälp av kundprofildata i realtid direkt från **[!UICONTROL Segments]** och utnyttja dem på era resor.
+[!DNL Journey Optimizer]  kan du skapa Adobe Experience Platform-segment med hjälp av kundprofildata i realtid direkt från **[!UICONTROL Segments]** och använda dem i era resor eller kampanjer.
 
-Observera att segment också kan skapas från själva segmenteringstjänsten. Läs mer i [Dokumentation för Adobe Experience Platform Segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
+Dessutom kan segment också skapas från själva segmenteringstjänsten. Läs mer i [Dokumentation för Adobe Experience Platform Segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
 
-Du kan utnyttja segment i resor på olika sätt:
+## Använd segment i [!DNL Journey Optimizer] {#segments-in-journey-optimizer}
 
-* Använd en **Lässegment** orkestreringsaktivitet för att få alla personer som tillhör det angivna segmentet att komma in på resan. Meddelanden som ingår i resan skickas till personer som tillhör segmentet. Säg att du har ett &quot;silverkundssegment&quot;. Med den här aktiviteten kan ni få alla silverkunder att ta sig in på en resa och skicka en serie personaliserade meddelanden till dem.
+Du kan använda segment i **[!DNL Journey Optimizer]** på olika sätt:
 
-   Mer information om hur du använder **[!UICONTROL Read segment]** aktivitet, se [det här avsnittet](../building-journeys/read-segment.md#configuring-segment-trigger-activity).
+* Välj ett segment som **målgrupp för en kampanj**, där meddelandet skickas till alla personer som tillhör det valda segmentet. [Lär dig definiera målgruppen för en kampanj](../campaigns/create-campaign.md#define-the-audience-audience).
 
-* Använd **Segmentkvalificering** aktivitet för att få enskilda att komma in på eller gå vidare i en resa baserat på Adobe Experience Platform segmententréer och utträde. Du kan till exempel få alla nya silverkunder att resa och skicka meddelanden till dem. Mer information om hur du använder den här aktiviteten finns i [det här avsnittet](../building-journeys/segment-qualification-events.md).
+* Använd en **Lässegment** samordning av en resa för att få alla personer i segmentet att komma in på resan och ta emot de meddelanden som ingår i resan.
 
-* Bygge **komplexa förhållanden** på resorna med den enkla eller avancerade uttrycksredigeraren. Läs mer i [det här avsnittet](../building-journeys/condition-activity.md#using-a-segment).
+   Säg att du har ett &quot;silverkundssegment&quot;. Med den här aktiviteten kan ni få alla silverkunder att ta sig in på en resa och skicka en serie personaliserade meddelanden till dem. [Lär dig konfigurera en Läs-segmentaktivitet](../building-journeys/read-segment.md#configuring-segment-trigger-activity).
+
+* Använd **Segmentkvalificering** händelseaktivitet på en resa som får enskilda att komma in på eller gå framåt i resan baserat på Adobe Experience Platform segmentingångar och utgångar.
+
+   Du kan till exempel få alla nya silverkunder att resa och skicka meddelanden till dem. Mer information om hur du använder den här aktiviteten finns i [Lär dig konfigurera en segmentkvalificeringsaktivitet](../building-journeys/segment-qualification-events.md).
+
+* Använd **Villkor** aktivitet i en resa för att skapa villkor baserade på segmentmedlemskap. [Lär dig hur du använder segment under förhållanden](../building-journeys/condition-activity.md#using-a-segment).
 
 ## Metoder för utvärdering av målgrupper{#evaluation-method-in-journey-optimizer}
 
-I Adobe Journey Optimizer genereras målgrupper från segmentdefinitioner med någon av dessa utvärderingsmetoder:
+I Adobe Journey Optimizer genereras målgrupper från segmentdefinitioner med en av två utvärderingsmetoder:
 
-* Direktuppspelningssegmentering - målgruppslistan för segmentet hålls uppdaterad i realtid medan nya data flödar in i systemet. Direktuppspelningssegmentering är en kontinuerlig process för val av data som uppdaterar era segment som svar på användaraktivitet. När ett segment har skapats och sparats tillämpas segmentdefinitionen på inkommande data till Journey Optimizer. Tillägg och borttagningar av segment behandlas regelbundet, vilket säkerställer att målgruppen förblir relevant.
+* **Direktuppspelningssegmentering**: Målgruppslistan för segmentet hålls uppdaterad i realtid när nya data flödar in i systemet.
 
-* Gruppsegmentering - målgruppslistan för segmentet utvärderas var 24:e timme. Som ett alternativ till en pågående dataurvalsprocess flyttar gruppsegmentering alla profildata samtidigt genom segmentdefinitioner för att skapa motsvarande målgrupper. När segmentet har skapats sparas det och lagras så att du kan exportera det för användning.
+   Direktuppspelningssegmentering är en kontinuerlig process för val av data som uppdaterar era segment som svar på användaraktivitet. När ett segment har skapats och sparats tillämpas segmentdefinitionen på inkommande data till Journey Optimizer. Det innebär att enskilda personer läggs till eller tas bort från segmentet när profildata ändras, vilket säkerställer att målgruppen alltid är relevant.
 
-Fastställandet mellan gruppsegmentering och direktuppspelningssegmentering görs av systemet för varje segmentdefinition, baserat på komplexiteten och kostnaden för att utvärdera segmentregeln.
+* **Gruppsegmentering**: Målgruppslistan för segmentet utvärderas var 24:e timme.
 
-Du kan visa utvärderingsmetoden för varje segment i **[!UICONTROL Evaluation method]** kolumn i segmentlistan.
+   Gruppsegmentering är ett alternativ till direktuppspelningssegmentering som bearbetar alla profildata samtidigt genom segmentdefinitioner. Detta skapar en ögonblicksbild av målgruppen som kan sparas och exporteras för användning. Till skillnad från direktuppspelningssegmentering kommer gruppsegmentering inte att kontinuerligt uppdatera målgruppslistan i realtid, och nya data som kommer in efter gruppbearbetningen kommer inte att återspeglas i segmentet förrän nästa gruppbearbetning.&quot;
+
+Fastställandet mellan gruppsegmentering och direktuppspelningssegmentering görs av systemet för varje segmentdefinition, baserat på komplexiteten och kostnaden för att utvärdera segmentregeln. Du kan visa utvärderingsmetoden för varje segment i **[!UICONTROL Evaluation method]** kolumn i segmentlistan.
+
+![](assets/evaluation-method.png)
+
+>[!NOTE]
+>
+>Om **[!UICONTROL Evaluation method]** -kolumnen visas inte, du måste lägga till den med hjälp av konfigurationsknappen högst upp till höger i listan.
 
 När du har definierat ett segment första gången läggs profiler till i målgruppen när de kvalificerar sig.
 

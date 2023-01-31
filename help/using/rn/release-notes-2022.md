@@ -4,7 +4,7 @@ product: journey optimizer
 title: Versionsinformation 2022
 description: Versionsinformation om Journey Optimizer 2022
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
-source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
+source-git-commit: 78675ca22d8ee9a93d9af128d5708c305523da78
 workflow-type: tm+mt
 source-wordcount: '3583'
 ht-degree: 8%
@@ -234,7 +234,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 ### Andra ändringar{#sept-2022-other}
 
-* Reseburst-läget har ersatts av Campaign-läget för snabb leverans. [Läs mer](../campaigns/create-campaign.md#rapid-delivery)
+* Reseburst-läget har ersatts av Campaign-läget för snabb leverans. [Läs mer](../push/create-push.md#rapid-delivery)
 * För att förbättra prestandan kan Experience-fältgrupper inte längre användas i resor som börjar med ett Read-segment, en Segment-kvalificering eller en affärshändelseaktivitet. Denna ändring gäller endast för nya resor. Befintliga beteenden behåller det aktuella beteendet. [Läs mer](../start/guardrails.md#expression-editor)
 * Begränsningen på 1 timme för schemalagda lässegmentsresor har tagits bort. Dessa resor kan nu genomföras utan dröjsmål.
 

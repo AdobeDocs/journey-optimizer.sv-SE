@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: c7f691aa-8f89-4f23-b897-53211863eb6d
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 78675ca22d8ee9a93d9af128d5708c305523da78
 workflow-type: tm+mt
 source-wordcount: '2003'
 ht-degree: 0%
@@ -29,24 +29,30 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 <!--Personalized offers form the set of choices for a decision. The objective for decisioning is to take a large inventory of items and apply numerous constraint rules to that inventory to narrow it down and then to rank the qualifying options according to a criteria. The resulting propositions assemble and personalize the experience for specific individuals.-->
 
-## Identifierare {#identifier}
++++ Identifierare
 
 **Fält:** _id
 **Titel:** Identifierare
 **Beskrivning:** En unik identifierare för posten.
 **Typ:** string
 
-## upplevelse {#experience}
++++
+
++++ upplevelse {#experience}
 
 **Fält:** upplevelse
 **Typ:** object
 
-### _experience > decisioning
++++
+
++++ _experience > decisioning
 
 **Fält:** beslut
 **Typ:** object
 
-#### _experience > decisioning > calendarConstraints
++++
+
++++ _experience > decisioning > calendarConstraints
 
 **Fält:** calendarConstraints
 **Titel:** Begränsningsinformation för kalender
@@ -67,21 +73,27 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
    **Beskrivning:** Startdatumet för ett beslutsalternativs giltighet. Alternativ som inte har nått sitt startdatum kan inte föreslås än i beslutsprocessen.
    **Typ:** string
 
-#### _experience > decisioning > properties
++++
+
++++ _experience > decisioning > properties
 
 **Fält:** egenskaper
 **Titel:** Beslutsalternativsegenskaper
 **Beskrivning:** Ytterligare egenskaper eller attribut som tillhör det här särskilda beslutsalternativet. Olika instanser kan ha olika egenskaper (tangenter på kartan). Egenskaperna är namnvärdespar som används för att skilja mellan olika beslutsalternativ. Egenskaper används som värden i innehåll som representerar det här alternativet och som funktioner för att analysera och optimera prestanda för ett alternativ. När alla instanser har samma attribut eller egenskap bör den aspekten modelleras som ett tilläggsschema som härleds från beslutsalternativsinformationen.
 **Typ:** object
 
-#### _experience > decisioning > contents
++++
+
++++ _experience > decisioning > contents
 
 **Fält:** innehåll
 **Titel:** Innehållsinformation
 **Beskrivning:** Innehållsobjekt som återger beslutsobjektet i olika sammanhang. Ett enda beslutsalternativ kan ha flera innehållsvarianter. Innehåll är information som riktar sig till en målgrupp som konsumeras i en (digital) upplevelse. Innehållet levereras via kanaler till en viss plats.
 **Typ:** array
 
-**_experience > decisioning > contents > components**
++++
+
+++_experience > decisioning > contents > components
 
 **Fält:** komponenter
 **Beskrivning:** Komponenterna i det innehåll som representerar beslutsalternativet, inklusive alla deras språkvarianter. Specifika komponenter hittas av &#39;dx:format&#39;, &#39;dc:subject&#39; och &#39;dc:language&#39; eller en kombination av dessa. Dessa metadata används för att hitta eller representera innehållet som är kopplat till ett erbjudande och integrera det enligt placeringskontraktet.
@@ -168,14 +180,16 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
    **Typ:** string
    **Exempel:** &quot;https://cdn.adobe.io/tracker?code=23432&amp;redirect=/content/projectx/fragment/prod/static/1232324wd32.jpeg&quot;
 
-**_experience > decisioning > contents > Placement**
+++_experience > decisioning > contents > Placement
 
 **Fält:** placering
 **Titel:** Placement
 **Beskrivning:** Placering att följa. Värdet är URI (@id) för erbjudandeplaceringen som refereras. Se schema https://ns.adobe.com/experience/decisioning/placement.
 **Typ:** string
 
-#### _experience > Decision > Lifecycle Status
++++
+
++++ _experience > Decision > Lifecycle Status
 
 **Fält:** lifecycleStatus
 **Titel:** Livscykelstatus
@@ -183,35 +197,45 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 **Typ:** string
 **Möjliga värden:** &quot;Utkast&quot; (standard), &quot;Godkänd&quot;, &quot;Live&quot;, &quot;Slutförd&quot;, &quot;Arkiverad&quot;
 
-#### _experience > Decision > Decision Option Name
++++
+
++++ _experience > Decision > Decision Option Name
 
 **Fält:** name
 **Titel:** Namn på beslutsalternativ
 **Beskrivning:** Alternativnamn som visas i olika användargränssnitt.
 **Typ:** string
 
-#### _experience > decisioning > profileConstraints
++++
+
++++ _experience > decisioning > profileConstraints
 
 **Fält:** profileConstraints
 **Titel:** Profilbegränsningsdetaljer
 **Beskrivning:** Profilbegränsningarna avgör om ett alternativ är kvalificerat för den här profilidentiteten i det här sammanhanget. Om profilbegränsningen inte behöver ta hänsyn till värdena för varje alternativ, d.v.s. det är en skillnad mellan alternativen från alternativmarkeringen, avbryts hela alternativmarkeringen av profilbegränsningen som utvärderas till &quot;false&quot;. Å andra sidan utvärderas en profilbegränsningsregel som tar ett alternativ som parameter för varje kvalificeringsalternativ i alternativvalet.
 **Typ:** object
 
-**_experience > decisioning > profileConstraints > Description**
++++
+
+++_experience > decisioning > profileConstraints > Description
 
 **Fält:** description
 **Titel:** Beskrivning
 **Beskrivning:** Profilbegränsningsbeskrivning. Den används för att förmedla mänskliga läsbara avsikter om hur eller varför den här profilbegränsningen konstruerades och/eller vilket alternativ som kommer att inkluderas eller exkluderas av den.
 **Typ:** string
 
-**_experience > decisioning > profileConstraints > eligibility Rule**
++++
+
+++_experience > decisioning > profileConstraints > eligibility Rule
 
 **Fält:** eligibilityRule
 **Titel:** Behörighetsregel
 **Beskrivning:** En referens till en beslutsregel som utvärderas till true eller false för en given profil och/eller andra angivna kontextuella XDM-objekt. Regeln används för att bestämma om alternativet kvalificerar sig för en viss profil. Värdet är URI (@id) för den beslutsregel som refereras. Se schema https://ns.adobe.com/experience/decisioning/rule.
 **Typ:** string
 
-**_experience > decisioning > profileConstraints > Profile Constraint Type**
++++
+
+++_experience > decisioning > profileConstraints > Profile Constraint Type
 
 **Fält:** profileConstraintType
 **Titel:** Typ av profilbegränsning
@@ -224,7 +248,9 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 * &quot;allSegments&quot;: &quot;Profilbegränsningen uttrycks som ett eller flera segment och profilen måste vara medlem av alla dem innan den begränsade åtgärden tillåts.&quot;
 * regler: &quot;Profilbegränsningen uttrycks som ett antal olika regler, t.ex. behörighet, tillämplighet, lämplighet, som alla måste utvärderas till true innan den begränsade åtgärden tillåts.&quot;
 
-**_experience > decisioning > profileConstraints > Segment Identifiers**
++++
+
++++_experience > decisioning > profileConstraints > Segment Identifiers
 
 **Fält:** segmentIdentities
 **Titel:** Segmentidentifierare
@@ -260,14 +286,18 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
    **Beskrivning:** Om det finns en sådan representerar det här värdet en identifierare för korsnamnutrymme som är unik för alla identifierare som har namnutrymmesomfång i alla namnutrymmen.
    **Typ:** string
 
-#### _experience > decisioning > rankning
++++
+
++++ _experience > decisioning > rankning
 
 **Fält:** rankning
 **Titel:** Rankningsdetaljer
 **Beskrivning:** Rankning (prioritet). Definierar vad som anses vara den \&quot;bästa åtgärden\&quot; med tanke på beslutskriterierna. Bland alla valda alternativ som uppfyller villkoren för behörighet avgör rangordningsordningen vilket eller vilka översta N-alternativ som föreslås.
 **Typ:** object
 
-**_experience > Decision > ranking > Order Evaluation**
++++
+
+++_experience > decisioning > ranking > Order Evaluation
 
 **Fält:** order
 **Titel:** Orderutvärdering
@@ -296,7 +326,9 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
    **Beskrivning:** En referens till en strategi som rankar en lista över beslutsalternativ. Beslutsalternativen returneras i en ordnad lista. Värdet för den här egenskapen är URI (@id) för funktionen som ska anropas med alternativet on i taget. Se schema https://ns.adobe.com/experience/decisioning/rankingStrategy.
    **Typ:** string
 
-**_experience > Decision > ranking > Priority**
++++
+
++++_experience > Decision > ranking > Priority
 
 **Fält:** prioritet
 **Titel:** Prioritet
@@ -305,23 +337,31 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 **Minsta värde:** 0
 **Standardvärde:** 0
 
-#### _experience > decisioning > taggar
++++
+
++++ _experience > decisioning > taggar
 
 **Fält:** taggar
 **Titel:** Taggar
 **Beskrivning:** Den uppsättning taggar som är associerade med den här entiteten. Taggarna används i filteruttryck för att begränsa det totala lagret till en delmängd (kategori).
 **Typ:** array
 
++++
+
 <!--Field without name under tags: Description: An identifier of a tag object. The value is the @id of the tag that is referenced. See tag schema: https://ns.adobe.com/experience/decisioning/tag. Type: string-->
 
-## repo {#repo}
++++_repo
 
 **Fält:** repo
 **Typ:** object
 
-### _repo > Decision Option ETag
++++
+
++++ _repo > Decision Option ETag
 
 **Fält:** etag
 **Titel:** Beslutsalternativ ETag
 **Beskrivning:** Revisionen som beslutsalternativsobjektet användes när ögonblicksbilden togs.
 **Typ:** string
+
++++
