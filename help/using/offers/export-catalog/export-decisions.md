@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 064762b7-9774-42eb-bcef-1d92bc94a988
-source-git-commit: 78675ca22d8ee9a93d9af128d5708c305523da78
+source-git-commit: a61cbb5b2a6cea21dbaf41a9fcb085fe1b814087
 workflow-type: tm+mt
 source-wordcount: '1542'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 +++
 
-+++ _experience > decisioning > conditions > description**
++++ _experience > decisioning > conditions > description
 
 **Fält:** description
 **Titel:** Beskrivning
@@ -110,7 +110,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 +++
 
-+++_experience > decisioning > conditions > placements**
+++_experience > decisioning > conditions > placements
 
 **Fält:** placeringar
 **Titel:** Placeringsbegränsningar
@@ -125,7 +125,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 +++
 
-+++_experience > decisioning > conditions > profileConstraints**
+++_experience > decisioning > conditions > profileConstraints
 
 **Fält:** profileConstraints
 **Titel:** Profilbegränsning
@@ -205,7 +205,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 +++
 
-+++_experience > decisioning > conditions > ranking**
+++_experience > decisioning > conditions > ranking
 
 **Fält:** rankning
 **Titel:** Rankningsdetaljer
@@ -292,7 +292,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 +++
 
-+++ repo {#repo}
++++ repo
 
 **Fält:** repo
 **Typ:** object
