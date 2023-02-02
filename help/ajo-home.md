@@ -5,9 +5,9 @@ description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
+source-git-commit: cd154b137d7b4e5a3b35948241d2bbbb18265903
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '324'
 ht-degree: 8%
 
 ---
@@ -127,6 +127,9 @@ ht-degree: 8%
     <li>
       <a href="using/email/assets-essentials.md">Assets</a>
     </li>
+    <li>
+      <a href="using/email/content-templates.md">Innehållsmallar</a>
+    </li>
     <p>
     <p>DATAHANTERING</p>
     <li>
@@ -173,6 +176,9 @@ ht-degree: 8%
     <p>ADMINISTRATION</p>
     <li>
       <a href="using/configuration/about-data-sources-events-actions.md">Konfigurationer</a>
+    </li>
+    <li>
+      <a href="using/configuration/frequency-rules.md">Regler</a>
     </li>
     <li>
       <a href="using/configuration/get-started-configuration.md">Kanaler</a>

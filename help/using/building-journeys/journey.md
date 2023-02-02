@@ -8,9 +8,9 @@ role: User
 level: Beginner
 keywords: resa, upptäckt, komma igång
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: cd154b137d7b4e5a3b35948241d2bbbb18265903
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '585'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,9 @@ Utforma avancerade scenarier i flera steg med följande funktioner:
 
 ## Steg för att skapa en resa{#steps-journey}
 
-Använd Adobe Journey Optimizer för att utforma och samordna personaliserade resor från en arbetsyta.
+Använd Adobe Journey Optimizer för att utforma och samordna personaliserade resor från en arbetsyta. De viktigaste stegen för att skapa en resa är följande:
+
+![](assets/journey-creation-process.png)
 
 Adobe Journey Optimizer har en flerkanalig orkestreringsyta som gör att marknadsförarna kan harmonisera marknadsföringen med ett-till-ett-kundengagemang. Med användargränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan för att skapa din resa.
 

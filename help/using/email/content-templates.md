@@ -7,50 +7,80 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 4df89a36705fb53984ba04ba1ae2f45554e47f77
+source-git-commit: cd154b137d7b4e5a3b35948241d2bbbb18265903
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 1%
+source-wordcount: '936'
+ht-degree: 2%
 
 ---
 
-# Skapa innehållsmallar {#content-templates}
+# Arbeta med innehållsmallar {#content-templates}
 
 >[!CONTEXTUALHELP]
 >id="ajo_content_templates"
 >title="Skapa innehållsmallar"
->abstract="Skapa fristående mallar för att återanvända innehåll över resor och kampanjer."
+>abstract="Skapa fristående mallar för återanvändning av innehåll under resor och kampanjer."
 
-För en accelererad och förbättrad designprocess kan du skapa fristående mallar för att enkelt återanvända anpassat innehåll i [!DNL Journey Optimizer] kampanjer och resor.
+För en snabbare och förbättrad designprocess kan du skapa fristående mallar för att enkelt återanvända anpassat innehåll i [!DNL Journey Optimizer] kampanjer och resor.
 
 Med den här funktionen kan innehållsorienterade användare arbeta med mallar utanför kampanjer eller resor. Marknadsförare kan sedan återanvända och anpassa dessa fristående innehållsmallar på sina egna resor eller i sina egna kampanjer.
+
+En användare i företaget ansvarar t.ex. bara för innehållet och har därför inte tillgång till kampanjer eller resor. Den här användaren kan dock skapa en e-postmall som organisationens marknadsförare kan välja att använda i alla e-postmeddelanden som utgångspunkt.
+
+➡️ [Lär dig hur du skapar och använder mallar i den här videon](#video-templates)
 
 >[!CAUTION]
 >
 >Om du vill skapa, redigera och ta bort innehållsmallar måste du ha **[!DNL Manage Library Items]** behörighet som ingår i **[!DNL Content Library Manager]** produktprofil. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager)
 
-En användare i företaget ansvarar t.ex. bara för innehållet och har därför inte tillgång till kampanjer eller resor. Den här användaren kan dock skapa en e-postmall som organisationens marknadsförare kan välja att använda i alla e-postmeddelanden som utgångspunkt.
+## Få åtkomst till och hantera mallar {#access-manage-templates}
+
+Välj **[!UICONTROL Content Management]** > **[!UICONTROL Content Templates]** från den vänstra menyn.
+
+![](assets/content-template-list.png)
+
+Alla mallar som skapades i den aktuella sandlådan - antingen från en resa eller en kampanj med [Spara som mall](#save-as-template) alternativ, antingen från **[!UICONTROL Content Templates]** -menyn visas.
+
+Du kan sortera innehållsmallar efter skapad- eller ändringsdatum. Du kan också välja att bara visa de objekt som du har skapat eller ändrat.
+
+![](assets/content-template-list-filters.png)
+
+Om du vill redigera ett mallinnehåll klickar du på önskat objekt i listan och väljer **[!UICONTROL Edit content]**.
+
+![](assets/content-template-list-edit.png)
+
+Om du vill ta bort en mall väljer du papperskorgsikonen bredvid önskad mall.
+
+![](assets/content-template-list-delete.png)
+
+>[!NOTE]
+>
+>När en mall redigeras eller tas bort påverkas inte kampanjer eller resor inklusive e-post som skapats med den här mallen.
+
+## Skapa innehållsmallar {#create-content-templates}
+
+Det finns två sätt att skapa innehållsmallar:
+
+* Skapa en innehållsmall från grunden med den vänstra listen **[!UICONTROL Content Templates]** -menyn. [Lär dig mer](#create-template-from-scratch)
+
+* När du utformar ett e-postmeddelande inom en kampanj eller resa sparar du ditt e-postinnehåll som en mall. [Lär dig mer](#save-as-template)
+
+När du har sparat din innehållsmall är den tillgänglig för användning i en kampanj eller på en resa. Oavsett om du har skapat från grunden eller från ett tidigare e-postmeddelande kan du nu använda den här mallen när du skapar [e-post](get-started-email-design.md) inom [!DNL Journey Optimizer]. [Lär dig mer](email-templates.md)
 
 >[!NOTE]
 >
 >* Ändringar som görs i innehållsmallar sprids inte till kampanjer eller resor, vare sig de är live eller utkast.
 >
->* När mallar används i en kampanj eller en resa påverkas inte heller de ändringar du gör i kampanj- och reseinnehållet som du har använt tidigare.
+>* När mallar används i en kampanj eller en resa påverkas inte heller den tidigare använda innehållsmallen av ändringar som du gör i kampanj- och reseinnehåll.
 
 
-➡️ [Lär dig hur du skapar och använder mallar i den här videon](#video-templates)
+### Skapa mall från grunden {#create-template-from-scratch}
 
-Följ stegen nedan för att skapa en innehållsmall.
+Följ stegen nedan för att skapa en innehållsmall från grunden.
 
-1. Välj **[!UICONTROL Content Management]** > **[!UICONTROL Content Templates]** från den vänstra menyn.
+1. Öppna innehållsmalllistan via **[!UICONTROL Content Management]** > **[!UICONTROL Content Templates]** vänster meny.
 
    ![](assets/content-template-list.png)
-
-1. Alla mallar som skapades i den aktuella sandlådan - antingen från en resa, en kampanj eller från **[!UICONTROL Content Templates]** -menyn visas.
-
-   >[!NOTE]
-   >
-   >Du kan sortera innehållsmallar efter skapad- eller ändringsdatum.
 
 1. Välj **[!UICONTROL Create template]**.
 
@@ -64,36 +94,74 @@ Följ stegen nedan för att skapa en innehållsmall.
 
 1. Om du vill tilldela etiketter för anpassad eller grundläggande dataanvändning till mallen väljer du **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md).
 
-1. Klicka **[!UICONTROL Create]** och välj hur du vill utforma e-postmeddelandet bland följande alternativ:
+1. Klicka **[!UICONTROL Create]** och välj hur du vill utforma e-postmeddelandet bland de olika alternativen:
 
-   * **[!UICONTROL Design from scratch]**
-   * **[!UICONTROL Code your own]**
-   * **[!UICONTROL Import HTML]**
-   * **[!UICONTROL Select design template]**
-
-   ![](assets/content-template-design.png)
-
-   >[!NOTE]
-   >
-   >Om du väljer en mall kan du välja mellan **[!UICONTROL Sample templates]**, som är färdiga e-postmallar, och **[!UICONTROL Saved templates]**, som är de som skapats antingen från en resa, en kampanj eller från **[!UICONTROL Content Templates]** -menyn. [Läs mer](email-templates.md#save-as-template)
-
-1. E-postdesignern visas. Redigera ditt innehåll efter behov, på samma sätt som du gör för e-post inuti en resa eller kampanj, enligt det alternativ du valt:
-
-   * [Designa din e-post från grunden](content-from-scratch.md) genom designerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets Essentials](assets-essentials.md).
+   * [Designa din e-post från grunden](content-from-scratch.md) via e-postdesignerns gränssnitt.
 
    * [Kod eller kopiera-klistra in Raw-HTML](code-content.md) direkt in i e-postdesignern.
 
    * [Importera befintligt HTML-innehåll](existing-content.md) från en fil eller en ZIP-mapp.
 
-   * [Använd befintligt innehåll](email-templates.md) från en lista med inbyggda eller anpassade mallar.
+   * Använd befintligt innehåll från en lista med inbyggda eller anpassade mallar. Stegen för hur du använder en innehållsmall i ett e-postmeddelande beskrivs i [det här avsnittet](email-templates.md).
+
+   ![](assets/content-template-design.png)
+
+1. The [E-postdesigner](get-started-email-design.md) visas. Redigera innehållet efter behov, på samma sätt som för alla e-postmeddelanden som finns på en resa eller en kampanj, beroende på vilket alternativ du valt.
 
    ![](assets/content-template-designer.png)
 
-1. Klicka **[!UICONTROL Simulate Content]** för att kontrollera din e-poståtergivning. Du kan välja skrivbordsvy eller mobilvy. [Läs mer](preview.md)
+1. Du kan testa ditt innehåll om det behövs. [Lär dig mer](#test-template)
 
-   >[!CAUTION]
-   >
-   >Om du vill simulera innehåll måste du ha **[!DNL Manage Simulate Content]** behörighet som ingår i **[!DNL Content Library Manager]** produktprofil. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager)
+1. När mallen är klar klickar du på **[!UICONTROL Save]**.
+
+1. Klicka vid behov på pilen bredvid mallnamnet för att gå tillbaka till **[!UICONTROL Details]** och redigera mallen.
+
+   ![](assets/content-template-designer-back.png)
+
+Den här mallen kan nu användas när du skapar e-post i [!DNL Journey Optimizer]. [Lär dig mer](email-templates.md)
+
+### Spara som mall {#save-as-template}
+
+>[!CONTEXTUALHELP]
+>id="ajo_messages_depecrated_inventory"
+>title="Lär dig hur du migrerar meddelanden"
+>abstract="Den 25 juli 2022 försvann menyn Meddelanden och meddelanden skrivs nu direkt från en resa. Om du vill återanvända dina gamla meddelanden under resor måste du spara dem som mallar."
+
+När en [e-post](get-started-email-design.md) i en kampanj eller en resa kan du spara ditt e-postinnehåll för framtida återanvändning. Följ stegen nedan för att göra detta.
+
+1. Klicka på ellipsen högst upp till höger på skärmen i e-postdesignern.
+
+1. Välj **[!UICONTROL Save as content template]** i listrutan.
+
+   ![](assets/email_designer-save-template.png)
+
+1. Lägg till ett namn och en beskrivning för den här mallen.
+
+   ![](assets/email_designer-template-name.png)
+
+1. Klicka på **[!UICONTROL Save]**.
+
+1. Mallen sparas i **[!UICONTROL Content Templates]** lista, tillgänglig från [!DNL Journey Optimizer] dedikerad meny. Det blir en fristående innehållsmall som du kan komma åt, redigera och ta bort som alla andra objekt i listan. [Läs mer](#access-manage-templates)
+
+Du kan nu använda den här mallen när du skapar [e-post](get-started-email-design.md) inom [!DNL Journey Optimizer]. [Lär dig mer](email-templates.md)
+
+>[!NOTE]
+>
+>Ändringar i den nya mallen sprids inte till det e-postmeddelande som den kommer från. På samma sätt ändras inte den nya mallen när det ursprungliga innehållet redigeras i det e-postmeddelandet.
+
+## Testa innehållsmallen {#test-template}
+
+Du kan testa återgivningen av alla mallar för e-postinnehåll, oavsett om de har skapats från grunden eller från ett e-postmeddelande. För att göra detta, följ nedanstående steg.
+
+>[!CAUTION]
+>
+>Om du vill simulera innehåll måste du ha **[!DNL Manage Simulate Content]** behörighet som ingår i **[!DNL Content Library Manager]** produktprofil. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager)
+
+1. Öppna innehållsmalllistan via **[!UICONTROL Content Management]** > **[!UICONTROL Content Templates]** och välj en mall.
+
+1. Klicka **[!UICONTROL Edit content]** från **[!UICONTROL Template properties]**.
+
+1. Klicka **[!UICONTROL Simulate Content]** och välj en testprofil för att kontrollera e-poståtergivningen. Du kan välja skrivbordsvy eller mobilvy. [Läs mer](preview.md)
 
    ![](assets/content-template-stimulate.png)
 
@@ -105,17 +173,7 @@ Följ stegen nedan för att skapa en innehållsmall.
 
       ![](assets/content-template-stimulate-proof-surface.png)
 
-1. När mallen är klar klickar du på **[!UICONTROL Save]**.
-
-1. Klicka vid behov på pilen bredvid mallnamnet för att gå tillbaka till **[!UICONTROL Details]** och redigera mallen.
-
-   ![](assets/content-template-designer-back.png)
-
-1. Du kan nu använda den här innehållsmallen när du skapar [e-post](get-started-email-design.md) inom [!DNL Journey Optimizer]. Läs mer på [använda en sparad mall](email-templates.md#use-saved-template).
-
-   ![](assets/email_designer-saved-templates.png)
-
-## Instruktionsvideo{#video-templates}
+## Instruktionsvideo {#video-templates}
 
 Lär dig hur du skapar, redigerar och använder innehållsmallar i [!DNL Journey Optimizer].
 
