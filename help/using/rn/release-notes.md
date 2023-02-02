@@ -4,7 +4,7 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 4df89a36705fb53984ba04ba1ae2f45554e47f77
+source-git-commit: ad0ca954d2ba15293bdde2715a7aaed62b040cce
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 8%
@@ -56,9 +56,8 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 <td>
 <p>Nu kan ni skapa fristående innehållsmallar som kan utnyttjas på olika resor och i kampanjer för snabb återanvändning.</p> 
 </p>
-<!--img src="assets/do-not-localize/"/-->
-<p>Lär dig hur du skapar, redigerar och använder innehållsmallar i <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/email-channel/content-templates.html">den här videon</a>.
-<p>Mer information finns i den <a href="../email/content-templates.md">detaljerade dokumentationen</a>.
+<img src="assets/do-not-localize/content-template.gif"/>
+<p>Lär dig hur du skapar, redigerar och använder innehållsmallar i <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/email-channel/content-templates.html">den här videon</a>. Mer information finns i den <a href="../email/content-templates.md">detaljerade dokumentationen</a>.
 </p>
 </td>
 </tr>
