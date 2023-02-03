@@ -8,9 +8,9 @@ role: Developer, Admin
 level: Intermediate, Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
+source-git-commit: d2ce7d7e717ed5fa171cb3de31915830f391d7f9
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '812'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,10 @@ The `{{context.<contextualAttribute>}}` syntaxen mappas endast till datatypen St
 
 ![](assets/api-triggered-context.png)
 
+
 >[!IMPORTANT]
+>
+>Kontextattributen som skickades till begäran får inte överstiga 50 kB.
 >
 >The `context.system` syntaxen är begränsad till intern användning i Adobe och ska inte användas för att skicka kontextuella attribut.
 
