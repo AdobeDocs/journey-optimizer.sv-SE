@@ -2,9 +2,9 @@
 title: Gruppbeslut
 description: Lär dig hur ni kan leverera offertbeslut till alla profiler i ett visst Adobe Experience Platform-segment.
 exl-id: 810c05b3-2bae-4368-bf12-3ea8c2f31c01
-source-git-commit: f3f38e7db95bd1a6dc41b1626177c800280fb71c
+source-git-commit: a56d675e014d55064073eba011fb50e2d363844d
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '812'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Innan du konfigurerar en jobbförfrågan bör du kontrollera att du har skapat:
 
    >[!NOTE]
    >
-   >Ett batchjobb tar bort profilögonblicksbilden som inträffar en gång om dagen. Vid gruppbeslut avbryts frekvensen och profiler läses alltid in från den senaste ögonblicksbilden.
+   >Ett batchjobb tar bort profilögonblicksbilden som inträffar en gång om dagen. Vid gruppbeslut avbryts frekvensen och profiler läses alltid in från den senaste ögonblicksbilden. Förvänta dig att vänta upp till 24 timmar efter att du har skapat ett segment innan du provar API för gruppbeslut.
 
 * **Ett beslut** i Adobe Journey Optimizer. [Lär dig hur du skapar ett beslut](offer-activities/create-offer-activities.md)
 
