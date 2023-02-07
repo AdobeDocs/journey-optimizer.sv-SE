@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: aktivitet, villkor, arbetsyta, resa
 exl-id: 496c7666-a133-4aeb-be8e-c37b3b9bf5f9
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: c247fe725492a2f3997564bae52ebddeb69c5272
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 7%
+source-wordcount: '1438'
+ht-degree: 6%
 
 ---
 
@@ -130,7 +130,9 @@ Du kan använda den här villkorstypen för att öka volymen på dina leveranser
 
 Standardvärdet är 1 000.
 
-Räknaren gäller endast den valda reseversionen. Räknaren återställs till noll efter en månad. Efter en återställning tar de infogade profilerna den nominella sökvägen igen tills räknargränsen nås.
+Räknaren gäller endast den valda reseversionen. Räknaren återställs till noll efter en månad, efter en ny reseversion eller en dubblettversion av resan. Efter en återställning tar de infogade profilerna den nominella sökvägen igen tills räknargränsen nås.
+
+När en övre profil definieras för en återkommande resa återställs inte räknaren efter varje upprepning.
 
 Den nominella banan har alltid företräde framför den alternativa banan, även om du flyttar den alternativa banan ovanför den nominella banan på arbetsytan.
 
