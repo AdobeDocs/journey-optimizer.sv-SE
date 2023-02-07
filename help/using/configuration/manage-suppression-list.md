@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: dämpning, lista, studsa, e-post, optimering, karantän
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-source-git-commit: 0c5b0ff95ccfc1140eb380bf321c810a594946e6
+source-git-commit: 508576b1ee161a7efe46a2c553bd309db7ac2f7d
 workflow-type: tm+mt
-source-wordcount: '1456'
+source-wordcount: '1454'
 ht-degree: 1%
 
 ---
@@ -30,17 +30,19 @@ Läs mer om begrepp och användning i listan över inaktiveringar i [det här av
 
 Om du vill få tillgång till en detaljerad lista över utelämnade e-postadresser och domäner går du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** och markera **[!UICONTROL Suppression list]**.
 
+
+![](assets/suppression-list-access.png)
+
 >[!CAUTION]
 >
 >Behörigheterna att visa, exportera och hantera undertryckningslistan är begränsade till [Reseadministratörer](../administration/ootb-product-profiles.md#journey-administrator). Läs mer om hantering [!DNL Journey Optimizer] användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
 
-![](assets/suppression-list-access.png)
 
 Det finns filter som hjälper dig att bläddra igenom listan.
 
 ![](assets/suppression-list-filters.png)
 
-Du kan filtrera på **[!UICONTROL Suppression category]**, **[!UICONTROL Address type]**, eller **[!UICONTROL Reason]**. Välj alternativ för varje kriterium. När du har valt det här alternativet kan du rensa alla filter eller alla filter som visas ovanpå listan.
+Du kan filtrera på **[!UICONTROL Suppression category]**, **[!UICONTROL Address type]**, eller **[!UICONTROL Reason]**. Välj ett eller flera alternativ för varje kriterium. När du har valt det här alternativet kan du rensa alla filter eller alla filter som visas ovanpå listan.
 
 ![](assets/suppression-list-filtering-example.png)
 
