@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation 2022
 description: Versionsinformation om Journey Optimizer 2022
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
-source-git-commit: 78675ca22d8ee9a93d9af128d5708c305523da78
+source-git-commit: d5be5ba43351e3143fce7f64878baceb8507d7f8
 workflow-type: tm+mt
-source-wordcount: '3583'
+source-wordcount: '3575'
 ht-degree: 8%
 
 ---
@@ -177,7 +177,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <tr>
 <td>
 <p>Som Journey Optimizer-användare kan du nu få åtkomst till systemvarningar via användargränssnittet för att få meddelanden när resorna inte fungerar som förväntat. Du kan visa tillgängliga aviseringar och prenumerera på dem. Den första varningen som är tillgänglig med den här versionen varnar dig om en Läs segment-aktivitet inte har bearbetat någon profil under den definierade tidsramen. Mer kommer nu när arbetsflödet är olåst.</p>
-<p>Mer information finns i den <a href="../reports/alerts.md">detaljerade dokumentationen</a>.
+<!--p>For more information, refer to the <a href="../reports/alerts.md">detailed documentation</a>.</p-->
 </td>
 </tr>
 </tbody>
@@ -406,7 +406,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 * **URL-spårningsparametrar** - Du kan nu använda uttrycksredigeraren för att konfigurera parametrar för URL-spårning i dina e-postytor (t.ex. förinställningar). [Läs mer](../email/email-settings.md#url-tracking)
 
-**Beslutsledning**
+**Beslutshantering**
 
 * **Målgruppsstorlek** - En ny uppskattningskomponent för målgruppsstorlek visas nu i användargränssnittet när du skapar en beslutsregel, när du väljer ett segment eller en regel för att ange ett erbjudande eller när du lägger till ett segment eller en regel i ett beslutsomfång.
 
@@ -507,7 +507,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 ### Förbättringar
 
-**Beslutsledning**
+**Beslutshantering**
 
 * **Stöd för HTML och JSON-filer** - Nu kan du dra och släppa externa HTML- och JSON-filer från Adobe Experience Cloud resursbibliotek till erbjudanderepresentationsinnehållet. [Läs mer](../offers/offer-library/add-representations.md#html-json)
 
@@ -633,7 +633,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 * **förifyllda landningssidor** - Det är nu möjligt att ge användarna möjlighet att förifylla landningssidans fält med profilinformation. [Läs mer](../landing-pages/create-lp.md#configure-primary-page)
 
-**Beslutsledning**
+**Beslutshantering**
 
 * **Besluts-API på Edge** - Edge Decisioning API kan leverera och återge personaliserade erbjudanden som hanteras i beslutsprocessen. Du kan skapa erbjudanden och andra relaterade objekt med hjälp av användargränssnittet (UI) eller API:erna för beslutshanteringen. [Läs mer](../offers/api-reference/offer-delivery-api/edge-decisioning-api.md)
 
@@ -670,7 +670,7 @@ Som Adobe Campaign Standard-kund kan du nu skicka e-post, push-meddelanden och S
 * För att undvika att det finns onödiga fält i det enhetliga profilschemat är händelseschemat för resan som standard inte längre aktiverat för profiler. Om det behövs kan du aktivera det. [Läs mer](../reports/sharing-overview.md)
 * Nya steghändelser för exportjobb skickas nu av Journey Optimizer till Adobe Experience Platform. Exempel på frågor har lagts till i dokumentationen. [Läs mer](../reports/query-examples.md)
 
-**Beslutsledning**
+**Beslutshantering**
 
 * Du kan nu ange om begränsningen av erbjudanden ska gälla för alla användare eller för en viss profil, och för alla placeringar eller per placering. [Läs mer](../offers/offer-library/add-constraints.md#capping)
 * Med API:t för gruppbeslut kan organisationer använda beslutsstyrningsfunktioner för alla profiler i ett visst segment i ett enda anrop. Erbjudandeinnehållet för varje profil i segmentet placeras i en AEP-datauppsättning där det är tillgängligt för anpassade batcharbetsflöden. [Läs mer](../offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
@@ -773,7 +773,7 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 
 <!--* decision management reports are now available in Journey Optimizer. You can access the following metrics: Offers sent - Offers' impression rate - Offers' click rate - Breakdown report on Offers' sent.-->
 
-**Beslutsledning**
+**Beslutshantering**
 
 * Rankningar och AI-rankning grupperas nu tillsammans i en enda flik.
 
@@ -819,7 +819,7 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 
 * Journey Optimizer steghändelser kan nu länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html). The **profileID** -fältet, i det inbyggda schemat för händelser i resan, definieras nu som ett identitetsfält. [Läs mer](../reports/sharing-overview.md#integration-cja)
 
-**Beslutsledning**
+**Beslutshantering**
 
 * När du uppdaterar ett erbjudande, ett reserverbjudande, en erbjudandesamling eller ett erbjudandebeslut som direkt eller indirekt hänvisas till i ett publicerat meddelande, återspeglas uppdateringarna nu automatiskt i motsvarande meddelande, utan att det behöver publiceras på nytt. [Läs mer](../offers/offers-e2e.md#insert-decision-in-email)
 
