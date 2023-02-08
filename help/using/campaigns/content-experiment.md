@@ -11,9 +11,9 @@ keywords: innehåll, experiment, multipelt, målgrupp, behandling
 hide: true
 hidefromtoc: true
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: 08d842a877ed52349eef5a901aaf9c75187c69d3
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '1032'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 1%
 >
 >The **Content Experiment** är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
 
-Använd Journey Optimizer Content Experiment för att definiera olika leveranssätt. Intressemålgruppen fördelas slumpmässigt till varje behandling för att avgöra vilken som fungerar bäst med avseende på intressemätningen. Du kan välja att variera leveransinnehåll, ämne eller avsändare.
+Med Journey Optimizer Content Experiment kan ni definiera flera olika leveranssätt för att mäta vilken som fungerar bäst för er målgrupp. Du kan välja att variera leveransinnehåll, ämne eller avsändare. Intressemålgruppen fördelas slumpmässigt till varje behandling för att avgöra vilken som fungerar bäst med det angivna mätvärdet.
 
 >[!NOTE]
 >
@@ -52,68 +52,53 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 
    ![](assets/content_experiment_1.png)
 
-1. Välj kanal och sedan **[!UICONTROL Surface]** du vill använda för den här leveransen. Mer information finns i [Kanalytor](../configuration/channel-surfaces.md) sida.
+1. Välj kanal och sedan **[!UICONTROL Surface]** du vill använda för den här leveransen och klicka på **[!UICONTROL Create]**. Mer information finns i [Kanalytor](../configuration/channel-surfaces.md) sida.
 
    ![](assets/content_experiment_2.png)
 
-1. Klicka på **[!UICONTROL Create]**.
-
 1. Konfigurera **[!UICONTROL Properties]** av leveransen:
-   * **[!UICONTROL Title]**
+   * **[!UICONTROL Name]**
    * **[!UICONTROL Description]**
-   * **[!UICONTROL Category]**: **[!UICONTROL Marketing]** / **[!UICONTROL Transactional]**
-
-1. Om du vill starta ditt innehållsexperiment växlar du **[!UICONTROL Content experiment]** alternativ. The **[!UICONTROL Content experiment]** visas.
-
-   ![](assets/content_experiment_3.png)
 
 1. Definiera målgruppen. Om du vill göra det klickar du på **[!UICONTROL Select audience]** om du vill visa en lista över tillgängliga Adobe Experience Platform-segment. [Läs mer om segment](../segment/about-segments.md)
 
    I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera individerna från det valda segmentet. [Läs mer](get-started-experiment.md#content-experiment-work)
 
-1. Konfigurera avsnittet Schema om du vill köra kampanjen på ett visst datum eller med en återkommande frekvens. [Läs mer](create-campaign.md)
+   ![](assets/content_experiment_16.png)
 
-1. Klicka **[!UICONTROL Edit content]** för att personalisera din egen **[!UICONTROL Treatments]**.
+1. I **[!UICONTROL Actions tracking]** anger du om du vill spåra hur mottagarna svarar på leveransen: du kan spåra klick och/eller öppningar.
 
-   ![](assets/content_experiment_4.png)
+   Spåra resultat kan nås från kampanjrapporten när kampanjen har genomförts.
 
-## Skapa egna behandlingar {#treatment-experiment}
+1. Konfigurera **[!UICONTROL Schedule]** -avsnitt. [Läs mer](create-campaign.md)
 
-1. Från **[!UICONTROL Edit content]** börja personalisera din behandling A.
+1. Klicka **[!UICONTROL Edit content]** för att personalisera leveransen. [Läs mer](../email/content-from-scratch.md)
 
-   Vi kommer att specificera specialerbjudandet direkt i ämnesraden.
+   ![](assets/content_experiment_17.png)
+
+1. Från **[!UICONTROL Edit content]** börjar du personalisera behandling A.
+
+   För den här behandlingen ska vi specificera specialerbjudandet direkt i ämnesraden och lägga till personalisering.
 
    ![](assets/content_experiment_5.png)
 
-1. När du har designat din första behandling kan du **[!UICONTROL More actions]** knapp, klicka **[!UICONTROL Duplicate]**.
-
-   Du kan också välja att starta en ny behandling från början genom att klicka på **[!UICONTROL Content experiment]** knapp ![](assets/content_experiment_16.png) för att komma åt de avancerade alternativen och sedan **[!UICONTROL Add treatment]**.
-
-   ![](assets/content_experiment_7.png)
-
-1. Ändra **[!UICONTROL Title]** för att särskilja dem bättre.
-
-   ![](assets/content_experiment_8.png)
-
-1. Anpassa din andra behandling efter behov.
-
-   Här väljer vi att inte ange erbjudandet i **[!UICONTROL Subject line]**.
-
-   ![](assets/content_experiment_9.png)
-
-När du har anpassat dina behandlingar kan du börja konfigurera ditt innehållsexperiment.
-
 ## Konfigurera ditt innehållsexperiment {#configure-experiment}
 
-1. När båda leveranserna är personaliserade kan du **[!UICONTROL Edit content]** fönster, markera **[!UICONTROL Configure content experiment]**.
+1. När leveransen har anpassats går du till sammanfattningssidan för Campaign och klickar på **[!UICONTROL Create experiment]** för att börja konfigurera ert innehållsexperiment.
 
-   ![](assets/content_experiment_10.png)
+   ![](assets/content_experiment_3.png)
 
-1. Välj de mål som du vill ställa in för ditt experiment.
+1. Välj **[!UICONTROL Success metric]** som du vill använda för ditt experiment.
 
    För vårt experiment väljer vi **[!UICONTROL Email open]** för att testa om mottagarna öppnar sina e-postmeddelanden om kampanjkoden finns på ärenderaden.
 
    ![](assets/content_experiment_11.png)
+
+1. Klicka **[!UICONTROL Add treatment]** för att skapa så många nya behandlingar som behövs.
+
+   ![](assets/content_experiment_8.png)
+
+1. Ändra **[!UICONTROL Title]** för att särskilja dem bättre.
 
 1. Välj om du vill lägga till en **[!UICONTROL Holdout]** gruppera efter leverans. Den här gruppen kommer inte att få något innehåll från den här kampanjen.
 
@@ -125,9 +110,31 @@ När du har anpassat dina behandlingar kan du börja konfigurera ditt innehålls
 
    ![](assets/content_experiment_13.png)
 
-1. Klicka **[!UICONTROL Save]** när konfigurationen är inställd.
+1. Klicka **[!UICONTROL Create]** när konfigurationen är inställd.
 
-1. När ditt innehållsexperiment är klart kan du klicka **[!UICONTROL Review to activate]** för att visa en sammanfattning av kampanjen. Varningar visas om någon parameter är felaktig eller saknas.
+## Utforma dina behandlingar {#treatment-experiment}
+
+1. Från **[!UICONTROL Edit content]** väljer du behandling B för att ändra innehållet.
+
+   Här väljer vi att inte ange erbjudandet i **[!UICONTROL Subject line]**.
+
+   ![](assets/content_experiment_18.png)
+
+1. Klicka **[!UICONTROL Edit email body]** för att ytterligare personalisera behandlingen B.
+
+   ![](assets/content_experiment_9.png)
+
+1. När du har utformat dina behandlingar klickar du på **[!UICONTROL More actions]** för att få tillgång till behandlingar: **[!UICONTROL Rename]**, **[!UICONTROL Duplicate]** och **[!UICONTROL Delete]**.
+
+   ![](assets/content_experiment_7.png)
+
+1. Om det behövs kan du komma åt **[!UICONTROL Experiment settings]** för att ändra din behandlingskonfiguration.
+
+   ![](assets/content_experiment_19.png)
+
+1. När meddelandeinnehållet har definierats klickar du på **[!UICONTROL Simulate content]** för att styra återgivningen av leveransen och kontrollera personaliseringsinställningarna med testprofiler. [Läs mer](../email/preview.md)
+
+1. När ditt innehållsexperiment är klart kan du klicka på **[!UICONTROL Review to activate]** för att visa en sammanfattning av kampanjen. Varningar visas om någon parameter är felaktig eller saknas.
 
    ![](assets/content_experiment_15.png)
 

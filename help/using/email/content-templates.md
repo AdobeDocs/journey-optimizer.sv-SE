@@ -7,19 +7,14 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: cd154b137d7b4e5a3b35948241d2bbbb18265903
+source-git-commit: 08d842a877ed52349eef5a901aaf9c75187c69d3
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '945'
 ht-degree: 2%
 
 ---
 
 # Arbeta med innehållsmallar {#content-templates}
-
->[!CONTEXTUALHELP]
->id="ajo_content_templates"
->title="Skapa innehållsmallar"
->abstract="Skapa fristående mallar för återanvändning av innehåll under resor och kampanjer."
 
 För en snabbare och förbättrad designprocess kan du skapa fristående mallar för att enkelt återanvända anpassat innehåll i [!DNL Journey Optimizer] kampanjer och resor.
 
@@ -58,6 +53,11 @@ Om du vill ta bort en mall väljer du papperskorgsikonen bredvid önskad mall.
 >När en mall redigeras eller tas bort påverkas inte kampanjer eller resor inklusive e-post som skapats med den här mallen.
 
 ## Skapa innehållsmallar {#create-content-templates}
+
+>[!CONTEXTUALHELP]
+>id="ajo_create_template"
+>title="Definiera en egen innehållsmall"
+>abstract="Skapa en egen mall från scratch för att göra innehållet återanvändbart på flera resor och i flera kampanjer."
 
 Det finns två sätt att skapa innehållsmallar:
 

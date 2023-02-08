@@ -9,10 +9,10 @@ hide: true
 hidefromtoc: true
 keywords: i appen, meddelande, design, formatering
 exl-id: 7d7aa721-96aa-4ebc-a51c-e693f893f34f
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: 08d842a877ed52349eef5a901aaf9c75187c69d3
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 9%
+source-wordcount: '789'
+ht-degree: 8%
 
 ---
 
@@ -194,3 +194,9 @@ Om **[!UICONTROL Advanced formatting mode]** är aktiverat kan du anpassa meddel
 * [Skapa meddelande i appen](create-in-app.md)
 * [Rapport i appen](inapp-report.md)
 * [Konfiguration i appen](inapp-configuration.md)
+
+## Instruktionsvideo{#video}
+
+I videon nedan visas hur du skapar och testar meddelanden i appen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3410471?quality=12&learn=on)

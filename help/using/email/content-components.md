@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: komponenter, e-postdesigner, redigerare, e-post
 exl-id: a4aaa814-3fd4-439e-8f34-faf97208378a
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: 08d842a877ed52349eef5a901aaf9c75187c69d3
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
@@ -168,44 +168,6 @@ Använd **[!UICONTROL Image]** om du vill infoga en bildfil från datorn i ditt 
    ![](assets/email_designer_10.png)
 
 1. Justera övriga formatattribut som marginal, kant osv. eller lägga till en länk för att dirigera om målgruppen till ett annat innehåll från **[!UICONTROL Component settings]** fönster.
-
-## Video {#Video}
-
->[!CONTEXTUALHELP]
->id="ac_edition_video_email"
->title="Videoinställningar"
->abstract="Använd den här komponenten för att infoga en video i e-postmeddelandet. Observera att videoklipp inte fungerar på alla e-postklienter. Vi rekommenderar att du ställer in en reservbild."
-
->[!CONTEXTUALHELP]
->id="ac_edition_video_landing_page"
->title="Videoinställningar"
->abstract="Använd den här komponenten för att infoga en video på landningssidan. Observera att videoklipp inte fungerar på alla meddelandeklienter. Vi rekommenderar att du ställer in en reservbild."
-
->[!CONTEXTUALHELP]
->id="ac_edition_video_fragment"
->title="Videoinställningar"
->abstract="Använd den här komponenten för att infoga en video i fragmentet. Observera att videoklipp inte fungerar på alla meddelandeklienter. Vi rekommenderar att du ställer in en reservbild."
-
->[!CONTEXTUALHELP]
->id="ac_edition_video_template"
->title="Videoinställningar"
->abstract="Använd den här komponenten för att infoga en video i mallen. Observera att videoklipp inte fungerar på alla meddelandeklienter. Vi rekommenderar att du ställer in en reservbild."
-
-Använd **[!UICONTROL Video]** om du vill infoga en video i ditt e-postinnehåll via en URL-länk.
-
-1. Från **[!UICONTROL Content Components]**, dra och släpp **[!UICONTROL Video]** till en **[!UICONTROL Structure component]**.
-
-   ![](assets/email_designer_17.png)
-
-1. Klicka på den nya komponenten.
-
-1. I **[!UICONTROL Video link]** fält för **[!UICONTROL Components settings]** lägg till din video-URL.
-
-   ![](assets/email_designer_18.png)
-
-1. Du kan lägga till en **[!UICONTROL Poster image]** till videon för att ange en bild som ska visas tills publiken klickar på uppspelningsknappen.
-
-1. Justera övriga formatattribut, t.ex. format, marginal, kant. från **[!UICONTROL Component settings]** fönster.
 
 ## Social {#social}
 

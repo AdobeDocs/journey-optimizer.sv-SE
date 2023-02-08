@@ -9,23 +9,33 @@ role: User
 level: Beginner
 keywords: e-post, mallar, design
 exl-id: 94d5e615-a7d6-468c-bee8-1ae5fcd4a694
-source-git-commit: cd154b137d7b4e5a3b35948241d2bbbb18265903
+source-git-commit: 08d842a877ed52349eef5a901aaf9c75187c69d3
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '242'
 ht-degree: 1%
 
 ---
 
 # Använd e-postmallar {#email-templates}
 
+>[!CONTEXTUALHELP]
+>id="ajo_use_template"
+>title="Skapa innehåll från en anpassad mall"
+>abstract="Om du vill börja skapa ditt e-postinnehåll väljer du en befintlig mall som har skapats från grunden eller sparats som en mall från ett tidigare e-postmeddelande."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/email/content-templates.html#create-content-templates" text="Skapa innehållsmallar"
+
 Från **[!UICONTROL Create your email]** skärm, använd **[!UICONTROL Select design template]** för att börja skapa innehåll från en mall.
 
 ![](assets/email_designer-templates.png)
 
 Du kan välja mellan:
+
 * **Exempelmallar**. The [!DNL Journey Optimizer] -gränssnittet har 20 färdiga e-postmallar som du kan välja bland.
+
 * **Sparade mallar**. Du kan också använda en anpassad mall som du antingen:
+
    * Skapat från grunden med **[!UICONTROL Content templates]** -menyn. [Läs mer](content-templates.md#create-template-from-scratch)
+
    * Sparas från ett e-postmeddelande under en resa eller en kampanj med **[!UICONTROL Save as content template]** alternativ. [Läs mer](content-templates.md#save-as-template)
 
 Följ stegen nedan när du vill börja skapa innehåll med någon av exempelmallarna eller sparade mallar.

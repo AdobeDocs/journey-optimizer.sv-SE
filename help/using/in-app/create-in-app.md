@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 keywords: i appen, meddelande, skapa, börja
 exl-id: b3b79fe2-7db3-490d-9c3d-87267aa55eea
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: 08d842a877ed52349eef5a901aaf9c75187c69d3
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '564'
 ht-degree: 3%
 
 ---
@@ -115,3 +115,9 @@ När du har skickat det kan du mäta effekten av dina meddelanden i appen i Camp
 * [Design In-app-meddelande](design-in-app.md)
 * [Rapport i appen](inapp-report.md)
 * [Konfiguration i appen](inapp-configuration.md)
+
+## Instruktionsvideo{#video}
+
+I videon nedan visas hur du skapar, konfigurerar och publicerar meddelanden i appen i dina kampanjer.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3410430?quality=12&learn=on)

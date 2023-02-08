@@ -4,10 +4,10 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: d2ce7d7e717ed5fa171cb3de31915830f391d7f9
+source-git-commit: 08d842a877ed52349eef5a901aaf9c75187c69d3
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 18%
+source-wordcount: '2328'
+ht-degree: 17%
 
 ---
 
@@ -18,6 +18,8 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 ## Februari 2023 {#feb-2023}
 
 * En anteckning har lagts till i den API-utlösta kampanjdokumentationen för att ange att kontextattribut som skickas till begäran inte får överstiga 50 kB. [Läs mer](../campaigns/api-triggered-campaigns.md#contextual)
+
+* Ytterligare information om hur avanmälningsinformation lagras i **Samtycketjänstens datauppsättning** efter att mottagarna har avbeställt prenumerationen via en landningssida. [Läs mer](../landing-pages/lp-use-cases.md#configure-opt-out)
 
 ## Januari 2023 {#jan-2023}
 

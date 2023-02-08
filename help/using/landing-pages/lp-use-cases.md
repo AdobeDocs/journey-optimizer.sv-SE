@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: landning, landningssida, fallstudie
 exl-id: 8c00d783-54a3-45d9-bd8f-4dc58804d922
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: 08d842a877ed52349eef5a901aaf9c75187c69d3
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 1%
+source-wordcount: '927'
+ht-degree: 2%
 
 ---
 
@@ -160,6 +160,13 @@ Om du vill kontrollera att den aktuella profilens val har uppdaterats går du ti
 ![](assets/lp_opt-out-profile-choice.png)
 
 I **[!UICONTROL Attributes]** kan du se att värdet för **[!UICONTROL choice]** har ändrats till **[!UICONTROL no]**.
+
+Information om avanmälan finns i **Samtycketjänstens datauppsättning**. [Läs mer om datauppsättningar](../data/get-started-datasets.md)
+
+>[!NOTE]
+>
+>Om sammanfogningsmetoden är standard [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"} **[!UICONTROL Profiles]** merge policy is **[!UICONTROL Dataset Precedence]**, make sure to enable the **[!UICONTROL AJO Consent Service Dataset]** and to prioritize it in the merge policy. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html#dataset-precedence-profile){target="_blank"}
+
 
 <!--
 
