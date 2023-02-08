@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: dämpning, lista, studsa, e-post, optimering, karantän
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-source-git-commit: 508576b1ee161a7efe46a2c553bd309db7ac2f7d
+source-git-commit: 792eb6d042e748601c9810e6988ecc0b79061dda
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1457'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ Möjliga orsaker till leveransfel är:
 
 ### Undertryckningsregler  {#suppression-rules}
 
-Från **[!UICONTROL Suppression list]** kan du även redigera den parameter för nytt försök som är kopplad till reglerna för inaktivering från **[!UICONTROL Edit suppression rules button]**. Använd det här alternativet om du vill uppdatera tröskelvärdet för nya försök för den aktuella sandlådan. [Läs mer](retries.md)
+Från **[!UICONTROL Suppression list]** kan du även redigera den parameter för nytt försök som är kopplad till reglerna för inaktivering från **[!UICONTROL Edit suppression rules]** -knappen. Använd det här alternativet om du vill uppdatera tröskelvärdet för nya försök för den aktuella sandlådan. [Läs mer om återförsök](retries.md).
 
 
 ## Lägga till adresser och domäner i listan över undertryckningar{#add-addresses-and-domains}
@@ -126,7 +126,7 @@ Följ stegen nedan om du vill lägga till en e-postadress eller en domän i list
 
    ![](assets/suppression-list-add-email-address.png)
 
-1. Välj adresstyp: **[!UICONTROL Email address]** eller **[!UICONTROL Domain address]**.
+1. Välj adresstyp: **[!UICONTROL Email]** eller **[!UICONTROL Domain]**.
 
 1. Ange den e-postadress eller domän som du vill utesluta från sändningen.
 
