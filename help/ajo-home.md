@@ -5,10 +5,10 @@ description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: cd154b137d7b4e5a3b35948241d2bbbb18265903
+source-git-commit: 2ef5c87561df71b1c55a71c237477d34750f8ac7
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 8%
+ht-degree: 12%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 8%
     Designa ett nytt e-postmeddelande eller importera ett befintligt HTML-innehåll
     <p>
     <div>
-    <a href="using/building-journeys/journeys-uc.md">Skapa din första resa</a>
+    <a href="using/building-journeys/journey-gs.md">Skapa den första resan</a>
     </div>
     <p>Lär dig hur du bygger och utför en resa
     <p>
@@ -63,7 +63,7 @@ ht-degree: 8%
     <p>Definiera och hantera behörigheter som tilldelats till [!DNL Journey Optimizer] användare
     <p>
     <div>
-    <a href="using/offers/get-started/starting-offer-decisioning.md">Beslutsledning</a>
+    <a href="using/offers/get-started/starting-offer-decisioning.md">Beslutshantering</a>
     </div>
     <p>Skapa erbjudanden och leverera det bästa erbjudandet och upplevelsen till era kunder
     <p>
@@ -167,7 +167,7 @@ ht-degree: 8%
     <p>
     <p>SEKRETESS</p>
     <li>
-      <a href="https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html" target="_blank">Profiler</a>
+      <a href="https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html" target="_blank">Policyer</a>
     </li>
     <li>
       <a href="https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html"target="_blank">Begäranden</a>

@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: dämpning, lista, studsa, e-post, optimering, karantän
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-source-git-commit: fb4121b426b13e4ac8094a1eb7babdb6660a2882
+source-git-commit: 2a3bb638ff3485b6c74d92d64126b3b5fd2925e6
 workflow-type: tm+mt
 source-wordcount: '1429'
 ht-degree: 1%
@@ -221,7 +221,7 @@ Om du vill ta bort en adress från listan kan du använda **[!UICONTROL Delete]*
 
 Om en Internet-leverantör till exempel har ett avbrott markeras e-post felaktigt som fasta studsar eftersom de inte kan levereras till mottagaren. Dessa e-postadresser måste tas bort från listan över inaktiveringar.
 
-Om du vill hämta adresserna kör du en specifik fråga med anpassade parametrar, baserat på driftstoppets kontext. [Läs mer i det här exemplet](../data/datasets-query-examples.md#isp-outageisp-outage-query).
+Om du vill hämta adresserna kör du en specifik fråga med anpassade parametrar, baserat på driftstoppets kontext. [Läs mer i det här exemplet](../data/datasets-query-examples.md#isp-outage-query).
 
 När de berörda e-postadresserna har identifierats kan du filtrera listan så att de visas. Exempel: ett avbrott i en Internet-leverantör inträffar från den 11 november 2022 till den 13 november 2022 på **test.com** domän, filtrera adresserna som lagts till i listan under tidsramen enligt nedan:
 
