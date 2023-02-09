@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Konfigurera kanalytor
 description: Lär dig konfigurera och övervaka kanalytor
-feature: Application Settings
+feature: Application Settings, Surface
 topic: Administration
 role: Admin
 level: Intermediate
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: 9555c37f8bac295a668f64990e229c6e0e5ceb8d
 workflow-type: tm+mt
 source-wordcount: '1547'
 ht-degree: 0%

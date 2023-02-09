@@ -3,10 +3,10 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Tillgänglighetsfunktioner i Journey Optimizer
 description: Läs mer om tillgänglighet i Journey Optimizer användargränssnitt
-feature: Overview
+feature: Accessibility
 role: User
 level: Beginner
-source-git-commit: 78675ca22d8ee9a93d9af128d5708c305523da78
+source-git-commit: 9555c37f8bac295a668f64990e229c6e0e5ceb8d
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 2%

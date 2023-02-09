@@ -1,16 +1,16 @@
 ---
 title: Hjälptillägg för visuell redigering
 description: Upptäck tillägget för hjälpen i visuell redigering, med vilket du kan skapa och förhandsgranska webbsidor i Journey Optimizer
-feature: Overview
+feature: Web channel
 topic: Content Management
 role: User
 level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: f4a0ec45-d624-4f80-b888-42e5987cdc4f
-source-git-commit: 8d56e3060e78422b028ced17f415497789908ff9
+source-git-commit: 9555c37f8bac295a668f64990e229c6e0e5ceb8d
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '391'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Med webbläsartillägget Adobe Experience Cloud Visual Editing Helper för Googl
 
 Följ stegen nedan om du vill hämta och installera tillägget för hjälpen för visuell redigering.
 
-1. I Google Chrome Web Store går du till [Adobe Experience Cloud Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca){target=&quot;_blank&quot;} webbläsartillägg.
+1. I Google Chrome Web Store går du till [Adobe Experience Cloud Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca){target="_blank"} webbläsartillägg.
 
 1. Klicka på **[!UICONTROL Add to Chrome]** > **[!UICONTROL Add Extension]**.
 
@@ -56,7 +56,7 @@ Tillägget har inga villkorsinställningar och hanterar automatiskt alla instäl
 
 När du använder Adobe [!DNL Journey Optimizer] webbdesigner, om du försöker läsa in en webbplats som inte kan läsas in, visas ett meddelande om att du har installerat [Webbläsartillägg för hjälp för visuell redigering](#install-visual-editing-helper).
 
-Om Adobe Experience Platform Web SDK ännu inte är implementerat på webbplatsen visas ett meddelande i webbdesignern som föreslår att du installerar webbläsartillägget Visual Editing och implementerar [Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target=&quot;_blank&quot;}.
+Om Adobe Experience Platform Web SDK ännu inte är implementerat på webbplatsen visas ett meddelande i webbdesignern som föreslår att du installerar webbläsartillägget Visual Editing och implementerar [Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}.
 
 Om webbplatsen inte kan läsas in eller uppför sig oväntat är en möjlig åtgärd att acceptera cookies på webbplatsen i webbläsaren innan du försöker läsa in den i Adobe [!DNL Journey Optimizer].
 

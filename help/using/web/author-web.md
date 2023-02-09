@@ -1,16 +1,16 @@
 ---
 title: Skapa webbsidor
 description: Lär dig hur du skapar en webbsida och redigerar dess innehåll i Journey Optimizer
-feature: Overview
+feature: Web channel
 topic: Content Management
 role: User
 level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 3847ac1d-2c0a-4f80-8df9-e8e304faf261
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: 9555c37f8bac295a668f64990e229c6e0e5ceb8d
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1059'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ När du har skapat en webbåtgärd från kampanjen kan du redigera innehållet m
 
 >[!CAUTION]
 >
->Ska öppnas i [!DNL Journey Optimizer]måste webbsidan implementeras med [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target=&quot;_blank&quot;}.
+>Ska öppnas i [!DNL Journey Optimizer]måste webbsidan implementeras med [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}.
 
 1. Från **[!UICONTROL Action]** fliken för kampanjen, välj **[!UICONTROL Edit content]** för att börja skapa webbkampanjer.
 
@@ -61,7 +61,7 @@ När du har skapat en webbåtgärd från kampanjen kan du redigera innehållet m
 
    >[!CAUTION]
    >
-   >Webbsidan måste innehålla [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target=&quot;_blank&quot;}.
+   >Webbsidan måste innehålla [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}.
 
 1. Klicka **[!UICONTROL Open web designer]** för att redigera den. [Läs mer](author-web.md)
 
