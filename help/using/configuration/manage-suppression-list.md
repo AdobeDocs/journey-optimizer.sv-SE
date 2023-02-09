@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: dämpning, lista, studsa, e-post, optimering, karantän
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-source-git-commit: 1af4f6c0ec3b529eb53c45e1cfa2fd0148a98b04
+source-git-commit: fb4121b426b13e4ac8094a1eb7babdb6660a2882
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1429'
 ht-degree: 1%
 
 ---
@@ -219,16 +219,15 @@ Om du vill ta bort en adress från listan kan du använda **[!UICONTROL Delete]*
 >
 >Fortsätt med extra omsorg när du funderar på att ta bort en e-postadress eller domän. Om du är osäker kan du kontakta en expert på slutprodukter.
 
+Om en Internet-leverantör till exempel har ett avbrott markeras e-post felaktigt som fasta studsar eftersom de inte kan levereras till mottagaren. Dessa e-postadresser måste tas bort från listan över inaktiveringar.
 
-Om en Internet-leverantör till exempel har ett avbrott kan e-postmeddelanden markeras felaktigt som fasta studsar eftersom de inte kan levereras till mottagaren. Dessa e-postadresser måste tas bort från listan över inaktiveringar.
+Om du vill hämta adresserna kör du en specifik fråga med anpassade parametrar, baserat på driftstoppets kontext. [Läs mer i det här exemplet](../data/datasets-query-examples.md#isp-outageisp-outage-query).
 
-Om du vill göra det filtrerar du listan över inaktiveringar så att den visar e-postadresser eller domäner som påverkas. Exempel: ett avbrott i en Internet-leverantör inträffar från den 11 november 2022 till den 13 november 2022 på **test.com** domän, filtrera adresserna som lagts till i listan under tidsramen enligt nedan:
+När de berörda e-postadresserna har identifierats kan du filtrera listan så att de visas. Exempel: ett avbrott i en Internet-leverantör inträffar från den 11 november 2022 till den 13 november 2022 på **test.com** domän, filtrera adresserna som lagts till i listan under tidsramen enligt nedan:
 
 ![](assets/remove-from-supp-list.png)
 
-Du måste också lägga till ett filter utifrån typen av studs, beroende på detaljer i avbrottet. Dessa uppgifter tillhandahålls av Internet-leverantören, till exempel den exakta felkoden som returneras till avsändaren. Till exempel: `550 <email address> recipient rejected` eller `550 5.1.1 ‘email address’: user lookup success but no user record found`.
-
-När adresserna har identifierats kan de tas bort manuellt från listan med **[!UICONTROL Delete]** -knappen. Dessa adresser kan sedan inkluderas i framtida e-postkampanjer.
+Du kan sedan ta bort e-postadresser i karantän från listan över inaktiveringar med hjälp av **[!UICONTROL Delete]** -knappen.
 
 ## Hämta listan över inaktiveringar {#download-suppression-list}
 
@@ -236,7 +235,7 @@ När adresserna har identifierats kan de tas bort manuellt från listan med **[!
 >[!CONTEXTUALHELP]
 >id="ajo_admin_suppression_list_download"
 >title="Export the list as a CSV file"
->abstract="To download the suppression list, you can either export the current list by generating a new file, or download the file that was previously generated."
+>abstract="To download the suppression list, Qou can either export the current list by generating a new file, or download the file that was previously generated."
 -->
 
 Om du vill exportera listan över inaktiveringar som en CSV-fil följer du stegen nedan:

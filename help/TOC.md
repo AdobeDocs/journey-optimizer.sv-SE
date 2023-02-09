@@ -1,14 +1,14 @@
 ---
 product: Journey Optimizer
 audience: end-user
-user-guide-title: Journey Optimizer Guide
-user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
+user-guide-title: Användarhandbok om Journey Optimizer
+user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 4df89a36705fb53984ba04ba1ae2f45554e47f77
+source-git-commit: fb4121b426b13e4ac8094a1eb7babdb6660a2882
 workflow-type: tm+mt
 source-wordcount: '1311'
-ht-degree: 33%
+ht-degree: 35%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 33%
 + Resor {#orchestrate-journeys}
    + [Kom igång med resor](using/building-journeys/journey.md)
    + Skapa en resa{#create-journey}
-      + [Skapa din första resa](using/building-journeys/journey-gs.md)
+      + [Skapa den första resan](using/building-journeys/journey-gs.md)
       + [Utforma din resa](using/building-journeys/using-the-journey-designer.md)
       + [Testa din resa](using/building-journeys/testing-the-journey.md)
       + [Publicera din resa](using/building-journeys/publishing-the-journey.md)
@@ -315,7 +315,7 @@ ht-degree: 33%
       + [Förstå listan över inaktiveringar](using/reports/suppression-list.md)
    + [Larm](using/reports/alerts.md)
    + [Arbeta med Customer Journey Analytics](using/reports/cja-ajo.md)
-+ Beslutsledning {#offer-decisioning}
++ Beslutshantering {#offer-decisioning}
    + Kom igång med beslutshantering {#get-started-decision}
       + [Om beslutshantering](using/offers/get-started/starting-offer-decisioning.md)
       + [Användargränssnitt](using/offers/get-started/user-interface.md)
@@ -413,10 +413,10 @@ ht-degree: 33%
 + Datahantering {#data-management}
    + [Kom igång med datahantering](using/data/gs-data.md)
    + [Arbeta med scheman](using/data/get-started-schemas.md)
+   + [Frågor](using/data/get-started-queries.md)
    + Journey Optimizer dataset {#datasets}
       + [Kom igång med datauppsättningar](using/data/get-started-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-   + [Frågor](using/data/get-started-queries.md)
 + Konfiguration{#configuration}
    + [Kom igång med Journey Optimizer](using/configuration/get-started-configuration.md)
    + Delegera e-postunderdomäner {#delegate-subdomains}

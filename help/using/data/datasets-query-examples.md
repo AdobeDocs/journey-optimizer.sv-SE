@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: datauppsättning, optimering, användningsfall
 exl-id: 26ba8093-8b6d-4ba7-becf-b41c9a06e1e8
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: fb4121b426b13e4ac8094a1eb7babdb6660a2882
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '884'
 ht-degree: 0%
 
 ---
@@ -144,6 +144,28 @@ Permanenta fel grupperade efter studskod:
 ```sql
 SELECT _experience.customerjourneymanagement.messagedeliveryfeedback.messagefailure.reason AS failurereason, COUNT(*) AS hardbouncecount FROM cjm_message_feedback_event_dataset WHERE _experience.customerjourneymanagement.messagedeliveryfeedback.feedbackstatus = 'bounce' AND _experience.customerjourneymanagement.messagedeliveryfeedback.messagefailure.type = 'Hard' AND _experience.customerjourneymanagement.messageprofile.channel._id = 'https://ns.adobe.com/xdm/channels/email' GROUP BY failurereason
 ```
+
+### Identifiera adresser i karantän efter ett avbrott i en Internet-leverantör{#isp-outage-query}
+
+Om en Internet-leverantör skulle råka ut för ett avbrott måste du identifiera e-postadresser som felaktigt markerats som studsar (i karantän) för specifika domäner under en tidsram. Använd följande fråga om du vill hämta adresserna:
+
+```sql
+SELECT
+    _experience.customerJourneyManagement.emailChannelContext.address AS RecipientAddress,
+    timestamp AS EventTime,
+    _experience.customerJourneyManagement.messageDeliveryfeedback.messageFailure.reason AS "Invalid Recipient"
+FROM cjm_message_feedback_event_dataset
+WHERE
+    eventtype = 'message.feedback' AND
+    DATE(timestamp) BETWEEN '<start-date-time>' AND '<end-date-time>' AND
+    _experience.customerjourneymanagement.messagedeliveryfeedback.feedbackstatus = 'bounce' AND
+    _experience.customerJourneyManagement.emailChannelContext.address ILIKE '%domain.com%'
+ORDER BY timestamp DESC;
+```
+
+där datumformatet är: YYY-MM-DD HH:MM:SS.
+
+Ta bort adresserna från listan över Journey Optimizer-adresser när de har identifierats. [Läs mer](../configuration/manage-suppression-list.md#remove-from-suppression-list).
 
 ## Händelsedatauppsättning för push-spårning {#push-tracking-experience-event-dataset}
 
