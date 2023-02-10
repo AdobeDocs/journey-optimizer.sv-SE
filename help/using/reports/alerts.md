@@ -7,12 +7,10 @@ feature: Alerts
 topic: Administration
 role: Admin
 level: Intermediate
-hide: true
-hidefromtoc: true
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
-source-git-commit: d5be5ba43351e3143fce7f64878baceb8507d7f8
+source-git-commit: 731eb471c5765b0d3efbc9354c64c32cc5e56516
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -24,16 +22,20 @@ Journey Optimizer utnyttjar Adobe Experience Platform varningsfunktioner. På s�
 Läs mer om varningar i Adobe Experience Platform [dokumentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html).
 Mer information om hur du prenumererar på aviseringar och konfigurerar dem finns i detta [page](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html).
 
-I den vänstra menyn, under **Administration**, klicka **Varningar**. Det finns en förkonfigurerad avisering för Journey Optimizer. Den här varningen varnar dig om en nod i ett lässegment inte har bearbetat någon profil under den definierade tidsramen.
+I den vänstra menyn, under **Administration**, klicka **Varningar**.
 
-![](assets/alerts1.png)
+<!--A pre-configured alert for Journey Optimizer is available. This alert will warn you if a read segment node has not processed any profile during the defined time frame.
+
+![](assets/alerts1.png)-->
 
 Om ett sådant oväntat beteende inträffar, skickas ett varningsmeddelande till de som prenumererar på varningen via e-post i det övre högra hörnet av gränssnittet.
 
-![](assets/alerts2.png)
+<!--![](assets/alerts2.png)-->
 
-När [visa varningsregler i Adobe Experience Platform UI](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html)kan du prenumerera på varje regel separat. När du prenumererar på aviseringar via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html)Men varningsreglerna är ordnade i olika prenumerationspaket. Prenumerationsnamnet för I/O-händelsen som motsvarar varningen för Läs segment är: &quot;Besök lässegmentet Fördröjningar, Fel och fel&quot;.
+När [visa varningsregler i Adobe Experience Platform UI](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html)kan du prenumerera på varje regel separat. När du prenumererar på aviseringar via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html)Men varningsreglerna är ordnade i olika prenumerationspaket.
+
+<!--The I/O event subscription name corresponding to the Read segment alert is: "Journey read segment Delays, Failures and Errors".
 
 >[!WARNING]
 >
->Dessa registreringar gäller endast för direktresor. Varningar utlöses inte för resor i testläge.
+>These alerts apply only to live journeys. Alerts will not be triggered for journeys in test mode.-->
