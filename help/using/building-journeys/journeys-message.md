@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: 5297edd0df4ffb9dc7470cbbc68781fc1cec0d27
+source-git-commit: 8c8b00cc68cec3602e9094188ebecc55d502c076
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -134,6 +134,6 @@ Låt oss ta ett exempel med följande inställningar:
 * Åtgärden ska börja kl. 10.00
 * Fönstret är 3 timmar
 
-En profil kan ha en optimal öppningstid som ligger utanför fönstret. John har till exempel en optimal öppning vid klick vid 17:00.
+En profil kan ha en optimal öppningstid som ligger utanför fönstret. John är till exempel bäst öppen vid klick vid 17:00.
 
-På profilnivå finns poäng för varje timme i veckan. I det här exemplet skickas e-postmeddelandet alltid i fönstret. Vid körning kontrollerar systemet listan över bakgrundsmusik i det fönstret (3-timmarsfönster med början kl. 10.00). Systemet jämför sedan poängen för 10, 11 och 12 och avgör vilken av de tre som är högst. E-postmeddelandet skickas då.
+På profilnivå finns poäng för varje timme i veckan. I det här exemplet skickas e-postmeddelandet alltid i fönstret. Vid körning kontrollerar systemet listan över bakgrundsmusik i det fönstret (3-timmarsfönster med början kl. 10.00). Systemet jämför sedan poängen för 10, 11 och 10 och väljer den högsta. E-postmeddelandet skickas då.
