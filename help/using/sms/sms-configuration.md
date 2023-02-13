@@ -6,9 +6,9 @@ description: Lär dig hur du konfigurerar miljön för att skicka SMS med Journe
 role: Admin
 level: Intermediate
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
-source-git-commit: 81ab92022329788c1feea24c7a621ef154d33422
+source-git-commit: d0ef261f81bf9d193a426c0a260d701908afb4d9
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '685'
 ht-degree: 1%
 
 ---
@@ -131,3 +131,5 @@ Du kan nu skicka SMS-meddelanden med Journey Optimizer.
 
 * [Skapa ett SMS-meddelande](create-sms.md)
 * [Lägg till ett meddelande i en resa](../building-journeys/journeys-message.md)
+* [Lägg till ett meddelande i en kampanj](../campaigns/create-campaign.md)
+
