@@ -6,9 +6,9 @@ description: Lär dig hur du konfigurerar miljön för att skicka SMS med Journe
 role: Admin
 level: Intermediate
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
-source-git-commit: d0ef261f81bf9d193a426c0a260d701908afb4d9
+source-git-commit: 740afa0c9c760d815a4358159a0e08f25efd4b8d
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '742'
 ht-degree: 1%
 
 ---
@@ -73,12 +73,12 @@ Så här konfigurerar du din SMS-leverantör med Journey Optimizer:
 
 När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu skapa en kanalyta (t.ex. meddelandeförinställning) för SMS-meddelanden.
 
-## Skapa en kanalyta {#message-preset-sms}
+## Skapa en SMS-yta {#message-preset-sms}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_surface_sms_type"
 >title="Definiera SMS-kategorin"
->abstract="Välj den typ av SMS-meddelanden som ska skickas när den här ytan används: Marknadsföring för SMS-kampanjmeddelanden, som kräver användarens samtycke, eller Transactional för icke-kommersiella SMS-meddelanden, som också kan skickas till avabonnerade profiler i specifika sammanhang."
+>abstract="Välj typ av SMS-meddelanden med den här ytan: Marknadsföring för SMS-kampanjmeddelanden, som kräver användarens samtycke, eller Transactional för icke-kommersiella SMS-meddelanden, som återställning av lösenord."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/privacy/consent/opt-out.html#sms-opt-out-management" text="Avanmäl dig i SMS-marknadsföringsmeddelanden"
 
 När SMS-kanalen har konfigurerats måste du skapa en kanalyta för att kunna skicka SMS-meddelanden från **[!DNL Journey Optimizer]**.
@@ -103,6 +103,15 @@ Så här skapar du en kanalyta:
 
    * Välj **[!UICONTROL SMS Type]** som ska skickas med ytan: **[!UICONTROL Transactional]** eller **[!UICONTROL Marketing]**.
 
+      * Välj **Marknadsföring** för SMS: dessa meddelanden kräver användarens samtycke.
+      * Välj **Transactional** för icke-kommersiella meddelanden, t.ex. orderbekräftelse, meddelanden om lösenordsåterställning eller leveransinformation.
+
+      >[!CAUTION]
+      >
+      >**Transactional** SMS-meddelanden kan skickas till profiler som avbeställer marknadskommunikation. Dessa meddelanden kan bara skickas i särskilda sammanhang.
+
+      När du skapar ett SMS-meddelande måste du välja en giltig kanalyta som matchar den kategori som du valde för meddelandet.
+
    * Välj **[!UICONTROL SMS configuration]** för att associera med ytan.
 
       Mer information om hur du konfigurerar miljön för att skicka SMS-meddelanden finns i [det här avsnittet](#create-api).
@@ -110,6 +119,7 @@ Så här skapar du en kanalyta:
    * Ange **[!UICONTROL Sender number]** &#x200B; som du vill använda för din kommunikation.
 
    * Välj **[!UICONTROL SMS Execution Field]** för att välja **[!UICONTROL Profile attribute]** som är kopplade till profilens telefonnummer.
+
 
 1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara kanalytan som ett utkast och återuppta konfigurationen senare.
 
