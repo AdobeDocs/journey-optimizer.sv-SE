@@ -1,25 +1,25 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Skicka push-meddelanden
+title: Förhandsgranska och testa ditt push-meddelande
 description: Lär dig hur du förhandsgranskar och testar push-meddelanden i Journey Optimizer
 feature: Overview
 topic: Content Management
 role: User
 level: Beginner
 exl-id: aad4e08a-3369-454d-9e32-974347a3b393
-source-git-commit: d1c11881654580247e8d7c92237cad130f11f749
+source-git-commit: 81ab92022329788c1feea24c7a621ef154d33422
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 0%
+source-wordcount: '343'
+ht-degree: 2%
 
 ---
 
-# Skicka push-meddelanden {#send-push}
+# Förhandsgranska och testa ditt push-meddelande {#send-push}
 
 ## Förhandsgranska ditt push-meddelande {#preview-push}
 
-När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du har infogat anpassat innehåll kan du kontrollera hur det här innehållet visas i meddelandet genom att utnyttja testprofildata.
+När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du har infogat anpassat innehåll kan du kontrollera hur det här innehållet visas i meddelandet med hjälp av testprofildata.
 
 1. Klicka på **[!UICONTROL Simulate content]**.
 
@@ -29,11 +29,9 @@ När meddelandeinnehållet har definierats kan du använda testprofiler för att
 
    ![](assets/push_preview_1.png)
 
-1. Använd samma steg som beskrivs ovan för att välja en testprofil, och
+1. När du har valt din testprofil kan du stänga **[!UICONTROL Add test profile]** -fönstret.
 
-   ![](assets/push_preview_2.png)
-
-1. I push-förhandsgranskningen används testprofildata i meddelandeinnehållet.
+1. Från **Förhandsgranska och testa** testprofildata läggs till i meddelandeinnehållet.
 
    Välj den typ av enhet som du vill förhandsgranska innehåll på: **[!UICONTROL iOS]** eller **[!UICONTROL Android]**.
 
@@ -41,11 +39,8 @@ När meddelandeinnehållet har definierats kan du använda testprofiler för att
 
 ## Validera ditt push-meddelande {#push-validate}
 
->[!NOTE]
->
-> För bättre leverans bör du alltid använda telefonnumren i de format som stöds av leverantören. Twilio och Sinch har till exempel bara stöd för telefonnummer i E.164-format.
 
-Du måste även kontrollera varningar i den övre delen av redigeraren.  Vissa av dem är enkla varningar, men andra kan hindra dig från att använda meddelandet. Två typer av varningar kan inträffa:
+Du måste kontrollera varningar i den övre delen av redigeraren. Vissa av dem är enkla varningar, men andra kan hindra dig från att skicka meddelandet. Två typer av varningar kan inträffa: varningar och fel.
 
 * **Varningar** hänvisa till rekommendationer och bästa praxis.
 
@@ -57,6 +52,22 @@ Du måste även kontrollera varningar i den övre delen av redigeraren.  Vissa a
 
    * **[!UICONTROL Push iOS/Android payload has exceeded limit of 4KB]**: storleken på push-meddelanden får inte överskrida 4 kB. Om du vill iaktta den här gränsen försöker du minska användningen av bilder eller känslolägesikoner. Lär dig hur du hanterar ditt push-meddelandeinnehåll i [det här avsnittet](../push/create-push.md).
 
-![](assets/push_alert.png)
+   ![](assets/push_alert.png)
 
-När push-meddelandet är klart slutför du konfigurationen av [resa](../building-journeys/journey-gs.md) eller [kampanj](../campaigns/create-campaign.md) för att skicka den.
+
+>[!NOTE]
+>
+> För bättre leverans bör du alltid använda telefonnumren i de format som stöds av leverantören. Twilio och Sinch har till exempel bara stöd för telefonnummer i E.164-format.
+
+## Skicka push-meddelanden{#push-send}
+
+När ditt push-meddelande är klart slutför du konfigurationen av [resa](../building-journeys/journey-gs.md) eller [kampanj](../campaigns/create-campaign.md) för att skicka den.
+
+**Relaterade ämnen**
+
+* [Konfigurera push-kanal](push-configuration.md)
+* [Rapport om push-meddelanden](../reports/journey-global-report.md#push-global)
+* [Skapa ett push-meddelande](create-push.md)
+* [Lägg till ett meddelande i en resa](../building-journeys/journeys-message.md)
+* [Lägg till ett meddelande i en kampanj](../campaigns/create-campaign.md)
+

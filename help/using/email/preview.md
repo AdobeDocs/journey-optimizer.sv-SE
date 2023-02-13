@@ -2,21 +2,21 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Förhandsgranska meddelanden och skicka korrektur
-description: Lär dig hur du förhandsgranskar och testar meddelanden
+description: Lär dig hur du förhandsgranskar och testar e-postmeddelanden
 feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
 keywords: förhandsgranskning, innehåll, e-post, korrektur, test, profil
 exl-id: f2c2a360-a4b2-4416-bbd0-e27dd014e4ac
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: 81ab92022329788c1feea24c7a621ef154d33422
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 1%
 
 ---
 
-# Förhandsgranska och testa dina meddelanden {#preview-and-proof}
+# Förhandsgranska och testa din e-post {#preview-and-proof}
 
 När e-postinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du infogade [personaliserat innehåll](../personalization/personalize.md)kan du med hjälp av testprofildata kontrollera hur det här innehållet visas i meddelandet.
 

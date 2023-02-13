@@ -8,18 +8,14 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c1027268-0bbe-4e35-a5a6-2aef78083dd3
-source-git-commit: d1c11881654580247e8d7c92237cad130f11f749
+source-git-commit: 81ab92022329788c1feea24c7a621ef154d33422
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '171'
 ht-degree: 8%
 
 ---
 
 # Kom igång med SMS {#get-started-sms}
-
->[!IMPORTANT]
->
->Om det är första gången du skapar ett SMS måste du kontrollera att SMS-kanalen har konfigurerats. [Läs mer](sms-configuration.md).
 
 Använd [!DNL Journey Optimizer] för att skicka textmeddelanden till kunderna på deras mobila enheter. Du kan skapa, anpassa och förhandsgranska meddelanden i textformat från SMS-redigeraren.
 
@@ -33,7 +29,10 @@ SMS-leveranser kan skapas:
 
    Mer information om hur du konfigurerar kampanjen finns i [page](../campaigns/create-campaign.md#configure).
 
-Om det är första gången du skapar ett SMS-meddelande kontrollerar du att SMS-kanalen har konfigurerats. [Läs mer](sms-configuration.md).
+
+>[!IMPORTANT]
+>
+>Om det är första gången du skapar ett SMS måste du kontrollera att SMS-kanalen har konfigurerats. [Läs mer](sms-configuration.md).
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>

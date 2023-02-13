@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 34ab78408981d2b53736b31c94412da06cb860c4
+source-git-commit: 81ab92022329788c1feea24c7a621ef154d33422
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '405'
 ht-degree: 4%
 
 ---
@@ -19,22 +19,18 @@ ht-degree: 4%
 
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms"
->title="SMS-skapande"
->abstract="Lägg till ditt textmeddelande och börja personalisera det med uttrycksredigeraren."
+>title="Skapa ett SMS-meddelande"
+>abstract="Lägg till ditt SMS-meddelande och börja personalisera det med uttrycksredigeraren."
 
->[!NOTE]
->
->I enlighet med branschens standarder och bestämmelser måste alla SMS-marknadsföringsmeddelanden innehålla ett sätt för mottagarna att enkelt avbryta prenumerationen. För att göra detta kan SMS-mottagare svara med nyckelord för deltagande och avanmälan. [Lär dig hur du hanterar avanmälan](../privacy/opt-out.md#sms-opt-out-management-sms-opt-out-management)
+## Lägg till ett SMS-meddelande {#create-sms-journey-campaign}
 
-## Skapa ett SMS-meddelande i en resa eller kampanj {#create-sms-journey-campaign}
-
-Så här börjar du personalisera SMS-meddelandet:
+Bläddra bland flikarna nedan för att lära dig hur du lägger till ett SMS i en kampanj eller under en resa.
 
 >[!BEGINTABS]
 
 >[!TAB Lägga till ett SMS-meddelande på en resa]
 
-1. Öppna kundresan och dra och släpp en SMS-aktivitet från åtgärdsavsnittet på paletten.
+1. Öppna resan och dra och släpp en SMS-aktivitet från **Åtgärder** på paletten.
 
    ![](assets/sms_create_1.png)
 
@@ -44,7 +40,7 @@ Så här börjar du personalisera SMS-meddelandet:
 
    Mer information om hur du konfigurerar en resa finns i [den här sidan](../building-journeys/journey-gs.md)
 
-Nu kan du börja designa ditt SMS-meddelande via **[!UICONTROL Edit content]** -knappen. [Designa ditt SMS-innehåll](#sms-content)
+Nu kan du börja designa ditt SMS-meddelande via **[!UICONTROL Edit content]** -knappen. [Definiera ditt SMS-innehåll](#sms-content)
 
 >[!TAB Lägga till ett SMS-meddelande i en kampanj]
 
@@ -79,6 +75,7 @@ Nu kan du börja designa ditt SMS-meddelande via **[!UICONTROL Edit content]** -
 
 >[!ENDTABS]
 
+
 ## Definiera ditt SMS-innehåll{#sms-content}
 
 1. Klicka på **[!UICONTROL Edit content]** för att konfigurera SMS-innehållet.
@@ -93,8 +90,13 @@ Nu kan du börja designa ditt SMS-meddelande via **[!UICONTROL Edit content]** -
 
    ![](assets/sms-content-preview.png)
 
+>[!NOTE]
+>
+>I enlighet med branschens standarder och bestämmelser måste alla SMS-marknadsföringsmeddelanden innehålla ett sätt för mottagarna att enkelt avbryta prenumerationen. För att göra detta kan SMS-mottagare svara med nyckelord för deltagande och avanmälan. [Lär dig hur du hanterar avanmälan](../privacy/opt-out.md#sms-opt-out-management-sms-opt-out-management)
+
 **Relaterade ämnen**
 
 * [Konfigurera SMS-kanal](sms-configuration.md)
 * [SMS-rapport](../reports/journey-global-report.md#sms-global)
 * [Lägg till ett meddelande i en resa](../building-journeys/journeys-message.md)
+* [Lägg till ett meddelande i en kampanj](../campaigns/create-campaign.md)
