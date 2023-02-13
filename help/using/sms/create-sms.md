@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 81ab92022329788c1feea24c7a621ef154d33422
+source-git-commit: aca38b71ee06e678358bc1451e6d522ea5d0e1b6
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '424'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 4%
 
 ## Lägg till ett SMS-meddelande {#create-sms-journey-campaign}
 
-Bläddra bland flikarna nedan för att lära dig hur du lägger till ett SMS i en kampanj eller under en resa.
+Bläddra bland flikarna nedan för att lära dig hur du lägger till ett SMS-meddelande i en kampanj eller en resa.
 
 >[!BEGINTABS]
 
@@ -86,9 +86,11 @@ Nu kan du börja designa ditt SMS-meddelande via **[!UICONTROL Edit content]** -
 
 1. Använd uttrycksredigeraren för att definiera innehåll och lägga till dynamiskt innehåll. Du kan använda alla attribut, till exempel profilnamnet eller stad. Läs mer om [personalisering](../personalization/personalize.md) och [dynamiskt innehåll](../personalization/get-started-dynamic-content.md) i uttrycksredigeraren.
 
-1. Klicka **[!UICONTROL Save]** och kontrollera meddelandet i förhandsgranskningen. [Läs mer](send-sms.md)
+1. Klicka **[!UICONTROL Save]** och kontrollera meddelandet i förhandsgranskningen.
 
    ![](assets/sms-content-preview.png)
+
+Nu kan du testa och skicka SMS-meddelanden till din målgrupp. [Läs mer](send-sms.md)
 
 >[!NOTE]
 >
@@ -96,6 +98,7 @@ Nu kan du börja designa ditt SMS-meddelande via **[!UICONTROL Edit content]** -
 
 **Relaterade ämnen**
 
+* [Förhandsgranska, testa och skicka SMS-meddelanden](send-sms.md)
 * [Konfigurera SMS-kanal](sms-configuration.md)
 * [SMS-rapport](../reports/journey-global-report.md#sms-global)
 * [Lägg till ett meddelande i en resa](../building-journeys/journeys-message.md)
