@@ -8,16 +8,18 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
-source-git-commit: 731eb471c5765b0d3efbc9354c64c32cc5e56516
+source-git-commit: 83ebd87487551b2fb234a555d7d0e43e80cb7885
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
 
 # Kom igång med aviseringar {#alerts}
 
-Journey Optimizer utnyttjar Adobe Experience Platform varningsfunktioner. På så sätt kan du få åtkomst till systemvarningar via användargränssnittet. Du kan visa tillgängliga aviseringar och prenumerera på dem. När en viss uppsättning villkor för dina åtgärder har nåtts (t.ex. ett eventuellt problem när systemet överskrider ett tröskelvärde), skickas varningsmeddelanden till alla användare i organisationen som har prenumererat på dem. Dessa meddelanden kan upprepas under ett fördefinierat tidsintervall tills varningen har lösts.
+Journey Optimizer utnyttjar Adobe Experience Platform varningsfunktioner. På så sätt kan du få åtkomst till systemvarningar via användargränssnittet. Du kan visa tillgängliga aviseringar och prenumerera på dem.
+
+När en viss uppsättning villkor för dina åtgärder har nåtts (t.ex. ett eventuellt problem när systemet överskrider ett tröskelvärde), skickas varningsmeddelanden till alla användare i organisationen som har prenumererat på dem. Dessa meddelanden kan upprepas under ett fördefinierat tidsintervall tills varningen har lösts.
 
 Läs mer om varningar i Adobe Experience Platform [dokumentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html).
 Mer information om hur du prenumererar på aviseringar och konfigurerar dem finns i detta [page](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html).
@@ -28,9 +30,13 @@ I den vänstra menyn, under **Administration**, klicka **Varningar**.
 
 ![](assets/alerts1.png)-->
 
-Om ett sådant oväntat beteende inträffar, skickas ett varningsmeddelande till de som prenumererar på varningen via e-post i det övre högra hörnet av gränssnittet.
+Om ett oväntat beteende inträffar skickas ett varningsmeddelande till de som prenumererar på varningen via e-post i det övre högra hörnet av gränssnittet.
 
 <!--![](assets/alerts2.png)-->
+
+>[!AVAILABILITY]
+>
+>Vissa designändringar pågår för varningen&quot;Läs segment Trigger Misslyckades&quot;, vilket innebär att den här varningen pausas tills vidare. När ändringarna släpps visas den här aviseringen igen och du kan prenumerera på den.
 
 När [visa varningsregler i Adobe Experience Platform UI](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html)kan du prenumerera på varje regel separat. När du prenumererar på aviseringar via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html)Men varningsreglerna är ordnade i olika prenumerationspaket.
 
