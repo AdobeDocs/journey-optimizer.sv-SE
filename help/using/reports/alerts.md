@@ -8,7 +8,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
-source-git-commit: 83ebd87487551b2fb234a555d7d0e43e80cb7885
+source-git-commit: 46fe345d424a5a201cf75a8ee0e2035bc68621fe
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
@@ -24,6 +24,10 @@ När en viss uppsättning villkor för dina åtgärder har nåtts (t.ex. ett eve
 Läs mer om varningar i Adobe Experience Platform [dokumentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html).
 Mer information om hur du prenumererar på aviseringar och konfigurerar dem finns i detta [page](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html).
 
+>[!AVAILABILITY]
+>
+>Vissa designändringar pågår för varningen&quot;Läs segment Trigger Misslyckades&quot;, vilket innebär att den här varningen pausas tills vidare. När ändringarna släpps visas den här aviseringen igen och du kan prenumerera på den.
+
 I den vänstra menyn, under **Administration**, klicka **Varningar**.
 
 <!--A pre-configured alert for Journey Optimizer is available. This alert will warn you if a read segment node has not processed any profile during the defined time frame.
@@ -34,9 +38,6 @@ Om ett oväntat beteende inträffar skickas ett varningsmeddelande till de som p
 
 <!--![](assets/alerts2.png)-->
 
->[!AVAILABILITY]
->
->Vissa designändringar pågår för varningen&quot;Läs segment Trigger Misslyckades&quot;, vilket innebär att den här varningen pausas tills vidare. När ändringarna släpps visas den här aviseringen igen och du kan prenumerera på den.
 
 När [visa varningsregler i Adobe Experience Platform UI](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html)kan du prenumerera på varje regel separat. När du prenumererar på aviseringar via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html)Men varningsreglerna är ordnade i olika prenumerationspaket.
 
