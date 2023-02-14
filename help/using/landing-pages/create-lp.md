@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, publicering
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: cd154b137d7b4e5a3b35948241d2bbbb18265903
+source-git-commit: 339320940a24d04bf89a5aced42841e57d152f38
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1499'
 ht-degree: 1%
 
 ---
@@ -196,6 +196,12 @@ Följ stegen nedan för att definiera inställningar för undersidan.
 ![](assets/lp_subpage-settings.png)
 
 ## Testa landningssidan {#test-landing-page}
+
+>[!CONTEXTUALHELP]
+>id="ac_preview_lp_profiles"
+>title="Förhandsgranska och testa landningssidan"
+>abstract="När du har definierat inställningarna för landningssidan och innehållet kan du använda testprofiler för att förhandsgranska den."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/segment/profiles/creating-test-profiles.html" text="Välj testprofiler"
 
 När inställningarna för landningssidan och innehållet har definierats kan du använda testprofiler för att förhandsgranska den. Om du infogade [personaliserat innehåll](../personalization/personalize.md)kan du med hjälp av testprofildata kontrollera hur det här innehållet visas på landningssidan.
 

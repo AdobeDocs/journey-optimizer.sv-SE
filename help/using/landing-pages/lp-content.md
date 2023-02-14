@@ -9,22 +9,45 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, sida, formulär, komponent
 exl-id: 5bf023b4-4218-4110-b171-3e70e0507fca
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: 339320940a24d04bf89a5aced42841e57d152f38
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '1114'
 ht-degree: 2%
 
 ---
 
 # Definiera landningssidspecifikt innehåll {#lp-content}
 
-Använd **[!UICONTROL Form]** -komponenten. För att göra detta, följ nedanstående steg.
+>[!CONTEXTUALHELP]
+>id="ac_lp_components"
+>title="Använda innehållskomponenter"
+>abstract="Innehållskomponenterna är tomma platshållare för innehåll som du kan använda för att skapa layouten för en landningssida. Använd formulärkomponenten för att definiera specifikt innehåll som gör att användare kan välja och skicka sina val."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/email/design-email/add-content/content-components.html#add-content-components" text="Lägga till innehållskomponenter"
+
+Om du vill utforma innehållet på landningssidan kan du använda samma komponenter som för ett e-postmeddelande. [Läs mer](../email/content-components.md#add-content-components)
+
+Om du vill utforma specifikt innehåll som gör det möjligt för användare att välja och skicka sina val, [använda formulärkomponenten](#use-form-component) och definiera [landningssidspecifika format](#lp-form-styles).
 
 >[!NOTE]
 >
 >Du kan också skapa en klickbar landningssida utan en **[!UICONTROL Form]** -komponenten. I så fall visas landningssidan för användarna, men de behöver inte skicka in något formulär. Detta kan vara användbart om du bara vill visa upp en landningssida utan att behöva vidta några åtgärder från dina mottagare, som att anmäla dig eller avanmäla dig, eller om du vill tillhandahålla information som inte kräver användarindata.
 
+Med hjälp av layoutaren för landningssidans innehåll kan du även utnyttja sammanhangsberoende data som kommer från den primära sidan på en undersida. [Läs mer](#use-primary-page-context)
+
 ## Använda formulärkomponenten {#use-form-component}
+
+>[!CONTEXTUALHELP]
+>id="ac_lp_formfield"
+>title="Ange formulärkomponentfälten"
+>abstract="Ange hur mottagarna ska se och skicka sina val från din landningssida."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/landing-pages-design/lp-content.html#lp-form-styles" text="Definiera format för landningssidor"
+
+>[!CONTEXTUALHELP]
+>id="ac_lp_submission"
+>title="Vad händer när du klickar på knappen"
+>abstract="Definiera vad som ska hända när användare skickar in landningssidans formulär."
+
+Använd **[!UICONTROL Form]** -komponenten. För att göra detta, följ nedanstående steg.
 
 1. Dra och släpp den specifika landningssidan **[!UICONTROL Form]** från den vänstra paletten till huvudarbetsytan.
 
@@ -129,13 +152,13 @@ Använd **[!UICONTROL Form]** -komponenten. För att göra detta, följ nedanst�
 
 Du kan använda kontextuella data från en annan sida på samma landningssida.
 
-Om du till exempel länkar en kryssruta<!-- or the submission of the page--> till [prenumerationslista](subscription-list.md) på den primära landningssidan kan du använda den prenumerationslistan på undersidan&quot;Tack&quot;.
+Om du till exempel länkar en kryssruta <!-- or the submission of the page--> till [prenumerationslista](subscription-list.md) på den primära landningssidan kan du använda den prenumerationslistan på undersidan&quot;Tack&quot;.
 
 Låt oss säga att du länkar två kryssrutor på din primära sida till två olika prenumerationslistor. Om en användare prenumererar på något av dessa, vill du visa ett specifikt meddelande när formuläret skickas, beroende på vilken kryssruta de har markerat.
 
 För att göra detta, följ nedanstående steg:
 
-1. På den primära sidan länkar du varje kryssruta till den relevanta prenumerationslistan. [Läs mer](#use-form-component).
+1. På den primära sidan länkar du alla kryssrutor i **[!UICONTROL Form]** till relevant prenumerationslista. [Läs mer](#use-form-component).
 
    ![](assets/lp_designer-form-luma-newsletter.png)
 
