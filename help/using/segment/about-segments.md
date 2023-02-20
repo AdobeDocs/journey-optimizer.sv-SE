@@ -8,14 +8,19 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: 78675ca22d8ee9a93d9af128d5708c305523da78
+source-git-commit: 6c255d66fb89ba756add062d8a4315dd622fd8e7
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
 
 # Kom igång med Adobe Experience Platform {#about-segments}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_content_experiment_segment"
+>title="Segment"
+>abstract="Genom att utnyttja kundprofildata i realtid kan Adobe Experience Platform enkelt skapa riktade segment som fångar upp kundernas unika beteenden och preferenser."
 
 [!DNL Journey Optimizer]  kan du skapa Adobe Experience Platform-segment med hjälp av kundprofildata i realtid direkt från **[!UICONTROL Segments]** och använda dem i era resor eller kampanjer.
 
