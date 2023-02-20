@@ -11,9 +11,9 @@ keywords: komma igång, börja, innehåll, experimentera
 hide: true
 hidefromtoc: true
 exl-id: 7fe4b24e-f60a-4107-a064-00010b0cbbfc
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: 72fc1625eac26531ff9c83d39c16ffbb3c391ba5
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1964'
 ht-degree: 0%
 
 ---
@@ -111,6 +111,11 @@ För att få verkliga affärsinsikter bör ni hålla er till bara ett experiment
 +++
 
 ## Tolka resultaten av dina experiment {#interpret-results}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_content_experiment_summary"
+>title="Sammanfattningswidget"
+>abstract="Widgeten Sammanfattning innehåller en översikt över dina experimentresultat, inklusive om de är slutgiltiga eller inte. Det är ett snabbt och enkelt sätt att förstå resultatet av ditt experiment."
 
 ![](assets/experimentation_report_3.png)
 
