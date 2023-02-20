@@ -4,10 +4,10 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: ad0ca954d2ba15293bdde2715a7aaed62b040cce
+source-git-commit: f07a46e6fc42afb80275557dfe8bd27f51e4fad9
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 8%
+source-wordcount: '907'
+ht-degree: 5%
 
 ---
 
@@ -20,6 +20,43 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver av sina senaste innovationer och förbättringar. Läs mer om de här ändringarna i [Versionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ![Nyhetsbrev](../assets/do-not-localize/nl-icon.png) Registrera dig för [Adobe Journey Optimizer kvartalsvis nyhetsbrev](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} idag och få de senaste produktuppdateringarna, spännande historier, användningsexempel, tips och mycket annat levererat direkt till din inkorg varje kvartal.
+
+
+## Versionsinformation, februari 2023 {#feb-2023}
+
+Det här avsnittet innehåller förhandsversionsinformation. Releasedatum, funktioner och annan information kan ändras utan föregående meddelande. Detaljerad dokumentation finns tillgänglig på releasedatum.
+
+Tillgänglighet: **22 februari 2023**
+
+### Förbättringar {#feb-2023-improvements}
+
+**Resor**
+
+* The **Vänteperiod för återinträde** fältet har lagts till i reseegenskaperna. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en segmentkvalificering). Detta förhindrar att resorna felaktigt aktiveras flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter.
+
+* Förbättringar har gjorts för **start- och slutdatum för resan**. Om du inte har angett något startdatum läggs det nu till automatiskt vid publiceringstidpunkten. För **Lässegment** på resor kan du nu lägga till ett slutdatum. Detta gör att profiler kan avslutas automatiskt när datumet nås.
+
+* Resans arbetsyta har förbättrats för en enklare och förbättrad användarupplevelse. I slutet av varje bana på arbetsytan har de tomma platshållarna tagits bort. Nu kan du enkelt lägga till dina aktiviteter genom att dra dem mellan noder var som helst.
+
+* Tidsgränsen och felhanteringen har förbättrats under resorna. Timeout- och felsökningssökvägar läggs nu alltid till på arbetsytan. Det finns en ny verktygsfältsknapp för att visa/dölja dessa banor.
+
+* En ny typ av systemvarning har införts. Du kan nu få meddelanden när en anpassad åtgärd misslyckas.
+
+
+**Administrering**
+
+* **Tillåtelselista** - Du kan nu hämta tillåtelselista som en CSV-fil.
+
+* **E-postyta** - Ytterligare en kontroll har lagts till i inställningarna för e-postytan: om MX-posten för den underdomän som används i **Svara på (e-postadress)** eller i **E-postadress för hemlig kopia** är inte korrekt konfigurerad. Det går inte att skapa e-postytan längre. Du måste ha den konfigurerad eller använda en annan.
+
+* **E-postyta** - I avsnittet med parametrar för URL-spårning i inställningarna för e-postytan är begränsningen för **Värde** har uppdaterats från 255 tecken till 5 kB för kompatibilitet med Adobe Analytics tracking.
+
+**Beslutshantering**
+
+* **Placeringar** - Ytterligare parametrar har lagts till på skärmen där placeringar skapas. De gör det möjligt för er att styra om ett erbjudande kan dupliceras över flera ersättningar och ange om erbjudandets innehåll och metadata ska inkluderas i API-svaret.
+
+* **URL-personalisering** - När du lägger till URL:er som innehåll till offerternas representationer kan du nu anpassa dessa URL:er med Uttrycksredigeraren.
+
 
 
 ## Version från januari 2023 {#jan-2023-release}
