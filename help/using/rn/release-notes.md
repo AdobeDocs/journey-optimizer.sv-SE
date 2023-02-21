@@ -4,10 +4,10 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: d160baac2eb454cfd10097e29147562f83c1cd50
+source-git-commit: 1565a61f2bd3b8168eaefc2e69b40c9949a0af23
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 5%
+source-wordcount: '816'
+ht-degree: 6%
 
 ---
 
@@ -35,13 +35,6 @@ Tillgänglighet: **22 februari 2023**
 * The **Vänteperiod för återinträde** fältet har lagts till i reseegenskaperna. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en segmentkvalificering). Detta förhindrar att resorna felaktigt aktiveras flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter.
 
 * Förbättringar har gjorts för **start- och slutdatum för resan**. Om du inte har angett något startdatum läggs det nu till automatiskt vid publiceringstidpunkten. För **Lässegment** på resor kan du nu lägga till ett slutdatum. Detta gör att profiler kan avslutas automatiskt när datumet nås.
-
-* Resans arbetsyta har förbättrats för en enklare och förbättrad användarupplevelse. I slutet av varje bana på arbetsytan har de tomma platshållarna tagits bort. Nu kan du enkelt lägga till dina aktiviteter genom att dra dem mellan noder var som helst.
-
-* Tidsgränsen och felhanteringen har förbättrats under resorna. Timeout- och felsökningssökvägar läggs nu alltid till på arbetsytan. Det finns en ny verktygsfältsknapp för att visa/dölja dessa banor.
-
-* En ny typ av systemvarning har införts. Du kan nu få meddelanden när en anpassad åtgärd misslyckas.
-
 
 **Administrering**
 
