@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 78675ca22d8ee9a93d9af128d5708c305523da78
+source-git-commit: 4bcdd5a5d6161aea70939fc4f8a90f6e607b02f4
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '969'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Prestandaskydd och statiska gränser för beslut finns listade i [Produktbeskriv
 * Endast anropsmetoderna POST och PUT stöds
 * Namnet på frågeparametern eller huvudet får inte börja med &quot;.&quot; eller &quot;$&quot;
 * IP-adresser tillåts inte
-* Interna Adobe-adresser (.adobe.) tillåts inte.
+* Interna Adobe-adresser (`.adobe.*`) tillåts inte i URL:er och API:er.
 
 ### Händelser {#events-g}
 
@@ -77,6 +77,7 @@ Prestandaskydd och statiska gränser för beslut finns listade i [Produktbeskriv
 ### Datakällor {#data-sources-g}
 
 * Externa datakällor kan utnyttjas inom en kundresa för att söka efter externa data i realtid. Dessa källor måste kunna användas via REST API, ha stöd för JSON och kunna hantera antalet begäranden.
+* Interna Adobe-adresser (`.adobe.*`) tillåts inte i URL:er och API:er.
 
 ### Resor och skapande av profiler {#journeys-limitation-profile-creation}
 
