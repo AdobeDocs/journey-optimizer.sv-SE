@@ -11,9 +11,9 @@ keywords: innehåll, experiment, multipelt, målgrupp, behandling
 hide: true
 hidefromtoc: true
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: 72fc1625eac26531ff9c83d39c16ffbb3c391ba5
+source-git-commit: 2bf4883fa4b649a807608403d48f6a68b73a8626
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1053'
 ht-degree: 1%
 
 ---
@@ -166,8 +166,8 @@ Observera att varje widget kan storleksändras och tas bort om det behövs. Mer 
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_content_experiment_click"
->title="Unika klick per profil"
->abstract="De unika klick per profilmått hjälper er att förstå hur effektivt ert experiment engagerar er målgrupp och lockar fler till er målplats. Det beräknar antalet distinkta klick på en viss länk, dividerat med det totala antalet profiler som exponerades för länken."
+>title="Resultatmått"
+>abstract="Det totala värdet för resultatmåttet, som tidigare valts när du skapade dina experiment, delat med antalet profiler."
 
 >[!AVAILABILITY]
 >
