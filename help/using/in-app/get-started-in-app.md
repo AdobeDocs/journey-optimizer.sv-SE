@@ -5,24 +5,25 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-hide: true
-hidefromtoc: true
 keywords: i appen, meddelande, skapa, börja
+badge: label="Beta" type="Informative"
 exl-id: 51562843-7b50-4eb5-bf79-5ce03f7549cb
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: c3ad875b50999da833d75e97a787cab9e24e38d4
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 4%
+source-wordcount: '197'
+ht-degree: 3%
 
 ---
 
 # Kom igång med kanalen i appen {#gs-in-app}
 
-Meddelanden i appen är meddelanden som du kan skicka till användare i appen för att dirigera dem mot specifika intressepunkter. Meddelanden i appen kan användas för att föreslå en tjänst, marknadsföra en ny funktion, ett specialerbjudande eller introducera en ny användare.
+>[!AVAILABILITY]
+>
+>Funktionen i appen är för närvarande endast tillgänglig som betaversion för utvalda användare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
+
+Meddelanden i appen är meddelanden som kan skickas till användare i appen, och som vägleder dem till specifika intressepunkter. Dessa meddelanden kan användas för olika syften, t.ex. för att marknadsföra nya funktioner, presentera specialerbjudanden eller underlätta för användarna att komma igång. Genom att utnyttja meddelanden i appen kan ni effektivt interagera med er målgrupp och styra dem mot viktiga aspekter av er applikation.
 
 Använd Journey Optimizer för att skapa meddelanden i appen och konfigurera upplevelsealternativ, inklusive meddelandelayout, visning, text och knappalternativ.
-
-![](assets/new-in-app.png)
 
 ## Förutsättningar{#prerequisites-in-app}
 
@@ -52,11 +53,11 @@ När du är klar kan du skapa, konfigurera och skicka ditt första meddelande i 
 </div>
 <p></td>
 <td>
-<a href="inapp-report.md">
+<a href="../reports/campaign-global-report.md#inapp-global">
 <img alt="Validering" src="../assets/do-not-localize/inapp-report.jpg">
 </a>
 <div>
-<a href="inapp-report.md"><strong>Rapport i appen</strong></a>
+<a href="../reports/campaign-global-report.md#inapp-global"><strong>Rapport i appen</strong></a>
 </div>
 <p>
 </td>

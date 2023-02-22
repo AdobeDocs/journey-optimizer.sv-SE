@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 5ef9fec615c39935184595d91e7b12d4cd08903f
+source-git-commit: c3ad875b50999da833d75e97a787cab9e24e38d4
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '919'
 ht-degree: 8%
 
 ---
@@ -28,15 +28,14 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 <table>
 <thead>
 <tr>
-<th><strong>Kanal i appen</strong><br/></th>
+<th><strong>Kanal i appen (beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
 <p>Du kan nu skicka personaliserade meddelanden i appen till appanvändarna inom en kampanj. Använd Journey Optimizer för att utforma meddelanden och anpassa meddelandelayout, visning, text och knappar för att skapa en smidig upplevelse.</p>
-<p>
-Den här funktionen är för närvarande i betaversion och endast tillgänglig för betakunder. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.</p>
+<p><strong>Varning</strong> - Den här funktionen är för närvarande i betaversion och endast tillgänglig för betakunder. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.</p>
 <img src="assets/do-not-localize/in-app.gif"/>
 <p>Mer information finns i den <a href="../in-app/get-started-in-app.md">detaljerade dokumentationen</a>.</p>
 </td>
@@ -55,9 +54,7 @@ Den här funktionen är för närvarande i betaversion och endast tillgänglig f
 <td>
 <p>Nu kan du upprätta en direktanslutning till molnlagringsplatser för att exportera innehållet i dina datauppsättningar. Tillgängliga destinationer är: Amazon S3 Cloud-lagring, Azure Blob, Azure Data Lake Gen 2, Data Landing Zone, Google Cloud-lagring, SFTP.</p>
 <p><strong>Varning</strong> - Den här funktionen är för närvarande i betaversion och tillgänglig för alla Adobe Journey Optimizer-användare. Kontakta din Adobe-representant om du vill få åtkomst till mål om du inte redan har åtkomst.</p>
-
 <img src="assets/do-not-localize/gif-destinations.gif"/>
-
 <p>Mer information finns i den <a href="../data/export-datasets.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
