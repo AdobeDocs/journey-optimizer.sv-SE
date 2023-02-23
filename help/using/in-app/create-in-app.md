@@ -5,18 +5,21 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-hide: true
-hidefromtoc: true
 keywords: i appen, meddelande, skapa, börja
+badge: label="Beta" type="Informative"
 exl-id: b3b79fe2-7db3-490d-9c3d-87267aa55eea
-source-git-commit: 08d842a877ed52349eef5a901aaf9c75187c69d3
+source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 3%
+source-wordcount: '590'
+ht-degree: 2%
 
 ---
 
 # Skapa ett meddelande i appen {#create-in-app}
+
+>[!IMPORTANT]
+>
+>Funktionen i appen är för närvarande endast tillgänglig som betaversion för utvalda användare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
 
 ## Skapa en kampanj och ett meddelande i appen{#create-in-app-in-a-campaign}
 
@@ -108,12 +111,12 @@ Gör så här:
 
 Din kampanj är nu aktiverad. Det meddelande i appen som konfigurerats i kampanjen skickas omedelbart, eller på det angivna datumet.
 
-När du har skickat det kan du mäta effekten av dina meddelanden i appen i Campaign-rapporten. Mer information om rapportering finns i [det här avsnittet](inapp-report.md).
+När du har skickat det kan du mäta effekten av dina meddelanden i appen i Campaign-rapporten. Mer information om rapportering finns i [det här avsnittet](../reports/campaign-global-report.md#inapp-report).
 
 **Relaterade ämnen:**
 
 * [Design In-app-meddelande](design-in-app.md)
-* [Rapport i appen](inapp-report.md)
+* [Rapport i appen](../reports/campaign-global-report.md#inapp-report)
 * [Konfiguration i appen](inapp-configuration.md)
 
 ## Instruktionsvideo{#video}
