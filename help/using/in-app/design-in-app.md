@@ -5,18 +5,21 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-hide: true
-hidefromtoc: true
 keywords: i appen, meddelande, design, formatering
+badge: label="Beta" type="Informative"
 exl-id: 7d7aa721-96aa-4ebc-a51c-e693f893f34f
-source-git-commit: 08d842a877ed52349eef5a901aaf9c75187c69d3
+source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '815'
 ht-degree: 8%
 
 ---
 
 # Designa ditt innehåll i appen {#design-content}
+
+>[!IMPORTANT]
+>
+>Funktionen i appen är för närvarande endast tillgänglig som betaversion för utvalda användare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
 
 Du kan redigera innehållet i appen för att konfigurera upplevelsealternativ, inklusive alternativen för meddelandelayout och visning, text och knapp.
 
@@ -192,7 +195,7 @@ Om **[!UICONTROL Advanced formatting mode]** är aktiverat kan du anpassa meddel
 **Relaterade ämnen:**
 
 * [Skapa meddelande i appen](create-in-app.md)
-* [Rapport i appen](inapp-report.md)
+* [Rapport i appen](../reports/campaign-global-report.md#inapp-report)
 * [Konfiguration i appen](inapp-configuration.md)
 
 ## Instruktionsvideo{#video}
