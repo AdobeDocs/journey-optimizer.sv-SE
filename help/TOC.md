@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 81ab92022329788c1feea24c7a621ef154d33422
+source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1314'
 ht-degree: 35%
 
 ---
@@ -202,10 +202,9 @@ ht-degree: 35%
       + [Konfigurera inställningar för e-postyta](using/email/email-settings.md)
 + Kanal i appen{#in-app}
    + [Kom igång med kanalen i appen](using/in-app/get-started-in-app.md)
-   + [Konfigurera kanal i appen](using/in-app/inapp-configuration.md)
    + [Skapa ett meddelande i appen](using/in-app/create-in-app.md)
    + [Designa ditt innehåll i appen](using/in-app/design-in-app.md)
-   + [Rapport i appen](using/in-app/inapp-report.md)
+   + [Konfigurera kanal i appen](using/in-app/inapp-configuration.md)
 + Push-meddelandekanal{#push}
    + [Kom igång med push-meddelanden](using/push/get-started-push.md)
    + [Skapa ett push-meddelande](using/push/create-push.md)
@@ -416,6 +415,7 @@ ht-degree: 35%
    + [Frågor](using/data/get-started-queries.md)
    + Journey Optimizer dataset {#datasets}
       + [Kom igång med datauppsättningar](using/data/get-started-datasets.md)
+      + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
 + Konfiguration{#configuration}
    + [Kom igång med Journey Optimizer](using/configuration/get-started-configuration.md)
