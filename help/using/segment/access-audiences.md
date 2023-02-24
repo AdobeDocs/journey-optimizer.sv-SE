@@ -10,7 +10,7 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 0758eeaf-a188-4b43-9c9a-a2e5a9e5dd76
-source-git-commit: 8d56e3060e78422b028ced17f415497789908ff9
+source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 1%
@@ -31,7 +31,7 @@ På den här fliken visas alla målgrupper som lagras i Adobe Experience Platfor
 
 The **[!UICONTROL Profile count]** -kolumnen innehåller information om antalet profiler som ingår i en målgrupp. Klicka på knappen i om du vill ha mer information om vilket datum den här informationen har beräknats.
 
-Om du vill tilldela en målgrupp etiketter för anpassad eller viktig dataanvändning klickar du på ellipsknappen och väljer **[!UICONTROL Manage Access]**. [Läs mer om OLA (Object Level Access Control)](../administration/object-based-access.md)
+Om du vill tilldela användningsetiketter för anpassade eller grundläggande data till en viss målgrupp klickar du på ellipsknappen och väljer **[!UICONTROL Manage Access]**. [Läs mer om OLA (Object Level Access Control)](../administration/object-based-access.md)
 
 <!--
 -edit an audience?

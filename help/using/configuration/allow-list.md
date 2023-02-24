@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: tillåtelselista, lista, säker, konfiguration
 exl-id: 70ab8f57-c132-4de1-847b-11f0ab14f422
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1084'
 ht-degree: 2%
 
 ---
@@ -155,6 +155,34 @@ Om du vill fylla tillåtelselista kan du även anropa API:t för inaktivering me
 Du kan utföra **Lägg till**, **Ta bort** och **Hämta** åtgärder.
 
 Läs mer om hur du gör API-anrop i [Adobe Experience Platform API:er](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-guide.html){target="_blank"} referensdokumentation.
+
+## Ladda ned tillåtelselista {#download-allowed-list}
+
+Följ stegen nedan om du vill exportera tillåtelselista som en CSV-fil:
+
+1. Markera knappen **[!UICONTROL Download CSV]**.
+
+   ![](assets/allowed-list-download-csv.png)
+
+1. Vänta tills filen har skapats.
+
+   ![](assets/allowed-list-download-generate.png)
+
+   >[!NOTE]
+   >
+   >Hämtningstiden beror på filstorleken, vilket innebär antalet adresser som finns på tillåtelselista.
+   >
+   >En hämtningsbegäran kan bearbetas åt gången för en viss sandlåda.
+
+1. När filen har skapats får du ett meddelande. Klicka på klockikonen överst till höger på skärmen för att visa den.
+
+1. Klicka på själva meddelandet för att hämta filen.
+
+   ![](assets/allowed-list-download-notification.png)
+
+   >[!NOTE]
+   >
+   >Länken gäller i 24 timmar.
 
 ## Tillåtelselista logik {#logic}
 

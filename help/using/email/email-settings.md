@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 9555c37f8bac295a668f64990e229c6e0e5ceb8d
+source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1605'
 ht-degree: 1%
 
 ---
@@ -151,6 +151,14 @@ Följ nedanstående rekommendationer för att säkerställa korrekt svarshanteri
 
 * Markera inte meddelanden som skräppost i svarsinkorgen eftersom det påverkar alla andra svar som skickas till den här adressen.
 
+När du definierar **[!UICONTROL Reply to (email)]** måste du se till att använda en underdomän som har en giltig MX-postkonfiguration, annars misslyckas bearbetningen av e-postytan.
+
+Om du får ett felmeddelande när du skickar e-postytan betyder det att MX-posten inte är konfigurerad för underdomänen till den angivna adressen. Kontakta administratören för att konfigurera motsvarande MX-post eller använd en annan adress med en giltig MX-postkonfiguration.
+
+>[!NOTE]
+>
+>Om underdomänen för den adress du angav är en domän som var [helt delegerad](../configuration/delegate-subdomain.md#full-subdomain-delegation) till Adobe, kontakta er kontoansvarige på Adobe.
+
 ### Vidarebefordra e-post {#forward-email}
 
 Om du vill vidarebefordra till en viss e-postadress får du alla e-postmeddelanden som [!DNL Journey Optimizer] för den delegerade underdomänen, kontakta Adobe kundtjänst. Du måste ange:
@@ -173,6 +181,10 @@ Du kan skicka en identisk kopia (eller en kopia med kopia) av e-postmeddelanden 
 Aktivera **[!UICONTROL BCC email]** valfri funktion på kanalytnivå. [Läs mer](../configuration/archiving-support.md#bcc-email)
 
 ![](assets/preset-bcc.png)
+
+När du definierar **[!UICONTROL Bcc email]** måste du se till att använda en underdomän som har en giltig MX-postkonfiguration, annars misslyckas bearbetningen av e-postytan.
+
+Om du får ett felmeddelande när du skickar e-postytan betyder det att MX-posten inte är konfigurerad för underdomänen till den angivna adressen. Kontakta administratören för att konfigurera motsvarande MX-post eller använd en annan adress med en giltig MX-postkonfiguration.
 
 ## Parametrar för återförsök av e-post {#email-retry}
 
@@ -237,7 +249,7 @@ Du kan också redigera varje **[!UICONTROL Value]** fält med [Uttrycksredigerar
 
 >[!NOTE]
 >
->Du kan kombinera textvärden och använda sammanhangsberoende attribut från uttrycksredigeraren. Varje **[!UICONTROL Value]** fält kan innehålla upp till 255 tecken totalt.
+>Du kan kombinera textvärden och använda sammanhangsberoende attribut från uttrycksredigeraren. Varje **[!UICONTROL Value]** -fältet kan innehålla ett antal tecken upp till gränsen på 5 kB.
 
 <!--You can drag and drop the parameters to reorder them.-->
 

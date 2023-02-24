@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: fa64f5b8-75f2-40e6-8566-5766fafe6cd6
-source-git-commit: 0ec122bbf134c41f95755a3b6f08eb7ef68506df
+source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1692'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,7 @@ Kampanjen **[!UICONTROL Global report]** visas med följande flikar:
 
 * [Campaign](#campaign-global)
 * [E-post](#email-global)
+* [I appen](#inapp-global)
 * [Push](#push-global)
 * [SMS](#sms-global)
 
@@ -141,6 +142,37 @@ The **[!UICONTROL Send time optimization]** information om leveransens framgång
 
 * **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
 * **[!UICONTROL Bounces]**: Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
++++
+
+## Fliken I appen {#inapp-global}
+
+>[!IMPORTANT]
+>
+>Funktionen i appen är för närvarande endast tillgänglig som betaversion för utvalda användare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
+
+Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL In-app]** -fliken innehåller huvudinformationen om de leveranser i appen som skickas i kampanjen.
+
+![](assets/campaign_report_global_6.png)
+
++++Läs mer om de olika mätvärden och widgetar som är tillgängliga för rapporten i appen.
+
+The **[!UICONTROL In-app performance]** Nyckeltal anger den viktigaste informationen i relation till besökarnas engagemang i era meddelanden i appen, till exempel:
+
+* **[!UICONTROL Unique impressions]**: antal unika användare som meddelandet i appen levererades till.
+
+* **[!UICONTROL Impressions]**: Totalt antal meddelanden i appen som levereras till alla användare.
+
+* **[!UICONTROL Click rate]**: procentandelen användare som interagerade med knapparna i meddelandet i appen jämfört med användare som såg meddelandet.
+
+* **[!UICONTROL Dismiss rate]**: Andel meddelanden i appen som mottagarna avvisade.
+
+The **[!UICONTROL In-app summary]** diagram visar hur dina visningar i appen har utvecklats för den aktuella perioden.
+
+The **[!UICONTROL Clicks by button]** diagram och tabell innehåller tillgängliga data för mottagarnas beteende per knapp:
+
+* **[!UICONTROL Clicks]**: Totalt antal mottagare som interagerat med knapparna i meddelandet i appen.
+
+* **[!UICONTROL Click rate]**: procentandelen användare som interagerade med knapparna i meddelandet i appen jämfört med användare som såg meddelandet.
 +++
 
 ## Fliken Push-meddelanden {#push-global}

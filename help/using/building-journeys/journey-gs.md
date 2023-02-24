@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Skapa din första resa
+title: Skapa den första resan
 description: Viktiga steg för att skapa din första resa med Adobe Journey Optimizer
 feature: Journeys
 topic: Content Management
@@ -9,14 +9,14 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, segment, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: dc313d7cbee9e412b9294b644fddbc7840f90339
+source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 8%
+source-wordcount: '1157'
+ht-degree: 9%
 
 ---
 
-# Skapa din första resa{#jo-quick-start}
+# Skapa den första resan{#jo-quick-start}
 
 ## Förutsättningar{#start-prerequisites}
 
@@ -96,9 +96,7 @@ The **Kopiera teknisk information** Med kan du kopiera teknisk information om de
 
 Som standard tillåter nya resor återinträde. Du kan avmarkera **Tillåt återinträde** om du vill erbjuda en engångsgåva när en person går in i en affär.
 
-<!--
-When the **Allow re-entrance** option is activated, the **Re-entrance wait period** field is displayed. This field allows you to define the time to wait before allowing a profile to enter the journey again in unitary journeys (starting with an event or a segment qualification). This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes.
--->
+När **Tillåt återinträde** är aktiverat, **Vänteperiod för återinträde** -fältet visas. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en segmentkvalificering). Detta förhindrar att resorna felaktigt aktiveras flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter.
 
 Läs mer om hantering av profilinträde i [det här avsnittet](entry-management.md).
 
@@ -120,13 +118,9 @@ Mer information om hantering av tidszoner finns i [den här sidan](../building-j
 
 ### Start- och slutdatum {#dates}
 
-<!--
-You can define a **Start date**. If you haven't specified one, it will be automatically defined at publication time. 
+Du kan definiera en **Startdatum**. Om du inte har angett någon sådan kommer den att definieras automatiskt vid publiceringstidpunkten.
 
-You can also add an **End date**. This allows profiles to exit automatically when the date is reached. If you don't specify an end date, pofiles can stay until the default journey timeout (generally 30 days, 7 days with Healthcare Shield add-on offering). The only exception is recurring read segment journeys with **Force re-entrance on recurrence** activated, which end at the start date of the next occurrence. 
--->
-
-Du kan definiera en **Startdatum**. Du kan också lägga till en **Slutdatum**. Detta gör att profiler kan avslutas automatiskt när datumet nås. Om du inte anger ett slutdatum kan profiler stanna tills standardtidsgränsen för resan uppnås.
+Du kan också lägga till en **Slutdatum**. Detta gör att profiler kan avslutas automatiskt när datumet nås. Om du inte anger ett slutdatum kan profilerna behållas tills standardtidsgränsen för resan uppnås (vanligtvis 30 dagar, 7 dagar med tilläggsservice för hälso- och sjukvård). Det enda undantaget är återkommande lässegmentsresor med **Tvinga återinträde vid upprepning** som slutar vid startdatumet för nästa förekomst.
 
 ### Tidsgräns och fel i reseaktiviteter {#timeout_and_error}
 

@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 718af505-7b7c-495e-8974-bd9c35d796bb
-source-git-commit: 0e978d0eab570a28c187f3e7779c450437f16cfb
+source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 0%
+source-wordcount: '635'
+ht-degree: 1%
 
 ---
 
@@ -72,7 +72,7 @@ Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Ado
 
 >[!NOTE]
 >
-> Arbeta med [Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target=&quot;_blank&quot;}, du måste distribuera [!DNL Assets Essentials] för din organisation och se till att användarna är en del av **Assets Essentials hemanvändare** eller/och **Assets Essentials-användare** Produktprofiler. Läs mer på [den här sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html){target=&quot;_blank&quot;}.
+> Arbeta med [Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}, you need to deploy [!DNL Assets Essentials] for your organization and make sure that users are a part of the **Assets Essentials Consumer Users** or/and **Assets Essentials Users** Product profiles. Learn more on [this page](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html){target="_blank"}.
 
 1. Välj alternativet **[!UICONTROL Asset library]**.
 
@@ -88,9 +88,9 @@ Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Ado
 
 ### Lägg till HTML eller JSON-filer {#html-json}
 
-Om den markerade placeringen är av HTML-typ kan du även lägga till HTML eller JSON-innehåll från [Adobe Experience Cloud Asset Library](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target=&quot;_blank&quot;}).
+Om den markerade placeringen är av HTML-typ kan du även lägga till HTML eller JSON-innehåll från [Adobe Experience Cloud Asset Library](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}).
 
-Du har t.ex. skapat en e-postmall för HTML i [Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager.html){target=&quot;_blank&quot;} och du vill använda den filen för ditt erbjudandeinnehåll. I stället för att skapa en ny fil kan du överföra mallen till **Resursbibliotek** för att kunna återanvända det i ert erbjudande.
+Du har t.ex. skapat en e-postmall för HTML i [Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager.html){target="_blank"} och du vill använda den filen för ert erbjudandeinnehåll. I stället för att skapa en ny fil kan du överföra mallen till **Resursbibliotek** för att kunna återanvända det i ert erbjudande.
 
 Om du vill återanvända innehållet i en representation bläddrar du till **Resursbibliotek** enligt beskrivning i [det här avsnittet](#images) och markera den HTML- eller JSON-fil du vill använda.
 
@@ -100,7 +100,17 @@ Om du vill återanvända innehållet i en representation bläddrar du till **Res
 
 Om du vill lägga till innehåll från en extern offentlig plats väljer du **[!UICONTROL URL]** anger du sedan URL-adressen till det innehåll som ska läggas till.
 
+Du kan anpassa URL-adresser med uttrycksredigeraren. Läs mer på [personalisering](../../personalization/personalize.md#use-expression-editor).
+
 ![](../assets/offer-content-url.png)
+
+Du vill till exempel anpassa bilden som visas som ett erbjudande. Man vill att användare som föredrar semestrar ska se NYC-skylten och användare som föredrar strandsemestrar ska se Hawaii i i nordkusten.
+
+Använd uttrycksredigeraren för att hämta profilattribut som lagras i Adobe Experience Platform med hjälp av fackscheman. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schemas-overview.html){target="_blank"}
+
+![](../assets/offer-content-url-personalization.png)
+
+Om du anger en **[!UICONTROL Destination link]** kan du också anpassa den URL som användarna som klickar på erbjudandet ska dirigeras till.
 
 ### Lägg till egen text {#custom-text}
 

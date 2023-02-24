@@ -2,7 +2,7 @@
 title: Gruppbeslut
 description: Lär dig hur ni kan leverera offertbeslut till alla profiler i ett visst Adobe Experience Platform-segment.
 exl-id: 810c05b3-2bae-4368-bf12-3ea8c2f31c01
-source-git-commit: a56d675e014d55064073eba011fb50e2d363844d
+source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 0%

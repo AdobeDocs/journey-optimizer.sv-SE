@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: återförsök, studsa, mjuk, optimering, fel
 exl-id: 05564a99-da50-4837-8dfb-bb1d3e0f1097
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 1%
@@ -72,5 +72,5 @@ Du kan t.ex. ange återförsöksperioden till 24 timmar för ett transaktionsmej
 >
 >Återförsöksperioden får inte vara längre än 84 timmar. Den minsta återförsöksperioden är 6 timmar för marknadsföringsmeddelanden och 10 minuter för transaktionsmeddelanden.
 
-Lär dig hur du justerar parametrarna för återförsök i e-postmeddelanden när du skapar en kanalyta i [det här avsnittet](channel-surfaces.md#create-channel-surface).
+Lär dig hur du justerar parametrarna för återförsök i e-postmeddelanden när du skapar en kanalyta i [det här avsnittet](../email/email-settings.md#email-retry).
 

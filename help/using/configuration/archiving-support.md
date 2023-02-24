@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: arkiv, meddelanden, HIPAA, BCC, e-post
 exl-id: 186a5044-80d5-4633-a7a7-133e155c5e9f
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
 workflow-type: tm+mt
 source-wordcount: '1085'
 ht-degree: 1%
@@ -82,7 +82,6 @@ BCC-adressen hämtas dock upp för att skicka kommunikation enligt den logik som
 * Öppna inte och klicka inte igenom de e-postmeddelanden som skickas till BCC-adressen eftersom den tas med i det totala antalet öppningar och klickningar från sändningsanalysen, vilket kan orsaka vissa felberäkningar i [rapporter](../reports/global-report.md).
 
 * Markera inte meddelanden som skräppost i BCC-inkorgen eftersom det påverkar alla andra e-postmeddelanden som skickas till den här adressen.
-
 
 >[!CAUTION]
 >

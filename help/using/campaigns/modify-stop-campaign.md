@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: hantera kampanjer, status, schema, åtkomst, optimering
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 1%
@@ -90,7 +90,7 @@ Du kan duplicera en livekampanj och skapa en ny. Det gör du genom att öppna ka
 
 Med tiden växer listan över kampanjer och blir så småningom svårare att hitta färdiga och stoppade kampanjer.
 
-För att förhindra detta kan ni arkivera slutförda och stoppade kampanjer som ni inte längre behöver. Det gör du genom att klicka på ellipsknappen och sedan välja **[!UICONTROL Archive]**.
+För att förhindra detta kan ni arkivera slutförda och stoppade kampanjer som ni inte längre behöver. Klicka på ellipsknappen och välj **[!UICONTROL Archive]**.
 
 ![](assets/create-campaign-archive.png)
 
