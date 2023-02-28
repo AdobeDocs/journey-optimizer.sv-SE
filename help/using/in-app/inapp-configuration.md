@@ -6,7 +6,7 @@ level: Intermediate
 keywords: in-app, meddelande, konfiguration, plattform
 badge: label="Beta" type="Informative"
 exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
-source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
+source-git-commit: 5a1ee11b603d523c1bc91a75beda00d0ac531cb9
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Konfigurera kanal i appen {#inapp-configuration}
 
->[!IMPORTANT]
+>[!AVAILABILITY]
 >
 >Funktionen i appen är för närvarande endast tillgänglig som betaversion för utvalda användare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
 
@@ -25,7 +25,7 @@ Innan du skickar meddelanden i appen måste du konfigurera din app-kanal i [!DNL
 
 1. Välj [!DNL Adobe Experience Platform] service.
 
-   [!DNL Edge Segmentation], [!DNL Offer Decisioning] och [!DNL Adobe Journey Optimizer] måste väljas.
+   [!DNL Edge Segmentation] och [!DNL Adobe Journey Optimizer] måste väljas.
 
    ![](assets/inapp_config_6.png)
 

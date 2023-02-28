@@ -8,7 +8,7 @@ level: Beginner
 keywords: i appen, meddelande, design, formatering
 badge: label="Beta" type="Informative"
 exl-id: 7d7aa721-96aa-4ebc-a51c-e693f893f34f
-source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
+source-git-commit: 5a1ee11b603d523c1bc91a75beda00d0ac531cb9
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 8%
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # Designa ditt innehåll i appen {#design-content}
 
->[!IMPORTANT]
+>[!AVAILABILITY]
 >
 >Funktionen i appen är för närvarande endast tillgänglig som betaversion för utvalda användare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
 
