@@ -10,10 +10,11 @@ level: Intermediate
 keywords: resa, taggar
 hidefromtoc: true
 hide: true
-source-git-commit: 1a756b7277a6c01768f320745b81ef942c6f6b0f
+badge: label="Beta" type="Informative"
+source-git-commit: e856786cfad58cc3f602a31ad1354a497e090764
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 1%
+source-wordcount: '253'
+ht-degree: 0%
 
 ---
 
@@ -21,25 +22,25 @@ ht-degree: 1%
 
 Som Journey Optimizer-läkare kan du ordna dina resor med hjälp av taggar. Taggar är ett snabbt och enkelt sätt att klassificera objekt för att förbättra sökningen.
 
->[!CAUTION]
+>[!AVAILABILITY]
 >
 > Enhetliga taggar finns för närvarande i Beta. Dokumentationen och funktionaliteten kan komma att ändras.
 
-## Viktiga anteckningar
-
-* Taggar är skiftlägeskänsliga
-* Om du vill ta bort en tagg helt måste du ta bort den från alla objekt.
-* Om du duplicerar eller skapar en ny version av en resa bevaras taggarna.
-
-## Lägga till taggar när du skapar en resa
+## Lägga till taggar till en resa
 
 The **Taggar** -fältet, i reseegenskaperna, gör att du kan definiera taggar för din resa. Du kan antingen markera en befintlig tagg eller skapa en ny. Börja skriva namnet på den önskade taggen och markera den i listan. Om den inte är tillgänglig klickar du på **Skapa** för att skapa en ny och lägga till den på din resa. Du kan definiera så många taggar som behövs.
 
 ![](assets/tags1.png)
 
-Listan med definierade taggar visas under fältet. Du kan ta bort dem.
+Listan med definierade taggar visas under **Taggar** fält.
 
-## Redigera taggar och filter
+>[!NOTE]
+>
+> Taggar är skiftlägeskänsliga
+> 
+> Om du duplicerar eller skapar en ny version av en resa bevaras taggarna.
+
+## Filtrera på taggar
 
 I reselistan visas en dedikerad kolumn så att du enkelt kan se dina taggar.
 
@@ -51,6 +52,10 @@ Du kan lägga till eller ta bort taggar från alla typer av resor (live, draft, 
 
 ![](assets/tags3.png)
 
-## Avancerad hantering
+## Hantera taggar
 
-Administratörer kan lägga till taggar och ordna dem efter kategorier med **Taggar** meny, under **ADMINISTRATION**. Se detta [dokumentation](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/overview.html).
+Administratörer kan ta bort taggar och ordna dem efter kategorier med **Taggar** meny, under **ADMINISTRATION**. Se detta [dokumentation](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/overview.html).
+
+>[!NOTE]
+>
+> Taggar som definieras i resor läggs till i den inbyggda kategorin&quot;Ej kategoriserad&quot;.
