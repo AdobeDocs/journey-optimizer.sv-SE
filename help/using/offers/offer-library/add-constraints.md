@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
-source-git-commit: e81e21f714a3c5450defa1129e1e2b9969dc1de7
+source-git-commit: ccaad8c4d9d26c0fd968e627e7a6bf853f232000
 workflow-type: tm+mt
-source-wordcount: '1673'
+source-wordcount: '1693'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ The **[!UICONTROL Offer eligibility]** kan du begränsa erbjudandet till specifi
 
    >[!CAUTION]
    >
-   >Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [event](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#events){target=&quot;_blank&quot;} kan du inte utnyttja erbjudandet.
+   >Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [event](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#events){target="_blank"}, kommer du inte att kunna utnyttja erbjudandet.
 
 När du väljer segment eller beslutsregler kan du se information om de uppskattade kvalificerade profilerna. Klicka **[!UICONTROL Refresh]** för att uppdatera data.
 
@@ -143,6 +143,11 @@ I princip är utdata för ett segment en lista med profiler, medan en beslutsreg
 >id="ajo_decisioning_frequency_capping"
 >title="Ange takfrekvens"
 >abstract="Du kan välja att återställa antalet erbjudanden per dag, vecka eller månad."
+
+[!CONTEXTUALHELP]
+>id=&quot;ajo_decisioning_frequency_capping_intryckt&quot;
+>title=&quot;Impression&quot;
+>abstract=&quot;Användningen av visningar som capping-händelser är endast tillgänglig för inkommande kanaler.&quot;
 
 Begränsning används som en begränsning för att definiera det maximala antal gånger ett erbjudande kan presenteras.
 
