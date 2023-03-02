@@ -10,9 +10,9 @@ topic: Content Management
 role: User
 level: Beginner
 badge: label="Beta" type="Informative"
-source-git-commit: c909e366ba5e911f685656140caf53cc122552ee
+source-git-commit: a162f70dceb3bef635085840fc304e0da2c33eed
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '657'
 ht-degree: 1%
 
 ---
@@ -89,7 +89,7 @@ När mallen Experience Manager är tillgänglig i Journey Optimizer som innehål
 
    ![](assets/aem_ajo_2.png)
 
-1. I fönstret Mallegenskaper klickar du på **[!UICONTROL Manage access]** om du vill tilldela egna eller grundläggande dataanvändningsetiketter till mallen. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md)
+1. I **[!UICONTROL Template properties]** klickar du på **[!UICONTROL Manage access]** om du vill tilldela egna eller grundläggande dataanvändningsetiketter till mallen. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md)
 
 1. Om du vill anpassa din AEM ytterligare och lägga till anpassad anpassning till ditt innehåll klickar du på **[!UICONTROL Edit content]**. På så sätt kan du enkelt göra ändringar och anpassa mallen efter dina specifika behov. [Läs mer](get-started-email-design.md)
 
