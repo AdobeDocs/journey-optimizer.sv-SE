@@ -6,9 +6,9 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 4e2dc0d6-4610-4a2f-8388-bc58182b227f
-source-git-commit: 6f509a2518866b8e16a16a5550c41f7fb4154642
+source-git-commit: 7347bb56eb2785b2d9f3f641cbe3b7c1ae2d078f
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1013'
 ht-degree: 1%
 
 ---
@@ -253,6 +253,6 @@ document.getElementById("offerDescription").innerHTML = offerDescription;
 document.getElementById('offerImage').src = offerImageURL;
 ```
 
-## Begränsningar
+<!--## Limitations
 
-Vissa begränsningar för erbjudanden stöds för närvarande inte i mobila Experience Edge-arbetsflöden, till exempel Capping. Fältvärdet för begränsning anger hur många gånger ett erbjudande kan visas för alla användare. Mer information finns i [Lägg till begränsningar i ett erbjudande](../../offer-library/add-constraints.md#capping).
+Some offer constraints are currently not supported with the mobile Experience Edge workflows, for example Capping. The Capping field value specifies the number of times an offer can be presented across all users. For more details, see [Add constraints to an offer](../../offer-library/add-constraints.md#capping).-->
