@@ -6,10 +6,10 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: edc040de-dfb3-4ebc-91b4-239e10c2260b
-source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
+source-git-commit: 2444d8fbe3a86feb0497d754b4f57f234fa29e49
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 4%
+source-wordcount: '413'
+ht-degree: 3%
 
 ---
 
@@ -142,6 +142,35 @@ Följande åtgärd returnerar datumet i följande format: MM/DD/YY.
 
 ```sql
 {%= formatDate(profile.timeSeriesEvents._mobile.hotelBookingDetails.bookingDate, "MM/DD/YY") %}
+```
+
+## Formatera datum med språkstöd{#format-date-locale}
+
+The `formatDate` används för att formatera ett datum- och tidsvärde till motsvarande språkkänsliga representation, dvs. i önskad språkinställning. Formatet ska vara ett giltigt Java DateTimeFormat-mönster.
+
+**Syntax**
+
+```sql
+{%= formatDate(datetime, format, locale) %}
+```
+
+Där den första strängen är datumattributet är det andra värdet hur du vill att datumet ska konverteras och visas och det tredje värdet representerar språkinställningen i strängformat.
+
+>[!NOTE]
+>
+> Om ett datummönster är ogiltigt återgår datumet till ISO-standardformat.
+>
+> Du kan använda Java-datumformateringsfunktioner enligt sammanfattningen i [Oraclets dokumentation](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html).
+>
+> Du kan använda formatering och giltiga språkområden enligt sammanfattningen i [Oraclets dokumentation](https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html) och [Språk som stöds](https://www.oracle.com/java/technologies/javase/jdk11-suported-locales.html).
+
+
+**Exempel**
+
+Följande åtgärd returnerar datumet i följande format: MM/DD/YY och språkversionen av FRANKRIKE.
+
+```sql
+{%= formatDate(profile.timeSeriesEvents._mobile.hotelBookingDetails.bookingDate, "MM/DD/YY", "fr_FR") %}
 ```
 
 ## Ange dagar{#set-days}

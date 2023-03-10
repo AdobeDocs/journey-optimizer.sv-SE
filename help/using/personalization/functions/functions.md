@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
-source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
+source-git-commit: 2444d8fbe3a86feb0497d754b4f57f234fa29e49
 workflow-type: tm+mt
-source-wordcount: '1805'
+source-wordcount: '1828'
 ht-degree: 1%
 
 ---
@@ -112,6 +112,9 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
     </tr>
     <tr>
         <td><a href="dates.md#format-date">Formateringsdatum</a></td><td>Den här funktionen formaterar ett datum-/tidsvärde</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#format-date-locale">Formatera datum med språkstöd</a></td><td>Den här funktionen formaterar ett datum- och tidsvärde till motsvarande språkkänsliga representation, dvs. i önskad språkinställning.</td>
     </tr>
     <tr>
         <td><a href="dates.md#set-days">Ange dagar</a></td><td>Den här funktionen anger dag i månaden för angivet datum/tid</td>
