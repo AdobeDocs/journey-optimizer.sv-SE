@@ -1,21 +1,21 @@
 ---
-title: Söka efter en tagg
-description: Med taggar kan du bättre ordna och sortera bland dina erbjudanden.
+title: Söka efter en samlingskvalificerare
+description: Med en samling kvalificerare kan ni ordna och sortera genom era erbjudanden bättre.
 feature: Offers
 topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: e2d1f093-c1b8-4c4c-a20f-4bd7c2ea5269
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 835e4bf227ce330b1426a9a4331fdf533fc757e3
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '163'
 ht-degree: 1%
 
 ---
 
-# Söka efter en tagg {#look-up-tag}
+# Söka efter en samlingskvalificerare {#look-up-tag}
 
-Du kan söka efter specifika taggar genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller någon av taggarna `@id` eller namnet på taggen i sökvägen för begäran.
+Du kan söka efter särskilda samlingskvalificerare (kallas tidigare taggar) genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller antingen en mängdkvalificerare `@id` eller namnet på insamlingskvalificeraren i sökvägen för begäran.
 
 **API-format**
 
@@ -26,8 +26,8 @@ GET /{ENDPOINT_PATH}/{CONTAINER_ID}/queries/core/search?schema={SCHEMA_TAG}&{QUE
 | Parameter | Beskrivning | Exempel |
 | --------- | ----------- | ------- |
 | `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
-| `{CONTAINER_ID}` | Behållaren där taggarna finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
-| `{SCHEMA_TAG}` | Definierar schemat som är associerat med taggar. | `https://ns.adobe.com/experience/offer-management/tag;version=0.1` |
+| `{CONTAINER_ID}` | Behållaren där samlingskvalificerarna finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
+| `{SCHEMA_TAG}` | Definierar det schema som är associerat med samlingskvalificerare. | `https://ns.adobe.com/experience/offer-management/tag;version=0.1` |
 | `id` | En sträng som används för att matcha `@id` enheternas egenskap. Strängen matchas exakt. Parametrarna `id` och `name` kan inte användas tillsammans. | `xcore:tag:124e147572cd7866` |
 | `name` | En sträng som används för att matcha egenskapen xdm:name för entiteterna. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametrarna `id` och `name` kan inte användas tillsammans | `Holiday sales and promotions` |
 
@@ -45,7 +45,7 @@ curl -X GET \
 
 **Svar**
 
-Ett lyckat svar returnerar detaljerna om taggen, inklusive information om behållar-ID, instans-ID och unik tagg `@id`.
+Ett godkänt svar returnerar information om samlingskvalificeraren, inklusive information om ditt behållar-ID, instans-ID och unik samlingskvalificerare `@id`.
 
 ```json
 {

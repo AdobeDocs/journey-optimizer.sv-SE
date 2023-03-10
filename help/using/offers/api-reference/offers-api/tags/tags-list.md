@@ -1,25 +1,25 @@
 ---
-title: Lista taggar
-description: Med taggar kan du bättre ordna och sortera bland dina erbjudanden.
+title: Kvalificerare för listsamling
+description: Med en samling kvalificerare kan ni ordna och sortera genom era erbjudanden bättre.
 feature: Offers
 topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 8cee44ed-5569-416c-b463-e75fb20d4c9c
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 835e4bf227ce330b1426a9a4331fdf533fc757e3
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 2%
+source-wordcount: '322'
+ht-degree: 1%
 
 ---
 
-# Lista taggar {#list-tags}
+# Kvalificerare för listsamling {#list-tags}
 
-Med taggar kan du bättre ordna och sortera bland dina erbjudanden. Du kan till exempel märka dina erbjudanden på den svarta fredagen med taggen &quot;Black Friday&quot;. Du kan sedan använda sökfunktionen i erbjudandebiblioteket för att enkelt hitta alla erbjudanden med den taggen.
+Med samlingskvalificerare (som tidigare kallades&quot;taggar&quot;) kan du bättre ordna och sortera dina erbjudanden. Du kan till exempel märka dina erbjudanden på Black Friday med&quot;Black Friday&quot;-samlingskvalificeraren. Du kan sedan använda sökfunktionen i erbjudandebiblioteket för att enkelt hitta alla erbjudanden med den samlingskvalificeraren.
 
-Taggar kan också användas för att gruppera erbjudanden i samlingar. Mer information finns i självstudiekursen om [skapa samlingar](../../../offer-library/creating-collections.md).
+Samlingskvalificerare kan också användas för att gruppera erbjudanden i samlingar. Mer information finns i självstudiekursen om [skapa samlingar](../../../offer-library/creating-collections.md).
 
-Du kan visa en lista med alla taggar i en behållare genom att utföra en enda GET-begäran till [!DNL Offer Library] API.
+Du kan visa en lista över alla samlingskvalificerare i en behållare genom att utföra en enda GET-begäran till [!DNL Offer Library] API.
 
 **API-format**
 
@@ -30,8 +30,8 @@ GET /{ENDPOINT_PATH}/{CONTAINER_ID}/queries/core/search?schema={SCHEMA_TAG}&{QUE
 | Parameter | Beskrivning | Exempel |
 | --------- | ----------- | ------- |
 | `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
-| `{CONTAINER_ID}` | Behållaren där taggarna finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
-| `{SCHEMA_TAG}` | Definierar schemat som är associerat med taggar. | `https://ns.adobe.com/experience/offer-management/tag;version=0.1` |
+| `{CONTAINER_ID}` | Behållaren där samlingskvalificerarna finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
+| `{SCHEMA_TAG}` | Definierar det schema som är associerat med samlingskvalificerare. | `https://ns.adobe.com/experience/offer-management/tag;version=0.1` |
 | `{QUERY_PARAMS}` | Valfria frågeparametrar för att filtrera resultat efter. | `limit=2` |
 
 **Begäran**
@@ -60,11 +60,11 @@ De vanligaste frågeparametrarna för sidindelning är:
 | `qop` | Använder operatorn AND eller OR på värden i frågesträngsparam. | `AND` / `OR` |
 | `field` | Valfri lista med fält som sökningen ska begränsas till. Den här parametern kan upprepas så här: field=field1[,field=field2,..] och (sökvägsuttryck är i form av punktavgränsade banor som _instance.xdm:name) | `_instance.xdm:name` |
 | `orderBy` | Sortera resultaten efter en specifik egenskap. Lägga till en `-` före rubrik (`orderby=-title`) sorterar objekten efter rubrik i fallande ordning (Z-A). | `-repo:createdDate` |
-| `limit` | Begränsa antalet returnerade taggar. | `limit=5` |
+| `limit` | Begränsa antalet returnerade samlingskvalificerare. | `limit=5` |
 
 **Svar**
 
-Ett godkänt svar returnerar en lista med taggar som finns i den behållare som du har åtkomst till.
+Ett godkänt svar returnerar en lista med samlingskvalificerare som finns i den behållare som du har åtkomst till.
 
 ```json
 {

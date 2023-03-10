@@ -1,21 +1,21 @@
 ---
-title: Skapa en tagg
-description: Med taggar kan du bättre ordna och sortera bland dina erbjudanden.
+title: Skapa en samlingskvalificerare
+description: Med en samling kvalificerare kan ni ordna och sortera genom era erbjudanden bättre.
 feature: Offers
 topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: f3f7cccb-0173-409e-8b76-8b6e136a22ac
-source-git-commit: 353aaf2bc4f32b1b0d7bfc2f7f4f48537cc79df4
+source-git-commit: 835e4bf227ce330b1426a9a4331fdf533fc757e3
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 6%
+source-wordcount: '141'
+ht-degree: 2%
 
 ---
 
-# Skapa en tagg {#create-tag}
+# Skapa en samlingskvalificerare {#create-tag}
 
-Du kan skapa en tagg genom att göra en POST-förfrågan till [!DNL Offer Library] API, samtidigt som du anger ditt behållar-ID.
+Du kan skapa en samlingskvalificerare (som tidigare kallades &quot;tagg&quot;) genom att göra en POST-förfrågan till [!DNL Offer Library] API, samtidigt som du anger ditt behållar-ID.
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
@@ -35,7 +35,7 @@ POST /{ENDPOINT_PATH}/{CONTAINER_ID}/instances
 | Parameter | Beskrivning | Exempel |
 | --------- | ----------- | ------- |
 | `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
-| `{CONTAINER_ID}` | Behållaren där taggarna finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
+| `{CONTAINER_ID}` | Behållaren där samlingskvalificerarna finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
 
 **Begäran**
 
@@ -55,7 +55,7 @@ curl -X POST \
 
 **Svar**
 
-Ett godkänt svar returnerar information om den nyligen skapade taggen, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort taggen. Du kan använda din unika tagg `@id` i senare självstudiekurser för att skapa samlingar och personaliserade erbjudanden.
+Ett godkänt svar returnerar information om den nyligen skapade samlingskvalificeraren, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort samlingskvalificeraren. Du kan använda din unika samlingskvalificerare `@id` i senare självstudiekurser för att skapa samlingar och personaliserade erbjudanden.
 
 ```json
 {

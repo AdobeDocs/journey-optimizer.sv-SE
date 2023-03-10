@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 722f9c3b-b505-48c0-b126-31a7a841c245
-source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
+source-git-commit: 835e4bf227ce330b1426a9a4331fdf533fc757e3
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Använd  **[!UICONTROL Components]** meny för att hantera de komponenter som kr
 
 * **[!UICONTROL Placements]**: Skapa och hantera praktik där era erbjudanden visas. Se [Skapa placeringar](../offer-library/creating-placements.md).
 
-* **[!UICONTROL Tags]**: Skapa och hantera taggar för att ordna och filtrera erbjudandena. Se [Skapa taggar](../offer-library/creating-tags.md).
+* **[!UICONTROL Collection qualifiers]**: Skapa och hantera samlingskvalificerare (tidigare kallade taggar) för att ordna och filtrera dina erbjudanden. Se [Skapa samlingskvalificerare](../offer-library/creating-tags.md).
 
 * **[!UICONTROL Rules]**: Hantera villkoren för hur era erbjudanden presenteras. Se [Skapa en beslutsregel](../offer-library/creating-decision-rules.md).
 

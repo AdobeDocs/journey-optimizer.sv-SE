@@ -1,44 +1,44 @@
 ---
-title: Skapa taggar
-description: Lär dig hur du skapar taggar för dina erbjudanden
+title: Skapa samlingskvalificerare
+description: Lär dig hur du skapar samlingskvalificerare för dina erbjudanden
 feature: Offers
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: fe2b7ce4-dc63-477a-a64f-f3828c6a232e
-source-git-commit: 5596c851b70cc38cd117793d492a15fd4ce175ef
+source-git-commit: 835e4bf227ce330b1426a9a4331fdf533fc757e3
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 6%
+source-wordcount: '178'
+ht-degree: 2%
 
 ---
 
-# Skapa taggar {#create-tags}
+# Skapa samlingskvalificerare {#create-tags}
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_offer_tags"
->title="Taggar"
->abstract="Associera en eller flera taggar med erbjudandet för att ordna ditt offertbibliotek och enklare hitta erbjudanden. Taggar skapas från menyn Komponent."
+>title="Samlingskvalificerare"
+>abstract="Koppla en eller flera av samlingskvalificerarna till erbjudandet för att ordna ditt offertbibliotek och enklare hitta erbjudanden. Samlingskvalificerare skapas från menyn Komponent."
 
-Genom att associera taggar med erbjudandena blir det enklare att hålla ordning på dem. Du kan till exempel märka dina erbjudanden på den svarta fredagen med taggen &quot;Black Friday&quot;. Du kan sedan använda sökfunktionen i erbjudandebiblioteket för att enkelt hitta alla erbjudanden med den taggen.
+Genom att associera samlingskvalificerare (som tidigare kallats&quot;taggar&quot;) med dina erbjudanden blir det enklare att hålla ordning på dem. Du kan till exempel märka dina erbjudanden på Black Friday med&quot;Black Friday&quot;-samlingskvalificeraren. Du kan sedan använda sökfunktionen i erbjudandebiblioteket för att enkelt hitta alla erbjudanden med den samlingskvalificeraren.
 
-Taggar kan också användas för att gruppera erbjudanden i mängder. Se [Skapa samlingar](../offer-library/creating-collections.md).
+Samlingskvalificerare kan också användas för att gruppera erbjudanden i olika mängder. Se [Skapa samlingar](../offer-library/creating-collections.md).
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
-Listan med skapade taggar finns i **[!UICONTROL Components]** -menyn.
+Listan över skapade samlingskvalificerare finns i **[!UICONTROL Components]** -menyn.
 
 ![](../assets/tags_list.png)
 
-Så här skapar du en tagg:
+Så här skapar du en samlingskvalificerare:
 
-1. Gå till **[!UICONTROL Tags]** tabbtangenten och sedan klicka **[!UICONTROL Create tag]**.
+1. Gå till **[!UICONTROL Collection qualifiers]** tabbtangenten och sedan klicka **[!UICONTROL Create collection qualifier]**.
 
-1. Ange taggens namn och klicka sedan på **[!UICONTROL Save]**.
+1. Ange samlingskvalificerarens namn och klicka sedan på **[!UICONTROL Save]**.
 
    ![](../assets/tags_create.png)
 
-1. När taggen har skapats visas den i listan. Du kan markera den för att visa dess egenskaper och redigera eller inaktivera den.
+1. När samlingskvalificeraren har skapats visas den i listan. Du kan markera den för att visa dess egenskaper och redigera eller inaktivera den.
 
    ![](../assets/tags_created.png)
 

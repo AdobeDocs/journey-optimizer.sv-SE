@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 73bfdc24-28cf-4cfd-bac9-a4ff1ea543e3
-source-git-commit: a61cbb5b2a6cea21dbaf41a9fcb085fe1b814087
+source-git-commit: 835e4bf227ce330b1426a9a4331fdf533fc757e3
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -192,12 +192,12 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 **Fält:** taggar
 **Titel:** Taggar
-**Beskrivning:** Den uppsättning taggar som är associerade med den här entiteten. Taggarna används i filteruttryck för att begränsa det totala lagret till en delmängd (kategori).
+**Beskrivning:** Uppsättningen med samlingskvalificerare (kallas tidigare taggar) som är associerade med den här entiteten. Samlingskvalificerarna används i filteruttryck för att begränsa det totala lagret till en delmängd (kategori).
 **Typ:** array
 
 +++
 
-<!--Field without name under tags: Description: An identifier of a tag object. The value is the @id of the tag that is referenced. See tag schema: https://ns.adobe.com/experience/decisioning/tag. Type: string-->
+<!--Field without name under collection qualifiers: Description: An identifier of a collection qualifier object. The value is the @id of the collection qualifier that is referenced. See tag schema: https://ns.adobe.com/experience/decisioning/tag. Type: string-->
 
 +++ repo
 

@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: e375fd3a-b10d-45f4-a95b-ceb48116e841
-source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
+source-git-commit: 835e4bf227ce330b1426a9a4331fdf533fc757e3
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '346'
 ht-degree: 10%
 
 ---
@@ -29,7 +29,7 @@ Innan du börjar skapa erbjudanden måste du definiera flera komponenter som du 
 
 1. **Skapa beslutsregler** som anger villkoren för att anbuden ska kunna lämnas in.
 
-1. **Skapa taggar** som du kopplar till erbjudandena så att du enkelt kan ordna och söka efter dem i biblioteket.
+1. **Skapa samlingskvalificerare** (kallades tidigare&quot;taggar&quot;) som du kopplar till erbjudandena, så att du enkelt kan ordna och söka efter dem i biblioteket.
 
 1. Om du vill definiera regler som avgör vilket erbjudande som ska presenteras först för en viss placering (i stället för att ta hänsyn till offertens prioritetspoäng), kan du **skapa en rankningsformel**.
 

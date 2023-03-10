@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 851d988a-2582-4c30-80f3-b881d90771be
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: 835e4bf227ce330b1426a9a4331fdf533fc757e3
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1070'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ De viktigaste stegen för att konfigurera erbjudanden, inkludera dem i ett beslu
 
    * Skapa placeringar
    * Skapa beslutsregler
-   * Skapa taggar
+   * Skapa samlingskvalificerare (kallas tidigare&quot;taggar&quot;)
    * Skapa rankningar (valfritt)
 
 1. [Konfigurera erbjudandena](#configure-offers)
@@ -92,15 +92,15 @@ Du hittar dem under **[!UICONTROL Decision Management]** > **[!UICONTROL Compone
 
    De detaljerade stegen för att skapa regler beskrivs i [det här avsnittet](../../using/offers/offer-library/creating-decision-rules.md).
 
-1. Du kan också skapa en **tag**.
+1. Du kan också skapa en **samlingskvalificerare**.
 
-   Du kan sedan koppla erbjudandet till dina erbjudanden och använda den här taggen för att gruppera dina erbjudanden i en samling.
+   Du kan sedan koppla erbjudandet till dina erbjudanden och använda den här samlingskvalificeraren för att gruppera dina erbjudanden i en samling.
 
-   I det här exemplet skapar du *Yoga* -tagg.
+   I det här exemplet skapar du *Yoga* samlingskvalificerare.
 
    ![](assets/offers-e2e-tag.png)
 
-   De detaljerade stegen för att skapa taggar beskrivs i [det här avsnittet](../../using/offers/offer-library/creating-tags.md).
+   De detaljerade stegen för att skapa samlingskvalificerare beskrivs i [det här avsnittet](../../using/offers/offer-library/creating-tags.md).
 
 1. Om du vill definiera regler som avgör vilket erbjudande som ska presenteras först för en viss placering (i stället för att ta hänsyn till offertens prioritetspoäng), kan du skapa en **rankningsformel**.
 
@@ -181,7 +181,7 @@ När du konfigurerar beslutet måste du lägga till dina personliga erbjudanden 
 
 1. Om du vill snabba upp beslutsprocessen skapar du en dynamisk samling.
 
-1. Använd *Yoga* för att välja de fyra personliga erbjudanden du skapade tidigare.
+1. Använd *Yoga* samlingskvalificerare för att välja de fyra personaliserade erbjudanden du skapade tidigare.
 
    ![](assets/offers-e2e-collection-using-tag.png)
 

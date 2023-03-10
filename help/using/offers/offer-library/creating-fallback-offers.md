@@ -5,9 +5,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 9ba16ad9-a5e7-4ce7-8ed6-7707d37178c6
-source-git-commit: 11596bfbe5f98e362224384d51ba32d61275bc1d
+source-git-commit: 835e4bf227ce330b1426a9a4331fdf533fc757e3
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '286'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ Så här skapar du ett reserverbjudande:
 
    ![](../assets/create_fallback.png)
 
-1. Ange namnet på reserverbjudandet. Du kan också koppla en eller flera befintliga taggar till den, så att du enklare kan söka efter och ordna erbjudandebiblioteket.
+1. Ange namnet på reserverbjudandet. Du kan också koppla en eller flera befintliga samlingskvalificerare (som tidigare kallats taggar) till den, så att du enklare kan söka efter och ordna erbjudandebiblioteket.
 
    ![](../assets/fallback_details.png)
 

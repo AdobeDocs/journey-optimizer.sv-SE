@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 0c8808e3-9148-4a33-9fd5-9218e02c2dfd
-source-git-commit: 11596bfbe5f98e362224384d51ba32d61275bc1d
+source-git-commit: 835e4bf227ce330b1426a9a4331fdf533fc757e3
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '314'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Listan med erbjudandesamlingar finns i **[!UICONTROL Offers]** -menyn.
 
 Du kan skapa två typer av samlingar:
 
-* **Dynamiska samlingar** är samlingar av erbjudanden baserade på taggar. Dessa samlingar uppdateras automatiskt. Om till exempel ett nytt erbjudande skapas med den valda taggen läggs det automatiskt till i samlingen.
+* **Dynamiska samlingar** är samlingar av erbjudanden som baseras på samlingskvalificerare (som tidigare kallades &quot;taggar&quot;). Dessa samlingar uppdateras automatiskt. Om till exempel ett nytt erbjudande skapas med den valda samlingskvalificeraren läggs det automatiskt till i samlingen.
 
 * **Statiska samlingar** är samlingar som skapats genom att du manuellt väljer enskilda erbjudanden som ska ingå i samlingen. Samlingen kan bara uppdateras genom att fler erbjudanden läggs till manuellt.
 
@@ -42,13 +42,13 @@ Så här skapar du en samling:
 
    ![](../assets/collection_create.png)
 
-1. Om du vill skapa en dynamisk samling använder du den vänstra rutan för att välja taggen för erbjudandena som ska läggas till i samlingen. Klicka sedan på **[!UICONTROL Save]**. Alla erbjudanden med den valda taggen sparas i samlingen.
+1. Om du vill skapa en dynamisk samling använder du den vänstra rutan för att välja den som ska lägga till erbjudandena i samlingen. Klicka sedan på **[!UICONTROL Save]**. Alla erbjudanden med den valda samlingskvalificeraren sparas i samlingen.
 
-   Mer information om hur du skapar taggar finns i [Skapa taggar](../offer-library/creating-tags.md).
+   Mer information om att skapa samlingskvalificerare finns i [Skapa samlingskvalificerare](../offer-library/creating-tags.md).
 
    ![](../assets/dynamic_collection.png)
 
-1. Om du vill skapa en statisk samling använder du den vänstra rutan för att filtrera listan med erbjudanden (status, tagg, datum, kanal, innehållstyp) och väljer sedan de erbjudanden som ska läggas till i samlingen.
+1. Om du vill skapa en statisk samling använder du den vänstra rutan för att filtrera listan med erbjudanden (status, samlingskvalificerare, datum, kanal, innehållstyp) och väljer sedan de erbjudanden som ska läggas till i samlingen.
 
    ![](../assets/static_collection.png)
 

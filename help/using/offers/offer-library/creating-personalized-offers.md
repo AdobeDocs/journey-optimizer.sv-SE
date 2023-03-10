@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4a53ea96-632a-41c7-ab15-b85b99db4f3e
-source-git-commit: 11596bfbe5f98e362224384d51ba32d61275bc1d
+source-git-commit: 835e4bf227ce330b1426a9a4331fdf533fc757e3
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '706'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ Innan du skapar ett erbjudande måste du kontrollera att du har skapat:
 
 * A **placering** i vilket erbjudandet kommer att visas. Se [Skapa placeringar](../offer-library/creating-placements.md)
 * Om du vill lägga till ett villkor för behörighet: a **beslutsregel** som kommer att definiera villkoren för hur erbjudandet ska presenteras. Se [Skapa beslutsregler](../offer-library/creating-decision-rules.md).
-* En eller flera **taggar** som du kanske vill koppla till erbjudandet. Se [Skapa taggar](../offer-library/creating-tags.md).
+* En eller flera **samlingskvalificerare** (tidigare kallat &quot;taggar&quot;) som du kanske vill koppla till erbjudandet. Se [Skapa samlingskvalificerare](../offer-library/creating-tags.md).
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
@@ -53,7 +53,7 @@ Skapa en **erbjudande** gör du så här:
    >
    >Uppdatering av start- och slutdatum kan påverka capping. [Läs mer](add-constraints.md#capping-change-date)
 
-1. Du kan också koppla en eller flera befintliga **[!UICONTROL tags]** så att du enklare kan söka efter och ordna erbjudandebiblioteket. [Läs mer](creating-tags.md).
+1. Du kan också koppla en eller flera befintliga **[!UICONTROL collection qualifiers]** så att du enklare kan söka efter och ordna erbjudandebiblioteket. [Läs mer](creating-tags.md).
 
 1. The **[!UICONTROL Offer attributes]** kan du koppla nyckelvärdepar till erbjudandet för rapportering och analys.
 

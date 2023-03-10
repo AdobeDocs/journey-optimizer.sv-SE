@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: ccaad8c4d9d26c0fd968e627e7a6bf853f232000
+source-git-commit: 835e4bf227ce330b1426a9a4331fdf533fc757e3
 workflow-type: tm+mt
-source-wordcount: '1322'
-ht-degree: 35%
+source-wordcount: '1328'
+ht-degree: 33%
 
 ---
 
@@ -325,7 +325,7 @@ ht-degree: 35%
    + Skapa komponenter {#create-components}
       + [Skapa placeringar](using/offers/offer-library/creating-placements.md)
       + [Skapa beslutsregler](using/offers/offer-library/creating-decision-rules.md)
-      + [Skapa taggar](using/offers/offer-library/creating-tags.md)
+      + [Skapa samlingskvalificerare](using/offers/offer-library/creating-tags.md)
    + Skapa rankningar {#rankings}
       + [Kom igång med rankningar](using/offers/ranking/get-started-rankings.md)
       + [Rankningsformler](using/offers/ranking/create-ranking-formulas.md)
@@ -377,11 +377,11 @@ ht-degree: 35%
             + [Uppdatera en beslutsregel](using/offers/api-reference/offers-api/decision-rules/update.md)
             + [Ta bort en beslutsregel](using/offers/api-reference/offers-api/decision-rules/delete.md)
          + Taggar {#tags}
-            + [Lista taggar](using/offers/api-reference/offers-api/tags/tags-list.md)
-            + [Söka efter en tagg](using/offers/api-reference/offers-api/tags/lookup.md)
-            + [Skapa en tagg](using/offers/api-reference/offers-api/tags/create.md)
-            + [Uppdatera en tagg](using/offers/api-reference/offers-api/tags/update.md)
-            + [Ta bort en tagg](using/offers/api-reference/offers-api/tags/delete.md)
+            + [Kvalificerare för listsamling](using/offers/api-reference/offers-api/tags/tags-list.md)
+            + [Söka efter en samlingskvalificerare](using/offers/api-reference/offers-api/tags/lookup.md)
+            + [Skapa en samlingskvalificerare](using/offers/api-reference/offers-api/tags/create.md)
+            + [Uppdatera en samlingskvalificerare](using/offers/api-reference/offers-api/tags/update.md)
+            + [Ta bort en samlingskvalificerare](using/offers/api-reference/offers-api/tags/delete.md)
          + Personaliserade erbjudanden {#personalized-offers}
             + [Lista personaliserade erbjudanden](using/offers/api-reference/offers-api/personalized-offers/offers-list.md)
             + [Söka efter ett personaliserat erbjudande](using/offers/api-reference/offers-api/personalized-offers/lookup.md)

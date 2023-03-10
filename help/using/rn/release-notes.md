@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 4fbb879f40952aaef5b197b170578bf9e27f10f9
+source-git-commit: 835e4bf227ce330b1426a9a4331fdf533fc757e3
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '1025'
 ht-degree: 8%
 
 ---
@@ -27,6 +27,12 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 **Hantera taggar i dina resor**
 
 Som Journey Optimizer-behandlare kan du nu ordna dina affärsobjekt med hjälp av taggar. Taggar är ett snabbt och enkelt sätt att klassificera objekt för att förbättra sökningen. Den här funktionen är för närvarande i betaversion och endast tillgänglig för Journeys. [Läs mer](../building-journeys/tags.md)
+
+**Beslutshanteringstaggar som har bytt namn till samlingskvalificerare**
+
+För att undvika eventuella problem med den senaste versionen av taggfunktionen i Adobe Experience Platform har taggarna för beslutshantering bytt namn till&quot;Samlingskvalificerare&quot;.
+
+Observera att även om termen&quot;tagg&quot; inte längre används i gränssnittet för beslutshantering används den fortfarande i serverdelstjänster som API:er och datauppsättningar.
 
 ## Versionsinformation från februari 2023 {#feb-2023}
 
