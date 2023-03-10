@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
-source-git-commit: 1bb5fbdc08f8650132e191e659b03caadae8edf4
+source-git-commit: 3fa6f5379b04565328df1c09c6770507373858c7
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2211'
 ht-degree: 1%
 
 ---
@@ -164,7 +164,9 @@ Följ huvudstegen nedan när du vill ställa in capping.
 
 1. Definiera vilken **[!UICONTROL Capping event]** beaktas för att öka räknaren. [Läs mer](#capping-event)
 
-1. Ange hur många gånger erbjudandet kan presenteras. [Läs mer](#capping-type)
+1. Ange hur många gånger erbjudandet kan presenteras. [Läs mer](#capping-count)
+
+1. Välj om du vill att appningen ska användas för alla användare eller bara för en profil. [Läs mer](#capping-type)
 
 1. Ange **[!UICONTROL Frequency]** för att definiera hur ofta antalet capping återställs. [Läs mer](#frequency-capping)
 
@@ -184,6 +186,8 @@ Det antal gånger ett erbjudande föreslås beräknas vid e-postförberedelsen. 
 
 The **[!UICONTROL Capping event]** kan du definiera vilket **[!UICONTROL Capping event]** kommer att beaktas för att öka räknaren:
 
+![](../assets/offer-capping-event.png)
+
 * **[!UICONTROL Decision event]** (standardvärde): Maximalt antal gånger ett erbjudande kan presenteras.
 * **[!UICONTROL Impression]**: Maximalt antal gånger som erbjudandet kan visas för en användare.
 
@@ -192,21 +196,25 @@ The **[!UICONTROL Capping event]** kan du definiera vilket **[!UICONTROL Capping
    >Användning av visningar när capping-händelser är tillgängliga för **inkommande kanaler** endast.
 
 * **[!UICONTROL Clicks]**: Maximalt antal gånger som en användare kan klicka på erbjudandet.
-* **[!UICONTROL Custom event]**: kan du definiera en anpassad händelse som ska användas för att begränsa antalet erbjudanden som skickas. Du kan t.ex. sätta ett tak för antalet inlösen tills en viss profil har lösts in 1 gång. Om du vill göra det använder du [Adobe Experience Platform XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"} scheman för att skapa en anpassad händelseregel.
+* **[!UICONTROL Custom event]**: Du kan definiera en anpassad händelse som ska användas för att begränsa antalet erbjudanden som skickas. Du kan t.ex. sätta ett tak för antalet inlösen tills de är lika med 10000 eller tills en viss profil har lösts in 1 gång. Om du vill göra det använder du [Adobe Experience Platform XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"} scheman för att skapa en anpassad händelseregel.
 
-   ![](../assets/offer-capping-event.png)
+   <!--For example, you can cap on the number of redemptions so that the offer can be shown until redemptions equal 10000. You can only select XDM ExperienceEvents. -->
 
-   <!--For example, you can cap on the number of redemptions so that the offer can be shown until redemptions equal 10000. You can only select XDM ExperienceEvents. In the example below, you can cap on the number of subscriptions.-->
+   I exemplet nedan vill du ange ett tak för antalet prenumerationer. Välj **[!UICONTROL Custom event]** i listan och använd **[!UICONTROL Create custom event rules]** byggaren för att välja relevanta händelser.
 
-   <!--![](../assets/offer-capping-custom-event.png)-->
+   ![](../assets/offer-capping-custom-event.png)
+
+   När regeln har skapats visas den i **[!UICONTROL Custom event query]** fält.
+
+   ![](../assets/offer-capping-custom-event-query.png)
 
    >[!CAUTION]
    >
    >För alla klickningshändelser utom beslutshändelser kanske feedback för beslutshanteringen inte samlas in automatiskt, så se till att data kommer in. [Läs mer om datainsamling](../data-collection/data-collection.md)
 
-### Taktyp {#capping-type}
+### Antal tak {#capping-count}
 
-The **[!UICONTROL Capping type]** kan du ange hur många gånger erbjudandet kan presenteras.
+The **[!UICONTROL Capping count]** kan du ange hur många gånger erbjudandet kan presenteras.
 
 ![](../assets/offer-capping-times.png)
 
@@ -214,9 +222,9 @@ The **[!UICONTROL Capping type]** kan du ange hur många gånger erbjudandet kan
 >
 >Talet måste vara ett heltal som är större än 0.
 
-<!--For example, if you defined a custom capping event such as subsciptions are taken into account, if you enter 10 in the **[!UICONTROL Capping count]** field, no more offers will be sent after 10 subscriptions.-->
+Om du till exempel har definierat en anpassad capping-händelse, som t.ex. undertexter, ska tas med i beräkningen om du anger 10 i **[!UICONTROL Capping count]** inga fler erbjudanden skickas efter 10 prenumerationer.
 
-<!--![](../assets/offer-capping-custom-example.png)-->
+### Taktyp {#capping-type}
 
 Du kan också ange om du vill att appen ska användas för alla användare eller för en viss profil:
 

@@ -4,9 +4,9 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: b06b545d377fcd1ffe6ed218badeb94c1bb85ef2
+source-git-commit: 3fa6f5379b04565328df1c09c6770507373858c7
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2365'
 ht-degree: 17%
 
 ---
@@ -17,13 +17,13 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 ## Mars 2023 {#march-2023}
 
-* Ett nytt avsnitt har skapats i beslutshanteringshandboken om hur man samlar in feedback från offera decisioningar i Adobe Experience Platform, inklusive vilka erbjudanden som visas och hur användare interagerar med dem.  [Läs mer](../offers/data-collection/data-collection.md)
+* Ett nytt avsnitt har skapats i beslutshanteringshandboken om hur man samlar in feedback från offera decisioningar i Adobe Experience Platform, inklusive vilka erbjudanden som visas och hur användare interagerar med dem. [Läs mer](../offers/data-collection/data-collection.md)
 
 ## Februari 2023 {#feb-2023}
 
 * En anteckning har lagts till i den API-utlösta kampanjdokumentationen för att ange att kontextattribut som skickas till begäran inte får överstiga 50 kB. [Läs mer](../campaigns/api-triggered-campaigns.md#contextual)
 
-* Ytterligare information om hur avanmälningsinformation lagras i **Samtycketjänstens datauppsättning** efter att mottagarna har avbeställt prenumerationen via en landningssida. [Läs mer](../landing-pages/lp-use-cases.md#configure-opt-out)
+* Information om hur avanmälningsinformation lagras i **Samtycketjänstens datauppsättning** efter att mottagarna har avbeställt prenumerationen via en landningssida. [Läs mer](../landing-pages/lp-use-cases.md#configure-opt-out)
 
 ## Januari 2023 {#jan-2023}
 
