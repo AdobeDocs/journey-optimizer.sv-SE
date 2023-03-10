@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
-source-git-commit: b06b545d377fcd1ffe6ed218badeb94c1bb85ef2
+source-git-commit: 1bb5fbdc08f8650132e191e659b03caadae8edf4
 workflow-type: tm+mt
-source-wordcount: '2129'
+source-wordcount: '2121'
 ht-degree: 1%
 
 ---
@@ -145,10 +145,10 @@ I princip är utdata för ett segment en lista med profiler, medan en beslutsreg
 >title="Ange takfrekvens"
 >abstract="Du kan välja att återställa antalet erbjudanden per dag, vecka eller månad. Observera att när du har sparat ditt erbjudande kan du inte ändra den valda frekvensen."
 
-[!CONTEXTUALHELP]
->id=&quot;ajo_decisioning_frequency_capping_intryckt&quot;
->title=&quot;Impression&quot;
->abstract=&quot;Användningen av visningar som capping-händelser är endast tillgänglig för inkommande kanaler.&quot;
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_frequency_capping_impression"
+>title="Impression"
+>abstract="Användningen av visningar som capping-händelser är endast tillgänglig för inkommande kanaler."
 
 Begränsning används som en begränsning för att definiera det maximala antal gånger ett erbjudande kan presenteras.
 
