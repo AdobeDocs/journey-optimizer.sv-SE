@@ -1,21 +1,21 @@
 ---
-title: Uppdatera taggar
-description: Med taggar kan du bättre ordna och sortera bland dina erbjudanden.
+title: Uppdatera samlingskvalificerare
+description: Med en samling kvalificerare kan ni ordna och sortera genom era erbjudanden bättre.
 feature: Offers
 topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 918927e1-ad7a-4937-b652-2a0932e9efa1
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 230f4915baedf557fe8effe216f463fca6af4849
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 4%
+source-wordcount: '171'
+ht-degree: 2%
 
 ---
 
-# Uppdatera en tagg {#update-tag}
+# Uppdatera en samlingskvalificerare {#update-collection-qualifier}
 
-Du kan ändra eller uppdatera en tagg i behållaren genom att göra en PATCH-förfrågan till [!DNL Offer Library] API.
+Du kan ändra eller uppdatera en samlingskvalificerare (som tidigare kallades &quot;tagg&quot;) i behållaren genom att göra en PATCH-begäran till [!DNL Offer Library] API.
 
 Mer information om JSON Patch, inklusive tillgängliga åtgärder, finns i [JSON Patch-dokumentation](http://jsonpatch.com/).
 
@@ -68,7 +68,7 @@ curl -X PATCH \
 
 **Svar**
 
-Ett godkänt svar returnerar den uppdaterade informationen om taggen, inklusive dess unika instans-ID och tagg `@id`.
+Ett godkänt svar returnerar den uppdaterade informationen om insamlingskvalificeraren, inklusive dess unika instans-ID och samlingskvalificerare `@id`.
 
 ```json
 {
