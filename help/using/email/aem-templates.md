@@ -10,9 +10,9 @@ topic: Content Management
 role: User
 level: Beginner
 badge: label="Beta" type="Informative"
-source-git-commit: a162f70dceb3bef635085840fc304e0da2c33eed
+source-git-commit: 84278edbfa479d9c7588594c0b389a442aa3fe7c
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '746'
 ht-degree: 1%
 
 ---
@@ -40,12 +40,11 @@ Innan du börjar använda den här funktionen bör du kontrollera att du uppfyll
 
    Om du vill skapa, redigera och ta bort innehållsmallar i Adobe Journey Optimizer måste du ha **[!DNL Manage Library Items]** behörighet som ingår i **[!DNL Content Library Manager]** produktprofil. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager)
 
-
 ## Skyddsritningar och begränsningar{#aem-templates-limitations}
 
 Om du vill optimera din användning av Adobe Experience Manager med Adobe Journey Optimizer ännu mer är det viktigt att du är medveten om följande extra skyddsförslag och begränsningar:
 
-* Mallen Experience Manager får inte innehålla personalisering. Personalisering bör endast utföras i Journey Optimizer.
+* Korrekt Journey Optimizer-syntax krävs för att personaliseringen i mallen Experience Manager ska bli effektiv. [Läs mer](../personalization/personalization-syntax.md)
 
 * Export av gruppmallar stöds inte för närvarande, mallar måste exporteras individuellt.
 
@@ -59,13 +58,13 @@ Om du vill exportera en Adobe Experience Manager-mall till Adobe Journey Optimiz
 
    ![](assets/aem-outbound-menu.png)
 
-1. Gå till ditt innehållsbibliotek och välj den mall som du vill exportera till Journey Optimizer.
+1. Från ditt innehållsbibliotek kan du använda tidigare konfigurerade mallar eller skapa en från grunden. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/managing-pages.html?lang=en#creating-a-new-page)
 
-   Du kan också skapa en ny sida från grunden. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/managing-pages.html?lang=en#creating-a-new-page)
+1. Genom att lägga in Journey Optimizer personaliseringssyntax i mallen kan du förbättra dess anpassningsmöjligheter. [Läs mer](../personalization/personalization-syntax.md)
 
-   ![](assets/aem-send-template.png)
+   ![](assets/aem_ajo_4.png)
 
-1. När du har valt mallen väljer du **[!UICONTROL Send to]** på den avancerade menyn.
+1. Markera mallen som du vill exportera till Journey Optimizer och klicka på **[!UICONTROL Send to]** på den avancerade menyn.
 
    ![](assets/aem-advanced-menu.png)
 
@@ -91,7 +90,7 @@ När mallen Experience Manager är tillgänglig i Journey Optimizer som innehål
 
 1. I **[!UICONTROL Template properties]** klickar du på **[!UICONTROL Manage access]** om du vill tilldela egna eller grundläggande dataanvändningsetiketter till mallen. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md)
 
-1. Om du vill anpassa din AEM ytterligare och lägga till anpassad anpassning till ditt innehåll klickar du på **[!UICONTROL Edit content]**. På så sätt kan du enkelt göra ändringar och anpassa mallen efter dina specifika behov. [Läs mer](get-started-email-design.md)
+1. Om du vill anpassa din Experience Manager-mall ytterligare och lägga till anpassad personalisering i ditt innehåll klickar du på **[!UICONTROL Edit content]**. På så sätt kan du enkelt göra ändringar och anpassa mallen efter dina specifika behov. [Läs mer](get-started-email-design.md)
 
    >[!NOTE]
    >
@@ -101,8 +100,22 @@ När mallen Experience Manager är tillgänglig i Journey Optimizer som innehål
 
 1. När innehållet har definierats kan du använda det när du skapar ny e-post genom att bläddra i **[!UICONTROL Saved templates]** samling. Välj sedan **[!UICONTROL Use this template]**.
 
-   Lär dig redigera och anpassa e-postinnehåll i [det här avsnittet](content-from-scratch.md).
-
    ![](assets/aem_ajo_3.png)
+
+1. Nu kan du redigera och anpassa innehållet. Mer information om hur du skapar e-postinnehåll finns i [page](content-from-scratch.md).
+
+   ![](assets/aem_ajo_5.png)
+
+1. Om du har lagt till anpassat innehåll i din Experience Manager-mall klickar du på **[!UICONTROL Simulate Content]** om du vill förhandsgranska hur det kommer att se ut i meddelandet med testprofiler.
+
+[Läs mer om förhandsgranskning och testprofiler](../email/preview.md)
+
+   ![](assets/aem_ajo_6.png)
+
+1. När du visar förhandsgranskningen av meddelandet ersätts alla anpassade element automatiskt med motsvarande data från den valda testprofilen.
+
+   Vid behov kan ytterligare testprofiler läggas till via **[!UICONTROL Manage test profiles]** -knappen.
+
+   ![](assets/aem_ajo_7.png)
 
 När din e-post är klar slutför du konfigurationen av [resa](../building-journeys/journey-gs.md) eller [kampanj](../campaigns/create-campaign.md)och aktivera det för att skicka meddelandet.
