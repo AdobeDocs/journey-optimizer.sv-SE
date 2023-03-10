@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
-source-git-commit: 2e22b44b2139ab37c5b62573c9bdeaa0fbfc8b12
+source-git-commit: b06b545d377fcd1ffe6ed218badeb94c1bb85ef2
 workflow-type: tm+mt
-source-wordcount: '1685'
-ht-degree: 0%
+source-wordcount: '2129'
+ht-degree: 1%
 
 ---
 
@@ -57,7 +57,7 @@ Om du till exempel anger följande begränsningar:
 
 * Erbjudandet gäller endast användare som matchar&quot;Gold Loyalty Customers&quot;-beslutsregeln.
 * Prioriteten för erbjudandet är 50, vilket innebär att erbjudandet presenteras före erbjudanden med en prioritet mellan 1 och 49, och efter erbjudanden med en prioritet på minst 51.
-* Erbjudandet gäller endast en gång per användare och gäller för alla ersättningar.
+* Erbjudandet gäller endast en gång i månaden per användare och gäller alla ersättningar.
 
 ## Kvalificering {#eligibility}
 
@@ -138,63 +138,37 @@ I princip är utdata för ett segment en lista med profiler, medan en beslutsreg
 >id="ajo_decisioning_capping"
 >title="Använd begränsning"
 >abstract="För att undvika att kunderna blir överdrivna bör du definiera hur många gånger ett erbjudande får presenteras med capping."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-constraints.html#capping-change-date" text="Ändrade datum kan påverka capping"
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_frequency_capping"
 >title="Ange takfrekvens"
->abstract="Du kan välja att återställa antalet erbjudanden per dag, vecka eller månad."
+>abstract="Du kan välja att återställa antalet erbjudanden per dag, vecka eller månad. Observera att när du har sparat ditt erbjudande kan du inte ändra den valda frekvensen."
 
->[!CONTEXTUALHELP]
->id="ajo_decisioning_frequency_capping_impression"
->title="Impression"
->abstract="Användningen av visningar som capping-händelser är endast tillgänglig för inkommande kanaler."
+[!CONTEXTUALHELP]
+>id=&quot;ajo_decisioning_frequency_capping_intryckt&quot;
+>title=&quot;Impression&quot;
+>abstract=&quot;Användningen av visningar som capping-händelser är endast tillgänglig för inkommande kanaler.&quot;
 
 Begränsning används som en begränsning för att definiera det maximala antal gånger ett erbjudande kan presenteras.
 
 Genom att begränsa antalet gånger användarna får specifika erbjudanden kan ni undvika att överdriva era kunder och därmed optimera varje kontaktyta med det bästa erbjudandet.
 
-Följ stegen nedan om du vill ställa in capping.
+Följ huvudstegen nedan när du vill ställa in capping.
 
-1. Ange hur många gånger erbjudandet kan presenteras.
+1. Se till att **[!UICONTROL Include capping]** växlingsknappen är markerad. Takning ingår som standard.
 
-   ![](../assets/offer-capping-times.png)
-
-   >[!NOTE]
+   >[!CAUTION]
    >
-   >Talet måste vara ett heltal som är större än 0.
+   >Det går inte att aktivera eller inaktivera frekvensbegränsning för tidigare skapade erbjudanden. För att göra det måste du duplicera erbjudandet eller skapa ett nytt.
 
-1. Ange om du vill att appningen ska användas för alla användare eller för en viss profil:
+1. Definiera vilken **[!UICONTROL Capping event]** beaktas för att öka räknaren. [Läs mer](#capping-event)
 
-   ![](../assets/offer-capping-total.png)
+1. Ange hur många gånger erbjudandet kan presenteras. [Läs mer](#capping-type)
 
-   * Välj **[!UICONTROL In total]** för att definiera hur många gånger ett erbjudande kan föreslås för den kombinerade målgruppen, vilket betyder för alla användare.
+1. Ange **[!UICONTROL Frequency]** för att definiera hur ofta antalet capping återställs. [Läs mer](#frequency-capping)
 
-      Om du till exempel är en återförsäljare av elektronikprodukter och har en &quot;TV-affär&quot; vill du att erbjudandet bara ska returneras 200 gånger för alla profiler.
-
-   * Välj **[!UICONTROL Per profile]** för att definiera hur många gånger ett erbjudande kan erbjudas en och samma användare.
-
-      Om du till exempel är en bank med ett Platinum-kreditkortserbjudande vill du inte att det här erbjudandet ska visas mer än fem gånger per profil. Ni tror faktiskt att om användaren har sett erbjudandet fem gånger och inte har följt det, har de större chans att agera på nästa bästa erbjudande.
-   <!--
-    Set the **[!UICONTROL Frequency]** to define how often the capping count is reset. To do so, define the time period for the counting (daily, weekly or monthly) and enter the number of days/weeks/months of your choice.
-    ![](../assets/offer-capping-frequency.png)
-    >[!NOTE]
-    >
-    >The reset happens at 12am UTC, on the day that you defined or on the first day of the week/month when applicable. The week start day is Sunday.
-    
-    For example, if you want the capping count to be reset every 2 weeks, select **[!UICONTROL Weekly]** from the **[!UICONTROL Repeat]** drop-down list and type **2** in the other field. The reset will happen every other Sunday at 12pm UTC.
-    -->
-
-1. Om du har definierat flera [representationer](add-representations.md) för ditt erbjudande, ange om du vill tillämpa begränsning **[!UICONTROL Across all placements]** eller **[!UICONTROL For each placement]**.
-
-   ![](../assets/offer-capping-placement.png)
-
-   * **[!UICONTROL Across all placements]**: antalet licenser kommer att summera alla beslut för alla ersättningar som är kopplade till erbjudandet.
-
-      Om ett erbjudande till exempel har **E-post** placering och en **Webb** placeringen och du ställer in cappen på **2 per profil för alla placeringar** kan varje profil få upp till två gånger i rabatt, oberoende av placeringsmix.
-
-   * **[!UICONTROL For each placement]**: antalet licenser tillämpas separat på antalet beslut för varje placering.
-
-      Om ett erbjudande till exempel har **E-post** placering och en **Webb** placeringen och du ställer in cappen på **2 per profil för varje placering** kan varje profil få upp till två gånger för e-postplaceringen och ytterligare två gånger för webblatsplaceringen.
+1. Om du har definierat flera [representationer](add-representations.md) för ditt erbjudande, ange om du vill tillämpa begränsning **[!UICONTROL Across all placements]** eller **[!UICONTROL For each placement]**. [Läs mer](#placements)
 
 1. När erbjudandet har sparats och godkänts, och om det har angetts det antal gånger som du har angett i det här fältet enligt villkoren och tidsramen som du definierade, upphör leveransen.
 
@@ -205,6 +179,86 @@ Det antal gånger ett erbjudande föreslås beräknas vid e-postförberedelsen. 
 >[!NOTE]
 >
 >Räknarna återställs när erbjudandet upphör eller två år efter startdatumet för erbjudandet, beroende på vilket som inträffar först. Lär dig hur du definierar ett erbjudandes datum i [det här avsnittet](creating-personalized-offers.md#create-offer).
+
+### Takningshändelse {#capping-event}
+
+The **[!UICONTROL Capping event]** kan du definiera vilket **[!UICONTROL Capping event]** kommer att beaktas för att öka räknaren:
+
+* **[!UICONTROL Decision event]** (standardvärde): Maximalt antal gånger ett erbjudande kan presenteras.
+* **[!UICONTROL Impression]**: Maximalt antal gånger som erbjudandet kan visas för en användare.
+
+   >[!NOTE]
+   >
+   >Användning av visningar när capping-händelser är tillgängliga för **inkommande kanaler** endast.
+
+* **[!UICONTROL Clicks]**: Maximalt antal gånger som en användare kan klicka på erbjudandet.
+* **[!UICONTROL Custom event]**: kan du definiera en anpassad händelse som ska användas för att begränsa antalet erbjudanden som skickas. Du kan t.ex. sätta ett tak för antalet inlösen tills en viss profil har lösts in 1 gång. Om du vill göra det använder du [Adobe Experience Platform XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"} scheman för att skapa en anpassad händelseregel.
+
+   ![](../assets/offer-capping-event.png)
+
+   <!--For example, you can cap on the number of redemptions so that the offer can be shown until redemptions equal 10000. You can only select XDM ExperienceEvents. In the example below, you can cap on the number of subscriptions.-->
+
+   <!--![](../assets/offer-capping-custom-event.png)-->
+
+   >[!CAUTION]
+   >
+   >För alla klickningshändelser utom beslutshändelser kanske feedback för beslutshanteringen inte samlas in automatiskt, så se till att data kommer in. [Läs mer om datainsamling](../data-collection/data-collection.md)
+
+### Taktyp {#capping-type}
+
+The **[!UICONTROL Capping type]** kan du ange hur många gånger erbjudandet kan presenteras.
+
+![](../assets/offer-capping-times.png)
+
+>[!NOTE]
+>
+>Talet måste vara ett heltal som är större än 0.
+
+<!--For example, if you defined a custom capping event such as subsciptions are taken into account, if you enter 10 in the **[!UICONTROL Capping count]** field, no more offers will be sent after 10 subscriptions.-->
+
+<!--![](../assets/offer-capping-custom-example.png)-->
+
+Du kan också ange om du vill att appen ska användas för alla användare eller för en viss profil:
+
+![](../assets/offer-capping-total.png)
+
+* Välj **[!UICONTROL In total]** för att definiera hur många gånger ett erbjudande kan föreslås för den kombinerade målgruppen, vilket betyder för alla användare.
+
+   Om du till exempel är en återförsäljare av elektronikprodukter och har en &quot;TV-affär&quot; vill du att erbjudandet bara ska returneras 200 gånger för alla profiler.
+
+* Välj **[!UICONTROL Per profile]** för att definiera hur många gånger ett erbjudande kan erbjudas en och samma användare.
+
+   Om du till exempel är en bank med ett Platinum-kreditkortserbjudande vill du inte att det här erbjudandet ska visas mer än fem gånger per profil. Ni tror faktiskt att om användaren har sett erbjudandet fem gånger och inte har följt det, har de större chans att agera på nästa bästa erbjudande.
+
+### Frekvensbegränsning {#frequency-capping}
+
+The **[!UICONTROL Frequency]** kan du definiera hur ofta antalet capping återställs. Om du vill göra det anger du tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och anger hur många dagar/veckor/månader du vill ha.
+
+![](../assets/offer-capping-frequency.png)
+
+>[!NOTE]
+>
+>Återställningen sker kl. 12.00 UTC, den dag du har definierat eller den första dagen i veckan/månaden när det är tillämpligt. Veckostartdagen är söndag. En varaktighet som du väljer får inte överstiga 2 år (dvs. motsvarande antal månader, veckor eller dagar).
+
+Om du till exempel vill att antalet fästingar ska återställas varannan vecka väljer du **[!UICONTROL Weekly]** från **[!UICONTROL Repeat]** nedrullningsbar lista och typ **2** i det andra fältet. Återställningen sker varannan söndag kl. 12.00 UTC.
+
+>[!CAUTION]
+>
+>När du har sparat ditt erbjudande kan du inte ändra den tidsperiod (månatlig, veckovis eller daglig) som du har valt för frekvensen.
+
+### Takning och placeringar {#placements}
+
+Om du har definierat flera [representationer](add-representations.md) för ditt erbjudande, ange om du vill tillämpa begränsning **[!UICONTROL Across all placements]** eller **[!UICONTROL For each placement]**.
+
+![](../assets/offer-capping-placement.png)
+
+* **[!UICONTROL Across all placements]**: antalet licenser kommer att summera alla beslut för alla ersättningar som är kopplade till erbjudandet.
+
+   Om ett erbjudande till exempel har **E-post** placering och en **Webb** placeringen och du ställer in cappen på **2 per profil för alla placeringar** kan varje profil få upp till två gånger i rabatt, oberoende av placeringsmix.
+
+* **[!UICONTROL For each placement]**: antalet licenser tillämpas separat på antalet beslut för varje placering.
+
+   Om ett erbjudande till exempel har **E-post** placering och en **Webb** placeringen och du ställer in cappen på **2 per profil för varje placering** kan varje profil få upp till två gånger för e-postplaceringen och ytterligare två gånger för webblatsplaceringen.
 
 ### Påverkan av ändrade datum vid fästning {#capping-change-date}
 

@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 51f09bac0278182b1df3e36425b01fbbf7deddd8
+source-git-commit: b06b545d377fcd1ffe6ed218badeb94c1bb85ef2
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1334'
 ht-degree: 33%
 
 ---
@@ -334,10 +334,7 @@ ht-degree: 33%
          + AI-modelltyper {#ai-model-types}
             + [Automatisk optimeringsmodell](using/offers/ranking/auto-optimization-model.md)
             + [Anpassad optimeringsmodell](using/offers/ranking/personalized-optimization-model.md)
-         + Skapa AI-modeller {#configure-ai-model}
-            + [Skapa en datauppsättning för att samla in händelser](using/offers/ranking/create-dataset.md)
-            + [Skapa en AI-modell](using/offers/ranking/create-ranking-strategies.md)
-            + [Konfigurera händelsehämtning](using/offers/ranking/schema-requirement.md)
+         + [Skapa AI-modeller](using/offers/ranking/create-ranking-strategies.md)
    + Skapa och hantera erbjudanden {#managing-offers-in-the-offer-library}
       + Konfigurera erbjudanden {#configure-offers}
          + [Skapa personaliserade erbjudanden](using/offers/offer-library/creating-personalized-offers.md)
@@ -349,10 +346,14 @@ ht-degree: 33%
       + [Skapa beslut](using/offers/offer-activities/create-offer-activities.md)
       + [Konfigurera urval av erbjudanden i beslut](using/offers/offer-activities/configure-offer-selection.md)
       + [Skapa simuleringar](using/offers/offer-activities/simulation.md)
-   + [Gruppbeslut](using/offers/batch-delivery.md)
+   + [Använd batchbeslut](using/offers/batch-delivery.md)
+   + Samla in händelsedata {#collect-event-data}
+      + [Komma igång med datainsamling](using/offers/data-collection/data-collection.md)
+      + [Skapa en datauppsättning för att samla in händelser](using/offers/data-collection/create-dataset.md)
+      + [Konfigurera händelsehämtning](using/offers/data-collection/schema-requirement.md)
    + Skapa rapporter om beslutshantering {#create-reports}
       + [Kom igång med beslutsledningshändelser](using/offers/reports/get-started-events.md)
-      + [Viktig information om beslutshändelser](using/offers/reports/key-information.md)
+      + [Viktig information om beslutsledningshändelser](using/offers/reports/key-information.md)
       + [Åtkomst till XDM-fält för händelser](using/offers/reports/xdm-fields.md)
    + Exportera din erbjudandekatalog {#export-catalog}
       + [Kom igång med export av din erbjudandekatalog ](using/offers/export-catalog/get-started-export.md)

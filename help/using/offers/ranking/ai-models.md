@@ -7,7 +7,7 @@ feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: 4f7f7d1d-a12a-4ff6-b0ff-1a1c3d305a9d
-source-git-commit: 12bc2373ac5c391764df3880c5c87666a19e99b2
+source-git-commit: b06b545d377fcd1ffe6ed218badeb94c1bb85ef2
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 3%
@@ -38,7 +38,7 @@ Det finns två typer av AI-modeller i [!DNL Journey Optimizer]:
 
 De viktigaste stegen för att skapa och använda AI-modeller är följande:
 
-1. Skapa en datauppsättning där konverterings- och inställningshändelser samlas in. [Läs mer](create-dataset.md)
+1. Skapa en datauppsättning där konverterings- och inställningshändelser samlas in. [Läs mer](../data-collection/create-dataset.md)
 1. Skapa en AI-modell som utnyttjar händelser från datauppsättningen för att rangordna erbjudanden. [Läs mer](create-ranking-strategies.md)
-1. Konfigurera ditt erbjudandeschema för att automatiskt samla in händelser. [Läs mer](schema-requirement.md)
+1. Konfigurera ditt erbjudandeschema för att automatiskt samla in händelser. [Läs mer](../data-collection/schema-requirement.md)
 1. Tilldela AI-modellen till en placering i ett beslut om att rangordna kvalificerade erbjudanden. [Läs mer](../offer-activities/configure-offer-selection.md)

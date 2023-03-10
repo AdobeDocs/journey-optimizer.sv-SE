@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Beginner
 exl-id: 51830c63-fa88-47e7-8605-192297fcf6b8
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: b06b545d377fcd1ffe6ed218badeb94c1bb85ef2
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 47%
@@ -15,7 +15,7 @@ ht-degree: 47%
 
 # Kom igång med beslutsledningshändelser {#monitor-offer-events}
 
-Varje gång beslutshanteringen fattar ett beslut om en viss profil skickas information om dessa händelser automatiskt till Adobe Experience Platform.
+Varje gång en beslutshantering fattar ett beslut om en viss profil, skickas information om dessa händelser automatiskt till Adobe Experience Platform.
 
 På så sätt kan du exportera dessa data för att analysera dem i ditt eget rapporteringssystem. Du kan också använda [frågetjänsten](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv) i Adobe Experience Platform i kombination med andra verktyg för förbättrade analys- och rapporteringsändamål.
 
