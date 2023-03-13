@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
-source-git-commit: 3fa6f5379b04565328df1c09c6770507373858c7
+source-git-commit: 47145e980c37f67b6981ffd9cc4300d29e179f45
 workflow-type: tm+mt
-source-wordcount: '2211'
+source-wordcount: '2237'
 ht-degree: 1%
 
 ---
@@ -200,14 +200,21 @@ The **[!UICONTROL Capping event]** kan du definiera vilket **[!UICONTROL Capping
 
    <!--For example, you can cap on the number of redemptions so that the offer can be shown until redemptions equal 10000. You can only select XDM ExperienceEvents. -->
 
-   I exemplet nedan vill du ange ett tak för antalet prenumerationer. Välj **[!UICONTROL Custom event]** i listan och använd **[!UICONTROL Create custom event rules]** byggaren för att välja relevanta händelser.
+   I exemplet nedan vill du ha en övre gräns för antalet utcheckningar.
 
-   ![](../assets/offer-capping-custom-event.png)
+   1. Välj **[!UICONTROL Custom event]** i listan och använd **[!UICONTROL Add custom event]** -knappen.
 
-   När regeln har skapats visas den i **[!UICONTROL Custom event query]** fält.
+      ![](../assets/offer-capping-custom-event-add.png)
 
-   ![](../assets/offer-capping-custom-event-query.png)
+   1. Använd **[!UICONTROL Create custom event rules]** builder för att välja den relevanta händelsen. Du kan välja vilken användaråtgärd som helst som du vill sätta på erbjudandet.
 
+      Här väljer du **[!UICONTROL Commerce]** > **[!UICONTROL Checkouts]** > **[!UICONTROL Value]** och markera **[!UICONTROL exists]** i listrutan.
+
+      ![](../assets/offer-capping-custom-event.png)
+
+   1. När regeln har skapats visas den i **[!UICONTROL Custom event query]** fält.
+
+      ![](../assets/offer-capping-custom-event-query.png)
    >[!CAUTION]
    >
    >För alla klickningshändelser utom beslutshändelser kanske feedback för beslutshanteringen inte samlas in automatiskt, så se till att data kommer in. [Läs mer om datainsamling](../data-collection/data-collection.md)
@@ -222,7 +229,7 @@ The **[!UICONTROL Capping count]** kan du ange hur många gånger erbjudandet ka
 >
 >Talet måste vara ett heltal som är större än 0.
 
-Om du till exempel har definierat en anpassad capping-händelse, som t.ex. undertexter, ska tas med i beräkningen om du anger 10 i **[!UICONTROL Capping count]** inga fler erbjudanden skickas efter 10 prenumerationer.
+Du har till exempel definierat en anpassad capping-händelse som antalet utcheckningar som ska beaktas. Om du anger 10 i dialogrutan **[!UICONTROL Capping count]** inga fler erbjudanden skickas efter 10 utcheckningar.
 
 ### Taktyp {#capping-type}
 
