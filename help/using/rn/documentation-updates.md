@@ -4,9 +4,9 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 3fa6f5379b04565328df1c09c6770507373858c7
+source-git-commit: 60514a739a2b3380260b6d1e33e33467cc88baad
 workflow-type: tm+mt
-source-wordcount: '2365'
+source-wordcount: '2384'
 ht-degree: 17%
 
 ---
@@ -21,8 +21,8 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 ## Februari 2023 {#feb-2023}
 
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version 23 av februari 2003 finns detaljerad i dokumentationen. [Läs mer](release-notes.md)
 * En anteckning har lagts till i den API-utlösta kampanjdokumentationen för att ange att kontextattribut som skickas till begäran inte får överstiga 50 kB. [Läs mer](../campaigns/api-triggered-campaigns.md#contextual)
-
 * Information om hur avanmälningsinformation lagras i **Samtycketjänstens datauppsättning** efter att mottagarna har avbeställt prenumerationen via en landningssida. [Läs mer](../landing-pages/lp-use-cases.md#configure-opt-out)
 
 ## Januari 2023 {#jan-2023}
@@ -31,6 +31,8 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Tillgänglighetsfunktioner i [!DNL Journey Optimizer] grupperas nu på en dedikerad sida. [Läs mer](../start/accessibility.md)
 * En ny sida om datahantering har lagts till i [!DNL Journey Optimizer]. [Läs mer](../data/gs-data.md)
 * En tabell med alla koder som kan returneras i svaret har lagts till när erbjudanden levereras med hjälp av besluts-API:t. [Läs mer](../offers/api-reference/offer-delivery-api/decisioning-api.md)
+
++++ 2022
 
 ## December 2022 {#december-2022}
 
@@ -155,11 +157,14 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * The **Hantering av avanmälan** har klargjorts och omorganiserats något. [Läs mer](../privacy/opt-out.md#opt-out-management)
 * The **Infoga länkar** -avsnittet har uppdaterats för att återspegla de senaste ändringarna i användargränssnittet. [Läs mer](../email/message-tracking.md#insert-links)
 
++++
+
++++ 2021
+
 ## November 2021 {#november-2021}
 
 * En fullständig beskrivning av **avancerad uttrycksredigerare** som används i resor finns nu tillgängliga. [Läs mer](../building-journeys/expression/expressionadvanced.md)
 * Ett nytt avsnitt om **Delegeringsmetod för CNAME-underdomän** har lagts till. [Läs mer](../configuration/delegate-subdomain.md#cname-subdomain-delegation)
-
 
 ## Oktober 2021 {#october-2021}
 
@@ -202,7 +207,6 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 * Ett underavsnitt om hur du redigerar IP-pooler har lagts till. [Läs mer](../configuration/ip-pools.md#edit-ip-pool)
 
-
 ## Augusti 2021 {#august-2021}
 
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Versionen från 21 augusti finns detaljerad i dokumentationen. [Läs mer](release-notes.md)
@@ -221,7 +225,6 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Ett avsnitt har lagts till som beskriver hur du manuellt lägger till e-postadresser och domäner i listan över inaktiveringar. [Läs mer](../configuration/manage-suppression-list.md#add-addresses-and-domains)
 * Uppdaterade [Åtkomst till listan över inaktiveringar](../configuration/manage-suppression-list.md#access-suppression-list) och [Försök igen](../configuration/retries.md) -avsnitt som återspeglar det nya användargränssnittet.
 * Det nya flödet för att lägga till och konfigurera representationer när ett erbjudande skapas har dokumenterats. [Läs mer](../offers/offer-library/creating-personalized-offers.md#representations)
-
 
 ## Juli 2021 {#july-2021}
 
@@ -242,3 +245,4 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Dokumenterade beslutsledningens nya **[!UICONTROL Overview]** -fliken. [Läs mer](../offers/get-started/user-interface.md#overview)
 * Nya avsnitt har lagts till för att beskriva de åtgärder som är tillgängliga från erbjudandet och beslutslistorna: [Erbjudandelista](../offers/offer-library/creating-personalized-offers.md#offer-list) och [Beslutslista](../offers/offer-activities/create-offer-activities.md#decision-list).
 
++++
