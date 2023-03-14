@@ -9,14 +9,24 @@ keyword: direct, mail, configuration, direct-mail, provider
 hide: true
 hidefromtoc: true
 exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+badge: label="Beta" type="Informative"
+source-git-commit: 55f1c6a681aece6446a3330184466ff61e4db580
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
 
 # Konfiguration av direktreklam {#direct-mail-configuration}
+
+>[!BEGINSHADEBOX]
+
+Vad du hittar i den här dokumentationen:
+
+* [Skapa direktreklam](create-direct-mail.md)
+* **[Konfigurera direktreklam](direct-mail-configuration.md)**
+
+>[!ENDSHADEBOX]
 
 [!DNL Journey Optimizer] gör att du kan anpassa och generera de filer som direktreklamleverantörer behöver för att skicka e-post till dina kunder.
 
