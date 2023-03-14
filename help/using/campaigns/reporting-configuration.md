@@ -11,9 +11,10 @@ keywords: konfiguration, experiment, rapportering, optimering
 hide: true
 hidefromtoc: true
 exl-id: 327a0c45-0805-4f64-9bab-02d67276eff8
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+badge: label="Beta" type="Informative"
+source-git-commit: 160e4ce03d3be975157c30fbe511875a85b00551
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '726'
 ht-degree: 2%
 
 ---
@@ -29,6 +30,18 @@ ht-degree: 2%
 >id="ajo_admin_reporting_dataset"
 >title="Välj en datauppsättning"
 >abstract="Du kan bara välja en datamängd av händelsetyp, som måste innehålla minst en av de fältgrupper som stöds: Programinformation, handelsinformation, webbinformation."
+
+>[!BEGINSHADEBOX]
+
+Vad du hittar i den här dokumentationen:
+
+* [Kom igång med innehållsexperiment](get-started-experiment.md)
+* [Skapa ett innehållsexperiment](content-experiment.md)
+* [Förstå statistiska beräkningar](experiment-calculations.md)
+* **[Konfigurera experimentrapporter](reporting-configuration.md)**
+* [Statistiska beräkningar i experimentrapporten](experiment-report-calculations.md)
+
+>[!ENDSHADEBOX]
 
 <!--The reporting data source configuration allows you to define a connection to a system in order to retrieve additional information that will be used in your reports.-->
 

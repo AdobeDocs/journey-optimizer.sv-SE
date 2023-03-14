@@ -8,20 +8,29 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 1d3d3804-dd1a-4939-b41a-f572d2bfd136
-source-git-commit: 3217cdd366cd61096a232306aa85c075a7542b0e
+badge: label="Beta" type="Informative"
+source-git-commit: 160e4ce03d3be975157c30fbe511875a85b00551
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '168'
 ht-degree: 2%
 
 ---
 
 # Webbrapport {#web-report}
 
-Webbrapporten finns i Campaign-rapporten.
+>[!BEGINSHADEBOX]
 
->[!NOTE]
->
->Webbkanalsfunktionen är för närvarande endast tillgänglig som betaversion för vissa användare.
+Vad du hittar i den här dokumentationen:
+
+* [Kom igång med webbkanalen](get-started-web.md)
+* [Skapa webbupplevelser](create-web.md)
+* [Skapa webbsidor](author-web.md)
+* [Hjälptillägg för visuell redigering](visual-editing-helper.md)
+* **[Webbrapportering](web-report.md)**
+
+>[!ENDSHADEBOX]
+
+Webbrapporten finns i Campaign-rapporten.
 
 Kampanjrapportsidan visas med följande flikar:
 

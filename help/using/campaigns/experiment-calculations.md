@@ -11,18 +11,27 @@ keywords: innehåll, experiment, statistik, beräkning
 hide: true
 hidefromtoc: true
 exl-id: 60a1a488-a119-475b-8f80-3c6f43c80ec9
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+badge: label="Beta" type="Informative"
+source-git-commit: 160e4ce03d3be975157c30fbe511875a85b00551
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
 
 # Förstå statistiska beräkningar {#experiment-calculations}
 
->[!AVAILABILITY]
->
->The **Content Experiment** är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
+>[!BEGINSHADEBOX]
+
+Vad du hittar i den här dokumentationen:
+
+* [Kom igång med innehållsexperiment](get-started-experiment.md)
+* [Skapa ett innehållsexperiment](content-experiment.md)
+* **[Förstå statistiska beräkningar](experiment-calculations.md)**
+* [Konfigurera experimentrapporter](reporting-configuration.md)
+* [Statistiska beräkningar i experimentrapporten](experiment-report-calculations.md)
+
+>[!ENDSHADEBOX]
 
 I den här artikeln beskrivs de statistiska beräkningar som används när du kör Experiment i Adobe Journey Optimizer.
 

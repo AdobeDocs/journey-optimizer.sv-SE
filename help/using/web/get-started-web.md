@@ -8,14 +8,27 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 8f06b8f0-f64d-42f7-9b10-7bb76f63d1c5
-source-git-commit: 01fc9bfba54e9cdbd356c1ed06ef2caeb3705a0a
+badge: label="Beta" type="Informative"
+source-git-commit: 160e4ce03d3be975157c30fbe511875a85b00551
 workflow-type: tm+mt
-source-wordcount: '120'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---
 
 # Kom igång med webbkanalen {#get-sarted-web}
+
+>[!BEGINSHADEBOX]
+
+Vad du hittar i den här dokumentationen:
+
+* **[Kom igång med webbkanalen](get-started-web.md)**
+* [Skapa webbupplevelser](create-web.md)
+* [Skapa webbsidor](author-web.md)
+* [Hjälptillägg för visuell redigering](visual-editing-helper.md)
+* [Webbrapportering](web-report.md)
+
+>[!ENDSHADEBOX]
 
 >[!AVAILABILITY]
 >

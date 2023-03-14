@@ -11,7 +11,7 @@ hide: true
 hidefromtoc: true
 exl-id: 3eb9466e-9d88-4470-a22f-5e24a29923ae
 badge: label="Beta" type="Informative"
-source-git-commit: 8b1bf0b0469c1efc5194dae56ddddd9f05dbf722
+source-git-commit: 160e4ce03d3be975157c30fbe511875a85b00551
 workflow-type: tm+mt
 source-wordcount: '1310'
 ht-degree: 0%
@@ -20,11 +20,16 @@ ht-degree: 0%
 
 # Arbeta med arbetsytan {#composition-canvas}
 
-<table style="table-layout:fixed"><tr style="border: 0;"><tr><td>Vad du hittar i den här dokumentationen:<br/><ul>
-<li><a href="get-started-audience-orchestration.md">Kom igång med målgruppsmaterial</a></li>
-<li><a href="create-compositions.md">Skapa ditt första dispositionsarbetsflöde</a></li>
-<li><b><a href="composition-canvas.md">Arbeta med arbetsytan</a></b></li>
-<li><a href="access-audiences.md">Få åtkomst till och hantera målgrupper</a></li></ul></td></tr></table>
+>[!BEGINSHADEBOX]
+
+Vad du hittar i den här dokumentationen:
+
+* [Kom igång med målgruppsmaterial](get-started-audience-orchestration.md)
+* [Skapa ditt första dispositionsarbetsflöde](create-compositions.md)
+* **[Arbeta med arbetsytan](composition-canvas.md)**
+* [Få åtkomst till och hantera målgrupper](access-audiences.md)
+
+>[!ENDSHADEBOX]
 
 Målgruppsdisposition är en visuell arbetsyta som gör att du kan skapa målgrupper och använda olika aktiviteter (dela, berika osv.).
 

@@ -8,18 +8,27 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 3847ac1d-2c0a-4f80-8df9-e8e304faf261
-source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
+badge: label="Beta" type="Informative"
+source-git-commit: 160e4ce03d3be975157c30fbe511875a85b00551
 workflow-type: tm+mt
-source-wordcount: '1059'
+source-wordcount: '1072'
 ht-degree: 1%
 
 ---
 
 # Skapa webbsidor {#author-web}
 
->[!AVAILABILITY]
->
->Webbkanalsfunktionen är för närvarande endast tillgänglig som betaversion för vissa användare.
+>[!BEGINSHADEBOX]
+
+Vad du hittar i den här dokumentationen:
+
+* [Kom igång med webbkanalen](get-started-web.md)
+* [Skapa webbupplevelser](create-web.md)
+* **[Skapa webbsidor](author-web.md)**
+* [Hjälptillägg för visuell redigering](visual-editing-helper.md)
+* [Webbrapportering](web-report.md)
+
+>[!ENDSHADEBOX]
 
 I [!DNL Journey Optimizer] webbredigering drivs av webbläsartillägget Adobe Experience Cloud Visual Helper chrome. [Läs mer](visual-editing-helper.md)
 

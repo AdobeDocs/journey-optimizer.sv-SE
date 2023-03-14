@@ -11,9 +11,10 @@ keywords: innehåll, experiment, multipelt, målgrupp, behandling
 hide: true
 hidefromtoc: true
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: 2bf4883fa4b649a807608403d48f6a68b73a8626
+badge: label="Beta" type="Informative"
+source-git-commit: 160e4ce03d3be975157c30fbe511875a85b00551
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1061'
 ht-degree: 1%
 
 ---
@@ -25,9 +26,17 @@ ht-degree: 1%
 >title="Innehållsexperiment"
 >abstract="Du kan välja att variera leveransinnehåll, ämne eller avsändare för att definiera flera leveransbehandlingar och fastställa den bästa kombinationen för era målgrupper."
 
->[!AVAILABILITY]
->
->The **Content Experiment** är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
+>[!BEGINSHADEBOX]
+
+Vad du hittar i den här dokumentationen:
+
+* [Kom igång med innehållsexperiment](get-started-experiment.md)
+* **[Skapa ett innehållsexperiment](content-experiment.md)**
+* [Förstå statistiska beräkningar](experiment-calculations.md)
+* [Konfigurera experimentrapporter](reporting-configuration.md)
+* [Statistiska beräkningar i experimentrapporten](experiment-report-calculations.md)
+
+>[!ENDSHADEBOX]
 
 Med Journey Optimizer Content Experiment kan ni definiera flera olika leveranssätt för att mäta vilken som fungerar bäst för er målgrupp. Du kan välja att variera leveransinnehåll, ämne eller avsändare. Intressemålgruppen fördelas slumpmässigt till varje behandling för att avgöra vilken som fungerar bäst med det angivna mätvärdet.
 

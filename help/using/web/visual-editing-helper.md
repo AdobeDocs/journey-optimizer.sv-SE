@@ -8,20 +8,29 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: f4a0ec45-d624-4f80-b888-42e5987cdc4f
-source-git-commit: 01fc9bfba54e9cdbd356c1ed06ef2caeb3705a0a
+badge: label="Beta" type="Informative"
+source-git-commit: 160e4ce03d3be975157c30fbe511875a85b00551
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 1%
+source-wordcount: '404'
+ht-degree: 0%
 
 ---
 
 # Hjälptillägg för visuell redigering {#visual-editing-helper}
 
-Med webbläsartillägget Adobe Experience Cloud Visual Editing Helper för Google Chrome kan du snabbt skapa och förhandsgranska dina webbupplevelser genom att läsa in webbplatser i Adobe [!DNL Journey Optimizer] webbdesigner.
+>[!BEGINSHADEBOX]
 
->[!NOTE]
->
->Webbkanalsfunktionen är för närvarande endast tillgänglig som betaversion för vissa användare.
+Vad du hittar i den här dokumentationen:
+
+* [Kom igång med webbkanalen](get-started-web.md)
+* [Skapa webbupplevelser](create-web.md)
+* [Skapa webbsidor](author-web.md)
+* **[Hjälptillägg för visuell redigering](visual-editing-helper.md)**
+* [Webbrapportering](web-report.md)
+
+>[!ENDSHADEBOX]
+
+Med webbläsartillägget Adobe Experience Cloud Visual Editing Helper för Google Chrome kan du snabbt skapa och förhandsgranska dina webbupplevelser genom att läsa in webbplatser i Adobe [!DNL Journey Optimizer] webbdesigner.
 
 ## Installera tillägget Hjälp för visuell redigering {#install-visual-editing-helper}
 

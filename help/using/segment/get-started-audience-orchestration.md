@@ -11,7 +11,7 @@ hide: true
 hidefromtoc: true
 exl-id: af71d24d-77eb-44df-8216-b0aeaf4c4fa4
 badge: label="Beta" type="Informative"
-source-git-commit: 8b1bf0b0469c1efc5194dae56ddddd9f05dbf722
+source-git-commit: 160e4ce03d3be975157c30fbe511875a85b00551
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%
@@ -25,11 +25,16 @@ ht-degree: 0%
 >title="Skapa en komposition"
 >abstract="Skapa ett dispositionsarbetsflöde för att kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och utnyttja olika aktiviteter (dela, exkludera..) för att skapa nya målgrupper."
 
-<table style="table-layout:fixed"><tr style="border: 0;"><tr><td>Vad du hittar i den här dokumentationen:<br/><ul>
-<li><b><a href="get-started-audience-orchestration.md">Kom igång med målgruppsmaterial</a></b></li>
-<li><a href="create-compositions.md">Skapa ditt första dispositionsarbetsflöde</a></li>
-<li><a href="composition-canvas.md">Arbeta med arbetsytan</a></li>
-<li><a href="access-audiences.md">Få åtkomst till och hantera målgrupper</a></li></ul></td></tr></table>
+>[!BEGINSHADEBOX]
+
+Vad du hittar i den här dokumentationen:
+
+* **[Kom igång med målgruppsmaterial](get-started-audience-orchestration.md)**
+* [Skapa ditt första dispositionsarbetsflöde](create-compositions.md)
+* [Arbeta med arbetsytan](composition-canvas.md)
+* [Få åtkomst till och hantera målgrupper](access-audiences.md)
+
+>[!ENDSHADEBOX]
 
 >[!AVAILABILITY]
 >

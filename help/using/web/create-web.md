@@ -8,18 +8,27 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: e28c038b-49ed-4685-bfe6-514116eb0711
-source-git-commit: 01fc9bfba54e9cdbd356c1ed06ef2caeb3705a0a
+badge: label="Beta" type="Informative"
+source-git-commit: 160e4ce03d3be975157c30fbe511875a85b00551
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '984'
 ht-degree: 4%
 
 ---
 
 # Skapa webbupplevelser {#create-web}
 
->[!AVAILABILITY]
->
->Webbkanalsfunktionen är för närvarande endast tillgänglig som betaversion för vissa användare.
+>[!BEGINSHADEBOX]
+
+Vad du hittar i den här dokumentationen:
+
+* [Kom igång med webbkanalen](get-started-web.md)
+* **[Skapa webbupplevelser](create-web.md)**
+* [Skapa webbsidor](author-web.md)
+* [Hjälptillägg för visuell redigering](visual-editing-helper.md)
+* [Webbrapportering](web-report.md)
+
+>[!ENDSHADEBOX]
 
 [!DNL Journey Optimizer] gör att ni kan personalisera den webbupplevelse ni levererar till era kunder via inkommande webbkampanjer.
 

@@ -9,9 +9,10 @@ keywords: direktreklam, meddelande, kampanj
 hide: true
 hidefromtoc: true
 exl-id: 6b438268-d983-4ab8-9276-c4b7de74e6bd
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+badge: label="Beta" type="Informative"
+source-git-commit: 160e4ce03d3be975157c30fbe511875a85b00551
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '502'
 ht-degree: 3%
 
 ---
@@ -22,6 +23,19 @@ ht-degree: 3%
 >id="ajo_direct_mail"
 >title="Skapa direktreklam"
 >abstract="Skapa direktreklam i schemalagda kampanjer och utforma de extraheringsfiler som direktreklamleverantörer behöver för att skicka e-post till era kunder."
+
+>[!BEGINSHADEBOX]
+
+Vad du hittar i den här dokumentationen:
+
+* **[Skapa direktreklam](create-direct-mail.md)**
+* [Konfigurera direktreklam](direct-mail-configuration.md)
+
+>[!ENDSHADEBOX]
+
+>[!AVAILABILITY]
+>
+>Direktreklam finns för närvarande som en privat betaversion och kan uppdateras ofta utan föregående meddelande.
 
 Direktreklam är en offlinekanal som gör att du kan anpassa och generera extraheringsfiler som krävs av direktreklamleverantörer för att skicka e-post till dina kunder.
 

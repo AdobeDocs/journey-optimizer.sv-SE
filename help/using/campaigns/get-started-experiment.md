@@ -11,14 +11,27 @@ keywords: komma igång, börja, innehåll, experimentera
 hide: true
 hidefromtoc: true
 exl-id: 7fe4b24e-f60a-4107-a064-00010b0cbbfc
-source-git-commit: 72fc1625eac26531ff9c83d39c16ffbb3c391ba5
+badge: label="Beta" type="Informative"
+source-git-commit: 160e4ce03d3be975157c30fbe511875a85b00551
 workflow-type: tm+mt
-source-wordcount: '1964'
+source-wordcount: '1994'
 ht-degree: 0%
 
 ---
 
 # Kom igång med innehållsexperiment {#get-started-experiment}
+
+>[!BEGINSHADEBOX]
+
+Vad du hittar i den här dokumentationen:
+
+* **[Kom igång med innehållsexperiment](get-started-experiment.md)**
+* [Skapa ett innehållsexperiment](content-experiment.md)
+* [Förstå statistiska beräkningar](experiment-calculations.md)
+* [Konfigurera experimentrapporter](reporting-configuration.md)
+* [Statistiska beräkningar i experimentrapporten](experiment-report-calculations.md)
+
+>[!ENDSHADEBOX]
 
 >[!AVAILABILITY]
 >
