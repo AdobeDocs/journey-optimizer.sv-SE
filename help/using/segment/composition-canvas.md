@@ -10,18 +10,25 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 3eb9466e-9d88-4470-a22f-5e24a29923ae
-source-git-commit: 8d56e3060e78422b028ced17f415497789908ff9
+badge: label="Beta" type="Informative"
+source-git-commit: 8b1bf0b0469c1efc5194dae56ddddd9f05dbf722
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
 
 # Arbeta med arbetsytan {#composition-canvas}
 
-Dispositionsarbetsytan är en visuell arbetsyta som gör att du kan skapa kompositioner genom att utnyttja målgrupper och aktiviteter (dela, exkludera..).
+<table style="table-layout:fixed"><tr style="border: 0;"><tr><td>Vad du hittar i den här dokumentationen:<br/><ul>
+<li><a href="get-started-audience-orchestration.md">Kom igång med målgruppsmaterial</a></li>
+<li><a href="create-compositions.md">Skapa ditt första dispositionsarbetsflöde</a></li>
+<li><b><a href="composition-canvas.md">Arbeta med arbetsytan</a></b></li>
+<li><a href="access-audiences.md">Få åtkomst till och hantera målgrupper</a></li></ul></td></tr></table>
 
-Så här konfigurerar du en komposition på arbetsytan:
+Målgruppsdisposition är en visuell arbetsyta som gör att du kan skapa målgrupper och använda olika aktiviteter (dela, berika osv.).
+
+Stegen för att komponera en målgrupp på arbetsytan är följande:
 
 1. [Definiera era startmålgrupper](#starting-audience)
 1. [Lägg till en eller flera aktiviteter](#action-activities)
@@ -56,22 +63,21 @@ När målgrupper har valts visas det uppskattade antalet profiler längst ned i 
 
 Lägg till aktiviteter efter att du har valt den första målgruppen för att förfina urvalet.
 
-Det gör du genom att klicka på plusknappen (+) på kompositionsbanan och sedan välja önskad aktivitet. Den högra rutan öppnas så att du kan konfigurera aktiviteten.
+Det gör du genom att klicka på plusknappen (+) på kompositionsbanan och sedan välja önskad aktivitet. Den högra rutan öppnas och du kan konfigurera den nyligen tillagda aktiviteten.
 
 ![](assets/audiences-select-activity.png)
-
->[!NOTE]
->
->Du kan lägga till så många **[!UICONTROL Audience]** och **[!UICONTROL Exclude]** aktiviteter efter behov i din komposition. Inga ytterligare aktiviteter kan dock läggas till efter **[!UICONTROL Rank]** och **[!UICONTROL Split]** aktiviteter.
-
-Du kan ta bort en aktivitet från arbetsytan när som helst genom att klicka på knappen Ta bort i den högra rutan. Alla aktiviteter som läggs till efter den här aktiviteten tas också bort från arbetsytan.
 
 Tillgängliga aktiviteter är:
 
 * [Målgrupp](#audience): innehålla ytterligare profiler som tillhör en eller flera befintliga målgrupper,
 * [Exkludera](#exclude): utesluta profiler som tillhör en befintlig målgrupp eller utesluta profiler som bygger på specifika attribut,
+* [Förfina]{#enrich}: berika er målgrupp med ytterligare attribut från Adobe Experience Platform datauppsättningar,
 * [Rankning](#rank): rangordna profiler baserat på ett specifikt attribut, ange antalet profiler som ska behållas och inkluderas i din komposition,
 * [Dela](#split): dela upp kompositionen i flera banor baserat på slumpmässiga procentsatser eller attribut.
+
+Du kan lägga till så många **[!UICONTROL Audience]** och **[!UICONTROL Exclude]** aktiviteter efter behov i din komposition. Inga ytterligare aktiviteter kan dock läggas till efter **[!UICONTROL Rank]** och **[!UICONTROL Split]** aktiviteter.
+
+Du kan ta bort en aktivitet från arbetsytan när som helst genom att klicka på knappen Ta bort i den högra rutan.  Om aktiviteten som du vill ta bort är överordnad andra aktiviteter i kompositionen visas ett meddelande, som du kan använda för att ange om du bara vill ta bort den markerade aktiviteten eller alla dess underordnade aktiviteter.
 
 ### Målgruppsaktivitet {#audience}
 
@@ -115,6 +121,46 @@ The **[!UICONTROL Exclude]** kan du utesluta profiler från din komposition. Det
 
    ![](assets/audiences-exclude-attribute.png)
 
+### Förfina {#enrich}
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_enrich"
+>title="Berika aktivitet"
+>abstract="Använd aktiviteten Enrich för att exkludera profiler som tillhör en befintlig målgrupp. Med attributtypen Uteslut med kan du exkludera profiler baserat på ett specifikt attribut."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_enrich_dataset"
+>title="Datauppsättning för berikning"
+>abstract="Välj den datauppsättning för berikning som innehåller de data som du vill koppla till målgruppen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_enrich_criteria"
+>title="Anrikningskriterier"
+>abstract="Välj de fält som ska användas som avstämningsnyckel mellan källdatauppsättningen, dvs. målgruppen, och datauppsättningen för anrikning."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_enrich_attributes"
+>title="Attribut för berikning"
+>abstract="Välj ett eller flera attribut från datauppsättningen för anrikning som ska kopplas till målgruppen. När kompositionen har publicerats kopplas dessa attribut till publiken och kan utnyttjas i kampanjer för att personalisera leveranser."
+
+The **[!UICONTROL Enrich]** Med hjälp av aktivitet kan ni berika er målgrupp med ytterligare attribut från Adobe Experience Platform datamängder. Du kan t.ex. lägga till information om den köpta produkten, som namn, pris eller tillverkare-ID, och använda dessa uppgifter för att anpassa de leveranser som skickas till målgruppen.
+
+>[!IMPORTANT]
+>
+>För närvarande sprids inte etiketter på datauppsättningen, antingen på datauppsättningsnivå eller på fältnivå, till den nya målgruppen. Detta kan påverka åtkomstkontroll och/eller datastyrning för den slutliga målgruppen. Därför bör du endast använda testdata när du komponerar målgrupper.
+
+Så här konfigurerar du aktiviteten:
+
+1. Välj **[!UICONTROL Enrichment dataset]** som innehåller de data som du vill associera med målgruppen.
+
+1. I **[!UICONTROL Enrichment criteria]** väljer du de fält som ska användas som avstämningsnyckel mellan källdatauppsättningen, dvs. målgruppen, och anrikningsdatauppsättningen. I det här exemplet använder vi ID:t för den köpta produkten som avstämningsnyckel.
+
+1. Klicka på **[!UICONTROL Add atttributes]** väljer du sedan ett eller flera attribut från anrikningsdatauppsättningen som ska kopplas till målgruppen.
+
+   ![](assets/audiences-enrich-activity.png)
+
+När kompositionen har publicerats kopplas de valda attributen till målgruppen och kan utnyttjas i kampanjer för att personalisera leveranser.
+
 ### Rankningsaktivitet {#rank}
 
 >[!CONTEXTUALHELP]
@@ -141,10 +187,10 @@ The **[!UICONTROL Rank]** Med -aktivitet kan du rangordna profiler baserat på e
 
 ### Delad aktivitet {#split}
 
->[!CONTEXTUALHELP]
+<!-- [!CONTEXTUALHELP]
 >id="ajo_ao_control_group_text"
->title="Kontrollgrupp"
->abstract="Använd kontrollgrupper för att isolera en del av profilerna. På så sätt kan ni mäta effekten av en marknadsföringsaktivitet och göra en jämförelse med beteendet hos resten av befolkningen."
+>title="Control Group"
+>abstract="Use control groups to isolate a portion of the profiles. This allows you to measure the impact of a marketing activity and make a comparison with the behavior of the rest of the population."-->
 
 >[!CONTEXTUALHELP]
 >id="ajo_ao_split"
@@ -167,7 +213,7 @@ Den här åtgärden lägger automatiskt till en **[!UICONTROL Save]** i slutet a
 
 Det finns två typer av delade åtgärder:
 
-* **[!UICONTROL Percent split]**: dela upp profiler slumpmässigt i två eller flera banor. Du kan till exempel dela upp profilerna i två olika banor med 45 % vardera och lägga till ytterligare en sökväg för kontrollgruppen.
+* **[!UICONTROL Percent split]**: dela upp profiler slumpmässigt i två eller flera banor. Du kan till exempel dela upp profilerna i två olika banor med 50 % vardera. <!--and add an additional path for control group.-->
 
    ![](assets/audiences-split-percentage.png)
 
@@ -188,9 +234,3 @@ Om du vill göra det väljer du **[!UICONTROL Save audience]** i slutet av varje
 ![](assets/audiences-publish.png)
 
 När kompositionen är klar kan du publicera den. [Lär dig hur du skapar kompositioner](create-compositions.md)
-
-Läs mer:
-
-* [Kom igång med målgruppsmaterial](get-started-audience-orchestration.md)
-* [Skapa kompositionsarbetsflöden](create-compositions.md)
-* [Få åtkomst till och hantera målgrupper](access-audiences.md)

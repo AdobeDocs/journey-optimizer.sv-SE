@@ -10,22 +10,31 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 0758eeaf-a188-4b43-9c9a-a2e5a9e5dd76
-source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
+badge: label="Beta" type="Informative"
+source-git-commit: 8b1bf0b0469c1efc5194dae56ddddd9f05dbf722
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 1%
+source-wordcount: '184'
+ht-degree: 0%
 
 ---
 
 # Få åtkomst till och hantera målgrupper {#access-manage-audiences}
 
-Publiken är tillgänglig från **[!UICONTROL Audiences]** i **[!UICONTROL Segments]** -menyn.
+<table style="table-layout:fixed"><tr style="border: 0;"><tr><td>Vad du hittar i den här dokumentationen:<br/><ul>
+<li><a href="get-started-audience-orchestration.md">Kom igång med målgruppsmaterial</a></li>
+<li><a href="create-compositions.md">Skapa ditt första dispositionsarbetsflöde</a></li>
+<li><a href="composition-canvas.md">Arbeta med arbetsytan</a></li>
+<li><b><a href="access-audiences.md">Få åtkomst till och hantera målgrupper</a></b></li></ul></td></tr></table>
+
+Målgrupper som bygger på publikens komposition är tillgängliga via **[!UICONTROL Browse]** i **[!UICONTROL Segments]** -menyn.
 
 På den här fliken visas alla målgrupper som lagras i Adobe Experience Platform. Målgrupper som skapats med målgruppskompositioner kan identifieras av **[!UICONTROL Audience composition]** ursprung.
 
 ![](assets/audiences-list.png)
 
 >[!NOTE]
+>
+>För den här betaversionen visas inte flera komponenter och/eller metadata som ursprungligen visades i segmentlagret på den här fliken (t.ex. uppdelning, utvärderingsmetod).
 >
 >Mer information om andra typer av målgrupper i Adobe Experience Platform finns i [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html).
 
@@ -36,9 +45,3 @@ Om du vill tilldela användningsetiketter för anpassade eller grundläggande da
 <!--
 -edit an audience?
 -->
-
-Läs mer:
-
-* [Kom igång med målgruppsmaterial](get-started-audience-orchestration.md)
-* [Skapa kompositionsarbetsflöden](create-compositions.md)
-* [Arbeta med arbetsytan](composition-canvas.md)

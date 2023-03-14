@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: 78675ca22d8ee9a93d9af128d5708c305523da78
+source-git-commit: 8b1bf0b0469c1efc5194dae56ddddd9f05dbf722
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 3%
@@ -35,7 +35,7 @@ Om du vill skapa en ny kampanj öppnar du **[!UICONTROL Campaigns]** menyn och k
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_type"
 >title="Kampanjtyp"
->abstract="För ett marknadsföringsmeddelande genom att ange ett sändningsdatum visas **Schemalagd** är den mest lämpliga typen. Men om du vill skicka transaktionsmeddelanden som lösenordsåterställning eller övergivna kort kan du **API-utlöst** text är det bästa alternativet."
+>abstract="För ett marknadsföringsmeddelande genom att ange ett sändningsdatum visas **Schemalagd** är den mest lämpliga typen. Om du vill skicka transaktionsmeddelanden som lösenordsåterställning eller kundvagnsövergivande, ska du **API-utlöst** text är det bästa alternativet."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_category"
@@ -46,7 +46,7 @@ Om du vill skapa en ny kampanj öppnar du **[!UICONTROL Campaigns]** menyn och k
 
    * **[!UICONTROL Scheduled]**: köra kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka **marknadsföring** typmeddelanden.
 
-   * **[!UICONTROL API-triggered]**: köra kampanjen med ett API-anrop. API-utlösta kampanjer är avsedda att skicka **transaktionsbaserad** meddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförts av en individ: lösenordsåterställning, övergivna kort osv. [Lär dig hur du utlöser en kampanj med API:er](api-triggered-campaigns.md)
+   * **[!UICONTROL API-triggered]**: köra kampanjen med ett API-anrop. API-utlösta kampanjer är avsedda att skicka **transaktionsbaserad** meddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförts av en individ: lösenordsåterställning, övergivna varukorgar osv. [Lär dig hur du utlöser en kampanj med API:er](api-triggered-campaigns.md)
 
 1. I **[!UICONTROL Actions]** väljer du kanal och kanal för att skicka meddelandet.
 

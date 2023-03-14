@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Skapa kompositionsarbetsflöden
+title: Skapa ditt första dispositionsarbetsflöde
 description: Lär dig hur du skapar arbetsflöden för disposition för att kombinera och ordna befintliga målgrupper.
 feature: Journeys
 topic: Content Management
@@ -10,18 +10,25 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 8b978900-fcef-46f2-bc19-70776e4f3d43
-source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
+badge: label="Beta" type="Informative"
+source-git-commit: 8b1bf0b0469c1efc5194dae56ddddd9f05dbf722
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
 
-# Skapa kompositionsarbetsflöden {#create-compositions}
+# Skapa ditt första dispositionsarbetsflöde {#create-compositions}
 
-Med arbetsflöden för kompositioner kan ni kombinera och ordna befintliga målgrupper för att skapa nya målgrupper.
+<table style="table-layout:fixed"><tr style="border: 0;"><tr><td>Vad du hittar i den här dokumentationen:<br/><ul>
+<li><a href="get-started-audience-orchestration.md">Kom igång med målgruppsmaterial</a></li>
+<li><b><a href="create-compositions.md">Skapa ditt första dispositionsarbetsflöde</a></b></li>
+<li><a href="composition-canvas.md">Arbeta med arbetsytan</a></li>
+<li><a href="access-audiences.md">Få åtkomst till och hantera målgrupper</a></li></ul></td></tr></table>
 
 ## Skapa ett dispositionsarbetsflöde {#create}
+
+Så här skapar du ett dispositionsarbetsflöde:
 
 1. Öppna **[!UICONTROL Segments]** meny och välj **[!UICONTROL Create Audience]**.
 
@@ -42,7 +49,7 @@ Med arbetsflöden för kompositioner kan ni kombinera och ordna befintliga målg
 
 1. Öppna dispositionsegenskaperna för att ange en titel och en beskrivning.
 
-   Om ingen rubrik har definierats i egenskaperna är dispositionsetiketten den som börjar **[!UICONTROL Audience]** aktivitet.
+   Om ingen titel har definierats i egenskaperna ställs kompositionens etikett in på &quot;Disposition&quot; följt av datum och tid då den skapades.
 
    ![](assets/audiences-properties.png)
 
@@ -76,9 +83,3 @@ Alla skapade kompositioner kan nås via **[!UICONTROL Compositions]** -fliken. D
 >[!NOTE]
 >
 >Du kan när som helst duplicera eller ta bort en befintlig komposition med hjälp av ellipsknappen i listan.
-
-Läs mer:
-
-* [Kom igång med målgruppsmaterial](get-started-audience-orchestration.md)
-* [Arbeta med arbetsytan](composition-canvas.md)
-* [Få åtkomst till och hantera målgrupper](access-audiences.md)
