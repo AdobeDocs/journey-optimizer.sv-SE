@@ -5,9 +5,9 @@ feature: Offers
 topic: Integrations
 role: User
 level: Intermediate
-source-git-commit: b06b545d377fcd1ffe6ed218badeb94c1bb85ef2
+source-git-commit: d690e066e5a6ec51b0cc86f9e4f375e72cd7f661
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
@@ -43,17 +43,15 @@ Hur man får in feedback om intryck och klick beror på [!DNL Journey Optimizer]
 
    * E-postmeddelanden skapade av [!DNL Journey Optimizer]
    * Mobila push-meddelanden skapade av [!DNL Journey Optimizer]
-   * Mobilappar med [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/web-sdk-faq.html#what-is-adobe-experience-platform-web-sdk%3F){target="_blank"} eller Mobile SDK<!--TBC--> för att återge erbjudanden <!--need more info + link-->
 
-   >[!NOTE]
-   >
-   >Om Adobe ger erbjudandet visuellt till slutanvändaren i kanalen kan du anta att Adobe automatiskt skickar in feedback.
+   <!--If Adobe renders the offer visually to the end user on the channel, you can assume that Adobe will auto-send in the feedback.-->
 
 1. Å andra sidan kräver vissa kanaler att data skickas till Adobe Experience Platform som **upplevelsehändelse**.
 
-   Förutom mobilappar som använder [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/web-sdk-faq.html#what-is-adobe-experience-platform-web-sdk%3F){target="_blank"} eller Mobile SDK<!--TBC-->Alla kanaler som använder en API-begäran för beslut för att ta emot erbjudanden måste få feedback som skickas in som en upplevelsehändelse. Det inkluderar:
+   Alla kanaler som använder en API-begäran för beslut för att ta emot erbjudanden måste få feedback som skickas in som en upplevelsehändelse. Det inkluderar:
 
-   * Webbsidor
+   * Webbsidor med [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"} för att återge erbjudanden
+   * Mobilappar med [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"} för att återge erbjudanden
    * Kiosker
    * Meddelanden som skickas via program från tredje part
 
