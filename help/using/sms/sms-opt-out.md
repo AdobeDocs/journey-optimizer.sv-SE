@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 59ea67d9-e90c-4ad0-afb9-d0e0fd868855
-source-git-commit: 676e2d6788c8110b76a38e857a62ba9c1be5842c
+source-git-commit: 63237c02f632d289dba845acdcd0859f2d6de9c9
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ I enlighet med branschens standarder och bestämmelser måste alla SMS-marknadsf
 
 ## Interna inkommande nyckelord{#sms-native-keywords}
 
-Som standard hanterar Adobe Journey Optimizer engelskspråkiga svarsmeddelanden som STOP, UNSTOP och START för avgiftsfria och långa kodmeddelanden, i enlighet med branschstandarder för inbyggd integrering som Sinch och Twilio.
+Som standard hanterar Adobe Journey Optimizer följande engelskspråkiga standardsvarsmeddelanden för avgiftsfria meddelanden och meddelanden med lång kod: STOP, UNSTOP, START, QUIT, CANCEL, END och UNSUBSCRIBE. Observera att endast Sinch har stöd för inbyggda nyckelord när de används med Journey Optimizer.
 
-Dessa nyckelord utlöser vanligtvis ett automatiskt standardsvar från din tredje part (som Twilio eller Sinch). Du kan bekräfta detta direkt hos leverantören eller via deras dokumentationswebbplats.
+Dessa nyckelord utlöser vanligtvis ett automatiskt standardsvar från din tredje part-leverantör. Du kan bekräfta detta direkt hos leverantören eller via deras dokumentationswebbplats.
 
-Inga steg krävs för att säkerställa att SMS-avanmälningsfunktioner fungerar i Adobe Journey Optimizer när nyckelordssvaren STOP, UNSTOP och START identifieras automatiskt. Profilernas avanmälningsstatus uppdateras i realtid i Adobe Journey Optimizer.
+Inga steg krävs för att säkerställa att SMS-avanmälningsfunktioner fungerar i Adobe Journey Optimizer när nyckelordssvaren STOP, UNSTOP, START, QUIT, CANCEL, END och UNSUBSCRIBE identifieras automatiskt. Profilernas avanmälningsstatus uppdateras i realtid i Adobe Journey Optimizer.
 
 
 ## Blockeringslista{#sms-blocklists}
@@ -39,7 +39,9 @@ Förutom att Adobe Journey Optimizer stoppar sändningen baserat på avanmälnin
 
 ## Korta koder {#short-codes}
 
-Som standard hanterar inte Adobe Journey Optimizer avanmälnings-, avanmälnings- eller hjälpnyckelord för korta kodnummer. Ni måste se till att er korta kod följer alla branschregler och regler för hantering av avanmälan.
+Som standard hanteras inte nyckelord för deltagande eller hjälp för korta kodnummer av Adobe Journey Optimizer. För att säkerställa att branschens regler och regler för hantering av avanmälan följs är det viktigt att kontrollera att din korta kod följer alla riktlinjer.
+
+Journey Optimizer stöder dock globala avanmälningar baserade på inkommande nyckelord med olika avsändar-ID.
 
 ## Avsändarens alfanumeriska ID {#alphanumeric}
 
