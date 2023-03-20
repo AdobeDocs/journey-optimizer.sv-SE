@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
 exl-id: dcdd3c81-0f00-4259-a8a5-9062a4c40b6f
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: 4c0508d415630ca4a74ec30e5b43a3bfe7fd8a4f
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '836'
 ht-degree: 1%
 
 ---
@@ -54,6 +54,8 @@ Här är de olika datamängderna som är tillgängliga:
 **Intelligenta tjänster**
 
 * _Poäng för optimering av sändningstid/engagemangsmoment_: Poängvärden för Journey AI.
+
+Om du vill visa en fullständig lista över fält och attribut för varje schema läser du i [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
 
 ## Förhandsgranska datauppsättningar{#preview-datasets}
 

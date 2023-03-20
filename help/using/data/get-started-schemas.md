@@ -8,9 +8,9 @@ role: User
 level: Beginner
 keywords: scheman, plattform, data, struktur
 exl-id: c2a8df2e-ff94-4f9a-a53e-bbf9f663cc81
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: 4c0508d415630ca4a74ec30e5b43a3bfe7fd8a4f
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '332'
 ht-degree: 2%
 
 ---
@@ -32,6 +32,8 @@ The **Scheman** arbetsyta i [!DNL Adobe Journey Optimizer] Med användargränssn
 Lär dig hur du använder schemaanvändargränssnittet i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html){target="_blank"}
 
 Stegvis dokumentation om hur du skapar ett schema med Schemaredigeraren finns i [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html){target="_blank"}
+
+Om du vill visa en fullständig lista över fält och attribut för varje schema läser du i [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
 
 
 ## Instruktionsvideo{#video-schema}
