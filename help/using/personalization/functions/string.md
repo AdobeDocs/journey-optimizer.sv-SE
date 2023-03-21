@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 8674ef9e-261b-49d9-800e-367f9f7ef979
-source-git-commit: dc313d7cbee9e412b9294b644fddbc7840f90339
+source-git-commit: db7c57ce9f5c46d8beb6ff0037a8854fd136cb4a
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1868'
 ht-degree: 5%
 
 ---
@@ -648,13 +648,20 @@ Returnerar&quot;Hello Mark, här kommer ditt månatliga nyhetsbrev!&quot;
 
 ## Ersätt alla{#replaceAll}
 
-The `replaceAll` används för att ersätta alla delsträngar i en text som matchar&quot;target&quot; med den angivna strängen&quot;teckenersättning&quot;. Ersättningen fortsätter från början av strängen till slutet, t.ex. om&quot;a&quot; ersätts med&quot;b&quot; i strängen&quot;aaa&quot; resulterar det i&quot;ba&quot; i stället för&quot;ab&quot;.
+The `replaceAll` används för att ersätta alla delsträngar i en text som matchar &quot;regex&quot;-uttrycket med den angivna literala &quot;ersättningssträngen&quot;. Regex har specialhantering av &quot;\&quot; och &quot;+&quot; och alla regex-uttryck följer PQL:s flyktstrategi. Ersättningen fortsätter från början av strängen till slutet, t.ex. om&quot;a&quot; ersätts med&quot;b&quot; i strängen&quot;aaa&quot; resulterar det i&quot;ba&quot; i stället för&quot;ab&quot;.
 
 **Syntax**
 
 ```sql
 {%= replaceAll(string,string,string) %}
 ```
+>[!NOTE]
+>
+> Om det regex-uttryck som används som andra argument är ett särskilt regex-tecken måste vi använda ett dubbelt omvänt snedstreck (`//`) för att hantera sådana fall.
+>
+> Lista med specialregextecken [., +, *, ?, ^, $, (, ), [, ], {, }, |, \.]
+> 
+> Detta sammanfattas i [Oraclets dokumentation](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html){_blank}
 
 ## Högertrimning {#rightTrim}
 
