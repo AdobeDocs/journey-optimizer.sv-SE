@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: b06b545d377fcd1ffe6ed218badeb94c1bb85ef2
+source-git-commit: a402f9c8510c5905551e9ca97ca7ae762e7e56a1
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1343'
 ht-degree: 33%
 
 ---
@@ -415,11 +415,12 @@ ht-degree: 33%
 + Datahantering {#data-management}
    + [Kom igång med datahantering](using/data/gs-data.md)
    + [Arbeta med scheman](using/data/get-started-schemas.md)
-   + [Frågor](using/data/get-started-queries.md)
    + Journey Optimizer dataset {#datasets}
       + [Kom igång med datauppsättningar](using/data/get-started-datasets.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
+   + [Journey Optimizer inbyggda scheman](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
+   + [Frågor](using/data/get-started-queries.md)
 + Konfiguration{#configuration}
    + [Kom igång med Journey Optimizer](using/configuration/get-started-configuration.md)
    + Delegera e-postunderdomäner {#delegate-subdomains}
