@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 8674ef9e-261b-49d9-800e-367f9f7ef979
-source-git-commit: db7c57ce9f5c46d8beb6ff0037a8854fd136cb4a
+source-git-commit: 9301d02be37c6aabad9c10a4cc43c20d3e3ee23e
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1857'
 ht-degree: 5%
 
 ---
@@ -655,13 +655,12 @@ The `replaceAll` används för att ersätta alla delsträngar i en text som matc
 ```sql
 {%= replaceAll(string,string,string) %}
 ```
+
 >[!NOTE]
 >
-> Om det regex-uttryck som används som andra argument är ett särskilt regex-tecken måste vi använda ett dubbelt omvänt snedstreck (`//`) för att hantera sådana fall.
->
-> Lista med specialregextecken [., +, *, ?, ^, $, (, ), [, ], {, }, |, \.]
+> När uttrycket som används som andra argument är ett särskilt regex-tecken använder du dubbelt omvänt snedstreck (`//`).  Specialtecken för regex är: [., +, *, ?, ^, $, (, ), [, ], {, }, |, \.]
 > 
-> Detta sammanfattas i [Oraclets dokumentation](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html){_blank}
+> Läs mer i [Oraclets dokumentation](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html){_blank}.
 
 ## Högertrimning {#rightTrim}
 
