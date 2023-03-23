@@ -2,33 +2,43 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Adobe Analytics-integrering
-description: Lär dig utnyttja Adobe Analytics data
+description: Lär dig utnyttja Adobe Analytics-data i Journey Optimizer
 feature: Events
 topic: Administration
 role: Admin
 level: Intermediate
 keywords: analys, integrering, web sdk, plattform
 exl-id: 9d842722-e5eb-4743-849d-b7ba9448062f
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: 16752d94647b25b4a86c34b77bda0f72fcfaf169
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 7%
+source-wordcount: '719'
+ht-degree: 6%
 
 ---
 
-# Adobe Analytics-integrering {#analytics-data}
+# Arbeta med Adobe Analytics-data {#analytics-data}
 
-## Utnyttja data från Adobe Analytics eller Web SDK {#leverage-analytics-data}
+Ni kan utnyttja alla webbbeteendedata som ni redan samlar in via Adobe Analytics eller Web SDK, och strömma till Adobe Experience Platform, för att utlösa resor och automatisera kundernas upplevelser.
 
-Ni kan utnyttja alla webbhändelsedata (via Adobe Analytics eller Web SDK) som ni redan samlar in och strömmar till Adobe Experience Platform för att utlösa resor och automatisera kundernas upplevelser.
+För att detta ska fungera med Adobe Analytics måste du:
+
+1. Aktivera den rapportsvit som du vill använda. [Läs mer](#leverage-analytics-data)
+1. Gör det möjligt för Journey Optimizer att använda Adobe Analytics datakälla. [Läs mer](#activate-analytics-data)
+1. Lägg till en specifik händelse under resan. [Läs mer](#event-analytic)
 
 >[!NOTE]
 >
->Det här avsnittet gäller endast för regelbaserade händelser och kunder som behöver använda Adobe Analytics- eller WebSDK-data.
+>Det här avsnittet gäller endast för regelbaserade händelser och kunder som behöver använda Adobe Analytics- eller Web SDK-data.
+> 
+>Om du använder Adobe Customer Journey Analytics kan du läsa [den här sidan](../reports/cja-ajo.md).
 
-För att detta ska fungera med Adobe Analytics måste du aktivera den rapportsserie som du vill använda i Adobe Experience Platform. Följ stegen nedan för att göra detta:
+## Konfigurera Adobe Analytics- eller Web SDK-data {#leverage-analytics-data}
 
-1. Anslut till Adobe Experience Platform och gå till **[!UICONTROL Sources]**.
+Data som kommer från Adobe Analytics eller Adobe Experience Platform Web SDK måste vara aktiverade för att kunna användas på dina resor.
+
+Följ stegen nedan för att göra detta:
+
+1. Bläddra till **[!UICONTROL Sources]** -menyn.
 
 1. I Adobe Analytics väljer du **[!UICONTROL Add data]**
 
@@ -52,14 +62,31 @@ Detta aktiverar Analytics-källkopplingen för den rapportsviten. När informati
 
 Läs mer om Adobe Analytics källanslutning i  [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html){target="_blank"} and [tutorial](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html){target="_blank"}.
 
+## Aktivera den här konfigurationen {#activate-analytics-data}
+
+När konfigurationen är klar kontaktar du Adobe för att aktivera Journey Optimizer-miljön för att använda den här datakällan. Det här steget krävs bara för Adobe Analytics datakällor. Så här gör du:
+
+1. Hämta datakällans ID. Den här informationen finns i användargränssnittet: bläddra till datakällan som du skapade från **Dataflöden** -fliken i **Källor** -menyn. Det enklaste sättet att hitta den är att filtrera på Adobe Analytics-källor.
+1. Kontakta Adobe kundtjänst och lämna följande uppgifter:
+
+   * Ämne: Aktivera Adobe Analytics-event för resor
+
+   * Innehåll: Aktivera min miljö för att använda AA-händelser.
+
+      * Organisations-ID: &quot;XXX@AdobeOrg&quot;
+
+      * Datakällans ID: &quot;ID: xxxxx&quot;
+
+1. När du har fått en bekräftelse på att din miljö är klar kan du använda Adobe Analytics-data på dina resor.
+
 ## Skapa en resa med en händelse med hjälp av Adobe Analytics- eller Web SDK-data {#event-analytics}
 
-När du har implementerat integreringen med Adobe Analytics med [Adobe Analytics-källor](#leverage-analytics-data) eller med [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)kan du skapa en händelse som senare kan användas i en resa.
+Du kan nu skapa en händelse som baseras på Adobe Analytics- eller Adobe Experience Platform Web SDK-data och som ska användas under en resa.
 
-I det här exemplet riktar vi oss till användare som har lagt till en produkt i sina kundvagnar:
+I exemplet nedan får du lära dig att rikta in dig på användare som har lagt till en produkt i sina kundvagnar:
 
-* Om beställningen är klar får de ett uppföljningsmejl två dagar senare för att be om feedback.
-* Om ordern inte är slutförd får de ett mejl som påminner dem om att ordern är slutförd.
+* Om beställningen är klar får användarna ett uppföljningsmejl två dagar senare för att be om feedback.
+* Om beställningen inte är slutförd får användarna ett e-postmeddelande som påminner dem om att de kan slutföra beställningen.
 
 1. Från Adobe Journey Optimizer kommer du åt **[!UICONTROL Configuration]** -menyn.
 
@@ -74,24 +101,26 @@ I det här exemplet riktar vi oss till användare som har lagt till en produkt i
    * **[!UICONTROL Name]**: Anpassa namnet på **[!UICONTROL Event]**.
    * **[!UICONTROL Type]**: Välj **[!UICONTROL Unitary]** Typ. [Läs mer](../event/about-events.md)
    * **[!UICONTROL Event ID type]**: Välj **[!UICONTROL Rule based]** Händelse-ID-typ. [Läs mer](../event/about-events.md#event-id-type)
-   * **[!UICONTROL Schema]**: Välj det Analytics- eller WebSDK-schema som skapades i avsnittet ovan.
+   * **[!UICONTROL Schema]**: Välj Analytics- eller WebSDK-schema [skapat före](#leverage-analytics-data).
    * **[!UICONTROL Fields]**: Välj nyttolastfälten. [Läs mer](../event/about-creating.md#define-the-payload-fields)
-   * **[!UICONTROL Event ID condition]**: Definiera villkoret som ska användas av systemet för att identifiera de händelser som utlöser din resa.
+   * **[!UICONTROL Event ID condition]**: Definiera villkoret för att identifiera de händelser som utlöser din resa.
 
       Här utlöses händelsen när kunderna lägger till en artikel i sina kundvagnar.
-   * **[!UICONTROL Profile Identifier]**: Välj ett fält bland dina nyttolastfält eller definiera en formel för att identifiera den person som är associerad med händelsen.
+   * **[!UICONTROL Profile Identifier]**: Välj ett fält bland dina nyttolastfält, eller definiera en formel, för att identifiera den person som är associerad med händelsen.
 
    ![](assets/ajo-aa_6.png)
 
-1. Välj **[!UICONTROL Save]**. Din aktivitet kan nu användas under en resa.
+1. Välj **[!UICONTROL Save]**.
 
-1. Från **[!UICONTROL Journeys]** kan du nu börja skapa din resa. Mer information om detta finns i [det här avsnittet](../building-journeys/journey-gs.md).
+Nu när evenemanget är klart kan du skapa en resa för att använda det.
 
-1. Lägg till era tidigare konfigurerade Analytics-händelser på er resa.
+1. Från **[!UICONTROL Journeys]** meny, öppna eller skapa en resa. Mer information om detta finns i [det här avsnittet](../building-journeys/journey-gs.md).
+
+1. Lägg till en tidigare konfigurerad Analytics-händelse på resan.
 
    ![](assets/ajo-aa_8.png)
 
-1. Lägg till en händelse som utlöses om en beställning slutförs.
+1. Lägg till en händelse som utlöses om en order slutförs.
 
 1. Från **[!UICONTROL Event menu]** väljer du **[!UICONTROL Define the event timeout]** och **[!UICONTROL Set a timeout path]** alternativ.
 
@@ -105,6 +134,6 @@ I det här exemplet riktar vi oss till användare som har lagt till en produkt i
 
 1. Lägg sedan till en **[!UICONTROL Email action]**. I det här e-postmeddelandet uppmanas kunderna att ge återkoppling om den placerade beställningen.
 
-Nu kan du publicera din resa efter att ha testat dess giltighet. [Läs mer](../building-journeys/publishing-the-journey.md)
+Nu kan du testa och publicera din resa. [Läs mer](../building-journeys/publishing-the-journey.md)
 
 ![](assets/ajo-aa_7.png)
