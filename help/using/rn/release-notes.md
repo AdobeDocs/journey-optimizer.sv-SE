@@ -4,10 +4,10 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 4399d1665fd27fdd3b2cca6cfe448464c3c79f0c
+source-git-commit: 2a6c5ab81a1fa708756fd2da029febd056f81f7a
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 7%
+source-wordcount: '1397'
+ht-degree: 6%
 
 ---
 
@@ -26,7 +26,7 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 
 Informationen nedan kan komma att ändras utan föregående meddelande fram till releasedatum. Uppdaterad dokumentation kommer att publiceras på releasedatum och direkta länkar kommer att läggas till på den här sidan.
 
-**Tillgänglighetsdatum**: 29 mars
+**Tillgänglighetsdatum**: 29 mars 2023
 
 ### Nya funktioner{#mar-2023-features}
 
@@ -42,7 +42,7 @@ Informationen nedan kan komma att ändras utan föregående meddelande fram till
 <td>
 <p>Du kan nu skicka personaliserade meddelanden i appen till appanvändarna inom en kampanj. Använd Journey Optimizer för att utforma meddelanden och anpassa meddelandelayout, visning, text och knappar för att skapa en smidig upplevelse.</p>
 <img src="assets/do-not-localize/in-app.gif"/>
-<p>Mer information finns i den <a href="../in-app/get-started-in-app.md">detaljerade dokumentationen</a>.</p>
+<!--p>For more information, refer to the <a href="../in-app/get-started-in-app.md">detailed documentation</a>.</p-->
 </tr>
 </tbody>
 </table>
@@ -74,7 +74,7 @@ Informationen nedan kan komma att ändras utan föregående meddelande fram till
 <tr>
 <td>
 <p>Som Journey Optimizer-behandlare kan du nu ordna dina affärsobjekt med hjälp av taggar. Taggar är ett snabbt och enkelt sätt att klassificera objekt för att förbättra sökningen. Den här funktionen är för närvarande i betaversion och endast tillgänglig för Journeys.</p>
-<p>Mer information finns i den <a href="../building-journeys/tags.md">detaljerade dokumentationen</a>.</p>
+<!--p>For more information, refer to the <a href="../building-journeys/tags.md">detailed documentation</a>.</p-->
 </td>
 </tr>
 </tbody>
