@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 2a6c5ab81a1fa708756fd2da029febd056f81f7a
+source-git-commit: 1dcaab6dba62e3c8119e45ce87dbe6f902e37921
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1398'
 ht-degree: 6%
 
 ---
@@ -89,13 +89,11 @@ Informationen nedan kan komma att ändras utan föregående meddelande fram till
 * Resans arbetsyta har förbättrats för en enklare och förbättrad användarupplevelse. I slutet av varje bana på arbetsytan har de tomma platshållarna tagits bort. Nu kan du enkelt lägga till dina aktiviteter genom att dra dem i slutet av en bana. <!--[Learn more](../building-journeys/using-the-journey-designer.md)-->
 * Standardtidsgränsen och fellängden för resans egenskaper har ändrats från 5 till 30 sekunder. Standardhastigheten för begränsning i lässegmentsaktiviteter har ändrats från 20 000 till 5 000 meddelanden per sekund.
 * Ett skyddsutkast har lagts till i testläget för att endast lyssna på händelser som skickas via gränssnittet. Händelser som skickas via ett externt verktyg beaktas inte.
-* När du lägger till en e-post-, SMS- eller push-åtgärd på en resa är ytan nu som standard förfylld med den senast använda ytan för den kanalen.
 
-<!-- * A new type of system alert has been introduced. You can now get notified when a custom action fails. [Learn more](../reports/alerts.md)-->
-
-<!--
+<!-- 
+* When adding an Email, SMS or Push action in a journey, the surface is now pre-filled, by default, with the last used surface for that channel.
+* A new type of system alert has been introduced. You can now get notified when a custom action fails. [Learn more](../reports/alerts.md)
 * Timeout and error management has been improved in journeys. Timeout and error paths are now always added on the canvas. A new toolbar button is available to show/hide these paths. [Learn more](../building-journeys/journey-gs.md#timeout_and_error)
-
 * The Journey dashboard is now split in two tabs:
     * Use the **Overview** tab to access a new dashboard which displays key metrics related to your journeys.
     * Use the **Browse** tab to access list of all journeys.
@@ -112,6 +110,10 @@ Informationen nedan kan komma att ändras utan föregående meddelande fram till
 * Du kan också välja vilken Adobe Experience Platform-händelse som ska användas för att söka efter offer decisioning capping. <!--[Learn more](../offers/offer-library/add-constraints.md#capping)-->
 
 * Ytterligare parametrar har lagts till på skärmen där placeringar skapas. De gör det möjligt för er att styra om ett erbjudande kan dupliceras över flera ersättningar och ange om erbjudandets innehåll och metadata ska inkluderas i API-svaret. <!--[Learn more](../offers/offer-library/creating-placements.md)-->
+
+**Personalisering**
+
+* Du kan nu inkludera standardreservtext för strängbaserade profilattribut i uttrycksredigeraren. Dessa värden visas om de valda attributen inte ger något resultat. <!--[Learn more](../personalization/personalization-build-expressions.md#add)-->
 
 ## Versionsinformation från februari 2023 {#feb-2023}
 
