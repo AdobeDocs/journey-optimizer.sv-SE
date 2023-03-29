@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
+source-git-commit: 416da542b6e0ea8c66cdcebcc0219db63a9608fb
 workflow-type: tm+mt
-source-wordcount: '1320'
+source-wordcount: '1317'
 ht-degree: 8%
 
 ---
@@ -26,7 +26,6 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 
 Informationen nedan kan komma att ändras utan föregående meddelande fram till releasedatum. Uppdaterad dokumentation kommer att publiceras på releasedatum och direkta länkar kommer att läggas till på den här sidan.
 
-**Tillgänglighetsdatum**: 29 mars 2023
 
 ### Nya funktioner{#mar-2023-features}
 
