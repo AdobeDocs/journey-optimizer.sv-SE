@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: abdc20ed5f73d3822d5cbfa21a60f568f7ad5e4d
+source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 33%
+source-wordcount: '1355'
+ht-degree: 32%
 
 ---
 
@@ -221,6 +221,7 @@ ht-degree: 33%
    + [Förhandsgranska och testa ditt SMS](using/sms/send-sms.md)
    + [Hantera SMS-avanmälan](using/sms/sms-opt-out.md)
    + [Konfigurera SMS-kanal](using/sms/sms-configuration.md)
+   + [Konfigurera SMS-underdomäner](using/sms/sms-subdomains.md)
 + Direktutskick {#direct-mail}
    + [Skapa direktreklam](using/direct-mail/create-direct-mail.md)
    + [Konfigurera direktreklam](using/direct-mail/direct-mail-configuration.md)
@@ -439,7 +440,10 @@ ht-degree: 33%
    + [Hantera körningsadresser](using/configuration/primary-email-addresses.md)
    + Konfigurera resor {#configure-journeys}
       + [Om datakällor, händelser och åtgärder](using/configuration/about-data-sources-events-actions.md)
-      + [Integrera med externa system](using/configuration/external-systems.md)
+      + Integrera med externa system {#external-systems}
+         + [Integrering av resor med externa system](using/configuration/external-systems.md)
+         + [API för begränsning](using/configuration/capping.md)
+         + [Begränsnings-API](using/configuration/throttling.md)
       + Händelsekonfiguration {#events-journeys}
          + [Allmän princip](using/event/about-events.md)
          + Konfigurera en enhetshändelse {#unitary-events}

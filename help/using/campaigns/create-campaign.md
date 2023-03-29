@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: 8b1bf0b0469c1efc5194dae56ddddd9f05dbf722
+source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 3%
@@ -35,7 +35,7 @@ Om du vill skapa en ny kampanj öppnar du **[!UICONTROL Campaigns]** menyn och k
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_type"
 >title="Kampanjtyp"
->abstract="För ett marknadsföringsmeddelande genom att ange ett sändningsdatum visas **Schemalagd** är den mest lämpliga typen. Om du vill skicka transaktionsmeddelanden som lösenordsåterställning eller kundvagnsövergivande, ska du **API-utlöst** text är det bästa alternativet."
+>abstract="För ett marknadsföringsmeddelande genom att ange ett sändningsdatum, **Schemalagd** är den mest lämpliga typen. Om du vill skicka transaktionsmeddelanden som lösenordsåterställning eller kundvagnsövergivande, ska du **API-utlöst** text är det bästa alternativet."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_category"

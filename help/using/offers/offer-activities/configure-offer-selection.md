@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 8c7135d7-bf5a-4671-afdf-afec60907a56
-source-git-commit: 76da07406a751bf657bc03efb6fa5ebbae260876
+source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '438'
+ht-degree: 5%
 
 ---
 
@@ -38,7 +38,7 @@ Du kan till exempel öka prioriteten för alla erbjudanden där slutdatumet är 
 
 Lär dig hur du skapar en rankningsformel i [det här avsnittet](../ranking/create-ranking-formulas.md).
 
-När en rankningsformel har skapats kan du tilldela den till en placering i ett beslut. Följ stegen nedan för att göra detta:
+När du har skapat en formel kan du tilldela den till en placering i ett beslut. Följ stegen nedan för att göra detta:
 
 1. Skapa ett beslut eller redigera ett befintligt. Se [Skapa beslut](../offer-activities/create-offer-activities.md).
 
@@ -46,17 +46,17 @@ När en rankningsformel har skapats kan du tilldela den till en placering i ett 
 
 1. Lägg till en samling för varje placering. Se [Skapa samlingar](../offer-library/creating-collections.md).
 
-1. Välj **[!UICONTROL Ranking formula]** som rangordningsmetod och klicka sedan på **[!UICONTROL Add ranking]**.
+1. Välj **[!UICONTROL Formula]** som rangordningsmetod och klicka sedan på **[!UICONTROL Add ranking]**.
 
    ![](../assets/offer-activity-ranking.png)
 
-1. Välj önskad rankningsformel och klicka sedan på **[!UICONTROL Select]**.
+1. Välj önskad formel och klicka sedan på **[!UICONTROL Select]**.
 
    ![](../assets/ranking-selection.png)
 
 Rankningsformeln är nu kopplad till placeringen.
 
-Om flera erbjudanden kan presenteras i denna placering, kommer beslutet att använda rangordningsformelns formel för att beräkna vilket erbjudande som ska levereras först.
+Om flera erbjudanden kan presenteras på den här platsen, kommer beslutet att använda den valda formeln för att beräkna vilket erbjudande som ska levereras först.
 
 ## AI-rankning {#use-ranking-strategy}
 

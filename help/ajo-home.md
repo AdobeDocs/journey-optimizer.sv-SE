@@ -5,9 +5,9 @@ description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: 2ef5c87561df71b1c55a71c237477d34750f8ac7
+source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '325'
 ht-degree: 12%
 
 ---
@@ -146,6 +146,9 @@ ht-degree: 12%
     </li>
     <p>
     <p>ANSLUTNINGAR</p>
+      <li>
+      <a href="using/data/get-started-datasets.md">Mål </a>
+    </li>
     <li>
       <a href="using/start/get-started-sources.md">Källor</a>
     </li>

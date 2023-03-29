@@ -7,9 +7,9 @@ role: Admin
 level: Intermediate
 keywords: landning, landningssida, underdomäner, konfiguration
 exl-id: dd1af8dc-3920-46cb-ae4d-a8f4d4c26e89
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -40,8 +40,6 @@ Du kan använda en underdomän som redan har delegerats till Adobe eller konfigu
 >[!CAUTION]
 >
 >Konfigurationen av deldomäner för landningssidor är gemensam för alla miljöer. Därför kommer alla ändringar av en underdomän för landningssidor också att påverka produktionssandlådorna.
-
-Observera att versaler inte får användas i en underdomän
 
 ## Använd en befintlig underdomän {#lp-use-existing-subdomain}
 
@@ -138,7 +136,7 @@ Följ stegen nedan för att konfigurera en ny underdomän.
 
    >[!NOTE]
    >
-   >Innan du kan använda den underdomänen för att skicka meddelanden måste du vänta tills Adobe utför de kontroller som krävs, vilket kan ta upp till 4 timmar.<!--Learn more in [this section](#subdomain-validation).-->
+   >Innan du kan använda den underdomänen för dina landningssidor måste du vänta tills Adobe utför de kontroller som krävs, vilket kan ta upp till 4 timmar.<!--Learn more in [this section](#subdomain-validation).-->
 
 1. När kontrollerna är slutförda får underdomänen **[!UICONTROL Success]** status. Den är klar att användas för att skapa förinställningar för landningssidor.
 

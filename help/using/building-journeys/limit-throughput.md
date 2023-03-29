@@ -8,9 +8,9 @@ role: User, Developer
 level: Experienced
 keywords: resa, datakällor, begränsning, genomströmning, anpassade åtgärder
 exl-id: 45d6bb82-88ea-4510-a023-a75a82cc6f7b
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -27,9 +27,13 @@ Detta kan göras med:
 
 * **Anpassade åtgärder**: att skicka information till externa system, t.ex. för att skicka e-post via en extern lösning med Journey Optimizer orkestreringsfunktioner tillsammans med profilinformation, målgruppsdata och resekontext.
 
-Om du arbetar med externa datakällor eller anpassade åtgärder kanske du vill skydda dina externa system genom att begränsa resans genomströmning: upp till 5000 instanser/sekund för heltidsresor och upp till 20000 instanser/sekund för segmentutlösta resor. Du kan definiera en begränsning på slutpunktsnivå för att undvika att överbelasta dessa externa system genom Journey Optimizer API:er för appning. Alla återstående begäranden efter att gränsen har nåtts kommer dock att tas bort.
+Om du arbetar med externa datakällor eller anpassade åtgärder kanske du vill skydda dina externa system genom att begränsa resans genomströmning: upp till 5000 instanser/sekund för heltidsresor och upp till 20000 instanser/sekund för segmentutlösta resor.
 
-I det här avsnittet hittar du tillfälliga lösningar som du kan använda för att optimera dataflödet. Mer information om hur du integrerar med externa system finns i [page](../configuration/external-systems.md).
+För anpassade åtgärder finns begränsningsfunktioner på produktnivå. Se detta [page](../configuration/external-systems.md#capping).
+
+För externa datakällor kan du definiera en begränsning på slutpunktsnivå för att undvika att överbelasta dessa externa system med hjälp av Journey Optimizer API:er för begränsning. Alla återstående begäranden efter att gränsen har nåtts kommer dock att tas bort. I det här avsnittet hittar du tillfälliga lösningar som du kan använda för att optimera dataflödet.
+
+Mer information om hur du integrerar med externa system finns i [page](../configuration/external-systems.md).
 
 ## Implementering
 

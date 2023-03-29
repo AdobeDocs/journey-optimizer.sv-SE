@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 8bc808da-4796-4767-9433-71f1f2f0a432
-source-git-commit: 76da07406a751bf657bc03efb6fa5ebbae260876
+source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ När en rankningsformel har skapats kan du tilldela den till en placering i ett 
 
 Så här skapar du en rankningsformel:
 
-1. Öppna **[!UICONTROL Components]** väljer du **[!UICONTROL Rankings]** -fliken. Listan med rangordningar som tidigare skapats visas.
+1. Öppna **[!UICONTROL Components]** väljer du **[!UICONTROL Ranking]** -fliken. The **[!UICONTROL Formulas]** -fliken är markerad som standard. Listan med formler som skapats tidigare visas.
 
    ![](../assets/rankings-list.png)
 
@@ -35,7 +35,7 @@ Så här skapar du en rankningsformel:
 
    ![](../assets/ranking-create-formula.png)
 
-1. Ange namn, beskrivning och formel för rankningsformeln.
+1. Ange formelnamn, beskrivning och formel.
 
    I det här exemplet vill vi prioritera alla erbjudanden med attributet&quot;hot&quot; om vädret är varmt. För att göra detta **contextData.west=hot** har skickats i beslutsanropet.
 

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: ec15e700-7659-4dbf-8446-6534ea48c5c8
-source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
+source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
 workflow-type: tm+mt
-source-wordcount: '1256'
+source-wordcount: '1278'
 ht-degree: 2%
 
 ---
@@ -64,6 +64,10 @@ Varje rapportkontrollpanel kan ändras genom att tidsperioden ändras och widget
    ![](assets/report_modify_5.png)
 
 1. När du är nöjd med visningsordningen och widgetarnas storlek klickar du på **[!UICONTROL Save]**.
+
+1. Om du vill anpassa hur data visas kan du växla mellan olika visualiseringsalternativ, som diagram, tabeller och dondiagram.
+
+   ![](assets/report_modify_10.png)
 
 Instrumentpanelen har nu sparats. Dina olika ändringar kommer att tillämpas på nytt för senare användning av dina liverapporter. Använd **[!UICONTROL Reset]** för att återställa standardordningen för widgetar och widgetar.
 

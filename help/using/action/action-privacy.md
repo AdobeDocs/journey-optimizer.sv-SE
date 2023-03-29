@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: data, styrning, DULE, etiketter, märkning, plattform, policy
 exl-id: be3efd3b-35d5-4cf7-9015-29d1e305355d
-source-git-commit: 1177a0ac99035837ff4a7422808bb92a91710f15
+source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,6 @@ Mer information om ramverket för datastyrning och hur du arbetar med etiketter 
 
 * Datastyrning gäller endast för anpassade kundresor. Campaign Classic och Campaign Standard stöds inte.
 * Styrningsprinciper tillämpas endast när en marknadsföringsåtgärd (obligatorisk eller ytterligare) har ställts in på den anpassade åtgärdsnivån.
-* Attribut som är en del av en fältgrupp som använder det färdiga unionsschemat stöds inte. Dessa attribut döljs från gränssnittet. Du måste skapa en annan fältgrupp med ett annat schema.
 
 ## Definiera styrningspolicyer {#governance-policies}
 

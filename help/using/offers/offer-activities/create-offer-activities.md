@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7a217c97-57e1-4f04-a92c-37632f8dfe91
-source-git-commit: 76da07406a751bf657bc03efb6fa5ebbae260876
+source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1342'
 ht-degree: 1%
 
 ---
@@ -98,19 +98,19 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 
    ![](../assets/activity_constraint-estimate.png)
 
-1. Definiera den rangordningsmetod som du vill använda för att välja det bästa erbjudandet för varje profil.
+1. Definiera den rangordningsmetod som du vill använda för att välja det bästa erbjudandet för varje profil. [Läs mer](../offer-activities/configure-offer-selection.md).
 
    ![](../assets/activity_ranking-method.png)
 
-   * Om flera erbjudanden kan komma i fråga för den här placeringen kommer erbjudandet med högsta prioritet att levereras till kunden som standard.
+   * Om flera erbjudanden är berättigade till den här placeringen är **[!UICONTROL Offer priority]** -metoden använder det värde som definieras i erbjudandena: erbjudandet med högsta prioritet kommer att levereras till användaren.
 
-   * Om du vill använda en viss formel för att välja vilket erbjudande som ska levereras väljer du **[!UICONTROL Ranking formula]**. Lär dig rangordna erbjudanden i [det här avsnittet](../offer-activities/configure-offer-selection.md).
+   * Om du vill använda en viss beräknad poäng för att välja vilket erbjudande du vill leverera väljer du **[!UICONTROL Formula]** eller **[!UICONTROL AI model]**. [Läs mer](../offer-activities/configure-offer-selection.md).
 
 1. Klicka **[!UICONTROL Add]** för att definiera fler villkor för samma placering.
 
    ![](../assets/activity_add-collection.png)
 
-1. När du lägger till flera villkor utvärderas de i en viss ordning. Den första samlingen som lades till i sekvensen utvärderas först och så vidare.
+1. När du lägger till flera villkor utvärderas de i en viss ordning. Den första samlingen som lades till i sekvensen utvärderas först och så vidare. [Läs mer](#evaluation-criteria-order)
 
    Om du vill ändra standardsekvensen kan du dra och släppa samlingarna för att ordna om dem som du vill.
 
@@ -120,13 +120,27 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 
    ![](../assets/activity_move-collection.png)
 
-   De har nu samma rankning och kommer därför att utvärderas samtidigt.
+   De har nu samma rankning och kommer därför att utvärderas samtidigt. [Läs mer](#evaluation-criteria-order)
 
    ![](../assets/activity_same-rank-collections.png)
 
 1. Använd **[!UICONTROL New scope]** -knappen. Upprepa stegen ovan för varje beslutsomfattning.
 
    ![](../assets/activity_new-scope.png)
+
+### Ordning för utvärderingskriterier {#evaluation-criteria-order}
+
+Som beskrivs ovan består utvärderingskriterierna av en samling, behörighetskrav och en rangordningsmetod. Du kan ange den ordningsföljd i vilken du vill att utvärderingskriterierna ska utvärderas, men du kan också kombinera flera utvärderingskriterier så att de utvärderas tillsammans och inte separat.
+
+Du har till exempel två samlingar, en i utvärderingskriterier A och en i utvärderingskriterier B. Begäran är att två erbjudanden ska skickas tillbaka. Låt oss säga att det finns två godtagbara erbjudanden från utvärderingskriterier A och tre giltiga erbjudanden från utvärderingskriterier B.
+
+* Om de två utvärderingskriterierna är **inte kombinerad** och/eller i sekventiell ordning (1 och 2), kommer de två främsta godtagbara anbuden från utvärderingskriterierna att returneras på första raden. Om det inte finns två godtagbara erbjudanden för de första utvärderingskriterierna kommer beslutsmotorn att gå vidare till nästa utvärderingskriterier i följd för att hitta så många erbjudanden som fortfarande behövs, och kommer vid behov att returnera en reservlösning.
+
+   ![](../assets/activity_consecutive-rank-collections.png)
+
+* Om de två samlingarna **utvärderas samtidigt** Eftersom det finns två godtagbara erbjudanden från utvärderingskriterierna A och tre godtagbara erbjudanden från utvärderingskriterierna B, kommer samtliga fem erbjudanden att vara samlade på grundval av det värde som fastställs av respektive rangordningsmetod. Två erbjudanden begärs, och därför returneras de två främsta erbjudandena från dessa fem.
+
+   ![](../assets/activity_same-rank-collections.png)
 
 ## Lägg till ett reserverbjudande {#add-fallback}
 

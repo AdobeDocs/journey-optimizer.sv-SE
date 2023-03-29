@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
+source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1178'
 ht-degree: 1%
 
 ---
@@ -26,37 +26,50 @@ Alla externa system har olika prestanda. Du måste anpassa konfigurationen efter
 
 När Journey Optimizer gör ett anrop till ett externt API körs de tekniska garantierna enligt följande:
 
-1. Takregler tillämpas: om den maximala hastigheten uppnås, tas återstående anrop bort.
+1. Begränsningsregler tillämpas: om maxhastigheten uppnås, tas återstående anrop bort eller köas.
 
 2. Timeout och försök igen: Om begränsningsregeln är uppfylld försöker Journey Optimizer genomföra anropet tills tidsgränsen är slut.
 
-## Takning{#capping}
+## API:er för begränsning och begränsning {#capping}
 
-Det inbyggda Capping API:t erbjuder ett tekniskt skyddsräcke som hjälper till att skydda ditt externa system.
+### Om API:er för begränsning och begränsning
 
-För externa datakällor är det maximala antalet anrop per sekund satt till 15. Om antalet anrop överstiger 15 per sekund ignoreras de återstående samtalen. Du kan öka den här gränsen för privata externa datakällor. Kontakta Adobe för att inkludera slutpunkten i tillåtelselista. Detta är inte möjligt för offentliga externa datakällor.
+När du konfigurerar en datakälla eller en åtgärd upprättar du en anslutning till ett system för att antingen hämta ytterligare information som ska användas under dina resor eller skicka meddelanden eller API-anrop.
+
+Journeys API:er har stöd för upp till 5 000 händelser per sekund, men vissa externa system eller API har kanske inte samma genomströmning. Om du vill förhindra att dessa system överbelastas kan du använda **Takning** och **Begränsning** API:er som begränsar antalet händelser som skickas per sekund.
+
+Varje gång ett API-anrop utförs via resor, skickas det via API-motorn. Om gränsvärdet i API:t nås, avvisas anropet antingen om du använder API:t för begränsning, eller köas och behandlas så snart som möjligt i den ordning de togs emot om du använder API:t för begränsning.
+
+Anta till exempel att du har definierat en begränsning eller begränsning på 100 anrop per sekund för det externa systemet. Ditt system anropas av en anpassad åtgärd på tio olika resor. Om en resa tar emot 200 samtal per sekund används de 100 tillgängliga kortplatserna och de 100 återstående kortplatserna tas bort eller köas. Eftersom den högsta nivån har överskridits kommer de övriga nio resorna inte att ha några platser kvar. Denna granularitet hjälper till att skydda det externa systemet från överbelastning och krascher.
+
+>[!IMPORTANT]
+>
+>**Begränsningsregler** är konfigurerade på sandlådenivå, för en specifik slutpunkt (den anropade URL:en), men globala till alla resor i den sandlådan.
+>
+>**Begränsningsregler** konfigureras endast för produktionssandlådor, för en specifik slutpunkt, men globalt för alla resor över alla sandlådor. Du kan bara ha en begränsningskonfiguration per organisation.
+
+Mer information om hur du arbetar med API:erna finns i följande avsnitt:
+
+* [API för begränsning](capping.md)
+* [Begränsnings-API](throttling.md)
+
+### Datakällor och kapacitet för anpassade åtgärder {#capacity}
+
+För **externa datakällor**, är det maximala antalet anrop per sekund begränsat till 15. Om den här gränsen överskrids, ignoreras eller köas eventuella ytterligare anrop beroende på vilket API som används. Det är möjligt att öka denna gräns för privata externa datakällor genom att kontakta Adobe för att inkludera slutpunkten i tillåtelselista, men detta är inte ett alternativ för offentliga externa datakällor. * [Lär dig konfigurera datakällor](../datasource/about-data-sources.md).
 
 >[!NOTE]
 >
-> Om en datakälla använder en anpassad autentisering med en annan slutpunkt än den som används för datakällan måste du kontakta Adobe för att även inkludera den slutpunkten i tillåtelselista.
+>Om en datakälla använder en anpassad autentisering med en annan slutpunkt än den som används för datakällan måste du kontakta Adobe för att även inkludera den slutpunkten i tillåtelselista.
 
-För anpassade åtgärder måste du utvärdera kapaciteten för det externa API:t. Om Journey Optimizer t.ex. skickar 1 000 samtal per sekund och systemet bara har stöd för 100 samtal per sekund, måste du definiera en spärrregel så att systemet inte blir mättat.
-
-Takregler definieras på sandlådenivå för en specifik slutpunkt (URL:en anropas). Vid körning verifierar Journey Optimizer om det finns en definierad begränsningsregel och tillämpar den definierade hastigheten vid anrop till den slutpunkten. Om antalet anrop överstiger den definierade hastigheten, ignoreras de återstående samtalen och räknas som fel i rapporteringen.
-
-En begränsningsregel är specifik för en slutpunkt men global för alla resor i en sandlåda. Detta innebär att takplatser delas mellan alla resor i en sandlåda.
-
-Anta till exempel att du har definierat en begränsning på 100 anrop per sekund för det externa systemet. Ditt system anropas av en anpassad åtgärd på tio olika resor. Om en resa tar emot 200 samtal per sekund används de 100 tillgängliga kortplatserna och de 100 återstående kortplatserna tas bort. Eftersom den högsta nivån har överskridits kommer de övriga nio resorna inte att ha några platser kvar. Denna granularitet hjälper till att skydda det externa systemet från överbelastning och krascher.
-
-Mer information om API:t för appning och hur du konfigurerar regler för appning finns i [Journey Orchestration dokumentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html){target="_blank"}.
+För **anpassade åtgärder** måste du utvärdera kapaciteten för ditt externa API. Om Journey Optimizer t.ex. skickar 1 000 samtal per sekund och systemet bara har stöd för 100 samtal per sekund, måste du definiera en konfiguration för begränsning eller begränsning så att systemet inte blir mättat. [Lär dig hur du konfigurerar åtgärder](../action/action.md)
 
 ## Timeout och försök igen{#timeout}
 
-Om begränsningsregeln är uppfylld tillämpas timeoutregeln.
+Om begränsnings- eller begränsningsregeln är uppfylld tillämpas timeout-regeln.
 
 Under varje resa kan du definiera en tidsgräns. Detta gör att du kan ange en maximal varaktighet när du anropar ett externt system. Tidsgränsen har konfigurerats i egenskaperna för en resa. Se [den här sidan](../building-journeys/journey-gs.md#timeout_and_error).
 
-Den här tidsgränsen är global för alla externa anrop (externa API-anrop i anpassade åtgärder och anpassade datakällor). Som standard är den inställd på 5 sekunder.
+Den här tidsgränsen är global för alla externa anrop (externa API-anrop i anpassade åtgärder och anpassade datakällor). Som standard är den inställd på 30 sekunder.
 
 Under den angivna tidsgränsen försöker Journey Optimizer anropa det externa systemet. Efter det första anropet kan högst tre försök utföras tills tidsgränsen för timeout har nåtts. Antalet försök kan inte ändras.
 
@@ -74,9 +87,9 @@ Låt oss ta ett exempel i 5 sekunder.
 
 ## Frågor och svar{#faq}
 
-**Hur konfigurerar jag en capping-regel? Finns det en standardregel för capping?**
+**Hur konfigurerar jag en begränsning eller begränsning? Finns det en standardregel?**
 
-Som standard finns det ingen begränsning. Takregler definieras på sandlådenivå för en specifik slutpunkt (den URL som anropas) med API:t för begränsning. Se [det här avsnittet](../configuration/external-systems.md#capping) och [Journey Orchestration dokumentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html){target="_blank"}.
+Som standard finns det ingen begränsning eller begränsning. Regler definieras på sandlådenivå för en specifik slutpunkt (den URL som anropas) med API:t för begränsning eller begränsning. Se [det här avsnittet](../configuration/external-systems.md#capping).
 
 **Hur många försök utförs? Kan jag ändra antalet återförsök eller definiera en minsta vänteperiod mellan återförsök?**
 

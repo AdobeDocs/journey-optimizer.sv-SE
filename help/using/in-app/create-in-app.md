@@ -5,13 +5,13 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-keywords: i appen, meddelande, skapa, börja
 badge: label="Beta" type="Informative"
+keywords: i appen, meddelande, skapa, börja
 exl-id: b3b79fe2-7db3-490d-9c3d-87267aa55eea
-source-git-commit: 5a1ee11b603d523c1bc91a75beda00d0ac531cb9
+source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 2%
+source-wordcount: '556'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ Följ stegen nedan för att skapa ett meddelande i appen:
 
 1. Från **[!UICONTROL Properties]** redigerar du Campaigns **[!UICONTROL Title]** och **[!UICONTROL Description]**.
 
-1. Om du vill tilldela etiketter för anpassad eller grundläggande dataanvändning till landningssidan väljer du **[!UICONTROL Manage access]**. [Läs mer](../administration/object-based-access.md).
+1. Om du vill tilldela etiketter för anpassad eller viktig dataanvändning till meddelandet i appen väljer du **[!UICONTROL Manage access]**. [Läs mer](../administration/object-based-access.md).
 
 1. Klicka på **[!UICONTROL Select audience]** för att definiera målgruppen i listan över tillgängliga Adobe Experience Platform-segment. [Läs mer](../segment/about-segments.md).
 
@@ -45,27 +45,22 @@ Följ stegen nedan för att skapa ett meddelande i appen:
 
 1. I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera individerna från det valda segmentet. [Läs mer](../event/about-creating.md#select-the-namespace).
 
+1. Klicka **[!UICONTROL Edit triggers]** för att välja händelser och villkor som ska utlösa meddelandet:
+
+   1. Klicka **[!UICONTROL Add]villkor** om du vill att utlösaren ska ta hänsyn till flera händelser eller villkor.
+   1. Välj hur dina händelser ska länkas, t.ex. välj **[!UICONTROL And]** om du vill **båda** utlösare är true för att ett meddelande ska kunna visas eller väljas **[!UICONTROL Or]** om du vill att meddelandet ska visas om **antingen** av utlösarna är sanna.
+   1. Klicka **[!UICONTROL Make group]** för att gruppera utlösare tillsammans.
+
+   ![](assets/in_app_create_3.png)
+
 1. Välj hur ofta utlösaren ska visas när meddelandet i appen är aktivt:
 
-   * **[!UICONTROL Show every time]**: Visa alltid meddelandet när de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
-   * **[!UICONTROL Show once]**: Visa endast det här meddelandet första gången de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
-   * **[!UICONTROL Show until click through]**: Visa det här meddelandet när händelser har markerats i **[!UICONTROL Mobile app trigger]** nedrullningsbar meny inträffar tills en interaktionshändelse skickas av SDK med åtgärden&quot;klickad&quot;.
+   * **[!UICONTROL Everytime]**: Visa alltid meddelandet när de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
+   * **[!UICONTROL Once]**: Visa endast det här meddelandet första gången de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
+   * **[!UICONTROL Until click through]**: Visa det här meddelandet när händelser har markerats i **[!UICONTROL Mobile app trigger]** nedrullningsbar meny inträffar tills en interaktionshändelse skickas av SDK med åtgärden&quot;klickad&quot;.
+   * **[!UICONTROL X number of times]**: Visa det här meddelandet X-tid.
 
-1. Från **[!UICONTROL Mobile app trigger]** väljer du de händelser och villkor som ska utlösa meddelandet:
-
-   1. I den vänstra listrutan väljer du den händelse som krävs för att utlösa meddelandet.
-   1. Välj den validering som krävs för den valda händelsen i den högra listrutan.
-   1. Klicka på **[!UICONTROL Add]** om du vill att utlösaren ska ta hänsyn till flera händelser eller villkor. Upprepa sedan stegen ovan.
-   1. Välj hur dina händelser ska länkas, t.ex. välj **[!UICONTROL And]** om du vill **båda** utlösare är true för att ett meddelande ska kunna visas eller väljas **[!UICONTROL Or]** om du vill att meddelandet ska visas om **antingen** av utlösarna är sanna.
-
-   ![](assets/in_app_create_3.png)
-
-1. Välj den händelse som utlöser ditt meddelande i dialogrutan **[!UICONTROL Mobile app trigger]**
-nedrullningsbar meny.
-
-   Genom att välja en utlösare väljer du vilken användaråtgärd som gör att meddelandet i appen visas.
-
-   ![](assets/in_app_create_3.png)
+1. Välj vid behov **[!UICONTROL Day of the week]** eller **[!UICONTROL Time of day]** meddelandet visas i appen.
 
 1. Kampanjer är utformade för att köras ett visst datum eller med en återkommande frekvens. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** av kampanjen i [det här avsnittet](../campaigns/create-campaign.md#schedule).
 
@@ -111,7 +106,7 @@ Gör så här:
 
 Din kampanj är nu aktiverad. Det meddelande i appen som konfigurerats i kampanjen skickas omedelbart, eller på det angivna datumet.
 
-När du har skickat det kan du mäta effekten av dina meddelanden i appen i Campaign-rapporten. Mer information om rapportering finns i [det här avsnittet](../reports/campaign-global-report.md#inapp-report).
+När ni har skickat dem kan ni mäta effekten av era meddelanden i appen i kampanjrapporten eller reserapporten. Mer information om rapportering finns i [det här avsnittet](../reports/campaign-global-report.md#inapp-report).
 
 **Relaterade ämnen:**
 

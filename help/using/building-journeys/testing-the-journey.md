@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: test, resa, kontroll, fel, felsökning
 exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1501'
 ht-degree: 1%
 
 ---
@@ -61,7 +61,7 @@ Så här använder du testläget:
 
 ## Viktiga anteckningar {#important_notes}
 
-* Det finns ett gränssnitt för att utlösa händelser till den testade resan, men händelser kan också skickas av tredjepartssystem som Postman.
+* I testläge kan du utlösa händelser med gränssnittet.
 * Endast personer som markerats som&quot;testprofiler&quot; i kundprofiltjänsten i realtid får delta i den testade resan. Se detta [section](../segment/creating-test-profiles.md).
 * Testläget är bara tillgängligt i utkastresor som använder ett namnutrymme. Testläget måste kontrollera om en person som deltar i resan är en testprofil eller inte och därför måste kunna nå Adobe Experience Platform.
 * Det högsta antalet testprofiler som kan gå in på en resa under en testsession är 100.
@@ -103,8 +103,6 @@ När du klickar på **[!UICONTROL Send]** testas. Personens förlopp under resan
 När du väljer en annan testprofil på händelsekonfigurationsskärmen och kör testet igen rensas det visuella flödet och den nya personens sökväg visas.
 
 När du öppnar en resa i ett test motsvarar den visade sökvägen det senaste testet som utfördes.
-
-Det visuella flödet fungerar oavsett om händelsen aktiveras via gränssnittet eller externt (med t.ex. Postman).
 
 ## Testläge för regelbaserade resor {#test-rule-based}
 

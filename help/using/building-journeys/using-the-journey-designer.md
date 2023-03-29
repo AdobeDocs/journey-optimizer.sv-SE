@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: design, arbetsyta, resa, gränssnitt, dra, släpp
 exl-id: 1998f6fc-60fd-4038-8669-39cd55bc02d1
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
 workflow-type: tm+mt
-source-wordcount: '1583'
+source-wordcount: '1614'
 ht-degree: 1%
 
 ---
@@ -46,6 +46,12 @@ Du kan också använda **[!UICONTROL Search]** fält. Endast händelser och åtg
 The **arbetsyta** är den centrala zonen i resedesignern. Det är i den här zonen som du kan släppa dina aktiviteter och konfigurera dem. Klicka på en aktivitet på arbetsytan för att konfigurera den. Aktivitetskonfigurationsrutan öppnas till höger.
 
 ![](assets/journey39.png)
+
+The **verktygsfält**, som finns i det övre högra hörnet av arbetsytan, gör att du kan visa/dölja stödrastret, zooma in/ut och hämta en skärmbild av arbetsytan. Se det här [section](../building-journeys/journey-gs.md#timeout_and_error).
+
+<!--and show/hide timeout and error paths-->
+
+![](assets/toolbar.png){width="70%" align="left"}
 
 The **aktivitetskonfigurationsruta** visas när du klickar på en aktivitet på paletten. Fyll i de obligatoriska fälten. Klicka på **[!UICONTROL Delete]** -ikonen för att ta bort aktiviteten. Klicka **[!UICONTROL Cancel]** för att avbryta ändringarna eller **[!UICONTROL Ok]** för att bekräfta. Om du vill ta bort aktiviteter kan du även markera en aktivitet (eller flera) och trycka på backstegstangenten. Om du trycker på Esc stängs aktivitetskonfigurationsrutan.
 

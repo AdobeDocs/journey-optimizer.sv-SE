@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: aca38b71ee06e678358bc1451e6d522ea5d0e1b6
+source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '524'
 ht-degree: 4%
 
 ---
@@ -39,6 +39,8 @@ Bläddra bland flikarna nedan för att lära dig hur du lägger till ett SMS-med
    ![](assets/sms_create_2.png)
 
    Mer information om hur du konfigurerar en resa finns i [den här sidan](../building-journeys/journey-gs.md)
+
+<!-- The **[!UICONTROL Surface]**field is pre-filled, by default, with the last surface used for that channel by the user. -->
 
 Nu kan du börja designa ditt SMS-meddelande via **[!UICONTROL Edit content]** -knappen. [Definiera ditt SMS-innehåll](#sms-content)
 
@@ -75,7 +77,6 @@ Nu kan du börja designa ditt SMS-meddelande via **[!UICONTROL Edit content]** -
 
 >[!ENDTABS]
 
-
 ## Definiera ditt SMS-innehåll{#sms-content}
 
 1. Klicka på **[!UICONTROL Edit content]** för att konfigurera SMS-innehållet.
@@ -86,11 +87,24 @@ Nu kan du börja designa ditt SMS-meddelande via **[!UICONTROL Edit content]** -
 
 1. Använd uttrycksredigeraren för att definiera innehåll och lägga till dynamiskt innehåll. Du kan använda alla attribut, till exempel profilnamnet eller stad. Läs mer om [personalisering](../personalization/personalize.md) och [dynamiskt innehåll](../personalization/get-started-dynamic-content.md) i uttrycksredigeraren.
 
-1. Klicka **[!UICONTROL Save]** och kontrollera meddelandet i förhandsgranskningen.
+1. När du har definierat innehållet kan du lägga till URL:er för ditt spår i meddelandet. Om du vill göra det går du till **[!UICONTROL Helper functions]** meny och välj **[!UICONTROL Helpers]**.
+
+   Observera att för att kunna använda funktionen för förkortning av URL-adresser måste du först konfigurera en underdomän som sedan länkas till din yta. [Läs mer](sms-subdomains.md)
+
+   ![](assets/sms_tracking_1.png)
+
+1. I **[!UICONTROL Helper functions]** meny, klicka **[!UICONTROL URL function]** och sedan markera **[!UICONTROL Add URL]**.
+
+   ![](assets/sms_tracking_2.png)
+
+1. I `originalUrl` klistra in den URL som du vill förkorta.
+
+1. Klicka **[!UICONTROL Save]** och kontrollera meddelandet i förhandsgranskningen. Du kan använda **[!UICONTROL Simulate content]** för att förhandsgranska dina förkortade URL:er eller personaliserat innehåll.
 
    ![](assets/sms-content-preview.png)
 
 Nu kan du testa och skicka SMS-meddelanden till din målgrupp. [Läs mer](send-sms.md)
+När ni har skickat det kan ni mäta effekten av ert SMS i kampanjrapporten eller reserapporten. Mer information om rapportering finns i [det här avsnittet](../reports/campaign-global-report.md#sms-tab).
 
 >[!NOTE]
 >

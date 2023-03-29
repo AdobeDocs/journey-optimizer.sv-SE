@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 925494b6-e08a-4bd3-8a2f-96a5d9cbc387
-source-git-commit: 0ec122bbf134c41f95755a3b6f08eb7ef68506df
+source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '806'
 ht-degree: 1%
 
 ---
@@ -135,7 +135,7 @@ Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL SMS]** -fliken inne
 
 +++Läs mer om de olika mätvärden och widgetar som är tillgängliga för SMS-rapporten.
 
-The **[!UICONTROL SMS - Sending statistics]** tabellen visar hur framgångsrik leveransen är:
+The **[!UICONTROL SMS - Statistics]** tabellen visar hur framgångsrik leveransen är:
 
 * **[!UICONTROL Targeted]**: Antal användarprofiler som kvalificerar sig som målprofiler för den här leveransen.
 
@@ -148,6 +148,8 @@ The **[!UICONTROL SMS - Sending statistics]** tabellen visar hur framgångsrik l
 * **[!UICONTROL Bounces]**: Totalt antal fel som ackumulerats under leverans och automatisk returbearbetning.
 
 * **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
+
+* **[!UICONTROL Clicks]**: Totalt antal URL-besök.
 
 The **[!UICONTROL SMS Performance by date]** widgeten visar huvudinformationen i förhållande till meddelandet med ett diagram:
 

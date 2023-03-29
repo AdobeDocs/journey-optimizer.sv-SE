@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 8dd48bb2-a805-4c46-a16c-c68173a9ac08
-source-git-commit: ee2c3c5d356bddf622da2d9313ad7e0511be3092
+source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '1027'
 ht-degree: 2%
 
 ---
@@ -38,6 +38,8 @@ En detaljerad lista över alla mätvärden som är tillgängliga i Adobe Journey
 
 Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort. Om du ändrar widgetarna påverkas bara den aktuella användarens kontrollpanel. Andra användare ser sina egna kontrollpaneler eller de som har angetts som standard.
 
+1. Från **[!UICONTROL Actions]** väljer du om du vill rapportera en viss åtgärd på dina resor.
+
 1. Välj om du vill utesluta testhändelser från dina rapporter med hjälp av alternativfältet. Mer information om testhändelser finns i [den här sidan](../building-journeys/testing-the-journey.md).
 
    Observera att **[!UICONTROL Exclude test events]** alternativet är bara tillgängligt för reserapporter.
@@ -57,6 +59,10 @@ Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller 
    ![](assets/report_modify_9.png)
 
 1. När du är nöjd med visningsordningen och widgetarnas storlek klickar du på **[!UICONTROL Save]**.
+
+1. Om du vill anpassa hur data visas kan du växla mellan olika visualiseringsalternativ, som diagram, tabeller och dondiagram.
+
+   ![](assets/report_modify_11.png)
 
 Instrumentpanelen har nu sparats. Dina olika ändringar kommer att tillämpas på nytt för senare användning av dina liverapporter. Använd **[!UICONTROL Reset]** för att återställa standardordningen för widgetar och widgetar.
 

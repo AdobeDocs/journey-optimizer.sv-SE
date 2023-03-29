@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 4bcdd5a5d6161aea70939fc4f8a90f6e607b02f4
+source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,7 @@ Prestandaskydd och statiska gränser för beslut finns listade i [Produktbeskriv
 * Det segment och namnutrymme som valts i **Segmentkvalificering** (första noden) kan inte ändras i nya versioner.
 * Regeln för återinträde måste vara densamma i alla reseversioner.
 * En resa som börjar med en **Läs segment** kan inte börja med en annan händelse i nästa version.
+* Du kan inte skapa en ny version av en lässegmentsresa med inkrementell läsning. Du måste duplicera resan.
 
 ### Anpassade åtgärder {#custom-actions-g}
 
