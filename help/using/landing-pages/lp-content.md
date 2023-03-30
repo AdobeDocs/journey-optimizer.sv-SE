@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, sida, formulär, komponent
 exl-id: 5bf023b4-4218-4110-b171-3e70e0507fca
-source-git-commit: 339320940a24d04bf89a5aced42841e57d152f38
+source-git-commit: abf0a3f87baf9aa822e2f4aa5a90777359767541
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -93,7 +93,19 @@ Använd **[!UICONTROL Form]** -komponenten. För att göra detta, följ nedanst�
 
    ![](assets/lp_designer-form-checkbox-2.png)
 
-1. När du har lagt till alla önskade kryssrutor klickar du på **[!UICONTROL Call to action]** för att expandera motsvarande avsnitt. Här kan du definiera hur knappen ska fungera i **[!UICONTROL Form]** -komponenten.
+1. Du kan också lägga till en **[!UICONTROL Text field]**.
+
+   ![](assets/lp_designer-form-add-text-field.png)
+
+   * Ange **[!UICONTROL Label]** som visas ovanpå fältet i formuläret.
+
+   * Ange **[!UICONTROL Placeholder]** text. Den visas i fältet innan användaren fyller i fältet.
+
+   * Markera **[!UICONTROL Make form field mandatory]**-alternativet om det behövs.  I så fall kan landningssidan endast skickas om användaren har fyllt i detta fält. Om ett obligatoriskt fält inte är ifyllt visas ett felmeddelande när användaren skickar sidan.
+
+   ![](assets/lp_designer-form-text-field.png)
+
+1. När du har lagt till alla önskade kryssrutor och/eller textfält klickar du på **[!UICONTROL Call to action]** för att expandera motsvarande avsnitt. Här kan du definiera hur knappen ska fungera i **[!UICONTROL Form]** -komponenten.
 
    ![](assets/lp_designer-form-call-to-action.png)
 
