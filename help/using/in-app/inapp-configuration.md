@@ -3,21 +3,16 @@ title: Konfiguration i appen
 description: Lär dig hur du konfigurerar miljön för att skicka meddelanden i appen med Journey Optimizer
 role: Admin
 level: Intermediate
-badge: label="Beta" type="Informative"
 keywords: in-app, meddelande, konfiguration, plattform
 exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
-source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
+source-git-commit: e35aeba17f45145cc7712740cbcf1f0e169760fc
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 2%
+source-wordcount: '266'
+ht-degree: 3%
 
 ---
 
 # Konfigurera kanal i appen {#inapp-configuration}
-
->[!AVAILABILITY]
->
->Funktionen i appen är för närvarande endast tillgänglig som betaversion för utvalda användare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
 
 Innan du skickar meddelanden i appen måste du konfigurera din app-kanal i [!DNL Adobe Experience Platform Data Collection].
 

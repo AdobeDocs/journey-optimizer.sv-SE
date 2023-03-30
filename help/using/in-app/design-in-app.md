@@ -5,21 +5,16 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-badge: label="Beta" type="Informative"
 keywords: i appen, meddelande, design, formatering
 exl-id: 7d7aa721-96aa-4ebc-a51c-e693f893f34f
-source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
+source-git-commit: e35aeba17f45145cc7712740cbcf1f0e169760fc
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 8%
+source-wordcount: '789'
+ht-degree: 9%
 
 ---
 
 # Designa ditt innehåll i appen {#design-content}
-
->[!AVAILABILITY]
->
->Funktionen i appen är för närvarande endast tillgänglig som betaversion för utvalda användare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
 
 Du kan redigera innehållet i appen för att konfigurera upplevelsealternativ, inklusive alternativen för meddelandelayout och visning, text och knapp.
 

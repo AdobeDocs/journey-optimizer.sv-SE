@@ -4,10 +4,10 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: d0ce2c6f4f9ad46a74d3be7864dbfd23c941ee55
+source-git-commit: e35aeba17f45145cc7712740cbcf1f0e169760fc
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 7%
+source-wordcount: '1435'
+ht-degree: 8%
 
 ---
 
@@ -29,24 +29,23 @@ Informationen nedan kan komma att ändras utan föregående meddelande fram till
 
 ### Nya funktioner{#mar-2023-features}
 
-<!--
 <table>
 <thead>
 <tr>
-<th><strong>In-app channel (General Availability)</strong><br/></th>
+<th><strong>Kanal i appen (allmän tillgänglighet)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now send personalized In-app messages to your app users within a campaign. Use Journey Optimizer to design notifications and customize the message layout, display, text, and buttons to create a seamless experience.</p>
+<p>Du kan nu skicka personaliserade meddelanden i appen till appanvändarna inom en kampanj. Använd Journey Optimizer för att utforma meddelanden och anpassa meddelandelayout, visning, text och knappar för att skapa en smidig upplevelse.</p>
 <img src="assets/do-not-localize/in-app.gif"/>
-<p>For more information, refer to the <a href="../in-app/get-started-in-app.md">detailed documentation</a>.</p>
+<p>Mer information finns i den <a href="../in-app/get-started-in-app.md">detaljerade dokumentationen</a>.</p>
 </tr>
 </tbody>
 </table>
 
-
+<!--
 <table>
 <thead>
 <tr>

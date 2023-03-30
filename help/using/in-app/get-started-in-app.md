@@ -5,21 +5,16 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-badge: label="Beta" type="Informative"
 keywords: i appen, meddelande, skapa, börja
 exl-id: 51562843-7b50-4eb5-bf79-5ce03f7549cb
-source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
+source-git-commit: e35aeba17f45145cc7712740cbcf1f0e169760fc
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 3%
+source-wordcount: '171'
+ht-degree: 4%
 
 ---
 
 # Kom igång med kanalen i appen {#gs-in-app}
-
->[!AVAILABILITY]
->
->Funktionen i appen är för närvarande endast tillgänglig som betaversion för utvalda användare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
 
 Meddelanden i appen är meddelanden som kan skickas till användare i appen, och som vägleder dem till specifika intressepunkter. Dessa meddelanden kan användas för olika syften, t.ex. för att marknadsföra nya funktioner, presentera specialerbjudanden eller underlätta för användarna att komma igång. Genom att utnyttja meddelanden i appen kan ni effektivt interagera med er målgrupp och styra dem mot viktiga aspekter av er applikation.
 
