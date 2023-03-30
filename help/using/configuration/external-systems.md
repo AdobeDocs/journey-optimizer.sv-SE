@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
+source-git-commit: 65da82fd67442cfa2b5d45ec753fb3c5a86d4cc7
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1197'
 ht-degree: 1%
 
 ---
@@ -52,6 +52,8 @@ Mer information om hur du arbetar med API:erna finns i följande avsnitt:
 
 * [API för begränsning](capping.md)
 * [Begränsnings-API](throttling.md)
+
+En detaljerad beskrivning av API:erna finns i [Dokumentation för Adobe Journey Optimizer API:er](https://developer.adobe.com/journey-optimizer-apis/references/journeys/)
 
 ### Datakällor och kapacitet för anpassade åtgärder {#capacity}
 
