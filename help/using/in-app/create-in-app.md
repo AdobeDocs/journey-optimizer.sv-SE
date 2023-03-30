@@ -7,16 +7,14 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: b3b79fe2-7db3-490d-9c3d-87267aa55eea
-source-git-commit: e35aeba17f45145cc7712740cbcf1f0e169760fc
+source-git-commit: c70b782b077b57485e7a40ec9f159832604f76e5
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 3%
+source-wordcount: '350'
+ht-degree: 2%
 
 ---
 
 # Skapa ett meddelande i appen {#create-in-app}
-
-## Skapa en kampanj och ett meddelande i appen{#create-in-app-in-a-campaign}
 
 Följ stegen nedan för att skapa ett meddelande i appen:
 
@@ -61,56 +59,21 @@ Följ stegen nedan för att skapa ett meddelande i appen:
 
    ![](assets/in-app-schedule.png)
 
-1. Nu kan du börja designa ditt innehåll med **[!UICONTROL Edit content]** -knappen.
+1. Nu kan du börja designa ditt innehåll med **[!UICONTROL Edit content]** -knappen. [Läs mer](design-in-app.md)
 
    ![](assets/in_app_create_4.png)
 
-## Skicka meddelanden i appen{#in-app-send}
-
-### Förhandsgranska på enhet {#preview-device}
-
-Du kan förhandsgranska meddelandet i appen på en viss enhet.
-
-1. Klicka på **[!UICONTROL Preview on device]**.
-
-   ![](assets/in_app_create_6.png)
-
-1. Från **[!UICONTROL Connect to device]** fönster, klicka **[!UICONTROL Start]**.
-
-1. Skriv i **[!UICONTROL Base URL]** av programmet och klicka på **[!UICONTROL Next]**.
-
-   ![](assets/in_app_create_7.png)
-
-1. Skanna QR-koden med enheten och ange den PIN-kod som visas.
-
-Ditt meddelande i appen kan nu utlösas direkt på din enhet så att du kan förhandsgranska och granska meddelandet på en faktisk enhet.
-
-### Granska och aktivera meddelanden i appen{#in-app-review}
-
-När ditt meddelande i appen har skapats och dess innehåll har definierats och anpassats kan du granska och aktivera det.
-
-Gör så här:
-
-1. Använd **[!UICONTROL Review to activate]** om du vill visa en sammanfattning av meddelandet.
-
-   Sammanfattningen gör att du kan ändra kampanjen om det behövs och kontrollera om någon parameter är felaktig eller saknas.
-
-   ![](assets/in_app_create_5.png)
-
-1. Kontrollera att kampanjen är korrekt konfigurerad och klicka sedan på **[!UICONTROL Activate]**.
-
-Din kampanj är nu aktiverad. Det meddelande i appen som konfigurerats i kampanjen skickas omedelbart, eller på det angivna datumet.
-
-När ni har skickat dem kan ni mäta effekten av era meddelanden i appen i kampanjrapporten eller reserapporten. Mer information om rapportering finns i [det här avsnittet](../reports/campaign-global-report.md#inapp-report).
-
-**Relaterade ämnen:**
-
-* [Design In-app-meddelande](design-in-app.md)
-* [Rapport i appen](../reports/campaign-global-report.md#inapp-report)
-* [Konfiguration i appen](inapp-configuration.md)
 
 ## Instruktionsvideo{#video}
 
 I videon nedan visas hur du skapar, konfigurerar och publicerar meddelanden i appen i dina kampanjer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3410430?quality=12&learn=on)
+
+
+**Relaterade ämnen:**
+
+* [Design In-app-meddelande](design-in-app.md)
+* [Testa och skicka meddelandet i appen](send-in-app.md)
+* [Rapport i appen](../reports/campaign-global-report.md#inapp-report)
+* [Konfiguration i appen](inapp-configuration.md)
