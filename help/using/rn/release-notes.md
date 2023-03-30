@@ -4,10 +4,10 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 51f93270c969875e94cc3e98919149d67d764ed1
+source-git-commit: d0ce2c6f4f9ad46a74d3be7864dbfd23c941ee55
 workflow-type: tm+mt
-source-wordcount: '1429'
-ht-degree: 8%
+source-wordcount: '1389'
+ht-degree: 7%
 
 ---
 
@@ -45,25 +45,25 @@ Informationen nedan kan komma att ändras utan föregående meddelande fram till
 </tr>
 </tbody>
 </table>
--->
+
 
 <table>
 <thead>
 <tr>
-<th><strong>SMS-klickspårning</strong><br/></th>
+<th><strong>SMS click tracking</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Med SMS-klickspårning kan ni övervaka prestandan för era förkortade URL:er, identifiera vem som klickade på dem och använda dessa data för att rikta om kunderna med efterföljande kampanjer.</p>
+<p>With SMS click tracking, you can monitor the performance of your shortened URLs, identify who clicked on them, and use this data to retarget those customers with subsequent campaigns.</p>
 <img src="assets/do-not-localize/sms-tracking.gif"/>
-<p>Mer information finns i den <a href="../sms/create-sms.md#sms-content">detaljerade dokumentationen</a>.</p>
+<p>For more information, refer to the <a href="../sms/create-sms.md#sms-content">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
 </table>
-
+-->
 
 <table>
 <thead>
