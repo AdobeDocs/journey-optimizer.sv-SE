@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: dfaf887e-d4b3-45b0-8297-bffdb0abff4d
-source-git-commit: 8de851b42b92ca4632000698fa78278671dd848b
+source-git-commit: 51f93270c969875e94cc3e98919149d67d764ed1
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 3%
+source-wordcount: '526'
+ht-degree: 1%
 
 ---
 
@@ -46,6 +46,24 @@ Så här skapar du en placering:
    * **[!UICONTROL Description]**: En beskrivning av placeringen (valfritt).
 
    ![](../assets/offers_placement_creation_properties.png)
+
+
+1. The **[!UICONTROL Request settings]** och **[!UICONTROL Response format]** -avsnitten innehåller ytterligare parametrar:
+
+   * **[!UICONTROL Allow Duplicates across placements]**: Kontrollera om samma erbjudande kan erbjudas flera gånger på olika platser. Om det är aktiverat kommer systemet att överväga samma erbjudande för flera praktik. Som standard är parametern inställd på false.
+
+      Om det här alternativet är inställt på false för alla placeringar i en beslutsbegäran, ärver alla placeringar i begäran inställningen &quot;false&quot;.
+
+   * **[!UICONTROL Request offer]**: Som standard returneras ett erbjudande i beslutsomfånget för varje profil. Du kan justera antalet returnerade erbjudanden med det här alternativet. Om du till exempel väljer 2 visas de två bästa erbjudandena för det valda beslutsomfånget.
+
+   * **[!UICONTROL Include content]** / **[!UICONTROL Include metadata]**: Ange om erbjudandets innehåll och metadata ska returneras i API-svaret. Du kan endast inkludera alla metadata eller specifika fält. Som standard är Inkludera metadata inställt på true.
+   Dessa parametrar kan även anges direkt i din API-begäran om du arbetar med [Besluts-API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/offer-delivery-api/decisioning-api.html). Om du konfigurerar dem i användargränssnittet kan du spara tid eftersom du inte behöver skicka dem i varje API-begäran. Observera, att om du konfigurerar parametrarna både i användargränssnittet och i API-begäran, gäller värdena från API-begäran framför dem i gränssnittet.
+
+   >[!NOTE]
+   >
+   >Om du arbetar med [API för Edge Decisioning](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/offer-delivery-api/edge-decisioning-api.html?)kan du inte ange de här parametrarna i din begäran. Du måste definiera dem på den här skärmen.
+   >
+   >Om du arbetar med [API för gruppbeslut](../api-reference/offer-delivery-api/batch-decisioning-api.md)kan du ange de här parametrarna antingen på den här skärmen eller i din API-begäran. Om parametervärdena inte överensstämmer mellan skärmen och APi-begäran används värdena för begäran.
 
 1. Klicka på **[!UICONTROL Save]** för att bekräfta.
 
