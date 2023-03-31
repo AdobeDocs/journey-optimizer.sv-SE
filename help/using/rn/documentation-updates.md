@@ -4,9 +4,9 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
+source-git-commit: 2d2e5f6ef405c3c807993d19b93a599dc08989d8
 workflow-type: tm+mt
-source-wordcount: '2443'
+source-wordcount: '2497'
 ht-degree: 17%
 
 ---
@@ -17,10 +17,12 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 ## Mars 2023 {#march-2023}
 
+* Journey Optimizer schemaordlista är nu tillgänglig. Du hittar den fullständiga listan med fält och attribut för varje schema.  [Läs mer](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Mars 23-utgåvan finns utförlig i dokumentationen. [Läs mer](release-notes.md)
 * Ett steg har lagts till för att aktivera Adobe Analytics-event på dina resor. [Läs mer](../event/about-analytics.md)
 * Ett nytt avsnitt har skapats i beslutshanteringshandboken om hur man samlar in feedback från offera decisioningar i Adobe Experience Platform, inklusive vilka erbjudanden som visas och hur användare interagerar med dem. [Läs mer](../offers/data-collection/data-collection.md)
 * Ett nytt underavsnitt har lagts till i **Skapa beslut** för att förklara skillnaden mellan att utvärdera kriterier i en sekventiell ordning eller samtidigt. [Läs mer](../offers/offer-activities/create-offer-activities.md#evaluation-criteria-order)
+* Ett skyddsräcke har lagts till för att läsa segmentresor med stegvis läsning. Du kan inte skapa en ny version, du måste duplicera resan. [Läs mer](../start/guardrails.md#journey-versions-g)
 
 ## Februari 2023 {#feb-2023}
 
