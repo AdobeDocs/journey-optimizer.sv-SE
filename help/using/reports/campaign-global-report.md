@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: fa64f5b8-75f2-40e6-8566-5766fafe6cd6
-source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
+source-git-commit: 8a311d546829d0d80f32dfdddcdf30805688f757
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1685'
 ht-degree: 0%
 
 ---
@@ -145,10 +145,6 @@ The **[!UICONTROL Send time optimization]** information om leveransens framgång
 +++
 
 ## Fliken I appen {#inapp-global}
-
->[!IMPORTANT]
->
->Funktionen i appen är för närvarande endast tillgänglig som betaversion för utvalda användare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
 
 Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL In-app]** -fliken innehåller huvudinformationen om de leveranser i appen som skickas i kampanjen.
 
