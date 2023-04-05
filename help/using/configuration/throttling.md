@@ -6,9 +6,9 @@ description: Lär dig hur du arbetar med API:t för begränsning
 role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
-source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
+source-git-commit: 40afc1c0e0ae55dfbec45ff0b22170d6345a8e46
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '813'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,8 @@ Det här avsnittet innehåller global information om hur du arbetar med API:t. E
 >Endast en konfiguration är för närvarande tillåten per organisation. En konfiguration måste definieras i en produktionssandlåda (anges via x-sandbox-name i rubrikerna).
 >
 >En konfiguration används på organisationsnivå.
+>
+>När gränsvärdet i API:t har uppnåtts köas ytterligare händelser i upp till 6 timmar. Detta värde kan inte ändras.
 
 ## Beskrivning av begränsnings-API {#description}
 

@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: 65da82fd67442cfa2b5d45ec753fb3c5a86d4cc7
+source-git-commit: 40afc1c0e0ae55dfbec45ff0b22170d6345a8e46
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1201'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ När du konfigurerar en datakälla eller en åtgärd upprättar du en anslutning
 
 Journeys API:er har stöd för upp till 5 000 händelser per sekund, men vissa externa system eller API har kanske inte samma genomströmning. Om du vill förhindra att dessa system överbelastas kan du använda **Takning** och **Begränsning** API:er som begränsar antalet händelser som skickas per sekund.
 
-Varje gång ett API-anrop utförs via resor, skickas det via API-motorn. Om gränsvärdet i API:t nås, avvisas anropet antingen om du använder API:t för begränsning, eller köas och behandlas så snart som möjligt i den ordning de togs emot om du använder API:t för begränsning.
+Varje gång ett API-anrop utförs via resor, skickas det via API-motorn. Om gränsvärdet i API:t nås, avvisas anropet antingen om du använder API:t för begränsning, eller köas i upp till 6 timmar och behandlas så snart som möjligt i den ordning som de togs emot om du använder API:t för begränsning.
 
 Anta till exempel att du har definierat en begränsning eller begränsning på 100 anrop per sekund för det externa systemet. Ditt system anropas av en anpassad åtgärd på tio olika resor. Om en resa tar emot 200 samtal per sekund används de 100 tillgängliga kortplatserna och de 100 återstående kortplatserna tas bort eller köas. Eftersom den högsta nivån har överskridits kommer de övriga nio resorna inte att ha några platser kvar. Denna granularitet hjälper till att skydda det externa systemet från överbelastning och krascher.
 
