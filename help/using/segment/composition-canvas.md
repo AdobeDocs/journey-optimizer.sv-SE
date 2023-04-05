@@ -11,7 +11,7 @@ hide: true
 hidefromtoc: true
 exl-id: 3eb9466e-9d88-4470-a22f-5e24a29923ae
 badge: label="Beta" type="Informative"
-source-git-commit: 160e4ce03d3be975157c30fbe511875a85b00551
+source-git-commit: 242fd8dbb04d62b9ec838655985add4ea0d7b377
 workflow-type: tm+mt
 source-wordcount: '1310'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Tillgängliga aktiviteter är:
 
 * [Målgrupp](#audience): innehålla ytterligare profiler som tillhör en eller flera befintliga målgrupper,
 * [Exkludera](#exclude): utesluta profiler som tillhör en befintlig målgrupp eller utesluta profiler som bygger på specifika attribut,
-* [Förfina]{#enrich}: berika er målgrupp med ytterligare attribut från Adobe Experience Platform datauppsättningar,
+* [Förfina](#enrich): berika er målgrupp med ytterligare attribut från Adobe Experience Platform datauppsättningar,
 * [Rankning](#rank): rangordna profiler baserat på ett specifikt attribut, ange antalet profiler som ska behållas och inkluderas i din komposition,
 * [Dela](#split): dela upp kompositionen i flera banor baserat på slumpmässiga procentsatser eller attribut.
 
