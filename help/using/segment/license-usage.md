@@ -10,7 +10,7 @@ level: Beginner
 exl-id: 7e91face-c8f4-4e70-9123-9e36bae7e67e
 source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '116'
 ht-degree: 0%
 
 ---
@@ -25,10 +25,10 @@ Om du vill komma åt den här instrumentpanelen går du till **[!UICONTROL Admin
 
 >[!NOTE]
 >
->Om du vill kunna visa kontrollpanelen måste du ha [Visa kontrollpanel för licensanvändning](https://experienceleague.adobe.com/docs/experience-platform/dashboards/permissions.html?lang=en#available-permissions){target=&quot;_blank&quot;} behörighet.
+>Om du vill kunna visa kontrollpanelen måste du ha [Visa kontrollpanel för licensanvändning](https://experienceleague.adobe.com/docs/experience-platform/dashboards/permissions.html?lang=en#available-permissions){target="_blank"} behörighet.
 
 Läs mer i Adobe Experience Platform-dokumentationen:
 
-* [Översikt över kontrollpanelen för licensanvändning](https://experienceleague.adobe.com/docs/experience-platform/dashboards/guides/license-usage.html){target=&quot;_blank&quot;}
-* [Utforska kontrollpanelen för licensanvändning](https://experienceleague.adobe.com/docs/experience-platform/dashboards/guides/license-usage.html#exploring-the-license-usage-dashboard){target=&quot;_blank&quot;}
-* [Tillgängliga mått](https://experienceleague.adobe.com/docs/experience-platform/dashboards/guides/license-usage.html#available-metrics){target=&quot;_blank&quot;}
+* [Översikt över kontrollpanelen för licensanvändning](https://experienceleague.adobe.com/docs/experience-platform/dashboards/guides/license-usage.html){target="_blank"}
+* [Utforska kontrollpanelen för licensanvändning](https://experienceleague.adobe.com/docs/experience-platform/dashboards/guides/license-usage.html#exploring-the-license-usage-dashboard){target="_blank"}
+* [Tillgängliga mått](https://experienceleague.adobe.com/docs/experience-platform/dashboards/guides/license-usage.html#available-metrics){target="_blank"}

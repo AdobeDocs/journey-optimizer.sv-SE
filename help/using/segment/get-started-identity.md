@@ -9,7 +9,7 @@ level: Beginner
 exl-id: 90e892e9-33c2-4da5-be1d-496b42572897
 source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '342'
 ht-degree: 1%
 
 ---
@@ -24,13 +24,13 @@ I [!DNL Adobe Journey Optimizer], **Identiteter** länka konsumenter mellan olik
 
 ![](assets/identities-home.png)
 
-Läs mer om **Identitetstjänst** in [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=sv){target=&quot;_blank&quot;}.
+Läs mer om **Identitetstjänst** in [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=sv){target="_blank"}.
 
 ## Identitetsnamnutrymmen {#identity-namespaces}
 
 **Identitetsnamnutrymmen** är en komponent i identitetstjänsten som fungerar som indikatorer för det sammanhang som en identitet relateras till. De skiljer till exempel på värdet `name@email.com` som e-postadress eller `443522` som ett numeriskt CRM-ID. Att arbeta med identitetsnamnutrymmen kräver förståelse för de olika Adobe Experience Platform-tjänsterna. Innan du börjar arbeta med namnutrymmen bör du läsa dokumentationen för följande tjänster:
 
-Läs mer om **Identitetsnamnutrymmen** in [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html){target=&quot;_blank&quot;}.
+Läs mer om **Identitetsnamnutrymmen** in [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html){target="_blank"}.
 
 ## Identitetsdiagram{#id-graph}
 
@@ -38,4 +38,4 @@ The **Identitetsdiagram** är en karta över relationer mellan olika identiteter
 
 Identitetsdiagramvisningsprogrammet i [!DNL Adobe Journey Optimizer] Med användargränssnittet kan ni visualisera och bättre förstå vilka kundidentiteter som sammanfogas och på vilka sätt. Med visningsprogrammet kan du dra och interagera med olika delar av diagrammet, vilket gör att du kan undersöka komplexa identitetsförhållanden, felsöka mer effektivt och dra nytta av ökad genomskinlighet när det gäller hur informationen används.
 
-Läs mer om **Identitetsdiagram** in [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/identity/ui/identity-graph-viewer.html){target=&quot;_blank&quot;}.
+Läs mer om **Identitetsdiagram** in [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/identity/ui/identity-graph-viewer.html){target="_blank"}.

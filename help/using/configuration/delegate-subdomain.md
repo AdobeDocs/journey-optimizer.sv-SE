@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: underdomän, delegering, domän, DNS
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: 54ea3573e4fb6e24c3e56349292528bc6da42d67
+source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1740'
 ht-degree: 4%
 
 ---
@@ -72,6 +72,8 @@ Följ stegen nedan om du vill delegera en ny underdomän till Adobe helt:
    >[!CAUTION]
    >
    >Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.dincompany.com.
+   >
+   >Observera att underdomäner på flera nivåer, som email.marketing.your.com, inte stöds för närvarande.
 
    <!--Capital letters are not allowed in subdomains. TBC by PM-->
 
@@ -142,6 +144,8 @@ Följ stegen nedan för att delegera en underdomän med CNAME:
    >[!CAUTION]
    >
    >Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.dincompany.com.
+   >
+   >Observera att underdomäner på flera nivåer, som email.marketing.your.com, inte stöds för närvarande.
 
    <!--Capital letters are not allowed in subdomains. TBC by PM-->
 

@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: 289aac5d-6cdb-411f-985e-3acef58050a8
 source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '332'
 ht-degree: 4%
 
 ---
@@ -30,7 +30,7 @@ I det här exemplet kommer vi att skapa ett segment för alla kunder som bor i A
 
    ![](assets/create-segment.png)
 
-   På segmentdefinitionsskärmen kan du konfigurera alla obligatoriska fält för att definiera ditt segment. Lär dig konfigurera segment i [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html){target=&quot;_blank&quot;}.
+   På segmentdefinitionsskärmen kan du konfigurera alla obligatoriska fält för att definiera ditt segment. Lär dig konfigurera segment i [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html){target="_blank"}.
 
    ![](assets/segment-builder.png)
 
@@ -42,7 +42,7 @@ I det här exemplet kommer vi att skapa ett segment för alla kunder som bor i A
 
    >[!NOTE]
    >
-   >Observera att fälten som är tillgängliga i den vänstra rutan varierar beroende på hur **Individuell XDM-profil** och **XDM ExperienceEvent** scheman har konfigurerats för din organisation.  Läs mer i [XDM-dokumentation (Experience Data Model)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target=&quot;_blank&quot;}.
+   >Observera att fälten som är tillgängliga i den vänstra rutan varierar beroende på hur **Individuell XDM-profil** och **XDM ExperienceEvent** scheman har konfigurerats för din organisation.  Läs mer i [XDM-dokumentation (Experience Data Model)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}.
 
    ![](assets/drag-fields.png)
 

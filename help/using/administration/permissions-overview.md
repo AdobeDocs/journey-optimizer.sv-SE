@@ -12,7 +12,7 @@ exl-id: b8e266b1-d8eb-4c77-9341-9761b82609b0
 source-git-commit: 16738786e4ebeef3417fd0f6e5be741b348c2744
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 11%
+ht-degree: 19%
 
 ---
 
@@ -30,7 +30,7 @@ Användarhantering i [!DNL Journey Optimizer] bygger på tre koncept:
 
 * **[!UICONTROL Sandbox]**: Virtuella sandlådor som partitionerar instanser i separata, isolerade virtuella miljöer. Se [Använda sandlådor](sandboxes.md)
 
-Varje koncept kan hanteras av **[!UICONTROL Product administrators]** som har tillgång till Admin Console. [Läs mer om Adobe Admin Console](https://helpx.adobe.com/enterprise/managing/user-guide.html).
+Varje koncept kan hanteras av **[!UICONTROL Product administrators]** som har tillgång till Admin Console. [Läs mer om Adobe Admin Console](https://helpx.adobe.com/se/enterprise/managing/user-guide.html).
 
 ![](assets/do-not-localize/permissions_2.png)
 

@@ -9,7 +9,7 @@ level: Intermediate
 exl-id: a85de6a9-ece2-43da-8789-e4f8b0e4a0e7
 source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
 workflow-type: tm+mt
-source-wordcount: '1404'
+source-wordcount: '1365'
 ht-degree: 0%
 
 ---
@@ -29,17 +29,17 @@ Användningen av automatiska optimeringsmodeller för beslutshantering omfattas 
 
 Följande termer är användbara när du diskuterar automatisk optimering:
 
-* **Flerarmad bandit**: A [multiväpnad bandit](https://en.wikipedia.org/wiki/Multi-armed_bandit){target=&quot;_blank&quot;} när det gäller optimering balanserar undersökande inlärning och utnyttjande av inlärningen.
+* **Flerarmad bandit**: A [multiväpnad bandit](https://en.wikipedia.org/wiki/Multi-armed_bandit){target="_blank"} en strategi för optimering som ger en balans mellan undersökande och utnyttjande av det inlärningen.
 
 * **Thomson sampling**: Thompson-sampling är en algoritm för onlinebeslutsproblem där åtgärder vidtas sekventiellt på ett sätt som måste balansera mellan att utnyttja det som är känt för att maximera omedelbara prestanda och investera för att samla in ny information som kan förbättra framtida prestanda. [Läs mer](#thompson-sampling)
 
-* [**Betadistribution**](https://en.wikipedia.org/wiki/Beta_distribution){target=&quot;_blank&quot;}: Uppsättning kontinuerlig [sannolikhetsfördelningar](https://en.wikipedia.org/wiki/Probability_distribution){target=&quot;_blank&quot;} definierad i intervallet [0, 1] [parametriserad](https://en.wikipedia.org/wiki/Statistical_parameter){target=&quot;_blank&quot;} med två positiva [formparametrar](https://en.wikipedia.org/wiki/Shape_parameter){target=&quot;_blank&quot;}.
+* [**Betadistribution**](https://en.wikipedia.org/wiki/Beta_distribution){target="_blank"}: Set of continuous [probability distributions](https://en.wikipedia.org/wiki/Probability_distribution){target="_blank"} defined on the interval [0, 1] [parameterized](https://en.wikipedia.org/wiki/Statistical_parameter){target="_blank"} by two positive [shape parameters](https://en.wikipedia.org/wiki/Shape_parameter){target="_blank"}.
 
 ## Thompson Sampling {#thompson-sampling}
 
 Den algoritm som ligger till grund för automatisk optimering är **Thompson sampling**. I det här avsnittet diskuterar vi intuitionen bakom Thompson-provtagning.
 
-[Thompson sampling](https://en.wikipedia.org/wiki/Thompson_sampling){target=&quot;_blank&quot;}, eller Bayesian bandits, är en bayesisk lösning på det flerväpnade bandit-problemet.  Grundtanken är att behandla den genomsnittliga belöningen? från varje erbjudande som **random-variabel** och använda de data vi hittills har samlat in för att uppdatera vår&quot;tro&quot; om den genomsnittliga belöningen. Den här&quot;tron&quot; representeras matematiskt av en **sannolikhetsfördelning efter allvarlighetsgrad** - i stort sett ett värdeintervall för den genomsnittliga belöningen, tillsammans med den sannolikhet (eller sannolikhet) som belöningen har för varje erbjudande. För varje beslut kommer vi att **ta prov på en punkt från var och en av dessa belöningar** och välj det erbjudande vars provbelöning hade det högsta värdet.
+[Thompson sampling](https://en.wikipedia.org/wiki/Thompson_sampling){target="_blank"}, eller baysiska banditer, är en bayesisk lösning på problemet med den flerarmade banken.  Grundtanken är att behandla den genomsnittliga belöningen? från varje erbjudande som **random-variabel** och använda de data vi hittills har samlat in för att uppdatera vår&quot;tro&quot; om den genomsnittliga belöningen. Den här&quot;tron&quot; representeras matematiskt av en **sannolikhetsfördelning efter allvarlighetsgrad** - i stort sett ett värdeintervall för den genomsnittliga belöningen, tillsammans med den sannolikhet (eller sannolikhet) som belöningen har för varje erbjudande. För varje beslut kommer vi att **ta prov på en punkt från var och en av dessa belöningar** och välj det erbjudande vars provbelöning hade det högsta värdet.
 
 Denna process illustreras i bilden nedan, där vi har tre olika erbjudanden. Till att börja med har vi inga bevis från data och vi antar att alla erbjudanden har en enhetlig fördelning efter belöningen. Vi tar ett prov från varje offerts fördelning efter belöningen. Det exempel som valts ut från distributionen av erbjudandet 2 har det högsta värdet. Detta är ett exempel på **prospektering**. När vi har visat erbjudandet 2 samlar vi in eventuell belöning (t.ex. konvertering/ingen konvertering) och uppdaterar posteriordistributionen av erbjudandet 2 med hjälp av Bayes Theorem enligt nedan.  Vi fortsätter med den här processen och uppdaterar efterhandsfördelningen varje gång ett erbjudande visas och belöningen samlas in. I den andra siffran väljs erbjudande 3 - trots att erbjudandet 1 har den högsta genomsnittliga belöningen (den posteriorbelöningsfördelningen ligger längst till höger) har provtagningsprocessen från varje distribution lett till att vi valt ett till synes ooptimalt erbjudande 3. På så sätt ger vi oss själva möjlighet att lära oss mer om den verkliga belöningsfördelningen i Erbjudande 3.
 
@@ -71,7 +71,7 @@ Automatisk optimering är utformat för att ta hänsyn till binära belöningar 
 
 ![](../assets/ai-ranking-beta-distribution.png)
 
-Sannolikhetsfunktionen, som vi förklarade ovan, är baserad på en Binomial-distribution, med framgångar (konverteringar) och fel (inga konverteringar) och q är en [random-variabel](https://en.wikipedia.org/wiki/Random_variable){target=&quot;_blank&quot;} med [betadistribution](https://en.wikipedia.org/wiki/Beta_distribution){target=&quot;_blank&quot;}.
+Sannolikhetsfunktionen, som vi förklarade ovan, är baserad på en Binomial-distribution, med framgångar (konverteringar) och fel (inga konverteringar) och q är en [random-variabel](https://en.wikipedia.org/wiki/Random_variable){target="_blank"} with a [beta distribution](https://en.wikipedia.org/wiki/Beta_distribution){target="_blank"}.
 
 Föregående modell baseras på betadistribution och den posteriala fördelningen har följande format:
 
@@ -85,8 +85,8 @@ För automatisk optimering, som i exemplet ovan, börjar vi med en tidigare dist
 **Relaterade ämnen**:
 
 Mer information om Thompson-provtagning finns i följande forskningsrapporter:
-* [An Empirical Evaluation of Thompson Sampling](https://proceedings.neurips.cc/paper/2011/file/e53a0a2978c28872a4505bdb51db06dc-Paper.pdf){target=&quot;_blank&quot;}
-* [Analys av Thompson Sampling för det multiväpnade Bandit-problemet](http://proceedings.mlr.press/v23/agrawal12/agrawal12.pdf){target=&quot;_blank&quot;}
+* [An Empirical Evaluation of Thompson Sampling](https://proceedings.neurips.cc/paper/2011/file/e53a0a2978c28872a4505bdb51db06dc-Paper.pdf){target="_blank"}
+* [Analys av Thompson Sampling för det multiväpnade Bandit-problemet](http://proceedings.mlr.press/v23/agrawal12/agrawal12.pdf){target="_blank"}
 
 ## Problem med kallstart {#cold-start}
 

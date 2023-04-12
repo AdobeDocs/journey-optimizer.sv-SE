@@ -78,7 +78,7 @@ Detta är de fält som förväntas av Adobe Campaign Standard-meddelandet. Dessa
 
 ## Push {#section_im3_hvf_nhb}
 
-Innan du använder push-aktiviteten måste din mobilapp konfigureras tillsammans med Campaign Standard för att skicka push-meddelanden. Använd den här [artikel](https://helpx.adobe.com/se/campaign/kb/integrate-mobile-sdk.html) för att vidta nödvändiga implementeringsåtgärder för mobilen.
+Innan du använder push-aktiviteten måste din mobilapp konfigureras tillsammans med Campaign Standard för att skicka push-meddelanden. Använd den här [artikel](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/configuring-mobile/supported-mobile-use-cases.html?lang=sv) för att vidta nödvändiga implementeringsåtgärder för mobilen.
 
 Först måste du välja en mobilapp i listrutan och ett transaktionsmeddelande.
 

@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: bd5e053a-69eb-463b-add3-8b9168c8e280
 source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1317'
 ht-degree: 2%
 
 ---
@@ -27,9 +27,9 @@ Det finns flera sätt att skapa testprofiler. På den här sidan hittar du infor
 
    Förutom dessa två metoder har Adobe Journey Optimizer en [produktanvändningsfall](#use-case-1) för att underlätta skapandet av testprofiler.
 
-Du kan också överföra en json-fil i en befintlig datauppsättning. Mer information finns i [Dokumentation för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html#add-data-to-dataset){target=&quot;_blank&quot;}.
+Du kan också överföra en json-fil i en befintlig datauppsättning. Mer information finns i [Dokumentation för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html#add-data-to-dataset){target="_blank"}.
 
-Observera att det liknar att skapa en testprofil att skapa vanliga profiler i Adobe Experience Platform. Mer information finns i [Kundprofildokumentation i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target=&quot;_blank&quot;}.
+Observera att det liknar att skapa en testprofil att skapa vanliga profiler i Adobe Experience Platform. Mer information finns i [Kundprofildokumentation i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}.
 
 ➡️ [Lär dig hur du skapar testprofiler i den här videon](#video)
 
@@ -65,7 +65,7 @@ När du är klar klickar du på **[!UICONTROL Add field groups]**: listan över 
 
 >[!NOTE]
 >
->Mer information om att skapa scheman finns i [XDM-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#prerequisites){target=&quot;_blank&quot;}.
+>Mer information om att skapa scheman finns i [XDM-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#prerequisites){target="_blank"}.
 
 Då måste du **skapa datauppsättningen** där profilerna importeras. Följ de här stegen:
 
@@ -82,7 +82,7 @@ Då måste du **skapa datauppsättningen** där profilerna importeras. Följ de 
 
 >[!NOTE]
 >
-> Mer information om hur du skapar datauppsättningar finns i [Katalogtjänstdokumentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#getting-started){target=&quot;_blank&quot;}.
+> Mer information om hur du skapar datauppsättningar finns i [Katalogtjänstdokumentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#getting-started){target="_blank"}.
 
 ## Exempel på användning i produkten{#use-case-1}
 
@@ -177,11 +177,11 @@ I Adobe Experience Platform kan du skapa profiler genom att överföra en CSV-fi
 Testprofilerna läggs till och kan nu användas när du testar en resa. Se [det här avsnittet](../building-journeys/testing-the-journey.md).
 >[!NOTE]
 >
-> Mer information om CSV-import finns i [Dokumentation för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html#tutorials){target=&quot;_blank&quot;}.
+> Mer information om CSV-import finns i [Dokumentation för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html#tutorials){target="_blank"}.
 
 ## Skapa testprofiler med API-anrop{#create-test-profiles-api}
 
-Du kan också skapa testprofiler via API-anrop. Läs mer i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target=&quot;_blank&quot;}.
+Du kan också skapa testprofiler via API-anrop. Läs mer i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}.
 
 Du måste använda ett profilschema som innehåller fältgruppen &quot;Profiltestinformation&quot;. Flaggan testProfile ingår i den här fältgruppen.
 När du skapar en profil måste du skicka värdet: testProfile = true.

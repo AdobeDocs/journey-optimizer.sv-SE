@@ -1,6 +1,6 @@
 ---
 title: Kom igång med Beslutshantering
-description: Läs om hur Adobe Journey Optimizer kan hjälpa er att skicka rätt erbjudande till era kunder vid rätt tidpunkt
+description: Lär dig om hur Adobe Journey Optimizer kan hjälpa dig att skicka rätt erbjudande till kunderna vid rätt tidpunkt
 feature: Offers
 topic: Integrations
 role: User
@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 659984cb-b232-47ba-9f5a-604bf97a5e92
 source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 46%
+source-wordcount: '933'
+ht-degree: 48%
 
 ---
 
@@ -37,7 +37,7 @@ Några fördelar:
 
 >[!NOTE]
 >
->Om du är en [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target=&quot;_blank&quot;}-användare använder **offer decisioning** för programtjänsten gäller alla beslutsfunktioner som beskrivs i detta avsnitt även dig.
+>Om du är en [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} använder **offer decisioning** för programtjänsten gäller alla beslutsfunktioner som beskrivs i detta avsnitt även dig.
 
 ## Om erbjudanden och beslut {#about-offers-and-decisions}
 
@@ -69,7 +69,7 @@ Beslutshanteringsfunktionerna och integrationen med Adobe Experience Platform g�
 
 ## Bevilja åtkomst till beslutsledning {#granting-acess-to-decision-management}
 
-Behörigheter att komma åt och använda beslutsfunktioner hanteras med [Adobe Admin Console](https://helpx.adobe.com/enterprise/managing/user-guide.html){target=&quot;_blank&quot;}.
+Behörigheter att komma åt och använda beslutsfunktioner hanteras med [Adobe Admin Console](https://helpx.adobe.com/se/enterprise/managing/user-guide.html){target="_blank"}.
 
 Om du vill ge åtkomst till funktionen Beslutshantering måste du skapa en **[!UICONTROL Product profile]** och tilldela användarna motsvarande behörigheter. Läs mer om hantering [!DNL Journey Optimizer] användare och behörigheter i [det här avsnittet](../../administration/permissions.md).
 
