@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: e-post, börja, skapa, förhandsgranska
 exl-id: 621c4256-449d-4376-96cd-02cbdcd4de05
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: ce6dc6eec59ad61bec2c00e811f6f6e006eb20da
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '148'
 ht-degree: 12%
 
 ---
@@ -26,7 +26,7 @@ Använd [!DNL Journey Optimizer] för att skicka e-postmeddelanden till kunderna
 
 E-postleveranser kan skapas:
 
-* I en **Resa**: när du har lagt till en **[!UICONTROL Email]** -aktiviteten på din resa och definierade grundläggande inställningar, använd **[!UICONTROL Actions: Email]** höger ruta för att skapa innehållet för SMS-meddelandet.
+* I en **Resa**: när du har lagt till en **[!UICONTROL Email]** -aktiviteten på din resa och definierade grundläggande inställningar, använd **[!UICONTROL Actions: Email]** höger ruta för att skapa innehållet för meddelandet.
 
    Mer information om hur du konfigurerar din resa finns i [page](../building-journeys/journey-gs.md).
 
