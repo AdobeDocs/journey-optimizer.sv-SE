@@ -9,7 +9,7 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, bibliotek, personalisering
 exl-id: 74b1be18-4829-4c67-ae45-cf13278cda65
-source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
+source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
@@ -31,9 +31,7 @@ Om du vill komma åt de sparade uttrycken klickar du på **[!UICONTROL Library]*
 
 >[!NOTE]
 >
->Du kan använda infoknappen för att få mer information om innehållet i ett sparat uttryck. Om du har behörighet att hantera biblioteksobjekt visas informationsknappen på ellipsmenyn.
-
-![](assets/library-list.png)
+>Du kan hämta mer information om innehållet i ett sparat uttryck från ellipsknappen. Observera att informationsknappen visas i ellipsen om du har behörighet att hantera biblioteksobjekt.
 
 Klicka på + för att infoga uttrycket i redigeraren. Sedan kan ni anpassa och validera ert personaliseringsinnehåll som vanligt. [Läs mer](../personalization/personalization-build-expressions.md)
 

@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: stock, bilder, integration, foton
 exl-id: 0715f65f-04bd-4dc2-a152-98111f4c42e6
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '546'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,6 @@ Lägga till bilder från [!DNL Adobe Stock] Följ stegen nedan om du vill visa d
 
    Om bilden du valde inte är licensierad måste du [skaffa licensen](#license-stock-image).
 
-
 ## Söka efter liknande foton {#similar-stock-image}
 
 Du kan ersätta en befintlig bild i ditt e-postinnehåll med ett foto från [!DNL Adobe Stock]. Observera att det här alternativet är tillgängligt för alla bilder: licensierade/olicensierade Stock-bilder och bilder från din Assets-mapp.
@@ -68,7 +67,7 @@ Följ stegen nedan om du vill bläddra bland liknande foton:
 
    Om bilden du valde inte är licensierad måste du [skaffa licensen](#license-stock-image).
 
-1. Anpassa bilden, om det behövs, med **[!UICONTROL Components settings]** -menyn. [Läs mer om komponentinställningar](content-components.md).
+1. Anpassa bilden, om det behövs, med **[!UICONTROL Settings]** och **[!UICONTROL Styles]** -tabbar. [Läs mer om komponentinställningar](content-components.md).
 
 ## Hämta licensen från [!DNL Adobe Stock] {#license-stock-image}
 
@@ -80,7 +79,7 @@ Följ stegen nedan för att licensiera och hämta din bild:
 
    ![](assets/stock-license-icon.png)
 
-   Du omdirigeras sedan till [!DNL Adobe Stock] till, men inte licensen.
+   Du omdirigeras sedan till [!DNL Adobe Stock] för att köpa licensen.
 
    ![](assets/stock-license-photo.png)
 

@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, publicering
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: 339320940a24d04bf89a5aced42841e57d152f38
+source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
 workflow-type: tm+mt
 source-wordcount: '1499'
 ht-degree: 1%
@@ -209,15 +209,15 @@ När inställningarna för landningssidan och innehållet har definierats kan du
 >
 >Du måste ha testprofiler tillgängliga för att kunna förhandsgranska dina meddelanden och skicka korrektur. Lär dig hur [skapa testprofiler](../segment/creating-test-profiles.md).
 
-1. I landningssidans gränssnitt klickar du på **[!UICONTROL Preview & test]** för att komma åt valet av testprofil.
+1. I landningssidans gränssnitt klickar du på **[!UICONTROL Simulate content]** för att komma åt valet av testprofil.
 
-   ![](assets/lp_preview-button.png)
+   ![](assets/lp_simulate-button.png)
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Preview]** kan även användas av innehållsdesignern.
+   >The **[!UICONTROL Simulate content]** kan även användas av innehållsdesignern.
 
-1. Från **[!UICONTROL Preview & test]** väljer du en eller flera testprofiler.
+1. Från **[!UICONTROL Simulate ]** väljer du en eller flera testprofiler.
 
    ![](assets/lp_test-profiles.png)
 

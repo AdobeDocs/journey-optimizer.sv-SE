@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: innehåll, redigerare, e-post, börja
 exl-id: 151594f2-85e4-4c79-9c15-334fbd3768c4
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -82,15 +82,13 @@ Följ stegen nedan när du vill börja skapa e-postinnehåll:
 
    Välj **[!UICONTROL n:n column]** -komponent för att definiera hur många kolumner du vill ha (mellan 3 och 10). Du kan också definiera bredden på varje kolumn genom att flytta pilarna längst ned i varje kolumn.
 
-   ![](assets/email_designer_structure_n-n-colum.png)
-
    >[!NOTE]
    >
    >Varje kolumnstorlek får inte vara mindre än 10 % av strukturkomponentens totala bredd. Du kan inte ta bort en kolumn som inte är tom.
 
-1. Expandera **[!UICONTROL Content components]** och lägg till så många element du behöver i en eller flera strukturkomponenter. [Läs mer om innehållskomponenter](content-components.md)
+1. Från **[!UICONTROL Content components]** lägger du till så många element du behöver i en eller flera strukturkomponenter. [Läs mer om innehållskomponenter](content-components.md)
 
-1. Varje komponent kan anpassas ytterligare med **[!UICONTROL Component settings]** till höger. Du kan till exempel ändra textstil, utfyllnad eller marginal för varje komponent. [Läs mer om justering och utfyllnad](alignment-and-padding.md)
+1. Varje komponent kan anpassas ytterligare med **[!UICONTROL Settings]** eller **[!UICONTROL Style]** i den högra menyn. Du kan till exempel ändra textstil, utfyllnad eller marginal för varje komponent. [Läs mer om justering och utfyllnad](alignment-and-padding.md)
 
    ![](assets/email_designer_structure_component.png)
 
@@ -104,7 +102,7 @@ Följ stegen nedan när du vill börja skapa e-postinnehåll:
 
    ![](assets/email_designer_personalization.png)
 
-1. Lägg till dynamiskt innehåll för att anpassa innehållet till målprofilerna baserat på villkorliga regler. [Kom igång med dynamiskt innehåll](../personalization/get-started-dynamic-content.md)
+1. Klicka **[!UICONTROL Enable condition content]** för att lägga till dynamiskt innehåll och anpassa innehållet till målprofilerna baserat på villkorliga regler. [Kom igång med dynamiskt innehåll](../personalization/get-started-dynamic-content.md)
 
    ![](assets/email_designer_dynamic-content.png)
 
@@ -112,7 +110,7 @@ Följ stegen nedan när du vill börja skapa e-postinnehåll:
 
    ![](assets/email_designer_links.png)
 
-1. Om det behövs kan du anpassa e-postmeddelandet ytterligare genom att klicka på **[!UICONTROL Switch to code editor]** på den avancerade menyn. [Läs mer om kodredigeraren](code-content.md)
+1. Du kan anpassa din e-post ytterligare genom att klicka på **[!UICONTROL Switch to code editor]** på den avancerade menyn. [Läs mer om kodredigeraren](code-content.md)
 
    ![](assets/email_designer_switch-to-code.png)
 

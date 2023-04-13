@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: text, e-post, version, normal, redigerare
 exl-id: 4bb36810-65fb-4a9b-9bea-e56ed2c1eea3
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Som standard skapar e-postdesignern en **[!UICONTROL Plain text]** version av e-
 
 Om du föredrar att använda ett annat innehåll för den oformaterade textversionen följer du stegen nedan:
 
-1. I ditt e-postmeddelande väljer du **[!UICONTROL Plain text]** -fliken.
+1. I ditt e-postmeddelande väljer du **[!UICONTROL Plain text]** ikon.
 
    ![](assets/text_version_3.png)
 

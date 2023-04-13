@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: komponenter, e-postdesigner, redigerare, e-post
 exl-id: a4aaa814-3fd4-439e-8f34-faf97208378a
-source-git-commit: 93e3ed9e1a9a437353b800aee58952b86eab9370
+source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1223'
 ht-degree: 0%
 
 ---
@@ -60,13 +60,17 @@ Följ stegen nedan för att lägga till innehållskomponenter i e-postmeddelande
    >
    >Du kan lägga till flera komponenter i en enda strukturkomponent och i varje kolumn i en strukturkomponent.
 
-1. Justera formatattributen för varje komponent med **[!UICONTROL Component settings]** till höger. Du kan till exempel ändra textstil, utfyllnad eller marginal för varje komponent. [Läs mer om justering och utfyllnad](alignment-and-padding.md)
+1. Justera formatattributen för varje komponent med **[!UICONTROL Settings]** och **[!UICONTROL Style]** till höger. Du kan till exempel ändra textstil, utfyllnad eller marginal för varje komponent. [Läs mer om justering och utfyllnad](alignment-and-padding.md)
 
    ![](assets/email_designer_content_components_settings.png)
 
+1. På den avancerade menyn i **[!UICONTROL Content component]** kan du enkelt ta bort eller duplicera innehållskomponenter efter behov.
+
+   ![](assets/email_designer_content_components_settings_2.png)
+
 ## Behållare {#container}
 
-Du kan lägga till en enkel behållare där du kan lägga till ytterligare en innehållskomponent. På så sätt kan du använda en särskild formatering för behållaren, som skiljer sig från den komponent som används inuti.
+Om du vill använda en viss stil på en grupp innehållskomponenter kan du lägga till en **[!UICONTROL Container]** och sedan lägga till innehållskomponenter i den. På så sätt kan du tillämpa ett distinkt format på behållaren, vilket skiljer sig från det format som tillämpas på innehållskomponenterna i behållaren.
 
 Lägg till exempel till en **[!UICONTROL Container]** och sedan lägga till en [Knapp](#button) -komponenten i den behållaren. Du kan använda en specifik bakgrund för behållaren och en annan för knappen.
 
@@ -78,11 +82,11 @@ Använd **[!UICONTROL Button]** om du vill infoga en eller flera knappar i e-pos
 
 1. Från **[!UICONTROL Content components]**, dra och släpp **[!UICONTROL Button]** till en **[!UICONTROL Structure component]**.
 
-1. Klicka på den nya knappen för att anpassa texten och få tillgång till **[!UICONTROL Components settings]** i det högra fönstret i e-postdesignern.
+1. Klicka på den nya knappen för att anpassa texten och få tillgång till **[!UICONTROL Settings]** och **[!UICONTROL Styles]** -flikar i det högra fönstret i E-postdesignern.
 
    ![](assets/email_designer_button_component.png)
 
-1. I **[!UICONTROL Link]** lägger du till den URL som du vill omdirigera till när du klickar på knappen.
+1. Från **[!UICONTROL Link]** lägger du till den URL som du vill omdirigera till när du klickar på knappen.
 
 1. Välj hur er målgrupp ska omdirigeras med **[!UICONTROL Target]** nedrullningsbar lista:
 
@@ -98,13 +102,13 @@ Använd **[!UICONTROL Button]** om du vill infoga en eller flera knappar i e-pos
 
 ## Text {#text}
 
-Använd **[!UICONTROL Text]** om du vill infoga text i e-postmeddelandet och justera formatet (kantlinje, storlek, utfyllnad osv.) med **[!UICONTROL Component settings]** fönster.
+Använd **[!UICONTROL Text]** om du vill infoga text i e-postmeddelandet och justera formatet (kantlinje, storlek, utfyllnad osv.) med **[!UICONTROL Styles]** -fliken.
 
 ![](assets/email_designer_text_component.png)
 
 1. Från **[!UICONTROL Content components]**, dra och släpp **[!UICONTROL Text]** till en **[!UICONTROL Structure component]**.
 
-1. Klicka på den komponent som du har lagt till för att anpassa texten och få tillgång till **[!UICONTROL Components Settings]** i den högra rutan i e-postdesignern.
+1. Klicka på den komponent som du har lagt till för att anpassa texten och få tillgång till **[!UICONTROL Settings]** och **[!UICONTROL Styles]** i den högra rutan i e-postdesignern.
 
 1. Ändra texten med följande alternativ i verktygsfältet:
 
@@ -115,20 +119,25 @@ Använd **[!UICONTROL Text]** om du vill infoga text i e-postmeddelandet och jus
    * **[!UICONTROL Create list]**: lägg till punkt- eller nummerlista i texten.
    * **[!UICONTROL Set heading]**: kan du lägga till upp till sex rubriknivåer i texten.
    * **Teckenstorlek**: markera teckensnittsstorleken för texten i pixlar.
+   * **[!UICONTROL Change font color]**: välj färg för teckensnittet.
+   * **[!UICONTROL Insert link]**: lägga till alla typer av länkar till ditt innehåll.
    * **[!UICONTROL Edit image]**: lägga till en bild eller en resurs i textkomponenten. [Läs mer om resurshantering](assets-essentials.md)
+   * **[!UICONTROL Change font color]**: välj färg för teckensnittet.
+   * **[!UICONTROL Add personalization]**: lägga till anpassningsfält för att anpassa innehållet utifrån dina profildata. [Läs mer om innehållspersonalisering](../personalization/personalize.md)
    * **[!UICONTROL Show the source code]**: visa textens källkod. Den kan inte ändras.
+   * **[!UICONTROL Enable conditional content]**: lägga till villkorsstyrt innehåll för att anpassa komponentens innehåll till målprofilerna. [Läs mer om dynamiskt innehåll](../personalization/get-started-dynamic-content.md)
    * **[!UICONTROL Duplicate]**: lägga till en kopia av textkomponenten.
    * **[!UICONTROL Delete]**: ta bort den markerade textkomponenten från e-postmeddelandet.
-   * **[!UICONTROL Add personalization]**: lägga till anpassningsfält för att anpassa innehållet utifrån dina profildata. [Läs mer om innehållspersonalisering](../personalization/personalize.md)
-   * **[!UICONTROL Enable conditional content]**: lägga till villkorsstyrt innehåll för att anpassa komponentens innehåll till målprofilerna. [Läs mer om dynamiskt innehåll](../personalization/get-started-dynamic-content.md)
 
-1. Justera övriga formatattribut, t.ex. textfärg, teckensnittsfamilj, kantlinje, utfyllnad, marginal. från **[!UICONTROL Component settings]** fönster.
+1. Justera övriga formatattribut, t.ex. textfärg, teckensnittsfamilj, kantlinje, utfyllnad, marginal. från **[!UICONTROL Styles]** -fliken.
+
+   ![](assets/email_designer_text_component_2.png)
 
 ## Delare {#divider}
 
 Använd **[!UICONTROL Divider]** om du vill infoga en delningslinje för att ordna layouten och innehållet i ditt e-postmeddelande.
 
-Du kan justera formatattribut som linjefärg, format och höjd på menyn **[!UICONTROL Component settings]** fönster.
+Du kan justera formatattribut som linjefärg, format och höjd på menyn **[!UICONTROL Settings]** och **[!UICONTROL Styles]** -tabbar.
 
 ![](assets/email_designer_divider.png)
 
@@ -156,18 +165,22 @@ Använd **[!UICONTROL Image]** om du vill infoga en bildfil från datorn i ditt 
 
 1. Från **[!UICONTROL Content components]**, dra och släpp **[!UICONTROL Image]** till en **[!UICONTROL Structure component]**.
 
+   ![](assets/email_designer_image_content.png)
+
 1. Klicka **[!UICONTROL Browse]** om du vill välja en bildfil bland dina resurser.
 
    Om du vill veta mer om [!DNL Assets Essentials], se [Adobe Experience Manager Assets Essentials-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}.
 
-1. Klicka på den nya komponenten och ange bildegenskaperna med **[!UICONTROL Components settings]** ruta:
+1. Klicka på den nya komponenten och ange bildegenskaperna i **[!UICONTROL Settings]** tab:
 
    * **[!UICONTROL Image title]** I kan du definiera en titel för bilden.
    * **[!UICONTROL Alt text]** I kan du definiera den bildtext som är länkad till bilden. Detta motsvarar attributet alt HTML.
 
    ![](assets/email_designer_10.png)
 
-1. Justera övriga formatattribut som marginal, kant osv. eller lägga till en länk för att dirigera om målgruppen till ett annat innehåll från **[!UICONTROL Component settings]** fönster.
+1. Du kan också välja att **[!UICONTROL Find similar Stock photos]**. [Läs mer](stock.md)
+
+1. Från **[!UICONTROL Styles]** kan du justera andra formatattribut, t.ex. marginal, kant. eller lägga till en länk för att dirigera om målgruppen till ett annat innehåll från **[!UICONTROL Component settings]** fönster.
 
 ## Social {#social}
 
@@ -175,9 +188,9 @@ Använd **[!UICONTROL Social]** för att infoga länkar till sidor för sociala 
 
 1. Från **[!UICONTROL Content Components]**, dra och släpp **[!UICONTROL Social]** till en **[!UICONTROL Structure component]**.
 
-1. Klicka på den nya komponenten.
+1. Markera den nya komponenten.
 
-1. I **[!UICONTROL Social]** fält för **[!UICONTROL Components settings]** väljer du vilka sociala medier du vill lägga till eller ta bort.
+1. I **[!UICONTROL Social]** fält för **[!UICONTROL Settings]** väljer du vilka sociala medier du vill lägga till eller ta bort.
 
    ![](assets/email_designer_20.png)
 
@@ -187,13 +200,25 @@ Använd **[!UICONTROL Social]** för att infoga länkar till sidor för sociala 
 
    ![](assets/email_designer_21.png)
 
-1. Du kan också ändra ikonerna för vart och ett av dina sociala medier om det behövs i **[!UICONTROL Image]** fält.
+1. Du kan också ändra ikonerna för vart och ett av dina sociala medier om det behövs från dina resurser.
 
-1. Justera övriga formatattribut, t.ex. format, marginal, kant. från **[!UICONTROL Component settings]** fönster.
+1. Justera övriga formatattribut, t.ex. format, marginal, kant. från **[!UICONTROL Styles]** -fliken.
 
 ## Beslut om erbjudandet {#offer-decision}
 
 Använd **[!UICONTROL Offer decision]** -komponent för att infoga erbjudanden i dina meddelanden. The [beslutsfattande](../offers/get-started/starting-offer-decisioning.md) kommer att välja det bästa erbjudandet att leverera till era kunder.
+
+1. Från **[!UICONTROL Content Components]**, dra och släpp **[!UICONTROL Offer decision]** till en **[!UICONTROL Structure component]**.
+
+1. Klicka **[!UICONTROL Add]** för att välja **[!UICONTROL Offer decision]**.
+
+   ![](assets/component_offers.png)
+
+1. I listrutan väljer du **[!UICONTROL Placements]**.  Välj sedan **[!UICONTROL Offer decision]** du vill lägga till i innehållet och klicka på **[!UICONTROL Add]**.
+
+   ![](assets/component_offers_2.png)
+
+1. Från **[!UICONTROL Offer decision]** kan du förhandsgranska eller ändra det infogade erbjudandet.
 
 Lär dig hur du lägger till personaliserade erbjudanden i ett e-postmeddelande i [det här avsnittet](add-offers-email.md).
 

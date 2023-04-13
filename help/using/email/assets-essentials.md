@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: resurser, grundläggande funktioner, Experience Manager, integration
 exl-id: d4fde14b-e2da-40bf-a387-ee9f2f7ff204
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 1%
+source-wordcount: '445'
+ht-degree: 2%
 
 ---
 
@@ -57,29 +57,23 @@ Mer information om hur du överför resurser finns i [Adobe Experience Manager A
 
 1. Från **[!UICONTROL Upload files]**, klicka **[!UICONTROL Browse]** och välj om du vill **[!UICONTROL Browse files]** eller **[!UICONTROL Browse folders]**.
 
-   ![](assets/media_library_3.png)
+1. Markera filen som du vill överföra. När du är klar klickar du på **[!UICONTROL Upload]**. Mer information om hur du hanterar dina resurser finns i [page](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-organize.html).
 
-1. Markera filen som du vill överföra. När du är klar klickar du på **[!UICONTROL Upload]**.
-
-   Mer information om hur du hanterar dina resurser finns i [page](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-organize.html).
-
-1. När resursen har överförts kan du nu infoga dina resurser i något av dina meddelanden via e-postdesignern.
-
-   Du kan även redigera resursen ytterligare med **Redigera** läge för [!DNL Assets Essentials]. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/edit-images.html){target="_blank"}.
+1. Om du vill redigera dina resurser ytterligare med Adobe Photoshop Express dubbelklickar du på resurserna. Välj sedan **[!UICONTROL Edit mode]** ikon. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/edit-images.html){target="_blank"}.
 
    ![](assets/media_library_12.png)
 
-1. Från [!DNL Adobe Journey Optimizer], markera **[!UICONTROL Asset picker]** i den vänstra rutan i e-postdesignern.
+1. Från [!DNL Adobe Journey Optimizer]väljer du **[!UICONTROL Asset picker]** från den vänstra rutan i e-postdesignern.
 
    ![](assets/media_library_5.png)
 
-1. Välj **[!UICONTROL Assets]** mapp. Du kan också söka efter resursen eller mappen i sökfältet.
+1. Välj dina tidigare skapade **[!UICONTROL Assets]** mapp. Du kan också söka efter resursen eller mappen i sökfältet.
 
 1. Dra och släpp materialet i e-postinnehållet.
 
    ![](assets/media_library_6.png)
 
-1. Du kan anpassa dina resurser ytterligare, till exempel lägga till en extern länk eller en text med **[!UICONTROL Components settings]**. [Läs mer om komponentinställningar](content-components.md)
+1. Du kan anpassa dina resurser ytterligare, till exempel lägga till en extern länk eller en text med **[!UICONTROL Settings]** och **[!UICONTROL Styles]** -tabbar. [Läs mer om komponentinställningar](content-components.md)
 
    ![](assets/media_library_13.png)
 

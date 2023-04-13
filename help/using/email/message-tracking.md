@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: länkar, spåra, övervaka, e-post
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: 740afa0c9c760d815a4358159a0e08f25efd4b8d
+source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 0%
@@ -73,8 +73,6 @@ Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
 
    * **[!UICONTROL Mirror page]**: Infoga en länk för att visa e-postinnehållet i en webbläsare. Läs mer i [det här avsnittet](#mirror-page).
 
-   ![](assets/message-tracking-links.png)
-
 1. Du kan anpassa länkarna. Läs mer om personaliserade URL:er i [det här avsnittet](../personalization/personalization-syntax.md#perso-urls).
 
 1. Spara ändringarna.
@@ -121,8 +119,6 @@ The [E-postdesigner](content-from-scratch.md) gör att du kan hantera spårade U
    Med den här listan kan du ha en centraliserad vy och hitta varje URL i e-postinnehållet.
 
 1. Om du vill redigera en länk klickar du på motsvarande pennikon.
-
-   ![](assets/message-tracking-edit-links.png)
 
 1. Du kan ändra **[!UICONTROL Tracking Type]** vid behov:
 

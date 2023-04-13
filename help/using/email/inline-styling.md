@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: infogad, formatera, attribut, redigerare
 exl-id: 1f43bcde-0786-45e8-baf4-065c3920fd4e
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '118'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,8 @@ ht-degree: 0%
 När du markerar ett element och visar dess inställningar på sidopanelen i gränssnittet för e-postdesignern kan du anpassa infogade attribut och deras värde för det specifika elementet.
 
 1. Markera ett element i innehållet.
-1. På sidopanelen letar du efter **[!UICONTROL Styles Inline]** inställningar.
+
+1. Från **[!UICONTROL Styles]** flik, leta efter **[!UICONTROL Styles Inline]** inställningarna under **[!UICONTROL Advanced]** nedrullningsbar meny.
 
    ![](assets/styles_1.png)
 

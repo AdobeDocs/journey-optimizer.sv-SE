@@ -9,7 +9,7 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, syntax, personalisering
 exl-id: 5a562066-ece0-4a78-92a7-52bf3c3b2eea
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 3%
@@ -159,7 +159,7 @@ Med Journey Optimizer kan du anpassa en eller flera URL-adresser i meddelandet g
 1. Skapa en länk i meddelandeinnehållet. [Läs mer](../email/message-tracking.md#insert-links)
 1. Välj attribut från personaliseringsikonen. Ikonen för anpassning är bara tillgänglig för följande typer av länkar: **Extern länk**, **Länk för att avbryta prenumeration** och **Avanmäl dig**.
 
-![](assets/perso-url.png)
+   ![](assets/perso-url.png)
 
 >[!NOTE]
 >

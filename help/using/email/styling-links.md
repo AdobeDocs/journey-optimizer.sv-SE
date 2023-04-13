@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: stil, länkar, färg, e-post, redigerare
 exl-id: d5e148a8-a6d9-4e17-9cf0-46ff3c14871c
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '135'
 ht-degree: 2%
 
 ---
@@ -22,11 +22,7 @@ Du kan stryka under en länk och välja dess färg och mål i e-postdesignern.
 
 1. I en text **[!UICONTROL Content component]** där en länk infogas, markerar du länken.
 
-1. I **[!UICONTROL Component settings]** meny, kontrollera **[!UICONTROL Underline link]** om du vill stryka under etikettexten för länken.
-
-   ![](assets/link_1.png)
-
-1. Välj hur er målgrupp ska omdirigeras med **[!UICONTROL Target]** nedrullningsbar meny:
+1. Från **[!UICONTROL Settings]** väljer du hur målgruppen ska omdirigeras med **[!UICONTROL Target]** nedrullningsbar meny:
 
    * **[!UICONTROL None]**: öppnar länken i samma ram som den klickades på (standard).
    * **[!UICONTROL Blank]**: öppnar länken i ett nytt fönster eller på en ny flik.
@@ -36,10 +32,12 @@ Du kan stryka under en länk och välja dess färg och mål i e-postdesignern.
 
    ![](assets/link_2.png)
 
-1. Om du vill ändra färg på länken klickar du på **[!UICONTROL Link color]**.
+1. Kontrollera **[!UICONTROL Underline link]** om du vill stryka under etikettexten för länken.
+
+   ![](assets/link_1.png)
+
+1. Om du vill ändra färg på länken klickar du på **[!UICONTROL Link color]** från **[!UICONTROL Styles]** -fliken.
 
    ![](assets/link_3.png)
-
-1. Välj den färg du behöver.
 
 1. Spara ändringarna.

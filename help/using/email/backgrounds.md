@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: bakgrund, e-post, färg, redigerare
 exl-id: 09a2e892-8c6f-460d-8b12-5026582c6ed0
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
@@ -60,5 +60,3 @@ Nedan visas de tillgängliga bakgrundsinställningarna som du kan använda.
    >Detta är det vanligaste användningsfallet. Adobe rekommenderar att du ställer in bakgrundsfärger på kolumnnivå eftersom detta ger större flexibilitet när du redigerar hela e-postinnehållet.
 
    Du kan också ange en bakgrundsbild på kolumnnivå, men den används sällan.
-
-   ![](assets/background_5.png)

@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: preheader, editor, summary, email
 exl-id: 7ed52b2e-eabf-414f-b169-4b004733dea9
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
@@ -39,13 +39,9 @@ Följ stegen nedan för att definiera e-postprerubriken:
 
    ![](assets/preheader_body.png)
 
-1. Från **[!UICONTROL Body settings]** den högra rutan klickar du på redigeringsikonen bredvid **[!UICONTROL Preheader]** fält för att lägga till innehåll.
+1. Från **[!UICONTROL Settings]** klickar du på ikonen för anpassning bredvid **[!UICONTROL Preheader]** fält för att lägga till innehåll.
 
    ![](assets/preheader_body_settings.png)
-
-1. Lägg till din förrubrik. Du kan anpassa den ytterligare genom att klicka på **[!UICONTROL Add personalization]** ikon.
-
-   ![](assets/preheader_3.png)
 
 1. Från **[!UICONTROL Edit Personalization]** fönster, du kan lägga till **[!UICONTROL Content block]**, **[!UICONTROL Dynamic content]** eller **[!UICONTROL Personalization fields]**.
 

@@ -7,7 +7,8 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 08d842a877ed52349eef5a901aaf9c75187c69d3
+exl-id: 327de13a-1c99-4d5e-86cf-8180fb7aaf23
+source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
 workflow-type: tm+mt
 source-wordcount: '945'
 ht-degree: 2%
@@ -108,9 +109,7 @@ Följ stegen nedan för att skapa en innehållsmall från grunden.
 
 1. The [E-postdesigner](get-started-email-design.md) visas. Redigera innehållet efter behov, på samma sätt som för alla e-postmeddelanden som finns på en resa eller en kampanj, beroende på vilket alternativ du valt.
 
-   ![](assets/content-template-designer.png)
-
-1. Du kan testa ditt innehåll om det behövs. [Lär dig mer](#test-template)
+   Du kan testa ditt innehåll om det behövs. [Lär dig mer](#test-template)
 
 1. När mallen är klar klickar du på **[!UICONTROL Save]**.
 

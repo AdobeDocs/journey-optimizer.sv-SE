@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, sida, formulär, komponent
 exl-id: 5bf023b4-4218-4110-b171-3e70e0507fca
-source-git-commit: abf0a3f87baf9aa822e2f4aa5a90777359767541
+source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1236'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,7 @@ Använd **[!UICONTROL Form]** -komponenten. För att göra detta, följ nedanst�
 
    >[!NOTE]
    >
-   >Växla till **[!UICONTROL Form style]** när som helst för att redigera formaten för formulärkomponentens innehåll. [Läs mer](#define-lp-styles)
+   >Växla till **[!UICONTROL Styles]** när som helst för att redigera formaten för formulärkomponentens innehåll. [Läs mer](#define-lp-styles)
 
 1. Från **[!UICONTROL Checkbox 1]** kan du redigera etiketten för den här kryssrutan.
 
@@ -83,7 +83,7 @@ Använd **[!UICONTROL Form]** -komponenten. För att göra detta, följ nedanst�
 
    * **[!UICONTROL Subscription list]**: Du måste välja den prenumerationslista som ska uppdateras om profilen markerar den här kryssrutan. Läs mer på [prenumerationslistor](subscription-list.md).
 
-      ![](assets/lp_designer-form-subs-list.png)
+      <!--![](assets/lp_designer-form-subs-list.png)-->
 
    * **[!UICONTROL Channel (email)]**: Avanmälningen eller avanmälningen gäller hela kanalen. Om en profil som avanmäls till exempel har två e-postadresser, kommer båda adresserna att uteslutas från all kommunikation.
 
@@ -136,21 +136,25 @@ Använd **[!UICONTROL Form]** -komponenten. För att göra detta, följ nedanst�
 
 ## Definiera format för landningssidor {#lp-form-styles}
 
-1. Om du vill ändra formaten för formulärkomponentens innehåll växlar du när som helst till **[!UICONTROL Form style]** -fliken.
+1. Om du vill ändra formaten för formulärkomponentens innehåll växlar du när som helst till **[!UICONTROL Style]** -fliken.
 
    ![](assets/lp_designer-form-style.png)
 
-1. Expandera **[!UICONTROL Checkboxes]** för att definiera utseendet på kryssrutorna och motsvarande text. Du kan till exempel justera teckensnittsfamiljen eller storleken och kryssrutans kantlinjefärg.
+1. The **[!UICONTROL Fields]** -avsnittet är som standard utökat och du kan redigera utseendet på textfältet, t.ex. etikett- och platshållarteckensnitt, placeringen av etiketten, fältets bakgrundsfärg eller fältkanten.
+
+   ![](assets/lp_designer-form-style-fields.png)
+
+1. Expandera **[!UICONTROL Checkboxes]** för att definiera utseendet på kryssrutorna och motsvarande text. Du kan till exempel justera teckensnittsfamiljen eller storleken, eller kryssrutans kantlinjefärg.
 
    ![](assets/lp_designer-form-style-checkboxes.png)
 
-1. Expandera **[!UICONTROL Buttons]** för att ändra utseendet på knappen i komponentformuläret. Du kan till exempel lägga till en kant, redigera etikettfärgen vid hovring eller justera justeringen av knappen.
+1. Expandera **[!UICONTROL Buttons]** för att ändra utseendet på knappen i komponentformuläret. Du kan till exempel ändra teckensnitt, lägga till en kant, redigera etikettfärgen vid hovring eller justera justeringen av knappen.
 
    ![](assets/lp_designer-form-style-buttons.png)
 
-   Du kan förhandsgranska vissa inställningar, t.ex. knappetikettfärg vid hovring med hjälp av **[!UICONTROL Preview]** -knappen. Läs mer om testning av landningssidor [här](create-lp.md#test-landing-page).
+   Du kan förhandsgranska vissa inställningar, t.ex. knappetikettfärg vid hovring med hjälp av **[!UICONTROL Simulate content]** -knappen. Läs mer om testning av landningssidor [här](create-lp.md#test-landing-page).
 
-   ![](assets/lp_designer-form-style-buttons-preview.png)
+   <!--![](assets/lp_designer-form-style-buttons-preview.png)-->
 
 1. Expandera **[!UICONTROL Form layout]** om du vill redigera layoutinställningar som bakgrundsfärg, utfyllnad eller marginal.
 
@@ -194,11 +198,15 @@ För att göra detta, följ nedanstående steg:
 
 1. Spara ändringarna.
 
+Nu när användare markerar en av kryssrutorna
+
 ![](assets/lp_designer-form-preview-checked-box.png)
 
-När användaren markerar en av kryssrutorna visas meddelandet som motsvarar den markerade kryssrutan när formuläret skickas.
+meddelandet som motsvarar den markerade kryssrutan visas när formuläret skickas.
 
 ![](assets/lp_designer-form-thankyou-preview.png)
+
+<!--![](assets/lp_designer-form-subscription-preview.png)-->
 
 >[!NOTE]
 >

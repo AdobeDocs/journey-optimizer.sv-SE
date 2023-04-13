@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: erbjudanden, beslut, e-post, personalisering, beslut
 exl-id: 1e648eca-b5ca-4767-b45d-c179243e347f
-source-git-commit: 93e3ed9e1a9a437353b800aee58952b86eab9370
+source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
@@ -73,15 +73,13 @@ När du har sparat dina ändringar är dina erbjudanden klara att visas för de 
 
 ## Förhandsgranska erbjudanden via e-post {#preview-offers-in-email}
 
-Du kan förhandsgranska de olika erbjudanden som ingår i det beslut som lagts till i e-postmeddelandet med **[!UICONTROL Offers]** -avsnittet eller innehållskomponentpilarna.
+Du kan förhandsgranska de olika erbjudanden som ingår i det beslut som lagts till i e-postmeddelandet med **[!UICONTROL Offer]** -avsnittet eller innehållskomponentpilarna.
 
 ![](assets/deliver-offer-preview.png)
 
 Följ stegen nedan för att visa de olika erbjudanden som ingår i beslutet med en kundprofil.
 
-1. Klicka på **[!UICONTROL Preview]**.
-
-   ![](assets/deliver-offer-preview-button.png)
+1. Klicka på knappen **[!UICONTROL Simulate Content button]**.
 
    >[!NOTE]
    >
@@ -120,4 +118,3 @@ Läs mer om de detaljerade stegen för att kontrollera förhandsgranskningen av 
 Lär dig hur du lägger till en beslutshanteringskomponent i meddelanden i [!DNL Journey Optimizer].
 
 >[!VIDEO](https://video.tv.adobe.com/v/334088?quality=12)
-

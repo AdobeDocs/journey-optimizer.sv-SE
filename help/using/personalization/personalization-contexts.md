@@ -9,9 +9,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, kontext, personalisering
 exl-id: fe39570b-cbd2-4b24-af10-e12990a9a885
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ När du skapar ett e-postmeddelande kan du lägga till personalisering i **[!UIC
 
 I e-postdesignern kan du anpassa innehållet:
 
-* I **message**: klicka i ett textblock och klicka på **Anpassa** ikonen i det sammanhangsberoende verktygsfältet och välj **Infoga personalisering** fält. Mer information om gränssnittet för e-postdesignern finns i [section](../email/get-started-email-design.md).
+* I **message**: klicka i ett textblock och klicka på **Lägg till personalisering** ikonen i det sammanhangsberoende verktygsfältet. Mer information om gränssnittet för e-postdesignern finns i [section](../email/get-started-email-design.md).
 
    ![](assets/perso_insert.png)
 
