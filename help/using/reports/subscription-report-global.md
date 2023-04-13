@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 4509c1e9-02e6-4c00-83ba-0b5512e70c41
-source-git-commit: 0ec122bbf134c41f95755a3b6f08eb7ef68506df
+source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_subscription_global_report"
 >title="Global prenumerationsrapport"
->abstract="Med prenumerationsrapporten kan du mäta och visualisera dina prenumeranters aktivitet under en viss tidsperiod. Din rapport är uppdelad i olika widgetar som detaljerar dina prenumerationer och avbeställningar. Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort."
+>abstract="Med den globala prenumerationsrapporten kan du mäta och visualisera dina prenumeranters aktivitet under en viss tidsperiod. Din rapport är uppdelad i olika widgetar som detaljerar dina prenumerationer och avbeställningar. Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort."
 
 Prenumerationen **[!UICONTROL Global report]** visar information om din prenumerations aktivitet under en vald tidsperiod. Om du bara vill mäta dina prenumerationer under de senaste 24 timmarna kan du läsa [Direktprenumerationsrapport](subscription-report-live.md).
 
