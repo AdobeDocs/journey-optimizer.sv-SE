@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: e0ca8aef-4f1d-4631-8c34-1692d96e8b51
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 93e3ed9e1a9a437353b800aee58952b86eab9370
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 7%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,6 +32,10 @@ Om du avbryter en resa stoppas den permanent. Alla personer som flyter på resan
    ![](assets/journeyuc1_18.png)
 
 När resan publiceras är den i skrivskyddat läge.
+
+>[!IMPORTANT]
+>
+>Om ett beslut om erbjudande som används i ett kundmeddelande ändras måste du avpublicera resan och publicera den på nytt.  På så sätt säkerställs att ändringarna införlivas i kundens budskap och att meddelandet överensstämmer med de senaste uppdateringarna.
 
 ## Instruktionsvideo {#video}
 

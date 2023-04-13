@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7a217c97-57e1-4f04-a92c-37632f8dfe91
-source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
+source-git-commit: 93e3ed9e1a9a437353b800aee58952b86eab9370
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -184,6 +184,10 @@ I beslutslistan kan du välja vilket beslut som ska visas. Därifrån kan du äv
 ![](../assets/decision_created.png)
 
 Välj **[!UICONTROL Edit]** knapp för att gå tillbaka till beslutsversionsläget, där du kan ändra beslutets [information](#create-activity), [beslutsomfattningar](#add-decision-scopes) och [grunderbjudande](#add-fallback).
+
+>[!IMPORTANT]
+>
+>Om ett beslut om erbjudande som används i ett kundmeddelande ändras måste du avpublicera resan och publicera den på nytt.  På så sätt säkerställs att ändringarna införlivas i kundens budskap och att meddelandet överensstämmer med de senaste uppdateringarna.
 
 Välj ett live-beslut och klicka **[!UICONTROL Deactivate]** för att återställa beslutsstatus till **[!UICONTROL Draft]**.
 

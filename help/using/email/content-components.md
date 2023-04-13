@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: komponenter, e-postdesigner, redigerare, e-post
 exl-id: a4aaa814-3fd4-439e-8f34-faf97208378a
-source-git-commit: 08d842a877ed52349eef5a901aaf9c75187c69d3
+source-git-commit: 93e3ed9e1a9a437353b800aee58952b86eab9370
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -197,3 +197,6 @@ Använd **[!UICONTROL Offer decision]** -komponent för att infoga erbjudanden i
 
 Lär dig hur du lägger till personaliserade erbjudanden i ett e-postmeddelande i [det här avsnittet](add-offers-email.md).
 
+>[!IMPORTANT]
+>
+>Om ett beslut om erbjudande som används i ett kundmeddelande ändras måste du avpublicera resan och publicera den på nytt.  På så sätt säkerställs att ändringarna införlivas i kundens budskap och att meddelandet överensstämmer med de senaste uppdateringarna.

@@ -4,9 +4,9 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 14b081fbc1d824664c82e6af262a0a7e50764c0c
+source-git-commit: 93e3ed9e1a9a437353b800aee58952b86eab9370
 workflow-type: tm+mt
-source-wordcount: '2516'
+source-wordcount: '2570'
 ht-degree: 17%
 
 ---
@@ -18,7 +18,8 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 ## April 2023 {#apr-2023}
 
 * Adobe Experience Manager Assets Essentials och Adobe Stock har lagts till på integreringssidan för flera lösningar. [Läs mer](../start/ajo-integrations.md)
-
+* Varningen för e-postunderdomäner på flera nivåer som inte tillåts har tagits bort eftersom de nu stöds. [Läs mer](../configuration/delegate-subdomain.md)
+* En anteckning har lagts till för att ange att om ändringar görs i ett offertbeslut som används i en resa måste du avpublicera resan och publicera den på nytt. [Läs mer](../building-journeys/publishing-the-journey.md)
 
 ## Mars 2023 {#march-2023}
 

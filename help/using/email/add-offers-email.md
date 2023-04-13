@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: erbjudanden, beslut, e-post, personalisering, beslut
 exl-id: 1e648eca-b5ca-4767-b45d-c179243e347f
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: 93e3ed9e1a9a437353b800aee58952b86eab9370
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,12 @@ I [!DNL Journey Optimizer] e-postmeddelanden kan ni infoga beslut som utnyttjar 
 
 Du kan t.ex. lägga till ett beslut som i ditt e-postmeddelande visas ett särskilt rabatterbjudande som varierar beroende på mottagarens lojalitetsnivå.
 
-Mer information om hur du skapar och hanterar erbjudanden finns i [det här avsnittet](../offers/get-started/starting-offer-decisioning.md).
+>[!IMPORTANT]
+>
+>Om ett beslut om erbjudande som används i ett kundmeddelande ändras måste du avpublicera resan och publicera den på nytt.  På så sätt säkerställs att ändringarna införlivas i kundens budskap och att meddelandet överensstämmer med de senaste uppdateringarna.
 
-För **ett komplett exempel** visa hur man konfigurerar erbjudanden, använda dem i ett beslut och utnyttja detta beslut i ett e-postmeddelande, se [det här avsnittet](../offers/offers-e2e.md#insert-decision-in-email).
+* Mer information om hur du skapar och hanterar erbjudanden finns i [det här avsnittet](../offers/get-started/starting-offer-decisioning.md).
+* För **ett komplett exempel** visa hur man konfigurerar erbjudanden, använda dem i ett beslut och utnyttja detta beslut i ett e-postmeddelande, se [det här avsnittet](../offers/offers-e2e.md#insert-decision-in-email).
 
 ➡️ [Lär dig hur du lägger till erbjudanden som personalisering i den här videon](#video-offers)
 
