@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 5e1485b33608d55d878d311c2448669f898486b3
+source-git-commit: 4ce8573aa76ceae807d404e736b2d780f687aa56
 workflow-type: tm+mt
 source-wordcount: '1361'
 ht-degree: 32%
@@ -176,8 +176,8 @@ ht-degree: 32%
    + Designa e-postinnehåll {#design-email}
       + [Kom igång med e-postdesign](using/email/get-started-email-design.md)
       + Börja skapa innehåll {#start-creating-content}
-         + [Börja från början](using/email/content-from-scratch.md)
-         + [Importera e-postinnehåll](using/email/existing-content.md)
+         + [Designa innehåll från grunden](using/email/content-from-scratch.md)
+         + [Importera innehåll](using/email/existing-content.md)
          + [Koda eget innehåll](using/email/code-content.md)
          + [Arbeta med mallar](using/email/email-templates.md)
       + Designa innehåll {#add-content}

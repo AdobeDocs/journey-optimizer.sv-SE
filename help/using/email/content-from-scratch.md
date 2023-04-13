@@ -1,74 +1,74 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Designa e-postmeddelanden i Journey Optimizer
-description: Lär dig designa e-postinnehåll från grunden
+title: Designa material från grunden i Journey Optimizer
+description: Lär dig designa ditt innehåll från grunden
 feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
 keywords: innehåll, redigerare, e-post, börja
 exl-id: 151594f2-85e4-4c79-9c15-334fbd3768c4
-source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
+source-git-commit: 4ce8573aa76ceae807d404e736b2d780f687aa56
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
 
-# Börja från början {#content-from-scratch}
+# Designa innehåll från grunden {#content-from-scratch}
 
 >[!CONTEXTUALHELP]
 >id="ac_structure_components_email"
->title="Om strukturkomponenter"
->abstract="Strukturkomponenter definierar layouten för e-postmeddelandet."
+>title="Lägg till strukturkomponenter"
+>abstract="Strukturkomponenter definierar layouten för e-postmeddelandet. Dra och släpp en **Struktur** på arbetsytan för att börja designa ditt e-postinnehåll."
 
 >[!CONTEXTUALHELP]
 >id="ac_structure_components_landing_page"
->title="Om strukturkomponenter"
->abstract="Strukturkomponenter definierar landningssidans layout."
+>title="Lägg till strukturkomponenter"
+>abstract="Strukturkomponenter definierar landningssidans layout. Dra och släpp en **Struktur** till arbetsytan för att börja designa innehållet på landningssidan."
 
 >[!CONTEXTUALHELP]
 >id="ac_structure_components_fragment"
->title="Om strukturkomponenter"
->abstract="Strukturkomponenter definierar fragmentets layout."
+>title="Lägg till strukturkomponenter"
+>abstract="Strukturkomponenter definierar fragmentets layout. Dra och släpp en **Struktur** till arbetsytan för att börja designa innehållet i fragmentet."
 
 >[!CONTEXTUALHELP]
 >id="ac_structure_components_template"
->title="Om strukturkomponenter"
->abstract="Strukturkomponenter definierar mallens layout."
+>title="Lägg till strukturkomponenter"
+>abstract="Strukturkomponenter definierar mallens layout. Dra och släpp en **Struktur** på arbetsytan för att börja designa innehållet i mallen."
 
 
 >[!CONTEXTUALHELP]
 >id="ac_edition_columns_email"
 >title="Definiera e-postkolumner"
->abstract="Med e-postdesignern kan du enkelt definiera layouten för e-postmeddelandet genom att definiera kolumnstrukturen."
+>abstract="Med e-postdesignern kan du enkelt definiera layouten för e-postmeddelandet genom att välja kolumnstrukturen."
 
 >[!CONTEXTUALHELP]
 >id="ac_edition_columns_landing_page"
 >title="Definiera landningssidans kolumner"
->abstract="Med e-postdesignern kan du enkelt definiera layouten för landningssidan genom att definiera kolumnstrukturen."
+>abstract="Med Designer kan du enkelt definiera layouten för landningssidan genom att välja kolumnstrukturen."
 
 >[!CONTEXTUALHELP]
 >id="ac_edition_columns_fragment"
 >title="Definiera fragmentkolumner"
->abstract="Med e-postdesignern kan du enkelt definiera fragmentets layout genom att definiera kolumnstrukturen."
+>abstract="Med Designer kan du enkelt definiera fragmentets layout genom att välja kolumnstrukturen."
 
 >[!CONTEXTUALHELP]
 >id="ac_edition_columns_template"
 >title="Definiera mallkolumner"
->abstract="Med e-postdesignern kan du enkelt definiera mallens layout genom att definiera kolumnstrukturen."
+>abstract="Med Designer kan du enkelt definiera mallens layout genom att välja kolumnstrukturen."
 
 
-Med e-postdesignern kan du enkelt definiera e-postens struktur. Genom att lägga till och flytta strukturella element med enkla dra-och-släpp-åtgärder kan du designa formen på e-postmeddelandet på några sekunder.
+Använd Adobe Journey Optimizer Designer för att enkelt definiera innehållsstrukturen. Genom att lägga till och flytta strukturella element med enkla dra och släpp-åtgärder kan du designa formen på innehållet på några sekunder.
 
-Följ stegen nedan när du vill börja skapa e-postinnehåll:
+Följ stegen nedan när du vill börja skapa ditt innehåll:
 
-1. På e-postdesignerns hemsida väljer du **[!UICONTROL Design from scratch]** alternativ.
+1. På startsidan för Designer väljer du **[!UICONTROL Design from scratch]** alternativ.
 
    ![](assets/email_designer.png)
 
-1. Börja designa e-postinnehåll genom att dra och släppa **[!UICONTROL Structure components]** på arbetsytan för att definiera layouten för e-postmeddelandet.
+1. Börja designa ditt innehåll genom att dra och släppa **[!UICONTROL Structures]** på arbetsytan för att definiera layouten för e-postmeddelandet.
 
    >[!NOTE]
    >
@@ -76,7 +76,7 @@ Följ stegen nedan när du vill börja skapa e-postinnehåll:
 
    <!--Once placed in the email, you cannot move nor remove your components unless there is already a content component or a fragment placed inside. This is not true in AJO - TBC?-->
 
-1. Lägg till så många **[!UICONTROL Structure components]** vid behov och redigera inställningarna i den dedikerade rutan till höger.
+1. Lägg till så många **[!UICONTROL Structures]** vid behov och redigera inställningarna i den dedikerade rutan till höger.
 
    ![](assets/email_designer_structure_components.png)
 
@@ -86,7 +86,7 @@ Följ stegen nedan när du vill börja skapa e-postinnehåll:
    >
    >Varje kolumnstorlek får inte vara mindre än 10 % av strukturkomponentens totala bredd. Du kan inte ta bort en kolumn som inte är tom.
 
-1. Från **[!UICONTROL Content components]** lägger du till så många element du behöver i en eller flera strukturkomponenter. [Läs mer om innehållskomponenter](content-components.md)
+1. Expandera **[!UICONTROL Contents]** och lägg till så många element du behöver i en eller flera strukturkomponenter. [Läs mer om innehållskomponenter](content-components.md)
 
 1. Varje komponent kan anpassas ytterligare med **[!UICONTROL Settings]** eller **[!UICONTROL Style]** i den högra menyn. Du kan till exempel ändra textstil, utfyllnad eller marginal för varje komponent. [Läs mer om justering och utfyllnad](alignment-and-padding.md)
 
@@ -98,7 +98,7 @@ Följ stegen nedan när du vill börja skapa e-postinnehåll:
 
    ![](assets/email_designer_asset_picker.png)
 
-1. Infoga anpassningsfält för att anpassa ditt e-postinnehåll från profildata. [Läs mer om innehållspersonalisering](../personalization/personalize.md)
+1. Infoga anpassningsfält för att anpassa innehållet utifrån profilattribut, segmentmedlemskap, sammanhangsbaserade attribut med mera. [Läs mer om innehållspersonalisering](../personalization/personalize.md)
 
    ![](assets/email_designer_personalization.png)
 
@@ -106,21 +106,21 @@ Följ stegen nedan när du vill börja skapa e-postinnehåll:
 
    ![](assets/email_designer_dynamic-content.png)
 
-1. Klicka på **[!UICONTROL Links]** från den vänstra panelen för att visa alla URL:er för ditt innehåll som ska spåras. Du kan ändra deras **[!UICONTROL Tracking Type]** eller **[!UICONTROL Label]** och lägga till **[!UICONTROL Tags]** vid behov. [Läs mer om länkar och meddelandespårning](message-tracking.md)
+1. Klicka på **[!UICONTROL Links]** från den vänstra panelen för att visa alla URL:er för ditt innehåll som ska spåras. Du kan ändra deras **[!UICONTROL Tracking Type]** eller **[!UICONTROL Label]** och lägga till **[!UICONTROL Tags]** vid behov. [Läs mer om länkar och spårning](message-tracking.md)
 
    ![](assets/email_designer_links.png)
 
-1. Du kan anpassa din e-post ytterligare genom att klicka på **[!UICONTROL Switch to code editor]** på den avancerade menyn. [Läs mer om kodredigeraren](code-content.md)
+1. Om det behövs kan du anpassa innehållet ytterligare genom att klicka på **[!UICONTROL Switch to code editor]** uppifrån **Mer** -knappen. [Läs mer om kodredigeraren](code-content.md)
 
    ![](assets/email_designer_switch-to-code.png)
 
    >[!CAUTION]
    >
-   >Du kan inte återgå till den visuella designern för det här e-postmeddelandet efter att du har växlat till kodredigeraren.
+   >Du kan inte återgå till den visuella designern för det här innehållet efter att du har växlat till kodredigeraren.
 
-1. När innehållet är klart klickar du på **[!UICONTROL Simulate content]** för att kontrollera din e-poståtergivning. Du kan välja skrivbordsvy eller mobilvy. [Läs mer om hur du förhandsgranskar ditt e-postmeddelande](preview.md)
+1. När innehållet är klart klickar du på **[!UICONTROL Simulate content]** för att kontrollera återgivningen. Du kan välja skrivbordsvy eller mobilvy. [Läs mer om hur du förhandsgranskar ditt e-postmeddelande](preview.md)
 
    ![](assets/email_designer_simulate_content.png)
 
-1. När e-postmeddelandet är klart klickar du på **[!UICONTROL Save]**.
+1. När innehållet är klart klickar du på **[!UICONTROL Save]**.
 
