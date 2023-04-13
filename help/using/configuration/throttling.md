@@ -6,16 +6,17 @@ description: Lär dig hur du arbetar med API:t för begränsning
 role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
-source-git-commit: 40afc1c0e0ae55dfbec45ff0b22170d6345a8e46
+exl-id: b837145b-1727-43c0-a0e2-bf0e8a35347c
+source-git-commit: 609fdb747b1b0f9e18a96f93a4e235d01da8ff72
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Arbeta med begränsnings-API
 
-API:t för begränsning hjälper dig att skapa, konfigurera och övervaka dina begränsningskonfigurationer.
+API:t för begränsning hjälper dig att skapa, konfigurera och övervaka dina begränsningskonfigurationer för att begränsa antalet händelser som skickas per sekund.
 
 Det här avsnittet innehåller global information om hur du arbetar med API:t. En detaljerad API-beskrivning finns i [Dokumentation för Adobe Journey Optimizer API:er](https://developer.adobe.com/journey-optimizer-apis/).
 

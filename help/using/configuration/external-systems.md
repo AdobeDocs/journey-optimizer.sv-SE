@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: 40afc1c0e0ae55dfbec45ff0b22170d6345a8e46
+source-git-commit: 609fdb747b1b0f9e18a96f93a4e235d01da8ff72
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1202'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ När Journey Optimizer gör ett anrop till ett externt API körs de tekniska gar
 
 1. Begränsningsregler tillämpas: om maxhastigheten uppnås, tas återstående anrop bort eller köas.
 
-2. Timeout och försök igen: Om begränsningsregeln är uppfylld försöker Journey Optimizer genomföra anropet tills tidsgränsen är slut.
+2. Timeout och försök igen: om begränsnings- eller begränsningsregeln är uppfylld försöker Journey Optimizer genomföra anropet tills tidsgränsen har nåtts.
 
 ## API:er för begränsning och begränsning {#capping}
 
