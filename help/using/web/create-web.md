@@ -9,10 +9,10 @@ hide: true
 hidefromtoc: true
 exl-id: e28c038b-49ed-4685-bfe6-514116eb0711
 badge: label="Beta" type="Informative"
-source-git-commit: 160e4ce03d3be975157c30fbe511875a85b00551
+source-git-commit: c21c0386be33eea6f7053fb891ebad3d9a1154c9
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 4%
+source-wordcount: '1034'
+ht-degree: 3%
 
 ---
 
@@ -72,6 +72,11 @@ För att webbupplevelsen ska kunna levereras på rätt sätt måste följande in
 >id="ajo_web_surface"
 >title="Definiera en webbyta"
 >abstract="En webbyta kan matcha en eller flera sidor, vilket gör att du kan leverera innehållsändringar på en eller flera webbsidor."
+
+>[!CONTEXTUALHELP]
+>id="ajo_web_surface_rule"
+>title="Bygg en sidmatchningsregel"
+>abstract="En sidmatchningsregel gör det möjligt att ange flera URL:er som matchar samma regel som mål, t.ex. om du vill använda ändringarna på en hjältebanderoll på en hel webbplats eller lägga till en toppbild som visas på alla produktsidor på en webbplats."
 
 Följ stegen nedan för att börja skapa en webbupplevelse genom en kampanj.
 
