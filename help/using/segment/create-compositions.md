@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 exl-id: 8b978900-fcef-46f2-bc19-70776e4f3d43
 badge: label="Beta" type="Informative"
-source-git-commit: 242fd8dbb04d62b9ec838655985add4ea0d7b377
+source-git-commit: 818c3ff2d159ec3a668c55224996b4736f950e5d
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,10 @@ Så här skapar du ett dispositionsarbetsflöde:
    ![](assets/audiences-publish.png)
 
 1. När kompositionen är klar klickar du på **[!UICONTROL Publish]** för att publicera kompositionen och spara målgrupperna i Adobe Experience Platform.
+
+   >[!IMPORTANT]
+   >
+   >Du kan publicera upp till 75 kompositioner i en given sandlåda. Om du har nått det här tröskelvärdet måste du ta bort en disposition för att frigöra utrymme och publicera en ny.
 
    Om något fel inträffar under publiceringen visas varningar med information om hur du löser problemet.
 
