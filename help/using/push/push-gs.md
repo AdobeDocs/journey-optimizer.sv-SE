@@ -1,23 +1,32 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Push-meddelanden och Adobe Journey Optimizer
+title: Push-meddelandeflöde i Adobe Journey Optimizer
 description: Förstå dataflöde och komponenter för push-meddelanden
 topic: Mobile
 feature: Push
 role: Admin
 level: Intermediate
 exl-id: 9718c4b6-2558-4dfd-9d8f-f8845def19ba
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: c0358b039f038705aa67e6b779b6b8da228a603b
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 1%
+source-wordcount: '699'
+ht-degree: 3%
 
 ---
 
-# Push-meddelanden och Adobe Journey Optimizer {#get-started-push}
+# Dataflöde och komponenter för push-meddelanden {#get-started-push}
 
-Den här sidan hjälper dig att konfigurera och förstå viktiga tjänster och arbetsflöden som är kopplade till push-meddelanden i [!DNL Journey Optimizer]. Lär dig hur du skapar push-meddelanden på [den här sidan](create-push.md).
+På den här sidan kan du konfigurera och förstå viktiga tjänster och arbetsflöden som är kopplade till push-meddelanden i [!DNL Journey Optimizer].
+
+<!--
+>[!AVAILABILITY]
+>
+>The new **mobile onboarding quick start workflow** is now available. Use this new product feature to rapidly configure the Mobile SDK to start collecting and validating mobile event data, and to send mobile push notifications. This capability is accessible via the Data Collection home page as a public beta. [Learn more](mobile-onboarding-wf.md)
+>
+-->
+
+Lär dig hur du skapar push-meddelanden på [den här sidan](create-push.md).
 
 Steg för att konfigurera push-kanal i [!DNL Adobe Journey Optimizer] anges på [den här sidan](push-configuration.md).
 
@@ -58,8 +67,16 @@ Följande bild visar vilka system och tjänster som är kopplade till tillhöran
 
 * **[!DNL Adobe Journey Optimizer]** : När mobilappen har integrerats med de ovannämnda komponenterna och kundprofilerna i Adobe Experience Platform kan du skapa och ordna push-meddelanden i [!DNL Adobe Journey Optimizer] för att engagera era användare.
 
-## Teknisk konfigurering och arbetsflöden för övrig personal {#push-technical-setup}
+## Teknisk konfigurering och arbetsflöden {#push-technical-setup}
 
 I följande bild visas de olika stegen, från början till slut, som används för att konfigurera komponenterna som utgör strukturen för push-dataflödet. Åtgärdsobjekten har kategoriserats baserat på rollen som utför konfigurationen och komponenten som konfigureras.
 
 ![](assets/user-flow.png)
+
+**Relaterade ämnen**
+
+* [Konfigurera push-kanal](push-configuration.md)
+* [Rapport om push-meddelanden](../reports/journey-global-report.md#push-global)
+* [Skapa ett push-meddelande](create-push.md)
+* [Lägg till ett meddelande i en resa](../building-journeys/journeys-message.md)
+* [Lägg till ett meddelande i en kampanj](../campaigns/create-campaign.md)
