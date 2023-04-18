@@ -7,18 +7,18 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-keywords: resa, meddelande, push, sms, e-post
+keywords: resa, meddelande, push, sms, e-post, i appen
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: 45d508b284c23235518fab37095413091208e497
+source-git-commit: 0c32248d13c08a98e9298ddc932aa2e547ab2acd
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
 
-# E-post, SMS, push{#add-a-message-in-a-journey}
+# E-post, i appen, push, SMS{#add-a-message-in-a-journey}
 
-[!DNL Journey Optimizer] innehåller inbyggda meddelandefunktioner. Du kan enkelt lägga till en push-, SMS- eller e-postmeddelandeaktivitet under resan och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan.
+[!DNL Journey Optimizer] innehåller inbyggda meddelandefunktioner. Du kan enkelt lägga till en push-funktion, ett SMS-meddelande, en aktivitet i appen eller ett e-postmeddelande under resan och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan.
 
 Du kan också ange specifika åtgärder för att skicka meddelanden till dig:
 
@@ -33,7 +33,7 @@ Följ stegen nedan om du vill lägga till ett meddelande under en resa:
 
 1. Påbörja resan med en [Händelse](general-events.md) eller en [Läs segment](read-segment.md) aktivitet.
 
-1. Från **Åtgärder** dra och släpp en **e-post**, en **SMS** eller en **Push** till arbetsytan.
+1. Från **Åtgärder** dra och släpp en **e-post**, en **I appen**, en **SMS** eller en **Push** till arbetsytan.
 
 1. Konfigurera aktiviteten. Lär dig detaljerade steg för att skapa meddelandeinnehåll på följande sidor:
 
@@ -44,6 +44,14 @@ Följ stegen nedan om du vill lägga till ett meddelande under en resa:
    <img alt="Lead" src="../assets/do-not-localize/email.jpg">
    </a>
    <div><a href="../email/create-email.md"><strong>Skapa e-postmeddelanden</strong>
+   </div>
+   <p>
+   </td>
+   <td>
+   <a href="../in-app/create-in-app.md">
+   <img alt="Lead" src="../assets/do-not-localize/in-app.jpg">
+   </a>
+   <div><a href="../in-app/create-in-app.md"><strong>Skapa meddelanden i appen</strong>
    </div>
    <p>
    </td>
@@ -70,13 +78,15 @@ Följ stegen nedan om du vill lägga till ett meddelande under en resa:
 
 ## Uppdatera liveinnehåll{#update-live-content}
 
-Du kan uppdatera innehållet i ett meddelande (e-post, sms, push) i en direktresa.
+Du kan uppdatera innehållet i ett meddelande (e-post, i appen, push, SMS) under en direktresa.
 
 Det gör du genom att öppna din liveresa, välja meddelandeaktivitet och klicka på **Redigera innehåll**.
 
 ![](assets/add-a-message2.png)
 
 Du kan dock inte ändra de attribut som används i personaliseringen, vare sig det är profilattribut eller kontextuella data (från händelse- eller reseegenskaper).
+
+Observera att för aktiviteten i appen kan ändringar göras i innehållet medan resan pågår, men utlösare i appen kan inte ändras.
 
 ## Sändningsoptimering{#send-time-optimization}
 

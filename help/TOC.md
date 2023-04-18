@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 15973fd7bf85a428be24252e9eb1bf3834a581f3
+source-git-commit: 0c32248d13c08a98e9298ddc932aa2e547ab2acd
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1371'
 ht-degree: 32%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 32%
       + [Villkor](using/building-journeys/condition-activity.md)
       + [Vänta](using/building-journeys/wait-activity.md)
       + [Lässegment](using/building-journeys/read-segment.md)
-      + [E-post, SMS, push](using/building-journeys/journeys-message.md)
+      + [E-post, i appen, push, SMS](using/building-journeys/journeys-message.md)
       + [Anpassade åtgärder](using/building-journeys/using-custom-actions.md)
       + [Adobe Campaign Standard-åtgärder](using/building-journeys/using-adobe-campaign-standard.md)
       + [Adobe Campaign v7/v8-åtgärder](using/building-journeys/using-adobe-campaign-classic.md)
@@ -205,6 +205,7 @@ ht-degree: 32%
 + Kanal i appen{#in-app}
    + [Kom igång med kanalen i appen](using/in-app/get-started-in-app.md)
    + [Skapa ett meddelande i appen](using/in-app/create-in-app.md)
+   + [Skapa ett meddelande i appen på en resa](using/in-app/create-in-app-journey.md)
    + [Designa ditt innehåll i appen](using/in-app/design-in-app.md)
    + [Testa och skicka meddelanden i appen](using/in-app/send-in-app.md)
    + [Konfigurera kanal i appen](using/in-app/inapp-configuration.md)

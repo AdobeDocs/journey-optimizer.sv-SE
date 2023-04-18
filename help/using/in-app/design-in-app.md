@@ -7,24 +7,28 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, design, formatering
 exl-id: 7d7aa721-96aa-4ebc-a51c-e693f893f34f
-source-git-commit: e35aeba17f45145cc7712740cbcf1f0e169760fc
+source-git-commit: 0c32248d13c08a98e9298ddc932aa2e547ab2acd
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '785'
 ht-degree: 9%
 
 ---
 
 # Designa ditt innehåll i appen {#design-content}
 
-Du kan redigera innehållet i appen för att konfigurera upplevelsealternativ, inklusive alternativen för meddelandelayout och visning, text och knapp.
+Du kan redigera innehållet i appen för att konfigurera upplevelsealternativ:
 
-Om du vill konfigurera meddelandeinnehållet klickar du på **[!UICONTROL Edit content]** och använd alternativen i skärmens högra del för att utforma innehållet i meddelanden i appen.
+* I en **[!UICONTROL Campaign]**, från **[!UICONTROL Action]** för att konfigurera meddelandeinnehållet klickar du på **[!UICONTROL Edit content]** -knappen.
 
-![](assets/in_app_create_4.png)
+   ![](assets/edit-in-app-content.png)
+
+* I en **[!UICONTROL Journey]**, från den avancerade menyn i ditt program **[!UICONTROL Action]** kan du börja designa ditt innehåll med **[!UICONTROL Edit content]** -knappen.
+
+   ![](assets/design_inapp_journey.png)
 
 The **[!UICONTROL Advanced formatting]** växlar aktiverar ytterligare alternativ för att anpassa upplevelsen.
 
-När ditt meddelande i appen har skapats och dess innehåll har definierats och anpassats kan du granska och aktivera det. Meddelanden skickas sedan enligt kampanjschemat. Läs mer i [den här sidan](create-in-app.md#in-app-send).
+När ditt meddelande i appen har skapats och dess innehåll har definierats och anpassats kan du granska och aktivera det. Meddelanden skickas sedan enligt kampanjschemat. Läs mer i [den här sidan](send-in-app.md).
 
 ## Meddelandelayout {#message-layout}
 

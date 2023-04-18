@@ -6,9 +6,10 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
-source-git-commit: c70b782b077b57485e7a40ec9f159832604f76e5
+exl-id: 9e9c235a-b78c-4669-af82-822b6f1e6fca
+source-git-commit: 0c32248d13c08a98e9298ddc932aa2e547ab2acd
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '271'
 ht-degree: 4%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 4%
 
 ## Förhandsgranska på enhet {#preview-device}
 
-En gång [skapade meddelandet i appen](create-in-app.md) och [definierade sitt innehåll](design-in-app.md)kan du förhandsvisa meddelandet i appen på en viss enhet.
+Om du vill få en smygtitt på meddelandet i appen innan det publiceras för alla användare kan du förhandsgranska det på en viss enhet. Med den här funktionen kan du säkerställa att meddelandet ser ut och fungerar som det ska på den valda enheten, vilket ger en bättre användarupplevelse för din målgrupp.
 
 Gör så här:
 
@@ -37,7 +38,7 @@ Ditt meddelande i appen kan nu utlösas direkt på din enhet så att du kan för
 
 ## Granska och aktivera meddelanden i appen{#in-app-review}
 
-När ditt meddelande i appen är klart kan du granska och aktivera det.
+När ditt meddelande i appen har skapats och dess innehåll har definierats och anpassats kan du granska och aktivera det.
 
 Gör så här:
 

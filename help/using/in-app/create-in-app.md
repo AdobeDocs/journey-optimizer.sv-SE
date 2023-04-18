@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: b3b79fe2-7db3-490d-9c3d-87267aa55eea
-source-git-commit: 1af9a3adeb6727e965e61434b0ed2c41ff3d4911
+source-git-commit: 0c32248d13c08a98e9298ddc932aa2e547ab2acd
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '699'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,55 @@ ht-degree: 2%
 
 Meddelanden i appen skapas i samband med en kampanj.
 
-Följ stegen nedan för att skapa ett meddelande i appen:
+>[!BEGINTABS]
+
+>[!TAB Lägg till ett meddelande i appen till en resa]
+
+>[!AVAILABILITY]
+>
+>Aktiviteten i appen är för närvarande endast tillgänglig som en betaversion för utvalda användare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
+
+1. Öppna din resa och dra och släpp en **[!UICONTROL In-app]** aktivitet från **[!UICONTROL Actions]** på paletten.
+
+   När en profil når slutet av sin resa kommer alla meddelanden i appen som visas för dem automatiskt att upphöra att gälla. Av den anledningen läggs en Wait-aktivitet automatiskt till efter aktiviteten i appen för att säkerställa korrekt timing.
+
+   ![](assets/in_app_journey_1.png)
+
+1. Ange **[!UICONTROL Label]** och **[!UICONTROL Description]** för ditt meddelande.
+
+1. Välj [Yta i appen](inapp-configuration.md) att använda.
+
+   ![](assets/in_app_journey_2.png)
+
+1. Nu kan du börja designa ditt innehåll med **[!UICONTROL Edit content]** -knappen. [Läs mer](design-in-app.md)
+
+1. Klicka **[!UICONTROL Edit trigger]** för att konfigurera utlösaren.
+
+   ![](assets/in_app_journey_4.png)
+
+1. Välj hur ofta utlösaren ska visas när meddelandet i appen är aktivt:
+
+   * **[!UICONTROL Show every time]**: Visa alltid meddelandet när de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
+   * **[!UICONTROL Show once]**: Visa endast det här meddelandet första gången de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
+   * **[!UICONTROL Show until click through]**: Visa det här meddelandet när händelser har markerats i **[!UICONTROL Mobile app trigger]** nedrullningsbar meny inträffar tills en interaktionshändelse skickas av SDK med åtgärden&quot;klickad&quot;.
+
+1. Från **[!UICONTROL Mobile app trigger]** väljer du de händelser och villkor som ska utlösa meddelandet:
+
+   1. I den vänstra listrutan väljer du den händelse som krävs för att utlösa meddelandet.
+   1. Välj den validering som krävs för den valda händelsen i den högra listrutan.
+   1. Klicka på **[!UICONTROL Add]** om du vill att utlösaren ska ta hänsyn till flera händelser eller villkor. Upprepa sedan stegen ovan.
+   1. Välj hur dina händelser ska länkas, t.ex. välj **[!UICONTROL And]** om du vill **båda** utlösare är true för att ett meddelande ska kunna visas eller väljas **[!UICONTROL Or]** om du vill att meddelandet ska visas om **antingen** av utlösarna är sanna.
+   1. Klicka **[!UICONTROL Save]** när dina utlösare har konfigurerats.
+
+   ![](assets/in_app_journey_3.png)
+
+1. Slutför vid behov kundresan genom att dra och släppa ytterligare åtgärder eller händelser. [Läs mer](../building-journeys/about-journey-activities.md)
+
+1. När ditt meddelande i appen är klart slutför du konfigurationen och publicerar din resa för att aktivera den.
+
+Mer information om hur du konfigurerar en resa finns i [den här sidan](../building-journeys/journey-gs.md).
+
+>[!TAB Lägga till ett meddelande i appen till en kampanj]
 
 1. Öppna **[!UICONTROL Campaigns]** menyn och klicka sedan på **[!UICONTROL Create campaign]**.
 
@@ -65,6 +113,7 @@ Följ stegen nedan för att skapa ett meddelande i appen:
 
    ![](assets/in_app_create_4.png)
 
+>[!ENDTABS]
 
 ## Instruktionsvideo{#video}
 
