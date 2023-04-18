@@ -8,9 +8,10 @@ level: Beginner
 keywords: i appen, meddelande, skapa, börja
 hide: true
 hidefromtoc: true
-source-git-commit: 0c32248d13c08a98e9298ddc932aa2e547ab2acd
+exl-id: b774e34f-8225-41a0-a2ec-b91d3a86cf2b
+source-git-commit: 252011710574122c1f321a388b65bdafb7c666df
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '516'
 ht-degree: 1%
 
 ---
@@ -67,10 +68,11 @@ Mer information om hur du konfigurerar en resa finns i [den här sidan](../build
 
 * Personalisering kan bara innehålla profilattribut.
 
-* Visning i appen är knuten till resans livscykel, vilket innebär att när resan avslutas för en profil kommer alla meddelanden i appen under resan att sluta visas för den profilen. Det innebär att du inte kan stoppa en app direkt från en reseaktivitet. Du måste få ett slut på den resan.
-* Visning i appen är länkad till en resas livscykel, vilket innebär att när en resa har slutförts för en viss användarprofil kommer alla meddelanden i appen under resan inte att visas för den profilen. Det är därför inte möjligt att stoppa ett meddelande i appen direkt från en reseaktivitet. I stället måste du avsluta hela kundresan för att stoppa visningen av meddelanden i appen från att visas i profilen.
+* Visning i appen är knuten till resans livscykel, vilket innebär att när resan avslutas för en profil kommer alla meddelanden i appen under resan inte att visas för den profilen.  Det är därför inte möjligt att stoppa ett meddelande i appen direkt från en reseaktivitet. I stället måste du avsluta hela kundresan för att stoppa visningen av meddelanden i appen från att visas i profilen.
 
-* Med den här funktionen kommer du ännu inte att kunna använda **[!UICONTROL Reaction]** aktiviteter för att reagera på en öppning eller klickning i appen.
+* I testläge beror visningen i appen på resans livslängd. Justera **[!UICONTROL Wait time]** värde för **[!UICONTROL Wait]** verksamhet.
+
+* **[!UICONTROL Reaction]** -aktiviteter kan inte användas för att reagera på en öppning eller klickning i appen.
 
 * En aktiveringsfördröjning inträffar mellan den tidpunkt då en användarprofil når en aktivitet i appen på arbetsytan och den tidpunkt då meddelandet visas i appen. Den här fördröjningen kan variera från 15 minuter till 1 timme.
 
