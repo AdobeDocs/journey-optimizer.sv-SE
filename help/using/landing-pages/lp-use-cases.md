@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: landning, landningssida, fallstudie
 exl-id: 8c00d783-54a3-45d9-bd8f-4dc58804d922
-source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
+source-git-commit: 1e149c33159ba8b5d96f5752bddc7ebe9f3934fe
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '943'
 ht-degree: 2%
 
 ---
@@ -70,11 +70,11 @@ Anta till exempel att du ordnar ett event nästa månad och vill starta en kampa
 
 Dessutom kan du skicka ett bekräftelsemeddelande via e-post till de mottagare som har registrerat sig för din aktivitet. För att göra detta, följ nedanstående steg.
 
-1. Skapa en till [resa](../building-journeys/journey.md). Du kan göra det direkt från landningssidan genom att klicka på **[!UICONTROL Create journey]** -knappen. Läs mer [här](create-lp.md#configure-primary-page)
+1. Skapa en till [resa](../building-journeys/journey.md). Du kan göra det direkt från landningssidan genom att klicka på **[!UICONTROL Create journey]** -knappen. [Läs mer](create-lp.md#configure-primary-page)
 
    ![](assets/lp_subscription-uc-create-journey.png)
 
-1. Ta fram **[!UICONTROL Events]** kategori och släpp en **[!UICONTROL Segment Qualification]** på arbetsytan. Läs mer [här](../building-journeys/segment-qualification-events.md)
+1. Ta fram **[!UICONTROL Events]** kategori och släpp en **[!UICONTROL Segment Qualification]** på arbetsytan. [Läs mer](../building-journeys/segment-qualification-events.md)
 
 1. Klicka på **[!UICONTROL Segment]** och välj den prenumerationslista du har skapat.
 
@@ -127,13 +127,9 @@ Följ stegen nedan om du vill att mottagarna av ett e-postmeddelande ska kunna a
 
 1. När du har konfigurerat och definierat innehållet på dina sidor [publicera](create-lp.md#publish) landningssidan.
 
-   ![](assets/lp_opt-out-publish.png)
-
 1. [Skapa ett e-postmeddelande](../email/get-started-email-design.md) på en resa.
 
 1. Markera text i innehållet och [infoga en länk](../email/message-tracking.md#insert-links) med hjälp av kontextverktygsfältet. Du kan också använda en länk på en knapp.
-
-   ![](assets/lp_opt-out-insert-link.png)
 
 1. Välj **[!UICONTROL Landing page]** från **[!UICONTROL Link type]** och väljer [landningssida](create-lp.md#configure-primary-page) som du skapade för att avanmäla dig.
 
