@@ -4,10 +4,10 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: c0358b039f038705aa67e6b779b6b8da228a603b
+source-git-commit: 0f36c42c5de52da3be894737ac4c73b7ad529fc4
 workflow-type: tm+mt
-source-wordcount: '1508'
-ht-degree: 8%
+source-wordcount: '1896'
+ht-degree: 7%
 
 ---
 
@@ -21,32 +21,112 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 
 ![Nyhetsbrev](../assets/do-not-localize/nl-icon.png) Registrera dig för [Adobe Journey Optimizer kvartalsvis nyhetsbrev](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} idag och få de senaste produktuppdateringarna, spännande historier, användningsexempel, tips och mycket annat levererat direkt till din inkorg varje kvartal.
 
-<!--
-## April 2023 Updates {#apr-2023}
+
+## Versionsinformation april 2023 {#apr-e-rn-2023}
+
+Informationen nedan kan komma att ändras utan föregående meddelande fram till releasedatum. Uppdaterad dokumentation kommer att publiceras på releasedatum och direkta länkar kommer att läggas till på den här sidan.
+
+**Releasedatum**: 27 april 2023
+
+### Nya funktioner{#apr-2023-features}
 
 
 <table>
 <thead>
 <tr>
-<th><strong>Mobile onboarding quick start workflow (beta)</strong><br/></th>
+<th><strong>Webbkanal (allmän tillgänglighet)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>The new mobile onboarding quick start workflow is now available. Use this new product feature to rapidly configure the Mobile SDK to start collecting and validating mobile event data, and send mobile push notifications with Adobe Journey Optimizer. This capability is accessible via the Data Collection home page as a public beta.</p>
+<p>Adobe Journey Optimizer utökar sina flerkanalsfunktioner genom att lägga till stöd för webbkanaler. Nu kan ni skapa, ändra och förhandsgranska webbupplevelser som vilken kanal som helst, via ett smart och intuitivt visuellt gränssnitt för att personalisera slutanvändarnas upplevelse. Observera att ni i Journey Optimizer för närvarande bara kan skapa webbupplevelser i kampanjer.</p>
+<img src="assets/do-not-localize/create-web-campaign.gif"/>
+<!--p>For more information, refer to the <a href="../in-app/get-started-in-app.md">detailed documentation</a>.</p-->
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Snabbstartarbetsflöde för mobil introduktion (beta)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Det nya arbetsflödet för att komma igång med mobilintroduktioner är nu tillgängligt. Använd den här nya produktfunktionen för att snabbt konfigurera Mobile SDK för att börja samla in och validera mobilhändelsedata och skicka push-meddelanden till Adobe Journey Optimizer. Den här funktionen är tillgänglig via startsidan för datainsamling som en betaversion.</p>
 <img src="../push/assets/mobile-wf-home.png"/>
-<p>For more information, refer to the <a href="../push/mobile-onboarding-wf.md">detailed documentation</a>.</p>
+<p>Mer information finns i den <a href="../push/mobile-onboarding-wf.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
 </table>
--->
+
+<table>
+<thead>
+<tr>
+<th><strong>Ny Journey-kontrollpanel (beta)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p> Kontrollpanelen för resan är nu uppdelad på två flikar:</p>
+<ul><li>Använd <strong>Översikt</strong> för att få tillgång till en ny kontrollpanel som visar viktiga mått för dina resor.</li>
+<li>Använd <strong>Bläddra</strong> för att få tillgång till en lista över alla resor.</li></ul>
+<p>Denna förmåga är tillgänglig på alla resor som en betaversion.</p>
+<img src="assets/do-not-localize/journey-dashboard.gif"/>
+<!--p>For more information, refer to the <a href="../building-journeys/journey-gs.md#journey-access">detailed documentation</a>.</p-->
+</td>
+</tr>
+</tbody>
+</table>
+
+<!--
+<table>
+<thead>
+<tr>
+<th><strong>Personalized Optimization AI ranking model (General Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Personalized Optimization AI ranking models are now generally available in Decision Management. This new type of model allows you to optimize and personalize offers based on segments and offer performance.</p>
+<img src="assets/do-not-localize/ai-ranking.gif"/>
+<p>For more information, refer to the <a href="../offers/ranking/personalized-optimization-model.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>-->
+
+### Förbättringar {#april-2023-improvements}
+
+**Resor**
+
+* På arbetsytan visas nu aktivitets-ID på åtgärdsnoder och sluttaggar. Detta förbättrar rapportering och återmarknadsföring.
+* Konfigurationsrutans layout, som visas i åtgärder, datakällor, händelser och resor, har förbättrats.
+* Nya skyddsräcken har lagts till på resorna:
+   * Antalet noder i en resa är nu begränsat till max 50
+   * Antalet direktresor i en organisation är nu begränsat till maximalt 100. Resor i testläge beaktas inte.
+
+* När du lägger till en e-post-, SMS- eller push-åtgärd på en resa är ytan nu som standard förfylld med den senast använda ytan för den kanalen.
+* Nu kan du definiera statiska eller dynamiska frågeparametrar i dina anpassade åtgärder.
+
+**Rapportering**
+
+* Nu kan du exportera Journey Optimizer-rapporter som PDF.
+
+**Content Designer**
+
+* Adobe Journey Optimizer Content Designer har uppdaterats och det är nu enklare att komma åt designformat och komponenter. Den nya versionen ger en förbättrad användarupplevelse och har bättre prestanda, partiell kompatibilitet i mörkt läge och stöd för nya tillgänglighetsstandarder.
+
+
 
 ## Versionsinformation mars 2023 {#mar-2023}
-
-<!--Information below is subject to change without prior notice until the release availability date. Updated documentation will be published at the release date, and direct links will be added in this page.-->
-
 
 ### Nya funktioner{#mar-2023-features}
 
@@ -142,7 +222,7 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 
    Observera att du måste återställa de olika rapportinstrumentpanelerna för att få tillgång till de senaste widgetarna. Mer information om anpassning av kontrollpanelen finns i [detaljerad dokumentation](../reports/global-report.md#modify-dashboard).
 
-## Versionsinformation från februari 2023 {#feb-2023}
+## Versionsinformation februari 2023 {#feb-2023}
 
 ### Nya funktioner{#feb-2023-features}
 
@@ -270,7 +350,7 @@ Note that each widget can be resized and deleted as needed.
 
 * **URL-personalisering** - När du lägger till URL:er som innehåll till offerternas representationer kan du nu anpassa dessa URL:er med Uttrycksredigeraren. [Läs mer](../offers/offer-library/add-representations.md)
 
-## Version från januari 2023 {#jan-2023-release}
+## Versionsinformation januari 2023{#jan-2023-release}
 
 ### Nya funktioner{#jan-2023-features}
 

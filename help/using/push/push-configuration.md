@@ -6,9 +6,9 @@ description: Lär dig hur du konfigurerar miljön för att skicka push-meddeland
 role: Admin
 level: Intermediate
 exl-id: 7099d44e-5d5d-4eef-9477-f68f4eaa1983
-source-git-commit: c0358b039f038705aa67e6b779b6b8da228a603b
+source-git-commit: 014cc551cb125ba6dc20a4f572e6cd7024d9fab5
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1457'
 ht-degree: 3%
 
 ---
@@ -17,12 +17,10 @@ ht-degree: 3%
 
 [!DNL Journey Optimizer] kan ni skapa resor och skicka meddelanden till riktade målgrupper. Innan du börjar skicka push-meddelanden med [!DNL Journey Optimizer]måste ni se till att det finns konfigurationer och integreringar på mobilappen och för taggar i Adobe Experience Platform. För att förstå dataflödet för push-meddelanden i [!DNL Adobe Journey Optimizer] se [den här sidan](push-gs.md).
 
-<!--
 >[!AVAILABILITY]
 >
->The new **mobile onboarding quick start workflow** is now available. Use this new product feature to rapidly configure the Mobile SDK to start collecting and validating mobile event data, and to send mobile push notifications. This capability is accessible via the Data Collection home page as a public beta. [Learn more](mobile-onboarding-wf.md)
->
--->
+>Den nya **snabbstartsarbetsflöde för mobil introduktion** är nu tillgängligt. Använd den här nya produktfunktionen för att snabbt konfigurera Mobile SDK för att börja samla in och validera mobilhändelsedata och skicka push-meddelanden till mobiler. Den här funktionen är tillgänglig via startsidan för datainsamling som en betaversion. [Läs mer](mobile-onboarding-wf.md)
+
 
 ## Före start {#before-starting}
 

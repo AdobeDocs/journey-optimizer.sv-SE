@@ -10,17 +10,17 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Beta" type="Informative"
-source-git-commit: 145d2a60bc5dbd6e2a92f13afbf2db662f465e36
+exl-id: 82477d40-cfea-456b-a7b1-9cfebd76db35
+source-git-commit: 62954221f9797fc4ac7b5e066ffea6f99c17ad45
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 3%
+source-wordcount: '368'
+ht-degree: 4%
 
 ---
 
-
 # Arbetsflöde för snabb start av mobil introduktion {#mobile-wf}
 
-Den nya **snabbstartsarbetsflöde för mobil introduktion** är en ny produktfunktion som snabbt konfigurerar Mobile SDK, börjar samla in och validera mobilhändelsedata och skickar push-meddelanden med [!DNL Journey Optimizer].
+Den nya **snabbstartsarbetsflöde för mobil introduktion** är en ny produktfunktion som snabbt konfigurerar Adobe Experience Platform Mobile SDK, börjar samla in och validera mobilhändelsedata och skickar push-meddelanden med [!DNL Journey Optimizer].
 
 Den här funktionen är tillgänglig via **[!DNL Adobe Experience Platform Data Collection]** startsida till alla kunder som betaversion.
 
@@ -35,8 +35,8 @@ Om du vill få tillgång till det nya arbetsflödet för snabbstart av mobilintr
 Nedan följer några ytterligare funktioner:
 
 * Smidigt arbetsflöde i fyra steg och användargränssnitt.
-* Ger en grundläggande konfiguration för att börja samla in mobilhändelsedata via Mobile SDK på några minuter.
-* Möjlighet att testa och validera en grundläggande mobil push-händelse med hjälp av Assurance.
+* Ger en grundläggande konfiguration för att börja samla in mobilhändelsedata via [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/){target="_blank"} på några minuter.
+* Möjlighet att testa och validera en grundläggande push-händelse för mobila enheter [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 * Auto skapar och konfigurerar alla nödvändiga datainsamlingar och Journey Optimizer-resurser.
 * I produktvägledning och verktygstips.
 * Ger en naturlig övergång för mer avancerad implementering vid behov.
