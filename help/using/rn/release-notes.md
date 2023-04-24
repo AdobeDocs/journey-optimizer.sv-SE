@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 0f36c42c5de52da3be894737ac4c73b7ad529fc4
+source-git-commit: c523783b0984a36f919a581053e994ca131a0115
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '1897'
 ht-degree: 7%
 
 ---
@@ -76,7 +76,7 @@ Informationen nedan kan komma att ändras utan föregående meddelande fram till
 <td>
 <p> Kontrollpanelen för resan är nu uppdelad på två flikar:</p>
 <ul><li>Använd <strong>Översikt</strong> för att få tillgång till en ny kontrollpanel som visar viktiga mått för dina resor.</li>
-<li>Använd <strong>Bläddra</strong> för att få tillgång till en lista över alla resor.</li></ul>
+<li>Använd <strong>Bläddra</strong> för att få tillgång till listan över alla resor.</li></ul>
 <p>Denna förmåga är tillgänglig på alla resor som en betaversion.</p>
 <img src="assets/do-not-localize/journey-dashboard.gif"/>
 <!--p>For more information, refer to the <a href="../building-journeys/journey-gs.md#journey-access">detailed documentation</a>.</p-->
