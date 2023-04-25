@@ -10,7 +10,7 @@ hide: true
 hidefromtoc: true
 exl-id: 6b438268-d983-4ab8-9276-c4b7de74e6bd
 badge: label="Beta" type="Informative"
-source-git-commit: 160e4ce03d3be975157c30fbe511875a85b00551
+source-git-commit: a6a892ec20dfeb6879bef2f4c2eb4a0f8f54885f
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 3%
@@ -85,9 +85,9 @@ Så här skapar och skickar du ett direktutskick:
 
 1. Upprepa dessa steg för att lägga till så många kolumner som behövs för att skapa extraheringsfilen. Observera att du kan lägga till upp till 50 kolumner.
 
-   ![](assets/direct-mail-complete.png)
-
    Du kan när som helst ta bort en kolumn genom att markera den och klicka på **[!UICONTROL Remove]** från **[!UICONTROL Formatting]** -avsnitt.
+
+   ![](assets/direct-mail-complete.png)
 
 1. Slutför konfigurationen av kampanjen när du har definierat innehållet för direktreklam.
 

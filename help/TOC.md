@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 0c32248d13c08a98e9298ddc932aa2e547ab2acd
+source-git-commit: a6a892ec20dfeb6879bef2f4c2eb4a0f8f54885f
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 32%
+source-wordcount: '1365'
+ht-degree: 33%
 
 ---
 
@@ -356,8 +356,7 @@ ht-degree: 32%
       + [Skapa en datauppsättning för att samla in händelser](using/offers/data-collection/create-dataset.md)
       + [Konfigurera händelsehämtning](using/offers/data-collection/schema-requirement.md)
    + Skapa rapporter om beslutshantering {#create-reports}
-      + [Kom igång med beslutsledningshändelser](using/offers/reports/get-started-events.md)
-      + [Viktig information om beslutsledningshändelser](using/offers/reports/key-information.md)
+      + [Arbeta med beslutsledningshändelser](using/offers/reports/get-started-events.md)
       + [Åtkomst till XDM-fält för händelser](using/offers/reports/xdm-fields.md)
    + Exportera din erbjudandekatalog {#export-catalog}
       + [Kom igång med export av din erbjudandekatalog ](using/offers/export-catalog/get-started-export.md)
@@ -445,8 +444,8 @@ ht-degree: 32%
       + [Om datakällor, händelser och åtgärder](using/configuration/about-data-sources-events-actions.md)
       + Integrera med externa system {#external-systems}
          + [Integrering av resor med externa system](using/configuration/external-systems.md)
-         + [API för begränsning](using/configuration/capping.md)
-         + [Begränsnings-API](using/configuration/throttling.md)
+         + [API för reglering](using/configuration/capping.md)
+         + [API för begränsning](using/configuration/throttling.md)
       + Händelsekonfiguration {#events-journeys}
          + [Allmän princip](using/event/about-events.md)
          + Konfigurera en enhetshändelse {#unitary-events}
