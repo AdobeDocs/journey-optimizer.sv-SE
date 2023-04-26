@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: e-post, design, stockinnehåll, resurser
 exl-id: e4f91870-f06a-4cd3-98b7-4c413233e310
-source-git-commit: 4df89a36705fb53984ba04ba1ae2f45554e47f77
+source-git-commit: 3a9b11b1a4d2159261586394f1595e52c8b749e7
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 4%
+source-wordcount: '453'
+ht-degree: 3%
 
 ---
 
@@ -29,6 +29,14 @@ Du kan importera ett befintligt innehåll i [!DNL Journey Optimizer] eller utnyt
 * Förbättra kundernas upplevelse genom att skapa personaliserade och dynamiska meddelanden utifrån deras profilattribut. Läs mer om [personalisering](../personalization/personalize.md) och [dynamiskt innehåll](../personalization/get-started-dynamic-content.md).
 
 ➡️ [Upptäck den här funktionen i en video](#video)
+
+## Bästa praxis för e-postdesign {#best-practices}
+
+När du skickar e-postmeddelanden är det viktigt att tänka på att mottagarna kan vidarebefordra dem, vilket ibland kan orsaka problem med e-postens återgivning. Detta gäller särskilt när du använder CSS-klasser som kanske inte stöds av e-postleverantören som används för vidarebefordran, till exempel om du använder CSS-klassen&quot;is-desktop-hidden&quot; för att dölja en bild på mobila enheter.
+
+För att minimera dessa återgivningsproblem rekommenderar vi att du håller e-postdesignstrukturen så enkel som möjligt. Försök använda en enda design som fungerar bra för både datorer och mobila enheter, och undvik att använda komplexa CSS-klasser eller andra designelement som kanske inte stöds fullt ut av alla e-postklienter. Genom att följa dessa rutiner kan du se till att dina e-postmeddelanden återges korrekt, oavsett hur mottagarna visar eller vidarebefordrar dem.
+
+## Viktiga steg för att skapa e-postinnehåll {#key-steps}
 
 När du har [lade till ett e-postmeddelande](create-email.md) till en resa eller en kampanj kan du börja skapa ditt e-postinnehåll.
 
