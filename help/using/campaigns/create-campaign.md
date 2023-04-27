@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
+source-git-commit: bf058b13508c7ad644a3b1f63e9208740abf8602
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '722'
 ht-degree: 3%
 
 ---
@@ -27,8 +27,6 @@ ht-degree: 3%
 
 
 Om du vill skapa en ny kampanj öppnar du **[!UICONTROL Campaigns]** menyn och klicka sedan på **[!UICONTROL Create campaign]**. Du kan också duplicera en befintlig livekampanj och skapa en ny. [Läs mer](modify-stop-campaign.md#duplicate)
-
-![](assets/create-campaign.png)
 
 ## Välj kampanjtyp och kanal {#campaigntype}
 
@@ -64,15 +62,13 @@ Om du vill skapa en ny kampanj öppnar du **[!UICONTROL Campaigns]** menyn och k
 
 ## Definiera kampanjegenskaperna {#create}
 
-1. Ange en titel och en beskrivning för kampanjen.
+1. I **[!UICONTROL Properties]** anger du ett namn och en beskrivning för kampanjen.
 
    <!--To test the content of your message, toggle the **[!UICONTROL Content experiment]** option on. This allows you to test multiple variables of a delivery on populations samples, in order to define which treatment has the biggest impact on the targeted population.[Learn more about content experiment](../campaigns/content-experiment.md).-->
 
 1. Klicka på knappen **[!UICONTROL Manage access]** -knappen. [Läs mer om OLA (Object Level Access Control)](../administration/object-based-access.md)
 
-   ![](assets/create-campaign-properties.png)
-
-## Skapa meddelandet {#content}
+## Skapa meddelandet och konfigurera spårning {#content}
 
 I **[!UICONTROL Actions]** skapar du meddelandet som ska skickas med kampanjen.
 
@@ -123,21 +119,21 @@ I **[!UICONTROL Actions]** skapar du meddelandet som ska skickas med kampanjen.
 
 ## Definiera målgruppen {#audience}
 
-1. Definiera målgruppen. Om du vill göra det klickar du på **[!UICONTROL Select audience]** om du vill visa en lista över tillgängliga Adobe Experience Platform-segment. [Läs mer om segment](../segment/about-segments.md)
+Klicka på **[!UICONTROL Select audience]** om du vill visa en lista över tillgängliga Adobe Experience Platform-segment. [Läs mer om segment](../segment/about-segments.md)
 
-   >[!NOTE]
-   >
-   >För API-utlösta kampanjer måste målgruppen anges via API-anrop. [Läs mer](api-triggered-campaigns.md)
+>[!NOTE]
+>
+>För API-utlösta kampanjer måste målgruppen anges via API-anrop. [Läs mer](api-triggered-campaigns.md)
 
-   I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera individerna från det valda segmentet. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace)
+I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera individerna från det valda segmentet. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace)
 
-   ![](assets/create-campaign-namespace.png)
+![](assets/create-campaign-namespace.png)
 
-   >[!NOTE]
-   >
-   >Individer som tillhör ett segment som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kommer inte att omfattas av kampanjen.
+>[!NOTE]
+>
+>Individer som tillhör ett segment som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kommer inte att omfattas av kampanjen.
 
-   <!--If you are are creating an API-triggered campaign, the **[!UICONTROL cURL request]** section allows you to retrieve the **[!UICONTROL Campaign ID]** to use in the API call. [Learn more](api-triggered-campaigns.md)-->
+<!--If you are are creating an API-triggered campaign, the **[!UICONTROL cURL request]** section allows you to retrieve the **[!UICONTROL Campaign ID]** to use in the API call. [Learn more](api-triggered-campaigns.md)-->
 
 ## Schemalägg kampanjen {#schedule}
 
