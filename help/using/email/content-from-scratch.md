@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: innehåll, redigerare, e-post, börja
 exl-id: 151594f2-85e4-4c79-9c15-334fbd3768c4
-source-git-commit: 4ce8573aa76ceae807d404e736b2d780f687aa56
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '624'
 ht-degree: 0%
 
 ---
@@ -110,13 +110,11 @@ Följ stegen nedan när du vill börja skapa ditt innehåll:
 
    ![](assets/email_designer_links.png)
 
-1. Om det behövs kan du anpassa innehållet ytterligare genom att klicka på **[!UICONTROL Switch to code editor]** uppifrån **Mer** -knappen. [Läs mer om kodredigeraren](code-content.md)
-
-   ![](assets/email_designer_switch-to-code.png)
+1. Om det behövs kan du anpassa e-postmeddelandet ytterligare genom att klicka på **[!UICONTROL Switch to code editor]** på den avancerade menyn. På så sätt kan du redigera e-postkällkoden, till exempel för att lägga till spårningstaggar eller anpassade HTML-taggar. [Läs mer om kodredigeraren](code-content.md)
 
    >[!CAUTION]
    >
-   >Du kan inte återgå till den visuella designern för det här innehållet efter att du har växlat till kodredigeraren.
+   >Du kan inte återgå till den visuella designern för det här e-postmeddelandet när du har växlat till kodredigeraren.
 
 1. När innehållet är klart klickar du på **[!UICONTROL Simulate content]** för att kontrollera återgivningen. Du kan välja skrivbordsvy eller mobilvy. [Läs mer om hur du förhandsgranskar ditt e-postmeddelande](preview.md)
 

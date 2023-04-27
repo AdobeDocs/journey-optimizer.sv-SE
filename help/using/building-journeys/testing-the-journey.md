@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: test, resa, kontroll, fel, felsökning
 exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
-source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
 source-wordcount: '1501'
 ht-degree: 1%
@@ -128,6 +128,7 @@ Observera att du inte kan ändra definitionen för affärshändelser i samma tes
 The **[!UICONTROL Show log]** kan du visa testresultaten. På den här sidan visas resans aktuella information i JSON-format. Med en knapp kan du kopiera hela noder. Du måste uppdatera sidan manuellt för att kunna uppdatera resans testresultat.
 
 ![](assets/journeytest3.png)
+
 
 >[!NOTE]
 >

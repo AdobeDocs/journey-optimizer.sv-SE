@@ -9,16 +9,20 @@ role: Admin
 level: Intermediate
 keywords: resa, meddelande, kampanj, integrering
 exl-id: b07feb98-b2ae-476c-8fcb-873b308176f0
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 1%
+source-wordcount: '412'
+ht-degree: 0%
 
 ---
 
 # Användningsfall: skicka ett meddelande med Campaign v7/v8 {#campaign-classic-use-case}
 
 I det här exemplet presenteras alla steg som krävs för att skicka e-post med hjälp av integreringen med Adobe Campaign Classic v7 och Adobe Campaign v8.
+
+>[!NOTE]
+>
+>För att kunna använda den här integreringen måste du ha Campaign Classic build 9125 eller senare.
 
 Vi skapar först en transaktionell e-postmall i Campaign. I Journey Optimizer skapar vi sedan evenemanget, handlingen och designen av kundresan.
 

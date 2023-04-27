@@ -5,7 +5,8 @@ feature: Offers
 topic: Integrations
 role: User
 level: Intermediate
-source-git-commit: c9e970bc231fc3d19f0243b71256ea0f5a981af7
+exl-id: 278cb255-439c-4ce8-ab59-07df79774b98
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 1%
@@ -56,7 +57,7 @@ Men **de flesta kanaler** kräver att man skickar in trycksaker och klickdata ti
 
 ### Anpassade händelser
 
-Synpunkter på anpassade evenemang som är kopplade till ett erbjudande kan skickas till Adobe Experience Platform enligt dina egna önskemål. Om ett erbjudande t.ex. innehåller flera knappar, som *Intresserad*, *Inte intresserad* och så vidare, du kanske vill skicka in dessa händelser separat, men de kan också skickas in som upplevelsehändelser. <!--Not sure to get that part. How feedback is collected in the first case, i.e. when events are sent in separately? Does it mean the customer just handles it the wau he wants?-->
+Synpunkter på anpassade evenemang som är kopplade till ett erbjudande kan skickas till Adobe Experience Platform enligt dina egna önskemål. Om ett erbjudande t.ex. innehåller flera knappar, som *Intresserad*, *Inte intresserad* och så vidare, du kanske vill skicka in dessa händelser separat, men de kan också skickas in som upplevelsehändelser.
 
 ## Skicka feedback
 
@@ -65,4 +66,3 @@ Om du vill skicka in feedback-data måste du skapa en datauppsättning för att 
 * Lär dig hur du skapar en datauppsättning där upplevelsehändelser samlas in i [det här avsnittet](create-dataset.md).
 
 * Lär dig hur du definierar upplevelsehändelser som ska skickas in feedback-data i [det här avsnittet](schema-requirement.md).
-

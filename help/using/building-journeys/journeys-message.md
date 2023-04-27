@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, i appen
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: 0c32248d13c08a98e9298ddc932aa2e547ab2acd
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '894'
 ht-degree: 0%
 
 ---
@@ -85,6 +85,10 @@ Det gör du genom att öppna din liveresa, välja meddelandeaktivitet och klicka
 ![](assets/add-a-message2.png)
 
 Du kan dock inte ändra de attribut som används i personaliseringen, vare sig det är profilattribut eller kontextuella data (från händelse- eller reseegenskaper).
+
+Om du har ändrat sammanhangsberoende data visas följande felmeddelande: ERR_AUTHORING_JOURNEYVERSION_201
+
+Om du har ändrat profilattribut visas följande felmeddelande: ERR_AUTHORING_JOURNEYVERSION_202
 
 Observera att för aktiviteten i appen kan ändringar göras i innehållet medan resan pågår, men utlösare i appen kan inte ändras.
 

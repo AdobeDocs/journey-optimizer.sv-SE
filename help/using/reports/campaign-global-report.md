@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: fa64f5b8-75f2-40e6-8566-5766fafe6cd6
-source-git-commit: 8a311d546829d0d80f32dfdddcdf30805688f757
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1802'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,7 @@ Kampanjen **[!UICONTROL Global report]** visas med följande flikar:
 * [I appen](#inapp-global)
 * [Push](#push-global)
 * [SMS](#sms-global)
+* [Webb](#web-tab)
 
 Kampanjen **[!UICONTROL Global report]** är uppdelat i olika widgetar som detaljerat beskriver kampanjens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](../reports/global-report.md#modify-dashboard).
 
@@ -281,6 +282,27 @@ The **[!UICONTROL Exclude Reasons]**, **[!UICONTROL Bounces Reasons]** och **[!U
 
 The **[!UICONTROL SMS - Clicks by links]** och **[!UICONTROL SMS - Tracking statistics]** widgetar detaljerar den viktigaste informationen i förhållande till besökarnas engagemang med dina URL-adresser.
 
++++
+
+## Fliken Webb {#web-tab}
+
+Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Web]** -fliken anger huvudinformationen för dina webbsidor.
+
+![](assets/web-report.png)
+
++++Läs mer om de olika mätvärden och widgetar som finns för webbrapporten.
+
+The **[!UICONTROL Web performance]** Nyckeltal anger den viktigaste informationen i relation till besökarnas engagemang i era webbupplevelser, till exempel:
+
+* **[!UICONTROL Unique impressions]**: antal unika användare som webbupplevelsen levererades till.
+
+* **[!UICONTROL Impressions]**: det totala antalet webbupplevelser som levereras till alla användare.
+
+* **[!UICONTROL Click rate]**: den procentandel besökare som interagerade med de olika elementen på dina webbsidor.
+
+The **[!UICONTROL Web summary]** diagram visar hur webbupplevelserna har utvecklats (visningar, unika intryck och klickningar) under den aktuella perioden.
+
+The **[!UICONTROL Clicks by element]** tabellen innehåller huvudinformationen om besökarnas engagemang för de olika elementen på webbsidorna.
 +++
 
 ## Ytterligare resurser

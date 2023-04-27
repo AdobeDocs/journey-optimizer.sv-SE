@@ -4,10 +4,10 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 93e3ed9e1a9a437353b800aee58952b86eab9370
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '2570'
-ht-degree: 17%
+source-wordcount: '2709'
+ht-degree: 16%
 
 ---
 
@@ -17,9 +17,13 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 ## April 2023 {#apr-2023}
 
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Versionen från 23 april finns detaljerad i dokumentationen. [Läs mer](release-notes.md)
 * Adobe Experience Manager Assets Essentials och Adobe Stock har lagts till på integreringssidan för flera lösningar. [Läs mer](../start/ajo-integrations.md)
 * Varningen för e-postunderdomäner på flera nivåer som inte tillåts har tagits bort eftersom de nu stöds. [Läs mer](../configuration/delegate-subdomain.md)
-* En anteckning har lagts till för att ange att om ändringar görs i ett offertbeslut som används i en resa måste du avpublicera resan och publicera den på nytt. [Läs mer](../building-journeys/publishing-the-journey.md)
+* En anteckning har lagts till för att ange att om ändringar görs i ett erbjudandebeslut som används i en resa måste du avpublicera resan och publicera den på nytt. [Läs mer](../building-journeys/publishing-the-journey.md)
+* Förklaring om hur man ser till att händelser redovisas korrekt i takräknaren har klargjorts i beslutshanteringen **Takningshändelse** -avsnitt. [Läs mer](../offers/offer-library/add-constraints.md#capping-event)
+* Ett nytt avsnitt har lagts till i **Ändra körningsadresser** sida. Det anger att det är möjligt att åsidosätta körningsfältet som angetts globalt i de avancerade parametrarna för resan, men åsidosättningen av e-postadressen ska bara användas för särskilda användningsfall. Det värde som oftast definieras som den primära adressen i **Körningsfält** är den som bör användas. [Läs mer](../configuration/primary-email-addresses.md#journey-parameters)
+* The **URL-spårning** -avsnittet innehåller nu en lista och beskrivning av alla kontextuella attribut som kan anges för URL-spårning i en e-postkanal. [Läs mer](../offers/offer-library/add-constraints.md)
 
 ## Mars 2023 {#march-2023}
 

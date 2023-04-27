@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '541'
 ht-degree: 4%
 
 ---
@@ -40,7 +40,7 @@ Bläddra bland flikarna nedan för att lära dig hur du lägger till ett SMS-med
 
    Mer information om hur du konfigurerar en resa finns i [den här sidan](../building-journeys/journey-gs.md)
 
-<!-- The **[!UICONTROL Surface]**field is pre-filled, by default, with the last surface used for that channel by the user. -->
+   The **[!UICONTROL Surface]** som standard är fältet förifyllt med den sista yta som användaren använder för den kanalen.
 
 Nu kan du börja designa ditt SMS-meddelande via **[!UICONTROL Edit content]** -knappen. [Definiera ditt SMS-innehåll](#sms-content)
 

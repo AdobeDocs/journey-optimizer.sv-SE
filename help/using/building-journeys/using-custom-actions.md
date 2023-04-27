@@ -9,10 +9,10 @@ role: User, Developer
 level: Intermediate
 keywords: åtgärd, anpassad, API, resa, konfiguration, tjänst
 exl-id: 2b1b3613-3096-43ec-a860-600dda1d83b2
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 23%
+source-wordcount: '395'
+ht-degree: 24%
 
 ---
 
@@ -47,7 +47,7 @@ I den här tabellen visas ett exempel på konfiguration:
 | Fält | Värde |
 | --- | --- |
 | URL | `https://xxx.yyy.com:8080/somethingstatic/` |
-| Bana | `The id of marketingCampaign + '/messages'` |
+| Sökväg | `The id of marketingCampaign + '/messages'` |
 
 Den sammanfogade URL:en har följande format:
 
@@ -55,18 +55,13 @@ Den sammanfogade URL:en har följande format:
 
 ![](assets/journey-custom-action-url.png)
 
-### Sidhuvuden
+### Huvuden och frågeparametrar {#headers}
 
-The **[!UICONTROL URL Configuration]** -avsnittet visar de dynamiska rubrikfälten, men inte de konstanta rubrikfälten. Dynamiska rubrikfält är HTTP-rubrikfält vars värde är konfigurerat som en variabel. [Läs mer](../action/about-custom-action-configuration.md).
+The **[!UICONTROL URL Configuration]** -avsnittet visar de dynamiska huvud- och frågeparameterfälten, men inte konstantfälten. Dynamiska huvud- och frågeparameterfält definieras som variabler i åtgärdskonfigurationsfönstret. [Läs mer](../action/about-custom-action-configuration.md#url-configuration)
 
-Ange vid behov värdet för dynamiska rubrikfält:
+Om du vill ange värdet för dynamiska huvud- och frågeparameterfält klickar du i fältet eller på pennikonen och markerar önskat fält.
 
-1. Välj den anpassade åtgärden under resan.
-1. Klicka på pennikonen bredvid rubrikfältet i konfigurationsfönstret **[!UICONTROL URL Configuration]** -avsnitt.
-
-   ![](assets/journey-dynamicheaderfield.png)
-
-1. Markera ett fält och klicka på **[!UICONTROL OK]**.
+![](assets/journey-dynamicheaderfield.png)
 
 ## Åtgärdsparametrar
 

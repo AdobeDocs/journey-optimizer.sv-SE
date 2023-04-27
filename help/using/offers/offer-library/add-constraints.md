@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
-source-git-commit: 47145e980c37f67b6981ffd9cc4300d29e179f45
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '2237'
+source-wordcount: '2271'
 ht-degree: 1%
 
 ---
@@ -215,9 +215,12 @@ The **[!UICONTROL Capping event]** kan du definiera vilket **[!UICONTROL Capping
    1. När regeln har skapats visas den i **[!UICONTROL Custom event query]** fält.
 
       ![](../assets/offer-capping-custom-event-query.png)
-   >[!CAUTION]
-   >
-   >För alla klickningshändelser utom beslutshändelser kanske feedback för beslutshanteringen inte samlas in automatiskt, så se till att data kommer in. [Läs mer om datainsamling](../data-collection/data-collection.md)
+
+>[!CAUTION]
+>
+>För alla takthändelser utom beslutshändelser kanske feedback för beslutshanteringen inte samlas in automatiskt, vilket kan leda till att appningsräknaren inte ökas korrekt. [Läs mer](../data-collection/data-collection.md)
+>
+>Om du vill vara säker på att varje takthändelse spåras och hanteras i appningsräknaren kontrollerar du att schemat som används för att samla in upplevelsehändelser innehåller rätt fältgrupp för den händelsen. [Läs mer](../data-collection/schema-requirement.md)
 
 ### Antal tak {#capping-count}
 

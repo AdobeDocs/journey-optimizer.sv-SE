@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1692'
 ht-degree: 1%
 
 ---
@@ -243,9 +243,23 @@ Om du vill konfigurera en URL-spårningsparameter kan du ange önskade värden d
 >
 >Do not select a folder: make sure to browse to the necessary folder and select a profile attribute to use as a tracking parameter value.-->
 
-Du kan också redigera varje **[!UICONTROL Value]** fält med [Uttrycksredigeraren](../personalization/personalization-build-expressions.md). Klicka på utgåveikonen för att öppna redigeraren. Därifrån kan du välja vilka kontextattribut du vill använda och/eller redigera texten direkt.
+Du kan också redigera varje **[!UICONTROL Value]** fält med [Uttrycksredigeraren](../personalization/personalization-build-expressions.md). Klicka på utgåveikonen för att öppna redigeraren. Därifrån kan du välja tillgängliga sammanhangsberoende attribut och/eller redigera texten direkt.
 
 ![](assets/preset-url-tracking-editor.png)
+
+Följande fördefinierade värden är tillgängliga via uttrycksredigeraren:
+
+* **Källåtgärds-ID**: ID för e-poståtgärden som lagts till i resan eller kampanjen.
+
+* **Namn på källåtgärd**: Namnet på den e-poståtgärd som lagts till i resan eller kampanjen.
+
+* **Käll-ID**: ID för resan eller kampanjen som e-postmeddelandet skickades med.
+
+* **Källnamn**: namnet på den resa eller kampanj som e-postmeddelandet skickades med.
+
+* **Källversions-ID**: ID för resan eller kampanjversionen som e-postmeddelandet skickades med.
+
+* **Erbjudande-ID**: ID för erbjudandet som används i e-postmeddelandet.
 
 >[!NOTE]
 >

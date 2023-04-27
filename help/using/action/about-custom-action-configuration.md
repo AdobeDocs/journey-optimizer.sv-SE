@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: 16738786e4ebeef3417fd0f6e5be741b348c2744
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '998'
 ht-degree: 4%
 
 ---
@@ -97,35 +97,31 @@ När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICO
    >
    > The **DELETE** -metoden stöds inte. Om du behöver uppdatera en befintlig resurs väljer du **PUT** -metod.
 
-1. I **[!UICONTROL Headers]** definierar du HTTP-rubrikerna för det begärandemeddelande som ska skickas till den externa tjänsten:
-   1. Om du vill lägga till ett rubrikfält klickar du på **[!UICONTROL Add a header field]**.
-   1. Ange huvudfältets nyckel.
-   1. Om du vill ange ett dynamiskt värde för nyckelvärdepar väljer du **[!UICONTROL Variable]**. Annars väljer du **[!UICONTROL Constant]**.
+1. Definiera rubriker och frågeparametrar:
 
-      Du kan till exempel ange ett dynamiskt värde för en tidsstämpel.
+   * I **[!UICONTROL Headers]** avsnitt, klicka **[!UICONTROL Add a header field]** för att definiera HTTP-rubrikerna för det begärandemeddelande som ska skickas till den externa tjänsten. The **[!UICONTROL Content-Type]** och **[!UICONTROL Charset]** rubrikfält anges som standard. Du kan inte ändra eller ta bort dessa fält.
 
-   1. Om du har valt **[!UICONTROL Constant]** anger du sedan konstantvärdet.
+   * I **[!UICONTROL Query parameters]** avsnitt, klicka **[!UICONTROL Add a Query parameter field]** för att definiera de parametrar som du vill lägga till i URL-adressen.
 
-      Om du har valt **[!UICONTROL Variable]** anger du den här variabeln när du lägger till den anpassade åtgärden på en resa. [Läs mer](../building-journeys/using-custom-actions.md).
+   ![](assets/journeyurlconfiguration2bis.png)
 
-      ![](assets/journeyurlconfiguration2.png)
+1. Ange fältets etikett eller namn.
 
-   1. Om du vill ta bort ett rubrikfält pekar du på rubrikfältet och klickar på **[!UICONTROL Delete]** ikon.
-   The **[!UICONTROL Content-Type]** och **[!UICONTROL Charset]** rubrikfält anges som standard. Du kan inte ändra eller ta bort dessa fält.
+1. Välj typ: **[!UICONTROL Constant]** eller **[!UICONTROL Variable]**. Om du har valt **[!UICONTROL Constant]** anger du sedan det konstanta värdet i **[!UICONTROL Value]** fält. Om du har valt **[!UICONTROL Variable]** anger du den här variabeln när du lägger till den anpassade åtgärden på en resa. [Läs mer](../building-journeys/using-custom-actions.md).
 
-   När du har lagt till den anpassade åtgärden för en resa kan du fortfarande lägga till rubrikfält i den om resan är i utkaststatus. Om du inte vill att resan ska påverkas av konfigurationsändringar duplicerar du den anpassade åtgärden och lägger till rubrikfälten i den nya anpassade åtgärden.
+   ![](assets/journeyurlconfiguration2.png)
 
    >[!NOTE]
+   >
+   >När du har lagt till den anpassade åtgärden för en resa kan du fortfarande lägga till fält för huvud- eller frågeparametrar om resan är i utkaststatus. Om du inte vill att resan ska påverkas av konfigurationsändringar duplicerar du den anpassade åtgärden och lägger till fälten till den nya anpassade åtgärden.
    >
    >Huvuden valideras enligt fälttolkningsregler. Läs mer i [den här dokumentationen](https://tools.ietf.org/html/rfc7230#section-3.2.4){_blank}.
 
 ## Definiera åtgärdsparametrarna {#define-the-message-parameters}
 
-![](assets/messageparameterssection.png)
-
 I **[!UICONTROL Action parameters]** klistra in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten.
 
-![](assets/customactionpayloadmessage.png)
+![](assets/messageparameterssection.png)
 
 >[!NOTE]
 >
@@ -135,7 +131,7 @@ Du kan definiera parametertypen (t.ex.: sträng, heltal osv.).
 
 Du kan också välja mellan att ange om en parameter är en konstant eller en variabel:
 
-* Konstant innebär att parametervärdet definieras av en teknisk person i åtgärdskonfigurationsfönstret. Värdet är alltid detsamma oavsett resa. Det kommer inte att variera och marknadsföraren kommer inte att se det när han eller hon använder den anpassade åtgärden under resan. Det kan till exempel vara ett ID som tredjepartssystemet förväntar sig. I så fall är fältet till höger om växlingskonstanten/variabeln det värde som skickas.
-* Variabel innebär att parameterns värde varierar. Marknadsförare som använder den här anpassade åtgärden under en resa kan skicka det värde de vill ha eller ange var värdet för den här parametern ska hämtas (t.ex. från händelsen, från Adobe Experience Platform). I så fall är fältet till höger om växlingskonstanten/variabeln den etikett marknadsförarna kommer att se under resan för att namnge den här parametern.
+* **Konstant** betyder att parameterns värde definieras av en teknisk person i åtgärdskonfigurationsfönstret. Värdet är alltid detsamma oavsett resa. Det kommer inte att variera och marknadsföraren kommer inte att se det när han eller hon använder den anpassade åtgärden under resan. Det kan till exempel vara ett ID som tredjepartssystemet förväntar sig. I så fall är fältet till höger om växlingskonstanten/variabeln det värde som skickas.
+* **Variabel** betyder att parameterns värde kommer att variera. Marknadsförare som använder den här anpassade åtgärden under en resa kan skicka det värde de vill ha eller ange var värdet för den här parametern ska hämtas (t.ex. från händelsen, från Adobe Experience Platform). I så fall är fältet till höger om växlingskonstanten/variabeln den etikett marknadsförarna kommer att se under resan för att namnge den här parametern.
 
 ![](assets/customactionpayloadmessage2.png)

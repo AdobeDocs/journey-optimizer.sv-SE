@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: erbjudanden, beslut, e-post, personalisering, beslut
 exl-id: 1e648eca-b5ca-4767-b45d-c179243e347f
-source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '624'
 ht-degree: 0%
 
 ---
@@ -47,25 +47,21 @@ Följ stegen nedan för att infoga ett beslut i ett e-postmeddelande:
 
    Lär dig hur du använder innehållskomponenter i [det här avsnittet](content-components.md).
 
-1. The **[!UICONTROL Offer decision]** visas på den högra paletten. Klicka på **[!UICONTROL Select Offer decision]**.
+1. The **[!UICONTROL Offer decision]** visas på den högra paletten. Klicka på **[!UICONTROL Select Offer decision]**:
 
-   ![](assets/deliver-offer-tab.png)
+   1. I det fönster som visas väljer du den placering som motsvarar de erbjudanden som du vill visa.
 
-1. I det fönster som visas väljer du den placering som motsvarar de erbjudanden som du vill visa.
+      [Placeringar](../offers/offer-library/creating-placements.md) är behållare som används för att visa upp dina erbjudanden. I det här exemplet använder vi placeringen&quot;e-post top image&quot;. Den här placeringen har skapats i erbjudandebiblioteket för att visa erbjudanden av bildtyp som ligger överst i meddelandena.
 
-   [Placeringar](../offers/offer-library/creating-placements.md) är behållare som används för att visa upp dina erbjudanden. I det här exemplet använder vi placeringen&quot;e-post top image&quot;. Den här placeringen har skapats i erbjudandebiblioteket för att visa erbjudanden av bildtyp som ligger överst i meddelandena.
+   1. Beslut som matchar den valda placeringsvisningen. Välj vilket beslut som ska användas i innehållskomponenten och klicka sedan på **[!UICONTROL Add]**.
 
-1. Beslut som matchar den valda placeringsvisningen. Välj vilket beslut som ska användas i innehållskomponenten och klicka sedan på **[!UICONTROL Add]**.
+      >[!NOTE]
+      >
+      >Endast beslut som är kompatibla med den valda placeringen visas i listan. I det här exemplet matchar endast en erbjudandeaktivitet placeringen &quot;email top image&quot;.
 
-   >[!NOTE]
-   >
-   >Endast beslut som är kompatibla med den valda placeringen visas i listan. I det här exemplet matchar endast en erbjudandeaktivitet placeringen &quot;email top image&quot;.
+      ![](assets/deliver-offer-placement.png)
 
-   ![](assets/deliver-offer-placement.png)
-
-Beslutet läggs nu till i komponenten.
-
-När du har sparat dina ändringar är dina erbjudanden klara att visas för de relevanta profilerna när du skickar meddelandet som en del av en resa.
+Beslutet läggs nu till i komponenten. När du har sparat dina ändringar är dina erbjudanden klara att visas för de relevanta profilerna när du skickar meddelandet som en del av en resa.
 
 >[!NOTE]
 >
@@ -79,39 +75,34 @@ Du kan förhandsgranska de olika erbjudanden som ingår i det beslut som lagts t
 
 Följ stegen nedan för att visa de olika erbjudanden som ingår i beslutet med en kundprofil.
 
-1. Klicka på knappen **[!UICONTROL Simulate Content button]**.
+>[!NOTE]
+>
+>Du måste ha testprofiler tillgängliga för att kunna förhandsgranska dina meddelanden. Lär dig hur [skapa testprofiler](../segment/creating-test-profiles.md).
 
-   >[!NOTE]
-   >
-   >Du måste ha testprofiler tillgängliga för att kunna förhandsgranska dina meddelanden. Lär dig hur [skapa testprofiler](../segment/creating-test-profiles.md).
+1. Välj de testprofiler som ska användas för att förhandsgranska erbjudandet:
 
-1. Om du vill välja vilket namnutrymme som ska användas för att identifiera testprofiler väljer du **[!UICONTROL Email]** från **[!UICONTROL Identity namespace]** fält.
+   1. Klicka på **[!UICONTROL Simulate Content button]** och sedan välja det namnutrymme som ska användas för att identifiera testprofiler från **[!UICONTROL Identity namespace]** fält.
 
-   >[!NOTE]
-   >
-   >I det här exemplet använder vi **E-post** namnutrymme. Läs mer om Adobe Experience Platform identitetsnamnutrymmen [i det här avsnittet](../segment/get-started-identity.md).
+      >[!NOTE]
+      >
+      >I det här exemplet använder vi **E-post** namnutrymme. Läs mer om Adobe Experience Platform identitetsnamnutrymmen [i det här avsnittet](../segment/get-started-identity.md).
 
-1. I listan med identitetsnamnutrymmen väljer du **[!UICONTROL Email]** och klicka **[!UICONTROL Select]**.
-
-1. I **[!UICONTROL Identity value]** anger du värdet för att identifiera testprofilen. I det här exemplet anger du e-postadressen för en testprofil.
+   1. I **[!UICONTROL Identity value]** anger du värdet för att identifiera testprofilen. I det här exemplet anger du e-postadressen för en testprofil.
 
    <!--For example enter smith@adobe.com and click the **[!UICONTROL Add profile]** button.-->
 
-1. Lägg till andra profiler så att du kan testa olika varianter av meddelandet beroende på profildata.
+   1. Lägg till andra profiler så att du kan testa olika varianter av meddelandet beroende på profildata.
 
-   ![](assets/deliver-offer-test-profiles.png)
+      ![](assets/deliver-offer-test-profiles.png)
 
-1. Klicka på **[!UICONTROL Preview]** för att testa meddelandet.
 
-1. Välj en testprofil. Erbjudandet som motsvarar den valda profilen (en kvinna) visas.
+1. Klicka på **[!UICONTROL Preview]** för att testa meddelandet och sedan välja en testprofil. Erbjudandet som motsvarar den valda profilen (en kvinna) visas.
 
    ![](assets/deliver-offer-test-profile-female-preview.png)
 
-1. Välj andra testprofiler om du vill förhandsgranska e-postinnehållet för varje variant av meddelandet. I meddelandeinnehållet visas nu erbjudandet som motsvarar den valda testprofilen (nu en man).
+   Du kan välja andra testprofiler om du vill förhandsgranska e-postinnehållet för varje variant av meddelandet. I meddelandeinnehållet visas nu erbjudandet som motsvarar den valda testprofilen (nu en man).
 
-   ![](assets/deliver-offer-test-profile-male-preview.png)
-
-Läs mer om de detaljerade stegen för att kontrollera förhandsgranskningen av meddelandet i [det här avsnittet](#preview-your-messages).
+Läs mer om hur du kontrollerar förhandsgranskning av meddelanden i [det här avsnittet](#preview-your-messages).
 
 ## Instruktionsvideo{#video-offers}
 

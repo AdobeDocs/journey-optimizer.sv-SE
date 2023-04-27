@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: d822c541-c043-41f5-916c-6a8e39fb148a
-source-git-commit: a2d05c7f2c00172a6f4e7b9d9f60d1732c91af8a
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 10%
+source-wordcount: '83'
+ht-degree: 12%
 
 ---
 
@@ -21,10 +21,8 @@ Katalogen för exporterade erbjudanden är tillgänglig i Adobe Experience Platf
 
 Klicka på en datauppsättning för att komma åt informationen om den.
 
+The **[!UICONTROL Preview dataset]** kan du visa den senaste lyckade gruppen i datauppsättningen.
+
 ![](../assets/dataset-activity.png)
-
-The **[!UICONTROL Preview dataset]** kan du visa den senaste lyckade gruppen i datauppsättningen. Den vänstra rutan innehåller information om de typer av data som har exporterats.
-
-![](../assets/dataset-preview.png)
 
 Mer information om hur du bläddrar bland och använder datauppsättningar finns i [den här sidan](../../data/get-started-datasets.md).

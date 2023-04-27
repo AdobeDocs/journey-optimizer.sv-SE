@@ -4,10 +4,10 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 324ceaa981b3ce2025e4ba64c62cbe377d62e817
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '1897'
-ht-degree: 7%
+source-wordcount: '1859'
+ht-degree: 8%
 
 ---
 
@@ -24,9 +24,9 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 
 ## Versionsinformation april 2023 {#apr-e-rn-2023}
 
-Informationen nedan kan komma att ändras utan föregående meddelande fram till releasedatum. Uppdaterad dokumentation kommer att publiceras på releasedatum och direkta länkar kommer att läggas till på den här sidan.
+<!--Information below is subject to change without prior notice until the release availability date. Updated documentation will be published at the release date, and direct links will be added in this page.
 
-**Releasedatum**: 27 april 2023
+**Release date**: April 27, 2023-->
 
 ### Nya funktioner{#apr-2023-features}
 
@@ -42,7 +42,7 @@ Informationen nedan kan komma att ändras utan föregående meddelande fram till
 <td>
 <p>Adobe Journey Optimizer utökar sina flerkanalsfunktioner genom att lägga till stöd för webbkanaler. Nu kan ni skapa, ändra och förhandsgranska webbupplevelser som vilken kanal som helst, via ett smart och intuitivt visuellt gränssnitt för att personalisera slutanvändarnas upplevelse. Observera att ni i Journey Optimizer för närvarande bara kan skapa webbupplevelser i kampanjer.</p>
 <img src="assets/do-not-localize/web-authoring.gif"/>
-<!--p>For more information, refer to the <a href="../in-app/get-started-in-app.md">detailed documentation</a>.</p-->
+<p>Mer information finns i den <a href="../web/get-started-web.md">detaljerade dokumentationen</a>.</p>
 </tr>
 </tbody>
 </table>
@@ -65,27 +65,27 @@ Informationen nedan kan komma att ändras utan föregående meddelande fram till
 </tbody>
 </table>
 
+<!--
 <table>
 <thead>
 <tr>
-<th><strong>Ny Journey-kontrollpanel (beta)</strong><br/></th>
+<th><strong>New Journey dashboard (beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p> Kontrollpanelen för resan är nu uppdelad på två flikar:</p>
-<ul><li>Använd <strong>Översikt</strong> för att få tillgång till en ny kontrollpanel som visar viktiga mått för dina resor.</li>
-<li>Använd <strong>Bläddra</strong> för att få tillgång till listan över alla resor.</li></ul>
-<p>Denna förmåga är tillgänglig på alla resor som en betaversion.</p>
+<p> The Journey dashboard is now split in two tabs:</p>
+<ul><li>Use the <strong>Overview</strong> tab to access a new dashboard which displays key metrics related to your journeys.</li>
+<li>Use the <strong>Browse</strong> tab to access the list of all journeys.</li></ul>
+<p>This capability is accessible in all journeys as a public beta.</p>
 <img src="assets/do-not-localize/journey-dashboard.gif"/>
-<!--p>For more information, refer to the <a href="../building-journeys/journey-gs.md#journey-access">detailed documentation</a>.</p-->
 </td>
 </tr>
 </tbody>
 </table>
 
-<!--
+
 <table>
 <thead>
 <tr>
@@ -107,14 +107,14 @@ Informationen nedan kan komma att ändras utan föregående meddelande fram till
 
 **Resor**
 
-* På arbetsytan visas nu aktivitets-ID på åtgärdsnoder och sluttaggar. Detta förbättrar rapportering och återmarknadsföring.
+* På arbetsytan för resan visas nu aktivitets-ID för meddelandeaktiviteter och sluttaggar. Detta förbättrar rapportering och återmarknadsföring.
 * Konfigurationsrutans layout, som visas i åtgärder, datakällor, händelser och resor, har förbättrats.
 * Nya skyddsräcken har lagts till på resorna:
-   * Antalet noder i en resa är nu begränsat till max 50
-   * Antalet direktresor i en organisation är nu begränsat till maximalt 100. Resor i testläge beaktas inte.
+   * Antalet aktiviteter under en resa är nu begränsat till 50. [Läs mer](../start/guardrails.md#journeys-guardrails-journeys)
+   * Antalet **direktresor** i en organisation är nu begränsad till 100 per sandlåda. Resor i testläge beaktas inte. [Läs mer](../start/guardrails.md#journeys-guardrails-journeys)
 
-* När du lägger till en e-post-, SMS- eller push-åtgärd på en resa är ytan nu som standard förfylld med den senast använda ytan för den kanalen.
-* Nu kan du definiera statiska eller dynamiska frågeparametrar i dina anpassade åtgärder.
+* När du lägger till en [E-post](../email/create-email.md), [SMS](../sms/create-sms.md) eller [Push](../push/create-push.md) åtgärder på en resa är ytan nu förfylld som standard med den senast använda ytan för den kanalen under den aktuella resan.
+* Nu kan du definiera statiska eller dynamiska frågeparametrar i dina anpassade åtgärder. [Läs mer](../action/about-custom-action-configuration.md#url-configuration)
 
 **Rapportering**
 
@@ -190,6 +190,8 @@ Informationen nedan kan komma att ändras utan föregående meddelande fram till
 * På arbetsytan är etiketten för **End** -taggen anges inte längre automatiskt med den föregående aktivitetens namn. Användarna kan lägga till en anpassad etikett manuellt vid behov.
 * Standardtidsgränsen och fellängden för resans egenskaper har ändrats från 5 till 30 sekunder. [Läs mer](../configuration/external-systems.md#timeout)
 * Standardhastigheten för begränsning i lässegmentsaktiviteter har ändrats från 20 000 till 5 000 meddelanden per sekund. [Läs mer](../building-journeys/read-segment.md#configuring-segment-trigger-activity)
+* Ett skyddsutkast har lagts till i testläget för att endast lyssna på händelser som skickas via gränssnittet. Händelser som skickas via ett externt verktyg beaktas inte. [Läs mer](../building-journeys/testing-the-journey.md)
+
 
 <!-- 
 * When adding an Email, SMS or Push action in a journey, the surface is now pre-filled, by default, with the last used surface for that channel.

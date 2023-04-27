@@ -10,7 +10,7 @@ hide: true
 hidefromtoc: true
 exl-id: 6b438268-d983-4ab8-9276-c4b7de74e6bd
 badge: label="Beta" type="Informative"
-source-git-commit: a6a892ec20dfeb6879bef2f4c2eb4a0f8f54885f
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 3%
@@ -60,8 +60,6 @@ Så här skapar och skickar du ett direktutskick:
    ![](assets/direct-mail-campaign.png)
 
 1. Klicka **[!UICONTROL Create]** Definiera sedan grundläggande information om kampanjen (namn, beskrivning). [Lär dig konfigurera en kampanj](../campaigns/create-campaign.md)
-
-   ![](assets/direct-mail-edit.png)
 
 1. Klicka på **[!UICONTROL Edit content]** för att konfigurera extraheringsfilen som ska skickas till din direktmeddelandeleverantör.
 

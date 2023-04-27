@@ -5,30 +5,15 @@ feature: Web Channel
 topic: Content Management
 role: User
 level: Beginner
-hide: true
-hidefromtoc: true
 exl-id: e28c038b-49ed-4685-bfe6-514116eb0711
-badge: label="Beta" type="Informative"
-source-git-commit: c21c0386be33eea6f7053fb891ebad3d9a1154c9
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '632'
 ht-degree: 3%
 
 ---
 
 # Skapa webbupplevelser {#create-web}
-
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här dokumentationen:
-
-* [Kom igång med webbkanalen](get-started-web.md)
-* **[Skapa webbupplevelser](create-web.md)**
-* [Skapa webbsidor](author-web.md)
-* [Hjälptillägg för visuell redigering](visual-editing-helper.md)
-* [Webbrapportering](web-report.md)
-
->[!ENDSHADEBOX]
 
 [!DNL Journey Optimizer] gör att ni kan personalisera den webbupplevelse ni levererar till era kunder via inkommande webbkampanjer.
 
@@ -36,35 +21,7 @@ Vad du hittar i den här dokumentationen:
 >
 >Ingår [!DNL Journey Optimizer] kan du bara skapa webbupplevelser med **kampanjer**.
 
-## Förutsättningar {#prerequesites}
-
-För att kunna komma åt och skriva webbsidor i [!DNL Journey Optimizer] följer du kraven nedan:
-
-* Om du vill lägga till ändringar på webbplatsen måste du implementera [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} på er webbplats.
-
-* Så här öppnar du [!DNL Journey Optimizer] webbdesignern måste ladda ned [Adobe Experience Cloud Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca){target="_blank"} webbläsartillägg i Chrome. [Läs mer](visual-editing-helper.md)
-
->[!CAUTION]
->
->Google Chrome är för närvarande den enda webbläsaren som stöder redigering av webbsidor i [!DNL Journey Optimizer].
-
-För att webbupplevelsen ska kunna levereras på rätt sätt måste följande inställningar definieras:
-
-* I [Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html){target="_blank"}kontrollerar du att du har en datastream definierad, till exempel under **[!UICONTROL Adobe Experience Platform]** den tjänst du har båda **[!UICONTROL Edge Segmentation]** och **[!UICONTROL Adobe Journey Optimizer]** aktiverade alternativ.
-
-   Detta säkerställer att Journey Optimizer inkommande händelser hanteras korrekt av Adobe Experience Platform Edge. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html){target="_blank"}
-
-   ![](assets/web-aep-datastream-ajo.png)
-
-   >[!NOTE]
-   >
-   >The **[!UICONTROL Adobe Journey Optimizer]** kan bara aktiveras när **[!UICONTROL Edge Segmentation]** är redan aktiverat.
-
-* I [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}, make sure you have one merge policy with the **[!UICONTROL Active-On-Edge Merge Policy]** option enabled. To do this, select a policy under the **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** > **[!UICONTROL Merge Policies]** Experience Platform menu. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html#configure){target="_blank"}
-
-   Den här sammanfogningsprincipen används av [!DNL Journey Optimizer] inkommande kanaler för att korrekt aktivera och publicera inkommande kampanjer. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html){target="_blank"}
-
-   ![](assets/web-aep-merge-policy.png)
+[Lär dig hur du skapar en webbkampanj i den här videon](#video)
 
 ## Skapa en webbkampanj {#create-web-campaign}
 
@@ -80,11 +37,13 @@ För att webbupplevelsen ska kunna levereras på rätt sätt måste följande in
 
 Följ stegen nedan för att börja skapa en webbupplevelse genom en kampanj.
 
+>[!NOTE]
+>
+>Om det här är första gången du skapar en webbupplevelse måste du följa de krav som beskrivs i [det här avsnittet](web-prerequisites.md).
+
 1. Skapa en kampanj. [Läs mer](../campaigns/create-campaign.md)
 
 1. Välj **[!UICONTROL Web]** åtgärd.
-
-   ![](assets/web-create-campaign.png)
 
 1. Definiera en webbyta.
 
@@ -112,47 +71,13 @@ Följ stegen nedan för att börja skapa en webbupplevelse genom en kampanj.
 
    ![](assets/web-pages-matching-rule-example.png)
 
-1. När du har definierat webbytan väljer du **[!UICONTROL Create]**. Nu kan du konfigurera kampanjens egenskaper och inställningar.
+1. När du har definierat webbytan väljer du **[!UICONTROL Create]**.
 
-## Konfigurera webbkampanjen {#configure-web-campaign}
+1. Slutför stegen för att skapa en webbkampanj, t.ex. kampanjegenskaperna, [publik](../segment/about-segments.md)och [schema](../campaigns/create-campaign.md#schedule).
 
-1. I **[!UICONTROL Properties]** kan du redigera kampanjnamnet och lägga till en beskrivning om det behövs.
+   ![](assets/web-campaign-steps.png)
 
-   ![](assets/web-campaign-properties.png)
-
-1. Om du vill tilldela etiketter för anpassad eller grundläggande dataanvändning till webbkampanjen väljer du **[!UICONTROL Manage access]** överst på skärmen. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md)
-
-1. Du kan välja **[!UICONTROL Content experiment]** testa materialbehandlingar med delar av publiken för att avgöra vilken behandling som fungerar bäst med avseende på ett visst mätvärde. [Läs mer](../campaigns/content-experiment.md)
-
-   >[!AVAILABILITY]
-   >
-   >The **Content Experiment** är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
-
-1. Från **[!UICONTROL Action]** fliken för kampanjen, välj **[!UICONTROL Edit content]** för att börja skapa webbkampanjer. [Läs mer](author-web.md)
-
-   ![](assets/web-edit-content.png)
-
-1. Från **[!UICONTROL Audience]** kan du definiera vilka som ska kunna se webbkampanjen. Som standard visas webbkampanjen för alla besökare.
-
-   ![](assets/web-campaign-audience.png)
-
-   Du kan också välja en viss målgrupp. Använd **[!UICONTROL Select audience]** om du vill visa en lista över tillgängliga Adobe Experience Platform-segment. [Läs mer om segment](../segment/about-segments.md)
-
-   >[!NOTE]
-   >
-   >För API-utlösta kampanjer måste målgruppen anges via API-anrop. [Läs mer](../campaigns/api-triggered-campaigns.md)
-
-   ![](assets/web-campaign-select-audience.png)
-
-1. I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera individerna från det valda segmentet. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace)
-
-1. Definiera en **[!UICONTROL Schedule]** för webbkampanjen. [Läs mer](../campaigns/create-campaign.md#schedule)
-
-   ![](assets/web-campaign-schedule.png)
-
-   Som standard startar den när den aktiveras manuellt och avslutas när den stoppas manuellt, men du kan också definiera specifika datum och tidpunkter för när ändringarna ska visas.
-
-   ![](assets/web-campaign-schedule-start.png)
+Mer information om hur du konfigurerar en kampanj finns i [den här sidan](../campaigns/get-started-with-campaigns.md).
 
 ## Aktivera webbkampanjen {#activate-web-campaign}
 
@@ -164,9 +89,7 @@ När du definierat din [webbkampanjsinställningar](#configure-web-campaign) och
 
 1. Välj **[!UICONTROL Review to activate]**.
 
-   ![](assets/web-campaign-review.png)
-
-1. Granska och redigera vid behov innehåll, egenskaper, yta, målgrupp och schema.
+1. Kontrollera och redigera vid behov innehåll, egenskaper, yta, målgrupp och schema.
 
 1. Välj **[!UICONTROL Activate]**.
 
@@ -201,3 +124,9 @@ När en webbkampanj är aktiv kan ni stoppa den för att hindra publiken från a
 >[!NOTE]
 >
 >När en webbkampanj har stoppats kan du inte redigera eller aktivera den igen. Du kan bara duplicera den och aktivera den duplicerade kampanjen.
+
+## Instruktionsvideo{#video}
+
+I videon nedan visas hur du skapar en webbkampanj, konfigurerar dess egenskaper, granskar och publicerar den.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3418800/?quality=12&learn=on)

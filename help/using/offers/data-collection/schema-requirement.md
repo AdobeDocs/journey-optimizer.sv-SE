@@ -7,7 +7,7 @@ feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: f70ba749-f517-4e09-a381-243b21713b48
-source-git-commit: b06b545d377fcd1ffe6ed218badeb94c1bb85ef2
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 1%
@@ -16,11 +16,11 @@ ht-degree: 1%
 
 # Konfigurera datainsamling {#schema-requirements}
 
-<!--To send in feedback data, you must define how the experience events will be captured.-->
-
 För att kunna få feedback om andra händelsetyper än beslutshändelser måste du ange rätt värde för varje händelsetyp i en **upplevelsehändelse** som skickas till Adobe Experience Platform.
 
-Kontrollera att schemat som används i datauppsättningen har **[!UICONTROL Experience Event - Proposition Interactions]** fältgrupp som är associerad med den. [Läs mer](create-dataset.md)
+>[!CAUTION]
+>
+>Kontrollera att schemat som används i datauppsättningen har **[!UICONTROL Experience Event - Proposition Interactions]** fältgrupp som är associerad med den. [Läs mer](create-dataset.md)
 
 Nedan visas schemakraven som du måste implementera i JavaScript-koden.
 

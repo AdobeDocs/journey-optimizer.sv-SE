@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: datauppsättning, optimering, användningsfall
 exl-id: 26ba8093-8b6d-4ba7-becf-b41c9a06e1e8
-source-git-commit: 4c0508d415630ca4a74ec30e5b43a3bfe7fd8a4f
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,6 @@ På den här sidan hittar du en lista över Adobe Journey Optimizer datamängder
 [Händelsedatauppsättning för push-spårning](#push-tracking-experience-event-dataset)
 [Resestegshändelse](#journey-step-event)
 [Datamängd för beslutshändelse](#ode-decisionevents)
-[Samtycketjänstens datauppsättning](#consent-service-dataset)
 [BCC Feedback, händelsedatauppsättning](#bcc-feedback-event-dataset)
 [Enhetsdatauppsättning](#entity-dataset)
 
@@ -258,15 +257,16 @@ select explode(propositionexplode.selections) AS proposedOffers from
 group by proposedOffers.id, proposedOffers.name, po._experience.decisioning.ranking.priority;
 ```
 
-## Samtycketjänstens datauppsättning{#consent-service-dataset}
+<!--
+## Consent Service Dataset{#consent-service-dataset}
 
-_Namn i gränssnittet: CJM-sambandstjänstens datauppsättning (systemdatauppsättning)_
+_Name in the interface: CJM Consent Service Dataset (system dataset)_
 
-Datauppsättning för tjänsten Journey Optimizer Consent.
+Dataset for Journey Optimizer Consent service.
 
-Det relaterade schemat är CJM Consent Service Schema.
+The related schema is CJM Consent Service Schema.
 
-Fråga för att lista e-post-ID som har samtyckt till att ta emot e-post:
+Query to list email IDs that have consented to receive email:
 
 ```sql
 select key as email FROM (
@@ -278,7 +278,7 @@ select key as email FROM (
 where value.marketing.email.val == 'y'
 ```
 
-Fråga för att returnera medgivandevärde för ett e-post-ID där e-post-ID är indata:
+Query to return consent value for an email ID where email ID would be the input:
 
 ```sql
 select value.marketing.email.val FROM (
@@ -287,6 +287,7 @@ select value.marketing.email.val FROM (
   from cjm_consent_service_dataset
  )
 ```
+-->
 
 ## BCC Feedback, händelsedatauppsättning{#bcc-feedback-event-dataset}
 

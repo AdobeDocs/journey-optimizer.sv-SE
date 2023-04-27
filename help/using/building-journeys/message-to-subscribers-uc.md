@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, användningsfall, meddelande, prenumeranter, lista, läsa
 exl-id: 2540938f-8ac7-43fa-83ff-fed59f6bc417
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '306'
 ht-degree: 3%
 
 ---
@@ -56,3 +56,7 @@ Så här konfigurerar du den här resan:
       ![](assets/message-to-subscribers-uc-2.png)
 
    1. I **[!UICONTROL Add an expression]** klickar du på **[!UICONTROL Ok]**.
+
+>[!CAUTION]
+>
+>Åsidosättning av e-postadresser ska endast användas för särskilda användningsfall. Oftast behöver du inte ändra e-postadressen eftersom värdet är definierat som den primära adressen i **[!UICONTROL Execution fields]** är den som bör användas. [Läs mer](../configuration/primary-email-addresses.md)

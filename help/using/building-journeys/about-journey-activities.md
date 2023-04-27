@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: resa, aktiviteter, komma igång, händelser, åtgärd
 exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 16%
+source-wordcount: '484'
+ht-degree: 14%
 
 ---
 
@@ -66,9 +66,27 @@ Om du har konfigurerat anpassade åtgärder visas de också här. [Läs mer](../
 
 ## God praxis {#best-practices}
 
+### Lägg till en etikett
+
 De flesta aktiviteter gör att du kan definiera en **[!UICONTROL Label]**. Detta lägger till ett suffix till namnet som visas under din aktivitet på arbetsytan. Detta är användbart om du använder samma aktivitet flera gånger under resan och vill identifiera dem enklare. Felsökningen blir också enklare om fel uppstår, vilket gör det lättare att läsa rapporterna. Du kan också lägga till ett valfritt **[!UICONTROL Description]**.
 
-![](assets/journey59bis.png)
+![](assets/journey-action-label.png)
+
+### Hantera avancerade parametrar {#advanced-parameters}
+
+De flesta aktiviteter visar ett antal avancerade och/eller tekniska parametrar som du inte kan ändra.
+
+![](assets/journey-advanced-parameters.png)
+
+För bättre läsbarhet kan du dölja de här parametrarna med **[!UICONTROL Hide read-only fields]** -knappen.
+
+![](assets/journey-hide-read-only-fields.png)
+
+I vissa specifika sammanhang kan du åsidosätta parametrarnas värden för specifik användning. Om du vill tvinga fram ett värde klickar du på **[!UICONTROL Enable parameter override]** till höger om fältet. [Läs mer](../configuration/primary-email-addresses.md#journey-parameters)
+
+![](assets/journey-enable-parameter-override.png)
+
+### Lägg till en alternativ sökväg
 
 När ett fel inträffar i en åtgärd eller ett villkor upphör en individs resa. Det enda sättet att få den att fortsätta är att markera rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [det här avsnittet](../building-journeys/using-the-journey-designer.md#paths).
 

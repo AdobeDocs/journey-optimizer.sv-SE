@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, mallar
 exl-id: 393b36ad-0a37-46d9-b455-ae6684e0acbd
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 4%
@@ -24,7 +24,7 @@ När du designat [innehåll på landningssidan](lp-content.md)kan du spara den f
 
 1. Klicka på ellipsen högst upp till höger på skärmen.
 
-1. Välj **[!UICONTROL Save design template]** i listrutan.
+1. Välj **[!UICONTROL Save as content template]** i listrutan.
 
    ![](assets/lp_designer-save-template.png)
 
@@ -52,7 +52,7 @@ Nästa gång du skapar en landningssida kan du använda den här mallen för att
 
    ![](assets/lp_designer-saved-templates-navigate.png)
 
-1. Klicka på **[!UICONTROL Use this landing page]**.
+1. Klicka på **[!UICONTROL Use this template]**.
 
 1. Redigera innehållet efter behov med hjälp av designern för landningssidan.
 

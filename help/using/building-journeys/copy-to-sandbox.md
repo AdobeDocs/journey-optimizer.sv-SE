@@ -9,9 +9,9 @@ role: User, Developer
 level: Intermediate
 keywords: sandlåda, resa, kopia, miljö
 exl-id: 8c63f2f2-5cec-4cb2-b3bf-2387eefb5002
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_journey_copy_sandbox_details"
 >title="Sandlådeinformation"
->abstract="Markera den målsandlåda som du vill kopiera resan till. Endast sandlådor i din IMS-organisation är tillgängliga."
+>abstract="Markera den målsandlåda som du vill kopiera resan till. Endast sandlådor i din organisation är tillgängliga."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_copy_object_details"
@@ -58,7 +58,7 @@ Så här kopierar du en resa till en annan sandlåda:
 
    ![](assets/copy-sandbox2.png)
 
-3. Välj **Målsandlåda** i listrutan. Endast sandlådor i din IMS-organisation är tillgängliga.
+3. Välj **Målsandlåda** i listrutan. Endast sandlådor i din organisation är tillgängliga.
 
 4. Granska **Beroende objekt** -avsnitt. Det här är listan över associerade objekt som används under resan. I den här listan visas namn, objekttyp och internt Journey Optimizer-id.
 

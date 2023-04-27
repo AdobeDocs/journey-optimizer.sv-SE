@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: a6a892ec20dfeb6879bef2f4c2eb4a0f8f54885f
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1371'
 ht-degree: 33%
 
 ---
@@ -230,10 +230,10 @@ ht-degree: 33%
    + [Konfigurera direktreklam](using/direct-mail/direct-mail-configuration.md)
 + Webbkanal{#web}
    + [Kom igång med webbkanalen](using/web/get-started-web.md)
+   + [Förutsättningar för webbkanaler](using/web/web-prerequisites.md)
    + [Skapa webbupplevelser](using/web/create-web.md)
    + [Skapa webbsidor](using/web/author-web.md)
-   + [Hjälptillägg för visuell redigering](using/web/visual-editing-helper.md)
-   + [Webbrapportering](using/web/web-report.md)
+   + [Konfigurera webbunderdomäner](using/web/web-delegated-subdomains.md)
 + Landningssidor {#landing-pages}
    + [Kom igång med landningssidor](using/landing-pages/get-started-lp.md)
    + [Skapa en landningssida](using/landing-pages/create-lp.md)
@@ -294,12 +294,14 @@ ht-degree: 33%
 + Spåra och övervaka {#reporting}
    + Live-rapport {#live-report}
       + [Kom igång med Live Report](using/reports/live-report.md)
+      + [Lista över komponenter](using/reports/live-report-components.md)
       + [Journey Live-rapport](using/reports/journey-live-report.md)
       + [Campaign Live-rapport](using/reports/campaign-live-report.md)
       + [Live-rapport för landningssida](using/reports/lp-report-live.md)
       + [Live-rapport om prenumerationslista](using/reports/subscription-report-live.md)
    + Global rapport {#global-report}
       + [Kom igång med global rapport](using/reports/global-report.md)
+      + [Lista över komponenter](using/reports/global-report-components.md)
       + [Rapport om global resa](using/reports/journey-global-report.md)
       + [Global kampanjrapport](using/reports/campaign-global-report.md)
       + [Global rapport för landningssida](using/reports/lp-report-global.md)

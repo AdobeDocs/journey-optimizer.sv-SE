@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 exl-id: af71d24d-77eb-44df-8216-b0aeaf4c4fa4
 badge: label="Beta" type="Informative"
-source-git-commit: 160e4ce03d3be975157c30fbe511875a85b00551
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Vad du hittar i den här dokumentationen:
 
 >[!AVAILABILITY]
 >
->Målgruppskomposition är för närvarande endast tillgängligt som en privat betaversion och kan uppdateras ofta utan föregående meddelande. Betaversionen etableras på IMS-organisationsnivå, vilket innebär att den påverkar alla sandlådor i organisationen.
+>Målgruppskomposition är för närvarande endast tillgängligt som en privat betaversion och kan uppdateras ofta utan föregående meddelande. Betaversionen tillhandahålls på organisationsnivå, vilket innebär att den påverkar alla sandlådor i organisationen.
 
 Målgruppsdisposition gör att du kan skapa **arbetsflöden för disposition**, där ni kan kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och utnyttja olika aktiviteter (dela, exkludera..) för att skapa nya målgrupper.
 

@@ -8,9 +8,9 @@ role: User
 level: Beginner
 keywords: resa, upptäckt, komma igång
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
-source-git-commit: cd154b137d7b4e5a3b35948241d2bbbb18265903
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '583'
 ht-degree: 1%
 
 ---
@@ -29,6 +29,11 @@ Utforma avancerade scenarier i flera steg med följande funktioner:
 * Använd **inbyggda funktionsmakron** för att skicka meddelanden som [!DNL Journey Optimizer] eller skapa **anpassade åtgärder** om du använder ett tredjepartssystem för att skicka meddelanden.
 
 * Med **resedesigner** bygg upp flerstegstillämpningar: enkelt dra och släppa en tävlingshändelse eller en aktivitet i ett lässegment, lägga till villkor och skicka personaliserade meddelanden.
+
+
+>[!NOTE]
+>
+>Reseskydd och begränsningar finns i [den här sidan](../start/guardrails.md)
 
 ## Steg för att skapa en resa{#steps-journey}
 
@@ -98,7 +103,3 @@ Från det att resan har publicerats kommer individerna att börja flöda in i de
 Reseversioner kan stoppas individuellt. Alla versioner av resor har samma namn.
 
 När du publicerar en ny version av en resa upphör den tidigare versionen automatiskt och växlar till **Stängd** status. Ingen inträde på resan kan ske. Även om du stoppar den senaste versionen förblir den tidigare versionen stängd.
-
->[!NOTE]
->
->Läs mer om säkerhetsregler och begränsningar för olika reseversioner i [den här sidan](../start/guardrails.md#journey-versions-limitations)

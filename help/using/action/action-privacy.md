@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: data, styrning, DULE, etiketter, märkning, plattform, policy
 exl-id: be3efd3b-35d5-4cf7-9015-29d1e305355d
-source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
 source-wordcount: '904'
 ht-degree: 0%
@@ -53,11 +53,9 @@ Mer information om hur du hanterar principer finns i [dokumentation](https://exp
 Låt oss ta ett exempel på det blodtypsfält som du måste märka som känsligt och begränsa dig från att exporteras till tredje part. Här är de olika stegen:
 
 1. I den vänstra menyn, under **Integritet**, klicka **Profiler**.
-   ![](assets/action-privacy0.png)
 1. Välj **Etiketter** och klicka **Skapa etikett**.
    ![](assets/action-privacy1.png)
 1. Definiera ett namn och ett eget namn för den här etiketten. Till exempel: _ePHI1_.
-   ![](assets/action-privacy2.png)
 1. I den vänstra menyn, under **Datahantering**, klicka **Scheman** och klickar på **Använd etiketter för åtkomst och datastyrning** -knappen. Välj schema och fält (blodtyp) och markera den tidigare skapade etiketten, _ePHI1_ i vårt exempel.
    ![](assets/action-privacy3.png)
 1. Gå tillbaka till **Profiler** väljer du **Marknadsföringsåtgärd** och klicka **Skapa marknadsföringsåtgärd**. Vi rekommenderar att ni skapar en marknadsföringsåtgärd för varje anpassad åtgärd från tredje part som används på era resor. Låt oss till exempel skapa en _Marknadsföringsåtgärder för Slack_ som kommer att användas för din anpassade Slack-åtgärd.

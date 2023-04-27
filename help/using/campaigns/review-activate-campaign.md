@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: kampanj, granskning, validering, aktivering, aktivering, optimering
 exl-id: 7c4afc98-0d79-4e26-90f8-558bac037169
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 3%
@@ -31,8 +31,6 @@ När kampanjen har konfigurerats måste du granska dess parameter och innehåll 
    ![](assets/create-campaign-alerts.png)
 
 1. Kontrollera att kampanjen är korrekt konfigurerad och klicka sedan på **[!UICONTROL Activate]**.
-
-   ![](assets/create-campaign-review.png)
 
 1. Kampanjen är nu aktiverad. Dess status är **[!UICONTROL Live]**, eller **[!UICONTROL Scheduled]** om du angav ett startdatum. [Läs mer om kampanjstatus](get-started-with-campaigns.md#statuses).
 

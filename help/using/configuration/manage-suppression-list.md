@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: dämpning, lista, studsa, e-post, optimering, karantän
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-source-git-commit: 2a3bb638ff3485b6c74d92d64126b3b5fd2925e6
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1499'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,9 @@ Sådana e-postadresser samlas automatiskt in i Journey Optimizer **utelämningsl
 
 Läs mer om begrepp och användning i listan över inaktiveringar i [det här avsnittet](../reports/suppression-list.md).
 
-
+>[!NOTE]
+>
+>Adobe håller en uppdaterad lista över kända dåliga adresser som har visat sig vara skadliga för engagemanget och utskickets anseende och ser till att e-post inte skickas till dem. Den här listan hanteras i en global undertryckningslista som är gemensam för alla Adobe-kunder. Adresserna och domännamnen som finns i den globala undertryckningslistan är dolda. Endast antalet uteslutna mottagare anges i leveransrapporterna.
 
 ## Åtkomst till listan över inaktiveringar {#access-suppression-list}
 

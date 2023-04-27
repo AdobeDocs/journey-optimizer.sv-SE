@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: b86e42f95e92d4fad3d20bfbab329ae6d80c2d50
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '1064'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,11 @@ Prestandaskydd och statiska gränser för beslut finns listade i [Produktbeskriv
 
 ## Resehanddukar {#journeys-guardrails}
 
+### Allmänna skyddsräcken för resan {#journeys-guardrails-journeys}
+
+* Antalet aktiviteter under en resa är begränsat till 50. Antalet aktiviteter visas i den övre vänstra delen av arbetsytan.
+* Antalet **direktresor** i en organisation är begränsad till 100 per sandlåda. När den här gränsen har nåtts kan du inte längre publicera en ny resa.
+
 ### Allmänna åtgärder {#general-actions-g}
 
 * Det finns ingen sändande begränsning.
@@ -67,6 +72,7 @@ Prestandaskydd och statiska gränser för beslut finns listade i [Produktbeskriv
 * Namnet på frågeparametern eller huvudet får inte börja med &quot;.&quot; eller &quot;$&quot;
 * IP-adresser tillåts inte
 * Interna Adobe-adresser (`.adobe.*`) tillåts inte i URL:er och API:er.
+* Inbyggda anpassade åtgärder kan inte tas bort.
 
 ### Händelser {#events-g}
 
@@ -99,5 +105,6 @@ Du kan välja mellan följande två lösningar:
 
 ### Uttrycksredigerare {#expression-editor}
 
-* Det går inte att använda fältgrupper för upplevelsehändelser i resor som börjar med ett Lässegment, en segmentkvalificering eller en affärshändelseaktivitet.
+* Det går inte att använda fältgrupper för upplevelsehändelser i resor som börjar med ett Lässegment, en segmentkvalificering eller en affärshändelseaktivitet. Du måste skapa ett nytt segment och använda ett insegmentsvillkor under resan.
+
 

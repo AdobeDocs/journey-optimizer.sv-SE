@@ -7,9 +7,9 @@ feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: 99963ef4-0b19-475e-96f4-2eac3f680c6f
-source-git-commit: b06b545d377fcd1ffe6ed218badeb94c1bb85ef2
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '227'
 ht-degree: 7%
 
 ---
@@ -20,11 +20,9 @@ Om du vill samla in upplevelsehändelser måste du först skapa en datauppsättn
 
 Börja med att skapa schemat som ska användas i din datauppsättning:
 
-1. Från **[!UICONTROL Data Management]** meny, välja **[!UICONTROL Schema]**, går till **[!UICONTROL Browse]** och klicka **[!UICONTROL Create schema]**.
+1. Från **[!UICONTROL Data Management]** meny, välja **[!UICONTROL Schema]** och går till **[!UICONTROL Browse]** -fliken.
 
-   ![](../assets/ai-ranking-create-schema.png)
-
-1. Välj **[!UICONTROL XDM ExperienceEvent]**.
+1. Klicka **[!UICONTROL Create schema]** och välja **[!UICONTROL XDM ExperienceEvent]**.
 
    ![](../assets/ai-ranking-xdm-event.png)
 
@@ -36,20 +34,15 @@ Börja med att skapa schemat som ska användas i din datauppsättning:
 
    ![](../assets/ai-ranking-fields-groups.png)
 
-1. I **[!UICONTROL Search]** -fält, skriv&quot;interaktion för förslag&quot; och välj **[!UICONTROL Experience Event - Proposition Interactions]** fältgrupp.
+1. I **[!UICONTROL Search]** -fält, skriv&quot;Föreslå interaktion&quot;.
 
-   ![](../assets/ai-ranking-proposition-interactions.png)
+1. Välj **[!UICONTROL Experience Event - Proposition Interactions]** fältgrupp och klicka **[!UICONTROL Add field groups]**.
+
+   ![](../assets/ai-ranking-add-field-group.png)
 
    >[!CAUTION]
    >
    >Schemat som ska användas i datauppsättningen måste ha **[!UICONTROL Experience Event - Proposition Interactions]** fältgrupp som är associerad med den. Annars kan du inte använda den i din rankningsstrategi.
-
-1. Klicka på **[!UICONTROL Add field groups]**.
-
-   ![](../assets/ai-ranking-add-field-group.png)
-
-   >[!NOTE]
-   >Fältgruppen kallades tidigare för mixin.
 
 1. Skriv ett namn och spara schemat.
 
@@ -59,19 +52,13 @@ Börja med att skapa schemat som ska användas i din datauppsättning:
 
 Du är nu redo att skapa en datauppsättning med det här schemat. Följ stegen nedan för att göra detta:
 
-1. Från **[!UICONTROL Data Management]** meny, välja **[!UICONTROL Datasets]**, går till **[!UICONTROL Browse]** och klicka **[!UICONTROL Create dataset]**.
+1. Från **[!UICONTROL Data Management]** meny, välja **[!UICONTROL Datasets]** och går till **[!UICONTROL Browse]** -fliken.
 
-   ![](../assets/ai-ranking-create-dataset.png)
-
-1. Välj **[!UICONTROL Create dataset from schema]**.
+1. Klicka på **[!UICONTROL Create dataset]** och välj **[!UICONTROL Create dataset from schema]**.
 
    ![](../assets/ai-ranking-create-dataset-from-schema.png)
 
-1. Välj det schema du just skapade från listan.
-
-   ![](../assets/ai-ranking-dataset-select-schema.png)
-
-1. Klicka på **[!UICONTROL Next]**.
+1. Välj det schema du just skapade från listan och klicka på **[!UICONTROL Next]**.
 
 1. Ange ett unikt namn för datauppsättningen i **[!UICONTROL Name]** fält och klicka **[!UICONTROL Finish]**.
 

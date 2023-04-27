@@ -8,9 +8,9 @@ role: Developer, Admin
 level: Intermediate, Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: d2ce7d7e717ed5fa171cb3de31915830f391d7f9
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,7 @@ Så här skapar du en API-utlöst kampanj:
 
    ![](assets/api-triggered-type.png)
 
-1. Ange en titel och en beskrivning för kampanjen och konfigurera sedan meddelandet som ska skickas.
-
-   ![](assets/api-triggered-properties.png)
+1. Ange en rubrik och en beskrivning för kampanjen och klicka sedan på **[!UICONTROL Edit content]** för att konfigurera meddelandet som ska skickas.
 
    >[!NOTE]
    >

@@ -6,56 +6,45 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 722f9c3b-b505-48c0-b126-31a7a841c245
-source-git-commit: 835e4bf227ce330b1426a9a4331fdf533fc757e3
+source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 0%
+source-wordcount: '639'
+ht-degree: 3%
 
 ---
 
 # Användargränssnitt {#user-interface}
 
-Med Erbjudandebiblioteket kan du skapa och hantera dina praktik och erbjudanden på ett och samma ställe, samt få tillgång till alla beslut som skapats.
+The **[!UICONTROL Decision management]** -avsnittet i den vänstra listen har två menyer som ger dig tillgång till funktioner för att hantera beslut:
 
->[!NOTE]
->
->Om du har problem med att få tillgång till erbjudandebiblioteket eller några av dess funktioner, bör du kontrollera med en administratör att du har fått de behörigheter som krävs. Se [Bevilja åtkomst till beslutsledning](starting-offer-decisioning.md#granting-acess-to-decision-management).
+Använd **[!UICONTROL Offers]** -meny för att hantera och leverera erbjudanden:
 
-Använd  **[!UICONTROL Offers]** meny för att hantera personaliserade erbjudanden och reserverbjudanden, ordna dem i samlingar och leverera dem genom att fatta beslut:
-
-* **[!UICONTROL Overview]**: Ny på [!DNL decision management]? Följ stegen på skärmen för att komma igång med att konfigurera ersättningar, erbjudanden och samlingar. När du redan är bekant med [!DNL decision management], får du en översikt över dina senaste erbjudanden, samlingar och beslut. Se [Översikt](#overview).
-
-* **[!UICONTROL Offers]**: Få tillgång till dina personliga erbjudanden och reserverbjudanden eller skapa nya. Se [Skapa ett erbjudande](../offer-library/creating-personalized-offers.md) och [Skapa ett reserverbjudande](../offer-library/creating-fallback-offers.md).
-
-* **[!UICONTROL Collections]**: Skapa och hantera statiska och dynamiska erbjudandesamlingar. Se [Om erbjudandesamlingar](../offer-library/creating-collections.md).
-
-* **[!UICONTROL Decisions]**: Skapa och hantera beslut för att leverera era erbjudanden. Se [Skapa beslut](../offer-activities/create-offer-activities.md).
 
 ![](../assets/offers_menu.png)
 
-Använd  **[!UICONTROL Components]** meny för att hantera de komponenter som krävs för att skapa erbjudanden:
+* **[!UICONTROL Overview]**: Ny på [!DNL decision management]? Följ stegen på skärmen för att komma igång med att konfigurera ersättningar, erbjudanden och samlingar. När du redan är bekant med [!DNL decision management], får du en översikt över dina senaste erbjudanden, samlingar och beslut. [Läs mer](#overview)
+* **[!UICONTROL Offers]**: Skapa och få tillgång till era personaliserade erbjudanden och reserverbjudanden. Lär dig hur du skapar [erbjudanden](../offer-library/creating-personalized-offers.md) och [reserverbjudanden](../offer-library/creating-fallback-offers.md)
+* **[!UICONTROL Collections]**: Ordna era erbjudanden i statiska och dynamiska samlingar. [Läs mer](../offer-library/creating-collections.md)
+* **[!UICONTROL Decisions]**: Skapa och hantera beslut för att leverera era erbjudanden. [Läs mer](../offer-activities/create-offer-activities.md)
+* **[!UICONTROL Batch decisioning]**: Leverera offertbeslut till alla profiler i ett visst Adobe Experience Platform-segment. [Läs mer](../batch-delivery.md)
+* **[!UICONTROL Simulation]**: Validera din beslutslogik genom att simulera vilka erbjudanden som ska levereras till en testprofil för en viss placering. [Läs mer](../offer-activities/simulation.md)
 
-* **[!UICONTROL Placements]**: Skapa och hantera praktik där era erbjudanden visas. Se [Skapa placeringar](../offer-library/creating-placements.md).
-
-* **[!UICONTROL Collection qualifiers]**: Skapa och hantera samlingskvalificerare (tidigare kallade taggar) för att ordna och filtrera dina erbjudanden. Se [Skapa samlingskvalificerare](../offer-library/creating-tags.md).
-
-* **[!UICONTROL Rules]**: Hantera villkoren för hur era erbjudanden presenteras. Se [Skapa en beslutsregel](../offer-library/creating-decision-rules.md).
-
-* **[!UICONTROL Rankings]**: Skapa och hantera rankningsformler för att avgöra vilket erbjudande som ska presenteras först för en viss placering. Se [Skapa rankningsformler](../ranking/create-ranking-formulas.md).
+Använd **[!UICONTROL Components]** meny för att skapa och hantera komponenter som krävs för att skapa erbjudanden och beslut:
 
 ![](../assets/offer_activities.png)
 
+* **[!UICONTROL Placements]**: Skapa och hantera praktik där era erbjudanden visas. [Läs mer](../offer-library/creating-placements.md)
+* **[!UICONTROL Collection qualifiers]**: Skapa och hantera samlingskvalificerare (tidigare kallade taggar) för att ordna och filtrera dina erbjudanden. [Läs mer](../offer-library/creating-tags.md)
+* **[!UICONTROL Rules]**: Hantera villkoren för hur era erbjudanden presenteras. [Läs mer](../offer-library/creating-decision-rules.md)
+* **[!UICONTROL Ranking]**: Skapa och hantera rankningsformler för att avgöra vilket erbjudande som ska presenteras först för en viss placering. [Läs mer](../ranking/create-ranking-formulas.md)
+
+>[!NOTE]
+>
+>Om du har problem med att komma åt beslutshanteringen eller vissa funktioner i den, bör du höra med en Admin-användare att du har fått de behörigheter som krävs. Se [Bevilja åtkomst till beslutsledning](starting-offer-decisioning.md#granting-acess-to-decision-management).
+
 ## Översikt {#overview}
 
-När du är nybörjare på [!DNL decision management], **[!UICONTROL Overview]** hjälper dig steg för steg att börja bygga ditt första offertbeslut.
-
-![](../assets/overview_onboarding.png)
-
-Följ stegen på skärmen för att börja skapa praktik, erbjudanden och samlingar.
-
-När du är klar med de här första stegen uppmanas du att skapa offertbeslut.
-
-![](../assets/overview_collection-created.png)
+När du är nybörjare på [!DNL decision management], **[!UICONTROL Overview]** hjälper dig steg för steg att börja bygga ditt första offertbeslut. Följ stegen på skärmen för att börja skapa praktik, erbjudanden och samlingar. När du är klar med de här första stegen uppmanas du att skapa offertbeslut.
 
 >[!NOTE]
 >
@@ -95,11 +84,7 @@ I de olika listorna väljer du ett element för att visa en informationsruta dä
 
 I erbjudandelistorna och beslutslistorna kan du även utföra massåtgärder för flera element. Välj önskade erbjudanden eller beslut och välj sedan den åtgärd som du vill utföra i informationsrutan.
 
-![](../assets/bulk-actions.png)
-
 Observera att du även kan duplicera ett befintligt erbjudande eller beslut för att skapa en kopia med **[!UICONTROL Draft]** status. Detta kan utföras antingen från informationsrutan eller från ett erbjudande eller ett besluts detaljerade vy.
-
-![](../assets/duplicate-offer.png)
 
 ## Ändringsloggar för erbjudanden och beslut {#changes-logs}
 
