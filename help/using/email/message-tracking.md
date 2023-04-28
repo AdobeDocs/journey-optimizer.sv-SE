@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: länkar, spåra, övervaka, e-post
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
+source-git-commit: 9592e9c1b0e9c8a1c606a9a187501542e496eddb
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
 
 >[!NOTE]
 >
->E-postmeddelanden av marknadsföringstyp måste innehålla en [länk för avanmälan](../privacy/opt-out.md#opt-out-management), vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [kanalyta](../configuration/channel-surfaces.md#email-type) (t.ex. meddelandeförinställning) när meddelandet skapas.
+>E-postmeddelanden av marknadsföringstyp måste innehålla en [länk för avanmälan](../privacy/opt-out.md#opt-out-management), vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [kanalyta](../configuration/channel-surfaces.md#email-type) när meddelandet skapas.
 
 ## Länka till en spegelsida {#mirror-page}
 
@@ -132,3 +132,29 @@ The [E-postdesigner](content-from-scratch.md) gör att du kan hantera spårade U
    * **[!UICONTROL Never]**: Aktiverar aldrig spårning av den här URL:en. <!--This information is saved: if the URL appears again in a future message, its tracking is automatically deactivated.-->
 
 Rapportering om öppningar och klick finns i [Live-rapport](../reports/live-report.md) och i [Global rapport](../reports/global-report.md).
+
+## URL-spårning {#url-tracking}
+
+Vanligtvis [URL-spårning](email-settings.md#url-tracking) hanteras på ytnivå, men profilattribut stöds inte. För närvarande är det enda sättet att göra det på att [personalisera URL:er](../personalization/personalization-syntax.md#perso-urls) i e-postdesignern.
+
+Följ stegen nedan om du vill lägga till personaliserade URL-spårningsparametrar för länkarna.
+
+1. Markera en länk och klicka på **[!UICONTROL Insert link]** i kontextverktygsfältet.
+
+1. Välj personaliseringsikonen. Den är bara tillgänglig för följande typer av länkar: **Extern länk**, **Länk för att avbryta prenumeration** och **Avanmäl dig**.
+
+   ![](assets/message-tracking-insert-link-perso.png)
+
+1. Lägg till URL-spårningsparametern och välj det profilattribut du vill i uttrycksredigeraren.
+
+   ![](assets/message-tracking-perso-parameter.png)
+
+1. Spara ändringarna.
+
+1. Upprepa stegen ovan för varje länk som du vill lägga till spårningsparametern i.
+
+När e-postmeddelandet skickas läggs den här parametern automatiskt till i slutet av URL:en. Du kan sedan hämta den här parametern i webbanalysverktyg eller i resultatrapporter.
+
+>[!NOTE]
+>
+>Du kan verifiera den slutliga URL:en genom att [skicka ett bevis](preview.md#send-proofs) och klicka på länken i e-postmeddelandet när du har fått korrekturet. URL:en ska visa spårningsparametern. I exemplet ovan blir den slutliga URL:en: https://luma.enablementadobe.com/content/luma/us/en.html?utm_contact=profile.userAccount.contactDetails.homePhone.number
