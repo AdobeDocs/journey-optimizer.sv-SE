@@ -4,7 +4,7 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: 126d3afcca9801cddeff451fac60f469905f3b85
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 16%
@@ -23,7 +23,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * En anteckning har lagts till för att ange att om ändringar görs i ett erbjudandebeslut som används i en resa måste du avpublicera resan och publicera den på nytt. [Läs mer](../building-journeys/publishing-the-journey.md)
 * Förklaring om hur man ser till att händelser redovisas korrekt i takräknaren har klargjorts i beslutshanteringen **Takningshändelse** -avsnitt. [Läs mer](../offers/offer-library/add-constraints.md#capping-event)
 * Ett nytt avsnitt har lagts till i **Ändra körningsadresser** sida. Det anger att det är möjligt att åsidosätta körningsfältet som angetts globalt i de avancerade parametrarna för resan, men åsidosättningen av e-postadressen ska bara användas för särskilda användningsfall. Det värde som oftast definieras som den primära adressen i **Körningsfält** är den som bör användas. [Läs mer](../configuration/primary-email-addresses.md#journey-parameters)
-* The **URL-spårning** -avsnittet innehåller nu en lista och beskrivning av alla kontextuella attribut som kan anges för URL-spårning i en e-postkanal. [Läs mer](../offers/offer-library/add-constraints.md)
+* The **URL-spårning** -avsnittet innehåller nu en lista och beskrivning av alla kontextuella attribut som kan anges för URL-spårning i en e-postkanal. [Läs mer](../email/email-settings.md#url-tracking)
 
 ## Mars 2023 {#march-2023}
 
