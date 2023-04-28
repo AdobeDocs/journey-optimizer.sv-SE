@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 466bc17385740511a62d60ccc9506bdf51eedc17
+source-git-commit: 68a1a36c06b430d3fbb614ca24cc1e87399e1f38
 workflow-type: tm+mt
 source-wordcount: '1692'
 ht-degree: 1%
@@ -224,26 +224,11 @@ Du kan använda **[!UICONTROL URL tracking parameters]** för att mäta effektiv
 
 Parametrarna som definieras i det här avsnittet läggs till i slutet av de URL:er som ingår i e-postmeddelandeinnehållet. Du kan sedan hämta parametrarna i webbanalysverktyg som Adobe Analytics eller Google Analytics och skapa olika resultatrapporter.
 
-<!--Three URL tracking parameters are auto-populated as an example when you create a channel surface. You can edit these and add up to 10 tracking parameters using the **[!UICONTROL Add new parameter]** button.-->
-
 Du kan lägga till upp till 10 spårningsparametrar med **[!UICONTROL Add new parameter]** -knappen.
 
 ![](assets/preset-url-tracking.png)
 
 Om du vill konfigurera en URL-spårningsparameter kan du ange önskade värden direkt i dialogrutan **[!UICONTROL Name]** och **[!UICONTROL Value]** fält.
-
-<!--You can also choose from a list of predefined values by navigating to the following objects:
-* Journey attributes: **Source id**, **Source name**, **Source version id**
-* Action attributes: **Action id**, **Action name**
-* Offer decisioning attributes: **Offer id**, **Offer name**
-
-
-
->[!CAUTION]
->
->Do not select a folder: make sure to browse to the necessary folder and select a profile attribute to use as a tracking parameter value.-->
-
-![](assets/preset-url-tracking-source.png)
 
 Du kan också redigera varje **[!UICONTROL Value]** fält med [Uttrycksredigeraren](../personalization/personalization-build-expressions.md). Klicka på utgåveikonen för att öppna redigeraren. Därifrån kan du välja tillgängliga sammanhangsberoende attribut och/eller redigera texten direkt.
 
