@@ -8,9 +8,10 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 keywords: webb, underdomäner, konfiguration
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+exl-id: 6503d9e6-6c6c-4a6d-ad3d-1d81eb3b4698
+source-git-commit: 2d11233f1cf1fee5f500d233c3fcacf03b7e5c10
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '368'
 ht-degree: 0%
 
 ---
@@ -29,8 +30,8 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_web_default"
->title="Ange en standardunderdomän"
->abstract="Du kan skapa flera webbunderdomäner, men bara standardunderdomänen används. Du kan ändra standardwebbunderdomänen, men bara en åt gången kan användas."
+>title="Ange en webbunderdomän"
+>abstract="Markera en underdomän i listan över underdomäner som har delegerats till Adobe. Du kan ange den här webbunderdomänen som standardunderdomän, men bara en standardunderdomän i taget kan användas."
 
 Om du lägger till innehåll från [Adobe Experience Manager Assets Essentials](../email/assets-essentials.md) måste du konfigurera den underdomän som ska användas för att publicera innehållet.
 
@@ -67,11 +68,15 @@ Du kan skapa flera webbunderdomäner, men bara de **standard** underdomänen kom
 
    >[!NOTE]
    >
-   >Endast **standard** underdomänen kommer att användas. Du kan ändra standardwebbunderdomänen, men bara en åt gången kan användas.
+   >Endast **standard** underdomänen kommer att användas.
 
 1. Klicka på **[!UICONTROL Submit]**. Underdomänen får **[!UICONTROL Success]** status. Det är klart att användas för era webbupplevelser.
 
 1. The **[!UICONTROL Default]** emblem visas bredvid den underdomän som används som standard. Om du vill ändra standardunderdomänen väljer du **[!UICONTROL Set as default]** från **[!UICONTROL More actions]** -knapp bredvid önskad underdomän.
+
+   >[!NOTE]
+   >
+   >Du kan ändra standardwebbunderdomänen, men bara en åt gången kan användas.
 
    ![](assets/web-subdomain-default.png)
 
@@ -80,4 +85,3 @@ Du kan skapa flera webbunderdomäner, men bara de **standard** underdomänen kom
 1. Du kan bara ta bort en **[!UICONTROL Failed]** underdomän för att rensa listan. Om du vill göra det väljer du **[!UICONTROL Delete]** från **[!UICONTROL More actions]** -knapp bredvid önskad underdomän.
 
 <!--You cannot delete a subdomain with the **[!UICONTROL Processing]** status.-->
-

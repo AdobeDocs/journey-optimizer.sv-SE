@@ -5,14 +5,15 @@ feature: Web Channel
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+exl-id: 6cb4f8ab-77ad-44a2-b2bf-a97f87b8f1db
+source-git-commit: 466bc17385740511a62d60ccc9506bdf51eedc17
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '809'
 ht-degree: 2%
 
 ---
 
-# Förutsättningar för webbkanaler {#web-prerequisites}
+# Förutsättningar och skyddsräcken {#web-prerequisites}
 
 För att kunna komma åt och skriva webbsidor i [!DNL Journey Optimizer] följer du kraven nedan:
 
@@ -21,6 +22,13 @@ För att kunna komma åt och skriva webbsidor i [!DNL Journey Optimizer] följer
 * Så här öppnar du [!DNL Journey Optimizer] webbdesignern måste ha ett specifikt webbläsartillägg för Google Chrome installerat. [Läs mer](#visual-authoring-prerequesites)
 
 * För att webbupplevelsen ska fungera på rätt sätt måste du definiera Adobe Experience Platform-inställningarna [här](#delivery-prerequisites).
+
+## Varningar
+
+Ingår [!DNL Journey Optimizer] kan du bara skapa webbupplevelser med **kampanjer**. [Läs mer](../campaigns/create-campaign.md#configure)
+
+
+[!DNL Journey Optimizer] webbkampanjer riktar sig till nya profiler som inte har varit engagerade tidigare i andra kanaler. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids. Licensvärden för varje paket visas på sidan [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html) sida.
 
 ## Krav för implementering {#implementation-prerequisites}
 
@@ -123,6 +131,3 @@ För att webbupplevelsen ska kunna levereras på rätt sätt måste följande in
 Branded domains for assets
 
 When authoring web experiences, if you add content coming from the [Adobe Experience Manager Assets Essentials](../email/assets-essentials.md) library, you  must set up the subdomain that will be used to publish this content. [Learn more](web-delegated-subdomains.md)-->
-
-
-

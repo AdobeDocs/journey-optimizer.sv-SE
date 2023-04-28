@@ -6,28 +6,20 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 8f06b8f0-f64d-42f7-9b10-7bb76f63d1c5
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: 466bc17385740511a62d60ccc9506bdf51eedc17
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 1%
+source-wordcount: '160'
+ht-degree: 2%
 
 ---
 
 # Kom igång med webbkanalen {#get-sarted-web}
 
->[!AVAILABILITY]
->
->Den här funktionen är bara tillgänglig med [!DNL Adobe Journey Optimizer] **Prime** och **Ultimate** [paket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html).
-
 [!DNL Journey Optimizer] gör att ni kan skapa och leverera personaliserade webbupplevelser visuellt till era kunder.
-
-Om ni redan använder utgående kanaler som e-post, SMS eller push-meddelanden kan ni nu utnyttja den inkommande webbkanalen för att erbjuda en verkligt personaliserad upplevelse som sträcker sig över alla kanaler.
 
 Tack vare ett intuitivt visuellt gränssnitt kan ni enkelt ändra era webbegenskaper för att experimentera, optimera och personalisera era slutanvändarkampanjer.
 
->[!CAUTION]
->
->Ingår [!DNL Journey Optimizer] kan du bara skapa webbupplevelser med **kampanjer**.
+Om ni redan använder utgående kanaler som e-post, SMS eller push-meddelanden kan ni nu utnyttja den inkommande webbkanalen för att erbjuda en verkligt personaliserad upplevelse som sträcker sig över alla kanaler.
 
 När du har skapat en kampanj väljer du **Webb** som din åtgärd och definiera grundläggande inställningar. Mer information om hur du konfigurerar kampanjen finns i [page](../campaigns/create-campaign.md#configure).
 
@@ -73,9 +65,5 @@ Upptäck de detaljerade stegen för att skapa en webbkampanj i [den här videon]
 <p>
 </td>
 </tr></table>
-
->[!CAUTION]
->
->[!DNL Journey Optimizer] webbkampanjer riktar sig till nya profiler som inte har varit engagerade tidigare i andra kanaler. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids. Licensvärden för varje paket visas på sidan [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html) sida.
 
 
