@@ -7,9 +7,9 @@ role: Admin
 level: Intermediate
 keywords: webb, underdomäner, konfiguration
 exl-id: 6503d9e6-6c6c-4a6d-ad3d-1d81eb3b4698
-source-git-commit: 29070f0029c092782cf8a304f85e52869598a2fa
+source-git-commit: b05c7e88c223af44cd2f7d10ea76c39359662cbd
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -60,6 +60,8 @@ Du kan skapa flera webbunderdomäner, men bara de **standard** underdomänen kom
    >
    >Du kan inte välja en underdomän som redan används som webbunderdomän.
 
+1. Det prefix som ska visas i webb-URL:en läggs automatiskt till.
+
 1. Om du vill ange den här underdomänen som standard väljer du motsvarande alternativ.
 
    ![](assets/web-subdomain-details-default.png)
@@ -78,8 +80,8 @@ Du kan skapa flera webbunderdomäner, men bara de **standard** underdomänen kom
 
    ![](assets/web-subdomain-default.png)
 
-   <!--Only a subdomain with the **[!UICONTROL Success]** status can be set as default.-->
+   <!--Only a subdomain with the **[!UICONTROL Success]** status can be set as default.
 
-1. Du kan bara ta bort en **[!UICONTROL Failed]** underdomän för att rensa listan. Om du vill göra det väljer du **[!UICONTROL Delete]** från **[!UICONTROL More actions]** -knapp bredvid önskad underdomän.
+    You can only delete a **[!UICONTROL Failed]** subdomain to clean up the list. To do so, select **[!UICONTROL Delete]** from the **[!UICONTROL More actions]** button next to the desired subdomain.
 
-<!--You cannot delete a subdomain with the **[!UICONTROL Processing]** status.-->
+    You cannot delete a subdomain with the **[!UICONTROL Processing]** status.-->
