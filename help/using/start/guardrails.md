@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: c212ecb02a8feee67d49610d8919d559a22bcfa0
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1037'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,6 @@ Nedan finns ytterligare skyddsutkast och begränsningar när du använder [!DNL 
 
 * Du kan inte lägga till bilagor i ett e-postmeddelande med [!DNL Journey Optimizer].
 * Du kan inte använda samma sändande domän för att skicka ut meddelanden från [!DNL Adobe Journey Optimizer] och från en annan produkt, som [!DNL Adobe Campaign] eller [!DNL Adobe Marketo Engage] till exempel.
-
-
-## Handläggningsgaranti {#offer-guardrails}
-
-Prestandaskydd och statiska gränser för beslut finns listade i [Produktbeskrivningssida för Adobe Offer decisioning App Service](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html){target="_blank"}.
 
 
 ## Garantier för landningssidor {#lp-guardrails}
