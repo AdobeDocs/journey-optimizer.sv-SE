@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, segment, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: bc88e1348e6d6408d2c1a5f318e631f8387c2c8f
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1311'
 ht-degree: 9%
 
 ---
@@ -38,27 +38,26 @@ För att kunna skicka meddelanden med resor krävs följande konfigurationer:
 
    ![](assets/custom2.png)
 
-<!--
-## Access journeys {#journey-access}
+## Åtkomstresor {#journey-access}
 
-In the JOURNEY MANAGEMENT menu section, click **[!UICONTROL Journeys]**. Two tabs are available:
+Klicka på **[!UICONTROL Journeys]**. Det finns två flikar:
 
-**Browse**: this tab displays the list of existing journeys. You can search for journeys, use filters and perform basic actions on each element. For example, you can duplicate or delete an item. For more information, refer to [this section](../start/user-interface.md#filter-lists).
+**Bläddra**: På den här fliken visas en lista över befintliga resor. Du kan söka efter resor, använda filter och utföra grundläggande åtgärder för varje element. Du kan till exempel skapa dubbletter eller radera en post. Mer information hittar du i [det här avsnittet](../start/user-interface.md#filter-lists).
 
-![](assets/journeys-browse.png)  
+![](assets/journeys-browse.png)
 
-**Overview**: this tab displays a dashboard with key metrics related to your journeys:
+**Översikt**: På den här fliken visas en instrumentpanel med viktiga mått för dina resor:
 
-* **Profiles processed**: total number of profiles processed in last 24 hours
-* **Live journeys**: total number of live journeys
-* **Unitary journeys**: total number of unitary live journeys (event-based journeys)
-* **Batch journeys**: total number of batch live journeys (read segment journeys)
-* **Error rate**: ratio of all profiles in error compared with the total number of profiles who entered. 
-* **Discard rate**: ratio of all profiles dicarded compared with the total number of profiles who entered. 
+* **Bearbetade profiler**: totalt antal profiler som har bearbetats under de senaste 24 timmarna
+* **Direktresor**: Totalt antal levande resor med trafik under de senaste 24 timmarna. Livesändningar omfattar **Enhetsresor** (händelsebaserad) och **Batchresor** (lässegment).
+* **Felfrekvens**: förhållandet mellan alla felaktiga profiler och det totala antalet profiler som har registrerats under de senaste 24 timmarna.
+* **Ignorera frekvens**: förhållandet mellan alla profiler som har tagits bort jämfört med det totala antalet profiler som har angetts under de senaste 24 timmarna.
 
-![](assets/journeys-dashboard.png)  
+>[!NOTE]
+>
+>På denna kontrollpanel beaktas trafiken under de senaste 24 timmarna. Endast de resor du har åtkomst till visas.
 
--->
+![](assets/journeys-dashboard.png)
 
 ## Bygg upp din resa{#jo-build}
 
@@ -71,15 +70,7 @@ Det här steget utförs av **företagsanvändare**. Här skapar du dina resor. K
 
 Här är de viktigaste stegen för att skicka meddelanden via resor:
 
-1. Klicka på **[!UICONTROL Journeys]**. Listan över resor visas.
-
-   ![](assets/interface-journeys.png)
-
-1. Klicka **[!UICONTROL Create Journey]** för att skapa en ny resa.
-
-<!--
-1. From the **Journeys** menu, click **[!UICONTROL Create Journey]** to create a new journey. 
--->
+1. Från **Bläddra** flik, klicka **[!UICONTROL Create Journey]** för att skapa en ny resa.
 
 1. Redigera resans egenskaper i konfigurationsrutan som visas till höger. Läs mer om detta [section](journey-gs.md#change-properties).
 
