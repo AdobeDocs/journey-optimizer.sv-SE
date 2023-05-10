@@ -7,7 +7,7 @@ role: Admin
 level: Intermediate
 keywords: webb, underdomäner, konfiguration
 exl-id: 6503d9e6-6c6c-4a6d-ad3d-1d81eb3b4698
-source-git-commit: 66ef57c263d29572ce0377e41bf0a8010e2f22d1
+source-git-commit: 40cdcace9788206ad32dc6ae1e5f70c66e684bcb
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%
@@ -78,11 +78,11 @@ Du kan skapa flera webbunderdomäner, men bara de **standard** underdomänen kom
 
 1. The **[!UICONTROL Default]** emblem visas bredvid den underdomän som används som standard. Om du vill ändra standardunderdomänen väljer du **[!UICONTROL Set as default]** från **[!UICONTROL More actions]** -knapp bredvid önskad underdomän.
 
+   ![](assets/web-subdomain-default.png)
+
    >[!NOTE]
    >
    >Du kan ändra standardwebbunderdomänen, men bara en åt gången kan användas.
-
-   ![](assets/web-subdomain-default.png)
 
    <!--Only a subdomain with the **[!UICONTROL Success]** status can be set as default.
 
