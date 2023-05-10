@@ -4,9 +4,9 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 126d3afcca9801cddeff451fac60f469905f3b85
+source-git-commit: 289dd11da2546b5ad8f9791fb9a5796127746829
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2750'
 ht-degree: 16%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 16%
 # Dokumentationsuppdateringar {#latest-updates}
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
+
+## Maj 2023 {#may-2023}
+
+* The **Konfigurera webbunderdomäner** sidan har skapats: Om du lägger till innehåll från Adobe Experience Manager Assets Essentials i dina webbupplevelser måste du konfigurera den underdomän som ska användas för att publicera det här innehållet. [Läs mer](../web/web-delegated-subdomains.md)
 
 ## April 2023 {#apr-2023}
 
