@@ -4,9 +4,9 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 289dd11da2546b5ad8f9791fb9a5796127746829
+source-git-commit: 0a515afc2335a14c9c978f9cbf394850a88964c4
 workflow-type: tm+mt
-source-wordcount: '2750'
+source-wordcount: '2767'
 ht-degree: 16%
 
 ---
@@ -17,7 +17,8 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 ## Maj 2023 {#may-2023}
 
-* The **Konfigurera webbunderdomäner** sidan har skapats: Om du lägger till innehåll från Adobe Experience Manager Assets Essentials i dina webbupplevelser måste du konfigurera den underdomän som ska användas för att publicera det här innehållet. [Läs mer](../web/web-delegated-subdomains.md)
+* En ny sida har lagts till som beskriver hur du konfigurerar den underdomän som ska användas för att publicera innehåll från Adobe Experience Manager Assets Essentials i dina webbupplevelser. [Läs mer](../web/web-delegated-subdomains.md)
+* Ett nytt underavsnitt har lagts till som förklarar hur du lägger till personaliserade spårningsparametrar i URL:er i e-postdesignern. [Läs mer](../email/message-tracking.md#url-tracking)
 
 ## April 2023 {#apr-2023}
 
