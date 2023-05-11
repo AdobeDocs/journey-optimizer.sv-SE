@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: c212ecb02a8feee67d49610d8919d559a22bcfa0
+source-git-commit: 1213a65c8a22a326e8294c51db53efb6e23fd6f9
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1066'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,10 @@ Tillstånd, produktbegränsningar och prestandaskydd finns i [Adobe Journey Opti
 Du måste också vara medveten om [Garantier för kundprofildata i realtid innan du startar](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"}.
 
 Nedan finns ytterligare skyddsutkast och begränsningar när du använder [!DNL Adobe Journey Optimizer].
+
+## Webbläsare som stöds {#browsers}
+
+Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera optimalt i den senaste versionen av Google Chrome. Du kan ha problem med att använda vissa funktioner i äldre versioner eller i andra webbläsare.
 
 ## Meddelandeskyddsutkast {#message-guardrails}
 

@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: 1213a65c8a22a326e8294c51db53efb6e23fd6f9
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1370'
 ht-degree: 33%
 
 ---
@@ -30,6 +30,7 @@ ht-degree: 33%
       + [Kom igång som administratör](using/start/path/administrator.md)
       + [Kom igång som utvecklare](using/start/path/developer.md)
    + [Användargränssnitt](using/start/user-interface.md)
+   + [Söka, filtrera, kategorisera](using/start/search-filter-categorize.md)
    + [Tillgänglighet](using/start/accessibility.md)
    + [Integreringar](using/start/ajo-integrations.md)
    + [Guardrails](using/start/guardrails.md)
@@ -47,7 +48,6 @@ ht-degree: 33%
       + [Kopiera en resa till en annan sandlåda](using/building-journeys/copy-to-sandbox.md)
       + [Felsök din resa](using/building-journeys/troubleshooting.md)
       + [Integrera med intelligenta tjänster](using/building-journeys/ai-services-overview.md)
-      + [Hantera taggar under resor](using/building-journeys/tags.md)
    + Aktiviteter {#about-journey-building}
       + [Kom igång med reseaktiviteter](using/building-journeys/about-journey-activities.md)
       + [Allmänna händelser](using/building-journeys/general-events.md)

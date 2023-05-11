@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: hantera kampanjer, status, schema, åtkomst, optimering
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
-source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
+source-git-commit: 1213a65c8a22a326e8294c51db53efb6e23fd6f9
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '497'
 ht-degree: 1%
 
 ---
@@ -26,11 +26,11 @@ Dessutom kan ni duplicera live-kampanjer (som körs en gång eller med en återk
 
 Kampanjerna är tillgängliga via **[!UICONTROL Campaigns]** -menyn.
 
-Som standard visas alla kampanjer med **[!UICONTROL Draft]**, **[!UICONTROL Scheduled]** och **[!UICONTROL Live]** status.
-
-Om du vill visa stoppade, slutförda och arkiverade kampanjer måste du rensa filtret.
+Som standard visas alla kampanjer med **[!UICONTROL Draft]**, **[!UICONTROL Scheduled]** och **[!UICONTROL Live]** status. Om du vill visa stoppade, slutförda och arkiverade kampanjer måste du rensa filtret.
 
 ![](assets/create-campaign-list.png)
+
+Dessutom kan du filtrera listan baserat på kampanjtyp och kanal, eller de taggar som har tilldelats kampanjerna när de skapas. [Lär dig hur du tilldelar taggar till en kampanj](create-campaign.md#create)
 
 ## Kampanjstatus {#statuses}
 

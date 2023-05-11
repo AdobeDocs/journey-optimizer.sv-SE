@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 1071229582008d66b4184ec782aaf23bad111a93
+source-git-commit: 1213a65c8a22a326e8294c51db53efb6e23fd6f9
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '1910'
 ht-degree: 8%
 
 ---
@@ -21,6 +21,24 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 
 ![Nyhetsbrev](../assets/do-not-localize/nl-icon.png) Registrera dig för [Adobe Journey Optimizer kvartalsvis nyhetsbrev](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} idag och få de senaste produktuppdateringarna, spännande historier, användningsexempel, tips och mycket annat levererat direkt till din inkorg varje kvartal.
 
+## Förbättringar i maj 2023 {#may-improvements}
+
+<table>
+<thead>
+<tr>
+<th><strong>Använd taggar i era kampanjer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan ni tilldela enhetliga Adobe Experience Platform-taggar till era kampanjer. På så sätt kan ni enkelt klassificera dem och förbättra sökningen från kampanjlistan. Observera att funktionen för enhetliga taggar för närvarande är en betaversion.
+<img src="assets/do-not-localize/campaigns-tag.gif"/>
+<p>Mer information finns i den <a href="../start/search-filter-categorize.md#tags">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Versionsinformation april 2023 {#apr-rn-2023}
 
@@ -46,7 +64,6 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 </tbody>
 </table>
 
-
 <table>
 <thead>
 <tr>
@@ -64,21 +81,22 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 </tbody>
 </table>
 
+<!--
 <table>
 <thead>
 <tr>
-<th><strong>Ny Journey-kontrollpanel (beta)</strong><br/></th>
+<th><strong>New Journey dashboard (beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p> Kontrollpanelen för resan är nu uppdelad på två flikar:</p>
-<ul><li>Använd <strong>Översikt</strong> för att få tillgång till en ny kontrollpanel som visar viktiga mått för dina resor.</li>
-<li>Använd <strong>Bläddra</strong> för att få tillgång till listan över alla resor.</li></ul>
-<p>Denna förmåga är tillgänglig på alla resor som en betaversion.</p>
+<p> The Journey dashboard is now split in two tabs:</p>
+<ul><li>Use the <strong>Overview</strong> tab to access a new dashboard which displays key metrics related to your journeys.</li>
+<li>Use the <strong>Browse</strong> tab to access the list of all journeys.</li></ul>
+<p>This capability is accessible in all journeys as a public beta.</p>
 <img src="assets/do-not-localize/journey-dashboard.gif"/>
-<p>Mer information finns i den <a href="../building-journeys/journey-gs.md#journey-access">detaljerade dokumentationen</a>.</p>
+<p>For more information, refer to the <a href="../building-journeys/journey-gs.md#journey-access">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -173,13 +191,11 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 <tr>
 <td>
 <p>Som Journey Optimizer-behandlare kan du nu ordna dina affärsobjekt med hjälp av taggar. Taggar är ett snabbt och enkelt sätt att klassificera objekt för att förbättra sökningen. Den här funktionen är för närvarande i betaversion och endast tillgänglig för Journeys.</p>
-<p>Mer information finns i den <a href="../building-journeys/tags.md">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="../start/search-filter-categorize.md#tags">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
 </table>
-
-
 
 ### Förbättringar {#mar-2023-improvements}
 

@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: bf058b13508c7ad644a3b1f63e9208740abf8602
+source-git-commit: 1213a65c8a22a326e8294c51db53efb6e23fd6f9
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 3%
+source-wordcount: '758'
+ht-degree: 2%
 
 ---
 
@@ -65,6 +65,8 @@ Om du vill skapa en ny kampanj öppnar du **[!UICONTROL Campaigns]** menyn och k
 1. I **[!UICONTROL Properties]** anger du ett namn och en beskrivning för kampanjen.
 
    <!--To test the content of your message, toggle the **[!UICONTROL Content experiment]** option on. This allows you to test multiple variables of a delivery on populations samples, in order to define which treatment has the biggest impact on the targeted population.[Learn more about content experiment](../campaigns/content-experiment.md).-->
+
+1. The **Taggar** I kan du tilldela enhetliga Adobe Experience Platform-taggar till kampanjen. På så sätt kan ni enkelt klassificera dem och förbättra sökningen från kampanjlistan. [Lär dig hur du arbetar med taggar](../start/search-filter-categorize.md#tags)
 
 1. Klicka på knappen **[!UICONTROL Manage access]** -knappen. [Läs mer om OLA (Object Level Access Control)](../administration/object-based-access.md)
 
@@ -129,9 +131,9 @@ I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska använd
 
 ![](assets/create-campaign-namespace.png)
 
->[!NOTE]
->
->Individer som tillhör ett segment som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kommer inte att omfattas av kampanjen.
+    >[!OBS!]
+    >
+    >Individer som tillhör ett segment som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kommer inte att omfattas av kampanjen.
 
 <!--If you are are creating an API-triggered campaign, the **[!UICONTROL cURL request]** section allows you to retrieve the **[!UICONTROL Campaign ID]** to use in the API call. [Learn more](api-triggered-campaigns.md)-->
 

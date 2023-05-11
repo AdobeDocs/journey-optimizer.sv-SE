@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 401ce05b-412b-4fa0-a516-bf75727f6387
-source-git-commit: 55d9befff9b9bf1bc81c6553cd76f015fdd3116e
+source-git-commit: 1213a65c8a22a326e8294c51db53efb6e23fd6f9
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 5%
@@ -41,7 +41,7 @@ Så här skapar du en beslutsregel:
 
    >[!NOTE]
    >
-   >Segment Builder som tillhandahålls för att skapa beslutsregler har vissa särdrag jämfört med den som används med **[!UICONTROL Audience Destinations]** service. Till exempel **[!UICONTROL Segments]** -fliken är inte tillgänglig för användning. Den globala processen som beskrivs i [Segment Builder](../../segment/about-segments.md) Dokumentationen kan fortfarande användas för att skapa beslutsregler för erbjudanden. Läs mer i [Dokumentation för Adobe Experience Platform Segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).
+   >Segment Builder som tillhandahålls för att skapa beslutsregler har vissa särdrag jämfört med den som används med **[!UICONTROL Segmentation]** service. Till exempel **[!UICONTROL Segments]** -fliken är inte tillgänglig för användning. Den globala processen som beskrivs i [Segment Builder](../../segment/about-segments.md) Dokumentationen kan fortfarande användas för att skapa beslutsregler för erbjudanden. Läs mer i [Dokumentation för Adobe Experience Platform Segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).
 
 1. När du lägger till och konfigurerar nya fält på arbetsytan visas **[!UICONTROL Segment properties]** visas information om de uppskattade profiler som tillhör segmentet. Klicka **[!UICONTROL Refresh estimate]** för att uppdatera data.
 
