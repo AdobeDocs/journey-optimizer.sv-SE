@@ -7,7 +7,7 @@ feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 1213a65c8a22a326e8294c51db53efb6e23fd6f9
+source-git-commit: fc7f996fca8b1e8e5f6b7379cc3b2b7da764e0ed
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 7%
@@ -53,7 +53,7 @@ Med Adobe Experience Platform [Enhetliga taggar](https://experienceleague.adobe.
 >
 >Enhetliga taggar finns för närvarande i Beta. Dokumentationen och funktionaliteten kan komma att ändras.
 
-## Lägga till taggar i ett objekt
+### Lägga till taggar i ett objekt
 
 The **Taggar** fält, i [resa](../building-journeys/journey-gs.md#change-properties) eller [kampanj](../campaigns/create-campaign.md#create) -egenskaper kan du definiera taggar för objektet. Du kan antingen markera en befintlig tagg eller skapa en ny.
 
@@ -69,7 +69,7 @@ Listan med definierade taggar visas under **Taggar** fält.
 > 
 > Om du duplicerar eller skapar en ny version av en resa eller kampanj bevaras taggarna.
 
-## Filtrera på taggar
+### Filtrera på taggar
 
 På resorna och kampanjlistorna visas en dedikerad kolumn så att du enkelt kan visualisera dina taggar.
 
@@ -81,7 +81,7 @@ Du kan lägga till eller ta bort taggar från alla typer av resor och kampanjer 
 
 ![](assets/tags3.png)
 
-## Hantera taggar
+### Hantera taggar
 
 Administratörer kan ta bort taggar och ordna dem efter kategorier med **Taggar** meny, under **ADMINISTRATION**. Läs mer om tagghantering i [Dokumentation för enhetliga taggar](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/ui/managing-tags.html).
 
