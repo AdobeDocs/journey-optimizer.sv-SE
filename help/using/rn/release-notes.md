@@ -4,10 +4,10 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 1c4a2f19bd929720e93f4019bb1646c82bed9265
+source-git-commit: d04f102100e67baf34ca72f9af26931955f84c67
 workflow-type: tm+mt
-source-wordcount: '1970'
-ht-degree: 8%
+source-wordcount: '2379'
+ht-degree: 7%
 
 ---
 
@@ -21,24 +21,172 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 
 ![Nyhetsbrev](../assets/do-not-localize/nl-icon.png) Registrera dig för [Adobe Journey Optimizer kvartalsvis nyhetsbrev](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} idag och få de senaste produktuppdateringarna, spännande historier, användningsexempel, tips och mycket annat levererat direkt till din inkorg varje kvartal.
 
-## Förbättringar i maj 2023 {#may-improvements}
 
-<table>
+## Versionsinformation maj 2023 {#may-rn-2023}
+
+Informationen nedan kan komma att ändras utan föregående meddelande fram till releasedatum. Uppdaterad dokumentation kommer att publiceras på releasedatum och direkta länkar kommer att läggas till på den här sidan.
+
+**Releasedatum**: 25 maj 2023
+
+### Nya funktioner{#may-2023-features}
+
+<!--table>
 <thead>
 <tr>
-<th><strong>Använd taggar i era kampanjer</strong><br/></th>
+<th><strong>Audience Composition</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Nu kan ni tilldela enhetliga Adobe Experience Platform-taggar till era kampanjer. På så sätt kan ni enkelt klassificera dem och förbättra sökningen från kampanjlistan. Observera att funktionen för enhetliga taggar för närvarande är en betaversion.
+<p>You can now create composition workflows to combine existing Adobe Experience Platform audiences into a visual canvas and leverage various activities (split, enrich...) to create new audiences. Newly created audiences are saved backed into Adobe Experience Platform along with existing audiences and can be leveraged in Journey Optimizer campaigns to target customers.</p>
+<img src="../segment/assets/audiences-publish.png"/>
+<!--p>For more information, refer to the <a href="../offers/ranking/personalized-optimization-model.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table-->
+
+<table>
+<thead>
+<tr>
+<th><strong>Experimentera med material i kampanjer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Adobe Journey Optimizer stöder nu experiment med kampanjer. Experimentella tester är randomiserade, vilket i samband med onlinetestning innebär att du exponerar vissa slumpmässigt utvalda användare för en viss variant av ett meddelande och en annan slumpmässigt utvald uppsättning användare för annan variation eller behandling. Efter exponering kan du mäta de resultatvärden du är intresserad av, som öppningar av e-post, prenumerationer eller inköp.</p>
+<img src="assets/do-not-localize/experiment.gif"/>
+<!--p>For more information, refer to the <a href="../campaigns/content-experiment.md">detailed documentation</a>.</p-->
+</td>
+</tr>
+</tbody>
+</table>
+
+<!--
+<table>
+<thead>
+<tr>
+<th><strong>Objective reporting and performance measurement in campaigns</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now measure the performance of your campaigns across inbound and outbound through dedicated reports. Adobe Journey Optimizer reports can retrieve additional metrics to use in the Objectives tab of your campaign reports.</p>
+<img src="assets/do-not-localize/performance_report.gif"/>
+<p>For more information, refer to the <a href="../reports/campaign-global-report.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+-->
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Skapa och använda fragment i ditt e-postinnehåll</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du skapa, använda och hantera fragment för att snabbt sammanställa e-post och innehållsmallar. Ett fragment är en färdig återanvändbar komponent som kan refereras i flera e-postmeddelanden mellan Journey Optimizer kampanjer och resor för en förbättrad och snabbare designprocess.</p>
+<img src="assets/fragment-insert.png"/>
+<!--p>For more information, refer to the <a href="../email/content-templates.md">detailed documentation</a>.</p-->
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Använd taggar i era kampanjer (beta)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan ni tilldela enhetliga Adobe Experience Platform-taggar till era kampanjer. På så sätt kan ni enkelt klassificera dem och förbättra sökningen från kampanjlistan. Observera att funktionen för enhetliga taggar för närvarande är en betaversion.</p>
 <img src="assets/do-not-localize/campaigns-tag.gif"/>
 <p>Mer information finns i den <a href="../start/search-filter-categorize.md#tags">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
 </table>
+
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Anpassad AI-rankningsmodell för optimering (allmän tillgänglighet)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Personaliserade AI-rankningsmodeller för optimering finns nu i allmänhet tillgängliga i Beslutshantering. Med den här nya typen av modell kan ni optimera och personalisera erbjudanden baserat på segment och erbjudanden.</p>
+<img src="assets/do-not-localize/ai-ranking.gif"/>
+<p>Mer information finns i den <a href="../offers/ranking/personalized-optimization-model.md">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+### Förbättringar {#may-2023-improvements}
+
+<!--
+**Terminology**
+
+* "Segments" are now "Audiences". Documentation and product UI have been updated to reflect this change.
+-->
+<!-- Namespace is now Identity type. Documentation and product UI have been updated to reflect this change.
+-->
+
+
+**Publiker**
+
+* Målgruppsväljaren har förbättrats under resor eller kampanjer, med nya kolumner som visar målgruppernas ursprung och uppdateringsfrekvens.
+
+**SMS-kanal**
+
+* Infobip har lagts till som leverantör när du konfigurerar dina SMS-kanalytor.
+* Twillio - API-autentiseringsuppgifterna innehåller nu möjligheten att lägga till SID för meddelandetjänst för smidig integrering med ditt Twilio-konto.
+
+**Kanal i appen**
+
+* Nya regler för meddelandeutlösare för tjänsten Adobe Places har lagts till.
+* Nya Adobe Experience Platform Assurance-funktioner har lagts till för att fånga in enhetshändelser som ska läggas till som utlösarregler.
+
+**Resor**
+
+* Nu kan du utnyttja API-anropssvar i anpassade åtgärder och samordna din resa baserat på dessa svar.
+
+**Kampanjer**
+
+* Nu är det möjligt att duplicera en kampanj från lagerskärmen med hjälp av ellipsens åtgärdsmeny.
+* Nu kan du ta bort utkast till ändringar i en Live-kampanj.
+* Stegen för att aktivera en kampanj har nu effektiviserats.
+
+**Beslutshantering**
+
+* Du kan nu redigera frekvensbegränsningen om erbjudandet har statusen Utkast och aldrig har publicerats tidigare.
+
+**Personalisering**
+
+* Du kan nu välja och infoga resursreferenser direkt från personaliseringsredigeraren när du arbetar i HTML-innehåll.
+
+### Korrigeringar{#may-2023-fixes}
+
+* Meddelanden i appen - Korrigerade ett fel där kampanjplaneringen stod i konflikt med inställningarna för meddelandefrekvens.
+
 
 ## Versionsinformation april 2023 {#apr-rn-2023}
 
@@ -67,7 +215,7 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 <table>
 <thead>
 <tr>
-<th><strong>Snabbstartarbetsflöde för mobil introduktion (beta)</strong><br/></th>
+<th><strong>Snabbstart för introduktion av mobilappar (beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -84,7 +232,7 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 <table>
 <thead>
 <tr>
-<th><strong>Ny Journey-kontrollpanel (beta)</strong><br/></th>
+<th><strong>Ny kontrollpanel för resan (beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -100,25 +248,6 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 </tr>
 </tbody>
 </table>
-
-<!--
-
-<table>
-<thead>
-<tr>
-<th><strong>Personalized Optimization AI ranking model (General Availability)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Personalized Optimization AI ranking models are now generally available in Decision Management. This new type of model allows you to optimize and personalize offers based on segments and offer performance.</p>
-<img src="assets/do-not-localize/ai-ranking.gif"/>
-<p>For more information, refer to the <a href="../offers/ranking/personalized-optimization-model.md">detailed documentation</a>.</p>
-</td>
-</tr>
-</tbody>
-</table>-->
 
 ### Förbättringar {#april-2023-improvements}
 
