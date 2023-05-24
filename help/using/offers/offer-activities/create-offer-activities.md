@@ -8,8 +8,8 @@ level: Intermediate
 exl-id: 7a217c97-57e1-4f04-a92c-37632f8dfe91
 source-git-commit: 93e3ed9e1a9a437353b800aee58952b86eab9370
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1389'
+ht-degree: 1%
 
 ---
 
@@ -179,7 +179,7 @@ Den är nu klar att användas för att leverera erbjudanden till kunder.
 
 ## Beslutslista {#decision-list}
 
-I beslutslistan kan du välja vilket beslut som ska visas. Därifrån kan du även redigera den och ändra dess status (**Utkast**, **Live**, **Slutförd**, **Arkiverad**), duplicera beslutet eller ta bort det.
+I beslutslistan kan du välja vilket beslut som ska visas. Därifrån kan du också redigera den och ändra dess status (**Utkast**, **Live**, **Slutförd**, **Arkiverad**), duplicera beslutet eller ta bort det.
 
 ![](../assets/decision_created.png)
 

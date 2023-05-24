@@ -22,7 +22,7 @@ ht-degree: 4%
 >title="Skapa en regel"
 >abstract="Med metoden Skapa regel kan du skapa en ny segmentdefinition med Adobe Experience Platform segmenteringstjänst."
 
-I det här exemplet kommer vi att skapa ett segment för alla kunder som bor i Atlanta, San Francisco eller Seattle och som är födda efter 1980. Alla dessa kunder bör ha öppnat Luma-applikationen inom de senaste 7 dagarna och sedan köpt den inom 2 timmar efter att ansökan öppnats.
+I det här exemplet ska vi skapa ett segment som riktar sig till alla kunder som bor i Atlanta, San Francisco eller Seattle och som är födda efter 1980. Alla dessa kunder bör ha öppnat Luma-applikationen inom de senaste 7 dagarna och sedan köpt den inom 2 timmar efter att ansökan öppnats.
 
 ➡️ [Lär dig hur du skapar segment i den här videon](#video-segment)
 

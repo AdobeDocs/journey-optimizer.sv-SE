@@ -7,13 +7,13 @@ role: User
 level: Beginner
 badge: label="Beta" type="Informative"
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
-source-git-commit: c3ad875b50999da833d75e97a787cab9e24e38d4
+exl-id: 66b5c691-ddc4-4e9b-9386-2ce6c307451c
+source-git-commit: c823d1a02ca9d24fc13eaeaba2b688249e61f767
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
 
 ---
-
 
 # Exportera datauppsättningar till molnlagringsplatser {#export-datasets}
 

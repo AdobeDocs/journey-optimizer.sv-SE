@@ -7,7 +7,8 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+exl-id: a41e82db-1fa4-478d-a5a2-324d1df1f8ee
+source-git-commit: 26456f7c2d879843eb533209377b83fc0ccb5617
 workflow-type: tm+mt
 source-wordcount: '972'
 ht-degree: 3%
@@ -412,6 +413,3 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
 </tr>
  </tbody> 
 </table>
-
-
-
