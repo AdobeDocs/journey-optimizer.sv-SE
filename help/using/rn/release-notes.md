@@ -4,10 +4,10 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 0622911847dddfff553bbcfdaa9aef451b64101c
+source-git-commit: ec2113d6789f53827c725573669e948e1385c2e4
 workflow-type: tm+mt
-source-wordcount: '2504'
-ht-degree: 7%
+source-wordcount: '2476'
+ht-degree: 8%
 
 ---
 
@@ -24,9 +24,9 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 
 ## Versionsinformation maj 2023 {#may-rn-2023}
 
-Informationen nedan kan komma att ändras utan föregående meddelande fram till releasedatum. Uppdaterad dokumentation kommer att publiceras på releasedatum och direkta länkar kommer att läggas till på den här sidan.
+<!--Information below is subject to change without prior notice until the release availability date. Updated documentation will be published at the release date, and direct links will be added in this page.
 
-**Releasedatum**: 25 maj 2023
+**Release date**: May 25, 2023-->
 
 ### Nya funktioner{#may-2023-features}
 
@@ -60,7 +60,7 @@ Informationen nedan kan komma att ändras utan föregående meddelande fram till
 <td>
 <p>Adobe Journey Optimizer stöder nu experiment med kampanjer. Experimentella tester är randomiserade, vilket i samband med onlinetestning innebär att du exponerar vissa slumpmässigt utvalda användare för en viss variant av ett meddelande och en annan slumpmässigt utvald uppsättning användare för annan variation eller behandling. Efter exponering kan du mäta de resultatvärden du är intresserad av, som öppningar av e-post, prenumerationer eller inköp.</p>
 <img src="assets/do-not-localize/experiment.gif"/>
-<!--p>For more information, refer to the <a href="../campaigns/content-experiment.md">detailed documentation</a>.</p-->
+<p>Mer information finns i den <a href="../campaigns/content-experiment.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -97,7 +97,7 @@ Informationen nedan kan komma att ändras utan föregående meddelande fram till
 <td>
 <p>Nu kan du skapa, använda och hantera fragment för att snabbt sammanställa e-post och innehållsmallar. Ett fragment är en färdig återanvändbar komponent som kan refereras i flera e-postmeddelanden mellan Journey Optimizer kampanjer och resor för en förbättrad och snabbare designprocess.</p>
 <img src="assets/do-not-localize/fragments.gif"/>
-<!--p>For more information, refer to the <a href="../email/content-templates.md">detailed documentation</a>.</p-->
+<p>Mer information finns i den <a href="../email/fragments.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -144,14 +144,6 @@ Informationen nedan kan komma att ändras utan föregående meddelande fram till
 
 ### Förbättringar {#may-2023-improvements}
 
-<!--
-**Terminology**
-
-* "Segments" are now "Audiences". Documentation and product UI have been updated to reflect this change.
--->
-
-<!-- Namespace is now Identity type. Documentation and product UI have been updated to reflect this change.
--->
 
 
 **Publiker**
@@ -161,23 +153,20 @@ Informationen nedan kan komma att ändras utan föregående meddelande fram till
    * Målgrupp: En uppsättning personer, konton, hushåll eller andra enheter som delar gemensamma egenskaper och beteenden.
    * Segmentdefinition: I Adobe Experience Platform används de regler som beskriver en målgrupps viktigaste egenskaper eller beteenden. Termen kallades tidigare bara&quot;segment&quot;.
 
-   I Adobe Journey Optimizer och Adobe Experience Platform kommer man därför att se&quot;Segments&quot; ersatt med&quot;Audiences&quot; för att återspegla detta nya sätt att skapa och hantera målgrupper.
+   I Adobe Journey Optimizer och Adobe Experience Platform kommer man att se&quot;Segments&quot; ersatt med&quot;Audiences&quot; för att visa den nya vägen för målgruppsframtagning och målgruppshantering.
 
-   Ändringarna kommer gradvis att införas i nästa version av användargränssnittet och dokumentationen.
-
-   Översättningarna av termen&quot;publik&quot; när det gäller en grupp profiler som är avsedda att ta emot ett meddelande harmoniserades för alla Digital Experience-produkter för följande språk:
+   Översättningarna av termen&quot;publik&quot; när de avser en grupp profiler som är avsedda att ta emot ett meddelande harmoniserades för alla Digital Experience-produkter för vissa språk:
 
    * Tyska: Zielgruppe
    * Brasiliansk portugisiska: público-alvo
    * Spanska: público destinatario
 
 
-
 <!--* Enhancements have been made to the audience picker in journeys or campaigns, with the addition of new columns displaying the origin and update frequency of audiences.-->
 
 **SMS-kanal**
 
-* Infobip har lagts till som leverantör när du konfigurerar dina SMS-kanalytor.
+* Infobip har lagts till som leverantör när du konfigurerar dina SMS-kanalytor. [Läs mer](../sms/sms-configuration.md)
 * Twillio - API-autentiseringsuppgifterna innehåller nu möjligheten att lägga till SID för meddelandetjänst för smidig integrering med ditt Twilio-konto.
 
 **Kanal i appen**
@@ -197,7 +186,7 @@ Informationen nedan kan komma att ändras utan föregående meddelande fram till
 
 **Beslutshantering**
 
-* Du kan nu redigera frekvensbegränsningen om erbjudandet har statusen Utkast och aldrig har publicerats tidigare.
+* Du kan nu redigera frekvensbegränsningen om erbjudandet innehåller **[!UICONTROL Draft]** status och har aldrig publicerats tidigare med frekvensbegränsning aktiverad. [Läs mer](../offers/offer-library/add-constraints.md#frequency-capping)
 
 **Personalisering**
 
