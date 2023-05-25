@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
-source-git-commit: 7dca239cbdb710b55e8a6c26b5fa3c1644edd778
+source-git-commit: 34d30a4c45f007da6197999dbf1d0b283fba8248
 workflow-type: tm+mt
-source-wordcount: '2269'
+source-wordcount: '2298'
 ht-degree: 1%
 
 ---
@@ -140,16 +140,6 @@ I princip är utdata för ett segment en lista med profiler, medan en beslutsreg
 >abstract="För att undvika att kunderna blir överdrivna bör du definiera hur många gånger ett erbjudande får presenteras med capping."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-constraints.html#capping-change-date" text="Ändrade datum kan påverka capping"
 
->[!CONTEXTUALHELP]
->id="ajo_decisioning_frequency_capping"
->title="Ange takfrekvens"
->abstract="Du kan välja att återställa antalet erbjudanden per dag, vecka eller månad. Observera att när du har sparat ditt erbjudande kan du inte ändra den valda frekvensen."
-
->[!CONTEXTUALHELP]
->id="ajo_decisioning_frequency_capping_impression"
->title="Impression"
->abstract="Användningen av visningar som capping-händelser är endast tillgänglig för inkommande kanaler."
-
 Begränsning används som en begränsning för att definiera det maximala antal gånger ett erbjudande kan presenteras.
 
 Genom att begränsa antalet gånger användarna får specifika erbjudanden kan ni undvika att överdriva era kunder och därmed optimera varje kontaktyta med det bästa erbjudandet.
@@ -183,6 +173,11 @@ Det antal gånger ett erbjudande föreslås beräknas vid e-postförberedelsen. 
 >Räknarna återställs när erbjudandet upphör eller två år efter startdatumet för erbjudandet, beroende på vilket som inträffar först. Lär dig hur du definierar ett erbjudandes datum i [det här avsnittet](creating-personalized-offers.md#create-offer).
 
 ### Takningshändelse {#capping-event}
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_frequency_capping_impression"
+>title="Impression"
+>abstract="Användningen av visningar som capping-händelser är endast tillgänglig för inkommande kanaler."
 
 The **[!UICONTROL Capping event]** kan du definiera vilket **[!UICONTROL Capping event]** kommer att beaktas för att öka räknaren:
 
@@ -250,6 +245,11 @@ Du kan också ange om du vill att appen ska användas för alla användare eller
 
 ### Frekvensbegränsning {#frequency-capping}
 
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_frequency_capping"
+>title="Ange takfrekvens"
+>abstract="Du kan välja att återställa antalet erbjudanden per dag, vecka eller månad. Observera att när du har publicerat erbjudandet med frekvensbegränsning aktiverat kan du inte ändra den frekvens som har definierats."
+
 The **[!UICONTROL Frequency]** kan du definiera hur ofta antalet capping återställs. Om du vill göra det anger du tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och anger hur många dagar/veckor/månader du vill ha.
 
 ![](../assets/offer-capping-frequency.png)
@@ -262,7 +262,9 @@ Om du till exempel vill att antalet fästingar ska återställas varannan vecka 
 
 >[!CAUTION]
 >
->När du har sparat ditt erbjudande kan du inte ändra den tidsperiod (månatlig, veckovis eller daglig) som du har valt för frekvensen.
+>När du har publicerat ditt erbjudande kan du inte ändra den tidsperiod (månadsvis, veckovis eller dagligen) som du har valt för frekvensen.
+>
+>Du kan fortfarande redigera frekvensbegränsningen om erbjudandet innehåller **[!UICONTROL Draft]** status och har aldrig publicerats tidigare med frekvensbegränsning aktiverad.
 
 ### Takning och placeringar {#placements}
 

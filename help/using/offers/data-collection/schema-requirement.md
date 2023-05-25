@@ -7,10 +7,10 @@ feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: f70ba749-f517-4e09-a381-243b21713b48
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: 34d30a4c45f007da6197999dbf1d0b283fba8248
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 1%
+source-wordcount: '267'
+ht-degree: 0%
 
 ---
 
@@ -99,6 +99,15 @@ Kontrollera att händelsetypen och källan är följande:
 ## Spåra anpassade händelser
 
 För anpassade händelser måste schemat som används i datauppsättningen också ha **[!UICONTROL Experience Event - Proposition Interactions]** fältgrupp som är associerad med den, men det finns inga specifika krav på händelsetypen upplevelse som måste användas för att tagga dessa händelser.
+
+>[!NOTE]
+>
+>Om du vill att dina anpassade händelser ska beaktas i [frekvensbegränsning](../offer-library/add-constraints.md#capping)måste du ansluta upplevelsehändelsen till Adobe Experience Platform-slutpunkter genom att skicka den till någon av dessa två Edge-datainsamlingsslutpunkter:
+>
+>* POST /ee/v2/interact
+>* POST /ee/v2/collect
+>
+>Om du använder [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"} or [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}skapas anslutningen automatiskt.
 
 <!--
 ## Using a ranking strategy {#using-ranking}
