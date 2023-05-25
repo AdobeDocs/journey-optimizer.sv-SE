@@ -4,7 +4,7 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 74318fe0e9f72fe6341c060f7113fc877fc7d116
+source-git-commit: 681b84869c3545d6cc58d53eff6289ef45f108c6
 workflow-type: tm+mt
 source-wordcount: '2816'
 ht-degree: 16%
@@ -20,7 +20,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version från maj 23 finns utförlig i dokumentationen. [Läs mer](release-notes.md)
 * En ny sida har lagts till som beskriver hur du konfigurerar den underdomän som ska användas för att publicera innehåll från Adobe Experience Manager Assets Essentials i dina webbupplevelser. [Läs mer](../web/web-delegated-subdomains.md)
 * Ett nytt underavsnitt har lagts till som förklarar hur du lägger till personaliserade spårningsparametrar i URL:er i e-postdesignern. [Läs mer](../email/message-tracking.md#url-tracking)
-* Ett nytt avsnitt har lagts till som beskriver hur du kan säkerställa att valet av de kunder som avstår från att använda sina profildata för personalisering respekteras. [Läs mer](../privacy/opt-out.md#)
+* Ett nytt avsnitt har lagts till som beskriver hur du kan säkerställa att valet av de kunder som avstår från att använda sina profildata för personalisering respekteras. [Läs mer](../privacy/opt-out.md#opt-out-personalization)
 
 ## April 2023 {#apr-2023}
 
