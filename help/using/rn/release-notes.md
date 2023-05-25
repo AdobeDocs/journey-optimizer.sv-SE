@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: ec2113d6789f53827c725573669e948e1385c2e4
+source-git-commit: 104a5d3def95272e09be050c822f5eafed6a6cb0
 workflow-type: tm+mt
-source-wordcount: '2476'
+source-wordcount: '2484'
 ht-degree: 8%
 
 ---
@@ -167,11 +167,11 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 **SMS-kanal**
 
 * Infobip har lagts till som leverantör när du konfigurerar dina SMS-kanalytor. [Läs mer](../sms/sms-configuration.md)
-* Twillio - API-autentiseringsuppgifterna innehåller nu möjligheten att lägga till SID för meddelandetjänst för smidig integrering med ditt Twilio-konto.
+* Twillio - API-autentiseringsuppgifterna innehåller nu möjligheten att lägga till SID för meddelandetjänst för smidig integrering med ditt Twilio-konto. [Läs mer](../sms/sms-configuration.md)
 
 **Kanal i appen**
 
-* Nya regler för meddelandeutlösare för tjänsten Adobe Places har lagts till.
+* Nya regler för meddelandeutlösare för tjänsten Adobe Places har lagts till. [Läs mer](../in-app/inapp-configuration.md)
 * Nya Adobe Experience Platform Assurance-funktioner har lagts till för att fånga in enhetshändelser som ska läggas till som utlösarregler.
 
 **Resor**
@@ -180,9 +180,9 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 
 **Kampanjer**
 
-* Nu är det möjligt att duplicera en kampanj från lagerskärmen med hjälp av ellipsens åtgärdsmeny.
+* Nu är det möjligt att duplicera en kampanj från lagerskärmen med hjälp av ellipsens åtgärdsmeny. [Läs mer](../campaigns/modify-stop-campaign.md#duplicate)
 * Nu kan du ta bort utkast till ändringar i en Live-kampanj.
-* Stegen för att aktivera en kampanj har nu effektiviserats.
+* Stegen för att aktivera en kampanj har nu effektiviserats. [Läs mer](../campaigns/modify-stop-campaign.md)
 
 **Beslutshantering**
 
