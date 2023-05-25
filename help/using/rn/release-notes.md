@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 3a6f66bd1b2b0050830e4ba5b102a3b48faa8202
+source-git-commit: 89909c8a1465c40bc1201eeba2deb98969e5575e
 workflow-type: tm+mt
-source-wordcount: '2379'
+source-wordcount: '2530'
 ht-degree: 7%
 
 ---
@@ -155,6 +155,23 @@ Informationen nedan kan komma att ändras utan föregående meddelande fram till
 
 
 **Publiker**
+
+* Som en förberedelse för den allmänt tillgängliga funktionen Audience Portal uppdaterar Adobe Experience Platform användningen av&quot;målgrupper&quot; och&quot;segment&quot; i systemet och dokumentationen.
+
+   * Målgrupp: En uppsättning personer, konton, hushåll eller andra enheter som delar gemensamma egenskaper och beteenden.
+   * Segmentdefinition: I Adobe Experience Platform används de regler som beskriver en målgrupps viktigaste egenskaper eller beteenden. Termen kallades tidigare bara&quot;segment&quot;.
+
+   I Adobe Journey Optimizer och Adobe Experience Platform kommer man därför att se&quot;Segments&quot; ersatt med&quot;Audiences&quot; för att återspegla detta nya sätt att skapa och hantera målgrupper.
+
+   Ändringarna kommer gradvis att införas i nästa version av användargränssnittet och dokumentationen.
+
+   Översättningarna av termen&quot;publik&quot; när det gäller en grupp profiler som är avsedda att ta emot ett meddelande harmoniserades för alla Digital Experience-produkter för följande språk:
+
+   * Tyska: Zielgruppe
+   * Brasiliansk portugisiska: público-alvo
+   * Spanska: público destinatario
+
+
 
 * Målgruppsväljaren har förbättrats under resor eller kampanjer, med nya kolumner som visar målgruppernas ursprung och uppdateringsfrekvens.
 
