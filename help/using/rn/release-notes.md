@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 89909c8a1465c40bc1201eeba2deb98969e5575e
+source-git-commit: 0622911847dddfff553bbcfdaa9aef451b64101c
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2504'
 ht-degree: 7%
 
 ---
@@ -173,7 +173,7 @@ Informationen nedan kan komma att ändras utan föregående meddelande fram till
 
 
 
-* Målgruppsväljaren har förbättrats under resor eller kampanjer, med nya kolumner som visar målgruppernas ursprung och uppdateringsfrekvens.
+<!--* Enhancements have been made to the audience picker in journeys or campaigns, with the addition of new columns displaying the origin and update frequency of audiences.-->
 
 **SMS-kanal**
 
