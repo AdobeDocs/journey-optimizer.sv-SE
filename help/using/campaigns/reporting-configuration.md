@@ -9,12 +9,9 @@ role: Admin
 level: Intermediate
 keywords: konfiguration, experiment, rapportering, optimering
 exl-id: 327a0c45-0805-4f64-9bab-02d67276eff8
-badge: label="Beta" type="Informative"
-hide: true
-hidefromtoc: true
-source-git-commit: 9910c748cf66828ccbd314757c252b9093d2af75
+source-git-commit: 066bceb078f619e75e5776764f534619d5a0bd5a
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '692'
 ht-degree: 2%
 
 ---
