@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: förhandsgranskning, innehåll, e-post, korrektur, test, profil
 exl-id: f2c2a360-a4b2-4416-bbd0-e27dd014e4ac
-source-git-commit: 81ab92022329788c1feea24c7a621ef154d33422
+source-git-commit: 59499dec7d15dd4565c7910d7b454d82243ff011
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '976'
 ht-degree: 1%
 
 ---
@@ -49,8 +49,8 @@ Dessutom kan du **Litmus** konto till [!DNL Journey Optimizer] för att omedelba
 >id="ac_preview_testprofiles"
 >title="Förhandsgranska och testa dina meddelanden"
 >abstract="När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/email/preview.html?lang=en#email-rendering" text="E-poståtergivning"
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/email/preview.html?lang=en#preview-email" text="Förhandsgranskning"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/email/preview.html#email-rendering" text="E-poståtergivning"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/email/preview.html#preview-email" text="Förhandsgranskning"
 
 Använd [Testprofiler](../segment/creating-test-profiles.md) om du vill ange fler mottagare som inte matchar de definierade målinriktningskriterierna som mål.
 

@@ -9,16 +9,16 @@ role: Admin,Developer
 level: Experienced
 keywords: politik, styrning, plattform, hälso- och sjukvård, samtycke
 exl-id: 01ca4b3e-3778-4537-81e9-97ef92c9aa9e
-source-git-commit: 1177a0ac99035837ff4a7422808bb92a91710f15
+source-git-commit: 59499dec7d15dd4565c7910d7b454d82243ff011
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
 
 # Arbeta med policyer för samtycke {#consent-management}
 
-Med Adobe Experience Platform kan ni enkelt införa och tillämpa marknadsföringspolicyer för att respektera kundernas samtycke. Samtyckesregler definieras i Adobe Experience Platform. Se [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=en#consent-policy).
+Med Adobe Experience Platform kan ni enkelt införa och tillämpa marknadsföringspolicyer för att respektera kundernas samtycke. Samtyckesregler definieras i Adobe Experience Platform. Se [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy).
 
 I Journey Optimizer kan du tillämpa dessa medgivandeprinciper på dina anpassade åtgärder. Du kan till exempel definiera regler för samtycke för att exkludera kunder som inte har samtyckt till att ta emot e-post, push eller SMS.
 

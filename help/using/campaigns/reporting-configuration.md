@@ -8,13 +8,13 @@ topic: Administration
 role: Admin
 level: Intermediate
 keywords: konfiguration, experiment, rapportering, optimering
-hide: true
-hidefromtoc: true
 exl-id: 327a0c45-0805-4f64-9bab-02d67276eff8
 badge: label="Beta" type="Informative"
-source-git-commit: 160e4ce03d3be975157c30fbe511875a85b00551
+hide: true
+hidefromtoc: true
+source-git-commit: 9910c748cf66828ccbd314757c252b9093d2af75
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '696'
 ht-degree: 2%
 
 ---
@@ -30,18 +30,6 @@ ht-degree: 2%
 >id="ajo_admin_reporting_dataset"
 >title="Välj en datauppsättning"
 >abstract="Du kan bara välja en datamängd av händelsetyp, som måste innehålla minst en av de fältgrupper som stöds: Programinformation, handelsinformation, webbinformation."
-
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här dokumentationen:
-
-* [Kom igång med innehållsexperiment](get-started-experiment.md)
-* [Skapa ett innehållsexperiment](content-experiment.md)
-* [Förstå statistiska beräkningar](experiment-calculations.md)
-* **[Konfigurera experimentrapporter](reporting-configuration.md)**
-* [Statistiska beräkningar i experimentrapporten](experiment-report-calculations.md)
-
->[!ENDSHADEBOX]
 
 <!--The reporting data source configuration allows you to define a connection to a system in order to retrieve additional information that will be used in your reports.-->
 
@@ -60,7 +48,7 @@ För den här konfigurationen måste du lägga till en eller flera datauppsättn
 ## Förutsättningar
 
 
-Innan du kan lägga till en datauppsättning i rapportkonfigurationen måste du skapa den datauppsättningen. Läs mer i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en#create){target="_blank"}.
+Innan du kan lägga till en datauppsättning i rapportkonfigurationen måste du skapa den datauppsättningen. Läs mer i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#create){target="_blank"}.
 
 * Du kan bara lägga till datamängder av händelsetyp.
 

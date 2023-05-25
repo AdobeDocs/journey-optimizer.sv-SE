@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: avanmälan, e-post, länk, avanmälan
 exl-id: 4bb51bef-5dab-4a72-8511-1a5e528f4b95
-source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
+source-git-commit: f5390bbb3bab435b21ace4d1842de0048132bc8c
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1012'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Om **[!UICONTROL List-Unsubscribe]** om alternativet är aktiverat på kanalytni
 
 >[!NOTE]
 >
->E-postmeddelanden av marknadsföringstyp måste innehålla en länk för avanmälan, vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [kanalyta](../configuration/channel-surfaces.md#email-type) (dvs. meddelandeförinställning) nivå och när meddelandet skapas).
+>E-postmeddelanden av marknadsföringstyp måste innehålla en länk för avanmälan, vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [kanalyta](../configuration/channel-surfaces.md#email-type) nivå och när meddelandet skapas).
 
 ## Extern avanmälan {#opt-out-external-lp}
 
@@ -64,12 +64,11 @@ Om du vill att mottagarna ska avanmäla sig när de skickar in sitt val från la
 
 Det här anropet till POSTEN är som följer:
 
-Slutpunkt: platform.adobe.io/journey/imp/consent/preferences
+Slutpunkt: https://platform.adobe.io/journey/imp/consent/preferences
 
 Frågeparametrar:
 
 * **parametrar**: innehåller den krypterade nyttolasten
-* **sig**: signatur
 * **pid**: krypterat profil-ID
 
 Dessa tre parametrar kommer att ingå i den URL till landningssidan som skickas till mottagaren:

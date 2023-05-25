@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: länkar, spåra, övervaka, e-post
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: 9592e9c1b0e9c8a1c606a9a187501542e496eddb
+source-git-commit: af1bc66021f04dacee8cf674925af9e2d0c2f30b
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 0%
+source-wordcount: '1004'
+ht-degree: 1%
 
 ---
 
@@ -63,30 +63,59 @@ Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
 
    * **[!UICONTROL External link]**: Infoga en länk till en extern URL.
 
-   * **[!UICONTROL Landing page]**: Infoga en länk till en landningssida. Läs mer i [det här avsnittet](../landing-pages/get-started-lp.md)
+   * **[!UICONTROL Landing page]**: Infoga en länk till en landningssida. [Läs mer ](../landing-pages/get-started-lp.md)
 
-   * **[!UICONTROL One click Opt-out]**: Infoga en länk som gör det möjligt för användare att snabbt avbeställa prenumerationer utan att behöva bekräfta att de vill avanmäla sig. Läs mer i [det här avsnittet](../privacy/opt-out.md#one-click-opt-out).
+   * **[!UICONTROL One click Opt-out]**: Infoga en länk som gör det möjligt för användare att snabbt avbeställa prenumerationer utan att behöva bekräfta att de vill avanmäla sig. [Läs mer](email-opt-out.md#one-click-opt-out).
 
    * **[!UICONTROL External Opt-in/Subscription]**: Infoga en länk för att ta emot meddelanden från ert varumärke.
 
-   * **[!UICONTROL External Opt-out/Unsubscription]**: Infoga en länk för att avbeställa beställning av meddelanden från ert varumärke. Läs mer om avanmälningshantering i [det här avsnittet](../privacy/opt-out.md#opt-out-management).
+   * **[!UICONTROL External Opt-out/Unsubscription]**: Infoga en länk för att avbeställa beställning av meddelanden från ert varumärke. Läs mer om avanmälningshantering i [det här avsnittet](email-opt-out.md#opt-out-management).
 
-   * **[!UICONTROL Mirror page]**: Infoga en länk för att visa e-postinnehållet i en webbläsare. Läs mer i [det här avsnittet](#mirror-page).
+   * **[!UICONTROL Mirror page]**: Lägg till en länk för att visa e-postinnehållet i en webbläsare. [Läs mer](#mirror-page)
 
-1. Du kan anpassa länkarna. Läs mer om personaliserade URL:er i [det här avsnittet](../personalization/personalization-syntax.md#perso-urls).
+1. Ange önskad URL-adress i motsvarande fält eller välj en landningssida och definiera länkinställningar och format. [Läs mer](#adjust-links)
+
+   >[!NOTE]
+   >
+   >För att tolka URL:er [!DNL Journey Optimizer] följer URI-syntaxen ([RFC 3986-standard](https://datatracker.ietf.org/doc/html/rfc3986){target="_blank"}), vilket inaktiverar vissa internationella specialtecken i URL:er. När du försöker skicka korrekturet eller e-postmeddelandet och returnerar ett fel som inbegriper en URL som har lagts till i innehållet, kan du URL-koda strängen som en tillfällig lösning.
+
+1. Du kan anpassa länkarna. [Läs mer](../personalization/personalization-syntax.md#perso-urls)
 
 1. Spara ändringarna.
 
-1. När länken har skapats kan du fortfarande ändra den från **[!UICONTROL Component settings]** till höger.
-
-   * Du kan redigera länken och ändra dess typ.
-   * Du kan välja att stryka under länken eller inte genom att markera motsvarande alternativ.
+1. När länken har skapats kan du fortfarande ändra den från **[!UICONTROL Settings]** och **[!UICONTROL Styles]** rutor till höger.
 
    ![](assets/message-tracking-link-settings.png)
 
 >[!NOTE]
 >
 >E-postmeddelanden av marknadsföringstyp måste innehålla en [länk för avanmälan](../privacy/opt-out.md#opt-out-management), vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [kanalyta](../configuration/channel-surfaces.md#email-type) när meddelandet skapas.
+
+## Justera länkar {#adjust-links}
+
+Du kan justera länkarna med **[!UICONTROL Settings]** och **[!UICONTROL Styles]** rutor till höger. Du kan stryka under en länk, redigera dess färg och välja dess mål.
+
+1. I en **[!UICONTROL Text]** markerar du länken där en länk infogas.
+
+1. Från **[!UICONTROL Settings]** väljer du hur målgruppen ska omdirigeras med **[!UICONTROL Target]** nedrullningsbar meny:
+
+   * **[!UICONTROL None]**: öppnar länken i samma ram som den klickades på (standard).
+   * **[!UICONTROL Blank]**: öppnar länken i ett nytt fönster eller på en ny flik.
+   * **[!UICONTROL Self]**: öppnar länken i samma ram som den klickades på.
+   * **[!UICONTROL Parent]**: öppnar länken i den överordnade ramen.
+   * **[!UICONTROL Top]**: öppnar länken i hela fönstret.
+
+   ![](assets/link_2.png)
+
+1. Kontrollera **[!UICONTROL Underline link]** om du vill stryka under etikettexten för länken.
+
+   ![](assets/link_1.png)
+
+1. Om du vill ändra färg på länken klickar du på **[!UICONTROL Link color]** från **[!UICONTROL Styles]** -fliken.
+
+   ![](assets/link_3.png)
+
+1. Spara ändringarna.
 
 ## Länka till en spegelsida {#mirror-page}
 

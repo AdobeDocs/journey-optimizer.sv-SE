@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: data, styrning, DULE, etiketter, märkning, plattform, policy
 exl-id: be3efd3b-35d5-4cf7-9015-29d1e305355d
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: 59499dec7d15dd4565c7910d7b454d82243ff011
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '900'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ I Journey Optimizer kan du tillämpa dessa profiler på dina anpassade åtgärde
 Mer information om ramverket för datastyrning och hur du arbetar med etiketter och policyer finns i Adobe Experience Platform-dokumentationen:
 
 * [Översikt över tjänsten Datastyrning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html)
-* [Översikt över etiketter för dataanvändning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/overview.html?lang=en)
+* [Översikt över etiketter för dataanvändning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/overview.html)
 * [Dataanvändningspolicyer](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html)
 
 ## Viktiga anteckningar {#important-notes}
@@ -48,7 +48,7 @@ Du kan använda befintliga etiketter, marknadsföringsåtgärder och policyer. H
 * Definiera en marknadsföringsåtgärd för varje anpassad åtgärd från tredje part som används på dina resor.
 * Skapa en styrningspolicy och koppla den till etikett- och marknadsföringsåtgärden.
 
-Mer information om hur du hanterar principer finns i [dokumentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=en#consent-policy)
+Mer information om hur du hanterar principer finns i [dokumentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy)
 
 Låt oss ta ett exempel på det blodtypsfält som du måste märka som känsligt och begränsa dig från att exporteras till tredje part. Här är de olika stegen:
 

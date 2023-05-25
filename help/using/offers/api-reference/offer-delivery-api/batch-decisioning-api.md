@@ -6,7 +6,7 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 1ed01a6b-5e42-47c8-a436-bdb388f50b4e
-source-git-commit: 34ab78408981d2b53736b31c94412da06cb860c4
+source-git-commit: 59499dec7d15dd4565c7910d7b454d82243ff011
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 1%
@@ -30,7 +30,7 @@ För att göra detta skulle organisationen:
 
 * Exportera datauppsättningen till meddelandeleverantörens API.
 
-<!-- (Refer to the [export jobs endpoint documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=en) to learn more about exporting segments.) -->
+<!-- (Refer to the [export jobs endpoint documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html) to learn more about exporting segments.) -->
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ curl -X POST 'https://platform.adobe.io/data/core/ode/0948b1c5-fff8-3b76-ba17-90
 | `xdm:itemCount` | Det här är ett valfritt fält som visar antalet objekt, t.ex. alternativ som begärts för beslutsomfånget. Som standard returnerar API ett alternativ per omfång, men du kan uttryckligen be om fler alternativ genom att ange det här fältet. Minst 1 och högst 30 alternativ kan begäras per omfång. | `1` |
 | `xdm:includeContent` | Detta är ett valfritt fält och är `false` som standard. If `true`, ingår erbjudandeinnehållet i beslutshändelserna för datauppsättningen. | `false` |
 
-Se [Beslutsledningens dokumentation](../../get-started/starting-offer-decisioning.md) för en översikt över de viktigaste begreppen och egenskaperna.
+Se [Beslutsledningens dokumentation](../../get-started/starting-offer-decisioning.md) om du vill ha en översikt över de viktigaste begreppen och egenskaperna.
 
 **Svar**
 

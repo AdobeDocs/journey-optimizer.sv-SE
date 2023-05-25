@@ -9,18 +9,15 @@ keywords: i appen, meddelande, skapa, börja
 hide: true
 hidefromtoc: true
 exl-id: b774e34f-8225-41a0-a2ec-b91d3a86cf2b
-source-git-commit: 252011710574122c1f321a388b65bdafb7c666df
+badge: label="Beta" type="Informative"
+source-git-commit: 50afe137c618153278c596f1553216c20637e40b
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
 
 # Skapa ett meddelande i appen på en resa {#create-in-app-journey}
-
->[!AVAILABILITY]
->
->Aktiviteten i appen är för närvarande endast tillgänglig som en betaversion för utvalda användare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
 
 1. Öppna din resa och dra och släpp en **[!UICONTROL In-app]** aktivitet från **[!UICONTROL Actions]** på paletten.
 

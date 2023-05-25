@@ -8,13 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: innehåll, experiment, multipelt, målgrupp, behandling
-hide: true
-hidefromtoc: true
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-badge: label="Beta" type="Informative"
-source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
+source-git-commit: 64be9c41085dead10ff08711be1f39760a81ff95
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '693'
 ht-degree: 1%
 
 ---
@@ -26,23 +23,11 @@ ht-degree: 1%
 >title="Innehållsexperiment"
 >abstract="Du kan välja att variera leveransinnehåll, ämne eller avsändare för att definiera flera leveransbehandlingar och fastställa den bästa kombinationen för era målgrupper."
 
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här dokumentationen:
-
-* [Kom igång med innehållsexperiment](get-started-experiment.md)
-* **[Skapa ett innehållsexperiment](content-experiment.md)**
-* [Förstå statistiska beräkningar](experiment-calculations.md)
-* [Konfigurera experimentrapporter](reporting-configuration.md)
-* [Statistiska beräkningar i experimentrapporten](experiment-report-calculations.md)
-
->[!ENDSHADEBOX]
-
-Med Journey Optimizer Content Experiment kan ni definiera flera olika leveranssätt för att mäta vilken som fungerar bäst för er målgrupp. Du kan välja att variera leveransinnehåll, ämne eller avsändare. Intressemålgruppen fördelas slumpmässigt till varje behandling för att avgöra vilken som fungerar bäst med det angivna mätvärdet.
-
 >[!NOTE]
 >
 >Innan du börjar med Content Experiment bör du kontrollera att rapportkonfigurationen är inställd för dina anpassade datauppsättningar. Läs mer i [det här avsnittet](reporting-configuration.md).
+
+Med Journey Optimizer Content Experiment kan ni definiera flera olika leveranssätt för att mäta vilken som fungerar bäst för er målgrupp. Du kan välja att variera leveransinnehåll, ämne eller avsändare. Intressemålgruppen fördelas slumpmässigt till varje behandling för att avgöra vilken som fungerar bäst med det angivna mätvärdet.
 
 I exemplet nedan har leveransmålet delats upp i två grupper, som var och en representerar 45 % av målpopulationen, och en slutgruppsgrupp på 10 % som inte får leveransen.
 
@@ -72,6 +57,8 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 -->
 1. Välj kanal och sedan **[!UICONTROL Surface]** du vill använda för den här leveransen och klicka på **[!UICONTROL Create]**. Mer information finns i [Kanalytor](../configuration/channel-surfaces.md) sida.
 
+   I det här exemplet väljer vi att skicka en kampanj med e-post.
+
    ![](assets/content_experiment_2.png)
 
 1. Konfigurera **[!UICONTROL Properties]** av leveransen:
@@ -90,7 +77,7 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 
 1. Konfigurera **[!UICONTROL Schedule]** -avsnitt. [Läs mer](create-campaign.md)
 
-1. Klicka **[!UICONTROL Edit content]** för att personalisera leveransen. [Läs mer](../email/content-from-scratch.md)
+1. Klicka **[!UICONTROL Edit content]** för att personalisera leveransen.
 
    ![](assets/content_experiment_17.png)
 
@@ -160,57 +147,4 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 
    ![](assets/content_experiment_14.png)
 
-När du har konfigurerat dina experiment och kampanjer kan du följa resultatet av leveransen med Campaign-rapporten.
-
-## Målrapport {#objectives-global}
-
->[!AVAILABILITY]
->
->Funktionen för innehållsexperiment är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
-
-![](assets/performance_report.gif)
-
-The **[!UICONTROL Objectives]** kan ni finjustera era leveransrapporter bättre genom att rikta in er på ett specifikt mätvärde.
-
-The **[!UICONTROL Objectives]** listade är länkade till **[!UICONTROL Datasets]** som definierar en anslutning till ett system för att hämta ytterligare information. En lista med inbyggda **[!UICONTROL Objectives]** är tillgängligt, men du kan lägga till egna genom att lägga till nya **[!UICONTROL Dataset]**. För det detaljerade förfarandet, se [section](reporting-configuration.md).
-
-När du har valt de mål som du vill ha som mål för **[!UICONTROL Performance overview]** och **[!UICONTROL Campaign objective]** -widgetar ger en detaljerad sammanfattning av leveransresultatet.
-
-Med **[!UICONTROL Campaign objective]** kan du också välja att jämföra huvudmålet med ett annat mätvärde.
-
-Observera att varje widget kan storleksändras och tas bort om det behövs. Mer information finns i [section](../reports/global-report.md#modify-dashboard).
-
-## Experimentationsrapport {#experimentation-global}
-
->[!CONTEXTUALHELP]
->id="ajo_campaigns_content_experiment_click"
->title="Resultatmått"
->abstract="Det totala värdet för resultatmåttet, som tidigare valts när du skapade dina experiment, delat med antalet profiler."
-
->[!AVAILABILITY]
->
->Funktionen för innehållsexperiment är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
-
-![](assets/experimentation_report_3.png)
-
-Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Experimentation]** innehåller huvudinformationen om hur varje variant fungerar och om det finns en bästa utförare.
-
-Observera att det kan ta en stund att definiera den bästa utföraren, men den representeras av den här ikonen ![](assets/experimentation_report_1.png).
-
-The **[!UICONTROL Experiment result]** widgeten anger prestanda för varje variant. Du kan ändra din baslinje genom att välja en av behandlingarna i **[!UICONTROL Baseline]** listrutan. Den bästa behandlingen visas med en stjärnikon.
-
-Tabellen visar följande mått:
-
-* **[!UICONTROL Profiles]**: Antal profiler som är avsedda för denna behandling.
-
-* **[!UICONTROL Unique outbound clicks]**: Totalt antal klick i utgående kanaler.
-
-* **[!UICONTROL Count per profile]**: Det totala värdet för det experimentella målmåttet delat med antalet profiler.
-
-* **[!UICONTROL Confidence interval]**: Procentskillnad i prestanda mellan baslinjen och den bästa behandlingen. [Läs mer](../campaigns/experiment-calculations.md#confidence-intervals).
-
-* **[!UICONTROL Average lift]**: Procentuell förbättring av konverteringsgraden för en given behandling jämfört med baslinjen. [Läs mer](../campaigns/experiment-calculations.md#understand-lift)
-
-* **[!UICONTROL Confidence]**: Bevis på att en viss behandling är densamma som den initiala behandlingen. [Läs mer](../campaigns/experiment-calculations.md#understand-confidence)
-
-En djupdykning i dessa resultat och hur du tolkar dem finns i [den här sidan](../campaigns/get-started-experiment.md#interpret-results).
+När du har konfigurerat dina experiment och kampanjer kan du följa resultatet av leveransen med Campaign-rapporten. [Läs mer](../reports/campaign-global-report.md#experimentation-report)

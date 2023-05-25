@@ -8,9 +8,9 @@ level: Beginner
 badge: label="Beta" type="Informative"
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
 exl-id: 66b5c691-ddc4-4e9b-9386-2ce6c307451c
-source-git-commit: c823d1a02ca9d24fc13eaeaba2b688249e61f767
+source-git-commit: 59499dec7d15dd4565c7910d7b454d82243ff011
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -58,9 +58,9 @@ De viktigaste stegen för att exportera en datauppsättning till en molnlagrings
 
 ![](assets/dataset-export-process.png)
 
-Detaljerad information om varje steg finns i Adobe Experience Platform dokumentation: [Exportera datauppsättningar till molnlagringsmål](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en).
+Detaljerad information om varje steg finns i Adobe Experience Platform dokumentation: [Exportera datauppsättningar till molnlagringsmål](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html).
 
-1. **Konfigurera molnlagringsmålet**. Om du inte redan har gjort det ansluter du till ett molnlagringsmål från målkatalogen. [Lär dig hur du skapar en ny målanslutning](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/connect-destination.html?lang=en#setup)
+1. **Konfigurera molnlagringsmålet**. Om du inte redan har gjort det ansluter du till ett molnlagringsmål från målkatalogen. [Lär dig hur du skapar en ny målanslutning](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/connect-destination.html#setup)
 
    <!--![](assets/dataset-export-setup.png)-->
 

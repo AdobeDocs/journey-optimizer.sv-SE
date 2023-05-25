@@ -11,9 +11,9 @@ role: User
 level: Beginner
 badge: label="Beta" type="Informative"
 exl-id: e4935129-c1cb-41b1-b84d-cd419053c303
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: 59499dec7d15dd4565c7910d7b454d82243ff011
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '740'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ Om du vill exportera en Adobe Experience Manager-mall till Adobe Journey Optimiz
 
    ![](assets/aem-outbound-menu.png)
 
-1. Från ditt innehållsbibliotek kan du använda tidigare konfigurerade mallar eller skapa en från grunden. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/managing-pages.html?lang=en#creating-a-new-page)
+1. Från ditt innehållsbibliotek kan du använda tidigare konfigurerade mallar eller skapa en från grunden. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/managing-pages.html#creating-a-new-page)
 
 1. Genom att lägga in Journey Optimizer personaliseringssyntax i mallen kan du förbättra dess anpassningsmöjligheter. [Läs mer](../personalization/personalization-syntax.md)
 
@@ -93,7 +93,7 @@ När mallen Experience Manager är tillgänglig i Journey Optimizer som innehål
 
 1. Om du vill anpassa din Experience Manager-mall ytterligare och lägga till anpassad personalisering i ditt innehåll klickar du på **[!UICONTROL Edit content]**. På så sätt kan du enkelt göra ändringar och anpassa mallen efter dina specifika behov. [Läs mer](get-started-email-design.md)
 
-   >[!NOTE]
+   >[!WARNING]
    >
    > Om du vill redigera och anpassa mallen kan du bara använda kompatibilitetsläget.
 

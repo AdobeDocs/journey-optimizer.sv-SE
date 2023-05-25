@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: e-post, stil, css, brödtext, struktur
 exl-id: 2e20ecc5-bb58-4dc8-a2bc-ec5a02c16ae8
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: f5390bbb3bab435b21ace4d1842de0048132bc8c
 workflow-type: tm+mt
-source-wordcount: '120'
+source-wordcount: '108'
 ht-degree: 0%
 
 ---
@@ -28,5 +28,4 @@ Följ länkarna nedan om du vill veta hur du justerar vissa formatinställningar
 
 * Lär dig hur [personalisera din e-postbakgrund](backgrounds.md)
 * Lär dig hur [hantera lodrät justering och utfyllnad](alignment-and-padding.md)
-* Lär dig hur [definiera ett format för länkarna i e-postmeddelandet](styling-links.md)
 * Lär dig hur [anpassa textbundna formatattribut](inline-styling.md)

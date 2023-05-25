@@ -9,14 +9,18 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, publicering
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: ad4bc06d17727c6c8476344f3c1028fd9e717a15
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1533'
 ht-degree: 1%
 
 ---
 
 # Skapa och publicera landningssidor {#create-lp}
+
+>[!CAUTION]
+>
+>För att kunna testa och publicera landningssidor måste du ha **[!UICONTROL Publish Messages]** behörighet.
 
 ## Åtkomst till landningssidor {#access-landing-pages}
 
@@ -207,6 +211,8 @@ När inställningarna för landningssidan och innehållet har definierats kan du
 
 >[!CAUTION]
 >
+>För att kunna testa landningssidor måste du ha **[!UICONTROL Publish Messages]** behörighet.
+>
 >Du måste ha testprofiler tillgängliga för att kunna förhandsgranska dina meddelanden och skicka korrektur. Lär dig hur [skapa testprofiler](../segment/creating-test-profiles.md).
 
 1. I landningssidans gränssnitt klickar du på **[!UICONTROL Simulate content]** för att komma åt valet av testprofil.
@@ -273,6 +279,10 @@ Två typer av varningar kan inträffa:
 -->
 
 ## Publicera landningssidan {#publish-landing-page}
+
+>[!CAUTION]
+>
+>För att kunna publicera landningssidor måste du ha **[!UICONTROL Publish Messages]** behörighet.
 
 När landningssidan är klar kan du publicera den för att göra den tillgänglig för användning i ett meddelande.
 

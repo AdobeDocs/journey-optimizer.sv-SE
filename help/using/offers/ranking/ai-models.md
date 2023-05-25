@@ -7,9 +7,9 @@ feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: 4f7f7d1d-a12a-4ff6-b0ff-1a1c3d305a9d
-source-git-commit: b06b545d377fcd1ffe6ed218badeb94c1bb85ef2
+source-git-commit: 4f331eff73991c32682ba2c1ca5f6b7341a561e1
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '331'
 ht-degree: 3%
 
 ---
@@ -22,23 +22,30 @@ Med den här funktionen kan du skapa olika **AI-modeller** baserat på era affä
 
 Du kan till exempel välja en AI-modell för e-postkanalen och en annan för push-kanalen. För varje kanal utnyttjar det tränade modellsystemet flera datapunkter för att avgöra vilket erbjudande som ska presenteras först för en viss placering, i stället för att beakta offertens prioritetspoäng eller en [rankningsformel](create-ranking-formulas.md).
 
+>[!IMPORTANT]
+>
+>För närvarande stöds inte rankningsmodeller i kanaler som skapats av Journey Optimizer.
+
 ## AI-modelltyper {#ai-model-types}
 
 Det finns två typer av AI-modeller i [!DNL Journey Optimizer]:
 
 * **Automatiskt optimerade modeller** sträva efter att leverera erbjudanden som maximerar den avkastning (KPI) som affärsklienterna sätter. Dessa nyckeltal kan vara i form av konverteringsgrader, intäkter osv. I nuläget fokuserar automatisk optimering på att optimera erbjudandeklick med erbjudandekonvertering som mål. Automatisk optimering är icke-personaliserat och optimerar baserat på erbjudandets&quot;globala&quot; prestanda. [Läs mer](auto-optimization-model.md)
 
-* **Personaliseringsmodeller** kan ni definiera affärsmål och använda kunddata för att utbilda affärsinriktade modeller för att leverera personaliserade erbjudanden och maximera nyckeltal. [Läs mer](personalized-optimization-model.md)
-
-   >[!CAUTION]
-   >
-   >Personaliserade optimeringsmodeller är för närvarande tillgängliga i ett tidigt skede och endast för vissa användare.
+* **Personaliserade optimeringsmodeller** kan ni definiera affärsmål och använda kunddata för att utbilda affärsinriktade modeller för att leverera personaliserade erbjudanden och maximera nyckeltal. [Läs mer](personalized-optimization-model.md)
 
 ## Skapa en AI-modell {#create-ai-model}
 
 De viktigaste stegen för att skapa och använda AI-modeller är följande:
 
 1. Skapa en datauppsättning där konverterings- och inställningshändelser samlas in. [Läs mer](../data-collection/create-dataset.md)
+
 1. Skapa en AI-modell som utnyttjar händelser från datauppsättningen för att rangordna erbjudanden. [Läs mer](create-ranking-strategies.md)
+
 1. Konfigurera ditt erbjudandeschema för att automatiskt samla in händelser. [Läs mer](../data-collection/schema-requirement.md)
+
+   >[!IMPORTANT]
+   >
+   >Rankningsmodeller kräver att feedback-händelser skickas in som upplevelsehändelser för att samlas in. [Läs mer om datainsamling för beslutshantering](../data-collection/data-collection.md)
+
 1. Tilldela AI-modellen till en placering i ett beslut om att rangordna kvalificerade erbjudanden. [Läs mer](../offer-activities/configure-offer-selection.md)

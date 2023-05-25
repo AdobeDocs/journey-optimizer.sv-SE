@@ -10,9 +10,9 @@ hide: true
 hidefromtoc: true
 exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
 badge: label="Beta" type="Informative"
-source-git-commit: 55f1c6a681aece6446a3330184466ff61e4db580
+source-git-commit: fd6b2d2097f20f6f75e9f3d8af4a61128d8d56fe
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Följ stegen nedan för att konfigurera filflödet.
 
    >[!NOTE]
    >
-   >För närvarande stöds endast Amazon S3 och SFTP i [!DNL Journey Optimizer].
+   >För närvarande stöds Amazon S3, SFTP och Azure i [!DNL Journey Optimizer].
 
 1. Fyll i information och autentiseringsuppgifter för servern, t.ex. serveradress, åtkomstnyckel.
 
@@ -116,7 +116,7 @@ Följ stegen nedan för att konfigurera filflödet.
 >id="ajo_dm_surface_settings"
 >title="Definiera inställningar för direktreklam"
 >abstract="En yta för direktreklam innehåller formateringsinställningarna för filen som innehåller målgruppsdata och kommer att användas av e-postleverantören. Du måste också definiera var filen ska exporteras genom att välja filroutningskonfigurationen."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/direct-mail/direct-mail-configuration.html?lang=en#file-routing-configuration" text="Konfigurera filroutning"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/direct-mail/direct-mail-configuration.html#file-routing-configuration" text="Konfigurera filroutning"
 
 <!--
 >[!CONTEXTUALHELP]
@@ -146,6 +146,10 @@ En direktreklamyta måste också innehålla den filroutningskonfiguration som de
    <!--![](assets/surface-direct-mail-settings-with-insertion.png)-->
 
 1. Välj filformat: **[!UICONTROL CSV]** eller **[!UICONTROL Text delimited]**.
+
+1. Om du väljer **[!UICONTROL Text delimited]** definierar du den kolumnavgränsare du vill använda: tabulering, semikolon, rör eller et-tecken.
+
+   ![](assets/surface-direct-mail-column-separator.png)
 
 1. Välj **[!UICONTROL File routing configuration]** bland de som du skapade. Detta anger var filen exporteras så att din direktmeddelandeleverantör kan använda den.
 

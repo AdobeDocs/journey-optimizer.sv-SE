@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 1213a65c8a22a326e8294c51db53efb6e23fd6f9
+source-git-commit: 9910c748cf66828ccbd314757c252b9093d2af75
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1377'
 ht-degree: 33%
 
 ---
@@ -166,9 +166,10 @@ ht-degree: 33%
    + Innehållsexperiment {#content-experiment}
       + [Kom igång med innehållsexperiment](using/campaigns/get-started-experiment.md)
       + [Skapa ett innehållsexperiment](using/campaigns/content-experiment.md)
-      + [Förstå statistiska beräkningar](using/campaigns/experiment-calculations.md)
       + [Konfigurera experimentrapporter](using/campaigns/reporting-configuration.md)
-      + [Statistiska beräkningar i experimentrapporten](using/campaigns/experiment-report-calculations.md)
+      + Teknisk notering {#technotes}
+         + [Förstå statistiska beräkningar](using/campaigns/experiment-calculations.md)
+         + [Förstå statistiska beräkningar i experimentrapporten](using/campaigns/experiment-report-calculations.md)
    + [Utlösa kampanjer med API:er](using/campaigns/api-triggered-campaigns.md)
 + E-postkanal {#email}
    + [Kom igång med e-post](using/email/get-started-email.md)
@@ -193,11 +194,11 @@ ht-degree: 33%
          + [Kom igång med e-postformat](using/email/get-started-email-style.md)
          + [Redigera bakgrundsinställningar](using/email/backgrounds.md)
          + [Justera lodrät justering och utfyllnad](using/email/alignment-and-padding.md)
-         + [Definiera ett format för länkar](using/email/styling-links.md)
          + [Lägg till textbundna formatattribut](using/email/inline-styling.md)
    + [Förhandsgranska och testa din e-post](using/email/preview.md)
    + [Skapa innehållsmallar](using/email/content-templates.md)
    + [Använd Experience Manager-mallar](using/email/aem-templates.md)
+   + [Arbeta med fragment](using/email/fragments.md)
    + [Hantera e-postavanmälan](using/email/email-opt-out.md)
    + Konfigurera e-postkanal {#configure-email}
       + [Kom igång med e-postkonfiguration](using/email/get-started-email-config.md)
@@ -304,6 +305,7 @@ ht-degree: 33%
       + [Lista över komponenter](using/reports/global-report-components.md)
       + [Rapport om global resa](using/reports/journey-global-report.md)
       + [Global kampanjrapport](using/reports/campaign-global-report.md)
+      + [Målrapport](using/reports/objective-report.md)
       + [Global rapport för landningssida](using/reports/lp-report-global.md)
       + [Global rapport om prenumerationslista](using/reports/subscription-report-global.md)
    + Reserapporter {#reports}
@@ -468,13 +470,15 @@ ht-degree: 33%
          + [Integrera med Adobe Campaign v7/v8](using/action/acc-action.md)
    + [Källor](using/start/get-started-sources.md)
 + Åtkomstkontroll {#access-control}
-   + [Översikt över åtkomstkontroll](using/administration/permissions-overview.md)
-   + [Inbyggda produktprofiler](using/administration/ootb-product-profiles.md)
-   + [Hantera användare och produktprofiler](using/administration/permissions.md)
-   + [Behörighetsnivåer](using/administration/high-low-permissions.md)
-   + [Hantering av sandlådor](using/administration/sandboxes.md)
+   + Översikt över åtkomstkontroll {#privacy}
+      + [Kom igång med användarhantering](using/administration/permissions-overview.md)
+      + [Inbyggda roller](using/administration/ootb-product-profiles.md)
+      + [Inbyggda behörigheter](using/administration/ootb-permissions.md)
+      + [Behörighetsnivåer](using/administration/high-low-permissions.md)
+   + [Hantera användare och roller](using/administration/permissions.md)
    + [Attributbaserad åtkomstkontroll](using/administration/attribute-based-access.md)
    + [Åtkomstkontroll på objektnivå](using/administration/object-based-access.md)
+   + [Hantering av sandlådor](using/administration/sandboxes.md)
 + Sekretess {#privacy}
    + [Kom igång med sekretess](using/privacy/get-started-privacy.md)
    + [Förfrågningar om användarens information](using/privacy/requests.md)

@@ -8,34 +8,19 @@ topic: Content Management
 role: User
 level: Experienced
 keywords: innehåll, experiment, statistik, beräkning
-hide: true
-hidefromtoc: true
 exl-id: 60a1a488-a119-475b-8f80-3c6f43c80ec9
-badge: label="Beta" type="Informative"
-source-git-commit: 160e4ce03d3be975157c30fbe511875a85b00551
+source-git-commit: 64be9c41085dead10ff08711be1f39760a81ff95
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '1057'
 ht-degree: 0%
 
 ---
 
 # Förstå statistiska beräkningar {#experiment-calculations}
 
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här dokumentationen:
-
-* [Kom igång med innehållsexperiment](get-started-experiment.md)
-* [Skapa ett innehållsexperiment](content-experiment.md)
-* **[Förstå statistiska beräkningar](experiment-calculations.md)**
-* [Konfigurera experimentrapporter](reporting-configuration.md)
-* [Statistiska beräkningar i experimentrapporten](experiment-report-calculations.md)
-
->[!ENDSHADEBOX]
-
 I den här artikeln beskrivs de statistiska beräkningar som används när du kör Experiment i Adobe Journey Optimizer.
 
-Experimentationen använder avancerade statistiska metoder för att beräkna **Konfidenssekvenser** och **Förtroende**, som gör att du kan köra dina experiment så länge som det behövs och kontinuerligt övervaka dina resultat.
+Experimentationsanvändning [avancerade statistiska metoder](../campaigns/assets/confidence_sequence_technical_details.pdf) att beräkna **Konfidenssekvenser** och **Förtroende**, som gör att du kan köra dina experiment så länge som det behövs och kontinuerligt övervaka dina resultat.
 
 I den här artikeln beskrivs hur Experimentation fungerar och en intuitiv introduktion till Adobe **Valfri tidsgiltig konfidenssekvens**.
 
@@ -43,12 +28,23 @@ För expertanvändare beskrivs de tekniska detaljerna och referenserna i [den h�
 
 ## Statistisk testning och kontroll av fel {#statistical-testing}
 
+När du kör ett experiment försöker du avgöra om det finns en skillnad mellan två populationer och sannolikheten för att skillnaden beror på en chans.
+
+I allmänhet finns det två hypoteser:
+
+* den **Null-hypotes** vilket innebär att behandlingen inte påverkas.
+* den **Alternativ hypotes** vilket innebär att behandlingen påverkas.
+
+I statistisk betydelse är målet att försöka bedöma styrkan hos bevisen för att avvisa nollhypotesen. En viktig punkt att notera är att statistisk signifikans används för att bedöma hur sannolikt det är att behandlingarna kommer att vara olika, inte hur sannolikt det är att de kommer att bli framgångsrika. Det är därför statistisk signifikans används i kombination med **Lyft**.
+
+Effektiv experimenterande kräver att hänsyn tas till olika typer av fel som kan orsaka felaktiga slutsatser.
+
 ![](assets/technote_1.png)
 
-Som framgår av tabellen ovan är många statistiska undersökningsmetoder utformade för att kontrollera två typer av fel:
+Tabellen ovan visar olika typer av fel:
 
-* **Falska positiva värden (Type-I-fel)**: är ett felaktigt avvisande av nollhypotesen, när det faktiskt är sant. När det gäller onlineundersökningar innebär detta att vi felaktigt drar slutsatsen att resultatmåttet är olika för varje behandling, även om det var samma.
-   </br>Innan vi genomför experimentet väljer vi vanligtvis ett tröskelvärde `\alpha`. När experimentet är klart `p-value` beräknas och vi avvisar `null if p < \alpha`. En vanlig tröskel är `\alpha = 0.05`, vilket innebär att vi i längden förväntar oss att 5 av 100 experiment ska vara falska positiva.
+* **Falska positiva värden (Type-I-fel)**: är ett felaktigt avvisande av nollhypotesen, när det faktiskt är sant. När det gäller online-undersökningar innebär detta att vi felaktigt drar slutsatsen att resultatmåttet är olika för varje behandling, även om det var detsamma.
+   </br>Innan vi genomför experimentet väljer vi vanligtvis ett tröskelvärde `\alpha`. När experimentet är klart `p-value` beräknas och vi avvisar `null if p < \alpha`.Välja en `/alpha` baseras på konsekvenserna av att få fel svar, till exempel i en klinisk prövning där någon skulle kunna påverkas, kan du bestämma dig för att ha en `\alpha = 0.005`. En vanlig tröskel vid onlineexperiment är `\alpha = 0.05`, vilket innebär att vi i längden förväntar oss att 5 av 100 experiment ska vara falska positiva.
 
 * **Falska negativ (typ II-fel)**: innebär att vi inte kan avvisa den nollhypotesen trots att den är falsk. För experiment innebär detta att vi inte avvisar nollhypotesen, när den faktiskt är annorlunda. För att kontrollera den här typen av fel måste vi i allmänhet ha tillräckligt många användare i vårt experiment för att garantera en viss styrka, definierad som `1 - \beta`(dvs. ett minus sannolikheten för ett typ II-fel).
 
@@ -70,7 +66,7 @@ Den teoretiska grunden för **Konfidenssekvenser** kommer från studien av sekve
 
 >[!NOTE]
 >
->Konfidenssekvenser kan tolkas som säkra sekventiella analoger med konfidensintervall. Du kan titta på och tolka data i dina Experimenter när du vill och stoppa eller fortsätta med experimenten. motsvarande valfri tid som är giltig, eller `p-value`, är också säkert att tolka.
+>Konfidenssekvenser kan tolkas som säkra sekventiella analoger av konfidensintervall. Med konfidensintervall kan du bara tolka experimentet när du har nått den förinställda samplingsstorleken. Med självförtroende kan du emellertid när som helst titta på och tolka data i dina Experiment och på ett säkert sätt avbryta eller fortsätta med experimenten. motsvarande valfri tid som är giltig, eller `p-value`, är också säkert att tolka när som helst.
 
 Det är viktigt att notera att eftersom konfidenssekvenser är&quot;när som helst giltiga&quot;, är de mer försiktiga än en metod med fast horisont som används med samma provstorlek. Konfidenssekvensens gränser är i allmänhet bredare än en beräkning av konfidensintervall, medan alla tidsperioder som är giltiga konfidensintervall är mindre än en beräkning av en fast horisont. Fördelen med denna konservatism är att du säkert kan tolka dina resultat hela tiden.
 

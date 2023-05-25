@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: scheman, XDM, plattform, direktuppspelning, förtäring, resa
 exl-id: f19749c4-d683-4db6-bede-9360b9610eef
-source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
+source-git-commit: 59499dec7d15dd4565c7910d7b454d82243ff011
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '838'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Här är inköpsschemat med relationen definierad i produkt-ID-fältet.
 
 >[!NOTE]
 >
->Läs mer om schemarelationer i [Experience Platform dokumentation](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/configure-relationships-between-schemas.html?lang=en).
+>Läs mer om schemarelationer i [Experience Platform dokumentation](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/configure-relationships-between-schemas.html).
 
 I Journey Optimizer kan du sedan använda alla fält från de länkade tabellerna:
 

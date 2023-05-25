@@ -9,9 +9,9 @@ role: Admin, Developer, Architect
 level: Experienced
 keywords: objekt, nivå, åtkomst, kontroll, etiketter, plats, auktorisering
 exl-id: 02ccdd95-426c-4b61-9834-7f2dcd5abdbb
-source-git-commit: 16738786e4ebeef3417fd0f6e5be741b348c2744
+source-git-commit: 59499dec7d15dd4565c7910d7b454d82243ff011
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '425'
 ht-degree: 2%
 
 ---
@@ -94,4 +94,4 @@ Så här tilldelar du anpassade eller grundläggande dataanvändningsetiketter t
 För att få åtkomst till det här objektet måste användarna ha den specifika **[!UICONTROL Label]** ingår i **[!UICONTROL Roles]**.
 En användare med etiketten C1 har till exempel bara åtkomst till objekt som är märkta eller omärkta med C1.
 
-Mer information om hur du tilldelar **[!UICONTROL Label]** till **[!UICONTROL Role]**, se [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/permissions.html?lang=en#manage-labels-for-a-role).
+Mer information om hur du tilldelar **[!UICONTROL Label]** till **[!UICONTROL Role]**, se [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/permissions.html#manage-labels-for-a-role).

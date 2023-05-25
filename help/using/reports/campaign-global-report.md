@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: fa64f5b8-75f2-40e6-8566-5766fafe6cd6
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: c9941a800783b399b587b952c4191ce906b70552
 workflow-type: tm+mt
-source-wordcount: '1802'
+source-wordcount: '2010'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,54 @@ The **[!UICONTROL Campaign's Statistics]** widgetinformation om huvudinformation
 * **[!UICONTROL Actions delivered]**: Totalt antal unika gånger som en åtgärd i resan har utförts.
 
 * **[!UICONTROL Actions failed in %]**: Totalt antal unika gånger en åtgärd misslyckades under resan jämfört med det totala antalet unika gånger en åtgärd har levererats.
+
+<!--
+### Objectives report {#objectives-global}
+
+![](assets/performance_report.gif)
+
+The **[!UICONTROL Objectives]** tab allows you to better fine-tune your deliveries' reports by targeting one specific metric.
+
+The **[!UICONTROL Objectives]** listed are linked to **[!UICONTROL Datasets]** that define a connection to a system in order to retrieve additional information. A list of built-in **[!UICONTROL Objectives]** is available but you can add your own by adding new **[!UICONTROL Dataset]**. For the detailed procedure, refer to this [section](../campaigns/reporting-configuration.md).
+
+After selecting the Objectives you want to target on, the two **[!UICONTROL Performance overview]** and **[!UICONTROL Campaign objective]** widgets will provide a detailed summary of your delivery performance. 
+
+With the **[!UICONTROL Campaign objective]** widget, you can also choose to compare your main objective with another metric.
+-->
+
+### Experimentationsrapport {#experimentation-global}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_content_experiment_click"
+>title="Resultatmått"
+>abstract="Det totala värdet för resultatmåttet, som tidigare valts när du skapade dina experiment, delat med antalet profiler."
+
+![](assets/experimentation_report_3.png)
+
+The **[!UICONTROL Experimentation]** ger viktiga insikter om prestanda för varje variant och identifierar den mest framgångsrika.
+
+Observera att det kan ta en stund att definiera den bästa utföraren, men den representeras av den här ikonen ![](assets/experimentation_report_1.png).
+
++++Läs mer om de olika mätvärden och widgetar som är tillgängliga för rapporten Experimentation.
+
+The **[!UICONTROL Experiment result]** widgeten anger prestanda för varje variant. Du kan ändra din baslinje genom att välja en av behandlingarna i **[!UICONTROL Baseline]** listrutan. Den bästa behandlingen visas med en stjärnikon.
+
+Tabellen visar följande mått:
+
+* **[!UICONTROL Lift over baseline]**: Mät den procentuella förbättringen av konverteringsgraden för en viss behandling jämfört med baslinjen.
+
+* **[!UICONTROL Confidence]**: Bevis på att en viss behandling är densamma som den initiala behandlingen. [Läs mer](../campaigns/experiment-calculations.md#understand-confidence)
+
+* **[!UICONTROL Unique outbound clicks]**: Totalt antal klick i utgående kanaler.
+
+* **[!UICONTROL Profiles]**: Antal profiler som är avsedda för denna behandling.
+
+* **[!UICONTROL Unique outbound clicks/profiles]**: Totalt värde för framgångsmåttet, som tidigare valts när du skapade dina experiment, delat med antalet profiler.
+
+The **[!UICONTROL Confidence interval]** graf mäter osäkerheten kring förbättringen. Här anges den procentuella skillnaden i prestanda mellan baslinjen och den bästa behandlingen. [Läs mer](../campaigns/experiment-calculations.md#confidence-intervals).
++++
+
+En djupdykning i dessa resultat och hur du tolkar dem finns i [den här sidan](../campaigns/get-started-experiment.md#interpret-results).
 
 ## Fliken E-post {#email-global}
 

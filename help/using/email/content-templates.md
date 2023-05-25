@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 327de13a-1c99-4d5e-86cf-8180fb7aaf23
-source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
+source-git-commit: 03212e47a4430ce793a9389fa8cd9de0ef8d2bcc
 workflow-type: tm+mt
 source-wordcount: '945'
 ht-degree: 2%
@@ -81,8 +81,6 @@ Följ stegen nedan för att skapa en innehållsmall från grunden.
 
 1. Öppna innehållsmalllistan via **[!UICONTROL Content Management]** > **[!UICONTROL Content Templates]** vänster meny.
 
-   ![](assets/content-template-list.png)
-
 1. Välj **[!UICONTROL Create template]**.
 
 1. Fyll i mallinformationen.
@@ -95,7 +93,7 @@ Följ stegen nedan för att skapa en innehållsmall från grunden.
 
 1. Om du vill tilldela etiketter för anpassad eller grundläggande dataanvändning till mallen väljer du **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md).
 
-1. Klicka **[!UICONTROL Create]** och välj hur du vill utforma e-postmeddelandet bland de olika alternativen:
+1. Klicka **[!UICONTROL Create]** och välja hur du vill utforma mallen bland de olika alternativen:
 
    * [Designa din e-post från grunden](content-from-scratch.md) via e-postdesignerns gränssnitt.
 

@@ -7,18 +7,14 @@ feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: c73b3092-e96d-4957-88e6-500e99542782
-source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
+source-git-commit: 4f331eff73991c32682ba2c1ca5f6b7341a561e1
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
 
 # Anpassad optimeringsmodell {#personalized-optimization-model}
-
->[!CAUTION]
->
->Personaliserade optimeringsmodeller är för närvarande tillgängliga i ett tidigt skede och endast för vissa användare.
 
 ## Översikt {#overview}
 
@@ -35,14 +31,14 @@ Om en bank t.ex. har två kreditkort med den enda skillnaden att vara färg, spe
 
 ## Så här fungerar det {#how}
 
-Automatisk personalisering lär sig komplexa funktionsinteraktioner mellan erbjudanden, användarinformation och sammanhangsbaserad information för att rekommendera personaliserade erbjudanden till slutanvändarna. Funktioner är indata i modellen.
+Modellen lär sig komplexa funktionsinteraktioner mellan erbjudanden, användarinformation och sammanhangsbaserad information för att rekommendera personaliserade erbjudanden till slutanvändare. Funktioner är indata i modellen.
 
 Det finns tre typer av funktioner:
 
 | Funktionstyper | Så här lägger du till funktioner i modeller |
 |--------------|----------------------------|
-| Beslutsobjekt (placementID, activityID, DecisionScopeID) | Ingår i beslutsledningens feedback Experience Events skickas till AEP |
 | Segment | 0-50 segment kan läggas till som funktioner när du skapar AI-modellen för rankning |
+| Beslutsobjekt (placementID, activityID, DecisionScopeID) | Ingår i beslutsledningens feedback Experience Events skickas till AEP |
 | Kontextdata | En del av beslutsfeedback Experience Events skickas till AEP. Tillgängliga kontextdata att lägga till i schema: Commerce Details, Channel Details, Application Details, Web Details, Environment Details, Device Details, placeContext |
 
 Modellen har två faser:
@@ -66,7 +62,7 @@ Det handlar i princip om att lära sig och memorera historiska funktionsinterakt
 Problem med kallstart uppstår när det inte finns tillräckligt med data för att kunna rekommendera. För automatisk personalisering finns det två typer av kallstartsproblem.
 
 * **Efter att ha skapat en ny rankningsstrategi utan historiska data**, erbjudandena kommer att slumpmässigt erbjudas under en period för att samla in data och uppgifterna kommer att användas för att utbilda den första modellen.
-* A **När den första modellen har släppts** 10 % av den totala trafiken kommer att fördelas slumpvis, medan 90 % av trafiken kommer att användas för modellrekommendationer. Om nya erbjudanden lades till rankningsstrategin skulle de därför levereras som en del av 10 % av trafiken. De data som samlas in för dessa erbjudanden avgör hur många gånger de väljs ut bland 90 % av trafiken när modellen fortsätter att uppdateras.
+* **När den första modellen har släppts** 10 % av den totala trafiken kommer att fördelas slumpvis, medan 90 % av trafiken kommer att användas för modellrekommendationer. Om nya erbjudanden lades till rankningsstrategin skulle de därför levereras som en del av 10 % av trafiken. De data som samlas in för dessa erbjudanden avgör hur många gånger de väljs ut bland 90 % av trafiken när modellen fortsätter att uppdateras.
 
 ## Omskolning {#re-training}
 

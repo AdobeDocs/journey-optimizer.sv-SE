@@ -7,9 +7,9 @@ role: Admin
 level: Intermediate
 keywords: landning, landningssida, underdomäner, konfiguration
 exl-id: dd1af8dc-3920-46cb-ae4d-a8f4d4c26e89
-source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
+source-git-commit: ad4bc06d17727c6c8476344f3c1028fd9e717a15
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,12 @@ Du kan använda en underdomän som redan har delegerats till Adobe eller konfigu
 
 >[!CAUTION]
 >
->Konfigurationen av deldomäner för landningssidor är gemensam för alla miljöer. Därför kommer alla ändringar av en underdomän för landningssidor också att påverka produktionssandlådorna.
+>Konfigurationen av deldomäner för landningssidor är gemensam för alla miljöer. Därför:
+>
+>* Om du vill komma åt och redigera underdomäner för landningssidor måste du ha **[!UICONTROL Manage Landing Page Subdomains]** behörighet i produktionssandlådan.
+>
+> * Alla ändringar av en underdomän för landningssidor påverkar också produktionssandlådorna.
+
 
 ## Använd en befintlig underdomän {#lp-use-existing-subdomain}
 

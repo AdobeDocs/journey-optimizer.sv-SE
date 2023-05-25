@@ -8,34 +8,15 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
-hide: true
-hidefromtoc: true
 exl-id: 7fe4b24e-f60a-4107-a064-00010b0cbbfc
-badge: label="Beta" type="Informative"
-source-git-commit: 160e4ce03d3be975157c30fbe511875a85b00551
+source-git-commit: 64be9c41085dead10ff08711be1f39760a81ff95
 workflow-type: tm+mt
-source-wordcount: '1994'
+source-wordcount: '1942'
 ht-degree: 0%
 
 ---
 
 # Kom igång med innehållsexperiment {#get-started-experiment}
-
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här dokumentationen:
-
-* **[Kom igång med innehållsexperiment](get-started-experiment.md)**
-* [Skapa ett innehållsexperiment](content-experiment.md)
-* [Förstå statistiska beräkningar](experiment-calculations.md)
-* [Konfigurera experimentrapporter](reporting-configuration.md)
-* [Statistiska beräkningar i experimentrapporten](experiment-report-calculations.md)
-
->[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->Funktionen Innehållsexperiment är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
 
 ## Vad är ett innehållsexperiment?
 

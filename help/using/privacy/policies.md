@@ -7,9 +7,9 @@ feature: Monitoring
 role: User
 level: Intermediate
 exl-id: d74295e6-53b2-46f9-809c-1ef479aba5ab
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: 59499dec7d15dd4565c7910d7b454d82243ff011
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
@@ -28,5 +28,5 @@ Dataanvändningspolicyer är regler som beskriver den typ av marknadsföringsåt
 Mer information om ramverket för datastyrning och hur du arbetar med etiketter och policyer finns i Adobe Experience Platform-dokumentationen:
 
 * [Översikt över tjänsten Datastyrning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html)
-* [Översikt över etiketter för dataanvändning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/overview.html?lang=en)
+* [Översikt över etiketter för dataanvändning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/overview.html)
 * [Dataanvändningspolicyer](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html)

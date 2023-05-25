@@ -5,30 +5,14 @@ feature: A/B Testing
 topic: Content Management
 role: User
 level: Experienced
-hide: true
-hidefromtoc: true
-badge: label="Beta" type="Informative"
-exl-id: b3336381-bc73-4c8f-938f-f10fe37305b0
-source-git-commit: c823d1a02ca9d24fc13eaeaba2b688249e61f767
+source-git-commit: 64be9c41085dead10ff08711be1f39760a81ff95
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
 
-# Statistiska beräkningar i experimentrapporten {#experiment-report-calculations}
-
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här dokumentationen:
-
-* [Kom igång med innehållsexperiment](get-started-experiment.md)
-* [Skapa ett innehållsexperiment](content-experiment.md)
-* [Förstå statistiska beräkningar](experiment-calculations.md)
-* [Konfigurera experimentrapporter](reporting-configuration.md)
-* **[Statistiska beräkningar i experimentrapporten](experiment-report-calculations.md)**
-
->[!ENDSHADEBOX]
+# Förstå statistiska beräkningar i experimentrapporten {#experiment-report-calculations}
 
 På den här sidan visas detaljerade statistiska beräkningar som används i rapporten Experimentation för Campaigns i Adobe Journey Optimizer.
 

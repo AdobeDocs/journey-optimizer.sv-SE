@@ -9,14 +9,14 @@ role: Admin, Architect
 level: Intermediate
 keywords: behörigheter, rättigheter, begränsningar, åtkomst, sandlåda
 exl-id: b8e266b1-d8eb-4c77-9341-9761b82609b0
-source-git-commit: 16738786e4ebeef3417fd0f6e5be741b348c2744
+source-git-commit: d99feb7b6b11f9bba4f4164e7febecfca1d7da3b
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 19%
+source-wordcount: '200'
+ht-degree: 17%
 
 ---
 
-# Översikt över användarhantering {#permissions-overview}
+# Kom igång med användarhantering {#permissions-overview}
 
 [!DNL Journey Optimizer]Med kan du definiera och hantera behörigheter som tilldelats till olika användare.  Behörigheter är en uppsättning rättigheter och begränsningar som ger eller nekar åtkomst till funktioner och funktioner i produkten.
 

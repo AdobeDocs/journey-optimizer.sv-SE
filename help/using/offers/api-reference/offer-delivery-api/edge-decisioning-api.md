@@ -6,9 +6,9 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 4e2dc0d6-4610-4a2f-8388-bc58182b227f
-source-git-commit: 7347bb56eb2785b2d9f3f641cbe3b7c1ae2d078f
+source-git-commit: 59499dec7d15dd4565c7910d7b454d82243ff011
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '993'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Experience Platform Web SDK stöder frågor om personaliseringslösningarna på 
 
 Det finns två sätt att genomföra beslutsfattandet med [Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html#video-overview). Ett sätt är inriktat på utvecklare och kräver kunskaper om webbplatser och programmering. Det andra sättet är att använda Adobe Experience Platform användargränssnitt för att ställa in erbjudanden som bara kräver att ett litet skript refereras till i sidhuvudet på HTML-sidan.
 
-Läs dokumentationen om [beslutsfattande](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html?lang=en#enabling-offer-decisioning) om du vill ha mer information om hur du kan leverera personaliserade erbjudanden med Adobe Experience Platform Web SDK.
+Läs dokumentationen om [beslutsfattande](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html#enabling-offer-decisioning) om du vill ha mer information om hur du kan leverera personaliserade erbjudanden med Adobe Experience Platform Web SDK.
 
 >[!NOTE]
 >
@@ -44,9 +44,9 @@ SDK kombinerade inte dessa bibliotek och är en ny implementering från grunden.
 
    <!-- For more detailed instructions, refer to the documentation on using the [Adobe Experience Platform Web SDK](). -->
 
-1. [Konfigurera ditt datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=en) på fliken Datainsamling i ditt konto i Adobe Experience Cloud.
+1. [Konfigurera ditt datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) på fliken Datainsamling i ditt konto i Adobe Experience Cloud.
 
-1. Installera SDK. Det finns flera metoder för detta, som beskrivs i [Installera SDK-sidan](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=en). Den här sidan fortsätter med varje implementeringsmetod.
+1. Installera SDK. Det finns flera metoder för detta, som beskrivs i [Installera SDK-sidan](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html). Den här sidan fortsätter med varje implementeringsmetod.
 
 För att kunna använda SDK måste du ha en [schema](../../../data/get-started-schemas.md) och [datastream](../../../data/get-started-datasets.md) definierad.
 
@@ -62,23 +62,23 @@ Om du vill konfigurera SDK för beslutshantering följer du något av följande 
 
 Det här alternativet är mer användarvänligt för personer som kan ha en mindre kodningsupplevelse.
 
-1. [Skapa en taggegenskap](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en)
+1. [Skapa en taggegenskap](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html)
 
-1. [Lägg till inbäddningskoden](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html?lang=en)
+1. [Lägg till inbäddningskoden](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html)
 
-1. Installera och konfigurera Adobe Experience Platform Web SDK-tillägget med den dataström du skapade genom att välja konfigurationen i listrutan Datastream. Läs dokumentationen om [tillägg](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/overview.html?lang=en).
+1. Installera och konfigurera Adobe Experience Platform Web SDK-tillägget med den dataström du skapade genom att välja konfigurationen i listrutan Datastream. Läs dokumentationen om [tillägg](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/overview.html).
 
    ![Webb-SDK för Adobe Experience Platform](../../assets/installed-catalog-web-sdk.png)
 
    ![Konfigurera tillägg](../../assets/configure-sdk-extension.png)
 
-1. Skapa de nödvändiga [Dataelement](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=en). Minimikravet är att du måste skapa en plattformsbaserad SDK-identitetskarta och ett XDM-objektdataelement för plattformswebben.
+1. Skapa de nödvändiga [Dataelement](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html). Minimikravet är att du måste skapa en plattformsbaserad SDK-identitetskarta och ett XDM-objektdataelement för plattformswebben.
 
    ![Identitetskarta](../../assets/sdk-identity-map.png)
 
    ![XDM-objekt](../../assets/xdm-object.png)
 
-1. Skapa [Regler](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=en):
+1. Skapa [Regler](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html):
 
    Lägg till en SDK-sändningshändelse för en plattform och lägg till relevanta beslutsomfattningar i åtgärdens konfiguration
 
@@ -86,13 +86,13 @@ Det här alternativet är mer användarvänligt för personer som kan ha en mind
 
    ![Erbjudande](../../assets/rule-request-offer.png)
 
-1. [Skapa och publicera](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=en) ett bibliotek som innehåller alla relevanta regler, dataelement och tillägg som du har konfigurerat.
+1. [Skapa och publicera](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html) ett bibliotek som innehåller alla relevanta regler, dataelement och tillägg som du har konfigurerat.
 
 ## Alternativ 2 - Implementera manuellt med den fristående versionen
 
 Här är de steg som krävs för att använda beslutshantering med den färdiga fristående installationen av web SDK. I den här handboken antas att det är första gången du implementerar SDK, så alla steg kanske inte gäller för dig. Den här guiden förutsätter också viss utvecklingsupplevelse.
 
-Inkludera följande JavaScript-utdrag från alternativ 2: Den fördefinierade fristående versionen på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=en) i `<head>` på HTML-sidan.
+Inkludera följande JavaScript-utdrag från alternativ 2: Den fördefinierade fristående versionen på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html) i `<head>` på HTML-sidan.
 
 ```
 javascript

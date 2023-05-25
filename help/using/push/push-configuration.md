@@ -6,9 +6,9 @@ description: Lär dig hur du konfigurerar miljön för att skicka push-meddeland
 role: Admin
 level: Intermediate
 exl-id: 7099d44e-5d5d-4eef-9477-f68f4eaa1983
-source-git-commit: 014cc551cb125ba6dc20a4f572e6cd7024d9fab5
+source-git-commit: 60adbc8ad4c49b9282502d26a9a9aac73693d049
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1458'
 ht-degree: 3%
 
 ---
@@ -119,9 +119,9 @@ Följ implementeringsstegen som beskrivs i länkarna nedan:
 
 ### Integrera mobilappen med Adobe Experience Platform SDK {#integrate-mobile-app}
 
-Adobe Experience Platform Mobile SDK innehåller API:er för integrering på klientsidan för mobiler via Android och iOS-kompatibla SDK:er. Följ [Dokumentation för Adobe Experience Platform Mobile SDK](https://aep-sdks.gitbook.io/docs/getting-started/overview){target="_blank"} om du vill konfigurera med Adobe Experience Platform Mobile SDK i appen.
+Adobe Experience Platform Mobile SDK innehåller API:er för integrering på klientsidan för mobiler via Android och iOS-kompatibla SDK:er. Följ [Dokumentation för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} om du vill konfigurera med Adobe Experience Platform Mobile SDK i appen.
 
-När allt är klart bör du också ha skapat och konfigurerat en mobil egenskap i [!DNL Adobe Experience Platform Data Collection]. Du skapar vanligtvis en mobil egenskap för varje mobilprogram som du vill hantera. Lär dig hur du skapar och konfigurerar en mobil egenskap i [Dokumentation för Adobe Experience Platform Mobile SDK](https://aep-sdks.gitbook.io/docs/getting-started/create-a-mobile-property){target="_blank"}.
+När allt är klart bör du också ha skapat och konfigurerat en mobil egenskap i [!DNL Adobe Experience Platform Data Collection]. Du skapar vanligtvis en mobil egenskap för varje mobilprogram som du vill hantera. Lär dig hur du skapar och konfigurerar en mobil egenskap i [Dokumentation för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
 
 
 ## Steg 1: Lägg till push-autentiseringsuppgifter för appar i Adobe Experience Platform Data Collection {#push-credentials-launch}
