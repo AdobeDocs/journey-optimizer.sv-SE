@@ -6,10 +6,10 @@ description: Lär dig hur du konfigurerar miljön för att skicka SMS med Journe
 role: Admin
 level: Intermediate
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
-source-git-commit: 59499dec7d15dd4565c7910d7b454d82243ff011
+source-git-commit: 442e3213ad512b62332cd08d6639dfc52bdc766a
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 1%
+source-wordcount: '865'
+ht-degree: 2%
 
 ---
 
@@ -55,20 +55,25 @@ Så här konfigurerar du din SMS-leverantör med Journey Optimizer:
 
    ![](assets/sms_6.png)
 
-1. Välj **[!UICONTROL SMS vendor]**:
+1. Konfigurera dina SMS API-autentiseringsuppgifter:
 
-   * **[!DNL Sinch]**
+   * För **[!DNL Sinch]**:
 
-      För att hitta **[!UICONTROL Service ID]** och **[!UICONTROL API Token]**&#x200B;öppnar du SMS > API:er-menyn från ditt Sinch-konto.
+      * **[!UICONTROL Name]**: Välj ett namn för dina API-autentiseringsuppgifter.
 
-   * **[!DNL Twilio]**
+      * **[!UICONTROL Service ID]** och **[!UICONTROL API Token]**: gå till API:er-sidan och hitta dina autentiseringsuppgifter på fliken SMS.  [Läs mer](https://developers.sinch.com/docs/sms/getting-started/)
+   * För **[!DNL Twilio]**:
 
-      För att hitta **[!UICONTROL Service ID]** och **[!UICONTROL API Token]**&#x200B;öppnar du panelen Kontoinformation på sidan Konsolinstrumentpanel.
+      * **[!UICONTROL Name]**: Välj ett namn för dina API-autentiseringsuppgifter.
 
+      * **[!UICONTROL Account SID]** och **[!UICONTROL Auth Token]**: gå till rutan Kontoinformation på sidan Twilio Console Dashboard för att hitta dina inloggningsuppgifter.
 
-1. Ange **[!UICONTROL Name]** för dina API-autentiseringsuppgifter.
+      * **[!UICONTROL Message SID]**: Ange den unika identifierare som tilldelats alla meddelanden som skapas av Twilios API. [Läs mer](https://support.twilio.com/hc/en-us/articles/223134387-What-is-a-Message-SID-)
+   * För **[!DNL Infobip]**:
 
-1. Ange **[!UICONTROL Service ID]** och **[!UICONTROL API Token]**.
+      * **[!UICONTROL Name]**: Välj ett namn för dina API-autentiseringsuppgifter.
+
+      * **[!UICONTROL API base URL]** och **[!UICONTROL API token]**: gå till webbgränssnittets hemsida eller API-nyckelhanteringssidan för att hitta dina inloggningsuppgifter. [Läs mer](https://www.infobip.com/docs/api)
 
    ![](assets/sms_7.png)
 
