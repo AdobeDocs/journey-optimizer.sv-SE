@@ -4,9 +4,9 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 681b84869c3545d6cc58d53eff6289ef45f108c6
+source-git-commit: 245937875136d0a92cfab1506544d3e592ebd46f
 workflow-type: tm+mt
-source-wordcount: '2816'
+source-wordcount: '2874'
 ht-degree: 16%
 
 ---
@@ -21,6 +21,9 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * En ny sida har lagts till som beskriver hur du konfigurerar den underdomän som ska användas för att publicera innehåll från Adobe Experience Manager Assets Essentials i dina webbupplevelser. [Läs mer](../web/web-delegated-subdomains.md)
 * Ett nytt underavsnitt har lagts till som förklarar hur du lägger till personaliserade spårningsparametrar i URL:er i e-postdesignern. [Läs mer](../email/message-tracking.md#url-tracking)
 * Ett nytt avsnitt har lagts till som beskriver hur du kan säkerställa att valet av de kunder som avstår från att använda sina profildata för personalisering respekteras. [Läs mer](../privacy/opt-out.md#opt-out-personalization)
+* En anteckning har lagts till om hur du använder internationella specialtecken i URL:er som ingår i e-postinnehållet. [Läs mer](../email/message-tracking.md#insert-links)
+* Behörighet för att testa och publicera landningssidor har lagts till. [Läs mer](../landing-pages/create-lp.md)
+* Ett meddelande har lagts till om Adobe Experience Platform-slutpunkter som behövs för att dina anpassade händelser ska kunna räknas med i frekvenscappningen för hanteringsbeslut. [Läs mer](../offers/data-collection/schema-requirement.md#track-custom-events)
 
 ## April 2023 {#apr-2023}
 
