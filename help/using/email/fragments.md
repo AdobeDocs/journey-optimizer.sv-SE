@@ -7,13 +7,13 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 251c145eb69fe8227a99655346e6e37f59a42bea
+exl-id: 05f74838-6766-47ea-aaed-a67c174a51a9
+source-git-commit: a2b2398280624c4f344ff2530a6054b68f082eab
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1399'
 ht-degree: 2%
 
 ---
-
 
 # Arbeta med fragment {#fragments}
 
@@ -21,8 +21,7 @@ Ett fragment är en återanvändbar komponent som kan refereras i en eller flera
 
 Med den här funktionen kan man skapa flera anpassade innehållsblock som kan användas av icke-tekniska marknadsföringsanvändare för att snabbt sammanställa e-postinnehåll i en förbättrad designprocess.
 
-<!--
-➡️ [Learn how to create and use templates in this video](#video-templates)-->
+➡️ [Lär dig hur du hanterar, redigerar och använder fragment i den här videon](#video-fragments)
 
 >[!CAUTION]
 >
@@ -266,12 +265,9 @@ Följ stegen nedan för att bryta arv:
 
 1. Det fragmentet blir ett fristående element som inte längre är länkat till det ursprungliga fragmentet. Redigera det som vilken annan innehållskomponent som helst i innehållet. [Läs mer](content-components.md)
 
-<!--
+## Instruktionsvideo {#video-fragments}
 
-## How-to video {#video-templates}
+Lär dig hur du hanterar, redigerar och använder fragment i [!DNL Journey Optimizer].
 
-Learn how to create, edit, and use fragments in [!DNL Journey Optimizer].
+>[!VIDEO](https://video.tv.adobe.com/v/3419932/?quality=12)
 
->[!VIDEO](https://video.tv.adobe.com/v/3413743/?quality=12)
-
--->
