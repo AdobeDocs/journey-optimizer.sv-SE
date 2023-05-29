@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 1213a65c8a22a326e8294c51db53efb6e23fd6f9
+source-git-commit: 301b10e090859c196c22523f4ecbe578d3ccb592
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '817'
 ht-degree: 4%
 
 ---
@@ -128,6 +128,8 @@ Användargränssnittet finns för närvarande på följande språk:
 * Portugisiska (Brasilien)
 * Japanska
 * Koreanska
+* Traditionell kinesiska
+* Förenklad kinesiska
 
 Standardspråket för gränssnittet avgörs av det språk du föredrar i användarprofilen.
 
