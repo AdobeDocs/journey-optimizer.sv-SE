@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 402ec28dc0087a64b3a91c1a937620d931ed28ef
+source-git-commit: 6f7365b1ddeb3ed3e253669d21702b02f0ec7275
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 4%
@@ -117,6 +117,8 @@ Använd **Hjälp** -ikon för att få tillgång till hjälpsidor, kontakta suppo
 ![](assets/ajo-help.png)
 
 På varje sida använder du sammanhangsberoende hjälpknappar för att lära dig mer om en funktion och för att bläddra till **[!DNL Adobe Experience League]** dokumentation.
+
+![](assets/do-not-localize/Context-help.gif)
 
 ## Språkinställningar {#language-pref}
 
