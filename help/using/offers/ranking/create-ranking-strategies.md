@@ -7,10 +7,10 @@ feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: 81d07ec8-e808-4bc6-97b1-b9f7db2aec22
-source-git-commit: 4f331eff73991c32682ba2c1ca5f6b7341a561e1
+source-git-commit: d2f0a6db7cd86512febfd307039d06ae4b60232e
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 2%
+source-wordcount: '402'
+ht-degree: 3%
 
 ---
 
@@ -64,6 +64,8 @@ Så här skapar du en AI-modell:
 
 1. Om du skapar en **[!UICONTROL Personalized optimization]** AI-modellen väljer du de segment som ska användas för att utbilda AI-modellen.
 
+   ➡️ [Upptäck den här funktionen i en video](#video)
+
    ![](../assets/ai-ranking-segments.png)
 
    >[!NOTE]
@@ -83,3 +85,9 @@ Så här skapar du en AI-modell:
 Varje gång ett erbjudande visas och/eller klickas vill du att motsvarande händelse ska spelas in automatiskt av **[!UICONTROL Experience Event - Proposition Interactions]** fältgrupp med [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/web-sdk-faq.html#what-is-adobe-experience-platform-web-sdk%3F){target="_blank"} eller Mobile SDK.
 
 För att kunna skicka i händelsetyper (erbjudandet visas eller erbjudandet klickas) måste du ange rätt värde för varje händelsetyp i en upplevelsehändelse som skickas till Adobe Experience Platform. [Lär dig mer](../data-collection/schema-requirement.md)
+
+## Instruktionsvideo {#video}
+
+Lär dig hur du skapar en personaliserad optimeringsmodell och hur du tillämpar den på ett beslut.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419954?quality=12)
