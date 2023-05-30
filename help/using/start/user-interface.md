@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 9b38eb37408be9603c0ec06e6f66b4e65465252f
+source-git-commit: 402ec28dc0087a64b3a91c1a937620d931ed28ef
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '832'
 ht-degree: 4%
 
 ---
@@ -51,7 +51,7 @@ Nedan finns en fullständig lista över tjänster och funktioner som är tillgä
 
 **[!UICONTROL DECISION MANAGEMENT]**
 
-* **[!UICONTROL Offers]** - Använd de senaste källorna och datauppsättningarna på den här menyn. Använd det här avsnittet för att skapa nya erbjudanden. [Läs mer](../offers/offer-library/creating-personalized-offers.md)
+* **[!UICONTROL Offers]** - Använd de senaste källorna och datauppsättningarna på den här menyn. Använd det här avsnittet för att skapa erbjudanden. [Läs mer](../offers/offer-library/creating-personalized-offers.md)
 
 * **[!UICONTROL Components]** - Skapa placeringar, regler och taggar. [Läs mer](../offers/offer-library/key-steps.md)
 
@@ -71,11 +71,11 @@ Nedan finns en fullständig lista över tjänster och funktioner som är tillgä
 
 **[!UICONTROL CONNECTIONS]**
 
-* **[!UICONTROL Sources]** - Använd den här menyn för att importera data från en mängd olika källor - som Adobe-program, molnbaserade lagringsplatser, databaser med mera - samt strukturera, etikettera och förbättra inkommande data. [Läs mer](get-started-sources.md)
+* **[!UICONTROL Sources]** - Använd den här menyn för att importera data från en mängd olika källor, till exempel Adobe-program, molnbaserade lagringsplatser, databaser och mycket annat. Du kan strukturera, etikettera och förbättra inkommande data. [Läs mer](get-started-sources.md)
 
 **[!UICONTROL CUSTOMER]**
 
-* **[!UICONTROL Segments]** - Skapa och hantera definitioner av segment i Experience Platform och utnyttja dem på era resor. [Läs mer](../segment/about-segments.md)
+* **[!UICONTROL Segments]** - Skapa och hantera segmentdefinitioner för Experience Platform och använd dem på dina resor. [Läs mer](../segment/about-segments.md)
 
 * **[!UICONTROL Profiles]** - Kundprofil i realtid skapar en helhetsbild av varje enskild kund och kombinerar data från flera kanaler, inklusive online-, offline-, CRM- och tredjepartsdata. [Läs mer](../segment/get-started-profiles.md)
 
@@ -83,7 +83,7 @@ Nedan finns en fullständig lista över tjänster och funktioner som är tillgä
 
 **[!UICONTROL ADMINISTRATION]**
 
-* **[!UICONTROL Journey Administration]** - Använd den här menyn för att konfigurera [händelser](../event/about-events.md), [datakällor](../datasource/about-data-sources.md) och [funktionsmakron](../action/action.md) att använda på era resor.
+* **[!UICONTROL Journey Administration]** - Använd den här menyn för att konfigurera [händelser](../event/about-events.md), [datakällor](../datasource/about-data-sources.md)och [funktionsmakron](../action/action.md) att använda på era resor.
 
 * **[!UICONTROL Sandboxes]** - Adobe Experience Platform tillhandahåller sandlådor som partitionerar en instans i separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. [Läs mer](../administration/sandboxes.md)
 
@@ -91,7 +91,7 @@ Nedan finns en fullständig lista över tjänster och funktioner som är tillgä
 
 ## Användningsexempel inifrån produkten {#in-product-uc}
 
-Utnyttja [!DNL Adobe Journey Optimizer] exempel från startsidan och ge några snabba indata för att skapa en kundresa.
+Från [!DNL Adobe Journey Optimizer] startsida, ger exempel på produktanvändning en snabb inmatning för att skapa en kundresa.
 
 ![](assets/use-cases-home.png)
 
@@ -102,9 +102,9 @@ Exempel:
 * **Skicka e-post till nya kunder**, för att enkelt skicka upp till två e-postmeddelanden till dina nyregistrerade kunder. (kommer snart)
 * **Skicka push-meddelanden till importerad lista över kunder**, för att snabbt skicka ett push-meddelande till en lista över kunder som importerats från en CSV-fil. (kommer snart)
 
-Klicka **[!UICONTROL View details]** om du vill veta mer om de olika användningsexemplen.
+Klicka på **[!UICONTROL View details]** länk.
 
-Klicka på **[!UICONTROL Begin]** för att starta användningsfallet.
+Klicka på **[!UICONTROL Begin]** -knappen.
 
 Du kan få åtkomst till körda användningsfall från **[!UICONTROL View use case library]** -knappen.
 
@@ -112,13 +112,15 @@ Du kan få åtkomst till körda användningsfall från **[!UICONTROL View use ca
 
 Få åtkomst till Adobe Journey Optimizer hjälpsidor från startsidans nedre del.
 
-Använd **Hjälp** ikon för att få tillgång till hjälpsidor, kontakta support och dela feedback. Du kan söka efter hjälpartiklar och videoklipp i sökfältet.
+Använd **Hjälp** -ikon för att få tillgång till hjälpsidor, kontakta support och dela feedback. Du kan söka efter hjälpartiklar och videoklipp i sökfältet.
 
 ![](assets/ajo-help.png)
 
+På varje sida använder du sammanhangsberoende hjälpknappar för att lära dig mer om en funktion och för att bläddra till **[!DNL Adobe Experience League]** dokumentation.
+
 ## Språkinställningar {#language-pref}
 
-Användargränssnittet finns för närvarande på följande språk:
+Användargränssnittet finns på följande språk:
 
 * Engelska
 * Franska
