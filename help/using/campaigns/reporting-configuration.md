@@ -9,10 +9,10 @@ role: Admin
 level: Intermediate
 keywords: konfiguration, experiment, rapportering, optimering
 exl-id: 327a0c45-0805-4f64-9bab-02d67276eff8
-source-git-commit: 066bceb078f619e75e5776764f534619d5a0bd5a
+source-git-commit: dc48cc6d95e4af288727961fd9f7761dee4f2552
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -28,9 +28,9 @@ ht-degree: 2%
 >title="Välj en datauppsättning"
 >abstract="Du kan bara välja en datamängd av händelsetyp, som måste innehålla minst en av de fältgrupper som stöds: Programinformation, handelsinformation, webbinformation."
 
-<!--The reporting data source configuration allows you to define a connection to a system in order to retrieve additional information that will be used in your reports.-->
+Med rapportdatakällans konfiguration kan du definiera en anslutning till ett system för att hämta ytterligare information som ska användas i dina rapporter.
 
-Med rapportdatakällans konfiguration kan du hämta ytterligare mått som ska användas i **[!UICONTROL Objectives]** fliken med kampanjrapporter. [Läs mer](content-experiment.md#objectives-global)
+<!--The reporting data source configuration allows you to retrieve additional metrics that will be used in the **[!UICONTROL Objectives]** tab of your campaign reports. [Learn more](content-experiment.md#objectives-global)-->
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Innan du kan lägga till en datauppsättning i rapportkonfigurationen måste du 
 
    Om du vill rapportera om mobilinteraktioner måste du också skapa en upplevelsehändelsedatauppsättning med **Programinformation** fältgrupp.
 
-   De mått som motsvarar varje fältgrupp visas [här](#objective-list).
+   <!--The metrics corresponding to each field group are listed [here](#objective-list).-->
 
 * Du kan lägga till dessa fältgrupper i ett eller flera scheman som ska användas i en eller flera datauppsättningar.
 
@@ -67,15 +67,17 @@ Innan du kan lägga till en datauppsättning i rapportkonfigurationen måste du 
 >
 >Läs mer om XDM-scheman och fältgrupper i [Översikt över XDM-systemet - dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}.
 
-## Mål som motsvarar varje fältgrupp {#objective-list}
+<!--
+## Objectives corresponding to each field group {#objective-list}
 
-Tabellen nedan visar vilka mätvärden som kommer att läggas till i **[!UICONTROL Objectives]** -fliken i era kampanjrapporter för varje fältgrupp.
+The table below shows which metrics will be added to the **[!UICONTROL Objectives]** tab of your campaign reports for each field group.
 
-| Fältgrupp | Mål |
+| Field group | Objectives |
 |--- |--- |
-| Handelsinformation | Prissumma<br>Betalningsbelopp<br>(Unik) utcheckningar<br>(Unikt) Produktlista lägger till<br>(Unikt) Produktlistan öppnas<br>(Unik) Borttagning av produktlista<br>(Unik) Produktlistvyer<br>(Unik) Produktvyer<br>(Unikt) Inköp<br>(Unikt) Spara för senare<br>Totalt produktpris<br>Produktkvantitet |
-| Programinformation | (Unikt) Applanseringar<br>Första programstarten<br>(Unik) Appinstallationer<br>(Unikt) Appuppgraderingar |
-| Webbinformation | (Unik) Sidvyer |
+| Commerce Details | Price Total<br>Payment Amount<br>(Unique) Checkouts<br>(Unique) Product List Adds<br>(Unique) Product List Opens<br>(Unique) Product List Removal<br>(Unique) Product List Views<br>(Unique) Product Views<br>(Unique) Purchases<br>(Unique) Save For Laters<br>Product Price Total<br>Product Quantity |
+| Application Details | (Unique) App Launches<br>First App Launches<br>(Unique) App Installs<br>(Unique) App Upgrades |
+| Web Details | (Unique) Page Views |
+-->
 
 ## Lägg till datauppsättningar {#add-datasets}
 
@@ -115,7 +117,7 @@ Tabellen nedan visar vilka mätvärden som kommer att läggas till i **[!UICONTR
 
    ![](assets/reporting-config-namespace.png)
 
-   Läs mer om namnutrymmen i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html){target="_blank"}.
+   Läs mer om namnutrymmen i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=sv){target="_blank"}.
 
 1. Spara ändringarna och lägg till den valda datauppsättningen i rapportkonfigurationslistan.
 
@@ -123,15 +125,16 @@ Tabellen nedan visar vilka mätvärden som kommer att läggas till i **[!UICONTR
    >
    >Om du valde en datauppsättning som inte är av händelsetyp kan du inte fortsätta.
 
-När ni skapar kampanjrapporter kan ni nu se mätvärden som motsvarar fältgrupperna som används i de datamängder ni har lagt till. Gå till **[!UICONTROL Objectives]** och välj de mätvärden du vill ha för att finjustera dina rapporter. [Läs mer](content-experiment.md#objectives-global)
+<!--
+When building your campaign reports, you can now see the metrics corresponding to the field groups used in the datasets you added. Go to the **[!UICONTROL Objectives]** tab and select the metrics of your choice to better fine-tune your reports. [Learn more](content-experiment.md#objectives-global)
 
 ![](assets/reporting-config-objectives.png)
 
 >[!NOTE]
 >
->Om du lägger till flera datauppsättningar blir alla data från alla datauppsättningar tillgängliga för rapportering.
+>If you add several datasets, all data from all datasets will be available for reporting.
 
-<!--
+
 ## How-to video {#video}
 
 Understand how to configure Experience Platform reporting data sources.

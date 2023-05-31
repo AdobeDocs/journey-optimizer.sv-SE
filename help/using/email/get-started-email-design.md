@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: e-post, design, stockinnehåll, resurser
 exl-id: e4f91870-f06a-4cd3-98b7-4c413233e310
-source-git-commit: 3a9b11b1a4d2159261586394f1595e52c8b749e7
+source-git-commit: dc48cc6d95e4af288727961fd9f7761dee4f2552
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -64,8 +64,12 @@ När du har [lade till ett e-postmeddelande](create-email.md) till en resa eller
 
    ![](assets/email_designer_export.png)
 
-## Instruktionsvideo {#video}
+## Instruktionsvideor {#video}
 
 Lär dig hur du skapar e-postinnehåll med meddelanderedigeraren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334150?quality=12)
+
+Lär dig hur du konfigurerar innehållsexperiment till A/B-tester och utforskar e-postinnehåll på bästa sätt för dina affärsmål.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419893)
