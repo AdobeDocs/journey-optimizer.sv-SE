@@ -10,10 +10,10 @@ hide: true
 hidefromtoc: true
 exl-id: b774e34f-8225-41a0-a2ec-b91d3a86cf2b
 badge: label="Beta" type="Informative"
-source-git-commit: 9994bc6076f55128f5aa2c316433986eeff714b3
+source-git-commit: 8b966ddc9f96485e27cc7e9aa360d6d2ead84153
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -48,9 +48,9 @@ ht-degree: 1%
 
 1. Välj hur ofta utlösaren ska visas när meddelandet i appen är aktivt:
 
-   * **[!UICONTROL Show every time]**: Visa alltid meddelandet när de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
-   * **[!UICONTROL Show once]**: Visa endast det här meddelandet första gången de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
-   * **[!UICONTROL Show until click through]**: Visa det här meddelandet när händelser har markerats i **[!UICONTROL Mobile app trigger]** nedrullningsbar meny inträffar tills en interaktionshändelse skickas av SDK med åtgärden&quot;klickad&quot;.
+   * **[!UICONTROL Every time]**: Visa alltid meddelandet när de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
+   * **[!UICONTROL Once]**: Visa endast det här meddelandet första gången de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
+   * **[!UICONTROL Until click through]**: Visa det här meddelandet när händelser har markerats i **[!UICONTROL Mobile app trigger]** nedrullningsbar meny inträffar tills en interaktionshändelse skickas av SDK med åtgärden&quot;klickad&quot;.
    * **[!UICONTROL X number of times]**: Visa bara meddelandet ett visst antal gånger, som bestäms av värdet i **[!UICONTROL Times to display]** fält.
 
 1. Välj veckodag och den tidpunkt då du vill att ditt meddelande i appen ska utlösas och klicka på **[!UICONTROL Save]**.
