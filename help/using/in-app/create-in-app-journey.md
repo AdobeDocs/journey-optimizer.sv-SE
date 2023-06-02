@@ -10,9 +10,9 @@ hide: true
 hidefromtoc: true
 exl-id: b774e34f-8225-41a0-a2ec-b91d3a86cf2b
 badge: label="Beta" type="Informative"
-source-git-commit: 8ca779efd237174c3ac9b7694b1cb81fc8b3ea3e
+source-git-commit: 9994bc6076f55128f5aa2c316433986eeff714b3
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '505'
 ht-degree: 1%
 
 ---
@@ -51,6 +51,7 @@ ht-degree: 1%
    * **[!UICONTROL Show every time]**: Visa alltid meddelandet när de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
    * **[!UICONTROL Show once]**: Visa endast det här meddelandet första gången de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
    * **[!UICONTROL Show until click through]**: Visa det här meddelandet när händelser har markerats i **[!UICONTROL Mobile app trigger]** nedrullningsbar meny inträffar tills en interaktionshändelse skickas av SDK med åtgärden&quot;klickad&quot;.
+   * **[!UICONTROL X number of times]**: Visa bara meddelandet ett visst antal gånger, som bestäms av värdet i **[!UICONTROL Times to display]** fält.
 
 1. Välj veckodag och den tidpunkt då du vill att ditt meddelande i appen ska utlösas och klicka på **[!UICONTROL Save]**.
 
