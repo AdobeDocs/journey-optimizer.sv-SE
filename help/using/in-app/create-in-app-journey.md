@@ -10,9 +10,9 @@ hide: true
 hidefromtoc: true
 exl-id: b774e34f-8225-41a0-a2ec-b91d3a86cf2b
 badge: label="Beta" type="Informative"
-source-git-commit: 2d3cb7e9981e7df1f2cdd6eff1506fce24a5a962
+source-git-commit: 8ca779efd237174c3ac9b7694b1cb81fc8b3ea3e
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '488'
 ht-degree: 1%
 
 ---
@@ -52,6 +52,8 @@ ht-degree: 1%
    * **[!UICONTROL Show once]**: Visa endast det här meddelandet första gången de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
    * **[!UICONTROL Show until click through]**: Visa det här meddelandet när händelser har markerats i **[!UICONTROL Mobile app trigger]** nedrullningsbar meny inträffar tills en interaktionshändelse skickas av SDK med åtgärden&quot;klickad&quot;.
 
+1. Välj veckodag och den tidpunkt då du vill att ditt meddelande i appen ska utlösas och klicka på **[!UICONTROL Save]**.
+
 1. Slutför vid behov kundresan genom att dra och släppa ytterligare åtgärder eller händelser. [Läs mer](../building-journeys/about-journey-activities.md)
 
 1. När ditt meddelande i appen är klart slutför du konfigurationen och publicerar din resa för att aktivera den.
@@ -70,7 +72,7 @@ Mer information om hur du konfigurerar en resa finns i [den här sidan](../build
 
 * **[!UICONTROL Reaction]** -aktiviteter kan inte användas för att reagera på en öppning eller klickning i appen.
 
-* En aktiveringsfördröjning inträffar mellan den tidpunkt då en användarprofil når en aktivitet i appen på arbetsytan och den tidpunkt då meddelandet visas i appen. Den här fördröjningen kan variera från 15 minuter till 1 timme.
+* En aktiveringsfördröjning kan uppstå från det att en användarprofil når en aktivitet i appen på arbetsytan till dess att meddelandet visas i appen.
 
 **Relaterade ämnen:**
 
