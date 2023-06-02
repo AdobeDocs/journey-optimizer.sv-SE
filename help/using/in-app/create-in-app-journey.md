@@ -10,9 +10,9 @@ hide: true
 hidefromtoc: true
 exl-id: b774e34f-8225-41a0-a2ec-b91d3a86cf2b
 badge: label="Beta" type="Informative"
-source-git-commit: 50afe137c618153278c596f1553216c20637e40b
+source-git-commit: 2d3cb7e9981e7df1f2cdd6eff1506fce24a5a962
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '474'
 ht-degree: 1%
 
 ---
@@ -37,21 +37,20 @@ ht-degree: 1%
 
    ![](assets/in_app_journey_4.png)
 
+1. Från **[!UICONTROL In-app message trigger]** väljer du de händelser och villkor som ska utlösa meddelandet:
+
+   1. Klicka **[!UICONTROL Add condition]** om du vill att utlösaren ska ta hänsyn till flera händelser eller villkor.
+   1. Från **[!UICONTROL Select an event]** väljer du typ av händelse för utlösaren.
+   1. Välj hur dina händelser ska länkas, t.ex. välj **[!UICONTROL And]** om du vill **båda** utlösare är true för att ett meddelande ska kunna visas eller väljas **[!UICONTROL Or]** om du vill att meddelandet ska visas om **antingen** av utlösarna är sanna.
+   1. Klicka **[!UICONTROL Make group]** för att gruppera utlösare tillsammans.
+
+   ![](assets/in_app_journey_3.png)
+
 1. Välj hur ofta utlösaren ska visas när meddelandet i appen är aktivt:
 
    * **[!UICONTROL Show every time]**: Visa alltid meddelandet när de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
    * **[!UICONTROL Show once]**: Visa endast det här meddelandet första gången de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
    * **[!UICONTROL Show until click through]**: Visa det här meddelandet när händelser har markerats i **[!UICONTROL Mobile app trigger]** nedrullningsbar meny inträffar tills en interaktionshändelse skickas av SDK med åtgärden&quot;klickad&quot;.
-
-1. Från **[!UICONTROL Mobile app trigger]** väljer du de händelser och villkor som ska utlösa meddelandet:
-
-   1. I den vänstra listrutan väljer du den händelse som krävs för att utlösa meddelandet.
-   1. Välj den validering som krävs för den valda händelsen i den högra listrutan.
-   1. Klicka på **[!UICONTROL Add]** om du vill att utlösaren ska ta hänsyn till flera händelser eller villkor. Upprepa sedan stegen ovan.
-   1. Välj hur dina händelser ska länkas, t.ex. välj **[!UICONTROL And]** om du vill **båda** utlösare är true för att ett meddelande ska kunna visas eller väljas **[!UICONTROL Or]** om du vill att meddelandet ska visas om **antingen** av utlösarna är sanna.
-   1. Klicka **[!UICONTROL Save]** när dina utlösare har konfigurerats.
-
-   ![](assets/in_app_journey_3.png)
 
 1. Slutför vid behov kundresan genom att dra och släppa ytterligare åtgärder eller händelser. [Läs mer](../building-journeys/about-journey-activities.md)
 
