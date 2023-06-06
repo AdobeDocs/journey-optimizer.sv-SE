@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 064762b7-9774-42eb-bcef-1d92bc94a988
-source-git-commit: 835e4bf227ce330b1426a9a4331fdf533fc757e3
+source-git-commit: 118eddf540d1dfb3a30edb0b877189ca908944b1
 workflow-type: tm+mt
 source-wordcount: '1548'
 ht-degree: 0%
@@ -260,7 +260,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 **Fält:** endTime
 **Titel:** Slutdatum och tid för aktiviteten
-**Beskrivning:** Slutdatum och sluttid för beslut (tidigare kallat aktivitet). Egenskapen har semantiken för schema.orgs endTime-egenskap definierad på http://schema.org/Action.
+**Beskrivning:** Slutdatum och sluttid för beslut (tidigare kallat aktivitet). Egenskapen har semantiken för schema.orgs endTime-egenskap definierad på https://schema.org/Action.
 **Typ:** string
 
 +++
@@ -287,7 +287,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 **Fält:** startTime
 **Titel:** Startdatum och -tid för aktivitet
-**Beskrivning:** Startdatum och sluttid för beslut (tidigare kallat aktivitet). Egenskapen har semantiken för schema.orgs startTime-egenskap definierad på http://schema.org/Action.
+**Beskrivning:** Startdatum och sluttid för beslut (tidigare kallat aktivitet). Egenskapen har semantiken för schema.orgs startTime-egenskap definierad på https://schema.org/Action.
 **Typ:** string
 
 +++

@@ -6,7 +6,7 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 8674ef9e-261b-49d9-800e-367f9f7ef979
-source-git-commit: 9301d02be37c6aabad9c10a4cc43c20d3e3ee23e
+source-git-commit: 118eddf540d1dfb3a30edb0b877189ca908944b1
 workflow-type: tm+mt
 source-wordcount: '1857'
 ht-degree: 5%
@@ -304,7 +304,7 @@ The `getUrlHost` används för att hämta värdnamnet för en URL.
 **Exempel**
 
 ```sql
-{%= getUrlHost("http://www.myurl.com/contact") %}
+{%= getUrlHost("https://www.myurl.com/contact") %}
 ```
 
 Returnerar &quot;www.myurl.com&quot;
@@ -322,7 +322,7 @@ The `getUrlPath` används för att hämta sökvägen efter domännamnet för en 
 **Exempel**
 
 ```sql
-{%= getUrlPath("http://www.myurl.com/contact.html") %}
+{%= getUrlPath("https://www.myurl.com/contact.html") %}
 ```
 
 Returnerar &quot;/contact.html&quot;
@@ -340,7 +340,7 @@ The `getUrlProtocol` -funktionen används för att hämta protokollet för en UR
 **Exempel**
 
 ```sql
-{%= getUrlProtocol("http://www.myurl.com/contact.html") %}
+{%= getUrlProtocol("https://www.myurl.com/contact.html") %}
 ```
 
 Returnerar &quot;http&quot;

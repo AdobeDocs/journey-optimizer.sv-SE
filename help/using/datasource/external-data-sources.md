@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: externa, källor, data, konfiguration, anslutning, tredje part
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
-source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
+source-git-commit: 118eddf540d1dfb3a30edb0b877189ca908944b1
 workflow-type: tm+mt
 source-wordcount: '1423'
 ht-degree: 85%
@@ -183,7 +183,7 @@ Här följer ett exempel på autentiseringstypen för innehavare:
   "authentication": {
     "type": "customAuthorization",
     "authorizationType": "Bearer",
-    "endpoint": "http://localhost:${port}/epsilon/oauth2/access_token",
+    "endpoint": "https://localhost:${port}/epsilon/oauth2/access_token",
     "method": "POST",
     "headers": {
       "Authorization": "Basic EncodeBase64(<epsilon Client Id>:<epsilon Client Secret>)"

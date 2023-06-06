@@ -7,7 +7,7 @@ feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: a85de6a9-ece2-43da-8789-e4f8b0e4a0e7
-source-git-commit: c530905eacbdf6161f6449d7a0b39c8afaf3a321
+source-git-commit: 118eddf540d1dfb3a30edb0b877189ca908944b1
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Från Bayes Theorem:
 
 ***Posterior = Sannolikhet * Tidigare***
 
-The **tidigare sannolikhet** är den första gissningen om sannolikheten för att få fram ett resultat. Sannolikheten för att det ska gå att få fram vissa uppgifter kallas för **sannolikhet efter fel**. 
+The **tidigare sannolikhet** är den första gissningen om sannolikheten för att producera en utdata. Sannolikheten för att det ska gå att få fram vissa uppgifter kallas för **sannolikhet efter fel**. 
 
 Automatisk optimering är utformat för att ta hänsyn till binära belöningar (klicka/klicka inte). I detta fall representerar sannolikheten antalet lyckade försök från N-prövningar och modelleras av en **Binomialfördelning**. För vissa sannolikhetsfunktioner, om du väljer en viss tidigare version, hamnar den bakre delen i samma fördelning som den föregående. En sådan tidigare version kallas då **konjugera föregående**. Den här typen av förhandsversioner gör det väldigt enkelt att beräkna posteriorfördelningen. The **Betadistribution** är ett konjugat före binomialsannolikheten (binära belöningar) och är därför ett bekvämt och vettigt val för tidigare och senare sannolikhetsfördelningar.Betafördelningen har två parametrar. ***α*** och ***β***. Dessa parametrar kan ses som antalet lyckade och misslyckade samt medelvärdet som ges av:
 
@@ -86,7 +86,7 @@ För automatisk optimering, som i exemplet ovan, börjar vi med en tidigare dist
 
 Mer information om Thompson-provtagning finns i följande forskningsrapporter:
 * [An Empirical Evaluation of Thompson Sampling](https://proceedings.neurips.cc/paper/2011/file/e53a0a2978c28872a4505bdb51db06dc-Paper.pdf){target="_blank"}
-* [Analys av Thompson Sampling för det multiväpnade Bandit-problemet](http://proceedings.mlr.press/v23/agrawal12/agrawal12.pdf){target="_blank"}
+* [Analys av Thompson Sampling för det multiväpnade Bandit-problemet](https://proceedings.mlr.press/v23/agrawal12/agrawal12.pdf){target="_blank"}
 
 ## Problem med kallstart {#cold-start}
 

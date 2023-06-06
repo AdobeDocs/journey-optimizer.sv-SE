@@ -2,7 +2,7 @@
 title: Gruppbeslut
 description: Lär dig hur ni kan leverera offertbeslut till alla profiler i ett visst Adobe Experience Platform-segment.
 exl-id: 810c05b3-2bae-4368-bf12-3ea8c2f31c01
-source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
+source-git-commit: 118eddf540d1dfb3a30edb0b877189ca908944b1
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Innan du konfigurerar en jobbförfrågan bör du kontrollera att du har skapat:
 
 * **En datauppsättning** i Adobe Experience Platform. Den här datauppsättningen används för att lagra beslutsresultatet med ODE-schema för beslutshändelser. Läs mer i [Dokumentation för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html).
 
-* **Ett segment** i Adobe Experience Platform. Segmentet ska utvärderas och sedan uppdateras. Lär dig hur du uppdaterar utvärderingen av segmentmedlemskap i [Dokumentation för segmenteringstjänst](http://www.adobe.com/go/segmentation-overview-en)
+* **Ett segment** i Adobe Experience Platform. Segmentet ska utvärderas och sedan uppdateras. Lär dig hur du uppdaterar utvärderingen av segmentmedlemskap i [Dokumentation för segmenteringstjänst](https://www.adobe.com/go/segmentation-overview-en)
 
    >[!NOTE]
    >

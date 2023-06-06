@@ -6,7 +6,7 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 7ff69887-620f-4bc0-b8ff-5144ff30696c
-source-git-commit: 882b99d9b49e1ae6d0f97872a74dc5a8a4639050
+source-git-commit: 118eddf540d1dfb3a30edb0b877189ca908944b1
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 7%
@@ -17,7 +17,7 @@ ht-degree: 7%
 
 Du kan ändra eller uppdatera ett reserverbjudande i din behållare genom att göra en PATCH-förfrågan till [!DNL Offer Library] API.
 
-Mer information om JSON Patch, inklusive tillgängliga åtgärder, finns i [JSON Patch-dokumentation](http://jsonpatch.com/).
+Mer information om JSON Patch, inklusive tillgängliga åtgärder, finns i [JSON Patch-dokumentation](https://jsonpatch.com/).
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 

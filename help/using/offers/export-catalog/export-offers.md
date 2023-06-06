@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: c7f691aa-8f89-4f23-b897-53211863eb6d
-source-git-commit: 835e4bf227ce330b1426a9a4331fdf533fc757e3
+source-git-commit: 118eddf540d1dfb3a30edb0b877189ca908944b1
 workflow-type: tm+mt
 source-wordcount: '2009'
 ht-degree: 0%
@@ -117,7 +117,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
       **Fält:** format
       **Titel:** Format
-      **Beskrivning:** Resursens fysiska eller digitala manifestation. Vanligtvis ska Format innehålla resursens medietyp. Format kan användas för att fastställa programvara, maskinvara eller annan utrustning som behövs för att visa eller använda resursen. Rekommenderad bästa metod är att välja ett värde från ett kontrollerat vokabulär (t.ex. listan med [Internetmedietyper](http://www.iana.org/assignments/media-types/) definiera datormedieformat).
+      **Beskrivning:** Resursens fysiska eller digitala manifestation. Vanligtvis ska Format innehålla resursens medietyp. Format kan användas för att fastställa programvara, maskinvara eller annan utrustning som behövs för att visa eller använda resursen. Rekommenderad bästa metod är att välja ett värde från ett kontrollerat vokabulär (t.ex. listan med [Internetmedietyper](https://www.iana.org/assignments/media-types/) definiera datormedieformat).
       **Typ:** string
       **Exempel:** &quot;application/vnd.adobe.photoshop&quot;
 

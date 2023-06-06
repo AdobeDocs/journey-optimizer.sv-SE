@@ -5,9 +5,9 @@ role: Admin
 level: Intermediate
 keywords: in-app, meddelande, konfiguration, plattform
 exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
-source-git-commit: 21aeac323a43ac95d98f4798ff3d51ad32f2ebf9
+source-git-commit: 118eddf540d1dfb3a30edb0b877189ca908944b1
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '266'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 Innan du skickar meddelanden i appen måste du konfigurera din app-kanal i [!DNL Adobe Experience Platform Data Collection].
 
-1. Från [!DNL Adobe Experience Platform Data Collection] konto, få åtkomst till **[!UICONTROL Datastream]** meny och klicka **[!UICONTROL New datastream]**. Mer information om hur du skapar data finns i [den här sidan](https://aep-sdks.gitbook.io/docs/getting-started/configure-datastreams).
+1. Från [!DNL Adobe Experience Platform Data Collection] konto, få åtkomst till **[!UICONTROL Datastream]** meny och klicka **[!UICONTROL New datastream]**. Mer information om hur du skapar data finns i [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html).
 
 1. Välj [!DNL Adobe Experience Platform] service.
 

@@ -6,7 +6,7 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 692d0aae-6fa1-40b8-a35f-9845d78317a3
-source-git-commit: a2f4a7f7b08cce3980eab71fea0b2704975087ca
+source-git-commit: 118eddf540d1dfb3a30edb0b877189ca908944b1
 workflow-type: tm+mt
 source-wordcount: '1058'
 ht-degree: 2%
@@ -191,7 +191,7 @@ Ett lyckat svar returnerar information om ditt förslag, inklusive dess unika `x
 | `xdm:propositions.xdm:content` | Svarsinnehållets format. | Svarsinnehållet kan vara: `text`, `html block`, eller `image link` |
 | `xdm:score` | Poängen för ett alternativ som beräknas som ett resultat av en rangordningsfunktion som är kopplad till alternativet eller beslutet. Detta fält returneras av API:t om en rangordningsfunktion är involverad i att fastställa poängen för ett erbjudande under rangordningen. | `"xdm:score": 45.65` |
 | `xdm:propositions.xdm:fallback` | Det här objektet innehåller ett enda reserverbjudande, inklusive dess unika identifierare. | `"xdm:id": "xcore:fallback:ccc0222"` |
-| `xdm:propositions.xdm:fallback.dc:format` | Resursens fysiska eller digitala manifestation. Formatet bör vanligtvis innehålla resursens medietyp. Formatet kan användas för att avgöra vilken programvara, maskinvara eller annan utrustning som behövs för att visa eller använda resursen. Vi rekommenderar att du väljer ett värde från ett styrt vokabulär, till exempel listan med [Internetmedietyper](http://www.iana.org/assignments/media-types/) definiera datormedieformat. | `"dc:format": "image/png"` eller `"image/jpeg"` |
+| `xdm:propositions.xdm:fallback.dc:format` | Resursens fysiska eller digitala manifestation. Formatet bör vanligtvis innehålla resursens medietyp. Formatet kan användas för att avgöra vilken programvara, maskinvara eller annan utrustning som behövs för att visa eller använda resursen. Vi rekommenderar att du väljer ett värde från ett styrt vokabulär, till exempel listan med [Internetmedietyper](https://www.iana.org/assignments/media-types/) definiera datormedieformat. | `"dc:format": "image/png"` eller `"image/jpeg"` |
 | `xdm:propositions.xdm:fallback.xdm:deliveryURL` | En valfri URL för att läsa resursen från ett leveransnätverk eller en tjänstslutpunkt. Den här URL:en används för att komma åt resursen offentligt från en användaragent. | `https://d37yhxrr0p3l3l.cloudfront.net/0fd0f090-a148-11ea-89e3-f1f2ad52f7e8/urn:aaid:sc:US:a68c86a6-9295-4940-a083-11916b665500/0/40d78a12-f8b6-3f07-8e67-7cb8ae2cc7ec` |
 | `ode:createDate` | Den tid då beslutssvarsmeddelandet skapades. Detta representeras som epoktid. | `"ode:createDate": 1566497582038` |
 

@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 6f7365b1ddeb3ed3e253669d21702b02f0ec7275
+source-git-commit: 118eddf540d1dfb3a30edb0b877189ca908944b1
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 4%
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # Användargränssnitt {#cjm-user-interface}
 
-Anslut till [Adobe Experience Cloud](http://experience.adobe.com) och bläddra till [!DNL Journey Optimizer].
+Anslut till [Adobe Experience Cloud](https://experience.adobe.com) och bläddra till [!DNL Journey Optimizer].
 
 De viktigaste begreppen när du bläddrar i användargränssnittet är vanliga i Adobe Experience Platform. Se [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html#adobe-experience-platform-ui-guide){target="_blank"} för mer information.
 
