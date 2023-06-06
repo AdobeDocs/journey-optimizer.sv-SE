@@ -6,14 +6,19 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: da9e898b-8e5d-43da-9226-5c9ccb78e174
-source-git-commit: f50617dc5ea07d01d1f7ec1ab3f9790557dcd957
+source-git-commit: c2cd44113223b9886f803da131e451440293a966
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
 
 # Skapa simuleringar {#create-simulations}
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_simulation"
+>title="Simulera beslut om erbjudanden"
+>abstract="Simulering gör att du kan simulera vilka erbjudanden som ska levereras till en testprofil för en viss placering. På så sätt kan ni testa och förfina olika versioner av era erbjudanden utan att det påverkar målmottagarna.
 
 ## Om simulering {#about-simulation}
 
