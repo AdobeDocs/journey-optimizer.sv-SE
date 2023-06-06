@@ -10,9 +10,9 @@ hide: true
 hidefromtoc: true
 exl-id: b774e34f-8225-41a0-a2ec-b91d3a86cf2b
 badge: label="Beta" type="Informative"
-source-git-commit: 8b966ddc9f96485e27cc7e9aa360d6d2ead84153
+source-git-commit: e91ca6f6210fd883e7a483fe81dda59bdf6ab42a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -74,6 +74,35 @@ Mer information om hur du konfigurerar en resa finns i [den här sidan](../build
 * **[!UICONTROL Reaction]** -aktiviteter kan inte användas för att reagera på en öppning eller klickning i appen.
 
 * En aktiveringsfördröjning kan uppstå från det att en användarprofil når en aktivitet i appen på arbetsytan till dess att meddelandet visas i appen.
+
+## Rapport i appen {#inapp-report}
+
+Från din resa **[!UICONTROL Global report]**, **[!UICONTROL In-app]** på fliken anger huvudinformationen i förhållande till de leveranser i appen som skickas på dina resor.
+
+Läs mer om [Global reserapport](../reports/journey-global-report.md).
+
+![](assets/in-app-journey-report.png)
+
++++Läs mer om de olika mätvärden och widgetar som är tillgängliga för rapporten i appen.
+
+The **[!UICONTROL In-app performance]** Nyckeltal anger den viktigaste informationen i relation till besökarnas engagemang i era meddelanden i appen, till exempel:
+
+* **[!UICONTROL Unique impressions]**: antal unika användare som meddelandet i appen levererades till.
+
+* **[!UICONTROL Impressions]**: Totalt antal meddelanden i appen som levereras till alla användare.
+
+* **[!UICONTROL Click rate]**: procentandelen användare som interagerade med knapparna i meddelandet i appen jämfört med användare som såg meddelandet.
+
+* **[!UICONTROL Dismiss rate]**: Andel meddelanden i appen som mottagarna avvisade.
+
+The **[!UICONTROL In-app summary]** diagram visar hur dina visningar i appen har utvecklats för den aktuella perioden.
+
+The **[!UICONTROL Clicks by button]** diagram och tabeller innehåller tillgängliga data för mottagarnas beteende per knapp:
+
+* **[!UICONTROL Clicks]**: Totalt antal mottagare som interagerat med knapparna i meddelandet i appen.
+
+* **[!UICONTROL Click rate]**: procentandelen användare som interagerade med knapparna i meddelandet i appen jämfört med användare som såg meddelandet.
++++
 
 **Relaterade ämnen:**
 
