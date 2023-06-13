@@ -57,15 +57,15 @@ Beslutshanteringsfunktionerna och integrationen med Adobe Experience Platform g�
 
 * Visa erbjudanden på webbplatsens hemsida som matchar besökskundens intressen, baserat på data från Adobe Experience Platform.
 
-   ![](../assets/website.png)
+  ![](../assets/website.png)
 
 * Om kunderna går nära en av era butiker skickar du push-meddelanden som påminner dem om tillgängliga erbjudanden enligt deras attribut (lojalitetsnivå, kön, tidigare köp ...).
 
-   ![](../assets/push_sample.png)
+  ![](../assets/push_sample.png)
 
 * Beslutshanteringen hjälper er också att förbättra kundernas upplevelse när ni kontaktar supportteamet. Med API:er för beslutshantering kan du i kundtjänstagentportalen visa information om kundens inlösta och nästa bästa erbjudanden.
 
-   ![](../../assets/do-not-localize/call-center.png)
+  ![](../../assets/do-not-localize/call-center.png)
 
 ## Bevilja åtkomst till beslutsledning {#granting-acess-to-decision-management}
 
