@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 exl-id: 8b978900-fcef-46f2-bc19-70776e4f3d43
 badge: label="Beta" type="Informative"
-source-git-commit: 818c3ff2d159ec3a668c55224996b4736f950e5d
+source-git-commit: 2acb92e5157b4e0ecc026b66078f65e82f76ff5e
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,7 @@ Så här skapar du ett dispositionsarbetsflöde:
    * **[!UICONTROL Audience]**: startpunkten för kompositionen. Med den här aktiviteten kan du välja en eller flera målgrupper som grund för ditt arbetsflöde,
 
    * **[!UICONTROL Save]**: det sista steget i kompositionen. Med den här aktiviteten kan du spara resultatet av arbetsflödet till en ny målgrupp.
+
    Mer information om hur du konfigurerar aktiviteter på arbetsytan för dispositionsarbetsflöden finns i [Arbeta med arbetsytan](composition-canvas.md).
 
 1. Öppna dispositionsegenskaperna för att ange en titel och en beskrivning.
@@ -66,7 +67,7 @@ Så här skapar du ett dispositionsarbetsflöde:
 
    >[!IMPORTANT]
    >
-   >Du kan publicera upp till 75 kompositioner i en given sandlåda. Om du har nått det här tröskelvärdet måste du ta bort en disposition för att frigöra utrymme och publicera en ny.
+   >Du kan publicera upp till 10 kompositioner i en given sandlåda. Om du har nått det här tröskelvärdet måste du ta bort en disposition för att frigöra utrymme och publicera en ny.
 
    Om något fel inträffar under publiceringen visas varningar med information om hur du löser problemet.
 
@@ -85,7 +86,6 @@ Alla skapade kompositioner kan nås via **[!UICONTROL Compositions]** -fliken. D
 
 * **[!UICONTROL Draft]**: kompositionen pågår och har inte publicerats.
 * **[!UICONTROL Published]**: kompositionen har publicerats, målgrupperna har sparats och är tillgängliga för användning.
-* **[!UICONTROL Archived]**: kompositionen har arkiverats.
 
 ![](assets/audiences-compositions.png)
 
