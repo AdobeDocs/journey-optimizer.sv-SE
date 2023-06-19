@@ -6,9 +6,9 @@ description: Lär dig hur du konfigurerar miljön för att skicka SMS med Journe
 role: Admin
 level: Intermediate
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
-source-git-commit: 442e3213ad512b62332cd08d6639dfc52bdc766a
+source-git-commit: ce9ebee71f80ec28f1e98eff0ff15d728978e817
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '866'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ Konfigurera instansen innan du skickar SMS. Du måste [integrera providerinstäl
 
 ## Förutsättningar{#sms-prerequisites}
 
-Adobe Journey Optimizer är för närvarande integrerat med tredjepartsleverantörer som Sinch och Twilio, som erbjuder SMS-tjänster oberoende av Adobe Journey Optimizer.
+Adobe Journey Optimizer är för närvarande integrerat med tredjepartsleverantörer som Sinch, Twilio och Infobip, som erbjuder SMS-tjänster oberoende av Adobe Journey Optimizer.
 
 Innan du konfigurerar SMS måste du skapa ett konto hos någon av dessa SMS-leverantörer för att ta emot API-token och tjänst-ID, vilket gör att du kan upprätta en anslutning mellan Adobe Journey Optimizer och den tillämpliga SMS-providern.
 
@@ -62,6 +62,7 @@ Så här konfigurerar du din SMS-leverantör med Journey Optimizer:
       * **[!UICONTROL Name]**: Välj ett namn för dina API-autentiseringsuppgifter.
 
       * **[!UICONTROL Service ID]** och **[!UICONTROL API Token]**: gå till API:er-sidan och hitta dina autentiseringsuppgifter på fliken SMS.  [Läs mer](https://developers.sinch.com/docs/sms/getting-started/)
+
    * För **[!DNL Twilio]**:
 
       * **[!UICONTROL Name]**: Välj ett namn för dina API-autentiseringsuppgifter.
@@ -69,6 +70,7 @@ Så här konfigurerar du din SMS-leverantör med Journey Optimizer:
       * **[!UICONTROL Account SID]** och **[!UICONTROL Auth Token]**: gå till rutan Kontoinformation på sidan Twilio Console Dashboard för att hitta dina inloggningsuppgifter.
 
       * **[!UICONTROL Message SID]**: Ange den unika identifierare som tilldelats alla meddelanden som skapas av Twilios API. [Läs mer](https://support.twilio.com/hc/en-us/articles/223134387-What-is-a-Message-SID-)
+
    * För **[!DNL Infobip]**:
 
       * **[!UICONTROL Name]**: Välj ett namn för dina API-autentiseringsuppgifter.
@@ -114,20 +116,19 @@ Så här skapar du en kanalyta:
       * Välj **Marknadsföring** för SMS: dessa meddelanden kräver användarens samtycke.
       * Välj **Transactional** för icke-kommersiella meddelanden, t.ex. orderbekräftelse, meddelanden om lösenordsåterställning eller leveransinformation.
 
-      >[!CAUTION]
-      >
-      >**Transactional** SMS-meddelanden kan skickas till profiler som avbeställer marknadskommunikation. Dessa meddelanden kan bara skickas i särskilda sammanhang.
+     >[!CAUTION]
+     >
+     >**Transactional** SMS-meddelanden kan skickas till profiler som avbeställer marknadskommunikation. Dessa meddelanden kan bara skickas i särskilda sammanhang.
 
-      När du skapar ett SMS-meddelande måste du välja en giltig kanalyta som matchar den kategori som du valde för meddelandet.
+     När du skapar ett SMS-meddelande måste du välja en giltig kanalyta som matchar den kategori som du valde för meddelandet.
 
    * Välj **[!UICONTROL SMS configuration]** för att associera med ytan.
 
-      Mer information om hur du konfigurerar miljön för att skicka SMS-meddelanden finns i [det här avsnittet](#create-api).
+     Mer information om hur du konfigurerar miljön för att skicka SMS-meddelanden finns i [det här avsnittet](#create-api).
 
    * Ange **[!UICONTROL Sender number]** &#x200B; som du vill använda för din kommunikation.
 
    * Välj **[!UICONTROL SMS Execution Field]** för att välja **[!UICONTROL Profile attribute]** som är kopplade till profilens telefonnummer.
-
 
 1. Om du vill använda förkortningsfunktionen för URL i dina SMS-meddelanden väljer du ett alternativ på menyn **[!UICONTROL Subdomain]** lista.
 
