@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 4ce00b4a709c23284148dfffb0187767fcecbe8a
+source-git-commit: 958e0c4352e150ebabdf53f0cc4f0eae2a478714
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1740'
 ht-degree: 1%
 
 ---
@@ -43,13 +43,9 @@ E-postytans konfiguration hämtas för att skicka kommunikation enligt logiken n
 
 I **E-POSTTYP** väljer du den typ av meddelande som ska skickas med ytan: **Marknadsföring** eller **Transactional**.
 
-* Välj **Marknadsföring** för e-postreklam: dessa meddelanden kräver användarens samtycke.
+* Välj **Marknadsföring** för e-postreklam, till exempel veckokampanjer för en butik. Dessa meddelanden kräver användarens samtycke.
 
-* Välj **Transactional** för icke-kommersiell e-post, t.ex. orderbekräftelse, meddelanden om lösenordsåterställning eller leveransinformation.
-
->[!CAUTION]
->
->**Transactional** e-postmeddelanden kan skickas till profiler som avbeställer marknadskommunikation. Dessa meddelanden kan bara skickas i särskilda sammanhang.
+* Välj **Transactional** för icke-kommersiell e-post, till exempel orderbekräftelse, meddelanden om lösenordsåterställning eller leveransinformation. Dessa e-postmeddelanden kan skickas till profiler som **avbeställa** från marknadskommunikation. Dessa meddelanden kan bara skickas i särskilda sammanhang.
 
 När du skapar ett meddelande måste du välja en giltig kanalyta som matchar den kategori du valde för e-postmeddelandet.
 
@@ -95,19 +91,19 @@ Länken för att avbryta prenumerationen består av två element:
 
 * An **avbeställ e-postadress** som alla avbeställningar skickas till.
 
-   I [!DNL Journey Optimizer], är e-postadressen för avanmälan standard **[!UICONTROL Mailto (unsubscribe)]** som visas i kanalytan, baserat på [vald underdomän](#subdomains-and-ip-pools).
+  I [!DNL Journey Optimizer], är e-postadressen för avanmälan standard **[!UICONTROL Mailto (unsubscribe)]** som visas i kanalytan, baserat på [vald underdomän](#subdomains-and-ip-pools).
 
-   ![](assets/preset-list-unsubscribe-mailto.png)
+  ![](assets/preset-list-unsubscribe-mailto.png)
 
 * The **avbeställ URL**, vilket är URL:en till landningssidan där användaren omdirigeras när prenumerationen har upphört.
 
-   Om du lägger till en [länk för avanmälan med ett klick](../privacy/opt-out.md#one-click-opt-out) för ett meddelande som skapas med den här ytan är avanmälnings-URL:en den URL som definierats för länken med ett klick.
+  Om du lägger till en [länk för avanmälan med ett klick](../privacy/opt-out.md#one-click-opt-out) för ett meddelande som skapas med den här ytan är avanmälnings-URL:en den URL som definierats för länken med ett klick.
 
-   ![](assets/preset-list-unsubscribe-opt-out-url.png)
+  ![](assets/preset-list-unsubscribe-opt-out-url.png)
 
-   >[!NOTE]
-   >
-   >Om du inte lägger till en länk för avanmälan med ett enda klick i meddelandeinnehållet visas ingen landningssida för användaren.
+  >[!NOTE]
+  >
+  >Om du inte lägger till en länk för avanmälan med ett enda klick i meddelandeinnehållet visas ingen landningssida för användaren.
 
 Läs mer om hur du lägger till en länk för att avbryta prenumerationen i dina meddelanden i [det här avsnittet](../privacy/opt-out.md#unsubscribe-header).
 
