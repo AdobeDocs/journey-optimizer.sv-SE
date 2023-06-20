@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 8aa64e44501b144cd3ccb325e07c1453753fc65c
+source-git-commit: 68a2846c33ce347b481ebd02e4d77938c24e6040
 workflow-type: tm+mt
-source-wordcount: '2452'
+source-wordcount: '2564'
 ht-degree: 8%
 
 ---
@@ -22,47 +22,44 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 ![Nyhetsbrev](../assets/do-not-localize/nl-icon.png) Registrera dig för [Adobe Journey Optimizer kvartalsvis nyhetsbrev](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} idag och få de senaste produktuppdateringarna, spännande historier, användningsexempel, tips och mycket annat levererat direkt till din inkorg varje kvartal.
 
 
-<!--
-## June 2023 early release notes {#june-rn-2023}
 
-Information below is subject to change without prior notice until the release availability date. Updated documentation will be published at the release date, and direct links will be added in this page.
+## Versionsinformation juni 2023 {#june-rn-2023}
 
-**Release date**: June 21-22, 2023
+Informationen nedan kan komma att ändras utan föregående meddelande fram till releasedatum. Uppdaterad dokumentation kommer att publiceras på releasedatum och direkta länkar kommer att läggas till på den här sidan.
 
-### New capabilities{#june-2023-features}
+**Releasedatum**: 21-22 juni 2023
+
+### Nya funktioner{#june-2023-features}
 
 <table>
 <thead>
 <tr>
-<th><strong>API-triggered campaigns for marketing use cases</strong><br/></th>
+<th><strong>API-utlösta kampanjer för användningsfall inom marknadsföring</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now use APIs to trigger marketing campaigns in Adobe Journey Optimizer from an external system.</p>
-<p>Until this release, API-triggered campaigns capability was covering various operational and transactional messaging needs like password resets or OTP token, but could not be used to create marketing campaigns. Available channels for API-triggered campaigns are: Email, SMS and Push messages.</p>
+<p>Nu kan ni använda API:er för att utlösa marknadsföringskampanjer i Adobe Journey Optimizer från ett externt system.</p>
+<p>Fram till den här versionen täckte kampanjer som utlöstes av API olika operativa och transaktionsrelaterade meddelandebehov, som lösenordsåterställning eller OTP-token, men kunde inte användas för att skapa marknadsföringskampanjer. Tillgängliga kanaler för API-utlösta kampanjer är: E-post, SMS och push-meddelanden.</p>
 <img src="assets/do-not-localize/api-triggered.gif"/>
-<p>For more information, refer to the <a href="../campaigns/api-triggered-campaigns.md">detailed documentation</a>.
+<p>Mer information finns i den <a href="../campaigns/api-triggered-campaigns.md">detaljerade dokumentationen</a>.
 </td>
 </tr>
 </tbody>
 </table>
 
-
+<!--
 ### Improvements {#june-2023-improvements}
 
 
 **Audiences**
 
-Enhancements have been made to the audience picker in journeys or campaigns, with the addition of new columns displaying the origin and update frequency of audiences.	
-
+Enhancements have been made to the audience picker in journeys or campaigns, with the addition of new columns displaying the origin and update frequency of audiences.
 
 **Journeys**
 
-* You can now leverage API call responses in custom actions and orchestrate your journey based on these responses.	 
-
-* A new type of system alert has been introduced. You can now get notified when a custom action fails.
+You can now leverage API call responses in custom actions and orchestrate your journey based on these responses.
 -->
 
 ## Versionsinformation maj 2023 {#may-rn-2023}
