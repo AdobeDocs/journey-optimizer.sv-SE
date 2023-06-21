@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: aktivitet, resa, läsning, segment, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: a85fb7e5cbfa42ec9044e9091cc24df4c9a40ec9
+source-git-commit: a278b217882f2646e106600e110226941e7e4f10
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1298'
+ht-degree: 3%
 
 ---
 
@@ -75,7 +75,7 @@ Så här konfigurerar du Läs segment-aktiviteten:
    >
    >Den totala begränsningsfrekvensen per sandlåda är inställd på 20 000 meddelanden per sekund. Begränsningsfrekvensen för alla lässegment som körs samtidigt i samma sandlåda uppgår därför till högst 20 000 meddelanden per sekund. Du kan inte ändra denna ände.
 
-1. The **[!UICONTROL Read Segment]** kan du ange vid vilken tidpunkt segmentet ska börja färden. Om du vill göra det klickar du på **[!UICONTROL Edit journey schedule]** länk för att komma åt resans egenskaper och konfigurera sedan **[!UICONTROL Scheduler type]** fält.
+1. The **[!UICONTROL Read Segment]** kan du ange vid vilken tidpunkt segmentet ska börja färden. Om du vill göra det klickar du på **[!UICONTROL Edit journey schedule]** länk för att komma åt resans egenskaper.Konfigurera sedan **[!UICONTROL Scheduler type]** fält.
 
    ![](assets/read-segment-schedule.png)
 
