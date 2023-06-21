@@ -8,9 +8,9 @@ role: User
 level: Beginner
 keywords: resa, upptäckt, komma igång
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: 17c13b54d59e254543eb3340f791745ea24208c8
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '591'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ Adobe Journey Optimizer har en flerkanalig orkestreringsyta som gör att marknad
 
 Lär dig hur du påbörjar och skapar din första resa på [den här sidan](journey-gs.md).
 
-Flerkanalsdesignern hjälper er att skapa flerstegsresor med riktade målgrupper, uppdateringar baserade på kundinteraktioner eller affärsinteraktioner i realtid och flerkanalsmeddelanden med ett intuitivt dra-och-släpp-gränssnitt.
+Den flerkanaliga resedesignern hjälper er att skapa flerstegsresor, särskilt för målgrupper, och införliva uppdateringar baserade på kundinteraktioner eller affärsinteraktioner i realtid. Det gör det även möjligt att skapa flerkanalsmeddelanden via ett intuitivt dra och släpp-gränssnitt.
 
 ![](assets/journey38.png)
 
