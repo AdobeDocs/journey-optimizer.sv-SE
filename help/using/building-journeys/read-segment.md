@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: aktivitet, resa, läsning, segment, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
+source-git-commit: 61acbad019ead6bfd86c6fb39d7de1920f28d984
 workflow-type: tm+mt
 source-wordcount: '1303'
 ht-degree: 3%
@@ -116,13 +116,13 @@ To activate this mode, click the **Segment Filters** toggle. Two fields are disp
 
 ### Testa och publicera resan {#testing-publishing}
 
-The **[!UICONTROL Read Segment]** kan du testa resan antingen med en enhetlig profil eller med 100 slumpmässiga testprofiler som valts bland de profiler som är kvalificerade för segmentet.
+The **[!UICONTROL Read Segment]** kan du testa resan antingen med en enhetlig profil eller med 100 slumpmässiga testprofiler som väljs bland de profiler som är kvalificerade för segmentet.
 
-Aktivera testläget och välj sedan önskat alternativ i den vänstra rutan.
+Aktivera **testläge**. Välj sedan önskat alternativ i den vänstra rutan.
 
 ![](assets/read-segment-test-mode.png)
 
-Sedan kan du konfigurera och köra testläget som vanligt. [Lär dig hur du testar en resa](testing-the-journey.md).
+Sedan kan du konfigurera och köra **testläge** som vanligt. [Lär dig hur du testar en resa](testing-the-journey.md).
 
 När testet är klart **[!UICONTROL Show logs]** kan du se testresultaten enligt det valda testalternativet:
 
@@ -130,9 +130,9 @@ När testet är klart **[!UICONTROL Show logs]** kan du se testresultaten enligt
 
 * **[!UICONTROL Up to 100 profiles at once]**: Med testloggarna kan du följa hur segmentexporten från Adobe Experience Platform fortskrider samt hur alla personer som passerat resan fortskrider.
 
-   Observera att det inte går att följa förloppet för de personer som befinner sig på resan med hjälp av det visuella flödet om du testar resan med upp till 100 profiler samtidigt.
+  Observera att det inte går att följa förloppet för de personer som befinner sig på resan med hjälp av det visuella flödet om du testar resan med upp till 100 profiler samtidigt.
 
-   ![](assets/read-segment-log.png)
+  ![](assets/read-segment-log.png)
 
 När testerna är klara kan du publicera din resa (se [Publicera resan](publishing-the-journey.md)). Enskilda personer som tillhör segmentet kommer att resa in på den dag/tid som anges i färdens egenskaper **[!UICONTROL Scheduler]** -avsnitt.
 
