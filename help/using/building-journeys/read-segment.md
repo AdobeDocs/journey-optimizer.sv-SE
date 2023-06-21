@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: aktivitet, resa, läsning, segment, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: a278b217882f2646e106600e110226941e7e4f10
+source-git-commit: c235e7cd77e50a15a12f6ed14e51ca4185ecb7c2
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1296'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 3%
 
 Använd **Läs segment** aktivitet för att få alla individer i ett segment att komma in på resan. Inträde i en resa kan genomföras antingen en gång eller regelbundet.
 
-Låt oss som exempel ta segmentet&quot;Luma app opening and checkout&quot; som skapats i [Skapa segment](../segment/about-segments.md) användningsfall. Med aktiviteten Läs segment kan du få alla personer som tillhör det här segmentet att komma in på en resa och få dem att flöda in i personaliserade resor som utnyttjar alla resefunktioner: villkor, timers, events, actions.
+Låt oss som exempel ta segmentet&quot;Luma app opening and checkout&quot; som skapats i [Bygg segment - skiftläge](../segment/about-segments.md). Med **[!UICONTROL Read Segment]** kan ni få alla personer som tillhör ett segment att komma in på en resa och låta dem flöda in i individanpassade resor som utnyttjar alla resefunktioner: villkor, timers, events, actions.
 
 >[!NOTE]
 >

@@ -9,7 +9,7 @@ role: Admin,Developer
 level: Experienced
 keywords: politik, styrning, plattform, hälso- och sjukvård, samtycke
 exl-id: 01ca4b3e-3778-4537-81e9-97ef92c9aa9e
-source-git-commit: 59499dec7d15dd4565c7910d7b454d82243ff011
+source-git-commit: c235e7cd77e50a15a12f6ed14e51ca4185ecb7c2
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Med samtyckeshantering analyseras två olika reseaktiviteter:
 
 Alla andra aktiviteter som används under en resa beaktas inte. Om du påbörjar en resa med en segmentkvalificering beaktas inte segmentet.
 
-Om en profil utesluts under en resa genom en samtyckespolicy i en anpassad åtgärd, skickas inte meddelandet till honom, men han fortsätter resan. Profilen går inte till timeout och felsökväg när ett villkor används.
+Om en profil utesluts under en resa genom en samtyckespolicy i en anpassad åtgärd, skickas inte meddelandet till dem, men de fortsätter med resan. Profilen går inte till timeout och felsökväg när ett villkor används.
 
 Innan du uppdaterar principer i en anpassad åtgärd som har placerats på en resa måste du se till att resan inte innehåller något fel.
 
