@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, segment, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: 70db4a6c235b8490fb80e24d133775f5f5a19eb1
+source-git-commit: a85fb7e5cbfa42ec9044e9091cc24df4c9a40ec9
 workflow-type: tm+mt
-source-wordcount: '1495'
-ht-degree: 9%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -153,7 +153,7 @@ Du kan också lägga till en **Slutdatum**. Detta gör att profiler kan avslutas
 
 ### Tidsgräns och fel i reseaktiviteter {#timeout_and_error}
 
-När du redigerar en åtgärd eller villkorsaktivitet kan du definiera en alternativ sökväg om ett fel eller en timeout inträffar. Om bearbetningen av aktiviteten som förhör ett tredjepartssystem överskrider den tidsgräns som anges i färdens egenskaper (**[!UICONTROL Timeout and  error]** -fält) väljs den andra sökvägen för att utföra en eventuell reservåtgärd.
+När du redigerar en åtgärd eller villkorsaktivitet kan du ange en alternativ sökväg om ett fel eller en timeout inträffar. Om bearbetningen av aktiviteten, som innefattar att fråga ett system från tredje part, överstiger den varaktighet som anges i färdens egenskaper för timeout och felhantering (**[!UICONTROL Timeout and  error]** fält) markeras den andra sökvägen för att utföra en reservåtgärd om det behövs.
 
 Giltiga värden är mellan 1 och 30 sekunder.
 

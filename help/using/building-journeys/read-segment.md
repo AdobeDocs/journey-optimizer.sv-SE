@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: aktivitet, resa, läsning, segment, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: 834e2bbf00d1169ca3f15127fe380f6ee40ae88a
+source-git-commit: a85fb7e5cbfa42ec9044e9091cc24df4c9a40ec9
 workflow-type: tm+mt
-source-wordcount: '1299'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -112,7 +112,7 @@ To activate this mode, click the **Segment Filters** toggle. Two fields are disp
 
 >[!NOTE]
 >
->Enbildsresor för Läs segment flyttas till statusen Slutförd 30 dagar efter körningen. För schemalagda läs-segment är det 30 dagar efter körningen av den sista förekomsten.
+>Enbildsbild **Lässegment** resan flyttas till **Slutförd** status 30 dagar efter resan. För schemalagda **Läsa segment**&#x200B;är det 30 dagar efter den sista förekomsten.
 
 ### Testa och publicera resan {#testing-publishing}
 
