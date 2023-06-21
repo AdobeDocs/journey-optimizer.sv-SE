@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: aktivitet, resa, läsning, segment, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: 61acbad019ead6bfd86c6fb39d7de1920f28d984
+source-git-commit: 834e2bbf00d1169ca3f15127fe380f6ee40ae88a
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1299'
 ht-degree: 3%
 
 ---
@@ -87,9 +87,9 @@ Så här konfigurerar du Läs segment-aktiviteten:
 
    ![](assets/read-segment-schedule-list.png)
 
-   **Inkrementell läsning** alternativ: när en resa med återkommande **Lässegment** körs för första gången så att alla profiler i segmentet kommer in på resan. Med det här alternativet kan du efter den första förekomsten endast rikta in dig på de personer som har gått in i segmentet sedan den senaste körningen av resan.
+   När en resa med en återkommande resa **Lässegment** körs för första gången så att alla profiler i segmentet kommer in på resan. Använd **Inkrementell läsning** möjlighet att efter den första förekomsten endast inrikta sig på de personer som har gått in i segmentet sedan den senaste körningen av resan.
 
-   **Tvinga återinträde vid upprepning**: Med det här alternativet kan du göra så att alla profiler fortfarande finns kvar på resan automatiskt avslutar den vid nästa körning. Om du till exempel har två dagar på dig att vänta på en daglig återkommande resa, genom att aktivera det här alternativet, kommer profiler alltid att flyttas på nästa körning (så dagen efter), oavsett om de är i nästa körda målgrupp eller inte. Om livscykeln för dina profiler under den här resan kan vara längre än frekvensen för återkommande aktiviteter ska du inte aktivera det här alternativet för att säkerställa att profilerna kan slutföra sin resa.
+   Aktivera **Tvinga återinträde vid upprepning** gör att du automatiskt kan ta bort alla profiler som för närvarande är på resan under nästa körning. Om det till exempel finns en tvådagarsuppehåll i en återkommande resa, kommer en aktivering av det här alternativet att konsekvent flytta profiler till den efterföljande körningen (nästa dag), oavsett om de är en del av nästa körda målgrupp. Om längden på profilerna under den här resan kan överstiga frekvensen för återkommande aktiviteter bör du inte aktivera det här alternativet för att säkerställa att profilerna kan slutföra sin resa.
 
 <!--
 
