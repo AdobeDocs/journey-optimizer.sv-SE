@@ -8,7 +8,7 @@ role: Developer, Admin
 level: Intermediate, Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: 11c1945f8e7f7ca74a2c9ca33ff85fea77bcf5db
+source-git-commit: 4b3b7ef3ec83705758374ca9e9170ce2933fa8de
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 0%
@@ -25,6 +25,10 @@ För att göra detta måste du först skapa en API-utlöst kampanj i Journey Opt
 
 Tillgängliga kanaler för API-utlösta kampanjer är e-post-, SMS- och push-meddelanden.
 
+>[!NOTE]
+>
+>För närvarande stöds inte snabb leverans för kampanjer som triggas av API:t för push-meddelanden.
+
 ## Skapa en API-utlöst kampanj {#create}
 
 ### Konfigurera och aktivera kampanjen {#create-activate}
@@ -38,10 +42,6 @@ Följ stegen nedan för att skapa en API-utlöst kampanj. Detaljerad information
 1. Välj en av kanalerna som stöds och den associerade kanalytan som ska användas för att skicka meddelandet, och klicka sedan på **[!UICONTROL Create]**.
 
    ![](assets/api-triggered-type.png)
-
-   >[!NOTE]
-   >
-   >För närvarande stöds inte snabb leverans för kampanjer som triggas av API:t för push-meddelanden.
 
 1. Ange en rubrik och en beskrivning för kampanjen och klicka sedan på **[!UICONTROL Edit content]** för att konfigurera meddelandet som ska skickas.
 
