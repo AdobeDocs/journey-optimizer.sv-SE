@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: 1213a65c8a22a326e8294c51db53efb6e23fd6f9
+source-git-commit: 11c1945f8e7f7ca74a2c9ca33ff85fea77bcf5db
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '833'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,6 @@ ht-degree: 2%
 >* [Skapa kanalytor](../configuration/channel-surfaces.md)
 >* [Kom igång med segment](../segment/about-segments.md)
 
-
 Om du vill skapa en ny kampanj öppnar du **[!UICONTROL Campaigns]** menyn och klicka sedan på **[!UICONTROL Create campaign]**. Du kan också duplicera en befintlig livekampanj och skapa en ny. [Läs mer](modify-stop-campaign.md#duplicate)
 
 ## Välj kampanjtyp och kanal {#campaigntype}
@@ -33,18 +32,20 @@ Om du vill skapa en ny kampanj öppnar du **[!UICONTROL Campaigns]** menyn och k
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_type"
 >title="Kampanjtyp"
->abstract="För ett marknadsföringsmeddelande genom att ange ett sändningsdatum, **Schemalagd** är den mest lämpliga typen. Om du vill skicka transaktionsmeddelanden som lösenordsåterställning eller kundvagnsövergivande, ska du **API-utlöst** text är det bästa alternativet."
+>abstract="**Schemalagda kampanjer** körs omedelbart eller vid ett angivet datum och är avsedda att skicka meddelanden av marknadsföringstyp. **API-utlöst** kampanjer körs med ett API-anrop. De är avsedda att skicka antingen marknadsföringsmeddelanden eller transaktionsmeddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförs av en individ: lösenordsåterställning, övergivna varukorgar osv."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_category"
 >title="Kampanjkategori"
->abstract="Kategorivärdet är direkt associerat till kampanjtypsvärdet. Schemalägg kampanjtyp för **Marknadsföring** kategori och API-utlösad typ för kategorin **Transactional**"
+>abstract="Om du skapar en schemalagd kampanj visas **marknadsföring** text väljs automatiskt. Välj om du vill skicka en **marknadsföring** eller **transaktionsbaserad** ett meddelande, dvs. ett meddelande som skickas ut efter en åtgärd som utförts av en individ: lösenordsåterställning, övergivna varukorgar osv."
 
 1. I **[!UICONTROL Properties]** anger du hur kampanjen ska köras. Det finns två typer av kampanjer:
 
-   * **[!UICONTROL Scheduled]**: köra kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka **marknadsföring** typmeddelanden.
+   * **[!UICONTROL Scheduled]**: köra kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka **marknadsföring** meddelanden. De konfigureras och körs från användargränssnittet.
 
-   * **[!UICONTROL API-triggered]**: köra kampanjen med ett API-anrop. API-utlösta kampanjer är avsedda att skicka **transaktionsbaserad** meddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförts av en individ: lösenordsåterställning, övergivna varukorgar osv. [Lär dig hur du utlöser en kampanj med API:er](api-triggered-campaigns.md)
+   * **[!UICONTROL API-triggered]**: köra kampanjen med ett API-anrop. API-utlösta kampanjer syftar till att skicka antingen **marknadsföring**, eller **transaktionsbaserad** meddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförts av en individ: lösenordsåterställning, kundvagn osv. [Lär dig hur du utlöser en kampanj med API:er](api-triggered-campaigns.md)
+
+1. Om du skapar en schemalagd kampanj visas **marknadsföring** text väljs automatiskt. Välj om du vill skicka en **marknadsföring** eller **transaktionsbaserad** meddelande.&quot;
 
 1. I **[!UICONTROL Actions]** väljer du kanal och kanal för att skicka meddelandet.
 

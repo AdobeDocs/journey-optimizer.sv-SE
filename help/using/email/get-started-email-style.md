@@ -9,20 +9,20 @@ role: User
 level: Intermediate
 keywords: e-post, stil, css, brödtext, struktur
 exl-id: 2e20ecc5-bb58-4dc8-a2bc-ec5a02c16ae8
-source-git-commit: f5390bbb3bab435b21ace4d1842de0048132bc8c
+source-git-commit: 11c1945f8e7f7ca74a2c9ca33ff85fea77bcf5db
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '107'
 ht-degree: 0%
 
 ---
 
 # Kom igång med e-postformat {#get-started-email-style}
 
-När du har börjat skapa e-postinnehåll i [!DNL Journey Optimizer]kan du justera ett antal formatparametrar och attribut i inställningsfönstret för e-postdesignern.
+När du har börjat skapa e-postinnehåll i [!DNL Journey Optimizer]kan du justera ett antal formatparametrar och attribut från e-postdesignern **[!UICONTROL Styles]** fönster.
 
 Du kan antingen tillämpa ändringarna på e-postbrödtexten, på en strukturkomponent eller på en innehållskomponent.
 
-![](assets/email_designer_content_components_settings.png)
+![](assets/email_designer_content_components_styles.png)
 
 Följ länkarna nedan om du vill veta hur du justerar vissa formatinställningar i ditt e-postmeddelande.
 
