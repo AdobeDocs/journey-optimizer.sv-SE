@@ -11,10 +11,10 @@ hide: true
 hidefromtoc: true
 exl-id: af71d24d-77eb-44df-8216-b0aeaf4c4fa4
 badge: label="Beta" type="Informative"
-source-git-commit: 2acb92e5157b4e0ecc026b66078f65e82f76ff5e
+source-git-commit: bd805d9a52572e284b5846166e1f799f1f71fc59
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 0%
+source-wordcount: '325'
+ht-degree: 1%
 
 ---
 
@@ -42,13 +42,13 @@ Vad du hittar i den här dokumentationen:
 
 Målgruppsdisposition gör att du kan skapa **arbetsflöden för disposition**, där ni kan kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och utnyttja olika aktiviteter (dela, exkludera..) för att skapa nya målgrupper.
 
-När du är klar **resulterande målgrupper** sparas i Adobe Experience Platform tillsammans med befintliga målgrupper och kan **används i kampanjer** målgruppsanpassning. [Lär dig hur du arbetar med kampanjer](../campaigns/get-started-with-campaigns.md)
+När du är klar **resulterande målgrupper** sparas i Adobe Experience Platform tillsammans med befintliga målgrupper och kan utnyttjas för att nå kunder i [Journey Optimizer-kampanjer](../campaigns/get-started-with-campaigns.md)eller i Adobe [Real-time Customer Data Platform destinationer](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.htmll?lang=sv).
 
 ![](assets/audiences-process.png)
 
 >[!IMPORTANT]
 >
->Målgrupper från arbetsflöden för disposition kan endast användas i Journey Optimizer-kampanjer. De är inte tillgängliga för användning under resor.
+>Från och med nu är målgrupper som är ett resultat av arbetsflöden för disposition inte tillgängliga för användning på resor.
 >
 >Kampanjer i Adobe Journey Optimizer är ännu inte integrerade med policyefterlevnadstjänsten. Därför kommer de etiketter för dataanvändning som du använder på målgruppsattributen inte att användas i Journey Optimizer-kampanjer.
 
