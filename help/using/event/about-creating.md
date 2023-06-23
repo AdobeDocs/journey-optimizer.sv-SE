@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: händelse, enhet, skapa, resa
 exl-id: e22e2bc7-0c15-457a-8980-97bea5da7784
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: 1cf62f949c1309b864ccd352059a444fd7bd07f0
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1578'
 ht-degree: 12%
 
 ---
@@ -69,6 +69,8 @@ Här följer de första stegen för att konfigurera en ny händelse:
    >[!NOTE]
    >
    >Den avancerade uttrycksredigeraren är inte tillgänglig när du definierar **[!UICONTROL Event ID condition]**. I den enkla uttrycksredigeraren är inte alla operatorer tillgängliga, de är beroende av datatypen. För en strängtyp av fält kan du till exempel använda &quot;contains&quot; eller &quot;equal to&quot;.
+   >
+   >Om du ändrar schemat med nya uppräkningsvärden efter att du har skapat händelsen måste du följa de här stegen för att tillämpa ändringarna på den befintliga händelsen: avmarkera uppräkningsfältet från händelsefälten, bekräfta valet och markera sedan uppräkningsfältet igen. Det nya uppräkningsvärdet visas nu.
 
 1. Lägg till en namnrymd. Det här steget är valfritt men rekommenderas eftersom du kan lägga till en namnrymd vilket innebär att du kan utnyttja information som lagras i realtidskundprofilen. Denna definierar vilken typ av nyckel händelsen har. Se [det här avsnittet](../event/about-creating.md#select-the-namespace).
 

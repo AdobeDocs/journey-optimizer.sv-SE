@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, segment, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: b0b65ad119b6939a6d65d6f05edc67b2f2b22a31
+source-git-commit: 1cf62f949c1309b864ccd352059a444fd7bd07f0
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 9%
@@ -59,7 +59,7 @@ Klicka på **[!UICONTROL Journeys]**. Det finns två flikar:
 
 ![](assets/journeys-browse.png)
 
-I listan över resor kan du filtrera resorna efter status, typ och version från **[!UICONTROL Status and version filters]**. Typen kan vara: **[!UICONTROL Unitary event]**, **[!UICONTROL Segment qualification]**, **[!UICONTROL Read segment]**, **[!UICONTROL Business event]** eller **[!UICONTROL Burst]**.
+I listan över resor kan du filtrera resorna efter status, typ och version från **[!UICONTROL Status and version filters]**. Typen kan vara: **[!UICONTROL Unitary event]**, **[!UICONTROL Segment qualification]**, **[!UICONTROL Read segment]** eller **[!UICONTROL Business event]**.
 
 Du kan välja att endast visa resor som använder en specifik händelse, fältgrupp eller åtgärd från **[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**. Dessutom finns **[!UICONTROL Publication filters]** gör att du kan välja ett publiceringsdatum eller en användare. Du kan till exempel välja att visa de senaste versionerna av direktresor som publicerades igår. [Läs mer](../building-journeys/using-the-journey-designer.md).
 

@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, i appen
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: 1cf62f949c1309b864ccd352059a444fd7bd07f0
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '886'
 ht-degree: 0%
 
 ---
@@ -115,10 +115,6 @@ Modellen varierar oavsett om du talar om poängsättning eller utbildning. Utbil
 * Poäng - poängsättning för enskilda profiler baserat på den tränade modellen
 
 Den här informationen lagras med användarens profil och hänvisas till vid körning av resan för att tala om för Adobe Journey Optimizer när meddelandet ska skickas.
-
->[!CAUTION]
->
->Den här funktionen är inte kompatibel med sprängningsläge.
 
 ### Aktivera optimering av sändningstid{#activate-send-time-optimization}
 

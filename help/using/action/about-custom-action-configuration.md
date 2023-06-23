@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: 1cf62f949c1309b864ccd352059a444fd7bd07f0
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 4%
@@ -39,8 +39,8 @@ Observera också att de anpassade åtgärdsparametrarna har ett förväntat form
 
 I Journey Optimizer kan du tillämpa policyer för datastyrning och samtycke på anpassade åtgärder för att förhindra att specifika fält exporteras till tredjepartssystem eller utesluta kunder som inte har samtyckt till att ta emot e-post, push eller SMS-kommunikation. Mer information finns på följande sidor:
 
-* [Datastyrning](../action/action.md).
-* [Godkännande](../action/action.md).
+* [Datastyrning](../action/action-privacy.md).
+* [Godkännande](../action/action-privacy.md).
 
 
 ## Konfigurationssteg {#configuration-steps}
@@ -82,9 +82,10 @@ När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICO
 
    * Om URL:en innehåller en dynamisk sökväg anger du bara den statiska delen av URL:en, det vill säga schemat, värden, porten och, eventuellt, en statisk del av sökvägen.
 
-      Exempel: `https://xxx.yyy.com/somethingstatic/`
+     Exempel: `https://xxx.yyy.com/somethingstatic/`
 
-      Du anger den dynamiska sökvägen för URL:en när du lägger till den anpassade åtgärden på en resa. [Läs mer](../building-journeys/using-custom-actions.md).
+     Du anger den dynamiska sökvägen för URL:en när du lägger till den anpassade åtgärden på en resa. [Läs mer](../building-journeys/using-custom-actions.md).
+
    >[!NOTE]
    >
    >Av säkerhetsskäl rekommenderar vi starkt att du använder HTTPS-schemat för URL:en. Vi tillåter inte användning av Adobe-adresser som inte är offentliga och användning av IP-adresser.
