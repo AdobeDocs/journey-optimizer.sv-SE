@@ -11,7 +11,7 @@ hide: true
 hidefromtoc: true
 exl-id: af71d24d-77eb-44df-8216-b0aeaf4c4fa4
 badge: label="Beta" type="Informative"
-source-git-commit: bd805d9a52572e284b5846166e1f799f1f71fc59
+source-git-commit: fdfee4f88b4ed29c5083d1f755f488a43cc38f95
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 1%
@@ -42,7 +42,7 @@ Vad du hittar i den här dokumentationen:
 
 Målgruppsdisposition gör att du kan skapa **arbetsflöden för disposition**, där ni kan kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och utnyttja olika aktiviteter (dela, exkludera..) för att skapa nya målgrupper.
 
-När du är klar **resulterande målgrupper** sparas i Adobe Experience Platform tillsammans med befintliga målgrupper och kan utnyttjas för att nå kunder i [Journey Optimizer-kampanjer](../campaigns/get-started-with-campaigns.md)eller i Adobe [Real-time Customer Data Platform destinationer](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.htmll?lang=sv).
+När du är klar **resulterande målgrupper** sparas i Adobe Experience Platform tillsammans med befintliga målgrupper och kan utnyttjas för att nå kunder i [Journey Optimizer-kampanjer](../campaigns/get-started-with-campaigns.md)eller i Adobe [Real-time Customer Data Platform destinationer](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.htmll?lang=sv){target="_blank"}.
 
 ![](assets/audiences-process.png)
 
