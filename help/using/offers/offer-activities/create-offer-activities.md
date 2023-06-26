@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7a217c97-57e1-4f04-a92c-37632f8dfe91
-source-git-commit: 93e3ed9e1a9a437353b800aee58952b86eab9370
+source-git-commit: 146dda9b180a4767b7041b50382f9a0eac0a0058
 workflow-type: tm+mt
-source-wordcount: '1389'
+source-wordcount: '2100'
 ht-degree: 1%
 
 ---
@@ -76,19 +76,19 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 
    * Om du vill begränsa urvalet av erbjudanden till medlemmarna i ett Experience Platform-segment väljer du **[!UICONTROL Segments]** och sedan klicka **[!UICONTROL Add segments]**.
 
-      ![](../assets/activity_constraint_segment.png)
+     ![](../assets/activity_constraint_segment.png)
 
-      Lägg till ett eller flera segment från den vänstra rutan och kombinera dem med **[!UICONTROL And]** / **[!UICONTROL Or]** logiska operatorer.
+     Lägg till ett eller flera segment från den vänstra rutan och kombinera dem med **[!UICONTROL And]** / **[!UICONTROL Or]** logiska operatorer.
 
-      ![](../assets/activity_constraint_segment2.png)
+     ![](../assets/activity_constraint_segment2.png)
 
-      Lär dig hur du arbetar med segment i [det här avsnittet](../../segment/about-segments.md).
+     Lär dig hur du arbetar med segment i [det här avsnittet](../../segment/about-segments.md).
 
    * Om du vill lägga till en markeringsbegränsning med en beslutsregel använder du kommandot **[!UICONTROL Decision rule]** och välj önskad regel.
 
-      ![](../assets/activity_constraint_rule.png)
+     ![](../assets/activity_constraint_rule.png)
 
-      Lär dig hur du skapar en beslutsregel i [det här avsnittet](../offer-library/creating-decision-rules.md).
+     Lär dig hur du skapar en beslutsregel i [det här avsnittet](../offer-library/creating-decision-rules.md).
 
 1. När du väljer segment eller beslutsregler kan du se information om de uppskattade kvalificerade profilerna. Klicka **[!UICONTROL Refresh]** för att uppdatera data.
 
@@ -128,19 +128,153 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 
    ![](../assets/activity_new-scope.png)
 
+   >[!NOTE]
+   >
+   >När flera beslutsomfattningar läggs till påverkas ordningen för utvärderingskriterier. [Läs mer](#multiple-scopes)
+
 ### Ordning för utvärderingskriterier {#evaluation-criteria-order}
 
 Som beskrivs ovan består utvärderingskriterierna av en samling, behörighetskrav och en rangordningsmetod. Du kan ange den ordningsföljd i vilken du vill att utvärderingskriterierna ska utvärderas, men du kan också kombinera flera utvärderingskriterier så att de utvärderas tillsammans och inte separat.
+
+#### Med ett omfång {#one-scope}
+
+
+I ett och samma beslutsomfång avgör flera kriterier och gruppering av dem prioriteringen av kriterierna och rangordningen av godtagbara erbjudanden. De första kriterierna har den högsta prioriteten och de kriterier som kombineras inom samma&quot;grupp&quot; har samma prioritet.
 
 Du har till exempel två samlingar, en i utvärderingskriterier A och en i utvärderingskriterier B. Begäran är att två erbjudanden ska skickas tillbaka. Låt oss säga att det finns två godtagbara erbjudanden från utvärderingskriterier A och tre giltiga erbjudanden från utvärderingskriterier B.
 
 * Om de två utvärderingskriterierna är **inte kombinerad** och/eller i sekventiell ordning (1 och 2), kommer de två främsta godtagbara anbuden från utvärderingskriterierna att returneras på första raden. Om det inte finns två godtagbara erbjudanden för de första utvärderingskriterierna kommer beslutsmotorn att gå vidare till nästa utvärderingskriterier i följd för att hitta så många erbjudanden som fortfarande behövs, och kommer vid behov att returnera en reservlösning.
 
-   ![](../assets/activity_consecutive-rank-collections.png)
+  ![](../assets/activity_consecutive-rank-collections.png)
 
 * Om de två samlingarna **utvärderas samtidigt** Eftersom det finns två godtagbara erbjudanden från utvärderingskriterierna A och tre godtagbara erbjudanden från utvärderingskriterierna B, kommer samtliga fem erbjudanden att vara samlade på grundval av det värde som fastställs av respektive rangordningsmetod. Två erbjudanden begärs, och därför returneras de två främsta erbjudandena från dessa fem.
 
-   ![](../assets/activity_same-rank-collections.png)
+  ![](../assets/activity_same-rank-collections.png)
+
++++ **Exempel med flera kriterier**
+
+Låt oss nu titta på ett exempel där du har flera kriterier för ett enskilt omfång indelade i olika grupper.
+
+Du definierade tre kriterier. Kriterierna 1 och 2 sammanslås i grupp 1 och Kriterierna 3 är oberoende (grupp 2).
+
+De berättigade anbuden för varje kriterium och deras prioritet (används vid rankningsfunktionens utvärdering) är följande:
+
+* Grupp 1:
+   * Kriterium 1 - (erbjudande 1, erbjudande 2, erbjudande 3) - prioritet 1
+   * Kriterium 2 - (erbjudande 3, erbjudande 4, erbjudande 5) - prioritet 1
+
+* Grupp 2:
+   * Kriterium 3 - (erbjudande 5, erbjudande 6) - Prioritet 0
+
+De högst prioriterade erbjudandena utvärderas först och läggs till i listan med rankade erbjudanden.
+
+**Upprepning 1:**
+
+Kriterium 1 och Villkor 2 utvärderas tillsammans (erbjudande 1, erbjudande 2, erbjudande 3, erbjudande 4, erbjudande 5). Låt oss säga att resultatet är:
+
+Erbjudande 1 - 10 Erbjudande 2 - 20 Erbjudande 3 - 30 från villkor 1, 45 från villkor 2. Det högsta av båda kommer att övervägas, så 45 kommer att beaktas.
+Erbjudande 4 - 40 Erbjudande 5 - 50
+
+Det rankade erbjudandet är nu följande: Erbjudande 5, erbjudande 3, erbjudande 4, erbjudande 2, erbjudande 1.
+
+**Upprepning 2:**
+
+Villkor 3 utvärderas (erbjudande 5, erbjudande 6). Låt oss säga att resultatet är:
+
+* Erbjudande 5 - Kommer inte att utvärderas eftersom det redan finns i resultatet ovan.
+* Erbjudande 6-60
+
+Erbjudandena är nu följande: Erbjudande 5, erbjudande 3, erbjudande 4, erbjudande 2, erbjudande 1, erbjudande 6.
+
++++
+
+#### Med flera omfång {#multiple-scopes}
+
+**Om duplicering är av**
+
+När du lägger till flera beslutsomfattningar i ett beslut, och om duplicering inte tillåts på flera platser, väljs de giltiga erbjudandena i tur och ordning i den ordning som beslutsomfattningarna i begäran gäller.
+
+>[!NOTE]
+>
+>The **[!UICONTROL Allow Duplicates across placements]** -parametern ställs in på placeringsnivån. Om duplicering är inställt på false för en placering i en beslutsbegäran, ärver alla placeringar i begäran inställningen false. [Läs mer om dupliceringsparametern](../offer-library/creating-placements.md)
+
+Låt oss ta ett exempel där du har lagt till två beslutsomfattningar som:
+
+* Omfång 1: Det finns fyra giltiga erbjudanden (Erbjudande 1, Erbjudande 2, Erbjudande 3, Erbjudande 4) och begäran avser två erbjudanden som ska skickas tillbaka.
+* Tillämpningsområde 2: Det finns fyra giltiga erbjudanden (Erbjudande 1, Erbjudande 2, Erbjudande 3, Erbjudande 4) och begäran avser två erbjudanden som ska skickas tillbaka.
+
++++ **Exempel 1**
+
+Markeringen ser ut så här:
+
+1. De två bästa erbjudandena från Scope 1 returneras (Erbjudande 1, Erbjudande 2).
+1. De två återstående giltiga erbjudandena från Scope 2 returneras (Erbjudande 3, Erbjudande 4).
+
++++
+
++++ **Exempel 2**
+
+I det här exemplet har erbjudande 1 nått sin frekvensgräns. [Läs mer om frekvensbegränsning](../offer-library/add-constraints.md#capping)
+
+Markeringen ser ut så här:
+
+1. De två återstående giltiga erbjudandena från Scope 1 returneras (Erbjudande 2, Erbjudande 3).
+1. Det återstående berättigade erbjudandet från Scope 2 kommer att returneras (erbjudande 4).
+
++++
+
++++ **Exempel 3**
+
+I det här exemplet nådde Erbjudande 1 och Erbjudande 3 sin frekvensgräns. [Läs mer om frekvensbegränsning](../offer-library/add-constraints.md#capping)
+
+Markeringen ser ut så här:
+
+1. De två återstående giltiga erbjudandena från Scope 1 returneras (Erbjudande 2, Erbjudande 4).
+1. Det finns inga fler berättigade erbjudanden för Scope 2, så [grunderbjudande](#add-fallback) returneras.
+
++++
+
+**Om duplicering är aktiverat**
+
+När duplicering tillåts på alla ersättningar kan samma erbjudande föreslås flera gånger på olika platser. Om det är aktiverat kommer systemet att överväga samma erbjudande för flera praktik. [Läs mer om dupliceringsparametern](../offer-library/creating-placements.md)
+
+Låt oss ta samma exempel som ovan där du lade till två beslutsomfattningar som:
+
+* Omfång 1: Det finns fyra giltiga erbjudanden (Erbjudande 1, Erbjudande 2, Erbjudande 3, Erbjudande 4) och begäran avser två erbjudanden som ska skickas tillbaka.
+* Tillämpningsområde 2: Det finns fyra giltiga erbjudanden (Erbjudande 1, Erbjudande 2, Erbjudande 3, Erbjudande 4) och begäran avser två erbjudanden som ska skickas tillbaka.
+
++++ **Exempel 1**
+
+Markeringen ser ut så här:
+
+1. De två bästa erbjudandena från Scope 1 returneras (Erbjudande 1, Erbjudande 2).
+1. Samma två bästa erbjudanden från Scope 2 returneras (erbjudande 1, erbjudande 2).
+
++++
+
++++ **Exempel 2**
+
+I det här exemplet har erbjudande 1 nått sin frekvensgräns. [Läs mer om frekvensbegränsning](../offer-library/add-constraints.md#capping)
+
+Markeringen ser ut så här:
+
+1. De två återstående giltiga erbjudandena från Scope 1 returneras (Erbjudande 2, Erbjudande 3).
+
+1. Samma återstående två giltiga erbjudanden från Scope 2 returneras (Erbjudande 2, Erbjudande 3).
+
++++
+
++++ **Exempel 3**
+
+I det här exemplet nådde Erbjudande 1 och Erbjudande 3 sin frekvensgräns. [Läs mer om frekvensbegränsning](../offer-library/add-constraints.md#capping)
+
+Markeringen ser ut så här:
+
+1. De två återstående giltiga erbjudandena från Scope 1 returneras (Erbjudande 2, Erbjudande 4).
+
+1. Samma återstående två giltiga erbjudanden från Scope 2 returneras (Erbjudande 2, Erbjudande 4).
+
++++
 
 ## Lägg till ett reserverbjudande {#add-fallback}
 
@@ -205,11 +339,11 @@ The **[!UICONTROL More actions]** aktiverar de åtgärder som beskrivs nedan.
 
 * **[!UICONTROL Delete]**: tar bort beslutet från listan.
 
-   >[!CAUTION]
-   >
-   >Beslutet och dess innehåll kommer inte längre att vara tillgängliga. Det går inte att ångra den här åtgärden.
-   >
-   >Om beslutet används i ett annat objekt kan det inte tas bort.
+  >[!CAUTION]
+  >
+  >Beslutet och dess innehåll kommer inte längre att vara tillgängliga. Det går inte att ångra den här åtgärden.
+  >
+  >Om beslutet används i ett annat objekt kan det inte tas bort.
 
 * **[!UICONTROL Archive]**: anger beslutsstatus till **[!UICONTROL Archived]**. Beslutet är fortfarande tillgängligt i listan, men du kan inte återställa dess status till **[!UICONTROL Draft]** eller **[!UICONTROL Approved]**. Du kan bara duplicera eller ta bort den.
 
