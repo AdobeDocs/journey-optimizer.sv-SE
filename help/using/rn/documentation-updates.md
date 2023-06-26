@@ -4,9 +4,9 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: b3196a68e64734ba067f672a3acd8b7fd9c15d93
+source-git-commit: ae7585473373e23da02f16c0b43ab0b1b29f356d
 workflow-type: tm+mt
-source-wordcount: '2874'
+source-wordcount: '2947'
 ht-degree: 16%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 16%
 # Dokumentationsuppdateringar {#latest-updates}
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
+
+## Juni 2023 {#june-2023}
+
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version från 23 juni finns utförlig i dokumentationen. [Läs mer](release-notes.md)
+* Ytterligare exempel på ordningen för utvärderingskriterier har lagts till i **Skapa beslut** för att illustrera fall där flera kriterier och flera beslutsomfattningar används. [Läs mer](../offers/offer-activities/create-offer-activities.md#evaluation-criteria-order)
+* Dokumentationen för beslutshantering har klargjorts med en anteckning som anger att åtkomstkontrollen på objektnivå inte är tillgänglig för dynamiska samlingar. [Läs mer](../offers/offer-library/creating-collections.md)
 
 ## Maj 2023 {#may-2023}
 
@@ -95,7 +101,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Lagt till information om inbyggda datauppsättningar. [Läs mer](../data/get-started-datasets.md#access-datasets)
 * Delarna i den globala rapporten och Live-rapporten har förbättrats och omorganiserats. [Läs mer](../reports/global-report.md)
 * En lista över alla rapporteringsmått som är tillgängliga i Adobe Journey Optimizer har lagts till.
-   [Läs mer](../reports/global-report.md#email-and-sms-metrics)
+  [Läs mer](../reports/global-report.md#email-and-sms-metrics)
 * BCC-e-postavsnittet har flyttats till den nya sidan Stöd för arkivering. [Läs mer](../configuration/archiving-support.md)
 
 ## Augusti 2022 {#august-2022}
