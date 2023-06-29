@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 11c1945f8e7f7ca74a2c9ca33ff85fea77bcf5db
+source-git-commit: 4c29bb1fbbf2c67d04fcd73076be456323eddc7d
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '2594'
 ht-degree: 8%
 
 ---
@@ -301,9 +301,11 @@ You can now leverage API call responses in custom actions and orchestrate your j
 
 * På arbetsytan för resan visas nu aktivitets-ID för meddelandeaktiviteter och sluttaggar. Detta förbättrar rapportering och återmarknadsföring.
 * Konfigurationsrutans layout, som visas i åtgärder, datakällor, händelser och resor, har förbättrats.
-* Nya insikter om antalet noder på arbetsytan med skydd för tillväxt: att hålla resorna enkla att läsa, köra QA och felsöka med maximalt antal noder per resa vid 50. [Läs mer](../start/guardrails.md#journeys-guardrails-journeys)
 * När du lägger till en [E-post](../email/create-email.md), [SMS](../sms/create-sms.md) eller [Push](../push/create-push.md) åtgärder på en resa är ytan nu förfylld som standard med den senast använda ytan för den kanalen under den aktuella resan.
 * Nu kan du definiera statiska eller dynamiska frågeparametrar i dina anpassade åtgärder. [Läs mer](../action/about-custom-action-configuration.md#url-configuration)
+* Nya garantimöjligheter för att hantera upplevelsetillväxt som Journeys levererar:
+   * Vi rekommenderar att du begränsar antalet noder till 50 eller färre för att hålla dina resor upprätt, lättlästa, QA och felsökning. Antalet aktiviteter visas i den övre vänstra delen av arbetsytan. [Läs mer](../start/guardrails.md#journeys-guardrails-journeys)
+   * När du utvecklar och startar resor kommer vi att meddela dig när du närmar dig milstolpen på 100 resor i realtid. Om dina planer kräver mer än 100 resor i taget kan du skapa en supportanmälan efter att du har fått meddelandet så hjälper vi dig. [Läs mer](../start/guardrails.md#journeys-guardrails-journeys)
 
 **Rapportering**
 
