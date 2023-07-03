@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 9910c748cf66828ccbd314757c252b9093d2af75
+source-git-commit: aac7c84221a68bb8258738db2c8d616db3332edf
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1384'
 ht-degree: 33%
 
 ---
@@ -363,7 +363,7 @@ ht-degree: 33%
       + [Arbeta med beslutsledningshändelser](using/offers/reports/get-started-events.md)
       + [Åtkomst till XDM-fält för händelser](using/offers/reports/xdm-fields.md)
    + Exportera din erbjudandekatalog {#export-catalog}
-      + [Kom igång med export av din erbjudandekatalog ](using/offers/export-catalog/get-started-export.md)
+      + [Kom igång med export av din erbjudandekatalog](using/offers/export-catalog/get-started-export.md)
       + [Åtkomst till den exporterade erbjudandekatalogen](using/offers/export-catalog/access-dataset.md)
       + [Datauppsättning med personaliserade erbjudanden](using/offers/export-catalog/export-offers.md)
       + [Datauppsättning med beslut](using/offers/export-catalog/export-decisions.md)
@@ -426,7 +426,7 @@ ht-degree: 33%
       + [Kom igång med datauppsättningar](using/data/get-started-datasets.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman > ](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Frågor](using/data/get-started-queries.md)
 + Konfiguration{#configuration}
    + [Kom igång med Journey Optimizer](using/configuration/get-started-configuration.md)
@@ -488,3 +488,4 @@ ht-degree: 33%
       + [Hantera avanmälan](using/privacy/opt-out.md)
       + [Arbeta med policyer för samtycke](using/action/consent.md)
    + [Datastyrning](using/action/action-privacy.md)
+   + [Konfigurera och hantera kundhanterade nycklar](using/privacy/cmk.md)
