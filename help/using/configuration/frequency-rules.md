@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: 74db87267c2bc4a1aabfc506adaa29758467dd81
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '949'
 ht-degree: 1%
 
 ---
@@ -20,9 +20,7 @@ ht-degree: 1%
 
 [!DNL Journey Optimizer] Med kan du styra hur ofta användare ska få ett meddelande eller delta i en resa genom att ställa in flerkanalsregler som automatiskt utesluter överbegärda profiler från meddelanden och åtgärder.
 
-Ni vill till exempel inte att ert varumärke ska skicka mer än tre marknadsföringsmeddelanden per månad till sina kunder.
-
-För att göra detta kan du använda en frekvensregel som begränsar antalet meddelanden som skickas baserat på en eller flera kanaler under en månadskalenderperiod.
+En regel för ett varumärke kan till exempel inte vara att skicka mer än tre marknadsföringsmeddelanden per månad till sina kunder. För att göra detta kan du använda en frekvensregel som begränsar antalet meddelanden som skickas baserat på en eller flera kanaler under en månadskalenderperiod.
 
 >[!NOTE]
 >
