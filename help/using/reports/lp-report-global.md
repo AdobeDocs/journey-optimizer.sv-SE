@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e88cf8ad-986a-4e4c-8921-d406c6876031
-source-git-commit: 0ec122bbf134c41f95755a3b6f08eb7ef68506df
+source-git-commit: cd2fcd36d0f742a1bbe726217b884ae1bec26d82
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 >title="Global rapport för landningssida"
 >abstract="Med den globala rapporten för landningssidan kan du mäta effekten av dina landningssidor under en vald tidsperiod. Din rapport är uppdelad i olika widgetar som beskriver hur landningssidan fungerar och vilka fel den innehåller. Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort."
 
-Landningssidan **[!UICONTROL Global report]** rapporten innehåller information om landningssidornas inverkan under en vald tidsperiod. Information om hur du mäter landningssiduppgifter under de senaste 24 timmarna finns i [Landningssidans Live-rapport](lp-report-live.md).
+Globala rapporter, som du kommer åt från fliken All time, visar händelser som inträffat för minst två timmar sedan och täcker händelser under en vald tidsperiod. Live-rapporter fokuserar på händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten.
 
 Välj **[!UICONTROL Report]** på den avancerade menyn på den valda landningssidan.
 

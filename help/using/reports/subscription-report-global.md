@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 4509c1e9-02e6-4c00-83ba-0b5512e70c41
-source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
+source-git-commit: cd2fcd36d0f742a1bbe726217b884ae1bec26d82
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 >title="Global prenumerationsrapport"
 >abstract="Med den globala prenumerationsrapporten kan du mäta och visualisera dina prenumeranters aktivitet under en viss tidsperiod. Din rapport är uppdelad i olika widgetar som detaljerar dina prenumerationer och avbeställningar. Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort."
 
-Prenumerationen **[!UICONTROL Global report]** visar information om din prenumerations aktivitet under en vald tidsperiod. Om du bara vill mäta dina prenumerationer under de senaste 24 timmarna kan du läsa [Direktprenumerationsrapport](subscription-report-live.md).
+Globala rapporter, som du kommer åt från fliken All time, visar händelser som inträffat för minst två timmar sedan och täcker händelser under en vald tidsperiod. Live-rapporter fokuserar på händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten.
 
 Klicka på **[!UICONTROL Report]** ikonen för den valda prenumerationslistan.
 
