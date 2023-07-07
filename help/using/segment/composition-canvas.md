@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 exl-id: 3eb9466e-9d88-4470-a22f-5e24a29923ae
 badge: label="Beta" type="Informative"
-source-git-commit: 66cf0332c62a9c3b034398c3a6046cbcec622d40
+source-git-commit: 715674d48d01526b5e6a328ed3951357edc2b73b
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1330'
 ht-degree: 0%
 
 ---
@@ -116,22 +116,22 @@ The **[!UICONTROL Exclude]** kan du utesluta profiler från din komposition. Det
 
 * **[!UICONTROL Exclude Audience]**: Uteslut profiler som tillhör en befintlig målgrupp.
 
-   Klicka på **[!UICONTROL Add audience]** och sedan välja den målgrupp som ska uteslutas.
+  Klicka på **[!UICONTROL Add audience]** och sedan välja den målgrupp som ska uteslutas.
 
-   ![](assets/audiences-exclude-audience.png)
+  ![](assets/audiences-exclude-audience.png)
 
 * **[!UICONTROL Exclude using attribute]**: Uteslut profiler baserade på ett specifikt attribut.
 
-   Välj det attribut som ska slås upp och ange sedan vilket värde som ska uteslutas. I det här exemplet utesluts vi från dispositionsprofiler vars hemadress är i Japan.
+  Välj det attribut som ska slås upp och ange sedan vilket värde som ska uteslutas. I det här exemplet utesluts vi från dispositionsprofiler vars hemadress är i Japan.
 
-   ![](assets/audiences-exclude-attribute.png)
+  ![](assets/audiences-exclude-attribute.png)
 
 ### Förfina {#enrich}
 
 >[!CONTEXTUALHELP]
 >id="ajo_ao_enrich"
 >title="Berika aktivitet"
->abstract="Använd aktiviteten Enrich för att exkludera profiler som tillhör en befintlig målgrupp. Med attributtypen Uteslut med kan du exkludera profiler baserat på ett specifikt attribut."
+>abstract="Använd aktiviteten Enrich för att berika publiken med ytterligare attribut från Adobe Experience Platform datamängder. Du kan t.ex. lägga till information om den köpta produkten, som namn, pris eller tillverkare-ID, och använda dessa uppgifter för att anpassa de leveranser som skickas till målgruppen."
 
 >[!CONTEXTUALHELP]
 >id="ajo_ao_enrich_dataset"
@@ -220,15 +220,15 @@ Det finns två typer av delade åtgärder:
 
 * **[!UICONTROL Percent split]**: dela upp profiler slumpmässigt i två eller flera banor. Du kan till exempel dela upp profilerna i två olika banor med 50 % vardera. <!--and add an additional path for control group.-->
 
-   ![](assets/audiences-split-percentage.png)
+  ![](assets/audiences-split-percentage.png)
 
 * **[!UICONTROL Attribute split]**: delade profiler baserade på ett specifikt attribut. I det här exemplet delar vi upp profiler baserat på deras rumstypsinställningar.
 
-   ![](assets/audiences-split.png)
+  ![](assets/audiences-split.png)
 
-   >[!NOTE]
-   >
-   >The **[!UICONTROL Other profiles]** kan du skapa ytterligare en sökväg med de återstående profilerna som inte matchar något av villkoren som anges i de andra sökvägarna.
+  >[!NOTE]
+  >
+  >The **[!UICONTROL Other profiles]** kan du skapa ytterligare en sökväg med de återstående profilerna som inte matchar något av villkoren som anges i de andra sökvägarna.
 
 ## Spara era målgrupper {#save}
 
