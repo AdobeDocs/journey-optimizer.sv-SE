@@ -9,10 +9,10 @@ role: Admin, Architect, Developer
 level: Experienced
 keywords: sandlådor, virtuella, miljöer, organisation, plattform
 exl-id: 14f80d5d-0840-4b79-9922-6d557a7e1247
-source-git-commit: 16738786e4ebeef3417fd0f6e5be741b348c2744
+source-git-commit: 6a81760170e53ed9c34142f3b0b367bd62c3464c
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 22%
+source-wordcount: '344'
+ht-degree: 15%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 22%
 ## Använda sandlådor {#using-sandbox}
 
 Med [!DNL Journey Optimizer] kan du partitionera instansen i separerade virtuella miljöer som kallas för sandlådor.
-Sandlådor tilldelas via produktprofiler i Admin Console. [Lär dig hur du tilldelar sandlådor](permissions.md#create-product-profile).
+Sandlådor tilldelas via roller i Behörigheter. [Lär dig hur du tilldelar sandlådor](permissions.md#create-product-profile).
 
 [!DNL Journey Optimizer] speglar Adobe Experience Platform-sandlådor som har skapats för en viss organisation.
 Sandlådorna i Adobe Experience Platform kan skapas eller återställas från din instans i Adobe Experience Platform. [Läs mer i användarhandboken för Sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html){target="_blank"}.
@@ -38,27 +38,21 @@ Du hittar kontrollen för sandlådeväljaren högst upp till höger på skärmen
 >
 > Hantering av sandlådor kan endast utföras av en **[!UICONTROL Product]** eller **[!UICONTROL System]** administratör. Mer information finns i [Dokumentation till Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/admin-roles.ug.html){target="_blank"}.
 
-Du kan välja att tilldela olika sandlådor till färdiga eller anpassade **[!UICONTROL Product profiles]**.
+Du kan välja att tilldela olika sandlådor till färdiga eller anpassade **[!UICONTROL Roles]**.
 
 Så här tilldelar du sandlådor:
 
-1. I [!DNL Admin Console], från **[!UICONTROL Products]** väljer du **[!UICONTROL Adobe Experience Platform Apps]** produkt.
-
-1. Välj en **[!UICONTROL Product profile]**.  
+1. I [!DNL Permissions], från **[!UICONTROL Roles]** -flik, välja en **[!UICONTROL Role]**.
 
    ![](assets/sandbox_1.png)
 
-1. Klicka på fliken **[!UICONTROL Permissions]**.  
+1. Klicka på **[!UICONTROL Edit]**.
 
-1. Välj **[!UICONTROL Sandboxes]** funktioner.
-
-   ![](assets/sandbox_2.png)
-
-1. Klicka på plusikonen (+) i **[!UICONTROL Available Permissions Items]** för att tilldela sandlådor till profilen. [Läs mer om sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=sv){target="_blank"}.
+1. Från **[!UICONTROL Sandboxes]** i den nedrullningsbara resurslistan väljer du den sandlåda som ska tilldelas din roll.
 
    ![](assets/sandbox_3.png)
 
-1. Vid behov, under **[!UICONTROL Included Permission Items]** klickar du på X-ikonen bredvid för att ta bort sandlådeåtkomst till **[!UICONTROL Product profile]**.
+1. Om det behövs klickar du på X-ikonen bredvid för att ta bort sandlådeåtkomst till **[!UICONTROL Role]**.
 
    ![](assets/sandbox_4.png)
 

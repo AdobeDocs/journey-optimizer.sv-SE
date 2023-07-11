@@ -1,46 +1,44 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Hantera användare och produktprofiler
-description: Lär dig hantera användare och produktprofiler
+title: Hantera användare och roller
+description: Lär dig hantera användare och roller
 exl-id: 85fd386a-45fa-4f9a-89d1-cecc0749b90d
 feature: Access Management
 topic: Administration
 role: Admin
 level: Intermediate
 keywords: produkt, profiler, sandlåda
-source-git-commit: 16738786e4ebeef3417fd0f6e5be741b348c2744
+source-git-commit: 6a81760170e53ed9c34142f3b0b367bd62c3464c
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 11%
+source-wordcount: '732'
+ht-degree: 2%
 
 ---
 
-# Hantera användare och produktprofiler {#manage-permissions}
+# Hantera användare och roller {#manage-permissions}
 
 >[!IMPORTANT]
 >
 > Var och en av de procedurer som beskrivs nedan kan endast utföras av en **[!UICONTROL Product]** eller **[!UICONTROL System]** administratör. Mer information finns i [Dokumentation till Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/admin-roles.ug.html).
 
-**[!UICONTROL Product profiles]** är uppsättningar användare som delar samma behörigheter och sandlådor i organisationen.
+**[!UICONTROL Roles]** refererar till en samling användare som delar samma behörigheter och sandlådor. Med de här rollerna kan du enkelt hantera åtkomst och behörigheter för olika användargrupper i organisationen.
 
-The [!DNL Journey Optimizer] kan du välja mellan olika färdiga **[!UICONTROL Product profiles]** med olika behörighetsnivåer att tilldela användarna. Mer information om **[!UICONTROL Product profiles]**, se [page](ootb-product-profiles.md).
+Med [!DNL Journey Optimizer] kan du välja mellan ett antal befintliga **[!UICONTROL Roles]**, vart och ett med olika behörighetsnivåer, att tilldela användarna. Mer information om **[!UICONTROL Roles]**, se [page](ootb-product-profiles.md).
 
-Varje användare som tillhör en **[!UICONTROL Product profiles]** har rätt till de program och tjänster i Adobe som ingår i produkten.
+När en användare tillhör en **[!UICONTROL Role]** får de tillgång till Adobe program och tjänster som ingår i produkten.
 
-Du kan också skapa egna **[!UICONTROL Product profiles]** om du vill finjustera användarnas åtkomst till vissa funktioner eller objekt i gränssnittet.
+Om de befintliga rollerna inte uppfyller organisationens specifika behov kan du även skapa anpassade **[!UICONTROL Roles]** för att finjustera åtkomsten till vissa funktioner eller objekt i gränssnittet. På så sätt kan du se till att alla användare bara har tillgång till de resurser och verktyg de behöver för att kunna utföra sina uppgifter effektivt.
 
-## Tilldela en produktprofil {#assigning-product-profile}
+## Tilldela en roll {#assigning-role}
 
-Du kan välja att tilldela en färdig eller anpassad **[!UICONTROL Product profile]** för användarna.
+Du kan välja att tilldela en färdig eller anpassad **[!UICONTROL Role]** för användarna.
 
-Listan med alla färdiga produktprofiler med tilldelade behörigheter finns i [Inbyggda produktprofiler](ootb-product-profiles.md) -avsnitt.
+Listan över alla färdiga roller med tilldelade behörigheter finns i [Inbyggda roller](ootb-product-profiles.md) -avsnitt.
 
-Tilldela en **[!UICONTROL Product profile]**:
+Tilldela en **[!UICONTROL Role]**:
 
-1. I [!DNL Admin Console], från **[!UICONTROL Products]** väljer du **[!UICONTROL Experience Cloud - Platform powered applications]** produkt.
-
-1. Välj en **[!UICONTROL Product profile]**.  
+1. Så här tilldelar du en roll till en användare i [!DNL Permissions] -produkt, navigera till **[!UICONTROL Roles]** och välj önskad roll.
 
    ![](assets/do-not-localize/access_control_2.png)
 
@@ -48,102 +46,83 @@ Tilldela en **[!UICONTROL Product profile]**:
 
    ![](assets/do-not-localize/access_control_3.png)
 
-1. Skriv in användarens namn eller e-postadress och markera användaren.
+1. Ange användarens namn eller e-postadress eller välj användaren i listan och klicka på **[!UICONTROL Save]**.
 
    Om användaren inte redan har skapats i [!DNL Admin Console], se [Lägga till användardokumentation](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-users-individually.ug.html#add-users).
 
    ![](assets/do-not-localize/access_control_4.png)
 
-1. Utför samma steg som ovan för att lägga till andra användare i **[!UICONTROL Product profile]**. Klicka sedan på **[!UICONTROL Save]**.
-
 Användaren får sedan ett e-postmeddelande som omdirigerar denne till din instans i .
 
 Mer information om användarhantering finns i [Admin Console dokumentation](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-users-individually.ug.html).
 
-När du får åtkomst till instansen visas en specifik vy beroende på de tilldelade behörigheterna i **[!UICONTROL Product profile]**. Om användaren inte har rätt åtkomst till en funktion visas följande meddelande:
+När du får åtkomst till instansen visas en specifik vy beroende på de tilldelade behörigheterna i **[!UICONTROL Role]**. Om användaren inte har rätt åtkomst till en funktion visas följande meddelande:
 
 `You don't have permission to access this feature. Permission needed: XX.`
 
-## Redigera en befintlig produktprofil {#edit-product-profile}
+## Redigera en befintlig roll {#edit-product-profile}
 
-För färdiga eller anpassade **[!UICONTROL Product profiles]** kan du när som helst bestämma om du vill lägga till eller ta bort behörigheter.
+För färdiga eller anpassade **[!UICONTROL Roles]** kan du när som helst bestämma om du vill lägga till eller ta bort behörigheter.
 
-I det här exemplet vill vi lägga till **[!UICONTROL Permissions]** i relation till **[!UICONTROL Journeys]** funktioner för användare som har tilldelats visningsprogrammet för resan **[!UICONTROL Product profile]**. Användarna kan sedan publicera resor.
+I det här exemplet vill vi lägga till **[!UICONTROL Permissions]** i relation till **[!UICONTROL Journeys]** resurs för användare som har tilldelats visningsprogrammet för resan **[!UICONTROL Role]**. Användarna kan sedan publicera resor.
 
-Observera att om du ändrar ett ej ifyllt program eller anpassat **[!UICONTROL Product profile]** påverkar det alla användare som tilldelas detta **[!UICONTROL Product profile]**.
+Observera att om du ändrar ett ej ifyllt program eller anpassat **[!UICONTROL Role]** påverkar det alla användare som tilldelas detta **[!UICONTROL Role]**.
 
-1. I [!DNL Admin Console], från **[!UICONTROL Products]** väljer du **[!UICONTROL Experience Cloud - Platform powered applications]** produkt.
-
-1. Välj visningsprogrammet för resan **[!UICONTROL Product profile]**.
-
-1. Klicka på fliken **[!UICONTROL Permissions]**.  
-
-   The **[!UICONTROL Permissions]** -fliken visar en lista med funktioner som gäller för **[!UICONTROL Experience Cloud - Platform powered applications]** produkt.
-
+1. Så här tilldelar du en roll till en användare i [!DNL Permissions] -produkt, navigera till **[!UICONTROL Roles]** och välj önskad roll här i resevisningsprogrammet **[!UICONTROL Role]**.
    ![](assets/do-not-localize/access_control_5.png)
 
-1. Välj **[!UICONTROL Journeys]** funktioner.
+1. Från **[!UICONTROL Role]** kontrollpanel, klicka **[!UICONTROL Edit]**.
 
    ![](assets/do-not-localize/access_control_6.png)
 
-1. Från **[!UICONTROL Available Permission Items]** väljer du de behörigheter du vill tilldela **[!UICONTROL Product profile]** genom att klicka på plusikonen (+).
+1. The **[!UICONTROL Resources]** visas en lista med de resurser som gäller för **[!UICONTROL Experience Cloud - Platform powered applications]** produkt. Dra och släpp resurser för att tilldela behörighet.
 
-   Här lägger vi till **[!UICONTROL Publish Journeys]** behörighet.
+   Från **[!UICONTROL Journeys]** nedrullningsbar resursmeny, väljer vi här för Publish-resan **[!UICONTROL Permission]**.
 
-1. Klicka vid behov på X-ikonen under **[!UICONTROL Included Permission Items]** bredvid respektive behörighet till din produktprofil.
+   ![](assets/do-not-localize/access_control_14.png)
+
+1. Vid behov, under **[!UICONTROL Included Permission Items]** klickar du på X-ikonen bredvid för att ta bort behörigheter eller resurser till din roll.
 
 1. Klicka på **[!UICONTROL Save]** när du är klar.
 
-Om det behövs kan du även skapa en ny produktprofil med specifika behörigheter. Mer information finns i [Skapa en produktprofil](#create-product-profile).
+Om det behövs kan du även skapa en ny roll med specifika behörigheter. Mer information finns i [Skapa en ny roll](#create-product-profile).
 
-## Skapa en produktprofil {#create-product-profile}
+## Skapa en ny roll {#create-product-profile}
 
-[!DNL Journey Optimizer] kan du skapa egna **[!UICONTROL Product profiles]** och tilldela en uppsättning behörigheter och sandlådor till användarna. Med **[!UICONTROL Product profiles]** kan du tillåta eller neka åtkomst till vissa funktioner eller objekt i gränssnittet.
+[!DNL Journey Optimizer] kan du skapa egna **[!UICONTROL Roles]** och tilldela en uppsättning behörigheter och sandlådor till användarna. Med **[!UICONTROL Roles]** kan du tillåta eller neka åtkomst till vissa funktioner eller objekt i gränssnittet.
 
 Mer information om hur du skapar och hanterar sandlådor finns i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html){target="_blank"}.
 
-I det här exemplet skapar vi en produktprofil med namnet **Skrivskyddade resor** där vi ger läsbehörighet till resefunktionen. Användare kommer endast att kunna komma åt och visa resor och kommer inte att kunna komma åt andra funktioner som **[!DNL  Decision management]** in [!DNL Journey Optimizer].
+I det här exemplet skapar vi en roll med namnet **Skrivskyddade resor** där vi ger läsbehörighet till resefunktionen. Användare kommer endast att kunna komma åt och visa resor och kommer inte att kunna komma åt andra funktioner som **[!DNL  Decision management]** in [!DNL Journey Optimizer].
 
-För att skapa **Skrivskyddade resor** **[!UICONTROL product profiles]**:
+För att skapa **Skrivskyddade resor** **[!UICONTROL Role]**:
 
-1. Öppna [!DNL Admin Console].
-
-1. Från **[!UICONTROL Products]** väljer du **[!UICONTROL Experience Cloud - Platform powered applications]** produkt.
-
-1. Klicka på **[!UICONTROL New Profile]**.
+1. Så här tilldelar du en roll till en användare i [!DNL Permissions] -produkt, navigera till **[!UICONTROL Roles]** och klicka **[!UICONTROL Create role]**.
 
    ![](assets/do-not-localize/access_control_9.png)
 
-1. Lägg till en **[!UICONTROL Product Profile Name]**, **[!UICONTROL Display Name]** och **[!UICONTROL Description]** för dina nya **[!UICONTROL product profiles]**.
+1. Lägg till en **[!UICONTROL Name]** och **[!UICONTROL Description]** för dina nya **[!UICONTROL Role]**. Klicka sedan på **[!UICONTROL Confirm]**.
 
    ![](assets/do-not-localize/access_control_10.png)
 
-1. I kategorin **[!UICONTROL Notifications]** väljer du om användare ska meddelas via e-post när de läggs till i eller tas bort från den här produktprofilen.
-
-1. När du är klar klickar du på **[!UICONTROL Save]** och välja dina nya **[!UICONTROL product profiles]**.
-
-1. Om du vill lägga till behörigheter för användare så att de får åtkomst till olika funktioner väljer du **[!UICONTROL Permissions]** -fliken.
-
-1. Välj mellan olika funktioner som **[!DNL Journeys]**, **[!DNL Segments]** eller **[!DNL Decision management]** finns i [!DNL Journey Optimizer] som visas på den vänstra menyn.
-
-   Här väljer vi **[!UICONTROL Journeys]** funktioner.
-
-   ![](assets/do-not-localize/access_control_11.png)
-
-1. Från **[!UICONTROL Available Permission Items]** väljer du de behörigheter du vill tilldela **[!UICONTROL Product profile]** genom att klicka på plusikonen (+).
-
-   Här väljer vi **[!DNL View journeys]** och **[!DNL View journeys event, data sources, actions]**.
-
-   ![](assets/do-not-localize/access_control_12.png)
-
-1. Välj **[!UICONTROL Sandbox access]** möjlighet att välja vilka sandlådor som ska tilldelas **[!UICONTROL Product profile]**.
+1. Från **[!UICONTROL Sandbox]** nedrullningsbar resurs, välj vilken eller vilka sandlådor som ska tilldelas din **[!UICONTROL Role]**. [Läs mer om sandlådor](sandboxes.md).
 
    ![](assets/do-not-localize/access_control_13.png)
 
-1. Klicka på plusikonen (+) i **[!UICONTROL Available Permissions Items]** för att tilldela sandlådor till profilen. [Läs mer om sandlådor](sandboxes.md).
+1. Välj mellan olika resurser som **[!DNL Journeys]**, **[!DNL Segments]** eller **[!DNL Decision management]** finns i [!DNL Journey Optimizer] som visas på den vänstra menyn.
+
+   Här väljer vi **[!UICONTROL Journeys]** resurs.
+
+   ![](assets/do-not-localize/access_control_11.png)
+
+1. Från **[!UICONTROL Journeys]** väljer du de behörigheter du vill tilldela **[!UICONTROL Role]**.
+
+   Här väljer vi **[!DNL View journeys]**, **[!DNL View journeys report]**  och **[!DNL View journeys event, data sources, actions]**.
+
+   ![](assets/do-not-localize/access_control_12.png)
 
 1. Klicka på **[!UICONTROL Save]** när du är klar.
 
-Dina **[!UICONTROL Product profile]** har nu skapats och konfigurerats. Du måste nu tilldela den till användare.
+Dina **[!UICONTROL Role]** har nu skapats och konfigurerats. Du måste nu tilldela den till användare.
 
-Mer information om att skapa och hantera produktprofiler finns i [Admin Console dokumentation](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-product-profiles.ug.html).
+Mer information om att skapa och hantera roller finns i [Admin Console dokumentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/roles.html?lang=en).

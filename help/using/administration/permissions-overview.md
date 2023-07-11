@@ -9,10 +9,10 @@ role: Admin, Architect
 level: Intermediate
 keywords: behörigheter, rättigheter, begränsningar, åtkomst, sandlåda
 exl-id: b8e266b1-d8eb-4c77-9341-9761b82609b0
-source-git-commit: d99feb7b6b11f9bba4f4164e7febecfca1d7da3b
+source-git-commit: 6a81760170e53ed9c34142f3b0b367bd62c3464c
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 17%
+source-wordcount: '197'
+ht-degree: 10%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 17%
 
 Användarhantering i [!DNL Journey Optimizer] bygger på tre koncept:
 
-* **[!UICONTROL Product profile]**: En uppsättning enhetsbehörigheter som ger användarna tillgång till vissa funktioner eller objekt i gränssnittet. Se [Färdiga produktprofiler](ootb-product-profiles.md) section
+* **[!UICONTROL Role]**: En uppsättning enhetsbehörigheter som ger användarna tillgång till vissa funktioner eller objekt i gränssnittet. Se [Färdiga roller](ootb-product-profiles.md) -avsnitt.
 
-* **[!UICONTROL Permissions]**: Enhetsrättigheter som gör att du kan definiera de behörigheter som tilldelats **[!UICONTROL Product profile]**. Varje tillstånd samlas under funktioner, t.ex. Resor eller Erbjudanden, som representerar de olika funktionerna eller objekten i [!DNL Journey Optimizer]. Se [Behörighetsnivåer](high-low-permissions.md) -avsnitt.
+* **[!UICONTROL Permissions]**: Enhetsrättigheter som gör att du kan definiera de behörigheter som tilldelats **[!UICONTROL Roles]**. Varje tillstånd samlas under resurser, t.ex. Resor eller Erbjudanden, som representerar olika funktioner eller objekt i [!DNL Journey Optimizer]. Se [Behörighetsnivåer](high-low-permissions.md) -avsnitt.
 
-* **[!UICONTROL Sandbox]**: Virtuella sandlådor som partitionerar instanser i separata, isolerade virtuella miljöer. Se [Använda sandlådor](sandboxes.md)
+* **[!UICONTROL Sandbox]**: Virtuella sandlådor som partitionerar instanser i separata, isolerade virtuella miljöer. Se [Använda sandlådor](sandboxes.md).
 
 Varje koncept kan hanteras av **[!UICONTROL Product administrators]** som har tillgång till Admin Console. [Läs mer om Adobe Admin Console](https://helpx.adobe.com/se/enterprise/managing/user-guide.html).
 
@@ -36,6 +36,6 @@ Varje koncept kan hanteras av **[!UICONTROL Product administrators]** som har ti
 
 ## Instruktionsvideo{#video}
 
-Läs mer om åtkomstkontrollssystem och anpassade produktprofiler i Adobe Journey Optimizer. Lär dig hur du hanterar produktprofiler och behörigheter och hur du lägger till och hanterar användare.
+Läs mer om åtkomstkontrollssystem och anpassade profiler i Adobe Journey Optimizer. Lär dig hur du hanterar roller och behörigheter och hur du lägger till och hanterar användare.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333998?quality=12)

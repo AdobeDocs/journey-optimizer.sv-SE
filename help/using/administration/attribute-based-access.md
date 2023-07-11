@@ -9,18 +9,14 @@ role: Admin,Leader
 level: Intermediate
 keywords: abac, attribute, authorized, data, access, sensitive, assets
 exl-id: 162b0848-313a-447e-9237-5a6dbc8102c6
-source-git-commit: 59499dec7d15dd4565c7910d7b454d82243ff011
+source-git-commit: 6a81760170e53ed9c34142f3b0b367bd62c3464c
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---
 
 # Attributbaserad åtkomstkontroll {#attribute-based-access}
-
->[!IMPORTANT]
->
->Attributbaserad åtkomstkontroll är för närvarande begränsad till vissa kunder och kommer att användas i alla miljöer i en framtida version.
 
 Med attributbaserad åtkomstkontroll (ABAC) kan du definiera behörigheter för att hantera dataåtkomst för specifika team eller grupper av användare. Syftet är att skydda känsliga digitala resurser mot obehöriga användare, vilket ger ytterligare skydd för personuppgifter.
 

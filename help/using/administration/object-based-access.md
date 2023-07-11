@@ -9,9 +9,9 @@ role: Admin, Developer, Architect
 level: Experienced
 keywords: objekt, nivå, åtkomst, kontroll, etiketter, plats, auktorisering
 exl-id: 02ccdd95-426c-4b61-9834-7f2dcd5abdbb
-source-git-commit: 9cb6164f029fa0bd198a51ff934b272ae09ac3c3
+source-git-commit: 6a81760170e53ed9c34142f3b0b367bd62c3464c
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '404'
 ht-degree: 2%
 
 ---
@@ -22,10 +22,6 @@ ht-degree: 2%
 >id="ajo_olac_manage_access"
 >title="Åtkomstkontroll på objektnivå"
 >abstract="Om du använder etiketter som du inte har åtkomst till kommer åtkomsten till objektet att återkallas."
-
->[!IMPORTANT]
->
->Åtkomstkontrollen på objektnivå är för närvarande begränsad till utvalda kunder och kommer att distribueras till alla miljöer i en framtida version.
 
 Med åtkomstkontrollen på objektnivå (OLAC) kan du definiera behörigheter för att hantera dataåtkomst till ett urval av objekt:
 
