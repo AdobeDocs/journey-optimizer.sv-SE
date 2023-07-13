@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: c67c7b7c6a8af1ea24c66df261ddd390e55675f7
 workflow-type: tm+mt
 source-wordcount: '1378'
 ht-degree: 33%
@@ -282,15 +282,15 @@ ht-degree: 33%
    + Målgrupper {#audiences}
       + [Kom igång med målgrupper](using/audience/about-audiences.md)
       + [Skapa segmentdefinitioner](using/audience/creating-a-segment-definition.md)
+      + Disponera målgrupper {#audience-orchestration}
+         + [Kom igång med målgruppsmaterial](using/audience/get-started-audience-orchestration.md)
+         + [Skapa kompositionsarbetsflöden](using/audience/create-compositions.md)
+         + [Arbeta med arbetsytan](using/audience/composition-canvas.md)
+         + [Få åtkomst till och hantera målgrupper](using/audience/access-audiences.md)
    + Profiler{#profiles}
       + [Kom igång med profiler](using/audience/get-started-profiles.md)
       + [Skapa testprofiler](using/audience/creating-test-profiles.md)
    + [Identiteter](using/audience/get-started-identity.md)
-   + Disponera målgrupper {#audience-orchestration}
-      + [Kom igång med målgruppsmaterial](using/audience/get-started-audience-orchestration.md)
-      + [Skapa kompositionsarbetsflöden](using/audience/create-compositions.md)
-      + [Arbeta med arbetsytan](using/audience/composition-canvas.md)
-      + [Få åtkomst till och hantera målgrupper](using/audience/access-audiences.md)
    + [Licensanvändning](using/audience/license-usage.md)
 + Spåra och övervaka {#reporting}
    + Live-rapport {#live-report}
