@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 exl-id: 3eb9466e-9d88-4470-a22f-5e24a29923ae
 badge: label="Beta" type="Informative"
-source-git-commit: 4d196e6485b55fe63bd8da2c7cdfc454a26f80f3
+source-git-commit: 6f6fd6c032be7f86dca239d43732f3ab37223093
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1302'
 ht-degree: 0%
 
 ---
@@ -138,8 +138,6 @@ The **[!UICONTROL Exclude]** kan du utesluta profiler från din komposition. Det
 The **[!UICONTROL Enrich]** Med hjälp av aktivitet kan ni berika er målgrupp med ytterligare attribut från Adobe Experience Platform datamängder. Du kan t.ex. lägga till information om den köpta produkten, som namn, pris eller tillverkare-ID, och använda dessa uppgifter för att anpassa de leveranser som skickas till målgruppen.
 
 >[!IMPORTANT]
->
->Anrikning finns för **[!UICONOTROL Adobe Journey Optimizer]** endast användare.
 >
 >För närvarande sprids inte etiketter på datauppsättningen, antingen på datauppsättningsnivå eller på fältnivå, till den nya målgruppen. Detta kan påverka åtkomstkontroll och/eller datastyrning för den slutliga målgruppen. Därför bör du endast använda testdata när du komponerar målgrupper.
 
