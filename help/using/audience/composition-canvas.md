@@ -7,29 +7,16 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
-hidefromtoc: true
 exl-id: 3eb9466e-9d88-4470-a22f-5e24a29923ae
 badge: label="Beta" type="Informative"
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 4d196e6485b55fe63bd8da2c7cdfc454a26f80f3
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1311'
 ht-degree: 0%
 
 ---
 
 # Arbeta med arbetsytan {#composition-canvas}
-
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här dokumentationen:
-
-* [Kom igång med målgruppsmaterial](get-started-audience-orchestration.md)
-* [Skapa ditt första dispositionsarbetsflöde](create-compositions.md)
-* **[Arbeta med arbetsytan](composition-canvas.md)**
-* [Få åtkomst till och hantera målgrupper](access-audiences.md)
-
->[!ENDSHADEBOX]
 
 Målgruppsdisposition är en visuell arbetsyta som gör att du kan skapa målgrupper och använda olika aktiviteter (dela, berika osv.).
 
@@ -151,6 +138,8 @@ The **[!UICONTROL Exclude]** kan du utesluta profiler från din komposition. Det
 The **[!UICONTROL Enrich]** Med hjälp av aktivitet kan ni berika er målgrupp med ytterligare attribut från Adobe Experience Platform datamängder. Du kan t.ex. lägga till information om den köpta produkten, som namn, pris eller tillverkare-ID, och använda dessa uppgifter för att anpassa de leveranser som skickas till målgruppen.
 
 >[!IMPORTANT]
+>
+>Anrikning finns för **[!UICONOTROL Adobe Journey Optimizer]** endast användare.
 >
 >För närvarande sprids inte etiketter på datauppsättningen, antingen på datauppsättningsnivå eller på fältnivå, till den nya målgruppen. Detta kan påverka åtkomstkontroll och/eller datastyrning för den slutliga målgruppen. Därför bör du endast använda testdata när du komponerar målgrupper.
 

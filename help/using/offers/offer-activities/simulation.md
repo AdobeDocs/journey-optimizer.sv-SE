@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: da9e898b-8e5d-43da-9226-5c9ccb78e174
-source-git-commit: 13c228c2409400da8c62189d96e9b47bcb94ee19
+source-git-commit: 4d196e6485b55fe63bd8da2c7cdfc454a26f80f3
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 0%
@@ -50,13 +50,13 @@ Om du vill komma åt den här funktionen väljer du **[!UICONTROL Simulation]** 
 >id="ajo_decisioning_simulation_test_profile"
 >title="Lägga till testprofiler"
 >abstract="Du kan lägga till en testprofil genom att välja ett identitetsnamnutrymme och ett motsvarande identitetsvärde. Du måste ha testprofiler tillgängliga för att kunna använda dem för simulering."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/segment/profiles/creating-test-profiles.html" text="Skapa testprofiler"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/audiences-profiles-identities/profiles/creating-test-profiles.html" text="Skapa testprofiler"
 
 Först måste du välja de testprofiler som du ska använda för simulering.
 
 >[!CAUTION]
 >
->Du måste ha testprofiler tillgängliga för att simulera vilka erbjudanden som ska levereras till dem. Lär dig hur [skapa testprofiler](../../segment/creating-test-profiles.md).
+>Du måste ha testprofiler tillgängliga för att simulera vilka erbjudanden som ska levereras till dem. Lär dig hur [skapa testprofiler](../../audience/creating-test-profiles.md).
 
 1. Klicka på **[!UICONTROL Manage profile]**.
 
@@ -66,7 +66,7 @@ Först måste du välja de testprofiler som du ska använda för simulering.
 
    >[!NOTE]
    >
-   >Ett identitetsnamnutrymme definierar kontexten för en identifierare, till exempel en e-postadress eller ett CRM-ID. Läs mer om Adobe Experience Platform identitetsnamnutrymmen [i det här avsnittet](../../segment/get-started-identity.md){target="_blank"}.
+   >Ett identitetsnamnutrymme definierar kontexten för en identifierare, till exempel en e-postadress eller ett CRM-ID. Läs mer om Adobe Experience Platform identitetsnamnutrymmen [i det här avsnittet](../../audience/get-started-identity.md){target="_blank"}.
 
 1. Ange identitetsvärdet och klicka på **[!UICONTROL View]** för att lista tillgängliga profiler.
 

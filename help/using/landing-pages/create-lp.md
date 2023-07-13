@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, publicering
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: ad4bc06d17727c6c8476344f3c1028fd9e717a15
+source-git-commit: 4d196e6485b55fe63bd8da2c7cdfc454a26f80f3
 workflow-type: tm+mt
 source-wordcount: '1533'
 ht-degree: 1%
@@ -205,7 +205,7 @@ Följ stegen nedan för att definiera inställningar för undersidan.
 >id="ac_preview_lp_profiles"
 >title="Förhandsgranska och testa landningssidan"
 >abstract="När du har definierat inställningarna för landningssidan och innehållet kan du använda testprofiler för att förhandsgranska den."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/segment/profiles/creating-test-profiles.html" text="Välj testprofiler"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/audiences-profiles-identities/profiles/creating-test-profiles.html" text="Välj testprofiler"
 
 När inställningarna för landningssidan och innehållet har definierats kan du använda testprofiler för att förhandsgranska den. Om du infogade [personaliserat innehåll](../personalization/personalize.md)kan du med hjälp av testprofildata kontrollera hur det här innehållet visas på landningssidan.
 
@@ -213,7 +213,7 @@ När inställningarna för landningssidan och innehållet har definierats kan du
 >
 >För att kunna testa landningssidor måste du ha **[!UICONTROL Publish Messages]** behörighet.
 >
->Du måste ha testprofiler tillgängliga för att kunna förhandsgranska dina meddelanden och skicka korrektur. Lär dig hur [skapa testprofiler](../segment/creating-test-profiles.md).
+>Du måste ha testprofiler tillgängliga för att kunna förhandsgranska dina meddelanden och skicka korrektur. Lär dig hur [skapa testprofiler](../audience/creating-test-profiles.md).
 
 1. I landningssidans gränssnitt klickar du på **[!UICONTROL Simulate content]** för att komma åt valet av testprofil.
 
@@ -223,7 +223,7 @@ När inställningarna för landningssidan och innehållet har definierats kan du
    >
    >The **[!UICONTROL Simulate content]** kan även användas av innehållsdesignern.
 
-1. Från **[!UICONTROL Simulate ]** väljer du en eller flera testprofiler.
+1. Från **[!UICONTROL Simulate]** väljer du en eller flera testprofiler.
 
    ![](assets/lp_test-profiles.png)
 

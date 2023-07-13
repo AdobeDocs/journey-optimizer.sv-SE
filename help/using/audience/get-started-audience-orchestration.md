@@ -7,13 +7,11 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
-hidefromtoc: true
 exl-id: af71d24d-77eb-44df-8216-b0aeaf4c4fa4
 badge: label="Beta" type="Informative"
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 4d196e6485b55fe63bd8da2c7cdfc454a26f80f3
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
@@ -24,21 +22,6 @@ ht-degree: 0%
 >id="ajo_ao_create_composition"
 >title="Skapa en komposition"
 >abstract="Skapa ett dispositionsarbetsflöde för att kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och utnyttja olika aktiviteter (dela, exkludera..) för att skapa nya målgrupper."
-
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här dokumentationen:
-
-* **[Kom igång med målgruppsmaterial](get-started-audience-orchestration.md)**
-* [Skapa ditt första dispositionsarbetsflöde](create-compositions.md)
-* [Arbeta med arbetsytan](composition-canvas.md)
-* [Få åtkomst till och hantera målgrupper](access-audiences.md)
-
->[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->Målgruppskomposition är för närvarande bara tillgängligt för en begränsad grupp kunder. Kontakta din Adobe-representant om du har några frågor.
 
 Målgruppsdisposition gör att du kan skapa **arbetsflöden för disposition**, där ni kan kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och utnyttja olika aktiviteter (dela, exkludera..) för att skapa nya målgrupper.
 

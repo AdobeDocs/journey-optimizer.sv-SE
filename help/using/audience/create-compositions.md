@@ -7,29 +7,16 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
-hidefromtoc: true
 exl-id: 8b978900-fcef-46f2-bc19-70776e4f3d43
 badge: label="Beta" type="Informative"
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 4d196e6485b55fe63bd8da2c7cdfc454a26f80f3
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
 
 # Skapa ditt första dispositionsarbetsflöde {#create-compositions}
-
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här dokumentationen:
-
-* [Kom igång med målgruppsmaterial](get-started-audience-orchestration.md)
-* **[Skapa ditt första dispositionsarbetsflöde](create-compositions.md)**
-* [Arbeta med arbetsytan](composition-canvas.md)
-* [Få åtkomst till och hantera målgrupper](access-audiences.md)
-
->[!ENDSHADEBOX]
 
 ## Skapa ett dispositionsarbetsflöde {#create}
 
