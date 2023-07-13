@@ -9,7 +9,7 @@ role: Admin,Developer
 level: Intermediate
 keywords: kampanj, acc, integration
 exl-id: 109ba212-f04b-425f-9447-708c8e0b3f51
-source-git-commit: 16738786e4ebeef3417fd0f6e5be741b348c2744
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%
@@ -33,7 +33,7 @@ För varje konfigurerad åtgärd finns en åtgärdsaktivitet tillgänglig på pa
 
 ## Viktiga anteckningar {#important-notes}
 
-* Det finns ingen begränsning för meddelanden. Systemet begränsar antalet meddelanden som kan skickas till 4 000 per 5 minuter, baserat på aktuellt Campaign-SLA. Därför bör Journey Optimizer endast användas i enstaka fall (enskilda händelser, inte segment).
+* Det finns ingen begränsning för meddelanden. Systemet begränsar antalet meddelanden som kan skickas till 4 000 per 5 minuter, baserat på aktuellt Campaign-SLA. Därför bör Journey Optimizer endast användas i enstaka fall (enskilda evenemang, inte målgrupper).
 
 * Du måste konfigurera en åtgärd på arbetsytan per mall som du vill använda. Du måste konfigurera en åtgärd i Journey Optimizer för varje mall som du vill använda från Adobe Campaign.
 
@@ -41,7 +41,7 @@ För varje konfigurerad åtgärd finns en åtgärdsaktivitet tillgänglig på pa
 
 * Det finns ingen validering av att nyttolasten eller kampanjmeddelandet är korrekt.
 
-* Du kan inte använda en Campaign-åtgärd med en segmentkvalificeringshändelse.
+* Du kan inte använda en Campaign-åtgärd med en publikkvalificeringshändelse.
 
 ## Förutsättningar {#prerequisites}
 

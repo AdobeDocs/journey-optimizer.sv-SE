@@ -8,9 +8,9 @@ role: User
 level: Beginner
 keywords: resa, upptäckt, komma igång
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
-source-git-commit: c235e7cd77e50a15a12f6ed14e51ca4185ecb7c2
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '583'
 ht-degree: 1%
 
 ---
@@ -22,13 +22,13 @@ Använd [!DNL Journey Optimizer] för att skapa användningsfall för realtidssa
 
 Utforma avancerade scenarier i flera steg med följande funktioner:
 
-* Skicka i realtid **enhetlig leverans** aktiveras när en händelse tas emot, eller **i batch** med Adobe Experience Platform-segment.
+* Skicka i realtid **enhetlig leverans** aktiveras när en händelse tas emot, eller **i batch** med Adobe Experience Platform målgrupper.
 
 * Utnyttja **kontextuella data** från händelser, information från Adobe Experience Platform eller data från API-tjänster från tredje part.
 
 * Använd **inbyggda funktionsmakron** för att skicka meddelanden som [!DNL Journey Optimizer] eller skapa **anpassade åtgärder** om du använder ett tredjepartssystem för att skicka meddelanden.
 
-* Med **resedesigner** bygg upp flerstegstillämpningar: enkelt dra och släppa en tävlingshändelse eller en aktivitet i ett lässegment, lägga till villkor och skicka personaliserade meddelanden.
+* Med **resedesigner** bygg upp flerstegstillämpningar: enkelt dra och släppa en tävlingsaktivitet eller en läsningsaktivitet, lägga till villkor och skicka personaliserade meddelanden.
 
 
 >[!NOTE]
@@ -47,7 +47,7 @@ Adobe Journey Optimizer har en flerkanalig orkestreringsyta som gör att marknad
 
 Lär dig hur du påbörjar och skapar din första resa på [den här sidan](journey-gs.md).
 
-Den flerkanaliga resedesignern hjälper er att skapa flerstegsresor, särskilt för målgrupper, och införliva uppdateringar baserade på kundinteraktioner eller affärsinteraktioner i realtid. Det gör det även möjligt att skapa flerkanalsmeddelanden via ett intuitivt dra och släpp-gränssnitt.
+Flerkanalsdesignern hjälper er att skapa flerstegsresor med riktade målgrupper, uppdateringar baserade på kundinteraktioner eller affärsinteraktioner i realtid och flerkanalsmeddelanden med ett intuitivt dra-och-släpp-gränssnitt.
 
 ![](assets/journey38.png)
 

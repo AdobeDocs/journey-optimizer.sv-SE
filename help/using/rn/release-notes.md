@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 4c29bb1fbbf2c67d04fcd73076be456323eddc7d
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
-source-wordcount: '2594'
+source-wordcount: '2452'
 ht-degree: 8%
 
 ---
@@ -22,46 +22,47 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 ![Nyhetsbrev](../assets/do-not-localize/nl-icon.png) Registrera dig för [Adobe Journey Optimizer kvartalsvis nyhetsbrev](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} idag och få de senaste produktuppdateringarna, spännande historier, användningsexempel, tips och mycket annat levererat direkt till din inkorg varje kvartal.
 
 
-
-## Versionsinformation juni 2023 {#june-rn-2023}
-
 <!--
+## June 2023 early release notes {#june-rn-2023}
+
 Information below is subject to change without prior notice until the release availability date. Updated documentation will be published at the release date, and direct links will be added in this page.
 
-**Release date**: June 21-22, 2023-->
+**Release date**: June 21-22, 2023
 
-
-<!-- ### New capabilities{#june-2023-features}-->
+### New capabilities{#june-2023-features}
 
 <table>
 <thead>
 <tr>
-<th><strong>API-utlösta kampanjer för användningsfall inom marknadsföring</strong><br/></th>
+<th><strong>API-triggered campaigns for marketing use cases</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Nu kan ni använda API:er för att utlösa marknadsföringskampanjer i Adobe Journey Optimizer från ett externt system.</p>
-<p>Fram till den här versionen täckte kampanjer som utlöstes av API olika operativa och transaktionsrelaterade meddelandebehov, som lösenordsåterställning eller OTP-token, men kunde inte användas för att skapa marknadsföringskampanjer. Tillgängliga kanaler för API-utlösta kampanjer är: E-post, SMS och push-meddelanden.</p>
+<p>You can now use APIs to trigger marketing campaigns in Adobe Journey Optimizer from an external system.</p>
+<p>Until this release, API-triggered campaigns capability was covering various operational and transactional messaging needs like password resets or OTP token, but could not be used to create marketing campaigns. Available channels for API-triggered campaigns are: Email, SMS and Push messages.</p>
 <img src="assets/do-not-localize/api-triggered.gif"/>
-<p>Mer information finns i den <a href="../campaigns/api-triggered-campaigns.md">detaljerade dokumentationen</a>.
+<p>For more information, refer to the <a href="../campaigns/api-triggered-campaigns.md">detailed documentation</a>.
 </td>
 </tr>
 </tbody>
 </table>
 
-<!--
+
 ### Improvements {#june-2023-improvements}
 
 
 **Audiences**
 
-Enhancements have been made to the audience picker in journeys or campaigns, with the addition of new columns displaying the origin and update frequency of audiences.
+Enhancements have been made to the audience picker in journeys or campaigns, with the addition of new columns displaying the origin and update frequency of audiences.	
+
 
 **Journeys**
 
-You can now leverage API call responses in custom actions and orchestrate your journey based on these responses.
+* You can now leverage API call responses in custom actions and orchestrate your journey based on these responses.	 
+
+* A new type of system alert has been introduced. You can now get notified when a custom action fails.
 -->
 
 ## Versionsinformation maj 2023 {#may-rn-2023}
@@ -79,7 +80,7 @@ You can now leverage API call responses in custom actions and orchestrate your j
 <tr>
 <td>
 <p>You can now create composition workflows to combine existing Adobe Experience Platform audiences into a visual canvas and leverage various activities (split, enrich...) to create new audiences. Newly created audiences are saved backed into Adobe Experience Platform along with existing audiences and can be leveraged in Journey Optimizer campaigns to target customers.</p>
-<img src="../segment/assets/audiences-publish.png"/>
+<img src="../audience/assets/audiences-publish.png"/>
 <!--p>For more information, refer to the <a href="../offers/ranking/personalized-optimization-model.md">detailed documentation</a>.</p>
 </td>
 </tr>
@@ -170,7 +171,7 @@ You can now leverage API call responses in custom actions and orchestrate your j
 <tbody>
 <tr>
 <td>
-<p>Personaliserade AI-rankningsmodeller för optimering finns nu i allmänhet tillgängliga i Beslutshantering. Med den här nya typen av modell kan ni optimera och personalisera erbjudanden baserat på segment och erbjudanden.</p>
+<p>Personaliserade AI-rankningsmodeller för optimering finns nu i allmänhet tillgängliga i Beslutshantering. Med den här nya typen av modell kan ni optimera och personalisera erbjudanden baserat på målgrupper och erbjuda resultat.</p>
 <img src="assets/do-not-localize/ai-ranking.gif"/>
 <p>Mer information finns i den <a href="../offers/ranking/personalized-optimization-model.md">detaljerade dokumentationen</a>.</p>
 </td>
@@ -301,11 +302,9 @@ You can now leverage API call responses in custom actions and orchestrate your j
 
 * På arbetsytan för resan visas nu aktivitets-ID för meddelandeaktiviteter och sluttaggar. Detta förbättrar rapportering och återmarknadsföring.
 * Konfigurationsrutans layout, som visas i åtgärder, datakällor, händelser och resor, har förbättrats.
+* Nya insikter om antalet noder på arbetsytan med skydd för tillväxt: att hålla resorna enkla att läsa, köra QA och felsöka med maximalt antal noder per resa vid 50. [Läs mer](../start/guardrails.md#journeys-guardrails-journeys)
 * När du lägger till en [E-post](../email/create-email.md), [SMS](../sms/create-sms.md) eller [Push](../push/create-push.md) åtgärder på en resa är ytan nu förfylld som standard med den senast använda ytan för den kanalen under den aktuella resan.
 * Nu kan du definiera statiska eller dynamiska frågeparametrar i dina anpassade åtgärder. [Läs mer](../action/about-custom-action-configuration.md#url-configuration)
-* Nya garantimöjligheter för att hantera upplevelsetillväxt som Journeys levererar:
-   * Vi rekommenderar att du begränsar antalet noder till 50 eller färre för att hålla dina resor upprätt, lättlästa, QA och felsökning. Antalet aktiviteter visas i den övre vänstra delen av arbetsytan. [Läs mer](../start/guardrails.md#journeys-guardrails-journeys)
-   * När du utvecklar och startar resor kommer vi att meddela dig när du närmar dig milstolpen på 100 resor i realtid. Om dina planer kräver mer än 100 resor i taget kan du skapa en supportanmälan efter att du har fått meddelandet så hjälper vi dig. [Läs mer](../start/guardrails.md#journeys-guardrails-journeys)
 
 **Rapportering**
 
@@ -378,7 +377,7 @@ You can now leverage API call responses in custom actions and orchestrate your j
 * Resans arbetsyta har förbättrats för en enklare och förbättrad användarupplevelse. I slutet av varje bana på arbetsytan har de tomma platshållarna tagits bort. Nu kan du enkelt lägga till dina aktiviteter genom att dra dem i slutet av en bana.
 * På arbetsytan är etiketten för **End** -taggen anges inte längre automatiskt med den föregående aktivitetens namn. Användarna kan lägga till en anpassad etikett manuellt vid behov.
 * Standardtidsgränsen och fellängden för resans egenskaper har ändrats från 5 till 30 sekunder. [Läs mer](../configuration/external-systems.md#timeout)
-* Standardhastigheten för begränsning i lässegmentsaktiviteter har ändrats från 20 000 till 5 000 meddelanden per sekund. [Läs mer](../building-journeys/read-segment.md#configuring-segment-trigger-activity)
+* Standardbegränsningsfrekvensen för läsmålgruppsaktiviteter har ändrats från 20 000 till 5 000 meddelanden per sekund. [Läs mer](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
 * Ett skyddsutkast har lagts till i testläget för att endast lyssna på händelser som skickas via gränssnittet. Händelser som skickas via ett externt verktyg beaktas inte. [Läs mer](../building-journeys/testing-the-journey.md)
 
 
@@ -509,9 +508,9 @@ Note that each widget can be resized and deleted as needed.
 
 **Resor**
 
-* The **Vänteperiod för återinträde** fältet har lagts till i reseegenskaperna. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en segmentkvalificering). Detta förhindrar att resorna felaktigt aktiveras flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. [Läs mer](../building-journeys/journey-gs.md#entrance)
+* The **Vänteperiod för återinträde** fältet har lagts till i reseegenskaperna. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resorna felaktigt aktiveras flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. [Läs mer](../building-journeys/journey-gs.md#entrance)
 
-* Förbättringar har gjorts för **start- och slutdatum för resan**. Om du inte har angett något startdatum läggs det nu till automatiskt vid publiceringstidpunkten. För **Lässegment** på resor kan du nu lägga till ett slutdatum. Detta gör att profiler kan avslutas automatiskt när datumet nås. [Läs mer](../building-journeys/journey-gs.md#dates)
+* Förbättringar har gjorts för **start- och slutdatum för resan**. Om du inte har angett något startdatum läggs det nu till automatiskt vid publiceringstidpunkten. För **Läsa målgrupper** på resor kan du nu lägga till ett slutdatum. Detta gör att profiler kan avslutas automatiskt när datumet nås. [Läs mer](../building-journeys/journey-gs.md#dates)
 
 <!--
 
@@ -585,7 +584,7 @@ Note that each widget can be resized and deleted as needed.
 
 **Resor**
 
-* När du lägger till en **Segmentkvalificering** eller **Lässegment** I en resa är namnutrymmet nu som standard förfyllt med det senast använda namnutrymmet. Se [Segmentkvalificering](../building-journeys/segment-qualification-events.md#about-segment-qualification) och [Lässegment](../building-journeys/read-segment.md#configuring-segment-trigger-activity) -avsnitt.
+* När du lägger till en **Målgruppskvalifikation** eller **Läsa målgrupper** I en resa är namnutrymmet nu som standard förfyllt med det senast använda namnutrymmet. Se [Målgruppskvalifikation](../building-journeys/audience-qualification-events.md#about-segment-qualification) och [Läsa målgrupper](../building-journeys/read-audience.md#configuring-segment-trigger-activity) -avsnitt.
 
 * I arbetsytan på resan finns en ny knapp i verktygsfältet som gör att du kan hämta en skärmbild av din resa.
 

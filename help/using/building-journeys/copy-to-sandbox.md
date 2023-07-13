@@ -9,7 +9,7 @@ role: User, Developer
 level: Intermediate
 keywords: sandlåda, resa, kopia, miljö
 exl-id: 8c63f2f2-5cec-4cb2-b3bf-2387eefb5002
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 0%
@@ -38,7 +38,7 @@ ht-degree: 0%
 >title="Beroende objekt"
 >abstract="Det här är listan över associerade objekt som används under resan. I den här listan visas namn, objekttyp och internt Journey Optimizer-id."
 
-Med Journey Optimizer kan du kopiera en hel resa från en sandlåda till en annan. Du kan t.ex. kopiera en resa från sandlådemiljön på scenen till produktionssandlådan. Förutom själva resan kopierar Journey Optimizer även de flesta av de objekt som resan är beroende av: segment, ytor (t.ex. förinställningar), scheman, händelser och åtgärder. Mer information om kopierade objekt finns i [section](#limitations).
+Med Journey Optimizer kan du kopiera en hel resa från en sandlåda till en annan. Du kan t.ex. kopiera en resa från sandlådemiljön på scenen till produktionssandlådan. Förutom själva resan kopierar Journey Optimizer även de flesta av de objekt som resan är beroende av: målgrupper, ytor (t.ex. förinställningar), scheman, händelser och åtgärder. Mer information om kopierade objekt finns i [section](#limitations).
 
 >[!CAUTION]
 >
@@ -80,32 +80,32 @@ Alla länkade element kanske inte kopieras till målsandlådan. Adobe rekommende
 
 Följande objekt kopieras:
 
-* Segment
+* Målgrupp
 
-   Ett segment kan bara kopieras en gång från en sandlåda till en annan. När ett segment har kopierats går det inte att redigera det i målsandlådan.
+  En målgrupp kan bara kopieras en gång från en sandlåda till en annan. När en målgrupp har kopierats går den inte att redigera i målsandlådan.
 
 * Schema
 
-   Scheman som används under den här resan kopieras.
+  Scheman som används under den här resan kopieras.
 
 * Meddelande
 
-   De kanalåtgärder som används under resan. Fält som används för personalisering i meddelandet kontrolleras inte för fullständighet. Innehållsblock kopieras inte.
+  De kanalåtgärder som används under resan. Fält som används för personalisering i meddelandet kontrolleras inte för fullständighet. Innehållsblock kopieras inte.
 
 * Resa - arbetsytedetaljer
 
-   Återgivningen av resan på arbetsytan, inklusive objekt i resan, t.ex. villkor, åtgärder, händelser, läs segment osv. Hoppaktiviteten tas inte med i kopian.
+  Beteckningen av resan på arbetsytan, inklusive objekt i resan, t.ex. villkor, åtgärder, händelser, läsning av målgrupper osv. Hoppaktiviteten tas inte med i kopian.
 
 * Händelse
 
-   Händelserna och händelseinformationen som används under resan kopieras.
+  Händelserna och händelseinformationen som används under resan kopieras.
 
 * Åtgärd
 
-   De åtgärder och åtgärdsdetaljer som används under resan kopieras.
+  De åtgärder och åtgärdsdetaljer som används under resan kopieras.
 
 Ytor (t.ex. förinställningar) kopieras inte över. Systemet väljer automatiskt den närmaste matchningen i målsandlådan baserat på meddelandetyp och ytnamn. Om det inte finns några ytor i målsandlådan misslyckas kopieringen av ytan. Det innebär att meddelandekopian också kommer att misslyckas eftersom ett meddelande kräver att en yta är tillgänglig för konfiguration. I det här fallet måste minst en yta skapas för den högra kanalen i meddelandet för att kopian ska fungera.
 
-För scheman, sammanfogningsprinciper och segment refereras bara de objekten till andra gången de kopieras. De behandlas som objekt som redan finns och kommer att kopieras igen. Det innebär att dessa objekt bara kan kopieras en gång.
+För scheman, sammanfogningsprinciper och målgrupper refereras endast de objekten till andra gången de kopieras. De behandlas som objekt som redan finns och kommer att kopieras igen. Det innebär att dessa objekt bara kan kopieras en gång.
 
-Det tar fem minuter innan Adobe Journey Optimizer kan referera till scheman, sammanfogningsprinciper och segment utan att ett fel visas på arbetsytan. Vänta i fem minuter så kommer dessa referenser att vara tillgängliga.
+Det tar fem minuter innan Adobe Journey Optimizer kan referera till scheman, kopplingsprofiler och målgrupper utan att ett fel visas på arbetsytan. Vänta i fem minuter så kommer dessa referenser att vara tillgängliga.

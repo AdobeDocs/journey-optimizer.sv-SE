@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: tillåtelselista, lista, säker, konfiguration
 exl-id: 70ab8f57-c132-4de1-847b-11f0ab14f422
-source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 2%
@@ -201,7 +201,7 @@ När tillåtelselista är [aktiv](#enable-allow-list), gäller följande logik:
 
 >[!NOTE]
 >
->Profilerna med **[!UICONTROL Not allowed]** status utelämnas under meddelandesändningsprocessen. Därför är **Reserapporter** visar att dessa profiler har flyttats genom resan ([Läs segment](../building-journeys/read-segment.md) och [meddelandeaktiviteter](../building-journeys/journeys-message.md)), **E-postrapporter** kommer inte att inkludera dem i **[!UICONTROL Sent]** mätvärden när de filtreras ut innan e-postmeddelanden skickas.
+>Profilerna med **[!UICONTROL Not allowed]** status utelämnas under meddelandesändningsprocessen. Därför är **Reserapporter** visar att dessa profiler har flyttats genom resan ([Läs målgrupp](../building-journeys/read-audience.md) och [meddelandeaktiviteter](../building-journeys/journeys-message.md)), **E-postrapporter** kommer inte att inkludera dem i **[!UICONTROL Sent]** mätvärden när de filtreras ut innan e-postmeddelanden skickas.
 >
 >Läs mer på [Live-rapport](../reports/live-report.md) och [Global rapport](../reports/global-report.md).
 

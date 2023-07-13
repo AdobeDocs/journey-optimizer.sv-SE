@@ -7,11 +7,11 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-keywords: resa, första, start, snabbstart, segment, händelse, åtgärd
+keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: 1cf62f949c1309b864ccd352059a444fd7bd07f0
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1495'
 ht-degree: 9%
 
 ---
@@ -26,7 +26,7 @@ För att kunna skicka meddelanden med resor krävs följande konfigurationer:
 
    ![](assets/jo-event7bis.png)
 
-1. **Skapa ett segment**: resan även kan avlyssna Adobe Experience Platform-segment för att skicka meddelanden i grupp till en viss uppsättning profiler. Därför måste ni skapa segment. [Läs mer](../segment/about-segments.md).
+1. **Skapa en målgrupp**: resan även kan lyssna på Adobe Experience Platform målgrupper för att skicka meddelanden i grupp till en viss uppsättning profiler. Därför måste ni skapa målgrupper. [Läs mer](../audience/about-audiences.md).
 
    ![](assets/segment2.png)
 
@@ -45,7 +45,7 @@ Klicka på **[!UICONTROL Journeys]**. Det finns två flikar:
 **Översikt**: På den här fliken visas en instrumentpanel med viktiga mått för dina resor:
 
 * **Bearbetade profiler**: totalt antal profiler som har bearbetats under de senaste 24 timmarna
-* **Direktresor**: Totalt antal levande resor med trafik under de senaste 24 timmarna. Livesändningar omfattar **Enhetsresor** (händelsebaserad) och **Batchresor** (lässegment).
+* **Direktresor**: Totalt antal levande resor med trafik under de senaste 24 timmarna. Livesändningar omfattar **Enhetsresor** (händelsebaserad) och **Batchresor** (läsare).
 * **Felfrekvens**: förhållandet mellan alla felaktiga profiler och det totala antalet profiler som har registrerats under de senaste 24 timmarna.
 * **Ignorera frekvens**: förhållandet mellan alla ignorerade profiler och det totala antalet profiler som har angetts under de senaste 24 timmarna. En ignorerad profil representerar en person som inte är berättigad att delta i resan, till exempel på grund av ett felaktigt namnutrymme eller på grund av regler för återinträde.
 
@@ -59,7 +59,7 @@ Klicka på **[!UICONTROL Journeys]**. Det finns två flikar:
 
 ![](assets/journeys-browse.png)
 
-I listan över resor kan du filtrera resorna efter status, typ och version från **[!UICONTROL Status and version filters]**. Typen kan vara: **[!UICONTROL Unitary event]**, **[!UICONTROL Segment qualification]**, **[!UICONTROL Read segment]** eller **[!UICONTROL Business event]**.
+I listan över resor kan du filtrera resorna efter status, typ och version från **[!UICONTROL Status and version filters]**. Typen kan vara: **[!UICONTROL Unitary event]**, **[!UICONTROL Audience qualification]**, **[!UICONTROL Read audience]**, **[!UICONTROL Business event]** eller **[!UICONTROL Burst]**.
 
 Du kan välja att endast visa resor som använder en specifik händelse, fältgrupp eller åtgärd från **[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**. Dessutom finns **[!UICONTROL Publication filters]** gör att du kan välja ett publiceringsdatum eller en användare. Du kan till exempel välja att visa de senaste versionerna av direktresor som publicerades igår. [Läs mer](../building-journeys/using-the-journey-designer.md).
 
@@ -88,7 +88,7 @@ Här är de viktigaste stegen för att skicka meddelanden via resor:
 
    ![](assets/jo-properties.png)
 
-1. Börja med att dra och släppa en händelse eller en **Läs segment** från paletten till arbetsytan. Mer information om resedesign finns i [det här avsnittet](using-the-journey-designer.md).
+1. Börja med att dra och släppa en händelse eller en **Läs målgrupp** från paletten till arbetsytan. Mer information om resedesign finns i [det här avsnittet](using-the-journey-designer.md).
 
    ![](assets/read-segment.png)
 
@@ -125,7 +125,7 @@ The **Kopiera teknisk information** Med kan du kopiera teknisk information om de
 
 Som standard tillåter nya resor återinträde. Du kan avmarkera **Tillåt återinträde** om du vill erbjuda en engångsgåva när en person går in i en affär.
 
-När **Tillåt återinträde** är aktiverat, **Vänteperiod för återinträde** -fältet visas. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en segmentkvalificering). Detta förhindrar att resorna felaktigt aktiveras flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter.
+När **Tillåt återinträde** är aktiverat, **Vänteperiod för återinträde** -fältet visas. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resorna felaktigt aktiveras flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter.
 
 Läs mer om hantering av profilinträde i [det här avsnittet](entry-management.md).
 
@@ -149,11 +149,11 @@ Mer information om hantering av tidszoner finns i [den här sidan](../building-j
 
 Du kan definiera en **Startdatum**. Om du inte har angett någon sådan kommer den att definieras automatiskt vid publiceringstidpunkten.
 
-Du kan också lägga till en **Slutdatum**. Detta gör att profiler kan avslutas automatiskt när datumet nås. Om du inte anger ett slutdatum kan profilerna behållas tills standardtidsgränsen för resan uppnås (vanligtvis 30 dagar, 7 dagar med tilläggsservice för hälso- och sjukvård). Det enda undantaget är återkommande lässegmentsresor med **Tvinga återinträde vid upprepning** som slutar vid startdatumet för nästa förekomst.
+Du kan också lägga till en **Slutdatum**. Detta gör att profiler kan avslutas automatiskt när datumet nås. Om du inte anger ett slutdatum kan profilerna behållas tills standardtidsgränsen för resan uppnås (vanligtvis 30 dagar, 7 dagar med tilläggsservice för hälso- och sjukvård). Det enda undantaget är återkommande läsningar på målgruppsresor med **Tvinga återinträde vid upprepning** som slutar vid startdatumet för nästa förekomst.
 
 ### Tidsgräns och fel i reseaktiviteter {#timeout_and_error}
 
-När du redigerar en åtgärd eller villkorsaktivitet kan du ange en alternativ sökväg om ett fel eller en timeout inträffar. Om bearbetningen av aktiviteten, som innefattar att fråga ett system från tredje part, överstiger den varaktighet som anges i färdens egenskaper för timeout och felhantering (**[!UICONTROL Timeout and  error]** fält) markeras den andra sökvägen för att utföra en reservåtgärd om det behövs.
+När du redigerar en åtgärd eller villkorsaktivitet kan du definiera en alternativ sökväg om ett fel eller en timeout inträffar. Om bearbetningen av aktiviteten som förhör ett tredjepartssystem överskrider den tidsgräns som anges i färdens egenskaper (**[!UICONTROL Timeout and  error]** -fält) väljs den andra sökvägen för att utföra en eventuell reservåtgärd.
 
 Giltiga värden är mellan 1 och 30 sekunder.
 
@@ -163,7 +163,7 @@ Journeys använder också en global tidsgräns. Se [nästa avsnitt](#global_time
 
 ### Tidsgräns för global resa {#global_timeout}
 
-Förutom [timeout](#timeout_and_error) som används i reseaktiviteter finns det också en timeout för den globala resan som inte visas i gränssnittet och som inte kan ändras. Den här tidsgränsen kommer att stoppa enskilda personers framsteg på resan 30 dagar efter att de har kommit in. Det innebär att en persons resa inte kan vara längre än 30 dagar. Efter den 30-dagars timeout-perioden tas personens data bort. Individer som fortfarande flyter på i slutet av tidsgränsen kommer att stoppas och de kommer att beaktas som fel vid rapporteringen.
+Förutom [timeout](#timeout_and_error) som används i reseaktiviteter finns det också en timeout för den globala resan som inte visas i gränssnittet och som inte kan ändras. Den här tidsgränsen kommer att stoppa enskilda personers framsteg på resan 30 dagar efter att de har kommit in. Det innebär att en persons resa inte kan vara längre än 30 dagar. Efter timeoutperioden på 30 dagar tas personens data bort. Individer som fortfarande flyter på i slutet av tidsgränsen kommer att stoppas och de kommer att beaktas som fel vid rapporteringen.
 
 >[!NOTE]
 >

@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: scheman, XDM, plattform, direktuppspelning, förtäring, resa
 exl-id: f19749c4-d683-4db6-bede-9360b9610eef
-source-git-commit: 59499dec7d15dd4565c7910d7b454d82243ff011
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 0%
@@ -32,33 +32,33 @@ Alla XDM-scheman som ska användas för [!DNL Journey Optimizer] ska uppfylla f�
 
 * Schemat måste vara av klassen XDM ExperienceEvent.
 
-   ![](assets/schema2.png)
+  ![](assets/schema2.png)
 
 * För systemgenererade händelser måste schemat innehålla fältgruppen Orchestration-händelseID. [!DNL Journey Optimizer] använder det här fältet för att identifiera händelser som används under resor.
 
-   ![](assets/schema3.png)
+  ![](assets/schema3.png)
 
 * Deklarera ett identitetsfält för att identifiera enskilda profiler i händelsen. Om ingen identitet anges kan en identitetskarta användas. Detta rekommenderas inte.
 
-   ![](assets/schema4.png)
+  ![](assets/schema4.png)
 
 * Om du vill att dessa data ska vara tillgängliga för sökning senare i en resa markerar du schemat och datauppsättningen för profil.
 
-   ![](assets/schema5.png)
+  ![](assets/schema5.png)
 
-   ![](assets/schema6.png)
+  ![](assets/schema6.png)
 
 * Du kan inkludera datafält för att samla in andra kontextdata som du vill inkludera med händelsen, till exempel information om användaren, enheten som händelsen genererades från, plats eller andra meningsfulla omständigheter som rör händelsen.
 
-   ![](assets/schema7.png)
+  ![](assets/schema7.png)
 
-   ![](assets/schema8.png)
+  ![](assets/schema8.png)
 
 ## Utnyttja schemarelationer{#leverage_schema_relationships}
 
 Med Adobe Experience Platform kan du definiera relationer mellan scheman för att kunna använda en datauppsättning som en uppslagstabell för en annan.
 
-Låt oss säga att er varumärkesdatamodell har ett schema som fångar upp inköp. Du har också ett schema för produktkatalogen. Du kan hämta produkt-ID:t i inköpsschemat och använda en relation för att söka efter mer fullständig produktinformation från produktkatalogen. På så sätt kan du skapa ett segment för alla kunder som köpte en bärbar dator, till exempel, utan att behöva göra en explicit lista över alla bärbara ID:n eller hämta alla produktdetaljer i transaktionssystem.
+Låt oss säga att er varumärkesdatamodell har ett schema som fångar upp inköp. Du har också ett schema för produktkatalogen. Du kan hämta produkt-ID:t i inköpsschemat och använda en relation för att söka efter mer fullständig produktinformation från produktkatalogen. På så sätt kan ni skapa en målgrupp för alla kunder som har köpt en bärbar dator, till exempel, utan att behöva göra en explicit lista över alla bärbara ID:n eller hämta alla produktdetaljer i transaktionssystem.
 
 Om du vill definiera en relation måste du ha ett dedikerat fält i källschemat, i det här fallet fältet för produkt-ID i inköpsschemat. Det här fältet måste referera till produkt-ID-fältet i målschemat. Käll- och måltabellerna måste vara aktiverade för profiler och målschemat måste ha det gemensamma fältet definierat som sin primära identitet.
 

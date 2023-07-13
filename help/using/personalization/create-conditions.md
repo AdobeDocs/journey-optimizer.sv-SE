@@ -9,16 +9,16 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, villkorsstyrd, regler
 exl-id: 246a4a55-059e-462c-ac1e-43b90f4abda4
-source-git-commit: 59499dec7d15dd4565c7910d7b454d82243ff011
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '582'
 ht-degree: 1%
 
 ---
 
 # Arbeta med villkorliga regler {#conditions}
 
-Villkorliga regler är uppsättningar regler som definierar vilket innehåll som ska visas i dina meddelanden, beroende på olika kriterier som profilattribut, segmentmedlemskap eller sammanhangsbaserade händelser.
+Villkorliga regler är uppsättningar regler som definierar vilket innehåll som ska visas i dina meddelanden, beroende på olika kriterier som profilattribut, målgruppsmedlemskap eller sammanhangsbaserade händelser.
 
 Villkorliga regler skapas med uttrycksredigeraren och kan lagras om du vill återanvända dem i hela innehållet. [Lär dig hur du sparar en villkorlig regel i biblioteket](#save)
 
@@ -32,11 +32,11 @@ Villkorliga regler skapas från **[!UICONTROL Conditions]** -menyn i uttrycksred
 
 * Från e-postdesignern när du aktiverar dynamiskt innehåll för en komponent i e-postbrödtexten. [Lär dig hur du lägger till dynamiskt innehåll i e-postmeddelanden](dynamic-content.md#emails)
 
-   ![](assets/conditions-access-email.png)
+  ![](assets/conditions-access-email.png)
 
 * Inom alla områden där du kan lägga till personalisering med [Uttrycksredigeraren](personalization-build-expressions.md).
 
-   ![](assets/conditions-access-editor.png)
+  ![](assets/conditions-access-editor.png)
 
 ## Skapa en villkorsregel {#create-condition}
 
@@ -56,17 +56,17 @@ Så här skapar du en villkorlig regel:
 
 1. Bygg den villkorliga regeln efter dina behov. Det gör du genom att dra och släppa och ordna de önskade attributen från den vänstra menyn på arbetsytan.
 
-   Stegen för att kombinera attribut på arbetsytan liknar de som används för att skapa segment. Mer information om hur du arbetar med arbetsytan i regelbyggaren finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#rule-builder-canvas).
+   Stegen för att kombinera attribut på arbetsytan liknar de som används för att skapa segmentdefinitioner. Mer information om hur du arbetar med arbetsytan i regelbyggaren finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#rule-builder-canvas).
 
    ![](assets/conditions-create.png)
 
    Attribut är ordnade i tre flikar:
 
    * **[!UICONTROL Profile]**:
-      * **[!UICONTROL Segment Membership]** visar alla segmentattribut (t.ex. status, version osv.) for [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html),
+      * **[!UICONTROL Audiences]** visar alla målgruppsattribut (t.ex. status, version osv.) for [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html),
       * **[!UICONTROL XDM Individual profiles]** visar alla profilattribut som är kopplade till [XDM-schema (Experience Data Model)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv) som definieras i Adobe Experience Platform.
    * **[!UICONTROL Contextual]**: när ditt meddelande används i en resa är fält för sammanhangsbaserad resa tillgängliga via den här fliken.
-   * **[!UICONTROL Audiences]**: listar alla målgrupper som genererats från segment som skapats i [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
+   * **[!UICONTROL Audiences]**: visar alla målgrupper som genererats från segmentdefinitioner som skapats i [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
 
 1. När den villkorliga regeln är klar kan du lägga till den i meddelandet för att skapa dynamiskt innehåll. [Lär dig hur du lägger till dynamiskt innehåll](dynamic-content.md)
 

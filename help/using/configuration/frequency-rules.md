@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: 74db87267c2bc4a1aabfc506adaa29758467dd81
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '946'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,9 @@ ht-degree: 1%
 
 [!DNL Journey Optimizer] Med kan du styra hur ofta användare ska få ett meddelande eller delta i en resa genom att ställa in flerkanalsregler som automatiskt utesluter överbegärda profiler från meddelanden och åtgärder.
 
-En regel för ett varumärke kan till exempel inte vara att skicka mer än tre marknadsföringsmeddelanden per månad till sina kunder. För att göra detta kan du använda en frekvensregel som begränsar antalet meddelanden som skickas baserat på en eller flera kanaler under en månadskalenderperiod.
+Ni vill till exempel inte att ert varumärke ska skicka mer än tre marknadsföringsmeddelanden per månad till sina kunder.
+
+För att göra detta kan du använda en frekvensregel som begränsar antalet meddelanden som skickas baserat på en eller flera kanaler under en månadskalenderperiod.
 
 >[!NOTE]
 >
@@ -183,7 +185,7 @@ I det här scenariot finns en enskild profil:
 
 >[!NOTE]
 >
->När du testar frekvensregler bör du använda en ny [testprofil](../segment/creating-test-profiles.md)eftersom det inte finns något sätt att återställa räknaren förrän nästa månad när en profils övre gräns för frekvens har nåtts. Om du inaktiverar en regel kan mappade profiler ta emot meddelanden, men inga räknarsteg tas bort eller tas bort.
+>När du testar frekvensregler bör du använda en ny [testprofil](../audience/creating-test-profiles.md)eftersom det inte finns något sätt att återställa räknaren förrän nästa månad när en profils övre gräns för frekvens har nåtts. Om du inaktiverar en regel kan mappade profiler ta emot meddelanden, men inga räknarsteg tas bort eller tas bort.
 
 ## Instruktionsvideo {#video}
 

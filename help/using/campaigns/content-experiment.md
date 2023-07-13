@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: innehåll, experiment, multipelt, målgrupp, behandling
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: 382aa7089a84a9c4e0d37800ae77a53918c380f2
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 1%
@@ -65,9 +65,9 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
    * **[!UICONTROL Name]**
    * **[!UICONTROL Description]**
 
-1. Definiera målgruppen. Om du vill göra det klickar du på **[!UICONTROL Select audience]** om du vill visa en lista över tillgängliga Adobe Experience Platform-segment. [Läs mer om segment](../segment/about-segments.md)
+1. Definiera målgruppen. Om du vill göra det klickar du på **[!UICONTROL Select audience]** för att visa en lista över tillgängliga Adobe Experience Platform-målgrupper. [Läs mer om målgrupper](../audience/about-audiences.md)
 
-   I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera individerna från det valda segmentet. [Läs mer](get-started-experiment.md#content-experiment-work)
+   I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera personer från den valda målgruppen. [Läs mer](get-started-experiment.md#content-experiment-work)
 
    ![](assets/content_experiment_16.png)
 

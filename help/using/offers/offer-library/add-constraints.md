@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
-source-git-commit: 34d30a4c45f007da6197999dbf1d0b283fba8248
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '2298'
 ht-degree: 1%
@@ -64,7 +64,7 @@ Om du till exempel anger följande begränsningar:
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_eligibility"
 >title="Definiera berättigande"
->abstract="Som standard är alla profiler berättigade att presenteras för erbjudandet, men du kan använda segment eller beslutsregler för att begränsa erbjudandet till specifika profiler."
+>abstract="Som standard är alla profiler berättigade att presenteras erbjudandet, men du kan använda målgrupper eller beslutsregler för att begränsa erbjudandet till specifika profiler."
 
 >[!CONTEXTUALHELP]
 >id="od_offer_eligibility"
@@ -75,33 +75,33 @@ Om du till exempel anger följande begränsningar:
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_total_profile_estimate"
 >title="Total profiluppskattning"
->abstract="När du väljer segment eller beslutsregler kan du se information om de uppskattade kvalificerade profilerna."
+>abstract="När du väljer målgrupper eller beslutsregler kan du se information om de uppskattade kvalificerade profilerna."
 
-The **[!UICONTROL Offer eligibility]** kan du begränsa erbjudandet till specifika profiler som du definierar med hjälp av segment eller beslutsregler.
+The **[!UICONTROL Offer eligibility]** kan ni begränsa erbjudandet till specifika profiler som ni definierar med hjälp av målgrupper eller beslutsregler.
 
 >[!NOTE]
 >
->Läs mer om hur du använder **segment** kontra **beslutsregler** in [det här avsnittet](#segments-vs-decision-rules).
+>Läs mer om hur du använder **målgrupper** kontra **beslutsregler** in [det här avsnittet](#segments-vs-decision-rules).
 
 * Som standard är **[!UICONTROL All visitors]** är valt, vilket innebär att alla profiler är berättigade att presenteras erbjudandet.
 
-   ![](../assets/offer-eligibility-default.png)
+  ![](../assets/offer-eligibility-default.png)
 
-* Du kan även begränsa presentationen av erbjudandet till medlemmarna i en eller flera [Adobe Experience Platform segment](../../segment/about-segments.md).
+* Du kan även begränsa presentationen av erbjudandet till medlemmarna i en eller flera [Adobe Experience Platform målgrupper](../../audience/about-audiences.md).
 
-   Aktivera **[!UICONTROL Visitors who fall into one or multiple segments]** lägg sedan till ett eller flera segment från den vänstra rutan och kombinera dem med **[!UICONTROL And]** / **[!UICONTROL Or]** logiska operatorer.
+  Aktivera **[!UICONTROL Visitors who fall into one or multiple audiences]** lägg sedan till en eller flera målgrupper från den vänstra rutan och kombinera dem med **[!UICONTROL And]** / **[!UICONTROL Or]** logiska operatorer.
 
-   ![](../assets/offer-eligibility-segment.png)
+  ![](../assets/offer-eligibility-segment.png)
 
 * Om du vill associera en viss [beslutsregel](../offer-library/creating-decision-rules.md) till erbjudandet väljer du **[!UICONTROL By defined decision rule]** och sedan dra den önskade regeln från den vänstra rutan till **[!UICONTROL Decision rule]** område.
 
-   ![](../assets/offer_rule.png)
+  ![](../assets/offer_rule.png)
 
-   >[!CAUTION]
-   >
-   >Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [event](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#events){target="_blank"}, kommer du inte att kunna utnyttja erbjudandet.
+  >[!CAUTION]
+  >
+  >Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [event](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#events){target="_blank"}, kommer du inte att kunna utnyttja erbjudandet.
 
-När du väljer segment eller beslutsregler kan du se information om de uppskattade kvalificerade profilerna. Klicka **[!UICONTROL Refresh]** för att uppdatera data.
+När du väljer målgrupper eller beslutsregler kan du se information om de uppskattade kvalificerade profilerna. Klicka **[!UICONTROL Refresh]** för att uppdatera data.
 
 ![](../assets/offer-eligibility-segment-estimate.png)
 
@@ -109,23 +109,23 @@ När du väljer segment eller beslutsregler kan du se information om de uppskatt
 >
 >Profiluppskattningar är inte tillgängliga när regelparametrar innehåller data som inte finns i profilen, till exempel kontextdata. Exempel: en regel som kräver att det aktuella vädret är ≥80 grader.
 
-### Använda segment och beslutsregler {#segments-vs-decision-rules}
+### Använda målgrupper och beslutsregler {#segments-vs-decision-rules}
 
-Om du vill tillämpa en begränsning kan du begränsa urvalet av erbjudanden till medlemmarna i en eller flera **Adobe Experience Platform segment** eller så kan du använda en **beslutsregel**, båda lösningarna motsvarar olika användningsområden.
+Om du vill tillämpa en begränsning kan du begränsa urvalet av erbjudanden till medlemmarna i en eller flera **Adobe Experience Platform målgrupper** eller så kan du använda en **beslutsregel**, båda lösningarna motsvarar olika användningsområden.
 
-I princip är utdata för ett segment en lista med profiler, medan en beslutsregel är en funktion som körs på begäran mot en enskild profil under beslutsprocessen. Skillnaden mellan dessa två användningar beskrivs nedan.
+En målgrupps utdata är i princip en lista med profiler, medan en beslutsregel är en funktion som körs på begäran mot en enskild profil under beslutsprocessen. Skillnaden mellan dessa två användningar beskrivs nedan.
 
-* **Segment**
+* **Publiker**
 
-   Å ena sidan är segment en grupp Adobe Experience Platform-profiler som matchar en viss logik baserat på profilattribut och upplevelsehändelser. Erbjudandehanteringen beräknar dock inte om segmentet, som kanske inte är aktuellt när erbjudandet presenteras.
+  Å ena sidan är målgrupperna en grupp Adobe Experience Platform-profiler som matchar en viss logik baserat på profilattribut och upplevelsehändelser. Erbjudandehanteringen innebär dock inte att publiken beräknas om, vilket kanske inte är aktuellt när erbjudandet presenteras.
 
-   Läs mer om segment i [det här avsnittet](../../segment/about-segments.md).
+  Läs mer om målgrupper i [det här avsnittet](../../audience/about-audiences.md).
 
 * **Beslutsregler**
 
-   Å andra sidan baseras en beslutsregel på data som är tillgängliga i Adobe Experience Platform och avgör till vem ett erbjudande kan visas. När regeln har valts i ett erbjudande eller i ett beslut för en viss placering verkställs den varje gång ett beslut fattas, vilket säkerställer att varje profil får det senaste och bästa erbjudandet.
+  Å andra sidan baseras en beslutsregel på data som är tillgängliga i Adobe Experience Platform och avgör till vem ett erbjudande kan visas. När regeln har valts i ett erbjudande eller i ett beslut för en viss placering verkställs den varje gång ett beslut fattas, vilket säkerställer att varje profil får det senaste och bästa erbjudandet.
 
-   Läs mer om beslutsregler i [det här avsnittet](creating-decision-rules.md).
+  Läs mer om beslutsregler i [det här avsnittet](creating-decision-rules.md).
 
 ## Takning {#capping}
 
@@ -186,16 +186,16 @@ The **[!UICONTROL Capping event]** kan du definiera vilket **[!UICONTROL Capping
 * **[!UICONTROL Decision event]** (standardvärde): Maximalt antal gånger ett erbjudande kan presenteras.
 * **[!UICONTROL Impression]**: Maximalt antal gånger som erbjudandet kan visas för en användare.
 
-   >[!NOTE]
-   >
-   >Användning av visningar när capping-händelser är tillgängliga för **inkommande kanaler** endast.
+  >[!NOTE]
+  >
+  >Användning av visningar när capping-händelser är tillgängliga för **inkommande kanaler** endast.
 
 * **[!UICONTROL Clicks]**: Maximalt antal gånger som en användare kan klicka på erbjudandet.
 * **[!UICONTROL Custom event]**: Du kan definiera en anpassad händelse som ska användas för att begränsa antalet erbjudanden som skickas. Du kan t.ex. sätta ett tak för antalet inlösen tills de är lika med 10000 eller tills en viss profil har lösts in 1 gång. Om du vill göra det använder du [Adobe Experience Platform XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"} scheman för att skapa en anpassad händelseregel.
 
-   <!--For example, you can cap on the number of redemptions so that the offer can be shown until redemptions equal 10000. You can only select XDM ExperienceEvents. -->
+  <!--For example, you can cap on the number of redemptions so that the offer can be shown until redemptions equal 10000. You can only select XDM ExperienceEvents. -->
 
-   I exemplet nedan vill du ha en övre gräns för antalet utcheckningar.
+  I exemplet nedan vill du ha en övre gräns för antalet utcheckningar.
 
    1. Välj **[!UICONTROL Custom event]** i listan och använd **[!UICONTROL Add custom event]** -knappen.
 
@@ -237,11 +237,11 @@ Du kan också ange om du vill att appen ska användas för alla användare eller
 
 * Välj **[!UICONTROL In total]** för att definiera hur många gånger ett erbjudande kan föreslås för den kombinerade målgruppen, vilket betyder för alla användare.
 
-   Om du till exempel är en återförsäljare av elektronikprodukter och har en &quot;TV-affär&quot; vill du att erbjudandet bara ska returneras 200 gånger för alla profiler.
+  Om du till exempel är en återförsäljare av elektronikprodukter och har en &quot;TV-affär&quot; vill du att erbjudandet bara ska returneras 200 gånger för alla profiler.
 
 * Välj **[!UICONTROL Per profile]** för att definiera hur många gånger ett erbjudande kan erbjudas en och samma användare.
 
-   Om du till exempel är en bank med ett Platinum-kreditkortserbjudande vill du inte att det här erbjudandet ska visas mer än fem gånger per profil. Ni tror faktiskt att om användaren har sett erbjudandet fem gånger och inte har följt det, har de större chans att agera på nästa bästa erbjudande.
+  Om du till exempel är en bank med ett Platinum-kreditkortserbjudande vill du inte att det här erbjudandet ska visas mer än fem gånger per profil. Ni tror faktiskt att om användaren har sett erbjudandet fem gånger och inte har följt det, har de större chans att agera på nästa bästa erbjudande.
 
 ### Frekvensbegränsning {#frequency-capping}
 
@@ -274,11 +274,11 @@ Om du har definierat flera [representationer](add-representations.md) för ditt 
 
 * **[!UICONTROL Across all placements]**: antalet licenser kommer att summera alla beslut för alla ersättningar som är kopplade till erbjudandet.
 
-   Om ett erbjudande till exempel har **E-post** placering och en **Webb** placeringen och du ställer in cappen på **2 per profil för alla placeringar** kan varje profil få upp till två gånger i rabatt, oberoende av placeringsmix.
+  Om ett erbjudande till exempel har **E-post** placering och en **Webb** placeringen och du ställer in cappen på **2 per profil för alla placeringar** kan varje profil få upp till två gånger i rabatt, oberoende av placeringsmix.
 
 * **[!UICONTROL For each placement]**: antalet licenser tillämpas separat på antalet beslut för varje placering.
 
-   Om ett erbjudande till exempel har **E-post** placering och en **Webb** placeringen och du ställer in cappen på **2 per profil för varje placering** kan varje profil få upp till två gånger för e-postplaceringen och ytterligare två gånger för webblatsplaceringen.
+  Om ett erbjudande till exempel har **E-post** placering och en **Webb** placeringen och du ställer in cappen på **2 per profil för varje placering** kan varje profil få upp till två gånger för e-postplaceringen och ytterligare två gånger för webblatsplaceringen.
 
 ### Påverkan av ändrade datum vid fästning {#capping-change-date}
 

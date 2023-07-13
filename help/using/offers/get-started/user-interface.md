@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 722f9c3b-b505-48c0-b126-31a7a841c245
-source-git-commit: b5fa17bfc888236994e73474c35b1aaafcda3ebe
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '643'
 ht-degree: 2%
@@ -26,7 +26,7 @@ Använd **[!UICONTROL Offers]** -meny för att hantera och leverera erbjudanden:
 * **[!UICONTROL Offers]**: Skapa och få tillgång till era personaliserade erbjudanden och reserverbjudanden. Lär dig hur du skapar [erbjudanden](../offer-library/creating-personalized-offers.md) och [reserverbjudanden](../offer-library/creating-fallback-offers.md)
 * **[!UICONTROL Collections]**: Ordna era erbjudanden i statiska och dynamiska samlingar. [Läs mer](../offer-library/creating-collections.md)
 * **[!UICONTROL Decisions]**: Skapa och hantera beslut för att leverera era erbjudanden. [Läs mer](../offer-activities/create-offer-activities.md)
-* **[!UICONTROL Batch decisioning]**: Leverera offertbeslut till alla profiler i ett visst Adobe Experience Platform-segment. [Läs mer](../batch-delivery.md)
+* **[!UICONTROL Batch decisioning]**: Leverera offertbeslut till alla profiler inom en viss Adobe Experience Platform-målgrupp. [Läs mer](../batch-delivery.md)
 * **[!UICONTROL Simulation]**: Validera din beslutslogik genom att simulera vilka erbjudanden som ska levereras till en testprofil för en viss placering. [Läs mer](../offer-activities/simulation.md)
 
 Använd **[!UICONTROL Components]** meny för att skapa och hantera komponenter som krävs för att skapa erbjudanden och beslut:

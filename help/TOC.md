@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: aac7c84221a68bb8258738db2c8d616db3332edf
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1378'
 ht-degree: 33%
 
 ---
@@ -52,10 +52,10 @@ ht-degree: 33%
       + [Kom igång med reseaktiviteter](using/building-journeys/about-journey-activities.md)
       + [Allmänna händelser](using/building-journeys/general-events.md)
       + [Reaktion](using/building-journeys/reaction-events.md)
-      + [Segmentkvalificering](using/building-journeys/segment-qualification-events.md)
+      + [Målgruppskvalifikation](using/building-journeys/audience-qualification-events.md)
       + [Villkor](using/building-journeys/condition-activity.md)
       + [Vänta](using/building-journeys/wait-activity.md)
-      + [Lässegment](using/building-journeys/read-segment.md)
+      + [Läs målgrupp](using/building-journeys/read-audience.md)
       + [E-post, i appen, push, SMS](using/building-journeys/journeys-message.md)
       + [Anpassade åtgärder](using/building-journeys/using-custom-actions.md)
       + [Adobe Campaign Standard-åtgärder](using/building-journeys/using-adobe-campaign-standard.md)
@@ -278,20 +278,20 @@ ht-degree: 33%
       + [Kom igång med dynamiskt innehåll](using/personalization/get-started-dynamic-content.md)
       + [Skapa villkorsregler](using/personalization/create-conditions.md)
       + [Skapa dynamiskt innehåll](using/personalization/dynamic-content.md)
-+ Segment, profiler och identitet{#segment}
-   + Segment {#segments}
-      + [Kom igång med segment](using/segment/about-segments.md)
-      + [Skapa segment](using/segment/creating-a-segment.md)
++ Målgrupper, profiler och identitet{#audiences-profiles-identities}
+   + Målgrupper {#audiences}
+      + [Kom igång med målgrupper](using/audience/about-audiences.md)
+      + [Skapa segmentdefinitioner](using/audience/creating-a-segment-definition.md)
    + Profiler{#profiles}
-      + [Kom igång med profiler](using/segment/get-started-profiles.md)
-      + [Skapa testprofiler](using/segment/creating-test-profiles.md)
-   + [Identiteter](using/segment/get-started-identity.md)
+      + [Kom igång med profiler](using/audience/get-started-profiles.md)
+      + [Skapa testprofiler](using/audience/creating-test-profiles.md)
+   + [Identiteter](using/audience/get-started-identity.md)
    + Disponera målgrupper {#audience-orchestration}
-      + [Kom igång med målgruppsmaterial](using/segment/get-started-audience-orchestration.md)
-      + [Skapa kompositionsarbetsflöden](using/segment/create-compositions.md)
-      + [Arbeta med arbetsytan](using/segment/composition-canvas.md)
-      + [Få åtkomst till och hantera målgrupper](using/segment/access-audiences.md)
-   + [Licensanvändning](using/segment/license-usage.md)
+      + [Kom igång med målgruppsmaterial](using/audience/get-started-audience-orchestration.md)
+      + [Skapa kompositionsarbetsflöden](using/audience/create-compositions.md)
+      + [Arbeta med arbetsytan](using/audience/composition-canvas.md)
+      + [Få åtkomst till och hantera målgrupper](using/audience/access-audiences.md)
+   + [Licensanvändning](using/audience/license-usage.md)
 + Spåra och övervaka {#reporting}
    + Live-rapport {#live-report}
       + [Kom igång med Live Report](using/reports/live-report.md)
@@ -488,4 +488,3 @@ ht-degree: 33%
       + [Hantera avanmälan](using/privacy/opt-out.md)
       + [Arbeta med policyer för samtycke](using/action/consent.md)
    + [Datastyrning](using/action/action-privacy.md)
-   + [Konfigurera och hantera kundhanterade nycklar](using/privacy/cmk.md)

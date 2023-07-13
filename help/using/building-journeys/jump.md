@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: hopp, aktivitet, resa, dela, dela upp
 exl-id: 46d8950b-8b02-4160-89b4-1c492533c0e2
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 2%
@@ -58,8 +58,8 @@ Under resa B utlöses den första händelsen internt via **[!UICONTROL Jump]** v
 
 * The **[!UICONTROL Jump]** aktiviteten är bara tillgänglig på resor som använder ett namnutrymme.
 * Du kan bara hoppa till en resa som använder samma namnutrymme som ursprungsresan.
-* Du kan inte hoppa till en resa som börjar med en **Segmentkvalificering** händelse eller **Läs segment**.
-* Du kan inte ha en **[!UICONTROL Jump]** aktivitet och **Segmentkvalificering** händelse eller **Läs segment** på samma resa.
+* Du kan inte hoppa till en resa som börjar med en **Målgruppskvalifikation** händelse eller **Läs målgrupp**.
+* Du kan inte ha en **[!UICONTROL Jump]** aktivitet och **Målgruppskvalifikation** händelse eller **Läs målgrupp** på samma resa.
 * Du kan inkludera så många **[!UICONTROL Jump]** aktiviteter som ni behöver på en resa. Efter **[!UICONTROL Jump]** kan du lägga till alla aktiviteter som behövs.
 * Du kan ha så många hoppnivåer som behövs. Till exempel hoppar resa A till resa B, som hoppar till resa C och så vidare.
 * Målresan kan även omfatta så många **[!UICONTROL Jump]** aktiviteter efter behov.
@@ -81,7 +81,7 @@ Under resa B utlöses den första händelsen internt via **[!UICONTROL Jump]** v
    ![](assets/jump2.png)
 
 1. Klicka inuti **Målresa** fält.
-I listan visas alla reseversioner som är utkast, live eller i testläge. Resor som använder ett annat namnutrymme eller som börjar med en **Segmentkvalificering** -händelsen är inte tillgänglig. Målresor som skulle skapa ett slingmönster filtreras också bort.
+I listan visas alla reseversioner som är utkast, live eller i testläge. Resor som använder ett annat namnutrymme eller som börjar med ett **Målgruppskvalifikation** -händelsen är inte tillgänglig. Målresor som skulle skapa ett slingmönster filtreras också bort.
 
    ![](assets/jump3.png)
 

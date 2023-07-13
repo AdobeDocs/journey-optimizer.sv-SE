@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 3847ac1d-2c0a-4f80-8df9-e8e304faf261
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '1574'
 ht-degree: 1%
@@ -71,15 +71,15 @@ Följ stegen nedan när du vill börja skapa webbkampanjer.
 
    * Den sammanhangsbaserade menyn där du kan redigera innehåll, layout, infoga länkar eller personalisering, osv.
 
-      ![](assets/web-designer-contextual-bar.png)
+     ![](assets/web-designer-contextual-bar.png)
 
    * Ikonerna ovanför den högra panelen för att redigera, duplicera, ta bort eller dölja varje element.
 
-      ![](assets/web-designer-right-panel-icons.png)
+     ![](assets/web-designer-right-panel-icons.png)
 
    * Den högra panelen som ändras dynamiskt enligt det valda elementet. Du kan till exempel redigera bakgrunden, typografin, kanten, storleken, positionen, mellanrummet, effekterna eller textbundna format för ett element.
 
-      ![](assets/web-designer-right-panel.png)
+     ![](assets/web-designer-right-panel.png)
 
 >[!NOTE]
 >
@@ -249,7 +249,7 @@ Följ stegen nedan för att visa en förhandsvisning av den ändrade webbuppleve
 
 >[!CAUTION]
 >
->Du måste ha testprofiler tillgängliga för att simulera vilka erbjudanden som ska levereras till dem. Lär dig hur [skapa testprofiler](../segment/creating-test-profiles.md).
+>Du måste ha testprofiler tillgängliga för att simulera vilka erbjudanden som ska levereras till dem. Lär dig hur [skapa testprofiler](../audience/creating-test-profiles.md).
 
 1. Välj **[!UICONTROL Simulate content]**.
 

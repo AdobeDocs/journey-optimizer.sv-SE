@@ -8,7 +8,7 @@ role: User, Developer
 level: Experienced
 keywords: resa, datakällor, begränsning, genomströmning, anpassade åtgärder
 exl-id: 45d6bb82-88ea-4510-a023-a75a82cc6f7b
-source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Detta kan göras med:
 
 * **Anpassade åtgärder**: att skicka information till externa system, t.ex. för att skicka e-post via en extern lösning med Journey Optimizer orkestreringsfunktioner tillsammans med profilinformation, målgruppsdata och resekontext.
 
-Om du arbetar med externa datakällor eller anpassade åtgärder kanske du vill skydda dina externa system genom att begränsa resans genomströmning: upp till 5000 instanser/sekund för heltidsresor och upp till 20000 instanser/sekund för segmentutlösta resor.
+Om du arbetar med externa datakällor eller anpassade åtgärder kanske du vill skydda dina externa system genom att begränsa resans genomströmning: upp till 5000 instanser/sekund för enstaka resor och upp till 20000 instanser/sekund för målgruppsinsatser.
 
 För anpassade åtgärder finns begränsningsfunktioner på produktnivå. Se detta [page](../configuration/external-systems.md#capping).
 
@@ -37,7 +37,7 @@ Mer information om hur du integrerar med externa system finns i [page](../config
 
 ## Implementering
 
-För **segmentutlösta resor** kan du definiera begränsningsfrekvensen för Läs segment-aktiviteten som påverkar resans genomströmning.  [Läs mer](../building-journeys/read-segment.md)
+För **målgruppsutlösta resor** kan du definiera begränsningsgraden för din Läs publikation-aktivitet som påverkar resans genomströmning.  [Läs mer](../building-journeys/read-audience.md)
 
 ![](assets/limit-throughput-1.png)
 
@@ -45,9 +45,9 @@ Du kan ändra det här värdet från 500 till 20 000 instanser per sekund. Om du
 
 ![](assets/limit-throughput-2.png)
 
-Låt oss ta ett exempel på en **segmentutlösta resor** som arbetar med en population av **10 000 profiler** och skicka data till ett externt system som stöder **100 förfrågningar/sekund**.
+Låt oss ta ett exempel på en **målgruppsutlösta resor** som arbetar med en population av **10 000 profiler** och skicka data till ett externt system som stöder **100 förfrågningar/sekund**.
 
-1. Du kan definiera ditt lässegment för att läsa profiler med ett genomflöde på 500 profiler/sekund, vilket innebär att det tar 20 sekunder att läsa alla dina profiler. På andra sidan kommer du att läsa 500 av dem, på andra 2 500 till osv.
+1. Du kan definiera din läspublik för att läsa profiler med ett genomflöde på 500 profiler/sekund, vilket innebär att det tar 20 sekunder att läsa alla dina profiler. På andra sidan kommer du att läsa 500 av dem, på andra 2 500 till osv.
 
 1. Du kan sedan lägga till en procentuell delning av villkorsaktivitet med en delning på 20 % som har 100 profiler i varje gren vid varje sekund.
 
@@ -56,14 +56,14 @@ Låt oss ta ett exempel på en **segmentutlösta resor** som arbetar med en popu
    * På förgrening 1 väntar de i 30 sekunder, vilket innebär att:
       * den andra 1, kommer 100 profiler att vänta på den andra 31
       * på andra 2, kommer 100 profiler att vänta på andra 32, osv.
+
    * På gren 2 väntar de i 60 sekunder, vilket innebär att:
       * På andra 1 väntar 100 profiler på andra 61 (1&#39;01&#39;)
       * På andra 2 väntar 100 profiler på andra 62 (1&#39;02&#39;) osv.
+
    * Eftersom vi vet att maximalt 20 sekunder förväntas läsa alla profiler, kommer det inte att finnas någon överlappning mellan varje gren. 20 är den sista där profiler kommer att flöda in i villkoret. Mellan 31:a och 51:a sekund behandlas alla profiler i gren 1. Mellan andra 61 (1&#39;01&#39;) och andra 81 (1&#39;21&#39;), kommer alla profiler i gren 2 att bearbetas osv.
 
    * Du kan också lägga till en sjätte gren med färre än 100 profiler per gren, särskilt om det externa systemet bara stöder 100 begäranden/sekund.
-
-
 
 >[!IMPORTANT]
 >

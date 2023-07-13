@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4a53ea96-632a-41c7-ab15-b85b99db4f3e
-source-git-commit: 835e4bf227ce330b1426a9a4331fdf533fc757e3
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 3%
@@ -69,7 +69,7 @@ Skapa en **erbjudande** gör du så här:
 
    >[!NOTE]
    >
-   >När du väljer segment eller beslutsregler kan du se information om de uppskattade kvalificerade profilerna. Klicka **[!UICONTROL Refresh]** för att uppdatera data.
+   >När du väljer målgrupper eller beslutsregler kan du se information om de uppskattade kvalificerade profilerna. Klicka **[!UICONTROL Refresh]** för att uppdatera data.
    >
    >Observera att profiluppskattningar inte är tillgängliga när regelparametrar innehåller data som inte finns i profilen, t.ex. kontextdata. Exempel: en regel som kräver att det aktuella vädret är ≥80 grader.
 
@@ -122,11 +122,11 @@ The **[!UICONTROL More actions]** aktiverar de åtgärder som beskrivs nedan.
 * **[!UICONTROL Duplicate]**: skapar ett erbjudande med samma egenskaper, representationer, regler och begränsningar för behörighet. Som standard har det nya erbjudandet **[!UICONTROL Draft]** status.
 * **[!UICONTROL Delete]**: tar bort erbjudandet från listan.
 
-   >[!CAUTION]
-   >
-   >Erbjudandet och dess innehåll kommer inte längre att vara tillgängliga. Det går inte att ångra den här åtgärden.
-   >
-   >Om erbjudandet används i en samling eller ett beslut kan det inte tas bort. Du måste ta bort erbjudandet från alla objekt först.
+  >[!CAUTION]
+  >
+  >Erbjudandet och dess innehåll kommer inte längre att vara tillgängliga. Det går inte att ångra den här åtgärden.
+  >
+  >Om erbjudandet används i en samling eller ett beslut kan det inte tas bort. Du måste ta bort erbjudandet från alla objekt först.
 
 * **[!UICONTROL Archive]**: anger erbjudandestatusen till **[!UICONTROL Archived]**. Erbjudandet är fortfarande tillgängligt från listan, men du kan inte återställa dess status till **[!UICONTROL Draft]** eller **[!UICONTROL Approved]**. Du kan bara duplicera eller ta bort den.
 

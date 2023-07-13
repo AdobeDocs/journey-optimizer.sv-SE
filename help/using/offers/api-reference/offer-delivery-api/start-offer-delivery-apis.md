@@ -6,7 +6,7 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 7bc1a4ec-113c-4af7-b549-ee17b843b818
-source-git-commit: bf738ebac09d5c852872a8ea85f6532ad9d4222d
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Kom igång med API:er för erbjudanden {#about-decisioning-apis}
 
-Du kan leverera erbjudanden med **Beslut** eller **Edge Decisionering** API. Dessutom finns **Gruppbeslut** Med API kan ni leverera erbjudanden till alla profiler i ett visst segment i ett enda anrop. Erbjudandeinnehållet för varje profil i segmentet placeras i en Adobe Experience Platform-datauppsättning där det är tillgängligt för anpassade grupparbetsflöden.
+Du kan leverera erbjudanden med **Beslut** eller **Edge Decisionering** API. Dessutom finns **Gruppbeslut** Med API kan ni leverera erbjudanden till alla profiler i en viss målgrupp i ett enda samtal. Erbjudandeinnehållet för varje profil i målgruppen placeras i en Adobe Experience Platform-datauppsättning där det är tillgängligt för anpassade grupparbetsflöden.
 
 På den här sidan hittar du information om specifika funktioner som är tillgängliga med **Beslut** och **Edge Decisionering** API:er. Vi rekommenderar att du använder **Edge Decisionering** API när det är möjligt för inkommande användning och för att säkerställa bättre latens och genomströmning på din plattform.
 

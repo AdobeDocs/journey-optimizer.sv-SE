@@ -4,22 +4,16 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: ae7585473373e23da02f16c0b43ab0b1b29f356d
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
-source-wordcount: '2947'
-ht-degree: 16%
+source-wordcount: '2874'
+ht-degree: 15%
 
 ---
 
 # Dokumentationsuppdateringar {#latest-updates}
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
-
-## Juni 2023 {#june-2023}
-
-* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version från 23 juni finns utförlig i dokumentationen. [Läs mer](release-notes.md)
-* Ytterligare exempel på ordningen för utvärderingskriterier har lagts till i **Skapa beslut** för att illustrera fall där flera kriterier och flera beslutsomfattningar används. [Läs mer](../offers/offer-activities/create-offer-activities.md#evaluation-criteria-order)
-* Dokumentationen för beslutshantering har klargjorts med en anteckning som anger att åtkomstkontrollen på objektnivå inte är tillgänglig för dynamiska samlingar. [Läs mer](../offers/offer-library/creating-collections.md)
 
 ## Maj 2023 {#may-2023}
 
@@ -48,7 +42,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Ett steg har lagts till för att aktivera Adobe Analytics-event på dina resor. [Läs mer](../event/about-analytics.md)
 * Ett nytt avsnitt har skapats i beslutshanteringshandboken om hur man samlar in feedback från offera decisioningar i Adobe Experience Platform, inklusive vilka erbjudanden som visas och hur användare interagerar med dem. [Läs mer](../offers/data-collection/data-collection.md)
 * Ett nytt underavsnitt har lagts till i **Skapa beslut** för att förklara skillnaden mellan att utvärdera kriterier i en sekventiell ordning eller samtidigt. [Läs mer](../offers/offer-activities/create-offer-activities.md#evaluation-criteria-order)
-* Ett skyddsräcke har lagts till för att läsa segmentresor med stegvis läsning. Du kan inte skapa en ny version, du måste duplicera resan. [Läs mer](../start/guardrails.md#journey-versions-g)
+* Ett skyddsräcke har lagts till för läsning av målgruppsresor med stegvis läsning. Du kan inte skapa en ny version, du måste duplicera resan. [Läs mer](../start/guardrails.md#journey-versions-g)
 
 ## Februari 2023 {#feb-2023}
 
@@ -94,7 +88,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 ## September 2022 {#september-2022}
 
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Septemberversionen 22 har detaljerats i dokumentationen. [Läs mer](release-notes.md)
-* Lagt till en metodtips som är relaterad till användningen av vänteaktiviteter i återkommande lässegmentsresor. [Läs mer](../building-journeys/read-segment.md#configuring-segment-trigger-activity)
+* Lagt till en metodtips som rör användningen av vänteaktiviteter i återkommande läsningar. [Läs mer](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
 * Frågeexempel för det nya steget har lagts till samt information om skillnaden mellan id, instanceid och profileid. [Läs mer](../reports/query-examples.md).
 * Uppdaterade sidor relaterade till [toDateOnly](../building-journeys/functions/functiontodateonly.md) och [toString](../building-journeys/functions/functiontostring.md) funktioner.
 * Information om tidsvillkorsparametrar har lagts till. [Läs mer](../building-journeys/condition-activity.md#time_condition)
@@ -109,7 +103,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version 22 augusti finns utförlig i dokumentationen. [Läs mer](release-notes.md)
 * Avsnittet Frekvensregler har uppdaterats för att återspegla det nya textbundna meddelandeflödet. [Läs mer](../configuration/frequency-rules.md#apply-frequency-rule)
 * En video som visar hur du konfigurerar prenumerationer och skapar landningssidor finns nu i avsnittet Kom igång med landningssidor. [Läs mer](../landing-pages/get-started-lp.md#video)
-* En begränsning har lagts till för resor som använder Läs segment-aktiviteter. [Läs mer](../building-journeys/read-segment.md)
+* En begränsning har lagts till för resor med hjälp av Läs publik-aktiviteter. [Läs mer](../building-journeys/read-audience.md)
 * Operatorsidan för uttrycksredigeraren har förbättrats. [Läs mer](../building-journeys/expression/operators.md)
 * Ett avsnitt om schemaläggning av en kampanj har lagts till. [Läs mer](../campaigns/create-campaign.md)
 * Avsnittet med allmänna syntaxregler för uttrycksredigeraren har uppdaterats för att ta hänsyn till den nya regeln för den omvända snedstreckssymbol som undgår bokstavsfunktioner. De befintliga publicerade meddelandena påverkas inte av den här ändringen. Endast de nya meddelandena eller utkastmeddelandena måste uppdateras. [Läs mer](../personalization/personalization-syntax.md#general-rules)
@@ -120,7 +114,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * The **Konfigurera kanalytor** -avsnittet har klargjorts och uppdaterats med länkar till sidan som beskriver hur SMS-kanalen konfigureras. [Läs mer](../configuration/channel-surfaces.md#create-channel-surface)
 * I reseegenskaperna **Tidszon för profil** är nu inaktiverat som standard. [Läs mer](../building-journeys/timezone-management.md#timezone-from-profiles)
 * I **Vänta** aktivitet, **Fast datum** är inte längre tillgängligt. [Läs mer](../building-journeys/wait-activity.md)
-* Ytterligare information om **Inkrementell läsning** i **Lässegment** aktivitet. [Läs mer](../building-journeys/read-segment.md#configuring-segment-trigger-activity)
+* Ytterligare information om **Inkrementell läsning** i **Läsa målgrupper** aktivitet. [Läs mer](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
 * Rekommendationer om **Profilände** villkorstyp. [Läs mer](../building-journeys/condition-activity.md#profile_cap)
 * Lagt till en begränsning av affärshändelser. [Läs mer](../start/guardrails.md#events-g)
 
@@ -142,7 +136,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 ## Maj 2022 {#may-2022}
 
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version från maj 22 finns utförlig i dokumentationen. [Läs mer](release-notes.md)
-* Nya frågeexempel relaterade till [segmentkvalificering](../reports/query-examples.md#segment-qualification-queries) och [händelser](../reports/query-examples.md#event-based-queries) har lagts till.
+* Nya frågeexempel relaterade till [målgruppsklassificering](../reports/query-examples.md#segment-qualification-queries) och [händelser](../reports/query-examples.md#event-based-queries) har lagts till.
 * I avsnittet för e-postdesign omnämns nu nya inbyggda mallar som kan användas för att börja innehåll med. Relaterade skärmbilder har uppdaterats. [Läs mer](../email/get-started-email-design.md)
 * Länkar till viktiga resurser har uppdaterats på Journey Optimizer dokumentationsstartsida.
 * Skärmbilder för landningssidor och prenumerationsrapporter har uppdaterats. [Läs mer](../reports/live-report.md)
@@ -166,7 +160,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Mars 22-utgåvan finns utförlig i dokumentationen. [Läs mer](release-notes.md)
 * En ny sida om hur du kommer igång med AI-modeller har lagts till i **Offer decisioning** med en detaljerad beskrivning av [autooptimeringsmodell](../offers/ranking/auto-optimization-model.md), den algoritm som används och mer teknisk information. [Läs mer](../offers/ranking/ai-models.md)
-* Sidan där testprofilen skapades har flyttats till  **Segment, profiler och identitet** -avsnitt. [Läs mer](../segment/creating-test-profiles.md)
+* Sidan där testprofilen skapades har flyttats till  **Målgrupp, profiler och identitet** -avsnitt. [Läs mer](../audience/creating-test-profiles.md)
 * Ett exempel har lagts till om hur du lägger till ett uttryck som ett standardvärde i uttrycksredigeraren. [Läs mer](../building-journeys/expression/field-references.md#default-value)
 * The **Skapa personaliserade erbjudanden** -avsnittet har omstrukturerats för förbättrad läsbarhet. [Läs mer](../offers/offer-library/creating-personalized-offers.md)
 * Ett nytt avsnitt har lagts till för att beskriva den påverkan som ett byte av ett erbjudandes start- och/eller slutdatum kan ha på det här erbjudandets frekvensbegränsning. [Läs mer](../offers/offer-library/add-constraints.md#capping-change-date)
@@ -232,7 +226,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 * Nu gäller alla funktioner för beslutshantering som beskrivs i det särskilda avsnittet även för Adobe Experience Platform-användare som använder Offera decisioningens programtjänst. [Läs mer](../offers/get-started/starting-offer-decisioning.md)
 
-* Ett underavsnitt lades till för att förtydliga skillnaderna mellan att använda segment kontra beslutsregler när en begränsning tillämpas för att begränsa urvalet av erbjudanden för en viss placering. [Läs mer](../offers/offer-activities/create-offer-activities.md#segments-vs-decision-rules)
+* Lagt till ett underavsnitt för att förtydliga skillnaderna mellan att använda målgrupper jämfört med beslutsregler när en begränsning tillämpas för att begränsa urvalet av erbjudanden för en viss placering. [Läs mer](../offers/offer-activities/create-offer-activities.md#segments-vs-decision-rules)
 
 * Specifika exempel på rankningsformler har lagts till för att illustrera exempel på verkliga användningsområden. [Läs mer](../offers/ranking/create-ranking-formulas.md#ranking-formula-examples)
 
@@ -245,7 +239,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Uppdaterade skärmbilder för e-postdesigner med det senaste användargränssnittet.
 * Konfigurationsproceduren för anpassade åtgärder med dynamiska URL-sökvägar och dynamiska huvuden har uppdaterats. [Läs mer](../action/about-custom-action-configuration.md#url-configuration)
 * Ett avsnitt om tillgänglighetsfunktioner och genvägar har lagts till. [Läs mer](../start/user-interface.md#accessibility)
-* Ett avsnitt om metoder för segmentutvärdering har lagts till. [Läs mer](../segment/about-segments.md#evaluation-method-in-journey-optimizer)
+* Ett avsnitt om metoder för målgruppsutvärdering har lagts till. [Läs mer](../audience/about-audiences.md#evaluation-method-in-journey-optimizer)
 * Anteckningar har lagts till i avsnitten om Suppression-listan, Tillåtelselista och e-post, global/liverapport, för att ange att profiler med statusen Inaktiverad och Inte tillåten ska uteslutas från e-postrapporten Skickade mått. [Läs mer](../reports/global-report.md)
 * Ett nytt avsnitt har lagts till som beskriver hur du hämtar e-postadresser eller domäner som har uteslutits från en sändning eftersom de inte fanns på tillåtelselista. [Läs mer](../configuration/allow-list.md#reporting)
 * Avsnittet Aktivera tillåtelselista har uppdaterats. [Läs mer](../configuration/allow-list.md#enable-allow-list)
@@ -269,7 +263,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Ett underavsnitt har lagts till på spegelsidor. [Läs mer](../email/message-tracking.md#mirror-page)
 * Namnet på&quot;erbjudandeaktiviteter&quot; har ändrats till&quot;beslut&quot; och&quot;beslut&quot; till&quot;beslutsomfattningar&quot; i dokumentation och skärmar. [Läs mer](../offers/get-started/starting-offer-decisioning.md)
 * Nytt användningsfall: [personalisera ett meddelande med hjälpfunktioner](../personalization/personalization-use-case-helper-functions.md)
-* Dokumentationen för Läs segment har uppdaterats för att återspegla materialiserad segmentpåverkan. [Läs mer](../building-journeys/read-segment.md)
+* Uppdaterade läsningsdokumentationen för att spegla segmentets faktiska påverkan. [Läs mer](../building-journeys/read-audience.md)
 * Uppdaterade begränsningar för resan. [Läs mer](../start/guardrails.md)
 * Markeringen Konfigurera erbjudanden uppdaterades i avsnittet Beslut. [Läs mer](../offers/offer-activities/configure-offer-selection.md)
 * En varning har lagts till som anger att händelsebaserade erbjudanden för närvarande inte stöds. [Läs mer](../offers/offer-library/creating-personalized-offers.md#eligibility)

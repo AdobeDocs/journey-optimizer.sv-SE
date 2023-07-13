@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: resa, händelser, reaktion, spårning, plattform
 exl-id: 235384f3-0dce-4797-8f42-1d4d01fa42d9
-source-git-commit: b011b979aaab7568ca951982a59ad676d05c5595
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 2%
@@ -51,4 +51,4 @@ Här följer de olika stegen för att konfigurera reaktionshändelser:
 
 >[!IMPORTANT]
 >
->E-postklienter som Gmail tillåter bildblockering. E-postöppningar spåras med en bild på 0 pixlar som ingår i e-postmeddelandet. Om bilder blockeras kommer e-postöppningar inte att beaktas.
+>E-postklienter som Gmail tillåter bildblockering. E-postmeddelanden som öppnas spåras med en bild på 0 pixlar som ingår i e-postmeddelandet. Om bilder blockeras kommer e-postöppningar inte att beaktas.

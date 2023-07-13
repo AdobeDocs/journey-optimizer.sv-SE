@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: skräddarsydd, allmän, evenemang, resa
 exl-id: b1813122-7031-452e-9ac5-a4ea7c6dc57c
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 2%
@@ -29,7 +29,7 @@ För den här händelsetypen kan du bara lägga till en etikett och en beskrivni
 
 ![](assets/general-events.png)
 
-När du släpper en affärshändelse läggs en **Läs segment** aktivitet. Mer information om affärshändelser finns i [det här avsnittet](../event/about-events.md)
+När du släpper en affärshändelse läggs en **Läs målgrupp** aktivitet. Mer information om affärshändelser finns i [det här avsnittet](../event/about-events.md)
 
 ## Lyssna på händelser under en viss tid {#events-specific-time}
 

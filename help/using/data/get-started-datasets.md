@@ -7,7 +7,7 @@ role: User
 level: Beginner
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
 exl-id: dcdd3c81-0f00-4259-a8a5-9062a4c40b6f
-source-git-commit: 59499dec7d15dd4565c7910d7b454d82243ff011
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 1%
@@ -40,9 +40,9 @@ Här är de olika datamängderna som är tillgängliga:
 
 **Rapportering**
 
-* _Rapportering - händelsedatauppsättning för meddelandefeedback_: Meddelandeleveransloggar. Information om alla meddelandeleveranser från Journey Optimizer för rapportering och skapande av segment. Feedback från e-postleverantörer om studsar registreras också i den här datauppsättningen.
-* _Rapportering - händelsedatauppsättning för e-postspårning_: Interaktionsloggar för e-postkanal som används för att skapa rapporter och segment. Information som lagras om åtgärder som slutanvändaren utför via e-post (öppningar, klick etc.).
-* _Rapportering - händelsedatauppsättning för push-spårning_: Interaktionsloggar för push-kanal som används för att skapa rapporter och segment. Information som lagras om åtgärder som slutanvändaren utför i push-meddelanden.
+* _Rapportering - händelsedatauppsättning för meddelandefeedback_: Meddelandeleveransloggar. Information om alla mejl från Journey Optimizer för rapportering och målgruppsframställning. Feedback från e-postleverantörer om studsar registreras också i den här datauppsättningen.
+* _Rapportering - händelsedatauppsättning för e-postspårning_: Interaktionsloggar för e-postkanal som används för att skapa rapporter och målgrupper. Information som lagras om åtgärder som slutanvändaren utför via e-post (öppningar, klick etc.).
+* _Rapportering - händelsedatauppsättning för push-spårning_: Interaktionsloggar för push-kanal som används för att skapa rapporter och målgrupper. Information som lagras om åtgärder som slutanvändaren utför i push-meddelanden.
 * _Rapportering - resesegmentshändelse_: Hämtar alla händelser av typen&quot;Journey Step Experience&quot; som genererats från Journey Optimizer och som ska användas av tjänster som Reporting. Viktigt för att skapa rapporter i Customer Journey Analytics för YY-analys. Kopplad till en resemetadata.
 * _Rapportering - Resor_: Införlivningsinformation för metadatadatauppsättningar för varje steg i en resa.
 * _Rapportering - hemlig kopia_: Feedback Event Dataset som lagrar leveransloggar för BCC-e-postmeddelanden. Ska användas för rapportering.
@@ -88,7 +88,7 @@ Läs mer om datastyrning och etiketter för dataanvändning i [Dokumentation fö
 
 ## Exempel och användningsområden{#uc-datasets}
 
-Lär dig hur du skapar ett schema, en datauppsättning och importerar data för att lägga till testprofiler i Adobe Journey Optimizer i [detta kompletta exempel](../segment/creating-test-profiles.md)
+Lär dig hur du skapar ett schema, en datauppsättning och importerar data för att lägga till testprofiler i Adobe Journey Optimizer i [detta kompletta exempel](../audience/creating-test-profiles.md)
 
 Läs mer om att skapa datauppsättningar i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"}.
 

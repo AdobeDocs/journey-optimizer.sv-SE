@@ -9,7 +9,7 @@ role: Admin,Developer
 level: Experienced
 keywords: politik, styrning, plattform, hälso- och sjukvård, samtycke
 exl-id: 01ca4b3e-3778-4537-81e9-97ef92c9aa9e
-source-git-commit: c235e7cd77e50a15a12f6ed14e51ca4185ecb7c2
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 0%
@@ -37,14 +37,14 @@ I Journey Optimizer kan man utnyttja samtycke i anpassade åtgärder. Om du vill
 
 Med samtyckeshantering analyseras två olika reseaktiviteter:
 
-* Lässegment: det hämtade segmentet beaktas.
+* Läsare: den hämtade målgruppen beaktas.
 * Anpassad åtgärd: när det gäller hantering av samtycke beaktas de attribut som används ([åtgärdsparametrar](../action/about-custom-action-configuration.md#define-the-message-parameters)) och de definierade marknadsföringsåtgärderna (nödvändiga marknadsföringsåtgärder och ytterligare marknadsföringsåtgärder).
 * Attribut som är en del av en fältgrupp som använder det färdiga unionsschemat stöds inte. Dessa attribut döljs från gränssnittet. Du måste skapa en annan fältgrupp med ett annat schema.
 * Samtyckesprinciper gäller bara när en marknadsföringsåtgärd (obligatorisk eller ytterligare) har ställts in på den anpassade åtgärdsnivån.
 
-Alla andra aktiviteter som används under en resa beaktas inte. Om du påbörjar en resa med en segmentkvalificering beaktas inte segmentet.
+Alla andra aktiviteter som används under en resa beaktas inte. Om du påbörjar en resa med en publikkompetens beaktas inte målgruppen.
 
-Om en profil utesluts under en resa genom en samtyckespolicy i en anpassad åtgärd, skickas inte meddelandet till dem, men de fortsätter med resan. Profilen går inte till timeout och felsökväg när ett villkor används.
+Om en profil utesluts under en resa genom en samtyckespolicy i en anpassad åtgärd, skickas inte meddelandet till honom, men han fortsätter resan. Profilen går inte till timeout och felsökväg när ett villkor används.
 
 Innan du uppdaterar principer i en anpassad åtgärd som har placerats på en resa måste du se till att resan inte innehåller något fel.
 
@@ -112,7 +112,7 @@ The following data is taken into account for consent:
 
 * marketing actions and additional marketing actions defined in the custom action
 * action parameters defined in the custom action, see this [section](../action/about-custom-action-configuration.md#define-the-message-parameters) 
-* attributes used as criteria in a segment when the journey starts with a Read segment, see this [section](../building-journeys/read-segment.md) 
+* attributes used as criteria in a segment when the journey starts with a Read segment, see this [section](../building-journeys/read-audience.md) 
 
 >[!NOTE]
 >

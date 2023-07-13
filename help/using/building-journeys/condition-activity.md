@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: aktivitet, villkor, arbetsyta, resa
 exl-id: 496c7666-a133-4aeb-be8e-c37b3b9bf5f9
-source-git-commit: 603174032552214686cc0f2b9ea0854f348ce949
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '1434'
 ht-degree: 6%
@@ -61,7 +61,7 @@ I det enkla läget kan du utföra enkla frågor baserat på en kombination av f�
 
 ![](assets/journey64.png)
 
-Om du använder [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} för att skapa era segment kan ni utnyttja dem i era resevillkor. Se [Använda segment i villkor](../building-journeys/condition-activity.md#using-a-segment).
+Om du använder [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} för att skapa era målgrupper kan ni utnyttja dem under era resor. Se [Använda målgrupper under förhållanden](../building-journeys/condition-activity.md#using-a-segment).
 
 
 >[!NOTE]
@@ -145,11 +145,11 @@ Profilände beaktas inte i testläge.
 
 ![](assets/profile-cap-condition.png)
 
-## Använda segment i villkor {#using-a-segment}
+## Använda målgrupper under förhållanden {#using-a-segment}
 
-I det här avsnittet beskrivs hur du använder ett segment i ett resevillkor. Mer information om segment och hur du skapar dem finns i [det här avsnittet](../segment/about-segments.md).
+I det här avsnittet beskrivs hur du använder en målgrupp i ett resevillkor. Mer information om målgrupper och hur du bygger dem finns i [det här avsnittet](../audience/about-audiences.md).
 
-Följ de här stegen om du vill använda ett segment i ett resevillkor:
+Så här använder du en målgrupp i ett resevillkor:
 
 1. Öppna en resa, släpp en **[!UICONTROL Condition]** och välj **Villkor för datakälla**.
    ![](assets/journey47.png)
@@ -158,10 +158,10 @@ Följ de här stegen om du vill använda ett segment i ett resevillkor:
 
    ![](assets/segment3.png)
 
-1. På vänster sida, unfold **[!UICONTROL Segments]** nod. Dra och släpp det segment som du vill använda för villkoret. Som standard är villkoret i segmentet sant.
+1. På vänster sida, unfold **[!UICONTROL Audiences]** nod. Dra och släpp den målgrupp du vill använda för ditt villkor. Som standard är villkoret för målgruppen sant.
 
    ![](assets/segment4.png)
 
    >[!NOTE]
    >
-   >Observera att endast de personer som har **Realiserad** och **Befintlig** Deltagandestatus för segment betraktas som medlemmar i segmentet. Mer information om hur du utvärderar ett segment finns i [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
+   >Observera att endast de personer som har **Realiserad** och **Befintlig** Status för målgruppsdeltagande kommer att betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.

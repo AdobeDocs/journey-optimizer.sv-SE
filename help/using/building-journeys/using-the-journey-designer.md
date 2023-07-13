@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: design, arbetsyta, resa, gränssnitt, dra, släpp
 exl-id: 1998f6fc-60fd-4038-8669-39cd55bc02d1
-source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
+source-git-commit: 9270f706d3b0693178ffc076aea2e631ba736afe
 workflow-type: tm+mt
 source-wordcount: '1614'
 ht-degree: 1%
@@ -69,11 +69,11 @@ När du utformar din resa är den första frågan du vill ställa hur profiler k
 
 1. **Börja med en händelse**: när en resa är inställd på att avlyssna händelser, kommer individer in på resan **unitärt** i realtid. Meddelanden som ingår i din resa skickas till den person som för tillfället är på väg in på resan. [Läs mer om evenemang](../event/about-events.md)
 
-1. **Börja med ett lässegment**: kan ni styra er resa så att ni lyssnar på Adobe Experience Platform segment. I det här fallet kommer alla personer som tillhör det angivna segmentet in på resan. Meddelanden som ingår i resan skickas till personer som tillhör segmentet. [Läs mer om att läsa segment](read-segment.md).
+1. **Börja med en läspublik**: kan ni sätta er resa för att lyssna på Adobe Experience Platform målgrupper. I detta fall kommer alla personer som tillhör den angivna målgruppen in på resan. Meddelanden som ingår i din resa skickas till personer som tillhör målgruppen. Läs mer om [läs målgrupp](read-audience.md).
 
 ## Definiera nästa steg{#define-next-steps}
 
-Efter din första händelse eller Läs segment kan du kombinera de olika aktiviteterna för att skapa flerstegsscenarier för flera kanaler. Välj de steg du behöver på paletten.
+Efter din första händelse eller Läs publiker kan du kombinera de olika aktiviteterna för att skapa flerstegsscenarier för flera kanaler. Välj de steg du behöver på paletten.
 
 ### Händelser{#jo-event}
 
@@ -85,13 +85,13 @@ Du kan lägga till **flera händelser** under resan, så länge de använder sam
 
 Du kan också lägga till en **Reaktion** händelse efter ett meddelande om att reagera på spårningsdata som är relaterade till meddelandet. Detta gör att du till exempel kan skicka ett till meddelande om personen öppnade det föregående meddelandet eller klickade i det. [Läs mer om reaktionshändelser](reaction-events.md).
 
-Använd **Segmentkvalificering** aktivitet för att få enskilda att komma in på eller gå vidare i en resa baserat på Adobe Experience Platform segmententréer och utträde. Ni kan få alla nya silverkunder att delta i en resa och skicka personaliserade meddelanden. Läs mer om detta [section](segment-qualification-events.md).
+Använd **Målgruppskvalifikation** Evenemangsaktiviteter som får enskilda att komma in på eller gå framåt i en resa baserat på Adobe Experience Platform entréer och utgångar. Ni kan få alla nya silverkunder att delta i en resa och skicka personaliserade meddelanden. Läs mer om detta [section](audience-qualification-events.md).
 
 ### Orchestration{#jo-orch}
 
 Orchestration-aktiviteter är olika villkor som hjälper till att bestämma nästa steg i resan.
 
-I orkestreringsaktiviteterna använder du **Läs segment** -aktivitet för att få din resa att lyssna på ett Adobe Experience Platform-segment. [Läs mer om Läs segment-aktiviteten](read-segment.md).
+I orkestreringsaktiviteterna använder du **Läs målgrupp** för att få din resa att lyssna på en Adobe Experience Platform-publik. [Läs mer om aktiviteten Läs målgrupp](read-audience.md).
 
 Med de andra aktiviteterna kan du lägga till villkor för din resa för att definiera flera olika vägar, ange en väntetid innan nästa aktivitet utförs eller avsluta din resa. [Läs mer om orkestreringsaktiviteter](about-journey-activities.md#orchestration-activities).
 

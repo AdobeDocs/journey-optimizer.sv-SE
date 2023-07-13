@@ -7,7 +7,7 @@ feature: Accessibility
 role: User
 level: Beginner
 exl-id: d971c04c-9b37-4cd7-8a2d-b915e394079b
-source-git-commit: c823d1a02ca9d24fc13eaeaba2b688249e61f767
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 2%
@@ -123,7 +123,7 @@ Konfigurationsruta för dessa element:
   <tr>
     <td>
 
-Utlös en händelse i en segmentbaserad resa för vilken **[!UICONTROL Single profile at a time]** alternativ är aktiverat
+Utlös ett event i en målgruppsbaserad resa för vilken **[!UICONTROL Single profile at a time]** alternativ är aktiverat
 
 </td>
     <td>P</td>

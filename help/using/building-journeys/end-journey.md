@@ -8,7 +8,7 @@ role: User
 level: Beginner
 keywords: återinträde, resa, slut, live, stopp
 exl-id: ea1ecbb0-12b5-44e8-8e11-6d3b8bff06aa
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 3%
@@ -54,7 +54,7 @@ En resa kan avslutas på grund av följande orsaker:
 
 * Resan stängs manuellt via **[!UICONTROL Close to new entrances]** -knappen.
 * En segmentbaserad resa som utförts i ett enda steg.
-* Efter den sista förekomsten av en återkommande segmentbaserad resa.
+* Efter den sista förekomsten av en återkommande målgruppsbaserad resa.
 
 Genom att stänga en resa manuellt försäkrar du dig om att kunder som redan har gått in på resan kan slutföra sin resa, men att nya användare inte kan ta sig in på resan. När en resa stängs (av någon av anledningarna ovan) får den statusen **[!UICONTROL Closed]**. Resan slutar med att nya individer kan komma in på resan. Personer som redan är på resan kan slutföra resan normalt. Efter den globala standardtidsgränsen på 30 dagar växlar resan till **Slutförd** status. Se det här [section](../building-journeys/journey-gs.md#global_timeout).
 

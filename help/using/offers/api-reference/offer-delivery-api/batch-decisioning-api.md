@@ -1,12 +1,12 @@
 ---
 title: API för gruppbeslut
-description: Lär dig hur du använder API:t för gruppbeslut för att välja de bästa erbjudandena för segmenterade profiler inom ett fördefinierat beslutsområde.
+description: Lär dig hur du använder API:t för gruppbeslut för att välja de bästa erbjudandena för målgruppsprofiler inom ett fördefinierat beslutsområde.
 feature: Offers
 topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 1ed01a6b-5e42-47c8-a436-bdb388f50b4e
-source-git-commit: 59499dec7d15dd4565c7910d7b454d82243ff011
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 1%
@@ -16,9 +16,9 @@ ht-degree: 1%
 
 # Leverera erbjudanden med [!DNL Batch Decisioning] API {#deliver-offers-batch}
 
-The [!DNL Batch Decisioning] Med API kan organisationer använda beslutsfunktioner för alla profiler i ett visst segment i ett enda anrop. Erbjudandeinnehållet för varje profil i segmentet placeras i en Adobe Experience Platform-datauppsättning där det är tillgängligt för anpassade grupparbetsflöden.
+The [!DNL Batch Decisioning] Med API kan organisationer använda beslutsfunktioner för alla profiler i en viss målgrupp i ett enda anrop. Erbjudandeinnehållet för varje profil i målgruppen placeras i en Adobe Experience Platform-datauppsättning där det är tillgängligt för anpassade grupparbetsflöden.
 
-Med [!DNL Batch Decisioning] API kan du fylla i en datauppsättning med de bästa erbjudandena för alla profiler i ett Adobe Experience Platform-segment för beslutsomfattningar. En organisation kanske vill köra [!DNL Batch Decisioning] så att de kan skicka erbjudanden till en meddelandeleverantör. Erbjudandena används sedan som innehåll som skickas ut för batchmeddelandeleverans till samma användarsegment.
+Med [!DNL Batch Decisioning] API kan ni fylla i en datauppsättning med de bästa erbjudandena för alla profiler i en Adobe Experience Platform-målgrupp för beslutsomfattningar. En organisation kanske vill köra [!DNL Batch Decisioning] så att de kan skicka erbjudanden till en meddelandeleverantör. Erbjudandena används sedan som innehåll som skickas ut för batchmeddelandeleverans till samma målgrupp.
 
 För att göra detta skulle organisationen:
 
@@ -30,7 +30,7 @@ För att göra detta skulle organisationen:
 
 * Exportera datauppsättningen till meddelandeleverantörens API.
 
-<!-- (Refer to the [export jobs endpoint documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html) to learn more about exporting segments.) -->
+<!-- (Refer to the [export jobs endpoint documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=en) to learn more about exporting audiences.) -->
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Innan du använder detta API måste du utföra följande steg.
 
 ### Förbered beslutet {#prepare-decision}
 
-Om du vill förbereda ett eller flera beslut måste du skapa en datauppsättning, ett segment och ett beslut. Dessa förutsättningar beskrivs närmare i [det här avsnittet](../../batch-delivery.md).
+Om du vill förbereda ett eller flera beslut måste du skapa en datauppsättning, en målgrupp och ett beslut. Dessa förutsättningar beskrivs närmare i [det här avsnittet](../../batch-delivery.md).
 
 ### API-krav {#api-requirements}
 
@@ -104,7 +104,7 @@ curl -X POST 'https://platform.adobe.io/data/core/ode/0948b1c5-fff8-3b76-ba17-90
 
 | Egenskap | Beskrivning | Exempel |
 | -------- | ----------- | ------- |
-| `xdm:segmentIds` | Värdet är en array som innehåller segmentets unika identifierare. Den får bara innehålla ett värde. | `609028e4-e66c-4776-b0d9-c782887e2273` |
+| `xdm:segmentIds` | Värdet är en array som innehåller målgruppens unika identifierare. Den får bara innehålla ett värde. | `609028e4-e66c-4776-b0d9-c782887e2273` |
 | `xdm:dataSetId` | DataSet-utdata som beslutshändelser kan skrivas till. | `6196b4a1a63bd118dafe093c` |
 | `xdm:propositionRequests` | En wrapper som innehåller `placementId` och `activityId` |  |
 | `xdm:activityId` | Beslutets unika identifierare. | `xcore:offer-activity:1410cdcda196707b` |

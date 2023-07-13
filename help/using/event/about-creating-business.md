@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: händelse, resa, affärsmannaskap, konfiguration
 exl-id: 39eb40e1-d7f5-4a8e-9b64-c620940d5ff2
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '1119'
 ht-degree: 9%
@@ -25,7 +25,7 @@ ht-degree: 9%
 
 Till skillnad från enhetshändelser är affärshändelser inte länkade till en viss profil. Händelse-ID-typen är alltid regelbaserad. Läs mer om affärsevenemang i [det här avsnittet](../event/about-events.md).
 
-Lässegmentbaserade resor kan aktiveras i ett enda steg, av en schemaläggare regelbundet eller av en affärshändelse, när händelsen inträffar.
+Läsningen av målgruppsbaserade resor kan aktiveras i ett enda försök, av en schemaläggare regelbundet eller av en affärshändelse, när händelsen inträffar.
 
 Affärshändelser kan vara&quot;en produkt är tillbaka i lager&quot;,&quot;ett företags aktiekurs når ett visst värde&quot; osv.
 
@@ -39,12 +39,12 @@ Affärshändelser kan vara&quot;en produkt är tillbaka i lager&quot;,&quot;ett 
 * Händelseschemat måste innehålla en icke-personbaserad primär identitet. Följande fält måste markeras när händelsen definieras: `_id` och `timestamp`
 * Affärsevenemang kan bara tas bort som det första steget i en resa.
 * När du släpper en affärshändelse som första steg i en resa blir transportens schemaläggartyp&quot;affärshändelse&quot;.
-* Det går bara att ta bort en lässegmentaktivitet efter en affärshändelse. Det läggs automatiskt till som nästa steg.
+* Bara en läsmålgruppsaktivitet kan tas bort efter en affärshändelse. Det läggs automatiskt till som nästa steg.
 * Aktivera motsvarande alternativ i dialogrutan **[!UICONTROL Execution]** del av resans egenskaper.
-* När en affärshändelse har utlösts uppstår en fördröjning om segmentet exporteras från 15 minuter till upp till en timme.
+* När en affärshändelse har utlösts blir det en fördröjning att exportera målgruppen från 15 minuter till upp till en timme.
 * När du testar en affärshändelse måste du godkänna händelseparametrarna och identifieraren för den testprofil som kommer att gå in i testet. När du testar en affärshändelsebaserad resa kan du dessutom bara utlösa en enskild profilentré. Se [det här avsnittet](../building-journeys/testing-the-journey.md#test-business). I testläge finns inget kodläge tillgängligt.
 * Vad händer med individer som för närvarande är på resa om en ny affärshändelse inträffar? Det fungerar på samma sätt som när enskilda personer fortfarande befinner sig på en återkommande resa när ett nytt återkommande händer. Deras väg är slut. Därför måste marknadsförarna vara uppmärksamma på att de inte behöver skapa för långa resor om de förväntar sig återkommande affärshändelser.
-* Affärshändelser kan inte användas tillsammans med enhetshändelser eller aktiviteter för att bedöma segment.
+* Affärsevenemang kan inte användas tillsammans med enhetsevenemang eller målgruppsaktiviteter.
 
 ## Flera affärshändelser {#multiple-business-events}
 
@@ -54,9 +54,9 @@ Här är några viktiga kommentarer som gäller när flera affärshändelser tas
 
 Affärshändelser följer reglerna för återinträde på samma sätt som för enhetshändelser. Om en resa tillåter återinträde kommer nästa affärshändelse att behandlas.
 
-**Vilka skyddsräcken finns för att undvika att överbelasta materialiserade segment?**
+**Vilka är skyddsräckena för att undvika att överbelasta materialiserade målgrupper?**
 
-När det gäller företagsevenemang som tagits under en viss resa återanvänds data som drivs av det första händelsejobbet under en 1-timmars tidsperiod. För schemalagda resor finns det ingen garanti. Läs mer om segment i [Dokumentation för Adobe Experience Platform Segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
+När det gäller företagsevenemang som tagits under en viss resa återanvänds data som drivs av det första händelsejobbet under en 1-timmars tidsperiod. För schemalagda resor finns det ingen garanti. Läs mer om målgrupper i [Dokumentation för Adobe Experience Platform Segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
 
 ## Kom igång med affärsevenemang {#gs-business-events}
 

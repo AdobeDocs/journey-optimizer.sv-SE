@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: landning, landningssida, lista, prenumeration, service
 exl-id: 5e5419a0-5121-4aa7-a975-b1f08e2918c9
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 1%
@@ -76,7 +76,7 @@ Möjliga statusvärden är följande:
 
 När prenumerationslistan har skapats kan du använda den på en landningssida. De profiler som anmäler sig via landningssidans formulär läggs till i listan. [Läs mer](design-lp.md)
 
-Du kan också använda prenumerationslistor som segment när [byggnadsresor](../building-journeys/journey-gs.md#jo-build) och lägga till personalisering.
+Du kan också använda prenumerationslistor som målgrupper när [byggnadsresor](../building-journeys/journey-gs.md#jo-build) och lägga till personalisering.
 
 >[!NOTE]
 >

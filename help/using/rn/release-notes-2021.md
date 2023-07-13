@@ -4,7 +4,7 @@ product: journey optimizer
 title: Information om föregående version (2021)
 description: Versionsinformation om Journey Optimizer 2021
 exl-id: 0e43be98-f471-4860-be84-8f99ab93e983
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '2065'
 ht-degree: 9%
@@ -65,7 +65,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <tbody>
 <tr>
 <td>
-<p>Nu kan ni personalisera innehållet i era erbjudanden med Adobe Experience Platform profilattribut och segment, med samma uttrycksredigeringskomponent som finns i hela Journey Optimizer användargränssnitt. </p>
+<p>Nu kan ni personalisera innehållet i era erbjudanden med Adobe Experience Platform-profilattribut och målgrupper, med samma uttrycksredigeringskomponent som finns i hela Journey Optimizer användargränssnitt. </p>
 <p>Mer information finns i den <a href="../offers/offer-library/creating-personalized-offers.md#custom-text">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
@@ -79,7 +79,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 
 **Resor**
 
-* **Uttrycksredigerare** - Som kraftfull användare kan du nu använda funktioner för att arbeta med kartor. Den här funktionen kan utnyttjas med prenumerationslistorna. Från ett segment kan du nu till exempel hämta en e-postadress från en prenumerationslista. [Läs mer i det här exemplet](../building-journeys/message-to-subscribers-uc.md)
+* **Uttrycksredigerare** - Som kraftfull användare kan du nu använda funktioner för att arbeta med kartor. Den här funktionen kan utnyttjas med prenumerationslistorna. Från en viss målgrupp kan du nu till exempel få en e-postadress från en prenumerationslista. [Läs mer i det här exemplet](../building-journeys/message-to-subscribers-uc.md)
 
 * **Övervakning** - Steghändelser för direktresor och testläge har förbättrats. [Nya fält](../reports/sharing-field-list.md#serviceevents) har lagts till i samband med profilexportjobb. För en bättre användarupplevelse är steghändelsefält nu ordnade i olika kategorier. Alla föregående steg-händelsefält är fortfarande tillgängliga i [stepEvents](../reports/sharing-legacy-fields.md) kategori.
 * **Tillgänglighet** - Tillgänglighetsförbättringar har införts under resor.
@@ -262,12 +262,12 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 
 * **Dynamiska rubriker** - Du kan nu skicka dynamiska data i HTTP-rubrikparametrar. De här parametrarna kan användas av de integreringssystem som tar emot resans åtgärd via HTTP-anrop, till exempel tidsstämpel eller spårnings-ID. [Läs mer](../action/about-custom-action-configuration.md#url-configuration)
 * **Dynamiska URL-sökvägar** - Nu kan du ställa in dynamiska URL-sökvägar för anpassade åtgärder. [Läs mer](../action/about-custom-action-configuration.md#url-configuration)
-* Den totala begränsningsfrekvensen för lässegment har ändrats från 17 000 till 20 000 meddelanden per sekund. [Läs mer](../building-journeys/read-segment.md#configuring-segment-trigger-activity)
+* Den totala begränsningsfrekvensen för läsmålgrupper har ändrats från 17 000 till 20 000 meddelanden per sekund. [Läs mer](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
 
 **Användargränssnitt**
 
 * **Sök** - På varje sida kan du nu söka efter affärsobjekt och hjälpartiklar direkt från sökfältet för enhetliga Experience Cloud. [Läs mer](../start/user-interface.md#unified-search)
-* **Senaste** - Visningen av de senaste elementen från Adobe Journey Optimizer hemsida har nu utökats till ytterligare affärsobjekt. I den här uppdateringen finns genvägar till nyligen använda meddelanden, resor, segment, scheman, datauppsättningar, datakällor, händelser, åtgärder, källor och mål. [Läs mer](../action/about-custom-action-configuration.md#passing-collection)
+* **Senaste** - Visningen av de senaste elementen från Adobe Journey Optimizer hemsida har nu utökats till ytterligare affärsobjekt. I den här uppdateringen finns genvägar till dina senast använda meddelanden, resor, målgrupper, scheman, datauppsättningar, datakällor, händelser, åtgärder, källor och mål. [Läs mer](../action/about-custom-action-configuration.md#passing-collection)
 
 **Innehållsdesign**
 
@@ -337,12 +337,12 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 
 **Resor**
 
-* Den totala begränsningsfrekvensen för alla lässegment som körs samtidigt i samma sandlåda är begränsad till 17 000 meddelanden per sekund. [Läs mer](../building-journeys/read-segment.md#configuring-segment-trigger-activity)
+* Den totala begränsningsfrekvensen för alla läsmålgrupper som körs samtidigt i samma sandlåda är begränsad till 17 000 meddelanden per sekund. [Läs mer](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
 * The **Cachevaraktighet** -fältet har tagits bort från konfigurationspanelen för datakällan. [Läs mer](../datasource/about-data-sources.md)
 * För externa datakällor definieras nu en begränsningsregel på 15 anrop per sekund automatiskt. [Läs mer](../configuration/external-systems.md#capping)
 * För direktresor visas nu publiceringsdatumet och namnet på den användare som publicerade resan på skärmen för reseegenskaper. [Läs mer](../building-journeys/journey-gs.md#change-properties)
 * På skärmen för reselistan har filtret för resetyp lagts till. [Läs mer](../start/user-interface.md#filter-lists)
-* The **[!UICONTROL Throttling rate]** parametern har lagts till i Läs-segmentsaktiviteten. [Läs mer](../building-journeys/read-segment.md#configuring-segment-trigger-activity)
+* The **[!UICONTROL Throttling rate]** parametern har lagts till i aktiviteten Läsa målgrupp. [Läs mer](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
 
 **Förhandsgranska och testa**
 

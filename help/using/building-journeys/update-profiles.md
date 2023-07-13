@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: profil, uppdatering, resa, aktivitet
 exl-id: 8b2b2d1e-9bd1-439d-a15e-acdbab387c4b
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 0%
@@ -58,11 +58,11 @@ Använd **[!UICONTROL Update Profile]** Åtgärdsaktivitet för att uppdatera en
 
    * Med den enkla uttrycksredigeraren kan du välja ett fält från en datakälla eller från den inkommande händelsen.
 
-      ![](assets/profileupdate4.png)
+     ![](assets/profileupdate4.png)
 
    * Om du vill definiera ett specifikt värde eller använda avancerade funktioner klickar du på **Avancerat läge**.
 
-      ![](assets/profileupdate3.png)
+     ![](assets/profileupdate3.png)
 
 The **Uppdatera profil** har konfigurerats.
 
@@ -75,4 +75,4 @@ I testläge simuleras inte profiluppdateringen. Uppdateringen utförs på testpr
 
 Det är bara testprofiler som kan gå in på en resa i testläge. Du kan antingen skapa en ny testprofil eller omvandla en befintlig profil till en testprofil. I Adobe Experience Platform kan du uppdatera profilattribut via csv-filimport eller API-anrop. En enklare metod är att använda en **Uppdatera profil** Åtgärdsaktivitet och ändra testprofilens booleska fält från false till true.
 
-Mer information om hur du omvandlar en befintlig profil till en testprofil finns i [section](../segment/creating-test-profiles.md#create-test-profiles-csv).
+Mer information om hur du omvandlar en befintlig profil till en testprofil finns i [section](../audience/creating-test-profiles.md#create-test-profiles-csv).

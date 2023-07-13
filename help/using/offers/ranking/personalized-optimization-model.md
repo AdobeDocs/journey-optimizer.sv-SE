@@ -7,7 +7,7 @@ feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: c73b3092-e96d-4957-88e6-500e99542782
-source-git-commit: 4f331eff73991c32682ba2c1ca5f6b7341a561e1
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 0%
@@ -26,7 +26,7 @@ För att maximera fördelen med automatisk personalisering finns det vissa vikti
 
 * **Erbjudandena är tillräckligt olika så att användarna får olika preferenser bland erbjudandena i fråga**. Om erbjudandena är för lika kommer en resulterande modell att få mindre effekt eftersom svaren verkar vara slumpmässiga.
 Om en bank t.ex. har två kreditkort med den enda skillnaden att vara färg, spelar det ingen roll vilket kort som rekommenderas, men om varje kort har olika villkor, ger detta en logisk grund för varför vissa kunder skulle välja ett och ger tillräckligt stor skillnad mellan erbjudandena för att skapa en mer slagkraftig modell.
-* **Användarens trafikkomposition är stabil**. Om användartrafikens sammansättning ändras dramatiskt under modellutbildning och -prediktion kan modellens prestanda försämras. Anta till exempel att det i modellutbildningsfasen bara finns data tillgängliga för användare i segment A, men den tränade modellen används för att generera prognoser för användare i segment B, så kan modellens prestanda påverkas.
+* **Användarens trafikkomposition är stabil**. Om användartrafikens sammansättning ändras dramatiskt under modellutbildning och -prediktion kan modellens prestanda försämras. Anta till exempel att det i modellutbildningsfasen bara finns data för användare i målgrupp A, men den tränade modellen används för att generera prognoser för användare i målgrupp B, och att modellens prestanda kan påverkas.
 * **Prestandan ändras inte dramatiskt under en kort tidsperiod** när den här modellen uppdateras varje vecka och prestandaändringar visas när modellen uppdateras. En produkt var till exempel mycket populär tidigare, men i en offentlig rapport identifieras produkten som skadlig för vår hälsa och den här produkten blir ovanligt snabb. I det här scenariot kan modellen fortsätta att förutsäga produkten tills modellen uppdateras med ändringar i användarbeteendet.
 
 ## Så här fungerar det {#how}
@@ -37,8 +37,8 @@ Det finns tre typer av funktioner:
 
 | Funktionstyper | Så här lägger du till funktioner i modeller |
 |--------------|----------------------------|
-| Segment | 0-50 segment kan läggas till som funktioner när du skapar AI-modellen för rankning |
 | Beslutsobjekt (placementID, activityID, DecisionScopeID) | Ingår i beslutsledningens feedback Experience Events skickas till AEP |
+| Målgrupper | 0-50 målgrupper kan läggas till som funktioner när du skapar AI-modellen för rankning |
 | Kontextdata | En del av beslutsfeedback Experience Events skickas till AEP. Tillgängliga kontextdata att lägga till i schema: Commerce Details, Channel Details, Application Details, Web Details, Environment Details, Device Details, placeContext |
 
 Modellen har två faser:

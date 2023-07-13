@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: erbjudanden, beslut, e-post, personalisering, beslut
 exl-id: 1e648eca-b5ca-4767-b45d-c179243e347f
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Följ stegen nedan för att visa de olika erbjudanden som ingår i beslutet med 
 
 >[!NOTE]
 >
->Du måste ha testprofiler tillgängliga för att kunna förhandsgranska dina meddelanden. Lär dig hur [skapa testprofiler](../segment/creating-test-profiles.md).
+>Du måste ha testprofiler tillgängliga för att kunna förhandsgranska dina meddelanden. Lär dig hur [skapa testprofiler](../audience/creating-test-profiles.md).
 
 1. Välj de testprofiler som ska användas för att förhandsgranska erbjudandet:
 
@@ -85,7 +85,7 @@ Följ stegen nedan för att visa de olika erbjudanden som ingår i beslutet med 
 
       >[!NOTE]
       >
-      >I det här exemplet använder vi **E-post** namnutrymme. Läs mer om Adobe Experience Platform identitetsnamnutrymmen [i det här avsnittet](../segment/get-started-identity.md).
+      >I det här exemplet använder vi **E-post** namnutrymme. Läs mer om Adobe Experience Platform identitetsnamnutrymmen [i det här avsnittet](../audience/get-started-identity.md).
 
    1. I **[!UICONTROL Identity value]** anger du värdet för att identifiera testprofilen. I det här exemplet anger du e-postadressen för en testprofil.
 
@@ -94,7 +94,6 @@ Följ stegen nedan för att visa de olika erbjudanden som ingår i beslutet med 
    1. Lägg till andra profiler så att du kan testa olika varianter av meddelandet beroende på profildata.
 
       ![](assets/deliver-offer-test-profiles.png)
-
 
 1. Klicka på **[!UICONTROL Preview]** för att testa meddelandet och sedan välja en testprofil. Erbjudandet som motsvarar den valda profilen (en kvinna) visas.
 

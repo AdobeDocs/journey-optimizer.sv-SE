@@ -8,7 +8,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
-source-git-commit: 1832f3395b07580e62f32c886a0a4256267b2970
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -26,7 +26,8 @@ Mer information om hur du prenumererar på aviseringar och konfigurerar dem finn
 
 >[!AVAILABILITY]
 >
->Vissa designändringar pågår för varningen&quot;Läs utlösaren för segment misslyckades&quot;, vilket innebär att den här varningen pausas och har tillfälligt tagits bort från användargränssnittet. När dessa ändringar har släppts visas varningen igen och du kan prenumerera på den.
+>Vissa designändringar pågår för aviseringen&quot;Läs publikutlösaren misslyckades&quot;. Den här aviseringen har pausats och har tillfälligt tagits bort från användargränssnittet. När dessa ändringar har släppts visas varningen igen och du kan prenumerera på den.
+>
 
 I den vänstra menyn, under **Administration**, klicka **Varningar**.
 

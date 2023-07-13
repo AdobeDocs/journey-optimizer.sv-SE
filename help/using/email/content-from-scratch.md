@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: innehåll, redigerare, e-post, börja
 exl-id: 151594f2-85e4-4c79-9c15-334fbd3768c4
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 0%
@@ -98,7 +98,7 @@ Följ stegen nedan när du vill börja skapa ditt innehåll:
 
    ![](assets/email_designer_asset_picker.png)
 
-1. Infoga anpassningsfält för att anpassa innehållet utifrån profilattribut, segmentmedlemskap, sammanhangsbaserade attribut med mera. [Läs mer om innehållspersonalisering](../personalization/personalize.md)
+1. Infoga anpassningsfält för att anpassa innehållet utifrån profilattribut, målgruppsmedlemskap, sammanhangsbaserade attribut med mera. [Läs mer om innehållspersonalisering](../personalization/personalize.md)
 
    ![](assets/email_designer_personalization.png)
 

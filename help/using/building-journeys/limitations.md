@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: resor, begränsning
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '511'
 ht-degree: 0%
@@ -29,13 +29,12 @@ Här är begränsningar för användningen av resor.
 
 ## Begränsningar för reseversioner {#journey-versions-limitations}
 
-* En resa som börjar med en händelseaktivitet i v1 kan inte börja med något annat än en händelse i andra versioner. Du kan inte påbörja en resa med en **Segmentkvalificering** -händelse.
-* En resa som börjar med en **Segmentkvalificering** aktivitet i v1 måste alltid börja med **Segmentkvalificering** i andra versioner.
-* Det segment och namnutrymme som valts i **Segmentkvalificering** (första noden) kan inte ändras i nya versioner.
+* En resa som börjar med en händelseaktivitet i v1 kan inte börja med något annat än en händelse i andra versioner. Du kan inte påbörja en resa med en **Målgruppskvalifikation** -händelse.
+* En resa som börjar med en **Målgruppskvalifikation** aktivitet i v1 måste alltid börja med en **Målgruppskvalifikation** i andra versioner.
+* Den målgrupp och det namnutrymme som valts i **Målgruppskvalifikation** (första noden) kan inte ändras i nya versioner.
 * Regeln för återinträde måste vara densamma i alla reseversioner.
-* En resa som börjar med en **Läs segment** kan inte börja med en annan händelse i nästa version.
+* En resa som börjar med en **Läs målgrupp** kan inte börja med en annan händelse i nästa version.
  
-
 ## Begränsningar för anpassade åtgärder
 
 * Den anpassade åtgärds-URL:en stöder inte dynamiska parametrar. 
@@ -44,12 +43,10 @@ Här är begränsningar för användningen av resor.
 * IP-adresser tillåts inte. 
 * Interna Adobe-adresser (.adobe.) tillåts inte.
  
-
 ## Begränsningar för händelser
 
 * För systemgenererade händelser måste strömmande data som används för att initiera en kundresa konfigureras inom Journey Optimizer först för att få ett unikt orkestrerings-ID. Detta Orchestration-ID måste bifogas till strömningsnyttolasten som kommer till Adobe Experience Platform. Denna begränsning gäller inte regelbaserade händelser.
  
-
 ## Begränsningar för datakällor
 
 * Externa datakällor kan utnyttjas inom en kundresa för att söka externa data i realtid. Dessa källor måste kunna användas via REST API, ha stöd för JSON och kunna hantera antalet begäranden.
@@ -66,6 +63,6 @@ Du kan välja mellan följande två lösningar:
 
 * Konfigurera en resa som inte omedelbart utnyttjar profilen. Om resan till exempel är utformad för att bekräfta att ett konto har skapats, kan upplevelsehändelsen innehålla information som behövs för att skicka det första bekräftelsemeddelandet (förnamn, efternamn, e-postadress osv.).
 
-## Läs segmentbegränsningar
+## Läs målgruppsbegränsningar
 
-* Strömmade segment är alltid uppdaterade, men gruppsegment beräknas inte vid hämtningen. De utvärderas endast varje dag vid den dagliga grupputvärderingen.
+* Direktuppspelade målgrupper är alltid uppdaterade, men batchmålgrupper beräknas inte vid hämtningen. De utvärderas endast varje dag vid den dagliga grupputvärderingen.

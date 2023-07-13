@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: komponenter, e-postdesigner, redigerare, e-post
 exl-id: a4aaa814-3fd4-439e-8f34-faf97208378a
-source-git-commit: 11c1945f8e7f7ca74a2c9ca33ff85fea77bcf5db
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
-source-wordcount: '1224'
+source-wordcount: '1223'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Följ stegen nedan för att lägga till innehållskomponenter i e-postmeddelande
    >
    >Du kan lägga till flera komponenter i en enda strukturkomponent och i varje kolumn i en strukturkomponent.
 
-1. Justera attribut och format för varje komponent med **[!UICONTROL Settings]** och **[!UICONTROL Style]** till höger. Du kan till exempel ändra textstil, utfyllnad eller marginal för varje komponent. [Läs mer om justering och utfyllnad](alignment-and-padding.md)
+1. Justera formatattributen för varje komponent med **[!UICONTROL Settings]** och **[!UICONTROL Style]** till höger. Du kan till exempel ändra textstil, utfyllnad eller marginal för varje komponent. [Läs mer om justering och utfyllnad](alignment-and-padding.md)
 
    ![](assets/email_designer_content_components_settings.png)
 

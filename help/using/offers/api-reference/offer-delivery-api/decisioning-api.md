@@ -6,7 +6,7 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 692d0aae-6fa1-40b8-a35f-9845d78317a3
-source-git-commit: 118eddf540d1dfb3a30edb0b877189ca908944b1
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '1058'
 ht-degree: 2%
@@ -111,7 +111,7 @@ curl -X POST \
 | `xdm:propositionRequests.xdm:activityId` | Den unika beslutsidentifieraren. | `"xdm:activityId": "xcore:offer-activity:ffed0123"` |
 | `xdm:itemCount` | Antalet erbjudanden som ska returneras. Det högsta antalet är 30. | `"xdm:itemCount": 2` |
 | `xdm:profiles` | Det här objektet innehåller information om profilen som beslutet begärs för. För en API-begäran innehåller detta en profil. |
-| `xdm:profiles.xdm:identityMap` | Det här objektet innehåller en uppsättning slutanvändaridentiteter baserat på ID:ts namnutrymmesintegrationskod. Identitetskartan kan innehålla mer än en identitet för varje namnutrymme. Mer information om namnutrymmen finns i [den här sidan](../../../segment/get-started-identity.md). | `Email: [{"xdm:id": "123@abc.com"}]` |
+| `xdm:profiles.xdm:identityMap` | Det här objektet innehåller en uppsättning slutanvändaridentiteter baserat på ID:ts namnutrymmesintegrationskod. Identitetskartan kan innehålla mer än en identitet för varje namnutrymme. Mer information om namnutrymmen finns i [den här sidan](../../../audience/get-started-identity.md). | `Email: [{"xdm:id": "123@abc.com"}]` |
 | `xdm:profiles.xdm:decisionRequestId` | Det ID som genereras av klienten som kan användas för att unikt identifiera en profilbeslutsbegäran. Detta ID återkommer i svaret och påverkar inte resultatet av beslutet. | `"xdm:decisionRequestId": "0AA00002-0000-1224-c0de-cjf98Csj43"` |
 | `xdm:allowDuplicatePropositions` | Det här objektet är kontrollstrukturen för reglerna för borttagning av dubbletter. Det består av en serie flaggor som anger om samma alternativ kan föreslås i en viss dimension. En flagga som är inställd på true innebär att dubbletter tillåts och ska inte tas bort i den kategori som flaggan anger. En flagga som är inställd på false innebär att beslutsmotorn inte ska göra samma förslag över dimensionen och i stället välja nästa bästa alternativ för ett av delbesluten. |
 | `xdm:allowDuplicatePropositions.xdm:acrossActivities` | Om värdet är true kan flera beslut tilldelas samma alternativ. | `"xdm:acrossActivities": true` |

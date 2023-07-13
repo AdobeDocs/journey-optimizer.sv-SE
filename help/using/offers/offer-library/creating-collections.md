@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 0c8808e3-9148-4a33-9fd5-9218e02c2dfd
-source-git-commit: e3628950dbc59b6f2570245651e79b4e203b75c3
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '314'
 ht-degree: 2%
 
 ---
@@ -57,10 +57,6 @@ Så här skapar du en samling:
    >Statiska samlingar uppdateras inte automatiskt. Om du vill lägga till erbjudanden i en statisk samling måste du redigera den och lägga till dem manuellt.
 
 1. Om du vill tilldela anpassade eller grundläggande användningsrubriker till en statisk samling väljer du **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../../administration/object-based-access.md)
-
-   >[!NOTE]
-   >
-   >Det går inte att använda OLAC för dynamiska samlingar. Den måste hanteras på erbjudandenivå. Därför är det möjligt att du inte ser några erbjudanden i en dynamisk samling om du inte har tillgång till något av dessa erbjudanden.
 
 1. När samlingen har skapats visas den i listan. Du kan markera den om du vill redigera eller ta bort den.
 

@@ -9,9 +9,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, syntax, personalisering
 exl-id: 5a562066-ece0-4a78-92a7-52bf3c3b2eea
-source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '735'
 ht-degree: 3%
 
 ---
@@ -76,12 +76,12 @@ Attributen måste definieras i schemat innan de refereras i en [!DNL Journey Opt
 
 `{{profile.faxPhone.number}}`
 
-## Segment{#perso-segments}
+## Målgrupper{#perso-segments}
 
 Lär dig hur du utnyttjar profilattribut under förhållanden i [det här avsnittet](functions/helpers.md#if-function).
 
 >[!NOTE]
->Mer information om segmenterings- och segmenteringstjänster finns i [det här avsnittet](../segment/about-segments.md).
+>Mer information om segmenteringstjänsten finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 
 ## Erbjudanden {#offers-syntax}
 
@@ -107,19 +107,19 @@ Alla referenser valideras mot offertschema med en valideringsmekanism som beskri
 
 * Plats där bilden finns:
 
-   `offers.image.[offers:xcore:offer-placement:126f767d74b0da80].[xcore:offer-activity:125e2c6889798fd9].deliveryUrl`
+  `offers.image.[offers:xcore:offer-placement:126f767d74b0da80].[xcore:offer-activity:125e2c6889798fd9].deliveryUrl`
 
 * Mål-URL när du klickar på bilden:
 
-   `offers.image.[offers:xcore:offer-placement:126f767d74b0da80].[xcore:offer-activity:125e2c6889798fd9].linkUrl`
+  `offers.image.[offers:xcore:offer-placement:126f767d74b0da80].[xcore:offer-activity:125e2c6889798fd9].linkUrl`
 
 * Innehåll i det erbjudande som kommer från beslutsmotorn:
 
-   `offers.text.[offers:xcore:offer-placement:126f767d74b0da80].[xcore:offer-activity:125e2c6889798fd9].content`
+  `offers.text.[offers:xcore:offer-placement:126f767d74b0da80].[xcore:offer-activity:125e2c6889798fd9].content`
 
 * Innehållet i HTML i erbjudandet från beslutsmotorn:
 
-   `offers.html.[offers:xcore:offer-placement:126f767d74b0da80].[xcore:offer-activity:125e2c6889798fd9].content`
+  `offers.html.[offers:xcore:offer-placement:126f767d74b0da80].[xcore:offer-activity:125e2c6889798fd9].content`
 
 
 ## Hjälpmedel{#helpers-all}
@@ -134,6 +134,7 @@ Block är uttryck som har en blocköppning ({{# }}) and closing ({{/}}).
 >[!NOTE]
 >
 >Hjälpfunktionerna beskrivs i [det här avsnittet](functions/helpers.md).
+>
 
 ## Literala typer {#literal-types}
 
@@ -163,7 +164,8 @@ Med Journey Optimizer kan du anpassa en eller flera URL-adresser i meddelandet g
 
 >[!NOTE]
 >
->När du redigerar en anpassad URL i uttrycksredigeraren inaktiveras hjälpfunktioner och segmentmedlemskap av säkerhetsskäl.
+>När du redigerar en anpassad URL i uttrycksredigeraren inaktiveras hjälpfunktioner och målgruppsmedlemskap av säkerhetsskäl.
+>
 
 **Exempel på personaliserade URL:er**
 

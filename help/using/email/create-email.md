@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: skapa, e-post, start, resa, kampanj
 exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 3%
@@ -59,7 +59,7 @@ Mer information om hur du konfigurerar en resa finns i [den här sidan](../build
 
 1. Klicka på **[!UICONTROL Create]**.
 
-1. Slutför stegen för att skapa en e-postkampanj, till exempel kampanjegenskaperna, [publik](../segment/about-segments.md)och [schema](../campaigns/create-campaign.md#schedule).
+1. Slutför stegen för att skapa en e-postkampanj, till exempel kampanjegenskaperna, [publik](../audience/about-audiences.md)och [schema](../campaigns/create-campaign.md#schedule).
 
    ![](assets/email_campaign_steps.png)
 
@@ -122,9 +122,9 @@ Två typer av varningar kan inträffa:
 
    * **[!UICONTROL The opt-out link is not present in the email body]**: det är bra att lägga till en länk för att avbryta prenumerationen i e-postmeddelandet. Lär dig hur du konfigurerar det i [det här avsnittet](../privacy/opt-out.md#opt-out-management).
 
-      >[!NOTE]
-      >
-      >E-postmeddelanden av marknadsföringstyp måste innehålla en länk för avanmälan, vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [kanalyta](email-settings.md#email-type) nivå och när [skapar meddelandet](#create-email-journey-campaign) från en resa eller en kampanj.
+     >[!NOTE]
+     >
+     >E-postmeddelanden av marknadsföringstyp måste innehålla en länk för avanmälan, vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [kanalyta](email-settings.md#email-type) nivå och när [skapar meddelandet](#create-email-journey-campaign) från en resa eller en kampanj.
 
    * **[!UICONTROL Text version of HTML is empty]**: Glöm inte att definiera en textversion av e-posttexten, eftersom den kommer att användas när HTML inte kan visas. Lär dig hur du skapar textversionen i [det här avsnittet](text-version-email.md).
 
@@ -136,12 +136,11 @@ Två typer av varningar kan inträffa:
 
    * **[!UICONTROL The subject line is missing]**: Ämnesraden för e-post är obligatorisk. Lär dig definiera och personalisera det i [det här avsnittet](create-email.md).
 
-   <!--HTML is empty when Amp HTML is present-->
+  <!--HTML is empty when Amp HTML is present-->
 
    * **[!UICONTROL The email version of the message is empty]**: det här felet visas när e-postinnehållet inte har konfigurerats. Lär dig designa e-postinnehåll i [det här avsnittet](get-started-email-design.md).
 
    * **[!UICONTROL Surface doesn't exist]**: Du kan inte använda meddelandet om den yta som du har markerat tas bort efter att meddelandet har skapats. Om det här felet inträffar väljer du en annan yta i meddelandet **[!UICONTROL Properties]**. Läs mer om kanalytor i [det här avsnittet](../configuration/channel-surfaces.md).
-
 
 >[!CAUTION]
 >

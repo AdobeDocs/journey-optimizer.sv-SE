@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 4c29bb1fbbf2c67d04fcd73076be456323eddc7d
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,6 @@ Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera opti
 ### Allmänna skyddsräcken för resan {#journeys-guardrails-journeys}
 
 * Antalet aktiviteter under en resa är begränsat till 50. Antalet aktiviteter visas i den övre vänstra delen av arbetsytan. Detta underlättar läsbarhet, kvalitetskontroll och felsökning.
-* När du publicerar resor skalas och justeras vi automatiskt för att säkerställa maximal genomströmning och stabilitet. I närheten av milstolpen för 100 direktresor på en gång visas ett meddelande i användargränssnittet om detta. Om du ser det här meddelandet och behöver förlänga dina resor mer än 100 resor i taget kan du skapa en biljett för kundvård så hjälper vi dig att nå dina mål.
 
 ### Allmänna åtgärder {#general-actions-g}
 
@@ -53,16 +52,16 @@ Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera opti
 * Tre försök utförs systematiskt om ett fel uppstår. Du kan inte justera antalet försök enligt det mottagna felmeddelandet.
 * Den inbyggda **Reaktion** -händelsen gör att du kan reagera på åtgärder som är klara. Läs mer i [den här sidan](../building-journeys/reaction-events.md). Om du vill reagera på ett meddelande som skickas via en anpassad åtgärd måste du konfigurera en dedikerad händelse.
 * Du kan inte placera två åtgärder parallellt. Du måste lägga till dem en i taget.
-* En profil kan inte finnas flera gånger på samma resa samtidigt. Om återinträde är aktiverat kan en profil återansluta en resa, men kan inte göra det förrän den tidigare instansen av resan har avslutats helt. [Läs mer](../building-journeys/end-journey.md)
+* Vanligtvis kan en profil inte finnas flera gånger på samma resa samtidigt. Om återinträde är aktiverat kan en profil återansluta en resa, men kan inte göra det förrän den tidigare instansen av resan har avslutats helt. [Läs mer](../building-journeys/end-journey.md)
 
 ### Reseversioner {#journey-versions-g}
 
-* En resa som börjar med en händelseaktivitet i v1 kan inte börja med något annat än en händelse i andra versioner. Du kan inte påbörja en resa med en **Segmentkvalificering** -händelse.
-* En resa som börjar med en **Segmentkvalificering** aktivitet i v1 måste alltid börja med **Segmentkvalificering** i andra versioner.
-* Det segment och namnutrymme som valts i **Segmentkvalificering** (första noden) kan inte ändras i nya versioner.
+* En resa som börjar med en händelseaktivitet i v1 kan inte börja med något annat än en händelse i andra versioner. Du kan inte påbörja en resa med en **Målgruppskvalifikation** -händelse.
+* En resa som börjar med en **Målgruppskvalifikation** aktivitet i v1 måste alltid börja med en **Målgruppskvalifikation** i andra versioner.
+* Den målgrupp och det namnutrymme som valts i **Målgruppskvalifikation** (första noden) kan inte ändras i nya versioner.
 * Regeln för återinträde måste vara densamma i alla reseversioner.
-* En resa som börjar med en **Läs segment** kan inte börja med en annan händelse i nästa version.
-* Du kan inte skapa en ny version av en lässegmentsresa med inkrementell läsning. Du måste duplicera resan.
+* En resa som börjar med en **Läs målgrupp** kan inte börja med en annan händelse i nästa version.
+* Du kan inte skapa en ny version av en läsande målgruppsresa med inkrementell läsning. Du måste duplicera resan.
 
 ### Anpassade åtgärder {#custom-actions-g}
 
@@ -76,9 +75,9 @@ Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera opti
 ### Händelser {#events-g}
 
 * För systemgenererade händelser måste strömmande data som används för att initiera en kundresa konfigureras inom Journey Optimizer först för att få ett unikt orkestrerings-ID. Detta Orchestration-ID måste bifogas till strömningsnyttolasten som kommer till Adobe Experience Platform. Denna begränsning gäller inte regelbaserade händelser.
-* Affärshändelser kan inte användas tillsammans med enhetshändelser eller aktiviteter för att bedöma segment.
-* Enhetsresor (med början vid en händelse eller en segmentkvalificering) innehåller ett skyddsräcke som förhindrar att resorna aktiveras felaktigt flera gånger för samma händelse. Återinträde av profiler blockeras tillfälligt som standard i 5 minuter. Om en händelse till exempel utlöser en resa kl. 12:01 för en viss profil och en annan tar emot kl. 12:03 (oavsett om det är samma händelse eller en annan som utlöser samma resa) kommer den resan inte att starta igen för den här profilen.
-* Journey Optimizer kräver att händelser direktuppspelas till datainsamlingens bastjänst (DCCS) för att kunna utlösa en resa. Insamlade händelser i en grupp eller händelser från interna Journey Optimizer-datauppsättningar (meddelandefeedback, e-postspårning osv.) kan inte användas för att utlösa en resa. Om du inte kan få direktuppspelade händelser ska du skapa ett segment baserat på dessa händelser och använda **Läs segment** i stället. Segmentkvalificering kan tekniskt sett användas, men kan leda till efterföljande utmaningar baserat på de åtgärder som används.
+* Affärsevenemang kan inte användas tillsammans med enhetsevenemang eller målgruppsaktiviteter.
+* Enhetsresor (som inleds med en händelse eller en publikation) innehåller ett skyddsräcke som förhindrar att resorna aktiveras felaktigt flera gånger för samma händelse. Återinträde av profiler blockeras tillfälligt som standard i 5 minuter. Om en händelse till exempel utlöser en resa kl. 12:01 för en viss profil och en annan tar emot kl. 12:03 (oavsett om det är samma händelse eller en annan som utlöser samma resa) kommer den resan inte att starta igen för den här profilen.
+* Journey Optimizer kräver att händelser direktuppspelas till datainsamlingens bastjänst (DCCS) för att kunna utlösa en resa. Insamlade händelser i en grupp eller händelser från interna Journey Optimizer-datauppsättningar (meddelandefeedback, e-postspårning osv.) kan inte användas för att utlösa en resa. Om du inte kan få direktuppspelade händelser kan du bygga en målgrupp baserat på dessa händelser och använda **Läs målgrupp** i stället. Målgruppskvalificering kan tekniskt sett användas, men kan orsaka problem längre fram i kedjan baserat på de åtgärder som används.
 
 ### Datakällor {#data-sources-g}
 
@@ -97,13 +96,13 @@ Du kan välja mellan följande två lösningar:
 
 * Konfigurera en resa som inte omedelbart utnyttjar profilen. Om resan till exempel är utformad för att bekräfta att ett konto har skapats, kan upplevelsehändelsen innehålla information som behövs för att skicka det första bekräftelsemeddelandet (förnamn, efternamn, e-postadress osv.).
 
-### Lässegment {#read-segment-g}
+### Läs målgrupp {#read-segment-g}
 
-* Strömmade segment är alltid uppdaterade, men gruppsegment beräknas inte vid hämtningen. De utvärderas endast varje dag vid den dagliga grupputvärderingen.
-* För resor som använder en Läs segment-aktivitet finns det ett maximalt antal resor som kan påbörjas exakt samtidigt. Återförsök kommer att utföras av systemet men undvik att ha fler än fem resor (med Läs segment, schemalagd eller starta&quot;så snart som möjligt&quot;) med början vid exakt samma tidpunkt genom att sprida dem över tiden, t.ex. mellan 5 och 10 minuter.
+* Direktuppspelade målgrupper är alltid uppdaterade, men batchmålgrupper beräknas inte vid hämtningen. De utvärderas endast varje dag vid den dagliga grupputvärderingen.
+* För resor som använder aktiviteten Läs målgrupp finns det ett maximalt antal resor som kan påbörjas exakt samtidigt. Nya försök kommer att utföras av systemet men undvik att ha fler än fem resor (med Läs publik, schemalagd eller starta&quot;så snart som möjligt&quot;) med början vid exakt samma tidpunkt genom att sprida dem över tiden, till exempel med 5 till 10 minuters mellanrum.
 
 ### Uttrycksredigerare {#expression-editor}
 
-* Det går inte att använda fältgrupper för upplevelsehändelser i resor som börjar med ett Lässegment, en segmentkvalificering eller en affärshändelseaktivitet. Du måste skapa ett nytt segment och använda ett insegmentsvillkor under resan.
+* Det går inte att använda fältgrupper för upplevelsehändelser på resor som börjar med en läsare, en målgrupp eller en affärshändelseaktivitet. Ni måste skapa en ny målgrupp och använda ett segmenterat villkor under resan.
 
 

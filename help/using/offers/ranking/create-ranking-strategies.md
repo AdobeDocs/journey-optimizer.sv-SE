@@ -7,10 +7,10 @@ feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: 81d07ec8-e808-4bc6-97b1-b9f7db2aec22
-source-git-commit: d2f0a6db7cd86512febfd307039d06ae4b60232e
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 3%
+source-wordcount: '397'
+ht-degree: 2%
 
 ---
 
@@ -39,7 +39,7 @@ Så här skapar du en AI-modell:
 1. Ange ett unikt namn och en beskrivning för AI-modellen och välj sedan den typ av AI-modell som du vill skapa:
 
    * **[!UICONTROL Auto-optimization]** optimerar erbjudanden baserat på tidigare erbjudanden. [Läs mer](auto-optimization-model.md)
-   * **[!UICONTROL Personalized optimization]** optimerar och personaliserar erbjudanden baserat på segment och erbjudanden. [Läs mer](personalized-optimization-model.md)
+   * **[!UICONTROL Personalized]** optimerar och personaliserar erbjudanden baserat på målgrupper och erbjuder resultat. [Läs mer](personalized-optimization-model.md)
 
    ![](../assets/ai-ranking-fields.png)
 
@@ -50,7 +50,6 @@ Så här skapar du en AI-modell:
    >[!DNL Journey Optimizer] Rangordna erbjudanden baserat på **konverteringsgrad** (Konverteringstakt = Totalt antal konverteringshändelser / Totalt antal tryckningshändelser). Konverteringsgraden beräknas med hjälp av två typer av mätvärden:
    >* **Impression-händelser** (erbjudanden som visas)
    >* **Konverteringshändelser** (erbjudanden som leder till klickningar via e-post eller webben).
-
    >
    >Dessa händelser hämtas automatiskt med Web SDK eller Mobile SDK som har angetts. Läs mer om detta i [Adobe Experience Platform Web SDK - översikt](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html).
 
@@ -62,15 +61,13 @@ Så här skapar du en AI-modell:
    >
    >Endast datauppsättningar som skapats från scheman som är kopplade till **[!UICONTROL Experience Event - Proposition Interactions]** fältgruppen (som tidigare kallades mixin) visas i listrutan.
 
-1. Om du skapar en **[!UICONTROL Personalized optimization]** AI-modellen väljer du de segment som ska användas för att utbilda AI-modellen.
-
-   ➡️ [Upptäck den här funktionen i en video](#video)
+1. Om du skapar en **[!UICONTROL Personalized optimization]** AI-modellen väljer du den eller de målgrupper som ska användas för att utbilda AI-modellen.
 
    ![](../assets/ai-ranking-segments.png)
 
    >[!NOTE]
    >
-   >Du kan markera upp till 5 segment.
+   >Du kan välja upp till fem målgrupper.
 
 1. Spara och aktivera AI-modellen.
 

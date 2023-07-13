@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: resa, integrering, standard, kampanj, ACS
 exl-id: 50565cd9-7415-4c6a-9651-24fefeded3f5
-source-git-commit: 0f7a0732025e11a92292704743242f688b9629a1
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '887'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ För **[!UICONTROL Email]** och **[!UICONTROL SMS]**, parametrarna är identiska
 
 >[!NOTE]
 >
->När du använder en profils transaktionsmall för e-post hanteras avprenumerationsfunktionen automatiskt av Adobe Campaign Standard. För att implementera detta kan du enkelt inkludera en **[!UICONTROL Unsubscription link]** innehållsblock inuti [e-postmall för transaktioner](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv). Om du däremot använder en händelsebaserad mall (rtEvent) måste du infoga en länk i meddelandet som skickar mottagarens e-post som en URL-parameter och dirigerar dem till en startsida som inte är en prenumeration. Det är nödvändigt att skapa denna landningssida och se till att mottagarens beslut att säga upp prenumerationen verkligen vidarebefordras till Adobe.
+>Om du använder en transaktionsmall för profiler i e-postmeddelanden hanteras avprenumerationsfunktionen som Campaign Standard. Du lägger bara till en **[!UICONTROL Unsubscription link]** innehållsblock i mallen ([läs mer](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv)). Om du använder en händelsebaserad mall (rtEvent) måste du i meddelandet lägga till en länk som skickar personens e-post i URL-parametern och pekar på en startsida som inte är en prenumeration. Du måste skapa den här landningssidan och se till att personens beslut att avbryta prenumerationen skickas till Adobe.
 
 Först måste du välja en transaktionsmall.
 

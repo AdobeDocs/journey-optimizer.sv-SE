@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e96efa67-ee47-40b9-b680-f5119d8c3481
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 12%
@@ -59,12 +59,12 @@ Den här mixinen innehåller alla fält som motsvarar ett profilexportjobb.
 
 | Fältnamn | Typ | Beskrivning |
 |---|---|------------|
-| ID | Sträng | Identifieraren för segmentexportjobbet som utlöses |
-| status | Sträng | Status för segmentexportjobb: köad, startad, avslutad |
-| exportCountTotal | Heltal | Det högsta möjliga värdet för segmentexportjobbet |
-| exportCountRealized | Heltal | Det faktiska antalet segment som exporterats genom jobbet |
-| exportCountFailed | Heltal | Antalet segment som misslyckades vid export via jobbet |
-| exportSegmentID | Sträng | Identifieraren för segmentet som exporteras |
+| ID | Sträng | Identifieraren för det utlösta målgruppsexportjobbet |
+| status | Sträng | Status för målgruppens exportjobb: köad, startad, avslutad |
+| exportCountTotal | Heltal | Högsta möjliga värde för målgruppens exportjobb |
+| exportCountRealized | Heltal | Det faktiska antalet målgrupper som exporterats via jobbet |
+| exportCountFailed | Heltal | Antalet målgrupper som misslyckades vid export via jobbet |
+| exportSegmentID | Sträng | Identifieraren för målgruppen som exporteras |
 | eventType | Sträng | Händelsetypen som anger om det är en felhändelse för info-händelsen: Info, fel |
 | eventCode | Sträng | Felkoden som anger orsaken till motsvarande eventType |
 

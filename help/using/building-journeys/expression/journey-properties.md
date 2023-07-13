@@ -8,7 +8,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: resa, uttryck, redigerare, egenskaper
 exl-id: eb1ab0ed-90bd-4613-b63d-b28693947db2
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 1%
@@ -46,26 +46,26 @@ Här är några exempel på användningsområden:
 
 | Kategori | Fältnamn | Etikett | Beskrivning |
 |---|---|---|------------|
-| Reseversion | travelUID | Reseidentifierare |  |
-|  | travelVersionUID | Reseversionsidentifierare |  |
-|  | travelVersionName | Namn på reseversion |  |
-|  | travelVersionDescription | Beskrivning av reseversion |  |
-|  | travelVersion | Reseversion |  |
+| Reseversion | travelUID | Reseidentifierare | |
+| | travelVersionUID | Reseversionsidentifierare | |
+| | travelVersionName | Namn på reseversion | |
+| | travelVersionDescription | Beskrivning av reseversion | |
+| | travelVersion | Reseversion | |
 | Reseinstans | instanceUID | Journey-instans-ID | ID för instansen |
-|  | externalKey | Extern nyckel | Individuell identifierare som utlöser resan |
-|  | organizationId | Organisationsidentifierare | Varumärkesorganisation |
-|  | sandboxName | Namn på sandlåda | Namn på sandlådan |
+| | externalKey | Extern nyckel | Individuell identifierare som utlöser resan |
+| | organizationId | Organisationsidentifierare | Varumärkesorganisation |
+| | sandboxName | Namn på sandlåda | Namn på sandlådan |
 | Identitet | profileId | Identifierare för profilidentitet | Identifierare för profilen i resan |
-|  | namespace | Namnområde för profilidentitet | Profilens namnområde under resan (exempel: ECID) |
+| | namespace | Namnområde för profilidentitet | Profilens namnområde under resan (exempel: ECID) |
 | Aktuell nod | currentNodeId | Aktuell nodidentifierare | Identifierare för den aktuella aktiviteten (nod) |
-|  | currentNodeName | Aktuellt nodnamn | Namn på aktuell aktivitet (nod) |
+| | currentNodeName | Aktuellt nodnamn | Namn på aktuell aktivitet (nod) |
 | Föregående nod | previousNodeId | Föregående nodidentifierare | Identifierare för föregående aktivitet (nod) |
-|  | previousNodeName | Föregående nodnamn | Namn på föregående aktivitet (nod) |
+| | previousNodeName | Föregående nodnamn | Namn på föregående aktivitet (nod) |
 | Fel | lastNodeUIDInError | Senaste nodidentifierare i fel | Identifierare för den senaste aktiviteten (nod) vid fel |
-|  | lastNodeNameInError | Senaste nodnamn i fel | Namn på den senaste aktiviteten (nod) med fel |
-|  | lastNodeTypeInError | Senaste nodtyp i fel | Feltyp för den senaste aktiviteten (nod). Möjliga typer:<ul><li>Händelser: Händelser, reaktioner, SQ (exempel: Segmentkvalificering)</li><li>Flödeskontroll: Slut, Villkor, Vänta</li><li>Funktionsmakron: ACS-åtgärder, Jump, Custom Action</li></ul> |
-|  | lastErrorCode | Senaste felkod | Felkod för den senaste aktiviteten (nod). Möjliga fel: <ul><li>HTTP-felkoder</li><li>mappad</li><li>timedOut</li><li>fel (exempel: standard om ett oväntat fel inträffar. Ska inte/mycket sällan inträffa)</li></ul> |
-|  | lastExecutedActionErrorCode | Felkod för senaste körda åtgärd | Felkod för den senaste felåtgärden |
-|  | lastDataFetchErrorCode | Felkod för senaste datainhämtning | Felkod för den senaste datahämtningen från datakällor |
+| | lastNodeNameInError | Senaste nodnamn i fel | Namn på den senaste aktiviteten (nod) med fel |
+| | lastNodeTypeInError | Senaste nodtyp i fel | Feltyp för den senaste aktiviteten (nod). Möjliga typer:<ul><li>Händelser: Händelser, reaktioner, SQ (exempel: Målgruppskvalifikation)</li><li>Flödeskontroll: Slut, Villkor, Vänta</li><li>Funktionsmakron: ACS-åtgärder, Jump, Custom Action</li></ul> |
+| | lastErrorCode | Senaste felkod | Felkod för den senaste aktiviteten (nod). Möjliga fel: <ul><li>HTTP-felkoder</li><li>mappad</li><li>timedOut</li><li>fel (exempel: standard om ett oväntat fel inträffar. Ska inte/mycket sällan inträffa)</li></ul> |
+| | lastExecutedActionErrorCode | Felkod för senaste körda åtgärd | Felkod för den senaste felåtgärden |
+| | lastDataFetchErrorCode | Felkod för senaste datainhämtning | Felkod för den senaste datahämtningen från datakällor |
 | Tid | lastActionExecutionElapsedTime | Senaste körningstid för åtgärd | Tid som har använts för att köra den senaste åtgärden |
-|  | lastDataFetchElapsedTime | Senaste tid för datahämtning | Den tid som har använts för att köra den senaste datahämtningen från datakällor |
+| | lastDataFetchElapsedTime | Senaste tid för datahämtning | Den tid som har använts för att köra den senaste datahämtningen från datakällor |

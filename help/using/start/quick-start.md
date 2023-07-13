@@ -8,16 +8,16 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 71ab7369-fd84-46eb-95d2-941bd887d565
-source-git-commit: 5fd4f8c5ffaf2c417d95f88fa31c850bc88db13f
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '176'
 ht-degree: 16%
 
 ---
 
 # Snabbstart {#cjm-quick-start}
 
-Med [!DNL Adobe Journey Optimizer]kan ni importera befintligt meddelandeinnehåll eller utforma nytt innehåll, anpassa meddelanden med kundprofildata, skapa händelser för att utlösa meddelanden, definiera segment och förfina målgrupper, skapa och lägga till erbjudanden samt få tillgång till en komplett uppsättning rapporterings- och övervakningsverktyg för att mäta effekten av era meddelanden och kundresor.
+Med [!DNL Adobe Journey Optimizer]kan ni importera befintligt meddelandeinnehåll eller utforma nytt innehåll, anpassa meddelanden med kundprofildata, skapa händelser för att utlösa meddelanden, definiera målgrupper, skapa och lägga till erbjudanden samt få tillgång till en komplett uppsättning rapporterings- och övervakningsverktyg för att mäta effekten av era meddelanden och kundresor.
 
 Beroende på din organisation kan du definiera flera typer av användare och ge dem åtkomst till vissa funktioner beroende på deras behörigheter.
 
@@ -27,12 +27,12 @@ Välj din profil om du vill lära dig och upptäcka styrkan i Adobe Journey Opti
 
 * Jag är en **Administratör**
 
-   Förbered din miljö, ge åtkomst, konfigurera inställningar. [Läs mer](path/administrator.md)
+  Förbered din miljö, ge åtkomst, konfigurera inställningar. [Läs mer](path/administrator.md)
 
 * Jag är en **Datatekniker**
 
-   Importera profiler, bygg målgrupper, skapa scheman och datauppsättningar. [Läs mer](path/data-engineer.md)
+  Importera profiler, bygg målgrupper, skapa scheman och datauppsättningar. [Läs mer](path/data-engineer.md)
 
 * Jag är en **Marknadsförare**
 
-   Designa meddelanden, lägg till erbjudanden, resurser och bygg kundresor. [Läs mer](path/marketer.md)
+  Designa meddelanden, lägg till erbjudanden, resurser och bygg kundresor. [Läs mer](path/marketer.md)

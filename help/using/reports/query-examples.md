@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 26ad12c3-0a2b-4f47-8f04-d25a6f037350
-source-git-commit: 1cf62f949c1309b864ccd352059a444fd7bd07f0
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1458'
 ht-degree: 2%
 
 ---
@@ -26,10 +26,6 @@ Se till att fälten som används i dina frågor har associerade värden i motsva
 * id: unika för alla steg-händelseposter. Två olika steghändelser kan inte ha samma ID.
 * instanceId: instanceID är samma för alla steg-händelser som är kopplade till en profil inom en körning. Om en profil återgår till resan används ett annat instanceId. Detta nya instanceId är samma för alla steg-händelser för den ommatade instansen (från start till slut).
 * profileID: Profilens identitet som motsvarar resenamnutrymmet.
-
->[!NOTE]
->
->I felsökningssyfte rekommenderar vi att du använder travelVersionID i stället för travelVersionName när du frågar efter resor.
 
 ## Grundläggande användningsfall/vanliga frågor {#common-queries}
 
@@ -429,11 +425,11 @@ GROUP BY DATE(timestamp)
 ORDER BY DATE(timestamp) desc
 ```
 
-Frågan returnerar, för den angivna perioden, antalet profiler som har skickats in till resan varje dag. Om en profil anges via flera identiteter räknas den två gånger. Om återinträde är aktiverat kan antalet profiler dupliceras över olika dagar om det återgår till resan på en annan dag.
+Frågan returnerar, för den angivna perioden, antalet profiler som har angetts för resan varje dag. Om en profil anges via flera identiteter räknas den två gånger. Om återinträde är aktiverat kan antalet profiler dupliceras över olika dagar om det återgår till resan på en annan dag.
 
-## Frågor relaterade till Lässegmentet {#read-segment-queries}
+## Frågor relaterade till den lästa målgruppen {#read-segment-queries}
 
-**Tidsåtgång för att avsluta ett segmentexportjobb**
+**Tidsåtgång för att slutföra ett målgruppsexportjobb**
 
 _Data Lake-fråga_
 
@@ -463,7 +459,7 @@ _experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a
 _experience.journeyOrchestration.serviceEvents.segmentExportJob.status = 'finished')) AS export_job_runtime;
 ```
 
-Frågan returnerar tidsskillnaden i minuter mellan den tidpunkt då segmentexportjobbet placerades i kö och den tidpunkt det slutligen avslutades.
+Frågan returnerar tidsskillnaden i minuter, mellan den tidpunkt då målgruppens exportjobb placerades i kö och den tidpunkt det slutligen avslutades.
 
 **Antal profiler som har ignorerats under resan eftersom de var dubbletter**
 
@@ -575,7 +571,7 @@ _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERR
 
 Frågan returnerar alla profil-ID:n som ignorerades av resan på grund av ett internt fel.
 
-**Översikt över Läs segment för en viss reseversion**
+**Översikt över Läs målgrupp för en viss reseversion**
 
 _Data Lake-fråga_
 
@@ -604,7 +600,7 @@ Den returnerar alla servicehändelser som hör till den angivna reseversionen. V
 
 Vi kan också upptäcka problem som:
 
-* fel i ämne eller skapande av exportjobb (inklusive timeout för API-anrop för segmentexport)
+* fel i ämne eller skapande av exportjobb (inklusive timeout för API-anrop för målgruppsexport)
 * exporteringsjobb som kan fastna (när det gäller en viss reseversion har vi ingen händelse om att exportjobbet avslutas)
 * arbetarutleveranser, om vi har tagit emot en händelse om att exportjobben har avslutats, men ingen arbetare har avslutat
 
@@ -613,7 +609,7 @@ VIKTIGT! Om ingen händelse returneras av frågan kan det bero på någon av fö
 * transportversionen inte har nått schemat
 * Om reseversionen ska ha startat exportjobbet genom att anropa orkestratorn, gick något fel i upstram-flödet: Problem med transportdistribution, affärshändelser eller problem med schemaläggare.
 
-**Hämta fel för lässegment för en viss reseversion**
+**Få läsfel för en viss reseversion**
 
 _Data Lake-fråga_
 
@@ -728,7 +724,7 @@ FROM
 WHERE T1.EXPORTJOB_ID = T2.EXPORTJOB_ID
 ```
 
-**Få aggregerade mätvärden (segmentexportjobb och utkast) för alla exportjobb**
+**Få aggregerade mätvärden (målgruppsexportjobb och utkast) för alla exportjobb**
 
 _Data Lake-fråga_
 
@@ -791,9 +787,9 @@ Den här frågan skiljer sig från den föregående.
 
 Den returnerar den totala mätningen för en viss reseversion, oavsett vilka jobb som kan ha körts för den (vid återkommande resor utlöstes affärshändelser som utnyttjar återanvändning av ämnet).
 
-## Frågor relaterade till segmentkvalificering {#segment-qualification-queries}
+## Frågor relaterade till målgruppskvalifikation {#segment-qualification-queries}
 
-**Profilen ignoreras på grund av en annan segmentimplementering än den konfigurerade**
+**Profilen ignoreras på grund av en annan målgruppsimplementering än den konfigurerade**
 
 _Data Lake-fråga_
 
@@ -815,9 +811,9 @@ _experience.journeyOrchestration.journey.versionID = 'a868f3c9-4888-46ac-a274-94
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'ERROR_SEGMENT_REALISATION_CONDITION_MISMATCH'
 ```
 
-Den här frågan returnerar alla profil-ID:n som togs bort av reseversionen på grund av felaktig segmentrealisering.
+Den här frågan returnerar alla profil-ID:n som ignorerades av reseversionen på grund av felaktig målgruppsrealisering.
 
-**Segmentkvalificeringshändelser som ignorerats av någon annan orsak för en viss profil**
+**Publikkvalificeringshändelser som ignorerats av någon annan orsak för en viss profil**
 
 _Data Lake-fråga_
 
@@ -841,7 +837,7 @@ _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' 
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'ERROR_SERVICE_INTERNAL';
 ```
 
-Den här frågan returnerar alla händelser (externa händelser/segmentkvalificeringshändelser) som ignorerades på grund av någon annan orsak till en profil.
+Den här frågan returnerar alla händelser (externa händelser/målgruppsklassificeringshändelser) som har ignorerats på grund av någon annan anledning till en profil.
 
 ## Händelsebaserade frågor {#event-based-queries}
 

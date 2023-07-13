@@ -1,8 +1,8 @@
 ---
 title: Gruppbeslut
-description: Lär dig hur ni kan leverera offertbeslut till alla profiler i ett visst Adobe Experience Platform-segment.
+description: Lär dig hur ni kan leverera offertbeslut till alla profiler inom en viss Adobe Experience Platform-publik.
 exl-id: 810c05b3-2bae-4368-bf12-3ea8c2f31c01
-source-git-commit: 118eddf540d1dfb3a30edb0b877189ca908944b1
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 0%
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 ## Kom igång med batchbeslut {#start}
 
-Med Journey Optimizer kan ni leverera offertbeslut till alla profiler i ett visst Adobe Experience Platform-segment.
+Med Journey Optimizer kan ni leverera offertbeslut till alla profiler inom en viss Adobe Experience Platform-publik.
 
-För att göra detta måste du skapa en jobbförfrågan i Journey Optimizer som innehåller information om vilket segment som ska användas och vilket erbjudandebeslut som ska användas. Erbjudandeinnehållet för varje profil i segmentet placeras sedan i en Adobe Experience Platform-datauppsättning där det är tillgängligt för anpassade grupparbetsflöden.
+För att göra detta måste ni skapa en jobbförfrågan i Journey Optimizer som innehåller information om målgruppen och vilket beslut som ska fattas om erbjudandet. Erbjudandeinnehållet för varje profil i målgruppen placeras sedan i en Adobe Experience Platform-datauppsättning där det är tillgängligt för anpassade grupparbetsflöden.
 
 Batchleverans kan också utföras med API:er. Mer information finns i [API-dokumentation för batchbeslut](api-reference/offer-delivery-api/batch-decisioning-api.md).
 
@@ -25,11 +25,11 @@ Innan du konfigurerar en jobbförfrågan bör du kontrollera att du har skapat:
 
 * **En datauppsättning** i Adobe Experience Platform. Den här datauppsättningen används för att lagra beslutsresultatet med ODE-schema för beslutshändelser. Läs mer i [Dokumentation för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html).
 
-* **Ett segment** i Adobe Experience Platform. Segmentet ska utvärderas och sedan uppdateras. Lär dig hur du uppdaterar utvärderingen av segmentmedlemskap i [Dokumentation för segmenteringstjänst](https://www.adobe.com/go/segmentation-overview-en)
+* **En publik** i Adobe Experience Platform. Publiken bör utvärderas och sedan uppdateras. Lär dig hur du uppdaterar utvärdering av medlemskap för målgrupper i [Dokumentation för segmenteringstjänst](http://www.adobe.com/go/segmentation-overview-en)
 
-   >[!NOTE]
-   >
-   >Ett batchjobb tar bort profilögonblicksbilden som inträffar en gång om dagen. Vid gruppbeslut avbryts frekvensen och profiler läses alltid in från den senaste ögonblicksbilden. Förvänta dig att vänta upp till 24 timmar efter att du har skapat ett segment innan du provar API för gruppbeslut.
+  >[!NOTE]
+  >
+  >Ett batchjobb tar bort profilögonblicksbilden som inträffar en gång om dagen. Vid gruppbeslut avbryts frekvensen och profiler läses alltid in från den senaste ögonblicksbilden. Förvänta dig att vänta upp till 24 timmar efter att du har skapat en målgrupp innan du provar API:t för gruppbeslut.
 
 * **Ett beslut** i Adobe Journey Optimizer. [Lär dig hur du skapar ett beslut](offer-activities/create-offer-activities.md)
 
@@ -45,9 +45,9 @@ Följ stegen nedan för att skapa en ny jobbförfrågan.
 
 1. Namnge din jobbförfrågan och välj sedan den datauppsättning som jobbdata ska skickas till.
 
-1. Markera det Adobe Experience Platform-segment som du vill ha som mål.
+1. Välj målgrupp för Adobe Experience Platform.
 
-1. Välj en eller flera beslutsmöjligheter för erbjudanden som du vill använda för att leverera erbjudanden till segmentet:
+1. Välj en eller flera beslutsmöjligheter för erbjudanden som du vill använda för att leverera erbjudanden till målgruppen:
    1. Välj en placering i listan.
    1. Vilka beslut som är tillgängliga för den valda placeringsskärmen. Välj önskat beslut och klicka på **[!UICONTROL Add]**.
    1. Upprepa åtgärden för att lägga till så många beslutsomfattningar som du vill.
@@ -93,11 +93,11 @@ Om ett fel inträffar när jobbbegäran körs, får den **[!UICONTROL Error]** s
 
 Sluttiden för varje batchjobb är tiden från den tidpunkt då arbetsbelastningen skapas till den tidpunkt då beslutsresultatet är tillgängligt i utdatauppsättningen.
 
-Segmentstorleken är huvudfaktorn som påverkar den fullständiga batchbeslutstiden. Om det valbara erbjudandet har ett globalt frekvenstak aktiverat tar batchbeslutet ytterligare tid att slutföra. Nedan visas några approximationer av total bearbetningstid för respektive segmentstorlek, både med och utan frekvensbegränsning för giltiga erbjudanden:
+Målgruppsstorleken är den viktigaste faktorn som påverkar den kompletta batchbeslutstiden. Om det valbara erbjudandet har ett globalt frekvenstak aktiverat tar batchbeslutet ytterligare tid att slutföra. Nedan visas några uppskattningar av total bearbetningstid för respektive målgrupp, både med och utan frekvensbegränsning för berättigade erbjudanden:
 
 Med frekvensbegränsning aktiverad för berättigade erbjudanden:
 
-| Segmentstorlek | Tid för hela processen |
+| Målgruppsstorlek | Tid för hela processen |
 |--------------|----------------------------|
 | 10 000 profiler eller mindre | 7 minuter |
 | 1 miljon profiler eller mindre | 30 minuter |
@@ -105,7 +105,7 @@ Med frekvensbegränsning aktiverad för berättigade erbjudanden:
 
 Utan frekvensbegränsning för berättigade erbjudanden:
 
-| Segmentstorlek | Tid för hela processen |
+| Målgruppsstorlek | Tid för hela processen |
 |--------------|----------------------------|
 | 10 000 profiler eller mindre | 6 minuter |
 | 1 miljon profiler eller mindre | 8 minuter |

@@ -8,7 +8,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: uttrycksredigerare, data, resa
 exl-id: 9ea6cc3a-6a1b-4e8f-82ff-f8b1812617d7
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 79%
@@ -51,7 +51,7 @@ Du kan komma åt den avancerade uttrycksredigeraren på olika sätt.
 
 * När du skapar ett villkor för datakällan kan du klicka på **[!UICONTROL Advanced mode]** för att komma åt den avancerade redigeraren.
 
-   ![](../assets/journeyuc2_33.png)
+  ![](../assets/journeyuc2_33.png)
 
 * När du skapar en anpassad timer visas den avancerade redigeraren direkt.
 * Klicka på **[!UICONTROL Advanced mode]** när du kartlägger en åtgärdsparameter.
@@ -65,7 +65,7 @@ Med den här skärmen kan du ange ett uttryck manuellt.
 Till vänster på skärmen visas tillgängliga fält och funktioner:
 
 * **[!UICONTROL Events]**: välj ett av fälten som har tagits emot från den inkommande händelsen. Listan med händelsefält som visas är sammanhangsberoende och varierar beroende på vilka händelser som läggs till i resan. [Läs mer](../../event/about-events.md)
-* **[!UICONTROL Segments]**: om du har släppt en **[!UICONTROL Segment qualification]** väljer du det segment som du vill använda i uttrycket. [Läs mer](../condition-activity.md#using-a-segment)
+* **[!UICONTROL Audiences]**: om du har släppt en **[!UICONTROL Audience qualification]** väljer du den målgrupp du vill använda i ditt uttryck. [Läs mer](../condition-activity.md#using-a-segment)
 * **[!UICONTROL Data Sources]**: välj i listan bland tillgängliga fält från datakällornas fältgrupper. [Läs mer](../../datasource/about-data-sources.md)
 * **[!UICONTROL Journey properties]**: I det här avsnittet grupperas de tekniska fält som rör resan för en viss profil. [Läs mer](journey-properties.md)
 * **[!UICONTROL Functions]**: välj i listan bland inbyggda funktioner som du använder för att utföra komplex filtrering. Funktionerna är organiserade per kategori. [Läs mer](functions.md)

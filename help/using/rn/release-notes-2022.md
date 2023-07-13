@@ -4,7 +4,7 @@ product: journey optimizer
 title: Versionsinformation 2022
 description: Versionsinformation om Journey Optimizer 2022
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
-source-git-commit: d5be5ba43351e3143fce7f64878baceb8507d7f8
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '3575'
 ht-degree: 8%
@@ -45,7 +45,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 **Resor**
 
-* The **Tvinga återinträde vid upprepning** har lagts till i återkommande parametrar för lässegmentschema. Med det här alternativet kan du göra så att alla profiler som fortfarande finns i resan automatiskt avslutar den vid nästa körning. När alternativet är inaktiverat måste profilerna slutföra resan innan de kan återkomma i en annan förekomst. [Läs mer](../building-journeys/read-segment.md#configuring-segment-trigger-activity)
+* The **Tvinga återinträde vid upprepning** har lagts till i återkommande parametrar för lässchema. Med det här alternativet kan du göra så att alla profiler som fortfarande finns i resan automatiskt avslutar den vid nästa körning. När alternativet är inaktiverat måste profilerna slutföra resan innan de kan återkomma i en annan förekomst. [Läs mer](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
 
 **Administrering**
 
@@ -176,7 +176,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <tbody>
 <tr>
 <td>
-<p>Som Journey Optimizer-användare kan du nu få åtkomst till systemvarningar via användargränssnittet för att få meddelanden när resorna inte fungerar som förväntat. Du kan visa tillgängliga aviseringar och prenumerera på dem. Den första varningen som är tillgänglig med den här versionen varnar dig om en Läs segment-aktivitet inte har bearbetat någon profil under den definierade tidsramen. Mer kommer nu när arbetsflödet är olåst.</p>
+<p>Som Journey Optimizer-användare kan du nu få åtkomst till systemvarningar via användargränssnittet för att få meddelanden när resorna inte fungerar som förväntat. Du kan visa tillgängliga aviseringar och prenumerera på dem. Den första varningen som är tillgänglig med den här versionen varnar dig om en Läs publik-aktivitet inte har bearbetat någon profil under den definierade tidsramen. Mer kommer nu när arbetsflödet är olåst.</p>
 <!--p>For more information, refer to the <a href="../reports/alerts.md">detailed documentation</a>.</p-->
 </td>
 </tr>
@@ -196,7 +196,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <p>Adobe Experience Platform provides a suite of data hygiene capabilities that allow you manage your stored data through programmatic deletions of consumer records and datasets. This capability is now available for Adobe Journey Optimizer. </p>
 <p>You can manage your data stores to ensure that information is used as expected, is updated when incorrect data needs fixing, and is deleted when organizational policies deem it necessary.</p>
 <p><strong>Caution</strong> - Data Hygiene capabilities are currently only available for organizations that have purchased the Healthcare Shield add-on offering.</p>
-<p>For more information, refer to the <a href="../building-journeys/read-segment.md#configuring-segment-trigger-activity">detailed documentation</a>.
+<p>For more information, refer to the <a href="../building-journeys/read-audience.md#configuring-segment-trigger-activity">detailed documentation</a>.
 </td>
 </tr>
 </tbody>
@@ -207,7 +207,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 **Resor**
 
 * The **Enhetsdatauppsättning** finns nu som en färdig datauppsättning i Adobe Journey Optimizer. Den här uppslagsuppsättningen innehåller metadata som berikar informationen om spårnings- och feedbackdatauppsättningar. Detta hjälper er att förbättra era rapporter och frågor med mer begripliga data. [Läs mer](../data/datasets-query-examples.md#entity-dataset)
-* Ett nytt skyddsräcke har lagts till för enhetsresor (med början vid en händelse eller en segmentkvalificering) för att förhindra att resor utlöses felaktigt flera gånger för samma händelse. Återinträde av profiler blockeras nu tillfälligt som standard i 5 minuter. [Läs mer](../start/guardrails.md#events-g)
+* Ett nytt skyddsräcke har lagts till för enstaka resor (med början vid en händelse eller en målgruppskompetens) för att förhindra att resor utlöses felaktigt flera gånger för samma händelse. Återinträde av profiler blockeras nu tillfälligt som standard i 5 minuter. [Läs mer](../start/guardrails.md#events-g)
 
 **Administrering**
 
@@ -235,8 +235,8 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 ### Andra ändringar{#sept-2022-other}
 
 * Reseburst-läget har ersatts av Campaign-läget för snabb leverans. [Läs mer](../push/create-push.md#rapid-delivery)
-* För att förbättra prestandan kan Experience-fältgrupper inte längre användas i resor som börjar med ett Read-segment, en Segment-kvalificering eller en affärshändelseaktivitet. Denna ändring gäller endast för nya resor. Befintliga beteenden behåller det aktuella beteendet. [Läs mer](../start/guardrails.md#expression-editor)
-* Begränsningen på 1 timme för schemalagda lässegmentsresor har tagits bort. Dessa resor kan nu genomföras utan dröjsmål.
+* För att förbättra prestandan kan inte längre fältgrupper för Experience-händelser användas på resor som börjar med en läsare, en målgrupp eller en affärshändelseaktivitet. Denna ändring gäller endast för nya resor. Befintliga beteenden behåller det aktuella beteendet. [Läs mer](../start/guardrails.md#expression-editor)
+* Begränsningen på en timme för schemalagda läsningar av målgruppsresor har tagits bort. Dessa resor kan nu genomföras utan dröjsmål.
 
 
 
@@ -254,7 +254,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <tbody>
 <tr>
 <td>
-<p>Använd Journey Optimizer kampanjer för att leverera engångsinnehåll till ett visst segment via olika kanaler. När du använder resor är åtgärderna utformade för att utföras i sekvens. Med kampanjer utförs åtgärder samtidigt, antingen omedelbart eller baserat på ett angivet schema. </p>
+<p>Använd Journey Optimizer kampanjer för att leverera engångsinnehåll till en viss målgrupp via olika kanaler. När du använder resor är åtgärderna utformade för att utföras i sekvens. Med kampanjer utförs åtgärder samtidigt, antingen omedelbart eller baserat på ett angivet schema. </p>
 <img src="assets/do-not-localize/campaigns.gif"/>
 <p>Lär dig hur du skapar en kampanj i <a href="../campaigns/get-started-with-campaigns.md">detaljerad dokumentation</a> och <a href="https://video.tv.adobe.com/v/346680">funktionsvideo</a>.
 </td>
@@ -290,7 +290,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <td>
 <p>You can now create conditional content blocks across different authoring services to personalize your content.</p>
 <p>In addition to the Personalization Expression Library, the Expression Editor provides a new Conditional Rule Builder to help you design and save your content blocks.</p>
-<p>For more information, refer to the <a href="../building-journeys/read-segment.md#configuring-segment-trigger-activity">detailed documentation</a>.
+<p>For more information, refer to the <a href="../building-journeys/read-audience.md#configuring-segment-trigger-activity">detailed documentation</a>.
 </td>
 </tr>
 </tbody>
@@ -303,7 +303,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 * Policytabell och diagram för samtycke finns nu tillgängliga i globala rapporter om resor. Med dessa widgetar kan du spåra de uteslutna profilerna från profilerna i dina anpassade åtgärder. [Läs mer](../reports/journey-global-report.md#journey-global)
 
-   Observera att du måste återställa de olika rapportinstrumentpanelerna för att få tillgång till de senaste widgetarna. Mer information om anpassning av kontrollpanelen finns i [detaljerad dokumentation](../reports/global-report.md).
+  Observera att du måste återställa de olika rapportinstrumentpanelerna för att få tillgång till de senaste widgetarna. Mer information om anpassning av kontrollpanelen finns i [detaljerad dokumentation](../reports/global-report.md).
 
 **Administrering**
 
@@ -374,7 +374,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <tbody>
 <tr>
 <td>
-<p>Ni kan nu använda personaliserade optimeringsmodellsystem i beslutshanteringen. Med den här nya typen av modell kan ni optimera och personalisera erbjudanden baserat på segment och erbjudanden.</p>
+<p>Ni kan nu använda personaliserade optimeringsmodellsystem i beslutshanteringen. Med den här nya typen av modell kan ni optimera och personalisera erbjudanden baserat på målgrupper och erbjuda resultat.</p>
 <p>Användningen av anpassade optimerings-AI-modeller är för närvarande begränsad till utvalda användare och kommer att användas i alla miljöer i en framtida version.</p>
 <img src="assets/do-not-localize/ai-ranking.gif"/>
 <p>Mer information finns i den <a href="../offers/ranking/personalized-optimization-model.md">detaljerade dokumentationen</a>.</p>
@@ -408,7 +408,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 **Beslutshantering**
 
-* **Målgruppsstorlek** - En ny uppskattningskomponent för målgruppsstorlek visas nu i användargränssnittet när du skapar en beslutsregel, när du väljer ett segment eller en regel för att ange ett erbjudande eller när du lägger till ett segment eller en regel i ett beslutsomfång.
+* **Målgruppsstorlek** - En ny uppskattad målgruppsstorlekskomponent visas nu i användargränssnittet när du skapar en beslutsregel, när du väljer en målgrupp eller en regel för att ange ett erbjudande, eller när du lägger till en målgrupp eller en regel i ett beslutsomfång.
 
 
 ## Version från juni 2022 {#june-2022-release}
@@ -477,7 +477,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <tbody>
 <tr>
 <td>
-<p>You can now use personalized optimization model systems in Decision Management. This new type of model allows you to optimize and personalize offers based on segments and offer performance.</p>
+<p>You can now use personalized optimization model systems in Decision Management. This new type of model allows you to optimize and personalize offers based on audiences and offer performance.</p>
 <p>The use of personalized optimization AI models is currently restricted to selected users, and will be deployed to all environments in a future release.</p>
 <img src="assets/do-not-localize/ai-ranking.gif"/>
 <p>For more information, refer to the <a href="../offers/ranking/personalized-optimization-model.md">detailed documentation</a>.</p>
@@ -615,12 +615,12 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 **Resor**
 
-* **Lässegment** - Enbildsresor för Läs segment har flyttats till slutstatus 30 dagar efter det att resan körts. För schemalagda läs-segment är det 30 dagar efter körningen av den sista förekomsten. [Läs mer](../building-journeys/read-segment.md)
+* **Läsa målgrupper** - En bild Läs målgruppsresor går nu över till slutstatus 30 dagar efter det att resan har slutförts. För schemalagda läsningsmålgrupper är det 30 dagar efter att den senaste förekomsten har körts. [Läs mer](../building-journeys/read-audience.md)
 * **Uttrycksredigerare** - [limit](../building-journeys/functions/functionlimit.md) -funktionen har lagts till så att du kan begränsa antalet objekt i en lista. The [sortera](../building-journeys/functions/functionsort.md) kan du nu sortera ut ett listobjekt. Stödet för listObject har också lagts till i [urskilja](../building-journeys/functions/functiondistinct.md) och [clearWithNull](../building-journeys/functions/functiondistinctwithnull.md) funktioner.
 
 **Administrering**
 
-* **Uppdatering av kontrollpanelen för licensanvändning** - Kontrollpanelen för licensanvändning finns i [!DNL Adobe Journey Optimizer] användargränssnittet återspeglar nu det korrekta värdet för **Licensierad** Genomsnittlig profilrikedom. Du kommer att se en minskning i den här måttvisningen, vilket innebär att licensgränsen nu rapporteras korrekt. [Läs mer](../segment/license-usage.md)
+* **Uppdatering av kontrollpanelen för licensanvändning** - Kontrollpanelen för licensanvändning finns i [!DNL Adobe Journey Optimizer] användargränssnittet återspeglar nu det korrekta värdet för **Licensierad** Genomsnittlig profilrikedom. Du kommer att se en minskning i den här måttvisningen, vilket innebär att licensgränsen nu rapporteras korrekt. [Läs mer](../audience/license-usage.md)
 
 
 ## Version från april 2022 {#april-2022-release}
@@ -673,7 +673,7 @@ Som Adobe Campaign Standard-kund kan du nu skicka e-post, push-meddelanden och S
 **Beslutshantering**
 
 * Du kan nu ange om begränsningen av erbjudanden ska gälla för alla användare eller för en viss profil, och för alla placeringar eller per placering. [Läs mer](../offers/offer-library/add-constraints.md#capping)
-* Med API:t för gruppbeslut kan organisationer använda beslutsstyrningsfunktioner för alla profiler i ett visst segment i ett enda anrop. Erbjudandeinnehållet för varje profil i segmentet placeras i en AEP-datauppsättning där det är tillgängligt för anpassade batcharbetsflöden. [Läs mer](../offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
+* Med API:t för gruppbeslut kan organisationer använda beslutsfunktioner för alla profiler i en viss målgrupp i ett enda anrop. Erbjudandeinnehållet för varje profil i målgruppen placeras i en AEP-datauppsättning där det är tillgängligt för anpassade batcharbetsflöden. [Läs mer](../offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
 
 **Administrering**
 
@@ -800,14 +800,14 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 <table>
 <thead>
 <tr>
-<th><strong>Journeys - förbättring av läs segment</strong><br/></th>
+<th><strong>Journeys - läs målgruppsförbättring</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>The <strong>Inkrementell läsning</strong> har lagts till i återkommande <strong>Läs segment</strong> verksamhet. Med det här alternativet kan du bara rikta in dig på de personer som har gått in i segmentet sedan den senaste körningen av resan. Den första körningen riktar sig alltid till alla segmentmedlemmar.</p>
-<p>Mer information finns i den <a href="../building-journeys/read-segment.md#configuring-segment-trigger-activity">detaljerade dokumentationen</a>.
+<p>The <strong>Inkrementell läsning</strong> har lagts till i återkommande <strong>Läsa målgrupper</strong> verksamhet. Med det här alternativet kan ni endast rikta er mot de personer som har gått in i målgruppen sedan den senaste körningen av resan. Den första exekveringen riktar sig alltid till alla målgruppsmedlemmar.</p>
+<p>Mer information finns i den <a href="../building-journeys/read-audience.md#configuring-segment-trigger-activity">detaljerade dokumentationen</a>.
 </td>
 </tr>
 </tbody>

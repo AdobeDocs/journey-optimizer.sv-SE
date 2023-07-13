@@ -9,7 +9,7 @@ role: Admin,Developer
 level: Intermediate
 keywords: kampanj, standard, integrering, capping, action
 exl-id: 2f0218c9-e1b1-44ba-be51-15824b9fc6d2
-source-git-commit: 16738786e4ebeef3417fd0f6e5be741b348c2744
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 3%
@@ -30,7 +30,7 @@ Campaign Standardens transaktionsmeddelande och tillhörande händelse måste pu
 
 * Integreringen med Adobe Campaign Standard görs via en särskild inbyggd åtgärd i åtgärdslistan. Detta måste konfigureras för varje sandlåda.
 
-* Du kan inte använda en Campaign Standard-åtgärd med en segmentkvalificering eller en Läs-segmentaktivitet.
+* Du kan inte använda en Campaign Standard-åtgärd med behörigheten Audience eller aktiviteten Read Audience.
 
 * En resa kan inte använda både meddelanden och Campaign Standard-åtgärder.
 

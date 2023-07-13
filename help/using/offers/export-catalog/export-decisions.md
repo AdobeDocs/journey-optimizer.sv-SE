@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 064762b7-9774-42eb-bcef-1d92bc94a988
-source-git-commit: 118eddf540d1dfb3a30edb0b877189ca908944b1
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '1548'
 ht-degree: 0%
@@ -79,32 +79,32 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 * Beskrivning
 
-   **Fält:** description
-   **Titel:** Beskrivning
-   **Beskrivning:** Beskrivning av alternativval. Det används för att förmedla mänskliga läsbara avsikter om hur eller varför det här alternativvalet skapades och/eller vilket alternativ som matchar.
-   **Typ:** string
+  **Fält:** description
+  **Titel:** Beskrivning
+  **Beskrivning:** Beskrivning av alternativval. Det används för att förmedla mänskliga läsbara avsikter om hur eller varför det här alternativvalet skapades och/eller vilket alternativ som matchar.
+  **Typ:** string
 
 * Alternativfilter
 
-   **Fält:** filter
-   **Titel:** Alternativfilter
-   **Beskrivning:** Referensen till ett samlingskvalificerarbaserat (tidigare kallat taggbaserat filter) som matchar alternativ från ett lager med hjälp av deras kopplade samlingskvalificerare. Värdet är URI (@id) för den beslutsregel som refereras. Se schema https://ns.adobe.com/experience/decisioning/filter.
-   **Typ:** string
+  **Fält:** filter
+  **Titel:** Alternativfilter
+  **Beskrivning:** Referensen till ett samlingskvalificerarbaserat (tidigare kallat taggbaserat filter) som matchar alternativ från ett lager med hjälp av deras kopplade samlingskvalificerare. Värdet är URI (@id) för den beslutsregel som refereras. Se schema https://ns.adobe.com/experience/decisioning/filter.
+  **Typ:** string
 
 * Typ av profilbegränsning
 
-   **Fält:** optionSelectionType
-   **Titel:** Typ av profilbegränsning
-   **Beskrivning:** Avgör om några begränsningar är angivna och hur begränsningarna uttrycks. Det kan vara via en filterfråga eller genom ett eller flera segmentmedlemskap.
-   **Typ:** string
-   **Möjliga värden:** &quot;none&quot; (default), &quot;directList&quot;, &quot;filter&quot;
+  **Fält:** optionSelectionType
+  **Titel:** Typ av profilbegränsning
+  **Beskrivning:** Avgör om några begränsningar är angivna och hur begränsningarna uttrycks. Det kan vara via en filterfråga eller genom ett eller flera målgruppsmedlemskap.
+  **Typ:** string
+  **Möjliga värden:** &quot;none&quot; (default), &quot;directList&quot;, &quot;filter&quot;
 
 * Alternativlista
 
-   **Fält:** alternativ
-   **Titel:** Alternativlista
-   **Beskrivning:** En lista som direkt anger alternativen utan att utvärdera en filterfråga. Du kan antingen ange en alternativlista eller en alternativfilterregel.
-   **Typ:** array
+  **Fält:** alternativ
+  **Titel:** Alternativlista
+  **Beskrivning:** En lista som direkt anger alternativen utan att utvärdera en filterfråga. Du kan antingen ange en alternativlista eller en alternativfilterregel.
+  **Typ:** array
 
 <!--Missing title under Option List? Desc = An identifier of an decision option entity. The value value refers to an `@id` property of a decision option. Type: string-->
 
@@ -119,9 +119,9 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 * Placement-ID
 
-   **Titel:** Placement-ID
-   **Beskrivning:** En referens till en placeringsenhet. Värdet är URI (@id) för placeringen som refereras. Se schema https://ns.adobe.com/experience/decisioning/placement.
-   **Typ:** string
+  **Titel:** Placement-ID
+  **Beskrivning:** En referens till en placeringsenhet. Värdet är URI (@id) för placeringen som refereras. Se schema https://ns.adobe.com/experience/decisioning/placement.
+  **Typ:** string
 
 +++
 
@@ -156,13 +156,13 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 **Fält:** profileConstraintType
 **Titel:** Typ av profilbegränsning
-**Beskrivning:** Avgör om några begränsningar är angivna och hur begränsningarna uttrycks. Det kan vara via en regel eller genom ett eller flera segmentmedlemskap.
+**Beskrivning:** Avgör om några begränsningar är angivna och hur begränsningarna uttrycks. Det kan vara via en regel eller genom ett eller flera medlemskap i en målgrupp.
 **Typ:** string
 **Möjliga värden:**
 * &quot;none&quot; (standard)
 * &quot;eligibilityRule&quot;: &quot;Profilbegränsningen uttrycks som en enskild regel som måste utvärderas till true innan den begränsade åtgärden tillåts.&quot;
-* &quot;anySegments&quot;: &quot;Profilbegränsningen uttrycks som ett eller flera segment och profilen måste vara medlem i minst ett av dem innan den begränsade åtgärden tillåts.&quot;
-* &quot;allSegments&quot;: &quot;Profilbegränsningen uttrycks som ett eller flera segment och profilen måste vara medlem av alla dem innan den begränsade åtgärden tillåts.&quot;
+* &quot;anySegments&quot;: &quot;Profilbegränsningen uttrycks som en eller flera målgrupper och profilen måste vara medlem i minst en av dem innan den begränsade åtgärden tillåts.&quot;
+* &quot;allSegments&quot;: &quot;Profilbegränsningen uttrycks som en eller flera målgrupper och profilen måste vara medlem av alla dem innan den begränsade åtgärden tillåts.&quot;
 * regler: &quot;Profilbegränsningen uttrycks som ett antal olika regler, t.ex. behörighet, tillämplighet, lämplighet, som alla måste utvärderas till true innan den begränsade åtgärden tillåts.&quot;
 
 +++
@@ -171,37 +171,37 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 **Fält:** segmentIdentities
 **Titel:** Segmentidentifierare
-**Beskrivning:** Identifierare för segmenten.
+**Beskrivning:** Identifierare för målgruppen.
 **Typ:** array
 
 * Identifierare
 
-   **Fält:** _id
-   **Titel:** Identifierare
-   **Beskrivning:** Identitet för segmentet i det relaterade namnutrymmet.
-   **Typ:** string
+  **Fält:** _id
+  **Titel:** Identifierare
+  **Beskrivning:** Identitet för målgruppen i det relaterade namnutrymmet.
+  **Typ:** string
 
 * namespace
 
-   **Fält:** namespace
-   **Titel:** Namnutrymme
-   **Beskrivning:** Namnutrymmet som är associerat med `xid` -attribut.
-   **Typ:** object
-   **Obligatoriskt:** &quot;code&quot;
+  **Fält:** namespace
+  **Titel:** Namnutrymme
+  **Beskrivning:** Namnutrymmet som är associerat med `xid` -attribut.
+  **Typ:** object
+  **Obligatoriskt:** &quot;code&quot;
 
    * Code
 
-      **Fält:** kod
-      **Titel:** Code
-      **Beskrivning:** Koden är en läsbar identifierare för namnutrymmet och kan användas för att begära det tekniska namnutrymmes-ID som används för bearbetning av identitetsdiagram.
-      **Typ:** string
+     **Fält:** kod
+     **Titel:** Code
+     **Beskrivning:** Koden är en läsbar identifierare för namnutrymmet och kan användas för att begära det tekniska namnutrymmes-ID som används för bearbetning av identitetsdiagram.
+     **Typ:** string
 
 * Upplevelseidentifierare
 
-   **Fält:** xid
-   **Titel:** Upplevelseidentifierare
-   **Beskrivning:** Om det finns en sådan representerar det här värdet en identifierare för korsnamnutrymme som är unik för alla identifierare som har namnutrymmesomfång i alla namnutrymmen.
-   **Typ:** string
+  **Fält:** xid
+  **Titel:** Upplevelseidentifierare
+  **Beskrivning:** Om det finns en sådan representerar det här värdet en identifierare för korsnamnutrymme som är unik för alla identifierare som har namnutrymmesomfång i alla namnutrymmen.
+  **Typ:** string
 
 +++
 
@@ -223,25 +223,25 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 * Poängfunktion
 
-   **Fält:** function
-   **Titel:** Poängfunktion
-   **Beskrivning:** En referens till en funktion som beräknar en numerisk poäng för det här beslutsalternativet. Beslutsalternativen kommer sedan att sorteras (rangordnas) efter den poängen. Värdet för den här egenskapen är URI (@id) för funktionen som ska anropas med alternativet on i taget. Se schema https://ns.adobe.com/experience/decisioning/function.
-   **Typ:** string
+  **Fält:** function
+  **Titel:** Poängfunktion
+  **Beskrivning:** En referens till en funktion som beräknar en numerisk poäng för det här beslutsalternativet. Beslutsalternativen kommer sedan att sorteras (rangordnas) efter den poängen. Värdet för den här egenskapen är URI (@id) för funktionen som ska anropas med alternativet on i taget. Se schema https://ns.adobe.com/experience/decisioning/function.
+  **Typ:** string
 
 * Typ av orderutvärdering*
 
-   **Fält:** orderEvaluationType
-   **Titel:** Typ av orderutvärdering
-   **Beskrivning:** Anger vilken ordningsutvärderingsmekanism som används, statisk prioritet för beslutsalternativen, en poängsättningsfunktion som beräknar ett numeriskt värde för varje alternativ eller en rangordningsstrategi som tar emot en lista för att ordna den.
-   **Typ:** string
-   **Möjliga värden:** &quot;static&quot;, &quot;scoringFunction&quot;, &quot;rankingStrategy&quot;
+  **Fält:** orderEvaluationType
+  **Titel:** Typ av orderutvärdering
+  **Beskrivning:** Anger vilken ordningsutvärderingsmekanism som används, statisk prioritet för beslutsalternativen, en poängsättningsfunktion som beräknar ett numeriskt värde för varje alternativ eller en rangordningsstrategi som tar emot en lista för att ordna den.
+  **Typ:** string
+  **Möjliga värden:** &quot;static&quot;, &quot;scoringFunction&quot;, &quot;rankingStrategy&quot;
 
 * Rankningsstrategi
 
-   **Fält:** rankingStrategy
-   **Titel:** Rankningsstrategi
-   **Beskrivning:** En referens till en strategi som rankar en lista över beslutsalternativ. Beslutsalternativen returneras i en ordnad lista. Värdet för den här egenskapen är URI (@id) för funktionen som ska anropas med alternativet on i taget. Se schema https://ns.adobe.com/experience/decisioning/rankingStrategy.
-   **Typ:** string
+  **Fält:** rankingStrategy
+  **Titel:** Rankningsstrategi
+  **Beskrivning:** En referens till en strategi som rankar en lista över beslutsalternativ. Beslutsalternativen returneras i en ordnad lista. Värdet för den här egenskapen är URI (@id) för funktionen som ska anropas med alternativet on i taget. Se schema https://ns.adobe.com/experience/decisioning/rankingStrategy.
+  **Typ:** string
 
 +++
 

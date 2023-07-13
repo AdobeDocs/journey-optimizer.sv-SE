@@ -9,7 +9,7 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, om, start
 exl-id: 1ac2a376-a3a8-41ae-9b04-37886697f0fc
-source-git-commit: 93e3ed9e1a9a437353b800aee58952b86eab9370
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 1%
@@ -34,7 +34,7 @@ I gränssnittet för uttrycksredigeraren väljer, ordnar, anpassar och validerar
 I den vänstra delen av skärmen visas en domänväljare där du kan välja källa för personalisering. Tillgängliga källor är:
 
 * **[!UICONTROL Profile attributes]** : visar alla referenser som är associerade med profilschemat som beskrivs i [Dokumentation för Adobe Experience Platform Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}.
-* **[!UICONTROL Segment memberships]** : listar alla segment som har skapats i tjänsten Adobe Experience Platform Segmentation. Mer information om segmentering finns [här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
+* **[!UICONTROL Audiences]** : listar alla målgrupper som skapats i Adobe Experience Platform Segmentation Service. Mer information om segmentering finns [här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 * **[!UICONTROL Offer decisions]** : visar alla erbjudanden som är kopplade till en viss placering. Välj placering och infoga sedan erbjudandena i innehållet. En fullständig dokumentation om hur du hanterar erbjudanden finns på [det här avsnittet](../offers/get-started/starting-offer-decisioning.md).
 * **[!UICONTROL Contextual attributes]** : När en kanalåtgärdsaktivitet (e-post, push, SMS) används i en resa är sammanhangsberoende resefält tillgängliga via den här menyn. Läs mer i [det här avsnittet](personalization-use-case.md).
 * **[!UICONTROL Helper functions]** : visar alla hjälpfunktioner som är tillgängliga för att utföra dataåtgärder, t.ex. beräkningar, dataformatering eller konverteringar, villkor och manipulera dem i personaliseringssammanhang. Läs mer i [det här avsnittet](functions/functions.md).

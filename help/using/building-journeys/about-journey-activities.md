@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: resa, aktiviteter, komma igång, händelser, åtgärd
 exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 14%
@@ -28,7 +28,7 @@ Händelser som konfigurerats av den tekniska användaren (se [den här sidan](..
 
 * [Allmänna händelser](../building-journeys/general-events.md)
 * [Reaktion](../building-journeys/reaction-events.md)
-* [Segmentkvalificering](../building-journeys/segment-qualification-events.md)
+* [Målgruppskvalifikation](../building-journeys/audience-qualification-events.md)
 
 ![](assets/journey43.png)
 
@@ -44,7 +44,7 @@ På paletten till vänster på skärmen finns följande orkestreringsfunktioner:
 
 * [Villkor](../building-journeys/condition-activity.md)
 * [Vänta](../building-journeys/wait-activity.md)
-* [Läs segment](../building-journeys/read-segment.md)
+* [Läs målgrupp](../building-journeys/read-audience.md)
 
 ![](assets/journey49.png)
 

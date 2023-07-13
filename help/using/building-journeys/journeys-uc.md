@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: användningsfall, flerkanal, meddelanden, resa, kanal, händelser, push
 exl-id: a1bbfcee-2235-4820-a391-d5d35f499cb0
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 2%
@@ -18,13 +18,13 @@ ht-degree: 2%
 
 # Användningsfall: skicka flerkanalsmeddelanden{#send-multi-channel-messages}
 
-I det här avsnittet presenteras ett användningsexempel som kombinerar ett Läs segment, en händelse, reaktionshändelser och e-post-/push-meddelanden.
+I det här avsnittet visas ett användningsexempel som kombinerar en Läs publik, en händelse, reaktionshändelser och e-post/push-meddelanden.
 
 ![](assets/jo-uc1.png)
 
 ## Beskrivning av användningsfallet
 
-I det här fallet vill vi skicka ett första meddelande (e-post och push) till alla kunder som tillhör ett visst segment.
+I det här fallet vill vi skicka ett första meddelande (e-post och push) till alla kunder som tillhör en viss målgrupp.
 
 Vi vill skicka specifika meddelanden utifrån deras reaktion på det första meddelandet.
 
@@ -36,20 +36,20 @@ Sedan väntar vi på ett köp och skickar ett push-meddelande till kunden för a
 
 För att detta ska fungera måste du konfigurera följande:
 
-* ett segment för alla kunder som bor i Atlanta, San Francisco eller Seattle och som är födda efter 1980.
+* en målgrupp för alla kunder som bor i Atlanta, San Francisco eller Seattle och som är födda efter 1980.
 * en köphändelse
 
-### Skapa segmentet
+### Skapa målgruppen
 
-Under vår resa vill vi utnyttja ett specifikt kundsegment. Alla personer som tillhör segmentet går in på resan och följer de olika stegen. I vårt exempel behöver vi ett segment som riktar sig till alla kunder som bor i Atlanta, San Francisco eller Seattle och som är födda efter 1980.
+Under vår resa vill vi lyfta fram en specifik kundgrupp. Alla personer som tillhör målgruppen deltar i resan och följer de olika stegen. I vårt exempel behöver vi en målgrupp som riktar sig till alla kunder som bor i Atlanta, San Francisco eller Seattle och som är födda efter 1980.
 
-Mer information om segment finns i [page](../segment/about-segments.md).
+Mer information om målgrupper finns i [page](../audience/about-audiences.md).
 
-1. Välj **[!UICONTROL Segments]**.
+1. Välj **[!UICONTROL Audiences]**.
 
-1. Klicka på **[!UICONTROL Create segment]** som finns längst upp till höger i segmentlistan.
+1. Klicka på **[!UICONTROL Create audience]** som finns längst upp till höger i målgruppslistan.
 
-1. I **[!UICONTROL Segment properties]** anger du ett namn för segmentet.
+1. I **[!UICONTROL Audience properties]** anger du ett namn för målgruppen.
 
 1. Dra och släpp önskade fält från den vänstra rutan till arbetsytan i mitten och konfigurera dem sedan efter behov. I det här exemplet använder vi **Ort** och **Födelseår** attributfält.
 
@@ -57,7 +57,7 @@ Mer information om segment finns i [page](../segment/about-segments.md).
 
    ![](assets/add-attributes.png)
 
-Segmentet är nu skapat och klart att användas på din resa. Använda en **Läs segment** kan du göra så att alla personer som tillhör segmentet kommer in på resan.
+Publiken är nu skapad och redo att användas på din resa. Använda en **Läs målgrupp** kan du göra så att alla personer som tillhör målgruppen kommer in på resan.
 
 ### Konfigurera händelsen
 
@@ -85,7 +85,7 @@ Händelsen är nu konfigurerad och klar att användas under din resa. Genom att 
 
 ## Designa resan
 
-1. Påbörja resan med en **Läs segment** aktivitet. Markera det segment som skapades tidigare. Alla personer som tillhör segmentet deltar i resan.
+1. Påbörja resan med en **Läs målgrupp** aktivitet. Välj den målgrupp som skapats tidigare. Alla personer som tillhör målgruppen deltar i resan.
 
    ![](assets/jo-uc4.png)
 
@@ -95,7 +95,7 @@ Händelsen är nu konfigurerad och klar att användas under din resa. Genom att 
 
 1. Placera markören på e-postaktiviteten och klicka på plustecknet (+) för att skapa en ny sökväg.
 
-1. Lägg till en **Reaktion** event och select **Push öppnad**. Händelsen utlöses när en person som tillhör segmentet öppnar den push-versionen av det första meddelandet.
+1. Lägg till en **Reaktion** event och select **Push öppnad**. Händelsen utlöses när en person som tillhör målgruppen öppnar den push-versionen av det första meddelandet.
 
 1. Lägg till en **Reaktion** event och select **E-post öppnad**. Händelsen utlöses när personen öppnar e-postmeddelandet.
 

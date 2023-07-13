@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: 7fe4b24e-f60a-4107-a064-00010b0cbbfc
-source-git-commit: 64be9c41085dead10ff08711be1f39760a81ff95
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '1942'
 ht-degree: 0%
@@ -101,7 +101,7 @@ Statistiska metoder ger oss ett sätt att formalisera den osäkerheten. En av de
 
 +++Skapa nya hypoteser och testa kontinuerligt
 
-För att få verkliga affärsinsikter bör ni hålla er till bara ett experiment. I stället kan du följa upp experiment genom att formulera nya hypoteser och köra nya tester med olika förändringar, i olika segment och genom att undersöka hur de olika mätvärdena påverkas.
+För att få verkliga affärsinsikter bör ni hålla er till bara ett experiment. Följ i stället upp experiment genom att formulera nya hypoteser och köra nya tester med olika förändringar på olika målgrupper och genom att undersöka hur de olika mätvärdena påverkas.
 +++
 
 ## Tolka resultaten av dina experiment {#interpret-results}
@@ -161,21 +161,21 @@ När du har kört din Experiment finns det flera möjliga uppföljningsåtgärde
 
 * **Skapa vinnande idéer**
 
-   Med ett entydigt resultat kan ni ta fram denna vinnande idé, antingen genom att erbjuda alla era kunder den bästa behandlingen, eller genom att skapa nya kampanjer där strukturen för den bästa behandlingen replikeras.
-   </br>Observera att det som fungerar bra på en gång kanske inte fungerar bra senare i en dynamisk miljö.
+  Med ett entydigt resultat kan ni ta fram denna vinnande idé, antingen genom att erbjuda alla era kunder den bästa behandlingen, eller genom att skapa nya kampanjer där strukturen för den bästa behandlingen replikeras.
+  </br>Observera att det som fungerar bra på en gång kanske inte fungerar bra senare i en dynamisk miljö.
 
 * **Kör uppföljningstester**
 
-   Ibland kan resultatet av dina försök vara oklart, antingen på grund av att det inte fanns tillräckligt med profiler för att upptäcka skillnader i behandlingar, eller på grund av att behandlingarna du definierade inte var tillräckligt olika.
+  Ibland kan resultatet av dina försök vara oklart, antingen på grund av att det inte fanns tillräckligt med profiler för att upptäcka skillnader i behandlingar, eller på grund av att behandlingarna du definierade inte var tillräckligt olika.
 
-   Om den hypotes du testade fortfarande är relevant, kan det vara bäst att göra ett uppföljningstest på en större eller annan publik, eller att ändra behandlingarna så att det finns tydligare skillnader.
+  Om den hypotes du testade fortfarande är relevant, kan det vara bäst att göra ett uppföljningstest på en större eller annan publik, eller att ändra behandlingarna så att det finns tydligare skillnader.
 
 * **Gör djupare analyser**
 
-   Den behandling som fungerar bra för en viss målgrupp kanske inte är den bästa behandlingen för en annan målgrupp. Detaljerade analyser av hur behandlingar fungerar för olika segment hjälper till att generera idéer för nya tester.
+  Den behandling som fungerar bra för en viss målgrupp kanske inte är den bästa behandlingen för en annan målgrupp. Genom att göra djupare analyser av hur behandlingar fungerar för olika målgrupper kan du generera idéer för nya tester.
 
-   På samma sätt kan en studie av hur varje behandling fungerar med olika mätvärden också ge en mer heltäckande bild av dina experiment.
+  På samma sätt kan en studie av hur varje behandling fungerar med olika mätvärden också ge en mer heltäckande bild av dina experiment.
 
-   >[!CAUTION]
-   >
-   >Fler analyser innebär en större risk för att upptäcka en falsk effekt eller falskt positiv.
+  >[!CAUTION]
+  >
+  >Fler analyser innebär en större risk för att upptäcka en falsk effekt eller falskt positiv.

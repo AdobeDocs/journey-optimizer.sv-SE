@@ -8,9 +8,9 @@ role: Developer, Admin
 level: Intermediate, Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: 4b3b7ef3ec83705758374ca9e9170ce2933fa8de
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
@@ -19,27 +19,23 @@ ht-degree: 0%
 
 ## Om API-utlösta kampanjer {#about}
 
-Med [!DNL Journey Optimizer]kan ni skapa kampanjer och sedan anropa dem från ett externt system baserat på användarens utlösare med [REST API för körning av interaktivt meddelande](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution). På så sätt kan ni täcka olika behov av marknadsföring och transaktionsmeddelanden, som lösenordsåterställningar, OTP-token, bland annat.
+Med [!DNL Journey Optimizer]kan ni skapa kampanjer och sedan anropa dem från ett externt system baserat på användarens utlösare med [REST API för körning av interaktivt meddelande](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution). På så sätt kan du täcka olika behov av användnings- och transaktionsmeddelanden, som lösenordsåterställningar och OTP-token.
 
 För att göra detta måste du först skapa en API-utlöst kampanj i Journey Optimizer och sedan starta körningen via ett API-anrop.
 
 Tillgängliga kanaler för API-utlösta kampanjer är e-post-, SMS- och push-meddelanden.
 
->[!NOTE]
->
->För närvarande stöds inte snabb leverans för kampanjer som triggas av API:t för push-meddelanden.
-
 ## Skapa en API-utlöst kampanj {#create}
 
 ### Konfigurera och aktivera kampanjen {#create-activate}
 
-Följ stegen nedan för att skapa en API-utlöst kampanj. Detaljerad information om hur du skapar en kampanj finns i [det här avsnittet](create-campaign.md).
+Processen för att skapa API-utlösta kampanjer är fortfarande densamma som för schemalagda kampanjer, med undantag för valet av målgrupp som görs i API-nyttolasten. Detaljerad information om hur du skapar en kampanj finns i [det här avsnittet](create-campaign.md).
+
+Så här skapar du en API-utlöst kampanj:
 
 1. Skapa en ny kampanj med **[!UICONTROL API-triggered]** typ.
 
-1. Välj **[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]** -kategorin beroende på vilken typ av kommunikation du vill skicka.
-
-1. Välj en av kanalerna som stöds och den associerade kanalytan som ska användas för att skicka meddelandet, och klicka sedan på **[!UICONTROL Create]**.
+1. Välj kanal och kanalyta som ska användas för att skicka meddelandet och klicka sedan på **[!UICONTROL Create]**.
 
    ![](assets/api-triggered-type.png)
 
@@ -51,11 +47,9 @@ Följ stegen nedan för att skapa en API-utlöst kampanj. Detaljerad information
    >
    >Om du använder ett stort antal eller stora sammanhangsberoende data i ditt innehåll kan det påverka prestanda.
 
-1. I **[!UICONTROL Audience]** anger du namnutrymmet som ska användas för att identifiera de enskilda personerna.
+1. I **[!UICONTROL Audience]** anger du namnutrymmet som ska användas för att identifiera personer från målgruppen.
 
-   * Om du skapar en **transaktionsbaserad**-typkampanj måste målprofilerna definieras i API-anropet. The **[!UICONTROL Create new profiles]** kan du automatiskt skapa profiler som inte finns i databasen. [Läs mer om att skapa profiler vid kampanjkörning](#profile-creation)
-
-   * För **marknadsföring** liknande kampanjer, klicka på **[!UICONTROL Audience]** för att välja målgrupp.
+   The **[!UICONTROL Create new profiles]** kan du automatiskt skapa profiler som inte finns i databasen. [Läs mer om att skapa profiler vid kampanjkörning](#profile-creation)
 
 1. Konfigurera kampanjens start- och slutdatum.
 
@@ -74,8 +68,6 @@ När kampanjen har aktiverats måste du hämta den genererade cURL-exempelbegär
    ![](assets/api-triggered-curl.png)
 
 1. Använd denna cURL-begäran i API:erna för att bygga upp din nyttolast och utlösa kampanjen. Mer information finns i [API-dokumentation för interaktiv meddelandekörning](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution).
-
-   Exempel på API-anrop finns också i [den här sidan](https://developer.adobe.com/journey-optimizer-apis/references/messaging-samples/).
 
    >[!NOTE]
    >
@@ -100,7 +92,7 @@ The `{{context.<contextualAttribute>}}` syntaxen mappas endast till datatypen St
 
 >[!IMPORTANT]
 >
->Kontextattributen som skickas till begäran får inte överstiga 50 kB och är alltid av typen sträng.
+>Kontextattributen som skickades till begäran får inte överstiga 50 kB.
 >
 >The `context.system` syntaxen är begränsad till intern användning i Adobe och ska inte användas för att skicka kontextuella attribut.
 
@@ -114,9 +106,9 @@ När det inte finns någon profil i databasen kan du i Journey Optimizer automat
 
 >[!IMPORTANT]
 >
->I händelse av transaktionsmeddelanden finns den här funktionen **mycket små volymprofiler** i en stor volym transaktionsbaserad sändningsanvändning, med en stor del av de profiler som redan finns på plattformen.
+>Den här funktionen finns för **mycket små volymprofiler** i en stor volym transaktionsbaserad sändningsanvändning, med en stor del av de profiler som redan finns på plattformen.
 
-Om du vill aktivera skapande av profiler vid kampanjkörning växlar du **[!UICONTROL Create new profiles]** på i **[!UICONTROL Audience]** -avsnitt. Om det här alternativet är inaktiverat kommer okända profiler att avvisas för alla utskickningar och API-anropet kommer att misslyckas.
+Om du vill aktivera skapande av profiler vid kampanjkörning växlar du **[!UICONTROL Create new profiles]** på i **[!UICONTROL Audience]** -avsnitt.
 
 ![](assets/api-triggered-create-profile.png)
 

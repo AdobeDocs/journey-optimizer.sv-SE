@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: e28c038b-49ed-4685-bfe6-514116eb0711
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 3%
@@ -73,7 +73,7 @@ Följ stegen nedan för att börja skapa en webbupplevelse genom en kampanj.
 
 1. När du har definierat webbytan väljer du **[!UICONTROL Create]**.
 
-1. Slutför stegen för att skapa en webbkampanj, t.ex. kampanjegenskaperna, [publik](../segment/about-segments.md)och [schema](../campaigns/create-campaign.md#schedule).
+1. Slutför stegen för att skapa en webbkampanj, t.ex. kampanjegenskaperna, [publik](../audience/about-audiences.md)och [schema](../campaigns/create-campaign.md#schedule).
 
    ![](assets/web-campaign-steps.png)
 

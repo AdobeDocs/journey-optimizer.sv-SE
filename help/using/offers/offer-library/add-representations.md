@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 718af505-7b7c-495e-8974-bd9c35d796bb
-source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 1%
@@ -134,5 +134,5 @@ Du kan också infoga text när du väljer en kompatibel placering.
 
    >[!NOTE]
    >
-   >Endast **[!UICONTROL Profile attributes]**, **[!UICONTROL Segment memberships]** och **[!UICONTROL Helper functions]** Det finns källor för beslutsförvaltning.
+   >Endast **[!UICONTROL Profile attributes]**, **[!UICONTROL Audiences]** och **[!UICONTROL Helper functions]** Det finns källor för beslutsförvaltning.
 

@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: förhandsgranskning, innehåll, e-post, korrektur, test, profil
 exl-id: f2c2a360-a4b2-4416-bbd0-e27dd014e4ac
-source-git-commit: 59499dec7d15dd4565c7910d7b454d82243ff011
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 1%
@@ -26,7 +26,7 @@ Om du vill identifiera eventuella fel i e-postinnehåll eller personaliseringsin
 >
 >Du måste ha testprofiler tillgängliga för att kunna förhandsgranska meddelanden och skicka korrektur.
 >
->Lär dig hur du skapar testprofiler i [den här sidan](../segment/creating-test-profiles.md).
+>Lär dig hur du skapar testprofiler i [den här sidan](../audience/creating-test-profiles.md).
 
 Om du vill testa ditt e-postinnehåll måste du:
 
@@ -52,7 +52,7 @@ Dessutom kan du **Litmus** konto till [!DNL Journey Optimizer] för att omedelba
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/email/preview.html#email-rendering" text="E-poståtergivning"
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/email/preview.html#preview-email" text="Förhandsgranskning"
 
-Använd [Testprofiler](../segment/creating-test-profiles.md) om du vill ange fler mottagare som inte matchar de definierade målinriktningskriterierna som mål.
+Använd [Testprofiler](../audience/creating-test-profiles.md) om du vill ange fler mottagare som inte matchar de definierade målinriktningskriterierna som mål.
 
 Så här väljer du testprofiler:
 
@@ -68,7 +68,7 @@ Så här väljer du testprofiler:
 
    ![](assets/previewselect-namespace.png)
 
-   Läs mer om Adobe Experience Platform identitetsnamnutrymmen [i det här avsnittet](../segment/get-started-identity.md).
+   Läs mer om Adobe Experience Platform identitetsnamnutrymmen [i det här avsnittet](../audience/get-started-identity.md).
 
    I exemplet nedan använder vi **E-post** namnutrymme.
 

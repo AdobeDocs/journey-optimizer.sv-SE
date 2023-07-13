@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: c7f691aa-8f89-4f23-b897-53211863eb6d
-source-git-commit: 118eddf540d1dfb3a30edb0b877189ca908944b1
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
 source-wordcount: '2009'
 ht-degree: 0%
@@ -61,17 +61,17 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 * **Slutdatum och -tid**
 
-   **Fält:** endDate
-   **Titel:** Slutdatum och -tid
-   **Beskrivning:** Slutdatumet för en beslutsalternativs giltighet. Alternativ som har passerat slutdatumet kan inte längre föreslås i beslutsprocessen.
-   **Typ:** string
+  **Fält:** endDate
+  **Titel:** Slutdatum och -tid
+  **Beskrivning:** Slutdatumet för en beslutsalternativs giltighet. Alternativ som har passerat slutdatumet kan inte längre föreslås i beslutsprocessen.
+  **Typ:** string
 
 * **Startdatum och -tid**
 
-   **Fält:** startDate
-   **Titel:** Startdatum och -tid
-   **Beskrivning:** Startdatumet för ett beslutsalternativs giltighet. Alternativ som inte har nått sitt startdatum kan inte föreslås än i beslutsprocessen.
-   **Typ:** string
+  **Fält:** startDate
+  **Titel:** Startdatum och -tid
+  **Beskrivning:** Startdatumet för ett beslutsalternativs giltighet. Alternativ som inte har nått sitt startdatum kan inte föreslås än i beslutsprocessen.
+  **Typ:** string
 
 +++
 
@@ -102,83 +102,83 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 * **_experience > decisioning > contents > components > Content Component Type**
 
-   **Fält:** _type
-   **Titel:** Innehållskomponenttyp
-   **Beskrivning:** En uppräknad uppsättning URI:er där varje värde mappas till en typ som ges till innehållskomponenten. En del användare av innehållsrepresentationerna förväntar sig att värdet @type ska vara en referens till schemat som beskriver ytterligare egenskaper för innehållskomponenten.
-   **Typ:** string
+  **Fält:** _type
+  **Titel:** Innehållskomponenttyp
+  **Beskrivning:** En uppräknad uppsättning URI:er där varje värde mappas till en typ som ges till innehållskomponenten. En del användare av innehållsrepresentationerna förväntar sig att värdet @type ska vara en referens till schemat som beskriver ytterligare egenskaper för innehållskomponenten.
+  **Typ:** string
 
 * **_experience > decisioning > contents > components > _dc**
 
-   **Fält:** _dc
-   **Typ:** object
-   **Obligatoriskt:** &quot;format&quot;
+  **Fält:** _dc
+  **Typ:** object
+  **Obligatoriskt:** &quot;format&quot;
 
    * **Format**
 
-      **Fält:** format
-      **Titel:** Format
-      **Beskrivning:** Resursens fysiska eller digitala manifestation. Vanligtvis ska Format innehålla resursens medietyp. Format kan användas för att fastställa programvara, maskinvara eller annan utrustning som behövs för att visa eller använda resursen. Rekommenderad bästa metod är att välja ett värde från ett kontrollerat vokabulär (t.ex. listan med [Internetmedietyper](https://www.iana.org/assignments/media-types/) definiera datormedieformat).
-      **Typ:** string
-      **Exempel:** &quot;application/vnd.adobe.photoshop&quot;
+     **Fält:** format
+     **Titel:** Format
+     **Beskrivning:** Resursens fysiska eller digitala manifestation. Vanligtvis ska Format innehålla resursens medietyp. Format kan användas för att fastställa programvara, maskinvara eller annan utrustning som behövs för att visa eller använda resursen. Rekommenderad bästa metod är att välja ett värde från ett kontrollerat vokabulär (t.ex. listan med [Internetmedietyper](https://www.iana.org/assignments/media-types/) definiera datormedieformat).
+     **Typ:** string
+     **Exempel:** &quot;application/vnd.adobe.photoshop&quot;
 
    * **Språk**
-      **Fält:** språk
-      **Titel:** Språk
-      **Beskrivning:** Resursens språk. \nSpråk anges i språkkoden enligt definitionen i [IETF RFC 3066](https://www.ietf.org/rfc/rfc3066.txt), som ingår i BCP 47, som används någon annanstans i XDM.
-      **Typ:** array
-      **Exempel:** &quot;\n&quot;, &quot;pt-BR&quot;, &quot;es-ES&quot;
+     **Fält:** språk
+     **Titel:** Språk
+     **Beskrivning:** Resursens språk. \nSpråk anges i språkkoden enligt definitionen i [IETF RFC 3066](https://www.ietf.org/rfc/rfc3066.txt), som ingår i BCP 47, som används någon annanstans i XDM.
+     **Typ:** array
+     **Exempel:** &quot;\n&quot;, &quot;pt-BR&quot;, &quot;es-ES&quot;
 
 * **_experience > decisioning > contents > components > _repo**
 
-   **Fält:** repo
-   **Typ:** object
+  **Fält:** repo
+  **Typ:** object
 
    * **id**
 
-      **Fält:** id
-      **Beskrivning:** En valfri unik identifierare som refererar till resursen i en innehållsdatabas. När plattforms-API:er används för att hämta representationen kan klienten förvänta sig en ytterligare egenskap \&quot;repo:resolveUrl\&quot; för att hämta resursen.
-      **Typ:** string
-      **Exempel:** &quot;urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e&quot;
+     **Fält:** id
+     **Beskrivning:** En valfri unik identifierare som refererar till resursen i en innehållsdatabas. När plattforms-API:er används för att hämta representationen kan klienten förvänta sig en ytterligare egenskap \&quot;repo:resolveUrl\&quot; för att hämta resursen.
+     **Typ:** string
+     **Exempel:** &quot;urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e&quot;
 
    * **name**
 
-      **Fält:** name
-      **Beskrivning:** Tips om var du hittar databasen där den externa resursen lagras av \&quot;repo:id\&quot;.
-      **Typ:** string
+     **Fält:** name
+     **Beskrivning:** Tips om var du hittar databasen där den externa resursen lagras av \&quot;repo:id\&quot;.
+     **Typ:** string
 
    * **databaseID**
 
-      **Fält:** databaseID
-      **Beskrivning:** En valfri unik identifierare som refererar till resursen i en innehållsdatabas. När plattforms-API:er används för att hämta representationen kan klienten förvänta sig en ytterligare egenskap \&quot;repo:resolveUrl\&quot; för att hämta resursen.
-      **Typ:** string
-      **Exempel:** &quot;C87932A55B06F7070A49412D@AdobeOrg&quot;
+     **Fält:** databaseID
+     **Beskrivning:** En valfri unik identifierare som refererar till resursen i en innehållsdatabas. När plattforms-API:er används för att hämta representationen kan klienten förvänta sig en ytterligare egenskap \&quot;repo:resolveUrl\&quot; för att hämta resursen.
+     **Typ:** string
+     **Exempel:** &quot;C87932A55B06F7070A49412D@AdobeOrg&quot;
 
    * **resolveURL**
 
-      **Fält:** resolveURL
-      **Beskrivning:** En unik resurslokaliserare (tillval) som kan läsa resursen i en innehållsdatabas. Detta gör det enklare att hämta resursen utan att kunden förstår var resursen hanteras och vilka API:er som ska anropas. Detta liknar en HAL-länk, men semantiken är enklare och mer ändamålsenlig.
-      **Typ:** string
-      **Exempel:** &quot;https://plaftform.adobe.io/resolveByPath?path=&quot;/mycorp/content/projectx/fragment/prod/herobanners/banner14.html3&quot;&quot;
+     **Fält:** resolveURL
+     **Beskrivning:** En unik resurslokaliserare (tillval) som kan läsa resursen i en innehållsdatabas. Detta gör det enklare att hämta resursen utan att kunden förstår var resursen hanteras och vilka API:er som ska anropas. Detta liknar en HAL-länk, men semantiken är enklare och mer ändamålsenlig.
+     **Typ:** string
+     **Exempel:** &quot;https://plaftform.adobe.io/resolveByPath?path=&quot;/mycorp/content/projectx/fragment/prod/herobanners/banner14.html3&quot;&quot;
 
 * **_experience > decisioning > contents > components > content**
 
-   **Fält:** innehåll
-   **Beskrivning:** Ett valfritt fält som innehåller innehåll direkt. I stället för att referera till innehåll i en resursdatabas kan komponenten lagra enkelt innehåll direkt. Det här fältet används inte för sammansatta, komplexa och binära innehållsresurser.
-   **Typ:** string
+  **Fält:** innehåll
+  **Beskrivning:** Ett valfritt fält som innehåller innehåll direkt. I stället för att referera till innehåll i en resursdatabas kan komponenten lagra enkelt innehåll direkt. Det här fältet används inte för sammansatta, komplexa och binära innehållsresurser.
+  **Typ:** string
 
 * **_experience > decisioning > contents > components > deliveryURL**
 
-   **Fält:** deliveryURL
-   **Beskrivning:** En unik resurslokaliserare (tillval) som kan hämta resursen från ett leveransnätverk eller en tjänstslutpunkt. Den här URL:en används av en användaragent för att få tillgång till resursen offentligt.
-   **Typ:** string
-   **Exempel:** &quot;https://cdn.adobe.io/content/projectx/fragment/prod/static/1232324wd32.jpeg&quot;
+  **Fält:** deliveryURL
+  **Beskrivning:** En unik resurslokaliserare (tillval) som kan hämta resursen från ett leveransnätverk eller en tjänstslutpunkt. Den här URL:en används av en användaragent för att få tillgång till resursen offentligt.
+  **Typ:** string
+  **Exempel:** &quot;https://cdn.adobe.io/content/projectx/fragment/prod/static/1232324wd32.jpeg&quot;
 
 * **_experience > decisioning > contents > components > linkURL**
 
-   **Fält:** linkURL
-   **Beskrivning:** En unik resurslokaliserare (tillval) för användarinteraktioner. Den här URL:en används för att referera slutanvändaren till i en användaragent och kan spåras.
-   **Typ:** string
-   **Exempel:** &quot;https://cdn.adobe.io/tracker?code=23432&amp;redirect=/content/projectx/fragment/prod/static/1232324wd32.jpeg&quot;
+  **Fält:** linkURL
+  **Beskrivning:** En unik resurslokaliserare (tillval) för användarinteraktioner. Den här URL:en används för att referera slutanvändaren till i en användaragent och kan spåras.
+  **Typ:** string
+  **Exempel:** &quot;https://cdn.adobe.io/tracker?code=23432&amp;redirect=/content/projectx/fragment/prod/static/1232324wd32.jpeg&quot;
 
 ++_experience > decisioning > contents > Placement
 
@@ -239,13 +239,13 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 **Fält:** profileConstraintType
 **Titel:** Typ av profilbegränsning
-**Beskrivning:** Avgör om några begränsningar är angivna och hur begränsningarna uttrycks. Det kan vara via en regel eller genom ett eller flera segmentmedlemskap.
+**Beskrivning:** Avgör om några begränsningar är angivna och hur begränsningarna uttrycks. Det kan vara via en regel eller genom ett eller flera medlemskap i en målgrupp.
 **Typ:** string
 **Möjliga värden:**
 * &quot;none&quot; (standard)
 * &quot;eligibilityRule&quot;: &quot;Profilbegränsningen uttrycks som en enskild regel som måste utvärderas till true innan den begränsade åtgärden tillåts.&quot;
-* &quot;anySegments&quot;: &quot;Profilbegränsningen uttrycks som ett eller flera segment och profilen måste vara medlem i minst ett av dem innan den begränsade åtgärden tillåts.&quot;
-* &quot;allSegments&quot;: &quot;Profilbegränsningen uttrycks som ett eller flera segment och profilen måste vara medlem av alla dem innan den begränsade åtgärden tillåts.&quot;
+* &quot;anySegments&quot;: &quot;Profilbegränsningen uttrycks som en eller flera målgrupper och profilen måste vara medlem i minst en av dem innan den begränsade åtgärden tillåts.&quot;
+* &quot;allSegments&quot;: &quot;Profilbegränsningen uttrycks som en eller flera målgrupper och profilen måste vara medlem av alla dem innan den begränsade åtgärden tillåts.&quot;
 * regler: &quot;Profilbegränsningen uttrycks som ett antal olika regler, t.ex. behörighet, tillämplighet, lämplighet, som alla måste utvärderas till true innan den begränsade åtgärden tillåts.&quot;
 
 +++
@@ -254,37 +254,37 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 **Fält:** segmentIdentities
 **Titel:** Segmentidentifierare
-**Beskrivning:** Identifierare för segmenten
+**Beskrivning:** Identifierare för målgrupperna
 **Typ:** array
 
 * **Identifierare**
 
-   **Fält:** _id
-   **Titel:** Identifierare
-   **Beskrivning:** Identitet för segmentet i det relaterade namnutrymmet.
-   **Typ:** string
+  **Fält:** _id
+  **Titel:** Identifierare
+  **Beskrivning:** Identitet för målgrupperna i det relaterade namnutrymmet.
+  **Typ:** string
 
 * **Namnutrymme**
 
-   **Fält:** namespace
-   **Titel:** Namnutrymme
-   **Beskrivning:** Namnutrymmet som är associerat med `xid` -attribut.
-   **Typ:** object
-   **Obligatoriskt:** &quot;code&quot;
+  **Fält:** namespace
+  **Titel:** Namnutrymme
+  **Beskrivning:** Namnutrymmet som är associerat med `xid` -attribut.
+  **Typ:** object
+  **Obligatoriskt:** &quot;code&quot;
 
    * **Code**
 
-      **Fält:** kod
-      **Titel:** Code
-      **Beskrivning:** Koden är en läsbar identifierare för namnutrymmet och kan användas för att begära det tekniska namnutrymmes-ID som används för bearbetning av identitetsdiagram.
-      **Typ:** string
+     **Fält:** kod
+     **Titel:** Code
+     **Beskrivning:** Koden är en läsbar identifierare för namnutrymmet och kan användas för att begära det tekniska namnutrymmes-ID som används för bearbetning av identitetsdiagram.
+     **Typ:** string
 
 * **Upplevelseidentifierare**
 
-   **Fält:** xid
-   **Titel:** Upplevelseidentifierare
-   **Beskrivning:** Om det finns en sådan representerar det här värdet en identifierare för korsnamnutrymme som är unik för alla identifierare som har namnutrymmesomfång i alla namnutrymmen.
-   **Typ:** string
+  **Fält:** xid
+  **Titel:** Upplevelseidentifierare
+  **Beskrivning:** Om det finns en sådan representerar det här värdet en identifierare för korsnamnutrymme som är unik för alla identifierare som har namnutrymmesomfång i alla namnutrymmen.
+  **Typ:** string
 
 +++
 
@@ -306,25 +306,25 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 * **Poängfunktion**
 
-   **Fält:** function
-   **Titel:** Poängfunktion
-   **Beskrivning:** En referens till en funktion som beräknar en numerisk poäng för det här beslutsalternativet. Beslutsalternativen kommer sedan att sorteras (rangordnas) efter den poängen. Värdet för den här egenskapen är URI (@id) för funktionen som ska anropas med alternativet on i taget. Se schema https://ns.adobe.com/experience/decisioning/function.
-   **Typ:** string
+  **Fält:** function
+  **Titel:** Poängfunktion
+  **Beskrivning:** En referens till en funktion som beräknar en numerisk poäng för det här beslutsalternativet. Beslutsalternativen kommer sedan att sorteras (rangordnas) efter den poängen. Värdet för den här egenskapen är URI (@id) för funktionen som ska anropas med alternativet on i taget. Se schema https://ns.adobe.com/experience/decisioning/function.
+  **Typ:** string
 
 * **Typ av orderutvärdering**
 
-   **Fält:** orderEvaluationType
-   **Titel:** Typ av orderutvärdering
-   **Beskrivning:** Anger vilken ordningsutvärderingsmekanism som används, statisk prioritet för beslutsalternativen, en poängsättningsfunktion som beräknar ett numeriskt värde för varje alternativ eller en rangordningsstrategi som tar emot en lista för att ordna den.
-   **Typ:** string
-   **Möjliga värden:** &quot;static&quot;, &quot;scoringFunction&quot;, &quot;rankingStrategy&quot;
+  **Fält:** orderEvaluationType
+  **Titel:** Typ av orderutvärdering
+  **Beskrivning:** Anger vilken ordningsutvärderingsmekanism som används, statisk prioritet för beslutsalternativen, en poängsättningsfunktion som beräknar ett numeriskt värde för varje alternativ eller en rangordningsstrategi som tar emot en lista för att ordna den.
+  **Typ:** string
+  **Möjliga värden:** &quot;static&quot;, &quot;scoringFunction&quot;, &quot;rankingStrategy&quot;
 
 * **Rankningsstrategi**
 
-   **Fält:** rankingStrategy
-   **Titel:** Rankningsstrategi
-   **Beskrivning:** En referens till en strategi som rankar en lista över beslutsalternativ. Beslutsalternativen returneras i en ordnad lista. Värdet för den här egenskapen är URI (@id) för funktionen som ska anropas med alternativet on i taget. Se schema https://ns.adobe.com/experience/decisioning/rankingStrategy.
-   **Typ:** string
+  **Fält:** rankingStrategy
+  **Titel:** Rankningsstrategi
+  **Beskrivning:** En referens till en strategi som rankar en lista över beslutsalternativ. Beslutsalternativen returneras i en ordnad lista. Värdet för den här egenskapen är URI (@id) för funktionen som ska anropas med alternativet on i taget. Se schema https://ns.adobe.com/experience/decisioning/rankingStrategy.
+  **Typ:** string
 
 +++
 

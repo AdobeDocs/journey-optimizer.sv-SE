@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: 11c1945f8e7f7ca74a2c9ca33ff85fea77bcf5db
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 2%
+source-wordcount: '387'
+ht-degree: 3%
 
 ---
 
@@ -21,14 +21,14 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="campaigns_list"
 >title="Kampanjer"
->abstract="Skapa kampanjer för att leverera engångsinnehåll till ett specifikt segment i olika kanaler. Innan du skapar din kampanj måste du se till att du har en kanalyta (t.ex. en meddelandeförinställning) och ett Adobe Experience Platform-segment som är klart att användas."
+>abstract="Skapa kampanjer för att leverera engångsinnehåll till en viss målgrupp i olika kanaler. Innan du skapar en kampanj måste du se till att du har en kanalyta (t.ex. en meddelandeförinställning) och en Adobe Experience Platform-publik som är klar att använda."
 
-Använd Journey Optimizer kampanjer för att leverera engångsinnehåll till ett visst segment via olika kanaler. När du använder resor utförs åtgärderna i sekvens. Med kampanjer utförs åtgärder samtidigt, antingen omedelbart eller baserat på ett angivet schema.
+Använd Journey Optimizer kampanjer för att leverera engångsinnehåll till en viss målgrupp via olika kanaler. När du använder resor utförs åtgärderna i sekvens. Med kampanjer utförs åtgärder samtidigt, antingen omedelbart eller baserat på ett angivet schema.
 
 Du kan skapa två typer av kampanjer:
 
 * **Schemalagda kampanjer** möjliggör enkel ad hoc-batchkommunikation för marknadsföringsfall som reklamerbjudanden, engagemangskampanjer, meddelanden, juridiska meddelanden eller policyuppdateringar.
-* **API-utlösta kampanjer** gör det möjligt att nå ut till en målgrupp vid rätt tidpunkt, eller för transaktionsmeddelanden/operativa meddelanden till en individ som återställning av lösenord, där behovet kan innebära personalisering inte bara genom att använda profilattribut, utan även kontextdata i realtid i utlösaren som är en REST API-nyttolast.
+* **API-utlösta kampanjer** möjliggör enkla transaktions-/driftsmeddelanden med REST API:er (lösenordsåterställning, övergivna varukorgar osv.), där behovet kan innebära personalisering med hjälp av profilattribut och sammanhangsbaserade data från nyttolast.
 
 De viktigaste stegen för att skapa en kampanj är följande:
 
@@ -66,7 +66,7 @@ Kontrollera följande innan du börjar skapa din första kampanj i Journey Optim
 
 +++
 
-1. **Ni behöver en målgrupp**. Målgruppssegment måste vara tillgängliga innan kampanjen kan skapas. Läs mer om målgruppsframtagning [på den här sidan](../segment/about-segments.md).
+1. **Ni behöver en målgrupp**. Målgrupper måste vara tillgängliga innan kampanjen kan skapas. Läs mer om målgrupper [på den här sidan](../audience/about-audiences.md).
 1. **Du behöver en kanalyta**. Om du vill kunna markera en kanal måste du ha motsvarande kanalyta (dvs. förinställning) skapad och tillgänglig. Läs mer om kanalytor [på den här sidan](../configuration/channel-surfaces.md).
 
 ## Instruktionsvideo {#video}

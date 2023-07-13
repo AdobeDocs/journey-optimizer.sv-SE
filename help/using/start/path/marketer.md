@@ -5,9 +5,9 @@ title: Journey Optimizer Get started for Marketers
 description: Lär dig mer om hur du arbetar med Journey Optimizer som resande
 level: Intermediate
 exl-id: 34304142-3ee8-4081-94b9-e914968c75ba
-source-git-commit: 020c4fb18cbd0c10a6eb92865f7f0457e5db8bc0
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Som **Marknadsförare** eller en **Journey Practicionner**&#x200B;är du ansvari
 
 Se följande avsnitt för att konfigurera din första resa, lägga till erbjudanden och resurser och skicka meddelanden:
 
-1. **Skapa segment**. Med Journey Optimizer kan ni skapa målgruppssegment direkt från **Segment** och utnyttja dem på era resor.  Läs mer om segment [på den här sidan](../../segment/about-segments.md). Upptäck hur man bygger segment [i det här exemplet](../../segment/creating-a-segment.md).
+1. **Skapa målgrupper**. Med Journey Optimizer kan ni skapa målgrupper genom segmentdefinitioner direkt från **Målgrupper** och utnyttja dem på era resor.  Läs mer om målgrupper [på den här sidan](../../audience/about-audiences.md). Upptäck hur du skapar segmentdefinitioner [i det här exemplet](../../audience/creating-a-segment-definition.md).
 
 1. **Lägg in personalisering och dynamiskt innehåll**. Utnyttja Journey Optimizer personalisering och dynamiska innehållsfunktioner för att anpassa budskapet till er målgrupp. Läs mer om [personalisering](../../personalization/personalize.md) och [dynamiskt innehåll](../../personalization/get-started-dynamic-content.md).
 
@@ -34,13 +34,13 @@ Se följande avsnitt för att konfigurera din första resa, lägga till erbjudan
 
 1. **Designa kundresor** för att leverera personaliserade, sammanhangsbaserade upplevelser. [!DNL Journey Optimizer] gör att du kan skapa användningsfall för realtidssamordning med kontextuella data lagrade i händelser eller datakällor. Utforma avancerade scenarier i flera steg med följande funktioner:
 
-   * Skicka i realtid **enhetlig leverans** aktiveras när en händelse tas emot, eller **i batch** med Adobe Experience Platform-segment.
+   * Skicka i realtid **enhetlig leverans** aktiveras när en händelse tas emot, eller **i batch** med Adobe Experience Platform målgrupper.
 
    * Utnyttja **kontextuella data** från händelser, information från Adobe Experience Platform eller data från API-tjänster från tredje part.
 
    * Använd **inbyggda kanalåtgärder** (E-post, SMS, push) för att skicka meddelanden som är utformade i [!DNL Journey Optimizer] eller skapa **anpassade åtgärder** om du använder ett tredjepartssystem för att skicka meddelanden.
 
-   * Med **resedesigner** bygg upp flerstegstillämpningar: enkelt dra och släppa en tävlingshändelse eller en aktivitet i ett lässegment, lägga till villkor och skicka personaliserade meddelanden.
+   * Med **resedesigner** bygg upp flerstegstillämpningar: enkelt dra och släppa en tävlingsaktivitet eller en läsningsaktivitet, lägga till villkor och skicka personaliserade meddelanden.
 
    ![](../assets/journey-design.png)
 

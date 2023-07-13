@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: b08dc0f8-c85f-4aca-85eb-92dc76b0e588
-source-git-commit: 22752a30fef53808fa9deb80a2053d5bc22abc95
+source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '363'
 ht-degree: 3%
 
 ---
@@ -94,7 +94,7 @@ The `elseif` -programsatsen anger ett nytt villkor som ska testas om den första
    {%/if%}
    ```
 
-1. **Villkorligt innehåll baserat på segmentmedlemskap**
+1. **Villkorligt innehåll baserat på målgruppsmedlemskap**
 
    ```sql
    {%#if profile.segmentMembership.get("ups").get("5fd513d7-d6cf-4ea2-856a-585150041a8b").status = "existing"%}
@@ -106,7 +106,7 @@ The `elseif` -programsatsen anger ett nytt villkor som ska testas om den första
 
 >[!NOTE]
 >
->Mer information om segmenterings- och segmenteringstjänster finns i [section](../../segment/about-segments.md).
+>Mer information om målgrupper och segmenteringstjänsten finns i [section](../../audience/about-audiences.md).
 
 
 ## Om{#unless}
