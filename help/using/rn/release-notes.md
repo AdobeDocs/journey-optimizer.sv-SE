@@ -4,7 +4,7 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 2e3335372dca8c344773eaf365e8f90589ecfd7e
+source-git-commit: 781c83a2742989eb0bf7d68411ca3d7daa1eb1e0
 workflow-type: tm+mt
 source-wordcount: '2590'
 ht-degree: 8%
@@ -34,7 +34,7 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 <tbody>
 <tr>
 <td>
-<p>Nu kan du skapa arbetsflöden för kompositioner för att kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och använda olika aktiviteter (dela, berika...) för att skapa nya målgrupper. Nyligen skapade målgrupper sparas i Adobe Experience Platform tillsammans med befintliga målgrupper och kan utnyttjas i Journey Optimizer kampanjer för att nå ut till kunder.</p>
+<p>Nu kan du skapa arbetsflöden för kompositioner för att kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och använda olika aktiviteter (dela, berika...) för att skapa nya målgrupper. Nyligen skapade målgrupper sparas tillbaka i Adobe Experience Platform tillsammans med befintliga målgrupper och kan utnyttjas i Journey Optimizer kampanjer för att nå ut till kunder.</p>
 <img src="../audience/assets/audiences-publish.png"/>
 <p>Mer information finns i den <a href="../audience/get-started-audience-orchestration.md">detaljerade dokumentationen</a>.</p>
 </td>
