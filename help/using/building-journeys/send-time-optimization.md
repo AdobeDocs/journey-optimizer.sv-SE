@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: sändningstid, skicka, meddelande, optimering, resa, AI, intelligent
 exl-id: ec604e91-4c7f-459c-b6ff-d825919e7181
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,6 @@ Modellen varierar oavsett om du talar om poängsättning eller utbildning. Utbil
 * Poäng - poängsättning för enskilda profiler baserat på den tränade modellen
 
 Den här informationen lagras med användarens profil och hänvisas till vid körning av resan för att tala om för Adobe Journey Optimizer när meddelandet ska skickas.
-
->[!CAUTION]
->
->Den här funktionen är inte kompatibel med sprängningsläge.
 
 ## Aktivera optimering av sändningstid{#activate-send-time-optimization}
 

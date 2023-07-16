@@ -5,10 +5,10 @@ description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 16%
+source-wordcount: '316'
+ht-degree: 13%
 
 ---
 
@@ -32,40 +32,44 @@ ht-degree: 16%
     <div>
       <a href="using/rn/release-notes.md">Versionsinformation</a>
     </div>
-    <p>Nya funktioner, senaste förbättringar och korrigeringar
+    <p>Nya funktioner, senaste förbättringar och korrigeringar</p>
    <p>
     <div>
       <a href="using/start/quick-start.md">Snabbstartsguide</a>
     </div>
-    <p>
-    Lär dig att börja som administratör, datatekniker eller resehandledare
+    <p>Lär dig att börja som administratör, datatekniker eller resehandledare</p>
     <p>
     <p>
     <div>
       <a href="using/email/get-started-email-design.md">Designa e-postinnehåll</a>
     </div>
-    <p>
-    Designa ett nytt e-postmeddelande eller importera ett befintligt HTML-innehåll
+    <p>Designa ett nytt e-postmeddelande eller importera ett befintligt HTML-innehåll</p>
     <p>
     <div>
     <a href="using/building-journeys/journey-gs.md">Skapa den första resan</a>
     </div>
     <p>Lär dig hur du bygger och utför en resa
     <p>
+     <div>
+      <a href="using/campaigns/create-campaign.md">Skapa och hantera kampanjer</a>
+    </div>
+    <p>Skapa, konfigurera och skicka din första kampanj</p>
+    <p>
+    <div>
     <div>
     <a href="using/configuration/get-started-configuration.md">Konfigurera [!DNL Journey Optimizer]</a>
     </div>
-    <p>Lär dig viktiga steg för att konfigurera [!DNL Journey Optimizer]
+    <p>Lär dig viktiga steg för att konfigurera [!DNL Journey Optimizer]</p>
     <p>
     <div>
     <a href="using/administration/permissions-overview.md">Ge åtkomst till [!DNL Journey Optimizer]</a>
     </div>
-    <p>Definiera och hantera behörigheter som tilldelats till [!DNL Journey Optimizer] användare
+    <p>Definiera och hantera behörigheter som tilldelats till [!DNL Journey Optimizer] användare</p>
     <p>
     <div>
     <a href="using/offers/get-started/starting-offer-decisioning.md">Beslutshantering</a>
     </div>
-    <p>Skapa erbjudanden och leverera det bästa erbjudandet och upplevelsen till era kunder
+    <p>Skapa erbjudanden och leverera det bästa erbjudandet och upplevelsen till era kunder</p>
     <p>
     <p>
     <div><strong>Ytterligare resurser</strong>
@@ -92,6 +96,24 @@ ht-degree: 16%
       <a href="https://www.adobe.com/se/experience-platform/documentation-and-developer-resources.html" target="_blank">Resurser för Adobe Experience Platform-utvecklare</a>
     </li>
     </div>
+    <p>
+    </p>
+    <p>
+    </p>
+    <div>
+    </div>
+    <div><strong>Nyhetsbrev</strong>
+    </div>
+    <p>
+    <p>
+    <div>
+    <p>Registrera dig för <a href="https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html" target="_blank">Adobe Journey Optimizer kvartalsvis nyhetsbrev</a>.</p>
+    <p>Få de senaste produktuppdateringarna, spännande historier, användningsexempel, tips och mycket mer levererade direkt till inkorgen varje kvartal. I varje nyhetsbrev hittar du:</p>
+    <li>Produktnyheter och uppdateringar, inklusive nyligen släppta funktioner</li>
+    <li>Inbjudningar till event, webbinarier och inspelningar för nyligen använda webbinarier</li>
+    <li>De viktigaste diskussionerna i Adobe Journey Optimizer Experience League Community </li>
+    <li>Fallstudier och användningsexempel från andra Adobe Journey Optimizer-kunder</li>
+    <li>Tips och tricks som hjälper er att leverera kundupplevelser som leder till affärsframgångar</li>
   </td>
    <td>
    <div><strong>Direktlänkar till viktiga resurser</strong>
@@ -125,6 +147,9 @@ ht-degree: 16%
     <li>
       <a href="using/email/content-templates.md">Innehållsmallar</a>
     </li>
+      <li>
+      <a href="using/email/fragments.md">Fragment</a>
+    </li>
     <p>
     <p>DATAHANTERING</p>
     <li>
@@ -142,7 +167,7 @@ ht-degree: 16%
     <p>
     <p>ANSLUTNINGAR</p>
       <li>
-      <a href="using/data/get-started-datasets.md">Mål </a>
+      <a href="using/data/export-datasets.md">Mål </a>
     </li>
     <li>
       <a href="using/start/get-started-sources.md">Källor</a>
@@ -165,10 +190,16 @@ ht-degree: 16%
     <p>
     <p>SEKRETESS</p>
     <li>
-      <a href="https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv" target="_blank">Policyer</a>
+      <a href="using/action/action-privacy.md">Policyer</a>
     </li>
     <li>
-      <a href="https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=sv"target="_blank">Begäranden</a>
+      <a href="using/privacy/requests.md">Begäranden</a>
+    </li>
+        <li>
+      <a href="using/privacy/audit-logs.md"target="_blank">Granskning</a>
+    </li>
+        <li>
+      <a href="using/privacy/data-hygiene.md"target="_blank">Datahygien</a>
     </li>
     <p>
     <p>ADMINISTRATION</p>
@@ -178,24 +209,18 @@ ht-degree: 16%
     <li>
       <a href="using/configuration/frequency-rules.md">Regler</a>
     </li>
+        <li>
+      <a href="using/reports/alerts.md">Larm</a>
+    </li>
     <li>
       <a href="using/configuration/get-started-configuration.md">Kanaler</a>
     </li>
      <li>
       <a href="using/administration/sandboxes.md">Sandlådor</a>
     </li>
+     <li>
+      <a href="using/start/search-filter-categorize.md#work-with-unified-tags">Taggar</a>
+    </li>
   </td>
 </tr>
 </table>
-
-
-![Nyhetsbrev](using/assets/do-not-localize/nl-icon.png) Registrera dig för [Adobe Journey Optimizer kvartalsvis nyhetsbrev](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} idag!
-
-Få de senaste produktuppdateringarna, spännande historier, användningsexempel, tips och mycket mer levererade direkt till inkorgen varje kvartal.
-
-I varje nyhetsbrev hittar du:
-* Produktnyheter och uppdateringar, inklusive nyligen släppta funktioner
-* Inbjudningar till event, webbinarier och inspelningar för nyligen använda webbinarier
-* De viktigaste diskussionerna i Adobe Journey Optimizer Experience League Community
-* Fallstudier och användningsexempel från andra Adobe Journey Optimizer-kunder
-* Tips och tricks som hjälper er att leverera kundupplevelser utöver det vanliga som leder till affärsframgångar

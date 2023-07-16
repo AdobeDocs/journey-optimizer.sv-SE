@@ -7,10 +7,10 @@ feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: 81d07ec8-e808-4bc6-97b1-b9f7db2aec22
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 2%
+source-wordcount: '402'
+ht-degree: 3%
 
 ---
 
@@ -39,7 +39,7 @@ Så här skapar du en AI-modell:
 1. Ange ett unikt namn och en beskrivning för AI-modellen och välj sedan den typ av AI-modell som du vill skapa:
 
    * **[!UICONTROL Auto-optimization]** optimerar erbjudanden baserat på tidigare erbjudanden. [Läs mer](auto-optimization-model.md)
-   * **[!UICONTROL Personalized]** optimerar och personaliserar erbjudanden baserat på målgrupper och erbjuder resultat. [Läs mer](personalized-optimization-model.md)
+   * **[!UICONTROL Personalized optimization]** optimerar och personaliserar erbjudanden baserat på målgrupper och erbjuder resultat. [Läs mer](personalized-optimization-model.md)
 
    ![](../assets/ai-ranking-fields.png)
 
@@ -61,7 +61,9 @@ Så här skapar du en AI-modell:
    >
    >Endast datauppsättningar som skapats från scheman som är kopplade till **[!UICONTROL Experience Event - Proposition Interactions]** fältgruppen (som tidigare kallades mixin) visas i listrutan.
 
-1. Om du skapar en **[!UICONTROL Personalized optimization]** AI-modellen väljer du den eller de målgrupper som ska användas för att utbilda AI-modellen.
+1. Om du skapar en **[!UICONTROL Personalized optimization]** AI-modellen väljer du de segment som ska användas för att utbilda AI-modellen.
+
+   ➡️ [Upptäck den här funktionen i en video](#video)
 
    ![](../assets/ai-ranking-segments.png)
 

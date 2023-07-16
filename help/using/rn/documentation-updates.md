@@ -4,9 +4,9 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
 workflow-type: tm+mt
-source-wordcount: '2874'
+source-wordcount: '2947'
 ht-degree: 15%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 15%
 # Dokumentationsuppdateringar {#latest-updates}
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
+
+## Juni 2023 {#june-2023}
+
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version från 23 juni finns utförlig i dokumentationen. [Läs mer](release-notes.md)
+* Ytterligare exempel på ordningen för utvärderingskriterier har lagts till i **Skapa beslut** för att illustrera fall där flera kriterier och flera beslutsomfattningar används. [Läs mer](../offers/offer-activities/create-offer-activities.md#evaluation-criteria-order)
+* Dokumentationen för beslutshantering har klargjorts med en anteckning som anger att åtkomstkontrollen på objektnivå inte är tillgänglig för dynamiska samlingar. [Läs mer](../offers/offer-library/creating-collections.md)
 
 ## Maj 2023 {#may-2023}
 

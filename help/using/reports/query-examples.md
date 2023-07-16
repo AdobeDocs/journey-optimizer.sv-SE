@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 26ad12c3-0a2b-4f47-8f04-d25a6f037350
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1471'
 ht-degree: 2%
 
 ---
@@ -26,6 +26,10 @@ Se till att fälten som används i dina frågor har associerade värden i motsva
 * id: unika för alla steg-händelseposter. Två olika steghändelser kan inte ha samma ID.
 * instanceId: instanceID är samma för alla steg-händelser som är kopplade till en profil inom en körning. Om en profil återgår till resan används ett annat instanceId. Detta nya instanceId är samma för alla steg-händelser för den ommatade instansen (från start till slut).
 * profileID: Profilens identitet som motsvarar resenamnutrymmet.
+
+>[!NOTE]
+>
+>I felsökningssyfte rekommenderar vi att du använder travelVersionID i stället för travelVersionName när du frågar efter resor.
 
 ## Grundläggande användningsfall/vanliga frågor {#common-queries}
 

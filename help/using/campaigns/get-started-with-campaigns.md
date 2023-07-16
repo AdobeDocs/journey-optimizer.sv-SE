@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 3%
+source-wordcount: '412'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ Använd Journey Optimizer kampanjer för att leverera engångsinnehåll till en 
 Du kan skapa två typer av kampanjer:
 
 * **Schemalagda kampanjer** möjliggör enkel ad hoc-batchkommunikation för marknadsföringsfall som reklamerbjudanden, engagemangskampanjer, meddelanden, juridiska meddelanden eller policyuppdateringar.
-* **API-utlösta kampanjer** möjliggör enkla transaktions-/driftsmeddelanden med REST API:er (lösenordsåterställning, övergivna varukorgar osv.), där behovet kan innebära personalisering med hjälp av profilattribut och sammanhangsbaserade data från nyttolast.
+* **API-utlösta kampanjer** gör det möjligt att nå ut till en målgrupp vid rätt tidpunkt, eller för transaktionsmeddelanden/operativa meddelanden till en individ som återställning av lösenord, där behovet kan innebära personalisering inte bara genom att använda profilattribut, utan även kontextdata i realtid i utlösaren som är en REST API-nyttolast.
 
 De viktigaste stegen för att skapa en kampanj är följande:
 

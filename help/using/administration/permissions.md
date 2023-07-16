@@ -9,7 +9,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 keywords: produkt, profiler, sandlåda
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 2%
@@ -109,7 +109,7 @@ För att skapa **Skrivskyddade resor** **[!UICONTROL Role]**:
 
    ![](assets/do-not-localize/access_control_13.png)
 
-1. Välj mellan olika funktioner som **[!DNL Journeys]**, **[!DNL Segments]** <!--CHECK--> eller **[!DNL Decision management]** finns i [!DNL Journey Optimizer] som visas på den vänstra menyn.
+1. Välj mellan olika resurser som **[!DNL Journeys]**, **[!DNL Segments]** eller **[!DNL Decision management]** finns i [!DNL Journey Optimizer] som visas på den vänstra menyn.
 
    Här väljer vi **[!UICONTROL Journeys]** resurs.
 

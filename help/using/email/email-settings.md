@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
 workflow-type: tm+mt
-source-wordcount: '1740'
+source-wordcount: '1736'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Definiera e-postinställningarna i det dedikerade avsnittet i kanalytans konfigu
 
 E-postytans konfiguration hämtas för att skicka kommunikation enligt logiken nedan:
 
-* För batch- och burst-resor gäller det inte batch- eller burst-körning som redan hade startats innan e-postytans konfiguration gjordes. Ändringarna hämtas vid nästa upprepning eller vid nästa körning.
+* För batchresor gäller det inte batchkörning som redan hade startats innan e-postytans konfiguration gjordes. Ändringarna hämtas vid nästa upprepning eller vid nästa körning.
 
 * För transaktionsmeddelanden hämtas ändringen omedelbart för nästa kommunikation (upp till fem minuters fördröjning).
 

@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: felsökning, felsökning, resa, kontroll, fel
 exl-id: 03fbc4f4-b0a8-46d5-91f9-620685b11493
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1011'
 ht-degree: 80%
 
 ---
@@ -58,7 +58,7 @@ Reserapporter mäter människors inträde på en resa i realtid.
 
 Om händelsen skickas men inte har inträde i resan betyder det att något gått fel mellan den skickade händelsen och den mottagna händelsen i resan.
 
-Här följer några saker som administratören bör kontrollera:
+Du kan börja felsöka med frågorna nedan:
 
 * Är du säker på att resan, där du förväntar dig att den inkommande händelsen ska vara, är i testläge eller live?
 * Sparade du händelsen innan du kopierade nyttolasten från dess förhandsvisning?

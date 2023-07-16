@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 4%
@@ -39,8 +39,8 @@ Observera också att de anpassade åtgärdsparametrarna har ett förväntat form
 
 I Journey Optimizer kan du tillämpa policyer för datastyrning och samtycke på anpassade åtgärder för att förhindra att specifika fält exporteras till tredjepartssystem eller utesluta kunder som inte har samtyckt till att ta emot e-post, push eller SMS-kommunikation. Mer information finns på följande sidor:
 
-* [Datastyrning](../action/action.md).
-* [Godkännande](../action/action.md).
+* [Datastyrning](../action/action-privacy.md).
+* [Godkännande](../action/action-privacy.md).
 
 
 ## Konfigurationssteg {#configuration-steps}
