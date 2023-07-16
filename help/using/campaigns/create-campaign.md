@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: f4e4a6dfeee0205aa3d8abbd1d6b237dcf14cb10
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '832'
 ht-degree: 2%
 
 ---
@@ -32,18 +32,20 @@ Om du vill skapa en ny kampanj öppnar du **[!UICONTROL Campaigns]** menyn och k
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_type"
 >title="Kampanjtyp"
->abstract="För ett marknadsföringsmeddelande genom att ange ett sändningsdatum, **Schemalagd** är den mest lämpliga typen. Om du vill skicka transaktionsmeddelanden som lösenordsåterställning eller kundvagnsövergivande, ska du **API-utlöst** text är det bästa alternativet."
+>abstract="**Schemalagda kampanjer** körs omedelbart eller vid ett angivet datum och är avsedda att skicka meddelanden av marknadsföringstyp. **API-utlöst** kampanjer körs med ett API-anrop. De är avsedda att skicka antingen marknadsföringsmeddelanden eller transaktionsmeddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförs av en individ: lösenordsåterställning, övergivna varukorgar osv."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_category"
 >title="Kampanjkategori"
->abstract="Kategorivärdet är direkt associerat till kampanjtypsvärdet. Schemalägg kampanjtyp för **Marknadsföring** kategori och API-utlösad typ för kategorin **Transactional**"
+>abstract="Om du skapar en schemalagd kampanj visas **marknadsföring** text väljs automatiskt. Välj om du vill skicka en **marknadsföring** eller **transaktionsbaserad** ett meddelande, dvs. ett meddelande som skickas ut efter en åtgärd som utförts av en individ: lösenordsåterställning, övergivna varukorgar osv."
 
 1. I **[!UICONTROL Properties]** anger du hur kampanjen ska köras. Det finns två typer av kampanjer:
 
-   * **[!UICONTROL Scheduled]**: köra kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka **marknadsföring** typmeddelanden.
+   * **[!UICONTROL Scheduled]**: köra kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka **marknadsföring** meddelanden. De konfigureras och körs från användargränssnittet.
 
-   * **[!UICONTROL API-triggered]**: köra kampanjen med ett API-anrop. API-utlösta kampanjer är avsedda att skicka **transaktionsbaserad** meddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförts av en individ: lösenordsåterställning, övergivna varukorgar osv. [Lär dig hur du utlöser en kampanj med API:er](api-triggered-campaigns.md)
+   * **[!UICONTROL API-triggered]**: köra kampanjen med ett API-anrop. API-utlösta kampanjer syftar till att skicka antingen **marknadsföring**, eller **transaktionsbaserad** meddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförts av en individ: lösenordsåterställning, kundvagn osv. [Lär dig hur du utlöser en kampanj med API:er](api-triggered-campaigns.md)
+
+1. Om du skapar en schemalagd kampanj visas **marknadsföring** text väljs automatiskt. Välj om du vill skicka en **marknadsföring** eller **transaktionsbaserad** meddelande.&quot;
 
 1. I **[!UICONTROL Actions]** väljer du kanal och kanal för att skicka meddelandet.
 
@@ -120,19 +122,18 @@ I **[!UICONTROL Actions]** skapar du meddelandet som ska skickas med kampanjen.
 
 ## Definiera målgruppen {#audience}
 
-Klicka på **[!UICONTROL Select audience]** för att visa en lista över tillgängliga Adobe Experience Platform-målgrupper. [Läs mer om målgrupper](../audience/about-audiences.md)
+Klicka på **[!UICONTROL Select audience]** om du vill visa en lista över tillgängliga Adobe Experience Platform-segment. [Läs mer om segment](../audience/about-audiences.md)
 
 >[!NOTE]
 >
 >För API-utlösta kampanjer måste målgruppen anges via API-anrop. [Läs mer](api-triggered-campaigns.md)
-
-I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera personer från den valda målgruppen. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace)
+I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera individerna från det valda segmentet. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace)
 
 ![](assets/create-campaign-namespace.png)
 
 >[!NOTE]
 >
->Individer som tillhör en publik som inte har den valda identiteten (namnutrymme) bland sina olika identiteter kommer inte att omfattas av kampanjen.
+>Individer som tillhör ett segment som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kommer inte att omfattas av kampanjen.
 
 <!--If you are are creating an API-triggered campaign, the **[!UICONTROL cURL request]** section allows you to retrieve the **[!UICONTROL Campaign ID]** to use in the API call. [Learn more](api-triggered-campaigns.md)-->
 
