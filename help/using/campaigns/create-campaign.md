@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: f4e4a6dfeee0205aa3d8abbd1d6b237dcf14cb10
+source-git-commit: ceb37193797c69ee87f136f3abecf54b5927d6a2
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 2%
@@ -127,6 +127,7 @@ Klicka på **[!UICONTROL Select audience]** om du vill visa en lista över tillg
 >[!NOTE]
 >
 >För API-utlösta kampanjer måste målgruppen anges via API-anrop. [Läs mer](api-triggered-campaigns.md)
+
 I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera individerna från det valda segmentet. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace)
 
 ![](assets/create-campaign-namespace.png)
