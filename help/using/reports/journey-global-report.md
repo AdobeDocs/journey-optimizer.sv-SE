@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e851646e-4cef-45e8-97c2-a8f4c9d2cc08
-source-git-commit: cd2fcd36d0f742a1bbe726217b884ae1bec26d82
+source-git-commit: 208934b120d5273efc0a34ff35c254b819a84f3c
 workflow-type: tm+mt
-source-wordcount: '1843'
+source-wordcount: '1835'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Från din resa **[!UICONTROL Global report]**, **[!UICONTROL Email]** fliken inn
 
 The **[!UICONTROL Email Sending Statistics]** diagram visar hur framgångsrik leveransen är:
 
-* **[!UICONTROL Targeted]**: Antal profiler som Adobe Journey Orchestration har som mål för åtgärder som att skicka e-post eller SMS.
+* **[!UICONTROL Targeted]**: Antal profiler som är avsedda för åtgärder som att skicka e-post eller SMS.
 
 * **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
 
@@ -193,7 +193,7 @@ Från din resa **[!UICONTROL Global report]**, **[!UICONTROL Push notification]*
 
 The **[!UICONTROL Push notification - Sending statistics]** tabellen visar huvudinformationen i förhållande till push-meddelanden med diagram och KPI:er:
 
-* **[!UICONTROL Targeted]**: Antal profiler som Adobe Journey Orchestration har som mål för åtgärder som att skicka e-post eller SMS.
+* **[!UICONTROL Targeted]**: Antal profiler som är avsedda för åtgärder som att skicka e-post eller SMS.
 
 * **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
 
