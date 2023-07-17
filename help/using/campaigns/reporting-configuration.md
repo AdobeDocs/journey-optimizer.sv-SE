@@ -9,10 +9,10 @@ role: Admin
 level: Intermediate
 keywords: konfiguration, experiment, rapportering, optimering
 exl-id: 327a0c45-0805-4f64-9bab-02d67276eff8
-source-git-commit: dc48cc6d95e4af288727961fd9f7761dee4f2552
+source-git-commit: c83305a27d987fdf7861b7c2fc720cc4a6aa260b
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 3%
+source-wordcount: '575'
+ht-degree: 2%
 
 ---
 
@@ -49,17 +49,19 @@ Innan du kan lägga till en datauppsättning i rapportkonfigurationen måste du 
 
 * Du kan bara lägga till datamängder av händelsetyp.
 
-* Dessa datauppsättningar måste innehålla minst ett av följande [fältgrupper](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"}: **Programinformation**, **Handelsinformation**, **Webbinformation**.
+* Dessa datauppsättningar måste innehålla **Experience Event - Proposition Interactions** [fältgrupp](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"}.
 
-   >[!NOTE]
-   >
-   >Endast dessa fältgrupper stöds för närvarande.
+* Dessa datauppsättningar kan även innehålla något av följande [fältgrupper](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"}: **Programinformation**, **Handelsinformation**, **Webbinformation**.
 
-   Om du till exempel vill veta vilken effekt en e-postkampanj har på e-handelsdata som inköp eller beställningar måste du skapa en händelsedatamängd för upplevelser med **Handelsinformation** fältgrupp.
+  >[!NOTE]
+  >
+  >Andra fältgrupper kan också inkluderas, men endast de ovanstående fältgrupperna stöds för närvarande i Journey Optimizer-rapporter.
 
-   Om du vill rapportera om mobilinteraktioner måste du också skapa en upplevelsehändelsedatauppsättning med **Programinformation** fältgrupp.
+  Om du till exempel vill veta vilken effekt en e-postkampanj har på e-handelsdata som inköp eller beställningar måste du skapa en händelsedatamängd för upplevelser med **Handelsinformation** fältgrupp.
 
-   <!--The metrics corresponding to each field group are listed [here](#objective-list).-->
+  Om du vill rapportera om mobilinteraktioner måste du också skapa en upplevelsehändelsedatauppsättning med **Programinformation** fältgrupp.
+
+  <!--The metrics corresponding to each field group are listed [here](#objective-list).-->
 
 * Du kan lägga till dessa fältgrupper i ett eller flera scheman som ska användas i en eller flera datauppsättningar.
 
