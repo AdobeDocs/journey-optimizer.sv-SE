@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: resor, begränsning
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: aced11ffd80bcc0d79ef2e094b05dde8cb9a6248
 workflow-type: tm+mt
 source-wordcount: '511'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Här är begränsningar för användningen av resor.
 
-## Allmänna åtgärdsbegränsningar
+## Allmänna åtgärdsbegränsningar {#action-limitations}
 
 * Det finns ingen sändande begränsning. 
 * Tre försök utförs systematiskt om ett fel uppstår. Du kan inte justera antalet försök enligt det mottagna felmeddelandet. 
@@ -35,7 +35,7 @@ Här är begränsningar för användningen av resor.
 * Regeln för återinträde måste vara densamma i alla reseversioner.
 * En resa som börjar med en **Läs målgrupp** kan inte börja med en annan händelse i nästa version.
  
-## Begränsningar för anpassade åtgärder
+## Begränsningar för anpassade åtgärder {#custom-actions-limitations}
 
 * Den anpassade åtgärds-URL:en stöder inte dynamiska parametrar. 
 * Endast anropsmetoderna POST och PUT stöds. 
@@ -43,11 +43,11 @@ Här är begränsningar för användningen av resor.
 * IP-adresser tillåts inte. 
 * Interna Adobe-adresser (.adobe.) tillåts inte.
  
-## Begränsningar för händelser
+## Begränsningar för händelser {#events-limitations}
 
 * För systemgenererade händelser måste strömmande data som används för att initiera en kundresa konfigureras inom Journey Optimizer först för att få ett unikt orkestrerings-ID. Detta Orchestration-ID måste bifogas till strömningsnyttolasten som kommer till Adobe Experience Platform. Denna begränsning gäller inte regelbaserade händelser.
  
-## Begränsningar för datakällor
+## Begränsningar för datakällor {#data-sources-limitations}
 
 * Externa datakällor kan utnyttjas inom en kundresa för att söka externa data i realtid. Dessa källor måste kunna användas via REST API, ha stöd för JSON och kunna hantera antalet begäranden.
 
@@ -63,6 +63,6 @@ Du kan välja mellan följande två lösningar:
 
 * Konfigurera en resa som inte omedelbart utnyttjar profilen. Om resan till exempel är utformad för att bekräfta att ett konto har skapats, kan upplevelsehändelsen innehålla information som behövs för att skicka det första bekräftelsemeddelandet (förnamn, efternamn, e-postadress osv.).
 
-## Läs målgruppsbegränsningar
+## Läs målgruppsbegränsningar {#read-audiences-limitations}
 
 * Direktuppspelade målgrupper är alltid uppdaterade, men batchmålgrupper beräknas inte vid hämtningen. De utvärderas endast varje dag vid den dagliga grupputvärderingen.
