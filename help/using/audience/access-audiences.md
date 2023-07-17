@@ -9,14 +9,20 @@ role: User
 level: Intermediate
 exl-id: 0758eeaf-a188-4b43-9c9a-a2e5a9e5dd76
 badge: label="Beta" type="Informative"
-source-git-commit: 4d196e6485b55fe63bd8da2c7cdfc454a26f80f3
+source-git-commit: be95b72646a7794c886c5600f84d4248b1f41c3e
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
 
 # Få åtkomst till och hantera målgrupper {#access-manage-audiences}
+
+>[!BEGINSHADEBOX]
+
+Dokumentationen innehåller detaljerad information om hur du arbetar med målgruppsdispositioner i Adobe Journey Optimizer. Om du inte använder Adobe Journey Optimizer [klicka här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html)
+
+>[!ENDSHADEBOX]
 
 Målgrupper som bygger på publikens komposition är tillgängliga via **[!UICONTROL Browse]** i **[!UICONTROL Audiences]** -menyn.
 

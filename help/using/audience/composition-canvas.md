@@ -9,14 +9,20 @@ role: User
 level: Intermediate
 exl-id: 3eb9466e-9d88-4470-a22f-5e24a29923ae
 badge: label="Beta" type="Informative"
-source-git-commit: 6f6fd6c032be7f86dca239d43732f3ab37223093
+source-git-commit: be95b72646a7794c886c5600f84d4248b1f41c3e
 workflow-type: tm+mt
-source-wordcount: '1302'
+source-wordcount: '1371'
 ht-degree: 0%
 
 ---
 
 # Arbeta med arbetsytan {#composition-canvas}
+
+>[!BEGINSHADEBOX]
+
+Dokumentationen innehåller detaljerad information om hur du arbetar med målgruppsdispositioner i Adobe Journey Optimizer. Om du inte använder Adobe Journey Optimizer [klicka här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html)
+
+>[!ENDSHADEBOX]
 
 Målgruppsdisposition är en visuell arbetsyta som gör att du kan skapa målgrupper och använda olika aktiviteter (dela, berika osv.).
 
@@ -137,9 +143,11 @@ The **[!UICONTROL Exclude]** kan du utesluta profiler från din komposition. Det
 
 The **[!UICONTROL Enrich]** Med hjälp av aktivitet kan ni berika er målgrupp med ytterligare attribut från Adobe Experience Platform datamängder. Du kan t.ex. lägga till information om den köpta produkten, som namn, pris eller tillverkare-ID, och använda dessa uppgifter för att anpassa de leveranser som skickas till målgruppen.
 
->[!IMPORTANT]
->
->För närvarande sprids inte etiketter på datauppsättningen, antingen på datauppsättningsnivå eller på fältnivå, till den nya målgruppen. Detta kan påverka åtkomstkontroll och/eller datastyrning för den slutliga målgruppen. Därför bör du endast använda testdata när du komponerar målgrupper.
+Observera följande begränsningar när du arbetar med **[!UICONTROL Enrich]** aktivitet:
+
+* **Datauppsättningar** for enrichment måste vara av posttyp (till skillnad från händelsetyp), och de kan inte vara en systemdatauppsättning eller markeras för profil. De måste vara under 1 GB.
+* **Anrikning stöder 1:1-join**. Det innebär att om kopplingsnycklarna har fler än en matchning i datauppsättningen enrichment, väljs en av matchningarna och används för 1:1-kopplingen.
+* **Målgrupper kan aktiveras i RTCDP-destinationer**, men deras eventuella anrikningsattribut kan inte det.
 
 Så här konfigurerar du aktiviteten:
 
