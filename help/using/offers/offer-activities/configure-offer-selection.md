@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 8c7135d7-bf5a-4671-afdf-afec60907a56
-source-git-commit: 4f3d22c9ce3a5b77969a2a04dafbc28b53f95507
+source-git-commit: f2174848c70610fc543ea9ddf766f0f7e579053a
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '437'
 ht-degree: 5%
 
 ---
@@ -62,9 +62,9 @@ Om flera erbjudanden kan presenteras på den här platsen, kommer beslutet att a
 
 <!--If you are an [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} user leveraging the **Offer Decisioning** application service,-->
 
-Du kan också använda ett utbildat modellsystem som automatiskt rangordnar erbjudanden för en viss profil genom att välja en rangordningsstrategi. Lär dig hur du skapar en rankningsstrategi i [det här avsnittet](../ranking/create-ranking-strategies.md).
+Du kan också använda ett utbildat modellsystem som automatiskt rangordnar erbjudanden för en viss profil genom att välja en AI-modell. Lär dig hur du skapar en AI-modell i [det här avsnittet](../ranking/create-ranking-strategies.md).
 
-När en rankningsstrategi har skapats kan du tilldela den till en placering i ett beslut. Gör så här:
+När en AI-modell har skapats kan du tilldela den till en placering i ett beslut. Gör så här:
 
 1. Skapa ett beslut eller redigera ett befintligt. Se [Skapa beslut](../offer-activities/create-offer-activities.md).
 
@@ -76,11 +76,11 @@ När en rankningsstrategi har skapats kan du tilldela den till en placering i et
 
    ![](../assets/ranking-selection-ai-ranking.png)
 
-1. Välj den rankningsstrategi som du skapade. Alla detaljer om rankningsstrategin visas.
+1. Välj den AI-modell som du skapade. All information om modellen visas.
 
    ![](../assets/ranking-selection-ai-ranking-selected.png)
 
-1. Klicka på **[!UICONTROL Select]**. Rankningsstrategin är nu kopplad till placeringen.
+1. Klicka på **[!UICONTROL Select]**. AI-modellen är nu kopplad till placeringen.
 
 Om flera erbjudanden är giltiga, avgör det tränade modellsystemet vilket erbjudande som ska presenteras först för en viss placering.
 

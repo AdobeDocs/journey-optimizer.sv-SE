@@ -7,7 +7,7 @@ feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: 99963ef4-0b19-475e-96f4-2eac3f680c6f
-source-git-commit: 59499dec7d15dd4565c7910d7b454d82243ff011
+source-git-commit: f2174848c70610fc543ea9ddf766f0f7e579053a
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 7%
@@ -42,7 +42,7 @@ Börja med att skapa schemat som ska användas i din datauppsättning:
 
    >[!CAUTION]
    >
-   >Schemat som ska användas i datauppsättningen måste ha **[!UICONTROL Experience Event - Proposition Interactions]** fältgrupp som är associerad med den. Annars kan du inte använda den i din rankningsstrategi.
+   >Schemat som ska användas i datauppsättningen måste ha **[!UICONTROL Experience Event - Proposition Interactions]** fältgrupp som är associerad med den. Annars kan du inte använda den i AI-modellen.
 
 1. Skriv ett namn och spara schemat.
 
@@ -66,4 +66,4 @@ Du är nu redo att skapa en datauppsättning med det här schemat. Följ stegen 
 
 >[!NOTE]
 >
->Den här datauppsättningen kan nu väljas för att samla in händelsedata när [skapa en rankningsstrategi](#create-ranking-strategy).
+>Den här datauppsättningen kan nu väljas för att samla in händelsedata när [skapa en AI-modell](../ranking/create-ranking-strategies.md).
