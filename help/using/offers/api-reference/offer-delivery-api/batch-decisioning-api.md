@@ -112,7 +112,7 @@ curl -X POST 'https://platform.adobe.io/data/core/ode/0948b1c5-fff8-3b76-ba17-90
 | `xdm:itemCount` | Det här är ett valfritt fält som visar antalet objekt, t.ex. alternativ som begärts för beslutsomfånget. Som standard returnerar API ett alternativ per omfång, men du kan uttryckligen be om fler alternativ genom att ange det här fältet. Minst 1 och högst 30 alternativ kan begäras per omfång. | `1` |
 | `xdm:includeContent` | Detta är ett valfritt fält och är `false` som standard. If `true`, ingår erbjudandeinnehållet i beslutshändelserna för datauppsättningen. | `false` |
 
-Se [Beslutsledningens dokumentation](../../get-started/starting-offer-decisioning.md) om du vill ha en översikt över de viktigaste begreppen och egenskaperna.
+Se [Beslutsledningens dokumentation](../../get-started/starting-offer-decisioning.md) för en översikt över de viktigaste begreppen och egenskaperna.
 
 **Svar**
 
