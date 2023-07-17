@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 781c83a2742989eb0bf7d68411ca3d7daa1eb1e0
+source-git-commit: ec71600fdc50e812e627f246e8a5bd2c5ad7e835
 workflow-type: tm+mt
-source-wordcount: '2590'
+source-wordcount: '2694'
 ht-degree: 8%
 
 ---
@@ -24,24 +24,26 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 
 ## Uppdateringar juli 2023
 
-
 <table>
 <thead>
 <tr>
-<th><strong>Målgruppssammansättning</strong><br/></th>
+<th><strong>Målgruppskomposition</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
 <p>Nu kan du skapa arbetsflöden för kompositioner för att kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och använda olika aktiviteter (dela, berika...) för att skapa nya målgrupper. Nyligen skapade målgrupper sparas tillbaka i Adobe Experience Platform tillsammans med befintliga målgrupper och kan utnyttjas i Journey Optimizer kampanjer för att nå ut till kunder.</p>
+
 <img src="../audience/assets/audiences-publish.png"/>
+
 <p>Mer information finns i den <a href="../audience/get-started-audience-orchestration.md">detaljerade dokumentationen</a>.</p>
+
+<p>Målgruppsdispositionen är helt integrerad med den nya Adobe Experience Platform-menyn"Publiker" som fungerar som en central portal till målgrupper. Nu kan du använda en bläddringssida som innehåller en ny instrumentpanel med segmenttrender och överlappningar för att hitta nya insikter och utforska organisationsverktygen för mappning och taggning. Detta innefattar styrningskontroller för standardiserad målgruppsmärkning och funktioner för hantering av målgruppslivscykler för att hantera aktiveringsarbetsflöden. Med den nya hanteringsupplevelsen kan ni nu enkelt och säkert hantera målgrupper från ett och samma ställe. Mer information finns i <a href="https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html" target="_blank">Adobe Experience Platform-dokumentation</a>.</p></p>
 </td>
 </tr>
 </tbody>
 </table>
-
 
 ## Versionsinformation juni 2023 {#june-rn-2023}
 
