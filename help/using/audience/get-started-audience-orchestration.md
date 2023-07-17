@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 exl-id: af71d24d-77eb-44df-8216-b0aeaf4c4fa4
 badge: label="Beta" type="Informative"
-source-git-commit: 4d196e6485b55fe63bd8da2c7cdfc454a26f80f3
+source-git-commit: 0996de79ae5b9593db8ec61ba51fc17073c0f458
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,12 @@ ht-degree: 0%
 >id="ajo_ao_create_composition"
 >title="Skapa en komposition"
 >abstract="Skapa ett dispositionsarbetsflöde för att kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och utnyttja olika aktiviteter (dela, exkludera..) för att skapa nya målgrupper."
+
+>[!BEGINSHADEBOX]
+
+Dokumentationen innehåller detaljerad information om hur du arbetar med målgruppsdispositioner i Adobe Journey Optimizer. Om du inte använder Adobe Journey Optimizer [klicka här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html)
+
+>[!ENDSHADEBOX]
 
 Målgruppsdisposition gör att du kan skapa **arbetsflöden för disposition**, där ni kan kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och utnyttja olika aktiviteter (dela, exkludera..) för att skapa nya målgrupper.
 
