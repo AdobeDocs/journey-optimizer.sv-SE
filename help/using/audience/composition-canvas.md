@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 exl-id: 3eb9466e-9d88-4470-a22f-5e24a29923ae
 badge: label="Beta" type="Informative"
-source-git-commit: be95b72646a7794c886c5600f84d4248b1f41c3e
+source-git-commit: dfee69e3573bed6029a0e12fbf4d16c169686683
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1373'
 ht-degree: 0%
 
 ---
@@ -139,7 +139,7 @@ The **[!UICONTROL Exclude]** kan du utesluta profiler från din komposition. Det
 >[!CONTEXTUALHELP]
 >id="ajo_ao_enrich_attributes"
 >title="Attribut för berikning"
->abstract="Välj ett eller flera attribut från datauppsättningen för anrikning som ska kopplas till målgruppen. När kompositionen har publicerats kopplas dessa attribut till publiken och kan utnyttjas i kampanjer för att personalisera leveranser."
+>abstract="Välj ett eller flera attribut från datauppsättningen för anrikning som ska kopplas till målgruppen. När kompositionen har publicerats är dessa attribut knutna till målgruppen och kan utnyttjas i Journey Optimizer-kampanjer för att personalisera leveranser."
 
 The **[!UICONTROL Enrich]** Med hjälp av aktivitet kan ni berika er målgrupp med ytterligare attribut från Adobe Experience Platform datamängder. Du kan t.ex. lägga till information om den köpta produkten, som namn, pris eller tillverkare-ID, och använda dessa uppgifter för att anpassa de leveranser som skickas till målgruppen.
 
