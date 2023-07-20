@@ -5,9 +5,9 @@ title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 hide: true
 hidefromtoc: true
-source-git-commit: b677776becaabc15c85be0a5a46b741cebb9d87b
+source-git-commit: c9e8088cd460992b0c84e3e14e63c2388fa94fd1
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '617'
 ht-degree: 8%
 
 ---
@@ -90,7 +90,7 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <tbody>
 <tr>
 <td>
-<p>Nu kan du tilldela enhetliga Adobe Experience Platform-taggar till landningssidor, mallar, innehållsfragment och prenumerationslistor, utöver kampanjer och resor. På så sätt kan du enkelt klassificera dem och förbättra sökning och navigering i alla listor. Den här funktionen finns nu i GA (General Available).</p>
+<p>Förutom kampanjer och resor kan du nu tilldela enhetliga Adobe Experience Platform-taggar till landningssidor, mallar, innehållsfragment och prenumerationslistor. På så sätt kan du enkelt klassificera dem och förbättra sökning och navigering i alla listor. </p>
 <img src="assets/do-not-localize/campaigns-tag.gif"/>
 <p>Mer information finns i den <a href="../start/search-filter-categorize.md#tags">detaljerade dokumentationen</a>.</p>
 </td>
@@ -103,6 +103,16 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 
 Den här versionen innehåller de förbättringar som anges nedan.
 
+**Resor**
+
+* Nu kan du utnyttja API-anropssvar i anpassade åtgärder och samordna din resa baserat på dessa svar.
+
+
+**Kampanjer**
+
+* Sammanhangsberoende händelser relaterade till kampanjer är nu tillgängliga för användning på menyn Sammanhangsberoende attribut i personaliseringsredigeraren.
+
+
 **Publiker**
 
 Målgruppsväljaren har förbättrats under resor eller kampanjer, med nya kolumner som visar målgruppernas ursprung och uppdateringsfrekvens.
@@ -114,13 +124,4 @@ I och med lanseringen av Audience Composition-portalen har Adobe Experience Plat
 
 I Adobe Journey Optimizer och Adobe Experience Platform kommer man att se&quot;Segments&quot; ersatt med&quot;Audiences&quot; för att visa den nya vägen för målgruppsframtagning och målgruppshantering.
 
-
-**Resor**
-
-* Nu kan du utnyttja API-anropssvar i anpassade åtgärder och samordna din resa baserat på dessa svar.
-
-
-**Kampanjer**
-
-* Sammanhangsberoende händelser relaterade till kampanjer är nu tillgängliga för användning på menyn Sammanhangsberoende attribut i personaliseringsredigeraren.
 
