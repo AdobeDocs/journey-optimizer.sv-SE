@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 729150262a1e6823349e8025a1632dd37968bde9
+source-git-commit: 4d59989a32096190aec770364467a0a6fe31888f
 workflow-type: tm+mt
 source-wordcount: '1563'
 ht-degree: 0%
@@ -98,10 +98,10 @@ Så här skapar du en kanalyta:
    Under det här steget kommer flera kontroller att utföras för att verifiera att den har konfigurerats korrekt. <!--The processing time is around **48h-72h**, and can take up to **7-10 business days**.-->
 
    >[!NOTE]
-   > När du skapar en e-postyta för en underdomän varierar bearbetningstiden, enligt nedanstående:
+   > När du skapar en e-postyta för en underdomän varierar bearbetningstiden enligt följande:
    >
-   > * För nya underdomäner kan processen för att skapa den första kanalytan ta **10 till 10 dagar**.
-   > * För **icke-produktionssandlådor** eller om den valda underdomänen är **används redan** i en annan kanal tar processen bara 3 timmar.
+   > * För **nya underdomäner** kan processen för att skapa den första kanalytan ta **10 till 10 dagar**.
+   > * För **icke-produktionssandlådor** eller om den valda underdomänen är **används redan** i en annan kanal tar processen bara **3 timmar**.
 
    Dessa kontroller omfattar konfigurations- och tekniska tester som utförs av Adobe-teamet:
 
