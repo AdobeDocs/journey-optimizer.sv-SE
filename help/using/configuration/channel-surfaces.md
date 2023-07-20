@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 9555c37f8bac295a668f64990e229c6e0e5ceb8d
+source-git-commit: 729150262a1e6823349e8025a1632dd37968bde9
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1563'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,6 @@ Med [!DNL Journey Optimizer]kan du skapa kanalytor (t.ex. meddelandeförinställ
 > * Om du vill skapa, redigera och ta bort kanalytor måste du ha [Hantera kanalyta](../administration/high-low-permissions.md#manage-channel-surface) behörighet.
 >
 > * Du måste utföra [E-postkonfiguration](../email/get-started-email-config.md), [Push-konfiguration](../push/push-configuration.md) och [SMS-konfiguration](../sms/sms-configuration.md) innan du skapar kanalytor.
-
 
 När kanalytorna har konfigurerats kan du välja dem när du skapar meddelanden från en resa eller en kampanj.
 
@@ -99,7 +98,10 @@ Så här skapar du en kanalyta:
    Under det här steget kommer flera kontroller att utföras för att verifiera att den har konfigurerats korrekt. <!--The processing time is around **48h-72h**, and can take up to **7-10 business days**.-->
 
    >[!NOTE]
-   >När du skapar den första e-postytan för en viss underdomän kan bearbetningstiden ta **10 minuter till 10 dagar**. Om den valda underdomänen redan används i en annan e-postyta tar det bara upp till 3 timmar.
+   > När du skapar en e-postyta för en underdomän varierar bearbetningstiden, enligt nedanstående:
+   >
+   > * För nya underdomäner kan processen för att skapa den första kanalytan ta **10 till 10 dagar**.
+   > * För **icke-produktionssandlådor** eller om den valda underdomänen är **används redan** i en annan kanal tar processen bara 3 timmar.
 
    Dessa kontroller omfattar konfigurations- och tekniska tester som utförs av Adobe-teamet:
 
