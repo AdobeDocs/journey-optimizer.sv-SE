@@ -5,10 +5,10 @@ title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 hide: true
 hidefromtoc: true
-source-git-commit: bef5bc9f86d1e11e6b1ed5853fc0b57a6e47d4ac
+source-git-commit: 1cfa4484329355310205421072af65f5dec32b5b
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 4%
+source-wordcount: '626'
+ht-degree: 8%
 
 ---
 
@@ -55,9 +55,10 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <tbody>
 <tr>
 <td>
-<p>Adobe Journey Optimizer utökar sina funktioner för flera kanaler genom att lägga till stöd för direktreklamkanaler. Direktreklam är en offlinekanal som gör att du kan anpassa och generera extraheringsfiler som krävs av direktreklamleverantörer för att skicka e-post till dina kunder.</p>
-<!--img src="assets/do-not-localize/web-authoring.gif"/>
-<p>For more information, refer to the <a href="../web/get-started-web.md">detailed documentation</a>.</p-->
+<p>Nu kan ni lägga till direktreklam i kampanjer och resor. Direktreklam är en offlinekanal som gör att ni kan anpassa och generera de filer som direktreklamleverantörer behöver för att skicka e-post till era kunder.</p>
+<p>När du förbereder en direktutskick skapar Journey Optimizer en fil med alla målprofiler och vald kontaktinformation (till exempel postadress). Du kan sedan skicka den här filen till din leverantör för direktmeddelanden som i sin tur tar hand om själva utskicket.</p>
+<img src="../direct-mail/assets/direct-mail-properties.png">
+<p>Mer information finns i den <a href="../direct-mail/create-direct-mail.md">detaljerade dokumentationen</a>.</p>
 </tr>
 </tbody>
 </table>
