@@ -5,9 +5,9 @@ title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 hide: true
 hidefromtoc: true
-source-git-commit: 1cfca1884bc35c93d36137b190e3062aa0d0de33
+source-git-commit: c75664f9b4d58fff1b073c385bcb839e9c11c8ec
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '740'
 ht-degree: 8%
 
 ---
@@ -26,6 +26,23 @@ Noteringarna nedan kan ändras utan föregående meddelande fram till releasedat
 ### Nya funktioner{#july-2023-features}
 
 Den här versionen innehåller de nya funktionerna som listas nedan.
+
+<table>
+<thead>
+<tr>
+<th><strong>API:er för innehållsmallar</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du skapa och hantera Adobe Journey Optimizer-innehållsmallar med dedikerade API:er, vilket ger en smidig integrering med ditt befintliga innehållssystem.</p>
+<!--<p>For more information, refer to the <a href="../start/search-filter-categorize.md#tags">detailed documentation</a>.</p>-->
+</td>
+</tr>
+</tbody>
+</table>
+
 
 <table>
 <thead>
@@ -109,7 +126,6 @@ Den här versionen innehåller de förbättringar som anges nedan.
 * En ny typ av systemvarning har införts. Du kan nu få meddelanden när en anpassad åtgärd misslyckas.
 
 
-
 **Kampanjer**
 
 * Sammanhangsberoende händelser relaterade till kampanjer är nu tillgängliga för användning på menyn Sammanhangsberoende attribut i personaliseringsredigeraren.
@@ -126,5 +142,15 @@ I och med lanseringen av Audience Composition-portalen har Adobe Experience Plat
 
 I Adobe Journey Optimizer och Adobe Experience Platform kommer man att se&quot;Segments&quot; ersatt med&quot;Audiences&quot; för att visa den nya vägen för målgruppsframtagning och målgruppshantering.
 
+**API:er**
+
+Autentisering av Adobe Journey Optimizer API:er - JWT-metoden för att generera åtkomsttoken har tagits bort. Alla nya integreringar måste skapas med autentiseringsmetoden OAuth Server-till-server. Adobe rekommenderar också att du migrerar dina befintliga integreringar till OAuth-metoden. [Läs mer](https://developer.adobe.com/journey-optimizer-apis/references/authentication/)
 
 
+**Andra ändringar**
+
+Journey Optimizer datamängdsexport till molnlagringsdestinationer är nu tillgänglig för alla kunder. Med den här funktionen kan du upprätta en direktanslutning till molnlagringsplatser för att kunna exportera innehållet i dina datauppsättningar. [Läs mer](../data/export-datasets.md)
+
+>[!AVAILABILITY]
+>
+>Funktionen är för närvarande i betaversion och kan komma att ändras.</p>
