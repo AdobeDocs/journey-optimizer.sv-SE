@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: innehåll, experiment, multipelt, målgrupp, behandling
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
+source-git-commit: 05284fcb3fc426bcf8bc5343a3267bd24c2a26cc
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '742'
 ht-degree: 1%
 
 ---
@@ -88,6 +88,16 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
    ![](assets/content_experiment_5.png)
 
 ## Konfigurera ditt innehållsexperiment {#configure-experiment}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_content_experiment_dimension"
+>title="Dimension"
+>abstract="Välj vilken dimension du vill spåra för din experiment, till exempel specifika klick eller vyer med specifika sidor."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_content_experiment_success_metric"
+>title="Resultatmått"
+>abstract="Resultatmått används för att spåra och utvärdera den bästa behandlingen i ett experiment. Var noga med att konfigurera datauppsättningen för vissa mätvärden innan du använder den."
 
 1. När leveransen har anpassats går du till sammanfattningssidan för Campaign och klickar på **[!UICONTROL Create experiment]** för att börja konfigurera ert innehållsexperiment.
 
