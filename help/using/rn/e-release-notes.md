@@ -5,9 +5,9 @@ title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 hide: true
 hidefromtoc: true
-source-git-commit: 88dff30c5128884ba72ba64cf8ca9ceb460ed4ca
+source-git-commit: 1cfca1884bc35c93d36137b190e3062aa0d0de33
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '616'
 ht-degree: 8%
 
 ---
@@ -55,7 +55,7 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <tbody>
 <tr>
 <td>
-<p>Nu kan ni lägga till direktreklam i kampanjer och resor. Direktreklam är en offlinekanal som gör att ni kan anpassa och generera de filer som direktreklamleverantörer behöver för att skicka e-post till era kunder.</p>
+<p>Nu kan du lägga till direktreklam i kampanjer. Direktreklam är en offlinekanal som gör att ni kan anpassa och generera de filer som direktreklamleverantörer behöver för att skicka e-post till era kunder.</p>
 <p>När du förbereder en direktutskick skapar Journey Optimizer en fil med alla målprofiler och vald kontaktinformation (till exempel postadress). Du kan sedan skicka den här filen till din leverantör för direktmeddelanden som i sin tur tar hand om själva utskicket.</p>
 <img src="../direct-mail/assets/direct-mail-properties.png">
 <p>Mer information finns i den <a href="../direct-mail/create-direct-mail.md">detaljerade dokumentationen</a>.</p>
@@ -90,7 +90,7 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <tbody>
 <tr>
 <td>
-<p>Förutom kampanjer och resor kan du nu tilldela enhetliga Adobe Experience Platform-taggar till landningssidor, mallar, innehållsfragment och prenumerationslistor. På så sätt kan du enkelt klassificera dem och förbättra sökning och navigering i alla listor. </p>
+<p>Förutom kampanjer och resor kan du nu tilldela enhetliga Adobe Experience Platform-taggar till landningssidor, innehållsmallar, fragment och prenumerationslistor. På så sätt kan du enkelt klassificera dem och förbättra sökning och navigering i alla listor. </p>
 <img src="assets/do-not-localize/campaigns-tag.gif"/>
 <p>Mer information finns i den <a href="../start/search-filter-categorize.md#tags">detaljerade dokumentationen</a>.</p>
 </td>
@@ -105,7 +105,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Resor**
 
-* Nu kan du utnyttja API-anropssvar i anpassade åtgärder och samordna din resa baserat på dessa svar.
+<!--* You can now leverage API call responses in custom actions and orchestrate your journey based on these responses.-->
 * En ny typ av systemvarning har införts. Du kan nu få meddelanden när en anpassad åtgärd misslyckas.
 
 
