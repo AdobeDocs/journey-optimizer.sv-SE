@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e851646e-4cef-45e8-97c2-a8f4c9d2cc08
-source-git-commit: 208934b120d5273efc0a34ff35c254b819a84f3c
+source-git-commit: 0d8a19568e52952f3bc8af3c768cef4804a31749
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1807'
 ht-degree: 0%
 
 ---
@@ -271,8 +271,6 @@ The **[!UICONTROL SMS - Sending statistics]** tabellen visar hur framgångsrik l
 
 * **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
 
-* **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
-
 * **[!UICONTROL Bounces]**: Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
 
 * **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
@@ -280,8 +278,6 @@ The **[!UICONTROL SMS - Sending statistics]** tabellen visar hur framgångsrik l
 The **[!UICONTROL SMS summary]** widgeten visar huvudinformationen i förhållande till meddelandet med ett diagram:
 
 * **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
-
-* **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
 
 * **[!UICONTROL Bounces]**: Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
 
