@@ -4,10 +4,10 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 2fa9b76803c286bb14925839e820fae1bab19e58
+source-git-commit: 380d07067a999de439ebf5a4198a203c1aa6b1d8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3124'
+ht-degree: 7%
 
 ---
 
@@ -130,28 +130,26 @@ Den här versionen innehåller de förbättringar som anges nedan.
 **Resor**
 
 <!--* You can now leverage API call responses in custom actions and orchestrate your journey based on these responses.-->
-* En ny typ av systemvarning har införts. Du kan nu få meddelanden när en anpassad åtgärd misslyckas.
+En ny typ av systemvarning har införts. Du kan nu få meddelanden när en anpassad åtgärd misslyckas.
 
 
 **Kampanjer**
 
-* Sammanhangsberoende händelser relaterade till kampanjer är nu tillgängliga för användning på menyn Sammanhangsberoende attribut i personaliseringsredigeraren.
+Sammanhangsberoende händelser relaterade till kampanjer är nu tillgängliga för användning på menyn Sammanhangsberoende attribut i personaliseringsredigeraren.
 
 
 **Publiker**
 
-Målgruppsväljaren har förbättrats under resor eller kampanjer, med nya kolumner som visar målgruppernas ursprung och uppdateringsfrekvens.
-
-I och med lanseringen av Audience Composition-portalen har Adobe Experience Platform och Adobe Journey Optimizer uppdaterat användningen av&quot;målgrupper&quot; och&quot;segment&quot; i systemet och dokumentationen.
+Målgruppsväljaren har förbättrats under resor eller kampanjer, med nya kolumner som visar målgruppernas ursprung och uppdateringsfrekvens. I och med lanseringen av Audience Composition-portalen har Adobe Experience Platform och Adobe Journey Optimizer uppdaterat användningen av&quot;målgrupper&quot; och&quot;segment&quot; i systemet och dokumentationen.
 
 * Målgrupp: En uppsättning personer, konton, hushåll eller andra enheter som delar gemensamma egenskaper och beteenden.
 * Segmentdefinition: I Adobe Experience Platform används de regler som beskriver en målgrupps viktigaste egenskaper eller beteenden. Termen kallades tidigare bara&quot;segment&quot;.
 
-I Adobe Journey Optimizer och Adobe Experience Platform kommer man att se&quot;Segments&quot; ersatt med&quot;Audiences&quot; för att visa den nya vägen för målgruppsframtagning och målgruppshantering.
+Därför ersätts&quot;Segment&quot; i Adobe Journey Optimizer och Adobe Experience Platform användargränssnitt med&quot;Publiker&quot; för att återspegla den nya vägen när det gäller att skapa och hantera målgrupper.
 
 **API:er**
 
-Autentisering av Adobe Journey Optimizer API:er - JWT-metoden för att generera åtkomsttoken har tagits bort. Alla nya integreringar måste skapas med autentiseringsmetoden OAuth Server-till-server. Adobe rekommenderar också att du migrerar dina befintliga integreringar till OAuth-metoden. [Läs mer](https://developer.adobe.com/journey-optimizer-apis/references/authentication/)
+JWT-metoden för att generera åtkomsttoken för Adobe Journey Optimizer APIsauthentication har tagits bort. Alla nya integreringar måste skapas med autentiseringsmetoden OAuth Server-till-server. Adobe rekommenderar också att du migrerar dina befintliga integreringar till OAuth-metoden. [Läs mer](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"}.
 
 
 **Andra ändringar**
