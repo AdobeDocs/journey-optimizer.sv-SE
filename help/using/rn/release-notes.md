@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 380d07067a999de439ebf5a4198a203c1aa6b1d8
+source-git-commit: d5fc0219c07979c1d7b7512efe462ddcf0c90ee7
 workflow-type: tm+mt
-source-wordcount: '3124'
+source-wordcount: '3104'
 ht-degree: 7%
 
 ---
@@ -127,10 +127,10 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 
 Den här versionen innehåller de förbättringar som anges nedan.
 
-**Resor**
+<!--**Journeys**
 
-<!--* You can now leverage API call responses in custom actions and orchestrate your journey based on these responses.-->
-En ny typ av systemvarning har införts. Du kan nu få meddelanden när en anpassad åtgärd misslyckas.
+* You can now leverage API call responses in custom actions and orchestrate your journey based on these responses.
+A new type of system alert has been introduced. You can now get notified when a custom action fails.-->
 
 
 **Kampanjer**
