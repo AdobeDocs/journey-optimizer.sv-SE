@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 925494b6-e08a-4bd3-8a2f-96a5d9cbc387
-source-git-commit: 0d8a19568e52952f3bc8af3c768cef4804a31749
+source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '1176'
 ht-degree: 1%
 
 ---
@@ -30,9 +30,11 @@ Kampanjen **[!UICONTROL Live report]** visas med följande flikar:
 
 * [Campaign](#campaign-live)
 * [E-post](#email-live)
+* [I appen](#inapp-live)
 * [Push](#push-live)
 * [SMS](#sms-live)
 * [Webb](#web-tab)
+* [Direktmeddelande](#direct-mail-tab)
 
 Kampanjen **[!UICONTROL Live report]** är uppdelat i olika widgetar som detaljerat beskriver kampanjens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](../reports/live-report.md#modify-dashboard).
 
@@ -62,7 +64,7 @@ Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL Email]** -fliken in
 
 The **[!UICONTROL Email Sending Statistics]** widgeten innehåller information om den viktigaste informationen i förhållande till ditt meddelande:
 
-* **[!UICONTROL Delivered]**: Antal meddelanden som har skickats.
+* **[!UICONTROL Delivered]**: Antal meddelanden som skickats.
 
 * **[!UICONTROL Bounces]**: Totalt antal fel som ackumulerats under leverans och automatisk returbearbetning.
 
@@ -72,7 +74,7 @@ The **[!UICONTROL Sending metrics by Email]** tabell och **[!UICONTROL Email Sum
 
 * **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
 
-* **[!UICONTROL Delivered]**: Antal meddelanden som har skickats.
+* **[!UICONTROL Delivered]**: Antal meddelanden som skickats.
 
 * **[!UICONTROL Bounces]**: Totalt antal fel som ackumulerats under leverans och automatisk returbearbetning.
 
@@ -80,7 +82,7 @@ The **[!UICONTROL Sending metrics by Email]** tabell och **[!UICONTROL Email Sum
 
 * **[!UICONTROL Opens]**: Antal gånger ett meddelande öppnades i en leverans.
 
-* **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades i en leverans.
+* **[!UICONTROL Clicks]**: Antal gånger ett innehåll klickades i en leverans.
 
 * **[!UICONTROL Unsubscribe]**: Antal klick på länken för att avbryta prenumerationen.
 
@@ -90,7 +92,7 @@ The **[!UICONTROL Bounce Reasons]**, **[!UICONTROL Bounce categories]** och **[!
 
 * **[!UICONTROL Hard bounce]**: Det totala antalet permanenta fel, t.ex. fel e-postadress. Detta inbegriper ett felmeddelande som uttryckligen anger att adressen är ogiltig, till exempel Okänd användare.
 
-* **[!UICONTROL Soft bounce]**: Det totala antalet tillfälliga fel, t.ex. en fullständig inkorg.
+* **[!UICONTROL Soft bounce]**: Det totala antalet tillfälliga fel, till exempel en fullständig inkorg.
 
 * **[!UICONTROL Ignored]**: Det totala antalet tillfälliga, t.ex. frånvaro, eller ett tekniskt fel, t.ex. om avsändartypen är postmaster.
 
@@ -99,19 +101,39 @@ The **[!UICONTROL Error Reasons]** och **[!UICONTROL Exclude Reasons]** Med diag
 The **[!UICONTROL Email - Top recipient domain]** diagram och tabeller visar vilka domäner som är de mest använda av mottagarna för att öppna e-postmeddelandet.
 +++
 
+## Fliken I appen {#inapp-live}
+
+Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL In-app]** -fliken innehåller huvudinformationen om de leveranser i appen som skickas i kampanjen.
+
++++Läs mer om de olika mätvärden och widgetar som är tillgängliga för rapporten i appen.
+
+The **[!UICONTROL In-app performance]** Nyckeltal anger den viktigaste informationen i relation till besökarnas engagemang i era meddelanden i appen, till exempel:
+
+* **[!UICONTROL Unique impressions]**: antal unika användare som meddelandet i appen levererades till.
+
+* **[!UICONTROL Impressions]**: totalt antal meddelanden i appen som levereras till alla användare.
+
+The **[!UICONTROL In-app summary]** diagram visar hur dina visningar i appen har utvecklats för den aktuella perioden.
+
+The **[!UICONTROL Clicks by button]** diagram och tabell innehåller tillgängliga data för mottagarnas beteende per knapp:
+
+* **[!UICONTROL Clicks]**: totalt antal mottagare som interagerat med knapparna i meddelandet i appen.
+
++++
+
 ## Fliken Push-meddelanden {#push-live}
 
 Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL Push notification]** -fliken innehåller huvudinformationen i förhållande till push-leveranser som skickas i kampanjen.
 
 ![](assets/campaign_report_live_2.png)
 
-+++Läs mer om de olika mätvärden och widgetar som finns för rapporten Push.
++++Läs mer om de olika mätvärden och widgetar som är tillgängliga för rapporten Push.
 
-**[!UICONTROL Push notification sending performance]**, **[!UICONTROL Push notification summary]** och **[!UICONTROL Sending metrics - by Push]** widgetar anger huvudinformationen i förhållande till meddelandet:
+**[!UICONTROL Push notification sending performance]**, **[!UICONTROL Push notification summary]** och **[!UICONTROL Sending metrics - by Push]** widgetar anger huvudinformationen i förhållande till ditt meddelande:
 
 * **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
 
-* **[!UICONTROL Delivered]**: Antal meddelanden som har skickats.
+* **[!UICONTROL Delivered]**: Antal meddelanden som skickats.
 
 * **[!UICONTROL Bounces]**: Totalt antal fel som ackumulerats under leverans och automatisk returbearbetning.
 
@@ -119,9 +141,9 @@ Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL Push notification]*
 
 * **[!UICONTROL Opens]**: Antal gånger ett meddelande öppnades i en leverans.
 
-* **[!UICONTROL Actions]**: Totalt antal åtgärder för push-meddelandet som levererats, t.ex. knappklickning eller avbruten.
+* **[!UICONTROL Actions]**: Totalt antal åtgärder för push-meddelandet som levererats, t.ex. knappklickning eller avvisning.
 
-* **[!UICONTROL Engagements]**: Totalt antal öppningar och åtgärder för det här push-meddelandet, dvs om profilen öppnade push-meddelandet eller om någon klickade på en knapp.
+* **[!UICONTROL Engagements]**: Totalt antal öppningar och åtgärder för detta push-meddelande, dvs. om profilen öppnade push-meddelandet eller om någon klickade på en knapp.
 
 The **[!UICONTROL Error Reasons]** och **[!UICONTROL Exclude Reasons]** Med diagram och tabeller kan du se vilka fel och undantag som inträffade under leveransen.
 
@@ -173,13 +195,32 @@ The **[!UICONTROL Web performance]** Nyckeltal anger den viktigaste informatione
 
 * **[!UICONTROL Unique impressions]**: antal unika användare som webbupplevelsen levererades till.
 
-* **[!UICONTROL Impressions]**: det totala antalet webbupplevelser som levereras till alla användare.
+* **[!UICONTROL Impressions]**: totalt antal webbupplevelser som levereras till alla användare.
 
 * **[!UICONTROL Clicks]**: totalt antal URL-besök.
 
 The **[!UICONTROL Web summary]** diagram visar hur webbupplevelserna har utvecklats (visningar, unika intryck och klickningar) under den aktuella perioden.
 
 The **[!UICONTROL Clicks by element]** tabellen innehåller huvudinformationen om besökarnas engagemang för de olika elementen på webbsidorna.
++++
+
+## Fliken Direktreklam {#direct-mail-tab}
+
+Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Direct mail]** -fliken anger huvudinformationen i förhållande till dina Direct-postleveranser.
+
++++Läs mer om de olika mätvärden och widgetar som finns för rapporten Direct mail.
+
+The **[!UICONTROL Direct Mail - Sending statistics]** tabellen visar hur framgångsrik leveransen är:
+
+* **[!UICONTROL Targeted]**: Antal användarprofiler som kvalificerar sig som målprofiler för den här leveransen.
+
+* **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
+
+* **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
+
+* **[!UICONTROL Excluded]**: Antal användarprofiler, exkluderade från målprofilerna, som inte fick leveransen.
+
+The **[!UICONTROL Direct Mail - Excluded reasons]** och **[!UICONTROL Direct Mail - Error reasons]** Med diagram och tabeller kan du se vilka fel och undantag som inträffade under leveransen.
 +++
 
 ## Ytterligare resurser

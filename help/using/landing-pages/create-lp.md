@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, publicering
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: 4d196e6485b55fe63bd8da2c7cdfc454a26f80f3
+source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1553'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ De viktigaste stegen för att skapa landningssidor är följande:
 
 1. Om du vill tilldela etiketter för anpassad eller grundläggande dataanvändning till landningssidan väljer du **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md)
 
-   <!--You can add a tag. See AEP documentation?-->
+1. Markera eller skapa Adobe Experience Platform-taggar från **[!UICONTROL Tags]** fält för att kategorisera landningssidan för förbättrad sökning. [Läs mer](../start/search-filter-categorize.md#tags)
 
 1. Välj en förinställning. Lär dig hur du skapar förinställningar för landningssidor i [det här avsnittet](../landing-pages/lp-presets.md#lp-create-preset).
 
@@ -189,7 +189,7 @@ Följ stegen nedan för att definiera inställningar för undersidan.
 
    >[!NOTE]
    >
-   >Du kan infoga en länk till den primära sidan från en undersida till samma landningssida. Om du till exempel vill dirigera om användare som har gjort ett misstag och vill prenumerera igen, kan du lägga till en länk från bekräftelseundersidan till den primära prenumerationssidan. Lär dig hur du infogar länkar i [det här avsnittet](../email/message-tracking.md#insert-links).
+   >Du kan infoga en länk till den primära sidan från en undersida till samma landningssida. Om du till exempel vill dirigera om användare som har gjort ett misstag och vill prenumerera igen, kan du lägga till en länk från bekräftelseundersidan till den primära prenumerationssidan. Lär dig infoga länkar i [det här avsnittet](../email/message-tracking.md#insert-links).
 
 1. Definiera URL-adressen till landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan. [Läs mer](../landing-pages/lp-subdomains.md)
 
@@ -215,7 +215,7 @@ När inställningarna för landningssidan och innehållet har definierats kan du
 >
 >Du måste ha testprofiler tillgängliga för att kunna förhandsgranska dina meddelanden och skicka korrektur. Lär dig hur [skapa testprofiler](../audience/creating-test-profiles.md).
 
-1. I landningssidans gränssnitt klickar du på **[!UICONTROL Simulate content]** för att komma åt valet av testprofil.
+1. Klicka på **[!UICONTROL Simulate content]** för att komma åt valet av testprofil.
 
    ![](assets/lp_simulate-button.png)
 
@@ -249,7 +249,7 @@ Varningar visas högst upp till höger på skärmen, som visas nedan:
 
 >[!NOTE]
 >
->Om knappen inte visas har ingen varning identifierats.
+>Om du inte ser den här knappen har ingen varning identifierats.
 
 Två typer av varningar kan inträffa:
 

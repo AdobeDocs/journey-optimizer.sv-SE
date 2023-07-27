@@ -7,10 +7,10 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: 51562843-7b50-4eb5-bf79-5ce03f7549cb
-source-git-commit: e35aeba17f45145cc7712740cbcf1f0e169760fc
+source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 4%
+source-wordcount: '189'
+ht-degree: 3%
 
 ---
 
@@ -20,11 +20,16 @@ Meddelanden i appen är meddelanden som kan skickas till användare i appen, och
 
 Använd Journey Optimizer för att skapa meddelanden i appen och konfigurera upplevelsealternativ, inklusive meddelandelayout, visning, text och knappalternativ.
 
+>[!AVAILABILITY]
+>
+>För närvarande finns inte en kanal i appen tillgänglig för organisationer som har köpt tillägget Adobe Healthcare Shield.
+>
+
 ## Förutsättningar{#prerequisites-in-app}
 
 Innan du skickar meddelanden i appen måste du:
 
-* Konfigurera kanalen i appen. [Läs mer](inapp-configuration.md)
+* Konfigurera appkanalen. [Läs mer](inapp-configuration.md)
 
 * Kontrollera att du har rätt behörigheter för Journey Optimizer-kampanjer innan du startar. [Läs mer](../campaigns/get-started-with-campaigns.md#campaign-prerequisites)
 

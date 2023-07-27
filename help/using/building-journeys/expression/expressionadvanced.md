@@ -8,10 +8,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: uttrycksredigerare, data, resa
 exl-id: 9ea6cc3a-6a1b-4e8f-82ff-f8b1812617d7
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 79%
+source-wordcount: '630'
+ht-degree: 75%
 
 ---
 
@@ -67,7 +67,7 @@ Till vänster på skärmen visas tillgängliga fält och funktioner:
 * **[!UICONTROL Events]**: välj ett av fälten som har tagits emot från den inkommande händelsen. Listan med händelsefält som visas är sammanhangsberoende och varierar beroende på vilka händelser som läggs till i resan. [Läs mer](../../event/about-events.md)
 * **[!UICONTROL Audiences]**: om du har släppt en **[!UICONTROL Audience qualification]** väljer du den målgrupp du vill använda i ditt uttryck. [Läs mer](../condition-activity.md#using-a-segment)
 * **[!UICONTROL Data Sources]**: välj i listan bland tillgängliga fält från datakällornas fältgrupper. [Läs mer](../../datasource/about-data-sources.md)
-* **[!UICONTROL Journey properties]**: I det här avsnittet grupperas de tekniska fält som rör resan för en viss profil. [Läs mer](journey-properties.md)
+* **[!UICONTROL Journey properties]**: I det här avsnittet grupperas de tekniska fält som rör resan för en viss profil om. [Läs mer](journey-properties.md)
 * **[!UICONTROL Functions]**: välj i listan bland inbyggda funktioner som du använder för att utföra komplex filtrering. Funktionerna är organiserade per kategori. [Läs mer](functions.md)
 
 ![](../assets/journey65.png)
@@ -82,7 +82,7 @@ En mekanism för syntaxvalidering kontrollerar kodens integritet. Fel visas öve
 
 **Behovet av parametrar när du skapar villkor med den avancerade uttrycksredigeraren**
 
-Om du väljer ett fält från en extern datakälla som kräver att en parameter anropas (se [den här sidan](../../datasource/external-data-sources.md). I en väderrelaterad datakälla används till exempel parametern &quot;city&quot; ofta. Därför måste du välja var du vill hämta den här parametern &quot;city&quot;. Funktioner kan även tillämpas på parametrar om man vill utföra formateringsändringar eller sammansättningar.
+Om du väljer ett fält från en extern datakälla som kräver att en parameter anropas (se [den här sidan](../../datasource/external-data-sources.md)) visas en ny flik till höger där du kan ange den här parametern. Parametervärdet kan komma från händelser som är placerade i resan eller Experience Platform-datakällan (och inte från andra externa datakällor). I en väderrelaterad datakälla används till exempel parametern &quot;city&quot; ofta. Därför måste du välja var du vill hämta den här parametern &quot;city&quot;. Funktioner kan även tillämpas på parametrar om man vill utföra formateringsändringar eller sammansättningar.
 
 ![](../assets/journeyuc2_19.png)
 

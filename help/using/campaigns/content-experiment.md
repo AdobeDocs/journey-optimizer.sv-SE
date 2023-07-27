@@ -7,11 +7,11 @@ feature: A/B Testing
 topic: Content Management
 role: User
 level: Beginner
-keywords: innehåll, experiment, multipelt, målgrupp, behandling
+keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: 05284fcb3fc426bcf8bc5343a3267bd24c2a26cc
+source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '772'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
    * **[!UICONTROL Name]**
    * **[!UICONTROL Description]**
 
-1. Definiera målgruppen. Om du vill göra det klickar du på **[!UICONTROL Select audience]** för att visa en lista över tillgängliga Adobe Experience Platform-målgrupper. [Läs mer om målgrupper](../audience/about-audiences.md)
+1. Definiera målgruppen. Klicka på **[!UICONTROL Select audience]** för att visa en lista över tillgängliga Adobe Experience Platform-målgrupper. [Läs mer om målgrupper](../audience/about-audiences.md)
 
    I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera personer från den valda målgruppen. [Läs mer](get-started-experiment.md#content-experiment-work)
 
@@ -75,7 +75,7 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 
    Spåra resultat kan nås från kampanjrapporten när kampanjen har genomförts.
 
-1. Konfigurera **[!UICONTROL Schedule]** -avsnitt. [Läs mer](create-campaign.md)
+1. Om du vill köra kampanjen på ett visst datum eller med en återkommande frekvens konfigurerar du **[!UICONTROL Schedule]** -avsnitt. [Läs mer](create-campaign.md)
 
 1. Klicka **[!UICONTROL Edit content]** för att personalisera leveransen.
 
@@ -99,7 +99,7 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 >title="Resultatmått"
 >abstract="Resultatmått används för att spåra och utvärdera den bästa behandlingen i ett experiment. Var noga med att konfigurera datauppsättningen för vissa mätvärden innan du använder den."
 
-1. När leveransen har anpassats går du till sammanfattningssidan för Campaign och klickar på **[!UICONTROL Create experiment]** för att börja konfigurera ert innehållsexperiment.
+1. När leveransen har anpassats går du till sammanfattningssidan för Campaign och klickar på **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment.
 
    ![](assets/content_experiment_3.png)
 
@@ -109,19 +109,23 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 
    ![](assets/content_experiment_11.png)
 
+1. När du skapar ett experiment med hjälp av appen eller webbkanalen och väljer **[!UICONTROL Inbound Clicks]**, **[!UICONTROL Unique Inbound Clicks]** , **[!UICONTROL Page Views]** , eller **[!UICONTROL Unique Page Views metrics]** , **[!UICONTROL Click Action]**  I den här listrutan kan du hålla reda på och övervaka klick och vyer på specifika sidor.
+
+   ![](assets/content_experiment_20.png)
+
 1. Klicka **[!UICONTROL Add treatment]** för att skapa så många nya behandlingar som behövs.
 
    ![](assets/content_experiment_8.png)
 
 1. Ändra **[!UICONTROL Title]** för att särskilja dem bättre.
 
-1. Välj om du vill lägga till en **[!UICONTROL Holdout]** gruppera efter leverans. Den här gruppen kommer inte att få något innehåll från den här kampanjen.
+1. Välj att lägga till en **[!UICONTROL Holdout]** gruppera efter leverans. Den här gruppen kommer inte att få något innehåll från den här kampanjen.
 
    Om du aktiverar alternativfältet tar det automatiskt 10 % av din befolkning. Du kan justera procentandelen om det behövs.
 
    ![](assets/content_experiment_12.png)
 
-1. Du kan sedan välja att tilldela varje **[!UICONTROL Treatment]** eller bara aktivera **[!UICONTROL Distribute evenly]** växlingsfält.
+1. Du kan sedan välja att tilldela en exakt procentsats till varje **[!UICONTROL Treatment]** eller bara aktivera **[!UICONTROL Distribute evenly]** växlingsfält.
 
    ![](assets/content_experiment_13.png)
 
@@ -139,7 +143,7 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 
    ![](assets/content_experiment_9.png)
 
-1. När du har utformat dina behandlingar klickar du på **[!UICONTROL More actions]** för att få tillgång till behandlingar: **[!UICONTROL Rename]**, **[!UICONTROL Duplicate]** och **[!UICONTROL Delete]**.
+1. När du har utformat dina behandlingar klickar du **[!UICONTROL More actions]** för att få tillgång till behandlingar: **[!UICONTROL Rename]**, **[!UICONTROL Duplicate]** och **[!UICONTROL Delete]**.
 
    ![](assets/content_experiment_7.png)
 

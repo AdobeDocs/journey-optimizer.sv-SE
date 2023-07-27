@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 05f74838-6766-47ea-aaed-a67c174a51a9
-source-git-commit: a2b2398280624c4f344ff2530a6054b68f082eab
+source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
 workflow-type: tm+mt
-source-wordcount: '1399'
+source-wordcount: '1440'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,7 @@ Från **[!UICONTROL More actions]** -ikonen bredvid varje fragment kan du:
 Om du vill redigera ett fragment följer du stegen nedan.
 
 1. Klicka på önskat objekt på **[!UICONTROL Fragment]** lista.
-1. Från fragmentegenskaperna kan du [utforska referenser](#explore-references), [hantera åtkomsten](../administration/object-based-access.md) och uppdatera fragmentinformationen.
+1. Från fragmentegenskaperna kan du [utforska referenser](#explore-references), [hantera åtkomsten](../administration/object-based-access.md)och uppdatera fragmentinformationen inklusive [taggar](../start/search-filter-categorize.md#tags).
 
    ![](assets/fragment-edit-content.png)
 
@@ -80,7 +80,7 @@ Om du vill redigera ett fragment följer du stegen nedan.
 
 ### Utforska referenser {#explore-references}
 
-Du kan visa en lista över resor, kampanjer och innehållsmallar som för närvarande använder ett fragment.
+Du kan visa en lista över de resor, kampanjer och innehållsmallar som för närvarande använder ett fragment.
 
 Om du vill göra det väljer du **[!UICONTROL Explore references]** antingen från **[!UICONTROL More actions]** i fragmentlistan eller från skärmen för fragmentegenskaper.
 
@@ -98,7 +98,7 @@ Välj en flik för att växla mellan resor, kampanjer och mallar. Du kan se dera
 
 Du kan rensa fragmentlistan från objekt som inte längre är relevanta för ert varumärke.
 
-Om du vill göra det klickar du på **[!UICONTROL More actions]** -ikonen bredvid det önskade fragmentet och välj **[!UICONTROL Archive]**. Den försvinner från fragmentlistan, vilket förhindrar att den används i framtida e-postmeddelanden eller mallar.
+Klicka på **[!UICONTROL More actions]** -ikonen bredvid det önskade fragmentet och välj **[!UICONTROL Archive]**. Den försvinner från fragmentlistan, vilket förhindrar att den används i framtida e-postmeddelanden eller mallar.
 
 ![](assets/fragment-list-archive.png)
 
@@ -114,7 +114,7 @@ Om du vill arkivera ett fragment, filtrera på **[!UICONTROL Archived]** objekt 
 
 Det finns två sätt att skapa fragment:
 
-* Skapa ett fragment från grunden med **[!UICONTROL Fragments]** dedikerad meny. [Lär dig mer](#create-template-from-scratch)
+* Skapa ett fragment från grunden med **[!UICONTROL Fragments]** egen meny. [Lär dig mer](#create-template-from-scratch)
 
 * När du utformar ett e-postmeddelande eller en innehållsmall sparar du en del av innehållet som fragment. [Lär dig mer](#save-as-template)
 
@@ -141,7 +141,9 @@ Följ stegen nedan om du vill skapa ett fragment från grunden.
    >
    >För närvarande bara **[!UICONTROL Visual fragment]** text och **E-post** kanalen stöds.
 
-1. Om du vill tilldela egna eller grundläggande användningsrubriker till fragmentet väljer du **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md).
+1. Om du vill tilldela egna eller grundläggande dataanvändningsetiketter till fragmentet väljer du **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md).
+
+1. Markera eller skapa Adobe Experience Platform-taggar från **[!UICONTROL Tags]** fält för att kategorisera fragmentet för förbättrad sökning. [Läs mer](../start/search-filter-categorize.md#tags)
 
 1. Klicka på **[!UICONTROL Create]**.
 
@@ -153,7 +155,7 @@ Följ stegen nedan om du vill skapa ett fragment från grunden.
 
    ![](assets/fragment-designer.png)
 
-1. När fragmentet är klart klickar du på **[!UICONTROL Save]**.
+1. När fragmentet är klart klickar du **[!UICONTROL Save]**.
 
 1. Klicka vid behov på pilen bredvid fragmentnamnet för att gå tillbaka till **[!UICONTROL Details]** och redigera.
 
@@ -163,7 +165,7 @@ Det här fragmentet är nu klart att användas när du skapar [e-post](get-start
 
 ### Spara som fragment {#save-as-fragment}
 
-När en [innehållsmall](content-templates.md) eller en [e-post](get-started-email-design.md) i en kampanj eller en resa kan du spara en del av innehållet som fragment för framtida återanvändning. Följ stegen nedan för att göra detta.
+När du utformar en [innehållsmall](content-templates.md) eller en [e-post](get-started-email-design.md) i en kampanj eller en resa kan du spara en del av innehållet som fragment för framtida återanvändning. Följ stegen nedan för att göra detta.
 
 1. I [E-postdesigner](get-started-email-design.md)klickar du på ellipsen högst upp till höger på skärmen.
 
@@ -187,9 +189,11 @@ När en [innehållsmall](content-templates.md) eller en [e-post](get-started-ema
    >
    >För närvarande bara **[!UICONTROL Visual fragment]** text och **E-post** kanalen stöds.
 
-1. Om du vill tilldela egna eller grundläggande användningsrubriker till fragmentet väljer du **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md).
+1. Om du vill tilldela egna eller grundläggande dataanvändningsetiketter till fragmentet väljer du **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md).
 
-1. Klicka **[!UICONTROL Create]** igen. Fragmentet sparas i **[!UICONTROL Fragments]** lista, tillgänglig från [!DNL Journey Optimizer] dedikerad meny.
+1. Markera eller skapa Adobe Experience Platform-taggar från **Taggar** fält för att kategorisera mallen för förbättrad sökning. [Läs mer](../start/search-filter-categorize.md#tags)
+
+1. Klicka **[!UICONTROL Create]** igen. Fragmentet sparas i **[!UICONTROL Fragments]** lista, tillgänglig från [!DNL Journey Optimizer] egen meny.
 
    Det blir ett fristående fragment som kan [använd](#access-manage-fragments), [redigerad](#edit-fragments) och [arkiverad](#archive-fragments) som alla andra objekt i den listan.
 
@@ -201,7 +205,7 @@ Du kan nu använda det här fragmentet när du skapar [e-post](get-started-email
 
 ## Använd fragment {#use-fragments}
 
-Du kan använda ett fragment i en [e-post](get-started-email-design.md) inom en resa eller kampanj, eller i [innehållsmall](content-templates.md).
+Du kan använda ett fragment i en [e-post](get-started-email-design.md) inom en resa eller kampanj, eller i en [innehållsmall](content-templates.md).
 
 1. Öppna e-post- eller mallinnehåll med [E-postdesigner](get-started-email-design.md).
 

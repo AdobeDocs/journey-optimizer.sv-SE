@@ -8,34 +8,40 @@ role: User
 level: Intermediate
 keywords: återinträde, resa, profil, återkommande
 exl-id: 8874377c-6594-4a5a-9197-ba5b28258c02
-source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
+source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 0%
+source-wordcount: '609'
+ht-degree: 1%
 
 ---
 
 
 # Profilhantering {#entry-management}
 
-Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet för engångsresor, till exempel om du vill erbjuda en engångsgåva när en person går in i en affär. I så fall vill ni inte att kunden ska kunna registrera sig på nytt och få erbjudandet igen.
+Det finns två huvudtyper av resor:
 
-![](assets/journey-re-entrance.png)
+* Händelsebaserade resor: från och med en händelse är dessa resor enhetliga, de är kopplade till en person. När evenemanget tas emot går personen in på resan. [Läs mer](#entry-unitary)
+* läs målgruppsresor: från och med en läsare är detta batchresor. Enskilda personer som tillhör målgruppen deltar alla i samma resa. Resorna kan vara återkommande eller engångsvisa. [Läs mer](#entry-read-segment)
 
-När en resa avslutas är dess status **[!UICONTROL Closed]**. Nya individer kan inte längre komma in på resan. Personer som redan är på resan slutför resan normalt.
-
-Efter den globala standardtidsgränsen på 30 dagar ändras resan till **Slutförd** status.  [Läs mer](journey-gs.md#global_timeout).
-
+I båda resetyperna kan en profil inte finnas flera gånger på samma resa samtidigt.
 
 ## Enhetsresor{#entry-unitary}
 
-Enhetsresor (som inleds med en händelse eller en publikation) innehåller ett skyddsräcke som förhindrar att resorna aktiveras felaktigt flera gånger för samma händelse. Återinträde av profiler blockeras tillfälligt som standard i 5 minuter. Om en händelse till exempel utlöser en resa kl. 12:01 för en viss profil och en annan tar emot kl. 12:03 (oavsett om det är samma händelse eller en annan som utlöser samma resa) kommer den resan inte att starta igen för den här profilen.
-
-Dessutom:
+På enastående resor kan du aktivera eller inaktivera återinträde:
 
 * Om återinträde är aktiverat kan en profil gå in på en resa flera gånger, men kan inte göra det förrän den tidigare instansen av resan har avslutats helt.
 
 * Om återinträde är inaktiverat kan en profil inte ange flera gånger samma resa
+
+Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet för engångsresor, t.ex. om du vill erbjuda en engångsgåva när en person går in i en affär. I så fall vill ni inte att kunden ska kunna registrera sig på nytt och få erbjudandet igen. När en resa avslutas är dess status **[!UICONTROL Closed]**. Nya individer kan inte längre komma in på resan. Personer som redan är på resan slutför resan normalt. [Läs mer](journey-gs.md#entrance)
+
+![](assets/journey-re-entrance.png)
+
+Efter den globala standardtidsgränsen på 30 dagar ändras resan till **Slutförd** status. Nya individer kan inte längre komma in på resan. Personer som redan befinner sig på resan slutför resan normalt.På grund av tidsgränsen på 30 dagar, när återinträde inte är tillåtet, kan vi inte säkerställa att återinträdesspärren fungerar mer än 30 dagar. Eftersom vi tar bort all information om personer som tagit sig in på resan 30 dagar efter ankomsten, kan vi inte veta vem som tagit sig in tidigare, mer än 30 dagar sedan. [Läs mer](journey-gs.md#global_timeout).
+
+Enhetsresor (som inleds med en händelse eller en publikation) innehåller ett skyddsräcke som förhindrar att resorna aktiveras felaktigt flera gånger för samma händelse. Återinträde av profiler blockeras tillfälligt som standard i 5 minuter. Om en händelse till exempel utlöser en resa kl. 12:01 för en viss profil och en annan tar emot kl. 12:03 (oavsett om det är samma händelse eller en annan som utlöser samma resa) kommer den resan inte att starta igen för den här profilen.
+
+Nyckeln används också för att kontrollera att en person befinner sig på en resa. En person kan faktiskt inte befinna sig på två olika platser på samma resa. Därför tillåter systemet inte att samma nyckel, till exempel nyckeln CRMID=3224, finns på olika platser under samma resa.
 
 ## Läs målgruppsresor{#entry-read-segment}
 
@@ -43,50 +49,10 @@ I en läsande målgruppsresa:
 
 * För icke återkommande resor: profilen anger en gång och endast en gång under resan.
 
-* För återkommande resor: profilen kommer in på resan vid varje upprepning, om de har den förväntade statusen. Om de fortfarande befinner sig på resan från en tidigare upprepning startar de om från början.
-
-Vid affärsevenemangsresor som börjar med en **Läsa målgrupper** aktivitet: i vetskap om att den här resan bygger på mottagningen av ett affärsevenemang, och om profilen är kvalificerad för den förväntade målgruppen, kommer de att gå in på resan för varje mottaget affärsevenemang, vilket innebär att profilen kan vara flera gånger under samma resa samtidigt, men i samband med olika affärsevenemang.
-
-<!--
-# Profile entry management {#entry-management}
-
-There are two main types of journeys:
-
-* event-based journeys: starting with an event, these journeys are unitary, they are associated to one individual. When the event is received, the individual enters the journey. [Read more](#entry-unitary)
-* read segment journeys: starting with a read segment, these are batch journeys. Individuals belonging to the segment all enter the same journey. These journeys can be recurring or one-shot. [Read more](#entry-read-segment)
-
-In both journey types, a profile cannot be present multiple times in the same journey, at the same time.
-
-
-## Unitary journeys{#entry-unitary}
-
-In unitary journeys, you can enable or disable re-entrance:
-
-* If re-entrance is enabled, a profile can enter a journey several times, but cannot do it until he fully exited that previous instance of the journey.
-
-* If re-entrance is disabled, a profile cannot enter multiple times the same journey
-
-By default, new journeys allow re-entrance. You can uncheck the option for “one shot” journeys, for example if you want to offer a one-time gift when a person enters a shop. In that case, you don't want the customer to be able to re-enter the journey and receive the offer again. When a journey ends, its status is **[!UICONTROL Closed]**. New individuals can no longer enter the journey. Persons already in the journey finish the journey normally. [Learn more](journey-gs.md#entrance)
-
-![](assets/journey-re-entrance.png)
-
-After the default global timeout of 30 days, the journey switches to the **Finished** status. New individuals can no longer enter the journey. Persons already in the journey finish the journey normally.Due to the 30-day journey timeout, when journey re-entrance is not allowed, we cannot make sure the re-entrance blocking will work more than 30 days. Indeed, as we remove all information about persons who entered the journey 30 days after they enter, we cannot know the person entered previously, more than 30 days ago. [Learn more](journey-gs.md#global_timeout).
-
-Unitary journeys (starting with an event or a segment qualification) include a guardrail that prevents journeys from being erroneously triggered multiple times for the same event. Profile re-entrance is temporally blocked by default for 5 minutes. For instance, if an event triggers a journey at 12:01 for a specific profile and another one arrives at 12:03 (whether it is the same event or a different one triggering the same journey) that journey will not start again for this profile.
-
-The key is also used to check that a person is in a journey. Indeed, a person cannot be at two different places in the same journey. As a result, the system does not allow the same key, for example the key CRMID=3224, to be at different places in the same journey.
-
-## Read segment journeys{#entry-read-segment}
-
-In a read segment journey:
-
-* For non-recurring journeys: the profile enters once and only once the journey.
-
-* For recurring journeys: by default, all the profiles belonging to the segment enters the journey on each recurrence. They must finish the journey before they can reenter in another occurrence. 
+* För återkommande resor: som standard kommer alla profiler som tillhör målgruppen in på resan vid varje upprepning. De måste slutföra resan innan de kan komma in igen vid ett annat tillfälle.
 
 >[!NOTE]
 >
->Two options are available for recurring read segment journeys. The **Force reentrance on recurrence** option makes all the profiles still present in the journey automatically exit it on the next execution. The **Incremental read** option only targets the individuals who entered the segment since the last execution of the journey. Refer to this [section](../building-journeys/read-segment.md#configuring-segment-trigger-activity)
+>Det finns två alternativ för återkommande läsningar. The **Tvinga återinträde vid upprepning** gör att alla profiler som fortfarande finns kvar i resan automatiskt avslutar den vid nästa körning. The **Inkrementell läsning** Alternativet riktar sig endast till de personer som gått in i målgruppen sedan den senaste resan utfördes. Se detta [section](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
 
-In business event journeys starting with a **Read segment** activity: knowing that this journey is based on the reception of a business event, if the profile is qualified in the expected segment, they will enter the journey for each business event received, meaning that this profile can be multiple times in the same journey, at the same time, but in the context of different business events.
--->
+Vid affärsevenemangsresor som börjar med **Läsa målgrupper** aktivitet: i vetskapen om att resan baseras på mottagningen av ett affärsevenemang, och om profilen är kvalificerad för den förväntade målgruppen, kommer de att gå in på resan för varje mottaget affärsevenemang, vilket innebär att profilen kan vara flera gånger under samma resa samtidigt, men i samband med olika affärsevenemang.

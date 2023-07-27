@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: e0f2a96054886737861e261173f68933cab56e99
+source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera opti
 
 ## Garantier för landningssidor {#lp-guardrails}
 
-* Bara en **Formulär** kan användas på en enda primär sida.
+* Bara en **Formulär** -komponenten kan användas på en enda primär sida.
 * The **Formulär** -komponenten kan inte användas i undersidor.
 * Du kan inte lägga till en förrubrik på en landningssida.
 * Du kan inte välja **Koda din egen** när du utformar en primär landningssida.
@@ -50,7 +50,7 @@ Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera opti
 ### Allmänna åtgärder {#general-actions-g}
 
 * Det finns ingen sändande begränsning.
-* Tre försök utförs systematiskt om ett fel uppstår. Du kan inte justera antalet försök enligt det mottagna felmeddelandet.
+* Tre försök utförs systematiskt om ett fel uppstår. Du kan inte justera antalet försök enligt det mottagna felmeddelandet. Alla HTTP-fel utom HTTP 401, 403 och 404 anges på nytt.
 * Den inbyggda **Reaktion** -händelsen gör att du kan reagera på åtgärder som är klara. Läs mer i [den här sidan](../building-journeys/reaction-events.md). Om du vill reagera på ett meddelande som skickas via en anpassad åtgärd måste du konfigurera en dedikerad händelse.
 * Du kan inte placera två åtgärder parallellt. Du måste lägga till dem en i taget.
 * En profil kan inte finnas flera gånger på samma resa samtidigt. Om återinträde är aktiverat kan en profil återansluta en resa, men kan inte göra det förrän den tidigare instansen av resan har avslutats helt. [Läs mer](../building-journeys/end-journey.md)
@@ -58,7 +58,7 @@ Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera opti
 ### Reseversioner {#journey-versions-g}
 
 * En resa som börjar med en händelseaktivitet i v1 kan inte börja med något annat än en händelse i andra versioner. Du kan inte påbörja en resa med en **Målgruppskvalifikation** -händelse.
-* En resa som börjar med en **Målgruppskvalifikation** aktivitet i v1 måste alltid börja med **Målgruppskvalifikation** i andra versioner.
+* En resa som börjar med en **Målgruppskvalifikation** aktivitet i v1 måste alltid börja med en **Målgruppskvalifikation** i andra versioner.
 * Den målgrupp och det namnutrymme som valts i **Målgruppskvalifikation** (första noden) kan inte ändras i nya versioner.
 * Regeln för återinträde måste vara densamma i alla reseversioner.
 * En resa som börjar med en **Läs målgrupp** kan inte börja med en annan händelse i nästa version.
@@ -68,9 +68,9 @@ Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera opti
 
 * Den anpassade åtgärds-URL:en stöder inte dynamiska parametrar.
 * Endast anropsmetoderna POST och PUT stöds
-* Namnet på frågeparametern eller huvudet får inte börja med &quot;.&quot; eller &quot;$&quot;
+* Namnet på frågeparametern eller -rubriken får inte börja med &quot;.&quot; eller &quot;$&quot;
 * IP-adresser tillåts inte
-* Interna Adobe-adresser (`.adobe.*`) tillåts inte i URL:er och API:er.
+* Adobe adresser (`.adobe.*`) tillåts inte i URL:er och API:er.
 * Inbyggda anpassade åtgärder kan inte tas bort.
 
 ### Händelser {#events-g}
@@ -83,7 +83,7 @@ Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera opti
 ### Datakällor {#data-sources-g}
 
 * Externa datakällor kan utnyttjas inom en kundresa för att söka efter externa data i realtid. Dessa källor måste kunna användas via REST API, ha stöd för JSON och kunna hantera antalet begäranden.
-* Interna Adobe-adresser (`.adobe.*`) tillåts inte i URL:er och API:er.
+* Adobe adresser (`.adobe.*`) tillåts inte i URL:er och API:er.
 
 ### Resor och skapande av profiler {#journeys-limitation-profile-creation}
 

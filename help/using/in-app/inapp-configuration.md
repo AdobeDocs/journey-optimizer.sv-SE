@@ -5,9 +5,9 @@ role: Admin
 level: Intermediate
 keywords: in-app, meddelande, konfiguration, plattform
 exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
-source-git-commit: 118eddf540d1dfb3a30edb0b877189ca908944b1
+source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '308'
 ht-degree: 3%
 
 ---
@@ -26,15 +26,20 @@ Innan du skickar meddelanden i appen måste du konfigurera din app-kanal i [!DNL
 
 1. Sedan öppnar du **[!UICONTROL App surfaces]** menyn och klicka sedan på **[!UICONTROL Create App surface]**.
 
+   >[!NOTE]
+   >
+   > Du behöver **Hantera appkonfiguration** behörighet att få åtkomst till **[!UICONTROL App surfaces]** -menyn. Mer information finns i [den här videon](#video).
+
    ![](assets/inapp_config_1.png)
 
 1. Lägg till ett namn i **[!UICONTROL App surface]**.
 
-1. I listrutan Apple iOS skriver du **iOS Bundle-ID**. Se [Apple-dokumentation](https://developer.apple.com/documentation/appstoreconnectapi/bundle_ids) för mer information om **Paket-ID**.
+
+1. Skriv in **iOS Bundle-ID**. Se [Apple-dokumentation](https://developer.apple.com/documentation/appstoreconnectapi/bundle_ids) för mer information om **Paket-ID**.
 
    ![](assets/inapp_config_2.png)
 
-1. I Android-listrutan skriver du in **Android-paketnamn**. Se [Android-dokumentation](https://support.google.com/admob/answer/9972781?hl=en#:~:text=The%20package%20name%20of%20an,supported%20third%2Dparty%20Android%20stores) för mer information om **Paketnamn**.
+1. Skriv in din **Android-paketnamn**. Se [Android-dokumentation](https://support.google.com/admob/answer/9972781?hl=en#:~:text=The%20package%20name%20of%20an,supported%20third%2Dparty%20Android%20stores) för mer information om **Paketnamn**.
 
 1. Klicka **[!UICONTROL Save]** när du är klar med konfigurationen av **[!UICONTROL App surface]**.
 
@@ -70,3 +75,12 @@ Kanalen i appen är nu konfigurerad. Du kan börja skicka meddelanden i appen ti
 * [Skapa en kampanj](../campaigns/create-campaign.md)
 * [Design In-app-meddelande](design-in-app.md)
 * [Rapport i appen](../reports/campaign-global-report.md#inapp-report)
+
+
+## Instruktionsvideor{#video}
+
+* I videon nedan visas hur du tilldelar **Hantera appkonfiguration** behörighet att komma åt appens ytmeny.
+
+  +++Se video
+  >[!VIDEO](https://video.tv.adobe.com/v/3421607)
++++

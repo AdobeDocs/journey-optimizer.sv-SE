@@ -8,9 +8,9 @@ level: Beginner
 badge: label="Beta" type="Informative"
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
 exl-id: 66b5c691-ddc4-4e9b-9386-2ce6c307451c
-source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
+source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Exportfunktionen för datauppsättningar är för närvarande i betaversion och tillgänglig för alla Adobe Journey Optimizer-användare. Kontakta din Adobe-representant om du vill få åtkomst till mål om du inte redan har åtkomst.
+>Exportfunktionen för datauppsättningar är för närvarande i betaversion och tillgänglig för alla Adobe Journey Optimizer-användare.
 
 Med Journey Optimizer kan du upprätta en direktanslutning till molnlagringsplatser för att exportera innehållet i dina datauppsättningar.
 
@@ -48,7 +48,7 @@ Mer information om respektive mål finns i Adobe Experience Platform-dokumentati
 
 Kontrollera följande krav innan du börjar exportera datauppsättningarna:
 
-* Om du vill exportera datauppsättningar behöver du **Hantera mål**, **Visa mål**, **Aktivera destinationer** och **Hantera och aktivera datauppsättningsmål** [behörigheter för åtkomstkontroll](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#permissions). Läs [åtkomstkontroll - översikt](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/overview.html) eller kontakta produktadministratören för att få de behörigheter som krävs.
+* Om du vill exportera datauppsättningar måste du ha **Visa mål** och **Hantera och aktivera datauppsättningsmål** [behörigheter för åtkomstkontroll](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#permissions). Läs [åtkomstkontroll - översikt](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/overview.html) eller kontakta produktadministratören för att få de behörigheter som krävs.
 
 * Kontrollera att datauppsättningen som du vill exportera inte innehåller andra generationens data. Den här funktionen stöder endast export av första generationens data, dvs. rådata enligt definitionen i [Real-time Customer Data Platform produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/real-time-customer-data-platform-b2c-edition-prime-and-ultimate-packages.html). Första generationens data omfattar datauppsättningar som hämtas via Adobe Experience Platform Sources eller datauppsättningar som samlats in med Adobe-lösningar som Analytics Data Connector och Journey Optimizer-loggar/rapportdatamängder.
 
@@ -84,4 +84,4 @@ Detaljerad information om varje steg finns i Adobe Experience Platform dokumenta
 
    <!--![](assets/dataset-export-review.png)-->
 
-När exporten är klar, lagras innehållet i datauppsättningen på din molnlagringsplats enligt det schema du har konfigurerat. [Lär dig hur du verifierar lyckad datauppsättningsexport](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html#verify)
+När exporten är klar, lagras innehållet i datauppsättningen på din molnlagringsplats enligt det schema som du har konfigurerat. [Lär dig hur du verifierar lyckad datauppsättningsexport](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html#verify)

@@ -4,9 +4,9 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: f2174848c70610fc543ea9ddf766f0f7e579053a
+source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
 workflow-type: tm+mt
-source-wordcount: '2947'
+source-wordcount: '2999'
 ht-degree: 15%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 15%
 # Dokumentationsuppdateringar {#latest-updates}
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
+
+## Juli 2023 {#july-2023}
+
+* Dokumentationssidan för vänteaktivitet har förbättrats med ytterligare information och bästa praxis för användning av global tidsgräns och återinträde. [Läs mer](../building-journeys/wait-activity.md)
+* Sidan om hantering av inträde har förbättrats. [Läs mer](../building-journeys/entry-management.md)
+* Ytterligare information om begränsningsgraden har lagts till i dokumentationen om målgruppsaktivitet. [Läs mer](../building-journeys/read-audience.md)
 
 ## Juni 2023 {#june-2023}
 
@@ -28,8 +34,8 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Ett nytt underavsnitt har lagts till som förklarar hur du lägger till personaliserade spårningsparametrar i URL:er i e-postdesignern. [Läs mer](../email/message-tracking.md#url-tracking)
 * Ett nytt avsnitt har lagts till som beskriver hur du kan säkerställa att valet av de kunder som avstår från att använda sina profildata för personalisering respekteras. [Läs mer](../privacy/opt-out.md#opt-out-personalization)
 * En anteckning har lagts till om hur du använder internationella specialtecken i URL:er som ingår i e-postinnehållet. [Läs mer](../email/message-tracking.md#insert-links)
-* Behörighet för att testa och publicera landningssidor har lagts till. [Läs mer](../landing-pages/create-lp.md)
-* Ett meddelande har lagts till om Adobe Experience Platform-slutpunkter som behövs för att dina anpassade händelser ska kunna räknas med i frekvensbegränsningen för beslutshantering. [Läs mer](../offers/data-collection/schema-requirement.md#track-custom-events)
+* Behörigheten som krävs för att testa och publicera landningssidor har lagts till. [Läs mer](../landing-pages/create-lp.md)
+* En anteckning har lagts till om Adobe Experience Platform-slutpunkter som behövs för att dina anpassade händelser ska kunna räknas med i frekvensbegränsningen för beslutshantering. [Läs mer](../offers/data-collection/schema-requirement.md#track-custom-events)
 
 ## April 2023 {#apr-2023}
 
@@ -39,7 +45,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * En anteckning har lagts till för att ange att om ändringar görs i ett erbjudandebeslut som används i en resa måste du avpublicera resan och publicera den på nytt. [Läs mer](../building-journeys/publishing-the-journey.md)
 * Förklaring om hur man ser till att händelser redovisas korrekt i takräknaren har klargjorts i beslutshanteringen **Takningshändelse** -avsnitt. [Läs mer](../offers/offer-library/add-constraints.md#capping-event)
 * Ett nytt avsnitt har lagts till i **Ändra körningsadresser** sida. Det anger att det är möjligt att åsidosätta körningsfältet som angetts globalt i de avancerade parametrarna för resan, men åsidosättningen av e-postadressen ska bara användas för särskilda användningsfall. Det värde som oftast definieras som den primära adressen i **Körningsfält** är den som bör användas. [Läs mer](../configuration/primary-email-addresses.md#journey-parameters)
-* The **URL-spårning** -avsnittet innehåller nu en lista och beskrivning av alla kontextuella attribut som kan anges för URL-spårning i en e-postkanal. [Läs mer](../email/email-settings.md#url-tracking)
+* The **URL-uppföljning** -avsnittet innehåller nu en lista och beskrivning av alla kontextuella attribut som kan anges för URL-spårning i en e-postkanal. [Läs mer](../email/email-settings.md#url-tracking)
 
 ## Mars 2023 {#march-2023}
 
@@ -67,7 +73,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 ## December 2022 {#december-2022}
 
-* Meddelandeguiden har omstrukturerats och delats upp i dedikerade guider för varje kanal:
+* Guiden Meddelanden har omorganiserats och delats upp i dedikerade guider för varje kanal:
 
    * [E-postkanal](../email/get-started-email.md)
    * [Push-meddelandekanal](../push/get-started-push.md)
@@ -84,7 +90,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 ## Oktober 2022 {#october-2022}
 
-* Ett exempel på hur man begränsar genomströmningen med hjälp av externa datakällor och anpassade åtgärder har lagts till. [Läs mer](../building-journeys/limit-throughput.md)
+* Ett exempel på hur man begränsar genomströmningen med hjälp av externa datakällor och anpassade åtgärder har lagts till för resan. [Läs mer](../building-journeys/limit-throughput.md)
 * Fallavsnittet för resans användning har omorganiserats i två kategorier: [Användningsexempel](../building-journeys/journeys-uc.md) och [Tekniska användningsfall](../building-journeys/collections.md).
 * The **Enhetsdatauppsättning** -avsnittet har uppdaterats med mer information. [Läs mer](../data/datasets-query-examples.md#entity-dataset)
 * Avsnitten för hantering av avanmälan och godkännandepolicyer har omorganiserats. [Läs mer](../privacy/opt-out.md)
@@ -98,7 +104,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Frågeexempel för det nya steget har lagts till samt information om skillnaden mellan id, instanceid och profileid. [Läs mer](../reports/query-examples.md).
 * Uppdaterade sidor relaterade till [toDateOnly](../building-journeys/functions/functiontodateonly.md) och [toString](../building-journeys/functions/functiontostring.md) funktioner.
 * Information om tidsvillkorsparametrar har lagts till. [Läs mer](../building-journeys/condition-activity.md#time_condition)
-* Lagt till information om inbyggda datauppsättningar. [Läs mer](../data/get-started-datasets.md#access-datasets)
+* Ytterligare information om inbyggda datauppsättningar. [Läs mer](../data/get-started-datasets.md#access-datasets)
 * Delarna i den globala rapporten och Live-rapporten har förbättrats och omorganiserats. [Läs mer](../reports/global-report.md)
 * En lista över alla rapporteringsmått som är tillgängliga i Adobe Journey Optimizer har lagts till.
   [Läs mer](../reports/global-report.md#email-and-sms-metrics)
@@ -132,11 +138,11 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Ett nytt avsnitt om hur du lägger till HTML eller JSON-innehåll som kommer från Adobe Experience Cloud Asset-biblioteket i en offertrepresentation har lagts till i dokumentationen. [Läs mer](../offers/offer-library/add-representations.md#html-json)
 * En ny sida om resans livscykel har lagts till. [Läs mer](../building-journeys/journey.md#journey-versions)
 * Sidan Vänta aktivitet har uppdaterats. [Läs mer](../building-journeys/wait-activity.md)
-* Listan med Adobe Journey Optimizer datauppsättningar har lagts till med frågeexempel. [Läs mer](../data/datasets-query-examples.md)
+* Listan med Adobe Journey Optimizer-datauppsättningar har lagts till med frågeexempel. [Läs mer](../data/datasets-query-examples.md)
 * Sidan Tillåtelselista har flyttats till avsnittet Konfiguration. [Läs mer](../configuration/allow-list.md)
-* Sidan Suppression List har uppdaterats för att förtydliga viss information, inklusive det faktum att alla ASCII-tecken mellan 32 och 126 tillåts i fältet för undertryckning. [Läs mer](../configuration/manage-suppression-list.md)
+* Sidan Suppression List har uppdaterats för att förtydliga viss information, inklusive det faktum att alla ASCII-tecken som finns mellan 32 och 126 tillåts i fältet för undertryckning. [Läs mer](../configuration/manage-suppression-list.md)
 * Länken till skyddsförslag och statiska gränser för beslutshantering har lagts till. [Läs mer](../start/guardrails.md)
-* Tidsoptimering är nu tillgängligt för alla kunder. Betaversionen har tagits bort. [Läs mer](../building-journeys/journeys-message.md#send-time-optimization)
+* Tidsoptimering är nu tillgängligt för alla kunder. Betafältet har tagits bort. [Läs mer](../building-journeys/journeys-message.md#send-time-optimization)
 * API:t för gruppbeslut har lagts till i listan över tillgängliga API:er för leverans av personaliserade erbjudanden. [Läs mer](../offers/api-reference/offer-delivery-api/start-offer-delivery-apis.md)
 
 ## Maj 2022 {#may-2022}
@@ -160,7 +166,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * The **Kom igång med datauppsättningar** -avsnittet har förbättrats för att ge detaljerad information om hur du får åtkomst till och skapar datauppsättningar. [Läs mer](../data/get-started-datasets.md)
 * Länkar till hjälplinjer och versionsinformation om produkten har lagts till i **Adobe Journey Optimizer Documentation** hemsida. [Läs mer](https://experienceleague.adobe.com/docs/journey-optimizer.html)
 * The **Skapa meddelandeförinställningar** anger nu att du inte kan fortsätta med att skapa förinställningar medan den valda IP-poolen är under utgåva (**[!UICONTROL Processing]** status) och har aldrig kopplats till den valda underdomänen. [Läs mer](../configuration/channel-surfaces.md#subdomains-and-ip-pools)
-* Meddelandeförinställningarna **URL-spårning** -avsnittet har uppdaterats för att återspegla mindre ändringar i användargränssnittet. [Läs mer](../configuration/channel-surfaces.md#url-tracking)
+* Meddelandeförinställningarna **URL-uppföljning** -avsnittet har uppdaterats för att återspegla mindre ändringar i användargränssnittet. [Läs mer](../configuration/channel-surfaces.md#url-tracking)
 
 ## Mars 2022 {#march-2022}
 
@@ -183,7 +189,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version 22 av jan finns utförlig i dokumentationen. [Läs mer](release-notes.md)
 * The **Offer decisioning AI-rankningar** -avsnittet har uppdaterats med en mer detaljerad beskrivning av den automatiska optimeringsmodellen. [Läs mer](../offers/ranking/auto-optimization-model.md)
 * Ett nytt avsnitt om schemakraven som behövs för att kunna skicka in händelsetyper när en AI-modell används har lagts till. [Läs mer](../offers/data-collection/schema-requirement.md)
-* Avsnittet som är relaterat till [!DNL Journey Optimizer] personaliseringsfunktionerna har omstrukturerats för att bli lättare att läsa. [Läs mer](../personalization/personalize.md)
+* Avsnittet som hör till [!DNL Journey Optimizer] personaliseringsfunktionerna har omstrukturerats för att bli lättare att läsa. [Läs mer](../personalization/personalize.md)
 * The **Skapa meddelandeförinställningar** har delats upp i flera avsnitt för att bli tydligare. [Läs mer](../configuration/channel-surfaces.md#create-channel-surface)
 * The **Hantering av avanmälan** har klargjorts och omorganiserats något. [Läs mer](../privacy/opt-out.md#opt-out-management)
 * The **Infoga länkar** -avsnittet har uppdaterats för att återspegla de senaste ändringarna i användargränssnittet. [Läs mer](../email/message-tracking.md#insert-links)

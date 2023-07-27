@@ -1,16 +1,16 @@
 ---
 title: Skapa ett meddelande i appen
-description: Lär dig hur du skapar ett meddelande i appen i Journey Optimizer
+description: Lär dig skapa ett meddelande i appen i Journey Optimizer
 feature: Overview
 topic: Content Management
 role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: b3b79fe2-7db3-490d-9c3d-87267aa55eea
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 3%
+source-wordcount: '688'
+ht-degree: 2%
 
 ---
 
@@ -70,7 +70,7 @@ For more information on how to configure a journey, refer to [this page](../buil
 
 1. Öppna **[!UICONTROL Campaigns]** menyn och klicka sedan på **[!UICONTROL Create campaign]**.
 
-1. I **[!UICONTROL Properties]** väljer du när kampanjkörningstypen: Schemalagd eller API-utlöst. Läs mer om kampanjtyper i [den här sidan](../campaigns/create-campaign.md#campaigntype).
+1. I **[!UICONTROL Properties]** väljer du när kampanjkörningstypen har schemalagts eller API-utlösts. Läs mer om kampanjtyper i [den här sidan](../campaigns/create-campaign.md#campaigntype).
 
 1. I **[!UICONTROL Actions]** väljer du **[!UICONTROL In-app message]** och **[!UICONTROL App surface]** tidigare konfigurerat för ditt meddelande i appen. Klicka sedan på **[!UICONTROL Create]**.
 
@@ -90,19 +90,51 @@ For more information on how to configure a journey, refer to [this page](../buil
 
 1. Klicka **[!UICONTROL Create experiment]** för att börja konfigurera ert innehållsexperiment och skapa behandlingar för att mäta deras prestanda och identifiera det bästa alternativet för er målgrupp. [Läs mer](../campaigns/content-experiment.md)
 
-1. Klicka **[!UICONTROL Edit triggers]** för att välja händelser och villkor som ska utlösa meddelandet:
+1. Klicka **[!UICONTROL Edit triggers]** för att välja händelser och villkor som ska utlösa meddelandet. Regelbyggare gör det möjligt för användare att ange villkor och värden som, när de möts, utlöser en uppsättning åtgärder, till exempel att skicka ett meddelande i appen.
 
-   1. Klicka **Lägg till villkor** om du vill att utlösaren ska ta hänsyn till flera händelser eller villkor.
-   1. Välj hur dina händelser ska länkas, t.ex. välj **[!UICONTROL And]** om du vill **båda** utlösare är true för att ett meddelande ska kunna visas eller väljas **[!UICONTROL Or]** om du vill att meddelandet ska visas om **antingen** av utlösarna är sanna.
+   1. Klicka på händelselistrutan för att ändra utlösaren om det behövs.
+
+   1. Klicka **[!UICONTROL Add condition]** om du vill att utlösaren ska ta hänsyn till flera händelser eller villkor.
+
+   1. Välj **[!UICONTROL Or]** villkor om du vill lägga till fler **[!UICONTROL Triggers]** för att ytterligare utöka regeln.
+
+      ![](assets/in_app_create_3.png)
+
+   1. Välj **[!UICONTROL And]** villkor om du vill lägga till **[!UICONTROL Traits]** och finjustera regeln bättre.
+
+      +++Se tillgängliga fack.
+
+      | Paket | Traits  | Definition |
+      |---|---|---|
+      | Enhetsinformation | Transportföretagets namn | Utlöses när ett av transportföretagsnamnen i listan uppfylls. |
+      | Enhetsinformation | Enhetsnamn | Utlöses när ett av enhetsnamnen uppfylls. |
+      | Enhetsinformation | Språk | Utlöses när något av språken i listan uppfylls. |
+      | Enhetsinformation | OS-version | Utlöses när en av de angivna operativsystemsversionerna uppfylls. |
+      | Enhetsinformation | Tidigare OS-version | Utlöses när någon av de angivna versionerna av föregående operativsystem uppfylls. |
+      | Enhetsinformation | Körningsläge | Utlöses om körningsläget är antingen program eller tillägg. |
+      | Programmets livscykel | Program-ID | Utlöses när angivet program-ID uppfylls. |
+      | Programmets livscykel | Veckodag | Utlöses när den angivna veckodagen har uppnåtts. |
+      | Programmets livscykel | Dag sedan första användningen | Utlöses när det angivna antalet dagar sedan första användningen uppfylls. |
+      | Programmets livscykel | Dag sedan senaste användning | Utlöses när det angivna antalet dagar sedan den senaste användningen uppfylls. |
+      | Programmets livscykel | Dag sedan uppgraderingen | Utlöses när det angivna antalet dagar sedan den senaste uppgraderingen har uppnåtts. |
+      | Programmets livscykel | Installationsdatum | Utlöses när det angivna installationsdatumet är uppfyllt. |
+      | Programmets livscykel | Launches | Utlöses när det angivna antalet starter uppfylls. |
+      | Programmets livscykel | Tid på dagen | Utlöses när den angivna tidpunkten på dagen uppfylls. |
+      | Platser | Aktuell POI | Utlöses av Platser SDK när kunden anger den angivna Intressepunkten (POI). |
+      | Platser | Senaste inmatade POI | Utlöses av Places SDK beroende på vilken kund som senast angav Point of Interest (POI). |
+      | Platser | Senaste utloggad POI | Utlöses av Places SDK beroende på din kunds sista utlämnade punkt för intresse (POI). |
+
++++
+
+      ![](assets/in_app_create_8.png)
+
    1. Klicka **[!UICONTROL Make group]** för att gruppera utlösare tillsammans.
-
-   ![](assets/in_app_create_3.png)
 
 1. Välj hur ofta utlösaren ska visas när meddelandet i appen är aktivt. Följande alternativ är tillgängliga:
 
-   * **[!UICONTROL Everytime]**: Visa alltid meddelandet när de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
+   * **[!UICONTROL Everytime]**: Visa alltid meddelandet när de händelser som valts i **[!UICONTROL Mobile app trigger]** inträffar.
    * **[!UICONTROL Once]**: Visa endast det här meddelandet första gången de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
-   * **[!UICONTROL Until click through]**: Visa det här meddelandet när händelser har markerats i **[!UICONTROL Mobile app trigger]** nedrullningsbar meny inträffar tills en interaktionshändelse skickas av SDK med åtgärden&quot;klickad&quot;.
+   * **[!UICONTROL Until click through]**: Visa det här meddelandet när händelser har markerats i **[!UICONTROL Mobile app trigger]** rullgardinsmenyn inträffar tills en interaktionshändelse skickas av SDK med åtgärden&quot;klickad&quot;.
    * **[!UICONTROL X number of times]**: Visa det här meddelandet X-tid.
 
 1. Välj vid behov **[!UICONTROL Day of the week]** eller **[!UICONTROL Time of day]** meddelandet visas i appen.
@@ -111,7 +143,7 @@ For more information on how to configure a journey, refer to [this page](../buil
 
    ![](assets/in-app-schedule.png)
 
-1. Nu kan du börja designa ditt innehåll med **[!UICONTROL Edit content]** -knappen. [Läs mer](design-in-app.md)
+1. Nu kan du börja utforma ditt innehåll med **[!UICONTROL Edit content]** -knappen. [Läs mer](design-in-app.md)
 
    ![](assets/in_app_create_4.png)
 
@@ -121,13 +153,18 @@ For more information on how to configure a journey, refer to [this page](../buil
 
 ## Instruktionsvideor{#video}
 
-I videon nedan visas hur du skapar, konfigurerar och publicerar meddelanden i appen i dina kampanjer.
+* I videon nedan visas hur du skapar, konfigurerar och publicerar meddelanden i appen i dina kampanjer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3410430?quality=12&learn=on)
+  +++Se video
+  >[!VIDEO](https://video.tv.adobe.com/v/3410430?quality=12&learn=on)
++++
 
-I videon nedan visas hur du konfigurerar och analyserar innehållsexperiment i A/B-testmeddelanden i appen.
+* I videon nedan visas hur du konfigurerar och analyserar innehållsexperiment i A/B-testmeddelanden i appen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419898)
+  +++Se video
+  >[!VIDEO](https://video.tv.adobe.com/v/3419898)
++++
+
 
 **Relaterade ämnen:**
 

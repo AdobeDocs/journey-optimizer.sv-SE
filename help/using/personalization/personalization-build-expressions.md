@@ -2,16 +2,16 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Om uttrycksredigeraren
-description: Lär dig hur du arbetar med uttrycksredigeraren.
+description: Lär dig arbeta med uttrycksredigeraren.
 feature: Personalization
 topic: Personalization
 role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, om, start
 exl-id: 1ac2a376-a3a8-41ae-9b04-37886697f0fc
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '418'
 ht-degree: 1%
 
 ---
@@ -36,8 +36,8 @@ I den vänstra delen av skärmen visas en domänväljare där du kan välja käl
 * **[!UICONTROL Profile attributes]** : visar alla referenser som är associerade med profilschemat som beskrivs i [Dokumentation för Adobe Experience Platform Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}.
 * **[!UICONTROL Audiences]** : listar alla målgrupper som skapats i Adobe Experience Platform Segmentation Service. Mer information om segmentering finns [här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 * **[!UICONTROL Offer decisions]** : visar alla erbjudanden som är kopplade till en viss placering. Välj placering och infoga sedan erbjudandena i innehållet. En fullständig dokumentation om hur du hanterar erbjudanden finns på [det här avsnittet](../offers/get-started/starting-offer-decisioning.md).
-* **[!UICONTROL Contextual attributes]** : När en kanalåtgärdsaktivitet (e-post, push, SMS) används i en resa är sammanhangsberoende resefält tillgängliga via den här menyn. Läs mer i [det här avsnittet](personalization-use-case.md).
-* **[!UICONTROL Helper functions]** : visar alla hjälpfunktioner som är tillgängliga för att utföra dataåtgärder, t.ex. beräkningar, dataformatering eller konverteringar, villkor och manipulera dem i personaliseringssammanhang. Läs mer i [det här avsnittet](functions/functions.md).
+* **[!UICONTROL Contextual attributes]** : När en kanalåtgärdsaktivitet (e-post, push, SMS) används i en resa eller kampanj är kontextattribut som relaterar till händelser och egenskaper tillgängliga för personalisering. Ett exempel på hur personalisering utnyttjar sammanhangsberoende attribut finns i [det här avsnittet](personalization-use-case.md).
+* **[!UICONTROL Helper functions]** : innehåller alla hjälpfunktioner som är tillgängliga för att utföra dataåtgärder, t.ex. beräkningar, dataformatering eller konvertering, villkor och manipulera dem i personaliseringssammanhang. Läs mer i [det här avsnittet](functions/functions.md).
 
 ## Lägg till personaliseringsattribut {#add}
 

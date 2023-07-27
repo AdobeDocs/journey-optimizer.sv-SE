@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: vänta, aktivitet, resa, nästa, arbetsyta
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
-source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
+source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 6%
+source-wordcount: '466'
+ht-degree: 5%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="ajo_journey_wait"
 >title="Vänta på aktivitet"
->abstract="Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en Wait-aktivitet. Du kan definiera tidpunkten då nästa aktivitet ska köras. Det finns två alternativ: längd och anpassad längd."
+>abstract="Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en Wait-aktivitet. Du kan definiera tidpunkten då nästa aktivitet ska köras. Det finns två alternativ: duration och anpassad."
 
-Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en **[!UICONTROL Wait]** aktivitet. Du kan definiera tidpunkten då nästa aktivitet ska köras. Följande alternativ är tillgängliga:
+Om du vill vänta innan nästa aktivitet körs i sökvägen kan du använda en **[!UICONTROL Wait]** aktivitet. Du kan definiera tidpunkten då nästa aktivitet ska köras. Följande alternativ är tillgängliga:
 
 * [Varaktighet](#duration)
 * [Anpassat](#custom)
@@ -35,9 +35,13 @@ Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en
 
 ## Om aktiviteten Vänta{#about_wait}
 
-Maximal väntetid är 30 dagar. I testläge **[!UICONTROL Wait time in test]** kan du definiera hur länge varje vänteaktivitet ska vara. Den förinställda tiden är tio sekunder. Detta säkerställer att du får testresultaten snabbt. Läs [den här sidan](../building-journeys/testing-the-journey.md)
+Maximal väntetid är 30 dagar. I testläge **[!UICONTROL Wait time in test]** kan du definiera hur länge varje vänteaktivitet ska vara. Den förinställda tiden är tio sekunder. Detta säkerställer att du får testresultaten snabbt. Läs [den här sidan](../building-journeys/testing-the-journey.md).
 
-Var försiktig när du använder flera Wait-aktiviteter under en resa när den globala resetidsgränsen är 30 dagar, vilket innebär att en profil alltid kommer att försvinna 30 dagar efter att han/hon har registrerat sig.
+Var försiktig när du använder flera Wait-aktiviteter under en resa när den globala resetidsgränsen är 30 dagar, vilket innebär att en profil alltid kommer att försvinna 30 dagar efter att han/hon har registrerat sig. Läs [den här sidan](../building-journeys/journey-gs.md#global_timeout).
+
+En enskild person kan bara förlägga en vänteaktivitet om han eller hon har tillräckligt med tid kvar på resan för att slutföra väntetiden innan tidsgränsen på 30 dagar för resan har nåtts. Om du till exempel lägger till två vänteaktiviteter som är inställda på 20 dagar vardera, kommer systemet att upptäcka att den andra väntetiden kommer att sluta efter timeout-värdet på 30 dagar. Den andra väntetiden kommer därför att ignoreras och personen kommer att avsluta resan innan den påbörjas. I det exemplet stannar kunden totalt 20 dagar under resan.
+
+Det är bäst att inte använda väntetider för att blockera återinträde. Använd i stället **Tillåt återinträde** på egenskapsnivå för resan. Läs [den här sidan](../building-journeys/journey-gs.md#entrance).
 
 ## Väntetid{#duration}
 
@@ -62,7 +66,7 @@ Med det här alternativet kan du definiera ett anpassat datum, till exempel 12 j
 >
 >Du kan återanvända ett dateTimeOnly-uttryck eller använda en funktion för att konvertera till dateTimeOnly. Till exempel: toDateTimeOnly(@{Event.offerOpened.activity.endTime}), fältet i händelsen har formatet 2016-08-12T09:46:06Z.
 >
->The **tidszon** är förväntat i egenskaperna för din resa. Därför är det inte möjligt i dag från gränssnittet till en direkt punkt vid en fullständig ISO-8601-tidsstämpelblandningstid och tidszonsförskjutning som 2016-08-12T09:46:06.982-05. Läs [den här sidan](../building-journeys/timezone-management.md).
+>The **tidszon** är förväntat i egenskaperna för din resa. Därför är det inte möjligt i dag från gränssnittet till en direkt punkt vid en fullständig ISO-8601-tidsstämpelblandningstid och tidszonsförskjutning som 2016-08-12T09:46:6.982-05. Läs [den här sidan](../building-journeys/timezone-management.md).
 
 ![](assets/journey57.png)
 
@@ -88,4 +92,4 @@ This type of wait uses a score calculated in Adobe Experience Platform. The scor
 
 ![](assets/journey57bis.png)-->
 
-
+Kan du vara snäll och skriva något runt det där?

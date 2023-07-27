@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: landning, landningssida, lista, prenumeration, service
 exl-id: 5e5419a0-5121-4aa7-a975-b1f08e2918c9
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 1%
+source-wordcount: '434'
+ht-degree: 2%
 
 ---
 
@@ -30,11 +30,11 @@ En prenumerationstjänst avser marknadsföringsvaror och marknadsföringstjänst
 
 En prenumerationstjänst kan vara:
 
-* ett nyhetsbrev, till exempel: &quot;Löpande serier&quot;
-* en händelse, till exempel: &quot;Summit 2021&quot;
-* ett webbinarium, till exempel: &quot;Läs mer om kryptering&quot;
-* intresse för en viss produkt/sport/tjänst/etc., t.ex. &quot;Intresserad av att köpa ett hus de kommande 12 månaderna&quot;
-* en inställning för hur meddelanden ska meddelas, till exempel: &quot;Få nya låtmeddelanden via e-post&quot;
+* ett nyhetsbrev, till exempel:&quot;Serie som körs&quot;
+* en händelse, till exempel:&quot;Summit 2021&quot;
+* ett webbinarium, till exempel:&quot;Läs mer om krypto&quot;
+* en ränta på en viss produkt/sport/tjänst/osv., t.ex.:&quot;Intresserad att köpa ett hus under de kommande 12 månaderna&quot;
+* en inställning för hur du ska meddelas, till exempel:&quot;Få nya låtmeddelanden via e-post&quot;
 
 Profilerna kan läggas till i en prenumerationslista via en [landningssida](create-lp.md). Ett exempel presenteras i [det här avsnittet](lp-use-cases.md#subscription-to-a-service).
 
@@ -42,7 +42,7 @@ Profilerna kan läggas till i en prenumerationslista via en [landningssida](crea
 
 Följ stegen nedan för att skapa en prenumerationslista.
 
-1. Välj **[!UICONTROL Customer]** > **[!UICONTROL Subscription list]**.
+1. Om du vill öppna prenumerationslistorna väljer du **[!UICONTROL Customer]** > **[!UICONTROL Subscription list]**.
 
    ![](assets/lp_subscription-lists.png)
 
@@ -58,13 +58,15 @@ Följ stegen nedan för att skapa en prenumerationslista.
    >
    >För närvarande kan du inte använda avstånd eller ange ett namn som redan finns för en annan prenumerationslista i **[!UICONTROL Title]** fält.
 
+1. Markera eller skapa Adobe Experience Platform-taggar från **[!UICONTROL Tags]** fält för att kategorisera landningssidan för förbättrad sökning. [Läs mer](../start/search-filter-categorize.md#tags)
+
 1. Du kan definiera ett startdatum och ett slutdatum.
 
    ![](assets/lp_subscription-list-dates.png)
 
 1. Klicka på **[!UICONTROL Save]**.
 
-I listan visas alla prenumerationslistor som skapats. Du kan filtrera dem baserat på skapandedatum eller ändringsdatum och deras status.
+I listan visas alla prenumerationslistor som skapats. Du kan filtrera dem baserat på datum när de skapades eller ändrades och deras status.
 
 ![](assets/lp_subscription-filters.png)
 
@@ -72,7 +74,7 @@ Möjliga statusvärden är följande:
 
 * **[!UICONTROL Not started]**: Du definierade ett startdatum som är senare än den aktuella dagen. De prenumererade profilerna kommer ännu inte att få någon information om den här prenumerationslistan.
 * **[!UICONTROL Live]**: Den aktuella dagen ligger mellan prenumerationslistans startdatum och slutdatum, eller så har du inte definierat slut-/startdatum, vilket innebär att prenumerationslistan alltid är aktiv.
-* **[!UICONTROL Expired]**: Slutdatumet har passerats och prenumerationslistan är därför inte längre giltig. Prenumerationsprofiler får inte mer information om prenumerationslistan.
+* **[!UICONTROL Expired]**: Slutdatumet har passerats, vilket innebär att prenumerationslistan inte längre är giltig. Prenumerationsprofiler får inte mer information om den här prenumerationslistan.
 
 När prenumerationslistan har skapats kan du använda den på en landningssida. De profiler som anmäler sig via landningssidans formulär läggs till i listan. [Läs mer](design-lp.md)
 

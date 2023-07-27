@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: aktivitet, resa, läsning, målgrupp, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1349'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 3%
 
 Använd **Läs målgrupp** aktivitet för att få alla enskilda personer i en målgrupp att komma in på resan. Inträde i en resa kan genomföras antingen en gång eller regelbundet.
 
-Låt oss ta målgruppen&quot;Luma app opening and checkout&quot; som skapats i [Bygg målgrupper](../audience/about-audiences.md) användningsfall. Med aktiviteten Läs målgrupp kan ni få alla personer som tillhör den här målgruppen att resa in på en resa och få dem att flöda in i personaliserade resor som utnyttjar alla resefunktioner: villkor, timers, events, actions.
+Låt oss som exempel ta målgruppen&quot;Luma app opening and checkout&quot; som skapats i [Bygg målgrupper](../audience/about-audiences.md) användningsfall. Med aktiviteten Läs målgrupp kan ni få alla personer som tillhör den här målgruppen att resa in på en resa och få dem att flöda in i personaliserade resor som kan utnyttja alla resefunktioner: villkor, tidtagare, händelser och aktiviteter.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Så här konfigurerar du aktiviteten Läs målgrupp:
 
 1. Lägg till en **[!UICONTROL Label]** till aktiviteten (valfritt).
 
-1. I **[!UICONTROL Audience]** väljer du den Adobe Experience Platform-målgrupp som ska delta i resan och klickar sedan på **[!UICONTROL Save]**.
+1. I **[!UICONTROL Audience]** väljer du den Adobe Experience Platform-målgrupp som ska delta i resan och klickar sedan **[!UICONTROL Save]**.
 
    Observera att du kan anpassa kolumnerna som visas i listan och sortera dem.
 
@@ -65,17 +65,17 @@ Så här konfigurerar du aktiviteten Läs målgrupp:
 
    >[!NOTE]
    >
-   >Individer som tillhör en målgrupp som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kan inte ta sig in på resan. Du kan bara välja ett personbaserat ID-namnutrymme. Om du har definierat ett namnutrymme för en uppslagstabell (till exempel: ProductID-namnområde för en produktsökning), är det inte tillgängligt i **Namnutrymme** listruta.
+   >Individer som tillhör en målgrupp som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kan inte ta sig in på resan. Du kan bara välja ett personbaserat ID-namnutrymme. Om du har definierat ett namnutrymme för en uppslagstabell (till exempel: ProductID-namnutrymme för en produktsökning), är det inte tillgängligt i **Namnutrymme** listruta.
 
-1. Ange **[!UICONTROL Throttling rate]** till genomströmningsgränsen för läsmålgruppsaktiviteten.
+1. Ange **[!UICONTROL Throttling rate]**. Det här är det maximala antalet profiler som kan ange läsmålgruppen per sekund. Den här tariffen gäller endast den här aktiviteten. Den gäller inte andra aktiviteter under resan. Om du till exempel vill definiera en begränsningsfrekvens för anpassade åtgärder måste du använda begränsnings-API:t. Se detta [page](../configuration/throttling.md).
 
-   Det här värdet lagras i transportversionens nyttolast. Standardvärdet är 5 000 meddelanden per sekund. Du kan ändra det här värdet från 500 till 20 000 meddelanden per sekund.
+   Det här värdet lagras i transportversionens nyttolast. Standardvärdet är 5 000 profiler per sekund. Du kan ändra det här värdet från 500 till 20 000 profiler per sekund.
 
    >[!NOTE]
    >
-   >Den totala begränsningsfrekvensen per sandlåda är inställd på 20 000 meddelanden per sekund. Begränsningsfrekvensen för alla läsmålgrupper som körs samtidigt i samma sandlåda uppgår därför till högst 20 000 meddelanden per sekund. Du kan inte ändra denna ände.
+   >Den totala begränsningsfrekvensen per sandlåda är inställd på 20 000 profiler per sekund. Begränsningsfrekvensen för alla läsmålgrupper som körs samtidigt i samma sandlåda uppgår därför till högst 20 000 profiler per sekund. Du kan inte ändra denna ände.
 
-1. The **[!UICONTROL Read Audience]** Med hjälp av -aktiviteten kan du ange vid vilken tidpunkt målgruppen ska gå in på resan. Om du vill göra det klickar du på **[!UICONTROL Edit journey schedule]** länk för att komma åt resans egenskaper och konfigurera sedan **[!UICONTROL Scheduler type]** fält.
+1. The **[!UICONTROL Read Audience]** gör att du kan ange när målgruppen ska gå in på resan. Klicka på **[!UICONTROL Edit journey schedule]** länk för att komma åt resans egenskaper och konfigurera sedan **[!UICONTROL Scheduler type]** fält.
 
    ![](assets/read-segment-schedule.png)
 
@@ -89,7 +89,7 @@ Så här konfigurerar du aktiviteten Läs målgrupp:
 
    **Inkrementell läsning** alternativ: när en resa med återkommande **Läsa målgrupper** körs för första gången så att alla profiler i målgruppen kommer in på resan. Med det här alternativet kan ni efter den första förekomsten endast inrikta er på de personer som har gått in i målgruppen sedan den senaste körningen av resan.
 
-   **Tvinga återinträde vid upprepning**: Med det här alternativet kan du göra så att alla profiler fortfarande finns kvar på resan automatiskt avslutar den vid nästa körning. Om du till exempel har två dagar på dig att vänta på en daglig återkommande resa, genom att aktivera det här alternativet, kommer profiler alltid att flyttas på nästa körning (så dagen efter), oavsett om de är i nästa körda målgrupp eller inte. Om livscykeln för dina profiler under den här resan kan vara längre än frekvensen för återkommande aktiviteter ska du inte aktivera det här alternativet för att säkerställa att profilerna kan slutföra sin resa.
+   **Tvinga återinträde vid upprepning**: det här alternativet gör att du kan göra så att alla profiler fortfarande finns kvar i resan automatiskt avslutar den vid nästa körning. Om du till exempel har två dagar på dig att vänta på en daglig återkommande resa, genom att aktivera det här alternativet, kommer profiler alltid att flyttas på nästa körning (så dagen efter), oavsett om de är i nästa körda målgrupp eller inte. Om livscykeln för dina profiler under den här resan kan vara längre än frekvensen för återkommande aktiviteter ska du inte aktivera det här alternativet för att säkerställa att profilerna kan slutföra sin resa.
 
 <!--
 
@@ -122,13 +122,13 @@ Aktivera testläget och välj sedan önskat alternativ i den vänstra rutan.
 
 ![](assets/read-segment-test-mode.png)
 
-Sedan kan du konfigurera och köra testläget som vanligt. [Lär dig hur du testar en resa](testing-the-journey.md).
+Sedan kan du konfigurera och köra testläget som vanligt. [Lär dig testa en resa](testing-the-journey.md).
 
 När testet är klart **[!UICONTROL Show logs]** kan du se testresultaten enligt det valda testalternativet:
 
-* **[!UICONTROL Single profile at a time]**: testloggarna visar samma information som när det enhetstestläget används. Mer information om detta finns i [det här avsnittet](testing-the-journey.md#viewing_logs)
+* **[!UICONTROL Single profile at a time]**: testloggarna visar samma information som i det enhetliga testläget. Mer information om detta finns i [det här avsnittet](testing-the-journey.md#viewing_logs)
 
-* **[!UICONTROL Up to 100 profiles at once]**: Med testloggarna kan ni följa utvecklingen av målgruppsexporten från Adobe Experience Platform samt den individuella utvecklingen för alla personer som passerat resan.
+* **[!UICONTROL Up to 100 profiles at once]**: testloggarna gör det möjligt att följa utvecklingen av målgruppsexporten från Adobe Experience Platform samt den individuella utvecklingen för alla personer som passerat resan.
 
   Observera att det inte går att följa förloppet för de personer som befinner sig på resan med hjälp av det visuella flödet om du testar resan med upp till 100 profiler samtidigt.
 
@@ -155,10 +155,10 @@ Du kan använda villkor för att utföra segmentering med **Villkor** aktivitet.
 Segmenteringen kan baseras på:
 
 * datakälldata
-* kontexten för händelser som ingår i resedata, t.ex. klickade någon på meddelandet som togs emot för en timme sedan?
-* ett datum, till exempel: Är vi i juni när en person går igenom resan?
+* kontexten för händelser som ingår i resedata, till exempel: klickade en person på meddelandet som togs emot för en timme sedan?
+* Ett datum, till exempel: Är vi i juni när en person går genom resan?
 * en tid, till exempel: är det morgon i personens tidszon?
-* en algoritm som delar den målgrupp som flödar i resan baserat på en procentandel, till exempel: 90 % - 10 % för att exkludera en kontrollgrupp
+* en algoritm som delar den målgrupp som flödar i resan baserat på en procentandel, till exempel: 90 % - 10 % för att utesluta en kontrollgrupp
 
 ![](assets/read-segment-audience1.png)
 

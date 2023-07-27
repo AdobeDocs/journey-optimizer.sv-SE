@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6cb4f8ab-77ad-44a2-b2bf-a97f87b8f1db
-source-git-commit: d62d364571ad9528d2be50469663c6fa5ab01291
+source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '851'
 ht-degree: 2%
 
 ---
@@ -23,12 +23,17 @@ För att kunna komma åt och skriva webbsidor i [!DNL Journey Optimizer] följer
 
 * För att webbupplevelsen ska fungera på rätt sätt måste du definiera Adobe Experience Platform-inställningarna [här](#delivery-prerequisites).
 
-## Varningar
+## Observera varningar {#caution-notes-web}
 
-Ingår [!DNL Journey Optimizer] kan du bara skapa webbupplevelser med **kampanjer**. [Läs mer](../campaigns/create-campaign.md#configure)
+* Ingår [!DNL Journey Optimizer] kan du bara skapa webbupplevelser i **kampanjer**. [Läs mer](../campaigns/create-campaign.md#configure)
+
+* [!DNL Journey Optimizer] webbkampanjer riktar sig till nya profiler som inte har varit engagerade tidigare i andra kanaler. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids. Licensvärden för varje paket visas på sidan [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html) sida.
 
 
-[!DNL Journey Optimizer] webbkampanjer riktar sig till nya profiler som inte har varit engagerade tidigare i andra kanaler. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids. Licensvärden för varje paket visas på sidan [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html) sida.
+>[!AVAILABILITY]
+>
+>För närvarande är webbkanalen inte tillgänglig för organisationer som har köpt tillägget Adobe Healthcare Shield.
+>
 
 ## Krav för implementering {#implementation-prerequisites}
 
@@ -62,7 +67,7 @@ Följ stegen nedan om du vill hämta och installera tillägget för hjälpen fö
 
 1. Gå till [Google Chrome Web Store](https://chrome.google.com/webstore/category/extensions){target="_blank"}.
 
-1. Om du använder Microsoft Edge väljer du **[!UICONTROL Allow extensions from other stores]** på den översta banderollen. Då kan du lägga till tillägg från Chrome Web Store till Microsoft Edge.
+1. Om du använder Microsoft Edge väljer du **[!UICONTROL Allow extensions from other stores]** på den översta banderollen. På så sätt kan du lägga till tillägg från Chrome Web Store till Microsoft Edge.
 
 1. Sök och navigera till [Adobe Experience Cloud Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca){target="_blank"} webbläsartillägg.
 
@@ -70,7 +75,7 @@ Följ stegen nedan om du vill hämta och installera tillägget för hjälpen fö
 
    >[!NOTE]
    >
-   >Om du använder Microsoft Edge läggs tillägget till i Edge även om knappen är märkt **[!UICONTROL Add to Chrome]**.
+   >Om du använder Microsoft Edge läggs tillägget till i Edge även om knappen har en etikett **[!UICONTROL Add to Chrome]**.
 
 1. Kontrollera att webbläsartillägget Visuell redigeringshjälp är korrekt aktiverat i webbläsarens verktygsfält.
 
@@ -82,7 +87,7 @@ Följ stegen nedan om du vill hämta och installera tillägget för hjälpen fö
 
 1. Open the [!DNL Journey Optimizer] web designer to start authoring your web experience. [Learn more](author-web.md)-->
 
-Adobe Experience Cloud Visual Editing Helper aktiveras nu automatiskt när en webbplats öppnas i [!DNL Journey Optimizer] webbdesigner för att skapa.
+Adobe Experience Cloud Visual Editing Helper aktiveras nu automatiskt när en webbplats öppnas i [!DNL Journey Optimizer] webbdesigner för att underlätta framtagningen.
 
 Tillägget har inga villkorsinställningar och hanterar automatiskt alla inställningar, inklusive cookies för SameSite.
 
@@ -93,7 +98,6 @@ Tillägget har inga villkorsinställningar och hanterar automatiskt alla instäl
 > * Webbplatsen har strikta säkerhetsprinciper.
 > * Webbplatsen ligger i en iframe.
 > * Kundens QA- eller stage-sajt är inte tillgänglig för omvärlden (webbplatsen är intern).
-
 
 ### Felsök webbplatsen som inte läses in {#troubleshooting}
 
@@ -113,15 +117,15 @@ För att webbupplevelsen ska kunna levereras på rätt sätt måste följande in
 
 * I [Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html){target="_blank"}kontrollerar du att du har en datastream definierad, till exempel under **[!UICONTROL Adobe Experience Platform]** den tjänst du har **[!UICONTROL Adobe Journey Optimizer]** aktiverat alternativ.
 
-   Detta säkerställer att Journey Optimizer inkommande händelser hanteras korrekt av Adobe Experience Platform Edge. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html){target="_blank"}
+  Detta säkerställer att Journey Optimizer inkommande händelser hanteras korrekt av Adobe Experience Platform Edge. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html){target="_blank"}
 
-   ![](assets/web-aep-datastream-ajo.png)
+  ![](assets/web-aep-datastream-ajo.png)
 
 * I [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}, make sure you have one merge policy with the **[!UICONTROL Active-On-Edge Merge Policy]** option enabled. To do this, select a policy under the **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** > **[!UICONTROL Merge Policies]** Experience Platform menu. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html#configure){target="_blank"}
 
-   Den här sammanfogningsprincipen används av [!DNL Journey Optimizer] inkommande kanaler för att korrekt aktivera och publicera inkommande kampanjer. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html){target="_blank"}
+  Den här sammanfogningsprincipen används av [!DNL Journey Optimizer] inkommande kanaler för att korrekt aktivera och publicera inkommande kampanjer. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html){target="_blank"}
 
-   ![](assets/web-aep-merge-policy.png)
+  ![](assets/web-aep-merge-policy.png)
 
 ## Varumärkesdomäner för resurser {#branded-domains-for-assets}
 

@@ -8,14 +8,14 @@ role: User, Developer
 level: Experienced
 keywords: resa, datakällor, begränsning, genomströmning, anpassade åtgärder
 exl-id: 45d6bb82-88ea-4510-a023-a75a82cc6f7b
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
 
-# Användningsfall: begränsa dataflödet med externa datakällor och anpassade åtgärder{#limit-throughput}
+# Användningsfall: begränsa dataflöde med externa datakällor och anpassade åtgärder{#limit-throughput}
 
 ## Beskrivning av användningsfallet
 
@@ -25,9 +25,9 @@ Detta kan göras med:
 
 * **Datakällor**: för att samla in information från externa system och använda den i kundresans sammanhang, t.ex. för att få väderinformation om profilstaden och få ett dedikerat reseflöde baserat på detta.
 
-* **Anpassade åtgärder**: att skicka information till externa system, t.ex. för att skicka e-post via en extern lösning med Journey Optimizer orkestreringsfunktioner tillsammans med profilinformation, målgruppsdata och resekontext.
+* **Anpassade åtgärder**: för att skicka information till externa system, t.ex. för att skicka e-post via en extern lösning med Journey Optimizer orkestreringsfunktioner tillsammans med profilinformation, målgruppsdata och resekontext.
 
-Om du arbetar med externa datakällor eller anpassade åtgärder kanske du vill skydda dina externa system genom att begränsa resans genomströmning: upp till 5000 instanser/sekund för enstaka resor och upp till 20000 instanser/sekund för målgruppsinsatser.
+Om du arbetar med externa datakällor eller anpassade åtgärder kanske du vill skydda dina externa system genom att begränsa resans genomströmning: upp till 5 000 instanser/sekund för enastående resor och upp till 2 000 instanser/sekund för målgruppsinlösta.
 
 För anpassade åtgärder finns begränsningsfunktioner på produktnivå. Se detta [page](../configuration/external-systems.md#capping).
 
@@ -37,7 +37,11 @@ Mer information om hur du integrerar med externa system finns i [page](../config
 
 ## Implementering
 
-För **målgruppsutlösta resor** kan du definiera begränsningsgraden för din Läs publikation-aktivitet som påverkar resans genomströmning.  [Läs mer](../building-journeys/read-audience.md)
+För **målgruppsutlösta resor** kan du definiera begränsningsgraden för din Läs publikation-aktivitet som påverkar resans genomströmning. [Läs mer](../building-journeys/read-audience.md)
+
+>[!NOTE]
+>
+> Det här är det maximala antalet profiler som kan ange läsmålgruppen per sekund. Denna taxa gäller endast denna verksamhet och inte andra aktiviteter under resan. [Läs mer](../building-journeys/read-audience.md)
 
 ![](assets/limit-throughput-1.png)
 
