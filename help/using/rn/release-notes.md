@@ -4,7 +4,7 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
+source-git-commit: 2b6ba46ed7036915aff1abf3c5f54781edd9c780
 workflow-type: tm+mt
 source-wordcount: '3078'
 ht-degree: 8%
@@ -72,7 +72,7 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 <tr>
 <td>
 <p>Nu kan du importera och konvertera valfritt HTML-innehåll i Journey Optimizer e-postredigerare. Innehållsblocken identifieras automatiskt och är tillgängliga i e-postdesignern: använd de kraftfulla designfunktionerna för att uppdatera och anpassa dem!</p>
-<img src="../email/assets/html-imported_2.png">
+<img src="assets/html-convert.png">
 <!--p>For more information, refer to the <a href="../audience/get-started-audience-orchestration.md">detailed documentation</a>.</p-->
 </td>
 </tr>
