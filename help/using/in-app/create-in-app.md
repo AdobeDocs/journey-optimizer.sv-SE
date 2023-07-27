@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: b3b79fe2-7db3-490d-9c3d-87267aa55eea
-source-git-commit: 7de25a5e82837190ada3e67f3b202a4934c9b793
+source-git-commit: ed08b21f10246ef548d991807aa31d13ad8cbccc
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '684'
 ht-degree: 2%
 
 ---
@@ -153,14 +153,14 @@ For more information on how to configure a journey, refer to [this page](../buil
 
 ## Instruktionsvideor{#video}
 
+* I videon nedan visas hur du skapar, konfigurerar och publicerar meddelanden i appen i dina kampanjer.
+
+  >[!VIDEO](https://video.tv.adobe.com/v/3410430?quality=12&learn=on)
+
+
 * I videon nedan visas hur du konfigurerar och analyserar innehållsexperiment i A/B-testmeddelanden i appen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3410430?quality=12&learn=on)
-
-* I videon nedan visas hur du konfigurerar och analyserar innehållsexperiment i A/B-testmeddelanden i appen.
-
-
->[!VIDEO](https://video.tv.adobe.com/v/3419898)
+  >[!VIDEO](https://video.tv.adobe.com/v/3419898)
 
 
 
