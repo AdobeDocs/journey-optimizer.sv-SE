@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: direktreklam, meddelande, kampanj
-source-git-commit: a445e418dc11f577c609c16894ce119359f2a261
+source-git-commit: d8ae894cc303237f5b2257afd8da5b2d0cf1b7a6
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '165'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,4 @@ De viktigaste stegen för att skicka direktutskick är följande:
 
 Direktutskick kan bara skapas i samband med schemalagda kampanjer. De är inte tillgängliga för användning i API-utlösta kampanjer eller under resor.
 
->[!IMPORTANT]
->
->Kontrollera att du har konfigurerat innan du skickar ett direktmeddelande:
->
->1. A [konfiguration för filroutning](../direct-mail/direct-mail-configuration.md#file-routing-configuration) som anger den server där extraheringsfilen ska överföras och lagras,
->1. A [meddelandeyta för direktreklam](../direct-mail/direct-mail-configuration.md#direct-mail-surface) som refererar till filroutningskonfigurationen.
+

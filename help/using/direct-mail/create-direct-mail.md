@@ -7,10 +7,10 @@ role: User
 level: Beginner
 keywords: direktreklam, meddelande, kampanj
 exl-id: 6b438268-d983-4ab8-9276-c4b7de74e6bd
-source-git-commit: 25e1680c54fc1cebada7c4e8e5e4d84061248528
+source-git-commit: d8ae894cc303237f5b2257afd8da5b2d0cf1b7a6
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 5%
+source-wordcount: '523'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,19 @@ ht-degree: 5%
 >title="Skapa direktreklam"
 >abstract="Skapa direktreklam i schemalagda kampanjer och utforma de extraheringsfiler som direktreklamleverantörer behöver för att skicka e-post till era kunder."
 
+Skapa en schemalagd kampanj och konfigurera extraheringsfilen om du vill skapa direktutskick. Den här filen krävs av direktreklamleverantörer för att skicka e-post till dina kunder.
+
+>[!IMPORTANT]
+>
+>Kontrollera att du har konfigurerat innan du skapar ett direktmeddelandemeddelande:
+>
+>1. A [konfiguration för filroutning](../direct-mail/direct-mail-configuration.md#file-routing-configuration) som anger den server där extraheringsfilen ska överföras och lagras,
+>1. A [meddelandeyta för direktreklam](../direct-mail/direct-mail-configuration.md#direct-mail-surface) som refererar till filroutningskonfigurationen.
+
+
 ## Skapa en kampanj för direktreklam{#create-dm-campaign}
+
+Så här skapar du en direktreklamkampanj:
 
 1. Skapa en ny schemalagd kampanj och välj **[!UICONTROL Direct mail]** som åtgärden.
 
@@ -46,6 +58,8 @@ ht-degree: 5%
 Nu kan du börja konfigurera extraheringsfilen som ska skickas till din direktmeddelandeleverantör.
 
 ## Konfigurera extraheringsfilen {#extraction-file}
+
+Extraheringsfilen krävs av direktreklamleverantörer för att skicka e-post till dina kunder. Så här definierar du extraheringsfilens konfiguration:
 
 1. På skärmen för kampanjkonfiguration klickar du på **[!UICONTROL Edit content]** för att konfigurera extraheringsfilens innehåll.
 
