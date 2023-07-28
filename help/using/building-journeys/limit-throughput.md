@@ -8,9 +8,9 @@ role: User, Developer
 level: Experienced
 keywords: resa, datakällor, begränsning, genomströmning, anpassade åtgärder
 exl-id: 45d6bb82-88ea-4510-a023-a75a82cc6f7b
-source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
+source-git-commit: d9e6c07d8ccd3b836616c7b9813731ff7b26e7ce
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ För **målgruppsutlösta resor** kan du definiera begränsningsgraden för din 
 
 >[!NOTE]
 >
-> Det här är det maximala antalet profiler som kan ange läsmålgruppen per sekund. Denna taxa gäller endast denna verksamhet och inte andra aktiviteter under resan. [Läs mer](../building-journeys/read-audience.md)
+> Det här är det maximala antalet profiler som kan komma in på resan per sekund. Denna avgift gäller endast denna aktivitet och inga andra delar av resan. [Läs mer](../building-journeys/read-audience.md)
 
 ![](assets/limit-throughput-1.png)
 
