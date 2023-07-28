@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: bef5bc9f86d1e11e6b1ed5853fc0b57a6e47d4ac
+source-git-commit: 598a5d5ef77d7c1fe5a8487abdb54c8cfb96a2bb
 workflow-type: tm+mt
-source-wordcount: '1388'
-ht-degree: 33%
+source-wordcount: '1399'
+ht-degree: 32%
 
 ---
 
@@ -228,7 +228,9 @@ ht-degree: 33%
    + [Konfigurera SMS-kanal](using/sms/sms-configuration.md)
    + [Konfigurera SMS-underdomäner](using/sms/sms-subdomains.md)
 + Direktutskick {#direct-mail}
+   + [Kom igång med direktreklam](using/direct-mail/get-started-direct-mail.md)
    + [Skapa direktreklam](using/direct-mail/create-direct-mail.md)
+   + [Testa och skicka ett direktmejl](using/direct-mail/test-send-direct-mail.md)
    + [Konfigurera direktreklam](using/direct-mail/direct-mail-configuration.md)
 + Webbkanal{#web}
    + [Kom igång med webbkanalen](using/web/get-started-web.md)
@@ -252,7 +254,7 @@ ht-degree: 33%
 + Personalisering och dynamiskt innehåll {#personalized-dynamic-content}
    + Personalisering {#personalization}
       + [Kom igång med personalisering](using/personalization/personalize.md)
-      + [Anpassningssammanhang](using/personalization/personalization-contexts.md)
+      + [Personaliseringskontexter](using/personalization/personalization-contexts.md)
       + Bygga uttryck {#build-expressions}
          + [Anpassningssyntax](using/personalization/personalization-syntax.md)
          + Arbeta med uttrycksredigeraren {#expression-editor}
@@ -416,7 +418,7 @@ ht-degree: 33%
          + [Uppdatera ett beslut](using/offers/api-reference/activities-api/activities/update.md)
          + [Ta bort ett beslut](using/offers/api-reference/activities-api/activities/delete.md)
       + Leverera erbjudanden med API:er {#offer-delivery-api}
-         + [Kom igång med API:er för erbjudanden](using/offers/api-reference/offer-delivery-api/start-offer-delivery-apis.md)
+         + [Kom igång med erbjudandeleverans-API:er](using/offers/api-reference/offer-delivery-api/start-offer-delivery-apis.md)
          + [Besluts-API](using/offers/api-reference/offer-delivery-api/decisioning-api.md)
          + [API för Edge Decisioning](using/offers/api-reference/offer-delivery-api/edge-decisioning-api.md)
          + [API för gruppbeslut](using/offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
@@ -430,7 +432,7 @@ ht-degree: 33%
       + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Frågor](using/data/get-started-queries.md)
 + Konfiguration{#configuration}
-   + [Kom igång med Journey Optimizer](using/configuration/get-started-configuration.md)
+   + [Kom igång med Journey Optimizer-konfiguration](using/configuration/get-started-configuration.md)
    + Delegera e-postunderdomäner {#delegate-subdomains}
       + [Kom igång med delegering till underdomäner](using/configuration/about-subdomain-delegation.md)
       + [Delegera en underdomän](using/configuration/delegate-subdomain.md)

@@ -6,33 +6,21 @@ topic: Content Management
 role: User
 level: Beginner
 keyword: direct, mail, configuration, direct-mail, provider
-hide: true
-hidefromtoc: true
 exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
-badge: label="Beta" type="Informative"
-source-git-commit: fd6b2d2097f20f6f75e9f3d8af4a61128d8d56fe
+source-git-commit: 246205d13c1dd30b4f4769780f69e5acdd388e66
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '849'
 ht-degree: 0%
 
 ---
 
 # Konfiguration av direktreklam {#direct-mail-configuration}
 
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här dokumentationen:
-
-* [Skapa direktreklam](create-direct-mail.md)
-* **[Konfigurera direktreklam](direct-mail-configuration.md)**
-
->[!ENDSHADEBOX]
-
 [!DNL Journey Optimizer] gör att du kan anpassa och generera de filer som direktreklamleverantörer behöver för att skicka e-post till dina kunder.
 
 När [skapa ett direktpostmeddelande](../direct-mail/create-direct-mail.md)definierar du målgruppsdata, inklusive vald kontaktinformation (t.ex. postadress). En fil som innehåller dessa data genereras och exporteras sedan automatiskt till en server, där din direktmeddelandeleverantör kan hämta den och ta hand om själva sändningen.
 
-Innan du kan generera den här filen måste du skapa:
+Innan du kan generera filen måste du skapa:
 
 1. A [konfiguration för filroutning](#file-routing-configuration) för att ange på vilken server filen ska exporteras.
 
@@ -47,7 +35,7 @@ Innan du kan generera den här filen måste du skapa:
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_details"
 >title="Definiera filroutningskonfigurationen"
->abstract="När du har skapat ett direktutskick kommer filen som innehåller målgruppsdata att genereras och exporteras till en server. Du måste ange serverinformationen så att din direktreklamleverantör kan komma åt och använda filen för att leverera direktreklam."
+>abstract="När du har skapat ett direktutskick skapas och exporteras filen som innehåller målgruppsdata till en server. Du måste ange serverinformationen så att din direktreklamleverantör kan komma åt och använda den filen för att leverera direktreklam."
 
 <!--
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/direct-mail/create-direct-mail.html" text="Create a direct mail message"-->
@@ -72,7 +60,7 @@ Innan du kan generera den här filen måste du skapa:
 >title="Välj AWS"
 >abstract="Markera det geografiska område på AWS-servern där du vill exportera dina direktmeddelandefiler. Som allmän praxis är det att föredra att välja den närmaste regionen till den plats där direktreklamleverantören finns."
 
-För att leverera ett direktmejl [!DNL Journey Optimizer] genererar och exporterar filen som innehåller målgruppsdata till en server.
+Om du vill leverera ett direktmejl [!DNL Journey Optimizer] genererar och exporterar filen som innehåller målgruppsdata till en server.
 
 Du måste ange den serverinformationen så att din e-postleverantör kan komma åt och använda filen för att leverera e-post.
 
@@ -80,13 +68,13 @@ Följ stegen nedan för att konfigurera filflödet.
 
 1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL File routing configuration]** > **[!UICONTROL File Routing]** menyn och klicka sedan på **[!UICONTROL Create routing configuration]**.
 
-   ![](assets/file-routing-config-button.png)
+   ![](assets/file-routing-config-button.png){width="800" align="center"}
 
 1. Ange ett namn för konfigurationen.
 
 1. Välj **[!UICONTROL Server type]** som du vill använda för att exportera direktmeddelandefiler.
 
-   ![](assets/file-routing-config-type.png)
+   ![](assets/file-routing-config-type.png){width="800" align="center"}
 
    >[!NOTE]
    >
@@ -98,7 +86,7 @@ Följ stegen nedan för att konfigurera filflödet.
 
 1. Om du valde **[!UICONTROL Amazon S3]** väljer du **[!UICONTROL AWS region]** var serverinfrastrukturen ska placeras.
 
-   ![](assets/file-routing-config-aws-region.png)
+   ![](assets/file-routing-config-aws-region.png){width="800" align="center"}
 
    >[!NOTE]
    >
@@ -131,33 +119,33 @@ Följ stegen nedan för att konfigurera filflödet.
 
 För direktreklam med [!DNL Journey Optimizer]måste du skapa en kanal för att definiera formateringsinställningarna för filen som ska användas av e-postleverantören.
 
-En direktreklamyta måste också innehålla den filroutningskonfiguration som definierar den server där direktpostfilen ska exporteras.
+En direktreklamyta måste även innehålla den filroutningskonfiguration som definierar den server där direktpostfilen ska exporteras.
 
 1. Skapa en kanalyta. [Läs mer](../configuration/channel-surfaces.md)
 
 1. Välj **[!UICONTROL Direct mail]** kanal.
 
-   ![](assets/surface-direct-mail-channel.png)
+   ![](assets/surface-direct-mail-channel.png){width="800" align="center"}
 
 1. Definiera inställningarna för direktreklam i det dedikerade avsnittet i kanalytans konfiguration.
 
-   ![](assets/surface-direct-mail-settings.png)
+   ![](assets/surface-direct-mail-settings.png){width="800" align="center"}
 
    <!--![](assets/surface-direct-mail-settings-with-insertion.png)-->
 
 1. Välj filformat: **[!UICONTROL CSV]** eller **[!UICONTROL Text delimited]**.
 
-1. Om du väljer **[!UICONTROL Text delimited]** definierar du den kolumnavgränsare du vill använda: tabulering, semikolon, rör eller et-tecken.
+1. Om du väljer **[!UICONTROL Text delimited]** definierar du den kolumnavgränsare du vill använda: tabulering, semikolon, vertikalstreck eller et-tecken.
 
    ![](assets/surface-direct-mail-column-separator.png)
 
-1. Välj **[!UICONTROL File routing configuration]** bland de som du skapade. Detta anger var filen exporteras så att din direktmeddelandeleverantör kan använda den.
+1. Välj **[!UICONTROL File routing configuration]** bland de som du har skapat. Detta anger var filen exporteras så att din direktmeddelandeleverantör kan använda den.
 
    >[!CAUTION]
    >
    >Om du inte har konfigurerat något alternativ för filroutning kan du inte skapa en direktreklamyta. [Läs mer](#file-routing-configuration)
 
-   ![](assets/surface-direct-mail-file-routing.png)
+   ![](assets/surface-direct-mail-file-routing.png){width="800" align="center"}
 
    <!--![](assets/surface-direct-mail-file-routing-with-insertion.png)-->
 
