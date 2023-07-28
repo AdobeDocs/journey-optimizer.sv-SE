@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 925494b6-e08a-4bd3-8a2f-96a5d9cbc387
-source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
+source-git-commit: 96d90ff8c4ef29328810b3146d1e9a2aa3c25f2a
 workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 1%
@@ -207,6 +207,8 @@ The **[!UICONTROL Clicks by element]** tabellen innehåller huvudinformationen o
 ## Fliken Direktreklam {#direct-mail-tab}
 
 Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Direct mail]** -fliken anger huvudinformationen i förhållande till dina Direct-postleveranser.
+
+![](assets/direct-mail-report_2.png)
 
 +++Läs mer om de olika mätvärden och widgetar som finns för rapporten Direct mail.
 
