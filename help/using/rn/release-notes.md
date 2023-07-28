@@ -4,7 +4,7 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 446fa1ab7d8f897aa1b6997b9cc664100e30e5a2
+source-git-commit: a445e418dc11f577c609c16894ce119359f2a261
 workflow-type: tm+mt
 source-wordcount: '3192'
 ht-degree: 8%
@@ -57,7 +57,7 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 <p>När du förbereder en direktutskick skapar Journey Optimizer en fil med alla målprofiler och vald kontaktinformation (till exempel postadress). Du kan sedan skicka den här filen till din leverantör för direktmeddelanden som i sin tur tar hand om själva utskicket.</p>
 <p>För närvarande är Direct mail channel inte tillgängligt för organisationer som har köpt tillägget Adobe Healthcare Shield.</p>
 <img src="assets/do-not-localize/gif-dm.gif"/>
-<p>Mer information finns i den <a href="../direct-mail/create-direct-mail.md">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="../direct-mail/get-started-direct-mail.md">detaljerade dokumentationen</a>.</p>
 </tr>
 </tbody>
 </table>
