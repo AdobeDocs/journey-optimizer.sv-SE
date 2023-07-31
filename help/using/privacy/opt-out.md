@@ -2,13 +2,13 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Hantera avanmälan
-description: Lär dig hur du hanterar avanmälan och sekretess
+description: Lär dig hantera avanmälan och sekretess
 feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
 exl-id: c5bae757-a109-45f8-bf8d-182044a73cca
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 65ebc3f711b92e665aedc1d41d4310ed155a8dfe
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Lär dig hur du hanterar avanmälan i Journey Optimizer e-post och SMS-meddeland
 
 Era kunder kan också välja bort att presenteras som personaliserat innehåll. När en profil har valt bort personalisering måste ni se till att deras data inte används för personalisering och ni måste ersätta allt personaliserat innehåll med en reservvariant.
 
-### Beslutsförvaltning
+### Beslutsförvaltning {#opt-out-decision-management}
 
 När du utnyttjar erbjudanden implementeras inte personaliseringsinställningar automatiskt i [beslutsomfattningar](../offers/offer-activities/create-offer-activities.md#add-decision-scopes) används från en [beslut](../offers/api-reference/offer-delivery-api/decisioning-api.md) API-begäran eller [kantavkänning](../offers/api-reference/offer-delivery-api/edge-decisioning-api.md) API-begäran. I det här fallet måste du manuellt framtvinga godkännande av personalisering. För att göra detta, följ nedanstående steg.
 
@@ -93,9 +93,7 @@ Om en användare har:
 >
 >Medgivande för att profildata används i [datamodellering](../offers/ranking/ai-models.md) stöds inte ännu [!DNL Journey Optimizer].
 
-## I uttrycksredigeraren
-
-<!--Expressions Editor while personalizing images, text, subject line  ( Segment in Campaigns) - UI and Headless -->
+## I uttrycksredigeraren {#opt-out-expression-editor}
 
 The [Uttrycksredigerare](../personalization/personalization-build-expressions.md) inte utför någon kontroll eller verkställighet av samtycke eftersom den inte deltar i meddelandeleveransen.
 
@@ -105,12 +103,11 @@ Men användningen av högerbaserade åtkomstkontrollsetiketter gör det möjligt
 >
 >Läs mer om OLAC (Object level access control) i [det här avsnittet](../administration/object-based-access.md).
 
-
 I [!DNL Journey Optimizer] kampanjer, tillämpas principen om samtycke på följande sätt:
 
 * Du kan inkludera definitioner av samtyckespolicyer som en del av målgruppsskapandet för att säkerställa att den valda målgruppen för kampanjen redan har **filtrerade bort profiler som inte matchar medgivandekriterierna**.
 
-* [!DNL Journey Optimizer] kommer att utföra en allmän godkännandekontroll på kanalnivå för att **se till att profilerna har valt** för att få marknadsföringskommunikation via motsvarande kanal.
+* [!DNL Journey Optimizer] kommer att utföra en allmän godkännandekontroll på kanalnivå för att **se till att profilerna har valt** för att få marknadsföringsmaterial via motsvarande kanal.
 
   >[!NOTE]
   >
@@ -160,7 +157,7 @@ Du kan också lägga till en kontroll för godkännande av personalisering till 
 
 1. **[!UICONTROL Path 1]** kommer att vara den icke-personaliserade målgruppen. Välj en relevant etikett.
 
-1. Välj ett lämpligt värde från detta [list](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}.
+1. Välj ett lämpligt värde i det här [list](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}.
 
    I det här fallet använder vi `n` att ange att användare inte samtycker till att deras data används för personalisering.
 
@@ -168,7 +165,7 @@ Du kan också lägga till en kontroll för godkännande av personalisering till 
 
 1. Du kan skapa en separat bana för andra alternativvärden. Du kan också välja att ta bort de återstående banorna och aktivera **[!UICONTROL Other profiles]** om du vill ta med alla andra profiler som inte har något valvärde för `n`.
 
-1. När du är klar klickar du på **[!UICONTROL Save Audience]** för varje bana för att spara resultatet av arbetsflödet till en ny målgrupp. En målgrupp sparas i Adobe Experience Platform för varje bana.
+1. När du är klar klickar du **[!UICONTROL Save Audience]** för varje bana för att spara resultatet av arbetsflödet till en ny målgrupp. En målgrupp sparas i Adobe Experience Platform för varje bana.
 
 1. Publicera kompositionsarbetsflödet när du är klar.
 

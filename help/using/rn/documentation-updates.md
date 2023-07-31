@@ -4,9 +4,9 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
+source-git-commit: 65ebc3f711b92e665aedc1d41d4310ed155a8dfe
 workflow-type: tm+mt
-source-wordcount: '2999'
+source-wordcount: '3059'
 ht-degree: 15%
 
 ---
@@ -17,9 +17,11 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 ## Juli 2023 {#july-2023}
 
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version från 23 juli har detaljerats i dokumentationen. [Läs mer](release-notes.md)
 * Dokumentationssidan för vänteaktivitet har förbättrats med ytterligare information och bästa praxis för användning av global tidsgräns och återinträde. [Läs mer](../building-journeys/wait-activity.md)
 * Sidan om hantering av inträde har förbättrats. [Läs mer](../building-journeys/entry-management.md)
-* Ytterligare information om begränsningsgraden har lagts till i dokumentationen om målgruppsaktivitet. [Läs mer](../building-journeys/read-audience.md)
+* Ytterligare information om begränsningsgraden finns i dokumentationen om målgruppsaktivitet. [Läs mer](../building-journeys/read-audience.md)
+* The **Genomför personalisering** -avsnittet har uppdaterats för att beskriva hur du manuellt framtvingar personalisering i kampanjer: du kan använda segmentregelbyggaren för att skapa en målgrupp som innehåller avanmälningsprofiler eller lägga till en delad aktivitet i ett dispositionsarbetsflöde. [Läs mer](../privacy/opt-out.md#opt-out-expression-editor)
 
 ## Juni 2023 {#june-2023}
 
