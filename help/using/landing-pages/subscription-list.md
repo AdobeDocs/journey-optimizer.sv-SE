@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: landning, landningssida, lista, prenumeration, service
 exl-id: 5e5419a0-5121-4aa7-a975-b1f08e2918c9
-source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
+source-git-commit: b7685798cec415c8a97992ddacf8f0ebcb393107
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 2%
@@ -58,11 +58,11 @@ Följ stegen nedan för att skapa en prenumerationslista.
    >
    >För närvarande kan du inte använda avstånd eller ange ett namn som redan finns för en annan prenumerationslista i **[!UICONTROL Title]** fält.
 
-1. Markera eller skapa Adobe Experience Platform-taggar från **[!UICONTROL Tags]** fält för att kategorisera landningssidan för förbättrad sökning. [Läs mer](../start/search-filter-categorize.md#tags)
-
 1. Du kan definiera ett startdatum och ett slutdatum.
 
    ![](assets/lp_subscription-list-dates.png)
+
+1. Markera eller skapa Adobe Experience Platform-taggar från **[!UICONTROL Tags]** fält för att kategorisera landningssidan för förbättrad sökning. [Läs mer](../start/search-filter-categorize.md#tags)
 
 1. Klicka på **[!UICONTROL Save]**.
 
