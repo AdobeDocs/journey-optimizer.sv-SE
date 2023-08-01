@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
+source-git-commit: 1534106b7ed80376060d39a445d5e706df832e05
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1125'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,6 @@ Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera opti
 
 ### Allmänna åtgärder {#general-actions-g}
 
-* Det finns ingen sändande begränsning.
 * Tre försök utförs systematiskt om ett fel uppstår. Du kan inte justera antalet försök enligt det mottagna felmeddelandet. Alla HTTP-fel utom HTTP 401, 403 och 404 anges på nytt.
 * Den inbyggda **Reaktion** -händelsen gör att du kan reagera på åtgärder som är klara. Läs mer i [den här sidan](../building-journeys/reaction-events.md). Om du vill reagera på ett meddelande som skickas via en anpassad åtgärd måste du konfigurera en dedikerad händelse.
 * Du kan inte placera två åtgärder parallellt. Du måste lägga till dem en i taget.
