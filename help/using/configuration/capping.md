@@ -7,10 +7,10 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 377b2659-d26a-47c2-8967-28870bddf5c5
-source-git-commit: c823d1a02ca9d24fc13eaeaba2b688249e61f767
+source-git-commit: cb5f3b042c1902add9b22d28eb24e2b6e8f1a20b
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 30%
+source-wordcount: '607'
+ht-degree: 28%
 
 ---
 
@@ -46,7 +46,7 @@ Här är den grundläggande strukturen för en slutpunktskonfiguration:
     "methods": [ "<HTTP method such as GET, POST, >, ...],
     "services": {
         "<service name>": { . //must be "action" or "dataSource" 
-            "maxHttpConnections": <max connections count to the endpoint>
+            "maxHttpConnections": <max connections count to the endpoint (optional)>
             "rating": {          
                 "maxCallsCount": <max calls to be performed in the period defined by period/timeUnit>,
                 "periodInMs": <integer value greater than 0>
@@ -56,6 +56,12 @@ Här är den grundläggande strukturen för en slutpunktskonfiguration:
     }
 }
 ```
+
+>[!IMPORTANT]
+>
+>The **maxHttpConnections** parametern är valfri. Du kan begränsa antalet anslutningar som Journey Optimizer öppnar till det externa systemet.
+>
+>Det högsta värdet som kan anges är 400. Om inget anges kan systemet öppna upp till flera tusen anslutningar beroende på systemets dynamiska skalning.
 
 ### Exempel:
 
@@ -67,9 +73,9 @@ Här är den grundläggande strukturen för en slutpunktskonfiguration:
   ],
   "services": {
     "dataSource": {
-      "maxHttpConnections": 30000,
+      "maxHttpConnections": 50,
       "rating": {
-        "maxCallsCount": 5000,
+        "maxCallsCount": 500,
         "periodInMs": 1000
       }
     }
@@ -88,20 +94,20 @@ När en **canDeploy** metoden anropas, validerar processen konfigurationen och r
 
 Möjliga fel är:
 
-* **ERR_ENDPOINTCONFIG_100**: capping config: saknad eller ogiltig URL
+* **ERR_ENDPOINTCONFIG_100**: capping config: URL saknas eller är ogiltig
 * **ERR_ENDPOINTCONFIG_101**: capping config: felaktig URL
-* **ERR_ENDPOINTCONFIG_102**: capping config: felaktig URL: wildchar in url not allowed in host:port
-* **ERR_ENDPOINTCONFIG_103**: capping config: saknade HTTP-metoder
+* **ERR_ENDPOINTCONFIG_102**: capping config: felaktig url: wildchar in url not allowed in host:port
+* **ERR_ENDPOINTCONFIG_103**: capping config: HTTP-metoder saknas
 * **ERR_ENDPOINTCONFIG_104**: capping config: ingen anropsklassificering har definierats
-* **ERR_ENDPOINTCONFIG_107**: capping config: ogiltigt max antal anrop (maxCallCount)
-* **ERR_ENDPOINTCONFIG_108**: capping config: ogiltigt max antal anrop (periodInms)
-* **ERR_ENDPOINTCONFIG_111**: capping config: det går inte att skapa slutpunktskonfiguration: ogiltig nyttolast
-* **ERR_ENDPOINTCONFIG_112**: capping config: det går inte att skapa slutpunktskonfiguration: en JSON-nyttolast förväntas
+* **ERR_ENDPOINTCONFIG_107**: capping config: ogiltigt antal anrop (maxCallCount)
+* **ERR_ENDPOINTCONFIG_108**: capping config: ogiltigt antal anrop (periodInms)
+* **ERR_ENDPOINTCONFIG_111**: capping config: kan inte skapa slutpunktskonfiguration: ogiltig nyttolast
+* **ERR_ENDPOINTCONFIG_112**: capping config: kan inte skapa slutpunktskonfiguration: en JSON-nyttolast förväntas
 * **ERR_AUTHORING_ENDPOINTCONFIG_1**: ogiltigt tjänstnamn `<!--<given value>-->`: måste vara &#39;dataSource&#39; eller &#39;action&#39;
 
 Den potentiella varningen är:
 
-**ERR_ENDPOINTCONFIG_106**: capping config: max antal HTTP-anslutningar ej definierade: ingen begränsning som standard
+**ERR_ENDPOINTCONFIG_106**: capping config: max HTTP connections not defined: no limit as default
 
 ## Användningsfall
 
@@ -145,7 +151,7 @@ I endast ett API-anrop kan du avbryta driftsättning och radera konfigurationen 
 1. list
 1. radera med parametern forceDelete
 
-Use-Case n°5: **Uppdatera en takkonfiguration som redan har distribuerats**
+Use-Case n°5: **Uppdatera en takkonfiguration som redan distribuerats**
 
 1. list
 1. get
