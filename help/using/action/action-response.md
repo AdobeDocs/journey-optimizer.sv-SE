@@ -11,28 +11,28 @@ badge: label="Beta" type="Informative"
 keywords: åtgärd, tredje part, anpassad, resor, API
 hide: true
 hidefromtoc: true
-source-git-commit: 98e9d4530feb584ddcbf460714f1302b87d7822a
+source-git-commit: 1674eceb1b9ae4cf8cd3f19deda26a9e72290106
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 4%
 
 ---
 
-# Förbättringar av anpassade funktionsmakron {#configure-an-action}
+# Förbättringar av anpassade funktionsmakron
 
 Nu kan du utnyttja API-anropssvar i anpassade åtgärder och samordna din resa baserat på dessa svar.
 
 Den här funktionen var bara tillgänglig när du använde datakällor. Nu kan du använda den med anpassade åtgärder.
 
-> [!AVAILABILITY]
+>[!AVAILABILITY]
 >
-> Den här funktionen är för närvarande tillgänglig som en privat beta.
+>Den här funktionen är för närvarande tillgänglig som en privat beta.
 
 ## Definiera den anpassade åtgärden
 
 När du definierar den anpassade åtgärden har två förbättringar gjorts tillgängliga: tillägget av GET-metoden och det nya nyttolastsvarsfältet. De andra alternativen och parametrarna ändras inte. Läs [den här sidan](../action/about-custom-action-configuration.md).
 
-### Konfiguration av slutpunkt {#url-configuration}
+### Konfiguration av slutpunkt
 
 The **URL-konfiguration** avsnittet har fått ett nytt namn **Konfiguration av slutpunkt**.
 
@@ -40,16 +40,16 @@ I **Metod** nedrullningsbar meny kan du nu välja **GET**.
 
 ![](assets/action-response1.png){width="70%" align="left"}
 
-### Betalningar {#url-configuration}
+### Betalningar
 
 The **Åtgärdsparametrar** avsnittet har fått ett nytt namn **Betalningar**. Två fält är tillgängliga:
 
 * The **Begäran** fält: det här fältet är endast tillgängligt för anropsmetoder för POST och PUT.
 * The **Svar** field: this is the new capabilities. Det här fältet är tillgängligt för alla anropsmetoder.
 
-> [!NOTE]
+>[!NOTE]
 > 
-> Båda dessa fält är valfria.
+>Båda dessa fält är valfria.
 
 ![](assets/action-response2.png){width="70%" align="left"}
 
@@ -131,9 +131,9 @@ Du kan också använda **jo_status** kod för att skapa en ny sökväg om ett fe
 
 ![](assets/action-response7.png){width="70%" align="left"}
 
-> [!WARNING]
+>[!WARNING]
 >
-> Endast nya anpassade åtgärder innehåller det här fältet. Om du vill använda den med en befintlig anpassad åtgärd måste du uppdatera åtgärden. Du kan till exempel uppdatera beskrivningen och spara den.
+>Endast nya anpassade åtgärder innehåller det här fältet. Om du vill använda den med en befintlig anpassad åtgärd måste du uppdatera åtgärden. Du kan till exempel uppdatera beskrivningen och spara den.
 
 Här är möjliga värden för det här fältet:
 
@@ -148,9 +148,9 @@ Du kan anpassa dina meddelanden med hjälp av svarsfälten. I vårt exempel pers
 
 ![](assets/action-response8.png){width="70%" align="left"}
 
-> [!NOTE]
+>[!NOTE]
 >
-> Anropet utförs endast en gång per profil under en viss resa. Flera meddelanden kommer inte att utlösa nya anrop.
+>Anropet utförs endast en gång per profil under en viss resa. Flera meddelanden kommer inte att utlösa nya anrop.
 
 ## Uttryckssyntax
 
