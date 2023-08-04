@@ -11,16 +11,16 @@ badge: label="Beta" type="Informative"
 keywords: åtgärd, tredje part, anpassad, resor, API
 hide: true
 hidefromtoc: true
-source-git-commit: 1674eceb1b9ae4cf8cd3f19deda26a9e72290106
+source-git-commit: d94988dd491759fe6ed8489403a3f1a295b19ef5
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '497'
 ht-degree: 4%
 
 ---
 
 # Förbättringar av anpassade funktionsmakron
 
-Nu kan du utnyttja API-anropssvar i anpassade åtgärder och samordna din resa baserat på dessa svar.
+Nu kan du utnyttja API-anropssvar i anpassade åtgärder och samordna dina resor baserat på dessa svar.
 
 Den här funktionen var bara tillgänglig när du använde datakällor. Nu kan du använda den med anpassade åtgärder.
 
@@ -55,11 +55,11 @@ The **Åtgärdsparametrar** avsnittet har fått ett nytt namn **Betalningar**. T
 
 1. Klicka inuti **Svar** fält.
 
-   ![](assets/action-response3.png){width="70%" align="left"}
+   ![](assets/action-response3.png){width="80%" align="left"}
 
 1. Klistra in ett exempel på nyttolasten som returneras av anropet. Kontrollera att fälttyperna är korrekta (sträng, heltal osv.).
 
-   ![](assets/action-response4.png){width="70%" align="left"}
+   ![](assets/action-response4.png){width="80%" align="left"}
 
 1. Klicka **Spara**.
 
@@ -121,15 +121,15 @@ Lägg bara till den anpassade åtgärden på en resa. Du kan sedan utnyttja svar
 
 Du kan till exempel lägga till ett villkor för att kontrollera vindhastigheten. När personen kommer in i surfaffären kan du skicka ett tryck om vädret är för blåsigt.
 
-![](assets/action-response5.png){width="70%" align="left"}
+![](assets/action-response5.png)
 
 I villkoret måste du använda den avancerade redigeraren för att utnyttja åtgärdssvarsfälten, under **Kontext** nod.
 
-![](assets/action-response6.png){width="70%" align="left"}
+![](assets/action-response6.png)
 
 Du kan också använda **jo_status** kod för att skapa en ny sökväg om ett fel uppstår.
 
-![](assets/action-response7.png){width="70%" align="left"}
+![](assets/action-response7.png)
 
 >[!WARNING]
 >
@@ -142,15 +142,19 @@ Här är möjliga värden för det här fältet:
 * capping-fel: **mappad**
 * internt fel: **internalError**
 
+Mer information om reseaktiviteter finns på [det här avsnittet](../building-journeys/about-journey-activities.md).
+
 ### Skräddarsytt meddelande
 
 Du kan anpassa dina meddelanden med hjälp av svarsfälten. I vårt exempel personaliserar vi innehållet med hjälp av hastighetsvärdet i push-meddelandet.
 
-![](assets/action-response8.png){width="70%" align="left"}
+![](assets/action-response8.png)
 
 >[!NOTE]
 >
->Anropet utförs endast en gång per profil under en viss resa. Flera meddelanden kommer inte att utlösa nya anrop.
+>Anropet utförs endast en gång per profil under en viss resa. Flera meddelanden till samma profil kommer inte att utlösa några nya anrop.
+
+Mer information om anpassning av meddelanden finns i [det här avsnittet](../personalization/personalize.md).
 
 ## Uttryckssyntax
 
@@ -175,4 +179,4 @@ Här är några exempel:
 @action{OpenWeatherMap.main.temp, defaultValue: @{myEvent.temperature}} 
 ```
 
-
+Mer information om fältreferenser finns i [det här avsnittet](../building-journeys/expression/field-references.md).
