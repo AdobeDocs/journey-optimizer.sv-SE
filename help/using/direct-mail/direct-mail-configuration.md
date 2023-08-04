@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
-source-git-commit: 246205d13c1dd30b4f4769780f69e5acdd388e66
+source-git-commit: 173ae09e48a67e0e40aa59f0f714b014eb8b8064
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Följ stegen nedan för att konfigurera filflödet.
 
    >[!NOTE]
    >
-   >För närvarande stöds Amazon S3, SFTP och Azure i [!DNL Journey Optimizer].
+   >Amazon S3 och SFTP<!--and Azure--> stöds i [!DNL Journey Optimizer].
 
 1. Fyll i information och autentiseringsuppgifter för servern, t.ex. serveradress, åtkomstnyckel.
 
@@ -135,7 +135,7 @@ En direktreklamyta måste även innehålla den filroutningskonfiguration som def
 
 1. Välj filformat: **[!UICONTROL CSV]** eller **[!UICONTROL Text delimited]**.
 
-1. Om du väljer **[!UICONTROL Text delimited]** definierar du den kolumnavgränsare du vill använda: tabulering, semikolon, vertikalstreck eller et-tecken.
+1. Om du väljer **[!UICONTROL Text delimited]** definierar du den kolumnavgränsare du vill använda: tabulering, semikolon eller vertikalstreck<!--or ampersand-->.
 
    ![](assets/surface-direct-mail-column-separator.png)
 
