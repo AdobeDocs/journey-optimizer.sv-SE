@@ -1,35 +1,31 @@
 ---
-title: Kom igång med API:er för erbjudanden
+title: Kom igång med erbjudandeleverans-API:er
 description: Läs mer om de API:er som finns för att leverera personaliserade erbjudanden.
 feature: Offers
 topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 7bc1a4ec-113c-4af7-b549-ee17b843b818
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 76661d574ffabf32c4c1db8d88744604e50d7b40
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 1%
+source-wordcount: '430'
+ht-degree: 0%
 
 ---
 
-# Kom igång med API:er för erbjudanden {#about-decisioning-apis}
+# Kom igång med erbjudandeleverans-API:er {#about-decisioning-apis}
 
-Du kan leverera erbjudanden med **Beslut** eller **Edge Decisionering** API. Dessutom finns **Gruppbeslut** Med API kan ni leverera erbjudanden till alla profiler i en viss målgrupp i ett enda samtal. Erbjudandeinnehållet för varje profil i målgruppen placeras i en Adobe Experience Platform-datauppsättning där det är tillgängligt för anpassade grupparbetsflöden.
+Du kan leverera erbjudanden med **Beslut** eller **Edge Decisionering** API. Dessutom kan du **Gruppbeslut** Med API kan ni leverera erbjudanden till alla profiler i en viss målgrupp i ett enda samtal. Erbjudandeinnehållet för varje profil i målgruppen placeras i en Adobe Experience Platform-datauppsättning där det är tillgängligt för anpassade grupparbetsflöden.
 
-På den här sidan hittar du information om specifika funktioner som är tillgängliga med **Beslut** och **Edge Decisionering** API:er. Vi rekommenderar att du använder **Edge Decisionering** API när det är möjligt för inkommande användning och för att säkerställa bättre latens och genomströmning på din plattform.
+På den här sidan hittar du information om specifika funktioner som är tillgängliga med **Beslut** och **Edge Decisionering** API. Vi rekommenderar att du använder **Edge Decisionering** API när det är möjligt för inkommande användning och för att säkerställa bättre latens och genomströmning på din plattform.
 
-|  | Begäranden/sek | Latens |
-|---|---|---|
-| Besluts-API | 2000 | &lt;500ms |
-| API för Edge Decisioning | 5000 | &lt;250ms |
 
 Mer information om hur du arbetar med API:erna finns i följande avsnitt:
 * [Besluts-API](decisioning-api.md)
 * [API för Edge Decisioning](edge-decisioning-api.md)
 * [API för gruppbeslut](batch-decisioning-api.md)
 
-## API-funktioner för Edge Decisioning {#edge}
+## API-funktioner för Edge Decision {#edge}
 
 **Unik begäran om upplevelsehändelser och beslutsbegäranden**
 
@@ -39,9 +35,9 @@ Om en kund t.ex. besöker din webbplats kommer förfrågan att innehålla upplev
 
 **Lagring av kontextdata i Adobe Experience Platform**
 
-Kontextdata avser data som du bara känner till när du vill ha tillbaka ett erbjudande. Till exempel färgen på den köpta artikeln, vädret vid tidpunkten för köpet osv.
+Kontextdata avser data som du bara känner till när du vill ha tillbaka ett erbjudande. Till exempel färgen på den köpta artikeln, vädret vid köptillfället osv.
 
-När kontextdata skickas med en begäran från Edge Decisioning API, lagras data i Adobe Experience Platform-profilen, vilket möjliggör framtida återanvändning.
+När kontextdata skickas med en begäran från Edge Decisioning API, lagras data i Adobe Experience Platform-profilen så att de kan återanvändas i framtiden.
 
 >[!NOTE]
 >
@@ -54,6 +50,6 @@ De funktioner som anges nedan är endast tillgängliga med besluts-API:t. Om du 
 * **Experience events**: utnyttja upplevelsehändelser för att bygga upp era beslutsregler.
 * **Erbjud innehåll och egenskaper**: du kan välja att inte returnera innehållet och egenskaperna för ett erbjudande med ett dedikerat alternativ.
 * **Erbjud metadata**: aktivera ett alternativ för att returnera metadata för ett erbjudande.
-* **Kopplingsprincip**: i din begäran använda en annan sammanfogningsprincip än den som är kopplad till din sandlåda.
+* **Kopplingsprincip**: använd i din begäran en annan sammanfogningsprincip än den som är kopplad till din sandlåda.
 * **Beslutshändelser och frekvensbegränsning**: blockbeslutshändelser räknas inte av någon frekvensbegränsning som inträffar.
-* **Duplicera förslag**: aktivera ett alternativ för att inte deduplicera förslag.
+* **Duplicera förslag**: aktivera ett alternativ för att inte deduplicera anbud.
