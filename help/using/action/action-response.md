@@ -11,9 +11,9 @@ badge: label="Beta" type="Informative"
 keywords: åtgärd, tredje part, anpassad, resor, API
 hide: true
 hidefromtoc: true
-source-git-commit: d94988dd491759fe6ed8489403a3f1a295b19ef5
+source-git-commit: 00535d5c50bb89b308a74ab95f7b68449ba5b819
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '665'
 ht-degree: 4%
 
 ---
@@ -27,6 +27,10 @@ Den här funktionen var bara tillgänglig när du använde datakällor. Nu kan d
 >[!AVAILABILITY]
 >
 >Den här funktionen är för närvarande tillgänglig som en privat beta.
+
+>[!WARNING]
+>
+>Anpassade åtgärder bör endast användas med privata eller interna slutpunkter och användas med en lämplig begränsning för begränsning eller begränsning. Läs [den här sidan](../configuration/external-systems.md).
 
 ## Definiera den anpassade åtgärden
 
@@ -57,104 +61,80 @@ The **Åtgärdsparametrar** avsnittet har fått ett nytt namn **Betalningar**. T
 
    ![](assets/action-response3.png){width="80%" align="left"}
 
-1. Klistra in ett exempel på nyttolasten som returneras av anropet. Kontrollera att fälttyperna är korrekta (sträng, heltal osv.).
+1. Klistra in ett exempel på nyttolasten som returneras av anropet. Kontrollera att fälttyperna är korrekta (sträng, heltal osv.). Här är ett exempel på nyttolast för svar som fångats in under anropet. Vår lokala slutpunkt skickar antalet förmånspoäng och statusen för en profil.
+
+   ```
+   {
+   "customerID" : "xY12hye",    
+   "status":"gold",
+   "points": 1290 }
+   ```
 
    ![](assets/action-response4.png){width="80%" align="left"}
 
+   Varje gång API:et anropas hämtas alla fält som ingår i exemplets nyttolast.
+
+1. Vi lägger också till customerID som frågeparameter.
+
+   ![](assets/action-response9.png){width="80%" align="left"}
+
 1. Klicka **Spara**.
 
-Varje gång API:et anropas hämtas alla fält som ingår i exemplets nyttolast. Obs! **Klistra in en ny nyttolast** om du vill ändra den nyttolast som har skickats.
-
-Här är ett exempel på en svarsnyttolast som fångats in under anropet till en API-tjänst för väder:
-
-```
-{
-    "coord": {
-        "lon": 2.3488,
-        "lat": 48.8534
-    },
-    "weather": [
-        {
-            "id": 800,
-            "main": "Clear",
-            "description": "clear sky",
-            "icon": "01d"
-        }
-    ],
-    "base": "stations",
-    "main": {
-        "temp": 29.78,
-        "feels_like": 29.78,
-        "temp_min": 29.92,
-        "temp_max": 30.43,
-        "pressure": 1016,
-        "humidity": 31
-    },
-    "visibility": 10000,
-    "wind": {
-        "speed": 5.66,
-        "deg": 70
-    },
-    "clouds": {
-        "all": 0
-    },
-    "dt": 1686066467,
-    "sys": {
-        "type": 1,
-        "id": 6550,
-        "country": "FR",
-        "sunrise": 1686023350,
-        "sunset": 1686080973
-    },
-    "timezone": 7200,
-    "id": 2988507,
-    "name": "Paris",
-    "cod": 200
-}
-```
-
-## Utnyttja svarstiderna under en resa
+## Utnyttja svarsalternativen under en resa
 
 Lägg bara till den anpassade åtgärden på en resa. Du kan sedan utnyttja svarsnyttolastfälten under förhållanden, andra åtgärder och meddelandepersonalisering.
 
-### Villkor och åtgärder
-
-Du kan till exempel lägga till ett villkor för att kontrollera vindhastigheten. När personen kommer in i surfaffären kan du skicka ett tryck om vädret är för blåsigt.
+Du kan till exempel lägga till ett villkor för att kontrollera antalet förmånspoäng. När personen kommer in på restaurangen skickar din lokala slutpunkt ett samtal med profilens lojalitetsinformation. Du kan skicka en push-funktion om profilen är en guldkund. Om ett fel upptäcks i samtalet skickar du en anpassad åtgärd till systemadministratören.
 
 ![](assets/action-response5.png)
 
-I villkoret måste du använda den avancerade redigeraren för att utnyttja åtgärdssvarsfälten, under **Kontext** nod.
+1. Lägg till din händelse och den anpassade lojalitetsåtgärden som skapades tidigare.
 
-![](assets/action-response6.png)
+1. I den anpassade lojalitetsåtgärden kopplar du frågeparametern för kund-ID till profil-ID:t. Markera alternativet **Lägg till en alternativ sökväg vid timeout eller fel**.
 
-Du kan också använda **jo_status** kod för att skapa en ny sökväg om ett fel uppstår.
+   ![](assets/action-response10.png)
 
-![](assets/action-response7.png)
+1. Lägg till ett villkor i den första grenen och använd den avancerade redigeraren för att utnyttja åtgärdssvarsfälten, under **Kontext** nod.
 
->[!WARNING]
->
->Endast nya anpassade åtgärder innehåller det här fältet. Om du vill använda den med en befintlig anpassad åtgärd måste du uppdatera åtgärden. Du kan till exempel uppdatera beskrivningen och spara den.
+   ![](assets/action-response6.png)
+
+1. Lägg sedan till push-meddelanden och anpassa meddelandet med svarsfälten. I vårt exempel personaliserar vi innehållet med hjälp av antalet kundpoäng och kundens status. Åtgärdssvarsfälten är tillgängliga under **Sammanhangsberoende attribut** > **Journey Orchestration** > **Åtgärder**.
+
+   ![](assets/action-response8.png)
+
+   >[!NOTE]
+   >
+   >Varje profil som anger den anpassade åtgärden utlöser ett anrop. Även om svaret alltid är detsamma kommer Journey fortfarande att ringa ett samtal per profil.
+
+1. Lägg till ett villkor och utnyttja det inbyggda **jo_status_code** fält. I vårt exempel använder vi
+   **http_400** feltyp. Se [det här avsnittet](#error-status).
+
+   ```
+   @action{ActionLoyalty.jo_status_code} == "http_400"
+   ```
+
+   ![](assets/action-response7.png)
+
+1. Lägg till en anpassad åtgärd som ska skickas till din organisation.
+
+   ![](assets/action-response11.png)
+
+## Felstatus{#error-status}
+
+The **jo_status_code** -fältet är alltid tillgängligt även när ingen svarsnyttolast har definierats.
 
 Här är möjliga värden för det här fältet:
 
-* http-statuskod: till exempel **http_200** eller **http_400**
+* http-statuskod: http_`<HTTP API call returned code>`, till exempel http_200 eller http_400
 * timeout-fel: **tidsgränsen**
 * capping-fel: **mappad**
 * internt fel: **internalError**
 
-Mer information om reseaktiviteter finns på [det här avsnittet](../building-journeys/about-journey-activities.md).
+Ett åtgärdsanrop hanteras av fel när den returnerade http-koden är större än 2xx eller om ett fel inträffar. I sådana fall skickas resan till den särskilda tidsgränsen eller felavdelningen.
 
-### Skräddarsytt meddelande
-
-Du kan anpassa dina meddelanden med hjälp av svarsfälten. I vårt exempel personaliserar vi innehållet med hjälp av hastighetsvärdet i push-meddelandet.
-
-![](assets/action-response8.png)
-
->[!NOTE]
+>[!WARNING]
 >
->Anropet utförs endast en gång per profil under en viss resa. Flera meddelanden till samma profil kommer inte att utlösa några nya anrop.
-
-Mer information om anpassning av meddelanden finns i [det här avsnittet](../personalization/personalize.md).
+>Endast nya anpassade åtgärder innehåller **jo_status_code** fältet är körklart. Om du vill använda den med en befintlig anpassad åtgärd måste du uppdatera åtgärden. Du kan till exempel uppdatera beskrivningen och spara den.
 
 ## Uttryckssyntax
 
