@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, publicering
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
+source-git-commit: 2a443c1b264dd8c9a2a2f5082d4c2ac373cdddfa
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1732'
 ht-degree: 1%
 
 ---
@@ -21,6 +21,12 @@ ht-degree: 1%
 >[!CAUTION]
 >
 >För att kunna testa och publicera landningssidor måste du ha **[!UICONTROL Publish Messages]** behörighet.
+
+Om du vill dirigera kunderna till en definierad webbsida som du vill visa när de klickar på en viss länk skapar du en landningssida i [!DNL Journey Optimizer], konfigurera den primära sidan och eventuella underordnade sidor, testa den och publicera den.
+
+>[!CAUTION]
+>
+>Du kan inte komma åt landningssidan genom att kopiera och klistra in den URL-adress som definierats i en webbläsare när [skapa sidan](#create-landing-page), även om de är publicerade. I stället kan du testa den med förhandsvisningsfunktionen som beskrivs i [det här avsnittet](#test-landing-page).
 
 ## Åtkomst till landningssidor {#access-landing-pages}
 
@@ -95,6 +101,10 @@ De viktigaste stegen för att skapa landningssidor är följande:
 
 När du har konfigurerat och utformat [primär sida](#configure-primary-page)och [undersidor](#configure-subpages) om det finns något, kan du [test](#test-landing-page) och [publicera](#publish-landing-page) din landningssida.
 
+>[!CAUTION]
+>
+>Du kan inte komma åt din landningssida genom att kopiera och klistra in den definierade URL-adressen i en webbläsare, även om den är publicerad. I stället kan du testa den med förhandsvisningsfunktionen som beskrivs i [det här avsnittet](#test-landing-page).
+
 ## Konfigurera den primära sidan {#configure-primary-page}
 
 >[!CONTEXTUALHELP]
@@ -125,12 +135,10 @@ Följ stegen nedan för att definiera inställningarna för den primära sidan.
    >[!CAUTION]
    >
    >Landningssidans URL måste vara unik.
-
-   ![](assets/lp_access-url.png)
-
-   >[!NOTE]
    >
    >Du kan inte komma åt din landningssida genom att kopiera och klistra in URL-adressen i en webbläsare, även om den publicerats. I stället kan du testa den med förhandsvisningsfunktionen som beskrivs i [det här avsnittet](#test-landing-page).
+
+   ![](assets/lp_access-url.png)
 
 1. Om du vill att landningssidan ska förhandsladda formulärdata som redan är tillgängliga väljer du **[!UICONTROL Pre-fill form fields with profile information]**.
 
@@ -196,6 +204,8 @@ Följ stegen nedan för att definiera inställningar för undersidan.
    >[!CAUTION]
    >
    >Landningssidans URL måste vara unik.
+   >
+   >Du kan inte komma åt din undersida genom att kopiera och klistra in den här URL:en i en webbläsare, även om den är publicerad. I stället kan du testa den med förhandsvisningsfunktionen som beskrivs i [det här avsnittet](#test-landing-page).
 
 ![](assets/lp_subpage-settings.png)
 
@@ -298,5 +308,6 @@ Den är nu klar att användas i en [!DNL Journey Optimizer] som skickas via en [
 
 >[!NOTE]
 >
->Ni kan övervaka hur landningssidan påverkas genom specifika rapporter. [Läs mer](../reports/lp-report-live.md)
+>Du kan inte komma åt landningssidan genom att kopiera och klistra in den URL-adress som definierats i en webbläsare när [skapa sidan](#create-landing-page), även om de är publicerade. I stället kan du testa den med förhandsvisningsfunktionen som beskrivs i [det här avsnittet](#test-landing-page).
 
+Ni kan övervaka hur landningssidan påverkas genom specifika rapporter. [Läs mer](../reports/lp-report-live.md)
