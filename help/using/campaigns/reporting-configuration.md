@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: konfiguration, experiment, rapportering, optimering
 exl-id: 327a0c45-0805-4f64-9bab-02d67276eff8
-source-git-commit: 13020825a0cf06bd67f48ccbe6f46b6eaea210d3
+source-git-commit: cab7fb06039b2d483f403361f6a46d2aadcadff0
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '616'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ Innan du kan lägga till en datauppsättning i rapportkonfigurationen måste du 
 
   Om du till exempel vill veta vilken effekt en e-postkampanj har på e-handelsdata som inköp eller beställningar måste du skapa en händelsedatamängd för upplevelser med `Commerce Details` fältgrupp.
 
-  På samma sätt måste du, om du vill rapportera om mobilinteraktioner, skapa en upplevelsehändelsedatauppsättning med fältgruppen&quot;Programinformation&quot;.
+  Om du vill rapportera om mobilinteraktioner måste du också skapa en händelsedatauppsättning med `Application Details` fältgrupp.
 
   <!--The metrics corresponding to each field group are listed [here](#objective-list).-->
 
