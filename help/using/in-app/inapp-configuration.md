@@ -5,16 +5,16 @@ role: Admin
 level: Intermediate
 keywords: in-app, meddelande, konfiguration, plattform
 exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
-source-git-commit: 7de25a5e82837190ada3e67f3b202a4934c9b793
+source-git-commit: 13020825a0cf06bd67f48ccbe6f46b6eaea210d3
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 3%
+source-wordcount: '372'
+ht-degree: 2%
 
 ---
 
 # Konfigurera kanal i appen {#inapp-configuration}
 
-Innan du skickar meddelanden i appen måste du konfigurera din app-kanal i [!DNL Adobe Experience Platform Data Collection].
+Innan du skickar meddelanden i appen måste du konfigurera din kanal i appen i [!DNL Adobe Experience Platform Data Collection].
 
 1. Från [!DNL Adobe Experience Platform Data Collection] konto, få åtkomst till **[!UICONTROL Datastream]** meny och klicka **[!UICONTROL New datastream]**. Mer information om hur du skapar data finns i [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html).
 
@@ -24,7 +24,13 @@ Innan du skickar meddelanden i appen måste du konfigurera din app-kanal i [!DNL
 
    ![](assets/inapp_config_6.png)
 
-1. Sedan öppnar du **[!UICONTROL App surfaces]** menyn och klicka sedan på **[!UICONTROL Create App surface]**.
+   >[!NOTE]
+   >
+   >Om du vill aktivera innehållsexperiment för appkanalen måste du se till att [datauppsättning](../data/get-started-datasets.md) används i din app [datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html){target="_blank"} finns också i din rapportkonfiguration - annars visas inte data i appen i innehållsexperimentrapporter. [Lär dig lägga till datauppsättningar](../campaigns/reporting-configuration.md#add-datasets)
+   >
+   >Datauppsättningen används skrivskyddat av [!DNL Journey Optimizer] rapporteringssystem och påverkar inte datainsamling eller datainmatning.
+
+1. Sedan öppnar du **[!UICONTROL App surfaces]** meny och klicka **[!UICONTROL Create App surface]**.
 
    >[!NOTE]
    >

@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Konfigurera Journey Optimizer-rapportering för experimenterande
+title: Konfigurera Journey Optimizer-rapportering för experiment
 description: Lär dig hur du ställer in rapportdatakälla
 feature: Data Sources
 topic: Administration
@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: konfiguration, experiment, rapportering, optimering
 exl-id: 327a0c45-0805-4f64-9bab-02d67276eff8
-source-git-commit: c83305a27d987fdf7861b7c2fc720cc4a6aa260b
+source-git-commit: 13020825a0cf06bd67f48ccbe6f46b6eaea210d3
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '618'
 ht-degree: 2%
 
 ---
@@ -21,16 +21,16 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="ajo_admin_reporting_config"
 >title="Ställ in datauppsättningar för rapportering"
->abstract="Med rapportkonfigurationen kan du hämta ytterligare mätvärden som ska användas på fliken Mål i kampanjrapporterna. Den måste utföras av en teknisk användare."
+>abstract="Med rapportkonfigurationen kan ni hämta ytterligare mätvärden som ska användas i kampanjrapporterna. Den måste utföras av en teknisk användare."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_reporting_dataset"
 >title="Välj en datauppsättning"
->abstract="Du kan bara välja en datamängd av händelsetyp, som måste innehålla minst en av de fältgrupper som stöds: Programinformation, handelsinformation, webbinformation."
+>abstract="Du kan bara välja en datamängd av händelsetyp, som måste innehålla minst en av de fältgrupper som stöds: Programinformation, Handelsinformation, Webbinformation."
 
 Med rapportdatakällans konfiguration kan du definiera en anslutning till ett system för att hämta ytterligare information som ska användas i dina rapporter.
 
-<!--The reporting data source configuration allows you to retrieve additional metrics that will be used in the **[!UICONTROL Objectives]** tab of your campaign reports. [Learn more](content-experiment.md#objectives-global)-->
+<!--The reporting data source configuration allows you to retrieve additional metrics that will be used in the **[!UICONTROL Objectives]** tab of your campaign reports.-->
 
 >[!NOTE]
 >
@@ -49,21 +49,21 @@ Innan du kan lägga till en datauppsättning i rapportkonfigurationen måste du 
 
 * Du kan bara lägga till datamängder av händelsetyp.
 
-* Dessa datauppsättningar måste innehålla **Experience Event - Proposition Interactions** [fältgrupp](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"}.
+* Dessa datauppsättningar måste innehålla `Experience Event - Proposition Interactions` [fältgrupp](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"}.
 
-* Dessa datauppsättningar kan även innehålla något av följande [fältgrupper](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"}: **Programinformation**, **Handelsinformation**, **Webbinformation**.
+* Dessa datauppsättningar kan även innehålla något av följande [fältgrupper](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"}: `Application Details`, `Commerce Details`, `Web Details`.
 
   >[!NOTE]
   >
   >Andra fältgrupper kan också inkluderas, men endast de ovanstående fältgrupperna stöds för närvarande i Journey Optimizer-rapporter.
 
-  Om du till exempel vill veta vilken effekt en e-postkampanj har på e-handelsdata som inköp eller beställningar måste du skapa en händelsedatamängd för upplevelser med **Handelsinformation** fältgrupp.
+  Om du till exempel vill veta vilken effekt en e-postkampanj har på e-handelsdata som inköp eller beställningar måste du skapa en händelsedatamängd för upplevelser med `Commerce Details` fältgrupp.
 
-  Om du vill rapportera om mobilinteraktioner måste du också skapa en upplevelsehändelsedatauppsättning med **Programinformation** fältgrupp.
+  På samma sätt måste du, om du vill rapportera om mobilinteraktioner, skapa en upplevelsehändelsedatauppsättning med fältgruppen&quot;Programinformation&quot;.
 
   <!--The metrics corresponding to each field group are listed [here](#objective-list).-->
 
-* Du kan lägga till dessa fältgrupper i ett eller flera scheman som ska användas i en eller flera datauppsättningar.
+* Du kan lägga till de här fältgrupperna i ett eller flera scheman som ska användas i en eller flera datauppsättningar.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ The table below shows which metrics will be added to the **[!UICONTROL Objective
 
    >[!NOTE]
    >
-   >Om du väljer **[!UICONTROL System dataset]** visas bara datauppsättningar som har skapats av systemet. Du kommer inte att kunna lägga till andra datauppsättningar.
+   >Om du väljer **[!UICONTROL System dataset]** visas bara datauppsättningar som har skapats av systemet. Du kan inte lägga till andra datauppsättningar.
 
 1. Från **[!UICONTROL Dataset]** väljer du den datauppsättning som du vill använda för dina rapporter.
 
@@ -126,6 +126,12 @@ The table below shows which metrics will be added to the **[!UICONTROL Objective
    >[!CAUTION]
    >
    >Om du valde en datauppsättning som inte är av händelsetyp kan du inte fortsätta.
+
+Observera att för webb- och appkanaler måste du se till att [datauppsättning](../data/get-started-datasets.md) som konfigurerats för datainsamling läggs också till i den här rapportkonfigurationen. I annat fall visas inte webb- och appdata i innehållsexperimentrapporter.
+
+* Läs mer om krav på innehållsexperiment för webbkanaler i [det här avsnittet](../web/web-prerequisites.md#experiment-prerequisites).
+
+* Läs mer om kanalkonfiguration i appen i [det här avsnittet](../in-app/inapp-configuration.md).
 
 <!--
 When building your campaign reports, you can now see the metrics corresponding to the field groups used in the datasets you added. Go to the **[!UICONTROL Objectives]** tab and select the metrics of your choice to better fine-tune your reports. [Learn more](content-experiment.md#objectives-global)
