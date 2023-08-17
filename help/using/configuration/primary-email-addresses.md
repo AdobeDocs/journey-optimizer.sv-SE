@@ -20,12 +20,12 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_execution_address"
->title="Ange vilken adress som ska användas"
+>title="Definiera vilken adress som ska användas"
 >abstract="När det finns flera e-postadresser eller telefonnummer i databasen (personliga, professionella, osv.) kan du välja vilken som ska prioriteras för sändning."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_execution_address_header"
->title="Ange vilken adress som ska användas"
+>title="Definiera vilken adress som ska användas"
 >abstract="Redigera fälten som används för att bestämma profilens e-postadress eller telefonnummer som ska prioriteras för sändning."
 
 När du anger en profil som mål kan det finnas flera e-postadresser eller telefonnummer i databasen (professionell e-postadress, personligt telefonnummer osv.).
@@ -70,7 +70,7 @@ Körningsfältet uppdateras och kommer nu att användas som primär adress.
 
 Endast för särskilda användningsfall kan du åsidosätta det körningsfält som ställts in globalt och definiera ett annat värde på resenivån, särskilt för e-postkanalen.
 
-När du lägger till en **[!UICONTROL Email]** åtgärd till [resa](../email/create-email.md#create-email-journey-campaign)visas den primära e-postadressen under de avancerade parametrarna för resan.
+När en **[!UICONTROL Email]** åtgärd till [resa](../email/create-email.md#create-email-journey-campaign)visas den primära e-postadressen under de avancerade parametrarna för resan.
 
 I vissa specifika sammanhang kan du åsidosätta det här värdet med **[!UICONTROL Enable parameter override]** ikonen till höger om **[!UICONTROL address]** fält.
 
@@ -82,5 +82,5 @@ I vissa specifika sammanhang kan du åsidosätta det här värdet med **[!UICONT
 
 Att åsidosätta det här värdet kan vara användbart för att:
 
-* Testa ett e-postmeddelande. Du kan lägga till din egen e-postadress: när du har publicerat resan skickas e-postmeddelandet till dig.
+* Testa ett mejl. Du kan lägga till en egen e-postadress: när du har publicerat resan skickas e-postmeddelandet till dig.
 * Skicka ett e-postmeddelande till prenumeranterna av en lista. Läs mer i [det här användningsfallet](../building-journeys/message-to-subscribers-uc.md).

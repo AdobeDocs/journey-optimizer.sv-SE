@@ -31,7 +31,7 @@ Du kan också ange specifika åtgärder för att skicka meddelanden till dig:
 
 Följ stegen nedan om du vill lägga till ett meddelande under en resa:
 
-1. Påbörja resan med en [Händelse](general-events.md) eller en [Läs målgrupp](read-audience.md) aktivitet.
+1. Påbörja din resa med en [Händelse](general-events.md) eller en [Läs målgrupp](read-audience.md) aktivitet.
 
 1. Från **Åtgärder** dra och släpp en **e-post**, en **I appen**, en **SMS** eller en **Push** till arbetsytan.
 
@@ -86,7 +86,7 @@ Det gör du genom att öppna din liveresa, välja meddelandeaktivitet och klicka
 
 Du kan dock inte ändra de attribut som används i personaliseringen, vare sig det är profilattribut eller kontextuella data (från händelse- eller reseegenskaper).
 
-Om du har ändrat sammanhangsberoende data visas följande felmeddelande: ERR_AUTHORING_JOURNEYVERSION_201
+Om du ändrade sammanhangsberoende data visas följande felmeddelande: ERR_AUTHORING_JOURNEYVERSION_201
 
 Om du har ändrat profilattribut visas följande felmeddelande: ERR_AUTHORING_JOURNEYVERSION_202
 
@@ -106,7 +106,7 @@ Adobe Journey Optimizer funktion för optimering av sändningstid, som bygger p�
 Modellen för optimering av sändningstid (Send-Time Optimization) innehåller information om dina Adobe Journey Optimizer-data och tittar på användarnivå som är öppen (för e-post och push) och klickar (för e-post) för att avgöra när kunderna är mest benägna att interagera med dina meddelanden. För optimering av sändningstid krävs minst en månads meddelandespårningsdata för att kunna ge välgrundade rekommendationer. För varje användare väljer systemet automatiskt den bästa tiden med följande poäng:
 
 * Den bästa timmen varje dag i veckan för att maximera engagemanget
-* Den bästa veckodagen för att maximera engagemanget
+* Den bästa veckodagen för maximerat engagemang
 * Den bästa timmen på den bästa veckodagen för att maximera engagemanget
 
 Modellen varierar oavsett om du talar om poängsättning eller utbildning. Utbildningen genomförs varje vecka, inledningsvis och därefter varje kvartal. Poängen är en gång i veckan och därefter en gång i månaden.
@@ -130,13 +130,13 @@ Den här informationen lagras med användarens profil och hänvisas till vid kö
 >[!CONTEXTUALHELP]
 >id="jo_bestsendtime_push"
 >title="Aktivera optimering av sändningstid"
->abstract="Standardinställningen för push-meddelanden är öppningsalternativet, eftersom klickningar inte gäller för push-meddelanden. Du kan också välja att klamra de sändningstider som används av systemet genom att ange ett värde för Skicka i nästa alternativ."
+>abstract="Standardinställningen för push-meddelanden är öppningsalternativet, eftersom klickningar inte kan användas för push-meddelanden. Du kan också välja att klamra de sändningstider som används av systemet genom att ange ett värde för Skicka i nästa alternativ."
 
 Aktivera optimering av sändningstid för ett e-postmeddelande eller push-meddelande genom att välja **Sändningsoptimering** växla från aktivitetsparametrarna.
 
 ![](../building-journeys/assets/jo-message5.png)
 
-För e-postmeddelanden väljer du om du vill optimera e-postöppningar eller e-postklick genom att välja lämplig alternativknapp. Standardinställningen för push-meddelanden är öppningsalternativet, eftersom klickningar inte gäller för push-meddelanden.
+För e-postmeddelanden väljer du om du vill optimera e-postöppningar eller e-postklick genom att välja lämplig alternativknapp. Standardinställningen för push-meddelanden är öppningsalternativet, eftersom klickningar inte kan användas för push-meddelanden.
 
 Du kan också välja att klamra de sändningstider som används av systemet genom att ange ett värde för **Skicka inom nästa** alternativ. Om du väljer&quot;sex timmar&quot; som värde, [!DNL Journey Optimizer] kontrollerar varje användarprofil och väljer den optimala sändningstiden inom sex timmar från körningstiden för resan.
 

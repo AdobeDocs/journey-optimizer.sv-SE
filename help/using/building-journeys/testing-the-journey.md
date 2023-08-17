@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Testa din resa
-description: Lär dig hur du testar din resa
+description: Lär dig testa din resa
 feature: Journeys
 topic: Content Management
 role: User
@@ -25,11 +25,11 @@ ht-degree: 1%
 
 Använd testprofiler för att testa resan innan du publicerar den. I det här läget kan du testa din resa och identifiera problem med testprofiler.
 
-Det är bara testprofiler som kan gå in på en resa i testläge. Du kan antingen skapa nya testprofiler eller omvandla befintliga profiler till testprofiler. Läs mer om testprofiler i [det här avsnittet](../audience/creating-test-profiles.md).
+Det är bara testprofiler som kan ta sig in på en resa i testläge. Du kan antingen skapa nya testprofiler eller omvandla befintliga profiler till testprofiler. Läs mer om testprofiler i [det här avsnittet](../audience/creating-test-profiles.md).
 
 >[!NOTE]
 >
->Innan du testar din resa måste du åtgärda eventuella fel. Lär dig hur du kontrollerar fel innan du testar i [det här avsnittet](../building-journeys/troubleshooting.md#checking-for-errors-before-testing).
+>Innan du testar din resa måste du åtgärda eventuella fel. Lär dig kontrollera fel innan du testar i [det här avsnittet](../building-journeys/troubleshooting.md#checking-for-errors-before-testing).
 
 Så här använder du testläget:
 
@@ -61,7 +61,7 @@ Så här använder du testläget:
 
 ## Viktiga anteckningar {#important_notes}
 
-* I testläge kan du utlösa händelser med gränssnittet.
+* I testläge kan du utlösa händelser med hjälp av gränssnittet.
 * Endast personer som markerats som&quot;testprofiler&quot; i kundprofiltjänsten i realtid får delta i den testade resan. Se detta [section](../audience/creating-test-profiles.md).
 * Testläget är bara tillgängligt i utkastresor som använder ett namnutrymme. Testläget måste kontrollera om en person som deltar i resan är en testprofil eller inte och därför måste kunna nå Adobe Experience Platform.
 * Det högsta antalet testprofiler som kan gå in på en resa under en testsession är 100.
@@ -86,7 +86,7 @@ Använd **[!UICONTROL Trigger an event]** för att konfigurera en händelse som 
 
 Du måste känna till vilka profiler som är flaggade som testprofiler i Adobe Experience Platform. Testläget tillåter bara dessa profiler under resan och händelsen måste innehålla ett ID. Det förväntade ID:t beror på händelsekonfigurationen. Det kan till exempel vara ett ECID eller en e-postadress. Värdet för den här nyckeln måste läggas till i **Profilidentifierare** fält.
 
-Om resan innehåller flera händelser använder du listrutan för att välja en händelse. Konfigurera sedan de fält som skickats och körningen av den händelse som skickats för varje händelse. Med gränssnittet kan du skicka rätt information i händelsens nyttolast och kontrollera att informationstypen är korrekt. Testläget sparar de senaste parametrarna som användes i en testsession för senare bruk.
+Om resan innehåller flera händelser använder du listrutan för att välja en händelse. Konfigurera sedan de fält som skickats och körningen av den händelse som skickats för varje händelse. Gränssnittet hjälper dig att skicka rätt information i händelsens nyttolast och kontrollera att informationstypen är korrekt. Testläget sparar de senaste parametrarna som användes i en testsession för senare bruk.
 
 ![](assets/journeytest4.png)
 
@@ -96,7 +96,7 @@ Med gränssnittet kan du skicka enkla händelseparametrar. Om du vill skicka sam
 
 En teknisk användare kan också använda det här gränssnittet för att komponera händelsenyttolaster och utlösa händelser utan att behöva använda något tredjepartsverktyg.
 
-När du klickar på **[!UICONTROL Send]** testas. Personens förlopp under resan representeras av ett visuellt flöde. Vägen blir progressivt grön allt eftersom personen rör sig över resan. Om ett fel inträffar visas en varningssymbol i motsvarande steg. Du kan placera markören på den för att visa mer information om felet och få tillgång till fullständig information (när den är tillgänglig).
+När du klickar **[!UICONTROL Send]** testas. Personens förlopp under resan representeras av ett visuellt flöde. Vägen blir progressivt grön allt eftersom personen rör sig över resan. Om ett fel inträffar visas en varningssymbol i motsvarande steg. Du kan placera markören på den för att visa mer information om felet och få tillgång till fullständig information (när den är tillgänglig).
 
 ![](assets/journeytest6.png)
 
@@ -122,7 +122,7 @@ Observera att du inte kan ändra definitionen för affärshändelser i samma tes
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_test_logs"
->title="Testlägesloggar"
+>title="Loggar för testläge"
 >abstract="Knappen Visa logg visar testresultat i JSON-format. Dessa resultat visar antalet individer under resan och deras status."
 
 The **[!UICONTROL Show log]** kan du visa testresultaten. På den här sidan visas resans aktuella information i JSON-format. Med en knapp kan du kopiera hela noder. Du måste uppdatera sidan manuellt för att kunna uppdatera resans testresultat.
@@ -134,24 +134,24 @@ The **[!UICONTROL Show log]** kan du visa testresultaten. På den här sidan vis
 >
 >I testloggarna visas felkoden och felsvaret om ett fel uppstår vid anrop till ett tredjepartssystem (datakälla eller åtgärd).
 
-Antalet personer (tekniskt sett kallas de instanser) som för närvarande befinner sig under resan visas. Här är användbar information som visas för varje individ:
+Antalet personer (tekniskt sett kallas de förekomster) som för närvarande befinner sig under resan visas. Här är användbar information som visas för varje individ:
 
-* _ID_: Personens interna ID under resan. Detta kan användas för felsökning.
+* _ID_: personens interna ID under resan. Detta kan användas i felsökningssyfte.
 * _aktuellt steg_: det steg där personen befinner sig på resan. Vi rekommenderar att du lägger till etiketter till dina aktiviteter för att lättare kunna identifiera dem.
-* _aktuellt steg_ > fas: Status för den enskilda personens resa (körning, slutförd, fel eller timeout). Mer information finns nedan.
-* _aktuellt steg_ > _extraInfo_: beskrivning av felet och annan sammanhangsbaserad information.
-* _aktuellt steg_ > _fetchErrors_: information om hämtning av datafel som inträffade under det här steget.
+* _aktuellt steg_ > fas: statusen för personens resa (körning, avslutad, fel eller timeout). Mer information finns nedan.
+* _aktuellt steg_ > _extraInfo_: beskrivning av felet och annan sammanhangsberoende information.
+* _aktuellt steg_ > _hämtningsfel_: information om hämtning av datafel som inträffade under det här steget.
 * _externalKeys_: värdet för den nyckelformel som definieras i händelsen.
 * _enrichedData_: de data som resan har hämtat om resan använder datakällor.
-* _transitionHistory_: en lista med steg som personen följde. För händelser visas nyttolasten.
-* _actionExecutionErrors_ : information om de fel som uppstått.
+* _transitionHistory_: en lista med steg som den enskilda personen följde. För händelser visas nyttolasten.
+* _actionExecutionErrors_ : information om de fel som uppstod.
 
 Här är en persons olika status:
 
-* _Körs_: personen för närvarande befinner sig på resan.
-* _Slutförd_: personen befinner sig i slutet av resan.
-* _Fel_: Personen stoppas på resan på grund av ett fel.
-* _Timeout_: Personen stoppas på resan på grund av ett steg som tog för mycket tid.
+* _Körs_: den enskilda personen befinner sig för närvarande på resan.
+* _Slutförd_: personen är i slutet av resan.
+* _Fel_: personen stoppas på resan på grund av ett fel.
+* _Timeout_: personen stoppas på resan på grund av ett steg som tog för mycket tid.
 
 När en händelse aktiveras i testläget genereras en datauppsättning automatiskt med källans namn.
 

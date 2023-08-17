@@ -1,6 +1,6 @@
 ---
 title: Skapa webbsidor
-description: Lär dig hur du skapar en webbsida och redigerar dess innehåll i Journey Optimizer
+description: Lär dig skapa en webbsida och redigera dess innehåll i Journey Optimizer
 feature: Web Channel
 topic: Content Management
 role: User
@@ -30,7 +30,7 @@ I [!DNL Journey Optimizer], används webbutveckling av **Adobe Experience Cloud 
 >[!CONTEXTUALHELP]
 >id="ajo_web_url_to_edit_surface"
 >title="Bekräfta den URL som ska redigeras"
->abstract="Bekräfta webbadressen till den specifika webbsida som ska användas för att redigera innehållet som ska användas på den webbyta som definieras ovan. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
+>abstract="Bekräfta URL-adressen till den specifika webbsida som ska användas för att redigera innehållet som ska användas på den webbyta som definieras ovan. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
 >additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
 
 >[!CONTEXTUALHELP]
@@ -45,7 +45,7 @@ Följ stegen nedan när du vill börja skapa webbkampanjer.
 
    ![](assets/web-campaign-edit-content.png)
 
-1. Om du har skapat en sidmatchningsregel måste du ange en URL som matchar den här regeln: ändringarna tillämpas på alla sidor som matchar regeln. Innehållet på sidan visas.
+1. Om du har skapat en sidmatchningsregel måste du ange en URL-adress som matchar den här regeln: ändringarna kommer att gälla för alla sidor som matchar regeln. Innehållet på sidan visas.
 
    >[!NOTE]
    >
@@ -73,7 +73,7 @@ Följ stegen nedan när du vill börja skapa webbkampanjer.
 
      ![](assets/web-designer-contextual-bar.png)
 
-   * Ikonerna ovanför den högra panelen för att redigera, duplicera, ta bort eller dölja varje element.
+   * Ikonerna överst på den högra panelen för att redigera, duplicera, ta bort eller dölja varje element.
 
      ![](assets/web-designer-right-panel-icons.png)
 
@@ -110,7 +110,7 @@ Följ stegen nedan när du vill börja skapa webbkampanjer.
 
    >[!NOTE]
    >
-   >Om du vill avmarkera en komponent klickar du på knappen **[!UICONTROL ESC]** i den kontextuella blå banderollen som visas ovanpå arbetsytan.
+   >Avmarkera en komponent genom att klicka på **[!UICONTROL ESC]** i den kontextuella blå banderollen som visas ovanpå arbetsytan.
 
 1. Redigera komponenten efter behov direkt i innehållet på sidan.
 
@@ -224,7 +224,7 @@ Det är särskilt användbart när du hanterar sidor som är bakom autentisering
 
 ### Ändra enhetsstorlek {#change-device-size}
 
-Du kan ändra enhetsstorleken för webbdesignerskärmen till en fördefinierad storlek, till exempel **[!UICONTROL Tablet]** eller **[!UICONTROL Mobile landscape]** eller definiera en anpassad storlek genom att ange önskat antal pixlar.
+Du kan ändra enhetsstorleken för webbdesignerskärmen till en fördefinierad storlek, till exempel **[!UICONTROL Tablet]** eller **[!UICONTROL Mobile landscape]** eller definiera en egen storlek genom att ange önskat antal pixlar.
 
 Du kan också ändra zoomfokus - från 25 % till 400 %.
 
@@ -242,7 +242,7 @@ Möjligheten att ändra enhetsstorleken är utformad för responsiva sajter som 
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_designer_preview"
->title="Förhandsgranska webbupplevelsen"
+>title="Förhandsgranska din webbupplevelse"
 >abstract="Få en simulering av hur webbupplevelsen kommer att se ut."
 
 Följ stegen nedan för att visa en förhandsvisning av den ändrade webbupplevelsen.
@@ -270,6 +270,6 @@ Följ stegen nedan för att visa en förhandsvisning av den ändrade webbuppleve
 
 ## Instruktionsvideo{#video}
 
-I videon nedan visas hur du skapar en webbupplevelse med hjälp av webbdesignern i [!DNL Journey Optimizer] kampanjer.
+I videon nedan visas hur du skapar en webbupplevelse med webbdesignern i [!DNL Journey Optimizer] kampanjer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418803/?quality=12&learn=on)

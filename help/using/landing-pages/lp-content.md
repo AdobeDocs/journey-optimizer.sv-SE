@@ -39,7 +39,7 @@ Med hjälp av layoutaren för landningssidans innehåll kan du även utnyttja sa
 >[!CONTEXTUALHELP]
 >id="ac_lp_formfield"
 >title="Ange formulärkomponentfälten"
->abstract="Ange hur mottagarna ska se och skicka sina val från din landningssida."
+>abstract="Definiera hur dina mottagare ska se och skicka sina val från din landningssida."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/landing-pages-design/lp-content.html#lp-form-styles" text="Definiera format för landningssidor"
 
 >[!CONTEXTUALHELP]
@@ -47,7 +47,7 @@ Med hjälp av layoutaren för landningssidans innehåll kan du även utnyttja sa
 >title="Vad händer när du klickar på knappen"
 >abstract="Definiera vad som ska hända när användare skickar in landningssidans formulär."
 
-Använd **[!UICONTROL Form]** -komponenten. För att göra detta, följ nedanstående steg.
+Om du vill definiera specifikt innehåll som gör det möjligt för användare att välja och skicka sina val från landningssidan använder du **[!UICONTROL Form]** -komponenten. För att göra detta, följ nedanstående steg.
 
 1. Dra och släpp den specifika landningssidan **[!UICONTROL Form]** från den vänstra paletten till huvudarbetsytan.
 
@@ -67,15 +67,15 @@ Använd **[!UICONTROL Form]** -komponenten. För att göra detta, följ nedanst�
 
 1. Från **[!UICONTROL Checkbox 1]** kan du redigera etiketten för den här kryssrutan.
 
-1. Ange om den här kryssrutan ska avanmäla användare till eller från: samtycker de till att ta emot meddelanden eller ber de att inte bli kontaktade längre?
+1. Definiera om den här kryssrutan ska avanmäla användare till eller från: samtycker de till att ta emot meddelanden eller ber de att inte bli kontaktade längre?
 
    ![](assets/lp_designer-form-update.png)
 
    Välj bland tre alternativ nedan:
 
-   * **[!UICONTROL Opt in if checked]**: -användare måste markera kryssrutan för att godkänna (anmälan).
+   * **[!UICONTROL Opt in if checked]**: användare måste markera kryssrutan för att godkänna (anmälan).
    * **[!UICONTROL Opt out if checked]**: användare måste markera kryssrutan för att ta bort sitt samtycke (avanmälan).
-   * **[!UICONTROL Opt in if checked, opt out if unchecked]**: Med det här alternativet kan du infoga en enda kryssruta för anmälan/avanmälan. Användarna måste markera kryssrutan för att godkänna (anmälan) och avmarkera den för att ta bort sitt samtycke (avanmälan).
+   * **[!UICONTROL Opt in if checked, opt out if unchecked]**: det här alternativet gör att du kan infoga en enda kryssruta för anmälan/avanmälan. Användarna måste markera kryssrutan för att godkänna (anmälan) och avmarkera den för att ta bort sitt samtycke (avanmälan).
 
 1. Välj vad som ska uppdateras mellan följande tre alternativ:
 
@@ -83,11 +83,11 @@ Använd **[!UICONTROL Form]** -komponenten. För att göra detta, följ nedanst�
 
    * **[!UICONTROL Subscription list]**: Du måste välja den prenumerationslista som ska uppdateras om profilen markerar den här kryssrutan. Läs mer på [prenumerationslistor](subscription-list.md).
 
-      <!--![](assets/lp_designer-form-subs-list.png)-->
+     <!--![](assets/lp_designer-form-subs-list.png)-->
 
-   * **[!UICONTROL Channel (email)]**: Avanmälningen eller avanmälningen gäller hela kanalen. Om en profil som avanmäls till exempel har två e-postadresser, kommer båda adresserna att uteslutas från all kommunikation.
+   * **[!UICONTROL Channel (email)]**: Anmäl dig eller avanmäl dig gäller hela kanalen. Om en profil som avanmäls till exempel har två e-postadresser, kommer båda adresserna att uteslutas från all kommunikation.
 
-   * **[!UICONTROL Email identity]**: Avanmälan eller avanmälan gäller endast den e-postadress som användes för att få åtkomst till landningssidan. Om en profil till exempel har två e-postadresser kommer bara den som användes att välja att ta emot meddelanden från varumärket.
+   * **[!UICONTROL Email identity]**: Avanmälan eller avanmälan gäller endast den e-postadress som användes för att komma åt landningssidan. Om en profil till exempel har två e-postadresser kommer bara den som användes att välja att ta emot meddelanden från varumärket.
 
 1. Klicka **[!UICONTROL Add field]** > **[!UICONTROL Checkbox]** om du vill lägga till ytterligare en kryssruta. Upprepa stegen ovan för att definiera dess egenskaper.
 
@@ -99,7 +99,7 @@ Använd **[!UICONTROL Form]** -komponenten. För att göra detta, följ nedanst�
 
    * Ange **[!UICONTROL Label]** som visas ovanpå fältet i formuläret.
 
-   * Ange **[!UICONTROL Placeholder]** text. Den visas i fältet innan användaren fyller i fältet.
+   * Ange en **[!UICONTROL Placeholder]** text. Den visas i fältet innan användaren fyller i fältet.
 
    * Markera **[!UICONTROL Make form field mandatory]**-alternativet om det behövs.  I så fall kan landningssidan endast skickas om användaren har fyllt i detta fält. Om ett obligatoriskt fält inte är ifyllt visas ett felmeddelande när användaren skickar sidan.
 
@@ -144,7 +144,7 @@ Använd **[!UICONTROL Form]** -komponenten. För att göra detta, följ nedanst�
 
    ![](assets/lp_designer-form-style-fields.png)
 
-1. Expandera **[!UICONTROL Checkboxes]** för att definiera utseendet på kryssrutorna och motsvarande text. Du kan till exempel justera teckensnittsfamiljen eller storleken, eller kryssrutans kantlinjefärg.
+1. Expandera **[!UICONTROL Checkboxes]** för att definiera utseendet på kryssrutorna och motsvarande text. Du kan till exempel justera teckensnittsfamiljen eller storleken, eller kryssrutans kantfärg.
 
    ![](assets/lp_designer-form-style-checkboxes.png)
 
@@ -160,7 +160,7 @@ Använd **[!UICONTROL Form]** -komponenten. För att göra detta, följ nedanst�
 
    ![](assets/lp_designer-form-style-layout.png)
 
-1. Expandera **[!UICONTROL Form error]** för att justera visningen av felmeddelandet som visas om ett problem uppstår. Markera motsvarande alternativ för att förhandsgranska feltexten i formuläret.
+1. Expandera **[!UICONTROL Form error]** för att justera visningen av felmeddelandet som visas om ett problem uppstår. Markera motsvarande alternativ om du vill förhandsgranska feltexten i formuläret.
 
    ![](assets/lp_designer-form-error-preview.png)
 
@@ -194,7 +194,7 @@ För att göra detta, följ nedanstående steg:
 
    >[!CAUTION]
    >
-   >Om det finns ett specialtecken som ett bindestreck i uttrycket måste du undvika texten, inklusive bindestrecket.
+   >Om det finns ett specialtecken, t.ex. ett bindestreck i uttrycket, måste du undvika texten, inklusive bindestrecket.
 
 1. Spara ändringarna.
 

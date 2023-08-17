@@ -37,10 +37,10 @@ Om du vill få tillgång till en detaljerad lista över utelämnade e-postadress
 
 >[!CAUTION]
 >
->Behörigheterna att visa, exportera och hantera undertryckningslistan är begränsade till [Reseadministratörer](../administration/ootb-product-profiles.md#journey-administrator). Läs mer om hantering [!DNL Journey Optimizer] användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
+>Behörigheterna att visa, exportera och hantera undertryckningslistan är begränsade till [Reseadministratörer](../administration/ootb-product-profiles.md#journey-administrator). Läs mer om hantering [!DNL Journey Optimizer] användarrättigheter i [det här avsnittet](../administration/permissions-overview.md).
 
 
-Det finns filter som hjälper dig att bläddra igenom listan.
+Det finns filter som du kan använda för att bläddra igenom listan.
 
 ![](assets/suppression-list-filters.png)
 
@@ -57,9 +57,9 @@ Undertryckningskategorierna är följande:
 
 * **Hård**: Ett hårt studsande indikerar en ogiltig e-postadress (dvs. en e-postadress som inte finns). Detta innebär ett studsmeddelande från den mottagande e-postservern som uttryckligen anger att adressen är ogiltig. E-postadressen skickas omedelbart till listan över inaktiveringar.
 
-   När felet beror på ett skräppostklagomål hamnar det också i **Hård** kategori. E-postadressen till mottagaren som skickade klagomålet skickas omedelbart till suppressionslistan.
+  När felet beror på ett skräppostklagomål hamnar det också i **Hård** kategori. E-postadressen till mottagaren som skickade klagomålet skickas omedelbart till suppressionslistan.
 
-* **Mjuk**: Ett mjukt studsande är ett tillfälligt e-poststuds som inträffade för en giltig e-postadress. E-postadressen läggs till i listan efter flera försök. Mjuka fel skickar en adress till listan när felräknaren når gränsvärdet. [Läs mer om återförsök](retries.md)
+* **Mjuk**: Ett mjukt studs är ett tillfälligt e-poststudsande som inträffar för en giltig e-postadress. E-postadressen läggs till i listan efter flera försök. Mjuka fel skickar en adress till listan när felräknaren når gränsvärdet. [Läs mer om återförsök](retries.md)
 
 * **Manuell**: Manuella fel har lagts till manuellt i listan över undertryckningar. [Läs mer](#add-addresses-and-domains)
 
@@ -81,7 +81,7 @@ Möjliga orsaker till leveransfel är:
 
 >[!NOTE]
 >
->Användare som avbeställer prenumerationen får inte e-post från [!DNL Journey Optimizer]Därför kan deras e-postadresser inte skickas till listan över inaktiveringar. Deras val hanteras på Experience Platform-nivå. [Läs mer om att avanmäla dig](../privacy/opt-out.md)
+>Användare som avbeställer prenumerationen får inte e-post från [!DNL Journey Optimizer]Därför kan deras e-postadresser inte skickas till listan över inaktiveringar. Deras val hanteras på Experience Platform-nivå. [Läs mer om avanmälan](../privacy/opt-out.md)
 
 
 ### Undertryckningsregler  {#suppression-rules}
@@ -99,15 +99,15 @@ Från **[!UICONTROL Suppression list]** kan du även redigera den parameter för
 >[!CONTEXTUALHELP]
 >id="ajo_admin_suppression_list"
 >title="Lägg till e-postmeddelanden eller domäner i listan över inaktiveringar"
->abstract="Du kan lägga till e-postadresser eller domäner manuellt för att fylla i listan över inaktiveringar: en åt gången eller i gruppläge via en CSV-filöverföring. Dessa specifika e-postadresser och/eller domäner kommer inte att kunna skickas."
+>abstract="Om du vill fylla i undertryckningslistan kan du manuellt lägga till e-postadresser eller domäner: en i taget eller i gruppläge via en CSV-filöverföring. Dessa specifika e-postadresser och/eller domäner kommer inte att kunna skickas."
 
-När ett meddelande inte kan levereras till en e-postadress läggs adressen automatiskt till i listan över undertryckningar baserat på den definierade undertryckningsregeln eller avhoppsantalet.
+När ett meddelande inte kan levereras till en e-postadress läggs adressen automatiskt till i listan över undertryckningar baserat på den definierade undertryckningsregeln eller studsantalet.
 
 Du kan även fylla i [!DNL Journey Optimizer] utelämningslista om du vill exkludera specifika e-postadresser och/eller domäner från din sändning.
 
 >[!NOTE]
 >
->Det kan ta upp till 60 minuter i [!DNL Journey Optimizer] för att ta hänsyn till de utelämnade adresserna i utgående e-postmeddelanden.
+>Det kan ta upp till 60 minuter i [!DNL Journey Optimizer] för att ta hänsyn till inaktiverade adresser i utgående e-postmeddelanden.
 
 Du kan lägga till e-postadresser eller domäner [en åt gången](#add-one-address-or-domain), eller [i gruppläge](#upload-csv-file) via en CSV-filöverföring.
 
@@ -134,7 +134,7 @@ Följ stegen nedan om du vill lägga till en e-postadress eller en domän i list
 
    >[!NOTE]
    >
-   >Kontrollera att du anger en giltig e-postadress (till exempel abc@company.com) eller domän (till exempel abc.company.com).
+   >Se till att du anger en giltig e-postadress (till exempel abc@company.com) eller domän (till exempel abc.company.com).
 
 1. (valfritt) Ange en orsak. Alla ASCII-utskrivbara tecken mellan 32 och 126 är tillåtna i det här fältet.
 
@@ -169,6 +169,7 @@ Följ stegen nedan om du vill lägga till en grupp e-postadresser eller en domä
    >Ändra inte namnet på kolumnerna i CSV-mallen.
    >
    >Filstorleken får inte överstiga 1 MB.
+   >
 
 1. När du är klar drar och släpper du CSV-filen och använder **[!UICONTROL Submit]** för att bekräfta.
 
@@ -190,7 +191,7 @@ Möjliga statusar är:
 
 Om vissa adresser inte har rätt format läggs de inte till i [!DNL Journey Optimizer] lista över inaktiveringar.
 
-När överföringen är klar kopplas den då till en rapport. Du kan ladda ned den för att kontrollera de fel som påträffats<!-- and understand why they were not added to the suppression list-->.
+När överföringen är klar kopplas den då till en rapport. Du kan ladda ned den för att kontrollera de fel som uppstått<!-- and understand why they were not added to the suppression list-->.
 
 ![](assets/suppression-list-recent-uploads-report.png)
 
@@ -208,7 +209,7 @@ Domain,!examplecom,MANUAL,Invalid format for value: !examplecom
 
 ## Ta bort en adress från listan över inaktiveringar{#remove-from-suppression-list}
 
-Du kan uppdatera listan för inaktivering manuellt. Att ta bort en e-postadress från karantän är en känslig åtgärd som kan påverka IP-anseendet och leveransfrekvensen. Var försiktig när du fortsätter.
+Du kan uppdatera listan för inaktivering manuellt. Att ta bort en e-postadress från karantän är en känslig åtgärd som kan påverka IP-anseendet och leveransfrekvensen. Var noga med att fortsätta med försiktighet.
 
 När du tar bort en e-postadress eller en domän från listan över inaktiveringar kan Adobe Journey Optimizer börja leverera till den här adressen eller domänen igen.  Läs mer om slutprodukter i [det här avsnittet](../reports/deliverability.md).
 
@@ -219,13 +220,13 @@ Om du vill ta bort en adress från listan kan du använda **[!UICONTROL Delete]*
 
 >[!NOTE]
 >
->Fortsätt med extra omsorg när du funderar på att ta bort en e-postadress eller domän. Om du är osäker kan du kontakta en expert på slutprodukter.
+>Fortsätt med extra omsorg när du överväger att ta bort en e-postadress eller domän. Om du är osäker kan du kontakta en expert på slutprodukter.
 
 Om en Internet-leverantör till exempel har ett avbrott markeras e-post felaktigt som fasta studsar eftersom de inte kan levereras till mottagaren. Dessa e-postadresser måste tas bort från listan över inaktiveringar.
 
 Om du vill hämta adresserna kör du en specifik fråga med anpassade parametrar, baserat på driftstoppets kontext. [Läs mer i det här exemplet](../data/datasets-query-examples.md#isp-outage-query).
 
-När de berörda e-postadresserna har identifierats kan du filtrera listan så att de visas. Exempel: ett avbrott i en Internet-leverantör inträffar från den 11 november 2022 till den 13 november 2022 på **test.com** domän, filtrera adresserna som lagts till i listan under tidsramen enligt nedan:
+När de berörda e-postadresserna har identifierats kan du filtrera listan så att de visas. Exempel: ett avbrott i en Internet-leverantör inträffar från 11 november 2022 till 13 november 2022 på **test.com** domän, filtrera adresserna som lagts till i listan under tidsramen enligt nedan:
 
 ![](assets/remove-from-supp-list.png)
 
@@ -254,7 +255,7 @@ Om du vill exportera listan över inaktiveringar som en CSV-fil följer du stege
    >
    >Hämtningstiden beror på filstorleken, vilket innebär antalet adresser som finns i listan över inaktiveringar.
    >
-   >En hämtningsbegäran kan bearbetas åt gången för en viss sandlåda.
+   >En nedladdningsbegäran kan bearbetas i taget för en viss sandlåda.
 
 1. När filen har skapats får du ett meddelande. Klicka på klockikonen överst till höger på skärmen för att visa den.
 

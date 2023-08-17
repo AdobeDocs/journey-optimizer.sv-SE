@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Arbeta med arbetsytan
-description: Lär dig arbeta med arbetsytan
+description: Lär dig hur du arbetar med arbetsytan
 feature: Journeys
 topic: Content Management
 role: User
@@ -35,7 +35,7 @@ Stegen för att komponera en målgrupp på arbetsytan är följande:
 
 Det första steget för att skapa en komposition är att välja en eller flera befintliga målgrupper som grund för din komposition.
 
-1. Välj **[!UICONTROL Audience]** aktiviteten anger sedan en etikett för aktiviteten.
+1. Välj **[!UICONTROL Audience]** anger aktiviteten sedan en etikett för aktiviteten.
 
 1. Välj målgrupp:
 
@@ -48,7 +48,7 @@ Det första steget för att skapa en komposition är att välja en eller flera b
 
 * **[!UICONTROL Union]**: inkludera alla profiler från de valda målgrupperna,
 * **[!UICONTROL Intersection]**: innehåller profiler som är gemensamma för alla valda målgrupper,
-* **[!UICONTROL Exclude overlap]**: innehåller profiler som bara tillhör en av målgrupperna. Profiler som tillhör fler än en publik inkluderas inte.
+* **[!UICONTROL Exclude overlap]**: innehåller profiler som endast tillhör en av målgrupperna. Profiler som tillhör fler än en publik inkluderas inte.
 
 I det här exemplet vill vi inrikta oss på alla profiler som tillhör publikerna guld och silver.
 
@@ -60,19 +60,19 @@ När målgrupper har valts visas det uppskattade antalet profiler längst ned i 
 
 Lägg till aktiviteter efter att du har valt den första målgruppen för att förfina urvalet.
 
-Det gör du genom att klicka på plusknappen (+) på kompositionsbanan och sedan välja önskad aktivitet. Den högra rutan öppnas och du kan konfigurera den nyligen tillagda aktiviteten.
+Det gör du genom att klicka på plusknappen (+) på kompositionsbanan och sedan välja önskad aktivitet. Den högra rutan öppnas så att du kan konfigurera den nyligen tillagda aktiviteten.
 
 ![](assets/audiences-select-activity.png)
 
 Tillgängliga aktiviteter är:
 
-* [Målgrupp](#audience): innehålla ytterligare profiler som tillhör en eller flera befintliga målgrupper,
-* [Exkludera](#exclude): utesluta profiler som tillhör en befintlig målgrupp eller utesluta profiler som bygger på specifika attribut,
-* [Förfina](#enrich): berika er målgrupp med ytterligare attribut från Adobe Experience Platform datauppsättningar,
-* [Rankning](#rank): rangordna profiler baserat på ett specifikt attribut, ange antalet profiler som ska behållas och inkluderas i din komposition,
+* [Målgrupp](#audience): innehåller ytterligare profiler som tillhör en eller flera befintliga målgrupper,
+* [Exkludera](#exclude): exkludera profiler som tillhör en befintlig publik eller exkludera profiler som baseras på specifika attribut,
+* [Förfina](#enrich): berika publiken med ytterligare attribut från Adobe Experience Platform dataset,
+* [Rankning](#rank): Rangordna profiler baserat på ett specifikt attribut, ange antalet profiler som ska behållas och inkluderas i din komposition,
 * [Dela](#split): dela upp kompositionen i flera banor baserat på slumpmässiga procentsatser eller attribut.
 
-Du kan lägga till så många **[!UICONTROL Audience]** och **[!UICONTROL Exclude]** aktiviteter efter behov i din komposition. Inga ytterligare aktiviteter kan dock läggas till efter **[!UICONTROL Rank]** och **[!UICONTROL Split]** aktiviteter.
+Du kan lägga till så många **[!UICONTROL Audience]** och **[!UICONTROL Exclude]** aktiviteter efter behov i din sammansättning. Inga ytterligare aktiviteter kan dock läggas till efter **[!UICONTROL Rank]** och **[!UICONTROL Split]** aktiviteter.
 
 Du kan ta bort en aktivitet från arbetsytan när som helst genom att klicka på knappen Ta bort i den högra rutan.  Om aktiviteten som du vill ta bort är överordnad andra aktiviteter i kompositionen visas ett meddelande, som du kan använda för att ange om du bara vill ta bort den markerade aktiviteten eller alla dess underordnade aktiviteter.
 
@@ -128,7 +128,7 @@ The **[!UICONTROL Exclude]** kan du utesluta profiler från din komposition. Det
 >[!CONTEXTUALHELP]
 >id="ajo_ao_enrich_dataset"
 >title="Datauppsättning för berikning"
->abstract="Välj den datauppsättning för berikning som innehåller de data som du vill koppla till målgruppen."
+>abstract="Välj den datauppsättning för berikning som innehåller de data som du vill associera med målgruppen."
 
 >[!CONTEXTUALHELP]
 >id="ajo_ao_enrich_criteria"

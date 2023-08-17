@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Konfigurera e-postinställningar {#email-settings}
 
-Om du vill börja skapa ett e-postmeddelande måste du skapa e-postkanalsytor som definierar alla tekniska parametrar som krävs för dina meddelanden. [Lär dig hur du skapar ytor](../configuration/channel-surfaces.md)
+Om du vill börja skapa ett e-postmeddelande måste du skapa e-postkanalsytor som definierar alla tekniska parametrar som krävs för dina meddelanden. [Lär dig skapa ytor](../configuration/channel-surfaces.md)
 
 Definiera e-postinställningarna i det dedikerade avsnittet i kanalytans konfiguration.
 
@@ -39,7 +39,7 @@ E-postytans konfiguration hämtas för att skicka kommunikation enligt logiken n
 >[!CONTEXTUALHELP]
 >id="ajo_admin_presets_emailtype"
 >title="Definiera e-postkategorin"
->abstract="Välj den typ av e-postmeddelanden som ska skickas när du använder den här ytan: Marknadsföring för e-postreklam, som kräver användargodkännande, eller Transactional för icke-kommersiella e-postmeddelanden, som också kan skickas till profiler som inte längre prenumererar i specifika sammanhang."
+>abstract="Välj vilken typ av e-postmeddelanden som ska skickas när du använder den här ytan: Marknadsföring för marknadsföringsmeddelanden, som kräver användarens samtycke, eller Transaktion för icke-kommersiella e-postmeddelanden, som också kan skickas till profiler som inte längre prenumererar i specifika sammanhang."
 
 I **E-POSTTYP** väljer du den typ av meddelande som ska skickas med ytan: **Marknadsföring** eller **Transactional**.
 
@@ -51,7 +51,7 @@ När du skapar ett meddelande måste du välja en giltig kanalyta som matchar de
 
 ## Underdomän- och IP-pooler {#subdomains-and-ip-pools}
 
-I **Underdomän- och IP-pooler** måste du
+I **Underdomän- och IP-pooler** måste du:
 
 1. Välj den underdomän som ska användas för att skicka e-postmeddelanden. [Läs mer](../configuration/about-subdomain-delegation.md)
 
@@ -71,7 +71,7 @@ När en IP-pool har valts visas PTR-information när du hovrar över IP-adresser
 
 >[!NOTE]
 >
->Om en PTR-post inte är konfigurerad kan du kontakta din Adobe-representant.
+>Om en PTR-post inte är konfigurerad kan du kontakta Adobe.
 
 ## List-Unsubscribe {#list-unsubscribe}
 
@@ -91,7 +91,7 @@ Länken för att avbryta prenumerationen består av två element:
 
 * An **avbeställ e-postadress** som alla avbeställningar skickas till.
 
-  I [!DNL Journey Optimizer], är e-postadressen för avanmälan standard **[!UICONTROL Mailto (unsubscribe)]** som visas i kanalytan, baserat på [vald underdomän](#subdomains-and-ip-pools).
+  I [!DNL Journey Optimizer], är e-postadressen för avanmälan standard **[!UICONTROL Mailto (unsubscribe)]** adressen som visas i kanalytan, baserat på [vald underdomän](#subdomains-and-ip-pools).
 
   ![](assets/preset-list-unsubscribe-mailto.png)
 
@@ -115,11 +115,11 @@ I **[!UICONTROL Header parameters]** anger du avsändarens namn och e-postadress
 
 * **[!UICONTROL Sender name]**: Avsändarens namn, till exempel ditt varumärkes namn.
 
-* **[!UICONTROL Sender email]**: E-postadressen som du vill använda för din kommunikation.
+* **[!UICONTROL Sender email]**: Den e-postadress som du vill använda för din kommunikation.
 
 * **[!UICONTROL Reply to (name)]**: Namnet som ska användas när mottagaren klickar på **Svara** i klientprogramvaran för e-post.
 
-* **[!UICONTROL Reply to (email)]**: E-postadressen som ska användas när mottagaren klickar på **Svara** i klientprogramvaran för e-post. [Läs mer](#reply-to-email)
+* **[!UICONTROL Reply to (email)]**: Den e-postadress som ska användas när mottagaren klickar på **Svara** i klientprogramvaran för e-post. [Läs mer](#reply-to-email)
 
 * **[!UICONTROL Error email]**: Alla fel som genereras av Internet-leverantörer efter några dagar efter att e-post har levererats (asynkrona studsar) tas emot på den här adressen.
 
@@ -199,12 +199,12 @@ Som standard är [återförsökstid](../configuration/retries.md#retry-duration)
 Du måste ange ett heltalsvärde (i timmar eller minuter) inom följande intervall:
 
 * För marknadsföringsmeddelanden är den minsta återförsöksperioden 6 timmar.
-* För transaktionsmeddelanden är den minsta återförsöksperioden 10 minuter.
+* För transaktionsmejl är den minsta återförsöksperioden 10 minuter.
 * För båda e-posttyperna är den maximala återförsöksperioden 84 timmar (eller 5 040 minuter).
 
 Läs mer om återförsök i [det här avsnittet](../configuration/retries.md).
 
-## URL-spårning {#url-tracking}
+## URL-uppföljning {#url-tracking}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_utm"
@@ -213,12 +213,12 @@ Läs mer om återförsök i [det här avsnittet](../configuration/retries.md).
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_url_preview"
->title="Förhandsgranska parametrar för URL-spårning"
+>title="Förhandsgranska URL-spårningsparametrar"
 >abstract="Granska hur spårningsparametrar läggs till i de URL:er som finns i ditt e-postinnehåll."
 
 Du kan använda **[!UICONTROL URL tracking parameters]** för att mäta effektiviteten i era marknadsföringssatsningar över olika kanaler. Den här funktionen är valfri.  
 
-Parametrarna som definieras i det här avsnittet läggs till i slutet av de URL:er som ingår i e-postmeddelandeinnehållet. Du kan sedan hämta parametrarna i webbanalysverktyg som Adobe Analytics eller Google Analytics och skapa olika resultatrapporter.
+Parametrarna som definieras i det här avsnittet läggs till i slutet av de URL:er som ingår i e-postmeddelandeinnehållet. Du kan sedan hämta parametrarna i webbanalysverktyg som Adobe Analytics eller Google Analytics och skapa olika prestandarapporter.
 
 Du kan lägga till upp till 10 spårningsparametrar med **[!UICONTROL Add new parameter]** -knappen.
 
@@ -232,13 +232,13 @@ Du kan också redigera varje **[!UICONTROL Value]** fält med [Uttrycksredigerar
 
 Följande fördefinierade värden är tillgängliga via uttrycksredigeraren:
 
-* **Källåtgärds-ID**: ID för e-poståtgärden som lagts till i resan eller kampanjen.
+* **Källåtgärds-ID**: ID för den e-poståtgärd som lagts till i resan eller kampanjen.
 
-* **Namn på källåtgärd**: Namnet på den e-poståtgärd som lagts till i resan eller kampanjen.
+* **Namn på källåtgärd**: namn på den e-poståtgärd som lagts till i resan eller kampanjen.
 
 * **Käll-ID**: ID för resan eller kampanjen som e-postmeddelandet skickades med.
 
-* **Källnamn**: namnet på den resa eller kampanj som e-postmeddelandet skickades med.
+* **Källnamn**: namn på resan eller kampanjen som e-postmeddelandet skickades med.
 
 * **Källversions-ID**: ID för resan eller kampanjversionen som e-postmeddelandet skickades med.
 
@@ -246,7 +246,7 @@ Följande fördefinierade värden är tillgängliga via uttrycksredigeraren:
 
 >[!NOTE]
 >
->Du kan kombinera textvärden och använda sammanhangsberoende attribut från uttrycksredigeraren. Varje **[!UICONTROL Value]** -fältet kan innehålla ett antal tecken upp till gränsen på 5 kB.
+>Du kan kombinera textvärden och använda sammanhangsberoende attribut från uttrycksredigeraren. Varje **[!UICONTROL Value]** får innehålla ett antal tecken upp till gränsen på 5 kB.
 
 <!--You can drag and drop the parameters to reorder them.-->
 

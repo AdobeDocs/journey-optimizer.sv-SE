@@ -1,6 +1,6 @@
 ---
 title: Skapa personaliserade erbjudanden
-description: Lär dig hur du skapar, konfigurerar och hanterar dina erbjudanden
+description: Lär dig hur du skapar, konfigurerar och hanterar erbjudanden
 feature: Offers
 topic: Integrations
 role: User
@@ -18,7 +18,7 @@ ht-degree: 3%
 Innan du skapar ett erbjudande måste du kontrollera att du har skapat:
 
 * A **placering** i vilket erbjudandet kommer att visas. Se [Skapa placeringar](../offer-library/creating-placements.md)
-* Om du vill lägga till ett villkor för behörighet: a **beslutsregel** som kommer att definiera villkoren för hur erbjudandet ska presenteras. Se [Skapa beslutsregler](../offer-library/creating-decision-rules.md).
+* Om du vill lägga till ett villkor för behörighet: **beslutsregel** som kommer att definiera villkoren för hur erbjudandet ska presenteras. Se [Skapa beslutsregler](../offer-library/creating-decision-rules.md).
 * En eller flera **samlingskvalificerare** (tidigare kallat &quot;taggar&quot;) som du kanske vill koppla till erbjudandet. Se [Skapa samlingskvalificerare](../offer-library/creating-tags.md).
 
 ➡️ [Upptäck den här funktionen i en video](#video)
@@ -31,7 +31,7 @@ Listan över personaliserade erbjudanden finns på **[!UICONTROL Offers]** -meny
 
 >[!CONTEXTUALHELP]
 >id="od_offer_attributes"
->title="Om attribut för erbjudanden"
+>title="Om attribut för erbjudande"
 >abstract="Med attribut för erbjudanden kan du koppla nyckelvärdepar till erbjudandet i rapporterings- och analyssyfte."
 
 >[!CONTEXTUALHELP]
@@ -87,7 +87,7 @@ När regler och begränsningar för behörighet har definierats visas en sammanf
 
    ![](../assets/offer-summary-estimate.png)
 
-1. När erbjudandet är klart att visas för användarna klickar du på **[!UICONTROL Finish]**.
+1. När erbjudandet är klart för användarna klickar du på **[!UICONTROL Finish]**.
 
 1. Välj **[!UICONTROL Save and approve]**.
 
@@ -107,7 +107,7 @@ I erbjudandelistan kan du välja erbjudandet för att visa dess egenskaper. Du k
 
 ![](../assets/offer_created.png)
 
-Välj **[!UICONTROL Edit]** för att gå tillbaka till erbjudandeversionen där du kan ändra erbjudandets [information](#create-offer), [representationer](#representations)och redigera [regler och begränsningar för behörighet](#eligibility).
+Välj **[!UICONTROL Edit]** för att gå tillbaka till erbjudandeversionen där du kan ändra erbjudandets [information](#create-offer), [representationer](#representations)och du kan redigera [regler och begränsningar för behörighet](#eligibility).
 
 Välj ett godkänt erbjudande och klicka på **[!UICONTROL Undo approve]** för att återställa erbjudandestatusen till **[!UICONTROL Draft]**.
 
@@ -142,10 +142,10 @@ När ett erbjudande har skapats kan du klicka på dess namn i listan.
 
 ![](../assets/offer_click-name.png)
 
-På så sätt kan du få tillgång till detaljerad information om erbjudandet. Välj **[!UICONTROL Change log]** tabba till [övervaka alla ändringar](../get-started/user-interface.md#monitoring-changes) som har gjorts i erbjudandet.
+På så sätt kan du få tillgång till detaljerad information om erbjudandet. Välj **[!UICONTROL Change log]** tabba till [övervaka alla ändringar](../get-started/user-interface.md#monitoring-changes) som har erbjudandet.
 
 ![](../assets/offer_information.png)
 
-## Videokurs {#video}
+## Självstudievideo {#video}
 
 >[!VIDEO](https://video.tv.adobe.com/v/329375?quality=12)

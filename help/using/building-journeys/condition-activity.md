@@ -37,7 +37,7 @@ Följande typer av villkor är tillgängliga:
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_expression_simple"
->title="Om redigeraren för enkla uttryck"
+>title="Om den enkla uttrycksredigeraren"
 >abstract="I redigeringsläget för enkla uttryck kan du utföra enkla frågor baserat på en kombination av fält. Alla tillgängliga fält visas till vänster på skärmen. Dra och släpp fält till huvudzonen. Om du vill kombinera de olika elementen, låser du ihop dem till varandra för att skapa olika grupper och/eller gruppnivåer. Du kan sedan välja en logisk operatör för att kombinera element på samma nivå."
 
 När du använder flera villkor under en resa kan du definiera etiketter för var och en av dem för att lättare kunna identifiera dem.
@@ -66,7 +66,7 @@ Om du använder [Adobe Experience Platform segmenteringstjänst](https://experie
 
 >[!NOTE]
 >
->Du kan inte utföra frågor på tidsserier (till exempel en lista över inköp, tidigare klick på meddelanden) med den enkla redigeraren. För detta behöver du den avancerade redigeraren. Läs [den här sidan](expression/expressionadvanced.md).
+>Du kan inte utföra frågor på tidsserier (till exempel en lista över inköp, tidigare klick på meddelanden) med den enkla redigeraren. För att göra detta måste du använda den avancerade redigeraren. Läs [den här sidan](expression/expressionadvanced.md).
 
 När ett fel inträffar i en åtgärd eller ett villkor upphör en individs resa. Det enda sättet att få den att fortsätta är att markera rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [det här avsnittet](../building-journeys/using-the-journey-designer.md#paths).
 
@@ -92,7 +92,7 @@ På så sätt kan du utföra olika åtgärder beroende på timmen på dagen och/
 
 Tre filtreringsalternativ är tillgängliga:
 
-* Timme: gör att du kan ställa in ett villkor baserat på tidpunkten på dagen. Sedan definierar du start- och sluttider. Enskilda personer anger bara sökvägen under angivet timintervall.
+* Timme: gör att du kan ställa in ett villkor baserat på tidpunkten på dagen. Sedan definierar du start- och sluttider. Enskilda personer anger bara sökvägen under det angivna timintervallet.
 * Veckodag: gör att du kan ställa in ett villkor baserat på veckodag. Sedan väljer du vilka dagar du vill att enskilda personer ska ange sökvägen.
 * Veckodag och timma: det här alternativet kombinerar de två första alternativen.
 
@@ -100,7 +100,7 @@ Tre filtreringsalternativ är tillgängliga:
 
 Med det här alternativet kan du slumpmässigt dela målgruppen för att definiera olika åtgärder för varje grupp. Definiera antalet delningar och partitioneringen för varje sökväg. Delningsberäkningen är statistisk eftersom systemet inte kan förutse hur många personer som kommer att flöda i den här kundresan. Därför har delningen en mycket låg felmarginal. Den här funktionen är baserad på en slumpmässig Java-mekanism (se det här [page](https://docs.oracle.com/javase/7/docs/api/java/util/Random.html)).
 
-I testläge väljs alltid den övre grenen när en delning nås. Du kan ordna om placeringen av de delade grenarna om du vill att testet ska välja en annan bana. Se [den här sidan](../building-journeys/testing-the-journey.md)
+I testläge väljs alltid den översta grenen när en delning nås. Du kan ordna om placeringen av de delade grenarna om du vill att testet ska välja en annan bana. Se [den här sidan](../building-journeys/testing-the-journey.md)
 
 >[!NOTE]
 >
@@ -130,7 +130,7 @@ Du kan använda den här villkorstypen för att öka volymen på dina leveranser
 
 Standardvärdet är 1 000.
 
-Räknaren gäller endast den valda reseversionen. Räknaren återställs till noll när resan dupliceras eller när en ny version skapas. Efter en återställning tar de infogade profilerna den nominella sökvägen igen tills räknargränsen nås.
+Räknaren gäller bara för den valda reseversionen. Räknaren återställs till noll när resan dupliceras eller när en ny version skapas. Efter en återställning tar de infogade profilerna den nominella sökvägen igen tills räknargränsen nås.
 
 När en övre profil definieras för en återkommande resa återställs inte räknaren efter varje upprepning.
 
@@ -139,7 +139,7 @@ Den nominella banan har alltid företräde framför den alternativa banan, även
 Här följer de tröskelvärden som ska beaktas för att se till att gränsvärdet uppnås:
 
 * För ett lock som är större än 10000 måste antalet distinkta profiler som ska injiceras vara minst 1,3 gånger så stort som locket.
-* För en kapsyl under 10000 måste antalet distinkta profiler som ska injiceras vara 1000 plus kapsylen.
+* För ett lock under 10000 måste antalet distinkta profiler som ska injiceras vara 1000 plus locket.
 
 Profilände beaktas inte i testläge.
 
@@ -149,12 +149,12 @@ Profilände beaktas inte i testläge.
 
 I det här avsnittet beskrivs hur du använder en målgrupp i ett resevillkor. Mer information om målgrupper och hur du bygger dem finns i [det här avsnittet](../audience/about-audiences.md).
 
-Så här använder du en målgrupp i ett resevillkor:
+Följ de här stegen för att använda en målgrupp i ett resevillkor:
 
-1. Öppna en resa, släpp en **[!UICONTROL Condition]** och välj **Villkor för datakälla**.
+1. Öppna en resa, släpp en **[!UICONTROL Condition]** -aktivitet och välj **Villkor för datakälla**.
    ![](assets/journey47.png)
 
-1. Klicka **[!UICONTROL Add a path]** för varje extra sökväg som behövs. För varje bana klickar du på **[!UICONTROL Expression]** fält.
+1. Klicka **[!UICONTROL Add a path]** för varje extra sökväg som behövs. Klicka på **[!UICONTROL Expression]** fält.
 
    ![](assets/segment3.png)
 

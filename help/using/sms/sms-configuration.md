@@ -25,7 +25,7 @@ Adobe Journey Optimizer är för närvarande integrerat med tredjepartsleverant�
 
 Innan du konfigurerar SMS måste du skapa ett konto hos någon av dessa SMS-leverantörer för att ta emot API-token och tjänst-ID, vilket gör att du kan upprätta en anslutning mellan Adobe Journey Optimizer och den tillämpliga SMS-providern.
 
-Din användning av SMS-tjänster regleras av ytterligare villkor från den gällande SMS-leverantören. Eftersom Sinch och Twilio är tredjepartsprodukter som är tillgängliga för Adobe Journey Optimizer-användare via en integrering måste användare av Sinch eller Twilio kontakta den tillämpliga SMS-leverantören för att få hjälp med eventuella problem eller frågor som rör SMS-tjänsterna. Adobe kontrollerar inte och ansvarar inte för tredjepartsprodukter.
+Din användning av SMS-tjänster kommer att regleras av ytterligare villkor från den gällande SMS-leverantören. Eftersom Sinch och Twilio är tredjepartsprodukter som är tillgängliga för Adobe Journey Optimizer-användare via en integrering måste användare av Sinch eller Twilio kontakta den tillämpliga SMS-leverantören för att få hjälp med eventuella problem eller frågor som rör SMS-tjänsterna. Adobe kontrollerar inte och ansvarar inte för tredjepartsprodukter.
 
 >[!CAUTION]
 >
@@ -59,23 +59,23 @@ Så här konfigurerar du din SMS-leverantör med Journey Optimizer:
 
    * För **[!DNL Sinch]**:
 
-      * **[!UICONTROL Name]**: Välj ett namn för dina API-autentiseringsuppgifter.
+      * **[!UICONTROL Name]**: välj ett namn för API-autentiseringsuppgifterna.
 
-      * **[!UICONTROL Service ID]** och **[!UICONTROL API Token]**: gå till API:er-sidan och hitta dina autentiseringsuppgifter på fliken SMS.  [Läs mer](https://developers.sinch.com/docs/sms/getting-started/)
+      * **[!UICONTROL Service ID]** och **[!UICONTROL API Token]**: du kommer åt API:erna på fliken SMS.  [Läs mer](https://developers.sinch.com/docs/sms/getting-started/)
 
    * För **[!DNL Twilio]**:
 
-      * **[!UICONTROL Name]**: Välj ett namn för dina API-autentiseringsuppgifter.
+      * **[!UICONTROL Name]**: välj ett namn för API-autentiseringsuppgifterna.
 
-      * **[!UICONTROL Account SID]** och **[!UICONTROL Auth Token]**: gå till rutan Kontoinformation på sidan Twilio Console Dashboard för att hitta dina inloggningsuppgifter.
+      * **[!UICONTROL Account SID]** och **[!UICONTROL Auth Token]**: gå till rutan Kontoinformation på kontrollpanelssidan för din Twilio Console för att hitta dina inloggningsuppgifter.
 
       * **[!UICONTROL Message SID]**: Ange den unika identifierare som tilldelats alla meddelanden som skapas av Twilios API. [Läs mer](https://support.twilio.com/hc/en-us/articles/223134387-What-is-a-Message-SID-)
 
    * För **[!DNL Infobip]**:
 
-      * **[!UICONTROL Name]**: Välj ett namn för dina API-autentiseringsuppgifter.
+      * **[!UICONTROL Name]**: välj ett namn för API-autentiseringsuppgifterna.
 
-      * **[!UICONTROL API base URL]** och **[!UICONTROL API token]**: gå till webbgränssnittets hemsida eller API-nyckelhanteringssidan för att hitta dina inloggningsuppgifter. [Läs mer](https://www.infobip.com/docs/api)
+      * **[!UICONTROL API base URL]** och **[!UICONTROL API token]**: gå till webbgränssnittets hemsida eller API-nyckelhanteringssidan för att hitta dina autentiseringsuppgifter. [Läs mer](https://www.infobip.com/docs/api)
 
    ![](assets/sms_7.png)
 
@@ -88,7 +88,7 @@ När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu s
 >[!CONTEXTUALHELP]
 >id="ajo_admin_surface_sms_type"
 >title="Definiera SMS-kategorin"
->abstract="Välj typ av SMS-meddelanden med den här ytan: Marknadsföring för SMS-kampanjmeddelanden, som kräver användarens samtycke, eller Transactional för icke-kommersiella SMS-meddelanden, som återställning av lösenord."
+>abstract="Välj typ av SMS-meddelanden med den här ytan: Marknadsföring för SMS-meddelanden som kräver användarens samtycke eller Transaktionsmeddelanden för icke-kommersiella SMS-meddelanden, till exempel lösenordsåterställning."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/privacy/consent/opt-out.html#sms-opt-out-management" text="Avanmäl dig i SMS-marknadsföringsmeddelanden"
 
 När SMS-kanalen har konfigurerats måste du skapa en kanalyta för att kunna skicka SMS-meddelanden från **[!DNL Journey Optimizer]**.
@@ -113,7 +113,7 @@ Så här skapar du en kanalyta:
 
    * Välj **[!UICONTROL SMS Type]** som ska skickas med ytan: **[!UICONTROL Transactional]** eller **[!UICONTROL Marketing]**.
 
-      * Välj **Marknadsföring** för SMS: dessa meddelanden kräver användarens samtycke.
+      * Välj **Marknadsföring** för marknadsföringsmeddelanden: dessa meddelanden kräver användarens samtycke.
       * Välj **Transactional** för icke-kommersiella meddelanden, t.ex. orderbekräftelse, meddelanden om lösenordsåterställning eller leveransinformation.
 
      >[!CAUTION]

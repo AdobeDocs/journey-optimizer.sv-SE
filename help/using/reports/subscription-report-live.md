@@ -20,7 +20,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_subscription_live_report"
 >title="Direktprenumerationsrapport"
->abstract="Med prenumerationens Live-rapport kan du mäta och visualisera dina prenumeranters aktivitet i realtid bara under de senaste 24 timmarna. Din rapport är uppdelad i olika widgetar som detaljerar dina prenumerationer och avbeställningar. Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort."
+>abstract="Med prenumerationens Live-rapport kan du bara mäta och visualisera dina prenumeranters aktivitet i realtid under de senaste 24 timmarna. Din rapport är uppdelad i olika widgetar som detaljerar dina prenumerationer och avbeställningar. Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort."
 
 Live-rapporter, som du kommer åt från fliken Senaste 24 timmarna, visar händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten. Som jämförelse fokuserar Global-rapporter på händelser som inträffade för minst två timmar sedan och täcker händelser under en vald tidsperiod.
 
@@ -28,13 +28,13 @@ Klicka på **[!UICONTROL Report]** ikonen för den valda prenumerationslistan.
 
 ![](assets/subscription_report_7.png)
 
-Prenumerationen **[!UICONTROL Live report]** är uppdelat i olika widgetar som detaljerat beskriver dina prenumerationer och avbeställningar. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](live-report.md).
+Prenumerationen **[!UICONTROL Live report]** är uppdelat i olika widgetar som detaljerat beskriver dina prenumerationer och avbeställningar. Varje widget kan storleksändras och tas bort vid behov. Mer information om detta finns i [section](live-report.md).
 
 ![](assets/subscription_report_3.png)
 
-The **[!UICONTROL Subscription performance]** KPI:er och **[!UICONTROL Subscriptions by journey]**/**[!UICONTROL Unsubscribes by journey]** tabellerna innehåller detaljerad information om besökarnas engagemang på landningssidan. Tabellerna och KPI:erna innehåller tillgängliga uppgifter om landningssidan, t.ex.:
+The **[!UICONTROL Subscription performance]** nyckeltal och **[!UICONTROL Subscriptions by journey]**/**[!UICONTROL Unsubscribes by journey]** tabellerna innehåller detaljerad information om besökarnas engagemang på landningssidan. Tabellerna och KPI:erna innehåller tillgängliga uppgifter om landningssidan, t.ex.:
 
-* **[!UICONTROL Subscribes]**: Totalt antal prenumerationer de senaste 24 timmarna.
+* **[!UICONTROL Subscribes]**: Totalt antal prenumerationer under de senaste 24 timmarna.
 
 * **[!UICONTROL Unsubscribes]**: Totalt antal avbeställningar under de senaste 24 timmarna.
 

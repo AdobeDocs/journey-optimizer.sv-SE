@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Skapa en kampanj
-description: Lär dig hur du skapar kampanjer i Journey Optimizer
+description: Lär dig skapa kampanjer i Journey Optimizer
 feature: Overview
 topic: Content Management
 role: User
@@ -37,13 +37,13 @@ Om du vill skapa en ny kampanj öppnar du **[!UICONTROL Campaigns]** menyn och k
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_category"
 >title="Kampanjkategori"
->abstract="Om du skapar en schemalagd kampanj visas **marknadsföring** text väljs automatiskt. Välj om du vill skicka en **marknadsföring** eller **transaktionsbaserad** ett meddelande, dvs. ett meddelande som skickas ut efter en åtgärd som utförts av en individ: lösenordsåterställning, övergivna varukorgar osv."
+>abstract="Om du skapar en schemalagd kampanj visas **marknadsföring** text väljs automatiskt. Välj om du vill skicka en **marknadsföring** eller **transaktionsbaserad** ett meddelande, dvs. ett meddelande som skickas ut efter en åtgärd som utförts av en person: lösenordsåterställning, övergivna varukorgar osv."
 
 1. I **[!UICONTROL Properties]** anger du hur kampanjen ska köras. Det finns två typer av kampanjer:
 
-   * **[!UICONTROL Scheduled]**: köra kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka **marknadsföring** meddelanden. De konfigureras och körs från användargränssnittet.
+   * **[!UICONTROL Scheduled]**: kör kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka **marknadsföring** meddelanden. De konfigureras och körs från användargränssnittet.
 
-   * **[!UICONTROL API-triggered]**: köra kampanjen med ett API-anrop. API-utlösta kampanjer syftar till att skicka antingen **marknadsföring**, eller **transaktionsbaserad** meddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförts av en individ: lösenordsåterställning, kundvagn osv. [Lär dig hur du utlöser en kampanj med API:er](api-triggered-campaigns.md)
+   * **[!UICONTROL API-triggered]**: kör kampanjen med ett API-anrop. API-utlösta kampanjer syftar till att skicka antingen **marknadsföring**, eller **transaktionsbaserad** meddelanden, t.ex. meddelanden som skickas ut efter en åtgärd som har utförts av en person: lösenordsåterställning, kundvagn osv. [Lär dig hur du utlöser en kampanj med API:er](api-triggered-campaigns.md)
 
 1. Om du skapar en schemalagd kampanj visas **marknadsföring** text väljs automatiskt. Välj om du vill skicka en **marknadsföring** eller **transaktionsbaserad** meddelande.&quot;
 
@@ -157,7 +157,7 @@ I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska använd
 
 Som standard börjar kampanjer när de har aktiverats manuellt och avslutas så snart meddelandet har skickats en gång.
 
-Du kan definiera hur ofta kampanjens meddelande ska skickas. Om du vill göra det använder du **[!UICONTROL Action triggers]** alternativ på skärmen för att skapa kampanjer för att ange om kampanjen ska köras varje dag, varje vecka eller varje månad.
+Du kan definiera hur ofta kampanjens meddelande ska skickas. Använd **[!UICONTROL Action triggers]** alternativ på skärmen för att skapa kampanjer för att ange om kampanjen ska köras varje dag, varje vecka eller varje månad.
 
 Om du inte vill genomföra kampanjen direkt efter aktiveringen kan du ange ett datum och en tidpunkt då meddelandet ska skickas med **[!UICONTROL Campaign start]** alternativ. The **[!UICONTROL Campaign end]** kan du ange när en återkommande kampanj ska sluta köras.
 
