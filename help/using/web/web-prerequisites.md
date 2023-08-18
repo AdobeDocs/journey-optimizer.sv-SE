@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6cb4f8ab-77ad-44a2-b2bf-a97f87b8f1db
-source-git-commit: 13020825a0cf06bd67f48ccbe6f46b6eaea210d3
+source-git-commit: 827fd9a6e97b610234b2c43a469e71ed8d2f8199
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 1%
@@ -133,7 +133,7 @@ För att webbupplevelsen ska kunna levereras på rätt sätt måste följande in
 
 ## Förutsättningar för innehållsexperiment {#experiment-prerequisites}
 
-Om du vill aktivera innehållsexperiment för webbkanalen måste du se till att [datauppsättning](../data/get-started-datasets.md) används i din webbimplementering [datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html){target="_blank"} finns även i din rapportkonfiguration.
+Om du vill aktivera innehållsexperiment för webbkanalen måste du se till att [datauppsättning](../data/get-started-datasets.md) används i din webbimplementering [datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html){target="_blank"} ingår även i din rapportkonfiguration.
 
 Om du lägger till en datauppsättning som inte finns i webbdataströmmen när du konfigurerar experimentrapporter, kommer webbdata alltså inte att visas i innehållsexperimentrapporter.
 
