@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: länkar, spåra, övervaka, e-post
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: af1bc66021f04dacee8cf674925af9e2d0c2f30b
+source-git-commit: bdebd6495b0147b606a86153025090bdcb5c96a7
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '995'
 ht-degree: 1%
 
 ---
@@ -63,13 +63,13 @@ Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
 
    * **[!UICONTROL External link]**: Infoga en länk till en extern URL.
 
-   * **[!UICONTROL Landing page]**: Infoga en länk till en landningssida. [Läs mer ](../landing-pages/get-started-lp.md)
+   * **[!UICONTROL Landing page]**: Infoga en länk till en landningssida. [Läs mer](../landing-pages/get-started-lp.md)
 
-   * **[!UICONTROL One click Opt-out]**: Infoga en länk som gör det möjligt för användare att snabbt avbeställa prenumerationer utan att behöva bekräfta att de vill avanmäla sig. [Läs mer](email-opt-out.md#one-click-opt-out).
+   * **[!UICONTROL One click Opt-out]**: Infoga en länk som gör det möjligt för användare att snabbt avbryta prenumerationen på dina meddelanden utan att behöva bekräfta att de vill avanmäla sig. [Läs mer](email-opt-out.md#one-click-opt-out).
 
    * **[!UICONTROL External Opt-in/Subscription]**: Infoga en länk för att ta emot meddelanden från ert varumärke.
 
-   * **[!UICONTROL External Opt-out/Unsubscription]**: Infoga en länk för att avbeställa beställning av meddelanden från ert varumärke. Läs mer om avanmälningshantering i [det här avsnittet](email-opt-out.md#opt-out-management).
+   * **[!UICONTROL External Opt-out/Unsubscription]**: Infoga en länk om du inte längre vill få information från ditt varumärke. Läs mer om avanmälningshantering i [det här avsnittet](email-opt-out.md#opt-out-management).
 
    * **[!UICONTROL Mirror page]**: Lägg till en länk för att visa e-postinnehållet i en webbläsare. [Läs mer](#mirror-page)
 
@@ -97,7 +97,7 @@ Du kan justera länkarna med **[!UICONTROL Settings]** och **[!UICONTROL Styles]
 
 1. I en **[!UICONTROL Text]** markerar du länken där en länk infogas.
 
-1. Från **[!UICONTROL Settings]** väljer du hur målgruppen ska omdirigeras med **[!UICONTROL Target]** nedrullningsbar meny:
+1. Från **[!UICONTROL Settings]** väljer du hur målgruppen ska omdirigeras med **[!UICONTROL Target]** nedrullningsbar lista:
 
    * **[!UICONTROL None]**: öppnar länken i samma ram som den klickades på (standard).
    * **[!UICONTROL Blank]**: öppnar länken i ett nytt fönster eller på en ny flik.
@@ -141,7 +141,7 @@ Kvarhållningsperioden för en spegelsida är 60 dagar. Efter den fördröjninge
 
 ## Hantera spårning {#manage-tracking}
 
-The [E-postdesigner](content-from-scratch.md) gör att du kan hantera spårade URL-adresser, till exempel redigera spårningstypen för varje länk.
+The [E-postdesigner](content-from-scratch.md) gör att du kan hantera spårade URL-adresser, t.ex. redigera spårningstypen för varje länk.
 
 1. Klicka på **[!UICONTROL Links]** i den vänstra rutan för att visa en lista med alla URL:er för ditt innehåll som ska spåras.
 
@@ -157,14 +157,14 @@ The [E-postdesigner](content-from-scratch.md) gör att du kan hantera spårade U
 
    * **[!UICONTROL Tracked]**: Aktiverar spårning på denna URL.
    * **[!UICONTROL Opt out]**: Betraktar denna URL som en avanmälnings- eller avanmälnings-URL.
-   * **[!UICONTROL Mirror page]**: Den här URL:en är en URL för en spegelsida.
-   * **[!UICONTROL Never]**: Aktiverar aldrig spårning av den här URL:en. <!--This information is saved: if the URL appears again in a future message, its tracking is automatically deactivated.-->
+   * **[!UICONTROL Mirror page]**: Ser den här URL:en som en spegelsida.
+   * **[!UICONTROL Never]**: Aktiverar aldrig spårning av denna URL. <!--This information is saved: if the URL appears again in a future message, its tracking is automatically deactivated.-->
 
 Rapportering om öppningar och klick finns i [Live-rapport](../reports/live-report.md) och i [Global rapport](../reports/global-report.md).
 
-## URL-spårning {#url-tracking}
+## URL-uppföljning {#url-tracking}
 
-Vanligtvis [URL-spårning](email-settings.md#url-tracking) hanteras på ytnivå, men profilattribut stöds inte. För närvarande är det enda sättet att göra det på att [personalisera URL:er](../personalization/personalization-syntax.md#perso-urls) i e-postdesignern.
+Vanligtvis [URL-uppföljning](email-settings.md#url-tracking) hanteras på ytnivå, men profilattribut stöds inte. För närvarande är det enda sättet att göra det på att [personalisera URL:er](../personalization/personalization-syntax.md#perso-urls) i e-postdesignern.
 
 Följ stegen nedan om du vill lägga till personaliserade URL-spårningsparametrar för länkarna.
 
@@ -186,4 +186,4 @@ När e-postmeddelandet skickas läggs den här parametern automatiskt till i slu
 
 >[!NOTE]
 >
->Du kan verifiera den slutliga URL:en genom att [skicka ett bevis](preview.md#send-proofs) och klicka på länken i e-postmeddelandet när du har fått korrekturet. URL:en ska visa spårningsparametern. I exemplet ovan blir den slutliga URL:en: https://luma.enablementadobe.com/content/luma/us/en.html?utm_contact=profile.userAccount.contactDetails.homePhone.number
+>Om du vill verifiera den slutliga URL:en kan du [skicka ett bevis](preview.md#send-proofs) och klicka på länken i e-postmeddelandet när du har fått korrekturet. URL:en ska visa spårningsparametern. I exemplet ovan kommer den slutliga URL:en att vara: <https://luma.enablementadobe.com/content/luma/us/en.html?utm_contact=profile.userAccount.contactDetails.homePhone.number>
