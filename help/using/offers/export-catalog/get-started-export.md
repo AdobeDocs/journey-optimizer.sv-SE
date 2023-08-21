@@ -6,18 +6,18 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: f30abea1-b204-4470-9836-75fae916bbb1
-source-git-commit: 0ca491315e214e3c12bec11a93da1a2b98b493b6
+source-git-commit: a68b4417c86b71d16622e8776c17625b2d061cc7
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 15%
+source-wordcount: '83'
+ht-degree: 22%
 
 ---
 
 # Kom igång med export av din erbjudandekatalog {#export-catalog}
 
-Med Journey Optimizer kan du automatiskt exportera din erbjudandekatalog till Adobe Experience Platform.
+Med Journey Optimizer kan du automatiskt exportera erbjudandekatalogen till Adobe Experience Platform.
 
-Exporten skapar en datauppsättning för varje objekt i ditt Erbjudandebibliotek (se [Få åtkomst till exporterade dataset](../export-catalog/access-dataset.md)). Den innehåller följande uppgifter:
+Exporten skapar en datauppsättning för varje objekt i ditt Erbjudandebibliotek (se [Få åtkomst till exporterade datamängder](../export-catalog/access-dataset.md)). Den innehåller följande uppgifter:
 
 * Personaliserade erbjudanden
 * Reserverbjudanden
@@ -26,6 +26,8 @@ Exporten skapar en datauppsättning för varje objekt i ditt Erbjudandebibliotek
 
 Varje gång något av dessa objekt ändras i erbjudandebiblioteket körs ett nytt exportjobb automatiskt för att uppdatera datauppsättningarna.
 
+<!--
 >[!NOTE]
 >
->Den här funktionen är inte aktiverad som standard. Om du vill använda den kontaktar du Adobe för att aktivera den för din katalog. När den är aktiverad kommer exportjobben att automatiseras och du behöver inte göra något.
+>This feature is not enabled by default. If you want to use it, reach out to your Adobe contact to have it activated for your catalog. Once it is enabled, export jobs will be automated and will require no action from your side.
+-->
