@@ -8,9 +8,9 @@ role: User
 level: Intermediate
 keywords: återinträde, resa, profil, återkommande
 exl-id: 8874377c-6594-4a5a-9197-ba5b28258c02
-source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
+source-git-commit: c4b40d66db042e7dce1326e64b9d706f33cb01c2
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '598'
 ht-degree: 1%
 
 ---
@@ -31,13 +31,16 @@ På enastående resor kan du aktivera eller inaktivera återinträde:
 
 * Om återinträde är aktiverat kan en profil gå in på en resa flera gånger, men kan inte göra det förrän den tidigare instansen av resan har avslutats helt.
 
-* Om återinträde är inaktiverat kan en profil inte ange flera gånger samma resa
+* Om återinträde är inaktiverat kan en profil inte ange flera gånger samma resa.
 
-Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet för engångsresor, t.ex. om du vill erbjuda en engångsgåva när en person går in i en affär. I så fall vill ni inte att kunden ska kunna registrera sig på nytt och få erbjudandet igen. När en resa avslutas är dess status **[!UICONTROL Closed]**. Nya individer kan inte längre komma in på resan. Personer som redan är på resan slutför resan normalt. [Läs mer](journey-gs.md#entrance)
+Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet för engångsresor, till exempel om du vill erbjuda en engångspresentation när en person besöker en butik. I så fall får kunden inte kunna återuppta resan och få erbjudandet igen. När en resa avslutas är dess status **[!UICONTROL Closed]**. Nya individer kan inte längre komma in på resan. Personer som redan är på resan slutför resan normalt. [Läs mer](journey-gs.md#entrance)
 
 ![](assets/journey-re-entrance.png)
 
-Efter den globala standardtidsgränsen på 30 dagar ändras resan till **Slutförd** status. Nya individer kan inte längre komma in på resan. Personer som redan befinner sig på resan slutför resan normalt.På grund av tidsgränsen på 30 dagar, när återinträde inte är tillåtet, kan vi inte säkerställa att återinträdesspärren fungerar mer än 30 dagar. Eftersom vi tar bort all information om personer som tagit sig in på resan 30 dagar efter ankomsten, kan vi inte veta vem som tagit sig in tidigare, mer än 30 dagar sedan. [Läs mer](journey-gs.md#global_timeout).
+Efter den globala standardtidsgränsen på 30 dagar ändras resan till **Slutförd** status. Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan. För att följa integritetsefterlevnaden är detta bara 30 dagar. Efter den perioden kan profiler återinträda i resan. Du kan undvika detta genom att lägga till ett villkor för att testa om profilen redan har angetts eller inte. Läs mer om tidsgränsen för resor i [det här avsnittet](journey-gs.md#global_timeout).
+
+<!--
+Due to the 30-day journey timeout, when journey re-entrance is not allowed, we cannot make sure the re-entrance blocking will work more than 30 days. Indeed, as we remove all information about persons who entered the journey 30 days after they enter, we cannot know the person entered previously, more than 30 days ago. -->
 
 Enhetsresor (som inleds med en händelse eller en publikation) innehåller ett skyddsräcke som förhindrar att resorna aktiveras felaktigt flera gånger för samma händelse. Återinträde av profiler blockeras tillfälligt som standard i 5 minuter. Om en händelse till exempel utlöser en resa kl. 12:01 för en viss profil och en annan tar emot kl. 12:03 (oavsett om det är samma händelse eller en annan som utlöser samma resa) kommer den resan inte att starta igen för den här profilen.
 
