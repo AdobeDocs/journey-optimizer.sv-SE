@@ -5,9 +5,9 @@ title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 hide: true
 hidefromtoc: true
-source-git-commit: 36634fc3993261756c081e71c47e7408c77c65ae
+source-git-commit: 3d166f79d9f6334c6f873ba3eecd264a60b8f4ba
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '402'
 ht-degree: 5%
 
 ---
@@ -29,7 +29,7 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Kanal i appen på resorna</strong><br/></th>
+<th><strong>Skicka meddelanden i appen på dina resor</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -64,13 +64,14 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Innehållsassistent för text och bilder</strong><br/></th>
+<th><strong>Generera text och bilder med Content Assist</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
 <p>När du väl har skapat och personaliserat ditt budskap tar du innehållet till nästa nivå med Content Assist. Nu kan du använda innehållsassistenten för att optimera budskapets effekt genom att experimentera med olika huvudtitlar och bilder. Varje variant hanteras som en unik behandling för att mäta och jämföra vilken titel som effektivt genererar fler klick.</p>
+<p>Den här funktionen är för närvarande tillgänglig som en privat beta.</p>
 <img src="assets/gen-ai-image-2.png"/>
 <!--p>For more information, refer to the <a href="../start/search-filter-categorize.md#tags">detailed documentation</a>.</p-->
 </td>
@@ -96,3 +97,9 @@ Det finns nu ett nytt API för att skapa och hantera innehållsfragment. [Läs m
 
 * Nu kan du utnyttja API-anropssvar i anpassade åtgärder och samordna din resa baserat på dessa svar.
 * En ny typ av systemvarning har införts. Du kan nu få meddelanden när en anpassad åtgärd misslyckas.
+
+
+**Direktutskick**
+
+* Stöd för Azure Blob som routningsmål.
+* Stöd för `&amp;&quot;som en anpassad avgränsare.
