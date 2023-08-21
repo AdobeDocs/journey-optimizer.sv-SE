@@ -4,10 +4,10 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: a445e418dc11f577c609c16894ce119359f2a261
+source-git-commit: 0ff415fa209da7996254a60817ef69998fd47903
 workflow-type: tm+mt
-source-wordcount: '3192'
-ht-degree: 8%
+source-wordcount: '3200'
+ht-degree: 9%
 
 ---
 
@@ -73,7 +73,7 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 <td>
 <p>Nu kan du importera och konvertera valfritt HTML-innehåll i Journey Optimizer e-postredigerare. Innehållsblocken identifieras automatiskt och är tillgängliga i e-postdesignern: använd de kraftfulla designfunktionerna för att uppdatera och anpassa dem!</p>
 <img src="assets/html-convert.png">
-<!--p>For more information, refer to the <a href="../audience/get-started-audience-orchestration.md">detailed documentation</a>.</p-->
+<p>Mer information finns i den <a href="../email/existing-content.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -117,11 +117,6 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 ### Förbättringar {#july-2023-improvements}
 
 Den här versionen innehåller de förbättringar som anges nedan.
-
-<!--**Journeys**
-
-* You can now leverage API call responses in custom actions and orchestrate your journey based on these responses.
-A new type of system alert has been introduced. You can now get notified when a custom action fails.-->
 
 
 **Kampanjer**
