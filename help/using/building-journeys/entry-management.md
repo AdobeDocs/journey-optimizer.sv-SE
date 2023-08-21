@@ -8,10 +8,10 @@ role: User
 level: Intermediate
 keywords: återinträde, resa, profil, återkommande
 exl-id: 8874377c-6594-4a5a-9197-ba5b28258c02
-source-git-commit: c4b40d66db042e7dce1326e64b9d706f33cb01c2
+source-git-commit: 1bcc47389b128c6eb6e768578b2ae64c4b0fea89
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 1%
+source-wordcount: '612'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,7 @@ Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet f�
 
 ![](assets/journey-re-entrance.png)
 
-Efter den globala standardtidsgränsen på 30 dagar ändras resan till **Slutförd** status. Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan. För att följa integritetsefterlevnaden är detta bara 30 dagar. Efter den perioden kan profiler återinträda i resan. Du kan undvika detta genom att lägga till ett villkor för att testa om profilen redan har angetts eller inte. Läs mer om tidsgränsen för resor i [det här avsnittet](journey-gs.md#global_timeout).
+Efter den globala standardtidsgränsen på 30 dagar ändras resan till **Slutförd** status. Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan. Detta beteende är inställt för endast 30 dagar (standardvärde för tidsgräns för resa) eftersom vi tar bort all information om profiler som har passerat resan 30 dagar efter att de har registrerats. Efter den perioden kan profiler återinträda i resan. Du kan undvika detta genom att lägga till ett villkor för att testa om profilen redan har angetts eller inte. Läs mer om tidsgränsen för resor i [det här avsnittet](journey-gs.md#global_timeout).
 
 <!--
 Due to the 30-day journey timeout, when journey re-entrance is not allowed, we cannot make sure the re-entrance blocking will work more than 30 days. Indeed, as we remove all information about persons who entered the journey 30 days after they enter, we cannot know the person entered previously, more than 30 days ago. -->
