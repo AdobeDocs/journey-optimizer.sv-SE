@@ -5,7 +5,7 @@ title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 hide: true
 hidefromtoc: true
-source-git-commit: 3d166f79d9f6334c6f873ba3eecd264a60b8f4ba
+source-git-commit: 2420e04143e9ac357fb0cc14fe09c07ec577e021
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 5%
@@ -102,4 +102,4 @@ Det finns nu ett nytt API för att skapa och hantera innehållsfragment. [Läs m
 **Direktutskick**
 
 * Stöd för Azure Blob som routningsmål.
-* Stöd för `&amp;&quot;som en anpassad avgränsare.
+* Support `&` som en egen avgränsare.
