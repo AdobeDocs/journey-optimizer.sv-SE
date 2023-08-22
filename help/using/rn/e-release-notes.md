@@ -5,10 +5,10 @@ title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 hide: true
 hidefromtoc: true
-source-git-commit: 132121b4dd9c20149e4a5b24e90ebffd4ebbdcbc
+source-git-commit: f18fc404a238271edf9240a509f2f0df54c9503c
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 4%
+source-wordcount: '411'
+ht-degree: 5%
 
 ---
 
@@ -97,7 +97,7 @@ Det finns nu ett nytt API för att skapa och hantera innehållsfragment. [Läs m
 
 * Nu kan du utnyttja API-anropssvar i anpassade åtgärder och samordna din resa baserat på dessa svar. Den här funktionen är för närvarande tillgänglig som en privat beta.
 * En ny typ av systemvarning har införts. Du kan nu få meddelanden när en anpassad åtgärd misslyckas.
-* När du duplicerar en resa kan du nu definiera namnet på kopian av resan.
+  <!--* When duplicating a journey, you can now define the name of the journey copy.-->
 
 
 **Direktutskick**
