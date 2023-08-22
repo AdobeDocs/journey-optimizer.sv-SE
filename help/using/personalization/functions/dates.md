@@ -1,12 +1,12 @@
 ---
-title: Funktionsbibliotek för datum och tid
-description: Funktionsbibliotek för datum och tid
+title: Funktionsbibliotek för Date Time
+description: Funktionsbibliotek för Date Time
 feature: Personalization
 topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: edc040de-dfb3-4ebc-91b4-239e10c2260b
-source-git-commit: 2444d8fbe3a86feb0497d754b4f57f234fa29e49
+source-git-commit: 3a4a58f8601c67e8e9a2b606a47c6b4bcc2dab05
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 3%
@@ -59,7 +59,7 @@ The following operation gets all the keys for the map `identityMap`.
 
 ## Datumdifferens{#date-diff}
 
-The `dateDiff` -funktionen används för att hämta skillnaden mellan två datum i antal dagar.
+The `dateDiff` används för att hämta skillnaden mellan två datum i antal dagar.
 
 **Syntax**
 
@@ -141,7 +141,7 @@ Där den första strängen är datumattributet och det andra värdet är hur du 
 Följande åtgärd returnerar datumet i följande format: MM/DD/YY.
 
 ```sql
-{%= formatDate(profile.timeSeriesEvents._mobile.hotelBookingDetails.bookingDate, "MM/DD/YY") %}
+{%= formatDate(profile.timeSeriesEvents._mobile.hotelBookingDetails.bookingDate, "MM/dd/YY") %}
 ```
 
 ## Formatera datum med språkstöd{#format-date-locale}
@@ -167,7 +167,7 @@ Där den första strängen är datumattributet är det andra värdet hur du vill
 
 **Exempel**
 
-Följande åtgärd returnerar datumet i följande format: MM/DD/YY och språkversionen av FRANKRIKE.
+Följande åtgärd returnerar datumet i följande format: MM/DD/YY och språkområde FRANCE.
 
 ```sql
 {%= formatDate(profile.timeSeriesEvents._mobile.hotelBookingDetails.bookingDate, "MM/DD/YY", "fr_FR") %}
@@ -238,7 +238,7 @@ The following operation gets all the values for the map `identityMap`.
 
 ## Vecka på året UTC{#week-of-year}
 
-The `weekOfYear` används för att hämta årets vecka.
+The `weekOfYear` -funktionen används för att hämta årets vecka.
 
 **Syntax**
 
