@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: ca2db9343f1362d3fe3e75b74c3c7bb12bb1c30f
+source-git-commit: 2281daefaf6b45c056ef9100b58f51dcd9c87257
 workflow-type: tm+mt
-source-wordcount: '1549'
+source-wordcount: '1553'
 ht-degree: 9%
 
 ---
@@ -121,13 +121,13 @@ The **Kopiera teknisk information** Med kan du kopiera teknisk information om de
 
 ![](assets/journey32.png)
 
-### Ingång{#entrance}
+### Ingång och återinträde {#entrance}
 
 Som standard tillåter nya resor återinträde. Du kan avmarkera **Tillåt återinträde** om du vill erbjuda en engångspresentation när en person går in i en affär.
 
 När **Tillåt återinträde** är aktiverat, **Vänteperiod för återinträde** -fältet visas. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter.
 
-Läs mer om hantering av profilinträde i [det här avsnittet](entry-management.md).
+Läs mer om hantering av profilentré och återinträde på marknaden i [det här avsnittet](entry-management.md).
 
 ### Hantera åtkomst {#access}
 
