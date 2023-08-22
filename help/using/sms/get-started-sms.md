@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c1027268-0bbe-4e35-a5a6-2aef78083dd3
-source-git-commit: 81ab92022329788c1feea24c7a621ef154d33422
+source-git-commit: 30d09c884e7ce778712a0f7a8e4c571c32ded8ed
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 8%
@@ -23,11 +23,11 @@ SMS-leveranser kan skapas:
 
 * I en **Resa**: När du har lagt till en SMS-aktivitet under resan och definierat grundläggande inställningar använder du **[!UICONTROL Actions: SMS]** höger ruta för att skapa innehållet för SMS-meddelandet.
 
-   Mer information om hur du konfigurerar din resa finns i [page](../building-journeys/journey-gs.md).
+  Mer information om hur du konfigurerar din resa finns i [page](../building-journeys/journey-gs.md).
 
 * I en **Campaign**: När du har skapat en kampanj väljer du SMS som åtgärd och definierar grundläggande inställningar.
 
-   Mer information om hur du konfigurerar kampanjen finns i [page](../campaigns/create-campaign.md#configure).
+  Mer information om hur du konfigurerar kampanjen finns i [page](../campaigns/create-campaign.md#configure).
 
 
 >[!IMPORTANT]
@@ -48,7 +48,7 @@ SMS-leveranser kan skapas:
 <img alt="Sällan" src="../assets/do-not-localize/sms-sending.jpg">
 </a>
 <div>
-<a href="send-sms.md"><strong>Skicka ett SMS-meddelande</strong></a>
+<a href="send-sms.md"><strong>Skicka ett SMS</strong></a>
 </div>
 <p></td>
 <td>
@@ -75,4 +75,4 @@ SMS-leveranser kan skapas:
 
 Lär dig hur du konfigurerar, redigerar och inkluderar SMS-meddelanden i dina kundresor.
 
->[!VIDEO](https://video.tv.adobe.com/v/344460?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3420509?learn=on)
