@@ -5,9 +5,9 @@ title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 hide: true
 hidefromtoc: true
-source-git-commit: f18fc404a238271edf9240a509f2f0df54c9503c
+source-git-commit: ca22edacfdad9b09abd742229471d23d23d2059b
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '362'
 ht-degree: 5%
 
 ---
@@ -52,7 +52,7 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <tbody>
 <tr>
 <td>
-<p>Nu kan du skapa och hantera dirigerade listor i Journey Optimizer. En startvärdeslista består av testadresser som du skickar ett e-postmeddelande till innan du skickar det till den faktiska målgruppen. Använd den här funktionen för att övervaka skickade e-postkopior och se till att alla visningsformat, URL:er, bilder och länkar är korrekta.</p>
+<p>Nu kan du skapa och hantera dirigerade listor i Journey Optimizer. En startvärdeslista består av interna adresser som kan läggas till för den faktiska målgruppen och få exakt samma meddelande som målprofilerna vid körningen. Använd den här funktionen för att övervaka skickade meddelanden och se till att alla visningsformat, URL:er, bilder och länkar är korrekta.</p>
 <img src="../configuration/assets/seed-list-details.png">
 <!--p>For more information, refer to the <a href="../audience/get-started-audience-orchestration.md">detailed documentation</a>.</p-->
 </td>
@@ -61,23 +61,23 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 </table>
 
 
-<table>
+<!--table>
 <thead>
 <tr>
-<th><strong>Generera text och bilder med Content Assist</strong><br/></th>
+<th><strong>Generate text and images with the Content assistant</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>När du väl har skapat och personaliserat ditt budskap tar du innehållet till nästa nivå med Content Assist. Nu kan du använda innehållsassistenten för att optimera budskapets effekt genom att experimentera med olika huvudtitlar och bilder. Varje variant hanteras som en unik behandling för att mäta och jämföra vilken titel som effektivt genererar fler klick.</p>
-<p>Den här funktionen är för närvarande tillgänglig som en privat beta.</p>
+<p>Once you have created and personalized your message, take your content to the next level with the Content assistant. You can now use the Content assistant to optimize your message's impact by experimenting with different main titles, and images. Each variant is managed as a unique Treatment, to measure and compare which title effectively generates more clicks.</p>
+<p>This capability is currently available as a private beta.</p>
 <img src="assets/gen-ai-image-2.png"/>
-<!--p>For more information, refer to the <a href="../start/search-filter-categorize.md#tags">detailed documentation</a>.</p-->
+<p>For more information, refer to the <a href="../start/search-filter-categorize.md#tags">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 
 
@@ -91,7 +91,7 @@ Det finns nu ett nytt API för att skapa och hantera innehållsfragment. [Läs m
 
 **E-postkanal**
 
-* Det finns ett nytt alternativ i inställningarna för e-postyta för att inkludera e-postadresser som inte har angetts på grund av skräppost i målgrupperna för transaktionsmeddelanden. Även om de har markerat marknadsföringsmeddelanden som skräppost kan dessa profiler sedan ta emot transaktionsmeddelanden, som lösenordsåterställning eller kontoutdrag. Det här alternativet är inaktiverat som standard.
+Det finns ett nytt alternativ i inställningarna för e-postyta för att inkludera e-postadresser som inte har angetts på grund av skräppost i målgrupperna för transaktionsmeddelanden. Även om de har markerat marknadsföringsmeddelanden som skräppost kan dessa profiler sedan ta emot transaktionsmeddelanden, som lösenordsåterställning eller kontoutdrag. Det här alternativet är inaktiverat som standard.
 
 **Resor**
 
@@ -102,5 +102,5 @@ Det finns nu ett nytt API för att skapa och hantera innehållsfragment. [Läs m
 
 **Direktutskick**
 
-* Stöd för Azure Blob som routningsmål.
-* Support `&` som en egen avgränsare.
+* Azure kan nu väljas som servertyp i filroutningskonfigurationen.
+* Et-tecknet är nu tillgängligt som kolumnavgränsarfält i inställningarna för direktreklamyta.
