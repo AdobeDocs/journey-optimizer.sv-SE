@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: 2281daefaf6b45c056ef9100b58f51dcd9c87257
+source-git-commit: 91b82736b86bd01ebb24cca36da56bde7fe84b6e
 workflow-type: tm+mt
-source-wordcount: '1553'
-ht-degree: 9%
+source-wordcount: '1620'
+ht-degree: 8%
 
 ---
 
@@ -172,3 +172,20 @@ Förutom [timeout](#timeout_and_error) som används i reseaktiviteter finns det 
 På grund av den 30-dagars tidsgränsen för resan kan vi inte säkerställa att återinträdesspärren fungerar mer än 30 dagar när resan inte tillåts. Eftersom vi tar bort all information om personer som tagit sig in på resan 30 dagar efter ankomsten, kan vi inte veta vem som tagit sig in tidigare, mer än 30 dagar sedan.
 
 En enskild person kan bara förlägga en vänteaktivitet om han eller hon har tillräckligt med tid kvar på resan för att slutföra väntetiden innan tidsgränsen på 30 dagar för resan har nåtts. Läs [den här sidan](../building-journeys/wait-activity.md).
+
+## Duplicera en resa {#duplicate-a-journey}
+
+Du kan duplicera en befintlig resa från **Bläddra** -fliken. Alla objekt och inställningar dupliceras till kopian av resan.
+
+Gör så här:
+
+1. Navigera till den resa du vill kopiera och klicka på **Fler åtgärder** -ikonen (de tre punkterna bredvid resans namn).
+1. Välj **Duplicera**.
+
+   ![Duplicera en resa](assets/duplicate-jo.png)
+
+<!--1. Enter the name of the journey and confirm. 
+
+    If no name is specified, t-->The journey copy name is set to the default name, i.e. the name of the initial journey with `_copy` characters added at the end. It can be changed in the journey properties screen.
+
+1. Den nya resan skapas och är tillgänglig i reselistan.

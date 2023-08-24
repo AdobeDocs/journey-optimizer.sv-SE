@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 5f8dcb6d8984da9b343702d06bc400c851a9c017
+source-git-commit: 1276aa334a057de1a14b7772d07dd9e2ac4f614f
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1424'
 ht-degree: 32%
 
 ---
@@ -435,22 +435,23 @@ ht-degree: 32%
       + [Frågeexempel](using/data/datasets-query-examples.md)
       + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Frågor](using/data/get-started-queries.md)
-+ Konfiguration{#configuration}
++ Konfiguration {#configuration}
    + [Kom igång med Journey Optimizer-konfiguration](using/configuration/get-started-configuration.md)
+   + [Konfigurera kanalytor](using/configuration/channel-surfaces.md)
    + Delegera e-postunderdomäner {#delegate-subdomains}
       + [Kom igång med delegering till underdomäner](using/configuration/about-subdomain-delegation.md)
       + [Delegera en underdomän](using/configuration/delegate-subdomain.md)
       + [Lägg till en Google TXT-post](using/configuration/google-txt.md)
       + [Få åtkomst till och redigera PTR-poster](using/configuration/ptr-records.md)
       + [Skapa IP-pooler](using/configuration/ip-pools.md)
-   + [Konfigurera kanalytor](using/configuration/channel-surfaces.md)
    + Övervaka e-postadresser {#monitor-reputation}
       + [Undertryckningslista](using/configuration/manage-suppression-list.md)
       + [Återförsök](using/configuration/retries.md)
       + [Tillåtelselista](using/configuration/allow-list.md)
+   + [Använd dirigerade listor](using/configuration/seed-lists.md)
    + [Stöd för arkivering](using/configuration/archiving-support.md)
+   + [Ändra körningsadresser](using/configuration/primary-email-addresses.md)
    + [Konfigurera frekvensregler](using/configuration/frequency-rules.md)
-   + [Hantera körningsadresser](using/configuration/primary-email-addresses.md)
    + Konfigurera resor {#configure-journeys}
       + [Om datakällor, händelser och åtgärder](using/configuration/about-data-sources-events-actions.md)
       + Integrera med externa system {#external-systems}
@@ -475,7 +476,7 @@ ht-degree: 32%
          + [Konfigurera en åtgärd](using/action/about-custom-action-configuration.md)
          + [Integrera med Adobe Campaign Standard](using/action/acs-action.md)
          + [Integrera med Adobe Campaign v7/v8](using/action/acc-action.md)
-         + [Om åtgärder](using/action/action-response.md)
+         + [Använd API-anropssvar i anpassade åtgärder](using/action/action-response.md)
    + [Källor](using/start/get-started-sources.md)
 + Åtkomstkontroll {#access-control}
    + Översikt över åtkomstkontroll {#privacy}

@@ -9,10 +9,10 @@ role: Admin
 level: Intermediate
 keywords: externa, källor, data, konfiguration, anslutning, tredje part
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
-source-git-commit: 118eddf540d1dfb3a30edb0b877189ca908944b1
+source-git-commit: 458632fcae14db9fe7d099309b85550e47090340
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 85%
+source-wordcount: '1454'
+ht-degree: 81%
 
 ---
 
@@ -83,20 +83,20 @@ För parameteruppsättningen &quot;long/lat&quot; skapar vi en fältgrupp med f�
 * **[!UICONTROL Dynamic Values]**: ange de olika parametrarna avgränsade med kommatecken – &quot;long,lat&quot; i vårt exempel. Eftersom parameterns värden är beroende av körningens sammanhang definieras de i resorna. [Läs mer](../building-journeys/expression/expressionadvanced.md)
 * **[!UICONTROL Response Payload]**: klicka inuti fältet **[!UICONTROL Payload]** och klistra in ett exempel på nyttolasten som returneras av anropet. Vi har till exempel använt en nyttolast som finns på en API-webbplats för väder. Kontrollera att fälttyperna är korrekta. Varje gång API:et anropas hämtas alla fält som ingår i exemplets nyttolast. Observera att du kan klicka på **[!UICONTROL Paste a new payload]** för att ändra den nyttolast som för närvarande används.
 
-   >[!NOTE]
-   >
-   >Skalära matriser stöds inte i svarsnyttolastsdefinitionen.
+  >[!NOTE]
+  >
+  >Skalära matriser stöds inte i svarsnyttolastsdefinitionen.
 
 * **[!UICONTROL Sent Payload]**: det här fältet visas inte i vårt exempel. Det är endast tillgängligt om du väljer metoden POST. Klistra in nyttolasten som ska skickas till tredjepartssystemet.
 
 Om ett GET-anrop som kräver parametrar används ska du ange parametrarna i fältet **[!UICONTROL Dynamic Values]** och de läggs sedan till automatiskt i slutet av anropet. Om ett POST-anrop används måste du:
 
-* lista de parametrar som ska skickas vid anrop i fältet **[!UICONTROL Dynamic Values]** (i exemplet nedan: &quot;identifier&quot;).
-* även ange dem med exakt samma syntax i brödtexten i den skickade nyttolasten. För att göra detta måste du lägga till: &quot;param&quot; – &quot;namn på parametern&quot; (i exemplet nedan: &quot;identifier&quot;). Följ syntaxen nedan:
+* lista parametrarna som ska skickas vid anropet i **[!UICONTROL Dynamic Values]** (i exemplet nedan: &quot;identifier&quot;).
+* även ange dem med exakt samma syntax i brödtexten i den skickade nyttolasten. Om du vill göra det måste du lägga till: &quot;param&quot;: &quot;name of your parameter&quot; (i exemplet nedan: &quot;identifier&quot;). Följ syntaxen nedan:
 
-   ```
-   {"id":{"param":"identifier"}}
-   ```
+  ```
+  {"id":{"param":"identifier"}}
+  ```
 
 ![](assets/journey29.png)
 
@@ -132,10 +132,10 @@ Definitionen av slutpunkten som ska anropas för att generera en åtkomsttoken:
 
 * slutpunkt: URL som ska användas för att generera slutpunkten
 * metoden för HTTP-begäran på slutpunkten (GET eller POST)
-* sidhuvuden: nyckelvärdepar som vid behov ska matas in som rubriker i detta anrop
+* rubriker: nyckelvärdepar som ska matas in som rubriker i detta anrop om det behövs
 * brödtext: beskriver anropets brödtext om metoden är POST. Vi stöder en begränsad brödstruktur, som definieras i bodyParams (key-value pairs). Brödtextens typ beskriver formatet och kodningen för brödtexten i anropet:
-   * &#39;form&#39;: vilket innebär att innehållstypen kommer att vara application/x-www-form-urlencoded (charset UTF-8) och nyckelvärdepar kommer att serialiseras som: key1=value1&amp;key2=value2&amp;...
-   * &#39;json&#39;: vilket innebär att innehållstypen blir application/json (charset UTF-8) och nyckelvärdepar kommer att serialiseras som ett json-objekt som är: _{ &quot;key1&quot;: &quot;value1&quot;, &quot;key2&quot;: &quot;value2&quot;, ...}_
+   * &#39;form&#39;: innebär att innehållstypen blir application/x-www-form-urlencoded (charset UTF-8) och nyckelvärdepar serialiseras som: key1=value1&amp;key2=value2&amp;...
+   * &#39;json&#39;: det innebär att innehållstypen blir application/json (charset UTF-8) och nyckelvärdepar kommer att serialiseras som ett json-objekt som det är: _{ &quot;key1&quot;: &quot;value1&quot;, &quot;key2&quot;: &quot;value2&quot;, ...}_
 
 Definitionen av hur en åtkomsttoken måste injiceras i åtgärdens HTTP-begäran:
 
@@ -208,7 +208,10 @@ Här följer ett exempel på autentiseringstypen för innehavare:
 
 >[!NOTE]
 >
->Cachens varaktighet hjälper till att undvika för många anrop till slutpunkterna för autentisering. Kvarhållande av autentiseringstoken cachelagras i tjänster, det finns ingen beständighet. Om en tjänst startas om börjar den med ett rent cacheminne. Cachevaraktigheten är som standard 1 timme. I den anpassade autentiseringsnyttolasten kan den anpassas genom att ange en annan kvarhållningstid.
+>Autentiseringstoken cachelagras per resa: om två resor använder samma anpassade åtgärd har varje resa en egen token cachelagrad. Denna token delas inte mellan dessa resor.
+>
+>Cachens varaktighet hjälper till att undvika för många anrop till slutpunkterna för autentisering. Kvarhållande av autentiseringstoken cachelagras i tjänster, det finns ingen beständighet. Om en tjänst startas om börjar den med en ren cache. Cachevaraktigheten är som standard 1 timme. I den anpassade autentiseringsnyttolasten kan den anpassas genom att ange en annan kvarhållningstid.
+>
 
 Här är ett exempel på autentiseringstypen för sidhuvud:
 

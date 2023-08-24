@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
+source-git-commit: 1276aa334a057de1a14b7772d07dd9e2ac4f614f
 workflow-type: tm+mt
-source-wordcount: '1736'
+source-wordcount: '1892'
 ht-degree: 1%
 
 ---
@@ -181,6 +181,31 @@ Aktivera **[!UICONTROL BCC email]** valfri funktion på kanalytnivå. [Läs mer]
 När du definierar **[!UICONTROL Bcc email]** måste du se till att använda en underdomän som har en giltig MX-postkonfiguration, annars misslyckas bearbetningen av e-postytan.
 
 Om du får ett felmeddelande när du skickar e-postytan betyder det att MX-posten inte är konfigurerad för underdomänen till den angivna adressen. Kontakta administratören för att konfigurera motsvarande MX-post eller använd en annan adress med en giltig MX-postkonfiguration.
+
+## Frölista {#seed-list}
+
+>[!CONTEXTUALHELP]
+>id="ajo_surface_seed_list"
+>title="Lägga till en startvärdeslista"
+>abstract="Välj önskad startvärdeslista om du automatiskt vill inkludera specifika e-postadresser i leveranserna. Dessa adresser kommer att inkluderas vid leveranstillfället och kommer att få en exakt kopia av leveransen i försäkringssyfte."
+
+En lista med startsidor i [!DNL Journey Optimizer] gör att du automatiskt kan inkludera specifika e-postadresser i dina leveranser. [Läs mer](../configuration/seed-lists.md)
+
+>[!CAUTION]
+>
+>Den här funktionen gäller för närvarande bara för e-postkanalen.
+
+Välj den lista som är relevant för dig i **[!UICONTROL Seed list]** -avsnitt. Lär dig hur du skapar en startvärdeslista i [det här avsnittet](../configuration/seed-lists.md#create-seed-list).
+
+![](../configuration/assets/seed-list-surface.png)
+
+>[!NOTE]
+>
+>Det går bara att välja en startvärdeslista åt gången.
+
+När den aktuella ytan används i en kampanj eller resa, inkluderas e-postadresserna på den valda startlistan vid leveranstillfället, vilket innebär att de får en kopia av leveransen i säkerhetssyfte.
+
+Lär dig hur du använder startvärdeslista i en kampanj eller en resa i [det här avsnittet](../configuration/seed-lists.md#use-seed-list).
 
 ## Parametrar för återförsök av e-post {#email-retry}
 

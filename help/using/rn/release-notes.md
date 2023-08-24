@@ -4,10 +4,10 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 5c8a985d19c82ecb79153dd8ba2e056f6a2c1f2b
+source-git-commit: 4ecaf60923f32e7bc2363981a1d7c0874b3b7e94
 workflow-type: tm+mt
-source-wordcount: '3494'
-ht-degree: 8%
+source-wordcount: '3383'
+ht-degree: 9%
 
 ---
 
@@ -24,30 +24,25 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 
 ## Versionsinformation augusti 2023 {#aug-rn-2023}
 
-Noteringarna nedan kan ändras utan föregående meddelande fram till releasedatum. Länkar, skärmar och uppdaterad dokumentation publiceras på releasedatum.
-
-
-**Releasedatum**: 23-24 augusti 2023
-
 ### Nya funktioner{#aug-2023-features}
 
 Den här versionen innehåller de nya funktionerna som listas nedan.
 
-<table>
+<!--table>
 <thead>
 <tr>
-<th><strong>Skicka meddelanden i appen på dina resor</strong><br/></th>
+<th><strong>Send In-app messages in your journeys</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Du kan nu skicka personaliserade meddelanden i appen till appanvändarna under en resa. Använd Journey Optimizer för att utforma meddelanden och anpassa meddelandelayout, visning, text och knappar för att skapa en smidig upplevelse.</p>
+<p>You can now send personalized In-app messages to your app users within a journey. Use Journey Optimizer to design notifications and customize the message layout, display, text, and buttons to create a seamless experience.</p>
 <img src="assets/in_app_journey_1.png"/>
-<!--p>For more information, refer to the <a href="../in-app/get-started-in-app.md">detailed documentation</a>.</p-->
+<p>For more information, refer to the <a href="../in-app/create-in-app-journey.md">detailed documentation</a>.</p>
 </tr>
 </tbody>
-</table>
+</table-->
 
 
 <table>
@@ -61,7 +56,7 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <td>
 <p>Nu kan du skapa och hantera dirigerade listor i Journey Optimizer. En startvärdeslista består av interna adresser som kan läggas till för den faktiska målgruppen och få exakt samma meddelande som målprofilerna vid körningen. Använd den här funktionen för att övervaka skickade meddelanden och se till att alla visningsformat, URL:er, bilder och länkar är korrekta.</p>
 <img src="../configuration/assets/seed-list-details.png">
-<!--p>For more information, refer to the <a href="../audience/get-started-audience-orchestration.md">detailed documentation</a>.</p-->
+<p>Mer information finns i den <a href="../configuration/seed-lists.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -92,25 +87,26 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 
 Den här versionen innehåller de förbättringar som anges nedan.
 
-**API:er**
+<!--
+**APIs**
 
-Det finns nu ett nytt API för att skapa och hantera innehållsfragment. [Läs mer](https://developer.adobe.com/journey-optimizer-apis/references/content-templates/#tag/Content-fragment-API){target="_blank"}.
+A new API to create and manage Content Fragments is now available. [Learn more](https://developer.adobe.com/journey-optimizer-apis/references/content-templates/#tag/Content-fragment-API){target="_blank"}.-->
 
-**E-postkanal**
+<!--**Email channel**
 
-Det finns ett nytt alternativ i inställningarna för e-postyta för att inkludera e-postadresser som inte har angetts på grund av skräppost i målgrupperna för transaktionsmeddelanden. Även om de har markerat marknadsföringsmeddelanden som skräppost kan dessa profiler sedan ta emot transaktionsmeddelanden, som lösenordsåterställning eller kontoutdrag. Det här alternativet är inaktiverat som standard.
+A new option is available in the email surface settings to include email addresses suppressed due to spam complaint in your transactional messages audiences. Even if they marked marketing messages as spam, these profiles can then receive transactional messages, such as password reset or account statements. This option is disabled by default.-->
 
 **Resor**
 
-Nu kan du utnyttja API-anropssvar i anpassade åtgärder och samordna din resa baserat på dessa svar. Den här funktionen är för närvarande tillgänglig som en privat beta.
-<!--* A new type of system alert has been introduced. You can now get notified when a custom action fails.
-* When duplicating a journey, you can now define the name of the journey copy.-->
+* Nu kan du utnyttja API-anropssvar i anpassade åtgärder och samordna din resa baserat på dessa svar. Den här funktionen är för närvarande tillgänglig som en privat beta. [Läs mer](../action/action-response.md).
+* En ny typ av systemvarning har införts. Du kan nu få meddelanden när en anpassad åtgärd misslyckas. [Läs mer](../reports/alerts.md).
+  <!--* When duplicating a journey, you can now define the name of the journey copy.-->
 
 
 **Direktutskick**
 
-* Azure kan nu väljas som servertyp i filroutningskonfigurationen.
-* Et-tecknet är nu tillgängligt som kolumnavgränsarfält i inställningarna för direktreklamyta.
+* Azure kan nu väljas som servertyp i filroutningskonfigurationen. [Läs mer](../direct-mail/direct-mail-configuration.md#file-routing-configuration)
+* Et-tecknet är nu tillgängligt som kolumnavgränsarfält i inställningarna för direktreklamyta. [Läs mer](../direct-mail/direct-mail-configuration.md#direct-mail-surface)
 
 
 

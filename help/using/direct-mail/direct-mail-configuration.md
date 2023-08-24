@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
-source-git-commit: 173ae09e48a67e0e40aa59f0f714b014eb8b8064
+source-git-commit: 375dfbebcb37f948b468ec9689963b0ffebebecf
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
@@ -36,9 +36,7 @@ Innan du kan generera filen måste du skapa:
 >id="ajo_dm_file_routing_details"
 >title="Definiera filroutningskonfigurationen"
 >abstract="När du har skapat ett direktutskick skapas och exporteras filen som innehåller målgruppsdata till en server. Du måste ange serverinformationen så att din direktreklamleverantör kan komma åt och använda den filen för att leverera direktreklam."
-
-<!--
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/direct-mail/create-direct-mail.html" text="Create a direct mail message"-->
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/direct-mail/create-direct-mail.html" text="Skapa ett direktutskick"
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_details_header"
@@ -78,7 +76,7 @@ Följ stegen nedan för att konfigurera filflödet.
 
    >[!NOTE]
    >
-   >Amazon S3 och SFTP<!--and Azure--> stöds i [!DNL Journey Optimizer].
+   >För närvarande stöds Amazon S3, SFTP och Azure i [!DNL Journey Optimizer].
 
 1. Fyll i information och autentiseringsuppgifter för servern, t.ex. serveradress, åtkomstnyckel.
 
@@ -135,7 +133,7 @@ En direktreklamyta måste även innehålla den filroutningskonfiguration som def
 
 1. Välj filformat: **[!UICONTROL CSV]** eller **[!UICONTROL Text delimited]**.
 
-1. Om du väljer **[!UICONTROL Text delimited]** definierar du den kolumnavgränsare du vill använda: tabulering, semikolon eller vertikalstreck<!--or ampersand-->.
+1. Om du väljer **[!UICONTROL Text delimited]** definierar du den kolumnavgränsare du vill använda: tabulering, semikolon, vertikalstreck eller et-tecken.
 
    ![](assets/surface-direct-mail-column-separator.png)
 

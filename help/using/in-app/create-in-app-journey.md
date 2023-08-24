@@ -1,6 +1,6 @@
 ---
 title: Skapa ett meddelande i appen på en resa
-description: Lär dig hur du skapar ett meddelande i appen i Journey Optimizer
+description: Lär dig hur du lägger till ett meddelande i appen under en resa
 feature: Overview
 topic: Content Management
 role: User
@@ -9,15 +9,17 @@ keywords: i appen, meddelande, skapa, börja
 hide: true
 hidefromtoc: true
 exl-id: b774e34f-8225-41a0-a2ec-b91d3a86cf2b
-badge: label="Beta" type="Informative"
-source-git-commit: e91ca6f6210fd883e7a483fe81dda59bdf6ab42a
+source-git-commit: 4ecaf60923f32e7bc2363981a1d7c0874b3b7e94
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
 
+
 # Skapa ett meddelande i appen på en resa {#create-in-app-journey}
+
+Så här lägger du till ett meddelande i appen under en resa:
 
 1. Öppna din resa och dra och släpp en **[!UICONTROL In-app]** aktivitet från **[!UICONTROL Actions]** på paletten.
 
@@ -25,13 +27,13 @@ ht-degree: 0%
 
    ![](assets/in_app_journey_1.png)
 
-1. Ange **[!UICONTROL Label]** och **[!UICONTROL Description]** för ditt meddelande.
+1. Ange en **[!UICONTROL Label]** och **[!UICONTROL Description]** för ditt meddelande.
 
 1. Välj [Yta i appen](inapp-configuration.md) att använda.
 
    ![](assets/in_app_journey_2.png)
 
-1. Nu kan du börja designa ditt innehåll med **[!UICONTROL Edit content]** -knappen. [Läs mer](design-in-app.md)
+1. Nu kan du börja utforma ditt innehåll med **[!UICONTROL Edit content]** -knappen. [Läs mer](design-in-app.md)
 
 1. Klicka **[!UICONTROL Edit trigger]** för att konfigurera utlösaren.
 
@@ -48,10 +50,10 @@ ht-degree: 0%
 
 1. Välj hur ofta utlösaren ska visas när meddelandet i appen är aktivt:
 
-   * **[!UICONTROL Every time]**: Visa alltid meddelandet när de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
+   * **[!UICONTROL Every time]**: Visa alltid meddelandet när de händelser som valts i **[!UICONTROL Mobile app trigger]** inträffar.
    * **[!UICONTROL Once]**: Visa endast det här meddelandet första gången de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
-   * **[!UICONTROL Until click through]**: Visa det här meddelandet när händelser har markerats i **[!UICONTROL Mobile app trigger]** nedrullningsbar meny inträffar tills en interaktionshändelse skickas av SDK med åtgärden&quot;klickad&quot;.
-   * **[!UICONTROL X number of times]**: Visa bara meddelandet ett visst antal gånger, som bestäms av värdet i **[!UICONTROL Times to display]** fält.
+   * **[!UICONTROL Until click through]**: Visa det här meddelandet när händelser har markerats i **[!UICONTROL Mobile app trigger]** rullgardinsmenyn inträffar tills en interaktionshändelse skickas av SDK med åtgärden&quot;klickad&quot;.
+   * **[!UICONTROL X number of times]**: Visa bara meddelandet ett visst antal gånger, vilket avgörs av det värde som anges i **[!UICONTROL Times to display]** fält.
 
 1. Välj veckodag och den tidpunkt då du vill att ditt meddelande i appen ska utlösas och klicka på **[!UICONTROL Save]**.
 
@@ -85,23 +87,23 @@ Läs mer om [Global reserapport](../reports/journey-global-report.md).
 
 +++Läs mer om de olika mätvärden och widgetar som är tillgängliga för rapporten i appen.
 
-The **[!UICONTROL In-app performance]** Nyckeltal anger den viktigaste informationen i relation till besökarnas engagemang i era meddelanden i appen, till exempel:
+The **[!UICONTROL In-app performance]** Nyckeltal anger den viktigaste informationen i relation till besökarnas engagemang i era meddelanden i appen, som:
 
 * **[!UICONTROL Unique impressions]**: antal unika användare som meddelandet i appen levererades till.
 
-* **[!UICONTROL Impressions]**: Totalt antal meddelanden i appen som levereras till alla användare.
+* **[!UICONTROL Impressions]**: totalt antal meddelanden i appen som levereras till alla användare.
 
-* **[!UICONTROL Click rate]**: procentandelen användare som interagerade med knapparna i meddelandet i appen jämfört med användare som såg meddelandet.
+* **[!UICONTROL Click rate]**: Andel användare som interagerade med knapparna i meddelandet i appen jämfört med användare som såg meddelandet.
 
-* **[!UICONTROL Dismiss rate]**: Andel meddelanden i appen som mottagarna avvisade.
+* **[!UICONTROL Dismiss rate]**: procent av meddelanden i appen som mottagarna avvisade.
 
 The **[!UICONTROL In-app summary]** diagram visar hur dina visningar i appen har utvecklats för den aktuella perioden.
 
 The **[!UICONTROL Clicks by button]** diagram och tabeller innehåller tillgängliga data för mottagarnas beteende per knapp:
 
-* **[!UICONTROL Clicks]**: Totalt antal mottagare som interagerat med knapparna i meddelandet i appen.
+* **[!UICONTROL Clicks]**: totalt antal mottagare som interagerat med knapparna i meddelandet i appen.
 
-* **[!UICONTROL Click rate]**: procentandelen användare som interagerade med knapparna i meddelandet i appen jämfört med användare som såg meddelandet.
+* **[!UICONTROL Click rate]**: Andel användare som interagerade med knapparna i meddelandet i appen jämfört med användare som såg meddelandet.
 +++
 
 **Relaterade ämnen:**

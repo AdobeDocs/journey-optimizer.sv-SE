@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Beginner
 keyword: direct, mail, configuration, direct-mail, provider
-source-git-commit: 246205d13c1dd30b4f4769780f69e5acdd388e66
+source-git-commit: 7d753a1fd71e85e29c141fc697348579eaa15380
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 2%
+source-wordcount: '442'
+ht-degree: 1%
 
 ---
 
@@ -50,3 +50,15 @@ Kontrollera att kampanjen och extraheringsfilen är korrekt konfigurerade innan 
 Klicka på knappen **[!UICONTROL Activate]** -knappen. När kampanjen startar genereras extraheringsfilen automatiskt och exporteras till den server som anges i [konfiguration för filroutning](../direct-mail/direct-mail-configuration.md).
 
 När ni har skickat det kan ni mäta effekten av er direktreklamkampanj i Campaign-rapporterna. Mer information om rapportering finns i det här avsnittet.
+
+## Hantera samtycke för direktreklam {#dm-consent-management}
+
+I [!DNL Journey Optimizer], samtycke hanteras av Experience Platform [Samtyckesschema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. Som standard är värdet för medgivandefältet tomt och behandlas som samtycke för att ta emot dina meddelanden.
+
+Om en profil har valt att inte ta emot direktreklam anger du värdet för `consents.marketing.postalMail.val` kommer att `n` och motsvarande profil kommer inte att ingå i efterföljande leveranser.
+
+Om du vill aktivera profilattributet igen måste du ändra tillbaka det till `consents.marketing.postalMail.val` : `y`.
+
+Om du vill hantera en profils attribut går du till Experience Platform och öppnar profilen genom att markera ett identitetsnamnutrymme och ett motsvarande identitetsvärde. Läs mer i [Experience Platform dokumentation](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
+
+Läs mer om hur du hanterar avanmälan i Journey Optimizer i [det här avsnittet](../privacy/opt-out.md).

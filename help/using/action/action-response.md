@@ -1,28 +1,26 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Konfigurera en anpassad åtgärd
-description: Lär dig hur du konfigurerar en anpassad åtgärd
+title: Förbättringar av anpassade funktionsmakron
+description: Läs mer om de senaste förbättringarna av anpassade åtgärder
 feature: Actions
 topic: Administration
 role: Admin
 level: Experienced
 badge: label="Beta" type="Informative"
 keywords: åtgärd, tredje part, anpassad, resor, API
-hide: true
-hidefromtoc: true
-source-git-commit: a3c95497fb7304ddd0aa26435f5d0279ff8fdb0f
+source-git-commit: 494e51d5e44796047e237e6ad692fc6fd4c4e31d
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '666'
 ht-degree: 4%
 
 ---
 
-# Förbättringar av anpassade funktionsmakron
+# Förbättringar av anpassade funktionsmakron {#custom-action-enhancements}
 
 Nu kan du utnyttja API-anropssvar i anpassade åtgärder och samordna dina resor baserat på dessa svar.
 
-Den här funktionen var bara tillgänglig när du använde datakällor. Nu kan du använda den med anpassade åtgärder.
+Den här funktionen var tidigare bara tillgänglig när du använde datakällor. Nu kan du använda den med anpassade åtgärder.
 
 >[!AVAILABILITY]
 >
@@ -32,11 +30,11 @@ Den här funktionen var bara tillgänglig när du använde datakällor. Nu kan d
 >
 >Anpassade åtgärder bör endast användas med privata eller interna slutpunkter och användas med en lämplig begränsning för begränsning eller begränsning. Läs [den här sidan](../configuration/external-systems.md).
 
-## Definiera den anpassade åtgärden
+## Definiera den anpassade åtgärden {#define-custom-action}
 
 När du definierar den anpassade åtgärden har två förbättringar gjorts tillgängliga: tillägget av GET-metoden och det nya nyttolastsvarsfältet. De andra alternativen och parametrarna ändras inte. Läs [den här sidan](../action/about-custom-action-configuration.md).
 
-### Konfiguration av slutpunkt
+### Konfiguration av slutpunkt {#endpoint-configuration}
 
 The **URL-konfiguration** avsnittet har fått ett nytt namn **Konfiguration av slutpunkt**.
 
@@ -44,7 +42,7 @@ I **Metod** nedrullningsbar meny kan du nu välja **GET**.
 
 ![](assets/action-response1.png){width="70%" align="left"}
 
-### Betalningar
+### Betalningar {#payloads-new}
 
 The **Åtgärdsparametrar** avsnittet har fått ett nytt namn **Betalningar**. Två fält är tillgängliga:
 
@@ -80,7 +78,7 @@ The **Åtgärdsparametrar** avsnittet har fått ett nytt namn **Betalningar**. T
 
 1. Klicka **Spara**.
 
-## Utnyttja svarsalternativen under en resa
+## Utnyttja svarsalternativen under en resa {#response-in-journey}
 
 Lägg bara till den anpassade åtgärden på en resa. Du kan sedan utnyttja svarsnyttolastfälten under förhållanden, andra åtgärder och meddelandepersonalisering.
 
@@ -119,7 +117,7 @@ Du kan till exempel lägga till ett villkor för att kontrollera antalet förmå
 
    ![](assets/action-response11.png)
 
-## Felstatus{#error-status}
+## Felstatus {#error-status}
 
 The **jo_status_code** -fältet är alltid tillgängligt även när ingen svarsnyttolast har definierats.
 
@@ -136,7 +134,7 @@ Ett åtgärdsanrop hanteras av fel när den returnerade http-koden är större �
 >
 >Endast nya anpassade åtgärder innehåller **jo_status_code** fältet är körklart. Om du vill använda den med en befintlig anpassad åtgärd måste du uppdatera åtgärden. Du kan till exempel uppdatera beskrivningen och spara den.
 
-## Uttryckssyntax
+## Uttryckssyntax {#exp-syntax}
 
 Här är syntaxen:
 
@@ -160,3 +158,4 @@ Här är några exempel:
 ```
 
 Mer information om fältreferenser finns i [det här avsnittet](../building-journeys/expression/field-references.md).
+
