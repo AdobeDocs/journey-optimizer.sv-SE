@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: 51562843-7b50-4eb5-bf79-5ce03f7549cb
-source-git-commit: 066491e19a0a3be84c3e6ca6fefe88a9beb26285
+source-git-commit: cf3e56f2c87ad39d94cb412fc605f5b235d6d1e1
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '221'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 Meddelanden i appen är meddelanden som kan skickas till användare i appen, och som vägleder dem till specifika intressepunkter. Dessa meddelanden kan användas för olika syften, t.ex. för att marknadsföra nya funktioner, presentera specialerbjudanden eller underlätta för användarna att komma igång. Genom att utnyttja meddelanden i appen kan ni effektivt interagera med er målgrupp och styra dem mot viktiga aspekter av er applikation.
 
-Använd Journey Optimizer för att skapa meddelanden i appen och konfigurera upplevelsealternativ, inklusive meddelandelayout, visning, text och knappalternativ.
+Använd Journey Optimizer för att skapa meddelanden i appen och konfigurera upplevelsealternativ, inklusive meddelandelayout, visning, text och knappalternativ. Du kan lägga till meddelanden i appen i en kampanj och under en resa.
 
 >[!AVAILABILITY]
 >
@@ -40,7 +40,7 @@ När du är klar kan du skapa, konfigurera och skicka ditt första meddelande i 
 <a href="create-in-app.md">
 <img alt="Lead" src="../assets/do-not-localize/inapp-create.jpeg">
 </a>
-<div><a href="create-in-app.md"><strong>Skapa meddelande i appen</strong>
+<div><a href="create-in-app.md"><strong>Skapa meddelande i appen i en kampanj</strong>
 </div>
 <p>
 </td>
@@ -57,7 +57,7 @@ När du är klar kan du skapa, konfigurera och skicka ditt första meddelande i 
 <img alt="Validering" src="../assets/do-not-localize/inapp-report.jpg">
 </a>
 <div>
-<a href="../reports/campaign-global-report.md#inapp-global"><strong>Rapport i appen</strong></a>
+<a href="../reports/campaign-global-report.md#inapp-global"><strong>Åtkomst till apprapport</strong></a>
 </div>
 <p>
 </td>

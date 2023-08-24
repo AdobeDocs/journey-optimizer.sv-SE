@@ -1,20 +1,20 @@
 ---
-title: Skapa ett meddelande i appen
-description: Lär dig skapa ett meddelande i appen i Journey Optimizer
+title: Skapa ett meddelande i appen i en kampanj
+description: Lär dig hur du skapar ett meddelande i appen i en kampanj i Journey Optimizer
 feature: Overview
 topic: Content Management
 role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: b3b79fe2-7db3-490d-9c3d-87267aa55eea
-source-git-commit: ed08b21f10246ef548d991807aa31d13ad8cbccc
+source-git-commit: cf3e56f2c87ad39d94cb412fc605f5b235d6d1e1
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '704'
 ht-degree: 2%
 
 ---
 
-# Skapa ett meddelande i appen {#create-in-app}
+# Skapa ett meddelande i appen i en kampanj {#create-in-app}
 
 <!--
 >[!BEGINTABS]
@@ -67,6 +67,8 @@ For more information on how to configure a journey, refer to [this page](../buil
 
 >[!TAB Add an In-app message to a campaign]
 -->
+
+Så här lägger du till ett meddelande i appen i en kampanj:
 
 1. Öppna **[!UICONTROL Campaigns]** menyn och klicka sedan på **[!UICONTROL Create campaign]**.
 
