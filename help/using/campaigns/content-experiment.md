@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
+source-git-commit: 48a0fb11c141d847fae444909a7e6080e4a4935a
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '770'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_content_experiment"
 >title="Innehållsexperiment"
->abstract="Du kan välja att variera leveransinnehåll, ämne eller avsändare för att definiera flera leveransbehandlingar och fastställa den bästa kombinationen för era målgrupper."
+>abstract="Du kan välja att ändra meddelandets innehåll, ämne eller avsändare för att definiera flera behandlingar och fastställa den bästa kombinationen för era målgrupper."
 
 >[!NOTE]
 >
@@ -99,13 +99,13 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 >title="Resultatmått"
 >abstract="Resultatmått används för att spåra och utvärdera den bästa behandlingen i ett experiment. Var noga med att konfigurera datauppsättningen för vissa mätvärden innan du använder den."
 
-1. När leveransen har anpassats går du till sammanfattningssidan för Campaign och klickar på **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment.
+1. När ditt meddelande är anpassat går du till kampanjsammanfattningssidan och klickar på **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment.
 
    ![](assets/content_experiment_3.png)
 
 1. Välj **[!UICONTROL Success metric]** som du vill använda för ditt experiment.
 
-   För vårt experiment väljer vi **[!UICONTROL Email open]** för att testa om mottagarna öppnar sina e-postmeddelanden om kampanjkoden finns på ärenderaden.
+   I detta exempel väljer du **[!UICONTROL Email open]** för att testa om profiler öppnar sina e-postmeddelanden om kampanjkoden finns på ärenderaden.
 
    ![](assets/content_experiment_11.png)
 
