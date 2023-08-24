@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 0758eeaf-a188-4b43-9c9a-a2e5a9e5dd76
-source-git-commit: f924af0e1baadabb97167f42457b1b419256fa8c
+source-git-commit: 48a0fb11c141d847fae444909a7e6080e4a4935a
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-Dokumentationen innehåller detaljerad information om hur du arbetar med målgruppsdispositioner i Adobe Journey Optimizer. Om du inte använder Adobe Journey Optimizer [klicka här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html)
+Dokumentationen innehåller detaljerad information om hur du arbetar med målgruppsdispositioner i Adobe Journey Optimizer. Om du inte använder Adobe Journey Optimizer [klicka här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html){target="_blank"}.
 
 >[!ENDSHADEBOX]
 

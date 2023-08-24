@@ -7,7 +7,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 700dc66e-ae2d-418f-b75e-ece15af57ab3
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 17dd8e2226555ba6bf74f813c11bdeecac05ddd2
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 4%
@@ -31,7 +31,7 @@ Journey Optimizer lagrar data i Adobe Experience Platform och med Customer Journ
 
 När ni har skapat er resa i Journey Optimizer kan Customer Journey Analytics hämta in data från plattformen för att ta fram rapporter och förstå hur varje kundinteraktion påverkar era resor.
 
-Läs mer om [Journey Optimizer + Customer Journey Analytics](../reports/cja-ajo.md).
+Läs mer om [JOURNEY OPTIMIZER + CUSTOMER JOURNEY ANALYTICS](../reports/cja-ajo.md).
 
 ## Adobe Analytics{#integration-aa}
 
@@ -46,21 +46,21 @@ Samla marknadsförings- och kreativa arbetsflöden med [!DNL Adobe Experience Ma
 
 [!DNL Adobe Experience Manager Assets Essentials] kan nås direkt från [!DNL Adobe Journey Optimizer] via den vänstra menyn **[!UICONTROL Assets]** -avsnitt.
 
-Läs mer om [Journey Optimizer + Assets Essentials](../email/assets-essentials.md).
+Läs mer om [JOURNEY OPTIMIZER + ASSETS ESSENTIALS](../content-management/assets-essentials.md).
 
 
 ## Adobe Stock{#integration-stock}
 
 The [!DNL Adobe Stock] och [!DNL Adobe Journey Optimizer] Integrationspluginen för e-postdesignern ger kunderna ett enkelt sätt att navigera, licensiera och spara bilder för användning i meddelanderedigering.
 
-Med [!DNL Adobe Journey Optimizer]kan du överföra bilder till e-postmeddelanden direkt från [!DNL Adobe Stock] och lägga in **[!UICONTROL Assets]** mapp med **[!UICONTROL Find Adobe Stock photos]** alternativ. Dessutom är **[!UICONTROL Find Similar Stock photos]** kan du söka efter bilder som matchar innehållet, färgen och kompositionen för resursen som används i leveransen.
+Med [!DNL Adobe Journey Optimizer]kan du överföra bilder till e-postmeddelanden direkt från [!DNL Adobe Stock] och lägga in **[!UICONTROL Assets]** mapp med **[!UICONTROL Find Adobe Stock photos]** alternativ. Dessutom är **[!UICONTROL Find Similar Stock photos]** hjälper dig att hitta bilder som matchar innehållet, färgen och kompositionen för resursen som används i leveransen.
 
-Läs mer om [Journey Optimizer + Stock](../email/stock.md).
+Läs mer om [Journey Optimizer + Stock](../content-management/stock.md).
 
 
 ## Adobe Intelligent Services{#integration-intelligent-service}
 
-Adobe Intelligent Services som är inbyggt i kunddataplattformen i realtid gör att ni kan utnyttja kraften i artificiell intelligens och maskininlärning i kundupplevelsefall. På så sätt kan marknadsföringsanalytiker skapa prediktioner som är specifika för ett företags behov med hjälp av konfigurationer på företagsnivå utan behov av datavetenskaplig expertis.
+Adobe Intelligent Services som är inbyggt i kunddataplattformen i realtid gör att ni kan utnyttja kraften i artificiell intelligens och maskininlärning i kundupplevelsefall. På så sätt kan marknadsföringsanalytiker skapa prediktioner som är specifika för ett företags behov med hjälp av konfigurationer på företagsnivå utan behov av datavetenskap.
 
 Med kundens AI kan varumärken skapa maskininlärningsbaserade poäng som är tillgängliga som profilattribut i Adobe Experience Platform och som kan användas för att personalisera en resa.
 
@@ -75,7 +75,7 @@ Läs mer om [Journey Optimizer + Campaign](../building-journeys/ajo-ac.md).
 
 Du kan också konfigurera en integrering med Adobe Campaign Standard för att skicka meddelanden på dina resor.
 
-Läs mer om [Journey Optimizer + Campaign Standard](../building-journeys/ajo-ac.md).
+Läs mer om [JOURNEY OPTIMIZER + CAMPAIGN STANDARD](../building-journeys/ajo-ac.md).
 
 ## Egna kanaler{#integration-custom}
 

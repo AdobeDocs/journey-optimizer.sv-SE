@@ -7,7 +7,7 @@ role: Admin
 level: Intermediate
 keywords: webb, underdomäner, konfiguration
 exl-id: 6503d9e6-6c6c-4a6d-ad3d-1d81eb3b4698
-source-git-commit: 40cdcace9788206ad32dc6ae1e5f70c66e684bcb
+source-git-commit: 39953bb09a699ed4fd07db26a3f2e54f4e2cacd7
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%
@@ -31,9 +31,9 @@ ht-degree: 0%
 >title="Ange en webbunderdomän"
 >abstract="Markera en underdomän i listan över underdomäner som har delegerats till Adobe. Du kan ange den här webbunderdomänen som standardunderdomän, men bara en standardunderdomän i taget kan användas."
 
-Om du lägger till innehåll från [Adobe Experience Manager Assets Essentials](../email/assets-essentials.md) måste du konfigurera den underdomän som ska användas för att publicera innehållet.
+Om du lägger till innehåll från [Adobe Experience Manager Assets Essentials](../content-management/assets-essentials.md) måste du konfigurera den underdomän som ska användas för att publicera innehållet.
 
-Du måste välja i listan över underdomäner som redan har delegerats till Adobe. Läs mer om hur du delegerar underdomäner till Adobe in [det här avsnittet](../configuration/delegate-subdomain.md).
+För att göra det måste du välja i listan över underdomäner som redan har delegerats till Adobe. Läs mer om hur du delegerar underdomäner till Adobe in [det här avsnittet](../configuration/delegate-subdomain.md).
 
 >[!CAUTION]
 >
@@ -42,7 +42,6 @@ Du måste välja i listan över underdomäner som redan har delegerats till Adob
 >* Om du vill komma åt och redigera webbunderdomäner måste du ha **[!UICONTROL Manage Web Subdomains]** behörighet i produktionssandlådan.
 >
 > * Eventuella ändringar av en webbunderdomän påverkar också produktionssandlådorna.
-
 
 Du kan skapa flera webbunderdomäner, men bara de **standard** underdomänen kommer att användas. Du kan ändra standardwebbunderdomänen, men bara en åt gången kan användas.
 
@@ -74,9 +73,9 @@ Du kan skapa flera webbunderdomäner, men bara de **standard** underdomänen kom
 
    >[!NOTE]
    >
-   >I mycket sällsynta fall kan en underdomänskonfiguration misslyckas. I så fall kan du ta bort **[!UICONTROL Failed]** underdomän för att rensa listan med **[!UICONTROL Delete]** från **[!UICONTROL More actions]** ikon.
+   >I mycket sällsynta fall kan en underdomänskonfiguration misslyckas. I det här fallet kan du ta bort **[!UICONTROL Failed]** för att rensa listan med **[!UICONTROL Delete]** från **[!UICONTROL More actions]** -ikon.
 
-1. The **[!UICONTROL Default]** emblem visas bredvid den underdomän som används som standard. Om du vill ändra standardunderdomänen väljer du **[!UICONTROL Set as default]** från **[!UICONTROL More actions]** -knapp bredvid önskad underdomän.
+1. The **[!UICONTROL Default]** emblem visas bredvid den underdomän som används som standard. Om du vill ändra standardunderdomänen väljer du **[!UICONTROL Set as default]** från **[!UICONTROL More actions]** -knapp intill önskad underdomän.
 
    ![](assets/web-subdomain-default.png)
 

@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: kod, HTML, redigerare
 exl-id: 5fb79300-08c6-4c06-a77c-d0420aafca31
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: 39953bb09a699ed4fd07db26a3f2e54f4e2cacd7
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 5%
@@ -24,13 +24,13 @@ Använd **[!UICONTROL Code your own]** läge för att importera obearbetat HTML 
 
 >[!CAUTION]
 >
-> Bilder från [Adobe Experience Manager Assets Essentials](assets-essentials.md) kan inte refereras när den här metoden används. De bilder som refereras i HTML-koden måste lagras på en offentlig plats.
+> Bilder från [Adobe Experience Manager Assets Essentials](../content-management/assets-essentials.md) kan inte refereras när den här metoden används. De bilder som refereras i HTML-koden måste lagras på en offentlig plats.
 
 1. På e-postdesignerns startsida väljer du **[!UICONTROL Code your own]**.
 
    ![](assets/code-your-own.png)
 
-1. Ange eller klistra in HTML-koden i Raw-format.
+1. Ange eller klistra in Raw-HTML-koden.
 
 1. Använd den vänstra rutan för att utnyttja [!DNL Journey Optimizer] personaliseringsfunktioner. [Läs mer](../personalization/personalize.md)
 
@@ -48,6 +48,6 @@ Använd **[!UICONTROL Code your own]** läge för att importera obearbetat HTML 
 
    ![](assets/code-editor-preview.png)
 
-1. När koden är klar klickar du på **[!UICONTROL Save]** går du tillbaka till skärmen för att skapa meddelanden för att slutföra meddelandet.
+1. När koden är klar klickar du **[!UICONTROL Save]** går du tillbaka till skärmen för att skapa meddelanden för att slutföra meddelandet.
 
    ![](assets/code-editor-save.png)

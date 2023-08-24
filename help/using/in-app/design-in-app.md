@@ -7,7 +7,7 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, design, formatering
 exl-id: 7d7aa721-96aa-4ebc-a51c-e693f893f34f
-source-git-commit: 0c32248d13c08a98e9298ddc932aa2e547ab2acd
+source-git-commit: 39953bb09a699ed4fd07db26a3f2e54f4e2cacd7
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 9%
@@ -20,11 +20,11 @@ Du kan redigera innehållet i appen för att konfigurera upplevelsealternativ:
 
 * I en **[!UICONTROL Campaign]**, från **[!UICONTROL Action]** för att konfigurera meddelandeinnehållet klickar du på **[!UICONTROL Edit content]** -knappen.
 
-   ![](assets/edit-in-app-content.png)
+  ![](assets/edit-in-app-content.png)
 
 * I en **[!UICONTROL Journey]**, från den avancerade menyn i ditt program **[!UICONTROL Action]** kan du börja designa ditt innehåll med **[!UICONTROL Edit content]** -knappen.
 
-   ![](assets/design_inapp_journey.png)
+  ![](assets/design_inapp_journey.png)
 
 The **[!UICONTROL Advanced formatting]** växlar aktiverar ytterligare alternativ för att anpassa upplevelsen.
 
@@ -38,27 +38,27 @@ Från **[!UICONTROL Message Layout]** väljer du ett av de fyra olika layoutalte
 
 * **[!UICONTROL Fullscreen]**: Den här typen av layout täcker hela skärmen på målenheterna.
 
-   Den stöder medie- (bild, video), text- och knappkomponenter.
+  Den stöder medie- (bild, video), text- och knappkomponenter.
 
 * **[!UICONTROL Modal]**: Layouten visas i ett stort varningsfönster och programmet visas fortfarande i bakgrunden.
 
-   Den stöder medie- (bild, video), text- och knappkomponenter.
+  Den stöder medie- (bild, video), text- och knappkomponenter.
 
 * **[!UICONTROL Banner]**: Den här typen av layout visas som ett systemspecifikt varningsmeddelande.
 
-   Du kan bara lägga till en **[!UICONTROL Header]** och **[!UICONTROL Body]** till ditt meddelande.
+  Du kan bara lägga till en **[!UICONTROL Header]** och **[!UICONTROL Body]** till ditt meddelande.
 
 * **[!UICONTROL Custom]**: I det anpassade meddelandeläget kan du importera och redigera ett av dina förkonfigurerade HTML-meddelanden direkt.
 
    * Välj **[!UICONTROL Compose]** för att ange eller klistra in HTML-koden i Raw-format.
 
-      Använd den vänstra rutan för att utnyttja Journey Optimizer personaliseringsfunktioner. Mer information om detta finns i [det här avsnittet](../personalization/personalize.md).
+     Använd den vänstra rutan för att utnyttja Journey Optimizer personaliseringsfunktioner. Mer information om detta finns i [det här avsnittet](../personalization/personalize.md).
 
    * Välj **[!UICONTROL Import]** om du vill importera HTML- eller ZIP-filen med HTML.
 
 ## Fliken Innehåll {#content-tab}
 
-Från **Innehåll** kan du definiera och personalisera: innehållet i meddelandet och formatet för **Stäng** -knappen. Du kan också lägga till media i meddelanden i appen och lägga till åtgärdsknappar på den här fliken.
+Från **Innehåll** kan du definiera och anpassa: meddelandets innehåll och formatet för **Stäng** -knappen. Du kan också lägga till media i meddelanden i appen och lägga till åtgärdsknappar på den här fliken.
 
 ### Knappen Stäng {#close-button}
 
@@ -84,7 +84,7 @@ The **[!UICONTROL Media]** I kan du lägga till media i dina meddelanden i appen
 
 ![](assets/in_app_content_3.png)
 
-Ange din medie-URL eller klicka på **[!UICONTROL Select Assets]** om du vill lägga till resurser som lagras i ditt resursbibliotek direkt i ditt meddelande i appen. [Läs mer om resurshantering](../email/assets-essentials.md).
+Ange din medie-URL eller klicka på **[!UICONTROL Select Assets]** om du vill lägga till resurser som lagras i ditt resursbibliotek direkt i ditt meddelande i appen. [Läs mer om resurshantering](../content-management/assets-essentials.md).
 Du kan också lägga till en **[!UICONTROL Alternative text]** för skärmläsningsprogram.
 
 +++Fler alternativ med avancerad formatering
@@ -93,13 +93,13 @@ Om **[!UICONTROL Advanced formatting mode]** är aktiverat kan du anpassa **[!UI
 
 +++
 
-### Rubrik och brödtext {#title-body}
+### Huvud och brödtext {#title-body}
 
 Skriv innehållet i **[!UICONTROL Header]** och **[!UICONTROL Body]** fält.
 
 ![](assets/in_app_content_4.png)
 
-Använd **[!UICONTROL Personalization]** om du vill lägga till personalisering. Läs mer om personalisering i Adobe Journey Optimizer Expression Editor [i det här avsnittet](../personalization/personalize.md).
+Använd **[!UICONTROL Personalization]** ikon för att lägga till personalisering. Läs mer om personalisering i Adobe Journey Optimizer Expression Editor [i det här avsnittet](../personalization/personalize.md).
 
 +++Fler alternativ med avancerad formatering
 
@@ -125,7 +125,7 @@ Så här anpassar du knappen:
 
 1. Ange webb-URL:en eller länken till **[!UICONTROL Target]** fält.
 
-1. Om du vill lägga till flera knappar klickar du på **[!UICONTROL Add button]**.
+1. Om du vill lägga till flera knappar klickar du **[!UICONTROL Add button]**.
 
 +++Fler alternativ med avancerad formatering
 
@@ -161,7 +161,7 @@ The **[!UICONTROL App Preview]** I kan du lägga till en bakgrund bakom ditt med
 
 ![](assets/in_app_content_7.png)
 
-The **[!UICONTROL Background image]** kan du lägga till en bakgrund i meddelandet i appen:
+The **[!UICONTROL Background image]** I kan du lägga till en bakgrund i meddelandet i appen:
 
 * Ett medium från en URL-länk.
 
@@ -177,15 +177,15 @@ Med alternativet för övertagande av användargränssnitt, som är aktiverat so
 
 Om **[!UICONTROL Advanced formatting mode]** är aktiverat kan du anpassa meddelandet ytterligare med följande alternativ:
 
-* **[!UICONTROL Customize gestures]**: I kan du anpassa vad användaren ska dra i. Om du väljer Avvisa kan du lägga till en anpassad interaktionshändelse och/eller målmål.
+* **[!UICONTROL Customize gestures]**: gör att du kan anpassa vad användaren ska svepa. Om du väljer Avvisa kan du lägga till en anpassad interaktionshändelse och/eller målmål.
 
-* **[!UICONTROL Customize UI takeover]**: Med kan du välja en färg som ska visas i bakgrunden och dess opacitet.
+* **[!UICONTROL Customize UI takeover]**: låter dig välja en färg som ska visas i bakgrunden och dess opacitet.
 
-* **[!UICONTROL Customize size]**: Med kan du justera bredden och höjden på meddelanden i appen.
+* **[!UICONTROL Customize size]**: låter dig justera bredd och höjd för meddelanden i appen.
 
-* **[!UICONTROL Customize position]**: I kan du anpassa positionen för dina meddelanden i appen på användarnas skärm. Du kan ändra justeringarna Lodrätt och Vågrätt.
+* **[!UICONTROL Customize position]**: låter dig anpassa positionen för dina meddelanden i appen på användarnas skärm. Du kan ändra justeringarna Lodrätt och Vågrätt.
 
-* **[!UICONTROL Customize animation]**: I kan du anpassa dina Display- och Dismissa-animeringar, t.ex. om du får meddelanden i appen från vänster eller överst på användarens enhet.
+* **[!UICONTROL Customize animation]**: låter dig anpassa dina Display- och Dismiss-animeringar, t.ex. om du får meddelanden i appen från vänster eller överst på användarens enhet.
 
 * **[!UICONTROL Message round corner]**: gör att du kan lägga till runda hörn i meddelanden i appen genom att ändra **[!UICONTROL Corner radius]**.
 

@@ -8,11 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: resa, taggar
-badge: label="Beta" type="Informative"
 exl-id: 44c255d1-121c-47d4-b407-161626ca3cb4
-source-git-commit: c823d1a02ca9d24fc13eaeaba2b688249e61f767
+source-git-commit: 48a0fb11c141d847fae444909a7e6080e4a4935a
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -20,10 +19,6 @@ ht-degree: 0%
 # Hantera taggar under resor {#journey_tags}
 
 Som Journey Optimizer-läkare kan du ordna dina resor med hjälp av taggar. Taggar är ett snabbt och enkelt sätt att klassificera objekt för att förbättra sökningen.
-
->[!AVAILABILITY]
->
-> Enhetliga taggar finns för närvarande i Beta. Dokumentationen och funktionaliteten kan komma att ändras.
 
 ## Lägga till taggar till en resa
 
@@ -53,7 +48,7 @@ Du kan lägga till eller ta bort taggar från alla typer av resor (live, draft, 
 
 ## Hantera taggar
 
-Administratörer kan ta bort taggar och ordna dem efter kategorier med **Taggar** meny, under **ADMINISTRATION**. Se detta [dokumentation](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/overview.html).
+Administratörer kan ta bort taggar och ordna dem efter kategorier med hjälp av **Taggar** meny, under **ADMINISTRATION**. Se detta [dokumentation](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/overview.html).
 
 >[!NOTE]
 >

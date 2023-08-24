@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: landning, landningssida, design, HTML
 exl-id: c61b8d80-17e1-4fdd-a739-efcee032dc23
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: 39953bb09a699ed4fd07db26a3f2e54f4e2cacd7
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 1%
@@ -24,13 +24,13 @@ Börja skapa innehåll för landningen [primär sida](create-lp.md#configure-pri
 
 Därifrån kan man
 
-* **Designa landningssidan från grunden** genom innehållsdesignerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets Essentials](../email/assets-essentials.md). Lär dig designa innehåll <!--or use built-in templates--> [i det här avsnittet](../email/content-from-scratch.md).
+* **Designa din landningssida från grunden** genom innehållsdesignerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets Essentials](../content-management/assets-essentials.md). Lär dig hur du utformar innehåll <!--or use built-in templates--> [i det här avsnittet](../email/content-from-scratch.md).
 
 * **Kod eller klistra in Raw HTML** direkt in i innehållsdesignern. Lär dig koda eget innehåll [i det här avsnittet](../email/code-content.md).
 
-* **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig importera innehåll [i det här avsnittet](../email/existing-content.md).
+* **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig hur du importerar innehåll [i det här avsnittet](../email/existing-content.md).
 
-* **Använda en sparad landningssidmall** skapad i [!DNL Journey Optimizer]. [Läs mer](lp-templates.md)
+* **Använda en sparad landningssidmall** som [!DNL Journey Optimizer]. [Läs mer](lp-templates.md)
 
 >[!NOTE]
 >

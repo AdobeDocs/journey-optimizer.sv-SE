@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 98e9d4530feb584ddcbf460714f1302b87d7822a
+source-git-commit: 5f8dcb6d8984da9b343702d06bc400c851a9c017
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 33%
+source-wordcount: '1416'
+ht-degree: 32%
 
 ---
 
@@ -185,9 +185,6 @@ ht-degree: 33%
       + Designa innehåll {#add-content}
          + [Använda innehållskomponenter](using/email/content-components.md)
          + [Lägga till länkar och spåra meddelanden](using/email/message-tracking.md)
-         + Hantera resurser {#manage-asset}
-            + [Arbeta med Assets Essentials](using/email/assets-essentials.md)
-            + [Arbeta med Adobe Stock](using/email/stock.md)
          + [Infoga personaliserade erbjudanden](using/email/add-offers-email.md)
          + [Generera textversionen](using/email/text-version-email.md)
          + [Lägga till en förrubrik](using/email/preheader.md)
@@ -251,6 +248,13 @@ ht-degree: 33%
    + Konfigurera landningssidor {#lp-configuration}
       + [Konfigurera underdomäner för landningssidor](using/landing-pages/lp-subdomains.md)
       + [Definiera förinställningar för landningssidor](using/landing-pages/lp-presets.md)
++ Innehållshantering {#content-management}
+   + [Arbeta med Assets Essentials](using/content-management/assets-essentials.md)
+   + [Arbeta med Adobe Stock](using/content-management/stock.md)
+   + Arbeta med Content Assist{#content-assistant}
+      + [Kom igång med Content Assist](using/content-management/gs-generative.md)
+      + [Titelgenerering](using/content-management/generative-title.md)
+      + [Bildgenerering](using/content-management/generative-image.md)
 + Personalisering och dynamiskt innehåll {#personalized-dynamic-content}
    + Personalisering {#personalization}
       + [Kom igång med personalisering](using/personalization/personalize.md)

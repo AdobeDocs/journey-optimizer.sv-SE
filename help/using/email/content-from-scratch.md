@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: innehåll, redigerare, e-post, börja
 exl-id: 151594f2-85e4-4c79-9c15-334fbd3768c4
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 39953bb09a699ed4fd07db26a3f2e54f4e2cacd7
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Följ stegen nedan när du vill börja skapa ditt innehåll:
 
    ![](assets/email_designer_structure_component.png)
 
-1. Från **[!UICONTROL Asset picker]** kan du välja resurser som lagras i **[!UICONTROL Assets library]**. [Läs mer om resurshantering](assets-essentials.md)
+1. Från **[!UICONTROL Asset picker]** kan du välja resurser som lagras i **[!UICONTROL Assets library]**. [Läs mer om resurshantering](../content-management/assets-essentials.md)
 
    Dubbelklicka på den mapp som innehåller dina resurser. Dra och släpp dem i en strukturkomponent.
 
@@ -114,11 +114,11 @@ Följ stegen nedan när du vill börja skapa ditt innehåll:
 
    >[!CAUTION]
    >
-   >Du kan inte återgå till den visuella designern för det här e-postmeddelandet när du har växlat till kodredigeraren.
+   >Du kan inte återgå till den visuella designern för det här e-postmeddelandet efter att du har växlat till kodredigeraren.
 
-1. När innehållet är klart klickar du på **[!UICONTROL Simulate content]** för att kontrollera återgivningen. Du kan välja skrivbordsvy eller mobilvy. [Läs mer om hur du förhandsgranskar ditt e-postmeddelande](preview.md)
+1. Klicka på **[!UICONTROL Simulate content]** för att kontrollera återgivningen. Du kan välja skrivbordsvy eller mobilvy. [Läs mer om hur du förhandsgranskar ditt e-postmeddelande](preview.md)
 
    ![](assets/email_designer_simulate_content.png)
 
-1. När innehållet är klart klickar du på **[!UICONTROL Save]**.
+1. När innehållet är klart klickar du **[!UICONTROL Save]**.
 

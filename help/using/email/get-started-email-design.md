@@ -2,14 +2,14 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Designa e-postmeddelanden
-description: Lär dig hur du utformar e-postmeddelanden
+description: Lär dig utforma e-postmeddelanden
 feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
 keywords: e-post, design, stockinnehåll, resurser
 exl-id: e4f91870-f06a-4cd3-98b7-4c413233e310
-source-git-commit: dc48cc6d95e4af288727961fd9f7761dee4f2552
+source-git-commit: 39953bb09a699ed4fd07db26a3f2e54f4e2cacd7
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 3%
@@ -18,13 +18,13 @@ ht-degree: 3%
 
 # Kom igång med e-postdesign {#get-started-content-design}
 
-Du kan importera ett befintligt innehåll i [!DNL Journey Optimizer] eller utnyttja funktionerna för innehållsdesign:
+Du kan importera ett befintligt innehåll i [!DNL Journey Optimizer] eller utnyttja designfunktionerna:
 
 * Använd [!DNL Journey Optimizer] **funktioner för e-postdesign** för att designa eller importera responsiva e-postmeddelanden. [Läs mer](content-from-scratch.md)
 
-* Utnyttja **Adobe Experience Manager Assets Essentials** för att berika era e-postmeddelanden, bygga och hantera er egen databas för mediefiler. [Läs mer](assets-essentials.md)
+* Utnyttja **Adobe Experience Manager Assets Essentials** för att berika era e-postmeddelanden, bygga och hantera er egen databas för mediefiler. [Läs mer](../content-management/assets-essentials.md)
 
-* Sök **Adobe Stock foton** för att skapa innehåll och förbättra e-postdesignen. [Läs mer](stock.md)
+* Sök **Adobe Stock foton** för att skapa innehåll och förbättra e-postdesignen. [Läs mer](../content-management/stock.md)
 
 * Förbättra kundernas upplevelse genom att skapa personaliserade och dynamiska meddelanden utifrån deras profilattribut. Läs mer om [personalisering](../personalization/personalize.md) och [dynamiskt innehåll](../personalization/get-started-dynamic-content.md).
 
@@ -46,13 +46,13 @@ När du har [lade till ett e-postmeddelande](create-email.md) till en resa eller
 
 1. På e-postdesignerns startsida väljer du hur du vill utforma e-postmeddelandet bland följande alternativ:
 
-   * **Designa din e-post från grunden** via e-postdesignerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets Essentials](assets-essentials.md). Lär dig hur du utformar e-postinnehåll i [det här avsnittet](content-from-scratch.md).
+   * **Designa din e-post från grunden** via e-postdesignerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets Essentials](../content-management/assets-essentials.md). Lär dig hur du utformar e-postinnehåll i [det här avsnittet](content-from-scratch.md).
 
    * **Kod eller klistra in Raw HTML** direkt i e-postdesignern. Lär dig koda eget innehåll i [det här avsnittet](code-content.md).
 
-      >[!NOTE]
-      >
-      >I en kampanj kan du även välja **[!UICONTROL Code Editor]** från **[!UICONTROL Edit content]** skärm. [Läs mer](create-email.md#define-email-content)
+     >[!NOTE]
+     >
+     >I en kampanj kan du även välja **[!UICONTROL Code Editor]** från **[!UICONTROL Edit content]** skärm. [Läs mer](create-email.md#define-email-content)
 
    * **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig hur du importerar ett e-postinnehåll i [det här avsnittet](existing-content.md).
 
@@ -66,7 +66,7 @@ När du har [lade till ett e-postmeddelande](create-email.md) till en resa eller
 
 ## Instruktionsvideor {#video}
 
-Lär dig hur du skapar e-postinnehåll med meddelanderedigeraren.
+Lär dig skapa e-postinnehåll med meddelanderedigeraren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334150?quality=12)
 

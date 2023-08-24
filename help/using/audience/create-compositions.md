@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 8b978900-fcef-46f2-bc19-70776e4f3d43
-source-git-commit: f924af0e1baadabb97167f42457b1b419256fa8c
+source-git-commit: 48a0fb11c141d847fae444909a7e6080e4a4935a
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-Dokumentationen innehåller detaljerad information om hur du arbetar med målgruppsdispositioner i Adobe Journey Optimizer. Om du inte använder Adobe Journey Optimizer [klicka här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html)
+Dokumentationen innehåller detaljerad information om hur du arbetar med målgruppsdispositioner i Adobe Journey Optimizer. Om du inte använder Adobe Journey Optimizer [klicka här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html){target="_blank"}.
 
 >[!ENDSHADEBOX]
 
@@ -37,7 +37,7 @@ Så här skapar du ett dispositionsarbetsflöde:
    >
    >The **[!UICONTROL Build rule]** kan du skapa en ny segmentdefinition med [Segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html).
 
-1. Arbetsytan visas med två standardaktiviteter:
+1. Arbetsytan i kompositionen visas med två standardaktiviteter:
 
    * **[!UICONTROL Audience]**: startpunkten för kompositionen. Med den här aktiviteten kan du välja en eller flera målgrupper som grund för ditt arbetsflöde,
 
@@ -51,11 +51,11 @@ Så här skapar du ett dispositionsarbetsflöde:
 
    ![](assets/audiences-properties.png)
 
-1. Konfigurera kompositionen genom att lägga till så många aktiviteter som behövs mellan **[!UICONTROL Audience]** och **[!UICONTROL Save]** verksamhet. [Lär dig arbeta med arbetsytan](composition-canvas.md)
+1. Konfigurera kompositionen genom att lägga till så många aktiviteter som behövs mellan **[!UICONTROL Audience]** och **[!UICONTROL Save]** verksamhet. [Lär dig hur du arbetar med arbetsytan](composition-canvas.md)
 
    ![](assets/audiences-publish.png)
 
-1. När kompositionen är klar klickar du på **[!UICONTROL Publish]** för att publicera kompositionen och spara målgrupperna i Adobe Experience Platform.
+1. Klicka på **[!UICONTROL Publish]** för att publicera kompositionen och spara målgrupperna i Adobe Experience Platform.
 
    >[!IMPORTANT]
    >
@@ -65,7 +65,7 @@ Så här skapar du ett dispositionsarbetsflöde:
 
    ![](assets/audiences-alerts.png)
 
-1. Dispositionen publiceras. De resulterande målgrupperna sparas i Adobe Experience Platform och är redo att målinrikta sig i Journey Optimizer-kampanjer. [Lär dig hur du arbetar med kampanjer](../campaigns/get-started-with-campaigns.md)
+1. Dispositionen publiceras. De resulterande målgrupperna sparas i Adobe Experience Platform och kan nu målinrikta sig i Journey Optimizer kampanjer. [Lär dig arbeta med kampanjer](../campaigns/get-started-with-campaigns.md)
 
 ## Åtkomst till kompositioner {#access}
 

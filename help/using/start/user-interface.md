@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 0e0c293b31e3b74b57b12e0ae06f6ea9eb4d0dc1
+source-git-commit: 39953bb09a699ed4fd07db26a3f2e54f4e2cacd7
 workflow-type: tm+mt
 source-wordcount: '1233'
 ht-degree: 5%
@@ -21,7 +21,7 @@ För åtkomst till  [!DNL Adobe Journey Optimizer], ansluta till [Adobe Experien
 
 De viktigaste begreppen när du bläddrar i användargränssnittet är vanliga i Adobe Experience Platform. Se [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html#adobe-experience-platform-ui-guide){target="_blank"} för mer information.
 
-Vilka komponenter och funktioner som är tillgängliga i användargränssnittet beror på [behörigheter](../administration/permissions.md) och [licensieringspaket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Fråga din Adobe Customer Success Manager för alla frågor.
+Vilka komponenter och funktioner som är tillgängliga i användargränssnittet beror på din [behörigheter](../administration/permissions.md) och [licensieringspaket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Fråga din Adobe Customer Success Manager för alla frågor.
 
 >[!NOTE]
 >
@@ -51,13 +51,13 @@ Använd länkarna längst ned på startsidan för att lära dig hur du börjar m
 
 ### [!UICONTROL JOURNEY MANAGEMENT] {#left-nav-journey}
 
-Skapa kampanjer och resor från det här avsnittet.
+Bygg kampanjer och resor från det här avsnittet.
 
 * **[!UICONTROL Campaigns]** - Skapa, konfigurera och samordna kampanjer för att leverera engångsinnehåll till en viss målgrupp via olika kanaler. [Läs mer](../campaigns/get-started-with-campaigns.md)
 
 * **[!UICONTROL Journeys]** - Skapa, konfigurera och samordna era kundresor: kombinera händelser, samordning och åtgärder för att skapa flerstegsscenarier för flera kanaler. [Läs mer](../building-journeys/journey-gs.md#jo-build)
 
-* **[!UICONTROL Landing pages]** - Skapa, utforma, testa och publicera landningssidor: skicka länkar till onlineformulär där användarna kan välja att inte ta emot meddelanden eller prenumerera på vissa tjänster. [Läs mer](../landing-pages/get-started-lp.md)
+* **[!UICONTROL Landing pages]** - Skapa, utforma, testa och publicera landningssidor: skicka länkar till onlineformulär där användarna kan välja att inte ta emot meddelanden eller prenumerera på specifika tjänster. [Läs mer](../landing-pages/get-started-lp.md)
 
 
 ### [!UICONTROL DECISION MANAGEMENT] {#left-nav-offers}
@@ -72,7 +72,7 @@ Skapa erbjudanden och komponenter från det här avsnittet.
 
 Skapa och hantera innehåll från det här avsnittet.
 
-* **[!UICONTROL Assets]** - [!DNL Adobe Experience Manager Assets Essentials] är en central databas med resurser som du kan använda för att fylla i dina meddelanden. [Läs mer](../email/assets-essentials.md)
+* **[!UICONTROL Assets]** - [!DNL Adobe Experience Manager Assets Essentials] är en central databas med resurser som du kan använda för att fylla i dina meddelanden. [Läs mer](../content-management/assets-essentials.md)
 
 * **[!UICONTROL Content templates]** - Skapa fristående mallar för att enkelt återanvända anpassat innehåll i Journey Optimizer kampanjer och resor för en snabbare och förbättrad designprocess. [Läs mer](../email/content-templates.md)
 
@@ -151,9 +151,9 @@ Exempel:
 * **Skicka e-post till nya kunder**, för att enkelt skicka upp till två e-postmeddelanden till dina nyregistrerade kunder. (kommer snart)
 * **Skicka push-meddelanden till importerad lista över kunder**, för att snabbt skicka ett push-meddelande till en lista över kunder som importerats från en CSV-fil. (kommer snart)
 
-Klicka på **[!UICONTROL View details]** länk.
+Om du vill veta mer om varje användningsfall klickar du på **[!UICONTROL View details]** länk.
 
-Klicka på **[!UICONTROL Begin]** -knappen.
+Om du vill köra ett användningsfall klickar du på **[!UICONTROL Begin]** -knappen.
 
 Du kan få åtkomst till körda användningsfall från **[!UICONTROL View library]** -knappen.
 
