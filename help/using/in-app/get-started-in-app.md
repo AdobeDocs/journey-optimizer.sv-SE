@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: 51562843-7b50-4eb5-bf79-5ce03f7549cb
-source-git-commit: 4ecaf60923f32e7bc2363981a1d7c0874b3b7e94
+source-git-commit: 066491e19a0a3be84c3e6ca6fefe88a9beb26285
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '205'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ Innan du skickar meddelanden i appen måste du:
 
 * Konfigurera appkanalen. [Läs mer](inapp-configuration.md)
 
-* Kontrollera att du har rätt behörigheter för Journey Optimizer-kampanjer innan du startar<!--, even if you plan to only use in-app messages in journeys. Campaign permissions are still required-->. [Läs mer](../campaigns/get-started-with-campaigns.md#campaign-prerequisites)
+* Se till att du har rätt behörigheter för Journey Optimizer-kampanjer innan du startar, även om du bara tänker använda meddelanden i appen under resor. Kampanjbehörigheter krävs fortfarande. [Läs mer](../campaigns/get-started-with-campaigns.md#campaign-prerequisites)
 
 När du är klar kan du skapa, konfigurera och skicka ditt första meddelande i appen. Lär dig hur du uppnår detta i [det här avsnittet](create-in-app.md).
 
