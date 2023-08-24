@@ -7,7 +7,7 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: b774e34f-8225-41a0-a2ec-b91d3a86cf2b
-source-git-commit: 066491e19a0a3be84c3e6ca6fefe88a9beb26285
+source-git-commit: 7c4509c0f9fd0d3aefb88c2c5ef4ccab5d58ace8
 workflow-type: tm+mt
 source-wordcount: '675'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Skapa ett meddelande i appen på en resa {#create-in-app-journey}
+# Skapa ett meddelande i appen under en resa {#create-in-app-journey}
 
 Så här lägger du till ett meddelande i appen under en resa:
 
