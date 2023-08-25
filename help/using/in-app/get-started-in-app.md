@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: 51562843-7b50-4eb5-bf79-5ce03f7549cb
-source-git-commit: d27fa0192b72de79fefb52b472bd06c6511a8b70
+source-git-commit: 3a044127f5acc1333b2c535c3e1b50d651566180
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '206'
 ht-degree: 3%
 
 ---
@@ -40,7 +40,7 @@ När du är klar kan du skapa, konfigurera och skicka ditt första meddelande i 
 <a href="create-in-app.md">
 <img alt="Lead" src="../assets/do-not-localize/inapp-create.jpeg">
 </a>
-<div><a href="create-in-app.md"><strong>Skapa meddelande i appen i en kampanj</strong>
+<div><a href="create-in-app.md"><strong>Skapa meddelande i appen</strong>
 </div>
 <p>
 </td>

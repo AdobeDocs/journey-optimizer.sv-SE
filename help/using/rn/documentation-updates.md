@@ -4,9 +4,9 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 5daf828c934432810c58035986df1072a0fe73e3
+source-git-commit: 3a044127f5acc1333b2c535c3e1b50d651566180
 workflow-type: tm+mt
-source-wordcount: '3204'
+source-wordcount: '3277'
 ht-degree: 15%
 
 ---
@@ -18,10 +18,15 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 ## Augusti 2023 {#august-2023}
 
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Versionen från 23 augusti finns detaljerad i dokumentationen. [Läs mer](release-notes.md)
+* Anteckningen om **hantering av autentiseringscache** under resan har uppdaterats för att i detalj visa att variabeln inte delas mellan olika resor. [Läs mer](../datasource/external-data-sources.md#custom-authentication-mode)
+* Sidan om resan **hantering av inträde** har uppdaterats för att förtydliga beteendet. [Läs mer](../building-journeys/entry-management.md)
+* Offer decisioning **exportera datamängder** är nu aktiverade som standard. Anteckningen om det tidigare beteendet har tagits bort.  [Läs mer](../offers/export-catalog/get-started-export.md)
+* Olika **kampanjrapportstatistik** har bytt namn i både Live- och Global-rapporter. [Läs mer](../reports/campaign-global-report.md)
 * Ett nytt avsnitt har lagts till om krav för innehållsexperiment för webbkanalen. [Läs mer](../web/web-prerequisites.md#experiment-prerequisites)
 * En varning har lagts till på **Arbeta med innehållsmallar** för att ange att spårning inte stöds vid testning av mallar för e-postinnehåll. Om du vill testa spårning måste du använda innehållsmallen i ett e-postmeddelande och skicka ett korrektur. [Läs mer](../email/content-templates.md#test-template)
 * Flera varningar har lagts till i **Skapa och publicera landningssidor** för att ange att du inte kan komma åt landningssidan genom att kopiera och klistra in den URL-adress som angavs när sidan skapades i en webbläsare, även om den publicerades. I stället kan du testa den med förhandsvisningsfunktionen. [Läs mer](../landing-pages/create-lp.md)
-* Ett nytt avsnitt har lagts till om hur du hanterar samtycke för direktreklamkanalen. [Läs mer](../direct-mail/test-send-direct-mail.md)
+* Ett nytt avsnitt har lagts till om hur **hantera samtycke** för direktreklamkanalen. [Läs mer](../direct-mail/test-send-direct-mail.md)
+
 
 ## Juli 2023 {#july-2023}
 
