@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: b3b79fe2-7db3-490d-9c3d-87267aa55eea
-source-git-commit: cce45bfd11bfae07e07b69a488e58c282771d96a
+source-git-commit: 1d8d6e7f773b2bc88eeef1949af805d527911323
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1042'
 ht-degree: 2%
 
 ---
@@ -21,6 +21,8 @@ Du kan lägga till ett meddelande i appen i en kampanj eller under en resa. Föl
 >[!BEGINTABS]
 
 >[!TAB Lägg till ett meddelande i appen till en resa]
+
+Så här lägger du till ett meddelande i appen under en resa:
 
 1. Öppna din resa och dra och släpp en **[!UICONTROL In-app]** aktivitet från **[!UICONTROL Actions]** på paletten.
 
