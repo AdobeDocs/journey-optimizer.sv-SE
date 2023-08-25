@@ -9,10 +9,10 @@ role: Admin
 level: Intermediate
 keywords: arkiv, meddelanden, HIPAA, BCC, e-post
 exl-id: 186a5044-80d5-4633-a7a7-133e155c5e9f
-source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
+source-git-commit: 315309fdede3aa095fc59266acf765dc4b782dd9
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 1%
+source-wordcount: '1089'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ Regeringar som HIPAA kräver att [!DNL Journey Optimizer] bör vara ett sätt at
 
 * För e-postkanalen [!DNL Journey Optimizer] har en inbyggd funktion för e-post i BCC. [Läs mer](#bcc-email)
 
-* För alla kanaler kan du dessutom använda fältet &quot;Mall&quot; i **Enhetsdatauppsättning**, som innehåller information om de icke-personliga meddelandemallarna. Exportera datauppsättningen med det här fältet för att spara metadata som: som skickade meddelandet, till vem och när. Observera att anpassade data inte exporteras - endast mallen (meddelandets format och struktur) beaktas. [Läs mer](../data/datasets-query-examples.md#entity-dataset)
+* För alla kanaler kan du dessutom använda fältet &quot;Mall&quot; i **Enhetsdatauppsättning**, som innehåller information om de icke-personliga meddelandemallarna. Exportera datauppsättningen med det här fältet om du vill spara metadata som vem som skickade meddelandet, till vem och när. Observera att personaliserade data inte exporteras - endast mallen (meddelandets format och struktur) beaktas. [Läs mer](../data/datasets-query-examples.md#entity-dataset)
 
 >[!NOTE]
 >
@@ -35,9 +35,9 @@ Regeringar som HIPAA kräver att [!DNL Journey Optimizer] bör vara ett sätt at
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_bcc"
 >title="Definiera en e-postadress för hemlig kopia"
->abstract="Du kan behålla en kopia av skickade e-postmeddelanden genom att skicka dem till en inkorg för hemlig kopia. Ange den e-postadress du vill använda så att alla e-postmeddelanden som skickas är blinda och kopieras till den här BCC-adressen. Observera att BCC-adressdomänen inte ska vara samma som alla underdomäner som delegerats till Adobe. Den här funktionen är valfri.  "
+>abstract="Du kan behålla en kopia av skickade e-postmeddelanden genom att skicka dem till en inkorg för hemlig kopia. Ange den e-postadress du vill använda så att alla e-postmeddelanden som skickas är blinda och kopieras till den här BCC-adressen. Observera att BCC-adressdomänen måste vara en annan än alla underdomäner som har delegerats till Adobe. Den här funktionen är valfri.  "
 
-Du kan skicka en identisk kopia (eller en blind kopia) av ett e-postmeddelande som skickats av [!DNL Journey Optimizer] till en BCC-inkorg. Med den här valfria funktionen kan du behålla kopior av e-postmeddelanden som du skickar till användarna för att uppfylla regelkrav och/eller arkivera. Detta visas inte för leveransmottagarna.
+Du kan skicka en kopia (BCC) av ett e-postmeddelande som skickas av [!DNL Journey Optimizer] till en dedikerad BCC-adress. Med den här valfria funktionen kan du behålla kopior av e-postmeddelanden som du skickar till användarna för att uppfylla regelkrav och/eller arkivera. BCC-adressen är inte synlig för andra mottagare av meddelandet.
 
 ### Aktivera BCC-e-post {#enable-bcc}
 
@@ -55,11 +55,11 @@ Aktivera **[!UICONTROL BCC email]** anger du den e-postadress du vill använda i
 
 ![](assets/preset-bcc.png)
 
-Alla e-postmeddelanden som använder den här ytan kommer att kopieras till den e-postadress som du har angett för BCC. Därifrån kan de bearbetas och arkiveras i ett externt system.
+När konfigurationen är klar kopieras alla e-postmeddelanden som är baserade på den här ytan till den e-postadress som du angav. Därifrån kan meddelanden bearbetas och arkiveras i ett externt system.
 
 >[!CAUTION]
 >
->Användningen av din BCC-funktion räknas av mot det antal meddelanden som du har licens för. Aktivera det därför bara i de ytor som används för viktig kommunikation som du vill arkivera. Kontrollera om det finns licensierade volymer i ditt avtal.
+>Användningen av din BCC-funktion räknas av mot det antal meddelanden som du är licensierad för. Aktivera det därför bara i de ytor som används för viktig kommunikation som du vill arkivera. Kontrollera om det finns licensierade volymer i ditt avtal.
 
 Inställningen för BCC-e-postadressen sparas och bearbetas omedelbart på ytnivå. När du skapar ett nytt meddelande med hjälp av den här ytan visas e-postadressen för hemlig kopia automatiskt.
 
@@ -77,7 +77,7 @@ BCC-adressen hämtas dock upp för att skicka kommunikation enligt den logik som
 
 * Meddelanden kan levereras till e-postadressen för den kopierade kopian före målmottagarna. BCC-meddelanden kan också skickas trots att de ursprungliga meddelandena kan ha [studsade](../reports/suppression-list.md#delivery-failures).
 
-   <!--OR: Only successfully sent emails are taken in account. [Bounces](../reports/suppression-list.md#delivery-failures) are not. TO CHECK -->
+  <!--OR: Only successfully sent emails are taken in account. [Bounces](../reports/suppression-list.md#delivery-failures) are not. TO CHECK -->
 
 * Öppna inte och klicka inte igenom de e-postmeddelanden som skickas till BCC-adressen eftersom den tas med i det totala antalet öppningar och klickningar från sändningsanalysen, vilket kan orsaka vissa felberäkningar i [rapporter](../reports/global-report.md).
 
@@ -113,7 +113,7 @@ Följ stegen nedan för att göra detta.
 
 >[!NOTE]
 >
->Läs mer om hur du hanterar sekretess och tillämpliga regler i [Experience Platform dokumentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target="_blank"}.
+>Läs mer om hur du hanterar sekretess och tillämpliga regler i [Experience Platform dokumentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv){target="_blank"}.
 
 ### BCC-rapporteringsdata {#bcc-reporting}
 
