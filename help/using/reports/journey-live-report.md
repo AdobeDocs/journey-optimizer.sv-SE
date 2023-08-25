@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e3781f79-7c8d-4512-b44f-835639b1471f
-source-git-commit: 98be0e87928ddf0a7a73ca4dd91f5fc99d18d587
+source-git-commit: 9245d6a93aaaa85bee56e2291a53ca7495b6ba9e
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1183'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,7 @@ Resan **[!UICONTROL Live report]** visas med följande flikar:
 * [E-post](#email-live)
 * [Push](#push-live)
 * [SMS](#sms-live)
+* [I appen](#in-app-live)
 
 Resan **[!UICONTROL Live report]** är uppdelat i olika widgetar som detaljerat beskriver hur framgångsrik och felfri din resa är. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](live-report.md#modify-dashboard).
 
@@ -193,9 +194,17 @@ The **[!UICONTROL Exclude Reasons]** Med diagram och tabeller kan du se vilka fe
 
 +++Läs mer om de olika mätvärden och widgetar som är tillgängliga för rapporten i appen.
 
-The **[!UICONTROL In-app performance]** Nyckeltal anger den viktigaste informationen i relation till besökarnas engagemang i era meddelanden i appen, till exempel:
+The **[!UICONTROL In-app performance]** Nyckeltal anger den viktigaste informationen i relation till besökarnas engagemang i era meddelanden i appen, som:
 
 * **[!UICONTROL Impressions]**: totalt antal meddelanden i appen som levereras till alla användare.
+
+  >[!NOTE]
+  >
+  >För att säkerställa att en Impression räknas måste användaren uppfylla två kriterier:
+  >* Kvalificering i upplevelsen i appen, som uppnås genom att man når den specifika aktiviteten i appen under resan.
+  >* Uppfyller villkoren som anges i utlösarreglerna.
+  > 
+  >På grund av det andra kriteriet kan det finnas betydande variationer mellan antalet riktade profiler och antalet unika visningar.
 
 * **[!UICONTROL Interactions]**: totalt antal ärenden för meddelandet i appen. Detta inkluderar alla åtgärder som användaren utför, t.ex. klickningar, uppsägningar eller annan interaktion.
 
