@@ -4,7 +4,7 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 066491e19a0a3be84c3e6ca6fefe88a9beb26285
+source-git-commit: 4b9992d3824111fbd9cf4dd712bdcc17f9a76817
 workflow-type: tm+mt
 source-wordcount: '3431'
 ht-degree: 9%
@@ -38,8 +38,8 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <tr>
 <td>
 <p>Du kan nu skicka personaliserade meddelanden i appen till appanvändarna under en resa. Använd Journey Optimizer för att utforma meddelanden och anpassa meddelandelayout, visning, text och knappar för att skapa en smidig upplevelse.</p>
-<img src="assets/in_app_journey_1.png"/>
-<p>Mer information finns i den <a href="../in-app/create-in-app-journey.md">detaljerade dokumentationen</a>.</p>
+<img src="assets/do-not-localize/in-app-GA.gif"/>
+<p>Mer information finns i den <a href="../in-app/create-in-app.md">detaljerade dokumentationen</a>.</p>
 </tr>
 </tbody>
 </table>

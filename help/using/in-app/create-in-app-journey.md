@@ -6,11 +6,13 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
+hide: true
+hidefromtoc: true
 exl-id: b774e34f-8225-41a0-a2ec-b91d3a86cf2b
-source-git-commit: 7c4509c0f9fd0d3aefb88c2c5ef4ccab5d58ace8
+source-git-commit: d27fa0192b72de79fefb52b472bd06c6511a8b70
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 0%
+source-wordcount: '524'
+ht-degree: 1%
 
 ---
 
@@ -60,20 +62,6 @@ Så här lägger du till ett meddelande i appen under en resa:
 1. När ditt meddelande i appen är klart slutför du konfigurationen och publicerar din resa för att aktivera den.
 
 Mer information om hur du konfigurerar en resa finns i [den här sidan](../building-journeys/journey-gs.md).
-
-## Aktivitetsbegränsningar i appen {#in-app-activity-limitations}
-
-* Den här funktionen är för närvarande inte tillgänglig för vårdkunder.
-
-* Personalisering kan bara innehålla profilattribut.
-
-* Visning i appen är knuten till resans livscykel, vilket innebär att när resan avslutas för en profil kommer alla meddelanden i appen under resan inte att visas för den profilen.  Det är därför inte möjligt att stoppa ett meddelande i appen direkt från en reseaktivitet. I stället måste du avsluta hela kundresan för att stoppa visningen av meddelanden i appen från att visas i profilen.
-
-* I testläge beror visningen i appen på resans livslängd. Justera **[!UICONTROL Wait time]** värde för **[!UICONTROL Wait]** verksamhet.
-
-* **[!UICONTROL Reaction]** -aktiviteter kan inte användas för att reagera på en öppning eller klickning i appen.
-
-* En aktiveringsfördröjning kan uppstå från det att en användarprofil når en aktivitet i appen på arbetsytan till dess att meddelandet visas i appen.
 
 ## Rapport i appen {#inapp-report}
 

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 925494b6-e08a-4bd3-8a2f-96a5d9cbc387
-source-git-commit: 96d90ff8c4ef29328810b3146d1e9a2aa3c25f2a
+source-git-commit: 164a7376c362f67f82f7cf07ec21aa42b9b342cf
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1190'
 ht-degree: 1%
 
 ---
@@ -109,15 +109,13 @@ Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL In-app]** -fliken i
 
 The **[!UICONTROL In-app performance]** Nyckeltal anger den viktigaste informationen i relation till besökarnas engagemang i era meddelanden i appen, till exempel:
 
-* **[!UICONTROL Unique impressions]**: antal unika användare som meddelandet i appen levererades till.
-
 * **[!UICONTROL Impressions]**: totalt antal meddelanden i appen som levereras till alla användare.
 
-The **[!UICONTROL In-app summary]** diagram visar hur dina visningar i appen har utvecklats för den aktuella perioden.
+* **[!UICONTROL Interactions]**: totalt antal ärenden för meddelandet i appen. Detta inkluderar alla åtgärder som användaren utför, t.ex. klickningar, uppsägningar eller annan interaktion.
 
-The **[!UICONTROL Clicks by button]** diagram och tabell innehåller tillgängliga data för mottagarnas beteende per knapp:
+The **[!UICONTROL In-app summary]** diagram visar utvecklingen av dina visningar och interaktioner i appen för den aktuella perioden.
 
-* **[!UICONTROL Clicks]**: totalt antal mottagare som interagerat med knapparna i meddelandet i appen.
+The **[!UICONTROL Interactions by type]** diagram och tabeller visar hur användare interagerade med meddelanden i appen genom att spåra varje klick, avgång eller interaktion.
 
 +++
 
@@ -187,21 +185,19 @@ The **[!UICONTROL Exclude Reasons]**, **[!UICONTROL Bounces Reasons]** och **[!U
 
 ## Fliken Webb {#web-tab}
 
-Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Web]** -fliken anger huvudinformationen för dina webbsidor.
+Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL Web]** -fliken anger huvudinformationen för dina webbsidor.
 
 +++Läs mer om de olika mätvärden och widgetar som finns för webbrapporten.
 
 The **[!UICONTROL Web performance]** Nyckeltal anger den viktigaste informationen i relation till besökarnas engagemang i era webbupplevelser, till exempel:
 
-* **[!UICONTROL Unique impressions]**: antal unika användare som webbupplevelsen levererades till.
-
 * **[!UICONTROL Impressions]**: totalt antal webbupplevelser som levereras till alla användare.
 
-* **[!UICONTROL Clicks]**: totalt antal URL-besök.
+* **[!UICONTROL Interactions]**: totalt antal interaktioner med din webbsida. Detta inkluderar alla åtgärder som användaren utför, t.ex. klickningar eller andra interaktioner.
 
-The **[!UICONTROL Web summary]** diagram visar hur webbupplevelserna har utvecklats (visningar, unika intryck och klickningar) under den aktuella perioden.
+The **[!UICONTROL Web summary]** diagram visar hur webbupplevelserna har utvecklats (intryck, unika intryck och interaktioner) de senaste 24 timmarna.
 
-The **[!UICONTROL Clicks by element]** tabellen innehåller huvudinformationen om besökarnas engagemang för de olika elementen på webbsidorna.
+The **[!UICONTROL Interactions by element]** tabellen innehåller huvudinformationen om besökarnas engagemang för de olika elementen på webbsidorna.
 +++
 
 ## Fliken Direktreklam {#direct-mail-tab}

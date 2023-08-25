@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 1534106b7ed80376060d39a445d5e706df832e05
+source-git-commit: c01195dbee3e14a356c58353169507678aec5d30
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1292'
 ht-degree: 0%
 
 ---
@@ -105,3 +105,19 @@ Du kan välja mellan följande två lösningar:
 
 * Det går inte att använda fältgrupper för upplevelsehändelser på resor som börjar med en läsare, en målgrupp eller en affärshändelseaktivitet. Ni måste skapa en ny målgrupp och använda ett villkor för målgrupp under resan.
 
+
+### Aktivitetsbegränsningar i appen {#in-app-activity-limitations}
+
+* Den här funktionen är för närvarande inte tillgänglig för vårdkunder.
+
+* Personalisering kan bara innehålla profilattribut.
+
+* Visning i appen är knuten till resans livscykel, vilket innebär att när resan avslutas för en profil kommer alla meddelanden i appen under resan inte att visas för den profilen.  Det är därför inte möjligt att stoppa ett meddelande i appen direkt från en reseaktivitet. I stället måste du avsluta hela kundresan för att stoppa visningen av meddelanden i appen från att visas i profilen.
+
+* I testläge beror visningen i appen på resans livslängd. Justera **[!UICONTROL Wait time]** värde för **[!UICONTROL Wait]** verksamhet.
+
+* **[!UICONTROL Reaction]** -aktiviteter kan inte användas för att reagera på en öppning eller klickning i appen.
+
+* En aktiveringsfördröjning kan uppstå från det att en användarprofil når en aktivitet i appen på arbetsytan till dess att meddelandet visas i appen.
+
+* Innehållets storlek för meddelanden i appen är begränsad till 2 MB. Om du inkluderar stora bilder kan det försvåra publiceringsprocessen.

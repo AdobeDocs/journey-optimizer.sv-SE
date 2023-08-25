@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: 51562843-7b50-4eb5-bf79-5ce03f7549cb
-source-git-commit: 7c4509c0f9fd0d3aefb88c2c5ef4ccab5d58ace8
+source-git-commit: d27fa0192b72de79fefb52b472bd06c6511a8b70
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '209'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 Meddelanden i appen är meddelanden som kan skickas till användare i appen, och som vägleder dem till specifika intressepunkter. Dessa meddelanden kan användas för olika syften, t.ex. för att marknadsföra nya funktioner, presentera specialerbjudanden eller underlätta för användarna att komma igång. Genom att utnyttja meddelanden i appen kan ni effektivt interagera med er målgrupp och styra dem mot viktiga aspekter av er applikation.
 
-Använd Journey Optimizer för att skapa meddelanden i appen och konfigurera upplevelsealternativ, inklusive meddelandelayout, visning, text och knappalternativ. Du kan lägga till meddelanden i appen [i en kampanj](create-in-app.md) och [på en resa](create-in-app-journey.md).
+Använd Journey Optimizer för att skapa meddelanden i appen och konfigurera upplevelsealternativ, inklusive meddelandelayout, visning, text och knappalternativ.
 
 >[!AVAILABILITY]
 >

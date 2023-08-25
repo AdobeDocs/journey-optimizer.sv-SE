@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 7c4509c0f9fd0d3aefb88c2c5ef4ccab5d58ace8
+source-git-commit: e75e24852c5be51565706dc8844a90a8a9b7f8cd
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1417'
 ht-degree: 32%
 
 ---
@@ -203,8 +203,7 @@ ht-degree: 32%
       + [Konfigurera inställningar för e-postyta](using/email/email-settings.md)
 + Kanal i appen{#in-app}
    + [Kom igång med kanalen i appen](using/in-app/get-started-in-app.md)
-   + [Skapa ett meddelande i appen i en kampanj](using/in-app/create-in-app.md)
-   + [Skapa ett meddelande i appen under en resa](using/in-app/create-in-app-journey.md)
+   + [Skapa ett meddelande i appen](using/in-app/create-in-app.md)
    + [Designa ditt innehåll i appen](using/in-app/design-in-app.md)
    + [Testa och skicka meddelanden i appen](using/in-app/send-in-app.md)
    + [Konfigurera kanal i appen](using/in-app/inapp-configuration.md)

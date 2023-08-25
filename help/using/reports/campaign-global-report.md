@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: fa64f5b8-75f2-40e6-8566-5766fafe6cd6
-source-git-commit: 96d90ff8c4ef29328810b3146d1e9a2aa3c25f2a
+source-git-commit: 164a7376c362f67f82f7cf07ec21aa42b9b342cf
 workflow-type: tm+mt
-source-wordcount: '2225'
+source-wordcount: '2204'
 ht-degree: 0%
 
 ---
@@ -219,17 +219,11 @@ The **[!UICONTROL In-app performance]** Nyckeltal anger den viktigaste informati
 
 * **[!UICONTROL Impressions]**: totalt antal meddelanden i appen som levereras till alla användare.
 
-* **[!UICONTROL Click rate]**: Andel användare som interagerade med knapparna i meddelandet i appen jämfört med användare som såg meddelandet.
+* **[!UICONTROL Interactions rate]**: procent av engagemanget i meddelandet i appen. Detta inkluderar alla åtgärder som användaren utför, t.ex. klickningar, uppsägningar eller annan interaktion.
 
-* **[!UICONTROL Dismiss rate]**: procent av meddelanden i appen som mottagarna avvisade.
+The **[!UICONTROL In-app summary]** diagram visar utvecklingen av dina visningar och interaktioner i appen för den aktuella perioden.
 
-The **[!UICONTROL In-app summary]** diagram visar hur dina visningar i appen har utvecklats för den aktuella perioden.
-
-The **[!UICONTROL Clicks by button]** diagram och tabell innehåller tillgängliga data för mottagarnas beteende per knapp:
-
-* **[!UICONTROL Clicks]**: totalt antal mottagare som interagerat med knapparna i meddelandet i appen.
-
-* **[!UICONTROL Click rate]**: Andel användare som interagerade med knapparna i meddelandet i appen jämfört med användare som såg meddelandet.
+The **[!UICONTROL Interactions by type]** diagram och tabeller visar hur användare interagerade med meddelanden i appen genom att spåra varje klick, avgång eller interaktion.
 +++
 
 ## Fliken Push-meddelanden {#push-global}
@@ -354,11 +348,11 @@ The **[!UICONTROL Web performance]** Nyckeltal anger den viktigaste informatione
 
 * **[!UICONTROL Impressions]**: totalt antal webbupplevelser som levereras till alla användare.
 
-* **[!UICONTROL Click rate]**: Andel besökare som interagerade med de olika elementen på dina webbsidor.
+* **[!UICONTROL Interaction rate]**: procent av engagemanget på webbsidan. Detta inkluderar alla åtgärder som användaren utför, t.ex. klickningar eller andra interaktioner.
 
-The **[!UICONTROL Web summary]** diagram visar hur webbupplevelserna har utvecklats (visningar, unika intryck och klickningar) under den aktuella perioden.
+The **[!UICONTROL Web summary]** diagram visar hur era webbupplevelser har utvecklats (visningar, unika intryck och interaktioner) under den aktuella perioden.
 
-The **[!UICONTROL Clicks by element]** tabellen innehåller huvudinformationen om besökarnas engagemang för de olika elementen på webbsidorna.
+The **[!UICONTROL Interactions by element]** tabellen innehåller huvudinformationen om besökarnas engagemang för de olika elementen på webbsidorna.
 +++
 
 ## Fliken Direktreklam {#direct-mail-global}
