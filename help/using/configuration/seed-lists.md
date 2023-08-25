@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: utsädeslista, seedlist, seed, configuration
-source-git-commit: 89d2eb94a600af437862aa2ded74d77179a5c3e8
+source-git-commit: 49c283fc19d90b5ced896c5854325266d80e8bc2
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '891'
 ht-degree: 3%
 
 ---
@@ -49,9 +49,14 @@ Seed-adresser är inte riktiga profiler eller testprofiler eftersom de inte inne
 
 Om du vill få tillgång till de startlistor som redan skapats går du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** och markera **[!UICONTROL Seed list]**.
 
+<!--
 >[!CAUTION]
 >
->Behörigheterna att visa, exportera och hantera dirigerade listor är begränsade till [Reseadministratörer](../administration/ootb-product-profiles.md#journey-administrator). Läs mer om hantering [!DNL Journey Optimizer] användarrättigheter i [det här avsnittet](../administration/permissions-overview.md).
+>Permissions to view, export and manage the seed lists are restricted to [Journey Administrators](../administration/ootb-product-profiles.md#journey-administrator). Learn more on managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).-->
+
+>[!CAUTION]
+>
+>För att kunna visa, redigera och hantera dirigerade listor måste du ha **[!UICONTROL Manage Seedlist]** behörighet.
 
 ![](assets/seed-list-access.png)
 
