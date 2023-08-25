@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 1276aa334a057de1a14b7772d07dd9e2ac4f614f
+source-git-commit: 89d2eb94a600af437862aa2ded74d77179a5c3e8
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1918'
 ht-degree: 1%
 
 ---
@@ -187,7 +187,10 @@ Om du får ett felmeddelande när du skickar e-postytan betyder det att MX-poste
 >[!CONTEXTUALHELP]
 >id="ajo_surface_seed_list"
 >title="Lägga till en startvärdeslista"
->abstract="Välj önskad startvärdeslista om du automatiskt vill inkludera specifika e-postadresser i leveranserna. Dessa adresser kommer att inkluderas vid leveranstillfället och kommer att få en exakt kopia av leveransen i försäkringssyfte."
+>abstract="Välj önskad startlista för att automatiskt lägga till specifika interna adresser till era målgrupper. Dessa dirigerade adresser kommer att inkluderas vid leveranstillfället och kommer att få en exakt kopia av meddelandet i säkerhetssyfte."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/seed-lists.html#use-seed-list" text="Vad är utsädeslistor?"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/seed-lists.html?lang=en#create-seed-list" text="Skapa en startvärdeslista"
+
 
 En lista med startsidor i [!DNL Journey Optimizer] gör att du automatiskt kan inkludera specifika e-postadresser i dina leveranser. [Läs mer](../configuration/seed-lists.md)
 

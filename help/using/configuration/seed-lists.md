@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: utsädeslista, seedlist, seed, configuration
-source-git-commit: 1276aa334a057de1a14b7772d07dd9e2ac4f614f
+source-git-commit: 89d2eb94a600af437862aa2ded74d77179a5c3e8
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '900'
 ht-degree: 3%
 
 ---
@@ -71,14 +71,14 @@ Du kan klicka på ett namn på en startlista om du vill redigera den. <!--Use th
 
 >[!CONTEXTUALHELP]
 >id="ajo_seed_list_details"
->title="Definiera din startvärdeslista"
->abstract="Fyll i informationen i listan över utsädeslistor för att automatiskt ta med särskilda adresser i leveranserna. Dessa adresser kommer att inkluderas vid leveranstillfället och kommer att få en exakt kopia av leveransen i försäkringssyfte."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/channel-surfaces.html" text="Vad är startlistor?"
+>title="Definiera en startvärdeslista"
+>abstract="Använd en lista för att automatiskt lägga till specifika interna adresser till era leveransgrupper för att försäkra er. Med hjälp av dirigerade listor kan du övervaka utskickade meddelandekopior för att säkerställa att alla visningselement är korrekta och för att skydda din sändningslista. Den här funktionen gäller för närvarande bara för e-postkanalen."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/seed-lists.html#use-seed-list" text="Vad är utsädeslistor?"
 
 >[!CONTEXTUALHELP]
 >id="ajo_seed_addresses"
->title="Ange de dirigerade adresser som ska användas"
->abstract="Lägg till de dirigerade adresser som automatiskt kommer att inkluderas i leveranserna. Du kan antingen importera en CSV-fil eller ange e-postadresser manuellt."
+>title="Fyll i startvärdeslistan"
+>abstract="Välj de adresser som ska inkluderas vid leveranskörningen och få en exakt kopia av meddelandet. Du kan antingen importera en CSV-fil eller ange e-postadresser manuellt."
 
 Följ stegen nedan för att skapa en startvärdeslista.
 
