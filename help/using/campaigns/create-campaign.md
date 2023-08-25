@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: ceb37193797c69ee87f136f3abecf54b5927d6a2
+source-git-commit: a2aaf6bff4af8dff451eb64d68700efda0892c71
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '838'
 ht-degree: 2%
 
 ---
@@ -32,12 +32,12 @@ Om du vill skapa en ny kampanj öppnar du **[!UICONTROL Campaigns]** menyn och k
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_type"
 >title="Kampanjtyp"
->abstract="**Schemalagda kampanjer** körs omedelbart eller vid ett angivet datum och är avsedda att skicka meddelanden av marknadsföringstyp. **API-utlöst** kampanjer körs med ett API-anrop. De är avsedda att skicka antingen marknadsföringsmeddelanden eller transaktionsmeddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförs av en individ: lösenordsåterställning, övergivna varukorgar osv."
+>abstract="**Schemalagda kampanjer** körs omedelbart eller vid ett angivet datum och är avsedda att skicka meddelanden av marknadsföringstyp. **API-utlöst** kampanjer körs med ett API-anrop. Syftet är att skicka antingen marknadsföringsmeddelanden (reklammeddelanden som kräver användarens samtycke) eller transaktionsmeddelanden (icke-kommersiella meddelanden, som också kan skickas till profiler som inte längre prenumererar i specifika sammanhang)."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_category"
 >title="Kampanjkategori"
->abstract="Om du skapar en schemalagd kampanj visas **marknadsföring** text väljs automatiskt. Välj om du vill skicka en **marknadsföring** eller **transaktionsbaserad** ett meddelande, dvs. ett meddelande som skickas ut efter en åtgärd som utförts av en person: lösenordsåterställning, övergivna varukorgar osv."
+>abstract="Om du skapar en schemalagd kampanj visas **marknadsföring** text väljs automatiskt. Välj om du vill skicka en **marknadsföring** meddelande (kampanjmeddelande som kräver användarens samtycke) eller **transaktionsbaserad** meddelande (icke-kommersiellt meddelande, som också kan skickas till profiler som inte längre prenumererar i specifika sammanhang)."
 
 1. I **[!UICONTROL Properties]** anger du hur kampanjen ska köras. Det finns två typer av kampanjer:
 
