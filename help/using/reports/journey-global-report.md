@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e851646e-4cef-45e8-97c2-a8f4c9d2cc08
-source-git-commit: 98be0e87928ddf0a7a73ca4dd91f5fc99d18d587
+source-git-commit: d73f023a5eee538f110d044103bbeb8193a0703e
 workflow-type: tm+mt
 source-wordcount: '1993'
 ht-degree: 0%
@@ -286,7 +286,7 @@ The **[!UICONTROL SMS summary]** widgeten visar huvudinformationen i förhållan
 
 The **[!UICONTROL Exclude Reasons]** Med diagram och tabeller kan du se vilka fel och undantag som inträffade under leveransen.
 
-The **[!UICONTROL SMS - Clicks by links]** och **[!UICONTROL SMS - Tracking statistics]** widgetar detaljerar den viktigaste informationen i förhållande till besökarnas engagemang med dina URL-adresser.
+The **[!UICONTROL SMS - Clicks by links]** och **[!UICONTROL SMS - Tracking statistics]** widgetar detaljerar den viktigaste informationen i förhållande till besökarnas engagemang med dina URL:er.
 
 +++
 
@@ -298,7 +298,7 @@ Från din resa **[!UICONTROL Global report]**, **[!UICONTROL In-app]** på flike
 
 +++Läs mer om de olika mätvärden och widgetar som är tillgängliga för rapporten i appen.
 
-The **[!UICONTROL In-app performance]** Nyckeltal anger den viktigaste informationen i relation till besökarnas engagemang i era meddelanden i appen, till exempel:
+The **[!UICONTROL In-app performance]** Nyckeltal anger den viktigaste informationen i relation till besökarnas engagemang i era meddelanden i appen, som:
 
 * **[!UICONTROL Unique impressions]**: antal unika användare som meddelandet i appen viserades till.
 
@@ -312,7 +312,7 @@ The **[!UICONTROL In-app performance]** Nyckeltal anger den viktigaste informati
   > 
   >På grund av det andra kriteriet kan det finnas betydande variationer mellan antalet riktade profiler och antalet unika visningar.
 
-* **[!UICONTROL Interaction rate]**: procent av engagemanget i meddelandet i appen. Detta inkluderar alla åtgärder som användaren utför, t.ex. klickningar, uppsägningar eller annan interaktion.
+* **[!UICONTROL Interaction]**: antal ärenden i meddelandet i appen. Detta inkluderar alla åtgärder som användaren utför, t.ex. klickningar, uppsägningar eller annan interaktion.
 
 The **[!UICONTROL In-app summary]** diagram visar utvecklingen av dina visningar och interaktioner i appen för den aktuella perioden.
 
