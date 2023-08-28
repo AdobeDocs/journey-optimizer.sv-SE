@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7a217c97-57e1-4f04-a92c-37632f8dfe91
-source-git-commit: f4e4a6dfeee0205aa3d8abbd1d6b237dcf14cb10
+source-git-commit: fd035fdd956c76d9183acbd0dddf6462890c4f44
 workflow-type: tm+mt
 source-wordcount: '2100'
 ht-degree: 1%
@@ -84,7 +84,7 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 
      Lär dig hur du arbetar med målgrupper i [det här avsnittet](../../audience/about-audiences.md).
 
-   * Om du vill lägga till en markeringsbegränsning med en beslutsregel använder du kommandot **[!UICONTROL Decision rule]** och välj önskad regel.
+   * Om du vill lägga till en markeringsbegränsning med en beslutsregel använder du **[!UICONTROL Decision rule]** och välj önskad regel.
 
      ![](../assets/activity_constraint_rule.png)
 
@@ -102,7 +102,7 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 
    ![](../assets/activity_ranking-method.png)
 
-   * Om flera erbjudanden är berättigade till den här placeringen är **[!UICONTROL Offer priority]** -metoden använder det värde som definieras i erbjudandena: erbjudandet med högsta prioritet kommer att levereras till användaren.
+   * Om flera erbjudanden är berättigade till den här placeringen är **[!UICONTROL Offer priority]** använder det värde som anges i erbjudandena: erbjudandet med högsta prioritet levereras till användaren.
 
    * Om du vill använda en viss beräknad poäng för att välja vilket erbjudande du vill leverera väljer du **[!UICONTROL Formula]** eller **[!UICONTROL AI model]**. [Läs mer](../offer-activities/configure-offer-selection.md).
 
@@ -146,7 +146,7 @@ Du har till exempel två samlingar, en i utvärderingskriterier A och en i utvä
 
   ![](../assets/activity_consecutive-rank-collections.png)
 
-* Om de två samlingarna **utvärderas samtidigt** Eftersom det finns två godtagbara erbjudanden från utvärderingskriterierna A och tre godtagbara erbjudanden från utvärderingskriterierna B, kommer samtliga fem erbjudanden att vara samlade på grundval av det värde som fastställs av respektive rangordningsmetod. Två erbjudanden begärs, och därför returneras de två främsta erbjudandena från dessa fem.
+* Om de två samlingarna **utvärderas samtidigt** Eftersom det finns två godtagbara erbjudanden från utvärderingskriterierna A och tre godtagbara erbjudanden från utvärderingskriterierna B, kommer samtliga fem erbjudanden att rangordnas tillsammans baserat på det värde som fastställs i respektive rangordningsmetod. Två erbjudanden begärs, och därför returneras de två främsta erbjudandena från dessa fem.
 
   ![](../assets/activity_same-rank-collections.png)
 
@@ -174,7 +174,7 @@ Kriterium 1 och Villkor 2 utvärderas tillsammans (erbjudande 1, erbjudande 2, e
 Erbjudande 1 - 10 Erbjudande 2 - 20 Erbjudande 3 - 30 från villkor 1, 45 från villkor 2. Det högsta av båda kommer att övervägas, så 45 kommer att beaktas.
 Erbjudande 4 - 40 Erbjudande 5 - 50
 
-Det rankade erbjudandet är nu följande: Erbjudande 5, erbjudande 3, erbjudande 4, erbjudande 2, erbjudande 1.
+Rankat erbjudande: Erbjudande 5, Erbjudande 3, Erbjudande 4, Erbjudande 2, Erbjudande 1.
 
 **Upprepning 2:**
 
@@ -183,13 +183,13 @@ Villkor 3 utvärderas (erbjudande 5, erbjudande 6). Låt oss säga att resultate
 * Erbjudande 5 - Kommer inte att utvärderas eftersom det redan finns i resultatet ovan.
 * Erbjudande 6-60
 
-Erbjudandena är nu följande: Erbjudande 5, erbjudande 3, erbjudande 4, erbjudande 2, erbjudande 1, erbjudande 6.
+Rankade erbjudanden: Erbjudande 5, Erbjudande 3, Erbjudande 4, Erbjudande 2, Erbjudande 1, Erbjudande 6.
 
 +++
 
 #### Med flera omfång {#multiple-scopes}
 
-**Om duplicering är av**
+**Om duplicering är inaktiverat**
 
 När du lägger till flera beslutsomfattningar i ett beslut, och om duplicering inte tillåts på flera platser, väljs de giltiga erbjudandena i tur och ordning i den ordning som beslutsomfattningarna i begäran gäller.
 
@@ -199,8 +199,8 @@ När du lägger till flera beslutsomfattningar i ett beslut, och om duplicering 
 
 Låt oss ta ett exempel där du har lagt till två beslutsomfattningar som:
 
-* Omfång 1: Det finns fyra giltiga erbjudanden (Erbjudande 1, Erbjudande 2, Erbjudande 3, Erbjudande 4) och begäran avser två erbjudanden som ska skickas tillbaka.
-* Tillämpningsområde 2: Det finns fyra giltiga erbjudanden (Erbjudande 1, Erbjudande 2, Erbjudande 3, Erbjudande 4) och begäran avser två erbjudanden som ska skickas tillbaka.
+* Scope 1: Det finns fyra giltiga erbjudanden (Offer 1, Offer 2, Offer 3, Offer 4) och begäran avser två erbjudanden som ska skickas tillbaka.
+* Räckvidd 2: Det finns fyra giltiga erbjudanden (erbjudande 1, erbjudande 2, erbjudande 3, erbjudande 4) och begäran avser två erbjudanden som ska skickas tillbaka.
 
 +++ **Exempel 1**
 
@@ -213,7 +213,7 @@ Markeringen ser ut så här:
 
 +++ **Exempel 2**
 
-I det här exemplet har erbjudande 1 nått sin frekvensgräns. [Läs mer om frekvensbegränsning](../offer-library/add-constraints.md#capping)
+I det här exemplet har erbjudandet 1 nått sin frekvensgräns. [Läs mer om frekvensbegränsning](../offer-library/add-constraints.md#capping)
 
 Markeringen ser ut så här:
 
@@ -239,8 +239,8 @@ När duplicering tillåts på alla ersättningar kan samma erbjudande föreslås
 
 Låt oss ta samma exempel som ovan där du lade till två beslutsomfattningar som:
 
-* Omfång 1: Det finns fyra giltiga erbjudanden (Erbjudande 1, Erbjudande 2, Erbjudande 3, Erbjudande 4) och begäran avser två erbjudanden som ska skickas tillbaka.
-* Tillämpningsområde 2: Det finns fyra giltiga erbjudanden (Erbjudande 1, Erbjudande 2, Erbjudande 3, Erbjudande 4) och begäran avser två erbjudanden som ska skickas tillbaka.
+* Scope 1: Det finns fyra giltiga erbjudanden (Offer 1, Offer 2, Offer 3, Offer 4) och begäran avser två erbjudanden som ska skickas tillbaka.
+* Räckvidd 2: Det finns fyra giltiga erbjudanden (erbjudande 1, erbjudande 2, erbjudande 3, erbjudande 4) och begäran avser två erbjudanden som ska skickas tillbaka.
 
 +++ **Exempel 1**
 
@@ -253,7 +253,7 @@ Markeringen ser ut så här:
 
 +++ **Exempel 2**
 
-I det här exemplet har erbjudande 1 nått sin frekvensgräns. [Läs mer om frekvensbegränsning](../offer-library/add-constraints.md#capping)
+I det här exemplet har erbjudandet 1 nått sin frekvensgräns. [Läs mer om frekvensbegränsning](../offer-library/add-constraints.md#capping)
 
 Markeringen ser ut så här:
 
@@ -312,7 +312,7 @@ Den är nu klar att användas för att leverera erbjudanden till kunder.
 
 ## Beslutslista {#decision-list}
 
-I beslutslistan kan du välja vilket beslut som ska visas. Därifrån kan du också redigera den och ändra dess status (**Utkast**, **Live**, **Slutförd**, **Arkiverad**), duplicera beslutet eller ta bort det.
+I beslutslistan kan du välja vilket beslut som ska visas. Därifrån kan du även redigera den och ändra dess status (**Utkast**, **Live**, **Complete**, **Arkiverad**), duplicera beslutet eller ta bort det.
 
 ![](../assets/decision_created.png)
 
@@ -322,7 +322,7 @@ Välj **[!UICONTROL Edit]** knapp för att gå tillbaka till beslutsversionsläg
 >
 >Om ett beslut om erbjudande som används i ett kundmeddelande ändras måste du avpublicera resan och publicera den på nytt.  På så sätt säkerställs att ändringarna införlivas i kundens budskap och att meddelandet överensstämmer med de senaste uppdateringarna.
 
-Välj ett live-beslut och klicka **[!UICONTROL Deactivate]** för att återställa beslutsstatus till **[!UICONTROL Draft]**.
+Välj ett beslut och klicka **[!UICONTROL Deactivate]** för att återställa beslutsstatus till **[!UICONTROL Draft]**.
 
 Om du vill ange status igen till **[!UICONTROL Live]** väljer du **[!UICONTROL Activate]** som nu visas.
 
