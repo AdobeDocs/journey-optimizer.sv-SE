@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: utsädeslista, seedlist, seed, configuration
-source-git-commit: 49c283fc19d90b5ced896c5854325266d80e8bc2
+source-git-commit: ddd80da2577ef3006211a7f7d108bf263f539660
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '926'
 ht-degree: 3%
 
 ---
@@ -22,6 +22,8 @@ Seed-listor i [!DNL Journey Optimizer] gör att du automatiskt kan inkludera spe
 >[!CAUTION]
 >
 >Den här funktionen gäller för närvarande bara för e-postkanalen.
+>
+>Varianter stöds för närvarande inte. Precis som för varje profil från målgruppen får dirigeringsadresserna en enda kopia av meddelandet och inte alla varianter (till exempel olika behandlingar av en [innehållsexperiment](../campaigns/get-started-experiment.md)).
 
 Fröadresser används för mottagare i målgruppen som inte matchar dess definierade villkor. På så sätt kan mottagare som ligger utanför leveransomfånget ta emot leveransen, precis som andra målmottagare gör.
 
