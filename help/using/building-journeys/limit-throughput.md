@@ -8,7 +8,7 @@ role: User, Developer
 level: Experienced
 keywords: resa, datakällor, begränsning, genomströmning, anpassade åtgärder
 exl-id: 45d6bb82-88ea-4510-a023-a75a82cc6f7b
-source-git-commit: e06e0585f98897cca339e7923c38d3860767dac6
+source-git-commit: 392bd63b666e4db72c2865e4b7134bb3c1711816
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Mer information om hur du integrerar med externa system finns i [page](../config
 
 ## Implementering
 
-För **målgruppsutlösta resor** kan du definiera begränsningsgraden för din Läs publikation-aktivitet som påverkar resans genomströmning. [Läs mer](../building-journeys/read-audience.md)
+För **målgruppsutlösta resor** kan du definiera läsfrekvensen för din Läs publikation-aktivitet som påverkar resans genomströmning. [Läs mer](../building-journeys/read-audience.md)
 
 >[!NOTE]
 >

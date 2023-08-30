@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: aktivitet, resa, läsning, målgrupp, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: e06e0585f98897cca339e7923c38d3860767dac6
+source-git-commit: 392bd63b666e4db72c2865e4b7134bb3c1711816
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 3%
@@ -67,13 +67,13 @@ Så här konfigurerar du aktiviteten Läs målgrupp:
    >
    >Individer som tillhör en målgrupp som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kan inte ta sig in på resan. Du kan bara välja ett personbaserat ID-namnutrymme. Om du har definierat ett namnutrymme för en uppslagstabell (till exempel: ProductID-namnutrymme för en produktsökning), är det inte tillgängligt i **Namnutrymme** listruta.
 
-1. Ange **[!UICONTROL Throttling rate]**. Det här är det maximala antalet profiler som kan komma in på resan per sekund. Denna avgift gäller endast denna aktivitet och inga andra delar av resan. Om du till exempel vill definiera en begränsningsfrekvens för anpassade åtgärder måste du använda begränsnings-API:t. Se detta [page](../configuration/throttling.md).
+1. Ange **[!UICONTROL Reading rate]**. Det här är det maximala antalet profiler som kan komma in på resan per sekund. Denna avgift gäller endast denna aktivitet och inga andra delar av resan. Om du till exempel vill definiera en begränsningsfrekvens för anpassade åtgärder måste du använda begränsnings-API:t. Se detta [page](../configuration/throttling.md).
 
    Det här värdet lagras i transportversionens nyttolast. Standardvärdet är 5 000 profiler per sekund. Du kan ändra det här värdet från 500 till 20 000 profiler per sekund.
 
    >[!NOTE]
    >
-   >Den totala begränsningsfrekvensen per sandlåda är inställd på 20 000 profiler per sekund. Begränsningsfrekvensen för alla läsmålgrupper som körs samtidigt i samma sandlåda uppgår därför till högst 20 000 profiler per sekund. Du kan inte ändra denna ände.
+   >Den totala läshastigheten per sandlåda är satt till 20 000 profiler per sekund. Läsfrekvensen för alla läsmålgrupper som körs samtidigt i samma sandlåda uppgår därför till högst 20 000 profiler per sekund. Du kan inte ändra denna ände.
 
 1. The **[!UICONTROL Read Audience]** gör att du kan ange när målgruppen ska gå in på resan. Klicka på **[!UICONTROL Edit journey schedule]** länk för att komma åt resans egenskaper och konfigurera sedan **[!UICONTROL Scheduler type]** fält.
 
