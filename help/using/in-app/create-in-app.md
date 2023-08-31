@@ -7,10 +7,10 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: b3b79fe2-7db3-490d-9c3d-87267aa55eea
-source-git-commit: 1d8d6e7f773b2bc88eeef1949af805d527911323
+source-git-commit: 94c4e0e53625fdf20f940e8bfd15d67dba1d0120
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 2%
+source-wordcount: '1847'
+ht-degree: 1%
 
 ---
 
@@ -38,25 +38,73 @@ Så här lägger du till ett meddelande i appen under en resa:
 
 1. Nu kan du börja utforma ditt innehåll med **[!UICONTROL Edit content]** -knappen. [Läs mer](design-in-app.md)
 
-1. Klicka **[!UICONTROL Edit trigger]** för att konfigurera utlösaren.
+1. Klicka **[!UICONTROL Edit triggers]** för att välja händelser och villkor som ska utlösa meddelandet. Regelbyggare gör det möjligt för användare att ange villkor och värden som, när de möts, utlöser en uppsättning åtgärder, till exempel att skicka ett meddelande i appen.
 
    ![](assets/in_app_journey_4.png)
 
-1. Välj hur ofta utlösaren ska visas när meddelandet i appen är aktivt:
+   1. Klicka på händelselistrutan för att ändra utlösaren om det behövs.
 
-   * **[!UICONTROL Show every time]**: Visa alltid meddelandet när de händelser som valts i **[!UICONTROL Mobile app trigger]** inträffar.
-   * **[!UICONTROL Show once]**: Visa endast det här meddelandet första gången de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
-   * **[!UICONTROL Show until click through]**: Visa det här meddelandet när händelser har markerats i **[!UICONTROL Mobile app trigger]** rullgardinsmenyn inträffar tills en interaktionshändelse skickas av SDK med åtgärden&quot;klickad&quot;.
+      +++Se tillgängliga utlösare.
 
-1. Från **[!UICONTROL Mobile app trigger]** väljer du de händelser och villkor som ska utlösa meddelandet:
+      | Paket | Utlösare | Definition |
+      |---|---|---|
+      | Skicka data till plattformen | Skickade data till plattformen | Utlöses när mobilappen utfärdar en edge experience-händelse för att skicka data till Adobe Experience Platform. Vanligtvis API-anropet [sendEvent](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) från AEP Edge-tillägget. |
+      | Core tracking | Spåra åtgärd | Utlöses när de äldre funktionerna i API:t för mobilkod finns [trackAction](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) anropas. |
+      | Core tracking | Spåra läge | Utlöses när de äldre funktionerna i API:t för mobilkod finns [trackState](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) anropas. |
+      | Core tracking | Samla in PII | Utlöses när de äldre funktionerna i API:t för mobilkod finns [collectPII](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#collectpii) anropas. |
+      | Programmets livscykel | Programstart | Utlöses vid varje körning, inklusive krascher och installationer. Utlöses också vid ett återköp från bakgrunden när tidsgränsen för livscykelsessionen har överskridits. |
+      | Programmets livscykel | Programinstallation | Utlöses vid första körningen efter installation eller ominstallation. |
+      | Programmets livscykel | Programuppdatering | Utlöses vid första körningen efter en uppgradering eller när versionsnumret ändras. |
+      | Programmets livscykel | Programmet stängs | Utlöses när programmet stängs. |
+      | Programmets livscykel | Programkrasch | Utlöses när programmet inte är bakgrundsbelagt innan det stängs. Händelsen skickas när programmet startas efter kraschen. Kraschrapportering för Adobe Mobile implementerar inte en global hanterare för ej infångade undantag. |
+      | Platser | Ange POI | Utlöses av Places SDK när kunden anger den POI (Point of Interest) som du har konfigurerat. |
+      | Platser | Avsluta POI | Utlöses av Places SDK när kunden avslutar det Point of Interest (POI) som du konfigurerade. |
 
-   1. I den vänstra listrutan väljer du den händelse som krävs för att utlösa meddelandet.
-   1. Välj den validering som krävs för den valda händelsen i den högra listrutan.
-   1. Klicka på **[!UICONTROL Add]** om du vill att utlösaren ska ta hänsyn till flera händelser eller villkor. Upprepa sedan stegen ovan.
-   1. Välj hur dina händelser ska länkas, t.ex. välj **[!UICONTROL And]** om du vill **båda** utlösare är true för att ett meddelande ska kunna visas eller väljas **[!UICONTROL Or]** om du vill att meddelandet ska visas om **antingen** av utlösarna är sanna.
-   1. Klicka **[!UICONTROL Save]** när dina utlösare har konfigurerats.
++++
 
-   ![](assets/in_app_journey_3.png)
+   1. Klicka **[!UICONTROL Add condition]** om du vill att utlösaren ska ta hänsyn till flera händelser eller villkor.
+
+   1. Välj **[!UICONTROL Or]** villkor om du vill lägga till fler **[!UICONTROL Triggers]** för att ytterligare utöka regeln.
+
+      ![](assets/in_app_create_3.png)
+
+   1. Välj **[!UICONTROL And]** villkor om du vill lägga till **[!UICONTROL Traits]** och finjustera regeln bättre.
+
+      +++Se tillgängliga fack.
+
+      | Paket | Traits  | Definition |
+      |---|---|---|
+      | Enhetsinformation | Transportföretagets namn | Utlöses när ett av transportföretagsnamnen i listan uppfylls. |
+      | Enhetsinformation | Enhetsnamn | Utlöses när ett av enhetsnamnen uppfylls. |
+      | Enhetsinformation | Språk | Utlöses när något av språken i listan uppfylls. |
+      | Enhetsinformation | OS-version | Utlöses när en av de angivna operativsystemsversionerna uppfylls. |
+      | Enhetsinformation | Tidigare OS-version | Utlöses när någon av de angivna versionerna av föregående operativsystem uppfylls. |
+      | Enhetsinformation | Körningsläge | Utlöses om körningsläget är antingen program eller tillägg. |
+      | Programmets livscykel | Program-ID | Utlöses när angivet program-ID uppfylls. |
+      | Programmets livscykel | Veckodag | Utlöses när den angivna veckodagen har uppnåtts. |
+      | Programmets livscykel | Dag sedan första användningen | Utlöses när det angivna antalet dagar sedan första användningen uppfylls. |
+      | Programmets livscykel | Dag sedan senaste användning | Utlöses när det angivna antalet dagar sedan den senaste användningen uppfylls. |
+      | Programmets livscykel | Dag sedan uppgraderingen | Utlöses när det angivna antalet dagar sedan den senaste uppgraderingen har uppnåtts. |
+      | Programmets livscykel | Installationsdatum | Utlöses när det angivna installationsdatumet är uppfyllt. |
+      | Programmets livscykel | Launches | Utlöses när det angivna antalet starter uppfylls. |
+      | Programmets livscykel | Tid på dagen | Utlöses när den angivna tidpunkten på dagen uppfylls. |
+      | Platser | Aktuell POI | Utlöses av Platser SDK när kunden anger den angivna Intressepunkten (POI). |
+      | Platser | Senaste inmatade POI | Utlöses av Places SDK beroende på vilken kund som senast angav Point of Interest (POI). |
+      | Platser | Senaste utloggad POI | Utlöses av Places SDK beroende på din kunds sista utlämnade punkt för intresse (POI). |
+
++++
+
+      ![](assets/in_app_create_8.png)
+
+   1. Klicka **[!UICONTROL Make group]** för att gruppera utlösare tillsammans.
+
+      ![](assets/in_app_journey_3.png)
+
+   1. Välj hur ofta utlösaren ska visas när meddelandet i appen är aktivt:
+
+      * **[!UICONTROL Show every time]**: Visa alltid meddelandet när de händelser som valts i **[!UICONTROL Mobile app trigger]** inträffar.
+      * **[!UICONTROL Show once]**: Visa endast det här meddelandet första gången de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
+      * **[!UICONTROL Show until click through]**: Visa det här meddelandet när händelser har markerats i **[!UICONTROL Mobile app trigger]** rullgardinsmenyn inträffar tills en interaktionshändelse skickas av SDK med åtgärden&quot;klickad&quot;.
 
 1. Slutför vid behov kundresan genom att dra och släppa ytterligare åtgärder eller händelser. [Läs mer](../building-journeys/about-journey-activities.md)
 
@@ -93,6 +141,24 @@ Så här lägger du till ett meddelande i appen i en kampanj:
 1. Klicka **[!UICONTROL Edit triggers]** för att välja händelser och villkor som ska utlösa meddelandet. Regelbyggare gör det möjligt för användare att ange villkor och värden som, när de möts, utlöser en uppsättning åtgärder, till exempel att skicka ett meddelande i appen.
 
    1. Klicka på händelselistrutan för att ändra utlösaren om det behövs.
+
+      +++Se tillgängliga utlösare.
+
+      | Paket | Utlösare | Definition |
+      |---|---|---|
+      | Skicka data till plattformen | Skickade data till plattformen | Utlöses när mobilappen utfärdar en edge experience-händelse för att skicka data till Adobe Experience Platform. Vanligtvis API-anropet [sendEvent](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) från AEP Edge-tillägget. |
+      | Core tracking | Spåra åtgärd | Utlöses när de äldre funktionerna i API:t för mobilkod finns [trackAction](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) anropas. |
+      | Core tracking | Spåra läge | Utlöses när de äldre funktionerna i API:t för mobilkod finns [trackState](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) anropas. |
+      | Core tracking | Samla in PII | Utlöses när de äldre funktionerna i API:t för mobilkod finns [collectPII](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#collectpii) anropas. |
+      | Programmets livscykel | Programstart | Utlöses vid varje körning, inklusive krascher och installationer. Utlöses också vid ett återköp från bakgrunden när tidsgränsen för livscykelsessionen har överskridits. |
+      | Programmets livscykel | Programinstallation | Utlöses vid första körningen efter installation eller ominstallation. |
+      | Programmets livscykel | Programuppdatering | Utlöses vid första körningen efter en uppgradering eller när versionsnumret ändras. |
+      | Programmets livscykel | Programmet stängs | Utlöses när programmet stängs. |
+      | Programmets livscykel | Programkrasch | Utlöses när programmet inte är bakgrundsbelagt innan det stängs. Händelsen skickas när programmet startas efter kraschen. Kraschrapportering för Adobe Mobile implementerar inte en global hanterare för ej infångade undantag. |
+      | Platser | Ange POI | Utlöses av Places SDK när kunden anger den POI (Point of Interest) som du har konfigurerat. |
+      | Platser | Avsluta POI | Utlöses av Places SDK när kunden avslutar det Point of Interest (POI) som du konfigurerade. |
+
++++
 
    1. Klicka **[!UICONTROL Add condition]** om du vill att utlösaren ska ta hänsyn till flera händelser eller villkor.
 
@@ -153,14 +219,27 @@ Så här lägger du till ett meddelande i appen i en kampanj:
 
 * I videon nedan visas hur du skapar, konfigurerar och publicerar meddelanden i appen i dina kampanjer.
 
+  +++Se video
+
   >[!VIDEO](https://video.tv.adobe.com/v/3410430?quality=12&learn=on)
 
++++
 
-* I videon nedan visas hur du konfigurerar och analyserar innehållsexperiment i A/B-testmeddelanden i appen.
+* I videon nedan visas hur du konfigurerar och analyserar innehållsexperiment med A/B-testmeddelanden i appen.
+
+  +++Se video
 
   >[!VIDEO](https://video.tv.adobe.com/v/3419898)
 
++++
 
+* I videon nedan visas hur du skapar ett meddelande i appen under en resa och hur du testar och publicerar din resa.
+
+  +++Se video
+
+  >[!VIDEO](https://video.tv.adobe.com/v/3423077)
+
++++
 
 **Relaterade ämnen:**
 

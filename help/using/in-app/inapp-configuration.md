@@ -5,9 +5,9 @@ role: Admin
 level: Intermediate
 keywords: in-app, meddelande, konfiguration, plattform
 exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
-source-git-commit: 13020825a0cf06bd67f48ccbe6f46b6eaea210d3
+source-git-commit: 94c4e0e53625fdf20f940e8bfd15d67dba1d0120
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '394'
 ht-degree: 2%
 
 ---
@@ -31,6 +31,10 @@ Innan du skickar meddelanden i appen måste du konfigurera din kanal i appen i [
    >Datauppsättningen används skrivskyddat av [!DNL Journey Optimizer] rapporteringssystem och påverkar inte datainsamling eller datainmatning.
 
 1. Sedan öppnar du **[!UICONTROL App surfaces]** meny och klicka **[!UICONTROL Create App surface]**.
+
+   >[!NOTE]
+   >
+   > Du behöver **Hantera appkonfiguration** behörighet att få åtkomst till **[!UICONTROL App surfaces]** -menyn. Mer information finns i [den här videon](#video).
 
    >[!NOTE]
    >
@@ -87,5 +91,10 @@ Kanalen i appen är nu konfigurerad. Du kan börja skicka meddelanden i appen ti
 
 * I videon nedan visas hur du tilldelar **Hantera appkonfiguration** behörighet att komma åt appens ytmeny.
 
->[!VIDEO](https://video.tv.adobe.com/v/3421607)
+  +++Se video
+
+  >[!VIDEO](https://video.tv.adobe.com/v/3421607)
+
++++
+
 
