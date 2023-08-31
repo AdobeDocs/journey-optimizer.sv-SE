@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: c01195dbee3e14a356c58353169507678aec5d30
+source-git-commit: d56053d9db3d7c07d629069c985640e694b32ce1
 workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 0%
@@ -66,7 +66,7 @@ Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera opti
 ### Anpassade åtgärder {#custom-actions-g}
 
 * Den anpassade åtgärds-URL:en stöder inte dynamiska parametrar.
-* Endast anropsmetoderna POST och PUT stöds
+* Anropsmetoderna POST, PUT och GET stöds
 * Namnet på frågeparametern eller -rubriken får inte börja med &quot;.&quot; eller &quot;$&quot;
 * IP-adresser tillåts inte
 * Adobe adresser (`.adobe.*`) tillåts inte i URL:er och API:er.
