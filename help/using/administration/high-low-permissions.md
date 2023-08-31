@@ -8,9 +8,9 @@ role: Admin, Architect, Developer
 level: Experienced
 keywords: behörighet, hög nivå, låg nivå, profil, administratörskonsol
 exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
-source-git-commit: 7ac2ae714f2d11d2559b6195af37e2dece35b17c
+source-git-commit: bb988dbc3aa8b70081c9f3de595d49904cc699b4
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1109'
 ht-degree: 0%
 
 ---
@@ -34,13 +34,14 @@ Till exempel **[!DNL Journey administrator]** rollen har tilldelats **[!DNL Mana
 
 +++ Den innehåller följande lågnivåbehörigheter:
 
-   * Specifikt för Journey Optimizer:
+   * Journey Optimizer-specifikt:
 
       * journeys.read
       * journeys.write
       * journeys.delete
       * messages.read
-   * Specifikt för Adobe Experience Platform:
+
+   * Adobe Experience Platform-specifikt:
 
       * segments.read
       * profiles.read
@@ -52,7 +53,7 @@ Till exempel **[!DNL Journey administrator]** rollen har tilldelats **[!DNL Mana
 * **[!DNL Publish journeys]** högnivåtillstånd ger användarna rätt att publicera resor.
 
 +++ Den innehåller följande lågnivåbehörigheter:
-   * Specifikt för Journey Optimizer:
+   * Journey Optimizer-specifikt:
       * journeys.publish
       * journeys.read
 
@@ -62,9 +63,10 @@ Till exempel **[!DNL Journey administrator]** rollen har tilldelats **[!DNL Mana
 
 +++ Den innehåller följande lågnivåbehörigheter:
 
-   * Specifikt för Journey Optimizer:
+   * Journey Optimizer-specifikt:
       * journeys.read
-   * Specifikt för Adobe Experience Platform:
+
+   * Adobe Experience Platform-specifikt:
       * segments.read
       * profiles.read
 
@@ -74,7 +76,7 @@ Till exempel **[!DNL Journey administrator]** rollen har tilldelats **[!DNL Mana
 
 +++ Den innehåller följande lågnivåbehörigheter:
 
-   * Specifikt för Journey Optimizer:
+   * Journey Optimizer-specifikt:
       * travel_events.read
       * travel_events.write
       * travel_events.delete
@@ -84,7 +86,8 @@ Till exempel **[!DNL Journey administrator]** rollen har tilldelats **[!DNL Mana
       * travel_actions.read
       * travel_actions.write
       * travel_actions.delete
-   * Specifikt för Adobe Experience Platform:
+
+   * Adobe Experience Platform-specifikt:
       * schemas.read
       * datasets.read
       * identity_namespace.read
@@ -95,11 +98,12 @@ Till exempel **[!DNL Journey administrator]** rollen har tilldelats **[!DNL Mana
 
 +++ Den innehåller följande lågnivåbehörigheter:
 
-   * Specifikt för Journey Optimizer:
+   * Journey Optimizer-specifikt:
       * travel_events.read
       * travel_data_sources.read
       * travel_actions.read
-   * Specifikt för Adobe Experience Platform:
+
+   * Adobe Experience Platform-specifikt:
       * schemas.read
       * datasets.read
       * identity_namespace.read
@@ -110,10 +114,11 @@ Till exempel **[!DNL Journey administrator]** rollen har tilldelats **[!DNL Mana
 
 +++ Den innehåller följande lågnivåbehörigheter:
 
-   * Specifikt för Journey Optimizer:
+   * Journey Optimizer-specifikt:
       * travel_report.read
       * messages_report.read
-   * Specifikt för Adobe Experience Platform:
+
+   * Adobe Experience Platform-specifikt:
       * datasets.read
       * queries.read
       * queries.write
@@ -127,7 +132,7 @@ Till exempel **[!DNL Journey administrator]** rollen har tilldelats **[!DNL Mana
 
 +++ Den innehåller följande lågnivåbehörigheter:
 
-   * Specifikt för Journey Optimizer:
+   * Journey Optimizer-specifikt:
       * frequency_rules.read
       * frequency_rules.write
       * frequency_rules.delete
@@ -138,37 +143,50 @@ Till exempel **[!DNL Journey administrator]** rollen har tilldelats **[!DNL Mana
 
 +++ Den innehåller följande lågnivåbehörigheter:
 
-   * Specifikt för Journey Optimizer:
+   * Journey Optimizer-specifikt:
       * frequency_rules.read
 
 +++
 
 ## Kampanjresurs {#campaign-capability}
 
+* **[!DNL Export suppression list]** behörighet på hög nivå ger användarna möjlighet att ladda ned listan som en CSV-fil.
+
++++ Den innehåller följande lågnivåbehörigheter:
+
+   * Journey Optimizer-specifikt:
+      * suppression_list.export
+
+   * Adobe Experience Platform-specifikt:
+      * profiles.read
+      * datasets.read
+
++++
+
 * **[!DNL Manage campaigns]** behörighet på hög nivå ger användare möjlighet att skapa nya och redigera/ta bort kampanjer
 
 +++ Den innehåller följande lågnivåbehörigheter:
 
-   * Specifikt för Journey Optimizer:
+   * Journey Optimizer-specifikt:
 
       * campaign.read
       * campaign.write
       * campaign.delete
-
-      <!--* experiments.read
+     <!--* experiments.read
       * experiments.write
       * experiments.delete-->
+
 +++
 
 * **[!DNL Publish campaigns]** behörighet på hög nivå ger användarna möjlighet att publicera kampanjer.
 
 +++ Den innehåller följande lågnivåbehörigheter:
 
-   * Specifikt för Journey Optimizer:
+   * Journey Optimizer-specifikt:
 
       * kampanjläsning
       * campaign-publish
-         <!--* experiments.activate-->
+        <!--* experiments.activate-->
 
 +++
 
@@ -176,12 +194,12 @@ Till exempel **[!DNL Journey administrator]** rollen har tilldelats **[!DNL Mana
 
 +++ Den innehåller följande lågnivåbehörigheter:
 
-   * Specifikt för Journey Optimizer:
+   * Journey Optimizer-specifikt:
       * campaign.read
       * campaign-report.read
-
-      <!--* experiments.read
+     <!--* experiments.read
       * experiments_report.read-->
+
 +++
 
 ## Beslutsledningsresurs {#decisions-permissions}
@@ -201,7 +219,8 @@ Till exempel **[!DNL Journey administrator]** rollen har tilldelats **[!DNL Mana
       * placements.write
       * placements.delete
       * ranking_strategy.read
-   * Specifikt för Adobe Experience Platform:
+
+   * Adobe Experience Platform-specifikt:
       * datasets.read
       * datasets.write
       * datasets.delete
@@ -220,7 +239,8 @@ Till exempel **[!DNL Journey administrator]** rollen har tilldelats **[!DNL Mana
       * offers.read
       * placements.read
       * ranking_strategy.read
-   * Specifikt för Adobe Experience Platform:
+
+   * Adobe Experience Platform-specifikt:
       * schemas.read
       * segment.read
       * datasets.read
@@ -242,7 +262,8 @@ Till exempel **[!DNL Journey administrator]** rollen har tilldelats **[!DNL Mana
       * placements.Write
       * placements.Delete
       * ranking_strategy.read
-   * Specifikt för Adobe Experience Platform:
+
+   * Adobe Experience Platform-specifikt:
       * schemas.read
       * segment.read
       * datasets.read
@@ -266,77 +287,11 @@ Till exempel **[!DNL Journey administrator]** rollen har tilldelats **[!DNL Mana
 
 ## Kanalkonfigurationsresurs {#administration-permissions}
 
-* **[!DNL Manage subdomains delegation]** Med högnivåbehörighet kan användare skapa, redigera och ta bort underdomänsdelegeringar (inklusive IP-pool).
-
-+++ Den innehåller följande lågnivåbehörigheter:
-   * Specifikt för Journey Optimizer:
-
-      * underdomäner_delegering.read
-      * subdomains_Delegering.write
-      * underdomäner_delegering.delete
-
-+++
-
-* **[!DNL Manage PTR records]** behörighet på hög nivå tillåter användare att läsa och redigera PTR-poster som har konfigurerats baserat på underdomänen.
-
-+++ Den innehåller följande lågnivåbehörigheter:
-
-   * Specifikt för Journey Optimizer:
-      * PTR_records.read
-      * PTR_records.write
-      * underdomäner_delegering.read
-
-+++
-
-* **[!DNL View PTR records]** behörighet på hög nivå tillåter användare att visa PTR-poster som har konfigurerats baserat på underdomänen.
-
-+++ Den innehåller följande lågnivåbehörigheter:
-   * Specifikt för Journey Optimizer:
-
-      * PTR_records.read
-      * underdomäner_delegering.read
-
-+++
-
-* **[!DNL Manage IP pools]** behörighet på hög nivå tillåter användare att skapa, redigera och ta bort tillhörighetsdefinitionen.
-
-+++ Den innehåller följande lågnivåbehörigheter:
-   * Specifikt för Journey Optimizer:
-      * IP_pools.read
-      * IP_pools.write
-      * IP_pools.delete
-
-+++
-
-* **[!DNL Manage messages general settings]** behörighet på hög nivå ger användare möjlighet att skapa, redigera och ta bort globala inställningar på sandlådenivå.
-
-+++ Den innehåller följande lågnivåbehörigheter:
-
-   * Specifikt för Journey Optimizer:
-      * messages_general_settings.read
-      * messages_general_settings.write
-      * messages_general_settings.delete
-   * Specifikt för Adobe Experience Platform:
-      * schemas.read
-
-+++
-
-* **[!DNL View messages general settings]** behörighet på hög nivå tillåter användare att visa meddelanden med allmänna inställningar, t.ex. körningsadressen.
-
-+++ Den innehåller följande lågnivåbehörigheter:
-
-   * Specifikt för Journey Optimizer:
-      * messages_general_settings.read
-   * Specifikt för Adobe Experience Platform:
-      * schemas.read
-
-+++
-
 * **[!DNL Manage channel surface]** behörighet på hög nivå ger användare möjlighet att skapa, redigera och ta bort kanalytor över kanaler på sandlådenivå.
 
 +++ Den innehåller följande lågnivåbehörigheter:
 
-   * Specifikt för Journey Optimizer:
+   * Journey Optimizer-specifikt:
       * messages_presets.read
       * messages_presets.write
       * messages_presets.delete
@@ -346,6 +301,152 @@ Till exempel **[!DNL Journey administrator]** rollen har tilldelats **[!DNL Mana
 
 +++
 
+* **[!DNL Manage IP pools]** behörighet på hög nivå tillåter användare att skapa, redigera och ta bort tillhörighetsdefinitionen.
+
++++ Den innehåller följande lågnivåbehörigheter:
+   * Journey Optimizer-specifikt:
+      * IP_pools.read
+      * IP_pools.write
+      * IP_pools.delete
+
++++
+
+* **[!DNL Manage landing page settings]** behörighet på hög nivå ger användare möjlighet att läsa, skapa och redigera underdomäner och förinställningar för landningssidor.
+
++++ Den innehåller följande lågnivåbehörigheter:
+
+   * Journey Optimizer-specifikt:
+
+      * landing_page_subdomain.read
+      * landing_page_subdomain.write
+      * landing_page_subdomain.delete
+      * landing_page_preset.read
+      * landing_page_preset.write
+      * landing_page_preset.delete
+
++++
+
+* **[!DNL Manage messages general settings]** behörighet på hög nivå ger användare möjlighet att skapa, redigera och ta bort globala inställningar på sandlådenivå.
+
++++ Den innehåller följande lågnivåbehörigheter:
+
+   * Journey Optimizer-specifikt:
+      * messages_general_settings.read
+      * messages_general_settings.write
+      * messages_general_settings.delete
+
+   * Adobe Experience Platform-specifikt:
+      * schemas.read
+
++++
+
+* **[!DNL Manage messages presets]** behörighet på hög nivå ger användare möjlighet att läsa, skapa, redigera och ta bort innehållsmärkning.
+
++++ Den innehåller följande lågnivåbehörigheter:
+
+   * Journey Optimizer-specifikt:
+      * messages_presets.read
+      * messages_presets.write
+      * messages_presets.delete
+      * underdomäner_delegering.read
+      * IP_pools.read
+
+   * Specifik datainsamling:
+      * Mobil_inställning.read
+
++++
+
+* **[!DNL Manage PTR records]** behörighet på hög nivå tillåter användare att läsa och redigera PTR-poster som har konfigurerats baserat på underdomänen.
+
++++ Den innehåller följande lågnivåbehörigheter:
+
+   * Journey Optimizer-specifikt:
+      * PTR_records.read
+      * PTR_records.write
+      * underdomäner_delegering.read
+
++++
+
+* **[!DNL Manage Seedlist]** behörighet på hög nivå ger användare möjlighet att läsa, skapa, redigera och ta bort listan.
+
++++ Den innehåller följande lågnivåbehörigheter:
+
+   * Journey Optimizer-specifikt:
+      * seedlist.read
+      * seedlist.write
+      * seedlist.delete
+
++++
+
+* **[!DNL Manage SMS subdomains]** behörighet på hög nivå tillåter användare att läsa, skapa, redigera och ta bort SMS-underdomäner.
+
++++ Den innehåller följande lågnivåbehörigheter:
+
+   * Journey Optimizer-specifikt:
+      * sms_subdomains.read
+      * sms_subdomains.write
+      * sms_subdomains.delete
+
++++
+
+* **[!DNL Manage subdomains delegation]** Med högnivåbehörighet kan användare skapa, redigera och ta bort underdomänsdelegeringar (inklusive IP-pool).
+
++++ Den innehåller följande lågnivåbehörigheter:
+   * Journey Optimizer-specifikt:
+
+      * underdomäner_delegering.read
+      * subdomains_Delegering.write
+      * underdomäner_delegering.delete
+
++++
+
+* **[!DNL Manage suppression]** behörighet på hög nivå ger användare möjlighet att definiera antalet studsar innan en e-postadress läggs till i listan samt att lägga till och ta bort poster i/från listan över utelämnanden.
+
++++ Den innehåller följande lågnivåbehörigheter:
+   * Journey Optimizer-specifikt:
+      * suppression_rules.read
+      * suppression_rules.write
+      * suppression_rules.delete
+      * suppression_list.write
+      * suppression_list.delete
+
++++
+
+* **[!DNL View PTR records]** behörighet på hög nivå tillåter användare att visa PTR-poster som har konfigurerats baserat på underdomänen.
+
++++ Den innehåller följande lågnivåbehörigheter:
+   * Journey Optimizer-specifikt:
+
+      * PTR_records.read
+      * underdomäner_delegering.read
+
++++
+
+* **[!DNL View messages general settings]** behörighet på hög nivå tillåter användare att visa meddelanden med allmänna inställningar, t.ex. körningsadressen.
+
++++ Den innehåller följande lågnivåbehörigheter:
+
+   * Journey Optimizer-specifikt:
+      * messages_general_settings.read
+
+   * Adobe Experience Platform-specifikt:
+      * schemas.read
+
++++
+
+* **[!DNL View messages presets]** behörighet på hög nivå gör att användare kan visa förinställningar för meddelanden.
+
++++ Den innehåller följande lågnivåbehörigheter:
+
+   * Journey Optimizer-specifikt:
+      * messages_presets.read
+      * underdomäner_delegering.read
+      * IP_pools.read
+
+   * Specifik datainsamling:
+      * Mobil_inställning.read
+
++++
 <!--
 ### [!DNL View channel surface] permission {#view-channel-surface}
 
@@ -358,54 +459,17 @@ The **[!DNL View channel surface]** high-level permission allows users to view c
 * mobile_setting.read (from Adobe Experience Platform Data Collection)
 -->
 
-* **[!DNL Manage suppression]** behörighet på hög nivå ger användare möjlighet att definiera antalet studsar innan en e-postadress läggs till i listan samt att lägga till och ta bort poster i/från listan.
-
-+++ Den innehåller följande lågnivåbehörigheter:
-   * Specifikt för Journey Optimizer:
-      * suppression_rules.read
-      * suppression_rules.write
-      * suppression_rules.delete
-      * suppression_list.write
-      * suppression_list.delete
-
-+++
 
 * **[!DNL View suppression list]** behörighet på hög nivå ger användarna möjlighet att visa innehåll och inställningar i listan över utelämnanden.
 
 +++ Den innehåller följande lågnivåbehörigheter:
 
-   * Specifikt för Journey Optimizer:
+   * Journey Optimizer-specifikt:
       * suppression_list.view
-   * Specifikt för Adobe Experience Platform:
+
+   * Adobe Experience Platform-specifikt:
       * profiles.read
       * datasets.read
-
-+++
-
-* **[!DNL Export suppression list]** behörighet på hög nivå ger användarna möjlighet att ladda ned listan som en CSV-fil.
-
-+++ Den innehåller följande lågnivåbehörigheter:
-
-   * Specifikt för Journey Optimizer:
-      * suppression_list.export
-   * Specifikt för Adobe Experience Platform:
-      * profiles.read
-      * datasets.read
-
-+++
-
-* **[!DNL Manage landing page settings]** behörighet på hög nivå ger användare möjlighet att läsa, skapa och redigera underdomäner och förinställningar för landningssidor.
-
-+++ Den innehåller följande lågnivåbehörigheter:
-
-   * Specifikt för Journey Optimizer:
-
-      * landing_page_subdomain.read
-      * landing_page_subdomain.write
-      * landing_page_subdomain.delete
-      * landing_page_preset.read
-      * landing_page_preset.write
-      * landing_page_preset.delete
 
 +++
 
@@ -417,40 +481,3 @@ The **[!DNL Manage web subdomain]** high-level permission allows users to read, 
   +++ It includes the following low-level permissions: 
 -->
 
-* **[!DNL Manage messages presets]** behörighet på hög nivå ger användare möjlighet att läsa, skapa, redigera och ta bort innehållsmärkning.
-
-+++ Den innehåller följande lågnivåbehörigheter:
-
-   * Specifikt för Journey Optimizer:
-      * messages_presets.read
-      * messages_presets.write
-      * messages_presets.delete
-      * underdomäner_delegering.read
-      * IP_pools.read
-   * Specifik datainsamling:
-      * Mobil_inställning.read
-
-+++
-
-* **[!DNL View messages presets]** behörighet på hög nivå gör att användare kan visa förinställningar för meddelanden.
-
-+++ Den innehåller följande lågnivåbehörigheter:
-
-   * Specifikt för Journey Optimizer:
-      * messages_presets.read
-      * underdomäner_delegering.read
-      * IP_pools.read
-   * Specifik datainsamling:
-      * Mobil_inställning.read
-
-+++
-
-* **[!DNL Manage SMS subdomains]** behörighet på hög nivå tillåter användare att läsa, skapa, redigera och ta bort SMS-underdomäner.
-
-+++ Den innehåller följande lågnivåbehörigheter:
-
-   * Specifikt för Journey Optimizer:
-      * sms_subdomains.read
-      * sms_subdomains.write
-      * sms_subdomains.delete
-+++
