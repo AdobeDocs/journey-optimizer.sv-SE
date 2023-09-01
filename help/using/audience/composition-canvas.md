@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 3eb9466e-9d88-4470-a22f-5e24a29923ae
-source-git-commit: 48a0fb11c141d847fae444909a7e6080e4a4935a
+source-git-commit: a6e46e7ff5a84ebb59dcb7825fa71df09b0f9a98
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1437'
 ht-degree: 0%
 
 ---
@@ -116,9 +116,13 @@ The **[!UICONTROL Exclude]** kan du utesluta profiler från din komposition. Det
 
   Välj det attribut som ska slås upp och ange sedan vilket värde som ska uteslutas. I det här exemplet utesluts vi från dispositionsprofiler vars hemadress är i Japan.
 
+  >[!NOTE]
+  >
+  >Endast ett exkluderingsvärde kan anges.
+
   ![](assets/audiences-exclude-attribute.png)
 
-### Förfina {#enrich}
+### Berika aktivitet {#enrich}
 
 >[!CONTEXTUALHELP]
 >id="ajo_ao_enrich"
@@ -220,9 +224,16 @@ Det finns två typer av delade åtgärder:
 
   ![](assets/audiences-split.png)
 
-  >[!NOTE]
-  >
-  >The **[!UICONTROL Other profiles]** kan du skapa ytterligare en sökväg med de återstående profilerna som inte matchar något av villkoren som anges i de andra sökvägarna.
+  Så här konfigurerar du en attributbaserad delningsaktivitet:
+
+   1. klicka på knappen bredvid **[!UICONTROL Attribute]** för att välja vilket attribut som ska väljas som villkor.
+   1. Lägg till så många banor du vill och ange sedan en etikett och det värde som ska användas för att markera de profiler som ska ingå i sökvägen för varje bana.
+
+      >[!NOTE]
+      >
+      >Endast ett värde kan anges för varje sökväg.
+
+   1. Växla på **[!UICONTROL Other profiles]** om du vill skapa ytterligare en sökväg med de återstående profilerna som inte matchar något av villkoren som anges i de andra sökvägarna.
 
 ## Spara era målgrupper {#save}
 
