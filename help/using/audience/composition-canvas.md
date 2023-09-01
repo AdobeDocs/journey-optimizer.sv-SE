@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 3eb9466e-9d88-4470-a22f-5e24a29923ae
-source-git-commit: a6e46e7ff5a84ebb59dcb7825fa71df09b0f9a98
+source-git-commit: cfe7c04d6a45e468933a3e79f36365754d1e15d9
 workflow-type: tm+mt
-source-wordcount: '1437'
+source-wordcount: '1448'
 ht-degree: 0%
 
 ---
@@ -224,10 +224,10 @@ Det finns två typer av delade åtgärder:
 
   ![](assets/audiences-split.png)
 
-  Så här konfigurerar du en attributbaserad delningsaktivitet:
+  Så här ställer du in en attributbaserad delningsaktivitet:
 
-   1. klicka på knappen bredvid **[!UICONTROL Attribute]** för att välja vilket attribut som ska väljas som villkor.
-   1. Lägg till så många banor du vill och ange sedan en etikett och det värde som ska användas för att markera de profiler som ska ingå i sökvägen för varje bana.
+   1. Klicka på knappen bredvid **[!UICONTROL Attribute]** för att välja det attribut som ska användas som delningsvillkor.
+   1. Lägg till så många banor som behövs. Ange en etikett för varje bana och det värde som ska användas för att avgöra vilka profiler som ska inkluderas i den aktuella sökvägen.
 
       >[!NOTE]
       >
