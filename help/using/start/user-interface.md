@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 39953bb09a699ed4fd07db26a3f2e54f4e2cacd7
+source-git-commit: b58bc332886e37b8d8eb2e439fd8ddb459dbe356
 workflow-type: tm+mt
 source-wordcount: '1233'
 ht-degree: 5%
@@ -116,7 +116,7 @@ Styr din sekretesshantering och dina förfrågningar från det här avsnittet.
 
 * **[!UICONTROL Policies]** - Med Adobe Experience Platform kan ni sätta etiketter på era fält och skapa marknadsföringsåtgärder för varje kanal. Sedan definierar ni en styrningspolicy som är kopplad till en etikett och en marknadsföringsåtgärd. [Läs mer](../action/action-privacy.md)
 
-* **[!UICONTROL Requests]** - Förfrågningar om Provacy hanteras i Adobe Experience Platform Privacy Service. Det innehåller ett RESTful-API och ett användargränssnitt som hjälper dig att hantera kunddataförfrågningar. [Läs mer](../privacy/requests.md)
+* **[!UICONTROL Requests]** - Sekretessförfrågningar hanteras i Adobe Experience Platform Privacy Service. Det innehåller ett RESTful-API och ett användargränssnitt som hjälper dig att hantera kunddataförfrågningar. [Läs mer](../privacy/requests.md)
 
 * **[!UICONTROL Audit]** - Bläddra till det här avsnittet för att kontrollera aktivitetsloggar. [Läs mer](../privacy/audit-logs.md)
 
