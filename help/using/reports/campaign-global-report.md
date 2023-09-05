@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: fa64f5b8-75f2-40e6-8566-5766fafe6cd6
-source-git-commit: 164a7376c362f67f82f7cf07ec21aa42b9b342cf
+source-git-commit: ea56d3cac5e4c4bc95560734fa3b9e8f410c8691
 workflow-type: tm+mt
-source-wordcount: '2204'
+source-wordcount: '2198'
 ht-degree: 0%
 
 ---
@@ -145,9 +145,9 @@ The **[!UICONTROL Email Sending Statistics]** diagram visar hur framgångsrik le
 
 The **[!UICONTROL Email - Tracking statistics]** widgeten innehåller tillgängliga data för mottagaraktivitet för leveransen:
 
-* **[!UICONTROL Opens]**: Antal gånger som leveransen öppnades i en leverans.
+* **[!UICONTROL Opens]**: Antal gånger som e-postmeddelandet öppnades.
 
-* **[!UICONTROL Unique Opens]**: Procent av öppnade leveranser.
+* **[!UICONTROL Unique Opens]**: Procentandel öppnade e-postmeddelanden.
 
 * **[!UICONTROL Open Rate]**: Totalt antal öppnade e-postmeddelanden jämfört med antalet levererade e-postmeddelanden.
 
@@ -196,7 +196,9 @@ The **[!UICONTROL Email - Top recipient domain]** diagram och tabeller visar vil
 The **[!UICONTROL Optimized vs non optimized]** diagram anger huvudinformationen i förhållande till meddelandet, oavsett om de är optimerade eller inte:
 
 * **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
-* **[!UICONTROL Opens]**: Antal gånger som leveransen öppnades i en leverans.
+
+* **[!UICONTROL Opens]**: Antal gånger som meddelandet öppnades.
+
 * **[!UICONTROL Clicks]**: Antal gånger ett innehåll klickades i ett e-postmeddelande.
 
 The **[!UICONTROL Send time optimization]** innehåller information om leveransens framgångar beroende på sändningsmetod: optimerad eller normal.
@@ -213,7 +215,7 @@ Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL In-app]** -fliken
 
 +++Läs mer om de olika mätvärden och widgetar som är tillgängliga för rapporten i appen.
 
-The **[!UICONTROL In-app performance]** Nyckeltal anger den viktigaste informationen i relation till besökarnas engagemang i era meddelanden i appen, till exempel:
+The **[!UICONTROL In-app performance]** Nyckeltal anger den viktigaste informationen i relation till besökarnas engagemang i era meddelanden i appen, som:
 
 * **[!UICONTROL Unique impressions]**: antal unika användare som meddelandet i appen levererades till.
 
@@ -330,7 +332,7 @@ The **[!UICONTROL SMS Performance by date]** widgeten visar huvudinformationen i
 
 The **[!UICONTROL Exclude Reasons]**, **[!UICONTROL Bounces Reasons]** och **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilka fel och undantag som inträffade under leveransen.
 
-The **[!UICONTROL SMS - Clicks by links]** och **[!UICONTROL SMS - Tracking statistics]** widgetar detaljerar den viktigaste informationen i förhållande till besökarnas engagemang med dina URL-adresser.
+The **[!UICONTROL SMS - Clicks by links]** och **[!UICONTROL SMS - Tracking statistics]** widgetar detaljerar den viktigaste informationen i förhållande till besökarnas engagemang med dina URL:er.
 
 +++
 
