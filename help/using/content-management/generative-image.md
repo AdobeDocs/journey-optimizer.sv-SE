@@ -10,7 +10,7 @@ level: Beginner
 badge: label="Beta" type="Informative"
 hide: true
 hidefromtoc: true
-source-git-commit: 76eafb06b43d2964c4e85d1f77d35750f93eee0c
+source-git-commit: 32dd999f18bf3ddb3e073631f6d117238dc46c12
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 1%
@@ -24,7 +24,7 @@ ht-degree: 1%
 **Innehållsförteckning**
 
 * [Kom igång med Content Assist](gs-generative.md)
-* [Generera text med Content Assist](generative-title.md)
+* [Generera text med Content Assist](generative-content.md)
 * **[Generera bilder med Content Assist](generative-image.md)**
 
 >[!ENDSHADEBOX]
