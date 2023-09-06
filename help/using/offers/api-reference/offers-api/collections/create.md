@@ -6,10 +6,10 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 683f8b86-8545-46d0-a4a8-25c5b3c7b9c3
-source-git-commit: 3568e86015ee7b2ec59a7fa95e042449fb5a0693
+source-git-commit: ccc3ad2b186a64b9859a5cc529fe0aefa736fc00
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 6%
+source-wordcount: '155'
+ht-degree: 5%
 
 ---
 
@@ -17,62 +17,62 @@ ht-degree: 6%
 
 Samlingar är delmängder av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare, t.ex. erbjudandets kategori.
 
-Du kan skapa en samling genom att göra en POST-förfrågan till [!DNL Offer Library] API.
+Du kan skapa en samling genom att göra en POST-förfrågan till [!DNL Offer Library] API, samtidigt som du anger ditt behållar-ID.
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
-I följande tabell visas giltiga värden som utgör *Content-Type* fält i begärandehuvudet:
+I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
-| Content-Type | `application/json` |
+| Acceptera | `application/vnd.adobe.platform.xcore.xdm.receipt+json; version=1` |
+| Content-Type | `application/schema-instance+json; version=1;  schema="https://ns.adobe.com/experience/offer-management/offer-filter;version=0.1"` |
 
 **API-format**
 
 ```http
-POST /{ENDPOINT_PATH}/offer-collections
+POST /{ENDPOINT_PATH}/{CONTAINER_ID}/instances
 ```
 
 | Parameter | Beskrivning | Exempel |
 | --------- | ----------- | ------- |
-| `{ENDPOINT_PATH}` | Slutpunktssökvägen för beständiga API:er. | `https://platform.adobe.io/data/core/dps/` |
+| `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
+| `{CONTAINER_ID}` | Behållaren där samlingarna finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
 
 **Begäran**
 
 ```shell
-curl -X POST 'https://platform.adobe.io/data/core/offer-collections' \
--H 'Content-Type: application/json' \
--H 'Authorization: Bearer {ACCESS_TOKEN}' \
--H 'x-api-key: {API_KEY}' \
--H 'x-gw-ims-org-id: {IMS_ORG}' \
--H 'x-sandbox-name: {SANDBOX_NAME}' \
--d '{
-    "name": "Test Collection with tags",
-    "filterType": "any-tags",
-    "ids": [
-        "tag1234"
-    ],
-    "labels": [
-        "core/C5",
-        "custom/myLabel"
-    ]
-}'
+curl -X POST \
+  'https://platform.adobe.io/data/core/xcore/e0bd8463-0913-4ca1-bd84-6309134ca1f6/instances' \
+  -H 'Accept: application/vnd.adobe.platform.xcore.xdm.receipt+json; version=1' \
+  -H 'Content-Type: application/schema-instance+json; version=1;  schema="https://ns.adobe.com/experience/offer-management/offer-filter;version=0.1"' \
+  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
+  -H 'x-api-key: {API_KEY}' \
+  -H 'x-gw-ims-org-id: {IMS_ORG}' \
+  -H 'x-sandbox-name: {SANDBOX_NAME}' \
+  -d '{
+        "xdm:name": "Offer Collection 1",
+        "xdm:filterType": "anyTags",
+        "xdm:ids": [
+            "xcore:tag:124e147572cd7866"
+        ]
+    }'
 ```
 
 **Svar**
 
-Ett godkänt svar returnerar information om den nyligen skapade samlingen, inklusive dess unika `id`. Du kan använda samlingen `id` i senare steg för att uppdatera eller ta bort din samling eller använda den i en senare självstudiekurs för att fatta ett beslut.
+Ett godkänt svar returnerar information om den nyligen skapade samlingen, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort din samling. Du kan använda din unika samling `@id` i en senare självstudiekurs för att skapa ett beslut.
 
 ```json
 {
-    "etag": 1,
-    "createdBy": "{CREATED_BY}",
-    "lastModifiedBy": "{MODIFIED_BY}",
-    "id": "{ID}",
-    "sandboxId": "{SANDBOX_ID}",
-    "createdDate": "2023-05-31T15:09:11.771Z",
-    "lastModifiedDate": "2023-05-31T15:09:11.771Z",
-    "createdByClientId": "{CREATED_CLIENT_ID}",
-    "lastModifiedByClientId": "{MODIFIED_CLIENT_ID}"
+    "instanceId": "0bf31c20-13f1-11eb-a752-e58fd7dc4cb3",
+    "@id": "xcore:offer-filter:124e3594ce8b4930",
+    "repo:etag": 1,
+    "repo:createdDate": "2020-10-21T22:59:17.345797Z",
+    "repo:lastModifiedDate": "2020-10-21T22:59:17.345797Z",
+    "repo:createdBy": "{CREATED_BY}",
+    "repo:lastModifiedBy": "{MODIFIED_BY}",
+    "repo:createdByClientId": "{CREATED_CLIENT_ID}",
+    "repo:lastModifiedByClientId": "{MODIFIED_CLIENT_ID}"
 }
 ```

@@ -6,41 +6,43 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 2eaa0092-2436-4679-83f1-7530ab4a858f
-source-git-commit: 3568e86015ee7b2ec59a7fa95e042449fb5a0693
+source-git-commit: ccc3ad2b186a64b9859a5cc529fe0aefa736fc00
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 6%
+source-wordcount: '152'
+ht-degree: 5%
 
 ---
 
 # Ta bort en samling {#delete-collection}
 
-Ibland kan det vara nödvändigt att ta bort (DELETE) en samling. Detta görs genom att en DELETE-begäran görs till [!DNL Offer Library] API med `id` för den samling som du vill ta bort.
+Ibland kan det vara nödvändigt att ta bort (DELETE) en samling. Endast samlingar som du skapar i innehavarbehållaren kan tas bort. Detta görs genom att en DELETE-begäran görs till [!DNL Offer Library] API som använder $id för den samling du vill ta bort.
 
 **API-format**
 
 ```http
-DELETE /{ENDPOINT_PATH}/offer-collections/{ID}
+DELETE /{ENDPOINT_PATH}/{CONTAINER_ID}/instances/{INSTANCE_ID}
 ```
 
 | Parameter | Beskrivning | Exempel |
 | --------- | ----------- | ------- |
-| `{ENDPOINT_PATH}` | Slutpunktssökvägen för beständiga API:er. | `https://platform.adobe.io/data/core/dps` |
-| `{ID}` | ID:t för enheten som du vill ta bort. | `offerCollection1234` |
+| `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
+| `{CONTAINER_ID}` | Behållaren där samlingarna finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
+| `{INSTANCE_ID}` | Instans-ID för den samling som du vill uppdatera. | `0bf31c20-13f1-11eb-a752-e58fd7dc4cb3` |
 
 **Begäran**
 
 ```shell
-curl -X DELETE 'https://platform.adobe.io/data/core/dps/tags/tag1234' \
--H 'Content-Type: application/json' \
--H 'Authorization: Bearer  {ACCESS_TOKEN}' \
--H 'x-api-key: {API_KEY}' \
--H 'x-gw-ims-org-id: {IMS_ORG}' \
--H 'x-sandbox-name: {SANDBOX_NAME}'
+curl -X DELETE \
+  'https://platform.adobe.io/data/core/xcore/e0bd8463-0913-4ca1-bd84-6309134ca1f6/instances/0bf31c20-13f1-11eb-a752-e58fd7dc4cb3' \
+  -H 'Accept: application/vnd.adobe.platform.xcore.xdm.receipt+json; version=1' \
+  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
+  -H 'x-api-key: {API_KEY}' \
+  -H 'x-gw-ims-org-id: {IMS_ORG}' \
+  -H 'x-sandbox-name: {SANDBOX_NAME}'
 ```
 
 **Svar**
 
-Ett lyckat svar returnerar HTTP-status 200 och en tom brödtext.
+Ett lyckat svar returnerar HTTP-status 202 (inget innehåll) och en tom brödtext.
 
-Du kan bekräfta borttagningen genom att försöka utföra en sökning (GET) i samlingen. Du bör få HTTP-status 404 (Hittades inte) eftersom samlingen har tagits bort.
+Du kan bekräfta borttagningen genom att försöka utföra en sökning (GET) i samlingen. Du måste inkludera en Accept-rubrik i begäran, men du bör få HTTP-status 404 (Hittades inte) eftersom samlingen har tagits bort från behållaren.
