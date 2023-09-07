@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 327de13a-1c99-4d5e-86cf-8180fb7aaf23
-source-git-commit: d5c9297ef3e504b0ef9462b30882cdc4dba5b106
+source-git-commit: 41d31d27a844f47d46a22b64802b716b9600c6c7
 workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Med den här funktionen kan innehållsorienterade användare arbeta med mallar u
 
 En användare i företaget ansvarar t.ex. bara för innehållet och har därför inte tillgång till kampanjer eller resor. Den här användaren kan dock skapa en e-postmall som organisationens marknadsförare kan välja att använda i alla e-postmeddelanden som utgångspunkt.
 
-Du kan också skapa och hantera innehållsmallar med API:er. Mer information finns i [Dokumentation för Journey Optimizer API:er](https://developer.adobe.com/journey-optimizer-apis/references/content-templates/).
+Du kan också skapa och hantera innehållsmallar med API:er. Mer information finns i [Dokumentation för Journey Optimizer API:er](https://developer.adobe.com/journey-optimizer-apis/references/content/).
 
 ➡️ [Lär dig hur du skapar och använder mallar i den här videon](#video-templates)
 
