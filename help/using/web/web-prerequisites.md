@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6cb4f8ab-77ad-44a2-b2bf-a97f87b8f1db
-source-git-commit: 5f8dcb6d8984da9b343702d06bc400c851a9c017
+source-git-commit: cfa797146c4f6f87a55e72393f45c271480cf7f5
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1035'
 ht-degree: 1%
 
 ---
@@ -107,13 +107,15 @@ Tillägget har inga villkorsinställningar och hanterar automatiskt alla instäl
 
 När du använder Adobe [!DNL Journey Optimizer] webbdesigner, om du försöker läsa in en webbplats som inte kan läsas in, visas ett meddelande om att du har installerat [Webbläsartillägg för hjälp för visuell redigering](#install-visual-editing-helper).
 
-Om webbläsartillägget för hjälpen för visuell redigering är korrekt installerat men webbplatsen fortfarande inte kan läsas in eller fungerar oväntat är en möjlig åtgärd att öppna webbplatsen i webbläsaren och acceptera cookies innan du försöker läsa in den i [!DNL Journey Optimizer] webbdesigner.
+1. Kontrollera att webbläsartillägget för hjälpen för visuell redigering är korrekt installerat.
+
+1. Om webbplatsen fortfarande uppför sig oväntat bör du kontrollera att cookies från tredje part tillåts i webbläsaren, annars kan webbsidan inte läsas in i [!DNL Journey Optimizer] webbdesigner.
 
 För sidor som autentiseras, om inloggningssidan inte kan läsas in eller om du fortfarande inte är inloggad efter att ha försökt logga in:
 
-* Försök logga in först på en ny flik i webbläsaren och navigera till önskad sida, kopiera sedan URL:en och försök öppna den i dialogrutan [!DNL Journey Optimizer] webbdesigner.
+1. Försök logga in först på en ny flik i webbläsaren och navigera till önskad sida, kopiera sedan URL:en och försök öppna den i dialogrutan [!DNL Journey Optimizer] webbdesigner.
 
-* Om du fortfarande inte kan läsa in webbplatsen i [!DNL Journey Optimizer] webbdesigner, kontakta Adobe kundtjänst för att rapportera problemet och se till att du anger den felaktiga URL:en.
+2. Om du fortfarande inte kan läsa in webbplatsen i [!DNL Journey Optimizer] webbdesigner, kontakta Adobe kundtjänst för att rapportera problemet och se till att du anger den felaktiga URL:en.
 
 ## Leveransvillkor {#delivery-prerequisites}
 
