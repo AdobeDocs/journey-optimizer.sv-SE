@@ -3,12 +3,11 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Kom igång med scheman
 description: Lär dig hur du använder Adobe Experience Platform-scheman i Adobe Journey Optimizer
-feature: Schemas
 role: User
 level: Beginner
 keywords: scheman, plattform, data, struktur
 exl-id: c2a8df2e-ff94-4f9a-a53e-bbf9f663cc81
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 7e66450900d0625530025c6e17ef037e27da728e
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 2%

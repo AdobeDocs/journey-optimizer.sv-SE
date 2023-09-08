@@ -3,13 +3,12 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Om ExperienceEvent-scheman för resehändelser
 description: Läs mer om ExperienceEvent-scheman för resehändelser
-feature: Schemas
 topic: Administration
 role: Admin
 level: Intermediate
 keywords: scheman, XDM, plattform, direktuppspelning, förtäring, resa
 exl-id: f19749c4-d683-4db6-bede-9360b9610eef
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 7e66450900d0625530025c6e17ef037e27da728e
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 0%
@@ -24,7 +23,7 @@ Därför är en viktig förutsättning för att skapa händelser för [!DNL Jour
 
 ## Schemakrav för [!DNL Journey Optimizer] Händelser  {#schema-requirements}
 
-Det första steget i att konfigurera en händelse för [!DNL Journey Optimizer] är att se till att du har ett definierat XDM-schema för att representera händelsen och en datauppsättning som skapas för att registrera instanser av händelsen på Adobe Experience Platform. Det är inte helt nödvändigt att ha en datauppsättning för dina händelser, men om du skickar händelserna till en viss datauppsättning kan du behålla användarens händelsehistorik för framtida referens och analyser, så det är alltid en bra idé. Om du inte redan har ett lämpligt schema och datamängd för händelsen kan båda dessa åtgärder utföras i Adobe Experience Platform webbgränssnitt.
+Det första steget i att konfigurera en händelse för [!DNL Journey Optimizer] är att se till att du har ett definierat XDM-schema för att representera händelsen och en datauppsättning som skapas för att registrera instanser av händelsen på Adobe Experience Platform. Det är inte absolut nödvändigt att ha en datauppsättning för dina händelser, men om du skickar händelserna till en viss datauppsättning kan du behålla användarens händelsehistorik för framtida referens och analys, så det är alltid en bra idé. Om du inte redan har ett lämpligt schema och datamängd för händelsen kan båda dessa åtgärder utföras i Adobe Experience Platform webbgränssnitt.
 
 ![](assets/schema1.png)
 
@@ -60,7 +59,7 @@ Med Adobe Experience Platform kan du definiera relationer mellan scheman för at
 
 Låt oss säga att er varumärkesdatamodell har ett schema som fångar upp inköp. Du har också ett schema för produktkatalogen. Du kan hämta produkt-ID:t i inköpsschemat och använda en relation för att söka efter mer fullständig produktinformation från produktkatalogen. På så sätt kan ni skapa en målgrupp för alla kunder som har köpt en bärbar dator, till exempel, utan att behöva göra en explicit lista över alla bärbara ID:n eller hämta alla produktdetaljer i transaktionssystem.
 
-Om du vill definiera en relation måste du ha ett dedikerat fält i källschemat, i det här fallet fältet för produkt-ID i inköpsschemat. Det här fältet måste referera till produkt-ID-fältet i målschemat. Käll- och måltabellerna måste vara aktiverade för profiler och målschemat måste ha det gemensamma fältet definierat som sin primära identitet.
+Om du vill definiera en relation måste du ha ett dedikerat fält i källschemat, i det här fallet produkt-ID-fältet i inköpsschemat. Det här fältet måste referera till produkt-ID-fältet i målschemat. Käll- och måltabellerna måste vara aktiverade för profiler och målschemat måste ha det gemensamma fältet definierat som sin primära identitet.
 
 Här är produktkatalogschemat aktiverat för profilen med produkt-ID definierat som primär identitet.
 
@@ -117,7 +116,7 @@ Lägg till ett villkor i en resa, redigera uttrycket och visa händelsnoden i ut
 
 Mer information om hur du definierar resevillkor finns i detta [page](../building-journeys/condition-activity.md).
 
-### Meddelandeanpassning{#message_personalization}
+### Skräddarsytt meddelande{#message_personalization}
 
 De länkade fälten är tillgängliga när du anpassar ett meddelande. De relaterade fälten visas i det sammanhang som skickas från resan till meddelandet.
 

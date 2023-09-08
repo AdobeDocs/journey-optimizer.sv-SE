@@ -3,12 +3,11 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Kom igång med frågor i Journey Optimizer
 description: Lär dig hur du skapar frågor i Adobe Journey Optimizer
-feature: Schemas
 role: User
 level: Beginner
-keywords: frågor, plattform, data, utforskning
+keywords: frågor, plattform, data, utforska
 exl-id: 6f32f068-429a-4039-bb76-d190069e7402
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: 7e66450900d0625530025c6e17ef037e27da728e
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 6%
