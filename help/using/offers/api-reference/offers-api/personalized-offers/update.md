@@ -6,9 +6,9 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 9d8f2df6-aa04-4e66-8555-d51c2e409063
-source-git-commit: ccc3ad2b186a64b9859a5cc529fe0aefa736fc00
+source-git-commit: 5fa3c0c39de43450b199a41c4a4a032674dd4887
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '149'
 ht-degree: 5%
 
 ---
@@ -77,7 +77,7 @@ curl -X PATCH \
 
 **Svar**
 
-Ett lyckat svar returnerar den uppdaterade informationen om det personaliserade erbjudandet, inklusive dess unika instans-ID och personaliserade erbjudande `@id`.
+Ett lyckat svar returnerar den uppdaterade informationen om det personaliserade erbjudandet, inklusive `id`.
 
 ```json
 {

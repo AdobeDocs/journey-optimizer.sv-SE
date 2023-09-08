@@ -6,9 +6,9 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 7ff69887-620f-4bc0-b8ff-5144ff30696c
-source-git-commit: ccc3ad2b186a64b9859a5cc529fe0aefa736fc00
+source-git-commit: 5fa3c0c39de43450b199a41c4a4a032674dd4887
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '164'
 ht-degree: 7%
 
 ---
@@ -25,8 +25,7 @@ I följande tabell visas giltiga värden som utgör *Content-Type* och *Accepter
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
-| Acceptera | `application/vnd.adobe.platform.xcore.xdm.receipt+json; version=1` |
-| Content-Type | `application/schema-instance+json; version=1;  schema="https://ns.adobe.com/experience/offer-management/fallback-offer;version=0.1"` |
+| Content-Type | `application/json` |
 
 **API-format**
 
@@ -43,21 +42,24 @@ PATCH /{ENDPOINT_PATH}/{CONTAINER_ID}/instances/{INSTANCE_ID}
 **Begäran**
 
 ```shell
-curl -X PATCH \
-  'https://platform.adobe.io/data/core/xcore/e0bd8463-0913-4ca1-bd84-6309134ca1f6/instances/b3966680-13ec-11eb-9c20-8323709cfc65' \
-  -H 'Accept: application/vnd.adobe.platform.xcore.xdm.receipt+json; version=1' \
-  -H 'Content-Type: application/vnd.adobe.platform.xcore.patch.hal+json; version=1; schema="https://ns.adobe.com/experience/offer-management/fallback-offer;version=0.1"' \
-  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
-  -H 'x-api-key: {API_KEY}' \
-  -H 'x-gw-ims-org-id: {IMS_ORG}' \
-  -H 'x-sandbox-name: {SANDBOX_NAME}'\
-  -d '[
-        {
-            "op": "replace",
-            "path": "/_instance/xdm:status",
-            "value": "approved"
-        }
-    ]
+curl -X PATCH 'https://platform.adobe.io/data/core/dps/offers/fallbackOffer1234?offer-type=fallback' \
+-H 'Content-Type: application/json' \
+-H 'Authorization: Bearer  {ACCESS_TOKEN}' \
+-H 'x-api-key: {API_KEY}' \
+-H 'x-gw-ims-org-id: {IMS_ORG}' \
+-H 'x-sandbox-name: {SANDBOX_NAME}' \
+-d '[
+    {
+        "op": "replace",
+        "path": "/name",
+        "value": "Updated fallback offer"
+    },
+    {
+        "op": "replace",
+        "path": "/description",
+        "value": "Updated fallback offer description"
+    }
+]'
 ```
 
 | Parameter | Beskrivning |
@@ -68,18 +70,19 @@ curl -X PATCH \
 
 **Svar**
 
-Ett lyckat svar returnerar den uppdaterade informationen om reserverbjudandet, inklusive dess unika instans-ID och reserverbjudande `@id`.
+Ett lyckat svar returnerar den uppdaterade informationen om reserverbjudandet, inklusive dess unika instans `id`.
 
 ```json
 {
-    "instanceId": "b3966680-13ec-11eb-9c20-8323709cfc65",
-    "@id": "xcore:fallback-offer:124e2e764b1ac1b9",
-    "repo:etag": 2,
-    "repo:createdDate": "2020-10-21T22:28:11.111732Z",
-    "repo:lastModifiedDate": "2020-10-21T22:33:08.676919Z",
-    "repo:createdBy": "{CREATED_BY}",
-    "repo:lastModifiedBy": "{MODIFIED_BY}",
-    "repo:createdByClientId": "{CREATED_CLIENT_ID}",
-    "repo:lastModifiedByClientId": "{MODIFIED_CLIENT_ID}"
+    "id": "{ID}",
+    "datasetId": "{DATASET_ID}",
+    "sandboxId": "{SANDBOX_ID}",
+    "etag": 2,
+    "createdDate": "2023-09-07T12:47:43.012Z",
+    "lastModifiedDate": "2023-09-07T12:47:43.012Z",
+    "createdBy": "{CREATED_BY}",
+    "lastModifiedBy": "{MODIFIED_BY}",
+    "createdByClientId": "{CREATED_CLIENT_ID}",
+    "lastModifiedByClientId": "{MODIFIED_CLIENT_ID}"
 }
 ```
