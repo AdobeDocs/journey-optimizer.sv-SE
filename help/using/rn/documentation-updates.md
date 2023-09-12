@@ -4,10 +4,10 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: ce0cba88c5649b3efd557d6d539ffd7dc2c8f193
+source-git-commit: f6a9234b64247f7d1aef95eb3f1d1bf299be4710
 workflow-type: tm+mt
-source-wordcount: '3301'
-ht-degree: 15%
+source-wordcount: '3595'
+ht-degree: 14%
 
 ---
 
@@ -38,11 +38,15 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Dokumentationssidan för vänteaktivitet har förbättrats med ytterligare information och bästa praxis för användning av global tidsgräns och återinträde. [Läs mer](../building-journeys/wait-activity.md)
 * Sidan om hantering av inträde har förbättrats. [Läs mer](../building-journeys/entry-management.md)
 * Ytterligare information om begränsningsgraden finns i dokumentationen om målgruppsaktivitet. [Läs mer](../building-journeys/read-audience.md)
+* Ytterligare information om återförsök har lagts till. [Läs mer](../start/guardrails.md#general-actions-g)
 * The **Genomför personalisering** -avsnittet har uppdaterats för att beskriva hur du manuellt framtvingar personalisering i kampanjer: du kan använda segmentregelbyggaren för att skapa en målgrupp som innehåller avanmälningsprofiler eller lägga till en delad aktivitet i ett dispositionsarbetsflöde. [Läs mer](../privacy/opt-out.md#opt-out-expression-editor)
 
 ## Juni 2023 {#june-2023}
 
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version från 23 juni finns utförlig i dokumentationen. [Läs mer](release-notes.md)
+* Information har lagts till om förhållandet för ignoreringsfrekvens i fönstret Resursöversikt. [Läs mer](../building-journeys/journey-gs.md#journey-access)
+* En anteckning har lagts till med de steg som ska följas om du ändrar schemat med nya uppräkningsvärden efter att ha skapat en händelse [Läs mer](../event/about-creating.md)
+* En rekommendation har lagts till att använda travelVersionID i stället för travelVersionName när resor efterfrågas. [Läs mer](../reports/sharing-common-fields.md#journeyversionid-field)
 * Ytterligare exempel på ordningen för utvärderingskriterier har lagts till i **Skapa beslut** för att illustrera fall där flera kriterier och flera beslutsomfattningar används. [Läs mer](../offers/offer-activities/create-offer-activities.md#evaluation-criteria-order)
 * Dokumentationen för beslutshantering har klargjorts med en anteckning som anger att åtkomstkontrollen på objektnivå inte är tillgänglig för dynamiska samlingar. [Läs mer](../offers/offer-library/creating-collections.md)
 
@@ -59,6 +63,9 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 ## April 2023 {#apr-2023}
 
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Versionen från 23 april finns detaljerad i dokumentationen. [Läs mer](release-notes.md)
+* En anteckning har lagts till som anger att inbyggda åtgärder inte kan tas bort. [Läs mer](../start/guardrails.md#custom-actions-g)
+* Information har lagts till om serviceEvents och ett frågeexempel för att kontrollera informationen om en serviceEvent. [Läs mer](../reports/query-examples.md#common-queries)
+* En anteckning har lagts till som anger att du inte kan utföra frågor i tidsserier. [Läs mer](../building-journeys/condition-activity.md)
 * Adobe Experience Manager Assets Essentials och Adobe Stock har lagts till på integreringssidan för flera lösningar. [Läs mer](../start/ajo-integrations.md)
 * Varningen för e-postunderdomäner på flera nivåer som inte tillåts har tagits bort eftersom de nu stöds. [Läs mer](../configuration/delegate-subdomain.md)
 * En anteckning har lagts till för att ange att om ändringar görs i ett erbjudandebeslut som används i en resa måste du avpublicera resan och publicera den på nytt. [Läs mer](../building-journeys/publishing-the-journey.md)
@@ -74,17 +81,28 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Ett nytt avsnitt har skapats i beslutshanteringshandboken om hur man samlar in feedback från offera decisioningar i Adobe Experience Platform, inklusive vilka erbjudanden som visas och hur användare interagerar med dem. [Läs mer](../offers/data-collection/data-collection.md)
 * Ett nytt underavsnitt har lagts till i **Skapa beslut** för att förklara skillnaden mellan att utvärdera kriterier i en sekventiell ordning eller samtidigt. [Läs mer](../offers/offer-activities/create-offer-activities.md#evaluation-criteria-order)
 * Ett skyddsräcke har lagts till för läsning av målgruppsresor med stegvis läsning. Du kan inte skapa en ny version, du måste duplicera resan. [Läs mer](../start/guardrails.md#journey-versions-g)
+* Användningsexemplet om hur man begränsar genomströmningen har uppdaterats med information om begränsningsfunktioner. [Läs mer](../building-journeys/limit-throughput.md)
+* En anteckning har lagts till för att ange att skalära arrayer inte stöds i svarsnyttolastdefinitionen. [Läs mer](../datasource/external-data-sources.md)
+* Avsnittet om villkor för profiloblock har uppdaterats. [Läs mer](../building-journeys/condition-activity.md#profile_cap)
 
 ## Februari 2023 {#feb-2023}
 
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version 23 av februari 2003 finns detaljerad i dokumentationen. [Läs mer](release-notes.md)
+* Information om verktygsfältet Arbetsyta har lagts till. [Läs mer](../building-journeys/using-the-journey-designer.md#gs-journey-design)
+* Information har lagts till om att interna Adobe-adresser inte tillåts i URL:er och API:er. [Läs mer](../start/guardrails.md)
 * En anteckning har lagts till i den API-utlösta kampanjdokumentationen för att ange att kontextattribut som skickas till begäran inte får överstiga 50 kB. [Läs mer](../campaigns/api-triggered-campaigns.md#contextual)
 * Information om hur avanmälningsinformation lagras i **Samtycketjänstens datauppsättning** efter att mottagarna har avbeställt prenumerationen via en landningssida. [Läs mer](../landing-pages/lp-use-cases.md#configure-opt-out)
 
 ## Januari 2023 {#jan-2023}
 
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version 23 av jan har beskrivits i dokumentationen. [Läs mer](release-notes.md)
+* Information har lagts till om anpassade slutpunkter för autentisering i capping-dokumentationen. [Läs mer](../configuration/external-systems.md)
+* Ett nytt exempel på anpassad autentisering har lagts till i avsnittet externa datakällor. [Läs mer](../datasource/external-data-sources.md#custom-authentication-mode)
+* En anteckning har lagts till om datainsamlingens bastjänst (DCCS) för händelseutlösta resor. [Läs mer](../start/guardrails.md#events-g)
+* En anteckning om hämtning av identitetsnamnrymd har lagts till i [Läsa målgrupper](../building-journeys/read-audience.md), [Segmentkvalificering](../building-journeys/segment-qualification-events.md) och [Skapa händelse](../event/about-creating.md) -avsnitt.
 * Tillgänglighetsfunktioner i [!DNL Journey Optimizer] grupperas nu på en dedikerad sida. [Läs mer](../start/accessibility.md)
+* Exemplen har uppdaterats i avsnittet Operatorer i dokumentationen för den avancerade uttrycksredigeraren. [Läs mer](../building-journeys/expression/operators.md)
+* En anteckning har lagts till om begränsningen för sökning med objektmatris. [Läs mer](../event/experience-event-schema.md#relationships_limitations)
 * En ny sida om datahantering har lagts till i [!DNL Journey Optimizer]. [Läs mer](../data/gs-data.md)
 * En tabell med alla koder som kan returneras i svaret har lagts till när erbjudanden levereras med hjälp av besluts-API:t. [Läs mer](../offers/api-reference/offer-delivery-api/decisioning-api.md)
 
