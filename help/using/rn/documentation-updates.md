@@ -4,7 +4,7 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: f6a9234b64247f7d1aef95eb3f1d1bf299be4710
+source-git-commit: 605354d25e5d6f74a6a3119ab88ff4ed89aff883
 workflow-type: tm+mt
 source-wordcount: '3595'
 ht-degree: 14%
@@ -99,7 +99,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Information har lagts till om anpassade slutpunkter för autentisering i capping-dokumentationen. [Läs mer](../configuration/external-systems.md)
 * Ett nytt exempel på anpassad autentisering har lagts till i avsnittet externa datakällor. [Läs mer](../datasource/external-data-sources.md#custom-authentication-mode)
 * En anteckning har lagts till om datainsamlingens bastjänst (DCCS) för händelseutlösta resor. [Läs mer](../start/guardrails.md#events-g)
-* En anteckning om hämtning av identitetsnamnrymd har lagts till i [Läsa målgrupper](../building-journeys/read-audience.md), [Segmentkvalificering](../building-journeys/segment-qualification-events.md) och [Skapa händelse](../event/about-creating.md) -avsnitt.
+* En anteckning om hämtning av identitetsnamnrymd har lagts till i [Läsa målgrupper](../building-journeys/read-audience.md), [Målgruppskvalifikation](../building-journeys/audience-qualification-events.md) och [Skapa händelse](../event/about-creating.md) -avsnitt.
 * Tillgänglighetsfunktioner i [!DNL Journey Optimizer] grupperas nu på en dedikerad sida. [Läs mer](../start/accessibility.md)
 * Exemplen har uppdaterats i avsnittet Operatorer i dokumentationen för den avancerade uttrycksredigeraren. [Läs mer](../building-journeys/expression/operators.md)
 * En anteckning har lagts till om begränsningen för sökning med objektmatris. [Läs mer](../event/experience-event-schema.md#relationships_limitations)
