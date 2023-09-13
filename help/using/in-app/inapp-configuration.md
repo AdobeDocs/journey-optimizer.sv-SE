@@ -5,9 +5,9 @@ role: Admin
 level: Intermediate
 keywords: in-app, meddelande, konfiguration, plattform
 exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
-source-git-commit: 94c4e0e53625fdf20f940e8bfd15d67dba1d0120
+source-git-commit: 6f92f9ce0a4785f0359658f00150d283f1326900
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '507'
 ht-degree: 2%
 
 ---
@@ -36,20 +36,47 @@ Innan du skickar meddelanden i appen måste du konfigurera din kanal i appen i [
    >
    > Du behöver **Hantera appkonfiguration** behörighet att få åtkomst till **[!UICONTROL App surfaces]** -menyn. Mer information finns i [den här videon](#video).
 
-   >[!NOTE]
-   >
-   > Du behöver **Hantera appkonfiguration** behörighet att få åtkomst till **[!UICONTROL App surfaces]** -menyn. Mer information finns i [den här videon](#video).
-
    ![](assets/inapp_config_1.png)
 
 1. Lägg till ett namn i **[!UICONTROL App surface]**.
 
+   ![](assets/inapp_config_2b.png)
 
-1. Skriv in **iOS Bundle-ID**. Se [Apple-dokumentation](https://developer.apple.com/documentation/appstoreconnectapi/bundle_ids) för mer information om **Paket-ID**.
+1. Från **[!UICONTROL Apple iOS]** konfigurera ditt mobilprogram för Apple iOS.
 
-   ![](assets/inapp_config_2.png)
++++ Läs mer
 
-1. Skriv in din **Android-paketnamn**. Se [Android-dokumentation](https://support.google.com/admob/answer/9972781?hl=en#:~:text=The%20package%20name%20of%20an,supported%20third%2Dparty%20Android%20stores) för mer information om **Paketnamn**.
+   1. Skriv in **[!UICONTROL iOS Bundle ID]**. Se [Apple-dokumentation](https://developer.apple.com/documentation/appstoreconnectapi/bundle_ids) för mer information om **Paket-ID**.
+
+   1. (valfritt) Välj **[!UICONTROL Sandbox]** där du vill skicka push-meddelanden från. Observera att den nödvändiga åtkomstbehörigheten krävs för att du ska kunna välja en viss sandlåda.
+
+      Mer information om sandlådehantering finns i [den här sidan](../administration/sandboxes.md#assign-sandboxes).
+
+   1. Aktivera **[!UICONTROL Push credentials]** om du vill dra och släppa .p8-filen för autentiseringsnyckel.
+
+      Du kan även aktivera **[!UICONTROL Manually enter push credentials]** om du vill kopiera och klistra in APN:er-auth-tangenten direkt.
+
+   1. Ange **[!UICONTROL Key ID]** och **[!UICONTROL Team ID]**.
+
+      ![](assets/inapp_config_2.png)
+
++++
+
+1. Från **[!UICONTROL Android]** konfigurera ditt mobilprogram för Android-enheter.
+
++++ Läs mer
+
+   1. Skriv in **[!UICONTROL Android package name]**. Se [Android-dokumentation](https://support.google.com/admob/answer/9972781?hl=en#:~:text=The%20package%20name%20of%20an,supported%20third%2Dparty%20Android%20stores) för mer information om **Paketnamn**.
+
+   1. (valfritt) Välj **[!UICONTROL Sandbox]** där du vill skicka push-meddelanden från. Observera att den nödvändiga åtkomstbehörigheten krävs för att du ska kunna välja en viss sandlåda.
+
+      Mer information om sandlådehantering finns i [den här sidan](../administration/sandboxes.md#assign-sandboxes).
+
+   1. Aktivera **[!UICONTROL Push credentials]** om du vill dra och släppa .json-filen för privat nyckel.
+
+      Du kan även aktivera **[!UICONTROL Manually enter push credentials]** kan du kopiera och klistra in den privata FCM-nyckeln direkt.
+
+      ![](assets/inapp_config_7.png)
 
 1. Klicka **[!UICONTROL Save]** när du är klar med konfigurationen av **[!UICONTROL App surface]**.
 
