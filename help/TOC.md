@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 5b69e8d8539e37f42d44383e32b85e651e412937
+source-git-commit: 4aea5c1434caa07aad26445c49a3d5c6274502ec
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 32%
+source-wordcount: '1470'
+ht-degree: 31%
 
 ---
 
@@ -229,12 +229,17 @@ ht-degree: 32%
    + [Skapa direktreklam](using/direct-mail/create-direct-mail.md)
    + [Testa och skicka ett direktmejl](using/direct-mail/test-send-direct-mail.md)
    + [Konfigurera direktreklam](using/direct-mail/direct-mail-configuration.md)
-+ Webbkanal{#web}
++ Webbkanal {#web}
    + [Kom igång med webbkanalen](using/web/get-started-web.md)
    + [Förutsättningar för webbkanaler](using/web/web-prerequisites.md)
    + [Skapa webbupplevelser](using/web/create-web.md)
    + [Skapa webbsidor](using/web/author-web.md)
    + [Konfigurera webbunderdomäner](using/web/web-delegated-subdomains.md)
++ Kodbaserad upplevelse {#code-based-experience}
+   + [Kom igång med kodbaserad kanal](using/code-based/get-started-code-based.md)
+   + [Kodbaserade förutsättningar](using/code-based/code-based-prerequisites.md)
+   + [Kodbaserade implementeringsexempel](using/code-based/code-based-implementation-samples.md)
+   + [Skapa kodbaserade upplevelser](using/code-based/create-code-based.md)
 + Landningssidor {#landing-pages}
    + [Kom igång med landningssidor](using/landing-pages/get-started-lp.md)
    + [Skapa en landningssida](using/landing-pages/create-lp.md)
@@ -426,6 +431,17 @@ ht-degree: 32%
          + [Besluts-API](using/offers/api-reference/offer-delivery-api/decisioning-api.md)
          + [API för Edge Decisioning](using/offers/api-reference/offer-delivery-api/edge-decisioning-api.md)
          + [API för gruppbeslut](using/offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
++ Experience Decision {#experience-decisioning}
+   + [Kom igång med Experience Decision](using/experience-decisioning/gs-experience-decisioning.md)
+   + Hantera dina beslutsobjekt {#decision-items}
+      + [Konfigurera objektkatalogen](using/experience-decisioning/catalogs.md)
+      + [Skapa beslutsobjekt](using/experience-decisioning/items.md)
+      + [Hantera artikelsamlingar](using/experience-decisioning/collections.md)
+   + Konfigurera val av objekt {#selection}
+      + [Skapa beslutsregler](using/experience-decisioning/rules.md)
+      + [Skapa rangordningsmetoder](using/experience-decisioning/ranking.md)
+   + [Skapa urvalsstrategier](using/experience-decisioning/selection-strategies.md)
+   + [Skapa beslutsprofiler](using/experience-decisioning/create-decision.md)
 + Datahantering {#data-management}
    + [Kom igång med datahantering](using/data/gs-data.md)
    + [Arbeta med scheman](using/data/get-started-schemas.md)
