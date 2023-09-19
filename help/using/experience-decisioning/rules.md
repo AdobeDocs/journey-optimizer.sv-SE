@@ -7,7 +7,7 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 4aea5c1434caa07aad26445c49a3d5c6274502ec
+source-git-commit: 9b7280c33ce8238b54f7fd1865545f865ffb72ed
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 3%
@@ -39,7 +39,7 @@ Låt oss titta på ett scenario där du har beslutsposter med Yoga-relaterade pr
 
 Listan över beslutsregler finns i **[!UICONTROL Configuration]** / **[!UICONTROL Decisions rules]** -menyn.
 
-![](assets/decision-rules-list.png)
+<!--![](assets/decision-rules-list.png)-->
 
 >[!IMPORTANT]
 >
