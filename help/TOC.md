@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 4aea5c1434caa07aad26445c49a3d5c6274502ec
+source-git-commit: decf400bbdc0a063bd1714c6ce01595ef7fb222a
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1466'
 ht-degree: 31%
 
 ---
@@ -260,30 +260,28 @@ ht-degree: 31%
       + [Kom igång med Content Assist](using/content-management/gs-generative.md)
       + [Skapa innehåll](using/content-management/generative-content.md)
       + [Bildgenerering](using/content-management/generative-image.md)
-+ Personalisering och dynamiskt innehåll {#personalized-dynamic-content}
    + Personalisering {#personalization}
       + [Kom igång med personalisering](using/personalization/personalize.md)
       + [Personaliseringskontexter](using/personalization/personalization-contexts.md)
-      + Bygga uttryck {#build-expressions}
-         + [Anpassningssyntax](using/personalization/personalization-syntax.md)
-         + Arbeta med uttrycksredigeraren {#expression-editor}
-            + [Om uttrycksredigeraren](using/personalization/personalization-build-expressions.md)
-            + [Lägg till attribut i favoriter](using/personalization/personalization-favorites.md)
-            + [Arbeta med sparade uttryck](using/personalization/personalization-library.md)
-            + [Validering av personalisering](using/personalization/personalization-validation.md)
-         + Hjälpfunktioner{#functions}
-            + [Kom igång med hjälpfunktioner](using/personalization/functions/functions.md)
-            + [Sammanställningsfunktioner](using/personalization/functions/aggregation.md)
-            + [Aritmetiska funktioner](using/personalization/functions/arithmetic-functions.md)
-            + [Arrayer och listfunktioner](using/personalization/functions/arrays-list.md)
-            + [Datumfunktioner](using/personalization/functions/dates.md)
-            + [Boolean- och jämförelsefunktioner](using/personalization/functions/operators.md)
-            + [Hjälpmedel](using/personalization/functions/helpers.md)
-            + [Kartfunktioner](using/personalization/functions/maps.md)
-            + [Matematiska funktioner](using/personalization/functions/math.md)
-            + [Objektfunktioner](using/personalization/functions/objects.md)
-            + [Strängfunktioner](using/personalization/functions/string.md)
-      + Användningsfall{#personalization-use-cases}
+      + [Anpassningssyntax](using/personalization/personalization-syntax.md)
+      + Arbeta med uttrycksredigeraren {#expression-editor}
+         + [Om uttrycksredigeraren](using/personalization/personalization-build-expressions.md)
+         + [Lägg till attribut i favoriter](using/personalization/personalization-favorites.md)
+         + [Arbeta med sparade uttryck](using/personalization/personalization-library.md)
+         + [Validering av personalisering](using/personalization/personalization-validation.md)
+      + Hjälpfunktioner{#functions}
+         + [Kom igång med hjälpfunktioner](using/personalization/functions/functions.md)
+         + [Sammanställningsfunktioner](using/personalization/functions/aggregation.md)
+         + [Aritmetiska funktioner](using/personalization/functions/arithmetic-functions.md)
+         + [Arrayer och listfunktioner](using/personalization/functions/arrays-list.md)
+         + [Datumfunktioner](using/personalization/functions/dates.md)
+         + [Boolean- och jämförelsefunktioner](using/personalization/functions/operators.md)
+         + [Hjälpmedel](using/personalization/functions/helpers.md)
+         + [Kartfunktioner](using/personalization/functions/maps.md)
+         + [Matematiska funktioner](using/personalization/functions/math.md)
+         + [Objektfunktioner](using/personalization/functions/objects.md)
+         + [Strängfunktioner](using/personalization/functions/string.md)
+      + Användningsexempel för personalisering{#personalization-use-cases}
          + [Meddelande om orderstatus](using/personalization/personalization-use-case.md)
          + [E-post om att kunden överger en kundvagn](using/personalization/personalization-use-case-helper-functions.md)
    + Dynamiskt innehåll {#dynamic}
