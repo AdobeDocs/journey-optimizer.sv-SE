@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: decf400bbdc0a063bd1714c6ce01595ef7fb222a
+source-git-commit: 1ac68f1b3a9657ce71a653011ab92fb817ca80b0
 workflow-type: tm+mt
-source-wordcount: '1466'
+source-wordcount: '1471'
 ht-degree: 31%
 
 ---
@@ -458,6 +458,7 @@ ht-degree: 31%
       + [Lägg till en Google TXT-post](using/configuration/google-txt.md)
       + [Få åtkomst till och redigera PTR-poster](using/configuration/ptr-records.md)
       + [Skapa IP-pooler](using/configuration/ip-pools.md)
+   + [Implementera en IP-värmerappsplan](using/configuration/ip-warmup.md)
    + Övervaka e-postadresser {#monitor-reputation}
       + [Undertryckningslista](using/configuration/manage-suppression-list.md)
       + [Återförsök](using/configuration/retries.md)
