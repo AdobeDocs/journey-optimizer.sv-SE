@@ -8,9 +8,9 @@ level: Experienced
 hide: true
 hidefromtoc: true
 badge: label="Beta"
-source-git-commit: 69a2ef17b6f5ccd40c08858f7b434029964d544d
+source-git-commit: 3a2c9e34790aaf6d96d89244e66deb200d844564
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '947'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampa
 >id="ajo_code_based_experience"
 >title="Använda kodredigeraren"
 >abstract="Infoga och redigera koden som du vill leverera som en del av den här kodbaserade upplevelseåtgärden."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/personalized-dynamic-content/personalization/build-expressions/expression-editor/personalization-build-expressions.html" text="Kom igång med uttrycksredigeraren"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/expression-editor/personalization-build-expressions.html" text="Kom igång med uttrycksredigeraren"
 
 1. Välj **[!UICONTROL Edit code]**.
 
