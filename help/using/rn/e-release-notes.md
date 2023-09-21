@@ -5,10 +5,10 @@ title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 hide: true
 hidefromtoc: true
-source-git-commit: 8aeb0c252a2c24442098fa1e88a75eb0e0a94d4e
+source-git-commit: 2e9a7bd5244feddddefb531dab42a25cf5935bcf
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 2%
+source-wordcount: '594'
+ht-degree: 3%
 
 ---
 
@@ -29,13 +29,28 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <table>
 <thead>
 <tr>
+<th><strong>Lagring av autentiseringsuppgifter för mobilprogram per sandbox</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med den här nya funktionen kan du enkelt hantera och associera push-autentiseringsuppgifter med en dedikerad sandlåda i appytor.</p>
+<p>Mer information finns i den <a href="../in-app/inapp-configuration.md">detaljerade dokumentationen</a>.</p>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Konsoliderade kanalrapporter</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Med funktionen Kanalrapport kan analytiker och marknadsförare få en heltäckande översikt över trafik- och engagemangsmått på kanalnivå. För att få åtkomst till menyn Rapport måste du ha behörigheten **Visa kanalrapporter**.</p>
+<p>Med funktionen Kanalrapport kan analytiker och marknadsförare få en heltäckande översikt över trafik- och engagemangsmått på kanalnivå. Om du vill få åtkomst till menyn Rapport måste du ha behörigheten Visa kanalrapporter.</p>
 <img src="assets/channel-reports.png"/>
 <!--p>For more information, refer to the <a href="../in-app/get-started-in-app.md">detailed documentation</a>.</p-->
 </tr>
@@ -52,7 +67,7 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <tbody>
 <tr>
 <td>
-<p>Export av Journey Optimizer datamängder till molnlagringsmål är nu allmänt tillgänglig. Med den här funktionen kan du upprätta en direktanslutning till molnlagringsplatser för att kunna exportera innehållet i dina datauppsättningar.</p>
+<p>Export av Journey Optimizer datamängder till molnlagringsmål är nu allmänt tillgängligt. Med den här funktionen kan du upprätta en direktanslutning till molnlagringsplatser för att kunna exportera innehållet i dina datauppsättningar.</p>
 <img src="../data/assets/dataset-export-setup.png">
 <!--p>For more information, refer to the <a href="../audience/get-started-audience-orchestration.md">detailed documentation</a>.</p-->
 </td>
@@ -78,7 +93,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Varningar**
 
-En ny typ av systemvarning har införts. Du kan nu få ett meddelande när ett lässegment inte kan läsas.
+* Två nya typer av systemvarningar har införts. Du kan nu få ett meddelande när en anpassad åtgärd eller ett lässegment misslyckas.
 
 **Webbkanal**
 
@@ -88,9 +103,9 @@ En ny typ av systemvarning har införts. Du kan nu få ett meddelande när ett l
 
 **Resor**
 
-* En ny typ av systemvarning har införts. Du kan nu få meddelanden när en anpassad åtgärd misslyckas.
+* Funktionerna för anpassade åtgärder är nu GA. På så sätt kan ni utnyttja API-anropssvar i anpassade åtgärder och samordna er resa baserat på dessa svar. Dessutom har ett nytt skyddsräcke lagts till för att begränsa alla tullåtgärder till 5000 samtal/s per slutpunkt.
 * När du duplicerar en resa kan du nu definiera namnet på kopian av resan.
-
+* Den maximala varaktighet som du kan definiera i aktiviteten Vänta är nu 29 dagar i stället för 30.
 
 **E-postkanal**
 
