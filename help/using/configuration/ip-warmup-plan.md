@@ -10,7 +10,7 @@ level: Experienced
 keywords: IP, pooler, grupp, underdomäner, leveransbarhet
 hide: true
 hidefromtoc: true
-source-git-commit: 53be033ff0474cbafff71ed36194c18627234fd4
+source-git-commit: 11bdb3ddc666d2025133f70ab522c4ce2d676aa6
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 1%
@@ -67,14 +67,11 @@ En gång [skapade en eller flera kampanjer](ip-warmup-campaign.md) med en dedike
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/channel-surfaces.html" text="Konfigurera kanalytor"
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/channel-surfaces.html" text="Skapa IP-värmningskampanjer"
 
->[!CAUTION]
->
->Om du vill skapa, redigera och ta bort IP-beredskapsplanerna måste du ha **[!UICONTROL Deliverability Consultant]** behörighet.
-<!--Learn more on managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).-->
-
 När en eller flera livekampanjer med **[!UICONTROL IP warmup plan activation]** aktiverat alternativ aktiveras, du kan koppla dem till en IP-värmeringsplan.
 
 >[!CAUTION]
+>
+>Om du vill skapa, redigera och ta bort IP-beredskapsplanerna måste du ha **[!UICONTROL Deliverability Consultant]** behörighet. <!--Learn more on managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).-->
 >
 >Arbeta med din leveranskonsult för att säkerställa att din mall för IP-värmerapport är korrekt konfigurerad. <!--TBC-->
 

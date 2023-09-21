@@ -10,9 +10,9 @@ level: Experienced
 keywords: IP, pooler, grupp, underdomäner, leveransbarhet
 hide: true
 hidefromtoc: true
-source-git-commit: dc1eeb3c199e7db2fc152b682404a547e2ae56c7
+source-git-commit: 11bdb3ddc666d2025133f70ab522c4ce2d676aa6
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -58,25 +58,29 @@ På fasnivå ser systemet till att tidigare riktade + nya profiler plockas upp O
 
    * Du kan inte välja en kampanj som redan används i en annan IP-värmare.
 
-1. För varje fas gäller följande:
+1. I **[!UICONTROL Profile exclusion]** ser du att profilerna från tidigare körningar av den fasen alltid är exkluderade. Om en profil i Kör 1 till exempel täcks av de första 4 800 målpersonerna, ser systemet automatiskt till att samma profil inte får e-postmeddelandet i Kör 2.
 
-   * **[!UICONTROL Profile exclusion]** - Profilerna från tidigare körningar av den fasen exkluderas alltid. Om till exempel serie 1 Leo blev täckt av de första 6300 personerna som är riktade, ser systemet automatiskt till att Leo inte får posten i serie 2.
+1. Från **[!UICONTROL Campaign audiences excluded]** väljer du målgrupper från andra <!--executed/live?-->kampanjer som du vill utesluta från den aktuella fasen.
 
-   * **[!UICONTROL Campaign audiences excluded]** - Välj målgrupper från andra <!--executed/live?-->kampanjer som du vill utesluta från den aktuella fasen.
+   ![](assets/ip-warmup-plan-exclude-campaigns.png)
 
-     Du kanske kör en fas och måste dela upp den av någon anledning. I så fall, i fas 2, vill ni inkludera kampanjen som används i fas 1 i detta avsnitt så att tidigare kontaktade personer från fas 1 inte inkluderas i fas 2. Detta kan göras inte bara med kampanjer som används i samma IP-värmeringsplan, utan även från en annan IP-värmeringsplan.
+   När du till exempel utförde fas 1 var du tvungen att [dela den](#split-phase) av någon anledning. Därför kan ni utesluta kampanjen som används i fas 1 så att tidigare kontaktade profiler från fas 1 inte inkluderas i fas 2. Du kan även utesluta kampanjer från andra IP-värmeringsplaner.
 
-   * **[!UICONTROL Domains groups excluded]** - Välj de domäner som du vill utesluta från den fasen, till exempel Gmail. <!--??-->
+1. Från **[!UICONTROL Domains groups excluded]** markerar du de domäner du vill utesluta från den fasen.
 
-     Efter att ha kört IP-warmup i några dagar inser du att ISP:s rykte med en domän säger att hotmail inte är bra och du vill lösa det med ISP men inte vill stoppa IP-warmup-planen. I så fall kan du placera domängruppens hotmail i kategorin Undantagna.
+   ![](assets/ip-warmup-plan-exclude-domains.png)
 
-     >[!NOTE]
-     >
-     >Domänundantag kräver en icke-körd fas så du kan behöva dela en pågående fas för att lägga till undantag. Om domängruppen inte är en OOTB-domängrupp kan du behöva skapa domängruppen i Excel och överföra och sedan exkludera den.
+   När du har kört IP-värmning i några dagar inser du att ISP-anseende med en domän (t.ex. Adobe) inte är bra och du vill lösa det utan att stoppa IP-värmningsplanen. I så fall kan du utesluta domängruppen Adobe.
+
+   >[!NOTE]
+   >
+   >Domänundantag kräver en icke-körd fas, så du kan behöva dela en pågående fas för att lägga till undantag. Om domängruppen inte är en OOTB-domängrupp måste du lägga till den här domängruppen i Excel-filen, överföra den och sedan exkludera domänen.
 
    ![](assets/ip-warmup-plan-phase-1.png)
 
-1. Du kan lägga till en fas om det behövs - den läggs till efter den senaste aktuella fasen. Använd **[!UICONTROL Delete phase]** för att ta bort oönskade faser.
+1. Du kan lägga till en fas om det behövs. Den läggs till efter den sista aktuella fasen.
+
+1. Använd **[!UICONTROL Delete phase]** för att ta bort oönskade faser.
 
    ![](assets/ip-warmup-plan-add-delete-phases.png)
 
@@ -92,7 +96,7 @@ På fasnivå ser systemet till att tidigare riktade + nya profiler plockas upp O
 
    ![](assets/ip-warmup-plan-send-time.png)
 
-1. Välj en sluttid, vilket i princip innebär det fönster inom vilket vi kan genomföra en kampanj om det blir några förseningar i målgruppsarbetet. Om inget anges försöker vi vid starttiden och misslyckas. Om sluttid anges kör vi körningen mellan det fönstret.
+1. Välj en sluttid, som definierar det fönster inom vilket IP-värmerskampanjen kan köras om det uppstår några förseningar i jobbkörningen för målgruppssegmentering. Om ingen sluttid anges görs ett försök att utföra körningen vid starttiden och misslyckas om segmenteringen inte slutfördes.
 
 1. Aktivera varje körning. Se till att du schemalägger en tid som är tillräckligt lång för att segmenteringsjobbet ska kunna köras. <!--explain how you can evaluate a proper time-->
 
@@ -100,11 +104,13 @@ På fasnivå ser systemet till att tidigare riktade + nya profiler plockas upp O
    >
    >Varje körning måste aktiveras minst 12 timmar före den faktiska sändningstiden. I annat fall kanske inte segmenteringen är klar. <!--How do you know when segmentation is complete? Is there a way to prevent user from scheduling less than 12 hours before the segmentation job?-->
 
-<!--Sart to execute on every day basis by simply clicking the play button > for each run? do you have to come back every day to activate each run? or can you schedule them one after the other?)-->
+   <!--Sart to execute on every day basis by simply clicking the play button > for each run? do you have to come back every day to activate each run? or can you schedule them one after the other?)-->
 
 1. Om kampanjkörningen inte har startat kan du stoppa en körning.<!--why?-->
 
-   När kampanjkörningen har startat **[!UICONTROL Stop]** knappen blir otillgänglig. <!--TBC in UI-->
+   >[!NOTE]
+   >
+   >När kampanjkörningen har startat **[!UICONTROL Stop]** knappen blir otillgänglig. <!--TBC in UI-->
 
    ![](assets/ip-warmup-plan-stop-run.png)
 
@@ -112,9 +118,13 @@ På fasnivå ser systemet till att tidigare riktade + nya profiler plockas upp O
 
    ![](assets/ip-warmup-plan-run-more-actions.png)
 
-1. Om du vill använda en annan kampanj från en viss körning väljer du **[!UICONTROL Split to a new phase option]** från ikonen med tre punkter. En ny fas skapas för de återstående körningarna i den aktuella fasen. Följ stegen [ovan](#define-phases) för att definiera den nya fasen.
+## Dela en fas {#split-phase}
 
-   Om du t.ex. väljer det här alternativet för körning nr 4 flyttas körning nr 4 till nr 8 till en ny fas.
+Om du vill använda en annan kampanj från en viss körning väljer du **[!UICONTROL Split to a new phase option]** från ikonen med tre punkter.
+
+En ny fas skapas för de återstående körningarna i den aktuella fasen. Följ stegen [ovan](#define-phases) för att definiera den nya fasen.
+
+Om du t.ex. väljer det här alternativet för Kör nr 4 flyttas körningsversionerna nr 4 till nr 8 till en ny fas.
 
 <!--
 You don't have to decide the campaign upfront. You can do a split later. It's a work in progress plan: you activate one run at a time with a campaign and you always have the flexibility to modify it while working on it.
