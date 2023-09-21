@@ -5,10 +5,10 @@ title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 hide: true
 hidefromtoc: true
-source-git-commit: 0ed72b947c176b54220b5e00cdae6ccf91aac9a8
+source-git-commit: b0a842232259ef2b1b930927a8c61c32bfc45123
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 6%
+source-wordcount: '525'
+ht-degree: 4%
 
 ---
 
@@ -18,26 +18,26 @@ ht-degree: 6%
 
 Noteringarna nedan kan ändras utan föregående meddelande fram till releasedatum. Länkar, skärmar och uppdaterad dokumentation publiceras i [versionsinformation](release-notes.md), på releasedatum.
 
-## Versionsinformation augusti 2023 {#aug-rn-2023}
+## Versionsinformation september 2023 {#sept-rn-2023}
 
-**Releasedatum**: 23-24 augusti 2023
+**Releasedatum**: 26-27 sept 2023
 
-### Nya funktioner{#aug-2023-features}
+### Nya funktioner{#sept-2023-features}
 
 Den här versionen innehåller de nya funktionerna som listas nedan.
 
 <table>
 <thead>
 <tr>
-<th><strong>Skicka meddelanden i appen på dina resor</strong><br/></th>
+<th><strong>Konsoliderade kanalrapporter</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Du kan nu skicka personaliserade meddelanden i appen till appanvändarna under en resa. Använd Journey Optimizer för att utforma meddelanden och anpassa meddelandelayout, visning, text och knappar för att skapa en smidig upplevelse.</p>
-<img src="assets/in_app_journey_1.png"/>
-<p>Mer information finns i den <a href="../in-app/get-started-in-app.md">detaljerade dokumentationen</a>.</p>
+<p>Med funktionen Kanalrapport kan analytiker och marknadsförare få en heltäckande översikt över trafik- och engagemangsmått på kanalnivå. För att få åtkomst till menyn Rapport måste du ha behörigheten **Visa kanalrapporter**.</p>
+<img src="assets/channel-reports.png"/>
+<p>Mer information finns i den <a href="../in-app/get-started-in-app.md">detaljerade dokumentationen</a>.</p-->
 </tr>
 </tbody>
 </table>
@@ -46,14 +46,14 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Validera dina e-postmeddelanden med dirigerade listor</strong><br/></th>
+<th><strong>Generering av datauppsättningsexport (GA)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Nu kan du skapa och hantera dirigerade listor i Journey Optimizer. En startvärdeslista består av interna adresser som kan läggas till för den faktiska målgruppen och få exakt samma meddelande som målprofilerna vid körningen. Använd den här funktionen för att övervaka skickade meddelanden och se till att alla visningsformat, URL:er, bilder och länkar är korrekta.</p>
-<img src="../configuration/assets/seed-list-details.png">
+<p>Export av Journey Optimizer datamängder till molnlagringsmål är nu allmänt tillgänglig. Med den här funktionen kan du upprätta en direktanslutning till molnlagringsplatser för att kunna exportera innehållet i dina datauppsättningar.</p>
+<img src="../data/assets/dataset-export-setup.png">
 <!--p>For more information, refer to the <a href="../audience/get-started-audience-orchestration.md">detailed documentation</a>.</p-->
 </td>
 </tr>
@@ -61,46 +61,41 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 </table>
 
 
-<!--table>
-<thead>
-<tr>
-<th><strong>Generate text and images with the Content assistant</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Once you have created and personalized your message, take your content to the next level with the Content assistant. You can now use the Content assistant to optimize your message's impact by experimenting with different main titles, and images. Each variant is managed as a unique Treatment, to measure and compare which title effectively generates more clicks.</p>
-<p>This capability is currently available as a private beta.</p>
-<img src="assets/gen-ai-image-2.png"/>
-<p>For more information, refer to the <a href="../start/search-filter-categorize.md#tags">detailed documentation</a>.</p>
-</td>
-</tr>
-</tbody>
-</table-->
-
-
-
-### Förbättringar {#aug-2023-improvements}
+### Förbättringar {#sept-2023-improvements}
 
 Den här versionen innehåller de förbättringar som anges nedan.
 
-**API:er**
+**Publiker**
 
-Det finns nu ett nytt API för att skapa och hantera innehållsfragment. [Läs mer](https://developer.adobe.com/journey-optimizer-apis/references/content-templates/#tag/Content-fragment-API){target="_blank"}.
+* Nu kan ni rikta in er på målgrupper som överförts från en CSV-fil till resor och kampanjer.
+* Målgruppsväljaren har förbättrats under resor eller kampanjer, med nya kolumner som visar målgruppernas ursprung och uppdateringsfrekvens.
+* Nu kan ni inrikta er på målgrupper som är resultatet av arbetsflöden för disposition på resor.
 
-**E-postkanal**
+**Personalisering**
 
-Det finns ett nytt alternativ i inställningarna för e-postyta för att inkludera e-postadresser som inte har angetts på grund av skräppost i målgrupperna för transaktionsmeddelanden. Även om de har markerat marknadsföringsmeddelanden som skräppost kan dessa profiler sedan ta emot transaktionsmeddelanden, som lösenordsåterställning eller kontoutdrag. Det här alternativet är inaktiverat som standard.
+* Förutom visuella fragment går det nu att skapa, spara och återanvända uttrycksfragment från Journey Optimizer-gränssnittet via uttrycksredigeraren. Uttrycksfragment ersätter uttryck som sparats tidigare.
+* Nu kan du använda Adobe Experience Platform beräknade attribut för personalisering i Journey Optimizer. Beräknade attribut är aggregerade värden som beräknas baserat på profilaktiverade Experience Event-datamängder som importerats till Adobe Experience Platform.
+
+**Varningar**
+
+En ny typ av systemvarning har införts. Du kan nu få ett meddelande när ett lässegment inte kan läsas.
+
+**Webbkanal**
+
+* Nu kan du välja vilka specifika vyer du vill använda webbsidesändringarna på. En vy kan definieras som en hel webbplats eller som en grupp visuella element på en webbplats, till exempel hemsidan, hela produktwebbplatsen eller leveransinställningsramen på alla utcheckningssidor.
+* När du redigerar en sida med webbdesignern kan du nu lägga till nya ändringar i innehållet direkt från panelen Ändringar, utan att du behöver markera en komponent och redigera den i designergränssnittet.
+* När du konfigurerar webbunderdomäner kan du nu lägga till en egen underdomän, förutom att använda en underdomän som redan har delegerats till Adobe.
 
 **Resor**
 
-* Nu kan du utnyttja API-anropssvar i anpassade åtgärder och samordna din resa baserat på dessa svar. Den här funktionen är för närvarande tillgänglig som en privat beta.
-<!--* A new type of system alert has been introduced. You can now get notified when a custom action fails.
-* When duplicating a journey, you can now define the name of the journey copy.-->
+* En ny typ av systemvarning har införts. Du kan nu få meddelanden när en anpassad åtgärd misslyckas.
+* När du duplicerar en resa kan du nu definiera namnet på kopian av resan.
 
 
-**Direktutskick**
+**E-postkanal**
 
-* Azure kan nu väljas som servertyp i filroutningskonfigurationen.
-* Et-tecknet är nu tillgängligt som kolumnavgränsarfält i inställningarna för direktreklamyta.
+Ett nytt alternativ i konfigurationen av e-postytan gör att du kan välja att skicka transaktionsmeddelanden till profiler även om deras e-postadresser finns i listan över Adobe Journey Optimizer-undertryckningar.
+
+**Beslutshantering**
+
+Målgruppsväljaren har förbättrats under resor eller kampanjer, med nya kolumner som visar målgruppernas ursprung och uppdateringsfrekvens.
