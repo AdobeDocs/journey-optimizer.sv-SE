@@ -5,10 +5,10 @@ title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 hide: true
 hidefromtoc: true
-source-git-commit: b0a842232259ef2b1b930927a8c61c32bfc45123
+source-git-commit: 2fb87752a3f9190a5e9b885f102423827545f9fe
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 4%
+source-wordcount: '517'
+ht-degree: 2%
 
 ---
 
@@ -37,7 +37,7 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <td>
 <p>Med funktionen Kanalrapport kan analytiker och marknadsförare få en heltäckande översikt över trafik- och engagemangsmått på kanalnivå. För att få åtkomst till menyn Rapport måste du ha behörigheten **Visa kanalrapporter**.</p>
 <img src="assets/channel-reports.png"/>
-<p>Mer information finns i den <a href="../in-app/get-started-in-app.md">detaljerade dokumentationen</a>.</p-->
+<!--p>For more information, refer to the <a href="../in-app/get-started-in-app.md">detailed documentation</a>.</p-->
 </tr>
 </tbody>
 </table>
