@@ -10,9 +10,9 @@ level: Experienced
 keywords: IP, pooler, grupp, underdomäner, leveransbarhet
 hide: true
 hidefromtoc: true
-source-git-commit: dc1eeb3c199e7db2fc152b682404a547e2ae56c7
+source-git-commit: 53be033ff0474cbafff71ed36194c18627234fd4
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '544'
 ht-degree: 1%
 
 ---
@@ -29,6 +29,8 @@ Vad du hittar i den här handboken:
 * [Kör IP-värmningsplanen](ip-warmup-running.md)
 
 >[!ENDSHADEBOX]
+
+En gång [skapade en eller flera kampanjer](ip-warmup-campaign.md) med en dedikerad yta och alternativet IP-värmare aktiverat kan du börja skapa din IP-värmeringsplan.
 
 ## Få åtkomst till och hantera IP-värmerelayouter {#manage-ip-warmup-plans}
 

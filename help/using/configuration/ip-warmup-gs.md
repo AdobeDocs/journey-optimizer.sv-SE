@@ -10,9 +10,9 @@ level: Experienced
 keywords: IP, pooler, grupp, underdomäner, leveransbarhet
 hide: true
 hidefromtoc: true
-source-git-commit: dc1eeb3c199e7db2fc152b682404a547e2ae56c7
+source-git-commit: 53be033ff0474cbafff71ed36194c18627234fd4
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '282'
 ht-degree: 2%
 
 ---
@@ -73,4 +73,4 @@ De viktigaste stegen för att implementera en plan för IP-uppvärmning är föl
 
 1. Skapa en IP-värmeringsplan och överför din plan. [Läs mer](ip-warmup-plan.md) <!--this is usually done by a deliverability consultant??-->
 
-1. Justera varje fas i planen och aktivera körningarna. [Läs mer](ip-warmup-running.md)
+1. Välj en kampanj för varje fas i planen och aktivera motsvarande körningar. [Läs mer](ip-warmup-running.md)
