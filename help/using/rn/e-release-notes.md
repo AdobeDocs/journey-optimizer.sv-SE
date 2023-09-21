@@ -5,9 +5,9 @@ title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 hide: true
 hidefromtoc: true
-source-git-commit: 2e9a7bd5244feddddefb531dab42a25cf5935bcf
+source-git-commit: e5e4825996359cbe6c5bf0a06fc32a2ef116d906
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '540'
 ht-degree: 3%
 
 ---
@@ -26,20 +26,6 @@ Noteringarna nedan kan ändras utan föregående meddelande fram till releasedat
 
 Den här versionen innehåller de nya funktionerna som listas nedan.
 
-<table>
-<thead>
-<tr>
-<th><strong>Lagring av autentiseringsuppgifter för mobilprogram per sandbox</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Med den här nya funktionen kan du enkelt hantera och associera push-autentiseringsuppgifter med en dedikerad sandlåda i appytor.</p>
-<p>Mer information finns i den <a href="../in-app/inapp-configuration.md">detaljerade dokumentationen</a>.</p>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
@@ -75,6 +61,20 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Lagring av autentiseringsuppgifter för mobilprogram per sandbox</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med den här nya funktionen kan du enkelt hantera och associera push-autentiseringsuppgifter med en dedikerad sandlåda i appytor.</p>
+<p>Mer information finns i den <a href="../in-app/inapp-configuration.md">detaljerade dokumentationen</a>.</p>
+</tr>
+</tbody>
+</table>
 
 ### Förbättringar {#sept-2023-improvements}
 
@@ -83,7 +83,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 **Publiker**
 
 * Nu kan ni rikta in er på målgrupper som överförts från en CSV-fil till resor och kampanjer.
-* Målgruppsväljaren har förbättrats under resor eller kampanjer, med nya kolumner som visar målgruppernas ursprung och uppdateringsfrekvens.
+  <!--* Enhancements have been made to the audience picker in journeys or campaigns, with the addition of new columns displaying the origin and update frequency of audiences.-->
 * Nu kan ni inrikta er på målgrupper som är resultatet av arbetsflöden för disposition på resor.
 
 **Personalisering**
@@ -111,6 +111,6 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 Ett nytt alternativ i konfigurationen av e-postytan gör att du kan välja att skicka transaktionsmeddelanden till profiler även om deras e-postadresser finns i listan över Adobe Journey Optimizer-undertryckningar.
 
-**Beslutshantering**
+<!--**Decision management**
 
-Målgruppsväljaren har förbättrats under resor eller kampanjer, med nya kolumner som visar målgruppernas ursprung och uppdateringsfrekvens.
+Enhancements have been made to the audience picker in journeys or campaigns, with the addition of new columns displaying the origin and update frequency of audiences.    -->
