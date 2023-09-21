@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 1ac68f1b3a9657ce71a653011ab92fb817ca80b0
+source-git-commit: dc1eeb3c199e7db2fc152b682404a547e2ae56c7
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1492'
 ht-degree: 31%
 
 ---
@@ -458,7 +458,11 @@ ht-degree: 31%
       + [Lägg till en Google TXT-post](using/configuration/google-txt.md)
       + [Få åtkomst till och redigera PTR-poster](using/configuration/ptr-records.md)
       + [Skapa IP-pooler](using/configuration/ip-pools.md)
-   + [Implementera en IP-värmerappsplan](using/configuration/ip-warmup.md)
+   + Implementera en IP-värmerappsplan {#implement-ip-warmup-plan}
+      + [Kom igång med planer för IP-värmare](using/configuration/ip-warmup-gs.md)
+      + [Skapa IP-värmningskampanjer](using/configuration/ip-warmup-campaign.md)
+      + [Skapa en IP-värdplan](using/configuration/ip-warmup-plan.md)
+      + [Kör IP-värmningsplanen](using/configuration/ip-warmup-running.md)
    + Övervaka e-postadresser {#monitor-reputation}
       + [Undertryckningslista](using/configuration/manage-suppression-list.md)
       + [Återförsök](using/configuration/retries.md)
