@@ -8,7 +8,7 @@ level: Experienced
 hide: true
 hidefromtoc: true
 badge: label="Beta"
-source-git-commit: 69a2ef17b6f5ccd40c08858f7b434029964d544d
+source-git-commit: 60c74bcc5e33afa354a2380d3e6f490a4c2c3e6d
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 1%
@@ -111,7 +111,7 @@ Om du vill köra webbanvändningsfall kan du använda antingen webbkanalen eller
 * Det är fokuserat på marknadsföring och personalisering.
 
 **Kodbaserad upplevelse**
-* Redigera innehåll med [kodredigerare](create-code-based.md#edit-code).
+* Redigera innehåll med [Uttrycksredigerare](create-code-based.md#edit-code).
 * Den kodbaserade upplevelsen kräver tidigare utvecklingsarbete med implementeringen för att säkerställa att dina ytor kan tolka och leverera det innehåll som publiceras i utkanten av [!DNL Journey Optimizer] för dessa ytor. [Läs mer](#surface-definition)
 * Det kräver mer planering och kan bara ändra det som utvecklarna anger. Därför är det viktigt att identifiera komponenterna (hembanderoll, hjältebild, menyrad osv.) på de ytor som behöver ändras för personalisering eller testning, och samarbeta med ditt utvecklingsteam för att bygga den implementering som krävs för att hantera dessa ändringar.
 * Du kan använda JSON-kodinnehåll.
@@ -133,7 +133,7 @@ De viktigaste stegen för att implementera en kodbaserad kampanj är följande.
 
 1. Definiera en [yta](#surface-definition), som är den plats där du vill lägga till din kodbaserade upplevelse, och skapa en kampanj i [!DNL Journey Optimizer] med den här ytan. [Lär dig mer](create-code-based.md#create-code-based-campaign)
 
-1. Skapa en upplevelse genom att ange innehåll för den markerade ytan med [!DNL Journey Optimizer] kodredigerare. [Lär dig mer](create-code-based.md#edit-code)
+1. Skapa en upplevelse genom att ange innehåll för den markerade ytan med [!DNL Journey Optimizer] Uttrycksredigerare. [Lär dig mer](create-code-based.md#edit-code)
 
 1. Appimplementeringsteamet gör explicita API- eller SDK-anrop för att hämta innehåll för namngivna ytor, som&quot;Banner Text&quot; eller&quot;Recommendations Tray 1&quot;, eller icke-UI-relaterade beslutspunkter i ett program, som&quot;sökalgoritmparametrar&quot;. I det här fallet är implementeringsteamet ansvarigt för återgivning eller annan tolkning och åtgärd för det returnerade innehållet.<!--TBC with Robert - should link to a new section with API/SDK call samples-->
 

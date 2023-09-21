@@ -8,9 +8,9 @@ level: Experienced
 hide: true
 hidefromtoc: true
 badge: label="Beta"
-source-git-commit: 3a2c9e34790aaf6d96d89244e66deb200d844564
+source-git-commit: 60c74bcc5e33afa354a2380d3e6f490a4c2c3e6d
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '953'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampa
 
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_experience"
->title="Använda kodredigeraren"
+>title="Använda uttrycksredigeraren"
 >abstract="Infoga och redigera koden som du vill leverera som en del av den här kodbaserade upplevelseåtgärden."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/expression-editor/personalization-build-expressions.html" text="Kom igång med uttrycksredigeraren"
 
@@ -76,7 +76,7 @@ Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampa
 
    ![](assets/code-based-campaign-edit-code.png)
 
-1. Kodredigeraren öppnas. Det är ett gränssnitt som inte är visuellt.
+1. The [Uttrycksredigerare](../personalization/personalization-build-expressions.md) öppnas. Det är ett gränssnitt för att skapa icke-visuella upplevelser som gör att du kan skapa koden.
 
 1. Du kan växla mellan redigeringsläget HTML och JSON, och vice versa.
 
@@ -84,7 +84,7 @@ Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampa
    >
    >Om du ändrar redigeringsläget förlorar du all aktuell kod, så se till att växla läge innan du börjar redigera.
 
-1. Ange koden efter behov. Kodredigeraren använder [!DNL Journey Optimizer] Uttrycksredigeraren med alla dess funktioner för personalisering och redigering. [Läs mer](../personalization/personalization-build-expressions.md)
+1. Ange koden efter behov. Du kan använda [!DNL Journey Optimizer] Uttrycksredigeraren med alla dess funktioner för personalisering och redigering. [Läs mer](../personalization/personalization-build-expressions.md)
 
    ![](assets/code-based-campaign-code-editor.png)
 
@@ -113,7 +113,7 @@ Följ stegen nedan för att visa en förhandsgranskning av din ändrade kodbaser
 >
 >Du måste ha testprofiler tillgängliga för att simulera vilka erbjudanden som ska levereras till dem. Lär dig hur [skapa testprofiler](../audience/creating-test-profiles.md).
 
-1. Välj **[!UICONTROL Simulate content]**.
+1. Välj från antingen uttrycksredigeraren eller redigeringsskärmen för innehåll **[!UICONTROL Simulate content]**.
 
    ![](assets/code-based-campaign-simulate.png)
 
