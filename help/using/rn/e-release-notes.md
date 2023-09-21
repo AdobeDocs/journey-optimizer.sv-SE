@@ -5,9 +5,9 @@ title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 hide: true
 hidefromtoc: true
-source-git-commit: e5e4825996359cbe6c5bf0a06fc32a2ef116d906
+source-git-commit: 127e7cee6c474ba1e7519985e5c768be8abc6b20
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '529'
 ht-degree: 3%
 
 ---
@@ -83,8 +83,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 **Publiker**
 
 * Nu kan ni rikta in er på målgrupper som överförts från en CSV-fil till resor och kampanjer.
-  <!--* Enhancements have been made to the audience picker in journeys or campaigns, with the addition of new columns displaying the origin and update frequency of audiences.-->
-* Nu kan ni inrikta er på målgrupper som är resultatet av arbetsflöden för disposition på resor.
+<!--* You can now target audiences resulting from composition workflows into journeys. -->
 
 **Personalisering**
 
