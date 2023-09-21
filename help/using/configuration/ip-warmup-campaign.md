@@ -10,7 +10,7 @@ level: Experienced
 keywords: IP, pooler, grupp, underdomäner, leveransbarhet
 hide: true
 hidefromtoc: true
-source-git-commit: 53be033ff0474cbafff71ed36194c18627234fd4
+source-git-commit: ea86d44f7c9309ff69877e01cea6a13e7907a039
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 2%
@@ -43,7 +43,7 @@ Följ stegen nedan om du vill skapa en IP-värmare.
 
    >[!NOTE]
    >
-   >Lär dig hur du väljer vilken domän och vilka IP-adresser som ska användas i en e-postyta i [det här avsnittet](using/email/email-settings.md#subdomains-and-ip-pools).
+   >Lär dig hur du väljer vilken domän och vilka IP-adresser som ska användas i en e-postyta i [det här avsnittet](../email/email-settings.md#subdomains-and-ip-pools).
 
 1. Skapa en [kampanj](../campaigns/create-campaign.md) och väljer [E-post](../email/create-email.md#create-email-journey-campaign) åtgärd.
 
@@ -68,4 +68,6 @@ Följ stegen nedan om du vill skapa en IP-värmare.
 >För en livekampanj med aktiverad IP-uppvärmningsplan **[!UICONTROL Delete]** knappen är tillgänglig tills den är associerad med en IP-värmeringsplan.
 
 Mer information om hur du konfigurerar en kampanj finns i [den här sidan](../campaigns/get-started-with-campaigns.md).
+
+<!--Any recommendations when defining an audience? i.e do you have to include all your database or a limited number or according to your Excel file?-->
 
