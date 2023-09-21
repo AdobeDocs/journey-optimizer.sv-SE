@@ -5,7 +5,7 @@ title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 hide: true
 hidefromtoc: true
-source-git-commit: 2fb87752a3f9190a5e9b885f102423827545f9fe
+source-git-commit: 8aeb0c252a2c24442098fa1e88a75eb0e0a94d4e
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 2%
@@ -46,7 +46,7 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Generering av datauppsättningsexport (GA)</strong><br/></th>
+<th><strong>Målgrupper för datauppsättningsexport (GA)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
