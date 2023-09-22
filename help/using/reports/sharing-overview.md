@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 07d25f8e-0065-4410-9895-ffa15d6447bb
-source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
+source-git-commit: ae00c13e66247ba1e894609bec2bd21a44398431
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '474'
 ht-degree: 3%
 
 ---
@@ -27,18 +27,18 @@ Du har till exempel konfigurerat en resa som skickar flera e-postmeddelanden. Me
 
 [!DNL Journey Optimizer] skapar automatiskt nödvändiga scheman och strömmar till datauppsättningar till Adobe Experience Platform för varje steg en individ tar på en resa. En steghändelse motsvarar en person som flyttar från en nod till en annan under en resa. Exempel: i en resa som innehåller en händelse, ett villkor och en åtgärd skickas tre steghändelser till Adobe Experience Platform.
 
-Listan över XDM-fält som skickas är omfattande. Vissa innehåller systemgenererade koder och andra har användarvänliga namn som kan läsas. Exempel är etiketten för reseaktiviteten eller stegstatusen: hur många gånger en åtgärd orsakade timeout eller fel.
+Listan över XDM-fält som skickas är omfattande. Vissa innehåller systemgenererade koder och andra har användarvänliga namn som kan läsas. Exempel är etiketten för reseaktiviteten eller stegstatusen: hur många gånger en åtgärd orsakade fel eller orsakade timeout.
 
 >[!CAUTION]
 >
->Datauppsättningar kan inte aktiveras för realtidsprofiltjänst. Se till att **[!UICONTROL Profile]** växlingsknappen är inaktiverad.
+>Det går inte att aktivera datauppsättningar för profiltjänsten i realtid. Se till att **[!UICONTROL Profile]** växlingsknappen är inaktiverad.
 
 [!DNL Journey Optimizer] skickar data när de spelas upp, på ett direktuppspelningssätt. Du kan söka efter dessa data med hjälp av frågetjänsten. Du kan ansluta till Customer Journey Analytics eller andra BI-verktyg för att visa data som hör till dessa steg.
 
 Följande scheman skapas:
 
 * Schema för resesegmenthändelse för [!DNL Journey Orchestration] - Resestegshändelse som är knuten till en resemetadata.
-* Reseschema med resefält för [!DNL Journey Orchestration] - Resemetadata för att beskriva resor.
+* Reseschema med Journey Fields för [!DNL Journey Orchestration] - Resemetadata för att beskriva resor.
 
 ![](assets/sharing1.png)
 
@@ -64,5 +64,5 @@ Det allmänna arbetsflödet är:
 
 * [!DNL Customer Journey Analytics] inmatar datamängden&quot;Resestegshändelse&quot;.
 * The **profileID** fältet i det associerade schemat för resesegmenthändelse för Journey Orchestration definieras som ett identitetsfält. I [!DNL Customer Journey Analytics]kan du sedan länka den här datauppsättningen till andra datauppsättningar som har samma värde som den personbaserade identifieraren.
-* Om du vill använda den här datauppsättningen i [!DNL Customer Journey Analytics]för flerkanalsanalys, se [Customer Journey Analytics dokumentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html){target="_blank"}.
+* Använd den här datauppsättningen i [!DNL Customer Journey Analytics]för flerkanalsanalys, se [Customer Journey Analytics dokumentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html){target="_blank"}.
 

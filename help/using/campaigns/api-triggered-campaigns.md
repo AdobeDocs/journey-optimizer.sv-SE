@@ -8,7 +8,7 @@ role: Developer, Admin
 level: Intermediate, Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
+source-git-commit: ae00c13e66247ba1e894609bec2bd21a44398431
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Tillgängliga kanaler för API-utlösta kampanjer är e-post-, SMS- och push-med
 
 >[!NOTE]
 >
->För närvarande stöds inte snabb leverans för kampanjer som triggas av API:t för push-meddelanden.
+>Från och med nu stöds inte läget för snabb leverans för kampanjer som triggas av API:t för push-meddelanden.
 
 ## Skapa en API-utlöst kampanj {#create}
 
@@ -63,7 +63,7 @@ Följ stegen nedan för att skapa en API-utlöst kampanj. Detaljerad information
 
 1. Klicka **[!UICONTROL Review to activate]** för att kontrollera att kampanjen är korrekt konfigurerad aktiverar du den.
 
-Nu kan du köra kampanjen från API:erna. [Läs mer](#execute)
+Du är nu redo att köra kampanjen från API:erna. [Läs mer](#execute)
 
 ### Kör kampanjen {#execute}
 
@@ -92,7 +92,7 @@ Låt oss ta det här exemplet där kunderna vill återställa sitt lösenord och
 >
 >Till skillnad från profilaktiverade händelser används kontextdata som skickas i REST API för engångskommunikation och lagras inte mot profil. Profilen skapas med namnutrymmesinformationen om den saknas.
 
-Om du vill använda dessa data i dina kampanjer måste du skicka dem till API-nyttolasten och lägga till dem i meddelandet med uttrycksredigeraren. Om du vill göra det använder du `{{context.<contextualAttribute>}}` syntax, där `<contextualAttribute>` ska matcha namnet på variabeln i API-nyttolasten som innehåller de data som du vill skicka.
+Om du vill använda dessa data i dina kampanjer måste du skicka dem till API-nyttolasten och lägga till dem i meddelandet med uttrycksredigeraren. Använd `{{context.<contextualAttribute>}}` syntax, där `<contextualAttribute>` ska matcha namnet på variabeln i API-nyttolasten som innehåller de data som du vill skicka.
 
 The `{{context.<contextualAttribute>}}` syntaxen mappas endast till datatypen String.
 
