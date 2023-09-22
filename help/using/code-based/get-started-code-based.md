@@ -8,7 +8,7 @@ level: Experienced
 hide: true
 hidefromtoc: true
 badge: label="Beta"
-source-git-commit: 60c74bcc5e33afa354a2380d3e6f490a4c2c3e6d
+source-git-commit: f271aa457d2f8b7e66e58692b613d80c6e6b3adb
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 1%
@@ -168,10 +168,10 @@ Tabellen nedan visar några exempel på URI-definitioner för olika enheter.
 | Webb | web://domain.com/*#element | Jokertecknets yta - representerar ett enskilt element på varje sida under en specifik domän. |
 | Skrivbord | desktop://com.vendor.bundle | Representerar ett specifikt skrivbordsprogram. |
 | Skrivbord | desktop://com.vendor.bundle#element | Representerar ett specifikt element i ett program, t.ex. en knapp, en meny, en hjältebanderoll. |
-| iOS | ios://com.vendor.bundle | Representerar ett specifikt mobilprogram för en enda plattform - i det här fallet iOS-app. |
-| iOS | ios://com.vendor.bundle/activity | Representerar en viss aktivitet (vy) i ett mobilprogram. |
-| iOS | ios://com.vendor.bundle/activity#element | Representerar ett specifikt element i en aktivitet, till exempel en knapp eller ett annat vyelement. |
-| Android-app | android://com.vendor.bundle | Representerar ett specifikt mobilprogram för en enda plattform - i det här fallet Android-app. |
+| iOS | mobileapp://com.vendor.bundle | Representerar ett specifikt mobilprogram för en enda plattform - i det här fallet iOS-app. |
+| iOS | mobileapp://com.vendor.bundle/activity | Representerar en viss aktivitet (vy) i ett mobilprogram. |
+| iOS | mobileapp://com.vendor.bundle/activity#element | Representerar ett specifikt element i en aktivitet, till exempel en knapp eller ett annat vyelement. |
+| Android-app | mobileapp://com.vendor.bundle | Representerar ett specifikt mobilprogram för en enda plattform - i det här fallet Android-app. |
 | tvOS-app | tvos://com.vendor.bundle | Representerar en specifik tvOS-app. |
 | TV-app | tvcd://com.vendor.bundle | Representerar en specifik app för en smart TV- eller tv-ansluten enhet - paket-ID. |
 | Tjänst | service://servicename | Representerar en process på serversidan eller en annan manuell enhet. |

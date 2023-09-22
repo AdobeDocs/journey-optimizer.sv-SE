@@ -8,9 +8,9 @@ level: Experienced
 hide: true
 hidefromtoc: true
 badge: label="Beta"
-source-git-commit: 69a2ef17b6f5ccd40c08858f7b434029964d544d
+source-git-commit: f271aa457d2f8b7e66e58692b613d80c6e6b3adb
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1220'
 ht-degree: 2%
 
 ---
@@ -181,11 +181,11 @@ Rankade erbjudanden: Erbjudande 5, Erbjudande 3, Erbjudande 4, Erbjudande 2, Erb
 
 ## Använd beslutsprincipen i kodredigeraren {#use-decision-policy}
 
-När du har skapat en beslutspolicy kan du använda den i [kodredigerare](../code-based/create-code-based.md#edit-code). För att göra detta, följ nedanstående steg.
+När du har skapat en beslutspolicy kan du använda den i [Uttrycksredigerare](../code-based/create-code-based.md#edit-code). För att göra detta, följ nedanstående steg.
 
 >[!NOTE]
 >
->Kodredigeraren använder [!DNL Journey Optimizer] Uttrycksredigeraren med alla dess funktioner för personalisering och redigering. [Läs mer](../personalization/personalization-build-expressions.md)
+>Kodbaserad upplevelse utnyttjar [!DNL Journey Optimizer] Uttrycksredigeraren med alla dess funktioner för personalisering och redigering. [Läs mer](../personalization/personalization-build-expressions.md)
 
 1. Klicka på ikonen +. Koden som motsvarar beslutspolicyn läggs till. Nu kan du lägga till alla beslutsattribut du vill i den koden.
 
@@ -197,7 +197,7 @@ När du har skapat en beslutspolicy kan du använda den i [kodredigerare](../cod
 
 1. Klicka på beslutspolicyn. Beslutsattributen visas.
 
-   Dessa attribut lagras i **[!UICONTROL Offers]** katalogschema. Anpassade attribut lagras i **cjmstage** mapp- och standardattribut i **upplevelse** mapp. [Läs mer om offertkatalogens schema](catalogs.md)
+   Dessa attribut lagras i **[!UICONTROL Offers]** katalogschema. Anpassade attribut lagras i **`_<imsOrg`>** mapp- och standardattribut i **`_experience`** mapp. [Läs mer om offertkatalogens schema](catalogs.md)
 
    ![](assets/decision-code-based-decision-attributes.png)
 

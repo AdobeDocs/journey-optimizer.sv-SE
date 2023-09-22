@@ -8,9 +8,9 @@ level: Experienced
 hide: true
 hidefromtoc: true
 badge: label="Beta"
-source-git-commit: 60c74bcc5e33afa354a2380d3e6f490a4c2c3e6d
+source-git-commit: f271aa457d2f8b7e66e58692b613d80c6e6b3adb
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '955'
 ht-degree: 2%
 
 ---
@@ -60,7 +60,7 @@ Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampa
    >
    >Mer information om hur du konfigurerar en kampanj finns i [den här sidan](../campaigns/get-started-with-campaigns.md).
 
-1. Redigera ditt innehåll efter behov med [kodbaserad redigerare](#edit-code).
+1. Redigera ditt innehåll med uttrycksredigeraren. [Läs mer](#edit-code)
 
    ![](assets/code-based-campaign-edit-content.png)
 
