@@ -5,9 +5,9 @@ title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 hide: true
 hidefromtoc: true
-source-git-commit: c9be63086b63fb5f4d6094d8bc7690464cf6b768
+source-git-commit: 91d40b697b7f70f0b27454684e7a0bfa3e6488c6
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '550'
 ht-degree: 3%
 
 ---
@@ -92,7 +92,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Varningar**
 
-* Två nya typer av systemvarningar har införts. Du kan nu få ett meddelande när en anpassad åtgärd eller ett lässegment misslyckas.
+* En ny typ av systemvarning har införts. Nu kan ni få meddelanden när en läsare misslyckas.
 
 **Webbkanal**
 
@@ -103,13 +103,20 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Resor**
 
-* Funktionerna för anpassade åtgärder är nu GA. På så sätt kan ni utnyttja API-anropssvar i anpassade åtgärder och samordna er resa baserat på dessa svar. Dessutom har ett nytt skyddsräcke lagts till för att begränsa alla tullåtgärder till 5000 samtal/s per slutpunkt.
+* Stöd för anpassade åtgärdssvar är nu GA. På så sätt kan ni utnyttja API-anropssvar i anpassade åtgärder och samordna er resa baserat på dessa svar. Dessutom har ett nytt skyddsräcke lagts till för att begränsa alla tullåtgärder till 5000 samtal/s per slutpunkt.
 * När du duplicerar en resa kan du nu definiera namnet på kopian av resan.
-* Den maximala varaktighet som du kan definiera i aktiviteten Vänta är nu 29 dagar i stället för 30.
+
+<!--
+* The maximum duration that you can define in the Wait activity is now 29 days instead of 30.
+-->
 
 **E-postkanal**
 
 Ett nytt alternativ i konfigurationen av e-postytan gör att du kan välja att skicka transaktionsmeddelanden till profiler även om deras e-postadresser finns i listan över Adobe Journey Optimizer-undertryckningar.
+
+**Rapportering**
+
+Nu kan du exportera Journey Optimizer-rapporter som CSV-filer. [Läs mer](../reports/global-report.md#export-reports)
 
 <!--**Decision management**
 
