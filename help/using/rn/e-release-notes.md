@@ -5,9 +5,9 @@ title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 hide: true
 hidefromtoc: true
-source-git-commit: 91d40b697b7f70f0b27454684e7a0bfa3e6488c6
+source-git-commit: 3df2e550c9ab2c83e6fa9c26dc62a882a523229a
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '586'
 ht-degree: 3%
 
 ---
@@ -113,6 +113,10 @@ Den här versionen innehåller de förbättringar som anges nedan.
 **E-postkanal**
 
 Ett nytt alternativ i konfigurationen av e-postytan gör att du kan välja att skicka transaktionsmeddelanden till profiler även om deras e-postadresser finns i listan över Adobe Journey Optimizer-undertryckningar.
+
+**SMS-kanal**
+
+Två nya fält, **Inloggningsmeddelande** och **Hjälpmeddelande**, har lagts till i API-konfigurationsskärmen, vilket gör att användare kan anpassa svar för inkommande nyckelord. Observera att det här endast är tillgängligt för SMS-providern för Sinch.
 
 **Rapportering**
 
