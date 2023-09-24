@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: dc1eeb3c199e7db2fc152b682404a547e2ae56c7
+source-git-commit: ec071392cec9933bb73ae9ab20618292b6089061
 workflow-type: tm+mt
-source-wordcount: '1492'
-ht-degree: 31%
+source-wordcount: '1502'
+ht-degree: 30%
 
 ---
 
@@ -233,7 +233,10 @@ ht-degree: 31%
    + [Kom igång med webbkanalen](using/web/get-started-web.md)
    + [Förutsättningar för webbkanaler](using/web/web-prerequisites.md)
    + [Skapa webbupplevelser](using/web/create-web.md)
-   + [Skapa webbsidor](using/web/author-web.md)
+   + Skapa webbsidor {#author-web-pages}
+      + [Redigera webbsidesinnehåll](using/web/edit-web-content.md)
+      + [Hantera ändringar](using/web/manage-web-modifications.md)
+      + [Övervaka era webbkampanjer](using/web/monitor-web-campaigns.md)
    + [Konfigurera webbunderdomäner](using/web/web-delegated-subdomains.md)
 + Kodbaserad upplevelse {#code-based-experience}
    + [Kom igång med kodbaserad kanal](using/code-based/get-started-code-based.md)

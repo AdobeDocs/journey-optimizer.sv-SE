@@ -1,14 +1,14 @@
 ---
 title: Skapa webbupplevelser
-description: Lär dig hur du skapar en webbsida och redigerar dess innehåll i Journey Optimizer
+description: Lär dig skapa en webbsida och redigera dess innehåll i Journey Optimizer
 feature: Web Channel
 topic: Content Management
 role: User
 level: Beginner
 exl-id: e28c038b-49ed-4685-bfe6-514116eb0711
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: ec071392cec9933bb73ae9ab20618292b6089061
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '794'
 ht-degree: 3%
 
 ---
@@ -79,13 +79,44 @@ Följ stegen nedan för att börja skapa en webbupplevelse genom en kampanj.
 
 Mer information om hur du konfigurerar en kampanj finns i [den här sidan](../campaigns/get-started-with-campaigns.md).
 
+## Testa webbkampanjen {#test-web-campaign}
+
+>[!CONTEXTUALHELP]
+>id="ajo_web_designer_preview"
+>title="Förhandsgranska din webbupplevelse"
+>abstract="Få en simulering av hur webbupplevelsen kommer att se ut."
+
+En gång [skapade din webbupplevelse](edit-web-content.md) med webbdesignern kan du förhandsgranska de ändrade webbsidorna innan du aktiverar kampanjen. För att göra detta, följ nedanstående steg.
+
+>[!CAUTION]
+>
+>Du måste ha testprofiler tillgängliga för att simulera vilka erbjudanden som ska levereras till dem. Lär dig hur [skapa testprofiler](../audience/creating-test-profiles.md).
+
+1. Välj antingen webbkampanjens redigeringsfönster eller webbdesignern **[!UICONTROL Simulate content]**.
+
+   <!--![](assets/web-designer-simulate.png)-->
+
+   ![](assets/web-campaign-simulate.png)
+
+1. Klicka **[!UICONTROL Manage test profiles]** om du vill välja en eller flera testprofiler.
+1. En förhandsgranskning av den ändrade webbsidan visas.
+
+   ![](assets/web-designer-preview.png)
+
+1. Du kan även öppna den i standardwebbläsaren eller kopiera test-URL:en och klistra in den i valfri webbläsare. På så sätt kan ni dela länken med teamet och intressenter som kan förhandsgranska den nya webbupplevelsen i vilken webbläsare som helst innan kampanjen blir aktiv.
+
+   >[!NOTE]
+   >
+   >När du kopierar test-URL:en är det innehåll som visas anpassat för testprofilen som användes när innehållssimuleringen genererades i [!DNL Journey Optimizer].
+
 ## Aktivera webbkampanjen {#activate-web-campaign}
 
-När du definierat din [webbkampanjsinställningar](#configure-web-campaign) och du har redigerat innehållet efter behov med [webbdesigner](author-web.md)kan ni granska och aktivera webbkampanjen. Följ stegen nedan.
+När du definierat din [webbkampanjsinställningar](#configure-web-campaign) och du har redigerat innehållet efter behov med [webbdesigner](edit-web-content.md#work-with-web-designer)kan ni granska och aktivera webbkampanjen. Följ stegen nedan.
 
+<!--
 >[!NOTE]
 >
->Du kan också förhandsgranska webbkampanjens innehåll innan du aktiverar det. [Läs mer](author-web.md#test-web-campaign)
+>You can also preview your web campaign content before activating it. [Learn more](#test-web-campaign)-->
 
 1. Välj **[!UICONTROL Review to activate]**.
 
@@ -97,7 +128,7 @@ När du definierat din [webbkampanjsinställningar](#configure-web-campaign) och
 
    >[!NOTE]
    >
-   >När du har klickat **[!UICONTROL Activate]** kan det ta upp till 15 minuter innan webbkampanjer blir tillgängliga live på er webbplats.
+   >När du klickat **[!UICONTROL Activate]** kan det ta upp till 15 minuter innan webbkampanjer blir tillgängliga live på er webbplats.
 
 Webbkampanjen tar **[!UICONTROL Live]** och nu visas för den valda publiken. Alla mottagare av kampanjen kan se de ändringar du har lagt till på webbplatsen med hjälp av [!DNL Journey Optimizer] webbdesigner.
 
@@ -115,7 +146,7 @@ När en webbkampanj är aktiv kan ni stoppa den för att hindra publiken från a
 
 1. Välj en livekampanj i listan.
 
-1. Välj **[!UICONTROL Stop campaign]**.
+1. I den övre menyn väljer du **[!UICONTROL Stop campaign]**.
 
    ![](assets/web-campaign-stop.png)
 

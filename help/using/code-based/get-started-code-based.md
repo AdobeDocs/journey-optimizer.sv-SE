@@ -8,9 +8,9 @@ level: Experienced
 hide: true
 hidefromtoc: true
 badge: label="Beta"
-source-git-commit: f271aa457d2f8b7e66e58692b613d80c6e6b3adb
+source-git-commit: ec071392cec9933bb73ae9ab20618292b6089061
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1172'
 ht-degree: 1%
 
 ---
@@ -95,7 +95,7 @@ När den kodbaserade kanalen ska användas i stället för den andra [!DNL Journ
 
 * Du kan använda kodbaserade upplevelser när som helst när du inte har åtkomst till din digitala egenskap via en webbläsare eller en mobilapp - situationer där du förmodligen kan använda [!DNL Journey Optimizer] [webbkanal](../web/get-started-web.md){target="_blank"} or the [!DNL Journey Optimizer] [in-app messaging](../in-app/get-started-in-app.md){target="_blank"} kanal.
 
-* Du kan använda den kodbaserade kanalen som ett alternativ till [!DNL Journey Optimizer] webbkanal om din webbplats inte kan läsas in i [webbvisuell redigerare](../web/author-web.md){target="_blank"} or if you cannot use the [browser extension](../web/web-prerequisites.md#visual-authoring-prerequisites){target="_blank"} som gör det möjligt att skapa visuellt material för webbkanaler.
+* Du kan använda den kodbaserade kanalen som ett alternativ till [!DNL Journey Optimizer] webbkanal om din webbplats inte kan läsas in i [webbdesigner](../web/edit-web-content.md#work-with-web-designer){target="_blank"} visual editor or if you cannot use the [browser extension](../web/web-prerequisites.md#visual-authoring-prerequisites){target="_blank"} som gör det möjligt att skapa visuellt material för webbkanaler.
 
 * Du kan också använda den kodbaserade kanalen som ett alternativ till [!DNL Journey Optimizer] webb- eller appkanaler om ni har en API-baserad, headless- eller serversidesimplementering.
 
@@ -104,9 +104,9 @@ När den kodbaserade kanalen ska användas i stället för den andra [!DNL Journ
 Om du vill köra webbanvändningsfall kan du använda antingen webbkanalen eller den kodbaserade upplevelsen, men beroende på ditt sammanhang kan ett alternativ vara mer lämpligt än det andra. De viktigaste skillnaderna listas nedan så att du kan fatta ett välgrundat beslut om vad du ska använda när.
 
 **Webb**
-* Redigera innehåll med [visuell redigerare](../web/author-web.md){target="_blank"}.
+* Redigera innehåll med [webbdesigner](../web/edit-web-content.md#work-with-web-designer){target="_blank"} visuell redigerare.
 * Du behöver [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} implementation and the [Adobe Experience Cloud Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca){target="_blank"} extension installed on your web browser. [Learn more](../web/web-prerequisites.md){target="_blank"}
-* Med webbkanalen kan du ändra allt på sidan och ha en fördefinierad lista över åtgärder som du kan använda för att göra ändringar. [Läs mer](../web/author-web.md){target="_blank"}
+* Med webbkanalen kan du ändra allt på sidan och ha en fördefinierad lista över åtgärder som du kan använda för att göra ändringar. [Läs mer](../web/edit-web-content.md#work-with-web-designer){target="_blank"}
 * Det är enkelt att konfigurera och komma igång snabbt.
 * Det är fokuserat på marknadsföring och personalisering.
 

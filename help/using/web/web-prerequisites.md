@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6cb4f8ab-77ad-44a2-b2bf-a97f87b8f1db
-source-git-commit: cfa797146c4f6f87a55e72393f45c271480cf7f5
+source-git-commit: ec071392cec9933bb73ae9ab20618292b6089061
 workflow-type: tm+mt
 source-wordcount: '1035'
 ht-degree: 1%
@@ -85,13 +85,7 @@ Följ stegen nedan om du vill hämta och installera tillägget för hjälpen fö
 
    ![](assets/web-visual-editing-extension-edge.png)
 
-<!--1. Launch [!DNL Journey Optimizer] in a new tab of your browser with the extension installed.
-
-1. Create a web channel campaign in [!DNL Journey Optimizer]. [Learn how](author-web.md#create-web-campaign)
-
-1. Open the [!DNL Journey Optimizer] web designer to start authoring your web experience. [Learn more](author-web.md)-->
-
-Adobe Experience Cloud Visual Editing Helper aktiveras nu automatiskt när en webbplats öppnas i [!DNL Journey Optimizer] webbdesigner för att underlätta framtagningen.
+Adobe Experience Cloud Visual Editing Helper aktiveras nu automatiskt när en webbplats öppnas i [!DNL Journey Optimizer] [webbdesigner](edit-web-content.md#work-with-web-designer) till kraftfull redigering.
 
 Tillägget har inga villkorsinställningar och hanterar automatiskt alla inställningar, inklusive cookies för SameSite.
 
