@@ -10,9 +10,9 @@ level: Experienced
 keywords: IP, pooler, grupp, underdomäner, leveransbarhet
 hide: true
 hidefromtoc: true
-source-git-commit: 11bdb3ddc666d2025133f70ab522c4ce2d676aa6
+source-git-commit: 1ec2c406e777e08de97c3ad53cee5986afeb3c44
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '770'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,57 @@ Vad du hittar i den här handboken:
 
 >[!ENDSHADEBOX]
 
-En gång [skapade en eller flera kampanjer](ip-warmup-campaign.md) med en dedikerad yta och alternativet IP-värmare aktiverat kan du börja skapa din IP-värmeringsplan.
+När du har skapat en eller flera [IP-kampanjer](ip-warmup-campaign.md) med en dedikerad yta och motsvarande alternativ aktiverat, kan du börja skapa din IP-värdplan.
+
+## Fyll i IP-värmermallen {#upload-plan}
+
+Innan du kan skapa en IP-uppvärmningsplan i Journey Optimizer-gränssnittet måste du fylla i en mall i Excel-format med alla data som matar in planen.
+
+>[!CAUTION]
+>
+>Arbeta med din leveranskonsult för att säkerställa att din IP-värmerappningsfil är korrekt konfigurerad.
+
+Nedan visas ett exempel på en fil som innehåller en IP-värmerapport.
+
+![](assets/ip-warmup-sample-file.png)
+
+### Fliken IP Warmup Plan
+
+Varmning av IP-adresser är en aktivitet som gradvis ökar antalet e-postmeddelanden som går ut från era IP-adresser och domäner till de viktigaste Internetleverantörerna för att etablera ert rykte som en legitim avsändare.
+
+Denna aktivitet utförs i rätt tid med hjälp av en konsult eller expert som arbetar med en genomtänkt plan baserad på bransch, användningsfall, region, Internet-leverantörer och olika andra faktorer.
+
+* I det här exemplet har en plan förberetts för att sträcka sig över 17 dagar och nå en målvolym på xxx-profiler.
+
+* Detta är planerat för 6 faser.
+
+* Du kan ha så många kolumner du vill för de domäner du vill leverera till. I det här exemplet är planen uppdelad i fyra kolumner som motsvarar de domängrupper som ska användas i din plan: Gmail, Adobe, Yahoo med flera.
+
+Tanken är att fler ska köras under de första faserna och att antalet riktade adresser ska ökas stegvis samtidigt som antalet ska minskas.
+
+Listan med färdiga domäner är följande:
+
+* Gmail
+* Adobe
+* WP
+* Comcast
+* Yahoo
+* Bigpond
+* Orange
+* Softbank
+* Docomo
+* United Internet
+* Microsoft
+* KDDI
+* Italia Online
+* La Poste
+* Apple
+
+### Fliken Anpassad domängrupp
+
+Du kan också lägga till fler kolumner med dina anpassade domängrupper.
+
+Använd **[!UICONTROL Custom Domain Group]** för att definiera en ny domän och för varje domän kan du lägga till alla underdomäner som den omfattar.<!--TBC-->
 
 ## Få åtkomst till och hantera IP-värmerelayouter {#manage-ip-warmup-plans}
 
@@ -40,10 +90,10 @@ En gång [skapade en eller flera kampanjer](ip-warmup-campaign.md) med en dedike
 
 1. Du kan filtrera efter status. De olika statusvärdena är:
 
-   * **Inte startat**: ingen körning har inträffat
-   * **Pågår**: när en körning har startats <!--or is done?-->
-   * **Pausad**
-   * **Slutförd**: alla körningar i planen är klara
+   * **Inte startat**: ingen körning har aktiverats ännu. [Läs mer](ip-warmup-running.md#define-runs)
+   * **Pågår/Live**: planen får denna status så snart den första körningen i den första fasen har aktiverats. [Läs mer](ip-warmup-running.md#define-runs)
+   * **Slutförd**: planen har markerats som slutförd. Det här alternativet är bara tillgängligt om alla körningar i planen finns **[!UICONTROL Succeeded]** eller **[!UICONTROL Draft]** status (ingen körning kan utföras) **[!UICONTROL Live]**). [Läs mer](ip-warmup-running.md#define-runs#mark-as-completed)
+   * **Pausad**<!--: to check (user action)-->
 
 1. Om du vill ta bort en IP-uppvärmningsplan väljer du **[!UICONTROL Delete]** -ikonen bredvid ett listobjekt och bekräfta borttagningen.
 
@@ -99,7 +149,7 @@ När en eller flera livekampanjer med **[!UICONTROL IP warmup plan activation]**
 
    ![](assets/ip-warmup-plan-phases.png)
 
-### Ladda upp en IP-värdplan igen {#re-upload-plan}
+## Ladda upp en IP-värdplan igen {#re-upload-plan}
 
 Du kan överföra ytterligare en IP-värmeringsplan med motsvarande knapp.
 
@@ -108,17 +158,3 @@ Du kan överföra ytterligare en IP-värmeringsplan med motsvarande knapp.
 >[!NOTE]
 >
 >Information om IP-värmeringsplanen ändras enligt den nyligen överförda filen. Hela körningen och de aktiverade körningarna påverkas inte.
-
-### Överför filen som innehåller planen {#upload-plan}
-
-Nedan visas ett exempel på en fil som innehåller en IP-värmerapport.
-
-![](assets/ip-warmup-sample-file.png)
-
-Varje fas motsvarar en period som består av flera körningar, som ni tilldelar en enda kampanj till.
-
-För varje körning har du ett visst antal mottagare och du anger ett datum när körningen ska köras.
-
-Du kan ha så många kolumner du vill för de domäner du vill leverera till. I det här exemplet har du tre kolumner: Gmail, Adobe och Övrigt, vilket innebär att
-
-Tanken är att fler ska köras under de första faserna och att antalet riktade adresser ska ökas stegvis samtidigt som antalet ska minskas.

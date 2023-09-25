@@ -10,9 +10,9 @@ level: Experienced
 keywords: IP, pooler, grupp, underdomäner, leveransbarhet
 hide: true
 hidefromtoc: true
-source-git-commit: 11bdb3ddc666d2025133f70ab522c4ce2d676aa6
+source-git-commit: 1ec2c406e777e08de97c3ad53cee5986afeb3c44
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '970'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,12 @@ Vad du hittar i den här handboken:
 * **[Kör IP-värmningsplanen](ip-warmup-running.md)**
 
 >[!ENDSHADEBOX]
+
+När du har [skapade en IP-värmningsplan](ip-warmup-plan.md) och laddade upp filen som har förberetts med din leveranskonsult, kan du definiera faserna och köra i din plan.
+
+Varje fas motsvarar en period som består av flera körningar, som ni tilldelar en enda kampanj till.
+
+För varje körning har du ett visst antal mottagare och du schemalägger när körningen ska köras.
 
 ## Definiera faserna {#define-phases}
 
@@ -96,7 +102,7 @@ På fasnivå ser systemet till att tidigare riktade + nya profiler plockas upp O
 
    ![](assets/ip-warmup-plan-send-time.png)
 
-1. Välj en sluttid, som definierar det fönster inom vilket IP-värmerskampanjen kan köras om det uppstår några förseningar i jobbkörningen för målgruppssegmentering. Om ingen sluttid anges görs ett försök att utföra körningen vid starttiden och misslyckas om segmenteringen inte slutfördes.
+1. Du kan också välja det fönster inom vilket IP-värmerskampanjen kan köras om det uppstår några förseningar i jobbkörningen för målgruppssegmentering. Om ingen sluttid anges görs ett försök att utföra körningen vid starttiden och misslyckas om segmenteringen inte slutfördes.
 
 1. Aktivera varje körning. Se till att du schemalägger en tid som är tillräckligt lång för att segmenteringsjobbet ska kunna köras. <!--explain how you can evaluate a proper time-->
 
@@ -132,18 +138,28 @@ You don't have to decide the campaign upfront. You can do a split later. It's a 
 But need to explain in which case you want to modify campaigns, provide examples
 -->
 
-## Övervaka planen
+## Markera en plan som slutförd {#mark-as-completed}
 
-En körning kan ha följande status<!--TBC with Medha-->:
+Om din plan inte fungerar tillräckligt bra eller om du vill släppa den för att skapa en till, kan du markera den som slutförd.
 
-* **[!UICONTROL Completed]**:
-* **[!UICONTROL Failed]**:
-* **[!UICONTROL Cancelled]**: du stoppade körningen innan kampanjkörningen startade.
+Klicka på **[!UICONTROL More]** överst till höger på IP-värmerappen och välj **[!UICONTROL Mark as completed]**.
 
-Fördelar :
+![](assets/ip-warmup-plan-mark-completed.png)
 
-* Rapporterna kommer att fortsätta visas på kampanjnivå med liknande funktioner som idag. Men IP-värmerapporten fungerar också som en konsoliderad rapport på en enda plats om hur många avrättningar som gjorts och så vidare.
+Det här alternativet är bara tillgängligt om alla körningar i planen finns **[!UICONTROL Succeeded]** eller **[!UICONTROL Draft]** status. Ingen körning kan göras **[!UICONTROL Live]**.
 
-* En enda plats för att hantera och se hur IP-värmen utvecklas.
+De olika körningsstatusarna listas i [det här avsnittet](#monitor-plan).
 
-* Konsoliderad rapport på kreativ nivå/kampanjnivå som alla körs under en fas
+## Övervaka planen {#monitor-plan}
+
+Om du vill mäta effekten av din plan kan du kontrollera resultatet för dina IP-uppvärmningskampanjer med hjälp av rapporter. Läs mer i e-postmeddelandet om kampanjen [live-rapport](../reports/campaign-live-report.md#email-live) och [global rapport](../reports/campaign-global-report.md##email-global).
+
+Själva beredskapsplanen för IP fungerar också som en konsoliderad rapport på ett enda ställe. Du kan kontrollera element som antalet **[!UICONTROL Live]** eller **[!UICONTROL Succeeded]** körs för varje fas och du kan se hur din plan för IP-uppvärmning fortskrider.
+
+En körning kan ha följande status:
+
+* **[!UICONTROL Draft]** : när en körning skapas, antingen när [ladda upp en ny plan](ip-warmup-plan.md) eller [lägga till en körning](#define-runs) från användargränssnittet tar **[!UICONTROL Draft]** status.
+* **[!UICONTROL Live]**: varje gång du aktiverar en körning tar det **[!UICONTROL Live]** status.
+* **[!UICONTROL Succeeded]**<!--TBC-->: kampanjkörningen för den här körningen har slutförts. <!--i.e. campaign execution has started, no error happened and emails have reached users? to check with Sid-->
+* **[!UICONTROL Cancelled]**: a **[!UICONTROL Live]** körningen avbröts med **[!UICONTROL Stop]** -knappen. Den här knappen är bara tillgänglig om kampanjkörningen inte har startats. [Läs mer](#define-runs)
+* **[!UICONTROL Failed]**: ett fel påträffades av systemet eller kampanjen som användes för den aktuella fasen stoppades<!--what should the user do in that case?-->.

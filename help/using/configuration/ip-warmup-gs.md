@@ -10,9 +10,9 @@ level: Experienced
 keywords: IP, pooler, grupp, underdomäner, leveransbarhet
 hide: true
 hidefromtoc: true
-source-git-commit: 53be033ff0474cbafff71ed36194c18627234fd4
+source-git-commit: 1ec2c406e777e08de97c3ad53cee5986afeb3c44
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '292'
 ht-degree: 2%
 
 ---
@@ -71,6 +71,6 @@ De viktigaste stegen för att implementera en plan för IP-uppvärmning är föl
 
 1. Du måste först skapa en eller flera kampanjer med alternativet IP-värmare aktiverat. [Läs mer](ip-warmup-campaign.md) <!--this is usually done by a marketer persona??)-->
 
-1. Skapa en IP-värmeringsplan och överför din plan. [Läs mer](ip-warmup-plan.md) <!--this is usually done by a deliverability consultant??-->
+1. Skapa en IP-värmeringsplan i [!DNL Journey Optimizer] och överför Excel-bladet som tidigare fyllts i med dina IP-värmeradata. [Läs mer](ip-warmup-plan.md) <!--this is usually done by a deliverability consultant??-->
 
 1. Välj en kampanj för varje fas i planen och aktivera motsvarande körningar. [Läs mer](ip-warmup-running.md)
