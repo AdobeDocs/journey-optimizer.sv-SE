@@ -2,17 +2,17 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Skapa en IP-värmeringsplan
-description: Lär dig hur du skapar en IP-värmeringsplan
+description: Lär dig hur du skapar en IP-värmeringsplan i Journey Optimizer
 feature: Application Settings
 topic: Administration
 role: Admin
 level: Experienced
-keywords: IP, pooler, grupp, underdomäner, leveransbarhet
+keywords: IP, grupp, underdomäner, leveransbarhet
 hide: true
 hidefromtoc: true
-source-git-commit: 1ec2c406e777e08de97c3ad53cee5986afeb3c44
+source-git-commit: b3e5a825b881736516b3bcd1d368843c3a601100
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '797'
 ht-degree: 1%
 
 ---
@@ -26,15 +26,19 @@ Vad du hittar i den här handboken:
 * [Kom igång med IP-värmare](ip-warmup-gs.md)
 * [Skapa IP-värmningskampanjer](ip-warmup-campaign.md)
 * **[Skapa en IP-värmeringsplan](ip-warmup-plan.md)**
-* [Kör IP-värmningsplanen](ip-warmup-running.md)
+* [Kör IP-värmerappen](ip-warmup-execution.md)
 
 >[!ENDSHADEBOX]
 
 När du har skapat en eller flera [IP-kampanjer](ip-warmup-campaign.md) med en dedikerad yta och motsvarande alternativ aktiverat, kan du börja skapa din IP-värdplan.
 
-## Fyll i IP-värmermallen {#upload-plan}
+## Förbered filen för IP-warmup-planen {#prepare-file}
 
-Innan du kan skapa en IP-uppvärmningsplan i Journey Optimizer-gränssnittet måste du fylla i en mall i Excel-format med alla data som matar in planen.
+Varmning av IP-adresser är en aktivitet som gradvis ökar antalet e-postmeddelanden som går ut från era IP-adresser och domäner till de viktigaste Internetleverantörerna för att etablera ert rykte som en legitim avsändare.
+
+Denna aktivitet utförs i rätt tid med hjälp av en leveransexpert som hjälper till att ta fram en genomtänkt plan baserad på branschens domäner, användningsfall, regioner, Internet-leverantörer och olika andra faktorer.
+
+När du arbetar med [!DNL Journey Optimizer] IP-värmerfunktionen, den här planen har formen av en Excel-fil som måste innehålla ett antal fördefinierade kolumner. Innan du kan skapa en IP-uppvärmningsplan i [!DNL Journey Optimizer] måste du fylla i den här mallen med alla data som kommer att mata in din plan.
 
 >[!CAUTION]
 >
@@ -46,19 +50,16 @@ Nedan visas ett exempel på en fil som innehåller en IP-värmerapport.
 
 ### Fliken IP Warmup Plan
 
-Varmning av IP-adresser är en aktivitet som gradvis ökar antalet e-postmeddelanden som går ut från era IP-adresser och domäner till de viktigaste Internetleverantörerna för att etablera ert rykte som en legitim avsändare.
+* I det här exemplet har en plan förberetts som sträcker sig över 17 dagar (kallas&quot;**körningar**&quot;) för att nå en målvolym på över 1 miljon profiler.
 
-Denna aktivitet utförs i rätt tid med hjälp av en konsult eller expert som arbetar med en genomtänkt plan baserad på bransch, användningsfall, region, Internet-leverantörer och olika andra faktorer.
+* Planerad till 6 **faser**, som alla innehåller minst en omgång.
 
-* I det här exemplet har en plan förberetts för att sträcka sig över 17 dagar och nå en målvolym på xxx-profiler.
+* Du kan ha så många kolumner du vill för de domäner du vill leverera till. I det här exemplet är planen uppdelad i sex kolumner: 5 av vilka motsvarar **huvuddomängrupper** som du kan använda i din plan (Gmail, Microsoft, Yahoo, Orange och Apple) och i den sjätte kolumnen, **Övriga**, innehåller alla återstående adresser från andra domäner.
+* The **Förlovningsdagar** kolumn visar att det endast är de profiler som är engagerade med ert varumärke under de senaste 30 dagarna som är målinriktade.
 
-* Detta är planerat för 6 faser.
+Tanken är att stegvis öka antalet måladresser i varje körning och samtidigt minska antalet körningar för varje fas.
 
-* Du kan ha så många kolumner du vill för de domäner du vill leverera till. I det här exemplet är planen uppdelad i fyra kolumner som motsvarar de domängrupper som ska användas i din plan: Gmail, Adobe, Yahoo med flera.
-
-Tanken är att fler ska köras under de första faserna och att antalet riktade adresser ska ökas stegvis samtidigt som antalet ska minskas.
-
-Listan med färdiga domäner är följande:
+De färdiga huvuddomängrupperna som du kan lägga till i din plan visas nedan:
 
 * Gmail
 * Adobe
@@ -78,9 +79,11 @@ Listan med färdiga domäner är följande:
 
 ### Fliken Anpassad domängrupp
 
-Du kan också lägga till fler kolumner med dina anpassade domängrupper.
+Du kan också lägga till fler kolumner i din plan genom att ta med anpassade domängrupper.
 
-Använd **[!UICONTROL Custom Domain Group]** för att definiera en ny domän och för varje domän kan du lägga till alla underdomäner som den omfattar.<!--TBC-->
+Använd **[!UICONTROL Custom Domain Group]** för att definiera en ny domängrupp. För varje domän kan du lägga till alla underdomäner som den omfattar.<!--TBC-->
+
+Om du till exempel lägger till den anpassade domänen Luma vill du att följande underdomäner ska inkluderas: luma.com, luma.co.uk, luma.it, luma.fr, luma.de osv.
 
 ## Få åtkomst till och hantera IP-värmerelayouter {#manage-ip-warmup-plans}
 
@@ -90,12 +93,12 @@ Använd **[!UICONTROL Custom Domain Group]** för att definiera en ny domän och
 
 1. Du kan filtrera efter status. De olika statusvärdena är:
 
-   * **Inte startat**: ingen körning har aktiverats ännu. [Läs mer](ip-warmup-running.md#define-runs)
-   * **Pågår/Live**: planen får denna status så snart den första körningen i den första fasen har aktiverats. [Läs mer](ip-warmup-running.md#define-runs)
-   * **Slutförd**: planen har markerats som slutförd. Det här alternativet är bara tillgängligt om alla körningar i planen finns **[!UICONTROL Succeeded]** eller **[!UICONTROL Draft]** status (ingen körning kan utföras) **[!UICONTROL Live]**). [Läs mer](ip-warmup-running.md#define-runs#mark-as-completed)
-   * **Pausad**<!--: to check (user action)-->
+   * **Inte startat**: ingen körning har aktiverats ännu. [Läs mer](ip-warmup-execution.md#define-runs)
+   * **Live**: planen ändras till den här statusen så snart den första körningen i den första fasen har aktiverats. [Läs mer](ip-warmup-execution.md#define-runs)
+   * **Slutförd**: planen har markerats som slutförd. Det här alternativet är bara tillgängligt om alla körningar i planen finns **[!UICONTROL Succeeded]** eller **[!UICONTROL Draft]** status (ingen körning kan utföras) **[!UICONTROL Live]**). [Läs mer](ip-warmup-execution.md#define-runs#mark-as-completed)
+     <!--* **Paused**: to check (user action)-->
 
-1. Om du vill ta bort en IP-uppvärmningsplan väljer du **[!UICONTROL Delete]** -ikonen bredvid ett listobjekt och bekräfta borttagningen.
+1. Om du vill ta bort en IP-uppvärmningsplan väljer du **[!UICONTROL Delete]** -ikonen bredvid namnet på en plan och bekräfta borttagningen.
 
    ![](assets/ip-warmup-delete-plan.png)
 
@@ -122,8 +125,6 @@ När en eller flera livekampanjer med **[!UICONTROL IP warmup plan activation]**
 >[!CAUTION]
 >
 >Om du vill skapa, redigera och ta bort IP-beredskapsplanerna måste du ha **[!UICONTROL Deliverability Consultant]** behörighet. <!--Learn more on managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).-->
->
->Arbeta med din leveranskonsult för att säkerställa att din mall för IP-värmerapport är korrekt konfigurerad. <!--TBC-->
 
 1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL IP warmup plans]** menyn och klicka sedan på **[!UICONTROL Create IP warmup plan]**.
 
@@ -137,24 +138,15 @@ När en eller flera livekampanjer med **[!UICONTROL IP warmup plan activation]**
 
    >[!CAUTION]
    >
-   >Du måste välja samma yta som den som valts i kampanjen som du vill associera med din IP-värmerappsplan. [Lär dig hur du skapar en IP-värmerskampanj](#create-ip-warmup-campaign)
+   >Du måste välja samma yta som den som valts i kampanjen som du vill associera med din IP-värmerappsplan. [Lär dig hur du skapar en IP-värmerskampanj](ip-warmup-campaign.md)
 
-1. Överför den Excel-fil som innehåller din IP-värmeringsplan<!--which formats are allowed?-->. Du kan använda mallen som tillhandahålls av leveransgruppen.<!--TBC?--> [Läs mer](#upload-plan)
+1. Överför den Excel-fil som innehåller din IP-värmeringsplan. [Läs mer](#prepare-file)
+
    <!--
     You can also download the Excel template from the [!DNL Journey Optimizer] user interface and upload it after filling it with the IP warmup details.-->
 
    ![](assets/ip-warmup-upload-success.png)
 
-1. Klicka på **[!UICONTROL Create]**. Antalet faser som definieras i filen som du överförde visas automatiskt för varje fas. [Läs mer](#upload-plan)
+1. Klicka på **[!UICONTROL Create]**. Alla faser, körningar, kolumner och deras innehåll som definieras i den överförda filen visas automatiskt i [!DNL Journey Optimizer] gränssnitt. [Läs mer](ip-warmup-execution.md)
 
-   ![](assets/ip-warmup-plan-phases.png)
-
-## Ladda upp en IP-värdplan igen {#re-upload-plan}
-
-Du kan överföra ytterligare en IP-värmeringsplan med motsvarande knapp.
-
-![](assets/ip-warmup-re-upload-plan.png)
-
->[!NOTE]
->
->Information om IP-värmeringsplanen ändras enligt den nyligen överförda filen. Hela körningen och de aktiverade körningarna påverkas inte.
+   ![](assets/ip-warmup-plan-uploaded.png)

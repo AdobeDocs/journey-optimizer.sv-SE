@@ -6,13 +6,13 @@ description: Lär dig hur du skapar en IP-värmerskampanj
 feature: Application Settings
 topic: Administration
 role: Admin
-level: Experienced
-keywords: IP, pooler, grupp, underdomäner, leveransbarhet
+level: Intermediate
+keywords: IP, pooler, leveransbarhet
 hide: true
 hidefromtoc: true
-source-git-commit: 1ec2c406e777e08de97c3ad53cee5986afeb3c44
+source-git-commit: b3e5a825b881736516b3bcd1d368843c3a601100
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_ip_warmup"
 >title="Aktivera alternativet för IP-värmningsplan"
->abstract="Välj aktiveringsalternativet för IP-warmup-plan. När kampanjen är aktiv kan den kopplas till en IP-värmeringsplan."
+>abstract="När du väljer det här alternativet kan kampanjen användas i en IP-uppvärmningsplan. Kampanjschemat styrs sedan av IP-värmeringsplanen som det är kopplat till."
 
 >[!BEGINSHADEBOX]
 
@@ -31,7 +31,7 @@ Vad du hittar i den här handboken:
 * [Kom igång med IP-värmare](ip-warmup-gs.md)
 * **[Skapa IP-värmningskampanjer](ip-warmup-campaign.md)**
 * [Skapa en IP-värmeringsplan](ip-warmup-plan.md)
-* [Kör IP-värmningsplanen](ip-warmup-running.md)
+* [Kör IP-värmerappen](ip-warmup-execution.md)
 
 >[!ENDSHADEBOX]
 
@@ -45,7 +45,7 @@ Följ stegen nedan om du vill skapa en IP-värmare.
    >
    >Lär dig hur du väljer vilken domän och vilka IP-adresser som ska användas i en e-postyta i [det här avsnittet](../email/email-settings.md#subdomains-and-ip-pools).
    >
-   >Om det behövs kan du samarbeta med din leveranskonsult för att identifiera den domän och IP-adress som ska användas för din IP-värmeringsplan.<!--TBC-->
+   >Arbeta med din leveranskonsult för att identifiera den domän och de IP-adresser som ska användas för din IP-warmup-plan.<!--TBC-->
 
 1. Skapa en [kampanj](../campaigns/create-campaign.md) och väljer [E-post](../email/create-email.md#create-email-journey-campaign) åtgärd.
 
@@ -73,9 +73,9 @@ Följ stegen nedan om du vill skapa en IP-värmare.
 
    >[!NOTE]
    >
-   >För en livekampanj med aktiverad IP-uppvärmningsplan **[!UICONTROL Delete]** knappen är tillgänglig tills den är associerad med en IP-värmeringsplan. När kampanjen väl har använts i en IP-värmare kan den inte längre tas bort.
+   >För en livekampanj med aktiverad IP-uppvärmningsplan **[!UICONTROL Delete]** knappen är tillgänglig tills den är associerad med en IP-värmeringsplan. När kampanjen väl har använts i en plan kan den inte längre tas bort.
 
-1. Kampanjen visas i **[!UICONTROL Campaigns]** lista. Om du enkelt vill hämta alla IP-värmare som skapats i den aktuella sandlådan kan du filtrera efter kampanjalternativet **[!UICONTROL IP warmup]**.
+1. Kampanjen visas i **[!UICONTROL Campaigns]** lista. Om du enkelt vill hämta alla IP-värmare som skapats i den aktuella sandlådan kan du filtrera på **[!UICONTROL IP warmup]** kampanjalternativ.
 
    ![](assets/ip-warmup-campaign-filter.png)
 

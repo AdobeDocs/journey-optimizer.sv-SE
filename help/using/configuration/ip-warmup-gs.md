@@ -7,12 +7,12 @@ feature: Application Settings
 topic: Administration
 role: Admin
 level: Experienced
-keywords: IP, pooler, grupp, underdomäner, leveransbarhet
+keywords: IP, leverans
 hide: true
 hidefromtoc: true
-source-git-commit: 1ec2c406e777e08de97c3ad53cee5986afeb3c44
+source-git-commit: b3e5a825b881736516b3bcd1d368843c3a601100
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '294'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ Vad du hittar i den här handboken:
 * **[Kom igång med IP-värmare](ip-warmup-gs.md)**
 * [Skapa IP-värmningskampanjer](ip-warmup-campaign.md)
 * [Skapa en IP-värmeringsplan](ip-warmup-plan.md)
-* [Kör IP-värmningsplanen](ip-warmup-running.md)
+* [Kör IP-värmerappen](ip-warmup-execution.md)
 
 >[!ENDSHADEBOX]
 
@@ -49,7 +49,7 @@ Med [!DNL Journey Optimizer]kan du enkelt utföra arbetsflöden för IP-värmare
 
 När e-postmeddelanden skickas via en ny plattform, är Internetleverantörer (ISP) misstänkta för IP-adresser som inte känns igen. Om stora mängder e-postmeddelanden plötsligt skickas markerar internetleverantörerna dem ofta som skräppost.
 
-För att undvika att markeras som skräppost kan du öka volymen som skickas stegvis med funktionen för IP-uppvärmningsplan. Ett nytt alternativ i **[!UICONTROL Administration]** gör att du kan göra det smidigare i stället för att skapa komplexa dagliga resor. Detta bör säkerställa en smidig utveckling av startfasen och göra det möjligt att minska den totala frekvensen av ogiltiga adresser.
+För att undvika att markeras som skräppost kan du öka volymen som skickas stegvis med funktionen för IP-värmerappning. Det här nya alternativet i **[!UICONTROL Administration]** gör det enklare att göra det på ett konsoliderat sätt i stället för att skapa komplexa dagliga resor. Detta bör säkerställa en smidig utveckling av startfasen och göra det möjligt att minska den totala frekvensen av ogiltiga adresser.
 
 >[!NOTE]
 >
@@ -69,8 +69,8 @@ Benefits
 
 De viktigaste stegen för att implementera en plan för IP-uppvärmning är följande:
 
-1. Du måste först skapa en eller flera kampanjer med alternativet IP-värmare aktiverat. [Läs mer](ip-warmup-campaign.md) <!--this is usually done by a marketer persona??)-->
+1. Du måste först skapa en eller flera kampanjer med alternativet IP-värmare aktiverat. [Läs mer](ip-warmup-campaign.md)
 
-1. Skapa en IP-värmeringsplan i [!DNL Journey Optimizer] och överför Excel-bladet som tidigare fyllts i med dina IP-värmeradata. [Läs mer](ip-warmup-plan.md) <!--this is usually done by a deliverability consultant??-->
+1. Skapa en IP-värmeringsplan i [!DNL Journey Optimizer] och ladda upp Excel-bladet som har tagits fram av er återförsäljare. [Läs mer](ip-warmup-plan.md)
 
-1. Välj en kampanj för varje fas i planen och aktivera motsvarande körningar. [Läs mer](ip-warmup-running.md)
+1. Välj en kampanj för varje fas i planen och aktivera motsvarande körningar. [Läs mer](ip-warmup-execution.md)

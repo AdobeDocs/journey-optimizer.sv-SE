@@ -5,9 +5,9 @@ title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 hide: true
 hidefromtoc: true
-source-git-commit: 1bf010b247b3683c6171bc387c9b94ab1b5dcefc
+source-git-commit: b3e5a825b881736516b3bcd1d368843c3a601100
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '586'
 ht-degree: 3%
 
 ---
@@ -96,7 +96,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Webbkanal**
 
-* Enkelsidiga program (SPA) kan nu redigeras i webbdesignerns visuella redigerare. Nu kan du välja vilka specifika vyer du vill använda webbsidesändringarna på. En vy kan definieras som en hel webbplats eller som en grupp visuella element på en webbplats, till exempel hemsidan, hela produktwebbplatsen eller leveransinställningsramen på alla utcheckningssidor. Det krävs en engångsinstallation av utvecklare för att definiera vyerna i Adobe Experience Platform Web SDK-implementeringen, vilket gör att marknadsförarna kan skapa och köra Adobe Journey Optimizer webbkampanjer SPA.
+* Enkelsidiga program (SPA) kan nu redigeras i webbdesignerns visuella redigerare, där du kan välja vilka specifika vyer du vill använda webbsidesändringarna på. En vy kan definieras som en hel webbplats eller som en grupp visuella element på en webbplats, till exempel hemsidan, hela produktwebbplatsen eller leveransinställningsramen på alla utcheckningssidor. Om du vill skapa och köra Adobe Journey Optimizer webbkampanjer på SPA måste du konfigurera en gång för utvecklare för att definiera vyerna i Adobe Experience Platform Web SDK-implementeringen.
 
 * När du redigerar en sida med hjälp av webbdesignern kan du nu lägga till nya ändringar i innehållet direkt från **Ändringar** utan att behöva markera en komponent och redigera den i designergränssnittet.
 * När du konfigurerar webbunderdomäner kan du nu lägga till en egen underdomän, förutom att använda en underdomän som redan har delegerats till Adobe.
