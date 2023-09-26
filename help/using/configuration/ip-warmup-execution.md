@@ -10,9 +10,9 @@ level: Experienced
 keywords: IP, grupp, underdomäner, leveransbarhet
 hide: true
 hidefromtoc: true
-source-git-commit: b3e5a825b881736516b3bcd1d368843c3a601100
+source-git-commit: ac1a9840123f52daca1c18b7f7c0f07af63bae2c
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1232'
 ht-degree: 0%
 
 ---
@@ -41,11 +41,13 @@ Varje fas består av flera körningar, som ni tilldelar en enda kampanj till.
 >title="Uteslut kampanjmålgrupper"
 >abstract="Välj de målgrupper från andra kampanjer som du vill utesluta från den aktuella fasen. Detta är för att förhindra att tidigare kontaktade profiler från andra faser eller andra IP-uppvärmningsplaner målas igen."
 
+<!--
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_domains_excluded"
->title="Uteslut domängrupper"
->abstract="Välj de domäner som du vill utesluta från den aktuella fasen. Domänundantag kräver en icke-körd fas, så du kan behöva dela en pågående fas för att lägga till undantag."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/implement-ip-warmup-plan/ip-warmup-running.html#split-phase" text="Dela en fas"
+>title="Exclude domain groups"
+>abstract="Select the domains that you want to exclude from the current phase. Domain exclusion requires a non-executed phase, so you may have to split a running phase to add exclusions."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/implement-ip-warmup-plan/ip-warmup-running.html#split-phase" text="Split a phase"
+-->
 
 <!--You need to associate the campaign and audience at phase level and turns on some settings as needed for all runs associated with a single creative/campaign
 
