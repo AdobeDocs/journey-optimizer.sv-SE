@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: e0564971b18932d311d44a31a0b3acafa467e809
+source-git-commit: 28c98b8982123f0538ca86870a82bdd6228dd674
 workflow-type: tm+mt
-source-wordcount: '3975'
+source-wordcount: '4023'
 ht-degree: 8%
 
 ---
@@ -30,6 +30,23 @@ Noteringarna nedan kan ändras utan föregående meddelande fram till releasedat
 ### Nya funktioner{#sept-2023-features}
 
 Den här versionen innehåller de nya funktionerna som listas nedan.
+
+<table>
+<thead>
+<tr>
+<th><strong>Beräknade attribut</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Beräknade attribut gör det enkelt att sammanfatta händelsedata i profilattribut via ett intuitivt användargränssnitt för förbättrad beteendebaserad segmentering, personalisering och aktivering. Med den här funktionen kan du skapa beräknade attribut på ett självbetjäningssätt, hantera dem och använda dem vid segmentering, kundprofilmål i realtid eller Journey Optimizer.<br/><br/>
+Beräknade attribut förenklar dessutom arbetsflödena för segmentering och resor så att ni smidigt kan leverera relevanta upplevelser. Läs mer i <a href="https://experienceleague.adobe.com/docs/experience-platform/profile/computed-attributes/overview.html">detaljerad dokumentation</a>.</p>
+<img src="assets/computed-attributes.png">
+</tr>
+</tbody>
+</table>
+
 
 <table>
 <thead>
@@ -92,7 +109,6 @@ Den här versionen innehåller de förbättringar som anges nedan.
 **Personalisering**
 
 * Förutom visuella fragment går det nu att skapa, spara och återanvända uttrycksfragment från Journey Optimizer-gränssnittet via uttrycksredigeraren. Uttrycksfragment ersätter uttryck som sparats tidigare.
-* Nu kan du använda Adobe Experience Platform beräknade attribut för personalisering i Journey Optimizer. Beräknade attribut är aggregerade värden som beräknas baserat på profilaktiverade Experience Event-datamängder som importerats till Adobe Experience Platform.
 
 **Varningar**
 
