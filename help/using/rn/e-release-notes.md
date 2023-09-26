@@ -5,7 +5,7 @@ title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 hide: true
 hidefromtoc: true
-source-git-commit: 5edd643f7e93ade8d12515c83dc6321c96fe3c77
+source-git-commit: 75a03fbd6a369d9b8f75db819cfa995257eaf77f
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 3%
@@ -85,8 +85,9 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <tbody>
 <tr>
 <td>
-<p>Med beräknade attribut kan man enkelt sammanfatta händelsedata i profilattribut via ett intuitivt användargränssnitt för förbättrad beteendebaserad segmentering, personalisering och aktivering. Med den här funktionen kan du skapa beräknade attribut på ett självbetjäningssätt, hantera dem och använda dem vid segmentering, kundprofilmål i realtid eller Journey Optimizer. <br/>
+<p>Beräknade attribut gör det enkelt att sammanfatta händelsedata i profilattribut via ett intuitivt användargränssnitt för förbättrad beteendebaserad segmentering, personalisering och aktivering. Med den här funktionen kan du skapa beräknade attribut på ett självbetjäningssätt, hantera dem och använda dem vid segmentering, kundprofilmål i realtid eller Journey Optimizer.<br/><br/>
 Beräknade attribut förenklar dessutom arbetsflödena för segmentering och resor så att ni smidigt kan leverera relevanta upplevelser. Läs mer i <a href="https://experienceleague.adobe.com/docs/experience-platform/profile/computed-attributes/overview.html">detaljerad dokumentation</a>.</p>
+<img src="assets/computed-attributes.png">
 </tr>
 </tbody>
 </table>
