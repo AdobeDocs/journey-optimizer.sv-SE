@@ -10,7 +10,7 @@ level: Experienced
 keywords: IP, grupp, underdomäner, leveransbarhet
 hide: true
 hidefromtoc: true
-source-git-commit: 4c148733f2c6046c352135757d4a378b4bbb948e
+source-git-commit: 8a6cb63314c48f6a13d847f3d68790f11fb7b73b
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Varje fas består av flera körningar, som ni tilldelar en enda kampanj till.
 >id="ajo_admin_ip_warmup_domains_excluded"
 >title="Uteslut domängrupper"
 >abstract="Välj de domäner som du vill utesluta från den aktuella fasen. Domänundantag kräver en icke-körd fas, så du kan behöva dela en pågående fas för att lägga till undantag."
->additional-url="https://experienceleague.corp.adobe.com/docs/journey-optimizer/using/configuration/implement-ip-warmup-plan/ip-warmup-execution.html#split-phase" text="Dela en fas"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/implement-ip-warmup-plan/ip-warmup-execution.html#split-phase" text="Dela en fas"
 
 <!--You need to associate the campaign and audience at phase level and turns on some settings as needed for all runs associated with a single creative/campaign
 
