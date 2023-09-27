@@ -6,9 +6,9 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 683f8b86-8545-46d0-a4a8-25c5b3c7b9c3
-source-git-commit: 5fa3c0c39de43450b199a41c4a4a032674dd4887
+source-git-commit: 805f7bdc921c53f63367041afbb6198d0ec05ad8
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '140'
 ht-degree: 6%
 
 ---
@@ -17,21 +17,20 @@ ht-degree: 6%
 
 Samlingar är delmängder av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare, t.ex. erbjudandets kategori.
 
-Du kan skapa en samling genom att göra en POST-förfrågan till [!DNL Offer Library] API, samtidigt som du anger ditt behållar-ID.
+Du kan skapa en samling genom att göra en POST-förfrågan till [!DNL Offer Library] API.
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
-I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
+I följande tabell visas giltiga värden som utgör *Content-Type* fält i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
-| Acceptera | `application/vnd.adobe.platform.xcore.xdm.receipt+json; version=1` |
-| Content-Type | `application/schema-instance+json; version=1;  schema="https://ns.adobe.com/experience/offer-management/offer-filter;version=0.1"` |
+| Content-Type | `application/json` |
 
 **API-format**
 
 ```http
-POST /{ENDPOINT_PATH}/{CONTAINER_ID}/instances
+POST /{ENDPOINT_PATH}/offer-collections
 ```
 
 | Parameter | Beskrivning | Exempel |
@@ -41,21 +40,23 @@ POST /{ENDPOINT_PATH}/{CONTAINER_ID}/instances
 **Begäran**
 
 ```shell
-curl -X POST \
-  'https://platform.adobe.io/data/core/xcore/e0bd8463-0913-4ca1-bd84-6309134ca1f6/instances' \
-  -H 'Accept: application/vnd.adobe.platform.xcore.xdm.receipt+json; version=1' \
-  -H 'Content-Type: application/schema-instance+json; version=1;  schema="https://ns.adobe.com/experience/offer-management/offer-filter;version=0.1"' \
-  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
-  -H 'x-api-key: {API_KEY}' \
-  -H 'x-gw-ims-org-id: {IMS_ORG}' \
-  -H 'x-sandbox-name: {SANDBOX_NAME}' \
-  -d '{
-        "xdm:name": "Offer Collection 1",
-        "xdm:filterType": "anyTags",
-        "xdm:ids": [
-            "xcore:tag:124e147572cd7866"
-        ]
-    }'
+curl -X POST 'https://platform.adobe.io/data/core/offer-collections' \
+-H 'Content-Type: application/json' \
+-H 'Authorization: Bearer {ACCESS_TOKEN}' \
+-H 'x-api-key: {API_KEY}' \
+-H 'x-gw-ims-org-id: {IMS_ORG}' \
+-H 'x-sandbox-name: {SANDBOX_NAME}' \
+-d '{
+    "name": "Test Collection with tags",
+    "filterType": "any-tags",
+    "ids": [
+        "tag1234"
+    ],
+    "labels": [
+        "core/C5",
+        "custom/myLabel"
+    ]
+}'
 ```
 
 **Svar**
@@ -64,14 +65,14 @@ Ett godkänt svar returnerar information om den nyligen skapade samlingen, inklu
 
 ```json
 {
-    "instanceId": "0bf31c20-13f1-11eb-a752-e58fd7dc4cb3",
-    "@id": "xcore:offer-filter:124e3594ce8b4930",
-    "repo:etag": 1,
-    "repo:createdDate": "2020-10-21T22:59:17.345797Z",
-    "repo:lastModifiedDate": "2020-10-21T22:59:17.345797Z",
-    "repo:createdBy": "{CREATED_BY}",
-    "repo:lastModifiedBy": "{MODIFIED_BY}",
-    "repo:createdByClientId": "{CREATED_CLIENT_ID}",
-    "repo:lastModifiedByClientId": "{MODIFIED_CLIENT_ID}"
+    "etag": 1,
+    "createdBy": "{CREATED_BY}",
+    "lastModifiedBy": "{MODIFIED_BY}",
+    "id": "{ID}",
+    "sandboxId": "{SANDBOX_ID}",
+    "createdDate": "2023-05-31T15:09:11.771Z",
+    "lastModifiedDate": "2023-05-31T15:09:11.771Z",
+    "createdByClientId": "{CREATED_CLIENT_ID}",
+    "lastModifiedByClientId": "{MODIFIED_CLIENT_ID}"
 }
 ```

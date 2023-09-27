@@ -6,43 +6,41 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 335c1b80-f1f0-4fd0-add8-84b8cc5e2e00
-source-git-commit: ccc3ad2b186a64b9859a5cc529fe0aefa736fc00
+source-git-commit: 805f7bdc921c53f63367041afbb6198d0ec05ad8
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '116'
 ht-degree: 1%
 
 ---
 
 # Ta bort en samlingskvalificerare {#delete-tag}
 
-Ibland kan det vara nödvändigt att ta bort (DELETE) en samlingskvalificerare (tidigare kallad &quot;tagg&quot;). Endast samlingskvalificerare som du skapar i innehavarbehållaren kan tas bort. Detta görs genom att en DELETE-begäran görs till [!DNL Offer Library] API som använder $id för den samlingskvalificerare som du vill ta bort.
+Ibland kan det vara nödvändigt att ta bort (DELETE) en samlingskvalificerare (tidigare kallad &quot;tagg&quot;). Detta görs genom att en DELETE-begäran görs till [!DNL Offer Library] API som använder ID:t för den samlingskvalificerare som du vill ta bort.
 
 **API-format**
 
 ```http
-DELETE /{ENDPOINT_PATH}/{CONTAINER_ID}/instances/{INSTANCE_ID}
+DELETE /{ENDPOINT_PATH}/tags/{ID}
 ```
 
 | Parameter | Beskrivning | Exempel |
 | --------- | ----------- | ------- |
-| `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
-| `{CONTAINER_ID}` | Behållaren där samlingskvalificerarna finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
-| `{INSTANCE_ID}` | Instans-ID för den samlingskvalificerare som du vill uppdatera. | `d48fd160-13dc-11eb-bc55-c11be7252432` |
+| `{ENDPOINT_PATH}` | Slutpunktssökvägen för beständiga API:er. | `https://platform.adobe.io/data/core/dps/` |
+| `{ID}` | ID:t för enheten som du vill ta bort. | `tag1234` |
 
 **Begäran**
 
 ```shell
-curl -X DELETE \
-  'https://platform.adobe.io/data/core/xcore/e0bd8463-0913-4ca1-bd84-6309134ca1f6/instances/d48fd160-13dc-11eb-bc55-c11be7252432' \
-  -H 'Accept: application/vnd.adobe.platform.xcore.xdm.receipt+json; version=1' \
-  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
-  -H 'x-api-key: {API_KEY}' \
-  -H 'x-gw-ims-org-id: {IMS_ORG}' \
-  -H 'x-sandbox-name: {SANDBOX_NAME}'
+curl -X DELETE 'https://platform.adobe.io/data/core/dps/tags/tag1234' \
+-H 'Content-Type: application/json' \
+-H 'Authorization: Bearer  {ACCESS_TOKEN}' \
+-H 'x-api-key: {API_KEY}' \
+-H 'x-gw-ims-org-id: {IMS_ORG}' \
+-H 'x-sandbox-name: {SANDBOX_NAME}'
 ```
 
 **Svar**
 
-Ett lyckat svar returnerar HTTP-status 202 (inget innehåll) och en tom brödtext.
+Ett lyckat svar returnerar HTTP-status 200 och en tom brödtext.
 
-Du kan bekräfta borttagningen genom att försöka med en sökbegäran (GET) till samlingskvalificeraren. Du måste inkludera en Accept-rubrik i begäran, men du bör få HTTP-status 404 (Hittades inte) eftersom samlingskvalificeraren har tagits bort från behållaren.
+Du kan bekräfta borttagningen genom att försöka med en sökbegäran (GET) till samlingskvalificeraren och få HTTP-statusen 404 (Hittades inte) eftersom den har tagits bort.

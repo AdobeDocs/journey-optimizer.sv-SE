@@ -6,10 +6,10 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 97dc9af3-ca31-4512-aad2-f959dfc9ad0b
-source-git-commit: ccc3ad2b186a64b9859a5cc529fe0aefa736fc00
+source-git-commit: 805f7bdc921c53f63367041afbb6198d0ec05ad8
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 6%
+source-wordcount: '158'
+ht-degree: 7%
 
 ---
 
@@ -17,88 +17,97 @@ ht-degree: 6%
 
 Ett personaliserat erbjudande är ett anpassningsbart marknadsföringsmeddelande som baseras på regler och begränsningar för behörighet.
 
-Du kan skapa ett personaliserat erbjudande genom att göra en POST till [!DNL Offer Library] API, samtidigt som du anger ditt behållar-ID.
+Du kan skapa ett personaliserat erbjudande genom att göra en POST till [!DNL Offer Library] API.
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
-I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
+I följande tabell visas giltiga värden som utgör *Content-Type* fält i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
-| Acceptera | `application/vnd.adobe.platform.xcore.xdm.receipt+json; version=1` |
+| Content-Type | `application/json` |
 | Content-Type | `application/schema-instance+json; version=1;  schema="https://ns.adobe.com/experience/offer-management/personalized-offer;version=0.5"` |
 
 **API-format**
 
 ```http
-POST /{ENDPOINT_PATH}/{CONTAINER_ID}/instances
+POST /{ENDPOINT_PATH}/offers/{ID}?offer-type=personalized
 ```
 
 | Parameter | Beskrivning | Exempel |
 | --------- | ----------- | ------- |
-| `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
-| `{CONTAINER_ID}` | Behållaren där personaliserade erbjudanden finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
+| `{ENDPOINT_PATH}` | Slutpunktssökvägen för beständiga API:er. | `https://platform.adobe.io/data/core/dps/` |
 
 **Begäran**
 
 ```shell
-curl -X POST \
-  'https://platform.adobe.io/data/core/xcore/e0bd8463-0913-4ca1-bd84-6309134ca1f6/instances' \
-  -H 'Accept: application/vnd.adobe.platform.xcore.xdm.receipt+json; version=1' \
-  -H 'Content-Type: application/schema-instance+json; version=1;  schema="https://ns.adobe.com/experience/offer-management/personalized-offer;version=0.5"' \
-  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
-  -H 'x-api-key: {API_KEY}' \
-  -H 'x-gw-ims-org-id: {IMS_ORG}' \
-  -H 'x-sandbox-name: {SANDBOX_NAME}' \
-  -d '{
-        "xdm:name": "Sale offer",
-        "xdm:status": "draft",
-        "xdm:representations": [
-            {
-                "xdm:components": [
-                    {
-                        "dc:language": [
-                            "en"
-                        ],
-                        "@type": "https://ns.adobe.com/experience/offer-management/content-component-html",
-                        "dc:format": "text/html"
-                    }
-                ],
-                "xdm:placement": "xcore:offer-placement:124e0be5699743d3"
+curl -X POST 'https://platform.adobe.io/data/core/dps/offers?offer-type=personalized' \
+-H 'Content-Type: application/json' \
+-H 'Authorization: Bearer {ACCESS_TOKEN}' \
+-H 'x-api-key: {API_KEY}' \
+-H 'x-gw-ims-org-id: {IMS_ORG}' \
+-H 'x-sandbox-name: {SANDBOX_NAME}' \
+-d '{
+    "name": "Test personalized offer with frequency constraint",
+    "status": "draft",
+    "representations": [
+        {
+            "channel": "https://ns.adobe.com/xdm/channel-types/web",
+            "placement": "offerPlacement1234",
+            "components": [
+                {
+                    "type": "html",
+                    "format": "text/html",
+                    "language": [
+                        "en-us"
+                    ],
+                    "content": "Hello You qualify for our Discount of 60%"
+                }
+            ]
+        }
+    ],
+    "selectionConstraint": {
+        "startDate": "2022-07-27T05:00:00.000+00:00",
+        "endDate": "2023-07-29T05:00:00.000+00:00",
+        "profileConstraintType": "none"
+    },
+    "rank": {
+        "priority": 0
+    },
+    "cappingConstraint": {},
+    "frequencyCappingConstraints": [
+        {
+            "enabled": false,
+            "limit": 1,
+            "startDate": "2023-05-15T14:25:49.622+00:00",
+            "endDate": "2023-05-25T14:25:49.622+00:00",
+            "scope": "global",
+            "entity": "offer",
+            "repeat": {
+                "enabled": false,
+                "unit": "month",
+                "unitCount": 1
             }
-        ],
-        "xdm:selectionConstraint": {
-            "xdm:startDate": "2020-10-01T16:00:00Z",
-            "xdm:endDate": "2021-12-13T16:00:00Z",
-            "xdm:eligibilityRule": "xcore:eligibility-rule:124e0faf5b8ee89b"
-        },
-        "xdm:rank": {
-            "xdm:priority": 1
-        },
-        "xdm:cappingConstraint": {
-            "xdm:globalCap": 150
-        },
-        "xdm:tags": [
-            "xcore:tag:124e147572cd7866"
-        ]
-    }'
+        }
+    ]
+}'
 ```
 
 **Svar**
 
-Ett lyckat svar returnerar information om det nya personaliserade erbjudandet, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort ditt anpassade erbjudande.
+Ett lyckat svar returnerar information om det nya personaliserade erbjudandet, inklusive ID. Du kan använda `id` i senare steg för att uppdatera eller ta bort ditt personaliserade erbjudande.
 
 ```json
 {
-    "instanceId": "0f4bc230-13df-11eb-bc55-c11be7252432",
-    "@id": "xcore:personalized-offer:124e181c8b0d7878",
-    "repo:etag": 1,
-    "repo:createdDate": "2020-10-21T20:50:32.018624Z",
-    "repo:lastModifiedDate": "2020-10-21T20:50:32.018624Z",
-    "repo:createdBy": "{CREATED_BY}",
-    "repo:lastModifiedBy": "{MODIFIED_BY}",
-    "repo:createdByClientId": "{CREATED_CLIENT_ID}",
-    "repo:lastModifiedByClientId": "{MODIFIED_CLIENT_ID}"
+    "etag": 1,
+    "createdBy": "{CREATED_BY}",
+    "lastModifiedBy": "{MODIFIED_BY}",
+    "id": "{ID}",
+    "sandboxId": "{SANDBOX_ID}",
+    "createdDate": "2023-05-31T15:09:11.771Z",
+    "lastModifiedDate": "2023-05-31T15:09:11.771Z",
+    "createdByClientId": "{CREATED_CLIENT_ID}",
+    "lastModifiedByClientId": "{MODIFIED_CLIENT_ID}"
 }
 ```
 

@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 773bee50-849f-4b07-9423-67de5279ad28
-source-git-commit: ccc3ad2b186a64b9859a5cc529fe0aefa736fc00
+source-git-commit: 805f7bdc921c53f63367041afbb6198d0ec05ad8
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '349'
 ht-degree: 3%
 
 ---
@@ -39,94 +39,15 @@ För att ringa [!DNL Adobe Experience Platform] API:er måste du först slutför
 * `Authorization: Bearer {ACCESS_TOKEN}`
 * `x-api-key: {API_KEY}`
 * `x-gw-ims-org-id: {IMS_ORG}`
+* `x-sandbox-name: {SANDBOX_NAME}`
 
 Alla begäranden som innehåller en nyttolast (POST, PUT, PATCH) kräver ytterligare en rubrik:
 
 * `Content-Type: application/json`
 
-## Hantera åtkomst till en behållare {#manage-access-to-container}
-
-En behållare är en isoleringsmekanism för att hålla olika bekymmer isär. Behållar-ID är det första sökvägselementet för alla databas-API:er. Alla beslutsobjekt finns i en behållare.
-
-En administratör kan gruppera liknande principer, resurser och åtkomstbehörigheter i profiler. Detta minskar handläggningsbördan och stöds av [Adobe Admin Console](https://adminconsole.adobe.com/). Du måste vara produktadministratör för Adobe Experience Platform i din organisation för att kunna skapa profiler och tilldela användare till dem. Det räcker med att skapa produktprofiler som matchar vissa behörigheter i ett enda steg och sedan lägga till användare i dessa profiler. Profiler fungerar som grupper som har beviljats behörigheter och alla verkliga användare eller tekniska användare i gruppen ärver dessa behörigheter.
-
-Administratörsbehörighet kan du ge eller återkalla behörigheter till användare via [Adobe Admin Console](https://adminconsole.adobe.com/){target="_blank"}. For more information, see the [Access control overview](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html){target="_blank"}.
-
-### Visa behållare som är tillgängliga för användare och integreringar {#list-containers-accessible-to-users-and-integrations}
-
-**API-format**
-
-```http
-GET /{ENDPOINT_PATH}?product={PRODUCT_CONTEXT}&property={PROPERTY}==decisioning
-```
-
-| Parameter | Beskrivning | Exempel |
-| --------- | ----------- | ------- |
-| `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
-| `{PRODUCT_CONTEXT}` | Filtrerar listan med behållare efter deras koppling till produktkontexter. | `acp` |
-| `{PROPERTY}` | Filtrerar den typ av behållare som returneras. | `_instance.containerType==decisioning` |
-
-**Begäran**
-
-```shell
-curl -X GET \
-  'https://platform.adobe.io/data/core/xcore/?product=acp&property=_instance.containerType==decisioning' \
-  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
-  -H 'x-api-key: {API_KEY}' \
-  -H 'x-gw-ims-org-id: {IMS_ORG}' \
-  -H 'x-sandbox-name: {SANDBOX_NAME}'
-```
-
-**Svar**
-
-Ett lyckat svar returnerar information om beslutsbehållare. Detta inkluderar `instanceId` -attribut, vars värde är ditt behållar-ID.
-
-```json
-{
-    "_embedded": {
-        "https://ns.adobe.com/experience/xcore/container": [
-            {
-                "instanceId": "{INSTANCE_ID}",
-                "schemas": [
-                    "https://ns.adobe.com/experience/xcore/container;version=0.5"
-                ],
-                "productContexts": [
-                    "acp"
-                ],
-                "repo:etag": 2,
-                "repo:createdDate": "2020-09-16T07:54:28.319959Z",
-                "repo:lastModifiedDate": "2020-09-16T07:54:32.098139Z",
-                "repo:createdBy": "{CREATED_BY}",
-                "repo:lastModifiedBy": "{MODIFIED_BY}",
-                "repo:createdByClientId": "{CREATED_CLIENT_ID}",
-                "repo:lastModifiedByClientId": "{MODIFIED_CLIENT_ID}",
-                "_instance": {
-                    "containerType": "decisioning",
-                    "repo:name": "{REPO_NAME}",
-                    "dataCenter": "{DATA_CENTER}",
-                    "parentName": "{PARENT_NAME}",
-                    "parentId": "{PARENT_ID}"
-                },
-                "_links": {
-                    "self": {
-                        "href": "/containers/{INSTANCE_ID}"
-                    }
-                }
-            }
-        ]
-    },
-    "_links": {
-        "self": {
-            "href": "/?product=acp&property=_instance.containerType==decisioning",
-            "@type": "https://ns.adobe.com/experience/xcore/hal/home"
-        }
-    }
-}
-```
-
 ## Nästa steg {#next-steps}
 
-Det här dokumentet innehöll de nödvändiga kunskaperna som krävs för att ringa till [!DNL Offer Library] API, inklusive att hämta ditt behållar-ID. Du kan nu gå vidare till exempelsamtalen i den här utvecklarhandboken och följa med i instruktionerna för dessa.
+Det här dokumentet innehöll de nödvändiga kunskaperna som krävs för att ringa till [!DNL Offer Library] API. Du kan nu gå vidare till exempelsamtalen i den här utvecklarhandboken och följa med i instruktionerna för dessa.
 <!--
 >[!NOTE]
 >
