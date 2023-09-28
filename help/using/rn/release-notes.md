@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 28c98b8982123f0538ca86870a82bdd6228dd674
+source-git-commit: 6230eb26ca577398c09465207b27e87ea3d813d2
 workflow-type: tm+mt
-source-wordcount: '4023'
+source-wordcount: '4068'
 ht-degree: 8%
 
 ---
@@ -137,6 +137,10 @@ Ett nytt alternativ i konfigurationen av e-postytan gör att du kan välja att s
 **SMS-kanal**
 
 Två nya fält, **Inloggningsmeddelande** och **Hjälpmeddelande**, har lagts till i API-konfigurationsskärmen, vilket gör att användare kan anpassa svar för inkommande nyckelord. Observera att det här endast är tillgängligt för SMS-providern för Sinch.
+
+**Direktpostkanal**
+
+Nu kan du kryptera filer som är avsedda för direktreklamleverantörer när de överförs till en server. För att göra detta finns ett nytt fält tillgängligt på konfigurationsskärmen för filroutning, som gör att du kan kopiera och klistra in krypteringsnyckeln.
 
 **Rapportering**
 
