@@ -7,9 +7,9 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 7c56deac0deb0863fff5ad9416d69f632f92acc8
+source-git-commit: 3de5f29c8a79ab540ffc961c3e4d4850a8b93ab3
 workflow-type: tm+mt
-source-wordcount: '1655'
+source-wordcount: '1656'
 ht-degree: 1%
 
 ---
@@ -307,7 +307,7 @@ The **[!UICONTROL Exclude Reasons]** och **[!UICONTROL Error Reasons]** Med diag
 +++
 
 
-## Instruktionsvideo {#channel-report-video}
+## Kanalrapport (video) {#channel-report-video}
 
 Lär dig hur du får åtkomst till, navigerar och exporterar rapporter på kanalnivå i den här videon
 
