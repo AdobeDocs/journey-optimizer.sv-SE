@@ -6,9 +6,9 @@ description: Lär dig hur du arbetar med beräknade attribut.
 feature: Profiles
 role: User
 level: Beginner
-source-git-commit: d2619b3b3871073b35faf04adba71dbb1ddd29a1
+source-git-commit: 608394da88d42095a1adc517a067c725eac52707
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Varje beräknat attribut är ett profilattribut som ni kan använda för segment
 
 Om du vill skapa beräknade attribut går du till **[!UICONTROL Computed attributes]** i **[!UICONTROL Profiles]** menyn till vänster.
 
-Från den här skärmen kan du skapa beräknade attribut genom att skapa regler som kombinerar händelseattribut, aggregeringsfunktioner och en angiven uppslagsperiod. Du kan till exempel beräkna summan av inköp som gjorts under de senaste tre månaderna, identifiera den senaste artikeln som visas av en profil som inte har gjort ett köp den senaste veckan eller räkna upp de totala belöningspoängen som ackumulerats av varje profil.
+Från den här skärmen kan du skapa beräknade attribut genom att skapa regler som kombinerar händelseattribut, sammanställningsfunktioner och en angiven uppslagsperiod. Du kan till exempel beräkna summan av inköp som gjorts de senaste tre månaderna, identifiera den senaste artikeln som visas av en profil som inte har gjort ett köp den senaste veckan eller räkna upp de totala belöningspoängen som ackumulerats av varje profil.
 
 ![](assets/computed-attributes.png)
 
@@ -66,6 +66,6 @@ Detaljerad information om hur du lägger till fältgrupper i Adobe Experience Pl
 
 Beräknade attribut erbjuder en mångsidig uppsättning funktioner i Journey-optimeraren. Du kan använda dem för olika syften, till exempel för att personalisera meddelandeinnehåll, skapa nya målgrupper eller dela upp resor baserat på ett specifikt beräknat attribut. Du kan t.ex. dela upp en resa baserat på en profils totala inköp de senaste tre veckorna genom att lägga till ett enda beräknat attribut i en villkorsaktivitet. Du kan också anpassa ett e-postmeddelande genom att visa det senast visade objektet för varje profil.
 
-Eftersom beräknade attribut är profilattributfält som skapats i ditt profilföreningsschema kan du komma åt dem från uttrycksredigeraren i **SystemComputedAttributes** fältgrupp. Därifrån kan du sedan lägga till ett beräknat attribut i dina uttryck och behandla dem som vilket annat profilattribut som helst för att utföra de önskade åtgärderna.
+Eftersom beräknade attribut är profilattributfält som skapats i ditt profilföreningsschema kan du komma åt dem från uttrycksredigeraren i **SystemComputedAttributes** fältgrupp. Därifrån kan du lägga till ett beräknat attribut i dina uttryck och behandla dem som vilket annat profilattribut som helst för att utföra de önskade åtgärderna.
 
 ![](assets/computed-attributes-ajo.png)
