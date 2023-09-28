@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: ec15e700-7659-4dbf-8446-6534ea48c5c8
-source-git-commit: 9a1eea69c47ace2ad9bbd1d4668007b8ea1796fc
+source-git-commit: 92cf1d4a350359adbbad93c4006ec7a0e3902397
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 0%
@@ -77,20 +77,6 @@ Du kan enkelt exportera dina olika rapporter till PDF eller CSV-format så att d
 
 >[!BEGINTABS]
 
->[!TAB Exportera rapporten som en PDF-fil]
-
-1. Klicka på **[!UICONTROL Export]** och markera **[!UICONTROL PDF file]**.
-
-   ![](assets/export_2.png)
-
-1. Konfigurera dokumentet i utskriftsfönstret efter behov. Observera att alternativen kan variera beroende på vilken webbläsare du använder.
-
-1. Skriv ut eller spara rapporten som PDF.
-
-1. Leta reda på mappen där du vill spara filen, byt namn på den om det behövs och klicka på Spara.
-
-Din rapport är nu tillgänglig för visning eller delning i en PDF-fil.
-
 >[!TAB Exportera rapporten som en CSV-fil]
 
 1. Klicka på **[!UICONTROL Export]** och markera **[!UICONTROL CSV file]** för att generera en CSV-fil på övergripande rapportnivå.
@@ -106,5 +92,21 @@ Din rapport är nu tillgänglig för visning eller delning i en PDF-fil.
    Om du genererade filen på rapportnivå innehåller den detaljerad information för varje widget, inklusive dess titel och data.
 
    Om du genererade filen på widgetnivå, innehåller den specifikt data för den valda widgeten.
+
+>[!TAB Exportera rapporten som en PDF-fil]
+
+1. Klicka på **[!UICONTROL Export]** och markera **[!UICONTROL PDF file]**.
+
+   ![](assets/export_2.png)
+
+1. Konfigurera dokumentet i utskriftsfönstret efter behov. Observera att alternativen kan variera beroende på vilken webbläsare du använder.
+
+1. Skriv ut eller spara rapporten som PDF.
+
+1. Leta reda på mappen där du vill spara filen, byt namn på den om det behövs och klicka på Spara.
+
+Din rapport är nu tillgänglig för visning eller delning i en PDF-fil.
+
+
 
 >[!ENDTABS]
