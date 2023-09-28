@@ -4,17 +4,15 @@ description: Lär dig implementera SPA i Journey Optimizer
 feature: Web Channel
 topic: Content Management
 role: User
-level: Beginner
-hide: true
-hidefromtoc: true
-source-git-commit: 59412ecbb8df74c7185b67593131c610d6da4148
+level: Intermediate
+source-git-commit: 2c1b53120913580be627b0a26cf4b386f32fcf1b
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
 
-# Programimplementering på en sida {#web-spa-implementation}
+# Implementera single-page-applikationer (SPA) {#web-spa-implementation}
 
 Adobe Experience Platform Web SDK innehåller många funktioner som gör det möjligt för ditt företag att utföra personalisering på nästa generations klientteknik, till exempel ensidiga program (SPA).
 
@@ -24,7 +22,7 @@ Moderna webbprogram, som appar för en sida (SPA), har i stället antagit en mod
 
 ![](assets/web-spa-vs-traditional-lifecycle.png)
 
-## Fördelar med AEP Web SDK för SPA
+## Fördelar med Adobe Experience Platform Web SDK för SPA {#web-spa-benefits}
 
 Nedan följer några fördelar med att använda Adobe Experience Platform Web SDK för dina ensidiga program:
 
@@ -32,7 +30,7 @@ Nedan följer några fördelar med att använda Adobe Experience Platform Web SD
 * Förbättra användarupplevelsen på webbplatsen avsevärt eftersom erbjudandena visas direkt via cachen utan fördröjning som introducerats av traditionella serveranrop.
 * Med en enda utvecklingsmiljö kan marknadsförarna skapa och köra personaliserings- och experimenteringsaktiviteter via den visuella Adobe Journey Optimizer Web Editor på SPA.
 
-## XDM-vyer och enkelsidiga program
+## XDM-vyer och enkelsidiga program {#web-spa-xdm}
 
 Adobe **[!UICONTROL Journey Optimizer]** webbredigeraren utnyttjar konceptet vyer: en logisk grupp visuella element som tillsammans utgör en SPA upplevelse. Ett enkelsidigt program kan därför betraktas som en övergång genom vyer i stället för URL-adresser som baseras på användarinteraktioner. En vy kan vanligtvis representera en hel webbplats, en enstaka sida eller grupperade visuella element på en sida.
 
@@ -91,7 +89,7 @@ Detta kräver att du utför följande steg för att slutföra en engångsinstall
 
 I det här avsnittet beskrivs två exempel som visar hur du anropar `sendEvent()` i React för en hypotetisk SPA.
 
-### Exempel 1: A/B-teststartsida
+### Exempel 1: A/B-teststartsida {#web-spa-sample-1}
 
 Marknadsföringsteamet vill köra A/B-tester på hela hemsidan.
 
@@ -136,7 +134,7 @@ history.listen(onViewChange);
 <Router history={hashHistory} onUpdate={onViewChange} >
 ```
 
-### Exempel 2: Personaliserade produkter
+### Exempel 2: Personaliserade produkter {#web-spa-sample-2}
 
 Marknadsföringsteamet vill personalisera den andra produktraden genom att ändra prisetikettens färg till röd efter att användaren har klickat för att se alla Men-produkter.
 

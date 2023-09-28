@@ -6,10 +6,10 @@ description: Lär dig hur du definierar frekvensregler
 feature: Overview
 topic: Content Management
 role: User
-level: Beginner
+level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
+source-git-commit: 2c1b53120913580be627b0a26cf4b386f32fcf1b
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 1%
@@ -24,7 +24,7 @@ En regel för ett varumärke kan till exempel inte vara att skicka mer än tre m
 
 >[!NOTE]
 >
->Reglerna för meddelandefrekvens skiljer sig från reglerna för avanmälningshantering, som gör det möjligt för användare att avbryta prenumerationen från att ta emot meddelanden från ett varumärke. [Läs mer](../privacy/opt-out.md#opt-out-management)
+>Reglerna för meddelandefrekvens skiljer sig från reglerna för avanmälningshantering, som gör det möjligt för användare att avbryta prenumerationen på meddelanden från ett varumärke. [Läs mer](../privacy/opt-out.md#opt-out-management)
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
@@ -93,7 +93,7 @@ Följ stegen nedan för att skapa en ny regel.
 
    >[!NOTE]
    >
-   >Du måste markera minst en kanal för att kunna skapa regeln.
+   >Du måste välja minst en kanal för att kunna skapa regeln.
 
 1. Markera flera kanaler om du vill tillämpa begränsning för alla markerade kanaler som ett totalt antal.
 
