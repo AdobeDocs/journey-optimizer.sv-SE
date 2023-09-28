@@ -4,7 +4,7 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 5f099db541c3219749f520d991261ad6fdfef4a7
+source-git-commit: 8e9d3f6916ee5a0b6919446b95c716cc6648fbbc
 workflow-type: tm+mt
 source-wordcount: '4017'
 ht-degree: 8%
@@ -57,7 +57,7 @@ Beräknade attribut förenklar dessutom arbetsflödena för segmentering och res
 <p>Med funktionen Kanalrapport kan analytiker och marknadsförare få en heltäckande översikt över trafik- och engagemangsmått på kanalnivå.</p>
 <p>Så här öppnar du <b>Rapport</b> måste du ha <b>Visa kanalrapporter</b> behörighet.</p>
 <img src="assets/channel-reports.png"/>
-<p>Mer information finns i <a href="../reports/channel-report.md">detaljerad dokumentation</a>och <a href="../reports/channel-report.md#how-to-video-channel-report-video">instruktionsvideo</a>.</p>
+<p>Mer information finns i <a href="../reports/channel-report.md">detaljerad dokumentation</a>och <a href="../reports/channel-report.md#channel-report-video">instruktionsvideo</a>.</p>
 </tr>
 </tbody>
 </table>
