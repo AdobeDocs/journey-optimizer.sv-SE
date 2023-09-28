@@ -4,10 +4,10 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: cd6fbe0367f54f68814ffd9a8eb13c887ae057b3
+source-git-commit: 94ad48537e6c13b17130f9f31d747bd9749e982c
 workflow-type: tm+mt
-source-wordcount: '4058'
-ht-degree: 8%
+source-wordcount: '4013'
+ht-degree: 9%
 
 ---
 
@@ -137,10 +137,6 @@ Två nya fält, **Inloggningsmeddelande** och **Hjälpmeddelande**, har lagts ti
 **Direktpostkanal**
 
 Nu kan du kryptera filer som är avsedda för direktreklamleverantörer när de överförs till en server. För att göra detta finns ett nytt fält tillgängligt på konfigurationsskärmen för filroutning, som gör att du kan kopiera och klistra in krypteringsnyckeln. [Läs mer](../direct-mail/direct-mail-configuration.md)
-
-**Direktpostkanal**
-
-Nu kan du kryptera filer som är avsedda för direktreklamleverantörer när de överförs till en server. För att göra detta finns ett nytt fält tillgängligt på konfigurationsskärmen för filroutning, som gör att du kan kopiera och klistra in krypteringsnyckeln.
 
 **Rapportering**
 
