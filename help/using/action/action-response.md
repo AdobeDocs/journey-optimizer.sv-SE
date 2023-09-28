@@ -9,55 +9,99 @@ role: Admin
 level: Experienced
 badge: label="Beta" type="Informative"
 keywords: åtgärd, tredje part, anpassad, resor, API
-source-git-commit: 494e51d5e44796047e237e6ad692fc6fd4c4e31d
+exl-id: 8f47b605-7179-4522-b50c-0ea34b09bd22
+source-git-commit: 2e06ca80a74c6f8a16ff379ee554d57a69ceeffd
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '610'
 ht-degree: 4%
 
 ---
 
-# Förbättringar av anpassade funktionsmakron {#custom-action-enhancements}
+# Använd API-anropssvar i anpassade åtgärder {#custom-action-enhancements}
 
-Nu kan du utnyttja API-anropssvar i anpassade åtgärder och samordna dina resor baserat på dessa svar.
-
-Den här funktionen var tidigare bara tillgänglig när du använde datakällor. Nu kan du använda den med anpassade åtgärder.
+Du kan utnyttja API-anropssvar i anpassade åtgärder och samordna dina resor baserat på dessa svar.
 
 >[!AVAILABILITY]
 >
->Den här funktionen är för närvarande tillgänglig som en privat beta.
+>Den här funktionen är för närvarande tillgänglig som betaversion.
 
->[!WARNING]
->
->Anpassade åtgärder bör endast användas med privata eller interna slutpunkter och användas med en lämplig begränsning för begränsning eller begränsning. Läs [den här sidan](../configuration/external-systems.md).
+<!--
+You can now leverage API call responses in custom actions and orchestrate your journeys based on these responses.
 
-## Definiera den anpassade åtgärden {#define-custom-action}
+This capability was previously only available when using data sources. You can now use it with custom actions. 
+-->
 
-När du definierar den anpassade åtgärden har två förbättringar gjorts tillgängliga: tillägget av GET-metoden och det nya nyttolastsvarsfältet. De andra alternativen och parametrarna ändras inte. Läs [den här sidan](../action/about-custom-action-configuration.md).
+## Viktiga anteckningar{#custom-action-enhancements-notes}
 
-### Konfiguration av slutpunkt {#endpoint-configuration}
+<!--
+* Custom actions should only be used with private or internal endpoints, and used with an appropriate capping or throttling limit. See [this page](../configuration/external-systems.md). 
+-->
 
-The **URL-konfiguration** avsnittet har fått ett nytt namn **Konfiguration av slutpunkt**.
+* Skalära arrayer stöds i svarsnyttolasten:
 
-I **Metod** nedrullningsbar meny kan du nu välja **GET**.
+  ```
+  "dummyScalarArray": [
+  "val1",
+  "val2"
+  ]
+  ```
+
+* Heterogena arrayer stöds inte i svarsnyttolasten:
+
+  ```
+  "dummyRandomArray": [
+  20,
+  "aafw",
+  false
+  ]
+  ```
+
+<!--
+## Best practices{#custom-action-enhancements-best-practices}
+
+A capping limit of 5000 calls/s is defined for all custom actions. This limit has been set based on customers usage, to protect external endpoints targeted by custom actions. You need to take this into account in your audience-based journeys by defining an appropriate reading rate (5000 profiles/s when custom actions are used). If needed, you can override this setting by defining a greater capping or throttling limit through our Capping/Throttling APIs. See [this page](../configuration/external-systems.md).
+
+You should not target public endpoints with custom actions for various reasons:
+
+* Without proper capping or throttling, there is a risk of sending too many calls to a public endpoint that may not support such volume.
+* Profile data can be sent through custom actions, so targeting a public endpoint could lead to inadvertently sharing personal information externally.
+* You have no control on the data being returned by public endpoints. If an endpoint changes its API or starts sending incorrect information, those will be made available in communications sent, with potential negative impacts.
+-->
+
+<!--
+## Define the custom action {#define-custom-action}
+
+When defining the custom action, two enhancements have been made available: the addition of the GET method and the new payload response field. The other options and parameters are unchanged. See [this page](../action/about-custom-action-configuration.md).
+
+### Endpoint configuration {#endpoint-configuration}
+
+The **URL configuration** section has been renamed **Endpoint configuration**.
+
+In the **Method** drop-down, you can now select **GET**.
 
 ![](assets/action-response1.png){width="70%" align="left"}
 
-### Betalningar {#payloads-new}
+### Payloads {#payloads-new}
 
-The **Åtgärdsparametrar** avsnittet har fått ett nytt namn **Betalningar**. Två fält är tillgängliga:
+The **Action parameters** section has been renamed **Payloads**. Two fields are available:
 
-* The **Begäran** fält: det här fältet är endast tillgängligt för anropsmetoder för POST och PUT.
-* The **Svar** field: this is the new capabilities. Det här fältet är tillgängligt för alla anropsmetoder.
+* The **Request** field: this field is only available for POST and PUT calling methods.
+* The **Response** field: this is the new capability. This field as available for all calling methods.
 
 >[!NOTE]
 > 
->Båda dessa fält är valfria.
+>Both these fields are optional.
 
 ![](assets/action-response2.png){width="70%" align="left"}
+-->
+
+## Konfigurera den anpassade åtgärden {#config-response}
+
+1. Skapa den anpassade åtgärden. Se [den här sidan](../action/about-custom-action-configuration.md).
 
 1. Klicka inuti **Svar** fält.
 
-   ![](assets/action-response3.png){width="80%" align="left"}
+   ![](assets/action-response2.png){width="80%" align="left"}
 
 1. Klistra in ett exempel på nyttolasten som returneras av anropet. Kontrollera att fälttyperna är korrekta (sträng, heltal osv.). Här är ett exempel på nyttolast för svar som fångats in under anropet. Vår lokala slutpunkt skickar antalet förmånspoäng och statusen för en profil.
 
@@ -117,6 +161,12 @@ Du kan till exempel lägga till ett villkor för att kontrollera antalet förmå
 
    ![](assets/action-response11.png)
 
+## Loggar för testläge {#test-mode-logs}
+
+I testläge har du åtkomst till statusloggar som är relaterade till anpassade åtgärdssvar. Om du har definierat anpassade åtgärder med svar under din resa visas en **actionsHistory** -avsnittet på dessa loggar med den nyttolast som returneras av den externa slutpunkten (som ett svar från den anpassade åtgärden). Detta kan vara mycket användbart när det gäller felsökning.
+
+![](assets/action-response12.png)
+
 ## Felstatus {#error-status}
 
 The **jo_status_code** -fältet är alltid tillgängligt även när ingen svarsnyttolast har definierats.
@@ -158,4 +208,3 @@ Här är några exempel:
 ```
 
 Mer information om fältreferenser finns i [det här avsnittet](../building-journeys/expression/field-references.md).
-

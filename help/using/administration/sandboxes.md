@@ -9,9 +9,9 @@ role: Admin, Architect, Developer
 level: Experienced
 keywords: sandlådor, virtuella, miljöer, organisation, plattform
 exl-id: 14f80d5d-0840-4b79-9922-6d557a7e1247
-source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
+source-git-commit: 9f43387ff63c3d2c2849fad1ca6a98310b3915b3
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '326'
 ht-degree: 15%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 15%
 ## Använda sandlådor {#using-sandbox}
 
 Med [!DNL Journey Optimizer] kan du partitionera instansen i separerade virtuella miljöer som kallas för sandlådor.
-Sandlådor tilldelas via roller i Behörigheter. [Lär dig hur du tilldelar sandlådor](permissions.md#create-product-profile).
+Sandlådor tilldelas via roller i behörigheter. [Lär dig tilldela sandlådor](permissions.md#create-product-profile).
 
 [!DNL Journey Optimizer] speglar Adobe Experience Platform-sandlådor som har skapats för en viss organisation.
 Sandlådorna i Adobe Experience Platform kan skapas eller återställas från din instans i Adobe Experience Platform. [Läs mer i användarhandboken för Sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html){target="_blank"}.
@@ -36,7 +36,7 @@ Du hittar kontrollen för sandlådeväljaren högst upp till höger på skärmen
 
 >[!IMPORTANT]
 >
-> Hantering av sandlådor kan endast utföras av en **[!UICONTROL Product]** eller **[!UICONTROL System]** administratör. Mer information finns i [Dokumentation till Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/admin-roles.ug.html){target="_blank"}.
+> Hantering av sandlådor kan endast utföras av en **[!UICONTROL Product]** eller **[!UICONTROL System]** administratör.
 
 Du kan välja att tilldela olika sandlådor till färdiga eller anpassade **[!UICONTROL Roles]**.
 
@@ -60,7 +60,7 @@ Så här tilldelar du sandlådor:
 
 ## Åtkomst till innehåll {#content-access}
 
-Om du vill konfigurera innehållets tillgänglighet måste du tilldela en delad mapp till var och en av sandlådorna. Du kan skapa och konfigurera din delade mapp i **[!UICONTROL Storage]** som visas i [!DNL Admin Console] för administratörer. Om du har åtkomst till [!DNL Admin Console] Som systemadministratör kan du skapa delade mappar och lägga till delegater med olika åtkomstnivå till dina delade mappar.
+Om du vill konfigurera innehållets tillgänglighet måste du tilldela en delad mapp till var och en av sandlådorna. Du kan skapa och konfigurera din delade mapp i **[!UICONTROL Storage]** -fliken som visas i [!DNL Admin Console] för administratörer. Om du har åtkomst till [!DNL Admin Console] Som systemadministratör kan du skapa delade mappar och lägga till delegater med olika åtkomstnivå till dina delade mappar.
 
 ![](assets/do-not-localize/content_access.png)
 

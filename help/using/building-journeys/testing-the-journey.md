@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: test, resa, kontroll, fel, felsökning
 exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 2e06ca80a74c6f8a16ff379ee554d57a69ceeffd
 workflow-type: tm+mt
-source-wordcount: '1501'
-ht-degree: 1%
+source-wordcount: '1489'
+ht-degree: 2%
 
 ---
 
@@ -114,7 +114,7 @@ När en händelse utlöses **Händelsekonfiguration** kan du definiera de hände
 
 ## Testläge för affärshändelser {#test-business}
 
-När en [affärshändelse](../event/about-events.md)använder du testläget för att utlösa en enskild testprofilentré under resan, simulera händelsen och skicka rätt profil-ID. Du måste godkänna händelseparametrarna och identifieraren för den testprofil som ska gå in på resan i testet. Du kan inte använda **[!UICONTROL Up to 100 profiles at once]** som finns för andra målgruppsbaserade resor. I testläge finns det inget kodläge tillgängligt för resor baserat på affärshändelser.
+När en [affärshändelse](../event/about-events.md)använder du testläget för att utlösa en enskild testprofilentré under resan, simulera händelsen och skicka rätt profil-ID. Du måste godkänna händelseparametrarna och identifieraren för den testprofil som ska gå in på resan i testet. I testläge finns det inget kodläge tillgängligt för resor baserat på affärshändelser.
 
 Observera att du inte kan ändra definitionen för affärshändelser i samma testsession när du först utlöser en affärshändelse. Du kan bara göra så att samma person eller en annan person anger resan som går genom samma eller en annan identifierare. Om du vill ändra parametrar för affärshändelser måste du stoppa och starta om testläget.
 

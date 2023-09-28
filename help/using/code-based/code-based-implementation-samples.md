@@ -8,9 +8,10 @@ level: Experienced
 hide: true
 hidefromtoc: true
 badge: label="Beta"
-source-git-commit: f271aa457d2f8b7e66e58692b613d80c6e6b3adb
+exl-id: 398b5ac6-0bdc-402f-8b13-7edd9b524808
+source-git-commit: d5b283a9c9b0e3e4104dddb3bcb4b47bbd749113
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '823'
 ht-degree: 2%
 
 ---
@@ -114,7 +115,7 @@ Om du har en implementering på serversidan kan du använda ett API för AEP Edg
 ### Så fungerar det
 
 1. Webbsidan har begärts och alla cookies som tidigare lagrats av webbläsaren har prefixats med `kndctr_` ingår.
-1. När sidan begärs från programservern skickas en händelse till [slutpunkt för interaktiv datainsamling](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=en) för att hämta personaliseringsinnehåll. Det här exempelprogrammet använder vissa hjälpmetoder för att förenkla skapandet och skickandet av begäranden till API:t (se [aepEdgeClient.js](https://github.com/adobe/alloy-samples/blob/ac83b6927d007dc456caad2c6ce0b324c99c26c9/common/aepEdgeClient.js){target="_blank"}). Men begäran är bara en `POST` med en nyttolast som innehåller en händelse och fråga. Cookies (om sådana finns) från föregående steg inkluderas i begäran i `meta>state>entries` array.
+1. När sidan begärs från programservern skickas en händelse till [slutpunkt för interaktiv datainsamling](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html) för att hämta personaliseringsinnehåll. Det här exempelprogrammet använder vissa hjälpmetoder för att förenkla skapandet och skickandet av begäranden till API:t (se [aepEdgeClient.js](https://github.com/adobe/alloy-samples/blob/ac83b6927d007dc456caad2c6ce0b324c99c26c9/common/aepEdgeClient.js){target="_blank"}). Men begäran är bara en `POST` med en nyttolast som innehåller en händelse och fråga. Cookies (om sådana finns) från föregående steg inkluderas i begäran i `meta>state>entries` array.
 
    ```javascript
    fetch(
@@ -275,4 +276,3 @@ Om du har en hybridimplementering kan du kolla in länkarna nedan.
 
 * Adobe Tech Blog: [Hybrid-anpassning i Adobe Experience Platform Web SDK](https://blog.developer.adobe.com/hybrid-personalization-in-the-adobe-experience-platform-web-sdk-6a1bb674bf41){target="_blank"}
 * SDK-dokumentation: [Hybrid-personalisering med Web SDK och Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/hybrid-personalization.html){target="_blank"}
-

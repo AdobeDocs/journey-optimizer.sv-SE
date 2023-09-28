@@ -7,10 +7,10 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 377b2659-d26a-47c2-8967-28870bddf5c5
-source-git-commit: cb5f3b042c1902add9b22d28eb24e2b6e8f1a20b
+source-git-commit: 2e06ca80a74c6f8a16ff379ee554d57a69ceeffd
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 28%
+source-wordcount: '639'
+ht-degree: 26%
 
 ---
 
@@ -62,6 +62,8 @@ Här är den grundläggande strukturen för en slutpunktskonfiguration:
 >The **maxHttpConnections** parametern är valfri. Du kan begränsa antalet anslutningar som Journey Optimizer öppnar till det externa systemet.
 >
 >Det högsta värdet som kan anges är 400. Om inget anges kan systemet öppna upp till flera tusen anslutningar beroende på systemets dynamiska skalning.
+>
+>Om inget värde för maxHttpConnection har angetts när konfigurationen för begränsning av socket distribueras läggs standardvärdet för maxHttpConnection = -1 till i den distribuerade konfigurationen, vilket innebär att Journey Optimizer kommer att använda standardsystemvärdet.
 
 ### Exempel:
 
@@ -73,14 +75,12 @@ Här är den grundläggande strukturen för en slutpunktskonfiguration:
   ],
   "services": {
     "dataSource": {
-      "maxHttpConnections": 50,
       "rating": {
         "maxCallsCount": 500,
         "periodInMs": 1000
       }
     }
-  },
-  "orgId": "<IMS Org Id>"
+  }
 }
 ```
 

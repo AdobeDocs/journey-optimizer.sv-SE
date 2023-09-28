@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
+source-git-commit: 2e06ca80a74c6f8a16ff379ee554d57a69ceeffd
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1229'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,17 @@ Anpassade åtgärder har några begränsningar som anges i [den här sidan](../s
 
 I anpassade åtgärdsparametrar kan du skicka en enkel samling samt en samling med objekt. Läs mer om begränsningar för samlingar i [den här sidan](../building-journeys/collections.md#limitations).
 
-Observera också att de anpassade åtgärdsparametrarna har ett förväntat format (exempel: sträng, decimal osv.). Du måste vara försiktig med att ta hänsyn till dessa förväntade format. Läs mer om detta [användningsfall](../building-journeys/collections.md).
+Observera också att de anpassade åtgärdsparametrarna har ett förväntat format (till exempel sträng, decimal). Du måste vara försiktig med att ta hänsyn till dessa förväntade format. Läs mer om detta [användningsfall](../building-journeys/collections.md).
+
+## God praxis{#custom-action-enhancements-best-practices}
+
+En begränsning på 5 000 anrop/anrop har definierats för alla anpassade åtgärder. Den här gränsen har fastställts baserat på kundanvändning för att skydda externa slutpunkter som har anpassats efter anpassade åtgärder. Du måste ta hänsyn till detta vid målgruppsbaserade resor genom att definiera en lämplig läsfrekvens (5 000 profiler/er när anpassade åtgärder används). Om det behövs kan du åsidosätta den här inställningen genom att definiera en större begränsning för begränsning eller begränsning via våra API:er för begränsning/begränsning. Läs [den här sidan](../configuration/external-systems.md).
+
+Du bör inte ange allmänna slutpunkter som mål med anpassade åtgärder av olika anledningar:
+
+* Utan korrekt capping eller strypning finns det risk för att för många anrop skickas till en offentlig slutpunkt som kanske inte stöder den volymen.
+* Profildata kan skickas via anpassade åtgärder, så att målgruppsanpassning för en publik slutpunkt kan leda till oavsiktlig delning av personlig information externt.
+* Du har ingen kontroll över vilka data som returneras av offentliga slutpunkter. Om en slutpunkt ändrar sitt API eller börjar skicka felaktig information, kommer dessa att göras tillgängliga i den kommunikation som skickas, med potentiella negativa konsekvenser.
 
 ## Samtycke- och datahantering {#privacy}
 
@@ -47,7 +57,7 @@ I Journey Optimizer kan du tillämpa policyer för datastyrning och samtycke på
 
 Här följer de huvudsteg som krävs för att konfigurera en anpassad åtgärd:
 
-1. Välj **[!UICONTROL Configurations]**. I  **[!UICONTROL Actions]** avsnitt, klicka **[!UICONTROL Manage]**. Klicka **[!UICONTROL Create Action]** för att skapa en ny åtgärd. Åtgärdskonfigurationsrutan öppnas till höger på skärmen.
+1. I avsnittet ADMINISTRATION-menyn väljer du **[!UICONTROL Configurations]**. I  **[!UICONTROL Actions]** avsnitt, klicka **[!UICONTROL Manage]**. Klicka **[!UICONTROL Create Action]** för att skapa en ny åtgärd. Åtgärdskonfigurationsrutan öppnas till höger på skärmen.
 
    ![](assets/custom2.png)
 
@@ -70,11 +80,11 @@ Här följer de huvudsteg som krävs för att konfigurera en anpassad åtgärd:
    >
    >När en anpassad åtgärd används i en resa är de flesta parametrar skrivskyddade. Du kan bara ändra **[!UICONTROL Name]**, **[!UICONTROL Description]**, **[!UICONTROL URL]** fält och **[!UICONTROL Authentication]** -avsnitt.
 
-## URL-konfiguration {#url-configuration}
+## Konfiguration av slutpunkt {#url-configuration}
 
-När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICONTROL URL Configuration]** parametrar:
+När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICONTROL Endpoint Configuration]** parametrar:
 
-![](assets/journeyurlconfiguration.png)
+![](assets/action-response1bis.png){width="70%" align="left"}
 
 1. I **[!UICONTROL URL]** anger du URL-adressen för den externa tjänsten:
 
@@ -92,7 +102,7 @@ När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICO
    >
    >Endast standardportar tillåts när en anpassad åtgärd definieras: 80 för http och 443 för https.
 
-1. Välj samtalet **[!UICONTROL Method]**: kan vara antingen **[!UICONTROL POST]** eller **[!UICONTROL PUT]**.
+1. Välj samtalet **[!UICONTROL Method]**: det kan vara antingen **[!UICONTROL POST]**, **[!UICONTROL GET]** eller **[!UICONTROL PUT]**.
 
    >[!NOTE]
    >
@@ -114,21 +124,27 @@ När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICO
 
    >[!NOTE]
    >
-   >När du har lagt till den anpassade åtgärden för en resa kan du fortfarande lägga till fält för huvud- eller frågeparametrar om resan är i utkaststatus. Om du inte vill att resan ska påverkas av konfigurationsändringar duplicerar du den anpassade åtgärden och lägger till fälten till den nya anpassade åtgärden.
+   >När du har lagt till den anpassade åtgärden för en resa kan du fortfarande lägga till huvud- eller frågeparameterfält i den om resan är i utkaststatus. Om du inte vill att resan ska påverkas av konfigurationsändringar duplicerar du den anpassade åtgärden och lägger till fälten till den nya anpassade åtgärden.
    >
    >Huvuden valideras enligt fälttolkningsregler. Läs mer i [den här dokumentationen](https://tools.ietf.org/html/rfc7230#section-3.2.4){_blank}.
 
-## Definiera åtgärdsparametrarna {#define-the-message-parameters}
+## Definiera nyttolastparametrarna {#define-the-message-parameters}
 
-I **[!UICONTROL Action parameters]** klistra in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten.
+1. I **[!UICONTROL Request]** klistra in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten. Det här fältet är valfritt och endast tillgängligt för anropsmetoder för POST och PUT.
 
-![](assets/messageparameterssection.png)
+1. I **[!UICONTROL Response]** klistra in ett exempel på nyttolasten som returneras av anropet. Det här fältet är valfritt och tillgängligt för alla anropsmetoder. Detaljerad information om hur du utnyttjar API-anropssvar i kundåtgärder finns i [den här sidan](../action/action-response.md).
+
+>[!NOTE]
+>
+>Svarsfunktionen finns för närvarande i betaversionen.
+
+![](assets/action-response2bis.png){width="70%" align="left"}
 
 >[!NOTE]
 >
 >Nyttolastexemplet får inte innehålla null-värden. Fältnamn i nyttolasten får inte innehålla &quot;.&quot; tecken. De kan inte börja med tecknet &quot;$&quot;.
 
-Du kan definiera parametertypen (t.ex.: sträng, heltal osv.).
+Du kan definiera parametertypen (t.ex. sträng, heltal).
 
 Du kan också välja mellan att ange om en parameter är en konstant eller en variabel:
 

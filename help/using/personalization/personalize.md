@@ -9,9 +9,9 @@ role: Data Engineer
 level: Beginner
 keywords: uttryck, redigerare, start, personalisering
 exl-id: f448780b-91bc-455e-bf10-9a9aee0a0b24
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: f0a7f785a84cb53be0319284a4886841f6974e3d
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '372'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ Upptäck [!DNL Adobe Journey Optimizer] personaliseringsfunktioner för att anpa
 ➡️ [Lär dig hur du anpassar ett meddelande i dessa videofilmer](#video-perso)
 ➡️ [Upptäck användningsfall som utnyttjar personalisering](personalization-use-case.md)
 
-## Bygg personaliseringsuttryck med en dedikerad syntax {#syntax}
+## Skapa personaliseringsuttryck med en dedikerad syntax {#syntax}
 
 [!DNL Journey Optimizer] använder **inline** enkel personaliseringssyntax baserad på Handlebars, som gör att du kan skapa uttryck med innehåll inneslutet av dubbla klammerparenteser **{{}}**. Du kan lägga till flera uttryck i samma innehåll eller fält utan begränsningar. Läs mer i [Anpassningssyntax](personalization-syntax.md).
 
@@ -41,6 +41,8 @@ Personaliseringen baseras på profildata som hanteras av **Individuell XDM-profi
 >[!CAUTION]
 >The **Individuell XDM-profil** schema är det enda schema som du kan använda för att anpassa innehåll i [!DNL Journey Optimizer].
 
+Dessutom kan du också utnyttja **beräknade attribut** för att personalisera ert innehåll. Beräknade attribut baseras på profilaktiverade Experience Event-datauppsättningar som importerats till Adobe Experience Platform och fungerar som aggregerade datapunkter lagrade i kundprofiler som sammanfattar individuella beteendehändelser [Lär dig hur du arbetar med beräknade attribut](../audience/computed-attributes.md)
+
 ## Lägg till personalisering i olika sammanhang {#contexts}
 
 [!DNL Journey Optimizer] gör att du kan anpassa innehållet och visningen av meddelanden på flera olika sätt. Läs mer om de sammanhang där du kan utföra personalisering i [det här avsnittet](personalization-contexts.md).
@@ -51,7 +53,7 @@ Personaliseringen baseras på profildata som hanteras av **Individuell XDM-profi
 
 Det finns flera verktyg som kan hjälpa dig att bygga ditt personaliseringsinnehåll (hjälpfunktioner, fördefinierat uttrycksbibliotek, attribut som gynnar..).
 
-Läs mer om [!DNL Journey Optimizer] uttrycksredigeraren i [det här avsnittet](personalization-build-expressions.md)
+Läs mer om [!DNL Journey Optimizer] uttrycksredigerare i [det här avsnittet](personalization-build-expressions.md)
 
 ## Instruktionsvideor{#video-perso}
 

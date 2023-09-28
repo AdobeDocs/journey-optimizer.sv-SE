@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 6230eb26ca577398c09465207b27e87ea3d813d2
+source-git-commit: cd6fbe0367f54f68814ffd9a8eb13c887ae057b3
 workflow-type: tm+mt
-source-wordcount: '4068'
+source-wordcount: '4058'
 ht-degree: 8%
 
 ---
@@ -21,11 +21,8 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 
 ![Nyhetsbrev](../assets/do-not-localize/nl-icon.png) Registrera dig för [Adobe Journey Optimizer kvartalsvis nyhetsbrev](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} idag och få de senaste produktuppdateringarna, spännande historier, användningsexempel, tips och mycket annat levererat direkt till din inkorg varje kvartal.
 
+
 ## Versionsinformation september 2023 {#sept-rn-2023}
-
-Noteringarna nedan kan ändras utan föregående meddelande fram till releasedatum. Länkar, skärmar och uppdaterad dokumentation publiceras på releasedatum.
-
-**Releasedatum**: 26-27 sept 2023
 
 ### Nya funktioner{#sept-2023-features}
 
@@ -41,8 +38,8 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <tr>
 <td>
 <p>Beräknade attribut gör det enkelt att sammanfatta händelsedata i profilattribut via ett intuitivt användargränssnitt för förbättrad beteendebaserad segmentering, personalisering och aktivering. Med den här funktionen kan du skapa beräknade attribut på ett självbetjäningssätt, hantera dem och använda dem vid segmentering, kundprofilmål i realtid eller Journey Optimizer.<br/><br/>
-Beräknade attribut förenklar dessutom arbetsflödena för segmentering och resor så att ni smidigt kan leverera relevanta upplevelser. Läs mer i <a href="https://experienceleague.adobe.com/docs/experience-platform/profile/computed-attributes/overview.html">detaljerad dokumentation</a>.</p>
-<img src="assets/computed-attributes.png">
+Beräknade attribut förenklar dessutom arbetsflödena för segmentering och resor så att ni smidigt kan leverera relevanta upplevelser. Läs mer i <a href="../audience/computed-attributes.md">detaljerad dokumentation</a>.</p>
+<img src="assets/do-not-localize/computed-attributes.gif">
 </tr>
 </tbody>
 </table>
@@ -57,9 +54,10 @@ Beräknade attribut förenklar dessutom arbetsflödena för segmentering och res
 <tbody>
 <tr>
 <td>
-<p>Med funktionen Kanalrapport kan analytiker och marknadsförare få en heltäckande översikt över trafik- och engagemangsmått på kanalnivå. Om du vill få åtkomst till menyn Rapport måste du ha behörigheten Visa kanalrapporter.</p>
+<p>Med funktionen Kanalrapport kan analytiker och marknadsförare få en heltäckande översikt över trafik- och engagemangsmått på kanalnivå.</p>
+<p>Så här öppnar du <b>Rapport</b> måste du ha <b>Visa kanalrapporter</b> behörighet.</p>
 <img src="assets/channel-reports.png"/>
-<!--p>For more information, refer to the <a href="../in-app/get-started-in-app.md">detailed documentation</a>.</p-->
+<p>Mer information finns i <a href="../reports/channel-report.md">detaljerad dokumentation</a>och &lt;a href="../reports/channel-report.md#how-to-video-channel-report-video" how-to="" video="" span="" id="2" translate="no" /&gt;.</a></p>
 </tr>
 </tbody>
 </table>
@@ -76,7 +74,7 @@ Beräknade attribut förenklar dessutom arbetsflödena för segmentering och res
 <td>
 <p>Export av Journey Optimizer datamängder till molnlagringsmål är nu allmänt tillgängligt. Med den här funktionen kan du upprätta en direktanslutning till molnlagringsplatser för att kunna exportera innehållet i dina datauppsättningar.</p>
 <img src="../data/assets/dataset-export-setup.png">
-<!--p>For more information, refer to the <a href="../audience/get-started-audience-orchestration.md">detailed documentation</a>.</p-->
+<p>Mer information finns i den <a href="../data/export-datasets.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -101,42 +99,44 @@ Beräknade attribut förenklar dessutom arbetsflödena för segmentering och res
 
 Den här versionen innehåller de förbättringar som anges nedan.
 
-<!--**Audiences**
+<!--**Personalization**
 
-* You can now target audiences uploaded from a CSV file into journeys and campaigns.
-* You can now target audiences resulting from composition workflows into journeys. -->
+* In addition to visual fragments, it is now possible to create, save and reuse expression fragments from the Journey Optimizer interface through the Expression Editor. Expression fragments replace the previously saved expressions.-->
 
-**Personalisering**
+<!--
+**Alerting**
 
-* Förutom visuella fragment går det nu att skapa, spara och återanvända uttrycksfragment från Journey Optimizer-gränssnittet via uttrycksredigeraren. Uttrycksfragment ersätter uttryck som sparats tidigare.
-
-**Varningar**
-
-* En ny typ av systemvarning har införts. Nu kan ni få meddelanden när en läsare misslyckas.
+* A new type of system alert has been introduced. You can now get notified when a read audience fails.    -->
 
 **Webbkanal**
 
-* Enkelsidiga program (SPA) kan nu redigeras i webbredigeraren. Nu kan du välja vilka specifika vyer du vill använda webbsidesändringarna på. En vy kan definieras som en hel webbplats eller som en grupp visuella element på en webbplats, till exempel hemsidan, hela produktwebbplatsen eller leveransinställningsramen på alla utcheckningssidor. Det krävs en engångsinstallation av utvecklare för att definiera vyerna i Adobe Experience Platform Web SDK-implementeringen, vilket gör det möjligt för marknadsförare att skapa och köra Adobe Journey Optimizer webbkampanjer SPA.
+* Enkelsidiga program (SPA) kan nu redigeras i den visuella webbredigeraren, där du kan välja vilka specifika vyer du vill använda webbsidesändringarna på. En vy kan definieras som en hel webbplats eller som en grupp visuella element på en webbplats, till exempel hemsidan, hela produktwebbplatsen eller leveransinställningsramen på alla utcheckningssidor. Det krävs en engångsinstallation av utvecklare för att definiera vyerna i Adobe Experience Platform Web SDK-implementeringen, vilket gör att marknadsförarna kan skapa och köra Adobe Journey Optimizer webbkampanjer SPA. [Läs mer](../web/web-spa.md)
 
-* När du redigerar en sida med webbdesignern kan du nu lägga till nya ändringar i innehållet direkt från panelen Ändringar, utan att du behöver markera en komponent och redigera den i designergränssnittet.
-* När du konfigurerar webbunderdomäner kan du nu lägga till en egen underdomän, förutom att använda en underdomän som redan har delegerats till Adobe.
+* När du redigerar en sida med webbdesignern kan du nu lägga till nya ändringar i innehållet direkt från panelen Ändringar, utan att du behöver markera en komponent och redigera den i designergränssnittet. [Läs mer](../web/manage-web-modifications.md#add-modifications)
+
+* När du konfigurerar webbunderdomäner kan du nu lägga till en egen underdomän, förutom att använda en underdomän som redan har delegerats till Adobe. [Läs mer](../web/web-delegated-subdomains.md#web-configure-new-subdomain)
 
 **Resor**
 
-* Stöd för anpassade åtgärdssvar är nu GA. På så sätt kan ni utnyttja API-anropssvar i anpassade åtgärder och samordna er resa baserat på dessa svar. Dessutom har ett nytt skyddsräcke lagts till för att begränsa alla tullåtgärder till 5000 samtal/s per slutpunkt.
-* När du duplicerar en resa kan du nu definiera namnet på kopian av resan.
+När du duplicerar en resa kan du nu definiera namnet på kopian av resan. [Läs mer](../building-journeys/journey-gs.md#uplicate-a-journey)
+
 
 <!--
+* Support of custom action responses is now GA. This allows you to leverage API call responses in custom actions and orchestrate your journey based on these responses. In addition, a new guardrail has been added to limit all customs actions to 5000 calls/s per endpoint.
 * The maximum duration that you can define in the Wait activity is now 29 days instead of 30.
 -->
 
 **E-postkanal**
 
-Ett nytt alternativ i konfigurationen av e-postytan gör att du kan välja att skicka transaktionsmeddelanden till profiler även om deras e-postadresser finns i listan över Adobe Journey Optimizer-undertryckningar.
+Ett nytt alternativ i konfigurationen av e-postytan gör att du kan välja att skicka transaktionsmeddelanden till profiler även om deras e-postadresser finns på Adobe [!DNL Journey Optimizer] lista över inaktiveringar. [Läs mer](../email/email-settings.md#send-to-suppressed-email-addresses)
 
 **SMS-kanal**
 
-Två nya fält, **Inloggningsmeddelande** och **Hjälpmeddelande**, har lagts till i API-konfigurationsskärmen, vilket gör att användare kan anpassa svar för inkommande nyckelord. Observera att det här endast är tillgängligt för SMS-providern för Sinch.
+Två nya fält, **Inloggningsmeddelande** och **Hjälpmeddelande**, har lagts till i API-konfigurationsskärmen, vilket gör att användare kan anpassa svar för inkommande nyckelord. Observera att det här endast är tillgängligt för SMS-providern för Sinch. [Läs mer](../sms/sms-configuration.md)
+
+**Direktpostkanal**
+
+Nu kan du kryptera filer som är avsedda för direktreklamleverantörer när de överförs till en server. För att göra detta finns ett nytt fält tillgängligt på konfigurationsskärmen för filroutning, som gör att du kan kopiera och klistra in krypteringsnyckeln. [Läs mer](../direct-mail/direct-mail-configuration.md)
 
 **Direktpostkanal**
 
@@ -144,7 +144,11 @@ Nu kan du kryptera filer som är avsedda för direktreklamleverantörer när de 
 
 **Rapportering**
 
-Nu kan du exportera Journey Optimizer-rapporter som CSV-filer. <!--[Learn more](../reports/global-report.md#export-reports)-->
+Nu kan du exportera Journey Optimizer-rapporter som CSV-filer. [Läs mer](../reports/global-report.md#export-reports)
+
+**Assets**
+
+Med ett nytt alternativ för Resurser kan du välja databas för dina resurser i Journey Optimizer. Du kan välja mellan en Assets Essentials-databas eller en Assets as a Cloud Service-databas, förutsatt att du äger den här lösningen. [Läs mer](../content-management/assets-essentials.md)
 
 <!--**Decision management**
 

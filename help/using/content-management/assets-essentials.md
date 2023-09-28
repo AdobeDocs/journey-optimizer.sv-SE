@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: resurser, grundläggande funktioner, upplevelseansvarig, integration
 exl-id: d4fde14b-e2da-40bf-a387-ee9f2f7ff204
-source-git-commit: 1f4a49f9fc53cea21391d0e77bc151ebf84cc4f9
+source-git-commit: 8673391de8ac5c91bfbd28d23f7ab9a1416f4a83
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 2%
+source-wordcount: '497'
+ht-degree: 1%
 
 ---
 
@@ -44,6 +44,19 @@ Mer information om hur du överför resurser finns i [Adobe Experience Manager A
 1. Från [!DNL Adobe Journey Optimizer] startsida väljer du **[!UICONTROL Assets]** under **[!UICONTROL Content management]** meny som du kommer åt [!DNL Assets Essentials].
 
    ![](assets/media_library_1.png)
+
+1. Välj databas för dina resurser i Journey Optimizer. Du kan välja mellan en Assets Essentials-databas eller en Assets as a Cloud Service-databas, förutsatt att du äger den här lösningen.
+
+   ![](assets/media_library_4.png)
+
++++
+Lär dig hur du byter resurskatalog.
+
+   Om du vill ändra resurskatalogen väljer du kontoikonen i det övre högra hörnet och klickar på **[!UICONTROL Select Repository]**.
+
+   ![](assets/media_library_3.png)
+
++++
 
 1. Dubbelklicka på en mapp från det centrala avsnittet eller från trädvyn för att öppna den.
 

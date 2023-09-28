@@ -1,42 +1,38 @@
 ---
-title: Konfiguration i appen
+title: Krav för kanaler i appen
 description: Lär dig hur du konfigurerar miljön för att skicka meddelanden i appen med Journey Optimizer
 role: Admin
 level: Intermediate
 keywords: in-app, meddelande, konfiguration, plattform
 exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
-source-git-commit: 6f92f9ce0a4785f0359658f00150d283f1326900
+source-git-commit: 42a1efc45268688d371d83efbafef2aab9d757ac
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 2%
+source-wordcount: '682'
+ht-degree: 3%
 
 ---
 
-# Konfigurera kanal i appen {#inapp-configuration}
+# Krav för kanaler i appen {#inapp-configuration}
 
-Innan du skickar meddelanden i appen måste du konfigurera din kanal i appen i [!DNL Adobe Experience Platform Data Collection].
+## Leveransvillkor {#delivery-prerequisites}
 
-1. Från [!DNL Adobe Experience Platform Data Collection] konto, få åtkomst till **[!UICONTROL Datastream]** meny och klicka **[!UICONTROL New datastream]**. Mer information om hur du skapar data finns i [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html).
+För att meddelanden i appen ska kunna levereras på rätt sätt måste följande inställningar definieras:
 
-1. Välj [!DNL Adobe Experience Platform] service.
+* I [Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html){target="_blank"}kontrollerar du att du har en datastream definierad, till exempel under **[!UICONTROL Adobe Experience Platform]** har du Adobe Experience Platform Edge och **[!UICONTROL Adobe Journey Optimizer]** aktiverat alternativ.
 
-   [!DNL Edge Segmentation] och [!DNL Adobe Journey Optimizer] måste väljas.
+  Detta säkerställer att Journey Optimizer inkommande händelser hanteras korrekt av Adobe Experience Platform Edge. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html){target="_blank"}
 
-   ![](assets/inapp_config_6.png)
+  ![](assets/inapp_config_6.png)
 
-   >[!NOTE]
-   >
-   >Om du vill aktivera innehållsexperiment för appkanalen måste du se till att [datauppsättning](../data/get-started-datasets.md) används i din app [datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html){target="_blank"} finns också i din rapportkonfiguration - annars visas inte data i appen i innehållsexperimentrapporter. [Lär dig lägga till datauppsättningar](../campaigns/reporting-configuration.md#add-datasets)
-   >
-   >Datauppsättningen används skrivskyddat av [!DNL Journey Optimizer] rapporteringssystem och påverkar inte datainsamling eller datainmatning.
+* I [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}, make sure you have the default merge policy with the **[!UICONTROL Active-On-Edge Merge Policy]** option enabled. To do this, select a policy under the **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** > **[!UICONTROL Merge Policies]** Experience Platform menu. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html#configure){target="_blank"}
 
-1. Sedan öppnar du **[!UICONTROL App surfaces]** meny och klicka **[!UICONTROL Create App surface]**.
+  Den här sammanfogningsprincipen används av [!DNL Journey Optimizer] inkommande kanaler för att korrekt aktivera och publicera inkommande kampanjer. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html){target="_blank"}
 
-   >[!NOTE]
-   >
-   > Du behöver **Hantera appkonfiguration** behörighet att få åtkomst till **[!UICONTROL App surfaces]** -menyn. Mer information finns i [den här videon](#video).
+  ![](assets/inapp_config_8.png)
 
-   ![](assets/inapp_config_1.png)
+## Krav för kanalkonfiguration {#channel-prerequisites}
+
+1. Öppna **[!UICONTROL App surfaces]** meny och klicka **[!UICONTROL Create App surface]**.
 
 1. Lägg till ett namn i **[!UICONTROL App surface]**.
 
@@ -106,13 +102,23 @@ Innan du skickar meddelanden i appen måste du konfigurera din kanal i appen i [
 
 Kanalen i appen är nu konfigurerad. Du kan börja skicka meddelanden i appen till dina användare.
 
-**Relaterade ämnen:**
+## Förutsättningar för innehållsexperiment {#experiment-prerequisites}
 
-* [Skapa ett meddelande i appen](create-in-app.md)
-* [Skapa en kampanj](../campaigns/create-campaign.md)
-* [Design In-app-meddelande](design-in-app.md)
-* [Rapport i appen](../reports/campaign-global-report.md#inapp-report)
+Om du vill aktivera innehållsexperiment för appkanaler måste du se till att [datauppsättning](../data/get-started-datasets.md) som används i implementeringen i appen [datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html){target="_blank"} ingår även i din rapportkonfiguration.
 
+Om du lägger till en datauppsättning som inte finns i webbdataströmmen när du konfigurerar experimentrapporter, kommer webbdata alltså inte att visas i innehållsexperimentrapporter.
+
+Lär dig hur du lägger till datauppsättningar för att experimentera med innehåll i [det här avsnittet](../campaigns/reporting-configuration.md#add-datasets).
+
+>[!NOTE]
+>
+>Datauppsättningen används skrivskyddat av [!DNL Journey Optimizer] rapporteringssystem och påverkar inte datainsamling eller datainmatning.
+
+Om du **not** med följande fördefinierade [fältgrupper](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"} for your dataset schema: `AEP Web SDK ExperienceEvent` and `Consumer Experience Event` (as defined in [this page](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html#add-field-groups){target="_blank"}) måste du lägga till följande fältgrupper: `Experience Event - Proposition Interactions`, `Application Details`, `Commerce Details`och `Web Details`. Dessa behövs av [!DNL Journey Optimizer] Experimentera med rapporter om vilka experiment och behandlingar respektive profil deltar i.
+
+>[!NOTE]
+>
+>När du lägger till dessa fältgrupper påverkas inte den normala datainsamlingen. Den är bara additiv för de sidor där ett experiment pågår, och lämnar all annan spårning orörd.
 
 ## Instruktionsvideor{#video}
 
@@ -124,4 +130,10 @@ Kanalen i appen är nu konfigurerad. Du kan börja skicka meddelanden i appen ti
 
 +++
 
+**Relaterade ämnen:**
+
+* [Skapa ett meddelande i appen](create-in-app.md)
+* [Skapa en kampanj](../campaigns/create-campaign.md)
+* [Design In-app-meddelande](design-in-app.md)
+* [Rapport i appen](../reports/campaign-global-report.md#inapp-report)
 

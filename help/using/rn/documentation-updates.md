@@ -4,9 +4,9 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: a75dea16748a6628c3e21f1846a2ac9872cc55cb
+source-git-commit: 2e06ca80a74c6f8a16ff379ee554d57a69ceeffd
 workflow-type: tm+mt
-source-wordcount: '3594'
+source-wordcount: '3693'
 ht-degree: 14%
 
 ---
@@ -17,7 +17,19 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 ## September 2023 {#september-2023}
 
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Septemberversionen 23 har detaljerats i dokumentationen. [Läs mer](release-notes.md)
+* En ny sida har lagts till med bästa praxis för skalning och vägledning om hur du sammanfogar bilder i realtid. [Läs mer](../start/best-practices.md)
+
+<!--  * The maximum wait duration has been changed from 30 to 29 days. [Read more](../building-journeys/wait-management.md) -->
+
+* Ett avsnitt med vanliga frågor och svar har lagts till för optimering av sändningstid. [Läs mer](../building-journeys/journeys-message.md#faq-send-time)
+* En anteckning har lagts till för målgruppsklassificeringsaktiviteten. Det kan ta upp till 10 minuter att vara aktiv och lyssna på profiler som kommer in eller lämnar publiken. [Läs mer](../building-journeys/audience-qualification-events.md#important-notes-segment-qualification)
 * En lista över begränsningar som ska vara medveten om när man skapar beslutsregler har lagts till i dokumentationen för beslutshantering. [Läs mer](../offers/offer-library/creating-decision-rules.md)
+* Länkar till åtkomstkontrollsdokumentation har uppdaterats. [Läs mer](../administration/permissions.md)
+* Förutsättningar för kanaler i appen har uppdaterats med information om Adobe Experience Platform Data Collection. [Läs mer](../in-app/inapp-configuration.md)
+
+
+
 
 ## Augusti 2023 {#august-2023}
 

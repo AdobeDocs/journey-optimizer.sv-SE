@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6f6d693d-11f2-48b7-82a8-171829bf8045
-source-git-commit: 39953bb09a699ed4fd07db26a3f2e54f4e2cacd7
+source-git-commit: 19440c38d5d663a6b5ea7e99817ee65496bb43e6
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 11%
+source-wordcount: '1239'
+ht-degree: 10%
 
 ---
 
@@ -62,17 +62,15 @@ Skapa ett användbart meddelande genom att lägga till knappar i ditt push-inneh
 
 Om enhetsskärmen är låst visas inte dessa knappar: bara knappen **Titel** och **Meddelande** om meddelandet visas. Om enheten är olåst ser mottagarna knapparna.
 
-I iOS-versionen kan du lägga till upp till fyra knappar. I Android-versionen kan du lägga till upp till tre knappar.
+I Android-versionen kan du lägga till upp till tre knappar.
 
->[!NOTE]
->
->För iOS använder du **[!UICONTROL iOS category]** fält för att associera åtgärder med en meddelandekategori.
+I iOS-versionen anges en meddelandekategoriidentifierare. Meddelandekategorier måste vara förkonfigurerade i iOS-appen, som definierar vilka knappar som ska visas och vilka åtgärder som ska vidtas. Se [Apple-dokumentation](https://developer.apple.com/documentation/usernotifications/declaring_your_actionable_notification_types) för mer information.
 
 1. Använd **[!UICONTROL Add button]** för att definiera inställningar: etiketten och den tillhörande åtgärden. Möjliga åtgärder är desamma som för [klickbeteende](#on-click-behavior).
 
 1. Använd **[!UICONTROL Expand view]** -ikonen under den centrala förhandsvisningsbilden för att förhandsgranska dina anpassade knappar.
 
-![](assets/push_buttons.png)
+   ![](assets/push_buttons.png)
 
 ## Skicka ett tyst meddelande {#silent-notification}
 

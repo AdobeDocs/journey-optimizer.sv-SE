@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: aktivitet, resa, läsning, målgrupp, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: 392bd63b666e4db72c2865e4b7134bb3c1711816
+source-git-commit: 2e06ca80a74c6f8a16ff379ee554d57a69ceeffd
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1238'
 ht-degree: 3%
 
 ---
@@ -116,23 +116,17 @@ To activate this mode, click the **Segment Filters** toggle. Two fields are disp
 
 ### Testa och publicera resan {#testing-publishing}
 
-The **[!UICONTROL Read Audience]** kan du testa resan antingen med en enhetlig profil eller med 100 slumpmässiga testprofiler som valts ut bland de profiler som är kvalificerade för målgruppen.
+The **[!UICONTROL Read Audience]** kan du testa resan med en enhetlig profil.
 
-Aktivera testläget och välj sedan önskat alternativ i den vänstra rutan.
+Det gör du genom att aktivera testläget.
 
 ![](assets/read-segment-test-mode.png)
 
-Sedan kan du konfigurera och köra testläget som vanligt. [Lär dig testa en resa](testing-the-journey.md).
+Konfigurera och kör testläget som vanligt. [Lär dig testa en resa](testing-the-journey.md).
 
-När testet är klart **[!UICONTROL Show logs]** kan du se testresultaten enligt det valda testalternativet:
+När testet är klart **[!UICONTROL Show logs]** kan du se testresultaten. Mer information om detta finns i [det här avsnittet](testing-the-journey.md#viewing_logs)
 
-* **[!UICONTROL Single profile at a time]**: testloggarna visar samma information som i det enhetliga testläget. Mer information om detta finns i [det här avsnittet](testing-the-journey.md#viewing_logs)
-
-* **[!UICONTROL Up to 100 profiles at once]**: testloggarna gör det möjligt att följa utvecklingen av målgruppsexporten från Adobe Experience Platform samt den individuella utvecklingen för alla personer som passerat resan.
-
-  Observera att det inte går att följa förloppet för de personer som befinner sig på resan med hjälp av det visuella flödet om du testar resan med upp till 100 profiler samtidigt.
-
-  ![](assets/read-segment-log.png)
+![](assets/read-segment-log.png)
 
 När testerna är klara kan du publicera din resa (se [Publicera resan](publishing-the-journey.md)). Personer som tillhör målgruppen kommer att delta i resan det datum/den tidpunkt som anges i färdens egendom **[!UICONTROL Scheduler]** -avsnitt.
 

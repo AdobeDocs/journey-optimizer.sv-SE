@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, i appen
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 2e06ca80a74c6f8a16ff379ee554d57a69ceeffd
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '1108'
 ht-degree: 0%
 
 ---
@@ -119,6 +119,24 @@ Den här informationen lagras med användarens profil och hänvisas till vid kö
 >[!CAUTION]
 >
 >Den här funktionen är inte kompatibel med sprängningsläge.
+
+### Vanliga frågor {#faq-send-time}
+
+Vad kan optimering av sändningstid göra? Hur hanteras nya profiler? Sprider den sändningen över ett 24-12-12-timmarsfönster?
+
+Tidsoptimering försöker förutse den bästa tiden att interagera med kunderna och optimera öppnings-/klickfrekvensen för e-postmeddelanden. Poängen har formatet `3*7*24` attribut för varje profil. The `7*24` attribut beskriver rangordningen för den bästa tidpunkten för att skicka ut e-post till mottagaren och 3 är för att optimera öppningsfrekvensen för e-post, klickfrekvens för e-post och push-öppningsfrekvens.
+
+Var kan jag se den förväntade sändningstiden för varje profil?
+
+Du kan se den övergripande poängen i **Profiler** gränssnitt. För var och en av de tre uppsättningarna med 168 poäng går rangordningarna från -83 till 84. Ju högre rankning desto bättre tid valdes att interagera med mottagaren. Eftersom du kan definiera start och varaktighet för en resa kanske den bästa rangordningen (84) inte hamnar i det tidsfönstret. I det här fallet rekommenderar vi att du väljer en timme med det högsta rangvärdet.
+
+Vilken rapportering finns tillgänglig?
+
+Kom åt din resa genom att klicka på **Visa rapport** överst till höger och välj **Resa** till vänster. [Läs mer](../reports/journey-global-report.md)
+
+Hur påverkar data för optimering av sändningstid profilens detaljrikedom?
+
+Sändningsoptimering lägger till poäng/attribut i varje profil, men ingen ny profil skapas.
 
 ### Aktivera optimering av sändningstid{#activate-send-time-optimization}
 

@@ -2,14 +2,14 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Hantera avanmälan
-description: Lär dig hur du hanterar avanmälan och sekretess
+description: Lär dig hantera avanmälan och sekretess
 feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 58223b4b6e6e2ef5b7fc23c5b475e74ad72d0d13
+source-git-commit: be372f8f80d304067748d539fb8e210df6280721
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ AJO Campaign och personalisering för manuell indrivning av samtycke:
 
 En användares anmälningsstatus och personaliseringsönskemål bör ingå i målgruppsreglerna och -definitionen före aktivering i en Journey Optimizer Campaign. En marknadsföringsanvändare i Adobe Experience Platform kan lägga till en samtyckeskontroll till sin målgrupp genom att skapa en ny målgruppskomposition eller genom att definiera ett nytt segment med regelbyggaren.
 
-Om du använder målgruppshanteraren kan du dela upp målgruppen med hjälp av profilattribut. När du har valt vilka medgivandeattribut du vill kontrollera kan du spara målgrupperna för aktivering i en kampanj. Tänk på att om ni skapar en målgrupp som inte har gett sitt medgivande till personalisering och sedan väljer den här målgruppen för aktivering i en kampanj, kommer personaliseringsverktygen fortfarande att vara tillgängliga. Det är marknadsföringsanvändaren som måste förstå att om de arbetar med en målgrupp som inte ska ta emot personalisering, ska de inte använda personaliseringsverktyg.
+Om du använder målgruppshanteraren kan du dela upp målgruppen med hjälp av profilattribut. När du har valt vilka medgivandeattribut du vill kontrollera kan du spara de resulterande målgrupperna för aktivering i en kampanj. Tänk på att om ni skapar en målgrupp som inte har gett sitt medgivande till personalisering och sedan väljer den här målgruppen för aktivering i en kampanj, kommer personaliseringsverktygen fortfarande att vara tillgängliga. Det är marknadsföringsanvändaren som måste förstå att om de arbetar med en målgrupp som inte ska ta emot personalisering, ska de inte använda personaliseringsverktyg.
 
 Så här skapar du en delad målgrupp i målgruppssammansättning:
 
@@ -47,7 +47,7 @@ Så här skapar du en delad målgrupp i målgruppssammansättning:
 
 1. I Sökväg 1 - välj en etikett som hjälper dig att definiera den icke-personliga målgruppen.
 
-1. Välj lämpligt värde i den här listan: https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html?lang=en#choice-values
+1. Välj lämpligt värde i den här listan: https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values
 
    I det här fallet ska vi använda ett&quot;n&quot; för att ange att NEJ är avanmälan för personalisering
 

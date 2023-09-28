@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: användningsfall, flerkanal, meddelanden, resa, kanal, händelser, push
 exl-id: a1bbfcee-2235-4820-a391-d5d35f499cb0
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 2e06ca80a74c6f8a16ff379ee554d57a69ceeffd
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '826'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ I det här avsnittet visas ett användningsexempel som kombinerar en Läs publik
 
 I det här fallet vill vi skicka ett första meddelande (e-post och push) till alla kunder som tillhör en viss målgrupp.
 
-Vi vill skicka specifika meddelanden utifrån deras reaktion på det första meddelandet.
+Baserat på deras reaktion på det första meddelandet vill vi skicka specifika meddelanden.
 
 Efter det första meddelandet väntar vi en dag på att kunderna ska öppna push-meddelandet eller e-postmeddelandet. Om vi inte får någon reaktion skickar vi ett uppföljningsmejl till dem.
 
@@ -41,7 +41,7 @@ För att detta ska fungera måste du konfigurera följande:
 
 ### Skapa målgruppen
 
-Under vår resa vill vi lyfta fram en specifik kundgrupp. Alla personer som tillhör målgruppen deltar i resan och följer de olika stegen. I vårt exempel behöver vi en målgrupp som riktar sig till alla kunder som bor i Atlanta, San Francisco eller Seattle och som är födda efter 1980.
+Under vår resa vill vi lyfta fram en specifik kundgrupp. Alla personer som tillhör målgruppen deltar i resan och följer de olika stegen. I vårt exempel behöver vi en målgrupp för alla kunder som bor i Atlanta, San Francisco eller Seattle och som är födda efter 1980.
 
 Mer information om målgrupper finns i [page](../audience/about-audiences.md).
 
@@ -51,13 +51,13 @@ Mer information om målgrupper finns i [page](../audience/about-audiences.md).
 
 1. I **[!UICONTROL Audience properties]** anger du ett namn för målgruppen.
 
-1. Dra och släpp önskade fält från den vänstra rutan till arbetsytan i mitten och konfigurera dem sedan efter behov. I det här exemplet använder vi **Ort** och **Födelseår** attributfält.
+1. Dra och släpp önskade fält från den vänstra rutan till arbetsytan i mitten och konfigurera dem sedan efter behov. I detta exempel använder vi **Ort** och **Födelseår** attributfält.
 
 1. Klicka på **[!UICONTROL Save]**.
 
    ![](assets/add-attributes.png)
 
-Publiken är nu skapad och redo att användas på din resa. Använda en **Läs målgrupp** kan du göra så att alla personer som tillhör målgruppen kommer in på resan.
+Publiken är nu skapad och redo att användas på din resa. Använda **Läs målgrupp** kan du göra så att alla personer som tillhör målgruppen kommer in på resan.
 
 ### Konfigurera händelsen
 
@@ -65,7 +65,7 @@ Du måste konfigurera ett evenemang som skickas till din resa när en kund gör 
 
 För detta använder vi en regelbaserad händelse. Mer information om händelser finns i [page](../event/about-events.md).
 
-1. Välj **[!UICONTROL Configurations]** och sedan klicka **[!UICONTROL Events]**. Klicka på **[!UICONTROL Create event]** för att skapa en ny händelse.
+1. I avsnittet ADMINISTRATION-menyn väljer du **[!UICONTROL Configurations]** och sedan klicka **[!UICONTROL Events]**. Klicka på **[!UICONTROL Create event]** för att skapa en ny händelse.
 
 1. Ange namnet på händelsen.
 
@@ -115,6 +115,6 @@ Händelsen är nu konfigurerad och klar att användas under din resa. Genom att 
 
 1. Innan du testar din resa kontrollerar du att den är giltig och att det inte finns något fel.
 
-1. Klicka på **Testa** för att aktivera testläget, som finns i det övre högra hörnet. Definiera hur du vill att testprofiler ska ange testet: en enda profil, eller upp till 100 samtidigt. Se detta [section](testing-the-journey.md) för att lära dig hur du använder testläget.
+1. Klicka på **Testa** för att aktivera testläget, som finns i det övre högra hörnet. Se detta [section](testing-the-journey.md) för att lära dig hur du använder testläget.
 
 1. När resan är klar publicerar du den med **Publicera** i det övre högra hörnet.

@@ -6,9 +6,9 @@ description: Lär dig hur du konfigurerar miljön för att skicka SMS med Journe
 role: Admin
 level: Intermediate
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
-source-git-commit: ce9ebee71f80ec28f1e98eff0ff15d728978e817
+source-git-commit: e2851c97dd14577a992625bcfd60fc7300b432d3
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '888'
 ht-degree: 2%
 
 ---
@@ -62,6 +62,10 @@ Så här konfigurerar du din SMS-leverantör med Journey Optimizer:
       * **[!UICONTROL Name]**: välj ett namn för API-autentiseringsuppgifterna.
 
       * **[!UICONTROL Service ID]** och **[!UICONTROL API Token]**: du kommer åt API:erna på fliken SMS.  [Läs mer](https://developers.sinch.com/docs/sms/getting-started/)
+
+      * **[!UICONTROL Opt-In Message]**: Skriv in det anpassade svar som automatiskt skickas som **[!UICONTROL Opt-In Message]**.
+
+      * **[!UICONTROL Help Message]**: Skriv in det anpassade svar som automatiskt skickas som **[!UICONTROL  Help Message]**.
 
    * För **[!DNL Twilio]**:
 

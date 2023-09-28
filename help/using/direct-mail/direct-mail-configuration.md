@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
-source-git-commit: 375dfbebcb37f948b468ec9689963b0ffebebecf
+source-git-commit: 280e311ca4515d2147f451af0fffbe6d5fc8029c
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ När [skapa ett direktpostmeddelande](../direct-mail/create-direct-mail.md)defin
 
 Innan du kan generera filen måste du skapa:
 
-1. A [konfiguration för filroutning](#file-routing-configuration) för att ange på vilken server filen ska exporteras.
+1. A [konfiguration för filroutning](#file-routing-configuration) om du vill ange på vilken server filen ska exporteras och kryptera filen, om det behövs.
 
 1. A [direktreklamyta](#direct-mail-surface) som refererar till filroutningskonfigurationen.
 
@@ -89,6 +89,8 @@ Följ stegen nedan för att konfigurera filflödet.
    >[!NOTE]
    >
    >AWS-regioner är geografiska områden som AWS använder för sin molninfrastruktur. Som allmän praxis är det att föredra att välja den region som ligger närmast din direktreklamleverantörs plats.
+
+1. Kopiera och klistra in krypteringsnyckeln i **[!UICONTROL PGP/GPG encryption key]** fält.
 
 1. Välj **[!UICONTROL Submit]**. Filroutningskonfigurationen skapas med **[!UICONTROL Active]** status. Den är nu klar att användas i en [direktreklamyta](#direct-mail-surface).
 

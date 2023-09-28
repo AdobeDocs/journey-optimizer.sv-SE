@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 89d2eb94a600af437862aa2ded74d77179a5c3e8
+source-git-commit: 5e58db84275d78c5248f1d617328799d71bb10d1
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '2201'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ E-postytans konfiguration hämtas för att skicka kommunikation enligt logiken n
 >title="Definiera e-postkategorin"
 >abstract="Välj vilken typ av e-postmeddelanden som ska skickas när du använder den här ytan: Marknadsföring för marknadsföringsmeddelanden, som kräver användarens samtycke, eller Transaktion för icke-kommersiella e-postmeddelanden, som också kan skickas till profiler som inte längre prenumererar i specifika sammanhang."
 
-I **E-POSTTYP** väljer du den typ av meddelande som ska skickas med ytan: **Marknadsföring** eller **Transactional**.
+I **E-POSTTYP** väljer du den typ av meddelande som ska skickas med ytan: **[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**.
 
 * Välj **Marknadsföring** för e-postreklam, till exempel veckokampanjer för en butik. Dessa meddelanden kräver användarens samtycke.
 
@@ -182,6 +182,36 @@ När du definierar **[!UICONTROL Bcc email]** måste du se till att använda en 
 
 Om du får ett felmeddelande när du skickar e-postytan betyder det att MX-posten inte är konfigurerad för underdomänen till den angivna adressen. Kontakta administratören för att konfigurera motsvarande MX-post eller använd en annan adress med en giltig MX-postkonfiguration.
 
+## Skicka till undertryckta e-postadresser {#send-to-suppressed-email-addresses}
+
+>[!CONTEXTUALHELP]
+>id="ajo_surface_suppressed_addresses"
+>title="Åsidosätt prioritet för undertryckningslista"
+>abstract="Du kan välja att skicka transaktionsmeddelanden till profiler även om deras e-postadresser finns med i listan över Adobe Journey Optimizer-inaktiveringar på grund av skräppost. Det här alternativet är inaktiverat som standard."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html" text="Hantera listan över inaktiveringar"
+
+>[!IMPORTANT]
+>
+>Det här alternativet är bara tillgängligt om du har valt **[!UICONTROL Transactional]** e-posttyp. [Läs mer](#email-type)
+
+I [!DNL Journey Optimizer], samlas alla e-postadresser som markeras som hårda studsar, mjuka studsar och skräppostklagomål automatiskt in i [utelämningslista](../configuration/manage-suppression-list.md) och exkluderas från att skicka in en resa eller en kampanj.
+
+Du kan dock bestämma dig för att fortsätta skicka meddelanden från **transaktionsbaserad** skriv till profiler även om deras e-postadresser finns i listan över inaktiveringar på grund av skräppost från användaren.
+
+Transaktionsmeddelanden innehåller vanligtvis användbar och förväntad information, t.ex. en orderbekräftelse eller ett meddelande om lösenordsåterställning. Även om de har rapporterat ett av dina marknadsföringsmeddelanden som skräppost vill ni därför oftast att kunderna ska få den här typen av icke-kommersiell e-post.
+
+Om du vill ta med e-postadresser som inte har angetts på grund av skräppost i målgruppen för transaktionsmeddelanden väljer du motsvarande alternativ i dialogrutan **[!UICONTROL Send to suppressed email addresses]** -avsnitt.
+
+![](assets/preset-suppressed-email-addresses.png)
+
+>[!NOTE]
+>
+>Det här alternativet är inaktiverat som standard.
+
+Det här alternativet är som standard inaktiverat för att säkerställa att de kunder som har avanmält sig inte kontaktas. Du kan dock ändra det här standardalternativet, som gör att du kan skicka transaktionsmeddelanden till dina kunder.
+
+När det här alternativet är aktiverat kan kunden, trots att kunden har markerat ditt marknadsföringsmejl som skräppost, få dina transaktionsmeddelanden via den aktuella ytan. Se alltid till att hantera avanmälningsinställningar i enlighet med bästa praxis för leveranser.
+
 ## Frölista {#seed-list}
 
 >[!CONTEXTUALHELP]
@@ -189,7 +219,7 @@ Om du får ett felmeddelande när du skickar e-postytan betyder det att MX-poste
 >title="Lägga till en startvärdeslista"
 >abstract="Välj önskad startlista för att automatiskt lägga till specifika interna adresser till era målgrupper. Dessa dirigerade adresser kommer att inkluderas vid leveranstillfället och kommer att få en exakt kopia av meddelandet i säkerhetssyfte."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/seed-lists.html#use-seed-list" text="Vad är utsädeslistor?"
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/seed-lists.html?lang=en#create-seed-list" text="Skapa en startvärdeslista"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/seed-lists.html#create-seed-list" text="Skapa en startvärdeslista"
 
 
 En lista med startsidor i [!DNL Journey Optimizer] gör att du automatiskt kan inkludera specifika e-postadresser i dina leveranser. [Läs mer](../configuration/seed-lists.md)

@@ -5,25 +5,20 @@ title: Exportera datauppsättningar till molnlagringsplatser
 description: Lär dig hur du exporterar datauppsättningar med Adobe Experience Platform molnlagringsmål.
 role: User
 level: Beginner
-badge: label="Beta" type="Informative"
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
 exl-id: 66b5c691-ddc4-4e9b-9386-2ce6c307451c
-source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
+source-git-commit: 08f24547237c01c581248d675c55c834c261b173
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 0%
+source-wordcount: '995'
+ht-degree: 1%
 
 ---
 
 # Exportera datauppsättningar till molnlagringsplatser {#export-datasets}
 
->[!AVAILABILITY]
->
->Exportfunktionen för datauppsättningar är för närvarande i betaversion och tillgänglig för alla Adobe Journey Optimizer-användare.
-
 Med Journey Optimizer kan du upprätta en direktanslutning till molnlagringsplatser för att exportera innehållet i dina datauppsättningar.
 
-Genom att exportera dina data regelbundet kan du se till att du har en fullständig och aktuell registrering av dina kundinteraktioner, använda informationen i rapporterings- eller analyssyfte och upprätthålla efterlevnad av juridiska krav.
+Genom att exportera dina data regelbundet kan ni säkerställa att ni har en fullständig och aktuell förteckning över era kundinteraktioner, så att de blir tillgängliga för rapportering, arkivering eller dataanalys.
 
 ## Tillgängliga molnlagringsdestinationer {#destinations}
 
@@ -44,13 +39,19 @@ Mer information om respektive mål finns i Adobe Experience Platform-dokumentati
 * [Google Cloud-lagring](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage.html)
 * [SFTP](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/sftp.html)
 
+## Journey Optimizer datamängder tillgängliga för export {#datasets}
+
+Förstå i tabellen nedan vilka Journey Optimizer-datauppsättningar som du kan exportera beroende på din produktnivå (se [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}) |Datauppsättning|Beskrivning|Nivå| | — | — | — | | AJO BCC Feedback Event Dataset | AJO BCC Feedback Event Dataset | Prime | | AJO-klassificering, datauppsättning | Datauppsättning för inmatning av e-post och push-meddelanden från Journey Optimizer. Skapat via SDK. | Prime | | AJO-sambandstjänst, datauppsättning | Lagrar information om samtycke för en profil. | Prime | | AJO-händelsedatauppsättning för e-postspårning | Interaktionsloggar för e-postkanal som används för att skapa rapporter och målgrupper.  | Prime | | AJO-entitetsdatauppsättning | Datauppsättning för lagring av enhetsmetadata för meddelanden som skickas till slutanvändaren.  | Prime | | AJO-händelsedatauppsättning för inkommande aktivitet | Datauppsättning för Journey Optimizer web- och inApp-kanaler för leverans- och interaktionshändelser. | Prime | | AJO Interactive Messaging Profile - datauppsättning | Lagrar profiler som skapats för stöd för API-utlösta kampanjer | Prime | | AJO Message Feedback Event Dataset | Meddelandeleveransloggar. Information om alla mejl från Journey Optimizer för rapportering och målgruppsframställning. Feedback från e-postleverantörer om studsar registreras också i den här datauppsättningen. | Prime | | Tillägg för AJO-profilräknare | Innehåller en karta över objekt som innehåller counter_value och expirationDate, transparenta av counter_id | Prime | | AJO-push-profildatauppsättning | Lagrar push-token för en profil. | Prime | | AJO Push Tracking Experience, händelsedatauppsättning | Interaktionsloggar för push-kanal som används för att skapa rapporter och målgrupper.  | Prime | | AJO-ytor, datauppsättning | Tom datamängd relaterad till Journey Optimizer inkommande ytschema | Prime | | AOOutputForUPSDataset | Innehåller alla AO-målgruppsmedlemskap som kan skrivas tillbaka till UPS | Prime | | Målgruppsprofildatauppsättning | Genereras efter målgruppssammansättning för målgrupper med Audience Composition. Innehåller alla målgrupper, deras attribut och berikande data | Prime | | Objektarkiv för beslut - aktiviteter | kallas även beslut i användargränssnittet. Men det här är de objekt en användare skapar som sammanför alla byggstenar, inklusive beslutslogiken. Exempel: för en viss placering (plats), som erbjudanden ska beaktas (erbjudandesamling) och vilken rangordningsmetod som ska användas för dessa erbjudanden. | Ultimate | | Objektarkiv för beslut - Reserverbjudanden | det här är databasen för den andra typen av erbjudande som en användare skapar. I synnerhet om de inte är berättigade att se ett personaliserat erbjudande och behöver se något, kommer de åtminstone att se reserverbjudandet. Den här datauppsättningen innehåller attributen för den här typen av erbjudande | Ultimate | | Beslutsobjektarkiv - personaliserade erbjudanden | det här är databasen för en typ av erbjudande som en användare skapar. Den här datauppsättningen innehåller attribut om den här typen av erbjudande | Ultimate | | Beslutsobjektsdatabas - placeringar | det här är objektdatabasen som definierar var ett erbjudande ska visas. | Ultimate | | Resestegshändelser | Hämtar alla händelser av typen&quot;Journey Step Experience&quot; som genererats från Journey Optimizer och som ska användas av tjänster som Reporting. | Prime | | Resor | Metadatadatadatauppsättning, bostadsinformation för varje steg i en resa | Prime | | ODE-beslutshändelser - prod-beslut | Varje gång vi fattar ett beslut baserat på en begäran räknar vi det som en beslutshändelse | Ultimate |
+
 ## Förutsättningar {#prerequisites}
 
-Kontrollera följande krav innan du börjar exportera datauppsättningarna:
+Om du vill exportera datauppsättningar måste du ha [behörigheter för åtkomstkontroll](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#permissions) som anges nedan. Läs [åtkomstkontroll - översikt](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/overview.html) eller kontakta produktadministratören för att få de behörigheter som krävs.
 
-* Om du vill exportera datauppsättningar måste du ha **Visa mål** och **Hantera och aktivera datauppsättningsmål** [behörigheter för åtkomstkontroll](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#permissions). Läs [åtkomstkontroll - översikt](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/overview.html) eller kontakta produktadministratören för att få de behörigheter som krävs.
-
-* Kontrollera att datauppsättningen som du vill exportera inte innehåller andra generationens data. Den här funktionen stöder endast export av första generationens data, dvs. rådata enligt definitionen i [Real-time Customer Data Platform produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/real-time-customer-data-platform-b2c-edition-prime-and-ultimate-packages.html). Första generationens data omfattar datauppsättningar som hämtas via Adobe Experience Platform Sources eller datauppsättningar som samlats in med Adobe-lösningar som Analytics Data Connector och Journey Optimizer-loggar/rapportdatamängder.
+| Kategori | Behörighet |
+|--|--|
+| Mål  | Hantera och aktivera datauppsättningsmål |
+| Datahantering | Visa datauppsättningar |
+| Mål  | Visa mål |
 
 ## De viktigaste stegen för att exportera datauppsättningar {#main-steps}
 
@@ -72,7 +73,7 @@ Detaljerad information om varje steg finns i Adobe Experience Platform dokumenta
    >
    >Om du använder Adobe Journey Optimizer tillsammans med kundprofiler i realtid kommer målkorten att visa en aktiveringsknapp, som gör att du kan både exportera datauppsättningar och aktivera målgrupper för den här destinationen, beroende på vilka behörigheter du har aktiverat.
 
-1. **Välj datauppsättning(ar)** som du vill exportera till det valda målet.
+1. **Välj datauppsättning(ar)** som du vill exportera till det valda målet. [Läs mer om Journey Optimizer datamängder för export](#datasets)
 
    <!--![](assets/dataset-export-dataset-selection.png)-->
 

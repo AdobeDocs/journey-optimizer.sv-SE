@@ -2,17 +2,17 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Översikt över användarhantering
-description: Lär dig hur du definierar och hanterar behörigheter
+description: Lär dig definiera och hantera behörigheter
 feature: Access Management
 topic: Administration
 role: Admin, Architect
 level: Intermediate
 keywords: behörigheter, rättigheter, begränsningar, åtkomst, sandlåda
 exl-id: b8e266b1-d8eb-4c77-9341-9761b82609b0
-source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
+source-git-commit: 9f43387ff63c3d2c2849fad1ca6a98310b3915b3
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 10%
+source-wordcount: '173'
+ht-degree: 8%
 
 ---
 
@@ -26,11 +26,9 @@ Användarhantering i [!DNL Journey Optimizer] bygger på tre koncept:
 
 * **[!UICONTROL Role]**: En uppsättning enhetsbehörigheter som ger användarna tillgång till vissa funktioner eller objekt i gränssnittet. Se [Färdiga roller](ootb-product-profiles.md) -avsnitt.
 
-* **[!UICONTROL Permissions]**: Enhetsrättigheter som gör att du kan definiera de behörigheter som tilldelats **[!UICONTROL Roles]**. Varje tillstånd samlas under resurser, t.ex. Resor eller Erbjudanden, som representerar olika funktioner eller objekt i [!DNL Journey Optimizer]. Se [Behörighetsnivåer](high-low-permissions.md) -avsnitt.
+* **[!UICONTROL Permissions]**: Enhetsrättigheter som gör att du kan definiera de behörigheter som tilldelats **[!UICONTROL Roles]**. Varje tillstånd samlas under resurser, t.ex. Resor eller Erbjudanden, som representerar de olika funktionerna eller objekten i [!DNL Journey Optimizer]. Se [Behörighetsnivåer](high-low-permissions.md) -avsnitt.
 
 * **[!UICONTROL Sandbox]**: Virtuella sandlådor som partitionerar instanser i separata, isolerade virtuella miljöer. Se [Använda sandlådor](sandboxes.md).
-
-Varje koncept kan hanteras av **[!UICONTROL Product administrators]** som har tillgång till Admin Console. [Läs mer om Adobe Admin Console](https://helpx.adobe.com/se/enterprise/managing/user-guide.html).
 
 ![](assets/do-not-localize/permissions_2.png)
 

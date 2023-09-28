@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: b3e5a825b881736516b3bcd1d368843c3a601100
+source-git-commit: 59412ecbb8df74c7185b67593131c610d6da4148
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1521'
 ht-degree: 30%
 
 ---
@@ -232,11 +232,13 @@ ht-degree: 30%
 + Webbkanal {#web}
    + [Kom igång med webbkanalen](using/web/get-started-web.md)
    + [Förutsättningar för webbkanaler](using/web/web-prerequisites.md)
+   + [Programimplementering på en sida](using/web/web-spa-implementation.md)
    + [Skapa webbupplevelser](using/web/create-web.md)
    + Skapa webbsidor {#author-web-pages}
       + [Redigera webbsidesinnehåll](using/web/edit-web-content.md)
       + [Hantera ändringar](using/web/manage-web-modifications.md)
       + [Övervaka era webbkampanjer](using/web/monitor-web-campaigns.md)
+      + [Skapa single-page-appar](using/web/web-spa.md)
    + [Konfigurera webbunderdomäner](using/web/web-delegated-subdomains.md)
 + Kodbaserad upplevelse {#code-based-experience}
    + [Kom igång med kodbaserad kanal](using/code-based/get-started-code-based.md)
@@ -303,6 +305,7 @@ ht-degree: 30%
    + Profiler{#profiles}
       + [Kom igång med profiler](using/audience/get-started-profiles.md)
       + [Skapa testprofiler](using/audience/creating-test-profiles.md)
+      + [Arbeta med beräknade attribut](using/audience/computed-attributes.md)
    + [Identiteter](using/audience/get-started-identity.md)
    + [Licensanvändning](using/audience/license-usage.md)
 + Spåra och övervaka {#reporting}
@@ -321,6 +324,9 @@ ht-degree: 30%
       + [Målrapport](using/reports/objective-report.md)
       + [Global rapport för landningssida](using/reports/lp-report-global.md)
       + [Global rapport om prenumerationslista](using/reports/subscription-report-global.md)
+   + Kanalrapporter {#channel-report}
+      + [Kom igång med kanalrapporter](using/reports/channel-report-gs.md)
+      + [Kanalrapporter](using/reports/channel-report.md)
    + Reserapporter {#reports}
       + [Skapa reserapporter](using/reports/sharing-overview.md)
       + [Lista över steghändelsefält](using/reports/sharing-field-list.md)

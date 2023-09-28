@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: kvalificering, evenemang, målgrupp, resa, plattform
 exl-id: 7e70b8a9-7fac-4450-ad9c-597fe0496df9
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 2e06ca80a74c6f8a16ff379ee554d57a69ceeffd
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '934'
 ht-degree: 0%
 
 ---
@@ -31,14 +31,17 @@ Säg att ni har en&quot;silverkund&quot; som målgrupp. Med den här aktiviteten
 
 Den här typen av händelse kan placeras som det första steget eller senare under resan.
 
->[!IMPORTANT]
->
->Kom ihåg att Adobe Experience Platform-målgrupper beräknas antingen en gång om dagen (**batch** målgrupper) eller i realtid (**direktuppspelad** målgrupper, med alternativet High Frequency Audiences i Adobe Experience Platform).
->
->Om den valda publiken direktuppspelas kan de personer som tillhör den här publiken komma in på resan i realtid. Om målgruppen är en batch kommer personer som nyligen är kvalificerade för den här målgruppen att kunna delta i resan när målgruppsberäkningen görs på Adobe Experience Platform.
->
->Det går inte att använda fältgrupper för upplevelsehändelser på resor som börjar med en läsare, en målgrupp eller en affärshändelseaktivitet.
+### Viktiga anteckningar{#important-notes-segment-qualification}
 
+* Kom ihåg att Adobe Experience Platform-målgrupper beräknas antingen en gång om dagen (**batch** målgrupper) eller i realtid (**strömmad** målgrupper, med alternativet High Frequency Audiences i Adobe Experience Platform).
+
+* Om den valda publiken direktuppspelas kan de personer som tillhör den här publiken komma in på resan i realtid. Om målgruppen är en batch kommer personer som nyligen är kvalificerade för den här målgruppen att kunna delta i resan när målgruppsberäkningen görs på Adobe Experience Platform.
+
+* Det går inte att använda fältgrupper för upplevelsehändelser på resor som börjar med en läsare, en målgrupp eller en affärshändelseaktivitet.
+
+* När du använder en målgruppskvalifikation på en resa kan det ta upp till 10 minuter innan målgruppsaktiviteten är aktiv och lyssnar på profiler som kommer in eller lämnar målgruppen.
+
+### Konfigurera aktiviteten{#cnfigure-segment-qualification}
 
 1. Ta fram **[!UICONTROL Events]** kategori och släpp en **[!UICONTROL Audience Qualification]** på arbetsytan.
 
@@ -70,7 +73,7 @@ Den här typen av händelse kan placeras som det första steget eller senare und
 
    >[!NOTE]
    >
-   >Du kan bara välja ett personbaserat ID-namnutrymme. Om du har definierat ett namnutrymme för en uppslagstabell (till exempel: ProductID-namnområde för en produktsökning), är det inte tillgängligt i **Namnutrymme** listruta.
+   >Du kan bara välja ett personbaserat ID-namnutrymme. Om du har definierat ett namnutrymme för en uppslagstabell (till exempel: ProductID-namnutrymme för en produktsökning), är det inte tillgängligt i **Namnutrymme** listruta.
 
    ![](assets/segment7.png)
 
@@ -96,7 +99,7 @@ Mottagningshastigheten för den här informationen är hög. Mätningarna visar 
 
 ### Gruppera målgrupper{#batch-speed-segment-qualification}
 
-Observera att när du använder målgruppskvalifikation för en grupppublik kommer det att ske en topp vid tidpunkten för den dagliga beräkningen. Storleken på toppen beror på antalet personer som kommer in (eller avslutar) per dag.
+Observera att när du använder målgruppskvalifikation för en grupppublik kommer det att ske en topp vid tidpunkten för den dagliga beräkningen. Storleken på toppen beror på antalet individer som kommer in (eller avslutar) per dag.
 
 Dessutom, om målgruppen är nyskapad och omedelbart används under en resa, kan den första beräkningsgruppen få ett mycket stort antal personer att komma in på resan.
 
@@ -110,7 +113,7 @@ Mer information om direktuppspelningssegmentering finns i [Adobe Experience Plat
 
 Här följer några tips som hjälper dig att undvika att överbelasta system som används på resor (datakällor, anpassade åtgärder, kanalåtgärder).
 
-Skall inte användas i **[!UICONTROL Audience Qualification]** , en grupppublik omedelbart efter att den har skapats. Den första beräkningstopp undviks. Observera att det kommer att finnas en gul varning på arbetsytan om du ska använda en målgrupp som aldrig har beräknats.
+Skall inte användas i **[!UICONTROL Audience Qualification]** , en batchmålgrupp omedelbart efter att den har skapats. Den första beräkningstopp undviks. Observera att det kommer att finnas en gul varning på arbetsytan om du ska använda en målgrupp som aldrig har beräknats.
 
 ![](assets/segment-error.png)
 

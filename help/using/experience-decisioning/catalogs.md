@@ -8,13 +8,13 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Beta"
-source-git-commit: 69a2ef17b6f5ccd40c08858f7b434029964d544d
+exl-id: 613a0a16-2e8f-499d-9db4-5175fefd93cc
+source-git-commit: d5b283a9c9b0e3e4104dddb3bcb4b47bbd749113
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '312'
 ht-degree: 1%
 
 ---
-
 
 # Objektkatalog {#catalog}
 
@@ -65,6 +65,6 @@ Följ de här stegen för att komma åt katalogschemat där beslutsobjektens att
    >* Boolean
    >* Siffra
 
-   Detaljerad information om hur du arbetar med Adobe Experience Platform scheman finns i [XDM-systemdokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en).
+   Detaljerad information om hur du arbetar med Adobe Experience Platform scheman finns i [XDM-systemdokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html).
 
 1. Spara schemat när du har lagt till de anpassade attributen. Det nya fältet är nu tillgängligt på skärmen för att skapa artikelbeslut i **[!UICONTROL Custom attributes]** -avsnitt.

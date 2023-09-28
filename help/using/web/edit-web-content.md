@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 3847ac1d-2c0a-4f80-8df9-e8e304faf261
-source-git-commit: ec071392cec9933bb73ae9ab20618292b6089061
+source-git-commit: 59412ecbb8df74c7185b67593131c610d6da4148
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1087'
 ht-degree: 1%
 
 ---
@@ -166,6 +166,8 @@ Du kan växla från standardinställningen **[!UICONTROL Design]** till **[!UICO
 Från **[!UICONTROL Browse]** kan du navigera till den exakta sidan från den markerade ytan som du vill anpassa.
 
 Det är särskilt användbart när du hanterar sidor som är bakom autentisering eller som inte är tillgängliga från början på en viss URL. Du kan till exempel autentisera, navigera till din kontosida eller till kundvagnssidan och sedan växla tillbaka till **[!UICONTROL Design]** för att utföra ändringarna på den önskade sidan.
+
+Använda **[!UICONTROL Browse]** I kan du även navigera i alla vyer på webbplatsen när du skapar enkelsidiga program. [Läs mer](web-spa.md)
 
 ### Ändra enhetsstorlek {#change-device-size}
 
