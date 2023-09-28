@@ -6,9 +6,9 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: f27ffbe0-a61a-428a-bc37-db6b56e38a83
-source-git-commit: 500b76aaaed604a73f2d8430a181763a9f35565f
+source-git-commit: bee5e067e70e065c9db14448c42224a9ec09c5bf
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '202'
 ht-degree: 3%
 
 ---
@@ -51,7 +51,7 @@ De vanligaste frågeparametrarna för sidindelning är:
 
 | Parameter | Beskrivning | Exempel |
 | --------- | ----------- | ------- |
-| `property` | En valfri egenskap: <br> <ul> - Egenskaperna grupperas efter AND-åtgärd. <br><br> - Parametrar kan upprepas så här: property=<property-expr>[&amp;property=<property-expr2>...] eller property=<property-expr1>[&amp;<property-expr2>...] <br><br> - Egenskapsuttryck är i format [!]fält[op]värde, med början in [==,!=,&lt;=,>=,&lt;,>,~], stöd för reguljära uttryck | `property=name!=abc&property=id~.*1234.*&property=description equivalent with property=name!=abc,id~.*1234.*,description.` |
+| `property` | En valfri egenskap: <ul><li> Egenskaperna grupperas efter AND-åtgärd. <br><br> - Parametrar kan upprepas så här: property=`<property-expr>`[&amp;property=`<property-expr2>`...] eller property=`<property-expr1>`[&amp;`<property-expr2>`...] <br><br> - Egenskapsuttryck är i format `[!]field[op]` värde, med början in `[==,!=,'<=',>=,<,>,~]`, stöd för reguljära uttryck  </li></ul> | `property=name!=abc&property=id~.*1234.*&property=description equivalent with property=name!=abc,id~.*1234.*,description.` |
 | `orderBy` | Sortera resultat efter en specifik egenskap. Om du lägger till ett - före namn (orderBy=-name) sorteras objekten efter namn i fallande ordning (Z-A). Banuttryck är i form av punktavgränsade banor. Den här parametern kan upprepas så här: `orderby=field1[,-fields2,field3,...]` | `orderby=id`,`-name` |
 | `limit` | Begränsa antalet enheter som returneras. | `limit=5` |
 
