@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
 exl-id: 66b5c691-ddc4-4e9b-9386-2ce6c307451c
-source-git-commit: 08f24547237c01c581248d675c55c834c261b173
+source-git-commit: a5cb591a3340f2af27806967e5a1403be9fe26e4
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '984'
 ht-degree: 1%
 
 ---
@@ -26,9 +26,6 @@ Du kan exportera datauppsättningar till sex molnlagringsmål som är tillgängl
 
 ![](assets/dataset-export-setup.png)
 
->[!AVAILABILITY]
->
->Dessa destinationer är alla tillgängliga i betaversionen och kan komma att ändras.
 
 Mer information om respektive mål finns i Adobe Experience Platform-dokumentationen:
 
