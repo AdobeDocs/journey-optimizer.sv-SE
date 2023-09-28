@@ -4,10 +4,10 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: a5cb591a3340f2af27806967e5a1403be9fe26e4
+source-git-commit: 5f099db541c3219749f520d991261ad6fdfef4a7
 workflow-type: tm+mt
-source-wordcount: '4009'
-ht-degree: 9%
+source-wordcount: '4017'
+ht-degree: 8%
 
 ---
 
@@ -140,7 +140,7 @@ Nu kan du kryptera filer som är avsedda för direktreklamleverantörer när de 
 
 **Rapportering**
 
-Nu kan du exportera Journey Optimizer-rapporter som CSV-filer. [Läs mer](../reports/global-report.md#export-reports)
+Nu kan du exportera Journey Optimizer-rapporter som CSV-filer. Läs mer i [detaljerad dokumentation](../reports/global-report.md#export-reports) och [instruktionsvideo](../reports/global-report.md#video-csv).
 
 **Assets**
 

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: ec15e700-7659-4dbf-8446-6534ea48c5c8
-source-git-commit: 92cf1d4a350359adbbad93c4006ec7a0e3902397
+source-git-commit: 5f099db541c3219749f520d991261ad6fdfef4a7
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,10 @@ Kontrollpanelen har sparats. Dina olika ändringar kommer att tillämpas på nyt
 
 ## Exportera rapporter {#export-reports}
 
-Du kan enkelt exportera dina olika rapporter till PDF eller CSV-format så att du kan dela och skriva ut dem.
+Du kan enkelt exportera dina olika rapporter till PDF eller CSV-format så att du kan dela och skriva ut dem. Hur du exporterar rapporter beskrivs på flikarna nedan.
+
+➡️ [Upptäck den här funktionen i en video](#video-csv)
+
 
 >[!BEGINTABS]
 
@@ -110,3 +113,11 @@ Din rapport är nu tillgänglig för visning eller delning i en PDF-fil.
 
 
 >[!ENDTABS]
+
+
+### Exportera rapporter (video) {#video-csv}
+
+Lär dig hur du hämtar en CSV-rapport för en rapport och för en enda widget i följande instruktionsvideo.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424603?quality=12)
+
