@@ -8,7 +8,8 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Beta"
-source-git-commit: 69a2ef17b6f5ccd40c08858f7b434029964d544d
+exl-id: 903c1cb0-3e15-4f44-a9bf-bdb436316531
+source-git-commit: 979970d05f52fdbdb76d03a232d405af7097ba30
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 1%
@@ -66,5 +67,3 @@ De viktigaste stegen för Experience Decision är följande:
 1. **Skapa urvalsstrategier**: Bygg upp urvalsstrategier som utnyttjar samlingar, beslutsregler och rangordningsmetoder för att identifiera de beslutsobjekt som är lämpliga att visa för profiler.
 
 1. **Bädda in en beslutsprincip i din kodbaserade kampanj**: Beslutspolicyn kombinerar flera urvalsstrategier för att fastställa vilka beslutsfrågor som ska visas för den avsedda målgruppen.
-
-<!--## Glossary-->
