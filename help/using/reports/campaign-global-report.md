@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: fa64f5b8-75f2-40e6-8566-5766fafe6cd6
-source-git-commit: ea56d3cac5e4c4bc95560734fa3b9e8f410c8691
+source-git-commit: 2ae9cc843d613bf22e1413b1903e151faf3f8f76
 workflow-type: tm+mt
 source-wordcount: '2198'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 >title="Global kampanjrapport"
 >abstract="Med den globala rapporten Campaign kan ni mäta effekten av era kampanjer under en viss tidsperiod. Din rapport är uppdelad i olika widgetar som detaljerat beskriver kampanjens framgångar och fel. Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort."
 
-Globala rapporter, som du kommer åt från fliken All time, visar händelser som inträffat för minst två timmar sedan och täcker händelser under en vald tidsperiod. Live-rapporter fokuserar på händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten.
+Globala rapporter, tillgängliga från **Alltid** visar du händelser som inträffade för minst två timmar sedan och täcker händelser under en viss tidsperiod. Live-rapporter fokuserar på händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten.
 
 Kampanjens globala rapport kan nås direkt från er Campaign via **[!UICONTROL View report]** -knappen.
 
