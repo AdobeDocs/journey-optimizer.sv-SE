@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 8e9d3f6916ee5a0b6919446b95c716cc6648fbbc
+source-git-commit: 57163faa177a4e8bc90496f7756d7749a4f7e325
 workflow-type: tm+mt
-source-wordcount: '4017'
+source-wordcount: '4085'
 ht-degree: 8%
 
 ---
@@ -132,7 +132,9 @@ Ett nytt alternativ i konfigurationen av e-postytan gör att du kan välja att s
 
 **SMS-kanal**
 
-Två nya fält, **Inloggningsmeddelande** och **Hjälpmeddelande**, har lagts till i API-konfigurationsskärmen, vilket gör att användare kan anpassa svar för inkommande nyckelord. Observera att det här endast är tillgängligt för SMS-providern för Sinch. [Läs mer](../sms/sms-configuration.md)
+* Två nya fält, **Inloggningsmeddelande** och **Hjälpmeddelande**, har lagts till i API-konfigurationsskärmen, vilket gör att användare kan anpassa svar för inkommande nyckelord. Observera att det här endast är tillgängligt för SMS-providern för Sinch. [Läs mer](../sms/sms-configuration.md#create-api)
+
+* SMS-avanmälan hanteras inte längre på kanalnivå. Det är nu nummerspecifikt, vilket innebär att om vissa profiler avanmäler sig från ett visst nummer eller en viss kort kod, kan du fortfarande skicka meddelanden från andra nummer som du använder för att skicka ut SMS-meddelanden. Med ett nytt alternativ kan du välja **Avanmälningsnummer** som du vill använda för en viss yta. [Läs mer](../sms/sms-configuration.md#message-preset-sms)
 
 **Direktpostkanal**
 

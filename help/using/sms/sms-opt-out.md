@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 59ea67d9-e90c-4ad0-afb9-d0e0fd868855
-source-git-commit: dbdc363ccfcaa99b02289fb365dbece5d08ed544
+source-git-commit: 57163faa177a4e8bc90496f7756d7749a4f7e325
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
@@ -24,7 +24,7 @@ I enlighet med branschens standarder och bestämmelser måste alla SMS-marknadsf
 >Textmeddelandekommunikation kan följa olika lagkrav beroende på vilken typ av meddelanden det gäller, var du skickar dina textmeddelanden och var mottagarna finns. Medan Adobe Journey Optimizer hanterar meddelandena om långa koder och avgiftsfria nummer enligt beskrivningen nedan, bör du kontakta ditt juridiska ombud för att kontrollera att din textmeddelandekommunikation uppfyller alla gällande lagkrav.
 >
 
-## Interna inkommande nyckelord{#sms-native-keywords}
+## Interna inkommande nyckelord {#sms-native-keywords}
 
 Som standard hanterar Adobe Journey Optimizer följande engelskspråkiga standardsvarsmeddelanden för meddelanden om avgiftsfri och lång kod: STOP, UNSTOP, START, QUIT, CANCEL, END och UNSUBSCRIBE. Observera att endast Sinch och Infobip har stöd för inbyggda nyckelord när de används med Journey Optimizer.
 
@@ -33,7 +33,7 @@ Dessa nyckelord utlöser vanligtvis ett automatiskt standardsvar från din tredj
 Inga steg krävs för att säkerställa att SMS-avanmälningsfunktioner fungerar i Adobe Journey Optimizer när nyckelordssvaren STOP, UNSTOP, START, QUIT, CANCEL, END och UNSUBSCRIBE identifieras automatiskt. Profilernas avanmälningsstatus uppdateras i realtid i Adobe Journey Optimizer.
 
 
-## Blockeringslista{#sms-blocklists}
+## Blockeringslista {#sms-blocklists}
 
 Förutom att Adobe Journey Optimizer stoppar sändningen baserat på avanmälningsstatus (för direktintegrering med Twilio eller Sinch) har de flesta SMS-gatewayleverantörer också en blockeringslista som säkerställer att du inte får något SMS-meddelande till en person som har valt att avanmäla sig. Om du använder en annan leverantör än Sinch eller Twilio och skickar ett SMS via [anpassad kanal](../building-journeys/using-custom-actions.md)måste du bekräfta detta med din leverantör.
 
@@ -46,7 +46,7 @@ Journey Optimizer stöder dock globala avanmälningar baserade på inkommande ny
 
 ## Avsändarens alfanumeriska ID {#alphanumeric}
 
-De alfanumeriska avsändar-ID:n är endast avsedda för envägsmeddelanden och kan inte ta emot inkommande meddelanden. Därför gäller inte Adobe Journey Optimizer SMS STOP-, START- och HELP-nyckelord för Alpha Sender ID. Du måste ange andra instruktioner, till exempel skriva till supportteamet, ringa en telefonlinje till supporten eller skicka ett annat telefonnummer eller en annan kod så att användarna kan välja bort meddelanden som skickas via ett alfanumeriskt avsändar-ID.
+De alfanumeriska avsändar-ID:n är endast avsedda för envägsmeddelanden och kan inte ta emot inkommande meddelanden. Därför gäller Adobe Journey Optimizer SMS STOP-, START- och HELP-nyckelord inte för Alpha avsändar-ID:n. Du måste ange andra instruktioner, till exempel skriva till supportteamet, ringa en telefonlinje till supporten eller skicka ett annat telefonnummer eller en annan kod så att användarna kan välja bort meddelanden som skickas via ett alfanumeriskt avsändar-ID.
 
 ## Video {#video-sms}
 
