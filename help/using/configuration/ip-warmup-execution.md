@@ -11,9 +11,9 @@ keywords: IP, grupp, underdomäner, leveransbarhet
 hide: true
 hidefromtoc: true
 exl-id: 0fd0ba66-8ad2-4239-a6e0-ea29ea2a4a15
-source-git-commit: 1d5bc1de8a33401c165eeee4c8159fc19087c9c9
+source-git-commit: b657f4380026988ac324ee87c96375734a9b3961
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1442'
 ht-degree: 0%
 
 ---
@@ -122,23 +122,11 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
    ![](assets/ip-warmup-plan-edit-run.png)
 
-1. Välj **[!UICONTROL Pause for errors]** om du vill pausa körningarna om ett fel inträffar.<!--can't see the Paused status for runs? Is it failed?-->
+1. Välj **[!UICONTROL Pause for errors]** om du vill avbryta en körning om de kvalificerade profilerna är mindre än målprofilerna när målgruppen har utvärderats för den körningen.
 
    ![](assets/ip-warmup-plan-pause.png)
 
-   Om det riktade antalet profiler är mindre än förväntat efter att segmenteringsjobbet har körts avbryts körningen.
-
-1. **[!UICONTROL Activate]** körningen. Se till att du har schemalagt tillräckligt med tid för att segmenteringsjobbet ska kunna utföras.
-
-   ![](assets/ip-warmup-plan-activate.png)
-
-   >[!CAUTION]
-   >
-   >Varje körning måste aktiveras minst 12 timmar före den faktiska sändningstiden. I annat fall kanske inte segmenteringen är klar. <!--How do you know when segmentation is complete? Is there a way to prevent user from scheduling less than 12 hours before the segmentation job?-->
-
-   <!--Sart to execute on every day basis by simply clicking the play button > for each run? do you have to come back every day to activate each run? or can you schedule them one after the other?)-->
-
-   <!--Upon activation, when the segment evaluation happens, more segments will be created by the IP warmup service and will be leveraged in an audience composition and a new audience will be created for each run splitted into the different selected domains.-->
+1. **[!UICONTROL Activate]** körningen. [Läs mer](#activate-run)
 
 1. Status för den här körningen ändras till **[!UICONTROL Live]**. De olika körningsstatusarna listas i [det här avsnittet](#monitor-plan). Om kampanjkörningen inte har startat kan du stoppa en direktkörning.<!--why?-->
 
@@ -152,6 +140,37 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
    ![](assets/ip-warmup-plan-run-more-actions.png)
 
+## Aktivera en körning {#activate-run}
+
+Om du vill aktivera en körning väljer du **[!UICONTROL Activate]** -knappen.
+
+Se till att du har schemalagt tillräckligt med tid för att segmenteringsjobbet ska kunna utföras.
+
+![](assets/ip-warmup-plan-activate.png)
+
+>[!CAUTION]
+>
+>Varje körning måste aktiveras minst 12 timmar före den faktiska sändningstiden. I annat fall kanske inte segmenteringen är klar.
+
+När du aktiverar en körning skapas flera segment automatiskt:
+
+* Om du aktiverar den första körningen av en fas:
+
+   * Ett segment skapas för de uteslutna kampanjmålgrupperna (om sådana finns).
+   * Ett annat segment skapas för de domängrupper som exkluderats (om sådana finns).
+
+* Vid aktivering av körningar:
+
+   * Ett annat segment skapas för det senaste engagemangsfiltret.
+   * En målgruppskomposition skapas som motsvarar den målgrupp som kampanjen ska skickas till.
+
+<!--How do you know when segmentation is complete? Is there a way to prevent user from scheduling less than 12 hours before the segmentation job?-->
+
+<!--Sart to execute on every day basis by simply clicking the play button > for each run? do you have to come back every day to activate each run? or can you schedule them one after the other?)-->
+
+<!--Upon activation, when the segment evaluation happens, more segments will be created by the IP warmup service and will be leveraged in an audience composition and a new audience will be created for each run splitted into the different selected domains.-->
+
+
 ## Hantera din plan {#manage-plan}
 
 Om IP-värmningsplanen inte fungerar som förväntat kan du vidta åtgärderna nedan.
@@ -164,7 +183,7 @@ Om du vill lägga till en ny fas med början från en viss körning väljer du *
 
 En ny fas skapas för de återstående körningarna i den aktuella fasen.
 
-Om du t.ex. väljer det här alternativet för Kör nr 4 flyttas körningsversionerna nr 4 till nr 8 till en ny fas.
+Om du t.ex. väljer det här alternativet för Kör #4 flyttas körningarna #4 till #8 till en ny fas precis efter den aktuella fasen.
 
 Följ stegen [ovan](#define-phases) för att definiera den nya fasen.
 
@@ -196,13 +215,23 @@ Om din IP-warmup-plan inte fungerar som förväntat (till exempel om du observer
 
 ![](assets/ip-warmup-re-upload-plan.png)
 
-Alla tidigare körningar markeras som slutförda. Den nya planen visas under den första planen.
+Alla tidigare körningar är skrivskyddade. Den nya planen visas under den första planen.
 
 Följ stegen [ovan](#define-phases) för att definiera faserna i den nya planen.
 
 >[!NOTE]
 >
->Information om IP-värmeringsplanen ändras enligt den nyligen överförda filen. Körningarna live och complete påverkas inte.
+>Information om IP-värmeringsplanen ändras enligt den nyligen överförda filen. Tidigare körningar (oavsett deras [status](#monitor-plan)) påverkas inte.
+
+Låt oss ta ett exempel:
+
+* I den initiala IP-värmerappen hade fas 2 nio körningar.
+
+* Fyra körningar utfördes (oavsett om de misslyckas, slutförs eller avbryts - så länge som ett körningsförsök har gjorts körs körningen).
+
+* Om du överför en ny plan på nytt kommer fas 2 med de första fyra körningarna att gå in i skrivskyddat läge.
+
+* De återstående 5 körningarna (som är i utkastläge) flyttas till en ny fas (fas 3) som visas enligt den nyligen överförda planen.
 
 ## Övervaka planen {#monitor-plan}
 
@@ -216,6 +245,6 @@ En körning kan ha följande status:
 
 * **[!UICONTROL Draft]** : när en körning skapas, antingen när [skapa en ny plan](ip-warmup-plan.md) eller [lägga till en körning](#define-runs) från användargränssnittet tar **[!UICONTROL Draft]** status.
 * **[!UICONTROL Live]**: varje gång du aktiverar en körning tar det **[!UICONTROL Live]** status.
-* **[!UICONTROL Completed]**<!--TBC-->: kampanjkörningen för den här körningen har slutförts. <!--i.e. campaign execution has started, no error happened and emails have reached users? to check with Sid-->
+* **[!UICONTROL Completed]**: kampanjkörningen för den här körningen har slutförts. <!--i.e. campaign execution has started, no error happened and emails have reached users? to check with Sid-->
 * **[!UICONTROL Cancelled]**: a **[!UICONTROL Live]** körningen avbröts med **[!UICONTROL Stop]** -knappen. Den här knappen är bara tillgänglig om kampanjkörningen inte har startats. [Läs mer](#define-runs)
-* **[!UICONTROL Failed]**: ett fel påträffades av systemet eller kampanjen som användes för den aktuella fasen stoppades<!--what should the user do in that case?-->.
+* **[!UICONTROL Failed]**: ett fel påträffades av systemet eller kampanjen som användes för den aktuella fasen stoppades. Om en körning misslyckas kan du schemalägga en ny körning för nästa dag.
