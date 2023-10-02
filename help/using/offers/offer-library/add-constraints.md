@@ -1,14 +1,14 @@
 ---
 title: Lägg till begränsningar i ett erbjudande
-description: Lär dig hur du definierar villkoren för ett erbjudande som ska visas
+description: Lär dig definiera villkoren för ett erbjudande som ska visas
 feature: Offers
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: c710f647707168105a863ae8b0ea087b7d015aa5
 workflow-type: tm+mt
-source-wordcount: '2298'
+source-wordcount: '2294'
 ht-degree: 1%
 
 ---
@@ -150,7 +150,7 @@ Följ huvudstegen nedan när du vill ställa in capping.
 
    >[!CAUTION]
    >
-   >Det går inte att aktivera eller inaktivera frekvensbegränsning för tidigare skapade erbjudanden. För att göra det måste du duplicera erbjudandet eller skapa ett nytt.
+   >Det går inte att aktivera eller inaktivera frekvensbegränsning för tidigare skapade erbjudanden. För att göra det måste ni skapa ett nytt erbjudande.
 
 1. Definiera vilken **[!UICONTROL Capping event]** beaktas för att öka räknaren. [Läs mer](#capping-event)
 
@@ -225,7 +225,7 @@ The **[!UICONTROL Capping count]** kan du ange hur många gånger erbjudandet ka
 
 >[!NOTE]
 >
->Talet måste vara ett heltal som är större än 0.
+>Talet måste vara ett heltal större än 0.
 
 Du har till exempel definierat en anpassad capping-händelse som antalet utcheckningar som ska beaktas. Om du anger 10 i dialogrutan **[!UICONTROL Capping count]** inga fler erbjudanden skickas efter 10 utcheckningar.
 
@@ -272,13 +272,13 @@ Om du har definierat flera [representationer](add-representations.md) för ditt 
 
 ![](../assets/offer-capping-placement.png)
 
-* **[!UICONTROL Across all placements]**: antalet licenser kommer att summera alla beslut för alla ersättningar som är kopplade till erbjudandet.
+* **[!UICONTROL Across all placements]**: antalet appar innebär att alla beslut summeras för alla ersättningar som är kopplade till erbjudandet.
 
-  Om ett erbjudande till exempel har **E-post** placering och en **Webb** placeringen och du ställer in cappen på **2 per profil för alla placeringar** kan varje profil få upp till två gånger i rabatt, oberoende av placeringsmix.
+  Om ett erbjudande till exempel har **E-post** placering och en **Webb** placeringen, och du ställer in cappen på **2 per profil för alla placeringar** kan varje profil få upp till två gånger i rabatt, oberoende av placeringsmix.
 
 * **[!UICONTROL For each placement]**: antalet licenser tillämpas separat på antalet beslut för varje placering.
 
-  Om ett erbjudande till exempel har **E-post** placering och en **Webb** placeringen och du ställer in cappen på **2 per profil för varje placering** kan varje profil få upp till två gånger för e-postplaceringen och ytterligare två gånger för webblatsplaceringen.
+  Om ett erbjudande till exempel har **E-post** placering och en **Webb** placeringen, och du ställer in cappen på **2 per profil för varje placering** kan varje profil få upp till två gånger för e-postplaceringen och ytterligare två gånger för webblatsplaceringen.
 
 ### Påverkan av ändrade datum vid fästning {#capping-change-date}
 
@@ -303,25 +303,25 @@ Vid kap per profil sparas antalet på varje profil. När du ändrar start- och s
 
 Här är möjliga scenarier när **ändra startdatum för erbjudande**:
 
-| Scenario:<br>Om.. | Vad händer:<br>sedan... | Möjlig effekt på antalet decimaler |
+| Scenario<br>Om.. | Vad händer:<br>sedan... | Möjlig effekt på antalet decimaler |
 |--- |--- |--- |
-| ... erbjudandets startdatum uppdateras innan det ursprungliga startdatumet för erbjudandet har börjat, | ... antalet licenser börjar på det nya startdatumet. | Nej |
-| ... det nya startdatumet infaller före det aktuella slutdatumet, | ... Fästningen fortsätter med ett nytt startdatum och det föregående antalet fästingar för varje profil kommer att fortsätta. | Nej |
-| ... det nya startdatumet infaller efter det aktuella slutdatumet, | ... det aktuella begränsningsvärdet kommer att upphöra och det nya antalet fästingar kommer att börja om från 0 för alla profiler på det nya startdatumet. | Ja |
+| ... startdatumet för erbjudandet uppdateras innan startdatumet för det ursprungliga erbjudandet har börjat, | ... antalet får börja på det nya startdatumet. | Nej |
+| ... det nya startdatumet infaller före det aktuella slutdatumet, | ... takvärdet fortsätter med ett nytt startdatum och det föregående antalet appningar för varje profil fortsätter. | Nej |
+| ... det nya startdatumet infaller efter det aktuella slutdatumet, | ... den aktuella begränsningen upphör att gälla och det nya antalet fästingar börjar om från 0 för alla profiler på det nya startdatumet. | Ja |
 
 Här är möjliga scenarier när **förlänga erbjudandets slutdatum**:
 
-| Scenario:<br>Om.. | Vad händer:<br>sedan... | Möjlig effekt på antalet decimaler |
+| Scenario<br>Om.. | Vad händer:<br>sedan... | Möjlig effekt på antalet decimaler |
 |--- |--- |--- |
 | ... en beslutsbegäran infaller före det ursprungliga erbjudandets slutdatum, | ... antalet capping uppdateras och det föregående antalet capping för varje profil fortsätter. | Nej |
-| ... ingen beslutsbegäran infaller före det ursprungliga slutdatumet, | ... antalet licenser återställs på det ursprungliga slutdatumet för varje profil. Det nya antalet capping börjar sedan igen från 0 för alla nya beslutsbegäranden som kommer att inträffa efter det ursprungliga slutdatumet. | Ja |
+| ... ingen beslutsbegäran infaller före det ursprungliga slutdatumet, | ... antalet fästingar återställs på det ursprungliga slutdatumet för varje profil. Det nya antalet capping börjar sedan igen från 0 för alla nya beslutsbegäranden som kommer att inträffa efter det ursprungliga slutdatumet. | Ja |
 
 **Exempel**
 
 Säg att du har ett erbjudande med ett ursprungligt startdatum som är inställt på **1 januari**, förfaller den **31 januari**.
 
-1. Profilerna X, Y och Z presenteras som erbjudandet.
-1. På **Januari, 10**, erbjudandets slutdatum ändras till **15 februari**.
+1. Profilerna X, Y och Z presenteras.
+1. På **10 januari**, erbjudandets slutdatum ändras till **15 februari**.
 1. **11 januari-31 januari**, visas endast profilen Z.
 
    * På grund av att en beslutsbegäran inträffade före det ursprungliga slutdatumet **för profil Z** kan erbjudandets slutdatum förlängas till **15 februari**.

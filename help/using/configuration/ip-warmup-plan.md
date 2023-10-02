@@ -10,7 +10,8 @@ level: Experienced
 keywords: IP, grupp, underdomäner, leveransbarhet
 hide: true
 hidefromtoc: true
-source-git-commit: b3e5a825b881736516b3bcd1d368843c3a601100
+exl-id: c2434086-2ed4-4cd0-aecd-2eea8f0a55f6
+source-git-commit: 205f26d3f31b9f003fc1dbaf679021464429d144
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 1%
@@ -85,6 +86,8 @@ Använd **[!UICONTROL Custom Domain Group]** för att definiera en ny domängrup
 
 Om du till exempel lägger till den anpassade domänen Luma vill du att följande underdomäner ska inkluderas: luma.com, luma.co.uk, luma.it, luma.fr, luma.de osv.
 
+![](assets/ip-warmup-sample-file-custom.png)
+
 ## Få åtkomst till och hantera IP-värmerelayouter {#manage-ip-warmup-plans}
 
 1. Gå till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL IP warmup plans]**-menyn. Alla IP-uppvärmningsplaner som har skapats hittills visas.
@@ -95,7 +98,7 @@ Om du till exempel lägger till den anpassade domänen Luma vill du att följand
 
    * **Inte startat**: ingen körning har aktiverats ännu. [Läs mer](ip-warmup-execution.md#define-runs)
    * **Live**: planen ändras till den här statusen så snart den första körningen i den första fasen har aktiverats. [Läs mer](ip-warmup-execution.md#define-runs)
-   * **Slutförd**: planen har markerats som slutförd. Det här alternativet är bara tillgängligt om alla körningar i planen finns **[!UICONTROL Succeeded]** eller **[!UICONTROL Draft]** status (ingen körning kan utföras) **[!UICONTROL Live]**). [Läs mer](ip-warmup-execution.md#define-runs#mark-as-completed)
+   * **Slutförd**: planen har markerats som slutförd. Det här alternativet är bara tillgängligt om alla körningar i planen finns **[!UICONTROL Completed]** eller **[!UICONTROL Draft]** status (ingen körning kan utföras) **[!UICONTROL Live]**). [Läs mer](ip-warmup-execution.md#mark-as-completed)
      <!--* **Paused**: to check (user action)-->
 
 1. Om du vill ta bort en IP-uppvärmningsplan väljer du **[!UICONTROL Delete]** -ikonen bredvid namnet på en plan och bekräfta borttagningen.

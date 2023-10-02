@@ -11,9 +11,9 @@ keywords: IP, grupp, underdomäner, leveransbarhet
 hide: true
 hidefromtoc: true
 exl-id: 752ffd7f-09c2-4aa3-a067-2dbe0634709c
-source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
+source-git-commit: 205f26d3f31b9f003fc1dbaf679021464429d144
 workflow-type: tm+mt
-source-wordcount: '1618'
+source-wordcount: '1632'
 ht-degree: 0%
 
 ---
@@ -138,11 +138,11 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
    ![](assets/ip-warmup-plan-send-time.png)
 
-1. Du kan också definiera ett tidsfönster under vilket IP-uppvärmningskampanjen kan köras om segmenteringsjobbet försenas. Om du vill göra det klickar du på egenskapsikonen uppe till vänster, bredvid namnet på planen, och använder **[!UICONTROL Retry run time]** för att välja en varaktighet - upp till 240 minuter (4 timmar).
+1. Du kan också definiera ett tidsfönster under vilket IP-uppvärmningskampanjen kan köras om det uppstår några förseningar i [segmentering](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#how-segmentation-works){target="_blank"} jobb. Om du vill göra det klickar du på egenskapsikonen uppe till vänster, bredvid namnet på planen, och använder **[!UICONTROL Retry run time]** för att välja en varaktighet - upp till 240 minuter (4 timmar).
 
    ![](assets/ip-warmup-plan-retry-run-time.png)
 
-   Om du till exempel ställer in en sändningstid på en viss dag kl. 20 och väljer 120 minuter som återförsökskörningstid, kommer detta att ge ett fönster med en möjlighet på 2 timmar för att segmenteringsjobbet ska kunna köras.
+   Om du t.ex. anger en sändningstid på en viss dag kl. 9.00 och väljer 120 minuter som återförsökskörningstid, kommer detta att ge ett fönster med en möjlighet på 2 timmar (9.00-11.00) att utföra segmenteringsjobbet.
 
    >[!NOTE]
    >
@@ -158,7 +158,9 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
 1. **[!UICONTROL Activate]** körningen. [Läs mer](#activate-run)
 
-1. Status för den här körningen ändras till **[!UICONTROL Live]**. De olika körningsstatusarna listas i [det här avsnittet](#monitor-plan). Om kampanjkörningen inte har startat kan du stoppa en direktkörning.<!--why?-->
+1. Status för den här körningen ändras till **[!UICONTROL Live]**. De olika körningsstatusarna listas i [det här avsnittet](#monitor-plan).
+
+1. Om kampanjkörningen inte har startat kan du stoppa en direktkörning.<!--why?-->
 
    ![](assets/ip-warmup-plan-stop-run.png)
 
@@ -166,7 +168,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
    >
    >När kampanjkörningen har startat **[!UICONTROL Stop]** knappen blir otillgänglig.
 
-1. Om du vill lägga till en körning väljer du **[!UICONTROL Add a run below]** från ikonen med tre punkter.
+1. Om du vill lägga till en körning väljer du **[!UICONTROL Add a run below]** från ikonen Fler åtgärder.
 
    ![](assets/ip-warmup-plan-run-more-actions.png)
 
@@ -174,7 +176,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
 Om du vill aktivera en körning väljer du **[!UICONTROL Activate]** -knappen.
 
-Se till att du har schemalagt tillräckligt med tid för att segmenteringsjobbet ska kunna utföras.
+Se till att du har schemalagt tillräckligt med tid för att tillåta [segmentering](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#how-segmentation-works){target="_blank"} jobb som ska köras.
 
 ![](assets/ip-warmup-plan-activate.png)
 
@@ -182,17 +184,17 @@ Se till att du har schemalagt tillräckligt med tid för att segmenteringsjobbet
 >
 >Varje körning måste aktiveras minst 12 timmar före den faktiska sändningstiden. I annat fall kanske inte segmenteringen är klar.
 
-När du aktiverar en körning skapas flera segment automatiskt:
+När du aktiverar en körning skapas flera segment automatiskt.
 
 * Om du aktiverar den första körningen av en fas:
 
-   * Ett segment skapas för de uteslutna kampanjmålgrupperna (om sådana finns).
+   * A [segment](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html){target="_blank"} skapas för de uteslutna kampanjmålgrupperna (om sådana finns).
    * Ett annat segment skapas för de domängrupper som exkluderats (om sådana finns).
 
 * Vid aktivering av körningar:
 
    * Ett annat segment skapas för det senaste engagemangsfiltret.
-   * En målgruppskomposition skapas som motsvarar den målgrupp som kampanjen ska skickas till.
+   * An [publiksammansättning](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html){target="_blank"} skapas för den målgrupp som kampanjen ska skickas till.
 
 <!--How do you know when segmentation is complete? Is there a way to prevent user from scheduling less than 12 hours before the segmentation job?-->
 
@@ -200,14 +202,13 @@ När du aktiverar en körning skapas flera segment automatiskt:
 
 <!--Upon activation, when the segment evaluation happens, more segments will be created by the IP warmup service and will be leveraged in an audience composition and a new audience will be created for each run splitted into the different selected domains.-->
 
-
 ## Hantera din plan {#manage-plan}
 
 Om IP-värmningsplanen inte fungerar som förväntat kan du vidta åtgärderna nedan.
 
 ### Dela en fas {#split-phase}
 
-Om du vill lägga till en ny fas med början från en viss körning väljer du **[!UICONTROL Split to a new phase option]** från ikonen med tre punkter.
+Om du vill lägga till en ny fas med början från en viss körning väljer du **[!UICONTROL Split to a new phase option]** från ikonen Fler åtgärder.
 
 ![](assets/ip-warmup-plan-run-split-run.png)
 
@@ -257,7 +258,7 @@ Låt oss ta ett exempel:
 
 * I den initiala IP-värmerappen hade fas 2 nio körningar.
 
-* Fyra körningar utfördes (oavsett om de misslyckas, slutförs eller avbryts - så länge som ett körningsförsök har gjorts körs körningen).
+* 4 körningar utfördes (oavsett om de misslyckades, slutfördes eller avbröts)<!--as long as a run has been attempted, it is an executed run-->).
 
 * Om du överför en ny plan på nytt kommer fas 2 med de första fyra körningarna att gå in i skrivskyddat läge.
 
@@ -276,5 +277,5 @@ En körning kan ha följande status:
 * **[!UICONTROL Draft]** : när en körning skapas, antingen när [skapa en ny plan](ip-warmup-plan.md) eller [lägga till en körning](#define-runs) från användargränssnittet tar **[!UICONTROL Draft]** status.
 * **[!UICONTROL Live]**: varje gång du aktiverar en körning tar det **[!UICONTROL Live]** status.
 * **[!UICONTROL Completed]**: kampanjkörningen för den här körningen har slutförts. <!--i.e. campaign execution has started, no error happened and emails have reached users? to check with Sid-->
-* **[!UICONTROL Cancelled]**: a **[!UICONTROL Live]** körningen avbröts med **[!UICONTROL Stop]** -knappen. Den här knappen är bara tillgänglig om kampanjkörningen inte har startats. [Läs mer](#define-runs)
+* **[!UICONTROL Cancelled]**: a **[!UICONTROL Live]** körningen avbröts med **[!UICONTROL Stop]** eller aktiverade **[!UICONTROL Pause for errors]** och ett fel inträffade. [Läs mer](#define-runs)
 * **[!UICONTROL Failed]**: ett fel påträffades av systemet eller kampanjen som användes för den aktuella fasen stoppades. Om en körning misslyckas kan du schemalägga en ny körning för nästa dag.
