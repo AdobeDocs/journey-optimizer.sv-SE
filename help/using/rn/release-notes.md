@@ -4,7 +4,7 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 57163faa177a4e8bc90496f7756d7749a4f7e325
+source-git-commit: f4ed1bc887666c9b70444266b1ecc3e60b4a1df3
 workflow-type: tm+mt
 source-wordcount: '4085'
 ht-degree: 8%
@@ -90,7 +90,7 @@ Beräknade attribut förenklar dessutom arbetsflödena för segmentering och res
 <tr>
 <td>
 <p>Med den här nya funktionen kan du enkelt hantera och associera push-autentiseringsuppgifter med en dedikerad sandlåda i appytor.</p>
-<p>Mer information finns i den <a href="../in-app/inapp-configuration.md">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="../in-app/inapp-configuration.md#channel-prerequisites">detaljerade dokumentationen</a>.</p>
 </tr>
 </tbody>
 </table>
