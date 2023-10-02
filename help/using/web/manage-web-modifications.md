@@ -5,10 +5,10 @@ feature: Web Channel
 topic: Content Management
 role: User
 level: Beginner
-exl-id: da12c416-3dcb-4c45-806c-ebe298c386f4
-source-git-commit: d5b283a9c9b0e3e4104dddb3bcb4b47bbd749113
+exl-id: 213511b4-7556-4a25-aa23-b50acd11cd34
+source-git-commit: f00843c54f18c6d9599d527101496d1d58df09f3
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '894'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ När du redigerar en sida med hjälp av webbdesignern kan du lägga till nya än
 
 1. Välj ändringstyp:
 
-   * **[!UICONTROL CSS Selector]**- [Läs mer](#css-selector)
+   * **[!UICONTROL CSS Selector]** - [Läs mer](#css-selector)
    * **[!UICONTROL Page `<Head>`]** - [Läs mer](#page-head)
 
 1. Ange ditt innehåll och **[!UICONTROL Save]** dina ändringar.
@@ -184,4 +184,3 @@ Varje ändring skapar ett nytt element i **[!UICONTROL Modifications]** -panelen
 Om du använder **[!UICONTROL Page `<head>`]** Ändringstyp för två kampanjer som påverkar samma URL, JavaScript injiceras på sidan från båda kampanjerna. [!DNL Journey Optimizer] bestämmer automatiskt ordningen för det levererade innehållet. Kontrollera att koden inte är beroende av placering. Det är upp till dig att se till att det inte finns några konflikter i koden.
 
 +++
-

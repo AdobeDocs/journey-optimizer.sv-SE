@@ -5,10 +5,11 @@ feature: Web Channel
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 59412ecbb8df74c7185b67593131c610d6da4148
+exl-id: b33e4bca-d2e9-4610-9f04-008d47f686d0
+source-git-commit: a2d67bbcf9b90c427ea3f755d80e465a3d7b10ec
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 4%
+source-wordcount: '452'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +23,9 @@ ht-degree: 4%
 >abstract="Ändringarna används bara för de valda vyerna. Vyer kan identifieras med **Bläddra** och navigera till dem. Hittar du inte den vy du söker?"
 >additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
 
-**Single-page applications** (SPA) kan nu redigeras i webbdesignerns visuella redigerare. På så sätt kan du välja vilka specifika vyer du vill använda webbsidesändringarna på.
+**Single-page applications** (SPA) kan nu redigeras i webbdesignerns visuella redigerare. Detta gör att du kan välja vilken specifik **vyer** du vill använda dina webbsidesändringar på.
+
+[Lär dig hur du skapar enkelsidiga program i den här videon](#video)
 
 En vy kan definieras som en hel webbplats eller som en grupp visuella element på en webbplats, till exempel hemsidan, hela produktwebbplatsen eller leveransinställningsramen på alla utcheckningssidor.
 
@@ -77,3 +80,14 @@ När du har lagt till en ändring i en viss vy kan du använda den i andra marke
 1. Växla till **[!UICONTROL Browse]** läge för att kontrollera om ändringarna används på de önskade sidorna.
 
    ![](assets/web-designer-modifications-applied-view.png)
+
+## Instruktionsvideo{#video}
+
+I den här videon beskrivs hur du:
+
+* Upptäck SPA vyer med **[!UICONTROL Browse]** läge
+* Utför redigering i den aktuella vyn
+* Använd webbplatsändringar på flera vyer eller på alla vyer som identifierats
+* Göra satsåtgärder på ändringar
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424536/?quality=12&learn=on)

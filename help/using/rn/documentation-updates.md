@@ -4,9 +4,9 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 2e06ca80a74c6f8a16ff379ee554d57a69ceeffd
+source-git-commit: eee717b9fb0ceec72df449abcf3e37b41fe31e15
 workflow-type: tm+mt
-source-wordcount: '3693'
+source-wordcount: '3709'
 ht-degree: 14%
 
 ---
@@ -20,16 +20,14 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Septemberversionen 23 har detaljerats i dokumentationen. [Läs mer](release-notes.md)
 * En ny sida har lagts till med bästa praxis för skalning och vägledning om hur du sammanfogar bilder i realtid. [Läs mer](../start/best-practices.md)
 
-<!--  * The maximum wait duration has been changed from 30 to 29 days. [Read more](../building-journeys/wait-management.md) -->
+  <!--  * The maximum wait duration has been changed from 30 to 29 days. [Read more](../building-journeys/wait-management.md) -->
 
 * Ett avsnitt med vanliga frågor och svar har lagts till för optimering av sändningstid. [Läs mer](../building-journeys/journeys-message.md#faq-send-time)
 * En anteckning har lagts till för målgruppsklassificeringsaktiviteten. Det kan ta upp till 10 minuter att vara aktiv och lyssna på profiler som kommer in eller lämnar publiken. [Läs mer](../building-journeys/audience-qualification-events.md#important-notes-segment-qualification)
 * En lista över begränsningar som ska vara medveten om när man skapar beslutsregler har lagts till i dokumentationen för beslutshantering. [Läs mer](../offers/offer-library/creating-decision-rules.md)
 * Länkar till åtkomstkontrollsdokumentation har uppdaterats. [Läs mer](../administration/permissions.md)
 * Förutsättningar för kanaler i appen har uppdaterats med information om Adobe Experience Platform Data Collection. [Läs mer](../in-app/inapp-configuration.md)
-
-
-
+* Vissa uttryck som presenteras i rankningsformelexempel har uppdaterats för att undvika valideringsfel. [Läs mer](../offers/ranking/create-ranking-formulas.md#ranking-formula-examples)
 
 ## Augusti 2023 {#august-2023}
 
@@ -42,7 +40,6 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * En varning har lagts till på **Arbeta med innehållsmallar** för att ange att spårning inte stöds vid testning av mallar för e-postinnehåll. Om du vill testa spårning måste du använda innehållsmallen i ett e-postmeddelande och skicka ett korrektur. [Läs mer](../email/content-templates.md#test-template)
 * Flera varningar har lagts till i **Skapa och publicera landningssidor** för att ange att du inte kan komma åt landningssidan genom att kopiera och klistra in den URL-adress som angavs när sidan skapades i en webbläsare, även om den publicerades. I stället kan du testa den med förhandsvisningsfunktionen. [Läs mer](../landing-pages/create-lp.md)
 * Ett nytt avsnitt har lagts till om hur **hantera samtycke** för direktreklamkanalen. [Läs mer](../direct-mail/test-send-direct-mail.md)
-
 
 ## Juli 2023 {#july-2023}
 
