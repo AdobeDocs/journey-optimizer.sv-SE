@@ -44,7 +44,7 @@ not (@{LobbyBeacon.endUserIDs._experience.emailid.id}=="example@adobe.com")
 
 ## Logisk  {#logical}
 
-###  och 
+### och 
 
 ```json
 <expression1> and <expression2>
