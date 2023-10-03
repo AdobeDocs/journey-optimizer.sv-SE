@@ -4,7 +4,7 @@ product: journey optimizer
 title: Versionsinformation 2022
 description: Versionsinformation om Journey Optimizer 2022
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
-source-git-commit: 17dd8e2226555ba6bf74f813c11bdeecac05ddd2
+source-git-commit: dd463d36550b53faaffca90691550278498c862a
 workflow-type: tm+mt
 source-wordcount: '3575'
 ht-degree: 8%
@@ -514,7 +514,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 **E-post**
 
-* **Spara som mall** - Du kan nu spara ett e-postinnehåll som en mall och återanvända det när du skapar andra meddelanden. [Läs mer](../email/email-templates.md)
+* **Spara som mall** - Du kan nu spara ett e-postinnehåll som en mall och återanvända det när du skapar andra meddelanden. [Läs mer](../content-management/content-templates.md#save-as-template)
 
 
 **Administrering**
@@ -682,7 +682,7 @@ Som Adobe Campaign Standard-kund kan du nu skicka e-post, push-meddelanden och S
 
 **Personalisering**
 
-* Du kan nu spara mer än 40 personaliseringsuttryck i biblioteket. [Läs mer](../personalization/personalization-library.md)
+* Du kan nu spara mer än 40 personaliseringsuttryck i biblioteket. [Läs mer](../personalization/use-expression-fragments.md)
 
 ## Version från februari 2022 {#feb-2022-release}
 
@@ -714,7 +714,7 @@ Som Adobe Campaign Standard-kund kan du nu skicka e-post, push-meddelanden och S
 <tr>
 <td>
 <p>Journey Optimizer har nu ett bibliotek där du kan komma åt fördefinierade personaliseringsuttryck. Uttrycken konfigureras av Admin-användare.</p>
-<p>Mer information finns i den <a href="../personalization/personalization-library.md">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="../personalization/use-expression-fragments.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>

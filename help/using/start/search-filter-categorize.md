@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 6151aea2-6a34-4000-ba48-161efe4d94d7
-source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
+source-git-commit: dd463d36550b53faaffca90691550278498c862a
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 9%
@@ -55,8 +55,8 @@ The **[!UICONTROL Tags]** I kan du definiera taggar för objektet. Taggar är ti
 
 * [Resor](../building-journeys/journey-gs.md#change-properties)
 * [Kampanjer](../campaigns/create-campaign.md#create)
-* [Mallar](../email/content-templates.md)
-* [Fragment](../email/fragments.md)
+* [Mallar](../content-management/content-templates.md)
+* [Fragment](../content-management/fragments.md)
 * [Prenumerationslistor](../landing-pages/subscription-list.md)
 * [Landningssidor](../landing-pages/create-lp.md)
 

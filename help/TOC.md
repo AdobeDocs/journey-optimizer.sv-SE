@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: f4ed1bc887666c9b70444266b1ecc3e60b4a1df3
+source-git-commit: dd463d36550b53faaffca90691550278498c862a
 workflow-type: tm+mt
-source-wordcount: '1521'
+source-wordcount: '1527'
 ht-degree: 30%
 
 ---
@@ -182,9 +182,10 @@ ht-degree: 30%
          + [Designa innehåll från grunden](using/email/content-from-scratch.md)
          + [Importera innehåll](using/email/existing-content.md)
          + [Koda eget innehåll](using/email/code-content.md)
-         + [Arbeta med mallar](using/email/email-templates.md)
+         + [Använd e-postmallar](using/email/use-email-templates.md)
       + Designa innehåll {#add-content}
          + [Använda innehållskomponenter](using/email/content-components.md)
+         + [Utnyttja visuella fragment](using/email/use-visual-fragments.md)
          + [Lägga till länkar och spåra meddelanden](using/email/message-tracking.md)
          + [Infoga personaliserade erbjudanden](using/email/add-offers-email.md)
          + [Generera textversionen](using/email/text-version-email.md)
@@ -195,9 +196,7 @@ ht-degree: 30%
          + [Justera lodrät justering och utfyllnad](using/email/alignment-and-padding.md)
          + [Lägg till textbundna formatattribut](using/email/inline-styling.md)
    + [Förhandsgranska och testa din e-post](using/email/preview.md)
-   + [Skapa innehållsmallar](using/email/content-templates.md)
    + [Använd Experience Manager-mallar](using/email/aem-templates.md)
-   + [Arbeta med fragment](using/email/fragments.md)
    + [Hantera e-postavanmälan](using/email/email-opt-out.md)
    + Konfigurera e-postkanal {#configure-email}
       + [Kom igång med e-postkonfiguration](using/email/get-started-email-config.md)
@@ -271,7 +270,7 @@ ht-degree: 30%
       + Arbeta med uttrycksredigeraren {#expression-editor}
          + [Om uttrycksredigeraren](using/personalization/personalization-build-expressions.md)
          + [Lägg till attribut i favoriter](using/personalization/personalization-favorites.md)
-         + [Arbeta med sparade uttryck](using/personalization/personalization-library.md)
+         + [Använd uttrycksfragment](using/personalization/use-expression-fragments.md)
          + [Validering av personalisering](using/personalization/personalization-validation.md)
       + Hjälpfunktioner{#functions}
          + [Kom igång med hjälpfunktioner](using/personalization/functions/functions.md)
@@ -288,6 +287,9 @@ ht-degree: 30%
       + Användningsexempel för personalisering{#personalization-use-cases}
          + [Meddelande om orderstatus](using/personalization/personalization-use-case.md)
          + [E-post om att kunden överger en kundvagn](using/personalization/personalization-use-case-helper-functions.md)
+   + Hantera återanvändbart innehåll {#reusable-content}
+      + [Arbeta med innehållsmallar](using/content-management/content-templates.md)
+      + [Arbeta med fragment](using/content-management/fragments.md)
    + Dynamiskt innehåll {#dynamic}
       + [Kom igång med dynamiskt innehåll](using/personalization/get-started-dynamic-content.md)
       + [Skapa villkorsregler](using/personalization/create-conditions.md)

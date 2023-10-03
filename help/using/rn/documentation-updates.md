@@ -4,7 +4,7 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: eee717b9fb0ceec72df449abcf3e37b41fe31e15
+source-git-commit: dd463d36550b53faaffca90691550278498c862a
 workflow-type: tm+mt
 source-wordcount: '3709'
 ht-degree: 14%
@@ -37,7 +37,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Offer decisioning **exportera datamängder** är nu aktiverade som standard. Anteckningen om det tidigare beteendet har tagits bort.  [Läs mer](../offers/export-catalog/get-started-export.md)
 * Olika **kampanjrapportstatistik** har bytt namn i både Live- och Global-rapporter. [Läs mer](../reports/campaign-global-report.md)
 * Ett nytt avsnitt har lagts till om krav för innehållsexperiment för webbkanalen. [Läs mer](../web/web-prerequisites.md#experiment-prerequisites)
-* En varning har lagts till på **Arbeta med innehållsmallar** för att ange att spårning inte stöds vid testning av mallar för e-postinnehåll. Om du vill testa spårning måste du använda innehållsmallen i ett e-postmeddelande och skicka ett korrektur. [Läs mer](../email/content-templates.md#test-template)
+* En varning har lagts till på **Arbeta med innehållsmallar** för att ange att spårning inte stöds vid testning av mallar för e-postinnehåll. Om du vill testa spårning måste du använda innehållsmallen i ett e-postmeddelande och skicka ett korrektur. [Läs mer](../content-management/content-templates.md#test-template)
 * Flera varningar har lagts till i **Skapa och publicera landningssidor** för att ange att du inte kan komma åt landningssidan genom att kopiera och klistra in den URL-adress som angavs när sidan skapades i en webbläsare, även om den publicerades. I stället kan du testa den med förhandsvisningsfunktionen. [Läs mer](../landing-pages/create-lp.md)
 * Ett nytt avsnitt har lagts till om hur **hantera samtycke** för direktreklamkanalen. [Läs mer](../direct-mail/test-send-direct-mail.md)
 

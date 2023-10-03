@@ -11,7 +11,7 @@ role: User
 level: Beginner
 badge: label="Beta" type="Informative"
 exl-id: e4935129-c1cb-41b1-b84d-cd419053c303
-source-git-commit: 59499dec7d15dd4565c7910d7b454d82243ff011
+source-git-commit: dd463d36550b53faaffca90691550278498c862a
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 1%
@@ -97,7 +97,7 @@ När mallen Experience Manager är tillgänglig i Journey Optimizer som innehål
    >
    > Om du vill redigera och anpassa mallen kan du bara använda kompatibilitetsläget.
 
-1. När innehållsmallen är klar [testa och validera den](content-templates.md#test-template).
+1. När innehållsmallen är klar [testa och validera den](../content-management/content-templates.md#test-template).
 
 1. När innehållet har definierats kan du använda det när du skapar ny e-post genom att bläddra i **[!UICONTROL Saved templates]** samling. Välj sedan **[!UICONTROL Use this template]**.
 
