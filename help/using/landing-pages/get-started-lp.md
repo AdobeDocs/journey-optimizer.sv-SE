@@ -27,7 +27,7 @@ En landningssida är en fristående webbsida som en användare dirigeras till ef
 * Utnyttja [!DNL Journey Optimizer] funktioner för att enkelt bygga **responsiva landningssidor**.
 * Konfigurera **avanmälnings- och avanmälningsflöden** snabbt och smidigt.
 * Skapa prenumerationslistor så att användarna kan **prenumerera på en tjänst**. [Läs mer](lp-use-cases.md#subscription-to-a-service)
-* Ge mottagarna **möjlighet att avbryta prenumerationen** från att ta emot meddelanden. [Läs mer](lp-use-cases.md#opt-out)
+* Förse mottagarna med **möjlighet att avbryta prenumerationen** från att ta emot meddelanden. [Läs mer](lp-use-cases.md#opt-out)
 * Skicka en **bekräftelsemeddelande** vid anmälan eller avanmälan. [Läs mer](lp-use-cases.md#send-confirmation-email)
 
 <table style="table-layout:fixed"><tr style="border: 0;">

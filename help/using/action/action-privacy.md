@@ -37,8 +37,8 @@ Mer information om ramverket för datastyrning och hur du arbetar med etiketter 
 
 ## Viktiga anteckningar {#important-notes}
 
-* Datastyrning gäller endast för anpassade kundresor. Campaign Classic och Campaign Standard stöds inte.
-* Styrningsprinciper tillämpas endast när en marknadsföringsåtgärd (obligatorisk eller ytterligare) har ställts in på den anpassade åtgärdsnivån.
+* Datastyrning gäller endast för anpassade kundresor. Campaign Classic- och Campaign Standard-åtgärder stöds inte.
+* Styrningspolicyer gäller endast när en marknadsföringsåtgärd (obligatorisk eller ytterligare) har ställts in på den anpassade åtgärdsnivån.
 
 ## Definiera styrningspolicyer {#governance-policies}
 
@@ -58,7 +58,7 @@ Låt oss ta ett exempel på det blodtypsfält som du måste märka som känsligt
 1. Definiera ett namn och ett eget namn för den här etiketten. Till exempel: _ePHI1_.
 1. I den vänstra menyn, under **Datahantering**, klicka **Scheman** och klickar på **Använd etiketter för åtkomst och datastyrning** -knappen. Välj schema och fält (blodtyp) och markera den tidigare skapade etiketten, _ePHI1_ i vårt exempel.
    ![](assets/action-privacy3.png)
-1. Gå tillbaka till **Profiler** väljer du **Marknadsföringsåtgärd** och klicka **Skapa marknadsföringsåtgärd**. Vi rekommenderar att ni skapar en marknadsföringsåtgärd för varje anpassad åtgärd från tredje part som används på era resor. Låt oss till exempel skapa en _Marknadsföringsåtgärder för Slack_ som kommer att användas för din anpassade Slack-åtgärd.
+1. Gå tillbaka till **Profiler** väljer du **Marknadsföringsåtgärd** och klicka **Skapa marknadsföringsåtgärd**. Vi rekommenderar att ni skapar en marknadsföringsåtgärd för varje anpassad åtgärd från tredje part som används på era resor. Låt oss skapa en _Marknadsföringsåtgärder för Slack_ som kommer att användas för din anpassade Slack-åtgärd.
    ![](assets/action-privacy4.png)
 1. Välj **Bläddra** flik, klicka **Skapa princip** och markera **Datastyrningspolicy**. Välj etikett (_ePHI1_) och marknadsföringsåtgärder (_Marknadsföringsåtgärder för Slack_).
    ![](assets/action-privacy5.png)
@@ -85,7 +85,7 @@ The **Kanal** och **Obligatorisk marknadsföringsåtgärd**, som definieras när
 
 ![](assets/action-privacy7.png)
 
-Du kan definiera en **Ytterligare marknadsföringsåtgärder** för att ange typ av anpassad åtgärd. På så sätt kan du definiera syftet med den anpassade åtgärden under den här resan. Utöver den nödvändiga marknadsföringsåtgärden, som vanligtvis är specifik för en kanal, kan ni definiera ytterligare en marknadsföringsåtgärd som är specifik för den anpassade åtgärden under den här resan. Till exempel: ett träningskommunikation, ett nyhetsbrev, ett friskvårdsmeddelande osv. Både den marknadsföringsåtgärd som krävs och den ytterligare marknadsföringsåtgärden gäller.
+Du kan definiera en **Ytterligare marknadsföringsåtgärder** för att ange typ av anpassad åtgärd. På så sätt kan du definiera syftet med den anpassade åtgärden under den här resan. Utöver den nödvändiga marknadsföringsåtgärden, som vanligtvis är specifik för en kanal, kan ni definiera ytterligare en marknadsföringsåtgärd som är specifik för den anpassade åtgärden under den här resan. Exempel: en träningskommunikation, ett nyhetsbrev, ett friskvårdsmeddelande osv. Både den marknadsföringsåtgärd som krävs och den ytterligare marknadsföringsåtgärden gäller.
 
 I vårt exempel använder vi inte någon ytterligare marknadsföringsåtgärd.
 

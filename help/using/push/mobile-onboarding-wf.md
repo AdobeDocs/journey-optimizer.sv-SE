@@ -8,10 +8,10 @@ feature: Push
 role: Admin
 level: Intermediate
 badge: label="Beta" type="Informative"
-exl-id: 82477d40-cfea-456b-a7b1-9cfebd76db35
-source-git-commit: 04f96fa1ad815b380cf33c7706e39094a1bca1c3
+exl-id: 364ef926-3f92-4297-acbd-a283668106ac
+source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '365'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ Den här funktionen är tillgänglig via **[!DNL Adobe Experience Platform Data 
 
 ## Kom igång{#gs-mobile-wf}
 
-Det nya arbetsflödet automatiserar konfigurationen av datainsamling genom att minska det totala antalet klick och påskynda mobilkonfigurationen för Journey Optimizer. Det här snabbstartsarbetsflödet tar dig igenom fyra enkla steg för att [konfigurera](##setup-mobile-wf), [implementera](#implement-mobile-wf), [validera](#valid-mobile-wf)och [recension](#review-mobile-wf) din mobilkonfiguration.
+Det nya arbetsflödet automatiserar konfigurationen av datainsamling genom att minska det totala antalet klick och påskynda mobilkonfigurationen för Journey Optimizer. Det här snabbstartsarbetsflödet tar dig igenom fyra enkla steg [konfigurera](##setup-mobile-wf), [implementera](#implement-mobile-wf), [validera](#valid-mobile-wf)och [recension](#review-mobile-wf) din mobilkonfiguration.
 
 Om du vill få tillgång till det nya arbetsflödet för snabbstart av mobilintroduktion går du till **[!DNL Data Collection]** från lösningsväljaren. Välj sedan **[!DNL Start Collecting Mobile Data]** på startsidan.
 

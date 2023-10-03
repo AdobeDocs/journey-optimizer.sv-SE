@@ -32,7 +32,7 @@ Om du vill visa en fullständig lista över fält och attribut för varje schema
 
 ## Händelsedatauppsättning för e-postspårning{#email-tracking-experience-event-dataset}
 
-_Namn i gränssnittet: CJM - händelsedatauppsättning för e-postspårning_
+_Namn i gränssnittet: CJM-händelsedatauppsättning för e-postspårning_
 
 Systemdatauppsättning för inhämtning av e-postspårningshändelser från Journey Optimizer.
 
@@ -72,7 +72,7 @@ limit 100;
 
 ## Händelsedatauppsättning för meddelandefeedback{#message-feedback-event-dataset}
 
-_Namn i gränssnittet: CJM-meddelandets feedbackhändelsedatauppsättning_
+_Namn i gränssnittet: CJM Message Feedback Event Dataset_
 
 Datauppsättning för inmatning av e-post och push-meddelanden från Journey Optimizer.
 
@@ -110,7 +110,7 @@ order by
 limit 100;
 ```
 
-På aggregeringsnivå, domännivårapport (sorterad efter de översta domänerna): Domännamn, skickat meddelande, studsar
+På aggregeringsnivå, domännivårapport (sorterad efter de översta domänerna): Domännamn, Skickat meddelande, Begränsningar
 
 ```sql
 SELECT split_part(_experience.customerJourneyManagement.emailChannelContext.address, '@', 2) AS recipientDomain, SUM( CASE WHEN _experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus = 'sent' THEN 1 ELSE 0 END)AS sentCount , SUM( CASE WHEN _experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus = 'bounce' THEN 1 ELSE 0 END )AS bounceCount FROM cjm_message_feedback_event_dataset WHERE _experience.customerjourneymanagement.messageprofile.channel._id = 'https://ns.adobe.com/xdm/channels/email' GROUP BY recipientDomain ORDER BY sentCount DESC;
@@ -164,13 +164,13 @@ WHERE
 ORDER BY timestamp DESC;
 ```
 
-där datumformatet är: YYY-MM-DD HH:MM:SS.
+där datumformatet är: ÅÅÅ-MM-DD HH:MM:SS.
 
 Ta bort adresserna från listan över Journey Optimizer-adresser när de har identifierats. [Läs mer](../configuration/manage-suppression-list.md#remove-from-suppression-list).
 
 ## Händelsedatauppsättning för push-spårning {#push-tracking-experience-event-dataset}
 
-_Namn i gränssnittet: CJM Push Tracking Experience, händelsedatauppsättning_
+_Namn i gränssnittet: CJM Push Tracking Experience Event-datauppsättning_
 
 Datauppsättning för inhämtning av upplevelsehändelser för mobilspårning för push från Journey Optimizer.
 
@@ -229,7 +229,7 @@ group by
 
 ## Datamängd för beslutshändelse{#ode-decisionevents}
 
-_Namn i gränssnittet: ODE-beslutshändelser (systemdatauppsättning)_
+_Namn i gränssnittet: ODE DecisionEvents (systemdatauppsättning)_
 
 Datauppsättning för inhämtning av erbjudandeförslag för användarna.
 
@@ -336,7 +336,7 @@ WHERE
 
 _Namn i gränssnittet: ajo_entity_dataset (system dataset)_
 
-Datauppsättning som lagrar enhetsmetadata för meddelanden som skickas till slutanvändaren.
+Datauppsättning som lagrar entitetsmetadata för meddelanden som skickas till slutanvändaren.
 
 Det relaterade schemat är AJO-entitetsschema.
 

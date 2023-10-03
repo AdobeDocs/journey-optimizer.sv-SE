@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Avsluta aktivitet
-description: Lär dig hur du använder slutaktiviteten
+description: Lär dig använda slutaktiviteten
 feature: Journeys
 topic: Content Management
 role: User

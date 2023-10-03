@@ -66,7 +66,7 @@ Som standard utförs återförsök för **3,5 dagar** (eller **84 timmar**) när
 
 För att vara säker på att försök inte utförs igen när de inte längre behövs kan du ändra den här inställningen efter behov när du skapar eller redigerar en [kanalyta](channel-surfaces.md) (t.ex. meddelandeförinställning) som gäller för e-postkanalen.
 
-Du kan t.ex. ange återförsöksperioden till 24 timmar för ett transaktionsmejl som relaterar till lösenordsåterställning och som innehåller en länk som bara är giltig för en dag. På samma sätt kan du vid midnatt-försäljning definiera en återförsöksperiod på 6 timmar.
+Du kan t.ex. ange återförsöksperioden till 24 timmar för ett transaktionsmejl som relaterar till lösenordsåterställning och som innehåller en länk som bara är giltig för en dag. På samma sätt kan du vid en midnatt-försäljning definiera en återförsöksperiod på 6 timmar.
 
 >[!NOTE]
 >

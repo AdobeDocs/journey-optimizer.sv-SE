@@ -30,7 +30,7 @@ Villkorliga regler skapas med uttrycksredigeraren och kan lagras om du vill åte
 
 Villkorliga regler skapas från **[!UICONTROL Conditions]** -menyn i uttrycksredigeraren, som du kommer åt antingen:
 
-* Från e-postdesignern när du aktiverar dynamiskt innehåll för en komponent i e-postbrödtexten. [Lär dig hur du lägger till dynamiskt innehåll i e-postmeddelanden](dynamic-content.md#emails)
+* Från e-postdesignern när du aktiverar dynamiskt innehåll för en komponent i e-postbrödtexten. [Lär dig hur du lägger till dynamiskt innehåll i e-post](dynamic-content.md#emails)
 
   ![](assets/conditions-access-email.png)
 
@@ -65,12 +65,12 @@ Stegen för att kombinera attribut på arbetsytan liknar de som används för at
     **[!UICONTROL Profile]**:
     **[!UICONTROL Audiences]** visar alla målgruppsattribut (t.ex. status, version osv.) for [Adobe Experience Platform Segmentation service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html),
     **[!UICONTROL XDM Individual profiles]** listar alla profilattribut som är kopplade till [Experience Data Model (XDM)-schemat](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) som definieras i Adobe Experience Platform.
-    **[!UICONTROL Contextual]**: när ditt meddelande används i en resa är fält för sammanhangsbaserad resa tillgängliga via den här fliken.
-    **[!UICONTROL Audiences]**: listar alla målgrupper som genereras från segmentdefinitioner som skapas i [Adobe Experience Platform Segmentation Service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
+    **[!UICONTROL Contextual]**: När ditt meddelande används i en resa är fält för sammanhangsberoende resa tillgängliga via den här fliken.
+    **[!UICONTROL Audiences]**: visar en lista över alla målgrupper som genererats från segmentdefinitioner som skapats i [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
 
 1. När den villkorliga regeln är klar kan du lägga till den i meddelandet för att skapa dynamiskt innehåll. [Lär dig hur du lägger till dynamiskt innehåll](dynamic-content.md)
 
-   Du kan också spara regeln för att tillåta ytterligare återanvändning. [Lär dig hur du sparar ett villkor](#save)
+   Du kan också spara regeln för att tillåta ytterligare återanvändning. [Lär dig spara ett villkor](#save)
 
 ## Spara en villkorlig regel {#save}
 
@@ -80,7 +80,7 @@ Om det finns villkorsregler som du ofta återanvänder kan du spara dem i villko
 >
 >Villkorliga regler som utnyttjar resans kontextattribut kan inte sparas i biblioteket.
 
-1. Klicka på **[!UICONTROL Save condition]** -knappen.
+1. Klicka på knappen **[!UICONTROL Save condition]** -knappen.
 
 1. Ge regeln ett namn och en beskrivning (valfritt) och klicka sedan på **[!UICONTROL Add]**.
 

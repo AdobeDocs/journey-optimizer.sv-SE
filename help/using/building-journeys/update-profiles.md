@@ -31,7 +31,7 @@ Använd **[!UICONTROL Update Profile]** Åtgärdsaktivitet för att uppdatera en
 * Åtgärden uppdaterar bara befintliga fält, inga nya profilfält skapas.
 * Du kan inte använda **Uppdatera profil** åtgärd för att generera upplevelsehändelser, till exempel ett köp.
 * Precis som med andra åtgärder kan du definiera en alternativ sökväg om fel eller timeout inträffar, och du kan inte placera två åtgärder parallellt.
-* Uppdateringsbegäran som skickas till Adobe Experience Platform är omedelbart/inom en sekund. Det tar normalt några sekunder men ibland mer utan garanti. Detta resulterar exempelvis i att en åtgärd använder &quot;fält 1&quot; som uppdaterats av en **Uppdatera profil** åtgärd som placerats precis tidigare, du bör inte förvänta dig att &quot;fält 1&quot; uppdateras i åtgärden.
+* Uppdateringsbegäran som skickas till Adobe Experience Platform är omedelbart/inom en sekund. Det tar normalt några sekunder men ibland mer utan garanti. Detta resulterar exempelvis i att en åtgärd använder &quot;fält 1&quot; som har uppdaterats av en **Uppdatera profil** åtgärd som placerats precis tidigare, du bör inte förvänta dig att &quot;fält 1&quot; uppdateras i åtgärden.
 * The **Uppdatera profil** aktiviteten stöder inte XDM-fält som är definierade som en uppräkning.
 
 ## Använda profiluppdateringen
@@ -54,7 +54,7 @@ Använd **[!UICONTROL Update Profile]** Åtgärdsaktivitet för att uppdatera en
    >
    >The **Uppdatera profil** uppdaterar profildata i realtid, men uppdaterar inte datauppsättningar. Val av datauppsättning krävs eftersom profilen är en post som är relaterad till en datauppsättning.
 
-1. Klicka på **Värde** fält för att definiera värdet som du vill använda:
+1. Klicka på **Värde** fält för att definiera det värde som du vill använda:
 
    * Med den enkla uttrycksredigeraren kan du välja ett fält från en datakälla eller från den inkommande händelsen.
 
@@ -64,7 +64,7 @@ Använd **[!UICONTROL Update Profile]** Åtgärdsaktivitet för att uppdatera en
 
      ![](assets/profileupdate3.png)
 
-The **Uppdatera profil** har konfigurerats.
+The **Uppdatera profil** är nu konfigurerat.
 
 ![](assets/profileupdate1.png)
 
@@ -73,6 +73,6 @@ The **Uppdatera profil** har konfigurerats.
 
 I testläge simuleras inte profiluppdateringen. Uppdateringen utförs på testprofilen.
 
-Det är bara testprofiler som kan gå in på en resa i testläge. Du kan antingen skapa en ny testprofil eller omvandla en befintlig profil till en testprofil. I Adobe Experience Platform kan du uppdatera profilattribut via csv-filimport eller API-anrop. En enklare metod är att använda en **Uppdatera profil** Åtgärdsaktivitet och ändra testprofilens booleska fält från false till true.
+Det är bara testprofiler som kan ta sig in på en resa i testläge. Du kan antingen skapa en ny testprofil eller omvandla en befintlig profil till en testprofil. I Adobe Experience Platform kan du uppdatera profilattribut via csv-filimport eller API-anrop. En enklare metod är att använda en **Uppdatera profil** Åtgärdsaktivitet och ändra testprofilens booleska fält från false till true.
 
 Mer information om hur du omvandlar en befintlig profil till en testprofil finns i [section](../audience/creating-test-profiles.md#create-test-profiles-csv).

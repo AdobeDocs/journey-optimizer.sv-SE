@@ -45,7 +45,6 @@ Du kan använda en underdomän som redan har delegerats till Adobe eller konfigu
 >
 > * Eventuella ändringar av en SMS-underdomän påverkar också produktionssandlådorna.
 
-
 ## Använd en befintlig underdomän {#sms-use-existing-subdomain}
 
 Om du vill använda en underdomän som redan har delegerats till Adobe följer du stegen nedan.
@@ -119,7 +118,7 @@ Följ stegen nedan för att konfigurera en ny underdomän.
    >
    >Versaler tillåts inte i underdomäner.
 
-   Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.dincompany.com.
+   Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.yourcompany.com.
 
    >[!NOTE]
    >

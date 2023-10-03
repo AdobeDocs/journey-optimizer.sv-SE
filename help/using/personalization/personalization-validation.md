@@ -24,11 +24,13 @@ I **Uttrycksredigerare** skärm, använd **Validera** för att kontrollera din p
 
 >[!NOTE]
 > Valideringen utförs automatiskt när du klickar på **Lägg till** för att stänga redigeringsfönstret.
+>
 
 ![](assets/perso_validation1.png)
 
 >[!IMPORTANT]
 > Om personaliseringssyntaxen inte är giltig kan du inte stänga uttrycksredigeringsfönstret.
+>
 
 ## Vanliga fel {#common-errors}
 

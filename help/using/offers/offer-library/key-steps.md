@@ -25,9 +25,9 @@ Ett komplett exempel som visar hur man konfigurerar erbjudanden får du om du an
 
 Innan du börjar skapa erbjudanden måste du definiera flera komponenter som du ska använda i dina erbjudanden.
 
-1. **Skapa placeringar**, som är behållare som kommer att användas för att visa upp dina erbjudanden. Du kan till exempel skapa en placering som är dedikerad till erbjudanden i endast bildformatet och som ligger högst upp i dina meddelanden.
+1. **Skapa placeringar**, som är behållare som används för att visa upp dina erbjudanden. Du kan till exempel skapa en placering som är dedikerad till erbjudanden i endast bildformatet och som ligger högst upp i dina meddelanden.
 
-1. **Skapa beslutsregler** som anger villkoren för att anbuden ska kunna lämnas in.
+1. **Skapa beslutsregler** som anger villkoren för hur anbuden ska presenteras.
 
 1. **Skapa samlingskvalificerare** (kallades tidigare&quot;taggar&quot;) som du kopplar till erbjudandena, så att du enkelt kan ordna och söka efter dem i biblioteket.
 

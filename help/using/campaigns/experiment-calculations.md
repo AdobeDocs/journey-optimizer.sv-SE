@@ -44,21 +44,21 @@ Effektiv experimenterande kräver att hänsyn tas till olika typer av fel som ka
 Tabellen ovan visar olika typer av fel:
 
 * **Falska positiva värden (Type-I-fel)**: är ett felaktigt avvisande av nollhypotesen, när det faktiskt är sant. När det gäller online-undersökningar innebär detta att vi felaktigt drar slutsatsen att resultatmåttet är olika för varje behandling, även om det var detsamma.
-   </br>Innan vi genomför experimentet väljer vi vanligtvis ett tröskelvärde `\alpha`. När experimentet är klart `p-value` beräknas och vi avvisar `null if p < \alpha`.Välja en `/alpha` baseras på konsekvenserna av att få fel svar, till exempel i en klinisk prövning där någon skulle kunna påverkas, kan du bestämma dig för att ha en `\alpha = 0.005`. En vanlig tröskel vid onlineexperiment är `\alpha = 0.05`, vilket innebär att vi i längden förväntar oss att 5 av 100 experiment ska vara falska positiva.
+  </br>Innan vi genomför experimentet väljer vi vanligtvis ett tröskelvärde `\alpha`. När experimentet är klart `p-value` beräknas och vi avvisar `null if p < \alpha`.Välja en `/alpha` baseras på konsekvenserna av att få fel svar, till exempel i en klinisk prövning där någon skulle kunna påverkas, kan du bestämma dig för att ha en `\alpha = 0.005`. En vanlig tröskel vid onlineexperiment är `\alpha = 0.05`, vilket innebär att vi i längden förväntar oss att 5 av 100 experiment ska vara falska positiva.
 
-* **Falska negativ (typ II-fel)**: innebär att vi inte kan avvisa den nollhypotesen trots att den är falsk. För experiment innebär detta att vi inte avvisar nollhypotesen, när den faktiskt är annorlunda. För att kontrollera den här typen av fel måste vi i allmänhet ha tillräckligt många användare i vårt experiment för att garantera en viss styrka, definierad som `1 - \beta`(dvs. ett minus sannolikheten för ett typ II-fel).
+* **Falska negativ (typ II-fel)**: betyder att vi inte kan avvisa nollhypotesen trots att den är falsk. För experiment innebär detta att vi inte avvisar nollhypotesen, när den i själva verket är annorlunda. För att kontrollera den här typen av fel måste vi i allmänhet ha tillräckligt många användare i vårt experiment för att garantera en viss styrka, definierad som `1 - \beta`(dvs. ett minus sannolikheten för ett typ II-fel).
 
 De flesta statistiska startmetoder kräver att du korrigerar provstorleken i förväg, baserat på den effektstorlek som du vill bestämma samt feltolerans (`\alpha` och `\beta`) i förväg. Adobe Journey Optimizer metod är dock utformad för att du kontinuerligt ska kunna se dina resultat, oavsett provstorlek.
 
-## Adobe Statistisk metod: Valfri tidsgiltig konfidenssekvens
+## Adobe Statistisk metod: Valfri tidsbestämd ordningsföljd för tillförlitlighet
 
-A **Konfidenssekvens** är en sekventiell analog till en **Konfidensintervall**, t.ex. om du upprepar dina experiment hundra gånger och beräknar en uppskattning av medelvärdet och dess associerade 95 %-konfidenssekvens för varje ny användare som deltar i experimentet. En 95-procentig konfidenssekvens inkluderar det verkliga värdet för mätvärdet i 95 av de 100 experiment du utförde. Ett 95-procentigt konfidensintervall kunde endast beräknas en gång per experiment för att ge samma 95-procentiga garanti. inte för varje enskild ny användare. Med Confidence Sequences kan du därför kontinuerligt övervaka experiment utan att öka andelen falskt positiva fel.
+A **Konfidenssekvens** är en sekventiell analog till en **Konfidensintervall**, t.ex. om du upprepar dina experiment hundra gånger och beräknar en uppskattning av medelvärdet och dess associerade 95 %-konfidenssekvens för varje ny användare som deltar i experimentet. En 95-procentig konfidenssekvens inkluderar det verkliga värdet för mätvärdet i 95 av de 100 experiment du utförde. Ett 95-procentigt konfidensintervall kunde endast beräknas en gång per experiment för att ge samma 95-procentiga garanti, inte för varje enskild ny användare. Med Confidence Sequences kan du därför kontinuerligt övervaka experiment utan att öka andelen falskt positiva fel.
 
 Skillnaden mellan konfidenssekvenser och konfidensintervall för ett enskilt experiment visas i animeringen nedan:
 
 ![](assets/technote_2.gif)
 
-**Konfidenssekvenser** ändra fokus på experiment till uppskattningar i stället för hypotesstester, dvs. med fokus på en korrekt uppskattning av skillnaden i medel mellan behandlingar, i stället för om en nollhypotes ska avvisas baserat på ett tröskelvärde för statistisk signifikans eller inte.
+**Konfidenssekvenser** ändra fokus på experiment till uppskattningar i stället för hypotesstester, dvs. med fokus på en korrekt uppskattning av skillnaden i medel mellan behandlingar, i stället för att avvisa en nollhypotes som baseras på ett tröskelvärde för statistisk signifikans.
 
 På liknande sätt som för relationen mellan `p-values`, eller **Förtroende** och **Konfidensintervall**, finns det också en relation mellan **Konfidenssekvenser** och när som helst `p-values`eller när som helst med giltig tillförlitlighet. Med tanke på hur välkända kvantiteter som Konfidensen är, tillhandahåller Adobe båda **Konfidenssekvenser** och varje gång det finns giltig tillförlitlighet i rapporterna.
 
@@ -66,7 +66,7 @@ Den teoretiska grunden för **Konfidenssekvenser** kommer från studien av sekve
 
 >[!NOTE]
 >
->Konfidenssekvenser kan tolkas som säkra sekventiella analoger av konfidensintervall. Med konfidensintervall kan du bara tolka experimentet när du har nått den förinställda samplingsstorleken. Med självförtroende kan du emellertid när som helst titta på och tolka data i dina Experiment och på ett säkert sätt avbryta eller fortsätta med experimenten. motsvarande valfri tid som är giltig, eller `p-value`, är också säkert att tolka när som helst.
+>Konfidenssekvenser kan tolkas som säkra sekventiella analoger av konfidensintervall. Med konfidensintervall kan du bara tolka experimentet när du har nått den förinställda samplingsstorleken. Med självförtroende kan du emellertid när som helst titta på och tolka data i dina Experiment och på ett säkert sätt avbryta eller fortsätta med experimenten. motsvarande valfri tid som är giltig, eller `p-value`, kan också tolkas säkert när som helst.
 
 Det är viktigt att notera att eftersom konfidenssekvenser är&quot;när som helst giltiga&quot;, är de mer försiktiga än en metod med fast horisont som används med samma provstorlek. Konfidenssekvensens gränser är i allmänhet bredare än en beräkning av konfidensintervall, medan alla tidsperioder som är giltiga konfidensintervall är mindre än en beräkning av en fast horisont. Fördelen med denna konservatism är att du säkert kan tolka dina resultat hela tiden.
 

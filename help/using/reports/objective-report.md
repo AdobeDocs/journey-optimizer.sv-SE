@@ -2,14 +2,15 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Global kampanjrapport
-description: Lär dig hur du använder data från rapporten Campaign Global
+description: Lär dig använda data från rapporten Campaign Global
 feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 6b8983d3f3fa989bd7190fc6a8b51fa8989b2293
+exl-id: ec1af88c-7b0a-4eaf-97e1-0d9676268fed
+source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 1%
@@ -34,7 +35,7 @@ The **[!UICONTROL Campaign's Statistics]** widgetinformation om huvudinformation
 
 * **[!UICONTROL Entered profiles]**: Antal profiler som påbörjade resan.
 
-* **[!UICONTROL Actions delivered]**: Totalt antal unika gånger som en åtgärd i resan har utförts.
+* **[!UICONTROL Actions delivered]**: Totalt antal unika gånger en åtgärd i resan har utförts.
 
 * **[!UICONTROL Actions failed in %]**: Totalt antal unika gånger en åtgärd misslyckades under resan jämfört med det totala antalet unika gånger en åtgärd har levererats.
 
@@ -42,7 +43,7 @@ The **[!UICONTROL Campaign's Statistics]** widgetinformation om huvudinformation
 
 >[!AVAILABILITY]
 >
->The **Målrapport** är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill ha mer information.
+>The **Målrapport** är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill veta mer.
 
 ![](assets/performance_report.gif)
 
@@ -70,16 +71,15 @@ Tabellen visar följande mått:
 
 * **[!UICONTROL Lift over baseline]**: Mät den procentuella förbättringen av konverteringsgraden för en viss behandling jämfört med baslinjen.
 
-* **[!UICONTROL Confidence]**: Bevis på att en viss behandling är densamma som den initiala behandlingen. [Läs mer](../campaigns/experiment-calculations.md#understand-confidence)
+* **[!UICONTROL Confidence]** Bevis på att en viss behandling är densamma som den initiala behandlingen. [Läs mer](../campaigns/experiment-calculations.md#understand-confidence)
 
 * **[!UICONTROL Unique outbound clicks]**: Totalt antal klick i utgående kanaler.
 
-* **[!UICONTROL Profiles]**: Antal profiler som är avsedda för denna behandling.
+* **[!UICONTROL Profiles]**: Antal profiler som är avsedda för den här behandlingen.
 
-* **[!UICONTROL Unique outbound clicks/profiles]**: Totalt värde för framgångsmåttet, som tidigare valts när du skapade dina experiment, delat med antalet profiler.
+* **[!UICONTROL Unique outbound clicks/profiles]**: Totalt värde för resultatmåttet, som tidigare valdes när du skapade dina experiment, delat med antalet profiler.
 
 The **[!UICONTROL Confidence interval]** graf mäter osäkerheten kring förbättringen. Här anges den procentuella skillnaden i prestanda mellan baslinjen och den bästa behandlingen. [Läs mer](../campaigns/experiment-calculations.md#confidence-intervals).
 +++
 
 En djupdykning i dessa resultat och hur du tolkar dem finns i [den här sidan](../campaigns/get-started-experiment.md#interpret-results).
-

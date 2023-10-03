@@ -5,8 +5,8 @@ title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 hide: true
 hidefromtoc: true
-exl-id: 3a741a74-8fec-499d-be1f-17ac04106e54
-source-git-commit: 1d5bc1de8a33401c165eeee4c8159fc19087c9c9
+exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
+source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 3%

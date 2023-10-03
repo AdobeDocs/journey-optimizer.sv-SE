@@ -1,7 +1,7 @@
 ---
 product: journey optimizer
 title: replaceAll
-description: Läs om funktionen replaceAll
+description: Läs mer om funktionen replaceAll
 feature: Journeys
 role: Data Engineer, Architect
 level: Experienced

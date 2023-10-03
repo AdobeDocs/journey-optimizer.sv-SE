@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Kom igång med push-meddelanden
-description: Lär dig hur du skapar ett push-meddelande i Journey Optimizer
+description: Lär dig skapa ett push-meddelande i Journey Optimizer
 feature: Overview
 topic: Content Management
 role: User
@@ -27,13 +27,13 @@ Push-meddelanden hjälper dig att nå mobilappsanvändare när som helst, särsk
 
 Push-meddelanden kan skapas:
 
-* I en **Resa**: När du har lagt till en push-aktivitet på din resa och definierat grundläggande inställningar använder du **[!UICONTROL Actions: Push]** till höger för att skapa innehåll för push-meddelanden.
+* I en **Resa**: När du har lagt till en push-aktivitet under resan och har definierat grundläggande inställningar använder du **[!UICONTROL Actions: Push]** till höger för att skapa innehåll för push-meddelanden.
 
-   Mer information om hur du konfigurerar din resa finns i [page](../building-journeys/journey-gs.md).
+  Mer information om hur du konfigurerar din resa finns i [page](../building-journeys/journey-gs.md).
 
 * I en **Campaign**: När du har skapat en kampanj väljer du Push-meddelande som åtgärd och definierar grundläggande inställningar.
 
-   Mer information om hur du konfigurerar kampanjen finns i [page](../campaigns/create-campaign.md#configure).
+  Mer information om hur du konfigurerar kampanjen finns i [page](../campaigns/create-campaign.md#configure).
 
 Använd de dedikerade flikarna för att definiera inställningar för push-meddelanden för **iOS** och **Android** operativsystem.
 

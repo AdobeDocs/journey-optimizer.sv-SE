@@ -24,11 +24,11 @@ ht-degree: 0%
 
 Globala rapporter, som du kommer åt från fliken All time, visar händelser som inträffat för minst två timmar sedan och täcker händelser under en vald tidsperiod. Live-rapporter fokuserar på händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten.
 
-Välj **[!UICONTROL Report]** på den avancerade menyn på den valda landningssidan.
+Om du vill komma åt dina rapporter väljer du **[!UICONTROL Report]** på den avancerade menyn på den valda landningssidan.
 
 ![](assets/landing_page_report.png)
 
-Landningssidan **[!UICONTROL Global report]** är uppdelat i olika widgetar som detaljerat beskriver hur leveransen fungerar och vilka fel den innehåller. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](global-report.md).
+Landningssidan **[!UICONTROL Global report]** är uppdelat i olika widgetar som detaljerat beskriver hur leveransen fungerar och vilka fel den innehåller. Varje widget kan storleksändras och tas bort vid behov. Mer information om detta finns i [section](global-report.md).
 
 ![](assets/landing_page_global.png)
 
@@ -36,9 +36,9 @@ Landningssidan **[!UICONTROL Global report]** är uppdelat i olika widgetar som 
 
 The **[!UICONTROL Number of visits]** och **[!UICONTROL Number of visits over time]** Med widgetar kan du se effekten av landningssidan under den valda tidsperioden genom ett diagram och KPI:er med följande mått:
 
-* **[!UICONTROL Total visits]**: Totalt antal besök på din landningssida som kommer från resor och externa källor, inklusive flera besök av en mottagare.
+* **[!UICONTROL Total visits]**: Totalt antal besök på landningssidan som kommer från resor och externa källor, inklusive flera besök av en mottagare.
 
-* **[!UICONTROL Unique visitors]**: Antal personer som besökte landningssidan, varav flera besök av en mottagare inte beaktas.
+* **[!UICONTROL Unique visitors]**: Antal personer som besökte din landningssida beaktas inte flera besök av en mottagare.
 
 The **[!UICONTROL Landing page performance]** widgeten innehåller information om huvudinformationen i förhållande till meddelandet via KPI:er:
 

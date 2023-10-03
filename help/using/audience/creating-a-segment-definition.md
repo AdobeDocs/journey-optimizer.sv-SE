@@ -48,11 +48,11 @@ I det här exemplet kommer vi att bygga en målgrupp för alla kunder som bor i 
 
    I det här exemplet måste vi förlita oss på **Attribut** och **Händelser** fält för att skapa målgruppen:
 
-   * **Attribut**: profiler som bor i Atlanta, San Francisco eller Seattle, född efter 1980
+   * **Attribut**: profiler i Atlanta, San Francisco eller Seattle, född efter 1980
 
      ![](assets/add-attributes.png)
 
-   * **Händelser**: som öppnade Luma-programmet inom de senaste 7 dagarna och sedan gjorde ett köp inom 2 timmar efter att programmet öppnats.
+   * **Händelser**: profiler som har öppnat Luma-programmet inom de senaste 7 dagarna och sedan köpt det inom 2 timmar efter att programmet öppnats.
 
      ![](assets/add-events.png)
 

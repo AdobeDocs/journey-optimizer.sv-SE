@@ -47,7 +47,7 @@ The `charCodeAt` funktionen returnerar ASCII-värdet för ett tecken, som funkti
 
 **Exempel**
 
-Följande funktion returnerar ASCII-värdet för o, d.v.s. 111.
+Följande funktion returnerar ASCII-värdet för o, d.v.s. 11.
 
 ```sql
 {%= charCodeAt("some", 1)%}
@@ -91,15 +91,15 @@ The `contains` -funktionen används för att avgöra om en sträng innehåller e
 
 * Följande funktion kontrollerar om profilens förnamn innehåller bokstaven A (i versaler eller gemener). Om så är fallet returneras true, annars returneras false.
 
-   ```sql
-   {%= contains(profile.person.name.firstName, "A", false) %}
-   ```
+  ```sql
+  {%= contains(profile.person.name.firstName, "A", false) %}
+  ```
 
 * Följande fråga avgör, med skiftlägeskänslighet, om personens e-postadress innehåller strängen &quot;2010@gm&quot;.
 
-   ```sql
-   {%= contains(profile.person.emailAddress,"2010@gm") %}
-   ```
+  ```sql
+  {%= contains(profile.person.emailAddress,"2010@gm") %}
+  ```
 
 ## Innehåller inte{#doesNotContain}
 
@@ -186,7 +186,7 @@ The `encode64` -funktionen används för att koda en sträng för att bevara per
 
 ## Slutar med{#endsWith}
 
-The `endsWith` används för att avgöra om en sträng avslutas med en angiven delsträng.
+The `endsWith` -funktionen används för att avgöra om en sträng avslutas med en angiven delsträng.
 
 **Syntax**
 
@@ -255,7 +255,7 @@ Följande fråga avgör, utan skiftlägeskänslighet, om personens namn är &quo
 {%= equalsIgnoreCase(profile.person.name,"John") %}
 ```
 
-## Extrahera e-postdomän {#extractEmailDomain}
+## Extract Email Domain {#extractEmailDomain}
 
 The `extractEmailDomain` används för att extrahera domänen för en e-postadress.
 
@@ -293,7 +293,7 @@ Frågan returnerar 56,00 GBP
 
 ## Hämta URL-värd {#get-url-host}
 
-The `getUrlHost` används för att hämta värdnamnet för en URL.
+The `getUrlHost` -funktionen används för att hämta värdnamnet för en URL.
 
 **Syntax**
 
@@ -554,7 +554,7 @@ Returnerar &quot;5eb63bbbe01eed093cb22bb8f5acdc3&quot;
 
 ## Inte lika med{#notEqualTo}
 
-The `notEqualTo` -funktionen används för att avgöra om en sträng inte är lika med den angivna strängen.
+The `notEqualTo` används för att avgöra om en sträng inte är lika med den angivna strängen.
 
 **Syntax**
 
@@ -658,9 +658,10 @@ The `replaceAll` används för att ersätta alla delsträngar i en text som matc
 
 >[!NOTE]
 >
-> När uttrycket som används som andra argument är ett särskilt regex-tecken använder du dubbelt omvänt snedstreck (`//`).  Specialtecken för regex är: [., +, *, ?, ^, $, (, ), [, ], {, }, |, \.]
+> När uttrycket som används som andra argument är ett särskilt regex-tecken använder du dubbelt omvänt snedstreck (`//`).  Specialtecken för regex är: [., +, *, ?, ^, $, (, ), [,], {, }, |, \.]
 > 
 > Läs mer i [Oraclets dokumentation](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html){_blank}.
+>
 
 ## Högertrimning {#rightTrim}
 
@@ -674,7 +675,7 @@ The `rightTrim` funktionen används för att ta bort blanksteg från slutet av e
 
 ## Dela {#split}
 
-The `split` används för att dela en sträng med ett visst tecken.
+The `split` -funktionen används för att dela en sträng med ett visst tecken.
 
 **Syntax**
 
@@ -708,7 +709,7 @@ Följande fråga avgör, med skiftlägeskänslighet, om personens namn börjar m
 
 ## Sträng till datum {#string-to-date}
 
-The `stringToDate` funktionen konverterar ett strängvärde till ett datum/tid-värde. Det finns två argument: strängrepresentation av ett datum- och tidsbeteckning samt strängbeteckning för formateringen.
+The `stringToDate` funktionen konverterar ett strängvärde till ett datum/tid-värde. Den har två argument: strängbeteckning för ett datum- och tidsvärde samt strängbeteckning för formateringen.
 
 **Syntax**
 
@@ -839,7 +840,7 @@ The `urlDecode` används för att avkoda en URL-kodad sträng.
 
 ## URL-kodning {#url-encode}
 
-The `Count only null` -funktionen används för att URL-koda en sträng.
+The `Count only null` används för att URL-koda en sträng.
 
 **Syntax**
 

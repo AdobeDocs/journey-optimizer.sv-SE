@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Skapa ett SMS-meddelande
-description: Lär dig hur du skapar ett SMS-meddelande i Journey Optimizer
+description: Lär dig skapa ett SMS-meddelande i Journey Optimizer
 feature: Overview
 topic: Content Management
 role: User
@@ -99,7 +99,7 @@ Nu kan du börja designa ditt SMS-meddelande via **[!UICONTROL Edit content]** -
 
    ![](assets/sms_tracking_1.png)
 
-1. I **[!UICONTROL Helper functions]** meny, klicka **[!UICONTROL URL function]** och sedan markera **[!UICONTROL Add URL]**.
+1. I **[!UICONTROL Helper functions]** meny, klicka **[!UICONTROL URL function]** och sedan **[!UICONTROL Add URL]**.
 
    ![](assets/sms_tracking_2.png)
 

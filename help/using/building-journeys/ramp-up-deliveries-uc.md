@@ -16,7 +16,7 @@ ht-degree: 3%
 
 ---
 
-# Användningsfall: förbättra leveransen{#use-case-ramp-up-your-deliveries}
+# Användningsfall: öka leveranserna{#use-case-ramp-up-your-deliveries}
 
 Om du nyligen har flyttat till en annan e-postleverantör, IP-adress, e-postdomän eller underdomän måste du ange ditt rykte som avsändare. Annars kan leveranserna blockeras eller flyttas till skräppostmappen i mottagarens postlåda. Lär dig hur du kan förbättra ditt e-postanseende med IP-uppvärmning i [Handbok om bästa praxis för leverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html){target="_blank"}.
 
@@ -32,7 +32,7 @@ Syftet med det här användningsexemplet är att skapa en resa för att förbät
 
    1. I **[!UICONTROL Condition]** aktivitetsinställningar, ange **[!UICONTROL Type]** fält till **[!UICONTROL Profile cap]**. [Läs mer](condition-activity.md#profile_cap).
 
-   1. Ange **[!UICONTROL Limit]** till maximalt antal mottagare för den här leveransen.
+   1. Ange **[!UICONTROL Limit]** till det maximala antalet mottagare för den här leveransen.
 
    ![](assets/profile-cap-condition.png)
 

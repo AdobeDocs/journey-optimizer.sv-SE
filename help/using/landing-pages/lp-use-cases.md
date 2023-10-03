@@ -62,11 +62,11 @@ Anta till exempel att du ordnar ett event nästa månad och vill starta en kampa
 
    >[!NOTE]
    >
-   >Om du vill kunna skicka meddelandet kontrollerar du att landningssidan du valt inte har gått ut ännu. Lär dig hur du uppdaterar förfallodatumet [i det här avsnittet](create-lp.md#configure-primary-page).
+   >Om du vill kunna skicka ditt meddelande kontrollerar du att landningssidan du valt inte har gått ut ännu. Lär dig hur du uppdaterar förfallodatumet [i det här avsnittet](create-lp.md#configure-primary-page).
 
    När mottagarna har fått e-postmeddelandet och klickar på länken till landningssidan dirigeras de till&quot;tack&quot;-sidan och läggs till i prenumerationslistan.
 
-### Skicka ett bekräftelsemeddelande via e-post {#send-confirmation-email}
+### Skicka en bekräftelse via e-post {#send-confirmation-email}
 
 Dessutom kan du skicka ett bekräftelsemeddelande via e-post till de mottagare som har registrerat sig för din aktivitet. För att göra detta, följ nedanstående steg.
 
@@ -76,7 +76,7 @@ Dessutom kan du skicka ett bekräftelsemeddelande via e-post till de mottagare s
 
 1. Ta fram **[!UICONTROL Events]** kategori och släpp en **[!UICONTROL Audience Qualification]** på arbetsytan. [Läs mer](../building-journeys/audience-qualification-events.md)
 
-1. Klicka på **[!UICONTROL Audience]** och välj den prenumerationslista du har skapat.
+1. Klicka på **[!UICONTROL Audience]** och välj den prenumerationslista som du har skapat.
 
    ![](assets/lp_subscription-uc-confirm-journey.png)
 
@@ -88,7 +88,7 @@ Alla användare som har registrerat sig för din aktivitet får bekräftelsemedd
 
 <!--The event registration's subscription list tracks the profiles who registered and you can send them targeted event updates.-->
 
-## Avanmäl dig {#opt-out}
+## Välj ut {#opt-out}
 
 Om du vill att mottagarna ska kunna avbeställa din kommunikation kan du inkludera en länk till en avanmälningssida i dina e-postmeddelanden.
 
@@ -111,7 +111,7 @@ Följ stegen nedan om du vill att mottagarna av ett e-postmeddelande ska kunna a
 
 1. Definiera den primära sidan. [Läs mer](create-lp.md#configure-primary-page)
 
-1. [Design](design-lp.md) det primära sidinnehållet: använda landningssidans specifika **[!UICONTROL Form]** -komponent, definiera **[!UICONTROL Opt-out]** kryssruta och välj att uppdatera **[!UICONTROL Channel (email)]**: profilen som markerar avanmälningsrutan på landningssidan avvisas från all kommunikation.
+1. [Design](design-lp.md) det primära sidinnehållet: använd landningssidans specifika **[!UICONTROL Form]** -komponent, definiera **[!UICONTROL Opt-out]** kryssruta och välj att uppdatera **[!UICONTROL Channel (email)]**: den profil som kontrollerar avanmälningsrutan på din landningssida avvisas från all kommunikation.
 
    ![](assets/lp_opt-out-primary-lp.png)
 
@@ -131,13 +131,13 @@ Följ stegen nedan om du vill att mottagarna av ett e-postmeddelande ska kunna a
 
 1. Markera text i innehållet och [infoga en länk](../email/message-tracking.md#insert-links) med hjälp av kontextverktygsfältet. Du kan också använda en länk på en knapp.
 
-1. Välj **[!UICONTROL Landing page]** från **[!UICONTROL Link type]** och väljer [landningssida](create-lp.md#configure-primary-page) som du skapade för att avanmäla dig.
+1. Välj **[!UICONTROL Landing page]** från **[!UICONTROL Link type]** nedrullningsbar lista och välj [landningssida](create-lp.md#configure-primary-page) som du skapade för att avanmäla dig.
 
    ![](assets/lp_opt-out-landing-page.png)
 
    >[!NOTE]
    >
-   >Om du vill kunna skicka meddelandet kontrollerar du att landningssidan du valt inte har gått ut ännu. Lär dig hur du uppdaterar förfallodatumet [i det här avsnittet](create-lp.md#configure-primary-page).
+   >Om du vill kunna skicka ditt meddelande kontrollerar du att landningssidan du valt inte har gått ut ännu. Lär dig hur du uppdaterar förfallodatumet [i det här avsnittet](create-lp.md#configure-primary-page).
 
 1. Publicera och kör resan. [Läs mer](../building-journeys/journey.md).
 

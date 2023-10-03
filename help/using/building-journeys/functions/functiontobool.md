@@ -1,7 +1,7 @@
 ---
 product: journey optimizer
 title: toBool
-description: Läs om funktionen toBool
+description: Läs mer om funktionen toBool
 feature: Journeys
 role: Data Engineer, Architect
 level: Experienced
@@ -19,7 +19,7 @@ ht-degree: 7%
 Konverterar ett argumentvärde till ett booleskt värde, beroende på dess typ.
 
 * Från sträng: försök att konvertera strängvärdet som booleskt, från &quot;true&quot; om strängvärdet är &quot;true&quot;, annars false
-* Från numeriska: true om det numeriska värdet inte är lika med 0, annars false
+* Från numeriskt: true om det numeriska värdet inte är lika med 0, annars false
 
 ## Kategori
 

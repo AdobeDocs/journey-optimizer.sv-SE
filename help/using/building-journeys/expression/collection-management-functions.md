@@ -118,7 +118,7 @@ earlier timestamp) in order to only consider prior events.-->
 
 >[!NOTE]
 >
->När filtervillkoret i **all()** är tom, filtret returnerar alla element i listan. **För att antalet element i en samling ska kunna räknas krävs dock inte funktionen all.**
+>När filtervillkoret i **all()** om funktionen är tom returneras alla element i listan. **För att antalet element i en samling ska kunna räknas krävs dock inte funktionen all.**
 
 
 ```json
@@ -208,7 +208,6 @@ Resultatet är &quot;token_2&quot;.
 >
 >* **[!UICONTROL first]** funktionen returnerar den senaste händelsen
 >* **[!UICONTROL last]** returnerar den äldsta.
-
 
 **Exempel 3:**
 

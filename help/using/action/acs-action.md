@@ -44,7 +44,7 @@ Så här konfigurerar du den:
 
    ![](assets/actioncampaign.png)
 
-1. Kopiera din Adobe Campaign Standard-instans-URL och klistra in den i **[!UICONTROL URL]** fält.
+1. Kopiera din Adobe Campaign Standard-instans-URL och klistra in den **[!UICONTROL URL]** fält.
 
 1. Klicka på **[!UICONTROL Test the instance URL]** för att testa instansens giltighet.
 

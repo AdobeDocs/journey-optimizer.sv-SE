@@ -1,7 +1,7 @@
 ---
 product: journey optimizer
 title: inNextMonths
-description: Läs om funktionen i NextMonths
+description: Läs mer om funktionen i NextMonths
 feature: Journeys
 role: Data Engineer, Architect
 level: Experienced

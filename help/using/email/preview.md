@@ -31,11 +31,11 @@ Om du vill identifiera eventuella fel i e-postinnehåll eller personaliseringsin
 Om du vill testa ditt e-postinnehåll måste du:
 
 * [Välj testprofiler](#select-test-profiles)
-* [Kontrollera meddelandets förhandsgranskning](#preview-your-messages)
+* [Kontrollera förhandsgranskningen av meddelandet](#preview-your-messages)
 
 Då kan du [skicka korrektur](#send-proofs) till testprofilerna.
 
-Dessutom kan du **Litmus** konto till [!DNL Journey Optimizer] för att omedelbart förhandsgranska **e-poståtergivning** i vanliga e-postklienter. Sedan kan ni se till att e-postinnehållet ser bra ut och fungerar som det ska i alla inkorgar. Lär dig hur du låser upp förhandsvisningar för Litmus-e-post i [det här avsnittet](#email-rendering).
+Dessutom kan du **Litmus** konto till [!DNL Journey Optimizer] för att omedelbart förhandsgranska **e-poståtergivning** i vanliga e-postklienter. Sedan kan ni se till att e-postinnehållet ser bra ut och fungerar som det ska i alla inkorgar. Lär dig hur du låser upp Litmus-e-postförhandsvisningar i [det här avsnittet](#email-rendering).
 
 >[!CAUTION]
 >
@@ -52,7 +52,7 @@ Dessutom kan du **Litmus** konto till [!DNL Journey Optimizer] för att omedelba
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/email/preview.html#email-rendering" text="E-poståtergivning"
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/email/preview.html#preview-email" text="Förhandsgranskning"
 
-Använd [Testprofiler](../audience/creating-test-profiles.md) om du vill ange fler mottagare som inte matchar de definierade målinriktningskriterierna som mål.
+Använd [Testprofiler](../audience/creating-test-profiles.md) om du vill rikta in dig på fler mottagare som inte matchar de definierade målinriktningskriterierna.
 
 Så här väljer du testprofiler:
 
@@ -116,7 +116,7 @@ En gång [testprofiler](#select-test-profiles) om du har valt det här alternati
 
 ## Skicka korrektur {#send-proofs}
 
-Ett korrektur är ett specifikt meddelande som gör att du kan testa ett meddelande innan det skickas till huvudmålgruppen. Mottagarna av beviset ansvarar för att godkänna meddelandet: återgivning, innehåll, personaliseringsinställningar, konfiguration.
+Ett korrektur är ett specifikt meddelande som gör att du kan testa ett meddelande innan det skickas till huvudmålgruppen. Mottagarna av beviset ansvarar för att godkänna meddelandet: rendering, innehåll, personaliseringsinställningar, konfiguration.
 
 En gång [testprofiler](#select-test-profiles) om du har valt det här alternativet kan du skicka korrektur.
 
@@ -132,7 +132,7 @@ En gång [testprofiler](#select-test-profiles) om du har valt det här alternati
 
 1. Välj sedan **Testprofiler** som kommer att användas för att anpassa meddelandeinnehållet.
 
-   Varje mottagare får lika många meddelanden som antalet valda testprofiler. Om du till exempel har lagt till fem e-postmeddelanden till mottagare och valt tio testprofiler, skickar du femtio korrekturmeddelanden och varje mottagare får tio.
+   Varje mottagare får lika många meddelanden som antalet valda testprofiler. Om du till exempel har lagt till fem e-postmeddelanden till mottagare och valt tio testprofiler, skickar du femtio korrekturmeddelanden och varje mottagare får tio av dem.
 
 1. Du kan vid behov lägga till ett prefix till korrekturens ämnesrad. Endast alfanumeriska tecken och specialtecken som . - _ ( ) [ ] är tillåtna som prefix till ämnesraden.
 
@@ -183,7 +183,7 @@ Följ sedan stegen nedan:
 
 >[!CAUTION]
 >
->När du ansluter **Litmus** konto med [!DNL Journey Optimizer]godkänner du att testmeddelanden skickas till Litmus: När de väl har skickats hanteras dessa e-postmeddelanden inte längre av Adobe. Följaktligen gäller Litmus-principen för datalagring i dessa e-postmeddelanden, inklusive personaliseringsdata som kan inkluderas i dessa testmeddelanden.
+>När du ansluter **Litmus** konto med [!DNL Journey Optimizer]godkänner du att testmeddelanden skickas till Litmus: när de väl har skickats hanteras dessa e-postmeddelanden inte längre av Adobe. Följaktligen gäller Litmus-principen för datalagring i dessa e-postmeddelanden, inklusive personaliseringsdata som kan inkluderas i dessa testmeddelanden.
 
 ## Instruktionsvideo {#video-preview}
 

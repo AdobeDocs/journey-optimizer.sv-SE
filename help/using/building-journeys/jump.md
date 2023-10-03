@@ -28,13 +28,13 @@ The **[!UICONTROL Jump]** kan ni med hjälp av en viss aktivitet föra individer
 * förenkla utformningen av mycket komplexa resor genom att dela upp dem i flera.
 * bygga resor baserat på gemensamma och återanvändbara resemönster
 
-Lägg bara till en **[!UICONTROL Jump]** och välj en målresa. När personen kommer in i **[!UICONTROL Jump]** skickas en intern händelse till målresans första händelse. Om **[!UICONTROL Jump]** åtgärden lyckas, den enskilda personen fortsätter att göra framsteg på resan. Beteendet liknar andra åtgärder.
+Lägg bara till en **[!UICONTROL Jump]** och välj en målresa. När personen kommer in i **[!UICONTROL Jump]** skickas en intern händelse till den första händelsen i målresan. Om **[!UICONTROL Jump]** åtgärden lyckas, den enskilda personen fortsätter att göra framsteg på resan. Beteendet liknar andra åtgärder.
 
 I målresan utlöses den första händelsen internt av **[!UICONTROL Jump]** aktiviteten kommer att få den enskilda resan att flyta.
 
 ## Livscykel
 
-Säg att du har lagt till en **[!UICONTROL Jump]** verksamhet under en resa A till en resa B. Journey A är **ursprunglig resa** och resa B, **målresa**.
+Säg att du har lagt till en **[!UICONTROL Jump]** verksamhet på resa A till resa B. Resa A är **ursprunglig resa** och resa B, **målresa**.
 Här är de olika stegen i körningsprocessen:
 
 **Resa A** aktiveras från en extern händelse:
@@ -72,7 +72,7 @@ Under resa B utlöses den första händelsen internt via **[!UICONTROL Jump]** v
 
 ## Konfigurera hoppaktiviteten
 
-1. Utforma **ursprunglig resa**.
+1. Designa **ursprunglig resa**.
 
    ![](assets/jump1.png)
 

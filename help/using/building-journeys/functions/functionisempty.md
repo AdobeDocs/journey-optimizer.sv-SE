@@ -16,7 +16,7 @@ ht-degree: 15%
 
 # isEmpty {#isEmpty}
 
-Returnerar true om strängen i parametern inte har något tecken.
+Returnerar true om strängen i parametern saknar tecken.
 
 ## Kategori
 

@@ -27,7 +27,7 @@ För att maximera fördelen med automatisk personalisering finns det vissa vikti
 * **Erbjudandena är tillräckligt olika så att användarna får olika preferenser bland erbjudandena i fråga**. Om erbjudandena är för lika kommer en resulterande modell att få mindre effekt eftersom svaren verkar vara slumpmässiga.
 Om en bank t.ex. har två kreditkort med den enda skillnaden att vara färg, spelar det ingen roll vilket kort som rekommenderas, men om varje kort har olika villkor, ger detta en logisk grund för varför vissa kunder skulle välja ett och ger tillräckligt stor skillnad mellan erbjudandena för att skapa en mer slagkraftig modell.
 * **Användarens trafikkomposition är stabil**. Om användartrafikens sammansättning ändras dramatiskt under modellutbildning och -prediktion kan modellens prestanda försämras. Anta till exempel att det i modellutbildningsfasen bara finns data för användare i målgrupp A, men den tränade modellen används för att generera prognoser för användare i målgrupp B, och att modellens prestanda kan påverkas.
-* **Prestandan ändras inte dramatiskt under en kort tidsperiod** när den här modellen uppdateras varje vecka och prestandaändringar visas när modellen uppdateras. En produkt var till exempel mycket populär tidigare, men i en offentlig rapport identifieras produkten som skadlig för vår hälsa och den här produkten blir ovanligt snabb. I det här scenariot kan modellen fortsätta att förutsäga produkten tills modellen uppdateras med ändringar i användarbeteendet.
+* **Prestandan ändras inte dramatiskt under en kort tidsperiod** när den här modellen uppdateras varje vecka och prestandaändringar visas när modellen uppdateras. En produkt var till exempel mycket populär tidigare, men i en offentlig rapport identifieras produkten som skadlig för vår hälsa och den här produkten blir ovanligt snabb. I det här scenariot kan modellen fortsätta att förutsäga den här produkten tills modellen uppdateras med ändringar i användarbeteendet.
 
 ## Så här fungerar det {#how}
 
@@ -44,7 +44,7 @@ Det finns tre typer av funktioner:
 Modellen har två faser:
 
 * I **utbildning i offlinemodell** en modell utbildas av att man lär sig och memorerar funktionsinteraktioner i historiska data.
-* I **online-tolkning** fas rangordnas anbudsförfrågningar baserat på realtidspoäng som genereras av modellen. Till skillnad från traditionell filtreringsteknik för samarbete, som är svår att inkludera funktioner för användare och erbjudanden, är automatisk personalisering en djupgående inlärningsbaserad rekommendationsmetod och kan inkludera och lära sig komplexa och icke-linjära interaktionsmönster.
+* I **online-insikt** fas rangordnas anbudsförfrågningar baserat på realtidspoäng som genereras av modellen. Till skillnad från traditionell filtreringsteknik för samarbete, som är svår att inkludera funktioner för användare och erbjudanden, är automatisk personalisering en djupgående inlärningsbaserad rekommendationsmetod och kan inkludera och lära sig komplexa och icke-linjära interaktionsmönster.
 
 Här är ett förenklat exempel som illustrerar grundtanken bakom automatisk personalisering. Anta att vi har en datauppsättning som lagrar historiska interaktioner mellan användare och erbjudanden, vilket visas i bild 1. Det finns:
 * Två erbjudanden, offer_1 och offer_2,

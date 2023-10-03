@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Definiera förinställningar för landningssidor
-description: Lär dig hur du konfigurerar miljön för att skapa och använda landningssidor med Journey Optimizer
+description: Lär dig konfigurera miljön för att skapa och använda landningssidor med Journey Optimizer
 role: Admin
 level: Intermediate
 keywords: landning, landningssida, konfigurera, miljö, underdomän, förinställningar

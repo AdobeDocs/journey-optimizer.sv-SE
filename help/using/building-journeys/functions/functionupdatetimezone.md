@@ -28,7 +28,7 @@ Datum
 
 ## Parametrar
 
-* tidszon-ID: string
+* tidszon-id: sträng
 * dateTime
 
 ## Signatur och returtyp

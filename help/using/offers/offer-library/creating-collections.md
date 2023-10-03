@@ -36,7 +36,7 @@ Du kan skapa två typer av samlingar:
 
 Så här skapar du en samling:
 
-1. Gå till **[!UICONTROL Collections]** tabbtangenten och sedan klicka **[!UICONTROL Create collection]**.
+1. Gå till **[!UICONTROL Collections]** tabbtangenten och klicka sedan på **[!UICONTROL Create collection]**.
 
 1. Ange namn och typ av samling som ska skapas.
 

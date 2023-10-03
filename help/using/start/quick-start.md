@@ -31,7 +31,7 @@ Välj din profil om du vill lära dig och upptäcka styrkan i Adobe Journey Opti
 
 * Jag är en **Datatekniker**
 
-  Importera profiler, bygg målgrupper, skapa scheman och datauppsättningar. [Läs mer](path/data-engineer.md)
+  Importera profiler, skapa målgrupper, scheman och datauppsättningar. [Läs mer](path/data-engineer.md)
 
 * Jag är en **Marknadsförare**
 

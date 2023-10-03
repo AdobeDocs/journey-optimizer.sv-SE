@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Konfigurera resor
-description: Lär dig hur du konfigurerar datakällor, händelser och åtgärder
+description: Lär dig konfigurera datakällor, händelser och åtgärder
 feature: Application Settings
 topic: Administration
 role: Admin
@@ -35,11 +35,11 @@ Med datakällkonfigurationen kan du definiera en anslutning till ett system för
 
 Med händelser kan ni utlösa era resor helt och hållet för att skicka meddelanden i realtid till den person som flyger in på resan.
 
-I händelsekonfigurationen konfigurerar du de händelser som förväntas under resorna. Data för inkommande händelser normaliseras enligt Adobe Experience Data Model (XDM). Händelser kommer från API för strömningsinmatning för autentiserade och ej autentiserade händelser (till exempel händelser i Adobe Mobile SDK). [Läs mer](../../using/event/about-events.md)
+I händelsekonfigurationen konfigurerar du de händelser som förväntas under resorna. Data för inkommande händelser normaliseras efter Adobe Experience Data Model (XDM). Händelser kommer från API för strömningsinmatning för autentiserade och ej autentiserade händelser (till exempel händelser i Adobe Mobile SDK). [Läs mer](../../using/event/about-events.md)
 
 ## Instruktioner {#actions}
 
-Journey Optimizer meddelandefunktioner är inbyggda: du bara behöver lägga till en kanalåtgärd på din resa. Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en anpassad åtgärd. [Läs mer](../../using/action/action.md)
+Journey Optimizer meddelandefunktioner är inbyggda: du behöver bara lägga till en kanalåtgärd på din resa. Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en anpassad åtgärd. [Läs mer](../../using/action/action.md)
 
 ## Bläddra bland Adobe Experience Platform-fält {#friendly-names-display}
 

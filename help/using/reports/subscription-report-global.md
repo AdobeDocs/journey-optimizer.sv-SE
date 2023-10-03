@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Prenumerationsrapport
-description: Lär dig hur du använder data från dina prenumerationstjänster med den globala prenumerationsrapporten
+description: Lär dig använda data från dina prenumerationstjänster med den globala prenumerationsrapporten
 feature: Journeys
 topic: Content Management
 role: User
@@ -28,15 +28,15 @@ Klicka på **[!UICONTROL Report]** ikonen för den valda prenumerationslistan.
 
 ![](assets/subscription_report_7.png)
 
-Prenumerationen **[!UICONTROL Global report]** är uppdelat i olika widgetar som detaljerat beskriver dina prenumerationer och avbeställningar. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](global-report.md).
+Prenumerationen **[!UICONTROL Global report]** är uppdelat i olika widgetar som detaljerat beskriver dina prenumerationer och avbeställningar. Varje widget kan storleksändras och tas bort vid behov. Mer information om detta finns i [section](global-report.md).
 
 ![](assets/subscription_report_1.png)
 
-The **[!UICONTROL Subscription performance]** KPI:er och **[!UICONTROL Subscriptions by journey]**/**[!UICONTROL Unsubscribes by journey]** tabellerna innehåller detaljerad information om besökarnas engagemang på landningssidan. Tabellerna och KPI:erna innehåller tillgängliga uppgifter om landningssidan, t.ex.:
+The **[!UICONTROL Subscription performance]** nyckeltal och **[!UICONTROL Subscriptions by journey]**/**[!UICONTROL Unsubscribes by journey]** tabellerna innehåller detaljerad information om besökarnas engagemang på landningssidan. Tabellerna och KPI:erna innehåller tillgängliga uppgifter om landningssidan, t.ex.:
 
 * **[!UICONTROL Subscribes]**: Totalt antal prenumerationer för den berörda perioden.
 
-* **[!UICONTROL Unsubscribes]**: Totalt antal avbeställningar under den berörda perioden.
+* **[!UICONTROL Unsubscribes]**: Totalt antal avbeställningar under den aktuella perioden.
 
 The **[!UICONTROL Subscription performance]** Diagram visar hur prenumerationerna har utvecklats under den berörda perioden.
 

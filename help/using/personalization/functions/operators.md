@@ -21,7 +21,7 @@ Booleska funktioner används för att utföra boolesk logik för olika element.
 
 ### Och{#and}
 
-The `and` används för att skapa en logisk koppling.
+The `and` -funktionen används för att skapa en logisk koppling.
 
 **Syntax**
 

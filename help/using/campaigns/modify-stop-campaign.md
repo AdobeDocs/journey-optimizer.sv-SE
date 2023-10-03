@@ -41,7 +41,7 @@ Kampanjer kan ha flera statusvärden:
 * **[!UICONTROL Live]**: Kampanjen har aktiverats.
 * **[!UICONTROL Scheduled]**: Kampanjen är konfigurerad att aktiveras ett visst startdatum.
 * **[!UICONTROL Stopped]**: Kampanjen har stoppats manuellt. Du kan inte aktivera eller återanvända den längre. [Lär dig stoppa en kampanj](modify-stop-campaign.md#stop)
-* **[!UICONTROL Completed]**: Kampanjen är färdig. Den här statusen tilldelas automatiskt 3 dagar efter att en kampanj har aktiverats, eller vid kampanjens slutdatum om den har en återkommande körning.
+* **[!UICONTROL Completed]**: Kampanjen är klar. Den här statusen tilldelas automatiskt 3 dagar efter att en kampanj har aktiverats, eller vid kampanjens slutdatum om den har en återkommande körning.
 * **[!UICONTROL Archived]**: Kampanjen har arkiverats. [Lär dig arkivera kampanjer](modify-stop-campaign.md#archive)
 
 >[!NOTE]
@@ -82,7 +82,7 @@ Om du vill stoppa en återkommande kampanj öppnar du den och klickar sedan på 
 
 ## Duplicera en kampanj {#duplicate}
 
-Du kan duplicera en livekampanj och skapa en ny. Det gör du genom att öppna kampanjen och sedan klicka på **[!UICONTROL Duplicate]**.
+Du kan duplicera en livekampanj och skapa en ny. Öppna kampanjen och klicka sedan på **[!UICONTROL Duplicate]**.
 
 ![](assets/create-campaign-duplicate.png)
 

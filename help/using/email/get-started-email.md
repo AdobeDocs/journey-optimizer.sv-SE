@@ -28,11 +28,11 @@ E-postleveranser kan skapas:
 
 * I en **Resa**: när du har lagt till en **[!UICONTROL Email]** -aktiviteten på din resa och definierade grundläggande inställningar, använd **[!UICONTROL Actions: Email]** höger ruta för att skapa innehållet för meddelandet.
 
-   Mer information om hur du konfigurerar din resa finns i [page](../building-journeys/journey-gs.md).
+  Mer information om hur du konfigurerar din resa finns i [page](../building-journeys/journey-gs.md).
 
 * I en **Campaign**: när du har skapat en kampanj väljer du **[!UICONTROL Email]** som din åtgärd och definiera grundläggande inställningar.
 
-   Mer information om hur du konfigurerar kampanjen finns i [page](../campaigns/create-campaign.md#configure).
+  Mer information om hur du konfigurerar kampanjen finns i [page](../campaigns/create-campaign.md#configure).
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>

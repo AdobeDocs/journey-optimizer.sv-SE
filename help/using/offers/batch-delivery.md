@@ -54,7 +54,7 @@ Följ stegen nedan för att skapa en ny jobbförfrågan.
 
    ![](assets/batch-decision.png)
 
-1. Som standard returneras ett erbjudande i beslutsomfånget för varje profil. Du kan justera antalet returnerade erbjudanden med **[!UICONTROL Request offer per profile]** alternativ. Om du till exempel väljer 2 visas de två bästa erbjudandena för det valda beslutsomfånget.
+1. Som standard returneras ett erbjudande i beslutsomfånget för varje profil. Du kan justera antalet returnerade erbjudanden med **[!UICONTROL Request offer per profile]** alternativ. Om du till exempel väljer 2 visas de två bästa erbjudandena för det valda beslutsområdet.
 
    >[!NOTE]
    >
@@ -80,7 +80,7 @@ När en jobbförfrågan har skapats, går batchjobbet igenom flera statusvärden
 
 1. **[!UICONTROL Queued]**: Jobbbegäran har skapats och har öppnats i behandlingskön. Upp till 5 batchjobb kan köras åt gången per datauppsättning. Alla andra gruppförfrågningar med samma utdatamängd läggs till i kön. Ett jobb i kö plockas upp för bearbetning när det föregående jobbet har slutförts.
 1. **[!UICONTROL Processing]**: Jobbbegäran bearbetas
-1. **[!UICONTROL Ingesting]**: Jobbbegäran har körts. Resultatdata hämtas i den valda datauppsättningen.
+1. **[!UICONTROL Ingesting]**: Jobbbegäran har körts, resultatdata hämtas i den valda datauppsättningen,
 1. **[!UICONTROL Completed]**: Jobbbegäran har körts och resultatdata lagras nu i den valda datauppsättningen.
 
    >[!NOTE]

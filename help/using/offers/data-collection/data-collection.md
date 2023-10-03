@@ -20,7 +20,7 @@ ht-degree: 1%
 Du kan samla in feedback från offera decisioningar i Adobe Experience Platform, inklusive vilka erbjudanden som visas och hur användare interagerar med dem. Dessa data kan användas för:
 * Disponering [Beslutsfattarrapporter](../reports/get-started-events.md);
 * Använda [frekvensbegränsning](../offer-library/add-constraints.md#capping) regler,
-* Byggnad [AI-modeller](../ranking/create-ranking-strategies.md) som kan användas som en rangordningsmetod.
+* Byggnad [AI-modeller](../ranking/create-ranking-strategies.md) som kan användas som en rankningsmetod.
 
 ## Olika typer av händelser
 
@@ -38,7 +38,7 @@ Avvisningar och klickningar för beslutshantering definieras enligt följande:
 
 * A **klicka** händelsen är när en användare klickar på eller interagerar med ett erbjudande.
 
-Hur man får in feedback om intryck och klick beror på [!DNL Journey Optimizer] kanal som används.
+Hur man får in feedback om intryck och klick beror på [!DNL Journey Optimizer] som används.
 
 **E-post** skapad av [!DNL Journey Optimizer] **automatiskt** spåra visningar och klickningar.
 
@@ -49,7 +49,7 @@ Men **de flesta kanaler** kräver att man skickar in trycksaker och klickdata ti
 * Mobilappar med [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"} to render offers - [Learn more](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/#ab-sj-tracking-servers){target="_blank"}
 * Kiosker
 * Meddelanden som skickas via program från tredje part
-   <!--Mobile push notifications authored by [!DNL Journey Optimizer] - [Learn more](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer/api-reference/#handlenotificationresponse){target="_blank"}-->
+  <!--Mobile push notifications authored by [!DNL Journey Optimizer] - [Learn more](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer/api-reference/#handlenotificationresponse){target="_blank"}-->
 
 >[!NOTE]
 >
@@ -63,6 +63,6 @@ Synpunkter på anpassade evenemang som är kopplade till ett erbjudande kan skic
 
 Om du vill skicka in feedback-data måste du skapa en datauppsättning för att samla in händelser och, för varje händelsetyp, definiera en upplevelsehändelse som ska skickas till Adobe Experience Platform.
 
-* Lär dig hur du skapar en datauppsättning där upplevelsehändelser samlas in i [det här avsnittet](create-dataset.md).
+* Lär dig skapa en datauppsättning där upplevelsehändelser samlas in i [det här avsnittet](create-dataset.md).
 
 * Lär dig hur du definierar upplevelsehändelser som ska skickas in feedback-data i [det här avsnittet](schema-requirement.md).

@@ -53,7 +53,7 @@ Följande åtgärd hittar produkten i lagret och priset på en produkt för att 
 {%= product.inventory * product.price %}
 ```
 
-## Subtrahera{#substract}
+## Ta bort{#substract}
 
 The `-` (subtraktion) används för att hitta skillnaden mellan två argumentuttryck.
 

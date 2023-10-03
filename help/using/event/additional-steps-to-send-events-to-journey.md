@@ -18,7 +18,7 @@ ht-degree: 4%
 
 # Ytterligare steg för att skicka händelser {#additional-steps-to-send-events}
 
-Så här konfigurerar du händelser som ska skickas till **[!UICONTROL Streaming Ingestion APIs]** och ska användas i [!DNL Journey Optimizer]måste du följa dessa steg:
+Konfigurera händelser som ska skickas till **[!UICONTROL Streaming Ingestion APIs]** och ska användas i [!DNL Journey Optimizer]måste du följa dessa steg:
 
 1. Hämta URL:en för inlopp från Adobe Experience Platform API:er. Läs mer i [Översikt över API:er för direktuppspelning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=sv){target="_blank"}.
 1. Kopiera nyttolasten från nyttolastförhandsvisningen i **[!UICONTROL Event]** -menyn. Läs mer i [den här sidan](../event/about-creating.md#define-the-payload-fields).
@@ -27,7 +27,7 @@ Sedan måste du konfigurera det datasystem som överför händelser till API:er 
 
 1. Konfigurera ett POST-API-anrop till API:n för direktuppspelning (kallas för ett inlopp).
 1. Använd nyttolasten som du kopierade från [!DNL Journey Optimizer] i brödtexten (&quot;dataavsnittet&quot;) för API-anropet till API:er för Streaming Ingmit. Se nedan för ett exempel
-1. Bestäm var alla variabler som finns i nyttolasten ska hämtas. Exempel: om händelsen ska förmedla adressen, kommer nyttolasten som klistras in att visa&quot;adress&quot;: &quot;string&quot;. &quot;string&quot; ska ersättas med variabeln som automatiskt fyller i rätt värde, e-postadressen till den person som meddelandet ska skickas till. Observera att i nyttolastförhandsvisningen i **[!UICONTROL Header]** fyller vi automatiskt i många värden som förväntas underlätta arbetet.
+1. Bestäm var alla variabler som finns i nyttolasten ska hämtas. Exempel: Om händelsen ska förmedla adressen visas&quot;adress&quot; i den inklistrade nyttolasten:&quot;sträng&quot;. &quot;string&quot; ska ersättas med variabeln som automatiskt fyller i rätt värde, e-postadressen till den person som meddelandet ska skickas till. Observera att i nyttolastförhandsvisningen i **[!UICONTROL Header]** fyller vi automatiskt i många värden som kan underlätta ditt arbete.
 1. Välj &quot;application/json&quot; som en texttyp.
 1. Skicka ditt organisations-ID i huvudet med nyckeln &quot;x-gw-ims-org-id&quot;. Använd ditt företags-ID (&quot;XXX@AdobeOrg&quot;) för värdet.
 

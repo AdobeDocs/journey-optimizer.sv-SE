@@ -44,7 +44,7 @@ Den här fältgruppen används i transportschemat (i relation till travelStepEve
 
 ## profil {#profile-field}
 
-Den här fältgruppen är specifik för travelStepEvent: den här händelsen är relaterad till resan och har inte identityMap, som beskriver profidentiteten, om någon.
+Den här fältgruppen är specifik för travelStepEvent: den här händelsen är relaterad till resan och har inte identityMap, som beskriver profilens identitet, om sådan finns.
 
 För travelStepEvent måste vi även lägga till fält som är relaterade till identiteten:
 
@@ -65,7 +65,7 @@ Den här mixinen innehåller alla fält som motsvarar ett profilexportjobb.
 | exportCountRealized | Heltal | Det faktiska antalet målgrupper som exporterats via jobbet |
 | exportCountFailed | Heltal | Antalet målgrupper som misslyckades vid export via jobbet |
 | exportSegmentID | Sträng | Identifieraren för målgruppen som exporteras |
-| eventType | Sträng | Händelsetypen som anger om det är en felhändelse för info-händelsen: Info, fel |
+| eventType | Sträng | Händelsetypen anger om det är en felhändelse för info-händelsen: Info, Error |
 | eventCode | Sträng | Felkoden som anger orsaken till motsvarande eventType |
 
 ## stepEvents {#stepevents-field}

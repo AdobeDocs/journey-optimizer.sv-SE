@@ -32,7 +32,7 @@ På så sätt kan ni testa och förfina olika versioner av era erbjudanden utan 
 >
 >Den här funktionen simulerar en enda begäran till [!DNL Decisioning] API. Läs mer på [Leverera erbjudanden med hjälp av besluts-API](../api-reference/offer-delivery-api/decisioning-api.md).
 
-Om du vill komma åt den här funktionen väljer du **[!UICONTROL Simulation]** från **[!UICONTROL Decision management]** > **[!UICONTROL Offers]** -menyn.
+Om du vill komma åt den här funktionen väljer du **[!UICONTROL Simulation]** -fliken från **[!UICONTROL Decision management]** > **[!UICONTROL Offers]** -menyn.
 
 ![](../assets/offers_simulation-tab.png)
 
@@ -135,7 +135,7 @@ Om du vill redigera standardinställningarna för dina simuleringar följer du s
 
    ![](../assets/offers_simulation-settings.png)
 
-1. I **[!UICONTROL Deduplication]** kan du välja att tillåta dubbla erbjudanden mellan beslut och/eller placeringar. Det innebär att flera beslut/ersättningar kan tilldelas samma erbjudande.
+1. I **[!UICONTROL Deduplication]** kan du välja att tillåta dubbletter av erbjudanden mellan beslut och/eller placeringar. Det innebär att flera beslut/ersättningar kan tilldelas samma erbjudande.
 
    ![](../assets/offers_simulation-settings-deduplication.png)
 

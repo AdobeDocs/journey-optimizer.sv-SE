@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Operatorer
-description: Lär dig mer om operatorer i avancerade uttryck
+description: Läs om operatorer i avancerade uttryck
 feature: Journeys
 role: Data Engineer, Architect
 level: Experienced
@@ -44,7 +44,7 @@ not (@{LobbyBeacon.endUserIDs._experience.emailid.id}=="example@adobe.com")
 
 ## Logisk  {#logical}
 
-### och 
+###  och 
 
 ```json
 <expression1> and <expression2>
@@ -171,7 +171,8 @@ Exempel:
 ```
 
 >[!NOTE]
->För &lt;expression1> och &lt;expression2> det inte finns någon datatypskontroll.
+>
+För &lt;expression1> och &lt;expression2> det inte finns någon datatypskontroll.
 
 Resultatet är booleskt.
 

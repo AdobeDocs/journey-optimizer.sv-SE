@@ -24,13 +24,13 @@ Adobe Experience Platform och Journey Optimizer har olika verktyg för att säke
 
 * **Hantera dataförfrågningar**: Använd Adobe Experience Platform Privacy Service för att hantera kundförfrågningar för att få tillgång till och ta bort personuppgifter. [Läs mer](requests.md)
 
-* **Granska användaråtgärder**: Utnyttja granskningsloggar för att identifiera åtgärder som utförs av användare i systemet, felsöka problem och hjälpa ditt företag att följa regler och policyer för hantering av företagsdata. [Läs mer](audit-logs.md)
+* **Granska användaråtgärder**: Använd granskningsloggar för att identifiera åtgärder som utförs av användare i systemet, felsöka problem och hjälpa ditt företag att följa regler och policyer för hantering av företagsdata. [Läs mer](audit-logs.md)
 
 * **Spåra och hantera samtycke**: Spåra kundernas samtycke till kommunikation och hantera sina preferenser och prenumerationer. [Läs mer](opt-out.md)
 
-* **Tillämpa samtyckespolicyer**: Definiera Adobe Experience Platform medgivandepolicyer och tillämpa dem på dina anpassade åtgärder för att ta hänsyn till era kunders preferenser. [Läs mer](../action/consent.md)
+* **Tillämpa samtyckespolicyer**: Definiera Adobe Experience Platform medgivandepolicyer och tillämpa dem på dina anpassade åtgärder för att ta hänsyn till dina kunders önskemål. [Läs mer](../action/consent.md)
 
-* **Tillämpa styrningsprinciper**: Utnyttja Adobe Experience Platform policy för att förhindra att känsliga fält exporteras till tredjepartssystem via anpassade åtgärder. [Läs mer](../action/action-privacy.md)
+* **Tillämpa styrningsprinciper**: Använd Adobe Experience Platform policy för styrning för att förhindra att känsliga fält exporteras till tredjepartssystem via anpassade åtgärder. [Läs mer](../action/action-privacy.md)
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>

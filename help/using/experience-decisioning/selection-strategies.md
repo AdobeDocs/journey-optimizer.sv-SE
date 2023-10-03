@@ -8,7 +8,8 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Beta"
-source-git-commit: 69a2ef17b6f5ccd40c08858f7b434029964d544d
+exl-id: 1b73b398-050a-40bb-a8ae-1c66e3e26ce8
+source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 1%
@@ -117,4 +118,3 @@ När du har skapat den kan du använda den här formeln i en urvalsstrategi. Om 
 Du kan också använda ett utbildat modellsystem som automatiskt rangordnar erbjudanden för en viss profil genom att välja en AI-modell. Lär dig skapa en AI-modell i [det här avsnittet](ranking.md).
 
 När en AI-modell har skapats kan du använda den i en urvalsstrategi. Om flera erbjudanden är berättigade avgör det tränade modellsystemet vilket erbjudande som ska presenteras först för denna urvalsstrategi.
-

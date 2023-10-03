@@ -20,7 +20,7 @@ ht-degree: 1%
 >title="Representationer"
 >abstract="Lägg till representationer för att definiera var ditt erbjudande ska visas i meddelandet. Ju fler representationer ett erbjudande har, desto fler möjligheter finns det att använda erbjudandet i olika placeringssammanhang."
 
-Ett erbjudande kan visas på olika platser i ett meddelande: i en övre banderoll med en bild, som text i ett stycke, som ett HTML-block osv. Ju fler representationer ett erbjudande har, desto fler möjligheter finns det att använda erbjudandet i olika placeringssammanhang.
+Ett erbjudande kan visas på olika platser i ett meddelande: i en översta banderoll med en bild, som text i ett stycke, som ett HTML-block osv. Ju fler representationer ett erbjudande har, desto fler möjligheter finns det att använda erbjudandet i olika placeringssammanhang.
 
 ## Konfigurera offertens representationer {#representations}
 
@@ -32,7 +32,7 @@ Följ stegen nedan om du vill lägga till en eller flera representationer i ditt
 
    >[!NOTE]
    >
-   >Endast de tillgängliga placeringarna för den valda kanalen visas i **[!UICONTROL Placement]** nedrullningsbar lista.
+   >Endast de tillgängliga placeringarna för den valda kanalen visas i **[!UICONTROL Placement]** listruta.
 
 1. Välj en placering i listan.
 
@@ -52,7 +52,7 @@ Följ stegen nedan om du vill lägga till en eller flera representationer i ditt
 
 1. Välj slutligen det språk du vill använda för att identifiera och hantera vad som ska visas för användarna.
 
-1. Om du vill lägga till en annan representation använder du **[!UICONTROL Add representation]** och lägg till så många representationer som behövs.
+1. Använd knappen **[!UICONTROL Add representation]** och lägg till så många representationer som behövs.
 
    ![](../assets/offer-add-representation.png)
 
@@ -88,7 +88,7 @@ Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Ado
 
 ### Lägg till HTML eller JSON-filer {#html-json}
 
-Om den markerade placeringen är av HTML-typ kan du även lägga till HTML eller JSON-innehåll från [Adobe Experience Cloud Asset Library](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}).
+Om den markerade placeringen är HTML kan du även lägga till HTML eller JSON-innehåll från [Adobe Experience Cloud Asset Library](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}).
 
 Du har t.ex. skapat en e-postmall för HTML i [Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager.html){target="_blank"} och du vill använda den filen för ert erbjudandeinnehåll. I stället för att skapa en ny fil kan du överföra mallen till **Resursbibliotek** för att kunna återanvända det i ert erbjudande.
 
@@ -112,7 +112,7 @@ Använd uttrycksredigeraren för att hämta profilattribut som lagras i Adobe Ex
 
 Om du anger en **[!UICONTROL Destination link]** kan du också anpassa den URL som användarna som klickar på erbjudandet ska dirigeras till.
 
-### Lägg till egen text {#custom-text}
+### Lägga till egen text {#custom-text}
 
 Du kan också infoga text när du väljer en kompatibel placering.
 

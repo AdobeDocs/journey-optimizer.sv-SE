@@ -6,7 +6,8 @@ description: Lär dig hur du konfigurerar och hanterar kundnycklar för Adobe Jo
 feature: Monitoring
 role: Developer, User, Admin, Leader
 level: Intermediate
-source-git-commit: 53b37fbb0fc799a0757e3ba8da2c42093d460d00
+exl-id: f0985d1f-0bcf-452f-bd46-dfeca0424f01
+source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->[!DNL Customer Managed Keys] är för närvarande bara tillgänglig för organisationer som har köpt [Vårdsköld eller sköld för skydd av privatlivet och säkerheten](https://experienceleague.adobe.com/docs/events/customer-data-management-voices-recordings/governance/healthcare-shield.html) tilläggserbjudande.
+>[!DNL Customer Managed Keys] för närvarande bara för organisationer som har köpt [Vårdsköld eller sköld för skydd av privatlivet och säkerheten](https://experienceleague.adobe.com/docs/events/customer-data-management-voices-recordings/governance/healthcare-shield.html) tilläggserbjudande.
 
 Med Adobe Journey Optimizer [Hälsovårdssköld](https://www.adobe.com/trust/compliance/hipaa-ready.html) och kunder med skölden för skydd av privatlivet och säkerhet kan utnyttja Azure Customer Managed Keys (CMK) och tillämpa dem på sina data.
 

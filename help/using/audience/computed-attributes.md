@@ -6,13 +6,13 @@ description: Lär dig hur du arbetar med beräknade attribut.
 feature: Profiles
 role: User
 level: Beginner
-source-git-commit: 608394da88d42095a1adc517a067c725eac52707
+exl-id: 5402a179-263f-46a7-bddf-5b7017cf0f82
+source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%
 
 ---
-
 
 # Arbeta med beräknade attribut {#computed-attributes}
 

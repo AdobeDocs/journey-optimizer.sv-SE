@@ -1,7 +1,7 @@
 ---
 product: journey optimizer
 title: trim
-description: Läs mer om trimningen av funktioner
+description: Lär dig mer om trimning av funktioner
 feature: Journeys
 role: Data Engineer, Architect
 level: Experienced

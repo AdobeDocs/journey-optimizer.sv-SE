@@ -25,7 +25,7 @@ Vissa av dessa fält är bara tillgängliga i specifika bearbetningsmönster (å
 
 ## entré {#entrance-field}
 
-Anger om användaren har gått in på resan. Om det inte finns antar vi att värdet är falskt.
+Anger om användaren har gått in i resan. Om det inte finns antar vi att värdet är falskt.
 
 Typ: boolesk
 
@@ -49,31 +49,31 @@ Typ: boolesk
 
 Händelse-ID under bearbetning för stegbearbetning. Om händelsen är en extern händelse är värdet dess eventId. Om händelsen är en intern händelse är värdet det interna eventId (till exempel scheduleNotificationReceived, executionAction).
 
-Typ: string
+Typ: sträng
 
 ## nodeID {#nodeid-field}
 
 Klientnod-ID (från arbetsytan).
 
-Typ: string
+Typ: sträng
 
 ## stepID {#stepdid-field}
 
 Unikt ID för det steg som bearbetas just nu.
 
-Typ: string
+Typ: sträng
 
 ## stepName {#stepname-field}
 
 Namnet på det steg som bearbetas just nu.
 
-Typ: string
+Typ: sträng
 
 ## stepType {#steptype-field}
 
 Typ av steg.
 
-Typ: string
+Typ: sträng
 
 Möjliga värden:
 
@@ -86,28 +86,28 @@ Möjliga värden:
 
 Status för steget, som representerar status för steget, när bearbetningen har slutförts (och steghändelsen utlösts).
 
-Typ: string
+Typ: sträng
 
 Status kan vara:
 
-* avslutad: steget saknar övergång och bearbetningen har slutförts.
-* fel: Stegbearbetningen har orsakat ett fel.
+* avslutad: steget har ingen övergång och bearbetningen har slutförts.
+* fel: stegbearbetningen har orsakat ett fel.
 * övergångar: steget väntar på att en händelse ska övergå till ett annat steg.
-* med tak: Steget har misslyckats på ett fel med begränsning, vilket uppstod under en åtgärd eller anrikning.
-* tidsgräns: steget har misslyckats på ett timeout-fel som uppstod under en åtgärd eller en anrikning.
-* instanceTimedout: steget har stoppat bearbetningen eftersom instansen har nått sin timeout.
+* Mappat: steget har misslyckats på ett fel med begränsning, vilket uppstod under en åtgärd eller anrikning.
+* timeout: steget misslyckades på ett timeout-fel, vilket uppstod under en åtgärd eller en anrikning.
+* instanceTimedout: bearbetningen av steget har stoppats eftersom instansen har nått sin tidsgräns.
 
 ## travelID {#journeyid-field}
 
 ID för resan.
 
-Typ: string
+Typ: sträng
 
 ## travelVersionID {#journeyversionid-field}
 
 ID för reseversionen. Detta id representerar identitetsreferensen till resan, när det gäller travelStepEvent.
 
-Typ: string
+Typ: sträng
 
 >[!NOTE]
 >
@@ -117,7 +117,7 @@ Typ: string
 
 Namn på reseversionen.
 
-Typ: string
+Typ: sträng
 
 >[!NOTE]
 >
@@ -127,43 +127,43 @@ Typ: string
 
 Version av reseversionen.
 
-Typ: string
+Typ: sträng
 
 ## instanceID {#instanceid-field}
 
 Internt ID för reseinstansen.
 
-Typ: string
+Typ: sträng
 
 ## externalKey {#externalkey-field}
 
 Extern nyckel som extraherats från händelsen för att bearbeta den.
 
-Typ: string
+Typ: sträng
 
 ## parentStepID {#parenstepid-field}
 
 Steg-ID för den överordnade för det aktuella bearbetade steget i instansen.
 
-Typ: string
+Typ: sträng
 
 ## parentStepName {#parentstepname-field}
 
 Stegnamn för det överordnade steget i det aktuella steget.
 
-Typ: string
+Typ: sträng
 
 ## parentTransitionID {#parenttransitionid-field}
 
 ID för övergången som har fört instansen till det bearbetade steget.
 
-Typ: string
+Typ: sträng
 
 ## parentTransitionName {#parenttransitionname-field}
 
 Namnet på övergången som har fört instansen till det bearbetade steget.
 
-Typ: string
+Typ: sträng
 
 ## inTest {#intest-field}
 
@@ -175,21 +175,21 @@ Typ: boolesk
 
 Total tid i millisekunder från instansstegsinkomsten till behandlingens slut.
 
-Typ: long
+Typ: lång
 
 ## instanceType {#instancetype-field}
 
 Anger instanstypen, om den är batch eller unitary.
 
-Typ: string
+Typ: sträng
 
-Värden: batch/unitary
+Värden: batch/enhet
 
 ## repeatIndex {#recurrenceindex-field}
 
 Index för upprepningen om resan är batch och återkommande (den första körningen har recidiIndex = 1).
 
-Typ: long
+Typ: lång
 
 ## isBatchToUnitary {#isbatchtounitary-field}
 
@@ -201,16 +201,16 @@ Typ: boolesk
 
 Extern nyckel för batchhändelse.
 
-Typ: string
+Typ: sträng
 
 ## batchInstanceID {#batchinstanceid-field}
 
 detta är batchförekomstens ID.
 
-Typ: string
+Typ: sträng
 
 ## batchUnitaryBranchID {#batchunitarybranchid-field}
 
 om instansen har utlösts från en gruppinstans, ett enhetsförgrunds-ID.
 
-Typ: string
+Typ: sträng

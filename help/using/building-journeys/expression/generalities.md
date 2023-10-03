@@ -15,7 +15,7 @@ ht-degree: 2%
 
 ---
 
-# Avancerad syntax för uttrycksredigeraren {#syntax}
+# Syntax för avancerad uttrycksredigerare {#syntax}
 
 ## Parenteser och uttrycksprioritet{#parentheses-and-expression-priority}
 
@@ -35,14 +35,14 @@ Uttrycken utvärderas från vänster till höger. Associativiteten för aritmeti
 Här är de olika reglerna för skiftlägeskänslighet:
 
 * Alla operatorer (och, eller, osv.) ska skrivas med gemener. Till exempel _`<expression1>`och`<expression2>`_ är ett giltigt uttryck medan uttrycket _`<expression1>`OCH`<expression2>`_ inte.
-* Alla funktionsnamn är skiftlägeskänsliga. Till exempel _inSegment()_ är giltigt medan funktionen _INSEGMENT()_ inte.
-* Fältreferenser och konstanta värden är skiftlägeskänsliga: de inte är inbyggda element i språket (till skillnad från operatorer och funktioner), de författas av slutanvändaren.
+* Alla funktionsnamn är versalkänsliga. Till exempel _inSegment()_ är giltigt medan funktionen _INSEGMENT()_ inte.
+* Fältreferenser och konstanta värden är skiftlägeskänsliga: de är inte inbyggda element i språket (till skillnad från operatorer och funktioner), utan skapas av slutanvändaren.
 
 ## Returnerad uttryckstyp{#returned-expression-type}
 
 Beroende på användningssammanhanget kan uttrycksredigeraren returnera olika värden.
 
-| Avancerad användning av uttrycksredigeraren | Returnerad uttryckstyp förväntades |
+| Avancerad användning av uttrycksredigerare | Returnerad uttryckstyp förväntades |
 |--- |--- |
 | Villkor (datakällans villkor, datumvillkor) | boolesk |
 | Anpassad timer | dateTimeOnly |

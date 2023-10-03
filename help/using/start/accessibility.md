@@ -25,7 +25,7 @@ Tillgänglighetsfunktionerna i [!DNL Adobe Journey Optimizer] ärvs från Adobe 
 
 * Tangentbordstillgänglighet
 * Färgkontrast
-* Bekräfta att du fyllt i samtliga obligatoriska fält
+* Validering av obligatoriska fält
 
 Tillgänglighetsfunktionerna i Adobe Experience Platform är detaljerade [i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/accessibility/features.html){target="_blank"}.
 
@@ -65,7 +65,7 @@ Du kan använda dessa kortkommandon i vissa områden i [!DNL Journey Optimizer] 
   </tr>
   <tr>
     <td>Ta bort de valda aktiviteterna</td>
-    <td>Ta bort eller Backsteg och bekräfta sedan borttagningen genom att ange</td>
+    <td>Ta bort eller Backsteg, och bekräfta sedan borttagningen genom att ange</td>
   </tr>
   <tr>
     <td>Zooma in och ut (fokus på arbetsytan eller något av dess underordnade element)</td>

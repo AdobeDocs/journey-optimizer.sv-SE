@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Översikt över AI-tjänsten
-description: Översikt över AI-tjänsten
+title: AI - tjänstöversikt
+description: AI - tjänstöversikt
 role: User
 level: Intermediate
 keywords: artificiell, AI, intelligent, resa, service
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Integrera med intelligenta tjänster {#ai-overview}
 
-Integrationen med **[!DNL Adobe Intelligent Services]** gör att ni kan utnyttja kraften i artificiell intelligens och maskininlärning i kundupplevelsefall. På så sätt kan marknadsföringsanalytiker skapa prediktioner som är specifika för ett företags behov med hjälp av konfigurationer på företagsnivå utan behov av datavetenskaplig expertis.
+Integrationen med **[!DNL Adobe Intelligent Services]** gör att ni kan utnyttja kraften i artificiell intelligens och maskininlärning i kundupplevelsefall. På så sätt kan marknadsföringsanalytiker skapa prediktioner som är specifika för ett företags behov med hjälp av konfigurationer på företagsnivå utan behov av datavetenskap.
 
 [!DNL Intelligent Services], som bygger på Adobe Experience Platform, ger marknadsförare med ansvar för kundupplevelseåtkomst till AI-as-service, vilket gör det enkelt för alla att förutse kundbeteende, mäta effekten av en kampanj eller säkerställa bättre avkastning på varje investering. Mer information om [!DNL Adobe Intelligent Services], se [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html){target="_blank"}.
 

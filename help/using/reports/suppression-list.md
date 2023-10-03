@@ -49,13 +49,13 @@ Läs mer om hårda studsar och mjuka studsar i [det här avsnittet](#delivery-fa
 
 >[!NOTE]
 >
->Det går inte att skicka adresser för att avbryta prenumerationen till listan över inaktiveringar eftersom de inte får e-post från [!DNL Journey Optimizer]. Deras val hanteras på Experience Platform-nivå. Läs mer på [avanmäl](../privacy/opt-out.md).
+>Det går inte att skicka adresser för att avbryta prenumerationen till listan över inaktiveringar eftersom de inte får e-post från [!DNL Journey Optimizer]. Deras val hanteras på Experience Platform-nivå. Läs mer på [avanmäla](../privacy/opt-out.md).
 
 För varje adress, den grundläggande orsaken till inaktiveringen och undertryckningskategorin (mjuk, hård, osv.) visas i listan. Läs mer om hur du använder och hanterar listan över inaktiveringar i [det här avsnittet](../configuration/manage-suppression-list.md).
 
 >[!NOTE]
 >
->Profilerna med **[!UICONTROL Suppressed]** status utelämnas under meddelandesändningsprocessen. Därför är **Reserapporter** visar att dessa profiler har flyttats genom resan ([Läs målgrupp](../building-journeys/read-audience.md) och [meddelandeaktiviteter](../building-journeys/journeys-message.md)), **E-postrapporter** kommer inte att inkludera dem i **[!UICONTROL Sent]** mätvärden när de filtreras ut innan e-postmeddelanden skickas.
+>Profilerna med **[!UICONTROL Suppressed]** status exkluderas under meddelandeprocessen. Därför är **Reserapporter** visar att dessa profiler har flyttats genom resan ([Läs målgrupp](../building-journeys/read-audience.md) och [meddelandeaktiviteter](../building-journeys/journeys-message.md)), **E-postrapporter** inkluderar dem inte i **[!UICONTROL Sent]** mätvärden när de filtreras ut innan e-postmeddelanden skickas.
 >
 >Läs mer på [Live-rapport](../reports/live-report.md) och [Global rapport](../reports/global-report.md). Om du vill ta reda på orsaken till alla undantagsfall kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"}.
 

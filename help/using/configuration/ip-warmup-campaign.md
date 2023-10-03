@@ -10,7 +10,8 @@ level: Intermediate
 keywords: IP, pooler, leveransbarhet
 hide: true
 hidefromtoc: true
-source-git-commit: b3e5a825b881736516b3bcd1d368843c3a601100
+exl-id: a9995ca1-d7eb-4f8d-a9d9-fe56198ac325
+source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 2%
@@ -82,4 +83,3 @@ Följ stegen nedan om du vill skapa en IP-värmare.
 När kampanjen är klar att användas i en IP-värmerapport är den klar att användas. [Läs mer](ip-warmup-plan.md)
 
 <!--Any recommendations when defining an audience? i.e do you have to include all your database or a limited number or according to your Excel file?-->
-

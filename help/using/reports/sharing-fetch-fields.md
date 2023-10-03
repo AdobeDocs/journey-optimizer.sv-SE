@@ -25,13 +25,13 @@ Under en stegvis bearbetning kan vi hämta N-data i fältgrupper.
 
 Total tid i millisekunder som datahämtningen pågick under stegbearbetningen.
 
-Typ: long
+Typ: lång
 
 ## fetchTypeInError {#fetchtypeinerror-field}
 
 Definierar om den felaktiga hämtningen finns i Adobe Experience Platform eller i en anpassad datakälla.
 
-Typ: string
+Typ: sträng
 
 Värden:
 * aep
@@ -41,7 +41,7 @@ Värden:
 
 Typ av fel som inträffar när datahämtningen bearbetas.
 
-Typ: string
+Typ: sträng
 
 Värden:
 * http
@@ -53,16 +53,16 @@ Värden:
 
 Kod för hämtningsfel. Visa om felet har en kod, t.ex. en HTTP-kod. Om actionExecError till exempel är http representerar koden 404 HTTP 404-felet.
 
-Typ: string
+Typ: sträng
 
 ## fetchOriginError {#fetchoriginerror-field}
 
 En timeout kan uppstå i två fall:
 
 * vid första försöket utförs åtgärden. I det här fallet är körningen inte slutförd, så det finns inget underliggande fel
-* vid ett nytt försök: I det här fallet beskriver actionExecOrigError/actionExecOrigErrorCode det fel som uppstod vid försöket före det nya försöket.
+* vid ett nytt försök: i det här fallet beskriver actionExecOrigError/actionExecOrigErrorCode det fel som uppstod vid försöket före det nya försöket.
 
-Data hämtas till exempel från Unified Profile Service och ett HTTP 500-fel returneras vid det första försöket. Ett nytt hämtningsförsök görs, men längden på två försök överskrider tidsgränsen. Sedan taggas körningen av åtgärden som timeout. Åtgärdsdelen ser ut så här:
+Data hämtas till exempel från Unified Profile Service och ett HTTP 500-fel returneras vid det första försöket. Ett nytt hämtningsförsök görs, men längden på de två försöken överskrider tidsgränsen. Sedan taggas körningen av åtgärden som timeout. Åtgärdsdelen ser ut så här:
 
 ```
     ...
@@ -73,40 +73,40 @@ Data hämtas till exempel från Unified Profile Service och ett HTTP 500-fel ret
     "fetchOrigErrorCode": "500"
 ```
 
-Typ: string
+Typ: sträng
 
 ## fetchOriginErrorCode {#fetchoriginerrorcode-field}
 
 Felkoden som tillhandahålls av systemet [!DNL Journey Optimizer] frågar. Det kan till exempel vara en 404, 500 osv.
 
-Typ: string
+Typ: sträng
 
 ## fetchCount {#fetchcount-field}
 
 Hur många gånger data hämtas, oavsett källtyp.
 
-Typ: long
+Typ: lång
 
 ## fetchPlatformTotalTime {#fetchplatformtotaltime-field}
 
-Den totala tiden det tar att hämta data från Adobe Experience Platform i millisekunder. Anmärkning: denna tid beräknas från den tidpunkt då motorn skickar anrikningshändelsen till anrikningstjänsten och får svaret.
+Den totala tiden det tar att hämta data från Adobe Experience Platform i millis. Anmärkning: Den här tiden beräknas från den tidpunkt då motorn skickar anrikningshändelsen till anrikningstjänsten och tar emot svaret.
 
-Typ: long
+Typ: lång
 
 ## fetchPlatformCount {#fetchplatformcount-field}
 
 Hur många gånger data hämtas från Adobe Experience Platform.
 
-Typ: long
+Typ: lång
 
 ## fetchCustomTotalTime {#fetchcustomtotaltime-field}
 
-Hur lång tid det tar att hämta anpassade data i millisekunder. Anmärkning: denna tid beräknas från den tidpunkt då motorn skickar anrikningshändelsen till anrikningstjänsten och får svaret
+Hur lång tid det tar att hämta anpassade data i millis. Anmärkning: Den här tiden beräknas från den tidpunkt då motorn skickar anrikningshändelsen till anrikningstjänsten och får svaret
 
-Typ: long
+Typ: lång
 
 ## fetchCustomCount {#fetchcustomcount-field}
 
 Hur många gånger som anpassade data hämtas från externa system.
 
-Typ: long
+Typ: lång

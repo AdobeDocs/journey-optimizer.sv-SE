@@ -9,7 +9,8 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 5b69e8d8539e37f42d44383e32b85e651e412937
+exl-id: 271fb85d-5621-4a12-b3d1-65cf6021b174
+source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
 workflow-type: tm+mt
 source-wordcount: '929'
 ht-degree: 0%
@@ -65,6 +66,3 @@ Det finns ett antal bästa metoder som du kan implementera och som hjälper dig 
 * Om samma villkor upprepas på flera resor (samtyckeskontroller, inaktiveringar) bör du överväga att flytta dem som en del av segmentdefinitionen. Om du t.ex. har ett villkor för att kontrollera att e-postadressen inte är tom på flera resor, ska villkoret ingå i segmentdefinitionen.
 * Om kundresan har flera villkor som delar upp målgruppen för att se siffrorna i varje steg bör du överväga att använda Customer Journey Analytics eller någon annan rapporteringslösning som är bättre lämpad för analys.
 * Om du närmar dig gränsen för antal noder på arbetsytan bör du överväga att konsolidera åtgärder med dynamiska parametrar eller innehåll för att leverera rätt innehåll i stället för explicita noder.
-
-
-

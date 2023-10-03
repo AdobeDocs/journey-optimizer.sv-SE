@@ -27,7 +27,7 @@ Enhetshändelser är länkade till en viss profil. De kan vara regelbaserade ell
 
 Här följer de första stegen för att konfigurera en ny händelse:
 
-1. Välj **[!UICONTROL Configurations]**. I  **[!UICONTROL Events]** avsnitt, klicka **[!UICONTROL Manage]**. Listan med händelser visas.
+1. I avsnittet ADMINISTRATION-menyn väljer du **[!UICONTROL Configurations]**. I  **[!UICONTROL Events]** avsnitt, klicka **[!UICONTROL Manage]**. Listan med händelser visas.
 
    ![](assets/jo-event1.png)
 
@@ -53,7 +53,7 @@ Här följer de första stegen för att konfigurera en ny händelse:
 
 1. Antalet resor som använder den här händelsen visas i fältet **[!UICONTROL Used in]**. Du kan klicka på ikonen **[!UICONTROL View journeys]** för att visa en lista över resor som använder den här händelsen.
 
-1. Definiera schema- och nyttolastfälten: Här väljer du den händelseinformation (kallas vanligtvis nyttolast) som resor förväntar sig att ta emot. Du kan sedan använda den här informationen i din resa. Se [det här avsnittet](../event/about-creating.md#define-the-payload-fields).
+1. Definiera schema- och nyttolastfälten: Här väljer du den händelseinformation (kallas vanligtvis nyttolast) som ska tas emot. Du kan sedan använda den här informationen i din resa. Se [det här avsnittet](../event/about-creating.md#define-the-payload-fields).
 
    ![](assets/jo-event5.png)
 
@@ -70,11 +70,11 @@ Här följer de första stegen för att konfigurera en ny händelse:
    >
    >Den avancerade uttrycksredigeraren är inte tillgänglig när du definierar **[!UICONTROL Event ID condition]**. I den enkla uttrycksredigeraren är inte alla operatorer tillgängliga, de är beroende av datatypen. För en strängtyp av fält kan du till exempel använda &quot;contains&quot; eller &quot;equal to&quot;.
    >
-   >Om du ändrar schemat med nya uppräkningsvärden efter att du har skapat händelsen måste du följa de här stegen för att tillämpa ändringarna på den befintliga händelsen: avmarkera uppräkningsfältet från händelsefälten, bekräfta valet och markera sedan uppräkningsfältet igen. Det nya uppräkningsvärdet visas nu.
+   >Om du ändrar schemat med nya uppräkningsvärden efter att du har skapat händelsen måste du följa de här stegen för att tillämpa ändringarna på den befintliga händelsen: avmarkera uppräkningsfältet från händelsefälten, bekräfta valet och sedan markera uppräkningsfältet igen. Det nya uppräkningsvärdet visas nu.
 
 1. Lägg till en namnrymd. Det här steget är valfritt men rekommenderas eftersom du kan lägga till en namnrymd vilket innebär att du kan utnyttja information som lagras i realtidskundprofilen. Denna definierar vilken typ av nyckel händelsen har. Se [det här avsnittet](../event/about-creating.md#select-the-namespace).
 
-1. Definiera profilidentifieraren: Välj ett fält från dina nyttolastfält eller definiera en formel för att identifiera den person som är associerad med händelsen. Den här nyckeln konfigureras automatiskt (men kan fortfarande redigeras) om du väljer en namnrymd. Resor väljer nyckeln som ska motsvara namnutrymmet (om du till exempel väljer ett e-postnamnutrymme markeras e-postnyckeln). Se [det här avsnittet](../event/about-creating.md#define-the-event-key).
+1. Definiera profilidentifieraren: välj ett fält bland dina nyttolastfält eller definiera en formel för att identifiera den person som är associerad med händelsen. Den här nyckeln konfigureras automatiskt (men kan fortfarande redigeras) om du väljer en namnrymd. Resor väljer nyckeln som ska motsvara namnutrymmet (om du t.ex. väljer ett e-postnamnutrymme markeras e-postnyckeln). Se [det här avsnittet](../event/about-creating.md#define-the-event-key).
 
    ![](assets/jo-event7.png)
 
@@ -86,7 +86,7 @@ Här följer de första stegen för att konfigurera en ny händelse:
 
 Nyttolastdefinitionen gör att du kan välja vilken information systemet förväntar sig från händelsen under din resa och nyckeln för att identifiera vilken person som är associerad med händelsen. Nyttolasten baseras på Experience Cloud XDM-fältdefinitionen. Mer information om XDM finns i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}.
 
-1. Välj ett XDM-schema i listan och klicka på **[!UICONTROL Fields]** fält eller på **[!UICONTROL Edit]** ikon.
+1. Välj ett XDM-schema i listan och klicka på **[!UICONTROL Fields]** fält eller på **[!UICONTROL Edit]** -ikon.
 
    ![](assets/journey8.png)
 
@@ -117,11 +117,11 @@ Nyttolastdefinitionen gör att du kan välja vilken information systemet förvä
 >title="Identitetsnamnutrymme"
 >abstract="Välj nyckeln för att identifiera kundprofilen som är kopplad till händelsen."
 
-Med namnutrymmet kan du definiera vilken typ av nyckel som används för att identifiera den person som är associerad med händelsen. Dess konfiguration är valfri. Det krävs om du under dina resor vill hämta ytterligare information som kommer från [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}. Namnutrymmesdefinitionen behövs inte om du bara använder data från ett tredjepartssystem via en anpassad datakälla.
+Med namnutrymmet kan du definiera vilken typ av nyckel som används för att identifiera den person som är associerad med händelsen. Dess konfiguration är valfri. Det krävs om du under dina resor vill hämta ytterligare information från [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}. Namnutrymmesdefinitionen behövs inte om du bara använder data från ett tredjepartssystem via en anpassad datakälla.
 
 Du kan antingen använda en av de fördefinierade eller skapa en ny med hjälp av tjänsten Identity Namespace. Se [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=sv){target="_blank"}.
 
-Om du väljer ett schema som har en primär identitet **[!UICONTROL Profiler identifier]** och **[!UICONTROL Namespace]** fält är förifyllda. Om ingen identitet har definierats väljer vi _identityMap > id_ som primärnyckel. Sedan måste du välja ett namnutrymme och nyckeln är förfylld (under **[!UICONTROL Namespace]** fält) använda _identityMap > id_.
+Om du väljer ett schema som har en primär identitet **[!UICONTROL Profiler identifier]** och **[!UICONTROL Namespace]** fälten är förifyllda. Om ingen identitet har definierats väljer vi _identityMap > id_ som primärnyckel. Sedan måste du välja ett namnutrymme och nyckeln är förfylld (under **[!UICONTROL Namespace]** fält) använda _identityMap > id_.
 
 När du markerar fält taggas primära identitetsfält.
 
@@ -135,15 +135,15 @@ Endast ett namnutrymme tillåts per resa. Om du använder flera händelser under
 
 >[!NOTE]
 >
->Du kan bara välja ett personbaserat ID-namnutrymme. Om du har definierat ett namnutrymme för en uppslagstabell (till exempel: ProductID-namnområde för en produktsökning), är det inte tillgängligt i **Namnutrymme** listruta.
+>Du kan bara välja ett personbaserat ID-namnutrymme. Om du har definierat ett namnutrymme för en uppslagstabell (till exempel: ProductID-namnutrymme för en produktsökning), är det inte tillgängligt i **Namnutrymme** listruta.
 
 ## Definiera profilidentifieraren {#define-the-event-key}
 
-Nyckeln är fältet, eller kombinationen av fält, som är en del av händelsenyttolastdata och som gör att systemet kan identifiera den person som är associerad med händelsen. Nyckeln kan till exempel vara Experience Cloud-ID, ett CRM-ID eller en e-postadress.
+Nyckeln är fältet, eller kombinationen av fält, som är en del av händelsenyttolastdata och som gör att systemet kan identifiera den person som är associerad med händelsen. Nyckeln kan till exempel vara Experience Cloud ID, ett CRM ID eller en e-postadress.
 
 Om du vill använda data som lagras i kundprofildatabasen för Adobe i realtid måste händelsenyckeln vara den information som du har definierat som en profils identitet i [Kundprofiltjänst i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}.
 
-Profilidentifieraren gör det möjligt för systemet att utföra avstämningen mellan händelsen och personens profil. Om du väljer ett schema som har en primär identitet **[!UICONTROL Profile identifier]** och **[!UICONTROL Namespace]** fält är förifyllda. Om ingen identitet är definierad _identityMap > id_ är primärnyckeln. Sedan måste du markera ett namnutrymme och nyckeln fylls i automatiskt med _identityMap > id_.
+Profilidentifieraren gör det möjligt för systemet att utföra avstämningen mellan händelsen och personens profil. Om du väljer ett schema som har en primär identitet **[!UICONTROL Profile identifier]** och **[!UICONTROL Namespace]** fälten är förifyllda. Om ingen identitet är definierad _identityMap > id_ är primärnyckeln. Sedan måste du markera ett namnutrymme och nyckeln fylls i automatiskt med _identityMap > id_.
 
 När du markerar fält taggas primära identitetsfält.
 
@@ -155,7 +155,7 @@ Om du behöver använda en annan nyckel, t.ex. ett CRM-ID eller en e-postadress,
 
    ![](assets/journey16.png)
 
-1. Välj det fält som valts som nyckel i listan över nyttolastfält. Du kan också växla till den avancerade uttrycksredigeraren för att skapa mer komplexa nycklar (till exempel en sammanfogning av två fält för händelserna).
+1. Välj det fält som valts som nyckel i listan över nyttolastfält. Du kan också växla till den avancerade uttrycksredigeraren för att skapa mer komplexa nycklar (till exempel en sammanfogning av två fält med händelserna).
 
    ![](assets/journey20.png)
 
@@ -166,7 +166,7 @@ Du har även tillgång till de avancerade uttrycksfunktionerna (**[!UICONTROL Ad
 
 ## Förhandsgranska nyttolasten {#preview-the-payload}
 
-Med nyttolastförhandsvisningen kan du validera nyttolastdefinitionen.
+Med nyttolastens förhandsgranskning kan du validera nyttolastdefinitionen.
 
 >[!NOTE]
 >
@@ -182,4 +182,4 @@ Med nyttolastförhandsvisningen kan du validera nyttolastdefinitionen.
 
 1. Kontrollera förhandsgranskningen för att validera nyttolastdefinitionen.
 
-1. Sedan kan du dela nyttolastförhandsvisningen med den person som ansvarar för händelsen som skickar. Den här nyttolasten kan hjälpa dem att utforma konfigurationen av en händelse som [!DNL Journey Optimizer]. Läs [den här sidan](../event/additional-steps-to-send-events-to-journey.md).
+1. Sedan kan du dela nyttolastförhandsvisningen med den person som ansvarar för händelsen som skickar. Denna nyttolast kan hjälpa dem att utforma konfigurationen av en händelse som [!DNL Journey Optimizer]. Läs [den här sidan](../event/additional-steps-to-send-events-to-journey.md).

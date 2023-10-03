@@ -1,6 +1,6 @@
 ---
-title: Bibliotek för arrayfunktioner
-description: Bibliotek för arrayfunktioner
+title: Arrayfunktioner, bibliotek
+description: Arrayfunktioner, bibliotek
 feature: Personalization
 topic: Personalization
 role: Data Engineer
@@ -101,7 +101,7 @@ The `head` -funktionen används för att returnera det första objektet i en arr
 
 **Exempel**
 
-Följande åtgärd returnerar den första av de fem främsta beställningarna med det högsta priset. Mer information om `topN` finns i [först `n` i array](#first-n) -avsnitt.
+Följande åtgärd returnerar den första av de fem främsta beställningarna med det högsta priset. Mer information om `topN` -funktionen finns i [först `n` i array](#first-n) -avsnitt.
 
 ```sql
 {%= head(topN(orders,price, 5)) %}
@@ -119,7 +119,7 @@ The `topN` -funktionen används för att returnera den första `N` objekt i en a
 
 | Argument | Beskrivning |
 | --------- | ----------- |
-| `{ARRAY}` | Arrayen eller listan som ska sorteras. |
+| `{ARRAY}` | Den array eller lista som ska sorteras. |
 | `{VALUE}` | Den egenskap som arrayen eller listan ska sorteras i. |
 | `{AMOUNT}` | Antalet artiklar som ska returneras. |
 
@@ -161,7 +161,7 @@ The `includes` används för att avgöra om en array eller lista innehåller ett
 
 **Exempel**
 
-Följande åtgärd definierar personer vars favoritfärg är röd.
+Följande åtgärd definierar personer vars favoritfärg innehåller rött.
 
 ```sql
 {%= includes(person.favoriteColors,"red") %}
@@ -205,7 +205,7 @@ intersection(person1.favoriteColors,person2.favoriteColors) = ["red", "blue", "g
 ```
 -->
 
-## Sista `n` i array{#last-n}
+## Senaste `n` i array{#last-n}
 
 The `bottomN` -funktionen används för att returnera den sista `N` objekt i en array, när de sorteras i stigande ordning baserat på det givna numeriska uttrycket.
 
@@ -217,7 +217,7 @@ The `bottomN` -funktionen används för att returnera den sista `N` objekt i en 
 
 | Argument | Beskrivning |
 | --------- | ----------- | 
-| `{ARRAY}` | Arrayen eller listan som ska sorteras. |
+| `{ARRAY}` | Den array eller lista som ska sorteras. |
 | `{VALUE}` | Den egenskap som arrayen eller listan ska sorteras i. |
 | `{AMOUNT}` | Antalet artiklar som ska returneras. |
 

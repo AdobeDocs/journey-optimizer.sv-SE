@@ -19,7 +19,7 @@ Lär dig hur du använder matematiska funktioner i uttrycksredigeraren.
 
 ## Absolut {#absolute}
 
-The `absolute` -funktionen används för att konvertera ett tal som det är absolut värde för.
+The `absolute` -funktionen används för att konvertera ett tal som är absolut värde.
 
 **Syntax**
 
@@ -51,7 +51,7 @@ Den här frågan returnerar en formaterad sträng på arabiska som motsvarar 123
 
 ## Random {#random}
 
-The `random` -funktionen används för att returnera ett slumpmässigt värde mellan 0 och 1.
+The `random` används för att returnera ett slumpmässigt värde mellan 0 och 1.
 
 **Syntax**
 
@@ -91,7 +91,7 @@ The `toHexString` funktionen konverterar alla tal till sin hexadecimala sträng.
 
 **Exempel**
 
-Den här frågan returnerar det hexadecimala värdet 158, dvs 9e.
+Frågan returnerar det hexadecimala värdet 158, dvs 9e.
 
 ```sql
 {%= toHexString(158) %}

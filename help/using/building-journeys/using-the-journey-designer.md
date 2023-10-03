@@ -25,7 +25,7 @@ ht-degree: 1%
 
 Adobe Journey Optimizer har en flerkanalig orkestreringsyta som gör att marknadsförarna kan harmonisera marknadsföringen med ett-till-ett-kundengagemang. Med användargränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan för att skapa din resa. Observera att du även kan dubbelklicka på en aktivitet för att lägga till den på arbetsytan i nästa tillgängliga steg.
 
-Händelser, samordning och åtgärder har en särskild roll och plats i processen. Aktiviteterna är sekventiella: När en aktivitet är klar fortsätter flödet och bearbetar nästa aktivitet och så vidare.
+Händelser, samordning och åtgärder har en särskild roll och plats i processen. Aktiviteterna är sekvenserade: när en aktivitet är klar fortsätter flödet och bearbetar nästa aktivitet, och så vidare.
 
 ## Kom igång med resedesign {#gs-journey-design}
 
@@ -37,9 +37,9 @@ När du påbörjar en ny resa döljs element som inte kan släppas på arbetsyta
 
 The **[!UICONTROL Filter items]** -ikonen i det övre vänstra hörnet kan du visa följande filter:
 
-* **Visa endast tillgängliga objekt**: dölja eller visa otillgängliga element på paletten, t.ex. händelser som använder ett annat namnutrymme än de som används under din resa. Som standard är otillgängliga objekt dolda. Om du väljer att visa dem visas de som nedtonade.
+* **Visa endast tillgängliga objekt**: dölj eller visa otillgängliga element på paletten, t.ex. händelser som använder ett annat namnutrymme än de som används under din resa. Som standard är otillgängliga objekt dolda. Om du väljer att visa dem visas de som nedtonade.
 
-* **Visa endast senaste objekt**: Med det här filtret kan du bara visa de fem senast använda händelserna och åtgärderna, förutom de som är färdiga. Detta är specifikt för varje användare. Som standard visas alla objekt.
+* **Visa endast senaste objekt**: det här filtret gör att du bara kan visa de fem senast använda händelserna och åtgärderna, förutom de som är färdiga. Detta är specifikt för varje användare. Som standard visas alla objekt.
 
 Du kan också använda **[!UICONTROL Search]** fält. Endast händelser och åtgärder filtreras.
 
@@ -53,9 +53,9 @@ The **verktygsfält**, som finns i det övre högra hörnet av arbetsytan, gör 
 
 ![](assets/toolbar.png){width="70%" align="left"}
 
-The **aktivitetskonfigurationsruta** visas när du klickar på en aktivitet på paletten. Fyll i de obligatoriska fälten. Klicka på **[!UICONTROL Delete]** -ikonen för att ta bort aktiviteten. Klicka **[!UICONTROL Cancel]** för att avbryta ändringarna eller **[!UICONTROL Ok]** för att bekräfta. Om du vill ta bort aktiviteter kan du även markera en aktivitet (eller flera) och trycka på backstegstangenten. Om du trycker på Esc stängs aktivitetskonfigurationsrutan.
+The **aktivitetskonfigurationsruta** visas när du klickar på en aktivitet på paletten. Fyll i obligatoriska fält. Klicka på **[!UICONTROL Delete]** -ikonen för att ta bort aktiviteten. Klicka **[!UICONTROL Cancel]** för att avbryta ändringarna eller **[!UICONTROL Ok]** för att bekräfta. Om du vill ta bort aktiviteter kan du även markera en aktivitet (eller flera) och trycka på backstegstangenten. Om du trycker på Esc-tangenten stängs aktivitetskonfigurationsrutan.
 
-Som standard är skrivskyddade fält dolda. Om du vill visa skrivskyddade fält klickar du på **Visa skrivskyddade fält** ikonen längst upp till vänster i aktivitetskonfigurationsrutan. Denna inställning gäller alla aktiviteter på alla resor.
+Som standard är skrivskyddade fält dolda. Om du vill visa skrivskyddade fält klickar du på **Visa skrivskyddade fält** ikonen längst upp till vänster i aktivitetskonfigurationsrutan. Denna inställning gäller för alla aktiviteter på alla resor.
 
 ![](assets/journey59bis.png)
 
@@ -63,13 +63,13 @@ Beroende på resans status kan du utföra olika åtgärder under resan med hjäl
 
 ![](assets/journey41.png)
 
-## Påbörja resan {#start-your-journey}
+## Påbörja din resa {#start-your-journey}
 
 När du utformar din resa är den första frågan du vill ställa hur profiler kommer in på resan. Det finns två möjligheter:
 
 1. **Börja med en händelse**: när en resa är inställd på att avlyssna händelser, kommer individer in på resan **unitärt** i realtid. Meddelanden som ingår i din resa skickas till den person som för tillfället är på väg in på resan. [Läs mer om evenemang](../event/about-events.md)
 
-1. **Börja med en läspublik**: kan ni sätta er resa för att lyssna på Adobe Experience Platform målgrupper. I detta fall kommer alla personer som tillhör den angivna målgruppen in på resan. Meddelanden som ingår i din resa skickas till personer som tillhör målgruppen. Läs mer om [läs målgrupp](read-audience.md).
+1. **Börja med en läspublik**: ni kan göra er resa för att lyssna på Adobe Experience Platform målgrupper. I det här fallet kommer alla personer som tillhör den angivna målgruppen in på resan. Meddelanden som ingår i din resa skickas till personer som tillhör målgruppen. Läs mer om [läs målgrupp](read-audience.md).
 
 ## Definiera nästa steg{#define-next-steps}
 
@@ -79,7 +79,7 @@ Efter din första händelse eller Läs publiker kan du kombinera de olika aktivi
 
 Det är händelser som utlöser en personaliserad resa, till exempel ett onlineköp. När någon väl går in på en resa förflyttas de som en individ, och inga två personer följer med på samma hastighet eller längs samma väg.
 
-När du påbörjar din resa med en händelse aktiveras resan när händelsen tas emot. Varje person på resan följer sedan, individuellt, de steg som definieras på din resa.
+När du påbörjar en resa med en händelse aktiveras resan när händelsen tas emot. Varje person på resan följer sedan, individuellt, de steg som definieras på din resa.
 
 Du kan lägga till **flera händelser** under resan, så länge de använder samma namnutrymme. Händelser konfigureras i förväg. [Läs mer om reseevenemang](about-journey-activities.md#event-activities)
 
@@ -115,7 +115,7 @@ Med olika aktiviteter (händelse, åtgärd, vänta) kan du lägga till flera sö
 
 När du lyssnar på en händelse rekommenderar vi att du inte väntar på händelsen i oändlighet. Det är inte obligatoriskt, bara en god praxis. Om du bara vill lyssna på en eller flera händelser under en viss tid, placerar du en eller flera händelser och en vänteaktivitet parallellt. Se [det här avsnittet](../building-journeys/general-events.md#events-specific-time).
 
-Om du vill ta bort banan placerar du markören på den och klickar på **[!UICONTROL Delete path]** ikon.
+Om du vill ta bort banan placerar du markören på den och klickar på **[!UICONTROL Delete path]** -ikon.
 
 ![](assets/journey42ter.png)
 
@@ -132,14 +132,14 @@ Du kan kopiera en eller flera aktiviteter under en resa och klistra in dem antin
 * Du kan kopiera/klistra in mellan olika flikar och webbläsare. Du kan bara kopiera/klistra in aktiviteter i samma instans.
 * Du kan inte kopiera/klistra in en händelse om målresan innehåller en händelse som använder ett annat namnutrymme.
 * Inklistrade aktiviteter kan referera till data som inte finns i målresan, till exempel om du kopierar/klistrar in mellan olika sandlådor. Sök alltid efter fel och gör nödvändiga justeringar.
-* Tänk på att du inte kan ångra en åtgärd. Om du vill ta bort inklistrade aktiviteter måste du markera och ta bort dem. Se därför till att du bara väljer de aktiviteter du behöver innan du kopierar dem.
+* Observera att du inte kan ångra en åtgärd. Om du vill ta bort inklistrade aktiviteter måste du markera och ta bort dem. Se därför till att du bara väljer de aktiviteter du behöver innan du kopierar dem.
 * Du kan kopiera aktiviteter från vilken resa som helst, även de som är skrivskyddade.
 * Du kan välja vilken aktivitet som helst, även en aktivitet som inte är länkad. Länkade aktiviteter förblir länkade när de har klistrats in.
 
 Så här kopierar/klistrar du in aktiviteter:
 
 1. Öppna en resa.
-1. Välj de aktiviteter du vill kopiera genom att flytta musen medan du klickar. Du kan också klicka på varje aktivitet samtidigt som du trycker på **Ctrl/Kommando** nyckel. Använd **Ctrl/Kommando + A** om du vill markera alla aktiviteter.
+1. Välj de aktiviteter du vill kopiera genom att flytta musen medan du klickar. Du kan också klicka på varje aktivitet samtidigt som du trycker på **Ctrl/Kommando** -tangenten. Använd **Ctrl/Kommando + A** om du vill markera alla aktiviteter.
    ![](assets/copy-paste1.png)
 1. Tryck **Ctrl/Kommando + C**.
 Om du bara vill kopiera en aktivitet kan du klicka på den och använda **Kopiera** ikonen i det övre vänstra hörnet i aktivitetskonfigurationsfönstret.

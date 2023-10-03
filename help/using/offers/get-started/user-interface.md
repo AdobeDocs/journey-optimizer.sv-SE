@@ -22,10 +22,10 @@ Använd **[!UICONTROL Offers]** -meny för att hantera och leverera erbjudanden:
 
 ![](../assets/offers_menu.png)
 
-* **[!UICONTROL Overview]**: Ny på [!DNL decision management]? Följ stegen på skärmen för att komma igång med att konfigurera ersättningar, erbjudanden och samlingar. När du redan är bekant med [!DNL decision management], får du en översikt över dina senaste erbjudanden, samlingar och beslut. [Läs mer](#overview)
-* **[!UICONTROL Offers]**: Skapa och få tillgång till era personaliserade erbjudanden och reserverbjudanden. Lär dig hur du skapar [erbjudanden](../offer-library/creating-personalized-offers.md) och [reserverbjudanden](../offer-library/creating-fallback-offers.md)
+* **[!UICONTROL Overview]**: Ny på [!DNL decision management]? Följ stegen på skärmen för att komma igång med att konfigurera ersättningar, erbjudanden och samlingar. När du redan känner till [!DNL decision management], får du en översikt över dina senaste erbjudanden, samlingar och beslut. [Läs mer](#overview)
+* **[!UICONTROL Offers]**: Skapa och få tillgång till personliga erbjudanden och reserverbjudanden. Lär dig hur du skapar [erbjudanden](../offer-library/creating-personalized-offers.md) och [reserverbjudanden](../offer-library/creating-fallback-offers.md)
 * **[!UICONTROL Collections]**: Ordna era erbjudanden i statiska och dynamiska samlingar. [Läs mer](../offer-library/creating-collections.md)
-* **[!UICONTROL Decisions]**: Skapa och hantera beslut för att leverera era erbjudanden. [Läs mer](../offer-activities/create-offer-activities.md)
+* **[!UICONTROL Decisions]**: Skapa och hantera beslut för att leverera erbjudanden. [Läs mer](../offer-activities/create-offer-activities.md)
 * **[!UICONTROL Batch decisioning]**: Leverera offertbeslut till alla profiler inom en viss Adobe Experience Platform-målgrupp. [Läs mer](../batch-delivery.md)
 * **[!UICONTROL Simulation]**: Validera din beslutslogik genom att simulera vilka erbjudanden som ska levereras till en testprofil för en viss placering. [Läs mer](../offer-activities/simulation.md)
 
@@ -34,8 +34,8 @@ Använd **[!UICONTROL Components]** meny för att skapa och hantera komponenter 
 ![](../assets/offer_activities.png)
 
 * **[!UICONTROL Placements]**: Skapa och hantera praktik där era erbjudanden visas. [Läs mer](../offer-library/creating-placements.md)
-* **[!UICONTROL Collection qualifiers]**: Skapa och hantera samlingskvalificerare (tidigare kallade taggar) för att ordna och filtrera dina erbjudanden. [Läs mer](../offer-library/creating-tags.md)
-* **[!UICONTROL Rules]**: Hantera villkoren för hur era erbjudanden presenteras. [Läs mer](../offer-library/creating-decision-rules.md)
+* **[!UICONTROL Collection qualifiers]**: Skapa och hantera samlingskvalificerare (kallas tidigare taggar) för att ordna och filtrera dina erbjudanden. [Läs mer](../offer-library/creating-tags.md)
+* **[!UICONTROL Rules]**: Hantera villkoren för hur dina erbjudanden presenteras. [Läs mer](../offer-library/creating-decision-rules.md)
 * **[!UICONTROL Ranking]**: Skapa och hantera rankningsformler för att avgöra vilket erbjudande som ska presenteras först för en viss placering. [Läs mer](../ranking/create-ranking-formulas.md)
 
 >[!NOTE]
@@ -68,7 +68,7 @@ Använd **sökfält** för att hitta ett specifikt objekt.
 
 ## Anpassa visad information {#customize-displayed-information}
 
-Listor från beslutshanteringsmenyer kan anpassas med konfigurationsknappen högst upp till höger i listorna.
+Listor från beslutshanteringsmenyer kan anpassas med hjälp av konfigurationsknappen högst upp till höger i listorna.
 
 På så sätt kan du välja vilken information som ska visas efter dina behov.
 

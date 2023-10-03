@@ -19,7 +19,7 @@ Med Beslutshantering kan ni skapa och leverera personaliserade erbjudandeuppleve
 
 Du kan skapa och leverera erbjudanden genom att göra en förfrågan till POSTEN [!DNL Decisioning] API.
 
-Den här självstudiekursen kräver en fungerande förståelse av API:er, särskilt när det gäller beslutshantering. Mer information finns i [Utvecklarhandbok för API för beslutshantering](../getting-started.md). Den här självstudien kräver också att du har ett unikt placerings-ID och värde för besluts-ID tillgängligt. Om du inte har fått dessa värden kan du gå till självstudiekurserna för [skapa en placering](../offers-api/placements/create.md) och [skapa ett beslut](../activities-api/activities/create.md).
+Den här självstudiekursen kräver en fungerande förståelse av API:er, särskilt när det gäller beslutshantering. Mer information finns i [Utvecklarhandbok för API för beslutshantering](../getting-started.md). Den här självstudien kräver också att du har ett unikt värde för placering-ID och beslut-ID tillgängligt. Om du inte har fått dessa värden kan du gå till självstudiekurserna för [skapa en placering](../offers-api/placements/create.md) och [skapa ett beslut](../activities-api/activities/create.md).
 
 ➡️  [Upptäck den här funktionen i en video](#video)
 
@@ -110,7 +110,7 @@ curl -X POST \
 | `xdm:propositionRequests.xdm:placementId` | Den unika placeringsidentifieraren. | `"xdm:placementId": "xcore:offer-placement:ffed0456"` |
 | `xdm:propositionRequests.xdm:activityId` | Den unika beslutsidentifieraren. | `"xdm:activityId": "xcore:offer-activity:ffed0123"` |
 | `xdm:itemCount` | Antalet erbjudanden som ska returneras. Det högsta antalet är 30. | `"xdm:itemCount": 2` |
-| `xdm:profiles` | Det här objektet innehåller information om profilen som beslutet begärs för. För en API-begäran innehåller detta en profil. |
+| `xdm:profiles` | Det här objektet innehåller information om den profil som beslutet begärs för. För en API-begäran innehåller detta en profil. |
 | `xdm:profiles.xdm:identityMap` | Det här objektet innehåller en uppsättning slutanvändaridentiteter baserat på ID:ts namnutrymmesintegrationskod. Identitetskartan kan innehålla mer än en identitet för varje namnutrymme. Mer information om namnutrymmen finns i [den här sidan](../../../audience/get-started-identity.md). | `Email: [{"xdm:id": "123@abc.com"}]` |
 | `xdm:profiles.xdm:decisionRequestId` | Det ID som genereras av klienten som kan användas för att unikt identifiera en profilbeslutsbegäran. Detta ID återkommer i svaret och påverkar inte resultatet av beslutet. | `"xdm:decisionRequestId": "0AA00002-0000-1224-c0de-cjf98Csj43"` |
 | `xdm:allowDuplicatePropositions` | Det här objektet är kontrollstrukturen för reglerna för borttagning av dubbletter. Det består av en serie flaggor som anger om samma alternativ kan föreslås i en viss dimension. En flagga som är inställd på true innebär att dubbletter tillåts och ska inte tas bort i den kategori som flaggan anger. En flagga som är inställd på false innebär att beslutsmotorn inte ska göra samma förslag över dimensionen och i stället välja nästa bästa alternativ för ett av delbesluten. |
@@ -183,10 +183,10 @@ Ett lyckat svar returnerar information om ditt förslag, inklusive dess unika `x
 | Egenskap | Beskrivning | Exempel |
 | -------- | ----------- | ------- |
 | `xdm:propositionId` | Den unika identifieraren för den förslagsenhet som är associerad med en XDM DecisionEvent. | `"xdm:propositionId": "5d0ffb5e-dfc6-4280-99b6-0bf3131cb8b8"` |
-| `xdm:propositions` | Det här objektet innehåller ett enda beslutsförslag. Flera alternativ kan returneras för beslutet. Om inga alternativ hittas returneras beslutets reserverbjudande. Enstaka beslutsförslag innehåller alltid antingen `options` egenskap eller `fallback` -egenskap. Om det finns en `options` får inte vara tom. |
+| `xdm:propositions` | Det här objektet innehåller ett enda beslutsförslag. Flera alternativ kan returneras för beslutet. Om inga alternativ hittas returneras beslutets reserverbjudande. Enstaka beslutsförslag innehåller alltid antingen `options` egenskap eller en `fallback` -egenskap. Om det finns en `options` -egenskapen får inte vara tom. |
 | `xdm:propositions.xdm:activity` | Det här objektet innehåller den unika identifieraren för ett beslut. | `"xdm:id": "xcore:activity:ffed0123"` |
 | `xdm:propositions.xdm:placement` | Det här objektet innehåller den unika identifieraren för en offertplacering. | `"xdm:id": "xcore:placement:ffed0456"` |
-| `xdm:propositions.xdm:options` | Det här objektet innehåller ett enda alternativ, inklusive dess unika identifierare. Om det finns kan objektet inte vara tomt. | `xdm:id": "xcore:personalized-option:ccc0111` |
+| `xdm:propositions.xdm:options` | Det här objektet innehåller ett enda alternativ, inklusive dess unika identifierare. Om det finns något kan det här objektet inte vara tomt. | `xdm:id": "xcore:personalized-option:ccc0111` |
 | `xdm:propositions.xdm:options.@type` | Definierar komponenttypen. `@type` fungerar som bearbetningsavtal för kunden. När upplevelsen är sammanställd söker dispositionen efter de komponenter som har en viss typ. | `https://ns.adobe.com/experience/offer-management/content-component-imagelink` |
 | `xdm:propositions.xdm:content` | Svarsinnehållets format. | Svarsinnehållet kan vara: `text`, `html block`, eller `image link` |
 | `xdm:score` | Poängen för ett alternativ som beräknas som ett resultat av en rangordningsfunktion som är kopplad till alternativet eller beslutet. Detta fält returneras av API:t om en rangordningsfunktion är involverad i att fastställa poängen för ett erbjudande under rangordningen. | `"xdm:score": 45.65` |
@@ -204,12 +204,12 @@ Tabellen nedan visar alla koder som kan returneras i svaret:
 | 200 | Lyckades. Beslut har fattats om vissa verksamheter |
 | 400 | Ogiltig begärandeparameter. Servern kan inte tolka begäran på grund av felaktig syntax. |
 | 403 | Otillåten, otillräcklig behörighet. |
-| 422 | Enhet som inte kan bearbetas. Syntaxen för begäran är korrekt, men på grund av semantiska fel kan den inte behandlas. |
+| 422 | Obearbetbar entitet. Syntaxen för begäran är korrekt, men på grund av semantiska fel kan den inte behandlas. |
 | 429 | För många förfrågningar. Användaren har skickat för många begäranden under en viss tid. |
 | 500 | Internt serverfel. Servern påträffade ett oväntat tillstånd som gjorde att den inte kunde slutföra begäran. |
 | 503 | Tjänsten är inte tillgänglig på grund av serveröverbelastning. Servern kan för närvarande inte hantera begäran på grund av en tillfällig överbelastning. |
 
-## Videokurs {#video}
+## Självstudievideo {#video}
 
 Följande video är avsedd att ge stöd för din förståelse av komponenterna i Beslutshantering.
 

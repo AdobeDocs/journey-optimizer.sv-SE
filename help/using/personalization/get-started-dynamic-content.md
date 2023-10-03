@@ -25,7 +25,7 @@ ht-degree: 0%
 
 Med dynamiskt innehåll kan ni anpassa innehållet i era meddelanden baserat på **villkorliga regler** som kan bestå av profilattribut, sammanhangsberoende händelser eller målgrupper. Villkorliga regler skapas med en visuell regelbyggare i uttrycksredigeraren, där du kan lagra dem för ytterligare återanvändning under resor och kampanjer.
 
-Villkorliga regler kan användas i e-postdesignern och uttrycksredigeraren för att **skapa dynamiskt innehåll** som anpassar sig till de profiler som ni riktar er till.
+Villkorliga regler kan användas i e-postdesignern och uttrycksredigeraren för att **skapa dynamiskt innehåll** som anpassar sig till de profiler som ni riktar er till i era meddelanden.
 
 ![](assets/conditions-overview.png)
 

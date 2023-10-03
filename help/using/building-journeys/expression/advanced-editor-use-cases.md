@@ -84,17 +84,17 @@ Det här uttrycket returnerar ett booleskt värde.
 
 * Och ange SKU med funktionen `first` för att hämta den senaste&quot;addToCart&quot;-interaktionen:
 
-   ```json
-       #{ExperiencePlatformDataSource
-                       .ExperienceEventFieldGroup
-                       .experienceevent
-                       .first(
-                       currentDataPackField
-                       .productData
-                       .productInteraction == "addToCart"
-                       )
-                       .SKU}
-   ```
+  ```json
+      #{ExperiencePlatformDataSource
+                      .ExperienceEventFieldGroup
+                      .experienceevent
+                      .first(
+                      currentDataPackField
+                      .productData
+                      .productInteraction == "addToCart"
+                      )
+                      .SKU}
+  ```
 
 Därifrån kan ni lägga till ytterligare en väg på resan när produkten inte finns i butik och skicka meddelanden med engagemangserbjudandet. Konfigurera meddelandena därefter och använd personaliseringsdata för att förbättra meddelandets mål.
 
@@ -112,7 +112,7 @@ Detta villkor hämtar endast geofence-händelser som utlöses i&quot;Arlington&q
                     .name} == "Arlington"
 ```
 
-Förklaring: Det här är en strikt strängjämförelse (skiftlägeskänslig), som motsvarar en fråga i enkelt läge som använder `equal to` med `Is sensitive` markerad.
+Förklaring: Detta är en strikt strängjämförelse (skiftlägeskänslig), som motsvarar en fråga i enkelt läge som använder `equal to` med `Is sensitive` markerad.
 
 Samma fråga med `Is sensitive` om du inte markerar det här alternativet genereras följande uttryck i avancerat läge:
 
@@ -145,6 +145,6 @@ substr(
 )
 ```
 
-Förklaring: Det här exemplet använder `substr` och `lastIndexOf` funktioner för att ta bort klammerparenteser som omger det CRM-ID som skickas med en starthändelse för mobilappar.
+Förklaring: I det här exemplet används `substr` och `lastIndexOf` funktioner för att ta bort klammerparenteser som omger det CRM-ID som skickas med en starthändelse för mobilappar.
 
 Mer information om hur du använder den avancerade uttrycksredigeraren finns i [den här videon](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/introduction-to-building-a-journey.html).

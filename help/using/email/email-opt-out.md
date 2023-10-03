@@ -48,7 +48,7 @@ Du måste först lägga till en länk för att avbryta prenumerationen i ett med
 
    ![](assets/opt-out-insert-link.png)
 
-1. Välj **[!UICONTROL External Opt-out/Unsubscription]** från **[!UICONTROL Link type]** nedrullningsbar lista.
+1. Välj **[!UICONTROL External Opt-out/Unsubscription]** från **[!UICONTROL Link type]** listruta.
 
    ![](assets/opt-out-link-type.png)
 
@@ -62,13 +62,13 @@ Du måste först lägga till en länk för att avbryta prenumerationen i ett med
 
 Om du vill att mottagarna ska avanmäla sig när de skickar in sitt val från landningssidan måste du implementera en **Prenumerations-API-anrop** via [Adobe Developer](https://developer.adobe.com){target="_blank"} om du vill uppdatera motsvarande profilers inställningar.
 
-Det här anropet till POSTEN är som följer:
+Det här anropet till POSTEN är följande:
 
 Slutpunkt: https://platform.adobe.io/journey/imp/consent/preferences
 
 Frågeparametrar:
 
-* **parametrar**: innehåller den krypterade nyttolasten
+* **parametrar**: innehåller krypterad nyttolast
 * **pid**: krypterat profil-ID
 
 Dessa tre parametrar kommer att ingå i den URL till landningssidan som skickas till mottagaren:
@@ -141,12 +141,12 @@ Följ stegen nedan om du vill lägga till en länk för att avanmäla dig i ditt
 
    Du kan anpassa länkarna. Läs mer om personaliserade URL:er i [det här avsnittet](../personalization/personalization-syntax.md).
 
-1. Välj hur du vill använda avanmälningen: på kanal-, identitet- eller prenumerationsnivå.
+1. Välj hur du vill använda avanmälningen: på kanal-, identitets- eller prenumerationsnivå.
 
    ![](assets/message-tracking-opt-out-level.png)
 
-   * **[!UICONTROL Channel]**: Avanmälningen gäller för framtida meddelanden som skickas till profilens mål (dvs. e-postadress) för den aktuella kanalen. Om flera mål är kopplade till en profil gäller avanmälan alla mål (t.ex. e-postadresser) i profilen för den kanalen.
-   * **[!UICONTROL Identity]**: Avanmälningen gäller för framtida meddelanden som skickas till det specifika målet (dvs. e-postadressen) som används för det aktuella meddelandet.
+   * **[!UICONTROL Channel]**: Avanmälan gäller för framtida meddelanden som skickas till profilens mål (dvs. e-postadress) för den aktuella kanalen. Om flera mål är kopplade till en profil gäller avanmälan alla mål (t.ex. e-postadresser) i profilen för den kanalen.
+   * **[!UICONTROL Identity]**: Avanmälan gäller för framtida meddelanden som skickas till det specifika målet (dvs. e-postadressen) som används för det aktuella meddelandet.
    * **[!UICONTROL Subscription]**: Avanmälningen gäller för framtida meddelanden som är kopplade till en viss prenumerationslista. Det här alternativet kan bara väljas om det aktuella meddelandet är kopplat till en prenumerationslista.
 
 1. Spara ändringarna.
@@ -163,7 +163,7 @@ När ditt meddelande har skickats via en [resa](../building-journeys/journey.md)
 
 Om [Alternativet List-Unsubscribe](../configuration/channel-surfaces.md#list-unsubscribe) är aktiverat på kanalytnivå, motsvarande e-postmeddelanden som skickas med [!DNL Journey Optimizer] kommer att innehålla en länk för att avbryta prenumerationen i e-posthuvudet.
 
-Länken för att avbryta prenumerationen visas så här i Gmail:
+Länken för att avbryta prenumerationen ser till exempel ut så här i Gmail:
 
 ![](assets/unsubscribe-header.png)
 
@@ -181,8 +181,8 @@ Beroende på e-postklienten kan du klicka på länken för att avbryta prenumera
 
 * Mottagaren dirigeras till den URL för landningssidan som du angav när du lade till länken för avanmälan i meddelandet.
 
-   >[!NOTE]
-   >
-   >Om du inte lägger till en länk för avanmälan med ett enda klick i ditt meddelandeinnehåll visas ingen startsida.
+  >[!NOTE]
+  >
+  >Om du inte lägger till en länk för avanmälan med ett enda klick i ditt meddelandeinnehåll visas ingen startsida.
 
 * Motsvarande profil väljs omedelbart och det här alternativet uppdateras i Experience Platform. Läs mer i [Experience Platform dokumentation](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.

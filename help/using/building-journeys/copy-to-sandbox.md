@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Kopiera en resa till en annan sandlåda
-description: Lär dig hur du kopierar en resa till en annan sandlåda
+description: Lär dig kopiera en resa till en annan sandlåda
 feature: Journeys
 topic: Content Management
 role: User, Developer
@@ -70,7 +70,7 @@ Så här kopierar du en resa till en annan sandlåda:
 
    ![](assets/copy-sandbox4.png)
 
-6. När kopieringen är klar klickar du på **Stäng**.
+6. När kopieringen är klar klickar du **Stäng**.
 
 7. Få åtkomst till målsandlådan och kontrollera alla kopierade objekt noggrant.
 

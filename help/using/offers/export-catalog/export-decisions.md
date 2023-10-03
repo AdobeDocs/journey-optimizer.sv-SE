@@ -25,7 +25,7 @@ Den senaste lyckade batchen i datauppsättningen visas till höger. Den hierarki
 >
 >Lär dig hur du får åtkomst till exporterade datauppsättningar för varje objekt i ditt Erbjudandebibliotek i [det här avsnittet](../export-catalog/access-dataset.md).
 
-Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Object Repository - Decisions]** datauppsättning (kallades tidigare&quot;Decision Object Repository - Activities&quot;).
+Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Object Repository - Decisions]** datauppsättning (kallades tidigare&quot;beslutsdatabas - aktiviteter&quot;).
 
 <!--A decision (formerly known as offer decision) is used to control the decisioning process. It specifies the filter applied to the total inventory to narrow down offers by topic/category, the placement to narrow down the inventory to those offers that technically fit into the reserved space for the offer and specifies a fallback option should the combined constraints disqualify all available personalization offers.-->
 
@@ -129,7 +129,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 **Fält:** profileConstraints
 **Titel:** Profilbegränsning
-**Beskrivning:** Profilbegränsningen avgör om ett alternativ är tillgängligt för den här profilidentiteten just nu, i det här sammanhanget. Om profilbegränsningen inte behöver ta hänsyn till värdena för varje alternativ, d.v.s. det är en skillnad mellan alternativen från alternativmarkeringen, avbryts hela alternativmarkeringen av profilbegränsningen som utvärderas till &quot;false&quot;. Å andra sidan utvärderas en profilbegränsningsregel som tar ett alternativ som parameter för varje kvalificeringsalternativ i alternativvalet.
+**Beskrivning:** Profilbegränsningen avgör om ett alternativ är tillgängligt för den här profilidentiteten just nu, i det här sammanhanget. Om profilbegränsningen inte behöver ta hänsyn till värden för varje alternativ, d.v.s. det är en skillnad mellan alternativen från alternativmarkeringen, avbryts hela alternativmarkeringen av profilbegränsningen som utvärderas till &quot;false&quot;. Å andra sidan utvärderas en profilbegränsningsregel som tar ett alternativ som parameter för varje kvalificeringsalternativ i alternativvalet.
 **Typ:** object
 
 +++
@@ -143,7 +143,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 +++
 
-+++ _experience > decisioning > conditions > profileConstraints > eligibility Rule
++++ _experience > decisioning > Criterion > profileConstraints > Eligibility Rule
 
 **Fält:** eligibilityRule
 **Titel:** Behörighetsregel
@@ -161,9 +161,9 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 **Möjliga värden:**
 * &quot;none&quot; (standard)
 * &quot;eligibilityRule&quot;: &quot;Profilbegränsningen uttrycks som en enskild regel som måste utvärderas till true innan den begränsade åtgärden tillåts.&quot;
-* &quot;anySegments&quot;: &quot;Profilbegränsningen uttrycks som en eller flera målgrupper och profilen måste vara medlem i minst en av dem innan den begränsade åtgärden tillåts.&quot;
-* &quot;allSegments&quot;: &quot;Profilbegränsningen uttrycks som en eller flera målgrupper och profilen måste vara medlem av alla dem innan den begränsade åtgärden tillåts.&quot;
-* regler: &quot;Profilbegränsningen uttrycks som ett antal olika regler, t.ex. behörighet, tillämplighet, lämplighet, som alla måste utvärderas till true innan den begränsade åtgärden tillåts.&quot;
+* &quot;anySegments&quot;: &quot;Profilbegränsningen uttrycks som en eller flera målgrupper och profilen måste vara medlem av minst en av dem innan den begränsade åtgärden tillåts.&quot;
+* &quot;allSegments&quot;:&quot;Profilbegränsningen uttrycks som en eller flera målgrupper och profilen måste vara medlem av alla dem innan den begränsade åtgärden tillåts.&quot;
+* &quot;rules&quot;:&quot;Profilbegränsningen uttrycks som ett antal olika regler, t.ex. behörighet, tillämplighet, lämplighet, som alla måste utvärderas till true innan den begränsade åtgärden tillåts.&quot;
 
 +++
 
@@ -196,10 +196,10 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
      **Beskrivning:** Koden är en läsbar identifierare för namnutrymmet och kan användas för att begära det tekniska namnutrymmes-ID som används för bearbetning av identitetsdiagram.
      **Typ:** string
 
-* Upplevelseidentifierare
+* Experience Identifier
 
   **Fält:** xid
-  **Titel:** Upplevelseidentifierare
+  **Titel:** Experience Identifier
   **Beskrivning:** Om det finns en sådan representerar det här värdet en identifierare för korsnamnutrymme som är unik för alla identifierare som har namnutrymmesomfång i alla namnutrymmen.
   **Typ:** string
 
@@ -216,8 +216,8 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 ++_experience > decisioning > conditions > ranking > order
 
-**Fält:** order
-**Titel:** Orderutvärdering
+**Fält:** beställa
+**Titel:** Utvärdering av order
 **Beskrivning:** Utvärdering av en relativ ordning för ett eller flera beslutsalternativ. Alternativ med högre ordningstal markeras över alternativ med lägre ordningstal. De värden som bestäms med den här metoden kan ordnas, men avståndet mellan dem kan inte mätas och varken summor eller produkter kan beräknas. Medianen och läget är de enda måtten på central tendens som kan användas för ordningstal.
 **Typ:** object
 
@@ -249,7 +249,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 **Fält:** prioritet
 **Titel:** Prioritet
-**Beskrivning:** Prioriteten för ett enda beslutsalternativ i förhållande till alla andra alternativ. Alternativ som ingen orderfunktion har angetts för prioriteras med den här egenskapen. Alternativ med högre prioritetsvärden markeras före alternativ med lägre prioritet. Om två eller flera kvalificerande alternativ har det högsta prioritetsvärdet, väljs ett slumpmässigt och används för beslutsförslaget.
+**Beskrivning:** Prioriteten för ett enda beslutsalternativ i förhållande till alla andra alternativ. Alternativ som ingen orderfunktion har angetts för prioriteras med den här egenskapen. Alternativ med högre prioritetsvärden markeras före alternativ med lägre prioritet. Om två eller flera kvalificerande alternativ har det högsta prioritetsvärdet, väljs ett på ett enhetligt slumpmässigt sätt och används för beslutsförslaget.
 **Typ:** heltal
 **Minsta värde:** 0
 **Standardvärde:** 0

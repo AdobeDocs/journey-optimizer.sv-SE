@@ -23,7 +23,7 @@ Experience Platform Web SDK stöder frågor om personaliseringslösningarna på 
 
 Det finns två sätt att genomföra beslutsfattandet med [Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html#video-overview). Ett sätt är inriktat på utvecklare och kräver kunskaper om webbplatser och programmering. Det andra sättet är att använda Adobe Experience Platform användargränssnitt för att ställa in erbjudanden som bara kräver att ett litet skript refereras till i sidhuvudet på HTML-sidan.
 
-Läs dokumentationen om [beslutsfattande](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html#enabling-offer-decisioning) om du vill ha mer information om hur du kan leverera personaliserade erbjudanden med Adobe Experience Platform Web SDK.
+Mer information finns i dokumentationen om [beslutsfattande](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html#enabling-offer-decisioning) om du vill ha mer information om hur du kan leverera personaliserade erbjudanden med Adobe Experience Platform Web SDK.
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ För att personalisera erbjudanden måste ni konfigurera er personalisering/prof
 
 <!-- Refer to the [doc](www.link.com) for detailed instructions.  -->
 
-Om du vill konfigurera SDK för beslutshantering följer du något av följande två steg:
+Följ något av följande två steg för att konfigurera SDK för beslutshantering:
 
 ## Alternativ 1 - Installera taggtillägget och implementeringen med Launch
 
@@ -90,9 +90,9 @@ Det här alternativet är mer användarvänligt för personer som kan ha en mind
 
 ## Alternativ 2 - Implementera manuellt med den fristående versionen
 
-Här är de steg som krävs för att använda beslutshantering med den färdiga fristående installationen av web SDK. I den här handboken antas att det är första gången du implementerar SDK, så alla steg kanske inte gäller för dig. Den här guiden förutsätter också viss utvecklingsupplevelse.
+Här är de steg som krävs för att använda beslutshantering med den färdiga fristående installationen av web SDK. I den här handboken förutsätts att det är första gången du implementerar SDK, så alla steg kanske inte gäller för dig. Den här guiden förutsätter också viss utvecklingsupplevelse.
 
-Inkludera följande JavaScript-utdrag från alternativ 2: Den fördefinierade fristående versionen på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html) i `<head>` på HTML-sidan.
+Inkludera följande JavaScript-kodfragment från alternativ 2: Den fördefinierade fristående versionen på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html) i `<head>` på HTML-sidan.
 
 ```
 javascript

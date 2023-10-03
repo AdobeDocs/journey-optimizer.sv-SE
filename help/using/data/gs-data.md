@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Kom igång med datahantering i [!DNL Journey Optimizer] {#about-data}
 
-Omfattningen av slutkundsdata och hur omfattande de är definierar styrkan och framgången för alla kundupplevelselösningar. och dessa data är skalbara och av högsta värde för varje enskild kund. Teknikval är nu inbyggt i en strikt utvärdering av datahanteringsfunktioner.
+Riktighet och täckning av slutkundsdata är vad som definierar styrkan och framgången hos alla kundupplevelselösningar, och dessa data är skalbara och av högsta värde för varje enskild kund. Teknikval är nu inbyggt i en strikt utvärdering av datahanteringsfunktioner.
 
 Med [!DNL Adobe Journey Optimizer]kan ni enkelt hantera, behålla och exportera dessa data till plattformar eller system som ingår i er teknologi.
 
@@ -59,15 +59,15 @@ Den flexibilitet du vill ha från dina data är dessutom:
 </tr>
 </table>
 
-[!DNL Adobe Experience Platform]som [!DNL Adobe Journey Optimizer] är skapat och ger er högsta möjliga kontroll över data - både under engagemanget och i slutet av engagemanget. Inom [!DNL Journey Optimizer]har du fullständig kontroll över data (som antingen hämtas in eller skapas av, [!DNL Journey Optimizer]), styrningen av dessa data och de destinationer dit dessa data skickas.
+[!DNL Adobe Experience Platform], som [!DNL Adobe Journey Optimizer] är skapat och ger er högsta möjliga kontroll över data - både under engagemanget och i slutet av engagemanget. Inom [!DNL Journey Optimizer]har du fullständig kontroll över data (som antingen hämtas in eller skapas av, [!DNL Journey Optimizer]), styrningen av dessa data och de destinationer dit dessa data skickas.
 
 Alla data betraktas som kundens egendom och kan bara underhållas, krypteras, distribueras eller förstöras på din begäran. Adobe fungerar som förvaltare, utan några som helst rättigheter till era uppgifter.
 
 Du kan använda [!DNL Journey Optimizer]Med sin flexibilitet att hantera dina specifika krav vad gäller datalagring, arkivering eller radering:
 
-* **Extrahering/export av data**: Du kan initiera extraheringen av källdata när som helst via API:t för dataåtkomst utan straffavgifter eller tidsfördröjningar. The [API för dataåtkomst](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html){target="_blank"} ger användarna ett RESTful-gränssnitt som fokuserar på att upptäcka om inkapslade datauppsättningar är tillgängliga eller inte [!DNL Adobe Experience Platform]. <!--In the future (on roadmap), you can use file-based destinations to export and migrate log data from Adobe Journey Optimizer. -->
+* **Extrahering/export av data**: Du kan initiera extraheringen av källdata när som helst via API:t för dataåtkomst utan straffar eller tidsfördröjningar. The [API för dataåtkomst](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html){target="_blank"} ger användarna ett RESTful-gränssnitt som fokuserar på att upptäcka om inkapslade datauppsättningar är tillgängliga eller inte [!DNL Adobe Experience Platform]. <!--In the future (on roadmap), you can use file-based destinations to export and migrate log data from Adobe Journey Optimizer. -->
 
-   Observera att innehåll som används i resor eller kampanjer inte kan extraheras via API- eller målmetoder som nämns ovan.
+  Observera att innehåll som används i resor eller kampanjer inte kan extraheras via API- eller målmetoder som nämns ovan.
 
 <!--
 * **Profile Service Data Retention**: For Behavioral and Time series data appended to any Profile, you may choose to use Journey Optimizer’s default setting of retaining this data for up to 30 days from the date of its addition to a Profile, or until an alternative time-period selected by the you. The time that Adobe keeps this data varies from contract to contract, and is outlined in an organization’s data retention policy.
@@ -77,7 +77,7 @@ Du kan använda [!DNL Journey Optimizer]Med sin flexibilitet att hantera dina sp
 
 * **Rensa och arkivera**: Rensning av data och arkivering kan definieras fritt och automatiseras i [!DNL Adobe Journey Optimizer] att automatisera datalagringspolicyer. Det är möjligt att definiera olika strategier för åldersfördelning för olika datatabeller. Exportmekanismer kan också definieras för att automatiskt exportera åldersfördelningsdata innan de rensas eller arkiveras.
 
-   Med arbetsytan Datahygien kan du skapa och övervaka olika datahygien-uppgifter, som att ta bort konsumentidentiteter och schemalägga förfallodatum för datauppsättningar. Den här arbetsytan är tillgänglig med skölden för skydd och integritet och med hälso- och sjukvårdsskölden. Läs mer i [den här sidan](../privacy/data-hygiene.md).
+  Med arbetsytan Datahygien kan du skapa och övervaka olika datahygien-uppgifter, som att ta bort konsumentidentiteter och schemalägga förfallodatum för datauppsättningar. Den här arbetsytan är tillgänglig med skölden för skydd och integritet och med hälso- och sjukvårdsskölden. Läs mer i [den här sidan](../privacy/data-hygiene.md).
 
 <!--
 * **Data Lake and Deletions**: Customer Data stored in the Data Lake can be retained by Journey Optimizer:
@@ -87,6 +87,6 @@ Du kan använda [!DNL Journey Optimizer]Med sin flexibilitet att hantera dina sp
 
 -->
 
-* **Dataextrahering vid avslutning/avslutning av engagemang**: När kontraktet har avslutats tas alla data bort från Adobe lagringsutrymme. Du kan även hämta fullständiga profilextraheringar innan du säger upp ett avtal. Det kostar inget mer. Detta kan göras när som helst och inte bara när det sägs upp.
+* **Dataextrahering vid avslutning/avslutning av engagemang**: När kontraktet avslutas tas data bort helt från Adobe lagringsutrymme. Du kan även hämta fullständiga profilextraheringar innan du säger upp ett avtal. Det kostar inget mer. Detta kan göras när som helst och inte bara när det sägs upp.
 
 Ovannämnda metoder är avtalsenligt definierade och detaljerade i det databehandlingsavtal (DPA) som Adobe ömsesidigt instämmer med dig i början av ett ärende. Adobe-program, inklusive [!DNL Journey Optimizer], bygger på principen att varje kunds data behandlas som den kundens egna datatillgångar.

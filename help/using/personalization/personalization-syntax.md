@@ -88,7 +88,7 @@ Lär dig hur du utnyttjar profilattribut under förhållanden i [det här avsnit
 Med det här namnutrymmet kan du referera till befintliga offertbeslut.
 Om du vill hänvisa till ett erbjudande måste du deklarera en sökväg med den information som definierar ett erbjudande.
 
-Sökvägen har följande struktur:
+Den här sökvägen har följande struktur:
 
 `offers.Type.[Placement Id].[Activity Id].Attribute`
 

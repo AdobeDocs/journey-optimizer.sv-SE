@@ -20,6 +20,7 @@ ht-degree: 3%
 >[!AVAILABILITY]
 >
 >Den nya **snabbstartsarbetsflöde för mobil introduktion** är nu tillgängligt. Använd den här nya produktfunktionen för att snabbt konfigurera Mobile SDK för att börja samla in och validera mobilhändelsedata och skicka push-meddelanden till mobiler. Den här funktionen är tillgänglig via startsidan för datainsamling som en betaversion. [Läs mer](mobile-onboarding-wf.md)
+>
 
 
 ## Före start {#before-starting}
@@ -58,7 +59,7 @@ Tilldela **Egenskap** och **Företag** gör du så här:
 
    ![](assets/push_product_1.png)
 
-1. Välj en befintlig **[!UICONTROL Product Profile]** eller skapa en ny med **[!UICONTROL New profile]** -knappen. Lär dig skapa en ny **[!UICONTROL New profile]** i [Dokumentation till Admin Console](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html#ui){target="_blank"}.
+1. Välj en befintlig **[!UICONTROL Product Profile]** eller skapa en ny med **[!UICONTROL New profile]** -knappen. Lär dig hur du skapar en ny **[!UICONTROL New profile]** i [Dokumentation till Admin Console](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html#ui){target="_blank"}.
 
 1. På fliken **[!UICONTROL Permissions]** väljer du **[!UICONTROL Property rights]**.
 
@@ -124,7 +125,7 @@ Adobe Experience Platform Mobile SDK innehåller API:er för integrering på kli
 När allt är klart bör du också ha skapat och konfigurerat en mobil egenskap i [!DNL Adobe Experience Platform Data Collection]. Du skapar vanligtvis en mobil egenskap för varje mobilprogram som du vill hantera. Lär dig hur du skapar och konfigurerar en mobil egenskap i [Dokumentation för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
 
 
-## Steg 1: Lägg till push-autentiseringsuppgifter för appar i Adobe Experience Platform Data Collection {#push-credentials-launch}
+## Steg 1: Lägg till push-autentiseringsuppgifter för appen i Adobe Experience Platform Data Collection {#push-credentials-launch}
 
 När du har gett rätt användarbehörigheter måste du nu lägga till dina push-inloggningsuppgifter för mobilprogrammet i [!DNL Adobe Experience Platform Data Collection].
 
@@ -136,33 +137,33 @@ Registrering av push-autentiseringsuppgifter krävs för mobilappen för att god
 
    ![](assets/add-app-config.png)
 
-1. Ange **[!UICONTROL Name]** för konfigurationen.
+1. Ange en **[!UICONTROL Name]** för konfigurationen.
 
 1. Från **[!UICONTROL Mobile Application Configuration]** väljer du operativsystem:
 
    * **För iOS**
 
-      ![](assets/add-app-config-ios.png)
+     ![](assets/add-app-config-ios.png)
 
       1. Ange mobilappen **Paket-ID** i **[!UICONTROL App ID (iOS Bundle ID)]** fält. Program-ID:t finns i **Allmänt** fliken för det primära målet i **XCode**.
 
-      1. På **[!UICONTROL Push Credentials]** för att lägga till dina inloggningsuppgifter.
+      1. Aktiverad **[!UICONTROL Push Credentials]** för att lägga till dina inloggningsuppgifter.
 
       1. Dra och släpp .p8-filen Apple Push Notification Authentication Key. Den här nyckeln kan hämtas från **Certifikat**, **Identifierare** och **Profiler** sida.
 
       1. Ange **Nyckel-ID**. Detta är en 10-teckensträng som tilldelas när en p8-autentiseringsnyckel skapas. Den finns under **Tangenter** tabba in **Certifikat**, **Identifierare** och **Profiler** sida.
 
       1. Ange **Team-ID**. Detta är ett strängvärde som finns under fliken Medlemskap.
+
    * **För Android**
 
-      ![](assets/add-app-config-android.png)
+     ![](assets/add-app-config-android.png)
 
-      1. Ange **[!UICONTROL App ID (Android package name)]**: oftast är paketnamnet program-id:t i din `build.gradle` -fil.
+      1. Ange **[!UICONTROL App ID (Android package name)]**: vanligtvis är paketnamnet program-id:t i din `build.gradle` -fil.
 
-      1. På **[!UICONTROL Push Credentials]** för att lägga till dina inloggningsuppgifter.
+      1. Aktiverad **[!UICONTROL Push Credentials]** för att lägga till dina inloggningsuppgifter.
 
       1. Dra och släpp FCM-push-inloggningsuppgifterna. Mer information om hur du hämtar push-autentiseringsuppgifter finns i [Google Documentation](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
-
 
 
 1. Klicka **[!UICONTROL Save]** för att skapa din appkonfiguration.
@@ -256,7 +257,7 @@ To configure the `ProfileDataSource`, use the `ProfileDCInletURL` from [!DNL Ado
 
 -->
 
-## Steg 3: Testa din mobilapp med en händelse {#mobile-app-test}
+## Steg 3: Testa mobilappen med en händelse {#mobile-app-test}
 
 När du har konfigurerat din mobilapp i både Adobe Experience Platform och i [!DNL Adobe Experience Platform Data Collection]kan du testa den innan du skickar push-meddelanden till dina profiler. I det här fallet skapar vi en resa för att rikta in oss på vår mobilapp och ställa in en händelse som utlöser push-meddelandet.
 
@@ -274,17 +275,17 @@ För att den här resan ska fungera måste du skapa ett XDM-schema. Mer informat
 
 1. Välj **[!UICONTROL Create a new field group]**.
 
-1. Ange **[!UICONTROL Display Name]** och **[!UICONTROL Description]**. Klicka på **[!UICONTROL Add field groups]** när du är klar. Mer information om hur du skapar fältgrupper finns i [XDM-systemdokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html){target="_blank"}.
+1. Ange en **[!UICONTROL Display Name]** och **[!UICONTROL Description]**. Klicka på **[!UICONTROL Add field groups]** när du är klar. Mer information om hur du skapar fältgrupper finns i [XDM-systemdokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html){target="_blank"}.
 
 
    ![](assets/test_push_4.png)
 
-1. Markera schemat till vänster. Ange schemats och beskrivningens namn i den högra rutan. Aktivera det här schemat för **[!UICONTROL Profile]**.
+1. Markera schemat till vänster. Ange schemats och beskrivningens namn i den högra rutan. Aktivera schemat för **[!UICONTROL Profile]**.
 
    ![](assets/test_push_4b.png)
 
 
-1. Markera fältgruppen till vänster och klicka sedan på ikonen + för att skapa ett nytt fält. I **[!UICONTROL Field groups properties]**, på höger sida, skriva **[!UICONTROL Field name]**, **[!UICONTROL Display name]** och markera **[!UICONTROL String]** as **[!UICONTROL Type]**.
+1. Markera fältgruppen till vänster och klicka sedan på ikonen + för att skapa ett nytt fält. I **[!UICONTROL Field groups properties]**, på höger sida, skriver du **[!UICONTROL Field name]**, **[!UICONTROL Display name]** och markera **[!UICONTROL String]** as **[!UICONTROL Type]**.
 
    ![](assets/test_push_5.png)
 

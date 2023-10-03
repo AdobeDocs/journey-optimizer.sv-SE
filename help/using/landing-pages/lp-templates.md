@@ -28,7 +28,7 @@ När du designat [innehåll på landningssidan](lp-content.md)kan du spara den f
 
    ![](assets/lp_designer-save-template.png)
 
-1. Lägg till ett namn för den här mallen.
+1. Lägg till ett namn för mallen.
 
    ![](assets/lp_designer-template-name.png)
 

@@ -28,7 +28,7 @@ Utforma avancerade scenarier i flera steg med följande funktioner:
 
 * Använd **inbyggda funktionsmakron** för att skicka meddelanden som [!DNL Journey Optimizer] eller skapa **anpassade åtgärder** om du använder ett tredjepartssystem för att skicka meddelanden.
 
-* Med **resedesigner** bygg upp flerstegstillämpningar: enkelt dra och släppa en tävlingsaktivitet eller en läsningsaktivitet, lägga till villkor och skicka personaliserade meddelanden.
+* Med **resedesigner** bygg upp era flerstegssituationer: dra och släpp enkelt en anmälningshändelse eller en läs målgruppsaktivitet, lägg till villkor och skicka personaliserade meddelanden.
 
 
 >[!NOTE]

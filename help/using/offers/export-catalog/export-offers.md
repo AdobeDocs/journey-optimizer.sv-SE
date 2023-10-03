@@ -79,7 +79,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 **Fält:** egenskaper
 **Titel:** Beslutsalternativsegenskaper
-**Beskrivning:** Ytterligare egenskaper eller attribut som tillhör det här särskilda beslutsalternativet. Olika instanser kan ha olika egenskaper (tangenter på kartan). Egenskaperna är namnvärdespar som används för att skilja mellan olika beslutsalternativ. Egenskaper används som värden i innehåll som representerar det här alternativet och som funktioner för att analysera och optimera prestanda för ett alternativ. När alla instanser har samma attribut eller egenskap bör den aspekten modelleras som ett tilläggsschema som härleds från beslutsalternativsinformationen.
+**Beskrivning:** Ytterligare egenskaper eller attribut som hör till det här särskilda beslutsalternativet. Olika instanser kan ha olika egenskaper (tangenter på kartan). Egenskaperna är namnvärdespar som används för att skilja mellan olika beslutsalternativ. Egenskaper används som värden i innehåll som representerar det här alternativet och som funktioner för att analysera och optimera prestanda för ett alternativ. När alla instanser har samma attribut eller egenskap bör den aspekten modelleras som ett tilläggsschema som härleds från beslutsalternativsinformationen.
 **Typ:** object
 
 +++
@@ -156,7 +156,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
    * **resolveURL**
 
      **Fält:** resolveURL
-     **Beskrivning:** En unik resurslokaliserare (tillval) som kan läsa resursen i en innehållsdatabas. Detta gör det enklare att hämta resursen utan att kunden förstår var resursen hanteras och vilka API:er som ska anropas. Detta liknar en HAL-länk, men semantiken är enklare och mer ändamålsenlig.
+     **Beskrivning:** En unik resurslokaliserare (tillval) som kan läsa resursen i en innehållsdatabas. Detta gör det enklare att hämta resursen utan att kunden förstår var resursen hanteras och vilka API:er som ska anropas. Detta liknar en HAL-länk, men semantiken är enklare och mer målinriktad.
      **Typ:** string
      **Exempel:** &quot;https://plaftform.adobe.io/resolveByPath?path=&quot;/mycorp/content/projectx/fragment/prod/herobanners/banner14.html3&quot;&quot;
 
@@ -189,7 +189,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 +++
 
-+++ _experience > Decision > Lifecycle Status
++++ _experience > decisioning > Lifecycle Status
 
 **Fält:** lifecycleStatus
 **Titel:** Livscykelstatus
@@ -203,7 +203,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 **Fält:** name
 **Titel:** Namn på beslutsalternativ
-**Beskrivning:** Alternativnamn som visas i olika användargränssnitt.
+**Beskrivning:** Alternativ som visas i olika användargränssnitt.
 **Typ:** string
 
 +++
@@ -212,12 +212,12 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 **Fält:** profileConstraints
 **Titel:** Profilbegränsningsdetaljer
-**Beskrivning:** Profilbegränsningarna avgör om ett alternativ är kvalificerat för den här profilidentiteten i det här sammanhanget. Om profilbegränsningen inte behöver ta hänsyn till värdena för varje alternativ, d.v.s. det är en skillnad mellan alternativen från alternativmarkeringen, avbryts hela alternativmarkeringen av profilbegränsningen som utvärderas till &quot;false&quot;. Å andra sidan utvärderas en profilbegränsningsregel som tar ett alternativ som parameter för varje kvalificeringsalternativ i alternativvalet.
+**Beskrivning:** Profilbegränsningarna avgör om ett alternativ är kvalificerat för den här profilidentiteten i det här sammanhanget. Om profilbegränsningen inte behöver ta hänsyn till värden för varje alternativ, d.v.s. det är en skillnad mellan alternativen från alternativmarkeringen, avbryts hela alternativmarkeringen av profilbegränsningen som utvärderas till &quot;false&quot;. Å andra sidan utvärderas en profilbegränsningsregel som tar ett alternativ som parameter för varje kvalificeringsalternativ i alternativvalet.
 **Typ:** object
 
 +++
 
-++_experience > decisioning > profileConstraints > Description
++++_experience > decisioning > profileConstraints > Description
 
 **Fält:** description
 **Titel:** Beskrivning
@@ -244,9 +244,9 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 **Möjliga värden:**
 * &quot;none&quot; (standard)
 * &quot;eligibilityRule&quot;: &quot;Profilbegränsningen uttrycks som en enskild regel som måste utvärderas till true innan den begränsade åtgärden tillåts.&quot;
-* &quot;anySegments&quot;: &quot;Profilbegränsningen uttrycks som en eller flera målgrupper och profilen måste vara medlem i minst en av dem innan den begränsade åtgärden tillåts.&quot;
-* &quot;allSegments&quot;: &quot;Profilbegränsningen uttrycks som en eller flera målgrupper och profilen måste vara medlem av alla dem innan den begränsade åtgärden tillåts.&quot;
-* regler: &quot;Profilbegränsningen uttrycks som ett antal olika regler, t.ex. behörighet, tillämplighet, lämplighet, som alla måste utvärderas till true innan den begränsade åtgärden tillåts.&quot;
+* &quot;anySegments&quot;: &quot;Profilbegränsningen uttrycks som en eller flera målgrupper och profilen måste vara medlem av minst en av dem innan den begränsade åtgärden tillåts.&quot;
+* &quot;allSegments&quot;:&quot;Profilbegränsningen uttrycks som en eller flera målgrupper och profilen måste vara medlem av alla dem innan den begränsade åtgärden tillåts.&quot;
+* &quot;rules&quot;:&quot;Profilbegränsningen uttrycks som ett antal olika regler, t.ex. behörighet, tillämplighet, lämplighet, som alla måste utvärderas till true innan den begränsade åtgärden tillåts.&quot;
 
 +++
 
@@ -279,16 +279,16 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
      **Beskrivning:** Koden är en läsbar identifierare för namnutrymmet och kan användas för att begära det tekniska namnutrymmes-ID som används för bearbetning av identitetsdiagram.
      **Typ:** string
 
-* **Upplevelseidentifierare**
+* **Experience Identifier**
 
   **Fält:** xid
-  **Titel:** Upplevelseidentifierare
+  **Titel:** Experience Identifier
   **Beskrivning:** Om det finns en sådan representerar det här värdet en identifierare för korsnamnutrymme som är unik för alla identifierare som har namnutrymmesomfång i alla namnutrymmen.
   **Typ:** string
 
 +++
 
-+++ _experience > decisioning > rankning
++++ _experience > decisioning > ranking
 
 **Fält:** rankning
 **Titel:** Rankningsdetaljer
@@ -299,8 +299,8 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 ++_experience > decisioning > ranking > Order Evaluation
 
-**Fält:** order
-**Titel:** Orderutvärdering
+**Fält:** beställa
+**Titel:** Utvärdering av order
 **Beskrivning:** Utvärdering av en relativ ordning för ett eller flera beslutsalternativ. Alternativ med högre ordningstal markeras över alternativ med lägre ordningstal. De värden som bestäms med den här metoden kan ordnas, men avståndet mellan dem kan inte mätas och varken summor eller produkter kan beräknas. Medianen och läget är de enda måtten på central tendens som kan användas för ordningstal.
 **Typ:** object
 
@@ -332,7 +332,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 **Fält:** prioritet
 **Titel:** Prioritet
-**Beskrivning:** Prioriteten för ett enda beslutsalternativ i förhållande till alla andra alternativ. Alternativ som ingen orderfunktion har angetts för prioriteras med den här egenskapen. Alternativ med högre prioritetsvärden markeras före alternativ med lägre prioritet. Om två eller flera kvalificerande alternativ har det högsta prioritetsvärdet, väljs ett slumpmässigt och används för beslutsförslaget.
+**Beskrivning:** Prioriteten för ett enda beslutsalternativ i förhållande till alla andra alternativ. Alternativ som ingen orderfunktion har angetts för prioriteras med den här egenskapen. Alternativ med högre prioritetsvärden markeras före alternativ med lägre prioritet. Om två eller flera kvalificerande alternativ har det högsta prioritetsvärdet, väljs ett på ett enhetligt slumpmässigt sätt och används för beslutsförslaget.
 **Typ:** heltal
 **Minsta värde:** 0
 **Standardvärde:** 0

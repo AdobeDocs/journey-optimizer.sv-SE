@@ -1,6 +1,6 @@
 ---
 title: Arbeta med beslutsledningshändelser
-description: Lär dig hur du skapar beslutsrapporter i Adobe Experience Platform.
+description: Lär dig skapa beslutsrapporter i Adobe Experience Platform.
 feature: Offers
 topic: Integrations
 role: User

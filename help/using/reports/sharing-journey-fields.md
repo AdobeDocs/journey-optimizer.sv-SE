@@ -23,28 +23,28 @@ Den här fältgruppen används i transportschemat (i relation till travelStepEve
 
 ID för huvudresan.
 
-Typ: string
+Typ: sträng
 
 ## travelVersionID {#journeyversionid-field}
 
 ID för reseversionen. Detta ID representerar identiteten på en resa.
 
-Typ: string
+Typ: sträng
 
 ## name {#name-field}
 
 Namn på resan.
 
-Typ: string
+Typ: sträng
 
 ## description {#description-field}
 
 Beskrivning av resan.
 
-Typ: string
+Typ: sträng
 
 ## version {#version-field}
 
 Version, representerad som `major`.`minor`
 
-Typ: string
+Typ: sträng

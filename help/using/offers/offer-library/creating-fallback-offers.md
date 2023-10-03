@@ -26,13 +26,13 @@ Så här skapar du ett reserverbjudande:
 
 >[!NOTE]
 >
->Observera, att till skillnad från personaliserade erbjudanden saknar reserverbjudanden regler och villkorsparametrar eftersom de presenteras för kunderna som sista utväg utan villkor.
+>Observera, att till skillnad från personaliserade erbjudanden saknar reserverbjudanden regler och begränsningsparametrar eftersom de presenteras för kunderna som sista utväg utan villkor.
 
 1. Klicka **[!UICONTROL Create offer]** väljer **[!UICONTROL Fallback offer]**.
 
    ![](../assets/create_fallback.png)
 
-1. Ange namnet på reserverbjudandet. Du kan också koppla en eller flera befintliga samlingskvalificerare (som tidigare kallats taggar) till den, så att du enklare kan söka efter och ordna erbjudandebiblioteket.
+1. Ange erbjudandets namn. Du kan också koppla en eller flera befintliga samlingskvalificerare (som tidigare kallats taggar) till den, så att du enklare kan söka efter och ordna erbjudandebiblioteket.
 
    ![](../assets/fallback_details.png)
 

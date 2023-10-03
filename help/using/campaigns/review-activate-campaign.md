@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Granska och aktivera en kampanj
-description: Lär dig hur du granskar och aktiverar kampanjer i Journey Optimizer
+description: Lär dig granska och aktivera kampanjer i Journey Optimizer
 feature: Overview
 topic: Content Management
 role: User

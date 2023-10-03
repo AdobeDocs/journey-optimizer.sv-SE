@@ -30,7 +30,7 @@ Så här konfigurerar du den här resan:
 1. Lägg till en **[!UICONTROL Email]** verksamhet som rör resan. [Läs mer](journeys-message.md).
 1. I **[!UICONTROL Email parameters]** i **[!UICONTROL Email]** aktivitetsinställningar, ersätt standardadress för e-post (`PersonalEmail.adress`) med e-postadressen till listprenumeranterna:
 
-   1. Klicka på **[!UICONTROL Enable parameter override]** ikonen till höger om **[!UICONTROL Address]** och klicka sedan på **[!UICONTROL Edit]** ikon.
+   1. Klicka på **[!UICONTROL Enable parameter override]** ikonen till höger om **[!UICONTROL Address]** och klicka sedan på **[!UICONTROL Edit]** -ikon.
 
       ![](assets/message-to-subscribers-uc-1.png)
 
@@ -49,7 +49,7 @@ Så här konfigurerar du den här resan:
       | `entry` | Se ett mappningselement enligt det valda namnutrymmet | Se en specifik prenumerationslista |
       | `firstEntryKey` | Hämta den första startnyckeln för en karta | Hämta den första e-postadressen till prenumeranter |
 
-      I det här exemplet heter prenumerationslistan `daily-email`. E-postadresser definieras som nycklar i `subscribers` karta, som är länkad till prenumerationslistan.
+      I det här exemplet heter prenumerationslistan `daily-email`. E-postadresser definieras som nycklar i `subscribers` karta, som är länkad till prenumerationslistans karta.
 
       Läs mer om [referenser till fält](expression/field-references.md) i uttryck.
 

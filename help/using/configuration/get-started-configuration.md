@@ -61,4 +61,4 @@ För att kunna bygga resor måste du konfigurera **[!UICONTROL Data Sources]**, 
 
 * **Händelser** gör det möjligt för er att utlösa era resor helt och hållet för att skicka meddelanden i realtid till den person som kommer in på resan. I händelsekonfigurationen konfigurerar du de händelser som förväntas under resorna. Data för inkommande händelser normaliseras enligt Adobes upplevelsedatamodell (XDM). Händelser kommer från API för strömningsinmatning för autentiserade och ej autentiserade händelser (till exempel händelser i Adobe Mobile SDK). [Läs mer](../event/about-events.md)
 
-* [!DNL Journey Optimizer] innehåller inbyggda meddelandefunktioner som gör att du kan designa och skicka innehåll. Om du använder ett tredjepartssystem för att skicka meddelanden skapar du en **anpassad åtgärd**. [Läs mer](../action/action.md)
+* [!DNL Journey Optimizer] innehåller inbyggda meddelandefunktioner som gör att du kan designa och skicka ditt innehåll. Om du använder ett tredjepartssystem för att skicka meddelanden skapar du en **anpassad åtgärd**. [Läs mer](../action/action.md)

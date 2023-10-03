@@ -39,4 +39,4 @@ Så här lägger du till en Google TXT-post i din underdomän:
 
    ![](assets/subdomain-google-txt.png)
 
-1. När TXT-posten har lagts till måste den verifieras av Google. Navigera till [Google Workspace](https://support.google.com/a/answer/183895){target="_blank"}<!--G Suite Admin tools-->startar du sedan verifieringssteget.
+1. När TXT-posten har lagts till måste den verifieras av Google. Om du vill göra det går du till [Google Workspace](https://support.google.com/a/answer/183895){target="_blank"}<!--G Suite Admin tools-->startar du sedan verifieringssteget.

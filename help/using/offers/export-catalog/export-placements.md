@@ -70,7 +70,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 +++
 
-+++ _experience > decisioning > contentTypes
++++ _experience > Decision > contentTypes
 
 **Fält:** contentTypes
 **Typ:** array
@@ -85,7 +85,7 @@ Här är en lista över alla fält som kan användas i **[!UICONTROL Decision Ob
 
 +++
 
-+++ _experience > Decision > Placement Description
++++ _experience > decisioning > Placement Description
 
 **Fält:** description
 **Titel:** Placeringsbeskrivning

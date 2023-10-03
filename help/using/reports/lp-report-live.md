@@ -24,11 +24,11 @@ ht-degree: 0%
 
 Live-rapporter, som du kommer åt från fliken Senaste 24 timmarna, visar händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten. Som jämförelse fokuserar Global-rapporter på händelser som inträffade för minst två timmar sedan och täcker händelser under en vald tidsperiod.
 
-Välj **[!UICONTROL Report]** på den avancerade menyn på den valda landningssidan.
+Om du vill komma åt dina rapporter väljer du **[!UICONTROL Report]** på den avancerade menyn på den valda landningssidan.
 
 ![](assets/landing_page_report.png)
 
-Landningssidan **[!UICONTROL Live report]** är uppdelat i olika widgetar som detaljerat beskriver hur leveransen fungerar och vilka fel den innehåller. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](live-report.md).
+Landningssidan **[!UICONTROL Live report]** är uppdelat i olika widgetar som detaljerat beskriver hur leveransen fungerar och vilka fel den innehåller. Varje widget kan storleksändras och tas bort vid behov. Mer information om detta finns i [section](live-report.md).
 
 +++Läs mer om de olika mätvärden och widgetar som är tillgängliga för landningssidans live-rapport.
 
@@ -36,7 +36,7 @@ The **[!UICONTROL Landing page performance]** widgeten visar huvudinformationen 
 
 * **[!UICONTROL Total visits]**: Totalt antal besök på landningssidan från en resa eller andra källor, inklusive flera besök av en mottagare.
 
-* **[!UICONTROL Conversions]**: Antal personer som interagerat med landningssidan, t.ex. prenumererat på ett formulär.
+* **[!UICONTROL Conversions]**: Antal personer som interagerat med landningssidan, t.ex. prenumererade på ett formulär.
 
 * **[!UICONTROL Bounces]**: Antal personer som inte interagerade med landningssidan och inte slutförde prenumerationsåtgärden.
 

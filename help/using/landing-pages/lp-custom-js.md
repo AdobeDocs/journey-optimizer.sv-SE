@@ -24,11 +24,11 @@ Du kan definiera innehållet på landningssidan med hjälp av anpassad JavaScrip
 
 Om du vill infoga anpassad JavaScript i innehållet på landningssidan kan du antingen göra följande:
 
-* Importera befintligt HTML-innehåll när du börjar skapa ditt innehåll och markera filen som innehåller din anpassade JavaScript-kod. Lär dig importera innehåll [i det här avsnittet](../email/existing-content.md).
+* Importera befintligt HTML-innehåll när du börjar skapa ditt innehåll och markera filen som innehåller din anpassade JavaScript-kod. Lär dig hur du importerar innehåll [i det här avsnittet](../email/existing-content.md).
 
 * Utforma landningssidan från grunden eller från en sparad mall. Dra och släpp **[!UICONTROL HTML]** innehållskomponenten på arbetsytan och visa källkoden för att lägga till JavaSCript i komponenten. Lär dig hur du använder komponenten HTML i [det här avsnittet](../email/content-components.md#HTML). <!--You can also simply switch the whole landing page content to code view and enter or paste your JavaScript code.-->
 
-   ![](assets/lp_designer-html-component.png)
+  ![](assets/lp_designer-html-component.png)
 
 * Ange eller klistra in JavaScript-kod direkt i innehållsdesignern. Lär dig koda eget innehåll [i det här avsnittet](../email/code-content.md).
 
@@ -113,7 +113,7 @@ lpRuntime.submitFormPartial(formSubmissionData,{   // This will not trigger the 
 
 | Namn | Beskrivning |
 |--- |--- |
-| getFormData | Den här metoden kan användas för att hämta `formData` i form av ett JSON-objekt. Det här objektet kan skickas till `submitForm` för att skicka in formulär. |
+| getFormData | Den här metoden kan användas för att hämta `formData` som ett JSON-objekt. Det här objektet kan skickas till `submitForm` för att skicka in formulär. |
 
 **Exempel:**
 
@@ -125,7 +125,7 @@ lpRuntime.submitForm(formData);
 
 ## Användningsfall
 
-### Användningsfall 1: Lägga till validering innan formulär skickas
+### Användningsfall 1: Lägga till validering före inlämning av formulär
 
 ```
 <html>
@@ -160,9 +160,9 @@ lpRuntime.submitForm(formData);
 </html>
 ```
 
-### Användningsfall 2: Delvis inlämning av formulär
+### Användningsfall 2: Delvis inskickande av formulär
 
-Du har till exempel ett formulär med flera kryssrutor på sidan. När du markerar en kryssruta vill du att dessa data ska sparas i backend-objektet utan att användaren behöver vänta på att användaren ska klicka på skicka-knappen.
+Du har till exempel ett formulär med flera kryssrutor på sidan. När du markerar en kryssruta vill du att dessa data ska sparas i backend-objektet utan att användaren behöver vänta på att han/hon ska klicka på skicka-knappen.
 
 ```
 <html>
@@ -226,7 +226,7 @@ Med JavaScript kan du lägga till avlyssnare för indatafält och koppla en anpa
 </html>
 ```
 
-### Användningsfall 4: Dynamiskt formulär
+### Användningsfall 4: Dynamisk blankett
 
 ```
 <html>

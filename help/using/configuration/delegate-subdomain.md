@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Delegera en underdomän
-description: Lär dig hur du delegerar dina underdomäner.
+description: Lär dig delegera dina underdomäner.
 feature: Application Settings
 topic: Administration
 role: Admin
@@ -29,7 +29,7 @@ ht-degree: 4%
 >title="Delegering av underdomän"
 >abstract="För att börja skicka e-post delegerar du din underdomän till Adobe. När du är klar konfigureras DNS-poster, inkorgar, avsändare, svar och studsadresser åt dig."
 
-Delegering av domännamn är en metod som tillåter ägaren av ett domännamn (tekniskt: en DNS-zon) för att delegera en indelning av den (tekniskt: en DNS-zon under den, som kan kallas en underzon) till en annan entitet. Om du hanterar zonen&quot;example.com&quot; kan du som kund delegera underzonen&quot;marketing.example.com&quot; till Adobe. Läs mer på [delegering av underdomän](about-subdomain-delegation.md)
+Domännamnsdelegering är en metod som gör att ägaren av ett domännamn (tekniskt: en DNS-zon) kan delegera en underavdelning av den (tekniskt: en DNS-zon under den, som kan kallas en underzon) till en annan enhet. Om du hanterar zonen&quot;example.com&quot; kan du som kund delegera underzonen&quot;marketing.example.com&quot; till Adobe. Läs mer på [delegering av underdomän](about-subdomain-delegation.md)
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ Följ stegen nedan om du vill delegera en ny underdomän till Adobe helt:
 
    >[!CAUTION]
    >
-   >Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.dincompany.com.
+   >Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.yourcompany.com.
 
    <!--Capital letters are not allowed in subdomains. TBC by PM-->
 
@@ -141,7 +141,7 @@ Följ stegen nedan för att delegera en underdomän med CNAME:
 
    >[!CAUTION]
    >
-   >Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.dincompany.com.
+   >Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.yourcompany.com.
 
    <!--Capital letters are not allowed in subdomains. TBC by PM-->
 
@@ -199,23 +199,23 @@ Kontrollerna och åtgärderna nedan utförs tills underdomänen har verifierats 
 
 1. **Konfigurera DNS för domänen**:
 
-   * **MX-post**: Post för eXchange-post för e-postserver som bearbetar inkommande e-post som skickas till underdomänen.
+   * **MX-post**: E-postpost för eXchange - Post för e-postserver som bearbetar inkommande e-post som skickas till underdomänen.
    * **SPF-post**: Post för Sender Policy Framework - Visar IP-adresser för e-postservrar som kan skicka e-post från underdomänen.
    * **DKIM-post**: DomainKeys Identified Mail-standardpost - Använder kryptering med offentlig-privat nyckel för att autentisera meddelandet för att undvika förfalskning.
-   * **A**: Standard-IP-mappning.
+   * **A**: Standardmappning av IP.
    * **CNAME**: Ett kanoniskt namn eller en CNAME-post är en typ av DNS-post som mappar ett aliasnamn till ett sant eller kanoniskt domännamn.
 
-1. **Skapa spårnings- och spegeladresser**: om domänen är email.example.com, blir spårnings-/spegeldomänen data.email.example.com. Den skyddas genom att SSL-certifikatet installeras.
+1. **Skapa spårnings- och spegeladresser**: Om domänen är email.example.com blir spårnings-/spegeldomänen data.email.example.com. Den skyddas genom att SSL-certifikatet installeras.
 
-1. **Tillhandahåll CDN CloudFront**: om CDN inte redan är konfigurerat, tillhandahåller Adobe det för din organisations-ID.
+1. **Tillhandahåll CDN CloudFront**: Om CDN inte redan är installerat, tillhandahåller Adobe det för din organisations-ID.
 
 1. **Skapa CDN-domän**: Om domänen är email.example.com blir CDN-domänen cdn.email.example.com.
 
 1. **Skapa och bifoga CDN SSL-certifikat**: Adobe skapar CDN-certifikatet för CDN-domänen och kopplar certifikatet till CDN-domänen.
 
-1. **Skapa vanlig DNS**: Om det här är den första underdomänen som du delegerar, skapar Adobe den framåtriktade DNS som krävs för att skapa PTR-poster - en för varje IP-adress.
+1. **Skapa vanlig DNS**: Om det här är den första underdomänen som du delegerar skapar Adobe den framåtriktade DNS som krävs för att skapa PTR-poster - en för varje IP-adress.
 
-1. **Skapa PTR-post**: PTR-posten, som också kallas omvänd DNS-post, krävs av Internet-leverantörer så att de inte markerar e-postmeddelanden som skräppost. Gmail rekommenderar också att du har PTR-poster för varje IP. Adobe skapar PTR-poster endast när du delegerar en underdomän för första gången, en för varje IP-adress, alla IP-adresser som pekar på den underdomänen. Om IP-adressen till exempel är *192.1.2.1* och underdomänen är *email.example.com* blir PTR-posten: *192.1.2.1 PTR r1.email.example.com*. Du kan uppdatera PTR-posten efteråt för att peka på den nya delegerade domänen. [Läs mer om PTR-poster](ptr-records.md)
+1. **Skapa PTR-post**: PTR-posten, som också kallas omvänd DNS-post, krävs av Internet-leverantörer så att de inte markerar e-postmeddelanden som skräppost. Gmail rekommenderar också att du har PTR-poster för varje IP. Adobe skapar PTR-poster endast när du delegerar en underdomän för första gången, en för varje IP-adress, alla IP-adresser som pekar på den underdomänen. Om till exempel IP är *192.1.2.1* och underdomänen är *email.example.com* blir PTR-posten: *192.1.2.1 PTR r1.email.example.com*. Du kan uppdatera PTR-posten efteråt för att peka på den nya delegerade domänen. [Läs mer om PTR-poster](ptr-records.md)
 
 ## Instruktionsvideo{#video}
 

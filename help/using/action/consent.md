@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Med Adobe Experience Platform kan ni enkelt införa och tillämpa marknadsföringspolicyer för att respektera kundernas samtycke. Samtyckesregler definieras i Adobe Experience Platform. Se [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy).
 
-I Journey Optimizer kan du tillämpa dessa medgivandeprinciper på dina anpassade åtgärder. Du kan till exempel definiera regler för samtycke för att exkludera kunder som inte har samtyckt till att ta emot e-post, push eller SMS.
+I Journey Optimizer kan du tillämpa dessa medgivandeprinciper på dina anpassade åtgärder. Du kan till exempel definiera regler för samtycke för att exkludera kunder som inte har samtyckt till att ta emot e-post, push eller SMS-kommunikation.
 
 >[!NOTE]
 >
@@ -37,9 +37,9 @@ I Journey Optimizer kan man utnyttja samtycke i anpassade åtgärder. Om du vill
 
 Med samtyckeshantering analyseras två olika reseaktiviteter:
 
-* Läsare: den hämtade målgruppen beaktas.
-* Anpassad åtgärd: när det gäller hantering av samtycke beaktas de attribut som används ([åtgärdsparametrar](../action/about-custom-action-configuration.md#define-the-message-parameters)) och de definierade marknadsföringsåtgärderna (nödvändiga marknadsföringsåtgärder och ytterligare marknadsföringsåtgärder).
-* Attribut som är en del av en fältgrupp som använder det färdiga unionsschemat stöds inte. Dessa attribut döljs från gränssnittet. Du måste skapa en annan fältgrupp med ett annat schema.
+* Läsande målgrupp: den hämtade målgruppen beaktas.
+* Anpassad åtgärd: samtyckeshantering tar hänsyn till de attribut som används ([åtgärdsparametrar](../action/about-custom-action-configuration.md#define-the-message-parameters)) och de definierade marknadsföringsåtgärderna (nödvändiga marknadsföringsåtgärder och ytterligare marknadsföringsåtgärder).
+* Attribut som är en del av en fältgrupp som använder det färdiga unionsschemat stöds inte. De här attributen döljs i gränssnittet. Du måste skapa en annan fältgrupp med ett annat schema.
 * Samtyckesprinciper gäller bara när en marknadsföringsåtgärd (obligatorisk eller ytterligare) har ställts in på den anpassade åtgärdsnivån.
 
 Alla andra aktiviteter som används under en resa beaktas inte. Om du påbörjar en resa med en publikkompetens beaktas inte målgruppen.
@@ -99,7 +99,7 @@ The **Kanal** och **Obligatorisk marknadsföringsåtgärd**, som definieras när
 
 ![](assets/consent4.png)
 
-Du kan definiera en **Ytterligare marknadsföringsåtgärder** för att ange typ av anpassad åtgärd. På så sätt kan du definiera syftet med den anpassade åtgärden under den här resan. Utöver den nödvändiga marknadsföringsåtgärden, som vanligtvis är specifik för en kanal, kan ni definiera ytterligare en marknadsföringsåtgärd som är specifik för den anpassade åtgärden under den här resan. Till exempel: ett träningskommunikation, ett nyhetsbrev, ett friskvårdsmeddelande osv. Både den marknadsföringsåtgärd som krävs och den ytterligare marknadsföringsåtgärden gäller.
+Du kan definiera en **Ytterligare marknadsföringsåtgärder** för att ange typ av anpassad åtgärd. På så sätt kan du definiera syftet med den anpassade åtgärden under den här resan. Utöver den nödvändiga marknadsföringsåtgärden, som vanligtvis är specifik för en kanal, kan ni definiera ytterligare en marknadsföringsåtgärd som är specifik för den anpassade åtgärden under den här resan. Exempel: en träningskommunikation, ett nyhetsbrev, ett friskvårdsmeddelande osv. Både den marknadsföringsåtgärd som krävs och den ytterligare marknadsföringsåtgärden gäller.
 
 ![](assets/consent3.png)
 

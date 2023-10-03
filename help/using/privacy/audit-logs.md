@@ -32,7 +32,7 @@ Varje åtgärd registreras med metadata i &quot;granskningsloggar&quot; som är 
 
 ## Händelsetyper som hämtats av granskningsloggar {#events}
 
-Följande tabell visar vilka åtgärder som Journey Optimizer-resurser registreras på i granskningsloggar.
+Följande tabell visar vilka åtgärder som Journey Optimizer-resurser registreras på i granskningsloggarna.
 
 >[!NOTE]
 >

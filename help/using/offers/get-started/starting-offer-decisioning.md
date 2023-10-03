@@ -37,7 +37,7 @@ Några fördelar:
 
 >[!NOTE]
 >
->Om du är en [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} använder **offer decisioning** för programtjänsten gäller alla beslutsfunktioner som beskrivs i detta avsnitt även dig.
+>Om du är [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} använder **Offer decisioning** för programtjänsten gäller alla funktioner för beslutshantering som beskrivs i detta avsnitt även dig.
 
 ## Om erbjudanden och beslut {#about-offers-and-decisions}
 
@@ -69,7 +69,7 @@ Beslutshanteringsfunktionerna och integrationen med Adobe Experience Platform g�
 
 ## Bevilja åtkomst till beslutsledning {#granting-acess-to-decision-management}
 
-Behörigheter att komma åt och använda beslutsfunktioner hanteras med [Adobe Admin Console](https://helpx.adobe.com/se/enterprise/managing/user-guide.html){target="_blank"}.
+Behörigheter för att komma åt och använda beslutsfunktioner hanteras med [Adobe Admin Console](https://helpx.adobe.com/se/enterprise/managing/user-guide.html){target="_blank"}.
 
 Om du vill ge åtkomst till funktionen Beslutshantering måste du skapa en **[!UICONTROL Product profile]** och tilldela användarna motsvarande behörigheter. Läs mer om hantering [!DNL Journey Optimizer] användare och behörigheter i [det här avsnittet](../../administration/permissions.md).
 
@@ -83,7 +83,7 @@ Nedan finns en lista över de viktigaste koncept du kommer att arbeta med när d
 
 * **Samlingar**: samlingar är underuppsättningar av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare såsom erbjudandets kategori.
 
-* **Beslut**: Ett beslut innehåller den logik som ligger till grund för valet av ett erbjudande.
+* **Beslut**: Ett beslut innehåller den logik som ligger till grund för valet av erbjudande.
 
 * **Beslutsregel**: beslutsregler är begränsningar som läggs till på ett personaliserat erbjudande och tillämpas på en profil för att fastställa berättigande.
 

@@ -42,7 +42,7 @@ Stegen för att lägga till dynamiskt innehåll i uttryck är följande:
 
    ![](assets/conditions-language-sample.png)
 
-1. När innehållet är klart kan du förhandsgranska de olika varianterna med **[!UICONTROL Simulate content]** -knappen. [Lär dig hur du testar och förhandsgranskar meddelanden](../email/preview.md)
+1. När innehållet är klart kan du förhandsgranska de olika varianterna med **[!UICONTROL Simulate content]** -knappen. [Lär dig hur du testar och förhandsvisar meddelanden](../email/preview.md)
 
    ![](assets/conditions-preview.png)
 

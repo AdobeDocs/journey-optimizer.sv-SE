@@ -42,7 +42,7 @@ I Adobe Journey Optimizer kan du med OLAC skydda data och ge specifik åtkomst t
 
 >[!IMPORTANT]
 >
->För att kunna skapa etiketter måste du vara en del av en roll med **[!UICONTROL Manage usage labels]** behörighet.
+>Om du vill kunna skapa etiketter måste du vara en del av en roll med **[!UICONTROL Manage usage labels]** behörighet.
 
 **[!UICONTROL Labels]** gör att du kan kategorisera datauppsättningar och fält enligt de användarprofiler som gäller för dessa data. **[!UICONTROL Labels]** kan tillämpas när som helst, vilket ger flexibilitet i hur du väljer att styra data.
 
@@ -73,7 +73,7 @@ Ditt nyskapade **[!UICONTROL Label]** finns nu i listan. Om det behövs kan du �
 
 >[!IMPORTANT]
 >
->För att kunna tilldela etiketter måste du vara en del av en roll med behörigheten Hantera, dvs. [!DNL Manage journeys], [!DNL Manage Campaigns] eller [!DNL Manage decisions]. Utan denna tillåtelse **[!UICONTROL Manage access]** knappen blir nedtonad.
+>För att kunna tilldela etiketter måste du vara en del av en roll med behörigheten Hantera, dvs. [!DNL Manage journeys], [!DNL Manage Campaigns] eller [!DNL Manage decisions]. Utan den här behörigheten **[!UICONTROL Manage access]** knappen blir nedtonad.
 
 Så här tilldelar du anpassade eller grundläggande dataanvändningsetiketter till dina Journey Optimizer-objekt:
 
@@ -92,4 +92,4 @@ Så här tilldelar du anpassade eller grundläggande dataanvändningsetiketter t
 För att få åtkomst till det här objektet måste användarna ha den specifika **[!UICONTROL Label]** ingår i **[!UICONTROL Roles]**.
 En användare med etiketten C1 har till exempel bara åtkomst till objekt som är märkta eller omärkta med C1.
 
-Mer information om hur du tilldelar **[!UICONTROL Label]** till **[!UICONTROL Role]**, se [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/permissions.html#manage-labels-for-a-role).
+Mer information om tilldelning **[!UICONTROL Label]** till **[!UICONTROL Role]**, se [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/permissions.html#manage-labels-for-a-role).

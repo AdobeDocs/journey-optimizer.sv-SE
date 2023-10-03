@@ -7,8 +7,8 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-exl-id: d6ec55e5-e44e-4773-a561-d1bc0919ea04
-source-git-commit: 26456f7c2d879843eb533209377b83fc0ccb5617
+exl-id: 12168cdf-f517-49b5-958b-ba689ade6982
+source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 3%
@@ -140,7 +140,7 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
 </tr>
   <tr> 
    <td> Mjuk studsa<br/> </td> 
-   <td> Totalt antal tillfälliga fel, t.ex. en fullständig inkorg.<br/> </td> 
+   <td> Totalt antal tillfälliga fel, till exempel en fullständig inkorg.<br/> </td> 
 </tr>
   <tr> 
    <td> Skräppost<br/> </td> 
@@ -251,7 +251,7 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
 </tr>
   <tr> 
    <td> Öppnar<br/> </td> 
-   <td> Totalt antal push-meddelanden som levererats till enheten och användaren klickat på för att öppna appen. Detta liknar kommandot Push Click, men Push Open aktiveras inte om meddelandet stängs.<br/> </td> 
+   <td> Totalt antal push-meddelanden som levererats till enheten och användaren klickat på för att öppna appen. Det här liknar kommandot Push Click (Push-klicka), förutom att Push Open (Push Open) inte aktiveras om meddelandet stängs.<br/> </td> 
 </tr> 
   <tr> 
    <td> Skickat<br/> </td> 

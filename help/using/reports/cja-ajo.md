@@ -37,25 +37,25 @@ Innan du använder [!DNL Customer Journey Analytics] För dina resor måste du f
 1. [Skapa en anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html) in [!DNL Customer Journey Analytics] med **[!UICONTROL Dataset]** som du vill skicka till Adobe Experience Platform.
 
    Följande [!DNL Journey Optimizer] kan konfigureras:
-   * [Resestegshändelse](../data/datasets-query-examples.md#journey-step-event): låter er se vilka som deltar i era resor och hur långt de kommer.
+   * [Resestegshändelse](../data/datasets-query-examples.md#journey-step-event): låter dig se vilka som är med på resorna och hur långt de kommer.
    * [Meddelandefeedback/spårningsdata](../data/datasets-query-examples.md#message-feedback-event-dataset): gör att du kan visa leveransinformation om meddelanden som skickas via [!DNL Journey Optimizer].
-   * [Enhetsdata och resedatamängder](../data/datasets-query-examples.md#entity-dataset): I kan du söka efter egna namn och använda dem i din rapportering.
+   * [Enhetsdata och resedatamängder](../data/datasets-query-examples.md#entity-dataset): låter dig söka efter egna namn och använda dem i din rapportering.
 
 1. [Skapa en datavy](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html) för att konfigurera de dimensioner och mätvärden som du vill använda för rapporten.
 
    Ni kan skapa Journey Optimizer-specifika mätvärden för att bättre återspegla era resedata. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/integrations/ajo.html#configure-the-data-view-to-accommodate-journey-optimizer-dimensions-and-metrics)
 
-Använda [!DNL Journey Optimizer] med [!DNL Customer Journey Analytics] kan leda till vissa avvikelser i rapporteringen som orsakas av:
+Använda [!DNL Journey Optimizer] med [!DNL Customer Journey Analytics] kan leda till vissa avvikelser i rapporteringsdata som orsakas av:
 
 * **Båda [!DNL Journey Optimizer] och [!DNL Customer Journey Analytics] synkronisera data från Azure Data Lake Storage (ADLS) för rapportering.**
 
-   Bearbetningstiden för inkommande data kan skilja sig något mellan produkterna. På grund av detta kanske data inte matchar när rapporter från ett visst datum visas till den aktuella dagen. Använd datumintervall exklusive den aktuella dagen om du vill minska avvikelsen.
+  Bearbetningstiden för inkommande data kan skilja sig något mellan produkterna. På grund av detta kanske data inte matchar när rapporter från ett visst datum visas till den aktuella dagen. Använd datumintervall exklusive den aktuella dagen om du vill minska avvikelsen.
 
-* **I [!DNL Journey Optimizer] rapporter innehåller Skickat-måttet även Försök igen.**
+* **I [!DNL Journey Optimizer] -rapporter innehåller Skickat-mått även Försök igen-mått.**
 
-   **[!UICONTROL Retries]** kommer inte att inkluderas i **[!UICONTROL Sent]** mått in [!DNL Customer Journey Analytics]. Detta orsakar [!DNL Customer Journey Analytics] **[!UICONTROL Sent]** mått för att visa lägre värden än [!DNL Journey Optimizer]. Återförsöksdata konverteras dock till **[!UICONTROL Messages successfully sent]** eller **[!UICONTROL Bounces]** mätvärden.
+  **[!UICONTROL Retries]** kommer inte att inkluderas i **[!UICONTROL Sent]** mått in [!DNL Customer Journey Analytics]. Detta kommer att orsaka [!DNL Customer Journey Analytics] **[!UICONTROL Sent]** mått för att visa lägre värden än [!DNL Journey Optimizer]. Återförsöksdata konverteras dock till **[!UICONTROL Messages successfully sent]** eller **[!UICONTROL Bounces]** mätvärden.
 Använd datumintervall från en vecka sedan eller till och med senare för att minska diskrepansen.
 
 * **Rapporterna hanteras från en annan datakälla.**
 
-   Detta kan leda till dataavvikelser på 1-2 % mellan produkterna.
+  Detta kan leda till dataavvikelser på 1-2 % mellan produkterna.

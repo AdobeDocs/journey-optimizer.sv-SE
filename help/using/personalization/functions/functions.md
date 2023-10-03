@@ -27,7 +27,7 @@ I [!DNL Journey Optimizer] Uttrycksredigeraren, hjälpfunktionerna är grupperad
 
 Välj en kategori för att komma åt underkategorier och funktioner.
 
-Åtkomst till underkategorier genom att klicka på `>` ikon. Välj en funktion genom att klicka på `+` ikon: funktionen läggs automatiskt till på skärmen för anpassning.
+Åtkomst till underkategorier genom att klicka på `>` -ikon. Välj en funktion genom att klicka på `+` ikon: funktionen läggs automatiskt till på skärmen för anpassning.
 
 Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den i dina favoriter. [Läs mer](../personalize.md#fav)
 
@@ -82,13 +82,13 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
         <td><a href="arrays-list.md#notin">Inte i</a></td><td>Den här funktionen avgör om ett objekt inte är medlem i en array eller lista</td>
     </tr>
     <tr>
-        <td><a href="arrays-list.md#subset">Delmängd av</a></td><td>Den här funktionen avgör om en viss array (array A) är en delmängd av en annan array (array B), d.v.s. om alla element i array A är element i array B</td>
+        <td><a href="arrays-list.md#subset">Delmängd av</a></td><td>Den här funktionen avgör om en viss array (array A) är en delmängd av en annan array (array B), dvs. om alla element i array A är element i array B</td>
     </tr>
     <tr>
         <td><a href="aggregation.md#sum">Summa</a></td><td>Den här funktionen returnerar summan av alla markerade värden i arrayen</td>
     </tr>
     <tr>
-    <td><a href="arrays-list.md#superset">Supermängd till</a></td><td>Den här funktionen avgör om en viss array (array A) är en överordnad mängd till en annan array (array B), d.v.s. om den arrayen A innehåller alla element i array B</td>
+    <td><a href="arrays-list.md#superset">Supermängd till</a></td><td>Den här funktionen avgör om en viss array (array A) är en överordnad mängd till en annan array (array B), dvs. om den arrayen A innehåller alla element i array B</td>
     </tr>
 </table>
 
@@ -114,7 +114,7 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
         <td><a href="dates.md#format-date">Formateringsdatum</a></td><td>Den här funktionen formaterar ett datum-/tidsvärde</td>
     </tr>
     <tr>
-        <td><a href="dates.md#format-date-locale">Formatera datum med språkstöd</a></td><td>Den här funktionen formaterar ett datum- och tidsvärde till motsvarande språkkänsliga representation, dvs. i önskad språkinställning.</td>
+        <td><a href="dates.md#format-date-locale">Formatera datum med språkstöd</a></td><td>Den här funktionen formaterar ett datum- och tidsvärde till motsvarande språkkänsliga representation, dvs. i ett önskat språkområde.</td>
     </tr>
     <tr>
         <td><a href="dates.md#set-days">Ange dagar</a></td><td>Den här funktionen anger dag i månaden för angivet datum/tid</td>
@@ -226,7 +226,7 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
         <td><a href="string.md#equalsIgnoreCase">Lika med Ignorera skiftläge</a></td><td>Den här funktionen används för att avgöra om en sträng inte börjar med en angiven delsträng, utan skiftlägeskänslighet</td>
     </tr>
     <tr>
-        <td><a href="string.md#extractEmailDomain">Extrahera e-postdomän</a></td><td>Den här funktionen används för att extrahera domänen för en e-postadress</td>
+        <td><a href="string.md#extractEmailDomain">Extract Email Domain</a></td><td>Den här funktionen används för att extrahera domänen för en e-postadress</td>
     </tr>
     <tr>
         <td><a href="string.md#format-currency">Formatera valuta</a></td><td>Den här funktionen konverterar alla tal till motsvarande språkkänsliga valutarepresentation beroende på vilket språk som skickas som en sträng i det andra argumentet</td>
@@ -241,7 +241,7 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
         <td><a href="string.md#get-url-protocol">Hämta URL-protokoll</a></td><td>Den här funktionen används för att hämta URL-protokoll</td>
     </tr>
     <tr>
-        <td><a href="string.md#index-of">index för</a></td><td>Den här funktionen returnerar positionen (i det första argumentet) för den första förekomsten av den andra parametern. Returnerar -1 om det inte finns någon matchning</td>
+        <td><a href="string.md#index-of">index för</a></td><td>Den här funktionen returnerar positionen (i det första argumentet) för den första förekomsten av den andra parametern. Returnerar -1 om ingen matchning finns</td>
     </tr>
     <tr>
         <td><a href="string.md#isEmpty">IsEmpty</a></td><td>Den här funktionen används för att kontrollera om en sträng eller ett uttryck är tomt.</td>
@@ -370,7 +370,7 @@ Aritmetiska funktioner används för att utföra grundläggande beräkningar på
 
 <table>
     <tr>
-        <td><a href="arithmetic-functions.md#add">Tillägg</a></td><td>Den här operatorn används för att hitta summan av två argumentuttryck</td>
+        <td><a href="arithmetic-functions.md#add">Tillägg</a></td><td>Operatorn används för att hitta summan av två argumentuttryck</td>
     </tr>
     <tr>
         <td><a href="arithmetic-functions.md#divide">Dela</a></td><td>Den här operatorn används för att hitta kvoten av två argumentuttryck</td>
@@ -410,13 +410,13 @@ Jämförelsefunktioner används för att jämföra mellan olika uttryck och vär
         <td><a href="operators.md#equals">Är lika med</a></td><td>Den här åtgärden kontrollerar om värdena är lika</td>
     </tr>
     <tr>
-        <td><a href="operators.md#greaterthan">Greater than</a></td><td>Den här operatorn kontrollerar om det första värdet är större än det andra värdet</td>
+        <td><a href="operators.md#greaterthan">Greater than</a></td><td>Operatorn kontrollerar om det första värdet är större än det andra värdet</td>
     </tr>
     <tr>
-        <td><a href="operators.md#greaterthanorequal">Större eller lika med</a></td><td>Den här operatorn kontrollerar om det första värdet är större än eller lika med det andra värdet</td>
+        <td><a href="operators.md#greaterthanorequal">Större eller lika med</a></td><td>Operatorn kontrollerar om det första värdet är större än eller lika med det andra värdet</td>
     </tr>
     <tr>
-        <td><a href="operators.md#lessthanorequal">Mindre än eller lika med</a> </td><td>Den här operatorn kontrollerar om det första värdet är mindre än eller lika med det andra värdet</td>
+        <td><a href="operators.md#lessthanorequal">Mindre än eller lika med</a> </td><td>Operatorn kontrollerar om det första värdet är mindre än eller lika med det andra värdet</td>
     </tr>
     <tr>
         <td><a href="operators.md#notequal">Inte lika med</a></td><td>Den här operatorn kontrollerar om det angivna uttrycket inte är lika med värdet</td>

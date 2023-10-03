@@ -44,11 +44,11 @@ Följ stegen nedan när du vill börja skapa innehåll med någon av exempelmall
 
 1. På **[!UICONTROL Create your email]** skärm, **[!UICONTROL Sample templates]** -fliken är markerad som standard.
 
-1. Om du vill använda en anpassad mall går du till **[!UICONTROL Saved templates]** -fliken.
+1. Gå till **[!UICONTROL Saved templates]** -fliken.
 
    ![](assets/email_designer-saved-templates-tab.png)
 
-1. Listan med alla [innehållsmallar](content-templates.md#create-content-templates) som har skapats i den aktuella sandlådan visas. Du kan sortera dem **[!UICONTROL By name]**, **[!UICONTROL Last modified]** och **[!UICONTROL Last created]**.
+1. Listan med alla [mallar](content-templates.md#create-content-templates) som har skapats i den aktuella sandlådan visas. Du kan sortera dem **[!UICONTROL By name]**, **[!UICONTROL Last modified]** och **[!UICONTROL Last created]**.
 
    ![](assets/email_designer-saved-templates-filter.png)
 

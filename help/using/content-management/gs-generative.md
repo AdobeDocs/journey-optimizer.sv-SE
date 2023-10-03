@@ -10,7 +10,8 @@ level: Beginner
 badge: label="Beta" type="Informative"
 hide: true
 hidefromtoc: true
-source-git-commit: b99d77138f22839b40414979d36e26d7304947b1
+exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
+source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
@@ -48,4 +49,3 @@ Använd Content Assist för att optimera budskapets genomslagskraft genom att ex
 >[!AVAILABILITY]
 >
 >Adobe Journey Optimizer Content Assistent är för närvarande endast tillgängligt som betaversion för vissa användare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
-

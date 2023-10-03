@@ -20,7 +20,7 @@ ht-degree: 3%
 En resa kan ta slut för en individ i två specifika sammanhang:
 
 * Personen kommer till den sista aktiviteten i en bana.
-* Personen kommer till **Villkor** aktivitet (eller **Vänta** aktivitet med ett villkor) och matchar inte något av villkoren.
+* Personen kommer till en **Villkor** aktivitet (eller **Vänta** aktivitet med ett villkor) och matchar inte något av villkoren.
 
 Personen kan sedan återinträda i resan om återinträde tillåts. Läs [den här sidan](../building-journeys/journey-gs.md#change-properties)
 
@@ -67,7 +67,7 @@ Om du vill stänga en resa från listan över resor klickar du på **[!UICONTROL
 Du kan även:
 
 1. I **[!UICONTROL Journeys]** klickar du på den resa du vill stänga.
-1. Klicka på nedpilen längst upp till höger.
+1. Klicka på nedpilen i det övre högra hörnet.
 
    ![](assets/finish_drop_down_list.png)
 
@@ -75,7 +75,7 @@ Du kan även:
 
 ## Stoppa en resa{#stop-journey}
 
-Om ni behöver stoppa alla personers framsteg på resan kan ni stoppa den. Om du stoppar resan kommer alla personer på resan att tidsgränsen för timeout. Att stoppa en resa innebär dock att alla som redan har tagit sig in på en resa stoppas under resan. Resan är i stort sett avstängd. Om du vill avsluta en resa rekommenderar vi att du stänger den.
+Om ni behöver stoppa alla enskilda personers framsteg på resan kan ni stoppa den. Om du stoppar resan kommer alla personer på resan att tidsgränsen för timeout. Att stoppa en resa innebär dock att alla som redan har tagit sig in på en resa stoppas under resans gång. Resan är i stort sett avstängd. Om du vill avsluta en resa rekommenderar vi att du stänger den.
 
 Det går inte att starta om en stoppad reseversion.
 

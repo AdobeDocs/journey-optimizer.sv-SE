@@ -7,8 +7,8 @@ feature: Overview
 topic: Content Management
 role: User
 level: Intermediate
-exl-id: 0d09f7d7-d0a4-4831-90e8-8c2062de06b9
-source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
+exl-id: 6151aea2-6a34-4000-ba48-161efe4d94d7
+source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 9%

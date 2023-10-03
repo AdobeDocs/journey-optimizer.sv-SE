@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Kom igång med innehållsexperiment
-description: Läs mer om att experimentera med innehåll i Journey Optimizer
+description: Läs mer om innehållsexperiment i Journey Optimizer
 feature: A/B Testing
 topic: Content Management
 role: User
@@ -28,22 +28,22 @@ Experiment är en uppsättning randomiserade prövningar, som i samband med onli
 
 ![](assets/content_experiment_schema.png)
 
-Experimentera för att isolera de ändringar som leder till förbättringar av mätvärdena. Se bilden ovan: vissa slumpmässigt utvalda användare exponeras för varje behandlingsgrupp vilket innebär att grupperna i genomsnitt har samma egenskaper. Skillnader i utfall kan således tolkas som att de beror på skillnader i behandlingarna, dvs. att du kan fastställa ett orsakssamband mellan de ändringar du gjort och de utfall du är intresserad av.
+Experimentera för att isolera de ändringar som leder till förbättringar av mätvärdena. Som framgår av bilden ovan: vissa slumpmässigt utvalda användare exponeras för varje behandlingsgrupp, vilket innebär att grupperna i genomsnitt har samma egenskaper. Skillnader i utfall kan således tolkas som att de beror på skillnader i behandlingarna, dvs. att du kan fastställa ett orsakssamband mellan de ändringar du gjort och de utfall du är intresserad av.
 
 På så sätt kan ni fatta datadrivna beslut för att optimera era era affärsmål.
 
-För Content Experimentes i Adobe Journey Optimizer kan du testa idéer som:
+I Adobe Journey Optimizer kan du testa idéer som:
 
 * **Subject line**: Vilka konsekvenser kan en ändring av tonen eller graden av personalisering av en ämnesrad få?
 * **Meddelandeinnehåll**: Kommer en ändring av den visuella layouten för ett e-postmeddelande att resultera i fler klick på e-postmeddelandet?
 
-## Hur fungerar innehållsexperiment? {#content-experiment-work}
+## Hur fungerar innehållsexperimenten? {#content-experiment-work}
 
 ### Slumpmässig tilldelning
 
 Innehållsexperiment i Adobe Journey Optimizer använder en pseudoslumpmässig hash av besöksidentiteten för att slumpmässigt tilldela användare i målgruppen en av de behandlingar som du har definierat. Hash-mekanismen säkerställer att besökarna får samma behandling i scenarier där besökaren går in i en kampanj flera gånger.
 
-MumurHash3 32-bitarsalgoritmen används i detalj för att hash-koda användaridentitetssträngen till en av 10 000 bucket. I ett innehållsexperiment, där 50% av all trafik tilldelas till varje behandling, får användare som hamnar i bucket 1-5 000 den första behandlingen, medan användare i bucketerna 5 001-10 000 får den andra behandlingen. Eftersom pseudoslumpmässiga hashningar används kanske den delade besökaren som du observerar inte är exakt 50-50. delningen är dock statistiskt likvärdig med måldelningsprocenten.
+MumurHash3 32-bitarsalgoritmen används i detalj för att hash-koda användaridentitetssträngen till en av 10 000 bucket. I ett innehållsexperiment, där 50% av all trafik tilldelas till varje behandling, får användare som hamnar i bucket 1-5 000 den första behandlingen, medan användare i bucketerna 5 001-10 000 får den andra behandlingen. Eftersom pseudoslumpmässiga hashningar används kanske den delade besökaren inte är exakt 50-50, men delningen är ändå statistiskt likvärdig med måldelningsprocenten.
 
 Observera att du måste välja ett identitetsnamnutrymme som userId väljs från för slumpgenereringsalgoritmen när du konfigurerar varje kampanj med ett innehållsexperiment. Detta är oberoende av [körningsadresser](../configuration/primary-email-addresses.md).
 
@@ -54,7 +54,7 @@ Vid tidpunkten för tilldelningen, dvs. när meddelandet skickas i utgående kan
 Målsättningsstatistik kan grupperas i två huvudklasser:
 
 * Direktmått, där användaren reagerar direkt på behandlingen, t.ex. öppnar ett e-postmeddelande eller klickar på en länk.
-* Indirekt eller &quot;bottenströms&quot;-statistik som inträffar efter att användaren har exponerats för behandlingen.
+* Indirekt eller &quot;bottenströms&quot;-statistik, som inträffar efter att användaren har exponerats för behandlingen.
 
 För direkta objektiva mätvärden där Adobe Journey Optimizer spårar era meddelanden taggas slutanvändarnas svarshändelser automatiskt med kampanj- och behandlingsidentifierarna, vilket möjliggör direkt koppling av svarsmätningen med en behandling. [Läs mer om spårning](../email/message-tracking.md).
 
@@ -95,7 +95,7 @@ Antalet användare som måste ingå i ditt experiment beror på vilken effektsto
 
 +++Förstå statistisk osäkerhet
 
-Om du kör ett experiment där 1 000 användare har fått en behandling, och konverteringsgraden är inställd på 5 %. Skulle detta vara den faktiska konverteringsgraden om alla användare ingick? Vad skulle vara den faktiska konverteringsgraden?
+Om du kör ett experiment där 1 000 användare har fått en behandling, och konverteringsgraden är inställd på 5 %. Skulle detta vara den faktiska konverteringsgraden om alla användare inkluderades? Vad skulle vara den faktiska konverteringsgraden?
 Statistiska metoder ger oss ett sätt att formalisera den osäkerheten. En av de viktigaste begreppen när du kör onlineexperiment är att de konverteringsgrader som observeras är förenliga med en rad underliggande sanna konverteringsgrader, vilket innebär att du måste vänta tills beräkningarna är tillräckligt exakta innan du försöker dra några slutsatser. Konfidensintervall och Förtroende hjälper oss att kvantifiera denna osäkerhet.
 +++
 
@@ -149,7 +149,7 @@ Du bör fokusera på **[!UICONTROL Confidence interval]** För varje behandlings
 
 Adobe använder &quot;Anytime Valid&quot; Confidence, och &quot;Anytime Valid&quot; p-värden som överensstämmer med de Confidence Sequences som beskrivs ovan.
 
-### 4. Statistisk signifikans
+### 4. Statistisk betydelse
 
 Vid användning av Experiment anses ett resultat vara statistiskt signifikant om det var mycket osannolikt att det skulle ha observerats med en nollhypotes om att en viss behandling och baslinjen har identiska verkliga underliggande konverteringsgrader/resultat.
 

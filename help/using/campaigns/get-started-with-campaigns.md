@@ -46,11 +46,11 @@ Kontrollera följande innan du börjar skapa din första kampanj i Journey Optim
 
    +++Lär dig hur du tilldelar kampanjbehörigheter
 
-   Tilldela motsvarande **[!UICONTROL Product profile]** till användarna:
+   Tilldela motsvarande **[!UICONTROL Product profile]** till dina användare:
 
    1. Från [Adobe Admin Console](https://adminconsole.adobe.com/){target="_blank"}väljer du [!DNL Adobe Experience Platform] produkt.
 
-   1. Bläddra till **[!UICONTROL Product profile]** väljer du en av de inbyggda kampanjrelaterade **[!UICONTROL Product profile]**: Kampanjadministratör, Kampanjgodkännare, Kampanjhanterare eller Kampanjvisningsprogram.
+   1. Gå till **[!UICONTROL Product profile]** väljer du en av de inbyggda kampanjrelaterade **[!UICONTROL Product profile]**: Kampanjadministratör, Kampanjgodkännare, Kampanjhanterare eller Kampanjvisningsprogram.
 
       Mer information om Journey Optimizer kampanj **[!UICONTROL Product profiles]** och **[!UICONTROL Permissions]**, [hänvisa till denna sida](../administration/ootb-product-profiles.md).
 
@@ -71,6 +71,6 @@ Kontrollera följande innan du börjar skapa din första kampanj i Journey Optim
 
 ## Instruktionsvideo {#video}
 
-Lär dig hur du skapar din första kampanj.
+Lär dig skapa din första kampanj.
 
 >[!VIDEO](https://video.tv.adobe.com/v/346680?quality=12)

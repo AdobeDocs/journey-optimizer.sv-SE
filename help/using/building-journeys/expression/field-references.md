@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Fältreferenser
-description: Lär dig mer om fältreferenser i avancerade uttryck
+description: Läs mer om fältreferenser i avancerade uttryck
 feature: Journeys
 role: Data Engineer, Architect
 level: Experienced
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Fältreferenser {#field-references}
 
-En fältreferens kan bifogas till en händelse eller fältgrupp. Den enda meningsfulla informationen är fältets namn och sökväg.
+En fältreferens kan bifogas till en händelse eller en fältgrupp. Den enda meningsfulla informationen är fältets namn och sökväg.
 
 Om du använder specialtecken i ett fält måste du använda dubbla citattecken eller enkla citattecken. Här är de fall där citattecken behövs:
 
@@ -39,7 +39,7 @@ Om fältet till exempel är _3 tim_: _#{OpenWeather.westData.rain.&#39;3h&#39;} 
 
 I uttrycket refereras händelsefält till&quot;@&quot; och datakällfält refereras till med &quot;#&quot;.
 
-En syntaxfärg används för att visuellt skilja händelsefält (grönt) från fältgrupper (blått).
+En syntaxfärg används för att visuellt skilja händelsefält (gröna) från fältgrupper (blå).
 
 ## Standardvärden för fältreferenser {#default-value}
 
@@ -56,7 +56,7 @@ Ett standardvärde kan associeras med ett fältnamn. Syntaxen är följande:
 
 >[!NOTE]
 >
->Fälttypen och standardvärdet måste vara samma. Till exempel @{LobbyBeacon.endUserID:n._experience.email.id, defaultValue : 2} är ogiltigt eftersom standardvärdet är ett heltal medan det förväntade värdet ska vara en sträng.
+>Fälttypen och standardvärdet måste vara samma. Till exempel @{LobbyBeacon.endUserID:n._experience.emailid.id, defaultValue : 2} blir ogiltigt eftersom standardvärdet är ett heltal medan det förväntade värdet ska vara en sträng.
 
 Exempel:
 
@@ -129,11 +129,11 @@ I det här exemplet visas hur du hämtar den första e-postadressen för prenume
 #{ExperiencePlatform.Subscriptions.profile.consents.marketing.email.subscriptions.entry('daily-email').subscribers.firstEntryKey()}
 ```
 
-I det här exemplet heter prenumerationslistan `daily-email`. E-postadresser definieras som nycklar i `subscribers` karta, som är länkad till prenumerationslistan.
+I det här exemplet heter prenumerationslistan `daily-email`. E-postadresser definieras som nycklar i `subscribers` karta, som är länkad till prenumerationslistans karta.
 
 ### `keys` funktion
 
-Använd knappen `keys` funktion.
+Om du vill hämta nycklarna för en karta använder du `keys` funktion.
 
 I det här exemplet visas hur du hämtar, för en viss profil, alla e-postadresser som är kopplade till prenumeranterna i en viss lista:
 

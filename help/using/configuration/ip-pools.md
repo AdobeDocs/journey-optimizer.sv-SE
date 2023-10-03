@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Skapa IP-pooler
-description: Lär dig hur du hanterar IP-pooler
+description: Lär dig hantera IP-pooler
 feature: Application Settings
 topic: Administration
 role: Admin
@@ -109,7 +109,7 @@ Uppdateringen träder i kraft omedelbart eller asynkront, beroende på vilken IP
 >
 >När [skapa en kanalyta](channel-surfaces.md#create-channel-surface), om du väljer en IP-pool som ingår i utgåvan (**[!UICONTROL Processing]** status) och aldrig har associerats med den underdomän som har valts för den ytan, kan du inte fortsätta med att skapa en yta. [Läs mer](channel-surfaces.md#subdomains-and-ip-pools)
 
-Om du vill kontrollera IP-poolens uppdateringsstatus klickar du på **[!UICONTROL More actions]** och markera **[!UICONTROL Recent updates]**.
+Om du vill kontrollera IP-poolens uppdateringsstatus klickar du på **[!UICONTROL More actions]** knapp och markera **[!UICONTROL Recent updates]**.
 
 ![](assets/ip-pool-recent-update.png)
 
@@ -118,7 +118,6 @@ Om du vill kontrollera IP-poolens uppdateringsstatus klickar du på **[!UICONTRO
 >När en IP-pool har uppdaterats kan du behöva vänta:
 >* några minuter innan det konsumeras av enhetsmeddelanden,
 >* till nästa batch för att IP-poolen ska börja gälla i batchmeddelanden.
-
 
 Du kan också använda **[!UICONTROL Delete]** för att ta bort en IP-pool. Observera att du inte kan ta bort en IP-pool som har kopplats till en kanalyta.
 

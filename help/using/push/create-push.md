@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Konfigurera ett push-meddelande
-description: Lär dig hur du skapar ett push-meddelande i Journey Optimizer
+description: Lär dig skapa ett push-meddelande i Journey Optimizer
 feature: Overview
 topic: Content Management
 role: User
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 ## Skapa push-meddelanden i en resa eller kampanj {#create}
 
-Så här skapar du ett push-meddelande:
+Följ stegen nedan för att skapa ett push-meddelande:
 
 >[!BEGINTABS]
 
@@ -44,7 +44,7 @@ Så här skapar du ett push-meddelande:
 
    Mer information om hur du konfigurerar en resa finns i [den här sidan](../building-journeys/journey-gs.md)
 
-1. På skärmen för konfiguration av resan klickar du på **[!UICONTROL Edit content]** för att konfigurera push-innehållet. [Utforma ett push-meddelande](design-push.md)
+1. Klicka på knappen **[!UICONTROL Edit content]** för att konfigurera push-innehållet. [Utforma ett push-meddelande](design-push.md)
 
 1. När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det.
 
@@ -81,7 +81,7 @@ Så här skapar du ett push-meddelande:
    * Veckovis
    * Månadsvis
 
-1. Klicka på knappen **[!UICONTROL Edit content]** för att konfigurera push-innehållet. [Utforma ett push-meddelande](design-push.md)
+1. På skärmen för kampanjkonfiguration klickar du på **[!UICONTROL Edit content]** för att konfigurera push-innehållet. [Utforma ett push-meddelande](design-push.md)
 
 1. När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det.
 
@@ -113,7 +113,7 @@ Mer information om prestanda när du använder läget Snabb leverans finns i [Ad
 
 Snabba leveransmeddelanden innehåller följande krav:
 
-* Snabb leverans av **[!UICONTROL Scheduled]** endast kampanjer och inte för API-utlösta kampanjer,
+* Snabb leverans finns för **[!UICONTROL Scheduled]** endast kampanjer och inte för API-utlösta kampanjer,
 * Ingen personalisering tillåts i push-meddelandet,
 * Målgruppen måste innehålla färre än 30M profiler,
 * Du kan köra upp till 5 kampanjer samtidigt i läget Snabb leverans.
@@ -124,7 +124,7 @@ Snabba leveransmeddelanden innehåller följande krav:
 
 ![](assets/create-campaign-burst.png)
 
-1. Konfigurera meddelandeinnehållet och välj målgrupp. [Lär dig hur du skapar en kampanj](#create)
+1. Konfigurera meddelandeinnehållet och välj målgrupp. [Lär dig skapa en kampanj](#create)
 
    >[!IMPORTANT]
    >

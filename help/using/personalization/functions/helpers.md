@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Hjälpmedel {#gs-helpers}
 
-## Standardvärde för reservalternativ{#default-value}
+## Standardvärde för reserv{#default-value}
 
 The `Default Fallback Value` hjälpfunktionen används för att returnera ett standardreservvärde om ett attribut är tomt eller null. Den här mekanismen fungerar för profilattribut och resthändelser.
 
@@ -135,7 +135,7 @@ Some edu specific content Content
 
 The `each` helper används för att iterera över en array.
 Hjälpens syntax är ```{{#each ArrayName}}``` Ditt innehåll {{/each}}
-Vi kan referera till de enskilda arrayobjekten med hjälp av nyckelordet **this** inuti blocket. Index för arrayens element kan återges med {{@index}}.
+Vi kan referera till de enskilda arrayobjekten med nyckelordet **this** inuti blocket. Index för arrayens element kan återges med {{@index}}.
 
 **Syntax**
 

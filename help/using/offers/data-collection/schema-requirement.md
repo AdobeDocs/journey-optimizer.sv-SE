@@ -102,7 +102,7 @@ För anpassade händelser måste schemat som används i datauppsättningen ocks�
 
 >[!NOTE]
 >
->Om du vill att dina anpassade händelser ska beaktas i [frekvensbegränsning](../offer-library/add-constraints.md#capping)måste du ansluta upplevelsehändelsen till Adobe Experience Platform-slutpunkter genom att skicka den till någon av dessa två Edge-datainsamlingsslutpunkter:
+>Om du vill att dina anpassade händelser ska räknas med i [frekvensbegränsning](../offer-library/add-constraints.md#capping)måste du ansluta upplevelsehändelsen till Adobe Experience Platform-slutpunkter genom att skicka den till någon av dessa två Edge-datainsamlingsslutpunkter:
 >
 >* POST /ee/v2/interact
 >* POST /ee/v2/collect

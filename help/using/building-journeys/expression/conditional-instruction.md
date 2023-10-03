@@ -19,9 +19,9 @@ ht-degree: 0%
 
 Den villkorliga instruktionen (if, then, else) stöds i den avancerade redigeraren. Det gör det möjligt att definiera mer komplexa uttryck. Den består av följande element:
 
-* **[!UICONTROL if]**: villkoret som ska utvärderas först.
-* **[!UICONTROL then]**: uttrycket som ska utvärderas om resultatet av villkorsutvärderingen är sant.
-* **[!UICONTROL else]**: uttrycket som ska utvärderas om resultatet av villkorsutvärderingen är false.
+* **[!UICONTROL if]**: det villkor som ska utvärderas först.
+* **[!UICONTROL then]**: det uttryck som ska utvärderas om resultatet av villkorsutvärderingen är sant.
+* **[!UICONTROL else]**: det uttryck som ska utvärderas om resultatet av villkorsutvärderingen är false.
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ listString,listString : listString
 
 **Användning**
 
-Med den villkorliga instruktionen kan du optimera arbetsflödet för resan genom att minska antalet villkorsaktiviteter. I samma åtgärdsaktivitet kan du till exempel ange två alternativ för en fältdefinition genom att bara använda ett villkorsuttryck.
+Med den villkorliga instruktionen kan du optimera arbetsflödet för resan genom att minska antalet villkorsaktiviteter. I samma åtgärdsaktivitet kan du till exempel ange två alternativ för en fältdefinition med bara ett villkorsuttryck.
 
 Exempel för en åtgärdsaktivitet (för ett fält som förväntar en sträng som ett resultat av den villkorliga instruktionen):
 

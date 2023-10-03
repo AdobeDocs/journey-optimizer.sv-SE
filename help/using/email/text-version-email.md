@@ -24,7 +24,7 @@ Som standard skapar e-postdesignern en **[!UICONTROL Plain text]** version av e-
 
 Om du föredrar att använda ett annat innehåll för den oformaterade textversionen följer du stegen nedan:
 
-1. I ditt e-postmeddelande väljer du **[!UICONTROL Plain text]** ikon.
+1. I ditt e-postmeddelande väljer du **[!UICONTROL Plain text]** -ikon.
 
    ![](assets/text_version_3.png)
 
@@ -43,4 +43,3 @@ Om du föredrar att använda ett annat innehåll för den oformaterade textversi
 >* Ändringar gjorda i **[!UICONTROL Plain text]** vyn inte visas i HTML.
 >
 >* Om du aktiverar **[!UICONTROL Sync with HTML]** när du har uppdaterat oformaterad text kommer ändringarna att gå förlorade och ersättas med textinnehåll som genererats från HTML-versionen.
-

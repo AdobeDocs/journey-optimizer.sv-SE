@@ -7,8 +7,8 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-exl-id: 05f74838-6766-47ea-aaed-a67c174a51a9
-source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
+exl-id: 8869f00d-47c5-4243-a199-a0c681f37c14
+source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 2%
@@ -274,4 +274,3 @@ Följ stegen nedan för att bryta arv:
 Lär dig hur du hanterar, redigerar och använder fragment i [!DNL Journey Optimizer].
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419932/?quality=12)
-

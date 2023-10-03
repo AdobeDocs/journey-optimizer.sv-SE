@@ -65,7 +65,7 @@ Om du vill ange värdet för dynamiska huvud- och frågeparameterfält klickar d
 
 ## Åtgärdsparametrar
 
-I **[!UICONTROL Action parameters]** visas meddelandeparametrar som _&quot;Variabel&quot;_. För de här parametrarna kan du definiera var informationen ska hämtas (exempel: händelser, datakällor), skicka värden manuellt eller använd den avancerade uttrycksredigeraren för avancerade användningsområden. Avancerade användningsområden kan vara datahantering och annan funktionsanvändning. Se detta [page](expression/expressionadvanced.md).
+I **[!UICONTROL Action parameters]** visas meddelandeparametrar som _&quot;Variabel&quot;_. För de här parametrarna kan du definiera var informationen ska hämtas (till exempel händelser, datakällor), skicka värden manuellt eller använda den avancerade uttrycksredigeraren för avancerade användningsfall. Avancerade användningsområden kan vara datahantering och annan funktionsanvändning. Se detta [page](expression/expressionadvanced.md).
 
 **Relaterade ämnen**
 

@@ -16,61 +16,61 @@ ht-degree: 4%
 ---
 
 
-# Användningsfall: skicka samlingar dynamiskt med anpassade åtgärder{#passing-collection}
+# Använd skiftläge: skicka samlingar dynamiskt med anpassade åtgärder{#passing-collection}
 
 Du kan skicka en samling i anpassade åtgärdsparametrar som fylls i dynamiskt vid körning. Två sorters samlingar stöds:
 
 * enkla samlingar: arrayer med enkla datatyper, till exempel med en listString:
 
-   ```
-   {
-    "deviceTypes": [
-        "android",
-        "ios"
-    ]
-   }
-   ```
+  ```
+  {
+   "deviceTypes": [
+       "android",
+       "ios"
+   ]
+  }
+  ```
 
 * objektsamlingar: en array med JSON-objekt, till exempel:
 
-   ```
-   {
-   "products":[
-      {
-         "id":"productA",
-         "name":"A",
-         "price":20.1
-      },
-      {
-         "id":"productB",
-         "name":"B",
-         "price":10.0
-      },
-      {
-         "id":"productC",
-         "name":"C",
-         "price":5.99
-      }
-    ]
-   }
-   ```
-
-## Begränsningar {#limitations}
-
-* Kapslade arrayer med objekt i en objektarray stöds för närvarande inte. Exempel:
-
-   ```
-   {
-   "products":[
+  ```
+  {
+  "products":[
      {
         "id":"productA",
         "name":"A",
-        "price":20,
-        "locations": [{"name": "Paris"}, {"name": "London"}]
+        "price":20.1
      },
-    ]
-   }
-   ```
+     {
+        "id":"productB",
+        "name":"B",
+        "price":10.0
+     },
+     {
+        "id":"productC",
+        "name":"C",
+        "price":5.99
+     }
+   ]
+  }
+  ```
+
+## Begränsningar {#limitations}
+
+* Kapslade arrayer med objekt i en objektarray stöds inte för närvarande. Exempel:
+
+  ```
+  {
+  "products":[
+    {
+       "id":"productA",
+       "name":"A",
+       "price":20,
+       "locations": [{"name": "Paris"}, {"name": "London"}]
+    },
+   ]
+  }
+  ```
 
 * Om du vill testa samlingar i testläge måste du använda kodvisningsläget. Kodvyn stöds för närvarande inte för affärshändelser. Du kan bara skicka en samling med ett enda element.
 

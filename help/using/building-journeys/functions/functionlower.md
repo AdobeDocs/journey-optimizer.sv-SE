@@ -1,7 +1,7 @@
 ---
 product: journey optimizer
 title: nedre
-description: Lär dig mer om funktionen längre ned
+description: Läs mer om funktionen längre ned
 feature: Journeys
 role: Data Engineer, Architect
 level: Experienced

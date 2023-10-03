@@ -16,7 +16,7 @@ ht-degree: 8%
 
 # setDays {#setDays}
 
-Anger endast dag för datum och tid. Om du till exempel vill vänta till en viss dag i månaden kan du tvinga fram dagen.
+Anger endast dag för datum och tid. Om du t.ex. vill vänta till en viss dag i månaden kan du tvinga fram dagen.
 
 ## Kategori
 

@@ -59,7 +59,7 @@ Mer information om hur du konfigurerar en resa finns i [den här sidan](../build
 
 1. Klicka på **[!UICONTROL Create]**.
 
-1. Slutför stegen för att skapa en e-postkampanj, till exempel kampanjegenskaperna, [publik](../audience/about-audiences.md)och [schema](../campaigns/create-campaign.md#schedule).
+1. Slutför stegen för att skapa en e-postkampanj, t.ex. kampanjegenskaperna, [publik](../audience/about-audiences.md)och [schema](../campaigns/create-campaign.md#schedule).
 
    ![](assets/email_campaign_steps.png)
 
@@ -92,7 +92,7 @@ Mer information om hur du konfigurerar en kampanj finns i [den här sidan](../ca
 
 1. Du kan lägga till en ämnesrad. Skriv oformaterad text direkt i motsvarande fält eller använd [Uttrycksredigerare](../personalization/personalization-build-expressions.md) för att personalisera ämnesraden.
 
-1. Klicka på **[!UICONTROL Edit email body]** för att börja bygga innehåll med [!DNL Journey Optimizer] E-postdesigner. [Läs mer](get-started-email-design.md)
+1. Klicka på **[!UICONTROL Edit email body]** för att börja bygga ditt innehåll med [!DNL Journey Optimizer] E-postdesigner. [Läs mer](get-started-email-design.md)
 
    ![](assets/email_designer_edit_email_body.png)
 
@@ -112,7 +112,7 @@ När du utformar meddelanden visas varningar i gränssnittet (längst upp till h
 
 >[!NOTE]
 >
->Om knappen inte visas har ingen varning identifierats.
+>Om du inte ser den här knappen har ingen varning identifierats.
 
 De inställningar och element som kontrolleras av systemet visas nedan. Du hittar även information om hur du anpassar konfigurationen för att lösa motsvarande problem.
 
@@ -126,7 +126,7 @@ Två typer av varningar kan inträffa:
      >
      >E-postmeddelanden av marknadsföringstyp måste innehålla en länk för avanmälan, vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [kanalyta](email-settings.md#email-type) nivå och när [skapar meddelandet](#create-email-journey-campaign) från en resa eller en kampanj.
 
-   * **[!UICONTROL Text version of HTML is empty]**: Glöm inte att definiera en textversion av e-posttexten, eftersom den kommer att användas när HTML inte kan visas. Lär dig hur du skapar textversionen i [det här avsnittet](text-version-email.md).
+   * **[!UICONTROL Text version of HTML is empty]**: glöm inte att definiera en textversion av e-posttexten, eftersom den kommer att användas när HTML inte kan visas. Lär dig hur du skapar textversionen i [det här avsnittet](text-version-email.md).
 
    * **[!UICONTROL Empty link is present in email body]**: kontrollera att alla länkar i e-postmeddelandet är korrekta. Lär dig hantera innehåll och länkar i [det här avsnittet](content-from-scratch.md).
 
@@ -134,13 +134,13 @@ Två typer av varningar kan inträffa:
 
 * **Fel** hindra dig från att testa eller aktivera resan/kampanjen så länge som de inte är lösta, till exempel:
 
-   * **[!UICONTROL The subject line is missing]**: Ämnesraden för e-post är obligatorisk. Lär dig definiera och personalisera det i [det här avsnittet](create-email.md).
+   * **[!UICONTROL The subject line is missing]**: Ämnesrad för e-post är obligatorisk. Lär dig definiera och personalisera det i [det här avsnittet](create-email.md).
 
   <!--HTML is empty when Amp HTML is present-->
 
-   * **[!UICONTROL The email version of the message is empty]**: det här felet visas när e-postinnehållet inte har konfigurerats. Lär dig designa e-postinnehåll i [det här avsnittet](get-started-email-design.md).
+   * **[!UICONTROL The email version of the message is empty]**: det här felet visas när e-postinnehållet inte har konfigurerats. Lär dig hur du utformar e-postinnehåll i [det här avsnittet](get-started-email-design.md).
 
-   * **[!UICONTROL Surface doesn't exist]**: Du kan inte använda meddelandet om den yta som du har markerat tas bort efter att meddelandet har skapats. Om det här felet inträffar väljer du en annan yta i meddelandet **[!UICONTROL Properties]**. Läs mer om kanalytor i [det här avsnittet](../configuration/channel-surfaces.md).
+   * **[!UICONTROL Surface doesn't exist]**: du kan inte använda meddelandet om den yta som du har markerat tas bort efter att meddelandet har skapats. Om det här felet inträffar väljer du en annan yta i meddelandet **[!UICONTROL Properties]**. Läs mer om kanalytor i [det här avsnittet](../configuration/channel-surfaces.md).
 
 >[!CAUTION]
 >
@@ -156,7 +156,7 @@ När din e-post är klar slutför du konfigurationen av [resa](../building-journ
 
 >[!NOTE]
 >
->Om du vill spåra mottagarnas beteende via e-postöppningar och/eller interaktioner kontrollerar du att de dedikerade alternativen i dialogrutan **[!UICONTROL Tracking]** -avsnittet är aktiverat i resans [e-postaktivitet](../building-journeys/journeys-message.md) eller i e-postmeddelandet [kampanj](../campaigns/create-campaign.md).<!--to move?-->
+>Om du vill spåra mottagarnas beteende via e-postöppningar och/eller interaktioner kontrollerar du att de dedikerade alternativen i dialogrutan **[!UICONTROL Tracking]** -avsnittet aktiveras i resans [e-postaktivitet](../building-journeys/journeys-message.md) eller i e-postmeddelandet [kampanj](../campaigns/create-campaign.md).<!--to move?-->
 
 <!--
 

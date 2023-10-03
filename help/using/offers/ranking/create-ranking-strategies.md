@@ -28,7 +28,7 @@ Så här skapar du en AI-modell:
 
 1. Skapa en datauppsättning där konverteringshändelser samlas in. [Lär dig mer](../data-collection/create-dataset.md)
 
-1. I **[!UICONTROL Components]** -menyn, gå till **[!UICONTROL Ranking]** tabbtangenten och sedan **[!UICONTROL AI models]**.
+1. I **[!UICONTROL Components]** -menyn, gå till **[!UICONTROL Ranking]** tabbtangenten och sedan välja **[!UICONTROL AI models]**.
 
    ![](../assets/ai-ranking-list.png)
 

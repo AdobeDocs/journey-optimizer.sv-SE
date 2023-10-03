@@ -1,6 +1,6 @@
 ---
 title: Skapa samlingskvalificerare
-description: Lär dig hur du skapar samlingskvalificerare för dina erbjudanden
+description: Lär dig hur du skapar kravkvalificerare för dina erbjudanden
 feature: Offers
 topic: Integrations
 role: User
@@ -32,7 +32,7 @@ Listan över skapade samlingskvalificerare finns i **[!UICONTROL Components]** -
 
 Så här skapar du en samlingskvalificerare:
 
-1. Gå till **[!UICONTROL Collection qualifiers]** tabbtangenten och sedan klicka **[!UICONTROL Create collection qualifier]**.
+1. Gå till **[!UICONTROL Collection qualifiers]** tabbtangenten och klicka sedan på **[!UICONTROL Create collection qualifier]**.
 
 1. Ange samlingskvalificerarens namn och klicka sedan på **[!UICONTROL Save]**.
 

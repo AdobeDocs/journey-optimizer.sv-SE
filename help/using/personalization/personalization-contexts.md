@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Anpassningssammanhang
+title: Personaliseringskontexter
 description: Läs mer om hur du kan anpassa innehållet och visningen av dina meddelanden.
 feature: Personalization
 topic: Personalization
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Anpassningssammanhang{#personalization-areas}
+# Personaliseringskontexter{#personalization-areas}
 
 Innehåll och visning av meddelanden som levereras av [!DNL Journey Optimizer] kan personaliseras på flera olika sätt.
 
@@ -32,13 +32,13 @@ När du skapar ett e-postmeddelande kan du lägga till personalisering i **[!UIC
 
 I e-postdesignern kan du anpassa innehållet:
 
-* I **message**: klicka i ett textblock och klicka på **Lägg till personalisering** ikonen i det sammanhangsberoende verktygsfältet. Mer information om gränssnittet för e-postdesignern finns i [section](../email/get-started-email-design.md).
+* I **message**: klicka inuti ett textblock, klicka på **Lägg till personalisering** ikonen i det sammanhangsberoende verktygsfältet. Mer information om gränssnittet för e-postdesignern finns i [section](../email/get-started-email-design.md).
 
-   ![](assets/perso_insert.png)
+  ![](assets/perso_insert.png)
 
-* För **link**: markera text eller bild i ett textblock och klicka på **Infoga länk** ikonen i det sammanhangsberoende verktygsfältet. I fönstret kan du lägga till ett anpassningsblock genom att klicka på **Lägg till personalisering** ikon.
+* För **link**: markera text eller bild i ett textblock, klicka på **Infoga länk** ikonen i det sammanhangsberoende verktygsfältet. I fönstret kan du lägga till ett anpassningsblock genom att klicka på **Lägg till personalisering** -ikon.
 
-   ![](assets/perso_link.png)
+  ![](assets/perso_link.png)
 
 I båda fallen får du tillgång till personaliseringsredigeraren.
 

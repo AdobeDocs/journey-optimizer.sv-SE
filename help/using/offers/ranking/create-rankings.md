@@ -1,6 +1,6 @@
 ---
 title: Skapa rankningar
-description: Lär dig skapa rankningar
+description: Lär dig hur du skapar rankningar
 feature: Offers
 topic: Integrations
 role: User

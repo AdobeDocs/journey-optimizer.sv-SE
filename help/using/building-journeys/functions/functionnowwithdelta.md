@@ -16,7 +16,7 @@ ht-degree: 6%
 
 # nowWithDelta {#nowWithDelta}
 
-Returnerar aktuell datetime inklusive en förskjutning. Om ett tidszon-ID anges används tidszonsförskjutningen. Mer information om datatyper finns i [den här sidan](../expression/data-types.md).
+Returnerar aktuell datetime inklusive en offset. Om ett tidszon-ID anges används tidszonsförskjutningen. Mer information om datatyper finns i [den här sidan](../expression/data-types.md).
 
 ## Kategori
 

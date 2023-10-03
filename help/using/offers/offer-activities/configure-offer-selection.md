@@ -28,7 +28,7 @@ När flera erbjudanden kan komma i fråga för en viss placering i ett beslut ä
 
 ![](../assets/offer-priority.png)
 
-Prioritetspoäng tilldelas när ett erbjudande skapas. Lär dig hur du skapar ett personaliserat erbjudande i [det här avsnittet](../offer-library/creating-personalized-offers.md).
+Prioritetspoäng för erbjudanden tilldelas när ett erbjudande skapas. Lär dig hur du skapar ett personaliserat erbjudande i [det här avsnittet](../offer-library/creating-personalized-offers.md).
 
 ## Rankningsformel {#assign-ranking-formula}
 
@@ -36,13 +36,13 @@ Förutom att ge prioritet kan du med Journey Optimizer skapa **rankningsformler*
 
 Du kan till exempel öka prioriteten för alla erbjudanden där slutdatumet är mindre än 24 timmar från och med nu, eller öka erbjudandena från kategorin&quot;löpande&quot; om profilens intressepunkt är&quot;igång&quot;.
 
-Lär dig hur du skapar en rankningsformel i [det här avsnittet](../ranking/create-ranking-formulas.md).
+Lär dig skapa en rankningsformel i [det här avsnittet](../ranking/create-ranking-formulas.md).
 
 När du har skapat en formel kan du tilldela den till en placering i ett beslut. Följ stegen nedan för att göra detta:
 
 1. Skapa ett beslut eller redigera ett befintligt. Se [Skapa beslut](../offer-activities/create-offer-activities.md).
 
-1. Lägg till de placeringar som kommer att innehålla dina erbjudanden. Se [Skapa placeringar](../offer-library/creating-placements.md).
+1. Lägg till de placeringar som innehåller dina erbjudanden. Se [Skapa placeringar](../offer-library/creating-placements.md).
 
 1. Lägg till en samling för varje placering. Se [Skapa samlingar](../offer-library/creating-collections.md).
 
@@ -62,13 +62,13 @@ Om flera erbjudanden kan presenteras på den här platsen, kommer beslutet att a
 
 <!--If you are an [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} user leveraging the **Offer Decisioning** application service,-->
 
-Du kan också använda ett utbildat modellsystem som automatiskt rangordnar erbjudanden för en viss profil genom att välja en AI-modell. Lär dig hur du skapar en AI-modell i [det här avsnittet](../ranking/create-ranking-strategies.md).
+Du kan också använda ett utbildat modellsystem som automatiskt rangordnar erbjudanden för en viss profil genom att välja en AI-modell. Lär dig skapa en AI-modell i [det här avsnittet](../ranking/create-ranking-strategies.md).
 
 När en AI-modell har skapats kan du tilldela den till en placering i ett beslut. Gör så här:
 
 1. Skapa ett beslut eller redigera ett befintligt. Se [Skapa beslut](../offer-activities/create-offer-activities.md).
 
-1. Lägg till de placeringar som kommer att innehålla dina erbjudanden. Se [Skapa placeringar](../offer-library/creating-placements.md).
+1. Lägg till de placeringar som innehåller dina erbjudanden. Se [Skapa placeringar](../offer-library/creating-placements.md).
 
 1. Lägg till en samling för varje placering. Se [Skapa samlingar](../offer-library/creating-collections.md).
 

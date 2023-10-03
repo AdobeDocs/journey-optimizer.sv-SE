@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Personalisering använder case&colon; orderstatusmeddelande
+title: Personalisering använder skiftläge&kolon; orderstatusmeddelande
 description: Lär dig hur du personaliserar ett meddelande med profil, offertbeslut och kontextinformation.
 feature: Personalization
 topic: Personalization
@@ -16,17 +16,17 @@ ht-degree: 0%
 
 ---
 
-# Personalisering: orderstatusmeddelande {#personalization-use-case}
+# Personalisering - användningsfall: orderstatusmeddelande {#personalization-use-case}
 
-I det här fallet får du se hur du använder flera typer av personalisering i ett enda push-meddelande. Tre typer av personalisering kommer att användas:
+I det här fallet får du se hur du kan använda flera typer av personalisering i ett enda push-meddelande. Tre typer av personalisering kommer att användas:
 
 * **Profil**: meddelandepersonalisering baserad på ett profilfält
 * **Beslut om erbjudandet**: personalisering baserad på variabler för beslutshantering
-* **Kontext**: personalisering baserad på sammanhangsbaserade data från resan
+* **Kontext**: personalisering baserad på kontextuella data från resan
 
 Målet med det här exemplet är att skicka en händelse till [!DNL Journey Optimizer] varje gång en kundorder uppdateras. Därefter skickas ett push-meddelande till kunden med information om beställningen och ett personligt erbjudande.
 
-I detta fall krävs följande krav:
+I det här fallet krävs följande krav:
 
 * konfigurera en orderhändelse som innehåller ordernummer, status och artikelnamn. Se detta [section](../event/about-events.md).
 * skapa ett beslut, se [section](../offers/offer-activities/create-offer-activities.md).
@@ -51,7 +51,7 @@ I detta fall krävs följande krav:
 
    ![](assets/perso-uc2.png)
 
-1. Skriv in ämnet och lägg till profilanpassning. Använd sökfältet för att hitta profilens förnamnsfält. Placera markören där du vill infoga anpassningsfältet i ämnestexten och klicka på **+** ikon. Klicka **Spara**.
+1. Skriv in ämnet och lägg till profilanpassning. Använd sökfältet för att hitta profilens förnamnsfält. Placera markören där du vill infoga anpassningsfältet i ämnestexten och klicka på **+** -ikon. Klicka **Spara**.
 
    ![](assets/perso-uc3.png)
 
@@ -63,7 +63,7 @@ I detta fall krävs följande krav:
 
 1. Välj **Sammanhangsberoende attribut** -menyn. Sammanhangsberoende attribut är bara tillgängliga om en resa har skickat kontextuella data till meddelandet. Klicka **Journey Orchestration**. Följande sammanhangsberoende information visas:
 
-   * **Händelser**: I den här kategorin grupperas alla fält från händelser som placerats före kanalåtgärdsaktiviteten på resan.
+   * **Händelser**: den här kategorin grupperar alla fält från händelser som placerats före kanalåtgärdsaktiviteten på resan.
    * **Reseegenskaper**: de tekniska fält som rör resan för en viss profil, t.ex. rese-ID eller de specifika fel som påträffats. Läs mer i [Journey Orchestration dokumentation](../building-journeys/expression/journey-properties.md).
 
    ![](assets/perso-uc10.png)
@@ -80,7 +80,7 @@ I detta fall krävs följande krav:
 
    ![](assets/perso-uc13.png)
 
-1. Välj **Erbjudandebeslut** om du vill infoga en decimalvariabel. Välj placering och klicka på **+** -ikonen bredvid beslutet om att lägga till den i brödtexten.
+1. Välj **Erbjudandebeslut** om du vill infoga en decimalvariabel. Markera placeringen och klicka på **+** -ikonen bredvid beslutet om att lägga till den i brödtexten.
 
    ![](assets/perso-uc14.png)
 
@@ -90,7 +90,7 @@ I detta fall krävs följande krav:
 
 ## Steg 4 - Testa och publicera resan {#test-publish}
 
-1. Klicka på **Testa** och sedan klicka **Utlös en händelse**.
+1. Klicka på **Testa** knapp och sedan klicka **Utlös en händelse**.
 
    ![](assets/perso-uc17.png)
 

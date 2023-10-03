@@ -10,7 +10,7 @@ exl-id: 19ec3410-761e-4a9c-a277-f105fc446d7a
 source-git-commit: 63c52f04da9fd1a5fafc36ffb5079380229f885e
 workflow-type: tm+mt
 source-wordcount: '115'
-ht-degree: 3%
+ht-degree: 14%
 
 ---
 
@@ -24,5 +24,5 @@ Sekretessförfrågningar kan skapas och hanteras från **[!UICONTROL Requests]**
 
 Mer information om Privacy Service och hur du skapar och hanterar sekretessförfrågningar finns i Adobe Experience Platform dokumentation:
 
-* [Översikt över Privacy Servicen](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)
-* [Hantera sekretessjobb i Privacy Servicens användargränssnitt](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html)
+* [Översikt över Privacy Servicen](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv)
+* [Hantera sekretessjobb i Privacy Servicens användargränssnitt](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=sv)

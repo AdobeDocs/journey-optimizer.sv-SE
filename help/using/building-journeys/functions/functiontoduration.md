@@ -1,7 +1,7 @@
 ---
 product: journey optimizer
 title: toDuration
-description: Lär dig mer om funktionen toDuration
+description: Läs mer om funktionen toDuration
 feature: Journeys
 role: Data Engineer, Architect
 level: Experienced
@@ -33,7 +33,7 @@ Konvertering
 | string | format som bygger på ISO-8601-varaktighetsformatet PnDTnHnMn.nS med dagar som anses vara exakt 24 timmar |
 | heltal | antal millisekunder |
 
-Om stränguttryck: De format som accepteras är baserade på tidslängden enligt ISO-8601 PnDTnHnMn.nS med dagar som anses vara exakt 24 timmar.
+Om stränguttryck: godkända format baseras på varaktighetsformatet PnDTnHnMn.nS för ISO-8601 med dagar som anses vara exakt 24 timmar.
 
 Strängen börjar med ett valfritt tecken som anges med ASCII-tecknet för negativ eller positiv symbol. Om värdet är negativt negeras hela perioden. ASCII-bokstaven&quot;P&quot; står bredvid med versaler eller gemener. Därefter finns det fyra avsnitt som består av ett tal och ett suffix. Avsnitten har suffix i ASCII av &quot;D&quot;, &quot;H&quot;, &quot;M&quot; och &quot;S&quot; för dagar, timmar, minuter och sekunder, vilka accepteras med versaler eller gemener. Suffixen måste finnas i ordning. ASCII-bokstaven &quot;T&quot; måste inträffa före den första förekomsten av en timme, minut eller sekund. Minst en av de fyra avsnitten måste finnas, och om T förekommer måste det finnas minst en sektion efter T. Nummerdelen av varje avsnitt måste bestå av en eller flera ASCII-siffror. Talet kan föregås av ASCII-negativa eller positiva symboler. Antalet dagar, timmar och minuter måste tolkas. Antalet sekunder måste tolkas tillsammans med den valfria fraktionen. Decimaltecknet kan vara antingen en punkt eller ett komma. Den bråkdelar kan innehålla mellan noll och nio siffror.
 
@@ -49,7 +49,7 @@ Returnerar en varaktighet.
 
 `toDuration("PT10H")`
 
-Returnerar en varaktighet på 10 timmar.
+Returnerar längden 10 timmar.
 
 `toDuration("PT4S")`
 

@@ -1,11 +1,12 @@
 ---
 title: Statistiska beräkningar som används i experimentrapporten
-description: Läs mer om statistiska beräkningar som används vid körning av experimentrapporter
+description: Läs mer om statistiska beräkningar som används när experimentrapporter körs
 feature: A/B Testing
 topic: Content Management
 role: User
 level: Experienced
-source-git-commit: 64be9c41085dead10ff08711be1f39760a81ff95
+exl-id: 67ba8861-be6f-42ae-b9b8-96168d0dd15c
+source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
@@ -53,7 +54,7 @@ För ett regelbundet konfidensintervall garanterar sannolikhetsgarantin att mål
 Detta har några viktiga konsekvenser som är mycket viktiga för onlinetestning:
 
 * CS kan uppdateras när nya data blir tillgängliga.
-* Experimenten kan övervakas kontinuerligt, stoppas eller fortsätta.
+* Experimentera kan övervakas kontinuerligt, stoppas på ett adaptivt sätt eller fortsätta.
 * Type-I-felet kontrolleras vid alla stopptider, inklusive databeroende tider.
 
 Adobe använder asymptotisk konfidenssekvens, som för en enskild variant med medelskattning `μ` har formen:
@@ -101,9 +102,9 @@ Slutligen **när som helst, giltig säkerhet** är:
 
 ## Förklaring av en expert till slutsats
 
-För en expert med två armar visas ett meddelande på panelen Experimentation i Journey Optimizer om att en Experiment är **slående** när ett giltigt konfidensintervall överstiger 95 % (dvs. när som helst giltigt `p`-value är under 5 %).
+För en expert med två armar visas ett meddelande på panelen Experimentation i Journey Optimizer om att en Experiment är **slående** när ett giltigt konfidensintervall överstiger 95 % (dvs. när som helst, giltigt `p`-value är under 5 %).
 
-När det finns fler än två varianter används Bonferonni-korrigeringen för att kontrollera den familjeselva felfrekvensen. För ett experiment med `K` behandlingar och en enstaka baseline (kontrollbehandling) finns `K-1` oberoende hypotesstest. Korrigeringen av Bonferonni innebär att vi avvisar den nollhypotes som kontrollen och en given variant har samma medel, om `p`-value (defined above) är under ett tröskelvärde på `α/(K-1)`.
+När det finns fler än två varianter används Bonferonni-korrigeringen för att kontrollera den familjeselva felfrekvensen. För ett experiment med `K` behandlingar och en enstaka baseline (kontrollbehandling) finns `K-1` oberoende hypotesstest. Korrigeringen av Bonferonni innebär att vi avvisar den nollhypotes som kontrollen och en given variant har samma medel, om `p`-value (defined above) är under tröskelvärdet på `α/(K-1)`.
 
 ## Högpresterande arm
 

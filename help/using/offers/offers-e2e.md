@@ -13,7 +13,7 @@ ht-degree: 2%
 
 ---
 
-# Användningsfall: Konfigurera personaliserade erbjudanden så att de kan användas i ett e-postmeddelande {#configure-add-personalized-offers-email}
+# Användningsexempel: Konfigurera personaliserade erbjudanden så att de kan användas i ett e-postmeddelande {#configure-add-personalized-offers-email}
 
 I det här avsnittet presenteras ett exempel från början till slut som visar hur du konfigurerar erbjudanden och använder dem i ett e-postmeddelande baserat på ett beslut som du tidigare har skapat.
 
@@ -25,7 +25,7 @@ De viktigaste stegen för att konfigurera erbjudanden, inkludera dem i ett beslu
 
    * Skapa placeringar
    * Skapa beslutsregler
-   * Skapa samlingskvalificerare (kallas tidigare&quot;taggar&quot;)
+   * Skapa samlingskvalificerare (kallas tidigare taggar)
    * Skapa rankningar (valfritt)
 
 1. [Konfigurera erbjudandena](#configure-offers)
@@ -191,7 +191,7 @@ De detaljerade stegen för att skapa en samling beskrivs i [det här avsnittet](
 
 Nu måste ni ta ett beslut som kombinerar praktik med personaliserade erbjudanden och det reserverbjudande ni just skapade.
 
-Den här kombinationen används av beslutsmotorn för att hitta det bästa erbjudandet för en viss profil: i det här exemplet baseras på den prioritet och beslutsregel som du tilldelade varje erbjudande.
+Den här kombinationen används av beslutsmotorn för att hitta det bästa erbjudandet för en viss profil: i det här exemplet baseras det på den prioritet och beslutsregel som du tilldelade varje erbjudande.
 
 Följ stegen nedan för att skapa och konfigurera ett erbjudande:
 

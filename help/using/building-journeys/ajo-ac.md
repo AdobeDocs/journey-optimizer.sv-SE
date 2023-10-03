@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Skicka ett meddelande med Campaign v7/v8
-description: Lär dig hur du skickar ett meddelande med Campaign v7/v8
+description: Lär dig skicka ett meddelande med Campaign v7/v8
 feature: Actions
 topic: Administration
 role: Admin
@@ -28,7 +28,7 @@ Vi skapar först en transaktionell e-postmall i Campaign. I Journey Optimizer sk
 
 Mer information om Campaign-integrationen finns på följande sidor:
 
-* [Skapa en Campaign-åtgärd](../action/acc-action.md)
+* [Skapa en kampanjåtgärd](../action/acc-action.md)
 * [Använda åtgärden i en resa](../building-journeys/using-adobe-campaign-classic.md).
 
 **Adobe Campaign**

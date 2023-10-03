@@ -5,7 +5,7 @@ description: Lär dig mer om funktionsöverlappningen
 feature: Journeys
 role: Data Engineer, Architect
 level: Experienced
-keywords: korsning, funktion, uttryck, resa
+keywords: intersect, function, expression, travel
 exl-id: e236efa9-91a8-4f08-94c6-45f1e060bb2f
 source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
 workflow-type: tm+mt

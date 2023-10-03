@@ -7,7 +7,7 @@ feature: Application Settings
 topic: Administration
 role: Admin
 level: Intermediate
-keywords: underdomän, PTR, poster, DNS, domän, e-post
+keywords: underdomän, PTR, poster, DNS, domän, post
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
 source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
 workflow-type: tm+mt
@@ -94,10 +94,9 @@ Så här redigerar du en PTR-post med en underdomän som har delegerats till Ado
 
    >[!NOTE]
    >
-   >Om du får det här meddelandet: &quot;Skapa en vanlig DNS först och försök sedan igen&quot;, följ stegen nedan:
+   >Om du får det här meddelandet:&quot;Skapa en vanlig DNS först och försök sedan igen&quot;, följer du stegen nedan:
    >   * Kontrollera DNS-providern om den vidarebefordrade DNS-posten har skapats.
    >   * Poster i hela DNS kanske inte synkroniseras omedelbart. Vänta några minuter och försök igen.
-
 
 1. Klicka **[!UICONTROL Save]** för att bekräfta dina ändringar.
 
@@ -152,6 +151,6 @@ Om valideringsprocessen misslyckas visas den äldre PTR-posten. Den giltiga unde
 Följande typer av uppdateringsfel är möjliga:
 * Det gick inte att skapa en ny framåtriktad DNS för PTR-posten
 * Det gick inte att uppdatera posten
-* Det gick inte att ta in tillhörigheterna igen
+* Det gick inte att ta in tillhörigheterna på nytt
 
 När uppdateringen misslyckas blir PTR-posten redigerbar igen. Du kan klicka på dess namn och uppdatera underdomänen igen.

@@ -8,7 +8,8 @@ level: Experienced
 hide: true
 hidefromtoc: true
 badge: label="Beta"
-source-git-commit: 69a2ef17b6f5ccd40c08858f7b434029964d544d
+exl-id: ac901f88-5fde-4220-88c6-fe05433866cc
+source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 3%
@@ -79,5 +80,3 @@ Lär dig hur du lägger till datauppsättningar för att experimentera med inneh
 >[!NOTE]
 >
 >Datauppsättningen används skrivskyddat av [!DNL Journey Optimizer] rapporteringssystem och påverkar inte datainsamling eller datainmatning.
-
-

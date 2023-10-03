@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Resans egenskaper
-description: Läs om reseegenskaper
+description: Lär dig mer om reseegenskaper
 feature: Journeys
 role: Data Engineer, Architect
 level: Experienced
@@ -25,9 +25,9 @@ I den avancerade uttrycksredigeraren hittar du **Reseegenskaper** -kategorin, un
 
 ![](../assets/journey-properties.png)
 
-Du hittar t.ex. information om:
+Du hittar information om:
 
-* reseversion: resa uid, reseversion uid, instansuid osv.
+* reseversion: reseversion, resversion-id, instansens-uid, osv.
 * fel: datahämtning, åtgärdskörning osv.
 * aktuellt steg, senaste aktuella steg osv.
 * ignorerade profiler
@@ -36,11 +36,11 @@ Du kan använda dessa fält för att skapa uttryck. Under körningen hämtas vä
 
 Här är några exempel på användningsområden:
 
-* **Logga ignorerade profiler**: Du kan skicka alla profiler som har uteslutits från ett meddelande med en begränsningsregel till ett tredjepartssystem för loggning. För detta anger du en sökväg i händelse av timeout och fel och lägger till ett villkor som ska filtreras efter en viss feltyp, till exempel: &quot;kasta bort personer genom att sätta på en regel&quot;. Du kan sedan överföra de borttagna profilerna till ett tredjepartssystem via en anpassad åtgärd.
+* **Logga ignorerade profiler**: du kan skicka alla profiler som har uteslutits från ett meddelande med en begränsningsregel till ett tredjepartssystem för loggning. För detta anger du en sökväg i händelse av timeout och fel och lägger till ett villkor som ska filtreras efter en viss feltyp, t.ex.&quot;ignorera personer genom att appa regel&quot;. Du kan sedan överföra de borttagna profilerna till ett tredjepartssystem via en anpassad åtgärd.
 
 * **Skicka varningar vid fel**: du kan skicka ett meddelande till ett tredjepartssystem varje gång ett fel inträffar i ett meddelande. För detta anger du en sökväg om ett fel uppstår, lägger till ett villkor och en anpassad åtgärd. Du kan till exempel skicka ett meddelande på en Slack-kanal med en beskrivning av det fel som påträffats.
 
-* **Förfina fel i rapportering** : I stället för att bara ha en sökväg för felmeddelanden kan du definiera ett villkor per feltyp. På så sätt kan du förfina rapporteringen och visa alla feltyper.
+* **Förfina fel i rapportering** : I stället för att bara ha en sökväg för felmeddelanden kan du definiera ett villkor per feltyp. På så sätt kan du förfina rapporteringen och visa alla feltyper och data.
 
 ## Fältlista {#journey-properties-fields}
 
@@ -53,17 +53,17 @@ Här är några exempel på användningsområden:
 | | travelVersion | Reseversion | |
 | Reseinstans | instanceUID | Journey-instans-ID | ID för instansen |
 | | externalKey | Extern nyckel | Individuell identifierare som utlöser resan |
-| | organizationId | Organisationsidentifierare | Varumärkesorganisation |
+| | organizationId | Organisationens identifierare | Varumärkesorganisation |
 | | sandboxName | Namn på sandlåda | Namn på sandlådan |
 | Identitet | profileId | Identifierare för profilidentitet | Identifierare för profilen i resan |
 | | namespace | Namnområde för profilidentitet | Profilens namnområde under resan (exempel: ECID) |
 | Aktuell nod | currentNodeId | Aktuell nodidentifierare | Identifierare för den aktuella aktiviteten (nod) |
 | | currentNodeName | Aktuellt nodnamn | Namn på aktuell aktivitet (nod) |
 | Föregående nod | previousNodeId | Föregående nodidentifierare | Identifierare för föregående aktivitet (nod) |
-| | previousNodeName | Föregående nodnamn | Namn på föregående aktivitet (nod) |
+| | previousNodeName | Tidigare nodnamn | Namn på föregående aktivitet (nod) |
 | Fel | lastNodeUIDInError | Senaste nodidentifierare i fel | Identifierare för den senaste aktiviteten (nod) vid fel |
 | | lastNodeNameInError | Senaste nodnamn i fel | Namn på den senaste aktiviteten (nod) med fel |
-| | lastNodeTypeInError | Senaste nodtyp i fel | Feltyp för den senaste aktiviteten (nod). Möjliga typer:<ul><li>Händelser: Händelser, reaktioner, SQ (exempel: Målgruppskvalifikation)</li><li>Flödeskontroll: Slut, Villkor, Vänta</li><li>Funktionsmakron: ACS-åtgärder, Jump, Custom Action</li></ul> |
+| | lastNodeTypeInError | Senaste nodtyp i fel | Feltyp för den senaste aktiviteten (nod). Möjliga typer:<ul><li>Händelser: Händelser, reaktioner, SQ (exempel: Målgruppskvalifikation)</li><li>Flödeskontroll: Slut, Villkor, Vänta</li><li>Åtgärder: ACS-åtgärder, Hoppa, Anpassad åtgärd</li></ul> |
 | | lastErrorCode | Senaste felkod | Felkod för den senaste aktiviteten (nod). Möjliga fel: <ul><li>HTTP-felkoder</li><li>mappad</li><li>timedOut</li><li>fel (exempel: standard om ett oväntat fel inträffar. Ska inte/mycket sällan inträffa)</li></ul> |
 | | lastExecutedActionErrorCode | Felkod för senaste körda åtgärd | Felkod för den senaste felåtgärden |
 | | lastDataFetchErrorCode | Felkod för senaste datainhämtning | Felkod för den senaste datahämtningen från datakällor |

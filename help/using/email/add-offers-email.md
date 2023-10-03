@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Lägg till personaliserade erbjudanden
+title: Lägg in skräddarsydda erbjudanden
 description: Lär dig hur du lägger till personaliserade erbjudanden i dina meddelanden
 feature: Journeys
 topic: Content Management
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Lägg till personaliserade erbjudanden {#deliver-personalized-offers}
+# Lägg in skräddarsydda erbjudanden {#deliver-personalized-offers}
 
 I [!DNL Journey Optimizer] e-postmeddelanden kan ni infoga beslut som utnyttjar beslutsmotorn för att välja det bästa erbjudandet som ska levereras till era kunder.
 
@@ -27,7 +27,7 @@ Du kan t.ex. lägga till ett beslut som i ditt e-postmeddelande visas ett särsk
 >Om ett beslut om erbjudande som används i ett kundmeddelande ändras måste du avpublicera resan och publicera den på nytt.  På så sätt säkerställs att ändringarna införlivas i kundens budskap och att meddelandet överensstämmer med de senaste uppdateringarna.
 
 * Mer information om hur du skapar och hanterar erbjudanden finns i [det här avsnittet](../offers/get-started/starting-offer-decisioning.md).
-* För **ett komplett exempel** visa hur man konfigurerar erbjudanden, använda dem i ett beslut och utnyttja detta beslut i ett e-postmeddelande, se [det här avsnittet](../offers/offers-e2e.md#insert-decision-in-email).
+* För **komplett från början till slut** visa hur man konfigurerar erbjudanden, använda dem i ett beslut och utnyttja detta beslut i ett e-postmeddelande, kolla in [det här avsnittet](../offers/offers-e2e.md#insert-decision-in-email).
 
 ➡️ [Lär dig hur du lägger till erbjudanden som personalisering i den här videon](#video-offers)
 
@@ -61,13 +61,13 @@ Följ stegen nedan för att infoga ett beslut i ett e-postmeddelande:
 
       ![](assets/deliver-offer-placement.png)
 
-Beslutet läggs nu till i komponenten. När du har sparat dina ändringar är dina erbjudanden klara att visas för de relevanta profilerna när du skickar meddelandet som en del av en resa.
+Beslutet läggs nu till i komponenten. När du har sparat dina ändringar kan erbjudandena visas för de relevanta profilerna när du skickar meddelandet som en del av en resa.
 
 >[!NOTE]
 >
 >När du uppdaterar ett erbjudande, ett reserverbjudande, en erbjudandesamling eller ett erbjudandebeslut som refereras direkt eller indirekt i ett meddelande, visas uppdateringarna automatiskt i motsvarande meddelande.
 
-## Förhandsgranska erbjudanden via e-post {#preview-offers-in-email}
+## Förhandsgranska erbjudanden i ett e-postmeddelande {#preview-offers-in-email}
 
 Du kan förhandsgranska de olika erbjudanden som ingår i det beslut som lagts till i e-postmeddelandet med **[!UICONTROL Offer]** -avsnittet eller innehållskomponentpilarna.
 
@@ -85,7 +85,7 @@ Följ stegen nedan för att visa de olika erbjudanden som ingår i beslutet med 
 
       >[!NOTE]
       >
-      >I det här exemplet använder vi **E-post** namnutrymme. Läs mer om Adobe Experience Platform identitetsnamnutrymmen [i det här avsnittet](../audience/get-started-identity.md).
+      >I detta exempel använder vi **E-post** namnutrymme. Läs mer om Adobe Experience Platform identitetsnamnutrymmen [i det här avsnittet](../audience/get-started-identity.md).
 
    1. I **[!UICONTROL Identity value]** anger du värdet för att identifiera testprofilen. I det här exemplet anger du e-postadressen för en testprofil.
 
@@ -101,7 +101,7 @@ Följ stegen nedan för att visa de olika erbjudanden som ingår i beslutet med 
 
    Du kan välja andra testprofiler om du vill förhandsgranska e-postinnehållet för varje variant av meddelandet. I meddelandeinnehållet visas nu erbjudandet som motsvarar den valda testprofilen (nu en man).
 
-Läs mer om hur du kontrollerar förhandsgranskning av meddelanden i [det här avsnittet](#preview-your-messages).
+Läs mer om de detaljerade stegen för att kontrollera förhandsgranskning av meddelanden i [det här avsnittet](#preview-your-messages).
 
 ## Instruktionsvideo{#video-offers}
 

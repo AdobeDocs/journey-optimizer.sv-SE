@@ -21,11 +21,11 @@ I det här avsnittet visas flera vanliga exempel för att fråga efter händelse
 
 Se till att fälten som används i dina frågor har associerade värden i motsvarande schema.
 
-**Vad är skillnaden mellan id, instanceid och profileid?**
+**Vad är skillnaden mellan id, instance och profileid?**
 
-* id: unika för alla steg-händelseposter. Två olika steghändelser kan inte ha samma ID.
+* id: unikt för alla steg-händelseposter. Två olika steghändelser kan inte ha samma ID.
 * instanceId: instanceID är samma för alla steg-händelser som är kopplade till en profil inom en körning. Om en profil återgår till resan används ett annat instanceId. Detta nya instanceId är samma för alla steg-händelser för den ommatade instansen (från start till slut).
-* profileID: Profilens identitet som motsvarar resenamnutrymmet.
+* profileID: Profilens identitet motsvarar resenamnutrymmet.
 
 >[!NOTE]
 >
@@ -237,7 +237,7 @@ WHERE
 
 **Så här kontrollerar du information om en serviceEvent**
 
-Datauppsättningen för händelser i resesteg innehåller alla stepEvents och serviceEvents. stepEvents används vid rapportering, eftersom de relaterar till aktiviteter (händelse, åtgärder osv.) profiler under en resa. serviceEvents lagras i samma datauppsättning och de anger ytterligare information för felsökningsändamål, till exempel orsaken till att en upplevelsehändelse ignoreras.
+Datauppsättningen för händelser i resesteg innehåller alla stepEvents och serviceEvents. stepEvents används vid rapportering, eftersom de avser aktiviteter (händelse, åtgärder osv.) profiler under en resa. serviceEvents lagras i samma datauppsättning och de anger ytterligare information för felsökningsändamål, till exempel orsaken till att en upplevelsehändelse ignoreras.
 
 Här är ett exempel på en fråga som kontrollerar detaljerna för en serviceEvent:
 
@@ -309,7 +309,7 @@ Resultatet måste vara större än 0. Den här frågan returnerar det exakta ant
 
 **Sök efter om en profil skickades ett visst meddelande**
 
-Metod 1: om namnet på ditt meddelande inte är unikt i resan (det används på flera platser).
+Metod 1: Om namnet på ditt meddelande inte är unikt i resan (det används på flera platser).
 
 _Data Lake-fråga_
 
@@ -331,9 +331,9 @@ _experience.journeyOrchestration.stepEvents.journeyVersionID = '67b14482-143e-4f
 _experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com'
 ```
 
-Resultatet måste vara större än 0. Den här frågan talar bara om för oss om meddelandeåtgärden har utförts på kundsidan.
+Resultatet måste vara större än 0. Den här frågan talar bara om för oss om meddelandeåtgärden har utförts på resans sida.
 
-Metod 2: om namnet på ditt meddelande är unikt under resan.
+Metod 2: Om namnet på ditt meddelande är unikt under resan.
 
 _Data Lake-fråga_
 
@@ -600,7 +600,7 @@ Den returnerar alla servicehändelser som hör till den angivna reseversionen. V
 * ämnesskapande
 * skapa exportjobb
 * avslutande av exportjobb (med mätvärden för exporterade profiler)
-* arbetarens uppsägning
+* arbetarens avslutande av bearbetningen
 
 Vi kan också upptäcka problem som:
 
@@ -611,7 +611,7 @@ Vi kan också upptäcka problem som:
 VIKTIGT! Om ingen händelse returneras av frågan kan det bero på någon av följande orsaker:
 
 * transportversionen inte har nått schemat
-* Om reseversionen ska ha startat exportjobbet genom att anropa orkestratorn, gick något fel i upstram-flödet: Problem med transportdistribution, affärshändelser eller problem med schemaläggare.
+* Om reseversionen ska ha utlöst exportjobbet genom att anropa orchestrator, gick något fel i upstram-flödet: problem vid resedistribution, affärshändelse eller problem med schemaläggaren.
 
 **Få läsfel för en viss reseversion**
 

@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Lägga till ett sidhuvud i Journey Optimizer
-description: Lär dig hur du utformar e-postinnehåll
+description: Lär dig utforma e-postinnehåll
 feature: Overview
 topic: Content Management
 role: User

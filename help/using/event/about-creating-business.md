@@ -2,12 +2,12 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Konfigurera en affärshändelse
-description: Lär dig hur du skapar en affärshändelse
+description: Lär dig hur du skapar ett affärsevenemang
 feature: Events
 topic: Administration
 role: Admin
 level: Intermediate
-keywords: händelse, resa, affärsmannaskap, konfiguration
+keywords: händelse, resa, verksamhet, konfiguration
 exl-id: 39eb40e1-d7f5-4a8e-9b64-c620940d5ff2
 source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
 workflow-type: tm+mt
@@ -62,7 +62,7 @@ När det gäller företagsevenemang som tagits under en viss resa återanvänds 
 
 Här följer de första stegen för att konfigurera en affärshändelse:
 
-1. Välj **[!UICONTROL Configurations]**. I  **[!UICONTROL Events]** avsnitt, klicka **[!UICONTROL Manage]**. Listan med händelser visas.
+1. I avsnittet ADMINISTRATION-menyn väljer du **[!UICONTROL Configurations]**. I  **[!UICONTROL Events]** avsnitt, klicka **[!UICONTROL Manage]**. Listan med händelser visas.
 
    ![](assets/jo-event1.png)
 
@@ -84,7 +84,7 @@ Här följer de första stegen för att konfigurera en affärshändelse:
 
 1. Antalet resor som använder den här händelsen visas i fältet **[!UICONTROL Used in]**. Du kan klicka på ikonen **[!UICONTROL View journeys]** för att visa en lista över resor som använder den här händelsen.
 
-1. Definiera schema- och nyttolastfälten: Här väljer du den händelseinformation (eller nyttolast) som resor förväntar sig att ta emot. Du kommer att använda den här informationen senare under din resa. Se [det här avsnittet](../event/about-creating-business.md#define-the-payload-fields).
+1. Definiera schema- och nyttolastfälten: Här väljer du den händelseinformation (eller nyttolasten) som ska tas emot. Du kommer att använda den här informationen senare under din resa. Se [det här avsnittet](../event/about-creating-business.md#define-the-payload-fields).
 
    ![](assets/jo-event5-business.png)
 
@@ -92,7 +92,7 @@ Här följer de första stegen för att konfigurera en affärshändelse:
 
    ![](assets/test-profiles-4.png)
 
-1. Klicka inuti **[!UICONTROL Event ID condition]** fält. Använd den enkla uttrycksredigeraren för att definiera villkoret som används av systemet för att identifiera de händelser som utlöser din resa.
+1. Klicka inuti **[!UICONTROL Event ID condition]** fält. Använd den enkla uttrycksredigeraren för att definiera det villkor som används av systemet för att identifiera de händelser som utlöser din resa.
 
    ![](assets/jo-event6-business.png)
 
@@ -112,7 +112,7 @@ Här följer de första stegen för att konfigurera en affärshändelse:
 
 Nyttolastdefinitionen gör att du kan välja vilken information systemet förväntar sig från händelsen under din resa och nyckeln för att identifiera vilken person som är associerad med händelsen. Nyttolasten baseras på Experience Cloud XDM-fältdefinitionen. Mer information om XDM finns i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}.
 
-1. Välj ett XDM-schema i listan och klicka på **[!UICONTROL Fields]** fält eller på **[!UICONTROL Edit]** ikon.
+1. Välj ett XDM-schema i listan och klicka på **[!UICONTROL Fields]** fält eller på **[!UICONTROL Edit]** -ikon.
 
    ![](assets/journey8-business.png)
 
@@ -146,4 +146,4 @@ Använd nyttolastförhandsvisningen för att validera nyttolastdefinitionen.
 
 1. Kontrollera förhandsgranskningen för att validera nyttolastdefinitionen.
 
-1. Sedan kan du dela nyttolastförhandsvisningen med den person som ansvarar för händelsen som skickar. Den här nyttolasten kan hjälpa dem att utforma konfigurationen av en händelse som [!DNL Journey Optimizer]. Läs [den här sidan](../event/additional-steps-to-send-events-to-journey.md).
+1. Sedan kan du dela nyttolastförhandsvisningen med den person som ansvarar för händelsen som skickar. Denna nyttolast kan hjälpa dem att utforma konfigurationen av en händelse som [!DNL Journey Optimizer]. Läs [den här sidan](../event/additional-steps-to-send-events-to-journey.md).

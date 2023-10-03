@@ -23,14 +23,14 @@ ht-degree: 2%
 
 [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och kombinerar en enhetlig kundprofil i realtid, ett API-första öppet ramverk, centraliserad offer decisioning och artificiell intelligens (AI) och maskininlärning (ML) för personalisering och optimering. Med Journey Optimizer kan varumärken på ett intelligent sätt avgöra nästa bästa interaktion med skala, hastighet och flexibilitet under hela kundresan. Med [!DNL Adobe Journey Optimizer]kan företag skapa och leverera både schemalagda marknadsföringskampanjer (till exempel veckokampanjer för en butik) och skräddarsydd individuell kommunikation (till exempel ett push-meddelande för en artikel som en lojalitetsappkund kan ha tittat på som tidigare inte fanns) inom samma program.
 
-➡️ [Upptäck Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/introduction-to-journey-optimizer/introduction.html){target="_blank"} (video)
+➡️ [Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/introduction-to-journey-optimizer/introduction.html){target="_blank"} (video)
 
 
 ## Användningsfall {#use-cases}
 
 * Marknadsförarna kan använda [!DNL Adobe Journey Optimizer] för att skicka både individanpassad kommunikation och målgruppsbaserad kommunikation. En klädbutik skickar till exempel vanligen enkäter till alla kunder som köpt produkter den senaste veckan. På grund av infallsvädret försenades några leveranser. När man ser vilka kunder som inte har fått leveranser kan klädbutiken utesluta dem från den schemalagda kundnöjdheten och istället skicka ett personligt mejl med en ursäkt för fördröjningen och erbjuda en rabattkod med produktrekommendationer som baseras på kundens tidigare inköp.
 
-   Marknadsförarna kan också använda programmet för att skicka beteendebaserad kommunikation i realtid. Samma återförsäljare skulle till exempel kunna engagera en lojal kund som i realtid tar sig in på parkeringsplatsen genom att skicka ett push-meddelande till dem om en tröja som finns i lager i kundens storlek.
+  Marknadsförarna kan också använda programmet för att skicka beteendebaserad kommunikation i realtid. Samma återförsäljare skulle till exempel kunna engagera en lojal kund som i realtid tar sig in på parkeringsplatsen genom att skicka ett push-meddelande till dem om en tröja som finns i lager i kundens storlek.
 
 * Icke-marknadsförare som verksamhetsteam och kundsupport som är engagerade i kundupplevelsen kan använda [!DNL Adobe Journey Optimizer] för att hantera en mängd olika uppgifter, till exempel operativa meddelanden eller till och med övervaka introduktionsprocessen. Exempel: en nöjespark där parkbesökare laddar ned en mobilapp som en del av sin parkupplevelse. Underhållspersonal kan använda [!DNL Adobe Journey Optimizer] att meddela parkbesökare om de platser som för närvarande är stängda på grund av underhåll.
 

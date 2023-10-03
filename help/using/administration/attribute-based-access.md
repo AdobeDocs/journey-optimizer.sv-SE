@@ -51,7 +51,7 @@ Vi vill nu ge utvalda användare åtkomst till **Nationalitet** fält, märkt C2
 
 1. Lägg till en **[!UICONTROL Name]** och **[!UICONTROL Description]** till dina nya **[!UICONTROL Role]**, här: Begränsad rolldemografi.
 
-1. I listrutan väljer du **[!UICONTROL Sandbox]**.
+1. Välj **[!UICONTROL Sandbox]**.
 
    ![](assets/role_2.png)
 
@@ -59,7 +59,7 @@ Vi vill nu ge utvalda användare åtkomst till **Nationalitet** fält, märkt C2
 
    ![](assets/role_3.png)
 
-1. I listrutan väljer du **[!UICONTROL Permissions]** länkad till den valda funktionen, t.ex. **[!UICONTROL View journeys]** eller **[!UICONTROL Publish journeys]**.
+1. Välj **[!UICONTROL Permissions]** länkad till den valda funktionen, som **[!UICONTROL View journeys]** eller **[!UICONTROL Publish journeys]**.
 
    ![](assets/role_6.png)
 
@@ -79,7 +79,7 @@ Vi vill nu ge utvalda användare åtkomst till **Nationalitet** fält, märkt C2
 
    ![](assets/role_4.png)
 
-Användarna i **Begränsad rolldemografi** rollen har nu åtkomst till de C2-märkta objekten.
+Användarna i **Begränsad rolldemografi** rollen har nu åtkomst till C2-märkta objekt.
 
 ## Tilldela etiketter till ett objekt i Adobe Experience Platform {#assign-label}
 
@@ -88,7 +88,7 @@ Användarna i **Begränsad rolldemografi** rollen har nu åtkomst till de C2-mä
 >Felaktig etikettanvändning kan bryta åtkomsten till personer och utlösa policyöverträdelser.
 
 **[!UICONTROL Labels]** kan användas för att tilldela specifika funktionsområden med hjälp av attributbaserad åtkomstkontroll.
-I det här exemplet vill vi begränsa åtkomsten till **Nationalitet** fält. Det här fältet är endast tillgängligt för användare med motsvarande **[!UICONTROL Label]** till  **[!UICONTROL Role]**.
+I det här exemplet vill vi begränsa åtkomsten till **Nationalitet** fält. Det här fältet är endast tillgängligt för användare med motsvarande **[!UICONTROL Label]** till sina  **[!UICONTROL Role]**.
 
 Observera att du även kan lägga till  **[!UICONTROL Label]** till  **[!UICONTROL Schema]**,  **[!UICONTROL Datasets]** och  **[!UICONTROL Audiences]**.
 
@@ -144,7 +144,7 @@ Till exempel kommer den första användaren X med åtkomst till objekt som är m
 
    ![](assets/journey_6.png)
 
-1. Redigera **[!UICONTROL Condition]** för att inrikta sig på en viss population med begränsad **Nationalitet** fält.
+1. Redigera dina **[!UICONTROL Condition]** för att inrikta sig på en viss population med begränsad **Nationalitet** fält.
 
    ![](assets/journey_7.png)
 

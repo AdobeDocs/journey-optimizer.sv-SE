@@ -42,7 +42,7 @@ Om du vill få tillgång till en detaljerad lista över tillåtna e-postadresser
 
 >[!CAUTION]
 >
->Tillstånd att visa, exportera och hantera tillåtelselista är begränsade till [Reseadministratörer](../administration/ootb-product-profiles.md#journey-administrator). Läs mer om hantering [!DNL Journey Optimizer] användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
+>Tillstånd att visa, exportera och hantera tillåtelselista är begränsade till [Reseadministratörer](../administration/ootb-product-profiles.md#journey-administrator). Läs mer om hantering [!DNL Journey Optimizer] användarrättigheter i [det här avsnittet](../administration/permissions-overview.md).
 
 Om du vill exportera tillåtelselista som en CSV-fil väljer du **[!UICONTROL Download CSV]** -knappen.
 
@@ -134,7 +134,7 @@ Följ stegen nedan för att göra detta.
 
    >[!NOTE]
    >
-   >Kontrollera att du anger en giltig e-postadress (till exempel abc@company.com) eller domän (till exempel abc.company.com).
+   >Se till att du anger en giltig e-postadress (till exempel abc@company.com) eller domän (till exempel abc.company.com).
 
 1. Ange en orsak om det behövs.
 
@@ -158,7 +158,7 @@ Läs mer om hur du gör API-anrop i [Adobe Experience Platform API:er](https://e
 
 ## Ladda ned tillåtelselista {#download-allowed-list}
 
-Följ stegen nedan om du vill exportera tillåtelselista som en CSV-fil:
+Om du vill exportera tillåtelselista som en CSV-fil följer du stegen nedan:
 
 1. Markera knappen **[!UICONTROL Download CSV]**.
 
@@ -172,7 +172,7 @@ Följ stegen nedan om du vill exportera tillåtelselista som en CSV-fil:
    >
    >Hämtningstiden beror på filstorleken, vilket innebär antalet adresser som finns på tillåtelselista.
    >
-   >En hämtningsbegäran kan bearbetas åt gången för en viss sandlåda.
+   >En nedladdningsbegäran kan bearbetas i taget för en viss sandlåda.
 
 1. När filen har skapats får du ett meddelande. Klicka på klockikonen överst till höger på skärmen för att visa den.
 
@@ -201,17 +201,17 @@ När tillåtelselista är [aktiv](#enable-allow-list), gäller följande logik:
 
 >[!NOTE]
 >
->Profilerna med **[!UICONTROL Not allowed]** status utelämnas under meddelandesändningsprocessen. Därför är **Reserapporter** visar att dessa profiler har flyttats genom resan ([Läs målgrupp](../building-journeys/read-audience.md) och [meddelandeaktiviteter](../building-journeys/journeys-message.md)), **E-postrapporter** kommer inte att inkludera dem i **[!UICONTROL Sent]** mätvärden när de filtreras ut innan e-postmeddelanden skickas.
+>Profilerna med **[!UICONTROL Not allowed]** status exkluderas under meddelandeprocessen. Därför är **Reserapporter** visar att dessa profiler har flyttats genom resan ([Läs målgrupp](../building-journeys/read-audience.md) och [meddelandeaktiviteter](../building-journeys/journeys-message.md)), **E-postrapporter** inkluderar dem inte i **[!UICONTROL Sent]** mätvärden när de filtreras ut innan e-postmeddelanden skickas.
 >
 >Läs mer på [Live-rapport](../reports/live-report.md) och [Global rapport](../reports/global-report.md).
 
-När tillåtelselista är [inaktiverad](#deactivate-allow-list), skickas alla e-postmeddelanden som du skickar från den aktuella sandlådan till alla mottagare (förutsatt att de inte finns med i suppressionslistan), inklusive riktiga kundadresser.
+När tillåtelselista är [inaktiverad](#deactivate-allow-list), skickas alla e-postmeddelanden som du skickar från den aktuella sandlådan till alla mottagare (förutsatt att de inte finns med i listan över inaktiveringar), inklusive riktiga kundadresser.
 
 ## Uteslutningsrapportering {#reporting}
 
 När tillåtelselista är aktivt kan du hämta e-postadresser eller domäner som har uteslutits från en sändning eftersom de inte fanns på tillåtelselista. Om du vill göra det kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} för att göra API-anrop nedan.
 
-För att få **antal e-postmeddelanden** som inte skickades eftersom mottagarna inte var i tillåtelselista använder du följande fråga:
+För att få **antal mejl** som inte skickades eftersom mottagarna inte var i tillåtelselista använder du följande fråga:
 
 ```sql
 SELECT count(distinct _id) from cjm_message_feedback_event_dataset WHERE

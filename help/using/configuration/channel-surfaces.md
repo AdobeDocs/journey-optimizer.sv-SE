@@ -23,7 +23,7 @@ ht-degree: 0%
 >title="Yta"
 >abstract="En yta är en konfiguration som har definierats av en systemadministratör. Den innehåller alla tekniska parametrar för att skicka meddelandet, som rubrikparametrar, underdomän, mobilappar osv."
 
-Med [!DNL Journey Optimizer]kan du skapa kanalytor (t.ex. meddelandeförinställningar) som definierar alla tekniska parametrar som krävs för dina meddelanden: e-posttyp, avsändarens e-postadress och namn, mobilappar, SMS-konfiguration med mera.
+Med [!DNL Journey Optimizer]kan du konfigurera kanalytor (t.ex. meddelandeförinställningar) som definierar alla tekniska parametrar som krävs för dina meddelanden: e-posttyp, avsändarens e-postadress och namn, mobilappar, SMS-konfiguration med mera.
 
 >[!CAUTION]
 >
@@ -67,7 +67,7 @@ Så här skapar du en kanalyta:
 
    ![](assets/preset-email.png)
 
-1. För **[!UICONTROL Push Notification]** kanal, välj minst en plattform -  **iOS** och/eller **Android** - och de mobilappar som ska användas för varje plattform.
+1. För **[!UICONTROL Push Notification]** välj minst en plattform -  **iOS** och/eller **Android** - och de mobilapplikationer som ska användas för varje plattform.
 
    ![](assets/preset-push.png)
 
@@ -143,12 +143,12 @@ Om något av dessa fel inträffar, kontakta [Adobe kundtjänst](https://helpx.ad
 
 * **SPF-valideringen misslyckades**: SPF (Sender Policy Framework) är ett autentiseringsprotokoll för e-post som tillåter att auktoriserade IP-adresser kan skicka e-post från en viss underdomän. SPF-valideringsfel innebär att IP-adresserna i SPF-posten inte matchar IP-adresserna som används för att skicka e-post till postlådeprovidern.
 
-* **DKIM-validering misslyckades**: Med DKIM (DomainKeys Identified Mail) kan mottagarservern verifiera att det mottagna meddelandet skickades av den äkta avsändaren av den associerade domänen och att innehållet i det ursprungliga meddelandet inte ändrades. DKIM-valideringsfel innebär att de mottagande e-postservrarna inte kan verifiera meddelandeinnehållets autenticitet och dess koppling till den sändande domänen:
+* **DKIM-validering misslyckades**: DKIM (DomainKeys Identified Mail) gör det möjligt för mottagarservern att verifiera att det mottagna meddelandet skickades av den äkta avsändaren av den associerade domänen och att innehållet i det ursprungliga meddelandet inte ändrades. DKIM-valideringsfel innebär att de mottagande e-postservrarna inte kan verifiera meddelandeinnehållets autenticitet och dess koppling till den sändande domänen:
 
 * **MX-postvalideringen misslyckades**: MX-postvalideringsfel (Mail eXchange) innebär att de e-postservrar som ansvarar för att ta emot inkommande e-post för en viss underdomän inte är korrekt konfigurerade.
 
 * **Konfigurationer för slutbarhet misslyckades**: Fel i leveranskonfigurationer kan uppstå på grund av någon av följande orsaker:
-   * Blockeringslistning av de tilldelade IP-adresserna
+   * Blockeringslistning av tilldelade IP-adresser
    * Ogiltig `helo` name
    * E-postmeddelanden skickas från andra IP-adresser än de som anges i IP-poolen för motsvarande yta
    * Det går inte att leverera e-postmeddelanden till inkorg hos viktiga Internet-leverantörer
@@ -203,7 +203,7 @@ En uppdatering av en kanalyta kan ha följande status:
 
 * **[!UICONTROL Processing]**: Kanalytans uppdatering har skickats och genomgår flera verifieringssteg.
 * **[!UICONTROL Success]**: Den uppdaterade kanalytan har verifierats och kan väljas för att skapa meddelanden.
-* **[!UICONTROL Failed]**: En eller flera kontroller misslyckades under verifieringen av kanalytans uppdatering.
+* **[!UICONTROL Failed]**: En eller flera kontroller misslyckades under uppdateringsverifieringen av kanalytan.
 
 Varje status visas nedan.
 

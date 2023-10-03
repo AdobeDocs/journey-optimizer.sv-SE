@@ -18,7 +18,7 @@ ht-degree: 6%
 
 # Arbeta med Adobe Analytics-data {#analytics-data}
 
-Ni kan utnyttja alla webbbeteendedata som ni redan samlar in via Adobe Analytics eller Web SDK, och strömma till Adobe Experience Platform, för att utlösa resor och automatisera kundernas upplevelser.
+Ni kan utnyttja alla webbbeteendehändelsedata som ni redan samlar in via Adobe Analytics eller Web SDK, och strömma till Adobe Experience Platform, för att utlösa resor och automatisera kundernas upplevelser.
 
 För att detta ska fungera med Adobe Analytics måste du:
 
@@ -31,6 +31,7 @@ För att detta ska fungera med Adobe Analytics måste du:
 >Det här avsnittet gäller endast för regelbaserade händelser och kunder som behöver använda Adobe Analytics- eller Web SDK-data.
 > 
 >Om du använder Adobe Customer Journey Analytics kan du läsa [den här sidan](../reports/cja-ajo.md).
+>
 
 ## Konfigurera Adobe Analytics- eller Web SDK-data {#leverage-analytics-data}
 
@@ -38,7 +39,7 @@ Data som kommer från Adobe Analytics eller Adobe Experience Platform Web SDK m�
 
 Följ stegen nedan för att göra detta:
 
-1. Bläddra till **[!UICONTROL Sources]** -menyn.
+1. Gå till **[!UICONTROL Sources]** -menyn.
 
 1. I Adobe Analytics väljer du **[!UICONTROL Add data]**
 
@@ -52,7 +53,7 @@ Följ stegen nedan för att göra detta:
 
 1. Från **[!UICONTROL Dataflow detail]** väljer du en **[!UICONTROL Dataflow name]**.
 
-1. När konfigurationen är klar klickar du på **[!UICONTROL Finish]**.
+1. När konfigurationen är klar klickar du **[!UICONTROL Finish]**.
 
    ![](assets/ajo-aa_3.png)
 
@@ -66,10 +67,10 @@ Läs mer om Adobe Analytics källanslutning i  [Adobe Experience Platform-dokume
 
 När konfigurationen är klar kontaktar du Adobe för att aktivera Journey Optimizer-miljön för att använda den här datakällan. Det här steget krävs bara för Adobe Analytics datakällor. Så här gör du:
 
-1. Hämta datakällans ID. Den här informationen finns i användargränssnittet: bläddra till datakällan som du skapade från **Dataflöden** -fliken i **Källor** -menyn. Det enklaste sättet att hitta den är att filtrera på Adobe Analytics-källor.
+1. Hämta datakällans ID. Den här informationen är tillgänglig i användargränssnittet: bläddra till datakällan som du skapade från **Dataflöden** -fliken i **Källor** -menyn. Det enklaste sättet att hitta den är att filtrera på Adobe Analytics-källor.
 1. Kontakta Adobe kundtjänst och lämna följande uppgifter:
 
-   * Ämne: Aktivera Adobe Analytics-event för resor
+   * Angående: Aktivera Adobe Analytics-event för resor
 
    * Innehåll: Aktivera min miljö för att använda AA-händelser.
 
@@ -81,7 +82,7 @@ När konfigurationen är klar kontaktar du Adobe för att aktivera Journey Optim
 
 ## Skapa en resa med en händelse med hjälp av Adobe Analytics- eller Web SDK-data {#event-analytics}
 
-Du kan nu skapa en händelse som baseras på Adobe Analytics- eller Adobe Experience Platform Web SDK-data och som ska användas under en resa.
+Nu kan du skapa en händelse som baseras på Adobe Analytics- eller Adobe Experience Platform Web SDK-data och som ska användas under en resa.
 
 I exemplet nedan får du lära dig att rikta in dig på användare som har lagt till en produkt i sina kundvagnar:
 
@@ -101,11 +102,11 @@ I exemplet nedan får du lära dig att rikta in dig på användare som har lagt 
    * **[!UICONTROL Name]**: Anpassa namnet på **[!UICONTROL Event]**.
    * **[!UICONTROL Type]**: Välj **[!UICONTROL Unitary]** Typ. [Läs mer](../event/about-events.md)
    * **[!UICONTROL Event ID type]**: Välj **[!UICONTROL Rule based]** Händelse-ID-typ. [Läs mer](../event/about-events.md#event-id-type)
-   * **[!UICONTROL Schema]**: Välj Analytics- eller WebSDK-schema [skapat före](#leverage-analytics-data).
+   * **[!UICONTROL Schema]**: Välj Analytics- eller WebSDK-schema [skapad före](#leverage-analytics-data).
    * **[!UICONTROL Fields]**: Välj nyttolastfälten. [Läs mer](../event/about-creating.md#define-the-payload-fields)
    * **[!UICONTROL Event ID condition]**: Definiera villkoret för att identifiera de händelser som utlöser din resa.
 
-      Här utlöses händelsen när kunderna lägger till en artikel i sina kundvagnar.
+     Här utlöses händelsen när kunderna lägger till en artikel i sina kundvagnar.
    * **[!UICONTROL Profile Identifier]**: Välj ett fält bland dina nyttolastfält, eller definiera en formel, för att identifiera den person som är associerad med händelsen.
 
    ![](assets/ajo-aa_6.png)

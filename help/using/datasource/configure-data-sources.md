@@ -25,7 +25,7 @@ ht-degree: 7%
 
 Så här konfigurerar du en datakälla:
 
-1. Välj **[!UICONTROL Configurations]**. I  **[!UICONTROL Data Sources]** avsnitt, klicka **[!UICONTROL Manage]**. Listan med datakällor visas. Se [den här sidan](../start/user-interface.md) för mer information om gränssnittet.
+1. I avsnittet ADMINISTRATION-menyn väljer du **[!UICONTROL Configurations]**. I  **[!UICONTROL Data Sources]** avsnitt, klicka **[!UICONTROL Manage]**. Listan med datakällor visas. Se [den här sidan](../start/user-interface.md) för mer information om gränssnittet.
 
    ![](assets/journey18.png)
 
@@ -69,6 +69,6 @@ Följ de här stegen för att ta bort ett fält från en fältgrupp som används
 1. I Fältgrupp B tar du bort de fält som du inte längre vill använda.
 1. I Fältgrupp A ska du kontrollera var fältgruppen används. Den här informationen visas i **[!UICONTROL Used in]** fält.
 1. Öppna alla resor som använder fältgrupp A.
-1. Skapa nya versioner av varje resa. Redigera alla aktiviteter med fältgrupp A och välj Fältgrupp B.
+1. Skapa nya versioner av var och en av dessa resor. Redigera alla aktiviteter med fältgrupp A och välj Fältgrupp B.
 1. Stoppa gamla versioner av resor som använder fältgrupp A. Du ska då inte ha någon resa med fältgrupp A.
 1. Ta bort fältgrupp A eftersom den inte längre används.

@@ -23,7 +23,7 @@ ht-degree: 0%
 >title="Om uttrycksbiblioteket"
 >abstract="[!DNL Journey Optimizer] innehåller ett bibliotek där du kan komma åt sparade personaliseringsuttryck som har konfigurerats av administratörsanvändare. "
 
-[!DNL Journey Optimizer] I finns ett bibliotek där du kan komma åt tidigare sparade anpassningsuttryck som har lagts till av Admin-användare.
+[!DNL Journey Optimizer] I finns ett bibliotek där du kan komma åt tidigare sparade personaliseringsuttryck som har lagts till av Admin-användare.
 
 ➡️ [Lär dig hur du arbetar med sparade uttryck i den här videon](#video-preview)
 
@@ -62,8 +62,7 @@ Så här sparar du ett uttryck i biblioteket:
 >
 >* Uttryck får inte överskrida 200 kB.
 >
->* Sparade uttryck sorteras efter skapandedatum: nyligen tillagda uttryck visas först i listan.
-
+>* Sparade uttryck sorteras efter skapandedatum: det senast tillagda uttrycket visas först i listan.
 
 
 Om du vill redigera ett befintligt uttryck lägger du till det i redigeraren och ändrar det efter behov. Klicka **[!UICONTROL Add to library]** för att validera syntaxen och spara uttrycket.

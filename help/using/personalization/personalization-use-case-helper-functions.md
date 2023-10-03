@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Personalisering använder case&colon; e-post om att kunden överger en varukorg
+title: Personalisering använder skiftläge&kolon; e-post om att kunden överger vagnen
 description: Lär dig hur du anpassar brödtexten i ett e-postmeddelande med hjälp av ett användningsfall.
 feature: Personalization
 topic: Personalization
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ---
 
-# Personalisering: e-post om att kunden överger en varukorg {#personalization-use-case-helper-functions}
+# Personalisering - användningsfall: e-post om att kunden överger en varukorg {#personalization-use-case-helper-functions}
 
 I det här exemplet anpassar du brödtexten i ett e-postmeddelande. Det här meddelandet riktar sig till kunder som har lämnat artiklar i kundvagnen men inte slutfört köpet.
 
@@ -25,12 +25,11 @@ Du använder följande typer av hjälpfunktioner:
 * The `upperCase` strängfunktion, om du vill infoga kundens förnamn med versaler. [Läs mer](functions/string.md#upper).
 * The `each` hjälper dig att lista objekten i kundvagnen. [Läs mer](functions/helpers.md#each).
 * The `if` hjälper dig att infoga en produktspecifik anteckning om den relaterade produkten finns i varukorgen. [Läs mer](functions/helpers.md#if-function).
-
 <!-- **Context**: personalization based on contextual data from the journey -->
 
 ➡️ [Lär dig hur du använder hjälpfunktioner i den här videon](#video)
 
-Innan du börjar bör du kontrollera hur du konfigurerar dessa element:
+Innan du börjar bör du kontrollera hur du konfigurerar de här elementen:
 
 * En enastående händelse. [Läs mer](../event/about-events.md).
 * En resa som börjar med ett evenemang. [Läs mer](../building-journeys/using-the-journey-designer.md).
@@ -46,7 +45,7 @@ Följ de här stegen:
 1. [Infoga en produktspecifik anteckning](#if-helper).
 1. [Testa och publicera resan](#test-and-publish).
 
-## Steg 1: Skapa den första händelsen och den relaterade resan {#create-context}
+## Steg 1: Skapa den inledande händelsen och den relaterade resan {#create-context}
 
 Kundvagnens innehåll är sammanhangsberoende information från resan. Därför måste du lägga till en första händelse och e-postmeddelandet till en resa innan du kan lägga till kundspecifik information i e-postmeddelandet.
 
@@ -72,7 +71,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 
    ![](assets/personalization-uc-helpers-2.png)
 
-## Steg 3: Infoga kundens förnamn med versaler {#uppercase-function}
+## Steg 3: Ange kundens förnamn med versaler {#uppercase-function}
 
 1. På startsidan för e-postdesignern klickar du på komponenten HTML där du vill lägga till kundens förnamn.
 1. I det sammanhangsberoende verktygsfältet klickar du på **[!UICONTROL Show the source code]**.
@@ -92,7 +91,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 
       ![](assets/personalization-uc-helpers-4.png)
 
-1. Ta bort strängplatshållaren från uttrycket.
+1. Ta bort platshållaren för strängen från uttrycket.
 1. Lägg till token för förnamn:
    1. Välj **[!UICONTROL Profile attributes]**.
    1. Välj **[!UICONTROL Person]** > **[!UICONTROL Full name]**.
@@ -145,7 +144,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 
    1. Välj **[!UICONTROL Journey Optimizer]** > **[!UICONTROL Events]** > ***[!UICONTROL event_name]*** och utöka sedan **[!UICONTROL productListItems]** nod.
 
-      I det här exemplet *event_name* representerar namnet på din händelse.
+      I detta exempel *event_name* representerar namnet på din händelse.
 
    1. Lägg till **[!UICONTROL Product]** -token till uttrycket.
 
@@ -155,7 +154,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
       {{#each context.journey.events.event_ID.productListItems.product as |variable|}} {{/each}}
       ```
 
-      I det här exemplet *event_ID* representerar ID:t för din händelse.
+      I detta exempel *event_ID* representerar ID:t för din händelse.
 
       ![](assets/personalization-uc-helpers-10.png)
 
@@ -168,7 +167,6 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
       ```handlebars
       {{#each context.journey.events.event_ID.productListItems as |product|}}
       ```
-
 
 1. Klistra in koden mellan öppningarna `{{#each}}` -taggen och den avslutande `{/each}}` tagg:
 
@@ -216,7 +214,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 
 ## Steg 5: Infoga en produktspecifik anteckning {#if-helper}
 
-1. På startsidan för E-postdesignern klickar du på komponenten HTML där du vill infoga anteckningen.
+1. På startsidan för E-postdesignern klickar du på den HTML-komponent där du vill infoga anteckningen.
 1. I det sammanhangsberoende verktygsfältet klickar du på **[!UICONTROL Show the source code]**.
 
    ![](assets/personalization-uc-helpers-3.png)
@@ -256,7 +254,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
    1. Välj **[!UICONTROL Contextual attributes]**.
    1. Välj **[!UICONTROL Journey Orchestration]** > **[!UICONTROL Events]** > ***[!UICONTROL event_name]*** och utöka sedan **[!UICONTROL productListItems]** nod.
 
-      I det här exemplet *event_name* representerar namnet på din händelse.
+      I detta exempel *event_name* representerar namnet på din händelse.
 
    1. Lägg till **[!UICONTROL Name]** -token till uttrycket.
 
@@ -274,7 +272,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 1. Ändra uttrycket:
    1. I uttrycksredigeraren anger du produktnamnet efter `name` token.
 
-      Använd den här syntaxen, där *product_name* representerar namnet på din produkt:
+      Använd den här syntaxen där *product_name* representerar namnet på din produkt:
 
       ```javascript
       = "product_name"
