@@ -186,4 +186,4 @@ curl -X GET 'https://platform.adobe.io/data/core/ode/0948b1c5-fff8-3b76-ba17-909
 
 ## Nästa steg {#next-steps}
 
-Genom att följa den här API-guiden har du kontrollerat arbetsbelastningsstatus och levererade erbjudanden med hjälp av [!DNL] [!DNL Batch Decisioning]] API. Mer information finns i [Översikt över beslutsfattandet](../../get-started/starting-offer-decisioning.md).
+Genom att följa den här API-guiden har du kontrollerat arbetsbelastningsstatus och levererade erbjudanden med hjälp av [!DNL [!DNL Batch Decisioning]] API. Mer information finns i [Översikt över beslutsfattandet](../../get-started/starting-offer-decisioning.md).
