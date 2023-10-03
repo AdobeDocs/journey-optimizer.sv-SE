@@ -171,7 +171,7 @@ Exempel:
 ```
 
 >[!NOTE]
-För &lt;expression1> och &lt;expression2> det inte finns någon datatypskontroll.
+>För &lt;expression1> och &lt;expression2> det inte finns någon datatypskontroll.
 
 Resultatet är booleskt.
 
