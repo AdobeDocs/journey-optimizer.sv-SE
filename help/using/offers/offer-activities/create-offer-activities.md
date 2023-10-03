@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7a217c97-57e1-4f04-a92c-37632f8dfe91
-source-git-commit: fd035fdd956c76d9183acbd0dddf6462890c4f44
+source-git-commit: 18d44b689a524dc2b031a32b8b79ac755d680e23
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2161'
 ht-degree: 1%
 
 ---
@@ -123,6 +123,12 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
    De har nu samma rankning och kommer därför att utvärderas samtidigt. [Läs mer](#evaluation-criteria-order)
 
    ![](../assets/activity_same-rank-collections.png)
+
+   >[!CAUTION]
+   >
+   >* If [AI-modell](../ranking/ai-models.md) används i en grupp av utvärderingskriterier måste alla utvärderingskriterier i gruppen använda AI-rankningsmetoden och de måste använda samma specifika AI-modell.
+   >
+   >* Endast en kriteriegrupp för utvärdering kan använda AI-modellen. Andra grupper inom ett beslutsområde måste använda andra rangordningsmetoder (prioritet eller formel). [Läs mer om rangordningsmetoder](../offer-activities/configure-offer-selection.md)
 
 1. Använd **[!UICONTROL New scope]** -knappen. Upprepa stegen ovan för varje beslutsomfattning.
 
