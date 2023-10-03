@@ -6,10 +6,10 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 6a05efca-31bd-46d5-998d-ff3038d9013f
-source-git-commit: 805f7bdc921c53f63367041afbb6198d0ec05ad8
+source-git-commit: a6ba9632f6de91ed7911012ec4174cb7a01f5f12
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 8%
+source-wordcount: '119'
+ht-degree: 9%
 
 ---
 
@@ -33,8 +33,7 @@ POST /{ENDPOINT_PATH}/offer-rules
 
 | Parameter | Beskrivning | Exempel |
 | --------- | ----------- | ------- |
-| `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
-| `{CONTAINER_ID}` | Behållaren där beslutsreglerna finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
+| `{ENDPOINT_PATH}` | Slutpunktssökvägen för beständiga API:er. | `https://platform.adobe.io/data/core/dps/` |
 
 **Begäran**
 
@@ -69,7 +68,7 @@ curl -X POST 'https://platform.adobe.io/data/core/dps/offer-rules' \
 
 **Svar**
 
-Ett godkänt svar returnerar information om den nya beslutsregeln, inklusive placering `id`. Du kan använda `id` i senare steg för att uppdatera eller ta bort din beslutsregel eller använda den i en senare självstudie för att skapa beslut, beslutsregler och reserverbjudanden.
+Ett svar returnerar information om den nya beslutsregeln `id`. Du kan använda `id` i senare steg för att uppdatera eller ta bort din beslutsregel eller använda den i en senare självstudie för att skapa beslut, beslutsregler och reserverbjudanden.
 
 ```json
 {

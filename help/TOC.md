@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: dd463d36550b53faaffca90691550278498c862a
+source-git-commit: 5315c0878db9ddf1806f4f7d22fdd9f5a037fd59
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 30%
+source-wordcount: '1656'
+ht-degree: 34%
 
 ---
 
@@ -428,12 +428,56 @@ ht-degree: 30%
             + [Skapa ett reserverbjudande](using/offers/api-reference/offers-api/fallback-offers/create.md)
             + [Uppdatera ett reserverbjudande](using/offers/api-reference/offers-api/fallback-offers/update.md)
             + [Ta bort ett reserverbjudande](using/offers/api-reference/offers-api/fallback-offers/delete.md)
-      + Skapa och hantera beslut med API:er {#activities-api}
-         + [Lista beslut](using/offers/api-reference/activities-api/activities/activities-list.md)
-         + [Söka efter ett beslut](using/offers/api-reference/activities-api/activities/lookup.md)
-         + [Skapa ett beslut](using/offers/api-reference/activities-api/activities/create.md)
-         + [Uppdatera ett beslut](using/offers/api-reference/activities-api/activities/update.md)
-         + [Ta bort ett beslut](using/offers/api-reference/activities-api/activities/delete.md)
+         + Beslut {#decisions-api}
+            + [Lista beslut](using/offers/api-reference/activities-api/activities/activities-list.md)
+            + [Söka efter ett beslut](using/offers/api-reference/activities-api/activities/lookup.md)
+            + [Skapa ett beslut](using/offers/api-reference/activities-api/activities/create.md)
+            + [Uppdatera ett beslut](using/offers/api-reference/activities-api/activities/update.md)
+            + [Ta bort ett beslut](using/offers/api-reference/activities-api/activities/delete.md)
+         + Äldre API:er {#legacy-api}
+            + [Om äldre API:er](using/offers/api-reference/offers-api/legacy-apis/about-legacy-apis.md)
+            + Placeringar {#placements}
+               + [Lista placeringar](using/offers/api-reference/offers-api/legacy-apis/placements/placements-list.md)
+               + [Söka efter en placering](using/offers/api-reference/offers-api/legacy-apis/placements/lookup.md)
+               + [Skapa en placering](using/offers/api-reference/offers-api/legacy-apis/placements/create.md)
+               + [Uppdatera en placering](using/offers/api-reference/offers-api/legacy-apis/placements/update.md)
+               + [Ta bort en placering](using/offers/api-reference/offers-api/legacy-apis/placements/delete.md)
+            + Beslutsregler {#decision-rules}
+               + [Lista beslutsregler](using/offers/api-reference/offers-api/legacy-apis/decision-rules/rules-list.md)
+               + [Söka efter en beslutsregel](using/offers/api-reference/offers-api/legacy-apis/decision-rules/lookup.md)
+               + [Skapa en beslutsregel](using/offers/api-reference/offers-api/legacy-apis/decision-rules/create.md)
+               + [Uppdatera en beslutsregel](using/offers/api-reference/offers-api/legacy-apis/decision-rules/update.md)
+               + [Ta bort en beslutsregel](using/offers/api-reference/offers-api/legacy-apis/decision-rules/delete.md)
+            + Samlingskvalificerare {#tags}
+               + [Kvalificerare för listsamling](using/offers/api-reference/offers-api/legacy-apis/tags/tags-list.md)
+               + [Söka efter en samlingskvalificerare](using/offers/api-reference/offers-api/legacy-apis/tags/lookup.md)
+               + [Skapa en samlingskvalificerare](using/offers/api-reference/offers-api/legacy-apis/tags/create.md)
+               + [Uppdatera en samlingskvalificerare](using/offers/api-reference/offers-api/legacy-apis/tags/update.md)
+               + [Ta bort en samlingskvalificerare](using/offers/api-reference/offers-api/legacy-apis/tags/delete.md)
+            + Personaliserade erbjudanden {#personalized-offers}
+               + [Lista personaliserade erbjudanden](using/offers/api-reference/offers-api/legacy-apis/personalized-offers/offers-list.md)
+               + [Söka efter ett personaliserat erbjudande](using/offers/api-reference/offers-api/legacy-apis/personalized-offers/lookup.md)
+               + [Skapa ett personaliserat erbjudande](using/offers/api-reference/offers-api/legacy-apis/personalized-offers/create.md)
+               + [Uppdatera ett personaliserat erbjudande](using/offers/api-reference/offers-api/legacy-apis/personalized-offers/update.md)
+               + [Ta bort ett personaliserat erbjudande](using/offers/api-reference/offers-api/legacy-apis/personalized-offers/delete.md)
+            + Reserverbjudanden {#fallback-offers}
+               + [Lista reserverbjudanden](using/offers/api-reference/offers-api/legacy-apis/fallback-offers/fallback-list.md)
+               + [Söka efter ett reserverbjudande](using/offers/api-reference/offers-api/legacy-apis/fallback-offers/lookup.md)
+               + [Skapa ett reserverbjudande](using/offers/api-reference/offers-api/legacy-apis/fallback-offers/create.md)
+               + [Uppdatera ett reserverbjudande](using/offers/api-reference/offers-api/legacy-apis/fallback-offers/update.md)
+               + [Ta bort ett reserverbjudande](using/offers/api-reference/offers-api/legacy-apis/fallback-offers/delete.md)
+            + Samlingar {#collections}
+               + [Lista samlingar](using/offers/api-reference/offers-api/legacy-apis/collections/collections-list.md)
+               + [Söka efter en samling](using/offers/api-reference/offers-api/legacy-apis/collections/lookup.md)
+               + [Skapa en samling](using/offers/api-reference/offers-api/legacy-apis/collections/create.md)
+               + [Uppdatera en samling](using/offers/api-reference/offers-api/legacy-apis/collections/update.md)
+               + [Ta bort en samling](using/offers/api-reference/offers-api/legacy-apis/collections/delete.md)
+            + Beslut {#decisions-api}
+               + [Lista beslut](using/offers/api-reference/offers-api/legacy-apis/activities-api/activities-list.md)
+               + [Söka efter ett beslut](using/offers/api-reference/offers-api/legacy-apis/activities-api/lookup.md)
+               + [Skapa ett beslut](using/offers/api-reference/offers-api/legacy-apis/activities-api/create.md)
+               + [Uppdatera ett beslut](using/offers/api-reference/offers-api/legacy-apis/activities-api/update.md)
+               + [Ta bort ett beslut](using/offers/api-reference/offers-api/legacy-apis/activities-api/delete.md)
       + Leverera erbjudanden med API:er {#offer-delivery-api}
          + [Kom igång med erbjudandeleverans-API:er](using/offers/api-reference/offer-delivery-api/start-offer-delivery-apis.md)
          + [Besluts-API](using/offers/api-reference/offer-delivery-api/decisioning-api.md)
