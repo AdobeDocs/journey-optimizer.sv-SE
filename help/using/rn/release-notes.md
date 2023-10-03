@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: dd463d36550b53faaffca90691550278498c862a
+source-git-commit: 854e5959eaa9a79bce28ab47752b36aa71373757
 workflow-type: tm+mt
-source-wordcount: '4085'
+source-wordcount: '4120'
 ht-degree: 8%
 
 ---
@@ -99,9 +99,9 @@ Beräknade attribut förenklar dessutom arbetsflödena för segmentering och res
 
 Den här versionen innehåller de förbättringar som anges nedan.
 
-<!--**Personalization**
+**Personalisering**
 
-* In addition to visual fragments, it is now possible to create, save and reuse expression fragments from the Journey Optimizer interface through the Expression Editor. Expression fragments replace the previously saved expressions.-->
+* Förutom visuella fragment går det nu att skapa, spara och återanvända uttrycksfragment från Journey Optimizer-gränssnittet via uttrycksredigeraren. Uttrycksfragment ersätter uttryck som sparats tidigare. [Läs mer](../content-management/fragments.md#create-expression-fragment)
 
 <!--
 **Alerting**
