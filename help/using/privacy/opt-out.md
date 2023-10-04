@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c5bae757-a109-45f8-bf8d-182044a73cca
-source-git-commit: 65ebc3f711b92e665aedc1d41d4310ed155a8dfe
+source-git-commit: 142fac90b5726f6adbe34bea6d5f176526bce25d
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1017'
 ht-degree: 0%
 
 ---
@@ -141,11 +141,11 @@ Du kan också lägga till en kontroll för godkännande av personalisering till 
 
 1. Lägg till din första målgrupp med den dedikerade knappen till höger.
 
-1. Klicka på ikonen + och välj **[!UICONTROL Split]** för att skapa en delad publik. [Läs mer om Dela-aktiviteten](../audience/composition-canvas.md#split)
+1. Klicka på **+** -ikonen och välj en **[!UICONTROL Split]** för att skapa en delad målgrupp. [Läs mer om Dela-aktiviteten](../audience/composition-canvas.md#split)
 
    ![](assets/perso-consent-audience-split.png)
 
-1. Välj **[!UICONTROL Attribute split]** som delningstyp i den högra rutan.
+1. I den högra rutan väljer du **[!UICONTROL Attribute split]** som delningstyp.
 
    ![](assets/perso-consent-audience-attribute-split.png)
 

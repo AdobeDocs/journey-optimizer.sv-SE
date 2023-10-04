@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: 9e9c235a-b78c-4669-af82-822b6f1e6fca
-source-git-commit: 0c32248d13c08a98e9298ddc932aa2e547ab2acd
+source-git-commit: 142fac90b5726f6adbe34bea6d5f176526bce25d
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '270'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ Gör så här:
 
 1. Från **[!UICONTROL Connect to device]** fönster, klicka **[!UICONTROL Start]**.
 
-1. Skriv i **[!UICONTROL Base URL]** av programmet och klicka på **[!UICONTROL Next]**.
+1. Ange **[!UICONTROL Base URL]** av programmet och klicka på **[!UICONTROL Next]**.
 
    ![](assets/in_app_create_7.png)
 

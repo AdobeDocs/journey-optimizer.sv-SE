@@ -6,9 +6,9 @@ description: Lär dig hur du konfigurerar miljön för att skicka SMS med Journe
 role: Admin
 level: Intermediate
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
-source-git-commit: 57163faa177a4e8bc90496f7756d7749a4f7e325
+source-git-commit: 142fac90b5726f6adbe34bea6d5f176526bce25d
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '943'
 ht-degree: 1%
 
 ---
@@ -61,11 +61,11 @@ Så här konfigurerar du din SMS-leverantör med Journey Optimizer:
 
       * **[!UICONTROL Name]**: välj ett namn för API-autentiseringsuppgifterna.
 
-      * **[!UICONTROL Service ID]** och **[!UICONTROL API Token]**: du kommer åt API:erna på fliken SMS.  [Läs mer](https://developers.sinch.com/docs/sms/getting-started/)
+      * **[!UICONTROL Service ID]** och **[!UICONTROL API Token]**: du kommer åt API:erna på fliken SMS.  [Läs mer](https://developers.sinch.com/docs/sms/getting-started/){target="_blank"}.
 
-      * **[!UICONTROL Opt-In Message]**: Skriv in det anpassade svar som automatiskt skickas som **[!UICONTROL Opt-In Message]**.
+      * **[!UICONTROL Opt-In Message]**: ange det anpassade svar som automatiskt skickas som **[!UICONTROL Opt-In Message]**.
 
-      * **[!UICONTROL Help Message]**: Skriv in det anpassade svar som automatiskt skickas som **[!UICONTROL  Help Message]**.
+      * **[!UICONTROL Help Message]**: ange det anpassade svar som automatiskt skickas som **[!UICONTROL Help Message]**.
 
    * För **[!DNL Twilio]**:
 
@@ -73,13 +73,13 @@ Så här konfigurerar du din SMS-leverantör med Journey Optimizer:
 
       * **[!UICONTROL Account SID]** och **[!UICONTROL Auth Token]**: gå till rutan Kontoinformation på kontrollpanelssidan för din Twilio Console för att hitta dina inloggningsuppgifter.
 
-      * **[!UICONTROL Message SID]**: Ange den unika identifierare som tilldelats alla meddelanden som skapas av Twilios API. [Läs mer](https://support.twilio.com/hc/en-us/articles/223134387-What-is-a-Message-SID-)
+      * **[!UICONTROL Message SID]**: Ange den unika identifierare som tilldelats alla meddelanden som skapas av Twilios API. [Läs mer](https://support.twilio.com/hc/en-us/articles/223134387-What-is-a-Message-SID-){target="_blank"}.
 
    * För **[!DNL Infobip]**:
 
       * **[!UICONTROL Name]**: välj ett namn för API-autentiseringsuppgifterna.
 
-      * **[!UICONTROL API base URL]** och **[!UICONTROL API token]**: gå till webbgränssnittets hemsida eller API-nyckelhanteringssidan för att hitta dina autentiseringsuppgifter. [Läs mer](https://www.infobip.com/docs/api)
+      * **[!UICONTROL API base URL]** och **[!UICONTROL API token]**: gå till webbgränssnittets hemsida eller API-nyckelhanteringssidan för att hitta dina autentiseringsuppgifter. [Läs mer](https://www.infobip.com/docs/api){target="_blank"}.
 
    ![](assets/sms_7.png)
 
