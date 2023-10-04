@@ -4,10 +4,10 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 854e5959eaa9a79bce28ab47752b36aa71373757
+source-git-commit: 29bd838e42d82c87a03e36012a280b5f56ae3ad0
 workflow-type: tm+mt
-source-wordcount: '4120'
-ht-degree: 8%
+source-wordcount: '4142'
+ht-degree: 9%
 
 ---
 
@@ -103,10 +103,9 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 * Förutom visuella fragment går det nu att skapa, spara och återanvända uttrycksfragment från Journey Optimizer-gränssnittet via uttrycksredigeraren. Uttrycksfragment ersätter uttryck som sparats tidigare. [Läs mer](../content-management/fragments.md#create-expression-fragment)
 
-<!--
-**Alerting**
+**Varningar**
 
-* A new type of system alert has been introduced. You can now get notified when a read audience fails.    -->
+* En ny typ av systemvarning har införts. Nu kan ni få meddelanden när en läsare misslyckas. [Läs mer](../reports/alerts.md).
 
 **Webbkanal**
 

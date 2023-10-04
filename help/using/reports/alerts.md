@@ -8,49 +8,61 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
-source-git-commit: 6386a5ee5a0d1f221beab67f43636c599531736a
+source-git-commit: 01bc2351b08fc7226c5e5633820f476c8621e404
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
 
 # Kom igång med aviseringar {#alerts}
 
-Journey Optimizer utnyttjar Adobe Experience Platform varningsfunktioner. På så sätt kan du få åtkomst till systemvarningar via användargränssnittet. Du kan visa tillgängliga aviseringar och prenumerera på dem.
+## Varningsfunktioner {#alerting-capabilities}
 
-När en viss uppsättning villkor för dina åtgärder har nåtts (t.ex. ett eventuellt problem när systemet överskrider ett tröskelvärde), skickas varningsmeddelanden till alla användare i organisationen som har prenumererat på dem.
+Du kan få åtkomst till systemvarningar via användargränssnittet eller få ett e-postmeddelande när ett fel inträffar. Från **Varningar** kan du visa de tillgängliga varningarna och prenumerera på dem. När en viss uppsättning villkor för dina åtgärder har nåtts (t.ex. ett eventuellt problem när systemet överskrider ett tröskelvärde), skickas varningsmeddelanden till alla användare i organisationen som prenumererar på dem.
 
 <!--These messages can repeat over a pre-defined time interval until the alert has been resolved.-->
 
-Läs mer om varningar i Adobe Experience Platform [dokumentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html).
+Läs mer om varningar i Adobe Experience Platform i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"}.
 
-Mer information om hur du prenumererar på aviseringar och konfigurerar dem finns i detta [page](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html).
+I den vänstra menyn, under **Administration**, klicka **Varningar**. Det finns två förkonfigurerade varningar för Journey Optimizer: [Fel i anpassad åtgärd för resa](#alert-custom-actions) larm och [Utlösaren för lässegment misslyckades](#alert-read-audiences) varning. Dessa varningar beskrivs nedan.
 
->[!AVAILABILITY]
->
->Vissa designändringar pågår för aviseringen &#39;Läs målutlösaren misslyckades&#39;. Den här aviseringen har pausats och har tillfälligt tagits bort från användargränssnittet. När dessa ändringar har släppts visas varningen igen och du kan prenumerera på den.
+Du kan prenumerera på varje avisering separat från användargränssnittet genom att välja **Prenumerera** från **Varningar** kontrollpanel. Använd samma metod för att avsluta prenumerationen.
 
-I den vänstra menyn, under **Administration**, klicka **Varningar**. Det finns en förkonfigurerad avisering för Journey Optimizer. Den här varningen varnar dig om en anpassad åtgärd misslyckas. Vi anser att det finns ett fel där det har förekommit mer än 1 procent av felen i en specifik anpassad åtgärd under de senaste fem minuterna. Detta utvärderas var 30:e sekund.
+![](assets/alert-subscribe.png)
 
-![](assets/alerts-custom-action.png)
+Du kan även prenumerera på aviseringar via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"}Men varningsreglerna är ordnade i olika prenumerationspaket.
 
+Om ett oväntat beteende inträffar skickas ett varningsmeddelande till prenumeranterna. Varningar skickas med e-post, eller direkt i Journey Optimizer meddelandecenter, i det övre högra hörnet av användargränssnittet, baserat på användarinställningarna.
 
-<!--A pre-configured alert for Journey Optimizer is available. This alert will warn you if a read segment node has not processed any profile during the defined time frame.
-
-![](assets/alerts1.png)-->
-
-Om ett oväntat beteende inträffar skickas ett varningsmeddelande till de som prenumererar på varningen via e-post eller direkt inom Journey Optimizer, i det övre högra hörnet av gränssnittet, baserat på användarinställningarna.
-
-När en varning har lösts får du ett meddelande om att den har lösts. Det här kan inträffa av två orsaker för den anpassade åtgärdsaviseringen:
-* Under de senaste fem minuterna har det inte förekommit något fel för den anpassade åtgärden (eller fel under tröskelvärdet 1 %).
-* Ingen profil har nått den anpassade åtgärden.
-
-När [visa varningsregler i Adobe Experience Platform UI](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html)kan du prenumerera på varje regel separat. När du prenumererar på aviseringar via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html)Men varningsreglerna är ordnade i olika prenumerationspaket. Prenumerationsnamnet för en I/O-händelse som motsvarar aviseringen om anpassad åtgärd är: &quot;Fel vid anpassad åtgärd på resan&quot;.
-
-<!--The I/O event subscription name corresponding to the Read segment alert is: "Journey read segment Delays, Failures and Errors".-->
+När en varning har lösts får prenumeranterna ett meddelande om att den har lösts.
 
 >[!WARNING]
 >
->Dessa registreringar gäller endast för direktresor. Varningar utlöses inte för resor i testläge.
+>Adobe Journey Optimizer-specifika varningar gäller endast för **live** resor. Varningar utlöses inte för resor i testläge.
 
+## Fel i anpassad åtgärd för resa {#alert-custom-actions}
+
+Den här varningen varnar dig om en anpassad åtgärd misslyckas. Vi anser att det finns ett fel där det har förekommit mer än 1 procent av felen i en specifik anpassad åtgärd under de senaste fem minuterna. Detta utvärderas var 30:e sekund.
+
+![](assets/alerts-custom-action.png)
+
+Varningar om anpassade åtgärder löses när, under de senaste fem minuterna:
+
+* det inte har förekommit något fel i den anpassade åtgärden (eller fel under tröskelvärdet 1 %),
+
+* Eller så har ingen profil nått den anpassade åtgärden.
+
+I/O-händelsens prenumerationsnamn som motsvarar aviseringen om anpassade åtgärder är **Fel i anpassad åtgärd för resa**.
+
+## Utlösaren för lässegment misslyckades {#alert-read-audiences}
+
+Den här varningen varnar dig om en **Läs segment** aktiviteten har inte bearbetat någon profil 10 minuter efter schemalagd körningstid. Felet kan bero på tekniska problem eller på att målgruppen är tom.
+
+![](assets/alerts1.png)
+
+Varningar på **Läs segment** Denna verksamhet gäller endast återkommande resor. **Läs segment** aktiviteter i direktresor som har en tidsplan för att köras **En gång** eller **Så snart som möjligt** ignoreras.
+
+Varningar på **Läs segment** löses när en profil anges i **Läs segment** nod.
+
+I/O-händelsens prenumerationsnamn som motsvarar **Läs segment** varning **Lässegmentsfördröjningar, fel och fel på resan**.
