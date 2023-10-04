@@ -6,9 +6,9 @@ description: Lär dig hur du konfigurerar miljön för att skicka SMS med Journe
 role: Admin
 level: Intermediate
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
-source-git-commit: 142fac90b5726f6adbe34bea6d5f176526bce25d
+source-git-commit: ef9d50ba9806ade40cfa9db7bb6b9e31274a208f
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '945'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Så här konfigurerar du din SMS-leverantör med Journey Optimizer:
 
       * **[!UICONTROL Opt-In Message]**: ange det anpassade svar som automatiskt skickas som **[!UICONTROL Opt-In Message]**.
 
-      * **[!UICONTROL Help Message]**: ange det anpassade svar som automatiskt skickas som **[!UICONTROL Help Message]**.
+      * **[!UICONTROL Help Message]**: ange det anpassade svar som automatiskt skickas som **Hjälpmeddelande**.
 
    * För **[!DNL Twilio]**:
 
