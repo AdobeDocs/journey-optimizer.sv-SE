@@ -6,9 +6,9 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 553501b0-30a9-4795-9a9d-f42df5f4f2ea
-source-git-commit: ef22b6183c7646cca8636f4a7e4dd87c8f88e8ce
+source-git-commit: 722b908c33834af1c4199d597fe4d573cdea8557
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '107'
 ht-degree: 8%
 
 ---
@@ -20,7 +20,12 @@ Du kan skapa ett beslut genom att göra en POST-förfrågan till [!DNL Offer Lib
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
-    @@ -22,61 +22,67 @@ Följande tabell visar giltiga värden som utgör *innehållstyp* och
+I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
+
+| Rubriknamn | Värde |
+| ----------- | ----- |
+| Content-Type | `application/json` |
+
 **API-format**
 
 ```http

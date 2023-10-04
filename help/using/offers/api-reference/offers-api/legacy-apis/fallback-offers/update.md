@@ -6,9 +6,9 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 7ff69887-620f-4bc0-b8ff-5144ff30696c
-source-git-commit: 54b92b19f2e3a6afa6557ffeff0d971a4c411510
+source-git-commit: 722b908c33834af1c4199d597fe4d573cdea8557
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '172'
 ht-degree: 6%
 
 ---
@@ -42,7 +42,26 @@ PATCH /{ENDPOINT_PATH}/{CONTAINER_ID}/instances/{INSTANCE_ID}
 
 **Begäran**
 
-    @@ -58,7 +57,7 @@ bol -X PATCH &#39;https://platform.adobe.io/data/core/dps/offers/fallbackOffer1234?
+```shell
+curl -X PATCH 'https://platform.adobe.io/data/core/dps/offers/fallbackOffer1234?offer-type=fallback' \
+-H 'Content-Type: application/json' \
+-H 'Authorization: Bearer  {ACCESS_TOKEN}' \
+-H 'x-api-key: {API_KEY}' \
+-H 'x-gw-ims-org-id: {IMS_ORG}' \
+-H 'x-sandbox-name: {SANDBOX_NAME}' \
+-d '[
+    {
+        "op": "replace",
+        "path": "/name",
+        "value": "Updated fallback offer"
+    },
+    {
+        "op": "replace",
+        "path": "/description",
+        "value": "Updated fallback offer description"
+    }
+]'
+```
 
 | Parameter | Beskrivning |
 | --------- | ----------- |
@@ -53,6 +72,7 @@ ens35577 markerade den här konversationen som löst.
 Visa lösta
 
 **Svar**
+
 Ett lyckat svar returnerar den uppdaterade informationen om reserverbjudandet, inklusive dess unika instans `id`.
 
 ```json
