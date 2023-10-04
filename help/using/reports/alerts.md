@@ -8,18 +8,18 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
-source-git-commit: 78085934a00f4e365b49012b426e57a218bf48ba
+source-git-commit: d46ed2b5bb5402ab5ce8d3c033261d0366a5de34
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
 
 # Kom igång med aviseringar {#alerts}
 
-## Varningsfunktioner {#alerting-capabilities}
+## Få åtkomst till och prenumerera på aviseringar {#alerting-capabilities}
 
-Du kan få åtkomst till systemvarningar via användargränssnittet eller få ett e-postmeddelande när ett fel inträffar. Från **Varningar** kan du visa de tillgängliga varningarna och prenumerera på dem. När en viss uppsättning villkor för dina åtgärder har nåtts (t.ex. ett eventuellt problem när systemet överskrider ett tröskelvärde), skickas varningsmeddelanden till alla användare i organisationen som prenumererar på dem.
+När ett fel inträffar kan du få systemvarningar i Journey Optimizer meddelandecenter och få ett e-postmeddelande. Från **Varningar** kan du visa de tillgängliga varningarna och prenumerera på dem. När en viss uppsättning villkor för dina åtgärder har nåtts (t.ex. ett eventuellt problem när systemet överskrider ett tröskelvärde), skickas varningsmeddelanden till alla användare i organisationen som prenumererar på dem.
 
 <!--These messages can repeat over a pre-defined time interval until the alert has been resolved.-->
 
