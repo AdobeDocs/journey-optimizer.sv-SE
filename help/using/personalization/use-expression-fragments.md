@@ -9,9 +9,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, bibliotek, personalisering
 exl-id: 74b1be18-4829-4c67-ae45-cf13278cda65
-source-git-commit: b65547efb2041bbb49b61cb23c15936ee2bab973
+source-git-commit: 623aa2ee317553eaebfb16c350a69672de2866a1
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Följ stegen nedan om du vill lägga till uttrycksfragment i ditt innehåll.
 
 >[!NOTE]
 >
->Om du skapar ett uttrycksfragment som innehåller flera radbrytningar och använder det i [SMS](../sms/create-sms.md#sms-content) eller [push](../push/design-push.md) så bevaras radbrytningarna. Se därför till att förhandsgranska och testa [SMS](../sms/send-sms.md) eller [push](../push/send-push.md) meddelande innan det skickas.
+>Om du skapar ett uttrycksfragment som innehåller flera radbrytningar och använder det i [SMS](../sms/create-sms.md#sms-content) eller [push](../push/design-push.md) så bevaras radbrytningarna. Se därför till att testa [SMS](../sms/send-sms.md) eller [push](../push/send-push.md) meddelande innan det skickas.
 
 ## Bryt arv {#break-inheritance}
 
