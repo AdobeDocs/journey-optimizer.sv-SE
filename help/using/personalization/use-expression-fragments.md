@@ -9,9 +9,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, bibliotek, personalisering
 exl-id: 74b1be18-4829-4c67-ae45-cf13278cda65
-source-git-commit: dd463d36550b53faaffca90691550278498c862a
+source-git-commit: b65547efb2041bbb49b61cb23c15936ee2bab973
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,7 @@ ht-degree: 0%
 
 När du använder uttrycksredigeraren kan du utnyttja alla uttrycksfragment som har skapats eller sparats i den aktuella sandlådan.
 
->[!NOTE]
->
->Lär dig hur du skapar och hanterar fragment i [det här avsnittet](../content-management/fragments.md).
+Lär dig hur du skapar och hanterar fragment i [det här avsnittet](../content-management/fragments.md).
 
 ➡️ [Lär dig hur du hanterar, redigerar och använder fragment i den här videon](../content-management/fragments.md#video-fragments)
 
@@ -68,6 +66,10 @@ Följ stegen nedan om du vill lägga till uttrycksfragment i ditt innehåll.
 
 1. Sedan kan ni anpassa och validera innehållet som vanligt med hjälp av alla personaliserings- och redigeringsfunktionerna i [Uttrycksredigerare](personalization-build-expressions.md).
 
+>[!NOTE]
+>
+>Om du skapar ett uttrycksfragment som innehåller flera radbrytningar och använder det i [SMS](../sms/create-sms.md#sms-content) eller [push](../push/design-push.md) så bevaras radbrytningarna. Se därför till att förhandsgranska och testa [SMS](../sms/send-sms.md) eller [push](../push/send-push.md) meddelande innan det skickas.
+
 ## Bryt arv {#break-inheritance}
 
 När du lägger till ett fragment-ID i uttrycksredigeraren synkroniseras ändringarna som gjorts i det ursprungliga uttrycksfragmentet.
@@ -79,13 +81,4 @@ Du kan även klistra in innehållet i ett uttrycksfragment i redigeraren. Välj 
 I så fall bryts arvet från det ursprungliga fragmentet. Fragmentets innehåll kopieras till redigeraren och ändringarna synkroniseras inte längre.
 
 Det blir ett fristående element som inte längre är länkat till det ursprungliga fragmentet. Du kan redigera det som vilket annat element som helst i koden.
-
-<!--
-TO REPLACE WITH UPDATED VIDEO ON EXPRESSION FRAGMENTS
-## How-to video{#video}
-
-Learn how to use saved personalization library items in a message and how to create and manage personalization library items.
-
->[!VIDEO](https://video.tv.adobe.com/v/340941?quality=12)
--->
 
