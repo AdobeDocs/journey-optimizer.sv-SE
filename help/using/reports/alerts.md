@@ -8,9 +8,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
-source-git-commit: 4f4912530f6d39ba937b346f9eaccceff4b974dd
+source-git-commit: 78085934a00f4e365b49012b426e57a218bf48ba
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,13 @@ Du kan prenumerera på varje avisering separat från användargränssnittet geno
 
 ![](assets/alert-subscribe.png)
 
-Du kan även prenumerera på aviseringar via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"}Men varningsreglerna är ordnade i olika prenumerationspaket.
+Du kan även prenumerera på aviseringar via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"}. Varningsregler är ordnade i olika prenumerationspaket. Evenemangsprenumerationer som motsvarar specifika Journey Optimizer-varningar beskrivs nedan.
 
 Om ett oväntat beteende inträffar skickas ett varningsmeddelande till prenumeranterna. Varningar skickas med e-post, eller direkt i Journey Optimizer meddelandecenter, i det övre högra hörnet av användargränssnittet, baserat på användarinställningarna.
 
 När en varning har lösts får prenumeranterna ett meddelande om att den har lösts.
 
->[!WARNING]
+>[!CAUTION]
 >
 >Adobe Journey Optimizer-specifika varningar gäller endast för **live** resor. Varningar utlöses inte för resor i testläge.
 
@@ -51,7 +51,7 @@ Varningar om anpassade åtgärder löses när, under de senaste fem minuterna:
 
 * det inte har förekommit något fel i den anpassade åtgärden (eller fel under tröskelvärdet 1 %),
 
-* Eller så har ingen profil nått den anpassade åtgärden.
+* eller så har ingen profil nått den anpassade åtgärden.
 
 I/O-händelsens prenumerationsnamn som motsvarar aviseringen om anpassade åtgärder är **Fel i anpassad åtgärd för resa**.
 
