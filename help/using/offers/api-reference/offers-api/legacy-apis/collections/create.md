@@ -5,12 +5,13 @@ feature: Offers
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: 6156689d9e5d7abedcd612389c5e332c695601f0
+source-git-commit: f5372ee271851ffb5aa1f5ff281282c8c474dc2a
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 6%
+source-wordcount: '155'
+ht-degree: 5%
 
 ---
+
 
 # Skapa en samling {#create-collection}
 
@@ -35,7 +36,8 @@ POST /{ENDPOINT_PATH}/{CONTAINER_ID}/instances
 
 | Parameter | Beskrivning | Exempel |
 | --------- | ----------- | ------- |
-| `{ENDPOINT_PATH}` | Slutpunktssökvägen för beständiga API:er. | `https://platform.adobe.io/data/core/dps/` |
+| `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
+| `{CONTAINER_ID}` | Behållaren där samlingarna finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
 
 **Begäran**
 
@@ -59,7 +61,7 @@ curl -X POST \
 
 **Svar**
 
-Ett godkänt svar returnerar information om den nyligen skapade samlingen, inklusive dess `id`. Du kan använda `id` i senare steg för att uppdatera eller ta bort din samling eller i en senare självstudiekurs för att fatta ett beslut.
+Ett godkänt svar returnerar information om den nyligen skapade samlingen, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort din samling. Du kan använda din unika samling `@id` i en senare självstudiekurs för att skapa ett beslut.
 
 ```json
 {
