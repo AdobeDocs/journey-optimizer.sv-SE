@@ -8,9 +8,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
-source-git-commit: 01bc2351b08fc7226c5e5633820f476c8621e404
+source-git-commit: 4f4912530f6d39ba937b346f9eaccceff4b974dd
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -57,12 +57,12 @@ I/O-händelsens prenumerationsnamn som motsvarar aviseringen om anpassade åtgä
 
 ## Utlösaren för lässegment misslyckades {#alert-read-audiences}
 
-Den här varningen varnar dig om en **Läs segment** aktiviteten har inte bearbetat någon profil 10 minuter efter schemalagd körningstid. Felet kan bero på tekniska problem eller på att målgruppen är tom.
+Den här varningen varnar dig om en **Läs målgrupp** aktiviteten har inte bearbetat någon profil 10 minuter efter schemalagd körningstid. Felet kan bero på tekniska problem eller på att målgruppen är tom.
 
 ![](assets/alerts1.png)
 
-Varningar på **Läs segment** Denna verksamhet gäller endast återkommande resor. **Läs segment** aktiviteter i direktresor som har en tidsplan för att köras **En gång** eller **Så snart som möjligt** ignoreras.
+Varningar på **Läs målgrupp** Denna verksamhet gäller endast återkommande resor. **Läs målgrupp** aktiviteter i direktresor som har en tidsplan för att köras **En gång** eller **Så snart som möjligt** ignoreras.
 
-Varningar på **Läs segment** löses när en profil anges i **Läs segment** nod.
+Varningar på **Läs målgrupp** löses när en profil anges i **Läs målgrupp** nod.
 
-I/O-händelsens prenumerationsnamn som motsvarar **Läs segment** varning **Lässegmentsfördröjningar, fel och fel på resan**.
+I/O-händelsens prenumerationsnamn som motsvarar **Utlösaren för lässegment misslyckades** varning **Lässegmentsfördröjningar, fel och fel på resan**.

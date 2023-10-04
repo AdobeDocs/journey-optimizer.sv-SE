@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 29bd838e42d82c87a03e36012a280b5f56ae3ad0
+source-git-commit: c6f0e43fd2dacbc1aa79aee3605f6a30c5f9c7b4
 workflow-type: tm+mt
-source-wordcount: '4142'
+source-wordcount: '4140'
 ht-degree: 9%
 
 ---
@@ -105,7 +105,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Varningar**
 
-* En ny typ av systemvarning har införts. Nu kan ni få meddelanden när en läsare misslyckas. [Läs mer](../reports/alerts.md).
+* En ny typ av systemvarning har införts. Du kan nu få meddelanden när en **Läs målgrupp** aktiviteten misslyckas. [Läs mer](../reports/alerts.md).
 
 **Webbkanal**
 
@@ -117,7 +117,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Resor**
 
-När du duplicerar en resa kan du nu definiera namnet på kopian av resan. [Läs mer](../building-journeys/journey-gs.md#uplicate-a-journey)
+* När du duplicerar en resa kan du nu definiera namnet på kopian av resan. [Läs mer](../building-journeys/journey-gs.md#uplicate-a-journey)
 
 
 <!--
@@ -127,7 +127,7 @@ När du duplicerar en resa kan du nu definiera namnet på kopian av resan. [Läs
 
 **E-postkanal**
 
-Ett nytt alternativ i konfigurationen av e-postytan gör att du kan välja att skicka transaktionsmeddelanden till profiler även om deras e-postadresser finns på Adobe [!DNL Journey Optimizer] lista över inaktiveringar. [Läs mer](../email/email-settings.md#send-to-suppressed-email-addresses)
+* Ett nytt alternativ i konfigurationen av e-postytan gör att du kan välja att skicka transaktionsmeddelanden till profiler även om deras e-postadresser finns på Adobe [!DNL Journey Optimizer] lista över inaktiveringar. [Läs mer](../email/email-settings.md#send-to-suppressed-email-addresses)
 
 **SMS-kanal**
 
@@ -137,15 +137,15 @@ Ett nytt alternativ i konfigurationen av e-postytan gör att du kan välja att s
 
 **Direktpostkanal**
 
-Nu kan du kryptera filer som är avsedda för direktreklamleverantörer när de överförs till en server. För att göra detta finns ett nytt fält tillgängligt på konfigurationsskärmen för filroutning, som gör att du kan kopiera och klistra in krypteringsnyckeln. [Läs mer](../direct-mail/direct-mail-configuration.md)
+* Nu kan du kryptera filer som är avsedda för direktreklamleverantörer när de överförs till en server. För att göra detta finns ett nytt fält tillgängligt på konfigurationsskärmen för filroutning, som gör att du kan kopiera och klistra in krypteringsnyckeln. [Läs mer](../direct-mail/direct-mail-configuration.md)
 
 **Rapportering**
 
-Nu kan du exportera Journey Optimizer-rapporter som CSV-filer. Läs mer i [detaljerad dokumentation](../reports/global-report.md#export-reports) och [instruktionsvideo](../reports/global-report.md#video-csv).
+* Nu kan du exportera Journey Optimizer-rapporter som CSV-filer. Läs mer i [detaljerad dokumentation](../reports/global-report.md#export-reports) och [instruktionsvideo](../reports/global-report.md#video-csv).
 
 **Assets**
 
-Med ett nytt alternativ för Resurser kan du välja databas för dina resurser i Journey Optimizer. Du kan välja mellan en Assets Essentials-databas eller en Assets as a Cloud Service-databas, förutsatt att du äger den här lösningen. [Läs mer](../content-management/assets-essentials.md)
+* Med ett nytt alternativ för Resurser kan du välja databas för dina resurser i Journey Optimizer. Du kan välja mellan en Assets Essentials-databas eller en Assets as a Cloud Service-databas, förutsatt att du äger den här lösningen. [Läs mer](../content-management/assets-essentials.md)
 
 <!--**Decision management**
 
