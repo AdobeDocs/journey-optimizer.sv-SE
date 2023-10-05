@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: f1a8305d0f9cc93ae5dc93d73c8ed9513733d1a2
+source-git-commit: ad590f7fedad10c49f5c45b34cc687df063e35a8
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera opti
 
 ### Anpassade åtgärder {#custom-actions-g}
 
-* En begränsning på 150 000 anrop över 30 sekunder har definierats för alla anpassade åtgärder. Den här gränsen har fastställts baserat på kundanvändning för att skydda externa slutpunkter som har anpassats efter anpassade åtgärder.
+* En begränsning på 150 000 anrop över 30 sekunder har definierats för alla anpassade åtgärder. Den här gränsen har fastställts baserat på kundanvändning för att skydda externa slutpunkter som har anpassats efter anpassade åtgärder. Du måste ta hänsyn till detta vid målgruppsbaserade resor genom att definiera en lämplig läsfrekvens (5 000 profiler/er när anpassade åtgärder används). Om det behövs kan du åsidosätta den här inställningen genom att definiera en större begränsning för begränsning eller begränsning via våra API:er för begränsning/begränsning. Läs [den här sidan](../configuration/external-systems.md).
 * Den anpassade åtgärds-URL:en stöder inte dynamiska parametrar.
 * Anropsmetoderna POST, PUT och GET stöds
 * Namnet på frågeparametern eller -rubriken får inte börja med &quot;.&quot; eller &quot;$&quot;
