@@ -7,14 +7,19 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: b3b79fe2-7db3-490d-9c3d-87267aa55eea
-source-git-commit: 94c4e0e53625fdf20f940e8bfd15d67dba1d0120
+source-git-commit: b4e3d0ac51ffcabfd7168b9a01e9446adc61ff53
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1894'
 ht-degree: 1%
 
 ---
 
 # Skapa ett meddelande i appen {#create-in-app}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_inapp_triggers"
+>title="Hantera utlösare i appen"
+>abstract="Kontrollera effektivt era utlösare genom att välja specifika händelser och kriterier som ska aktivera dina meddelanden. Med regelbyggaren kan användare definiera exakta villkor och värden. När dessa villkor är uppfyllda initierar de en serie åtgärder, inklusive leverans av meddelanden i appen."
 
 Du kan lägga till ett meddelande i appen i en kampanj eller under en resa. Följ stegen nedan för att skapa ett meddelande i appen i båda kontexterna.
 

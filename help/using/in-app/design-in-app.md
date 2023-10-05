@@ -7,14 +7,19 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, design, formatering
 exl-id: 7d7aa721-96aa-4ebc-a51c-e693f893f34f
-source-git-commit: 39953bb09a699ed4fd07db26a3f2e54f4e2cacd7
+source-git-commit: b4e3d0ac51ffcabfd7168b9a01e9446adc61ff53
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 9%
+source-wordcount: '1046'
+ht-degree: 6%
 
 ---
 
 # Designa ditt innehåll i appen {#design-content}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_inapp_content"
+>title="Definiera innehåll i appen"
+>abstract="Anpassa innehåll och format för meddelanden i appen. Du kan också lägga till media och åtgärdsknappar för att göra budskapen mer engagerande och effektiva."
 
 Du kan redigera innehållet i appen för att konfigurera upplevelsealternativ:
 
@@ -31,6 +36,11 @@ The **[!UICONTROL Advanced formatting]** växlar aktiverar ytterligare alternati
 När ditt meddelande i appen har skapats och dess innehåll har definierats och anpassats kan du granska och aktivera det. Meddelanden skickas sedan enligt kampanjschemat. Läs mer i [den här sidan](send-in-app.md).
 
 ## Meddelandelayout {#message-layout}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_inapp_authoring_layout"
+>title="Definiera innehåll i appen"
+>abstract="Meddelandelayouten innehåller mallar som du använder ofta för att rama in meddelandet. Anpassad layout innehåller alternativ för att överföra eller skapa anpassade HTML-meddelanden."
 
 Från **[!UICONTROL Message Layout]** väljer du ett av de fyra olika layoutalternativen som du kan välja mellan beroende på ditt meddelandebehov.
 
@@ -58,9 +68,14 @@ Från **[!UICONTROL Message Layout]** väljer du ett av de fyra olika layoutalte
 
 ## Fliken Innehåll {#content-tab}
 
-Från **Innehåll** kan du definiera och anpassa: meddelandets innehåll och formatet för **Stäng** -knappen. Du kan också lägga till media i meddelanden i appen och lägga till åtgärdsknappar på den här fliken.
+Från **Innehåll** kan du definiera och anpassa innehållet i meddelandet och formatet för **Stäng** -knappen. Du kan också lägga till media i meddelanden i appen och lägga till åtgärdsknappar på den här fliken.
 
 ### Knappen Stäng {#close-button}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_inapp_authoring_close"
+>title="Välj en stil för knappen Stäng."
+>abstract="I avsnittet med stängningsknappar finns alternativ för att välja varianter av meddelandestängningsknappen och ett alternativ för att överföra en anpassad bild."
 
 ![](assets/in_app_content_2.png)
 
@@ -80,6 +95,11 @@ Om **[!UICONTROL Advanced formatting mode]** är aktiverad kan du kontrollera **
 
 ### Media {#add-media}
 
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_inapp_authoring_media"
+>title="Lägg till media i ditt meddelande i appen för att skapa en övertygande upplevelse för slutanvändaren."
+>abstract="Ange antingen en direkt länk till innehållet eller använd resursväljaren för att välja media i Resurser Essentials som ska läggas till i meddelandet."
+
 The **[!UICONTROL Media]** I kan du lägga till media i dina meddelanden i appen för att skapa en övertygande upplevelse för slutanvändaren.
 
 ![](assets/in_app_content_3.png)
@@ -94,6 +114,11 @@ Om **[!UICONTROL Advanced formatting mode]** är aktiverat kan du anpassa **[!UI
 +++
 
 ### Huvud och brödtext {#title-body}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_inapp_authoring_content"
+>title="Skriv innehållet i fälten Rubrik och Brödtext för att skapa meddelandet."
+>abstract="Både rubrik och brödtext kan läggas till här. Om du vill ta med personaliseringstoken öppnar du dialogrutan för personalisering."
 
 Skriv innehållet i **[!UICONTROL Header]** och **[!UICONTROL Body]** fält.
 
@@ -112,6 +137,11 @@ Om **[!UICONTROL Advanced formatting mode]** är aktiverat kan du välja för **
 +++
 
 ### Knapparna {#add-buttons}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_inapp_authoring_buttons"
+>title="Lägg till knappar så att användarna kan interagera med meddelandet i appen."
+>abstract="I det här avsnittet kan du lägga till knappar för att ringa upp och utföra åtgärder i meddelandet. Du kan inkludera egen text och mål för varje knapp."
 
 Lägg till knappar så att användarna kan interagera med meddelandet i appen.
 
@@ -147,6 +177,11 @@ Från **Inställningar** kan du definiera meddelandelayouten och förhandsgransk
 
 ### Förhandsgranskning {#preview-tab}
 
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_inapp_authoring_preview"
+>title="Förhandsgranska meddelandet i appen."
+>abstract="Det här är den förhandsvisningsbild som visas när meddelandet skickas till enhetens meddelandesammanfattning."
+
 ![](assets/in_app_content_6.png)
 
 The **[!UICONTROL App Preview]** I kan du lägga till en bakgrund bakom ditt meddelande i appen:
@@ -159,6 +194,11 @@ The **[!UICONTROL App Preview]** I kan du lägga till en bakgrund bakom ditt med
 
 ### Layout {#layout-options}
 
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_inapp_authoring_layout"
+>title="Definiera meddelandelayouten för ditt meddelande i appen."
+>abstract="I det här avsnittet kan du lägga till en bakgrund i meddelandet i appen. Detta kräver att övertagandet av användargränssnittet är aktiverat."
+
 ![](assets/in_app_content_7.png)
 
 The **[!UICONTROL Background image]** I kan du lägga till en bakgrund i meddelandet i appen:
@@ -168,6 +208,11 @@ The **[!UICONTROL Background image]** I kan du lägga till en bakgrund i meddela
 * En bakgrundsfärg.
 
 ### Meddelande {#message-tab}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_inapp_authoring_message_advanced"
+>title="Definiera de avancerade inställningarna för meddelandet."
+>abstract="I det här avsnittet kan du förbättra personaliseringen av ditt innehåll i appen, särskilt när avancerad formatering är aktiverat."
 
 ![](assets/in_app_content_8.png)
 

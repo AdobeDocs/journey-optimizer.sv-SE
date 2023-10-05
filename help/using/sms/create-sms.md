@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: b4e3d0ac51ffcabfd7168b9a01e9446adc61ff53
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '604'
 ht-degree: 4%
 
 ---
@@ -80,6 +80,11 @@ Nu kan du börja designa ditt SMS-meddelande via **[!UICONTROL Edit content]** -
 >[!ENDTABS]
 
 ## Definiera ditt SMS-innehåll{#sms-content}
+
+>[!CONTEXTUALHELP]
+>id="ajo_message_sms_content"
+>title="Definiera ditt SMS-innehåll"
+>abstract="Anpassa och anpassa dina SMS-meddelanden med Expression Editor för att definiera innehållet och införliva dynamiska element."
 
 1. Klicka på **[!UICONTROL Edit content]** för att konfigurera SMS-innehållet.
 
