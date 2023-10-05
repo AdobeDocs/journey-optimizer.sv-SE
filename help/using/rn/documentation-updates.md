@@ -4,9 +4,9 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: dd463d36550b53faaffca90691550278498c862a
+source-git-commit: 16367587716c73c63c2f2207c29090b41500ecf8
 workflow-type: tm+mt
-source-wordcount: '3709'
+source-wordcount: '3763'
 ht-degree: 14%
 
 ---
@@ -28,6 +28,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Länkar till åtkomstkontrollsdokumentation har uppdaterats. [Läs mer](../administration/permissions.md)
 * Förutsättningar för kanaler i appen har uppdaterats med information om Adobe Experience Platform Data Collection. [Läs mer](../in-app/inapp-configuration.md)
 * Vissa uttryck som presenteras i rankningsformelexempel har uppdaterats för att undvika valideringsfel. [Läs mer](../offers/ranking/create-ranking-formulas.md#ranking-formula-examples)
+* En varning har lagts till i **Definiera beslutsomfattningar** för att ange att om AI-modellen används i en grupp av utvärderingskriterier måste alla utvärderingskriterier i gruppen använda AI-rankningsmetoden med samma specifika AI-modell. Dessutom kan endast en grupp av utvärderingskriterier använda AI-modellen. [Läs mer](../offers/offer-activities/create-offer-activities.md#add-decision-scopes)
 
 ## Augusti 2023 {#august-2023}
 
