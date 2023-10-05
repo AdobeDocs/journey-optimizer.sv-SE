@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: resurser, grundläggande funktioner, upplevelseansvarig, integration
 exl-id: d4fde14b-e2da-40bf-a387-ee9f2f7ff204
-source-git-commit: 8673391de8ac5c91bfbd28d23f7ab9a1416f4a83
+source-git-commit: f6404776cc4cd2b83373617ce6d5e18c960d0371
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 1%
@@ -49,8 +49,7 @@ Mer information om hur du överför resurser finns i [Adobe Experience Manager A
 
    ![](assets/media_library_4.png)
 
-+++
-Lär dig hur du byter resurskatalog.
++++ Lär dig hur du byter resurskatalog.
 
    Om du vill ändra resurskatalogen väljer du kontoikonen i det övre högra hörnet och klickar på **[!UICONTROL Select Repository]**.
 
