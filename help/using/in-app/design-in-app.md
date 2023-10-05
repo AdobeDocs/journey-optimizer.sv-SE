@@ -7,7 +7,7 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, design, formatering
 exl-id: 7d7aa721-96aa-4ebc-a51c-e693f893f34f
-source-git-commit: b4e3d0ac51ffcabfd7168b9a01e9446adc61ff53
+source-git-commit: 144afbd925301ea1eeb690adee335d205fded394
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 6%
@@ -38,7 +38,7 @@ När ditt meddelande i appen har skapats och dess innehåll har definierats och 
 ## Meddelandelayout {#message-layout}
 
 >[!CONTEXTUALHELP]
->id="ajo_campaigns_inapp_authoring_layout"
+>id="ajo_campaigns_inapp_authoring_message_layout"
 >title="Definiera innehåll i appen"
 >abstract="Meddelandelayouten innehåller mallar som du använder ofta för att rama in meddelandet. Anpassad layout innehåller alternativ för att överföra eller skapa anpassade HTML-meddelanden."
 
