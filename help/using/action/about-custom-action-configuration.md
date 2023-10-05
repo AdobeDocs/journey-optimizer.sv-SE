@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: f1a8305d0f9cc93ae5dc93d73c8ed9513733d1a2
+source-git-commit: 2874acfda5947bedd6c390468ded294cf07f9383
 workflow-type: tm+mt
 source-wordcount: '1230'
 ht-degree: 4%
@@ -132,7 +132,7 @@ När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICO
 
 1. I **[!UICONTROL Request]** klistra in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten. Det här fältet är valfritt och endast tillgängligt för anropsmetoder för POST och PUT.
 
-1. I **[!UICONTROL Response]** klistra in ett exempel på nyttolasten som returneras av anropet. Det här fältet är valfritt och tillgängligt för alla anropsmetoder. Detaljerad information om hur du utnyttjar API-anropssvar i kundåtgärder finns i [den här sidan](../action/action-response.md).
+1. I **[!UICONTROL Response]** klistra in ett exempel på nyttolasten som returneras av anropet. Det här fältet är valfritt och tillgängligt för alla anropsmetoder. Detaljerad information om hur du utnyttjar API-anropssvar i anpassade åtgärder finns i [den här sidan](../action/action-response.md).
 
 >[!NOTE]
 >

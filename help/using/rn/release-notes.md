@@ -4,7 +4,7 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: f1a8305d0f9cc93ae5dc93d73c8ed9513733d1a2
+source-git-commit: 2874acfda5947bedd6c390468ded294cf07f9383
 workflow-type: tm+mt
 source-wordcount: '4189'
 ht-degree: 9%
@@ -121,7 +121,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 
 
-* Stöd för anpassade åtgärdssvar är nu GA. Med den här funktionen kan ni utnyttja API-anropssvar i anpassade åtgärder och samordna er resa baserat på dessa svar. Dessutom har ett nytt skyddsräcke lagts till för att begränsa alla tullåtgärder till 15 000 samtal över 30 sekunder per slutpunkt. [Läs mer](../action/action-response.md)
+* Stöd för anpassade åtgärdssvar är nu GA. Med den här funktionen kan ni utnyttja API-anropssvar i anpassade åtgärder och samordna er resa baserat på dessa svar. Dessutom har ett nytt skyddsräcke lagts till för att begränsa alla tullåtgärder till 150 000 samtal över 30 sekunder per slutpunkt. [Läs mer](../action/action-response.md)
 <!--
 * The maximum duration that you can define in the Wait activity is now 29 days instead of 30.
 -->
