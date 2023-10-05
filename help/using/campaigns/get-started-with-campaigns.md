@@ -9,14 +9,20 @@ role: User
 level: Intermediate
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
+source-git-commit: 523f38743a827db4f8a94430ef02eda78d4151d9
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '451'
 ht-degree: 2%
 
 ---
 
 # Kom igång med kampanjer {#get-started-campaigns}
+
+>[!CONTEXTUALHELP]
+>id="ajo_homepage_card3"
+>title="Skapa kampanjer"
+>abstract="Använd **Adobe Journey Optimizer** för att leverera engångsinnehåll till en viss målgrupp via olika kanaler. När du använder resor utförs åtgärderna i sekvens. Med kampanjer utförs åtgärder samtidigt, antingen omedelbart eller baserat på ett angivet schema."
+
 
 >[!CONTEXTUALHELP]
 >id="campaigns_list"
