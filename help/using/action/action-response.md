@@ -10,9 +10,9 @@ level: Experienced
 badge: label="Beta" type="Informative"
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: d88daa58-20af-4dac-ae5d-4c10c1db6956
-source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
+source-git-commit: f1a8305d0f9cc93ae5dc93d73c8ed9513733d1a2
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '603'
 ht-degree: 4%
 
 ---
@@ -20,10 +20,6 @@ ht-degree: 4%
 # Använd API-anropssvar i anpassade åtgärder {#custom-action-enhancements}
 
 Du kan utnyttja API-anropssvar i anpassade åtgärder och samordna dina resor baserat på dessa svar.
-
->[!AVAILABILITY]
->
->Den här funktionen är för närvarande tillgänglig som betaversion.
 
 <!--
 You can now leverage API call responses in custom actions and orchestrate your journeys based on these responses.
