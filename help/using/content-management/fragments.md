@@ -7,10 +7,10 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-exl-id: 05f74838-6766-47ea-aaed-a67c174a51a9
-source-git-commit: dd463d36550b53faaffca90691550278498c862a
+exl-id: 7131a953-baca-4e7c-a8df-97c0bd6ac567
+source-git-commit: 732b84a8945e85cb77a8d2c477f9c9a064988109
 workflow-type: tm+mt
-source-wordcount: '1366'
+source-wordcount: '1370'
 ht-degree: 2%
 
 ---
@@ -127,7 +127,7 @@ Det finns två sätt att skapa fragment:
 
 * Skapa ett fragment från grunden med **[!UICONTROL Fragments]** egen meny. [Lär dig mer](#create-from-scratch)
 
-* När du utformar innehåll sparar du en del av innehållet som fragment. [Lär dig mer](#save-as-template)
+* När du utformar innehåll sparar du en del av innehållet som fragment. [Lär dig mer](#save-as-fragment)
 
 När fragmentet har sparats är det tillgängligt för användning under en resa, en kampanj eller en mall. Oavsett om du har skapat från grunden eller från ett befintligt innehåll kan du nu använda det här avsnittet när du skapar innehåll i [!DNL Journey Optimizer]. Se [Lägg till visuella fragment](../email/use-visual-fragments.md) och [Utnyttja uttrycksfragment](../personalization/use-expression-fragments.md)
 
@@ -148,7 +148,7 @@ Följ stegen nedan om du vill skapa ett fragment från grunden.
 
    ![](assets/fragment-details.png)
 
-1. Välj fragmenttyp: **[!UICONTROL Visual fragment]** eller **[!UICONTROL Expression fragment]**.
+1. Välj fragmenttyp: [Visual fragment](#create-visual-fragment) eller [Uttrycksfragment](#create-expression-fragment).
 
 1. Om du vill tilldela egna eller grundläggande dataanvändningsetiketter till fragmentet väljer du **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md).
 
