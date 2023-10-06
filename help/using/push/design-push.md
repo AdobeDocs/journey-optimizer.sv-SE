@@ -8,16 +8,21 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6f6d693d-11f2-48b7-82a8-171829bf8045
-source-git-commit: 19440c38d5d663a6b5ea7e99817ee65496bb43e6
+source-git-commit: adcfff1cb8bb2ae98d41e4071f56a137e52ee56a
 workflow-type: tm+mt
-source-wordcount: '1239'
-ht-degree: 10%
+source-wordcount: '1364'
+ht-degree: 9%
 
 ---
 
 # Utforma ett push-meddelande {#design-push-notification}
 
 ## Titel och brödtext {#push-title-body}
+
+>[!CONTEXTUALHELP]
+>id="ajo-message-push-compose"
+>title="Anpassa ditt push-meddelande."
+>abstract="Skriv innehållet i fälten Rubrik och Brödtext för att skapa meddelandet. Om du vill ta med personaliseringstoken öppnar du dialogrutan för personalisering."
 
 Klicka på knappen **[!UICONTROL Title]** och **[!UICONTROL Body]** fält. Använd uttrycksredigeraren för att definiera innehåll, anpassa data och lägga till dynamiskt innehåll. Läs mer om [personalisering](../personalization/personalize.md) och [dynamiskt innehåll](../personalization/get-started-dynamic-content.md) i uttrycksredigeraren.
 
@@ -40,6 +45,11 @@ Du kan välja beteende när en användare klickar på texten i push-meddelandet.
 
 ## Lägg till media {#add-media-push}
 
+>[!CONTEXTUALHELP]
+>id="ajo-message-push-media"
+>title="Lägg till media i ditt push-meddelande"
+>abstract="Du kan lägga till en bild, en video eller ett GIF som visas i meddelandet."
+
 I iOS-versionen av ditt push-meddelande kan du lägga till en bild, en video eller ett GIF som visas i meddelandet.
 
 I Android-versionen kan du bara lägga till en bildikon och en bild för utökade meddelanden.
@@ -57,6 +67,11 @@ Det finns två alternativ. Du kan:
 När mediet har lagts till visas det till höger om meddelandetexten.
 
 ## Lägg till knappar {#add-buttons-push}
+
+>[!CONTEXTUALHELP]
+>id="ajo-message-push-buttons"
+>title="Lägg till knappar så att användarna kan interagera med push-meddelanden."
+>abstract="I det här avsnittet kan du lägga till knappar för att ringa upp och utföra åtgärder i meddelandet. Ange en meddelandekategoriidentifierare för iOS. För Android kan du inkludera anpassad text och mål för varje knapp."
 
 Skapa ett användbart meddelande genom att lägga till knappar i ditt push-innehåll.
 
@@ -85,11 +100,21 @@ Välj **[!UICONTROL Silent Notification]** möjlighet att tyst meddela ansökan:
 
 Använd **[!UICONTROL Custom data]** för att lägga till nyckelvärdepar.
 
-## Anpassade data
+## Anpassade data {#custom-data}
+
+>[!CONTEXTUALHELP]
+>id="ajo-message-push-custom"
+>title="Konfigurera anpassade data för push-meddelanden."
+>abstract="Lägg till anpassade variabler i nyttolasten, beroende på din mobilprogramkonfiguration."
 
 I **[!UICONTROL Custom data]** kan du lägga till anpassade variabler i nyttolasten, beroende på din mobilprogramkonfiguration. Mer information om hur du ställer in push-meddelanden i Adobe Experience Platform och Adobe Launch finns i [det här avsnittet](push-gs.md)
 
 ## Avancerade alternativ {#advanced-options-push}
+
+>[!CONTEXTUALHELP]
+>id="ajo-message-push-advanced"
+>title="Konfigurera avancerade alternativ för push-meddelanden."
+>abstract="I det här avsnittet kan du förbättra personaliseringen av ditt push-meddelande."
 
 Du kan konfigurera **[!UICONTROL Advanced options]** för ditt push-meddelande. Tillgängliga parametrar visas nedan:
 

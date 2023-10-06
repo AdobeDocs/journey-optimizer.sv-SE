@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: fa64f5b8-75f2-40e6-8566-5766fafe6cd6
-source-git-commit: 2ae9cc843d613bf22e1413b1903e151faf3f8f76
+source-git-commit: adcfff1cb8bb2ae98d41e4071f56a137e52ee56a
 workflow-type: tm+mt
-source-wordcount: '2198'
+source-wordcount: '2696'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,11 @@ En detaljerad lista över alla mätvärden som är tillgängliga i Adobe Journey
 ## Fliken Kampanj {#campaign-global}
 
 ### Leverans {#delivery-global}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_delivery_global"
+>title="Kampanjstatistik"
+>abstract="Widgeten Statistik för Campaign visar huvudinformationen i förhållande till din kampanj, t.ex. Angivna profiler och levererade åtgärder."
 
 ![](assets/campaign_report_global_1.png)
 
@@ -209,6 +214,21 @@ The **[!UICONTROL Send time optimization]** innehåller information om leveranse
 
 ## Fliken I appen {#inapp-global}
 
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_inapp_performance"
+>title="Prestanda i appen"
+>abstract="KPI:erna för prestanda i appen ger viktiga insikter i besökarnas engagemang med meddelanden i appen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_inapp_interactions"
+>title="Interaktioner per typ"
+>abstract="Interaktionen per typ av diagram och tabell visar hur användarna interagerade med meddelandet i appen genom att spåra varje klick, avbruten eller interaktion."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_inapp_summary"
+>title="Sammanfattning i appen"
+>abstract="I sammanfattningsdiagrammet i appen visas utvecklingen för dina visningar och interaktioner i appen under den angivna perioden."
+
 Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL In-app]** -fliken innehåller huvudinformationen om de leveranser i appen som skickas i kampanjen.
 
 ![](assets/campaign_report_global_6.png)
@@ -223,20 +243,50 @@ The **[!UICONTROL In-app performance]** Nyckeltal anger den viktigaste informati
 
 * **[!UICONTROL Interactions rate]**: procent av engagemanget i meddelandet i appen. Detta inkluderar alla åtgärder som användaren utför, t.ex. klickningar, uppsägningar eller annan interaktion.
 
-The **[!UICONTROL In-app summary]** diagram visar utvecklingen av dina visningar och interaktioner i appen för den aktuella perioden.
-
 The **[!UICONTROL Interactions by type]** diagram och tabeller visar hur användare interagerade med meddelanden i appen genom att spåra varje klick, avgång eller interaktion.
+
+The **[!UICONTROL In-app summary]** diagram visar utvecklingen av dina visningar och interaktioner i appen för den aktuella perioden.
 +++
 
 ## Fliken Push-meddelanden {#push-global}
 
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_push_sending_statistics"
+>title="Push-meddelande - skicka statistik"
+>abstract="Registret Push Notification Sending Statistics sammanfattar viktiga data om dina push-meddelanden, som riktade eller levererade meddelanden."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_push_tracking_statistics"
+>title="Push-meddelande - Spårningsstatistik"
+>abstract="Statistik för push-spårning innehåller data om mottagaraktivitet för leveransen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_push_sending_summary"
+>title="Push-meddelande - Skickar sammanfattning"
+>abstract="I diagrammet Översikt över sändning av push-meddelanden visas tillgängliga data för skickade push-meddelanden."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_push_excluded_reasons"
+>title="Push-meddelande - Undantagna orsaker"
+>abstract="I diagrammen och tabellen Exkluderade orsaker visas de olika faktorer som ledde till att användarprofiler exkluderades från målgruppen och inte fick meddelandet."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_push_error_reasons"
+>title="Push-meddelande - felorsaker"
+>abstract="Med hjälp av diagrammen och tabellen Felorsaker kan du identifiera de specifika fel som uppstod under leveransen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_push_breakdown_platform"
+>title="Push-meddelande - uppdelning efter plattform"
+>abstract="Diagram och tabell över uppdelningar per plattform visar hur väl push-meddelandena lyckades utifrån mottagarens operativsystem."
+
 Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Push notification]** -fliken innehåller huvudinformationen i förhållande till push-leveranser som skickas i kampanjen.
 
-![](assets/campaign_report_global_3.png)
+![](assets/campaign_report_global_3.png)KPI:erna för prestanda i appen detaljerar den viktigaste informationen i förhållande till besökarnas engagemang i era meddelanden i appen.
 
 +++Läs mer om de olika mätvärden och widgetar som är tillgängliga för rapporten Push.
 
-The **[!UICONTROL Push notification - Sending statistics]** tabellen visar huvudinformationen i förhållande till push-meddelanden med diagram och KPI:er:
+The **[!UICONTROL Push notification - Sending statistics]** tabellen visar huvudinformationen i förhållande till dina push-meddelanden
 
 * **[!UICONTROL Targeted]**: Totalt antal meddelanden som bearbetats under leveransanalysen.
 
@@ -299,10 +349,40 @@ The **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilket fel
 
 The **[!UICONTROL Excluded reasons]** I diagram och tabeller visas de olika anledningar som gjorde att användarprofiler som inte ingår i målprofilerna inte kunde ta emot meddelandet.
 
-The **[!UICONTROL Tracking by platform]**, **[!UICONTROL Sending by platform]** och **[!UICONTROL Breakdown by platform]** diagram och tabeller visar hur bra push-meddelandena är beroende på mottagarens operativsystem.
+The **[!UICONTROL Breakdown by platform]** diagram och tabeller visar hur bra push-meddelandena är beroende på mottagarens operativsystem.
 +++
 
 ## fliken SMS {#sms-global}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_sms_sending_statistics"
+>title="SMS - Sändande statistik"
+>abstract="Registret SMS Sending Statistics sammanfattar viktiga data om dina SMS-meddelanden, som riktade eller levererade meddelanden."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_sms_error_reasons"
+>title="SMS - Felorsaker"
+>abstract="Med SMS - felorsaker kan du identifiera specifika fel som uppstod under leveransen med hjälp av diagram och tabeller."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_sms_performance"
+>title="SMS - Prestanda per datum"
+>abstract="Widgeten SMS Performance by Date (SMS-prestanda efter datum) innehåller viktig information om dina meddelanden via en grafisk representation."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_sms_excluded_reasons"
+>title="SMS - Undantagna orsaker"
+>abstract="I diagrammen och tabellen Exkluderade orsaker visas de olika faktorer som ledde till att användarprofiler exkluderades från målgruppen och inte fick meddelandet."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_sms_bounces_reasons"
+>title="SMS - studsar orsaker"
+>abstract="Diagram över studentorsaker och tabellen innehåller tillgängliga data om studsade meddelanden."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_sms_clicks_links"
+>title="SMS - Klicka på länkar"
+>abstract="Widgeten SMS - Klicka på länkar ger viktiga insikter i besökarnas engagemang med URL:erna i dina meddelanden"
 
 Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL SMS]** -fliken innehåller huvudinformationen om SMS-leveranser som skickas i kampanjen.
 
@@ -330,13 +410,28 @@ The **[!UICONTROL SMS Performance by date]** widgeten visar huvudinformationen i
 
 * **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
 
-The **[!UICONTROL Exclude Reasons]**, **[!UICONTROL Bounces Reasons]** och **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilka fel och undantag som inträffade under leveransen.
+The **[!UICONTROL Exclude Reasons]** och **[!UICONTROL Bounces Reasons]** och **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilka fel och undantag som inträffade under leveransen.
 
-The **[!UICONTROL SMS - Clicks by links]** och **[!UICONTROL SMS - Tracking statistics]** widgetar detaljerar den viktigaste informationen i förhållande till besökarnas engagemang med dina URL:er.
+The **[!UICONTROL SMS - Clicks by links]** widgetar anger huvudinformationen i förhållande till besökarnas engagemang i era URL:er.
 
 +++
 
 ## Fliken Webb {#web-tab}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_web_performance"
+>title="Webbprestanda"
+>abstract="KPI:erna för Web Performance ger omfattande information om besökarnas engagemang i era webbupplevelser."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_web_summary"
+>title="Webbsammanfattning"
+>abstract="I webbsammanfattningsdiagrammet visas hur webbupplevelserna fortskrider, inklusive visningar, unika visningar och interaktioner under den angivna perioden."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_web_interactions"
+>title="Interaktioner per element"
+>abstract="Tabellen Interaktioner per element innehåller viktig information om besökarnas engagemang med olika element på webbsidorna."
 
 Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Web]** -fliken anger huvudinformationen för dina webbsidor.
 
@@ -358,6 +453,21 @@ The **[!UICONTROL Interactions by element]** tabellen innehåller huvudinformati
 +++
 
 ## Fliken Direktreklam {#direct-mail-global}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_direct_sending_statistics"
+>title="Direktreklam - skicka statistik"
+>abstract="Registret Skicka direkt e-post - statistik sammanfattar viktiga data om dina Direct Mail-meddelanden, till exempel riktade eller levererade meddelanden."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_direct_error_reasons"
+>title="Direktreklam - felorsaker"
+>abstract="Med diagrammen och tabellen Direktreklam - Felorsaker kan du identifiera de specifika fel som uppstod under leveransen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_direct_excluded_reasons"
+>title="Direktreklam - orsaker som inte ingår"
+>abstract="Diagram och tabell över orsaker till varför direktreklam exkluderats visar de olika faktorer som ledde till att användarprofiler exkluderades från målgruppen och inte fick meddelandet."
 
 Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Direct mail]** -fliken anger huvudinformationen i förhållande till dina Direct-postleveranser.
 
