@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: bd5e053a-69eb-463b-add3-8b9168c8e280
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 7f5085e1f615917181dc618ec1006b4526346afe
 workflow-type: tm+mt
 source-wordcount: '1317'
 ht-degree: 2%
@@ -41,18 +41,18 @@ Till **skapa ett schema** gör du så här:
 
 1. Klicka på **[!UICONTROL Schemas]**.
    ![](assets/test-profiles-0.png)
-1. Klicka **[!UICONTROL Create schema]**, i det övre högra hörnet, och sedan väljer du en schematyp, till exempel **Individuell XDM-profil**.
+1. Klicka **[!UICONTROL Create schema]**, i det övre högra hörnet, väljer du en schematyp, till exempel **Individuell profil** och klicka **Nästa**.
    ![](assets/test-profiles-1.png)
-1. Välj rätt fältgrupper. Se till att du lägger till **Profiltestdetaljer** fältgrupp.
+1. Ange ett namn för schemat och klicka på **Slutför**.
+   ![](assets/test-profiles-1-bis.png)
+1. I **Fältgrupper** till vänster klickar du på **Lägg till** och välj rätt fältgrupper. Se till att du lägger till **Profiltestdetaljer** fältgrupp.
    ![](assets/test-profiles-1-ter.png)
 När du är klar klickar du **[!UICONTROL Add field groups]**: listan över fältgrupper visas på schemaöversiktsskärmen.
    ![](assets/test-profiles-2.png)
 
    >[!NOTE]
    >
-   >* Klicka på schemats namn för att ändra det och uppdatera dess egenskaper.
-   >
-   >* Klicka på **[!UICONTROL Add]** knappen i avsnittet Fältgrupper för att välja andra fältgrupper att lägga till i schemat
+   >Klicka på schemats namn för att uppdatera dess egenskaper.
 
 1. I listan med fält klickar du på det fält som du vill definiera som primär identitet.
    ![](assets/test-profiles-3.png)

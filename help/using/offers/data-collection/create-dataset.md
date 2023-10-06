@@ -7,10 +7,10 @@ feature: Ranking Formulas
 role: User
 level: Intermediate
 exl-id: 99963ef4-0b19-475e-96f4-2eac3f680c6f
-source-git-commit: f2174848c70610fc543ea9ddf766f0f7e579053a
+source-git-commit: 7f5085e1f615917181dc618ec1006b4526346afe
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 7%
+source-wordcount: '231'
+ht-degree: 6%
 
 ---
 
@@ -20,15 +20,18 @@ Om du vill samla in upplevelsehändelser måste du först skapa en datauppsättn
 
 Börja med att skapa schemat som ska användas i din datauppsättning:
 
-1. Från **[!UICONTROL Data Management]** meny, välja **[!UICONTROL Schema]** och går till **[!UICONTROL Browse]** -fliken.
+1. Från **[!UICONTROL Data Management]** meny, välja **[!UICONTROL Schema]**.
 
-1. Klicka **[!UICONTROL Create schema]** och välja **[!UICONTROL XDM ExperienceEvent]**.
+1. Klicka **[!UICONTROL Create schema]**, längst upp till höger, välj **[!UICONTROL Experience Event]** och klicka **Nästa**.
 
    ![](../assets/ai-ranking-xdm-event.png)
 
    >[!NOTE]
    >
    >Läs mer om XDM-scheman och fältgrupper i [Översikt över XDM-systemet - dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}.
+
+1. Ange ett namn och en beskrivning för ditt schema och klicka på **Slutför**.
+   ![](../assets/ai-ranking-xdm-event-2.png)
 
 1. Från **[!UICONTROL Field groups]** till vänster väljer du **[!UICONTROL Add]**.
 
@@ -44,7 +47,7 @@ Börja med att skapa schemat som ska användas i din datauppsättning:
    >
    >Schemat som ska användas i datauppsättningen måste ha **[!UICONTROL Experience Event - Proposition Interactions]** fältgrupp som är associerad med den. Annars kan du inte använda den i AI-modellen.
 
-1. Skriv ett namn och spara schemat.
+1. Spara schemat.
 
 >[!NOTE]
 >

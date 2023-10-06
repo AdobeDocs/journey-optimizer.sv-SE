@@ -6,9 +6,9 @@ description: Lär dig hur du konfigurerar miljön för att skicka push-meddeland
 role: Admin
 level: Intermediate
 exl-id: 7099d44e-5d5d-4eef-9477-f68f4eaa1983
-source-git-commit: 118eddf540d1dfb3a30edb0b877189ca908944b1
+source-git-commit: 7f5085e1f615917181dc618ec1006b4526346afe
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1479'
 ht-degree: 3%
 
 ---
@@ -267,20 +267,20 @@ You can use a test mobile app for this use case. For more on this, refer to this
 
 För att den här resan ska fungera måste du skapa ett XDM-schema. Mer information finns i [XDM-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#schemas-and-data-ingestion){target="_blank"}.
 
-1. I den vänstra menyn bläddrar du till **[!UICONTROL Schemas]**.
-
-1. Klicka **[!UICONTROL Create schema]** välj **[!UICONTROL XDM ExperienceEvent]**.
-
+1. Klicka på **[!UICONTROL Schemas]**.
+   ![](assets/test_push_1.png)
+1. Klicka **[!UICONTROL Create schema]**, längst upp till höger, välj **[!UICONTROL Experience Event]** och klicka **Nästa**.
    ![](assets/test_push_2.png)
-
-1. Välj **[!UICONTROL Create a new field group]**.
+1. Ange ett namn och en beskrivning för ditt schema och klicka på **Slutför**.
+   ![](assets/test_push_3.png)
+1. I **Fältgrupper** till vänster klickar du på **Lägg till** och markera **[!UICONTROL Create a new field group]**.
 
 1. Ange en **[!UICONTROL Display Name]** och **[!UICONTROL Description]**. Klicka på **[!UICONTROL Add field groups]** när du är klar. Mer information om hur du skapar fältgrupper finns i [XDM-systemdokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html){target="_blank"}.
 
 
    ![](assets/test_push_4.png)
 
-1. Markera schemat till vänster. Ange schemats och beskrivningens namn i den högra rutan. Aktivera schemat för **[!UICONTROL Profile]**.
+1. Markera schemat till vänster. Aktivera det här schemat för **[!UICONTROL Profile]**.
 
    ![](assets/test_push_4b.png)
 
