@@ -4,9 +4,9 @@ product: journey optimizer
 title: Versionsinformation
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 523f38743a827db4f8a94430ef02eda78d4151d9
+source-git-commit: 9de7c9e6cf4a581ca089785467bf838f8e9943a7
 workflow-type: tm+mt
-source-wordcount: '4220'
+source-wordcount: '4253'
 ht-degree: 9%
 
 ---
@@ -104,6 +104,10 @@ Beräknade attribut förenklar dessutom arbetsflödena för segmentering och res
 ### Förbättringar {#sept-2023-improvements}
 
 Den här versionen innehåller de förbättringar som anges nedan.
+
+**Beslutshantering**
+
+* Nu finns nya API:er för att skapa och hantera beslutshanteringsobjekt. Dessa API:er ger bättre prestanda och en förbättrad användarupplevelse. Äldre API:er stöds till 2024-03-27. [Läs mer](../offers/api-reference/getting-started.md)
 
 **Personalisering**
 
