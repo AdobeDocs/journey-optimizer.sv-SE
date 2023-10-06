@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: b837145b-1727-43c0-a0e2-bf0e8a35347c
-source-git-commit: b95d3a709075c388b1784bd18407258acd786851
+source-git-commit: 4905c3c395ee06e1af34da9a2b5cae9b4a3c39e6
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '826'
 ht-degree: 91%
 
 ---
@@ -136,7 +136,7 @@ När du försöker skapa en annan konfiguration:
 
 ## Användningsfall {#uc}
 
-Det finns en Postman-samling som kan hjälpa dig med testning och konfiguration [här](https://raw.githubusercontent.com/AdobeDocs/JourneyAPI/master/postman-collections/Journey-Orchestration_Throttling-API_postman-collection.json).
+Det finns en Postman-samling som kan hjälpa dig med testning och konfiguration [här](https://github.com/AdobeDocs/JourneyAPI/blob/master/postman-collections/Journeys_Throttling-API_postman-collection.json).
 
 Den här Postman-samlingen har konfigurerats för att dela den samling med Postman-variabler som genererats via __[Integreringar i Adobe I/O Console](https://console.adobe.io/integrations) > Testa > Hämta för Postman__, som genererar en Postman-miljöfil med de valda integreringsvärdena.
 
