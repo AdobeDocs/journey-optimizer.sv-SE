@@ -7,7 +7,7 @@ feature: Profiles
 role: User
 level: Beginner
 exl-id: 5402a179-263f-46a7-bddf-5b7017cf0f82
-source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
+source-git-commit: 6999f52a3426aa252f31440189ba9d1a7118dd0a
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%
@@ -19,6 +19,10 @@ ht-degree: 0%
 Beräknade attribut gör att du kan sammanfatta enskilda beteendehändelser i beräknade profilattribut som är tillgängliga på Adobe Experience Platform. Dessa beräknade attribut baseras på profilaktiverade Experience Event-datamängder som importerats till Adobe Experience Platform och fungerar som aggregerade datapunkter som lagras i kundprofiler.
 
 Varje beräknat attribut är ett profilattribut som ni kan använda för segmentering, personalisering och aktivering under resor och kampanjer. Den här förenklingen gör det enklare att leverera vältajmade och meningsfulla personaliserade upplevelser till kunderna.
+
+
+![](../rn/assets/do-not-localize/computed-attributes.gif)
+
 
 >[!NOTE]
 >

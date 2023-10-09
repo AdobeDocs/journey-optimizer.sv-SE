@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 6151aea2-6a34-4000-ba48-161efe4d94d7
-source-git-commit: dd463d36550b53faaffca90691550278498c862a
+source-git-commit: 6999f52a3426aa252f31440189ba9d1a7118dd0a
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 9%
@@ -48,6 +48,9 @@ I listorna kan du utföra grundläggande åtgärder för varje element. Du kan t
 ## Arbeta med enhetliga taggar {#tags}
 
 Med Adobe Experience Platform [Enhetliga taggar](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/overview.html)kan du enkelt klassificera dina Journey Optimizer-resor och -kampanjer för att förbättra sökningen från listorna.
+
+![](../rn/assets/do-not-localize/campaigns-tag.gif)
+
 
 ### Lägga till taggar i ett objekt
 
