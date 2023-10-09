@@ -6,14 +6,19 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 773bee50-849f-4b07-9423-67de5279ad28
-source-git-commit: 805f7bdc921c53f63367041afbb6198d0ec05ad8
+source-git-commit: 7e9984aee1eba29a2757b025ca0aa1092d95a761
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 3%
+source-wordcount: '373'
+ht-degree: 2%
 
 ---
 
 # Utvecklarhandbok för API för beslutshantering {#decision-management-api-developer-guide}
+
+>[!CONTEXTUALHELP]
+>id="od_api_support"
+>title="Nya API:er för beslutshantering"
+>abstract="Nu finns nya API:er för att skapa och hantera beslutshanteringsobjekt. Det äldre API:t stöds till och med 2024-03-27."
 
 Den här utvecklarhandboken innehåller steg som hjälper dig att börja använda [!DNL Offer Library] API. Handboken innehåller sedan exempel på API-anrop för att utföra nyckelåtgärder med beslutsmotorn.
 
