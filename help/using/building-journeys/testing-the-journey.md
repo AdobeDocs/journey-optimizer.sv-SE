@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: test, resa, kontroll, fel, felsökning
 exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
-source-git-commit: 2e06ca80a74c6f8a16ff379ee554d57a69ceeffd
+source-git-commit: 7c0b0fe67a5a2665f7cf7bdce4a36207d7bcef56
 workflow-type: tm+mt
-source-wordcount: '1489'
-ht-degree: 2%
+source-wordcount: '1506'
+ht-degree: 1%
 
 ---
 
@@ -70,6 +70,7 @@ Så här använder du testläget:
 * Du kan inte ändra din resa när testläget är aktiverat. När du är i testläge kan du publicera resan direkt, du behöver inte inaktivera testläget tidigare.
 * När en delning nås väljs alltid den översta grenen. Du kan ordna om placeringen av de delade grenarna om du vill att testet ska välja en annan bana.
 * För att optimera prestanda och förhindra föråldrad resursanvändning kommer alla resor i testläge som inte har utlösts på en vecka att växla tillbaka till **Utkast** status.
+* Händelser som utlöses av testläget lagras i dedikerade datauppsättningar. Dessa datauppsättningar har följande etiketter: `JOtestmode - <schema of your event>`
 
 ## Utlös dina händelser {#firing_events}
 
