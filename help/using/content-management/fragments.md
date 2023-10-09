@@ -8,37 +8,44 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 7131a953-baca-4e7c-a8df-97c0bd6ac567
-source-git-commit: 732b84a8945e85cb77a8d2c477f9c9a064988109
+source-git-commit: 95172d45401dc933ce09ae7d9be6eadf01952e3c
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1481'
 ht-degree: 2%
 
 ---
 
 # Arbeta med fragment {#fragments}
 
+>[!CONTEXTUALHELP]
+>id="ajo_create_fragment"
+>title="Definiera egna fragment"
+>abstract="Skapa och hantera fristående fragment för att göra innehållet återanvändbart på flera resor och i flera kampanjer."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/reusable-content/fragments.html#create-fragments" text="Skapa fragment"
+
 Ett fragment är en återanvändbar komponent som kan refereras i en eller flera e-postmeddelanden som [!DNL Journey Optimizer] kampanjer och resor.
 
 Med den här funktionen kan man skapa flera anpassade innehållsblock som kan användas av marknadsföringsanvändare för att snabbt sammanställa e-postinnehåll i en förbättrad designprocess.
 
-➡️ [Lär dig hur du hanterar, redigerar och använder fragment i dessa videofilmer](#video-fragments)
+![](../rn/assets/do-not-localize/fragments.gif)
 
->[!CAUTION]
->
->Om du vill skapa, redigera och arkivera fragment måste du ha **[!DNL Manage Library Items]** behörighet som ingår i **[!DNL Content Library Manager]** produktprofil. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager)
+➡️ [Lär dig hur du hanterar, redigerar och använder fragment i dessa videofilmer](#video-fragments)
 
 Så här använder du fragment på bästa sätt:
 
 * Skapa egna fragment. Du kan skapa visuella fragment eller uttrycksfragment. [Läs mer](#create-fragments)
+
 * Använd dem så många gånger som behövs i ert innehåll. Se [Lägg till visuella fragment](../email/use-visual-fragments.md) och [Utnyttja uttrycksfragment](../personalization/use-expression-fragments.md)
 
->[!NOTE]
->
->Ingår [!DNL Journey Optimizer]:
->
->* Visuella fragment är bara tillgängliga för e-postkanalen.
->
->* Uttrycksfragment är inte tillgängliga för webben och appkanaler.
+## Före start {#fragment-prerequisites}
+
+Om du vill skapa, redigera och arkivera fragment måste du ha **[!DNL Manage Library Items]** behörighet som ingår i **[!DNL Content Library Manager]** produktprofil. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager)
+
+I den här versionen gäller följande begränsningar:
+
+* Visuella fragment är bara tillgängliga för e-postkanalen
+
+* Uttrycksfragment är inte tillgängliga för webben och appkanaler
 
 ## Få åtkomst till och hantera fragment {#access-manage-fragments}
 
@@ -133,14 +140,9 @@ När fragmentet har sparats är det tillgängligt för användning under en resa
 
 ### Skapa från grunden {#create-from-scratch}
 
->[!CONTEXTUALHELP]
->id="ajo_create_fragment"
->title="Definiera ditt eget fragment"
->abstract="Skapa ett fristående fragment från scratch för att göra innehållet återanvändbart på flera resor och i flera kampanjer."
-
 Följ stegen nedan om du vill skapa ett fragment från grunden.
 
-1. Åtkomst till fragmentlistan via **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]** vänster meny.
+1. [Åtkomst till fragmentlistan](#access-manage-fragments) via **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]** vänster meny.
 
 1. Välj **[!UICONTROL Create fragment]**.
 
@@ -157,6 +159,12 @@ Följ stegen nedan om du vill skapa ett fragment från grunden.
 1. Klicka på **[!UICONTROL Create]**.
 
 ### Skapa ett Visual fragment {#create-visual-fragment}
+
+>[!CONTEXTUALHELP]
+>id="ajo_create_visual_fragment"
+>title="Markera den visuella typen"
+>abstract="Skapa ett fristående visuellt fragment för att göra innehållet återanvändbart i ett e-postmeddelande inom en resa eller kampanj, eller i en innehållsmall."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/email/design-email/add-content/use-visual-fragments.html" text="Lägg till visuella fragment i e-postmeddelanden"
 
 1. [Skapa ett fragment](#create-from-scratch) från **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]** vänster meny och välj **[!UICONTROL Visual fragment]** typ.
 
@@ -181,6 +189,12 @@ Följ stegen nedan om du vill skapa ett fragment från grunden.
 Det här fragmentet är nu klart att användas när du skapar [e-post](../email/get-started-email-design.md) eller [innehållsmall](content-templates.md) inom [!DNL Journey Optimizer]. [Lär dig mer](../email/use-visual-fragments.md)
 
 ### Skapa ett uttryck {#create-expression-fragment}
+
+>[!CONTEXTUALHELP]
+>id="ajo_create_expression_fragment"
+>title="Välj uttryckstyp"
+>abstract="Skapa ett fristående uttrycksfragment som gör att innehållet kan återanvändas på flera resor och i flera kampanjer. När du använder uttrycksredigeraren kan du utnyttja alla uttrycksfragment som har skapats i den aktuella sandlådan."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/expression-editor/use-expression-fragments.html" text="Utnyttja uttrycksfragment"
 
 1. [Skapa ett fragment](#create-from-scratch) från **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]** vänster meny och välj **[!UICONTROL Expression fragment]** typ.
 
