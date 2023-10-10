@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: ad590f7fedad10c49f5c45b34cc687df063e35a8
+source-git-commit: 6dd8942e4b598ae0c197c73b258e58f082f15f65
 workflow-type: tm+mt
-source-wordcount: '1398'
+source-wordcount: '1611'
 ht-degree: 0%
 
 ---
@@ -123,3 +123,32 @@ Du kan välja mellan följande två lösningar:
 * En aktiveringsfördröjning kan uppstå från det att en användarprofil når en aktivitet i appen på arbetsytan till dess att meddelandet visas i appen.
 
 * Innehållets storlek för meddelanden i appen är begränsad till 2 MB. Om du inkluderar stora bilder kan det försvåra publiceringsprocessen.
+
+## Beslutshantering {#decision-management}
+
+### Prestandaskydd {#performance-guardrails}
+
+Leveransflödet motsvarar antalet beslutssvar som kan levereras av beslutsstyrningsapptjänsten under en angiven tidsperiod. Antalet beslut per sekund anges i tabellen nedan.
+
+| API | Beslut per sekund |
+|---------|----------|
+| API-begäranden för beslut | 500 per sekund |
+| API-begäranden för Edge Decision | 5 000 per sekund |
+
+### Begränsningar {#offers-limitations}
+
+Begränsningarna för beslutshantering anges nedan.
+
+* **Godkända personaliserade erbjudanden + reseräkningar** - Upp till 10 000 kombinerade godkända personliga erbjudanden och godkända reserverbjudanden.
+* **Beslut** - Upp till 10 000 beslut.
+* **Live-beslut** - Offer decisioning App Service stöder upp till 1 000 Live-beslut.
+* **Erbjudanden som returneras per svar** - Offera decisioningen stöder upp till 100 returnerade erbjudanden per begäran för alla beslutsomfattningar som efterfrågas.
+* **Samlingar** - Upp till 10 000 samlingar.
+* **Samlingar per beslut** - Upp till 30 samlingar per beslut.
+* **Beslutsregler + rangordningsfunktioner** Upp till 10 000 kombinerade beslutsregler och rankningsfunktioner.
+* **Placeringar** - Upp till 1 000 praktik.
+* **Placeringar per beslut** - Upp till 30 praktik per beslut.
+* **Rankningsmetod per beslut** - Offer decisioning App Service stöder upp till 30 rankningsfunktioner per beslut.
+* **AI-rankningsmodell** - Offer decisioning App Service stöder upp till 5 AI-rankningsmodeller.
+* **Samlingskvalificerare per erbjudande eller samling** - Offer decisioning App Service har stöd för upp till 20 samlingskvalificerare i ett personligt erbjudande eller en enda samling.
+* **Totalt antal samlingskvalificerare** - Offer decisioning App Service stöder upp till 1 000 Collection Qualifiers.

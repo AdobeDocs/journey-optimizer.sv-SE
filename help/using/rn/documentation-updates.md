@@ -4,9 +4,9 @@ product: journey optimizer
 title: Dokumentationsuppdateringar
 description: Läs om de senaste dokumentationsuppdateringarna
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 6999f52a3426aa252f31440189ba9d1a7118dd0a
+source-git-commit: 6dd8942e4b598ae0c197c73b258e58f082f15f65
 workflow-type: tm+mt
-source-wordcount: '3813'
+source-wordcount: '3827'
 ht-degree: 14%
 
 ---
@@ -21,6 +21,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 * GIF har lagts till för att illustrera några nyckelfunktioner, som: [Innehållsmallar](../content-management/content-templates.md), [Fragment](../content-management/fragments.md), [Beräknade attribut](../audience/computed-attributes.md), [Direktreklam](../direct-mail/get-started-direct-mail.md), [Taggar](../start/search-filter-categorize.md#tags), [Optimeringsmodeller för beslutshantering](../offers/ranking/personalized-optimization-model.md), [API-utlösta kampanjer](../campaigns/api-triggered-campaigns.md)och [Innehållsexperiment](../campaigns/content-experiment.md).
 * Processen för att skapa scheman har uppdaterats för att återspegla de senaste uppdateringarna i användargränssnittet, som följer med Adobe Experience Platform-ändringar. [Läs mer](../audience/creating-test-profiles.md)
+* Garantier för beslutshantering har lagts till på sidan Guardsutkast och begränsningar. [Läs mer](../start/guardrails.md#decision-management)
 
 ## September 2023 {#september-2023}
 
