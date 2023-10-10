@@ -7,10 +7,10 @@ role: User
 level: Beginner
 keywords: direktreklam, meddelande, kampanj
 exl-id: 6b438268-d983-4ab8-9276-c4b7de74e6bd
-source-git-commit: d8ae894cc303237f5b2257afd8da5b2d0cf1b7a6
+source-git-commit: 86385c0c36a54985bb4624f90e475d1a0229f8cd
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 4%
+source-wordcount: '674'
+ht-degree: 3%
 
 ---
 
@@ -58,6 +58,32 @@ Så här skapar du en direktreklamkampanj:
 Nu kan du börja konfigurera extraheringsfilen som ska skickas till din direktmeddelandeleverantör.
 
 ## Konfigurera extraheringsfilen {#extraction-file}
+
+>[!CONTEXTUALHELP]
+>id="ajo_direct_mail_data_fields"
+>title="Fält"
+>abstract="Lägg till och konfigurera kolumnerna och den information som ska visas i extraheringsfilen som krävs av direktutskick för att skicka e-post till dina kunder. Du kan lägga till upp till 50 kolumner."
+
+>[!CONTEXTUALHELP]
+>id="ajo_direct_mail_sort"
+>title="Filformatering för extrahering"
+>abstract="The <b>Sortera efter</b> kan du använda det markerade fältet för att sortera extraheringsfilens kolumner. När det här alternativet är inaktiverat sorteras kolumnerna automatiskt baserat på fältet Profil-ID."
+
+1. Konfigurera kolumnerna och den information som ska visas i extraheringsfilen:
+
+   1. Klicka på **[!UICONTROL Add]** för att skapa en ny kolumn.
+
+   1. The **[!UICONTROL Formatting]** visas till höger så att du kan ställa in den markerade kolumnen. Ange en **[!UICONTROL Label]** för kolumnen.
+
+   1. I **[!UICONTROL Data]** väljer du de profilattribut som ska visas med [Uttrycksredigeraren](../personalization/personalization-build-expressions.md).
+
+   1. Om du vill sortera extraheringsfilen med en kolumn markerar du kolumnen och växlar på **[!UICONTROL Sort by]** alternativ. The **[!UICONTROL Sort By]** visas bredvid kolumnens etikett i dialogrutan **[!UICONTROL Data Fields]** -avsnitt.
+
+
+
+
+
+
 
 Extraheringsfilen krävs av direktreklamleverantörer för att skicka e-post till dina kunder. Så här definierar du extraheringsfilens konfiguration:
 
