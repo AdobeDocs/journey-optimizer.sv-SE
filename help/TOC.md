@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 5315c0878db9ddf1806f4f7d22fdd9f5a037fd59
+source-git-commit: 3b1acd7ada0637ce22e360e6e1bb35921dde2315
 workflow-type: tm+mt
-source-wordcount: '1656'
-ht-degree: 34%
+source-wordcount: '1666'
+ht-degree: 33%
 
 ---
 
@@ -263,6 +263,9 @@ ht-degree: 34%
       + [Kom igång med Content Assist](using/content-management/gs-generative.md)
       + [Skapa innehåll](using/content-management/generative-content.md)
       + [Bildgenerering](using/content-management/generative-image.md)
+   + Arbeta med flerspråkigt innehåll{#content-multilingual}
+      + [Skapa flerspråkigt innehåll](using/content-management/multilingual-manual.md)
++ Personalisering och dynamiskt innehåll {#personalized-dynamic-content}
    + Personalisering {#personalization}
       + [Kom igång med personalisering](using/personalization/personalize.md)
       + [Personaliseringskontexter](using/personalization/personalization-contexts.md)
