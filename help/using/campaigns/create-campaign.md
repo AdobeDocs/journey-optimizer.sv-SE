@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: 78744537149a18b2e5c8b54689de97c350939a00
+source-git-commit: 298562247af79b9dd504a957c197856d702d0f6b
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 2%
@@ -122,7 +122,7 @@ I **[!UICONTROL Actions]** skapar du meddelandet som ska skickas med kampanjen.
 
 ## Definiera målgruppen {#audience}
 
-Klicka på **[!UICONTROL Select audience]** om du vill visa en lista över tillgängliga Adobe Experience Platform-segment. [Läs mer om segment](../audience/about-audiences.md)
+Klicka på **[!UICONTROL Select audience]** för att visa en lista över tillgängliga Adobe Experience Platform-målgrupper. [Läs mer om målgrupper](../audience/about-audiences.md)
 
 >[!NOTE]
 >

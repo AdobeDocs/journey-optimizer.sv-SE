@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 298562247af79b9dd504a957c197856d702d0f6b
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,11 @@ ht-degree: 0%
 >id="ajo_campaigns_content_experiment_segment"
 >title="Målgrupp"
 >abstract="Genom att utnyttja kundprofildata i realtid kan Adobe Experience Platform enkelt skapa segmentdefinitioner för att skapa målgrupper som fångar upp kundernas unika beteenden och önskemål."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_audience"
+>title="Välj kampanjmålgrupp"
+>abstract="I den här listan visas alla tillgängliga Adobe Experience Platform-målgrupper. Välj målgrupp för er kampanj. Meddelandet som konfigurerats i kampanjen skickas till alla personer som tillhör den valda målgruppen. [Läs mer om målgrupper](../audience/about-audiences.md)"
 
 [!DNL Journey Optimizer] kan ni bygga upp och utnyttja Adobe Experience Platform målgrupper med hjälp av kundprofildata i realtid direkt från **[!UICONTROL Audiences]** och använda dem i era resor eller kampanjer.
 
