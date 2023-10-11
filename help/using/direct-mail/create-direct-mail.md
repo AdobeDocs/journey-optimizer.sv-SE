@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: direktreklam, meddelande, kampanj
 exl-id: 6b438268-d983-4ab8-9276-c4b7de74e6bd
-source-git-commit: 86385c0c36a54985bb4624f90e475d1a0229f8cd
+source-git-commit: 804ff95d2a19601d036e739bb1d5a629930247b9
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '673'
 ht-degree: 3%
 
 ---
@@ -65,9 +65,9 @@ Nu kan du börja konfigurera extraheringsfilen som ska skickas till din direktme
 >abstract="Lägg till och konfigurera kolumnerna och den information som ska visas i extraheringsfilen som krävs av direktutskick för att skicka e-post till dina kunder. Du kan lägga till upp till 50 kolumner."
 
 >[!CONTEXTUALHELP]
->id="ajo_direct_mail_sort"
+>id="ajo_direct_mail_formatting"
 >title="Filformatering för extrahering"
->abstract="The <b>Sortera efter</b> kan du använda det markerade fältet för att sortera extraheringsfilens kolumner. När det här alternativet är inaktiverat sorteras kolumnerna automatiskt baserat på fältet Profil-ID."
+>abstract="För varje fält anger du en etikett och den information som ska visas med Uttrycksredigeraren. <br/><br/> The <b>Sortera efter</b> kan du använda det markerade fältet för att sortera extraheringsfilens kolumner."
 
 1. Konfigurera kolumnerna och den information som ska visas i extraheringsfilen:
 

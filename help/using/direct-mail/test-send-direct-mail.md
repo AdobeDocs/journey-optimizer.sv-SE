@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: 69a19190-d2e2-4858-a1df-ffd008226e2b
-source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
+source-git-commit: 804ff95d2a19601d036e739bb1d5a629930247b9
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '482'
 ht-degree: 1%
 
 ---
@@ -17,6 +17,11 @@ ht-degree: 1%
 # Testa och skicka ett direktmejl {#direct-mail-test-send}
 
 ## Förhandsgranska extraheringsfilen {#preview-dm}
+
+>[!CONTEXTUALHELP]
+>id="ajo_direct_mail_preview"
+>title="Förhandsgranskning av extraheringsfil"
+>abstract="I den här rutan kan du förhandsvisa hur extraheringsfilen visas för varje testprofil som markerats i den vänstra rutan. Om du har infogat anpassat innehåll kan du kontrollera hur det här innehållet visas med hjälp av testprofildata."
 
 När innehållet i extraheringsfilen har definierats kan du använda testprofiler för att förhandsgranska det. Om du har infogat anpassat innehåll kan du kontrollera hur det här innehållet visas i meddelandet med hjälp av testprofildata.
 
