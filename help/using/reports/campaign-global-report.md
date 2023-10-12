@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: fa64f5b8-75f2-40e6-8566-5766fafe6cd6
-source-git-commit: 6bceccc561daac594f5c84d3d3250d887a349b7b
+source-git-commit: 2e8476636fafcba77cbd25ca13324652178224ed
 workflow-type: tm+mt
-source-wordcount: '2922'
+source-wordcount: '2929'
 ht-degree: 0%
 
 ---
@@ -239,9 +239,9 @@ The **[!UICONTROL Email - Top Url]** diagram- och tabellinformation om vilka URL
 
 The **[!UICONTROL Email - Top recipient domain]** diagram och tabeller visar vilka domäner som används mest av profiler för att öppna e-postmeddelandet.
 
->[!NOTE]
+>[!CAUTION]
 >
->The **[!UICONTROL Optimized vs non optimized]** och **[!UICONTROL Send time optimization]**  widgetar är bara tillgängliga om alternativet Sändningsoptimering är aktiverat för ditt e-postmeddelande. Mer information om optimering av sändningstid finns i [den här sidan](../building-journeys/journeys-message.md#send-time-optimization).
+> The **[!UICONTROL Email - Top recipient domain]** widgeten har en noggrannhetshastighet på 99,95 %.
 
 The **[!UICONTROL Optimized vs non optimized]** diagram anger huvudinformationen i förhållande till meddelandet, oavsett om de är optimerade eller inte:
 
@@ -256,6 +256,11 @@ The **[!UICONTROL Send time optimization]** anger hur bra ditt e-postmeddelande 
 * **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
 
 * **[!UICONTROL Bounces]**: Totalt antal fel som har ackumulerats under sändningsprocessen och automatisk returbearbetning i relation till det totala antalet skickade meddelanden.
+
+>[!NOTE]
+>
+>The **[!UICONTROL Optimized vs non optimized]** och **[!UICONTROL Send time optimization]**  widgetar är bara tillgängliga om alternativet Sändningsoptimering är aktiverat för ditt e-postmeddelande. Mer information om optimering av sändningstid finns i [den här sidan](../building-journeys/journeys-message.md#send-time-optimization).
+
 +++
 
 ## Fliken I appen {#inapp-global}
