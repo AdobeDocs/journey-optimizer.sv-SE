@@ -9,7 +9,7 @@ role: User, Developer
 level: Intermediate
 keywords: sandlåda, resa, kopia, miljö
 exl-id: 8c63f2f2-5cec-4cb2-b3bf-2387eefb5002
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: aaa9dcbfc691eac0fd9d06e905c2e1d7612d854a
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Med Journey Optimizer kan du kopiera en hel resa från en sandlåda till en anna
 
 >[!CAUTION]
 >
->Vi garanterar inte att alla länkade element kopieras till målsandlådan. Vi rekommenderar att du gör en grundlig kontroll innan du publicerar resan. Detta gör att du kan identifiera eventuella saknade objekt.
+>Vi garanterar inte att alla länkade element kopieras till målsandlådan. Vi rekommenderar att du gör en grundlig kontroll innan du publicerar resan. På så sätt kan du identifiera eventuella saknade objekt.
 
 De kopierade objekten i målsandlådan är unika och det finns ingen risk för att befintliga element skrivs över. Både resan och alla meddelanden under resan överförs i utkastläge. På så sätt kan du utföra en grundlig validering innan den publiceras i målsandlådan. Kopieringsprocessen kopierar bara metadata om resan och objekten i den resan. Inga profil- eller datauppsättningsdata kopieras som en del av den här processen.
 
