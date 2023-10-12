@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 773bee50-849f-4b07-9423-67de5279ad28
-source-git-commit: 7e9984aee1eba29a2757b025ca0aa1092d95a761
+source-git-commit: bf43a223da595004972faa1147e8525988cd1b21
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '397'
 ht-degree: 2%
 
 ---
@@ -17,6 +17,11 @@ ht-degree: 2%
 
 >[!CONTEXTUALHELP]
 >id="od_api_support"
+>title="Nya API:er för beslutshantering"
+>abstract="Nu finns nya API:er för att skapa och hantera beslutshanteringsobjekt. Det äldre API:t stöds till och med 2024-03-27."
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_api_support"
 >title="Nya API:er för beslutshantering"
 >abstract="Nu finns nya API:er för att skapa och hantera beslutshanteringsobjekt. Det äldre API:t stöds till och med 2024-03-27."
 
