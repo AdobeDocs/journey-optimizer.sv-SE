@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: skräddarsydd, allmän, evenemang, resa
 exl-id: b1813122-7031-452e-9ac5-a4ea7c6dc57c
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 055b735308cc6f0f942c165541d87dfdb74f557c
 workflow-type: tm+mt
 source-wordcount: '431'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_custom"
->title="Allmänna händelser"
+>title="Enhetshändelser"
 >abstract="Med händelser kan ni utlösa era resor helt och hållet för att skicka meddelanden i realtid till den person som flyger in på resan. För den här händelsetypen kan du bara lägga till en etikett och en beskrivning. Händelsekonfigurationen utförs av en datatekniker och kan inte redigeras."
 
 Med händelser kan ni utlösa era resor helt och hållet för att skicka meddelanden i realtid till den person som flyger in på resan.

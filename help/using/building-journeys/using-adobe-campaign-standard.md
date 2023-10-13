@@ -9,14 +9,19 @@ role: Admin
 level: Intermediate
 keywords: resa, integrering, standard, kampanj, ACS
 exl-id: 50565cd9-7415-4c6a-9651-24fefeded3f5
-source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
+source-git-commit: 055b735308cc6f0f942c165541d87dfdb74f557c
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '923'
 ht-degree: 3%
 
 ---
 
 # Adobe Campaign Standard-åtgärder {#using_campaign_action}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_custom_acs"
+>title="Anpassade åtgärder"
+>abstract="Om du har Adobe Campaign Standard kan du integrera programmet. Det gör att du kan skicka e-post, push-meddelanden och SMS med Adobe Campaign Transactional Messaging-funktioner."
 
 Om du har Adobe Campaign Standard finns följande inbyggda funktionsmakron: **[!UICONTROL Email]**, **[!UICONTROL Push]** och **[!UICONTROL SMS]**.
 

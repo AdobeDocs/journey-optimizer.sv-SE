@@ -9,14 +9,19 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, i appen
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: 2e06ca80a74c6f8a16ff379ee554d57a69ceeffd
+source-git-commit: 055b735308cc6f0f942c165541d87dfdb74f557c
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1151'
 ht-degree: 0%
 
 ---
 
 # E-post, i appen, push, SMS{#add-a-message-in-a-journey}
+
+>[!CONTEXTUALHELP]
+>id="ajo_message_activity"
+>title="Meddelandeaktivitet"
+>abstract="Journey Optimizer har inbyggda meddelandefunktioner. Du kan enkelt lägga till en push-funktion, ett SMS-meddelande, en aktivitet i appen eller ett e-postmeddelande under resan och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan."
 
 [!DNL Journey Optimizer] innehåller inbyggda meddelandefunktioner. Du kan enkelt lägga till en push-funktion, ett SMS-meddelande, en aktivitet i appen eller ett e-postmeddelande under resan och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan.
 

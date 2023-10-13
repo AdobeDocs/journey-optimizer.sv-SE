@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: 523f38743a827db4f8a94430ef02eda78d4151d9
+source-git-commit: 055b735308cc6f0f942c165541d87dfdb74f557c
 workflow-type: tm+mt
-source-wordcount: '1668'
+source-wordcount: '1685'
 ht-degree: 8%
 
 ---
@@ -45,6 +45,11 @@ För att kunna skicka meddelanden med resor krävs följande konfigurationer:
 
 ## Åtkomstresor {#journey-access}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_create"
+>title="Resor"
+>abstract="Utforma kundresor för att leverera personaliserade, sammanhangsbaserade upplevelser. Med Journey Optimizer kan du skapa användningsfall för realtidssamordning med kontextuella data som lagras i händelser eller datakällor. The **Ökning** visas en instrumentpanel med nyckelvärden för dina resor. The **Bläddra** -fliken visar en lista över befintliga resor."
+
 Klicka på **[!UICONTROL Journeys]**. Det finns två flikar:
 
 **Ökning**: den här fliken visar en instrumentpanel med viktiga mått för dina resor:
@@ -77,11 +82,6 @@ I konfigurationsrutorna Händelse, Datakälla och Åtgärd visas **[!UICONTROL U
 ![](assets/journey3bis.png)
 
 ## Bygg upp din resa{#jo-build}
-
->[!CONTEXTUALHELP]
->id="ajo_journey_create"
->title="Bygg upp din resa"
->abstract="På den här skärmen visas en lista över befintliga resor. Öppna en resa eller klicka på Skapa resa och kombinera olika aktiviteter för evenemang, samordning och åtgärder för att skapa flerstegsscenarier för flera kanaler."
 
 Det här steget utförs av **företagsanvändare**. Här skapar du dina resor. Kombinera de olika händelserna, orkestreringen och åtgärderna för att skapa scenarier i flera steg över olika kanaler.
 
