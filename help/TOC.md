@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 0a97e30f07348922687aa98638f9be4936d2a860
+source-git-commit: f532e7cbafc3dde7a85cf0a89d1bbb01ccdd118e
 workflow-type: tm+mt
-source-wordcount: '1667'
+source-wordcount: '1670'
 ht-degree: 33%
 
 ---
@@ -230,14 +230,16 @@ ht-degree: 33%
    + [Konfigurera direktreklam](using/direct-mail/direct-mail-configuration.md)
 + Webbkanal {#web}
    + [Kom igång med webbkanalen](using/web/get-started-web.md)
-   + [Förutsättningar för webbkanaler](using/web/web-prerequisites.md)
+   + Konfigurera webbkanal {#configure-web-channel}
+      + [Förutsättningar för webbkanaler](using/web/web-prerequisites.md)
+      + [Konfigurera webbunderdomäner](using/web/web-delegated-subdomains.md)
+      + [Implementera ensidiga program](using/web/web-spa-implementation.md)
    + [Skapa webbupplevelser](using/web/create-web.md)
    + Skapa webbsidor {#author-web-pages}
       + [Redigera webbsidesinnehåll](using/web/edit-web-content.md)
       + [Hantera ändringar](using/web/manage-web-modifications.md)
       + [Övervaka era webbkampanjer](using/web/monitor-web-campaigns.md)
       + [Skapa single-page-appar](using/web/web-spa.md)
-   + [Konfigurera webbunderdomäner](using/web/web-delegated-subdomains.md)
 + Kodbaserad upplevelse {#code-based-experience}
    + [Kom igång med kodbaserad kanal](using/code-based/get-started-code-based.md)
    + [Kodbaserade förutsättningar](using/code-based/code-based-prerequisites.md)
@@ -528,7 +530,6 @@ ht-degree: 33%
    + [Stöd för arkivering](using/configuration/archiving-support.md)
    + [Ändra körningsadresser](using/configuration/primary-email-addresses.md)
    + [Konfigurera frekvensregler](using/configuration/frequency-rules.md)
-   + [Implementera ensidiga program](using/web/web-spa-implementation.md)
    + Konfigurera resor {#configure-journeys}
       + [Om datakällor, händelser och åtgärder](using/configuration/about-data-sources-events-actions.md)
       + Integrera med externa system {#external-systems}
