@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: resurser, grundläggande funktioner, upplevelseansvarig, integration
 exl-id: d4fde14b-e2da-40bf-a387-ee9f2f7ff204
-source-git-commit: 6295b7d5379b3a81d7917a8f1a6dba2a34fc3cde
+source-git-commit: 00bd3a2fb35ef2c634ed631b358a5256f47c7e58
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 1%
@@ -30,7 +30,7 @@ Läs mer i [Adobe Experience Manager Assets Essentials-dokumentation](https://ex
 
 ## Förutsättningar{#assets-prerequisites}
 
-Innan du använder [!DNL Adobe Experience Manager Assets Essentials]måste du lägga till användare i **Assets Essentials-användare** eller/och **Assets Essentials** Produktprofiler. Läs mer i [Assets Essentials dokumentation](https://experienceleague.corp.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html#add-user-groups){target="_blank"}.
+Innan du använder [!DNL Adobe Experience Manager Assets Essentials]måste du lägga till användare i **Assets Essentials-användare** eller/och **Assets Essentials** Produktprofiler. Läs mer i [Assets Essentials dokumentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html#add-user-groups){target="_blank"}.
 
 >[!NOTE]
 >För Journey Optimizer-produkter som köpts före 6 januari 2022 måste du driftsätta [!DNL Adobe Experience Manager Assets Essentials] för er organisation. Läs mer i [Distribuera Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target="_blank"} -avsnitt.
