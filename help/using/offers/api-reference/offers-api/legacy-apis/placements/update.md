@@ -1,17 +1,17 @@
 ---
 title: uppdatera en placering
 description: Placeringar är behållare som används för att visa upp dina erbjudanden.
-feature: Offers
+feature: Offers, API
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: 6156689d9e5d7abedcd612389c5e332c695601f0
+exl-id: 759c58e7-af1e-409c-8400-996b9a647ba7
+source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 4%
 
 ---
-
 
 # Uppdatera en placering {#update-placement}
 

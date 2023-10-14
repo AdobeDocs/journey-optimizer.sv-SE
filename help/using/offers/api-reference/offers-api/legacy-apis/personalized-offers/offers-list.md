@@ -1,17 +1,17 @@
 ---
 title: Lista personaliserade erbjudanden
 description: Ett personaliserat erbjudande är ett anpassningsbart marknadsföringsmeddelande som baseras på regler och begränsningar för behörighet.
-feature: Offers
+feature: Offers, API
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: f5372ee271851ffb5aa1f5ff281282c8c474dc2a
+exl-id: 50f4119f-c730-4883-867e-eac83793dced
+source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 3%
 
 ---
-
 
 # Lista personaliserade erbjudanden {#list-personalized-offers}
 

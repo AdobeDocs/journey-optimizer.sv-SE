@@ -1,17 +1,17 @@
 ---
 title: Lista placeringar
 description: Placeringar är behållare som används för att visa upp dina erbjudanden.
-feature: Offers
+feature: Offers, API
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: f5372ee271851ffb5aa1f5ff281282c8c474dc2a
+exl-id: 52fbf683-d86f-43c6-be1a-c06141b64b16
+source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 2%
 
 ---
-
 
 # Lista placeringar {#list-placements}
 

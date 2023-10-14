@@ -1,17 +1,17 @@
 ---
 title: Uppdatera beslutsregler
 description: Beslutsregler läggs till i ett personaliserat erbjudande och tillämpas på en profil för att avgöra vem som är berättigad.
-feature: Offers
+feature: Offers, API
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: f5372ee271851ffb5aa1f5ff281282c8c474dc2a
+exl-id: 33da2c42-0c6c-49d3-bad8-1a85a5172cd8
+source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 5%
 
 ---
-
 
 # Uppdatera en beslutsregel {#update-decision-rule}
 

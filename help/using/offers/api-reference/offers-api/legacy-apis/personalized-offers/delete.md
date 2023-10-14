@@ -1,17 +1,17 @@
 ---
 title: Ta bort personaliserade erbjudanden
 description: Ett personaliserat erbjudande är ett anpassningsbart marknadsföringsmeddelande som baseras på regler och begränsningar för behörighet.
-feature: Offers
+feature: Offers, API
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: 6156689d9e5d7abedcd612389c5e332c695601f0
+exl-id: 6ae37843-2679-48a3-96ef-bb93a5d4a333
+source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 4%
 
 ---
-
 
 # Ta bort ett personaliserat erbjudande {#delete-personalized-offer}
 

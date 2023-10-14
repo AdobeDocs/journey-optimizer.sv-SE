@@ -1,17 +1,17 @@
 ---
 title: Skapa ett reserverbjudande
 description: Ett reserverbjudande skickas till kunderna om de inte är berättigade till andra erbjudanden
-feature: Offers
+feature: Offers, API
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: f5372ee271851ffb5aa1f5ff281282c8c474dc2a
+exl-id: 1a9c074a-187a-45b1-9ad0-378aeef0d03d
+source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 7%
 
 ---
-
 
 # Skapa ett reserverbjudande {#create-fallback-offer}
 

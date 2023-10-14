@@ -1,12 +1,12 @@
 ---
 title: Datauppsättning med placeringar
 description: I det här avsnittet visas alla fält som används i den exporterade datauppsättningen för placeringar
-feature: Offers
+feature: Offers, Datasets
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: 3e45f3cf-e17e-43a6-8424-98afef07aaa3
-source-git-commit: 78675ca22d8ee9a93d9af128d5708c305523da78
+source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 1%

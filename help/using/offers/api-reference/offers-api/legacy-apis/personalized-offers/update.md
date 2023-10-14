@@ -1,17 +1,17 @@
 ---
 title: Uppdatera personaliserade erbjudanden
 description: Ett personaliserat erbjudande är ett anpassningsbart marknadsföringsmeddelande som baseras på regler och begränsningar för behörighet.
-feature: Offers
+feature: Offers, API
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: f5372ee271851ffb5aa1f5ff281282c8c474dc2a
+exl-id: 3ef785c6-06b4-40ce-a8e5-6a9d5101a408
+source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 5%
 
 ---
-
 
 # Uppdatera ett personaliserat erbjudande {#update-personalized-offer}
 

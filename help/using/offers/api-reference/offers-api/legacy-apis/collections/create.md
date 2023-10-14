@@ -1,17 +1,17 @@
 ---
 title: Skapa en samling
 description: Samlingar är delmängder av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare, t.ex. erbjudandets kategori.
-feature: Offers
+feature: Offers, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: f5372ee271851ffb5aa1f5ff281282c8c474dc2a
+exl-id: ea79add2-1ea7-4c5c-ba67-f99d10975c4f
+source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 5%
 
 ---
-
 
 # Skapa en samling {#create-collection}
 

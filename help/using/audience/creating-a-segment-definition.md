@@ -3,12 +3,12 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Skapa segmentdefinitioner
 description: Lär dig skapa målgrupper med hjälp av segmentdefinitioner
-feature: Journeys
+feature: Audiences, Profiles
 topic: Content Management
 role: User
-level: Intermediate
+level: Beginner
 exl-id: 289aac5d-6cdb-411f-985e-3acef58050a8
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 4%

@@ -1,17 +1,17 @@
 ---
 title: Lista beslutsregler
 description: Beslutsregler läggs till i ett personaliserat erbjudande och tillämpas på en profil för att avgöra vem som är berättigad.
-feature: Offers
+feature: Offers, API
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: 6156689d9e5d7abedcd612389c5e332c695601f0
+exl-id: 600aea10-3675-47b7-8f4b-f378308afd69
+source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 3%
 
 ---
-
 
 # Lista beslutsregler {#list-decision-rules}
 

@@ -1,17 +1,17 @@
 ---
 title: Skapa en samlingskvalificerare
 description: Med en samling kvalificerare kan ni ordna och sortera genom era erbjudanden på ett bättre sätt.
-feature: Offers
+feature: Offers, API
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: f5372ee271851ffb5aa1f5ff281282c8c474dc2a
+exl-id: 84f0efa5-28af-4569-994c-12d87828a277
+source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 2%
 
 ---
-
 
 # Skapa en samlingskvalificerare {#create-tag}
 

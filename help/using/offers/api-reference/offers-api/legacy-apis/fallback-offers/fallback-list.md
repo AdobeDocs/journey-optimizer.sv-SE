@@ -1,17 +1,17 @@
 ---
 title: Lista reserverbjudanden
 description: Ett reserverbjudande skickas till kunderna om de inte är berättigade till andra erbjudanden
-feature: Offers
+feature: Offers, API
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: f5372ee271851ffb5aa1f5ff281282c8c474dc2a
+exl-id: 0eb68312-5567-4728-b184-9d40107676a0
+source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 3%
 
 ---
-
 
 # Lista reserverbjudanden {#list-fallback-offers}
 

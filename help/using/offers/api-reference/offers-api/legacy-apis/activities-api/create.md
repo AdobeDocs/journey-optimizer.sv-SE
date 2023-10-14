@@ -1,17 +1,17 @@
 ---
 title: Skapa ett beslut
 description: Ett beslut innehåller den logik som ligger till grund för valet av ett erbjudande.
-feature: Offers
+feature: Offers, API
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: 6156689d9e5d7abedcd612389c5e332c695601f0
+exl-id: 7cb906b9-8925-4482-9915-448a41e11d9d
+source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 8%
 
 ---
-
 
 # Skapa ett beslut {#create-decision}
 

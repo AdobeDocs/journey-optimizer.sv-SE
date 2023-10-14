@@ -1,17 +1,17 @@
 ---
 title: Radera beslutsregler
 description: Beslutsregler läggs till i ett personaliserat erbjudande och tillämpas på en profil för att avgöra vem som är berättigad.
-feature: Offers
+feature: Offers, API
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: 6156689d9e5d7abedcd612389c5e332c695601f0
+exl-id: 7c02041c-b022-4027-b932-294b207add80
+source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 3%
 
 ---
-
 
 # Ta bort en beslutsregel {#delete-decision-rule}
 

@@ -1,17 +1,17 @@
 ---
 title: Äldre API:er
 description: Uppdaterade API:er för att skapa och hantera beslutshanteringsobjekt.
-feature: Offers
+feature: Offers, API
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: 7d8239785ef6a50887d5fc1938f28c3a5a95d061
+exl-id: cfe8162b-d50f-4ad3-8b62-9d30b756ad1b
+source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 0%
 
 ---
-
 
 # Om äldre API:er
 

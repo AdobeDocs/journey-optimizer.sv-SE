@@ -1,17 +1,17 @@
 ---
 title: Skapa ett personaliserat erbjudande
 description: Ett personaliserat erbjudande är ett anpassningsbart marknadsföringsmeddelande som baseras på regler och begränsningar för behörighet.
-feature: Offers
+feature: Offers, API
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: f5372ee271851ffb5aa1f5ff281282c8c474dc2a
+exl-id: 234bee17-c830-4bc0-b258-182804df4cb3
+source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 6%
 
 ---
-
 
 # Skapa ett personaliserat erbjudande {#create-personalized-offer}
 

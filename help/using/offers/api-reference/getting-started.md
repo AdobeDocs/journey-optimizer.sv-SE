@@ -1,12 +1,12 @@
 ---
 title: Komma igång
 description: Lär dig hur du börjar använda Offer Library API för att utföra nyckelåtgärder med hjälp av beslutsmotorn.
-feature: Offers
+feature: Offers, API
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: 773bee50-849f-4b07-9423-67de5279ad28
-source-git-commit: bf43a223da595004972faa1147e8525988cd1b21
+source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 2%

@@ -1,17 +1,17 @@
 ---
 title: Uppdatera samlingar
 description: Samlingar är delmängder av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare, t.ex. erbjudandets kategori.
-feature: Offers
+feature: Offers, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: f5372ee271851ffb5aa1f5ff281282c8c474dc2a
+exl-id: bf12d22f-e6c0-45fd-a2b2-149d3f4cf882
+source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 4%
 
 ---
-
 
 # Uppdatera en samling {#update-collection}
 
