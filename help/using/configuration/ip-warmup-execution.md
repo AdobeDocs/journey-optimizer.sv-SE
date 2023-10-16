@@ -11,9 +11,9 @@ keywords: IP, grupp, underdomäner, leveransbarhet
 hide: true
 hidefromtoc: true
 exl-id: 752ffd7f-09c2-4aa3-a067-2dbe0634709c
-source-git-commit: 205f26d3f31b9f003fc1dbaf679021464429d144
+source-git-commit: 4e0d75c677ffa1a5350c83300e4a1b0f0150d7c1
 workflow-type: tm+mt
-source-wordcount: '1632'
+source-wordcount: '1629'
 ht-degree: 0%
 
 ---
@@ -63,13 +63,14 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
    ![](assets/ip-warmup-plan-select-campaign.png)
 
-   Observera följande:
+   >[!IMPORTANT]
+   >
+   >    * Bara kampanjer med **[!UICONTROL IP warmup plan activation]** option enabled <!--and live?--> kan väljas. [Läs mer](#create-ip-warmup-campaign)
+   >
+   >* Du måste välja en kampanj som använder samma yta som den som valts för den aktuella IP-värmerapporten.
+   >
+   >* Du kan inte välja en kampanj som redan används i en annan IP-värmare.
 
-   * Bara kampanjer med **[!UICONTROL IP warmup plan activation]** option enabled <!--and live?--> kan väljas. [Läs mer](#create-ip-warmup-campaign)
-
-   * Du måste välja en kampanj som använder samma yta som den som valts för den aktuella IP-värmerapporten.
-
-   * Du kan inte välja en kampanj som redan används i en annan IP-värmare.
 
 1. I **[!UICONTROL Profile exclusion]** ser du att profilerna från tidigare körningar av den fasen alltid är exkluderade. Om en profil i Kör 1 till exempel täcks av de första 4 800 målpersonerna, ser systemet automatiskt till att samma profil inte får e-postmeddelandet i Kör 2.
 
