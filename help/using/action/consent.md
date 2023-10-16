@@ -9,7 +9,7 @@ role: Admin,Developer
 level: Experienced
 keywords: politik, styrning, plattform, hälso- och sjukvård, samtycke
 exl-id: 01ca4b3e-3778-4537-81e9-97ef92c9aa9e
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 77565a88d23f241a54a8622ceed0cd26fc4a31b2
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 0%
@@ -58,7 +58,7 @@ There are two types of latency regarding the use of consent policies:
 ## Konfigurera den anpassade åtgärden {#consent-custom-action}
 
 >[!CONTEXTUALHELP]
->id="ajo_consent_required_marketing_action_admin"
+>id="ajo_consent_required_marketing_action"
 >title="Definiera en obligatorisk marknadsföringsåtgärd"
 >abstract="Med den obligatoriska marknadsföringsåtgärden kan ni definiera de marknadsföringsåtgärder som är kopplade till er anpassade åtgärd. Om du till exempel använder den anpassade åtgärden för att skicka e-post kan du välja E-postmarknadsföring. När de används under en resa hämtas och utnyttjas alla medgivandepolicyer som är kopplade till den marknadsföringsåtgärden. Detta kan inte ändras på arbetsytan."
 
