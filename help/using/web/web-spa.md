@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: b33e4bca-d2e9-4610-9f04-008d47f686d0
-source-git-commit: a2d67bbcf9b90c427ea3f755d80e465a3d7b10ec
+source-git-commit: fb05b110fc1bd205810e7d85be4071644f52b191
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '469'
 ht-degree: 3%
 
 ---
@@ -33,9 +33,9 @@ Det krävs en engångsinstallation av utvecklare för att definiera vyerna i imp
 
 ## Definiera vyer i Web SDK-implementeringen {#define-views}
 
-XDM-vyer kan användas i Adobe [!DNL Journey Optimizer] för att göra det möjligt för marknadsförare att köra webbpersonaliserings- och experimenteringskampanjer på SPA via den webbaserade visuella redigeraren. [Läs mer](web-spa-implementation.md)
+XDM-vyer kan användas i Adobe [!DNL Journey Optimizer] för att göra det möjligt för marknadsförare att köra webbpersonaliserings- och experimenteringskampanjer på SPA via den webbaserade visuella redigeraren. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html){target="_blank"}
 
-För att kunna komma åt och redigera vyer i [!DNL Journey Optimizer] -användargränssnittet bör du följa stegen i [det här avsnittet](web-spa-implementation.md#implement-xdm-views).
+För att kunna komma åt och redigera vyer i [!DNL Journey Optimizer] -användargränssnittet bör du följa stegen i [det här avsnittet](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html#implement-xdm-views){target="_blank"}.
 
 ## Upptäck vyer i webbdesignern {#discover-views}
 
