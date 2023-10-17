@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 93f4f4edcce7c7e9f7472a871c96cefa276bdda1
+source-git-commit: 64c255eb6bb4712d79547ae47fd1dc6f8b1e9089
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1663'
 ht-degree: 33%
 
 ---
@@ -233,7 +233,6 @@ ht-degree: 33%
    + Konfigurera webbkanal {#configure-web-channel}
       + [Förutsättningar för webbkanaler](using/web/web-prerequisites.md)
       + [Konfigurera webbunderdomäner](using/web/web-delegated-subdomains.md)
-      + [Implementera ensidiga program](using/web/web-spa-implementation.md)
    + [Skapa webbupplevelser](using/web/create-web.md)
    + Skapa webbsidor {#author-web-pages}
       + [Redigera webbsidesinnehåll](using/web/edit-web-content.md)
