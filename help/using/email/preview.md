@@ -9,14 +9,19 @@ role: User
 level: Intermediate
 keywords: förhandsgranskning, innehåll, e-post, korrektur, test, profil
 exl-id: f2c2a360-a4b2-4416-bbd0-e27dd014e4ac
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 1cd5942617fdd29754e71a6fd8e4538d5d86dcd4
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '957'
 ht-degree: 1%
 
 ---
 
 # Förhandsgranska och testa din e-post {#preview-and-proof}
+
+>[!CONTEXTUALHELP]
+>id="ac_preview_testprofiles"
+>title="Förhandsgranska och testa dina meddelanden"
+>abstract="När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det."
 
 När e-postinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du infogade [personaliserat innehåll](../personalization/personalize.md)kan du med hjälp av testprofildata kontrollera hur det här innehållet visas i meddelandet.
 
@@ -44,13 +49,6 @@ Dessutom kan du **Litmus** konto till [!DNL Journey Optimizer] för att omedelba
 ➡️ [Lär dig hur du förhandsgranskar och korrekturerar e-postmeddelanden i den här videon](#video-preview)
 
 ## Välj testprofiler {#select-test-profiles}
-
->[!CONTEXTUALHELP]
->id="ac_preview_testprofiles"
->title="Förhandsgranska och testa dina meddelanden"
->abstract="När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/email/preview.html#email-rendering" text="E-poståtergivning"
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/email/preview.html#preview-email" text="Förhandsgranskning"
 
 Använd [Testprofiler](../audience/creating-test-profiles.md) om du vill rikta in dig på fler mottagare som inte matchar de definierade målinriktningskriterierna.
 
