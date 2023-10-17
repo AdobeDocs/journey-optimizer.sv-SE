@@ -3,12 +3,12 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Konfigurera ett push-meddelande
 description: Lär dig skapa ett push-meddelande i Journey Optimizer
-feature: Overview
+feature: Push
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 2ebbcd7d-dcfc-4528-974d-6230fc0dca3d
-source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
+source-git-commit: 03c714833930511fa734662b637d2416728073c2
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 2%

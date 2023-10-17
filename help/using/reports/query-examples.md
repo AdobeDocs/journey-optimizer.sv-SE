@@ -3,12 +3,12 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Exempel på frågor
 description: Exempel på frågor
-feature: Reporting
+feature: Reporting, Journeys
 topic: Content Management
 role: User
 level: Intermediate
 exl-id: 26ad12c3-0a2b-4f47-8f04-d25a6f037350
-source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
+source-git-commit: 03c714833930511fa734662b637d2416728073c2
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 2%

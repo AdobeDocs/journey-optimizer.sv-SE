@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Justera lodrät justering och utfyllnad i Journey Optimizer
 description: Lär dig justera lodrät justering och utfyllnad
-feature: Overview
+feature: Email Design
 topic: Content Management
 role: User
-level: Intermediate
+level: Beginner, Intermediate
 keywords: vertikal justering, e-postredigerare, utfyllnad
 exl-id: 1e1d90ff-df5d-4432-a63a-a32d0d281d48
-source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
+source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 2%

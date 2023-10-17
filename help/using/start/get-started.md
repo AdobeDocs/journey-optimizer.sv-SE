@@ -3,12 +3,12 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Journey Optimizer
 description: Identifiera de viktigaste funktionerna och användningsområdena i Adobe Journey Optimizer
-feature: Overview
+feature: Get Started
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 956178c0-9985-4ff8-a29e-17dd367ce4d4
-source-git-commit: cb5e5781002650c4ddb1f62dcc66d8196675b3a4
+source-git-commit: c2f2dde40385f56ea86be15a5857fa9e5e2e2fed
 workflow-type: tm+mt
 source-wordcount: '682'
 ht-degree: 2%

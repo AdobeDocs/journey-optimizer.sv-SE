@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Skapa innehåll med Content Assist
 description: Kom igång med Content Assist
-feature: Overview
+feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
@@ -11,7 +11,7 @@ badge: label="Beta" type="Informative"
 hide: true
 hidefromtoc: true
 exl-id: 1b3930ff-f7b0-43f0-bcf2-5c3de0a88b25
-source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
+source-git-commit: b524d0026f32eaf2d7421bb85188d01199cbf843
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 1%

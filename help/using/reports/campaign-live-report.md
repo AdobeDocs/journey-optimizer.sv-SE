@@ -3,12 +3,12 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Kampanjrapport
 description: Lär dig hur du använder data från Campaign-rapporten
-feature: Reporting
+feature: Reporting, Campaigns
 topic: Content Management
 role: User
 level: Intermediate
 exl-id: 925494b6-e08a-4bd3-8a2f-96a5d9cbc387
-source-git-commit: 6bceccc561daac594f5c84d3d3250d887a349b7b
+source-git-commit: 03c714833930511fa734662b637d2416728073c2
 workflow-type: tm+mt
 source-wordcount: '1907'
 ht-degree: 0%

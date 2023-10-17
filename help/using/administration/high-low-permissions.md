@@ -4,11 +4,12 @@ product: journey optimizer
 title: Behörighetsnivåer
 description: Lär dig mer om höga och låga behörigheter som ger användarna tillgång till de olika funktionerna.
 topic: Administration
+feature: Access Management
 role: Admin, Architect, Developer
 level: Experienced
 keywords: behörighet, hög nivå, låg nivå, profil, administratörskonsol
 exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
-source-git-commit: bb988dbc3aa8b70081c9f3de595d49904cc699b4
+source-git-commit: 03c714833930511fa734662b637d2416728073c2
 workflow-type: tm+mt
 source-wordcount: '1109'
 ht-degree: 0%

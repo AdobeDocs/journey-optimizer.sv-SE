@@ -3,12 +3,12 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Landningssidans Live-rapport
 description: Lär dig hur du använder data från dina landningssidor i en Live-rapport
-feature: Journeys
+feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
 exl-id: df13e473-8003-4dde-aaf8-df8385c9ee21
-source-git-commit: cd2fcd36d0f742a1bbe726217b884ae1bec26d82
+source-git-commit: 03c714833930511fa734662b637d2416728073c2
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Om du vill komma åt dina rapporter väljer du **[!UICONTROL Report]** på den a
 
 ![](assets/landing_page_report.png)
 
-Landningssidan **[!UICONTROL Live report]** är uppdelat i olika widgetar som detaljerat beskriver hur leveransen fungerar och vilka fel den innehåller. Varje widget kan storleksändras och tas bort vid behov. Mer information om detta finns i [section](live-report.md).
+Landningssidan **[!UICONTROL Live report]** är uppdelat i olika widgetar som detaljerat beskriver leveransens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information om detta finns i [section](live-report.md).
 
 +++Läs mer om de olika mätvärden och widgetar som är tillgängliga för landningssidans live-rapport.
 

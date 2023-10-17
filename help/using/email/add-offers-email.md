@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Lägg in skräddarsydda erbjudanden
 description: Lär dig hur du lägger till personaliserade erbjudanden i dina meddelanden
-feature: Journeys
+feature: Email Design, Offers
 topic: Content Management
 role: User
 level: Intermediate
 keywords: erbjudanden, beslut, e-post, personalisering, beslut
 exl-id: 1e648eca-b5ca-4767-b45d-c179243e347f
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 0%

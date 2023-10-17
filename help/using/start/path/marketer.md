@@ -3,9 +3,11 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Journey Optimizer Get started for Marketers
 description: Lär dig mer om hur du arbetar med Journey Optimizer som resande
-level: Intermediate
+level: Beginner
+feature: Get Started
+Role: User
 exl-id: 34304142-3ee8-4081-94b9-e914968c75ba
-source-git-commit: 39953bb09a699ed4fd07db26a3f2e54f4e2cacd7
+source-git-commit: c2f2dde40385f56ea86be15a5857fa9e5e2e2fed
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%

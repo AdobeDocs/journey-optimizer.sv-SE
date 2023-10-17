@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Konfigurera Journey Optimizer-rapportering för experiment
 description: Lär dig hur du ställer in rapportdatakälla
-feature: Data Sources
+feature: Experimentation, Reporting
 topic: Administration
 role: Admin
 level: Intermediate
 keywords: konfiguration, experiment, rapportering, optimering
 exl-id: 327a0c45-0805-4f64-9bab-02d67276eff8
-source-git-commit: cab7fb06039b2d483f403361f6a46d2aadcadff0
+source-git-commit: 1490ac2efd39c6bf9b6ca97e682750463e9f054d
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 2%

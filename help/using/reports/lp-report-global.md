@@ -3,12 +3,12 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Global rapport för landningssida
 description: Lär dig använda data från den globala rapporten över landningssidor
-feature: Journeys
+feature: Reporting, Landing Pages
 topic: Content Management
 role: User
 level: Intermediate
 exl-id: e88cf8ad-986a-4e4c-8921-d406c6876031
-source-git-commit: cd2fcd36d0f742a1bbe726217b884ae1bec26d82
+source-git-commit: 03c714833930511fa734662b637d2416728073c2
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Om du vill komma åt dina rapporter väljer du **[!UICONTROL Report]** på den a
 
 ![](assets/landing_page_report.png)
 
-Landningssidan **[!UICONTROL Global report]** är uppdelat i olika widgetar som detaljerat beskriver hur leveransen fungerar och vilka fel den innehåller. Varje widget kan storleksändras och tas bort vid behov. Mer information om detta finns i [section](global-report.md).
+Landningssidan **[!UICONTROL Global report]** är uppdelat i olika widgetar som detaljerat beskriver leveransens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information om detta finns i [section](global-report.md).
 
 ![](assets/landing_page_global.png)
 

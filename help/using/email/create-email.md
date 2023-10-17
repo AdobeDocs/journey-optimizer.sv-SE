@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Skapa ett e-postmeddelande
 description: Lär dig hur du skapar ett e-postmeddelande i Journey Optimizer
-feature: Overview
+feature: Email
 topic: Content Management
 role: User
 level: Beginner
 keywords: skapa, e-post, start, resa, kampanj
 exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: cd8ce89dd6ed9c60d41e9f83ccfb080bdb4a19f9
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 3%

@@ -3,11 +3,12 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Använd visuella fragment
 description: Lär dig använda visuella fragment när du skapar e-postmeddelanden i Journey Optimizer kampanjer och resor
-feature: Overview
+feature: Email Design, Templates
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: dd463d36550b53faaffca90691550278498c862a
+exl-id: 25a00f74-ed08-479c-9a5d-4185b5f3c684
+source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 2%
@@ -91,4 +92,3 @@ Följ stegen nedan för att bryta arv:
    ![](assets/fragment-break-inheritance.png)
 
 1. Det fragmentet blir ett fristående element som inte längre är länkat till det ursprungliga fragmentet. Redigera det som vilken annan innehållskomponent som helst i innehållet. [Läs mer](content-components.md)
-

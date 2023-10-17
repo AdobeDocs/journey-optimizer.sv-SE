@@ -3,14 +3,15 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Kom igång med flerspråkigt innehåll
 description: Läs mer om flerspråkigt innehåll i Journey Optimizer
-feature: Overview
+feature: Multilingual Content
 topic: Content Management
 role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 hide: true
 hidefromtoc: true
-source-git-commit: 42b1243f713743d299a60aa93546ed99d4dcf156
+exl-id: 6244d717-fbd6-468e-9164-60451d0d62f0
+source-git-commit: 03c714833930511fa734662b637d2416728073c2
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 1%

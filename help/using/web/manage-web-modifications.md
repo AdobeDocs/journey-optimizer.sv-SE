@@ -4,9 +4,9 @@ description: Lär dig hantera ändringar i Journey Optimizer webbsidesinnehåll
 feature: Web Channel
 topic: Content Management
 role: User
-level: Beginner
+level: Beginner, Intermediate
 exl-id: 213511b4-7556-4a25-aa23-b50acd11cd34
-source-git-commit: f00843c54f18c6d9599d527101496d1d58df09f3
+source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 1%

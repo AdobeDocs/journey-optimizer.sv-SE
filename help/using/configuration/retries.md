@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Återförsök
 description: Lär dig hur nya försök utförs innan du skickar en adress till listan över inaktiveringar
-feature: Application Settings
+feature: Deliverability, Channel Configuration
 topic: Administration
 role: Admin
-level: Intermediate
+level: Experienced
 keywords: återförsök, studsa, mjuk, optimering, fel
 exl-id: 05564a99-da50-4837-8dfb-bb1d3e0f1097
-source-git-commit: 9657862f1c6bdb2399fcf3e6384bb9dec5b8f32b
+source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 1%

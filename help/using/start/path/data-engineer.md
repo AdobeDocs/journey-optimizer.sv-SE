@@ -3,12 +3,14 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Journey Optimizer Get Started for Data Engineer
 description: Som datatekniker får du lära dig mer om hur du arbetar med Journey Optimizer
+feature: Get Started
+role: Data Engineer
 level: Intermediate
 exl-id: 8beaafc2-e68d-46a1-be5c-e70892575bfb
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: c2f2dde40385f56ea86be15a5857fa9e5e2e2fed
 workflow-type: tm+mt
 source-wordcount: '574'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -42,6 +44,6 @@ För att kunna skicka meddelanden under resor måste du dessutom konfigurera **[
 
 * The **Datakälla** kan du definiera en anslutning till ett system för att hämta ytterligare information som ska användas på dina resor. Läs mer om datakällor [i det här avsnittet](../../datasource/about-data-sources.md).
 
-* **Händelser** gör det möjligt för er att utlösa era resor helt och hållet för att skicka meddelanden i realtid till den person som kommer in på resan. I händelsekonfigurationen konfigurerar du de händelser som förväntas under resorna. Data för inkommande händelser normaliseras enligt XDM (Adobe Experience Data Model). Händelser kommer från API för strömningsinmatning för autentiserade och ej autentiserade händelser (till exempel händelser i Adobe Mobile SDK). Läs mer om evenemang [i det här avsnittet](../../event/about-events.md).
+* **Händelser** gör det möjligt för er att utlösa era resor helt och hållet för att skicka meddelanden i realtid till den person som kommer in på resan. I händelsekonfigurationen konfigurerar du de händelser som förväntas under resorna. Data för inkommande händelser normaliseras enligt Adobes upplevelsedatamodell (XDM). Händelser kommer från API för strömningsinmatning för autentiserade och ej autentiserade händelser (till exempel händelser i Adobe Mobile SDK). Läs mer om evenemang [i det här avsnittet](../../event/about-events.md).
 
 * [!DNL Journey Optimizer] innehåller inbyggda meddelandefunktioner: du kan skapa meddelanden inom en resa och utforma innehållet. Om du använder ett tredjepartssystem för att skicka meddelanden, till exempel Adobe Campaign, skapar du en **anpassad åtgärd**. Läs mer om åtgärder i det här [i det här avsnittet](../../action/action.md).

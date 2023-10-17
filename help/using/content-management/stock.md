@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Arbeta med Adobe Stock-bilder
 description: Kom igång med Adobe Stock
-feature: Overview
+feature: Assets, Integrations
 topic: Content Management
 role: User
 level: Beginner
 keywords: stock, bilder, integration, foton
 exl-id: 0715f65f-04bd-4dc2-a152-98111f4c42e6
-source-git-commit: 17dd8e2226555ba6bf74f813c11bdeecac05ddd2
+source-git-commit: c2f2dde40385f56ea86be15a5857fa9e5e2e2fed
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 1%

@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Konfigurera e-postinställningar
 description: Lär dig hur du konfigurerar e-postinställningar på kanalytnivå
-feature: Surface
+feature: Email, Surface
 topic: Administration
 role: Admin
-level: Intermediate
+level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 5e58db84275d78c5248f1d617328799d71bb10d1
+source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
 workflow-type: tm+mt
 source-wordcount: '2201'
 ht-degree: 1%

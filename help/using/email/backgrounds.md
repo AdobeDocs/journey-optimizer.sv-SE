@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Anpassa e-postbakgrunden
 description: Lär dig hur du anpassar din e-postbakgrund
-feature: Overview
+feature: Email Design
 topic: Content Management
 role: User
-level: Intermediate
+level: Beginner, Intermediate
 keywords: bakgrund, e-post, färg, redigerare
 exl-id: 09a2e892-8c6f-460d-8b12-5026582c6ed0
-source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
+source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%

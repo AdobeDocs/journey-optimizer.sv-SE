@@ -3,8 +3,9 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Information om föregående version (2021)
 description: Versionsinformation om Journey Optimizer 2021
+feature: Release Notes
 exl-id: 0e43be98-f471-4860-be84-8f99ab93e983
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: c2f2dde40385f56ea86be15a5857fa9e5e2e2fed
 workflow-type: tm+mt
 source-wordcount: '2065'
 ht-degree: 9%
@@ -180,7 +181,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 <tbody>
 <tr>
 <td>
-<p>Skicka automatiskt ditt push- eller e-postmeddelande vid den tidpunkt som passar varje kund du interagerar med Adobe Journey Optimizer. Med optimering för sändningstid, som bygger på Adobe:s AI-tjänster, förutspås den bästa tidpunkten för att skicka e-post eller push-meddelanden för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser.</p>
+<p>Skicka automatiskt ditt push- eller e-postmeddelande vid den tidpunkt som passar varje kund du interagerar med Adobe Journey Optimizer. Med optimering för sändningstid, baserad på Adobe AI-tjänster, förutspås den bästa tidpunkten för att skicka ett e-postmeddelande eller push-meddelande för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser.</p>
 <p>Den här funktionen är för närvarande i betaversion och endast tillgänglig för betakunder. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.</p>
 <p>Mer information finns i den <a href="../building-journeys/journeys-message.md#send-time-optimization">detaljerade dokumentationen</a>.</p>
 </td>

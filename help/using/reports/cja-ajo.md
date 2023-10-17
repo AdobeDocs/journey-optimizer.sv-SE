@@ -3,12 +3,12 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Arbeta med Customer Journey Analytics
 description: Kom igång med Customer Journey Analytics
-feature: Reporting
+feature: Reporting, Integrations
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 5349b0cf-da4e-458c-89be-c75a38e4721a
-source-git-commit: 0e45d6e4995f4f21dc5122203b715ae999e2b760
+source-git-commit: c2f2dde40385f56ea86be15a5857fa9e5e2e2fed
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%

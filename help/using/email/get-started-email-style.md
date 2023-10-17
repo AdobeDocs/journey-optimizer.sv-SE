@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Kom igång med e-postformat
 description: Upptäck olika sätt att justera e-postinnehållets stil
-feature: Overview
+feature: Email Design
 topic: Content Management
 role: User
-level: Intermediate
+level: Beginner, Intermediate
 keywords: e-post, stil, css, brödtext, struktur
 exl-id: 2e20ecc5-bb58-4dc8-a2bc-ec5a02c16ae8
-source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
+source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 0%

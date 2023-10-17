@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Statistiska beräkningar som används av Adobe Journey Optimizer Experimentation
 description: Läs mer om statistiska beräkningar som används vid försök
-feature: A/B Testing
+feature: Experimentation
 topic: Content Management
 role: User
 level: Experienced
 keywords: innehåll, experiment, statistik, beräkning
 exl-id: 60a1a488-a119-475b-8f80-3c6f43c80ec9
-source-git-commit: 64be9c41085dead10ff08711be1f39760a81ff95
+source-git-commit: 1490ac2efd39c6bf9b6ca97e682750463e9f054d
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 0%

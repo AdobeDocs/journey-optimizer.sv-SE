@@ -3,12 +3,12 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Översikt över att dela steg i resan
 description: Översikt över att dela steg i resan
-feature: Reporting
+feature: Reporting, Journeys
 topic: Content Management
 role: User
 level: Intermediate
 exl-id: 07d25f8e-0065-4410-9895-ffa15d6447bb
-source-git-commit: ae00c13e66247ba1e894609bec2bd21a44398431
+source-git-commit: 03c714833930511fa734662b637d2416728073c2
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 3%

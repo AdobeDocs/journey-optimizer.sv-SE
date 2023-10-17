@@ -2,10 +2,11 @@
 title: Krav för kanaler i appen
 description: Lär dig hur du konfigurerar miljön för att skicka meddelanden i appen med Journey Optimizer
 role: Admin
+feature: In App
 level: Intermediate
 keywords: in-app, meddelande, konfiguration, plattform
 exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
-source-git-commit: 42a1efc45268688d371d83efbafef2aab9d757ac
+source-git-commit: 03c714833930511fa734662b637d2416728073c2
 workflow-type: tm+mt
 source-wordcount: '682'
 ht-degree: 3%

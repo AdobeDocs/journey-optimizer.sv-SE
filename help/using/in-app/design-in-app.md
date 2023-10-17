@@ -1,13 +1,13 @@
 ---
 title: Designa ditt innehåll i appen
 description: Lär dig hur du utformar innehåll i appen i Journey Optimizer
-feature: Overview
+feature: In App
 topic: Content Management
 role: User
 level: Beginner
 keywords: i appen, meddelande, design, formatering
 exl-id: 7d7aa721-96aa-4ebc-a51c-e693f893f34f
-source-git-commit: 144afbd925301ea1eeb690adee335d205fded394
+source-git-commit: 03c714833930511fa734662b637d2416728073c2
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 6%

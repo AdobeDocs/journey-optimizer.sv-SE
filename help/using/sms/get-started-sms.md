@@ -3,12 +3,12 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Kom igång med SMS
 description: Lär dig hur du skapar ett SMS i Journey Optimizer
-feature: Overview
+feature: SMS
 topic: Content Management
 role: User
 level: Beginner
 exl-id: c1027268-0bbe-4e35-a5a6-2aef78083dd3
-source-git-commit: 30d09c884e7ce778712a0f7a8e4c571c32ded8ed
+source-git-commit: 03c714833930511fa734662b637d2416728073c2
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 8%

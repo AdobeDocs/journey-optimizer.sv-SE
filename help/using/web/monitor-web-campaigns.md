@@ -1,12 +1,12 @@
 ---
 title: Övervaka era webbkampanjer
 description: Lär dig övervaka webbkampanjer i Journey Optimizer
-feature: Web Channel
+feature: Web Channel, Reporting
 topic: Content Management
 role: User
-level: Beginner
+level: Beginner, Intermediate
 exl-id: d89795bb-c51d-4d1f-b7ed-2b2c5d278922
-source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
+source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%

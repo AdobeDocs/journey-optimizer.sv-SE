@@ -3,11 +3,11 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Integrera med andra lösningar
 description: Läs mer om hur man integrerar Journey Optimizer med andra lösningar
-topic: Content Management
+feature: Integrations
 role: User
 level: Intermediate
 exl-id: 700dc66e-ae2d-418f-b75e-ece15af57ab3
-source-git-commit: 17dd8e2226555ba6bf74f813c11bdeecac05ddd2
+source-git-commit: c2f2dde40385f56ea86be15a5857fa9e5e2e2fed
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 4%
@@ -23,7 +23,7 @@ Med Adobe Journey Optimizer kan ni enkelt hantera, behålla och exportera dessa 
 > Adobe Journey Optimizer är uppkopplat till Adobe Experience Platform [Adobe kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}. Den här inbyggda datakällan är förkonfigurerad och utformad för att hämta och använda data från kundprofilen i realtid (kontrollera till exempel om den person som angav en resa är en klient eller inte). Ni kan använda profildata och Experience Events-data. [Läs mer](../datasource/adobe-experience-platform-data-source.md).
 >
 
-## Adobe Customer Journey Analytics{#integration-cja}
+## Adobe Customer Journey Analytics {#integration-cja}
 
 Du kan använda Customer Journey Analytics för att utföra avancerad analys av data som genererats av Journey Optimizer.
 
@@ -33,14 +33,14 @@ När ni har skapat er resa i Journey Optimizer kan Customer Journey Analytics h�
 
 Läs mer om [JOURNEY OPTIMIZER + CUSTOMER JOURNEY ANALYTICS](../reports/cja-ajo.md).
 
-## Adobe Analytics{#integration-aa}
+## Adobe Analytics {#integration-aa}
 
 Ni kan utnyttja alla Adobe Analytics beteendehändelsedata som ni redan samlar in och strömmar till Adobe Experience Platform för att utlösa realtidsresor och automatisera kundernas upplevelser. Dessa data kan också användas för att skapa målgrupper som kan engageras med Journey Optimizer.
 
 Läs mer om [Journey Optimizer + Analytics](../event/about-analytics.md).
 
 
-## Adobe Experience Manager Assets Essentials{#integration-assets}
+## Adobe Experience Manager Assets Essentials {#integration-assets}
 
 Samla marknadsförings- och kreativa arbetsflöden med [!DNL Adobe Experience Manager Assets Essentials]. Inbyggt i [!DNL Adobe Journey Optimizer], åtkomst [!DNL Assets Essentials] att lagra, hantera, identifiera och distribuera digitala resurser. Det utgör en central databas med resurser som du kan använda för att fylla i dina meddelanden.
 
@@ -49,7 +49,7 @@ Samla marknadsförings- och kreativa arbetsflöden med [!DNL Adobe Experience Ma
 Läs mer om [JOURNEY OPTIMIZER + ASSETS ESSENTIALS](../content-management/assets-essentials.md).
 
 
-## Adobe Stock{#integration-stock}
+## Adobe Stock {#integration-stock}
 
 The [!DNL Adobe Stock] och [!DNL Adobe Journey Optimizer] Integrationspluginen för e-postdesignern ger kunderna ett enkelt sätt att navigera, licensiera och spara bilder för användning i meddelanderedigering.
 
@@ -58,7 +58,7 @@ Med [!DNL Adobe Journey Optimizer]kan du överföra bilder till e-postmeddelande
 Läs mer om [Journey Optimizer + Stock](../content-management/stock.md).
 
 
-## Adobe Intelligent Services{#integration-intelligent-service}
+## Adobe Intelligent Services {#integration-intelligent-service}
 
 Adobe Intelligent Services som är inbyggt i kunddataplattformen i realtid gör att ni kan utnyttja kraften i artificiell intelligens och maskininlärning i kundupplevelsefall. På så sätt kan marknadsföringsanalytiker skapa prediktioner som är specifika för ett företags behov med hjälp av konfigurationer på företagsnivå utan behov av datavetenskap.
 
@@ -67,7 +67,7 @@ Med kundens AI kan varumärken skapa maskininlärningsbaserade poäng som är ti
 [Läs mer](../building-journeys/ai-services-overview.md).
 
 
-## Adobe Campaign{#integration-ac}
+## Adobe Campaign {#integration-ac}
 
 Det finns en integrering om du har Adobe Campaign v7 eller v8. Använd den här integreringen för att skicka e-post, push-meddelanden och SMS med Adobe Campaign Transactional Messaging-funktioner.
 
@@ -75,9 +75,9 @@ Läs mer om [Journey Optimizer + Campaign](../building-journeys/ajo-ac.md).
 
 Du kan också konfigurera en integrering med Adobe Campaign Standard för att skicka meddelanden på dina resor.
 
-Läs mer om [JOURNEY OPTIMIZER + CAMPAIGN STANDARD](../building-journeys/ajo-ac.md).
+Läs mer om [JOURNEY OPTIMIZER + CAMPAIGN STANDARD](../building-journeys/using-adobe-campaign-standard.md).
 
-## Egna kanaler{#integration-custom}
+## Egna kanaler {#integration-custom}
 
 Om du använder ett system från en annan leverantör för att skicka meddelanden eller om du vill att resor ska skicka API-anrop till ett system från en annan leverantör, ska du använda anpassade åtgärder för att ansluta till din resa. Du kan till exempel ansluta till följande system med anpassade åtgärder: Epsilon, Slack, [Adobe Developer](https://developer.adobe.com){target="_blank"}, Firebase osv.
 
@@ -85,7 +85,7 @@ Anpassade åtgärder är ytterligare åtgärder som definieras av tekniska anvä
 
 Läs mer om [anpassade åtgärder](../action/about-custom-action-configuration.md).
 
-## Externa datakällor{#integration-external-systems}
+## Externa datakällor {#integration-external-systems}
 
 Med Journey Optimizer kan du konfigurera anslutningar till externa system via anpassade datakällor och anpassade åtgärder. På så sätt kan ni till exempel berika era resor med data från ett externt bokningssystem.
 
