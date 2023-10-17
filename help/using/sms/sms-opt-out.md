@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 59ea67d9-e90c-4ad0-afb9-d0e0fd868855
-source-git-commit: 57163faa177a4e8bc90496f7756d7749a4f7e325
+source-git-commit: 43a1c170882c13c692d73fd78eac9989b1e5006d
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
@@ -21,12 +21,12 @@ I enlighet med branschens standarder och bestämmelser måste alla SMS-marknadsf
 
 >[!IMPORTANT]
 >
->Textmeddelandekommunikation kan följa olika lagkrav beroende på vilken typ av meddelanden det gäller, var du skickar dina textmeddelanden och var mottagarna finns. Medan Adobe Journey Optimizer hanterar meddelandena om långa koder och avgiftsfria nummer enligt beskrivningen nedan, bör du kontakta ditt juridiska ombud för att kontrollera att din textmeddelandekommunikation uppfyller alla gällande lagkrav.
+>Textmeddelandekommunikation kan följa olika lagkrav beroende på vilken typ av meddelanden det gäller, var du skickar dina textmeddelanden och var mottagarna finns. Medan Adobe Journey Optimizer hanterar meddelandena om korta koder, långa koder och avgiftsfria nummer enligt beskrivningen nedan, bör du kontakta ditt juridiska ombud för att kontrollera att din textmeddelandekommunikation uppfyller alla gällande lagkrav.
 >
 
 ## Interna inkommande nyckelord {#sms-native-keywords}
 
-Som standard hanterar Adobe Journey Optimizer följande engelskspråkiga standardsvarsmeddelanden för meddelanden om avgiftsfri och lång kod: STOP, UNSTOP, START, QUIT, CANCEL, END och UNSUBSCRIBE. Observera att endast Sinch och Infobip har stöd för inbyggda nyckelord när de används med Journey Optimizer.
+Som standard hanterar Adobe Journey Optimizer följande engelskspråkiga standardsvarsmeddelanden för korta koder, avgiftsfria meddelanden och långa kodmeddelanden: STOP, UNSTOP, START, QUIT, CANCEL, END och UNSUBSCRIBE. Observera att endast Sinch och Infobip har stöd för inbyggda nyckelord när de används med Journey Optimizer.
 
 Dessa nyckelord utlöser vanligtvis ett automatiskt standardsvar från din tredje part-leverantör. Du kan bekräfta detta direkt hos leverantören eller via deras dokumentationswebbplats.
 
