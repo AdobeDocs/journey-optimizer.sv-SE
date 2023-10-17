@@ -1,12 +1,12 @@
 ---
 title: Rankningsformler
 description: Lär dig hur du skapar formler för att rangordna erbjudanden
-feature: Ranking Formulas, Offers
+feature: Ranking, Offers
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: 8bc808da-4796-4767-9433-71f1f2f0a432
-source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
+source-git-commit: 0ea2ed03a476e0b64a8ebfadde403ff9f9e57bba
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
