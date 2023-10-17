@@ -9,14 +9,19 @@ role: Developer, Admin
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
+source-git-commit: 7064d9e6dce2c2b96a0c0b4df5eff24e91d42260
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '916'
 ht-degree: 0%
 
 ---
 
 # Utlösa kampanjer med API:er {#trigger-campaigns}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_api_profile_creation"
+>title="Kampanjtyp"
+>abstract="Följ stegen i dokumentationen för att få en begränsad tillgänglighetsfunktion för att skicka meddelanden utan att skapa profiler."
 
 ## Om API-utlösta kampanjer {#about}
 
