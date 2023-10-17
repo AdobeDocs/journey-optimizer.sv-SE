@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 7131a953-baca-4e7c-a8df-97c0bd6ac567
-source-git-commit: b00a4e174e978121687428147b5b3861077c5182
+source-git-commit: 0eec7788aa8292843812eba0282ea5219b5711df
 workflow-type: tm+mt
 source-wordcount: '1481'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 >id="ajo_create_fragment"
 >title="Definiera egna fragment"
 >abstract="Skapa och hantera fristående fragment för att göra innehållet återanvändbart på flera resor och i flera kampanjer."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/personalized-dynamic-content/reusable-content/fragments.html#create-fragments" text="Skapa fragment"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/reusable-content/fragments.html#create-fragments" text="Skapa fragment"
 
 Ett fragment är en återanvändbar komponent som kan refereras i en eller flera e-postmeddelanden som [!DNL Journey Optimizer] kampanjer och resor.
 
@@ -194,7 +194,7 @@ Det här fragmentet är nu klart att användas när du skapar [e-post](../email/
 >id="ajo_create_expression_fragment"
 >title="Välj uttryckstyp"
 >abstract="Skapa ett fristående uttrycksfragment som gör att innehållet kan återanvändas på flera resor och i flera kampanjer. När du använder uttrycksredigeraren kan du utnyttja alla uttrycksfragment som har skapats i den aktuella sandlådan."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/personalized-dynamic-content/personalization/expression-editor/use-expression-fragments.html" text="Utnyttja uttrycksfragment"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/expression-editor/use-expression-fragments.html" text="Utnyttja uttrycksfragment"
 
 1. [Skapa ett fragment](#create-from-scratch) från **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]** vänster meny och välj **[!UICONTROL Expression fragment]** typ.
 
