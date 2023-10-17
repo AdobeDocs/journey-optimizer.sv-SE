@@ -1,12 +1,11 @@
 ---
 title: Statistiska beräkningar som används i experimentrapporten
 description: Läs mer om statistiska beräkningar som används när experimentrapporter körs
-feature: A/B Testing
-topic: Content Management
+feature: A/B Testing, Experimentation
 role: User
 level: Experienced
 exl-id: 67ba8861-be6f-42ae-b9b8-96168d0dd15c
-source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
+source-git-commit: c14a9385191cfa4368e0b84ab16a63c4c87e2c69
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
@@ -45,7 +44,7 @@ På panelen Journey Experimentation visas &quot;närsomhelst giltiga&quot; konfi
 
 Konfidenssekvensen för en enskild variant `ν` är en central del i den statistiska metod som används av Adobe. Du hittar definitionen i [den här sidan](https://doi.org/10.48550/arXiv.2103.06476) (återges från [Waudiby-Smith et al.]).
 
-Om du är intresserad av att uppskatta en målparameter `ψ` exempelvis konverteringsgraden för en variant i en expert, kan dikotomin mellan en sekvens av&quot;fast tid&quot; konfidensintervall (CI) och en tidsenhetlig konfidenssekvens (CS) sammanfattas enligt följande:
+Om du är intresserad av att uppskatta en målparameter `ψ` exempelvis konverteringsgraden för en variant i en experiment, kan dikotomin mellan en sekvens med &quot;fast tid&quot; konfidensintervall (CI) och en tidsenhetlig konfidenssekvens (CS) sammanfattas enligt följande:
 
 ![](assets/statistical_4.png){width="500" align="center"}
 
