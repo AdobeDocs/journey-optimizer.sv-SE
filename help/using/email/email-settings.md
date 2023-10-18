@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
+source-git-commit: aa71769719dce607e5392c9d8167f3afe3884d5f
 workflow-type: tm+mt
-source-wordcount: '2201'
+source-wordcount: '2276'
 ht-degree: 1%
 
 ---
@@ -121,7 +121,12 @@ I **[!UICONTROL Header parameters]** anger du avsändarens namn och e-postadress
 
 * **[!UICONTROL Reply to (email)]**: Den e-postadress som ska användas när mottagaren klickar på **Svara** i klientprogramvaran för e-post. [Läs mer](#reply-to-email)
 
-* **[!UICONTROL Error email]**: Alla fel som genereras av Internet-leverantörer efter några dagar efter att e-post har levererats (asynkrona studsar) tas emot på den här adressen.
+* **[!UICONTROL Error email]**: Alla fel som genereras av Internet-leverantörer efter några dagar efter att e-post har levererats (asynkrona studsar) tas emot på den här adressen. Meddelanden och svar på frågor tas också emot på den här adressen.
+
+  >[!NOTE]
+  >
+  >Om du vill få meddelanden och svar på frågor på en viss e-postadress som inte har delegerats till Adobe måste du konfigurera en [framåtprocess](#forward-email). I så fall ska du se till att du har en manuell eller automatiserad lösning för att bearbeta e-postmeddelanden som landar i den här inkorgen.
+
 
 >[!CAUTION]
 >
@@ -137,9 +142,9 @@ I **[!UICONTROL Header parameters]** anger du avsändarens namn och e-postadress
 
 När du definierar **[!UICONTROL Reply to (email)]** kan du ange vilken e-postadress som helst, förutsatt att det är en giltig adress, i korrekt format och utan att du behöver skriva någon.
 
-Följ nedanstående rekommendationer för att säkerställa korrekt svarshantering:
+Den inkorg som används för svar kommer att ta emot alla svarsmeddelanden, utom meddelanden som inte är installerade och svarsfrågor som tas emot på **[!UICONTROL Error email]** adress.
 
-* Den inkorg som används för svar kommer att få alla svar i e-postmeddelanden, inklusive meddelanden utanför kontoret och svar på frågor, och på så sätt se till att du har en manuell eller automatiserad process för att bearbeta de e-postmeddelanden som landar i den här inkorgen.
+Följ nedanstående rekommendationer för att säkerställa korrekt svarshantering:
 
 * Se till att den dedikerade inkorgen har tillräcklig mottagningskapacitet för att kunna ta emot alla svar som skickas via e-post med e-postytan. Om inkorgen returnerar studsar kanske vissa svar från dina kunder inte tas emot.
 
@@ -157,18 +162,26 @@ Om du får ett felmeddelande när du skickar e-postytan betyder det att MX-poste
 
 ### Vidarebefordra e-post {#forward-email}
 
-Om du vill vidarebefordra till en viss e-postadress får du alla e-postmeddelanden som [!DNL Journey Optimizer] för den delegerade underdomänen, kontakta Adobe kundtjänst. Du måste ange:
+Vidarebefordra till en viss e-postadress alla e-postmeddelanden som tas emot av [!DNL Journey Optimizer] för den delegerade underdomänen, kontakta Adobe kundtjänst.
+
+>[!NOTE]
+>
+>Om den underdomän som används för **[!UICONTROL Reply to (email)]** adressen har inte delegerats till Adobe, vidarebefordran fungerar inte för den här adressen.
+
+Du måste ange:
 
 * Den e-postadress som du väljer. Observera att domänen för e-postadressen för vidarebefordran inte kan matcha någon underdomän som har delegerats till Adobe.
 * Namn på din sandlåda.
-* Ytnamnet som e-postadressen ska användas för.
-* Aktuell **[!UICONTROL Reply to (email)]** som anges på kanalens ytnivå.
+* Ytnamnet eller underdomänen som e-postadressen ska användas för.
+  <!--* The current **[!UICONTROL Reply to (email)]** address or **[!UICONTROL Error email]** address set at the channel surface level.-->
 
 >[!NOTE]
 >
 >Det får bara finnas en e-postadress per underdomän. Om flera ytor använder samma underdomän måste därför samma e-postadress för alla ytor användas.
 
-E-postadressen för vidarebefordran kommer att konfigureras av Adobe. Detta kan ta 3 till 4 dagar.
+E-postadressen för vidarebefordran konfigureras av Adobe. Detta kan ta 3 till 4 dagar.
+
+När du är klar tas alla meddelanden emot på **[!UICONTROL Reply to (email)]** och **[!UICONTROL Error email]** Adresser vidarebefordras till den angivna e-postadressen.
 
 ## BCC-e-post {#bcc-email}
 
