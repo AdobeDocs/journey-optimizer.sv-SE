@@ -4,8 +4,11 @@ product: journey optimizer
 title: Versionsinformation 2022
 description: Versionsinformation om Journey Optimizer 2022
 feature: Release Notes
+topic: Content Management
+role: User
+level: Beginner, Intermediate
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
-source-git-commit: c2f2dde40385f56ea86be15a5857fa9e5e2e2fed
+source-git-commit: 28a4f04ebcda27213d3bac763fb9bea8ea4a0146
 workflow-type: tm+mt
 source-wordcount: '3575'
 ht-degree: 9%

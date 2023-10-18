@@ -2,13 +2,13 @@
 solution: Journey Optimizer
 title: Begränsa genomströmning med externa datakällor och anpassade åtgärder
 description: Begränsa genomströmning med externa datakällor och anpassade åtgärder
-feature: Journeys, Use cases, Custom actions, Data Sources
+feature: Journeys, Use Cases, Custom actions, Data Sources
 topic: Content Management
 role: Developer, Data Engineer
 level: Experienced
 keywords: resa, datakällor, begränsning, genomströmning, anpassade åtgärder
 exl-id: 45d6bb82-88ea-4510-a023-a75a82cc6f7b
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 28a4f04ebcda27213d3bac763fb9bea8ea4a0146
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 0%
