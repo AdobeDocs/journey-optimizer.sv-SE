@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Lägg till ett meddelande i en resa
 description: Lär dig hur du lägger till ett meddelande under en resa
-feature: Journeys
+feature: Journeys, Activities, Channels Activity
 topic: Content Management
 role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, i appen
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: 055b735308cc6f0f942c165541d87dfdb74f557c
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 0%

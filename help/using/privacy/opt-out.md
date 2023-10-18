@@ -3,12 +3,12 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Hantera avanmälan
 description: Lär dig hantera avanmälan och sekretess
-feature: Privacy
+feature: Privacy, Consent Management
 topic: Content Management
 role: User
 level: Intermediate
 exl-id: c5bae757-a109-45f8-bf8d-182044a73cca
-source-git-commit: c4b8a74541a3fb9fea054bd1145592d75c62b165
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 0%

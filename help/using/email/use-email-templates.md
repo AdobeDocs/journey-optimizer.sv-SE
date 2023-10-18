@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Arbeta med e-postmallar
 description: Lär dig hur du sparar ditt e-postinnehåll som en mall och återanvänder det i Journey Optimizer
-feature: Templates, Email Design
+feature: Email Design, Templates
 topic: Content Management
 role: User
 level: Beginner
 keywords: e-post, mallar, design
 exl-id: 94d5e615-a7d6-468c-bee8-1ae5fcd4a694
-source-git-commit: 45f19563c79d298eeec6cb757636a9ce47e54adf
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 1%

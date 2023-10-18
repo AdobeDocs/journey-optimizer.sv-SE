@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Kom igång med planer för IP-värmare
 description: Lär dig hur du implementerar en IP-värmeringsplan
-feature: Channel Configuration
+feature: IP Warmup Plans
 topic: Administration
 role: Admin
 level: Experienced
@@ -11,7 +11,7 @@ keywords: IP, leverans
 hide: true
 hidefromtoc: true
 exl-id: 393f051d-b86d-4b4f-b564-7a9ae3a5d4b8
-source-git-commit: 82c189545ab4f37a2e4b1044c0b8cfeb539aed13
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 2%

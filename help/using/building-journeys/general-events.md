@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Allmänna händelser
 description: Lär dig hur du använder allmänna händelser
-feature: Journeys
+feature: Journeys, Events
 topic: Content Management
 role: User
 level: Intermediate
 keywords: skräddarsydd, allmän, evenemang, resa
 exl-id: b1813122-7031-452e-9ac5-a4ea7c6dc57c
-source-git-commit: 055b735308cc6f0f942c165541d87dfdb74f557c
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 1%

@@ -1,12 +1,12 @@
 ---
 title: Åtkomst till den exporterade erbjudandekatalogen
 description: Lär dig hur du får tillgång till erbjudandekatalogen på Adobe Experience Platform när den har exporterats
-feature: Offers, Datasets
+feature: Decision Management, Datasets
 topic: Integrations
-role: User
+role: User, Data Engineer
 level: Intermediate
 exl-id: d822c541-c043-41f5-916c-6a8e39fb148a
-source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 12%

@@ -3,12 +3,12 @@ solution: Journey Optimizer
 product: journey optimizer
 title: historikstegshändelser, vanliga fält
 description: historikstegshändelser, vanliga fält
-feature: Reporting
+feature: Journeys, Reporting
 topic: Content Management
-role: User
-level: Intermediate
+role: Data Engineer, Data Architect, Admin
+level: Experienced
 exl-id: 42aec986-2352-456a-a725-7f1585ae01f8
-source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%

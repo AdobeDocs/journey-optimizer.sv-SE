@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Resebegränsningar
 description: Läs mer om begränsningar för resor
-feature: Journeys
+feature: Journeys, Best Practices, Guardrails
 topic: Content Management
 role: User
 level: Intermediate
 keywords: resor, begränsning
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 64abe386cd0d7b7e849fb6f6cdc70c00b4365feb
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '511'
 ht-degree: 0%

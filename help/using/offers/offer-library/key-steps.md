@@ -1,12 +1,12 @@
 ---
 title: Viktiga steg för att skapa ett erbjudande
 description: Upptäck de viktigaste stegen som krävs för att skapa ett erbjudande
-feature: Offers
+feature: Decision Management
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: e375fd3a-b10d-45f4-a95b-ceb48116e841
-source-git-commit: 9cd9d37576b5befbdb62e00a9e07475b8bc9295a
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 10%

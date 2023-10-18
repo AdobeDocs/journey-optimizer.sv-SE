@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Skapa en IP-värmeringsplan
 description: Lär dig hur du skapar en IP-värmeringsplan i Journey Optimizer
-feature: Channel Configuration
+feature: IP Warmup Plans
 topic: Administration
 role: Admin
 level: Experienced
@@ -11,7 +11,7 @@ keywords: IP, grupp, underdomäner, leveransbarhet
 hide: true
 hidefromtoc: true
 exl-id: c2434086-2ed4-4cd0-aecd-2eea8f0a55f6
-source-git-commit: 82c189545ab4f37a2e4b1044c0b8cfeb539aed13
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 1%

@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Hoppa från en resa till en annan
 description: Hoppa från en resa till en annan
-feature: Journeys
+feature: Journeys, Activities
 topic: Content Management
 role: User
 level: Intermediate
 keywords: hopp, aktivitet, resa, dela, dela upp
 exl-id: 46d8950b-8b02-4160-89b4-1c492533c0e2
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 2%

@@ -1,12 +1,12 @@
 ---
 title: Skapa ett reserverbjudande
 description: Ett reserverbjudande skickas till kunderna om de inte är berättigade till andra erbjudanden
-feature: Offers, API
+feature: Decision Management, API
 topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 1a9c074a-187a-45b1-9ad0-378aeef0d03d
-source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 7%

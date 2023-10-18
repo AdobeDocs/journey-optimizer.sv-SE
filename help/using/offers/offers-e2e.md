@@ -1,12 +1,12 @@
 ---
 title: Använd personaliserade erbjudanden i ett e-postmeddelande
 description: Upptäck ett heltäckande exempel som visar alla steg som behövs för att konfigurera erbjudanden och använda dem i ett e-postmeddelande.
-feature: Offers
+feature: Decision Management, Email
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: 851d988a-2582-4c30-80f3-b881d90771be
-source-git-commit: 835e4bf227ce330b1426a9a4331fdf533fc757e3
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 2%

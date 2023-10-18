@@ -1,12 +1,12 @@
 ---
 title: Skapa placeringar
 description: Lär dig hur du skapar ersättningar för dina erbjudanden
-feature: Offers
+feature: Decision Management
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: dfaf887e-d4b3-45b0-8297-bffdb0abff4d
-source-git-commit: 51f93270c969875e94cc3e98919149d67d764ed1
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 1%

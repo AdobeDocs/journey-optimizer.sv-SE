@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Kom igång med reseaktiviteter
 description: Kom igång med reseaktiviteter
-feature: Journeys
-topic: Content Management
+feature: Journeys, Activities, Overview
+topic: Journeys
 role: User
-level: Intermediate
+level: Beginner, Intermediate
 keywords: resa, aktiviteter, komma igång, händelser, åtgärd
 exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
-source-git-commit: 865f8c3a2a598bdb90ab3cb85104684c160a560f
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 13%

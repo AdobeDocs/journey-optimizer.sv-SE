@@ -1,12 +1,12 @@
 ---
 title: Lägg till representationer i ett erbjudande
 description: Lär dig hur du lägger till representationer i dina erbjudanden
-feature: Offers
+feature: Decision Management
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: 718af505-7b7c-495e-8974-bd9c35d796bb
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 1%

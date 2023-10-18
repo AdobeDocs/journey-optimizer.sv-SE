@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Skicka ett meddelande till prenumeranter
 description: Lär dig hur du bygger en resa för att skicka ett meddelande till prenumeranterna på en lista
-feature: Journeys
+feature: Journeys, Use Cases, Subscriptions
 topic: Content Management
-role: User
-level: Intermediate
+role: User, Data Engineer
+level: Intermediate, Experienced
 keywords: resa, användningsfall, meddelande, prenumeranter, lista, läsa
 exl-id: 2540938f-8ac7-43fa-83ff-fed59f6bc417
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 3%

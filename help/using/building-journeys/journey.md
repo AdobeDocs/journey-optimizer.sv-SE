@@ -3,12 +3,12 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Kom igång med resor
 description: Kom igång med resor
-feature: Journeys
+feature: Journeys, Get Started, Overview
 role: User
-level: Beginner
+level: Beginner, Intermediate
 keywords: resa, upptäckt, komma igång
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
-source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 1%

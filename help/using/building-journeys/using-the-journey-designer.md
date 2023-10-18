@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Utforma din resa
 description: Lär dig hur du utformar din resa
-feature: Journeys
+feature: Journeys, Activities
 topic: Content Management
 role: User
 level: Intermediate
 keywords: design, arbetsyta, resa, gränssnitt, dra, släpp
 exl-id: 1998f6fc-60fd-4038-8669-39cd55bc02d1
-source-git-commit: 9270f706d3b0693178ffc076aea2e631ba736afe
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '1614'
 ht-degree: 1%

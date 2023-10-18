@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Datakällan i Adobe Experience Platform
 description: Lär dig konfigurera Adobe Experience Platform datakälla
-feature: Data Sources
+feature: Journeys, Data Sources
 topic: Administration
-role: Admin, Developer
-level: Intermediate
+role: Data Engineer, Data Architect, Admin
+level: Intermediate, Experienced
 keywords: inbyggd, källa, data, plattform, integrering
 exl-id: 9083e355-15e3-4d1f-91ae-03095e08ad16
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 9%

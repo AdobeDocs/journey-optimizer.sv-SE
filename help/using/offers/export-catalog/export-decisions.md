@@ -1,12 +1,12 @@
 ---
 title: Datauppsättning med beslut
 description: I det här avsnittet visas alla fält som används i den exporterade datauppsättningen för beslut
-feature: Offers, Datasets
+feature: Decision Management, Datasets
 topic: Integrations
-role: User
+role: User, Data Engineer
 level: Intermediate
 exl-id: 064762b7-9774-42eb-bcef-1d92bc94a988
-source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '1548'
 ht-degree: 0%

@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Räck upp leveranserna
 description: Lär dig hur du får fler leveranser
-feature: Journeys
+feature: Journeys, Use Cases, IP Warmup Plans
 topic: Content Management
-role: User
-level: Intermediate
+role: User, Data Engineer
+level: Intermediate, Experienced
 keywords: leverans, resa, användningsfall, e-post, anseende
 exl-id: 83d1b68d-011a-4109-b5f0-6ca1ade2944d
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 3%

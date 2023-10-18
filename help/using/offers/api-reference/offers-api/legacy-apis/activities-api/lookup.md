@@ -1,12 +1,12 @@
 ---
 title: Slå upp ett beslut
 description: Ett beslut innehåller den logik som ligger till grund för valet av ett erbjudande.
-feature: Offers, API
+feature: Decision Management, API
 topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 99159704-fa39-47ff-b445-0cd6b325007d
-source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
+source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 1%
