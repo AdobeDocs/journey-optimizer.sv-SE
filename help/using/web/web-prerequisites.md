@@ -6,9 +6,9 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 9509fd67-6d12-4440-aad8-59690936be97
-source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
+source-git-commit: a20e01e66138ea5bb7be4d36c0d55b24ab9426db
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1040'
 ht-degree: 1%
 
 ---
@@ -32,8 +32,7 @@ För att kunna komma åt och skriva webbsidor i [!DNL Journey Optimizer] följer
 
 >[!AVAILABILITY]
 >
->För närvarande är webbkanalen inte tillgänglig för organisationer som har köpt tillägget Adobe Healthcare Shield.
->
+>För tillfället är webbkanalen inte tillgänglig för organisationer som köpt Adobe **Hälsovårdssköld** och **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
 
 ## Krav för implementering {#implementation-prerequisites}
 

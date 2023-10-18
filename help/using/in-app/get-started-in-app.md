@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: 51562843-7b50-4eb5-bf79-5ce03f7549cb
-source-git-commit: 03c714833930511fa734662b637d2416728073c2
+source-git-commit: a20e01e66138ea5bb7be4d36c0d55b24ab9426db
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '211'
 ht-degree: 3%
 
 ---
@@ -22,8 +22,7 @@ Använd Journey Optimizer för att skapa meddelanden i appen och konfigurera upp
 
 >[!AVAILABILITY]
 >
->För närvarande finns inte en kanal i appen tillgänglig för organisationer som har köpt tillägget Adobe Healthcare Shield.
->
+>För tillfället är inte In-app-kanalen tillgänglig för organisationer som har köpt Adobe **Hälsovårdssköld** och **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
 
 ## Förutsättningar{#prerequisites-in-app}
 

@@ -7,19 +7,18 @@ role: User
 level: Beginner
 keywords: direktreklam, meddelande, kampanj
 exl-id: bb52f400-6289-4a7f-a34f-98eb5d27c76a
-source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
+source-git-commit: a20e01e66138ea5bb7be4d36c0d55b24ab9426db
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
 
 # Kom igång med direktreklam {#create-direct}
 
->[!AVAILABILITY]
+>[!IMPORTANT]
 >
->För närvarande är Direct mail channel inte tillgängligt för organisationer som har köpt tillägget Adobe Healthcare Shield.
->
+>För närvarande är direktreklamkanalen inte tillgänglig för organisationer som har köpt Adobe **Hälsovårdssköld** och **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
 
 Direktreklam är en offlinekanal som gör att du kan anpassa och generera extraheringsfiler som krävs av direktreklamleverantörer för att skicka e-post till dina kunder.
 
