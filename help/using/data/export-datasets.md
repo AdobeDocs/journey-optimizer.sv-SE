@@ -3,11 +3,12 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Exportera datauppsättningar till molnlagringsplatser
 description: Lär dig hur du exporterar datauppsättningar med Adobe Experience Platform molnlagringsmål.
+feature: Datasets
 role: User
 level: Beginner
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
 exl-id: 66b5c691-ddc4-4e9b-9386-2ce6c307451c
-source-git-commit: a5cb591a3340f2af27806967e5a1403be9fe26e4
+source-git-commit: d4ecfecdc74c26890658d68d352c36b75f7c9039
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 1%

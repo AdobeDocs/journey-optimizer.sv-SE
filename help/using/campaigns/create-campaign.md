@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Skapa en kampanj
 description: Lär dig skapa kampanjer i Journey Optimizer
-Feature: Campaigns
+feature: Campaigns
 topic: Content Management
 role: User
 level: Beginner
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
+source-git-commit: d4ecfecdc74c26890658d68d352c36b75f7c9039
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 2%

@@ -1,11 +1,11 @@
 ---
 title: Gruppbeslut
 description: Lär dig hur ni kan leverera offertbeslut till alla profiler inom en viss Adobe Experience Platform-publik.
-Feature: Decision Management
+feature: Decision Management
 role: User
 level: Intermediate
 exl-id: 810c05b3-2bae-4368-bf12-3ea8c2f31c01
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: d4ecfecdc74c26890658d68d352c36b75f7c9039
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 0%
