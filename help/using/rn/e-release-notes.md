@@ -10,10 +10,10 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 28a4f04ebcda27213d3bac763fb9bea8ea4a0146
+source-git-commit: 62f3836494ae40cb4676f3e62ad4c8de2daa3ed9
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 3%
+source-wordcount: '375'
+ht-degree: 2%
 
 ---
 
@@ -23,11 +23,11 @@ ht-degree: 3%
 
 Noteringarna nedan kan ändras utan föregående meddelande fram till releasedatum. Länkar, skärmar och uppdaterad dokumentation publiceras i [versionsinformation](release-notes.md), på releasedatum.
 
-## Versionsinformation september 2023 {#sept-rn-2023}
+## Versionsinformation oktober 2023 {#oct-rn-2023}
 
-**Releasedatum**: 26-27 sept 2023
+**Releasedatum**: 25-26 okt 2023
 
-### Nya funktioner{#sept-2023-features}
+### Nya funktioner{#oct-2023-features}
 
 Den här versionen innehåller de nya funktionerna som listas nedan.
 
@@ -35,14 +35,14 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Konsoliderade kanalrapporter</strong><br/></th>
+<th><strong>MMS (Multimedia Message Service) i SMS (Beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Med funktionen Kanalrapport kan analytiker och marknadsförare få en heltäckande översikt över trafik- och engagemangsmått på kanalnivå. Om du vill få åtkomst till menyn Rapport måste du ha behörigheten Visa kanalrapporter.</p>
-<img src="assets/channel-reports.png"/>
+<p>Med SMS-kanalen kan du nu förbättra kommunikationen genom att skicka MMS-meddelanden (Multimedia Message Service) som gör det möjligt att dela bilder, GIF eller videor med dina kunder. Observera att den här funktionen för närvarande endast är tillgänglig i Beta med Sinch.</p>
+<!--img src="assets/channel-reports.png"/-->
 <!--p>For more information, refer to the <a href="../in-app/get-started-in-app.md">detailed documentation</a>.</p-->
 </tr>
 </tbody>
@@ -52,97 +52,51 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Målgrupper för datauppsättningsexport (GA)</strong><br/></th>
+<th><strong>Verktyg i sandlådan</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Export av Journey Optimizer datamängder till molnlagringsmål är nu allmänt tillgängligt. Med den här funktionen kan du upprätta en direktanslutning till molnlagringsplatser för att kunna exportera innehållet i dina datauppsättningar.</p>
-<img src="../data/assets/dataset-export-setup.png">
+<p>Du kan använda sandlådeverktygen i Adobe Journey Optimizer för att markera olika objekt och exportera dem till ett paket. Ett paket kan bestå av ett enda objekt, flera objekt eller en hel sandlåda. Alla objekt som ingår i ett paket måste komma från samma sandlåda.</p>
+<!--img src="../data/assets/dataset-export-setup.png"-->
 <!--p>For more information, refer to the <a href="../audience/get-started-audience-orchestration.md">detailed documentation</a>.</p-->
 </td>
 </tr>
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Lagring av autentiseringsuppgifter för mobilprogram per sandbox</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Med den här nya funktionen kan du enkelt hantera och associera push-autentiseringsuppgifter med en dedikerad sandlåda i appytor.</p>
-<p>Mer information finns i den <a href="../in-app/inapp-configuration.md">detaljerade dokumentationen</a>.</p>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Beräknade attribut</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Beräknade attribut gör det enkelt att sammanfatta händelsedata i profilattribut via ett intuitivt användargränssnitt för förbättrad beteendebaserad segmentering, personalisering och aktivering. Med den här funktionen kan du skapa beräknade attribut på ett självbetjäningssätt, hantera dem och använda dem vid segmentering, kundprofilmål i realtid eller Journey Optimizer.<br/><br/>
-Beräknade attribut förenklar dessutom arbetsflödena för segmentering och resor så att ni smidigt kan leverera relevanta upplevelser. Läs mer i <a href="https://experienceleague.adobe.com/docs/experience-platform/profile/computed-attributes/overview.html">detaljerad dokumentation</a>.</p>
-<img src="assets/do-not-localize/computed-attributes.gif">
-</tr>
-</tbody>
-</table>
 
 
-### Förbättringar {#sept-2023-improvements}
+### Förbättringar {#oct-2023-improvements}
 
 Den här versionen innehåller de förbättringar som anges nedan.
 
-<!--**Audiences**
+**Publiker**
 
-* You can now target audiences uploaded from a CSV file into journeys and campaigns.
-* You can now target audiences resulting from composition workflows into journeys. -->
+* Nu kan ni rikta in er på målgrupper som överförts från en CSV-fil till resor och kampanjer.
+* Nu kan ni inrikta er på målgrupper som är resultatet av arbetsflöden för disposition på era resor.
 
-**Personalisering**
+**Spam-poäng för e-post**
 
-* Förutom visuella fragment går det nu att skapa, spara och återanvända uttrycksfragment från Journey Optimizer-gränssnittet via uttrycksredigeraren. Uttrycksfragment ersätter uttryck som sparats tidigare.
+* När du simulerar ett e-postinnehåll kan du med ett nytt alternativ kontrollera hur innehållet fungerar mot skräppostfiltrering i inkorgar. Den här funktionen är för närvarande endast avsedd för en uppsättning kunder (begränsad tillgänglighet) och tillgänglig för e-postkanalen.
 
 **Varningar**
 
-* En ny typ av systemvarning har införts. Nu kan ni få meddelanden när en läsare misslyckas.
+* Nu finns nya varningsmeddelanden om Journey Optimizer-kampanjer i **Varningar** -menyn.
 
-**Webbkanal**
+**Kampanjer**
 
-* Enkelsidiga program (SPA) kan nu redigeras i webbdesignerns visuella redigerare, där du kan välja vilka specifika vyer du vill använda webbsidesändringarna på. En vy kan definieras som en hel webbplats eller som en grupp visuella element på en webbplats, till exempel hemsidan, hela produktwebbplatsen eller leveransinställningsramen på alla utcheckningssidor. Om du vill skapa och köra Adobe Journey Optimizer webbkampanjer på SPA måste du konfigurera en gång för utvecklare för att definiera vyerna i Adobe Experience Platform Web SDK-implementeringen.
-
-* När du redigerar en sida med hjälp av webbdesignern kan du nu lägga till nya ändringar i innehållet direkt från **Ändringar** utan att behöva markera en komponent och redigera den i designergränssnittet.
-* När du konfigurerar webbunderdomäner kan du nu lägga till en egen underdomän, förutom att använda en underdomän som redan har delegerats till Adobe.
+* Nu kan du stoppa en direktkampanj, göra ändringar och återuppta den igen. Denna förbättring finns tillgänglig i Beta.
 
 **Resor**
 
-* Stöd för anpassade åtgärdssvar är nu GA. På så sätt kan ni utnyttja API-anropssvar i anpassade åtgärder och samordna er resa baserat på dessa svar. Dessutom har ett nytt skyddsräcke lagts till för att begränsa alla tullåtgärder till 5000 samtal/s per slutpunkt.
-* När du duplicerar en resa kan du nu definiera namnet på kopian av resan.
+* Den maximala varaktighet som du kan definiera i aktiviteten Vänta är nu 29 dagar i stället för 30.
 
-<!--
-* The maximum duration that you can define in the Wait activity is now 29 days instead of 30.
--->
+**Landningssidor**
 
-**E-postkanal**
+* När du använder landningssidans formulärkomponent kan du nu lägga till ett e-postfält med egna specifika alternativ.
 
-Ett nytt alternativ i konfigurationen av e-postytan gör att du kan välja att skicka transaktionsmeddelanden till profiler även om deras e-postadresser finns i listan över Adobe Journey Optimizer-undertryckningar.
+**Medgivande i kanalkonfiguration**
 
-**SMS-kanal**
-
-Två nya fält, **Inloggningsmeddelande** och **Hjälpmeddelande**, har lagts till i API-konfigurationsskärmen, vilket gör att användare kan anpassa svar för inkommande nyckelord. Observera att det här endast är tillgängligt för SMS-providern för Sinch.
-
-**Rapportering**
-
-Nu kan du exportera Journey Optimizer-rapporter som CSV-filer. [Läs mer](../reports/global-report.md#export-reports)
-
-<!--**Decision management**
-
-Enhancements have been made to the audience picker in journeys or campaigns, with the addition of new columns displaying the origin and update frequency of audiences.    -->
+* Nu kan du välja en marknadsföringsåtgärd på kanalnivå. När de används på en yta används alla medgivandepolicyer som är kopplade till den marknadsföringsåtgärden för att ta hänsyn till kundernas önskemål.
