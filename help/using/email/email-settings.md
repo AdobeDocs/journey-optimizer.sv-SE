@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: aa71769719dce607e5392c9d8167f3afe3884d5f
+source-git-commit: 353337c7d85ccc6266d9e395fbc2f40b17fd09b2
 workflow-type: tm+mt
 source-wordcount: '2276'
 ht-degree: 1%
@@ -123,10 +123,7 @@ I **[!UICONTROL Header parameters]** anger du avsändarens namn och e-postadress
 
 * **[!UICONTROL Error email]**: Alla fel som genereras av Internet-leverantörer efter några dagar efter att e-post har levererats (asynkrona studsar) tas emot på den här adressen. Meddelanden och svar på frågor tas också emot på den här adressen.
 
-  >[!NOTE]
-  >
-  >Om du vill få meddelanden och svar på frågor på en viss e-postadress som inte har delegerats till Adobe måste du konfigurera en [framåtprocess](#forward-email). I så fall ska du se till att du har en manuell eller automatiserad lösning för att bearbeta e-postmeddelanden som landar i den här inkorgen.
-
+  Om du vill få meddelanden och svar på frågor på en viss e-postadress som inte har delegerats till Adobe måste du konfigurera en [framåtprocess](#forward-email). I så fall ska du se till att du har en manuell eller automatiserad lösning för att bearbeta e-postmeddelanden som landar i den här inkorgen.
 
 >[!CAUTION]
 >
