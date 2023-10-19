@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 28a4f04ebcda27213d3bac763fb9bea8ea4a0146
+source-git-commit: 37fda274025135f0577fd551971583e1b6d5c469
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3843'
 ht-degree: 14%
 
 ---
@@ -19,13 +19,12 @@ ht-degree: 14%
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
 
-
-
 ## Oktober 2023 {#oct-2023}
 
 * GIF har lagts till för att illustrera några nyckelfunktioner, som: [Innehållsmallar](../content-management/content-templates.md), [Fragment](../content-management/fragments.md), [Beräknade attribut](../audience/computed-attributes.md), [Direktreklam](../direct-mail/get-started-direct-mail.md), [Taggar](../start/search-filter-categorize.md#tags), [Optimeringsmodeller för beslutshantering](../offers/ranking/personalized-optimization-model.md), [API-utlösta kampanjer](../campaigns/api-triggered-campaigns.md)och [Innehållsexperiment](../campaigns/content-experiment.md).
 * Processen för att skapa scheman har uppdaterats för att återspegla de senaste uppdateringarna i användargränssnittet, som följer med Adobe Experience Platform-ändringar. [Läs mer](../audience/creating-test-profiles.md)
 * Garantier för beslutshantering har lagts till på sidan Guardsutkast och begränsningar. [Läs mer](../start/guardrails.md#decision-management)
+* Ett nytt avsnitt om hur du förhandsgranskar och testar innehåll har skapats. [Läs mer](../content-management/preview-test.md)
 
 ## September 2023 {#september-2023}
 
