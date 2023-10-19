@@ -10,10 +10,10 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 62f3836494ae40cb4676f3e62ad4c8de2daa3ed9
+source-git-commit: b5d489779b150bdd3b9d7382b5710f7430620233
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 2%
+source-wordcount: '414'
+ht-degree: 4%
 
 ---
 
@@ -30,24 +30,6 @@ Noteringarna nedan kan ändras utan föregående meddelande fram till releasedat
 ### Nya funktioner{#oct-2023-features}
 
 Den här versionen innehåller de nya funktionerna som listas nedan.
-
-
-<table>
-<thead>
-<tr>
-<th><strong>MMS (Multimedia Message Service) i SMS (Beta)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Med SMS-kanalen kan du nu förbättra kommunikationen genom att skicka MMS-meddelanden (Multimedia Message Service) som gör det möjligt att dela bilder, GIF eller videor med dina kunder. Observera att den här funktionen för närvarande endast är tillgänglig i Beta med Sinch.</p>
-<!--img src="assets/channel-reports.png"/-->
-<!--p>For more information, refer to the <a href="../in-app/get-started-in-app.md">detailed documentation</a>.</p-->
-</tr>
-</tbody>
-</table>
-
 
 <table>
 <thead>
@@ -66,7 +48,38 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Sammansatta målgrupper under resor</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan ni använda målgrupper som skapats i arbetsflöden för dispositioner på era resor för att rikta in er på kunderna. När en målgruppskomposition har publicerats och målgruppen sparats kan du använda aktiviteten Läs målgrupp för att välja den nya målgruppen på arbetsytan.</p>
+<!--img src="assets/channel-reports.png"/-->
+<p>Mer information finns i den <a href="../audience/get-started-audience-orchestration.md">detaljerade dokumentationen</a>.</p>
+</tr>
+</tbody>
+</table>
 
+
+<table>
+<thead>
+<tr>
+<th><strong>MMS (Multimedia Message Service) i SMS (Beta)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med SMS-kanalen kan du nu förbättra kommunikationen genom att skicka MMS-meddelanden (Multimedia Message Service) som gör det möjligt att dela bilder, GIF eller videor med dina kunder. Observera att den här funktionen för närvarande endast är tillgänglig i Beta med Sinch.</p>
+<!--img src="assets/channel-reports.png"/-->
+<!--p>For more information, refer to the <a href="../in-app/get-started-in-app.md">detailed documentation</a>.</p-->
+</tr>
+</tbody>
+</table>
 
 ### Förbättringar {#oct-2023-improvements}
 
@@ -75,7 +88,6 @@ Den här versionen innehåller de förbättringar som anges nedan.
 **Publiker**
 
 * Nu kan ni rikta in er på målgrupper som överförts från en CSV-fil till resor och kampanjer.
-* Nu kan ni inrikta er på målgrupper som är resultatet av arbetsflöden för disposition på era resor.
 
 **Spam-poäng för e-post**
 
