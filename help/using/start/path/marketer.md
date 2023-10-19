@@ -7,9 +7,9 @@ level: Beginner
 feature: Get Started
 Role: User
 exl-id: 34304142-3ee8-4081-94b9-e914968c75ba
-source-git-commit: c2f2dde40385f56ea86be15a5857fa9e5e2e2fed
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Se följande avsnitt för att konfigurera din första resa, lägga till erbjudan
 
    ![](../assets/offers-e2e-offers-displayed.png)
 
-1. **Testa och validera**. När innehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du infogade [personaliserat innehåll](../../personalization/personalize.md)kan du med hjälp av testprofildata kontrollera hur det här innehållet visas i meddelandet. Dessutom kan du **Litmus** konto till [!DNL Journey Optimizer] för att omedelbart förhandsgranska **e-poståtergivning** i vanliga e-postklienter. Sedan kan ni se till att e-postinnehållet ser bra ut och fungerar som det ska i alla inkorgar. Lär dig hur du testar och validerar meddelanden [i det här avsnittet](../../email/preview.md).
+1. **Testa och validera**. När innehållet har definierats kan du använda testprofiler för att förhandsgranska innehållet. Om du infogade [personaliserat innehåll](../../personalization/personalize.md)kan du med hjälp av testprofildata kontrollera hur det här innehållet visas i meddelandet. Dessutom kan du **Litmus** konto till [!DNL Journey Optimizer] för att omedelbart förhandsgranska **e-poståtergivning** i vanliga e-postklienter. Sedan kan ni se till att e-postinnehållet ser bra ut och fungerar som det ska i alla inkorgar. Lär dig hur du testar och validerar meddelanden [i det här avsnittet](../../content-management/preview-test.md).
 
 1. **Designa kundresor** för att leverera personaliserade, sammanhangsbaserade upplevelser. [!DNL Journey Optimizer] gör att du kan skapa användningsfall för realtidssamordning med kontextuella data lagrade i händelser eller datakällor. Utforma avancerade scenarier i flera steg med följande funktioner:
 

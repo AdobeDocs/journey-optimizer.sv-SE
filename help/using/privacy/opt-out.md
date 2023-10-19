@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c5bae757-a109-45f8-bf8d-182044a73cca
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 0%
@@ -97,7 +97,7 @@ Om en användare har:
 
 The [Uttrycksredigerare](../personalization/personalization-build-expressions.md) inte utför någon kontroll eller verkställighet av samtycke eftersom den inte deltar i meddelandeleveransen.
 
-Men användningen av högerbaserade åtkomstkontrollsetiketter gör det möjligt att begränsa vilka fält som kan användas för personalisering. The [förhandsgranska meddelande](../email/preview.md#preview-email) och [e-poståtergivningstjänst](../email/preview.md#email-rendering) maskerar de fält som identifieras med känslig information.
+Men användningen av högerbaserade åtkomstkontrollsetiketter gör det möjligt att begränsa vilka fält som kan användas för personalisering. The [förhandsgranska meddelande](../content-management/preview.md) och [e-poståtergivningstjänst](../content-management/rendering.md) maskerar de fält som identifieras med känslig information.
 
 >[!NOTE]
 >

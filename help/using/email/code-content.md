@@ -9,7 +9,7 @@ role: User
 level: Intermediate, Experienced
 keywords: kod, HTML, redigerare
 exl-id: 5fb79300-08c6-4c06-a77c-d0420aafca31
-source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 5%
@@ -44,7 +44,7 @@ Använd **[!UICONTROL Code your own]** läge för att importera obearbetat HTML 
    >
    >Den här åtgärden öppnar den valda mallen i e-postdesignern. Därifrån kan du antingen slutföra designen av ditt e-postmeddelande eller gå tillbaka till kodredigeraren med **[!UICONTROL Switch to code editor]** alternativ.
 
-1. Klicka på **[!UICONTROL Preview]** för att kontrollera meddelandets utformning och personalisering med testprofiler. [Läs mer](preview.md)
+1. Klicka på **[!UICONTROL Preview]** för att kontrollera meddelandets utformning och personalisering med testprofiler. [Läs mer](../content-management/preview-test.md)
 
    ![](assets/code-editor-preview.png)
 

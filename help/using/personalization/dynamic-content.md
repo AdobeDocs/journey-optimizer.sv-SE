@@ -9,7 +9,7 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, dynamiskt innehåll
 exl-id: 639ad7df-0d0f-4c9b-95d1-f3101267aae2
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Stegen för att lägga till dynamiskt innehåll i uttryck är följande:
 
    ![](assets/conditions-language-sample.png)
 
-1. När innehållet är klart kan du förhandsgranska de olika varianterna med **[!UICONTROL Simulate content]** -knappen. [Lär dig hur du testar och förhandsvisar meddelanden](../email/preview.md)
+1. När innehållet är klart kan du förhandsgranska de olika varianterna med **[!UICONTROL Simulate content]** -knappen. [Lär dig hur du testar och förhandsvisar meddelanden](../content-management/preview-test.md)
 
    ![](assets/conditions-preview.png)
 

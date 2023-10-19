@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, publicering
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: 53d2d09342979d8f277d1be9f2f72da067dc1763
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1734'
 ht-degree: 1%
 
 ---
@@ -237,7 +237,7 @@ När inställningarna för landningssidan och innehållet har definierats kan du
 
    ![](assets/lp_test-profiles.png)
 
-   Stegen för att välja testprofiler är desamma som när du testar ett meddelande. De beskrivs i [det här avsnittet](../email/preview.md#select-test-profiles).
+   Stegen för att välja testprofiler är desamma som när du testar ett meddelande. De beskrivs i [Innehållshantering](../content-management/test-profiles.md) -avsnitt.
 
 1. Välj **[!UICONTROL Open preview]** för att testa landningssidan.
 

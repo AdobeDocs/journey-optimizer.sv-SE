@@ -1,40 +1,31 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Förhandsgranska och testa SMS-meddelandet
-description: Lär dig hur du förhandsgranskar och testar SMS-meddelanden i Journey Optimizer
+title: Kontrollera och testa SMS-meddelandet
+description: Lär dig hur du kontrollerar och skickar SMS-meddelanden i Journey Optimizer
 feature: SMS
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 31c9b080-e334-4a11-af33-4c6f115c70a4
-source-git-commit: 03c714833930511fa734662b637d2416728073c2
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 3%
+source-wordcount: '255'
+ht-degree: 2%
 
 ---
 
-# Förhandsgranska och testa SMS-meddelandet {#send-sms}
+# Kontrollera och skicka SMS-meddelanden {#send-sms}
 
 ## Förhandsgranska ditt SMS {#preview-sms}
 
-När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du har infogat anpassat innehåll kan du kontrollera hur det här innehållet visas i meddelandet med hjälp av testprofildata.
+När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska innehållet. Om du har infogat anpassat innehåll kan du kontrollera hur det här innehållet visas i meddelandet med hjälp av testprofildata.
 
-1. Klicka på **[!UICONTROL Simulate content]**.
+Det gör du genom att klicka **[!UICONTROL Simulate content]** lägg sedan till en testprofil för att kontrollera meddelandet med testprofilsdata.
 
-1. Klicka **[!UICONTROL Manage test profiles]** för att lägga till en testprofil.
+![](assets/sms_preview_2.png)
 
-1. Hitta din testprofil med **[!UICONTROL Identity namespace]** och **[!UICONTROL Identity value]** fält. Klicka sedan på **[!UICONTROL Add profile]**.
-
-   ![](assets/sms_preview_3.png)
-
-1. När du har valt din testprofil kan du stänga **[!UICONTROL Add test profile]** -fönstret.
-
-1. Från **Förhandsgranska och testa** testprofildata läggs till i meddelandeinnehållet.
-
-   ![](assets/sms_preview_2.png)
-
+Detaljerad information om hur du väljer testprofiler och förhandsgranskar innehållet finns i [Innehållshantering](../content-management/preview-test.md) -avsnitt.
 
 ## Validera ditt SMS{#sms-validate}
 

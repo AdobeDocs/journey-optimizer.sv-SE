@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '977'
 ht-degree: 2%
 
 ---
@@ -108,7 +108,7 @@ Så snart utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll f�
 >title="Förgranska din kodbaserade upplevelse"
 >abstract="Få en simulering av hur er kodbaserade upplevelse kommer att se ut."
 
-Följ stegen nedan för att visa en förhandsgranskning av din ändrade kodbaserade upplevelse.
+Följ stegen nedan för att visa en förhandsgranskning av din ändrade kodbaserade upplevelse. Detaljerad information om hur du väljer testprofiler och förhandsgranskar innehållet finns i  [Förhandsgranska och testa din innehållssida](../content-management/preview-test.md).
 
 >[!CAUTION]
 >

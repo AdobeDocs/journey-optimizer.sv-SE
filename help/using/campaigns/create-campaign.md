@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: d4ecfecdc74c26890658d68d352c36b75f7c9039
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 2%
@@ -110,7 +110,7 @@ I **[!UICONTROL Actions]** skapar du meddelandet som ska skickas med kampanjen.
     </tr>
     </table>
 
-1. När innehållet är definierat kan du använda **[!UICONTROL Simulate content]** för att förhandsgranska och testa innehållet med testprofiler. [Läs mer](../email/preview.md).
+1. När innehållet är definierat kan du använda **[!UICONTROL Simulate content]** för att förhandsgranska och testa innehållet med testprofiler. [Läs mer](../content-management/preview-test.md).
 
 1. Klicka på pilen för att gå tillbaka till skärmen för att skapa kampanjer.
 

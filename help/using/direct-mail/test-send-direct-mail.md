@@ -1,40 +1,30 @@
 ---
-title: Testa och skicka ett direktmejl
-description: Lär dig hur du testar och skickar direktreklam i Journey Optimizer
+title: Kontrollera och skicka ett direktutskick
+description: Lär dig hur du kontrollerar och skickar direktreklam i Journey Optimizer
 feature: Direct Mail, Test Profiles, Preview
 topic: Content Management
 role: User
 level: Beginner
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: 69a19190-d2e2-4858-a1df-ffd008226e2b
-source-git-commit: 1cd5942617fdd29754e71a6fd8e4538d5d86dcd4
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '423'
 ht-degree: 1%
 
 ---
 
-# Testa och skicka ett direktmejl {#direct-mail-test-send}
+# Kontrollera och skicka ett direktutskick {#direct-mail-test-send}
 
 ## Förhandsgranska extraheringsfilen {#preview-dm}
 
 När innehållet i extraheringsfilen har definierats kan du använda testprofiler för att förhandsgranska det. Om du har infogat anpassat innehåll kan du kontrollera hur det här innehållet visas i meddelandet med hjälp av testprofildata.
 
-1. På konfigurationsskärmen för extraheringsfilinnehåll klickar du på **[!UICONTROL Simulate content]**.
+Det gör du genom att klicka **[!UICONTROL Simulate content]** lägg sedan till en testprofil för att kontrollera hur extraheringsfilens återgivning använder testprofildata.
 
-   ![](assets/direct-mail-simulate-button.png){width="800" align="center"}
+![](assets/direct-mail-simulate.png){width="800" align="center"}
 
-1. Klicka **[!UICONTROL Manage test profiles]** för att lägga till en testprofil.
-
-1. Hitta din testprofil med **[!UICONTROL Identity namespace]** och **[!UICONTROL Identity value]** fält. Klicka sedan på **[!UICONTROL Add profile]**.
-
-   ![](assets/direct-mail-test-profile.png){width="800" align="center"}
-
-1. När du har valt din testprofil kan du stänga **[!UICONTROL Add test profile]** -fönstret.
-
-1. Från **Förhandsgranska och testa** testprofildata läggs till i extraheringsfilens innehåll så att du kan förhandsgranska hur filen kommer att återges.
-
-   ![](assets/direct-mail-simulate.png){width="800" align="center"}
+Detaljerad information om hur du väljer testprofiler och förhandsgranskar innehållet finns i [Innehållshantering](../content-management/preview-test.md) -avsnitt.
 
 När filinnehållet är klart att skickas stänger du simuleringsskärmen och klickar sedan på **[!UICONTROL Review to activate]** -knappen.
 

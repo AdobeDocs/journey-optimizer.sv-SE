@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 327de13a-1c99-4d5e-86cf-8180fb7aaf23
-source-git-commit: f63f9d6ffd28d276f8a3dadbf8dc6b947b8331e7
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1063'
 ht-degree: 2%
 
 ---
@@ -164,21 +164,17 @@ Du kan nu använda den här mallen när du skapar [e-post](../email/get-started-
 
 Du kan testa återgivningen av alla mallar för e-postinnehåll, oavsett om de har skapats från grunden eller från ett e-postmeddelande. För att göra detta, följ nedanstående steg.
 
->[!CAUTION]
->
->Om du vill simulera innehåll måste du ha **[!DNL Manage Simulate Content]** behörighet som ingår i **[!DNL Content Library Manager]** produktprofil. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager)
-
 1. Få åtkomst till innehållsmalllistan via **[!UICONTROL Content Management]** > **[!UICONTROL Content Templates]** och välj en mall.
 
 1. Klicka **[!UICONTROL Edit content]** från **[!UICONTROL Template properties]**.
 
-1. Klicka **[!UICONTROL Simulate Content]** och välj en testprofil för att kontrollera e-poståtergivningen. Du kan välja skrivbordsvy eller mobilvy. [Läs mer](../email/preview.md)
+1. Klicka **[!UICONTROL Simulate Content]** och välj en testprofil för att kontrollera e-poståtergivningen. Du kan välja skrivbordsvy eller mobilvy. [Läs mer](../content-management/preview-test.md)
 
    ![](../email/assets/content-template-stimulate.png)
 
 1. Du kan skicka ett bevis för att testa ditt innehåll och få det godkänt av vissa interna användare innan du använder det under en resa eller i en kampanj.
 
-   * Klicka på **[!UICONTROL Send proof]** och följer stegen som beskrivs i [det här avsnittet](../email/preview.md#send-proofs).
+   * Klicka på **[!UICONTROL Send proof]** och följer stegen som beskrivs i [det här avsnittet](../content-management/proofs.md).
 
    * Innan du skickar korrekturet måste du välja [e-postyta](../configuration/channel-surfaces.md) som kommer att användas för att testa ditt innehåll.
 
@@ -186,7 +182,7 @@ Du kan testa återgivningen av alla mallar för e-postinnehåll, oavsett om de h
 
 >[!CAUTION]
 >
->Spårning stöds för närvarande inte vid testning av mallar för e-postinnehåll, vilket innebär att spårningshändelser, UTM-parametrar och länkar på landningssidor inte kommer att vara effektiva i korrektur som skickas från en mall. Testa spårning [använda innehållsmallen](../email/use-email-templates.md) i ett mejl och [skicka ett bevis](../email/preview.md#send-proofs).
+>Spårning stöds för närvarande inte vid testning av mallar för e-postinnehåll, vilket innebär att spårningshändelser, UTM-parametrar och länkar på landningssidor inte kommer att vara effektiva i korrektur som skickas från en mall. Testa spårning [använda innehållsmallen](../email/use-email-templates.md) i ett mejl och [skicka ett bevis](../content-management/preview-test.md#send-proofs).
 
 ## Instruktionsvideo {#video-templates}
 

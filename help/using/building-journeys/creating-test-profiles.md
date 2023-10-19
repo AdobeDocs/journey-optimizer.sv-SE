@@ -9,7 +9,7 @@ role: User, Data Engineer
 level: Intermediate
 keywords: testprofiler, testning, test, resa
 exl-id: bd5e053a-69eb-463b-add3-8b9168c8e280
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
 source-wordcount: '1322'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Skapa testprofiler {#create-test-profiles}
 
-Testprofiler krävs när du använder [testläge](../building-journeys/testing-the-journey.md) på en resa och [förhandsgranska och testa ditt innehåll](../email/preview.md).
+Testprofiler krävs när du använder [testläge](../building-journeys/testing-the-journey.md) på en resa och [förhandsgranska och testa ditt innehåll](../content-management/preview-test.md).
 
 Det finns flera sätt att skapa testprofiler. På den här sidan hittar du information om:
 

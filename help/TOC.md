@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 64c255eb6bb4712d79547ae47fd1dc6f8b1e9089
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1686'
 ht-degree: 33%
 
 ---
@@ -195,7 +195,6 @@ ht-degree: 33%
          + [Redigera bakgrundsinställningar](using/email/backgrounds.md)
          + [Justera lodrät justering och utfyllnad](using/email/alignment-and-padding.md)
          + [Lägg till textbundna formatattribut](using/email/inline-styling.md)
-   + [Förhandsgranska och testa din e-post](using/email/preview.md)
    + [Använd Experience Manager-mallar](using/email/aem-templates.md)
    + [Hantera e-postavanmälan](using/email/email-opt-out.md)
    + Konfigurera e-postkanal {#configure-email}
@@ -206,12 +205,12 @@ ht-degree: 33%
    + [Krav för kanaler i appen](using/in-app/inapp-configuration.md)
    + [Skapa ett meddelande i appen](using/in-app/create-in-app.md)
    + [Designa ditt innehåll i appen](using/in-app/design-in-app.md)
-   + [Testa och skicka meddelanden i appen](using/in-app/send-in-app.md)
+   + [Kontrollera och skicka meddelanden i appen](using/in-app/send-in-app.md)
 + Push-meddelandekanal{#push}
    + [Kom igång med push-meddelanden](using/push/get-started-push.md)
    + [Skapa ett push-meddelande](using/push/create-push.md)
    + [Utforma ett push-meddelande](using/push/design-push.md)
-   + [Skicka push-meddelanden](using/push/send-push.md)
+   + [Kontrollera och skicka push-meddelanden](using/push/send-push.md)
    + Konfigurera push-meddelanden{#push-config}
       + [Push-meddelandeflöde](using/push/push-gs.md)
       + [Konfigurera kanal för push-meddelanden](using/push/push-configuration.md)
@@ -219,14 +218,14 @@ ht-degree: 33%
 + SMS-kanal{#sms}
    + [Kom igång med SMS](using/sms/get-started-sms.md)
    + [Skapa ett SMS-meddelande](using/sms/create-sms.md)
-   + [Förhandsgranska och testa ditt SMS](using/sms/send-sms.md)
+   + [Kontrollera och skicka ditt SMS](using/sms/send-sms.md)
    + [Hantera SMS-avanmälan](using/sms/sms-opt-out.md)
    + [Konfigurera SMS-kanal](using/sms/sms-configuration.md)
    + [Konfigurera SMS-underdomäner](using/sms/sms-subdomains.md)
 + Direktutskick {#direct-mail}
    + [Kom igång med direktreklam](using/direct-mail/get-started-direct-mail.md)
    + [Skapa direktreklam](using/direct-mail/create-direct-mail.md)
-   + [Testa och skicka ett direktmejl](using/direct-mail/test-send-direct-mail.md)
+   + [Kontrollera och skicka ett direktutskick](using/direct-mail/test-send-direct-mail.md)
    + [Konfigurera direktreklam](using/direct-mail/direct-mail-configuration.md)
 + Webbkanal {#web}
    + [Kom igång med webbkanalen](using/web/get-started-web.md)
@@ -258,14 +257,15 @@ ht-degree: 33%
       + [Konfigurera underdomäner för landningssidor](using/landing-pages/lp-subdomains.md)
       + [Definiera förinställningar för landningssidor](using/landing-pages/lp-presets.md)
 + Innehållshantering {#content-management}
-   + [Arbeta med Assets Essentials](using/content-management/assets-essentials.md)
-   + [Arbeta med Adobe Stock](using/content-management/stock.md)
    + Arbeta med Content Assist{#content-assistant}
       + [Kom igång med Content Assist](using/content-management/gs-generative.md)
       + [Skapa innehåll](using/content-management/generative-content.md)
       + [Bildgenerering](using/content-management/generative-image.md)
    + Arbeta med flerspråkigt innehåll{#content-multilingual}
       + [Skapa flerspråkigt innehåll](using/content-management/multilingual-manual.md)
+   + Resurser/bilder {#assets-images}
+      + [Arbeta med Assets Essentials](using/content-management/assets-essentials.md)
+      + [Arbeta med Adobe Stock](using/content-management/stock.md)
    + Personalisering {#personalization}
       + [Kom igång med personalisering](using/personalization/personalize.md)
       + [Personaliseringskontexter](using/personalization/personalization-contexts.md)
@@ -297,6 +297,12 @@ ht-degree: 33%
       + [Kom igång med dynamiskt innehåll](using/personalization/get-started-dynamic-content.md)
       + [Skapa villkorsregler](using/personalization/create-conditions.md)
       + [Skapa dynamiskt innehåll](using/personalization/dynamic-content.md)
+   + Förhandsgranska och testa ditt innehåll {#preview-test}
+      + [Kom igång med förhandsgranskning och test](using/content-management/preview-test.md)
+      + [Välj testprofiler](using/content-management/test-profiles.md)
+      + [Förhandsgranska ditt innehåll](using/content-management/preview.md)
+      + [Skicka e-postkorrektur](using/content-management/proofs.md)
+      + [Testa e-poståtergivning](using/content-management/rendering.md)
 + Målgrupper, profiler och identitet{#audiences-profiles-identities}
    + Målgrupper {#audiences}
       + [Kom igång med målgrupper](using/audience/about-audiences.md)

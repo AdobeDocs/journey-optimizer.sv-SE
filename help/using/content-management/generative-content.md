@@ -11,7 +11,7 @@ badge: label="Beta" type="Informative"
 hide: true
 hidefromtoc: true
 exl-id: 1b3930ff-f7b0-43f0-bcf2-5c3de0a88b25
-source-git-commit: b524d0026f32eaf2d7421bb85188d01199cbf843
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 1%
@@ -80,7 +80,7 @@ I det här exemplet får du lära dig hur du skickar ett engagerande push-meddel
 
    ![](assets/gen-ai-title-7.png)
 
-1. När du har definierat meddelandeinnehållet klickar du på **[!UICONTROL Simulate content]** för att styra återgivningen och kontrollera personaliseringsinställningarna med testprofiler. [Läs mer](../email/preview.md)
+1. När du har definierat meddelandeinnehållet klickar du på **[!UICONTROL Simulate content]** för att styra återgivningen och kontrollera personaliseringsinställningarna med testprofiler. [Läs mer](../content-management/preview-test.md)
 
 1. När ert innehållsexperiment är klart kan ni från kampanjsammanfattningssidan klicka på **[!UICONTROL Review to activate]** för att visa en sammanfattning av kampanjen. Varningar visas om någon parameter är felaktig eller saknas.
 

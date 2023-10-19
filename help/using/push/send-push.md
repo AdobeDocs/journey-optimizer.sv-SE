@@ -1,44 +1,33 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Förhandsgranska och testa ditt push-meddelande
-description: Lär dig hur du förhandsgranskar och testar push-meddelanden i Journey Optimizer
+title: Kontrollera och skicka push-meddelanden
+description: Lär dig hur du kontrollerar och skickar push-meddelanden i Journey Optimizer
 feature: Push
 topic: Content Management
 role: User
 level: Beginner
 exl-id: aad4e08a-3369-454d-9e32-974347a3b393
-source-git-commit: 03c714833930511fa734662b637d2416728073c2
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '331'
 ht-degree: 2%
 
 ---
 
-# Förhandsgranska och testa ditt push-meddelande {#send-push}
+# Kontrollera och skicka push-meddelanden {#send-push}
 
 ## Förhandsgranska ditt push-meddelande {#preview-push}
 
-När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska och testa det. Om du har infogat anpassat innehåll kan du kontrollera hur det här innehållet visas i meddelandet med hjälp av testprofildata.
+När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska innehållet. Om du har infogat anpassat innehåll kan du kontrollera hur det här innehållet visas i meddelandet med hjälp av testprofildata.
 
-1. Klicka på **[!UICONTROL Simulate content]**.
+Det gör du genom att klicka **[!UICONTROL Simulate content]** lägg sedan till en testprofil. Du kan sedan välja vilken typ av enhet du vill förhandsgranska innehållet på: **[!UICONTROL iOS]** eller **[!UICONTROL Android]**.
 
-1. Klicka **[!UICONTROL Manage test profiles]** för att lägga till en testprofil.
+![](assets/push_preview_3.png)
 
-1. Hitta din testprofil med **[!UICONTROL Identity namespace]** och **[!UICONTROL Identity value]** fält. Klicka sedan på **[!UICONTROL Add profile]**.
-
-   ![](assets/push_preview_1.png)
-
-1. När du har valt din testprofil kan du stänga **[!UICONTROL Add test profile]** -fönstret.
-
-1. Från **Förhandsgranska och testa** testprofildata läggs till i meddelandeinnehållet.
-
-   Välj den typ av enhet som du vill förhandsgranska innehåll på: **[!UICONTROL iOS]** eller **[!UICONTROL Android]**.
-
-   ![](assets/push_preview_3.png)
+Detaljerad information om hur du väljer testprofiler och förhandsgranskar innehållet finns i [Innehållshantering](../content-management/preview-test.md) -avsnitt.
 
 ## Validera ditt push-meddelande {#push-validate}
-
 
 Du måste kontrollera varningar i den övre delen av redigeraren. Vissa av dem är enkla varningar, men andra kan hindra dig från att skicka meddelandet. Två typer av varningar kan inträffa: varningar och fel.
 

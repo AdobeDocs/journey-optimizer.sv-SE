@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: tillåtelselista, lista, säker, konfiguration
 exl-id: 70ab8f57-c132-4de1-847b-11f0ab14f422
-source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 2%
@@ -74,7 +74,7 @@ Logiken i tillåtelselista gäller när funktionen är aktiv. Läs mer i [det h�
 
 >[!NOTE]
 >
->När den är aktiverad respekteras funktionen tillåtelselista vid körning av resor, men också vid testning av meddelanden med [korrektur](../email/preview.md#send-proofs) och testa resor med [testläge](../building-journeys/testing-the-journey.md).
+>När den är aktiverad respekteras funktionen tillåtelselista vid körning av resor, men också vid testning av meddelanden med [korrektur](../content-management/proofs.md) och testa resor med [testläge](../building-journeys/testing-the-journey.md).
 
 ## Inaktivera tillåtelselista {#deactivate-allow-list}
 

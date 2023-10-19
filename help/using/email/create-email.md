@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: skapa, e-post, start, resa, kampanj
 exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
-source-git-commit: cd8ce89dd6ed9c60d41e9f83ccfb080bdb4a19f9
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 3%
+source-wordcount: '843'
+ht-degree: 2%
 
 ---
 
@@ -146,11 +146,15 @@ Två typer av varningar kan inträffa:
 >
 >För att kunna testa eller aktivera resan/kampanjen med e-postmeddelandet måste du lösa alla **fel** varningar.
 
-## Förhandsgranska och skicka e-post
+## Kontrollera och skicka din e-post
 
-När meddelandeinnehållet har definierats kan du förhandsgranska det för att kontrollera återgivningen av ditt e-postmeddelande och kontrollera personaliseringsinställningarna med testprofiler. [Läs mer](preview.md)
+När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska det, skicka korrektur och kontrollera återgivningen i vanliga dator-, mobil- och webbaserade klienter. Om du har infogat anpassat innehåll kan du kontrollera hur det här innehållet visas i meddelandet med hjälp av testprofildata.
+
+Det gör du genom att klicka **[!UICONTROL Simulate content]** lägg sedan till en testprofil för att kontrollera meddelandet med testprofilsdata.
 
 ![](assets/email_designer_edit_simulate.png)
+
+Detaljerad information om hur du väljer testprofiler och förhandsgranskar innehållet finns i [Innehållshantering](../content-management/preview-test.md) -avsnitt.
 
 När din e-post är klar slutför du konfigurationen av [resa](../building-journeys/journey-gs.md) eller [kampanj](../campaigns/create-campaign.md)och aktivera det för att skicka meddelandet.
 

@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: erbjudanden, beslut, e-post, personalisering, beslut
 exl-id: 1e648eca-b5ca-4767-b45d-c179243e347f
-source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -74,10 +74,6 @@ Du kan förhandsgranska de olika erbjudanden som ingår i det beslut som lagts t
 ![](assets/deliver-offer-preview.png)
 
 Följ stegen nedan för att visa de olika erbjudanden som ingår i beslutet med en kundprofil.
-
->[!NOTE]
->
->Du måste ha testprofiler tillgängliga för att kunna förhandsgranska dina meddelanden. Lär dig hur [skapa testprofiler](../audience/creating-test-profiles.md).
 
 1. Välj de testprofiler som ska användas för att förhandsgranska erbjudandet:
 

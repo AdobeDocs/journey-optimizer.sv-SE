@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 keywords: länkar, spåra, övervaka, e-post
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 1%
@@ -135,7 +135,7 @@ När e-postmeddelandet har skickats visas innehållet i e-postmeddelandet i sin 
 
 >[!NOTE]
 >
->I [bevis](preview.md#send-proofs) som skickas till testprofilerna är länken till spegelsidan inte aktiv. Den aktiveras endast i de slutliga meddelandena.
+>I [bevis](../content-management/proofs.md) som skickas till testprofilerna är länken till spegelsidan inte aktiv. Den aktiveras endast i de slutliga meddelandena.
 
 Kvarhållningsperioden för en spegelsida är 60 dagar. Efter den fördröjningen är spegelsidan inte längre tillgänglig.
 
@@ -186,4 +186,4 @@ När e-postmeddelandet skickas läggs den här parametern automatiskt till i slu
 
 >[!NOTE]
 >
->Om du vill verifiera den slutliga URL:en kan du [skicka ett bevis](preview.md#send-proofs) och klicka på länken i e-postmeddelandet när du har fått korrekturet. URL:en ska visa spårningsparametern. I exemplet ovan kommer den slutliga URL:en att vara: <https://luma.enablementadobe.com/content/luma/us/en.html?utm_contact=profile.userAccount.contactDetails.homePhone.number>
+>Om du vill verifiera den slutliga URL:en kan du [skicka ett bevis](../content-management/preview-test.md#send-proofs) och klicka på länken i e-postmeddelandet när du har fått korrekturet. URL:en ska visa spårningsparametern. I exemplet ovan kommer den slutliga URL:en att vara: <https://luma.enablementadobe.com/content/luma/us/en.html?utm_contact=profile.userAccount.contactDetails.homePhone.number>

@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 0e43be98-f471-4860-be84-8f99ab93e983
-source-git-commit: 28a4f04ebcda27213d3bac763fb9bea8ea4a0146
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
 source-wordcount: '2065'
 ht-degree: 9%
@@ -275,7 +275,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 
 **Innehållsdesign**
 
-* **Bakgrund** - Bakgrundsbilder stöds nu i direktförhandsvisning. [Läs mer](../email/preview.md)
+* **Bakgrund** - Bakgrundsbilder stöds nu i direktförhandsvisning. [Läs mer](../content-management/preview-test.md)
 * **Länk för avanmälan med ett klick** - Du kan infoga en ny typ av länk i ditt e-postinnehåll: **Avanmäl dig** kan man säga upp prenumerationen från att ta emot meddelanden med bara ett klick, utan att behöva omdirigeras till en landningssida för att bekräfta avanmälan. [Läs mer](../privacy/opt-out.md#one-click-opt-out-link)
 
 **Personalisering**
@@ -350,9 +350,9 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 
 **Förhandsgranska och testa**
 
-* Identitet och namnutrymme visas nu i **[!UICONTROL Preview]** skärm. [Läs mer](../email/preview.md#preview-your-messages)
+* Identitet och namnutrymme visas nu i **[!UICONTROL Preview]** skärm. [Läs mer](../content-management/preview-test.md#preview-your-messages)
 * Antalet testmeddelanden för korrektur är nu begränsat till 10.
-* Tecken tillåts för **Subject line prefix** i korrektur är nu begränsade. [Läs mer](../email/preview.md#send-proofs)
+* Tecken tillåts för **Subject line prefix** i korrektur är nu begränsade. [Läs mer](../content-management/preview-test.md#send-proofs)
 
 **Redigerare för anpassningsuttryck**
 

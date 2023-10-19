@@ -11,7 +11,7 @@ role: User
 level: Beginner
 badge: label="Beta" type="Informative"
 exl-id: e4935129-c1cb-41b1-b84d-cd419053c303
-source-git-commit: dd463d36550b53faaffca90691550278498c862a
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 1%
@@ -109,7 +109,7 @@ När mallen Experience Manager är tillgänglig i Journey Optimizer som innehål
 
 1. Om du har lagt till anpassat innehåll i din Experience Manager-mall klickar du på **[!UICONTROL Simulate Content]** om du vill förhandsgranska hur det kommer att se ut i meddelandet med testprofiler.
 
-[Läs mer om förhandsgranskning och testprofiler](../email/preview.md)
+[Läs mer om förhandsgranskning och testprofiler](../content-management/preview-test.md)
 
    ![](assets/aem_ajo_6.png)
 

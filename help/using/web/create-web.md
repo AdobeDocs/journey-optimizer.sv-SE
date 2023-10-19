@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: e28c038b-49ed-4685-bfe6-514116eb0711
-source-git-commit: ec071392cec9933bb73ae9ab20618292b6089061
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 3%
+source-wordcount: '800'
+ht-degree: 2%
 
 ---
 
@@ -86,28 +86,19 @@ Mer information om hur du konfigurerar en kampanj finns i [den här sidan](../ca
 >title="Förhandsgranska din webbupplevelse"
 >abstract="Få en simulering av hur webbupplevelsen kommer att se ut."
 
-En gång [skapade din webbupplevelse](edit-web-content.md) med webbdesignern kan du förhandsgranska de ändrade webbsidorna innan du aktiverar kampanjen. För att göra detta, följ nedanstående steg.
+En gång [skapade din webbupplevelse](edit-web-content.md) med webbdesignern kan du använda testprofiler för att förhandsgranska de ändrade webbsidorna. Om du har infogat anpassat innehåll kan du kontrollera hur det här innehållet visas med hjälp av testprofilsdata.
 
->[!CAUTION]
+Det gör du genom att klicka **[!UICONTROL Simulate content]** från antingen webbkampanjens redigeringsskärm eller webbdesignern och lägg sedan till en testprofil för att kontrollera din webbsida med hjälp av testprofildata.
+
+![](assets/web-designer-preview.png)
+
+Du kan även öppna den i standardwebbläsaren eller kopiera test-URL:en och klistra in den i valfri webbläsare. På så sätt kan ni dela länken med teamet och intressenter som kan förhandsgranska den nya webbupplevelsen i vilken webbläsare som helst innan kampanjen blir aktiv.
+
+>[!NOTE]
 >
->Du måste ha testprofiler tillgängliga för att simulera vilka erbjudanden som ska levereras till dem. Lär dig hur [skapa testprofiler](../audience/creating-test-profiles.md).
+>När du kopierar test-URL:en är det innehåll som visas anpassat för testprofilen som användes när innehållssimuleringen genererades i [!DNL Journey Optimizer].
 
-1. Välj antingen webbkampanjens redigeringsfönster eller webbdesignern **[!UICONTROL Simulate content]**.
-
-   <!--![](assets/web-designer-simulate.png)-->
-
-   ![](assets/web-campaign-simulate.png)
-
-1. Klicka **[!UICONTROL Manage test profiles]** om du vill välja en eller flera testprofiler.
-1. En förhandsgranskning av den ändrade webbsidan visas.
-
-   ![](assets/web-designer-preview.png)
-
-1. Du kan även öppna den i standardwebbläsaren eller kopiera test-URL:en och klistra in den i valfri webbläsare. På så sätt kan ni dela länken med teamet och intressenter som kan förhandsgranska den nya webbupplevelsen i vilken webbläsare som helst innan kampanjen blir aktiv.
-
-   >[!NOTE]
-   >
-   >När du kopierar test-URL:en är det innehåll som visas anpassat för testprofilen som användes när innehållssimuleringen genererades i [!DNL Journey Optimizer].
+Detaljerad information om hur du väljer testprofiler och förhandsgranskar innehållet finns i [Innehållshantering](../content-management/preview-test.md) -avsnitt.
 
 ## Aktivera webbkampanjen {#activate-web-campaign}
 

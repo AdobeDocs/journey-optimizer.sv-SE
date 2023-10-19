@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: 1490ac2efd39c6bf9b6ca97e682750463e9f054d
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 1%
@@ -154,7 +154,7 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 
    ![](assets/content_experiment_19.png)
 
-1. När meddelandeinnehållet har definierats klickar du på **[!UICONTROL Simulate content]** för att styra återgivningen av leveransen och kontrollera personaliseringsinställningarna med testprofiler. [Läs mer](../email/preview.md)
+1. När meddelandeinnehållet har definierats klickar du på **[!UICONTROL Simulate content]** för att styra återgivningen av leveransen och kontrollera personaliseringsinställningarna med testprofiler. [Läs mer](../content-management/preview-test.md)
 
 1. När ditt innehållsexperiment är klart kan du klicka på **[!UICONTROL Review to activate]** för att visa en sammanfattning av kampanjen. Varningar visas om någon parameter är felaktig eller saknas.
 

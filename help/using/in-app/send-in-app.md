@@ -1,20 +1,20 @@
 ---
-title: Testa och skicka meddelanden i appen
-description: Lär dig hur du testar och skickar ett meddelande i appen i Journey Optimizer
+title: Kontrollera och skicka meddelanden i appen
+description: Lär dig hur du kontrollerar och skickar ett meddelande i appen i Journey Optimizer
 feature: In App
 topic: Content Management
 role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: 9e9c235a-b78c-4669-af82-822b6f1e6fca
-source-git-commit: 03c714833930511fa734662b637d2416728073c2
+source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 4%
 
 ---
 
-# Testa och skicka meddelanden i appen {#create-in-app}
+# Kontrollera och skicka meddelanden i appen {#create-in-app}
 
 ## Förhandsgranska på enhet {#preview-device}
 
