@@ -10,10 +10,10 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: bf85321377568aae1d28de8cd494d91d9eac601e
+source-git-commit: 1c7c854d9a9a316890380d9ff84de1d6b739b006
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 4%
+source-wordcount: '364'
+ht-degree: 5%
 
 ---
 
@@ -48,21 +48,21 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 </tbody>
 </table>
 
-<table>
+<!-- table>
 <thead>
 <tr>
-<th><strong>Sammansatta målgrupper under resor</strong><br/></th>
+<th><strong>Composed audiences in journeys</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Nu kan ni använda målgrupper som skapats i arbetsflöden för dispositioner på era resor för att rikta in er på kunderna. När en målgruppskomposition har publicerats och målgruppen sparats kan du använda aktiviteten Läs målgrupp för att välja den nya målgruppen på arbetsytan.</p>
+<p>You can now use audiences created in composition workflows in your journeys to target customers. Once an audience composition is published, and the audience saved, use a Read Audience activity to select this new audience in your journey canvas.</p>
 <!--img src="assets/channel-reports.png"/-->
 <p>Mer information finns i den <a href="../audience/get-started-audience-orchestration.md">detaljerade dokumentationen</a>.</p>
 </tr>
 </tbody>
-</table>
+&lt;/table --&gt;
 
 
 <table>
