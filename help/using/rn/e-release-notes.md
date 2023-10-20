@@ -10,10 +10,10 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 70e507337c3eef1718de21c3c0199bda1b92db69
+source-git-commit: be1d0fef5e10073553a7437671820314923e0f25
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 4%
+source-wordcount: '296'
+ht-degree: 5%
 
 ---
 
@@ -63,23 +63,6 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 </tr>
 </tbody>
 &lt;/table --&gt;
-
-
-<table>
-<thead>
-<tr>
-<th><strong>MMS (Multimedia Message Service) i SMS (Beta)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Med SMS-kanalen kan du nu förbättra kommunikationen genom att skicka MMS-meddelanden (Multimedia Message Service) som gör det möjligt att dela bilder, GIF eller videor med dina kunder. Observera att den här funktionen för närvarande endast är tillgänglig i Beta med Sinch.</p>
-<!--img src="assets/channel-reports.png"/-->
-<!--p>For more information, refer to the <a href="../in-app/get-started-in-app.md">detailed documentation</a>.</p-->
-</tr>
-</tbody>
-</table>
 
 ### Förbättringar {#oct-2023-improvements}
 
