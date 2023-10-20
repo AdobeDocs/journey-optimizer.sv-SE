@@ -10,9 +10,9 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: b5d489779b150bdd3b9d7382b5710f7430620233
+source-git-commit: bf85321377568aae1d28de8cd494d91d9eac601e
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '406'
 ht-degree: 4%
 
 ---
@@ -40,7 +40,7 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <tbody>
 <tr>
 <td>
-<p>Du kan använda sandlådeverktygen i Adobe Journey Optimizer för att markera olika objekt och exportera dem till ett paket. Ett paket kan bestå av ett enda objekt, flera objekt eller en hel sandlåda. Alla objekt som ingår i ett paket måste komma från samma sandlåda.</p>
+<p>Med sandlådeverktygen kan du kopiera objekt över flera sandlådor genom att utnyttja export och import av paket. Ett paket kan bestå av ett eller flera objekt. Alla objekt som ingår i ett paket måste komma från samma sandlåda.</p>
 <!--img src="../data/assets/dataset-export-setup.png"-->
 <!--p>For more information, refer to the <a href="../audience/get-started-audience-orchestration.md">detailed documentation</a>.</p-->
 </td>
