@@ -9,14 +9,27 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: 1b73b398-050a-40bb-a8ae-1c66e3e26ce8
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: f92e3882d3b5e515e672a4af8e787813d4d939ce
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '772'
 ht-degree: 1%
 
 ---
 
 # Skapa urvalsstrategier {#selection-strategies}
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_config_strategies"
+>title="Definiera era urvalsstrategier"
+>abstract="En urvalsstrategi är en återanvändbar artikel, som består av en samling som är kopplad till en kvalificeringsbegränsning och en rangordningsmetod för att avgöra vilka erbjudanden som ska visas när de väljs ut i en beslutspolicy."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/experience-decisioning/create-decision.html" text="Skapa beslutsprofiler"
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_strategy_eligibility"
+>title="Begränsa giltiga profiler"
+>abstract="Du kan begränsa urvalet av erbjudanden för den här urvalsstrategin. Som standard är alla profiler berättigade, men du kan använda målgrupper eller regler för att begränsa urvalet av erbjudanden till enbart specifika profiler."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences.html" text="Använda målgrupper"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/experience-decisioning/selection/rules.html" text="Använd beslutsregler"
 
 >[!BEGINSHADEBOX]
 
@@ -69,7 +82,7 @@ Följ stegen nedan för att skapa en urvalsstrategi.
 
    ![](assets/strategy-create-screen.png)
 
-1. Välj erbjudandet [samling](collections.md) som innehåller de erbjudanden som ska övervägas.
+1. Välj [samling](collections.md) som innehåller de erbjudanden som ska övervägas.
 
 1. Använd **[!UICONTROL Eligibility]** fält för att begränsa urvalet av erbjudanden för den här urvalsstrategin.
 
@@ -90,6 +103,12 @@ Följ stegen nedan för att skapa en urvalsstrategi.
 1. Klicka på **[!UICONTROL Create]**. Den är nu klar att användas i en [beslut](create-decision.md)
 
 ## Välj en rangordningsmetod {#select-ranking-method}
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_strategy_ranking"
+>title="Definiera rangordnade erbjudanden"
+>abstract="Om flera erbjudanden är berättigade till en viss urvalsstrategi väljer du den metod som ska välja det bästa erbjudandet för varje profil när du skapar en urvalsstrategi: prioritet eller rankningsformel."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/experience-decisioning/create-decision.html" text="Skapa beslutsprofiler"
 
 Om flera erbjudanden är berättigade till en viss urvalsstrategi kan du välja den metod som ska användas för att välja det bästa erbjudandet för varje profil när du skapar en urvalsstrategi. Du kan rangordna erbjudanden genom att:
 

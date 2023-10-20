@@ -9,14 +9,19 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: c1d69bc9-4486-4037-b218-f4f704b2ba9c
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: f92e3882d3b5e515e672a4af8e787813d4d939ce
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 1%
+source-wordcount: '226'
+ht-degree: 2%
 
 ---
 
 # Rankningsmetoder {#rankings}
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_config_formulas"
+>title="Skapa rankningsformler"
+>abstract="Med formler kan du definiera regler som bestämmer vilket objekt som ska presenteras först, i stället för att ta hänsyn till objektets prioritetspoäng. När en rangordningsmetod har skapats kan du tilldela den till en beslutsstrategi för att definiera vilka objekt som ska väljas först."
 
 >[!BEGINSHADEBOX]
 

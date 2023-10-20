@@ -9,14 +9,29 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: 099d1439-34f7-47fe-9181-0e9ce2032a01
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: f92e3882d3b5e515e672a4af8e787813d4d939ce
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 3%
+source-wordcount: '387'
+ht-degree: 2%
 
 ---
 
 # Samlingar {#collections}
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_item_collections"
+>title="Skapa samlingar"
+>abstract="Med samlingar kan du kategorisera och gruppera dina beslutsobjekt enligt dina önskemål. Dessa kategorier skapas genom att regler som utnyttjar attributen för beslutsposter skapas."
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_item_collection_rules"
+>title="Definiera regler för din samling"
+>abstract="Lägg till en eller flera regler för att bestämma vilka objekt som ska inkluderas i samlingen. Välj ett objektattribut att använda som villkor. Markera önskad operator och ange värdet som ska filtreras. Lägg till så många regler som behövs."
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_strategy_collection"
+>title="Välj en samling"
+>abstract="Välj den samling som innehåller de erbjudanden som ska övervägas. Det här steget är obligatoriskt när du skapar en urvalsstrategi. Med samlingar kan du kategorisera och gruppera dina beslutsobjekt enligt dina önskemål. Du kan till exempel skapa en samling som innehåller alla beslutsobjekt med värdet Yoga i det anpassade attributet Kategori."
 
 >[!BEGINSHADEBOX]
 

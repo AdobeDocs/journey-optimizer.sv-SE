@@ -9,14 +9,19 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: 033a11b8-c848-4e4a-b6f0-62fa0a2152bf
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: f92e3882d3b5e515e672a4af8e787813d4d939ce
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '311'
 ht-degree: 4%
 
 ---
 
 # Beslutsregler {#rules}
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_config_rules"
+>title="Skapa beslutsregler"
+>abstract="Med beslutsregler kan ni definiera målgruppen för beslutsposter genom att tillämpa begränsningar, antingen direkt på beslutspostnivå eller inom en viss urvalsstrategi. På så sätt kan du exakt kontrollera vilka objekt som ska presenteras för vem."
 
 >[!BEGINSHADEBOX]
 

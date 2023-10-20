@@ -9,14 +9,20 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: 5c866814-d79a-4a49-bfcb-7a767d802e90
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: f92e3882d3b5e515e672a4af8e787813d4d939ce
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
 
 # Beslutsobjekt {#items}
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_items"
+>title="Hantera beslutsobjekt"
+>abstract="Med Journey Optimizer kan ni skapa marknadsföringserbjudanden, så kallade beslutsobjekt, som ni kan skapa och ordna i en centraliserad katalog och samlingar. För närvarande konsolideras alla skapade beslutsobjekt i en enda katalog för erbjudanden. Från den här skärmen kan du även komma åt katalogschemat via **Redigera schema** och skapa anpassade attribut för dina beslutsobjekt."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/experience-decisioning/decision-items/catalogs.html" text="Konfigurera objektkatalogen"
 
 >[!BEGINSHADEBOX]
 
@@ -40,6 +46,24 @@ Med Journey Optimizer kan ni skapa marknadsföringserbjudanden, så kallade besl
 Kontrollera att du har skapat en **beslutsregel** om du vill ange villkor för att bestämma vem beslutsobjektet kan visas för. [Lär dig hur du skapar beslutsregler](rules.md).
 
 ## Skapa ditt första beslutsobjekt
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_item_priority"
+>title="Definiera beslutsobjektets prioritet"
+>abstract="Om en profil kvalificerar för flera artiklar kan prioriteten jämföra det här beslutsobjektet med andra. En högre prioritet ger objektet företräde framför andra."
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_item_custom_attributes"
+>title="Definiera anpassade attribut"
+>abstract="Anpassade attribut är specifika attribut som är anpassade efter dina behov och som du kan tilldela till ett beslutsobjekt. De skapas i beslutsobjektens katalogschema. Det här avsnittet visas bara om du har lagt till minst ett anpassat attribut i katalogschemat."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/experience-decisioning/decision-items/catalogs.html" text="Konfigurera objektkatalogen"
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_item_constraints"
+>title="Lägga till målgrupper eller beslutsregler"
+>abstract="Som standard är alla profiler berättigade att ta emot beslutsobjektet, men du kan använda målgrupper eller regler för att begränsa objektet till enbart vissa profiler."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences.html" text="Använda målgrupper"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/experience-decisioning/selection/rules.html" text="Använd beslutsregler"
 
 Så här skapar du ett beslutsobjekt:
 
