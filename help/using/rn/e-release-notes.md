@@ -10,10 +10,10 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 1c7c854d9a9a316890380d9ff84de1d6b739b006
+source-git-commit: 70e507337c3eef1718de21c3c0199bda1b92db69
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 5%
+source-wordcount: '343'
+ht-degree: 4%
 
 ---
 
@@ -104,10 +104,6 @@ Den här versionen innehåller de förbättringar som anges nedan.
 **Resor**
 
 * Den maximala varaktighet som du kan definiera i aktiviteten Vänta är nu 29 dagar i stället för 30.
-
-**Landningssidor**
-
-* När du använder landningssidans formulärkomponent kan du nu lägga till ett e-postfält med egna specifika alternativ.
 
 **Medgivande i kanalkonfiguration**
 
