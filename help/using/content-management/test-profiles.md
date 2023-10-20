@@ -4,14 +4,19 @@ description: Lär dig hur du väljer testprofiler för att förhandsgranska och 
 feature: Preview, Proofs
 role: User
 level: Beginner
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+source-git-commit: 6da7f4c8caa5a0a6cfda1e90d0c6cd4787c6afca
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
 
 # Välj testprofiler {#select-test-profiles}
+
+>[!CONTEXTUALHELP]
+>id="ajo_preview_test_profiles"
+>title="Använd testprofiler för att kontrollera innehållet"
+>abstract="Använd testprofiler för att förhandsgranska och testa innehållet. Om du har lagt till anpassade fält kan du kontrollera hur de visas med testprofildata."
 
 Innan du förhandsgranskar eller testar innehållet måste du först välja testprofiler, som är ytterligare mottagare som inte matchar de definierade målinriktningsvillkoren. [Lär dig skapa testprofiler](../audience/creating-test-profiles.md)
 

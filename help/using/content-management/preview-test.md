@@ -4,10 +4,10 @@ description: Lär dig hur du förhandsgranskar och testar innehåll.
 feature: Preview, Proofs
 role: User
 level: Beginner
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+source-git-commit: 6da7f4c8caa5a0a6cfda1e90d0c6cd4787c6afca
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 1%
+source-wordcount: '306'
+ht-degree: 0%
 
 ---
 
@@ -15,8 +15,13 @@ ht-degree: 1%
 
 >[!CONTEXTUALHELP]
 >id="ac_preview_testprofiles"
->title="Förhandsgranska och testa dina meddelanden"
->abstract="När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska innehållet."
+>title="Kontrollera hur innehållet renderar"
+>abstract="När innehållet har definierats kan du använda testprofiler för att förhandsgranska det och kontrollera om återgivningen är korrekt enligt den kanal du använder."
+
+>[!CONTEXTUALHELP]
+>id="ajo_preview_simulate"
+>title="Kontrollera hur innehållet renderar"
+>abstract="När innehållet har definierats kan du förhandsgranska det och kontrollera om återgivningen är korrekt enligt den kanal du använder."
 
 ## Förhandsgranska och testa innehåll {#about}
 
