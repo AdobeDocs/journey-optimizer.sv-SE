@@ -10,10 +10,10 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: be1d0fef5e10073553a7437671820314923e0f25
+source-git-commit: 1b37da28e6dbb03c8c76dd9a6637dfd95447eb7e
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 5%
+source-wordcount: '371'
+ht-degree: 2%
 
 ---
 
@@ -58,11 +58,27 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <tr>
 <td>
 <p>You can now use audiences created in composition workflows in your journeys to target customers. Once an audience composition is published, and the audience saved, use a Read Audience activity to select this new audience in your journey canvas.</p>
-<!--img src="assets/channel-reports.png"/-->
-<p>Mer information finns i den <a href="../audience/get-started-audience-orchestration.md">detaljerade dokumentationen</a>.</p>
+<img src="assets/channel-reports.png"/>
+<p>For more information, refer to the <a href="../audience/get-started-audience-orchestration.md">detailed documentation</a>.</p>
 </tr>
 </tbody>
-&lt;/table --&gt;
+</table -->
+
+<table>
+<thead>
+<tr>
+<th><strong>MMS (Multimedia Message Service) i SMS (Beta)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med SMS-kanalen kan du nu förbättra kommunikationen genom att skicka MMS-meddelanden (Multimedia Message Service) som gör det möjligt att dela bilder, GIF eller videor med dina kunder. Observera att den här funktionen för närvarande endast är tillgänglig i Beta med Sinch.</p>
+<!--img src="assets/channel-reports.png"/-->
+<!--p>For more information, refer to the <a href="../in-app/get-started-in-app.md">detailed documentation</a>.</p-->
+</tr>
+</tbody>
+</table>
 
 ### Förbättringar {#oct-2023-improvements}
 
@@ -71,14 +87,20 @@ Den här versionen innehåller de förbättringar som anges nedan.
 **Publiker**
 
 * Nu kan ni rikta in er på målgrupper som överförts från en CSV-fil till resor och kampanjer.
+* Nu kan ni inrikta er på målgrupper som skapats genom målgruppssammansättning och utnyttja anrikningsattribut i Journeys.
 
-**Spam-poäng för e-post**
+>[!AVAILABILITY]
+>
+>Dessa funktioner är för närvarande tillgängliga som en privat beta.
 
-* När du simulerar ett e-postinnehåll kan du med ett nytt alternativ kontrollera hur innehållet fungerar mot skräppostfiltrering i inkorgar. Den här funktionen är för närvarande endast avsedd för en uppsättning kunder (begränsad tillgänglighet) och tillgänglig för e-postkanalen.
+<!--
+**Spam scoring for emails**
+
+* When simulating an email content, a new option enables you to check how your content performs against inboxes spam filtering. This feature is currently proposed to a set of customers only (Limited Availability), and available for the Email channel.-->
 
 **Varningar**
 
-* Nu finns nya varningsmeddelanden om Journey Optimizer-kampanjer i **Varningar** -menyn.
+* När ett fel inträffar inom en av era kampanjer visas nu en varningsikon i kampanjlistan tillsammans med kampanjens status.
 
 **Kampanjer**
 
@@ -86,8 +108,16 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Resor**
 
-* Den maximala varaktighet som du kan definiera i aktiviteten Vänta är nu 29 dagar i stället för 30.
+* Den längsta väntetid du kan ange är nu 29 dagar i stället för 30. Detta gäller
+
+   * den **Tidsmängd** fältet i [vänteaktivitet](../building-journeys/wait-activity.md)
+   * den **Vänteperiod för återinträde** in [egenskaper för resa](../building-journeys/journey-gs.md#entrance)
+   * den **Vänta på** fält i timeout-definitionen för [allmän](../building-journeys/general-events.md#events-specific-time) och [reaktion](../building-journeys/reaction-events.md) händelser.
 
 **Medgivande i kanalkonfiguration**
 
 * Nu kan du välja en marknadsföringsåtgärd på kanalnivå. När de används på en yta används alla medgivandepolicyer som är kopplade till den marknadsföringsåtgärden för att ta hänsyn till kundernas önskemål.
+
+**Beslutshantering**
+
+* Flera etiketter som rör anbudsbegränsning i beslutsgränssnittet har uppdaterats.
