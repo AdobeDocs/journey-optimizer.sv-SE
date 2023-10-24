@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 6dd8942e4b598ae0c197c73b258e58f082f15f65
+source-git-commit: 59693650e3745471729a2d37998d6622a1a3c521
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1646'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,11 @@ Du kan välja mellan följande två lösningar:
 
 * Innehållets storlek för meddelanden i appen är begränsad till 2 MB. Om du inkluderar stora bilder kan det försvåra publiceringsprocessen.
 
-## Beslutshantering {#decision-management}
+## Målgrupper och skyddsräcken {#audience}
+
+* Du kan publicera upp till 10 publikkompositioner i en given sandlåda. Om du har nått det här tröskelvärdet måste du ta bort en disposition för att frigöra utrymme och publicera en ny.
+
+## Handläggningsgaranti {#decision-management}
 
 ### Prestandaskydd {#performance-guardrails}
 
