@@ -3,23 +3,46 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Kom igång med flerspråkigt innehåll
 description: Läs mer om flerspråkigt innehåll i Journey Optimizer
-feature: Multilingual
+feature: Multilingual Content
 topic: Content Management
 role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 hide: true
 hidefromtoc: true
-source-git-commit: 3b1acd7ada0637ce22e360e6e1bb35921dde2315
+source-git-commit: 90aeb777276e1e72c3099272f00e3700e06c83bf
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '987'
 ht-degree: 1%
 
 ---
 
-# Skapa flerspråkigt innehåll {#multilingual-automated}
+# Skapa flerspråkigt innehåll med automatiserad översättning {#multilingual-automated}
 
-Med den flerspråkiga funktionen kan ni enkelt skapa innehåll på flera språk i en och samma kampanj. Med den här funktionen kan ni växla mellan olika språk när ni redigerar kampanjer, effektivisera hela redigeringsprocessen och förbättra möjligheterna att effektivt hantera flerspråkigt innehåll.
+>[!BEGINSHADEBOX]
+
+**Innehållsförteckning**
+
+* [Kom igång med flerspråkigt innehåll](multilingual-gs.md)
+* [Skapa flerspråkigt innehåll med manuell översättning](multilingual-manual.md)
+* **[Skapa flerspråkigt innehåll med automatiserad översättning](multilingual-automated.md)**
+* [Flerspråkig kampanjrapport](multilingual-report.md)
+
+>[!ENDSHADEBOX]
+
+Med hjälp av det automatiserade flödet kan du helt enkelt välja målspråk och språkleverantör. Ditt innehåll skickas sedan direkt till översättningen, klart för slutgranskning när det är klart.
+
+Följ de här stegen för att skapa flerspråkigt innehåll med hjälp av automatiserad översättning:
+
+1. [Skapa din språkinställning](#create-locale).
+
+1. [Skapa ett språkprojekt](#create-translation-project).
+
+1. [Skapa språkinställningar](#create-language-settings).
+
+1. [Skapa en flerspråkig kampanj](#create-a-multilingual-campaign).
+
+1. [Granska din översättningsuppgift (valfritt)](#review-translation-project).
 
 ## Skapa nationella inställningar {#create-locale}
 
@@ -41,11 +64,17 @@ När du konfigurerar språkinställningarna enligt beskrivningen i [Skapa språk
 
 ## Skapa översättningsprojekt {#translation-project}
 
+Starta översättningsprojektet genom att ange språkområdet som mål, vilket anger det specifika språket eller den specifika regionen för innehållet. Du kan sedan välja översättningsleverantör.
+
 1. Från **[!UICONTROL Translation projects]** meny under **[!UICONTROL Content management]**, klicka **[!UICONTROL Create project]**.
+
+   ![](assets/translation_project_1.png)
 
 1. Type-in a **[!UICONTROL Name]** och **[!UICONTROL Description]**.
 
 1. Markera **[!UICONTROL Source locale]**.
+
+   ![](assets/translation_project_2.png)
 
 1. Välj om dina översättningar ska publiceras automatiskt efter godkännande och om du vill aktivera granskningsarbetsflödet.
 
@@ -53,21 +82,27 @@ När du konfigurerar språkinställningarna enligt beskrivningen i [Skapa språk
 
    Om en **[!UICONTROL Locale]** saknas kan du skapa den manuellt i förväg från **[!UICONTROL Translation]** eller av API. Se [Skapa en ny språkinställning](#create-locale).
 
+   ![](assets/translation_project_3.png)
+
 1. Välj i listan **[!UICONTROL Target locale(s)]** och välja vilken **[!UICONTROL Translation provider]** som du vill använda för varje språkområde.
 
-1. Klicka **[!UICONTROL Add a locale]** när du har länkat målspråket till rätt översättningsleverantör.
+1. Klicka **[!UICONTROL Add a locale]** när du har länkat målspråket till rätt översättningsleverantör. Klicka sedan på **[!UICONTROL Save]**.
+
+   ![](assets/translation_project_4.png)
 
 1. Klicka **[!UICONTROL Save]** när ditt översättningsprojekt är konfigurerat.
 
-1. På menyn Avancerat i översättningsprojektet kan du välja att redigera, avaktivera eller ta bort det.
+Ditt översättningsprojekt har skapats och kan användas i en flerspråkig kampanj.
 
 ## Skapa språkinställningar {#language-settings}
 
-I det här avsnittet kan du ange ditt primära språk och tillhörande språk för hantering av ditt flerspråkiga innehåll. Du kan också välja det attribut som du vill använda för att söka efter information om profilspråket
+I det här avsnittet kan du ange ditt primära språk och tillhörande språk för hantering av ditt flerspråkiga innehåll. Du kan också välja det attribut som du vill använda för att söka efter information om profilspråket.
 
 1. Från **[!UICONTROL Administration]** meny, åtkomst **[!UICONTROL Channel]**.
 
 1. I **[!UICONTROL Language settings]** meny, klicka **[!UICONTROL Create language settings]**.
+
+   ![](assets/language_settings_1.png)
 
 1. Ange ditt namn **[!UICONTROL Language settings]**.
 
@@ -75,11 +110,19 @@ I det här avsnittet kan du ange ditt primära språk och tillhörande språk f�
 
 1. Från **[!UICONTROL Translation project]** fält, klicka **[!UICONTROL Edit]** och välj det du skapat tidigare **[!UICONTROL Translation project]**.
 
-   De tidigare konfigurerade språkinställningarna importeras automatiskt. Om du uppdaterar **[!UICONTROL Translation project]**, klicka **[!UICONTROL Refresh]** för att spegla dessa ändringar i **[!UICONTROL Language settings]**.
+   De tidigare konfigurerade språkinställningarna importeras automatiskt.
+
+   ![](assets/language_settings_2.png)
 
 1. Från **[!UICONTROL Sending preference]** väljer du det attribut du vill söka efter för att hitta information om profilspråk.
 
 1. Klicka **[!UICONTROL Edit]** bredvid **[!UICONTROL Locale]** för att ytterligare personalisera den och lägga till **[!UICONTROL Profile preferences]**.
+
+   ![](assets/language_settings_3.png)
+
+1. Om **[!UICONTROL Translation project]** uppdateras, klicka **[!UICONTROL Refresh]** för att spegla dessa ändringar i **[!UICONTROL Language settings]**.
+
+   ![](assets/language_settings_4.png)
 
 1. Klicka **[!UICONTROL Submit]** för att skapa **[!UICONTROL Language settings]**.
 
@@ -93,23 +136,47 @@ I det här avsnittet kan du ange ditt primära språk och tillhörande språk f�
 
 ## Skapa en flerspråkig kampanj {#create-multilingual-campaign}
 
-1. Börja med att skapa och konfigurera kampanjen efter era behov. [Läs mer](../campaigns/create-campaign.md)
+När du har konfigurerat översättningsprojektet och språkinställningarna är du redo att skapa en kampanj och anpassa innehållet för olika språkområden.
 
-1. Navigera till **[!UICONTROL Actions]** och väljer **[!UICONTROL Edit content]**.
-
-1. Skapa eller importera ditt ursprungliga innehåll och anpassa det efter behov.
+1. Börja med att skapa och konfigurera din e-post-, SMS- eller push-meddelandekampanj enligt dina krav. [Läs mer](../campaigns/create-campaign.md)
 
 1. När det primära innehållet har skapats klickar du på **[!UICONTROL Save]** och gå tillbaka till kampanjkonfigurationsskärmen.
 
-1. Klicka **[!UICONTROL Add languages]** och markera dina tidigare skapade **[!UICONTROL Language settings]**. [Läs mer](#create-language-settings)
+1. Klicka på **[!UICONTROL Add languages]**.  [Läs mer](#create-language-settings)
 
-1. Få åtkomst till de avancerade inställningarna i **[!UICONTROL Locales]** meny och välj **[!UICONTROL Copy primary to all locales]**.
+   ![](assets/multilingual-campaign-automated-1.png)
 
-1. Nu när det primära innehållet dupliceras i hela det markerade  **[!UICONTROL Locales]**, komma åt de olika språkinställningarna och klicka **[!UICONTROL Edit email body]** att översätta innehållet.
+1. Välj dina tidigare skapade **[!UICONTROL Language settings]**.
 
-1. Du kan välja att inaktivera eller aktivera språkområden med **[!UICONTROL More action]** menyn för det valda språkområdet.
+   ![](assets/multilingual-campaign-automated-2.png)
 
-1. Om du vill inaktivera flerspråkig konfiguration klickar du på **[!UICONTROL Add languages]** och välj det språk du vill behålla som lokalt språk.
+1. Nu när språkinställningarna har importerats klickar du på **[!UICONTROL Send to translate]** om du vill vidarebefordra innehållet till den tidigare valda översättningsleverantören.
+
+   ![](assets/multilingual-campaign-automated-3.png)
+
+1. När innehållet har skickats för översättning går det inte längre att redigera. Klicka på låsikonen om du vill ändra det ursprungliga innehållet.
+
+   Observera att om du vill göra några ändringar i det här innehållet måste du skapa ett nytt översättningsprojekt och skicka om det för översättning.
+
+   ![](assets/multilingual-campaign-automated-4.png)
+
+1. Klicka **[!UICONTROL Open translation]** för att få tillgång till ditt översättningsprojekt och granska det.
+
+   ![](assets/multilingual-campaign-automated-5.png)
+
+1. På den här sidan följer du översättningsprojektets status:
+
+   * **[!UICONTROL Translation in progress]**: Din tjänsteleverantör arbetar aktivt med översättningen.
+   * **[!UICONTROL Ready for review]**: Granskningsprocessen är klar att börja, vilket ger dig möjlighet att komma åt översättningen och antingen avvisa eller godkänna den.
+   * **[!UICONTROL Reviewed]**: Översättningen har godkänts och kan skickas till kampanjen.
+   * **[!UICONTROL Ready to publish]**: Maskinöversättning har slutförts och kan nu skickas till din kampanj.
+   * **[!UICONTROL Completed]**: Översättning är nu tillgänglig i din kampanj.
+
+   ![](assets/multilingual-campaign-automated-6.png)
+
+1. När översättningen är klar kan det flerspråkiga innehållet skickas.
+
+   ![](assets/translation_review_9.png)
 
 1. Klicka **[!UICONTROL Review to activate]** för att visa en sammanfattning av kampanjen.
 
@@ -117,39 +184,58 @@ I det här avsnittet kan du ange ditt primära språk och tillhörande språk f�
 
 1. Bläddra igenom det flerspråkiga innehållet för att se återgivningen på varje språk.
 
+   ![](assets/multilingual-campaign-automated-7.png)
+
 1. Kontrollera att kampanjen är korrekt konfigurerad och klicka sedan på **[!UICONTROL Activate]**.
 
 Din kampanj är nu aktiverad. Meddelandet som konfigurerats i kampanjen skickas omedelbart, eller på det angivna datumet. Observera att så fort Campaign är klar kan den inte ändras. Om du vill återanvända innehåll kan du duplicera din kampanj.
 
 När ni har skickat dem kan ni mäta effekten av era kampanjer i kampanjrapporterna.
 
-## Flerspråkig kampanjrapport {#multilingual-campaign-report}
+## Granska ditt översättningsprojekt {#review-translation-project}
 
-Globala rapporter, tillgängliga från **Alltid** visar du händelser som inträffade för minst två timmar sedan och täcker händelser under en viss tidsperiod. Kampanjens globala rapport kan nås direkt från er Campaign via **[!UICONTROL View report]** -knappen.
+Om du valde **[!UICONTROL Enable review worflow]** i **[!UICONTROL Translation project]**kan du granska översättningen direkt i Journey Optimizer när du är klar av den valda översättningsleverantören.
+Observera att om det här alternativet är inaktiverat, när översättningen är klar av din leverantör, ställs översättningsuppgiftens status automatiskt in på **[!UICONTROL Reviewed]** så att du snabbt kan fortsätta genom att klicka **[!UICONTROL Send to Product]**.
 
-Mer information om tillgängliga data i Campaign-rapporten finns i [den här sidan](../reports/campaign-global-report.md).
+1. När översättningen är klar från din tjänsteleverantör kan du få åtkomst till översättningen för granskning från din **[!UICONTROL Translation project]** eller direkt från **[!UICONTROL Campaign]**.
 
-+++Läs mer om de olika mätvärden och widgetar som finns för ditt flerspråkiga innehåll.
+   ![](assets/translation_review_1.png)
 
-![](assets/report_multilingual.png)
+1. I granskningsfönstret bläddrar du igenom det översatta innehållet och godkänner eller avvisar alla översättningssträngar.
 
-The **[!UICONTROL Email sending statistics by languages]** information om hur framgångsrik leveransen är beroende på din **[!UICONTROL Locales]**:
+   ![](assets/translation_review_3.png)
 
-* **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
+1. Klicka **[!UICONTROL Edit]** om du vill ändra innehållet i översättningssträngen.
 
-* **[!UICONTROL Bounces]**: Totalt antal fel som har ackumulerats under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
+   ![](assets/translation_review_2.png)
 
-* **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
+1. Ange den uppdaterade översättningen och klicka på **[!UICONTROL Confirm]** när du är klar.
 
-The **[!UICONTROL Email tracking statistics by languages]** widgeten innehåller tillgängliga data för mottagaraktivitet för leveransen beroende på din **[!UICONTROL Locales]**:
+   ![](assets/translation_review_4.png)
 
-* **[!UICONTROL Unsubscribes]**: Antal klick på länken för att avbryta prenumerationen.
+1. Du kan också välja att **[!UICONTROL Reject all]** eller **[!UICONTROL Approve all]** direkt.
 
-* **[!UICONTROL Opens]**: Antal gånger som meddelandet öppnades.
+   Vid val **[!UICONTROL Reject all]**, lägga till en kommentar och klicka på **[!UICONTROL Reject]**.
 
-* **[!UICONTROL Clicks]**: Antal gånger som användaren klickat på ett innehåll.
-+++
+1. Klicka **[!UICONTROL Preview]** för att kontrollera återgivningen av det översatta innehållet på varje språk.
 
+1. När du är nöjd med översättningen klickar du **[!UICONTROL Finalize]**.
+
+   ![](assets/translation_review_5.png)
+
+1. Från **[!UICONTROL Translation project]**, väljer du ett av dina projekt för att få mer information. Om du avvisade översättningen kan du välja att skicka tillbaka den till översättningen.
+
+   ![](assets/translation_review_6.png)
+
+1. När du **[!UICONTROL Translation project]** statusen är Granskad, du kan skicka den till din kampanj.
+
+   Klicka på den avancerade menyn **[!UICONTROL Publish]**.
+
+   ![](assets/translation_review_7.png)
+
+1. Kontrollera att din översättningsstatus har ändrats till **[!UICONTROL Translation complete]**. Nu kan du skicka ditt flerspråkiga innehåll, se steg 10 i [det här avsnittet](#create-multilingual-campaign).
+
+   ![](assets/translation_review_9.png)
 
 <!--
 # Create a multilingual journey {#create-multilingual-journey}

@@ -10,17 +10,35 @@ level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 hide: true
 hidefromtoc: true
-exl-id: 6244d717-fbd6-468e-9164-60451d0d62f0
-source-git-commit: 03c714833930511fa734662b637d2416728073c2
+source-git-commit: 90aeb777276e1e72c3099272f00e3700e06c83bf
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '595'
 ht-degree: 1%
 
 ---
 
-# Skapa flerspråkigt innehåll {#multilingual}
+# Skapa flerspråkigt innehåll med manuell översättning {#multilingual-manual}
 
-Med den flerspråkiga funktionen kan ni enkelt skapa innehåll på flera språk i en och samma kampanj. Med den här funktionen kan ni växla mellan olika språk när ni redigerar kampanjer, effektivisera hela redigeringsprocessen och förbättra möjligheterna att effektivt hantera flerspråkigt innehåll.
+>[!BEGINSHADEBOX]
+
+**Innehållsförteckning**
+
+* [Kom igång med flerspråkigt innehåll](multilingual-gs.md)
+* **[Skapa flerspråkigt innehåll med manuell översättning](multilingual-manual.md)**
+* [Skapa flerspråkigt innehåll med automatiserad översättning](multilingual-automated.md)
+* [Flerspråkig kampanjrapport](multilingual-report.md)
+
+>[!ENDSHADEBOX]
+
+Med det manuella flödet kan ni enkelt översätta ert innehåll direkt i kampanjen för e-post, push-meddelanden eller SMS, vilket ger er precis kontroll och anpassningsbara alternativ för flerspråkiga meddelanden. Dessutom kan du enkelt importera redan befintligt flerspråkigt innehåll med alternativet Importera HTML.
+
+Följ de här stegen för att skapa flerspråkigt innehåll med hjälp av manuell översättning:
+
+1. [Skapa din språkinställning](#create-locale).
+
+1. [Skapa språkinställningar](#create-language-settings).
+
+1. [Skapa en flerspråkig kampanj](#create-a-multilingual-campaign).
 
 ## Skapa nationella inställningar {#create-locale}
 
@@ -86,7 +104,9 @@ I det här avsnittet kan du ange ditt primära språk och tillhörande språk f�
 
 ## Skapa en flerspråkig kampanj {#create-multilingual-campaign}
 
-1. Börja med att skapa och konfigurera kampanjen efter era behov. [Läs mer](../campaigns/create-campaign.md)
+När du har konfigurerat ditt flerspråkiga innehåll är du redo att skapa en kampanj och anpassa innehållet för alla valda språkområden.
+
+1. Börja med att skapa och konfigurera din e-post-, SMS- eller push-meddelandekampanj enligt dina krav. [Läs mer](../campaigns/create-campaign.md)
 
 1. Navigera till **[!UICONTROL Actions]** och väljer **[!UICONTROL Edit content]**.
 
@@ -132,34 +152,6 @@ Din kampanj är nu aktiverad. Meddelandet som konfigurerats i kampanjen skickas 
 
 När ni har skickat dem kan ni mäta effekten av era kampanjer i kampanjrapporterna.
 
-## Flerspråkig kampanjrapport {#multilingual-campaign-report}
-
-Globala rapporter, tillgängliga från **Alltid** visar du händelser som inträffade för minst två timmar sedan och täcker händelser under en viss tidsperiod. Kampanjens globala rapport kan nås direkt från er Campaign via **[!UICONTROL View report]** -knappen.
-
-Mer information om tillgängliga data i Campaign-rapporten finns i [den här sidan](../reports/campaign-global-report.md).
-
-+++Läs mer om de olika mätvärden och widgetar som finns för ditt flerspråkiga innehåll.
-
-![](assets/report_multilingual.png)
-
-The **[!UICONTROL Email sending statistics by languages]** information om hur framgångsrik leveransen är beroende på din **[!UICONTROL Locales]**:
-
-* **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
-
-* **[!UICONTROL Bounces]**: Totalt antal fel som har ackumulerats under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
-
-* **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
-
-The **[!UICONTROL Email tracking statistics by languages]** widgeten innehåller tillgängliga data för mottagaraktivitet för leveransen beroende på din **[!UICONTROL Locales]**:
-
-* **[!UICONTROL Unsubscribes]**: Antal klick på länken för att avbryta prenumerationen.
-
-* **[!UICONTROL Opens]**: Antal gånger som meddelandet öppnades.
-
-* **[!UICONTROL Clicks]**: Antal gånger som användaren klickat på ett innehåll.
-+++
-
-
 <!--
 # Create a multilingual journey {#create-multilingual-journey}
 
@@ -167,14 +159,4 @@ The **[!UICONTROL Email tracking statistics by languages]** widgeten innehåller
 1. From your delivery action, click Edit content.
 1. Click Add languages.
 
-# Translation project/ Create translation project:
-
-1. From the Translation projects menu, click Create project.
-1. Type-in a Name and Description.
-1. Select the Source locale.
-1. Click Add language to access the menu and define the languages for your translation project.
-1. Select from the list your Target locale(s) and choose which Translation provider you want to use.
-1. Click Add language when you finished linking your Target locale with the correct Translation provider.
-1. Click Save.
-1. From the Advanced menu of your Translation project, you can choose to Edit, deactive or delete it.
 -->
