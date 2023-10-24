@@ -10,9 +10,9 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 1b37da28e6dbb03c8c76dd9a6637dfd95447eb7e
+source-git-commit: 74a4de20ae14923139cf6bf81676819355944ceb
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '370'
 ht-degree: 2%
 
 ---
@@ -98,13 +98,10 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 * When simulating an email content, a new option enables you to check how your content performs against inboxes spam filtering. This feature is currently proposed to a set of customers only (Limited Availability), and available for the Email channel.-->
 
-**Varningar**
-
-* När ett fel inträffar inom en av era kampanjer visas nu en varningsikon i kampanjlistan tillsammans med kampanjens status.
-
 **Kampanjer**
 
 * Nu kan du stoppa en direktkampanj, göra ändringar och återuppta den igen. Denna förbättring finns tillgänglig i Beta.
+* När ett fel inträffar inom en av era kampanjer visas nu en varningsikon i kampanjlistan tillsammans med kampanjens status.
 
 **Resor**
 
