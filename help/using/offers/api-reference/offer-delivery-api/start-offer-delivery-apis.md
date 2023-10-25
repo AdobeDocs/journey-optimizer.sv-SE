@@ -6,9 +6,9 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 7bc1a4ec-113c-4af7-b549-ee17b843b818
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 91f52af0c2e42556c4456be9b6b0cb84378c2a23
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,6 @@ ht-degree: 0%
 Du kan leverera erbjudanden med **Beslut** eller **Edge Decisionering** API. Dessutom kan du **Gruppbeslut** Med API kan ni leverera erbjudanden till alla profiler i en viss målgrupp i ett enda samtal. Erbjudandeinnehållet för varje profil i målgruppen placeras i en Adobe Experience Platform-datauppsättning där det är tillgängligt för anpassade grupparbetsflöden.
 
 På den här sidan hittar du information om specifika funktioner som är tillgängliga med **Beslut** och **Edge Decisionering** API. Vi rekommenderar att du använder **Edge Decisionering** API när det är möjligt för inkommande användning och för att säkerställa bättre latens och genomströmning på din plattform.
-
 
 Mer information om hur du arbetar med API:erna finns i följande avsnitt:
 * [Besluts-API](decisioning-api.md)
@@ -127,7 +126,6 @@ När kontextdata skickas med en begäran från Edge Decisioning API, lagras data
 
 De funktioner som anges nedan är endast tillgängliga med besluts-API:t. Om du behöver utnyttja någon av dem för att uppfylla dina krav använder du API:t för beslut. I annat fall rekommenderar vi att du använder API:erna för Edge Decision.
 
-* **Experience events**: utnyttja upplevelsehändelser för att bygga upp era beslutsregler.
 * **Erbjud innehåll och egenskaper**: du kan välja att inte returnera innehållet och egenskaperna för ett erbjudande med ett dedikerat alternativ.
 * **Erbjud metadata**: aktivera ett alternativ för att returnera metadata för ett erbjudande.
 * **Kopplingsprincip**: använd i din begäran en annan sammanfogningsprincip än den som är kopplad till din sandlåda.
