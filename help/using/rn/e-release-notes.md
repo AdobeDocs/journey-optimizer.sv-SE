@@ -10,10 +10,10 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 74a4de20ae14923139cf6bf81676819355944ceb
+source-git-commit: 004eb41b084f32993ec437f589e4e3d2cf7500d3
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 2%
+source-wordcount: '350'
+ht-degree: 3%
 
 ---
 
@@ -100,7 +100,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Kampanjer**
 
-* Nu kan du stoppa en direktkampanj, göra ändringar och återuppta den igen. Denna förbättring finns tillgänglig i Beta.
+<!--* You can now stop a live one-time campaign, make modifications and resume it again. This improvement is available in Beta.-->
 * När ett fel inträffar inom en av era kampanjer visas nu en varningsikon i kampanjlistan tillsammans med kampanjens status.
 
 **Resor**
