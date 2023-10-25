@@ -8,9 +8,9 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 2776af02e88659a350dfa4126a73106753e079b2
+source-git-commit: ed42c04d8c653226e8512ced761519995ebd72c7
 workflow-type: tm+mt
-source-wordcount: '4583'
+source-wordcount: '4536'
 ht-degree: 8%
 
 ---
@@ -74,16 +74,16 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 </tbody>
 </table -->
 
-<table>
+<!--<table>
 <thead>
 <tr>
-<th><strong>MMS (Multimedia Message Service) i SMS (Beta)</strong><br/></th>
+<th><strong>Multimedia Message Service (MMS) in SMS (Beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Med SMS-kanalen kan du nu förbättra kommunikationen genom att skicka MMS-meddelanden (Multimedia Message Service) som gör det möjligt att dela bilder, GIF eller videor med dina kunder. Observera att den här funktionen för närvarande endast är tillgänglig i Beta med Sinch.</p>
+<p>With the SMS Channel, you can now enhance your communication by sending Multimedia Message Service (MMS) messages, enabling the sharing of images, GIFs, or videos with your customers. Note that this feature is currently available in Beta with Sinch only.</p>-->
 <!--img src="assets/channel-reports.png"/-->
 <!--p>For more information, refer to the <a href="../in-app/get-started-in-app.md">detailed documentation</a>.</p-->
 </tr>
