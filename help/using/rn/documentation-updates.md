@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
+source-git-commit: b2a9a118b663c757a026c62b18e00d1f53e26317
 workflow-type: tm+mt
-source-wordcount: '3952'
+source-wordcount: '4007'
 ht-degree: 14%
 
 ---
@@ -30,6 +30,10 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Sidan Implementera enkelsidiga program har flyttats till Adobe Experience Platform Web SDK-dokumentationen. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html){target="_blank"}
 * Facksektionen har uppdaterats för att återspegla de etikettändringar som har att göra med begränsningen av erbjudanden i beslutsgränssnittet. [Läs mer](../offers/offer-library/add-constraints.md#capping)
 * Alternativet Lägg till dynamiskt innehåll i e-postmeddelanden har uppdaterats med information om hur du tar bort en variant. [Läs mer](../personalization/dynamic-content.md#emails)
+* Exemplet för capping &amp; Throttling-konfigurationer har uppdaterats. [Läs mer](../configuration/external-systems.md)
+* Begränsningen för skalära arrayer har tagits bort från avsnittet för externa datakällor. [Läs mer](../datasource/external-data-sources.md)
+* Flerkanalsanvändningen har uppdaterats. [Läs mer](../building-journeys/journeys-uc.md)
+* Journey Optimizer-dokumentationsuppsättningen har uppdaterats för att återspegla den nya processen för att skapa Experience Platform-scheman.
 
 ## September 2023 {#september-2023}
 
