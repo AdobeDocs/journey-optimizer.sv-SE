@@ -8,9 +8,9 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
+source-git-commit: 7dc3ddb92a8d47b135535107928e5b812c101d93
 workflow-type: tm+mt
-source-wordcount: '4557'
+source-wordcount: '4555'
 ht-degree: 9%
 
 ---
@@ -119,7 +119,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
    * den **Tidsmängd** fältet i [vänteaktivitet](../building-journeys/wait-activity.md)
    * den **Vänteperiod för återinträde** in [egenskaper för resa](../building-journeys/journey-gs.md#entrance)
-   * den **Vänta på** fält i timeout-definitionen för [allmän](../building-journeys/general-events.md#events-specific-time) och [reaktion](../building-journeys/reaction-events.md) händelser.
+   * den **Vänta på** fält i timeout-definitionen för [evenemang](../building-journeys/general-events.md#events-specific-time).
 
 <!--
 **Consent in channel configuration**
