@@ -1,10 +1,10 @@
 ---
 title: Testa e-poståtergivning
 description: Lär dig hur du testar e-poståtergivning.
-feature: Preview, Proofs
+feature: Preview
 role: User
 level: Beginner
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+source-git-commit: b6872806b3961bb2afbfc03999d984384492cc6d
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 1%
