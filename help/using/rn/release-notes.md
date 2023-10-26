@@ -8,9 +8,9 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 7dc3ddb92a8d47b135535107928e5b812c101d93
+source-git-commit: d95bd86a731e7d410ca40986ca792956f4e4c596
 workflow-type: tm+mt
-source-wordcount: '4555'
+source-wordcount: '4525'
 ht-degree: 9%
 
 ---
@@ -32,10 +32,6 @@ Tidigare versionsinformation finns i [den här sidan](release-notes-2022.md). Du
 ![Nyhetsbrev](../assets/do-not-localize/nl-icon.png) Registrera dig för [Adobe Journey Optimizer kvartalsvis nyhetsbrev](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} idag och få de senaste produktuppdateringarna, spännande historier, användningsexempel, tips och mycket annat levererat direkt till din inkorg varje kvartal.
 
 ## Versionsinformation oktober 2023 {#oct-rn-2023}
-
-Noteringarna nedan kan ändras utan föregående meddelande fram till releasedatum. Länkar, skärmar och uppdaterad dokumentation publiceras på releasedatum.
-
-**Releasedatum**: 25-26 okt 2023
 
 ### Nya funktioner{#oct-2023-features}
 
