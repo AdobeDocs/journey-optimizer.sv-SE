@@ -8,10 +8,10 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 9e7b08db00ab6333bd5a20815e05bca48075dca3
+source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
 workflow-type: tm+mt
-source-wordcount: '4476'
-ht-degree: 8%
+source-wordcount: '4557'
+ht-degree: 9%
 
 ---
 
@@ -52,7 +52,7 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <td>
 <p>Med sandlådeverktygen kan du kopiera objekt över flera sandlådor genom att utnyttja export och import av paket. Ett paket kan bestå av ett eller flera objekt. Alla objekt som ingår i ett paket måste komma från samma sandlåda.</p>
 <!--img src="../data/assets/dataset-export-setup.png"-->
-<!--p>For more information, refer to the <a href="../audience/get-started-audience-orchestration.md">detailed documentation</a>.</p-->
+<p>Mer information finns i den <a href="../building-journeys/copy-to-sandbox.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -74,18 +74,18 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 </tbody>
 </table -->
 
-<!--<table>
+<table>
 <thead>
 <tr>
-<th><strong>Multimedia Message Service (MMS) in SMS (Beta)</strong><br/></th>
+<th><strong>MMS (Multimedia Message Service) i SMS</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>With the SMS Channel, you can now enhance your communication by sending Multimedia Message Service (MMS) messages, enabling the sharing of images, GIFs, or videos with your customers. Note that this feature is currently available in Beta with Sinch only.</p>-->
-<!--img src="assets/channel-reports.png"/-->
-<!--p>For more information, refer to the <a href="../in-app/get-started-in-app.md">detailed documentation</a>.</p-->
+<p>Med SMS-kanalen kan du nu förbättra kommunikationen genom att skicka MMS-meddelanden (Multimedia Message Service) som gör det möjligt att dela bilder, GIF eller videor med dina kunder. Observera att den här funktionen för närvarande endast är tillgänglig för Sinch.</p>
+<img src="assets/do-not-localize/mms.gif"/>
+<p>Mer information finns i den <a href="../sms/create-sms.md#sms-content">detaljerade dokumentationen</a>.</p>
 </tr>
 </tbody>
 </table>
@@ -97,7 +97,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 **Publiker**
 
 * Nu kan ni rikta in er på målgrupper som överförts från en CSV-fil till resor och kampanjer.
-* Nu kan ni inrikta er på målgrupper som skapats genom målgruppssammansättning och utnyttja anrikningsattribut i Journeys.
+* Nu kan ni inrikta er på målgrupper som skapats genom målgruppssammansättning och utnyttja anrikningsattribut i Journeys. [Läs mer](../building-journeys/read-audience.md)
 
 >[!AVAILABILITY]
 >
@@ -111,11 +111,11 @@ Den här versionen innehåller de förbättringar som anges nedan.
 **Kampanjer**
 
 <!--* You can now stop a live one-time campaign, make modifications and resume it again. This improvement is available in Beta.-->
-* När ett fel inträffar inom en av era kampanjer visas nu en varningsikon i kampanjlistan tillsammans med kampanjens status.
+* När ett fel inträffar inom en av era kampanjer visas nu en varningsikon i kampanjlistan tillsammans med kampanjens status. [Läs mer](../campaigns/modify-stop-campaign.md#statuses)
 
 **Resor**
 
-* Den längsta väntetid du kan ange är nu 29 dagar i stället för 30. Detta gäller
+* Den längsta väntetid du kan ange är nu 29 dagar i stället för 30. Denna förbättring har införts för att förhindra att väntetider överskrider den 30 dagar långa transporttiden. Detta gäller
 
    * den **Tidsmängd** fältet i [vänteaktivitet](../building-journeys/wait-activity.md)
    * den **Vänteperiod för återinträde** in [egenskaper för resa](../building-journeys/journey-gs.md#entrance)
@@ -128,7 +128,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Beslutshantering**
 
-* Flera etiketter som rör anbudsbegränsning i beslutsgränssnittet har uppdaterats.
+* Flera etiketter som rör anbudsbegränsning i beslutsgränssnittet har uppdaterats. [Läs mer](../offers/offer-library/add-constraints.md#capping)
 
 ## Versionsinformation september 2023 {#sept-rn-2023}
 

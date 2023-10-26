@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 59693650e3745471729a2d37998d6622a1a3c521
+source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1694'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,13 @@ Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera opti
 * The **Formulär** -komponenten kan inte användas i undersidor.
 * Du kan inte lägga till en förrubrik på en landningssida.
 * Du kan inte välja **Koda din egen** när du utformar en primär landningssida.
+
+## SMS-skyddsräcken {#sms-guardrails}
+
+* MMS-funktioner är bara tillgängliga för Sinch.
+* Mediefiler för MMS kan inkluderas via en URL som stöds. Kontrollera att mediefilen överförs separat.
+* Synkronisering av meddelandefeedback är för närvarande inte tillgängligt för MMS.
+* Samtalshantering fungerar på SMS-kanalnivå för MMS.
 
 ## Resehanddukar {#journeys-guardrails}
 

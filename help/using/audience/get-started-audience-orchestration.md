@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: af71d24d-77eb-44df-8216-b0aeaf4c4fa4
-source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
+source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 0%
+source-wordcount: '313'
+ht-degree: 2%
 
 ---
 
@@ -36,7 +36,7 @@ När du är klar **resulterande målgrupper** sparas i Adobe Experience Platform
 
 >[!IMPORTANT]
 >
->Målgrupper från arbetsflöden för disposition kan endast användas i Journey Optimizer-kampanjer. De är inte tillgängliga för användning under resor.
+>För närvarande finns användningen av målgrupper som är resultatet av arbetsflöden för kompositioner i resor som en privat betaversion. Kontakta din Adobe-representant om du vill veta mer.
 >
 >Kampanjer i Adobe Journey Optimizer är ännu inte integrerade med policyefterlevnadstjänsten. Därför kommer de etiketter för dataanvändning som du använder på målgruppsattributen inte att användas i Journey Optimizer-kampanjer.
 

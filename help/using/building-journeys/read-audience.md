@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: aktivitet, resa, läsning, målgrupp, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
 workflow-type: tm+mt
-source-wordcount: '1238'
-ht-degree: 3%
+source-wordcount: '1278'
+ht-degree: 4%
 
 ---
 
@@ -29,11 +29,13 @@ Använd **Läs målgrupp** aktivitet för att få alla enskilda personer i en m�
 
 Låt oss som exempel ta målgruppen&quot;Luma app opening and checkout&quot; som skapats i [Bygg målgrupper](../audience/about-audiences.md) användningsfall. Med aktiviteten Läs målgrupp kan ni få alla personer som tillhör den här målgruppen att resa in på en resa och få dem att flöda in i personaliserade resor som kan utnyttja alla resefunktioner: villkor, tidtagare, händelser och aktiviteter.
 
->[!NOTE]
->
->För resor som använder aktiviteten Läs målgrupp finns det ett maximalt antal resor som kan påbörjas exakt samtidigt. Nya försök kommer att utföras av systemet men undvik att ha fler än fem resor (med Läs publik, schemalagd eller starta&quot;så snart som möjligt&quot;) med början vid exakt samma tidpunkt genom att sprida dem över tiden, till exempel med 5 till 10 minuters mellanrum.
->
->Det går inte att använda fältgrupper för upplevelsehändelser på resor som börjar med en läsare, en målgrupp eller en affärshändelseaktivitet.
+## Måste läsas {#must-read}
+
+* För resor som använder aktiviteten Läs målgrupp finns det ett maximalt antal resor som kan påbörjas exakt samtidigt. Nya försök kommer att utföras av systemet men undvik att ha fler än fem resor (med Läs publik, schemalagd eller starta&quot;så snart som möjligt&quot;) med början vid exakt samma tidpunkt genom att sprida dem över tiden, till exempel med 5 till 10 minuters mellanrum.
+
+* Det går inte att använda fältgrupper för upplevelsehändelser på resor som börjar med en läsare, en målgrupp eller en affärshändelseaktivitet.
+
+* För närvarande används målgrupper [importerad från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) eller som härrör från [arbetsflöden för disposition](../audience/get-started-audience-orchestration.md) på resorna finns som en privat betaversion. Kontakta din Adobe-representant om du vill veta mer.
 
 ### Konfigurera aktiviteten {#configuring-segment-trigger-activity}
 

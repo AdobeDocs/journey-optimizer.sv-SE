@@ -11,9 +11,9 @@ keywords: IP, grupp, underdomäner, leveransbarhet
 hide: true
 hidefromtoc: true
 exl-id: 752ffd7f-09c2-4aa3-a067-2dbe0634709c
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
 workflow-type: tm+mt
-source-wordcount: '1629'
+source-wordcount: '1644'
 ht-degree: 0%
 
 ---
@@ -152,6 +152,10 @@ At phase level, system ensures that previously targeted + new profiles are picke
 1. Välj vid behov **[!UICONTROL Edit run]** från ikonen Fler åtgärder. Där kan du uppdatera antalet adresser i varje kolumn. Du kan även uppdatera **[!UICONTROL Last engagement]** för att t.ex. rikta sig till de användare som varit engagerade med ert varumärke under de senaste 20 dagarna.
 
    ![](assets/ip-warmup-plan-edit-run.png)
+
+   >[!NOTE]
+   >
+   >Om du inte vill använda **[!UICONTROL Last engagement]** parametern till den aktuella körningen, ställer du in den på 0.
 
 1. Välj **[!UICONTROL Pause for errors]** om du vill avbryta en körning om de kvalificerade profilerna är mindre än målprofilerna när målgruppen har utvärderats för den körningen.
 

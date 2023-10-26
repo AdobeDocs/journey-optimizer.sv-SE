@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: externa, källor, data, konfiguration, anslutning, tredje part
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
 workflow-type: tm+mt
-source-wordcount: '1454'
-ht-degree: 81%
+source-wordcount: '1445'
+ht-degree: 82%
 
 ---
 
@@ -82,10 +82,6 @@ För parameteruppsättningen &quot;long/lat&quot; skapar vi en fältgrupp med f�
 * **[!UICONTROL Method]**: välj metoden POST eller GET. I vårt fall väljer vi metoden GET.
 * **[!UICONTROL Dynamic Values]**: ange de olika parametrarna avgränsade med kommatecken – &quot;long,lat&quot; i vårt exempel. Eftersom parameterns värden är beroende av körningens sammanhang definieras de i resorna. [Läs mer](../building-journeys/expression/expressionadvanced.md)
 * **[!UICONTROL Response Payload]**: klicka inuti fältet **[!UICONTROL Payload]** och klistra in ett exempel på nyttolasten som returneras av anropet. Vi har till exempel använt en nyttolast som finns på en API-webbplats för väder. Kontrollera att fälttyperna är korrekta. Varje gång API:et anropas hämtas alla fält som ingår i exemplets nyttolast. Observera att du kan klicka på **[!UICONTROL Paste a new payload]** för att ändra den nyttolast som för närvarande används.
-
-  >[!NOTE]
-  >
-  >Skalära matriser stöds inte i svarsnyttolastsdefinitionen.
 
 * **[!UICONTROL Sent Payload]**: det här fältet visas inte i vårt exempel. Det är endast tillgängligt om du väljer metoden POST. Klistra in nyttolasten som ska skickas till tredjepartssystemet.
 

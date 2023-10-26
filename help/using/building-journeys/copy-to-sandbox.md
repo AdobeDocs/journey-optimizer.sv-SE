@@ -9,36 +9,44 @@ role: User, Developer, Data Engineer
 level: Experienced
 keywords: sandlåda, resa, kopia, miljö
 exl-id: 8c63f2f2-5cec-4cb2-b3bf-2387eefb5002
-source-git-commit: 28a4f04ebcda27213d3bac763fb9bea8ea4a0146
+source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
 
 # Kopiera en resa till en annan sandlåda {#copy-to-sandbox}
 
+<!--
 >[!CONTEXTUALHELP]
 >id="ajo_journey_copy_main"
->title="Kopiera en resa till en annan sandlåda"
->abstract="Med Journey Optimizer kan du kopiera en hel resa från en sandlåda till en annan. Du kan t.ex. kopiera en resa från sandlådemiljön Stage till produktionssandlådan. Förutom själva resan kopierar Journey Optimizer också merparten av de objekt som resan är beroende av."
+>title="Copy a journey to another sandbox"
+>abstract="Journey Optimizer allows you to copy an entire journey from one sandbox to another. For example, you can copy a journey from the Stage sandbox environment to your Production sandbox. In addition to the Journey itself, Journey Optimizer also copies most of the objects the journey depends on."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_copy_sandbox_details"
->title="Sandlådeinformation"
->abstract="Markera den målsandlåda som du vill kopiera resan till. Endast sandlådor i din organisation är tillgängliga."
+>title="Sandbox details"
+>abstract="Select the destination sandbox you want to copy the journey to. Only sandboxes within your organization are available."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_copy_object_details"
->title="Objektinformation"
->abstract="Det här är resan du ska kopiera."
+>title="Object details"
+>abstract="This is the journey you are going to copy."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_copy_dependent_objects"
->title="Beroende objekt"
->abstract="Det här är listan över associerade objekt som används under resan. I den här listan visas namn, objekttyp och internt Journey Optimizer-id."
+>title="Dependent objects"
+>abstract="This is the list of associated objects used in the journey. This list displays the name, the object type, as well as the internal Journey Optimizer ID."
+-->
 
-Med Journey Optimizer kan du kopiera en hel resa från en sandlåda till en annan. Du kan t.ex. kopiera en resa från sandlådemiljön på scenen till produktionssandlådan. Förutom själva resan kopierar Journey Optimizer även de flesta av de objekt som resan är beroende av: målgrupper, ytor (t.ex. förinställningar), scheman, händelser och åtgärder. Mer information om kopierade objekt finns i [section](#limitations).
+Med Sandbox Tooling kan du kopiera objekt över flera sandlådor genom att utnyttja export och import av paket. Ett paket kan bestå av ett eller flera objekt. Alla objekt som ingår i ett paket måste komma från samma sandlåda.
+
+Den här sidan beskriver hur du använder sandlådeverktyg i Journey Optimizer. Mer information om själva funktionen finns i [Experience Platform dokumentation](https://experienceleague.corp.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html).
+
+## Kom igång med sandlådeverktyg{#sandbox-gs}
+
+Med Journey Optimizer kan du kopiera en hel resa från en sandlåda till en annan. Du kan t.ex. kopiera en resa från sandlådemiljön på scenen till produktionssandlådan. Förutom själva resan kopierar Journey Optimizer även de flesta av de objekt som resan är beroende av: målgrupper, scheman, händelser och handlingar. Mer information om kopierade objekt finns i [section](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html#abobe-journey-optimizer-objects).
 
 >[!CAUTION]
 >
@@ -46,66 +54,58 @@ Med Journey Optimizer kan du kopiera en hel resa från en sandlåda till en anna
 
 De kopierade objekten i målsandlådan är unika och det finns ingen risk för att befintliga element skrivs över. Både resan och alla meddelanden under resan överförs i utkastläge. På så sätt kan du utföra en grundlig validering innan den publiceras i målsandlådan. Kopieringsprocessen kopierar bara metadata om resan och objekten i den resan. Inga profil- eller datauppsättningsdata kopieras som en del av den här processen.
 
+## Exportera resan {#export}
+
 Så här kopierar du en resa till en annan sandlåda:
 
 1. Klicka på **[!UICONTROL Journeys]**. Listan över resor visas.
 
-2. Sök efter den resa du vill kopiera och klicka på **Fler åtgärder** ikon (de tre punkterna bredvid resans namn) och klicka på **Kopiera till sandlåda**.
+1. Sök efter den resa du vill kopiera och klicka på **Fler åtgärder** ikon (de tre punkterna bredvid resans namn) och klicka på **Lägg till i paket**.
 
-   ![](assets/copy-sandbox1.png)
+![](assets/journey-sandbox1.png)
 
-   The **Kopiera till sandlåda** visas.
+The **Lägg till i paket** visas.
 
-   ![](assets/copy-sandbox2.png)
+![](assets/journey-sandbox2.png)
 
-3. Välj **Målsandlåda** i listrutan. Endast sandlådor i din organisation är tillgängliga.
+1. Välj om du vill lägga till resan i ett befintligt paket eller skapa ett nytt paket:
 
-4. Granska **Beroende objekt** -avsnitt. Det här är listan över associerade objekt som används under resan. I den här listan visas namn, objekttyp och internt Journey Optimizer-id.
+   * **Befintligt paket**: välj paketet i listrutan.
+   * **Skapa ett nytt paket**: skriv paketnamnet. Du kan också lägga till en beskrivning.
 
-5. Klicka på **Kopiera** i det övre högra hörnet för att börja kopiera resan till målsandlådan.
+1. Klicka på **[!UICONTROL Sandboxes]** väljer du **Paket** och klicka på det paket som du vill exportera.
 
-   ![](assets/copy-sandbox3.png)
+   ![](assets/journey-sandbox3.png)
 
-   Kopieringsprocessen börjar och förloppet för varje enskilt objekt visas. Kopieringsprocessen varierar beroende på hur komplicerad resan är och hur många objekt som behöver kopieras. Om ett fel påträffas visas ett meddelande för det relaterade objektet.
+1. Markera de objekt som du vill exportera och klicka på **Publicera**
 
-   ![](assets/copy-sandbox4.png)
+   ![](assets/journey-sandbox4.png)
 
-6. När kopieringen är klar klickar du **Stäng**.
+   Om publiceringen misslyckas kan du kontrollera loggarna för att identifiera felorsaken. Öppna paketet, klicka på **Se misslyckade jobb**, markera importjobbet och klicka på **Visa importinformation**.
 
-7. Få åtkomst till målsandlådan och kontrollera alla kopierade objekt noggrant.
+   ![](assets/journey-sandbox9.png)
 
-## Kopiera processer och begränsningar {#limitations}
+## Importera resan {#export}
 
-Alla länkade element kanske inte kopieras till målsandlådan. Adobe rekommenderar starkt att du gör en grundlig kontroll. Identifiera eventuella saknade objekt och skapa dem manuellt innan resan publiceras.
+1. Klicka på ikonen + bredvid paketnamnet i paketlistan.
 
-Följande objekt kopieras:
+   ![](assets/journey-sandbox5.png)
 
-* Målgrupp
+1. Välj **Målsandlåda** i listrutan och klicka på **Nästa**. Endast sandlådor i din organisation är tillgängliga.
 
-  En målgrupp kan bara kopieras en gång från en sandlåda till en annan. När en målgrupp har kopierats går den inte att redigera i målsandlådan.
+   ![](assets/journey-sandbox6.png)
 
-* Schema
+1. Granska paketobjekten och beroendena. Det här är listan över associerade objekt som används under resan. I den här listan visas namnet och objekttypen. För varje objekt kan du välja att skapa ett nytt eller använda ett befintligt objekt i målsandlådan.
 
-  Scheman som används under den här resan kopieras.
+   ![](assets/journey-sandbox7.png)
 
-* Meddelande
+1. Klicka på **Slutför** i det övre högra hörnet för att börja kopiera paketet till målsandlådan. Kopieringsprocessen varierar beroende på hur komplicerad resan är och hur många objekt som behöver kopieras.
 
-  De kanalåtgärder som används under resan. Fält som används för personalisering i meddelandet kontrolleras inte för fullständighet. Innehållsblock kopieras inte.
+1. Klicka på importjobbet för att granska kopieringsresultatet:
 
-* Resa - arbetsytedetaljer
+   * Klicka **Visa importerade objekt** för att visa varje enskilt objekt som har kopierats.
+   * Klicka **Visa importinformation** om du vill kontrollera importresultaten för varje objekt.
 
-  Beteckningen av resan på arbetsytan, inklusive objekt i resan, t.ex. villkor, åtgärder, händelser, läsning av målgrupper osv. Hoppaktiviteten tas inte med i kopian.
+   ![](assets/journey-sandbox8.png)
 
-* Händelse
-
-  Händelserna och händelseinformationen som används under resan kopieras.
-
-* Åtgärd
-
-  De åtgärder och åtgärdsdetaljer som används under resan kopieras.
-
-Ytor (t.ex. förinställningar) kopieras inte över. Systemet väljer automatiskt den närmaste matchningen i målsandlådan baserat på meddelandetyp och ytnamn. Om det inte finns några ytor i målsandlådan misslyckas kopieringen av ytan. Det innebär att meddelandekopian också kommer att misslyckas eftersom ett meddelande kräver att en yta är tillgänglig för konfiguration. I det här fallet måste minst en yta skapas för den högra kanalen i meddelandet för att kopian ska fungera.
-
-För scheman, sammanfogningsprinciper och målgrupper refereras endast de objekten till andra gången de kopieras. De behandlas som objekt som redan finns och kommer att kopieras igen. Det innebär att dessa objekt bara kan kopieras en gång.
-
-Det tar fem minuter innan Adobe Journey Optimizer kan referera till scheman, kopplingsprofiler och målgrupper utan att ett fel visas på arbetsytan. Vänta i fem minuter så kommer dessa referenser att vara tillgängliga.
+1. Få åtkomst till målsandlådan och kontrollera alla kopierade objekt noggrant.

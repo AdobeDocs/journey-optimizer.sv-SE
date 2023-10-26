@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: skräddarsydd, allmän, evenemang, resa
 exl-id: b1813122-7031-452e-9ac5-a4ea7c6dc57c
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '436'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ Så här konfigurerar du en timeout för en händelse:
 
 1. Aktivera **[!UICONTROL Define the event timeout]** från händelseegenskaperna.
 
-1. Ange hur lång tid resan ska vänta på händelsen.
+1. Ange hur lång tid resan ska vänta på händelsen. Maximala längden är 29 dagar.
 
 1. Om du vill skicka personerna till en timeout-sökväg när ingen händelse tas emot inom den angivna tidsgränsen aktiverar du **[!UICONTROL Set a timeout path]** alternativ. Om det här alternativet inte är aktiverat avslutas kundresan för personen när tidsgränsen nås.
 

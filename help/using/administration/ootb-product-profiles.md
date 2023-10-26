@@ -9,14 +9,16 @@ role: Admin, User
 level: Intermediate
 keywords: behörigheter, författare, meddelanden
 exl-id: 5a968bd8-cf76-4242-aa80-3cfb3d551511
-source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
+source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 6%
+source-wordcount: '1151'
+ht-degree: 5%
 
 ---
 
 # Inbyggda roller {#ootb-product-profiles}
+
+Inbyggda roller är en uppsättning enhetsbehörigheter som ger användarna tillgång till vissa funktioner eller objekt i gränssnittet. Se [den här sidan](ootb-permissions.md) om du vill se en lista över tillgängliga behörigheter för att bygga upp din roll.
 
 ## [!DNL Campaign Administrator] {#campaign-administrator}
 

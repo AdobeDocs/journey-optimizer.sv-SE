@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 03c714833930511fa734662b637d2416728073c2
+source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '662'
 ht-degree: 4%
 
 ---
@@ -108,7 +108,23 @@ Nu kan du börja designa ditt SMS-meddelande via **[!UICONTROL Edit content]** -
 
    ![](assets/sms_tracking_2.png)
 
-1. I `originalUrl` klistra in den URL som du vill förkorta.
+1. I `originalUrl` klistra in den URL som du vill förkorta och klicka på **[!UICONTROL Save]**.
+
+1. Aktivera alternativet MMS för att lägga till media i SMS-innehåll.
+
+   MMS har ett antal begränsningar som anges i [den här sidan](../start/guardrails.md#sms-guardrails).
+
+   >[!NOTE]
+   >
+   > MMS-alternativet är bara tillgängligt med Sinch. Du måste skapa en specifik API-autentiseringsuppgift för att skapa MMS. [Läs mer](sms-configuration.md#create-new-api)
+
+   ![](assets/sms_create_6.png)
+
+1. Lägg till en **[!UICONTROL Title]** till era medier.
+
+1. Ange URL-adressen till dina media i dialogrutan **[!UICONTROL Media]** fält.
+
+   ![](assets/sms_create_7.png)
 
 1. Klicka **[!UICONTROL Save]** och kontrollera meddelandet i förhandsgranskningen. Du kan använda **[!UICONTROL Simulate content]** för att förhandsgranska dina förkortade URL:er eller personaliserat innehåll.
 

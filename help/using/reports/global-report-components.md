@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c487bb38-49ce-4238-8e94-8364f994cedd
-source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
+source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '1068'
 ht-degree: 3%
 
 ---
@@ -152,7 +152,7 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
 </tr> 
   <tr> 
    <td> Unika klick<br/> </td> 
-   <td> Antal mottagare som klickat på ett innehåll i ett e-postmeddelande.<br/> </td> 
+   <td> Antal mottagare som klickat på ett innehåll i ett e-postmeddelande.<br> Observera att de senaste tio dagarna beaktas när unika klick beräknas. Om en profil registrerar flera klick inom 10-dagarsperioden räknas de som unika klick. Om en profil har 2 klick med mer än 10 dagars mellanrum betraktas de dock inte som unika klick.<br/> </td> 
 </tr> 
   <tr> 
    <td>Unik klickfrekvens<br/> </td> 
@@ -160,7 +160,7 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
 </tr>
   <tr> 
    <td> Unika öppningar<br/> </td> 
-   <td>Antal mottagare som öppnade leveransen.<br/> </td> 
+   <td>Antal mottagare som öppnade leveransen. <br> Observera att de senaste tio dagarna beaktas när unika öppningar beräknas. Om en profil registrerar flera öppningar inom 10-dagarsperioden räknas de som unika öppningar. Om en profil har 2 öppningar med mer än 10 dagars mellanrum räknas de inte som unika öppningar.<br/> </td> 
 </tr> 
   <tr> 
    <td> Avprenumerationer<br/> </td> 

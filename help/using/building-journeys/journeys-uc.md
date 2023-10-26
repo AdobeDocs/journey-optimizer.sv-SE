@@ -9,9 +9,9 @@ role: User, Data Engineer
 level: Intermediate, Experienced
 keywords: användningsfall, flerkanal, meddelanden, resa, kanal, händelser, push
 exl-id: a1bbfcee-2235-4820-a391-d5d35f499cb0
-source-git-commit: 28a4f04ebcda27213d3bac763fb9bea8ea4a0146
+source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '735'
 ht-degree: 2%
 
 ---
@@ -24,13 +24,13 @@ I det här avsnittet visas ett användningsexempel som kombinerar en Läs publik
 
 ## Beskrivning av användningsfallet
 
-I det här fallet vill vi skicka ett första meddelande (e-post och push) till alla kunder som tillhör en viss målgrupp.
+I det här fallet vill vi skicka ett första e-postmeddelande till alla kunder som tillhör en viss målgrupp.
 
 Baserat på deras reaktion på det första meddelandet vill vi skicka specifika meddelanden.
 
-Efter det första meddelandet väntar vi en dag på att kunderna ska öppna push-meddelandet eller e-postmeddelandet. Om vi inte får någon reaktion skickar vi ett uppföljningsmejl till dem.
+Om kunden öppnar e-postmeddelandet väntar vi på ett köp och skickar ett push-meddelande som tackar kunden.
 
-Sedan väntar vi på ett köp och skickar ett push-meddelande till kunden för att tacka.
+Om vi inte får någon reaktion skickar vi ett uppföljningsmejl till dem.
 
 ## Förutsättningar
 
@@ -93,21 +93,13 @@ Händelsen är nu konfigurerad och klar att användas under din resa. Genom att 
 
    ![](assets/jo-uc5.png)
 
-1. Placera markören på e-postaktiviteten och klicka på plustecknet (+) för att skapa en ny sökväg.
+1. Lägg till en **Reaktion** event och select **E-post öppnad**. Händelsen utlöses när en person som tillhör målgruppen öppnar e-postmeddelandet.
 
-1. Lägg till en **Reaktion** event och select **Push öppnad**. Händelsen utlöses när en person som tillhör målgruppen öppnar den push-versionen av det första meddelandet.
-
-1. Lägg till en **Reaktion** event och select **E-post öppnad**. Händelsen utlöses när personen öppnar e-postmeddelandet.
-
-1. I någon av reaktionsaktiviteterna ska du kontrollera **Definiera tidsgränsen för händelsen** , definiera en varaktighet (1 dag i exemplet) och markera **Ange en tidsgränssökväg**. Detta skapar en ny sökväg för personer som inte öppnar det första push- eller e-postmeddelandet.
-
-   >[!NOTE]
-   >
-   >När du konfigurerar en timeout för flera händelser (de två reaktionerna i det här fallet) behöver du bara konfigurera timeout för en av dessa händelser.
+1. Kontrollera **Definiera tidsgränsen för händelsen** , definiera en varaktighet (1 dag i exemplet) och markera **Ange en tidsgränssökväg**. Detta skapar en ny sökväg för personer som inte öppnar det första push- eller e-postmeddelandet.
 
 1. Släpp en **E-post** Åtgärdsaktivitet och definiera innehållet i&quot;uppföljningsmeddelandet&quot;. Det här meddelandet skickas till de personer som inte öppnar e-postmeddelandet eller skickar det första meddelandet nästa dag. Se detta [section](../email/create-email.md) om du vill lära dig hur du konfigurerar och utformar ett e-postmeddelande.
 
-1. Koppla de tre sökvägarna till inköpshändelsen som skapades tidigare. Händelsen utlöses när en person gör ett köp.
+1. Lägg till den inköpshändelse som skapades tidigare i den första sökvägen. Händelsen utlöses när en person gör ett köp.
 
 1. Efter händelsen släpper du en **Push** aktiviteten och definiera innehållet i tackmeddelandet. Se detta [section](../push/create-push.md) om du vill lära dig hur du konfigurerar och utformar en push-lösning.
 

@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 2%
+source-wordcount: '936'
+ht-degree: 3%
 
 ---
 
@@ -124,17 +124,17 @@ I **[!UICONTROL Actions]** skapar du meddelandet som ska skickas med kampanjen.
 
 Klicka på **[!UICONTROL Select audience]** för att visa en lista över tillgängliga Adobe Experience Platform-målgrupper. [Läs mer om målgrupper](../audience/about-audiences.md)
 
->[!NOTE]
+>[!IMPORTANT]
+>
+>För närvarande används målgrupper [importerad från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) till kampanjer finns som en privat betaversion. Kontakta din Adobe-representant om du vill veta mer.
 >
 >För API-utlösta kampanjer måste målgruppen anges via API-anrop. [Läs mer](api-triggered-campaigns.md)
 
-I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera individerna från det valda segmentet. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace)
+I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera individerna från det valda segmentet.
+
+Individer som tillhör ett segment som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kommer inte att omfattas av kampanjen. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace)
 
 ![](assets/create-campaign-namespace.png)
-
->[!NOTE]
->
->Individer som tillhör ett segment som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kommer inte att omfattas av kampanjen.
 
 <!--If you are are creating an API-triggered campaign, the **[!UICONTROL cURL request]** section allows you to retrieve the **[!UICONTROL Campaign ID]** to use in the API call. [Learn more](api-triggered-campaigns.md)-->
 

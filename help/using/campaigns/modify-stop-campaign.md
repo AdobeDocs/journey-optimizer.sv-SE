@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: hantera kampanjer, status, schema, åtkomst, optimering
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
-source-git-commit: d4ecfecdc74c26890658d68d352c36b75f7c9039
+source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '549'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Som standard visas alla kampanjer med **[!UICONTROL Draft]**, **[!UICONTROL Sche
 
 Dessutom kan du filtrera listan baserat på kampanjtyp och kanal, eller de taggar som har tilldelats kampanjerna när de skapas. [Lär dig hur du tilldelar taggar till en kampanj](create-campaign.md#create)
 
-## Kampanjstatus {#statuses}
+## Kampanjstatus och larm {#statuses}
 
 Kampanjer kan ha flera statusvärden:
 
@@ -47,6 +47,10 @@ Kampanjer kan ha flera statusvärden:
 >[!NOTE]
 >
 >Ikonen&quot;Öppna utkast&quot; bredvid en **[!UICONTROL Live]** eller **[!UICONTROL Scheduled]** status anger att en ny version av kampanjen har skapats och ännu inte har aktiverats. [Läs mer](modify-stop-campaign.md#modify).
+
+När ett fel inträffar inom en av era kampanjer visas en varningsikon bredvid kampanjens status. Klicka på den för att visa information om varningen. Dessa varningar kan inträffa i olika situationer, t.ex. när kampanjmeddelandet inte har publicerats eller om den valda ytan är felaktig.
+
+![](assets/campaign-alerts.png)
 
 ## Ändra en återkommande kampanj {#modify}
 

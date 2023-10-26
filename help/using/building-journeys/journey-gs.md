@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1690'
 ht-degree: 8%
 
 ---
@@ -130,7 +130,7 @@ The **Kopiera teknisk information** Med kan du kopiera teknisk information om de
 
 Som standard tillåter nya resor återinträde. Du kan avmarkera **Tillåt återinträde** om du vill erbjuda en engångspresentation när en person går in i en affär.
 
-När **Tillåt återinträde** är aktiverat, **Vänteperiod för återinträde** -fältet visas. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter.
+När **Tillåt återinträde** är aktiverat, **Vänteperiod för återinträde** -fältet visas. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 29 dagar.
 
 Läs mer om hantering av profilentré och återinträde på marknaden i [det här avsnittet](entry-management.md).
 

@@ -8,9 +8,9 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: d4ecfecdc74c26890658d68d352c36b75f7c9039
+source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1227'
 ht-degree: 30%
 
 ---
@@ -41,13 +41,15 @@ API:er för resor har stöd för upp till 5 000 händelser per sekund, men vissa
 
 Varje gång ett API-anrop utförs via resor skickas det via API-motorn. Om gränsvärdet i API:t nås, avvisas anropet antingen om du använder API:t för begränsning, eller köas i upp till 6 timmar och behandlas så snart som möjligt i den ordning som de togs emot om du använder API:t för begränsning.
 
-Anta till exempel att du har definierat en regel för reglering eller begränsning på 100 anrop per sekund för det externa systemet. Ditt system anropas av en anpassad åtgärd på tio olika resor. Om en resa tar emot 200 anrop per sekund används de 100 tillgängliga facken och de 100 återstående facken tas bort eller köas. Eftersom den högsta nivån har överskridits har de övriga nio resorna inte några fack kvar. Denna precision hjälper till att skydda det externa systemet från överbelastning och krascher.
+Anta till exempel att du har definierat en regel för reglering eller begränsning på 200 anrop per sekund för det externa systemet. Ditt system anropas av en anpassad åtgärd på tio olika resor. Om en resa tar emot 300 anrop per sekund används de 200 tillgängliga facken och de 100 återstående facken tas bort eller köas. Eftersom den högsta nivån har överskridits har de övriga nio resorna inte några fack kvar. Denna precision hjälper till att skydda det externa systemet från överbelastning och krascher.
 
 >[!IMPORTANT]
 >
 >**Regleringsregler** är konfigurerade på sandlådenivå, för en specifik slutpunkt (den anropade URL:en), men är globala till alla resor i den sandlådan. Det finns ett tak för både datakällor och anpassade åtgärder.
 >
 >**Begränsningsregler** konfigureras endast för produktionssandlådor, för en specifik slutpunkt, men är globala för alla resor över alla sandlådor. Du kan bara ha en begränsningskonfiguration per organisation. Begränsning är bara tillgängligt för anpassade åtgärder.
+>
+>The **maxCallCount** värdet måste vara större än 1.
 
 Mer information om hur du arbetar med API:erna finns i följande avsnitt:
 
@@ -64,7 +66,7 @@ För **externa datakällor** är det maximala antalet anrop per sekund begränsa
 >
 >Om en datakälla använder en anpassad autentisering med en annan slutpunkt än den som används för datakällan måste du kontakta Adobe för att även inkludera den slutpunkten i tillåtelselistan.
 
-För **anpassade åtgärder** måste du utvärdera kapaciteten för ditt externa API. Om Journey Optimizer t.ex. skickar 1 000 anrop per sekund och systemet bara har stöd för 100 anrop per sekund, måste du definiera en konfiguration för reglering eller begränsning så att systemet inte blir mättat. [Läs mer om hur du konfigurerar åtgärder](../action/action.md)
+För **anpassade åtgärder** måste du utvärdera kapaciteten för ditt externa API. Om Journey Optimizer t.ex. skickar 1 000 anrop per sekund och systemet bara har stöd för 200 anrop per sekund, måste du definiera en konfiguration för reglering eller begränsning så att systemet inte blir mättat. [Läs mer om hur du konfigurerar åtgärder](../action/action.md)
 
 ## Timeout och försök igen{#timeout}
 

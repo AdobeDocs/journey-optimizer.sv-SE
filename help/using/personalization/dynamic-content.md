@@ -9,9 +9,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, dynamiskt innehåll
 exl-id: 639ad7df-0d0f-4c9b-95d1-f3101267aae2
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -60,13 +60,13 @@ Stegen för att lägga till dynamiskt innehåll i uttryck är följande:
 
 Stegen för att skapa varianter av en innehållskomponent i e-postdesignern är följande:
 
-1. Markera en innehållskomponent i e-postdesignern och klicka sedan på **[!UICONTROL Enable conditional content]**.
+1. I [E-postdesigner](../email/content-from-scratch.md), markera en innehållskomponent och klicka sedan på **[!UICONTROL Enable conditional content]**.
 
    ![](assets/conditions-enable-conditional.png)
 
 1. The **[!UICONTROL Conditional Content]** visas till vänster. I den här rutan kan du skapa flera varianter av den markerade innehållskomponenten med villkor.
 
-   Konfigurera din första variant genom att välja **[!UICONTROL Apply condition]** -knappen.
+   Konfigurera din första variant genom att välja **[!UICONTROL Select condition]** -knappen.
 
    ![](assets/conditions-apply.png)
 
@@ -76,9 +76,11 @@ Stegen för att skapa varianter av en innehållskomponent i e-postdesignern är 
 
    Du kan också skapa en ny regel genom att klicka på **[!UICONTROL Create new]**. [Lär dig hur du skapar villkor](create-conditions.md)
 
-1. Den villkorliga regeln är kopplad till varianten. För bättre läsbarhet rekommenderar vi att du byter namn på varianten genom att klicka på ellipsmenyn.
+1. Den villkorliga regeln är kopplad till varianten. Byt namn på varianten genom att välja **[!UICONTROL Rename]** från ikonen Fler åtgärder.
 
-   Konfigurera nu hur komponenten ska visas om regeln uppfylls när meddelandet skickas. I det här exemplet vill vi visa texten på franska om det är mottagarens favoritspråk.
+   ![](assets/conditions-rename.png)
+
+1. Konfigurera hur komponenten ska visas om regeln uppfylls när meddelandet skickas. I det här exemplet vill vi visa texten på franska om det är mottagarens favoritspråk.
 
    ![](assets/conditions-design.png)
 
@@ -88,3 +90,7 @@ Stegen för att skapa varianter av en innehållskomponent i e-postdesignern är 
    >Om inga regler som definieras i varianterna uppfylls när meddelandet skickas, kommer innehållskomponenten att visa innehållet som definierats i **[!UICONTROL Default variant]**.
    >
    >Villkorligt innehåll utvärderas mot kopplade regler i den ordning som varianterna visas. Standardvarianten visas alltid om inga andra villkor uppfylls.
+
+1. Om du vill ta bort en variant klickar du på ikonen Fler åtgärder bredvid önskad variant och väljer **[!UICONTROL Delete]**.
+
+   ![](assets/conditions-delete.png)

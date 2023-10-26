@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
 workflow-type: tm+mt
-source-wordcount: '2294'
+source-wordcount: '2308'
 ht-degree: 1%
 
 ---
@@ -95,7 +95,7 @@ The **[!UICONTROL Offer eligibility]** kan ni begränsa erbjudandet till specifi
 
 * Om du vill associera en viss [beslutsregel](../offer-library/creating-decision-rules.md) till erbjudandet väljer du **[!UICONTROL By defined decision rule]** och sedan dra den önskade regeln från den vänstra rutan till **[!UICONTROL Decision rule]** område.
 
-  ![](../assets/offer_rule.png)
+  ![](../assets/offer-rule.png)
 
   >[!CAUTION]
   >
@@ -146,7 +146,7 @@ Genom att begränsa antalet gånger användarna får specifika erbjudanden kan n
 
 Följ huvudstegen nedan när du vill ställa in capping.
 
-1. Se till att **[!UICONTROL Include capping]** växlingsknappen är markerad. Takning ingår som standard.
+1. Se till att **[!UICONTROL Enable capping]** växlingsknappen är markerad. Takning är aktiverat som standard.
 
    >[!CAUTION]
    >
@@ -160,7 +160,7 @@ Följ huvudstegen nedan när du vill ställa in capping.
 
 1. Ange **[!UICONTROL Frequency]** för att definiera hur ofta antalet capping återställs. [Läs mer](#frequency-capping)
 
-1. Om du har definierat flera [representationer](add-representations.md) för ditt erbjudande, ange om du vill tillämpa begränsning **[!UICONTROL Across all placements]** eller **[!UICONTROL For each placement]**. [Läs mer](#placements)
+1. Om du har definierat flera [representationer](add-representations.md) för ditt erbjudande, ange om du vill tillämpa begränsning **över alla placeringar** eller **till varje placering**. [Läs mer](#placements)
 
 1. När erbjudandet har sparats och godkänts, och om det har angetts det antal gånger som du har angett i det här fältet enligt villkoren och tidsramen som du definierade, upphör leveransen.
 
@@ -179,7 +179,7 @@ Det antal gånger ett erbjudande föreslås beräknas vid e-postförberedelsen. 
 >title="Impression"
 >abstract="Användningen av visningar som capping-händelser är endast tillgänglig för inkommande kanaler."
 
-The **[!UICONTROL Capping event]** kan du definiera vilket **[!UICONTROL Capping event]** kommer att beaktas för att öka räknaren:
+The **[!UICONTROL Capping event]** kan du definiera vilken händelse som ska beaktas för att öka räknaren:
 
 ![](../assets/offer-capping-event.png)
 
@@ -219,7 +219,7 @@ The **[!UICONTROL Capping event]** kan du definiera vilket **[!UICONTROL Capping
 
 ### Antal tak {#capping-count}
 
-The **[!UICONTROL Capping count]** kan du ange hur många gånger erbjudandet kan presenteras.
+The **[!UICONTROL Capping count limit]** kan du ange hur många gånger erbjudandet kan presenteras.
 
 ![](../assets/offer-capping-times.png)
 
@@ -227,7 +227,7 @@ The **[!UICONTROL Capping count]** kan du ange hur många gånger erbjudandet ka
 >
 >Talet måste vara ett heltal större än 0.
 
-Du har till exempel definierat en anpassad capping-händelse som antalet utcheckningar som ska beaktas. Om du anger 10 i dialogrutan **[!UICONTROL Capping count]** inga fler erbjudanden skickas efter 10 utcheckningar.
+Du har till exempel definierat en anpassad capping-händelse som antalet utcheckningar som ska beaktas. Om du anger 10 i dialogrutan **[!UICONTROL Capping count limit]** inga fler erbjudanden skickas efter 10 utcheckningar.
 
 ### Taktyp {#capping-type}
 
@@ -258,7 +258,7 @@ The **[!UICONTROL Frequency]** kan du definiera hur ofta antalet capping återst
 >
 >Återställningen sker kl. 12.00 UTC, den dag du har definierat eller den första dagen i veckan/månaden när det är tillämpligt. Veckostartdagen är söndag. En varaktighet som du väljer får inte överstiga 2 år (dvs. motsvarande antal månader, veckor eller dagar).
 
-Om du till exempel vill att antalet fästingar ska återställas varannan vecka väljer du **[!UICONTROL Weekly]** från **[!UICONTROL Repeat]** nedrullningsbar lista och typ **2** i det andra fältet. Återställningen sker varannan söndag kl. 12.00 UTC.
+Om du till exempel vill att antalet fästingar ska återställas varannan vecka väljer du **[!UICONTROL Weekly]** från motsvarande nedrullningsbar lista och typ **2** i det andra fältet. Återställningen sker varannan söndag kl. 12.00 UTC.
 
 >[!CAUTION]
 >
@@ -268,15 +268,15 @@ Om du till exempel vill att antalet fästingar ska återställas varannan vecka 
 
 ### Takning och placeringar {#placements}
 
-Om du har definierat flera [representationer](add-representations.md) för ditt erbjudande, ange om du vill tillämpa begränsning **[!UICONTROL Across all placements]** eller **[!UICONTROL For each placement]**.
+Om du har definierat flera [representationer](add-representations.md) Ange om du vill tillämpa begränsning på alla eller alla placeringar.
 
 ![](../assets/offer-capping-placement.png)
 
-* **[!UICONTROL Across all placements]**: antalet appar innebär att alla beslut summeras för alla ersättningar som är kopplade till erbjudandet.
+* **[!UICONTROL Apply capping across all placements]**: antalet appar innebär att alla beslut summeras för alla ersättningar som är kopplade till erbjudandet.
 
   Om ett erbjudande till exempel har **E-post** placering och en **Webb** placeringen, och du ställer in cappen på **2 per profil för alla placeringar** kan varje profil få upp till två gånger i rabatt, oberoende av placeringsmix.
 
-* **[!UICONTROL For each placement]**: antalet licenser tillämpas separat på antalet beslut för varje placering.
+* **[!UICONTROL Apply capping to each placement]**: antalet licenser tillämpas separat på antalet beslut för varje placering.
 
   Om ett erbjudande till exempel har **E-post** placering och en **Webb** placeringen, och du ställer in cappen på **2 per profil för varje placering** kan varje profil få upp till två gånger för e-postplaceringen och ytterligare två gånger för webblatsplaceringen.
 

@@ -8,10 +8,10 @@ role: User
 level: Intermediate
 keywords: återinträde, resa, profil, återkommande
 exl-id: 8874377c-6594-4a5a-9197-ba5b28258c02
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 0%
+source-wordcount: '597'
+ht-degree: 1%
 
 ---
 
@@ -35,6 +35,8 @@ På enastående resor kan du aktivera eller inaktivera återinträde:
 
 Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet för engångsresor, till exempel om du vill erbjuda en engångspresentation när en person besöker en butik. I så fall får kunden inte kunna återuppta resan och få erbjudandet igen. När en resa avslutas är dess status **[!UICONTROL Closed]**. Nya individer kan inte längre komma in på resan. Personer som redan är på resan slutför resan normalt. [Läs mer](journey-gs.md#entrance)
 
+När **Tillåt återinträde** är aktiverat, **Vänteperiod för återinträde** I kan du definiera väntetiden innan du tillåter att en profil går in på resan igen. Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 29 dagar.
+
 ![](assets/journey-re-entrance.png)
 
 Efter standardinställningen [global timeout](journey-gs.md#global_timeout) om 30 dagar ändras resan till **Slutförd** status. Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan. Detta beteende är inställt för endast 30 dagar (d.v.s. standardvärdet för timeout för resa) eftersom all information om profiler som har gått in i resan tas bort 30 dagar efter att de har gått in. Efter den perioden kan profiler återinträda i resan. För att undvika detta och helt inaktivera återinträde för dessa profiler kan du lägga till ett villkor som testar om profilen redan har angetts eller inte, med hjälp av profil- eller målgruppsdata.
@@ -42,9 +44,7 @@ Efter standardinställningen [global timeout](journey-gs.md#global_timeout) om 3
 <!--
 Due to the 30-day journey timeout, when journey re-entrance is not allowed, we cannot make sure the re-entrance blocking will work more than 30 days. Indeed, as we remove all information about persons who entered the journey 30 days after they enter, we cannot know the person entered previously, more than 30 days ago. -->
 
-Enhetsresor (som inleds med en händelse eller en publikation) innehåller ett skyddsräcke som förhindrar att resorna aktiveras felaktigt flera gånger för samma händelse. Återinträde av profiler blockeras tillfälligt som standard i 5 minuter. Om en händelse till exempel utlöser en resa kl. 12:01 för en viss profil och en annan tar emot kl. 12:03 (oavsett om det är samma händelse eller en annan som utlöser samma resa) kommer den resan inte att starta igen för den här profilen.
-
-Nyckeln används också för att kontrollera att en person befinner sig på en resa. En person kan faktiskt inte befinna sig på två olika platser på samma resa. Därför tillåter systemet inte att samma nyckel, till exempel nyckeln CRMID=3224, finns på olika platser under samma resa.
+Nyckeln används för att kontrollera att en person befinner sig på en resa. En person kan faktiskt inte befinna sig på två olika platser på samma resa. Därför tillåter systemet inte att samma nyckel, till exempel nyckeln CRMID=3224, finns på olika platser under samma resa.
 
 ## Läs målgruppsresor{#entry-read-segment}
 

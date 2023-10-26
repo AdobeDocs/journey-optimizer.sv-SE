@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: vänta, aktivitet, resa, nästa, arbetsyta
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '464'
 ht-degree: 5%
 
 ---
@@ -45,7 +45,7 @@ Det är bäst att inte använda väntetider för att blockera återinträde. Anv
 
 ## Väntetid{#duration}
 
-Ange väntetiden innan nästa aktivitet körs.
+Ange väntetiden innan nästa aktivitet körs. Maximala längden är 29 dagar.
 
 ![](assets/journey55.png)
 
