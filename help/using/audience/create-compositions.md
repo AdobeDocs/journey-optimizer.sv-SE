@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 8b978900-fcef-46f2-bc19-70776e4f3d43
-source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
+source-git-commit: 2344d53a331cb883a81a051ce1e06e8c42824cb7
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,9 @@ Så här skapar du ett dispositionsarbetsflöde:
 >title="Publicera er målgrupp"
 >abstract="Publicera materialet för att spara målgrupper i Adobe Experience Platform."
 
-Alla skapade kompositioner kan nås via **[!UICONTROL Compositions]** -fliken. De kan ha flera statusar:
+Alla skapade kompositioner kan nås via **[!UICONTROL Compositions]** -fliken. Du kan när som helst duplicera eller ta bort en befintlig komposition med hjälp av ellipsknappen i listan.
+
+Kompositioner kan ha flera statusvärden:
 
 * **[!UICONTROL Draft]**: kompositionen pågår och har inte publicerats.
 * **[!UICONTROL Published]**: kompositionen har publicerats, målgrupperna har sparats och är tillgängliga för användning.
@@ -83,4 +85,4 @@ Alla skapade kompositioner kan nås via **[!UICONTROL Compositions]** -fliken. D
 
 >[!NOTE]
 >
->Du kan när som helst duplicera eller ta bort en befintlig komposition med hjälp av ellipsknappen i listan.
+>Målgruppskomposition är för närvarande inte integrerat med funktionen för återställning av sandlådor. Innan du initierar en sandlådeåterställning måste du ta bort dina kompositioner manuellt för att se till att de associerade målgruppsdata rensas ordentligt. Detaljerad information finns i Adobe Experience Platform [Sandlådedokumentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html#delete-audience-compositions)
