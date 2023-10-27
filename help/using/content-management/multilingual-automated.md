@@ -10,9 +10,9 @@ level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 hide: true
 hidefromtoc: true
-source-git-commit: 90aeb777276e1e72c3099272f00e3700e06c83bf
+source-git-commit: 8c95f35049da1b7ced9a5ecd9e267a8847c12481
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '1121'
 ht-degree: 1%
 
 ---
@@ -76,7 +76,10 @@ Starta översättningsprojektet genom att ange språkområdet som mål, vilket a
 
    ![](assets/translation_project_2.png)
 
-1. Välj om dina översättningar ska publiceras automatiskt efter godkännande och om du vill aktivera granskningsarbetsflödet.
+1. Välj om du vill aktivera följande alternativ:
+
+   * **[!UICONTROL Automatically publish approved translations]**: När översättningarna har godkänts integreras de automatiskt i kampanjen utan att något manuellt ingripande behövs.
+   * **[!UICONTROL Enable Review workflow]**: Gäller endast för översatta språkområden. På så sätt kan en intern granskare effektivt utvärdera och antingen godkänna eller avvisa översatt innehåll. [Läs mer](#review-translation-project)
 
 1. Klicka **[!UICONTROL Add locale]** för att öppna menyn och definiera språk för översättningsprojektet.
 
@@ -87,6 +90,8 @@ Starta översättningsprojektet genom att ange språkområdet som mål, vilket a
 1. Välj i listan **[!UICONTROL Target locale(s)]** och välja vilken **[!UICONTROL Translation provider]** som du vill använda för varje språkområde.
 
 1. Klicka **[!UICONTROL Add a locale]** när du har länkat målspråket till rätt översättningsleverantör. Klicka sedan på **[!UICONTROL Save]**.
+
+   Observera, att om en provider är nedtonad för ett målland innebär det att providern inte stöder det aktuella språkområdet.
 
    ![](assets/translation_project_4.png)
 
@@ -192,12 +197,33 @@ Din kampanj är nu aktiverad. Meddelandet som konfigurerats i kampanjen skickas 
 
 När ni har skickat dem kan ni mäta effekten av era kampanjer i kampanjrapporterna.
 
+## Hantera internt översättningsprojekt {#manage-ht-project}
+
+Om du valde den interna översättningen när du konfigurerade språkinställningarna kan du översätta innehållet direkt i översättningsprojektet.
+
+1. Från **[!UICONTROL Translation project]**, få åtkomst till **[!UICONTROL More actions]** meny och välj **[!UICONTROL In-house translation]**.
+
+   ![](assets/inhouse-translation-1.png)
+
+1. Du kan exportera din CSV-fil för översättning med hjälp av ett externt översättningsprogram. Du kan även importera CSV-filen tillbaka till översättningsprojektet genom att klicka på **[!UICONTROL Import CSV]** -knappen.
+
+   ![](assets/inhouse-translation-3.png)
+
+1. Klicka **[!UICONTROL Edit]** för att lägga till översättningsinnehåll.
+
+   ![](assets/inhouse-translation-2.png)
+
+1. Om du vill publicera den översatta texten klickar du på **[!UICONTROL Finalize]**.
+
 ## Granska ditt översättningsprojekt {#review-translation-project}
 
-Om du valde **[!UICONTROL Enable review worflow]** i **[!UICONTROL Translation project]**kan du granska översättningen direkt i Journey Optimizer när du är klar av den valda översättningsleverantören.
-Observera att om det här alternativet är inaktiverat, när översättningen är klar av din leverantör, ställs översättningsuppgiftens status automatiskt in på **[!UICONTROL Reviewed]** så att du snabbt kan fortsätta genom att klicka **[!UICONTROL Send to Product]**.
+Om du valde **[!UICONTROL Enable review worflow]** i **[!UICONTROL Translation project]** kan du granska översättningen direkt i Journey Optimizer när du är klar av den valda översättningsleverantören.
+
+Observera att om det här alternativet är inaktiverat, när översättningen är klar av din leverantör, ställs översättningsuppgiftens status automatiskt in på **[!UICONTROL Reviewed]** så att du snabbt kan fortsätta genom att klicka **[!UICONTROL Publish]**.
 
 1. När översättningen är klar från din tjänsteleverantör kan du få åtkomst till översättningen för granskning från din **[!UICONTROL Translation project]** eller direkt från **[!UICONTROL Campaign]**.
+
+   Från **[!UICONTROL More actions]** meny, klicka **[!UICONTROL Review]**.
 
    ![](assets/translation_review_1.png)
 
@@ -219,7 +245,7 @@ Observera att om det här alternativet är inaktiverat, när översättningen ä
 
 1. Klicka **[!UICONTROL Preview]** för att kontrollera återgivningen av det översatta innehållet på varje språk.
 
-1. När du är nöjd med översättningen klickar du **[!UICONTROL Finalize]**.
+1. Om du vill publicera den översatta texten klickar du på **[!UICONTROL Finalize]**.
 
    ![](assets/translation_review_5.png)
 
@@ -229,7 +255,7 @@ Observera att om det här alternativet är inaktiverat, när översättningen ä
 
 1. När du **[!UICONTROL Translation project]** statusen är Granskad, du kan skicka den till din kampanj.
 
-   Klicka på den avancerade menyn **[!UICONTROL Publish]**.
+   Från **[!UICONTROL More actions]** meny, klicka **[!UICONTROL Publish]**.
 
    ![](assets/translation_review_7.png)
 
