@@ -11,9 +11,9 @@ keywords: IP, leverans
 hide: true
 hidefromtoc: true
 exl-id: 393f051d-b86d-4b4f-b564-7a9ae3a5d4b8
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: eb4a4929de17f0b57216f69e00da6314f7b59b07
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '274'
 ht-degree: 2%
 
 ---
@@ -50,7 +50,7 @@ Med [!DNL Journey Optimizer]kan du enkelt utföra arbetsflöden för IP-värmare
 
 När e-postmeddelanden skickas via en ny plattform, är Internetleverantörer (ISP) misstänkta för IP-adresser som inte känns igen. Om stora mängder e-postmeddelanden plötsligt skickas markerar internetleverantörerna dem ofta som skräppost.
 
-För att undvika att markeras som skräppost kan du öka volymen som skickas stegvis med funktionen för IP-värmerappning. Det här nya alternativet i **[!UICONTROL Administration]** gör det enklare att göra det på ett konsoliderat sätt i stället för att skapa komplexa dagliga resor. Detta bör säkerställa en smidig utveckling av startfasen och göra det möjligt att minska den totala frekvensen av ogiltiga adresser.
+För att undvika att markeras som skräppost kan du öka volymen som skickas stegvis med funktionen för IP-värmerappning. Det här nya alternativet i **[!UICONTROL Administration]** gör det enklare att göra det på ett konsoliderat sätt i stället för att skapa komplexa dagliga resor.
 
 >[!NOTE]
 >

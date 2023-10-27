@@ -11,9 +11,9 @@ keywords: IP, grupp, underdomäner, leveransbarhet
 hide: true
 hidefromtoc: true
 exl-id: 752ffd7f-09c2-4aa3-a067-2dbe0634709c
-source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
+source-git-commit: eb4a4929de17f0b57216f69e00da6314f7b59b07
 workflow-type: tm+mt
-source-wordcount: '1644'
+source-wordcount: '1664'
 ht-degree: 0%
 
 ---
@@ -61,20 +61,21 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
 1. För varje fas väljer du den kampanj som du vill associera med den här fasen i IP-värmerapporten.
 
+   >[!NOTE]
+   >
+   >Du kan inte välja en kampanj som redan används i en annan IP-uppvärmningsplan. Men samma kampanj kan användas i en eller flera faser i samma IP-värpportplan.
+
    ![](assets/ip-warmup-plan-select-campaign.png)
 
    >[!IMPORTANT]
    >
-   >    * Bara kampanjer med **[!UICONTROL IP warmup plan activation]** option enabled <!--and live?--> kan väljas. [Läs mer](#create-ip-warmup-campaign)
+   >* Bara kampanjer med **[!UICONTROL IP warmup plan activation]** aktiverat alternativ är tillgängligt för markering. [Läs mer](#create-ip-warmup-campaign)
    >
    >* Du måste välja en kampanj som använder samma yta som den som valts för den aktuella IP-värmerapporten.
-   >
-   >* Du kan inte välja en kampanj som redan används i en annan IP-uppvärmningsplan.
-
 
 1. I **[!UICONTROL Profile exclusion]** ser du att profilerna från tidigare körningar av den fasen alltid är exkluderade. Om en profil i Kör 1 till exempel täcks av de första 4 800 målpersonerna, ser systemet automatiskt till att samma profil inte får e-postmeddelandet i Kör 2.
 
-1. Från **[!UICONTROL Campaign audiences excluded]** väljer du målgrupper från andra <!--executed/live?-->kampanjer som du vill utesluta från den aktuella fasen.
+1. Från **[!UICONTROL Campaign audiences excluded]** väljer du kampanjmålgrupper från andra <!--executed/live?-->kampanjer som du vill utesluta från den aktuella fasen.
 
    ![](assets/ip-warmup-plan-exclude-campaigns.png)
 
@@ -155,7 +156,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
    >[!NOTE]
    >
-   >Om du inte vill använda **[!UICONTROL Last engagement]** parametern till den aktuella körningen, ställer du in den på 0.
+   >Om du inte vill tillämpa någon åtagandeperiod på en körning anger du 0 i dialogrutan **[!UICONTROL Last engagement]** fält.
 
 1. Välj **[!UICONTROL Pause for errors]** om du vill avbryta en körning om de kvalificerade profilerna är mindre än målprofilerna när målgruppen har utvärderats för den körningen.
 
