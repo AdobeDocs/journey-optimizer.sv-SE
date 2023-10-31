@@ -9,9 +9,9 @@ role: User, Developer, Data Engineer
 level: Experienced
 keywords: sandlåda, resa, kopia, miljö
 exl-id: 8c63f2f2-5cec-4cb2-b3bf-2387eefb5002
-source-git-commit: b2a9a118b663c757a026c62b18e00d1f53e26317
+source-git-commit: 25306e8300942d2d4683771a6d66ed6c5e5823fc
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,10 @@ Med Sandbox Tooling kan du kopiera objekt över flera sandlådor genom att utnyt
 
 Den här sidan beskriver hur du använder sandlådeverktyg i Journey Optimizer. Mer information om själva funktionen finns i [Experience Platform dokumentation](https://experienceleague.corp.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html).
 
+>[!NOTE]
+>
+>Den här funktionen kräver följande behörigheter: manage-sandbox (eller view-sandbox) och manage-package.
+
 ## Kom igång med sandlådeverktyg{#sandbox-gs}
 
 Med Journey Optimizer kan du kopiera en hel resa från en sandlåda till en annan. Du kan t.ex. kopiera en resa från sandlådemiljön på scenen till produktionssandlådan. Förutom själva resan kopierar Journey Optimizer även de flesta av de objekt som resan är beroende av: målgrupper, scheman, händelser och handlingar. Mer information om kopierade objekt finns i [section](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html#abobe-journey-optimizer-objects).
@@ -54,19 +58,24 @@ Med Journey Optimizer kan du kopiera en hel resa från en sandlåda till en anna
 
 De kopierade objekten i målsandlådan är unika och det finns ingen risk för att befintliga element skrivs över. Både resan och alla meddelanden under resan överförs i utkastläge. På så sätt kan du utföra en grundlig validering innan den publiceras i målsandlådan. Kopieringsprocessen kopierar bara metadata om resan och objekten i den resan. Inga profil- eller datauppsättningsdata kopieras som en del av den här processen.
 
-## Exportera resan {#export}
+Kopieringsprocessen utförs via en paketexport och import mellan käll- och målsandlådorna. Här är de allmänna stegen för att kopiera en resa från en sandlåda till en annan:
 
-Så här kopierar du en resa till en annan sandlåda:
+1. Lägg till resan som ett paket i källsandlådan.
+1. Exportera paketet till målsandlådan.
+
+## Lägg till resan som ett paket{#export}
+
+Om du vill kopiera en resa till en annan sandlåda måste du först lägga till resan som ett paket i källsandlådan. Följ de här stegen:
 
 1. Klicka på **[!UICONTROL Journeys]**. Listan över resor visas.
 
 1. Sök efter den resa du vill kopiera och klicka på **Fler åtgärder** ikon (de tre punkterna bredvid resans namn) och klicka på **Lägg till i paket**.
 
-![](assets/journey-sandbox1.png)
+   ![](assets/journey-sandbox1.png)
 
-The **Lägg till i paket** visas.
+   The **Lägg till i paket** visas.
 
-![](assets/journey-sandbox2.png)
+   ![](assets/journey-sandbox2.png)
 
 1. Välj om du vill lägga till resan i ett befintligt paket eller skapa ett nytt paket:
 
@@ -85,9 +94,11 @@ The **Lägg till i paket** visas.
 
    ![](assets/journey-sandbox9.png)
 
-## Importera resan {#import}
+## Exportera paketet till målsandlådan {#import}
 
-1. Klicka på ikonen + bredvid paketnamnet i paketlistan.
+När paketet har publicerats måste du exportera det till målsandlådan.
+
+1. Klicka på **[!UICONTROL Sandboxes]** väljer du **Paket** och klicka på ikonen + bredvid det paket som du vill exportera.
 
    ![](assets/journey-sandbox5.png)
 
