@@ -11,7 +11,7 @@ keywords: IP, grupp, underdomäner, leveransbarhet
 hide: true
 hidefromtoc: true
 exl-id: 752ffd7f-09c2-4aa3-a067-2dbe0634709c
-source-git-commit: eb4a4929de17f0b57216f69e00da6314f7b59b07
+source-git-commit: 43e13026b739e855ed82603531802e29af1ada18
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 0%
@@ -190,7 +190,7 @@ Se till att du har schemalagt tillräckligt med tid för att tillåta [segmenter
 >
 >Varje körning måste aktiveras minst 12 timmar före den faktiska sändningstiden. I annat fall kanske inte segmenteringen är klar.
 
-När du aktiverar en körning skapas flera segment automatiskt.
+När du aktiverar en körning skapas flera målgrupper automatiskt.
 
 * Om du aktiverar den första körningen av en fas:
 

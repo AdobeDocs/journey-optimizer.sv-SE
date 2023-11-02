@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 289aac5d-6cdb-411f-985e-3acef58050a8
-source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
+source-git-commit: 43e13026b739e855ed82603531802e29af1ada18
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '337'
 ht-degree: 4%
 
 ---
@@ -26,7 +26,7 @@ I det här exemplet kommer vi att bygga en målgrupp för alla kunder som bor i 
 
 ➡️ [Lär dig hur du skapar målgrupper i den här videon](#video-segment)
 
-1. Öppna **[!UICONTROL Audiences]** klickar du på **[!UICONTROL Create audience]** -knappen.
+1. Från **[!UICONTROL Audiences]** klickar du på **[!UICONTROL Create audience]** knapp och markera **[!UICONTROL Build rule]**.
 
    ![](assets/create-segment.png)
 
