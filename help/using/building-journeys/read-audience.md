@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: aktivitet, resa, läsning, målgrupp, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: fd7e32d05b656f61488a53efb15b3bd86c6f99aa
+source-git-commit: d3aecaefb0b356eb1d25b151e8d210620b51ea5f
 workflow-type: tm+mt
-source-wordcount: '1278'
-ht-degree: 4%
+source-wordcount: '1327'
+ht-degree: 3%
 
 ---
 
@@ -47,13 +47,13 @@ Så här konfigurerar du aktiviteten Läs målgrupp:
 
 1. Lägg till en **[!UICONTROL Label]** till aktiviteten (valfritt).
 
-1. I **[!UICONTROL Audience]** väljer du den Adobe Experience Platform-målgrupp som ska delta i resan och klickar sedan **[!UICONTROL Save]**.
-
-   Observera att du kan anpassa kolumnerna som visas i listan och sortera dem.
+1. I **[!UICONTROL Audience]** väljer du den Adobe Experience Platform-målgrupp som ska delta i resan och klickar sedan **[!UICONTROL Save]**. Du kan välja vilken Adobe Experience Platform-målgrupp som helst som genereras med [segmentdefinitioner](../audience/creating-a-segment-definition.md).
 
    >[!NOTE]
    >
-   >Endast personer med **Realiserad** och **Befintlig** Status för målgruppsdeltagande kommer att ta sig in på resan. Mer information om hur du utvärderar en målgrupp finns i [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
+   >Dessutom kan ni inrikta er på Adobe Experience Platform målgrupper som skapats med [målgruppskompositioner](../audience/get-started-audience-orchestration.md) eller [överförd från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}. Dessa funktioner är för närvarande tillgängliga som en privat beta.
+
+   Observera att du kan anpassa kolumnerna som visas i listan och sortera dem.
 
    ![](assets/read-segment-selection.png)
 
@@ -62,6 +62,10 @@ Så här konfigurerar du aktiviteten Läs målgrupp:
    `{"name":"Luma app opening and checkout","id":"8597c5dc-70e3-4b05-8fb9-7e938f5c07a3"}`
 
    ![](assets/read-segment-copy.png)
+
+   >[!NOTE]
+   >
+   >Endast personer med **Realiserad** och **Befintlig** Status för målgruppsdeltagande kommer att ta sig in på resan. Mer information om hur du utvärderar en målgrupp finns i [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
 
 1. I **[!UICONTROL Namespace]** väljer du det namnutrymme som ska användas för att identifiera de enskilda personerna. Som standard är fältet förifyllt med det senast använda namnutrymmet. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace).
 

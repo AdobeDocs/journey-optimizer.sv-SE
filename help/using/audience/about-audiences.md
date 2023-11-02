@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
+source-git-commit: d3aecaefb0b356eb1d25b151e8d210620b51ea5f
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,15 @@ ht-degree: 0%
 >title="Välj kampanjmålgrupp"
 >abstract="I den här listan visas alla tillgängliga Adobe Experience Platform-målgrupper. Välj målgrupp för er kampanj. Meddelandet som konfigurerats i kampanjen skickas till alla personer som tillhör den valda målgruppen. [Läs mer om målgrupper](../audience/about-audiences.md)"
 
-[!DNL Journey Optimizer] kan ni bygga upp och utnyttja Adobe Experience Platform målgrupper med hjälp av kundprofildata i realtid direkt från **[!UICONTROL Audiences]** och använda dem i era resor eller kampanjer.
-
-Läs mer i [Dokumentation för Adobe Experience Platform Segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
+[!DNL Journey Optimizer] kan ni bygga upp och utnyttja Adobe Experience Platform målgrupper med hjälp av kundprofildata i realtid direkt från **[!UICONTROL Audiences]** och använda dem i era resor eller kampanjer. Läs mer i [Dokumentation för Adobe Experience Platform Segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
 
 ## Använd målgrupper i [!DNL Journey Optimizer] {#segments-in-journey-optimizer}
+
+I kampanjer och resor kan du välja vilken Adobe Experience Platform-målgrupp som helst som genereras med [segmentdefinitioner](../audience/creating-a-segment-definition.md).
+
+>[!NOTE]
+>
+>Dessutom kan ni inrikta er på Adobe Experience Platform målgrupper som skapats med [målgruppskompositioner](../audience/get-started-audience-orchestration.md) eller [överförd från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}. Dessa funktioner är för närvarande tillgängliga som en privat beta.
 
 Ni kan utnyttja målgrupper i **[!DNL Journey Optimizer]** på olika sätt:
 

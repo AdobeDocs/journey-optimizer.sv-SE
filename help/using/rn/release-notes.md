@@ -8,9 +8,9 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 70c82f625903720e81cb73b226aaea98b2eb94b0
+source-git-commit: d3aecaefb0b356eb1d25b151e8d210620b51ea5f
 workflow-type: tm+mt
-source-wordcount: '4524'
+source-wordcount: '4526'
 ht-degree: 9%
 
 ---
@@ -92,7 +92,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Publiker**
 
-* Nu kan ni rikta in er på målgrupper som överförts från en CSV-fil till resor och kampanjer.
+* Nu kan ni rikta in er på målgrupper som överförts från en CSV-fil till resor och kampanjer. [Läs mer](../audience/about-audiences.md#segments-in-journey-optimizer)
 * Nu kan ni inrikta er på målgrupper som skapats genom målgruppssammansättning och utnyttja anrikningsattribut i Journeys. [Läs mer](../building-journeys/read-audience.md)
 
 >[!AVAILABILITY]
