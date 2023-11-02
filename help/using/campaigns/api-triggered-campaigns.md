@@ -9,9 +9,9 @@ role: Developer, Admin
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: d4ecfecdc74c26890658d68d352c36b75f7c9039
+source-git-commit: 4729ceba99d0a1d356e1e44ee601c7b9eb871719
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,8 @@ Tillgängliga kanaler för API-utlösta kampanjer är e-post-, SMS- och push-med
 >[!NOTE]
 >
 >Från och med nu stöds inte läget för snabb leverans för kampanjer som triggas av API:t för push-meddelanden.
+
+➡️ [Upptäck den här funktionen i en video](#video)
 
 ## Skapa en API-utlöst kampanj {#create}
 
@@ -132,3 +134,9 @@ Om du vill aktivera skapande av profiler vid kampanjkörning växlar du **[!UICO
 >[!NOTE]
 >
 >Okända profiler skapas i **AJO Interactive Messaging Profile - datauppsättning** datauppsättningen, i tre standardnamnutrymmen (e-post, telefon och ECID) för varje utgående kanal (e-post, SMS och push).
+
+## Instruktionsvideo {#video}
+
+Lär dig hur du skapar en kampanj och utlöser den från ett externt system baserat på användarinteraktioner med hjälp av REST-API:t för interaktiv meddelandekörning.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425358?quality=12)
