@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: tillåtelselista, lista, säker, konfiguration
 exl-id: 70ab8f57-c132-4de1-847b-11f0ab14f422
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+source-git-commit: b4fda6a0bd3e633811c16ef6dc3a3171b3b350c8
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1120'
 ht-degree: 2%
 
 ---
@@ -22,17 +22,15 @@ Det går att definiera en specifik sändningssäker lista på [sandlåda](../adm
 
 Med det här tillåtelselista kan du ange enskilda e-postadresser eller domäner som ska vara de enda mottagarna eller domänerna som har behörighet att ta emot e-postmeddelanden som du skickar från en viss sandlåda.
 
->[!NOTE]
+>[!CAUTION]
 >
->Den här funktionen är tillgänglig i sandlådor för produktion och icke-produktion.
+>Den här funktionen gäller endast för e-postkanalen. Den är tillgänglig i sandlådor för produktion och icke-produktion.
 
 På en icke-produktionsinstans, där fel kan uppstå, ser tillåtelselista till att du inte löper någon risk att skicka ut oönskade meddelanden till riktiga kundadresser, och tillhandahåller därför en säker miljö för testningsändamål.
 
 När tillåtelselista är aktivt men tomt går ingen post ut. Om du råkar ut för något större problem kan du använda den här funktionen för att stoppa all utgående kommunikation från [!DNL Journey Optimizer] tills du åtgärdar problemet. Läs mer på [tillåtelselista logik](#logic).
 
->[!CAUTION]
->
->Den här funktionen gäller endast för e-postkanalen.
+Dessutom kan man utnyttja Journey Optimizer **Suppression REST API** för att styra utgående meddelanden med hjälp av suppression och tillåtelselista. [Lär dig hur du arbetar med Suppression REST API](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html)
 
 ## Gå till tillåtelselista {#access-allowed-list}
 

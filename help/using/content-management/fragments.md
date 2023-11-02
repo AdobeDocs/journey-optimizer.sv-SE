@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 7131a953-baca-4e7c-a8df-97c0bd6ac567
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: b4fda6a0bd3e633811c16ef6dc3a3171b3b350c8
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1511'
 ht-degree: 2%
 
 ---
@@ -36,6 +36,8 @@ Så här använder du fragment på bästa sätt:
 * Skapa egna fragment. Du kan skapa visuella fragment eller uttrycksfragment. [Läs mer](#create-fragments)
 
 * Använd dem så många gånger som behövs i ert innehåll. Se [Lägg till visuella fragment](../email/use-visual-fragments.md) och [Utnyttja uttrycksfragment](../personalization/use-expression-fragments.md)
+
+Dessutom kan man utnyttja Journey Optimizer **Content REST API** för att hantera innehållsfragment. Mer information finns i [Dokumentation för Journey Optimizer API:er](https://developer.adobe.com/journey-optimizer-apis/references/content/){target="_blank"}.
 
 ## Före start {#fragment-prerequisites}
 

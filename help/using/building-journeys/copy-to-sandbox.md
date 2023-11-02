@@ -9,9 +9,9 @@ role: User, Developer, Data Engineer
 level: Experienced
 keywords: sandlåda, resa, kopia, miljö
 exl-id: 8c63f2f2-5cec-4cb2-b3bf-2387eefb5002
-source-git-commit: 40ac0915da75b0011899e336e5b0bacb5d166626
+source-git-commit: b4fda6a0bd3e633811c16ef6dc3a3171b3b350c8
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,8 @@ Kopieringsprocessen utförs via en paketexport och import mellan käll- och mål
 
 1. Lägg till resan som ett paket i källsandlådan.
 1. Exportera paketet till målsandlådan.
+
+Dessutom kan man utnyttja Journey Optimizer **REST API för objektkopieringstjänst** för att hantera sandlådans objekt. [Lär dig hur du arbetar med REST API för objektkopieringstjänsten](https://developer.adobe.com/journey-optimizer-apis/references/sandbox/)
 
 ## Lägg till resan som ett paket{#export}
 
