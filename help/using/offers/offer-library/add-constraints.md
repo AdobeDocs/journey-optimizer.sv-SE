@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
-source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
+source-git-commit: dfd8800f8fb6894e78ffa31d1f93ef5d99df09fc
 workflow-type: tm+mt
-source-wordcount: '2308'
+source-wordcount: '2318'
 ht-degree: 1%
 
 ---
@@ -44,6 +44,10 @@ Med begränsningar kan du definiera villkoren för hur ett erbjudande ska visas.
 1. Definiera **[!UICONTROL Priority]** av erbjudandet jämfört med andra, om användaren kvalificerar sig för mer än ett erbjudande. Ju högre prioritet ett erbjudande har, desto högre blir prioriteringen jämfört med andra erbjudanden.
 
    ![](../assets/offer-priority.png)
+
+   >[!NOTE]
+   >
+   >Erbjudandeprioriteten måste vara ett heltalsvärde (inga decimaler).
 
 1. Ange erbjudandets **[!UICONTROL Capping]**, vilket innebär hur många gånger erbjudandet kommer att presenteras. [Läs mer](#capping)
 

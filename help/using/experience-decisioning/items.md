@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: 5c866814-d79a-4a49-bfcb-7a767d802e90
-source-git-commit: f92e3882d3b5e515e672a4af8e787813d4d939ce
+source-git-commit: dfd8800f8fb6894e78ffa31d1f93ef5d99df09fc
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -76,6 +76,10 @@ Så här skapar du ett beslutsobjekt:
    1. Ange **[!UICONTROL Priority]** för beslutsobjektet jämfört med andra, om en profil kvalificerar för flera poster. En högre prioritet ger objektet företräde framför andra.
 
    ![](assets/item-attributes.png)
+
+   >[!NOTE]
+   >
+   >Prioriteten är en heltalsdatatyp. Alla attribut som är heltalsdatatyper ska innehålla heltalsvärden (inga decimaler).
 
 1. Anpassade attribut är specifika attribut som är anpassade efter dina behov och som du kan tilldela till ett beslutsobjekt. De definieras i beslutsobjektens katalogschema. [Lär dig hur du arbetar med kataloger](catalogs.md)
 
