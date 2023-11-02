@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: aktivitet, resa, läsning, målgrupp, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
+source-git-commit: fd7e32d05b656f61488a53efb15b3bd86c6f99aa
 workflow-type: tm+mt
 source-wordcount: '1278'
 ht-degree: 4%
@@ -37,7 +37,7 @@ Låt oss som exempel ta målgruppen&quot;Luma app opening and checkout&quot; som
 
 * För närvarande används målgrupper [importerad från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) eller som härrör från [arbetsflöden för disposition](../audience/get-started-audience-orchestration.md) på resorna finns som en privat betaversion. Kontakta din Adobe-representant om du vill veta mer.
 
-### Konfigurera aktiviteten {#configuring-segment-trigger-activity}
+## Konfigurera aktiviteten {#configuring-segment-trigger-activity}
 
 Så här konfigurerar du aktiviteten Läs målgrupp:
 
@@ -116,7 +116,7 @@ To activate this mode, click the **Segment Filters** toggle. Two fields are disp
 >
 >En bild Läs målgruppsresorna flyttas till statusen Slutförd 30 dagar efter resans genomförande. För schemalagda läsningsmålgrupper är det 30 dagar efter att den senaste förekomsten har körts.
 
-### Testa och publicera resan {#testing-publishing}
+## Testa och publicera resan {#testing-publishing}
 
 The **[!UICONTROL Read Audience]** kan du testa resan med en enhetlig profil.
 
