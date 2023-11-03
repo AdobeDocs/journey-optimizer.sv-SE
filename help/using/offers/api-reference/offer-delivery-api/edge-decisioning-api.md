@@ -6,9 +6,9 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 4e2dc0d6-4610-4a2f-8388-bc58182b227f
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 359846ac00fc8e3ad16eca41b6b3c345cad4aa65
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '960'
 ht-degree: 1%
 
 ---
@@ -24,10 +24,6 @@ Experience Platform Web SDK stöder frågor om personaliseringslösningarna på 
 Det finns två sätt att genomföra beslutsfattandet med [Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html#video-overview). Ett sätt är inriktat på utvecklare och kräver kunskaper om webbplatser och programmering. Det andra sättet är att använda Adobe Experience Platform användargränssnitt för att ställa in erbjudanden som bara kräver att ett litet skript refereras till i sidhuvudet på HTML-sidan.
 
 Mer information finns i dokumentationen om [beslutsfattande](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html#enabling-offer-decisioning) om du vill ha mer information om hur du kan leverera personaliserade erbjudanden med Adobe Experience Platform Web SDK.
-
->[!NOTE]
->
->Beslutshantering i Adobe Experience Platform Web SDK är bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Om du vill använda den här funktionen kontaktar du din kontoansvarige på Adobe.
 
 ## Webb-SDK för Adobe Experience Platform {#aep-web-sdk}
 
