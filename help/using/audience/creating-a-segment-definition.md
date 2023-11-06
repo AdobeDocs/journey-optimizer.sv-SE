@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 289aac5d-6cdb-411f-985e-3acef58050a8
-source-git-commit: 43e13026b739e855ed82603531802e29af1ada18
+source-git-commit: f64388673b5a3b2a8702026ce09b39e928ac2ab4
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 4%
+source-wordcount: '355'
+ht-degree: 3%
 
 ---
 
@@ -66,6 +66,6 @@ Publiken kan nu användas på era resor. Mer information om detta finns i [det h
 
 ## Instruktionsvideo{#video-segment}
 
-Lär dig skapa målgrupper.
+Förstå hur Journey Optimizer använder regler för att generera målgrupper och lär sig hur man använder attribut, händelser och befintliga målgrupper för att skapa en målgrupp.
 
->[!VIDEO](https://video.tv.adobe.com/v/334281?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3425020?quality=12)
