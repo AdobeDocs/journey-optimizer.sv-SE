@@ -8,16 +8,20 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: d95bd86a731e7d410ca40986ca792956f4e4c596
+source-git-commit: e0f7eca8b3313cb5eb8e201c567622ded20a82d2
 workflow-type: tm+mt
-source-wordcount: '4006'
-ht-degree: 14%
+source-wordcount: '4099'
+ht-degree: 13%
 
 ---
 
 # Dokumentationsuppdateringar {#latest-updates}
 
 På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
+
+## November 2023 {#nov-2023}
+
+* Skyddsplanen som begränsar alla anpassade åtgärder har ändrats från 150 000 anrop över 30 sekunder till 300 000 anrop över en minut. Dessutom gäller inte längre standardfästningen för varje slutpunkt. Den utförs nu per värd och per sandlåda. Om du till exempel har två slutpunkter med samma värd i en sandlåda (till exempel: `https://www.adobe.com/endpoint1` och `https://www.adobe.com/endpoint2`) gäller det för alla slutpunkter under adobe.com. &quot;endpoint1&quot; och &quot;endpoint2&quot; har samma begränsningskonfiguration och om en slutpunkt når gränsen påverkas den andra slutpunkten. [Läs mer](../action/about-custom-action-configuration.md)
 
 ## Oktober 2023 {#oct-2023}
 
