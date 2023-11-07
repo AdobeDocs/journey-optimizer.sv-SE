@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: ec15e700-7659-4dbf-8446-6534ea48c5c8
-source-git-commit: 5f099db541c3219749f520d991261ad6fdfef4a7
+source-git-commit: 82b8c9032d6c377cb76acce4d5cc45afb0ddd6ba
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,12 @@ Varje rapportkontrollpanel kan ändras genom att tidsperioden ändras och widget
 1. Välj en start- och sluttid från din globala rapport för att ange specifika data som mål.
 
    ![](assets/report_modify_1.png)
+
+1. För dina reserapporter som omfattar flera konfigurerade **[!UICONTROL Actions]** väljer du en specifik **[!UICONTROL Action]** i listrutan.
+
+1. Om du bara vill rikta in dig på ett eller flera återkommande meddelanden väljer du det i dialogrutan **[!UICONTROL Execution time]** nedrullningsbar meny.
+
+   ![](assets/report_modify_12.png)
 
 1. Välj om du vill utesluta testhändelser från dina rapporter med hjälp av alternativfältet. Mer information om testhändelser finns i [den här sidan](../building-journeys/testing-the-journey.md).
 

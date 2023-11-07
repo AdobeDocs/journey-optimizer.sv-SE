@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: fa64f5b8-75f2-40e6-8566-5766fafe6cd6
-source-git-commit: 2e8476636fafcba77cbd25ca13324652178224ed
+source-git-commit: 82b8c9032d6c377cb76acce4d5cc45afb0ddd6ba
 workflow-type: tm+mt
-source-wordcount: '2929'
+source-wordcount: '3069'
 ht-degree: 0%
 
 ---
@@ -173,6 +173,8 @@ Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Email]** -fliken 
 
 The **[!UICONTROL Email Sending Statistics]** diagram visar hur bra ditt e-postmeddelande är:
 
+* **[!UICONTROL Execution time]**: Starttid för varje körning av ditt återkommande e-postmeddelande. Om du bara vill rikta in dig på ett eller flera återkommande e-postmeddelanden väljer du det i dialogrutan **[!UICONTROL Execution time]** nedrullningsbar meny.
+
 * **[!UICONTROL Targeted]**: Totalt antal meddelanden som bearbetats under sändningsprocessen.
 
 * **[!UICONTROL Sent]**: Totalt antal skickade meddelanden för din e-post.
@@ -194,6 +196,8 @@ The **[!UICONTROL Email Sending Statistics]** diagram visar hur bra ditt e-postm
 * **[!UICONTROL Excluded]**: Antal profiler som har uteslutits av Adobe Journey Optimizer.
 
 The **[!UICONTROL Email - Tracking statistics]** widgeten innehåller tillgängliga data för profilaktivitet för ditt e-postmeddelande:
+
+* **[!UICONTROL Execution time]**: Starttid för varje körning av ditt återkommande e-postmeddelande. Om du bara vill rikta in dig på ett eller flera återkommande e-postmeddelanden väljer du det i dialogrutan **[!UICONTROL Execution time]** nedrullningsbar meny.
 
 * **[!UICONTROL Opens]**: Antal gånger som e-postmeddelandet öppnades.
 
@@ -243,7 +247,7 @@ The **[!UICONTROL Email - Top recipient domain]** diagram och tabeller visar vil
 >
 > The **[!UICONTROL Email - Top recipient domain]** widgeten har en noggrannhetshastighet på 99,95 %.
 
-The **[!UICONTROL Optimized vs non optimized]** diagram anger huvudinformationen i förhållande till meddelandet, oavsett om de är optimerade eller inte:
+The **[!UICONTROL Email - Optimized vs Normal]** diagram anger huvudinformationen i förhållande till meddelandet, oavsett om de är optimerade eller inte:
 
 * **[!UICONTROL Sent]**: Totalt antal överföringar.
 
@@ -251,7 +255,7 @@ The **[!UICONTROL Optimized vs non optimized]** diagram anger huvudinformationen
 
 * **[!UICONTROL Clicks]**: Antal gånger ett innehåll klickades i ett e-postmeddelande.
 
-The **[!UICONTROL Send time optimization]** anger hur bra ditt e-postmeddelande är beroende på sändningsmetod: optimerad eller normal.
+The **[!UICONTROL Email - Send time optimization]** anger hur bra ditt e-postmeddelande är beroende på sändningsmetod: optimerad eller normal.
 
 * **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
 
@@ -337,7 +341,9 @@ Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Push notification
 
 +++Läs mer om de olika mätvärden och widgetar som är tillgängliga för rapporten Push.
 
-The **[!UICONTROL Push notification - Sending statistics]** tabellen visar huvudinformationen i förhållande till dina push-meddelanden
+The **[!UICONTROL Push notification - Sending statistics]** tabellen visar huvudinformationen i förhållande till dina push-meddelanden:
+
+* **[!UICONTROL Execution time]**: Starttid för varje körning av ditt återkommande push-meddelande. Om du bara vill ange ett eller flera återkommande push-meddelanden som mål väljer du det på menyn **[!UICONTROL Execution time]** nedrullningsbar meny.
 
 * **[!UICONTROL Targeted]**: Totalt antal meddelanden som bearbetats under analysen.
 
@@ -358,6 +364,8 @@ The **[!UICONTROL Push notification - Sending statistics]** tabellen visar huvud
 * **[!UICONTROL Excluded]**: Antal profiler som har uteslutits av Adobe Journey Optimizer.
 
 The **[!UICONTROL Push - Tracking statistics]** innehåller tillgängliga data för profilaktivitet för ditt push-meddelande:
+
+* **[!UICONTROL Execution time]**: Starttid för varje körning av ditt återkommande push-meddelande. Om du bara vill ange ett eller flera återkommande push-meddelanden som mål väljer du det på menyn **[!UICONTROL Execution time]** nedrullningsbar meny.
 
 * **[!UICONTROL Opens]**: Antal gånger ditt push-meddelande öppnades.
 
@@ -446,6 +454,8 @@ Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL SMS]** -fliken in
 
 The **[!UICONTROL SMS - Sending statistics]** tabellen visar hur ditt SMS lyckades:
 
+* **[!UICONTROL Execution time]**: Starttid för varje körning av ditt återkommande SMS-meddelande. Om du bara vill rikta in dig på ett eller flera återkommande SMS-meddelanden väljer du det i dialogrutan **[!UICONTROL Execution time]** nedrullningsbar meny.
+
 * **[!UICONTROL Targeted]**: Antal användarprofiler som kvalificerar sig som målprofiler.
 
 * **[!UICONTROL Excluded]**: Antal användarprofiler, exkluderade från målprofilerna, som inte fick meddelandet.
@@ -530,6 +540,8 @@ Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Direct mail]** -f
 +++Läs mer om de olika mätvärden och widgetar som finns för rapporten Direct mail.
 
 The **[!UICONTROL Direct Mail - Sending statistics]** tabellen visar hur din direktreklam lyckades:
+
+* **[!UICONTROL Execution time]**: Starttid för varje körning av din återkommande direktpost. Om du bara vill ange en eller flera återkommande direktmeddelanden som mål, markerar du dem på menyn **[!UICONTROL Execution time]** nedrullningsbar meny.
 
 * **[!UICONTROL Targeted]**: Antal användarprofiler som kvalificerar sig som målprofiler för denna direktutskick.
 

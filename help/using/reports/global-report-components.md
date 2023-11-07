@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c487bb38-49ce-4238-8e94-8364f994cedd
-source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
+source-git-commit: 82b8c9032d6c377cb76acce4d5cc45afb0ddd6ba
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1100'
 ht-degree: 3%
 
 ---
@@ -89,6 +89,11 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
   <tr> 
    <td> Felfrekvens<br/> </td> 
    <td> Procentandel fel som uppstod under en leverans och som förhindrar att den skickas jämfört med skickade e-postmeddelanden.<br/> </td> 
+</tr>
+</tr> 
+  <tr> 
+   <td> Felorsak<br/> </td> 
+   <td> Namnet på den specifika ursprungliga orsaken till felet. <a href="error-list.md">Läs mer om felorsaker</a>.<br/> </td> 
 </tr>
   <tr> 
    <td> Exkluderad<br/> </td> 
@@ -332,7 +337,11 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
   <tr> 
    <td> Felfrekvens<br/> </td> 
    <td> Procentandel fel som uppstod under en leverans och som förhindrar att den skickas jämfört med push-meddelanden som skickas.<br/> </td> 
-</tr> 
+</tr>
+  <tr> 
+   <td> Felorsak<br/> </td> 
+   <td> Namnet på den specifika ursprungliga orsaken till felet. <a href="error-list.md">Läs mer om felorsaker</a>.<br/> </td> 
+</tr>
   <tr> 
    <td> Exkluderad<br/> </td> 
    <td> Antal profiler som har uteslutits av Adobe Journey Optimizer.<br/> </td> 
@@ -356,7 +365,7 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
  </tbody> 
 </table>
 
-### Mätvärden för landningssida {#landing-page-metrics}
+## Mätvärden för landningssida {#landing-page-metrics}
 
 <table> 
  <thead> 

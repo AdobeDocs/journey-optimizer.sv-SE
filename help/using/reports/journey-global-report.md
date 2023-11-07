@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e851646e-4cef-45e8-97c2-a8f4c9d2cc08
-source-git-commit: 03c714833930511fa734662b637d2416728073c2
+source-git-commit: 82b8c9032d6c377cb76acce4d5cc45afb0ddd6ba
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '2124'
 ht-degree: 0%
 
 ---
@@ -84,6 +84,8 @@ Från din resa **[!UICONTROL Global report]**, **[!UICONTROL Email]** fliken inn
 
 The **[!UICONTROL Email Sending Statistics]** diagram visar hur framgångsrik leveransen är:
 
+* **[!UICONTROL Execution time]**: Starttid för varje körning av din återkommande e-post under resan. Om du bara vill rikta in dig på ett eller flera återkommande e-postmeddelanden väljer du det i dialogrutan **[!UICONTROL Execution time]** nedrullningsbar meny.
+
 * **[!UICONTROL Targeted]**: Antal profiler som ska användas för åtgärder som att skicka e-post eller SMS.
 
 * **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
@@ -101,6 +103,8 @@ The **[!UICONTROL Email Sending Statistics]** diagram visar hur framgångsrik le
 * **[!UICONTROL Error Rate]**: Procentandel fel som uppstod under en leverans och som förhindrar att den skickas jämfört med skickade e-postmeddelanden.
 
 The **[!UICONTROL Email - Tracking statistics]** innehåller tillgängliga data för mottagaraktivitet för leveransen:
+
+* **[!UICONTROL Execution time]**: Starttid för varje körning av din återkommande e-post under resan. Om du bara vill rikta in dig på ett eller flera återkommande e-postmeddelanden väljer du det i dialogrutan **[!UICONTROL Execution time]** nedrullningsbar meny.
 
 * **[!UICONTROL Opens]**: Antal gånger som leveransen öppnades i en leverans.
 
@@ -194,6 +198,8 @@ Från din resa **[!UICONTROL Global report]**, **[!UICONTROL Push notification]*
 
 The **[!UICONTROL Push notification - Sending statistics]** tabellen visar huvudinformationen i förhållande till push-meddelanden med diagram och KPI:er:
 
+* **[!UICONTROL Execution time]**: Starttid för varje körning av ditt återkommande push-meddelande under resan. Om du bara vill ange ett eller flera återkommande push-meddelanden som mål väljer du det på menyn **[!UICONTROL Execution time]** nedrullningsbar meny.
+
 * **[!UICONTROL Targeted]**: Antal profiler som ska användas för åtgärder som att skicka e-post eller SMS.
 
 * **[!UICONTROL Sent]**: Totalt antal försändelser för leveransen.
@@ -211,6 +217,8 @@ The **[!UICONTROL Push notification - Sending statistics]** tabellen visar huvud
 * **[!UICONTROL Error Rate]**: Procentandel fel som uppstod under en leverans och som förhindrar att den skickas jämfört med push-meddelanden som skickas.
 
 The **[!UICONTROL Push - Tracking statistics]** innehåller tillgängliga data för mottagaraktivitet för leveransen:
+
+* **[!UICONTROL Execution time]**: Starttid för varje körning av ditt återkommande push-meddelande under resan. Om du bara vill ange ett eller flera återkommande push-meddelanden som mål väljer du det på menyn **[!UICONTROL Execution time]** nedrullningsbar meny.
 
 * **[!UICONTROL Opens]**: Antal gånger ett meddelande öppnades i en leverans.
 
@@ -265,6 +273,8 @@ SMS **[!UICONTROL Global report]** är uppdelat i olika widgetar som detaljerat 
 +++Läs mer om de olika mätvärden och widgetar som är tillgängliga för SMS-rapporten.
 
 The **[!UICONTROL SMS - Sending statistics]** tabellen visar hur framgångsrik leveransen är:
+
+* **[!UICONTROL Execution time]**: Starttid för varje körning av ditt återkommande SMS-meddelande under resan. Om du bara vill rikta in dig på ett eller flera återkommande SMS-meddelanden väljer du det i dialogrutan **[!UICONTROL Execution time]** nedrullningsbar meny.
 
 * **[!UICONTROL Targeted]**: Antal användarprofiler som kvalificerar sig som målprofiler för den här leveransen.
 
