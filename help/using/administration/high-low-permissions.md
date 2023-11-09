@@ -9,9 +9,9 @@ role: Admin, Architect, Developer
 level: Experienced
 keywords: behörighet, hög nivå, låg nivå, profil, administratörskonsol
 exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
-source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
+source-git-commit: 8db5ae5b3cbef245dfe7cd11a95355c072bc3ef8
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1078'
 ht-degree: 0%
 
 ---
@@ -288,20 +288,6 @@ Till exempel **[!DNL Journey administrator]** rollen har tilldelats **[!DNL Mana
 
 ## Kanalkonfigurationsresurs {#administration-permissions}
 
-* **[!DNL Manage channel surface]** behörighet på hög nivå ger användare möjlighet att skapa, redigera och ta bort kanalytor över kanaler på sandlådenivå.
-
-+++ Den innehåller följande lågnivåbehörigheter:
-
-   * Journey Optimizer-specifikt:
-      * messages_presets.read
-      * messages_presets.write
-      * messages_presets.delete
-      * underdomäner_delegering.read
-      * IP_pools.read
-      * mobile_setting.read (från Adobe Experience Platform Launch)
-
-+++
-
 * **[!DNL Manage IP pools]** behörighet på hög nivå tillåter användare att skapa, redigera och ta bort tillhörighetsdefinitionen.
 
 +++ Den innehåller följande lågnivåbehörigheter:
@@ -341,7 +327,7 @@ Till exempel **[!DNL Journey administrator]** rollen har tilldelats **[!DNL Mana
 
 +++
 
-* **[!DNL Manage messages presets]** behörighet på hög nivå ger användare möjlighet att läsa, skapa, redigera och ta bort innehållsmärkning.
+* **[!DNL Manage messages presets]** högnivåbehörighet tillåter användare att läsa, skapa, redigera och ta bort kanalytor över kanaler på sandlådenivå.
 
 +++ Den innehåller följande lågnivåbehörigheter:
 
@@ -353,7 +339,7 @@ Till exempel **[!DNL Journey administrator]** rollen har tilldelats **[!DNL Mana
       * IP_pools.read
 
    * Specifik datainsamling:
-      * Mobil_inställning.read
+      * Mobil_inställning.read <!--(from Adobe Experience Platform Launch)-->
 
 +++
 
@@ -390,7 +376,7 @@ Till exempel **[!DNL Journey administrator]** rollen har tilldelats **[!DNL Mana
 
 +++
 
-* **[!DNL Manage subdomains delegation]** Med högnivåbehörighet kan användare skapa, redigera och ta bort underdomänsdelegeringar (inklusive IP-pool).
+* **[!DNL Manage subdomains delegations]** Med högnivåbehörighet kan användare skapa, redigera och ta bort underdomänsdelegeringar (inklusive IP-pool).
 
 +++ Den innehåller följande lågnivåbehörigheter:
    * Journey Optimizer-specifikt:

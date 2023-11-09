@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
+source-git-commit: 8db5ae5b3cbef245dfe7cd11a95355c072bc3ef8
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Med [!DNL Journey Optimizer]kan du konfigurera kanalytor (t.ex. meddelandeförin
 
 >[!CAUTION]
 >
-> * Om du vill skapa, redigera och ta bort kanalytor måste du ha [Hantera kanalyta](../administration/high-low-permissions.md#manage-channel-surface) behörighet.
+> * Om du vill skapa, redigera och ta bort kanalytor måste du ha [Hantera meddelandeförinställningar](../administration/high-low-permissions.md#administration-permissions) behörighet.
 >
 > * Du måste utföra [E-postkonfiguration](../email/get-started-email-config.md), [Push-konfiguration](../push/push-configuration.md) och [SMS-konfiguration](../sms/sms-configuration.md) innan du skapar kanalytor.
 
@@ -47,7 +47,7 @@ När kanalytorna har konfigurerats kan du välja dem när du skapar meddelanden 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_message_presets"
 >title="Kanalytans inställningar"
->abstract="För att kunna skapa åtgärder som e-post från en resa eller en kampanj måste du först skapa en kanalyta som definierar alla tekniska inställningar som krävs för dina meddelanden. Du måste ha behörigheten Hantera kanalyta för att skapa, redigera och ta bort kanalytor."
+>abstract="För att kunna skapa åtgärder som e-post från en resa eller en kampanj måste du först skapa en kanalyta som definierar alla tekniska inställningar som krävs för dina meddelanden. Du måste ha behörighet att hantera meddelandeförinställningar för att skapa, redigera och ta bort kanalytor."
 
 Så här skapar du en kanalyta:
 

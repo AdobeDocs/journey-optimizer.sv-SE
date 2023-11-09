@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: underdomän, PTR, poster, DNS, domän, post
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
-source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
+source-git-commit: 8db5ae5b3cbef245dfe7cd11a95355c072bc3ef8
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '758'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ptr_record_header"
 >title="Underdomäners PTR-poster"
->abstract="När en underdomän har delegerats till Adobe i Journey Optimizer skapas en PTR-post automatiskt och kopplas till den här underdomänen."
+>abstract="När den första underdomänen har delegerats till Adobe i Journey Optimizer skapas PTR-poster automatiskt."
 
 ## Om PTR-poster {#about-ptr-records}
 
@@ -36,7 +36,7 @@ Med PTR-poster kan e-postservrar som tar emot e-post kontrollera e-postservrarna
 
 ## Få åtkomst till dina underdomäners PTR-poster {#access-ptr-records}
 
-En gång [en underdomän har delegerats](delegate-subdomain.md) i Adobe Journey Optimizer skapas en PTR-post automatiskt och kopplas till den här underdomänen. Du kommer åt den via **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL PTR records]** -menyn.
+En gång [delegera](delegate-subdomain.md) din första underdomän till Adobe in [!DNL Journey Optimizer]skapas PTR-poster automatiskt för dina IP-adresser. Du kommer åt dem via **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL PTR records]** -menyn.
 
 ![](assets/ptr-records.png)
 
