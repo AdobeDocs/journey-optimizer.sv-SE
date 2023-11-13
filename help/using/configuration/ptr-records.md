@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: underdomän, PTR, poster, DNS, domän, post
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
-source-git-commit: 8db5ae5b3cbef245dfe7cd11a95355c072bc3ef8
+source-git-commit: d2d9913e41a183ef4a2cd41622ed67b0a559444f
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ En gång [delegera](delegate-subdomain.md) din första underdomän till Adobe in
 
 ![](assets/ptr-records.png)
 
-I listan visas de PTR-poster som genererats för varje delegerad underdomän med syntaxen nedan:
+I listan visas de PTR-poster som genererats med syntaxen nedan:
 
 * &quot;r&quot; för register,
 * &quot;xx&quot; för de två sista siffrorna i IP-adressen,
