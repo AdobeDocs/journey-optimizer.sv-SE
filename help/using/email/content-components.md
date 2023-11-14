@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: komponenter, e-postdesigner, redigerare, e-post
 exl-id: a4aaa814-3fd4-439e-8f34-faf97208378a
-source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
+source-git-commit: 607dd050b4e340bf6ae80fec76be8a64f3962645
 workflow-type: tm+mt
-source-wordcount: '1224'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -167,11 +167,17 @@ Använd **[!UICONTROL Image]** om du vill infoga en bildfil från datorn i ditt 
 
    ![](assets/email_designer_image_content.png)
 
-1. Klicka **[!UICONTROL Browse]** om du vill välja en bildfil bland dina resurser.
+1. Från **[!UICONTROL Settings]** flik, klicka **[!UICONTROL Browse]** om du vill välja en bildfil från dina resurser eller **[!UICONTROL Import media]** för att överföra en resurs till Assets Essentials.
 
    Om du vill veta mer om [!DNL Assets Essentials], se [Adobe Experience Manager Assets Essentials-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}.
 
-1. Klicka på den nya komponenten och ange bildegenskaperna i **[!UICONTROL Settings]** tab:
+   >[!NOTE]
+   >
+   > För att länkarna ska förbli aktiva och undvika problem med förfallodatum rekommenderar vi att du använder Adobe Assets i stället för att förlita dig på en käll-URL för dina bilder.
+
+1. Du kan även söka direkt i Adobe Stock med **[!UICONTROL Find Adobe Stock photos]** alternativ.
+
+1. Klicka på den nya komponenten och ange bildegenskaper:
 
    * **[!UICONTROL Image title]** I kan du definiera en titel för bilden.
    * **[!UICONTROL Alt text]** I kan du definiera den bildtext som är länkad till bilden. Detta motsvarar alt HTML-attributet.
