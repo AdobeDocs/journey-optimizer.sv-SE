@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: e-post, börja, skapa, förhandsgranska
 exl-id: 621c4256-449d-4376-96cd-02cbdcd4de05
-source-git-commit: cd8ce89dd6ed9c60d41e9f83ccfb080bdb4a19f9
+source-git-commit: 364e78e0ef3a9e8bcd54c4983c0503863bce1e34
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 10%
+source-wordcount: '158'
+ht-degree: 11%
 
 ---
 
@@ -27,19 +27,14 @@ Använd [!DNL Journey Optimizer] för att skicka e-postmeddelanden till kunderna
 
 E-postleveranser kan skapas:
 
-* I en **Resa**: när du har lagt till en **[!UICONTROL Email]** -aktiviteten på din resa och definierade grundläggande inställningar, använd **[!UICONTROL Actions: Email]** höger ruta för att skapa innehållet för meddelandet.
+* I en **Resa**: när du har lagt till en **[!UICONTROL Email]** -aktiviteten på din resa och definierade grundläggande inställningar, använd **[!UICONTROL Actions: Email]** höger ruta för att skapa innehållet för meddelandet. [Lär dig skapa en resa](../building-journeys/journey-gs.md)
 
-  Mer information om hur du konfigurerar din resa finns i [page](../building-journeys/journey-gs.md).
-
-* I en **Campaign**: när du har skapat en kampanj väljer du **[!UICONTROL Email]** som din åtgärd och definiera grundläggande inställningar.
-
-  Mer information om hur du konfigurerar kampanjen finns i [page](../campaigns/create-campaign.md#configure).
+* I en **Campaign**: när du har skapat en kampanj väljer du **[!UICONTROL Email]** som din åtgärd och definiera grundläggande inställningar. [Lär dig hur du skapar en kampanj](../campaigns/create-campaign.md#configure)
 
 
 >[!IMPORTANT]
 >
 >Om det är första gången du skapar ett e-postmeddelande måste du kontrollera att e-postkanalen har konfigurerats. [Läs mer](email-settings.md)
-
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>

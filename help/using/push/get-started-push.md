@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c1f16edd-efdf-41c2-a0ad-5f55009008f5
-source-git-commit: 03c714833930511fa734662b637d2416728073c2
+source-git-commit: 364e78e0ef3a9e8bcd54c4983c0503863bce1e34
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '321'
 ht-degree: 2%
 
 ---
@@ -27,13 +27,9 @@ Push-meddelanden hjälper dig att nå mobilappsanvändare när som helst, särsk
 
 Push-meddelanden kan skapas:
 
-* I en **Resa**: När du har lagt till en push-aktivitet under resan och har definierat grundläggande inställningar använder du **[!UICONTROL Actions: Push]** till höger för att skapa innehåll för push-meddelanden.
+* I en **Resa**: När du har lagt till en push-aktivitet under resan och har definierat grundläggande inställningar använder du **[!UICONTROL Actions: Push]** till höger för att skapa innehåll för push-meddelanden. [Lär dig skapa en resa](../building-journeys/journey-gs.md)
 
-  Mer information om hur du konfigurerar din resa finns i [page](../building-journeys/journey-gs.md).
-
-* I en **Campaign**: När du har skapat en kampanj väljer du Push-meddelande som åtgärd och definierar grundläggande inställningar.
-
-  Mer information om hur du konfigurerar kampanjen finns i [page](../campaigns/create-campaign.md#configure).
+* I en **Campaign**: När du har skapat en kampanj väljer du Push-meddelande som åtgärd och definierar grundläggande inställningar. [Lär dig skapa en kampanj](../campaigns/create-campaign.md#configure)
 
 Använd de dedikerade flikarna för att definiera inställningar för push-meddelanden för **iOS** och **Android** operativsystem.
 
