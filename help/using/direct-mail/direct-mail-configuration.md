@@ -7,9 +7,9 @@ role: User
 level: Experienced
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
-source-git-commit: 00bd3a2fb35ef2c634ed631b358a5256f47c7e58
+source-git-commit: c14bcd8c44ef913da588c86263769bdb5b3fb205
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '893'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ Innan du kan generera filen måste du skapa:
 
 1. A [konfiguration för filroutning](#file-routing-configuration) om du vill ange på vilken server filen ska exporteras och kryptera filen, om det behövs.
 
-1. A [direktreklamyta](#direct-mail-surface) som refererar till filroutningskonfigurationen.
+   >[!CAUTION]
+   >
+   >Om du vill skapa en filroutningskonfiguration måste du ha **[!DNL Manage file routing]** inbyggd behörighet. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager).
 
->[!CAUTION]
->
->Om du inte har konfigurerat något alternativ för filroutning kan du inte skapa en direktreklamyta.
+1. A [direktreklamyta](#direct-mail-surface) som refererar till filroutningskonfigurationen. Om du inte har konfigurerat något alternativ för filroutning kan du inte skapa en direktreklamyta.
 
 ## Konfigurera filroutning {#file-routing-configuration}
 
