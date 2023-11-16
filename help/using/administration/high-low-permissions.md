@@ -9,9 +9,9 @@ role: Admin, Architect, Developer
 level: Experienced
 keywords: behörighet, hög nivå, låg nivå, profil, administratörskonsol
 exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
-source-git-commit: 8db5ae5b3cbef245dfe7cd11a95355c072bc3ef8
+source-git-commit: b4998f62d5cc5fa134271ec5ce8c177150472a30
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1125'
 ht-degree: 0%
 
 ---
@@ -288,6 +288,17 @@ Till exempel **[!DNL Journey administrator]** rollen har tilldelats **[!DNL Mana
 
 ## Kanalkonfigurationsresurs {#administration-permissions}
 
+* **[!DNL Manage file routing]** behörighet på hög nivå ger användare möjlighet att skapa, redigera och ta bort filroutningskonfigurationer.
+
++++ Den innehåller följande lågnivåbehörigheter:
+   * Journey Optimizer-specifikt:
+
+      * file_routing.read
+      * file_routing.write
+      * file_routing.delete
+
++++
+
 * **[!DNL Manage IP pools]** behörighet på hög nivå tillåter användare att skapa, redigera och ta bort tillhörighetsdefinitionen.
 
 +++ Den innehåller följande lågnivåbehörigheter:
@@ -399,13 +410,12 @@ Till exempel **[!DNL Journey administrator]** rollen har tilldelats **[!DNL Mana
 
 +++
 
-* **[!DNL View PTR records]** behörighet på hög nivå tillåter användare att visa PTR-poster som har konfigurerats baserat på underdomänen.
+* **[!DNL View file routing]** behörighet på hög nivå tillåter användare att visa filroutningskonfigurationer.
 
 +++ Den innehåller följande lågnivåbehörigheter:
    * Journey Optimizer-specifikt:
 
-      * PTR_records.read
-      * underdomäner_delegering.read
+      * file_routing.read
 
 +++
 
@@ -434,6 +444,17 @@ Till exempel **[!DNL Journey administrator]** rollen har tilldelats **[!DNL Mana
       * Mobil_inställning.read
 
 +++
+
+* **[!DNL View PTR records]** behörighet på hög nivå tillåter användare att visa PTR-poster som har konfigurerats baserat på underdomänen.
+
++++ Den innehåller följande lågnivåbehörigheter:
+   * Journey Optimizer-specifikt:
+
+      * PTR_records.read
+      * underdomäner_delegering.read
+
++++
+
 <!--
 ### [!DNL View channel surface] permission {#view-channel-surface}
 
