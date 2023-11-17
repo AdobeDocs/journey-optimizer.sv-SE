@@ -11,9 +11,9 @@ keywords: IP, grupp, underdomäner, leveransbarhet
 hide: true
 hidefromtoc: true
 exl-id: c2434086-2ed4-4cd0-aecd-2eea8f0a55f6
-source-git-commit: eb4a4929de17f0b57216f69e00da6314f7b59b07
+source-git-commit: 2483f53982acc920676190c1bc7fef5abf3c2331
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1211'
 ht-degree: 1%
 
 ---
@@ -33,9 +33,43 @@ Vad du hittar i den här handboken:
 
 När du har skapat en eller flera [IP-kampanjer](ip-warmup-campaign.md) med en dedikerad yta och motsvarande alternativ aktiverat, kan du börja skapa din IP-värdplan.
 
->[!CAUTION]
->
->Om du vill komma åt, skapa, redigera och ta bort IP-beredskapsplanerna måste du ha **[!UICONTROL Deliverability Consultant]** behörighet. <!--Learn more on managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).-->
+Om du vill komma åt, skapa, redigera och ta bort IP-beredskapsplanerna måste du ha **[!UICONTROL Deliverability Consultant]** roller eller IP-värmeringsplanerrelaterade behörigheter.
+
++++Lär dig hur du tilldelar rollen Deliverability Consultant eller IP Warmup-planerrelaterade behörigheter
+
+Så här tilldelar du motsvarande behörighet till en viss **[!UICONTROL Role]**:
+
+1. Från [!DNL Permissions] -produkt, navigera till **[!UICONTROL Roles]** och välj den roll som du vill uppdatera med den nya **[!UICONTROL IP Warmup Configurations]** behörigheter.
+
+1. Från **[!UICONTROL Role]** kontrollpanel, klicka **[!UICONTROL Edit]**.
+
+   ![](assets/ip_permissions_1.png)
+
+1. Dra och släpp **[!UICONTROL IP Warmup Configurations]** resurs för att tilldela behörighet.
+
+1. Från **[!UICONTROL IP Warmup Configurations]** i den nedrullningsbara menyn väljer du vilka behörigheter användaren behöver.
+
+   ![](assets/ip_permissions_2.png)
+
+1. Klicka på **[!UICONTROL Save]**.
+
+Tilldela motsvarande roll till en **[!UICONTROL User]**:
+
+1. Från [!DNL Permissions] -produkt, navigera till **[!UICONTROL Roles]** och väljer **[!UICONTROL Deliverability Consultant]** inbyggd roll.
+
+1. Från **[!UICONTROL Role]** kontrollpanel, gå till **[!UICONTROL Users]** -fliken.
+
+   ![](assets/ip_permissions_3.png)
+
+1. Klicka **[!UICONTROL Add user]** för att tilldela **[!UICONTROL Deliverability Consultant]** inbyggd roll.
+
+   ![](assets/ip_permissions_4.png)
+
+1. Välj **[!UICONTROL User]** och klicka **[!UICONTROL Save]**.
+
+   ![](assets/ip_permissions_5.png)
+
++++
 
 ## Förbered filen för IP-warmup-planen {#prepare-file}
 
@@ -264,5 +298,9 @@ Följ stegen nedan om du vill skapa en IP-värmeringsplan.
 1. Klicka på **[!UICONTROL Create]**. Alla faser, körningar, kolumner och deras innehåll som definieras i den överförda filen visas automatiskt i [!DNL Journey Optimizer] gränssnitt.
 
    ![](assets/ip-warmup-plan-uploaded.png)
+
+   >[!NOTE]
+   >
+   >The **[!UICONTROL Targeted]** kolumn visar summan av alla profiler som är avsedda för varje körning, vilket betyder alla profiler från varje domängrupp som du har definierat, inklusive **Övriga** kolumn om sådan finns.
 
 Du är nu redo att genomföra din IP-värmeringsplan. [Läs mer](ip-warmup-execution.md)
