@@ -9,9 +9,9 @@ role: Admin, User
 level: Intermediate
 keywords: behörigheter, författare, meddelanden
 exl-id: 5a968bd8-cf76-4242-aa80-3cfb3d551511
-source-git-commit: 8db5ae5b3cbef245dfe7cd11a95355c072bc3ef8
+source-git-commit: 1cfe9f6cb6e7c3e9a5d9b808c10ae4dfe77a92a2
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '1156'
 ht-degree: 5%
 
 ---
@@ -142,6 +142,6 @@ Den här rollen innehåller följande behörigheter:
 
 | Funktion | Behörigheter |
 |-|-|
-| Journey Optimizer Library | <ul><li>**[!DNL Manage library items]**: läsa, skapa, redigera och ta bort objekt i Journey Optimizer-biblioteket.</li><li>**[!DNL Manage simulate content]**: åtkomst till **[!UICONTROL Simulate content]** för förhandsgranskning och korrektur.</li></ul> |
+| Journey Optimizer Library | <ul><li>**[!DNL Manage library items]**: läsa, skapa, redigera och ta bort objekt i Journey Optimizer Library, inklusive innehållsmallar och fragment.</li><li>**[!DNL Manage simulate content]**: åtkomst till **[!UICONTROL Simulate content]** för förhandsgranskning och korrektur.</li></ul> |
 | Beslutshantering | <ul><li>**[!DNL Manage decisions]**: läsa, skapa, redigera och ta bort beslutsenheter.</li><li>**[!DNL Manage ranking strategies]**: läsa, skapa, redigera och ta bort anpassade rapporter och använda åtgärdsfunktioner.</li></ul> |
 | Adobe Experience Platform | <ul><li> **[!DNL Manage segments]**: läsa, skapa, redigera och ta bort segmentdefinitioner.</li><li>**[!DNL Manage profiles]**: läsa, skapa, redigera och ta bort profiler.</li><li>**[!DNL Read datasets]**: skrivskyddad åtkomst till datauppsättningar.</li><li>**[!DNL Read schemas]**: skrivskyddad åtkomst till scheman.</li><li>**[!DNL Manage merge policies]**: läsa, skapa, redigera och ta bort kopplingsprofiler.</li></ul> |

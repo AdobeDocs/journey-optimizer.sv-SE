@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 327de13a-1c99-4d5e-86cf-8180fb7aaf23
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+source-git-commit: 1cfe9f6cb6e7c3e9a5d9b808c10ae4dfe77a92a2
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 2%
@@ -36,7 +36,7 @@ Du kan också skapa och hantera innehållsmallar med API:er. Mer information fin
 
 >[!CAUTION]
 >
->Om du vill skapa, redigera och ta bort innehållsmallar måste du ha **[!DNL Manage Library Items]** behörighet som ingår i **[!DNL Content Library Manager]** produktprofil. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager)
+>Om du vill skapa, redigera och ta bort innehållsmallar måste du ha **[!DNL Manage library items]** behörighet som ingår i **[!DNL Content Library Manager]** produktprofil. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager)
 
 ## Få åtkomst till och hantera mallar {#access-manage-templates}
 
