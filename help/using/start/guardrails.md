@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: e0f7eca8b3313cb5eb8e201c567622ded20a82d2
+source-git-commit: 1d7e8fde57d0397891aecad4979b1008a3c10a47
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1726'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,11 @@ Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera opti
 * Mediefiler för MMS kan inkluderas via en URL som stöds. Kontrollera att mediefilen överförs separat.
 * Synkronisering av meddelandefeedback är för närvarande inte tillgängligt för MMS.
 * Samtalshantering fungerar på SMS-kanalnivå för MMS.
+
+## Fragmentskyddsräcken {#fragments-guardrails}
+
+* Visuella fragment är bara tillgängliga för e-postkanalen.
+* Uttrycksfragment är inte tillgängliga för webben och appkanaler.
 
 ## Resehanddukar {#journeys-guardrails}
 
