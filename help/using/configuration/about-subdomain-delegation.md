@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: underdomän, optimering, delegering
 exl-id: 1b5ca4db-44d9-49e2-ab39-a1abba223ec7
-source-git-commit: c4b8a74541a3fb9fea054bd1145592d75c62b165
+source-git-commit: 636c86d91d349104388849bbfc4e18bbbe2e4093
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '908'
 ht-degree: 25%
 
 ---
@@ -44,6 +44,10 @@ Dessa krav hanteras via komponenter som finns både på Adobe och hos kunden, me
 * Lär dig hur [delegera dina underdomäner](delegate-subdomain.md) direkt från gränssnittet
 * Lär dig hur [lägg till Google TXT-poster](google-txt.md) till dina underdomäner för att säkerställa att e-postmeddelanden skickas till Gmail-adresser
 * Lär dig hur [få åtkomst till PTR-posterna](ptr-records.md) som har genererats för dina underdomäner, så att de kan verifieras genom att e-postservrar skickas
+
+>[!NOTE]
+>
+>Om du vill implementera DMARC för dina underdomäner kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
 
 ## Konfigurationsmetoder för underdomäner {#subdomain-delegation-methods}
 
