@@ -4,222 +4,114 @@ title: Journey Optimizer produktdokumentation
 description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
-feature: Overview
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: d4ecfecdc74c26890658d68d352c36b75f7c9039
+source-git-commit: 94d91d423516535ca57f5e89f98abcbffd281897
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 13%
+source-wordcount: '374'
+ht-degree: 2%
 
 ---
 
 # Adobe [!DNL Journey Optimizer] Dokumentation {#cjm-documentation}
 
+## Nyheter ?
+
+Få en glimt av de senaste förbättringarna i Journey Optimizer! En omfattande lista över funktioner, förbättringar och korrigeringar finns i [Versionsinformation](using/rn/release-notes.md).
+
+>[!BEGINTABS]
+
+>[!TAB Verktyg i sandlådan]
+
+Med sandlådeverktygen kan du kopiera objekt över flera sandlådor genom att utnyttja export och import av paket. Ett paket kan bestå av ett eller flera objekt. Alla objekt som ingår i ett paket måste komma från samma sandlåda.
+
+[![bild](using/assets/do-not-localize/learn-more-button.svg)](using/building-journeys/copy-to-sandbox.md)
+
+>[!TAB MMS (Multimedia Message Service) i SMS]
+
+Med SMS-kanalen kan du nu förbättra kommunikationen genom att skicka MMS-meddelanden (Multimedia Message Service) som gör det möjligt att dela bilder, GIF eller videor med dina kunder. Observera att den här funktionen för närvarande endast är tillgänglig för Sinch.
+
+[![bild](using/assets/do-not-localize/learn-more-button.svg)](using/sms/create-sms.md#sms-content)
+
+>[!ENDTABS]
+
+## Börja med grunderna
+
 <table style="table-layout:fixed">
-<tr style="border: 0;">
-  <td>
-    <div><strong>Kom igång</strong>
-    </div>
-    <p>
-    <em></em>
-    <p>
-    <div>
-      <a href="using/start/get-started.md">Vad är [!DNL Journey Optimizer]?</a>
-    </div>
-    <p>Upptäck viktiga funktioner och användningsområden
-    <p>
-    <div>
-      <a href="using/rn/release-notes.md">Versionsinformation</a>
-    </div>
-    <p>Nya funktioner, senaste förbättringar och korrigeringar</p>
-   <p>
-    <div>
-      <a href="using/start/quick-start.md">Snabbstartsguide</a>
-    </div>
-    <p>Lär dig att börja som administratör, datatekniker eller resehandledare</p>
-    <p>
-    <p>
-    <div>
-      <a href="using/email/get-started-email-design.md">Designa e-postinnehåll</a>
-    </div>
-    <p>Designa ett nytt e-postmeddelande eller importera ett befintligt HTML-innehåll</p>
-    <p>
-    <div>
-    <a href="using/building-journeys/journey-gs.md">Skapa den första resan</a>
-    </div>
-    <p>Lär dig hur du bygger och utför en resa
-    <p>
-     <div>
-      <a href="using/campaigns/create-campaign.md">Skapa och hantera kampanjer</a>
-    </div>
-    <p>Skapa, konfigurera och skicka din första kampanj</p>
-    <p>
-    <div>
-    <div>
-    <a href="using/configuration/get-started-configuration.md">Konfigurera [!DNL Journey Optimizer]</a>
-    </div>
-    <p>Lär dig viktiga steg för att konfigurera [!DNL Journey Optimizer]</p>
-    <p>
-    <div>
-    <a href="using/administration/permissions-overview.md">Ge åtkomst till [!DNL Journey Optimizer]</a>
-    </div>
-    <p>Definiera och hantera behörigheter som tilldelats till [!DNL Journey Optimizer] användare</p>
-    <p>
-    <div>
-    <a href="using/offers/get-started/starting-offer-decisioning.md">Beslutshantering</a>
-    </div>
-    <p>Skapa erbjudanden och leverera det bästa erbjudandet och upplevelsen till era kunder</p>
-    <p>
-    <p>
-    <div><strong>Ytterligare resurser</strong>
-    </div>
-    <p>
-    <p>
-    <div>
-    <li>
-      <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html" target="_blank">Adobe Journey Optimizer produktbeskrivning</a>
-    </li>
-    </div>
-    <div>
-    <li>
-      <a href="https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf" target="_blank">Adobe Journey Optimizer - säkerhetsöversikt</a> (PDF)
-    </li>
-    </div>
-    <div>
-    <li>
-      <a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html" target="_blank">Adobe Experience Platform-dokumentation</a>
-    </li>
-    </div>
-    <div>
-      <li>
-      <a href="https://www.adobe.com/se/experience-platform/documentation-and-developer-resources.html" target="_blank">Resurser för Adobe Experience Platform-utvecklare</a>
-    </li>
-    </div>
-    <p>
-    </p>
-    <p>
-    </p>
-    <div>
-    </div>
-    <div><strong>Nyhetsbrev</strong>
-    </div>
-    <p>
-    <p>
-    <div>
-    <p>Registrera dig för <a href="https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html" target="_blank">Adobe Journey Optimizer kvartalsvis nyhetsbrev</a>.</p>
-    <p>Få de senaste produktuppdateringarna, spännande historier, användningsexempel, tips och mycket mer levererade direkt till inkorgen varje kvartal. I varje nyhetsbrev hittar du:</p>
-    <li>Produktnyheter och uppdateringar, inklusive nyligen släppta funktioner</li>
-    <li>Inbjudningar till event, webbinarier och inspelningar för nyligen använda webbinarier</li>
-    <li>De viktigaste diskussionerna i Adobe Journey Optimizer Experience League Community </li>
-    <li>Fallstudier och användningsexempel från andra Adobe Journey Optimizer-kunder</li>
-    <li>Tips och tricks som hjälper er att leverera kundupplevelser som leder till affärsframgångar</li>
-  </td>
-   <td>
-   <div><strong>Direktlänkar till viktiga resurser</strong>
-    </div>
-    <p>
-    <em></em>
-    <p>
-    <p>RESEHANTERING</p>
-    <li>
-      <a href="using/campaigns/get-started-with-campaigns.md">Kampanjer</a>
-    </li>
-        <li>
-      <a href="using/building-journeys/journey-gs.md">Resor</a>
-    </li>
-    <li>
-      <a href="using/landing-pages/get-started-lp.md">Landningssidor</a>
-    </li>
-    <p>
-    <p>BESLUTSHANTERING</p>
-    <li>
-      <a href="using/offers/get-started/starting-offer-decisioning.md">Erbjudanden</a>
-    </li>
-     <li>
-      <a href="using/offers/offer-library/key-steps.md">Komponenter</a>
-    </li>
-    <p>
-    <p>INNEHÅLLSHANTERING</p>
-    <li>
-      <a href="using/content-management/assets-essentials.md">Assets</a>
-    </li>
-    <li>
-      <a href="using/content-management/content-templates.md">Innehållsmallar</a>
-    </li>
-      <li>
-      <a href="using/content-management/fragments.md">Fragment</a>
-    </li>
-    <p>
-    <p>DATAHANTERING</p>
-    <li>
-      <a href="using/data/get-started-schemas.md">Scheman</a>
-    </li>
-     <li>
-      <a href="using/data/get-started-datasets.md">Datauppsättningar</a>
-    </li>
-        <li>
-      <a href="using/data/get-started-queries.md">Frågor</a>
-    </li>
-     <li>
-      <a href="https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/monitor-data-ingestion.html" target="_blank">Övervakning</a>
-    </li>
-    <p>
-    <p>ANSLUTNINGAR</p>
-      <li>
-      <a href="using/data/export-datasets.md">Mål </a>
-    </li>
-    <li>
-      <a href="using/start/get-started-sources.md">Källor</a>
-    </li>
-    <p>
-    <p>KUND</p>
-    <li>
-      <a href="using/audience/about-audiences.md">Publiker</a>
-    </li>
-    </li>
-    <li>
-      <a href="using/landing-pages/subscription-list.md">Prenumerationslistor</a>
-    </li>     
-    <li>
-      <a href="using/audience/get-started-profiles.md">Profiler</a>
-    </li>
-    <li>
-      <a href="using/audience/get-started-identity.md">Identitet</a>
-    </li>
-    <p>
-    <p>SEKRETESS</p>
-    <li>
-      <a href="using/action/action-privacy.md">Policyer</a>
-    </li>
-    <li>
-      <a href="using/privacy/requests.md">Begäranden</a>
-    </li>
-        <li>
-      <a href="using/privacy/audit-logs.md"target="_blank">Granskning</a>
-    </li>
-        <li>
-      <a href="using/privacy/data-hygiene.md"target="_blank">Datahygien</a>
-    </li>
-    <p>
-    <p>ADMINISTRATION</p>
-    <li>
-      <a href="using/configuration/about-data-sources-events-actions.md">Konfigurationer</a>
-    </li>
-    <li>
-      <a href="using/configuration/frequency-rules.md">Regler</a>
-    </li>
-        <li>
-      <a href="using/reports/alerts.md">Larm</a>
-    </li>
-    <li>
-      <a href="using/configuration/get-started-configuration.md">Kanaler</a>
-    </li>
-     <li>
-      <a href="using/administration/sandboxes.md">Sandlådor</a>
-    </li>
-     <li>
-      <a href="using/start/search-filter-categorize.md#work-with-unified-tags">Taggar</a>
-    </li>
-  </td>
-</tr>
+  <tr style="border: 0;">
+    <td>
+    <a href="using/start/quick-start.md"><img src="using/assets/do-not-localize/start-quick.png"></a></a>
+    <div><strong>Snabbstartguider</strong><br/>Lär dig nå dina mål snabbare i Journey Optimizer med en personaliserad strategi som bygger på din roll.</div>
+    </td>
+    <td>
+    <a href="using/start/user-interface.md"><img src="using/assets/do-not-localize/start-interface.jpeg"></a>
+    <div><strong>Användargränssnitt</strong><br/>Lär dig navigera och optimera upplevelsen i Journey Optimizer.</div><br/>
+    </td>
+    <td>
+    <a href="using/building-journeys/journey-gs.md"><img src="using/assets/do-not-localize/start-journey.jpeg"></a>
+    <div><strong>Skapa din första resa</strong><br/>Designa och samordna personaliserade flerkanaliga resor för att harmonisera marknadsföringsutforskandet med personligt kundengagemang. 
+    </div></td>
+    <td>
+    <a href="using/campaigns/create-campaign.md"><img src="using/assets/do-not-localize/start-campaign.jpeg"></a>
+    <div><strong>Starta din första kampanj</strong><br/>Skapa och starta er första kampanj i Journey Optimizer för att leverera målinriktat engångsinnehåll till en viss målgrupp.</div>
+    </td>
+  </tr>
 </table>
+
+## Utforska dokumentationen
+
+<table style="table-layout:auto">
+  <tr style="border: 0;">
+    <td>
+      <img src="using/assets/do-not-localize/icon-quick-start.svg" width="70px">
+    <td>
+      <strong>Kundens upplevelse</strong><br/><a href="using/building-journeys/journey.md">Resor</a> - <a href="using/campaigns/get-started-with-campaigns.md">Kampanjer</a> - <a href="using/landing-pages/get-started-lp.md">Landningssidor</a> - <a href="using/reports/live-report.md">Rapportering</a> - <a href="using/offers/get-started/starting-offer-decisioning.md">Beslutsledning</a>
+    </td>
+    <td>
+      <img src="using/assets/do-not-localize/icon-configure.svg" width="70px">
+    </td>
+    <td>
+      <strong>Konfiguration och administration</strong><br/><a href="using/configuration/channel-surfaces.md">Kanalytor</a> - <a href="using/configuration/about-data-sources-events-actions.md">Konfigurera resor</a>  - <a href="using/administration/permissions-overview.md">Åtkomstkontroll</a> - <a href="using/administration/sandboxes.md">Hantering av sandlådor</a>
+    </td>
+    <td>
+      <img src="using/assets/do-not-localize/icon-campaign.svg" width="70px">
+    </td>
+    <td>
+      <strong>Kommunikationskanaler</strong><br/><a href="using/email/get-started-email.md">E-post</a> - <a href="using/sms/get-started-sms.md">SMS</a> - <a href="using/in-app/get-started-in-app.md">I appen</a> - <a href="using/push/get-started-push.md">Push-meddelanden</a> - <a href="using/direct-mail/get-started-direct-mail.md">Direktreklam</a> - <a href="using/web/get-started-web.md">Webb</a>
+    </td>
+  </tr>
+  <tr style="border: 0;">
+    <td>
+      <img src="using/assets/do-not-localize/icon-content.svg" width="70px">
+    </td>
+    <td>
+      <strong>Innehållshantering</strong><br/><a href="using/content-management/assets-essentials.md">Resurser/bilder</a> - <a href="using/personalization/personalize.md">Personalisering</a> - <a href="using/content-management/content-templates.md">Återanvändbar</a> &amp; <a href="using/personalization/dynamic-content.md">dynamisk</a> innehåll - <a href="using/content-management/preview-test.md">Testa och förhandsgranska innehåll</a>
+    </td>
+    <td>
+      <img src="using/assets/do-not-localize/icon_profile-audience.svg" width="70px">
+    </td>
+    <td>
+      <strong>Profiler och målgrupper</strong><br/><a href="using/audience/about-audiences.md">Målgrupper</a> - <a href="using/audience/get-started-profiles.md">Profiler</a> - <a href="using/audience/get-started-identity.md">Identiteter</a> - <a href="using/audience/license-usage.md">Licensanvändning</a> - <a href="using/privacy/get-started-privacy.md">Sekretesshantering</a>
+    </td>
+    <td>
+      <img src="using/assets/do-not-localize/icon-data.svg" width="70px">
+    </td>
+    <td>
+      <strong>Datahantering</strong><br/><a href="using/data/get-started-schemas.md">Scheman</a> - <a href="using/data/get-started-datasets.md">Datauppsättningar</a> - <a href="using/data/get-started-queries.md">Frågor</a>
+    </td>
+  </tr>
+</table>
+
+## Ytterligare resurser
+
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td><strong>Adobe Journey Optimizer</strong><br/>
+<a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=en" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html" target="_blank">Produktbeskrivning</a> - <a href="https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf" target="_blank">Säkerhetsöversikt (PDF)</a> - <a href="https://developer.adobe.com/journey-optimizer-apis/" target="_blank">API-referens</a>
+</td>
+<td><strong>Adobe Experience Platform</strong><br/>
+<a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html" target="_blank">Dokumentation</a> - <a href="https://www.adobe.com/se/experience-platform/documentation-and-developer-resources.html" target="_blank">Resurser för utvecklare</a>
+</td>
+</tr></table>
+
+<table style="table-layout:auto"><tr style="border: 0;"><td><img src="using/assets/do-not-localize/newsletter.png"></td><td>
+<b>Håll dig informerad och lyft din Adobe Journey Optimizer-upplevelse!</b><br/>Anmäl dig till vårt kvartalspublikationsbrev. Få exklusiv tillgång till de senaste produktuppdateringarna, fängslande berättelser, användningsexempel från verkligheten, värdefulla tips med mera - allt levereras direkt till inkorgen varje kvartal. <a href="https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html">Anmäl dig idag!</a></td></tr></table>
+
