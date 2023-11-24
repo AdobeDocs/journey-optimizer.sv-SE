@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: 3de42084d849047f218cf8dca2ad7e510759fb1c
+source-git-commit: de7c09fd5dcba80f23d136c067c2527fc4ec5f2e
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ För att segmenteringen ska fungera optimalt bör du därför undvika följande 
 
 * **Meddelandet har skickats** Feedback Status-händelse
 
-  The **Meddelandet har skickats** Feedback-händelse används ofta för frekvens- eller undertryckskontroll innan du skickar ett e-postmeddelande. Adobe rekommenderar att du undviker detta om möjligt eftersom det tar utrymme i den aktuella totala kapaciteten för hur många händelser som kan direktuppspelas per sekund.
+  The **Meddelandet har skickats** Feedback-händelse används ofta för frekvens- eller undertryckskontroll innan du skickar ett e-postmeddelande. Adobe rekommenderar att du undviker det eftersom det sätter tryck på prestandan och kan orsaka att systemet försämras.
 
   Använd därför affärsregler i stället för, för frekvens- eller undertryckningslogik **Meddelandet har skickats** feedback-händelser. Observera att det inom kort kommer att finnas ett dagligt tak för frekvenser för enskilda profiler, vilket kompletterar den befintliga månadsgränsen för affärsregler.
 
