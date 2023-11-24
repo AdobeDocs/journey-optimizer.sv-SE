@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: kvalificering, evenemang, målgrupp, resa, plattform
 exl-id: 7e70b8a9-7fac-4450-ad9c-597fe0496df9
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 3de42084d849047f218cf8dca2ad7e510759fb1c
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 0%
+source-wordcount: '968'
+ht-degree: 1%
 
 ---
 
@@ -59,7 +59,7 @@ Den här typen av händelse kan placeras som det första steget eller senare und
 
    När målgruppen lagts till **[!UICONTROL Copy]** kan du kopiera dess namn och ID:
 
-   `{"name":"Loyalty membership“,”id":"8597c5dc-70e3-4b05-8fb9-7e938f5c07a3"}`
+   `{"name":"Loyalty membership","id":"8597c5dc-70e3-4b05-8fb9-7e938f5c07a3"}`
 
    ![](assets/segment-copy.png)
 
@@ -107,7 +107,9 @@ Dessutom, om målgruppen är nyskapad och omedelbart används under en resa, kan
 
 När man använder målgruppskvalifikationer för direktuppspelade målgrupper är risken mindre för att få stora toppar av ingångar/utgångar på grund av den kontinuerliga utvärderingen av målgruppen. Men om målgruppsdefinitionen leder till att ett stort antal kunder kvalificerar sig samtidigt kan det ändå bli en höjdpunkt.
 
-Mer information om direktuppspelningssegmentering finns i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html#api)
+Undvik att använda öppna och skicka händelser med direktuppspelningssegmentering. Använd istället riktiga användaraktivitetssignaler som klickningar, köp eller beacon-data. Använd affärsregler i stället för att skicka händelser för frekvens- eller undertryckningslogik. [Läs mer](../audience/about-audiences.md#open-and-send-event-guardrails)
+
+Mer information om direktuppspelningssegmentering finns i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html#api).
 
 ### Så här undviker du överbelastningar{#overloads-speed-segment-qualification}
 

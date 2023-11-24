@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: d3aecaefb0b356eb1d25b151e8d210620b51ea5f
+source-git-commit: 3de42084d849047f218cf8dca2ad7e510759fb1c
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 >title="Välj kampanjmålgrupp"
 >abstract="I den här listan visas alla tillgängliga Adobe Experience Platform-målgrupper. Välj målgrupp för er kampanj. Meddelandet som konfigurerats i kampanjen skickas till alla personer som tillhör den valda målgruppen. [Läs mer om målgrupper](../audience/about-audiences.md)"
 
-[!DNL Journey Optimizer] kan ni bygga upp och utnyttja Adobe Experience Platform målgrupper med hjälp av kundprofildata i realtid direkt från **[!UICONTROL Audiences]** och använda dem i era resor eller kampanjer. Läs mer i [Dokumentation för Adobe Experience Platform Segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
+[!DNL Journey Optimizer] kan ni bygga upp och utnyttja Adobe Experience Platform målgrupper med hjälp av kundprofildata i realtid direkt från **[!UICONTROL Audiences]** och använda dem i era resor eller kampanjer. Läs mer i [Dokumentation för Adobe Experience Platform Segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 
 ## Använd målgrupper i [!DNL Journey Optimizer] {#segments-in-journey-optimizer}
 
@@ -53,24 +53,68 @@ Ni kan utnyttja målgrupper i **[!DNL Journey Optimizer]** på olika sätt:
 
 ## Metoder för utvärdering av målgrupper{#evaluation-method-in-journey-optimizer}
 
-I Adobe Journey Optimizer genereras målgrupper från segmentdefinitioner med en av två utvärderingsmetoder:
+I Adobe Journey Optimizer genereras målgrupper från segmentdefinitioner med hjälp av någon av de tre utvärderingsmetoderna nedan.
 
-* **Direktuppspelningssegmentering**: Profillistan för målgruppen hålls uppdaterad i realtid när nya data flödar in i systemet.
++++ Direktuppspelningssegmentering
 
-  Direktuppspelningssegmentering är en kontinuerlig process för datamarkering som uppdaterar era målgrupper som svar på användaraktivitet. När en segmentdefinition har skapats och målgruppen har sparats, tillämpas segmentdefinitionen på inkommande data till Journey Optimizer. Det innebär att enskilda personer läggs till eller tas bort från målgruppen när deras profildata ändras, vilket säkerställer att målgruppen alltid är relevant.
+Profillistan för målgruppen hålls uppdaterad i realtid när nya data flödar in i systemet.
 
-* **Gruppsegmentering**: Profillistan för målgruppen utvärderas var 24:e timme.
+Direktuppspelningssegmentering är en kontinuerlig process för datamarkering som uppdaterar era målgrupper som svar på användaraktivitet. När en segmentdefinition har skapats och målgruppen har sparats, tillämpas segmentdefinitionen på inkommande data till Journey Optimizer. Det innebär att enskilda personer läggs till eller tas bort från målgruppen när deras profildata ändras, vilket säkerställer att målgruppen alltid är relevant. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html#query-types){target="_blank"}
 
-  Gruppsegmentering är ett alternativ till direktuppspelningssegmentering som bearbetar alla profildata samtidigt genom segmentdefinitioner. Detta skapar en ögonblicksbild av målgruppen som kan sparas och exporteras för användning. Till skillnad från direktuppspelningssegmentering kommer gruppsegmentering inte att kontinuerligt uppdatera målgruppslistan i realtid, och nya data som kommer in efter gruppbearbetningen kommer inte att återspeglas i målgruppen förrän nästa gruppbearbetning.&quot;
+>[!NOTE]
+>
+>Se till att använda rätt händelser som villkor för direktuppspelningssegmentering. [Läs mer](#open-and-send-event-guardrails)
 
-Fastställandet mellan gruppsegmentering och direktuppspelningssegmentering görs av systemet för varje målgrupp utifrån komplexiteten och kostnaden för att utvärdera segmentdefinitionsregeln. Du kan visa utvärderingsmetoden för varje målgrupp i **[!UICONTROL Evaluation method]** -kolumnen i målgruppslistan.
++++
 
++++ Gruppsegmentering
+
+Profillistan för publiken utvärderas var 24:e timme.
+
+Gruppsegmentering är ett alternativ till direktuppspelningssegmentering som bearbetar alla profildata samtidigt genom segmentdefinitioner. Detta skapar en ögonblicksbild av målgruppen som kan sparas och exporteras för användning. Till skillnad från direktuppspelningssegmentering kommer gruppsegmentering inte att kontinuerligt uppdatera målgruppslistan i realtid, och nya data som kommer in efter gruppbearbetningen kommer inte att återspeglas i målgruppen förrän nästa gruppbearbetning. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#batch){target="_blank"}
+
++++
+
++++ Kantsegmentering
+
+Kantsegmentering är möjligheten att omedelbart utvärdera segment i Adobe Experience Platform [på kanten](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"}, enabling same-page and next-page personalization use cases. Currently only select query types can be evaluated with edge segmentation. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/edge-segmentation.html#query-types){target="_blank"}
+
++++
+
+Om du vet vilken utvärderingsmetod du vill använda väljer du den i listrutan. Du kan också klicka på mappikonen för bläddringsikonen med ett förstoringsglas för att visa en lista över tillgängliga metoder för utvärdering av segmentdefinitioner. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#segment-properties){target="_blank"}
+
+![](assets/evaluation-methods.png)
+
+<!--The determination between batch segmentation and streaming segmentation is made by the system for each audience, based on the complexity and the cost of evaluating the segment definition rule. You can view the evaluation method for each audience in the **[!UICONTROL Evaluation method]** column of the audience list.
+    
 ![](assets/evaluation-method.png)
 
 >[!NOTE]
 >
->Om **[!UICONTROL Evaluation method]** -kolumnen visas inte, du måste lägga till den med hjälp av konfigurationsknappen högst upp till höger i listan.
+>If the **[!UICONTROL Evaluation method]** column does not display, you  need to add it using configuration button on the top right of the list.-->
 
 När du har definierat en målgrupp för första gången läggs profiler till i målgruppen när de kvalificerar sig.
 
 Det kan ta upp till 24 timmar att fylla målgruppen med tidigare data. När målgruppen har fyllts i på nytt hålls målgruppen kontinuerligt uppdaterad och alltid redo för målinriktning.
+
+### Händelseanvändning med direktuppspelningssegmentering {#open-and-send-event-guardrails}
+
+Strömmande segmentering är användbart för personalisering i realtid med värdefulla användningsexempel. Det är dock viktigt att välja höger [händelser](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#events){target="_blank"} som ska användas som segmenteringskriterier.
+
+För att segmenteringen ska fungera optimalt bör du därför undvika följande händelser:
+
+* **Meddelandet har öppnats** Interaktionstyp-händelse
+
+  När ni skapar er målgrupp använder ni **Meddelandet har öppnats** interaktionshändelser blev otillförlitliga eftersom de inte är faktiska indikatorer för användaraktivitet och kan påverka segmenteringsprestanda negativt. Läs varför i det här [Adobe blogginlägg](https://blog.adobe.com/en/publish/2021/06/24/what-apples-mail-privacy-protection-means-for-email-marketers){target="_blank"}.
+
+  Adobe rekommenderar därför att du inte använder **Meddelandet har öppnats** interaktionshändelser med direktuppspelningssegmentering. Använd istället riktiga användaraktivitetssignaler som klickningar, köp eller beacon-data.
+
+* **Meddelandet har skickats** Feedback Status-händelse
+
+  The **Meddelandet har skickats** Feedback-händelse används ofta för frekvens- eller undertryckskontroll innan du skickar ett e-postmeddelande. Adobe rekommenderar att du undviker detta om möjligt eftersom det tar utrymme i den aktuella totala kapaciteten för hur många händelser som kan direktuppspelas per sekund.
+
+  Använd därför affärsregler i stället för, för frekvens- eller undertryckningslogik **Meddelandet har skickats** feedback-händelser. Observera att det inom kort kommer att finnas ett dagligt tak för frekvenser för enskilda profiler, vilket kompletterar den befintliga månadsgränsen för affärsregler.
+
+>[!NOTE]
+>
+>Du kan använda **Meddelandet har öppnats** och **Meddelande skickat** händelser i gruppsegmentering utan några prestandaproblem.

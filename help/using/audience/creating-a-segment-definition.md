@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 289aac5d-6cdb-411f-985e-3acef58050a8
-source-git-commit: f64388673b5a3b2a8702026ce09b39e928ac2ab4
+source-git-commit: 3de42084d849047f218cf8dca2ad7e510759fb1c
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 3%
+source-wordcount: '391'
+ht-degree: 4%
 
 ---
 
@@ -55,6 +55,10 @@ I det här exemplet kommer vi att bygga en målgrupp för alla kunder som bor i 
    * **Händelser**: profiler som har öppnat Luma-programmet inom de senaste 7 dagarna och sedan köpt det inom 2 timmar efter att programmet öppnats.
 
      ![](assets/add-events.png)
+
+     >[!NOTE]
+     >
+     >Adobe rekommenderar att du inte använder öppna och skicka händelser med direktuppspelningssegmentering. Använd istället riktiga användaraktivitetssignaler som klickningar, köp eller beacon-data. Använd affärsregler i stället för att skicka händelser för frekvens- eller undertryckningslogik. [Läs mer](about-audiences.md#open-and-send-event-guardrails)
 
 1. När du lägger till och konfigurerar nya fält på arbetsytan visas **[!UICONTROL Audience Properties]** uppdateras automatiskt med information om de uppskattade profilerna som tillhör målgruppen.
 
