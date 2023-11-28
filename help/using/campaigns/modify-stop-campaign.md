@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: hantera kampanjer, status, schema, åtkomst, optimering
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
-source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
+source-git-commit: b9630c922ff67b0a402af5f950ee4e5a442bb1b1
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '563'
 ht-degree: 1%
 
 ---
@@ -38,6 +38,7 @@ Kampanjer kan ha flera statusvärden:
 
 * **[!UICONTROL Draft]**: Kampanjen redigeras, den har inte aktiverats.
 * **[!UICONTROL Activating]**: Kampanjen aktiveras.
+* **[!UICONTROL Processing]** *(endast e-postkampanjer)*: Målgruppsexporten är klar, kampanjen publiceras.
 * **[!UICONTROL Live]**: Kampanjen har aktiverats.
 * **[!UICONTROL Scheduled]**: Kampanjen är konfigurerad att aktiveras ett visst startdatum.
 * **[!UICONTROL Stopped]**: Kampanjen har stoppats manuellt. Du kan inte aktivera eller återanvända den längre. [Lär dig stoppa en kampanj](modify-stop-campaign.md#stop)

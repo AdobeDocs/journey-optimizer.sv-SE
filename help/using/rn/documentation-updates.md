@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: e0f7eca8b3313cb5eb8e201c567622ded20a82d2
+source-git-commit: b9630c922ff67b0a402af5f950ee4e5a442bb1b1
 workflow-type: tm+mt
-source-wordcount: '4099'
+source-wordcount: '4116'
 ht-degree: 13%
 
 ---
@@ -22,6 +22,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 ## November 2023 {#nov-2023}
 
 * Skyddsplanen som begränsar alla anpassade åtgärder har ändrats från 150 000 anrop över 30 sekunder till 300 000 anrop över en minut. Dessutom gäller inte längre standardfästningen för varje slutpunkt. Den utförs nu per värd och per sandlåda. Om du till exempel har två slutpunkter med samma värd i en sandlåda (till exempel: `https://www.adobe.com/endpoint1` och `https://www.adobe.com/endpoint2`) gäller det för alla slutpunkter under adobe.com. &quot;endpoint1&quot; och &quot;endpoint2&quot; har samma begränsningskonfiguration och om en slutpunkt når gränsen påverkas den andra slutpunkten. [Läs mer](../action/about-custom-action-configuration.md)
+* En ny status för e-postkampanjer har lagts till i listan över kampanjstatus. [Läs mer](../campaigns/modify-stop-campaign.md#campaign-statuses-and-alerts-statuses)
 
 ## Oktober 2023 {#oct-2023}
 
