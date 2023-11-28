@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: de7c09fd5dcba80f23d136c067c2527fc4ec5f2e
+source-git-commit: 25c63b7bd602446df0ada9a0e7aedb752f10892e
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Ni kan utnyttja målgrupper i **[!DNL Journey Optimizer]** på olika sätt:
 
 * Använd **Villkor** aktiviteter på en resa för att skapa villkor baserade på medlemskap för målgrupper. [Lär dig hur du använder målgrupper under förhållanden](../building-journeys/condition-activity.md#using-a-segment).
 
-## Metoder för utvärdering av målgrupper{#evaluation-method-in-journey-optimizer}
+## Metoder för utvärdering av målgrupper {#evaluation-method-in-journey-optimizer}
 
 I Adobe Journey Optimizer genereras målgrupper från segmentdefinitioner med hjälp av någon av de tre utvärderingsmetoderna nedan.
 
@@ -97,11 +97,11 @@ När du har definierat en målgrupp för första gången läggs profiler till i 
 
 Det kan ta upp till 24 timmar att fylla målgruppen med tidigare data. När målgruppen har fyllts i på nytt hålls målgruppen kontinuerligt uppdaterad och alltid redo för målinriktning.
 
-### Händelseanvändning med direktuppspelningssegmentering {#open-and-send-event-guardrails}
+### Händelseanvändning med direktuppspelningssegmentering {#streaming-segmentation-events-guardrails}
 
 Strömmande segmentering är användbart för personalisering i realtid med värdefulla användningsexempel. Det är dock viktigt att välja höger [händelser](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#events){target="_blank"} som ska användas som segmenteringskriterier.
 
-För att segmenteringen ska fungera optimalt bör du därför undvika följande händelser:
+Därför bör du undvika följande händelser för optimala prestanda vid direktuppspelningssegmentering:
 
 * **Meddelandet har öppnats** Interaktionstyp-händelse
 

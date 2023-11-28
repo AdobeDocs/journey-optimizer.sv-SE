@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: b9630c922ff67b0a402af5f950ee4e5a442bb1b1
+source-git-commit: 25c63b7bd602446df0ada9a0e7aedb752f10892e
 workflow-type: tm+mt
-source-wordcount: '4116'
+source-wordcount: '4170'
 ht-degree: 13%
 
 ---
@@ -23,6 +23,8 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 * Skyddsplanen som begränsar alla anpassade åtgärder har ändrats från 150 000 anrop över 30 sekunder till 300 000 anrop över en minut. Dessutom gäller inte längre standardfästningen för varje slutpunkt. Den utförs nu per värd och per sandlåda. Om du till exempel har två slutpunkter med samma värd i en sandlåda (till exempel: `https://www.adobe.com/endpoint1` och `https://www.adobe.com/endpoint2`) gäller det för alla slutpunkter under adobe.com. &quot;endpoint1&quot; och &quot;endpoint2&quot; har samma begränsningskonfiguration och om en slutpunkt når gränsen påverkas den andra slutpunkten. [Läs mer](../action/about-custom-action-configuration.md)
 * En ny status för e-postkampanjer har lagts till i listan över kampanjstatus. [Läs mer](../campaigns/modify-stop-campaign.md#campaign-statuses-and-alerts-statuses)
+* Avsnittet Kom igång med Adobe Experience Platform målgrupper har uppdaterats för att återspegla tillgängliga metoder för målgruppsutvärdering och hur du väljer dem. [Läs mer](../audience/about-audiences.md#evaluation-method-in-journey-optimizer)
+* Ett nytt underavsnitt har lagts till för att specificera vilka händelser som ska undvikas när du skapar en målgrupp om du använder utvärderingsmetoden för direktuppspelningssegmentering. [Läs mer](../audience/about-audiences.md#streaming-segmentation-events-guardrails)
 
 ## Oktober 2023 {#oct-2023}
 
