@@ -9,7 +9,7 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, bibliotek, personalisering
 exl-id: 74b1be18-4829-4c67-ae45-cf13278cda65
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 08f3fc1837a4daa1ecaa7afcd53c80381177efb0
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Utnyttja uttrycksfragment {#use-expression-fragments}
 
-När du använder uttrycksredigeraren kan du utnyttja alla uttrycksfragment som har skapats eller sparats i den aktuella sandlådan.
+När du använder **Uttrycksredigerare** kan du använda alla uttrycksfragment som har skapats eller sparats i den aktuella sandlådan.
 
 Lär dig hur du skapar och hanterar fragment i [det här avsnittet](../content-management/fragments.md).
 
