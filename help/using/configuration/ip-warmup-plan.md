@@ -11,9 +11,9 @@ keywords: IP, grupp, underdomäner, leveransbarhet
 hide: true
 hidefromtoc: true
 exl-id: c2434086-2ed4-4cd0-aecd-2eea8f0a55f6
-source-git-commit: 2483f53982acc920676190c1bc7fef5abf3c2331
+source-git-commit: ccee7f47301bf6ceb832b8586cccb30618e63955
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1488'
 ht-degree: 1%
 
 ---
@@ -97,7 +97,7 @@ Nedan visas ett exempel på en fil som innehåller en IP-värmerapport.
 
 ### Fliken IP Warmup Plan {#ip-warmup-plan-tab}
 
-* I det här exemplet har en plan förberetts som sträcker sig över 17 dagar (kallas&quot;**körningar**&quot;) för att nå en målvolym på över en miljon profiler.
+* I det här exemplet har en plan förberetts som sträcker sig över 17 dagar (kallas&quot;**körningar**&#39;) för att nå en målvolym på över en miljon profiler.
 
 * Detta planerade arbete pågår till sex **faser**, som alla innehåller minst en omgång.
 
@@ -128,51 +128,48 @@ De färdiga huvuddomängrupperna som du kan lägga till i din plan visas nedan:
 * La Poste
 * Apple
 
-<!--
-+++ Gmail
-gmail.com;gmail.fr;gmail.de;gmail.co.uk;gmail.it
++++ Gmail gmail.com;google.com;googlemail.com;googlemail.co.uk
 +++
 
 +++ Adobe
-adobe.com;adobe.fr;adobe.es
+
 +++
 
-+++WP
++++WP wp.pl;o2.pl
 +++
 
-+++Comcast
++++Comcast comcast.net
 +++
 
-+++Yahoo
++++Yahoo aol.fi;games.com;cs.com;yahoo.com.in;y7mail.com;yahoo.co.uk;yahoo.hu;yahoo.co.hu;yahoo.cn;yahoogroups.com.sg;yahoogroups.com.au;aol.es;yahoo.com.au;yahoo.com.vn;yahoo.ca;aol.hk;dina aktiviteter;åolpoland.pl;aolnorge.no;din tur;yahoo.fi;dina;öppningar;öppningar;ååååååååååååååååååååååååå;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;yahoo.hr;aol.cz;yahoo.ee;aol.be;aolcom.tr;yahoo.si;din tur;aol.it;din tur;yahoo.es;yahoo.dk;yahoogroups.ca;din tur;aol.kr;yahoo.ie;aol.jp;din hoo.lt;din tur;aol.nl;din tur;yahoo.bg;din tur;din tur;aol.se;din tur;yahoo.de;din tur;din tur;yahoo.nl;din tur;aol.dk;din tur;åhoo.cz;din;din o.sk;inrapportering;yahoogroups.de;yahoo.gr;inrapportering;inrapportering;yahoo.ro;inrapportering;yahoo.at;inrapportering;inrapportering;aol.fr;yahoo.in;aol.in;din inrapportering;yahoo.rs;aol.de;din indelning;inrapportering;inrapportering;yahoo.se;myaol.jp;åååå.pt;ååååå;ååååå;ååååå.dk;yahoo.fr;åååå;ååååå;åååååå;åååååå;ååååå;ååååå;åååååå;åååååå.cl;ååååååååååååå;ååååååååååååååååååååååååå;åå;åååååååååååååååååå;åå;ååååååååååå;åååååååååååååååå;åå;ååååå100;inrapportering;inrapportering;yahoo.be;inrapportering;aol.tw;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;aol.ru;inrapportering;inrapportering;yahoo.lv;aolpolska.pl;aol.at;yahoo.pl
 +++
 
-+++Bigpond
++++Bigpond bigpond.com;bigpond.com.au;bigpond.net;telstra.com;bigpond.net.au
 +++
 
-+++Orange
++++Orange voila.com;francetelecom.com;orange.com;orange.fr;wanadoo.fr;voila.fr
 +++
 
-+++Softbank
++++Softbank c.vodafone.ne.jp;jp-h.ne.jp;k.vodafone.ne.jp;;jp-d.ne.jp;jp-c.ne.jp;t.vodafone.ne.jp;h.vodafone.ne.jp;r.vodafone.ne.jp;q.vodafone.ne.jp;jp-t.ne.jp;bud;bud;bud;bud;kontrakt;kontrakt;bud;kontrakt;kontrakt;kontrakt
 +++
 
-+++Docomo
++++Docomo docomo.ne.jp
 +++
 
-+++United Internet
++++United Internet gmx.de;1and1.com;gmx.fr;mail.com;1und1.de;gmx.com;gmx.net;gmx.at;web.de;gmx.ch
 +++
 
-+++Microsoft
++++Microsoft hotmail.com.tr;live.de;live.ru;live.nl;windowslive.com;live.jp;mts.net;xbox.com;hotmail.fr;hotmail.cl;hotmail.jp;live.cl;live.at;live.com.au;live.hk;hotmail.com.au;hotmail.co.th;hotmail.com;hotmail.co.kr;live.ie;dina tjänster;hotmail.dk;dina aktiviteter;din;din;utlook;utlook.ie;ie;ie;ie;ie;ie;klart.ie.ie;ie;klart;klart;in;in;in;se.se.se;in;in;in;in;in;live.se;live;live.se;live;live;live;live;live;live;live;live;live;live;live;live;live;live;live;live;live;live;live;live;live;live;live livd.cn;priser;hotmail.es;live.fr;live.no;live.dk;hotmail.it;din tur;livd.se;livd.be;din livesändning;livesändning;livesändning;hotmail.ch;din tur;din tur;hotmail.gr;livesändning;hotmail.ca;din;livesändning;hotmail.de.de
 +++
 
-+++KDDI
++++KDDI au.com;ezweb.ne.jp;uqmobile.jp
 +++
 
-+++Italia Online
++++Italia Online inwind.it;blu.it;virgilio.it;giallo.it;iol.it;libero.it
 +++
 
-+++La Poste
++++La Poste laposte.net
 +++
--->
 
 ### Fliken Anpassad domängrupp {#custom-domain-group-tab}
 
