@@ -8,9 +8,9 @@ feature: Web Channel, Subdomains
 level: Experienced
 keywords: webb, underdomäner, konfiguration
 exl-id: 6e00466d-4ce5-4d80-89ff-c7331a5ab158
-source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
+source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '783'
 ht-degree: 0%
 
 ---
@@ -25,14 +25,14 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_web"
 >title="Delegera en webbunderdomän"
->abstract="Om du lägger till innehåll från Adobe Experience Manager Assets Essentials i dina webbupplevelser måste du konfigurera den underdomän som ska användas för att publicera det här innehållet. Välj bland de underdomäner som redan har delegerats till Adobe eller konfigurera en ny underdomän."
+>abstract="Om du lägger till innehåll från Adobe Experience Manager Assets i dina webbupplevelser måste du konfigurera den underdomän som ska användas för att publicera det här innehållet. Välj bland de underdomäner som redan har delegerats till Adobe eller konfigurera en ny underdomän."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_web_default"
 >title="Ange en webbunderdomän"
 >abstract="Markera en underdomän i listan över underdomäner som har delegerats till Adobe. Du kan ange den här webbunderdomänen som standardunderdomän, men bara en standardunderdomän i taget kan användas."
 
-Om du lägger till innehåll från [Adobe Experience Manager Assets Essentials](../content-management/assets-essentials.md) måste du konfigurera den underdomän som ska användas för att publicera innehållet.
+Om du lägger till innehåll från [Adobe Experience Manager Assets](../content-management/assets.md) måste du konfigurera den underdomän som ska användas för att publicera innehållet.
 
 Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en annan underdomän. Läs mer om hur du delegerar underdomäner till Adobe in [det här avsnittet](../configuration/delegate-subdomain.md).
 
@@ -101,7 +101,7 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 >[!CONTEXTUALHELP]
 >id="ajo_admin_web_subdomain_dns"
 >title="Generera matchande DNS-post"
->abstract="Om du vill konfigurera en ny webbunderdomän måste du kopiera den Adobe-namnserverinformation som visas i Journey Optimizer-gränssnittet och klistra in den i din domänvärdslösning för att generera den matchande DNS-posten. När kontrollen är klar kan underdomänen användas för att publicera innehåll som kommer från Experience Manager Assets Essentials-biblioteket."
+>abstract="Om du vill konfigurera en ny webbunderdomän måste du kopiera den Adobe-namnserverinformation som visas i Journey Optimizer-gränssnittet och klistra in den i din domänvärdslösning för att generera den matchande DNS-posten. När kontrollen är klar kan underdomänen användas för att publicera innehåll som kommer från Adobe Experience Manager Assets-biblioteket."
 
 Följ stegen nedan för att konfigurera en ny underdomän.
 

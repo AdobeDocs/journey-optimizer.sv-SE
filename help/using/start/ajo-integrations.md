@@ -7,9 +7,9 @@ feature: Integrations
 role: User
 level: Intermediate
 exl-id: 700dc66e-ae2d-418f-b75e-ece15af57ab3
-source-git-commit: c2f2dde40385f56ea86be15a5857fa9e5e2e2fed
+source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '704'
 ht-degree: 4%
 
 ---
@@ -40,13 +40,13 @@ Ni kan utnyttja alla Adobe Analytics beteendehändelsedata som ni redan samlar i
 Läs mer om [Journey Optimizer + Analytics](../event/about-analytics.md).
 
 
-## Adobe Experience Manager Assets Essentials {#integration-assets}
+## Adobe Experience Manager Assets {#integration-assets}
 
-Samla marknadsförings- och kreativa arbetsflöden med [!DNL Adobe Experience Manager Assets Essentials]. Inbyggt i [!DNL Adobe Journey Optimizer], åtkomst [!DNL Assets Essentials] att lagra, hantera, identifiera och distribuera digitala resurser. Det utgör en central databas med resurser som du kan använda för att fylla i dina meddelanden.
+Samla marknadsförings- och kreativa arbetsflöden med [!DNL Adobe Experience Manager Assets]. Inbyggt i [!DNL Adobe Journey Optimizer], åtkomst [!DNL Adobe Experience Manager Assets] att lagra, hantera, identifiera och distribuera digitala resurser. Det utgör en central databas med resurser som du kan använda för att fylla i dina meddelanden.
 
-[!DNL Adobe Experience Manager Assets Essentials] kan nås direkt från [!DNL Adobe Journey Optimizer] via den vänstra menyn **[!UICONTROL Assets]** -avsnitt.
+[!DNL Adobe Experience Manager Assets] kan nås direkt från [!DNL Adobe Journey Optimizer] via den vänstra menyn **[!UICONTROL Assets]** -avsnitt.
 
-Läs mer om [JOURNEY OPTIMIZER + ASSETS ESSENTIALS](../content-management/assets-essentials.md).
+Läs mer om [JOURNEY OPTIMIZER + ADOBE EXPERIENCE MANAGER ASSETS](../content-management/assets.md).
 
 
 ## Adobe Stock {#integration-stock}

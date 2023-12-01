@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: stock, bilder, integration, foton
 exl-id: 0715f65f-04bd-4dc2-a152-98111f4c42e6
-source-git-commit: c2f2dde40385f56ea86be15a5857fa9e5e2e2fed
+source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '547'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Med [!DNL Adobe Journey Optimizer]kan du överföra bilder till e-postmeddelande
 
 The **[!UICONTROL Find Adobe Stock photos]** och **[!UICONTROL Find Similar Image]** är tillgängliga för användare med tillgång till en AEM Assets Essentials-produktprofil.
 
-Mer information finns i [Väsentlig dokumentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html#add-users-to-essentials){target="_blank"}.
+Mer information finns i [Experience Manager Assets-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html#add-users-to-essentials){target="_blank"}.
 
 ## Infoga en bild från [!DNL Adobe Stock] {#add-stock-image}
 
@@ -96,7 +96,7 @@ Följ stegen nedan för att licensiera och hämta din bild:
 
    ![](assets/stock_6.png)
 
-1. Välj i vilken mapp resursen ska lagras. Mer information om [!DNL Assets Essentials], se det här [page](assets-essentials.md#get-started-assets-essentials).
+1. Välj i vilken mapp resursen ska lagras. Mer information om [!DNL Experience Manager Assets], se det här [page](assets.md#get-started-assets).
 
 ## Relaterade ämnen{#stock-related-topics}
 

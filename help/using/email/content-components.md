@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: komponenter, e-postdesigner, redigerare, e-post
 exl-id: a4aaa814-3fd4-439e-8f34-faf97208378a
-source-git-commit: 607dd050b4e340bf6ae80fec76be8a64f3962645
+source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1270'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ Använd **[!UICONTROL Text]** om du vill infoga text i e-postmeddelandet och jus
    * **Teckenstorlek**: välj teckensnittsstorleken för texten i pixlar.
    * **[!UICONTROL Change font color]**: välj färg för teckensnittet.
    * **[!UICONTROL Insert link]**: lägg till alla typer av länkar till ditt innehåll.
-   * **[!UICONTROL Edit image]**: lägg till en bild eller en resurs i textkomponenten. [Läs mer om resurshantering](../content-management/assets-essentials.md)
+   * **[!UICONTROL Edit image]**: lägg till en bild eller en resurs i textkomponenten. [Läs mer om resurshantering](../content-management/assets.md)
    * **[!UICONTROL Change font color]**: välj färg för teckensnittet.
    * **[!UICONTROL Add personalization]**: lägg till anpassningsfält för att anpassa innehållet utifrån dina profildata. [Läs mer om innehållspersonalisering](../personalization/personalize.md)
    * **[!UICONTROL Show the source code]**: visar källkoden för texten. Den kan inte ändras.
@@ -167,9 +167,9 @@ Använd **[!UICONTROL Image]** om du vill infoga en bildfil från datorn i ditt 
 
    ![](assets/email_designer_image_content.png)
 
-1. Från **[!UICONTROL Settings]** flik, klicka **[!UICONTROL Browse]** om du vill välja en bildfil från dina resurser eller **[!UICONTROL Import media]** för att överföra en resurs till Assets Essentials.
+1. Från **[!UICONTROL Settings]** flik, klicka **[!UICONTROL Browse]** om du vill välja en bildfil från dina resurser eller **[!UICONTROL Import media]** för att överföra en resurs till Adobe Experience Manager Assets.
 
-   Om du vill veta mer om [!DNL Assets Essentials], se [Adobe Experience Manager Assets Essentials-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}.
+   Om du vill veta mer om [!DNL Adobe Experience Manager Assets], se [Adobe Experience Manager Assets-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}.
 
    >[!NOTE]
    >

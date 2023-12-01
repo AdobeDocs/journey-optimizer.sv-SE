@@ -6,9 +6,9 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 9509fd67-6d12-4440-aad8-59690936be97
-source-git-commit: a20e01e66138ea5bb7be4d36c0d55b24ab9426db
+source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1039'
 ht-degree: 1%
 
 ---
@@ -146,4 +146,4 @@ Om du **not** med följande fördefinierade [fältgrupper](https://experiencelea
 
 ## Varumärkesdomäner för resurser {#branded-domains-for-assets}
 
-Om du lägger till innehåll från [Adobe Experience Manager Assets Essentials](../content-management/assets-essentials.md) måste du konfigurera den underdomän som ska användas för att publicera innehållet. [Läs mer](web-delegated-subdomains.md)
+Om du lägger till innehåll från [Adobe Experience Manager Assets](../content-management/assets.md) måste du konfigurera den underdomän som ska användas för att publicera innehållet. [Läs mer](web-delegated-subdomains.md)

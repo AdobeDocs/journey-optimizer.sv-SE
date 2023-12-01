@@ -7,7 +7,7 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, design, formatering
 exl-id: 7d7aa721-96aa-4ebc-a51c-e693f893f34f
-source-git-commit: 03c714833930511fa734662b637d2416728073c2
+source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 6%
@@ -104,7 +104,7 @@ The **[!UICONTROL Media]** I kan du lägga till media i dina meddelanden i appen
 
 ![](assets/in_app_content_3.png)
 
-Ange din medie-URL eller klicka på **[!UICONTROL Select Assets]** om du vill lägga till resurser som lagras i ditt resursbibliotek direkt i ditt meddelande i appen. [Läs mer om resurshantering](../content-management/assets-essentials.md).
+Ange din medie-URL eller klicka på **[!UICONTROL Select Assets]** om du vill lägga till resurser som lagras i ditt resursbibliotek direkt i ditt meddelande i appen. [Läs mer om resurshantering](../content-management/assets.md).
 Du kan också lägga till en **[!UICONTROL Alternative text]** för skärmläsningsprogram.
 
 +++Fler alternativ med avancerad formatering

@@ -9,9 +9,9 @@ role: User
 level: Intermediate, Experienced
 keywords: kod, HTML, redigerare
 exl-id: 5fb79300-08c6-4c06-a77c-d0420aafca31
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '179'
 ht-degree: 5%
 
 ---
@@ -24,7 +24,7 @@ Använd **[!UICONTROL Code your own]** läge för att importera obearbetat HTML 
 
 >[!CAUTION]
 >
-> Bilder från [Adobe Experience Manager Assets Essentials](../content-management/assets-essentials.md) kan inte refereras när den här metoden används. De bilder som refereras i HTML-koden måste lagras på en offentlig plats.
+> Bilder från [Adobe Experience Manager Assets](../content-management/assets.md) kan inte refereras när den här metoden används. De bilder som refereras i HTML-koden måste lagras på en offentlig plats.
 
 1. På e-postdesignerns startsida väljer du **[!UICONTROL Code your own]**.
 

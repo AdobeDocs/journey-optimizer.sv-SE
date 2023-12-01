@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 82b8c9032d6c377cb76acce4d5cc45afb0ddd6ba
+source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1713'
 ht-degree: 32%
 
 ---
@@ -268,7 +268,7 @@ ht-degree: 32%
       + [Skapa flerspråkigt innehåll med automatiserad översättning](using/content-management/multilingual-automated.md)
       + [Flerspråkig kampanjrapport](using/content-management/multilingual-report.md)
    + Resurser/bilder {#assets-images}
-      + [Arbeta med Assets Essentials](using/content-management/assets-essentials.md)
+      + [Arbeta med Experience Manager Assets](using/content-management/assets.md)
       + [Arbeta med Adobe Stock](using/content-management/stock.md)
    + Personalisering {#personalization}
       + [Kom igång med personalisering](using/personalization/personalize.md)

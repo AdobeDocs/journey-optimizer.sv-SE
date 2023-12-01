@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6f6d693d-11f2-48b7-82a8-171829bf8045
-source-git-commit: 03c714833930511fa734662b637d2416728073c2
+source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 9%
@@ -58,9 +58,9 @@ I Android-versionen kan du bara lägga till en bildikon och en bild för utökad
 
 Det finns två alternativ. Du kan:
 
-* Använd **[!UICONTROL Add media]** knapp för att välja en resurs i **[!DNL Adobe Experience Manager Assets Essentials]**.
+* Använd **[!UICONTROL Add media]** knapp för att välja en resurs i **[!DNL Adobe Experience Manager Assets]**.
 
-  Lär dig använda **[!DNL Adobe Experience Manager Assets Essentials]** in [den här sidan](../content-management/assets-essentials.md).
+  Lär dig använda **[!DNL Adobe Experience Manager Assets]** in [den här sidan](../content-management/assets.md).
 
 * Eller ange URL:en för mediet i **[!UICONTROL Add media]** fält. I så fall kan du lägga till personalisering i URL:en.
 

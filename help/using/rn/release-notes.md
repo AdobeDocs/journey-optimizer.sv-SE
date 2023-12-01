@@ -8,7 +8,7 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: d3aecaefb0b356eb1d25b151e8d210620b51ea5f
+source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
 workflow-type: tm+mt
 source-wordcount: '4526'
 ht-degree: 9%
@@ -254,7 +254,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Assets**
 
-* Med ett nytt alternativ för Resurser kan du välja databas för dina resurser i Journey Optimizer. Du kan välja mellan en Assets Essentials-databas eller en Assets as a Cloud Service-databas, förutsatt att du äger den här lösningen. [Läs mer](../content-management/assets-essentials.md)
+* Med ett nytt alternativ för Resurser kan du välja databas för dina resurser i Journey Optimizer. Du kan välja mellan en Assets Essentials-databas eller en Assets as a Cloud Service-databas, förutsatt att du äger den här lösningen. [Läs mer](../content-management/assets.md)
 
 <!--**Decision management**
 

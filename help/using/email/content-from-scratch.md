@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 keywords: innehåll, redigerare, e-post, börja
 exl-id: 151594f2-85e4-4c79-9c15-334fbd3768c4
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Följ stegen nedan när du vill börja skapa ditt innehåll:
 
    ![](assets/email_designer_structure_component.png)
 
-1. Från **[!UICONTROL Asset picker]** kan du välja resurser som lagras i **[!UICONTROL Assets library]**. [Läs mer om resurshantering](../content-management/assets-essentials.md)
+1. Från **[!UICONTROL Asset picker]** kan du välja resurser som lagras i **[!UICONTROL Assets library]**. [Läs mer om resurshantering](../content-management/assets.md)
 
    Dubbelklicka på den mapp som innehåller dina resurser. Dra och släpp dem i en strukturkomponent.
 
