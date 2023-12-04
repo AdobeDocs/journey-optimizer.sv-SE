@@ -5,16 +5,16 @@ description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
+source-git-commit: 299b34dec2e864fff5eb874b3fd491da80bc0c16
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 2%
+source-wordcount: '354'
+ht-degree: 1%
 
 ---
 
 # Adobe [!DNL Journey Optimizer] Dokumentation {#cjm-documentation}
 
-## Nyheter ?
+## Nyheter?
 
 Få en glimt av de senaste förbättringarna i Journey Optimizer-produkter och -dokumentation! En omfattande lista över funktioner, förbättringar och korrigeringar finns i [Versionsinformation](using/rn/release-notes.md).  Håll dig uppdaterad om de senaste ändringarna i vår dokumentation genom att besöka [dokumentuppdateringssida](using/rn/documentation-updates.md).
 
@@ -26,7 +26,7 @@ Med sandlådeverktygen kan du kopiera objekt över flera sandlådor genom att ut
 
 [![bild](using/assets/do-not-localize/learn-more-button.svg)](using/building-journeys/copy-to-sandbox.md)
 
->[!TAB MMS (Multimedia Message Service) i SMS]
+>[!TAB MMS (Multimedia Message Service)]
 
 Med SMS-kanalen kan du nu förbättra kommunikationen genom att skicka MMS-meddelanden (Multimedia Message Service) som gör det möjligt att dela bilder, GIF eller videor med dina kunder. Observera att den här funktionen för närvarande endast är tillgänglig för Sinch.
 

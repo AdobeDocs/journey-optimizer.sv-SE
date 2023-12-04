@@ -1,21 +1,21 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Hantering av SMS-avanmälan
-description: Lär dig hur du hanterar avanmälan med SMS-meddelanden
+title: Hantering av avanmälan för textmeddelanden
+description: Lär dig hantera avanmälan med SMS/MMS-meddelanden
 feature: SMS
 topic: Content Management
 role: User
 level: Intermediate
 exl-id: 59ea67d9-e90c-4ad0-afb9-d0e0fd868855
-source-git-commit: 45f19563c79d298eeec6cb757636a9ce47e54adf
+source-git-commit: 31c3ed854b38e287850895176f8416bc62739cb0
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
 
-# Hantering av SMS-avanmälan {#sms-opt-out}
+# Hantering av avanmälan för textmeddelanden {#sms-opt-out}
 
 I enlighet med branschens standarder och bestämmelser måste alla SMS-marknadsföringsmeddelanden innehålla ett sätt för mottagarna att enkelt avbryta prenumerationen. [Läs mer om sekretess- och avanmälningshantering](../privacy/opt-out.md)
 

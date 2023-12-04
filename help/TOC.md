@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
+source-git-commit: 299b34dec2e864fff5eb874b3fd491da80bc0c16
 workflow-type: tm+mt
-source-wordcount: '1713'
-ht-degree: 32%
+source-wordcount: '1717'
+ht-degree: 30%
 
 ---
 
@@ -19,10 +19,11 @@ ht-degree: 32%
    + [Tidig versionsinformation](using/rn/e-release-notes.md)
    + [Senaste versionsinformation](using/rn/release-notes.md)
    + Tidigare versionsinformation {#previous-rn-new}
+      + [Versionsinformation 2023](using/rn/release-notes-2023.md)
       + [Versionsinformation 2022](using/rn/release-notes-2022.md)
       + [Versionsinformation 2021](using/rn/release-notes-2021.md)
    + [Dokumentationsuppdateringar](using/rn/documentation-updates.md)
-+ Kom igång{#get-started}
++ Komma igång{#get-started}
    + [Vad är Journey Optimizer?](using/start/get-started.md)
    + Snabbstartguider{#quick-start}
       + [Översikt](using/start/quick-start.md)
@@ -35,12 +36,12 @@ ht-degree: 32%
    + [Tillgänglighet](using/start/accessibility.md)
    + [Integreringar](using/start/ajo-integrations.md)
    + [Guardrails](using/start/guardrails.md)
-   + [God praxis](using/start/best-practices.md)
+   + [Bästa praxis](using/start/best-practices.md)
 + Resor {#orchestrate-journeys}
    + [Kom igång med resor](using/building-journeys/journey.md)
    + Skapa en resa{#create-journey}
       + [Skapa den första resan](using/building-journeys/journey-gs.md)
-      + [Utforma din resa](using/building-journeys/using-the-journey-designer.md)
+      + [Designa din resa](using/building-journeys/using-the-journey-designer.md)
       + [Testa din resa](using/building-journeys/testing-the-journey.md)
       + [Publicera din resa](using/building-journeys/publishing-the-journey.md)
    + Hantera dina resor{#manage-journey}
@@ -169,7 +170,7 @@ ht-degree: 32%
       + [Kom igång med innehållsexperiment](using/campaigns/get-started-experiment.md)
       + [Skapa ett innehållsexperiment](using/campaigns/content-experiment.md)
       + [Konfigurera experimentrapporter](using/campaigns/reporting-configuration.md)
-      + Teknisk notering {#technotes}
+      + Tekniska anmärkningar {#technotes}
          + [Förstå statistiska beräkningar](using/campaigns/experiment-calculations.md)
          + [Förstå statistiska beräkningar i experimentrapporten](using/campaigns/experiment-report-calculations.md)
    + [Utlösa kampanjer med API:er](using/campaigns/api-triggered-campaigns.md)
@@ -215,12 +216,12 @@ ht-degree: 32%
       + [Push-meddelandeflöde](using/push/push-gs.md)
       + [Konfigurera kanal för push-meddelanden](using/push/push-configuration.md)
       + [Arbetsflöde för snabb start av mobil introduktion](using/push/mobile-onboarding-wf.md)
-+ SMS-kanal{#sms}
-   + [Kom igång med SMS](using/sms/get-started-sms.md)
-   + [Skapa ett SMS-meddelande](using/sms/create-sms.md)
++ SMS-/MMS-kanal{#sms}
+   + [Kom igång med textmeddelanden](using/sms/get-started-sms.md)
+   + [Skapa ett textmeddelande](using/sms/create-sms.md)
    + [Skapa ett MMS-meddelande](using/sms/create-mms.md)
-   + [Kontrollera och skicka ditt SMS](using/sms/send-sms.md)
-   + [Hantera SMS-avanmälan](using/sms/sms-opt-out.md)
+   + [Kontrollera och skicka textmeddelanden](using/sms/send-sms.md)
+   + [Hantera avanmälan av textmeddelande](using/sms/sms-opt-out.md)
    + [Konfigurera SMS-kanal](using/sms/sms-configuration.md)
    + [Konfigurera SMS-underdomäner](using/sms/sms-subdomains.md)
 + Direktutskick {#direct-mail}
@@ -270,7 +271,7 @@ ht-degree: 32%
    + Resurser/bilder {#assets-images}
       + [Arbeta med Experience Manager Assets](using/content-management/assets.md)
       + [Arbeta med Adobe Stock](using/content-management/stock.md)
-   + Personalisering {#personalization}
+   + Personanpassning {#personalization}
       + [Kom igång med personalisering](using/personalization/personalize.md)
       + [Personaliseringskontexter](using/personalization/personalization-contexts.md)
       + [Anpassningssyntax](using/personalization/personalization-syntax.md)
@@ -353,13 +354,13 @@ ht-degree: 32%
          + [Fält för datahämtning](using/reports/sharing-fetch-fields.md)
          + [Identitetsfält](using/reports/sharing-identity-fields.md)
       + [Exempel på frågor](using/reports/query-examples.md)
-   + Levererbarhetsstrategi {#deliverability}
+   + Leverans {#deliverability}
       + [Kom igång med leverans](using/reports/deliverability.md)
       + [Förstå listan över inaktiveringar](using/reports/suppression-list.md)
    + [Felorsaker](using/reports/error-list.md)
    + [Larm](using/reports/alerts.md)
    + [Arbeta med Customer Journey Analytics](using/reports/cja-ajo.md)
-+ Beslutshantering {#offer-decisioning}
++ Beslutsledning {#offer-decisioning}
    + Kom igång med beslutshantering {#get-started-decision}
       + [Om beslutshantering](using/offers/get-started/starting-offer-decisioning.md)
       + [Användargränssnitt](using/offers/get-started/user-interface.md)
@@ -534,7 +535,7 @@ ht-degree: 32%
       + [Kör IP-värmningsplanen](using/configuration/ip-warmup-execution.md)
    + Övervaka e-postadresser {#monitor-reputation}
       + [Undertryckningslista](using/configuration/manage-suppression-list.md)
-      + [Återförsök](using/configuration/retries.md)
+      + [Försök igen](using/configuration/retries.md)
       + [Tillåtelselista](using/configuration/allow-list.md)
    + [Använd dirigerade listor](using/configuration/seed-lists.md)
    + [Stöd för arkivering](using/configuration/archiving-support.md)

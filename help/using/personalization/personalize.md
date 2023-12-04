@@ -9,10 +9,10 @@ role: Data Engineer
 level: Beginner
 keywords: uttryck, redigerare, start, personalisering
 exl-id: f448780b-91bc-455e-bf10-9a9aee0a0b24
-source-git-commit: 5ac3797db8115180094cc97f06ec330839a7a5ff
+source-git-commit: 9ac8a3ddad165f728c09baacb9d380d4611fd58a
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 2%
+source-wordcount: '412'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,6 @@ ht-degree: 2%
 >id="ajo_homepage_card5"
 >title="Personalisera upplevelser"
 >abstract="Använd **Adobe Journey Optimizer** för att anpassa era meddelanden till varje specifik mottagare genom att utnyttja de data och den information ni har om dem. Det kan vara deras förnamn, intressen, var de bor, vad de har köpt och mycket annat."
-
 
 Upptäck [!DNL Adobe Journey Optimizer] personaliseringsfunktioner för att anpassa era meddelanden till varje specifik mottagare genom att utnyttja de data och den information ni har om dem. Det kan vara deras förnamn, intressen, var de bor, vad de har köpt och mycket annat.
 
@@ -57,11 +56,11 @@ Dessutom kan du också utnyttja **beräknade attribut** för att personalisera e
 
 [!DNL Journey Optimizer] innehåller en uttrycksredigerare där du kan välja, ordna, anpassa och validera alla data för att skapa en anpassad personalisering för ditt innehåll.
 
-Det finns flera verktyg som kan hjälpa dig att bygga ditt personaliseringsinnehåll (hjälpfunktioner, fördefinierat uttrycksbibliotek, attribut som gynnar..).
+Det finns flera verktyg som du kan använda för att bygga ditt personaliseringsinnehåll, till exempel felper-funktioner, fördefinierat uttrycksbibliotek, attribut och mycket mer.
 
 Läs mer om [!DNL Journey Optimizer] uttrycksredigerare i [det här avsnittet](personalization-build-expressions.md)
 
-## Instruktionsvideor{#video-perso}
+## Instruktionsfilmer{#video-perso}
 
 Lär dig hur du använder sammanhangsbaserad händelseinformation från en resa för att personalisera ett meddelande.
 
