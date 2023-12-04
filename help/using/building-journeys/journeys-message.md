@@ -9,21 +9,21 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, i appen
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 898ad9dadd2d9e71e6881113730ac469a36257bc
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
 
-# E-post, i appen, push, SMS{#add-a-message-in-a-journey}
+# E-post, i appen, push, SMS/MMS{#add-a-message-in-a-journey}
 
 >[!CONTEXTUALHELP]
 >id="ajo_message_activity"
 >title="Meddelandeaktivitet"
->abstract="Journey Optimizer har inbyggda meddelandefunktioner. Du kan enkelt lägga till en push-funktion, ett SMS-meddelande, en aktivitet i appen eller ett e-postmeddelande under resan och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan."
+>abstract="Journey Optimizer har inbyggda meddelandefunktioner. Du kan enkelt lägga till ett push-meddelande (SMS/MMS), en meddelandeaktivitet i appen eller ett e-postmeddelande under resan och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan."
 
-[!DNL Journey Optimizer] innehåller inbyggda meddelandefunktioner. Du kan enkelt lägga till en push-funktion, ett SMS-meddelande, en aktivitet i appen eller ett e-postmeddelande under resan och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan.
+[!DNL Journey Optimizer] innehåller inbyggda meddelandefunktioner. Du kan enkelt lägga till en push-funktion, ett SMS/MMS-meddelande, en aktivitet i appen eller ett e-postmeddelande under resan och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan.
 
 Du kan också ange specifika åtgärder för att skicka meddelanden till dig:
 
@@ -74,7 +74,7 @@ Följ stegen nedan om du vill lägga till ett meddelande under en resa:
    <img alt="Validering" src="../assets/do-not-localize/sms.jpg">
    </a>
    <div>
-   <a href="../sms/create-sms.md"><strong>Skapa SMS-meddelanden</strong></a>
+   <a href="../sms/create-sms.md"><strong>Skapa textmeddelanden (SMS/MMS)</strong></a>
    </div>
    <p>
    </td>

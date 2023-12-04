@@ -11,8 +11,8 @@ keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
 source-git-commit: 353337c7d85ccc6266d9e395fbc2f40b17fd09b2
 workflow-type: tm+mt
-source-wordcount: '2276'
-ht-degree: 1%
+source-wordcount: '2258'
+ht-degree: 0%
 
 ---
 
@@ -277,14 +277,14 @@ Läs mer om återförsök i [det här avsnittet](../configuration/retries.md).
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_utm"
 >title="Definiera parametrar för URL-spårning"
->abstract="Använd det här avsnittet om du automatiskt vill lägga till spårningsparametrar till de URL:er som finns i ditt e-postinnehåll. Den här funktionen är valfri.  "
+>abstract="Använd det här avsnittet om du automatiskt vill lägga till spårningsparametrar till de URL:er som finns i ditt e-postinnehåll. Den här funktionen är valfri."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_url_preview"
 >title="Förhandsgranska URL-spårningsparametrar"
 >abstract="Granska hur spårningsparametrar läggs till i de URL:er som finns i ditt e-postinnehåll."
 
-Du kan använda **[!UICONTROL URL tracking parameters]** för att mäta effektiviteten i era marknadsföringssatsningar över olika kanaler. Den här funktionen är valfri.  
+Du kan använda **[!UICONTROL URL tracking parameters]** för att mäta effektiviteten i era marknadsföringssatsningar över olika kanaler. Den här funktionen är valfri.
 
 Parametrarna som definieras i det här avsnittet läggs till i slutet av de URL:er som ingår i e-postmeddelandeinnehållet. Du kan sedan hämta parametrarna i webbanalysverktyg som Adobe Analytics eller Google Analytics och skapa olika prestandarapporter.
 

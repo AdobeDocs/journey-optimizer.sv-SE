@@ -11,8 +11,8 @@ keywords: aktivitet, resa, läsning, målgrupp, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
 source-git-commit: d3aecaefb0b356eb1d25b151e8d210620b51ea5f
 workflow-type: tm+mt
-source-wordcount: '1327'
-ht-degree: 3%
+source-wordcount: '1318'
+ht-degree: 0%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment"
 >title="Läs målgruppsaktivitet"
->abstract="Med aktiviteten Läs målgrupp kan du få alla som tillhör en Adobe Experience Platform-målgrupp att delta i en resa. Inträde i en resa kan genomföras antingen en gång eller regelbundet."
+>abstract="Med aktiviteten Läs målgrupp kan du få alla som tillhör en Adobe Experience Platform-målgrupp att delta i en resa. Ingången till en resa kan genomföras antingen en gång eller regelbundet."
 
-Använd **Läs målgrupp** aktivitet för att få alla enskilda personer i en målgrupp att komma in på resan. Inträde i en resa kan genomföras antingen en gång eller regelbundet.
+Använd **Läs målgrupp** aktivitet för att få alla enskilda personer i en målgrupp att komma in på resan. Ingången till en resa kan genomföras antingen en gång eller regelbundet.
 
 Låt oss som exempel ta målgruppen&quot;Luma app opening and checkout&quot; som skapats i [Bygg målgrupper](../audience/about-audiences.md) användningsfall. Med aktiviteten Läs målgrupp kan ni få alla personer som tillhör den här målgruppen att resa in på en resa och få dem att flöda in i personaliserade resor som kan utnyttja alla resefunktioner: villkor, tidtagare, händelser och aktiviteter.
 
@@ -130,7 +130,7 @@ Det gör du genom att aktivera testläget.
 
 Konfigurera och kör testläget som vanligt. [Lär dig testa en resa](testing-the-journey.md).
 
-När testet är klart **[!UICONTROL Show logs]** kan du se testresultaten. Mer information om detta finns i [det här avsnittet](testing-the-journey.md#viewing_logs)
+När testet är klart **[!UICONTROL Show logs]** kan du se testresultaten. Mer information finns i [det här avsnittet](testing-the-journey.md#viewing_logs)
 
 ![](assets/read-segment-log.png)
 

@@ -9,7 +9,7 @@ keywords: i appen, meddelande, design, formatering
 exl-id: 7d7aa721-96aa-4ebc-a51c-e693f893f34f
 source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1047'
 ht-degree: 6%
 
 ---
@@ -136,7 +136,7 @@ Om **[!UICONTROL Advanced formatting mode]** är aktiverat kan du välja för **
 * den **[!UICONTROL Alignment]**
 +++
 
-### Knapparna {#add-buttons}
+### Knappar {#add-buttons}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_inapp_authoring_buttons"

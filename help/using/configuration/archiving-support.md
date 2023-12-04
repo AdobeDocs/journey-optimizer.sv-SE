@@ -11,8 +11,8 @@ keywords: arkiv, meddelanden, HIPAA, BCC, e-post
 exl-id: 186a5044-80d5-4633-a7a7-133e155c5e9f
 source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 2%
+source-wordcount: '1083'
+ht-degree: 1%
 
 ---
 
@@ -35,7 +35,7 @@ Regeringar som HIPAA kräver att [!DNL Journey Optimizer] bör vara ett sätt at
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_bcc"
 >title="Definiera en e-postadress för hemlig kopia"
->abstract="Du kan behålla en kopia av skickade e-postmeddelanden genom att skicka dem till en inkorg för hemlig kopia. Ange den e-postadress du vill använda så att alla e-postmeddelanden som skickas är blinda och kopieras till den här BCC-adressen. Observera att BCC-adressdomänen måste vara en annan än alla underdomäner som har delegerats till Adobe. Den här funktionen är valfri.  "
+>abstract="Du kan behålla en kopia av skickade e-postmeddelanden genom att skicka dem till en inkorg för hemlig kopia. Ange den e-postadress du vill använda så att alla e-postmeddelanden som skickas är blinda och kopieras till den här BCC-adressen. Observera att BCC-adressdomänen måste vara en annan än alla underdomäner som har delegerats till Adobe. Den här funktionen är valfri."
 
 Du kan skicka en kopia (BCC) av ett e-postmeddelande som skickas av [!DNL Journey Optimizer] till en dedikerad BCC-adress. Med den här valfria funktionen kan du behålla kopior av e-postmeddelanden som du skickar till användarna för att uppfylla regelkrav och/eller arkivera. BCC-adressen är inte synlig för andra mottagare av meddelandet.
 

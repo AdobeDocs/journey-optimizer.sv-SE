@@ -1,56 +1,55 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Konfigurera SMS-underdomäner
+title: Konfigurera underdomäner för textmeddelanden (SMS/MMS)
 description: Lär dig konfigurera SMS-underdomäner med Journey Optimizer
 role: Admin
 feature: SMS, Channel Configuration
 level: Intermediate
 keywords: SMS, underdomäner, konfiguration
 exl-id: 08a546d1-060c-43e8-9eac-4c38945cc3e1
-source-git-commit: 03c714833930511fa734662b637d2416728073c2
+source-git-commit: 227cdb77b0db40c59fa089789c444c2364fd062e
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
 
 ---
 
-# Konfigurera SMS-underdomäner {#lp-subdomains}
+# Konfigurera SMS-underdomäner {#sms-mms-subdomains}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_sms_header"
->title="Delegera en SMS-underdomän"
->abstract="Du kommer att konfigurera din underdomän för SMS-användning. Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en annan underdomän."
+>title="Delegera en SMS/MMS-underdomän"
+>abstract="Konfigurera din underdomän för textmeddelanden (SMS/MMS). Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en ny underdomän."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_sms"
->title="Delegera en SMS-underdomän"
->abstract="Du måste konfigurera en underdomän att använda för dina SMS-meddelanden, eftersom du behöver den här underdomänen för att skapa en SMS-yta. Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en ny underdomän."
+>title="Delegera en SMS/MMS-underdomän"
+>abstract="Du måste konfigurera en underdomän som ska användas för dina textmeddelanden, eftersom du behöver den här underdomänen för att skapa en SMS-yta. Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en ny underdomän."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/sms/sms-configuration.html#message-preset-sms" text="Skapa SMS-ytor"
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_config_sms_subdomain"
->title="Välj en SMS-underdomän"
+>title="Välj en SMS/MMS-underdomän"
 >abstract="Om du vill kunna skapa en SMS-yta måste du kontrollera att du tidigare har konfigurerat minst en SMS-underdomän att välja från listan över underdomännamn."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/sms/sms-configuration.html#message-preset-sms" text="Skapa SMS-ytor"
 
-För att kunna förkorta URL:er som läggs till i SMS-meddelanden måste du konfigurera den underdomän som du väljer när [skapa en SMS-yta](sms-configuration.md#message-preset-sms).
+För att kunna förkorta URL:er som läggs till i SMS/MMS-meddelanden måste du konfigurera den underdomän som du väljer när [skapa en SMS-yta](sms-configuration.md#message-preset-sms).
 
 Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en annan underdomän. Läs mer om hur du delegerar underdomäner till Adobe in [det här avsnittet](../configuration/delegate-subdomain.md).
 
 >[!CAUTION]
 >
->SMS-underdomänskonfiguration är vanligt i alla miljöer. Därför:
+>* SMS-underdomänskonfigurationen delas mellan alla miljöer. Därför påverkar alla ändringar av en SMS-underdomän även andra produktionssandlådor.
 >
->* Om du vill komma åt och redigera SMS-underdomäner måste du ha **[!UICONTROL Manage SMS Subdomains]** behörighet i produktionssandlådan.
+>* Om du vill komma åt och redigera SMS-underdomäner måste du ha **[!UICONTROL Manage SMS Subdomains]** behörighet i produktionssandlådan. Läs mer om behörigheter i [det här avsnittet](../administration/high-low-permissions.md).
 >
-> * Eventuella ändringar av en SMS-underdomän påverkar också produktionssandlådorna.
 
 ## Använd en befintlig underdomän {#sms-use-existing-subdomain}
 
 Om du vill använda en underdomän som redan har delegerats till Adobe följer du stegen nedan.
 
-1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** väljer du **[!UICONTROL SMS configuration]** > **[!UICONTROL SMS subdomains]**.
+1. Gå till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och väljer **[!UICONTROL SMS configuration]** > **[!UICONTROL SMS subdomains]**.
 
    ![](assets/sms_access-subdomains.png)
 
@@ -103,7 +102,7 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 
 Följ stegen nedan för att konfigurera en ny underdomän.
 
-1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** väljer du **[!UICONTROL SMS configuration]** > **[!UICONTROL SMS subdomains]**.
+1. Gå till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** väljer du **[!UICONTROL SMS configuration]** > **[!UICONTROL SMS subdomains]**.
 
 1. Klicka på **[!UICONTROL Set up subdomain]**.
 
@@ -115,9 +114,9 @@ Följ stegen nedan för att konfigurera en ny underdomän.
 
    >[!CAUTION]
    >
-   >Du kan inte använda en befintlig SMS-underdomän.
+   >* Du kan inte använda en befintlig SMS-underdomän.
    >
-   >Versaler tillåts inte i underdomäner.
+   >* Versaler tillåts inte i underdomäner.
 
    Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.yourcompany.com.
 
@@ -137,10 +136,6 @@ Följ stegen nedan för att konfigurera en ny underdomän.
 
 1. När underdomänsdelegeringen har skickats visas underdomänen i listan med **[!UICONTROL Processing]** status. Mer information om underdomänernas status finns i [det här avsnittet](../configuration/about-subdomain-delegation.md#access-delegated-subdomains).<!--Same statuses?-->
 
-   >[!NOTE]
-   >
-   >Innan du kan använda den underdomänen för att skicka SMS-meddelanden måste du vänta tills Adobe utför de kontroller som krävs, vilket kan ta upp till 4 timmar.<!--Learn more in [this section](#subdomain-validation).-->
+Innan du använder en underdomän för att skicka SMS-meddelanden måste du vänta tills Adobe utför de nödvändiga kontrollerna, som kan ta upp till 4 timmar.<!--Learn more in [this section](#subdomain-validation).--> När kontrollerna är slutförda får underdomänen **[!UICONTROL Success]** status. Den är klar att användas för att skapa SMS-kanalsytor.
 
-1. När kontrollerna är slutförda får underdomänen **[!UICONTROL Success]** status. Den är klar att användas för att skapa SMS-kanalsytor.
-
-   Observera att underdomänen markeras som **[!UICONTROL Failed]** om du inte skapar valideringsposten i din värdlösning.
+Observera att underdomänen markeras som **[!UICONTROL Failed]** om du inte skapar valideringsposten i din värdlösning.

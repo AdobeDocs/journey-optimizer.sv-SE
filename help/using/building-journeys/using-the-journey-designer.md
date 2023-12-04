@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Utforma din resa
+title: Designa din resa
 description: Lär dig hur du utformar din resa
 feature: Journeys, Activities
 topic: Content Management
@@ -12,15 +12,15 @@ exl-id: 1998f6fc-60fd-4038-8669-39cd55bc02d1
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '1614'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-# Utforma din resa {#design-your-journey}
+# Designa din resa {#design-your-journey}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_canvas"
->title="Utforma din resa"
+>title="Designa din resa"
 >abstract="Med resegränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan. Du kan också dubbelklicka på en aktivitet för att lägga till den på arbetsytan i nästa steg som är tillgängligt."
 
 Adobe Journey Optimizer har en flerkanalig orkestreringsyta som gör att marknadsförarna kan harmonisera marknadsföringen med ett-till-ett-kundengagemang. Med användargränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan för att skapa din resa. Observera att du även kan dubbelklicka på en aktivitet för att lägga till den på arbetsytan i nästa tillgängliga steg.
