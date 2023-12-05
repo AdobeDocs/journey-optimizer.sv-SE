@@ -10,9 +10,10 @@ level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 hide: true
 hidefromtoc: true
-source-git-commit: 8c95f35049da1b7ced9a5ecd9e267a8847c12481
+exl-id: 38e82eb2-67d9-4a7d-8c1f-77dab20bcec4
+source-git-commit: 75dd439fc221257a2480ea7bdcb94f56227ce1d3
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1172'
 ht-degree: 1%
 
 ---
@@ -89,6 +90,14 @@ Starta översättningsprojektet genom att ange språkområdet som mål, vilket a
 
 1. Välj i listan **[!UICONTROL Target locale(s)]** och välja vilken **[!UICONTROL Translation provider]** som du vill använda för varje språkområde.
 
+   **[!UICONTROL Translation provider]** du kommer åt inställningarna via **[!UICONTROL Translation]** i **[!UICONTROL Administration]** menyavsnitt.
+
+   >[!NOTE]
+   >
+   >Kontraktshantering med översättningsprovidern ligger utanför den här funktionens räckvidd. Kontrollera att du har ett giltigt och aktivt kontrakt med den utsedda översättningspartnern.
+   >
+   ></br>Översättningsprovidern äger det översatta innehållets kvalitet.
+
 1. Klicka **[!UICONTROL Add a locale]** när du har länkat målspråket till rätt översättningsleverantör. Klicka sedan på **[!UICONTROL Save]**.
 
    Observera, att om en provider är nedtonad för ett målland innebär det att providern inte stöder det aktuella språkområdet.
@@ -147,7 +156,7 @@ När du har konfigurerat översättningsprojektet och språkinställningarna är
 
 1. När det primära innehållet har skapats klickar du på **[!UICONTROL Save]** och gå tillbaka till kampanjkonfigurationsskärmen.
 
-1. Klicka på **[!UICONTROL Add languages]**.  [Läs mer](#create-language-settings)
+1. Klicka **[!UICONTROL Add languages]**.  [Läs mer](#create-language-settings)
 
    ![](assets/multilingual-campaign-automated-1.png)
 
