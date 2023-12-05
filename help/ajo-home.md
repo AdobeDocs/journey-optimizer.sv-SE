@@ -5,7 +5,7 @@ description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: 565163872bcd88df50d464a42093f5523daa5eb1
+source-git-commit: 480fbae74ab444253a2ebff441192d2670dbc538
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 1%
@@ -101,7 +101,7 @@ Med SMS-kanalen kan du nu förbättra kommunikationen genom att skicka MMS-medde
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Adobe Journey Optimizer</strong><br/>
-<a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=en" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html" target="_blank">Produktbeskrivning</a> - <a href="https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf" target="_blank">Säkerhetsöversikt (PDF)</a> - <a href="https://developer.adobe.com/journey-optimizer-apis/" target="_blank">API-referens</a>
+<a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html" target="_blank">Produktbeskrivning</a> - <a href="https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf" target="_blank">Säkerhetsöversikt (PDF)</a> - <a href="https://developer.adobe.com/journey-optimizer-apis/" target="_blank">API-referens</a>
 </td>
 <td><strong>Adobe Experience Platform</strong><br/>
 <a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html" target="_blank">Dokumentation</a> - <a href="https://www.adobe.com/se/experience-platform/documentation-and-developer-resources.html" target="_blank">Resurser för utvecklare</a>
