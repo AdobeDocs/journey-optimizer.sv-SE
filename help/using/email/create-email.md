@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: skapa, e-post, start, resa, kampanj
 exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
-source-git-commit: 18b9a19bbd37927430c50da63f54cbdbbeed5606
+source-git-commit: f2037f559826d7cca243092de200c97841c49b35
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '832'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ Skapa ett e-postmeddelande i [!DNL Journey Optimizer], lägga till **[!UICONTROL
 
 >[!NOTE]
 >
->Om du skickar ett e-postmeddelande från en resa kan du utnyttja Adobe Journey Optimizer funktion för optimering av sändningstid för att förutsäga den bästa tidpunkten för att skicka meddelandet för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser. [Lär dig hur du arbetar med optimering vid sändning](../building-journeys/journeys-message.md#send-time-optimization)
+>Du kan använda alternativet för optimering av sändningstid för att förutsäga den bästa tidpunkten för att skicka meddelandet för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser. [Lär dig hur du arbetar med optimering vid sändning](../building-journeys/journeys-message.md#send-time-optimization)
 
 Mer information om hur du konfigurerar en resa finns i [den här sidan](../building-journeys/journey-gs.md).
 
