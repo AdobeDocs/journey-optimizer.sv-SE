@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: skapa, e-post, start, resa, kampanj
 exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+source-git-commit: 18b9a19bbd37927430c50da63f54cbdbbeed5606
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 2%
@@ -21,13 +21,12 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="ajo_message_email"
 >title="Skapa e-post"
->abstract="Definiera e-postparametrar i endast tre enkla steg."
+>abstract="Definiera din ämnesrad för e-post och öppna e-postdesignern för att skapa innehållet i e-postmeddelandet."
 
-Skapa ett e-postmeddelande i [!DNL Journey Optimizer]följer du stegen nedan.
 
-## Skapa ett e-postmeddelande i en resa eller kampanj {#create-email-journey-campaign}
+## Lägg till en e-poståtgärd {#email-action}
 
-Lägg till en **[!UICONTROL Email]** till en resa eller en kampanj och följ stegen nedan utifrån ditt fall.
+Skapa ett e-postmeddelande i [!DNL Journey Optimizer], lägga till **[!UICONTROL Email]** åtgärder för en resa eller en kampanj. Följ sedan instruktionerna nedan.
 
 >[!BEGINTABS]
 
@@ -86,13 +85,13 @@ Mer information om hur du konfigurerar en kampanj finns i [den här sidan](../ca
 
    ![](assets/email_campaign_edit_content.png)
 
-1. I **[!UICONTROL Header]** i **[!UICONTROL Edit content]** skärm, **[!UICONTROL From name]**, **[!UICONTROL From email]** och **[!UICONTROL BCC]** fältet kommer från den e-postyta som du valde. [Läs mer](email-settings.md) <!--check if same for journey-->
+   I **[!UICONTROL Header]** i **[!UICONTROL Edit content]** skärm, **[!UICONTROL From name]**, **[!UICONTROL From email]** och **[!UICONTROL BCC]** -fältet konfigureras i den e-postyta som du valde. [Läs mer](email-settings.md) <!--check if same for journey-->
 
    ![](assets/email_designer_edit_content_header.png)
 
-1. Du kan lägga till en ämnesrad. Skriv oformaterad text direkt i motsvarande fält eller använd [Uttrycksredigerare](../personalization/personalization-build-expressions.md) för att personalisera ämnesraden.
+1. Lägg till en ämnesrad för meddelandet. Om du vill konfigurera och anpassa ämnesraden med uttrycksredigeraren klickar du på **[!UICONTROL Open personalization dialog]** -ikon. [Läs mer](../personalization/personalization-build-expressions.md)
 
-1. Klicka på **[!UICONTROL Edit email body]** för att börja bygga ditt innehåll med [!DNL Journey Optimizer] E-postdesigner. [Läs mer](get-started-email-design.md)
+1. Klicka på **[!UICONTROL Edit email body]** för att komma åt e-postdesignern och börja bygga ditt innehåll. [Läs mer](get-started-email-design.md)
 
    ![](assets/email_designer_edit_email_body.png)
 
