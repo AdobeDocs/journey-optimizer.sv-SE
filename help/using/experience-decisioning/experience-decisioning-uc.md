@@ -8,30 +8,22 @@ level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
 badge: label="Beta"
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: c13cd73229b2fab80722663afae9fe24b660c0f9
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 5%
+source-wordcount: '377'
+ht-degree: 4%
 
 ---
 
 # Användningsfall vid beslut om upplevelse {#experience-decisioning-uc}
 
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här handboken:
+>[!BEGINSHADEBOX &quot;Det du hittar i den här handboken&quot;]
 
 * [Kom igång med Experience Decision](gs-experience-decisioning.md)
-* Hantera dina beslutsobjekt
-   * [Konfigurera objektkatalogen](catalogs.md)
-   * [Skapa beslutsobjekt](items.md)
-   * [Hantera artikelsamlingar](collections.md)
-* Konfigurera val av objekt
-   * [Skapa beslutsregler](rules.md)
-   * [Skapa rangordningsmetoder](ranking.md)
+* Hantera dina beslutsposter: [Konfigurera objektkatalogen](catalogs.md) -[Skapa beslutsobjekt](items.md) - [Hantera artikelsamlingar](collections.md)
+* Konfigurera objektmarkering: [Skapa beslutsregler](rules.md) - [Skapa rangordningsmetoder](ranking.md)
 * [Skapa urvalsstrategier](selection-strategies.md)
 * [Skapa beslutsprofiler](create-decision.md)
-* **[Lär dig med ett användningsexempel](experience-decisioning-uc.md)**
 
 >[!ENDSHADEBOX]
 

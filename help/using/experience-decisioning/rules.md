@@ -9,10 +9,10 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: 033a11b8-c848-4e4a-b6f0-62fa0a2152bf
-source-git-commit: f92e3882d3b5e515e672a4af8e787813d4d939ce
+source-git-commit: c13cd73229b2fab80722663afae9fe24b660c0f9
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 4%
+ht-degree: 1%
 
 ---
 
@@ -23,18 +23,11 @@ ht-degree: 4%
 >title="Skapa beslutsregler"
 >abstract="Med beslutsregler kan ni definiera målgruppen för beslutsposter genom att tillämpa begränsningar, antingen direkt på beslutspostnivå eller inom en viss urvalsstrategi. På så sätt kan du exakt kontrollera vilka objekt som ska presenteras för vem."
 
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här handboken:
+>[!BEGINSHADEBOX &quot;Det du hittar i den här handboken&quot;]
 
 * [Kom igång med Experience Decision](gs-experience-decisioning.md)
-* Hantera dina beslutsobjekt
-   * [Konfigurera objektkatalogen](catalogs.md)
-   * [Skapa beslutsobjekt](items.md)
-   * [Hantera artikelsamlingar](collections.md)
-* Konfigurera val av objekt
-   * **[Skapa beslutsregler](rules.md)**
-   * [Skapa rangordningsmetoder](ranking.md)
+* Hantera dina beslutsposter: [Konfigurera objektkatalogen](catalogs.md) - [Skapa beslutsobjekt](items.md) - [Hantera artikelsamlingar](collections.md)
+* Konfigurera objektmarkering: **[Skapa beslutsregler](rules.md)** - [Skapa rangordningsmetoder](ranking.md)
 * [Skapa urvalsstrategier](selection-strategies.md)
 * [Skapa beslutsprofiler](create-decision.md)
 

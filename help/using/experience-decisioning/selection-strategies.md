@@ -9,10 +9,10 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: 1b73b398-050a-40bb-a8ae-1c66e3e26ce8
-source-git-commit: f92e3882d3b5e515e672a4af8e787813d4d939ce
+source-git-commit: c13cd73229b2fab80722663afae9fe24b660c0f9
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 1%
+source-wordcount: '757'
+ht-degree: 0%
 
 ---
 
@@ -31,18 +31,11 @@ ht-degree: 1%
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences.html" text="Använda målgrupper"
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/experience-decisioning/selection/rules.html" text="Använd beslutsregler"
 
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här handboken:
+>[!BEGINSHADEBOX &quot;Det du hittar i den här handboken&quot;]
 
 * [Kom igång med Experience Decision](gs-experience-decisioning.md)
-* Hantera dina beslutsobjekt
-   * [Konfigurera objektkatalogen](catalogs.md)
-   * [Skapa beslutsobjekt](items.md)
-   * [Hantera artikelsamlingar](collections.md)
-* Konfigurera val av objekt
-   * [Skapa beslutsregler](rules.md)
-   * [Skapa rangordningsmetoder](ranking.md)
+* Hantera dina beslutsposter: [Konfigurera objektkatalogen](catalogs.md) - [Skapa beslutsobjekt](items.md) - [Hantera artikelsamlingar](collections.md)
+* Konfigurera objektmarkering: [Skapa beslutsregler](rules.md) - [Skapa rangordningsmetoder](ranking.md)
 * **[Skapa urvalsstrategier](selection-strategies.md)**
 * [Skapa beslutsprofiler](create-decision.md)
 
@@ -83,6 +76,8 @@ Följ stegen nedan för att skapa en urvalsstrategi.
    ![](assets/strategy-create-screen.png)
 
 1. Välj [samling](collections.md) som innehåller de erbjudanden som ska övervägas.
+
+1. Välj erbjudandet [samling](collections.md) som innehåller de erbjudanden som ska övervägas.
 
 1. Använd **[!UICONTROL Eligibility]** fält för att begränsa urvalet av erbjudanden för den här urvalsstrategin.
 

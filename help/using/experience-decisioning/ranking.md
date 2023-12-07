@@ -9,10 +9,10 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: c1d69bc9-4486-4037-b218-f4f704b2ba9c
-source-git-commit: f92e3882d3b5e515e672a4af8e787813d4d939ce
+source-git-commit: c13cd73229b2fab80722663afae9fe24b660c0f9
 workflow-type: tm+mt
 source-wordcount: '226'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -23,18 +23,11 @@ ht-degree: 2%
 >title="Skapa rankningsformler"
 >abstract="Med formler kan du definiera regler som bestämmer vilket objekt som ska presenteras först, i stället för att ta hänsyn till objektets prioritetspoäng. När en rangordningsmetod har skapats kan du tilldela den till en beslutsstrategi för att definiera vilka objekt som ska väljas först."
 
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här handboken:
+>[!BEGINSHADEBOX &quot;Det du hittar i den här handboken&quot;]
 
 * [Kom igång med Experience Decision](gs-experience-decisioning.md)
-* Hantera dina beslutsobjekt
-   * [Konfigurera objektkatalogen](catalogs.md)
-   * [Skapa beslutsobjekt](items.md)
-   * [Hantera artikelsamlingar](collections.md)
-* Konfigurera val av objekt
-   * [Skapa beslutsregler](rules.md)
-   * **[Skapa rangordningsmetoder](ranking.md)**
+* Hantera dina beslutsposter: [Konfigurera objektkatalogen](catalogs.md) - [Skapa beslutsobjekt](items.md) - [Hantera artikelsamlingar](collections.md)
+* Konfigurera objektmarkering: [Skapa beslutsregler](rules.md) - **[Skapa rangordningsmetoder](ranking.md)**
 * [Skapa urvalsstrategier](selection-strategies.md)
 * [Skapa beslutsprofiler](create-decision.md)
 

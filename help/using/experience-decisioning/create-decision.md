@@ -9,10 +9,10 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: c13cd73229b2fab80722663afae9fe24b660c0f9
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 2%
+source-wordcount: '1268'
+ht-degree: 1%
 
 ---
 
@@ -24,18 +24,11 @@ ht-degree: 2%
 >abstract="Beslutspolicyn utnyttjar beslutsmotorn för upplevelser för att välja ut det bästa innehåll som ska levereras, beroende på målgruppen."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html" text="Om Experience Decision"
 
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här handboken:
+>[!BEGINSHADEBOX &quot;Det du hittar i den här handboken&quot;]
 
 * [Kom igång med Experience Decision](gs-experience-decisioning.md)
-* Hantera dina beslutsobjekt
-   * [Konfigurera objektkatalogen](catalogs.md)
-   * [Skapa beslutsobjekt](items.md)
-   * [Hantera artikelsamlingar](collections.md)
-* Konfigurera val av objekt
-   * [Skapa beslutsregler](rules.md)
-   * [Skapa rangordningsmetoder](ranking.md)
+* Hantera dina beslutsposter: [Konfigurera objektkatalogen](catalogs.md) - [Skapa beslutsobjekt](items.md) - [Hantera artikelsamlingar](collections.md)
+* Konfigurera objektmarkering: [Skapa beslutsregler](rules.md) - [Skapa rangordningsmetoder](ranking.md)
 * [Skapa urvalsstrategier](selection-strategies.md)
 * **[Skapa beslutsprofiler](create-decision.md)**
 
@@ -66,7 +59,7 @@ Beslutspolicyer är behållare för era erbjudanden som utnyttjar beslutsmotorn 
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html" text="Skapa strategier"
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html" text="Utvärderingsorder"
 
-Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för besökarna på din webbplats eller i din mobilapp lägger du till en beslutspolicy i en kodbaserad kampanj. För att göra detta, följ nedanstående steg.
+Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för besökarna på din webbplats eller i din mobilapp lägger du till en beslutspolicy i en kodbaserad kampanj. Följ stegen nedan för att göra det.
 
 1. Skapa en kampanj och välj **[!UICONTROL Code-base experience (Beta)]** åtgärd. [Läs mer](../code-based/create-code-based.md)
 
@@ -86,7 +79,7 @@ Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för bes�
 
    ![](assets/decision-code-based-details.png)
 
-1. Välj det antal objekt som du vill returnera. Om du till exempel väljer 2 visas de två bästa erbjudandena för den aktuella ytan. Klicka på **[!UICONTROL Next]**
+1. Välj det antal objekt som du vill returnera. Om du till exempel väljer 2 visas de två bästa erbjudandena för den aktuella ytan. Klicka **[!UICONTROL Next]**
 
 1. Använd **[!UICONTROL Add strategy]** för att definiera urvalsstrategier för din beslutspolicy. Varje strategi består av en erbjudandesamling som är kopplad till en begränsning för behörighet och en rangordningsmetod för att avgöra vilka erbjudanden som ska visas. [Läs mer](selection-strategies.md)
 
@@ -182,7 +175,7 @@ Rankade erbjudanden: Erbjudande 5, Erbjudande 3, Erbjudande 4, Erbjudande 2, Erb
 
 ## Använd beslutsprincipen i kodredigeraren {#use-decision-policy}
 
-När du har skapat en beslutspolicy kan du använda den i [Uttrycksredigerare](../code-based/create-code-based.md#edit-code). För att göra detta, följ nedanstående steg.
+När du har skapat en beslutspolicy kan du använda den i [Uttrycksredigerare](../code-based/create-code-based.md#edit-code). Följ stegen nedan för att göra det.
 
 >[!NOTE]
 >
