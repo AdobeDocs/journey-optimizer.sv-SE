@@ -10,9 +10,11 @@ level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 hide: true
 hidefromtoc: true
-source-git-commit: 90aeb777276e1e72c3099272f00e3700e06c83bf
+exl-id: 662681ad-5044-4025-aff1-204626fee052
+badge: label="Beta" type="Informative"
+source-git-commit: feee761f9893633f88b0109b810ac55ae82dd9e0
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '197'
 ht-degree: 0%
 
 ---
