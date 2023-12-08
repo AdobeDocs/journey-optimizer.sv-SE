@@ -10,22 +10,16 @@ level: Experienced
 keywords: IP, leverans
 hide: true
 hidefromtoc: true
+badge: label="Beta"
 exl-id: 393f051d-b86d-4b4f-b564-7a9ae3a5d4b8
-source-git-commit: eb4a4929de17f0b57216f69e00da6314f7b59b07
+source-git-commit: 9d48213d8367fdc6c0fae62b73d1706bc4983d9d
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '294'
 ht-degree: 2%
 
 ---
 
 # Kom igång med planer för IP-värmare {#ip-warmup-gs}
-
-<!--
->[!CONTEXTUALHELP]
->id="ajo_admin_ip_warmup_plan"
->title="Define your IP warmup plan"
->abstract="You can perform IP warmup workflows directly from the Journey Optimizer interface in a standardized and efficient way that follows the best practices for optimal deliverability."
--->
 
 >[!BEGINSHADEBOX]
 
@@ -43,6 +37,8 @@ Vad du hittar i den här handboken:
 >IP-värmerfunktionen är för närvarande endast tillgänglig som betaversion för utvalda användare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
 
 Med [!DNL Journey Optimizer]kan du enkelt utföra arbetsflöden för IP-värmare direkt från användargränssnittet på ett standardiserat och effektivt sätt som följer bästa praxis för optimal leverans.
+
+➡️ [Lär dig hur du skapar och kör en IP-uppvärmningsplan i den här videon](#video)
 
 >[!CAUTION]
 >
@@ -75,3 +71,9 @@ De viktigaste stegen för att implementera en plan för IP-uppvärmning är föl
 1. Skapa en IP-värmeringsplan i [!DNL Journey Optimizer] och ladda upp Excel-bladet som har tagits fram av er återförsäljare. [Läs mer](ip-warmup-plan.md)
 
 1. Välj en kampanj för varje fas i planen och aktivera motsvarande körningar. [Läs mer](ip-warmup-execution.md)
+
+## Instruktionsvideo {#video}
+
+Lär dig hur du skapar och kör en IP-värmeringsplan.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425965/?quality=12&learn=on)

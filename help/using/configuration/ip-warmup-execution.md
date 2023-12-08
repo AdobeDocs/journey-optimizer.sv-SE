@@ -10,10 +10,11 @@ level: Experienced
 keywords: IP, grupp, underdomäner, leveransbarhet
 hide: true
 hidefromtoc: true
+badge: label="Beta"
 exl-id: 752ffd7f-09c2-4aa3-a067-2dbe0634709c
-source-git-commit: 2483f53982acc920676190c1bc7fef5abf3c2331
+source-git-commit: 9d48213d8367fdc6c0fae62b73d1706bc4983d9d
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2071'
 ht-degree: 0%
 
 ---
