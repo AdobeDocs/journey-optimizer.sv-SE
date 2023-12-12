@@ -9,10 +9,10 @@ role: Admin
 level: Experienced
 keywords: tillåtelselista, lista, säker, konfiguration
 exl-id: 70ab8f57-c132-4de1-847b-11f0ab14f422
-source-git-commit: b4fda6a0bd3e633811c16ef6dc3a3171b3b350c8
+source-git-commit: 30018b08da7c02d9d9aac431db2fa39f91163cfd
 workflow-type: tm+mt
-source-wordcount: '1120'
-ht-degree: 2%
+source-wordcount: '1098'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ På en icke-produktionsinstans, där fel kan uppstå, ser tillåtelselista till 
 
 När tillåtelselista är aktivt men tomt går ingen post ut. Om du råkar ut för något större problem kan du använda den här funktionen för att stoppa all utgående kommunikation från [!DNL Journey Optimizer] tills du åtgärdar problemet. Läs mer på [tillåtelselista logik](#logic).
 
-Dessutom kan man utnyttja Journey Optimizer **Suppression REST API** för att styra utgående meddelanden med hjälp av suppression och tillåtelselista. [Lär dig hur du arbetar med Suppression REST API](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html)
+Dessutom kan man utnyttja Journey Optimizer **Suppression REST API** för att styra utgående meddelanden med hjälp av suppression och tillåtelselista. [Lär dig hur du arbetar med Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression/){target="_blank"}
 
 ## Gå till tillåtelselista {#access-allowed-list}
 
@@ -54,7 +54,7 @@ Du kan söka efter e-postadresser eller domäner och filtrera på **[!UICONTROL 
 
 Följ stegen nedan för att aktivera tillåtelselista.
 
-1. Gå till **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL Allow list]**-menyn.
+1. Öppna  **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL Allow list]** -menyn.
 
 1. Markera växlingsknappen.
 
@@ -78,7 +78,7 @@ Logiken i tillåtelselista gäller när funktionen är aktiv. Läs mer i [det h�
 
 Följ stegen nedan för att inaktivera tillåtelselista.
 
-1. Gå till **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL Allow list]**-menyn.
+1. Öppna  **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL Allow list]** -menyn.
 
 1. Markera växlingsknappen.
 

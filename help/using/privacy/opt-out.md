@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c5bae757-a109-45f8-bf8d-182044a73cca
-source-git-commit: b4fda6a0bd3e633811c16ef6dc3a3171b3b350c8
+source-git-commit: 30018b08da7c02d9d9aac431db2fa39f91163cfd
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ while **[!DNL Journey Optimizer]** innehåller sätt att hantera avanmälan i e-
 
 >[!NOTE]
 >
->Dessutom kan man utnyttja Journey Optimizer **Suppression REST API** för att styra utgående meddelanden med hjälp av suppression och tillåtelselista. [Lär dig hur du arbetar med Suppression REST API](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html)
+>Dessutom kan man utnyttja Journey Optimizer **Suppression REST API** för att styra utgående meddelanden med hjälp av suppression och tillåtelselista. [Lär dig hur du arbetar med Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression/){target="_blank"}
 
 
 Lär dig hur du hanterar avanmälan i Journey Optimizer e-post och SMS-meddelanden i följande avsnitt:
@@ -66,7 +66,7 @@ Era kunder kan också välja bort att presenteras som personaliserat innehåll. 
 
 ### Beslutsförvaltning {#opt-out-decision-management}
 
-När du utnyttjar erbjudanden implementeras inte personaliseringsinställningar automatiskt i [beslutsomfattningar](../offers/offer-activities/create-offer-activities.md#add-decision-scopes) används från en [beslut](../offers/api-reference/offer-delivery-api/decisioning-api.md) API-begäran eller [kantavkänning](../offers/api-reference/offer-delivery-api/edge-decisioning-api.md) API-begäran. I det här fallet måste du manuellt framtvinga godkännande av personalisering. För att göra detta, följ nedanstående steg.
+När du utnyttjar erbjudanden implementeras inte personaliseringsinställningar automatiskt i [beslutsomfattningar](../offers/offer-activities/create-offer-activities.md#add-decision-scopes) används från en [beslut](../offers/api-reference/offer-delivery-api/decisioning-api.md) API-begäran eller [kantavkänning](../offers/api-reference/offer-delivery-api/edge-decisioning-api.md) API-begäran. I det här fallet måste du manuellt framtvinga godkännande av personalisering. Följ stegen nedan för att göra det.
 
 >[!NOTE]
 >

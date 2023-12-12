@@ -8,9 +8,9 @@ topic: Content Management
 role: Admin
 level: Intermediate, Experienced
 exl-id: a4653378-b70f-454c-a446-ab4a14d2580a
-source-git-commit: b4fda6a0bd3e633811c16ef6dc3a3171b3b350c8
+source-git-commit: 30018b08da7c02d9d9aac431db2fa39f91163cfd
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '787'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Den samlar in e-postadresser och domäner som inte används i alla e-postmeddela
 >
 >Adobe håller en uppdaterad lista över kända dåliga adresser som har visat sig vara skadliga för engagemanget och utskickets anseende och ser till att e-post inte skickas till dem. Den här listan hanteras i en global undertryckningslista som är gemensam för alla Adobe-kunder. Adresserna och domännamnen som finns i den globala undertryckningslistan är dolda. Endast antalet uteslutna mottagare anges i leveransrapporterna.
 
-Dessutom kan man utnyttja Journey Optimizer **Suppression REST API** för att styra utgående meddelanden med hjälp av suppression och tillåtelselista. [Lär dig hur du arbetar med Suppression REST API](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html)
+Dessutom kan man utnyttja Journey Optimizer **Suppression REST API** för att styra utgående meddelanden med hjälp av suppression och tillåtelselista. [Lär dig hur du arbetar med Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression/){target="_blank"}
 
 ## Varför en lista över inaktiveringar? {#why-suppression-list}
 

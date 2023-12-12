@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: 25c63b7bd602446df0ada9a0e7aedb752f10892e
+source-git-commit: 51c6717d5d5d317c4ff1040194f2e831bea89222
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '879'
 ht-degree: 0%
 
 ---
@@ -59,11 +59,11 @@ I Adobe Journey Optimizer genereras målgrupper från segmentdefinitioner med hj
 
 Profillistan för målgruppen hålls uppdaterad i realtid när nya data flödar in i systemet.
 
-Direktuppspelningssegmentering är en kontinuerlig process för datamarkering som uppdaterar era målgrupper som svar på användaraktivitet. När en segmentdefinition har skapats och målgruppen har sparats, tillämpas segmentdefinitionen på inkommande data till Journey Optimizer. Det innebär att enskilda personer läggs till eller tas bort från målgruppen när deras profildata ändras, vilket säkerställer att målgruppen alltid är relevant. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html#query-types){target="_blank"}
+Direktuppspelningssegmentering är en kontinuerlig process för datamarkering som uppdaterar era målgrupper som svar på användaraktivitet. När en segmentdefinition har skapats och målgruppen har sparats, tillämpas segmentdefinitionen på inkommande data till Journey Optimizer. Det innebär att enskilda personer läggs till eller tas bort från målgruppen när deras profildata ändras, vilket säkerställer att målgruppen alltid är relevant. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html){target="_blank"}
 
 >[!NOTE]
 >
->Se till att använda rätt händelser som villkor för direktuppspelningssegmentering. [Läs mer](#open-and-send-event-guardrails)
+>Se till att använda rätt händelser som villkor för direktuppspelningssegmentering. [Läs mer](#streaming-segmentation-events-guardrails)
 
 +++
 
