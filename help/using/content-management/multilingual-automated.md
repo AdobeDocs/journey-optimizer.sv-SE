@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 exl-id: 38e82eb2-67d9-4a7d-8c1f-77dab20bcec4
 badge: label="Beta" type="Informative"
-source-git-commit: feee761f9893633f88b0109b810ac55ae82dd9e0
+source-git-commit: d8926076d30fb07ea10e06ea8ee025b04ba5bb85
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1222'
 ht-degree: 1%
 
 ---
@@ -182,9 +182,17 @@ När du har konfigurerat översättningsprojektet och språkinställningarna är
 1. På den här sidan följer du översättningsprojektets status:
 
    * **[!UICONTROL Translation in progress]**: Din tjänsteleverantör arbetar aktivt med översättningen.
+
+     Om du valde **Intern översättning** när du konfigurerar **Språkinställningar** kan du översätta innehållet direkt i översättningsprojektet. [Läs mer](#manage-ht-project)
+
    * **[!UICONTROL Ready for review]**: Granskningsprocessen är klar att börja, vilket ger dig möjlighet att komma åt översättningen och antingen avvisa eller godkänna den.
-   * **[!UICONTROL Reviewed]**: Översättningen har godkänts och kan skickas till kampanjen.
+
+     Om du valde **[!UICONTROL Enable review worflow]** i **[!UICONTROL Translation project]** kan du granska översättningen direkt i Journey Optimizer när du är klar av den valda översättningsleverantören. [Läs mer](#review-translation-project)
+
+   * **[!UICONTROL Reviewed]**: Översättningen har godkänts och är klar att skickas till kampanjen.
+
    * **[!UICONTROL Ready to publish]**: Maskinöversättning har slutförts och kan nu skickas till din kampanj.
+
    * **[!UICONTROL Completed]**: Översättning är nu tillgänglig i din kampanj.
 
    ![](assets/multilingual-campaign-automated-6.png)
