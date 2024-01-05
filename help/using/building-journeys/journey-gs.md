@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
+source-git-commit: ba870af16a92ffd5aae2bb4e0abb8f0cdbb8dc80
 workflow-type: tm+mt
-source-wordcount: '1690'
-ht-degree: 8%
+source-wordcount: '1737'
+ht-degree: 5%
 
 ---
 
@@ -65,7 +65,7 @@ Klicka på **[!UICONTROL Journeys]**. Det finns två flikar:
 
 ![](assets/journeys-dashboard.png)
 
-**Bläddra**: den här fliken visar en lista över befintliga resor. Du kan söka efter resor, använda filter och utföra grundläggande åtgärder för varje element. Du kan till exempel skapa dubbletter eller radera en post. Mer information hittar du i [det här avsnittet](../start/user-interface.md#filter-lists).
+**Bläddra**: den här fliken visar en lista över befintliga resor. Du kan söka efter resor, använda filter och utföra grundläggande åtgärder för varje element. Du kan till exempel duplicera eller ta bort ett objekt. Mer information hittar du i [det här avsnittet](../start/user-interface.md#filter-lists).
 
 ![](assets/journeys-browse.png)
 
@@ -83,7 +83,7 @@ I konfigurationsrutorna Händelse, Datakälla och Åtgärd visas **[!UICONTROL U
 
 ## Bygg upp din resa{#jo-build}
 
-Det här steget utförs av **företagsanvändare**. Här skapar du dina resor. Kombinera de olika händelserna, orkestreringen och åtgärderna för att skapa scenarier i flera steg över olika kanaler.
+Det här steget utförs av **företagsanvändare**. Här skapar du dina resor. Kombinera de olika händelserna, samordningen och åtgärderna för att skapa flerstegsscenarier för olika kanaler.
 
 Här är de viktigaste stegen för att skicka meddelanden via resor:
 
@@ -140,13 +140,9 @@ Om du vill tilldela etiketter för anpassad eller grundläggande dataanvändning
 
 ![](assets/journeys-manage-access.png)
 
-### Tidszon och profiltidszon {#timezone}
+### Tidszoner för resa och profil {#timezone}
 
-Tidszonen definieras på resenivå.
-
-Du kan ange en fast tidszon eller använda Adobe Experience Platform-profiler för att definiera resetidszonen.
-
-Om en tidszon definieras i Adobe Experience Platform-profilen kan den hämtas under resan.
+Tidszonen definieras på resenivå. Du kan ange en fast tidszon eller använda Adobe Experience Platform-profiler för att definiera resetidszonen. Om en tidszon definieras i Adobe Experience Platform-profilen kan den hämtas under resan.
 
 Mer information om hantering av tidszoner finns i [den här sidan](../building-journeys/timezone-management.md).
 
@@ -154,7 +150,7 @@ Mer information om hantering av tidszoner finns i [den här sidan](../building-j
 
 Du kan definiera en **Startdatum**. Om du inte har angett någon sådan kommer den att definieras automatiskt vid publiceringstidpunkten.
 
-Du kan också lägga till en **Slutdatum**. Detta gör att profiler kan avslutas automatiskt när datumet nås. Om du inte anger ett slutdatum kan profilerna behållas tills standardtidsgränsen för resan uppnås (vanligtvis 30 dagar, 7 dagar med tilläggsservice för hälso- och sjukvård). Det enda undantaget är återkommande läsningar på målgruppsresor med **Tvinga återinträde vid upprepning** som slutar vid startdatumet för nästa förekomst.
+Du kan också lägga till en **Slutdatum**. Detta gör att profiler kan avslutas automatiskt när datumet nås. Om inget slutdatum anges kan profilerna behållas tills [tidsgräns för global resa](#global_timeout) (som i allmänhet är 30 dagar och reducerat till 7 dagar med tilläggserbjudanden för hälso- och sjukvårdsskölden och skölden för skydd av privatlivet). Det enda undantaget är återkommande läsningar på målgruppsresor med **Tvinga återinträde vid upprepning** som slutar vid startdatumet för nästa förekomst.
 
 ### Tidsgräns och fel i reseaktiviteter {#timeout_and_error}
 
@@ -168,7 +164,9 @@ Journeys använder också en global tidsgräns. Se [nästa avsnitt](#global_time
 
 ### Tidsgräns för global resa {#global_timeout}
 
-Förutom [timeout](#timeout_and_error) som används i reseaktiviteter finns det också en timeout för den globala resan som inte visas i gränssnittet och som inte kan ändras. Den här tidsgränsen kommer att stoppa enskilda personers framsteg på resan 30 dagar efter att de har kommit in. Det innebär att en persons resa inte kan vara längre än 30 dagar. Efter timeoutperioden på 30 dagar tas personens data bort. Individer som fortfarande flyter i resan i slutet av timeoutperioden kommer att stoppas och de kommer inte att beaktas vid rapporteringen. Du kan därför se fler människor komma in på resan än att gå ut.
+Förutom [timeout](#timeout_and_error) som används i reseaktiviteter finns det också en timeout för den globala resan som inte visas i gränssnittet och som inte kan ändras.
+
+Den här globala tidsgränsen stoppar de enskilda personernas framsteg under resan **30 dagar** efter att de gått in. Den här tidsgränsen reduceras till **7 dagar** med tillägg till skölden för hälso- och sjukvård samt skölden för skydd av privatlivet och säkerhet. Det innebär att en persons resa inte kan vara längre än 30 dagar (eller 7 dagar). Efter denna timeout-period tas personens data bort. Individer som fortfarande flyter i resan i slutet av timeoutperioden kommer att stoppas och de kommer inte att beaktas vid rapporteringen. Du kan därför se fler människor komma in på resan än att gå ut.
 
 >[!NOTE]
 >
