@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: ba870af16a92ffd5aae2bb4e0abb8f0cdbb8dc80
+source-git-commit: f5013f40735d424d49c2642ac824cbc6f68a3cb9
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1727'
 ht-degree: 5%
 
 ---
@@ -150,7 +150,7 @@ Mer information om hantering av tidszoner finns i [den här sidan](../building-j
 
 Du kan definiera en **Startdatum**. Om du inte har angett någon sådan kommer den att definieras automatiskt vid publiceringstidpunkten.
 
-Du kan också lägga till en **Slutdatum**. Detta gör att profiler kan avslutas automatiskt när datumet nås. Om inget slutdatum anges kan profilerna behållas tills [tidsgräns för global resa](#global_timeout) (som i allmänhet är 30 dagar och reducerat till 7 dagar med tilläggserbjudanden för hälso- och sjukvårdsskölden och skölden för skydd av privatlivet). Det enda undantaget är återkommande läsningar på målgruppsresor med **Tvinga återinträde vid upprepning** som slutar vid startdatumet för nästa förekomst.
+Du kan också lägga till en **Slutdatum**. Detta gör att profiler kan avslutas automatiskt när datumet nås. Om inget slutdatum anges kan profilerna behållas tills [tidsgräns för global resa](#global_timeout) (som i allmänhet är 30 dagar och reducerat till 7 dagar med tilläggserbjudande till hälso- och sjukvårdsskölden). Det enda undantaget är återkommande läsningar på målgruppsresor med **Tvinga återinträde vid upprepning** som slutar vid startdatumet för nästa förekomst.
 
 ### Tidsgräns och fel i reseaktiviteter {#timeout_and_error}
 
@@ -166,7 +166,7 @@ Journeys använder också en global tidsgräns. Se [nästa avsnitt](#global_time
 
 Förutom [timeout](#timeout_and_error) som används i reseaktiviteter finns det också en timeout för den globala resan som inte visas i gränssnittet och som inte kan ändras.
 
-Den här globala tidsgränsen stoppar de enskilda personernas framsteg under resan **30 dagar** efter att de gått in. Den här tidsgränsen reduceras till **7 dagar** med tillägg till skölden för hälso- och sjukvård samt skölden för skydd av privatlivet och säkerhet. Det innebär att en persons resa inte kan vara längre än 30 dagar (eller 7 dagar). Efter denna timeout-period tas personens data bort. Individer som fortfarande flyter i resan i slutet av timeoutperioden kommer att stoppas och de kommer inte att beaktas vid rapporteringen. Du kan därför se fler människor komma in på resan än att gå ut.
+Den här globala tidsgränsen stoppar de enskilda personernas framsteg under resan **30 dagar** efter att de gått in. Den här tidsgränsen reduceras till **7 dagar** med tilläggserbjudande för hälso- och sjukvårdssköld. Det innebär att en persons resa inte kan vara längre än 30 dagar (eller 7 dagar). Efter denna timeout-period tas personens data bort. Individer som fortfarande flyter i resan i slutet av timeoutperioden kommer att stoppas och de kommer inte att beaktas vid rapporteringen. Du kan därför se fler människor komma in på resan än att gå ut.
 
 >[!NOTE]
 >
