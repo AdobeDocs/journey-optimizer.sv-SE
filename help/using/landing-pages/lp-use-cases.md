@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: landning, landningssida, fallstudie
 exl-id: 8c00d783-54a3-45d9-bd8f-4dc58804d922
-source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
+source-git-commit: 436507ea3ea76eb7a42cbcb3747ad236685e3f13
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 2%
+source-wordcount: '918'
+ht-degree: 1%
 
 ---
 
@@ -68,7 +68,7 @@ Anta till exempel att du ordnar ett event nästa månad och vill starta en kampa
 
 ### Skicka en bekräftelse via e-post {#send-confirmation-email}
 
-Dessutom kan du skicka ett bekräftelsemeddelande via e-post till de mottagare som har registrerat sig för din aktivitet. För att göra detta, följ nedanstående steg.
+Dessutom kan du skicka ett bekräftelsemeddelande via e-post till de mottagare som har registrerat sig för din aktivitet. Följ stegen nedan för att göra det.
 
 1. Skapa en till [resa](../building-journeys/journey.md). Du kan göra det direkt från landningssidan genom att klicka på **[!UICONTROL Create journey]** -knappen. [Läs mer](create-lp.md#configure-primary-page)
 
@@ -92,7 +92,9 @@ Alla användare som har registrerat sig för din aktivitet får bekräftelsemedd
 
 Om du vill att mottagarna ska kunna avbeställa din kommunikation kan du inkludera en länk till en avanmälningssida i dina e-postmeddelanden.
 
-Läs mer om hur du hanterar mottagarnas samtycke och varför detta är viktigt i [det här avsnittet](../privacy/opt-out.md).
+>[!NOTE]
+>
+>Läs mer om hur du hanterar mottagarnas samtycke och varför detta är viktigt i [det här avsnittet](../privacy/opt-out.md).
 
 ### Hantering av avanmälan {#opt-out-management}
 
@@ -103,7 +105,7 @@ Därför måste du alltid inkludera en **avbeställ länk** i varje e-postmeddel
 * När du klickar på den här länken dirigeras mottagarna till en landningssida med en knapp som bekräftar att de avanmäler sig.
 * När du klickar på avanmälningsknappen uppdateras profildata med den här informationen.
 
-### Konfigurera avanmälan {#configure-opt-out}
+### Konfigurera e-postavanmälan {#configure-opt-out}
 
 Följ stegen nedan om du vill att mottagarna av ett e-postmeddelande ska kunna avbeställa från din kommunikation via en landningssida.
 

@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: avanmälan, e-post, länk, avanmälan
 exl-id: 4bb51bef-5dab-4a72-8511-1a5e528f4b95
-source-git-commit: 2eb5ac0a9220dfca7110082cd1bbf40afbcb8f40
+source-git-commit: 436507ea3ea76eb7a42cbcb3747ad236685e3f13
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 2%
+source-wordcount: '1008'
+ht-degree: 0%
 
 ---
 
@@ -22,11 +22,15 @@ För att mottagarna ska kunna avbeställa mejl måste du alltid inkludera en **a
 
 Om du vill göra det kan du:
 
-* Infoga en **länk till en extern landningssida** via e-post så att användarna kan avbryta prenumerationen på information från ert varumärke. [Lär dig hur du lägger till en extern avanmälningslänk](#opt-out-external-lp)
+* Infoga en **länk till en landningssida** via e-post så att användarna kan avbryta prenumerationen på information från ert varumärke. Den kan vara:
+
+   * A **[!DNL Journey Optimizer]landningssida**. [Lär dig hur du lägger till en startsida för avanmälan](../landing-pages/lp-use-cases.md#opt-out)
+
+   * A **en extern landningssida**. [Lär dig hur du lägger till en extern avanmälningslänk](#opt-out-external-lp)
 
 * Lägg till en **länk för avanmälan med ett klick** i ert e-postinnehåll. Med den här länken kan dina mottagare snabbt avbeställa din kommunikation utan att omdirigeras till en landningssida där de måste bekräfta sitt val, vilket snabbar upp avanmälningsprocessen. [Lär dig hur du lägger till en länk för avanmälan med ett enda klick](#one-click-opt-out)
 
-Om **[!UICONTROL List-Unsubscribe]** om alternativet är aktiverat på kanalytnivå kommer motsvarande e-postmeddelanden som skickas med Journey Optimizer att innehålla en länk för att avbryta prenumerationen i e-posthuvudet. [Läs mer om avanmälan i e-postrubriken](#unsubscribe-header)
+* Lägg till en länk för att avbryta prenumerationen i e-posthuvudet. Om **[!UICONTROL List-Unsubscribe]** om alternativet är aktiverat på kanalytnivå kommer motsvarande e-postmeddelanden som skickas med Journey Optimizer att innehålla en länk för att avbryta prenumerationen i e-posthuvudet. [Läs mer om avanmälan i e-postrubriken](#unsubscribe-header)
 
 >[!NOTE]
 >
@@ -36,7 +40,7 @@ Om **[!UICONTROL List-Unsubscribe]** om alternativet är aktiverat på kanalytni
 
 ### Lägg till en länk för att avbryta prenumerationen {#add-unsubscribe-link}
 
-Du måste först lägga till en länk för att avbryta prenumerationen i ett meddelande. Följ stegen nedan för att göra detta:
+Du måste först lägga till en länk för att avbryta prenumerationen i ett meddelande. Gör så här:
 
 1. Bygg en egen landningssida utan prenumeration.
 
@@ -161,7 +165,7 @@ När ditt meddelande har skickats via en [resa](../building-journeys/journey.md)
 >abstract="Aktivera List-Unsubscribe om du vill lägga till en länk för att avbryta prenumerationen i e-posthuvudet. Om du vill ange en avanmälnings-URL infogar du en länk för avanmälan med ett klick i e-postinnehållet."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/privacy/consent/opt-out.html#one-click-opt-out" text="Avanmäl dig med ett klick"
 
-Om [Alternativet List-Unsubscribe](../configuration/channel-surfaces.md#list-unsubscribe) är aktiverat på kanalytnivå, motsvarande e-postmeddelanden som skickas med [!DNL Journey Optimizer] kommer att innehålla en länk för att avbryta prenumerationen i e-posthuvudet.
+Om [Alternativet List-Unsubscribe](email-settings.md#list-unsubscribe) är aktiverat på kanalytnivå, motsvarande e-postmeddelanden som skickas med [!DNL Journey Optimizer] kommer att innehålla en länk för att avbryta prenumerationen i e-posthuvudet.
 
 Länken för att avbryta prenumerationen ser till exempel ut så här i Gmail:
 
