@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: kvalificering, evenemang, målgrupp, resa, plattform
 exl-id: 7e70b8a9-7fac-4450-ad9c-597fe0496df9
-source-git-commit: 3de42084d849047f218cf8dca2ad7e510759fb1c
+source-git-commit: d735f8c92466cb17a7364833950312e338c630cc
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '975'
 ht-degree: 1%
 
 ---
@@ -40,6 +40,8 @@ Den här typen av händelse kan placeras som det första steget eller senare und
 * Det går inte att använda fältgrupper för upplevelsehändelser på resor som börjar med en läsare, en målgrupp eller en affärshändelseaktivitet.
 
 * När du använder en målgruppskvalifikation på en resa kan det ta upp till 10 minuter innan målgruppsaktiviteten är aktiv och lyssnar på profiler som kommer in eller lämnar målgruppen.
+
+* Vi rekommenderar att du endast använder direktuppspelande målgrupper för **Målgruppskvalifikation** aktivitet. För användning i batch, använd **[Läsa målgrupper](read-audience.md)** aktivitet.
 
 ### Konfigurera aktiviteten{#cnfigure-segment-qualification}
 
@@ -91,7 +93,7 @@ Se [Villkorsaktivitet](../building-journeys/condition-activity.md#about_conditio
 
 En ny resa som innefattar ett kvalificeringsevenemang för en målgrupp är i drift tio minuter efter att du har publicerat det. Det här tidsintervallet motsvarar cacheuppdateringsintervallet för den dedikerade tjänsten. Du måste därför vänta tio minuter innan du kan använda den här resan.
 
-## God praxis {#best-practices-segments}
+## Bästa praxis {#best-practices-segments}
 
 The **[!UICONTROL Audience Qualification]** Aktiviteten gör det möjligt att omedelbart ta sig in på resor för enskilda personer som är kvalificerade eller diskvalificerade för en Adobe Experience Platform-publik.
 

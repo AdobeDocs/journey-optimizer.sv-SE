@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: aktivitet, resa, läsning, målgrupp, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: d3aecaefb0b356eb1d25b151e8d210620b51ea5f
+source-git-commit: d735f8c92466cb17a7364833950312e338c630cc
 workflow-type: tm+mt
-source-wordcount: '1318'
+source-wordcount: '1369'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,8 @@ Låt oss som exempel ta målgruppen&quot;Luma app opening and checkout&quot; som
 * För resor som använder aktiviteten Läs målgrupp finns det ett maximalt antal resor som kan påbörjas exakt samtidigt. Nya försök kommer att utföras av systemet men undvik att ha fler än fem resor (med Läs publik, schemalagd eller starta&quot;så snart som möjligt&quot;) med början vid exakt samma tidpunkt genom att sprida dem över tiden, till exempel med 5 till 10 minuters mellanrum.
 
 * Det går inte att använda fältgrupper för upplevelsehändelser på resor som börjar med en läsare, en målgrupp eller en affärshändelseaktivitet.
+
+* Vi rekommenderar att du endast använder gruppmålgrupper i en **Läsa målgrupper** aktivitet. Detta ger en tillförlitlig och enhetlig räkning för de målgrupper som används under en resa. Läsarna är utformade för att gruppbearbetas. Om ditt användningsfall behöver realtidsdata ska du använda **[Målgruppskvalifikation](audience-qualification-events.md)** aktivitet.
 
 * För närvarande används målgrupper [importerad från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) eller som härrör från [arbetsflöden för disposition](../audience/get-started-audience-orchestration.md) på resorna finns som en privat betaversion. Kontakta din Adobe-representant om du vill veta mer.
 
