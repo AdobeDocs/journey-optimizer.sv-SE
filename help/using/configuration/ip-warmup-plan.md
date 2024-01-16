@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: c2434086-2ed4-4cd0-aecd-2eea8f0a55f6
-source-git-commit: 2060b18bfcc62e02127776f05de1448378a7a06a
+source-git-commit: 93e29ac1d81ef51c7031e9d37bc05cfc21cfce08
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1493'
 ht-degree: 1%
 
 ---
@@ -82,9 +82,9 @@ Denna aktivitet utförs i rätt tid med hjälp av en leveransexpert som hjälper
 
 Innan du kan skapa en IP-uppvärmningsplan i [!DNL Journey Optimizer] måste du fylla i en Excel-mall med alla data som matar in planen.
 
-* Här kan du ladda ned blanketten [Mallen för Excel IP-värmerapport](assets/ip-warmup-csv.zip) fylla i.
+* Här kan du ladda ned den tomma Excel-filen [Prenumerationsplanmall för IP-värmare](assets/ip-warmup-plan-template.zip) fylla i.
 
-* Du kan även hämta en [exempelmall för IP-värmerammanslutning](assets/sample-ip-warmup-plan.zip) som redan har fyllts i med vissa data som du kan använda som exempel.
+* Du kan även hämta en [exempelplan för IP-värmare](assets/ip-warmup-plan-sample.zip) som redan har fyllts i med vissa data som du kan använda som exempel.
 
 >[!CAUTION]
 >
@@ -299,7 +299,7 @@ Följ stegen nedan om du vill skapa en IP-värmeringsplan.
 
    >[!NOTE]
    >
-   >Om överföringen misslyckas bör du kontrollera att du använder rätt format (.xls eller .xlsx). Använd [exempel](assets/ip-warmup-csv.zip) som tillhandahålls av Adobe.
+   >Om överföringen misslyckas bör du kontrollera att du använder rätt format (.xls eller .xlsx). Använd [mall](assets/ip-warmup-plan-template.zip) som tillhandahålls av Adobe.
 
 1. Klicka på **[!UICONTROL Create]**. Alla faser, körningar, kolumner och deras innehåll som definieras i den överförda filen visas automatiskt i [!DNL Journey Optimizer] gränssnitt.
 
