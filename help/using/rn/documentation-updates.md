@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: f5013f40735d424d49c2642ac824cbc6f68a3cb9
+source-git-commit: bf7f09f644beb869cf30733e57754d8cf0408c9e
 workflow-type: tm+mt
-source-wordcount: '4232'
+source-wordcount: '4243'
 ht-degree: 14%
 
 ---
@@ -21,6 +21,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 
 ## Januari 2024 {#jan-2024}
 
+* Ett skyddsräcke om resestorleken har lagts till. [Läs mer](../start/guardrails.md#journeys-guardrails-journeys)
 * Tidsgränsen för resan har beskrivits [i följande avsnitt](../building-journeys/journey-gs.md#global_timeout).
 * Journey Optimizer [dokumentation, startsida](../../ajo-home.md) sidan har fått en ny design.
 
