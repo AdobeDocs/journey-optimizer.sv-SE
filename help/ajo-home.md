@@ -5,10 +5,10 @@ description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: 85c700271b49150a8796d58748a2d78b20587ee1
+source-git-commit: 4b1de4d1c62c917ce760b3739242671e5c274357
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 1%
+source-wordcount: '361'
+ht-degree: 18%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## Nyheter?
 
-Få en glimt av de senaste förbättringarna i Journey Optimizer-produkter och -dokumentation! En omfattande lista över funktioner, förbättringar och korrigeringar finns i [Versionsinformation](using/rn/release-notes.md). Håll dig uppdaterad om de senaste ändringarna i vår dokumentation genom att besöka [dokumentuppdateringssida](using/rn/documentation-updates.md).
+Få en glimt av de senaste förbättringarna i Journey Optimizer-produkter och -dokumentation! En omfattande lista över funktioner, förbättringar och korrigeringar finns i [versionsinformationen](using/rn/release-notes.md). Håll dig uppdaterad om de senaste ändringarna i vår dokumentation genom att besöka [dokumentuppdateringssidan](using/rn/documentation-updates.md).
 
 >[!BEGINTABS]
 
@@ -78,7 +78,7 @@ Med SMS-kanalen kan du nu förbättra kommunikationen genom att skicka MMS-medde
     </td>
     <td>
       <img src="using/assets/do-not-localize/icon-campaign.svg" width="35px"><br/>
-      <strong>Kommunikationskanaler</strong><br/><a href="using/email/get-started-email.md">E-post</a> - <a href="using/sms/get-started-sms.md">SMS</a> - <a href="using/in-app/get-started-in-app.md">I appen</a> - <a href="using/push/get-started-push.md">Push-meddelanden</a> - <a href="using/direct-mail/get-started-direct-mail.md">Direktreklam</a> - <a href="using/web/get-started-web.md">Webb</a>
+      <strong>Kommunikationskanaler</strong><br/><a href="using/email/get-started-email.md">E-post</a> – <a href="using/sms/get-started-sms.md">SMS</a> – <a href="using/in-app/get-started-in-app.md">I appen</a> – <a href="using/push/get-started-push.md">Push-meddelanden</a> – <a href="using/direct-mail/get-started-direct-mail.md">Direktreklam</a> – <a href="using/web/get-started-web.md">Webb</a>
     </td>
   </tr>
   <tr style="border: 0;">
@@ -101,7 +101,8 @@ Med SMS-kanalen kan du nu förbättra kommunikationen genom att skicka MMS-medde
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Adobe Journey Optimizer</strong><br/>
-<a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html" target="_blank">Produktbeskrivning</a> - <a href="https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf" target="_blank">Säkerhetsöversikt (PDF)</a> - <a href="https://developer.adobe.com/journey-optimizer-apis/" target="_blank">API-referens</a>
+<a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html" target="_blank">Produktbeskrivning</a> - <a href="https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf" target="_blank">Säkerhetsöversikt (PDF)</a> - <a href="https://developer.adobe.com/journey-optimizer-apis/" target="_blank">API-referens</a> - <a href="https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html" target="_blank">Journey Optimizer Schema Dictionary</a>
+
 </td>
 <td><strong>Adobe Experience Platform</strong><br/>
 <a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html" target="_blank">Dokumentation</a> - <a href="https://www.adobe.com/se/experience-platform/documentation-and-developer-resources.html" target="_blank">Resurser för utvecklare</a>
