@@ -7,10 +7,10 @@ feature: Monitoring
 role: User
 level: Intermediate
 exl-id: 759b014a-c834-4331-bffd-5bc159ec555d
-source-git-commit: 78675ca22d8ee9a93d9af128d5708c305523da78
+source-git-commit: ac83b44ca24b26edfbf70a2781e1ed7dede318d4
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 0%
+source-wordcount: '297'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +47,6 @@ Följande tabell visar vilka åtgärder som Journey Optimizer-resurser registrer
 | Mall för AJO-landningssida HTML | Skapa/ta bort/uppdatera |
 | Förinställning för AJO-landningssida | Skapa/ta bort/uppdatera |
 | AJO - underdomän för landningssida | Skapa/ta bort/uppdatera |
-| AJO-meddelande | Skapa/ta bort/uppdatera/publicera |
 | AJO-meddelandeförinställning | Skapa/ta bort/uppdatera |
 | AJO PTR-post | Skapa/ta bort/uppdatera |
 | AJO sparad uttrycksmall | Skapa/ta bort/uppdatera |

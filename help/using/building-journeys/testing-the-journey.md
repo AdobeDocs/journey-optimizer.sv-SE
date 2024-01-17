@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: test, resa, kontroll, fel, felsökning
 exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: ac83b44ca24b26edfbf70a2781e1ed7dede318d4
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1519'
 ht-degree: 1%
 
 ---
@@ -61,7 +61,7 @@ Så här använder du testläget:
 
 ## Viktiga anteckningar {#important_notes}
 
-* I testläge kan du utlösa händelser med hjälp av gränssnittet.
+* I testläge kan du utlösa händelser med hjälp av gränssnittet. Det går inte att skicka händelser från externa system med ett API.
 * Endast personer som markerats som&quot;testprofiler&quot; i kundprofiltjänsten i realtid får delta i den testade resan. Se detta [section](../audience/creating-test-profiles.md).
 * Testläget är bara tillgängligt i utkastresor som använder ett namnutrymme. Testläget måste kontrollera om en person som deltar i resan är en testprofil eller inte och därför måste kunna nå Adobe Experience Platform.
 * Det högsta antalet testprofiler som kan gå in på en resa under en testsession är 100.
@@ -126,7 +126,7 @@ Observera att du inte kan ändra definitionen för affärshändelser i samma tes
 >title="Loggar för testläge"
 >abstract="Knappen Visa logg visar testresultat i JSON-format. Dessa resultat visar antalet individer under resan och deras status."
 
-The **[!UICONTROL Show log]** kan du visa testresultaten. På den här sidan visas resans aktuella information i JSON-format. Med en knapp kan du kopiera hela noder. Du måste uppdatera sidan manuellt för att kunna uppdatera resans testresultat.
+The **[!UICONTROL Show log]** kan du visa testresultaten. På den här sidan visas resans aktuella information i JSON-format. Med en knapp kan du kopiera hela noder. Du måste uppdatera sidan manuellt för att uppdatera resans testresultat.
 
 ![](assets/journeytest3.png)
 
