@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: d18b24f6afcd64745fe7bd3b3bc9832342b91c7b
+source-git-commit: a53af66d052ee8041164184755ba80e4ab3cca0a
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '969'
 ht-degree: 0%
 
 ---
@@ -27,9 +27,15 @@ ht-degree: 0%
 >title="Välj kampanjmålgrupp"
 >abstract="I den här listan visas alla tillgängliga Adobe Experience Platform-målgrupper. Välj målgrupp för er kampanj. Meddelandet som konfigurerats i kampanjen skickas till alla personer som tillhör den valda målgruppen. [Läs mer om målgrupper](../audience/about-audiences.md)"
 
-En målgrupp är en uppsättning personer som har liknande beteenden och/eller egenskaper. De kan genereras av Adobe Experience Platform med segmentdefinitioner eller målgruppskomposition, eller importeras från en CSV-fil. Läs mer om målgrupper i [Dokumentation för Adobe Experience Platform Segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
+En målgrupp är en uppsättning personer som har liknande beteenden och/eller egenskaper. Läs mer om målgrupper i [Dokumentation för Adobe Experience Platform Segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 
 [!DNL Journey Optimizer] kan ni skapa Adobe Experience Platform-målgrupper direkt från **[!UICONTROL Audiences]** och utnyttja dem i era resor eller kampanjer.
+
+Målgrupper kan genereras på olika sätt:
+
+* **Segmentdefinitioner**: Skapa en ny målgruppsdefinition med Adobe Experience Platform Segmentation Service. [Lär dig hur du skapar segmentdefinitioner](creating-a-segment-definition.md)
+* **Import av CSV-filer**: Importera en målgrupp med en CSV-fil. Lär dig hur du importerar målgrupper i Adobe Experience Platform [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}.
+* **Målgruppskomposition**: Skapa ett dispositionsarbetsflöde för att kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och utnyttja olika aktiviteter (dela, exkludera..) för att skapa nya målgrupper. [Kom igång med målgruppsmaterial](get-started-audience-orchestration.md)
 
 ## Använd målgrupper i [!DNL Journey Optimizer] {#segments-in-journey-optimizer}
 
