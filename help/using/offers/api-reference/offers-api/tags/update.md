@@ -6,47 +6,44 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 918927e1-ad7a-4937-b652-2a0932e9efa1
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: ba7d065523116c12e22eec300df13c29d92a54fb
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '117'
 ht-degree: 2%
 
 ---
 
+
 # Uppdatera en samlingskvalificerare {#update-collection-qualifier}
 
-Du kan ändra eller uppdatera en samlingskvalificerare (som tidigare kallades &quot;tagg&quot;) i behållaren genom att göra en PATCH-begäran till [!DNL Offer Library] API.
+Du kan ändra eller uppdatera en samlingskvalificerare (som tidigare kallades &quot;tagg&quot;) genom att göra en PATCH-begäran till Offer Library API.
 
 Mer information om JSON Patch, inklusive tillgängliga åtgärder, finns i [JSON Patch-dokumentation](https://jsonpatch.com/).
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
-I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
+I följande tabell visas giltiga värden som utgör *Content-Type* fält i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
-| Acceptera | `application/vnd.adobe.platform.xcore.xdm.receipt+json; version=1` |
-| Content-Type | `application/vnd.adobe.platform.xcore.patch.hal+json; version=1; schema="https://ns.adobe.com/experience/offer-management/tag;version=0.1"` |
+| Content-Type | `application/json` |
 
 **API-format**
 
 ```http
-PATCH /{ENDPOINT_PATH}/{CONTAINER_ID}/instances/{INSTANCE_ID}
+PATCH /{ENDPOINT_PATH}/tags/{ID}
 ```
 
 | Parameter | Beskrivning | Exempel |
 | --------- | ----------- | ------- |
-| `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
-| `{CONTAINER_ID}` | Behållaren där taggarna finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
-| `{INSTANCE_ID}` | Instans-ID för taggen som du vill uppdatera. | `d48fd160-13dc-11eb-bc55-c11be7252432` |
+| `{ENDPOINT_PATH}` | Slutpunktssökvägen för beständiga API:er. | `https://platform.adobe.io/data/core/dps/` |
+| `{ID}` | ID:t för enheten som du vill uppdatera. | `tag1234` |
 
 **Begäran**
 
 ```shell
-curl -X PATCH \
-  'https://platform.adobe.io/data/core/xcore/e0bd8463-0913-4ca1-bd84-6309134ca1f6/instances/d48fd160-13dc-11eb-bc55-c11be7252432' \
-  -H 'Accept: application/vnd.adobe.platform.xcore.xdm.receipt+json; version=1' \
-  -H 'Content-Type: application/vnd.adobe.platform.xcore.patch.hal+json; version=1; schema="https://ns.adobe.com/experience/offer-management/tag;version=0.1"' \
+curl -X PATCH 'https://platform.adobe.io/data/core/dps/tags/tag1234' \
+-H 'Content-Type: application/json' \
 -H 'Authorization: Bearer  {ACCESS_TOKEN}' \
 -H 'x-api-key: {API_KEY}' \
 -H 'x-gw-ims-org-id: {IMS_ORG}' \
@@ -54,32 +51,31 @@ curl -X PATCH \
 -d '[
     {
         "op": "replace",
-          "path": "/_instance/xdm:name",
-          "value": "Sales and promotions for the holidays"
+        "path": "/name",
+        "value": "Updated tag"
+    },
+    {
+        "op": "replace",
+        "path": "/description",
+        "value": "Updated tag description"
     }
 ]'
 ```
 
-| Parameter | Beskrivning |
-| --------- | ----------- |
-| `op` | Åtgärdsanropet som används för att definiera den åtgärd som krävs för att uppdatera anslutningen. Åtgärderna omfattar: `add`, `replace`och `remove`. |
-| `path` | Sökvägen till den parameter som ska uppdateras. |
-| `value` | Det nya värdet som du vill uppdatera parametern med. |
-
 **Svar**
 
-Ett godkänt svar returnerar den uppdaterade informationen om insamlingskvalificeraren, inklusive dess unika instans-ID och samlingskvalificerare `@id`.
+Ett godkänt svar returnerar den uppdaterade informationen om insamlingskvalificeraren, inklusive dess unika `id`.
 
 ```json
 {
-    "instanceId": "d48fd160-13dc-11eb-bc55-c11be7252432",
-    "@id": "xcore:tag:124e147572cd7866",
-    "repo:etag": 2,
-    "repo:createdDate": "2020-10-21T20:34:34.486296Z",
-    "repo:lastModifiedDate": "2020-10-21T20:36:31.782607Z",
-    "repo:createdBy": "{CREATED_BY}",
-    "repo:lastModifiedBy": "{MODIFIED_BY}",
-    "repo:createdByClientId": "{CREATED_CLIENT_ID}",
-    "repo:lastModifiedByClientId": "{MODIFIED_CLIENT_ID}"
+    "id": "{ID}",
+    "sandboxId": "{SANDBOX_ID}",
+    "etag": 2,
+    "createdDate": "2023-09-07T12:36:26.602Z",
+    "lastModifiedDate": "2023-09-07T12:36:26.602Z",
+    "createdBy": "{CREATED_BY}",
+    "lastModifiedBy": "{MODIFIED_BY}",
+    "createdByClientId": "{CREATED_CLIENT_ID}",
+    "lastModifiedByClientId": "{MODIFIED_CLIENT_ID}"
 }
 ```
