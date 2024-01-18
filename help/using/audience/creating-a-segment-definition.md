@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 289aac5d-6cdb-411f-985e-3acef58050a8
-source-git-commit: 3de42084d849047f218cf8dca2ad7e510759fb1c
+source-git-commit: b9d70bf2b3e16638a03b59fd4036771ad959a631
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 4%
+source-wordcount: '387'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="ajo_ao_create_rule"
 >title="Skapa en regel"
->abstract="Med metoden Skapa regel kan du skapa en ny målgruppsdefinition med Adobe Experience Platform Audience Service."
+>abstract="Med metoden Skapa regel kan du skapa en ny målgruppsdefinition med Adobe Experience Platform Segmentation Service."
 
 I det här exemplet kommer vi att bygga en målgrupp för alla kunder som bor i Atlanta, San Francisco eller Seattle och som är födda efter 1980. Alla dessa kunder bör ha öppnat Luma-applikationen inom de senaste 7 dagarna och sedan köpt den inom 2 timmar efter att ansökan öppnats.
 
