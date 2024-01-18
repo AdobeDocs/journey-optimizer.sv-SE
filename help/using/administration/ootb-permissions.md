@@ -9,9 +9,9 @@ role: Admin, User
 level: Intermediate
 keywords: behörigheter, författare, meddelanden
 exl-id: 5d014017-ca7c-4206-b783-989677ec0e1c
-source-git-commit: b4998f62d5cc5fa134271ec5ce8c177150472a30
+source-git-commit: b7c31db7a126eb134c353e26c9e263a9bd1674a6
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '745'
 ht-degree: 1%
 
 ---
@@ -40,6 +40,6 @@ Inbyggda behörigheter representerar de olika behörigheter som kan tilldelas ti
 | Resor | **[!DNL Manage journeys]**: läsa, skapa, redigera och ta bort resor.</br>**[!DNL View journeys]**: skrivskyddad åtkomst till ljud.</br>**[!DNL Publish journeys]**: publicera resor.</br>**[!DNL Manage journeys events, data sources and actions]**: läs, skapa, redigera och ta bort händelser, källor eller åtgärder.</br>**[!DNL View journeys events, data sources and actions]**: Skrivskyddad åtkomst till resehändelser, anpassade reseåtgärder och datakällor för resan.</br>**[!DNL View journeys report]**: läs och redigera reseregistrering.</br> |
 | Profilhantering | **[!DNL Manage profiles]**: läsa, skapa, redigera och ta bort datauppsättningar som används för kundprofiler. Skrivskyddad åtkomst till tillgängliga profiler.</br>**[!DNL View profiles]**: skrivskyddad åtkomst till tillgängliga profiler.</br>**[!DNL Export audience segments]**: exportera ett utvärderat målgruppssegment till en datauppsättning.</br>**[!DNL View segments]**: skrivskyddad åtkomst till tillgängliga målgrupper.</br>**[!DNL Evaluate a segment to an audience]**: generera profiler för en målgrupp genom att utvärdera en segmentdefinition.</br>**[!DNL Manage merge policies]**: läsa, skapa, redigera och ta bort kopplingsprofiler.</br>**[!DNL View merge policies]**: skrivskyddad åtkomst till tillgängliga kopplingsprofiler. |
 | Frågetjänst | **[!DNL Manage queries]**: läsa, skapa, redigera och ta bort strukturerade SQL-frågor för plattformsdata.</br>**[!DNL Manage query service integration]**: skapa, uppdatera och ta bort ej förfallande autentiseringsuppgifter för åtkomst till frågetjänsten. |
-| Sandlådeadministration | **[!DNL Manage sandboxes]**: läsa, skapa, redigera och ta bort sandlådor.</br>**[!DNL View sandboxes]**: skrivskyddad åtkomst för sandlådor som tillhör din organisation.</br>**[!DNL Reset sandboxes]**: möjlighet att återställa en sandlåda.</br>**[!DNL Export sandboxes]**: möjlighet att exportera en sandlåda. |
+| Sandlådeadministration | **[!DNL Manage sandboxes]**: läsa, skapa, redigera och ta bort sandlådor.</br>**[!DNL View sandboxes]**: skrivskyddad åtkomst för sandlådor som tillhör din organisation.</br>**[!DNL Reset sandboxes]**: möjlighet att återställa en sandlåda.</br>**[!DNL Export sandboxes]**: möjlighet att exportera en sandlåda.</br>**[!DNL Manage packages]**: läsa, skapa, redigera och ta bort paket. |
 
 {style="table-layout:fixed"}

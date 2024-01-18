@@ -9,9 +9,9 @@ role: User, Developer, Data Engineer
 level: Experienced
 keywords: sandlåda, resa, kopia, miljö
 exl-id: 8c63f2f2-5cec-4cb2-b3bf-2387eefb5002
-source-git-commit: b4fda6a0bd3e633811c16ef6dc3a3171b3b350c8
+source-git-commit: b7c31db7a126eb134c353e26c9e263a9bd1674a6
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Den här sidan beskriver hur du använder sandlådeverktyg i Journey Optimizer. 
 
 >[!NOTE]
 >
->Den här funktionen kräver följande behörigheter: manage-sandbox (eller view-sandbox) och manage-package.
+>Den här funktionen kräver följande behörigheter från **Sandlådeadministration** funktioner: Hantera sandlådor (eller Visa sandlådor) och Hantera paket. [Läs mer](../administration/ootb-permissions.md)
 
 ## Kom igång med sandlådeverktyg{#sandbox-gs}
 
