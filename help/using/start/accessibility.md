@@ -7,7 +7,7 @@ feature: Accessibility
 role: User
 level: Beginner
 exl-id: d971c04c-9b37-4cd7-8a2d-b915e394079b
-source-git-commit: 72e192538b6dd2f0cf50e4d6ce8d5b2b789308d4
+source-git-commit: b37ad6fd3eb41f7cdde28c24fefc13c8b676f803
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 2%
@@ -88,8 +88,7 @@ Du kan använda dessa kortkommandon i vissa områden i [!DNL Journey Optimizer] 
     <td>SKIFT + piltangenter</td>
   </tr>  
   <tr>
-
-<td rowspan="3">
+  <td rowspan="3">
   Konfigurationsruta för dessa element:
 <ul>
   <li>Aktivitet under en resa</li>
@@ -97,8 +96,7 @@ Du kan använda dessa kortkommandon i vissa områden i [!DNL Journey Optimizer] 
   <li>Datakälla</li>
   <li>Åtgärd</li>
 </ul>
-
-</td>
+  </td>
     <td>Flytta till nästa fält som ska konfigureras</td>
     <td>Tabb</td>
   </tr>
@@ -120,11 +118,7 @@ Du kan använda dessa kortkommandon i vissa områden i [!DNL Journey Optimizer] 
     <td>E</td>
   </tr>
   <tr>
-    <td>
-
-Utlös ett event i en målgruppsbaserad resa för vilken **[!UICONTROL Single profile at a time]** alternativ är aktiverat
-
-</td>
+    <td>Utlös ett event i en målgruppsbaserad resa för vilken **[!UICONTROL Single profile at a time]**-alternativet är aktiverat</td>
     <td>P</td>
   </tr>
   <tr>
