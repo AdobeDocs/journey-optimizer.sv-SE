@@ -12,10 +12,10 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: c2434086-2ed4-4cd0-aecd-2eea8f0a55f6
-source-git-commit: da90e817edac44712f6f137d13574165c834e53a
+source-git-commit: a5b3cd4eba18789d6014a7288ce6b0678a07982e
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 1%
+source-wordcount: '1513'
+ht-degree: 0%
 
 ---
 
@@ -82,9 +82,14 @@ Denna aktivitet utförs i rätt tid med hjälp av en leveransexpert som hjälper
 
 Innan du kan skapa en IP-uppvärmningsplan i [!DNL Journey Optimizer] måste du fylla i en Excel-mall med alla data som matar in planen.
 
-* I användargränssnittet kan du hämta den tomma Excel:n [Prenumerationsplanmall för IP-värmare](assets/IPWarmupPlan-Template.xlsx) fylla i.
+<!--
+* From the user interface you can download the blank Excel [IP warmup plan template](assets/IPWarmupPlan-Template.xlsx) to fill in.
 
-* Du kan även hämta en [exempelplan för IP-värmare](assets/IPWarmupPlan-Sample.xlsx) som redan har fyllts i med vissa data som du kan använda som exempel.
+* You can also download a [sample IP warmup plan](assets/IPWarmupPlan-Sample.xlsx) already filled in with some data you can use as an example.-->
+
+* I användargränssnittet kan du hämta den tomma mallen för IP-värmerappen för Excel för att fylla i den.
+
+* Du kan också hämta ett exempel på en IP-värmerapport som redan har fyllts i med vissa data som du kan använda som exempel.
 
 >[!CAUTION]
 >
@@ -265,7 +270,8 @@ Varje domän visas nu i en egen kolumn på samma rad.
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_upload"
 >title="Ange din IP-värmerammanslutning"
->abstract="Ladda ned CSV-mallen och fyll den med data för IP-värmare och målantal profiler."
+>abstract="Fyll i Excel-mallen med alla data som kommer att mata din plan, som IP-värmersfaser och målantal profiler, och överför den här."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/implement-ip-warmup-plan/ip-warmup-plan.html#prepare-file" text="Förbered filen för IP-warmup-planen"
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_surface"
