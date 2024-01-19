@@ -8,9 +8,9 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: underdomän, domän, e-post, marc, post
-source-git-commit: 49cb9734d66dc1aa2a3531c71a687aac00834d82
+source-git-commit: f9d3234a64ad659660c2d2c4ad24ab5c240cb857
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -20,31 +20,44 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_admin_dmarc_record"
 >title="Ange DMARC-posten"
->abstract="Ange DMARC-post för att undvika leveransproblem med Internet-leverantörer"
+>abstract="Ställ in DMARC-posten för att undvika leveransproblem med Internet-leverantörer. Som en del av deras branschledande praxis kräver både Google och Yahoo att du har en DMARC-post för alla domäner du använder för att skicka e-post till dem."
 
 >[!CAUTION]
 >
->Efter de senaste Gmail- och Yahoo-meddelandena om bulkavsändare har Journey Optimizer nu stöd för DMARC-autentiseringstekniken. //Du måste uppdatera alla underdomäner som du redan har skapat i instansen så att de inkluderar DMARC-stöd.//
+>Efter de senaste Gmail- och Yahoo-meddelandena om bulkavsändare har Journey Optimizer nu stöd för DMARC-autentiseringstekniken.
 
-Det är viktigt att du gör det senast 1 februari Dokument kommer snart
+<!--TO ADD TO AJO HOME PAGE (first tab)
 
-Startar
+>[!TAB Mandatory DMARC update]
 
-Du har två alternativ:
+As part of their enforcing industry best practices, Google and Yahoo will both be requiring that you have a DMARC record for any domain you use to send email to them, starting on **February 1st, 2024**. Make sure that you have DMARC record set up for all the subdomains that you have delegated to Adobe in Journey Optimizer.
 
-* Gör det nu på egen hand: konfigurera det med din IT-avdelning - när du vill
+[![image](using/assets/do-not-localize/learn-more-button.svg)](using/configuration/dmarc-record-update.md)
+-->
 
-* Gör det i AJO - men i så fall måste du vänta till 30 jan
+Som en del av deras branschledande praxis kommer Google och Yahoo att kräva att ni har en **DMARC-post** för alla domäner som du använder för att skicka e-post till dem. Det nya kravet börjar på **1 februari 2024**.
 
-   * Fullständig delegering: du kan göra det den 30 januari (AJO-version)
+Läs mer om Google och Yahoos krav i [det här avsnittet](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html?lang=en#dmarc%3A){target="_blank"}.
 
-   * CNAME planerar den hos IT-avdelningen så att den inte är tidskrävande, men du måste planera den
+>[!CAUTION]
+>
+>Om detta nya krav från Gmail och Yahoo inte uppfylls förväntas det leda till att e-postmeddelanden landar i skräppostmappen eller blockeras.
 
-Som en del av deras branschledande praxis kommer både Google och Yahoo att kräva att du har en DMARC-post för alla domäner du använder för att skicka e-post till dem. Det nya kravet börjar på **1 februari 2024**.
+Därför rekommenderar Adobe starkt att du har DMARC-posten inställd för alla underdomäner som du har delegerat till Adobe i [!DNL Journey Optimizer]. Följ något av de två alternativen nedan:
 
-Läs mer om Google och Yahoos krav på DMARC-registrering i [det här avsnittet](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html?lang=en#dmarc%3A){target="_blank"}.
+* Konfigurera DMARC i dina underdomäner eller i den överordnade domänen för dina underdomäner, **i din värdlösning**.
 
-Läs mer om ändringarna på Google och Yahoo på [den här sidan](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html?lang=en#dmarc%3A){target="_blank"}.
+* Konfigurera DMARC för dina delegerade underdomäner **med den nya funktionen i [!DNL Journey Optimizer] administrationsgränssnitt** - utan extra arbete med er värdlösning. [Läs mer](#implement-dmarc)
+
+  >[!CAUTION]
+  >
+  >Om du har konfigurerat [CNAME-delegering](delegate-subdomain.md#cname-subdomain-delegation) för dina sändande underdomäner, kommer det också att kräva att du deltar i din värdlösning. Se till att du samarbetar med din IT-avdelning så att de kan utföra uppdateringen så fort som [!DNL Journey Optimizer] finns (30 januari 2024). <!--and be ready on February 1st, 2024-->
+
+>[!NOTE]
+>
+>Läs mer om DMARC i [Handbok om bästa praxis för leverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html#about){target="_blank"} för att bättre förstå hur e-postleveransen påverkas.
+
+## Vad är DMARC?
 
 DMARC, som står för **Domänbaserad meddelandeautentisering, rapportering och överensstämmelse**, är ett autentiseringsprotokoll för e-post som hjälper till att skydda mot e-postförfalskning, nätfiske och andra bedrägliga aktiviteter.
 
@@ -61,21 +74,26 @@ DMARC, som står för **Domänbaserad meddelandeautentisering, rapportering och 
 
 När du konfigurerar en DMARC-post lägger du till en DNS TXT-post i domänens DNS-inställningar. Den här posten anger din DMARC-princip, till exempel om meddelanden som inte kan autentiseras ska karantäneras eller avvisas. Implementering av DMARC är ett proaktivt steg mot att förbättra e-postsäkerheten och skydda både organisationen och mottagarna mot e-postbaserade hot.
 
-[Läs mer om DMARC i Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html#about){target="_blank"} för att bättre förstå hur DMARC påverkar e-postleveransen.
+## Implementera DMARC {#implement-dmarc}
 
-Om du inte lägger till DMARC sätts du i karantän (åtminstone).
+* Om du inte lägger till DMARC sätts du i karantän (åtminstone).
 
-kontrollera att du har en äkta inkorg där du kan ta emot - du hanterar den här inkorgen (bör inte vara Adobe inkorg)
+* Se till att du har en äkta inkorg där du kan ta emot - du hanterar den här inkorgen (bör inte vara Adobe inkorg)
 
-Rekommendationen är 24 eftersom du vanligtvis, om den är mindre, utvärderar din kapacitet/kontrollerar din > chatt-GPT
+Rekommendationen är 24 eftersom det här i allmänhet är vad internetleverantörer har.
+om inte, utvärdera din kapacitet/kontrollera din > chatt-GPT
 
-Google och Yahoo, och förmodligen alla andra viktiga internetleverantörer
+Om en DMARC-post identifieras kan du kopiera och klistra in samma värden som listas eller ändra dem vid behov.
+
+Om du inte anger något kommer standardvärden att användas.
+
+### Fullt delegerade underdomäner
+
+### Underdomäner som delegerats med CNAME
 
 för CNAME i versionsflödet måste du hämta CSV-filen igen (inte för helt delegerade)
 
-ny DMARC-post
 
-In RN > put it first All subdomains must update with DMARC support
 
 
 

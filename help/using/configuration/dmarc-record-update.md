@@ -8,9 +8,11 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: underdomän, domän, e-post, marc, post
-source-git-commit: 7cbd6a9e80a8d6b87b3c3011db80549a3b5f6e73
+hide: true
+hidefromtoc: true
+source-git-commit: f9d3234a64ad659660c2d2c4ad24ab5c240cb857
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -20,7 +22,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_admin_dmarc_banner_link"
 >title="Läs mer om obligatorisk DMARC-uppdatering"
->abstract="Som en del av deras branschledande praxis kommer Google och Yahoo att kräva att ni har en **DMARC-post** för alla domäner som du använder för att skicka e-post till dem. Det nya kravet börjar på **1 februari 2024**. <br>Därför rekommenderar Adobe starkt att du har DMARC-posten inställd för alla underdomäner som du har delegerat till Adobe i Journey Optimizer."
+>abstract="Som en del av deras branschledande praxis kommer Google och Yahoo att kräva att ni har en **DMARC-post** för alla domäner som du använder för att skicka e-post till dem, med början på **1 februari 2024**. <br>Därför måste du se till att du har DMARC-posten inställd för alla underdomäner som du har delegerat till Adobe i Journey Optimizer."
 
 Som en del av deras branschledande praxis kommer Google och Yahoo att kräva att ni har en **DMARC-post** för alla domäner som du använder för att skicka e-post till dem. Det nya kravet börjar på **1 februari 2024**.
 
@@ -32,9 +34,9 @@ Läs mer om Google och Yahoos krav i [det här avsnittet](https://experienceleag
 
 Därför rekommenderar Adobe starkt att du har DMARC-posten inställd för alla underdomäner som du har delegerat till Adobe i [!DNL Journey Optimizer]. Följ något av de två alternativen nedan:
 
-* Konfigurera DMARC i dina underdomäner eller i den överordnade domänen för dina underdomäner, **i din värdlösning**.
+* Konfigurera DMARC i dina underdomäner eller i den överordnade domänen för dina underdomäner, **i din värdlösning**. Du kan göra det från och med nu.
 
-* Konfigurera DMARC för dina delegerade underdomäner **med den kommande funktionen i [!DNL Journey Optimizer] administrationsgränssnitt** - utan extra arbete med er värdlösning.
+* Konfigurera DMARC för dina delegerade underdomäner **med den kommande funktionen i [!DNL Journey Optimizer] administrationsgränssnitt** - utan extra arbete med er värdlösning. Den här funktionen kommer att vara tillgänglig den 30 januari 2024.
 
   >[!CAUTION]
   >
