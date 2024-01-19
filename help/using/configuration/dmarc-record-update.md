@@ -1,59 +1,76 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: DMARC-post
-description: Lär dig hur du ställer in DMARC-post i Journey Optimizer
+title: Obligatorisk DMARC-uppdatering
+description: Läs varför och när du måste ange en DMARC-post i Journey Optimizer
 feature: Subdomains, Channel Configuration
 topic: Administration
 role: Admin
 level: Experienced
 keywords: underdomän, domän, e-post, marc, post
-hide: true
-hidefromtoc: true
-source-git-commit: 5565c98e41e0abc9ae93f85cb12679e372e6d36f
+source-git-commit: 49cb9734d66dc1aa2a3531c71a687aac00834d82
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
 
-# DMARC-post viktig uppdatering{#dmarc-record}
+# Obligatorisk DMARC-uppdatering {#dmarc-record-update}
 
+>[!CONTEXTUALHELP]
+>id="ajo_admin_dmarc_banner_link"
+>title="Läs mer om obligatorisk DMARC-uppdatering"
+>abstract="Som en del av deras branschledande praxis kommer Google och Yahoo att kräva att ni har en **DMARC-post** för alla domäner som du använder för att skicka e-post till dem. Det nya kravet börjar på **1 februari 2024**. <br>Därför rekommenderar Adobe starkt att du har DMARC-posten inställd för alla underdomäner som du har delegerat till Adobe i Journey Optimizer."
+
+Som en del av deras branschledande praxis kommer Google och Yahoo att kräva att ni har en **DMARC-post** för alla domäner som du använder för att skicka e-post till dem. Det nya kravet börjar på **1 februari 2024**.
 
 >[!CAUTION]
 >
->Efter de senaste Gmail- och Yahoo-meddelandena om bulkavsändare har Journey Optimizer nu stöd för DMARC-autentiseringstekniken.
+>Om detta nya krav från Gmail och Yahoo inte uppfylls förväntas det leda till att e-postmeddelanden landar i skräppostmappen eller blockeras.
 
-Som en del av deras branschledande praxis kommer både Google och Yahoo att kräva att du har en DMARC-post för alla domäner du använder för att skicka e-post till dem. Det nya kravet börjar på **1 februari 2024**.
+Läs mer om Google och Yahoos krav i [det här avsnittet](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html?lang=en#dmarc%3A){target="_blank"}.
 
-Läs mer om Google och Yahoos krav på DMARC-registrering i [det här avsnittet](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html?lang=en#dmarc%3A){target="_blank"}.
+Därför rekommenderar Adobe starkt att du har DMARC-posten inställd för alla underdomäner som du har delegerat till Adobe i [!DNL Journey Optimizer]. Följ något av de två alternativen nedan:
 
-Läs mer om ändringarna på Google och Yahoo på [den här sidan](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html?lang=en#dmarc%3A){target="_blank"}.
+* Konfigurera DMARC i dina underdomäner eller i den överordnade domänen för dina underdomäner, **i din värdlösning**.
 
-Därefter får du en åtgärd eller nästa steg för ditt avsnitt där det ska stå:
+* Konfigurera DMARC för dina delegerade underdomäner **med den kommande funktionen i [!DNL Journey Optimizer] administrationsgränssnitt** - utan extra arbete med er värdlösning.
 
-Du måste konfigurera den för alla dina underdomäner
-* Om du har delegerat domänen till oss har du två alternativ
-   * Konfigurera DMARC på den överordnade domänen för den delegerade domänen i din värdlösning, ELLER
-   * Konfigurera DMARC för delegerad domän med hjälp av den kommande funktionen i administratörsgränssnittet utan extra arbete med värdlösningar
-* Om du har konfigurerat CNAME för de sändande domänerna har du två alternativ
-   * Konfigurera DMARC på underdomänen ELLER den överordnade domänen till underdomänen i din värdlösning, ELLER
-   * Konfigurera DMARC med den kommande funktionen i administratörsgränssnittet. Men det kommer inte bara att kräva vårt användargränssnitt, utan också att vi måste vara med i en värdlösning.
+  >[!WARNING]
+  >
+  >Om du har konfigurerat [CNAME-delegering](delegate-subdomain.md#cname-subdomain-delegation) för dina sändande underdomäner, kommer det också att kräva att du deltar i din värdlösning. Se till att du samarbetar med din IT-avdelning så att de kan utföra uppdateringen så fort som [!DNL Journey Optimizer] finns (30 januari 2024). <!--and be ready on February 1st, 2024-->
 
-Mer information om vår kommande funktion kommer snart.
+  Mer information om [!DNL Journey Optimizer] DMARC kommer snart.
 
-Dessutom kan du inkludera effekten om den inte ställs in genom att kopiera det avsnitt som är relevant för DMARC från nedanstående avsnitt (kopierat från länken ovan). Antingen drar vi ut bara DMARC-relaterade saker. Eller här kan du informera om att det är DMARC och att det bara finns en klickning under och här är den senaste tidslinjen för båda funktionerna.
+<!--
+* If you have [fully delegated](delegate-subdomain.md#full-subdomain-delegation) your sending subdomains to Adobe, follow either one of the two options below:
 
-Uppdateringar av tidslinjer har gjorts sedan det ursprungliga meddelandet i oktober.
+    * Set up DMARC on your subdomains or on the parent domain of your subdomains **in your hosting solution**.
 
-De senaste tidslinjerna ser ut så här:
+    * Set up DMARC on your delegated subdomains **using the upcoming feature in the [!DNL Journey Optimizer] administration UI** - with no extra work on your hosting solution.
 
-Gmail:
+* If you have set up [CNAME delegation](delegate-subdomain.md#cname-subdomain-delegation) for your sending subdomains, follow either one of the two options below:
+    * Set up DMARC on your subdomains or on the parent domain of your subdomains **in your hosting solution**.
+    * Set up DMARC on your delegated subdomains **using the upcoming feature in the [!DNL Journey Optimizer] administration UI**. However, it will also require entry in your hosting solution. Consequently, make sure you coordinate with your IT department so that they can perform the update as soon as the [!DNL Journey Optimizer] feature is available (on January, 30) - and be ready on February 1st, 2024.
+    
+-->
 
-* Februari 2024 - Tillfälliga studsar avsedda att varna för bristande efterlevnad börjar. E-postmeddelanden kommer fortfarande att levereras som vanligt efter en kort fördröjning om du ännu inte uppfyller kraven. Om ni uppfyller alla krav kommer det inte att finnas några tillfälliga studsar och ni kommer inte att märka någonting.
-* April 2024 - Blocken börjar för avsändare som inte uppfyller allt utom List-Unsubscribe 1-Click. Endast en del av e-postmeddelandet som inte uppfyller kraven blockeras först, där procentandelen blockeras med tiden.
-* 1 juni 2024 - Alla avsändare som inte uppfyller alla krav, inklusive List-Unsubscribe 1-Click, blockeras.
+>[!NOTE]
+>
+>Om du har frågor eller behöver support kontaktar du Adobe Deliverability Consultant eller din Adobe-representant.
 
-Yahoo:
+De senaste tidslinjer som delas av Google och Yahoo är följande:
 
-Har inte angett några exakta datum, men har sagt att&quot;genomförandet av lagstiftningen kommer att börja i februari 2024. Tvingande åtgärder kommer att successivt sättas ut&quot;.
+* Google:
+
+   * **Februari 2024** - Tillfälliga studsar avsedda att varna för bristande efterlevnad börjar. E-postmeddelanden kommer fortfarande att levereras som vanligt efter en kort fördröjning om du ännu inte uppfyller kraven. Om ni uppfyller alla krav kommer det inte att finnas några tillfälliga studsar och ni kommer inte att påverkas.
+
+   * **April 2024** - Blocken börjar för avsändare som inte uppfyller DMARC-kraven. Endast en del av e-postmeddelandet som inte uppfyller kraven blockeras först, och procentandelen blockerad ökar med tiden.
+
+   * **1 juni 2024** - Avsändare som inte uppfyller alla krav blockeras.
+
+* Yahoo har inte angett några exakta datum, men har sagt att &quot;genomförandet börjar i februari 2024. Tvingande åtgärder kommer att successivt sättas ut&quot;.
+
+>[!NOTE]
+>
+>Läs mer om DMARC i [Handbok om bästa praxis för leverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html#about){target="_blank"} för att bättre förstå hur implementering av DMARC påverkar e-postleveransen.

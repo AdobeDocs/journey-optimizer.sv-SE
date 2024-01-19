@@ -8,7 +8,7 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: underdomän, domän, e-post, marc, post
-source-git-commit: 5565c98e41e0abc9ae93f85cb12679e372e6d36f
+source-git-commit: 49cb9734d66dc1aa2a3531c71a687aac00834d82
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 0%
@@ -61,7 +61,7 @@ DMARC, som står för **Domänbaserad meddelandeautentisering, rapportering och 
 
 När du konfigurerar en DMARC-post lägger du till en DNS TXT-post i domänens DNS-inställningar. Den här posten anger din DMARC-princip, till exempel om meddelanden som inte kan autentiseras ska karantäneras eller avvisas. Implementering av DMARC är ett proaktivt steg mot att förbättra e-postsäkerheten och skydda både organisationen och mottagarna mot e-postbaserade hot.
 
-[Läs mer om DMARC i Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=sv){target="_blank"} för att bättre förstå hur DMARC påverkar e-postleveransen.
+[Läs mer om DMARC i Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html#about){target="_blank"} för att bättre förstå hur DMARC påverkar e-postleveransen.
 
 Om du inte lägger till DMARC sätts du i karantän (åtminstone).
 
