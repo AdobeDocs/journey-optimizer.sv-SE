@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: underdomän, delegering, domän, DNS
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: 5565c98e41e0abc9ae93f85cb12679e372e6d36f
+source-git-commit: ff7494b5f9ece7943aecf2628c6a338e9ee7d4b0
 workflow-type: tm+mt
-source-wordcount: '1788'
+source-wordcount: '1710'
 ht-degree: 4%
 
 ---
@@ -85,8 +85,6 @@ Följ stegen nedan om du vill delegera en ny underdomän till Adobe helt:
    >
    >Du kan skapa posterna och skicka konfigurationen för underdomänen senare med **[!UICONTROL Save as draft]** -knappen. Du kan sedan återuppta delegeringen av underdomäner genom att öppna den från listan över underdomäner.
 
-1. Om underdomänen inte har DMARC-poster kan du ange dem här. Om underdomänen hade befintliga DMARC-poster och om de hämtades av [!DNL Journey Optimizer]kan du använda samma värden eller ändra dem efter behov. Läs mer
-
 1. När den fullständiga underdomänsdelegeringen har skickats visas underdomänen i listan med **[!UICONTROL Processing]** status. Mer information om underdomänernas status finns i [det här avsnittet](about-subdomain-delegation.md#access-delegated-subdomains).
 
    ![](assets/subdomain-processing.png)
@@ -156,8 +154,6 @@ Följ stegen nedan för att delegera en underdomän med CNAME:
    >[!NOTE]
    >
    >Du kan skapa posterna senare med **[!UICONTROL Save as draft]** -knappen. Du kan sedan återuppta delegeringen av underdomäner i det här skedet genom att öppna den från listan över underdomäner.
-
-1. Om underdomänen inte har DMARC-poster kan du ange dem här. Om underdomänen hade befintliga DMARC-poster och om de hämtades av [!DNL Journey Optimizer]kan du använda samma värden eller ändra dem efter behov. Läs mer
 
 1. Vänta tills Adobe verifierar att dessa poster genereras utan fel i värdlösningen. Den här processen kan ta upp till 2 minuter.
 
