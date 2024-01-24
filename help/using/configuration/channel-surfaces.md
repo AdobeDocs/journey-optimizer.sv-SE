@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 8db5ae5b3cbef245dfe7cd11a95355c072bc3ef8
+source-git-commit: 00da20f3d51ce1032cb6908641048b377cc1a192
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1567'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Med [!DNL Journey Optimizer]kan du konfigurera kanalytor (t.ex. meddelandeförin
 >
 > * Om du vill skapa, redigera och ta bort kanalytor måste du ha [Hantera meddelandeförinställningar](../administration/high-low-permissions.md#administration-permissions) behörighet.
 >
-> * Du måste utföra [E-postkonfiguration](../email/get-started-email-config.md), [Push-konfiguration](../push/push-configuration.md) och [SMS-konfiguration](../sms/sms-configuration.md) innan du skapar kanalytor.
+> * Du måste utföra [E-postkonfiguration](../email/get-started-email-config.md), [Push-konfiguration](../push/push-configuration.md), [SMS-konfiguration](../sms/sms-configuration.md) och [Konfiguration av direktreklam](../direct-mail/direct-mail-configuration.md) innan du skapar kanalytor.
 
 När kanalytorna har konfigurerats kan du välja dem när du skapar meddelanden från en resa eller en kampanj.
 
