@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: d88daa58-20af-4dac-ae5d-4c10c1db6956
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 5d20a720ddfb2907a1f3ebaff3c67b9f5628f9d7
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 4%
+source-wordcount: '614'
+ht-degree: 1%
 
 ---
 
@@ -109,7 +109,7 @@ The **Action parameters** section has been renamed **Payloads**. Two fields are 
 
    ![](assets/action-response4.png){width="80%" align="left"}
 
-   Varje gång API:et anropas hämtas alla fält som ingår i exemplets nyttolast.
+   Varje gång API anropas hämtas alla fält som ingår i nyttolastexemplet.
 
 1. Vi lägger också till customerID som frågeparameter.
 
@@ -200,6 +200,16 @@ Här är några exempel:
  @action{<action name>.<path to the field>, defaultValue: <default value expression>}
  @action{ActionLoyalty.points, defaultValue: 0}
  @action{ActionLoyalty.points, defaultValue: @{myEvent.newPoints}}
+```
+
+När du hanterar samlingar i ett anpassat åtgärdssvar kan du förlita dig på &quot;currentActionField&quot; för att få åtkomst till det aktuella objektet:
+
+```json
+count(
+@action{MyAction.MyCollection.all(
+currentActionField.description == "abc"
+)}
+)
 ```
 
 Mer information om fältreferenser finns i [det här avsnittet](../building-journeys/expression/field-references.md).
