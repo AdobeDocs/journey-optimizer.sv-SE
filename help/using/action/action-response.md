@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: d88daa58-20af-4dac-ae5d-4c10c1db6956
-source-git-commit: 5d20a720ddfb2907a1f3ebaff3c67b9f5628f9d7
+source-git-commit: 410db8a56781c5442122f92fa692a3ce4e03a5f9
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 1%
+source-wordcount: '619'
+ht-degree: 3%
 
 ---
 
@@ -212,4 +212,9 @@ currentActionField.description == "abc"
 )
 ```
 
-Mer information om fältreferenser finns i [det här avsnittet](../building-journeys/expression/field-references.md).
+## Ytterligare resurser
+
+Mer information finns på följande sidor:
+
+* [Fältreferenser](../building-journeys/expression/field-references.md).
+* [Funktioner för att hantera samlingar](../building-journeys/expression/collection-management-functions.md)
