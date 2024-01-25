@@ -8,7 +8,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: fråga, samlingar, funktioner, nyttolast, resa
 exl-id: 09b38179-9ace-4921-985b-ddd17eb64681
-source-git-commit: 7204b475dffe9977a7af6b633cdd92a50fa39a64
+source-git-commit: 5812ca4974ca52073ede993063217ab4453ba2b7
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 0%
@@ -171,8 +171,7 @@ The result will be:
 >
 >**[!UICONTROL currentEventField]** är endast tillgängligt när du hanterar händelsesamlingar, **[!UICONTROL currentDataPackField]** när du hanterar datakällsamlingar och **[!UICONTROL currentActionField]** när du hanterar egna åtgärdssvarssamlingar.
 >
->Vid bearbetning av samlingar med **[!UICONTROL all]**, **[!UICONTROL first]** och **[!UICONTROL last]**, vi
->slinga för varje element i samlingen ett i taget. **[!UICONTROL currentEventField]**, **currentDataPackField** och **[!UICONTROL currentActionField]** motsvarar elementet som repeteras.
+>Vid bearbetning av samlingar med **[!UICONTROL all]**, **[!UICONTROL first]** och **[!UICONTROL last]**, slingrar vi varje element i samlingen ett i taget. **[!UICONTROL currentEventField]**, **currentDataPackField** och **[!UICONTROL currentActionField]** motsvarar elementet som repeteras.
 
 **Funktionerna &quot;first(`<condition>`)&quot; och&quot;last(`<condition>`)&quot;**
 
