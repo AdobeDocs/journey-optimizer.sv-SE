@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: b9d70bf2b3e16638a03b59fd4036771ad959a631
+source-git-commit: 31d9189e8afd732875556b9caaa8e874f53597bb
 workflow-type: tm+mt
-source-wordcount: '4254'
+source-wordcount: '4291'
 ht-degree: 14%
 
 ---
@@ -25,6 +25,7 @@ På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Op
 * Tidsgränsen för resan har beskrivits [i följande avsnitt](../building-journeys/journey-gs.md#global_timeout).
 * Journey Optimizer [dokumentation, startsida](../../ajo-home.md) sidan har fått en ny design.
 * Recommendations om aktiviteten Uppdatera profiler har lagts till. [Läs mer](../building-journeys/update-profiles.md)
+* Information har lagts till om beteendet för tidsgränser för händelseaktiviteter under resor. Om ingen händelse tas emot under den angivna tidsgränsen fortsätter den enskilda personen resan om ingen tidsgräns anges. [Läs mer](../building-journeys/general-events.md#events-specific-time)
 
 ## November 2023 {#nov-2023}
 
