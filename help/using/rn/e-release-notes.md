@@ -10,10 +10,10 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 6683bfbb5569d197a2a746620cd7edc10f45b5d1
+source-git-commit: ad00f6c43e66a221385a83b8e6710fddd64233f2
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 4%
+source-wordcount: '470'
+ht-degree: 3%
 
 ---
 
@@ -25,7 +25,7 @@ Noteringarna nedan kan ändras utan föregående meddelande fram till releasedat
 
 ## Versionsinformation januari 2024 {#oct-jan-2024}
 
-**Releasedatum**: 20-31 januari 2024
+**Releasedatum**: 30-31 januari 2024
 
 ### Nya funktioner{#jan-2024-features}
 
@@ -57,7 +57,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Rapporter**
 
-* **Kanalrapporter per domän** - Nya widgetar har lagts till för att förbättra kampanjrapporten och reserapporten. The **Studsa orsaker efter domän**, **Skickat och levererat av domäner**, **Öppnar och klickar per domän** och **Studsa och fel efter domän** widgetar ger en detaljerad beskrivning på domännivå för viktiga e-postleveranser och spårningsvärden. [Läs mer](../reports/channel-report.md)
+* **Kanalrapporter per domän** - Nya widgetar har lagts till för att förbättra kampanjrapporten och reserapporten. The **Studsa orsaker efter domän**, **Skickat och levererat av domäner**, **Öppnar och klickar per domän** och **Studsa och fel efter domän** widgetar ger en detaljerad beskrivning på domännivå för viktiga e-postleveranser och spårningsvärden.
 
 **SMS-kanal**
 
@@ -67,7 +67,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Resor**
 
-* **Varaktighet för reaktionshändelser** - Den maximala varaktighet som du kan definiera i **Reaktionshändelser** är nu 29 dagar i stället för 30. [Läs mer](../building-journeys/reaction-events.md)
+* **Varaktighet för reaktionshändelser** - Den maximala varaktighet som du kan definiera i **Reaktionshändelser** är nu 29 dagar i stället för 30.
 
 * **Datumfilter** - Du kan nu använda anpassade datum för att filtrera reselagret, utöver de befintliga fördefinierade datumfiltren. På så sätt kan du förfina listan genom att visa resor som publicerats ett visst datum, inom en viss månad, under ett helt år eller inom angivna tidsintervall.
 
