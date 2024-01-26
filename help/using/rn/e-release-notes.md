@@ -10,10 +10,10 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 004eb41b084f32993ec437f589e4e3d2cf7500d3
+source-git-commit: 6683bfbb5569d197a2a746620cd7edc10f45b5d1
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 3%
+source-wordcount: '474'
+ht-degree: 4%
 
 ---
 
@@ -23,98 +23,61 @@ ht-degree: 3%
 
 Noteringarna nedan kan ändras utan föregående meddelande fram till releasedatum. Länkar, skärmar och uppdaterad dokumentation publiceras i [versionsinformation](release-notes.md), på releasedatum.
 
-## Versionsinformation oktober 2023 {#oct-rn-2023}
+## Versionsinformation januari 2024 {#oct-jan-2024}
 
-**Releasedatum**: 25-26 okt 2023
+**Releasedatum**: 20-31 januari 2024
 
-### Nya funktioner{#oct-2023-features}
+### Nya funktioner{#jan-2024-features}
 
 Den här versionen innehåller de nya funktionerna som listas nedan.
 
-<table>
-<thead>
-<tr>
-<th><strong>Verktyg i sandlådan</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Med sandlådeverktygen kan du kopiera objekt över flera sandlådor genom att utnyttja export och import av paket. Ett paket kan bestå av ett eller flera objekt. Alla objekt som ingår i ett paket måste komma från samma sandlåda.</p>
-<!--img src="../data/assets/dataset-export-setup.png"-->
-<!--p>For more information, refer to the <a href="../audience/get-started-audience-orchestration.md">detailed documentation</a>.</p-->
-</td>
-</tr>
-</tbody>
-</table>
-
-<!-- table>
-<thead>
-<tr>
-<th><strong>Composed audiences in journeys</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now use audiences created in composition workflows in your journeys to target customers. Once an audience composition is published, and the audience saved, use a Read Audience activity to select this new audience in your journey canvas.</p>
-<img src="assets/channel-reports.png"/>
-<p>For more information, refer to the <a href="../audience/get-started-audience-orchestration.md">detailed documentation</a>.</p>
-</tr>
-</tbody>
-</table -->
 
 <table>
 <thead>
 <tr>
-<th><strong>MMS (Multimedia Message Service) i SMS (Beta)</strong><br/></th>
+<th><strong>Uppdateringar om leveransbarhet</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Med SMS-kanalen kan du nu förbättra kommunikationen genom att skicka MMS-meddelanden (Multimedia Message Service) som gör det möjligt att dela bilder, GIF eller videor med dina kunder. Observera att den här funktionen för närvarande endast är tillgänglig i Beta med Sinch.</p>
+<p>Journey Optimizer stöder nu tekniken för DMARC-autentisering.</p>
+<p>Från och med 1 februari 2024, Google och Yahoo! kommer att kräva att du har en DMARC-post för alla domäner som du använder för att skicka e-post till dem. Se till att du har ställt in DMARC-posten för alla underdomäner som du har delegerat eller delegerat till Adobe i Journey Optimizer.</p>
 <!--img src="assets/channel-reports.png"/-->
-<!--p>For more information, refer to the <a href="../in-app/get-started-in-app.md">detailed documentation</a>.</p-->
+<p>Mer information finns i den <a href="../configuration/dmarc-record-update.md">detaljerade dokumentationen</a>.</p>
 </tr>
 </tbody>
 </table>
 
-### Förbättringar {#oct-2023-improvements}
+
+
+### Förbättringar {#jan-2024-improvements}
 
 Den här versionen innehåller de förbättringar som anges nedan.
 
-**Publiker**
+**Rapporter**
 
-* Nu kan ni rikta in er på målgrupper som överförts från en CSV-fil till resor och kampanjer.
-* Nu kan ni inrikta er på målgrupper som skapats genom målgruppssammansättning och utnyttja anrikningsattribut i Journeys.
+* **Kanalrapporter per domän** - Nya widgetar har lagts till för att förbättra kampanjrapporten och reserapporten. The **Studsa orsaker efter domän**, **Skickat och levererat av domäner**, **Öppnar och klickar per domän** och **Studsa och fel efter domän** widgetar ger en detaljerad beskrivning på domännivå för viktiga e-postleveranser och spårningsvärden. [Läs mer](../reports/channel-report.md)
 
->[!AVAILABILITY]
->
->Dessa funktioner är för närvarande tillgängliga som en privat beta.
+**SMS-kanal**
 
-<!--
-**Spam scoring for emails**
+* **Dubbel anmälan** - Arbetsflödet för dubbel anmälan för SMS garanterar att användare uttryckligen väljer att ta emot meddelanden när begäran initieras från sin enhet. Användarna initierar godkännandeprocessen genom att skicka ett inkommande SMS-meddelande. När de har bekräftat sitt samtycke skickas ett uppföljningsmeddelande med en begäran om slutlig verifiering. Om en användarprofil inte finns skapas den när den har bekräftats.
 
-* When simulating an email content, a new option enables you to check how your content performs against inboxes spam filtering. This feature is currently proposed to a set of customers only (Limited Availability), and available for the Email channel.-->
-
-**Kampanjer**
-
-<!--* You can now stop a live one-time campaign, make modifications and resume it again. This improvement is available in Beta.-->
-* När ett fel inträffar inom en av era kampanjer visas nu en varningsikon i kampanjlistan tillsammans med kampanjens status.
+  Observera att detta endast gäller SMS-leverantörer för Sinch och Infobip.
 
 **Resor**
 
-* Den längsta väntetid du kan ange är nu 29 dagar i stället för 30. Detta gäller
+* **Varaktighet för reaktionshändelser** - Den maximala varaktighet som du kan definiera i **Reaktionshändelser** är nu 29 dagar i stället för 30. [Läs mer](../building-journeys/reaction-events.md)
 
-   * den **Tidsmängd** fältet i [vänteaktivitet](../building-journeys/wait-activity.md)
-   * den **Vänteperiod för återinträde** in [egenskaper för resa](../building-journeys/journey-gs.md#entrance)
-   * den **Vänta på** fält i timeout-definitionen för [allmän](../building-journeys/general-events.md#events-specific-time) och [reaktion](../building-journeys/reaction-events.md) händelser.
+* **Datumfilter** - Du kan nu använda anpassade datum för att filtrera reselagret, utöver de befintliga fördefinierade datumfiltren. På så sätt kan du förfina listan genom att visa resor som publicerats ett visst datum, inom en viss månad, under ett helt år eller inom angivna tidsintervall.
 
-**Medgivande i kanalkonfiguration**
+* **Läsa målgrupper**  - Aktiviteten Läs målgrupp är nu beroende av data om profilögonblicksbilder för gruppsegment, som bara genereras en gång, en dag efter att det schemalagda dagliga batchjobbet körs.
 
-* Nu kan du välja en marknadsföringsåtgärd på kanalnivå. När de används på en yta används alla medgivandepolicyer som är kopplade till den marknadsföringsåtgärden för att ta hänsyn till kundernas önskemål.
+**Frekvensregler**
 
-**Beslutshantering**
+* **Frekvensbegränsning varje vecka och dag** - Du kan nu ange maximalt antal meddelanden som skickas till en kundprofil under en vecka eller en dag, utöver månaden. Frekvensbegränsningen baseras på den valda kalenderperioden och återställs i början av motsvarande tidsram.
 
-* Flera etiketter som rör anbudsbegränsning i beslutsgränssnittet har uppdaterats.
+
+**Beslutsledning**
+
+* **Frequency caping on Edge** - Räknaren för frekvensbegränsning har nu uppdaterats och är tillgänglig i ett beslut av Edge Decisioning API på mindre än 3 sekunder.
