@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 49cb9734d66dc1aa2a3531c71a687aac00834d82
+source-git-commit: a153960d083cbeab8beca30733832a9df8af9cbc
 workflow-type: tm+mt
-source-wordcount: '1724'
+source-wordcount: '1728'
 ht-degree: 30%
 
 ---
@@ -357,7 +357,7 @@ ht-degree: 30%
    + Leverans {#deliverability}
       + [Kom igång med leverans](using/reports/deliverability.md)
       + [Förstå listan över inaktiveringar](using/reports/suppression-list.md)
-      + [Obligatorisk DMARC-uppdatering](using/configuration/dmarc-record-update.md)
+      + [Nytt DMARC-krav](using/configuration/dmarc-record-update.md)
    + [Felorsaker](using/reports/error-list.md)
    + [Larm](using/reports/alerts.md)
    + [Arbeta med Customer Journey Analytics](using/reports/cja-ajo.md)
@@ -526,6 +526,7 @@ ht-degree: 30%
    + Delegera e-postunderdomäner {#delegate-subdomains}
       + [Kom igång med delegering till underdomäner](using/configuration/about-subdomain-delegation.md)
       + [Delegera en underdomän](using/configuration/delegate-subdomain.md)
+      + [Ställ in DMARC-post](using/configuration/dmarc-record.md)
       + [Lägg till en Google TXT-post](using/configuration/google-txt.md)
       + [Få åtkomst till och redigera PTR-poster](using/configuration/ptr-records.md)
       + [Skapa IP-pooler](using/configuration/ip-pools.md)

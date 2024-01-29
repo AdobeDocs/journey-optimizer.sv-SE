@@ -8,9 +8,11 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: underdomän, domän, e-post, marc, post
-source-git-commit: 7d5a2a9b80110505688b5bfda2e286c7a6432441
+hide: true
+hidefromtoc: true
+source-git-commit: a153960d083cbeab8beca30733832a9df8af9cbc
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '1360'
 ht-degree: 0%
 
 ---
@@ -19,21 +21,49 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_dmarc_record"
->title="Ange DMARC-posten"
->abstract="Ställ in DMARC-posten för att undvika leveransproblem med Internet-leverantörer. Som en del av deras branschledande praxis kräver både Google och Yahoo att du har en DMARC-post för alla domäner du använder för att skicka e-post till dem."
+>title="Ange DMARC-post"
+>abstract="DMARC är en autentiseringsmetod för e-post som gör att domänägare kan skydda sin domän från obehörig användning och undvika leveransproblem med postlådeprovidrar.<br>Som en del av deras branschledande praxis kräver både Google och Yahoo att du har en DMARC-post för alla domäner du använder för att skicka e-post till dem."
 
->[!CAUTION]
+## Vad är DMARC? {#what-is-dmarc}
+
+DMARC, som står för **Domänbaserad meddelandeautentisering, rapportering och överensstämmelse**, är en autentiseringsmetod för e-post som gör att domänägare kan skydda sin domän från obehörig användning. Genom att erbjuda en tydlig profil till e-postleverantörer/Internet-leverantörer hjälper den till att förhindra att oseriösa aktörer skickar e-postmeddelanden som påstår sig vara från din domän. Detta kan minska riskerna för att legitima e-postmeddelanden markeras som skräppost eller avvisas och förbättra e-postleveransen.
+
+DMARC erbjuder också rapporter om meddelanden som inte kan autentiseras, tillsammans med kontroll över hanteringen av e-postmeddelanden som inte godkänns vid DMARC-validering. Beroende på implementerat [DMARC-policy](#dmarc-policies)kan dessa e-postmeddelanden övervakas, ställas i karantän eller avvisas. Dessa funktioner gör att du kan vidta åtgärder för att minska och åtgärda potentiella fel.
+
+<!--To help you prevent deliverability issues by allowing ISPs to authenticate your sending domains - while gaining visibility and control over mail that fail this authentication, [!DNL Journey Optimizer] will soon be supporting the DMARC technology directly in its administration interface.-->
+
+För att förhindra leveransproblem och samtidigt få kontroll över e-post som inte kan autentiseras, [!DNL Journey Optimizer] kommer snart att stödja DMARC-tekniken direkt i administrationsgränssnittet. [Läs mer](#implement-dmarc)
+
+### Hur fungerar DMARC? {#how-dmarc-works}
+
+SPF och DKIM används båda för att associera ett e-postmeddelande med en domän och fungerar tillsammans för att autentisera e-post. DMARC tar det här steget längre och hjälper till att förhindra förfalskning genom att matcha domänen som kontrolleras av DKIM och SPF.
+
+>[!NOTE]
 >
->Efter de senaste Gmail- och Yahoo-meddelandena om bulkavsändare har Journey Optimizer nu stöd för DMARC-autentiseringstekniken.
+>I Journey Optimizer är SPF och DKIM konfigurerade för dig.
 
-<!--TO ADD TO AJO HOME PAGE (first tab)
+För att skicka DMARC måste ett meddelande skicka SPF eller DKIM:
 
->[!TAB Mandatory DMARC update]
+* SPF (Sender Policy Framework) hjälper till att verifiera att e-postmeddelandet kommer från en auktoriserad källa genom att kontrollera den avsändande serverns IP-adress mot en lista över auktoriserade IP-adresser för domänen.
+* DKIM (DomainKeys Identified Mail) lägger till en digital signatur i e-postmeddelanden, vilket gör att mottagaren kan verifiera meddelandets integritet och autenticitet.
 
-As part of their enforcing industry best practices, Google and Yahoo will both be requiring that you have a DMARC record for any domain you use to send email to them, starting on **February 1st, 2024**. Make sure that you have DMARC record set up for all the subdomains that you have delegated to Adobe in Journey Optimizer.
+Om båda eller någon av dessa inte kan autentiseras, kommer DMARC att misslyckas och e-postmeddelandet levereras enligt din valda DMARC-policy.
 
-[![image](using/assets/do-not-localize/learn-more-button.svg)](using/configuration/dmarc-record-update.md)
--->
+<!--DMARC requires alignment between the 'From" and 'Return-Path' address.-->
+
+### DMARC-policyer {#dmarc-policies}
+
+Om ett e-postmeddelande inte kan verifieras med DMARC kan du bestämma vilken åtgärd som ska utföras för det meddelandet. DMARC har tre politiska alternativ:
+
+* Monitor (p=none): Instruerar postlådeprovidern/ISP att göra vad de normalt skulle göra med meddelandet.
+* Karantän (p=karantän): Instruerar postlådeprovidern/ISP att leverera e-post som inte skickar DMARC till mottagarens skräppostmapp.
+* Avvisa (p=avvisa): Instruerar postlådeprovidern/ISP att blockera e-post som inte godkänns av DMARC, vilket resulterar i ett studs.
+
+>[!NOTE]
+>
+>Lär dig hur du ställer in DMARC-policyn med [!DNL Journey Optimizer] in [det här avsnittet](#set-up-dmarc).
+
+## Uppdatering av DMARC-krav {#dmarc-update}
 
 Som en del av deras branschledande praxis kommer Google och Yahoo att kräva att ni har en **DMARC-post** för alla domäner som du använder för att skicka e-post till dem. Det nya kravet börjar på **1 februari 2024**.
 
@@ -41,101 +71,137 @@ Läs mer om Google och Yahoos krav i [det här avsnittet](https://experienceleag
 
 >[!CAUTION]
 >
->Om detta nya krav från Gmail och Yahoo inte uppfylls förväntas det leda till att e-postmeddelanden landar i skräppostmappen eller blockeras.
+>Om detta nya krav från Gmail och Yahoo inte uppfylls förväntas det leda till att e-postmeddelanden landar i skräppostmappen eller blockeras. [Läs mer](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html#how-will-this-impact-me-as-a-marketer%3F){target="_blank"}
 
-Därför rekommenderar Adobe starkt att du har DMARC-posten inställd för alla underdomäner som du har delegerat till Adobe i [!DNL Journey Optimizer]. Följ stegen nedan som gäller ditt ärende:
+Adobe rekommenderar därför att du vidtar följande åtgärder:
 
-* Om du har [helt delegerad](delegate-subdomain.md#full-subdomain-delegation) Om du vill skicka underdomäner till Adobe följer du något av följande två alternativ:
+* Se till att du har **DMARC-post** konfigurera för **alla underdomäner som du redan har delegerat** till Adobe in [!DNL Journey Optimizer]. [Lär dig mer](#check-subdomains-for-dmarc)
 
-   * Konfigurera DMARC på den överordnade domänen för dina delegerade underdomäner **i din värdlösning**.
+* När **delegera en ny underdomän** till Adobe kommer du snart att kunna **konfigurera DMARC** direkt **i [!DNL Journey Optimizer] administrationsgränssnitt**. [Lär dig mer](#implement-dmarc)
 
-   * Konfigurera DMARC för dina delegerade underdomäner **med den kommande funktionen i [!DNL Journey Optimizer] administrationsgränssnitt** - utan extra arbete med er värdlösning.
+## Implementera DMARC i [!DNL Journey Optimizer] {#implement-dmarc}
 
-* Om du har konfigurerat [CNAME-delegering](delegate-subdomain.md#cname-subdomain-delegation) för dina sändande underdomäner, följ något av följande två alternativ:
+Startar **30 januari 2024**, [!DNL Journey Optimizer] Med administrationsgränssnittet kan du konfigurera DMARC-posten för alla underdomäner som du redan har delegerat eller delegerar till Adobe. De detaljerade stegen beskrivs nedan.
 
-   * Konfigurera DMARC på dina underdomäner eller på den överordnade domänen för dina underdomäner **i din värdlösning**.
+### Kontrollera dina befintliga underdomäner för DMARC {#check-subdomains-for-dmarc}
 
-   * Konfigurera DMARC för dina delegerade underdomäner **med den kommande funktionen i [!DNL Journey Optimizer] administrationsgränssnitt**. Men det kommer också att kräva att du deltar i din värdlösning. Därför bör du se till att samordna med din IT-avdelning så att de kan utföra uppdateringen så snart som [!DNL Journey Optimizer] finns (den 30 januari). <!--and be ready on February 1st, 2024-->
+För att vara säker på att du har ställt in en DMARC-post för alla underdomäner som du har delegerat i [!DNL Journey Optimizer]följer du stegen nedan.
 
-**Mer information om [!DNL Journey Optimizer] DMARC kommer snart.**
+1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Subdomains]** menyn och klicka sedan på **[!UICONTROL Set up subdomain]**.
 
->[!NOTE]
+1. Kontrollera för varje delegerad underdomän **[!UICONTROL DMARC Record]** kolumn. Om ingen post hittades för en viss underdomän visas en varning.
+
+   ![](assets/dmarc-record-alert.png)
+
+   >[!CAUTION]
+   >
+   >För att uppfylla det nya kravet från Gmail och Yahoo och undvika leveransproblem med de främsta Internet-leverantörerna, rekommenderar vi att du skapar en DMARC-post för alla delegerade underdomäner. [Läs mer](dmarc-record-update.md)
+
+1. Välj en underdomän utan associerad DMARC-post och fyll i **[!UICONTROL DMARC record]** -sektion efter organisationens behov. Stegen för att fylla i DMARC-postfält beskrivs i [det här avsnittet](#implement-dmarc).
+
+1. Tänk på de två alternativen nedan:
+
+   * Om du redigerar en underdomän som har konfigurerats med [CNAME](delegate-subdomain.md#cname-subdomain-delegation)måste du kopiera DNS-posten för DMARC till din värdlösning för att generera matchande DNS-poster.
+
+     ![](assets/dmarc-record-edit-cname.png)
+
+     Kontrollera att DNS-posten har genererats i din domänvärdslösning och markera kryssrutan Jag bekräftar...
+
+   * Om du redigerar en underdomän [helt delegerad](delegate-subdomain.md#full-subdomain-delegation) Adobe fyller du bara i **[!UICONTROL DMARC record]** fält som anges i [det här avsnittet](#implement-dmarc). Ingen ytterligare åtgärd krävs.
+
+     ![](assets/dmarc-record-edit-full.png)
+
+1. Spara ändringarna.
+
+## Konfigurera DMARC för nya underdomäner {#set-up-dmarc}
+
+När nya underdomäner delegeras till Adobe i [!DNL Journey Optimizer]skapas en DMARC-post i DNS för din domän. Följ stegen nedan för att implementera DMARC.
+
+>[!CAUTION]
 >
->Läs mer om DMARC i [Handbok om bästa praxis för leverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html#about){target="_blank"} för att bättre förstå hur e-postleveransen påverkas.
+>För att uppfylla det nya kravet från Gmail och Yahoo och undvika leveransproblem med de främsta Internet-leverantörerna, rekommenderar vi att du skapar en DMARC-post för alla delegerade underdomäner. [Läs mer](dmarc-record-update.md)
 
-## Vad är DMARC?
+<!--If you fail to comply with the new requirement from Gmail and Yahoo to have DMARC record for all sending domains, your emails are expected to land into the spam folder or to get blocked.-->
 
-DMARC, som står för **Domänbaserad meddelandeautentisering, rapportering och överensstämmelse**, är en metod/ett protokoll för e-postautentisering som gör att domänägare kan skydda sin domän från obehörig användning.
+1. Konfigurera en ny underdomän. [Lär dig mer](delegate-subdomain.md)
 
-Det erbjuder ett sätt att autentisera avsändarens domän och hjälper till att förhindra att oseriösa aktörer skickar e-postmeddelanden som verkar komma från din domän.
+1. Gå till **[!UICONTROL DMARC record]** -avsnitt.
 
-DMARC ger också feedback om e-postautentiseringsstatus och tillåter avsändare att styra vad som händer med e-postmeddelanden som inte kan autentiseras. Detta inkluderar alternativ för att övervaka, sätta i karantän eller avvisa e-post beroende på vilken DMARC-policy som har implementerats.
+   Om underdomänen har en befintlig DMARC-post och om den hämtas av [!DNL Journey Optimizer]kan du använda samma värden som de som är markerade i gränssnittet eller ändra dem efter behov.
 
-<!--Setting up a DMARC record involves adding a DNS TXT record to your domain's DNS settings. This record specifies your DMARC policy, such as whether to quarantine or reject messages that fail authentication. Implementing DMARC is a proactive step towards enhancing email security and protecting both your organization and your recipients from email-based threats.-->
+   ![](assets/dmarc-record-found.png)
 
-DMARC har tre politiska alternativ:
+   >[!NOTE]
+   >
+   >Om du inte lägger till några värden används de förfyllda standardvärdena.
 
-* Monitor (p=none): Instruerar postlådeprovidern/ISP att göra vad de normalt skulle göra med meddelandet.
-* Karantän (p=karantän): Instruerar postlådeprovidern/ISP att leverera e-post som inte skickar DMARC till mottagarens skräppostmapp.
-* Avvisa (p=avvisa): Instruerar postlådeprovidern/ISP att blockera e-post som inte godkänns av DMARC, vilket resulterar i ett studs.
+1. Definiera åtgärden som mottagarservern ska utföra om DMARC misslyckas. Beroende på [DMARC-policy](#dmarc-policies) Välj något av följande tre alternativ:
 
-## Hur fungerar DMARC?
+   * **[!UICONTROL None]** (standardvärde): Uppmanar mottagaren att inte utföra några åtgärder mot meddelanden som inte godkänns vid DMARC-autentisering, men ändå skicka e-postrapporter till avsändaren.
+   * **[!UICONTROL Quarantine]**: Anger att den mottagande e-postservern ska karantän-skicka e-post som inte godkänns vid DMARC-autentisering, vilket vanligtvis innebär att meddelandena placeras i mottagarens skräppostmapp.
+   * **[!UICONTROL Reject]**: Anger att mottagaren helt ska neka (studsa) e-post för domänen som inte kan autentiseras. När den här principen är aktiverad har bara e-post som verifieras som 100 % autentiserad av din domän en chans att placeras i inkorgen.
 
-SPF och DKIM används båda för att associera ett e-postmeddelande med en domän och fungerar tillsammans för att autentisera e-post. DMARC tar det här steget längre och hjälper till att förhindra förfalskning genom att matcha domänen som kontrolleras av DKIM och SPF. För att skicka DMARC måste ett meddelande skicka SPF eller DKIM. Om båda dessa misslyckas kommer DMARC att misslyckas och e-postmeddelandet levereras enligt din valda DMARC-policy.
+   >[!NOTE]
+   >
+   >Det är en god praxis att långsamt införa DMARC-implementering genom att trappa upp DMARC-policyn från **Ingen**, till **Karantän**, till **Avvisa** som ni förstår DMARC:s potentiella inverkan.
 
-* SPF (Sender Policy Framework): DMARC använder SPF för att autentisera den avsändande e-postserverns identitet. SPF hjälper till att verifiera att e-postmeddelandet kommer från en auktoriserad källa genom att kontrollera den avsändande serverns IP-adress mot en lista över auktoriserade IP-adresser för domänen.
-* DKIM (DomainKeys Identified Mail): DMARC använder också DKIM för att lägga till en digital signatur i e-postmeddelanden, vilket gör att mottagaren kan verifiera meddelandets integritet och autenticitet.
+1. Om du vill kan du lägga till en eller flera e-postadresser för att ange var **DMARC-rapporter** i e-postmeddelanden som [ej godkänd autentisering](#how-dmarc-works) bör ingå i er organisation. Du kan lägga till upp till fem adresser för varje rapport.
 
->[!NOTE]
->
->DMARC kräver justering mellan adressen Från och Retursökväg.
+   >[!NOTE]
+   >
+   >Kontrollera att du har en äkta inkorg (inte Adobe) där du kan ta emot rapporterna.
+
+   Det finns två olika rapporter som genereras av Internet-leverantörer och som avsändare kan ta emot via RUA/RUF-taggarna i deras DMARC-policy:
+
+   * **Sammanställningsrapporter** (RUA): De innehåller inga PII-filer (personligt identifierbar information) som kan vara GDPR-känsliga.
+   * **Rapporter om kriminaltekniska fel** (RUF): De innehåller GDPR-känsliga e-postadresser. Kontrollera internt hur man hanterar information som måste uppfylla GDPR innan informationen används.
+
+   >[!NOTE]
+   >
+   >Dessa mycket tekniska rapporter ger en översikt över e-postmeddelanden som försöker förfalskas. De smälter bäst in via ett verktyg från tredje part.
+
+1. Välj **tillämpbar procent** e-postmeddelanden för DMARC.
+
+   Den här procentandelen beror på ditt förtroende för e-postinfrastrukturen och toleransen för falska positiva svar (legitima e-postmeddelanden markeras som bedrägliga). Det är vanligt att organisationer börjar med en DMARC-policy som är inställd på **Ingen**, ökar den procentuella andelen av DMARC:s policy gradvis och övervakar noga effekten på den legitima e-postleveransen.
+
+   >[!NOTE]
+   >
+   >Samarbeta med e-postadministratörer och IT-team för att gradvis öka procentandelen när ni får förtroende för era rutiner för e-postautentisering.
+
+   Som en god praxis bör man sträva efter en hög nivå på DMARC-efterlevnad, helst nära 100 %, för att maximera säkerhetsfördelarna samtidigt som man minimerar risken för falskt positiva resultat.
+
+1. Välj en **rapporteringsintervall** mellan 24 och 168 timmar. Det gör det möjligt för domänägare att få regelbundna uppdateringar om resultaten av e-postautentiseringen och vidta nödvändiga åtgärder för att förbättra e-postsäkerheten.
+
+   <!--The DMARC reporting interval is specified in the DMARC policy published in the DNS (Domain Name System) records for a domain. The reporting interval can be set to daily, weekly, or another specified frequency, depending on the domain owner's preferences.
+
+    The default value (24 hours) is generally the email providers' expectation.-->
 
 
 <!--
 
-* DMARC helps prevent malicious actors from sending emails that appear to come from your domain. By setting up DMARC, you can specify how email providers should handle messages that fail authentication checks, reducing the likelihood that phishing emails will reach recipients.
+Setting up a DMARC record involves adding a DNS TXT record to your domain's DNS settings. This record specifies your DMARC policy, such as whether to quarantine or reject messages that fail authentication. Implementing DMARC is a proactive step towards enhancing email security and protecting both your organization and your recipients from email-based threats.
 
-* DMARC helps improve email deliverability by providing a clear policy for email providers to follow when encountering messages claiming to be from your domain. This can reduce the chances of legitimate emails being marked as spam or rejected.
+DMARC helps prevent malicious actors from sending emails that appear to come from your domain. By setting up DMARC, you can specify how email providers should handle messages that fail authentication checks, reducing the likelihood that phishing emails will reach recipients.
+
+DMARC helps improve email deliverability by providing a clear policy for email providers to follow when encountering messages claiming to be from your domain. This can reduce the chances of legitimate emails being marked as spam or rejected.
 
 DMARC helps protect against email spoofing, phishing, and other fraudulent activities.
 
 It allows you to decide how a mailbox provider should handle emails that fail SPF and DKIM checks, providing a way to authenticate the sender's domain and prevent unauthorized use of the domain for malicious purposes.
 
+## What are the benefits of DMARC? {#dmarc-benefits}
+
+The key benefits or DMARC are as folllows:
+
+* DMARC allows email receivers to easily identify the authentication of emails, which could potentially improve delivery.
+
+* It offers reporting on which messages fail SPF and/or DKIM, enabling senders to gain visibility.
+
+* This increased visibility allows for steps to be taken to mitigate further errors. It gives senders a degree of control over what happens with mail that does not pass either of these authentication methods.
+
 -->
 
 
-## Implementera DMARC {#implement-dmarc}
-
-Följ stegen nedan för att implementera DMARC.
-
-* Om du inte lägger till DMARC sätts du i karantän (åtminstone).
-
-### Fullt delegerade underdomäner
-
-Ange den åtgärd som mottagarservern ska utföra om DMARC misslyckas.
-
-DMARC har tre politiska alternativ:
-
-* Monitor (p=none): Instruerar postlådeprovidern/ISP att göra vad de normalt skulle göra med meddelandet. Det här är standardvärdet.
-* Karantän (p=karantän): Instruerar postlådeprovidern/ISP att leverera e-post som inte skickar DMARC till mottagarens skräppostmapp.
-* Avvisa (p=avvisa): Instruerar postlådeprovidern/ISP att blockera e-post som inte godkänns av DMARC, vilket resulterar i ett studs.
-
-E-postmeddelanden som tar emot sammanställda DMARC-rapporter och kriminaltekniska DMARC-felrapporter: du kan lägga till upp till 5 adresser.
-
-* Se till att du har en äkta inkorg där du kan ta emot - du hanterar den här inkorgen (bör inte vara Adobe inkorg)
-
-Tillämplig procentandel av e-postmeddelanden som ska användas med DMARC:
-
-Rapporteringsintervall: Rekommendationen är 24 eftersom det här i allmänhet är vad internetleverantörer har.
-om inte, utvärdera din kapacitet/kontrollera din > chatt-GPT
-
-Om en DMARC-post identifieras kan du kopiera och klistra in samma värden som listas eller ändra dem vid behov.
-
-Om du inte anger något kommer standardvärden att användas.
-
-### Underdomäner som delegerats med CNAME
-
-för CNAME i versionsflödet måste du hämta CSV-filen igen (inte för helt delegerade)
 
 
 
