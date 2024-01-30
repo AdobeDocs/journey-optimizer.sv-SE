@@ -3,16 +3,16 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Delegera en underdomän
 description: Lär dig delegera dina underdomäner.
-feature: Subdomains
+feature: Subdomains, Deliverability
 topic: Administration
 role: Admin
 level: Experienced
 keywords: underdomän, delegering, domän, DNS
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: a153960d083cbeab8beca30733832a9df8af9cbc
+source-git-commit: 3b40087aeae2b0da789a90f45f2575beedf2b76d
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 4%
+source-wordcount: '1760'
+ht-degree: 5%
 
 ---
 
@@ -77,21 +77,21 @@ Följ stegen nedan om du vill delegera en ny underdomän till Adobe helt:
 
 1. Listan med poster som ska placeras på dina DNS-servrar visas. Kopiera de här posterna, antingen en efter en eller genom att hämta en CSV-fil, och navigera sedan till din värdlösning för domänen för att generera matchande DNS-poster.
 
-1. Kontrollera att alla DNS-poster har skapats i din domänvärdslösning. Om allt är korrekt konfigurerat markerar du rutan &quot;Jag bekräftar ...&quot; och klickar sedan på **[!UICONTROL Submit]**.
+1. Kontrollera att alla DNS-poster har skapats i din domänvärdslösning. Om allt är korrekt konfigurerat markerar du rutan &quot;Jag bekräftar ...&quot;.
 
    ![](assets/subdomain-submit.png)
+
+1. Ställ in DMARC-post. Om underdomänen har en befintlig DMARC-post och om den hämtas av [!DNL Journey Optimizer]kan du använda samma värden eller ändra dem efter behov. Om du inte lägger till några värden används standardvärdena. [Läs mer](dmarc-record.md)
+
+   ![](assets/dmarc-record-found.png)
+
+1. Klicka på **[!UICONTROL Submit]**.
 
    >[!NOTE]
    >
    >Du kan skapa posterna och skicka konfigurationen för underdomänen senare med **[!UICONTROL Save as draft]** -knappen. Du kan sedan återuppta delegeringen av underdomäner genom att öppna den från listan över underdomäner.
 
-1. Om underdomänen inte har någon DMARC-post kan du konfigurera den här. Om underdomänen har en befintlig DMARC-post och om den hämtas av [!DNL Journey Optimizer]kan du använda samma värden eller ändra dem efter behov. Om du inte lägger till några värden används standardvärdena. [Läs mer](dmarc-record.md)
-
-   ![](assets/dmarc-record-found.png)
-
-   <!--update screen when available-->
-
-1. När den fullständiga underdomänsdelegeringen har skickats visas underdomänen i listan med **[!UICONTROL Processing]** status. Mer information om underdomänernas status finns i [det här avsnittet](about-subdomain-delegation.md#access-delegated-subdomains).
+1. Underdomänen visas i listan med **[!UICONTROL Processing]** status. Mer information om underdomänernas status finns i [det här avsnittet](about-subdomain-delegation.md#access-delegated-subdomains).
 
    ![](assets/subdomain-processing.png)
 
@@ -113,7 +113,7 @@ När en underdomän har delegerats till Adobe i [!DNL Journey Optimizer]skapas e
 >
 >Parallell körning av underdomäner stöds för närvarande inte i [!DNL Journey Optimizer]. Om du försöker skicka en underdomän för delegering när en annan har **[!UICONTROL Processing]** får du ett felmeddelande.
 
-## CNAME-delegering av underdomän {#cname-subdomain-delegation}
+## Konfigurera CNAME-underdomän {#cname-subdomain-delegation}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_dns_cname"
@@ -127,7 +127,7 @@ När en underdomän har delegerats till Adobe i [!DNL Journey Optimizer]skapas e
 
 Om du har domänspecifika begränsningsprinciper och du vill att Adobe endast ska ha partiell kontroll över DNS, kan du välja att utföra alla DNS-relaterade aktiviteter på din sida.
 
-Med CNAME-delegering av underdomäner kan du skapa en underdomän och använda CNAME för att peka mot Adobe-specifika poster. Med den här konfigurationen delar både du och Adobe ansvaret för att underhålla DNS för att konfigurera miljön för att skicka, återge och spåra e-postmeddelanden.
+Med funktionen för konfigurering av CNAME-underdomäner kan du skapa en underdomän och använda CNAME för att peka mot Adobe-specifika poster. Med den här konfigurationen delar både du och Adobe ansvaret för att underhålla DNS för att konfigurera miljön för att skicka, återge och spåra e-postmeddelanden.
 
 >[!CAUTION]
 >
@@ -135,7 +135,7 @@ Med CNAME-delegering av underdomäner kan du skapa en underdomän och använda C
 
 ➡️ [Lär dig hur du skapar en underdomän med CNAME för att peka på Adobe-specifika poster i den här videon](#video)
 
-Följ stegen nedan för att delegera en underdomän med CNAME:
+Följ stegen nedan för att konfigurera en underdomän med CNAME:
 
 1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Subdomains]** menyn och klicka sedan på **[!UICONTROL Set up subdomain]**.
 
@@ -157,13 +157,17 @@ Följ stegen nedan för att delegera en underdomän med CNAME:
 
    ![](assets/subdomain-create-dns-confirm.png)
 
+1. Konfigurera DMARC-posten. Om underdomänen har en befintlig DMARC-post och om den hämtas av [!DNL Journey Optimizer]kan du använda samma värden eller ändra dem efter behov. Om du inte lägger till några värden används standardvärdena. [Läs mer](dmarc-record.md)
+
+   ![](assets/dmarc-record-found.png)
+
+1. Klicka på **[!UICONTROL Continue]**.
+
    >[!NOTE]
    >
    >Du kan skapa posterna senare med **[!UICONTROL Save as draft]** -knappen. Du kan sedan återuppta delegeringen av underdomäner i det här skedet genom att öppna den från listan över underdomäner.
 
-1. Om underdomänen inte har någon DMARC-post kan du konfigurera den här. Om underdomänen har en befintlig DMARC-post och om den hämtas av [!DNL Journey Optimizer]kan du använda samma värden eller ändra dem efter behov. Om du inte lägger till några värden används standardvärdena. [Läs mer](dmarc-record.md)
-
-1. Vänta tills Adobe verifierar att dessa poster genereras utan fel i värdlösningen. Den här processen kan ta upp till 2 minuter.
+1. Vänta tills Adobe verifierar att posterna genereras utan fel i värdlösningen. Den här processen kan ta upp till 2 minuter.
 
    >[!NOTE]
    >
@@ -172,10 +176,6 @@ Följ stegen nedan för att delegera en underdomän med CNAME:
 1. Adobe genererar en SSL CDN URL-valideringspost. Kopiera den här valideringsposten till din värdplattform. Om du har skapat den här posten på din värdlösning, markerar du kryssrutan &quot;Jag bekräftar..&quot; och klickar sedan på **[!UICONTROL Submit]**.
 
    <!--![](assets/subdomain-cdn-url-validation.png)-->
-
-   >[!NOTE]
-   >
-   >Du kan också skapa valideringsposten och skicka underdomänskonfigurationen senare med **[!UICONTROL Save as draft]** -knappen. Du kan sedan återuppta delegeringen av underdomäner genom att öppna den från listan över underdomäner.
 
 1. När delegeringen av CNAME-underdomänen har skickats visas underdomänen i listan med **[!UICONTROL Processing]** status. Mer information om underdomänernas status finns i [det här avsnittet](about-subdomain-delegation.md#access-delegated-subdomains).
 
