@@ -8,7 +8,7 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: underdomän, domän, e-post, marc, post
-source-git-commit: b077a19b93d27205d0133372357ee48fa9caf527
+source-git-commit: 2a1fccd05c960aca6a2764844f96e161c798d404
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 0%
@@ -111,7 +111,7 @@ För att vara säker på att du har ställt in en DMARC-post för alla underdom�
 
 1. Spara ändringarna.
 
-## Konfigurera DMARC för nya underdomäner {#set-up-dmarc}
+### Konfigurera DMARC för nya underdomäner {#set-up-dmarc}
 
 När nya underdomäner delegeras till Adobe i [!DNL Journey Optimizer]skapas en DMARC-post i DNS för din domän. Följ stegen nedan för att implementera DMARC.
 
