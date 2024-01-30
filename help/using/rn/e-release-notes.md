@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: c650efb7a2ded5e78e3b11577a250773cec71fd3
+source-git-commit: 7cb00d2527780f14564890c1123a76aa55c7c088
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 2%
@@ -57,7 +57,7 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <tr>
 <td>
 <p>Använd en katalog med branschspecifika fallspelningsböcker i Real-Time CDP och Journey Optimizer för att hantera vanliga användningsområden som du kan använda Adobe Experience Platform och Adobe Journey Optimiser.</p><p>När du har valt den spelbok som bäst passar dina behov kan du aktivera den för att generera de resurser som behövs för att stödja ditt användningssätt, som resor, meddelanden, scheman eller segment, och anpassa dem till ditt schema för snabbare time-to-value.</p>
-<img src="assets/playbooks-detail.png"/>
+<img src="assets/do-not-localize/playbooks.gif"/>
 <!--<p>For more information, refer to the <a href="../start/">detailed documentation</a>.</p>-->
 </tr>
 </tbody>
