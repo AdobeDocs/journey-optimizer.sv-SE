@@ -8,9 +8,9 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: underdomän, domän, e-post, marc, post
-source-git-commit: e1fda25bb16f6d1e304d600dfce39df07fc570b0
+source-git-commit: 11d42198436319cebb67446527e9fd8d0f80cfbc
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 Domänbaserad Message Authentication, Reporting och Conformance (DMARC) är en autentiseringsmetod som gör att domänägare kan skydda sin domän från obehörig användning. Genom att erbjuda en tydlig profil till e-postleverantörer/Internet-leverantörer hjälper den till att förhindra att oseriösa aktörer skickar e-postmeddelanden som påstår sig vara från din domän. Implementering av DMARC minskar risken för att legitima e-postmeddelanden markeras som skräppost eller avvisas, och förbättrar e-postleveransen.
 
 
-Google och Yahoo är en del av deras branschledande arbetsmetoder! kräver båda att **DMARC-post** för alla domäner som du använder för att skicka e-post till dem. Detta nya krav börjar gälla **1 februari 2024**. [Läs mer](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html#dmarc){target="_blank"}.
+Google och Yahoo är en del av deras branschledande arbetsmetoder! kräver båda att **DMARC-post** för alla domäner som du använder för att skicka e-post till dem. Detta nya krav börjar gälla **1 februari 2024**. [Läs mer](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html#dmarc){target="_blank"}
 
 >[!CAUTION]
 >
@@ -47,7 +47,7 @@ eller
 
      Med CNAME-delegering måste du dock även ange detta i din värdlösning. Därför bör du se till att samordna med din IT-avdelning så att de kan utföra uppdateringen så snart som [!DNL Journey Optimizer] finns (den 30 januari). [Läs mer](dmarc-record.md#implement-dmarc)
 
-**Ett självbetjäningsgränssnitt för DMARC-implementering kommer att vara tillgängligt från och med 30 januari. Läs mer i [det här avsnittet](dmarc-record.md#implement-dmarc).**
+**Du kan få ett självbetjäningsgränssnitt för DMARC-implementering från och med 30 januari. Läs mer i [det här avsnittet](dmarc-record.md#implement-dmarc).**
 
 De senaste tidslinjer som delas av Google och Yahoo är följande:
 
