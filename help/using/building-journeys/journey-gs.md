@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: f5013f40735d424d49c2642ac824cbc6f68a3cb9
+source-git-commit: a5027f4558526c2f3516816c12803e741c7f8dac
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1748'
 ht-degree: 5%
 
 ---
@@ -50,6 +50,8 @@ För att kunna skicka meddelanden med resor krävs följande konfigurationer:
 >title="Resor"
 >abstract="Utforma kundresor för att leverera personaliserade, sammanhangsbaserade upplevelser. Med Journey Optimizer kan du skapa användningsfall för realtidssamordning med kontextuella data som lagras i händelser eller datakällor. The **Ökning** visas en instrumentpanel med nyckelvärden för dina resor. The **Bläddra** -fliken visar en lista över befintliga resor."
 
+### Viktiga mätvärden och reselista {#access-metrics}
+
 Klicka på **[!UICONTROL Journeys]**. Det finns två flikar:
 
 **Ökning**: den här fliken visar en instrumentpanel med viktiga mått för dina resor:
@@ -69,15 +71,27 @@ Klicka på **[!UICONTROL Journeys]**. Det finns två flikar:
 
 ![](assets/journeys-browse.png)
 
-I listan över resor kan du filtrera resorna efter status, typ och version från **[!UICONTROL Status and version filters]**. Typen kan vara: **[!UICONTROL Unitary event]**, **[!UICONTROL Audience qualification]**, **[!UICONTROL Read audience]**, **[!UICONTROL Business event]** eller **[!UICONTROL Burst]**.
+### Filtrera resor {#filter}
 
-Du kan välja att endast visa resor som använder en specifik händelse, fältgrupp eller åtgärd från **[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**. Dessutom kan du **[!UICONTROL Publication filters]** gör att du kan välja ett publiceringsdatum eller en användare. Du kan till exempel välja att visa de senaste versionerna av direktresor som publicerades igår. [Läs mer](../building-journeys/using-the-journey-designer.md).
+I listan över resor kan du använda olika filter för att förfina listan över resor för bättre läsbarhet.
 
 ![](assets/filter-journeys.png)
 
-Använd **[!UICONTROL Last update]** och **[!UICONTROL Last update by]** kolumner för att kontrollera när den senaste uppdateringen av dina resor gjordes och vem som sparade den.
+Här är de olika filtreringsåtgärderna som du kan utföra:
 
-I konfigurationsrutorna Händelse, Datakälla och Åtgärd visas **[!UICONTROL Used in]** fältet visar antalet resor som använder den aktuella händelsen, fältgruppen eller åtgärden. Du kan klicka på knappen **[!UICONTROL View journeys]** för att visa en lista över motsvarande resor.
+* Filtrera resor efter status, typ, version och tilldelade taggar från **[!UICONTROL Status and version filters]**.
+
+  Typen kan vara: **[!UICONTROL Unitary event]**, **[!UICONTROL Audience qualification]**, **[!UICONTROL Read audience]**, **[!UICONTROL Business event]** eller **[!UICONTROL Burst]**.
+
+* Använd **[!UICONTROL Creation filters]** för att filtrera resorna efter när de skapades eller efter den användare som skapade dem.
+
+* Visa resor som använder en specifik händelse, fältgrupp eller åtgärd från **[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**.
+
+* Använd **[!UICONTROL Publication filters]** för att välja ett publiceringsdatum eller en användare. Du kan till exempel välja att visa de senaste versionerna av direktresor som publicerades igår.
+
+  <!--To filter journeys based on a specific date range, select **[!UICONTROL Custom]** from the **[!UICONTROL Published]** drop-down list.-->
+
+I konfigurationspanelerna Händelse, Datakälla och Åtgärd visas dessutom **[!UICONTROL Used in]** fältet visar antalet resor som använder den aktuella händelsen, fältgruppen eller åtgärden. Du kan klicka på knappen **[!UICONTROL View journeys]** för att visa en lista över motsvarande resor.
 
 ![](assets/journey3bis.png)
 
@@ -134,7 +148,7 @@ När **Tillåt återinträde** är aktiverat, **Vänteperiod för återinträde*
 
 Läs mer om hantering av profilentré och återinträde på marknaden i [det här avsnittet](entry-management.md).
 
-### Hantera åtkomst {#access}
+### Hantera åtkomst {#manage-access}
 
 Om du vill tilldela etiketter för anpassad eller grundläggande dataanvändning till resan klickar du på **[!UICONTROL Manage access]** -knappen. [Läs mer om OLA (Object Level Access Control)](../administration/object-based-access.md)
 
