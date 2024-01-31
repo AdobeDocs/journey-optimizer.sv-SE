@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 7cb00d2527780f14564890c1123a76aa55c7c088
+source-git-commit: fe4c51a74431bf8ab66aa2c9c3bd07404d971bbf
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '562'
 ht-degree: 2%
 
 ---
@@ -83,7 +83,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 * **Datumfilter** - Du kan nu använda anpassade datum för att filtrera reselagret, utöver de befintliga fördefinierade datumfiltren. På så sätt kan du förfina listan genom att visa resor som publicerats ett visst datum, inom en viss månad, under ett helt år eller inom angivna tidsintervall.
 
-* **Läsa målgrupper**  - Aktiviteten Läs målgrupp är nu beroende av data om profilögonblicksbilder för gruppsegment, som bara genereras en gång om dagen efter att det schemalagda dagliga batchjobbet har körts.
+* **Läsa målgrupper**  - Aktiviteten Läs målgrupp bygger nu på datamängden med profilögonblicksbilder för gruppsegment, som bara genereras en gång om dagen efter att det schemalagda dagliga batchjobbet har körts, och därför kommer data att uppdateras till det senaste batchjobbet.
 
 **Frekvensregler**
 
