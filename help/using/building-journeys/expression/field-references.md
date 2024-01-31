@@ -8,10 +8,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: resa, fält, uttryck, händelse
 exl-id: 2348646a-b205-4b50-a08f-6625e92f44d7
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 7e850261f1a82492c5df93c4437b4e3c6859a2d7
 workflow-type: tm+mt
 source-wordcount: '557'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -29,8 +29,8 @@ Om fältet till exempel är _3 tim_: _#{OpenWeather.westData.rain.&#39;3h&#39;} 
 
 ```json
 // event field
-@{<event name>.<XDM path to the field>}
-@{LobbyBeacon.endUserIDs._experience.emailid.id}
+@event{<event name>.<XDM path to the field>}
+@event{LobbyBeacon.endUserIDs._experience.emailid.id}
 
 // field group
 #{<data source name>.<field group name>.<path to the field>}
@@ -47,8 +47,8 @@ Ett standardvärde kan associeras med ett fältnamn. Syntaxen är följande:
 
 ```json
 // event field
-@{<event name>.<XDM path to the field>, defaultValue: <default value expression>}
-@{LobbyBeacon.endUserIDs._experience.emailid.id, defaultValue: "example@adobe.com"}
+@event{<event name>.<XDM path to the field>, defaultValue: <default value expression>}
+@event{LobbyBeacon.endUserIDs._experience.emailid.id, defaultValue: "example@adobe.com"}
 // field group
 #{<data source name>.<field group name>.<path to the field>, defaultValue: <default value expression>}
 #{ExperiencePlatform.ProfileFieldGroup.profile.personalEmail.address, defaultValue: "example@adobe.com"}
@@ -56,7 +56,7 @@ Ett standardvärde kan associeras med ett fältnamn. Syntaxen är följande:
 
 >[!NOTE]
 >
->Fälttypen och standardvärdet måste vara samma. Till exempel @{LobbyBeacon.endUserID:n._experience.emailid.id, defaultValue : 2} blir ogiltigt eftersom standardvärdet är ett heltal medan det förväntade värdet ska vara en sträng.
+>Fälttypen och standardvärdet måste vara samma. Till exempel: `@event{LobbyBeacon.endUserIDs._experience.emailid.id, defaultValue : 2}` är ogiltigt eftersom standardvärdet är ett heltal medan det förväntade värdet ska vara en sträng.
 
 Exempel:
 
@@ -67,9 +67,9 @@ Exempel:
 }
  
 expression example:
-- @{OrderEvent.orderId}                                    -> "12345"
-- @{OrderEvent.producdId, defaultValue : "not specified" } -> "not specified" // default value, productId is not a field present in the payload
-- @{OrderEvent.productId}                                  -> null
+- @event{OrderEvent.orderId}                                    -> "12345"
+- @event{OrderEvent.producdId, defaultValue : "not specified" } -> "not specified" // default value, productId is not a field present in the payload
+- @event{OrderEvent.productId}                                  -> null
  
  
 // for an entity 'Profile' on datasource 'ACP' having fields person/lastName, with fetched data such as:
@@ -101,25 +101,25 @@ Du kan lägga till vilken typ av uttryck som helst som standardvärde. Den enda 
 
 De element som definieras i samlingar refereras med de specifika funktionerna `all`, `first` och `last`. För mer information om detta hittar du i [det här avsnittet](../expression/collection-management-functions.md).
 
-Exempel :
+Exempel:
 
 ```json
-@{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all()
+@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all()
 ```
 
 ## Referens till ett fält som definieras i en karta
 
-### `entry` funktion
+### `entry` function
 
 För att kunna hämta ett element i en karta använder vi inmatningsfunktionen med en given nyckel. Det används till exempel när du definierar nyckeln för en händelse enligt det valda namnutrymmet. Mer information finns i [den här sidan](../../event/about-creating.md#select-the-namespace).
 
 ```json
-@{MyEvent.identityMap.entry('Email').first().id}
+@event{MyEvent.identityMap.entry('Email').first().id}
 ```
 
-I det här uttrycket hämtar vi posten för nyckeln&quot;Email&quot; i fältet&quot;IdentityMap&quot; för en händelse. Posten&quot;E-post&quot; är en samling från vilken vi tar&quot;id&quot; i det första elementet med&quot;first()&quot;. Mer information finns i [den här sidan](../expression/collection-management-functions.md).
+I det här uttrycket hämtar vi posten för nyckeln Email i fältet IdentityMap för en händelse. E-postposten är en samling från vilken vi tar ID:t i det första elementet med first(). Mer information finns i [den här sidan](../expression/collection-management-functions.md).
 
-### `firstEntryKey` funktion
+### `firstEntryKey` function
 
 Om du vill hämta kartans första inmatningsnyckel använder du `firstEntryKey` funktion.
 
@@ -131,7 +131,7 @@ I det här exemplet visas hur du hämtar den första e-postadressen för prenume
 
 I det här exemplet heter prenumerationslistan `daily-email`. E-postadresser definieras som nycklar i `subscribers` karta, som är länkad till prenumerationslistans karta.
 
-### `keys` funktion
+### `keys` function
 
 Om du vill hämta nycklarna för en karta använder du `keys` funktion.
 
@@ -163,6 +163,6 @@ Använd följande syntax:
 Exempel:
 
 ```json
-#{Weather.main.temperature, params: {localisation: @{Profile.address.localisation}}}
-#{Weather.main.temperature, params: {localisation: #{GPSLocalisation.main.coordinates, params: {city: @{Profile.address.city}}}}}
+#{Weather.main.temperature, params: {localisation: @event{Profile.address.localisation}}}
+#{Weather.main.temperature, params: {localisation: #{GPSLocalisation.main.coordinates, params: {city: @event{Profile.address.city}}}}}
 ```

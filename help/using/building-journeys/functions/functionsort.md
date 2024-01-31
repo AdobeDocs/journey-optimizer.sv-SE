@@ -7,20 +7,16 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: sortering, funktion, uttryck, resa
 exl-id: 607e1424-4165-48ae-b896-cce2d18f7dcc
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 2f47209ad2a5e5b5d26f01949f5e9ade63c2581f
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 5%
+source-wordcount: '144'
+ht-degree: 4%
 
 ---
 
 # sort {#sort}
 
 Sorterar en lista med värden eller objekt i den naturliga ordningen.
-
->[!NOTE]
->
->Om mållistan är ett listObject kan den här funktionen bara användas i anpassade åtgärdsuttryck.
 
 ## Kategori
 
@@ -81,4 +77,8 @@ Returnerar `["A","B","C"]`.
 `sort([1, 3, 2], false)`
 
 Returnerar `[3, 2, 1]`.
+
+`sort(@event{my_event.productListItems}, "SKU", true)`
+
+Returnerar listObject sorterat efter SKU-attribut (stigande ordning)
 

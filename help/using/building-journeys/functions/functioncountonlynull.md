@@ -7,10 +7,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: countOnlyNull, funktion, uttryck, resa
 exl-id: d06fc594-33dd-48ce-8c62-2f2892a867da
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 2f47209ad2a5e5b5d26f01949f5e9ade63c2581f
 workflow-type: tm+mt
-source-wordcount: '52'
-ht-degree: 28%
+source-wordcount: '56'
+ht-degree: 8%
 
 ---
 
@@ -18,9 +18,11 @@ ht-degree: 28%
 
 Räknar antalet null-värden i listan.
 
+Observera att parametern `<listObject>` stöds inte i den här funktionen.
+
 ## Kategori
 
-Aggregera
+Aggregering
 
 ## Funktionssyntax
 
@@ -30,14 +32,7 @@ Aggregera
 
 | Parameter | Typ |
 |-----------|------------------|
-| Lista | listString |
-| Lista | listBoolean |
-| Lista | listInteger |
-| Lista | listDecimal |
-| Lista | listDuration |
-| Lista | listDateTime |
-| Lista | listDateTimeOnly |
-| Lista | listDateOnly |
+| listToProcess | listString, listBoolean, listInteger, listDecimal, listDuration, listDateTime, listDateTimeOnly, listDateOnly |
 
 ## Signatur och returtyp
 

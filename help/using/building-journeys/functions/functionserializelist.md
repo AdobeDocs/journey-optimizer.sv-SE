@@ -7,16 +7,16 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: serializeList, funktion, uttryck, resa
 exl-id: 7ead9fa1-59b3-4960-818c-fe6321422952
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 2f47209ad2a5e5b5d26f01949f5e9ade63c2581f
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 18%
+source-wordcount: '88'
+ht-degree: 6%
 
 ---
 
 # serializeList {#serializeList}
 
-Konverterar listan (valfri typ) som ges i den första parametern till en sträng. Den andra parametern representerar den avgränsare som ska användas. Den tredje parametern är ett booleskt värde som anger om varje element i uttrycket ska innehålla citattecken.
+Konverterar en given lista (alla typer utom listObject) till en sträng.
 
 ## Kategori
 
@@ -28,19 +28,11 @@ Lista
 
 ## Parametrar
 
-| Parameter | Typ |
-|-----------|------------------|
-| Sträng | Sträng |
-| Boolean | Boolean |
-| DateTimeOnly | DateTimeOnly |
-| Lista | listString |
-| Lista | listBoolean |
-| Lista | listPoint |
-| Lista | listDecimal |
-| Lista | listDuration |
-| Lista | listDateTime |
-| Lista | listDateTimeOnly |
-| Lista | listDateOnly |
+| Parameter | Typ | Beskrivning |
+|-----------|------------------|------------------|
+| listToProcess | listString, listBoolean, listInteger, listDecimal, listDuration, listDateTime, listDateTimeOnly, listDateOnly | Lista som ska konverteras till en sträng. |
+| avgränsare | string | Avgränsare mellan varje listelement i utdatasträngen. |
+| addQuotes | boolesk | Den här parametern anger om varje element i utdatasträngen ska innehålla citattecken (true) eller inte (false). |
 
 ## Signatur och returtyp
 
@@ -59,8 +51,6 @@ Lista
 `serializeList(<listDateOnly>,<string>,<boolean>)`
 
 `serializeList(<listDuration>,<string>,<boolean>)`
-
-`serializeList(<listPoint>,<string>,<boolean>)`
 
 Returnera en sträng.
 

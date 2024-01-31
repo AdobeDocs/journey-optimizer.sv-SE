@@ -7,10 +7,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: split, function, expression, travel
 exl-id: 37bcdf98-203c-4f82-8d8a-be2b2c45c4e7
-source-git-commit: 07682901ec94d5b736d364130aaf48f9dfe982a3
+source-git-commit: cb1fed2460ddbf3b226fe191b9695008970937c1
 workflow-type: tm+mt
-source-wordcount: '67'
-ht-degree: 10%
+source-wordcount: '69'
+ht-degree: 7%
 
 ---
 
@@ -47,6 +47,6 @@ Returnerar `["A","B","C"]`
 
 Exempel med ett händelsefält &#39;event.appVersion&#39; med värdet: &quot;20.45.2.3434&quot;
 
-`split(@{event.appVersion}, "\\.")`
+`split(@event{event.appVersion}, "\\.")`
 
 Returnerar `["20", "45", "2", "3434"]`

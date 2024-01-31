@@ -7,9 +7,9 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: filter, funktion, uttryck, resa
 exl-id: 05e3d2ba-1a27-4f27-88cc-3d83eb3b14af
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: cb1fed2460ddbf3b226fe191b9695008970937c1
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '113'
 ht-degree: 6%
 
 ---
@@ -17,10 +17,6 @@ ht-degree: 6%
 # filter{#filter}
 
 Returnerar ett listObject med objekt som har nyckelattributet som matchar ett av de angivna nyckelvärdena.
-
->[!NOTE]
->
->Om mållistan är ett listObject kan den här funktionen bara användas i anpassade åtgärdsuttryck.
 
 ## Kategori
 
@@ -82,7 +78,7 @@ Du kan använda följande uttryck:
 
 ```json
 filter(
- @{myevent.productListItems},
+ @event{myevent.productListItems},
  "id", 
  ["product2", "product3", "product4"]
 )

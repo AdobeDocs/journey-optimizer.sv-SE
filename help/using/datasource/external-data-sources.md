@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: externa, källor, data, konfiguration, anslutning, tredje part
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
-source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
+source-git-commit: 67fbfe9c2ffb40a420cc3f28a775d9c6b3ee5553
 workflow-type: tm+mt
-source-wordcount: '1445'
-ht-degree: 82%
+source-wordcount: '1450'
+ht-degree: 78%
 
 ---
 
@@ -28,6 +28,10 @@ Med externa datakällor kan du definiera en anslutning till tredjepartssystem om
 >[!NOTE]
 >
 >Garantier som används i externa system finns i [den här sidan](../configuration/external-systems.md).
+
+>[!NOTE]
+>
+>Eftersom svaren nu stöds bör du använda anpassade åtgärder i stället för datakällor för externa datakällor som användningsfall.
 
 Stöd finns för REST API:er som använder POST eller GET och returnerar JSON. API-nyckel samt grundläggande och anpassade autentiseringslägen stöds.
 
@@ -122,9 +126,12 @@ Med den här autentiseringen blir åtgärdskörningen en process med två steg:
 1. Anropa slutpunkten för att generera en åtkomsttoken.
 1. Anropa REST API:et genom att injicera åtkomsttoken på rätt sätt.
 
-Denna autentisering består av två delar.
 
-Definitionen av slutpunkten som ska anropas för att generera en åtkomsttoken:
+>[!NOTE]
+>
+>**Autentiseringen består av två delar.**
+
+### Definition av slutpunkten som ska anropas för att generera åtkomsttoken
 
 * slutpunkt: URL som ska användas för att generera slutpunkten
 * metoden för HTTP-begäran på slutpunkten (GET eller POST)
@@ -133,7 +140,7 @@ Definitionen av slutpunkten som ska anropas för att generera en åtkomsttoken:
    * &#39;form&#39;: innebär att innehållstypen blir application/x-www-form-urlencoded (charset UTF-8) och nyckelvärdepar serialiseras som: key1=value1&amp;key2=value2&amp;...
    * &#39;json&#39;: det innebär att innehållstypen blir application/json (charset UTF-8) och nyckelvärdepar kommer att serialiseras som ett json-objekt som det är: _{ &quot;key1&quot;: &quot;value1&quot;, &quot;key2&quot;: &quot;value2&quot;, ...}_
 
-Definitionen av hur en åtkomsttoken måste injiceras i åtgärdens HTTP-begäran:
+### Definition av hur åtkomsttoken måste matas in i åtgärdens HTTP-begäran
 
 * authorizationType: definierar hur den genererade åtkomsttoken måste injiceras i HTTP-anropet för åtgärden. Möjliga värden är:
 
@@ -150,8 +157,6 @@ Autentiseringsformatet är:
 ```
 {
     "type": "customAuthorization",
-    "authorizationType": "<value in 'bearer', 'header' or 'queryParam'>",
-    (optional, mandatory if authorizationType is 'header' or 'queryParam') "tokenTarget": "<name of the header or queryParam if the authorizationType is 'header' or 'queryParam'>",
     "endpoint": "<URL of the authentication endpoint>",
     "method": "<HTTP method to call the authentication endpoint, in 'GET' or 'POST'>",
     (optional) "headers": {
@@ -163,10 +168,16 @@ Autentiseringsformatet är:
         "bodyParams": {
             "param1": value1,
             ...
-
         }
     },
-    "tokenInResponse": "<'response' or json selector in format 'json://<field path to access token>'"
+    "tokenInResponse": "<'response' or json selector in format 'json://<field path to access token>'",
+    "cacheDuration": {
+        (optional, mutually exclusive with 'duration') "expiryInResponse": "<json selector in format 'json://<field path to expiry>'",
+        (optional, mutually exclusive with 'expiryInResponse') "duration": <integer value>,
+        "timeUnit": "<unit in 'milliseconds', 'seconds', 'minutes', 'hours', 'days', 'months', 'years'>"
+    },
+    "authorizationType": "<value in 'bearer', 'header' or 'queryParam'>",
+    (optional, mandatory if authorizationType is 'header' or 'queryParam') "tokenTarget": "<name of the header or queryParam if the authorizationType is 'header' or 'queryParam'>",
 }
 ```
 
@@ -228,14 +239,19 @@ Här är ett exempel på autentiseringstypen för sidhuvud:
       "username": "any value"
     }
   },
-  "tokenInResponse": "json://token"
-} 
+  "tokenInResponse": "json://token",
+  "cacheDuration": {
+    "expiryInResponse": "json://expiryDuration",
+    "timeUnit": "minutes"
+  }
+}
 ```
 
 Här är ett exempel på svaret på inloggnings-API-anropet:
 
 ```
 {
-  "token": "xDIUssuYE9beucIE_TFOmpdheTqwzzISNKeysjeODSHUibdzN87S"
+  "token": "xDIUssuYE9beucIE_TFOmpdheTqwzzISNKeysjeODSHUibdzN87S",
+  "expiryDuration" : 5
 }
 ```

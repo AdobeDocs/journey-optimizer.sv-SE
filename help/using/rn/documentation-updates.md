@@ -8,24 +8,40 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 31d9189e8afd732875556b9caaa8e874f53597bb
+source-git-commit: 84bb42083dc6b6c4e79014ea0b2d4632825350e7
 workflow-type: tm+mt
-source-wordcount: '4291'
-ht-degree: 14%
+source-wordcount: '4570'
+ht-degree: 13%
 
 ---
 
 # Dokumentationsuppdateringar {#latest-updates}
 
-På den här sidan listas alla dokumentationsuppdateringar för [!DNL Journey Optimizer].
+På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimizer] dokumentation.
 
 ## Januari 2024 {#jan-2024}
 
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Januariversion 24 har detaljerats i dokumentationen. [Läs mer](release-notes.md)
 * Ett skyddsräcke om resestorleken har lagts till. [Läs mer](../start/guardrails.md#journeys-guardrails-journeys)
 * Tidsgränsen för resan har beskrivits [i följande avsnitt](../building-journeys/journey-gs.md#global_timeout).
 * Journey Optimizer [dokumentation, startsida](../../ajo-home.md) sidan har fått en ny design.
 * Recommendations om aktiviteten Uppdatera profiler har lagts till. [Läs mer](../building-journeys/update-profiles.md)
 * Information har lagts till om beteendet för tidsgränser för händelseaktiviteter under resor. Om ingen händelse tas emot under den angivna tidsgränsen fortsätter den enskilda personen resan om ingen tidsgräns anges. [Läs mer](../building-journeys/general-events.md#events-specific-time)
+* Krav för kanalkonfiguration i programmet har uppdaterats med en anteckning om användningen av en anpassad sammanfogningsprincip för datauppsättning. [Läs mer](../in-app/inapp-configuration.md)
+* Mer information om hur du hanterar samlingar i en anpassad åtgärd har lagts till. [Läs mer](../action/action-response.md#exp-syntax).
+* En länk till [Schemaordlista för Adobe Journey Optimizer](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html) har lagts till på startsidan.
+* En inaktuell referens till AJO-meddelanderesursen har tagits bort från listan över tillgängliga resurser i granskningsloggen. När en uppdatering görs av ett meddelande under en resa visas en **Resa** loggen skapas. [Läs mer](../privacy/audit-logs.md)
+* Ytterligare rekommendationer om hur **Läs målgrupp** aktivitet. [Läs mer](../building-journeys/read-audience.md#must-read)
+* Sidan Kom igång med Adobe Experience Platform målgrupper har förbättrats med en lista över metoder för målgruppsgenerering. [Läs mer](../audience/about-audiences.md)
+* Bästa metoder har lagts till när du väljer en slutpunkt att rikta in dig på med en anpassad åtgärd. [Läs mer](../action/about-custom-action-configuration.md)
+* En anteckning har lagts till för att meddela användare att händelser inte kan utlösas från externa system med ett API. [Läs mer](../building-journeys/testing-the-journey.md#important-notes)
+* Information om **currentActionField** funktionen har lagts till i listan med [funktioner för samlingshantering](../building-journeys/expression/collection-management-functions.md). Ett uttrycksexempel som utnyttjar funktionen har lagts till i [Använd API-anropssvar i anpassade åtgärder](../action/action-response.md) sida.
+* Uppdatera anpassat autentiseringsdokument med avseende på cachevaraktighet. [Läs mer] (../datasource/external-data-sources.md)
+* Stöd för `<listObject>` har ändrats i flera funktioner.
+* Uppdatera **varaktighet** -parametern i `toString` funktion. [Läs mer](../building-journeys/functions/functiontostring.md)
+* För vissa externa datakällor rekommenderas anpassade åtgärder.
+* Syntaxen för händelsefältet har uppdaterats. Följande syntax är inaktuell `@(my_event.myfield}` och ersatt med `@event{my_event.myfield}`. [Läs mer](../building-journeys/expression/field-references.md)
+
 
 ## November 2023 {#nov-2023}
 

@@ -8,9 +8,9 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: underdomän, domän, e-post, marc, post
-source-git-commit: 11d42198436319cebb67446527e9fd8d0f80cfbc
+source-git-commit: c5da9e9cfd5c03d7c6898e492582e5cc3e466447
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -45,9 +45,8 @@ eller
 eller
    * Konfigurera DMARC för dina delegerade underdomäner **i[!DNL Journey Optimizer]** användargränssnitt för konfiguration. [Lär dig mer](dmarc-record.md#implement-dmarc)
 
-     Med CNAME-delegering måste du dock även ange detta i din värdlösning. Därför bör du se till att samordna med din IT-avdelning så att de kan utföra uppdateringen så snart som [!DNL Journey Optimizer] finns (den 30 januari). [Läs mer](dmarc-record.md#implement-dmarc)
+  Med CNAME-delegering måste du dock även ange detta i din värdlösning. Se därför till att du samarbetar med din IT-avdelning så att de kan utföra de uppdateringar som beskrivs i [det här avsnittet](dmarc-record.md#implement-dmarc).
 
-**Du kan få ett självbetjäningsgränssnitt för DMARC-implementering från och med 30 januari. Läs mer i [det här avsnittet](dmarc-record.md#implement-dmarc).**
 
 De senaste tidslinjer som delas av Google och Yahoo är följande:
 

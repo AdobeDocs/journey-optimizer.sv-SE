@@ -7,20 +7,16 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: distinkt, funktion, uttryck, resa
 exl-id: f4e2dd34-b634-4a91-af53-60be155a65d0
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: cb1fed2460ddbf3b226fe191b9695008970937c1
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 4%
+source-wordcount: '155'
+ht-degree: 3%
 
 ---
 
 # distinct {#distinct}
 
 Returnerar de distinkta värdena eller objekten i en viss lista. Null-poster ignoreras.
-
->[!NOTE]
->
->Om mållistan är ett listObject kan den här funktionen bara användas i anpassade åtgärdsuttryck.
 
 ## Kategori
 

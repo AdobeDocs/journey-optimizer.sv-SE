@@ -7,9 +7,9 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
-source-git-commit: 1a3a67571ef839bf8e1942e4c9599aa52ea7e2dc
+source-git-commit: 3b659955734c9ac1f29b5ae51c9bfebf1d387b17
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1170'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ Så här konfigurerar du din SMS/MMS-leverantör med Journey Optimizer:
 
    ![](assets/sms_7.png)
 
-   * För **[!DNL Sinch]**:
+   * +++ För **[!DNL Sinch]**
 
       * **[!UICONTROL Name]**: välj ett namn för API-autentiseringsuppgifterna.
 
@@ -77,15 +77,24 @@ Så här konfigurerar du din SMS/MMS-leverantör med Journey Optimizer:
 
       * **[!UICONTROL Opt-In Message]**: ange det anpassade svar som automatiskt skickas som **[!UICONTROL Opt-In Message]**.
 
+      * **[!UICONTROL Opt-Out Message]**: ange det anpassade svar som automatiskt skickas som **[!UICONTROL Opt-Out Message]**.
+
       * **[!UICONTROL Help Message]**: ange det anpassade svar som automatiskt skickas som **Hjälpmeddelande**.
 
-   * För **[!DNL Sinch MMS]**:
+      * **[!UICONTROL Double Opt-In Keywords]**: anger de nyckelord som utlöser processen för dubbel anmälan. Om en användarprofil inte finns skapas den när den har bekräftats. Använd kommaseparerade värden för flera nyckelord.
+
+      * **[!UICONTROL Double Opt-In Message]**: ange det anpassade svar som automatiskt skickas som svar på bekräftelsen av dubbel anmälan.
++++
+
+   * +++ För **[!DNL Sinch MMS]**
 
       * **[!UICONTROL Name]**: välj ett namn för API-autentiseringsuppgifterna.
 
       * **[!UICONTROL Project ID]**, **[!UICONTROL App ID]** och **[!UICONTROL API Token]**: på konversations-API-menyn hittar du dina inloggningsuppgifter på App-menyn. Läs mer i [Sänk dokumentation](https://docs.cc.sinch.com/cloud/service-configuration/en/oxy_ex-1/common/wln1620131604643.html){target="_blank"}.
 
-   * För **[!DNL Twilio]**:
++++
+
+   * +++ För **[!DNL Twilio]**
 
       * **[!UICONTROL Name]**: välj ett namn för API-autentiseringsuppgifterna.
 
@@ -93,12 +102,26 @@ Så här konfigurerar du din SMS/MMS-leverantör med Journey Optimizer:
 
       * **[!UICONTROL Message SID]**: Ange den unika identifierare som tilldelats alla meddelanden som skapas av Twilios API. Läs mer i [Twilio-dokumentation](https://support.twilio.com/hc/en-us/articles/223134387-What-is-a-Message-SID-){target="_blank"}.
 
-   * För **[!DNL Infobip]**:
++++
+
+   * +++ För **[!DNL Infobip]**
 
       * **[!UICONTROL Name]**: välj ett namn för API-autentiseringsuppgifterna.
 
       * **[!UICONTROL API base URL]** och **[!UICONTROL API token]**: gå till webbgränssnittets hemsida eller API-nyckelhanteringssidan för att hitta dina autentiseringsuppgifter. Läs mer i [Infobip-dokumentation](https://www.infobip.com/docs/api){target="_blank"}.
 
+      * **[!UICONTROL Double Opt-In Keywords]**: anger de nyckelord som utlöser processen för dubbel anmälan. Om en användarprofil inte finns skapas den när den har bekräftats. Använd kommaseparerade värden för flera nyckelord.
+
+      * **[!UICONTROL Double Opt-In Message]**: Ange det anpassade svar som automatiskt skickas som svar på bekräftelsen av dubbel anmälan.
+
+      * **[!UICONTROL Principal Entity ID]**: ange ditt tilldelade enhets-ID för DLT-huvudnamn.
+
+      * **[!UICONTROL Content Template ID]**: ange ditt registrerade ID för DLT-innehållsmall.
+
+      * **[!UICONTROL Validity Period]**: Ange meddelandets giltighetsperiod i timmar. Om det inte går att leverera meddelanden inom den här tidsramen gör systemet ytterligare försök att skicka dem igen. Standardgiltighetsperioden är inställd på 48 timmar.
+
+      * **[!UICONTROL Callback Data]**: Ange ytterligare klientdata som ska skickas på Notify URL.
++++
 
 1. Klicka **[!UICONTROL Submit]** när du är klar med konfigurationen av dina API-autentiseringsuppgifter.
 

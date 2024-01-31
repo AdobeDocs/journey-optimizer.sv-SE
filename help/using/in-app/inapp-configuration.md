@@ -6,10 +6,10 @@ feature: In App
 level: Intermediate
 keywords: in-app, meddelande, konfiguration, plattform
 exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
-source-git-commit: 03c714833930511fa734662b637d2416728073c2
+source-git-commit: 7e850261f1a82492c5df93c4437b4e3c6859a2d7
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 3%
+source-wordcount: '614'
+ht-degree: 1%
 
 ---
 
@@ -28,6 +28,10 @@ För att meddelanden i appen ska kunna levereras på rätt sätt måste följand
 * I [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}, make sure you have the default merge policy with the **[!UICONTROL Active-On-Edge Merge Policy]** option enabled. To do this, select a policy under the **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** > **[!UICONTROL Merge Policies]** Experience Platform menu. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html#configure){target="_blank"}
 
   Den här sammanfogningsprincipen används av [!DNL Journey Optimizer] inkommande kanaler för att korrekt aktivera och publicera inkommande kampanjer. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html){target="_blank"}
+
+  >[!NOTE]
+  >
+  >När du använder en anpassad **[!UICONTROL Dataset preference]** sammanfogningsprincip, se till att lägga till **[!UICONTROL Journey Inbound]** datauppsättning inom den angivna sammanfogningsprincipen.
 
   ![](assets/inapp_config_8.png)
 
@@ -121,7 +125,7 @@ Om du **not** med följande fördefinierade [fältgrupper](https://experiencelea
 >
 >När du lägger till dessa fältgrupper påverkas inte den normala datainsamlingen. Den är bara additiv för de sidor där ett experiment pågår, och lämnar all annan spårning orörd.
 
-## Instruktionsvideor{#video}
+## Instruktionsfilmer{#video}
 
 * I videon nedan visas hur du tilldelar **Hantera appkonfiguration** behörighet att komma åt appens ytmeny.
 

@@ -7,10 +7,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: summa, funktion, uttryck, resa
 exl-id: a9085f4d-6434-4bc5-8e5d-3f2b6033defc
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: cb1fed2460ddbf3b226fe191b9695008970937c1
 workflow-type: tm+mt
-source-wordcount: '55'
-ht-degree: 10%
+source-wordcount: '57'
+ht-degree: 7%
 
 ---
 
@@ -20,7 +20,7 @@ Returnerar summan av värdena för en uppsättning uttryck. Null-värden ignorer
 
 ## Kategori
 
-Aggregera
+Aggregering
 
 ## Funktionssyntax
 
@@ -54,7 +54,7 @@ Returnerar ett decimaltal.
 
 ## Exempel
 
-`sum(@{BarBeacon.inventory},5)`
+`sum(@event{BarBeacon.inventory},5)`
 
 `sum([10,3,8])`
 

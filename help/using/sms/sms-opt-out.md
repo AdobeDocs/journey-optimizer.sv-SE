@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 59ea67d9-e90c-4ad0-afb9-d0e0fd868855
-source-git-commit: 31c3ed854b38e287850895176f8416bc62739cb0
+source-git-commit: 3b659955734c9ac1f29b5ae51c9bfebf1d387b17
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,15 @@ I enlighet med branschens standarder och bestämmelser måste alla SMS-marknadsf
 
 ## Interna inkommande nyckelord {#sms-native-keywords}
 
-Som standard hanterar Adobe Journey Optimizer följande engelskspråkiga standardsvarsmeddelanden för korta koder, avgiftsfria meddelanden och långa kodmeddelanden: STOP, UNSTOP, START, QUIT, CANCEL, END och UNSUBSCRIBE. Observera att endast Sinch och Infobip har stöd för inbyggda nyckelord när de används med Journey Optimizer.
+>[!NOTE]
+>
+> Endast Sinch och Infobip har stöd för inbyggda nyckelord när de används med Journey Optimizer.
+
+Som standard hanterar Adobe Journey Optimizer följande vanliga engelskspråkiga svarsmeddelanden för korta koder, avgiftsfria meddelanden och långa kodmeddelanden:
+
+* **Avanmäl dig**: STOP, QUIT, CANCEL, END, UNSUBSCRIBE, NO.
+* **Anmäl dig**: SUBSCRIBE, YES, UNSTOP, START, FORTSÄTT, RESUME, BEGIN.
+* **Hjälp**: HJÄLP.
 
 Dessa nyckelord utlöser vanligtvis ett automatiskt standardsvar från din tredje part-leverantör. Du kan bekräfta detta direkt hos leverantören eller via deras dokumentationswebbplats.
 

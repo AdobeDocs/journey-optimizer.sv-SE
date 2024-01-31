@@ -7,10 +7,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: listSize, function, expression, travel
 exl-id: dd378e4d-f65a-495c-ac10-b4209d6b6b88
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 2f47209ad2a5e5b5d26f01949f5e9ade63c2581f
 workflow-type: tm+mt
-source-wordcount: '51'
-ht-degree: 29%
+source-wordcount: '78'
+ht-degree: 7%
 
 ---
 
@@ -28,16 +28,9 @@ Lista
 
 ## Parametrar
 
-| Parameter | Typ |
-|-----------|------------------|
-| Lista | listString |
-| Lista | listBoolean |
-| Lista | listInteger |
-| Lista | listDecimal |
-| Lista | listDuration |
-| Lista | listDateTime |
-| Lista | listDateTimeOnly |
-| Lista | listDateOnly |
+| Parameter | Typ | Beskrivning |
+|-----------|------------------|------------------|
+| listToProcess | listString, listBoolean, listInteger, listDecimal, listDuration, listDateTime, listDateTimeOnly, listDateOnly eller listObject | Lista som ska bearbetas. För listObject måste det vara en fältreferens. Ett listObject får inte innehålla null-objekt. |
 
 ## Underskrifter och returtyp
 
@@ -57,12 +50,16 @@ Lista
 
 `listSize(<listDuration>)`
 
-`listSize(<listPoint>)`
-
 Returnera ett heltal.
+
+`listSize(<listObject>)`
 
 ## Exempel
 
 `listSize([10,2,3])`
 
 Returnerar 3.
+
+`listSize(@event{my_event.productListItems})`
+
+Returnerar antalet objekt i den angivna arrayen med objekt (typen listObject).

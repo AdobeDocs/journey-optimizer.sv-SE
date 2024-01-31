@@ -7,9 +7,9 @@ role: User
 level: Experienced
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
-source-git-commit: c14bcd8c44ef913da588c86263769bdb5b3fb205
+source-git-commit: 3686127299107eb19db8e9290be1b737c1c87ec3
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -155,9 +155,7 @@ Nu kan du [skapa ett direktmeddelandemeddelande](../direct-mail/create-direct-ma
 
 >[!NOTE]
 >
->Duplicerade rader tas bort automatiskt.
->
->Om det maximala antalet poster (t.ex. rader) för varje fil som innehåller profildata är för högt skapas en annan fil automatiskt för de återstående posterna.
+>Duplicerade rader där alla värden på raden är desamma tas automatiskt bort från filen.
 
 <!--
     In the **[!UICONTROL Insertion]** section, you can choose to automatically remove duplicate rows.

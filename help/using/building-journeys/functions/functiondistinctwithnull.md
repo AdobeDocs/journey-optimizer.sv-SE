@@ -7,9 +7,9 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: distinktMedNull, funktion, uttryck, resa
 exl-id: 73fa9837-d2e1-4f0a-a423-cf7728882eba
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 2f47209ad2a5e5b5d26f01949f5e9ade63c2581f
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '123'
 ht-degree: 4%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 4%
 # distinctWithNull {#distinctWithNull}
 
 Returnerar de distinkta värdena eller objekten i en viss lista. Om listan har minst en null-post kommer en null-post att finnas i den returnerade listan.
+
+Observera att parametern `<listObject>` stöds inte i den här funktionen.
 
 ## Kategori
 
@@ -30,8 +32,7 @@ Lista
 
 | Parameter | Typ | Beskrivning |
 |-----------|------------------|------------------|
-| listToProcess | listString, listBoolean, listInteger, listDecimal, listDuration, listDateTime, listDateTimeOnly, listDateOnly eller listObject | Lista som ska bearbetas. För listObject måste det vara en fältreferens. |
-| keyAttributeName | string | Den här parametern är valfri och endast för listObject. Om parametern inte anges betraktas ett objekt som duplicerat om alla attribut har samma värden. Annars betraktas ett objekt som duplicerat om det angivna attributet har samma värde. |
+| listToProcess | listString, listBoolean, listInteger, listDecimal, listDuration, listDateTime, listDateTimeOnly, listDateOnly | Lista som ska bearbetas. |
 
 ## Underskrifter och returnerade typer
 
@@ -66,12 +67,6 @@ Returnerar en lista med boolesk.
 `distinctWithNull(<listDuration>)`
 
 Returnerar en lista med varaktigheter.
-
-`distinctWithNull(<listObject>)`
-
-`distinctWithNull(<listObject>,<string>)`
-
-Returnerar en lista med objekt.
 
 ## Exempel
 

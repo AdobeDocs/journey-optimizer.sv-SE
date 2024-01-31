@@ -7,10 +7,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: distinktAntal, funktion, uttryck, resa
 exl-id: 8796ba91-5c64-43c2-a444-27ac8b719c86
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 2f47209ad2a5e5b5d26f01949f5e9ade63c2581f
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 28%
+source-wordcount: '138'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +20,7 @@ Räknar antalet olika värden som ignorerar null-värden.
 
 ## Kategori
 
-Aggregera
+Aggregering
 
 ## Funktionssyntax
 
@@ -28,16 +28,10 @@ Aggregera
 
 ## Parametrar
 
-| Parameter | Typ |
-|-----------|------------------|
-| Lista | listString |
-| Lista | listBoolean |
-| Lista | listInteger |
-| Lista | listDecimal |
-| Lista | listDuration |
-| Lista | listDateTime |
-| Lista | listDateTimeOnly |
-| Lista | listDateOnly |
+| Parameter | Typ | Beskrivning |
+|-----------|------------------|------------------|
+| listToProcess | listString, listBoolean, listInteger, listDecimal, listDuration, listDateTime, listDateTimeOnly, listDateOnly eller listObject | Lista som ska bearbetas. För listObject måste det vara en fältreferens. |
+| keyAttributeName | string | Den här parametern är valfri och endast för listObject. Om parametern inte anges betraktas ett objekt som duplicerat om alla attribut har samma värden. Annars betraktas ett objekt som duplicerat om det angivna attributet har samma värde. |
 
 ## Signatur och returtyp
 
@@ -45,8 +39,23 @@ Aggregera
 
 Returnerar ett heltal.
 
+`distinctCount(<listObject>)`
+
+`distinctCount(<listObject>,<string>)`
+
+Returnerar en lista med objekt.
+
+
 ## Exempel
 
 `distinctCount([10,2,10,null])`
 
 Returnerar 2.
+
+`distinctCount(@event{my_event.productListItems})`
+
+Returnerar antalet strikt distinkta objekt i den angivna objektarrayen (typen listObject).
+
+`distinctCount(@event{my_event.productListItems}, "SKU")`
+
+Returnerar antalet objekt som har ett tydligt SKU-attributvärde{}.

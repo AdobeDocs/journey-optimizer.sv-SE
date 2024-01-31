@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: resa, integrering, standard, kampanj, ACS
 exl-id: 50565cd9-7415-4c6a-9651-24fefeded3f5
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: cb1fed2460ddbf3b226fe191b9695008970937c1
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 3%
+source-wordcount: '905'
+ht-degree: 1%
 
 ---
 
@@ -102,7 +102,7 @@ I det här avsnittet måste du definiera **[!UICONTROL Push platform]**. I listr
 Du måste också definiera **[!UICONTROL Registration Token]**. Uttrycket beror på hur variabeln definieras i händelsens nyttolast eller i andra [!DNL Journey Optimizer] information. Det kan vara ett enkelt fält eller ett mer komplext uttryck om token definieras i en samling, till exempel:
 
 ```
-@{Event_push._experience.campaign.message.profileSnapshot.pushNotificationTokens.first().token}
+@event{Event_push._experience.campaign.message.profileSnapshot.pushNotificationTokens.first().token}
 ```
 
 **[!UICONTROL Personalization Data]**

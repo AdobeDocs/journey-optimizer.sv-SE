@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: c4b8a74541a3fb9fea054bd1145592d75c62b165
+source-git-commit: ff25658bd69b83cfd1869490c24710f84d4a4ffc
 workflow-type: tm+mt
-source-wordcount: '949'
-ht-degree: 1%
+source-wordcount: '1101'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ En regel för ett varumärke kan till exempel inte vara att skicka mer än tre m
 >
 >Reglerna för meddelandefrekvens skiljer sig från reglerna för avanmälningshantering, som gör det möjligt för användare att avbryta prenumerationen på meddelanden från ett varumärke. [Läs mer](../privacy/opt-out.md#opt-out-management)
 
-➡️ [Upptäck den här funktionen i en video](#video)
+➡️ [Upptäck den här funktionen i video](#video)
 
 ## Åtkomstregler {#access-rules}
 
@@ -79,13 +79,27 @@ Följ stegen nedan för att skapa en ny regel.
    >
    >För närvarande bara **[!UICONTROL Marketing]** finns tillgänglig.
 
-1. Ange begränsningen för regeln, vilket innebär det maximala antalet meddelanden som kan skickas till en enskild användarprofil varje månad.
+1. Välj en tidsram för den begränsning som ska användas.
 
-   ![](assets/message-rules-capping.png)
+   ![](assets/message-rules-capping-duration.png)
+
+   Frekvensgränsen baseras på den valda kalenderperioden. Den återställs i början av motsvarande tidsram.
+
+   Räknaren för varje period har följande förfallodatum:
+
+   * **[!UICONTROL Daily]**: Frekvensbegränsningen gäller för dagen till 23:59:59 UTC och återställer till 0 i början av nästa dag.
+
+   * **[!UICONTROL Weekly]**: Frekvensbegränsningen gäller till lördag 23:59:59 UTC den veckan då kalenderveckan börjar på söndag. Utgångsdatumet är oberoende av hur regeln skapas. Om regeln till exempel skapas på torsdag gäller den till lördag den 23:59:59.
+
+   * **[!UICONTROL Monthly]**: Frekvensbegränsningen gäller till den sista dagen i månaden vid 23:59:59 UTC. Månadsförfallodatumet för januari är till exempel 01-31 23:59:59 UTC.
 
    >[!NOTE]
    >
-   >Frekvensgränsen baseras på en månatlig kalenderperiod. Den återställs i början av varje månad.
+   >Vid hantering av [gruppsegmentering](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#batch){target="_blank"}, the daily counters may not accurately reflect the current values as the daily counter snapshot is taken at midnight UTC the night before. Consequently, relying on daily counters in this scenario becomes impractical, as the snapshot does not reflect the most up-to-date counter values on the profile. To ensure accuracy for daily frequency capping rules, the use of [streaming segmentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html){target="_blank"} rekommenderas. <!--Learn more on audience evaluation methods in [this section](using/audience/about-audiences.md#evaluation-method-in-journey-optimizer).-->
+
+1. Ange begränsningen för din regel, vilket innebär det maximala antalet meddelanden som kan skickas till en enskild användarprofil varje månad, vecka eller dag enligt vad du väljer ovan.
+
+   ![](assets/message-rules-capping.png)
 
 1. Markera kanalen som du vill använda för den här regeln: **[!UICONTROL Email]** eller **[!UICONTROL Push notification]**.
 
@@ -97,7 +111,7 @@ Följ stegen nedan för att skapa en ny regel.
 
 1. Markera flera kanaler om du vill tillämpa begränsning för alla markerade kanaler som ett totalt antal.
 
-   Ange till exempel 15 som capping och markera både e-post- och push-kanalerna. Om en profil redan har fått 10 marknadsföringsmeddelanden och 5 push-meddelanden om marknadsföring, kommer den här profilen att uteslutas vid nästa leverans av marknadsföringsmeddelanden eller push-meddelanden.
+   Ange till exempel 15 som capping och markera både e-post- och push-kanalerna. Om en profil redan har fått 10 marknadsföringsmeddelanden och 5 push-meddelanden för marknadsföring under den valda perioden, kommer den här profilen inte att ingå i nästa leverans av marknadsföringsmeddelanden eller push-meddelanden.
 
 1. Klicka **[!UICONTROL Save as draft]** för att bekräfta att regeln har skapats. Ditt meddelande läggs till i regellistan med **[!UICONTROL Draft]** status.
 

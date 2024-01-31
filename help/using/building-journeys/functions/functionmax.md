@@ -7,10 +7,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: max, funktion, uttryck, resa
 exl-id: 5c792d33-32b9-4b1b-ab99-3ebfac391678
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: cb1fed2460ddbf3b226fe191b9695008970937c1
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 6%
+source-wordcount: '98'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +20,7 @@ Returnerar det maximala värdet bland en uppsättning uttryck, givet antingen so
 
 ## Kategori
 
-Aggregera
+Aggregering
 
 ## Funktionssyntax
 
@@ -88,7 +88,7 @@ Returnerar ett heltal.
 
 ## Exempel
 
-`max(@{BarBeacon.inventory},5)`
+`max(@event{BarBeacon.inventory},5)`
 
 `max([10,3,8])`
 

@@ -8,10 +8,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: uttryck, syntax, operatorer, redigerare, resa
 exl-id: 706e2e02-9bd9-46e7-a73d-dda3c9ae4ba8
-source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
+source-git-commit: cb1fed2460ddbf3b226fe191b9695008970937c1
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 6%
+source-wordcount: '531'
+ht-degree: 5%
 
 ---
 
@@ -23,28 +23,28 @@ Det finns två typer av operatorer: unära operatorer och binära operatorer. De
 // left-hand unary operators
 // <operator> <operand> 
 // operand is an expression
-not (@{LobbyBeacon.endUserIDs._experience.emailid.id}=="example@adobe.com")
+not (@event{LobbyBeacon.endUserIDs._experience.emailid.id}=="example@adobe.com")
 
 // right-hand unary operators
 // <operator> <operand> 
 // operand is an expression
-@{LobbyBeacon.endUserIDs._experience.emailid.id} is not null
+@event{LobbyBeacon.endUserIDs._experience.emailid.id} is not null
 
 // binary operators
 // <operand1> <operator> <operand2>
 // operand is an expression
-(@{LobbyBeacon.endUserIDs._experience.emailid.id}=="example1@adobe.com") or (@{LobbyBeacon.endUserIDs._experience.emailid.id}=="example2@adobe.com") 
+(@event{LobbyBeacon.endUserIDs._experience.emailid.id}=="example1@adobe.com") or (@event{LobbyBeacon.endUserIDs._experience.emailid.id}=="example2@adobe.com") 
 ```
 
 ## Viktiga anteckningar{#important-notes}
 
-* Vid användning av en multiplikation (`*`) måste båda åtgärdsfälten ha samma typ, antingen heltal eller decimal. Exempel :
+* Vid användning av en multiplikation (`*`) måste båda åtgärdsfälten ha samma typ, antingen heltal eller decimal. Exempel:
    * följande exempel är korrekt: `3.0 * 4.0`
    * `3 * 4.0` leder till ett fel
 
 ## Logisk  {#logical}
 
-###  och 
+### och
 
 ```json
 <expression1> and <expression2>
@@ -101,7 +101,7 @@ Observera att null betyder att uttrycket inte har något utvärderat värde.
 Exempel:
 
 ```json
-@{BarBeacon.location} is null
+@event{BarBeacon.location} is null
 ```
 
 ### är inte null
@@ -117,7 +117,7 @@ Observera att null betyder att uttrycket inte har något utvärderat värde.
 Exempel:
 
 ```json
-@{BarBeacon.location} is not null
+@event{BarBeacon.location} is not null
 ```
 
 ### har null

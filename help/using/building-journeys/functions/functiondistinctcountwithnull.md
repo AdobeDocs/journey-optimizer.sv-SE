@@ -7,10 +7,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: distinktCountWithNull, funktion, uttryck, resa
 exl-id: 2c3f629f-2220-44a4-9b0c-8aa602301098
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 2f47209ad2a5e5b5d26f01949f5e9ade63c2581f
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 21%
+source-wordcount: '57'
+ht-degree: 8%
 
 ---
 
@@ -18,13 +18,11 @@ ht-degree: 21%
 
 Räknar antalet olika värden inklusive null-värden.
 
->[!NOTE]
->
->Om mållistan är ett listObject kan den här funktionen bara användas i anpassade åtgärdsuttryck.
+Observera att parametern `<listObject>` stöds inte i den här funktionen.
 
 ## Kategori
 
-Aggregera
+Aggregering
 
 ## Funktionssyntax
 
@@ -34,14 +32,7 @@ Aggregera
 
 | Parameter | Typ |
 |-----------|------------------|
-| Lista | listString |
-| Lista | listBoolean |
-| Lista | listInteger |
-| Lista | listDecimal |
-| Lista | listDuration |
-| Lista | listDateTime |
-| Lista | listDateTimeOnly |
-| Lista | listDateOnly |
+| listToProcess | listString, listBoolean, listInteger, listDecimal, listDuration, listDateTime, listDateTimeOnly, listDateOnly |
 
 ## Signatur och returtyp
 

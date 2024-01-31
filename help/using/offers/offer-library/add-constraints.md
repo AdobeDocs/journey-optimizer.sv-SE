@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
-source-git-commit: dfd8800f8fb6894e78ffa31d1f93ef5d99df09fc
+source-git-commit: 03e93e6a6652ffbe1cfdea3361e0a0d517cc39d8
 workflow-type: tm+mt
-source-wordcount: '2318'
+source-wordcount: '2346'
 ht-degree: 1%
 
 ---
@@ -258,9 +258,12 @@ The **[!UICONTROL Frequency]** kan du definiera hur ofta antalet capping återst
 
 ![](../assets/offer-capping-frequency.png)
 
+
 >[!NOTE]
 >
 >Återställningen sker kl. 12.00 UTC, den dag du har definierat eller den första dagen i veckan/månaden när det är tillämpligt. Veckostartdagen är söndag. En varaktighet som du väljer får inte överstiga 2 år (dvs. motsvarande antal månader, veckor eller dagar).
+>
+>Räknaren för frekvensbegränsning uppdateras och är tillgänglig i ett beslut av Edge Decisioning API på mindre än 3 sekunder.
 
 Om du till exempel vill att antalet fästingar ska återställas varannan vecka väljer du **[!UICONTROL Weekly]** från motsvarande nedrullningsbar lista och typ **2** i det andra fältet. Återställningen sker varannan söndag kl. 12.00 UTC.
 

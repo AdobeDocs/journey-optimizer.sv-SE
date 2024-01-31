@@ -7,10 +7,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: avg, funktion, uttryck, resa
 exl-id: cc70f90c-2d12-42a0-829f-5f28c3c29cad
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: cb1fed2460ddbf3b226fe191b9695008970937c1
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 11%
+source-wordcount: '55'
+ht-degree: 7%
 
 ---
 
@@ -21,7 +21,7 @@ Returnerar det genomsnittliga värdet bland en uppsättning uttryck, givet antin
 
 ## Kategori
 
-Aggregera
+Aggregering
 
 ## Funktionssyntax
 
@@ -54,7 +54,7 @@ Returnerar ett decimaltal.
 
 ## Exempel
 
-`avg(@{BarBeacon.inventory},5)`
+`avg(@event{BarBeacon.inventory},5)`
 
 `avg([10,3,8])`
 

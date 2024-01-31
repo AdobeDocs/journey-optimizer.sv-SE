@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 6a2b3c988168d8ff6f5671718cd0defb6ad8c258
+source-git-commit: 0d010bbb46887546d524726606764b564c352064
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1956'
 ht-degree: 0%
 
 ---
@@ -87,6 +87,10 @@ Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera opti
 * IP-adresser tillåts inte
 * Adobe adresser (`.adobe.*`) tillåts inte i URL:er och API:er.
 * Inbyggda anpassade åtgärder kan inte tas bort.
+* När du väljer en slutpunkt som ska användas som mål med en anpassad åtgärd ska du se till att:
+
+   * Den här slutpunkten kan stödja resans genomströmning med hjälp av konfigurationer från [Begränsnings-API](../configuration/throttling.md) eller [API för begränsning](../configuration/capping.md) för att begränsa den. Var försiktig med att en begränsningskonfiguration inte får vara lägre än 200 TPS. Alla målpunkter måste ha stöd för minst 200 TPS.
+   * Den här slutpunkten måste ha en svarstid som är så låg som möjligt. Beroende på förväntat dataflöde kan en hög svarstid påverka det faktiska dataflödet.
 
 ### Händelser {#events-g}
 
@@ -99,6 +103,10 @@ Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera opti
 
 * Externa datakällor kan utnyttjas inom en kundresa för att söka efter externa data i realtid. Dessa källor måste kunna användas via REST API, ha stöd för JSON och kunna hantera antalet begäranden.
 * Adobe adresser (`.adobe.*`) tillåts inte i URL:er och API:er.
+
+>[!NOTE]
+>
+>Eftersom svaren nu stöds bör du använda anpassade åtgärder i stället för datakällor för externa datakällor som användningsfall.
 
 ### Resor och skapande av profiler {#journeys-limitation-profile-creation}
 

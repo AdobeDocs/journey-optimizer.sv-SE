@@ -8,10 +8,10 @@ topic: Content Management
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 exl-id: 07d25f8e-0065-4410-9895-ffa15d6447bb
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 3b1a359427a76780bd3130e292cf2658eb6df03c
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 3%
+source-wordcount: '468'
+ht-degree: 2%
 
 ---
 
@@ -54,7 +54,7 @@ Följande datauppsättningar har skickats:
 Listorna med XDM-fält som skickas till Adobe Experience Platform finns här:
 
 * [Lista över steghändelsefält](../reports/sharing-field-list.md)
-* [Äldre steghändelsefält](../reports/sharing-legacy-fields.md)
+* [Händelsefält för äldre steg](../reports/sharing-legacy-fields.md)
 
 ## Integration med Customer Journey Analytics {#integration-cja}
 
@@ -65,4 +65,6 @@ Det allmänna arbetsflödet är:
 * [!DNL Customer Journey Analytics] inmatar datamängden&quot;Resestegshändelse&quot;.
 * The **profileID** fältet i det associerade schemat för resesegmenthändelse för Journey Orchestration definieras som ett identitetsfält. I [!DNL Customer Journey Analytics]kan du sedan länka den här datauppsättningen till andra datauppsättningar som har samma värde som den personbaserade identifieraren.
 * Använd den här datauppsättningen i [!DNL Customer Journey Analytics]för flerkanalsanalys, se [Customer Journey Analytics dokumentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html){target="_blank"}.
+
+➡️ [Arbeta med Customer Journey Analytics](cja-ajo.md){target="_blank"}
 
