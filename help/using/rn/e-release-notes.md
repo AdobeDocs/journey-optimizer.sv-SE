@@ -10,9 +10,9 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 570f50a86288378c26f967f4861f19b9da9f96cf
+source-git-commit: 97967e8043df9b75d3120e4a7bfccff700f5d57f
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '558'
 ht-degree: 4%
 
 ---
@@ -88,6 +88,8 @@ Den här versionen innehåller de förbättringar som anges nedan.
 * **Läsa målgrupper**  - Aktiviteten Läs målgrupp bygger nu på datamängden med profilögonblicksbilder för gruppsegment, som bara genereras en gång om dagen efter att det schemalagda dagliga batchjobbet har körts, och därför kommer data att uppdateras till det senaste batchjobbet.
 
 * **Fältgrupper** - Åtgärdade ett problem som innebar att fältgrupper blockerades för att sparas i vissa fall.
+
+* **Uttrycksredigeraren** - Vi stöder nu datatypen listObject i alla uttryck och i ytterligare funktioner. [Mer info](../building-journeys/expression/functions.md)
 
 **Frekvensregler**
 
