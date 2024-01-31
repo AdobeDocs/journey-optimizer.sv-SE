@@ -7,14 +7,22 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 96367ab7b3d272368b1241321932a5e53c0654d7
+source-git-commit: a16de75b2b0604d7a0d6224d03b7c53715903c07
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
 
 # Använd fallspelningsböcker {#playbooks}
+
+>[!PREREQUISITES]
+>
+>Följande konfigurationssteg krävs innan du arbetar med Använd fallspelningsböcker. Detaljerad information om varje steg finns i Use Case Playbooks-dokumentationen [Kom igång](https://experienceleague.corp.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html){target="_blank"} sida.
+>
+>* Skapa en sandlåda
+>* Konfigurera användarbehörigheter
+>* Konfigurera Journey Optimizer-kanalytor för e-post-, push- och SMS-meddelanden
 
 Använd fallspelsböcker är fördefinierade arbetsflöden som åtgärdar vanliga användningsfall som du kan utföra med Adobe Experience Platform och Journey Optimizer.
 
