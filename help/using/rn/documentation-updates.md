@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 84bb42083dc6b6c4e79014ea0b2d4632825350e7
+source-git-commit: 50ca60555c66a0a3f87c46301bb76545427c2780
 workflow-type: tm+mt
-source-wordcount: '4570'
+source-wordcount: '4582'
 ht-degree: 13%
 
 ---
@@ -41,6 +41,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Uppdatera **varaktighet** -parametern i `toString` funktion. [Läs mer](../building-journeys/functions/functiontostring.md)
 * För vissa externa datakällor rekommenderas anpassade åtgärder.
 * Syntaxen för händelsefältet har uppdaterats. Följande syntax är inaktuell `@(my_event.myfield}` och ersatt med `@event{my_event.myfield}`. [Läs mer](../building-journeys/expression/field-references.md)
+* Den globala rapporten och Live-rapportguiderna har omstrukturerats. [Läs mer](../reports/campaign-global-report.md)
 
 
 ## November 2023 {#nov-2023}
