@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c487bb38-49ce-4238-8e94-8364f994cedd
-source-git-commit: 82b8c9032d6c377cb76acce4d5cc45afb0ddd6ba
+source-git-commit: d26dbebaf36241d0e91c36c95f83ce6cf712ecee
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 3%
+source-wordcount: '1110'
+ht-degree: 0%
 
 ---
 
@@ -63,8 +63,8 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
  </thead> 
  <tbody>
   <tr> 
-   <td> Studsar<br/> </td> 
-   <td> Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.<br/> </td> 
+   <td> studsar<br/> </td> 
+   <td> Totalt antal fel som sammanställts under sändningsprocessen och automatisk returbearbetning i relation till det totala antalet skickade meddelanden.<br/> </td> 
 </tr> 
   <tr> 
    <td> Studsfrekvens<br/> </td> 
@@ -84,16 +84,16 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
 </tr>
   <tr> 
    <td> Fel<br/> </td> 
-   <td> Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.<br/> </td> 
+   <td> Totalt antal fel som uppstod under sändningsprocessen och som förhindrar att den skickas till profiler.<br/> </td> 
 </tr> 
   <tr> 
    <td> Felfrekvens<br/> </td> 
-   <td> Procentandel fel som uppstod under en leverans och som förhindrar att den skickas jämfört med skickade e-postmeddelanden.<br/> </td> 
+   <td> Procentandel fel som uppstod under sändningsprocessen och som förhindrade att den skickades jämfört med skickade e-postmeddelanden.<br/> </td> 
 </tr>
 </tr> 
   <tr> 
    <td> Felorsak<br/> </td> 
-   <td> Namnet på den specifika ursprungliga orsaken till felet. <a href="error-list.md">Läs mer om felorsaker</a>.<br/> </td> 
+   <td> Namnet på den specifika ursprungliga orsaken till felet. <a href="exclusion-list.md">Läs mer om felorsaker</a>.<br/> </td> 
 </tr>
   <tr> 
    <td> Exkluderad<br/> </td> 
@@ -136,7 +136,7 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
    <td> Namn på den placering som användes för att visa ditt erbjudande. Mer information om placering finns i <a href="../offers/offer-library/creating-placements.md">page</a>. </td> 
 </tr> 
   <tr> 
-   <td> Återförsök<br/> </td> 
+   <td> Försök igen<br/> </td> 
    <td> Antal e-postmeddelanden i kön för återförsök.<br/> </td> 
 </tr> 
   <tr> 
@@ -168,7 +168,7 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
    <td>Antal mottagare som öppnade leveransen. <br> Observera att de senaste tio dagarna beaktas när unika öppningar beräknas. Om en profil registrerar flera öppningar inom 10-dagarsperioden räknas de som unika öppningar. Om en profil har 2 öppningar med mer än 10 dagars mellanrum räknas de inte som unika öppningar.<br/> </td> 
 </tr> 
   <tr> 
-   <td> Avprenumerationer<br/> </td> 
+   <td> Avbeställ<br/> </td> 
    <td> Antal klick på länken för att avbryta prenumerationen.<br/> </td> 
 </tr> 
  </tbody> 
@@ -303,11 +303,11 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
  </thead> 
  <tbody>
  <tr> 
-   <td>Instruktioner<br/> </td> 
+   <td>Åtgärder<br/> </td> 
    <td> Totalt antal åtgärder för push-meddelandet som levererats, t.ex. knappklickning eller avbruten.<br/> </td> 
 </tr>
   <tr> 
-   <td>Studsar<br/> </td> 
+   <td>studsar<br/> </td> 
    <td> Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.<br/> </td> 
 </tr> 
   <tr> 
@@ -340,7 +340,7 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
 </tr>
   <tr> 
    <td> Felorsak<br/> </td> 
-   <td> Namnet på den specifika ursprungliga orsaken till felet. <a href="error-list.md">Läs mer om felorsaker</a>.<br/> </td> 
+   <td> Namnet på den specifika ursprungliga orsaken till felet. <a href="exclusion-list.md">Läs mer om felorsaker</a>.<br/> </td> 
 </tr>
   <tr> 
    <td> Exkluderad<br/> </td> 
@@ -376,7 +376,7 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
  </thead> 
  <tbody>
  <tr> 
-  <td>Studsar<br/> </td> 
+  <td>studsar<br/> </td> 
    <td>Antal personer som inte interagerade med landningssidan och inte slutförde prenumerationsåtgärden.<br/> </td> 
 </tr>
  <tr> 

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 925494b6-e08a-4bd3-8a2f-96a5d9cbc387
-source-git-commit: 03c714833930511fa734662b637d2416728073c2
+source-git-commit: d26dbebaf36241d0e91c36c95f83ce6cf712ecee
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '3275'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,19 @@ En detaljerad lista över alla mätvärden som är tillgängliga i Adobe Journey
 
 ### Leverans {#delivery-live}
 
-The **[!UICONTROL Campaign Statistics]** widgetinformation om huvudinformationen i förhållande till kampanjen:
+![](assets/campaign_live_statistics.png)
 
-* **[!UICONTROL Entered profiles]**: Antal profiler som påbörjade resan.
+The **[!UICONTROL Campaign's Statistics]** KPI:er fungerar som en omfattande kontrollpanel med en detaljerad beskrivning av nyckeltal från de senaste 24 timmarna som rör kampanjen. Detta inkluderar viktig information som antalet profiler och de åtgärder som utförts, vilket ger en grundlig förståelse för kampanjens resultat och engagemang.
+
++++ Läs mer om statistik för Campaign
+
+* **[!UICONTROL Audience]**: Antal målprofiler.
+
+* **[!UICONTROL Actions delivered]**: Totalt antal unika gånger en åtgärd har levererats.
+
+* **[!UICONTROL Errors]**: Totalt antal fel som uppstod under sändningsprocessen och som förhindrar att den skickas till profiler.
+
++++
 
 <!--
 ### Experimentation tab (#experimentation-live)
@@ -56,67 +66,54 @@ From your Campaign **[!UICONTROL Live report]**, the **[!UICONTROL Experimentati
 
 ## Fliken E-post {#email-live}
 
+Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL Email]** -fliken anger huvudinformationen i relation till det e-postmeddelande som skickas i kampanjen.
+
+### E-post - Sändande prestanda {#email-sending-performance}
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_email_sending_statistics"
 >title="E-post - Sändande statistik"
 >abstract="Diagrammet E-post - Skicka statistik sammanfattar viktiga data om din e-post, som Målinriktad eller Levererad under de senaste 24 timmarna."
+
+![](assets/campaign_email_live_sending.png)
+
+The **[!UICONTROL Email - Sending Performance]** ger en detaljerad översikt över data om e-postmeddelanden som skickats inom det senaste dygnet. Den ger insikter i viktiga mätvärden som levererade och studsade, vilket möjliggör en detaljerad granskning av e-postsändningsprocessen.
+
++++ Läs mer om prestanda för e-postsändning
+
+* **[!UICONTROL Delivered]**: Antal skickade e-postmeddelanden.
+
+* **[!UICONTROL Bounces]**: Totalt antal fel som ackumulerats under sändningsprocessen och automatisk returbearbetning.
+
+* **[!UICONTROL Retries]**: Antal e-postmeddelanden i kön för återförsök.
+
+* **[!UICONTROL Errors]**: Totalt antal fel som uppstod under sändningsprocessen och som förhindrar att den skickas till profiler.
++++
+
+### E-post - statistik
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_email_statistics"
 >title="E-post - statistik"
 >abstract="Registret E-post - statistik innehåller data om profilaktivitet för din e-post de senaste 24 timmarna."
 
->[!CONTEXTUALHELP]
->id="ajo_campaign_live_email_bounce_categories"
->title="E-post - studskategorier"
->abstract="Diagram och tabell för kategorierna E-post - studsa ger data om både tillfälliga och permanenta fel från de senaste 24 timmarna."
+![](assets/campaign_email_live_statistics.png)
 
->[!CONTEXTUALHELP]
->id="ajo_campaign_live_email_performance_bydate"
->title="E-post - Prestanda efter datum"
->abstract="Diagrammet E-post - prestation efter datum visar omfattande data från de senaste 24 timmarna när det gäller skickade e-postmeddelanden, och ger insikter i viktiga mätvärden som leveranser och studsar, vilket möjliggör en detaljerad analys av e-postleveransprocessen."
+The **[!UICONTROL Sending metrics by Email]** tabellen innehåller en omfattande sammanfattning av de senaste 24 timmarna. Den sammanfattar viktiga mätvärden, inklusive målgruppens storlek och antalet lyckade e-postmeddelanden. Detta ger värdefulla insikter om hur effektiva och relevanta era e-postkampanjer är.
 
->[!CONTEXTUALHELP]
->id="ajo_campaign_live_email_bounce_reasons"
->title="E-post - studsar orsaker"
->abstract="E-post - studsar orsaksdiagram och tabell innehåller tillgängliga data som relaterar till studsade meddelanden från de senaste 24 timmarna."
++++ Läs mer om e-post - statistik
 
->[!CONTEXTUALHELP]
->id="ajo_campaign_live_email_error_reasons"
->title="E-post - felorsaker"
->abstract="Med diagrammen E-post - felorsaker och tabellen kan du identifiera de specifika fel som uppstod under sändningsprocessen de senaste 24 timmarna."
+* **[!UICONTROL Execution time]**: Starttid för varje körning av ditt återkommande e-postmeddelande. Om du bara vill rikta in dig på ett eller flera återkommande e-postmeddelanden väljer du det i dialogrutan **[!UICONTROL Execution time]** nedrullningsbar meny.
 
->[!CONTEXTUALHELP]
->id="ajo_campaign_live_email_excluded_reasons"
->title="E-post - orsaker som inte tas med"
->abstract="I diagrammen och tabellen Exkluderade orsaker visas de olika faktorer som ledde till att användarprofiler exkluderades från målgruppen och inte fick meddelandet under de senaste 24 timmarna."
+* **[!UICONTROL Targeted]**: Totalt antal meddelanden som bearbetats under sändningsprocessen.
 
->[!CONTEXTUALHELP]
->id="ajo_campaign_live_email_best_recipient"
->title="E-post - Bästa mottagardomän"
->abstract="Diagrammet E-post - Bästa mottagardomän och tabellen ger en detaljerad beskrivning av de domäner som mottagarna oftast använder för att öppna e-postmeddelandet, och ger värdefulla insikter om mottagarnas beteende de senaste 24 timmarna."
-
-Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL Email]** -fliken anger huvudinformationen i relation till det e-postmeddelande som skickas i kampanjen.
-
-![](assets/campaign_report_live_1.png)
-
-+++Läs mer om de olika mätvärden och widgetar som är tillgängliga för e-postrapporten.
-
-The **[!UICONTROL Email Sending Statistics]** widgeten innehåller information om den viktigaste informationen i förhållande till ditt meddelande:
-
-* **[!UICONTROL Delivered]**: Antal meddelanden som skickats.
-
-* **[!UICONTROL Bounces]**: Totalt antal fel som ackumulerats under sändningsprocessen och automatisk returbearbetning.
-
-* **[!UICONTROL Errors]**: Totalt antal fel som uppstod under sändningsprocessen och som förhindrar att den skickas till profiler.
-
-The **[!UICONTROL Sending metrics by Email]** tabell och **[!UICONTROL Email Summary]** diagram visar hur bra ditt e-postmeddelande är:
+* **[!UICONTROL Excluded]**: Antal användarprofiler, exkluderade från målprofilerna, som inte fick meddelandet.
 
 * **[!UICONTROL Sent]**: Totalt antal överföringar.
 
 * **[!UICONTROL Delivered]**: Antal meddelanden som skickats.
 
-* **[!UICONTROL Bounces]**: Totalt antal fel som har ackumulerats under sändningsprocessen och automatisk returbearbetning.
+* **[!UICONTROL Bounces]**: Totalt antal fel som ackumulerats under sändningsprocessen och automatisk returbearbetning.
 
 * **[!UICONTROL Errors]**: Totalt antal fel som uppstod under sändningsprocessen och som förhindrar att den skickas till profiler.
 
@@ -128,7 +125,28 @@ The **[!UICONTROL Sending metrics by Email]** tabell och **[!UICONTROL Email Sum
 
 * **[!UICONTROL Spam complaints]**: Antal gånger ett meddelande har deklarerats som skräppost eller skräppost.
 
-The **[!UICONTROL Bounce Reasons]** och **[!UICONTROL Bounce categories]** widgetar innehåller tillgängliga data som är relaterade till studsade meddelanden, som:
+* **[!UICONTROL Retries]**: Antal e-postmeddelanden i kön för återförsök.
++++
+
+### E-post - studskategorier och orsaker {#bounce-categories}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_live_email_bounce_categories"
+>title="E-post - studskategorier"
+>abstract="Diagram och tabell för kategorierna E-post - studsa ger data om både tillfälliga och permanenta fel från de senaste 24 timmarna."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_live_email_bounce_reasons"
+>title="E-post - studsar orsaker"
+>abstract="E-post - studsar orsaksdiagram och tabell innehåller tillgängliga data som relaterar till studsade meddelanden från de senaste 24 timmarna."
+
+![](assets/campaign_live_email_bounce_categories.png)
+
+The **[!UICONTROL Bounce reasons]** och **[!UICONTROL Bounce categories]** -widgetar sammanställer tillgängliga data från de senaste 24 timmarna för studsade meddelanden och ger detaljerade insikter om de specifika orsakerna och kategorierna bakom e-postgränserna.
+
+Mer information om studsar finns i [Undertryckningslista](../reports/suppression-list.md) sida.
+
++++ Läs mer om e-post - studskategorier och anledningsstatistik
 
 * **[!UICONTROL Hard bounce]**: Det totala antalet permanenta fel, t.ex. fel e-postadress. Detta inbegriper ett felmeddelande som uttryckligen anger att adressen är ogiltig, till exempel Okänd användare.
 
@@ -136,83 +154,20 @@ The **[!UICONTROL Bounce Reasons]** och **[!UICONTROL Bounce categories]** widge
 
 * **[!UICONTROL Ignored]**: Det totala antalet tillfälliga, t.ex. frånvaro, eller ett tekniskt fel, t.ex. om avsändartypen är postmaster.
 
-The **[!UICONTROL Error Reasons]** och **[!UICONTROL Exclude Reasons]** Med diagram och tabeller kan du se vilka fel och undantag som inträffade under sändningsprocessen.
-
-The **[!UICONTROL Email - Best recipient domain]** diagram och tabeller visar vilka domäner som är de mest använda av mottagarna för att öppna e-postmeddelandet.
 +++
 
-## Fliken I appen {#inapp-live}
+### E-post - Prestanda efter datum {#email-performance-date}
 
 >[!CONTEXTUALHELP]
->id="ajo_campaign_live_inapp_performance"
->title="Prestanda i appen"
->abstract="KPI:erna för prestanda i appen ger viktiga insikter i besökarnas engagemang med meddelanden i appen de senaste 24 timmarna."
+>id="ajo_campaign_live_email_performance_bydate"
+>title="E-post - Prestanda efter datum"
+>abstract="Diagrammet E-post - prestation efter datum visar omfattande data från de senaste 24 timmarna när det gäller skickade e-postmeddelanden och ger insikter i viktiga mätvärden som levererade och studsade, vilket möjliggör en detaljerad analys av e-postsändningsprocessen."
 
->[!CONTEXTUALHELP]
->id="ajo_campaign_live_inapp_interactions"
->title="Interaktioner per typ"
->abstract="Interaktionen per typ av diagram och tabell visar hur användarna interagerade med meddelandet i appen genom att spåra varje klick, avbruten eller interaktion de senaste 24 timmarna."
+![](assets/campaign_email_live_performance.png)
 
->[!CONTEXTUALHELP]
->id="ajo_campaign_live_inapp_summary"
->title="Sammanfattning i appen"
->abstract="I sammanfattningsdiagrammet i appen visas utvecklingen av dina visningar och interaktioner i appen under de senaste 24 timmarna."
+The **[!UICONTROL Email - Performance by date]** widgeten ger en detaljerad översikt över viktig information om dina meddelanden, som presenteras i ett diagram, och ger insikter om prestandatrender under de senaste 24 timmarna.
 
-Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL In-app]** -fliken innehåller information om huvudinformationen i förhållande till de meddelanden i appen som skickas i kampanjen.
-
-+++Läs mer om de olika mätvärden och widgetar som är tillgängliga för rapporten i appen.
-
-The **[!UICONTROL In-app performance]** Nyckeltal anger den viktigaste informationen i relation till besökarnas engagemang i era meddelanden i appen, som:
-
-* **[!UICONTROL Impressions]**: totalt antal meddelanden i appen som skickats till alla användare.
-
-* **[!UICONTROL Interactions]**: totalt antal ärenden för meddelandet i appen. Detta inkluderar alla åtgärder som användaren utför, t.ex. klickningar, uppsägningar eller annan interaktion.
-
-The **[!UICONTROL In-app summary]** diagram visar utvecklingen av dina visningar och interaktioner i appen för den aktuella perioden.
-
-The **[!UICONTROL Interactions by type]** diagram och tabeller visar hur användare interagerade med meddelanden i appen genom att spåra varje klick, avgång eller interaktion.
-
-+++
-
-## Fliken Push-meddelanden {#push-live}
-
->[!CONTEXTUALHELP]
->id="ajo_campaign_live_push_sending_performance"
->title="Push-meddelande - Sändande prestanda"
->abstract="Prestandadiagrammet för push-meddelandesändning sammanfattar viktiga data om ditt push-meddelande, till exempel fel eller levererade meddelanden från de senaste 24 timmarna."
-
->[!CONTEXTUALHELP]
->id="ajo_campaign_live_push_statistics"
->title="Push-meddelande - statistik"
->abstract="Tabellen Push-statistik innehåller data om mottagaraktivitet för ditt push-meddelande från de senaste 24 timmarna."
-
->[!CONTEXTUALHELP]
->id="ajo_campaign_live_push_sending_summary"
->title="Push-meddelande - Skickar sammanfattning"
->abstract="I diagrammet Översikt över sändning av push-meddelanden visas tillgängliga data för skickade push-meddelanden från de senaste 24 timmarna."
-
->[!CONTEXTUALHELP]
->id="ajo_campaign_live_push_excluded_reasons"
->title="Push-meddelande - Undantagna orsaker"
->abstract="I diagrammen och tabellen Exkluderade orsaker visas de olika faktorer som ledde till att användarprofiler exkluderades från målgruppen och inte fick meddelandet under de senaste 24 timmarna."
-
->[!CONTEXTUALHELP]
->id="ajo_campaign_live_push_error_reasons"
->title="Push-meddelande - felorsaker"
->abstract="Med diagrammen och tabellen Felorsaker kan du identifiera de specifika fel som inträffade de senaste 24 timmarna under sändningsprocessen."
-
->[!CONTEXTUALHELP]
->id="ajo_campaign_live_push_breakdown_platform"
->title="Push-meddelande - uppdelning efter plattform"
->abstract="Diagram och tabell över uppdelningar per plattform visar hur väl push-meddelandena lyckades under de senaste 24 timmarna baserat på mottagarens operativsystem."
-
-Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL Push notification]** -fliken anger huvudinformationen i förhållande till push-meddelandet som skickas i kampanjen.
-
-![](assets/campaign_report_live_2.png)
-
-+++Läs mer om de olika mätvärden och widgetar som är tillgängliga för rapporten Push.
-
-**[!UICONTROL Push notification sending performance]**, **[!UICONTROL Push notification summary]** och **[!UICONTROL Push notification - Statistics]** widgetar anger huvudinformationen i förhållande till ditt meddelande:
++++ Läs mer om e-post - Mätning av prestanda efter datum och orsaker
 
 * **[!UICONTROL Sent]**: Totalt antal överföringar.
 
@@ -224,51 +179,258 @@ Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL Push notification]*
 
 * **[!UICONTROL Opens]**: Antal gånger ett meddelande öppnades.
 
+* **[!UICONTROL Clicks]**: Antal gånger som användaren klickat på ett innehåll.
+
+* **[!UICONTROL Unsubscriptions]**: Antal klick på länken för att avbryta prenumerationen.
+
+* **[!UICONTROL Spam complaints]**: Antal gånger ett meddelande har deklarerats som skräppost eller skräppost.
+
++++
+
+### Felorsaker {#email-error-reasons}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_live_email_error_reasons"
+>title="E-post - felorsaker"
+>abstract="Med diagrammen E-post - felorsaker och tabellen kan du identifiera de specifika fel som uppstod under sändningsprocessen de senaste 24 timmarna."
+
+![](assets/campaign_email_live_error.png)
+
+The **[!UICONTROL Error Reasons]** diagram och tabeller ger insikt i de specifika fel som uppstått under sändningsprocessen de senaste 24 timmarna. Denna information är värdefull för att förstå felens art och frekvens.
+
+### Undantagna orsaker {#email-exclude-reasons}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_live_email_excluded_reasons"
+>title="E-post - orsaker som inte tas med"
+>abstract="I diagrammen och tabellen Exkluderade orsaker visas de olika faktorer som ledde till att användarprofiler exkluderades från målgruppen och inte fick meddelandet under de senaste 24 timmarna."
+
+![](assets/campaign_email_live_excluded.png)
+
+The **[!UICONTROL Excluded Reasons]** diagram och tabeller ger ett omfattande perspektiv på de olika faktorer som har lett till att användarprofiler har uteslutits från målgruppen de senaste 24 timmarna.
+
+Se [den här sidan](exclusion-list.md) En fullständig förteckning över orsaker till uteslutning.
+
+### E-post - Bästa mottagardomän {#email-best-recipient}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_live_email_best_recipient"
+>title="E-post - Bästa mottagardomän"
+>abstract="Diagrammet E-post - Bästa mottagardomän och tabellen ger en detaljerad beskrivning av de domäner som mottagarna oftast använder för att öppna e-postmeddelandet, och ger värdefulla insikter om mottagarnas beteende de senaste 24 timmarna."
+
+![](assets/campaign_email_live_recipient.png)
+
+The **[!UICONTROL Email - Best recipient domain]** diagram och tabeller ger en detaljerad beskrivning av de domäner som oftast används av profiler för att öppna e-postmeddelanden de senaste 24 timmarna. Detta ger värdefulla insikter om profilbeteendet och hjälper er att förstå vilka plattformar ni föredrar.
+
+### E-posterbjudanden {#email-offers}
+
+>[!NOTE]
+>
+>Widgetarna och mätvärdena för erbjudanden är bara tillgängliga om ett beslut har infogats i ett e-postmeddelande. Mer information om beslutsförvaltning finns i denna [page](../offers/get-started/starting-offer-decisioning.md).
+
+The **[!UICONTROL Offers statistic]** och **[!UICONTROL Offers statistics over time]** widgetar mäter hur väl erbjudandet har lyckats och vilken effekt det har på er målgrupp. Den innehåller detaljerad huvudinformation om meddelandet med KPI:er.
+
++++ Läs mer om e-post - ger statistik
+
+* **[!UICONTROL Offer sent]**: Totalt antal utskick för erbjudandet.
+
+* **[!UICONTROL Offer impression]**: Antal gånger som erbjudandet öppnades i e-postmeddelanden.
+
+* **[!UICONTROL Offer clicks]**: Antal gånger ett erbjudande klickades på i dina e-postmeddelanden.
+
++++
+
+## Fliken I appen {#inapp-live}
+
+Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL In-app]** -fliken innehåller information om huvudinformationen i förhållande till de meddelanden i appen som skickas i kampanjen.
+
+### Prestanda i appen {#inapp-performance}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_live_inapp_performance"
+>title="Prestanda i appen"
+>abstract="KPI:erna för prestanda i appen ger viktiga insikter i besökarnas engagemang med meddelanden i appen de senaste 24 timmarna."
+
+The **[!UICONTROL In-app performance]** Nyckeltal ger viktiga insikter i era profilers engagemang med meddelanden i appen de senaste 24 timmarna, vilket ger viktiga mätvärden för att utvärdera effektiviteten och effekten av era kampanjer i appen.
+
++++ Läs mer om prestandamätningar i appen
+
+* **[!UICONTROL Impressions]**: totalt antal meddelanden i appen som skickats till alla användare.
+
+* **[!UICONTROL Interactions]**: totalt antal ärenden för meddelandet i appen. Detta inkluderar alla åtgärder som användaren utför, t.ex. klickningar, uppsägningar eller annan interaktion.
+
++++
+
+### Sammanfattning i appen {#inapp-summary}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_live_inapp_summary"
+>title="Sammanfattning i appen"
+>abstract="I sammanfattningsdiagrammet i appen visas utvecklingen av dina visningar och interaktioner i appen under de senaste 24 timmarna."
+
+The **[!UICONTROL In-app summary]** I diagrammet visas utvecklingen av dina visningar och interaktioner i appen under de senaste 24 timmarna, vilket ger en omfattande översikt över hur dina meddelanden i appen fungerar.
+
++++ Läs mer om sammanfattningsstatistik i appar
+
+* **[!UICONTROL Impressions]**: totalt antal meddelanden i appen som levereras till alla användare.
+
+* **[!UICONTROL Interactions]**: totalt antal ärenden för meddelandet i appen. Detta inkluderar alla åtgärder som användaren utför, t.ex. klickningar, uppsägningar eller annan interaktion.
+
++++
+
+### Interaktioner per typ {#inapp-interactions}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_live_inapp_interactions"
+>title="Interaktioner per typ"
+>abstract="Interaktionen per typ av diagram och tabell visar hur användarna interagerade med meddelandet i appen genom att spåra varje klick, avbruten eller interaktion de senaste 24 timmarna."
+
+The **[!UICONTROL Interactions by type]** diagram och tabeller ger en detaljerad beskrivning av hur profiler interagerade med meddelandet i appen de senaste 24 timmarna, spårningsåtgärder som klickningar, uppsägningar eller andra former av engagemang.
+
+## Fliken Push-meddelanden {#push-live}
+
+Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL Push notification]** -fliken anger huvudinformationen i förhållande till push-meddelandet som skickas i kampanjen.
+
+### Push-meddelande - Sändande prestanda {#push-sending-performance}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_live_push_sending_performance"
+>title="Push-meddelande - Sändande prestanda"
+>abstract="Prestandadiagrammet för push-meddelandesändning sammanfattar viktiga data om ditt push-meddelande, till exempel fel eller levererade meddelanden från de senaste 24 timmarna."
+
+![](assets/campain_push_live_sending_performance.png)
+
+The **[!UICONTROL Push notification sending performance]** diagrammet ger en grundlig översikt över data som rör push-meddelanden som skickats de senaste 24 timmarna. Den ger insikter i viktiga mätvärden som levererade och studsade, vilket möjliggör en detaljerad granskning av sändningsprocessen för push-meddelanden.
+
++++ Läs mer om push-meddelanden - Skicka prestandamått
+
+* **[!UICONTROL Delivered]**: Antal meddelanden som skickats.
+
+* **[!UICONTROL Bounces]**: Totalt antal fel som ackumulerats under sändningsprocessen och automatisk returbearbetning.
+
+* **[!UICONTROL Errors]**: Totalt antal fel som uppstod under sändningsprocessen och som förhindrar att den skickas till profiler.
+
++++
+
+### Push-meddelande - statistik {#push-statistics}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_live_push_statistics"
+>title="Push-meddelande - statistik"
+>abstract="Tabellen Push-statistik innehåller data om mottagaraktivitet för ditt push-meddelande från de senaste 24 timmarna."
+
+![](assets/campaign_push_live_statistics.png)
+
+The **[!UICONTROL Push notification - Statistics]** tabellen ger en kortfattad sammanfattning av viktiga data relaterade till dina push-meddelanden inom de senaste 24 timmarna, inklusive nyckeltal som antalet riktade meddelanden och antalet lyckade levererade meddelanden.
+
++++ Läs mer om push-meddelanden - statistik
+
+* **[!UICONTROL Execution time]**: Starttid för varje körning av ditt återkommande push-meddelande. Om du bara vill ange ett eller flera återkommande push-meddelanden som mål väljer du det på menyn **[!UICONTROL Execution time]** nedrullningsbar meny.
+
+* **[!UICONTROL Targeted]**: Totalt antal meddelanden som bearbetats under sändningsprocessen.
+
+* **[!UICONTROL Excluded]**: Antal användarprofiler, exkluderade från målprofilerna, som inte fick meddelandet.
+
+* **[!UICONTROL Sent]**: Totalt antal överföringar.
+
+* **[!UICONTROL Delivered]**: Antal meddelanden som skickats.
+
+* **[!UICONTROL Bounces]**: Totalt antal fel som ackumulerats under sändningsprocessen och automatisk returbearbetning.
+
+* **[!UICONTROL Errors]**: Totalt antal fel som uppstod under sändningsprocessen och som förhindrar att den skickas till profiler.
+
+* **[!UICONTROL Opens]**: Antal gånger ett meddelande öppnades.
+
++++
+
+### Push-meddelande - Skickar sammanfattning {#push-sending-summary}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_live_push_sending_summary"
+>title="Push-meddelande - Skickar sammanfattning"
+>abstract="I diagrammet Översikt över sändning av push-meddelanden visas tillgängliga data för skickade push-meddelanden från de senaste 24 timmarna."
+
+The **[!UICONTROL Push notification - Statistics]** graph erbjuder en dynamisk representation som visar en analys av din push-meddelandeaktivitet de senaste 24 timmarna. Denna grafiska representation ger en omfattande beskrivning av skickade push-meddelanden.
+
++++ Läs mer om push-meddelanden - Skicka sammanfattningsmått
+
+* **[!UICONTROL Opens]**: Antal gånger ditt push-meddelande öppnades.
+
 * **[!UICONTROL Actions]**: Totalt antal åtgärder för push-meddelandet som levererats, t.ex. knappklickning eller avvisning.
 
-* **[!UICONTROL Engagements]**: Totalt antal öppningar och åtgärder för detta push-meddelande, dvs. om profilen öppnade push-meddelandet eller om någon klickade på en knapp.
+* **[!UICONTROL Bounces]**: Totalt antal fel som ackumulerats och automatisk returbehandling i relation till totalt antal skickade meddelanden.
 
-The **[!UICONTROL Error Reasons]** och **[!UICONTROL Exclude Reasons]** Med diagram och tabeller kan du se vilka fel och undantag som inträffade under sändningsprocessen.
+* **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
 
-The **[!UICONTROL Sending statistics - Failed]** kan du se hur många fel och studsar som har inträffat.
+* **[!UICONTROL Errors]**: Totalt antal fel som har inträffat som förhindrar att den skickas till profiler.
 
-The **[!UICONTROL Tracking by platform]**, **[!UICONTROL Sending by platform]** och **[!UICONTROL Breakdown by platform]** diagram och tabeller visar hur bra push-meddelandena är beroende på vilket operativsystem som används.
++++
+
+### Push-meddelande - Undantagna orsaker {#push-excluded}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_live_push_excluded_reasons"
+>title="Push-meddelande - Undantagna orsaker"
+>abstract="I diagrammen och tabellen Exkluderade orsaker visas de olika faktorer som ledde till att användarprofiler exkluderades från målgruppen och inte fick meddelandet under de senaste 24 timmarna."
+
+The **[!UICONTROL Excluded Reasons]** I diagram och tabeller visas de olika anledningar som gjorde att användarprofiler som inte ingår i målprofilerna kunde ta emot push-meddelanden under de senaste 24 timmarna.
+
+Se [den här sidan](exclusion-list.md) En fullständig förteckning över orsaker till uteslutning.
+
+### Push-meddelande - felorsaker {#push-error}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_live_push_error_reasons"
+>title="Push-meddelande - felorsaker"
+>abstract="Med diagrammen och tabellen Felorsaker kan du identifiera de specifika fel som inträffade de senaste 24 timmarna under sändningsprocessen."
+
+The **[!UICONTROL Error Reasons]** Med tabeller och diagram kan du identifiera de specifika fel som uppstod under sändningsprocessen för push-meddelanden inom de senaste 24 timmarna och få detaljerade insikter om eventuella problem som påträffats längs vägen.
+
+### Push-meddelande - uppdelning efter plattform {#push-breakdown-platform}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_live_push_breakdown_platform"
+>title="Push-meddelande - uppdelning efter plattform"
+>abstract="Diagram och tabell över uppdelningar per plattform visar hur väl push-meddelandena lyckades under de senaste 24 timmarna baserat på mottagarens operativsystem."
+
+The **[!UICONTROL Push notification - Breakdown by platform]** diagram och tabeller ger en detaljerad analys av hur väl push-meddelandena har lyckats de senaste 24 timmarna och ger insikter baserat på din profils operativsystem. Den här nedbrytningen ger en bättre förståelse för hur bra dina push-meddelanden fungerar på olika plattformar.
+
++++ Läs mer om push-meddelanden - Uppdelning efter plattformsmått
+
+* **[!UICONTROL Targeted]**: Totalt antal meddelanden som bearbetats under analysen.
+
+* **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
+
+* **[!UICONTROL Opens]**: Antal gånger ditt push-meddelande öppnades.
+
+* **[!UICONTROL Actions]**: Totalt antal åtgärder för push-meddelandet som levererats, t.ex. knappklickning eller avvisning.
+
+* **[!UICONTROL Bounces]**: Totalt antal fel som ackumulerats och automatisk returbehandling i relation till totalt antal skickade meddelanden.
+
+* **[!UICONTROL Errors]**: Totalt antal fel som har inträffat som förhindrar att den skickas till profiler.
+
+* **[!UICONTROL Excluded]**: Antal profiler som har uteslutits av Adobe Journey Optimizer.
+
 +++
 
 ## fliken SMS {#sms-live}
+
+Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL SMS]** -fliken innehåller huvudinformationen om SMS-meddelandet som skickas i kampanjen.
+
+### SMS - statistik {#sms-statistics}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_sms_statistics"
 >title="SMS - statistik"
 >abstract="Registret SMS Sending Statistics sammanfattar viktiga data om dina SMS-meddelanden som riktade eller levererade meddelanden från de senaste 24 timmarna."
 
->[!CONTEXTUALHELP]
->id="ajo_campaign_live_sms_performance"
->title="SMS - Prestanda per datum"
->abstract="Widgeten SMS Performance by Date (SMS-prestanda efter datum) innehåller viktig information om dina meddelanden under de senaste 24 timmarna via en grafisk representation."
+![](assets/campaign_live_sms_statistics.png)
 
->[!CONTEXTUALHELP]
->id="ajo_campaign_live_sms_error_reasons"
->title="SMS - Felorsaker"
->abstract="Med hjälp av diagram och tabeller för felorsaker kan du identifiera de specifika fel som uppstått under de senaste 24 timmarna under sändningsprocessen."
+The **[!UICONTROL SMS - Statistics]** tabellen ger en kortfattad sammanfattning av viktiga data relaterade till era SMS-meddelanden under de senaste 24 timmarna, med nyckeltal som antalet riktade meddelanden och antalet lyckade meddelanden.
 
->[!CONTEXTUALHELP]
->id="ajo_campaign_live_sms_excluded_reasons"
->title="SMS - Undantagna orsaker"
->abstract="I diagrammen och tabellen Exkluderade orsaker visas de olika faktorer som ledde till att användarprofiler exkluderades från målgruppen och inte fick meddelandet under de senaste 24 timmarna."
++++ Läs mer om SMS - statistik
 
->[!CONTEXTUALHELP]
->id="ajo_campaign_live_sms_bounces_reasons"
->title="SMS - studsar orsaker"
->abstract="Diagram och tabell över studentorsaker innehåller tillgängliga data från de senaste 24 timmarna för studsade meddelanden."
-
-Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL SMS]** -fliken innehåller huvudinformationen om SMS-meddelandet som skickas i kampanjen.
-
-![](assets/campaign_report_live_3.png)
-
-+++Läs mer om de olika mätvärden och widgetar som är tillgängliga för SMS-rapporten.
-
-The **[!UICONTROL SMS - Statistics]** tabellen visar hur ditt SMS lyckades:
+* **[!UICONTROL Execution time]**: Starttid för varje körning av ditt återkommande SMS-meddelande. Om du bara vill rikta in dig på ett eller flera återkommande SMS-meddelanden väljer du det i dialogrutan **[!UICONTROL Execution time]** nedrullningsbar meny.
 
 * **[!UICONTROL Targeted]**: Antal användarprofiler som kvalificerar sig som målprofiler.
 
@@ -282,7 +444,20 @@ The **[!UICONTROL SMS - Statistics]** tabellen visar hur ditt SMS lyckades:
 
 * **[!UICONTROL Clicks]**: Totalt antal URL-besök.
 
-The **[!UICONTROL SMS Performance by date]** widgeten visar huvudinformationen i förhållande till meddelandet med ett diagram:
++++
+
+### SMS - Prestanda per datum {#sms-perfomance-date}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_live_sms_performance"
+>title="SMS - Prestanda per datum"
+>abstract="Widgeten SMS Performance by Date (SMS-prestanda efter datum) innehåller viktig information om dina meddelanden under de senaste 24 timmarna via en grafisk representation."
+
+![](assets/campaign_live_sms_performance_date.png)
+
+The **[!UICONTROL SMS Performance by date]** widgeten ger en detaljerad översikt över viktig information om dina meddelanden, som presenteras i ett diagram, och ger insikter om prestandatrender under de senaste 24 timmarna.
+
++++ Läs mer om SMS - Prestanda efter datummått
 
 * **[!UICONTROL Sent]**: Totalt antal överföringar.
 
@@ -290,65 +465,106 @@ The **[!UICONTROL SMS Performance by date]** widgeten visar huvudinformationen i
 
 * **[!UICONTROL Errors]**: Totalt antal fel som uppstod under sändningsprocessen och som förhindrar att den skickas till profiler.
 
-The **[!UICONTROL Exclude Reasons]**, **[!UICONTROL Bounces Reasons]** och **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du se vilka fel och undantag som inträffade under sändningsprocessen.
 +++
 
+### SMS - Felorsaker {#sms-error-reasons}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_live_sms_error_reasons"
+>title="SMS - Felorsaker"
+>abstract="Med hjälp av diagram och tabeller för felorsaker kan du identifiera de specifika fel som uppstått under de senaste 24 timmarna under sändningsprocessen."
+
+The **[!UICONTROL Excluded Reasons]** Med diagram och tabeller kan du identifiera de specifika fel som uppstod under sändningsprocessen för SMS-meddelanden inom de senaste 24 timmarna, vilket gör det enklare att göra en grundlig analys av eventuella problem som uppstått.
+
+### SMS - Undantagna orsaker {#sms-excluded-reasons}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_live_sms_excluded_reasons"
+>title="SMS - Undantagna orsaker"
+>abstract="I diagrammen och tabellen Exkluderade orsaker visas de olika faktorer som ledde till att användarprofiler exkluderades från målgruppen och inte fick meddelandet under de senaste 24 timmarna."
+
+![](assets/campaign_live_sms_excluded.png)
+
+The **[!UICONTROL Excluded Reasons]** grafer och tabeller visar visuellt de olika faktorer som ledde till att användarprofiler exkluderades från målgruppen, vilket hindrade dem från att ta emot SMS-meddelanden de senaste 24 timmarna.
+
+Se [den här sidan](exclusion-list.md) En fullständig förteckning över orsaker till uteslutning.
+
+### SMS - studsar orsaker {#sms-bounces-reasons}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_live_sms_bounces_reasons"
+>title="SMS - studsar orsaker"
+>abstract="Diagram och tabell över studentorsaker innehåller tillgängliga data från de senaste 24 timmarna för studsade meddelanden."
+
+The **[!UICONTROL Bounces Reasons]** diagram och tabeller ger en omfattande översikt över data relaterade till studsade SMS-meddelanden och ger värdefulla insikter om de specifika orsakerna bakom instanserna av SMS-meddelandestudsar under de senaste 24 timmarna.
+
 ## Fliken Webb {#web-tab}
+
+Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL Web]** -fliken anger huvudinformationen för dina webbsidor.
+
+### Webbprestanda {#web-performance}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_web_performance"
 >title="Webbprestanda"
 >abstract="KPI:erna för Web Performance ger omfattande information om besökarnas engagemang med dina webbupplevelser de senaste 24 timmarna."
 
+![](assets/campaign_live_web_performance.png)
+
+The **[!UICONTROL Web performance]** KPI:er ger omfattande insikter om besökarnas engagemang för era webbsidor de senaste 24 timmarna, med nyckeltal som Impressions och Interactions.
+
++++ Läs mer om mätvärden för webbprestanda
+
+* **[!UICONTROL Impressions]**: totalt antal webbupplevelser som levereras till alla användare.
+
+* **[!UICONTROL Interactions]**: totalt antal interaktioner med din webbsida. Detta inkluderar alla åtgärder som användaren utför, t.ex. klickningar eller andra interaktioner.
+
++++
+
+### Webbsammanfattning {#web-summary}
+
+![](assets/campaign_live_web_summary.png)
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_web_summary"
 >title="Webbsammanfattning"
 >abstract="I webbsammanfattningsdiagrammet visas hur webbupplevelserna har utvecklats, inklusive visningar, unika intryck och interaktioner från de senaste 24 timmarna."
+
+The **[!UICONTROL Web summary]** diagram visar hur webbupplevelserna har utvecklats (intryck, unika intryck och interaktioner) de senaste 24 timmarna.
+
++++ Läs mer om webbsammanfattningsstatistik
+
+* **[!UICONTROL Impressions]**: totalt antal webbupplevelser som levereras till alla användare.
+
+* **[!UICONTROL Interactions]**: totalt antal interaktioner med din webbsida. Detta inkluderar alla åtgärder som användaren utför, t.ex. klickningar eller andra interaktioner.
+
++++
+
+### Interaktioner per element {#web-interactions}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_web_interactions"
 >title="Interaktioner per element"
 >abstract="Tabellen Interaktioner per element innehåller viktig information om besökarnas engagemang med olika element på webbsidorna de senaste 24 timmarna."
 
-Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL Web]** -fliken anger huvudinformationen för dina webbsidor.
-
-+++Läs mer om de olika mätvärden och widgetar som finns för webbrapporten.
-
-The **[!UICONTROL Web performance]** Nyckeltal anger den viktigaste informationen i relation till besökarnas engagemang i era webbupplevelser, till exempel:
-
-* **[!UICONTROL Impressions]**: totalt antal webbupplevelser som levereras till alla användare.
-
-* **[!UICONTROL Interactions]**: totalt antal interaktioner med din webbsida. Detta inkluderar alla åtgärder som användaren utför, t.ex. klickningar eller andra interaktioner.
-
-The **[!UICONTROL Web summary]** diagram visar hur webbupplevelserna har utvecklats (intryck, unika intryck och interaktioner) de senaste 24 timmarna.
-
-The **[!UICONTROL Interactions by element]** tabellen innehåller huvudinformationen om besökarnas engagemang för de olika elementen på webbsidorna.
-+++
+The **[!UICONTROL Interactions by element]** tabellen visar omfattande information om besökarnas engagemang för de olika elementen på webbsidorna de senaste 24 timmarna, och ger värdefulla insikter om användarinteraktioner och -preferenser.
 
 ## Fliken Direktreklam {#direct-mail-tab}
+
+Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL Direct mail]** -fliken anger huvudinformationen i förhållande till din Direct-post.
+
+### Direktreklam - skicka statistik {#direct-mail-sending}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_direct_sending_statistics"
 >title="Direktreklam - skicka statistik"
 >abstract="Registret Skicka direkt e-post - statistik sammanfattar viktiga data från de senaste 24 timmarna om dina Direct-e-postmeddelanden, som riktade eller levererade meddelanden."
 
->[!CONTEXTUALHELP]
->id="ajo_campaign_live_direct_error_reasons"
->title="Direktreklam - felorsaker"
->abstract="Med diagrammen och tabellen Direktreklam - Felorsaker kan du identifiera de specifika fel som har uppstått under de senaste 24 timmarna."
+![](assets/campaign_live_directmail_statistics.png)
 
->[!CONTEXTUALHELP]
->id="ajo_campaign_live_direct_excluded_reasons"
->title="Direktreklam - orsaker som inte ingår"
->abstract="Diagram och tabell över orsaker till varför direktreklam exkluderades visar de olika faktorer som ledde till användarprofiler, som uteslöts från målgruppen och inte fick meddelandet de senaste 24 timmarna."
+The **[!UICONTROL Direct Mail - Sending statistics]** tabellen ger en kortfattad sammanfattning av viktiga data relaterade till dina Direct Mail-meddelanden, med nyckeltal som antalet målmeddelanden och antalet lyckade meddelanden under de senaste 24 timmarna.
 
-Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL Direct mail]** -fliken anger huvudinformationen i förhållande till din Direct-post.
-
-![](assets/direct-mail-report_2.png)
-
-+++Läs mer om de olika mätvärden och widgetar som finns för rapporten Direct mail.
-
-The **[!UICONTROL Direct Mail - Sending statistics]** tabellen visar hur bra ditt Direct-postmeddelande är:
++++ Läs mer om direktreklam - statistik skickas
 
 * **[!UICONTROL Targeted]**: Antal användarprofiler som kvalificerar sig som målprofiler.
 
@@ -358,8 +574,31 @@ The **[!UICONTROL Direct Mail - Sending statistics]** tabellen visar hur bra dit
 
 * **[!UICONTROL Excluded]**: Antal användarprofiler, exkluderade från målprofilerna, som inte fick ditt direktutskick.
 
-The **[!UICONTROL Direct Mail - Excluded reasons]** och **[!UICONTROL Direct Mail - Error reasons]** Med diagram och tabeller kan du se vilka fel och undantag som inträffade under sändningsprocessen.
 +++
+
+### Direktreklam - felorsaker {#direct-mail-error-reasons}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_live_direct_error_reasons"
+>title="Direktreklam - felorsaker"
+>abstract="Med diagrammen och tabellen Direktreklam - Felorsaker kan du identifiera de specifika fel som har uppstått under de senaste 24 timmarna."
+
+![](assets/campaign_live_error_reasons.png)
+
+The **[!UICONTROL Direct Mail - Error reasons]** Med diagram och tabeller kan du identifiera specifika fel som uppstått under sändningsprocessen för dina direktmeddelanden, vilket gör att du kan göra en detaljerad analys av eventuella problem som uppstått under de senaste 24 timmarna.
+
+### Direktreklam - orsaker som inte ingår {#direct-mail-excluded-reasons}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_live_direct_excluded_reasons"
+>title="Direktreklam - orsaker som inte ingår"
+>abstract="Diagram och tabell över orsaker till varför direktreklam exkluderades visar de olika faktorer som ledde till användarprofiler, som uteslöts från målgruppen och inte fick meddelandet de senaste 24 timmarna."
+
+![](assets/campaign_live_directmail_excluded.png)
+
+The **[!UICONTROL Direct Mail - Excluded reasons]** diagram och tabeller som illustrerar de olika faktorer som har lett till att användarprofiler har tagits bort från målgruppen, vilket förhindrar dem från att ta emot direktreklam de senaste 24 timmarna.
+
+Se [den här sidan](exclusion-list.md) En fullständig förteckning över orsaker till uteslutning.
 
 ## Ytterligare resurser
 
