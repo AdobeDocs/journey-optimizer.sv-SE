@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e3781f79-7c8d-4512-b44f-835639b1471f
-source-git-commit: d26dbebaf36241d0e91c36c95f83ce6cf712ecee
+source-git-commit: fa704bd6c82a3068f163bb74542107b34f1815d1
 workflow-type: tm+mt
-source-wordcount: '2314'
+source-wordcount: '2647'
 ht-degree: 0%
 
 ---
@@ -46,11 +46,21 @@ Från din resa **[!UICONTROL Live report]**, **[!UICONTROL Journey]** -fliken ge
 
 ### Resans resultat {#journey-performance}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_performance_live"
+>title="Resans resultat"
+>abstract="XX"
+
 ![](assets/journey_live_performance.png)
 
 **[!UICONTROL Journey Performance]** gör att du kan se vägen för dina målprofiler steg för steg under hela kundresan.
 
 ### Resestatistik {#journey-statistics}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_statistics_live"
+>title="Resestatistik"
+>abstract="XX"
 
 ![](assets/journey_live_statistics.png)
 
@@ -67,6 +77,11 @@ The **[!UICONTROL Journey Statistics]** KPI (Key Performance Indicators) fungera
 
 ### Åtgärd utförd de senaste 24 timmarna {#action-executed}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_actions_executed_live"
+>title="Åtgärd utförd de senaste 24 timmarna"
+>abstract="XX"
+
 ![](assets/journey_live_executed_24hours.png)
 
 The **[!UICONTROL Action executed over the last 24 hours]** widgeten är den mest framgångsrika åtgärden som inträffade när dina åtgärder utlöstes.
@@ -80,6 +95,11 @@ The **[!UICONTROL Action executed over the last 24 hours]** widgeten är den mes
 +++
 
 ### Körda åtgärder och fel {#actions-errors}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_actions_executed__errors_live"
+>title="Körda åtgärder och fel"
+>abstract="XX"
 
 ![](assets/journey_live_actions_errors.png)
 
@@ -95,11 +115,21 @@ The **[!UICONTROL Actions executed and errors]** -widgeten är den mest framgån
 
 ### Orsaker till funktionsfel {#actions-error-reasons}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_actions_errors_live"
+>title="Orsaker till funktionsfel"
+>abstract="XX"
+
 ![](assets/journey_live_error_reasons.png)
 
 The **[!UICONTROL Action error reasons]** tabell och diagram innehåller en omfattande översikt över fel som inträffat under utförandet av dina åtgärder under de senaste 24 timmarna.
 
 ### Feltyp efter åtgärder {#error-type-actions}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_actions_error_type_live"
+>title="Feltyp efter åtgärder"
+>abstract="XX"
 
 ![](assets/journey_live_error_type.png)
 
@@ -107,17 +137,32 @@ The **[!UICONTROL Error type by actions]** tabellen och diagrammet innehåller e
 
 ### Händelse som har utförts under de senaste 24 timmarna {#event-executed-24hours}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_event_24hours_live"
+>title="Händelse som har utförts under de senaste 24 timmarna"
+>abstract="XX"
+
 ![](assets/journey_live_event_24hours.png)
 
 The **[!UICONTROL Event executed over the last 24 hours]** Med kan du identifiera vilka av dina händelser som har slutförts under de senaste 24 timmarna.
 
 ### Händelser {#events}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_events_live"
+>title="Händelser"
+>abstract="XX"
+
 ![](assets/journey_live_events.png)
 
 The **[!UICONTROL Events]** kan du se vilken av dina händelser som utfördes genom sammanfattningsnummer, diagram och tabell.
 
 ### Händelser efter ursprung {#events-origin}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_events_origin_live"
+>title="Händelser efter ursprung"
+>abstract="XX"
 
 ![](assets/journey_events_origin.png)
 
@@ -127,7 +172,12 @@ The **[!UICONTROL Events by origin]** tabell och diagram ger ett detaljerat pers
 
 Från din resa **[!UICONTROL Live report]**, **[!UICONTROL Email]** fliken innehåller huvudinformationen om de e-postmeddelanden som skickas under din resa.
 
-### E-postöverföring {#email-sending-performance}
+### E-post - Sändande prestanda {#email-sending-performance}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_email_sending_performance_live"
+>title="E-post - Sändande prestanda"
+>abstract="XX"
 
 ![](assets/journey_live_email_performance.png)
 
@@ -146,6 +196,11 @@ The **[!UICONTROL Email - Sending performance]** diagram ger en heltäckande bil
 +++
 
 ### E-post - statistik {#email-stat}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_email_statistics_live"
+>title="E-post - statistik"
+>abstract="XX"
 
 ![](assets/journey_live_email_statistics.png)
 
@@ -179,6 +234,11 @@ The **[!UICONTROL Email - Statistics]** tabellen innehåller en omfattande samma
 
 ### E-post - Prestanda efter datum {#email-perf-date}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_email_performance_bydate_live"
+>title="E-post - Prestanda efter datum"
+>abstract="XX"
+
 ![](assets/journey_live_email_performance_date.png)
 
 The **[!UICONTROL Email - Performance by date]** widgeten ger en detaljerad översikt över viktig information om dina e-postmeddelanden, som presenteras i ett diagram, och ger insikter om prestandatrender under de senaste 24 timmarna.
@@ -205,6 +265,11 @@ The **[!UICONTROL Email - Performance by date]** widgeten ger en detaljerad öve
 
 ### E-post - studskategorier och orsaker {#email-bounce-categories}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_email_bounces_live"
+>title="E-post - studskategorier och orsaker"
+>abstract="XX"
+
 ![](assets/journey_live_email_bounce.png)
 
 The **[!UICONTROL Bounce Reasons]** och **[!UICONTROL Bounce categories]** widgetar sammanställer tillgängliga data för studsade meddelanden och ger detaljerade insikter om de specifika orsakerna och kategorierna bakom e-poststudenterna de senaste 24 timmarna.
@@ -223,11 +288,21 @@ Mer information om studsar finns i [Undertryckningslista](../reports/suppression
 
 ### E-post - felorsaker {#email-error-reasons}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_email_errors_live"
+>title="E-post - felorsaker"
+>abstract="XX"
+
 ![](assets/journey_live_email_error_reasons.png)
 
 The **[!UICONTROL Error Reasons]** diagram och tabeller ger synlighet i de specifika fel som uppstått under sändningsprocessen de senaste 24 timmarna, vilket ger värdefull information om felens art och förekomst.
 
 ### E-post - orsaker som inte tas med {#email-excluded}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_email_excluded_live"
+>title="E-post - orsaker som inte tas med"
+>abstract="XX"
 
 ![](assets/journey_live_email_excluded.png)
 
@@ -237,11 +312,21 @@ Se [den här sidan](exclusion-list.md) En fullständig förteckning över orsake
 
 ### E-post - Bästa mottagardomän {#email-best-recipient}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_email_best_recipient_live"
+>title="E-post - Bästa mottagardomän"
+>abstract="XX"
+
 ![](assets/journey_live_email_best_recipient.png)
 
 The **[!UICONTROL Email - Best recipient domain]** diagram och tabeller ger en detaljerad beskrivning av de domäner som oftast används för att öppna e-postmeddelanden de senaste 24 timmarna. Detta ger värdefulla insikter om profilbeteendet och hjälper er att förstå vilka plattformar ni föredrar.
 
 ### E-posterbjudanden {#email-offers}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_email_offers_live"
+>title="E-post - erbjudanden"
+>abstract="XX"
 
 >[!NOTE]
 >
@@ -259,11 +344,65 @@ The **[!UICONTROL Offers statistic]** och **[!UICONTROL Offers statistics over t
 
 +++
 
+### E-post - optimering {#email-sto}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_email_optimization_live"
+>title="E-post - optimering"
+>abstract="XX"
+
+![](assets/journey_email_sto.png)
+
+>[!NOTE]
+>
+>The **[!UICONTROL Send time optimization]** och **[!UICONTROL Optimized vs non optimized]** widgetar är bara tillgängliga om alternativet för optimering av sändningstid är aktiverat för leverans. Mer information om optimering av sändningstid finns i [den här sidan](../building-journeys/journeys-message.md#send-time-optimization).
+
+The **[!UICONTROL Send time optimization]** och **[!UICONTROL Optimized vs non optimized]** widgetar visar hur bra dina e-postmeddelanden är beroende på sändningsmetod: optimerad eller normal.
+
++++ Läs mer om optimering av sändningstid och optimerade jämfört med icke-optimerade mätvärden
+
+* **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
+* **[!UICONTROL Bounces]**: Totalt antal fel som har ackumulerats under sändningsprocessen och automatisk returbearbetning i relation till det totala antalet skickade meddelanden.
+
+* **[!UICONTROL Sent]**: Totalt antal e-postmeddelanden som skickats för resan.
+
+* **[!UICONTROL Opens]**: Antal gånger som dina e-postmeddelanden öppnats under resan.
+
+* **[!UICONTROL Clicks]**: Antal gånger ett innehåll klickades i e-postmeddelanden.
+
++++
+
 ## Fliken Push-meddelanden {#push-live}
 
 Från din resa **[!UICONTROL Live report]**, **[!UICONTROL Push notification]** fliken innehåller huvudinformationen i förhållande till det push-meddelande som skickas under din resa.
 
+### Push-meddelande - Sändande prestanda {#push-sending-performance}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_push_sending_performance_live"
+>title="Push-meddelande - Sändande prestanda"
+>abstract="Prestandadiagrammet för push-meddelandesändning sammanfattar viktiga data om ditt push-meddelande, till exempel fel eller levererade meddelanden från de senaste 24 timmarna."
+
+![](assets/campain_push_live_sending_performance.png)
+
+The **[!UICONTROL Push notification sending performance]** diagrammet ger en grundlig översikt över data som rör push-meddelanden som skickats de senaste 24 timmarna. Den ger insikter i viktiga mätvärden som levererade och studsade, vilket möjliggör en detaljerad granskning av sändningsprocessen för push-meddelanden.
+
++++ Läs mer om push-meddelanden - Skicka prestandamått
+
+* **[!UICONTROL Delivered]**: Antal meddelanden som skickats.
+
+* **[!UICONTROL Bounces]**: Totalt antal fel som ackumulerats under sändningsprocessen och automatisk returbearbetning.
+
+* **[!UICONTROL Errors]**: Totalt antal fel som uppstod under sändningsprocessen och som förhindrar att den skickas till profiler.
+
++++
+
 ### Push-meddelande - statistik {#push-statistics}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_push_statistics_live"
+>title="Push-meddelande - statistik"
+>abstract="XX"
 
 ![](assets/journey_live_push_statistics.png)
 
@@ -288,11 +427,21 @@ Från din resa **[!UICONTROL Live report]**, **[!UICONTROL Push notification]** 
 
 ### Push-meddelande - uppdelning efter plattform {#push-breakdown}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_push_breakdown_live"
+>title="Push-meddelande - uppdelning efter plattform"
+>abstract="XX"
+
 ![](assets/journey_push_breakdown.png)
 
 The **[!UICONTROL Push notification - Breakdown by platform]** diagram och tabeller ger en detaljerad analys av hur väl push-meddelandena fungerar och ger insikter baserat på din profils operativsystem. Den här nedbrytningen ger en bättre förståelse för hur bra dina push-meddelanden fungerar på olika plattformar.
 
 ### Push-meddelande - Skickar sammanfattning {#push-sending-summary}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_push_sending_summary_live"
+>title="Push-meddelande - Skickar sammanfattning"
+>abstract="XX"
 
 ![](assets/journey_live_push_sending.png)
 
@@ -316,11 +465,21 @@ The **[!UICONTROL Push notification summary]** graph erbjuder en dynamisk repres
 
 ### Push-meddelande - felorsaker {#push-error}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_push_error_reasons_live"
+>title="Push-meddelande - felorsaker"
+>abstract="XX"
+
 ![](assets/journey_live_push_error.png)
 
 The **[!UICONTROL Error Reasons]** Med tabeller och diagram kan du identifiera de specifika fel som uppstod under sändningsprocessen för dina push-meddelanden och få detaljerade insikter om eventuella problem som uppstått under de senaste 24 timmarna.
 
 ### Push-meddelande - Undantagna orsaker {#push-excluded}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_push_excluded_reasons_live"
+>title="Push-meddelande - Undantagna orsaker"
+>abstract="XX"
 
 ![](assets/journey_live_push_excluded.png)
 
@@ -331,6 +490,11 @@ Se [den här sidan](exclusion-list.md) En fullständig förteckning över orsake
 ## fliken SMS {#sms-live}
 
 ### SMS - statistik {#sms-statistics}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_sms_statistics_live"
+>title="SMS - statistik"
+>abstract="XX"
 
 ![](assets/journey_live_sms_statistics.png)
 
@@ -356,6 +520,11 @@ The **[!UICONTROL SMS - Statistics]** tabellen ger en kortfattad sammanfattning 
 
 ### SMS - Prestanda per datum {#sms-performance}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_sms_performance_live"
+>title="SMS - Prestanda per datum"
+>abstract="XX"
+
 ![](assets/journey_live_sms_performance.png)
 
 The **[!UICONTROL SMS - Performance by date]** widgeten ger en detaljerad översikt över viktig information om dina meddelanden, som presenteras i ett diagram, och ger insikter om prestandatrender under de senaste 24 timmarna.
@@ -372,11 +541,21 @@ The **[!UICONTROL SMS - Performance by date]** widgeten ger en detaljerad övers
 
 ### SMS - studsar orsaker {#sms-bounces}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_sms_bounces_live"
+>title="SMS - studsar orsaker"
+>abstract="XX"
+
 ![](assets/journey_sms_bounce_reasons.png)
 
 The **[!UICONTROL SMS - Bounces reasons]** diagram och tabeller ger en omfattande översikt över data relaterade till studsade SMS-meddelanden och ger värdefulla insikter om de specifika orsakerna bakom instanserna av SMS-meddelandestudsar under de senaste 24 timmarna.
 
 ### SMS - Felorsaker {#sms-error}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_sms_error_live"
+>title="SMS - Felorsaker"
+>abstract="XX"
 
 ![](assets/journey_sms_error.png)
 
@@ -384,21 +563,33 @@ The **[!UICONTROL SMS - Error Reasons]** Med diagram och tabeller kan du identif
 
 ### SMS - Undantagna orsaker {#sms-excluded}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_sms_excluded_live"
+>title="SMS - Undantagna orsaker"
+>abstract="XX"
+
 ![](assets/journey_live_sms_excluded.png)
 
 The **[!UICONTROL SMS - Excluded Reasons]** grafer och tabeller visar visuellt de olika faktorer som ledde till att användarprofiler exkluderades från målgruppen, vilket förhindrar dem från att ta emot SMS-meddelanden.
 
 Se [den här sidan](exclusion-list.md) En fullständig förteckning över orsaker till uteslutning.
 
-### SMS - Klicka på länkar {#sms-clicks}
+<!--
+### SMS - Clicks by links {#sms-clicks}
 
 ![](assets/journey_sms_clicks.png)
 
-The **[!UICONTROL SMS - Clicks by links]** widgeten ger viktiga insikter i besökarnas engagemang med de URL:er som ingår i dina meddelanden, och ger värdefull information om vilka länkar som drar störst nytta av interaktionen de senaste 24 timmarna.
+The **[!UICONTROL SMS - Clicks by links]** widget offers essential insights into your visitors' engagement with the URLs included in your messages, providing valuable information about which links attract the most interaction within the last 24 hours.
+-->
 
 ## Fliken I appen {#in-app-live}
 
 ### Prestanda i appen {#inapp-performance}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_inapp_performance_live"
+>title="Prestanda i appen"
+>abstract="XX"
 
 ![](assets/journey_live_inapp_performance.png)
 
@@ -422,6 +613,11 @@ The **[!UICONTROL In-app performance]** Nyckeltal ger viktiga insikter i era pro
 
 ### Sammanfattning i appen {#inapp-summary}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_inapp_summary_live"
+>title="Sammanfattning i appen"
+>abstract="XX"
+
 ![](assets/journey_live_inapp_summary.png)
 
 The **[!UICONTROL In-app summary]** I diagrammet visas utvecklingen av dina visningar och interaktioner i appen under de senaste 24 timmarna, vilket ger en omfattande översikt över hur dina meddelanden i appen fungerar.
@@ -443,6 +639,11 @@ The **[!UICONTROL In-app summary]** I diagrammet visas utvecklingen av dina visn
 +++
 
 ### Interaktioner per typ {#interactions-type}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_inapp_interactions_live"
+>title="Interaktioner per typ"
+>abstract="XX"
 
 ![](assets/journey_live_inapp_interactions.png)
 

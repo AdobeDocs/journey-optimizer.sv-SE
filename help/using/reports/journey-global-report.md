@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e851646e-4cef-45e8-97c2-a8f4c9d2cc08
-source-git-commit: d26dbebaf36241d0e91c36c95f83ce6cf712ecee
+source-git-commit: fa704bd6c82a3068f163bb74542107b34f1815d1
 workflow-type: tm+mt
-source-wordcount: '3058'
+source-wordcount: '3216'
 ht-degree: 0%
 
 ---
@@ -46,11 +46,21 @@ Från din resa **[!UICONTROL Global report]**, **[!UICONTROL Journey]** -fliken 
 
 ### Reseprestanda {#journey-perfomance}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_performance"
+>title="Reseprestanda"
+>abstract="XX"
+
 ![](assets/journey_performance.png)
 
 The **[!UICONTROL Journey Performance]** Med widgeten kan du visuellt spåra sökvägen för dina målprofiler när de navigerar genom din resa.
 
 ### Resestatistik {#journey-statistics}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_statistics"
+>title="Resestatistik"
+>abstract="XX"
 
 ![](assets/journey_statistics.png)
 
@@ -68,11 +78,21 @@ The **[!UICONTROL Journey Statistics]** KPI (Key Performance Indicators) fungera
 
 ### Åtgärdens prestanda {#action-performance}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_performance"
+>title="Åtgärdens prestanda"
+>abstract="XX"
+
 ![](assets/journey_action_performance.png)
 
 The **[!UICONTROL Action Performance]** -widgeten representerar de mest framgångsrika åtgärderna som inträffade när **[!UICONTROL Actions]** aktiverades.
 
 ### De vanligaste åtgärderna {#top-actions}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_top_actions"
+>title="De vanligaste åtgärderna"
+>abstract="XX"
 
 ![](assets/journey_top_actions.png)
 
@@ -88,11 +108,21 @@ The **[!UICONTROL Top Actions]** tabellen sammanställer viktiga data i **[!UICO
 
 ### Orsaker till funktionsfel {#action-error}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_actions_error_reasons"
+>title="Orsaker till funktionsfel"
+>abstract="XX"
+
 ![](assets/journey_action_error.png)
 
 The **[!UICONTROL Action Error Reasons]**  tabellen och diagrammet innehåller en omfattande översikt över fel som uppstod under körningen av **[!UICONTROL Actions]**.
 
 ### Händelser efter ursprung {#events-origin}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_events_origin"
+>title="Händelser efter ursprung"
+>abstract="XX"
 
 ![](assets/journey_events_origin.png)
 
@@ -100,17 +130,32 @@ The **[!UICONTROL Events by origin]** tabellen och diagrammen ger ett detaljerat
 
 ### Händelser som tagits emot av händelsen {#events-received}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_events_received"
+>title="Händelser som tagits emot av händelsen"
+>abstract="XX"
+
 ![](assets/journey_event_received.png)
 
 The **[!UICONTROL Events received by event]** Med diagram kan du identifiera och analysera vilka specifika **[!UICONTROL Event]** inom er resa har genomförts effektivt och ger värdefulla insikter om enskilda eventers resultat och framgångar.
 
 ### De vanligaste händelserna {#top-events}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_top_events"
+>title="De vanligaste händelserna"
+>abstract="XX"
+
 ![](assets/journey_top_events.png)
 
 The **[!UICONTROL Top events]** tabellen sammanställer viktiga data i **[!UICONTROL Events]**. Det ger kortfattade insikter om frekvens och prestanda för varje **[!UICONTROL Event]**.
 
 ### Samtyckesprinciper {#consent-policies}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_consent_policies"
+>title="Samtyckesprinciper"
+>abstract="XX"
 
 ![](assets/journey_consent.png)
 
@@ -124,7 +169,12 @@ Observera att för att dessa widgetar ska visas i dina Journeys-rapporter måste
 
 Från din resa **[!UICONTROL Global report]**, **[!UICONTROL Email]** fliken innehåller huvudinformationen om de e-postmeddelanden som skickas under din resa.
 
-### Skicka e-poststatistik {#email-sending-statistics}
+### E-post - Sändande statistik {#email-sending-statistics}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_email_sending_statistics"
+>title="E-post - Sändande statistik"
+>abstract="XX"
 
 ![](assets/journey_email_statistics.png)
 
@@ -158,6 +208,11 @@ The **[!UICONTROL Email Sending Statistics]** tabellen innehåller en omfattande
 
 ### E-post - Spårningsstatistik {#email-tracking}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_email_tracking_statistics"
+>title="E-post - Spårningsstatistik"
+>abstract="XX"
+
 ![](assets/journey_email_tracking.png)
 
 The **[!UICONTROL Email - Tracking statistics]** tabellen ger en detaljerad redovisning av profilaktivitet som rör e-post som ingår i din resa. Detta inkluderar mätvärden för öppningar, klick och andra relevanta interaktionsindikatorer, som ger en heltäckande bild av hur profiler interagerar med ert e-postinnehåll.
@@ -186,6 +241,11 @@ The **[!UICONTROL Email - Tracking statistics]** tabellen ger en detaljerad redo
 
 ### E-post - Sändande prestanda {#email-performance}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_email_sending_performance"
+>title="E-post - Sändande prestanda"
+>abstract="XX"
+
 ![](assets/journey_email_performance.png)
 
 The **[!UICONTROL Email - Sending performance]** graf ger en heltäckande bild av data relaterade till skickade e-postmeddelanden under din resa och ger insikter i viktiga mätvärden som levererade och studsade. Detta möjliggör en detaljerad analys av e-postsändningsprocessen och ger värdefull information om hur effektiva och effektiva era resor är.
@@ -203,6 +263,11 @@ The **[!UICONTROL Email - Sending performance]** graf ger en heltäckande bild a
 +++
 
 ### E-post - studskategorier och orsaker {#email-bounce-categories}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_email_bounces"
+>title="E-post - studskategorier och orsaker"
+>abstract="XX"
 
 ![](assets/journey_email_bounce_categories.png)
 
@@ -222,11 +287,21 @@ Mer information om studsar finns i [Undertryckningslista](../reports/suppression
 
 ### E-post - felorsaker {#email-errors}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_email_error_reasons"
+>title="E-post - felorsaker"
+>abstract="XX"
+
 ![](assets/journey_email_error.png)
 
 The **[!UICONTROL Error Reasons]** diagram och tabeller ger synlighet i de specifika fel som uppstod under sändningsprocessen och ger värdefull information om felens art och förekomst.
 
 ### E-post - orsaker som inte tas med {#email-excluded}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_email_excluded_reasons"
+>title="E-post - orsaker som inte tas med"
+>abstract="XX"
 
 ![](assets/journey_email_excluded.png)
 
@@ -235,6 +310,11 @@ The **[!UICONTROL Excluded reasons]** diagram och tabeller ger en heltäckande b
 Se [den här sidan](exclusion-list.md) En fullständig förteckning över orsaker till uteslutning.
 
 ### Skickat och levererat av domäner {#sent-domains}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_email_sent_delivered_domains"
+>title="Skickat och levererat av domäner"
+>abstract="XX"
 
 ![](assets/journey_email_sent_domains.png)
 
@@ -250,6 +330,11 @@ The  **[!UICONTROL Sent & delivered by domains]** tabellen och diagrammet ger en
 
 ### Öppna och klicka efter domäner {#open-domains}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_email_open_clicks_domains"
+>title="Öppna och klicka efter domäner"
+>abstract="XX"
+
 ![](assets/journey_email_open_domains.png)
 
 The  **[!UICONTROL Open & clicks by domains]** diagram och tabeller visar en sammanställning på domännivå av era profilers engagemang i ert e-postmeddelande, vilket ger värdefulla insikter om hur olika domäner interagerar med ert innehåll.
@@ -263,6 +348,11 @@ The  **[!UICONTROL Open & clicks by domains]** diagram och tabeller visar en sam
 +++
 
 ### Begränsningar och fel per domäner {#bounces-domains}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_email_bounces_errors_domains"
+>title="Begränsningar och fel per domäner"
+>abstract="XX"
 
 ![](assets/journey_email_bounce_domains.png)
 
@@ -278,17 +368,34 @@ The  **[!UICONTROL Bounces & errors by domains]** diagram och tabeller ger en be
 
 ### Studsa orsaker efter domän {#bounce-reasons-domains}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_email_bounces_reasons_domains"
+>title="Begränsar orsaker efter domäner"
+>abstract="XX"
+
 ![](assets/journey_email_bounce_reasons_domain.png)
 
 The  **[!UICONTROL Bounce reasons by domain]** diagram och tabeller ger en uppdelning på domännivå av data om både tillfälliga och permanenta fel, vilket ger detaljerade insikter om orsakerna bakom studsade meddelanden.
 
 ### E-post - övre URL {#email-top}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_email_top_url"
+>title="E-post - övre URL"
+>abstract="XX"
+
 ![](assets/journey_email_top.png)
 
 The **[!UICONTROL Email - Top Url]** diagram och tabeller ger en omfattande översikt över de URL:er i e-postmeddelandet som lockar den högsta besökstrafiken. På så sätt kan ni identifiera och prioritera de mest populära länkarna och öka er förståelse för hur proffsen interagerar med specifikt innehåll i era e-postmeddelanden.
 
 ### E-post - optimering {#email-sto}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_email_optimization"
+>title="E-post - optimering"
+>abstract="XX"
+
+![](assets/journey_email_sto.png)
 
 >[!NOTE]
 >
@@ -310,6 +417,11 @@ The **[!UICONTROL Send time optimization]** och **[!UICONTROL Optimized vs non o
 +++
 
 ### E-post - erbjudanden {#email-offers}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_email_offers"
+>title="E-post - erbjudanden"
+>abstract="XX"
 
 >[!NOTE]
 >
@@ -343,6 +455,11 @@ Från din resa **[!UICONTROL Global report]**, **[!UICONTROL Push notification]*
 
 ### Push-meddelande - skicka statistik {#push-sending-stat}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_push_sending_statistics"
+>title="Push-meddelande - skicka statistik"
+>abstract="XX"
+
 ![](assets/journey_push_sending.png)
 
 The **[!UICONTROL Push notification - Sending statistics]** tabellen ger en kortfattad sammanfattning av viktiga data relaterade till dina push-meddelanden, inklusive nyckeltal som antalet riktade meddelanden och antalet lyckade meddelanden.
@@ -373,6 +490,11 @@ The **[!UICONTROL Push notification - Sending statistics]** tabellen ger en kort
 
 ### Push-meddelande - Spårningsstatistik {#push-tracking-stat}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_push_tracking_statistics"
+>title="Push-meddelande - Spårningsstatistik"
+>abstract="XX"
+
 The **[!UICONTROL Push - Tracking statistics]** widgeten erbjuder en detaljerad ögonblicksbild av profilaktivitet som är kopplad till dina push-meddelanden, vilket ger viktiga insikter i engagemanget och push-meddelandenas effektivitet.
 
 +++ Läs mer om push-meddelanden - Spåra statistik
@@ -386,6 +508,11 @@ The **[!UICONTROL Push - Tracking statistics]** widgeten erbjuder en detaljerad 
 +++
 
 ### Push-meddelande - Skickar sammanfattning {#push-summary}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_push_sending_summary"
+>title="Push-meddelande - Skickar sammanfattning"
+>abstract="XX"
 
 ![](assets/journey_push_summary.png)
 
@@ -407,11 +534,21 @@ The **[!UICONTROL Push notification - Sending summary]** graph erbjuder en dynam
 
 ### Push-meddelande - felorsaker {#push-error-reasons}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_push_error_reasons"
+>title="Push-meddelande - felorsaker"
+>abstract="XX"
+
 ![](assets/journey_push_error.png)
 
 The **[!UICONTROL Error Reasons]** Med tabeller och diagram kan du identifiera de specifika fel som uppstod under sändningsprocessen för push-meddelanden, och du får detaljerade insikter om eventuella problem som påträffas under själva sändningsprocessen.
 
 ### Push-meddelande - Undantagna orsaker {#push-excluded}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_push_excluded_reasons"
+>title="Push-meddelande - Undantagna orsaker"
+>abstract="XX"
 
 ![](assets/journey_push_excluded.png)
 
@@ -420,6 +557,11 @@ The **[!UICONTROL Excluded reasons]** I diagram och tabeller visas de olika anle
 Se [den här sidan](exclusion-list.md) En fullständig förteckning över orsaker till uteslutning.
 
 ### Push-meddelande - uppdelning efter plattform {#push-breakdown}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_push_breakdown_platform"
+>title="Förhandsmeddelande - Uppdelning efter plattform"
+>abstract="XX"
 
 ![](assets/journey_push_breakdown.png)
 
@@ -451,6 +593,11 @@ The **[!UICONTROL Optimized vs non optimized]** och **[!UICONTROL Send time opti
 
 ### SMS - Sändande statistik {#sms-sending-stat}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_sms_sending_statistics"
+>title="SMS - Sändande statistik"
+>abstract="XX"
+
 ![](assets/journey_sms_sending.png)
 
 The **[!UICONTROL SMS - Sending statistics]** tabellen ger en kortfattad sammanfattning av viktiga data relaterade till dina SMS-meddelanden, med nyckelmått som antalet riktade meddelanden och antalet lyckade meddelanden.
@@ -473,6 +620,11 @@ The **[!UICONTROL SMS - Sending statistics]** tabellen ger en kortfattad sammanf
 
 ### SMS - Spårningsstatistik {#sms-tracking-stat}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_sms_tracking_statistics"
+>title="SMS - Spårningsstatistik"
+>abstract="XX"
+
 ![](assets/journey_sms_tracking.png)
 
 The **[!UICONTROL SMS - Tracking statistics]** widgeten ger en detaljerad översikt över viktig information om besökarnas engagemang i era URL:er, och ger insikter om hur effektiva era SMS-meddelanden är.
@@ -482,6 +634,11 @@ The **[!UICONTROL SMS - Tracking statistics]** widgeten ger en detaljerad övers
 * **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades i SMS-meddelanden.
 
 ### SMS - Prestanda per datum {#sms-performance-date}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_sms_perfomance_date"
+>title="SMS - Prestanda per datum"
+>abstract="XX"
 
 ![](assets/journey_sms_performance.png)
 
@@ -499,17 +656,32 @@ The **[!UICONTROL SMS - Performance by date]** widgeten innehåller en detaljera
 
 ### SMS - studsar orsaker {#sms-bounce}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_sms_bounces_reasons"
+>title="SMS - studsar orsaker"
+>abstract="XX"
+
 ![](assets/journey_sms_bounce_reasons.png)
 
 The **[!UICONTROL Bounces Reasons]** diagram och tabeller ger en omfattande översikt över data relaterade till studsade SMS-meddelanden och ger värdefulla insikter om de specifika orsakerna bakom instanser av SMS-meddelandegränser.
 
 ### SMS - Felorsaker {#sms-error}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_sms_error_reasons"
+>title="SMS - Felorsaker"
+>abstract="XX"
+
 ![](assets/journey_sms_error.png)
 
 The **[!UICONTROL Error Reasons]** Med diagram och tabeller kan du identifiera de specifika fel som uppstod under sändningsprocessen för SMS-meddelanden, vilket underlättar en grundlig analys av eventuella problem som uppstått.
 
 ### SMS - Undantagna orsaker {#sms-excluded}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_sms_excluded_reasons"
+>title="SMS - Undantagna orsaker"
+>abstract="XX"
 
 ![](assets/journey_sms_excluded.png)
 
@@ -518,6 +690,11 @@ The **[!UICONTROL Excluded Reasons]** grafer och tabeller visar visuellt de olik
 Se [den här sidan](exclusion-list.md) En fullständig förteckning över orsaker till uteslutning.
 
 ### SMS - Klicka på länkar {#sms-clicks}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_sms_clicks"
+>title="SMS - Klicka på länkar"
+>abstract="XX"
 
 ![](assets/journey_sms_clicks.png)
 
@@ -528,6 +705,11 @@ The **[!UICONTROL SMS - Clicks by links]** widgeten ger viktiga insikter i besö
 Från din resa **[!UICONTROL Global report]**, **[!UICONTROL In-app]** på fliken anger huvudinformationen i förhållande till meddelanden i appen som skickas på dina resor.
 
 ### Prestanda i appen {#inapp-performance}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_inapp_performance"
+>title="Prestanda i appen"
+>abstract="XX"
 
 ![](assets/journey_inapp_performance.png)
 
@@ -552,11 +734,21 @@ The **[!UICONTROL In-app performance]**  KPI:er ger viktiga insikter i era profi
 
 ### Sammanfattning i appen {#inapp-summary}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_inapp_summary"
+>title="Sammanfattning i appen"
+>abstract="XX"
+
 ![](assets/journey_inapp_summary.png)
 
 The **[!UICONTROL In-app summary]** graf visar utvecklingen av dina visningar och interaktioner i appen under den angivna perioden, vilket ger en omfattande översikt över hur dina meddelanden i appen fungerar.
 
 ### Interaktioner per typ {#interactions-type}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_inapp_interactions"
+>title="Interaktioner per typ"
+>abstract="XX"
 
 ![](assets/journey_inapp_interactions.png)
 
