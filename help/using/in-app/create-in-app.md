@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: b3b79fe2-7db3-490d-9c3d-87267aa55eea
-source-git-commit: 03c714833930511fa734662b637d2416728073c2
+source-git-commit: 97e925529f5b61138474d53f7df404ff6ea44ba9
 workflow-type: tm+mt
-source-wordcount: '1894'
+source-wordcount: '1868'
 ht-degree: 1%
 
 ---
@@ -22,6 +22,8 @@ ht-degree: 1%
 >abstract="Kontrollera effektivt era utlösare genom att välja specifika händelser och kriterier som ska aktivera dina meddelanden. Med regelbyggaren kan användare definiera exakta villkor och värden. När dessa villkor är uppfyllda initierar de en serie åtgärder, inklusive leverans av meddelanden i appen."
 
 Du kan lägga till ett meddelande i appen i en kampanj eller under en resa. Följ stegen nedan för att skapa ett meddelande i appen i båda kontexterna.
+
+Observera att meddelanden i appen inte påverkas av användarens val att välja att anmäla sig eller välja bort push-meddelanden i operativsystemet.
 
 >[!BEGINTABS]
 
@@ -77,7 +79,7 @@ Så här lägger du till ett meddelande i appen under en resa:
 
       +++Se tillgängliga fack.
 
-      | Paket | Traits  | Definition |
+      | Paket | Traits | Definition |
       |---|---|---|
       | Enhetsinformation | Transportföretagets namn | Utlöses när ett av transportföretagsnamnen i listan uppfylls. |
       | Enhetsinformation | Enhetsnamn | Utlöses när ett av enhetsnamnen uppfylls. |
@@ -175,7 +177,7 @@ Så här lägger du till ett meddelande i appen i en kampanj:
 
       +++Se tillgängliga fack.
 
-      | Paket | Traits  | Definition |
+      | Paket | Traits | Definition |
       |---|---|---|
       | Enhetsinformation | Transportföretagets namn | Utlöses när ett av transportföretagsnamnen i listan uppfylls. |
       | Enhetsinformation | Enhetsnamn | Utlöses när ett av enhetsnamnen uppfylls. |
@@ -220,7 +222,7 @@ Så här lägger du till ett meddelande i appen i en kampanj:
 
 >[!ENDTABS]
 
-## Instruktionsvideor{#video}
+## Instruktionsfilmer{#video}
 
 * I videon nedan visas hur du skapar, konfigurerar och publicerar meddelanden i appen i dina kampanjer.
 
