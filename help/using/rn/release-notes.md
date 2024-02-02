@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 283983d98905b8e36d41823d1fae5d7a3c269ba3
+source-git-commit: b87ebc097c0c1c52ab21a4d098fbc2e5e227c953
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '603'
 ht-degree: 6%
 
 ---
@@ -44,7 +44,7 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <tr>
 <td>
 <p>Journey Optimizer stöder nu tekniken för DMARC-autentisering.</p>
-<p>Från och med 1 februari 2024, Google och Yahoo! kommer att kräva att du har en DMARC-post för alla domäner som du använder för att skicka e-post till dem. Se till att du har ställt in DMARC-posten för alla underdomäner som du har delegerat eller delegerat till Adobe i Journey Optimizer.</p>
+<p>Från 1 februari 2024, Google och Yahoo! kräver att du har en DMARC-post för alla domäner som du använder för att skicka e-post till dem. Se till att du har ställt in DMARC-posten för alla underdomäner som du har delegerat eller delegerat till Adobe i Journey Optimizer.</p>
 <p>Mer information finns i den <a href="../configuration/dmarc-record-update.md">detaljerade dokumentationen</a>.</p>
 <br/><img src="assets/do-not-localize/dmarc.gif"/>
 </tr>
