@@ -8,9 +8,9 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: underdomän, domän, e-post, marc, post
-source-git-commit: f1f57e1b7398e0c235e5ecb80b58a8b7761d0e55
+source-git-commit: cdc3e0ffaddb2ad83ad1703c1858773d09557859
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1347'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_admin_dmarc_record"
 >title="Ange DMARC-post"
->abstract="DMARC är en autentiseringsmetod för e-post som gör att domänägare kan skydda sin domän från obehörig användning och undvika leveransproblem med postlådeprovidrar.<br>Som en del av deras branschledande praxis kräver både Google och Yahoo att du har en DMARC-post för alla domäner du använder för att skicka e-post till dem."
+>abstract="DMARC är en autentiseringsmetod för e-post som gör att domänägare kan skydda sin domän från obehörig användning och undvika leveransproblem med postlådeprovidrar.<br>Google och Yahoo är en del av deras branschledande arbetsmetoder! båda kräver att du har en DMARC-post för alla domäner som du använder för att skicka e-post till dem."
 
 ## Vad är DMARC? {#what-is-dmarc}
 
@@ -30,7 +30,7 @@ DMARC erbjuder också rapporter om meddelanden som inte kan autentiseras, tillsa
 
 <!--To help you prevent deliverability issues by allowing ISPs to authenticate your sending domains - while gaining visibility and control over mail that fail this authentication, [!DNL Journey Optimizer] will soon be supporting the DMARC technology directly in its administration interface.-->
 
-För att förhindra leveransproblem och samtidigt få kontroll över e-post som inte kan autentiseras, [!DNL Journey Optimizer] kommer snart att stödja DMARC-tekniken direkt i administrationsgränssnittet. [Läs mer](#implement-dmarc)
+För att förhindra leveransproblem och samtidigt få kontroll över e-post som inte kan autentiseras, [!DNL Journey Optimizer] stöder nu DMARC-tekniken direkt i administrationsgränssnittet. [Läs mer](#implement-dmarc)
 
 ### Hur fungerar DMARC? {#how-dmarc-works}
 
@@ -63,19 +63,19 @@ Om ett e-postmeddelande inte kan verifieras med DMARC kan du bestämma vilken å
 
 ## Uppdatering av DMARC-krav {#dmarc-update}
 
-Som en del av deras branschledande praxis kommer Google och Yahoo att kräva att ni har en **DMARC-post** för alla domäner som du använder för att skicka e-post till dem. Det nya kravet börjar på **1 februari 2024**.
+Google och Yahoo är en del av deras branschledande arbetsmetoder! kräver båda att du har en **DMARC-post** för alla domäner som du använder för att skicka e-post till dem. Detta nya krav börjar gälla **1 februari 2024**.
 
-Läs mer om Google och Yahoos krav i [det här avsnittet](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html#dmarc){target="_blank"}.
+Läs mer om Google och Yahoo!&#39;s krav i [det här avsnittet](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html#dmarc){target="_blank"}.
 
 >[!CAUTION]
 >
->Om detta nya krav från Gmail och Yahoo inte uppfylls förväntas det leda till att e-postmeddelanden landar i skräppostmappen eller blockeras. [Läs mer](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html#how-will-this-impact-me-as-a-marketer%3F){target="_blank"}
+>Misslyckas med att uppfylla det nya kravet från Gmail och Yahoo! förväntas resultera i att e-postmeddelanden landar i skräppostmappen eller blockeras. [Läs mer](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html#how-will-this-impact-me-as-a-marketer%3F){target="_blank"}
 
 Adobe rekommenderar därför att du vidtar följande åtgärder:
 
 * Se till att du har **DMARC-post** konfigurera för **alla underdomäner som du redan har delegerat** till Adobe in [!DNL Journey Optimizer]. [Lär dig mer](#check-subdomains-for-dmarc)
 
-* När **delegera en ny underdomän** till Adobe kommer du snart att kunna **konfigurera DMARC** direkt **i [!DNL Journey Optimizer] administrationsgränssnitt**. [Lär dig mer](#implement-dmarc)
+* När **delegera en ny underdomän** till Adobe kan du **konfigurera DMARC** direkt **i [!DNL Journey Optimizer] administrationsgränssnitt**. [Lär dig mer](#implement-dmarc)
 
 ## Implementera DMARC i [!DNL Journey Optimizer] {#implement-dmarc}
 
@@ -93,7 +93,7 @@ För att vara säker på att du har ställt in en DMARC-post för alla underdom�
 
    >[!CAUTION]
    >
-   >För att uppfylla det nya kravet från Gmail och Yahoo och undvika leveransproblem med de främsta Internet-leverantörerna, rekommenderar vi att du skapar en DMARC-post för alla delegerade underdomäner. [Läs mer](dmarc-record-update.md)
+   >För att uppfylla det nya kravet från Gmail och Yahoo! och undvika leveransproblem med de bästa Internet-leverantörerna, rekommenderar vi att du skapar en DMARC-post för alla delegerade underdomäner. [Läs mer](dmarc-record-update.md)
 
 1. Välj en underdomän utan associerad DMARC-post och fyll i **[!UICONTROL DMARC record]** -sektion efter organisationens behov. Stegen för att fylla i DMARC-postfält beskrivs i [det här avsnittet](#implement-dmarc).
 
@@ -117,9 +117,9 @@ När nya underdomäner delegeras till Adobe i [!DNL Journey Optimizer]skapas en 
 
 >[!CAUTION]
 >
->För att uppfylla det nya kravet från Gmail och Yahoo och undvika leveransproblem med de främsta Internet-leverantörerna, rekommenderar vi att du skapar en DMARC-post för alla delegerade underdomäner. [Läs mer](dmarc-record-update.md)
+>För att uppfylla det nya kravet från Gmail och Yahoo! och undvika leveransproblem med de bästa Internet-leverantörerna, rekommenderar vi att du skapar en DMARC-post för alla delegerade underdomäner. [Läs mer](dmarc-record-update.md)
 
-<!--If you fail to comply with the new requirement from Gmail and Yahoo to have DMARC record for all sending domains, your emails are expected to land into the spam folder or to get blocked.-->
+<!--If you fail to comply with the new requirement from Gmail and Yahoo! to have DMARC record for all sending domains, your emails are expected to land into the spam folder or to get blocked.-->
 
 1. Konfigurera en ny underdomän. [Lär dig mer](delegate-subdomain.md)
 
