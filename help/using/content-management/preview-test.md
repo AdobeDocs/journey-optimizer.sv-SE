@@ -4,9 +4,10 @@ description: Lär dig hur du förhandsgranskar och testar innehåll.
 feature: Preview, Proofs
 role: User
 level: Beginner
-source-git-commit: 6da7f4c8caa5a0a6cfda1e90d0c6cd4787c6afca
+exl-id: 736fc861-17f2-47b7-8635-9afd261ea3a8
+source-git-commit: f6b158ffdde66d6e6d9d706a6b067a2746a9be1d
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
@@ -49,4 +50,4 @@ Du måste också ha testprofiler tillgängliga för att kunna förhandsgranska d
 
 Lär dig hur du testar e-poståtergivning i olika inkorgar, hur du förhandsgranskar anpassade e-postmeddelanden mot testprofiler och skickar korrektur.
 
->[!VIDEO](https://video.tv.adobe.com/v/334239?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3425026?quality=12)
