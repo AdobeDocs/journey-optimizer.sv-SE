@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: ff25658bd69b83cfd1869490c24710f84d4a4ffc
+source-git-commit: 718854c5ab51ad55fde7629415b954a079647c0b
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '1103'
 ht-degree: 0%
 
 ---
@@ -174,14 +174,14 @@ Du kan kombinera flera regler för meddelandefrekvens, som beskrivs i exemplet n
 1. [Skapa en regel](#create-new-rule) anropad *Total marknadsföringstak*:
 
    * Välj E-post- och push-kanaler.
-   * Ange begränsning till 12.
+   * Ställ in capping på 12 månatliga.
 
    ![](assets/message-rules-ex-overall-cap.png)
 
 1. Om du vill begränsa antalet marknadsföringsbaserade push-meddelanden som en användare skickas vidare skapar du en andra regel som kallas *Push Marketing Cap*:
 
    * Välj Push-kanal.
-   * Ställ in capping på 4.
+   * Ställ in capping på 4 månatliga.
 
    ![](assets/message-rules-ex-push-cap.png)
 
