@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 659984cb-b232-47ba-9f5a-604bf97a5e92
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: d4a91dcd032af03504ab7bbf97b2e19338c32397
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 48%
+source-wordcount: '893'
+ht-degree: 49%
 
 ---
 
@@ -105,11 +105,7 @@ Nedan finns en lista över de viktigaste koncept du kommer att arbeta med när d
 
 * **Representationer**: en representation är information som används av en kanal, såsom plats eller språk, för att visa ett erbjudande.
 
-## Instruktionsvideor{#video}
-
->[!NOTE]
->
->Dessa videofilmer gäller för Offera decisioningens programtjänst som är byggd på Adobe Experience Platform och gäller inte specifikt för [!DNL Adobe Journey Optimizer]. De ger dock allmän vägledning för användning av beslutsstöd inom ramen för [!DNL Journey Optimizer].
+## Instruktionsfilmer{#video}
 
 ### Vad är beslutshantering? {#what-is-offer-decisioning}
 
