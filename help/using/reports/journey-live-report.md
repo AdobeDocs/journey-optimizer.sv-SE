@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e3781f79-7c8d-4512-b44f-835639b1471f
-source-git-commit: 5671f510d8be80b53d57b1ff90a101e500773243
+source-git-commit: 045a2f930f27728fd0add6ed8fa77f9b728ebae5
 workflow-type: tm+mt
 source-wordcount: '3449'
 ht-degree: 0%
@@ -326,7 +326,7 @@ The **[!UICONTROL Email - Best recipient domain]** diagram och tabeller ger en d
 >[!CONTEXTUALHELP]
 >id="ajo_journey_email_offers_live"
 >title="E-post - erbjudanden"
->abstract="&quot;The Offers statistic and Offers detailed statistic widgets ger omfattande insikter om hur era erbjudanden fungerar under de senaste 24 timmarna, och ger en detaljerad analys av deras effekt över tid och presenterar detaljerad statistik för en mer djupgående förståelse."
+>abstract="Statistikwidgetarna för erbjudanden och ger utförliga statistikwidgetar ger omfattande insikter om hur erbjudandena har fungerat under de senaste 24 timmarna. De ger en detaljerad analys av deras effekt över tid och ger en mer djupgående förståelse för hur de fungerar."
 
 >[!NOTE]
 >
