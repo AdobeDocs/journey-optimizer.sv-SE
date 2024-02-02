@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: fa64f5b8-75f2-40e6-8566-5766fafe6cd6
-source-git-commit: d26dbebaf36241d0e91c36c95f83ce6cf712ecee
+source-git-commit: 5671f510d8be80b53d57b1ff90a101e500773243
 workflow-type: tm+mt
-source-wordcount: '4293'
+source-wordcount: '4451'
 ht-degree: 0%
 
 ---
@@ -270,9 +270,14 @@ Se [den här sidan](exclusion-list.md) En fullständig förteckning över orsake
 
 ### Skickat och levererat av domäner {#sent-domains}
 
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_email_sent_domains"
+>title="Skickat och levererat av domäner"
+>abstract="Tabellen och grafen Skickat och levererat per domän ger en detaljerad beskrivning av e-postmeddelanden kategoriserade efter domäner och ger djupgående insikter om hur e-postkommunikationen fungerar generellt."
+
 ![](assets/campaign_email_sent_domains.png)
 
-The  **[!UICONTROL Sent & delivered by domains]** tabellen och diagrammet ger en detaljerad beskrivning av e-postmeddelanden på domännivå, med omfattande insikter om hur dina e-postmeddelanden fungerar.
+The **[!UICONTROL Sent & delivered by domains]** tabellen och diagrammet ger en detaljerad beskrivning av e-postmeddelanden på domännivå, med omfattande insikter om hur dina e-postmeddelanden fungerar.
 
 +++ Läs mer om Sänd och levererad via domänmått
 
@@ -284,9 +289,14 @@ The  **[!UICONTROL Sent & delivered by domains]** tabellen och diagrammet ger en
 
 ### Begränsningar och fel per domäner {#bounces-domains}
 
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_email_bounces_domains"
+>title="Begränsningar och fel per domäner"
+>abstract="Diagrammet och tabellen studsar och fel per domän ger en detaljerad fördelning på domännivå och ger insikter om specifika fel som uppstått under e-postsändningsprocessen."
+
 ![](assets/campaign_email_bounce_domains.png)
 
-The  **[!UICONTROL Bounces & errors by domains]** diagram och tabeller ger en beskrivning på domännivå av specifika fel som påträffats under sändningsprocessen, vilket ger en detaljerad analys av problem som uppstått.
+The **[!UICONTROL Bounces & errors by domains]** diagram och tabeller ger en beskrivning på domännivå av specifika fel som påträffats under sändningsprocessen, vilket ger en detaljerad analys av problem som uppstått.
 
 +++ Läs mer om studsar och fel per domänmått
 
@@ -298,9 +308,14 @@ The  **[!UICONTROL Bounces & errors by domains]** diagram och tabeller ger en be
 
 ### Öppna och klicka efter domäner {#opens-domains}
 
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_email_open_domains"
+>title="Öppna och klicka efter domäner"
+>abstract="Diagrammet Öppna och klicka per domän och tabellen innehåller en detaljerad beskrivning på domännivå och en heltäckande bild av hur målgruppen interagerar med e-postmeddelanden."
+
 ![](assets/campaign_email_open_domains.png)
 
-The  **[!UICONTROL Open & clicks by domains]** diagram och tabeller visar en sammanställning på domännivå av era profilers engagemang i ert e-postmeddelande, vilket ger värdefulla insikter om hur olika domäner interagerar med ert innehåll.
+The **[!UICONTROL Open & clicks by domains]** diagram och tabeller visar en sammanställning på domännivå av era profilers engagemang i ert e-postmeddelande, vilket ger värdefulla insikter om hur olika domäner interagerar med ert innehåll.
 
 +++ Läs mer om Öppna och klickningar efter domänstatistik
 
@@ -312,9 +327,14 @@ The  **[!UICONTROL Open & clicks by domains]** diagram och tabeller visar en sam
 
 ### Studsa orsaker efter domän {#bounce-reasons-domains}
 
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_global_email_bounces_reasons_domains"
+>title="Studsa orsaker efter domän"
+>abstract="Studsorsaker per domän - diagram och tabell ger en nedbrytning på domännivå som ger omfattande insikter om både tillfälliga och permanenta fel. Denna detaljerade analys ger värdefull information om de specifika orsakerna bakom studsade meddelanden."
+
 ![](assets/campaign_email_bounce_reasons_domains.png)
 
-The  **[!UICONTROL Bounce reasons by domain]** diagram och tabeller ger en uppdelning på domännivå av data om både tillfälliga och permanenta fel, vilket ger detaljerade insikter om orsakerna bakom studsade meddelanden.
+The **[!UICONTROL Bounce reasons by domain]** diagram och tabeller ger en uppdelning på domännivå av data om både tillfälliga och permanenta fel, vilket ger detaljerade insikter om orsakerna bakom studsade meddelanden.
 
 +++ Läs mer om studsorsaker efter domänmått
 
@@ -366,7 +386,7 @@ The **[!UICONTROL Email - Best recipient domain]** diagram och tabeller ger en d
 
 >[!NOTE]
 >
->The **[!UICONTROL Optimized vs non optimized]** och **[!UICONTROL Send time optimization]**  widgetar är bara tillgängliga om alternativet Sändningsoptimering är aktiverat för ditt e-postmeddelande. Mer information om optimering av sändningstid finns i [den här sidan](../building-journeys/journeys-message.md#send-time-optimization).
+>The **[!UICONTROL Optimized vs non optimized]** och **[!UICONTROL Send time optimization]** widgetar är bara tillgängliga om alternativet Sändningsoptimering är aktiverat för ditt e-postmeddelande. Mer information om optimering av sändningstid finns i [den här sidan](../building-journeys/journeys-message.md#send-time-optimization).
 
 The **[!UICONTROL Optimized vs non optimized]** och **[!UICONTROL Send time optimization]** widgetar anger huvudinformationen i förhållande till meddelandet, oavsett om de är optimerade eller inte.
 
@@ -554,7 +574,7 @@ The **[!UICONTROL Push notification - Sending summary]** graph erbjuder en dynam
 
 >[!NOTE]
 >
->The **[!UICONTROL Optimized vs non optimized]** och **[!UICONTROL Send time optimization]**  widgetar är bara tillgängliga om alternativet för optimering av sändningstid är aktiverat för ditt push-meddelande. Mer information om optimering av sändningstid finns i [den här sidan](../building-journeys/journeys-message.md#send-time-optimization).
+>The **[!UICONTROL Optimized vs non optimized]** och **[!UICONTROL Send time optimization]** widgetar är bara tillgängliga om alternativet för optimering av sändningstid är aktiverat för ditt push-meddelande. Mer information om optimering av sändningstid finns i [den här sidan](../building-journeys/journeys-message.md#send-time-optimization).
 
 The **[!UICONTROL Optimized vs non optimized]** och **[!UICONTROL Send time optimization]** widgetar anger huvudinformationen i förhållande till meddelandet, oavsett om de är optimerade eller inte.
 
@@ -599,7 +619,7 @@ Se [den här sidan](exclusion-list.md) En fullständig förteckning över orsake
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_global_push_breakdown_platform"
 >title="Push-meddelande - uppdelning efter plattform"
->abstract="I diagrammen och tabellen med uppdelningar per plattform visas hur väl push-meddelandena lyckades utifrån profilens operativsystem."
+>abstract="Push-meddelandet - Uppdelning efter plattform - diagram och tabell visar hur väl push-meddelandena lyckades baserat på profilens operativsystem."
 
 ![](assets/campaign_push_breakdown.png)
 
@@ -632,7 +652,7 @@ Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL SMS]** -fliken in
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_global_sms_sending_statistics"
 >title="SMS - Sändande statistik"
->abstract="Registret SMS Sending Statistics sammanfattar viktiga data om dina SMS-meddelanden, som riktade eller levererade meddelanden."
+>abstract="Registret SMS - Sändande statistik sammanfattar viktiga data om dina SMS-meddelanden, som riktade eller levererade meddelanden."
 
 ![](assets/campaign_sms_sending.png)
 
@@ -656,6 +676,11 @@ The **[!UICONTROL SMS - Sending statistics]** tabellen ger en kortfattad sammanf
 
 ### SMS - Spårningsstatistik {#sms-tracking-statistics}
 
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_sms_tracking_statistics"
+>title="SMS - Spårningsstatistik"
+>abstract="Widgeten SMS - Spårningsstatistik ger en omfattande översikt över viktig information som rör besökarnas interaktion med din URL."
+
 ![](assets/campaign_sms_tracking.png)
 
 The **[!UICONTROL SMS - Tracking statistics]** widgeten ger en detaljerad översikt över viktig information om besökarnas engagemang i era URL:er, och ger insikter om hur effektiva era SMS-meddelanden är.
@@ -673,7 +698,7 @@ The **[!UICONTROL SMS - Tracking statistics]** widgeten ger en detaljerad övers
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_global_sms_performance"
 >title="SMS - Prestanda per datum"
->abstract="Widgeten SMS Performance by Date (SMS-prestanda efter datum) innehåller viktig information om dina meddelanden via en grafisk representation."
+>abstract="Widgeten - SMS Performance by Date (SMS-prestanda efter datum) ger viktig information om dina meddelanden via en grafisk representation."
 
 ![](assets/campaign_sms_performance.png)
 
@@ -727,7 +752,7 @@ The **[!UICONTROL Bounces Reasons]** diagram och tabeller ger en omfattande öve
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_global_sms_clicks_links"
 >title="SMS - Klicka på länkar"
->abstract="Widgeten SMS - Klicka på länkar ger viktiga insikter i besökarnas engagemang med URL:erna i dina meddelanden"
+>abstract="Widgeten SMS - Klicka på länkar ger viktiga insikter i besökarnas engagemang med URL:erna i dina meddelanden."
 
 ![](assets/campaign_sms_clicks.png)
 

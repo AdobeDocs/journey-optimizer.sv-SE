@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: ead9359b-cdab-43ed-a469-d98b0ca19a17
-source-git-commit: d26dbebaf36241d0e91c36c95f83ce6cf712ecee
+source-git-commit: 5671f510d8be80b53d57b1ff90a101e500773243
 workflow-type: tm+mt
 source-wordcount: '3447'
 ht-degree: 0%
@@ -214,7 +214,7 @@ Se [den här sidan](exclusion-list.md) En fullständig förteckning över orsake
 
 ![](assets/channel_email_sent_domains.png)
 
-The  **[!UICONTROL Sent & delivered by domains]** tabellen och diagrammet ger en detaljerad beskrivning av e-postleveranser på domännivå, med omfattande insikter om hur e-postmeddelandena fungerar.
+The **[!UICONTROL Sent & delivered by domains]** tabellen och diagrammet ger en detaljerad beskrivning av e-postleveranser på domännivå, med omfattande insikter om hur e-postmeddelandena fungerar.
 
 +++ Läs mer om Sänd och levererad via domänmått
 
@@ -233,7 +233,7 @@ The  **[!UICONTROL Sent & delivered by domains]** tabellen och diagrammet ger en
 
 ![](assets/channel_email_bounces_domain.png)
 
-The  **[!UICONTROL Bounces & errors by domains]** diagram och tabeller ger en beskrivning på domännivå av specifika fel som påträffats under sändningsprocessen, vilket ger en detaljerad analys av problem som uppstått.
+The **[!UICONTROL Bounces & errors by domains]** diagram och tabeller ger en beskrivning på domännivå av specifika fel som påträffats under sändningsprocessen, vilket ger en detaljerad analys av problem som uppstått.
 
 +++ Läs mer om studsar och fel per domänmått
 
@@ -252,7 +252,7 @@ The  **[!UICONTROL Bounces & errors by domains]** diagram och tabeller ger en be
 
 ![](assets/channel_email_open_domains.png)
 
-The  **[!UICONTROL Open & clicks by domains]** diagram och tabeller visar en sammanställning på domännivå av besökarnas engagemang i ert e-postmeddelande, vilket ger värdefulla insikter om hur olika domäner interagerar med ert innehåll.
+The **[!UICONTROL Open & clicks by domains]** diagram och tabeller visar en sammanställning på domännivå av besökarnas engagemang i ert e-postmeddelande, vilket ger värdefulla insikter om hur olika domäner interagerar med ert innehåll.
 
 +++ Läs mer om Öppna och klickningar efter domänstatistik
 
@@ -271,7 +271,7 @@ The  **[!UICONTROL Open & clicks by domains]** diagram och tabeller visar en sam
 
 ![](assets/channel_email_bounce_domain.png)
 
-The  **[!UICONTROL Bounce reasons by domain]** diagram och tabeller ger en uppdelning på domännivå av data om både tillfälliga och permanenta fel, vilket ger detaljerade insikter om orsakerna bakom studsade meddelanden.
+The **[!UICONTROL Bounce reasons by domain]** diagram och tabeller ger en uppdelning på domännivå av data om både tillfälliga och permanenta fel, vilket ger detaljerade insikter om orsakerna bakom studsade meddelanden.
 
 Mer information om studsar finns i [Undertryckningslista](../reports/suppression-list.md) sida.
 
