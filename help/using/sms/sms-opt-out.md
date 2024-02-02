@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 59ea67d9-e90c-4ad0-afb9-d0e0fd868855
-source-git-commit: 3b659955734c9ac1f29b5ae51c9bfebf1d387b17
+source-git-commit: 099e65cfa4ecbf2e4f4e706415c7fed3313246aa
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,18 @@ De alfanumeriska avsändar-ID:n är endast avsedda för envägsmeddelanden och k
 
 ## Video {#video-sms}
 
-Mer information om hur inbyggt stöd för inkommande nyckelord (START, STOP och UNSTOP) fungerar för SMS finns i följande video:
+* I videon nedan visas hur inbyggt stöd för inkommande nyckelord (START, STOP och UNSTOP) fungerar för SMS.
 
->[!VIDEO](https://video.tv.adobe.com/v/344026?quality=12)
++++ Se videon
+
+  >[!VIDEO](https://video.tv.adobe.com/v/344026?quality=12)
+
++++
+
+* I videon nedan får du lära dig hur du konfigurerar dubbel anmälan för SMS.
+
++++ Se videon
+
+  >[!VIDEO](https://video.tv.adobe.com/v/3427129/?learn=on)
+
++++
