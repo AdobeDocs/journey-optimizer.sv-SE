@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 7ef96642d28bce0e062e543b46a23ceeeded66fd
+source-git-commit: 63a849b50ff7f02da07e6fd74d00f3d9360ad012
 workflow-type: tm+mt
 source-wordcount: '4602'
 ht-degree: 13%
@@ -21,7 +21,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 
 ## Februari 2024 (#feb-2024)
 
-* Information om hur man personaliserar offerternas representationer baserat på kontextdata har lagts till [Läs mer](../offers/offer-library/add-representations.md#context-data)
+* Information har lagts till om hur man personaliserar offerternas representationer baserat på kontextdata. [Läs mer](../offers/offer-library/add-representations.md#context-data)
 
 ## Januari 2024 {#jan-2024}
 
