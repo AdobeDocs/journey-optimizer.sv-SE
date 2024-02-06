@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 718af505-7b7c-495e-8974-bd9c35d796bb
-source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
+source-git-commit: 7ef96642d28bce0e062e543b46a23ceeeded66fd
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 1%
+source-wordcount: '706'
+ht-degree: 0%
 
 ---
 
@@ -136,3 +136,42 @@ Du kan också infoga text när du väljer en kompatibel placering.
    >
    >Endast **[!UICONTROL Profile attributes]**, **[!UICONTROL Audiences]** och **[!UICONTROL Helper functions]** Det finns källor för beslutsförvaltning.
 
+## Anpassa representationer baserat på kontextdata{#context-data}
+
+När kontextdata skickas i [Kantbeslut](../api-reference/offer-delivery-api/edge-decisioning-api.md) kan ni utnyttja dessa data för att personalisera representationer dynamiskt. Du kan till exempel anpassa representationen av ett erbjudande baserat på realtidsfaktorer som aktuella väderförhållanden när beslutet fattas.
+
+Det gör du genom att infoga kontextdatavariabeln direkt i representationsinnehållet med hjälp av `profile.timeSeriesEvents.` namnutrymme.
+
+Här följer ett syntaxexempel som används för att anpassa en offerts representation baserat på användarnas operativsystem:
+
+```
+ {%#if profile.timeSeriesEvents.device.model = "Apple"%}ios{%else%}android{%/if%} 
+```
+
+Motsvarande Edge-beslutsbegäran med kontextdata är följande:
+
+```
+{
+    "body": {
+        "xdm": {
+            "identityMap": {
+                "Email": [
+                    {
+                        "id": "xyz@abc.com"
+                    }
+                ]
+            },
+            "device": {
+                "model": "Apple"
+            }
+        },
+        "extra": {
+            "query": {
+                "decisionScopes": [
+                    "eyJ4ZG06..."
+                ]
+            }
+        }
+    }
+}
+```
