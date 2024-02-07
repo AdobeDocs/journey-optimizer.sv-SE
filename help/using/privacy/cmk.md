@@ -7,9 +7,9 @@ feature: Privacy, Monitoring
 role: Developer, User, Admin, Leader
 level: Intermediate
 exl-id: f0985d1f-0bcf-452f-bd46-dfeca0424f01
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: a939d06d26d64a72eaec0ddc7f22b074ad463150
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,6 @@ Med Adobe Journey Optimizer [Hälsovårdssköld](https://www.adobe.com/trust/com
 Konfigurationsprocessen för Journey Optimizer består av två delar, som utnyttjar teknik från både Adobe Experience Platform och Customer Journey Analytics (CJA):
 
 * Följ stegen som beskrivs i [Kundhanterade nycklar i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html) dokumentation.
-
 * Följ stegen som beskrivs i [Kundhanterade nycklar i Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-privacy/cmk.html) dokumentation.
 
   Du måste slutföra den här installationsprocessen, även om du inte har köpt Customer Journey Analytics (CJA), eftersom vissa komponenter i CJA används i bakgrunden.
