@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: profil, uppdatering, resa, aktivitet
 exl-id: 8b2b2d1e-9bd1-439d-a15e-acdbab387c4b
-source-git-commit: b9d70bf2b3e16638a03b59fd4036771ad959a631
+source-git-commit: 9010b173eb5126fff72d71aa582b265cc05fddf0
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,11 @@ Använd **[!UICONTROL Update Profile]** Åtgärdsaktivitet för att uppdatera en
 * Uppdateringsbegäran som skickas till Adobe Experience Platform är omedelbart/inom en sekund. Det tar normalt några sekunder men ibland mer utan garanti. Detta resulterar exempelvis i att en åtgärd använder &quot;fält 1&quot; som har uppdaterats av en **Uppdatera profil** åtgärd som placerats precis tidigare, du bör inte förvänta dig att &quot;fält 1&quot; uppdateras i åtgärden.
 * The **Uppdatera profil** aktiviteten stöder inte XDM-fält som är definierade som en uppräkning.
 * The **[!UICONTROL Update profile]** endast aktiviteten uppdaterar [Profilarkiv](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}, inte Data Lake.
-* När du väljer en datauppsättning i **[!UICONTROL Update profile]** är det tillrådligt att använda en som inte styrs av dataöverföringsflöden. **[!UICONTROL Update profile]** uppdateringarna lagras bara i [Profilarkiv](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}, finns det risk för att sådana ändringar skrivs över med ett dataintag.
+* När du väljer en datauppsättning i **[!UICONTROL Update profile]** är det tillrådligt att använda en som inte styrs av dataöverföringsflöden. För **Uppdatera profil** uppdateringarna lagras bara i [Profilarkiv](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}, finns det risk för att sådana ändringar skrivs över med ett dataöverföringsflöde.
+
+  Dessutom kan du **Uppdatera profil** aktivitetskonfigurationen kräver inget identitetsnamnutrymme. Se därför till att den valda datauppsättningen använder samma ID-namnutrymme som användes av åtgärden som startade resan som det är detta namnområde som dessa uppdateringar kommer att använda. Identitetskartan kan även användas av den valda datauppsättningen. Om du inte väljer en datauppsättning med rätt namnutrymme eller en som använder identitetskarta orsakar detta **Uppdatera profil** aktivitet som ska misslyckas.
+
+
 
 ## Använda profiluppdateringen
 
