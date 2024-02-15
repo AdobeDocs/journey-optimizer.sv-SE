@@ -10,9 +10,9 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: d945e22af664876bf5f5403e7e466a1e383e9501
+source-git-commit: 51d07df4c1db10ea2e1ff76dbd29607c32fbd859
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '511'
 ht-degree: 3%
 
 ---
@@ -85,7 +85,6 @@ Tidigare som betaversion är följande förbättringar nu tillgängliga för all
 * **Konfiguration** - Attributet identityMap i stepEvents är nu förfyllt. Den primära identiteten definieras som &quot;primär = true&quot;.
 * **Användargränssnitt** - Den övre ribban på skärmar har omstrukturerats för en förbättrad upplevelse. Bland de olika uppdateringarna kan du lägga märke till att pennikonen som gör att du kan komma åt färgegenskaperna nu visas till vänster om det övre fältet, bredvid resans namn.
 
-
 **SMS-kanal**
 
 * **Nyckelord för anmälan/avanmälan** - När du konfigurerar din SMS-kanal kan du nu anpassa **Nyckelord för deltagande och avanmälan** enligt dina önskemål. Journey Optimizer utlöser svaret baserat på dessa angivna nyckelord.
@@ -101,4 +100,4 @@ Tidigare som betaversion är följande förbättringar nu tillgängliga för all
 **Innehållsmallar**
 
 * **Miniatyrbild** - A **miniatyrbildsvisning** är nu tillgängligt för innehållsmallar och fragment för förbättrad visuell åtkomst.
-* **Kanaler** - Innehållsmallar är nu tillgängliga för **alla kanaler**, förutom webben.
+* **Mallar för flera kanaler** - Innehållsmallar är nu tillgängliga för **alla kanaler**, förutom webben.
