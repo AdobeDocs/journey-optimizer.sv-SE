@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: aktivitet, resa, läsning, målgrupp, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: 7e850261f1a82492c5df93c4437b4e3c6859a2d7
+source-git-commit: 5b2db1a07030fe688abfed04680d7b31584a526b
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1409'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,8 @@ ht-degree: 0%
 Använd **Läs målgrupp** aktivitet för att få alla enskilda personer i en målgrupp att komma in på resan. Ingången till en resa kan genomföras antingen en gång eller regelbundet.
 
 Låt oss som exempel ta målgruppen&quot;Luma app opening and checkout&quot; som skapats i [Bygg målgrupper](../audience/about-audiences.md) användningsfall. Med aktiviteten Läs målgrupp kan ni få alla personer som tillhör den här målgruppen att resa in på en resa och få dem att flöda in i personaliserade resor som kan utnyttja alla resefunktioner: villkor, tidtagare, händelser och aktiviteter.
+
+➡️ [Upptäck den här funktionen i video](#video)
 
 ## Måste läsas {#must-read}
 
@@ -183,3 +185,9 @@ Om du till exempel har följt en annan upplevelse under tio dagar på en resa ka
 Efter en union kan du dela upp publiken igen genom att utföra en segmentering eller ett exkluderingsmoment.
 
 ![](assets/read-segment-audience3.png)
+
+## Instruktionsvideo {#video}
+
+Förstå tillämpliga användningsfall för en resa som triggas av läsmålgruppsaktiviteten. Lär dig hur du bygger batchbaserade resor och vilka metodtips som ska användas.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424997?quality=12)
