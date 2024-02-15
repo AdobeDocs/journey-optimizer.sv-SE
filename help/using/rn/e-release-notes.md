@@ -10,10 +10,10 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 97967e8043df9b75d3120e4a7bfccff700f5d57f
+source-git-commit: 27ef6f591fdf5d8175b79bbbf3f59fe65e44106f
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 4%
+source-wordcount: '491'
+ht-degree: 3%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 4%
 
 Noteringarna nedan kan ändras utan föregående meddelande fram till releasedatum. Länkar, skärmar och uppdaterad dokumentation publiceras i [versionsinformation](release-notes.md), på releasedatum.
 
-## Versionsinformation januari 2024 {#e-2024}
+## Versionsinformation februari 2024 {#e-2024}
 
-**Releasedatum**: 20-31 januari 2024
+**Releasedatum**: 20-21 feb 2024
 
 ### Nya funktioner{#e-features}
 
@@ -35,66 +35,71 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Uppdateringar om leveransbarhet</strong><br/></th>
+<th><strong>Webb-meddelanden i appen</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer stöder nu tekniken för DMARC-autentisering.</p>
-<p>Från och med 1 februari 2024, Google och Yahoo! kommer att kräva att du har en DMARC-post för alla domäner som du använder för att skicka e-post till dem. Se till att du har ställt in DMARC-posten för alla underdomäner som du har delegerat eller delegerat till Adobe i Journey Optimizer.</p>
-<!--img src="assets/channel-reports.png"/-->
-<p>Mer information finns i den <a href="../configuration/dmarc-record.md">detaljerade dokumentationen</a>.</p>
+<p>Nu kan du använda den nya meddelandefunktionen i Web In-App för att visa personaliserat innehåll direkt på webbplatser, via modala överläggsmeddelanden. Med den här funktionen kan ni interagera effektivt med webbbesökare och förbättra användarinteraktionen, kundlojaliteten och konverteringsgraden.<br/><!--br/>
+Learn more in the <a href="../audience/computed-attributes.md">detailed documentation</a>.</p-->
+<!--img src="assets/do-not-localize/computed-attributes.gif"-->
 </tr>
 </tbody>
 </table>
 
+
 <table>
 <thead>
 <tr>
-<th><strong>Använd fallspelningsböcker</strong><br/></th>
+<th><strong>Affärsregler (beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Använd en katalog med branschspecifika fallspelningsböcker i Real-Time CDP och Journey Optimizer för att hantera vanliga användningsområden som du kan använda Adobe Experience Platform och Adobe Journey Optimiser.</p><p>När du har valt den spelbok som bäst passar dina behov kan du aktivera den för att generera de resurser som behövs för att stödja ditt användningssätt, som resor, meddelanden, scheman eller segment, och anpassa dem till ditt schema för snabbare time-to-value.</p>
-<br/><img src="assets/do-not-localize/playbooks.gif"/>
-<!--<p>For more information, refer to the <a href="../start/playbooks.md">detailed documentation</a>.</p>-->
+<p>Du kan nu skapa regler för frekvensbegränsning som gäller för SMS- och Direct Mail-kanaler. Dessutom kan du ange regler för frekvensbegränsning efter kommunikationstyp.<br/><!--br/>
+Learn more in the <a href="../audience/computed-attributes.md">detailed documentation</a>.</p-->
+<!--img src="assets/do-not-localize/computed-attributes.gif"-->
 </tr>
 </tbody>
 </table>
+
+
 
 ### Förbättringar {#e-improvements}
 
 Den här versionen innehåller de förbättringar som anges nedan.
 
-**Rapporter**
+**Publiker**
 
-* **Nya domänbaserade uppdelningswidgetar** - Nya widgetar har lagts till för att förbättra kampanjrapporten och reserapporten. The **Studsa orsaker efter domän**, **Skickat och levererat av domäner**, **Öppnar och klickar per domän** och **Studsa och fel efter domän** widgetar ger en detaljerad beskrivning på domännivå för viktiga e-postleveranser och spårningsvärden. [Läs mer](../reports/channel-report.md)
+* Varianter stöds nu vid användning **listor med startsidor**. Precis som för varje profil från målgruppen får dirigeringsadresserna en kopia av alla varianter av samma budskap (till exempel olika behandlingar av ett innehållsexperiment).
 
-**SMS-kanal**
+Tidigare som betaversion är följande förbättringar nu tillgängliga för alla användare:
 
-* **Dubbel anmälan** - Arbetsflödet för dubbel anmälan för SMS garanterar att användare uttryckligen väljer att ta emot meddelanden när begäran initieras från sin enhet. Användarna initierar godkännandeprocessen genom att skicka ett inkommande SMS-meddelande. När de har bekräftat sitt samtycke skickas ett uppföljningsmeddelande med en begäran om slutlig verifiering. Om en användarprofil inte finns skapas den när den har bekräftats. [Läs mer](../sms/sms-configuration.md#create-api)
-
-  Observera att detta endast gäller SMS-leverantörer för Sinch och Infobip.
+* Nu kan du ange mål **målgrupper som överförts från en CSV-fil** på resor och kampanjer. [Läs mer](../audience/about-audiences.md#segments-in-journey-optimizer)
+* Nu kan du ange mål **målgrupper skapade genom målgruppssammansättning** och utnyttja anrikningsattributen i Journeys. [Läs mer](../building-journeys/read-audience.md)
 
 **Resor**
 
-* **Varaktighet för reaktionshändelser** - Den maximala varaktighet som du kan definiera i **Reaktionshändelser** är nu 29 dagar i stället för 30. [Läs mer](../building-journeys/reaction-events.md)
+* Den övre ribban på skärmar har omorganiserats för en förbättrad upplevelse. Bland de olika uppdateringarna kan du lägga märke till att pennikonen som gör att du kan komma åt färgegenskaperna nu visas till vänster om det övre fältet, bredvid resans namn.
+* Nu kan du använda **anpassade datum för att filtrera resorna** lager, utöver befintliga fördefinierade datumfilter. På så sätt kan du förfina listan genom att visa resor som publicerats ett visst datum, inom en viss månad, under ett helt år eller inom angivna tidsintervall.
+* Du kan nu uppdatera rubriken&quot;innehållstyp&quot; i **anpassade åtgärder**.
+* Attributet identityMap i stepEvents är nu ifyllt i förväg. Den primära identiteten definieras som &quot;primär = true&quot;.
 
-<!--* **Date filters** - You can now use custom dates to filter the journeys inventory, in addition to the existing predefined date filters. This allows you to refine the list by displaying journeys published on a specific date, within a particular month, throughout an entire year, or within specified time ranges. [Learn more](../building-journeys/journey-gs.md#filter)-->
+**SMS-kanal**
 
-* **Läsa målgrupper**  - Aktiviteten Läs målgrupp bygger nu på datamängden med profilögonblicksbilder för gruppsegment, som bara genereras en gång om dagen efter att det schemalagda dagliga batchjobbet har körts, och därför kommer data att uppdateras till det senaste batchjobbet.
+* När du konfigurerar din SMS-kanal kan du nu anpassa **Nyckelord för deltagande och avanmälan** enligt dina önskemål. Journey Optimizer utlöser svaret baserat på dessa angivna nyckelord.
 
-* **Fältgrupper** - Åtgärdade ett problem som innebar att fältgrupper blockerades för att sparas i vissa fall.
+**Kampanjer**
 
-* **Uttrycksredigeraren** - Vi stöder nu datatypen listObject i alla uttryck och i ytterligare funktioner. [Mer info](../building-journeys/expression/functions.md)
-
-**Frekvensregler**
-
-* **Frekvensbegränsning varje vecka och dag** - Du kan nu ange maximalt antal meddelanden som skickas till en kundprofil under en vecka eller en dag, utöver månaden. Frekvensbegränsningen baseras på den valda kalenderperioden och återställs i början av motsvarande tidsram. [Läs mer](../configuration/frequency-rules.md#create-new-rule)
+* Information har lagts till i avsnittet&quot;cURL-begäran&quot; i **API-utlösta kampanjer** som är i utkastläge, för att ange att exempelbegäran för cURL bara visas när kampanjen har publicerats och körts.
 
 **Beslutsledning**
 
-* **Frekvensbegränsning på Edge** - Räknaren för frekvensbegränsning har nu uppdaterats och är tillgänglig i ett beslut av Edge Decisioning API på mindre än 3 sekunder.
+* Nu kan du lägga till **regler för flera begränsningar** för ett erbjudande. På så sätt kan ni öka kontrollen över hur erbjudandena skickas.
+
+**Innehållsmallar**
+
+* A **miniatyrbildsvisning** är nu tillgängligt för innehållsmallar och fragment för förbättrad visuell åtkomst.
+* Innehållsmallar är nu tillgängliga för **alla kanaler**, förutom webben.
