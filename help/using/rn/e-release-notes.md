@@ -10,10 +10,10 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 51d07df4c1db10ea2e1ff76dbd29607c32fbd859
+source-git-commit: 8d3dac39a0f4ea9982c5a8475d310ae0c3be68b1
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 3%
+source-wordcount: '538'
+ht-degree: 2%
 
 ---
 
@@ -77,6 +77,10 @@ Tidigare som betaversion är följande förbättringar nu tillgängliga för all
 
 * Nu kan du ange mål **målgrupper som överförts från en CSV-fil** på resor och kampanjer. [Läs mer](../audience/about-audiences.md#segments-in-journey-optimizer)
 * Nu kan du ange mål **målgrupper skapade genom målgruppssammansättning** och utnyttja anrikningsattributen i Journeys. [Läs mer](../building-journeys/read-audience.md)
+
+>[!AVAILABILITY]
+>
+>Användningen av målgrupper och attribut från målgruppssammansättning och anpassad uppladdning (CSV-fil) är för närvarande inte tillgänglig för användning med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
 
 **Resor**
 
