@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: kvalificering, evenemang, målgrupp, resa, plattform
 exl-id: 7e70b8a9-7fac-4450-ad9c-597fe0496df9
-source-git-commit: d735f8c92466cb17a7364833950312e338c630cc
+source-git-commit: 1deb04490e53cbd5d67abda229bb4f850055510f
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 1%
+source-wordcount: '1007'
+ht-degree: 0%
 
 ---
 
@@ -30,6 +30,8 @@ Med den här aktiviteten kan din resa lyssna på ingångar och utgångar för pr
 Säg att ni har en&quot;silverkund&quot; som målgrupp. Med den här aktiviteten kan ni få alla nya silverkunder att ta sig in på en resa och skicka en serie personaliserade meddelanden till dem.
 
 Den här typen av händelse kan placeras som det första steget eller senare under resan.
+
+➡️ [Upptäck den här funktionen i video](#video)
 
 ### Viktiga anteckningar{#important-notes-segment-qualification}
 
@@ -126,3 +128,9 @@ Införa en begränsning för datakällor och åtgärder som används under resor
 Innan ni använder målgruppen i en produktionsresa måste ni först och främst utvärdera mängden individer som är kvalificerade för denna målgrupp varje dag. Om du vill göra det kan du kontrollera **[!UICONTROL Audience]** öppnar du publiken och tittar på **[!UICONTROL Profiles over time]** diagram.
 
 ![](assets/segment-overload.png)
+
+## Instruktionsvideo {#video}
+
+Förstå tillämpliga användningsfall för målgruppskompetensresor. Lär dig hur du bygger en resa med målgruppskvalifikation och vilka metodtips som ska användas.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425028?quality=12)

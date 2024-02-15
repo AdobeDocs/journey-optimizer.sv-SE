@@ -9,7 +9,7 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, användningsfall, personalisering
 exl-id: 7d9c3d31-af57-4f41-aa23-6efa5b785260
-source-git-commit: f6d56d1d23cca425f01e4c45532d500f3e2d4e2e
+source-git-commit: 1deb04490e53cbd5d67abda229bb4f850055510f
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
@@ -111,4 +111,3 @@ I det här fallet krävs följande krav:
 I videon nedan visas ett liknande användningsexempel som utnyttjar sammanhangsberoende data från en resa för att personalisera ett e-postmeddelande.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425027?quality=12)
-
