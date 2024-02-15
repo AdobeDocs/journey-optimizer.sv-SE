@@ -10,9 +10,9 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 9eb0e37b0547a3eb00802711825ecff63ab5f4a6
+source-git-commit: d945e22af664876bf5f5403e7e466a1e383e9501
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '510'
 ht-degree: 3%
 
 ---
@@ -71,7 +71,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Publiker**
 
-* Varianter stöds nu vid användning **listor med startsidor**. Precis som för varje profil från målgruppen får dirigeringsadresserna en kopia av alla varianter av samma budskap (till exempel olika behandlingar av ett innehållsexperiment).
+* **Utsändningslistor** - Varianter stöds nu när de använder **listor med startsidor**. Precis som för varje profil från målgruppen får dirigeringsadresserna en kopia av alla varianter av samma budskap (till exempel olika behandlingar av ett innehållsexperiment).
 
 Tidigare som betaversion är följande förbättringar nu tillgängliga för alla användare:
 
@@ -80,25 +80,25 @@ Tidigare som betaversion är följande förbättringar nu tillgängliga för all
 
 **Resor**
 
-* Nu kan du använda **anpassade datum för att filtrera resorna** lager, utöver befintliga fördefinierade datumfilter. På så sätt kan du förfina listan genom att visa resor som publicerats ett visst datum, inom en viss månad, under ett helt år eller inom angivna tidsintervall.
-* Du kan nu uppdatera rubriken&quot;innehållstyp&quot; i **anpassade åtgärder**.
-* Attributet identityMap i stepEvents är nu ifyllt i förväg. Den primära identiteten definieras som &quot;primär = true&quot;.
-* Den övre ribban på skärmar har omorganiserats för en förbättrad upplevelse. Bland de olika uppdateringarna kan du lägga märke till att pennikonen som gör att du kan komma åt färgegenskaperna nu visas till vänster om det övre fältet, bredvid resans namn.
+* **Filtrera dina resor** - Nu kan du använda **anpassade datum för att filtrera resorna** lager, utöver befintliga fördefinierade datumfilter. På så sätt kan du förfina listan genom att visa resor som publicerats ett visst datum, inom en viss månad, under ett helt år eller inom angivna tidsintervall.
+* **Anpassade åtgärder** - Du kan nu uppdatera rubriken &quot;content-type&quot; i **anpassade åtgärder**.
+* **Konfiguration** - Attributet identityMap i stepEvents är nu förfyllt. Den primära identiteten definieras som &quot;primär = true&quot;.
+* **Användargränssnitt** - Den övre ribban på skärmar har omstrukturerats för en förbättrad upplevelse. Bland de olika uppdateringarna kan du lägga märke till att pennikonen som gör att du kan komma åt färgegenskaperna nu visas till vänster om det övre fältet, bredvid resans namn.
 
 
 **SMS-kanal**
 
-* När du konfigurerar din SMS-kanal kan du nu anpassa **Nyckelord för deltagande och avanmälan** enligt dina önskemål. Journey Optimizer utlöser svaret baserat på dessa angivna nyckelord.
+* **Nyckelord för anmälan/avanmälan** - När du konfigurerar din SMS-kanal kan du nu anpassa **Nyckelord för deltagande och avanmälan** enligt dina önskemål. Journey Optimizer utlöser svaret baserat på dessa angivna nyckelord.
 
 **Kampanjer**
 
-* Information har lagts till i avsnittet&quot;cURL-begäran&quot; i **API-utlösta kampanjer** som är i utkastläge, för att ange att exempelbegäran för cURL bara visas när kampanjen har publicerats och körts.
+* **API-utlösta kampanjer** - Information har lagts till i **cURL-begäran** avsnitt i **API-utlösta kampanjer** som finns i **Utkast** för att ange att exempelbegäran om cURL bara visas när kampanjen har publicerats och körts.
 
 **Beslutsledning**
 
-* Nu kan du lägga till **regler för flera begränsningar** för ett erbjudande. På så sätt kan ni öka kontrollen över hur erbjudandena skickas.
+* **Begränsningsregler** - Nu kan du lägga till **regler för flera begränsningar** för ett erbjudande. På så sätt kan ni öka kontrollen över hur erbjudandena skickas.
 
 **Innehållsmallar**
 
-* A **miniatyrbildsvisning** är nu tillgängligt för innehållsmallar och fragment för förbättrad visuell åtkomst.
-* Innehållsmallar är nu tillgängliga för **alla kanaler**, förutom webben.
+* **Miniatyrbild** - A **miniatyrbildsvisning** är nu tillgängligt för innehållsmallar och fragment för förbättrad visuell åtkomst.
+* **Kanaler** - Innehållsmallar är nu tillgängliga för **alla kanaler**, förutom webben.
