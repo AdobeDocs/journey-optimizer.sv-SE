@@ -9,9 +9,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, användningsfall, personalisering
 exl-id: 7d9c3d31-af57-4f41-aa23-6efa5b785260
-source-git-commit: 142fac90b5726f6adbe34bea6d5f176526bce25d
+source-git-commit: f6d56d1d23cca425f01e4c45532d500f3e2d4e2e
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,8 @@ I det här fallet krävs följande krav:
 
 * konfigurera en orderhändelse som innehåller ordernummer, status och artikelnamn. Se detta [section](../event/about-events.md).
 * skapa ett beslut, se [section](../offers/offer-activities/create-offer-activities.md).
+
+➡️ [Upptäck ett liknande användningsfall i en video](#video)
 
 ## Steg 1 - Skapa resan {#create-journey}
 
@@ -103,3 +105,10 @@ I det här fallet krävs följande krav:
    ![](assets/perso-uc19.png)
 
 1. Kontrollera att det inte finns något fel och publicera resan.
+
+## Instruktionsvideo {#video}
+
+I videon nedan visas ett liknande användningsexempel som utnyttjar sammanhangsberoende data från en resa för att personalisera ett e-postmeddelande.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425027?quality=12)
+
