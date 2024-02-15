@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 71ab7369-fd84-46eb-95d2-941bd887d565
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: acb4c2dce86afb0b85125413a42094f96366a57d
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 16%
+source-wordcount: '197'
+ht-degree: 14%
 
 ---
 
@@ -36,3 +36,9 @@ Välj din profil om du vill lära dig och upptäcka styrkan i Adobe Journey Opti
 * Jag är en **Marknadsförare**
 
   Designa meddelanden, lägg till erbjudanden, resurser och bygg kundresor. [Läs mer](path/marketer.md)
+
+## Instruktionsvideo {#video}
+
+Förstå Journey Optimizer nyckelfunktioner och personligheter. Lär dig hur du navigerar i användargränssnittet beroende på din roll.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424995?quality=12)
