@@ -6,10 +6,10 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: b87ebc097c0c1c52ab21a4d098fbc2e5e227c953
+source-git-commit: 13ee474819aa0b63561946d94111cd76f3d5689d
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 6%
+source-wordcount: '611'
+ht-degree: 7%
 
 ---
 
@@ -54,7 +54,7 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Använd fallspelningsböcker</strong><br/></th>
+<th><strong>Spelböcker med användningsexempel</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -90,6 +90,8 @@ Den här versionen innehåller de förbättringar som anges nedan.
 * **Läsa målgrupper**  - **Läs målgrupp** aktiviteten bygger nu på data för profilögonblicksbilder för batchsegment, som bara genereras en gång om dagen efter att det schemalagda dagliga batchjobbet har körts, och därför kommer data att uppdateras till det senaste dagliga batchjobbet. [Läs mer](../building-journeys/read-audience.md)
 
 * **Fältgrupper** - Den här versionen åtgärdar ett problem som hindrade fältgrupper från att sparas i vissa fall.
+
+* Stöd för `<listObject>` har ändrats i flera funktioner.
 
 **Frekvensregler**
 
