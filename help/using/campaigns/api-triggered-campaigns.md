@@ -5,13 +5,13 @@ title: Utlösa kampanjer med API:er
 description: Lär dig hur du aktiverar kampanjer med Journey Optimizer API:er
 feature: Campaigns, API
 topic: Content Management
-role: Developer, Admin
+role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: 4729ceba99d0a1d356e1e44ee601c7b9eb871719
+source-git-commit: a0a4d39519f7f02265c52934db401e036ea12df6
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Tillgängliga kanaler för API-utlösta kampanjer är e-post-, SMS- och push-med
 >
 >Från och med nu stöds inte läget för snabb leverans för kampanjer som triggas av API:t för push-meddelanden.
 
-➡️ [Upptäck den här funktionen i en video](#video)
+➡️ [Upptäck den här funktionen i video](#video)
 
 ## Skapa en API-utlöst kampanj {#create}
 

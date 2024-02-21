@@ -6,9 +6,9 @@ description: Journey Optimizer tidiga versionsinformation
 feature: Release Notes
 topic: Content Management
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 1c65043965d1335297127f6cc6c23ec9a7893463
+source-git-commit: a0a4d39519f7f02265c52934db401e036ea12df6
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '609'
 ht-degree: 2%
 
 ---
@@ -80,8 +80,8 @@ Tidigare som betaversion är följande förbättringar nu tillgängliga för all
 
 **Resor**
 
-* **Filtrera dina resor** - Nu kan du använda **anpassade datum för att filtrera resorna** lager, utöver befintliga fördefinierade datumfilter. På så sätt kan du förfina listan genom att visa resor som publicerats ett visst datum, inom en viss månad, under ett helt år eller inom angivna tidsintervall.
-* **Anpassade åtgärder** - Du kan nu uppdatera rubriken &quot;content-type&quot; i **anpassade åtgärder**.
+* **Filtrera dina resor** - Nu kan du använda **anpassade datum för att filtrera resorna** lager, utöver befintliga fördefinierade datumfilter. På så sätt kan du förfina listan genom att visa resor som skapats eller publicerats på ett visst datum, inom en viss månad, under ett helt år eller inom angivna tidsintervall.
+* **Anpassade åtgärder** - Du kan nu uppdatera **content-type** header. Den här nya **content-type** ska referera till JSON-innehåll.
 * **Konfiguration** - Attributet identityMap i stepEvents är nu förfyllt. Den primära identiteten definieras som &quot;primär = true&quot;.
 * **Användargränssnitt** - Den övre ribban på skärmar har omstrukturerats för en förbättrad upplevelse. Bland de olika uppdateringarna kan du lägga märke till att pennikonen som gör att du kan komma åt färgegenskaperna nu visas till vänster om det övre fältet, bredvid resans namn.
 
@@ -103,6 +103,6 @@ Tidigare som betaversion är följande förbättringar nu tillgängliga för all
 
   >[!AVAILABILITY]
   >
-  >Den här funktionen introduceras stegvis i kundmiljöer från och med den här versionen.
+  >Den här funktionen lanseras i begränsad tillgänglighet (LA) för en liten grupp kunder.
 
 * **Mallar för flera kanaler** - Innehållsmallar är nu tillgängliga för **alla kanaler**, förutom webben. För E-post kan du nu välja typ (HTML eller Innehåll).
