@@ -7,7 +7,7 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
-source-git-commit: f275820c3f79bb4c9aca8593c2c761ccd4283795
+source-git-commit: f34eabfb4eb6d7486819cbc8435844b1ef983af3
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 1%
@@ -205,7 +205,7 @@ Nu kan du skicka textmeddelanden med Journey Optimizer.
 
 **Relaterade ämnen**
 
-* [Skapa textmeddelanden](create-sms.md)
+* [Skapa ett textmeddelande](create-sms.md)
 * [Lägg till ett meddelande i en resa](../building-journeys/journeys-message.md)
 * [Lägg till ett meddelande i en kampanj](../campaigns/create-campaign.md)
 
