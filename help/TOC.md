@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: d26dbebaf36241d0e91c36c95f83ce6cf712ecee
+source-git-commit: 21ce33b19693830972990c2c8bd5afe62b4c046d
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1730'
 ht-degree: 30%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 30%
    + [Användargränssnitt](using/start/user-interface.md)
    + [Söka, filtrera, kategorisera](using/start/search-filter-categorize.md)
    + [Tillgänglighet](using/start/accessibility.md)
-   + [Använd fallspelningsböcker](using/start/playbooks.md)
+   + [Spelböcker med användningsexempel](using/start/playbooks.md)
    + [Integreringar](using/start/ajo-integrations.md)
    + [Guardrails](using/start/guardrails.md)
    + [Bästa praxis](using/start/best-practices.md)
@@ -217,7 +217,7 @@ ht-degree: 30%
       + [Push-meddelandeflöde](using/push/push-gs.md)
       + [Konfigurera kanal för push-meddelanden](using/push/push-configuration.md)
       + [Arbetsflöde för snabb start av mobil introduktion](using/push/mobile-onboarding-wf.md)
-+ SMS-/MMS-kanal{#sms}
++ SMS-kanal{#sms}
    + [Kom igång med textmeddelanden](using/sms/get-started-sms.md)
    + [Skapa ett textmeddelande](using/sms/create-sms.md)
    + [Skapa ett MMS-meddelande](using/sms/create-mms.md)

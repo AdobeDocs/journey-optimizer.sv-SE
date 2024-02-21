@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: 752ffd7f-09c2-4aa3-a067-2dbe0634709c
-source-git-commit: 9d48213d8367fdc6c0fae62b73d1706bc4983d9d
+source-git-commit: 17ddd9042b6fb4f078bf858c3a855e7fb604b0d2
 workflow-type: tm+mt
-source-wordcount: '2071'
+source-wordcount: '2082'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
       >[!NOTE]
       >
-      >Du kan bara utesluta en domängrupp (oavsett om den är standard eller anpassad) som har lagts till i [Prenumerationsplanmall för IP-värmare](ip-warmup-plan.md#prepare-file). Om så inte är fallet uppdaterar du mallen med domängruppen som du vill utesluta och [ladda upp planen igen](#re-upload-plan).
+      >Du kan bara utesluta en anpassad domängrupp som har lagts till i [Prenumerationsplanmall för IP-värmare](ip-warmup-plan.md#prepare-file). Om så inte är fallet uppdaterar du mallen med den anpassade domängruppen som du vill utesluta och [ladda upp planen igen](#re-upload-plan).
 
 1. Vid behov kan du ersätta kampanjen med **[!UICONTROL Replace campaign]** -knappen.
 
@@ -162,6 +162,10 @@ At phase level, system ensures that previously targeted + new profiles are picke
    ![](assets/ip-warmup-plan-send-time.png)
 
 1. Du kan också definiera ett tidsfönster under vilket IP-warmup-kampanjen kan köras om det uppstår några förseningar i [målgruppsutvärdering](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#how-segmentation-works){target="_blank"}. Om du vill göra det klickar du på egenskapsikonen uppe till vänster, bredvid namnet på planen, och använder **[!UICONTROL Retry run time]** för att välja en varaktighet - upp till 240 minuter (4 timmar).
+
+   >[!NOTE]
+   >
+   >Försök görs var 30:e minut till slutet av det definierade tidsfönstret.
 
    ![](assets/ip-warmup-plan-retry-run-time.png)
 

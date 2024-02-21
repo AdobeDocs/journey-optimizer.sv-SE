@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 0d010bbb46887546d524726606764b564c352064
+source-git-commit: f275820c3f79bb4c9aca8593c2c761ccd4283795
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: '1908'
 ht-degree: 0%
 
 ---
@@ -40,12 +40,14 @@ Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera opti
 * Du kan inte lägga till en förrubrik på en landningssida.
 * Du kan inte välja **Koda din egen** när du utformar en primär landningssida.
 
-## SMS-skyddsräcken {#sms-guardrails}
+<!--
+## SMS guardrails {#sms-guardrails}
 
-* MMS-funktioner är bara tillgängliga för Sinch.
-* Mediefiler för MMS kan inkluderas via en URL som stöds. Kontrollera att mediefilen överförs separat.
-* Synkronisering av meddelandefeedback är för närvarande inte tillgängligt för MMS.
-* Samtalshantering fungerar på SMS-kanalnivå för MMS.
+* MMS Capability is only available for Sinch.
+* Media files for MMS can be included through a supported URL. Please ensure that the media file is uploaded separately.
+* Message feedback syncing is not currently available for MMS.
+* Consent management operates at the SMS channel level for MMS.
+-->
 
 ## Fragmentskyddsräcken {#fragments-guardrails}
 

@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: c2434086-2ed4-4cd0-aecd-2eea8f0a55f6
-source-git-commit: a5b3cd4eba18789d6014a7288ce6b0678a07982e
+source-git-commit: 17ddd9042b6fb4f078bf858c3a855e7fb604b0d2
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1511'
 ht-degree: 0%
 
 ---
@@ -141,9 +141,6 @@ De färdiga huvuddomängrupperna som du kan lägga till i din plan visas nedan:
 -->
 
 +++ Gmail gmail.com;google.com;googlemail.com;googlemail.co.uk
-+++
-
-+++ Adobe adobe.com
 +++
 
 +++WP wp.pl;o2.pl

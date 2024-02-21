@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 61e6291f-c063-44a0-950c-8bb76de693f2
-source-git-commit: 110fd5f1055455ec040ab8de0b599a343e8de298
+source-git-commit: f275820c3f79bb4c9aca8593c2c761ccd4283795
 workflow-type: tm+mt
-source-wordcount: '4397'
+source-wordcount: '4345'
 ht-degree: 8%
 
 ---
@@ -43,23 +43,23 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 </tbody>
 </table>
 
-
-
+<!--
 <table>
 <thead>
 <tr>
-<th><strong>MMS (Multimedia Message Service) i SMS</strong><br/></th>
+<th><strong>Multimedia Message Service (MMS) in SMS</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Med SMS-kanalen kan du nu förbättra kommunikationen genom att skicka MMS-meddelanden (Multimedia Message Service) som gör det möjligt att dela bilder, GIF eller videor med dina kunder. Observera att den här funktionen för närvarande endast är tillgänglig för Sinch.</p>
+<p>With the SMS Channel, you can now enhance your communication by sending Multimedia Message Service (MMS) messages, enabling the sharing of images, GIFs, or videos with your customers. Note that this feature is currently available with Sinch only.</p>
 <img src="assets/do-not-localize/mms.gif"/>
-<p>Mer information finns i den <a href="../sms/create-sms.md#mms-content">detaljerade dokumentationen</a>.</p>
+<p>For more information, refer to the <a href="../sms/create-sms.md#mms-content">detailed documentation</a>.</p>
 </tr>
 </tbody>
 </table>
+-->
 
 ### Förbättringar {#oct-2023-improvements}
 

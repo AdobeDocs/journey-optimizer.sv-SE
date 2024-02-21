@@ -9,10 +9,10 @@ role: Admin
 level: Experienced
 keywords: underdomän, optimering, delegering
 exl-id: 1b5ca4db-44d9-49e2-ab39-a1abba223ec7
-source-git-commit: 636c86d91d349104388849bbfc4e18bbbe2e4093
+source-git-commit: f59f6a60aabb793aec0cb813ddd9cee10c0fc097
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 25%
+source-wordcount: '883'
+ht-degree: 24%
 
 ---
 
@@ -45,15 +45,11 @@ Dessa krav hanteras via komponenter som finns både på Adobe och hos kunden, me
 * Lär dig hur [lägg till Google TXT-poster](google-txt.md) till dina underdomäner för att säkerställa att e-postmeddelanden skickas till Gmail-adresser
 * Lär dig hur [få åtkomst till PTR-posterna](ptr-records.md) som har genererats för dina underdomäner, så att de kan verifieras genom att e-postservrar skickas
 
->[!NOTE]
->
->Om du vill implementera DMARC för dina underdomäner kontaktar du [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
-
 ## Konfigurationsmetoder för underdomäner {#subdomain-delegation-methods}
 
 Med subdomänkonfigurationen kan du konfigurera ett underavsnitt av din domän (tekniskt en &quot;DNS-zon&quot;) för användning med Adobe Campaign. Tillgängliga installationsmetoder är:
 
-* **Fullständig delegering av underdomäner till Adobe** (rekommenderas): underdomänen delegeras helt till Adobe. Adobe kan styra och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra meddelanden. [Läs mer om fullständig delegering av underdomäner](delegate-subdomain.md#full-subdomain-delegation)
+* **Fullständig delegering till underdomäner till Adobe** (rekommenderas): Underdomänen har delegerats helt till Adobe. Adobe kan styra och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra meddelanden. [Läs mer om fullständig delegering av underdomäner](delegate-subdomain.md#full-subdomain-delegation)
 
 * **Användning av CNAME**: Skapa en underdomän och använd CNAME för att peka på Adobe-specifika poster. Med den här konfigurationen delar både du och Adobe ansvaret för att underhålla DNS. [Läs mer om delegering av CNAME-underdomäner](delegate-subdomain.md#cname-subdomain-delegation)
 

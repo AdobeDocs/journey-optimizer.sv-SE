@@ -5,14 +5,10 @@ title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 feature: Release Notes
 topic: Content Management
-role: User
-level: Beginner, Intermediate
-hide: true
-hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 2afb293dfa772967417781e9a3ee6840db262594
+source-git-commit: 1c65043965d1335297127f6cc6c23ec9a7893463
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '602'
 ht-degree: 2%
 
 ---
@@ -25,7 +21,7 @@ Noteringarna nedan kan ändras utan föregående meddelande fram till releasedat
 
 ## Versionsinformation, februari 2024 {#e-2024}
 
-**Releasedatum**: 20-21 feb 2024
+**Releasedatum**: 21-22 feb 2024
 
 ### Nya funktioner{#e-features}
 
@@ -51,19 +47,17 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Affärsregler (beta)</strong><br/></th>
+<th><strong>Frekvensregler för SMS och direktreklam</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Du kan nu skapa regler för frekvensbegränsning som gäller för SMS- och Direct Mail-kanaler. Dessutom kan du ange regler för frekvensbegränsning efter kommunikationstyp.<br/><br/></p>
-<!--img src="assets/do-not-localize/computed-attributes.gif"-->
+<p>Du kan nu skapa frekvensregler för SMS- och Direct Mail-kanaler. Frekvensreglerna exkluderar automatiskt överbegärda profiler från meddelanden och åtgärder när frekvensgränsen nås. <br/><br/></p>
+<img src="assets/do-not-localize/sms-dm-rules.gif">
 </tr>
 </tbody>
 </table>
-
-
 
 ### Förbättringar {#e-improvements}
 
@@ -75,12 +69,14 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 Tidigare som betaversion är följande förbättringar nu tillgängliga för alla användare:
 
-* Nu kan du ange mål **målgrupper som överförts från en CSV-fil** på resor och kampanjer. [Läs mer](../audience/about-audiences.md#segments-in-journey-optimizer)
 * Nu kan du ange mål **målgrupper skapade genom målgruppssammansättning** och utnyttja anrikningsattributen i Journeys. [Läs mer](../building-journeys/read-audience.md)
 
->[!AVAILABILITY]
->
->Användningen av målgrupper och attribut från målgruppssammansättning och anpassad uppladdning (CSV-fil) är för närvarande inte tillgänglig för användning med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
+* Nu kan du ange mål **målgrupper som överförts från en CSV-fil** på resor och kampanjer. [Läs mer](../audience/about-audiences.md#segments-in-journey-optimizer)
+
+  >[!AVAILABILITY]
+  >
+  >* Användningen av målgrupper och attribut från målgruppssammansättning och anpassad uppladdning (CSV-fil) är för närvarande inte tillgänglig för användning med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
+  >* Observera att målgruppsuppladdningen från en CSV-filförbättring kommer att introduceras gradvis under flera dagar efter den första versionen. Vissa användare har omedelbar åtkomst, men andra kan uppleva en fördröjning innan den blir tillgänglig i sina konton.
 
 **Resor**
 
@@ -95,7 +91,7 @@ Tidigare som betaversion är följande förbättringar nu tillgängliga för all
 
 **Kampanjer**
 
-* **API-utlösta kampanjer** - Information har lagts till i **cURL-begäran** avsnitt i **API-utlösta kampanjer** som finns i **Utkast** för att ange att exempelbegäran om cURL bara visas när kampanjen har publicerats och körts.
+* **API-utlösta kampanjer** - Den cURL-kod som genereras efter aktivering av en API-utlöst kampanj har förbättrats. Det innehåller nu alla personaliseringsvariabler (profil och kontext) som används i meddelandet.
 
 **Beslutsledning**
 
@@ -104,4 +100,9 @@ Tidigare som betaversion är följande förbättringar nu tillgängliga för all
 **Innehållsmallar**
 
 * **Miniatyrbild** - A **miniatyrbildsvisning** är nu tillgängligt för innehållsmallar och fragment för förbättrad visuell åtkomst.
-* **Mallar för flera kanaler** - Innehållsmallar är nu tillgängliga för **alla kanaler**, förutom webben.
+
+  >[!AVAILABILITY]
+  >
+  >Den här funktionen introduceras stegvis i kundmiljöer från och med den här versionen.
+
+* **Mallar för flera kanaler** - Innehållsmallar är nu tillgängliga för **alla kanaler**, förutom webben. För E-post kan du nu välja typ (HTML eller Innehåll).

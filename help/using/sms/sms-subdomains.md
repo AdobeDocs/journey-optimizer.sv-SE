@@ -8,9 +8,9 @@ feature: SMS, Channel Configuration
 level: Intermediate
 keywords: SMS, underdomäner, konfiguration
 exl-id: 08a546d1-060c-43e8-9eac-4c38945cc3e1
-source-git-commit: 227cdb77b0db40c59fa089789c444c2364fd062e
+source-git-commit: f275820c3f79bb4c9aca8593c2c761ccd4283795
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 >abstract="Om du vill kunna skapa en SMS-yta måste du kontrollera att du tidigare har konfigurerat minst en SMS-underdomän att välja från listan över underdomännamn."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/sms/sms-configuration.html#message-preset-sms" text="Skapa SMS-ytor"
 
-För att kunna förkorta URL:er som läggs till i SMS/MMS-meddelanden måste du konfigurera den underdomän som du väljer när [skapa en SMS-yta](sms-configuration.md#message-preset-sms).
+För att kunna förkorta URL:er som läggs till i SMS-meddelanden måste du konfigurera den underdomän som du väljer när [skapa en SMS-yta](sms-configuration.md#message-preset-sms).
 
 Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en annan underdomän. Läs mer om hur du delegerar underdomäner till Adobe in [det här avsnittet](../configuration/delegate-subdomain.md).
 

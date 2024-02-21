@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: 1b831facc70f0be01c0358ca23942e848ff3b708
+source-git-commit: 09142fa8d8c48d9ba56ef03e6a97b0be3da45916
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,8 @@ Följ stegen nedan för att skapa en ny regel.
 
 1. Definiera regelnamnet.
 
-   ![](assets/message-rules-details.png)
+   <!--![](assets/message-rules-details.png)-->
+   ![](assets/message-rules-details-temp.png)
 
 1. Välj meddelanderegelkategori.
 
@@ -79,9 +80,10 @@ Följ stegen nedan för att skapa en ny regel.
    >
    >För närvarande bara **[!UICONTROL Marketing]** finns tillgänglig.
 
-1. Välj en tidsram för den begränsning som ska användas på menyn **[!UICONTROL Duraction]** listruta.
+1. Från **[!UICONTROL Duration]** i den nedrullningsbara listan väljer du en tidsram för den begränsning som ska användas.
 
-   <!--![](assets/message-rules-capping-duration.png) TO UPDATE ONCE DAILY REMOVED-->
+   <!--![](assets/message-rules-capping-duration.png)-->
+   ![](assets/message-rules-capping-duration-temp.png)
 
    Frekvensgränsen baseras på den valda kalenderperioden. Den återställs i början av motsvarande tidsram.
 
@@ -93,12 +95,11 @@ Följ stegen nedan för att skapa en ny regel.
 
    * **[!UICONTROL Monthly]**: Frekvensbegränsningen gäller till den sista dagen i månaden vid 23:59:59 UTC. Månadsförfallodatumet för januari är till exempel 01-31 23:59:59 UTC.
 
-   <!-- NOTE
-   >When dealing with [batch segmentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#batch){target="_blank"}, the daily counters may not accurately reflect the current values as the daily counter snapshot is taken at midnight UTC the night before. Consequently, relying on daily counters in this scenario becomes impractical, as the snapshot does not reflect the most up-to-date counter values on the profile. To ensure accuracy for daily frequency capping rules, the use of [streaming segmentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html){target="_blank"} is recommended. <!--Learn more on audience evaluation methods in [this section](using/audience/about-audiences.md#evaluation-method-in-journey-optimizer).-->
+   &lt;!—OBS! Vid hantering av [gruppsegmentering](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#batch){target="_blank"}, the daily counters may not accurately reflect the current values as the daily counter snapshot is taken at midnight UTC the night before. Consequently, relying on daily counters in this scenario becomes impractical, as the snapshot does not reflect the most up-to-date counter values on the profile. To ensure accuracy for daily frequency capping rules, the use of [streaming segmentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html){target="_blank"} rekommenderas. <!--Learn more on audience evaluation methods in [this section](using/audience/about-audiences.md#evaluation-method-in-journey-optimizer).-->
 
-1. Ange begränsningen för din regel, vilket innebär det maximala antalet meddelanden som kan skickas till en enskild användarprofil varje månad, vecka eller dag enligt vad du väljer ovan.
+1. Ange begränsningen för regeln, vilket innebär det maximala antalet meddelanden som kan skickas till en enskild användarprofil varje månad eller vecka <!--or day--> - enligt dina val ovan.
 
-   ![](assets/message-rules-capping.png)
+   <!--![](assets/message-rules-capping.png)-->
 
 1. Markera kanalen som du vill använda för den här regeln: **[!UICONTROL Email]** eller **[!UICONTROL Push notification]**.
 

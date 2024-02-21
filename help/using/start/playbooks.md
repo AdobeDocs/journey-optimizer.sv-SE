@@ -1,24 +1,24 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Använd fallspelningsböcker
+title: Spelböcker med användningsexempel
 description: Lär dig hur du använder Adobe Experience Platform Use Case Playbooks med Adobe Journeys Optimizer.
 feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: a16de75b2b0604d7a0d6224d03b7c53715903c07
+source-git-commit: 21e7d416548dd9220d5535573bc6ff17dd0479ec
 workflow-type: tm+mt
 source-wordcount: '380'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Använd fallspelningsböcker {#playbooks}
+# Spelböcker med användningsexempel {#playbooks}
 
 >[!PREREQUISITES]
 >
->Följande konfigurationssteg krävs innan du arbetar med Använd fallspelningsböcker. Detaljerad information om varje steg finns i Use Case Playbooks-dokumentationen [Kom igång](https://experienceleague.corp.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html){target="_blank"} sida.
+>Följande konfigurationssteg krävs innan du arbetar med Använd fallspelningsböcker. Detaljerad information om varje steg finns i Use Case Playbooks-dokumentationen [Kom igång](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html){target="_blank"} sida.
 >
 >* Skapa en sandlåda
 >* Konfigurera användarbehörigheter

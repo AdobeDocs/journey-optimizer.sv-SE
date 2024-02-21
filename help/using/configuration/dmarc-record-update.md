@@ -8,9 +8,9 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: underdomän, domän, e-post, marc, post
-source-git-commit: cdc3e0ffaddb2ad83ad1703c1858773d09557859
+source-git-commit: f59f6a60aabb793aec0cb813ddd9cee10c0fc097
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Domänbaserad Message Authentication, Reporting och Conformance (DMARC) är en autentiseringsmetod som gör att domänägare kan skydda sin domän från obehörig användning. Genom att erbjuda en tydlig profil till e-postleverantörer/Internet-leverantörer hjälper den till att förhindra att oseriösa aktörer skickar e-postmeddelanden som påstår sig vara från din domän. Implementering av DMARC minskar risken för att legitima e-postmeddelanden markeras som skräppost eller avvisas, och förbättrar e-postleveransen.
 
-Google och Yahoo är en del av deras branschledande arbetsmetoder! kräver båda att **DMARC-post** för alla domäner som du använder för att skicka e-post till dem. Detta nya krav börjar gälla **1 februari 2024**. [Läs mer](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html#dmarc){target="_blank"}
+Google och Yahoo är en del av deras branschledande arbetsmetoder! kräver båda **DMARC-post** för alla domäner som du använder för att skicka e-post till dem. Detta nya krav börjar gälla **1 februari 2024**. [Läs mer](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html#dmarc){target="_blank"}
 
 >[!CAUTION]
 >
@@ -44,8 +44,9 @@ eller
 eller
    * Konfigurera DMARC för dina delegerade underdomäner **i[!DNL Journey Optimizer]** användargränssnitt för konfiguration. [Lär dig mer](dmarc-record.md#implement-dmarc)
 
-  Med CNAME-delegering måste du dock även ange detta i din värdlösning. Se därför till att du samarbetar med din IT-avdelning så att de kan utföra de uppdateringar som beskrivs i [det här avsnittet](dmarc-record.md#implement-dmarc).
-
+  >[!IMPORTANT]
+  >
+  >CNAME-konfigurationen kräver dock även ytterligare information i värdlösningen. Se därför till att du samarbetar med din IT-avdelning så att de kan utföra de uppdateringar som beskrivs i [det här avsnittet](dmarc-record.md#implement-dmarc).
 
 De senaste tidslinjer som delas av Google och Yahoo! är följande:
 
@@ -67,5 +68,5 @@ De senaste tidslinjer som delas av Google och Yahoo! är följande:
 
 * Läs mer om DMARC i [Handbok om bästa praxis för leverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html#about){target="_blank"}
 * Mer information om de här ändringarna finns i [Handbok om bästa praxis för leverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html){target="_blank"}
-* Läs [Google Gmail-meddelande](https://blog.google/products/gmail/gmail-security-authentication-spam-protection/){target="_blank"}
-* Läs [Yahoo! meddelande](https://blog.postmaster.yahooinc.com/post/730172167494483968/more-secure-less-spam){target="_blank"}
+* Läs mer om [Google Gmail-meddelande](https://blog.google/products/gmail/gmail-security-authentication-spam-protection/){target="_blank"}
+* Läs mer om [Yahoo! meddelande](https://blog.postmaster.yahooinc.com/post/730172167494483968/more-secure-less-spam){target="_blank"}
