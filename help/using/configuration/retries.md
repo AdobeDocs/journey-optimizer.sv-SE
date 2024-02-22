@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Återförsök
+title: Försök igen
 description: Lär dig hur nya försök utförs innan du skickar en adress till listan över inaktiveringar
 feature: Deliverability, Channel Configuration
 topic: Administration
@@ -9,16 +9,16 @@ role: Admin
 level: Experienced
 keywords: återförsök, studsa, mjuk, optimering, fel
 exl-id: 05564a99-da50-4837-8dfb-bb1d3e0f1097
-source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
+source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 1%
+source-wordcount: '570'
+ht-degree: 0%
 
 ---
 
-# Återförsök {#retries}
+# Försök igen {#retries}
 
-När ett e-postmeddelande misslyckas på grund av ett tillfälligt **Mjuk studsa** fel, flera försök utförs. Varje fel ökar en felräknare. När den här räknaren når gränsvärdet läggs adressen till i listan över spärrade adresser.
+När ett e-postmeddelande misslyckas på grund av ett tillfälligt **Mjuk studsa** fel för en viss adress, flera försök utförs. Varje fel ökar en felräknare. När den här räknaren når gränsvärdet läggs e-postadressen till i listan över spärrade adresser.
 
 >[!NOTE]
 >
@@ -28,9 +28,17 @@ I standardkonfigurationen är tröskelvärdet 5 fel.
 
 * För samma leverans påträffades fel den femte i [återförsökstid](#retry-duration), är adressen undertryckt.
 
-* Om det finns olika leveranser och två fel inträffar med minst 24 timmars mellanrum, ökas felräknaren vid varje fel och adressen visas inte vid det femte försöket.
+* Om det finns olika leveranser och två fel inträffar med minst 24 timmars mellanrum, ökas felräknaren vid varje fel och adressen visas inte vid det femte försöket. Fel ackumuleras för varje adress.
 
 Om en leverans lyckas efter ett nytt försök initieras adressräknaren på nytt.
+
+Exempel:
+
+* Du skickar ett e-postmeddelande på måndag med en återförsöksperiod på 24 timmar. Den emma.jones@mail.com adressen levereras inte. Ett nytt försök att skicka e-postmeddelandet görs upp till tre gånger och försök att nå den 24 timmar långa återförsöksperioden avbryts.
+
+* Du skickar ett e-postmeddelande till på onsdag. emma.jones@mail.com, som redan har ett antal tre fel, har också angetts som mål och levereras inte - två gånger. Ytterligare två fel räknas.
+
+Under förutsättning att inga andra leveransförsök gjorts och att de båda meddelandena lyckades, läggs emma.jones@mail.com till i listan över inaktiveringar med tanke på den kumulativa effekten av 3 + 2-fel.
 
 ## Försök igen med tröskelversionen {#edit-retry-threshold}
 

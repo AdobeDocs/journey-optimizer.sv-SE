@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 21ce33b19693830972990c2c8bd5afe62b4c046d
+source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
 workflow-type: tm+mt
-source-wordcount: '1730'
+source-wordcount: '1736'
 ht-degree: 30%
 
 ---
@@ -80,7 +80,7 @@ ht-degree: 30%
       + Funktioner {#main-functions-journey}
          + [Huvudfunktioner](using/building-journeys/expression/functions.md)
          + Adobe Experience Platform {#adobe-experience-platform}
-            + [inSegment](using/building-journeys/functions/functioninsegment.md)
+            + [inAudience](using/building-journeys/functions/functioninaudience.md)
          + Aggregera {#aggregation}
             + [avg](using/building-journeys/functions/functionavg.md)
             + [count](using/building-journeys/functions/functioncount.md)
@@ -205,7 +205,8 @@ ht-degree: 30%
 + Kanal i appen{#in-app}
    + [Kom igång med kanalen i appen](using/in-app/get-started-in-app.md)
    + [Krav för kanaler i appen](using/in-app/inapp-configuration.md)
-   + [Skapa ett meddelande i appen](using/in-app/create-in-app.md)
+   + [Skapa ett meddelande i appen för mobiler](using/in-app/create-in-app.md)
+   + [Skapa ett meddelande i appen för webben](using/in-app/create-in-app-web.md)
    + [Designa ditt innehåll i appen](using/in-app/design-in-app.md)
    + [Kontrollera och skicka meddelanden i appen](using/in-app/send-in-app.md)
 + Push-meddelandekanal{#push}

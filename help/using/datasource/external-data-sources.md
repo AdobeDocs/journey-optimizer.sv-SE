@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: externa, källor, data, konfiguration, anslutning, tredje part
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
-source-git-commit: 67fbfe9c2ffb40a420cc3f28a775d9c6b3ee5553
+source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
 workflow-type: tm+mt
-source-wordcount: '1450'
-ht-degree: 78%
+source-wordcount: '1487'
+ht-degree: 75%
 
 ---
 
@@ -69,7 +69,15 @@ Här följer de viktigaste stegen för att skapa och konfigurera en ny extern da
 
    ![](assets/journey27.png)
 
-1. Konfigurera autentiseringen beroende på den externa tjänstens konfiguration: **[!UICONTROL No authentication]**, **[!UICONTROL Basic]**, **[!UICONTROL Custom]** eller **[!UICONTROL API key]**. Mer information om det anpassade autentiseringsläget finns i [det här avsnittet](../datasource/external-data-sources.md#custom-authentication-mode). I vårt exempel väljer vi:
+1. Konfigurera autentiseringen beroende på den externa tjänstens konfiguration: **[!UICONTROL No authentication]**, **[!UICONTROL Basic]**, **[!UICONTROL Custom]** eller **[!UICONTROL API key]**.
+
+   För det grundläggande autentiseringsläget måste du fylla i ett användarnamn och ett lösenord.
+
+   >[!NOTE]
+   >
+   >När autentiseringsanropet utförs visas `<username>:<password>` strängen, kodad i base64, läggs till i autentiseringshuvudet.
+
+   Mer information om det anpassade autentiseringsläget finns i [det här avsnittet](../datasource/external-data-sources.md#custom-authentication-mode). I det här exemplet väljer vi autentiseringsläget för API-nyckel:
 
    * **[!UICONTROL Type]**: &quot;API-nyckel&quot;
    * **[!UICONTROL Name]**: &quot;appid&quot; (det här är API-nyckelns parameternamn)

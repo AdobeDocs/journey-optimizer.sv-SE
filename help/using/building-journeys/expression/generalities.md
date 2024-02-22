@@ -8,10 +8,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: syntax, redigerare, resa
 exl-id: c9434b28-2750-4a53-985e-c4a3f940472c
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 2%
+source-wordcount: '231'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +35,7 @@ Uttrycken utvärderas från vänster till höger. Associativiteten för aritmeti
 Här är de olika reglerna för skiftlägeskänslighet:
 
 * Alla operatorer (och, eller, osv.) ska skrivas med gemener. Till exempel _`<expression1>`och`<expression2>`_ är ett giltigt uttryck medan uttrycket _`<expression1>`OCH`<expression2>`_ inte.
-* Alla funktionsnamn är versalkänsliga. Till exempel _inSegment()_ är giltigt medan funktionen _INSEGMENT()_ inte.
+* Alla funktionsnamn är versalkänsliga. Till exempel _inAudience()_ är giltigt medan funktionen _INAUDIENCE()_ inte.
 * Fältreferenser och konstanta värden är skiftlägeskänsliga: de är inte inbyggda element i språket (till skillnad från operatorer och funktioner), utan skapas av slutanvändaren.
 
 ## Returnerad uttryckstyp{#returned-expression-type}

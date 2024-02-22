@@ -8,10 +8,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: uttrycksredigerare, data, resa
 exl-id: 9ea6cc3a-6a1b-4e8f-82ff-f8b1812617d7
-source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
+source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 75%
+source-wordcount: '651'
+ht-degree: 66%
 
 ---
 
@@ -22,7 +22,12 @@ ht-degree: 75%
 >title="Om den avancerade uttrycksredigeraren"
 >abstract="Använd den avancerade uttrycksredigeraren för att skapa avancerade uttryck på olika skärmar i gränssnittet. Du kan till exempel skapa uttryck när du konfigurerar och använder resor och när du definierar ett datakällsvillkor."
 
-Använd den avancerade uttrycksredigeraren för att skapa avancerade uttryck på olika skärmar i gränssnittet. Du kan till exempel skapa uttryck när du konfigurerar och använder resor och när du definierar ett datakällsvillkor.
+Använd den avancerade uttrycksredigeraren Journey för att skapa avancerade uttryck på olika skärmar i gränssnittet. Du kan till exempel skapa uttryck när du konfigurerar och använder resor och när du definierar ett datakällsvillkor.
+
+>[!NOTE]
+>
+>De funktioner och funktioner som finns i den avancerade uttrycksredigeraren Journey skiljer sig från dem som finns i [Personaliseringsredigerare](../../personalization/functions/functions.md).
+
 Den är också tillgänglig varje gång du behöver definiera åtgärdsparametrar som kräver specifika dataändringar. Du kan utnyttja data från händelser eller ytterligare information som hämtats från datakällan. I en resa är den lista med händelsefält som visas sammanhangsberoende och varierar beroende på vilka händelser som läggs till i resan.
 
 Den avancerade uttrycksredigeraren har en uppsättning inbyggda funktioner och operatorer som du använder för att manipulera värden och definiera ett uttryck som passar dina behov. Med den avancerade uttrycksredigeraren kan du även definiera värden för den externa datakällans parameter samt ändra kartläggningsfält och samlingar, till exempel upplevelsehändelser.
@@ -45,7 +50,7 @@ När det är möjligt kan du växla mellan de två lägena med hjälp av knappen
 >
 >Åtgärdsparametrar kan definieras genom fältval eller via den avancerade uttrycksredigeraren. De returnerar en viss datatyp enligt sina uttryck.
 
-## Komma åt den avancerade uttrycksredigeraren {#accessing-the-advanced-expression-editor}
+## Åtkomst till den avancerade uttrycksredigeraren {#accessing-the-advanced-expression-editor}
 
 Du kan komma åt den avancerade uttrycksredigeraren på olika sätt.
 
@@ -64,11 +69,11 @@ Med den här skärmen kan du ange ett uttryck manuellt.
 
 Till vänster på skärmen visas tillgängliga fält och funktioner:
 
-* **[!UICONTROL Events]**: välj ett av fälten som har tagits emot från den inkommande händelsen. Listan med händelsefält som visas är sammanhangsberoende och varierar beroende på vilka händelser som läggs till i resan. [Läs mer](../../event/about-events.md)
+* **[!UICONTROL Events]**: välj ett av fälten som har tagits emot från den inkommande händelsen. Den visade listan med händelsefält är sammanhangsberoende och varierar beroende på vilka händelser som läggs till under resan. [Läs mer](../../event/about-events.md)
 * **[!UICONTROL Audiences]**: om du har släppt en **[!UICONTROL Audience qualification]** väljer du den målgrupp du vill använda i ditt uttryck. [Läs mer](../condition-activity.md#using-a-segment)
-* **[!UICONTROL Data Sources]**: välj i listan bland tillgängliga fält från datakällornas fältgrupper. [Läs mer](../../datasource/about-data-sources.md)
+* **[!UICONTROL Data Sources]**: välj i listan över fält som är tillgängliga från fältgrupperna i datakällorna. [Läs mer](../../datasource/about-data-sources.md)
 * **[!UICONTROL Journey properties]**: I det här avsnittet grupperas de tekniska fält som rör resan för en viss profil om. [Läs mer](journey-properties.md)
-* **[!UICONTROL Functions]**: välj i listan bland inbyggda funktioner som du använder för att utföra komplex filtrering. Funktionerna är organiserade per kategori. [Läs mer](functions.md)
+* **[!UICONTROL Functions]**: välj i listan bland inbyggda funktioner som du använder för att utföra komplex filtrering. Funktionerna är ordnade efter kategorier. [Läs mer](functions.md)
 
 ![](../assets/journey65.png)
 

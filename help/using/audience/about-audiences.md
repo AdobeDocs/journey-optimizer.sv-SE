@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: cdcce470481393c821d1c5df95639602510a690a
+source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 1%
+source-wordcount: '1086'
+ht-degree: 0%
 
 ---
 
@@ -39,15 +39,11 @@ Målgrupper kan genereras på olika sätt:
 
 ## Målgrupper i [!DNL Journey Optimizer] {#segments-in-journey-optimizer}
 
-I kampanjer och resor kan du välja vilken Adobe Experience Platform-målgrupp som helst som genereras med [segmentdefinitioner](../audience/creating-a-segment-definition.md).
+I kampanjer och resor kan du välja alla målgrupper som genereras med segmentdefinitioner, CSV-filimport eller kompositionsarbetsflöden.
 
->[!NOTE]
+>[!AVAILABILITY]
 >
->För närvarande är målgrupper resultatet av [målgruppskompositioner](../audience/get-started-audience-orchestration.md) kan endast användas i kampanjer. Den här funktionen är tillgänglig som en privat betaversion för resor.
->
->Användning av målgrupper [överförd från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"} i kampanjer och resor är för närvarande tillgängliga som en privat betaversion.
->
->Kontakta din Adobe-representant om du vill veta mer.
+>Användningen av målgrupper och attribut från målgruppssammansättning och anpassad uppladdning (CSV-fil) är för närvarande inte tillgänglig för användning med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten. [Lär dig använda attribut för målgruppsberikning i Journey Optimizer](../audience/about-audiences.md#enrichment)
 
 Ni kan utnyttja målgrupper i **[!DNL Journey Optimizer]** på olika sätt:
 
@@ -62,6 +58,18 @@ Ni kan utnyttja målgrupper i **[!DNL Journey Optimizer]** på olika sätt:
   Du kan till exempel få alla nya silverkunder att resa och skicka meddelanden till dem. Mer information om hur du använder den här aktiviteten finns i [Lär dig hur du konfigurerar en aktivitet för målgruppskvalificering](../building-journeys/audience-qualification-events.md).
 
 * Använd **Villkor** aktiviteter på en resa för att skapa villkor baserade på medlemskap för målgrupper. [Lär dig hur du använder målgrupper under förhållanden](../building-journeys/condition-activity.md#using-a-segment).
+
+## Använd attribut för målgruppsberikning i Journey Optimizer {#enrichment}
+
+När ni riktar in er på en målgrupp som skapats med kompositionsarbetsflöden eller anpassad uppladdning (CSV-fil) kan ni utnyttja anrikningsattribut från dessa målgrupper för att bygga upp er resa och personalisera era budskap.
+
+* Skapa flera vägar i en resa baserat på regler som utnyttjar målgruppens anrikningsattribut. För att göra detta bör du rikta in dig på målgruppen med en [Läsa målgrupper](../building-journeys/read-audience.md) skapar sedan regler i en [Villkor](../building-journeys/condition-activity.md) verksamhet som bygger på målgruppens anrikningsattribut.
+
+  ![](assets/audience-enrichment-attribute-condition.png){zoomable=&quot;yes&quot;}
+
+* Anpassa era meddelanden på resor eller i kampanjer genom att lägga till anrikningsattribut från målgruppen i Expression Editor. [Lär dig arbeta med uttrycksredigeraren](../personalization/personalization-build-expressions.md)
+
+  ![](assets/audience-enrichment-attribute-perso.png){zoomable=&quot;yes&quot;}
 
 ## Metoder för utvärdering av målgrupper {#evaluation-method-in-journey-optimizer}
 

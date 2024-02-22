@@ -6,10 +6,10 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
-source-git-commit: 2444d8fbe3a86feb0497d754b4f57f234fa29e49
+source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
 workflow-type: tm+mt
-source-wordcount: '1828'
-ht-degree: 1%
+source-wordcount: '1854'
+ht-degree: 0%
 
 ---
 
@@ -17,13 +17,19 @@ ht-degree: 1%
 
 Använd [!DNL Journey Optimizer] mallspråk för att utföra dataåtgärder, t.ex. beräkningar, dataformatering eller konvertering, villkor och hantera dem i personaliseringssammanhang. Läs riktlinjerna för syntaxen för personalisering i [den här sidan](../personalization-syntax.md).
 
+
+
 ➡️ [Lär dig hur du använder hjälpfunktioner i den här videon](#video)
 
-Mallspråk används i hjälpfunktioner som är tillgängliga i listrutan för anpassning i uttrycksredigeraren, enligt nedan:
+Mallspråk används i hjälpfunktioner som finns i listrutan Personalisering i personaliseringsredigeraren, enligt nedan:
 
 ![](../assets/access-helper-functions.png)
 
-I [!DNL Journey Optimizer] Uttrycksredigeraren, hjälpfunktionerna är grupperade i tre kategorier: [Funktioner](#functions-helper), [Hjälpmedel](#helper-helper) och [Operatorer](#operators-helper).
+>[!NOTE]
+>
+>De funktioner och funktioner som finns i personaliseringsredigeraren skiljer sig från dem som finns i [Avancerad uttrycksredigerare för Journey](../../building-journeys/expression/expressionadvanced.md).
+
+I [!DNL Journey Optimizer] Personaliseringsredigeraren, hjälpfunktionerna är indelade i tre kategorier: [Funktioner](#functions-helper), [Hjälpmedel](#helper-helper) och [Operatorer](#operators-helper).
 
 Välj en kategori för att komma åt underkategorier och funktioner.
 
@@ -155,7 +161,7 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
         <td><a href="math.md#format-number">Formatnummer</a></td><td>Den här funktionen formaterar alla tal i sin språkkänsliga representation.</td>
     </tr>
     <tr>
-        <td><a href="math.md#random">Random</a></td><td>Den här funktionen returnerar ett slumpvärde mellan 0 och 1</td>
+        <td><a href="math.md#random">Slumpmässig</a></td><td>Den här funktionen returnerar ett slumpvärde mellan 0 och 1</td>
     </tr>
     <tr>
         <td><a href="math.md#round-down">Avrunda nedåt</a></td><td>Den här funktionen avrundar ett tal nedåt</td>
@@ -256,7 +262,7 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
         <td><a href="string.md#leftTrim">Vänster trimning</a></td><td>Den här funktionen tar bort blanksteg från början av en sträng</td>
     </tr>
     <tr>
-        <td><a href="string.md#length">Length</a></td><td>Den här funktionen används för att hämta antalet tecken i en sträng eller ett uttryck</td>
+        <td><a href="string.md#length">Längd</a></td><td>Den här funktionen används för att hämta antalet tecken i en sträng eller ett uttryck</td>
     </tr>
     <tr>
         <td><a href="string.md#like">Gilla</a></td><td>Den här funktionen används för att avgöra om en sträng matchar ett angivet mönster</td>
@@ -283,7 +289,7 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
         <td><a href="string.md#regexGroup">Grupp för reguljära uttryck</a></td><td>Den här funktionen används för att extrahera specifik information baserat på det reguljära uttrycket</td>
     </tr>
     <tr>
-        <td><a href="string.md#replace">Replace</a></td><td>Den här funktionen ersätter en given delsträng i en sträng med en annan delsträng</td>
+        <td><a href="string.md#replace">Ersätt</a></td><td>Den här funktionen ersätter en given delsträng i en sträng med en annan delsträng</td>
     </tr>
     <tr>
         <td><a href="string.md#replaceAll">Ersätt alla</a></td><td>Den här funktionen ersätter alla delsträngar i en text som matchar"target" med den angivna strängen för"ersättning"</td>
@@ -410,7 +416,7 @@ Jämförelsefunktioner används för att jämföra mellan olika uttryck och vär
         <td><a href="operators.md#equals">Är lika med</a></td><td>Den här åtgärden kontrollerar om värdena är lika</td>
     </tr>
     <tr>
-        <td><a href="operators.md#greaterthan">Greater than</a></td><td>Operatorn kontrollerar om det första värdet är större än det andra värdet</td>
+        <td><a href="operators.md#greaterthan">Större än</a></td><td>Operatorn kontrollerar om det första värdet är större än det andra värdet</td>
     </tr>
     <tr>
         <td><a href="operators.md#greaterthanorequal">Större eller lika med</a></td><td>Operatorn kontrollerar om det första värdet är större än eller lika med det andra värdet</td>

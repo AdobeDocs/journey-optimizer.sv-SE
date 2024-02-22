@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: aktivitet, resa, läsning, målgrupp, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: 5b2db1a07030fe688abfed04680d7b31584a526b
+source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Låt oss som exempel ta målgruppen&quot;Luma app opening and checkout&quot; som
 
 * Vi rekommenderar att du endast använder gruppmålgrupper i en **Läsa målgrupper** aktivitet. Detta ger en tillförlitlig och enhetlig räkning för de målgrupper som används under en resa. Läsarna är utformade för att gruppbearbetas. Om ditt användningsfall behöver realtidsdata ska du använda **[Målgruppskvalifikation](audience-qualification-events.md)** aktivitet.
 
-* För närvarande används målgrupper [importerad från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) eller som härrör från [arbetsflöden för disposition](../audience/get-started-audience-orchestration.md) på resorna finns som en privat betaversion. Kontakta din Adobe-representant om du vill veta mer.
+* Målgrupper [importerad från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) eller som härrör från [arbetsflöden för disposition](../audience/get-started-audience-orchestration.md) kan markeras i **Läs målgrupp** aktivitet. Dessa målgrupper är inte tillgängliga i **Målgruppskvalifikation** aktivitet.
 
 ## Konfigurera aktiviteten {#configuring-segment-trigger-activity}
 
@@ -55,7 +55,7 @@ Så här konfigurerar du aktiviteten Läs målgrupp:
 
    >[!NOTE]
    >
-   >Dessutom kan ni inrikta er på Adobe Experience Platform målgrupper som skapats med [målgruppskompositioner](../audience/get-started-audience-orchestration.md) eller [överförd från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}. Dessa funktioner är för närvarande tillgängliga som en privat beta.
+   >Dessutom kan ni inrikta er på Adobe Experience Platform målgrupper som skapats med [målgruppskompositioner](../audience/get-started-audience-orchestration.md) eller [överförd från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}.
 
    Observera att du kan anpassa kolumnerna som visas i listan och sortera dem.
 

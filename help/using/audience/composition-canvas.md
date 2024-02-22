@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 3eb9466e-9d88-4470-a22f-5e24a29923ae
-source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
+source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1476'
 ht-degree: 0%
 
 ---
@@ -151,6 +151,7 @@ Observera följande begränsningar när du arbetar med **[!UICONTROL Enrich]** a
 * **Datauppsättningar** for enrichment måste vara av posttyp (till skillnad från händelsetyp), och de kan inte vara en systemdatauppsättning eller markeras för profil. De måste vara under 1 GB.
 * **Anrikning stöder 1:1-join**. Det innebär att om kopplingsnycklarna har fler än en matchning i datauppsättningen enrichment, väljs en av matchningarna och används för 1:1-kopplingen.
 * **Målgrupper kan aktiveras i RTCDP-destinationer**, men deras eventuella anrikningsattribut kan inte det.
+* Anrikningsattribut är ännu inte integrerade med policystyrningen. Därför kommer de etiketter för dataanvändning som du använder för dina anrikningsattribut inte att användas i Journey Optimizer kampanjer eller resor.
 
 Så här konfigurerar du aktiviteten:
 

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c1027268-0bbe-4e35-a5a6-2aef78083dd3
-source-git-commit: f275820c3f79bb4c9aca8593c2c761ccd4283795
+source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '225'
 ht-degree: 2%
 
 ---
@@ -74,7 +74,7 @@ Adobe Journey Optimizer skickar textmeddelanden via SMS-tjänstleverantörer (el
 
 * I videon nedan visas hur du konfigurerar, redigerar och inkluderar SMS-meddelanden i dina kundresor.
 
-+++
+  +++Se video
 
   >[!VIDEO](https://video.tv.adobe.com/v/3420509?learn=on)
 

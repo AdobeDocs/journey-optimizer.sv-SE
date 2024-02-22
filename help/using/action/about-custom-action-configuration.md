@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: 0d010bbb46887546d524726606764b564c352064
+source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
 workflow-type: tm+mt
-source-wordcount: '1374'
+source-wordcount: '1402'
 ht-degree: 3%
 
 ---
@@ -34,6 +34,8 @@ Anpassade åtgärder har några begränsningar som anges i [den här sidan](../s
 I anpassade åtgärdsparametrar kan du skicka en enkel samling samt en samling med objekt. Läs mer om begränsningar för samlingar i [den här sidan](../building-journeys/collections.md#limitations).
 
 Observera också att de anpassade åtgärdsparametrarna har ett förväntat format (till exempel sträng, decimal). Du måste vara försiktig med att ta hänsyn till dessa förväntade format. Läs mer om detta [användningsfall](../building-journeys/collections.md).
+
+Anpassade åtgärder stöder bara JSON-format när du använder [förfrågan](../action/about-custom-action-configuration.md#define-the-message-parameters) eller [svarsnyttolaster](../action/action-response.md).
 
 ## Bästa praxis{#custom-action-enhancements-best-practices}
 
@@ -117,7 +119,9 @@ När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICO
 
 1. Definiera rubriker och frågeparametrar:
 
-   * I **[!UICONTROL Headers]** avsnitt, klicka **[!UICONTROL Add a header field]** för att definiera HTTP-rubrikerna för det begärandemeddelande som ska skickas till den externa tjänsten. The **[!UICONTROL Content-Type]** och **[!UICONTROL Charset]** rubrikfält anges som standard. Du kan inte ändra eller ta bort dessa fält.
+   * I **[!UICONTROL Headers]** avsnitt, klicka **[!UICONTROL Add a header field]** för att definiera HTTP-rubrikerna för det begärandemeddelande som ska skickas till den externa tjänsten. The **[!UICONTROL Content-Type]** och **[!UICONTROL Charset]** rubrikfält anges som standard. Du kan inte ta bort dessa fält. Endast **[!UICONTROL Content-Type]** kan ändras. Dess värde ska följa JSON-formatet. Här är standardvärdet:
+
+   ![](assets/content-type-header.png)
 
    * I **[!UICONTROL Query parameters]** avsnitt, klicka **[!UICONTROL Add a Query parameter field]** för att definiera de parametrar som du vill lägga till i URL-adressen.
 

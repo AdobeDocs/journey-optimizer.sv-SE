@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: f275820c3f79bb4c9aca8593c2c761ccd4283795
+source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
 workflow-type: tm+mt
-source-wordcount: '1908'
+source-wordcount: '1923'
 ht-degree: 0%
 
 ---
@@ -89,6 +89,7 @@ Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera opti
 * IP-adresser tillåts inte
 * Adobe adresser (`.adobe.*`) tillåts inte i URL:er och API:er.
 * Inbyggda anpassade åtgärder kan inte tas bort.
+* Anpassade åtgärder stöder bara JSON-format när du använder begäran- eller svarsnyttolaster. Läs [den här sidan](../action/about-custom-action-configuration.md#custom-actions-limitations).
 * När du väljer en slutpunkt som ska användas som mål med en anpassad åtgärd ska du se till att:
 
    * Den här slutpunkten kan stödja resans genomströmning med hjälp av konfigurationer från [Begränsnings-API](../configuration/throttling.md) eller [API för begränsning](../configuration/capping.md) för att begränsa den. Var försiktig med att en begränsningskonfiguration inte får vara lägre än 200 TPS. Alla målpunkter måste ha stöd för minst 200 TPS.

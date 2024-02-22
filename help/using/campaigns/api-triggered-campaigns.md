@@ -9,19 +9,14 @@ role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: a0a4d39519f7f02265c52934db401e036ea12df6
+source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '934'
 ht-degree: 0%
 
 ---
 
 # Utlösa kampanjer med API:er {#trigger-campaigns}
-
->[!CONTEXTUALHELP]
->id="ajo_campaigns_api_profile_creation"
->title="Kampanjtyp"
->abstract="Följ stegen i dokumentationen för att få en begränsad tillgänglighetsfunktion för att skicka meddelanden utan att skapa profiler."
 
 ## Om API-utlösta kampanjer {#about}
 
@@ -79,7 +74,7 @@ Du är nu redo att köra kampanjen från API:erna. [Läs mer](#execute)
 
 När kampanjen har aktiverats måste du hämta den genererade cURL-exempelbegäran och använda den i API:t för att skapa din nyttolast och utlösa kampanjen.
 
-1. Öppna kampanjen och kopiera och klistra sedan in exempelbegäran från **[!UICONTROL cURL request]** -avsnitt.
+1. Öppna kampanjen och kopiera och klistra sedan in begäran om nyttolast från **[!UICONTROL cURL request]** -avsnitt. Den här nyttolasten innehåller alla personaliseringsvariabler (profil och kontext) som används i meddelandet. Den blir tillgänglig när kampanjen är live.
 
    ![](assets/api-triggered-curl.png)
 

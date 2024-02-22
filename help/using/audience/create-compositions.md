@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 8b978900-fcef-46f2-bc19-70776e4f3d43
-source-git-commit: 2344d53a331cb883a81a051ce1e06e8c42824cb7
+source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Så här skapar du ett dispositionsarbetsflöde:
 
    ![](assets/audiences-alerts.png)
 
-1. Dispositionen publiceras. De resulterande målgrupperna sparas i Adobe Experience Platform och kan nu målinrikta sig i Journey Optimizer kampanjer. [Lär dig arbeta med kampanjer](../campaigns/get-started-with-campaigns.md)
+1. Dispositionen publiceras. Målgrupperna sparas i Adobe Experience Platform och kan nu användas i Journey Optimizer. [Lär dig målinrikta målgrupper i Journey Optimizer](../audience/about-audiences.md#segments-in-journey-optimizer)
 
 ## Åtkomst till kompositioner {#access}
 

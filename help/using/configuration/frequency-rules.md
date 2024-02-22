@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: 09142fa8d8c48d9ba56ef03e6a97b0be3da45916
+source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1083'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,9 @@ ht-degree: 0%
 
 [!DNL Journey Optimizer] Med kan du styra hur ofta användare ska få ett meddelande eller delta i en resa genom att ställa in flerkanalsregler som automatiskt utesluter överbegärda profiler från meddelanden och åtgärder.
 
-En regel för ett varumärke kan till exempel inte vara att skicka mer än tre marknadsföringsmeddelanden per månad till sina kunder. För att göra detta kan du använda en frekvensregel som begränsar antalet meddelanden som skickas baserat på en eller flera kanaler under en månadskalenderperiod.
+För ett varumärke kan till exempel en regel vara att inte skicka mer än fyra marknadsföringsmeddelanden per månad till sina kunder. För att göra detta kan du använda en frekvensregel som begränsar antalet meddelanden som skickas baserat på en eller flera kanaler under en månadskalenderperiod.
+
+![](assets/do-not-localize/sms-dm-rules.gif)
 
 >[!NOTE]
 >
@@ -69,21 +71,17 @@ Följ stegen nedan för att skapa en ny regel.
 
    ![](assets/message-rules-create.png)
 
-1. Definiera regelnamnet.
-
-   <!--![](assets/message-rules-details.png)-->
-   ![](assets/message-rules-details-temp.png)
-
-1. Välj meddelanderegelkategori.
+1. Definiera regelnamnet och markera meddelanderegelkategorin.
 
    >[!NOTE]
    >
    >För närvarande bara **[!UICONTROL Marketing]** finns tillgänglig.
 
+   <!--![](assets/message-rules-details.png)-->
+
 1. Från **[!UICONTROL Duration]** i den nedrullningsbara listan väljer du en tidsram för den begränsning som ska användas.
 
-   <!--![](assets/message-rules-capping-duration.png)-->
-   ![](assets/message-rules-capping-duration-temp.png)
+   ![](assets/message-rules-capping-duration.png)
 
    Frekvensgränsen baseras på den valda kalenderperioden. Den återställs i början av motsvarande tidsram.
 
@@ -101,7 +99,7 @@ Följ stegen nedan för att skapa en ny regel.
 
    <!--![](assets/message-rules-capping.png)-->
 
-1. Markera kanalen som du vill använda för den här regeln: **[!UICONTROL Email]** eller **[!UICONTROL Push notification]**.
+1. Markera kanalen som du vill använda för den här regeln: **[!UICONTROL Email]**, **[!UICONTROL Push notification]**, **[!UICONTROL SMS]** eller **[!UICONTROL Direct mail]**.
 
    ![](assets/message-rules-channels.png)
 
@@ -173,7 +171,7 @@ Du kan kombinera flera regler för meddelandefrekvens, som beskrivs i exemplet n
 
 1. [Skapa en regel](#create-new-rule) anropad *Total marknadsföringstak*:
 
-   * Välj E-post- och push-kanaler.
+   * Markera alla kanaler.
    * Ställ in capping på 12 månatliga.
 
    ![](assets/message-rules-ex-overall-cap.png)
@@ -187,9 +185,26 @@ Du kan kombinera flera regler för meddelandefrekvens, som beskrivs i exemplet n
 
 1. Spara och [activate](#activate-rule) regeln.
 
-1. Skapa ett e-postmeddelande och välj **[!UICONTROL Marketing]** kategori för det meddelandet. [Läs mer](../email/create-email.md)
+1. [Skapa ett meddelande](../building-journeys/journeys-message.md) för varje kanal som du vill kommunicera genom och välja **[!UICONTROL Marketing]** kategori för varje meddelande. [Lär dig hur du använder en frekvensregel](#apply-frequency-rule)
 
-1. Skapa ett push-meddelande och välj **[!UICONTROL Marketing]** kategori för det meddelandet. [Läs mer](../push/create-push.md)
+   ![](assets/journey-message-category.png)
+
+
+<!--
+Learn how to create a message for the different channels in the following sections:
+* [Create an email](../email/create-email.md)
+* [Create a push notification](../push/create-push.md)
+* [Create an SMS](../sms/create-sms.md)
+* [Create a direct mail](../direct-mail/create-direct-mail.md)
+
+Create an email and select the **[!UICONTROL Marketing]** category for that message. [Learn more](../email/create-email.md)
+
+Create a push notification and select the **[!UICONTROL Marketing]** category for that message. [Learn more](../push/create-push.md)
+
+Create an SMS and select the **[!UICONTROL Marketing]** category for that message. [Learn more](../sms/create-sms.md)
+
+Create a direct mail and select the **[!UICONTROL Marketing]** category for that message. [Learn more](../direct-mail/create-direct-mail.md)
+-->
 
 I det här scenariot finns en enskild profil:
 * kan ta emot upp till 12 marknadsföringsmeddelanden per månad,

@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: utsädeslista, seedlist, seed, configuration
 exl-id: 0172f6bc-da8b-4a83-a0fc-4ed41324568f
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 3%
+source-wordcount: '915'
+ht-degree: 2%
 
 ---
 
@@ -23,8 +23,6 @@ Seed-listor i [!DNL Journey Optimizer] gör att du automatiskt kan inkludera spe
 >[!CAUTION]
 >
 >Den här funktionen gäller för närvarande bara för e-postkanalen.
->
->Varianter stöds för närvarande inte. Precis som för varje profil från målgruppen får dirigeringsadresserna en enda kopia av varje meddelande, men inte alla varianter av samma meddelande (till exempel olika behandlingar av ett [innehållsexperiment](../campaigns/get-started-experiment.md)).
 
 Fröadresser används för mottagare i målgruppen som inte matchar dess definierade villkor. På så sätt kan mottagare som ligger utanför leveransomfånget ta emot leveransen, precis som andra målmottagare gör.
 
@@ -47,6 +45,10 @@ Seed-adresser är inte riktiga profiler eller testprofiler eftersom de inte inne
 +++
 
 * En annan orsak till att du använder listor med startsidor är att du skyddar din sändlista. Genom att infoga dirigerade adresser i din e-postlista kan du lägga märke till om de används av en tredje part, eftersom de dirigerade adresserna som finns där kommer att få leveranserna som skickas till din e-postlista.
+
+>[!NOTE]
+>
+>Varianter stöds. dirigeringsadresserna får en kopia av varje variant av samma budskap (t.ex. olika behandlingar av en [innehållsexperiment](../campaigns/get-started-experiment.md)).
 
 ## Åtkomst till startlistor {#access-seed-lists}
 
@@ -120,15 +122,15 @@ Följ stegen nedan för att skapa en startvärdeslista.
    >
    >Du kan kombinera båda alternativen, men det totala antalet adresser i en startvärdeslista får inte överstiga 50.
 
-1. Klicka på **[!UICONTROL Create]** för att bekräfta. Listan med nyskapade startvärden visas i [Skärm för lista med startsidor](#access-seed-lists).
+1. Klicka **[!UICONTROL Create]** för att bekräfta. Listan med nyskapade startvärden visas i [Skärm för lista med startsidor](#access-seed-lists).
 
 ## Använd en startlista i en kampanj eller resa {#use-seed-list}
 
-Nu när din startlista har skapats kan du använda den i alla kampanjer och under alla resor för att inkludera motsvarande startadresser i leveranserna. För att göra detta, följ nedanstående steg.
+Nu när din startlista har skapats kan du använda den i alla kampanjer och under alla resor för att inkludera motsvarande startadresser i leveranserna. Följ stegen nedan för att göra det.
 
 >[!CAUTION]
 >
->Meddelanden som skickas till dirigerade adresser inkluderas inte i rapporter.
+>Meddelanden som skickas till dirigerade adresser ingår inte i rese- eller kampanjrapporter.
 
 1. Skapa en yta och välj **[!UICONTROL Email]** kanal. [Läs mer](../email/email-settings.md)
 

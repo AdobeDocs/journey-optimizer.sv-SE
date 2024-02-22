@@ -8,10 +8,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: funktion, uttryck, redigerare, resa
 exl-id: 5b978eef-7d3e-41fe-bb08-0cf37c3b125d
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 73%
+source-wordcount: '185'
+ht-degree: 39%
 
 ---
 
@@ -27,18 +27,18 @@ Här är en lista över funktioner som stöds.
 
 ## Huvudfunktioner
 
-| Kategori |  -funktion |
+| Kategori | Funktion |
 |-------------|-----------------------|
-| Adobe Experience Platform | [inSegment](../functions/functioninsegment.md) |
-| Aggregera | [avg](../functions/functionavg.md) |
-| Aggregera | [count](../functions/functioncount.md) |
-| Aggregera | [countOnlyNull](../functions/functioncountonlynull.md) |
-| Aggregera | [countWithNull](../functions/functioncountwithnull.md) |
-| Aggregera | [distinctCount](../functions/functiondistinctcount.md) |
-| Aggregera | [distinctCountWithNull](../functions/functiondistinctcountwithnull.md) |
-| Aggregera | [max](../functions/functionmax.md) |
-| Aggregera | [min](../functions/functionmin.md) |
-| Aggregera | [sum](../functions/functionsum.md) |
+| Adobe Experience Platform | [inAudience](../functions/functioninaudience.md) |
+| Aggregering | [avg](../functions/functionavg.md) |
+| Aggregering | [count](../functions/functioncount.md) |
+| Aggregering | [countOnlyNull](../functions/functioncountonlynull.md) |
+| Aggregering | [countWithNull](../functions/functioncountwithnull.md) |
+| Aggregering | [distinctCount](../functions/functiondistinctcount.md) |
+| Aggregering | [distinctCountWithNull](../functions/functiondistinctcountwithnull.md) |
+| Aggregering | [max](../functions/functionmax.md) |
+| Aggregering | [min](../functions/functionmin.md) |
+| Aggregering | [sum](../functions/functionsum.md) |
 | Konvertering | [toBool](../functions/functiontobool.md) |
 | Konvertering | [toDateOnly](../functions/functiontodateonly.md) |
 | Konvertering | [toDateTime](../functions/functiontodatetime.md) |
@@ -67,7 +67,7 @@ Här är en lista över funktioner som stöds.
 | Lista | [getListItem](../functions/functiongetlistitem.md) |
 | Lista | [in](../functions/functionin.md) |
 | Lista | [korsa](../functions/functionintersect.md) |
-| Lista | [listSize](../functions/functionlimit.md) |
+| Lista | [limit](../functions/functionlimit.md) |
 | Lista | [listSize](../functions/functionlistsize.md) |
 | Lista | [serializeList](../functions/functionserializelist.md) |
 | Lista | [sort](../functions/functionsort.md) |
@@ -83,12 +83,13 @@ Här är en lista över funktioner som stöds.
 | Sträng | [isEmpty](../functions/functionisempty.md) |
 | Sträng | [isNotEmpty](../functions/functionisnotempty.md) |
 | Sträng | [lastIndexOf](../functions/functionlastindexof.md) |
-| Sträng | [längd](../functions/functionlength.md) |
+| Sträng | [length](../functions/functionlength.md) |
 | Sträng | [lower](../functions/functionlower.md) |
 | Sträng | [matchRegExp](../functions/functionmatchregexp.md) |
 | Sträng | [notEqualIgnoreCase](../functions/functionnotequalignorecase.md) |
 | Sträng | [replace](../functions/functionreplace.md) |
 | Sträng | [replaceAll](../functions/functionreplaceall.md) |
+| Sträng | [split](../functions/functionsplit.md) |
 | Sträng | [startWith](../functions/functionstartwith.md) |
 | Sträng | [startWithIgnoreCase](../functions/functionstartwithignorecase.md) |
 | Sträng | [substr](../functions/functionsubstr.md) |

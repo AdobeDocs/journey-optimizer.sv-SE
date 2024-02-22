@@ -9,10 +9,10 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, om, start
 exl-id: 1ac2a376-a3a8-41ae-9b04-37886697f0fc
-source-git-commit: 4112ac79a1f21fb369119ccd801dcbceac3c1e58
+source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 1%
+source-wordcount: '445'
+ht-degree: 0%
 
 ---
 
@@ -44,6 +44,10 @@ I den vänstra delen av skärmen visas en domänväljare där du kan välja käl
 Klicka på plusknappen (+) för att lägga till ett attribut i ditt personaliseringsuttryck.
 
 Med ellipsmenyn bredvid ikonen&quot;+&quot; kan du få mer information om varje variabel och lägga till de attribut som används oftast i favoriter. [Lär dig hur du lägger till attribut i favoriter](personalization-favorites.md)
+
+>[!NOTE]
+>
+>Om ni riktar in er på en målgrupp med anrikningsattribut som genererats med ett arbetsflöde för komposition eller en anpassad överföring (CSV-fil) kan ni utnyttja dessa anrikningsattribut för att personalisera ert budskap. [Lär dig använda attribut för målgruppsberikning](../audience/about-audiences.md#enrichment)
 
 Dessutom kan du definiera standardreservtext som visas om ett profilattribut av strängtyp är tomt. Det gör du genom att klicka på ellipsknappen bredvid attributet och välja **[!UICONTROL Insert with fallback text]**. Skriv den text som ska visas som standard om attributets värde är tomt för en profil och klicka sedan på **[!UICONTROL Add]**.
 

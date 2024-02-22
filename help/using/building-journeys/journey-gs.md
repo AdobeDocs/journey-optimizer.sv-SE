@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: a5027f4558526c2f3516816c12803e741c7f8dac
+source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
 workflow-type: tm+mt
-source-wordcount: '1748'
+source-wordcount: '1762'
 ht-degree: 5%
 
 ---
@@ -89,7 +89,7 @@ Här är de olika filtreringsåtgärderna som du kan utföra:
 
 * Använd **[!UICONTROL Publication filters]** för att välja ett publiceringsdatum eller en användare. Du kan till exempel välja att visa de senaste versionerna av direktresor som publicerades igår.
 
-  <!--To filter journeys based on a specific date range, select **[!UICONTROL Custom]** from the **[!UICONTROL Published]** drop-down list.-->
+  Om du vill filtrera resor baserat på ett visst datumintervall väljer du **[!UICONTROL Custom]** från **[!UICONTROL Published]** listruta.
 
 I konfigurationspanelerna Händelse, Datakälla och Åtgärd visas dessutom **[!UICONTROL Used in]** fältet visar antalet resor som använder den aktuella händelsen, fältgruppen eller åtgärden. Du kan klicka på knappen **[!UICONTROL View journeys]** för att visa en lista över motsvarande resor.
 
@@ -130,7 +130,7 @@ Här är de viktigaste stegen för att skicka meddelanden via resor:
 >title="Resans egenskaper"
 >abstract="I det här avsnittet visas resans egenskaper. Som standard är skrivskyddade parametrar dolda. Vilka inställningar som är tillgängliga beror på resans status, på dina behörigheter och din produktkonfiguration."
 
-Klicka på pennikonen i det övre högra hörnet för att komma åt resans egenskaper.
+Klicka på pennikonen bredvid resans namn för att komma åt dess egenskaper.
 
 Du kan ändra namnet på resan, lägga till en beskrivning, tillåta återinträde, välja start- och slutdatum och, som administratör, definiera en **[!UICONTROL Timeout and error]** varaktighet. Du kan också tilldela enhetliga Adobe Experience Platform-taggar till din resa. På så sätt kan ni enkelt klassificera dem och förbättra sökningen från kampanjlistan. [Lär dig hur du arbetar med taggar](../start/search-filter-categorize.md#tags)
 

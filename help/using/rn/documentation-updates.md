@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 7ce415308bd516eb51799890c76b4469558087ee
+source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
 workflow-type: tm+mt
-source-wordcount: '4600'
+source-wordcount: '4725'
 ht-degree: 13%
 
 ---
@@ -22,6 +22,13 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 ## Februari 2024 {#feb-2024}
 
 * Information har lagts till om hur man personaliserar offerternas representationer baserat på kontextdata. [Läs mer](../offers/offer-library/add-representations.md#context-data)
+* Sidan med skyddsförslag har uppdaterats med en anteckning om anpassade åtgärder som endast stöder JSON-format när nyttolasterna för begäran eller svar används. [Läs mer](../start/guardrails.md#custom-actions-g)
+* Ytterligare information har lagts till om den grundläggande autentiseringstypen i externa datakällor. [Läs mer](../datasource/external-data-sources.md)
+* En anmärkning har lagts till för att tydligt skilja [Redigerare för reseuttryck](../building-journeys/expression/expressionadvanced.md) från [Personaliseringsredigerare](../personalization/functions/functions.md).
+* Listan med funktioner i den avancerade uttrycksredigeraren har uppdaterats. [Läs mer](../building-journeys/expression/functions.md)
+* Sidan i funktionen Dela har uppdaterats. [Läs mer](../building-journeys/functions/functioninaudience.md)
+* Information har lagts till om effekten av push-meddelanden för anmälan eller avanmälan av meddelanden i appen. [Läs mer](../in-app/create-in-app.md)
+* Regelsidan för meddelandefrekvens har uppdaterats för att återspegla de varaktighetsalternativ som är tillgängliga i användargränssnittet (varje vecka eller månad). [Läs mer](../configuration/frequency-rules.md)
 
 ## Januari 2024 {#jan-2024}
 
@@ -321,7 +328,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 
 ## September 2021 {#september-2021}
 
-* Följande funktionssidor har uppdaterats: [sethours](../building-journeys/functions/functionsethours.md), [getListItem](../building-journeys/functions/functiongetlistitem.md), [inSegment](../building-journeys/functions/functioninsegment.md)
+* Följande funktionssidor har uppdaterats: [sethours](../building-journeys/functions/functionsethours.md), [getListItem](../building-journeys/functions/functiongetlistitem.md), [inSegment](../building-journeys/functions/functioninaudience.md)
 
 * Följande funktioner har lagts till: [filter](../building-journeys/functions/functionfilter.md), [intersect](../building-journeys/functions/functionintersect.md), [toDateOnly](../building-journeys/functions/functiontodateonly.md)
 
