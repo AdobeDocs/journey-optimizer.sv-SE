@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 327de13a-1c99-4d5e-86cf-8180fb7aaf23
-source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
+source-git-commit: 56505b6b698568678434510643433fa0ad639cbd
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 2%
@@ -41,7 +41,7 @@ Du kan också skapa och hantera innehållsmallar med API:er. Mer information fin
 
 Om du vill komma åt innehållsmalllistan väljer du **[!UICONTROL Content Management]** > **[!UICONTROL Content Templates]** från den vänstra menyn.
 
-![](../email/assets/content-template-list.png)
+![](assets/content-template-list.png)
 
 Alla mallar som skapades i den aktuella sandlådan - antingen från en resa eller en kampanj med **[!UICONTROL Save as template]** alternativ, antingen från **[!UICONTROL Content Templates]** -menyn visas. [Lär dig hur du skapar mallar](#create-content-templates)
 
@@ -67,7 +67,7 @@ When you update a content, you may have to wait a few seconds before the changes
 
 * Om du vill redigera ett mallinnehåll klickar du på önskat objekt i listan och väljer **[!UICONTROL Edit content]**.
 
-  ![](../email/assets/content-template-edit.png)
+  ![](assets/content-template-edit.png)
 
 * Om du vill ta bort en mall väljer du **[!UICONTROL More actions]** intill önskad mall och välj **[!UICONTROL Delete]**.
 
@@ -202,7 +202,7 @@ Du kan testa återgivningen av vissa e-postmallar, oavsett om de har skapats fr�
 
 1. Klicka **[!UICONTROL Simulate Content]** och välj en testprofil för att kontrollera återgivningen. [Läs mer](../content-management/preview-test.md)
 
-   ![](../email/assets/content-template-stimulate.png)
+   ![](assets/content-template-stimulate.png)
 
 1. Du kan skicka ett bevis för att testa ditt innehåll och få det godkänt av vissa interna användare innan du använder det under en resa eller i en kampanj.
 
@@ -210,7 +210,7 @@ Du kan testa återgivningen av vissa e-postmallar, oavsett om de har skapats fr�
 
    * Innan du skickar korrekturet måste du välja [e-postyta](../configuration/channel-surfaces.md) som kommer att användas för att testa ditt innehåll.
 
-     ![](../email/assets/content-template-stimulate-proof-surface.png)
+     ![](assets/content-template-stimulate-proof-surface.png)
 
 >[!CAUTION]
 >
