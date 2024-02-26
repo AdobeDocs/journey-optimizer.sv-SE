@@ -5,10 +5,10 @@ description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: 0144a772f67ffa03e39a70de41c54a6cf88cdd69
+source-git-commit: c69411408d472142f733ee9220a40608b0edbab4
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 15%
+source-wordcount: '385'
+ht-degree: 16%
 
 ---
 
@@ -20,27 +20,27 @@ Få en glimt av de senaste förbättringarna i Journey Optimizer-produkter och -
 
 >[!BEGINTABS]
 
->[!TAB Januariversionen är live!]
+>[!TAB Februariversionen är live!]
 
-Upptäck nya funktioner och förbättringar som ingår i Adobe Journey Optimizer 24.1.
+Upptäck nya funktioner och förbättringar som ingår i Adobe Journey Optimizer 24.2.
 
-[![bild](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
+[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
->[!TAB Obligatorisk DMARC-uppdatering]
+>[!TAB Webb-meddelanden i appen]
 
-Google och Yahoo är en del av deras branschledande arbetsmetoder! kräver båda en **DMARC-post** för alla domäner som du använder för att skicka e-post till dem, med början på **1 februari 2024**. Se till att du har ställt in DMARC-posten för alla underdomäner som du har delegerat till Adobe i Journey Optimizer.
+Nu kan du använda den nya meddelandefunktionen i Web In-App för att visa personaliserat innehåll direkt på webbplatser, via modala överläggsmeddelanden. Med den här funktionen kan ni interagera effektivt med webbbesökare och förbättra användarinteraktionen, kundlojaliteten och konverteringsgraden.
 
-[![bild](using/assets/do-not-localize/learn-more-button.svg)](using/configuration/dmarc-record-update.md)
+![](using/rn/assets/do-not-localize/web_inapp.gif)
 
->[!TAB Använd fallspelningsböcker]
+[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/in-app/create-in-app-web.md)
 
-Använd en katalog med branschspecifika fallspelningsböcker i Real-Time CDP och Journey Optimizer för att hantera vanliga användningsområden som du kan använda Adobe Experience Platform och Adobe Journey Optimiser.
+>[!TAB Mallar för flerkanalsinnehåll]
 
-När du har valt den spelbok som bäst passar dina behov kan du aktivera den för att generera de resurser som behövs för att stödja ditt användningssätt, som resor, meddelanden, scheman eller segment, och anpassa dem till ditt schema för snabbare time-to-value.
+Förutom e-post finns nu innehållsmallar för följande kanaler: push, in-app, SMS och Direct mail, där varje kanal har dedikerade malltyper. För E-post kan du nu välja innehållstypen, som gör att du kan spara ämnesraden som en del av din e-postmall.
 
-![animerad bild med Use Case Playbooks](using/rn/assets/do-not-localize/playbooks.gif)
+![](using/rn/assets/do-not-localize/multi-chan-templates.gif)
 
-[![bild](using/assets/do-not-localize/learn-more-button.svg)](using/start/playbooks.md)
+[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/content-management/content-templates.md)
 
 >[!ENDTABS]
 
