@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: b2118310bcd84a11aa9b19f1606e4ba0ef39bde4
+source-git-commit: bfe377e6a362b9e9f1ce417a8ddfd7581845d342
 workflow-type: tm+mt
 source-wordcount: '4774'
 ht-degree: 13%
@@ -30,7 +30,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Sidan i funktionen Dela har uppdaterats. [Läs mer](../building-journeys/functions/functioninaudience.md)
 * Information har lagts till om effekten av push-meddelanden för anmälan eller avanmälan av meddelanden i appen. [Läs mer](../in-app/create-in-app.md)
 * Regelsidan för meddelandefrekvens har uppdaterats för att återspegla de varaktighetsalternativ som är tillgängliga i användargränssnittet (varje vecka eller månad). [Läs mer](../configuration/frequency-rules.md)
-* Avsnittet Redigera en PTR-post har uppdaterats för att klargöra att PTR-poster inte kan skapas manuellt och att du måste redigera PTR-poster för att tilldela dem nya underdomäner. [Läs mer](using/configuration/ptr-records.md#edit-ptr-record)
+* Avsnittet Redigera en PTR-post har uppdaterats för att klargöra att PTR-poster inte kan skapas manuellt och att du måste redigera PTR-poster för att tilldela dem nya underdomäner. [Läs mer](../configuration/ptr-records.md#edit-ptr-record)
 
 ## Januari 2024 {#jan-2024}
 
