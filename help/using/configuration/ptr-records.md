@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: underdomän, PTR, poster, DNS, domän, post
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
-source-git-commit: d2d9913e41a183ef4a2cd41622ed67b0a559444f
+source-git-commit: b2118310bcd84a11aa9b19f1606e4ba0ef39bde4
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,11 @@ Du kan öppna en PTR-post från listan för att visa det associerade underdomän
 
 ## Redigera en PTR-post {#edit-ptr-record}
 
-Du kan ändra en PTR-post om du vill redigera den underdomän som är associerad med en IP-adress.
+I [!DNL Journey Optimizer]kan du inte skapa PTR-poster manuellt. I stället, när du [delegera](delegate-subdomain.md) din första underdomän till Adobe skapas PTR-poster automatiskt för dina IP-adresser.
+
+Var och en av dina IP-adresser får en enda PTR-post. Alla PTR-poster har följande format: &#39;rxx.subdomain&#39;, där &#39;subdomain&#39; är den första underdomänen du delegerat i [!DNL Journey Optimizer].
+
+När du skapar ytterligare underdomäner måste du ändra en eller flera PTR-poster och tilldela dem de nya underdomänerna. Följ stegen nedan för att göra det.
 
 >[!CAUTION]
 >
