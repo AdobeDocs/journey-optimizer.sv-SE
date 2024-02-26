@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
+source-git-commit: eef253f35bf93edbe5b64b47754e16e4c590f862
 workflow-type: tm+mt
-source-wordcount: '4725'
+source-wordcount: '4739'
 ht-degree: 13%
 
 ---
@@ -21,6 +21,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 
 ## Februari 2024 {#feb-2024}
 
+* Integrationen mellan Journey Optimizer och Workfront har lagts till på integreringssidan. [Läs mer](../start/ajo-integrations.md)
 * Information har lagts till om hur man personaliserar offerternas representationer baserat på kontextdata. [Läs mer](../offers/offer-library/add-representations.md#context-data)
 * Sidan med skyddsförslag har uppdaterats med en anteckning om anpassade åtgärder som endast stöder JSON-format när nyttolasterna för begäran eller svar används. [Läs mer](../start/guardrails.md#custom-actions-g)
 * Ytterligare information har lagts till om den grundläggande autentiseringstypen i externa datakällor. [Läs mer](../datasource/external-data-sources.md)

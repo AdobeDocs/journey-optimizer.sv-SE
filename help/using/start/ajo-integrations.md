@@ -7,10 +7,10 @@ feature: Integrations
 role: User
 level: Intermediate
 exl-id: 700dc66e-ae2d-418f-b75e-ece15af57ab3
-source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
+source-git-commit: eef253f35bf93edbe5b64b47754e16e4c590f862
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 4%
+source-wordcount: '756'
+ht-degree: 2%
 
 ---
 
@@ -76,6 +76,15 @@ Läs mer om [Journey Optimizer + Campaign](../building-journeys/ajo-ac.md).
 Du kan också konfigurera en integrering med Adobe Campaign Standard för att skicka meddelanden på dina resor.
 
 Läs mer om [JOURNEY OPTIMIZER + CAMPAIGN STANDARD](../building-journeys/using-adobe-campaign-standard.md).
+
+
+## Adobe Workfront {#integration-workfront}
+
+Använd Adobe Journey Optimizer-modulerna i Adobe Workfront för att skapa, läsa, uppdatera eller ta bort poster eller utföra ett anpassat API-anrop till Adobe Journey Optimizer API.
+
+En översikt över det viktigaste steget i den här integreringen finns tillgänglig [i det här blogginlägget](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/accelerating-go-to-market-how-workfront-workfront-fusion-aep-and/ba-p/653685){target="_blank"}.
+
+Läs mer om Journey Optimizer + Adobe Workfront [i Adobe Workfront-dokumentation](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/adobe-journey-optimizer-modules.html){target="_blank"}.
 
 ## Egna kanaler {#integration-custom}
 
