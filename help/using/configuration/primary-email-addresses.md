@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: primär, körning, e-post, mål, profil, optimering
 exl-id: fe2f6516-7790-4501-a3a1-3d7cb94d7874
-source-git-commit: 803c9f9f05669fad0a9fdeeceef58652b6dccf70
+source-git-commit: 9cc263d127fdc56f808770d908030b1d14b1f784
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
@@ -46,7 +46,7 @@ I de flesta fall ändrar du ett körningsfält globalt och definierar ett värde
 
 Om du vill ändra körningsfälten globalt på sandlådenivå följer du stegen nedan.
 
-1. Gå till **[!UICONTROL Channels]** > **[!UICONTROL General]** > **[!UICONTROL Executions fields]**-menyn.
+1. Öppna  **[!UICONTROL Channels]** > **[!UICONTROL General]** > **[!UICONTROL Executions fields]** -menyn.
 
 1. Klicka **[!UICONTROL Edit]** om du vill ändra standardvärdena.
 
