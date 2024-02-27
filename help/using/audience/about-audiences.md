@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
+source-git-commit: 2edff0123084fa1736fb8198c3b4e8ff4e40341d
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1082'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ I kampanjer och resor kan du välja alla målgrupper som genereras med segmentde
 
 >[!AVAILABILITY]
 >
->Användningen av målgrupper och attribut från målgruppssammansättning och anpassad uppladdning (CSV-fil) är för närvarande inte tillgänglig för användning med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten. [Lär dig använda attribut för målgruppsberikning i Journey Optimizer](../audience/about-audiences.md#enrichment)
+>Användningen av målgrupper och attribut från målgruppssammansättning och målgrupper med anpassad uppladdning (CSV-fil) är för närvarande inte tillgänglig för användning med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten. [Lär dig använda attribut för målgruppsberikning i Journey Optimizer](../audience/about-audiences.md#enrichment)
 
 Ni kan utnyttja målgrupper i **[!DNL Journey Optimizer]** på olika sätt:
 
@@ -61,7 +61,7 @@ Ni kan utnyttja målgrupper i **[!DNL Journey Optimizer]** på olika sätt:
 
 ## Använd attribut för målgruppsberikning i Journey Optimizer {#enrichment}
 
-När ni riktar in er på en målgrupp som skapats med kompositionsarbetsflöden eller anpassad uppladdning (CSV-fil) kan ni utnyttja anrikningsattribut från dessa målgrupper för att bygga upp er resa och personalisera era budskap.
+När ni riktar in er på en målgrupp som skapats med arbetsflöden för dispositioner kan ni utnyttja anrikningsattribut från dessa målgrupper för att bygga upp er resa och personalisera era budskap.
 
 * Skapa flera vägar i en resa baserat på regler som utnyttjar målgruppens anrikningsattribut. För att göra detta bör du rikta in dig på målgruppen med en [Läsa målgrupper](../building-journeys/read-audience.md) skapar sedan regler i en [Villkor](../building-journeys/condition-activity.md) verksamhet som bygger på målgruppens anrikningsattribut.
 

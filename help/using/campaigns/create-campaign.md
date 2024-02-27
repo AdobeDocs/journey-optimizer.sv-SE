@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
+source-git-commit: 2edff0123084fa1736fb8198c3b4e8ff4e40341d
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '929'
 ht-degree: 1%
 
 ---
@@ -126,7 +126,7 @@ Klicka på **[!UICONTROL Select audience]** för att visa en lista över tillgä
 
 >[!IMPORTANT]
 >
->Användning av målgrupper och attribut från [publiksammansättning](../audience/get-started-audience-orchestration.md) och [anpassad överföring (CSV-fil)](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) för närvarande inte kan användas tillsammans med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten. [Lär dig använda attribut för målgruppsberikning i Journey Optimizer](../audience/about-audiences.md#enrichment)
+>Användning av målgrupper och attribut från [publiksammansättning](../audience/get-started-audience-orchestration.md) och [anpassad uppladdning (CSV-fil) målgrupper](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) för närvarande inte kan användas tillsammans med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
 >
 >För API-utlösta kampanjer måste målgruppen anges via API-anrop.
 

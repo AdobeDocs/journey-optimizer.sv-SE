@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: af71d24d-77eb-44df-8216-b0aeaf4c4fa4
-source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
+source-git-commit: 2edff0123084fa1736fb8198c3b4e8ff4e40341d
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ När du är klar **resulterande målgrupper** sparas i Adobe Experience Platform
 
 >[!IMPORTANT]
 >
->Målgrupper och attribut från Audience Composition och Custom Upload kan för närvarande inte användas med Healthcare Shield eller Privacy and Security Shield. [Lär dig använda attribut för målgruppsberikning i Journey Optimizer](../audience/about-audiences.md#enrichment)
+>Användningen av målgrupper och attribut från målgruppssammansättning och anpassade målgrupper för uppladdning är för närvarande inte tillgänglig för användning med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
 >
 >Anrikningsattribut är ännu inte integrerade med policystyrningen. Därför kommer de etiketter för dataanvändning som du använder för dina anrikningsattribut inte att användas i Journey Optimizer kampanjer eller resor.
 

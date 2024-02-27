@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: aktivitet, villkor, arbetsyta, resa
 exl-id: 496c7666-a133-4aeb-be8e-c37b3b9bf5f9
-source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
+source-git-commit: 2edff0123084fa1736fb8198c3b4e8ff4e40341d
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1453'
 ht-degree: 5%
 
 ---
@@ -76,7 +76,7 @@ I den enkla redigeraren hittar du även kategorin Reseegenskaper, nedanför kate
 
 På så sätt kan du definiera ett villkor baserat på fält från datakällorna eller händelser som tidigare placerats under resan. Läs om hur du använder uttrycksredigeraren i [det här avsnittet](expression/expressionadvanced.md).
 
-Om du till exempel riktar dig till en målgrupp med anrikningsattribut som genererats med ett dispositionsarbetsflöde eller en anpassad uppladdning (CSV-fil), kan du använda dessa anrikningsattribut för att bygga upp ditt villkor. [Lär dig använda attribut för målgruppsberikning i Journey Optimizer](../audience/about-audiences.md#enrichment)
+Om du till exempel riktar dig till en målgrupp med anrikningsattribut som genererats med ett dispositionsarbetsflöde eller en anpassad uppladdning (CSV-fil), kan du använda dessa anrikningsattribut för att bygga upp ditt villkor.
 
 Med den avancerade uttrycksredigeraren kan du ställa in mer avancerade villkor för att hantera samlingar eller använda datakällor som kräver att parametrar skickas. [Läs mer](../datasource/external-data-sources.md).
 
