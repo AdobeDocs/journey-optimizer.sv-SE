@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
+source-git-commit: d8d007fb6a67e8716a07df04895684c2c1cfefaa
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1089'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Läs mer om behörigheter i [det här avsnittet](../administration/high-low-perm
 >[!CONTEXTUALHELP]
 >id="ajo_rules_capping"
 >title="Ange begränsning för din regel"
->abstract="Ange det maximala antalet meddelanden som skickas till en kundprofil varje månad. Frekvensgränsen baseras på en månadskalenderperiod och återställs i början av varje månad."
+>abstract="Ange det maximala antalet meddelanden som skickas till en kundprofil inom den valda tidsramen. Frekvensgränsen baseras på den valda kalenderperioden och återställs i början av motsvarande tidsram."
 
 >[!CONTEXTUALHELP]
 >id="ajo_rules_channel"
