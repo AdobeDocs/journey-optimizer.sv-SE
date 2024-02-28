@@ -7,7 +7,7 @@ feature: Profiles, Identities
 role: User
 level: Beginner
 exl-id: 90e892e9-33c2-4da5-be1d-496b42572897
-source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
+source-git-commit: d9a3482d237c3080c060519dbdde9208c8c0befa
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
@@ -21,7 +21,7 @@ En identitet är data som är unika för en enhet, vanligtvis ett objekt i verkl
 * The **namnutrymme för identitet** fungerar som en indikator för det sammanhang som en identitet relateras till.
 * The **identitetsvärde** är en sträng som representerar en entitet.
 
-Ring 555-555-1234. I det här exemplet är strängen &quot;555-555-1234&quot; en **identitetsvärde** som kan kategoriseras i en **Telefon** identity namespace.
+Ring 555-555-1234. I det här exemplet är strängen &quot;555-555-1234&quot; en **identitetsvärde** som kan kategoriseras i en&quot;telefon&quot; **namnutrymme för identitet**.
 
 The **Identiteter** menyn i [!DNL Adobe Journey Optimizer] Med kan du effektivt bläddra bland de olika identifierare som utgör kunderna i din databas.
 
