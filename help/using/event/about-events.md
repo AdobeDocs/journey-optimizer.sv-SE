@@ -1,26 +1,26 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Om händelser
-description: Läs mer om evenemang
+title: Arbeta med resehändelser
+description: Lär dig hur du arbetar med händelser under dina resor
 feature: Journeys, Events
 topic: Administration
 role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: händelser, händelse, resa, definition, start
 exl-id: fb3e51b5-4cbb-4949-8992-1075959da67d
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 2f2b53fd74a51e96e61ddaf9e489c07bd359294f
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 40%
+source-wordcount: '989'
+ht-degree: 34%
 
 ---
 
-# Om händelser{#about-events}
+# Arbeta med resehändelser {#about-events}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_list"
->title="Om händelser"
+>title="Reseevenemang"
 >abstract="En händelse är länkad till en person. Den är relaterad till en persons beteende (till exempel om en person köpt en produkt, besökt en butik eller lämnat en webbplats) eller något som händer relaterat till en person (en person som till exempel har nått 10 000 lojalitetspoäng). Detta är vad Journey Optimizer kommer att lyssna på under resor för att samordna de bästa nästa åtgärderna."
 
 Med händelsekonfigurationen kan du definiera vilken information som [!DNL Journey Optimizer] ska tas emot som händelser. Du kan använda flera händelser (i olika steg på en resa) och flera resor kan använda samma händelse.
@@ -31,7 +31,7 @@ Med händelsekonfigurationen kan du definiera vilken information som [!DNL Journ
 
 Du kan konfigurera två typer av händelser:
 
-* **Unitary** händelser: dessa händelser är länkade till en person. De rör en persons beteende (t.ex. en person som köpt en produkt, besökt en butik, lämnat en webbplats) eller något som händer relaterat till en person (en person som till exempel har nått 10 000 lojalitetspoäng). Detta är vad [!DNL Journey Optimizer] läser av i resor för att orkestrera bästa åtgärder. Enhetshändelser kan vara regelbaserade eller systemgenererade. Mer information om hur du skapar en enhetshändelse finns i [page](../event/about-creating.md).
+* **Unitary** händelser: dessa händelser är länkade till en person. De rör en persons beteende (t.ex. en person som köpt en produkt, besökt en butik, lämnat en webbplats) eller något som händer relaterat till en person (en person som till exempel har nått 10 000 lojalitetspoäng). Det här är vad [!DNL Journey Optimizer] kommer att lyssna på i resor för att samordna de bästa nästa åtgärderna. Enhetshändelser kan vara regelbaserade eller systemgenererade. Mer information om hur du skapar en enhetshändelse finns i [page](../event/about-creating.md).
 
 * **Företag** händelser: en affärshändelse är en händelse som, i motsats till en enhetshändelse, inte är länkad till en viss profil. Det kan till exempel vara en nyhetsvarning, en idrottsuppdatering, en flygändring eller inställd flygning, en inventeringsuppdatering, väderhändelser osv. Även om dessa händelser inte är specifika för en profil kan de vara av intresse för ett obegränsat antal profiler: individer som abonnerar på särskilda nyhetsfrågor, passagerare på ett flyg, kunder som är intresserade av en produkt som inte finns i lager osv. Affärshändelser är alltid regelbaserade. När du släpper en affärshändelse under en resa läggs ett **Läsa målgrupper** aktivitet direkt efter. Mer information om hur du skapar en affärshändelse finns i [page](../event/about-creating-business.md).
 
@@ -42,7 +42,7 @@ Du kan konfigurera två typer av händelser:
 
 Enhetsresor (som inleds med en händelse eller en publikation) innehåller ett skyddsräcke som förhindrar att resorna aktiveras felaktigt flera gånger för samma händelse. Återinträde av profiler blockeras tillfälligt som standard i 5 minuter. Om en händelse till exempel utlöser en resa kl. 12:01 för en viss profil och en annan tar emot kl. 12:03 (oavsett om det är samma händelse eller en annan som utlöser samma resa) kommer den resan inte att starta igen för den här profilen.
 
-➡️ [Upptäck den här funktionen i en video](#video)
+➡️ [Upptäck den här funktionen i video](#video)
 
 ## Händelse-ID-typ{#event-id-type}
 
@@ -72,7 +72,7 @@ Efter att ha kommit via API:er för direktuppspelning av inmatning flödar händ
 
 För systemgenererade händelser filtrerar pipeline händelser som har en nyttolast som innehåller [!DNL Journey Optimizer] eventID (se processen för att skapa händelser nedan) som tillhandahålls av [!DNL Journey Optimizer] och finns i händelsenyttolast. För regelbaserade händelser identifierar systemet händelsen med eventID-villkoret. [!DNL Journey Optimizer] läser av dessa händelser och motsvarande resa aktiveras.
 
-## Instruktionsvideor {#video}
+## Instruktionsfilmer {#video}
 
 Lär dig hur du konfigurerar en händelse, anger slutpunkten för direktuppspelning och nyttolasten för en händelse.
 

@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
+source-git-commit: 2f2b53fd74a51e96e61ddaf9e489c07bd359294f
 workflow-type: tm+mt
-source-wordcount: '1736'
+source-wordcount: '1738'
 ht-degree: 30%
 
 ---
@@ -553,7 +553,7 @@ ht-degree: 30%
          + [API för reglering](using/configuration/capping.md)
          + [API för begränsning](using/configuration/throttling.md)
       + Händelsekonfiguration {#events-journeys}
-         + [Allmän princip](using/event/about-events.md)
+         + [Arbeta med resehändelser](using/event/about-events.md)
          + Konfigurera en enhetshändelse {#unitary-events}
             + [Kom igång med Unitary Events](using/event/about-creating.md)
             + [Om scheman i ExperienceEvent](using/event/experience-event-schema.md)
