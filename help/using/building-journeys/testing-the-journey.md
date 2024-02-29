@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: test, resa, kontroll, fel, felsökning
 exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
-source-git-commit: ac83b44ca24b26edfbf70a2781e1ed7dede318d4
+source-git-commit: 36e73778f88bcf55a36a25f6b1cd237bf8fe5e9a
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 1%
@@ -124,7 +124,7 @@ Observera att du inte kan ändra definitionen för affärshändelser i samma tes
 >[!CONTEXTUALHELP]
 >id="ajo_journey_test_logs"
 >title="Loggar för testläge"
->abstract="Knappen Visa logg visar testresultat i JSON-format. Dessa resultat visar antalet individer under resan och deras status."
+>abstract="The **Visa logg** visas testresultat i JSON-format. Dessa resultat visar antalet individer under resan och deras status."
 
 The **[!UICONTROL Show log]** kan du visa testresultaten. På den här sidan visas resans aktuella information i JSON-format. Med en knapp kan du kopiera hela noder. Du måste uppdatera sidan manuellt för att uppdatera resans testresultat.
 
