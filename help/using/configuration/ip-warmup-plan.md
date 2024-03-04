@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: c2434086-2ed4-4cd0-aecd-2eea8f0a55f6
-source-git-commit: 17ddd9042b6fb4f078bf858c3a855e7fb604b0d2
+source-git-commit: e8a178ea337fb57f2c2460c9e3e53257787c7bfd
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
@@ -82,14 +82,15 @@ Denna aktivitet utförs i rätt tid med hjälp av en leveransexpert som hjälper
 
 Innan du kan skapa en IP-uppvärmningsplan i [!DNL Journey Optimizer] måste du fylla i en Excel-mall med alla data som matar in planen.
 
+* I användargränssnittet kan du hämta den tomma Excel:n [Prenumerationsplanmall för IP-värmare](assets/IPWarmupPlan-Template.xlsx) fylla i.
+
+* Du kan även hämta en [exempelplan för IP-värmare](assets/IPWarmupPlan-Sample.xlsx) som redan har fyllts i med data som du kan använda som exempel.
+
 <!--
-* From the user interface you can download the blank Excel [IP warmup plan template](assets/IPWarmupPlan-Template.xlsx) to fill in.
+* From the user interface you can download the blank Excel IP warmup plan template to fill in.
 
-* You can also download a [sample IP warmup plan](assets/IPWarmupPlan-Sample.xlsx) already filled in with some data you can use as an example.-->
-
-* I användargränssnittet kan du hämta den tomma mallen för IP-värmerappen för Excel för att fylla i den.
-
-* Du kan också hämta ett exempel på en IP-värmerapport som redan har fyllts i med vissa data som du kan använda som exempel.
+* You can also download a sample IP warmup plan already filled in with some data you can use as an example.
+-->
 
 >[!CAUTION]
 >
@@ -302,7 +303,7 @@ Följ stegen nedan om du vill skapa en IP-värmeringsplan.
 
    >[!NOTE]
    >
-   >Om överföringen misslyckas bör du kontrollera att du använder rätt format (.xls eller .xlsx). Använda mallen<!--assets/IPWarmupPlan-Template.xlsx--> som tillhandahålls av Adobe.
+   >Om överföringen misslyckas bör du kontrollera att du använder rätt format (.xls eller .xlsx). Använd [mall](assets/IPWarmupPlan-Template.xlsx) som tillhandahålls av Adobe.
 
 1. Klicka på **[!UICONTROL Create]**. Alla faser, körningar, kolumner och deras innehåll som definieras i den överförda filen visas automatiskt i [!DNL Journey Optimizer] gränssnitt.
 
