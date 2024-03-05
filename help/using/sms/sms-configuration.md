@@ -7,29 +7,29 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
-source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
+source-git-commit: 75638e9b463278efab16b2b85ed2707640f088f2
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '1511'
 ht-degree: 1%
 
 ---
 
 # Konfigurera SMS-kanal {#sms-configuration}
 
-Innan du skickar SMS måste du konfigurera Adobe Journey Optimizer-miljön. Så här utför du det:
+Innan du skickar SMS eller MMS måste du konfigurera Adobe Journey Optimizer-miljön. Så här utför du det:
 
 * [Integrera providerinställningarna](#create-api) med Journey Optimizer
-* [Skapa en SMS-yta](#message-preset-sms) (t.ex. SMS-förinställning)
+* [Skapa en SMS-yta](#message-preset-sms) (t.ex. SMS-förinställning), används även för MMS
 
 Dessa steg måste utföras av en Adobe Journey Optimizer [Systemadministratör](../start/path/administrator.md).
 
 ## Förutsättningar{#sms-prerequisites}
 
-Adobe Journey Optimizer är för närvarande integrerat med tredjepartsleverantörer som erbjuder textmeddelandetjänster oberoende av Adobe Journey Optimizer. Leverantörer som stöds för textmeddelanden är: **Sinch**, **Twilio** och **Infobip**.
+Adobe Journey Optimizer är för närvarande integrerat med tredjepartsleverantörer som erbjuder textmeddelandetjänster oberoende av Adobe Journey Optimizer. Leverantörer som stöds för textmeddelanden är: **Sinch**, **Twilio** och **Infobip**. MMS stöds endast med **Sinch**.
 
 Innan du konfigurerar SMS-kanalen måste du skapa ett konto hos någon av dessa leverantörer för att få tillgång till **API-token** och **Tjänst-ID**, som du måste konfigurera anslutningen mellan Adobe Journey Optimizer och den tillämpliga leverantören.
 
-Din användning av SMS-tjänster regleras av ytterligare villkor från tillämplig leverantör. Som tredjepartslösningar är Sinch, Twilio och Infobip tillgängliga för Adobe Journey Optimizer-användare via integrering. Adobe kontrollerar inte, och ansvarar inte för, tredjepartsprodukter. Kontakta din leverantör om du har problem eller vill ha hjälp med textmeddelandetjänster.
+Din användning av SMS-tjänster regleras av ytterligare villkor från tillämplig leverantör. Som tredjepartslösningar är Sinch, Twilio och Infobip tillgängliga för Adobe Journey Optimizer-användare via integrering. Adobe kontrollerar inte, och ansvarar inte för, tredjepartsprodukter. Kontakta din leverantör om du har problem eller vill ha hjälp med SMS/MMS.
 
 >[!CAUTION]
 >
@@ -50,8 +50,8 @@ Din användning av SMS-tjänster regleras av ytterligare villkor från tillämpl
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_api"
->title="Konfigurera din SMS-leverantör med Journey Optimizer"
->abstract="Innan du skickar textmeddelanden måste du integrera providerinställningarna med Journey Optimizer. När du är klar måste du skapa en SMS-yta. Dessa steg måste utföras av en Adobe Journey Optimizer-systemadministratör."
+>title="Konfigurera din SMS/MMS-leverantör med Journey Optimizer"
+>abstract="Innan du skickar textmeddelanden (SMS/MMS) måste du integrera providerinställningarna med Journey Optimizer. När du är klar måste du skapa en SMS/MMS-yta. Dessa steg måste utföras av en Adobe Journey Optimizer-systemadministratör."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/sms/sms-configuration.html#message-preset-sms" text="Skapa en SMS-kanalyta"
 
 >[!CONTEXTUALHELP]
@@ -61,7 +61,7 @@ Din användning av SMS-tjänster regleras av ytterligare villkor från tillämpl
 
 ### Sinch {#sinch-api}
 
-Så här konfigurerar du Sinch med Journey Optimizer:
+Så här konfigurerar du din SMS/MMS-leverantör med Journey Optimizer:
 
 1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och väljer **[!UICONTROL API Credentials]** -menyn. Klicka på knappen **[!UICONTROL Create new API credentials]**.
 
@@ -93,15 +93,25 @@ Så här konfigurerar du Sinch med Journey Optimizer:
 
 När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu skapa en kanalyta (t.ex. meddelandeförinställning) för SMS-meddelanden.
 
-<!--
-### Sinch MMS
+### Smink-MMS {#sinch-mms}
 
-For **[!DNL Sinch MMS]**
+Så här konfigurerar du Sinch MMS med Journey Optimizer:
 
-        * **[!UICONTROL Name]**: choose a name for your API Credential.
+1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och väljer **[!UICONTROL API Credentials]** -menyn. Klicka på knappen **[!UICONTROL Create new API credentials]**.
 
-        * **[!UICONTROL Project ID]**, **[!UICONTROL App ID]** and **[!UICONTROL API Token]**: from the Conversation API menu, you can find your credentials in the App menu. Learn more in [Sinch Documentation](https://docs.cc.sinch.com/cloud/service-configuration/en/oxy_ex-1/common/wln1620131604643.html){target="_blank"}.
--->
+   ![](assets/sms_6.png)
+
+1. Konfigurera dina SMS API-autentiseringsuppgifter enligt nedanstående:
+
+   * **[!UICONTROL Name]**: välj ett namn för API-autentiseringsuppgifterna.
+
+   * **[!UICONTROL Project ID]**, **[!UICONTROL App ID]** och **[!UICONTROL API Token]**: på konversations-API-menyn hittar du dina inloggningsuppgifter på App-menyn. Läs mer i [Sänk dokumentation](https://docs.cc.sinch.com/cloud/service-configuration/en/oxy_ex-1/common/wln1620131604643.html){target="_blank"}.
+
+   * **[!UICONTROL Service Plan ID]** och **[!UICONTROL SMS API Token]**: din **[!UICONTROL Service Plan ID]** och **[!UICONTROL SMS API Token]** finns på fliken SMS på API-sidan.
+
+1. Klicka **[!UICONTROL Submit]** när du är klar med konfigurationen av dina API-autentiseringsuppgifter.
+
+När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu skapa en kanalyta (t.ex. meddelandeförinställning) för MMS-meddelanden.
 
 ### Twilio {#twilio-api}
 
@@ -173,7 +183,7 @@ När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu s
 >abstract="Välj typ av textmeddelanden med den här ytan: Marknadsföring för marknadsföringsmeddelanden som kräver användarens samtycke eller Transaktionsmeddelanden för icke-kommersiella meddelanden, till exempel lösenordsåterställning."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/privacy/consent/opt-out.html#sms-opt-out-management" text="Avanmäl dig i marknadsföringstextmeddelanden"
 
-När SMS-kanalen har konfigurerats måste du skapa en kanalyta för att kunna skicka SMS-meddelanden från **[!DNL Journey Optimizer]**.
+När din SMS/MMS-kanal har konfigurerats måste du skapa en kanalyta för att kunna skicka SMS-meddelanden från **[!DNL Journey Optimizer]**.
 
 Så här skapar du en kanalyta:
 
@@ -198,7 +208,7 @@ Så här skapar du en kanalyta:
    * Välj **Marknadsföring** för kampanjmeddelanden: dessa meddelanden kräver användarens samtycke.
    * Välj **Transactional** för icke-kommersiella meddelanden, t.ex. orderbekräftelse, meddelanden om lösenordsåterställning eller leveransinformation.
 
-   När du skapar ett SMS-meddelande måste du välja en giltig kanalyta som matchar den kategori som du valde för meddelandet.
+   När du skapar ett SMS/MMS måste du välja en giltig kanalyta som matchar den kategori som du valde för meddelandet.
 
    >[!CAUTION]
    >
@@ -216,7 +226,7 @@ Så här skapar du en kanalyta:
 
    >[!NOTE]
    >
-   >Om du vill kunna välja en underdomän kontrollerar du att du tidigare har konfigurerat minst en SMS-underdomän. [Lär dig mer](sms-subdomains.md)
+   >Om du vill kunna välja en underdomän kontrollerar du att du tidigare har konfigurerat minst en SMS/MMS-underdomän. [Lär dig mer](sms-subdomains.md)
 
 1. Ange **[!UICONTROL Opt-out number]** som du vill använda för den här ytan. När profiler avanmäler sig från det här numret kan du fortfarande skicka meddelanden från andra nummer som du använder för att skicka ut textmeddelanden med [!DNL Journey Optimizer].
 
@@ -242,7 +252,7 @@ Nu kan du skicka textmeddelanden med Journey Optimizer.
 
 **Relaterade ämnen**
 
-* [Skapa ett textmeddelande](create-sms.md)
+* [Skapa ett textmeddelande (SMS/MMS)](create-sms.md)
 * [Lägg till ett meddelande i en resa](../building-journeys/journeys-message.md)
 * [Lägg till ett meddelande i en kampanj](../campaigns/create-campaign.md)
 

@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, i appen
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: f275820c3f79bb4c9aca8593c2c761ccd4283795
+source-git-commit: 75638e9b463278efab16b2b85ed2707640f088f2
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1169'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_message_activity"
 >title="Meddelandeaktivitet"
->abstract="Journey Optimizer har inbyggda meddelandefunktioner. Du kan enkelt lägga till en push-funktion, ett textmeddelande, en aktivitet i appen eller ett e-postmeddelande under resan och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan."
+>abstract="Journey Optimizer har inbyggda meddelandefunktioner. Du kan enkelt lägga till ett push-meddelande (SMS/MMS), en meddelandeaktivitet i appen eller ett e-postmeddelande under resan och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan."
 
-[!DNL Journey Optimizer] innehåller inbyggda meddelandefunktioner. Du kan enkelt lägga till en push-funktion, ett SMS-meddelande, en aktivitet i appen eller ett e-postmeddelande under resan och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan.
+[!DNL Journey Optimizer] innehåller inbyggda meddelandefunktioner. Du kan enkelt lägga till en push-funktion, ett SMS/MMS-meddelande, en aktivitet i appen eller ett e-postmeddelande under resan och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan.
 
 Du kan också ange specifika åtgärder för att skicka meddelanden till dig:
 
@@ -74,7 +74,7 @@ Följ stegen nedan om du vill lägga till ett meddelande under en resa:
    <img alt="Validering" src="../assets/do-not-localize/sms.jpg">
    </a>
    <div>
-   <a href="../sms/create-sms.md"><strong>Skapa textmeddelanden</strong></a>
+   <a href="../sms/create-sms.md"><strong>Skapa textmeddelanden (SMS/MMS)</strong></a>
    </div>
    <p>
    </td>

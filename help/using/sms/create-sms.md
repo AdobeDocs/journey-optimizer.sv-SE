@@ -1,37 +1,37 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Skapa ett SMS-meddelande
-description: Lär dig skapa ett SMS-meddelande i Journey Optimizer
+title: Skapa ett SMS/MMS-meddelande
+description: Lär dig skapa ett SMS/MMS-meddelande i Journey Optimizer
 feature: SMS
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: f275820c3f79bb4c9aca8593c2c761ccd4283795
+source-git-commit: 75638e9b463278efab16b2b85ed2707640f088f2
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 3%
+source-wordcount: '902'
+ht-degree: 2%
 
 ---
 
-# Skapa ett textmeddelande {#create-sms}
+# Skapa ett textmeddelande (SMS/MMS) {#create-sms}
 
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms"
 >title="Skapa ett textmeddelande"
->abstract="Om du vill skapa ett textmeddelande lägger du till en SMS-åtgärd på en resa eller i en kampanj och börjar anpassa det med uttrycksredigeraren."
+>abstract="Om du vill skapa ett textmeddelande (SMS/MMS) lägger du till en SMS-åtgärd i en resa eller kampanj och börjar anpassa den med uttrycksredigeraren."
 
-Du kan utforma och skicka text (SMS) med Adobe Journey Optimizer. Du måste först lägga till en SMS-åtgärd på en resa eller i en kampanj och sedan definiera innehållet i textmeddelandet, enligt beskrivningen nedan. Adobe Journey Optimizer har också funktioner för att testa textmeddelanden innan de skickas, så att du kan kontrollera återgivning, anpassningsattribut och alla andra inställningar.
+Du kan utforma och skicka SMS- och MMS-meddelanden med Adobe Journey Optimizer. Du måste först lägga till en SMS-åtgärd på en resa eller i en kampanj och sedan definiera innehållet i textmeddelandet, enligt beskrivningen nedan. Adobe Journey Optimizer har också funktioner för att testa textmeddelanden innan de skickas, så att du kan kontrollera återgivning, anpassningsattribut och alla andra inställningar.
 
 >[!NOTE]
 >
->I enlighet med branschens standarder och bestämmelser måste alla SMS-marknadsföringsmeddelanden innehålla ett sätt för mottagarna att enkelt avbryta prenumerationen. För att göra detta kan SMS-mottagare svara med nyckelord för deltagande och avanmälan. [Lär dig hur du hanterar avanmälan](../privacy/opt-out.md#sms-opt-out-management-sms-opt-out-management)
+>I enlighet med branschens standarder och bestämmelser måste alla SMS/MMS-marknadsföringsmeddelanden innehålla ett sätt för mottagarna att enkelt avbryta prenumerationen. För att göra detta kan SMS-mottagare svara med nyckelord för deltagande och avanmälan. [Lär dig hur du hanterar avanmälan](../privacy/opt-out.md#sms-opt-out-management-sms-opt-out-management)
 
 
 ## Lägga till ett textmeddelande {#create-sms-journey-campaign}
 
-Bläddra bland flikarna nedan för att lära dig hur du lägger till ett textmeddelande i en kampanj eller en resa.
+Bläddra bland flikarna nedan för att lära dig hur du lägger till ett textmeddelande (SMS/MMS) i en kampanj eller en resa.
 
 >[!BEGINTABS]
 
@@ -91,9 +91,9 @@ Nu kan du börja designa textmeddelandets innehåll från **[!UICONTROL Edit con
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms_content"
 >title="Definiera ditt SMS-innehåll"
->abstract="Anpassa och anpassa dina textmeddelanden genom att använda uttrycksredigeraren för att definiera innehållet och införliva dynamiska element."
+>abstract="Anpassa och anpassa dina textmeddelanden (SMS/MMS) genom att använda uttrycksredigeraren för att definiera innehållet och införliva dynamiska element."
 
-Följ stegen nedan för att konfigurera ditt SMS-innehåll.
+Följ stegen nedan för att konfigurera ditt SMS-innehåll. Inställningarna för MMS finns i [det här avsnittet](#mms-content).
 
 1. Klicka på **[!UICONTROL Edit content]** för att konfigurera textmeddelandets innehåll.
 
@@ -121,37 +121,33 @@ Följ stegen nedan för att konfigurera ditt SMS-innehåll.
 
 1. Klicka **[!UICONTROL Save]** och kontrollera meddelandet i förhandsgranskningen. Nu kan du testa och kontrollera meddelandeinnehållet enligt [det här avsnittet](#sms-mms-test).
 
-<!--
-## Define your MMS content{#mms-content}
+## Definiera ditt MMS-innehåll{#mms-content}
 
-You can enhance your communication by sending Multimedia Message Service (MMS) messages, enabling the sharing of media such as videos, pictures, audio clips and GIFs, and more. Additionally, MMS allows for up to 1600 characters of text in your message.
-
+Du kan förbättra kommunikationen genom att skicka MMS-meddelanden (Multimedia Message Service), vilket möjliggör delning av media som videor, bilder, ljudklipp och GIF med mera. Dessutom kan MMS innehålla upp till 1 600 tecken i meddelandet.
 
 >[!NOTE]
 >
->* This feature is currently available with **Sinch** only.
+>* Den här funktionen är för närvarande tillgänglig med **Sinch** endast.
 >
->* MMS channel comes with a few limitations listed in [this page](../start/guardrails.md#sms-guardrails).
->
+>* MMS-kanalen har några begränsningar som anges i [den här sidan](../start/guardrails.md#sms-guardrails).
 
-To create MMS content, follow these steps:
+Så här skapar du MMS-innehåll:
 
-1. Create a SMS as described in [this section](#create-sms-journey-campaign).
+1. Skapa ett SMS enligt anvisningarna i [det här avsnittet](#create-sms-journey-campaign).
 
-1. Edit your SMS content as detailed in [this section](#sms-content).
+1. Redigera ditt SMS-innehåll enligt informationen i [det här avsnittet](#sms-content).
 
-1. Enable the MMS option to add media to your SMS content.
+1. Aktivera alternativet MMS för att lägga till media i SMS-innehåll.
 
-    ![](assets/sms_create_6.png)
+   ![](assets/sms_create_6.png)
 
-1. Add a **[!UICONTROL Title]** to your media.
+1. Lägg till en **[!UICONTROL Title]** till era medier.
 
-1. Enter the URL of your media in the **[!UICONTROL Media]** field.
+1. Ange URL-adressen till dina media i dialogrutan **[!UICONTROL Media]** fält.
 
-    ![](assets/sms_create_7.png)
+   ![](assets/sms_create_7.png)
 
-1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed below.
--->
+1. Klicka **[!UICONTROL Save]** och kontrollera meddelandet i förhandsgranskningen. Du kan nu testa och kontrollera meddelandeinnehållet enligt beskrivningen nedan.
 
 ## Testa och skicka meddelanden {#sms-mms-test}
 
@@ -167,6 +163,6 @@ När ni har skickat det kan ni mäta effekten av ert SMS i kampanjrapporten elle
 
 * [Förhandsgranska, testa och skicka ditt textmeddelande](send-sms.md)
 * [Konfigurera SMS-kanal](sms-configuration.md)
-* [SMS-rapporter](../reports/journey-global-report.md#sms-global)
+* [SMS-/MMS-rapporter](../reports/journey-global-report.md#sms-global)
 * [Lägg till ett meddelande i en resa](../building-journeys/journeys-message.md)
 * [Lägg till ett meddelande i en kampanj](../campaigns/create-campaign.md)

@@ -8,14 +8,14 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 31c9b080-e334-4a11-af33-4c6f115c70a4
-source-git-commit: f275820c3f79bb4c9aca8593c2c761ccd4283795
+source-git-commit: 75638e9b463278efab16b2b85ed2707640f088f2
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '260'
 ht-degree: 1%
 
 ---
 
-# Kontrollera och skicka ditt textmeddelande {#send-sms}
+# Kontrollera och skicka textmeddelanden (SMS/MMS){#send-sms}
 
 ## Förhandsgranska textmeddelandet {#preview-sms}
 
@@ -49,6 +49,6 @@ Slutför konfigurationen av [resa](../building-journeys/journey-gs.md) eller [ka
 **Relaterade ämnen**
 
 * [Konfigurera SMS-kanal](sms-configuration.md)
-* [SMSS-rapporter](../reports/journey-global-report.md#sms-global)
+* [SMS-/MMS-rapporter](../reports/journey-global-report.md#sms-global)
 * [Skapa ett textmeddelande](create-sms.md)
 * [Lägg till ett meddelande i en resa](../building-journeys/journeys-message.md)
