@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: d8d007fb6a67e8716a07df04895684c2c1cfefaa
+source-git-commit: dd47299b780dfe388632b0bad5d587606ece0b23
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1176'
 ht-degree: 0%
 
 ---
@@ -77,23 +77,9 @@ Följ stegen nedan för att skapa en ny regel.
    >
    >För närvarande bara **[!UICONTROL Marketing]** finns tillgänglig.
 
-   <!--![](assets/message-rules-details.png)-->
+   ![](assets/message-rules-details.png)
 
-1. Från **[!UICONTROL Duration]** i den nedrullningsbara listan väljer du en tidsram för den begränsning som ska användas.
-
-   ![](assets/message-rules-capping-duration.png)
-
-   Frekvensgränsen baseras på den valda kalenderperioden. Den återställs i början av motsvarande tidsram.
-
-   Räknaren för varje period har följande förfallodatum:
-
-   <!--* **[!UICONTROL Daily]**: The frequency cap is valid for the day until 23:59:59 UTC and resets to 0 at the start of the next day.-->
-
-   * **[!UICONTROL Weekly]**: Frekvensbegränsningen gäller till lördag 23:59:59 UTC den veckan då kalenderveckan börjar på söndag. Utgångsdatumet är oberoende av hur regeln skapas. Om regeln till exempel skapas på torsdag gäller den till lördag den 23:59:59.
-
-   * **[!UICONTROL Monthly]**: Frekvensbegränsningen gäller till den sista dagen i månaden vid 23:59:59 UTC. Månadsförfallodatumet för januari är till exempel 01-31 23:59:59 UTC.
-
-   &lt;!—OBS! Vid hantering av [gruppsegmentering](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#batch){target="_blank"}, the daily counters may not accurately reflect the current values as the daily counter snapshot is taken at midnight UTC the night before. Consequently, relying on daily counters in this scenario becomes impractical, as the snapshot does not reflect the most up-to-date counter values on the profile. To ensure accuracy for daily frequency capping rules, the use of [streaming segmentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html){target="_blank"} rekommenderas. <!--Learn more on audience evaluation methods in [this section](using/audience/about-audiences.md#evaluation-method-in-journey-optimizer).-->
+1. Från **[!UICONTROL Duration]** i den nedrullningsbara listan väljer du en tidsram för den begränsning som ska användas. [Läs mer](#frequency-cap)
 
 1. Ange begränsningen för regeln, vilket innebär det maximala antalet meddelanden som kan skickas till en enskild användarprofil varje månad eller vecka <!--or day--> - enligt dina val ovan.
 
@@ -114,6 +100,34 @@ Följ stegen nedan för att skapa en ny regel.
 1. Klicka **[!UICONTROL Save as draft]** för att bekräfta att regeln har skapats. Ditt meddelande läggs till i regellistan med **[!UICONTROL Draft]** status.
 
    ![](assets/message-rules-created.png)
+
+### Frekvenslock {#frequency-cap}
+
+Från **[!UICONTROL Duration]** väljer du om du vill att capping ska användas månads- eller veckovis.
+
+>[!NOTE]
+>
+>Daglig frekvens finns också tillgänglig vid behov. [Läs mer](#daily-frequency-cap)
+
+Frekvensgränsen baseras på den valda kalenderperioden. Den återställs i början av motsvarande tidsram.
+
+![](assets/message-rules-capping-duration.png)
+
+Räknaren för varje period har följande förfallodatum:
+
+* **[!UICONTROL Monthly]**: Frekvensbegränsningen gäller till den sista dagen i månaden vid 23:59:59 UTC. Månadsförfallodatumet för januari är till exempel 01-31 23:59:59 UTC.
+
+* **[!UICONTROL Weekly]**: Frekvensbegränsningen gäller till lördag 23:59:59 UTC den veckan då kalenderveckan börjar på söndag. Utgångsdatumet är oberoende av hur regeln skapas. Om regeln till exempel skapas på torsdag gäller den till lördag den 23:59:59.
+
+### Daglig frekvensbegränsning {#daily-frequency-cap}
+
+Förutom månatligt och veckovis finns daglig frekvens tillgänglig vid behov. Kontakta din Adobe-representant om du vill veta mer.
+
+Den dagliga frekvensen gäller för dagen till 23:59:59 UTC och återställer till 0 i början av nästa dag.
+
+>[!NOTE]
+>
+>Vid hantering av [gruppsegmentering](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#batch){target="_blank"}, the daily counters may not accurately reflect the current values as the daily counter snapshot is taken at midnight UTC the night before. Consequently, relying on daily counters in this scenario becomes impractical, as the snapshot does not reflect the most up-to-date counter values on the profile. To ensure accuracy for daily frequency capping rules, the use of [streaming segmentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html){target="_blank"} rekommenderas. Läs mer om metoder för målgruppsutvärdering i [det här avsnittet](../audience/about-audiences.md#evaluation-method-in-journey-optimizer).
 
 ## Aktivera en regel {#activate-rule}
 

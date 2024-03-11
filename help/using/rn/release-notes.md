@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: ee33923ff5bfb73974935864c7e241ea4b0353c5
+source-git-commit: dd47299b780dfe388632b0bad5d587606ece0b23
 workflow-type: tm+mt
-source-wordcount: '1140'
+source-wordcount: '1146'
 ht-degree: 7%
 
 ---
@@ -191,8 +191,11 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Frekvensregler**
 
-* **Frekvensbegränsning varje vecka och dag** - Du kan nu ange maximalt antal meddelanden som skickas till en kundprofil under en vecka eller en dag, utöver månaden. Frekvensbegränsningen baseras på den valda kalenderperioden och återställs i början av motsvarande tidsram. [Läs mer](../configuration/frequency-rules.md#create-new-rule)
+* **Frekvensgräns varje vecka** - Du kan nu ange maximalt antal meddelanden som skickas till en kundprofil per vecka, utöver månaden. Frekvensbegränsningen baseras på den valda kalenderperioden och återställs i början av motsvarande tidsram. [Läs mer](../configuration/frequency-rules.md#create-new-rule)
 
+  >[!NOTE]
+  >
+  >Daglig frekvens finns också tillgänglig vid behov. Kontakta din Adobe-representant.
 
 **Beslutsledning**
 
