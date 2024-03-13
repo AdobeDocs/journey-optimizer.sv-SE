@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 327de13a-1c99-4d5e-86cf-8180fb7aaf23
-source-git-commit: 56505b6b698568678434510643433fa0ad639cbd
+source-git-commit: 3f844f65609f271e834ebf42749253fd64446a9a
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1341'
 ht-degree: 2%
 
 ---
@@ -55,16 +55,6 @@ Du kan också välja att bara visa de objekt som du själv har skapat eller änd
 
 ![](assets/content-template-list-filters.png)
 
-<!--Select the **[!UICONTROL Grid view]** mode to display each template as a thumbnail. 
-
->[!NOTE]
->
->Currently proper thumbnails can only be generated for HTML-type email content templates.
-
-When you update a content, you may have to wait a few seconds before the changes are reflected in the thumbnail.
-
-![](assets/content-template-grid-view.png)-->
-
 * Om du vill redigera ett mallinnehåll klickar du på önskat objekt i listan och väljer **[!UICONTROL Edit content]**.
 
   ![](assets/content-template-edit.png)
@@ -76,6 +66,22 @@ When you update a content, you may have to wait a few seconds before the changes
 >[!NOTE]
 >
 >När en mall redigeras eller tas bort påverkas inte kampanjer eller resor inklusive innehåll som skapats med den här mallen.
+
+### Visa mallar som miniatyrbilder {#template-thumbnails}
+
+Välj **[!UICONTROL Grid view]** om du vill visa varje mall som en miniatyrbild.
+
+>[!AVAILABILITY]
+>
+>Den här funktionen lanseras i begränsad tillgänglighet (LA) för en liten grupp kunder.
+
+![](assets/content-template-grid-view.png)
+
+>[!NOTE]
+>
+>För närvarande kan riktiga miniatyrbilder bara skapas för e-postinnehållsmallar av HTML-typ.
+
+När du uppdaterar ett innehåll kan du behöva vänta några sekunder innan ändringarna visas i miniatyrbilden.
 
 ## Skapa innehållsmallar {#create-content-templates}
 
