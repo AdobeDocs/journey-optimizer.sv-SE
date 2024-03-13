@@ -9,27 +9,33 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: politik, styrning, plattform, hälso- och sjukvård, samtycke
 exl-id: 01ca4b3e-3778-4537-81e9-97ef92c9aa9e
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: d549e4fdb7cd71e450cd00e4fa8707ae03ce0aff
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
 
 # Arbeta med policyer för samtycke {#consent-management}
 
-Med Adobe Experience Platform kan ni enkelt införa och tillämpa marknadsföringspolicyer för att respektera kundernas samtycke. Samtyckesregler definieras i Adobe Experience Platform. Se [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy).
+<!--Adobe Experience Platform allows you to easily adopt and enforce marketing policies to respect the consent preferences of your customers. Consent policies are defined in Adobe Experience Platform. Refer to [this documentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy).
 
-I Journey Optimizer kan du tillämpa dessa medgivandeprinciper på dina anpassade åtgärder. Du kan till exempel definiera regler för samtycke för att exkludera kunder som inte har samtyckt till att ta emot e-post, push eller SMS-kommunikation.
+In Journey Optimizer, you can apply these consent policies to your custom actions. For example, you can define consent policies to exclude customers who have not consented to receive email, push or SMS communication.-->
 
->[!NOTE]
+Dina data kan begränsas av din organisation eller av juridiska bestämmelser. Det är därför viktigt att se till att dataåtgärderna i Journey Optimizer följer [dataanvändningsprinciper](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html){target="_blank"}. These policies are Adobe Experience Platform rules defining which [marketing actions](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html#marketing-actions){target="_blank"} får du utföra på data.
+
+Det finns en typ av principer för dataanvändning **medgivandeprinciper**. De gör det möjligt för er att enkelt anta och tillämpa marknadsföringspolicyer för att respektera kundernas samtycke. [Läs mer om policytillämpning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html){target="_blank"}
+
+>[!IMPORTANT]
 >
->Samtyckespolicyer är för närvarande bara tillgängliga för organisationer som har köpt tilläggserbjudandet för hälso- och sjukvård.
+>Samtyckespolicyer är för närvarande bara tillgängliga för organisationer som har köpt Adobe **Hälsovårdssköld** eller **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
 
-I Journey Optimizer definieras samtycke på flera nivåer:
+Du kan till exempel [skapa medgivandepolicyer](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy){target="_blank"} i Experience Platform för att utesluta kunder som inte har samtyckt till att ta emot e-post, push-meddelanden eller SMS-meddelanden.
 
-* när **konfigurera en anpassad åtgärd** kan ni definiera en kanal- och marknadsföringsåtgärd. Se det här [section](../action/consent.md#consent-custom-action).
-* när du lägger till **anpassad åtgärd i en resa** kan ni definiera ytterligare en marknadsföringsåtgärd. Se det här [section](../action/consent.md#consent-journey).
+I Journey Optimizer definieras samtycke på flera nivåer. Du kan använda profiler för samtycke för anpassade åtgärder för din resa:
+
+* När **konfigurera en anpassad åtgärd** kan ni definiera en kanal- och marknadsföringsåtgärd. [Läs mer](#consent-custom-action)
+* När **anpassad åtgärd i en resa** kan ni definiera ytterligare en marknadsföringsåtgärd. [Läs mer](#consent-journey)
 
 ## Viktiga anteckningar {#important-notes}
 
