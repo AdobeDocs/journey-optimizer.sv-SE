@@ -8,7 +8,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: uttryck, syntax, operatorer, redigerare, resa
 exl-id: 706e2e02-9bd9-46e7-a73d-dda3c9ae4ba8
-source-git-commit: cb1fed2460ddbf3b226fe191b9695008970937c1
+source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
 workflow-type: tm+mt
 source-wordcount: '531'
 ht-degree: 5%
@@ -434,13 +434,13 @@ Exempel:
 "the current time is " + (now())
 ```
 
-Returnerar&quot;den aktuella tiden är 2019-09-23T09:30:06,693Z&quot;
+Returnerar &quot;den aktuella tiden är 2023-09-23T09:30:06,693Z&quot;
 
 ```json
 (now()) + " is the current time"
 ```
 
-Returnerar &quot;2019-09-23T09:30:06,693Z är den aktuella tiden&quot;
+Returnerar &quot;2023-09-23T09:30:06,693Z är den aktuella tiden&quot;
 
 ```json
 "a" + "b" + "c" + 1234
@@ -461,16 +461,16 @@ Lägg till en varaktighet för ett dateTime, ett dateTimeOnly eller en varaktigh
 Exempel:
 
 ```json
-(toDateTime("2011-12-03T15:15:30Z")) + (toDuration("PT15M"))  
+(toDateTime("2023-12-03T15:15:30Z")) + (toDuration("PT15M"))  
 ```
 
-Returnerar ett _dateTime_ 2011-12-03T15:30:30Z
+Returnerar ett _dateTime_ 2023-12-03T15:30:30Z
 
 ```json
-(toDateTimeOnly("2011-12-03T15:15:30")) + (toDuration("PT15M"))
+(toDateTimeOnly("2023-12-03T15:15:30")) + (toDuration("PT15M"))
 ```
 
-Returnerar ett _dateTimeOnly_ 2011-12-03T15:30:30
+Returnerar ett _dateTimeOnly_ 2023-12-03T15:30:30
 
 ```json
 (now()) + (toDuration("PT1H"))

@@ -7,10 +7,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: inNextHours, function, expression, travel
 exl-id: 079a91b6-49c5-4e68-a240-358ed0cded92
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
 workflow-type: tm+mt
 source-wordcount: '48'
-ht-degree: 14%
+ht-degree: 12%
 
 ---
 
@@ -41,6 +41,6 @@ Returnerar ett booleskt värde.
 
 ## Exempel
 
-`inNextHours(toDateTime('2010-12-12T01:11:00Z'), 4)`
+`inNextHours(toDateTime('2023-12-12T01:11:00Z'), 4)`
 
 Returnerar true.

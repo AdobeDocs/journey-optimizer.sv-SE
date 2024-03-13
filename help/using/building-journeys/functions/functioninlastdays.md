@@ -7,10 +7,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: inLastDays, funktion, uttryck, resa
 exl-id: 1b150568-17c2-454d-847e-17bac3d0b35d
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
 workflow-type: tm+mt
 source-wordcount: '48'
-ht-degree: 14%
+ht-degree: 12%
 
 ---
 
@@ -41,6 +41,6 @@ Returnerar ett booleskt värde.
 
 ## Exempel
 
-`inLastDays(toDateTime('2019-12-12T01:11:00Z'), 4)`
+`inLastDays(toDateTime('2023-12-12T01:11:00Z'), 4)`
 
 Returnerar true.

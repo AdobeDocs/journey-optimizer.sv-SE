@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: steg, konfiguration, resa, händelser, ström, API
 exl-id: e0144151-6c54-4656-9650-b544d8e7be16
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 4%
+source-wordcount: '279'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 4%
 Konfigurera händelser som ska skickas till **[!UICONTROL Streaming Ingestion APIs]** och ska användas i [!DNL Journey Optimizer]måste du följa dessa steg:
 
 1. Hämta URL:en för inlopp från Adobe Experience Platform API:er. Läs mer i [Översikt över API:er för direktuppspelning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=sv){target="_blank"}.
-1. Kopiera nyttolasten från nyttolastförhandsvisningen i **[!UICONTROL Event]** -menyn. Läs mer i [den här sidan](../event/about-creating.md#define-the-payload-fields).
+1. Kopiera nyttolasten från nyttolastförhandsvisningen i **[!UICONTROL Event]** -menyn. Läs mer på [den här sidan](../event/about-creating.md#define-the-payload-fields).
 
 Sedan måste du konfigurera det datasystem som överför händelser till API:er för direktuppspelning av inmatning med den nyttolast som du kopierade:
 
@@ -75,7 +75,7 @@ Här är ett exempel på en API-händelse för direktuppspelning:
                 ]
             },
             "_id": "string",
-            "timestamp": "2018-05-29T00:00:00.000Z",
+            "timestamp": "2023-05-29T00:00:00.000Z",
             "_experience": {
                 "campaign": {
                     "orchestration": {

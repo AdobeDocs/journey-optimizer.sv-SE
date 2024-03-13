@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: vänta, aktivitet, resa, nästa, arbetsyta
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
-source-git-commit: cb1fed2460ddbf3b226fe191b9695008970937c1
+source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 5%
@@ -60,13 +60,13 @@ Select the date for the execution of the next activity.
 
 ## Anpassad väntetid{#custom}
 
-Med det här alternativet kan du definiera ett anpassat datum, till exempel 12 juli 2020 klockan 17.00, med hjälp av ett avancerat uttryck som baseras på ett fält som kommer från en händelse eller en datakälla. Du kan inte definiera en anpassad längd, till exempel 7 dagar. Uttrycket i uttrycksredigeraren ska ha formatet dateTimeOnly. Se detta [page](expression/expressionadvanced.md). Mer information om formatet dateTimeOnly finns i [page](expression/data-types.md).
+Med det här alternativet kan du definiera ett anpassat datum, till exempel 12 juli 2023 klockan 17.00, med hjälp av ett avancerat uttryck som baseras på ett fält som kommer från en händelse eller en datakälla. Du kan inte definiera en anpassad längd, till exempel 7 dagar. Uttrycket i uttrycksredigeraren ska ha formatet dateTimeOnly. Se detta [page](expression/expressionadvanced.md). Mer information om formatet dateTimeOnly finns i [page](expression/data-types.md).
 
 >[!NOTE]
 >
->Du kan återanvända ett dateTimeOnly-uttryck eller använda en funktion för att konvertera till dateTimeOnly. Till exempel: toDateTimeOnly(@event{Event.offerOpened.activity.endTime}), fältet i händelsen har formatet 2016-08-12T09:46:06Z.
+>Du kan återanvända ett dateTimeOnly-uttryck eller använda en funktion för att konvertera till dateTimeOnly. Till exempel: toDateTimeOnly(@event{Event.offerOpened.activity.endTime}), fältet i händelsen har formatet 2023-08-12T09:46:06Z.
 >
->The **tidszon** är förväntat i egenskaperna för din resa. Därför är det inte möjligt i dag från gränssnittet till en direkt punkt vid en fullständig ISO-8601-tidsstämpelblandningstid och tidszonsförskjutning som 2016-08-12T09:46:6.982-05. Läs [den här sidan](../building-journeys/timezone-management.md).
+>The **tidszon** är förväntat i egenskaperna för din resa. Därför är det inte möjligt att i dag gå från gränssnittet till en direkt punkt vid en fullständig ISO-8601-tidsstämpelblandningstid och tidszonsförskjutning som 2023-08-12T09:46:6.982-05. Läs [den här sidan](../building-journeys/timezone-management.md).
 
 ![](assets/journey57.png)
 

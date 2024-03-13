@@ -7,10 +7,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: toDateTime, funktion, uttryck, resa
 exl-id: 2b487e60-593e-4bf7-9639-f469ba0f5cdc
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 7%
+source-wordcount: '104'
+ht-degree: 4%
 
 ---
 
@@ -72,17 +72,17 @@ Return a datetime.
 
 ## Exempel
 
-`toDateTime ("2016-08-18T23:17:59.123Z")`
+`toDateTime ("2023-08-18T23:17:59.123Z")`
 
-Returnerar 2016-08-18T23:17:59,123Z
+Returnerar 2023-08-18T23:17:59,123Z
 
-`toDateTime(toDateTimeOnly("UTC", "2016-08-18T23:17:59.123"))`
+`toDateTime(toDateTimeOnly("UTC", "2023-08-18T23:17:59.123"))`
 
-Returnerar 2016-08-18T23:17:59,123Z
+Returnerar 2023-08-18T23:17:59,123Z
 
 `toDateTime(1560762190189)`
 
-Returer 2019-06-17T09:03:10,189Z
+Returer 2023-06-17T09:03:10,189Z
 
 <!--`toDateTime ("2016-08-18T23:17:59.123", "UTC")`
 

@@ -7,10 +7,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: inNextDays, funktion, uttryck, resa
 exl-id: 0cb3e0db-dc5b-4d4e-a057-af030d9bdb21
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
 workflow-type: tm+mt
 source-wordcount: '48'
-ht-degree: 14%
+ht-degree: 12%
 
 ---
 
@@ -41,6 +41,6 @@ Returnerar ett booleskt värde.
 
 ## Exempel
 
-`inNextDays(toDateTime('2010-12-12T01:11:00Z'), 4)`
+`inNextDays(toDateTime('2023-12-12T01:11:00Z'), 4)`
 
 Returnerar true.

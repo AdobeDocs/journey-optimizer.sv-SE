@@ -8,10 +8,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: uttryck, data, datatyp, resa
 exl-id: fdfc3287-d733-45fb-ad11-b4238398820a
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 5%
+source-wordcount: '620'
+ht-degree: 2%
 
 ---
 
@@ -165,7 +165,7 @@ Den kan kapslas in i en toDateTimeOnly-funktion.
 
 Serialiseringsformat: ISO-8601 utökat förskjutningsformat för datum och tid.
 
-Det använder DateTimeFormatter ISO_LOCAL_DATE_TIME för att avserialisera och serialisera värdet. [Läs mer](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#ISO_LOCAL_DATE_TIME&quot;)
+Det använder DateTimeFormatter ISO_LOCAL_DATE_TIME för att avserialisera och serialisera värdet. [Läs mer](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#ISO_LOCAL_DATE_TIME&quot;){_blank}.
 
 **Litteral representation**
 
@@ -176,8 +176,8 @@ date("<dateTimeOnly in ISO-8601 format>")
 **Exempel**
 
 ```json
-date("2021-02-19T00.00.000")
-date("2021-02-19T00.00")
+date("2024-02-19T00.00.000")
+date("2024-02-19T00.00")
 ```
 
 ## dateTime {#date-time}
@@ -194,9 +194,9 @@ Den kan kapslas in i en toDateTime-funktion.
 
 Serialiseringsformat: ISO-8601 utökat förskjutningsformat för datum och tid.
 
-Det använder DateTimeFormatter ISO_OFFSET_DATE_TIME för att avserialisera och serialisera värdet. [Läs mer](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#ISO_OFFSET_DATE_TIME)
+Det använder DateTimeFormatter ISO_OFFSET_DATE_TIME för att avserialisera och serialisera värdet. [Läs mer](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#ISO_OFFSET_DATE_TIME){_blank}.
 
-Du kan också skicka ett heltal som skickar ett epokvärde. [Läs mer](https://www.epochconverter.com)
+Du kan också skicka ett heltal som skickar ett epokvärde. [Läs mer](https://www.epochconverter.com){_blank}.
 
 Tidszonen kan anges med en förskjutning eller en tidszonskod (exempel: Europa/Paris, Z - betyder UTC).
 
@@ -217,7 +217,7 @@ toDateTime(<integer value of an epoch in milliseconds>)
 **Exempel**
 
 ```json
-date("2021-02-19T00.00.000Z")
+date("2024-02-19T00.00.000Z")
 ```
 
 ```json
@@ -225,19 +225,19 @@ toDateTime("1977-04-22T06:00:00Z")
 ```
 
 ```json
-toDateTime("2011-12-03T15:15:30Z")
+toDateTime("2023-12-03T15:15:30Z")
 ```
 
 ```json
-toDateTime("2011-12-03T15:15:30.123Z")
+toDateTime("2023-12-03T15:15:30.123Z")
 ```
 
 ```json
-toDateTime("2011-12-03T15:15:30.123+02:00")
+toDateTime("2023-12-03T15:15:30.123+02:00")
 ```
 
 ```json
-toDateTime("2011-12-03T15:15:30.123-00:20")
+toDateTime("2023-12-03T15:15:30.123-00:20")
 ```
 
 ```json
@@ -258,7 +258,7 @@ Den måste kapslas in i en toDuration-funktion.
 
 Serialiseringsformat: Om du vill deserialisera ett tidszons-ID använder du Java-funktionen java.time.
 
-Duration.parse: De format som accepteras baseras på varaktighetsformatet PnDTnHnMn.nS enligt ISO-8601 med dagar som anses vara exakt 24 timmar. [Läs mer](https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html#parse-java.lang.CharSequence-)
+Duration.parse: De format som accepteras baseras på varaktighetsformatet PnDTnHnMn.nS enligt ISO-8601 med dagar som anses vara exakt 24 timmar. [Läs mer](https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html#parse-java.lang.CharSequence-){_blank}.
 
 **Litteral representation**
 
