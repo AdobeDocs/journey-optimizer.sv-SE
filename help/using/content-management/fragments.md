@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 7131a953-baca-4e7c-a8df-97c0bd6ac567
-source-git-commit: dd47299b780dfe388632b0bad5d587606ece0b23
+source-git-commit: dbe8ea3a8655f180576dafc5d1a65feb58fb57df
 workflow-type: tm+mt
 source-wordcount: '1496'
 ht-degree: 2%
@@ -80,8 +80,6 @@ Från **[!UICONTROL More actions]** intill varje fragment kan du:
 * Duplicera ett fragment.
 
 * Använd **[!UICONTROL Explore references]** möjlighet att se resorna, kampanjerna eller mallarna där de används. [Läs mer](#explore-references)
-
-<!--Copy a fragment to another sandbox.-->
 
 * Arkivera ett fragment. [Läs mer](#archive-fragments)
 
