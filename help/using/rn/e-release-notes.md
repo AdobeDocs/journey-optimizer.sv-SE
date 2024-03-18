@@ -8,16 +8,16 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 31e94565037aa8493e8b09c813047a4600549e8d
+source-git-commit: 02b5886dc9d32d3b06dd4930da882019e344bab3
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '278'
 ht-degree: 6%
 
 ---
 
 # Tidig versionsinformation {#e-release-notes}
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i [versionsinformation](release-notes.md).
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras i slutet av varje månad i [versionsinformation](release-notes.md).
 
 Noteringarna nedan kan ändras utan föregående meddelande fram till releasedatum. Länkar, skärmar och uppdaterad dokumentation publiceras i [versionsinformation](release-notes.md), på releasedatum.
 
@@ -25,9 +25,9 @@ Noteringarna nedan kan ändras utan föregående meddelande fram till releasedat
 
 **Releasedatum**: 19-20 mars 2024
 
-### Nya funktioner{#e-features}
+### Ny funktion {#e-features}
 
-Den här versionen innehåller de nya funktionerna som listas nedan.
+Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 
 <table>
 <thead>
@@ -41,7 +41,7 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <p>Med den nya kodbaserade upplevelsekanalen kan du med Adobe Journey Optimizer utföra avancerad personalisering och testning för alla dina inkommande egenskaper, vilket möjliggör smidig leverans av skräddarsydda upplevelser över olika kontaktytor som webbappar, mobilappar, datorprogram, videokonsoler, tv-anslutna enheter, smarta tv-apparater, kioskdatorer, ATM-enheter, IoT-enheter med mera.</p>
 <P>Viktiga funktioner:</p>
 <ul><li> Universell personalisering: utöka personaliserade upplevelser över alla kontaktytor för att säkerställa en sammanhängande och skräddarsydd användarresa</li>
-<li>&gt;Detaljerad redigeringsprecision: redigera specifikt innehåll på enskilda platser i dina program eller webbsidor</li>
+<li>Detaljerad redigeringsprecision: redigera specifikt innehåll på enskilda platser i dina program eller webbsidor</li>
 <li>Mångsidig implementering: stöd för implementeringsmetoder på serversidan, API-baserade eller SDK-baserade, för smidig integrering med utvecklingsmiljön.</li></ul></p>
 <p>Mer information finns i den <a href="../code-based/get-started-code-based.md">detaljerade dokumentationen</a>.</p>
 <!--img src="assets/do-not-localize/web_inapp.gif"-->
