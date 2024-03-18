@@ -8,10 +8,10 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: d34681b9b8392d3971619efcea8cc6c3f0b1e661
+source-git-commit: 31e94565037aa8493e8b09c813047a4600549e8d
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 7%
+source-wordcount: '279'
+ht-degree: 6%
 
 ---
 
@@ -32,14 +32,17 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Kodbaserad upplevelse</strong><br/></th>
+<th><strong>Kodbaserade upplevelser</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Ni kan nu personalisera och testa de upplevelser ni vill leverera till kunderna via alla kontaktytor, som webbappar, mobilappar, datorprogram, videokonsoler, tv-anslutna enheter, smarta TV-apparater, kioskdatorer, ATM-enheter, röstassistenter, IoT-enheter och mycket mer.</p>
-<p>Med den kodbaserade upplevelsen kan ni definiera inkommande upplevelser med en enkel och intuitiv icke-visuell redigerare. Det gör att du kan infoga och redigera specifika element på enskilda och mer detaljerade platser i dina program eller webbsidor, oavsett vilken typ av program du har - i stället för att ändra ett helt innehåll.</p><br/><br/></p>
+<p>Med den nya kodbaserade upplevelsekanalen kan du med Adobe Journey Optimizer utföra avancerad personalisering och testning för alla dina inkommande egenskaper, vilket möjliggör smidig leverans av skräddarsydda upplevelser över olika kontaktytor som webbappar, mobilappar, datorprogram, videokonsoler, tv-anslutna enheter, smarta tv-apparater, kioskdatorer, ATM-enheter, IoT-enheter med mera.</p>
+<P>Viktiga funktioner:</p>
+<ul><li> Universell personalisering: utöka personaliserade upplevelser över alla kontaktytor för att säkerställa en sammanhängande och skräddarsydd användarresa</li>
+<li>&gt;Detaljerad redigeringsprecision: redigera specifikt innehåll på enskilda platser i dina program eller webbsidor</li>
+<li>Mångsidig implementering: stöd för implementeringsmetoder på serversidan, API-baserade eller SDK-baserade, för smidig integrering med utvecklingsmiljön.</li></ul></p>
 <p>Mer information finns i den <a href="../code-based/get-started-code-based.md">detaljerade dokumentationen</a>.</p>
 <!--img src="assets/do-not-localize/web_inapp.gif"-->
 </tr>
@@ -52,5 +55,12 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Innehållsmallar**
 
-* **Miniatyrbild** - A **miniatyrbildsvisning** är nu tillgängligt för innehållsmallar och fragment för förbättrad visuell åtkomst.
+* **Miniatyrbild** - A **miniatyrbildsvisning** är nu tillgängligt för innehållsmallar och fragment för förbättrad visuell åtkomst. [Läs mer](../content-management/content-templates.md#template-thumbnails)
 
+**Resor**
+
+Nya mellanliggande statusvärden har lagts till i reseutvecklingscykeln:
+
+* **Publicering** status mellan **Utkast** status och **Live** status
+* **Stoppar** status mellan **Live** status och **Stoppad** status
+* **Aktiverar testläge** eller **Inaktiverar testläge** statusvärden mellan **Utkast** status och **Utkast (test)** status
