@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 4b3ec38154d01eb3f15c30c26b427ee34a324be7
+source-git-commit: 4f7a62cdfbd90b2d33341342f6fba769e8bf0132
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '289'
 ht-degree: 6%
 
 ---
@@ -64,3 +64,5 @@ Nya mellanliggande statusvärden har lagts till i reseutvecklingscykeln:
 * **Publicering** status mellan **Utkast** status och **Live** status
 * **Stoppar** status mellan **Live** status och **Stoppad** status
 * **Aktiverar testläge** eller **Inaktiverar testläge** statusvärden mellan **Utkast** status och **Utkast (test)** status
+
+När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad.
