@@ -6,7 +6,7 @@ topic: Content Management
 role: User, Developer, Admin
 level: Experienced
 exl-id: 987de2bf-cebe-4753-98b4-01eb3fded492
-source-git-commit: 9d21ea489e62254eb3e4665198149e284b78296e
+source-git-commit: 3cdef96e383448b462f6e3781e36d3c9a57bd637
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 1%
@@ -174,6 +174,5 @@ Tabellerna nedan visar några exempel på URI-definitioner för olika enheter.
 | --------- | ----------- | ------- | 
 | Webben med jokertecken | jokertecken:web:/domain.com/`*`#element | Jokertecknets yta - representerar ett enskilt element på varje sida under en specifik domän. |
 | Webben med jokertecken | jokertecken:web://`*`domain.com/`*`#element | Jokerteckenyta - representerar ett enskilt element på varje sida under alla domäner som slutar med &quot;domain.com&quot;. |
-
 
 
