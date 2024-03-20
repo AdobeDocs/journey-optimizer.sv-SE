@@ -8,9 +8,9 @@ role: User
 level: Beginner
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
 exl-id: 66b5c691-ddc4-4e9b-9386-2ce6c307451c
-source-git-commit: f2d4531bd3b0b84dc1b52e818cbbeee36733314f
+source-git-commit: 83751eae9f703a89a57cb337492377ff2478d4a0
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '860'
 ht-degree: 1%
 
 ---
@@ -67,7 +67,7 @@ Förstå vilka Journey Optimizer-datauppsättningar du kan exportera från tabel
 
 ## Förutsättningar {#prerequisites}
 
-Om du vill exportera datauppsättningar måste du ha [behörigheter för åtkomstkontroll](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#permissions) som anges nedan. Läs [åtkomstkontroll - översikt](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/overview.html) eller kontakta produktadministratören för att få de behörigheter som krävs.
+Om du vill exportera datauppsättningar måste du ha [behörigheter för åtkomstkontroll](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#permissions){target="_blank"} listed below. Read the [access control overview](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/overview.html){target="_blank"} eller kontakta produktadministratören för att få de behörigheter som krävs.
 
 | Kategori | Behörighet |
 |--|--|
@@ -75,15 +75,15 @@ Om du vill exportera datauppsättningar måste du ha [behörigheter för åtkoms
 | Datahantering | Visa datauppsättningar |
 | Mål  | Visa mål |
 
-## De viktigaste stegen för att exportera datauppsättningar {#main-steps}
+## Viktiga steg för att exportera datauppsättningar {#main-steps}
 
 De viktigaste stegen för att exportera en datauppsättning till en molnlagringsplats är följande:
 
 ![](assets/dataset-export-process.png)
 
-Detaljerad information om varje steg finns i Adobe Experience Platform dokumentation: [Exportera datauppsättningar till molnlagringsmål](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html).
+Detaljerad information om varje steg finns i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target="_blank"}.
 
-1. **Konfigurera molnlagringsmålet**. Om du inte redan har gjort det ansluter du till ett molnlagringsmål från målkatalogen. [Lär dig hur du skapar en ny målanslutning](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/connect-destination.html#setup)
+1. **Konfigurera molnlagringsmålet**. Om du inte redan har gjort det ansluter du till ett molnlagringsmål från målkatalogen. Lär dig hur du skapar en ny målanslutning i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/connect-destination.html#setup){target="_blank"}.
 
    <!--![](assets/dataset-export-setup.png)-->
 
@@ -93,7 +93,7 @@ Detaljerad information om varje steg finns i Adobe Experience Platform dokumenta
 
    >[!NOTE]
    >
-   >Om du använder Adobe Journey Optimizer tillsammans med kundprofiler i realtid kommer målkorten att visa en aktiveringsknapp, som gör att du kan både exportera datauppsättningar och aktivera målgrupper för den här destinationen, beroende på vilka behörigheter du har aktiverat.
+   >Om du använder Adobe Journey Optimizer tillsammans med kundprofiler i realtid visas en **Aktivera** så att du kan både exportera datauppsättningar och aktivera målgrupper för det här målet, beroende på vilka behörigheter du har aktiverat.
 
 1. **Välj datauppsättning(ar)** som du vill exportera till det valda målet. [Läs mer om Journey Optimizer datamängder för export](#datasets)
 
@@ -107,4 +107,4 @@ Detaljerad information om varje steg finns i Adobe Experience Platform dokumenta
 
    <!--![](assets/dataset-export-review.png)-->
 
-När exporten är klar, lagras innehållet i datauppsättningen på din molnlagringsplats enligt det schema som du har konfigurerat. [Lär dig hur du verifierar lyckad datauppsättningsexport](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html#verify)
+När exporten är klar, lagras innehållet i datauppsättningen på din molnlagringsplats enligt det schema som du har konfigurerat. [Lär dig hur du verifierar lyckad datauppsättningsexport](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html#verify){target="_blank"}.
