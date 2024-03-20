@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: underdomän, optimering, delegering
 exl-id: 1b5ca4db-44d9-49e2-ab39-a1abba223ec7
-source-git-commit: c80fecf1373528c8b46f76ee6a6eaafbcda58892
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '907'
 ht-degree: 23%
 
 ---

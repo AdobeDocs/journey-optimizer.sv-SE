@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 36e73778f88bcf55a36a25f6b1cd237bf8fe5e9a
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1570'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ Så här skapar du en kanalyta:
 
    >[!NOTE]
    >
-   >Du kan inte fortsätta skapa en yta medan den valda IP-poolen är under [utgåva](ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) och har aldrig kopplats till den valda underdomänen. [Läs mer](#subdomains-and-ip-pools)
+   >Du kan inte fortsätta med att skapa e-postyta medan den valda IP-poolen är under [utgåva](ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) och har aldrig kopplats till den valda underdomänen. [Läs mer](#subdomains-and-ip-pools)
    >
    >Spara ytan som utkast och vänta tills IP-poolen har **[!UICONTROL Success]** status för att återuppta skapande av yta.
 

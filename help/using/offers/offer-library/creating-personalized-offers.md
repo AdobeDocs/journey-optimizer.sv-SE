@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4a53ea96-632a-41c7-ab15-b85b99db4f3e
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 3%
+source-wordcount: '731'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ Innan du skapar ett erbjudande måste du kontrollera att du har skapat:
 * Om du vill lägga till ett villkor för behörighet: **beslutsregel** som kommer att definiera villkoren för hur erbjudandet ska presenteras. Se [Skapa beslutsregler](../offer-library/creating-decision-rules.md).
 * En eller flera **samlingskvalificerare** (tidigare kallat &quot;taggar&quot;) som du kanske vill koppla till erbjudandet. Se [Skapa samlingskvalificerare](../offer-library/creating-tags.md).
 
-➡️ [Upptäck den här funktionen i en video](#video)
+➡️ [Upptäck den här funktionen i video](#video)
 
 Listan över personaliserade erbjudanden finns på **[!UICONTROL Offers]** -menyn.
 
@@ -47,6 +47,10 @@ Skapa en **erbjudande** gör du så här:
 
 1. Ange erbjudandets namn samt start- och slutdatum och sluttid. Utanför dessa datum väljs inte erbjudandet av beslutsmotorn.
 
+   >[!NOTE]
+   >
+   >När du väljer tider tas den aktuella tidszonen med i beräkningen.
+
    ![](../assets/offer_details.png)
 
    >[!CAUTION]
@@ -64,6 +68,10 @@ Skapa en **erbjudande** gör du så här:
 1. Lägg till representationer för att definiera var ditt erbjudande ska visas i meddelandet. [Läs mer](add-representations.md)
 
    ![](../assets/channel-placement.png)
+
+   >[!CAUTION]
+   >
+   >Ett erbjudande som innehåller alla dess representationer får inte överskrida 300 kB.
 
 1. Lägg till begränsningar för att ange villkoren för erbjudandet som ska visas. [Läs mer](add-constraints.md)
 

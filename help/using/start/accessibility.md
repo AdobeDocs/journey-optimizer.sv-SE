@@ -7,9 +7,9 @@ feature: Accessibility
 role: User
 level: Beginner
 exl-id: d971c04c-9b37-4cd7-8a2d-b915e394079b
-source-git-commit: b37ad6fd3eb41f7cdde28c24fefc13c8b676f803
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '470'
 ht-degree: 2%
 
 ---
@@ -49,11 +49,6 @@ Du kan använda dessa kortkommandon i vissa områden i [!DNL Journey Optimizer] 
       <th>Genväg</th>
     </tr>
   </thead>
-  <tr>
-    <td>Förteckning över resor, åtgärder, datakällor eller händelser</td>
-    <td>Skapa en resa, en åtgärd, en datakälla eller en händelse</td>
-    <td>C</td>
-  </tr>
   <tr>
     <td rowspan="8">Researbetsyta med utkaststatus</td>
     <td>Lägg till en aktivitet från den vänstra paletten vid den första tillgängliga positionen, uppifrån och ned</td>
@@ -107,23 +102,6 @@ Du kan använda dessa kortkommandon i vissa områden i [!DNL Journey Optimizer] 
   <tr>
     <td>Ignorera ändringar och stäng konfigurationsfönstret</td>
     <td>Esc</td>
-  </tr>
-  <tr>
-    <td rowspan="4">Resa i testläge</td>
-    <td>Aktivera eller inaktivera testläget</td>
-    <td>T</td>
-  </tr>
-  <tr>
-    <td>Utlösa en händelse i en händelsebaserad resa</td>
-    <td>E</td>
-  </tr>
-  <tr>
-    <td>Utlös ett event i en målgruppsbaserad resa för vilken **[!UICONTROL Single profile at a time]**-alternativet är aktiverat</td>
-    <td>P</td>
-  </tr>
-  <tr>
-    <td>Visa testloggarna</td>
-    <td>L</td>
   </tr>
 <!-- //Ajouter ce raccourci quand il marchera (actuellement, le raccourci Ctrl/Cmd+F du navigateur a priorité sur celui de AJO).//
   <tr>

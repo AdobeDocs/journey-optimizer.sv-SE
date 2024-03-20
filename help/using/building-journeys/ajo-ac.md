@@ -9,27 +9,27 @@ role: Admin, Data Engineer, User
 level: Intermediate, Experienced
 keywords: resa, meddelande, kampanj, integrering
 exl-id: b07feb98-b2ae-476c-8fcb-873b308176f0
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
 
-# Användningsfall: skicka ett meddelande med Campaign v7/v8 {#campaign-classic-use-case}
+# Användningsfall: skicka ett meddelande med Campaign v7/v8 {#campaign-v7-v8-use-case}
 
-I det här exemplet presenteras alla steg som krävs för att skicka e-post med hjälp av integreringen med Adobe Campaign Classic v7 och Adobe Campaign v8.
+I det här exemplet presenteras alla steg som krävs för att skicka e-post med hjälp av integreringen med Adobe Campaign v7 och Adobe Campaign v8.
 
 >[!NOTE]
 >
->För att kunna använda den här integreringen måste du ha Campaign Classic build 9125 eller senare.
+>För att kunna använda den här integreringen måste du ha Campaign v7/v8 build 9125 eller senare.
 
 Vi skapar först en transaktionell e-postmall i Campaign. I Journey Optimizer skapar vi sedan evenemanget, handlingen och designen av kundresan.
 
 Mer information om Campaign-integrationen finns på följande sidor:
 
 * [Skapa en kampanjåtgärd](../action/acc-action.md)
-* [Använda åtgärden i en resa](../building-journeys/using-adobe-campaign-classic.md).
+* [Använda åtgärden i en resa](../building-journeys/using-adobe-campaign-v7-v8.md).
 
 **Adobe Campaign**
 

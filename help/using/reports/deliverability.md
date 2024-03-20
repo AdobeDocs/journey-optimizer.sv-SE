@@ -8,9 +8,9 @@ topic: Content Management
 role: Admin
 level: Intermediate, Experienced
 exl-id: 8f33dda7-9bd5-4293-8d0d-222205cbc7d5
-source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '965'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ En djupdykning i vad som är möjligt och mer information om termer, begrepp och
 
 ## Minska antalet klagomål {#reduce-complaint-rate}
 
-Internetleverantörer har vanligtvis ett framträdande sätt att rapportera ett mottaget meddelande som skräppost. Detta gör det möjligt att identifiera otillförlitliga källor. Genom att snabbt följa avanmälningsbegäranden och därmed visa att du är en tillförlitlig avsändare kan ni minska antalet klagomål. [Läs mer om hantering av avanmälan](../privacy/opt-out.md#opt-out-management).
+Internetleverantörer har vanligtvis ett framträdande sätt att rapportera ett mottaget meddelande som skräppost. Detta gör det möjligt att identifiera otillförlitliga källor. Genom att snabbt följa avanmälningsbegäranden och därmed visa att du är en tillförlitlig avsändare kan ni minska antalet klagomål. [Läs mer om hantering av avanmälan](../privacy/opt-out.md#opt-out-management)
 
 Som allmän regel ska du inte försöka hindra mottagare som vill avanmäla sig genom att kräva att de fyller i fält som e-postadress eller namn, till exempel. Startsidan för den sista prenumerationen bör bara ha en valideringsknapp.
 
@@ -51,7 +51,7 @@ Betala extra försiktighet när du begär ytterligare bekräftelse: en användar
 
 För att skydda leveransen utesluts de mottagare vars adresser finns med i listan över undertryckningar som standard från alla framtida leveranser, eftersom det kan skada ditt sändningsanseende om du skickar till dessa kontakter.
 
-[Läs mer om listan över inaktiveringar](suppression-list.md).
+[Läs mer om listan över inaktiveringar](suppression-list.md)
 
 ## Använd övervakningsverktyg {#monitoring-tools}
 
@@ -71,10 +71,88 @@ Om du vill förbättra leveransgraden och se till att dina e-postmeddelanden nå
 
 * **Avbeställ länk- och landningssida**: Avbeställningen är nödvändig. Den måste vara synlig och giltig och formuläret måste vara funktionellt.
 
-[Läs mer om hur du utformar e-postinnehåll](../email/get-started-email-design.md).
+[Läs mer om hur du utformar e-postinnehåll](../email/get-started-email-design.md)
 
-## Ange ditt rykte som avsändare
+## Ange ditt rykte som avsändare {#reputation}
 
 Om du nyligen har flyttat till en annan e-postleverantör, IP-adress, e-postdomän eller underdomän måste du ange ditt rykte som avsändare. Annars kan leveranserna blockeras eller flyttas till skräppostmappen i mottagarens postlåda.
 
-För att värma upp era immateriella tillgångar kan ni gradvis öka antalet leveranser. Se det här [användningsfall](../building-journeys/ramp-up-deliveries-uc.md).
+För att värma upp era immateriella tillgångar kan ni gradvis öka antalet leveranser. Läs mer om detta [användningsfall](../building-journeys/ramp-up-deliveries-uc.md).
+
+## Implementera DMARC {#dmarc}
+
+För att hjälpa er att minska risken för att legitima e-postmeddelanden markeras som skräppost eller avvisas och för att förhindra leveransproblem, [!DNL Journey Optimizer] I kan du konfigurera DMARC-posten för alla underdomäner som du delegerar till Adobe.
+
+Domänbaserad Message Authentication, Reporting och Conformance (DMARC) är en autentiseringsmetod som gör att domänägare kan skydda sin domän från obehörig användning av obehöriga aktörer.
+
+[Läs mer på DMARC-posten](../configuration/dmarc-record.md)
+
+## Lär dig mer om feedback-loopar {#feedback-loops}
+
+En feedbackslinga (FBL) är en tjänst som erbjuds av vissa Internet-leverantörer som gör att e-postavsändaren automatiskt kan meddelas när den användare som tar emot ett e-postmeddelande väljer att markera det som skräppost (kallas även för ett klagomål).
+
+När en slutanvändare har skapat ett klagomål som skickas tillbaka till Adobe av Internet-leverantören, läggs e-postadressen automatiskt till i [utelämningslista](../reports/suppression-list.md) och exkluderas från framtida leveranser. Om du skickar e-post till användare som har markerat dem som skräppost påverkas avsändarens anseende negativt, vilket kan orsaka leveransproblem. [Läs mer om skräppostklagomål](../reports/suppression-list.md#spam-complaints)
+
+>[!IMPORTANT]
+>
+>Alla Internet-leverantörer tillhandahåller inte en traditionell FBL, som Gmail. Gmail ger inte feedback på individnivå och kan inte användas för att spåra skräppostklagomål till enskilda mottagare, utan istället fokusera på aggregerad nivårapportering i sina Google Postmaster Tools. [Läs mer](https://support.google.com/a/answer/6254652?hl=en){target="_blank"}
+
+Alla Adobe-kunder registreras automatiskt i de traditionella FBL:erna för följande ISP:
+
+* 1&amp;1
+
+* AOL
+
+* BlueTie
+
+* Comcast
+
+* Fastmail
+
+* Gandi
+
+* Italia Online
+
+* La Poste
+
+* Liberty Global (Chello, UPC, Unity Media)
+
+* Locaweb
+
+* Mail.RU
+
+* Microsoft
+
+* OpenSRS
+
+* Rackspace
+
+* SEZNM
+
+* SFR
+
+* SilverSky
+
+* Swisscom
+
+* Synacor
+
+* Telecom Italia
+
+* Telenet
+
+* Telenor
+
+* Telstra
+
+* Terra
+
+* UO
+
+* Virgin Media
+
+* Yahoo
+
+* Ziggo
+
+Adobe granskar dessa FBL regelbundet för att säkerställa att de senaste tillgängliga FBL:erna läggs till.

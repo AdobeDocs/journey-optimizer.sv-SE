@@ -5,33 +5,19 @@ feature: Code-based Experiences
 topic: Content Management
 role: User
 level: Experienced
-hide: true
-hidefromtoc: true
-badge: label="Beta"
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 2%
+source-wordcount: '943'
+ht-degree: 1%
 
 ---
 
 # Skapa kodbaserade upplevelser {#create-code-based}
 
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här handboken:
-
-* [Kom igång med kodbaserad kanal](get-started-code-based.md)
-* [Kodbaserade förutsättningar](code-based-prerequisites.md)
-* [Kodbaserade implementeringsexempel](code-based-implementation-samples.md)
-* **[Skapa kodbaserade upplevelser](create-code-based.md)**
-
->[!ENDSHADEBOX]
-
 >[!AVAILABILITY]
 >
->Den kodbaserade upplevelsekanalen är för närvarande endast tillgänglig som betaversion för utvalda användare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
+>För närvarande är den kodbaserade upplevelsekanalen inte tillgänglig för organisationer som har köpt Adobe **Hälsovårdssköld** och **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
 
 ## Skapa en kodbaserad kampanj {#create-code-based-campaign}
 
@@ -43,7 +29,7 @@ Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampa
 
 1. Skapa en kampanj. [Läs mer](../campaigns/create-campaign.md)
 
-1. Välj **[!UICONTROL Code-based experience (Beta)]** åtgärd.
+1. Välj **[!UICONTROL Code-based experience]** åtgärd.
 
 1. Ange den kodbaserade upplevelseytan. [Läs mer](#surface-definition)
 
@@ -81,21 +67,27 @@ Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampa
 
 1. Du kan växla mellan redigeringsläget HTML och JSON, och vice versa.
 
+   ![](assets/code-based-campaign-code-editor.png)
+
    >[!CAUTION]
    >
    >Om du ändrar redigeringsläget förlorar du all aktuell kod, så se till att växla läge innan du börjar redigera.
 
 1. Ange koden efter behov. Du kan använda [!DNL Journey Optimizer] Uttrycksredigeraren med alla dess funktioner för personalisering och redigering. [Läs mer](../personalization/personalization-build-expressions.md)
 
-   ![](assets/code-based-campaign-code-editor.png)
+1. Du kan lägga till HTML eller JSON-uttrycksfragment om det behövs. [Lär dig mer](../personalization/use-expression-fragments.md)
 
-1. I kodbaserade kampanjer kan ni använda funktionen för upplevelsebeslut. Välj **[!UICONTROL Decisions]** ikonen från det vänstra fältet och klicka på **[!UICONTROL Create decision]**. [Läs mer](../experience-decisioning/create-decision.md)
+   Du kan också spara en del av kodinnehållet som fragment. [Lär dig mer](../content-management/fragments.md#save-as-expression-fragment)
 
-   ![](assets/code-based-campaign-create-decision.png)
+<!--
+1. In code-based campaigns, you can use the experience decisioning feature. Select the **[!UICONTROL Decisions]** icon from the left bar and click **[!UICONTROL Create decision]**. [Learn more](../experience-decisioning/create-decision.md)
 
-   >[!NOTE]
-   >
-   >Funktionen för upplevelsebeslut är för närvarande endast tillgänglig som betaversion för utvalda användare.
+    ![](assets/code-based-campaign-create-decision.png)
+
+    >[!NOTE]
+    >
+    >The experience decisioning feature is currently available as a beta to select users only.
+-->
 
 1. Klicka **[!UICONTROL Save and close]** för att bekräfta dina ändringar.
 

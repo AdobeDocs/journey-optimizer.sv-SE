@@ -9,27 +9,27 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate
 keywords: kampanj, acc, integration
 exl-id: 109ba212-f04b-425f-9447-708c8e0b3f51
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
 
-# Integrera med Adobe Campaign v7/v8 {#integrating-with-adobe-campaign-classic}
+# Integrera med Adobe Campaign v7/v8 {#integrating-with-adobe-campaign-v7-v8}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_acc"
 >title="Adobe Campaign v7/v8-åtgärder"
->abstract="Den här integreringen är tillgänglig för Adobe Campaign Classic v7 och v8. Det gör att du kan skicka e-post, push-meddelanden och SMS med Adobe Campaign Transactional Messaging-funktioner. Anslutningen mellan Journey Optimizer- och Campaign-instanserna konfigureras av Adobe vid etableringstidpunkten."
+>abstract="Den här integreringen är tillgänglig för Adobe Campaign v7 och v8. Det gör att du kan skicka e-post, push-meddelanden och SMS med Adobe Campaign Transactional Messaging-funktioner. Anslutningen mellan Journey Optimizer- och Campaign-instanserna konfigureras av Adobe vid etableringstidpunkten."
 
-Den här integreringen är tillgänglig för Adobe Campaign Classic v7 från och med version 7.1 och Adobe Campaign v8. Det gör att du kan skicka e-post, push-meddelanden och SMS med Adobe Campaign Transactional Messaging-funktioner.
+Den här integreringen är tillgänglig för Adobe Campaign v7/v8 från och med version 7.1 och Adobe Campaign v8. Det gör att du kan skicka e-post, push-meddelanden och SMS med Adobe Campaign Transactional Messaging-funktioner.
 
 Anslutningen mellan Journey Optimizer- och Campaign-instanserna konfigureras av Adobe vid etableringstidpunkten.
 
 Ett heltäckande exempel på användning presenteras i detta [section](../building-journeys/ajo-ac.md).
 
-För varje konfigurerad åtgärd finns en åtgärdsaktivitet tillgänglig på paletten Resursdesigner. Se detta [section](../building-journeys/using-adobe-campaign-classic.md).
+För varje konfigurerad åtgärd finns en åtgärdsaktivitet tillgänglig på paletten Resursdesigner. Se detta [section](../building-journeys/using-adobe-campaign-v7-v8.md).
 
 ## Viktiga anteckningar {#important-notes}
 

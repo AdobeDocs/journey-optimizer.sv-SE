@@ -5,29 +5,15 @@ feature: Code-based Experiences
 topic: Content Management
 role: Admin
 level: Experienced
-hide: true
-hidefromtoc: true
-badge: label="Beta"
 exl-id: ac901f88-5fde-4220-88c6-fe05433866cc
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 3%
+source-wordcount: '424'
+ht-degree: 1%
 
 ---
 
 # Förutsättningar och skyddsräcken {#web-prerequisites}
-
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här handboken:
-
-* [Kom igång med kodbaserad kanal](get-started-code-based.md)
-* **[Kodbaserade förutsättningar](code-based-prerequisites.md)**
-* [Kodbaserade implementeringsexempel](code-based-implementation-samples.md)
-* [Skapa kodbaserade upplevelser](create-code-based.md)
-
->[!ENDSHADEBOX]
 
 Att kunna använda kodbaserade upplevelseåtgärder i [!DNL Journey Optimizer] och leverera kodinnehållsavgifter som kan användas av dina program, följ kraven nedan:
 
@@ -37,9 +23,11 @@ Att kunna använda kodbaserade upplevelseåtgärder i [!DNL Journey Optimizer] o
 
 ## Observera varningar {#caution-notes-web}
 
-* Den kodbaserade upplevelsekanalen är för närvarande endast tillgänglig som betaversion för utvalda användare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
-
 * Ingår [!DNL Journey Optimizer] kan ni bara skapa kodbaserade upplevelser i **kampanjer**. [Läs mer](../campaigns/create-campaign.md#configure)
+
+>[!AVAILABILITY]
+>
+>För närvarande är den kodbaserade upplevelsekanalen inte tillgänglig för organisationer som har köpt Adobe **Hälsovårdssköld** och **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
 
 ## Krav för implementering {#implementation-prerequisites}
 

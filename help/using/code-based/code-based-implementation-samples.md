@@ -5,37 +5,25 @@ feature: Code-based Experiences
 topic: Content Management
 role: Developer
 level: Experienced
-hide: true
-hidefromtoc: true
-badge: label="Beta"
 exl-id: e5ae8b4e-7cd2-4a1d-b2c0-8dafd5c4cdfd
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '753'
 ht-degree: 2%
 
 ---
 
 # Exempel på kodbaserade implementeringsmetoder {#implementation-samples}
 
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här handboken:
-
-* [Kom igång med kodbaserad kanal](get-started-code-based.md)
-* [Kodbaserade förutsättningar](code-based-prerequisites.md)
-* **[Kodbaserade implementeringsexempel](code-based-implementation-samples.md)**
-* [Skapa kodbaserade upplevelser](create-code-based.md)
-
->[!ENDSHADEBOX]
-
 Kodbaserad upplevelse stöder alla typer av kundimplementeringar. På den här sidan hittar du exempel för varje implementeringsmetod:
 
-* [Klientsida](#client-side-implementation)
+* [Klientsidan](#client-side-implementation)
 * [Serversidan](#server-side-implementation)
 * [Hybrid](#hybrid-implementation)
 
-Du kan också följa [den här länken](https://github.com/adobe/alloy-samples/tree/main/ajo){target="_blank"} för att hitta exempelimplementeringar för olika användningsfall för personalisering och experiment. Kolla in dem och kör dem för att få en bättre förståelse för vilka implementeringssteg som behövs och hur hela personaliseringsflödet fungerar.
+>[!IMPORTANT]
+>
+>Följ [den här länken](https://github.com/adobe/alloy-samples/tree/main/ajo){target="_blank"} för att hitta exempelimplementeringar för olika användningsfall för personalisering och experiment. Kolla in dem och kör dem för att få en bättre förståelse för vilka implementeringssteg som behövs och hur hela personaliseringsflödet fungerar.
 
 ## Implementering på klientsidan {#client-side-implementation}
 
@@ -77,6 +65,38 @@ function sendDisplayEvent(decision) {
               scopeDetails: scopeDetails,
             },
           ],
+        },
+      },
+    },
+  });
+}
+```
+
+1. För kodbaserade upplevelsekampanjer måste interaktionshändelser skickas manuellt för att ange när en användare har interagerat med innehållet. Detta görs via `sendEvent` -kommando.
+
+```javascript
+function sendInteractEvent(label, proposition) {
+  const { id, scope, scopeDetails = {} } = proposition;
+
+  alloy("sendEvent", {
+    
+    xdm: {
+      eventType: "decisioning.propositionInteract",
+      _experience: {
+        decisioning: {
+          propositions: [
+            {
+              id: id,
+              scope: scope,
+              scopeDetails: scopeDetails,
+            },
+          ],
+          propositionEventType: {
+            interact: 1
+          },
+          propositionAction: {
+            label: label
+          },
         },
       },
     },

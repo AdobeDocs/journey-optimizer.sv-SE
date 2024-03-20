@@ -8,9 +8,9 @@ topic: Administration
 role: User
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Varningar om anpassade åtgärder löses när, under de senaste fem minuterna:
 
 I/O-händelsens prenumerationsnamn som motsvarar aviseringen om anpassade åtgärder är **Fel i anpassad åtgärd för resa**.
 
-## Utlösaren för lässegment misslyckades {#alert-read-audiences}
+## Det gick inte att läsa målutlösaren {#alert-read-audiences}
 
 Den här varningen varnar dig om en **Läs målgrupp** aktiviteten har inte bearbetat någon profil 10 minuter efter schemalagd körningstid. Felet kan bero på tekniska problem eller på att målgruppen är tom.
 
@@ -68,3 +68,24 @@ Varningar på **Läs målgrupp** Denna verksamhet gäller endast återkommande r
 Varningar på **Läs målgrupp** löses när en profil anges i **Läs målgrupp** nod.
 
 I/O-händelsens prenumerationsnamn som motsvarar **Utlösaren för lässegment misslyckades** varning **Lässegmentsfördröjningar, fel och fel på resan**.
+
+## Felsökning {#alert-troubleshooting}
+
+Så här felsöker du **Läs målgrupp** -varningar, kontrollera antalet besökare i Experience Platform-gränssnittet.
+
+![](assets/alert-troubleshooting-0.png)
+
+![](assets/alert-troubleshooting-1.png)
+
+Så här felsöker du **Anpassad åtgärd** varningar:
+
+* Kontrollera din anpassade åtgärd med testläge på en annan resa:
+
+  ![](assets/alert-troubleshooting-2.png)
+
+* Se felen i reserapporten.
+
+  ![](assets/alert-troubleshooting-3.png)
+
+* Kontrollera kundens resaHändelser för att hitta mer information om &quot;errorReason&quot;.
+* Kontrollera din konfiguration för anpassad åtgärd och verifiera att autentiseringen fortfarande är OK. Gör till exempel en manuell kontroll med Postman.

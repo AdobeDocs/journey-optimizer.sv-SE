@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '1762'
-ht-degree: 5%
+source-wordcount: '1936'
+ht-degree: 4%
 
 ---
 
@@ -79,17 +79,30 @@ I listan över resor kan du använda olika filter för att förfina listan över
 
 Här är de olika filtreringsåtgärderna som du kan utföra:
 
-* Filtrera resor efter status, typ, version och tilldelade taggar från **[!UICONTROL Status and version filters]**.
+Filtrera resor efter status, typ, version och tilldelade taggar från **[!UICONTROL Status and version filters]**.
 
-  Typen kan vara: **[!UICONTROL Unitary event]**, **[!UICONTROL Audience qualification]**, **[!UICONTROL Read audience]**, **[!UICONTROL Business event]** eller **[!UICONTROL Burst]**.
+Typen kan vara: **[!UICONTROL Unitary event]**, **[!UICONTROL Audience qualification]**, **[!UICONTROL Read audience]**, **[!UICONTROL Business event]** eller **[!UICONTROL Burst]**.
 
-* Använd **[!UICONTROL Creation filters]** för att filtrera resorna efter när de skapades eller efter den användare som skapade dem.
+Status kan vara:
 
-* Visa resor som använder en specifik händelse, fältgrupp eller åtgärd från **[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**.
+* **Stängd**: resan har avslutats med **Nära nya ingångar** -knappen. Resan slutar med att nya individer kan komma in på resan. Personer som redan är på resan kan slutföra resan normalt.
+* **Utkast**: resan befinner sig i sitt första skede. Den har inte publicerats än.
+* **Utkast (test)**: testläget har aktiverats med **Testläge** -knappen.
+* **Slutförd**: resan ändras automatiskt till denna status efter den globala standardtidsgränsen på 30 dagar. Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan.
+* **Live**: resan har publicerats med **Publicera** -knappen.
+* **Stoppad**: resan har stängts av med **Stoppa** -knappen. Alla individer lämnar resan direkt.
 
-* Använd **[!UICONTROL Publication filters]** för att välja ett publiceringsdatum eller en användare. Du kan till exempel välja att visa de senaste versionerna av direktresor som publicerades igår.
+>[!NOTE]
+>
+>Reseutvecklingscykeln innehåller också en uppsättning mellanliggande statusvärden som inte är tillgängliga för filtrering: &quot;Publicera&quot; (mellan &quot;Utkast&quot; och &quot;Live&quot;), &quot;Aktivera testläge&quot; eller &quot;Inaktivera testläge&quot; (mellan &quot;Utkast&quot; och &quot;Utkast (test)&quot;) och &quot;Stoppar&quot; mellan &quot;Live&quot; och &quot;Stoppad&quot;). När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad.
 
-  Om du vill filtrera resor baserat på ett visst datumintervall väljer du **[!UICONTROL Custom]** från **[!UICONTROL Published]** listruta.
+Använd **[!UICONTROL Creation filters]** för att filtrera resorna efter när de skapades eller efter den användare som skapade dem.
+
+Visa resor som använder en specifik händelse, fältgrupp eller åtgärd från **[!UICONTROL Activity filters]** och **[!UICONTROL Data filters]**.
+
+Använd **[!UICONTROL Publication filters]** för att välja ett publiceringsdatum eller en användare. Du kan till exempel välja att visa de senaste versionerna av direktresor som publicerades igår.
+
+Om du vill filtrera resor baserat på ett visst datumintervall väljer du **[!UICONTROL Custom]** från **[!UICONTROL Published]** listruta.
 
 I konfigurationspanelerna Händelse, Datakälla och Åtgärd visas dessutom **[!UICONTROL Used in]** fältet visar antalet resor som använder den aktuella händelsen, fältgruppen eller åtgärden. Du kan klicka på knappen **[!UICONTROL View journeys]** för att visa en lista över motsvarande resor.
 

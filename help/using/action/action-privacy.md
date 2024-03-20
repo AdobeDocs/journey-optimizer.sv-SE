@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: data, styrning, DULE, etiketter, märkning, plattform, policy
 exl-id: be3efd3b-35d5-4cf7-9015-29d1e305355d
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '877'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Mer information om ramverket för datastyrning och hur du arbetar med etiketter 
 
 ## Viktiga anteckningar {#important-notes}
 
-* Datastyrning gäller endast för anpassade kundresor. Campaign Classic- och Campaign Standard-åtgärder stöds inte.
+* Datastyrning gäller endast för anpassade kundresor. Kampanjåtgärder v7/v8 och Campaign Standard stöds inte.
 * Styrningspolicyer gäller endast när en marknadsföringsåtgärd (obligatorisk eller ytterligare) har ställts in på den anpassade åtgärdsnivån.
 
 ## Definiera styrningspolicyer {#governance-policies}

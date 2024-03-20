@@ -7,10 +7,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: lastIndexOf, funktion, uttryck, resa
 exl-id: f11f164b-51b5-4b01-8057-ff29d80d2e2c
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 12%
+source-wordcount: '67'
+ht-degree: 5%
 
 ---
 
@@ -41,7 +41,7 @@ Returnerar ett heltal.
 
 ## Exempel
 
-`lastIndexOf("Hello, "l")`
+`lastIndexOf("Hello", "l")`
 
 Returnerar 3.
 

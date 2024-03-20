@@ -8,54 +8,83 @@ role: User
 level: Intermediate
 keywords: återinträde, resa, profil, återkommande
 exl-id: 8874377c-6594-4a5a-9197-ba5b28258c02
-source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '646'
 ht-degree: 1%
 
 ---
 
 
-# Profilhantering {#entry-management}
+# Profilingångshantering {#entry-management}
 
-Det finns två huvudtyper av resor:
+Det finns fyra typer av resor:
 
-* Händelsebaserade resor: från och med en händelse är dessa resor enhetliga, de är kopplade till en person. När evenemanget tas emot går personen in på resan. [Läs mer](#entry-unitary)
-* läs målgruppsresor: från och med en läsare är detta batchresor. Enskilda personer som tillhör målgruppen deltar alla i samma resa. Resorna kan vara återkommande eller engångsvisa. [Läs mer](#entry-read-segment)
+* **Unitary-händelse** Resor: dessa resor börjar med en Unitary-händelse. När händelsen tas emot kommer den associerade profilen in i resan. [Läs mer](#entry-unitary)
 
-I båda resetyperna kan en profil inte finnas flera gånger på samma resa samtidigt.
+* **Affärshändelse** resor: dessa resor börjar med ett Business-event omedelbart följt av en läsare. När evenemanget tas emot går profiler som tillhör målgruppen in på resan. En instans av den här resan skapas för varje profil. [Läs mer](#entry-business)
 
-## Enhetsresor{#entry-unitary}
+* **Läsa målgrupper** resor: dessa resor börjar med en läsare. När resan är genomförd kommer profiler som tillhör målgruppen in på resan. En instans av den här resan skapas för varje profil. Resorna kan vara återkommande eller engångsvisa. [Läs mer](#entry-read-audience)
 
-På enastående resor kan du aktivera eller inaktivera återinträde:
+* **Målgruppskvalifikation** Resor: dessa resor börjar med en publikkvalificeringshändelse. Dessa resor lyssnar på ingångar och utgångar för profiler i målgrupper. När detta händer kommer den associerade profilen in på resan. [Läs mer](#entry-unitary)
 
-* Om återinträde är aktiverat kan en profil gå in på en resa flera gånger, men kan inte göra det förrän den tidigare instansen av resan har avslutats helt.
+I alla typer av resor kan en profil inte finnas flera gånger i samma resa samtidigt. Om du vill kontrollera att en person befinner sig på en resa används profilidentiteten som en nyckel. Systemet tillåter inte att samma nyckel, till exempel nyckeln CRMID=3224, finns på olika platser under samma resa.
 
-* Om återinträde är inaktiverat kan en profil inte ange flera gånger samma resa.
+## Unitär event- och målgruppskompetens{#entry-unitary}
 
-Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet för engångsresor, till exempel om du vill erbjuda en engångspresentation när en person besöker en butik. I så fall får kunden inte kunna återuppta resan och få erbjudandet igen. När en resa avslutas är dess status **[!UICONTROL Closed]**. Nya individer kan inte längre komma in på resan. Personer som redan är på resan slutför resan normalt. [Läs mer](journey-gs.md#entrance)
+Vid Unitary Events- och Audience-kvalificeringsresor kan du aktivera eller inaktivera återinträde:
 
-När **Tillåt återinträde** är aktiverat, **Vänteperiod för återinträde** I kan du definiera väntetiden innan du tillåter att en profil går in på resan igen. Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 29 dagar.
+* Om återinträde är aktiverat kan en profil gå in på en resa flera gånger, men kan inte göra det förrän han har avslutat hela den tidigare instansen av resan.
+
+* Om återinträde är inaktiverat kan en profil inte ange flera gånger samma resa inom den globala resetidsgränsen. Se det här [section](../building-journeys/journey-gs.md#global_timeout).
+
+Som standard tillåter resor återinträde. När **Tillåt återinträde** är aktiverat, **Vänteperiod för återinträde** -fältet visas. Det gör att du kan definiera väntetiden innan du tillåter att en profil går in på resan igen. Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 29 dagar.
+
+<!--
+When a journey ends, its status is **[!UICONTROL Closed]**. New individuals can no longer enter the journey. Persons already in the journey automatically exit the journey. [Learn more](journey-gs.md#entrance)
+-->
 
 ![](assets/journey-re-entrance.png)
 
-Efter standardinställningen [global timeout](journey-gs.md#global_timeout) om 30 dagar ändras resan till **Slutförd** status. Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan. Detta beteende är inställt för endast 30 dagar (d.v.s. standardvärdet för timeout för resa) eftersom all information om profiler som har gått in i resan tas bort 30 dagar efter att de har gått in. Efter den perioden kan profiler återinträda i resan. För att undvika detta och helt inaktivera återinträde för dessa profiler kan du lägga till ett villkor som testar om profilen redan har angetts eller inte, med hjälp av profil- eller målgruppsdata.
+Efter återinträdesperioden kan profilerna återinträda i resan. För att undvika detta och helt inaktivera återinträde för dessa profiler kan du lägga till ett villkor som testar om profilen redan har angetts eller inte, med hjälp av profil- eller målgruppsdata.
 
 <!--
 Due to the 30-day journey timeout, when journey re-entrance is not allowed, we cannot make sure the re-entrance blocking will work more than 30 days. Indeed, as we remove all information about persons who entered the journey 30 days after they enter, we cannot know the person entered previously, more than 30 days ago. -->
 
-Nyckeln används för att kontrollera att en person befinner sig på en resa. En person kan faktiskt inte befinna sig på två olika platser på samma resa. Därför tillåter systemet inte att samma nyckel, till exempel nyckeln CRMID=3224, finns på olika platser under samma resa.
+## Affärsresor{#entry-business}
 
-## Läs målgruppsresor{#entry-read-segment}
+<!--
+Business events follow re-entrance rules in the same way as for unitary events. If a journey allows re-entrance, the next business event will be processed.
+-->
 
-I en läsande målgruppsresa:
+Aktivera motsvarande alternativ i dialogrutan **[!UICONTROL Execution]** del av resans egenskaper.
+
+![](assets/business-entry.png)
+
+När det gäller affärshändelser återanvänds målgruppsdata som hämtas vid den första exekveringen under en timmes tid för en viss resa.
+
+En profil kan finnas flera gånger på samma resa, samtidigt, men i samband med olika affärshändelser.
+
+Mer information finns i [section](../event/about-creating-business.md)
+
+## Läs målgruppsresor{#entry-read-audience}
+
+Målgruppsresor kan vara återkommande eller enstaka bilder:
 
 * För icke återkommande resor: profilen anger en gång och endast en gång under resan.
 
-* För återkommande resor: som standard kommer alla profiler som tillhör målgruppen in på resan vid varje upprepning. De måste slutföra resan innan de kan komma in igen vid ett annat tillfälle.
+* För återkommande resor: Som standard anges resan för varje återkommande resa i alla profiler som tillhör målgruppen. De måste slutföra resan innan de kan komma in igen vid ett annat tillfälle.
 
->[!NOTE]
->
->Det finns två alternativ för återkommande läsningar. The **Tvinga återinträde vid upprepning** gör att alla profiler som fortfarande finns kvar i resan automatiskt avslutar den vid nästa körning. The **Inkrementell läsning** Alternativet riktar sig endast till de personer som gått in i målgruppen sedan den senaste resan utfördes. Se detta [section](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
+Det finns två alternativ för återkommande målgruppsresor:
 
-Vid affärsevenemangsresor som börjar med **Läsa målgrupper** aktivitet: i vetskapen om att resan baseras på mottagningen av ett affärsevenemang, och om profilen är kvalificerad för den förväntade målgruppen, kommer de att gå in på resan för varje mottaget affärsevenemang, vilket innebär att profilen kan vara flera gånger under samma resa samtidigt, men i samband med olika affärsevenemang.
+* **Inkrementell läsning** alternativ: när en resa med återkommande **Läsa målgrupper** körs för första gången så att alla profiler i målgruppen kommer in på resan. Med det här alternativet kan du efter första tillfället bara rikta in dig på de personer som har gått in i målgruppen sedan den senaste körningen av resan.
+
+* **Tvinga återinträde vid upprepning**: Med det här alternativet kan du göra så att alla profiler som fortfarande finns kvar i resan automatiskt avslutar den vid nästa körning. Om livscykeln för dina profiler under den här resan kan vara längre än frekvensen för återkommande (till exempel om du använder vänteaktiviteter) ska du inte aktivera det här alternativet för att se till att profilerna kan slutföra sin resa.
+
+![](assets/read-audience-options.png)
+
+Mer information finns i [section](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
+
+<!--
+After 30 days, a Read audience journey switches to the **Finished** status. This behavior is set for 30 days only (i.e. journey timeout default value) as all information about profiles who entered the journey is removed 30 days after they entered. Persons still in the journey automatically are impacted. They exit the journey after the 30 day timeout. 
+-->

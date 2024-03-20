@@ -5,33 +5,19 @@ feature: Code-based Experiences
 topic: Content Management
 role: User, Developer, Admin
 level: Experienced
-hide: true
-hidefromtoc: true
-badge: label="Beta"
 exl-id: 987de2bf-cebe-4753-98b4-01eb3fded492
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1205'
 ht-degree: 1%
 
 ---
 
 # Kom igång med kodbaserad kanal {#get-sarted-code-based}
 
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här handboken:
-
-* **[Kom igång med kodbaserad kanal](get-started-code-based.md)**
-* [Kodbaserade förutsättningar](code-based-prerequisites.md)
-* [Kodbaserade implementeringsexempel](code-based-implementation-samples.md)
-* [Skapa kodbaserade upplevelser](create-code-based.md)
-
->[!ENDSHADEBOX]
-
 >[!AVAILABILITY]
 >
->Den kodbaserade upplevelsekanalen är för närvarande endast tillgänglig som betaversion för utvalda användare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
+>För närvarande är den kodbaserade upplevelsekanalen inte tillgänglig för organisationer som har köpt Adobe **Hälsovårdssköld** och **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
 
 [!DNL Journey Optimizer] kan ni personalisera och testa de upplevelser ni vill leverera till kunderna via alla kontaktytor, som webbappar, mobilappar, datorprogram, videokonsoler, tv-anslutna enheter, smarta TV-apparater, kioskdatorer, ATM-enheter, röstassistenter, IoT-enheter osv.
 
@@ -39,11 +25,15 @@ Med **kodbaserad upplevelse** kan ni definiera inkommande upplevelser med en enk
 
 <!--[!DNL Journey Optimizer] allows you to compose and deliver content on any inbound surface in a developer-focused workflow. You can leverage all the personalization capabilities, and preview what will be published. The content can be static (images, text, JSON, HTML) or dynamic (offers, decisions, recommendations). You can also insert custom content actions in your omni-channel journeys.-->
 
-När du [skapa en kampanj](../campaigns/create-campaign.md#configure), markera **Kodbaserad upplevelse (beta)** som din åtgärd och definiera grundläggande inställningar.
+>[!CAUTION]
+>
+>Ingår [!DNL Journey Optimizer] kan ni bara skapa kodbaserade upplevelser med **kampanjer**.
+
+När du [skapa en kampanj](../campaigns/create-campaign.md#configure), markera **Kodbaserad upplevelse** som din åtgärd och definiera grundläggande inställningar.
 
 >[!NOTE]
 >
->Om det här är första gången du skapar en webbupplevelse måste du följa de krav som beskrivs i [det här avsnittet](code-based-prerequisites.md).
+>Om detta är första gången du skapar en kodbaserad upplevelse måste du följa de krav som beskrivs i [det här avsnittet](code-based-prerequisites.md).
 
 <!--Discover the detailed steps to create a code-based campaign in this video.-->
 
@@ -52,7 +42,7 @@ När du [skapa en kampanj](../campaigns/create-campaign.md#configure), markera *
 <a href="#how-it-works">
 <img alt="Lead" src="../assets/do-not-localize/privacy-audit.jpeg">
 </a>
-<div><a href="#how-it-works"><strong>Så fungerar det</strong>
+<div><a href="#how-it-works"><strong>Så här fungerar det</strong>
 </div>
 <p>
 </td>
@@ -74,17 +64,15 @@ När du [skapa en kampanj](../campaigns/create-campaign.md#configure), markera *
 </div>
 <p></td>
 <td>
-<a href="create-code-based.md#edit-code">
+<a href="code-based-implementation-samples.md">
 <img alt="Validering" src="../assets/do-not-localize/web-design.jpg">
 </a>
 <div>
-<a href="create-code-based.md#edit-code"><strong>Redigera koden</strong></a>
+<a href="code-based-implementation-samples.md"><strong>Implementeringsexempel</strong></a>
 </div>
 <p>
 </td>
 </tr></table>
-
-
 
 <!--[Learn how to create a code-based campaign in this video](#video)-->
 
@@ -156,25 +144,42 @@ Med andra ord kan en yta ses som en behållare på alla nivåer i hierarkin med 
 * Det kan också vara en jokeryta som matchar en mängd olika klientytdefinitioner (en hjältebildsplats på varje sida på webbplatsen kan till exempel översättas i en yt-URI som web://mydomain.com/*#hero_image).
 
 En yt-URI består i princip av flera avsnitt:
-1. **Typ**: webb, mobilapp, tjänst, kioskdator, tvcd osv.
-1. **Egenskap**: domän- eller programpaket
-1. **Bana**: sidaktivitet/appaktivitet ± plats på sidan/appaktiviteten <!--to clarify-->
+1. **Typ**: webb, ios, android, atm, kiosk, tvcd, service osv.
+1. **Egenskap**: sidadress eller apppaket
+1. **Behållare**: plats i sid-/appaktiviteten
 
-Tabellen nedan visar några exempel på URI-definitioner för olika enheter.
+Tabellerna nedan visar några exempel på URI-definitioner för olika enheter.
+
+**Webb och mobiler**
 
 | Typ | URI | Beskrivning |
-| --------- | ----------- | ------- |   
+| --------- | ----------- | ------- | 
 | Webb | web://domain.com/path/page.html | Representerar en enskild sökväg och sida på en webbplats. |
 | Webb | web://domain.com/path/page.html#element | Representerar ett enskilt element på en viss sida i en viss domän. |
 | Webb | web://domain.com/*#element | Jokertecknets yta - representerar ett enskilt element på varje sida under en specifik domän. |
-| Skrivbord | desktop://com.vendor.bundle | Representerar ett specifikt skrivbordsprogram. |
-| Skrivbord | desktop://com.vendor.bundle#element | Representerar ett specifikt element i ett program, t.ex. en knapp, en meny, en hjältebanderoll. |
 | iOS | mobileapp://com.vendor.bundle | Representerar ett specifikt mobilprogram för en enda plattform - i det här fallet iOS-app. |
 | iOS | mobileapp://com.vendor.bundle/activity | Representerar en viss aktivitet (vy) i ett mobilprogram. |
 | iOS | mobileapp://com.vendor.bundle/activity#element | Representerar ett specifikt element i en aktivitet, till exempel en knapp eller ett annat vyelement. |
 | Android-app | mobileapp://com.vendor.bundle | Representerar ett specifikt mobilprogram för en enda plattform - i det här fallet Android-app. |
+
+**Andra enhetstyper**
+
+| Typ | URI | Beskrivning |
+| --------- | ----------- | ------- | 
+| Skrivbord | desktop://com.vendor.bundle | Representerar ett specifikt skrivbordsprogram. |
+| Skrivbord | desktop://com.vendor.bundle#element | Representerar ett specifikt element i ett program, t.ex. en knapp, en meny, en hjältebanderoll. |
 | tvOS-app | tvos://com.vendor.bundle | Representerar en specifik tvOS-app. |
 | TV-app | tvcd://com.vendor.bundle | Representerar en specifik app för en smart TV- eller tv-ansluten enhet - paket-ID. |
 | Tjänst | service://servicename | Representerar en process på serversidan eller en annan manuell enhet. |
 | Kiosk | kiosk://location/screen | Exempel på möjliga ytterligare yttyper som enkelt kan läggas till. |
 | ATM | atm://location/screen | Exempel på möjliga ytterligare yttyper som enkelt kan läggas till. |
+
+**Ytor med jokertecken**
+
+| Typ | URI | Beskrivning |
+| --------- | ----------- | ------- | 
+| Webben med jokertecken | jokertecken:web:/domain.com/`*`#element | Jokertecknets yta - representerar ett enskilt element på varje sida under en specifik domän. |
+| Webben med jokertecken | jokertecken:web://`*`domain.com/`*`#element | Jokerteckenyta - representerar ett enskilt element på varje sida under alla domäner som slutar med &quot;domain.com&quot;. |
+
+
+

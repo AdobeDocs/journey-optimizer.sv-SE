@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, i appen
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: 75638e9b463278efab16b2b85ed2707640f088f2
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '1169'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Du kan också ange specifika åtgärder för att skicka meddelanden till dig:
 
 * Om du arbetar med Campaign och Journey Optimizer, se följande avsnitt:
 
-   * [[!DNL Journey Optimizer] och Campaign Classic v7/Campaign v8](../action/acc-action.md)
+   * [[!DNL Journey Optimizer] och Campaign v7/v8](../action/acc-action.md)
    * [[!DNL Journey Optimizer] och Campaign Standard](../action/acs-action.md)
 
 Följ stegen nedan om du vill lägga till ett meddelande under en resa:

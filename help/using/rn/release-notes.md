@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 2dfcbd1631c7fefccaf02782a3218c9a1c1dc7aa
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1392'
 ht-degree: 7%
 
 ---
@@ -25,6 +25,56 @@ ht-degree: 7%
 [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver av sina senaste innovationer och förbättringar. Läs mer om de här ändringarna i [Versionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ![Nyhetsbrev](../assets/do-not-localize/nl-icon.png) Registrera dig för [Adobe Journey Optimizer kvartalsvis nyhetsbrev](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} idag och få de senaste produktuppdateringarna, spännande historier, användningsexempel, tips och mycket annat levererat direkt till din inkorg varje kvartal.
+
+## Versionsinformation mars 2024 {#mar-2024}
+
+**Releasedatum**: 19-20 mars 2024
+
+### Ny funktion {#mar-features}
+
+Den här versionen innehåller de nya funktionerna som beskrivs nedan.
+
+<table>
+<thead>
+<tr>
+<th><strong>Kodbaserade upplevelser</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med den nya kodbaserade upplevelsekanalen kan du med Adobe Journey Optimizer utföra avancerad personalisering och testning för alla dina inkommande egenskaper, vilket möjliggör smidig leverans av skräddarsydda upplevelser över olika kontaktytor som webbappar, mobilappar, datorprogram, videokonsoler, tv-anslutna enheter, smarta tv-apparater, kioskdatorer, ATM-enheter, IoT-enheter med mera.</p>
+<P>Viktiga funktioner:</p>
+<ul><li> Universell personalisering: utöka personaliserade upplevelser över alla kontaktytor för att säkerställa en sammanhängande och skräddarsydd användarresa</li>
+<li>Detaljerad redigeringsprecision: redigera specifikt innehåll på enskilda platser i dina program eller webbsidor</li>
+<li>Mångsidig implementering: stöd för implementeringsmetoder på serversidan, API-baserade eller SDK-baserade, för smidig integrering med utvecklingsmiljön.</li></ul></p>
+<p>Mer information finns i den <a href="../code-based/get-started-code-based.md">detaljerade dokumentationen</a>.</p>
+<img src="assets/do-not-localize/code-based.gif">
+</tr>
+</tbody>
+</table>
+
+### Förbättringar {#mar-improvements}
+
+Den här versionen innehåller de förbättringar som anges nedan.
+
+**Innehållsmallar**
+
+* **Miniatyrbilder** - A **Stödrastervisning** läge är nu tillgängligt för innehållsmallar och visar miniatyrbilder för förbättrad visuell åtkomst. För närvarande stöds endast e-postmallar för HTML. [Läs mer](../content-management/content-templates.md#template-thumbnails)
+
+  >[!AVAILABILITY]
+  >
+  >Den här funktionen lanseras i begränsad tillgänglighet (LA) för en liten grupp kunder.
+
+**Resor**
+
+Nya mellanliggande statusvärden har lagts till i reseutvecklingscykeln:
+
+* **Publicering** status mellan **Utkast** status och **Live** status
+* **Stoppar** status mellan **Live** status och **Stoppad** status
+* **Aktiverar testläge** eller **Inaktiverar testläge** statusvärden mellan **Utkast** status och **Utkast (test)** status
+
+När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad. [Läs mer](../building-journeys/journey-gs.md#filter)
 
 ## Versionsinformation februari 2024 {#feb-2024}
 

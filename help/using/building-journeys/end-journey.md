@@ -8,10 +8,10 @@ role: User
 level: Intermediate
 keywords: återinträde, resa, slut, live, stopp
 exl-id: ea1ecbb0-12b5-44e8-8e11-6d3b8bff06aa
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 3%
+source-wordcount: '640'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ En resa kan ta slut för en individ i två specifika sammanhang:
 * Personen kommer till den sista aktiviteten i en bana.
 * Personen kommer till en **Villkor** aktivitet (eller **Vänta** aktivitet med ett villkor) och matchar inte något av villkoren.
 
-Personen kan sedan återinträda i resan om återinträde tillåts. Läs [den här sidan](../building-journeys/journey-gs.md#change-properties)
+Personen kan sedan återinträda i resan om återinträde tillåts. Se [den här sidan](../building-journeys/journey-gs.md#change-properties)
 
 Om du vill avsluta en direktresa rekommenderar vi att du stänger den. Nya kunders ankomst till resan kommer då att blockeras. Kunder som redan är med på resan kan uppleva det hela tiden. Se [det här avsnittet](../building-journeys/journey.md#close-journey)
 
@@ -56,7 +56,11 @@ En resa kan avslutas på grund av följande orsaker:
 * En segmentbaserad resa som utförts i ett enda steg.
 * Efter den sista förekomsten av en återkommande målgruppsbaserad resa.
 
-Genom att stänga en resa manuellt försäkrar du dig om att kunder som redan har gått in på resan kan slutföra sin resa, men att nya användare inte kan ta sig in på resan. När en resa stängs (av någon av anledningarna ovan) får den statusen **[!UICONTROL Closed]**. Resan slutar med att nya individer kan komma in på resan. Personer som redan är på resan kan slutföra resan normalt. Efter den globala standardtidsgränsen på 30 dagar växlar resan till **Slutförd** status. Se det här [section](../building-journeys/journey-gs.md#global_timeout).
+Genom att stänga en resa manuellt försäkrar du dig om att kunder som redan har gått in på resan kan slutföra sin resa, men att nya användare inte kan ta sig in på resan. När en resa stängs (av någon av anledningarna ovan) får den statusen **[!UICONTROL Closed]**. Resan slutar med att nya individer kan komma in på resan. Personer som redan är på resan kan slutföra resan normalt.
+
+Efter 30 dagar har en läsande målgruppsresa gått över till **Slutförd** status. Detta beteende är inställt för endast 30 dagar (d.v.s. standardvärdet för timeout för resa) eftersom all information om profiler som har gått in i resan tas bort 30 dagar efter att de har gått in. Personer som fortfarande befinner sig på resan påverkas automatiskt. De avslutar resan efter 30-dagarstimeout.
+
+Se det här [section](../building-journeys/journey-gs.md#global_timeout).
 
 En stängd reseversion kan inte startas om eller tas bort. Du kan skapa en ny version av den eller duplicera den. Endast slutförda resor kan tas bort.
 

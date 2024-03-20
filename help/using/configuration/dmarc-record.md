@@ -8,9 +8,10 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: underdomän, domän, e-post, marc, post
-source-git-commit: 745474d6232f01ee959db8d706110477ed0220e2
+exl-id: f9e217f8-5aa8-4d3a-96fc-65defcb5d340
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '1332'
+source-wordcount: '1336'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ ht-degree: 0%
 
 ## Vad är DMARC? {#what-is-dmarc}
 
-Domänbaserad Message Authentication, Reporting och Conformance (DMARC) är en autentiseringsmetod som gör att domänägare kan skydda sin domän från obehörig användning. Genom att erbjuda en tydlig profil till e-postleverantörer/Internet-leverantörer hjälper den till att förhindra att oseriösa aktörer skickar e-postmeddelanden som påstår sig vara från din domän. Implementering av DMARC minskar risken för att legitima e-postmeddelanden markeras som skräppost eller avvisas, och förbättrar e-postleveransen.
+Domänbaserad Message Authentication, Reporting och Conformance (DMARC) är en autentiseringsmetod som gör att domänägare kan skydda sin domän från obehörig användning. Genom att erbjuda en tydlig policy till e-postleverantörer och internetleverantörer hjälper den till att förhindra att skadliga aktörer skickar e-postmeddelanden som hävdar att de kommer från din domän. Implementering av DMARC minskar risken för att legitima e-postmeddelanden markeras som skräppost eller avvisas, och förbättrar e-postleveransen.
 
 DMARC erbjuder också rapporter om meddelanden som inte kan autentiseras, tillsammans med kontroll över hanteringen av e-postmeddelanden som inte godkänns vid DMARC-validering. Beroende på implementerat [DMARC-policy](#dmarc-policies)kan dessa e-postmeddelanden övervakas, ställas i karantän eller avvisas. Dessa funktioner gör att du kan vidta åtgärder för att minska och åtgärda potentiella fel.
 
@@ -194,10 +195,3 @@ The key benefits or DMARC are as folllows:
 * This increased visibility allows for steps to be taken to mitigate further errors. It gives senders a degree of control over what happens with mail that does not pass either of these authentication methods.
 
 -->
-
-
-
-
-
-
-

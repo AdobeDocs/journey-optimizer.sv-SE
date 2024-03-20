@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 353337c7d85ccc6266d9e395fbc2f40b17fd09b2
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '2258'
+source-wordcount: '2314'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,11 @@ ht-degree: 0%
 
 Om du vill börja skapa ett e-postmeddelande måste du skapa e-postkanalsytor som definierar alla tekniska parametrar som krävs för dina meddelanden. [Lär dig skapa ytor](../configuration/channel-surfaces.md)
 
-Definiera e-postinställningarna i det dedikerade avsnittet i kanalytans konfiguration.
+>[!NOTE]
+>
+>För att bevara ditt rykte och förbättra leveransmöjligheterna ska du konfigurera de underdomäner du ska använda för att skicka e-post innan du skapar en e-postyta. [Läs mer](../configuration/about-subdomain-delegation.md)
+
+Definiera e-postinställningarna i det dedikerade avsnittet av kanalytans konfiguration, enligt nedan.
 
 ![](assets/preset-email-settings.png)
 
@@ -51,27 +55,29 @@ När du skapar ett meddelande måste du välja en giltig kanalyta som matchar de
 
 ## Underdomän- och IP-pooler {#subdomains-and-ip-pools}
 
-I **Underdomän- och IP-pooler** måste du:
+I **Underdomän- och IP-pooler** fyller du i de obligatoriska fälten enligt instruktionerna nedan.
 
-1. Välj den underdomän som ska användas för att skicka e-postmeddelanden. [Läs mer](../configuration/about-subdomain-delegation.md)
+1. Välj den underdomän som ska användas för att skicka e-postmeddelanden.
+
+   Om du vill bevara domänens anseende, snabba upp processen för IP-uppvärmning och förbättra leveransmöjligheterna delegerar du dina sändande underdomäner till Adobe. [Läs mer](../configuration/about-subdomain-delegation.md)
 
 1. Välj den IP-pool som ska associeras med ytan. [Läs mer](../configuration/ip-pools.md)
 
-![](assets/preset-subdomain-ip-pool.png)
+   ![](assets/preset-subdomain-ip-pool.png)
 
-Du kan inte fortsätta skapa en yta medan den valda IP-poolen är under [utgåva](../configuration/ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) och har aldrig kopplats till den valda underdomänen. Annars kommer den äldsta versionen av associationen för IP-poolen/underdomänen fortfarande att användas. I så fall sparar du ytan som utkast och försöker igen när IP-poolen har **[!UICONTROL Success]** status.
+   Du kan inte fortsätta skapa en yta medan den valda IP-poolen är under [utgåva](../configuration/ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) och har aldrig kopplats till den valda underdomänen. Annars kommer den äldsta versionen av associationen för IP-poolen/underdomänen fortfarande att användas. I så fall sparar du ytan som utkast och försöker igen när IP-poolen har **[!UICONTROL Success]** status.
 
->[!NOTE]
->
->I icke-produktionsmiljöer skapar inte Adobe körklara testunderdomäner och ger inte heller åtkomst till en delad sändande IP-pool. Du måste [delegera dina egna underdomäner](../configuration/delegate-subdomain.md) och använd IP-adresserna från poolen som tilldelats din organisation.
+   >[!NOTE]
+   >
+   >I icke-produktionsmiljöer skapar inte Adobe körklara testunderdomäner och ger inte heller åtkomst till en delad sändande IP-pool. Du måste [delegera dina egna underdomäner](../configuration/delegate-subdomain.md) och använd IP-adresserna från poolen som tilldelats din organisation.
 
-När en IP-pool har valts visas PTR-information när du hovrar över IP-adresserna som visas under listrutan IP-pool. [Läs mer om PTR-poster](../configuration/ptr-records.md)
+1. När en IP-pool har valts visas PTR-information när du hovrar över IP-adresserna som visas under listrutan IP-pool. [Läs mer om PTR-poster](../configuration/ptr-records.md)
 
-![](assets/email-surface-ptr-record.png)
+   ![](assets/email-surface-ptr-record.png)
 
->[!NOTE]
->
->Om en PTR-post inte är konfigurerad kan du kontakta Adobe.
+   >[!NOTE]
+   >
+   >Om en PTR-post inte är konfigurerad kan du kontakta Adobe.
 
 ## List-Unsubscribe {#list-unsubscribe}
 

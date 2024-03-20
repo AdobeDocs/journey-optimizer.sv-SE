@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 3f844f65609f271e834ebf42749253fd64446a9a
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '4827'
+source-wordcount: '5042'
 ht-degree: 13%
 
 ---
@@ -21,12 +21,24 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 
 ## Mars 2024 {#march-2024}
 
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Mars 24-utgåvan finns utförlig i dokumentationen. [Läs mer](release-notes.md)
+* Sidan om profilingångshantering har förbättrats. [Läs mer](../building-journeys/entry-management.md)
+* Felsökningsinformation har lagts till på sidan Varningar. [Läs mer](../reports/alerts.md#alert-troubleshooting)
+* Information om aktiviteten Vänta har lagts till på sidan om reserapporter. [Läs mer](../reports/sharing-overview.md)
+* För Resor i testläge har följande genvägar inaktiverats:
+   * T: Kortkommando för att aktivera eller inaktivera testläget.
+   * E: Kortkommando som används för att utlösa en händelse i en händelsebaserad resa.
+   * P: Kortkommando för att utlösa en händelse i en målgruppsbaserad resa där alternativet Enstaka profil i taget är aktiverat.
+   * L: Kortkommando för att visa testloggarna.
 * Regelsidan för meddelandefrekvens har uppdaterats med ett nytt underavsnitt om dagligt frekvenstak, som är tillgängligt på begäran utöver vecko- eller månadsvisa capping. [Läs mer](../configuration/frequency-rules.md#daily-frequency-cap)
 * Sidan Arbeta med policyer för samtycke har förbättrats och uppdaterats med användbara länkar till dokumentationen för Experience Platform. [Läs mer](../action/consent.md)
-  <!--* The Access and manage templates section has been updated to reflect the fact that you can display content templates as a thumbnails with the Grid view mode. [Read more](../content-management/content-templates.md#template-thumbnails)-->
+* Ett nytt avsnitt har lagts till för att återspegla det faktum att du kan visa mallar för e-postinnehåll i HTML som miniatyrer i stödrastervisningsläget (begränsad tillgänglighet). [Läs mer](../content-management/content-templates.md#template-thumbnails)
+* Ett nytt avsnitt har lagts till på sidan Leverans för att förklara vilka feedback-slingor som är och hur de kan användas. [Läs mer](../reports/deliverability.md#feedback-loops)
+* En anteckning har lagts till i avsnittet Skapa anpassade erbjudanden för att ange att storleken på ett erbjudande inklusive alla dess representationer inte får överstiga 300 kB. [Läs mer](../offers/offer-library/creating-personalized-offers.md#create-offer)
 
 ## Februari 2024 {#feb-2024}
 
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version 24 från februari 2008 finns utförlig i dokumentationen. [Läs mer](release-notes.md)
 * Integrationen mellan Journey Optimizer och Workfront har lagts till på integreringssidan. [Läs mer](../start/ajo-integrations.md)
 * Information har lagts till om hur man personaliserar offerternas representationer baserat på kontextdata. [Läs mer](../offers/offer-library/add-representations.md#context-data)
 * Sidan med skyddsförslag har uppdaterats med en anteckning om anpassade åtgärder som endast stöder JSON-format när nyttolasterna för begäran eller svar används. [Läs mer](../start/guardrails.md#custom-actions-g)

@@ -7,9 +7,10 @@ feature: Journeys, Reporting
 topic: Content Management
 role: Data Engineer, Data Architect, Admin
 level: Experienced
-source-git-commit: c82e0a4f44cda4afeb88f7dd8e645e967e4a878f
+exl-id: 29d6b881-35a3-4c62-9e7d-d0aeb206ea77
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '521'
 ht-degree: 2%
 
 ---
@@ -25,6 +26,11 @@ Förutom [realtidsrapporter](live-report.md) och inbyggd [funktioner för global
 Du har till exempel konfigurerat en resa som skickar flera e-postmeddelanden. Med den här funktionen kan du kombinera [!DNL Journey Optimizer] data med händelsedata längre fram i kedjan, som hur många konverteringar som har gjorts, hur mycket engagemang som har gjorts på webbplatsen eller hur många transaktioner som har gjorts i butiken. Reseinformationen kan kombineras med data om Adobe Experience Platform, antingen från andra digitala resurser eller från offlineanläggningar, för att ge en mer heltäckande bild av resultatet.
 
 [!DNL Journey Optimizer] skapar automatiskt nödvändiga scheman och strömmar till datauppsättningar till Adobe Experience Platform för varje steg en individ tar på en resa. En steghändelse motsvarar en person som flyttar från en nod till en annan under en resa. Exempel: i en resa som innehåller en händelse, ett villkor och en åtgärd skickas tre steghändelser till Adobe Experience Platform.
+
+Det finns fall där flera händelser kan skapas för samma nod. Exempel: i fallet med aktiviteten Vänta:
+
+* En händelse genereras när profilen anger väntetiden (attributet travelNodeProcsed är lika med false)
+* En händelse genereras när profilen avslutas (attributet travelNodeProcsed är lika med true)
 
 Listan över XDM-fält som skickas är omfattande. Vissa innehåller systemgenererade koder och andra har användarvänliga namn som kan läsas. Exempel är etiketten för reseaktiviteten eller stegstatusen: hur många gånger en åtgärd orsakade fel eller orsakade timeout.
 
@@ -66,4 +72,3 @@ Det allmänna arbetsflödet är:
 * Använd den här datauppsättningen i [!DNL Customer Journey Analytics]för flerkanalsanalys, se [Customer Journey Analytics dokumentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html){target="_blank"}.
 
 ➡️ [Arbeta med Customer Journey Analytics](cja-ajo.md){target="_blank"}
-

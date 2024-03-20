@@ -7,9 +7,9 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: gräns, funktion, uttryck, resa
 exl-id: 7fa1e393-2912-4392-b759-e54d08d5635a
-source-git-commit: 2f47209ad2a5e5b5d26f01949f5e9ade63c2581f
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '138'
 ht-degree: 4%
 
 ---
@@ -30,7 +30,7 @@ Lista
 
 | Parameter | Typ | Beskrivning |
 |-----------|------------------|------------------|
-| listToProcess | listString, listBoolean, listInteger, listDecimal, listDuration, listDateTime, listDateTimeOnly, listDateOnly eller listObject | Lista att sortera ut. För listObject måste det vara en fältreferens. |
+| listToProcess | listString, listBoolean, listInteger, listDecimal, listDuration, listDateTime, listDateTimeOnly, listDateOnly eller listObject | Lista att tänka på. För listObject måste det vara en fältreferens. |
 | numberOfItems | heltal | Antal objekt som ska returneras från den angivna listan. |
 | firstOrLastItems | boolesk | Den här parametern är valfri (true som standard). true returnerar de första objekten. false returnerar de sista objekten. |
 

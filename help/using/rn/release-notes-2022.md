@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
-source-git-commit: 28a4f04ebcda27213d3bac763fb9bea8ea4a0146
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '3575'
-ht-degree: 9%
+source-wordcount: '3603'
+ht-degree: 8%
 
 ---
 
@@ -303,7 +303,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 ### Förbättringar
 
-**Rapportering**
+**Rapporter**
 
 * Policytabell och diagram för samtycke finns nu tillgängliga i globala rapporter om resor. Med dessa widgetar kan du spåra de uteslutna profilerna från profilerna i dina anpassade åtgärder. [Läs mer](../reports/journey-global-report.md#journey-global)
 
@@ -363,7 +363,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <td>
 <p>Nu kan du köra batchbeslutsjobb från användargränssnittet, så att jag inte behöver någon utvecklare för att köra batchAPI-jobb och jag kan minska tiden som krävs för marknadsföring. Med det här nya gränssnittet kan du skapa jobb och hantera aktuella/tidigare jobb.</p>
 <img src="assets/do-not-localize/batch.gif"/>
-<p>Mer information finns i den <a href="../offers/batch-delivery.md">detaljerade dokumentationen.</p>
+<p>Mer information finns i <a href="../offers/batch-delivery.md">detaljerad dokumentation.</p>
 </td>
 </tr>
 </tbody>
@@ -410,7 +410,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 * **URL-spårningsparametrar** - Du kan nu använda uttrycksredigeraren för att konfigurera parametrar för URL-spårning i dina e-postytor (dvs förinställningar). [Läs mer](../email/email-settings.md#url-tracking)
 
-**Beslutshantering**
+**Beslutsledning**
 
 * **Målgruppsstorlek** - En ny uppskattad målgruppsstorlekskomponent visas nu i användargränssnittet när du skapar en beslutsregel, när du väljer en målgrupp eller en regel för att ange ett erbjudande, eller när du lägger till en målgrupp eller en regel i ett beslutsomfång.
 
@@ -511,7 +511,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 ### Förbättringar
 
-**Beslutshantering**
+**Beslutsledning**
 
 * **Stöd för HTML och JSON-filer** - Nu kan du dra och släppa externa HTML- och JSON-filer från Adobe Experience Cloud resursbibliotek till erbjudanderepresentationsinnehållet. [Läs mer](../offers/offer-library/add-representations.md#html-json)
 
@@ -637,7 +637,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 * **förifyllda landningssidor** - Det är nu möjligt att ge användarna möjlighet att förifylla landningssidans fält med profilinformation. [Läs mer](../landing-pages/create-lp.md#configure-primary-page)
 
-**Beslutshantering**
+**Beslutsledning**
 
 * **Besluts-API på Edge** - Edge Decisioning API kan leverera och återge personaliserade erbjudanden som hanteras i beslutsprocessen. Du kan skapa erbjudanden och andra relaterade objekt med hjälp av användargränssnittet (UI) eller API:erna för beslutshanteringen. [Läs mer](../offers/api-reference/offer-delivery-api/edge-decisioning-api.md)
 
@@ -674,7 +674,7 @@ Som Adobe Campaign Standard-kund kan du nu skicka e-post, push-meddelanden och S
 * För att undvika att det finns onödiga fält i det enhetliga profilschemat är händelseschemat för resan som standard inte längre aktiverat för profiler. Om det behövs kan du aktivera det. [Läs mer](../reports/sharing-overview.md)
 * Nya steghändelser för exportjobb skickas nu av Journey Optimizer till Adobe Experience Platform. Exempel på frågor har lagts till i dokumentationen. [Läs mer](../reports/query-examples.md)
 
-**Beslutshantering**
+**Beslutsledning**
 
 * Du kan nu ange om begränsningen av erbjudanden ska gälla för alla användare eller för en viss profil, och för alla placeringar eller per placering. [Läs mer](../offers/offer-library/add-constraints.md#capping)
 * Med API:t för gruppbeslut kan organisationer använda beslutsfunktioner för alla profiler i en viss målgrupp i ett enda anrop. Erbjudandeinnehållet för varje profil i målgruppen placeras i en AEP-datauppsättning där det är tillgängligt för anpassade batcharbetsflöden. [Läs mer](../offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
@@ -765,9 +765,9 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 **Resor**
 
 * För att optimera prestandan kommer alla resor i testläge som inte har utlösts på en vecka nu att återgå till statusen Utkast. [Läs mer](../building-journeys/testing-the-journey.md#important_notes)
-* Integrationen mellan Journey Optimizer och Adobe Campaign Classic har optimerats för att förbättra prestandan. Standardkonfigurationen för begränsning har ändrats till 4 000 anrop/5 minuter.    [Läs mer](../action/acc-action.md#important-notes)
+* Integrationen mellan Journey Optimizer och Adobe Campaign v7/v8 har optimerats för att förbättra prestandan. Standardkonfigurationen för begränsning har ändrats till 4 000 anrop/5 minuter. [Läs mer](../action/acc-action.md#important-notes)
 
-**Rapportering**
+**Rapporter**
 
 * Leveranser kan nu filtreras beroende på status:
    * I listan Meddelandekörning kan du nu utesluta korrektur från leveranslistan.
@@ -777,7 +777,7 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 
 <!--* decision management reports are now available in Journey Optimizer. You can access the following metrics: Offers sent - Offers' impression rate - Offers' click rate - Breakdown report on Offers' sent.-->
 
-**Beslutshantering**
+**Beslutsledning**
 
 * Rankningar och AI-rankning grupperas nu tillsammans i en enda flik.
 
@@ -823,7 +823,7 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 
 * Journey Optimizer steg-händelser kan nu länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html). The **profileID** -fältet, i det inbyggda schemat för händelser i resan, definieras nu som ett identitetsfält. [Läs mer](../reports/sharing-overview.md#integration-cja)
 
-**Beslutshantering**
+**Beslutsledning**
 
 * När du uppdaterar ett erbjudande, ett reserverbjudande, en erbjudandesamling eller ett erbjudandebeslut som direkt eller indirekt hänvisas till i ett publicerat meddelande, återspeglas uppdateringarna nu automatiskt i motsvarande meddelande, utan att det behöver publiceras på nytt. [Läs mer](../offers/offers-e2e.md#insert-decision-in-email)
 

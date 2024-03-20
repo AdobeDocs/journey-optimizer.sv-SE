@@ -8,9 +8,9 @@ topic: Content Management
 role: Admin
 level: Intermediate, Experienced
 exl-id: a4653378-b70f-454c-a446-ab4a14d2580a
-source-git-commit: 30018b08da7c02d9d9aac431db2fa39f91163cfd
+source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '826'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ Mottagare vars e-postadresser inte visas exkluderas automatiskt från meddelande
 
 Adresser läggs till i listan över undertryckningar enligt följande:
 
-* Alla **skarpa studsar** och **skräppost** skickar automatiskt motsvarande adresser till suppressionslistan efter en enstaka förekomst.
+* Alla **skarpa studsar** och **skräppost** skickar automatiskt motsvarande adresser till suppressionslistan efter en enstaka förekomst. Läs mer om skräppostklagomål i [det här avsnittet](#spam-complaints).
 
 * **Mjuka studsar** skickar inte omedelbart en adress till listan, men de ökar en felräknare. Flera [återförsök](../configuration/retries.md) utförs sedan och när felräknaren når tröskelvärdet läggs adressen till i listan över utelämnanden.
 
@@ -81,3 +81,5 @@ Supprestionslistan samlar in e-postadresser som markerar ditt meddelande som skr
 Om du skickar till mottagarna efter att de skickat in ett skräppostklagomål kan det få stor effekt på ditt sändningsrykte, eftersom det informerar Internet-leverantörer om att du kan skicka oönskade e-postmeddelanden och kanske inte lyssnar på dina mottagare.
 
 Detta kan leda till att din IP-adress eller sändande domän blockeras, vilket kan undvikas om dessa adresser finns med i listan över spärrade adresser.
+
+Vissa Internet-leverantörer erbjuder en FBL-loop (feedback loop) som gör att e-postavsändaren automatiskt kan meddelas när den användare som tar emot ett e-postmeddelande väljer att markera det som skräppost. [Läs mer](deliverability.md#feedback-loops)
