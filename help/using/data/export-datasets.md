@@ -8,10 +8,10 @@ role: User
 level: Beginner
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
 exl-id: 66b5c691-ddc4-4e9b-9386-2ce6c307451c
-source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
+source-git-commit: f2d4531bd3b0b84dc1b52e818cbbeee36733314f
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 0%
+source-wordcount: '868'
+ht-degree: 1%
 
 ---
 
@@ -37,9 +37,33 @@ Mer information om respektive mål finns i Adobe Experience Platform-dokumentati
 * [Google Cloud-lagring](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage.html)
 * [SFTP](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/sftp.html)
 
-## Journey Optimizer datamängder tillgängliga för export {#datasets}
+## Tillgängliga datauppsättningar för export {#datasets}
 
-Förstå i tabellen nedan vilka Journey Optimizer-datauppsättningar som du kan exportera beroende på din produktnivå (se [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}) |Datauppsättning|Beskrivning|Nivå| | — | — | — | | AJO BCC Feedback, händelsedatauppsättning | AJO BCC Feedback, händelsedatauppsättning | Prime | | AJO-klassificering, datauppsättning | Datauppsättning för inmatning av e-post och push-meddelanden från Journey Optimizer. Skapat via SDK. | Prime | | AJO-sambandstjänst, datauppsättning | Lagrar information om samtycke för en profil. | Prime | | AJO Email Tracking Experience, händelsedatauppsättning | Interaktionsloggar för e-postkanal som används för att skapa rapporter och målgrupper.  | Prime | | AJO-entitetsdatauppsättning | Datauppsättning som lagrar entitetsmetadata för meddelanden som skickas till slutanvändaren.  | Prime | | AJO - inkommande aktivitetshändelsedatauppsättning | Datauppsättning för Journey Optimizer web- och inApp-kanaler för leverans- och interaktionshändelser. | Prime | | AJO Interactive Messaging Profile - datauppsättning | Lagrar profiler som skapats för stöd för API-utlösta kampanjer | Prime | | AJO Message Feedback Event Dataset | Meddelandeleveransloggar. Information om alla mejl från Journey Optimizer för rapportering och målgruppsframställning. Feedback från e-postleverantörer om studsar registreras också i den här datauppsättningen. | Prime | | Tillägg för AJO-profilräknare | Innehåller en karta över objekt som innehåller counter_value och expirationDate, transparenta av counter_id | Prime | | AJO-push-profildatauppsättning | Lagrar push-tokens för en profil. | Prime | | AJO Push Tracking Experience, händelsedatauppsättning | Interaktionsloggar för push-kanal som används för att skapa rapporter och målgrupper.  | Prime | | AJO Surfaces Dataset | Tom datamängd som är relaterad till schemat för inkommande Journey Optimizer-ytor | Prime | | AOOutputForUPSDataset | Innehåller alla AO-målgruppsmedlemskap som kan skrivas tillbaka till UPS | Prime | | Profildatauppsättning för målgruppssamordning | Genereras efter målgruppssammansättning för målgrupper med Audience Composition. Innehåller alla målgrupper i Audience Composition, deras attribut och berikande data | Prime | | Repositionen för beslutsobjekt - aktiviteter | kallas även beslut i användargränssnittet. Men det här är de objekt en användare skapar som sammanför alla byggstenar, inklusive beslutslogiken. Exempel: för en viss placering (plats), som erbjudanden ska beaktas (erbjudandesamling) och vilken rangordningsmetod som ska användas för dessa erbjudanden. | Ultimate | | Beslutsobjektarkiv - reserverbjudanden | detta är databasen för den andra typen av erbjudande som en användare skapar. I synnerhet om de inte är berättigade att se ett personaliserat erbjudande och behöver se något, kommer de åtminstone att se reserverbjudandet. Den här datauppsättningen innehåller attributen för den här typen av erbjudande | Ultimate | | Repository - Personalized offers | detta är databasen för en typ av erbjudande som en användare skapar. Den här datauppsättningen innehåller attribut om den här typen av erbjudande | Ultimate | | Beslutsobjektsdatabas - placeringar | detta är den objektdatabas som definierar var ett erbjudande ska visas. | Ultimate | | Resestegshändelser | Hämtar alla händelser av typen&quot;Journey Step Experience&quot; som genererats från Journey Optimizer och som ska användas av tjänster som Reporting. | Prime | | Resor | Inhysningsinformation för metadatadatauppsättning för varje steg i en resa | Prime | | ODE-beslutHändelser - preliminär beslut | När vi fattar ett beslut baserat på en begäran räknar vi det som en beslutshändelse | Ultimate |
+Förstå vilka Journey Optimizer-datauppsättningar du kan exportera från tabellen nedan.
+
+| Datauppsättning | Beskrivning |
+| ------- | ------- | 
+| AJO BCC Feedback, händelsedatauppsättning | AJO BCC Feedback, händelsedatauppsättning |
+| AJO-klassificering, datauppsättning | Datauppsättning för inmatning av e-post och push-meddelanden från Journey Optimizer. Skapat via SDK. |
+| AJO-sambandstjänst, datauppsättning | Lagrar information om samtycke för en profil. |
+| AJO Email Tracking Experience, händelsedatauppsättning | Interaktionsloggar för e-postkanal som används för att skapa rapporter och målgrupper.  |
+| AJO-entitetsdatauppsättning | Datauppsättning som lagrar entitetsmetadata för meddelanden som skickas till slutanvändaren.  |
+| AJO - inkommande aktivitetshändelsedatauppsättning | Datauppsättning för Journey Optimizer web- och inApp-kanaler för leverans- och interaktionshändelser. |
+| AJO Interactive Messaging Profile - datauppsättning | Lagrar profiler som skapats för stöd för API-utlösta kampanjer |
+| AJO Message Feedback Event Dataset | Meddelandeleveransloggar. Information om alla mejl från Journey Optimizer för rapportering och målgruppsframställning. Feedback från e-postleverantörer om studsar registreras också i den här datauppsättningen. |
+| Tillägg för AJO-profilräknare | Innehåller en karta över objekt som innehåller counter_value och expirationDate, transparenta av counter_id |
+| AJO-push-profildatauppsättning | Lagrar push-tokens för en profil. |
+| AJO Push Tracking Experience, händelsedatauppsättning | Interaktionsloggar för push-kanal som används för att skapa rapporter och målgrupper.  |
+| AJO Surfaces Dataset | Tom datamängd som är relaterad till schemat för inkommande Journey Optimizer-ytor |
+| AOOutputForUPSDataset | Innehåller alla AO-målgruppsmedlemskap som kan skrivas tillbaka till UPS |
+| Profildatauppsättning för målgruppssamordning | Genereras efter målgruppssammansättning för målgrupper med Audience Composition. Innehåller alla målgrupper i Audience Composition, deras attribut och berikande data |
+| Repositionen för beslutsobjekt - aktiviteter | kallas även beslut i användargränssnittet. Men det här är de objekt en användare skapar som sammanför alla byggstenar, inklusive beslutslogiken. Exempel: för en viss placering (plats), som erbjudanden ska beaktas (erbjudandesamling) och vilken rangordningsmetod som ska användas för dessa erbjudanden. |
+| Beslutsobjektarkiv - reserverbjudanden | detta är databasen för den andra typen av erbjudande som en användare skapar. I synnerhet om de inte är berättigade att se ett personaliserat erbjudande och behöver se något, kommer de åtminstone att se reserverbjudandet. Den här datauppsättningen innehåller attributen för den här typen av erbjudande |
+| Repository - Personalized offers | detta är databasen för en typ av erbjudande som en användare skapar. Den här datauppsättningen innehåller attribut om den här typen av erbjudande | Ultimate |
+| Beslutsobjektsdatabas - placeringar | detta är den objektdatabas som definierar var ett erbjudande ska visas. |
+| Resestegshändelser | Hämtar alla händelser av typen&quot;Journey Step Experience&quot; som genererats från Journey Optimizer och som ska användas av tjänster som Reporting. |
+| Resor | Inhysningsinformation för metadatadatauppsättning för varje steg i en resa |
+| ODE-beslutHändelser - preliminär beslut | När vi fattar ett beslut baserat på en begäran räknar vi det som en beslutshändelse |
 
 ## Förutsättningar {#prerequisites}
 
