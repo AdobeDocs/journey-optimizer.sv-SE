@@ -5,9 +5,9 @@ description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: c69411408d472142f733ee9220a40608b0edbab4
+source-git-commit: 55d9b8f0fc7e048c9f9cb506d8153f27595aaa3f
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '389'
 ht-degree: 16%
 
 ---
@@ -20,11 +20,19 @@ Få en glimt av de senaste förbättringarna i Journey Optimizer-produkter och -
 
 >[!BEGINTABS]
 
->[!TAB Februariversionen är live!]
+>[!TAB Marsversionen är live!]
 
-Upptäck nya funktioner och förbättringar som ingår i Adobe Journey Optimizer 24.2.
+Upptäck nya funktioner och förbättringar i Adobe Journey Optimizer 24.3.
 
 [![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
+
+>[!TAB Kodbaserade upplevelser]
+
+Med den nya kodbaserade upplevelsekanalen kan du med Adobe Journey Optimizer utföra avancerad personalisering och testning för alla dina inkommande egenskaper, vilket möjliggör smidig leverans av skräddarsydda upplevelser över olika kontaktytor som webbappar, mobilappar, datorprogram, videokonsoler, tv-anslutna enheter, smarta tv-apparater, kioskdatorer, ATM-enheter, IoT-enheter med mera.
+
+![](using/rn/assets/do-not-localize/code-based.gif)
+
+[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/code-based/get-started-code-based.md)
 
 >[!TAB Webb-meddelanden i appen]
 
@@ -33,14 +41,6 @@ Nu kan du använda den nya meddelandefunktionen i Web In-App för att visa perso
 ![](using/rn/assets/do-not-localize/web_inapp.gif)
 
 [![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/in-app/create-in-app-web.md)
-
->[!TAB Mallar för flerkanalsinnehåll]
-
-Förutom e-post finns nu innehållsmallar för följande kanaler: push, in-app, SMS och Direct mail, där varje kanal har dedikerade malltyper. För E-post kan du nu välja innehållstypen, som gör att du kan spara ämnesraden som en del av din e-postmall.
-
-![](using/rn/assets/do-not-localize/multi-chan-templates.gif)
-
-[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/content-management/content-templates.md)
 
 >[!ENDTABS]
 
