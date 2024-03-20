@@ -6,9 +6,9 @@ topic: Content Management
 role: User, Developer, Admin
 level: Experienced
 exl-id: 987de2bf-cebe-4753-98b4-01eb3fded492
-source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
+source-git-commit: 9d21ea489e62254eb3e4665198149e284b78296e
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1138'
 ht-degree: 1%
 
 ---
@@ -144,37 +144,31 @@ Med andra ord kan en yta ses som en behållare på alla nivåer i hierarkin med 
 * Det kan också vara en jokeryta som matchar en mängd olika klientytdefinitioner (en hjältebildsplats på varje sida på webbplatsen kan till exempel översättas i en yt-URI som web://mydomain.com/*#hero_image).
 
 En yt-URI består i princip av flera avsnitt:
-1. **Typ**: webb, ios, android, atm, kiosk, tvcd, service osv.
+1. **Typ**: web, mobileapp, atm, kiosk, tvcd, service etc.
 1. **Egenskap**: sidadress eller apppaket
 1. **Behållare**: plats i sid-/appaktiviteten
 
 Tabellerna nedan visar några exempel på URI-definitioner för olika enheter.
 
-**Webb och mobiler**
+### Webb och mobiler
 
 | Typ | URI | Beskrivning |
 | --------- | ----------- | ------- | 
-| Webb | web://domain.com/path/page.html | Representerar en enskild sökväg och sida på en webbplats. |
-| Webb | web://domain.com/path/page.html#element | Representerar ett enskilt element på en viss sida i en viss domän. |
-| Webb | web://domain.com/*#element | Jokertecknets yta - representerar ett enskilt element på varje sida under en specifik domän. |
-| iOS | mobileapp://com.vendor.bundle | Representerar ett specifikt mobilprogram för en enda plattform - i det här fallet iOS-app. |
-| iOS | mobileapp://com.vendor.bundle/activity | Representerar en viss aktivitet (vy) i ett mobilprogram. |
-| iOS | mobileapp://com.vendor.bundle/activity#element | Representerar ett specifikt element i en aktivitet, till exempel en knapp eller ett annat vyelement. |
-| Android-app | mobileapp://com.vendor.bundle | Representerar ett specifikt mobilprogram för en enda plattform - i det här fallet Android-app. |
+| Webb | web://domain.com/path/page.html#element | Representerar ett enskilt element på en viss sida i en viss domän, där ett element kan vara en etikett som i följande exempel: hero_banner, top_nav, menu, footer osv. |
+| iOS | mobileapp://com.vendor.bundle/activity#element | Representerar ett specifikt element i en intern programaktivitet, till exempel en knapp eller ett annat vyelement. |
+| Android-app | mobileapp://com.vendor.bundle#element | Representerar ett specifikt element i ett systemspecifikt program. |
 
-**Andra enhetstyper**
+### Andra enhetstyper
 
 | Typ | URI | Beskrivning |
 | --------- | ----------- | ------- | 
-| Skrivbord | desktop://com.vendor.bundle | Representerar ett specifikt skrivbordsprogram. |
 | Skrivbord | desktop://com.vendor.bundle#element | Representerar ett specifikt element i ett program, t.ex. en knapp, en meny, en hjältebanderoll. |
-| tvOS-app | tvos://com.vendor.bundle | Representerar en specifik tvOS-app. |
-| TV-app | tvcd://com.vendor.bundle | Representerar en specifik app för en smart TV- eller tv-ansluten enhet - paket-ID. |
-| Tjänst | service://servicename | Representerar en process på serversidan eller en annan manuell enhet. |
-| Kiosk | kiosk://location/screen | Exempel på möjliga ytterligare yttyper som enkelt kan läggas till. |
-| ATM | atm://location/screen | Exempel på möjliga ytterligare yttyper som enkelt kan läggas till. |
+| TV-app | tvcd://com.vendor.bundle#element | Representerar ett specifikt element i en app som är ansluten till en smart TV eller TV - paket-ID. |
+| Tjänst | service://servicename#element | Representerar en process på serversidan eller en annan manuell enhet. |
+| Kiosk | kiosk://location/screen#element | Exempel på möjliga ytterligare yttyper som enkelt kan läggas till. |
+| ATM | atm://location/screen#element | Exempel på möjliga ytterligare yttyper som enkelt kan läggas till. |
 
-**Ytor med jokertecken**
+### Ytor med jokertecken
 
 | Typ | URI | Beskrivning |
 | --------- | ----------- | ------- | 
