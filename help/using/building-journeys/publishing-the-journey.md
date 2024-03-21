@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: e0ca8aef-4f1d-4631-8c34-1692d96e8b51
-source-git-commit: 93e3ed9e1a9a437353b800aee58952b86eab9370
+source-git-commit: 06166dbecc11abe81dadb467c302336c64672a39
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 5%
+source-wordcount: '242'
+ht-degree: 1%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 5%
 
 Du kan publicera en resa efter att ha testat dess giltighet.
 
-➡️ [Upptäck den här funktionen i en video](#video)
+➡️ [Upptäck den här funktionen i video](#video)
 
-Om du behöver göra ändringar i en publicerad resa måste du skapa en ny version av din resa. Läs [den här sidan](../building-journeys/journey.md). När en resa är skrivskyddad kan du bara ändra aktivitetsetiketter och beskrivningar, kundens namn och resans beskrivning.
+Om du behöver göra ändringar i en publicerad resa måste du skapa en ny version av din resa. Se [den här sidan](../building-journeys/journey.md). När en resa är skrivskyddad kan du bara ändra aktivitetsetiketter och beskrivningar, kundens namn och resans beskrivning.
 
 Om du avbryter en resa stoppas den permanent. Alla personer som flyter på resan kommer att stoppas permanent och resan kommer att upphöra så att nya deltagare tillåts. Om du behöver använda resan igen måste du duplicera den och publicera den.
 
@@ -41,4 +41,4 @@ När resan publiceras är den i skrivskyddat läge.
 
 Lär dig hur du publicerar en resa.
 
->[!VIDEO](https://video.tv.adobe.com/v/334238?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424998?quality=12)

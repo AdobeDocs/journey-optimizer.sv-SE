@@ -6,7 +6,7 @@ topic: Content Management
 role: User, Developer, Admin
 level: Experienced
 exl-id: 987de2bf-cebe-4753-98b4-01eb3fded492
-source-git-commit: 3cdef96e383448b462f6e3781e36d3c9a57bd637
+source-git-commit: 430af6da50e74c7375be92242ca869d187b63a54
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 1%
@@ -150,7 +150,7 @@ En yt-URI består i princip av flera avsnitt:
 
 Tabellerna nedan visar några exempel på URI-definitioner för olika enheter.
 
-### Webb och mobiler
+**Webb och mobiler**
 
 | Typ | URI | Beskrivning |
 | --------- | ----------- | ------- | 
@@ -158,7 +158,7 @@ Tabellerna nedan visar några exempel på URI-definitioner för olika enheter.
 | iOS | mobileapp://com.vendor.bundle/activity#element | Representerar ett specifikt element i en intern programaktivitet, till exempel en knapp eller ett annat vyelement. |
 | Android-app | mobileapp://com.vendor.bundle#element | Representerar ett specifikt element i ett systemspecifikt program. |
 
-### Andra enhetstyper
+**Andra enhetstyper**
 
 | Typ | URI | Beskrivning |
 | --------- | ----------- | ------- | 
@@ -168,7 +168,7 @@ Tabellerna nedan visar några exempel på URI-definitioner för olika enheter.
 | Kiosk | kiosk://location/screen#element | Exempel på möjliga ytterligare yttyper som enkelt kan läggas till. |
 | ATM | atm://location/screen#element | Exempel på möjliga ytterligare yttyper som enkelt kan läggas till. |
 
-### Ytor med jokertecken
+**Ytor med jokertecken**
 
 | Typ | URI | Beskrivning |
 | --------- | ----------- | ------- | 

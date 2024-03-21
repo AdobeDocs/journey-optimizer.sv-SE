@@ -8,9 +8,9 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, upptäckt, komma igång
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 37be5bd6dc17dc7df12ad51994a854f2d7a20ef1
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '608'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,6 @@ Utforma avancerade scenarier i flera steg med följande funktioner:
 
 * Med **resedesigner** bygg upp era flerstegssituationer: dra och släpp enkelt en anmälningshändelse eller en läs målgruppsaktivitet, lägg till villkor och skicka personaliserade meddelanden.
 
-
 >[!NOTE]
 >
 >Reseskydd och begränsningar finns i [den här sidan](../start/guardrails.md)
@@ -40,6 +39,8 @@ Utforma avancerade scenarier i flera steg med följande funktioner:
 Använd Adobe Journey Optimizer för att utforma och samordna personaliserade resor från en arbetsyta. De viktigaste stegen för att skapa en resa är följande:
 
 ![](assets/journey-creation-process.png)
+
+➡️ [Upptäck den här funktionen i video](#video)
 
 Adobe Journey Optimizer har en flerkanalig orkestreringsyta som gör att marknadsförarna kan harmonisera marknadsföringen med ett-till-ett-kundengagemang. Med användargränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan för att skapa din resa.
 
@@ -103,3 +104,9 @@ Från det att resan har publicerats kommer individerna att börja flöda in i de
 Reseversioner kan stoppas individuellt. Alla versioner av resor har samma namn.
 
 När du publicerar en ny version av en resa upphör den tidigare versionen automatiskt och växlar till **Stängd** status. Ingen inträde på resan kan ske. Även om du stoppar den senaste versionen förblir den tidigare versionen stängd.
+
+## Instruktionsvideo {#video}
+
+Identifiera komponenterna i en resa och förstå grunderna för hur man bygger en resa på arbetsytan.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)

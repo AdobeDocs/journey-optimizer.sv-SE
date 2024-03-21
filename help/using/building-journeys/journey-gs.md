@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
+source-git-commit: 37be5bd6dc17dc7df12ad51994a854f2d7a20ef1
 workflow-type: tm+mt
-source-wordcount: '1936'
+source-wordcount: '1942'
 ht-degree: 4%
 
 ---
@@ -22,6 +22,8 @@ ht-degree: 4%
 >id="ajo_homepage_card2"
 >title="Skapa resor"
 >abstract="Använd **Adobe Journey Optimizer** för att skapa användningsfall för realtidssamordning med hjälp av kontextuella data lagrade i händelser eller datakällor."
+
+
 
 ## Förutsättningar{#start-prerequisites}
 
@@ -111,6 +113,8 @@ I konfigurationspanelerna Händelse, Datakälla och Åtgärd visas dessutom **[!
 ## Bygg upp din resa{#jo-build}
 
 Det här steget utförs av **företagsanvändare**. Här skapar du dina resor. Kombinera de olika händelserna, samordningen och åtgärderna för att skapa flerstegsscenarier för olika kanaler.
+
+➡️ [Upptäck den här funktionen i video](journey.md#video)
 
 Här är de viktigaste stegen för att skicka meddelanden via resor:
 
