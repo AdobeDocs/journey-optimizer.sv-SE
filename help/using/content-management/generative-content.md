@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Skapa innehåll med Content Assist
-description: Kom igång med Content Assist
+title: Skapa innehåll med AI Assistant
+description: Kom igång med AI-assistenten
 feature: Content Assistant
 topic: Content Management
 role: User
@@ -11,28 +11,28 @@ badge: label="Beta" type="Informative"
 hide: true
 hidefromtoc: true
 exl-id: 1b3930ff-f7b0-43f0-bcf2-5c3de0a88b25
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+source-git-commit: 559e17ba15c1b9b56f9badfe82f1de4bf3013a4f
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 1%
 
 ---
 
-# Skapa innehåll med Content Assist {#title-content-assistant}
+# Skapa innehåll med AI Assistant {#title-content-assistant}
 
 >[!BEGINSHADEBOX]
 
 **Innehållsförteckning**
 
-* [Kom igång med Content Assist](gs-generative.md)
-* **[Generera innehåll med Content Assist](generative-content.md)**
-* [Generera bilder med Content Assist](generative-image.md)
+* [Kom igång med AI-assistenten](gs-generative.md)
+* **[Generera innehåll med AI-assistenten](generative-content.md)**
+* [Generera bilder med AI-assistenten](generative-image.md)
 
 >[!ENDSHADEBOX]
 
-När du har skapat och personaliserat dina meddelanden tar du innehållet till nästa nivå med Content Assist.
+När du har skapat och personaliserat dina meddelanden tar du innehållet till nästa nivå med Journey Optimizer AI Assistant.
 
-Genom att utnyttja innehållsassistenten kan du optimera budskapets effekt genom att experimentera med olika innehåll. Varje variant betraktas som en unik behandling för att mäta och jämföra vilket innehåll som effektivt genererar fler klick.
+Genom att utnyttja AI Assistant kan du optimera budskapets effekt genom att experimentera med olika innehåll. Varje variant betraktas som en unik behandling för att mäta och jämföra vilket innehåll som effektivt genererar fler klick.
 
 I det här exemplet får du lära dig hur du skickar ett engagerande push-meddelande med hjälp av Innehållsexperiment. Följ de här stegen:
 
@@ -48,7 +48,7 @@ I det här exemplet får du lära dig hur du skickar ett engagerande push-meddel
 
    * **[!UICONTROL Summarize]**: Använd det här alternativet om du vill korta ned en text och behålla det väsentliga.
 
-   * **[!UICONTROL Elaborate]**: Använd det här alternativet om du vill utöka innehållet med ytterligare kreativa varianter från innehållsassistenten.
+   * **[!UICONTROL Elaborate]**: Använd det här alternativet om du vill utöka ditt innehåll med ytterligare kreativa varianter från AI-assistenten.
 
    ![](assets/gen-ai-title-2.png)
 
@@ -62,7 +62,7 @@ I det här exemplet får du lära dig hur du skickar ett engagerande push-meddel
 
    ![](assets/gen-ai-title-4.png)
 
-1. Efter personalisering av **[!UICONTROL Body]** om ditt push-meddelande **[!UICONTROL Show Content assistant]**.
+1. Efter personalisering av **[!UICONTROL Body]** om ditt push-meddelande **[!UICONTROL Show AI Assistant]**.
 
    Här finns det redan en lista över varianter som du kan använda med det ursprungliga innehållet.
 
@@ -70,7 +70,7 @@ I det här exemplet får du lära dig hur du skickar ett engagerande push-meddel
 
 1. Finjustera innehållet genom att beskriva vad du vill generera.
 
-   Aktivera **[!UICONTROL Enhance with current content]** för innehållsassistenten att anpassa nytt innehåll baserat på ert budskap, kampanjens namn och vald målgrupp.
+   Aktivera **[!UICONTROL Enhance with current content]** för AI-assistenten att anpassa nytt innehåll baserat på ditt budskap, kampanjens namn och vald målgrupp.
 
 1. Klicka **[!UICONTROL Replace]** för att ändra innehåll eller markera flera **[!UICONTROL Variant]** att skapa **[!UICONTROL Treatments]** för dina experiment och klicka **Lägg till X-behandlingar**.
 

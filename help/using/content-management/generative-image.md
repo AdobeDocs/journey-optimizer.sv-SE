@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Bildgenerering med Content Assist
-description: Kom igång med Content Assist
+title: Bildgenerering med AI-assistenten
+description: Kom igång med AI-assistenten
 feature: Content Assistant
 topic: Content Management
 role: User
@@ -11,32 +11,32 @@ badge: label="Beta" type="Informative"
 hide: true
 hidefromtoc: true
 exl-id: b5582601-5804-4413-b548-a0b34cc38090
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+source-git-commit: 559e17ba15c1b9b56f9badfe82f1de4bf3013a4f
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '319'
 ht-degree: 1%
 
 ---
 
-# Bildgenerering med Content Assist {#image-content-assistant}
+# Bildgenerering med AI-assistenten {#image-content-assistant}
 
 >[!BEGINSHADEBOX]
 
 **Innehållsförteckning**
 
-* [Kom igång med Content Assist](gs-generative.md)
-* [Generera text med Content Assist](generative-content.md)
-* **[Generera bilder med Content Assist](generative-image.md)**
+* [Kom igång med AI-assistenten](gs-generative.md)
+* [Generera text med AI-assistenten](generative-content.md)
+* **[Generera bilder med AI-assistenten](generative-image.md)**
 
 >[!ENDSHADEBOX]
 
-När du har skapat och anpassat dina e-postmeddelanden eller webbsidor tar du innehållet till nästa nivå med Content Assist. Med det här kraftfulla verktyget kan du enkelt anpassa och förbättra ditt innehåll.
+När du har skapat och anpassat dina e-postmeddelanden eller webbsidor tar du innehållet till nästa nivå med Journey Optimizer AI Assistant. Med det här kraftfulla verktyget kan du enkelt anpassa och förbättra ditt innehåll.
 
-Läs om hur du använder innehållsassistenten till att uppdatera och förbättra dina resurser i exemplet nedan för att få en bättre användarupplevelse. Följ de här stegen:
+Läs om hur du använder AI-assistenten för att uppdatera och förbättra dina resurser i exemplet nedan. Följ de här stegen:
 
 1. När du har skapat och konfigurerat meddelandet klickar du på **[!UICONTROL Create content]** och anpassa det efter behov.
 
-1. Markera den resurs som du vill ändra med Content Assistent.
+1. Markera den resurs som du vill ändra med AI-assistenten.
 
 1. Välj **[!UICONTROL Experience generation]**.
 
@@ -44,7 +44,7 @@ Läs om hur du använder innehållsassistenten till att uppdatera och förbättr
 
 1. Lägg till en uppmaning för att finjustera resultatet bättre och klicka på **[!UICONTROL Generate]**.
 
-   Aktivera **[!UICONTROL Enhance with current content]** för innehållsassistenten att anpassa nya resurser baserat på ditt budskap, kampanjens namn och vald målgrupp.
+   Aktivera **[!UICONTROL Enhance with current content]** för AI-assistenten att anpassa nya resurser baserat på ditt budskap, kampanjens namn och vald målgrupp.
 
    ![](assets/gen-ai-image-2.png)
 
