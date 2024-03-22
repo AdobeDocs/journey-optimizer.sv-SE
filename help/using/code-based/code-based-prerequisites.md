@@ -1,15 +1,15 @@
 ---
-title: Kodbaserade upplevelsevillkor
+title: Kodbaserade upplevelsegarantier och förutsättningar
 description: Om du vill kunna redigera program och webbsidor med den kodbaserade funktionen i Journey Optimizer följer du kraven på den här sidan
 feature: Code-based Experiences
 topic: Content Management
 role: Admin
 level: Experienced
 exl-id: ac901f88-5fde-4220-88c6-fe05433866cc
-source-git-commit: 3c9952f2e57c45d5bbd78d70ae7d401bc4555abe
+source-git-commit: d2ac4dfe40559f01db59e314e8838f51b39a8659
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 1%
+source-wordcount: '421'
+ht-degree: 0%
 
 ---
 
@@ -21,14 +21,12 @@ Att kunna använda kodbaserade upplevelseåtgärder i [!DNL Journey Optimizer] o
 
 * För att de kodbaserade upplevelserna ska kunna levereras på rätt sätt måste du definiera Adobe Experience Platform-inställningarna i detalj [här](#delivery-prerequisites).
 
-
-## Observera varningar {#caution-notes-web}
-
-* Ingår [!DNL Journey Optimizer] kan ni bara skapa kodbaserade upplevelser i **kampanjer**. [Läs mer](../campaigns/create-campaign.md#configure)
-
->[!AVAILABILITY]
+>[!CAUTION]
 >
->För närvarande är den kodbaserade upplevelsekanalen inte tillgänglig för organisationer som har köpt Adobe **Hälsovårdssköld** och **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
+>* Den kodbaserade upplevelsekanalen är inte tillgänglig för organisationer som har köpt Adobe **Hälsovårdssköld** och **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
+>
+>* Du kan bara skapa kodbaserade upplevelser i **kampanjer**. [Läs mer](../campaigns/create-campaign.md#configure
+
 
 ## Krav för implementering {#implementation-prerequisites}
 

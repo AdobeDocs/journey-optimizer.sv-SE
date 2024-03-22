@@ -6,9 +6,9 @@ topic: Content Management
 role: User, Developer, Admin
 level: Experienced
 exl-id: 987de2bf-cebe-4753-98b4-01eb3fded492
-source-git-commit: 3c9952f2e57c45d5bbd78d70ae7d401bc4555abe
+source-git-commit: d2ac4dfe40559f01db59e314e8838f51b39a8659
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1123'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Med **kodbaserad upplevelse** kan ni definiera inkommande upplevelser med en enk
 >
 >* Ingår [!DNL Journey Optimizer] kan ni bara skapa kodbaserade upplevelser med **kampanjer**.
 >
->>* Den kodbaserade upplevelsekanalen är inte tillgänglig för organisationer som har köpt Adobe **Hälsovårdssköld** och **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
+>* Den kodbaserade upplevelsekanalen är **inte tillgängligt** för organisationer som har köpt Adobe **Hälsovårdssköld** och **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
 
 <!--Discover the detailed steps to create a code-based campaign in this video.-->
 
@@ -45,7 +45,7 @@ Med **kodbaserad upplevelse** kan ni definiera inkommande upplevelser med en enk
 <img alt="Validering" src="../assets/do-not-localize/web-prerequisites.jpg">
 </a>
 <div>
-<a href="code-based-prerequisites.md"><strong>Förutsättningar</strong></a>
+<a href="code-based-prerequisites.md"><strong>Garantier och krav</strong></a>
 </div>
 <p>
 </td>
