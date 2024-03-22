@@ -6,20 +6,21 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: ac901f88-5fde-4220-88c6-fe05433866cc
-source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
+source-git-commit: 3c9952f2e57c45d5bbd78d70ae7d401bc4555abe
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 1%
 
 ---
 
-# Förutsättningar och skyddsräcken {#web-prerequisites}
+# Garantier och krav {#web-prerequisites}
 
 Att kunna använda kodbaserade upplevelseåtgärder i [!DNL Journey Optimizer] och leverera kodinnehållsavgifter som kan användas av dina program, följ kraven nedan:
 
 * Om du vill lägga till ändringar i dina program måste du ha en specifik implementering. [Läs mer](#implementation-prerequisites)
 
 * För att de kodbaserade upplevelserna ska kunna levereras på rätt sätt måste du definiera Adobe Experience Platform-inställningarna i detalj [här](#delivery-prerequisites).
+
 
 ## Observera varningar {#caution-notes-web}
 

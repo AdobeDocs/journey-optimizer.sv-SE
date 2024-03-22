@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
+source-git-commit: 3c9952f2e57c45d5bbd78d70ae7d401bc4555abe
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1740'
 ht-degree: 30%
 
 ---
@@ -244,8 +244,8 @@ ht-degree: 30%
       + [Skapa single-page-appar](using/web/web-spa.md)
 + Kodbaserad upplevelse {#code-based-experience}
    + [Kom igång med kodbaserad kanal](using/code-based/get-started-code-based.md)
-   + [Kodbaserade förutsättningar](using/code-based/code-based-prerequisites.md)
-   + [Kodbaserade implementeringsexempel](using/code-based/code-based-implementation-samples.md)
+   + [Garantier och krav](using/code-based/code-based-prerequisites.md)
+   + [Exempel på implementeringsmetoder](using/code-based/code-based-implementation-samples.md)
    + [Skapa kodbaserade upplevelser](using/code-based/create-code-based.md)
 + Landningssidor {#landing-pages}
    + [Kom igång med landningssidor](using/landing-pages/get-started-lp.md)

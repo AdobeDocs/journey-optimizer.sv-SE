@@ -6,14 +6,18 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
+source-git-commit: 3c9952f2e57c45d5bbd78d70ae7d401bc4555abe
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '951'
 ht-degree: 1%
 
 ---
 
 # Skapa kodbaserade upplevelser {#create-code-based}
+
+Ingår [!DNL Journey Optimizer] kan ni bara skapa kodbaserade upplevelser i **kampanjer**.
+
+Garantier och rekommendationer finns i [den här sidan](code-based-prerequisites.md).
 
 >[!AVAILABILITY]
 >
@@ -22,10 +26,6 @@ ht-degree: 1%
 ## Skapa en kodbaserad kampanj {#create-code-based-campaign}
 
 Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampanj.
-
->[!CAUTION]
->
->Ingår [!DNL Journey Optimizer] kan ni bara skapa kodbaserade upplevelser med **kampanjer**.
 
 1. Skapa en kampanj. [Läs mer](../campaigns/create-campaign.md)
 
@@ -41,11 +41,7 @@ Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampa
 
 1. Välj **[!UICONTROL Create]**.
 
-1. Slutför stegen för att skapa en kampanj, t.ex. kampanjegenskaperna, [publik](../audience/about-audiences.md)och [schema](../campaigns/create-campaign.md#schedule).
-
-   >[!NOTE]
-   >
-   >Mer information om hur du konfigurerar en kampanj finns i [den här sidan](../campaigns/get-started-with-campaigns.md).
+1. Slutför stegen för att skapa en kampanj, t.ex. kampanjegenskaperna, [publik](../audience/about-audiences.md)och [schema](../campaigns/create-campaign.md#schedule). Mer information om hur du konfigurerar en kampanj finns i [den här sidan](../campaigns/get-started-with-campaigns.md).
 
 1. Redigera ditt innehåll med uttrycksredigeraren. [Läs mer](#edit-code)
 
@@ -100,7 +96,7 @@ Så snart utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll f�
 >title="Förgranska din kodbaserade upplevelse"
 >abstract="Få en simulering av hur er kodbaserade upplevelse kommer att se ut."
 
-Följ stegen nedan för att visa en förhandsgranskning av din ändrade kodbaserade upplevelse. Detaljerad information om hur du väljer testprofiler och förhandsgranskar innehållet finns i  [Förhandsgranska och testa din innehållssida](../content-management/preview-test.md).
+Följ stegen nedan för att visa en förhandsgranskning av din ändrade kodbaserade upplevelse. Detaljerad information om hur du väljer testprofiler och förhandsgranskar innehållet finns i [Förhandsgranska och testa din innehållssida](../content-management/preview-test.md).
 
 >[!CAUTION]
 >

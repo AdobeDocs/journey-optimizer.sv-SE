@@ -6,18 +6,14 @@ topic: Content Management
 role: User, Developer, Admin
 level: Experienced
 exl-id: 987de2bf-cebe-4753-98b4-01eb3fded492
-source-git-commit: 430af6da50e74c7375be92242ca869d187b63a54
+source-git-commit: 3c9952f2e57c45d5bbd78d70ae7d401bc4555abe
 workflow-type: tm+mt
-source-wordcount: '1138'
+source-wordcount: '1121'
 ht-degree: 1%
 
 ---
 
 # Kom igång med kodbaserad kanal {#get-sarted-code-based}
-
->[!AVAILABILITY]
->
->För närvarande är den kodbaserade upplevelsekanalen inte tillgänglig för organisationer som har köpt Adobe **Hälsovårdssköld** och **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
 
 [!DNL Journey Optimizer] kan ni personalisera och testa de upplevelser ni vill leverera till kunderna via alla kontaktytor, som webbappar, mobilappar, datorprogram, videokonsoler, tv-anslutna enheter, smarta TV-apparater, kioskdatorer, ATM-enheter, röstassistenter, IoT-enheter osv.
 
@@ -25,15 +21,13 @@ Med **kodbaserad upplevelse** kan ni definiera inkommande upplevelser med en enk
 
 <!--[!DNL Journey Optimizer] allows you to compose and deliver content on any inbound surface in a developer-focused workflow. You can leverage all the personalization capabilities, and preview what will be published. The content can be static (images, text, JSON, HTML) or dynamic (offers, decisions, recommendations). You can also insert custom content actions in your omni-channel journeys.-->
 
->[!CAUTION]
->
->Ingår [!DNL Journey Optimizer] kan ni bara skapa kodbaserade upplevelser med **kampanjer**.
-
-När du [skapa en kampanj](../campaigns/create-campaign.md#configure), markera **Kodbaserad upplevelse** som din åtgärd och definiera grundläggande inställningar.
-
 >[!NOTE]
 >
->Om detta är första gången du skapar en kodbaserad upplevelse måste du följa de krav som beskrivs i [det här avsnittet](code-based-prerequisites.md).
+>* Om detta är första gången du skapar en kodbaserad upplevelse måste du följa de krav som beskrivs i [det här avsnittet](code-based-prerequisites.md).
+>
+>* Ingår [!DNL Journey Optimizer] kan ni bara skapa kodbaserade upplevelser med **kampanjer**.
+>
+>>* Den kodbaserade upplevelsekanalen är inte tillgänglig för organisationer som har köpt Adobe **Hälsovårdssköld** och **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
 
 <!--Discover the detailed steps to create a code-based campaign in this video.-->
 
