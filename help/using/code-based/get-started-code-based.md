@@ -6,9 +6,9 @@ topic: Content Management
 role: User, Developer, Admin
 level: Experienced
 exl-id: 987de2bf-cebe-4753-98b4-01eb3fded492
-source-git-commit: d2ac4dfe40559f01db59e314e8838f51b39a8659
+source-git-commit: bb9ebf5900f38c3729321330eee176489a86cd8e
 workflow-type: tm+mt
-source-wordcount: '1123'
+source-wordcount: '1082'
 ht-degree: 1%
 
 ---
@@ -21,13 +21,10 @@ Med **kodbaserad upplevelse** kan ni definiera inkommande upplevelser med en enk
 
 <!--[!DNL Journey Optimizer] allows you to compose and deliver content on any inbound surface in a developer-focused workflow. You can leverage all the personalization capabilities, and preview what will be published. The content can be static (images, text, JSON, HTML) or dynamic (offers, decisions, recommendations). You can also insert custom content actions in your omni-channel journeys.-->
 
->[!NOTE]
+>[!IMPORTANT]
 >
->* Om detta är första gången du skapar en kodbaserad upplevelse måste du följa de krav som beskrivs i [det här avsnittet](code-based-prerequisites.md).
->
->* Ingår [!DNL Journey Optimizer] kan ni bara skapa kodbaserade upplevelser med **kampanjer**.
->
->* Den kodbaserade upplevelsekanalen är **inte tillgängligt** för organisationer som har köpt Adobe **Hälsovårdssköld** och **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
+>Specifika skyddsutkast och rekommendationer för kodbaserade upplevelser finns i [den här sidan](code-based-prerequisites.md).
+
 
 <!--Discover the detailed steps to create a code-based campaign in this video.-->
 
