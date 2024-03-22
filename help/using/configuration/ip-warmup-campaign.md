@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: a9995ca1-d7eb-4f8d-a9d9-fe56198ac325
-source-git-commit: 9d48213d8367fdc6c0fae62b73d1706bc4983d9d
+source-git-commit: 737b7f59819d235b1f637d4a6b996e97cfddb9fe
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '397'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 2%
 
 Vad du hittar i den här handboken:
 
-* [Kom igång med IP-värmare](ip-warmup-gs.md)
+* [Kom igång med planer för IP-värmare](ip-warmup-gs.md)
 * **[Skapa IP-värmningskampanjer](ip-warmup-campaign.md)**
 * [Skapa en IP-värmeringsplan](ip-warmup-plan.md)
 * [Kör IP-värmerappen](ip-warmup-execution.md)
