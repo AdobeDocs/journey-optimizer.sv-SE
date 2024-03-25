@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
+source-git-commit: e45ec5f0e1bbcc73892f9cde5923627886f44ef6
 workflow-type: tm+mt
-source-wordcount: '5042'
+source-wordcount: '5069'
 ht-degree: 13%
 
 ---
@@ -21,6 +21,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 
 ## Mars 2024 {#march-2024}
 
+* Ett avsnitt med vanliga frågor och svar har lagts till som åtgärdar vanliga frågor om användningen av målgruppssammansättning och anpassade målgrupper för uppladdning i Journey Optimizer. [Läs mer](../audience/about-audiences.md#faq)
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Mars 24-utgåvan finns utförlig i dokumentationen. [Läs mer](release-notes.md)
 * Sidan om profilingångshantering har förbättrats. [Läs mer](../building-journeys/entry-management.md)
 * Felsökningsinformation har lagts till på sidan Varningar. [Läs mer](../reports/alerts.md#alert-troubleshooting)

@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: kvalificering, evenemang, målgrupp, resa, plattform
 exl-id: 7e70b8a9-7fac-4450-ad9c-597fe0496df9
-source-git-commit: 1deb04490e53cbd5d67abda229bb4f850055510f
+source-git-commit: e45ec5f0e1bbcc73892f9cde5923627886f44ef6
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -37,13 +37,18 @@ Den här typen av händelse kan placeras som det första steget eller senare und
 
 * Kom ihåg att Adobe Experience Platform-målgrupper beräknas antingen en gång om dagen (**batch** målgrupper) eller i realtid (**strömmad** målgrupper, med alternativet High Frequency Audiences i Adobe Experience Platform).
 
-* Om den valda publiken direktuppspelas kan de personer som tillhör den här publiken komma in på resan i realtid. Om målgruppen är en batch kommer personer som nyligen är kvalificerade för den här målgruppen att kunna delta i resan när målgruppsberäkningen görs på Adobe Experience Platform.
+   * Om den valda publiken direktuppspelas kan de personer som tillhör den här publiken komma in på resan i realtid.
+   * Om målgruppen är en batch kommer personer som nyligen är kvalificerade för den här målgruppen att kunna delta i resan när målgruppsberäkningen görs på Adobe Experience Platform.
+
+  Som en god praxis rekommenderar vi därför att man endast använder direktuppspelade målgrupper i en **Målgruppskvalifikation** aktivitet. Vid användning i batch, använd en **[Läsa målgrupper](read-audience.md)** aktivitet.
+
+  >[!NOTE]
+  >
+  >På grund av batchbeskaffenheten hos målgrupper som skapats med arbetsflöden för disposition och anpassad överföring kan du inte rikta in dig på dessa målgrupper i en&quot;målgruppskompetens&quot;-aktivitet. Endast målgrupper som skapats med segmentdefinitioner kan utnyttjas i den här aktiviteten.
 
 * Det går inte att använda fältgrupper för upplevelsehändelser på resor som börjar med en läsare, en målgrupp eller en affärshändelseaktivitet.
 
 * När du använder en målgruppskvalifikation på en resa kan det ta upp till 10 minuter innan målgruppsaktiviteten är aktiv och lyssnar på profiler som kommer in eller lämnar målgruppen.
-
-* Vi rekommenderar att du endast använder direktuppspelande målgrupper för **Målgruppskvalifikation** aktivitet. För användning i batch, använd **[Läsa målgrupper](read-audience.md)** aktivitet.
 
 ### Konfigurera aktiviteten{#cnfigure-segment-qualification}
 

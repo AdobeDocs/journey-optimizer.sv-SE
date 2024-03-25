@@ -8,9 +8,9 @@ role: User
 level: Intermediate
 keywords: återinträde, resa, profil, återkommande
 exl-id: 8874377c-6594-4a5a-9197-ba5b28258c02
-source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
+source-git-commit: e45ec5f0e1bbcc73892f9cde5923627886f44ef6
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '679'
 ht-degree: 1%
 
 ---
@@ -78,6 +78,10 @@ Målgruppsresor kan vara återkommande eller enstaka bilder:
 Det finns två alternativ för återkommande målgruppsresor:
 
 * **Inkrementell läsning** alternativ: när en resa med återkommande **Läsa målgrupper** körs för första gången så att alla profiler i målgruppen kommer in på resan. Med det här alternativet kan du efter första tillfället bara rikta in dig på de personer som har gått in i målgruppen sedan den senaste körningen av resan.
+
+  >[!NOTE]
+  >
+  >Om du riktar dig till en [anpassad publik](../audience/about-audiences.md#segments-in-journey-optimizer) under din resa hämtas profiler endast vid den första upprepningen om det här alternativet är aktiverat under en återkommande resa, eftersom dessa målgrupper är fasta.
 
 * **Tvinga återinträde vid upprepning**: Med det här alternativet kan du göra så att alla profiler som fortfarande finns kvar i resan automatiskt avslutar den vid nästa körning. Om livscykeln för dina profiler under den här resan kan vara längre än frekvensen för återkommande (till exempel om du använder vänteaktiviteter) ska du inte aktivera det här alternativet för att se till att profilerna kan slutföra sin resa.
 

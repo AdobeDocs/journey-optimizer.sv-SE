@@ -8,7 +8,7 @@ role: User
 level: Beginner
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
 exl-id: 66b5c691-ddc4-4e9b-9386-2ce6c307451c
-source-git-commit: 83751eae9f703a89a57cb337492377ff2478d4a0
+source-git-commit: e45ec5f0e1bbcc73892f9cde5923627886f44ef6
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 1%
@@ -56,7 +56,7 @@ Förstå vilka Journey Optimizer-datauppsättningar du kan exportera från tabel
 | AJO Push Tracking Experience, händelsedatauppsättning | Interaktionsloggar för push-kanal som används för att skapa rapporter och målgrupper.  |
 | AJO Surfaces Dataset | Tom datamängd som är relaterad till schemat för inkommande Journey Optimizer-ytor |
 | AOOutputForUPSDataset | Innehåller alla AO-målgruppsmedlemskap som kan skrivas tillbaka till UPS |
-| Profildatauppsättning för målgruppssamordning | Genereras efter målgruppssammansättning för målgrupper med Audience Composition. Innehåller alla målgrupper i Audience Composition, deras attribut och berikande data |
+| Profildatauppsättning för målgruppssamordning | Genereras efter målgruppssammansättning för målgrupper med målgruppssammansättning. Innehåller alla målgrupper, deras attribut och berikande data |
 | Repositionen för beslutsobjekt - aktiviteter | kallas även beslut i användargränssnittet. Men det här är de objekt en användare skapar som sammanför alla byggstenar, inklusive beslutslogiken. Exempel: för en viss placering (plats), som erbjudanden ska beaktas (erbjudandesamling) och vilken rangordningsmetod som ska användas för dessa erbjudanden. |
 | Beslutsobjektarkiv - reserverbjudanden | detta är databasen för den andra typen av erbjudande som en användare skapar. I synnerhet om de inte är berättigade att se ett personaliserat erbjudande och behöver se något, kommer de åtminstone att se reserverbjudandet. Den här datauppsättningen innehåller attributen för den här typen av erbjudande |
 | Repository - Personalized offers | detta är databasen för en typ av erbjudande som en användare skapar. Den här datauppsättningen innehåller attribut om den här typen av erbjudande | Ultimate |

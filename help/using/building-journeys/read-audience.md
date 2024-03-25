@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: aktivitet, resa, läsning, målgrupp, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
+source-git-commit: e45ec5f0e1bbcc73892f9cde5923627886f44ef6
 workflow-type: tm+mt
-source-wordcount: '1398'
+source-wordcount: '1434'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,10 @@ Så här konfigurerar du aktiviteten Läs målgrupp:
 
    **Inkrementell läsning** alternativ: när en resa med återkommande **Läsa målgrupper** körs för första gången så att alla profiler i målgruppen kommer in på resan. Med det här alternativet kan ni efter den första förekomsten endast inrikta er på de personer som har gått in i målgruppen sedan den senaste körningen av resan.
 
+       >[!OBS!]
+       >
+       >Om du riktar in dig på en [anpassad publik för överföring](../audience/about-audiences.md#segments-in-travel-optimizer) i din resa hämtas profiler endast vid den första upprepningen om det här alternativet är aktiverat i en återkommande resa, eftersom dessa målgrupper är fasta.
+   
    **Tvinga återinträde vid upprepning**: det här alternativet gör att du kan göra så att alla profiler fortfarande finns kvar i resan automatiskt avslutar den vid nästa körning. Om du till exempel har två dagar på dig att vänta på en daglig återkommande resa, genom att aktivera det här alternativet, kommer profiler alltid att flyttas på nästa körning (så dagen efter), oavsett om de är i nästa körda målgrupp eller inte. Om livscykeln för dina profiler under den här resan kan vara längre än frekvensen för återkommande aktiviteter ska du inte aktivera det här alternativet för att säkerställa att profilerna kan slutföra sin resa.
 
 <!--

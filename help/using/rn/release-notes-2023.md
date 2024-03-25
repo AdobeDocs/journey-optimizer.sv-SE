@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 61e6291f-c063-44a0-950c-8bb76de693f2
-source-git-commit: 75638e9b463278efab16b2b85ed2707640f088f2
+source-git-commit: e45ec5f0e1bbcc73892f9cde5923627886f44ef6
 workflow-type: tm+mt
 source-wordcount: '4397'
 ht-degree: 8%
@@ -426,7 +426,7 @@ Sammanhangsberoende händelser relaterade till kampanjer är nu tillgängliga f�
 
 **Publiker**
 
-Målgruppsväljaren har förbättrats under resor eller kampanjer, med nya kolumner som visar målgruppernas ursprung och uppdateringsfrekvens. I och med lanseringen av Audience Composition-portalen har Adobe Experience Platform och Adobe Journey Optimizer uppdaterat användningen av&quot;målgrupper&quot; och&quot;segment&quot; i systemet och dokumentationen.
+Målgruppsväljaren har förbättrats under resor eller kampanjer, med nya kolumner som visar målgruppernas ursprung och uppdateringsfrekvens. I och med lanseringen av målgruppsportalen har Adobe Experience Platform och Adobe Journey Optimizer uppdaterat användningen av&quot;målgrupper&quot; och&quot;segment&quot; i systemet och dokumentationen.
 
 * Målgrupp: En uppsättning personer, konton, hushåll eller andra enheter som delar gemensamma egenskaper och beteenden.
 * Segmentdefinition: I Adobe Experience Platform används reglerna för att beskriva nyckelegenskaper eller beteenden hos en målgrupp. Termen kallades tidigare bara&quot;segment&quot;.
