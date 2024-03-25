@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
+source-git-commit: 99c509a00a3e8a4dbf9ae8a5b16aa799b0af2e13
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1591'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,11 @@ När kanalytorna har konfigurerats kan du välja dem när du skapar meddelanden 
 >title="Kanalytans inställningar"
 >abstract="För att kunna skapa åtgärder som e-post från en resa eller en kampanj måste du först skapa en kanalyta som definierar alla tekniska inställningar som krävs för dina meddelanden. Du måste ha behörighet att hantera meddelandeförinställningar för att skapa, redigera och ta bort kanalytor."
 
+>[!CONTEXTUALHELP]
+>id="ajo_surface_marketing_action"
+>title="Välj en marknadsföringsåtgärd"
+>abstract="Välj en marknadsföringsåtgärd i fältet för att koppla en medgivandepolicy till meddelandet."
+
 Så här skapar du en kanalyta:
 
 1. Öppna **[!UICONTROL Channels]** > **[!UICONTROL Branding]** > **[!UICONTROL Channel surfaces]** menyn och klicka sedan på **[!UICONTROL Create channel surface]**.
@@ -82,6 +87,19 @@ Så här skapar du en kanalyta:
    >[!NOTE]
    >
    >Mer information om hur du konfigurerar miljön för att skicka SMS-meddelanden finns i [det här avsnittet](../sms/sms-configuration.md).
+
+<!--
+1. Select a **[!UICONTROL Marketing action]** to associate consent policies to the messages using this surface. All consent policies associated with that marketing action are leveraged in order to respect the preferences of your customers. [Learn more](../action/consent.md#marketing-actions)
+
+    >[!NOTE]
+    >
+    >Consent policies are currently only available for organizations that have purchased the **Healthcare Shield** and **Privacy and Security Shield** add-on offerings. [Learn more](https://experienceleague.adobe.com/docs/events/customer-data-management-voices-recordings/governance/healthcare-shield.html){target="_blank"}
+
+    ![](assets/surface-marketing-action.png)
+
+    >[!NOTE]
+    >
+    >You can only select one marketing action.-->
 
 1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara kanalytan som ett utkast och återuppta konfigurationen senare.
 
