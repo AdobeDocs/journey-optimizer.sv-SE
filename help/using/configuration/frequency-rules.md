@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: 949e7cd05a2b1125e13615814f6501b3906e470c
+source-git-commit: 12f6c41252809bcc85bc076902f9a831a6c6e7d9
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1182'
 ht-degree: 0%
 
 ---
@@ -127,7 +127,7 @@ Den dagliga frekvensen gäller för dagen till 23:59:59 UTC och återställer ti
 
 >[!NOTE]
 >
->Vid hantering av [gruppsegmentering](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#batch){target="_blank"}, the daily counters may not accurately reflect the current values as the daily counter snapshot is taken at midnight UTC the night before. Consequently, relying on daily counters in this scenario becomes impractical, as the snapshot does not reflect the most up-to-date counter values on the profile. To ensure accuracy for daily frequency capping rules, the use of [streaming segmentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html){target="_blank"} rekommenderas. Läs mer om metoder för målgruppsutvärdering i [det här avsnittet](../audience/about-audiences.md#evaluation-method-in-journey-optimizer).
+>För att säkerställa exaktheten i de dagliga reglerna för frekvensbegränsning bör man använda [strömningssegmentering](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html){target="_blank"} rekommenderas. Läs mer om metoder för målgruppsutvärdering i [det här avsnittet](../audience/about-audiences.md#evaluation-method-in-journey-optimizer).
 
 ## Aktivera en regel {#activate-rule}
 

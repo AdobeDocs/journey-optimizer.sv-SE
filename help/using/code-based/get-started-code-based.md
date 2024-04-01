@@ -6,9 +6,9 @@ topic: Content Management
 role: User, Developer, Admin
 level: Experienced
 exl-id: 987de2bf-cebe-4753-98b4-01eb3fded492
-source-git-commit: bb9ebf5900f38c3729321330eee176489a86cd8e
+source-git-commit: 12f6c41252809bcc85bc076902f9a831a6c6e7d9
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1080'
 ht-degree: 1%
 
 ---
@@ -147,15 +147,15 @@ Tabellerna nedan visar några exempel på URI-definitioner för olika enheter.
 | --------- | ----------- | ------- | 
 | Webb | web://domain.com/path/page.html#element | Representerar ett enskilt element på en viss sida i en viss domän, där ett element kan vara en etikett som i följande exempel: hero_banner, top_nav, menu, footer osv. |
 | iOS | mobileapp://com.vendor.bundle/activity#element | Representerar ett specifikt element i en intern programaktivitet, till exempel en knapp eller ett annat vyelement. |
-| Android-app | mobileapp://com.vendor.bundle#element | Representerar ett specifikt element i ett systemspecifikt program. |
+| Android-app | mobileapp://com.vendor.bundle/#element | Representerar ett specifikt element i ett systemspecifikt program. |
 
 **Andra enhetstyper**
 
 | Typ | URI | Beskrivning |
 | --------- | ----------- | ------- | 
-| Skrivbord | desktop://com.vendor.bundle#element | Representerar ett specifikt element i ett program, t.ex. en knapp, en meny, en hjältebanderoll. |
-| TV-app | tvcd://com.vendor.bundle#element | Representerar ett specifikt element i en app som är ansluten till en smart TV eller TV - paket-ID. |
-| Tjänst | service://servicename#element | Representerar en process på serversidan eller en annan manuell enhet. |
+| Skrivbord | desktop://com.vendor.bundle/#element | Representerar ett specifikt element i ett program, t.ex. en knapp, en meny, en hjältebanderoll. |
+| TV-app | tvcd://com.vendor.bundle/#element | Representerar ett specifikt element i en app som är ansluten till en smart TV eller TV - paket-ID. |
+| Tjänst | service://servicename/#element | Representerar en process på serversidan eller en annan manuell enhet. |
 | Kiosk | kiosk://location/screen#element | Exempel på möjliga ytterligare yttyper som enkelt kan läggas till. |
 | ATM | atm://location/screen#element | Exempel på möjliga ytterligare yttyper som enkelt kan läggas till. |
 
@@ -163,7 +163,5 @@ Tabellerna nedan visar några exempel på URI-definitioner för olika enheter.
 
 | Typ | URI | Beskrivning |
 | --------- | ----------- | ------- | 
-| Webben med jokertecken | jokertecken:web:/domain.com/`*`#element | Jokertecknets yta - representerar ett enskilt element på varje sida under en specifik domän. |
-| Webben med jokertecken | jokertecken:web://`*`domain.com/`*`#element | Jokerteckenyta - representerar ett enskilt element på varje sida under alla domäner som slutar med &quot;domain.com&quot;. |
-
-
+| Webben med jokertecken | `wildcard:web://domain.com/*#element` | Jokertecknets yta - representerar ett enskilt element på varje sida under en specifik domän. |
+| Webben med jokertecken | `wildcard:web://*domain.com/*#element` | Jokerteckenyta - representerar ett enskilt element på varje sida under alla domäner som slutar med &quot;domain.com&quot;. |
