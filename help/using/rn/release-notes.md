@@ -6,7 +6,7 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
+source-git-commit: d741a34a0418dc88db730d0b953cb5c7db8dc103
 workflow-type: tm+mt
 source-wordcount: '1392'
 ht-degree: 7%
@@ -49,7 +49,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <li>Detaljerad redigeringsprecision: redigera specifikt innehåll på enskilda platser i dina program eller webbsidor</li>
 <li>Mångsidig implementering: stöd för implementeringsmetoder på serversidan, API-baserade eller SDK-baserade, för smidig integrering med utvecklingsmiljön.</li></ul></p>
 <p>Mer information finns i den <a href="../code-based/get-started-code-based.md">detaljerade dokumentationen</a>.</p>
-<img src="assets/do-not-localize/code-based.gif">
+<img src="assets/do-not-localize/code-based.gif"> 
 </tr>
 </tbody>
 </table>
@@ -113,7 +113,7 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <td>
 <p>Förutom e-post finns nu innehållsmallar för följande kanaler: push, in-app, SMS och Direct mail, där varje kanal har dedikerade malltyper. För E-post kan du nu välja innehållstypen, som gör att du kan spara ämnesraden som en del av din e-postmall. <br/><br/></p>
 <p>Mer information finns i den <a href="../content-management/content-templates.md">detaljerade dokumentationen</a>.<br></br></p>
-<img src="assets/do-not-localize/multi-chan-templates.gif">
+<img src="assets/do-not-localize/multi-chan-templates.gif"> 
 </tr>
 </tbody>
 </table>
