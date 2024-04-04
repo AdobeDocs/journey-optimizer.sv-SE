@@ -6,10 +6,10 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 692d0aae-6fa1-40b8-a35f-9845d78317a3
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 2ef555bd10d7b8fa32c1324b201d55d2a4b1aec7
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 2%
+source-wordcount: '1025'
+ht-degree: 1%
 
 ---
 
@@ -21,9 +21,9 @@ Du kan skapa och leverera erbjudanden genom att göra en förfrågan till POSTEN
 
 Den här självstudiekursen kräver en fungerande förståelse av API:er, särskilt när det gäller beslutshantering. Mer information finns i [Utvecklarhandbok för API för beslutshantering](../getting-started.md). Den här självstudien kräver också att du har ett unikt värde för placering-ID och beslut-ID tillgängligt. Om du inte har fått dessa värden kan du gå till självstudiekurserna för [skapa en placering](../offers-api/placements/create.md) och [skapa ett beslut](../activities-api/activities/create.md).
 
-➡️  [Upptäck den här funktionen i en video](#video)
+➡️  [Upptäck den här funktionen i video](#video)
 
-## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
+## Obligatoriska rubriker {#required-headers}
 
 I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
 
@@ -31,25 +31,31 @@ I följande tabell visas giltiga värden som utgör *Content-Type* och *Accepter
 | ----------- | ----- |
 | Acceptera | `application/vnd.adobe.xdm+json; schema="https://ns.adobe.com/experience/offer-management/decision-response;version=1.0"` |
 | Content-Type | `application/vnd.adobe.xdm+json; schema="https://ns.adobe.com/experience/offer-management/decision-request;version=1.0"` |
+| Behörighet | `Bearer {ACCESS_TOKEN}` |
+| x-gw-ims-org-id | `{IMS_ORG}` |
+| x-sandbox-name | `{SANDBOX_NAME}` |
+| x-api-key | `{API_KEY}` |
+
+* Alla begäranden som innehåller en nyttolast (POST, PUT, PATCH) kräver innehållstyphuvudet
 
 ## API-begäran {#request}
 
 ### API-format
 
 ```https
-POST /{ENDPOINT_PATH}/{CONTAINER_ID}/decisions
+POST /{ENDPOINT_PATH}/decisions
 ```
 
 | Parameter | Beskrivning | Exempel |
 | --------- | ----------- | ------- |
-| `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/ode/` |
+| `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/ods` |
 | `{CONTAINER_ID}` | Behållaren där besluten finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
 
 ### Begäran
 
 ```shell
 curl -X POST \
-  'https://platform.adobe.io/data/core/ode/e0bd8463-0913-4ca1-bd84-6309134ca1f6/decisions' \
+  'https://platform.adobe.io/data/core/ods/decisions' \
   -H 'Accept: application/vnd.adobe.xdm+json; schema="https://ns.adobe.com/experience/offer-management/decision-response;version=1.0"' \
   -H 'Content-Type: application/vnd.adobe.xdm+json; schema="https://ns.adobe.com/experience/offer-management/decision-request;version=1.0"'
   -H 'Authorization: Bearer {ACCESS_TOKEN}' \
@@ -209,15 +215,15 @@ Tabellen nedan visar alla koder som kan returneras i svaret:
 | 500 | Internt serverfel. Servern påträffade ett oväntat tillstånd som gjorde att den inte kunde slutföra begäran. |
 | 503 | Tjänsten är inte tillgänglig på grund av serveröverbelastning. Servern kan för närvarande inte hantera begäran på grund av en tillfällig överbelastning. |
 
-## Självstudievideo {#video}
+<!-- ## Tutorial video {#video}
 
-Följande video är avsedd att ge stöd för din förståelse av komponenterna i Beslutshantering.
+The following video is intended to support your understanding of the components of Decision Management.
 
 >[!NOTE]
 >
->Den här videon gäller för Offera decisioningens programtjänst som är byggd på Adobe Experience Platform. Det ger dock allmän vägledning om hur man använder Erbjudandet inom ramen för Journey Optimizer.
+>This video applies to the Offer Decisioning application service built on Adobe Experience Platform. However, it provides generic guidance to use Offer in the context of Journey Optimizer.
 
->[!VIDEO](https://video.tv.adobe.com/v/329919/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/329919/?quality=12) -->
 
 ## Nästa steg {#next-steps}
 
