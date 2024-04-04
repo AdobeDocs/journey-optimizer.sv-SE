@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
-source-git-commit: 03e93e6a6652ffbe1cfdea3361e0a0d517cc39d8
+source-git-commit: 5a80d7c9b12cb9d354b725b7f83f557fc15e6a90
 workflow-type: tm+mt
-source-wordcount: '2346'
-ht-degree: 1%
+source-wordcount: '2539'
+ht-degree: 0%
 
 ---
 
@@ -254,24 +254,32 @@ Du kan också ange om du vill att appen ska användas för alla användare eller
 >title="Ange takfrekvens"
 >abstract="Du kan välja att återställa antalet erbjudanden per dag, vecka eller månad. Observera att när du har publicerat erbjudandet med frekvensbegränsning aktiverat kan du inte ändra den frekvens som har definierats."
 
-The **[!UICONTROL Frequency]** kan du definiera hur ofta antalet capping återställs. Om du vill göra det anger du tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och anger hur många dagar/veckor/månader du vill ha.
+The **[!UICONTROL Frequency]** kan du definiera hur ofta antalet capping återställs. Om du vill göra det anger du tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och anger hur många dagar/veckor/månader du vill ha. Om du till exempel vill att antalet fästingar ska återställas varannan vecka väljer du **[!UICONTROL Weekly]** från motsvarande nedrullningsbar lista och typ **2** i det andra fältet.
 
 ![](../assets/offer-capping-frequency.png)
 
-
 >[!NOTE]
 >
->Återställningen sker kl. 12.00 UTC, den dag du har definierat eller den första dagen i veckan/månaden när det är tillämpligt. Veckostartdagen är söndag. En varaktighet som du väljer får inte överstiga 2 år (dvs. motsvarande antal månader, veckor eller dagar).
+>Räknaren för frekvensbegränsning återställs på **12 am UTC**, den dag du definierade eller den första dagen i veckan/månaden, om tillämpligt. Veckostartdagen är **söndag**.
 >
->Räknaren för frekvensbegränsning uppdateras och är tillgänglig i ett beslut av Edge Decisioning API på mindre än 3 sekunder.
+>Den längd du väljer får inte överskrida **2 år** (dvs. motsvarande antal månader, veckor eller dagar).
 
-Om du till exempel vill att antalet fästingar ska återställas varannan vecka väljer du **[!UICONTROL Weekly]** från motsvarande nedrullningsbar lista och typ **2** i det andra fältet. Återställningen sker varannan söndag kl. 12.00 UTC.
+När du har publicerat ditt erbjudande kan du inte ändra den tidsperiod (månadsvis, veckovis eller dagligen) som du har valt för frekvensen. Du kan fortfarande redigera frekvensbegränsningen om erbjudandet innehåller **[!UICONTROL Draft]** status och har aldrig publicerats tidigare med frekvensbegränsning aktiverad.
 
->[!CAUTION]
->
->När du har publicerat ditt erbjudande kan du inte ändra den tidsperiod (månadsvis, veckovis eller dagligen) som du har valt för frekvensen.
->
->Du kan fortfarande redigera frekvensbegränsningen om erbjudandet innehåller **[!UICONTROL Draft]** status och har aldrig publicerats tidigare med frekvensbegränsning aktiverad.
++++ **Måste läsas: API för frekvensbegränsning och Edge Decision**
+
+* Räknaren för frekvensbegränsning uppdateras och är tillgänglig i ett beslut av Edge Decisioning API på mindre än 3 sekunder.
+
+* Varje navområde är associerat med ett eller flera kantområden. Regler för frekvensbegränsning genereras och exporteras från varje navregion till de associerade kantområdena. När ett beslut fattas med Edge Decision API, verkställer systemet reglerna som finns i samma edge-region:
+
+   * Om det finns en matchande regel ökas profilens räknare för frekvensbegränsning.
+   * Annars skapas ingen räknare för profilen och regeln för frekvensbegränsning gäller inte. Profilen kommer därför även i fortsättningen att få personaliserade erbjudanden, även om tröskelvärdet överskrids.
+
+  Låt oss till exempel se organisationens navet som *NLD2* och du skickar en beslutsbegäran från Europa (*IRL1* kantområde). I det här scenariot kommer beslutsbegäran att öka profilens räknare, eftersom reglerna är tillgängliga i (Irland) *IRL1* region. Om beslutsbegäran däremot kommer från en region som Japan (*JPN3*), som inte är ett kantområde knutet till (Nederländerna) *NLD2* navregion, ingen räknare skapas och reglerna för frekvensbegränsning kommer inte att tillämpas.
+
+  Om du vill ha mer information om vilka nav- och kantområden som är kopplade till din organisation kan du kontakta din Adobe-representant.
+
++++
 
 ### Takning och placeringar {#placements}
 
