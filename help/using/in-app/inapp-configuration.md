@@ -6,20 +6,23 @@ feature: In App
 level: Intermediate
 keywords: in-app, meddelande, konfiguration, plattform
 exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
-source-git-commit: 21c15e003609a7ed016391bfe499ce245736db0e
+source-git-commit: f759c88ed46d8c13e2844c48a71a2634d9507fd8
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '771'
 ht-degree: 1%
 
 ---
 
 # Krav och konfiguration {#inapp-configuration}
 
-För att kunna skicka meddelanden i appen, resor och kampanjer i [!DNL Journey Optimizer]måste du gå igenom följande konfigurationssteg.
+## Konfigurationssteg {#inapp-steps}
 
-1. Se till att du har rätt behörigheter för Journey Optimizer-kampanjer innan du startar, även om du bara tänker använda meddelanden i appen under resor. Kampanjbehörigheter krävs fortfarande. [Läs mer](../campaigns/get-started-with-campaigns.md#campaign-prerequisites)
+Skicka meddelanden i appen under resor och kampanjer med [!DNL Journey Optimizer]måste du gå igenom följande konfigurationssteg.
+
+1. Se till att du har rätt behörigheter för Journey Optimizer-kampanjer innan du startar, även om du bara tänker använda meddelanden i appen under resor. Kampanjbehörigheter krävs fortfarande. [Läs mer](../campaigns/get-started-with-campaigns.md#campaign-prerequisites).
+Ett specifikt tillstånd måste beviljas för att få åtkomst till **Appytor** i Adobe Experience Platform Data Collection. Läs mer i [den här videon](#video).
 1. Aktivera Adobe Journey Optimizer i Adobe Experience Platform Data Collection datastream och kontrollera din standardpolicy för sammanfogning i Adobe Experience Platform, enligt informationen i [Leveransvillkor](#delivery-prerequisites) nedan.
-1. Skapa och konfigurera en appyta i Adobe Experience Platform Data Collection, vilket beskrivs i [det här avsnittet](#channel-prerequisites). Ett specifikt tillstånd måste beviljas för att få åtkomst till **Appytor** i Adobe Experience Platform Data Collection. Läs mer i [den här videon](#video).
+1. Skapa och konfigurera en appyta i Adobe Experience Platform Data Collection, vilket beskrivs i [det här avsnittet](#channel-prerequisites).
 1. Om du använder innehållsexperiment måste du se till att följa de krav som listas i [det här avsnittet](#experiment-prerequisite).
 
 När du är klar kan du skapa, konfigurera och skicka ditt första meddelande i appen. Lär dig hur du uppnår detta i [det här avsnittet](create-in-app.md).
@@ -135,10 +138,9 @@ Om du **not** med följande fördefinierade [fältgrupper](https://experiencelea
 >
 >När du lägger till dessa fältgrupper påverkas inte den normala datainsamlingen. Den är bara additiv för de sidor där ett experiment pågår, och lämnar all annan spårning orörd.
 
-## Instruktionsfilmer{#video}
+## Instruktionsvideo{#video}
 
 I videon nedan visas hur du tilldelar **Hantera appkonfiguration** behörighet att komma åt appens ytmeny.
-
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421607)
 
