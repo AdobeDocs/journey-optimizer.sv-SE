@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e851646e-4cef-45e8-97c2-a8f4c9d2cc08
-source-git-commit: 5671f510d8be80b53d57b1ff90a101e500773243
+source-git-commit: 90b08388d3b43ad8d8cfc7efec119217f531860f
 workflow-type: tm+mt
-source-wordcount: '4061'
+source-wordcount: '4105'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,8 @@ Från din resa **[!UICONTROL Global report]**, **[!UICONTROL Journey]** -fliken 
 ![](assets/journey_performance.png)
 
 The **[!UICONTROL Journey Performance]** Med widgeten kan du visuellt spåra sökvägen för dina målprofiler när de navigerar genom din resa.
+
+Observera att antalet profiler för en nod endast uppdateras när profilen har slutfört noden, inte när den anges. Till exempel en profil på en **Vänta** noden räknas bara när det angivna datumet har nåtts och profilen har avslutat noden.
 
 ### Resestatistik {#journey-statistics}
 

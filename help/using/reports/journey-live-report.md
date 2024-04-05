@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e3781f79-7c8d-4512-b44f-835639b1471f
-source-git-commit: 75638e9b463278efab16b2b85ed2707640f088f2
+source-git-commit: 90b08388d3b43ad8d8cfc7efec119217f531860f
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3485'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,8 @@ Från din resa **[!UICONTROL Live report]**, **[!UICONTROL Journey]** -fliken ge
 ![](assets/journey_live_performance.png)
 
 **[!UICONTROL Journey Performance]** gör att du kan se vägen för dina målprofiler steg för steg under hela kundresan.
+
+Observera att antalet profiler för en nod endast uppdateras när profilen har slutfört noden, inte när den anges. Till exempel en profil på en **Vänta** noden räknas bara när det angivna datumet har nåtts och profilen har avslutat noden.
 
 ### Resestatistik {#journey-statistics}
 
