@@ -8,9 +8,9 @@ feature: Web Channel, Subdomains
 level: Experienced
 keywords: webb, underdomäner, konfiguration
 exl-id: 6e00466d-4ce5-4d80-89ff-c7331a5ab158
-source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
+source-git-commit: bfb9e797757a96b1e39736f532ee9308f87bb71f
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -105,6 +105,10 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 
 Följ stegen nedan för att konfigurera en ny underdomän.
 
+>[!NOTE]
+>
+>Som standard [!DNL Journey Optimizer] Med kan du delegera upp till 10 underdomäner totalt (som omfattar både e-post och webbkanaler). Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. Kontakta Adobe och läs mer om hur många underdomäner du har rätt till.
+
 1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** väljer du **[!UICONTROL web configuration]** > **[!UICONTROL web subdomains]**.
 
 1. Klicka på **[!UICONTROL Set up subdomain]**.
@@ -152,7 +156,6 @@ Följ stegen nedan för att konfigurera en ny underdomän.
 1. När kontrollerna är slutförda får underdomänen **[!UICONTROL Success]** status. Den är klar att användas för att skapa webbkanalsytor.
 
    Observera att underdomänen markeras som **[!UICONTROL Failed]** om du inte skapar valideringsposten i din värdlösning.
-
 
 <!--
 Only a subdomain with the **[!UICONTROL Success]** status can be set as default.

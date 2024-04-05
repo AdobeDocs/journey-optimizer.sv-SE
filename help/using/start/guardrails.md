@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 75638e9b463278efab16b2b85ed2707640f088f2
+source-git-commit: bfb9e797757a96b1e39736f532ee9308f87bb71f
 workflow-type: tm+mt
-source-wordcount: '1971'
+source-wordcount: '2025'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,6 @@ Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera opti
 * Du kan inte lägga till bilagor i ett e-postmeddelande med [!DNL Journey Optimizer].
 * Du kan inte använda samma sändande domän för att skicka ut meddelanden från [!DNL Adobe Journey Optimizer] och från en annan produkt, som [!DNL Adobe Campaign] eller [!DNL Adobe Marketo Engage] till exempel.
 
-
 ## Garantier för landningssidor {#lp-guardrails}
 
 * Bara en **Formulär** -komponenten kan användas på en enda primär sida.
@@ -46,6 +45,12 @@ Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera opti
 * Mediefiler för MMS kan inkluderas via en URL som stöds. Kontrollera att mediefilen överförs separat.
 * Synkronisering av meddelandefeedback är för närvarande inte tillgängligt för MMS.
 * Samtalshantering fungerar på SMS-kanalnivå för MMS.
+
+## Underdomänsskydd {#subdomain-guardrails}
+
+Som standard [!DNL Journey Optimizer] Med kan du delegera upp till 10 underdomäner totalt (som omfattar både e-post och webbkanaler).
+
+Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. Kontakta Adobe och läs mer om hur många underdomäner du har rätt till.
 
 ## Fragmentskyddsräcken {#fragments-guardrails}
 
