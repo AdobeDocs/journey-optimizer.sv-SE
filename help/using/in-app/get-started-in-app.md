@@ -7,10 +7,10 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: 51562843-7b50-4eb5-bf79-5ce03f7549cb
-source-git-commit: a20e01e66138ea5bb7be4d36c0d55b24ab9426db
+source-git-commit: 21c15e003609a7ed016391bfe499ce245736db0e
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 3%
+source-wordcount: '145'
+ht-degree: 0%
 
 ---
 
@@ -22,19 +22,19 @@ Använd Journey Optimizer för att skapa meddelanden i appen och konfigurera upp
 
 >[!AVAILABILITY]
 >
->För tillfället är inte In-app-kanalen tillgänglig för organisationer som har köpt Adobe **Hälsovårdssköld** och **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
+>Kanalen i appen är inte tillgänglig för organisationer som har köpt Adobe **Hälsovårdssköld** och **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
 
-## Förutsättningar{#prerequisites-in-app}
-
-Innan du skickar meddelanden i appen måste du:
-
-* Konfigurera appkanalen. [Läs mer](inapp-configuration.md)
-
-* Se till att du har rätt behörigheter för Journey Optimizer-kampanjer innan du startar, även om du bara tänker använda meddelanden i appen under resor. Kampanjbehörigheter krävs fortfarande. [Läs mer](../campaigns/get-started-with-campaigns.md#campaign-prerequisites)
-
-När du är klar kan du skapa, konfigurera och skicka ditt första meddelande i appen. Lär dig hur du uppnår detta i [det här avsnittet](create-in-app.md).
 
 <table style="table-layout:fixed"><tr style="border: 0;">
+<td>
+<a href="inapp-configuration.md">
+<img alt="Validering" src="../assets/do-not-localize/inapp-config.jpg">
+</a>
+<div>
+<a href="inapp-configuration.md"><strong>Konfigurera kanal i appen</strong></a>
+</div>
+<p>
+</td>
 <td>
 <a href="create-in-app.md">
 <img alt="Lead" src="../assets/do-not-localize/inapp-create.jpeg">
@@ -57,15 +57,6 @@ När du är klar kan du skapa, konfigurera och skicka ditt första meddelande i 
 </a>
 <div>
 <a href="../reports/campaign-global-report.md#inapp-global"><strong>Åtkomst till apprapport</strong></a>
-</div>
-<p>
-</td>
-<td>
-<a href="inapp-configuration.md">
-<img alt="Validering" src="../assets/do-not-localize/inapp-config.jpg">
-</a>
-<div>
-<a href="inapp-configuration.md"><strong>Konfigurera kanal i appen</strong></a>
 </div>
 <p>
 </td>

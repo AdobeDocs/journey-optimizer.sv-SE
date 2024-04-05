@@ -1,19 +1,29 @@
 ---
-title: Krav för kanaler i appen
+title: Krav och konfiguration för kanaler i appen
 description: Lär dig hur du konfigurerar miljön för att skicka meddelanden i appen med Journey Optimizer
 role: Admin
 feature: In App
 level: Intermediate
 keywords: in-app, meddelande, konfiguration, plattform
 exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
-source-git-commit: 7e850261f1a82492c5df93c4437b4e3c6859a2d7
+source-git-commit: 21c15e003609a7ed016391bfe499ce245736db0e
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '770'
 ht-degree: 1%
 
 ---
 
-# Krav för kanaler i appen {#inapp-configuration}
+# Krav och konfiguration {#inapp-configuration}
+
+För att kunna skicka meddelanden i appen, resor och kampanjer i [!DNL Journey Optimizer]måste du gå igenom följande konfigurationssteg.
+
+1. Se till att du har rätt behörigheter för Journey Optimizer-kampanjer innan du startar, även om du bara tänker använda meddelanden i appen under resor. Kampanjbehörigheter krävs fortfarande. [Läs mer](../campaigns/get-started-with-campaigns.md#campaign-prerequisites)
+1. Aktivera Adobe Journey Optimizer i Adobe Experience Platform Data Collection datastream och kontrollera din standardpolicy för sammanfogning i Adobe Experience Platform, enligt informationen i [Leveransvillkor](#delivery-prerequisites) nedan.
+1. Skapa och konfigurera en appyta i Adobe Experience Platform Data Collection, vilket beskrivs i [det här avsnittet](#channel-prerequisites). Ett specifikt tillstånd måste beviljas för att få åtkomst till **Appytor** i Adobe Experience Platform Data Collection. Läs mer i [den här videon](#video).
+1. Om du använder innehållsexperiment måste du se till att följa de krav som listas i [det här avsnittet](#experiment-prerequisite).
+
+När du är klar kan du skapa, konfigurera och skicka ditt första meddelande i appen. Lär dig hur du uppnår detta i [det här avsnittet](create-in-app.md).
+
 
 ## Leveransvillkor {#delivery-prerequisites}
 
@@ -127,13 +137,11 @@ Om du **not** med följande fördefinierade [fältgrupper](https://experiencelea
 
 ## Instruktionsfilmer{#video}
 
-* I videon nedan visas hur du tilldelar **Hantera appkonfiguration** behörighet att komma åt appens ytmeny.
+I videon nedan visas hur du tilldelar **Hantera appkonfiguration** behörighet att komma åt appens ytmeny.
 
-  +++Se video
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3421607)
+>[!VIDEO](https://video.tv.adobe.com/v/3421607)
 
-+++
 
 **Relaterade ämnen:**
 
