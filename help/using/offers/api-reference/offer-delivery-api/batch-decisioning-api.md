@@ -6,9 +6,9 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 1ed01a6b-5e42-47c8-a436-bdb388f50b4e
-source-git-commit: bb7b79286514dcc6931f7ba8dbf2542076d754fe
+source-git-commit: bab4cd8065830e36fd6188d3ebf0bd62a63947f3
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '729'
 ht-degree: 1%
 
 ---
@@ -127,7 +127,6 @@ Se [Beslutsledningens dokumentation](../../get-started/starting-offer-decisionin
 | -------- | ----------- | ------- |
 | `@id` | UUID som genereras av beslutshantering som identifierar en enskild arbetsbelastning. | `5d0ffb5e-dfc6-4280-99b6-0bf3131cb8b8` |
 | `xdm:imsOrgId` | Organisations-ID. | `9GTO98D5F@AdobeOrg` |
-| `xdm:containerId` | Behållar-ID. | `0948b1c5-fff8-3b76-ba17-909c6b93b5a2` |
 | `ode:createDate` | Den tid då begäran om beslutsarbetsbelastning skapades. | `1648078924834` |
 | `ode:status` | Status för arbetsbelastningen. | `ode:status: "QUEUED"` |
 
@@ -174,7 +173,6 @@ curl -X GET 'https://platform.adobe.io/data/core/dwm/workloads/decisions/f395ab1
 | -------- | ----------- | ------- |
 | `@id` | UUID som genereras av beslutshantering som identifierar en enskild arbetsbelastning. | `5d0ffb5e-dfc6-4280-99b6-0bf3131cb8b8` |
 | `xdm:imsOrgId` | Organisations-ID | `9GTO98D5F@AdobeOrg` |
-| `xdm:containerId` | Behållar-ID | `0948b1c5-fff8-3b76-ba17-909c6b93b5a2` |
 | `ode:createDate` | Den tid då begäran om beslutsarbetsbelastning skapades. | `1648076994405` |
 | `ode:status` | Arbetsbelastningens status börjar med &quot;QUEUED&quot; och ändras till &quot;PROCESSING&quot;, &quot;INGESTING&quot;, &quot;COMPLETED&quot; eller &quot;ERROR&quot;. | `ode:status: "COMPLETED"` |
 | `ode:statusDetail` | Detta visar mer information, till exempel sparkJobId och batchID, om statusen är &quot;PROCESSING&quot; eller &quot;INGESTING&quot;. Felinformationen visas om statusen är FEL. |  |
