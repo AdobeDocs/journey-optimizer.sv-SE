@@ -11,7 +11,8 @@ keywords: inställningar, e-post, konfiguration, underdomän
 hide: true
 hidefromtoc: true
 badge: label="Beta"
-source-git-commit: e63823dc2f901b870f11b0478e682e2af61b5b98
+exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
+source-git-commit: 94d39089d94b4fe42eb3fb95603426012b104517
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 0%
@@ -81,7 +82,7 @@ Följ stegen nedan för att definiera dynamiska underdomäner i en e-postkanal.
 
    ![](assets/surface-email-add-dynamic-subdomain.png)
 
-<!--Select the [IP pool](../configuration/ip-pools.md) to associate with the surface. [Learn more](email-settings.md#subdomains-and-ip-pools)-->
+   <!--Select the [IP pool](../configuration/ip-pools.md) to associate with the surface. [Learn more](email-settings.md#subdomains-and-ip-pools)-->
 
 1. Definiera alla andra [e-postinställningar](email-settings.md) och [skicka](../configuration/channel-surfaces.md#create-channel-surface) din yta.
 
@@ -154,7 +155,7 @@ När du använder en yta med personaliserade inställningar i en kampanj eller e
 
    ![](assets/campaign-view-surface-details.png)
 
-1. The **[!UICONTROL Delivery settings]** visas. Du kan visa alla ytinställningar, inklusive dynamiska underdomäner och anpassade huvudparametrar.
+1. The **[!UICONTROL Delivery settings]** visas. Du kan visa alla ytinställningar, inklusive dynamiska underdomäner och anpassade rubrikparametrar.
 
    >[!NOTE]
    >
@@ -163,4 +164,3 @@ När du använder en yta med personaliserade inställningar i en kampanj eller e
 1. Välj **[!UICONTROL Expand]** för att visa information om de dynamiska underdomänerna.
 
    ![](assets/campaign-delivery-settings-subdomain-expand.png)
-
