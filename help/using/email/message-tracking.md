@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: länkar, spåra, övervaka, e-post
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+source-git-commit: c082d9329949fd8dc68929e3934daf2d9dfdbd46
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
@@ -162,7 +162,7 @@ The [E-postdesigner](content-from-scratch.md) gör att du kan hantera spårade U
 
 Rapportering om öppningar och klick finns i [Live-rapport](../reports/live-report.md) och i [Global rapport](../reports/global-report.md).
 
-## URL-uppföljning {#url-tracking}
+## Anpassa URL-spårning {#url-tracking}
 
 Vanligtvis [URL-uppföljning](email-settings.md#url-tracking) hanteras på ytnivå, men profilattribut stöds inte. För närvarande är det enda sättet att göra det på att [personalisera URL:er](../personalization/personalization-syntax.md#perso-urls) i e-postdesignern.
 
