@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: c082d9329949fd8dc68929e3934daf2d9dfdbd46
+source-git-commit: e63823dc2f901b870f11b0478e682e2af61b5b98
 workflow-type: tm+mt
-source-wordcount: '2314'
+source-wordcount: '2309'
 ht-degree: 0%
 
 ---
@@ -239,8 +239,6 @@ När det här alternativet är aktiverat kan kunden, trots att kunden har marker
 >title="Lägga till en startvärdeslista"
 >abstract="Välj önskad startlista för att automatiskt lägga till specifika interna adresser till era målgrupper. Dessa dirigerade adresser kommer att inkluderas vid leveranstillfället och kommer att få en exakt kopia av meddelandet i säkerhetssyfte."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/seed-lists.html#use-seed-list" text="Vad är utsädeslistor?"
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/seed-lists.html#create-seed-list" text="Skapa en startvärdeslista"
-
 
 En lista med startsidor i [!DNL Journey Optimizer] gör att du automatiskt kan inkludera specifika e-postadresser i dina leveranser. [Läs mer](../configuration/seed-lists.md)
 
