@@ -9,9 +9,9 @@ role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
+source-git-commit: 352ffebda7eda2ceb54b0f5c3f6d3b577522191f
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Om du vill aktivera skapande av profiler vid kampanjkörning växlar du **[!UICO
 
 >[!NOTE]
 >
->Okända profiler skapas i **AJO Interactive Messaging Profile - datauppsättning** datauppsättningen, i tre standardnamnutrymmen (e-post, telefon och ECID) för varje utgående kanal (e-post, SMS och push).
+>Okända profiler skapas i **AJO Interactive Messaging Profile - datauppsättning** datauppsättningen, i tre standardnamnutrymmen (e-post, telefon och ECID) för varje utgående kanal (e-post, SMS och push). Om du använder ett anpassat namnutrymme skapas emellertid identiteten med samma anpassade namnutrymme.
 
 ## Instruktionsvideo {#video}
 

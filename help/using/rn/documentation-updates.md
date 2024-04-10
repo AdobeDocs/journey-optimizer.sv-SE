@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 042c8a08597c800e64751f16f792954007ed0c08
+source-git-commit: 352ffebda7eda2ceb54b0f5c3f6d3b577522191f
 workflow-type: tm+mt
-source-wordcount: '5119'
+source-wordcount: '5136'
 ht-degree: 13%
 
 ---
@@ -24,7 +24,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Konfigurationsstegen för meddelanden i programmet har beskrivits. [Läs mer](../in-app/inapp-configuration.md)
 * Dokumentation för [Offer decisioning-API:er](../offers/api-reference/offer-delivery-api/decisioning-api.md) och [API:er för gruppbeslut](../offers/api-reference/offer-delivery-api/batch-decisioning-api.md) har uppdaterats.
 * Information har lagts till i dokumentationen för beslutshantering om hantering av edge- och navregioner när frekvensbegränsning används med Edge Decisioning API. [Läs mer](../offers/offer-library/add-constraints.md#frequency-capping)
-
+* Information har lagts till om att skapa en identitet med anpassade namnutrymmen när du arbetar med API-utlösta kampanjer. [Läs mer](../campaigns/api-triggered-campaigns.md)
 
 ## Mars 2024 {#march-2024}
 
