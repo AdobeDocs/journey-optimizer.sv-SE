@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: c082d9329949fd8dc68929e3934daf2d9dfdbd46
+source-git-commit: 81d54c026c52fe78b1b725d67da15505907b8bb9
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1746'
 ht-degree: 29%
 
 ---
@@ -23,6 +23,7 @@ ht-degree: 29%
       + [Versionsinformation 2022](using/rn/release-notes-2022.md)
       + [Versionsinformation 2021](using/rn/release-notes-2021.md)
    + [Dokumentationsuppdateringar](using/rn/documentation-updates.md)
+   + [Ny arbetsyta](using/rn/news-canvas.md)
 + Komma igång{#get-started}
    + [Vad är Journey Optimizer?](using/start/get-started.md)
    + Snabbstartguider{#quick-start}
@@ -203,10 +204,9 @@ ht-degree: 29%
    + Konfigurera e-postkanal {#configure-email}
       + [Kom igång med e-postkonfiguration](using/email/get-started-email-config.md)
       + [Konfigurera inställningar för e-postyta](using/email/email-settings.md)
-      + [Konfigurera dynamiska e-postdomäner](using/email/surface-personalization.md)
 + Kanal i appen{#in-app}
    + [Kom igång med kanalen i appen](using/in-app/get-started-in-app.md)
-   + [Krav och konfiguration](using/in-app/inapp-configuration.md)
+   + [Krav för kanaler i appen](using/in-app/inapp-configuration.md)
    + [Skapa ett meddelande i appen för mobiler](using/in-app/create-in-app.md)
    + [Skapa ett meddelande i appen för webben](using/in-app/create-in-app-web.md)
    + [Designa ditt innehåll i appen](using/in-app/design-in-app.md)
