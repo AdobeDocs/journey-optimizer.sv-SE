@@ -6,10 +6,10 @@ topic: Content Management
 role: Developer
 level: Experienced
 exl-id: e5ae8b4e-7cd2-4a1d-b2c0-8dafd5c4cdfd
-source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
+source-git-commit: 75dcd6d4a36b09809cdf4db3a0ae3ba3a1cb35b5
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 2%
+source-wordcount: '783'
+ht-degree: 1%
 
 ---
 
@@ -27,9 +27,17 @@ Kodbaserad upplevelse stöder alla typer av kundimplementeringar. På den här s
 
 ## Implementering på klientsidan {#client-side-implementation}
 
-Om du har en implementering på klientsidan kan du använda någon av AEP-klientens SDK: AEP Web SDK eller AEP Mobile SDK. Stegen nedan beskriver processen att hämta det innehåll som publiceras på kanten av de kodbaserade upplevelsekampanjerna i en exempelimplementering av Web SDK och visa det personaliserade innehållet.
+Om du har en implementering på klientsidan kan du använda någon av AEP-klientens SDK: AEP Web SDK eller AEP Mobile SDK.
 
-### Så fungerar det
+* Stegen [nedan](#client-side-how) beskriver processen att hämta det innehåll som publiceras i utkanten av de kodbaserade upplevelsekampanjerna i ett exempel **Web SDK** implementering och visning av det personaliserade innehållet.
+
+* Stegen för att implementera kodbaserad kanal med **Mobile SDK** beskrivs i [denna självstudiekurs](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial/){target="_blank"}.
+
+  >[!NOTE]
+  >
+  >Exempel på implementeringar för mobilanvändning finns för [iOS](https://github.com/adobe/aepsdk-messaging-ios/tree/main/TestApps/MessagingDemoAppSwiftUI){target="_blank"} and [Android app](https://github.com/adobe/aepsdk-messaging-android/tree/main/code/testapp){target="_blank"}.
+
+### Så här fungerar det - Web SDK {#client-side-how}
 
 1. [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"} finns på sidan.
 
@@ -48,61 +56,61 @@ Om du har en implementering på klientsidan kan du använda någon av AEP-klient
 
 1. För kodbaserade upplevelsekampanjer måste visningshändelser skickas manuellt för att ange när innehållet har visats. Detta görs via `sendEvent` -kommando.
 
-```javascript
-function sendDisplayEvent(decision) {
-  const { id, scope, scopeDetails = {} } = decision;
-
-  alloy("sendEvent", {
-
-    xdm: {
-      eventType: "decisioning.propositionDisplay",
-      _experience: {
-        decisioning: {
-          propositions: [
-            {
-              id: id,
-              scope: scope,
-              scopeDetails: scopeDetails,
-            },
-          ],
-        },
-      },
-    },
-  });
-}
-```
+   ```javascript
+   function sendDisplayEvent(decision) {
+     const { id, scope, scopeDetails = {} } = decision;
+   
+     alloy("sendEvent", {
+   
+       xdm: {
+         eventType: "decisioning.propositionDisplay",
+         _experience: {
+           decisioning: {
+             propositions: [
+               {
+                 id: id,
+                 scope: scope,
+                 scopeDetails: scopeDetails,
+               },
+             ],
+           },
+         },
+       },
+     });
+   }
+   ```
 
 1. För kodbaserade upplevelsekampanjer måste interaktionshändelser skickas manuellt för att ange när en användare har interagerat med innehållet. Detta görs via `sendEvent` -kommando.
 
-```javascript
-function sendInteractEvent(label, proposition) {
-  const { id, scope, scopeDetails = {} } = proposition;
-
-  alloy("sendEvent", {
-    
-    xdm: {
-      eventType: "decisioning.propositionInteract",
-      _experience: {
-        decisioning: {
-          propositions: [
-            {
-              id: id,
-              scope: scope,
-              scopeDetails: scopeDetails,
-            },
-          ],
-          propositionEventType: {
-            interact: 1
-          },
-          propositionAction: {
-            label: label
-          },
-        },
-      },
-    },
-  });
-}
-```
+   ```javascript
+   function sendInteractEvent(label, proposition) {
+     const { id, scope, scopeDetails = {} } = proposition;
+   
+     alloy("sendEvent", {
+   
+       xdm: {
+         eventType: "decisioning.propositionInteract",
+         _experience: {
+           decisioning: {
+             propositions: [
+               {
+                 id: id,
+                 scope: scope,
+                 scopeDetails: scopeDetails,
+               },
+             ],
+             propositionEventType: {
+               interact: 1
+             },
+             propositionAction: {
+               label: label
+             },
+           },
+         },
+       },
+     });
+   }
+   ```
 
 ### Viktiga kommentarer
 
@@ -130,7 +138,9 @@ Begäranden till Adobe Experience Platform API krävs för att få förslag och 
 
 ## Implementering på serversidan {#server-side-implementation}
 
-Om du har en implementering på serversidan kan du använda ett API för AEP Edge Network. Stegen nedan beskriver processen att hämta det innehåll som publiceras på kanten av de kodbaserade upplevelsekampanjerna i en exempelimplementering av Edge Network API för en webbsida och visa det personaliserade innehållet.
+Om du har en implementering på serversidan kan du använda ett API för AEP Edge Network.
+
+Stegen nedan beskriver processen att hämta det innehåll som publiceras på kanten av de kodbaserade upplevelsekampanjerna i en exempelimplementering av Edge Network API för en webbsida och visa det personaliserade innehållet.
 
 ### Så fungerar det
 
