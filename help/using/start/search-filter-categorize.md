@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 6151aea2-6a34-4000-ba48-161efe4d94d7
-source-git-commit: 50d3be8fb8ae04e1cab747f6ba4b1024c5e3ec97
+source-git-commit: aa53f96068e0cfa84c1ac5ddd32d36b3fb4bbd03
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 7%
@@ -67,7 +67,6 @@ The **[!UICONTROL Tags]** I kan du definiera taggar för objektet. Taggar är ti
 * [Fragment](../content-management/fragments.md)
 * [Prenumerationslistor](../landing-pages/subscription-list.md)
 * [Landningssidor](../landing-pages/create-lp.md)
-* 
 
 Du kan antingen markera en befintlig tagg eller skapa en ny. Följ stegen nedan för att göra det.
 
