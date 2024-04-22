@@ -8,16 +8,16 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 6151aea2-6a34-4000-ba48-161efe4d94d7
-source-git-commit: c2f2dde40385f56ea86be15a5857fa9e5e2e2fed
+source-git-commit: 50d3be8fb8ae04e1cab747f6ba4b1024c5e3ec97
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 8%
+source-wordcount: '523'
+ht-degree: 7%
 
 ---
 
 # Söka, filtrera, ordna {#search-filter-organize}
 
-## Sökning{#unified-search}
+## Sök{#unified-search}
 
 Var som helst från Adobe Journey Optimizer-gränssnittet kan du använda sökfunktionen för enhetliga Adobe Experience Cloud i mitten av det övre fältet för att hitta resurser, resor, datauppsättningar med mera i dina sandlådor.
 
@@ -67,8 +67,9 @@ The **[!UICONTROL Tags]** I kan du definiera taggar för objektet. Taggar är ti
 * [Fragment](../content-management/fragments.md)
 * [Prenumerationslistor](../landing-pages/subscription-list.md)
 * [Landningssidor](../landing-pages/create-lp.md)
+* 
 
-Du kan antingen markera en befintlig tagg eller skapa en ny. För att göra detta, följ nedanstående steg.
+Du kan antingen markera en befintlig tagg eller skapa en ny. Följ stegen nedan för att göra det.
 
 1. Börja skriva namnet på den önskade taggen och/eller markera den i listan.
 

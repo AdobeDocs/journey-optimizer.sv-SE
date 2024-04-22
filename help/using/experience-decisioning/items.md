@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: 5c866814-d79a-4a49-bfcb-7a767d802e90
-source-git-commit: c13cd73229b2fab80722663afae9fe24b660c0f9
+source-git-commit: 50d3be8fb8ae04e1cab747f6ba4b1024c5e3ec97
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,7 @@ Så här skapar du ett beslutsobjekt:
    1. Ange ett namn och en beskrivning.
    1. Ange start- och slutdatum. Posten kommer endast att beaktas av beslutsmotorn inom dessa datum.
    1. Ange **[!UICONTROL Priority]** för beslutsobjektet jämfört med andra, om en profil kvalificerar för flera poster. En högre prioritet ger objektet företräde framför andra.
+   1. The **Taggar** I kan du tilldela enhetliga Adobe Experience Platform-taggar till dina beslutsobjekt. På så sätt kan du enkelt klassificera dem och förbättra sökningen. [Lär dig hur du arbetar med taggar](../start/search-filter-categorize.md#tags)
 
    ![](assets/item-attributes.png)
 
