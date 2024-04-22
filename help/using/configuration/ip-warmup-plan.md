@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: c2434086-2ed4-4cd0-aecd-2eea8f0a55f6
-source-git-commit: 737b7f59819d235b1f637d4a6b996e97cfddb9fe
+source-git-commit: c7dca8dd0d2761b204636020b427d76b617da26c
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1524'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Så här tilldelar du motsvarande behörighet till en viss **[!UICONTROL Role]**
 
 1. Dra och släpp **[!UICONTROL IP Warmup Configurations]** resurs för att tilldela behörighet.
 
-1. Från **[!UICONTROL IP Warmup Configurations]** i den nedrullningsbara menyn väljer du vilka behörigheter användaren behöver.
+1. Från **[!UICONTROL IP Warmup Configurations]** nedrullningsbar resursmeny, välj vilka behörigheter användaren behöver: **[!UICONTROL View IP Warmup Plans]**, **[!UICONTROL Manage IP Warmup Plans]** och/eller **[!UICONTROL View IP Warmup Reports]**. Du kan markera alla samtidigt om det behövs.
 
    ![](assets/ip_permissions_2.png)
 
