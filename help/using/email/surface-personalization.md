@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
-source-git-commit: 513fddf21eaf7958df45d97f028103519c77ec44
+source-git-commit: 56c2708408d15286f008c9f2c16581ce0f0a1c4e
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '801'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ För större flexibilitet och bättre kontroll över e-postinställningarna [!DN
 >id="ajo_surface_dynamic_subdomain_list"
 >title="Vissa underdomäner kanske inte är tillgängliga"
 >abstract="Vissa underdomäner är för närvarande inte tillgängliga för val på grund av väntande registrering av feedbackloop. Den här processen kan ta upp till 10 arbetsdagar. När du är klar kan du välja bland alla tillgängliga underdomäner."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/delegate-subdomains/about-subdomain-delegation" text="Kom igång med delegering till underdomäner"
 
 När du skapar en e-postyta kan du konfigurera dynamiska underdomäner baserat på specifika villkor.
 
