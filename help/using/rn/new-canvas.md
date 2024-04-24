@@ -8,73 +8,85 @@ description: Nytt resegränssnitt
 hide: true
 hidefromtoc: true
 exl-id: 03828fca-dde7-4b3b-b890-2c007d1245cc
-source-git-commit: 3944c7b96baf227e4c0c1e7e1a225c1ce1ad0142
+source-git-commit: f6b9060ed512d6abff37102fa1316b43736bebd5
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '686'
 ht-degree: 0%
 
 ---
 
-# Nytt resegränssnitt {#new-canvas}
+# Välkommen till den förbättrade resedesignern {#new-canvas}
 
 >[!CONTEXTUALHELP]
 >id="ajo_new_canvas"
 >title="Nyheter?"
 >abstract="Ny arbetsyta"
 
-Vi har arbetat på en förenkling av resemodellen som syftar till att underlätta vissa interna processer. Den här modelländringen är i sig transparent för dig, förutom att vi tog tillfället i akt att introducera nya funktioner tillsammans:
+Välkommen till den förbättrade resedesignern!
 
-* En ny arbetsyta i Journey
-* Live-rapportering på arbetsytan Resa
-* Förbättra läsbarheten på arbetsytan och gör aktivitetsdesignen mer skalbar så att vi kan ge mer information på aktivitetsnivå för aktuella och framtida förbättringar.
+Vi har utvecklat en **förenklad resemodell** som syftar till att förbättra interna processer. Även om den här nya modellen är en backend-förbättring har vårt team tagit tillfället i akt att lägga till funktioner som är synliga och till nytta för Journey Optimizer-användare:
+
+A **omdesignad arbetsyta** gjort för en moderniserad användarupplevelse A **live-rapportering** Gränssnitt som är direkt tillgängliga på arbetsytan
 
 ## Uppdateringar av resemodellen
 
-Den nya resemodellen kommer att leva tillsammans med den befintliga, vilket innebär att det kommer att finnas resor med två olika modeller:
+Den nya resemodellen kommer att leva tillsammans med den befintliga, vilket innebär att det kommer att finnas resor som använder **två olika modeller**:
 
 * Den gamla, med namnet &quot;v1&quot;
 * Och den nya som kallas &quot;v2&quot;
 
-Alla resor i v1 stannar i v1. Du kan fortfarande redigera, testa och publicera dem. Alla nya versioner som skapas från en v1 behålls i v1. Det finns inga funktionella förändringar runt v1-resor.
+Alla resor i v1 stannar i v1. Du kan fortfarande redigera, testa och publicera dem. Alla nya versioner som skapas från en v1 behålls också i v1. Det finns **inga funktionsändringar** runt v1-resor.
 
-Du ser att en resa är i v1 med arbetsytedesignen:
+Som du ser i skärmbilden nedan är noderna rundformade, vilket är det gamla användargränssnittet för resor med v1-modellen.
 
-[SCREENSHOT]
+![](assets/new-canvas.png)
 
-Om den innehåller runda aktiviteter är det en v1.
+Men när du **skapa en ny resa** eller **duplicera en befintlig**, blir det en v2-resa.  Vi planerar att fortsätta stödja v1-resor tills en majoritet av kunderna går över till v2-resor.
 
-Men när du ska skapa en ny resa eller duplicera en befintlig, blir det en v2-resa. På grund av detta förväntar vi oss att vi ska se färre och färre v1-resor över tiden. Se till att vi fortfarande kommer att stödja befintliga resor live v1.
+Det finns en begränsning i den nya resemodellen som **det inte går att kopiera och klistra in aktiviteter från en v1-resa till en v2 och vice versa**. Om du vill göra detta rekommenderar vi att du duplicerar din v1-resa så att den blir v2-version och sedan kopierar dina aktiviteter.
 
-Som vi nämnde är den nya modellen transparent för användarna, förutom en begränsning: det går inte att kopiera och klistra in aktiviteter från en v1-resa till en v2 och vice versa. Vi rekommenderar att du duplicerar din v1-resa så att du automatiskt får en v2-resa.
+På skärmbilden nedan ser du det omdesignade gränssnittet för arbetsytan (endast tillgängligt med v2-modellen):
 
-Du ser att en resa är i v2 med den nya arbetsytedesignen (se nedan):
+![](assets/new-canvas2.png)
 
-[SCREENSHOT]
+**Alla nya funktioner som läggs till resedesignern (inklusive direktrapportering) är endast tillgängliga för v2-resor från och med nu.**
 
-Alla nya funktioner runt arbetsytan (inklusive Live Reporting) kommer att finnas tillgängliga exklusivt på v2-resor.
+## Förbättrad design av arbetsyta
 
-## Ny arbetsyta i Journey
+Med den nya resemodellen introducerar vi en ny och förbättrad **arbetsytans gränssnitt**, som smidigt passar in i Adobe Experience Cloud lösningar och ekosystem, vilket ger en intuitiv och effektiv användarupplevelse. Alla resor i v2-stacken kommer att finnas i den nya designen.
 
-Med den nya resemodellen introducerar vi en omdesignad researbetsyta som passar smidigt in i Adobe Experience Cloud lösningar och ekosystem av appar, vilket ger en intuitiv och effektiv användarupplevelse. Alla resor i v2-stacken kommer att finnas i den nya designen.
+![](assets/new-canvas3.gif)
 
-[SCREENSHOT]
-
-Aktiviteter visas nu i fyrkantiga rutor med:
+Aktiviteter visas nu med fyrkantiga rutor med följande funktioner:
 
 * Den första raden som representerar aktivitetstypen, som ofta skrivs över av mer sammanhangsberoende information (t.ex.: på Läser målgrupper innehåller den namnet på den valda målgruppen), eller av en anpassad etikett om du definierar en sådan.
-* Den andra live-versionen representerar alltid aktivitetstypen.
+* Den andra raden representerar alltid aktivitetstypen.
 
-[SCREENSHOT]
+![](assets/new-canvas4.png)
 
-Den här nya designen förbättrar läsbarheten på arbetsytan genom att ...
+Det nya användargränssnittet förbättrar läsbarheten på arbetsytan genom att tillhandahålla **tydligare aktivitetsetiketter och -typer**.
 
-Det är också mer skalbart så att vi kan ge mer information på aktivitetsnivå, som vi började med direktrapportering.
+Det gör det även möjligt för produktteamet att lägga till mer information på arbetsytan med färre klick. Ett exempel på&quot;mer information&quot; kan vara att lägga in live-rapportering på arbetsytan där du kan se profiler som läggs in och avslutas på grund av fel.
 
-[SCREENSHOT]
+![](assets/new-canvas5.png)
 
-Förvänta dig att nya ändringar kommer inom några månader runt den nya designen!
 
-## Live Reporting
+## Live-rapportering på arbetsytan under resan
 
-* GIF
-* live-rapportering
+Tillsammans med den förbättrade utformningen av arbetsytan ger vi nu möjlighet att se **senaste 24 timmars rapportstatistik** (s.k.&quot;live reporting&quot;) direkt på arbetsytan.
+
+![](assets/new-canvas6.png)
+
+Med varje live-resa i den nya modellen kan du se två typer av rapportinformation som är&quot;senaste dygnet&quot;:
+
+* På en **new insert** kommer du att se:
+   * Antalet profiler som har exporterats för målgruppsinlösta resor. Du ser antalet profiler som var tillgängliga i det senaste exportjobbet tillsammans med den tidpunkt då exporten gjordes.
+   * Antalet profiler som lämnade resan
+   * Procentandel fel
+     ![](assets/new-canvas7.png)
+* **För varje aktivitet**visas antalet profiler som har gått in i aktiviteten och antalet som slutade på grund av ett fel:
+  ![](assets/new-canvas8.png)
+
+Användargränssnittet uppdateras automatiskt varje minut.
+
+Observera att du kan se skillnader mellan antalet exporterade profiler och antalet profiler som löper genom resan. Antalet exporterade profiler ger bara information om det senaste exportjobbet som gjorts, medan antalet profiler som anger en aktivitet endast innehåller profiler som har gjort det de senaste 24 timmarna. Detta kan särskilt vara synligt vid återkommande dagliga resor eftersom det kan finnas en datasamling mellan två dagar.
