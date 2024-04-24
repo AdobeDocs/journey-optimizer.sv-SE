@@ -8,7 +8,7 @@ topic: Content Management
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 hide: true
 hidefromtoc: true
-source-git-commit: 542716f61e5e8d1aa4964fabc98bc4a938f41169
+source-git-commit: f11f935f6c6576af0b7c653a37b3dbf8e061df0d
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 1%
@@ -175,6 +175,9 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 Här är förbättringarna från beta till LA:
 
+<!-- TO CONFIRM * Experience Decisioning left navigation menus have been renamed:
+    * "Items" is now "Catalogs"
+    * "Configuration" is now "Strategy setup"-->
 * Nu kan du utnyttja kontextdata från Adobe Experience Platform i dina beslutsregler med **Kontextdata** -fliken.
 * Det finns nu en ny behörighet,&quot;Hantera Experience Decision&quot;, för beslutshanteringsresursen. Det gör att ni kan hantera rättigheter för Experience Decision.
 * Nu kan du lägga till flera regler för begränsning av prenumerationer för ett erbjudande. På så sätt kan ni öka kontrollen över hur erbjudandena skickas.
