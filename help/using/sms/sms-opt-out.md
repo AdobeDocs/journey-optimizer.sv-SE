@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 59ea67d9-e90c-4ad0-afb9-d0e0fd868855
-source-git-commit: d7b784f10e267878fd0df9360ed0d1be24699a53
+source-git-commit: be758a577dbff2ae400d0642f9e898b423353f90
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Inga steg krävs för att säkerställa att SMS-avanmälningsfunktioner fungerar
 
 ## Blockeringslista {#sms-blocklists}
 
-Förutom att Adobe Journey Optimizer stoppar sändningen baserat på avanmälningsstatus (för direktintegrering med Twilio eller Sinch) har de flesta SMS-gatewayleverantörer också en blockeringslista som säkerställer att du inte får något SMS-meddelande till en person som har valt att avanmäla sig. Om du använder en annan leverantör än Sinch eller Twilio och skickar ett SMS via [anpassad kanal](../building-journeys/using-custom-actions.md)måste du bekräfta detta med din leverantör.
+Förutom att Adobe Journey Optimizer stoppar sändning baserat på avanmälningsstatus (för direktintegrering med Twilio, Infobip eller Sinch) har de flesta SMS-gatewayleverantörer också en blockeringslista som säkerställer att SMS-meddelanden inte levereras till en person som har valt att avanmäla sig. Om du använder en annan leverantör än Sinch eller Twilio och skickar ett SMS via [anpassad kanal](../building-journeys/using-custom-actions.md)måste du bekräfta detta med din leverantör.
 
 
 ## Korta koder {#short-codes}
