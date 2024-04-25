@@ -8,9 +8,9 @@ description: Nytt resegränssnitt
 hide: true
 hidefromtoc: true
 exl-id: 03828fca-dde7-4b3b-b890-2c007d1245cc
-source-git-commit: 59f41003183e155632124fde294bea575fb0f493
+source-git-commit: 55e002b00d0b605a868088fa3f5e1a15be64800c
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Som du ser i skärmbilden nedan är noderna rundformade, vilket är det gamla an
 
 ![](assets/new-canvas.png)
 
-Men när du **skapa en ny resa** eller **duplicera en befintlig**, blir det en v2-resa.  Vi planerar att fortsätta stödja v1-resor tills en majoritet av kunderna går över till v2-resor.
+När du **skapa en ny resa** eller **duplicera en befintlig**, blir det en v2-resa.  Vi planerar att fortsätta stödja v1-resor tills en majoritet av kunderna går över till v2-resor.
 
 Det finns en begränsning i den nya resemodellen som **det inte går att kopiera och klistra in aktiviteter från en v1-resa till en v2 och vice versa**. Om du vill göra detta rekommenderar vi att du duplicerar din v1-resa så att den blir v2-version och sedan kopierar dina aktiviteter.
 
