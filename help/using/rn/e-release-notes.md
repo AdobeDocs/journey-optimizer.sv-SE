@@ -8,9 +8,9 @@ topic: Content Management
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 hide: true
 hidefromtoc: true
-source-git-commit: 281387d650dc3a6c67ba365cd804f2b875dcd60b
+source-git-commit: 882af161383a54a1f9b09d2a8d0cab84abbf7dcd
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '502'
 ht-degree: 1%
 
 ---
@@ -164,7 +164,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Experience Decision**
 
-Här är förbättringarna från beta till LA:
+Från beta till LA, följande förbättringar har lagts till:
 
 * Nu kan du utnyttja kontextdata från Adobe Experience Platform i dina beslutsregler med **Kontextdata** -fliken.
 * Det finns nu en ny behörighet,&quot;Hantera Experience Decision&quot;, för beslutshanteringsresursen. Det gör att ni kan hantera rättigheter för Experience Decision.
@@ -174,12 +174,12 @@ Här är förbättringarna från beta till LA:
 
 **Resor**
 
-* **Förbättrad resedesigner**:
+* **Förbättrad resedesigner**
 
    * Det förbättrade gränssnittet på arbetsytan ger en mer intuitiv och effektiv användarupplevelse.
    * Aktiviteterna blir tydligare och ger mer information om arbetsytan med färre klick.
 
-* **Ny Live Reporting**: Rapporteringen av resor är nu tillgänglig via appen Live-rapporter. Det här är ett program som ger många insikter om körningen av resan.
+* **Ny Live Reporting**: Den senaste 24 timmars reserapporteringen är nu tillgänglig direkt på arbetsytan på resan.
 
 **Konfiguration**
 
