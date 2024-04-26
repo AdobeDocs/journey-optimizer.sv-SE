@@ -8,16 +8,16 @@ description: Nytt resegränssnitt
 hide: true
 hidefromtoc: true
 exl-id: 03828fca-dde7-4b3b-b890-2c007d1245cc
-source-git-commit: b40ca1f681ebbaf976ab211c96eb2987cc44f5b8
+source-git-commit: f9183f0ef3dbc13f39e5442405e7b0011621e773
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
 
 # Välkommen till den förbättrade resedesignern {#new-canvas}
 
-Journey Optimizer erbjuder nu **förenklad resemodell** som syftar till att förbättra interna processer. Även om den här nya modellen är en backend-förbättring har vårt team tagit tillfället i akt att lägga till funktioner som är synliga och till nytta för Journey Optimizer-användare:
+Journey Optimizer erbjuder nu **förenklad resemodell** som syftar till att förbättra användarupplevelsen och interna processer. Från och med aprilversionen har du tillgång till följande funktioner:
 
 * A **omdesignad arbetsyta** för en moderniserad användarupplevelse
 * A **live-rapportering** Gränssnitt som är direkt tillgängliga på arbetsytan
