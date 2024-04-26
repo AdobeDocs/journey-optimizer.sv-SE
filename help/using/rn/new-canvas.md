@@ -8,9 +8,9 @@ description: Nytt resegränssnitt
 hide: true
 hidefromtoc: true
 exl-id: 03828fca-dde7-4b3b-b890-2c007d1245cc
-source-git-commit: 65b0f091e7dda876d0ab04e53b2cb1b7e753d39b
+source-git-commit: 87e3ba96d05d41c87f314773e95eb0fcf0a2cfe3
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '568'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Journey Optimizer erbjuder nu **förenklad resemodell** som syftar till att för
 Den nya resemodellen kommer att leva tillsammans med den befintliga, vilket innebär att det kommer att finnas resor som använder **två olika modeller**:
 
 * Den äldre modellen
-* Och den nya modellen
+* Den nya modellen
 
 Alla resor i den äldre modellen stannar kvar i den. Du kan fortfarande redigera, testa och publicera dem. Alla nya versioner som skapas från en resa i den äldre modellen behålls också i den. Det finns **inga funktionsändringar** runt de där resorna.
 
@@ -39,9 +39,9 @@ Som du ser på skärmbilden nedan är noderna rundformade, vilket är det gamla 
 
 ![](assets/new-canvas.png)
 
-När du **skapa en ny resa** eller **duplicera en befintlig** blir det en ny modellresa. Resor i den äldre modellen stöds fortfarande tills en majoritet av kunderna går över till den nya.
+När du **skapa en ny resa** eller **duplicera en befintlig**, kommer den att finnas i den nya modellen. Resor i den äldre modellen stöds fortfarande tills en majoritet av kunderna går över till den nya.
 
-Det finns en begränsning i den nya resemodellen som **det går inte att kopiera och klistra in aktiviteter från den äldre modellen till den nya och vice versa**. Om du vill göra det rekommenderar vi att du duplicerar resan på den äldre modellen så att du kan byta den till den nya modellen och sedan kopiera dina aktiviteter.
+Det finns en begränsning i den nya resemodellen som **det går inte att kopiera och klistra in aktiviteter från den äldre modellen till den nya och vice versa**. Om du vill göra det rekommenderar vi dig att duplicera din tidigare resa för att byta till den nya modellen och sedan kopiera dina aktiviteter.
 
 På skärmbilden nedan ser du det omdesignade gränssnittet för arbetsytan (endast tillgängligt med den nya modellen):
 
