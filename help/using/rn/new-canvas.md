@@ -8,9 +8,9 @@ description: Nytt resegränssnitt
 hide: true
 hidefromtoc: true
 exl-id: 03828fca-dde7-4b3b-b890-2c007d1245cc
-source-git-commit: 87e3ba96d05d41c87f314773e95eb0fcf0a2cfe3
+source-git-commit: b40ca1f681ebbaf976ab211c96eb2987cc44f5b8
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '567'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Med den nya resemodellen introducerar vi en ny och förbättrad **arbetsytans gr
 
 Aktiviteter visas nu med fyrkantiga rutor med följande funktioner:
 
-* Den första raden som representerar aktivitetstypen, som ofta skrivs över av mer sammanhangsberoende information (t.ex.: på Läser målgrupper innehåller den namnet på den valda målgruppen), eller av en anpassad etikett om du definierar en sådan.
+* Den första raden som representerar aktivitetstypen som ofta skrivs över av mer sammanhangsberoende information (på Läs målgrupper innehåller den namnet på den valda målgruppen) eller av en anpassad etikett om du definierar en sådan.
 * Den andra raden representerar alltid aktivitetstypen.
 
 ![](assets/new-canvas4.png)
