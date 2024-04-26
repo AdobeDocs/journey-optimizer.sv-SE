@@ -6,9 +6,9 @@ description: Journey Optimizer tidiga versionsinformation
 feature: Release Notes
 topic: Content Management
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: be758a577dbff2ae400d0642f9e898b423353f90
+source-git-commit: f133a33237fccacbf800de445c27684de4f42453
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '478'
 ht-degree: 1%
 
 ---
@@ -166,7 +166,6 @@ Från beta till LA, följande förbättringar har lagts till:
 
 * Nu kan du utnyttja kontextdata från Adobe Experience Platform i dina beslutsregler med **Kontextdata** -fliken.
 * Det finns nu en ny behörighet,&quot;Hantera Experience Decision&quot;, för beslutshanteringsresursen. Det gör att ni kan hantera rättigheter för Experience Decision.
-* Nu kan du lägga till flera regler för begränsning av prenumerationer för ett erbjudande. På så sätt kan ni öka kontrollen över hur erbjudandena skickas.
 * Nu kan du lägga till flera regler för att sätta stopp för ett visst beslutsobjekt i Experience Decisioning. På så sätt kan ni öka kontrollen över hur erbjudandena skickas.
 * Nu kan du skapa anpassade rapportinstrumentpaneler för Experience Decision-kampanjer med [!DNL Customer Journey Analytics].
 
