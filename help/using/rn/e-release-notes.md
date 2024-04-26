@@ -6,7 +6,7 @@ description: Journey Optimizer tidiga versionsinformation
 feature: Release Notes
 topic: Content Management
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: b64cb709813c479b2f126ba61a5fddaef61eecdd
+source-git-commit: a93dd80a15087a4ce7737757d5552ea1fc4f2a2a
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 5%
@@ -23,7 +23,7 @@ Noteringarna nedan kan ändras utan föregående meddelande fram till releasedat
 
 **Releasedatum**: 30 april 2024
 
-### Ny funktion {#e-features}
+### Nya funktioner {#e-features}
 
 Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 
