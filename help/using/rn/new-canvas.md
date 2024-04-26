@@ -8,16 +8,16 @@ description: Nytt resegränssnitt
 hide: true
 hidefromtoc: true
 exl-id: 03828fca-dde7-4b3b-b890-2c007d1245cc
-source-git-commit: 55e002b00d0b605a868088fa3f5e1a15be64800c
+source-git-commit: 65b0f091e7dda876d0ab04e53b2cb1b7e753d39b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
 
 # Välkommen till den förbättrade resedesignern {#new-canvas}
 
-Vi har utvecklat en **förenklad resemodell** som syftar till att förbättra interna processer. Även om den här nya modellen är en backend-förbättring har vårt team tagit tillfället i akt att lägga till funktioner som är synliga och till nytta för Journey Optimizer-användare:
+Journey Optimizer erbjuder nu **förenklad resemodell** som syftar till att förbättra interna processer. Även om den här nya modellen är en backend-förbättring har vårt team tagit tillfället i akt att lägga till funktioner som är synliga och till nytta för Journey Optimizer-användare:
 
 * A **omdesignad arbetsyta** för en moderniserad användarupplevelse
 * A **live-rapportering** Gränssnitt som är direkt tillgängliga på arbetsytan
@@ -30,28 +30,28 @@ Vi har utvecklat en **förenklad resemodell** som syftar till att förbättra in
 
 Den nya resemodellen kommer att leva tillsammans med den befintliga, vilket innebär att det kommer att finnas resor som använder **två olika modeller**:
 
-* Den gamla, med namnet &quot;v1&quot;
-* Och den nya som kallas &quot;v2&quot;
+* Den äldre modellen
+* Och den nya modellen
 
-Alla resor i v1 stannar i v1. Du kan fortfarande redigera, testa och publicera dem. Alla nya versioner som skapas från en v1 behålls också i v1. Det finns **inga funktionsändringar** runt v1-resor.
+Alla resor i den äldre modellen stannar kvar i den. Du kan fortfarande redigera, testa och publicera dem. Alla nya versioner som skapas från en resa i den äldre modellen behålls också i den. Det finns **inga funktionsändringar** runt de där resorna.
 
-Som du ser i skärmbilden nedan är noderna rundformade, vilket är det gamla användargränssnittet för resor med v1-modellen.
+Som du ser på skärmbilden nedan är noderna rundformade, vilket är det gamla användargränssnittet för resor med den äldre modellen.
 
 ![](assets/new-canvas.png)
 
-När du **skapa en ny resa** eller **duplicera en befintlig**, blir det en v2-resa.  Vi planerar att fortsätta stödja v1-resor tills en majoritet av kunderna går över till v2-resor.
+När du **skapa en ny resa** eller **duplicera en befintlig** blir det en ny modellresa. Resor i den äldre modellen stöds fortfarande tills en majoritet av kunderna går över till den nya.
 
-Det finns en begränsning i den nya resemodellen som **det inte går att kopiera och klistra in aktiviteter från en v1-resa till en v2 och vice versa**. Om du vill göra detta rekommenderar vi att du duplicerar din v1-resa så att den blir v2-version och sedan kopierar dina aktiviteter.
+Det finns en begränsning i den nya resemodellen som **det går inte att kopiera och klistra in aktiviteter från den äldre modellen till den nya och vice versa**. Om du vill göra det rekommenderar vi att du duplicerar resan på den äldre modellen så att du kan byta den till den nya modellen och sedan kopiera dina aktiviteter.
 
-På skärmbilden nedan ser du det omdesignade gränssnittet för arbetsytan (endast tillgängligt med v2-modellen):
+På skärmbilden nedan ser du det omdesignade gränssnittet för arbetsytan (endast tillgängligt med den nya modellen):
 
 ![](assets/new-canvas2.png)
 
-**Alla nya funktioner som läggs till resedesignern (inklusive direktrapportering) är endast tillgängliga för v2-resor från och med nu.**
+**Alla nya funktioner som läggs till resedesignern (inklusive direktrapportering) kommer endast att vara tillgängliga för resor med den nya modellen från och med nu.**
 
 ## Förbättrad design av arbetsyta
 
-Med den nya resemodellen introducerar vi en ny och förbättrad **arbetsytans gränssnitt**, som smidigt passar in i Adobe Experience Cloud lösningar och ekosystem, vilket ger en intuitiv och effektiv användarupplevelse. Alla resor i v2-stacken kommer att finnas i den nya designen.
+Med den nya resemodellen introducerar vi en ny och förbättrad **arbetsytans gränssnitt**, som smidigt passar in i Adobe Experience Cloud lösningar och ekosystem, vilket ger en intuitiv och effektiv användarupplevelse. Alla resor i den nya modellen kommer att göras i den nya designen.
 
 ![](assets/new-canvas3.gif)
 
