@@ -6,9 +6,9 @@ description: Journey Optimizer tidiga versionsinformation
 feature: Release Notes
 topic: Content Management
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 4257fafef5d6c6f5f9c7f4af9c9b06510b1e9037
+source-git-commit: d5fa80ee2823131bb69bae0f366b92bf1fae3020
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '280'
 ht-degree: 5%
 
 ---
@@ -103,6 +103,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <img src="assets/new-canvas3.gif"/>
 <p>Förutom den förbättrade utformningen av arbetsytan på resan introducerar vi möjligheten att se de senaste 24 timmarnas rapportvärden direkt i arbetsytan på resan. </p>
 <img src="assets/new-canvas6bis.png"/>
+<p><br>Anteckning</br>:Den här ändringen kommer gradvis att släppas ut. Du kanske inte ser ändringarna direkt i din miljö.</p>
 <p>Mer information finns i den <a href="new-canvas.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
