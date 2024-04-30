@@ -3,29 +3,24 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
-feature: Release Notes
-topic: Content Management
-exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-hide: true
-hidefromtoc: true
 source-git-commit: c14ed9196d003cee893eb809a0edbdeebe36555f
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 5%
+source-wordcount: '315'
+ht-degree: 4%
 
 ---
 
-# Tidig versionsinformation {#e-release-notes}
+# Tidig versionsinformation {#early-release-notes}
 
 [!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras i slutet av varje månad i [versionsinformation](release-notes.md).
 
 Noteringarna nedan kan ändras utan föregående meddelande fram till releasedatum. Länkar, skärmar och uppdaterad dokumentation publiceras i [versionsinformation](release-notes.md), på releasedatum.
 
-## Versionsinformation april 2024 {#e-2024}
+## Versionsinformation april 2024 {#early-2024}
 
 **Releasedatum**: 2 maj 2024
 
-### Nya funktioner {#e-features}
+### Nya funktioner {#early-features}
 
 Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 
@@ -157,7 +152,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </tbody>
 </table-->
 
-### Förbättringar {#e-improvements}
+### Förbättringar {#early-improvements}
 
 Den här versionen innehåller de förbättringar som anges nedan.
 
@@ -179,9 +174,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 -->
 
 <!--
-**Decision management** 
 
-* The **Change log** tab allowing you to see all the changes that have been made to an offer or a decision has been removed. Changes related to offers and decisions can now be seen in the **Audits** menu.
 
 **Experience decisionning**
 
@@ -193,6 +186,9 @@ From beta to LA, the following improvements that have been added:
 * You can now create custom reporting dashboards of Experience Decisioning campaigns using [!DNL Customer Journey Analytics].
 -->
 
+**Beslutsledning**
+
+* The **Ändra logg** så att du kan se alla ändringar som har gjorts i ett erbjudande eller ett beslut har tagits bort. Ändringar som rör erbjudanden och beslut kan nu ses i **Granskningar** -menyn.
 
 
 **Konfiguration**
