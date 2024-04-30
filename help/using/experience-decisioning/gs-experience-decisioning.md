@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
-source-git-commit: c13cd73229b2fab80722663afae9fe24b660c0f9
+source-git-commit: 98e3e770530facac6f9c69a72e77fc663ef5ed0c
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
@@ -33,15 +33,12 @@ ht-degree: 0%
 >[!AVAILABILITY]
 >
 >Funktionen för upplevelsebeslut är för närvarande endast tillgänglig som betaversion för utvalda användare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
+>
+>Beslutspolicyer kan endast användas i kodbaserade upplevelsekampanjer.
 
 Experience Decision förenklar personaliseringen genom att erbjuda en centraliserad katalog med marknadsföringserbjudanden som kallas beslutsposter och en sofistikerad beslutsmotor. Den här motorn använder regler och rankningskriterier för att välja ut och presentera de mest relevanta beslutsobjekten för varje enskild person.
 
 Dessa beslutsobjekt integreras smidigt i ett stort antal inkommande ytor via den nya kodbaserade upplevelsekanalen, som nu är tillgänglig inom Journey Optimizer-kampanjer.
-
-**Begränsningar:**
-
-* Beslutspolicyer kan endast användas i kodbaserade upplevelsekampanjer.
-* För närvarande är frekvensbegränsning inte tillgängligt i Experience Decision.
 
 ## Viktiga steg i Experience Decision {#steps}
 
