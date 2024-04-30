@@ -8,9 +8,9 @@ description: Nytt resegränssnitt
 hide: true
 hidefromtoc: true
 exl-id: 03828fca-dde7-4b3b-b890-2c007d1245cc
-source-git-commit: f9183f0ef3dbc13f39e5442405e7b0011621e773
+source-git-commit: b6b3f710d08fb7f0949e75521ce126fa43d6cdc5
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
@@ -71,13 +71,14 @@ Det gör det även möjligt för produktteamet att lägga till mer information p
 
 ## Live-rapportering på arbetsytan under resan
 
-Tillsammans med den förbättrade utformningen av arbetsytan ger vi nu möjlighet att se **senaste 24 timmars rapportstatistik** (s.k.&quot;live reporting&quot;) direkt på arbetsytan.
+Förutom den förbättrade arbetsytelayouten för resan introduceras en ny funktion som gör det möjligt för användare att visa realtidsstatistik från **senaste dygnet**, vilket kallas live-rapportering, direkt på arbetsytan.
+
+För varje aktivitet i varje live-resa som använder den nya modellen har du tillgång till:
+
+* Antalet profiler som anger den här aktiviteten.
+* Antal profiler som avslutar den här aktiviteten på grund av ett fel.
 
 ![](assets/new-canvas6bis.png)
-
-Med varje live-resa på den nya modellen kommer du att kunna se **för varje aktivitet**, antalet profiler som gick in i aktiviteten och antalet som slutade på grund av ett fel:
-
-![](assets/new-canvas8.png)
 
 <!--`
 With every live journey on the new model, you will be able to see two types of "last 24 hours" reporting information:
@@ -90,9 +91,6 @@ With every live journey on the new model, you will be able to see two types of "
 * **On each activity**, you will see the number of profiles who entered that activity and the number who exited because of an error:
     ![](assets/new-canvas8.png)
 -->
-
-Användargränssnittet uppdateras automatiskt varje minut.
-
 <!--
 Please note that you may see differences between the number of exported profiles and the number of profiles flowing through the journey. The exported profiles count only provides information about the last export job being made while the number of profiles entering an activity only contains profiles who did it in the last 24 hours. This can especially be visible on recurring daily journeys as there could be a data overlap between two days.
 -->
