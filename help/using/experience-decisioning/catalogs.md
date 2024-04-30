@@ -9,7 +9,7 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: 2d118f5a-32ee-407c-9513-fe0ebe3ce8f0
-source-git-commit: c13cd73229b2fab80722663afae9fe24b660c0f9
+source-git-commit: 2b9261ff0f225a429b9be04db214452736163766
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 I Experience Decision fungerar kataloger som centrala behållare för att organisera beslutsobjekt. Varje katalog är länkad till ett Adobe Experience Platform-schema som innehåller alla attribut som kan tilldelas ett beslutsobjekt.
 
-För närvarande konsolideras alla beslutsobjekt som skapats i en enda katalog, tillgänglig via **[!UICONTROL Items]** -menyn.
+För närvarande konsolideras alla beslutsobjekt som skapats i en enda katalog, tillgänglig via **[!UICONTROL  Catalogs]** -menyn.
 
 ![](assets/catalogs-list.png)
 

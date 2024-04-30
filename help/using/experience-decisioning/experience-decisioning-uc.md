@@ -8,7 +8,7 @@ level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
 badge: label="Beta"
-source-git-commit: c13cd73229b2fab80722663afae9fe24b660c0f9
+source-git-commit: 2b9261ff0f225a429b9be04db214452736163766
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 4%
@@ -33,7 +33,7 @@ I det här fallet definierar ni två leveransbehandlingar som var och en innehå
 
 Först måste du skapa objekt, gruppera dem i samlingar, ställa in regler och rangordningsmetoder. Med dessa element kan du skapa urvalsstrategier.
 
-1. Navigera till **[!UICONTROL Experience Decisioning]** > **[!UICONTROL Items]** och skapa flera olika erbjudanden. Ange begränsningar med målgrupper eller regler för att begränsa varje objekt till enbart specifika profiler. [Läs mer](items.md)
+1. Navigera till **[!UICONTROL Experience Decisioning]** > **[!UICONTROL  Catalogs]** och skapa flera olika erbjudanden. Ange begränsningar med målgrupper eller regler för att begränsa varje objekt till enbart specifika profiler. [Läs mer](items.md)
 
    <!--
    1. From the items list, click the **[!UICONTROL Edit schema]** button  and edit the custom attributes if needed. [Learn how to work with catalogs](catalogs.md)-->

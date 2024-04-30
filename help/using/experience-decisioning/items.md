@@ -9,7 +9,7 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: 5c866814-d79a-4a49-bfcb-7a767d802e90
-source-git-commit: 98e3e770530facac6f9c69a72e77fc663ef5ed0c
+source-git-commit: 2b9261ff0f225a429b9be04db214452736163766
 workflow-type: tm+mt
 source-wordcount: '1724'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Med Journey Optimizer kan ni skapa marknadsföringserbjudanden, så kallade besl
 
 Kontrollera att du har skapat en **beslutsregel** om du vill ange villkor för att bestämma vem beslutsobjektet kan visas för. [Lär dig hur du skapar beslutsregler](rules.md).
 
-Om du vill skapa ett beslutsobjekt går du till **[!UICONTROL Experience Decisioning]** > **[!UICONTROL Items]** och sedan klicka **[!UICONTROL Create item]** följer du de steg som beskrivs i avsnitten nedan.
+Om du vill skapa ett beslutsobjekt går du till **[!UICONTROL Experience Decisioning]** > **[!UICONTROL  Catalogs]** och sedan klicka **[!UICONTROL Create item]** följer du de steg som beskrivs i avsnitten nedan.
 
 ## Definiera beslutsobjektets attribut {#attributes}
 
