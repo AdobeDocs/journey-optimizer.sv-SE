@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: d4ecfecdc74c26890658d68d352c36b75f7c9039
+source-git-commit: f71795c99157ce43f5250aaf10eb0b97f235b454
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 2%
+source-wordcount: '432'
+ht-degree: 1%
 
 ---
 
@@ -40,35 +40,25 @@ De viktigaste stegen för att skapa en kampanj är följande:
 
 ![](assets/create-campaign-process.png)
 
-➡️ [Upptäck den här funktionen i en video](#video)
+➡️ [Upptäck den här funktionen i video](#video)
 
 ## Före start {#campaign-prerequisites}
 
 Kontrollera följande innan du börjar skapa din första kampanj i Journey Optimizer:
 
-1. **Du behöver rätt behörigheter**. Kampanjer är bara tillgängliga för användare med tillgång till en kampanjrelaterad **[!UICONTROL Product profile]** som Campaign-administratör, Campaign-godkännare, Campaign-chef och/eller Campaign-visningsprogram.
+1. **Du behöver rätt behörigheter**. Kampanjer är bara tillgängliga för användare med tillgång till en kampanjrelaterad **[!UICONTROL Product profile]** som Campaign-administratör, Campaign-godkännare, Campaign-chef och/eller Campaign-visningsprogram. Om du inte kan komma åt kampanjer måste du utöka behörigheterna.
 
-   Om du inte kan komma åt kampanjer måste din behörighet utökas. Om du har åtkomst till [Adobe Admin Console](https://adminconsole.adobe.com/){target="_blank"} för din organisation, följ stegen nedan. Om inte, kontakta Journey Optimizer-administratören.
+   +++Lär dig hur du tilldelar kampanjrelaterad roll
 
-   +++Lär dig hur du tilldelar kampanjbehörigheter
+   1. Tilldela en roll till en användare i [!DNL Permissions] -produkt, navigera till **[!UICONTROL Roles]** och välj en av de inbyggda kampanjrelaterade **[!UICONTROL Roles]**: Kampanjadministratör, Kampanjgodkännare, Kampanjhanterare eller Kampanjvisningsprogram.
 
-   Tilldela motsvarande **[!UICONTROL Product profile]** till dina användare:
+   1. Klicka på **[!UICONTROL Add user]** på fliken **[!UICONTROL Users]**.
 
-   1. Från [Adobe Admin Console](https://adminconsole.adobe.com/){target="_blank"}väljer du [!DNL Adobe Experience Platform] produkt.
+   1. Ange användarens namn eller e-postadress eller välj användaren i listan och klicka på **[!UICONTROL Save]**.
 
-   1. Gå till **[!UICONTROL Product profile]** väljer du en av de inbyggda kampanjrelaterade **[!UICONTROL Product profile]**: Kampanjadministratör, Kampanjgodkännare, Kampanjhanterare eller Kampanjvisningsprogram.
+      Om användaren inte har skapats tidigare, se [Lägga till användardokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
 
-      Mer information om Journey Optimizer kampanj **[!UICONTROL Product profiles]** och **[!UICONTROL Permissions]**, [hänvisa till denna sida](../administration/ootb-product-profiles.md).
-
-      ![](assets/do-not-localize/admin_1.png)
-
-   1. Klicka **[!UICONTROL Add user]** för att tilldela användaren det valda **[!UICONTROL Product profile]**.
-
-      ![](assets/do-not-localize/admin_2.png)
-
-   1. Ange användarens namn, grupp eller e-postadress och klicka på **[!UICONTROL Save]**.
-
-   Användaren har nu åtkomst **[!UICONTROL Campaigns]**.
+   Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
 
 +++
 

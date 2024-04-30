@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
-source-git-commit: 98e3e770530facac6f9c69a72e77fc663ef5ed0c
+source-git-commit: f71795c99157ce43f5250aaf10eb0b97f235b454
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,28 @@ Dessa beslutsobjekt integreras smidigt i ett stort antal inkommande ytor via den
 ## Viktiga steg i Experience Decision {#steps}
 
 De viktigaste stegen för Experience Decision är följande:
+
+1. **Tilldela rätt behörigheter**. Besluten är endast tillgängliga för användare som har tillgång till ett Experience Decision-relaterat **[!UICONTROL role]** som beslutsfattare. Om du inte kan komma åt beslut måste din behörighet utökas.
+
+   +++Lär dig hur du tilldelar rollen Beslutsledare
+
+   1. Tilldela en roll till en användare i [!DNL Permissions] -produkt, navigera till **[!UICONTROL Roles]** och välj Beslutshanterare.
+
+      ![](assets/decision_permission_1.png)
+
+   1. Klicka på **[!UICONTROL Add user]** på fliken **[!UICONTROL Users]**.
+
+      ![](assets/decision_permission_2.png)
+
+   1. Ange användarens namn eller e-postadress eller välj användaren i listan och klicka på **[!UICONTROL Save]**.
+
+      Om användaren inte har skapats tidigare, se [Lägga till användardokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
+
+      ![](assets/decision_permission_3.png)
+
+   Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
+
++++
 
 1. **Konfigurera anpassade attribut**: Anpassa beslutsobjektets katalog efter dina specifika krav genom att ställa in anpassade attribut i katalogschemat.
 
