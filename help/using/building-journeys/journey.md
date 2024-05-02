@@ -8,7 +8,7 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, upptäckt, komma igång
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
-source-git-commit: d741a34a0418dc88db730d0b953cb5c7db8dc103
+source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 1%
@@ -96,8 +96,6 @@ Om du behöver ändra till en direktresa skapar du en ny version av din resa.
    >Du kan bara skapa en ny version av den senaste versionen av en resa.
 
 1. Gör ändringarna genom att klicka **[!UICONTROL Publish]** och bekräfta.
-
-   ![](assets/journeyversions3.png)
 
 Från det att resan har publicerats kommer individerna att börja flöda in i den senaste versionen av resan. Personer som redan har gått in i en tidigare version stannar kvar tills de är klara med resan. Om de senare återgår till samma resa, kommer de att gå till den senaste versionen.
 

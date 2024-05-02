@@ -1,0 +1,176 @@
+---
+solution: Journey Optimizer
+product: journey optimizer
+title: Använd anpassade åtgärder för att skriva resehändelser i AEP
+description: Använd anpassade åtgärder för att skriva resehändelser i AEP
+feature: Journeys, Use Cases, Custom Actions
+topic: Content Management
+role: Developer, Data Engineer
+level: Experienced
+source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+workflow-type: tm+mt
+source-wordcount: '324'
+ht-degree: 0%
+
+---
+
+
+# Använd skiftläge: Använd anpassade åtgärder för att skriva resthändelser i Experience Platform{#custom-action-aep}
+
+Det här användningsexemplet förklarar hur du skriver anpassade händelser till Adobe Experience Platform från Journeys med hjälp av anpassade åtgärder och autentiserade samtal.
+
+## Konfigurera ett IO-projekt
+
+1. Klicka på Adobe Developer Console **Projekt** och öppna IO-projektet.
+
+1. I **Referenser** avsnitt, klicka **OAuth Server-till-server**.
+
+   ![](assets/custom-action-aep-1.png)
+
+1. Klicka **Visa cURL, kommando**.
+
+   ![](assets/custom-action-aep-2.png)
+
+1. Kopiera kommandot cURL och lagra client_id, client_secrets, grant_type och scope.
+
+```
+curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=client_credentials&client_id=1234&client_secret=5678&scope=openid,AdobeID,read_organizations,additional_info.projectedProductContext,session'
+```
+
+## Konfigurera källan med HTTP API Inlet
+
+1. Skapa en slutpunkt i Adobe Experience Platform för att skriva data från resor.
+
+1. Klicka på i Adobe Experience Platform **Källor**, under **Anslutningar** i den vänstra menyn. Under **HTTP-API**, klicka **Lägg till data**.
+
+   ![](assets/custom-action-aep-3.png)
+
+1. Välj **Nytt konto** och aktivera autentisering. Klicka på **Anslut till källa**.
+
+   ![](assets/custom-action-aep-4.png)
+
+1. Klicka på **Nästa** och markera den datauppsättning där du vill skriva data. Klicka **Nästa** och **Slutför**.
+
+   ![](assets/custom-action-aep-5.png)
+
+1. Öppna det nya dataflödet. Kopiera schemanyttolasten och spara den i din anteckningsruta.
+
+```
+{
+"header": {
+"schemaRef": {
+"id": "https://ns.adobe.com/<your_org>/schemas/<schema_id>",
+"contentType": "application/vnd.adobe.xed-full+json;version=1.0"
+},
+"imsOrgId": "<org_id>",
+"datasetId": "<dataset_id>",
+"source": {
+"name": "Custom Journey Events"
+}
+},
+"body": {
+"xdmMeta": {
+"schemaRef": {
+"id": "https://ns.adobe.com/<your_org>/schemas/<schema_id>",
+"contentType": "application/vnd.adobe.xed-full+json;version=1.0"
+}
+},
+"xdmEntity": {
+"_id": "test1",
+"<your_org>": {
+"journeyVersionId": "",
+"nodeId": "", "customer_Id":""
+},
+"eventMergeId": "",
+"eventType": "",
+"producedBy": "self",
+"timestamp": "2018-11-12T20:20:39+00:00"
+}
+}
+}
+```
+
+## Konfigurera den anpassade åtgärden
+
+1. Öppna Adobe Journey Optimizer och klicka på **Konfigurationer**, under **Administration** i den vänstra menyn. Under **Åtgärder**, klicka **Hantera** och klicka **Skapa åtgärd**.
+
+1. Ange URL-adressen och välj metoden Post.
+
+   `https://dcs.adobedc.net/collection/<collection_id>?syncValidation=false`
+
+1. Kontrollera att rubrikerna (Content-Type, Charset, sandbox-name) är konfigurerade.
+
+   ![](assets/custom-action-aep-7bis.png)
+
+### Konfigurera autentiseringen
+
+1. Välj **Typ** as **Egen** med följande nyttolast.
+
+1. Klistra in client_secrets, client_id, scope och grant_type (från IO-projektets nyttolast som användes tidigare).
+
+   ```
+   {
+   "type": "customAuthorization",
+   "authorizationType": "Bearer",
+   "endpoint": "https://ims-na1.adobelogin.com/ims/token/v3",
+   "method": "POST",
+   "headers": {},
+   "body": {
+   "bodyType": "form",
+   "bodyParams": {
+   "grant_type": "client_credentials",
+   "client_secret": "********",
+   "client_id": "<client_id>",
+   "scope": "openid,AdobeID,read_organizations,additional_info.projectedProductContext,session"
+   }
+   },
+   "tokenInResponse": "json://access_token",
+   "cacheDuration": {
+   "duration": 28000,
+   "timeUnit": "seconds"
+   }
+   }
+   ```
+
+1. Använd **Klicka för att testa autentiseringen** för att testa anslutningen.
+
+   ![](assets/custom-action-aep-8.png)
+
+### Ställ in nyttolasten
+
+1. I **Begäran** och **Svar** -fält, klistra in nyttolasten från den tidigare källanslutningen.
+
+   ```
+   {
+   "xdmMeta": {
+   "schemaRef": {
+   "id": "https://ns.adobe.com/<your_org>/schemas/<schema_id>",
+   "contentType": "application/vnd.adobe.xed-full+json;version=1.0"
+   }
+   },
+   "xdmEntity": {
+   "_id": "/uri-reference",
+   "<your_org>": {
+   "journeyVersionId": "Sample value",
+   "nodeId": "Sample value",
+   "customer_Id":""
+   },
+   "eventMergeId": "Sample value",
+   "eventType": "advertising.completes,
+   "producedBy": "self",
+   "timestamp": "2018-11-12T20:20:39+00:00"
+   }
+   }
+   ```
+
+1. Ändra fältkonfigurationen från **Konstant** till **Variabel** för fält som fylls i dynamiskt. Spara den anpassade åtgärden.
+
+## Resa
+
+1. Slutligen kan du använda den här anpassade åtgärden i en resa för att skriva anpassade resehändelser.
+
+1. Fyll i resans versions-ID, nod-ID, nodnamn och andra attribut enligt ditt användningsexempel.
+
+   ![](assets/custom-action-aep-9.png)
+
+

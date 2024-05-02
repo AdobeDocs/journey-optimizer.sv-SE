@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 75638e9b463278efab16b2b85ed2707640f088f2
+source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '894'
 ht-degree: 2%
 
 ---
@@ -126,8 +126,6 @@ Följ stegen nedan för att konfigurera ditt SMS-innehåll. Inställningarna fö
 Du kan förbättra kommunikationen genom att skicka MMS-meddelanden (Multimedia Message Service), vilket möjliggör delning av media som videor, bilder, ljudklipp och GIF med mera. Dessutom kan MMS innehålla upp till 1 600 tecken i meddelandet.
 
 >[!NOTE]
->
->* Den här funktionen är för närvarande tillgänglig med **Sinch** endast.
 >
 >* MMS-kanalen har några begränsningar som anges i [den här sidan](../start/guardrails.md#sms-guardrails).
 

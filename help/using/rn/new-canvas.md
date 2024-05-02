@@ -5,10 +5,8 @@ title: Nytt resegränssnitt
 feature: Release Notes
 topic: Content Management
 description: Nytt resegränssnitt
-hide: true
-hidefromtoc: true
 exl-id: 03828fca-dde7-4b3b-b890-2c007d1245cc
-source-git-commit: b6b3f710d08fb7f0949e75521ce126fa43d6cdc5
+source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 0%
@@ -68,12 +66,12 @@ Det gör det även möjligt för produktteamet att lägga till mer information p
 
 ![](assets/new-canvas5.png)
 
-
 ## Live-rapportering på arbetsytan under resan
 
 Förutom den förbättrade arbetsytelayouten för resan introduceras en ny funktion som gör det möjligt för användare att visa realtidsstatistik från **senaste dygnet**, vilket kallas live-rapportering, direkt på arbetsytan.
 
 För varje aktivitet i varje live-resa som använder den nya modellen har du tillgång till:
+
 
 * Antalet profiler som anger den här aktiviteten.
 * Antal profiler som avslutar den här aktiviteten på grund av ett fel.

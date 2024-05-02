@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 59ea67d9-e90c-4ad0-afb9-d0e0fd868855
-source-git-commit: be758a577dbff2ae400d0642f9e898b423353f90
+source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -59,14 +59,6 @@ Journey Optimizer stöder dock globala avanmälningar baserade på inkommande ny
 De alfanumeriska avsändar-ID:n är endast avsedda för envägsmeddelanden och kan inte ta emot inkommande meddelanden. Därför gäller Adobe Journey Optimizer SMS STOP-, START- och HELP-nyckelord inte för Alpha avsändar-ID:n. Du måste ange andra instruktioner, till exempel skriva till supportteamet, ringa en telefonlinje till supporten eller skicka ett annat telefonnummer eller en annan kod så att användarna kan välja bort meddelanden som skickas via ett alfanumeriskt avsändar-ID.
 
 ## Video {#video-sms}
-
-* I videon nedan visas hur inbyggt stöd för inkommande nyckelord (START, STOP och UNSTOP) fungerar för SMS.
-
-+++ Se videon
-
-  >[!VIDEO](https://video.tv.adobe.com/v/344026?quality=12)
-
-+++
 
 * I videon nedan får du lära dig hur du konfigurerar dubbel anmälan för SMS.
 

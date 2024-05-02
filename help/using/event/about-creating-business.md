@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: händelse, resa, verksamhet, konfiguration
 exl-id: 39eb40e1-d7f5-4a8e-9b64-c620940d5ff2
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
 workflow-type: tm+mt
-source-wordcount: '1119'
-ht-degree: 9%
+source-wordcount: '1104'
+ht-degree: 7%
 
 ---
 
@@ -76,7 +76,7 @@ Här följer de första stegen för att konfigurera en affärshändelse:
 
    >[!NOTE]
    >
-   >Använd inte blanksteg eller specialtecken. Använd maximalt 30 tecken.
+   >Endast alfanumeriska tecken och understreck tillåts. Maximala längden är 30 tecken.
 
 1. I **[!UICONTROL Type]** fält, välj **Företag**.
 
@@ -106,7 +106,7 @@ Här följer de första stegen för att konfigurera en affärshändelse:
 
    ![](assets/journey7-business.png)
 
-   Händelsen är nu konfigurerad och klar att injiceras i en resa. Ytterligare konfigurationssteg krävs för att ta emot händelser. Läs mer i [den här sidan](../event/additional-steps-to-send-events-to-journey.md).
+   Händelsen är nu konfigurerad och klar att injiceras i en resa. Ytterligare konfigurationssteg krävs för att ta emot händelser. Läs mer på [den här sidan](../event/additional-steps-to-send-events-to-journey.md).
 
 ## Definiera nyttolastfälten {#define-the-payload-fields}
 

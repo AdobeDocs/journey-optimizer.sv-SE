@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: skräddarsydd, allmän, evenemang, resa
 exl-id: b1813122-7031-452e-9ac5-a4ea7c6dc57c
-source-git-commit: 31d9189e8afd732875556b9caaa8e874f53597bb
+source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '537'
 ht-degree: 1%
 
 ---
@@ -45,17 +45,20 @@ Så här konfigurerar du en timeout för en händelse:
 
 1. Ange hur lång tid resan ska vänta på händelsen. Maximala längden är 29 dagar.
 
-1. Om du vill skicka personerna till en timeout-sökväg när ingen händelse tas emot inom den angivna tidsgränsen aktiverar du **[!UICONTROL Set a timeout path]** alternativ. Om det här alternativet inte är aktiverat fortsätter kundresan för personen när tidsgränsen nås.
+1. Om du vill skicka personerna till en timeout-sökväg när ingen händelse tas emot inom den angivna tidsgränsen aktiverar du **[!UICONTROL Set a timeout path]** alternativ. Om det här alternativet inte är aktiverat fortsätter kundresan för personen när tidsgränsen nås. Vi rekommenderar att du alltid **Ange en tidsgränssökväg** alternativ.
 
    ![](assets/event-timeout.png)
 
-I det här exemplet skickar resan en första välkomstknuff till en kund. Sedan skickas en reklamfilm för måltidsrabatt endast om kunden kommer in på restaurangen nästa dag. Därför har vi konfigurerat restaurangevenemanget med en 1-dagars timeout:
+I det här exemplet skickar resan ett första välkomstmeddelande till en kund när han/hon kommer in i lobbyn. Sedan skickas ett mejl med rabatt endast om kunden kommer in på restaurangen nästa dag. Därför har vi konfigurerat restaurangevenemanget med en 1-dagars timeout:
 
-* Om restauranghändelsen tas emot mindre än 1 dag efter välkomstsändningen skickas push-aktiviteten för måltidsrabatt.
+* Om restaurangeventet tas emot mindre än 1 dag efter välkomstmeddelandet skickas ett mejl med rabatt på måltid.
 * Om ingen restauranghändelse tas emot under nästa dag flödar personen genom timeoutvägen.
 
 Observera att om du vill konfigurera en timeout för flera händelser som placerats efter en **[!UICONTROL Wait]** behöver du bara konfigurera timeout för en av dessa händelser.
 
-Tidsgränsen gäller för alla händelser som placerats efter **[!UICONTROL Wait]** aktivitet. Om ingen händelse tas emot före den angivna tidsgränsen, kommer individerna att flyta in i en enda tidsgräns eller fortsätta den resan genom grenen när aktiviteten avslutas där tidsgränsen har definierats.
+Den definierade tidsgränsen gäller för alla händelser som placerats efter **[!UICONTROL Wait]** aktivitet:
+
+* Om en händelse förhandsgranskas inom tidsgränsen flödas den enskilda händelsen till den mottagna händelsens sökväg.
+* Om ingen händelse tas emot inom tidsgränsen flödar den enskilda händelsen in i den timeout-gren för händelsen där tidsgränsen har definierats.
 
 ![](assets/event-timeout-group.png)

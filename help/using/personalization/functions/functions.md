@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
-source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
+source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1872'
 ht-degree: 0%
 
 ---
@@ -171,6 +171,9 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
     </tr>
     <tr>
     <td><a href="math.md#to-hex-string">Till hexadecimal sträng</a></td><td>konverterar alla tal till sin hexadecimala sträng.</td>
+    </tr>
+    <tr>
+    <td><a href="math.md#to-int">ToInt</a></td><td>Konverterar alla dessa typer (tal, double, int, long, float, short, byte, boolean, string) till ett heltal.</td>
     </tr>
     <tr>
         <td><a href="math.md#to-percentage">Till procent</a></td><td>Den här funktionen konverterar ett tal till procent</td>

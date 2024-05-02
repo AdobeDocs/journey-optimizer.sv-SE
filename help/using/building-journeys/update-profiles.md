@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: profil, uppdatering, resa, aktivitet
 exl-id: 8b2b2d1e-9bd1-439d-a15e-acdbab387c4b
-source-git-commit: 9010b173eb5126fff72d71aa582b265cc05fddf0
+source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Använd **[!UICONTROL Update Profile]** Åtgärdsaktivitet för att uppdatera en
 
 ## Rekommendationer
 
-* The **Uppdatera profil** kan bara användas i resor som börjar med en händelse som har ett namnutrymme.
+* The **Uppdatera profil** -åtgärden kan bara användas i resor som har ett namnutrymme.
 * Åtgärden uppdaterar bara befintliga fält, inga nya profilfält skapas.
 * Du kan inte använda **Uppdatera profil** åtgärd för att generera upplevelsehändelser, till exempel ett köp.
 * Precis som med andra åtgärder kan du definiera en alternativ sökväg om fel eller timeout inträffar, och du kan inte placera två åtgärder parallellt.

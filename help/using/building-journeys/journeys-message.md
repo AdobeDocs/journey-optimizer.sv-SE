@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, i appen
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
+source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -104,6 +104,10 @@ Observera att för aktiviteten i appen kan ändringar göras i innehållet medan
 >title="Om Tidsoptimering för Skickat"
 >abstract="Adobe Journey Optimizer funktion för optimering av sändningstid, som bygger på Adobe AI-tjänster, kan förutsäga den bästa tidpunkten för att skicka e-post eller push-meddelanden för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser."
 
+>[!NOTE]
+>
+>Den här funktionen är inte aktiverad som standard. Du kan kontakta din Adobe-representant för att aktivera den.
+
 ### Om optimering vid sändning {#about-send-time}
 
 Adobe Journey Optimizer funktion för optimering av sändningstid, som bygger på Adobe AI-tjänster, kan förutsäga den bästa tidpunkten för att skicka e-post eller push-meddelanden för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser. Använd vår maskininlärningsmodell för att schemalägga personliga sändningstider för varje användare så att de kan utöka öppnings- och klickfrekvensen för dina meddelanden.
@@ -120,10 +124,6 @@ Modellen varierar oavsett om du talar om poängsättning eller utbildning. Utbil
 * Poäng - poängsättning för enskilda profiler baserat på den tränade modellen
 
 Den här informationen lagras med användarens profil och hänvisas till vid körning av resan för att tala om för Adobe Journey Optimizer när meddelandet ska skickas.
-
->[!CAUTION]
->
->Den här funktionen är inte kompatibel med sprängningsläge.
 
 ### Vanliga frågor {#faq-send-time}
 

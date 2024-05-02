@@ -3,7 +3,9 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
-source-git-commit: c14ed9196d003cee893eb809a0edbdeebe36555f
+hide: true
+hidefromtoc: true
+source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 4%
@@ -195,4 +197,3 @@ From beta to LA, the following improvements that have been added:
 
 * Nu kan du välja en marknadsföringsåtgärd på kanalnivå. När de används på en yta används alla medgivandepolicyer som är kopplade till den marknadsföringsåtgärden för att ta hänsyn till kundernas önskemål.
 * Åtkomstkontrollen på objektnivå är nu tillgänglig för kanalytor.
-

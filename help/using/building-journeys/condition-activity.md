@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: aktivitet, villkor, arbetsyta, resa
 exl-id: 496c7666-a133-4aeb-be8e-c37b3b9bf5f9
-source-git-commit: 2edff0123084fa1736fb8198c3b4e8ff4e40341d
+source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
 workflow-type: tm+mt
 source-wordcount: '1453'
 ht-degree: 5%
@@ -154,11 +154,10 @@ I det här avsnittet beskrivs hur du använder en målgrupp i ett resevillkor. M
 Följ de här stegen för att använda en målgrupp i ett resevillkor:
 
 1. Öppna en resa, släpp en **[!UICONTROL Condition]** -aktivitet och välj **Villkor för datakälla**.
-   ![](assets/journey47.png)
-
-1. Klicka **[!UICONTROL Add a path]** för varje extra sökväg som behövs. Klicka på **[!UICONTROL Expression]** fält.
 
    ![](assets/segment3.png)
+
+1. Klicka **[!UICONTROL Add a path]** för varje extra sökväg som behövs. Klicka på **[!UICONTROL Expression]** fält.
 
 1. På vänster sida, unfold **[!UICONTROL Audiences]** nod. Dra och släpp den målgrupp du vill använda för ditt villkor. Som standard är villkoret för målgruppen sant.
 

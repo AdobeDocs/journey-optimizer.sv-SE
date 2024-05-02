@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: c14ed9196d003cee893eb809a0edbdeebe36555f
+source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
 workflow-type: tm+mt
-source-wordcount: '1756'
+source-wordcount: '1786'
 ht-degree: 29%
 
 ---
@@ -20,6 +20,7 @@ ht-degree: 29%
    + [Tidig versionsinformation](using/rn/early-release-notes.md)
    + [Senaste versionsinformation](using/rn/release-notes.md)
    + Tidigare versionsinformation {#previous-rn-new}
+      + [Versionsinformation 2024](using/rn/release-notes-2024.md)
       + [Versionsinformation 2023](using/rn/release-notes-2023.md)
       + [Versionsinformation 2022](using/rn/release-notes-2022.md)
       + [Versionsinformation 2021](using/rn/release-notes-2021.md)
@@ -165,6 +166,7 @@ ht-degree: 29%
          + [Skicka samlingar dynamiskt med anpassade åtgärder](using/building-journeys/collections.md)
          + [Rita upp leveranser](using/building-journeys/ramp-up-deliveries-uc.md)
          + [Begränsa genomströmning med externa datakällor och anpassade åtgärder](using/building-journeys/limit-throughput.md)
+         + [Använd anpassade åtgärder för att skriva resehändelser i Experience Platform](using/building-journeys/custom-action-aep.md)
 + Kampanjer{#campaigns}
    + [Kom igång med kampanjer](using/campaigns/get-started-with-campaigns.md)
    + [Skapa en kampanj](using/campaigns/create-campaign.md)
@@ -224,12 +226,16 @@ ht-degree: 29%
       + [Arbetsflöde för snabb start av mobil introduktion](using/push/mobile-onboarding-wf.md)
 + SMS-/MMS-kanal{#sms}
    + [Kom igång med textmeddelanden](using/sms/get-started-sms.md)
-   + [Skapa ett textmeddelande](using/sms/create-sms.md)
-   + [Skapa ett MMS-meddelande](using/sms/create-mms.md)
+   + [Skapa ett textmeddelande (SMS/MMS)](using/sms/create-sms.md)
    + [Kontrollera och skicka textmeddelanden](using/sms/send-sms.md)
    + [Hantera avanmälan av textmeddelande](using/sms/sms-opt-out.md)
-   + [Konfigurera SMS-kanal](using/sms/sms-configuration.md)
    + [Konfigurera SMS-underdomäner](using/sms/sms-subdomains.md)
+   + Konfigurera SMS-/MMS-kanal{#configure-sms}
+      + [Kom igång med SMS-konfiguration](using/sms/sms-configuration.md)
+      + [Konfigurera Sinch-provider](using/sms/sms-configuration-sinch.md)
+      + [Konfigurera Infobip-provider](using/sms/sms-configuration-infobip.md)
+      + [Konfigurera Twilio-provider](using/sms/sms-configuration-twilio.md)
+      + [Skapa en SMS-yta](using/sms/sms-configuration-surface.md)
 + Direktutskick {#direct-mail}
    + [Kom igång med direktreklam](using/direct-mail/get-started-direct-mail.md)
    + [Skapa direktreklam](using/direct-mail/create-direct-mail.md)

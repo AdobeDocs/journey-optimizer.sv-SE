@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: hopp, aktivitet, resa, dela, dela upp
 exl-id: 46d8950b-8b02-4160-89b4-1c492533c0e2
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '817'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ Under resa B utlöses den första händelsen internt via **[!UICONTROL Jump]** v
 * Målresan kan även omfatta så många **[!UICONTROL Jump]** aktiviteter efter behov.
 * Loopmönster stöds inte. Det finns inget sätt att länka samman två eller flera resor som skulle skapa en oändlig slinga. The **[!UICONTROL Jump]** aktivitetskonfigurationsskärmen förhindrar dig från att göra detta.
 
-### Körning 
+### Körning
 
 * När **[!UICONTROL Jump]** aktiviteten körs, den senaste versionen av målresan aktiveras.
 * Som vanligt kan en unik individ bara vara närvarande en gång under samma resa. Om den person som har åsamkats från ursprungsresan redan befinner sig på målresan, kommer personen alltså inte att ta sig in på målresan. Inga fel rapporteras på **[!UICONTROL Jump]** aktivitet eftersom detta är ett normalt beteende.
@@ -112,7 +112,7 @@ När en **[!UICONTROL Jump]** -aktiviteten konfigureras under en resa, en **[!UI
 
 ## Felsökning
 
-När resan publiceras eller i testläge inträffar fel om:
+Fel uppstår om:
 * målresan inte längre existerar
 * målresan är utkast, avslutad eller stoppad
 * om den första händelsen i målresan har ändrats och mappningen är bruten

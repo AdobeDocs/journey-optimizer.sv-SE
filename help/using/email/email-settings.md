@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: e63823dc2f901b870f11b0478e682e2af61b5b98
+source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
 workflow-type: tm+mt
-source-wordcount: '2309'
+source-wordcount: '2351'
 ht-degree: 0%
 
 ---
@@ -38,14 +38,14 @@ E-postytans konfiguration hämtas för att skicka kommunikation enligt logiken n
 >
 >De uppdaterade inställningarna för e-postyta hämtas automatiskt under den eller de resor eller kampanjer där ytan används.
 
-## Typ av e-post {#email-type}
+## E-posttyp {#email-type}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_presets_emailtype"
->title="Definiera e-postkategorin"
+>title="Definiera e-posttypen"
 >abstract="Välj vilken typ av e-postmeddelanden som ska skickas när du använder den här ytan: Marknadsföring för marknadsföringsmeddelanden, som kräver användarens samtycke, eller Transaktion för icke-kommersiella e-postmeddelanden, som också kan skickas till profiler som inte längre prenumererar i specifika sammanhang."
 
-I **E-POSTTYP** väljer du den typ av meddelande som ska skickas med ytan: **[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**.
+I **E-posttyp** väljer du typ av meddelande för ytan: **[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**.
 
 * Välj **Marknadsföring** för e-postreklam, till exempel veckokampanjer för en butik. Dessa meddelanden kräver användarens samtycke.
 
@@ -53,47 +53,45 @@ I **E-POSTTYP** väljer du den typ av meddelande som ska skickas med ytan: **[!U
 
 När du skapar ett meddelande måste du välja en giltig kanalyta som matchar den kategori du valde för e-postmeddelandet.
 
-## Underdomän- och IP-pooler {#subdomains-and-ip-pools}
+## Underdomän {#subdomains}
 
-I **Underdomän- och IP-pooler** fyller du i de obligatoriska fälten enligt instruktionerna nedan.
+Välj den underdomän som ska användas för att skicka e-postmeddelanden.
 
-1. Välj den underdomän som ska användas för att skicka e-postmeddelanden.
-
-   Om du vill bevara domänens anseende, snabba upp processen för IP-uppvärmning och förbättra leveransmöjligheterna delegerar du dina sändande underdomäner till Adobe. [Läs mer](../configuration/about-subdomain-delegation.md)
+Om du vill bevara domänens anseende, snabba upp processen för IP-uppvärmning och förbättra leveransmöjligheterna delegerar du dina sändande underdomäner till Adobe. [Läs mer](../configuration/about-subdomain-delegation.md)
 
 <!--If needed, you can define dynamic subdomains. [Learn more](../email/surface-personalization.md#dynamic-subdomains)-->
 
-1. Välj den IP-pool som ska associeras med ytan. [Läs mer](../configuration/ip-pools.md)
 
-   ![](assets/preset-subdomain-ip-pool.png)
+## Information om IP-pool {#ip-pools}
 
-   Du kan inte fortsätta skapa en yta medan den valda IP-poolen är under [utgåva](../configuration/ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) och har aldrig kopplats till den valda underdomänen. Annars kommer den äldsta versionen av associationen för IP-poolen/underdomänen fortfarande att användas. I så fall sparar du ytan som utkast och försöker igen när IP-poolen har **[!UICONTROL Success]** status.
 
-   >[!NOTE]
-   >
-   >I icke-produktionsmiljöer skapar inte Adobe körklara testunderdomäner och ger inte heller åtkomst till en delad sändande IP-pool. Du måste [delegera dina egna underdomäner](../configuration/delegate-subdomain.md) och använd IP-adresserna från poolen som tilldelats din organisation.
+Välj den IP-pool som ska associeras med ytan. [Läs mer](../configuration/ip-pools.md)
 
-1. När en IP-pool har valts visas PTR-information när du hovrar över IP-adresserna som visas under listrutan IP-pool. [Läs mer om PTR-poster](../configuration/ptr-records.md)
+![](assets/preset-subdomain-ip-pool.png){width="50%" align="left"}
 
-   ![](assets/email-surface-ptr-record.png)
+Du kan inte fortsätta skapa en yta medan den valda IP-poolen är under [utgåva](../configuration/ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) och har aldrig kopplats till den valda underdomänen. Annars kommer den äldsta versionen av associationen för IP-poolen/underdomänen fortfarande att användas. I så fall sparar du ytan som utkast och försöker igen när IP-poolen har **[!UICONTROL Success]** status.
 
-   >[!NOTE]
-   >
-   >Om en PTR-post inte är konfigurerad kan du kontakta Adobe.
+>[!NOTE]
+>
+>I icke-produktionsmiljöer skapar inte Adobe körklara testunderdomäner och ger inte heller åtkomst till en delad sändande IP-pool. Du måste [delegera dina egna underdomäner](../configuration/delegate-subdomain.md) och använd IP-adresserna från poolen som tilldelats din organisation.
 
-## List-Unsubscribe {#list-unsubscribe}
+När en IP-pool har valts visas PTR-information när du hovrar över IP-adresserna som visas under listrutan IP-pool. [Läs mer om PTR-poster](../configuration/ptr-records.md)
+
+>[!NOTE]
+>
+>Om en PTR-post inte är konfigurerad kan du kontakta Adobe.
+
+## Avbeställ lista {#list-unsubscribe}
 
 Vid [välja en underdomän](#subdomains-and-ip-pools) från listan, **[!UICONTROL Enable List-Unsubscribe]** visas.
 
-![](assets/preset-list-unsubscribe.png)
-
-Det här alternativet är aktiverat som standard.
-
-Om du låter det vara aktiverat inkluderas en länk för att avbryta prenumerationen automatiskt i e-posthuvudet, till exempel:
+Det här alternativet är aktiverat som standard. Om du låter det vara aktiverat inkluderas en länk för att avbryta prenumerationen automatiskt i e-posthuvudet, till exempel:
 
 ![](assets/preset-list-unsubscribe-header.png)
 
 Om du inaktiverar det här alternativet visas ingen länk för att avbryta prenumerationen i e-posthuvudet.
+
+Du kan välja medgivandenivå på menyn **Samtyckesnivå** listruta. Den kan vara specifik för kanalen eller för profilens identitet. Baserat på den här inställningen uppdateras medgivandet i Adobe Journey Optimizer antingen på kanalnivå eller på ID-nivå när en användare avbeställer prenumerationen via länken för att avbryta prenumerationen i ett e-postmeddelande.
 
 Länken för att avbryta prenumerationen består av två element:
 
@@ -101,7 +99,7 @@ Länken för att avbryta prenumerationen består av två element:
 
   I [!DNL Journey Optimizer], är e-postadressen för avanmälan standard **[!UICONTROL Mailto (unsubscribe)]** adressen som visas i kanalytan, baserat på [vald underdomän](#subdomains-and-ip-pools).
 
-  ![](assets/preset-list-unsubscribe-mailto.png)
+  ![](assets/preset-list-unsubscribe-mailto.png){width="50%" align="left"}
 
 * The **avbeställ URL**, vilket är URL:en till landningssidan där användaren omdirigeras när prenumerationen har upphört.
 
@@ -124,13 +122,9 @@ Läs mer om hur du lägger till en länk för att avbryta prenumerationen i dina
 I **[!UICONTROL Header parameters]** anger du avsändarens namn och e-postadresser som är kopplade till den typ av e-post som skickas med den aktuella ytan.
 
 * **[!UICONTROL Sender name]**: Avsändarens namn, till exempel ditt varumärkes namn.
-
 * **[!UICONTROL Sender email]**: Den e-postadress som du vill använda för din kommunikation.
-
 * **[!UICONTROL Reply to (name)]**: Namnet som ska användas när mottagaren klickar på **Svara** i klientprogramvaran för e-post.
-
 * **[!UICONTROL Reply to (email)]**: Den e-postadress som ska användas när mottagaren klickar på **Svara** i klientprogramvaran för e-post. [Läs mer](#reply-to-email)
-
 * **[!UICONTROL Error email]**: Alla fel som genereras av Internet-leverantörer efter några dagar efter att e-post har levererats (asynkrona studsar) tas emot på den här adressen. Meddelanden och svar på frågor tas också emot på den här adressen.
 
   Om du vill få meddelanden och svar på frågor på en viss e-postadress som inte har delegerats till Adobe måste du konfigurera en [framåtprocess](#forward-email). I så fall ska du se till att du har en manuell eller automatiserad lösning för att bearbeta e-postmeddelanden som landar i den här inkorgen.

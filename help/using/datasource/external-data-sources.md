@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: externa, källor, data, konfiguration, anslutning, tredje part
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
-source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
+source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 75%
+source-wordcount: '1492'
+ht-degree: 73%
 
 ---
 
@@ -58,7 +58,7 @@ Här följer de viktigaste stegen för att skapa och konfigurera en ny extern da
 
    >[!NOTE]
    >
-   >Använd inte blanksteg eller specialtecken. Använd maximalt 30 tecken.
+   >Endast alfanumeriska tecken och understreck tillåts. Maximala längden är 30 tecken.
 
 1. Lägg till en beskrivning om datakällan. Det här steget är valfritt.
 1. Lägg till den externa tjänstens URL. I vårt exempel: _https://api.adobeweather.org/weather_.
@@ -86,7 +86,7 @@ Här följer de viktigaste stegen för att skapa och konfigurera en ny extern da
 
    ![](assets/journey28.png)
 
-1. Klicka på **[!UICONTROL Add a New Field Group]** för att lägga till en ny fältgrupp för varje API-parameteruppsättning. Använd inte blanksteg eller specialtecken i fältgruppens namn. I vårt exempel behöver vi skapa två fältgrupper. En för varje parameteruppsättning (&quot;city&quot; och &quot;long/lat&quot;).
+1. Klicka på **[!UICONTROL Add a New Field Group]** för att lägga till en ny fältgrupp för varje API-parameteruppsättning. Endast alfanumeriska tecken och understreck tillåts i fältgruppsnamnet. Maximala längden är 30 tecken. I vårt exempel behöver vi skapa två fältgrupper. En för varje parameteruppsättning (&quot;city&quot; och &quot;long/lat&quot;).
 
 För parameteruppsättningen &quot;long/lat&quot; skapar vi en fältgrupp med följande information:
 

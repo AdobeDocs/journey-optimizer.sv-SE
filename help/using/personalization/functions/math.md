@@ -6,10 +6,10 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: b9149ad6-2be7-4bdf-82eb-7ab52780cb4e
-source-git-commit: c823d1a02ca9d24fc13eaeaba2b688249e61f767
+source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 6%
+source-wordcount: '243'
+ht-degree: 4%
 
 ---
 
@@ -49,7 +49,7 @@ Den här frågan returnerar en formaterad sträng på arabiska som motsvarar 123
 {%= formatNumber(123456.789, "ar_EG") %}
 ```
 
-## Random {#random}
+## Slumpmässig {#random}
 
 The `random` används för att returnera ett slumpmässigt värde mellan 0 och 1.
 
@@ -95,6 +95,24 @@ Frågan returnerar det hexadecimala värdet 158, dvs 9e.
 
 ```sql
 {%= toHexString(158) %}
+```
+
+## Till int {#to-int}
+
+The `toInt` används för att konvertera någon av dessa typer (tal, double, int, long, float, short, byte, boolean, string) till ett heltal.
+
+**Syntax**
+
+```sql
+{%= toInt(<valueToConvert>) %}: integer
+```
+
+**Exempel**
+
+Den här frågan returnerar heltalsvärdet 42,6, dvs. 42.
+
+```sql
+{%= toInt(42.6) %}: integer
 ```
 
 ## Till procent {#to-percentage}

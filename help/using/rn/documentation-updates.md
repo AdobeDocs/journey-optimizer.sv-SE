@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 352ffebda7eda2ceb54b0f5c3f6d3b577522191f
+source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
 workflow-type: tm+mt
-source-wordcount: '5136'
+source-wordcount: '5226'
 ht-degree: 13%
 
 ---
@@ -19,12 +19,21 @@ ht-degree: 13%
 
 På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimizer] dokumentation.
 
+## Maj 2024 {#may-2024}
+
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Versionen från 24 april finns detaljerad i dokumentationen. [Läs mer](release-notes.md)
+
+
 ## April 2024 {#april-2024}
 
 * Konfigurationsstegen för meddelanden i programmet har beskrivits. [Läs mer](../in-app/inapp-configuration.md)
 * Dokumentation för [Offer decisioning-API:er](../offers/api-reference/offer-delivery-api/decisioning-api.md) och [API:er för gruppbeslut](../offers/api-reference/offer-delivery-api/batch-decisioning-api.md) har uppdaterats.
 * Information har lagts till i dokumentationen för beslutshantering om hantering av edge- och navregioner när frekvensbegränsning används med Edge Decisioning API. [Läs mer](../offers/offer-library/add-constraints.md#frequency-capping)
 * Information har lagts till om att skapa en identitet med anpassade namnutrymmen när du arbetar med API-utlösta kampanjer. [Läs mer](../campaigns/api-triggered-campaigns.md)
+* Skärmfotona har uppdaterats för att återspegla den förbättrade arbetsytan på resan.
+* Namnbegränsningar har uppdaterats på följande sida: [Konfigurera en enhetshändelse](../event/about-creating.md), [Konfigurera en affärshändelse](../event/about-creating-business.md#gs-business-events), [Konfigurera en anpassad åtgärd](../action/about-custom-action-configuration.md#configuration-steps), [Externa datakällor](../datasource/external-data-sources.md)
+* En anteckning har lagts till om tillgängligheten för tidsoptimering för sändning. [Läs mer](../building-journeys/journeys-message.md#send-time-optimization)
+* Ett nytt exempel på teknisk användning har lagts till om hur du skapar en anpassad åtgärd för att skicka data till Experience Platform. [Läs mer](../building-journeys/custom-action-aep.md)
 
 ## Mars 2024 {#march-2024}
 
@@ -82,6 +91,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Syntaxen för händelsefältet har uppdaterats. Följande syntax är inaktuell `@(my_event.myfield}` och ersatt med `@event{my_event.myfield}`. [Läs mer](../building-journeys/expression/field-references.md)
 * Den globala rapporten och Live-rapportguiderna har omstrukturerats. [Läs mer](../reports/campaign-global-report.md)
 
++++ 2023
 
 ## November 2023 {#nov-2023}
 
@@ -206,6 +216,8 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * En anteckning har lagts till om begränsningen för sökning med objektmatris. [Läs mer](../event/experience-event-schema.md#relationships_limitations)
 * En ny sida om datahantering har lagts till i [!DNL Journey Optimizer]. [Läs mer](../data/gs-data.md)
 * En tabell med alla koder som kan returneras i svaret har lagts till när erbjudanden levereras med hjälp av besluts-API:t. [Läs mer](../offers/api-reference/offer-delivery-api/decisioning-api.md)
+
++++
 
 +++ 2022
 

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 327de13a-1c99-4d5e-86cf-8180fb7aaf23
-source-git-commit: 3f844f65609f271e834ebf42749253fd64446a9a
+source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1329'
 ht-degree: 2%
 
 ---
@@ -197,10 +197,6 @@ Du kan nu använda den här mallen när du skapar innehåll i [!DNL Journey Opti
 ## Testa mallar för e-postinnehåll {#test-template}
 
 Du kan testa återgivningen av vissa e-postmallar, oavsett om de har skapats från grunden eller från ett befintligt innehåll. Följ stegen nedan för att göra det.
-
->[!CAUTION]
->
->För närvarande är testning av innehållsmallar bara tillgängligt för **[!UICONTROL Email]** mallar med **[!UICONTROL HTML]** typ.
 
 1. Få åtkomst till innehållsmalllistan via **[!UICONTROL Content Management]** > **[!UICONTROL Content Templates]** och välj en e-postmall.
 

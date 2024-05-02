@@ -9,9 +9,9 @@ role: Admin, Developer, Architect
 level: Experienced
 keywords: objekt, nivå, åtkomst, kontroll, etiketter, plats, auktorisering
 exl-id: 02ccdd95-426c-4b61-9834-7f2dcd5abdbb
-source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
+source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '385'
 ht-degree: 2%
 
 ---
@@ -33,6 +33,7 @@ Med åtkomstkontrollen på objektnivå (OLAC) kan du definiera behörigheter fö
 * Erbjudande
 * Statisk insamling av erbjudanden
 * Beslut om erbjudandet
+* Kanalyta
 
 Syftet är att skydda känsliga digitala resurser mot obehöriga användare, vilket ger ytterligare skydd för personuppgifter.
 

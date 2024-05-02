@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 99c509a00a3e8a4dbf9ae8a5b16aa799b0af2e13
+source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1674'
 ht-degree: 0%
 
 ---
@@ -68,6 +68,8 @@ Så här skapar du en kanalyta:
    >
    > Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-` tecken.
 
+1. Om du vill tilldela etiketter för anpassad eller grundläggande dataanvändning till ytan kan du välja **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md).
+
 1. Om du valde **[!UICONTROL Email]** kanal, konfigurera dina inställningar enligt beskrivningen i [det här avsnittet](../email/email-settings.md).
 
    ![](assets/preset-email.png)
@@ -80,7 +82,7 @@ Så här skapar du en kanalyta:
    >
    >Mer information om hur du konfigurerar miljön för att skicka push-meddelanden finns i [det här avsnittet](../push/push-gs.md).
 
-1. För **[!UICONTROL SMS]** kanal, ange dina inställningar enligt [det här avsnittet](../sms/sms-configuration.md#message-preset-sms).
+1. För **[!UICONTROL SMS]** kanal, ange dina inställningar enligt [det här avsnittet](../sms/sms-configuration.md).
 
    ![](assets/preset-sms.png)
 
@@ -88,18 +90,17 @@ Så här skapar du en kanalyta:
    >
    >Mer information om hur du konfigurerar miljön för att skicka SMS-meddelanden finns i [det här avsnittet](../sms/sms-configuration.md).
 
-<!--
-1. Select a **[!UICONTROL Marketing action]** to associate consent policies to the messages using this surface. All consent policies associated with that marketing action are leveraged in order to respect the preferences of your customers. [Learn more](../action/consent.md#marketing-actions)
+1. Välj en **[!UICONTROL Marketing action]** för att koppla medgivandeprinciper till meddelanden som använder den här ytan. Alla policyer för samtycke som är kopplade till den marknadsföringsåtgärden utnyttjas för att ta hänsyn till era kunders preferenser. [Läs mer](../action/consent.md#surface-marketing-actions)
 
-    >[!NOTE]
-    >
-    >Consent policies are currently only available for organizations that have purchased the **Healthcare Shield** and **Privacy and Security Shield** add-on offerings. [Learn more](https://experienceleague.adobe.com/docs/events/customer-data-management-voices-recordings/governance/healthcare-shield.html){target="_blank"}
+   >[!NOTE]
+   >
+   >Samtyckesprofiler är för närvarande bara tillgängliga för organisationer som har köpt **Hälsovårdssköld** och **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
 
-    ![](assets/surface-marketing-action.png)
+   ![](assets/surface-marketing-action.png)
 
-    >[!NOTE]
-    >
-    >You can only select one marketing action.-->
+   >[!NOTE]
+   >
+   >Du kan bara välja en marknadsföringsåtgärd.
 
 1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara kanalytan som ett utkast och återuppta konfigurationen senare.
 
