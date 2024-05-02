@@ -6,10 +6,10 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: b08dc0f8-c85f-4aca-85eb-92dc76b0e588
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 3b9822121390548546ab6628504ea9dd1101fb48
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 3%
+source-wordcount: '365'
+ht-degree: 1%
 
 ---
 
@@ -135,7 +135,7 @@ Some edu specific content Content
 
 The `each` helper används för att iterera över en array.
 Hjälpens syntax är ```{{#each ArrayName}}``` Ditt innehåll {{/each}}
-Vi kan referera till de enskilda arrayobjekten med nyckelordet **this** inuti blocket. Index för arrayens element kan återges med {{@index}}.
+Vi kan referera till de enskilda arrayobjekten med nyckelordet **this** inuti blocket. Index för arrayelementet kan återges med {{@index}}.
 
 **Syntax**
 
@@ -205,5 +205,11 @@ The `let` -funktionen tillåter att ett uttryck lagras som en variabel som kan a
 I följande exempel tillåts alla produktsummor med transaktionen i USD där summan är större än 100 och mindre än 1 000 USD.
 
 ```sql
-{% let variable = expression %} {{variable}}
+{% let sum = 0%}
+    {{#each profile.productsInCart as |p|}}
+        {%#if p.price>100 and p.price<1000%}
+            {%let sum = sum + p.price %}
+        {%/if%}
+    {{/each}}
+{{sum}}
 ```
