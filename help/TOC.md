@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: 39b2f9efcf84bba5e40ce999950346221a6eb699
 workflow-type: tm+mt
-source-wordcount: '1786'
+source-wordcount: '1794'
 ht-degree: 29%
 
 ---
@@ -271,10 +271,12 @@ ht-degree: 29%
       + [Konfigurera underdomäner för landningssidor](using/landing-pages/lp-subdomains.md)
       + [Definiera förinställningar för landningssidor](using/landing-pages/lp-presets.md)
 + Innehållshantering {#content-management}
-   + Arbeta med Content Assist{#content-assistant}
-      + [Kom igång med Content Assist](using/content-management/gs-generative.md)
-      + [Skapa innehåll](using/content-management/generative-content.md)
-      + [Bildgenerering](using/content-management/generative-image.md)
+   + Arbeta med AI-assistenten{#ai-assistant}
+      + [Kom igång med AI-assistenten](using/content-management/gs-generative.md)
+      + [E-postgenerering](using/content-management/generative-email.md)
+      + [Push-generering](using/content-management/generative-push.md)
+      + [SMS-generering](using/content-management/generative-sms.md)
+      + [Experimentera med AI-assistenten](using/content-management/generative-experimentation.md)
    + Arbeta med flerspråkigt innehåll{#content-multilingual}
       + [Kom igång med flerspråkigt innehåll](using/content-management/multilingual-gs.md)
       + [Skapa flerspråkigt innehåll med manuell översättning](using/content-management/multilingual-manual.md)
