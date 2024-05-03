@@ -8,7 +8,7 @@ feature: SMS, Channel Configuration
 level: Intermediate
 keywords: SMS, underdomäner, konfiguration
 exl-id: 08a546d1-060c-43e8-9eac-4c38945cc3e1
-source-git-commit: 75638e9b463278efab16b2b85ed2707640f088f2
+source-git-commit: 016b823161b162cb00e0eae27cd45873752425ba
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
@@ -26,13 +26,13 @@ ht-degree: 0%
 >id="ajo_admin_subdomain_sms"
 >title="Delegera en SMS/MMS-underdomän"
 >abstract="Du måste konfigurera en underdomän som ska användas för dina textmeddelanden, eftersom du behöver den här underdomänen för att skapa en SMS-yta. Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en ny underdomän."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/sms/sms-configuration.html#message-preset-sms" text="Skapa SMS-ytor"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/sms/configure-sms/sms-configuration-surface" text="Skapa SMS-ytor"
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_config_sms_subdomain"
 >title="Välj en SMS/MMS-underdomän"
 >abstract="Om du vill kunna skapa en SMS-yta måste du kontrollera att du tidigare har konfigurerat minst en SMS-underdomän att välja från listan över underdomännamn."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/sms/sms-configuration.html#message-preset-sms" text="Skapa SMS-ytor"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/sms/configure-sms/sms-configuration-surface" text="Skapa SMS-ytor"
 
 För att kunna förkorta URL:er som läggs till i SMS/MMS-meddelanden måste du konfigurera den underdomän som du väljer när [skapa en SMS-yta](sms-configuration.md#message-preset-sms).
 
