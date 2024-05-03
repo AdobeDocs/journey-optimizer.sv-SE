@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 61e6291f-c063-44a0-950c-8bb76de693f2
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: 2b9d8cd80664abc2743c985ee1cd858ffa0344ee
 workflow-type: tm+mt
-source-wordcount: '4397'
+source-wordcount: '4395'
 ht-degree: 8%
 
 ---
@@ -70,7 +70,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 >[!AVAILABILITY]
 >
->Dessa funktioner är för närvarande tillgängliga som en privat beta.
+>Dessa funktioner är för närvarande tillgängliga som en betaversion.
 
 <!--
 **Spam scoring for emails**
@@ -309,7 +309,7 @@ A new option is available in the email surface settings to include email address
 
 **Resor**
 
-* Nu kan du utnyttja API-anropssvar i anpassade åtgärder och samordna din resa baserat på dessa svar. Den här funktionen är för närvarande tillgänglig som en privat beta. [Läs mer](../action/action-response.md).
+* Nu kan du utnyttja API-anropssvar i anpassade åtgärder och samordna din resa baserat på dessa svar. Den här funktionen är för närvarande tillgänglig som en betaversion. [Läs mer](../action/action-response.md).
 * En ny typ av systemvarning har införts. Du kan nu få meddelanden när en anpassad åtgärd misslyckas. [Läs mer](../reports/alerts.md).
   <!--* When duplicating a journey, you can now define the name of the journey copy.-->
 
