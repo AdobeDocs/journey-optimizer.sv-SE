@@ -11,9 +11,9 @@ badge: label="Beta" type="Informative"
 hide: true
 hidefromtoc: true
 exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
-source-git-commit: 98ce21578d30ac50665561438715d19d1723f4a7
+source-git-commit: ff7f2b42d63e8a3d02f5dbebd926eda26c646752
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_content_generation"
 >title="Skapa e-postinnehåll"
->abstract="Adobe Journey Optimizer AI Assistant ger proaktiva variantförslag för text och bilder. Det är tillgängligt för e-post, push, SMS och webbkanaler. Den nya funktionen ger snabb generering av text och bilder."
+>abstract="AI Assistant i Adobe Journey Optimizer ger proaktiva variantförslag för text och bilder. Det är tillgängligt för e-post, push, SMS och webbkanaler. Den nya funktionen ger snabb generering av text och bilder."
 
 >[!BEGINSHADEBOX]
 
@@ -39,9 +39,9 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Adobe Journey Optimizer AI Assistant finns för närvarande endast som betaversion för vissa användare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
+>AI Assistant i Adobe Journey Optimizer finns för närvarande endast som betaversion för vissa användare.
 
-Adobe Journey Optimizer AI Assistant ger proaktiva variantförslag för text och bilder. Det är tillgängligt för e-post-, push- och SMS-kanaler. Den nya funktionen ger snabb generering av text och bilder. Bildgenereringen hanteras med Adobe Firefly.
+AI Assistant i Adobe Journey Optimizer ger proaktiva variantförslag för text och bilder. Det är tillgängligt för e-post-, push- och SMS-kanaler. Den nya funktionen ger snabb generering av text och bilder. Bildgenereringen hanteras med Adobe Firefly.
 
 Använd AI Assistant i Journey Optimizer för att optimera budskapets genomslagskraft genom att experimentera med olika förtexter och bilder. Generera flera varianter och skapa ett experiment för att jämföra dem. Genom att utnyttja Journey Optimizer Content Experiment kan ni definiera flera olika meddelandebehandlingar för att mäta vilken som fungerar bäst för er målgrupp. Du kan välja att variera leveransinnehållet eller ämnet. Meddelandemålgruppen fördelas slumpmässigt till varje behandling för att avgöra vilken som fungerar bäst med det angivna måttet. Läs mer om Content Experiment i [det här avsnittet](../campaigns/content-experiment.md).
 

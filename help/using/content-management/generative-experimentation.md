@@ -10,9 +10,9 @@ level: Beginner
 badge: label="Beta" type="Informative"
 hide: true
 hidefromtoc: true
-source-git-commit: fd58a52a652243a411e61c5b83a329f988348265
+source-git-commit: ff7f2b42d63e8a3d02f5dbebd926eda26c646752
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '237'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-När du har skapat och personaliserat dina meddelanden kan du lyfta fram ditt innehåll med Journey Optimizer AI Assistant, som innehåller funktionen för innehållsexperiment. Med det här verktyget kan du definiera flera olika leveranssätt, med varierande innehåll, för att mäta målgruppens prestanda.
+När du har skapat och personaliserat dina meddelanden kan du lyfta fram ditt innehåll med AI Assistant i Adobe Journey Optimizer, som innehåller funktionen för innehållsexperiment. Med det här verktyget kan du definiera flera olika leveranssätt, med varierande innehåll, för att mäta målgruppens prestanda.
 
 1. Skapa en kampanj och använd AI-assistenten för att generera varianter.
 

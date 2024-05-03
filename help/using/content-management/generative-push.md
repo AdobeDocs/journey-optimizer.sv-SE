@@ -10,9 +10,9 @@ level: Beginner
 badge: label="Beta" type="Informative"
 hide: true
 hidefromtoc: true
-source-git-commit: 45332e96477f83cd1ae9833472a97d2c45bb6ac4
+source-git-commit: ff7f2b42d63e8a3d02f5dbebd926eda26c646752
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '893'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 1%
 >
 >Innan du börjar använda den här funktionen bör du läsa upp relaterade [Gardrutor och begränsningar](gs-generative.md#generative-guardrails).
 
-När du har skapat och personaliserat dina meddelanden tar du ditt push-meddelandeinnehåll till nästa nivå med Journey Optimizer AI Assistant.
+När du har skapat och personaliserat dina meddelanden tar du ditt push-meddelandeinnehåll till nästa nivå med AI Assistant i Adobe Journey Optimizer.
 
 Gå igenom flikarna nedan och lär dig hur du använder AI Assistant i Journey Optimizer.
 

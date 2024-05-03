@@ -10,9 +10,9 @@ level: Beginner
 badge: label="Beta" type="Informative"
 hide: true
 hidefromtoc: true
-source-git-commit: fc6d1caacae3574cc7400ed9c9c634e3ff3cae5a
+source-git-commit: ff7f2b42d63e8a3d02f5dbebd926eda26c646752
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1226'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-När ni väl har skapat och personaliserat era e-postmeddelanden kan ni använda Journey Optimizer AI Assistant i Campaign, som bygger på generativ AI, för att ta innehållet till nästa nivå.
+När du har skapat och personaliserat dina e-postmeddelanden kan du använda AI Assistant i Adobe Journey Optimizer med generativ AI för att ta ditt innehåll till nästa nivå.
 
 AI Assistant kan hjälpa er att optimera effekten av era leveranser genom att föreslå olika typer av innehåll som troligtvis får genklang hos er målgrupp.
 
