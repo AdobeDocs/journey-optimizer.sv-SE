@@ -1,32 +1,20 @@
 ---
-title: Objektkatalog
-description: Lär dig hur du arbetar med objektkatalogen
+title: Artikelkatalog
+description: Lär dig hur du arbetar med artikelkatalogen
 feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate
-hide: true
-hidefromtoc: true
-badge: label="Beta"
+badge: label="Begränsad tillgänglighet"
 exl-id: 2d118f5a-32ee-407c-9513-fe0ebe3ce8f0
-source-git-commit: 2b9261ff0f225a429b9be04db214452736163766
+source-git-commit: 5ce388e5d86950e5cc6b173aab48225825f1c648
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
 
-# Objektkatalog {#catalog}
-
->[!BEGINSHADEBOX &quot;Det du hittar i den här handboken&quot;]
-
-* [Kom igång med Experience Decision](gs-experience-decisioning.md)
-* Hantera dina beslutsposter: **[Konfigurera objektkatalogen](catalogs.md)** - [Skapa beslutsobjekt](items.md) - [Hantera artikelsamlingar](collections.md)
-* Konfigurera objektmarkering: [Skapa beslutsregler](rules.md) - [Skapa rangordningsmetoder](ranking.md)
-* [Skapa urvalsstrategier](selection-strategies.md)
-* [Skapa beslutsprofiler](create-decision.md)
-
->[!ENDSHADEBOX]
+# Artikelkatalog {#catalog}
 
 I Experience Decision fungerar kataloger som centrala behållare för att organisera beslutsobjekt. Varje katalog är länkad till ett Adobe Experience Platform-schema som innehåller alla attribut som kan tilldelas ett beslutsobjekt.
 
@@ -53,10 +41,9 @@ Följ de här stegen för att komma åt katalogschemat där beslutsobjektens att
 
    >[!CAUTION]
    >
-   >För närvarande har Experience Decision exklusivt stöd för de datatyper som anges nedan. Fält som ligger utanför dessa datatyper är inte tillgängliga för användning när ett beslutsobjekt skapas.
-   >* Sträng
-   >* Boolean
-   >* Nummer
+   >För närvarande stöder Experience Decisioning endast följande datatyper: String, Integer, Boolean, Date, DateTime och Decisioning Asset. Fält som ligger utanför dessa datatyper är inte tillgängliga för redigering av beslutsobjekt eller kataloger.
+
+   Värdet som anges för ett attribut med ett decimalresursattribut är en publik url. För det mesta pekar detta på en bild.
 
    Detaljerad information om hur du arbetar med Adobe Experience Platform scheman finns i [XDM-systemdokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html).
 

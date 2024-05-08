@@ -1,17 +1,15 @@
 ---
-title: Skapa beslut
-description: Lär dig hur du skapar beslut
+title: Skapa beslutsprofiler
+description: Lär dig hur du skapar beslutsprofiler
 feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Experienced
-hide: true
-hidefromtoc: true
-badge: label="Beta"
+badge: label="Begränsad tillgänglighet"
 exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
-source-git-commit: 2b9261ff0f225a429b9be04db214452736163766
+source-git-commit: 5ce388e5d86950e5cc6b173aab48225825f1c648
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1456'
 ht-degree: 1%
 
 ---
@@ -21,20 +19,12 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_decision"
 >title="Vad är ett beslut?"
->abstract="Beslutspolicyn utnyttjar beslutsmotorn för upplevelser för att välja ut det bästa innehåll som ska levereras, beroende på målgruppen."
+>abstract="Beslutspolicyer innehåller all urvalslogik för att beslutsmotorn ska kunna välja det bästa innehållet. Beslutspolicyn är kampanjspecifika. Deras mål är att välja de bästa erbjudandena för varje profil medan kampanjutvecklingen gör att du kan ange hur de valda beslutsobjekten ska presenteras, inklusive vilka objektattribut som ska inkluderas i meddelandet."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html" text="Om Experience Decision"
 
->[!BEGINSHADEBOX &quot;Det du hittar i den här handboken&quot;]
-
-* [Kom igång med Experience Decision](gs-experience-decisioning.md)
-* Hantera dina beslutsposter: [Konfigurera objektkatalogen](catalogs.md) - [Skapa beslutsobjekt](items.md) - [Hantera artikelsamlingar](collections.md)
-* Konfigurera objektmarkering: [Skapa beslutsregler](rules.md) - [Skapa rangordningsmetoder](ranking.md)
-* [Skapa urvalsstrategier](selection-strategies.md)
-* **[Skapa beslutsprofiler](create-decision.md)**
-
->[!ENDSHADEBOX]
-
 Beslutspolicyer är behållare för era erbjudanden som utnyttjar beslutsmotorn för upplevelser för att välja det bästa innehåll som ska levereras, beroende på målgruppen.
+
+Beslutspolicyer innehåller all urvalslogik för att beslutsmotorn ska kunna välja det bästa innehållet. Beslutspolicyn är kampanjspecifika. Deras mål är att välja de bästa erbjudandena för varje profil medan kampanjutvecklingen gör att du kan ange hur de valda beslutsobjekten ska presenteras, inklusive vilka objektattribut som ska inkluderas i meddelandet.
 
 >[!NOTE]
 >
@@ -61,13 +51,9 @@ Beslutspolicyer är behållare för era erbjudanden som utnyttjar beslutsmotorn 
 
 Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för besökarna på din webbplats eller i din mobilapp lägger du till en beslutspolicy i en kodbaserad kampanj. Följ stegen nedan för att göra det.
 
-1. Skapa en kampanj och välj **[!UICONTROL Code-base experience (Beta)]** åtgärd. [Läs mer](../code-based/create-code-based.md)
+1. Skapa en kampanj och välj **[!UICONTROL Code-base experience]** åtgärd. [Läs mer](../code-based/create-code-based.md)
 
-   >[!NOTE]
-   >
-   >Funktionen för kodbaserad upplevelse är för närvarande endast tillgänglig som betaversion för utvalda användare.
-
-1. Från [kodredigerare](../code-based/create-code-based.md#edit-code)väljer du **[!UICONTROL Decisions]** ikon och klicka **[!UICONTROL Create a decision]**.
+1. Från [kodredigerare](../code-based/create-code-based.md#edit-code)väljer du **[!UICONTROL Decision policy]** ikon och klicka **[!UICONTROL Add decision policy]**.
 
    ![](assets/decision-code-based-create.png)
 
@@ -109,11 +95,9 @@ Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för bes�
    >
    >En reservlösning är valfri. Om ingen reservlösning har valts och ingen strategi är kvalificerad visas ingenting av [!DNL Journey Optimizer].
 
-1. Spara markeringen och klicka **[!UICONTROL Create]**. Den nya beslutspolicyn läggs till i **[!UICONTROL Decisions]**.
+1. Spara markeringen och klicka **[!UICONTROL Create]**. Nu när beslutspolicyn har skapats kan du använda beslutsattributen i ditt kodbaserade upplevelseinnehåll. [Läs mer](#use-decision-policy)
 
    ![](assets/decision-code-based-decision-added.png)
-
-Nu när beslutspolicyn har skapats kan du använda beslutsattributen i ditt kodbaserade upplevelseinnehåll. [Läs mer](#use-decision-policy)
 
 ## Utvärderingsorder {#evaluation-order}
 
@@ -181,7 +165,7 @@ När du har skapat en beslutspolicy kan du använda den i [Uttrycksredigerare](.
 >
 >Kodbaserad upplevelse utnyttjar [!DNL Journey Optimizer] Uttrycksredigeraren med alla dess funktioner för personalisering och redigering. [Läs mer](../personalization/personalization-build-expressions.md)
 
-1. Klicka på ikonen +. Koden som motsvarar beslutspolicyn läggs till. Nu kan du lägga till alla beslutsattribut du vill i den koden.
+1. Klicka på knappen **[!UICONTROL Insert policy]**. Koden som motsvarar beslutspolicyn läggs till.
 
    ![](assets/decision-code-based-add-decision.png)
 
@@ -189,19 +173,18 @@ När du har skapat en beslutspolicy kan du använda den i [Uttrycksredigerare](.
    >
    >Den här sekvensen upprepas det antal gånger som du vill att beslutsprincipen ska returneras. Om du t.ex. väljer att returnera två objekt när [skapa beslut](#add-decision), upprepas samma sekvens två gånger.
 
-1. Klicka på beslutspolicyn. Beslutsattributen visas.
-
-   Dessa attribut lagras i **[!UICONTROL Offers]** katalogschema. Anpassade attribut lagras i **`_<imsOrg`>** mapp- och standardattribut i **`_experience`** mapp. [Läs mer om offertkatalogens schema](catalogs.md)
+1. Nu kan du lägga till alla beslutsattribut du vill i den koden. De tillgängliga attributen lagras i **[!UICONTROL Offers]** katalogschema. Anpassade attribut lagras i **`_<imsOrg`>** mapp- och standardattribut i **`_experience`** mapp. [Läs mer om offertkatalogens schema](catalogs.md)
 
    ![](assets/decision-code-based-decision-attributes.png)
+
+   >[!NOTE]
+   >
+   >För artikelspårning för beslutspolicy finns `trackingToken`Attributet måste läggas till enligt följande för beslutspolicyinnehåll:
+   >`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
 
 1. Klicka på varje mapp för att expandera den. Placera musmarkören på önskad plats och klicka på ikonen + bredvid det attribut du vill lägga till. Du kan lägga till så många attribut du vill i koden.
 
    ![](assets/decision-code-based-add-decision-attributes.png)
-
-1. Klicka på mappikonen om du vill gå tillbaka till beslutsprinciproten.
-
-   ![](assets/decision-code-based-decision-folder.png)
 
 1. Du kan också lägga till andra attribut som är tillgängliga i uttrycksredigeraren, till exempel profilattribut.
 

@@ -5,46 +5,34 @@ feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate
-hide: true
-hidefromtoc: true
-badge: label="Beta"
+badge: label="Begränsad tillgänglighet"
 exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
-source-git-commit: f71795c99157ce43f5250aaf10eb0b97f235b454
+source-git-commit: 5ce388e5d86950e5cc6b173aab48225825f1c648
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 0%
+source-wordcount: '413'
+ht-degree: 1%
 
 ---
 
 # Kom igång med Experience Decision {#get-started-experience-decisioning}
 
->[!BEGINSHADEBOX &quot;Det du hittar i den här handboken&quot;]
-
-* **[Kom igång med Experience Decision](gs-experience-decisioning.md)**
-* Hantera dina beslutsposter: [Konfigurera objektkatalogen](catalogs.md) - [Skapa beslutsobjekt](items.md) - [Hantera artikelsamlingar](collections.md)
-* Konfigurera objektmarkering: [Skapa beslutsregler](rules.md) - [Skapa rangordningsmetoder](ranking.md)
-* [Skapa urvalsstrategier](selection-strategies.md)
-* [Skapa beslutsprofiler](create-decision.md)
-
->[!ENDSHADEBOX]
+>[!AVAILABILITY]
+>
+>Experience Decision är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
+>
+>För tillfället är funktionen inte tillgänglig för kunder som har köpt Adobe **Hälsovårdssköld** och **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
 
 ## Vad är Experience Decision? {#about}
 
->[!AVAILABILITY]
->
->Funktionen för upplevelsebeslut är för närvarande endast tillgänglig som betaversion för utvalda användare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
->
->Beslutspolicyer kan endast användas i kodbaserade upplevelsekampanjer.
-
 Experience Decision förenklar personaliseringen genom att erbjuda en centraliserad katalog med marknadsföringserbjudanden som kallas beslutsposter och en sofistikerad beslutsmotor. Den här motorn använder regler och rankningskriterier för att välja ut och presentera de mest relevanta beslutsobjekten för varje enskild person.
 
-Dessa beslutsobjekt integreras smidigt i ett stort antal inkommande ytor via den nya kodbaserade upplevelsekanalen, som nu är tillgänglig inom Journey Optimizer-kampanjer.
+Dessa beslutsobjekt integreras smidigt i ett stort antal inkommande ytor via den nya kodbaserade upplevelsekanalen, som nu är tillgänglig inom Journey Optimizer-kampanjer. Policy för Experience Decision-beslut är endast tillgängliga för kodbaserade upplevelsekampanjer.
 
 ## Viktiga steg i Experience Decision {#steps}
 
 De viktigaste stegen för Experience Decision är följande:
 
-1. **Tilldela rätt behörigheter**. Besluten är endast tillgängliga för användare som har tillgång till ett Experience Decision-relaterat **[!UICONTROL role]** som beslutsfattare. Om du inte kan komma åt beslut måste din behörighet utökas.
+1. **Tilldela rätt behörigheter**. Experience Decision är bara tillgängligt för användare som har tillgång till ett Experience Decision-relaterat **[!UICONTROL role]** som beslutsfattare. Om du inte kan komma åt Experience Decision måste du utöka din behörighet.
 
    +++Lär dig hur du tilldelar rollen Beslutsledare
 
@@ -66,7 +54,7 @@ De viktigaste stegen för Experience Decision är följande:
 
 +++
 
-1. **Konfigurera anpassade attribut**: Anpassa beslutsobjektets katalog efter dina specifika krav genom att ställa in anpassade attribut i katalogschemat.
+1. **Konfigurera anpassade attribut**: Anpassa objektkatalogen efter dina specifika behov genom att ställa in anpassade attribut i katalogschemat.
 
 1. **Skapa beslutsobjekt** för att visa för er målgrupp.
 

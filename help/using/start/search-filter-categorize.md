@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 6151aea2-6a34-4000-ba48-161efe4d94d7
-source-git-commit: aa53f96068e0cfa84c1ac5ddd32d36b3fb4bbd03
+source-git-commit: 5ce388e5d86950e5cc6b173aab48225825f1c648
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '525'
 ht-degree: 7%
 
 ---
@@ -61,12 +61,13 @@ Med Adobe Experience Platform [Enhetliga taggar](https://experienceleague.adobe.
 
 The **[!UICONTROL Tags]** I kan du definiera taggar för objektet. Taggar är tillgängliga för följande objekt:
 
-* [Resor](../building-journeys/journey-gs.md#change-properties)
 * [Kampanjer](../campaigns/create-campaign.md#create)
-* [Mallar](../content-management/content-templates.md)
+* [Beslutsobjekt](../experience-decisioning/items.md)
 * [Fragment](../content-management/fragments.md)
-* [Prenumerationslistor](../landing-pages/subscription-list.md)
+* [Resor](../building-journeys/journey-gs.md#change-properties)
 * [Landningssidor](../landing-pages/create-lp.md)
+* [Prenumerationslistor](../landing-pages/subscription-list.md)
+* [Mallar](../content-management/content-templates.md)
 
 Du kan antingen markera en befintlig tagg eller skapa en ny. Följ stegen nedan för att göra det.
 

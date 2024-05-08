@@ -5,14 +5,12 @@ feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate
-hide: true
-hidefromtoc: true
-badge: label="Beta"
+badge: label="Begränsad tillgänglighet"
 exl-id: 099d1439-34f7-47fe-9181-0e9ce2032a01
-source-git-commit: 2b9261ff0f225a429b9be04db214452736163766
+source-git-commit: 5ce388e5d86950e5cc6b173aab48225825f1c648
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 1%
+source-wordcount: '362'
+ht-degree: 2%
 
 ---
 
@@ -33,16 +31,6 @@ ht-degree: 1%
 >title="Välj en samling"
 >abstract="Välj den samling som innehåller de erbjudanden som ska övervägas. Det här steget är obligatoriskt när du skapar en urvalsstrategi. Med samlingar kan du kategorisera och gruppera dina beslutsobjekt enligt dina önskemål. Du kan till exempel skapa en samling som innehåller alla beslutsobjekt med värdet Yoga i det anpassade attributet Kategori."
 
->[!BEGINSHADEBOX &quot;Det du hittar i den här handboken&quot;]
-
-* [Kom igång med Experience Decision](gs-experience-decisioning.md)
-* Hantera dina beslutsposter: [Konfigurera objektkatalogen](catalogs.md) - [Skapa beslutsobjekt](items.md) - **[Hantera artikelsamlingar](collections.md)**
-* Konfigurera objektmarkering: [Skapa beslutsregler](rules.md) - [Skapa rangordningsmetoder](ranking.md)
-* [Skapa urvalsstrategier](selection-strategies.md)
-* [Skapa beslutsprofiler](create-decision.md)
-
->[!ENDSHADEBOX]
-
 Med samlingar kan du kategorisera och gruppera dina beslutsobjekt enligt dina önskemål. Dessa kategorier skapas genom att regler som utnyttjar attributen för beslutsposter skapas.
 
 Anta att du har lagt till ett anpassat kategoriattribut i beslutsobjektens katalogschema. På så sätt kan du skapa en samling som innehåller alla beslutsobjekt med värdet Yoga i attributet Kategori.
@@ -58,6 +46,7 @@ Så här skapar du en samling:
    1. Välj ett objektattribut att använda som villkor. Attributlistan innehåller alla standardattribut och anpassade attribut som definierats i katalogschemat. [Läs mer om objektets katalog](catalogs.md)
    1. Markera önskad operator och ange värdet som ska filtreras.
    1. Upprepa dessa steg om du vill lägga till så många regler som behövs. När flera regler har lagts till kan du välja mellan **Och** och **eller** -operatorer för att kombinera dem. Om du vill göra det klickar du på operatormärket för att växla mellan de två alternativen.
+   1. Klicka på **[!UICONTROL Preview collection]** om du vill visa de objekt som uppfyller de regler som du har definierat.
 
    ![](assets/collection-create.png)
 

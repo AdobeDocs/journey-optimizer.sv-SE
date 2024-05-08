@@ -5,27 +5,15 @@ feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate, Experienced
-hide: true
-hidefromtoc: true
-badge: label="Beta"
-source-git-commit: 2b9261ff0f225a429b9be04db214452736163766
+badge: label="Begränsad tillgänglighet"
+source-git-commit: 5ce388e5d86950e5cc6b173aab48225825f1c648
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 4%
+source-wordcount: '314'
+ht-degree: 6%
 
 ---
 
 # Användningsfall vid beslut om upplevelse {#experience-decisioning-uc}
-
->[!BEGINSHADEBOX &quot;Det du hittar i den här handboken&quot;]
-
-* [Kom igång med Experience Decision](gs-experience-decisioning.md)
-* Hantera dina beslutsposter: [Konfigurera objektkatalogen](catalogs.md) -[Skapa beslutsobjekt](items.md) - [Hantera artikelsamlingar](collections.md)
-* Konfigurera objektmarkering: [Skapa beslutsregler](rules.md) - [Skapa rangordningsmetoder](ranking.md)
-* [Skapa urvalsstrategier](selection-strategies.md)
-* [Skapa beslutsprofiler](create-decision.md)
-
->[!ENDSHADEBOX]
 
 I det här fallet definierar ni två leveransbehandlingar som var och en innehåller olika beslutsprinciper för att mäta vilken som fungerar bäst för målgruppen.
 
@@ -52,11 +40,7 @@ Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för bes�
 
 Definiera två leveransbehandlingar som var och en innehåller olika beslutspolicyer.
 
-1. Skapa en kampanj och välj **[!UICONTROL Code-base experience (Beta)]** åtgärd. [Läs mer](../code-based/create-code-based.md)
-
-   >[!NOTE]
-   >
-   >Funktionen för kodbaserad upplevelse är för närvarande endast tillgänglig som betaversion för utvalda användare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
+1. Skapa en kampanj och välj **[!UICONTROL Code-base experience]** åtgärd. [Läs mer](../code-based/create-code-based.md)
 
 1. Klicka på i kampanjsammanfattningssidan **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment. [Läs mer](../campaigns/content-experiment.md)
 

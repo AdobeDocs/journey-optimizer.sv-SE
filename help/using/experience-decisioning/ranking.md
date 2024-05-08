@@ -5,13 +5,11 @@ feature: Experience Decisioning, Ranking
 topic: Integrations
 role: User
 level: Intermediate
-hide: true
-hidefromtoc: true
-badge: label="Beta"
+badge: label="Begränsad tillgänglighet"
 exl-id: c1d69bc9-4486-4037-b218-f4f704b2ba9c
-source-git-commit: c13cd73229b2fab80722663afae9fe24b660c0f9
+source-git-commit: 5ce388e5d86950e5cc6b173aab48225825f1c648
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '298'
 ht-degree: 1%
 
 ---
@@ -21,29 +19,48 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ajo_exd_config_formulas"
 >title="Skapa rankningsformler"
->abstract="Med formler kan du definiera regler som bestämmer vilket objekt som ska presenteras först, i stället för att ta hänsyn till objektets prioritetspoäng. När en rangordningsmetod har skapats kan du tilldela den till en beslutsstrategi för att definiera vilka objekt som ska väljas först."
+>abstract="Med formler kan du definiera regler som bestämmer vilket objekt som ska presenteras först, i stället för att ta hänsyn till objektets prioritetspoäng. När en rangordningsmetod har skapats kan du tilldela den till en urvalsstrategi för att definiera vilka objekt som ska väljas först."
 
->[!BEGINSHADEBOX &quot;Det du hittar i den här handboken&quot;]
+Med rangordningsmetoder kan du rangordna objekt som ska visas för en viss profil. När en rangordningsmetod har skapats kan du tilldela den till en urvalsstrategi för att definiera vilka objekt som ska väljas först.
 
-* [Kom igång med Experience Decision](gs-experience-decisioning.md)
-* Hantera dina beslutsposter: [Konfigurera objektkatalogen](catalogs.md) - [Skapa beslutsobjekt](items.md) - [Hantera artikelsamlingar](collections.md)
-* Konfigurera objektmarkering: [Skapa beslutsregler](rules.md) - **[Skapa rangordningsmetoder](ranking.md)**
-* [Skapa urvalsstrategier](selection-strategies.md)
-* [Skapa beslutsprofiler](create-decision.md)
-
->[!ENDSHADEBOX]
-
-Med rangordningsmetoder kan du rangordna objekt som ska visas för en viss profil. När en rangordningsmetod har skapats kan du tilldela den till en beslutsstrategi för att definiera vilka objekt som ska väljas först.
-
-Rankningsmetoderna är tillgängliga via **[!UICONTROL Configuration]** / **[!UICONTROL Ranking methods]** -menyn. Det finns två sorteringsmetoder:
+Det finns två sorteringsmetoder:
 
 * **Formler** gör att du kan definiera regler som avgör vilket objekt som ska presenteras först, i stället för att ta hänsyn till objektets prioritetspoäng.
 
 * **AI-modeller** gör att du kan använda tränade modellsystem som utnyttjar flera datapunkter för att avgöra vilken artikel som ska presenteras först.
 
-![](assets/ranking-create.png)
+## Skapa rangordningsmetoder {#create}
 
-Detaljerad information om varje typ av rankningsmetod och hur du skapar dem finns i dokumentationen för beslutshantering som finns här:
+Så här skapar du en rangordningsmetod:
 
-* [Rankningsformler](../offers/ranking/create-ranking-formulas.md)
-* [AI-modeller](../offers/ranking/ai-models.md)
+1. Navigera till **[!UICONTROL Strategy setup]** väljer du **[!UICONTROL Formulas]** eller **[!UICONTROL AI models]** menyn beroende på vilken typ av rankning du vill använda.
+
+1. Klicka på **[!UICONTROL Create formula]** eller **[!UICONTROL Create AI model]** i skärmens övre högra hörn.
+
+   ![](assets/ranking-create.png)
+
+1. Konfigurera formeln eller AI-modellen så att den passar dina behov och spara den sedan.
+
+   Detaljerad information om hur du skapar rankningsformler och AI-modeller finns i dokumentationen för beslutshantering:
+
+   * [Rankningsformler](../offers/ranking/create-ranking-formulas.md)
+   * [AI-modeller](../offers/ranking/ai-models.md)
+
+
+## Utnyttja attribut för beslutsunderlag i formler {#items}
+
+Rankningsformler uttrycks i **PQL-syntax** och kan utnyttja olika attribut, till exempel profilattribut, [kontextdata](context-data.md) och attribut som relaterar till dina beslutsposter.
+
+Om du vill använda attribut som hör till dina beslutsobjekt i formler måste du följa syntaxen nedan i din rankningsreceptas kod. Expandera varje avsnitt för mer information:
+
+++ + utnyttja standardattribut för beslutsunderlag
+
+![](assets/formula-attribute.png)
+
++++
+
++++utnyttja anpassade attribut för beslutsobjekt
+
+![](assets/formula-attribute-custom.png)
+
++++

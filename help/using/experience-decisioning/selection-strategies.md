@@ -5,14 +5,12 @@ feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate
-hide: true
-hidefromtoc: true
-badge: label="Beta"
+badge: label="Begränsad tillgänglighet"
 exl-id: 1b73b398-050a-40bb-a8ae-1c66e3e26ce8
-source-git-commit: c13cd73229b2fab80722663afae9fe24b660c0f9
+source-git-commit: 5ce388e5d86950e5cc6b173aab48225825f1c648
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 0%
+source-wordcount: '705'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +19,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_exd_config_strategies"
 >title="Definiera era urvalsstrategier"
->abstract="En urvalsstrategi är en återanvändbar artikel, som består av en samling som är kopplad till en kvalificeringsbegränsning och en rangordningsmetod för att avgöra vilka erbjudanden som ska visas när de väljs ut i en beslutspolicy."
+>abstract="En urvalsstrategi kan återanvändas och består av en samling som är associerad med en begränsning för behörighet och en rangordningsmetod för att avgöra vilka erbjudanden som ska visas när de väljs ut i en beslutspolicy."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/experience-decisioning/create-decision.html" text="Skapa beslutsprofiler"
 
 >[!CONTEXTUALHELP]
@@ -31,21 +29,11 @@ ht-degree: 0%
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences.html" text="Använda målgrupper"
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/experience-decisioning/selection/rules.html" text="Använd beslutsregler"
 
->[!BEGINSHADEBOX &quot;Det du hittar i den här handboken&quot;]
-
-* [Kom igång med Experience Decision](gs-experience-decisioning.md)
-* Hantera dina beslutsposter: [Konfigurera objektkatalogen](catalogs.md) - [Skapa beslutsobjekt](items.md) - [Hantera artikelsamlingar](collections.md)
-* Konfigurera objektmarkering: [Skapa beslutsregler](rules.md) - [Skapa rangordningsmetoder](ranking.md)
-* **[Skapa urvalsstrategier](selection-strategies.md)**
-* [Skapa beslutsprofiler](create-decision.md)
-
->[!ENDSHADEBOX]
-
-En urvalsstrategi är en återanvändbar artikel, som består av en samling som är kopplad till en kvalificeringsbegränsning och en rangordningsmetod för att avgöra vilka erbjudanden som ska visas när de väljs ut i en [beslutspolitik](create-decision.md).
+En urvalsstrategi kan återanvändas och består av en samling som är associerad med en kvalificeringsbegränsning och en rangordningsmetod för att avgöra vilka erbjudanden som ska visas när de väljs ut i en [beslutspolitik](create-decision.md).
 
 ## Få tillgång till och hantera urvalsstrategier
 
-1. Gå till **[!UICONTROL Experience Decisioning]** > **[!UICONTROL Configuration]** > **[!UICONTROL Selection strategies]**.
+1. Gå till **[!UICONTROL Experience Decisioning]** > **[!UICONTROL Strategy setup]** > **[!UICONTROL Selection strategies]**.
 
 1. Alla markeringsstrategier som har skapats hittills visas. Det finns filter som hjälper dig att hämta strategier enligt rangordningsmetoden.
 
@@ -77,8 +65,6 @@ Följ stegen nedan för att skapa en urvalsstrategi.
 
 1. Välj [samling](collections.md) som innehåller de erbjudanden som ska övervägas.
 
-1. Välj erbjudandet [samling](collections.md) som innehåller de erbjudanden som ska övervägas.
-
 1. Använd **[!UICONTROL Eligibility]** fält för att begränsa urvalet av erbjudanden för den här urvalsstrategin.
 
    ![](assets/strategy-create-eligibility.png)
@@ -95,7 +81,7 @@ Följ stegen nedan för att skapa en urvalsstrategi.
 
    * Om du vill använda en viss beräknad poäng för att välja vilket erbjudande du vill leverera väljer du [Formel](#ranking-formula) eller [AI-modell](#ai-ranking).
 
-1. Klicka på **[!UICONTROL Create]**. Den är nu klar att användas i en [beslut](create-decision.md)
+1. Klicka på **[!UICONTROL Create]**. Den är nu klar att användas i en [beslutspolitik](create-decision.md)
 
 ## Välj en rangordningsmetod {#select-ranking-method}
 
@@ -113,7 +99,7 @@ Om flera erbjudanden är berättigade till en viss urvalsstrategi kan du välja 
 
 ### Prioritet {#offer-priority}
 
-När flera erbjudanden kan komma i fråga för en viss placering i ett beslut är de som har högst **prioritet** kommer att levereras till kunderna först.
+När flera erbjudanden är berättigade till en viss placering i en beslutspolicy är det som standard de poster som har högst **prioritet** kommer att levereras till kunderna först.
 
 ![](assets/item-priority.png)
 

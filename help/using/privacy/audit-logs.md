@@ -7,9 +7,9 @@ feature: Monitoring
 role: User
 level: Intermediate
 exl-id: 759b014a-c834-4331-bffd-5bc159ec555d
-source-git-commit: ac83b44ca24b26edfbf70a2781e1ed7dede318d4
+source-git-commit: 5ce388e5d86950e5cc6b173aab48225825f1c648
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '317'
 ht-degree: 1%
 
 ---
@@ -32,11 +32,11 @@ Varje åtgärd registreras med metadata i &quot;granskningsloggar&quot; som är 
 
 ## Händelsetyper som hämtats av granskningsloggar {#events}
 
-Följande tabell visar vilka åtgärder som Journey Optimizer-resurser registreras på i granskningsloggarna.
+Följande tabell visar vilka åtgärder som Journey Optimizer-resurser registreras på i granskningsloggarna. Den fullständiga listan över åtgärder som fångats i granskningsloggarna finns i [Dokumentation för Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html#category).
 
 >[!NOTE]
 >
->Den fullständiga listan över åtgärder som fångats i granskningsloggarna finns i [Dokumentation för Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html#category).
+>Granskningsloggar relaterade till **beslutsfattande** är bara synliga från CSV-filen som kan hämtas med **[!UICONTROL Download log]** -knappen.
 
 | Resurs | Åtgärd |
 |-----------|------------------|

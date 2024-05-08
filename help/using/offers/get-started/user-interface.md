@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Beginner, Intermediate
 exl-id: 722f9c3b-b505-48c0-b126-31a7a841c245
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 5ce388e5d86950e5cc6b173aab48225825f1c648
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 2%
+source-wordcount: '614'
+ht-degree: 3%
 
 ---
 
@@ -88,8 +88,4 @@ Observera att du även kan duplicera ett befintligt erbjudande eller beslut för
 
 ## Ändringsloggar för erbjudanden och beslut {#changes-logs}
 
-Med Erbjudandebiblioteket kan du visualisera alla ändringar som har gjorts i ett erbjudande eller ett beslut. Det gör du genom att öppna erbjudandet eller beslutet genom att klicka på namnet i listan och sedan välja **[!UICONTROL Change log]** -fliken.
-
-Alla ändringar som har gjorts visas på den här skärmen, liksom namnet på användaren som utförde ändringarna.
-
-![](../assets/change-logs.png)
+[!DNL Journey Optimizer] gör att du kan visualisera alla ändringar som har gjorts i ett erbjudande eller ett beslut. Om du vill göra det går du till **[!UICONTROL Audits]** från den vänstra menyn. [Lär dig hur du granskar resursåtgärder](../../privacy/audit-logs.md)
