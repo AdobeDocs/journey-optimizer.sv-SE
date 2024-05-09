@@ -8,7 +8,7 @@ level: Beginner
 keywords: i appen, meddelande, skapa, börja
 hide: true
 hidefromtoc: true
-source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
+source-git-commit: b62f8954e09f50896ad5e70784c5a93943617e85
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 10%
@@ -23,7 +23,7 @@ ht-degree: 10%
 
 * [Konfigurera webbkanalen i appen](configure-in-app-web.md)
 * [Skapa en webbkampanj i appen](create-in-app-web.md)
-* **[Designa ditt webbinnehåll i appen](#in-app-web-design)**
+* Designa ditt webbinnehåll i appen
 
 >[!ENDSHADEBOX]
 
@@ -33,7 +33,7 @@ Om du vill redigera innehållet i meddelandet i appen klickar du på **[!UICONTR
 
 The **[!UICONTROL Advanced formatting]** växlar aktiverar ytterligare alternativ för att anpassa upplevelsen.
 
-När ditt meddelande i appen har skapats och dess innehåll har definierats och anpassats kan du granska och aktivera det. Meddelanden skickas sedan enligt kampanjschemat. Läs mer i [den här sidan](send-in-app.md).
+När ditt meddelande i appen har skapats och dess innehåll har definierats och anpassats kan du granska och aktivera det. Meddelanden skickas sedan enligt kampanjschemat. Läs mer på [den här sidan](send-in-app.md).
 
 ## Meddelandelayout {#message-layout}
 

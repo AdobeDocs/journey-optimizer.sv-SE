@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Kom igång med flerspråkigt innehåll
+title: Skapa flerspråkigt innehåll med automatiserad översättning
 description: Läs mer om flerspråkigt innehåll i Journey Optimizer
 feature: Multilingual Content
 topic: Content Management
@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 exl-id: 38e82eb2-67d9-4a7d-8c1f-77dab20bcec4
 badge: label="Beta" type="Informative"
-source-git-commit: d8926076d30fb07ea10e06ea8ee025b04ba5bb85
+source-git-commit: b62f8954e09f50896ad5e70784c5a93943617e85
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1223'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 * [Kom igång med flerspråkigt innehåll](multilingual-gs.md)
 * [Skapa flerspråkigt innehåll med manuell översättning](multilingual-manual.md)
-* **[Skapa flerspråkigt innehåll med automatiserad översättning](multilingual-automated.md)**
+* Skapa flerspråkigt innehåll med automatiserad översättning
 * [Flerspråkig kampanjrapport](multilingual-report.md)
 
 >[!ENDSHADEBOX]

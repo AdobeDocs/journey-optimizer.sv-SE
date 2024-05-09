@@ -10,7 +10,8 @@ level: Beginner
 badge: label="Beta" type="Informative"
 hide: true
 hidefromtoc: true
-source-git-commit: 5c4b7cde5514f60f61050837fc9ae325f7bef2e8
+exl-id: 5fd1cc3a-c023-4e8e-bfac-9a86bd33bbb3
+source-git-commit: b62f8954e09f50896ad5e70784c5a93943617e85
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 1%
@@ -25,8 +26,8 @@ ht-degree: 1%
 
 * [Kom igång med AI-assistenten](gs-generative.md)
 * [E-postgenerering med AI-assistenten](generative-email.md)
-* [SMS-generering med AI-assistenten](generative-sms.md)
-* **[Push-generering med AI Assistant](generative-push.md)**
+* SMS-generering med AI-assistenten
+* [Push-generering med AI Assistant](generative-push.md)
 * [Experimentera med AI-assistenten](generative-experimentation.md)
 
 >[!ENDSHADEBOX]

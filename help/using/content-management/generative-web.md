@@ -10,14 +10,14 @@ level: Beginner
 badge: label="Beta" type="Informative"
 hide: true
 hidefromtoc: true
-source-git-commit: ff7f2b42d63e8a3d02f5dbebd926eda26c646752
+source-git-commit: b62f8954e09f50896ad5e70784c5a93943617e85
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
 
-# Webbgenerering med AI Assistant {#generative-web}
+# Skapa webbsidor med AI Assistant {#generative-web}
 
 >[!BEGINSHADEBOX]
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 * [E-postgenerering med AI-assistenten](generative-email.md)
 * [SMS-generering med AI-assistenten](generative-SMS.md)
 * [Push-generering med AI Assistant](generative-push.md)
-* **[Skapa webbsidor med AI Assistant](generative-web.md)**
+* Skapa webbsidor med AI Assistant
 * [Experimentera med AI-assistenten](generative-experimentation.md)
 
 >[!ENDSHADEBOX]

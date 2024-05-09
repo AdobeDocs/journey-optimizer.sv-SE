@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Kom igång med flerspråkigt innehåll
+title: Flerspråkig kampanjrapport
 description: Läs mer om rapporten om ditt flerspråkiga innehåll i Journey Optimizer
 feature: Multilingual Content
 topic: Content Management
@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 exl-id: 662681ad-5044-4025-aff1-204626fee052
 badge: label="Beta" type="Informative"
-source-git-commit: feee761f9893633f88b0109b810ac55ae82dd9e0
+source-git-commit: b62f8954e09f50896ad5e70784c5a93943617e85
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 * [Kom igång med flerspråkigt innehåll](multilingual-gs.md)
 * [Skapa flerspråkigt innehåll med manuell översättning](multilingual-manual.md)
 * [Skapa flerspråkigt innehåll med automatiserad översättning](multilingual-automated.md)
-* **[Flerspråkig kampanjrapport](multilingual-report.md)**
+* Flerspråkig kampanjrapport
 
 >[!ENDSHADEBOX]
 
