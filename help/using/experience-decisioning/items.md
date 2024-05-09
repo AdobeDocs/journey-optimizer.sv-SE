@@ -7,7 +7,7 @@ role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet"
 exl-id: 5c866814-d79a-4a49-bfcb-7a767d802e90
-source-git-commit: 5ce388e5d86950e5cc6b173aab48225825f1c648
+source-git-commit: f586d2de34939c1cd105c26dc64c656c1f0fb990
 workflow-type: tm+mt
 source-wordcount: '1684'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 >id="ajo_exd_items"
 >title="Hantera beslutsobjekt"
 >abstract="Med Journey Optimizer kan ni skapa marknadsföringserbjudanden, så kallade beslutsobjekt, som ni kan skapa och ordna i en centraliserad katalog och samlingar. För närvarande konsolideras alla skapade beslutsobjekt i en enda katalog för erbjudanden. Från den här skärmen kan du även komma åt katalogschemat via **Redigera schema** och skapa anpassade attribut för dina beslutsobjekt."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/experience-decisioning/decision-items/catalogs.html" text="Konfigurera artikelkatalogen"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/decision-items/catalogs.html" text="Konfigurera artikelkatalogen"
 
 Med Journey Optimizer kan ni skapa marknadsföringserbjudanden, så kallade beslutsobjekt, som ni kan skapa och ordna i en centraliserad katalog och samlingar. De består av standardattribut och anpassade attribut som är anpassade efter just dina behov. Dessutom innehåller de profilbegränsningar som gör att du kan definiera till vilka ett beslutsobjekt kan visas.
 
@@ -39,7 +39,7 @@ Om du vill skapa ett beslutsobjekt går du till **[!UICONTROL Experience Decisio
 >id="ajo_exd_item_custom_attributes"
 >title="Definiera anpassade attribut"
 >abstract="Anpassade attribut är specifika attribut som är anpassade efter dina behov och som du kan tilldela till ett beslutsobjekt. De skapas i beslutsobjektens katalogschema. Det här avsnittet visas bara om du har lagt till minst ett anpassat attribut i katalogschemat."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/experience-decisioning/decision-items/catalogs.html" text="Konfigurera artikelkatalogen"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/decision-items/catalogs.html" text="Konfigurera artikelkatalogen"
 
 Börja med att definiera beslutsobjektets standardattribut och anpassade attribut:
 
@@ -65,7 +65,7 @@ Börja med att definiera beslutsobjektets standardattribut och anpassade attribu
 >title="Lägga till målgrupper eller beslutsregler"
 >abstract="Som standard är alla profiler berättigade att ta emot beslutsobjektet, men du kan använda målgrupper eller regler för att begränsa objektet till enbart vissa profiler."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences.html" text="Använda målgrupper"
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/experience-decisioning/selection/rules.html" text="Använd beslutsregler"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/selection/rules.html" text="Använd beslutsregler"
 
 Som standard är alla profiler berättigade att ta emot beslutsobjektet, men du kan använda målgrupper eller regler för att begränsa objektet till enbart specifika profiler, båda lösningarna som motsvarar olika användningar. Expandera avsnittet nedan om du vill ha mer information:
 
@@ -146,7 +146,7 @@ Klicka på knappen **[!UICONTROL Create capping]** följer du dessa steg:
    ![](assets/item-approve.png)
 
 <!--* Identifying how many times a given customer has been shown a decision item. 
-If a marketer wants to determine how many times a specific customer has been shown an offer, they can do that. Go to Profiles menu, Attributes tab. You’ll see all counter values. The alphanumeric string is associated to the offer. To make the map, go to an item, in the URL check the last alphanumeric strings. D stands for day, w stands for week, m for month. “Ce” custom event-->
+If a marketer wants to determine how many times a specific customer has been shown an offer, they can do that. Go to Profiles menu, Attributes tab. You'll see all counter values. The alphanumeric string is associated to the offer. To make the map, go to an item, in the URL check the last alphanumeric strings. D stands for day, w stands for week, m for month. "Ce" custom event-->
 
 ## Hantera beslutsobjekt {#manage}
 

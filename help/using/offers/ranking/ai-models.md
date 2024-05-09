@@ -7,7 +7,7 @@ feature: Ranking, Decision Management
 role: User
 level: Intermediate
 exl-id: 4f7f7d1d-a12a-4ff6-b0ff-1a1c3d305a9d
-source-git-commit: 12f6c41252809bcc85bc076902f9a831a6c6e7d9
+source-git-commit: 260b9ec0a70526ac37da444e183fc1d01b97b22b
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 3%
@@ -32,7 +32,7 @@ Du kan till exempel välja en AI-modell för e-postkanalen och en annan för pus
 >id="ajo_decisioning_ai_model_type"
 >title="Välj modelltyp"
 >abstract="Välj den typ av AI-modell som du vill skapa: **Automatisk optimering** optimerar erbjudanden baserat på tidigare erbjudanden, medan **Anpassad optimering** optimerar och personaliserar erbjudanden baserat på målgrupper och erbjuder resultat."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/offer-decisioning/rankings/ai-models/create-ranking-strategies#create-ranking-strategy" text="Skapa en AI-modell"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/create-ranking-strategies#create-ranking-strategy" text="Skapa en AI-modell"
 
 Det finns två typer av AI-modeller i [!DNL Journey Optimizer]:
 

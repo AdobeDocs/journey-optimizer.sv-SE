@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
-source-git-commit: 4342c13d7f2cff4eea3bb3cdddad8f403f0cba90
+source-git-commit: 260b9ec0a70526ac37da444e183fc1d01b97b22b
 workflow-type: tm+mt
 source-wordcount: '2539'
 ht-degree: 0%
@@ -142,7 +142,7 @@ En målgrupps utdata är i princip en lista med profiler, medan en beslutsregel 
 >id="ajo_decisioning_capping"
 >title="Använd begränsning"
 >abstract="För att undvika att kunderna blir överdrivna bör du definiera hur många gånger ett erbjudande får presenteras med capping."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-constraints.html#capping-change-date" text="Ändrade datum kan påverka capping"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-constraints.html#capping-change-date" text="Ändrade datum kan påverka capping"
 
 Begränsning används som en begränsning för att definiera det maximala antal gånger ett erbjudande kan presenteras.
 
