@@ -7,7 +7,7 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
-source-git-commit: 016b823161b162cb00e0eae27cd45873752425ba
+source-git-commit: a08a28d7bfe912ff545ca559bd04b70642fe2ab5
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Innan du skickar SMS eller MMS måste du konfigurera Adobe Journey Optimizer-mil
    * [Med sinch](sms-configuration-sinch.md)
    * [Med Infobip](sms-configuration-infobip.md)
    * [Med Twilio](sms-configuration-twilio.md)
-1. [Skapa en SMS-yta](#message-preset-sms)
+1. [Skapa en SMS-yta](sms-configuration-surface.md)
 
 Dessa steg måste utföras av en Adobe Journey Optimizer [Systemadministratör](../start/path/administrator.md).
 
