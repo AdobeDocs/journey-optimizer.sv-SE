@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: 46a97787e184aeda20efecd9052328daf3ec5f23
 workflow-type: tm+mt
-source-wordcount: '2018'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. K
 ## Fragmentskyddsräcken {#fragments-guardrails}
 
 * Visuella fragment är bara tillgängliga för e-postkanalen.
-* Uttrycksfragment är inte tillgängliga för webben och appkanaler.
+* Uttrycksfragment är inte tillgängliga för kanalen i appen.
 
 ## Resehanddukar {#journeys-guardrails}
 
