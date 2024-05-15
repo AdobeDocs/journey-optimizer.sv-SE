@@ -11,9 +11,9 @@ badge: label="Beta" type="Informative"
 hide: true
 hidefromtoc: true
 exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
-source-git-commit: b62f8954e09f50896ad5e70784c5a93943617e85
+source-git-commit: 644e0959ee0d0ec8ee0c4ec54c3bcd1cc3c4dda9
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,22 @@ ht-degree: 0%
 # Kom igång med AI-assistenten {#gs-content-assistant}
 
 >[!CONTEXTUALHELP]
->id="ajo_content_generation"
->title="Skapa e-postinnehåll"
->abstract="AI Assistant i Adobe Journey Optimizer ger proaktiva variantförslag för text och bilder. Det är tillgängligt för e-post, push, SMS och webbkanaler. Den nya funktionen ger snabb generering av text och bilder."
+>id="ajo_ai_generation_settings"
+>title="AI Assistant"
+>abstract="När du har skapat och skräddarsytt din leverans kan du använda AI-assistenten för att förbättra innehållet. Den här funktionen förenklar processen med personalisering och innehållsförbättring genom att du kan finjustera innehållet genom att beskriva vad du vill generera."
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_ai_generation_context"
+>title="Definiera kontext med AI Assistant"
+>abstract="Aktivera **Använd ursprungligt innehåll** växla. Ni kan också överföra ert varumärkesmaterial för att använda det som en källa. Om du inte använder det valda innehållet är det obligatoriskt att överföra och välja varumärkesresurser."
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_ai_generation_start"
+>title="Adobe Generative AI terms"
+>abstract="Du måste godkänna Adobe Experience Cloud Generative AI User Guidelines. Alla uppmaningar, kontext, tilläggsinformation eller andra indata som du anger för den här funktionen måste vara kopplade till ett specifikt sammanhang, som kan innehålla ditt varumärke, webbplatsinnehåll, data, scheman för sådana data, mallar eller andra pålitliga dokument och får inte innehålla någon personlig information (personlig information innehåller något som kan länkas tillbaka till en viss individ). Du bör granska alla utdata från den här funktionen för att se om de är korrekta och se till att de passar ditt användningssätt"
+>additional-url="https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html" text="Adobe Generative AI User Guidelines"
 
 >[!BEGINSHADEBOX]
 
