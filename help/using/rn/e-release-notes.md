@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: 4b779d297769bd7a0b6913a0142ee7be7775ba04
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '651'
 ht-degree: 5%
 
 ---
@@ -21,50 +21,71 @@ ht-degree: 5%
 
 Noteringarna nedan kan ändras utan föregående meddelande fram till releasedatum. Länkar, skärmar och uppdaterad dokumentation publiceras i [versionsinformation](release-notes.md), på releasedatum.
 
-## Versionsinformation april 2024 {#e-2024}
+## Versionsinformation maj 2024 {#e-2024}
 
-**Releasedatum**: 2 maj 2024
+**Releasedatum**: 21-22 maj 2024
 
 ### Nya funktioner {#e-features}
 
 Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 
-<!--table>
+
+<table>
 <thead>
 <tr>
-<th><strong>Business rules - Private Beta</strong><br/></th>
+<th><strong>Experience Decision - begränsad tillgänglighet</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>It is now possible to create and apply rule sets to your marketing communications.  </p>
+<p>Experience Decision förenklar personaliseringen genom att erbjuda en centraliserad katalog med marknadsföringserbjudanden som kallas beslutsposter och en sofistikerad beslutsmotor. Den här motorn använder regler och rankningskriterier för att välja ut och presentera de mest relevanta beslutsobjekten för varje enskild person.</p>
+<p>Dessa beslutsobjekt integreras smidigt i ett stort antal inkommande ytor via den nya kodbaserade upplevelsekanalen, som nu är tillgänglig inom Journey Optimizer-kampanjer. Policy för Experience Decision-beslut är endast tillgängliga för kodbaserade upplevelsekampanjer.</p>
+<p>Experience Decision är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
+<img src="assets/do-not-localize/gif-exd.gif"/>
+<p>Mer information finns i den <a href="../experience-decisioning/gs-experience-decisioning.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
 
-<!--table>
+
+<table>
 <thead>
 <tr>
-<th><strong>Experience Decisioning - Limited Availability</strong><br/></th>
+<th><strong>Arbetsflöde för IP-förstärkning</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Experience Decisioning simplifies personalization by offering a centralized catalog of marketing offers known as 'decision items' and a sophisticated decision engine. This engine leverages rules and ranking criteria to select and present the most relevant decision items to each individual.</p>
-<p>These decision items are seamlessly integrated into a wide range of inbound surfaces through the new code-based experience channel, now accessible within Journey Optimizer campaigns. Experience Decisioning decision policies are available for use in code-based experience campaigns only.</p>
-<p>Experience Decisioning is currently only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>Om du skickar e-post till en helt ny IP-adress kan du nu enkelt utföra arbetsflöden för IP-värmare direkt från användargränssnittet. Adobe Journey Optimizer erbjuder ett standardiserat och effektivt sätt att värma upp era IP-adresser som följer de bästa metoderna för optimal leverans.</p>
+<p>Mer information finns i den <a href="../configuration/ip-warmup-gs.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
 
-<!--table>
+<table>
 <thead>
 <tr>
-<th><strong>Personalization - Local Lookups - Multi-Entity Support - Beta</strong><br/></th>
+<th><strong>Affärsregler - Beta</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du skapa regler för exakt frekvensbegränsning och tillämpa dem på olika typer av marknadsföringskommunikation via regeluppsättningar. </p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Stöd för flera entiteter för lokal sökning - betaversion</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -74,73 +95,8 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </td>
 </tr>
 </tbody>
-</table-->
-
-<table>
-<thead>
-<tr>
-<th><strong>Multimedia Message Service (MMS) - alla leverantörer</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Med SMS-kanalen kan du nu förbättra kommunikationen genom att skicka MMS-meddelanden (Multimedia Message Service) som gör det möjligt att dela bilder, GIF eller videor med dina kunder. MMS finns nu endast i Sinch och finns nu även i Infobip och Twilio.</p>
-<img src="assets/do-not-localize/mms.gif"/>
-</td>
-</tr>
-</tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Förbättrad resedesigner och liverapporter</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>I den här versionen finns ett förbättrat användargränssnitt på arbetsytan för resor och en mer intuitiv och effektiv användarupplevelse. Aktiviteterna blir tydligare och ger mer information om arbetsytan med färre klick.</p>
-<img src="assets/new-canvas3.gif"/>
-<p>Förutom den förbättrade utformningen av arbetsytan på resan introducerar vi möjligheten att se de senaste 24 timmarnas rapportvärden direkt i arbetsytan på resan. </p>
-<img src="assets/new-canvas6bis.png"/>
-<p><strong>Anteckning</strong>: Dessa ändringar kommer gradvis att lanseras i alla miljöer från och med aprilversionen.</p>
-<p>Mer information finns i den <a href="new-canvas.md">detaljerade dokumentationen</a>.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<!-- table>
-<thead>
-<tr>
-<th><strong>AI Assistant - Experience Variant Generation - Beta</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Once you have created and personalized your message, take your content to the next level with the AI assistant. You can now use the AI assistant to optimize your message's impact by experimenting with different main titles, and images. Each variant is managed as a unique Treatment, to measure and compare which title effectively generates more clicks.</p>
-</td>
-</tr>
-</tbody>
-</table-->
-
-<!--table>
-<thead>
-<tr>
-<th><strong>IP Warmup Workflow - LA</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now easily perform IP warmup workflows directly from the Journey Optimizer interface in a standardized and efficient way that follows the best practices for optimal deliverability.</p>
-</td>
-</tr>
-</tbody>
-</table-->
 
 <!--table>
 <thead>
@@ -161,42 +117,37 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 
 Den här versionen innehåller de förbättringar som anges nedan.
 
-<!--
-* **Experience Decisioning + Code-based experiences (LA)**: You can now leverage the Experience decisioning feature to use decision items in your code-based campaigns. Note: The Code-based experience channel and Experience decisioning are not available for organizations that have purchased the Adobe Healthcare Shield and Privacy and Security Shield add-on offerings.
--->
-<!--
-* **Expression Fragments supported for Web and In-App**: Expression fragments are now available for the Web and In-app channels. 
--->
+**Experience Decision**
+
+Från beta till LA har följande förbättringar lagts till:
+
+* **Experience Decision + Code-based experiences (LA)**: Nu kan ni utnyttja beslutsfunktionen i Experience för att använda beslutsobjekt i era kodbaserade kampanjer. Obs! Den kodbaserade upplevelsekanalen och Experience Decision är inte tillgängliga för organisationer som har köpt Adobe Healthcare Shield och tillägg till Privacy and Security Shield. [Läs mer](../code-based/get-started-code-based.md)
+* Nu kan ni utnyttja kontextdata från Adobe Experience Platform i era beslutsregler och rangordningsformler. [Läs mer](../experience-decisioning/context-data.md)
+* Det finns nu en ny behörighet,&quot;Hantera Experience Decision&quot;, för beslutshanteringsresursen. Det gör att ni kan hantera rättigheter för Experience Decision. [Läs mer](../experience-decisioning/gs-experience-decisioning.md)
+* Nu kan du lägga till flera regler för att sätta stopp för ett visst beslutsobjekt i Experience Decisioning. På så sätt kan ni öka kontrollen över hur erbjudandena skickas. [Läs mer](../experience-decisioning/items.md#capping)
+* Nu kan du skapa anpassade rapportinstrumentpaneler för Experience Decision-kampanjer med [!DNL Customer Journey Analytics]. [Läs mer](../experience-decisioning/cja-reporting.md)
 
 
-<!--
-* **DULE for AJO Channel Surface**: It is now possible to apply a label on certain profile attributes to restrict their usage inside a channel surface through marketing actions.
--->
+**Offer decisioning**
+
+* **Stöd för flera regler** - Du kan nu lägga till upp till 10 regler om begränsning av ett visst erbjudande i Beslutshantering. På så sätt kan ni öka kontrollen över hur erbjudandena skickas.
+* **Granskningar** - **Ändra logg** så att du kan se alla ändringar som har gjorts i ett erbjudande eller ett beslut har tagits bort. Ändringar som rör erbjudanden och beslut kan nu ses i **Granskningar** -menyn.
 
 
-<!--
-* **List-Unsubscribe updates**: Following on the recent Gmail and Yahoo announcements for bulk senders, Journey Optimizer supports the "post/1-click" List-Unsubscribe option. 
--->
+**List-unsubscribe**
 
-<!--
-**Decision management** 
+* Efter de senaste Gmail- och Yahoo-meddelandena om bulkavsändare stöder Journey Optimizer alternativet&quot;post/1-click&quot; List-Unsubscribe.
 
-* The **Change log** tab allowing you to see all the changes that have been made to an offer or a decision has been removed. Changes related to offers and decisions can now be seen in the **Audits** menu.
+**Publiker**
 
-**Experience decisionning**
+* Målgrupper och attribut från målgruppssammansättning och anpassad uppladdning (CSV-fil) kan nu användas med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
 
-From beta to LA, the following improvements that have been added:
+**Personalisering**
 
-* You can now leverage context data from Adobe Experience Platform in your decision rules using the **Context data** tab.  
-* A new "Manage Experience decisions" permission is now available for the Decision Management resource. It allows you to manage rights related to Experience Decisioning.   
-* You can now add multiple capping rules for a given decision item in Experience Decisioning. This allows you to increase the level of control over the way offers are sent.
-* You can now create custom reporting dashboards of Experience Decisioning campaigns using [!DNL Customer Journey Analytics].
--->
+* **Sökregister** - Du kan nu utnyttja data från en uppslagsdatauppsättning när en relation har definierats med ett attribut inuti en objektmatris. Uppslagsvärdena är tillgängliga i resor (villkor, anpassade åtgärder osv.) och personalisering av meddelanden.
+* **Uttrycksfragment** - Uttrycksfragment är nu tillgängliga för kanalen i appen.
 
+**Resor**
 
-
-**Konfiguration**
-
-* Nu kan du välja en marknadsföringsåtgärd på kanalnivå. När de används på en yta används alla medgivandepolicyer som är kopplade till den marknadsföringsåtgärden för att ta hänsyn till kundernas önskemål.
-* Åtkomstkontrollen på objektnivå är nu tillgänglig för kanalytor.
-
+* **Sammanfoga profiler** - Sammanslagningsprinciper kan nu konfigureras och användas på dina resor.
+* **Stöd för mTLS** - mTLS-protokollet stöds nu i Journey Optimizer API:er och anpassade åtgärder.
