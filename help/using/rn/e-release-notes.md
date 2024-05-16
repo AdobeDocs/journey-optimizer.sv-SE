@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: b5e073ef1d0c579f430913d60442d7d4cfa620a3
+source-git-commit: 628d49ee45ce161fc5e213bda60cb44d41223369
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '844'
 ht-degree: 5%
 
 ---
@@ -76,7 +76,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <tr>
 <td>
 <p>Nu kan du skapa regler för exakt frekvensbegränsning och tillämpa dem på olika typer av marknadsföringskommunikation via regeluppsättningar. Med den här nya funktionen kan ni styra hur ofta era målgrupper får ett meddelande genom att ställa in flerkanalsregler som automatiskt utesluter överbegärda profiler från meddelanden och åtgärder.</p>
-<p>Funktionen för affärsregler är för närvarande endast tillgänglig som en betaversion.</p>
+<p>Affärsregelfunktionen är för närvarande tillgänglig som en betaversion.</p>
 <p>Mer information finns i den <a href="../configuration/business-rules.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
@@ -94,6 +94,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <tr>
 <td>
 <p>Nu kan du söka efter och hämta datavärden i Adobe Experience Platform datamängder och använda dessa värden för att skapa villkor i Adobe Journey Optimizer. Du kan utnyttja data från en uppslagsdatauppsättning när en relation har definierats med ett attribut inuti en objektmatris. Du kan ange datauppsättningar som inte är profilaktiverade för sökning. När det är aktiverat kan du använda ett profilattribut som en kopplingsnyckel till den angivna datauppsättningen för att hämta ytterligare data för personalisering.</p>
+<p>Den här funktionen är för närvarande tillgänglig som en betaversion.</p>
 </td>
 </tr>
 </tbody>
