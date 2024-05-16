@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: cf751ea0e2a6b02ab996c712ac1309ac06b32979
+source-git-commit: 2eb1ffff7101362b52ae91f1a7277188664b2954
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '778'
 ht-degree: 5%
 
 ---
@@ -91,7 +91,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <tbody>
 <tr>
 <td>
-<p>Nu kan du söka efter och hämta datavärden i Adobe Experience Platform datamängder och använda dessa värden för att skapa villkor i Adobe Journey Optimizer. Du kan utnyttja data från en uppslagsdatauppsättning när en relation har definierats med ett attribut inuti en objektmatris. Uppslagsvärdena är tillgängliga under resans villkor, anpassade åtgärder och i meddelandepersonalisering.</p>
+<p>Nu kan du söka efter och hämta datavärden i Adobe Experience Platform datamängder och använda dessa värden för att skapa villkor i Adobe Journey Optimizer. Du kan utnyttja data från en uppslagsdatauppsättning när en relation har definierats med ett attribut inuti en objektmatris. Du kan ange datauppsättningar som inte är profilaktiverade för sökning. När det är aktiverat kan du använda ett profilattribut som en kopplingsnyckel till den angivna datauppsättningen för att hämta ytterligare data för personalisering.</p>
 </td>
 </tr>
 </tbody>
