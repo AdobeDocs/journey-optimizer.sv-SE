@@ -8,7 +8,7 @@ badge: label="Beta"
 hide: true
 hidefromtoc: true
 exl-id: 9ab43b14-41cf-49f1-bdcf-6fee58db5000
-source-git-commit: 8dacf28f4c3217a57e648b3c80e1724d9794c9ea
+source-git-commit: 4c1dca7815594bbbf5a2d84682338e8b2d743965
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -30,8 +30,7 @@ Detta gör att du kan avgöra om ett meddelande löper risk att betraktas som sk
 >
 >* För närvarande kan skräppostrapportanalysen bara utföras för innehåll på engelska.
 >
->* >
->Skräppostrapporten är informativ och förhindrar inte att meddelanden med dåligt resultat skickas.
+>* Skräppostrapporten är informativ och förhindrar inte att meddelanden med dåligt resultat skickas.
 
 Så här öppnar du **[!UICONTROL Spam report]** följer du stegen nedan.
 
