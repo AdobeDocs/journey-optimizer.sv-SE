@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 8dacf28f4c3217a57e648b3c80e1724d9794c9ea
+source-git-commit: cf751ea0e2a6b02ab996c712ac1309ac06b32979
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '764'
 ht-degree: 5%
 
 ---
@@ -85,33 +85,17 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Stöd för flera entiteter för lokal sökning - betaversion</strong><br/></th>
+<th><strong>Utökade personaliseringsdata - Beta</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>TBD</p>
+<p>Nu kan du söka efter och hämta datavärden i Adobe Experience Platform datamängder och använda dessa värden för att skapa villkor i Adobe Journey Optimizer. Du kan utnyttja data från en uppslagsdatauppsättning när en relation har definierats med ett attribut inuti en objektmatris. Uppslagsvärdena är tillgängliga under resans villkor, anpassade åtgärder och i meddelandepersonalisering.</p>
 </td>
 </tr>
 </tbody>
 </table>
-
-
-<!--table>
-<thead>
-<tr>
-<th><strong>Email Surface Personalization - Private beta </strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now define dynamic subdomains and personalized header parameters when creating email channel surfaces, for increased flexibility and control over your email settings.</p>
-</td>
-</tr>
-</tbody>
-</table-->
 
 ### Förbättringar {#e-improvements}
 
@@ -137,7 +121,7 @@ Från beta till LA har följande förbättringar lagts till:
 **E-postkanal**
 
 * **List-unsubscribe** - Efter de senaste Gmail- och Yahoo-meddelandena om bulkavsändare stöder Journey Optimizer alternativet&quot;post/1-click&quot; List-Unsubscribe.
-* **Skräddarsy poäng** - Nu kan du kontrollera ditt innehåll spam-poäng i en dedikerad spam-rapport. Med SpamAssassin kan Adobe Journey Optimizer nu testa ditt e-postinnehåll och ge det ett poängvärde som anger om internetleverantörer kommer att betrakta det som skräppost eller inte. [Läs mer](../content-management/spam-report.md)
+* **Skräddarsy poäng** (Beta) - Nu kan du kontrollera ditt innehåll som skräppost i en dedikerad skräppostrapport. Med SpamAssassin kan Adobe Journey Optimizer nu testa ditt e-postinnehåll och ge det ett poängvärde som anger om internetleverantörer kommer att betrakta det som skräppost eller inte. [Läs mer](../content-management/spam-report.md)
 
 
 **Publiker**
@@ -146,10 +130,10 @@ Från beta till LA har följande förbättringar lagts till:
 
 **Personalisering**
 
-* **Sökregister** - Du kan nu utnyttja data från en uppslagsdatauppsättning när en relation har definierats med ett attribut inuti en objektmatris. Uppslagsvärdena är tillgängliga i resor (villkor, anpassade åtgärder osv.) och personalisering av meddelanden.
-* **Uttrycksfragment** - Uttrycksfragment är nu tillgängliga för kanalen i appen.
+* **Uttrycksfragment** - Uttrycksfragment är nu tillgängliga för **Kanal i appen**. [Läs mer](../personalization/use-expression-fragments.md)
 
 **Resor**
 
 * **Sammanfoga profiler** - Sammanslagningsprinciper kan nu konfigureras och användas på dina resor.
 * **Stöd för mTLS** - mTLS-protokollet stöds nu i Journey Optimizer API:er och anpassade åtgärder.
+* **Sök tabeller i händelser** - Du kan nu utnyttja data från en uppslagsdatauppsättning när en relation har definierats med ett attribut inuti en objektmatris. Uppslagsvärdena är tillgängliga i resor (villkor, anpassade åtgärder osv.) och personalisering av meddelanden.
