@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 2eb1ffff7101362b52ae91f1a7277188664b2954
+source-git-commit: b5e073ef1d0c579f430913d60442d7d4cfa620a3
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '836'
 ht-degree: 5%
 
 ---
@@ -75,7 +75,9 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <tbody>
 <tr>
 <td>
-<p>Nu kan du skapa regler för exakt frekvensbegränsning och tillämpa dem på olika typer av marknadsföringskommunikation via regeluppsättningar. </p>
+<p>Nu kan du skapa regler för exakt frekvensbegränsning och tillämpa dem på olika typer av marknadsföringskommunikation via regeluppsättningar. Med den här nya funktionen kan ni styra hur ofta era målgrupper får ett meddelande genom att ställa in flerkanalsregler som automatiskt utesluter överbegärda profiler från meddelanden och åtgärder.</p>
+<p>Funktionen för affärsregler är för närvarande endast tillgänglig som en betaversion.</p>
+<p>Mer information finns i den <a href="../configuration/business-rules.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -103,16 +105,16 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Experience Decision**
 
-Från beta till LA har följande förbättringar lagts till:
+Från betaversion till den här versionen har följande förbättringar lagts till:
 
-* **Experience Decision + Code-based experiences (LA)**: Nu kan ni utnyttja beslutsfunktionen i Experience för att använda beslutsobjekt i era kodbaserade kampanjer. Obs! Den kodbaserade upplevelsekanalen och Experience Decision är inte tillgängliga för organisationer som har köpt Adobe Healthcare Shield och tillägg till Privacy and Security Shield. [Läs mer](../code-based/get-started-code-based.md)
-* Nu kan ni utnyttja kontextdata från Adobe Experience Platform i era beslutsregler och rangordningsformler. [Läs mer](../experience-decisioning/context-data.md)
-* Det finns nu en ny behörighet,&quot;Hantera Experience Decision&quot;, för beslutshanteringsresursen. Det gör att ni kan hantera rättigheter för Experience Decision. [Läs mer](../experience-decisioning/gs-experience-decisioning.md)
-* Nu kan du lägga till flera regler för att sätta stopp för ett visst beslutsobjekt i Experience Decisioning. På så sätt kan ni öka kontrollen över hur erbjudandena skickas. [Läs mer](../experience-decisioning/items.md#capping)
-* Nu kan du skapa anpassade rapportinstrumentpaneler för Experience Decision-kampanjer med [!DNL Customer Journey Analytics]. [Läs mer](../experience-decisioning/cja-reporting.md)
+* **Experience Decision + Code-based experiences (LA)** - Nu kan ni utnyttja beslutsfunktionen i Experience för att använda beslutsobjekt i era kodbaserade kampanjer. Obs! Den kodbaserade upplevelsekanalen och Experience Decision är inte tillgängliga för organisationer som har köpt Adobe Healthcare Shield och tillägg till Privacy and Security Shield. [Läs mer](../code-based/get-started-code-based.md)
+* **Kontextdata** - Nu kan du utnyttja kontextdata från Adobe Experience Platform i dina regler för beslutsfattande och rangordningsformler. [Läs mer](../experience-decisioning/context-data.md)
+* **Ny behörighet** - Det finns nu en ny behörighet för att hantera Experience Decision Management-resursen. Det gör att ni kan hantera rättigheter för Experience Decision. [Läs mer](../experience-decisioning/gs-experience-decisioning.md)
+* **Begränsningsregler** - Du kan nu lägga till flera regler för att sätta stopp för ett visst beslutsobjekt i Experience Decisioning. På så sätt kan ni öka kontrollen över hur erbjudandena skickas. [Läs mer](../experience-decisioning/items.md#capping)
+* **Rapportering** - Nu kan du skapa anpassade rapportinstrumentpaneler för Experience Decision-kampanjer med [!DNL Customer Journey Analytics]. [Läs mer](../experience-decisioning/cja-reporting.md)
 
 
-**Offer decisioning**
+**Beslutshantering**
 
 * **Stöd för flera regler** - Du kan nu lägga till upp till 10 regler om begränsning av ett visst erbjudande i Beslutshantering. På så sätt kan ni öka kontrollen över hur erbjudandena skickas.
 * **Granskningar** - **Ändra logg** så att du kan se alla ändringar som har gjorts i ett erbjudande eller ett beslut har tagits bort. Ändringar som rör erbjudanden och beslut kan nu ses i **Granskningar** -menyn.
@@ -134,6 +136,6 @@ Från beta till LA har följande förbättringar lagts till:
 
 **Resor**
 
-* **Sammanfoga profiler** - Sammanslagningsprinciper kan nu konfigureras och användas på dina resor.
+* **Sammanfoga profiler** (Begränsad tillgänglighet) - Sammanslagningsprinciper som används av en resa är nu synliga och konsekventa under hela resan.
 * **Stöd för mTLS** - mTLS-protokollet stöds nu i Journey Optimizer API:er och anpassade åtgärder.
 * **Sök tabeller i händelser** - Du kan nu utnyttja data från en uppslagsdatauppsättning när en relation har definierats med ett attribut inuti en objektmatris. Uppslagsvärdena är tillgängliga i resor (villkor, anpassade åtgärder osv.) och personalisering av meddelanden.
