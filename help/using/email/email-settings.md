@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: 5b7faccbf563c6877a1077b0f6012418848c0ccb
 workflow-type: tm+mt
 source-wordcount: '2351'
 ht-degree: 0%
@@ -145,7 +145,7 @@ När du definierar **[!UICONTROL Reply to (email)]** kan du ange vilken e-postad
 
 Den inkorg som används för svar kommer att ta emot alla svarsmeddelanden, utom meddelanden som inte är installerade och svarsfrågor som tas emot på **[!UICONTROL Error email]** adress.
 
-Följ nedanstående rekommendationer för att säkerställa korrekt svarshantering:
+Följ rekommendationerna nedan för att säkerställa korrekt svarshantering:
 
 * Se till att den dedikerade inkorgen har tillräcklig mottagningskapacitet för att kunna ta emot alla svar som skickas via e-post med e-postytan. Om inkorgen returnerar studsar kanske vissa svar från dina kunder inte tas emot.
 

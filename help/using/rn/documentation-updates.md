@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: 5b7faccbf563c6877a1077b0f6012418848c0ccb
 workflow-type: tm+mt
 source-wordcount: '5226'
 ht-degree: 13%
@@ -87,7 +87,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Uppdatera anpassat autentiseringsdokument med avseende på cachevaraktighet. [Läs mer] (../datasource/external-data-sources.md)
 * Stöd för `<listObject>` har ändrats i flera funktioner.
 * Uppdatera **varaktighet** -parametern i `toString` funktion. [Läs mer](../building-journeys/functions/functiontostring.md)
-* För vissa externa datakällor rekommenderas anpassade åtgärder.
+* För vissa externa datakällor bör du använda anpassade åtgärder.
 * Syntaxen för händelsefältet har uppdaterats. Följande syntax är inaktuell `@(my_event.myfield}` och ersatt med `@event{my_event.myfield}`. [Läs mer](../building-journeys/expression/field-references.md)
 * Den globala rapporten och Live-rapportguiderna har omstrukturerats. [Läs mer](../reports/campaign-global-report.md)
 
