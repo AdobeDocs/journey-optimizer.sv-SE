@@ -5,12 +5,10 @@ title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 feature: Release Notes
 topic: Content Management
-hide: true
-hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 91a687563ecd989c89061996b5906bcc77e82e23
+source-git-commit: 1a9254ea7390be02210d770f657b1abb82d9e544
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '708'
 ht-degree: 3%
 
 ---
@@ -19,7 +17,7 @@ ht-degree: 3%
 
 [!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras i slutet av varje månad i [versionsinformation](release-notes.md).
 
-Noteringarna nedan kan ändras utan föregående meddelande fram till releasedatum. Länkar, skärmar och uppdaterad dokumentation publiceras i [versionsinformation](release-notes.md), på releasedatum.
+**Tidiga versionsinformation nedan kan ändras utan föregående meddelande till dess att releasedatumet blir tillgängligt**. Länkar, skärmar och uppdaterad dokumentation publiceras i [versionsinformation](release-notes.md), på releasedatum.
 
 ## Versionsinformation maj 2024 {#e-2024}
 
@@ -127,10 +125,10 @@ Från betaversion till den här versionen har följande förbättringar lagts ti
 * **Skräddarsy poäng** (Beta) - Nu kan du kontrollera ditt innehåll som skräppost i en dedikerad skräppostrapport. Med SpamAssassin kan Adobe Journey Optimizer nu testa ditt e-postinnehåll och ge det ett poängvärde som anger om internetleverantörer kommer att betrakta det som skräppost eller inte.
   <!--[Read more](../content-management/spam-report.md)-->
 
+<!--
+**Audiences**
 
-**Publiker**
-
-* Målgrupper och attribut från målgruppssammansättning och anpassad uppladdning (CSV-fil) kan nu användas med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
+* The use of audiences and attributes from audience composition and custom upload (CSV file) is now available for use with Healthcare Shield or Privacy and Security Shield.-->
 
 **Personalisering**
 
