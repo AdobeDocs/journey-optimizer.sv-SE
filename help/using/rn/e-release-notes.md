@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: b5e66c18590a452e582bd8727d957e6c721abe4a
+source-git-commit: 21b4c3dbdb4b26caa64104319d9f79e489bb5925
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '735'
 ht-degree: 3%
 
 ---
@@ -84,21 +84,21 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </table>
 
 
-<table>
+<!--table>
 <thead>
 <tr>
-<th><strong>Utökade personaliseringsdata - Beta</strong><br/></th>
+<th><strong>Extended personalization data - Beta</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Nu kan du söka efter och hämta datavärden i Adobe Experience Platform datamängder och använda dessa värden för att skapa villkor i Adobe Journey Optimizer. Du kan utnyttja data från en uppslagsdatauppsättning när en relation har definierats med ett attribut inuti en objektmatris. Du kan ange datauppsättningar som inte är profilaktiverade för sökning. När det är aktiverat kan du använda ett profilattribut som en kopplingsnyckel till den angivna datauppsättningen för att hämta ytterligare data för personalisering.</p>
-<p>Den här funktionen är för närvarande tillgänglig som en betaversion.</p>
+<p>You can now lookup and fetch data values within Adobe Experience Platform datasets, and use these values to build conditions in Adobe Journey Optimizer. You can leverage data from a lookup dataset when a relationship has been defined using an attribute inside of an array of objects. You can specify non-profile enabled datasets for lookup. Once enabled, you can use a profile attribute as a join key to the specified dataset to retrive further data for personalization.</p>
+<p>This capability is currently available as a public beta.</p>
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 ### Förbättringar {#e-improvements}
 
