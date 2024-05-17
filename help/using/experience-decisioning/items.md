@@ -7,7 +7,7 @@ role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet"
 exl-id: 5c866814-d79a-4a49-bfcb-7a767d802e90
-source-git-commit: f586d2de34939c1cd105c26dc64c656c1f0fb990
+source-git-commit: b6c5bb09d7a1cb7f61a532cd5ffd262436e09039
 workflow-type: tm+mt
 source-wordcount: '1684'
 ht-degree: 0%
@@ -121,7 +121,7 @@ Klicka på knappen **[!UICONTROL Create capping]** följer du dessa steg:
 
    * Välj **[!UICONTROL In total]** för att definiera hur många gånger objektet kan föreslås för den kombinerade målgruppen, vilket betyder för alla användare. Om du till exempel är en återförsäljare av elektronikprodukter och har en &quot;TV-affär&quot; vill du att erbjudandet bara ska returneras 200 gånger för alla profiler.
 
-* Välj **[!UICONTROL Per profile]** för att definiera hur många gånger erbjudandet kan erbjudas en och samma användare. Om du till exempel är en bank med ett Platinum-kreditkortserbjudande vill du inte att det här erbjudandet ska visas mer än fem gånger per profil. Ni tror faktiskt att om användaren har sett erbjudandet fem gånger och inte har följt det, har de större chans att agera på nästa bästa erbjudande.
+   * Välj **[!UICONTROL Per profile]** för att definiera hur många gånger erbjudandet kan erbjudas en och samma användare. Om du till exempel är en bank med ett Platinum-kreditkortserbjudande vill du inte att det här erbjudandet ska visas mer än fem gånger per profil. Ni tror faktiskt att om användaren har sett erbjudandet fem gånger och inte har följt det, har de större chans att agera på nästa bästa erbjudande.
 
 1. I **[!UICONTROL Capping count limit]** anger du hur många gånger erbjudandet kan visas för alla användare eller per profil, beroende på vilken typ av appning som valts. Talet måste vara ett heltal större än 0.
 
