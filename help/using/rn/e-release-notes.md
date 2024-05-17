@@ -6,9 +6,9 @@ description: Journey Optimizer tidiga versionsinformation
 feature: Release Notes
 topic: Content Management
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 1a9254ea7390be02210d770f657b1abb82d9e544
+source-git-commit: 7addbcaf12611860c0dde239b68be54493b99bb9
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '716'
 ht-degree: 3%
 
 ---
@@ -74,7 +74,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <tr>
 <td>
 <p>Nu kan du skapa regler för exakt frekvensbegränsning och tillämpa dem på olika typer av marknadsföringskommunikation via regeluppsättningar. Med den här nya funktionen kan ni styra hur ofta era målgrupper får ett meddelande genom att ställa in flerkanalsregler som automatiskt utesluter överbegärda profiler från meddelanden och åtgärder.</p>
-<p>Affärsregelfunktionen är för närvarande tillgänglig som en betaversion.</p>
+<p>Funktionen för affärsregler är för närvarande tillgänglig som en betaversion. Om du vill gå med i betaprogrammet kontaktar du Adobe.</p>
 <!--p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p-->
 </td>
 </tr>
