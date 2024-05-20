@@ -6,9 +6,9 @@ description: Journey Optimizer tidiga versionsinformation
 feature: Release Notes
 topic: Content Management
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 949d1e021cf46aebf7bf564797d717205e4cf4b8
+source-git-commit: de9aba41b6351bc7bad18f3d774612a03673f185
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '762'
 ht-degree: 3%
 
 ---
@@ -122,8 +122,10 @@ Från betaversion till den här versionen har följande förbättringar lagts ti
 **E-postkanal**
 
 * **List-unsubscribe** - Efter de senaste Gmail- och Yahoo-meddelandena om bulkavsändare stöder Journey Optimizer alternativet&quot;post/1-click&quot; List-Unsubscribe.
-* **Skräddarsy poäng** (Beta) - Nu kan du kontrollera ditt innehåll som skräppost i en dedikerad skräppostrapport. Med SpamAssassin kan Adobe Journey Optimizer nu testa ditt e-postinnehåll och ge det ett poängvärde som anger om internetleverantörer kommer att betrakta det som skräppost eller inte.
-  <!--[Read more](../content-management/spam-report.md)-->
+* **Skräddarsy poäng** (Beta) - Nu kan du kontrollera ditt innehåll som skräppost i en dedikerad skräppostrapport. Med SpamAssassin kan Adobe Journey Optimizer nu testa ditt e-postinnehåll och ge det ett poängvärde som anger om Internet-leverantörer eller postlådeleverantörer kommer att betrakta det som skräppost eller inte. Funktionen finns för närvarande i betaversion och är endast tillgänglig för betatestare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
+
+
+<!--[Read more](../content-management/spam-report.md)-->
 
 <!--
 **Audiences**
