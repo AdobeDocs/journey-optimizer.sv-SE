@@ -10,9 +10,9 @@ level: Intermediate
 keywords: uttryck, redigerare
 hidefromtoc: true
 hide: true
-source-git-commit: ae26dfdf77433882dc57e5518a2ff5e0f7e3a3ce
+source-git-commit: 4d4ce1e892d51393972973950e8e03259e16c204
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Med Journey Optimizer kan du utnyttja data från Adobe Experience Platform i utt
 
 1. Öppna uttrycksredigeraren, som är tillgänglig i alla sammanhang där du kan definiera personalisering, till exempel meddelanden. [Lär dig arbeta med uttrycksredigeraren](../personalization/personalization-build-expressions.md)
 
-1. Navigera till hjälpfunktionslistan och lägg till **MultiEntity** hjälpfunktion till kodfönstret.
+1. Navigera till hjälpfunktionslistan och lägg till **datasetLookup** hjälpfunktion till kodfönstret.
 
    ![](assets/aep-data-helper.png)
 
@@ -41,6 +41,11 @@ Med Journey Optimizer kan du utnyttja data från Adobe Experience Platform i utt
 
    * **entity.datasetId** är ID:t för datauppsättningen som du arbetar med,
    * **id** är det fält som används som primär identitet i datauppsättningen,
+
+     >[!NOTE]
+     >
+     >Värdet som anges för det här fältet kan vara antingen fält-ID (*profile.couponValue*), ett fält som passerat i en resehändelse (*context.travel.events.event_ID.couponValue*) eller ett statiskt värde (*couponAbcd*). I vilket fall som helst använder systemet värdet och sökningen i datauppsättningen för att kontrollera om den matchar en nyckel).
+
    * **resultat** är ett godtyckligt namn som du måste ange för att referera till alla fältvärden som du kommer att hämta från datauppsättningen. Det här värdet används i koden för att anropa varje fält.
 
    +++Var hämtar du ett datauppsättnings-ID?
