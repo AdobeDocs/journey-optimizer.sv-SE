@@ -5,10 +5,10 @@ description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: 0ba1e007ebdb3f7d68df270c4a7332bf37eec2b2
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 16%
+source-wordcount: '354'
+ht-degree: 17%
 
 ---
 
@@ -20,11 +20,19 @@ Få en glimt av de senaste förbättringarna i Journey Optimizer-produkter och -
 
 >[!BEGINTABS]
 
->[!TAB Versionen från april är live!]
+>[!TAB Maj-releasen är live!]
 
-Upptäck nya funktioner och förbättringar i Adobe Journey Optimizer 24.3.
+Upptäck nya funktioner och förbättringar som kommer i Adobe Journey Optimizer majversion.
 
 [![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
+
+>[!TAB Experience Decision]
+
+Experience Decision förenklar personaliseringen genom att erbjuda en centraliserad katalog med marknadsföringserbjudanden som kallas beslutsposter och en sofistikerad beslutsmotor.
+
+![](using/rn/assets/do-not-localize/gif-exd.gif)
+
+[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/experience-decisioning/gs-experience-decisioning.md)
 
 >[!TAB Ny reseupplevelse]
 
@@ -33,14 +41,6 @@ I den här versionen finns ett förbättrat användargränssnitt på arbetsytan 
 ![](using/rn/assets/new-canvas3.gif)
 
 [![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/rn/new-canvas.md)
-
->[!TAB MMS för alla leverantörer]
-
-Med SMS-kanalen kan du nu förbättra kommunikationen genom att skicka MMS-meddelanden (Multimedia Message Service) som gör det möjligt att dela bilder, GIF eller videor med dina kunder. MMS finns nu endast i Sinch och finns nu även i Infobip och Twilio.
-
-![](using/rn/assets/do-not-localize/mms.gif)
-
-[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/sms/get-started-sms.md)
 
 >[!ENDTABS]
 
