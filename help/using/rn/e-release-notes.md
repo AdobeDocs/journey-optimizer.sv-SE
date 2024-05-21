@@ -4,9 +4,11 @@ product: journey optimizer
 title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 feature: Release Notes
+hide: true
+hidefromtoc: true
 topic: Content Management
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: de9aba41b6351bc7bad18f3d774612a03673f185
+source-git-commit: bd4e352378ba9f895a192b467a650013af669c4d
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 3%
