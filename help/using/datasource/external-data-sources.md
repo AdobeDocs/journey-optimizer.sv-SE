@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: externa, källor, data, konfiguration, anslutning, tredje part
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: 815595f907ed3ea05b7772a1df96187509351bf9
 workflow-type: tm+mt
-source-wordcount: '1492'
-ht-degree: 73%
+source-wordcount: '1502'
+ht-degree: 72%
 
 ---
 
@@ -139,7 +139,7 @@ Med den här autentiseringen blir åtgärdskörningen en process med två steg:
 >
 >**Autentiseringen består av två delar.**
 
-### Definition av slutpunkten som ska anropas för att generera åtkomsttoken
+### Definition av slutpunkten som ska anropas för att generera åtkomsttoken{#custom-authentication-endpoint}
 
 * slutpunkt: URL som ska användas för att generera slutpunkten
 * metoden för HTTP-begäran på slutpunkten (GET eller POST)
@@ -148,7 +148,7 @@ Med den här autentiseringen blir åtgärdskörningen en process med två steg:
    * &#39;form&#39;: innebär att innehållstypen blir application/x-www-form-urlencoded (charset UTF-8) och nyckelvärdepar serialiseras som: key1=value1&amp;key2=value2&amp;...
    * &#39;json&#39;: det innebär att innehållstypen blir application/json (charset UTF-8) och nyckelvärdepar kommer att serialiseras som ett json-objekt som det är: _{ &quot;key1&quot;: &quot;value1&quot;, &quot;key2&quot;: &quot;value2&quot;, ...}_
 
-### Definition av hur åtkomsttoken måste matas in i åtgärdens HTTP-begäran
+### Definition av hur åtkomsttoken måste matas in i åtgärdens HTTP-begäran{#custom-authentication-access-token}
 
 * authorizationType: definierar hur den genererade åtkomsttoken måste injiceras i HTTP-anropet för åtgärden. Möjliga värden är:
 
@@ -189,6 +189,10 @@ Autentiseringsformatet är:
 }
 ```
 
+>[!NOTE]
+>
+>Encode64 är den enda funktionen som är tillgänglig i autentiseringsnyttolasten.
+
 Du kan ändra cachevaraktigheten på en token för en anpassad autentiseringsdatakälla. Nedan visas ett exempel på en anpassad autentiseringsnyttolast. Cachevaraktigheten definieras i parametern &quot;cacheDuration&quot;. Den anger varaktigheten för den genererade token i cachen. Enheten kan vara millisekunder, sekunder, minuter, timmar, dagar, månader och år.
 
 Här följer ett exempel på autentiseringstypen för innehavare:
@@ -198,7 +202,7 @@ Här följer ett exempel på autentiseringstypen för innehavare:
   "authentication": {
     "type": "customAuthorization",
     "authorizationType": "Bearer",
-    "endpoint": "https://localhost:${port}/epsilon/oauth2/access_token",
+    "endpoint": "https://<your_auth_endpoint>/epsilon/oauth2/access_token",
     "method": "POST",
     "headers": {
       "Authorization": "Basic EncodeBase64(<epsilon Client Id>:<epsilon Client Secret>)"

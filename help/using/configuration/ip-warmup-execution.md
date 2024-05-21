@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: 752ffd7f-09c2-4aa3-a067-2dbe0634709c
-source-git-commit: 737b7f59819d235b1f637d4a6b996e97cfddb9fe
+source-git-commit: c400104c86e1a9a2de819db7743b3f77153ad90b
 workflow-type: tm+mt
-source-wordcount: '2083'
+source-wordcount: '2392'
 ht-degree: 0%
 
 ---
@@ -80,18 +80,6 @@ At phase level, system ensures that previously targeted + new profiles are picke
    >
    >När en körning har aktiverats kan undantag inte ändras längre om du inte [dela körningen](#split-phase) till en ny fas.
 
-   1. I **[!UICONTROL Profile exclusion]** ser du att profilerna från tidigare körningar av den fasen alltid är exkluderade. Om en profil i Kör 1 till exempel täcks av de första 4 800 målpersonerna, ser systemet automatiskt till att samma profil inte får e-postmeddelandet i Kör 2.
-
-      >[!NOTE]
-      >
-      >Det här avsnittet kan inte redigeras.
-
-   1. Från **[!UICONTROL Campaign audiences excluded]** väljer du de kampanjer som målgrupper ska uteslutas från den aktuella fasen.
-
-      ![](assets/ip-warmup-plan-exclude-campaigns.png)
-
-      När du till exempel utförde fas 1 var du tvungen att [dela den](#split-phase) av någon anledning. Därför kan ni utesluta kampanjen som används i fas 1 så att de tidigare kontaktade profilerna från fas 1 inte inkluderas i fas 2. Du kan även utesluta kampanjer från andra IP-värmeringsplaner.
-
    1. Från **[!UICONTROL Domain groups excluded]** markerar du de domäner du vill utesluta från den fasen.
 
       >[!NOTE]
@@ -106,7 +94,30 @@ At phase level, system ensures that previously targeted + new profiles are picke
       >
       >Du kan bara utesluta en anpassad domängrupp som har lagts till i [Prenumerationsplanmall för IP-värmare](ip-warmup-plan.md#prepare-file). Om så inte är fallet uppdaterar du mallen med den anpassade domängruppen som du vill utesluta och [ladda upp planen igen](#re-upload-plan).
 
-1. Vid behov kan du ersätta kampanjen med **[!UICONTROL Replace campaign]** -knappen.
+   1. Från **[!UICONTROL Campaign for exclusion of profiles]** väljer du de kampanjer som målgrupper ska uteslutas från den aktuella fasen.
+
+      ![](assets/ip-warmup-plan-exclude-campaigns.png)
+
+      När du till exempel utförde fas 1 var du tvungen att [dela den](#split-phase) av någon anledning. Därför kan ni utesluta kampanjen som används i fas 1 så att de tidigare kontaktade profilerna från fas 1 inte inkluderas i fas 2. Du kan även utesluta kampanjer från andra IP-värmeringsplaner.
+
+   1. Från **[!UICONTROL Journeys for exclusion of profiles]** väljer du de resor med målgrupper som du vill utesluta från den aktuella fasen.
+
++++ Om du vill använda alternativet Journeys för att exkludera profiler måste du upprätta en relation mellan AJO Message Feedback Event och AJO Entity Record Schemas.
+
+      1. Skapa en egen **Namnutrymme** som fungerar som identitetstyp för stegen nedan.
+
+      1. Öppna Adobe Experience Platform från **Scheman** väljer du **Schema för AJO-entitetspost** och ange **_id** som primär identitet och välj det namnutrymme som skapats tidigare som **Namnutrymme för identitet**.
+
+      1. Från **Scheman** väljer du **Schema för AJO Message Feedback-händelse** och navigera till **_messageID** fält. Välj **Lägg till relation** och välja **Schema för AJO-entitetspost** som **Referensschema** och det namnutrymme som du skapade tidigare som **Namnutrymme för referensidentitet**.
++++
+
+   1. I **[!UICONTROL Profiles targeted in previous runs]** ser du att profilerna från tidigare körningar av den fasen alltid är exkluderade. Om en profil i Kör 1 till exempel täcks av de första 4 800 målpersonerna, ser systemet automatiskt till att samma profil inte får e-postmeddelandet i Kör 2.
+
+      >[!NOTE]
+      >
+      >Det här avsnittet kan inte redigeras.
+
+1. Vid behov kan du ersätta kampanjen med **[!UICONTROL Replace]** -knappen. Du kan även rensa den valda kampanjen med **[!UICONTROL Clear]** -knappen. Du kan sedan välja en ny kampanj antingen direkt eller vid ett senare tillfälle.
 
    ![](assets/ip-warmup-plan-replace-campaign.png)
 
@@ -122,7 +133,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
    >[!CAUTION]
    >
-   >Du kan inte ångra **[!UICONTROL Delete]** åtgärd.
+   >Du kan inte ångra **[!UICONTROL Delete phase]** åtgärd.
 
    ![](assets/ip-warmup-plan-delete-phase.png)
 
@@ -155,7 +166,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_qualified"
 >title="Visa kvalificerade profiler"
->abstract="I den här kolumnen visas antalet kvalificerade profiler. När målgruppen har utvärderats för en körning körs körningen fortfarande om det finns fler målprofiler än kvalificerade profiler, såvida inte **Pausa vid fel** är aktiverat. I det här fallet avbryts körningen."
+>abstract="I den här kolumnen visas antalet kvalificerade profiler. När målgruppen har utvärderats för en körning körs körningen fortfarande om det finns fler målprofiler än kvalificerade profiler, såvida inte **Avbryt aktiverade körningar vid fel** är aktiverat. I det här fallet avbryts körningen."
 
 1. Välj ett schema för varje körning för att se till att den körs vid den angivna tidpunkten.
 
@@ -175,7 +186,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
    >
    >Om inget tidsfönster anges görs ett försök att köra vid sändningstiden och detta misslyckas om målgruppsutvärderingen inte slutförs.
 
-1. Välj vid behov **[!UICONTROL Edit run]** från ikonen Fler åtgärder. Där kan du uppdatera antalet adresser i varje kolumn. Du kan även uppdatera **[!UICONTROL Last engagement]** för att t.ex. rikta sig till de användare som varit engagerade med ert varumärke under de senaste 20 dagarna.
+1. Välj vid behov **[!UICONTROL Edit run]** från ikonen Fler åtgärder. Där kan du uppdatera antalet adresser i varje kolumn. Du kan även uppdatera **[!UICONTROL Last engaged]** för att t.ex. rikta sig till de användare som varit engagerade med ert varumärke under de senaste 20 dagarna.
 
    >[!NOTE]
    >
@@ -185,9 +196,9 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
    >[!NOTE]
    >
-   >Om du inte vill tillämpa någon åtagandeperiod på en körning anger du 0 i dialogrutan **[!UICONTROL Last engagement]** fält.
+   >Om du inte vill tillämpa någon åtagandeperiod på en körning anger du 0 i dialogrutan **[!UICONTROL Last engaged]** fält.
 
-1. Välj **[!UICONTROL Pause for errors]** om du vill avbryta en körning om de kvalificerade profilerna är mindre än målprofilerna när målgruppen har utvärderats för den körningen. I så fall tar körningen **[!UICONTROL Failed]** status.
+1. Välj **[!UICONTROL Cancel activated runs in case of errors]** om du vill avbryta en körning om de kvalificerade profilerna är mindre än målprofilerna när målgruppen har utvärderats för den körningen. I så fall tar körningen **[!UICONTROL Failed]** status.
 
    ![](assets/ip-warmup-plan-pause.png)
 
@@ -199,21 +210,19 @@ At phase level, system ensures that previously targeted + new profiles are picke
    >
    >De olika körningsstatusarna listas i [det här avsnittet](#monitor-plan).
 
-1. Om kampanjkörningen inte har startat kan du stoppa en direktkörning. Den här åtgärden avbryter faktiskt körningsschemat - det stoppar inte sändningen.
+1. Om kampanjkörningen inte har startats kan du avbryta en direktkörning. Den här åtgärden avbryter faktiskt körningsschemat - det stoppar inte sändningen.
 
    ![](assets/ip-warmup-plan-stop-run.png)
 
-   >[!NOTE]
-   >
-   >När kampanjkörningen har startat **[!UICONTROL Stop]** knappen blir otillgänglig.
+1. Om du vill duplicera ett utkast, en direktkörning eller en slutförd körning väljer du **[!UICONTROL Duplicate run]**. Vid duplicering visas menyn Redigera, vilket gör att användare kan justera **[!UICONTROL Total target profiles]** och **[!UICONTROL Send time]** efter behov.
 
-1. Om du vill lägga till en körning väljer du **[!UICONTROL Add a run below]** från ikonen Fler åtgärder.
-
-   ![](assets/ip-warmup-plan-run-more-actions.png)
+   ![](assets/ip-warmup-duplicate.png)
 
 ## Aktivera körningar {#activate-run}
 
 Om du vill aktivera en körning väljer du **[!UICONTROL Activate]** -knappen. Sedan kan du aktivera nästa körning dagligen.
+
+När du kör flera IP-värdskapsplaner samtidigt, som alla har samma IP-pool och domäner som mål, är det viktigt att förutse de potentiella konsekvenserna. Om en Internet-leverantör till exempel har en daglig gräns på 100 e-postmeddelanden, kan detta tröskelvärde överskridas om flera planer för samma domäner körs.
 
 Se till att du har schemalagt tillräckligt med tid för att tillåta [målgruppsutvärdering](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#how-segmentation-works){target="_blank"} som ska köras.
 
@@ -251,7 +260,7 @@ När du aktiverar en körning skapas flera målgrupper automatiskt.
 
      >[!NOTE]
      >
-     >En ny målgruppskomposition skapas för varje omgång.
+     >En ny målgruppskomposition skapas för varje omgång. Med en begränsning på 10 måste användare som kör flera kampanjer, resor och IP-uppvärmningsplaner samtidigt och använder publicerade målgruppskompositioner planera i förväg för att hålla sig inom denna gräns för parallella operationer.
      >
      >Publiken (och därmed målgruppen) rensas bort när nästa iteration aktiveras.
 
@@ -284,9 +293,9 @@ Själva IP-värmningsplanen fungerar som en konsoliderad rapport på ett enda st
 En körning kan ha följande status:
 
 * **[!UICONTROL Draft]** : när en körning skapas, antingen när [skapa en ny plan](ip-warmup-plan.md) eller [lägga till en körning](#define-runs) från användargränssnittet tar **[!UICONTROL Draft]** status.
-* **[!UICONTROL Live]**: varje gång du aktiverar en körning tar det **[!UICONTROL Live]** status. Det innebär att systemet har accepterat begäran om att schemalägga körningen, inte att sändningen har startats.
-* **[!UICONTROL Completed]**: kampanjkörningen för den här körningen har slutförts. <!--i.e. campaign execution has started, no error happened and emails have reached users? to check with Sid-->
-* **[!UICONTROL Cancelled]**: a **[!UICONTROL Live]** körningen avbröts med **[!UICONTROL Stop]** eller aktiverade **[!UICONTROL Pause for errors]** och ett fel inträffade. [Läs mer](#define-runs)
+* **[!UICONTROL Live]**: varje gång du aktiverar en körning tar det **[!UICONTROL Live]** status. Det innebär att systemet har accepterat begäran om att schemalägga körningen, inte att sändningen har startats. I det här skedet kan du se live-körningens status genom att klicka på **[!UICONTROL View status]** i tabellen. På så sätt kan ni spåra hur många målprofiler som faktiskt är kvalificerade.
+* **[!UICONTROL Completed]**: kampanjkörningen för den här körningen har slutförts. Du får tillgång till en detaljerad körningsrapport genom att klicka på **[!UICONTROL View report]** i tabellen. Med det här alternativet kan du spåra körningens e-postleveransstatus, inklusive uppdelningar som är specifika för domängrupper för förbättrad övervakning. [Läs mer](#reports)
+* **[!UICONTROL Cancelled]**: a **[!UICONTROL Live]** körningen avbröts med **[!UICONTROL Stop]** eller aktiverade **[!UICONTROL Cancel activated runs in case of errors]** och ett fel inträffade. [Läs mer](#define-runs)
 * **[!UICONTROL Failed]**: ett fel påträffades av systemet eller kampanjen som användes för den aktuella fasen stoppades. Om en körning misslyckas kan du schemalägga en ny körning för nästa dag.
 
 ### Använd rapporter {#reports}
@@ -297,13 +306,14 @@ Mer generellt kan du mäta effekten av din plan genom att kontrollera resultatet
 
 Du kan även komma åt rapporterna från [Menyn Kampanjer](../campaigns/modify-stop-campaign.md#access) så att planen kan använda olika kampanjer.
 
+
 ## Hantera din plan {#manage-plan}
 
 Om IP-värmningsplanen inte fungerar som förväntat kan du vidta åtgärderna nedan.
 
 ### Dela en fas {#split-phase}
 
-Om du vill lägga till en ny fas med början från en viss körning väljer du **[!UICONTROL Split to a new phase option]** från ikonen Fler åtgärder.
+Om du vill lägga till en ny fas med början från en viss körning väljer du **[!UICONTROL Split runs to a new phase]** från ikonen Fler åtgärder.
 
 ![](assets/ip-warmup-plan-run-split-run.png)
 
@@ -313,7 +323,7 @@ Om du t.ex. väljer det här alternativet för Kör #4 flyttas körningarna #4 t
 
 Följ stegen [ovan](#define-phases) för att definiera den nya fasen.
 
-* Du kan använda **[!UICONTROL Replace campaign]** alternativ för den nya fasen.
+* Du kan använda **[!UICONTROL Replace]** eller **[!UICONTROL Clear]** alternativ för den nya fasen.
 
 * Du kan också utesluta den tidigare kampanjen eller en domän som inte fungerar som den ska. Läs mer i [det här avsnittet](#define-phases).
 

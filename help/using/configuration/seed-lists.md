@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: utsädeslista, seedlist, seed, configuration
 exl-id: 0172f6bc-da8b-4a83-a0fc-4ed41324568f
-source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
+source-git-commit: 815595f907ed3ea05b7772a1df96187509351bf9
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '924'
 ht-degree: 2%
 
 ---
@@ -156,4 +156,4 @@ Varje gång ett e-postmeddelande skickas till kunderna via kampanjen eller resan
 
 >[!NOTE]
 >
->För resor skickas e-postleveransen till dirigeringsadresserna endast under den första körningen.
+>För återkommande resor skickas e-postleveransen till dirigerade adresser vid varje körning, förutsatt att minst en profil når e-postnoden.

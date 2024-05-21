@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: c68e72d170792fc0ea3b6eb09b3acf818ec2cfd5
 workflow-type: tm+mt
-source-wordcount: '1964'
+source-wordcount: '2046'
 ht-degree: 4%
 
 ---
@@ -211,6 +211,21 @@ Den här globala tidsgränsen stoppar de enskilda personernas framsteg under res
 På grund av den 30-dagars tidsgränsen för resan kan vi inte säkerställa att återinträdesspärren fungerar mer än 30 dagar när resan inte tillåts. Eftersom vi tar bort all information om personer som tagit sig in på resan 30 dagar efter ankomsten, kan vi inte veta vem som tagit sig in tidigare, mer än 30 dagar sedan.
 
 En enskild person kan bara förlägga en vänteaktivitet om han eller hon har tillräckligt med tid kvar på resan för att slutföra väntetiden innan tidsgränsen på 30 dagar för resan har nåtts. Läs [den här sidan](../building-journeys/wait-activity.md).
+
+### Sammanfoga profiler {#merge-policies}
+
+Resan använder sammanfogningsprinciper när profildata hämtas från Adobe Experience Platform. Beroende på resetyp används olika kopplingsprofiler:
+
+* På läs målgrupps- eller målgruppsklassificeringsresor: målgruppspolicyn används
+* Vid händelseutlösta resor: Standardprincipen för sammanslagning används
+
+Resan kommer att respektera den sammanslagningspolicy som används under hela resan.
+
+>[!NOTE]
+>
+>Den här funktionen är endast tillgänglig i begränsad tillgänglighet (LA) för utvalda kunder.
+
+Mer information om kopplingsregler finns i detta [page](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
 
 ## Duplicera en resa {#duplicate-a-journey}
 

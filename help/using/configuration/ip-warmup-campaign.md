@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: a9995ca1-d7eb-4f8d-a9d9-fe56198ac325
-source-git-commit: 737b7f59819d235b1f637d4a6b996e97cfddb9fe
+source-git-commit: c400104c86e1a9a2de819db7743b3f77153ad90b
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '439'
 ht-degree: 2%
 
 ---
@@ -69,11 +69,15 @@ Följ stegen nedan om du vill skapa en IP-värmare.
 
 1. Slutför stegen för att skapa en e-postkampanj, t.ex. för att definiera kampanjens egenskaper, [publik](../audience/about-audiences.md)<!--best practices for IP warmup in terms of audience?-->och [innehåll](../email/get-started-email-design.md#key-steps).
 
+   Observera att ni måste välja en regelbaserad målgrupp för er IP-värmare. [Läs mer](../audience/creating-a-segment-definition.md)
+
    >[!NOTE]
    >
    >Mer information om hur du konfigurerar en kampanj finns i [den här sidan](../campaigns/get-started-with-campaigns.md).
 
 1. [Aktivera](../campaigns/review-activate-campaign.md) kampanjen. Dess status ändras till **[!UICONTROL Live]**.
+
+   Observera att affärsregler inte ska användas för IP-värmerapport. Om dessa regler tillämpas kan det bli svårt att nå det önskade antalet målgruppsprofiler för kampanjer.
 
    >[!NOTE]
    >

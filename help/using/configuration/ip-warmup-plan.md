@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: c2434086-2ed4-4cd0-aecd-2eea8f0a55f6
-source-git-commit: cef6970e611a33b71b803fdb247f566cb8a8a708
+source-git-commit: c400104c86e1a9a2de819db7743b3f77153ad90b
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1590'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,10 @@ När du har skapat en eller flera [IP-kampanjer](ip-warmup-campaign.md) med en d
 Om du vill komma åt, skapa, redigera och ta bort IP-beredskapsplanerna måste du ha **[!UICONTROL Deliverability Consultant]** roller eller IP-värmeringsplanerrelaterade behörigheter.
 
 +++Lär dig hur du tilldelar rollen Deliverability Consultant eller IP Warmup-planerrelaterade behörigheter
+
+Åtkomstkontroll på objektnivå gör att du kan skydda data och ge specifik åtkomst för att visa och hantera dina planer. Om ingen etikett har tilldelats din IP-värmerappsplan öppnas den för visning och redigering av alla användare.
+
+Bevilja **[!UICONTROL View IP warmup plans]** behörigheter begränsar åtkomsten till att endast visa och publicera, samtidigt som **[!UICONTROL Manage IP warmup plans]** behörigheter tillåter användare att både visa och redigera planen.
 
 Så här tilldelar du motsvarande behörighet till en viss **[!UICONTROL Role]**:
 
@@ -76,7 +80,7 @@ Tilldela motsvarande roll till en **[!UICONTROL User]**:
 
 Varmning av IP-adresser är en aktivitet som gradvis ökar antalet e-postmeddelanden som går ut från era IP-adresser och domäner till de viktigaste Internetleverantörerna för att etablera ert rykte som en legitim avsändare.
 
-Denna aktivitet utförs i rätt tid med hjälp av en leveransexpert som hjälper till att ta fram en genomtänkt plan baserad på branschens domäner, användningsfall, regioner, Internet-leverantörer och olika andra faktorer.
+Denna aktivitet utförs vanligtvis med hjälp av en expert på slutprodukter som hjälper till att ta fram en genomtänkt plan baserad på branschens domäner, användningsfall, regioner, Internet-leverantörer och olika andra faktorer.
 
 <!--When working with the [!DNL Journey Optimizer] IP warmup feature, this plan takes the form of an Excel file that must contain a number of predefined columns.-->
 
@@ -102,10 +106,6 @@ Nedan visas ett exempel på en fil som innehåller en IP-värmerapport.
 
 ![](assets/ip-warmup-sample-file.png)
 
->[!NOTE]
->
->För tillfället bör du lämna **Egenskaper** och **Värde** rörliga celler.
-
 ### Fliken IP Warmup Plan {#ip-warmup-plan-tab}
 
 * I det här exemplet har en plan förberetts som sträcker sig över 17 dagar (kallas&quot;**körningar**&#39;) för att nå en målvolym på över en miljon profiler.
@@ -117,7 +117,6 @@ Nedan visas ett exempel på en fil som innehåller en IP-värmerapport.
    * Fyra av dessa motsvarar **färdiga domängrupper** som du kan använda i din plan (Gmail, Microsoft, Yahoo och Orange).
    * Den ena motsvarar en anpassad domängrupp (som du måste lägga till med [Anpassad domängrupp](#custom-domain-group-tab) -fliken).
    * Den sjätte kolumnen, **Övriga**, innehåller alla återstående adresser från andra domäner som inte uttryckligen omfattas av planen. Den här kolumnen är valfri: om den utelämnas kommer e-post endast att skickas till de angivna domänerna.
-* The **Förlovningsdagar** kolumn visar att det endast är profilerna som interagerar med ert varumärke under den senaste angivna perioden som är målinriktade.
 
 Tanken är att stegvis öka antalet måladresser i varje körning och samtidigt minska antalet körningar för varje fas.
 
@@ -188,6 +187,8 @@ De färdiga huvuddomängrupperna som du kan lägga till i din plan visas nedan:
 Du kan också lägga till fler kolumner i din plan genom att ta med anpassade domängrupper.
 
 Använd **[!UICONTROL Custom Domain Group]** för att definiera en ny domängrupp. För varje domän kan du lägga till alla underdomäner som den omfattar.<!--TBC-->
+
+Se till att varje domän är unik för sin domängrupp och inte överlappar andra domängrupper. Eftersom globala domängrupper definieras automatiskt bör användare tänka på detta när de skapar anpassade domängrupper.
 
 Om du till exempel lägger till den anpassade domänen Luma vill du att följande underdomäner ska inkluderas: luma.com, luma.co.uk, luma.it, luma.fr, luma.de osv.
 

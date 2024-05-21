@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 5b7faccbf563c6877a1077b0f6012418848c0ccb
+source-git-commit: 815595f907ed3ea05b7772a1df96187509351bf9
 workflow-type: tm+mt
-source-wordcount: '5226'
+source-wordcount: '5286'
 ht-degree: 13%
 
 ---
@@ -22,7 +22,10 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 ## Maj 2024 {#may-2024}
 
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Versionen från 24 april finns detaljerad i dokumentationen. [Läs mer](release-notes.md)
-
+* Avsnittet om utsädeslistor har uppdaterats när det gäller återkommande resor. [Läs mer](../configuration/seed-lists.md#use-seed-list)
+* Avsnittet om externa datakällor har uppdaterats. [Läs mer](../datasource/external-data-sources.md#custom-authentication-access-token)
+* Tidsgränsen för den globala resan på 30 dagar har lagts till på sidan Guardrail och prefix. [Läs mer](../start/guardrails.md#journeys-guardrails-journeys)
+* Avsnittet om integreringen av Adobe Campaign v7/v8 har uppdaterats med information om etablering. [Läs mer](../action/acc-action.md#access)
 
 ## April 2024 {#april-2024}
 
