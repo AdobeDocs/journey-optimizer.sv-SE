@@ -12,9 +12,9 @@ badge: label="Beta"
 hide: true
 hidefromtoc: true
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
-source-git-commit: b69c75e0a8a35635a67065412e443a2af0d3b09f
+source-git-commit: 60b29231a097bde3e451549eac9c2aead9452cf4
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1563'
 ht-degree: 0%
 
 ---
@@ -157,8 +157,6 @@ När en regel skapas har den **[!UICONTROL Draft]** status och påverkar ännu i
 Du måste också aktivera regeluppsättningen för att kunna komma åt den i kampanjer/resor och använda den i dina meddelanden.
 
 ![](assets/rule-set-activate-set.png)
-
-När du aktiverar en regeluppsättning påverkas alla meddelanden som den gäller för nästa körning. Lär dig hur [använda en regeluppsättning i ett meddelande](#apply-rule-set).
 
 >[!NOTE]
 >
