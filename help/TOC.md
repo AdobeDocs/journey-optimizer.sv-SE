@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 8dacf28f4c3217a57e648b3c80e1724d9794c9ea
+source-git-commit: b69c75e0a8a35635a67065412e443a2af0d3b09f
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1808'
 ht-degree: 28%
 
 ---
@@ -562,6 +562,7 @@ ht-degree: 28%
    + [Ändra körningsadresser](using/configuration/primary-email-addresses.md)
    + [Konfigurera frekvensregler](using/configuration/frequency-rules.md)
    + [Arbeta med affärsregler](using/configuration/business-rules.md)
+   + [Arbeta med regeluppsättningar](using/configuration/rule-sets.md)
    + Konfigurera resor {#configure-journeys}
       + [Om datakällor, händelser och åtgärder](using/configuration/about-data-sources-events-actions.md)
       + Integrera med externa system {#external-systems}
