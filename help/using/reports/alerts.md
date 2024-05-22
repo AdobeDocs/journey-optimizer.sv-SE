@@ -8,7 +8,7 @@ topic: Administration
 role: User
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
-source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
+source-git-commit: ddf9465fb940706fb38dc05038336ac22abecbc0
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Från **Varningar** kan du visa de tillgängliga varningarna och prenumerera på
 
 Läs mer om varningar i Adobe Experience Platform i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"}.
 
-I den vänstra menyn, under **Administration**, klicka **Varningar**. Det finns två förkonfigurerade varningar för Journey Optimizer: [Fel i anpassad åtgärd för resa](#alert-custom-actions) larm och [Utlösaren för lässegment misslyckades](#alert-read-audiences) varning. Dessa varningar beskrivs nedan.
+I den vänstra menyn, under **Administration**, klicka **Varningar**. Det finns två förkonfigurerade varningar för Journey Optimizer: [Fel i anpassad åtgärd för resa](#alert-custom-actions) larm och [Det gick inte att läsa målutlösaren](#alert-read-audiences) varning. Dessa varningar beskrivs nedan.
 
 Du kan prenumerera på varje avisering separat från användargränssnittet genom att välja **Prenumerera** från **Varningar** kontrollpanel. Använd samma metod för att avsluta prenumerationen.
 
@@ -67,7 +67,7 @@ Varningar på **Läs målgrupp** Denna verksamhet gäller endast återkommande r
 
 Varningar på **Läs målgrupp** löses när en profil anges i **Läs målgrupp** nod.
 
-I/O-händelsens prenumerationsnamn som motsvarar **Utlösaren för lässegment misslyckades** varning **Lässegmentsfördröjningar, fel och fel på resan**.
+I/O-händelsens prenumerationsnamn som motsvarar **Det gick inte att läsa målutlösaren** varning **Förseningar, fel och fel vid läsning på resa**.
 
 ## Felsökning {#alert-troubleshooting}
 
