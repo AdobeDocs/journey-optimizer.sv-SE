@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, publicering
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+source-git-commit: 7122dff12aea6c5954087e2667b28bbc9f7695de
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 1%
+source-wordcount: '1664'
+ht-degree: 0%
 
 ---
 
@@ -89,7 +89,7 @@ De viktigaste stegen för att skapa landningssidor är följande:
 
    ![](assets/lp_create-lp-presets.png)
 
-1. Klicka på **[!UICONTROL Create]**.
+1. Klicka **[!UICONTROL Create]**.
 
 1. Den primära sidan och dess egenskaper visas. Lär dig hur du konfigurerar inställningarna för den primära sidan [här](#configure-primary-page).
 
@@ -178,7 +178,7 @@ Följ stegen nedan för att definiera inställningarna för den primära sidan.
 >id="ajo_lp_subpage"
 >title="Definiera inställningar för undersidan"
 >abstract="Du kan lägga till upp till två undersidor. Du kan till exempel skapa en&quot;tack&quot;-sida som visas när användarna skickar in formuläret, och du kan definiera en felsida som anropas om ett problem uppstår med landningssidan."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/landing-pages-design/design-lp.html" text="Utforma innehållet på landningssidan"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/landing-pages/landing-pages-design/design-lp" text="Utforma innehållet på landningssidan"
 
 >[!CONTEXTUALHELP]
 >id="ajo_lp_access_settings-subpage"
