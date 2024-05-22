@@ -9,10 +9,10 @@ exl-id: 0964a484-f957-4aae-a571-61b2a1615026
 feature: Application Settings
 topic: Administration
 keywords: konfiguration, konfigurera, meddelanden, kanal, sandlåda, optimerare
-source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
+source-git-commit: 970fef96b6fa04f2b5ce1a8d10f89802f513b373
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 14%
+ht-degree: 6%
 
 ---
 
@@ -35,13 +35,13 @@ För att kunna skapa dina resor och skicka meddelanden måste du gå igenom konf
 
 1. När du är klar måste du skapa **kanalytor** för att konfigurera alla tekniska parametrar som krävs för att leverera meddelanden. [Läs mer](channel-surfaces.md)
 
-1. Du kan även:
+1. Du kan också:
 
    * Hantera det antal dagar som nya försök utförs innan e-postadresser skickas till listan över inaktiveringar. [Läs mer](manage-suppression-list.md)
 
    * Aktivera **BBC-e-postalternativ** för att behålla en kopia av meddelanden som skickas till enskilda personer. [Läs mer](archiving-support.md#enable-bcc)
 
-   * Konfigurera **frekvensregler** för att undvika att mottagarna blir överdrivna. [Läs mer](frequency-rules.md)
+   * Konfigurera **affärsregler** för att undvika att mottagarna blir överdrivna. [Läs mer](frequency-rules.md)
 
    * Avgör vilken e-postadress och/eller vilket telefonnummer som ska användas i prioritetsordning för dina mottagare när flera adresser/nummer är tillgängliga i Adobe Experience Platform. [Läs mer](primary-email-addresses.md)
 
@@ -59,6 +59,6 @@ För att kunna bygga resor måste du konfigurera **[!UICONTROL Data Sources]**, 
 
 * The **datakälla** kan du definiera en anslutning till ett system för att hämta ytterligare information som ska användas på dina resor. [Läs mer](../datasource/about-data-sources.md)
 
-* **Händelser** gör det möjligt för er att utlösa era resor helt och hållet för att skicka meddelanden i realtid till den person som kommer in på resan. I händelsekonfigurationen konfigurerar du de händelser som förväntas under resorna. Data för inkommande händelser normaliseras enligt Adobes upplevelsedatamodell (XDM). Händelser kommer från API för strömningsinmatning för autentiserade och ej autentiserade händelser (till exempel händelser i Adobe Mobile SDK). [Läs mer](../event/about-events.md)
+* **Händelser** gör det möjligt för er att utlösa era resor helt och hållet för att skicka meddelanden i realtid till den person som kommer in på resan. I händelsekonfigurationen konfigurerar du de händelser som förväntas under resorna. Data för inkommande händelser normaliseras enligt XDM (Adobe Experience Data Model). Händelser kommer från API:er för direktuppspelning av inmatning för autentiserade och oautentiserade händelser (som Adobe Mobile SDK-händelser). [Läs mer](../event/about-events.md)
 
 * [!DNL Journey Optimizer] innehåller inbyggda meddelandefunktioner som gör att du kan designa och skicka ditt innehåll. Om du använder ett tredjepartssystem för att skicka meddelanden skapar du en **anpassad åtgärd**. [Läs mer](../action/action.md)

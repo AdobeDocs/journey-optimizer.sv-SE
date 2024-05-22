@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Frekvensregler
+title: Affärsregler
 description: Lär dig hur du definierar frekvensregler
 feature: Rules
 topic: Content Management
@@ -9,14 +9,19 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: 2e6d55b5e26ca8486289b4b5c5df0b2e898a9992
+source-git-commit: 970fef96b6fa04f2b5ce1a8d10f89802f513b373
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: '1220'
 ht-degree: 0%
 
 ---
 
-# Regler för meddelandefrekvens {#frequency-rules}
+# Affärsregler {#frequency-rules}
+
+>[!CONTEXTUALHELP]
+>id="ajo_business_rules_message_frequency_rules"
+>title="Affärsregler"
+>abstract="Använd affärsregler för att styra hur ofta användare ska få ett meddelande eller delta i en resa genom att ange flerkanalsregler som automatiskt utesluter överbegärda profiler från meddelanden och åtgärder."
 
 >[!CONTEXTUALHELP]
 >id="ajo_business_rules_message_frequency_rules"
@@ -25,27 +30,25 @@ ht-degree: 0%
 
 [!DNL Journey Optimizer] Med kan du styra hur ofta användare ska få ett meddelande eller delta i en resa genom att ställa in flerkanalsregler som automatiskt utesluter överbegärda profiler från meddelanden och åtgärder.
 
-För ett varumärke kan till exempel en regel vara att inte skicka mer än fyra marknadsföringsmeddelanden per månad till sina kunder. För att göra detta kan du använda en frekvensregel som begränsar antalet meddelanden som skickas baserat på en eller flera kanaler under en månadskalenderperiod.
+För ett varumärke kan till exempel en regel vara att inte skicka mer än fyra marknadsföringsmeddelanden per månad till sina kunder. För att göra detta kan du använda en affärsregel som begränsar antalet meddelanden som skickas baserat på en eller flera kanaler under en månadskalenderperiod.
 
 ![](assets/do-not-localize/sms-dm-rules.gif)
 
 >[!NOTE]
 >
->Reglerna för meddelandefrekvens skiljer sig från reglerna för avanmälningshantering, som gör det möjligt för användare att avbryta prenumerationen på meddelanden från ett varumärke. [Läs mer](../privacy/opt-out.md#opt-out-management)
+>Affärsreglerna skiljer sig från avanmälningshantering, som gör det möjligt för användare att avbryta prenumerationen på information från ett varumärke. [Läs mer](../privacy/opt-out.md#opt-out-management)
 
 ➡️ [Upptäck den här funktionen i video](#video)
 
-## Åtkomstregler {#access-rules}
+## Åtkomst till affärsregler {#access-rules}
 
-Regler är tillgängliga från **[!UICONTROL Administration]** > **[!UICONTROL Rules]** -menyn. Alla regler visas sorterade efter ändringsdatum.
-
-Använd filterikonen för att filtrera efter kategori, status och/eller kanal. Du kan också söka på meddelandeetiketten.
+Affärsregler finns på **[!UICONTROL Administration]** > **[!UICONTROL Business rules]** -menyn. Alla regler visas sorterade efter ändringsdatum. Använd filterikonen för att filtrera efter kategori, status och/eller kanal. Du kan också söka på meddelandeetiketten.
 
 ![](assets/message-rules-filter.png)
 
 ### Behörigheter{#permissions-frequency-rules}
 
-Om du vill komma åt, skapa, redigera eller ta bort regler för meddelandefrekvens måste du ha **[!UICONTROL Manage frequency rules]** behörighet.
+Om du vill komma åt, skapa, redigera eller ta bort affärsregler måste du ha **[!UICONTROL Manage frequency rules]** behörighet.
 
 Användare med **[!UICONTROL View frequency rules]** behörighet kan visa regler, men inte ändra eller ta bort dem.
 
@@ -53,26 +56,26 @@ Användare med **[!UICONTROL View frequency rules]** behörighet kan visa regler
 
 Läs mer om behörigheter i [det här avsnittet](../administration/high-low-permissions.md).
 
-## Skapa en regel {#create-new-rule}
+## Skapa en affärsregel {#create-new-rule}
 
 >[!CONTEXTUALHELP]
 >id="ajo_rules_category"
 >title="Välj meddelanderegelkategori"
->abstract="När det aktiveras och används för ett meddelande, kommer alla frekvensregler som matchar den valda kategorin automatiskt att tillämpas på det här meddelandet. För närvarande är endast marknadsföringskategorin tillgänglig."
+>abstract="När det aktiveras och används i ett meddelande, kommer alla affärsregler som matchar den valda kategorin automatiskt att tillämpas på det här meddelandet. För närvarande är endast marknadsföringskategorin tillgänglig."
 
 >[!CONTEXTUALHELP]
 >id="ajo_rules_capping"
->title="Ange begränsning för din regel"
+>title="Ange begränsning för din affärsregel"
 >abstract="Ange det maximala antalet meddelanden som skickas till en kundprofil inom den valda tidsramen. Frekvensgränsen baseras på den valda kalenderperioden och återställs i början av motsvarande tidsram."
 
 >[!CONTEXTUALHELP]
 >id="ajo_rules_channel"
->title="Definiera de kanaler som regeln gäller för"
+>title="Definiera de kanaler som affärsregeln gäller för"
 >abstract="Välj minst en kanal. Taket tillämpas över alla kanaler som ett totalt antal."
 
-Följ stegen nedan för att skapa en ny regel.
+Följ stegen nedan för att skapa en ny affärsregel.
 
-1. Öppna **[!UICONTROL Message frequency rules]** lista och klicka sedan på **[!UICONTROL Create rule]**.
+1. Öppna **[!UICONTROL Business rules]** lista och klicka sedan på **[!UICONTROL Create rule]**.
 
    ![](assets/message-rules-create.png)
 
@@ -134,19 +137,19 @@ Den dagliga frekvensen gäller för dagen till 23:59:59 UTC och återställer ti
 >
 >För att säkerställa exaktheten i de dagliga reglerna för frekvensbegränsning bör man använda [strömningssegmentering](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html){target="_blank"} rekommenderas. Läs mer om metoder för målgruppsutvärdering i [det här avsnittet](../audience/about-audiences.md#evaluation-method-in-journey-optimizer).
 
-## Aktivera en regel {#activate-rule}
+## Aktivera en affärsregel {#activate-rule}
 
-När en regel för meddelandefrekvens skapas har den **[!UICONTROL Draft]** status och påverkar ännu inte något meddelande. Om du vill aktivera den klickar du på ellipsen bredvid regeln och väljer **[!UICONTROL Activate]**.
+När en affärsregel skapas har den **[!UICONTROL Draft]** status och påverkar ännu inte något meddelande. Om du vill aktivera den klickar du på ellipsen bredvid regeln och väljer **[!UICONTROL Activate]**.
 
 ![](assets/message-rules-activate.png)
 
-Om du aktiverar en regel påverkas alla meddelanden som gäller för nästa körning. Lär dig hur [tillämpa en frekvensregel på ett meddelande](#apply-frequency-rule).
+Om du aktiverar en regel påverkas alla meddelanden som gäller för nästa körning. Lär dig hur [tillämpa en affärsregel på ett meddelande](#apply-frequency-rule).
 
 >[!NOTE]
 >
 >Det kan ta upp till 10 minuter innan en regel aktiveras helt. Du behöver inte ändra meddelanden eller publicera om resor för att en regel ska börja gälla.
 
-Om du vill inaktivera en regel för meddelandefrekvens klickar du på ellipsen bredvid regeln och väljer **[!UICONTROL Deactivate]**.
+Om du vill inaktivera en affärsregel klickar du på ellipsen bredvid regeln och väljer **[!UICONTROL Deactivate]**.
 
 ![](assets/message-rules-deactivate.png)
 
@@ -156,9 +159,9 @@ Regelens status ändras till **[!UICONTROL Inactive]** och regeln gäller inte f
 >
 >När du inaktiverar en regel påverkas eller återställs inte antalet enskilda profiler.
 
-## Tillämpa en frekvensregel på ett meddelande {#apply-frequency-rule}
+## Tillämpa en affärsregel på ett meddelande {#apply-frequency-rule}
 
-Följ stegen nedan för att tillämpa en frekvensregel på ett meddelande.
+Följ stegen nedan för att tillämpa en affärsregel på ett meddelande.
 
 1. När en [resa](../building-journeys/journey-gs.md)lägger du till ett meddelande genom att välja någon av de kanaler som du har definierat för regeln.
 
@@ -168,17 +171,17 @@ Följ stegen nedan för att tillämpa en frekvensregel på ett meddelande.
 
    >[!NOTE]
    >
-   >För närvarande bara **[!UICONTROL Marketing]** finns för regler för meddelandefrekvens.
+   >För närvarande bara **[!UICONTROL Marketing]** finns för affärsregler.
 
 1. Du kan klicka på **[!UICONTROL Frequency rule]** om du vill visa skärmen med frekvensregler på en ny flik. [Läs mer](#access-rules)
 
-   Alla frekvensregler som matchar den valda kategorin och kanalen/kanalerna tillämpas automatiskt på det här meddelandet.
+   Alla regler som matchar den valda kategorin och kanalen/kanalerna tillämpas automatiskt på det här meddelandet.
 
    >[!NOTE]
    >
    >Meddelanden där den valda kategorin är **[!UICONTROL Transactional]** utvärderas inte mot frekvensregler.
 
-1. Du kan visa antalet profiler som har uteslutits från leverans i [Global rapport](../reports/global-report.md)och i [Live-rapport](../reports/live-report.md), där frekvensreglerna listas som en möjlig orsak för användare som inte får leverera.
+1. Du kan visa antalet profiler som har uteslutits från leverans i [Global rapport](../reports/global-report.md)och i [Live-rapport](../reports/live-report.md), där affärsreglerna listas som en möjlig orsak för användare som inte får leverera.
 
 >[!NOTE]
 >
@@ -186,9 +189,9 @@ Följ stegen nedan för att tillämpa en frekvensregel på ett meddelande.
 
 ## Exempel: kombinera flera regler {#frequency-rule-example}
 
-Du kan kombinera flera regler för meddelandefrekvens, som beskrivs i exemplet nedan.
+Du kan kombinera flera affärsregler, som beskrivs i exemplet nedan.
 
-1. [Skapa en regel](#create-new-rule) anropad *Total marknadsföringstak*:
+1. [Skapa en affärsregel](#create-new-rule) anropad *Total marknadsföringstak*:
 
    * Markera alla kanaler.
    * Ställ in capping på 12 månatliga.
@@ -204,7 +207,7 @@ Du kan kombinera flera regler för meddelandefrekvens, som beskrivs i exemplet n
 
 1. Spara och [activate](#activate-rule) regeln.
 
-1. [Skapa ett meddelande](../building-journeys/journeys-message.md) för varje kanal som du vill kommunicera genom och välja **[!UICONTROL Marketing]** kategori för varje meddelande. [Lär dig hur du använder en frekvensregel](#apply-frequency-rule)
+1. [Skapa ett meddelande](../building-journeys/journeys-message.md) för varje kanal som du vill kommunicera genom och välja **[!UICONTROL Marketing]** kategori för varje meddelande. [Lär dig hur du tillämpar en affärsregel](#apply-frequency-rule)
 
    ![](assets/journey-message-category.png)
 
@@ -231,10 +234,10 @@ I det här scenariot finns en enskild profil:
 
 >[!NOTE]
 >
->När du testar frekvensregler bör du använda en ny [testprofil](../audience/creating-test-profiles.md)eftersom det inte finns något sätt att återställa räknaren förrän nästa månad när en profils övre gräns för frekvens har nåtts. Om du inaktiverar en regel kan mappade profiler ta emot meddelanden, men inga räknarsteg tas bort eller tas bort.
+>När du testar affärsregler bör du använda en nyskapad [testprofil](../audience/creating-test-profiles.md)eftersom det inte finns något sätt att återställa räknaren förrän nästa månad när en profils övre gräns för frekvens har nåtts. Om du inaktiverar en regel kan mappade profiler ta emot meddelanden, men inga räknarsteg tas bort eller tas bort.
 
 ## Instruktionsvideo {#video}
 
-Lär dig hur du skapar, aktiverar, testar och rapporterar frekvensregler.
+Lär dig hur du skapar, aktiverar, testar och rapporterar om affärsregler.
 
 >[!VIDEO](https://video.tv.adobe.com/v/344451?quality=12)
