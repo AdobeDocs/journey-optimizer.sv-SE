@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 970fef96b6fa04f2b5ce1a8d10f89802f513b373
+source-git-commit: cc68e45e0da3cd65df74c7a484934af6da64b255
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1297'
 ht-degree: 4%
 
 ---
@@ -266,6 +266,11 @@ Så här byter du språk:
 >abstract="TBC"
 
 >[!CONTEXTUALHELP]
+>id="ajo_mobile_web_setup_swift_dependencies_import"
+>title="Importera beroenden"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_android_dependencies_import"
 >title="Importera beroenden"
 >abstract="TBC"
@@ -275,10 +280,6 @@ Så här byter du språk:
 >title="Lägg till initieringskod"
 >abstract="TBC"
 
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_validate_assurance_android"
->title="Validera med Assurance"
->abstract="TBC"
 
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_push_token_android"
@@ -288,14 +289,4 @@ Så här byter du språk:
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_push_android_studio"
 >title="Starta programmet från Android Studio"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_push_load_library"
->title="Läs in bibliotek asynkront"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_push_library_code"
->title="Huvudtagg för dokumentet"
 >abstract="TBC"
