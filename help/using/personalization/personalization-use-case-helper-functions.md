@@ -9,10 +9,10 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, hjälpprogram, användningsfall, personalisering
 exl-id: 9c9598c0-6fb1-4e2f-b610-ccd1a80e516e
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: c9627cfd1d717d56744f0287738b1303194c23e1
 workflow-type: tm+mt
 source-wordcount: '968'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -199,9 +199,9 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
       <table>
          <tbody>
             <tr>
-               <td><b>{{context.journey.events.event_ID.productListItems.name}}</b></td>
-               <td><b>{{context.journey.events.event_ID.productListItems.quantity}}</b></td>
-               <td><b>${{context.journey.events.event_ID.productListItems.priceTotal}}</b></td>
+            <td><b>{{product.name}}</b></td>
+            <td><b>{{product.quantity}}</b></td>
+            <td><b>${{product.priceTotal}}</b></td>
             </tr>
          </tbody>
       </table>
@@ -334,7 +334,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 
 * [Strängfunktioner](functions/string.md)
 
-### Användningsfall {#use-case}
+### Användningsexempel {#use-case}
 
 * [Personalisering med profilinformation, kontext och erbjudande](personalization-use-case.md)
 
