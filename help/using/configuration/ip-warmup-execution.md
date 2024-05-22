@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: 752ffd7f-09c2-4aa3-a067-2dbe0634709c
-source-git-commit: c400104c86e1a9a2de819db7743b3f77153ad90b
+source-git-commit: 666af4bbc3731f16ce1d5c11ceb7e704996f5a68
 workflow-type: tm+mt
-source-wordcount: '2392'
+source-wordcount: '2418'
 ht-degree: 0%
 
 ---
@@ -238,7 +238,9 @@ När du aktiverar en körning skapas flera målgrupper automatiskt.
 
    * An [publik](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html){target="_blank"} har skapats för de uteslutna kampanjmålgrupperna (om sådana finns), med följande namnkonvention: `<warmupName>_Phase<phaseNo>-Audience Exclusion`.
 
-   * En annan målgrupp skapas för de domängrupper som har undantagits (om det finns några), med följande namnkonvention: `<warmupName>_Phase<phaseNo>-Domain Exclusion`.
+   * En målgrupp skapas för de domängrupper som (om sådana finns) har utelämnats med följande namnkonvention: `<warmupName>_Phase<phaseNo>-Domain Exclusion`.
+
+   * En annan målgrupp skapas för de målgrupper som inte omfattas (om sådana finns), med följande namnkonvention: `<warmupName>-Phase<phaseNo>-Journey Audience Exclusion`.
 
   >[!NOTE]
   >
@@ -263,6 +265,8 @@ När du aktiverar en körning skapas flera målgrupper automatiskt.
      >En ny målgruppskomposition skapas för varje omgång. Med en begränsning på 10 måste användare som kör flera kampanjer, resor och IP-uppvärmningsplaner samtidigt och använder publicerade målgruppskompositioner planera i förväg för att hålla sig inom denna gräns för parallella operationer.
      >
      >Publiken (och därmed målgruppen) rensas bort när nästa iteration aktiveras.
+
+   * En målgrupp skapas med följande namnkonvention: `IP Warmup Audience-<warmupName>-Phase<phaseNo>-Run<runNo>`.
 
 <!--How do you know when segmentation is complete? Is there a way to prevent user from scheduling less than 12 hours before the segmentation job?-->
 
