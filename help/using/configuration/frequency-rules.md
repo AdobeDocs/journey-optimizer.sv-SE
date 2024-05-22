@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: 970fef96b6fa04f2b5ce1a8d10f89802f513b373
+source-git-commit: 8253b4f3fdc177f5e5f19ab19de748b78456137b
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,6 @@ ht-degree: 0%
 >id="ajo_business_rules_message_frequency_rules"
 >title="Affärsregler"
 >abstract="Använd affärsregler för att styra hur ofta användare ska få ett meddelande eller delta i en resa genom att ange flerkanalsregler som automatiskt utesluter överbegärda profiler från meddelanden och åtgärder."
-
->[!CONTEXTUALHELP]
->id="ajo_business_rules_message_frequency_rules"
->title="Affärsregler"
->abstract="Beskrivning av affärsregler"
 
 [!DNL Journey Optimizer] Med kan du styra hur ofta användare ska få ett meddelande eller delta i en resa genom att ställa in flerkanalsregler som automatiskt utesluter överbegärda profiler från meddelanden och åtgärder.
 
