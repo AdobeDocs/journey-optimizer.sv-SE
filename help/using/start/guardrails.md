@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: cc4ea97f858a212b82ac3b77328e61f59e3bfc27
+source-git-commit: eccc8d954ce36747800d42eb2b73e45952eb43e7
 workflow-type: tm+mt
 source-wordcount: '2061'
 ht-degree: 0%
@@ -85,14 +85,14 @@ Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. K
 
 ### Anpassade åtgärder {#custom-actions-g}
 
-* En begränsning på 300 000 anrop över en minut har definierats för alla anpassade åtgärder, per värd och per sandlåda. Se [den här sidan](../action/about-custom-action-configuration.md). Den här gränsen har fastställts baserat på kundanvändning för att skydda externa slutpunkter som har anpassats efter anpassade åtgärder. Du måste ta hänsyn till detta vid målgruppsbaserade resor genom att definiera en lämplig läsfrekvens (5 000 profiler/er när anpassade åtgärder används). Om det behövs kan du åsidosätta den här inställningen genom att definiera en större begränsning för begränsning eller begränsning via våra API:er för begränsning/begränsning. Läs [den här sidan](../configuration/external-systems.md).
+* En begränsning på 300 000 anrop över en minut har definierats för alla anpassade åtgärder, per värd och per sandlåda. Se [den här sidan](../action/about-custom-action-configuration.md). Den här gränsen har fastställts baserat på kundanvändning för att skydda externa slutpunkter som har anpassats efter anpassade åtgärder. Du måste ta hänsyn till detta vid målgruppsbaserade resor genom att definiera en lämplig läsfrekvens (5 000 profiler/er när anpassade åtgärder används). Om det behövs kan du åsidosätta den här inställningen genom att definiera en större begränsning för begränsning eller begränsning via våra API:er för begränsning/begränsning. Se [den här sidan](../configuration/external-systems.md).
 * Den anpassade åtgärds-URL:en stöder inte dynamiska parametrar.
 * Anropsmetoderna POST, PUT och GET stöds
 * Namnet på frågeparametern eller -rubriken får inte börja med &quot;.&quot; eller &quot;$&quot;
 * IP-adresser tillåts inte
 * Adobe adresser (`.adobe.*`) tillåts inte i URL:er och API:er.
 * Inbyggda anpassade åtgärder kan inte tas bort.
-* Anpassade åtgärder stöder bara JSON-format när du använder begäran- eller svarsnyttolaster. Läs [den här sidan](../action/about-custom-action-configuration.md#custom-actions-limitations).
+* Anpassade åtgärder stöder bara JSON-format när du använder begäran- eller svarsnyttolaster. Se [den här sidan](../action/about-custom-action-configuration.md#custom-actions-limitations).
 * När du väljer en slutpunkt som ska användas som mål med en anpassad åtgärd ska du se till att:
 
    * Den här slutpunkten kan stödja resans genomströmning med hjälp av konfigurationer från [Begränsnings-API](../configuration/throttling.md) eller [API för begränsning](../configuration/capping.md) för att begränsa den. Var försiktig med att en begränsningskonfiguration inte får vara lägre än 200 TPS. Alla målpunkter måste ha stöd för minst 200 TPS.
@@ -126,7 +126,7 @@ Du kan välja mellan följande två lösningar:
 
 * Konfigurera en resa som inte omedelbart utnyttjar profilen. Om resan till exempel är utformad för att bekräfta att ett konto har skapats, kan upplevelsehändelsen innehålla information som behövs för att skicka det första bekräftelsemeddelandet (förnamn, efternamn, e-postadress osv.).
 
-### Läs målgrupp {#read-segment-g}
+### Läsa målgrupper {#read-segment-g}
 
 * Direktuppspelade målgrupper är alltid uppdaterade, men batchmålgrupper beräknas inte vid hämtningen. De utvärderas endast varje dag vid den dagliga grupputvärderingen.
 * För resor som använder aktiviteten Läs målgrupp finns det ett maximalt antal resor som kan påbörjas exakt samtidigt. Nya försök kommer att utföras av systemet men undvik att ha fler än fem resor (med Läs publik, schemalagd eller starta&quot;så snart som möjligt&quot;) med början vid exakt samma tidpunkt genom att sprida dem över tiden, till exempel med 5 till 10 minuters mellanrum.
@@ -165,7 +165,7 @@ Leveransflödet motsvarar antalet beslutssvar som kan levereras av beslutsstyrni
 | API | Beslut per sekund |
 |---------|----------|
 | API-begäranden för beslut | 500 per sekund |
-| API-begäranden för Edge Decision | 5 000 per sekund |
+| API-begäranden för Edge Decision | 1 500 per sekund |
 
 ### Begränsningar {#offers-limitations}
 
