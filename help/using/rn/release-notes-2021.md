@@ -7,15 +7,16 @@ feature: Release Notes
 topic: Content Management
 role: User
 level: Beginner, Intermediate
+hidefromtoc: true
 exl-id: 0e43be98-f471-4860-be84-8f99ab93e983
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+source-git-commit: 4461100b19bd84a75f036e300e88c47b9b20db9b
 workflow-type: tm+mt
-source-wordcount: '2065'
-ht-degree: 9%
+source-wordcount: '2075'
+ht-degree: 7%
 
 ---
 
-# Versionsinformation för 2021 {#release-notes-2021}
+# Versionsinformation 2021 {#release-notes-2021}
 
 På den här sidan visas alla funktioner och förbättringar för [!DNL Journey Optimizer] släppt 2021.
 
@@ -95,7 +96,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 * **Dataformat i global vy** - Nu kan du växla mellan siffror och procenttal i dialogrutan **Global vy** i **Körning** -fliken.
 
 
-**Administrering**
+**Administration**
 
 * **Redigera meddelandeförinställningar** - Nu kan du redigera meddelandeförinställningar och övervaka deras uppdateringsstatus. [Läs mer](../configuration/channel-surfaces.md#edit-channel-surface)
 * **Redigera PTR-poster** - Nu kan du redigera PTR-poster och övervaka deras uppdateringsstatus. [Läs mer](../configuration/ptr-records.md#edit-ptr-record)
@@ -287,9 +288,9 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 * **Tillåtelselista** - tillåtelselista kan nu aktiveras och inaktiveras på en icke-produktionssandlåda via ett API-anrop. [Läs mer](../configuration/allow-list.md#enable-allow-list)
 * **Navigering** - Suppressionslistan, som var tillgänglig under **Administration > Kanaler > E-postkonfiguration > Allmänt** har flyttats till den nya menyn **Undertryckningslista** undermeny, som samlar alla relaterade funktioner för enklare åtkomst. [Läs mer](../configuration/manage-suppression-list.md#access-suppression-list)
 
-**Beslutshantering**
+**Beslutsledning**
 
-* Sättet på vilket du lägger till och konfigurerar representationer när du skapar ett erbjudande har uppdaterats för att förbättra användarupplevelsen. Specifikt visas nu resursbiblioteket endast när du definierar innehåll med bilder för en representation. [Läs mer](../offers/offer-library/creating-personalized-offers.md#representations)
+* Sättet på vilket du lägger till och konfigurerar representationer när du skapar ett erbjudande har uppdaterats för att förbättra användarupplevelsen. Resursbiblioteket visas nu endast när du definierar bildtypsinnehåll för en representation. [Läs mer](../offers/offer-library/creating-personalized-offers.md#representations)
 
 ### Korrigeringar
 

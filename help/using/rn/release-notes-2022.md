@@ -7,15 +7,16 @@ feature: Release Notes
 topic: Content Management
 role: User
 level: Beginner, Intermediate
+hidefromtoc: true
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
-source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
+source-git-commit: 4461100b19bd84a75f036e300e88c47b9b20db9b
 workflow-type: tm+mt
 source-wordcount: '3603'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
-# Versionsinformation för 2022 {#release-notes-2022}
+# Versionsinformation 2022 {#release-notes-2022}
 
 På den här sidan visas alla funktioner och förbättringar för [!DNL Journey Optimizer] släppt 2022.
 
@@ -51,7 +52,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 * The **Tvinga återinträde vid upprepning** har lagts till i återkommande parametrar för lässchema. Med det här alternativet kan du göra så att alla profiler som fortfarande finns i resan automatiskt avslutar den vid nästa körning. När alternativet är inaktiverat måste profilerna slutföra resan innan de kan återkomma i en annan förekomst. [Läs mer](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
 
-**Administrering**
+**Administration**
 
 * Ett meddelande lades till i användargränssnittet för att varna för att underdomäner, underdomäner för landningssidor, PTR-poster och IP-poolkonfigurationer är gemensamma för alla sandlådor och därför kommer ändringar i någon av dessa konfigurationer även att påverka produktionssandlådorna.
 * Stegen för att överföra undertryckningslistan som en CSV-fil från användargränssnittet har ändrats. [Läs mer](../configuration/manage-suppression-list.md#download-suppression-list)
@@ -213,7 +214,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 * The **Enhetsdatauppsättning** finns nu som en färdig datauppsättning i Adobe Journey Optimizer. Den här uppslagsuppsättningen innehåller metadata som berikar informationen om spårnings- och feedbackdatauppsättningar. Detta hjälper er att förbättra era rapporter och frågor med mer begripliga data. [Läs mer](../data/datasets-query-examples.md#entity-dataset)
 * Ett nytt skyddsräcke har lagts till för enstaka resor (med början vid en händelse eller en målgruppskompetens) för att förhindra att resor utlöses felaktigt flera gånger för samma händelse. Återinträde av profiler blockeras nu tillfälligt som standard i 5 minuter. [Läs mer](../start/guardrails.md#events-g)
 
-**Administrering**
+**Administration**
 
 * När du aktiverar eller inaktiverar tillåtelselista visas nu en ny varning som detaljerar effekterna av varje åtgärd. [Läs mer](../configuration/allow-list.md#enable-allow-list)
 * Användargränssnittet för att skapa kanalytor, skapa IP-pooler, hantera suppressionslistan och tillåtelselista samt konfigurera SMS-kanalen har uppdaterats.
@@ -303,13 +304,13 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 ### Förbättringar
 
-**Rapporter**
+**Rapportering**
 
 * Policytabell och diagram för samtycke finns nu tillgängliga i globala rapporter om resor. Med dessa widgetar kan du spåra de uteslutna profilerna från profilerna i dina anpassade åtgärder. [Läs mer](../reports/journey-global-report.md#journey-global)
 
   Observera att du måste återställa de olika rapportinstrumentpanelerna för att få tillgång till de senaste widgetarna. Mer information om anpassning av kontrollpanelen finns i [den detaljerade dokumentationen](../reports/global-report.md).
 
-**Administrering**
+**Administration**
 
 * Det går nu att uppdatera det primära telefonnumret som ska användas för SMS-kanalen. [Läs mer](../configuration/primary-email-addresses.md)
 
@@ -400,7 +401,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 * Meddelandeförinställningar är nu **kanalytor**. [Läs mer](../configuration/channel-surfaces.md)
 
-**Administrering**
+**Administration**
 
 * **PTR-postversion** - När du nu uppdaterar en PTR-post tar bearbetningstiden endast upp till 3 timmar. [Läs mer](../configuration/ptr-records.md#processing)
 
@@ -521,7 +522,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 * **Spara som mall** - Du kan nu spara ett e-postinnehåll som en mall och återanvända det när du skapar andra meddelanden. [Läs mer](../content-management/content-templates.md#save-as-template)
 
 
-**Administrering**
+**Administration**
 
 * **URL-parametrar för förhandsspårning** - När du konfigurerar en meddelandeförinställning och definierar parametrar för URL-spårning, visas nu en dynamisk förhandsgranskning av den resulterande spårnings-URL:en. [Läs mer](../email/email-settings.md#url-tracking)
 
@@ -622,7 +623,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 * **Läsa målgrupper** - En bild Läs målgruppsresor går nu över till slutstatus 30 dagar efter det att resan har slutförts. För schemalagda läsningsmålgrupper är det 30 dagar efter att den senaste förekomsten har körts. [Läs mer](../building-journeys/read-audience.md)
 * **Uttrycksredigerare** - [limit](../building-journeys/functions/functionlimit.md) -funktionen har lagts till så att du kan begränsa antalet objekt i en lista. The [sortera](../building-journeys/functions/functionsort.md) kan du nu sortera ut ett listobjekt. Stödet för listObject har också lagts till i [diskurkt](../building-journeys/functions/functiondistinct.md) och [clearWithNull](../building-journeys/functions/functiondistinctwithnull.md) funktioner.
 
-**Administrering**
+**Administration**
 
 * **Uppdatering av kontrollpanelen för licensanvändning** - Kontrollpanelen för licensanvändning finns i [!DNL Adobe Journey Optimizer] användargränssnittet återspeglar nu det korrekta värdet för **Licensierad** Genomsnittlig profilrikedom. Du kommer att se en minskning i den här måttvisningen, vilket innebär att licensgränsen nu rapporteras korrekt. [Läs mer](../audience/license-usage.md)
 
@@ -641,7 +642,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 * **Besluts-API på Edge** - Edge Decisioning API kan leverera och återge personaliserade erbjudanden som hanteras i beslutsprocessen. Du kan skapa erbjudanden och andra relaterade objekt med hjälp av användargränssnittet (UI) eller API:erna för beslutshanteringen. [Läs mer](../offers/api-reference/offer-delivery-api/edge-decisioning-api.md)
 
-**Administrering**
+**Administration**
 
 * **PTR-varaktighet** - Tidslängden för PTR-redigering är nu några timmar. [Läs mer](../configuration/ptr-records.md#processing)
 
@@ -679,7 +680,7 @@ Som Adobe Campaign Standard-kund kan du nu skicka e-post, push-meddelanden och S
 * Du kan nu ange om begränsningen av erbjudanden ska gälla för alla användare eller för en viss profil, och för alla placeringar eller per placering. [Läs mer](../offers/offer-library/add-constraints.md#capping)
 * Med API:t för gruppbeslut kan organisationer använda beslutsfunktioner för alla profiler i en viss målgrupp i ett enda anrop. Erbjudandeinnehållet för varje profil i målgruppen placeras i en AEP-datauppsättning där det är tillgängligt för anpassade batcharbetsflöden. [Läs mer](../offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
 
-**Administrering**
+**Administration**
 
 * Du kan nu aktivera/inaktivera länken för att avbryta prenumerationen i/från e-posthuvudet på den förinställda meddelandenivån och ange en anpassad URL för att avbryta prenumerationen på meddelandenivån. [Läs mer](../configuration/channel-surfaces.md#list-unsubscribe)
 * Tillåtelselista kan nu aktiveras och inaktiveras via [!DNL Journey Optimizer] gränssnitt för produktions- och icke-produktionssandlådor. [Läs mer](../configuration/allow-list.md#enable-allow-list)
@@ -767,7 +768,7 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 * För att optimera prestandan kommer alla resor i testläge som inte har utlösts på en vecka nu att återgå till statusen Utkast. [Läs mer](../building-journeys/testing-the-journey.md#important_notes)
 * Integrationen mellan Journey Optimizer och Adobe Campaign v7/v8 har optimerats för att förbättra prestandan. Standardkonfigurationen för begränsning har ändrats till 4 000 anrop/5 minuter. [Läs mer](../action/acc-action.md#important-notes)
 
-**Rapporter**
+**Rapportering**
 
 * Leveranser kan nu filtreras beroende på status:
    * I listan Meddelandekörning kan du nu utesluta korrektur från leveranslistan.
@@ -829,7 +830,7 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 
 * När du simulerar vilka erbjudanden som ska levereras för en viss testprofil kan du nu ändra standardsimuleringsinställningarna och visa koden som motsvarar dina simuleringar som kan användas i felsökningssyfte. [Läs mer](../offers/offer-activities/simulation.md#define-simulation-settings)
 
-**Administrering**
+**Administration**
 
 * Administratörer kan nu redigera PTR-poster med en CNAME-konfigurerad underdomän. [Läs mer](../configuration/ptr-records.md#edit-ptr-subdomains-cname)
 
