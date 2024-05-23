@@ -8,13 +8,11 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration, underdomän
-hide: true
-hidefromtoc: true
-badge: label="Beta"
+badge: label="Begränsad tillgänglighet"
 exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
-source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
+source-git-commit: 2cd62c97bef156d0c1e7dda8a962be789f8131de
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
@@ -25,7 +23,7 @@ För större flexibilitet och bättre kontroll över e-postinställningarna [!DN
 
 >[!AVAILABILITY]
 >
->Den här funktionen är för närvarande endast tillgänglig som betaversion för utvalda användare. <!--To join the beta program, contact Adobe Customer Care.-->
+>Personalisering av e-postytor är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
 ## Lägg till dynamiska underdomäner {#dynamic-subdomains}
 
