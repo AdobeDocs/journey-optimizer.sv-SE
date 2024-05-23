@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 815595f907ed3ea05b7772a1df96187509351bf9
+source-git-commit: 2b31a75595e076bfac2023f8e58ddfbcc14bace1
 workflow-type: tm+mt
-source-wordcount: '5286'
-ht-degree: 13%
+source-wordcount: '5331'
+ht-degree: 12%
 
 ---
 
@@ -21,14 +21,16 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 
 ## Maj 2024 {#may-2024}
 
-* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Versionen från 24 april finns detaljerad i dokumentationen. [Läs mer](release-notes.md)
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version från 24 maj finns utförlig i dokumentationen. [Läs mer](release-notes.md)
 * Avsnittet om utsädeslistor har uppdaterats när det gäller återkommande resor. [Läs mer](../configuration/seed-lists.md#use-seed-list)
 * Avsnittet om externa datakällor har uppdaterats. [Läs mer](../datasource/external-data-sources.md#custom-authentication-access-token)
 * Tidsgränsen för den globala resan på 30 dagar har lagts till på sidan Guardrail och prefix. [Läs mer](../start/guardrails.md#journeys-guardrails-journeys)
 * Avsnittet om integreringen av Adobe Campaign v7/v8 har uppdaterats med information om etablering. [Läs mer](../action/acc-action.md#access)
+* Den uttrycksredigerare som används för att anpassa innehåll har bytt namn i dokumentationen till&quot;personaliseringsredigerare&quot; för att tydligt skilja det från [Redigerare för reseuttryck](../building-journeys/expression/expressionadvanced.md). [Läs mer](../personalization/personalization-build-expressions.md)
 
 ## April 2024 {#april-2024}
 
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Versionen från 24 april finns detaljerad i dokumentationen. [Läs mer](release-notes.md#apr-2024)
 * Konfigurationsstegen för meddelanden i programmet har beskrivits. [Läs mer](../in-app/inapp-configuration.md)
 * Dokumentation för [Offer decisioning-API:er](../offers/api-reference/offer-delivery-api/decisioning-api.md) och [API:er för gruppbeslut](../offers/api-reference/offer-delivery-api/batch-decisioning-api.md) har uppdaterats.
 * Information har lagts till i dokumentationen för beslutshantering om hantering av edge- och navregioner när frekvensbegränsning används med Edge Decisioning API. [Läs mer](../offers/offer-library/add-constraints.md#frequency-capping)
@@ -41,7 +43,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 ## Mars 2024 {#march-2024}
 
 * Ett avsnitt med vanliga frågor och svar har lagts till som åtgärdar vanliga frågor om användningen av målgruppssammansättning och anpassade målgrupper för uppladdning i Journey Optimizer. [Läs mer](../audience/about-audiences.md#faq)
-* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Mars 24-utgåvan finns utförlig i dokumentationen. [Läs mer](release-notes.md)
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Mars 24-utgåvan finns utförlig i dokumentationen. [Läs mer](release-notes.md#mar-2024)
 * Sidan om profilingångshantering har förbättrats. [Läs mer](../building-journeys/entry-management.md)
 * Felsökningsinformation har lagts till på sidan Varningar. [Läs mer](../reports/alerts.md#alert-troubleshooting)
 * Information om aktiviteten Vänta har lagts till på sidan om reserapporter. [Läs mer](../reports/sharing-overview.md)
@@ -58,12 +60,12 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 
 ## Februari 2024 {#feb-2024}
 
-* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version 24 från februari 2008 finns utförlig i dokumentationen. [Läs mer](release-notes.md)
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version 24 från februari 2008 finns utförlig i dokumentationen. [Läs mer](release-notes.md#feb-2024)
 * Integrationen mellan Journey Optimizer och Workfront har lagts till på integreringssidan. [Läs mer](../start/ajo-integrations.md)
 * Information har lagts till om hur man personaliserar offerternas representationer baserat på kontextdata. [Läs mer](../offers/offer-library/add-representations.md#context-data)
 * Sidan med skyddsförslag har uppdaterats med en anteckning om anpassade åtgärder som endast stöder JSON-format när nyttolasterna för begäran eller svar används. [Läs mer](../start/guardrails.md#custom-actions-g)
 * Ytterligare information har lagts till om den grundläggande autentiseringstypen i externa datakällor. [Läs mer](../datasource/external-data-sources.md)
-* En anmärkning har lagts till för att tydligt skilja [Redigerare för reseuttryck](../building-journeys/expression/expressionadvanced.md) från [Personaliseringsredigerare](../personalization/functions/functions.md).
+* En anmärkning har lagts till för att tydligt skilja [Redigerare för reseuttryck](../building-journeys/expression/expressionadvanced.md) från [personaliseringsredigerare](../personalization/functions/functions.md).
 * Listan med funktioner i den avancerade uttrycksredigeraren har uppdaterats. [Läs mer](../building-journeys/expression/functions.md)
 * Sidan i funktionen Dela har uppdaterats. [Läs mer](../building-journeys/functions/functioninaudience.md)
 * Information har lagts till om effekten av push-meddelanden för anmälan eller avanmälan av meddelanden i appen. [Läs mer](../in-app/create-in-app.md)
