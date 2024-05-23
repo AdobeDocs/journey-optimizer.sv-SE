@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
 source-wordcount: '894'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms"
 >title="Skapa ett textmeddelande"
->abstract="Om du vill skapa ett textmeddelande (SMS/MMS) lägger du till en SMS-åtgärd i en resa eller kampanj och börjar anpassa den med uttrycksredigeraren."
+>abstract="Om du vill skapa ett textmeddelande (SMS/MMS) lägger du till en SMS-åtgärd i en resa eller kampanj och börjar personalisera den med personaliseringsredigeraren."
 
 Du kan utforma och skicka SMS- och MMS-meddelanden med Adobe Journey Optimizer. Du måste först lägga till en SMS-åtgärd på en resa eller i en kampanj och sedan definiera innehållet i textmeddelandet, enligt beskrivningen nedan. Adobe Journey Optimizer har också funktioner för att testa textmeddelanden innan de skickas, så att du kan kontrollera återgivning, anpassningsattribut och alla andra inställningar.
 
@@ -57,7 +57,7 @@ Nu kan du börja designa ditt SMS-meddelande via **[!UICONTROL Edit content]** s
 
    ![](assets/sms_create_3.png)
 
-1. Klicka på **[!UICONTROL Create]**.
+1. Klicka **[!UICONTROL Create]**.
 
 1. Från **[!UICONTROL Properties]** redigerar du Campaigns **[!UICONTROL Title]** och **[!UICONTROL Description]**.
 
@@ -79,7 +79,7 @@ Nu kan du börja designa ditt SMS-meddelande via **[!UICONTROL Edit content]** s
 
    * En gång
    * Dagligen
-   * Veckovis
+   * Vecka
    * Månad
 
 Nu kan du börja designa textmeddelandets innehåll från **[!UICONTROL Edit content]** som beskrivs nedan.
@@ -91,17 +91,17 @@ Nu kan du börja designa textmeddelandets innehåll från **[!UICONTROL Edit con
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms_content"
 >title="Definiera ditt SMS-innehåll"
->abstract="Anpassa och anpassa dina textmeddelanden (SMS/MMS) genom att använda uttrycksredigeraren för att definiera innehållet och införliva dynamiska element."
+>abstract="Anpassa och anpassa dina textmeddelanden (SMS/MMS) genom att använda personaliseringsredigeraren för att definiera innehållet och införliva dynamiska element."
 
 Följ stegen nedan för att konfigurera ditt SMS-innehåll. Inställningarna för MMS finns i [det här avsnittet](#mms-content).
 
 1. Klicka på **[!UICONTROL Edit content]** för att konfigurera textmeddelandets innehåll.
 
-1. Klicka på **[!UICONTROL Message]** för att öppna uttrycksredigeraren.
+1. Klicka på **[!UICONTROL Message]** för att öppna personaliseringsredigeraren.
 
    ![](assets/sms-content.png)
 
-1. Använd uttrycksredigeraren för att definiera innehåll, lägga till personalisering och dynamiskt innehåll. Du kan använda alla attribut, till exempel profilnamnet eller stad. Du kan också definiera villkorliga regler. Bläddra till följande sidor om du vill veta mer om [personalisering](../personalization/personalize.md) och [dynamiskt innehåll](../personalization/get-started-dynamic-content.md) i uttrycksredigeraren.
+1. Använd personaliseringsredigeraren för att definiera innehåll, lägga till personalisering och dynamiskt innehåll. Du kan använda alla attribut, till exempel profilnamnet eller stad. Du kan också definiera villkorliga regler. Bläddra till följande sidor om du vill veta mer om [personalisering](../personalization/personalize.md) och [dynamiskt innehåll](../personalization/get-started-dynamic-content.md) i personaliseringsredigeraren.
 
 1. När du har definierat innehållet kan du lägga till spårade URL:er i meddelandet. Om du vill göra det går du till **[!UICONTROL Helper functions]** meny och välj **[!UICONTROL Helpers]**.
 

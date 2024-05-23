@@ -12,7 +12,7 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
-source-git-commit: 56c2708408d15286f008c9f2c16581ce0f0a1c4e
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 0%
@@ -37,7 +37,7 @@ För större flexibilitet och bättre kontroll över e-postinställningarna [!DN
 >[!CONTEXTUALHELP]
 >id="ajo_surface_dynamic_subdomain"
 >title="Aktivera dynamiska underdomäner"
->abstract="När du skapar en e-postyta kan du konfigurera dynamiska underdomäner baserat på villkor som du definierar med hjälp av uttrycksredigeraren. Du kan lägga till upp till 50 dynamiska underdomäner."
+>abstract="När du skapar en e-postyta kan du konfigurera dynamiska underdomäner baserat på villkor som du definierar med personaliseringsredigeraren. Du kan lägga till upp till 50 dynamiska underdomäner."
 
 >[!CONTEXTUALHELP]
 >id="ajo_surface_dynamic_subdomain_list"
@@ -65,7 +65,7 @@ Följ stegen nedan för att definiera dynamiska underdomäner i en e-postkanal.
 
 1. Välj redigeringsikonen bredvid den första **[!UICONTROL Condition]** fält.
 
-1. The [Uttrycksredigeraren](../personalization/personalization-build-expressions.md) öppnas. I det här exemplet anger du ett villkor som `Country` är lika med `US`.
+1. The [personaliseringsredigerare](../personalization/personalization-build-expressions.md) öppnas. I det här exemplet anger du ett villkor som `Country` är lika med `US`.
 
    ![](assets/surface-email-edit-condition.png)
 
@@ -118,7 +118,7 @@ Följ stegen nedan om du vill använda personaliserade variabler för sidhuvudsp
 
    ![](assets/surface-email-personalize-header.png)
 
-1. The [Uttrycksredigeraren](../personalization/personalization-build-expressions.md) öppnas. Definiera ditt tillstånd så som du vill ha det och spara dina ändringar.
+1. The [personaliseringsredigerare](../personalization/personalization-build-expressions.md) öppnas. Definiera ditt tillstånd så som du vill ha det och spara dina ändringar.
 
    Ange till exempel ett villkor som varje mottagare får ett e-postmeddelande från sin egen varumärkesrepresentant.
 
@@ -137,7 +137,7 @@ Följ stegen nedan om du vill använda personaliserade variabler för sidhuvudsp
 
 To use personalized URL tracking prameters, follow the steps below.
 
-1. Select the profile attribute of your choice from the expression editor.
+1. Select the profile attribute of your choice from the personalization editor.
 
 1. Repeat the steps above for each tracking parameter you want to personalize.
 
@@ -150,9 +150,9 @@ När du använder en yta med personaliserade inställningar i en kampanj eller e
 
 1. Skapa ett e-postmeddelande [kampanj](../campaigns/create-campaign.md) eller [resa](../building-journeys/journey-gs.md).
 
-1. Markera knappen **[!UICONTROL Edit content]**.
+1. Välj **[!UICONTROL Edit content]** -knappen.
 
-1. Klicka på knappen **[!UICONTROL View surface details]**.
+1. Klicka på **[!UICONTROL View surface details]** -knappen.
 
    ![](assets/campaign-view-surface-details.png)
 

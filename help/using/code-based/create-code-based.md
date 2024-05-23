@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: 5ce388e5d86950e5cc6b173aab48225825f1c648
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampa
 
 1. Slutför stegen för att skapa en kampanj, t.ex. kampanjegenskaperna, [publik](../audience/about-audiences.md)och [schema](../campaigns/create-campaign.md#schedule). Mer information om hur du konfigurerar en kampanj finns i [den här sidan](../campaigns/get-started-with-campaigns.md).
 
-1. Redigera ditt innehåll med uttrycksredigeraren. [Läs mer](#edit-code)
+1. Redigera ditt innehåll med personaliseringsredigeraren. [Läs mer](#edit-code)
 
    ![](assets/code-based-campaign-edit-content.png)
 
@@ -47,15 +47,15 @@ Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampa
 
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_experience"
->title="Använda uttrycksredigeraren"
+>title="Använda personaliseringsredigeraren"
 >abstract="Infoga och redigera koden som du vill leverera som en del av den här kodbaserade upplevelseåtgärden."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/expression-editor/personalization-build-expressions.html" text="Kom igång med uttrycksredigeraren"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/expression-editor/personalization-build-expressions.html" text="Kom igång med personaliseringsredigeraren"
 
 1. Välj **[!UICONTROL Edit code]**.
 
    ![](assets/code-based-campaign-edit-code.png)
 
-1. The [Uttrycksredigerare](../personalization/personalization-build-expressions.md) öppnas. Det är ett gränssnitt för att skapa icke-visuella upplevelser som gör att du kan skapa koden.
+1. The [personaliseringsredigerare](../personalization/personalization-build-expressions.md) öppnas. Det är ett gränssnitt för att skapa icke-visuella upplevelser som gör att du kan skapa koden.
 
 1. Du kan växla mellan redigeringsläget HTML och JSON, och vice versa.
 
@@ -65,7 +65,7 @@ Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampa
    >
    >Om du ändrar redigeringsläget förlorar du all aktuell kod, så se till att växla läge innan du börjar redigera.
 
-1. Ange koden efter behov. Du kan använda [!DNL Journey Optimizer] Uttrycksredigeraren med alla dess funktioner för personalisering och redigering. [Läs mer](../personalization/personalization-build-expressions.md)
+1. Ange koden efter behov. Du kan använda [!DNL Journey Optimizer] personaliseringsredigerare med alla dess funktioner för personalisering och redigering. [Läs mer](../personalization/personalization-build-expressions.md)
 
 1. Du kan lägga till HTML eller JSON-uttrycksfragment om det behövs. [Lär dig mer](../personalization/use-expression-fragments.md)
 
@@ -97,7 +97,7 @@ Följ stegen nedan för att visa en förhandsgranskning av din ändrade kodbaser
 >
 >Du måste ha testprofiler tillgängliga för att simulera vilka erbjudanden som ska levereras till dem. Lär dig hur [skapa testprofiler](../audience/creating-test-profiles.md).
 
-1. Välj från antingen uttrycksredigeraren eller redigeringsskärmen för innehåll **[!UICONTROL Simulate content]**.
+1. Välj **[!UICONTROL Simulate content]**.
 
    ![](assets/code-based-campaign-simulate.png)
 

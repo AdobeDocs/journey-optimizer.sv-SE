@@ -7,10 +7,10 @@ role: User
 level: Beginner
 keywords: direktreklam, meddelande, kampanj
 exl-id: 6b438268-d983-4ab8-9276-c4b7de74e6bd
-source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 3%
+source-wordcount: '676'
+ht-degree: 0%
 
 ---
 
@@ -67,7 +67,7 @@ Nu kan du börja konfigurera extraheringsfilen som ska skickas till din direktme
 >[!CONTEXTUALHELP]
 >id="ajo_direct_mail_formatting"
 >title="Filformatering för extrahering"
->abstract="För varje fält anger du en etikett och den information som ska visas med Uttrycksredigeraren. <br/><br/> The <b>Sortera efter</b> kan du använda det markerade fältet för att sortera extraheringsfilens kolumner."
+>abstract="För varje fält anger du en etikett och den information som ska visas med personaliseringsredigeraren. <br/><br/> The <b>Sortera efter</b> kan du använda det markerade fältet för att sortera extraheringsfilens kolumner."
 
 1. Konfigurera kolumnerna och den information som ska visas i extraheringsfilen:
 
@@ -75,7 +75,7 @@ Nu kan du börja konfigurera extraheringsfilen som ska skickas till din direktme
 
    1. The **[!UICONTROL Formatting]** visas till höger så att du kan ställa in den markerade kolumnen. Ange en **[!UICONTROL Label]** för kolumnen.
 
-   1. I **[!UICONTROL Data]** väljer du de profilattribut som ska visas med [Uttrycksredigeraren](../personalization/personalization-build-expressions.md).
+   1. I **[!UICONTROL Data]** väljer du de profilattribut som ska visas med [personaliseringsredigerare](../personalization/personalization-build-expressions.md).
 
    1. Om du vill sortera extraheringsfilen med en kolumn markerar du kolumnen och växlar på **[!UICONTROL Sort by]** alternativ. The **[!UICONTROL Sort By]** visas bredvid kolumnens etikett i dialogrutan **[!UICONTROL Data Fields]** -avsnitt.
 
@@ -95,7 +95,7 @@ Extraheringsfilen krävs av direktreklamleverantörer för att skicka e-post til
 
    1. Om du vill kan du aktivera **[!UICONTROL Append timestamp to export filename]** om du vill lägga till en automatisk tidsstämpel till det angivna filnamnet.
 
-   1. Ibland kan du behöva lägga till information i början eller slutet av extraheringsfilen.  Använd **[!UICONTROL Notes]** anger du sedan om du vill ta med anteckningen som sidhuvud eller sidfot.
+   1. Ibland kan du behöva lägga till information i början eller slutet av extraheringsfilen. Använd **[!UICONTROL Notes]** anger du sedan om du vill ta med anteckningen som sidhuvud eller sidfot.
 
       ![](assets/direct-mail-properties.png){width="800" align="center"}
 
@@ -105,7 +105,7 @@ Extraheringsfilen krävs av direktreklamleverantörer för att skicka e-post til
 
    1. The **[!UICONTROL Formatting]** visas till höger så att du kan ställa in den markerade kolumnen. Ange en **[!UICONTROL Label]** för kolumnen.
 
-   1. I **[!UICONTROL Data]** väljer du de profilattribut som ska visas med [Uttrycksredigeraren](../personalization/personalization-build-expressions.md).
+   1. I **[!UICONTROL Data]** väljer du de profilattribut som ska visas med [personaliseringsredigerare](../personalization/personalization-build-expressions.md).
 
    1. Om du vill sortera extraheringsfilen med en kolumn markerar du kolumnen och växlar på **[!UICONTROL Sort by]** alternativ. The **[!UICONTROL Sort By]** visas bredvid kolumnens etikett i dialogrutan **[!UICONTROL Data Fields]** -avsnitt.
 

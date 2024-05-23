@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, publicering
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: 7122dff12aea6c5954087e2667b28bbc9f7695de
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 0%
@@ -158,7 +158,7 @@ Följ stegen nedan för att definiera inställningarna för den primära sidan.
 
    ![](assets/lp_expiry-date.png)
 
-1. I **[!UICONTROL Additional data]** definierar du en eller flera nycklar och deras motsvarande parametervärden. Du kan använda dessa tangenter i innehållet på din primära sida och dina underordnade sidor med [Uttrycksredigerare](../personalization/personalization-build-expressions.md). Läs mer i [det här avsnittet](lp-content.md#use-form-component#use-additional-data).
+1. I **[!UICONTROL Additional data]** definierar du en eller flera nycklar och deras motsvarande parametervärden. Du kan använda dessa tangenter i innehållet på din primära sida och dina underordnade sidor med [personaliseringsredigerare](../personalization/personalization-build-expressions.md). Läs mer i [det här avsnittet](lp-content.md#use-form-component#use-additional-data).
 
    ![](assets/lp_create-lp-additional-data.png)
 

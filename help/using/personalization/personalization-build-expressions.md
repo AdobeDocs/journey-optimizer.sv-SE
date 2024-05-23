@@ -1,31 +1,31 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Om uttrycksredigeraren
-description: Lär dig arbeta med uttrycksredigeraren.
+title: Om personaliseringsredigeraren
+description: Lär dig arbeta med personaliseringsredigeraren.
 feature: Personalization
 topic: Personalization
 role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, om, start
 exl-id: 1ac2a376-a3a8-41ae-9b04-37886697f0fc
-source-git-commit: 2edff0123084fa1736fb8198c3b4e8ff4e40341d
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
 
 ---
 
-# Kom igång med uttrycksredigeraren {#build-personalization-expressions}
+# Kom igång med personaliseringsredigeraren {#build-personalization-expressions}
 
 >[!CONTEXTUALHELP]
 >id="ajo_perso_editor"
->title="Om uttrycksredigeraren"
->abstract="Med uttrycksredigeraren kan du välja, ordna, anpassa och validera alla data för att skapa en anpassad personalisering för ditt innehåll."
+>title="Om personaliseringsredigeraren"
+>abstract="Med personaliseringsredigeraren kan du välja, ordna, anpassa och validera alla data för att skapa en anpassad personalisering för ditt innehåll."
 
-Uttrycksredigeraren är navet i personaliseringen i [!DNL Journey Optimizer]. Det finns i alla sammanhang där du behöver definiera personalisering som e-post, push och erbjudanden.
+Personaliseringsredigeraren är navet i personaliseringen i [!DNL Journey Optimizer]. Det finns i alla sammanhang där du behöver definiera personalisering som e-post, push och erbjudanden.
 
-I gränssnittet för uttrycksredigeraren väljer, ordnar, anpassar och validerar du alla data för att skapa en anpassad personalisering för ditt innehåll.
+I personaliseringsredigeringsgränssnittet väljer, ordnar, anpassar och validerar du alla data för att skapa en anpassad personalisering för ditt innehåll.
 
 ![](assets/perso_ee1.png)
 
@@ -57,4 +57,4 @@ I följande exempel kan du välja de profiler som har sin födelsedag i dag och 
 
 ![](assets/perso_ee2.png)
 
-När personaliseringsuttrycket är klart måste det valideras av uttrycksredigeraren. Läs mer i [det här avsnittet](personalization-validation.md).
+När personaliseringsuttrycket är klart måste det valideras av personaliseringsredigeraren. Läs mer i [det här avsnittet](personalization-validation.md).

@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 2ebbcd7d-dcfc-4528-974d-6230fc0dca3d
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 2%
+source-wordcount: '688'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="ajo_message_push"
 >title="Skapa push-meddelanden"
->abstract="Lägg till ditt push-meddelande och börja personalisera det med uttrycksredigeraren."
+>abstract="Lägg till ditt push-meddelande och börja personalisera det med personaliseringsredigeraren."
 
 ## Skapa push-meddelanden i en resa eller kampanj {#create}
 
@@ -58,7 +58,7 @@ Följ stegen nedan för att skapa ett push-meddelande:
 
    ![](assets/push_create_3.png)
 
-1. Klicka på **[!UICONTROL Create]**.
+1. Klicka **[!UICONTROL Create]**.
 
 1. Från **[!UICONTROL Properties]** redigerar du Campaigns **[!UICONTROL Title]** och **[!UICONTROL Description]**.
 
@@ -78,7 +78,7 @@ Följ stegen nedan för att skapa ett push-meddelande:
 
    * En gång
    * Dagligen
-   * Veckovis
+   * Vecka
    * Månadsvis
 
 1. På skärmen för kampanjkonfiguration klickar du på **[!UICONTROL Edit content]** för att konfigurera push-innehållet. [Utforma ett push-meddelande](design-push.md)
