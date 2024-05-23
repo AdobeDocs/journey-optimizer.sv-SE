@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 hidefromtoc: true
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
-source-git-commit: 4461100b19bd84a75f036e300e88c47b9b20db9b
+source-git-commit: e34c39c02f71361277f28b1a116a54390875f93d
 workflow-type: tm+mt
-source-wordcount: '3603'
+source-wordcount: '3598'
 ht-degree: 7%
 
 ---
@@ -796,7 +796,7 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 <tr>
 <td>
 <p>När en <strong>Villkor</strong> -aktivitet på en resa kan du nu definiera en profilövre gräns. Med den här nya villkorstypen kan du ange ett maximalt antal profiler för en resväg. När den här gränsen nås får de inmatade profilerna en alternativ sökväg. Detta gör att du kan öka volymen på dina leveranser (IP-förstärkning). Du kan till exempel vilja förbättra leveransen på en domän genom att dela upp körningen: skicka 1 000 meddelanden dag 1, 2 000 dag 2 osv.</p>
-<p>Mer information finns i <a href="../building-journeys/condition-activity.md#profile_cap">detaljerad dokumentation</a> och relaterade <a href="../building-journeys/ramp-up-deliveries-uc.md">exempel</a>.</p>
+<p>Mer information finns i den <a href="../building-journeys/condition-activity.md#profile_cap">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>

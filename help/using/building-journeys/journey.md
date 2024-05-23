@@ -8,10 +8,10 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, upptäckt, komma igång
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: e34c39c02f71361277f28b1a116a54390875f93d
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 1%
+source-wordcount: '605'
+ht-degree: 0%
 
 ---
 
@@ -57,7 +57,7 @@ Läs mer i [det här avsnittet](using-the-journey-designer.md).
 Som datatekniker beskrivs stegen för att konfigurera dina resor, inklusive datakällor, händelser och åtgärder i [det här avsnittet](../configuration/about-data-sources-events-actions.md).
 
 
-## Användningsfall{#uc-journey}
+## Användningsexempel{#uc-journey}
 
 Lär dig hur du bygger resor i följande situationer:
 
@@ -70,12 +70,11 @@ Affärsexempel:
 Tekniska användningsfall:
 
 * [Skicka samlingar dynamiskt med anpassade åtgärder](collections.md)
-* [Rita upp leveranser](ramp-up-deliveries-uc.md)
 * [Begränsa genomströmning med externa datakällor och anpassade åtgärder](limit-throughput.md)
 
 ## Reseversioner{#journey-versions}
 
-I reselistan visas alla reseversioner med versionsnumret. Läs [den här sidan](../building-journeys/using-the-journey-designer.md).
+I reselistan visas alla reseversioner med versionsnumret. Se [den här sidan](../building-journeys/using-the-journey-designer.md).
 
 När du söker efter en resa visas de senaste versionerna högst upp i listan första gången programmet öppnas. Sedan kan du definiera den sortering som du vill ha så att programmet behåller den som en användarinställning. Färdens version visas också överst i reseupplagans gränssnitt, ovanför arbetsytan.
 
