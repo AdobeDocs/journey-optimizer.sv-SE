@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 3847ac1d-2c0a-4f80-8df9-e8e304faf261
-source-git-commit: 59412ecbb8df74c7185b67593131c610d6da4148
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1074'
 ht-degree: 1%
 
 ---
@@ -128,7 +128,7 @@ Följ stegen nedan när du vill börja skapa webbkampanjer.
 
 ## Lägg till personalisering och erbjudanden
 
-Om du vill lägga till personalisering markerar du en behållare och väljer personaliseringsikonen på den snabbmenyrad som visas. Lägg till ändringarna med uttrycksredigeraren. [Läs mer](../personalization/personalization-build-expressions.md)
+Om du vill lägga till personalisering markerar du en behållare och väljer personaliseringsikonen på den snabbmenyrad som visas. Lägg till ändringarna med personaliseringsredigeraren. [Läs mer](../personalization/personalization-build-expressions.md)
 
 ![](assets/web-designer-personalization.png)
 

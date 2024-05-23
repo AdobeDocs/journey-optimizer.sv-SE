@@ -2,23 +2,23 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Använd uttrycksfragment
-description: Lär dig använda uttrycksfragment i [!DNL Journey Optimizer] Uttrycksredigerare.
+description: Lär dig använda uttrycksfragment i [!DNL Journey Optimizer] personaliseringsredigerare.
 feature: Personalization, Fragments
 topic: Personalization
 role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, bibliotek, personalisering
 exl-id: 74b1be18-4829-4c67-ae45-cf13278cda65
-source-git-commit: 08f3fc1837a4daa1ecaa7afcd53c80381177efb0
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
 
 # Utnyttja uttrycksfragment {#use-expression-fragments}
 
-När du använder **Uttrycksredigerare** kan du använda alla uttrycksfragment som har skapats eller sparats i den aktuella sandlådan.
+När du använder **personaliseringsredigerare** kan du använda alla uttrycksfragment som har skapats eller sparats i den aktuella sandlådan.
 
 Lär dig hur du skapar och hanterar fragment i [det här avsnittet](../content-management/fragments.md).
 
@@ -28,7 +28,7 @@ Lär dig hur du skapar och hanterar fragment i [det här avsnittet](../content-m
 
 Följ stegen nedan om du vill lägga till uttrycksfragment i ditt innehåll.
 
-1. Öppna [Uttrycksredigerare](personalization-build-expressions.md) och väljer **[!UICONTROL Fragments]** till vänster.
+1. Öppna [personaliseringsredigerare](personalization-build-expressions.md) och väljer **[!UICONTROL Fragments]** till vänster.
 
    ![](assets/expression-fragments-pane.png)
 
@@ -64,7 +64,7 @@ Följ stegen nedan om du vill lägga till uttrycksfragment i ditt innehåll.
 
    ![](assets/expression-fragment-open.png)
 
-1. Sedan kan ni anpassa och validera innehållet som vanligt med hjälp av alla personaliserings- och redigeringsfunktionerna i [Uttrycksredigerare](personalization-build-expressions.md).
+1. Sedan kan ni anpassa och validera innehållet som vanligt med hjälp av alla personaliserings- och redigeringsfunktionerna i [personaliseringsredigerare](personalization-build-expressions.md).
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ Följ stegen nedan om du vill lägga till uttrycksfragment i ditt innehåll.
 
 ## Bryt arv {#break-inheritance}
 
-När du lägger till ett fragment-ID i uttrycksredigeraren synkroniseras ändringarna som gjorts i det ursprungliga uttrycksfragmentet.
+När du lägger till ett fragment-ID i personaliseringsredigeraren synkroniseras ändringarna som gjorts i det ursprungliga uttrycksfragmentet.
 
 Du kan även klistra in innehållet i ett uttrycksfragment i redigeraren. Välj **[!UICONTROL Paste fragment]** för att infoga innehållet.
 

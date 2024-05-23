@@ -9,9 +9,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, validering, fel, personalisering
 exl-id: 7abeec5e-743f-48fb-a4a6-056665e8bfda
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Valideringsmekanismer {#validation-mechanisms}
 
-I **Uttrycksredigerare** skärm, använd **Validera** för att kontrollera din personaliseringssyntax.
+I **personaliseringsredigerare** skärm, använd **Validera** för att kontrollera din personaliseringssyntax.
 
 >[!NOTE]
 > Valideringen utförs automatiskt när du klickar på **Lägg till** för att stänga redigeringsfönstret.
@@ -29,7 +29,7 @@ I **Uttrycksredigerare** skärm, använd **Validera** för att kontrollera din p
 ![](assets/perso_validation1.png)
 
 >[!IMPORTANT]
-> Om personaliseringssyntaxen inte är giltig kan du inte stänga uttrycksredigeringsfönstret.
+> Om personaliseringssyntaxen inte är giltig kan du inte stänga redigeringsfönstret för personalisering.
 >
 
 ## Vanliga fel {#common-errors}
@@ -80,7 +80,7 @@ Felen som rör integrering av erbjudanden i ett e-postmeddelande eller push-medd
 Offer.<offerType>.[PlacementID].[ActivityID].<offer-attribute>
 ```
 
-Valideringen utförs under innehållsvalideringen i uttrycksredigeraren.
+Valideringen utförs under innehållsvalideringen i personaliseringsredigeraren.
 
 <table> 
  <thead> 

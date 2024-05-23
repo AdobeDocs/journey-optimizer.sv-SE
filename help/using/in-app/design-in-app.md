@@ -7,10 +7,10 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, design, formatering
 exl-id: 7d7aa721-96aa-4ebc-a51c-e693f893f34f
-source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 6%
+ht-degree: 0%
 
 ---
 
@@ -50,7 +50,7 @@ Från **[!UICONTROL Message Layout]** väljer du ett av de fyra olika layoutalte
 
   Den stöder medie- (bild, video), text- och knappkomponenter.
 
-* **[!UICONTROL Modal]**: Layouten visas i ett stort varningsfönster och programmet visas fortfarande i bakgrunden.
+* **[!UICONTROL Modal]**: Den här layouten visas i ett stort varningsfönster och programmet visas fortfarande i bakgrunden.
 
   Den stöder medie- (bild, video), text- och knappkomponenter.
 
@@ -62,7 +62,7 @@ Från **[!UICONTROL Message Layout]** väljer du ett av de fyra olika layoutalte
 
    * Välj **[!UICONTROL Compose]** för att ange eller klistra in HTML-koden i Raw-format.
 
-     Använd den vänstra rutan för att utnyttja Journey Optimizer personaliseringsfunktioner. Mer information om detta finns i [det här avsnittet](../personalization/personalize.md).
+     Använd den vänstra rutan för att utnyttja Journey Optimizer personaliseringsfunktioner. Mer information finns i [det här avsnittet](../personalization/personalize.md).
 
    * Välj **[!UICONTROL Import]** om du vill importera HTML- eller ZIP-filen med HTML.
 
@@ -124,7 +124,7 @@ Skriv innehållet i **[!UICONTROL Header]** och **[!UICONTROL Body]** fält.
 
 ![](assets/in_app_web_design_4.png)
 
-Använd **[!UICONTROL Personalization]** ikon för att lägga till personalisering. Läs mer om personalisering i Adobe Journey Optimizer Expression Editor [i det här avsnittet](../personalization/personalize.md).
+Använd **[!UICONTROL Personalization]** ikon för att lägga till personalisering. Läs mer om personalisering i Adobe Journey Optimizer personaliseringsredigerare [i det här avsnittet](../personalization/personalize.md).
 
 +++Fler alternativ med avancerad formatering
 
@@ -175,7 +175,7 @@ Om **[!UICONTROL Advanced formatting mode]** är aktiverat kan du välja för **
 
 Från **Inställningar** kan du definiera meddelandelayouten och förhandsgranska meddelandet i appen. Du kan även komma åt avancerade formateringsalternativ.
 
-### Förhandsgranskning {#preview-tab}
+### Förhandsgranska {#preview-tab}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_inapp_authoring_preview"

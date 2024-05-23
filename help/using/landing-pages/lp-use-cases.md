@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: landning, landningssida, fallstudie
 exl-id: 8c00d783-54a3-45d9-bd8f-4dc58804d922
-source-git-commit: 436507ea3ea76eb7a42cbcb3747ad236685e3f13
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '936'
 ht-degree: 1%
 
 ---
@@ -163,7 +163,7 @@ Information om avanmälan finns i **Samtycketjänstens datauppsättning**. [Läs
 
 >[!NOTE]
 >
->Om sammanfogningsmetoden är standard [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"} **[!UICONTROL Profiles]** merge policy is **[!UICONTROL Dataset Precedence]**, make sure to enable the **[!UICONTROL AJO Consent Service Dataset]** and to prioritize it in the merge policy. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html#dataset-precedence-profile){target="_blank"}
+>Om sammanfogningsmetoden är standard [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"} **[!UICONTROL Profiles]** sammanfogningsprincipen är **[!UICONTROL Dataset Precedence]** måste du aktivera **[!UICONTROL AJO Consent Service Dataset]** och att prioritera detta i sammanslagningspolitiken. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html#dataset-precedence-profile){target="_blank"}
 >
 >Även om inga batchar har lagts till i den här datauppsättningen kommer den fortfarande att innehålla information om anmälan/avanmälan.
 
@@ -213,7 +213,7 @@ To do this, you need to create an event containing the landing page submission i
 
     ![](assets/lp_subscription-uc-event-fields.png)
 
-1. Click inside the **[!UICONTROL Event ID condition]** field. Using the simple expression editor, define the condition for the **[!UICONTROL Interaction Type]** and **[!UICONTROL Landing Page ID]** fields. This will be used by the system to identify the events that will trigger your journey.
+1. Click inside the **[!UICONTROL Event ID condition]** field. Using the simple personalization editor, define the condition for the **[!UICONTROL Interaction Type]** and **[!UICONTROL Landing Page ID]** fields. This will be used by the system to identify the events that will trigger your journey.
 
     ![](assets/lp_subscription-uc-event-id-condition.png)
 

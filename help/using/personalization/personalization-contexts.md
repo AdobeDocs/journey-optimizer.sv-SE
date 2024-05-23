@@ -9,7 +9,7 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, kontext, personalisering
 exl-id: fe39570b-cbd2-4b24-af10-e12990a9a885
-source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -18,9 +18,7 @@ ht-degree: 0%
 
 # Personaliseringskontexter{#personalization-areas}
 
-Innehåll och visning av meddelanden som levereras av [!DNL Journey Optimizer] kan personaliseras på flera olika sätt.
-
-I alla fält med redigeringsikonen kan du öppna redigeringsprogrammet för anpassning (även kallat uttrycksredigeraren) och definiera personalisering.
+Innehåll och visning av meddelanden som levereras av [!DNL Journey Optimizer] kan personaliseras på flera olika sätt. I alla fält med redigeringsikonen kan du öppna personaliseringsredigeraren (kallas även personaliseringsredigerare) och definiera personalisering.
 
 ![](assets/perso_icon.png)
 

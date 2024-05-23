@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate, Experienced
 badge: label="Begränsad tillgänglighet"
-source-git-commit: 5ce388e5d86950e5cc6b173aab48225825f1c648
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
 source-wordcount: '314'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
@@ -48,9 +48,9 @@ Definiera två leveransbehandlingar som var och en innehåller olika beslutspoli
 
    ![](assets/decision-code-based-create.png)
 
-1. Definiera urvalsstrategierna för ditt beslut. Klicka på **[!UICONTROL Add strategy]**.
+1. Definiera urvalsstrategierna för ditt beslut. Klicka **[!UICONTROL Add strategy]**.
 
-1. Klicka på **[!UICONTROL Create]**. Det nya beslutet läggs till under **[!UICONTROL Decisions]**.
+1. Klicka **[!UICONTROL Create]**. Det nya beslutet läggs till under **[!UICONTROL Decisions]**.
 
    ![](assets/decision-code-based-decision-added.png)
 
@@ -58,7 +58,7 @@ Definiera två leveransbehandlingar som var och en innehåller olika beslutspoli
 
    ![](assets/decision-code-based-add-decision.png)
 
-1. Du kan också lägga till andra attribut som är tillgängliga i uttrycksredigeraren, till exempel profilattribut.
+1. Du kan också lägga till andra attribut som är tillgängliga i personaliseringsredigeraren, till exempel profilattribut.
 
    ![](assets/decision-code-based-decision-profile-attribute.png)
 

@@ -10,7 +10,8 @@ level: Intermediate
 keywords: uttryck, redigerare
 hidefromtoc: true
 hide: true
-source-git-commit: 4d4ce1e892d51393972973950e8e03259e16c204
+exl-id: 2fc10fdd-ca9e-46f0-94ed-2d7ea4de5baf
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 0%
@@ -25,9 +26,9 @@ ht-degree: 0%
 >
 >För närvarande är den bara tillgänglig för testningsändamål i den icke-produktionssandlåda som du har gett Adobe och för de datauppsättningar som har begärts för betaversionen.
 
-Med Journey Optimizer kan du utnyttja data från Adobe Experience Platform i uttrycksredigeraren till [personalisera ert innehåll](../personalization/personalize.md). Stegen är följande:
+Med Journey Optimizer kan ni utnyttja data från Adobe Experience Platform i personaliseringsredigeraren i [personalisera ert innehåll](../personalization/personalize.md). Stegen är följande:
 
-1. Öppna uttrycksredigeraren, som är tillgänglig i alla sammanhang där du kan definiera personalisering, till exempel meddelanden. [Lär dig arbeta med uttrycksredigeraren](../personalization/personalization-build-expressions.md)
+1. Öppna personaliseringsredigeraren, som är tillgänglig i alla sammanhang där du kan definiera personalisering, till exempel meddelanden. [Lär dig arbeta med personaliseringsredigeraren](../personalization/personalization-build-expressions.md)
 
 1. Navigera till hjälpfunktionslistan och lägg till **datasetLookup** hjälpfunktion till kodfönstret.
 

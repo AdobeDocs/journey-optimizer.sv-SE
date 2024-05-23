@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 718af505-7b7c-495e-8974-bd9c35d796bb
-source-git-commit: 7ef96642d28bce0e062e543b46a23ceeeded66fd
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
@@ -72,9 +72,9 @@ Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Ado
 
 >[!NOTE]
 >
-> Arbeta med [Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}, you need to deploy [!DNL Assets Essentials] for your organization and make sure that users are a part of the **Assets Essentials Consumer Users** or/and **Assets Essentials Users** Product profiles. Learn more on [this page](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html){target="_blank"}.
+> Arbeta med [Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}måste ni driftsätta [!DNL Assets Essentials] för din organisation och se till att användarna är en del av **Assets Essentials-användare** eller/och **Assets Essentials** Produktprofiler. Läs mer på [den här sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html){target="_blank"}.
 
-1. Välj alternativet **[!UICONTROL Asset library]**.
+1. Välj **[!UICONTROL Asset library]** alternativ.
 
 1. Välj **[!UICONTROL Browse]**.
 
@@ -82,7 +82,7 @@ Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Ado
 
 1. Bläddra bland resurserna och välj den bild du vill använda
 
-1. Klicka på **[!UICONTROL Select]**.
+1. Klicka **[!UICONTROL Select]**.
 
    ![](../assets/offer-select-asset.png)
 
@@ -100,13 +100,13 @@ Om du vill återanvända innehållet i en representation bläddrar du till **Res
 
 Om du vill lägga till innehåll från en extern offentlig plats väljer du **[!UICONTROL URL]** anger du sedan URL-adressen till det innehåll som ska läggas till.
 
-Du kan anpassa URL-adresser med uttrycksredigeraren. Läs mer på [personalisering](../../personalization/personalize.md#use-expression-editor).
+Du kan anpassa URL-adresser med personaliseringsredigeraren. Läs mer på [personalisering](../../personalization/personalize.md#use-expression-editor).
 
 ![](../assets/offer-content-url.png)
 
 Du vill till exempel anpassa bilden som visas som ett erbjudande. Man vill att användare som föredrar semestrar ska se NYC-skylten och användare som föredrar strandsemestrar ska se Hawaii i i nordkusten.
 
-Använd uttrycksredigeraren för att hämta profilattribut som lagras i Adobe Experience Platform med hjälp av fackscheman. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schemas-overview.html){target="_blank"}
+Använd personaliseringsredigeraren för att hämta profilattribut som lagras i Adobe Experience Platform med hjälp av fackscheman. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schemas-overview.html){target="_blank"}
 
 ![](../assets/offer-content-url-personalization.png)
 
@@ -128,7 +128,7 @@ Du kan också infoga text när du väljer en kompatibel placering.
 
    ![](../assets/offer-text-content.png)
 
-   Du kan anpassa ditt innehåll med uttrycksredigeraren. Läs mer på [personalisering](../../personalization/personalize.md#use-expression-editor).
+   Ni kan personalisera ert innehåll med personaliseringsredigeraren. Läs mer på [personalisering](../../personalization/personalize.md#use-expression-editor).
 
    ![](../assets/offer-personalization.png)
 

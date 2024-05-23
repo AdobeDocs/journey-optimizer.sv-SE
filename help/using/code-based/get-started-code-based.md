@@ -6,9 +6,9 @@ topic: Content Management
 role: User, Developer, Admin
 level: Experienced
 exl-id: 987de2bf-cebe-4753-98b4-01eb3fded492
-source-git-commit: d741a34a0418dc88db730d0b953cb5c7db8dc103
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1086'
 ht-degree: 1%
 
 ---
@@ -73,9 +73,9 @@ Med **kodbaserad upplevelse** kan ni definiera inkommande upplevelser med en enk
 
 När den kodbaserade kanalen ska användas i stället för den andra [!DNL Journey Optimizer] kanaler?
 
-* Du kan använda kodbaserade upplevelser när som helst när du inte har åtkomst till din digitala egenskap via en webbläsare eller en mobilapp - situationer där du förmodligen kan använda [!DNL Journey Optimizer] [webbkanal](../web/get-started-web.md){target="_blank"} or the [!DNL Journey Optimizer] [in-app messaging](../in-app/get-started-in-app.md){target="_blank"} kanal.
+* Du kan använda kodbaserade upplevelser när som helst när du inte har åtkomst till din digitala egenskap via en webbläsare eller en mobilapp - situationer där du förmodligen kan använda [!DNL Journey Optimizer] [webbkanal](../web/get-started-web.md){target="_blank"} eller [!DNL Journey Optimizer] [meddelanden i appen](../in-app/get-started-in-app.md){target="_blank"} kanal.
 
-* Du kan använda den kodbaserade kanalen som ett alternativ till [!DNL Journey Optimizer] webbkanal om din webbplats inte kan läsas in i [webbdesigner](../web/edit-web-content.md#work-with-web-designer){target="_blank"} visual editor or if you cannot use the [browser extension](../web/web-prerequisites.md#visual-authoring-prerequisites){target="_blank"} som gör det möjligt att skapa visuellt material för webbkanaler.
+* Du kan använda den kodbaserade kanalen som ett alternativ till [!DNL Journey Optimizer] webbkanal om din webbplats inte kan läsas in i [webbdesigner](../web/edit-web-content.md#work-with-web-designer){target="_blank"} den visuella redigeraren eller om du inte kan använda [webbläsartillägg](../web/web-prerequisites.md#visual-authoring-prerequisites){target="_blank"} som gör det möjligt att skapa visuellt material för webbkanaler.
 
 * Du kan också använda den kodbaserade kanalen som ett alternativ till [!DNL Journey Optimizer] webb- eller appkanaler om ni har en API-baserad, headless- eller serversidesimplementering.
 
@@ -85,19 +85,19 @@ Om du vill köra webbanvändningsfall kan du använda antingen webbkanalen eller
 
 **Webb**
 * Redigera innehåll med [webbdesigner](../web/edit-web-content.md#work-with-web-designer){target="_blank"} visuell redigerare.
-* Du behöver [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} implementation and the [Adobe Experience Cloud Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca){target="_blank"} extension installed on your web browser. [Learn more](../web/web-prerequisites.md){target="_blank"}
+* Du behöver [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} implementering och [Adobe Experience Cloud Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca){target="_blank"} tillägg som är installerat i webbläsaren. [Läs mer](../web/web-prerequisites.md){target="_blank"}
 * Med webbkanalen kan du ändra allt på sidan och ha en fördefinierad lista över åtgärder som du kan använda för att göra ändringar. [Läs mer](../web/edit-web-content.md#work-with-web-designer){target="_blank"}
 * Det är enkelt att konfigurera och komma igång snabbt.
 * Det är fokuserat på marknadsföring och personalisering.
 
 **Kodbaserad upplevelse**
-* Redigera innehåll med [Uttrycksredigerare](create-code-based.md#edit-code).
+* Redigera innehåll med [personaliseringsredigerare](create-code-based.md#edit-code).
 * Den kodbaserade upplevelsen kräver tidigare utvecklingsarbete med implementeringen för att säkerställa att dina ytor kan tolka och leverera det innehåll som publiceras i utkanten av [!DNL Journey Optimizer] för dessa ytor. [Läs mer](#surface-definition)
 * Det kräver mer planering och kan bara ändra det som utvecklarna anger. Därför är det viktigt att identifiera komponenterna (hembanderoll, hjältebild, menyrad osv.) på de ytor som behöver ändras för personalisering eller testning, och samarbeta med ditt utvecklingsteam för att bygga den implementering som krävs för att hantera dessa ändringar.
 * Du kan använda JSON-kodinnehåll.
 * Det är inriktat på utvecklare och persona.
 
-## Så fungerar det {#how-it-works}
+## Så här fungerar det {#how-it-works}
 
 >[!CAUTION]
 >
@@ -113,7 +113,7 @@ De viktigaste stegen för att implementera en kodbaserad kampanj är följande.
 
 1. Definiera en [yta](#surface-definition), som är den plats där du vill lägga till din kodbaserade upplevelse, och skapa en kampanj i [!DNL Journey Optimizer] med den här ytan. [Lär dig mer](create-code-based.md#create-code-based-campaign)
 
-1. Skapa en upplevelse genom att ange innehåll för den markerade ytan med [!DNL Journey Optimizer] Uttrycksredigerare. [Lär dig mer](create-code-based.md#edit-code)
+1. Skapa en upplevelse genom att ange innehåll för den markerade ytan med [!DNL Journey Optimizer] personaliseringsredigerare. [Lär dig mer](create-code-based.md#edit-code)
 
 1. Appimplementeringsteamet gör explicita API- eller SDK-anrop för att hämta innehåll för namngivna ytor, som&quot;Banner Text&quot; eller&quot;Recommendations Tray 1&quot;, eller icke-UI-relaterade beslutspunkter i ett program, som&quot;sökalgoritmparametrar&quot;. I det här fallet är implementeringsteamet ansvarigt för återgivning eller annan tolkning och åtgärd för det returnerade innehållet.<!--TBC with Robert - should link to a new section with API/SDK call samples-->
 

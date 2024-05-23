@@ -8,10 +8,10 @@ level: Beginner
 keywords: i appen, meddelande, skapa, börja
 hide: true
 hidefromtoc: true
-source-git-commit: b62f8954e09f50896ad5e70784c5a93943617e85
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
 source-wordcount: '690'
-ht-degree: 10%
+ht-degree: 0%
 
 ---
 
@@ -33,7 +33,7 @@ Om du vill redigera innehållet i meddelandet i appen klickar du på **[!UICONTR
 
 The **[!UICONTROL Advanced formatting]** växlar aktiverar ytterligare alternativ för att anpassa upplevelsen.
 
-När ditt meddelande i appen har skapats och dess innehåll har definierats och anpassats kan du granska och aktivera det. Meddelanden skickas sedan enligt kampanjschemat. Läs mer på [den här sidan](send-in-app.md).
+När ditt meddelande i appen har skapats och dess innehåll har definierats och anpassats kan du granska och aktivera det. Meddelanden skickas sedan enligt kampanjschemat. Läs mer i [den här sidan](send-in-app.md).
 
 ## Meddelandelayout {#message-layout}
 
@@ -45,7 +45,7 @@ Från **[!UICONTROL Message Layout]** väljer du ett av de fyra olika layoutalte
 
   Den stöder medie- (bild, video), text- och knappkomponenter.
 
-* **[!UICONTROL Modal]**: Layouten visas i ett stort varningsfönster och programmet visas fortfarande i bakgrunden.
+* **[!UICONTROL Modal]**: Den här layouten visas i ett stort varningsfönster och programmet visas fortfarande i bakgrunden.
 
   Den stöder medie- (bild, video), text- och knappkomponenter.
 
@@ -57,7 +57,7 @@ Från **[!UICONTROL Message Layout]** väljer du ett av de fyra olika layoutalte
 
    * Välj **[!UICONTROL Compose]** för att ange eller klistra in HTML-koden i Raw-format.
 
-     Använd den vänstra rutan för att utnyttja Journey Optimizer personaliseringsfunktioner. Mer information om detta finns i [det här avsnittet](../personalization/personalize.md).
+     Använd den vänstra rutan för att utnyttja Journey Optimizer personaliseringsfunktioner. Mer information finns i [det här avsnittet](../personalization/personalize.md).
 
    * Välj **[!UICONTROL Import]** om du vill importera HTML- eller ZIP-filen med HTML.
 
@@ -104,7 +104,7 @@ Skriv innehållet i **[!UICONTROL Header]** och **[!UICONTROL Body]** fält.
 
 ![](assets/in_app_web_design_4.png)
 
-Använd **[!UICONTROL Personalization]** ikon för att lägga till personalisering. Läs mer om personalisering i Adobe Journey Optimizer Expression Editor [i det här avsnittet](../personalization/personalize.md).
+Använd **[!UICONTROL Personalization]** ikon för att lägga till personalisering. Läs mer om personalisering i Adobe Journey Optimizer personaliseringsredigerare [i det här avsnittet](../personalization/personalize.md).
 
 +++Fler alternativ med avancerad formatering
 

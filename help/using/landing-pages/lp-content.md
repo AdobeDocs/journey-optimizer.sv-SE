@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, sida, formulär, komponent
 exl-id: 5bf023b4-4218-4110-b171-3e70e0507fca
-source-git-commit: cda4c1d88fedc75c7fded9971e45fdc9740346c4
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
-source-wordcount: '1236'
-ht-degree: 2%
+source-wordcount: '1219'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +47,7 @@ Med hjälp av layoutaren för landningssidans innehåll kan du även utnyttja sa
 >title="Vad händer när du klickar på knappen"
 >abstract="Definiera vad som ska hända när användare skickar in landningssidans formulär."
 
-Om du vill definiera specifikt innehåll som gör det möjligt för användare att välja och skicka sina val från landningssidan använder du **[!UICONTROL Form]** -komponenten. För att göra detta, följ nedanstående steg.
+Om du vill definiera specifikt innehåll som gör det möjligt för användare att välja och skicka sina val från landningssidan använder du **[!UICONTROL Form]** -komponenten. Följ stegen nedan för att göra det.
 
 1. Dra och släpp den specifika landningssidan **[!UICONTROL Form]** från den vänstra paletten till huvudarbetsytan.
 
@@ -101,7 +101,7 @@ Om du vill definiera specifikt innehåll som gör det möjligt för användare a
 
    * Ange en **[!UICONTROL Placeholder]** text. Den visas i fältet innan användaren fyller i fältet.
 
-   * Markera **[!UICONTROL Make form field mandatory]**-alternativet om det behövs.  I så fall kan landningssidan endast skickas om användaren har fyllt i detta fält. Om ett obligatoriskt fält inte är ifyllt visas ett felmeddelande när användaren skickar sidan.
+   * Kontrollera **[!UICONTROL Make form field mandatory]** vid behov. I så fall kan landningssidan endast skickas om användaren har fyllt i detta fält. Om ett obligatoriskt fält inte är ifyllt visas ett felmeddelande när användaren skickar sidan.
 
    ![](assets/lp_designer-form-text-field.png)
 
@@ -172,7 +172,7 @@ Om du till exempel länkar en kryssruta <!-- or the submission of the page--> ti
 
 Låt oss säga att du länkar två kryssrutor på din primära sida till två olika prenumerationslistor. Om en användare prenumererar på något av dessa, vill du visa ett specifikt meddelande när formuläret skickas, beroende på vilken kryssruta de har markerat.
 
-För att göra detta, följ nedanstående steg:
+Gör så här:
 
 1. På den primära sidan länkar du alla kryssrutor i **[!UICONTROL Form]** till relevant prenumerationslista. [Läs mer](#use-form-component).
 
@@ -188,7 +188,7 @@ För att göra detta, följ nedanstående steg:
 
    ![](assets/lp_designer-form-add-subscription.png)
 
-1. Lägg till relevanta villkor med hjälpfunktionerna i uttrycksredigeraren. [Läs mer](../personalization/functions/functions.md)
+1. Lägg till relevanta villkor med hjälpfunktionerna i personaliseringsredigeraren. [Läs mer](../personalization/functions/functions.md)
 
    ![](assets/lp_designer-form-add-subscription-condition.png)
 
@@ -221,7 +221,7 @@ When [configuring the primary page](create-lp.md#configure-primary-page), you ca
 >
 >This data may not be visible to users who visit the page.
 
-If you defined one or more keys with their corresponding values when [configuring the primary page](create-lp.md#configure-primary-page), you can leverage these keys in the content of your primary page and subpages using the [Expression editor](../personalization/personalization-build-expressions.md).
+If you defined one or more keys with their corresponding values when [configuring the primary page](create-lp.md#configure-primary-page), you can leverage these keys in the content of your primary page and subpages using the [personalization editor](../personalization/personalization-build-expressions.md).
 
 ///When you reuse the same text on a page, this enables you to dynamically change that text if needed, without going through each occurrence.
 

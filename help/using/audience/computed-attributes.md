@@ -7,9 +7,9 @@ feature: Audiences, Profiles
 role: User
 level: Intermediate
 exl-id: 5402a179-263f-46a7-bddf-5b7017cf0f82
-source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -70,6 +70,6 @@ Detaljerad information om hur du lägger till fältgrupper i Adobe Experience Pl
 
 Beräknade attribut erbjuder en mångsidig uppsättning funktioner i Journey-optimeraren. Du kan använda dem för olika syften, till exempel för att personalisera meddelandeinnehåll, skapa nya målgrupper eller dela upp resor baserat på ett specifikt beräknat attribut. Du kan t.ex. dela upp en resa baserat på en profils totala inköp de senaste tre veckorna genom att lägga till ett enda beräknat attribut i en villkorsaktivitet. Du kan också anpassa ett e-postmeddelande genom att visa det senast visade objektet för varje profil.
 
-Eftersom beräknade attribut är profilattributfält som skapats i ditt profilföreningsschema kan du komma åt dem från uttrycksredigeraren i **SystemComputedAttributes** fältgrupp. Därifrån kan du lägga till ett beräknat attribut i dina uttryck och behandla dem som vilket annat profilattribut som helst för att utföra de önskade åtgärderna.
+Eftersom beräknade attribut är profilattributfält som har skapats i ditt profilföreningsschema kan du komma åt dem från personaliseringsredigeraren i **SystemComputedAttributes** fältgrupp. Därifrån kan du lägga till ett beräknat attribut i dina uttryck och behandla dem som vilket annat profilattribut som helst för att utföra de önskade åtgärderna.
 
 ![](assets/computed-attributes-ajo.png)

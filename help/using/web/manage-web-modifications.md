@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 213511b4-7556-4a25-aa23-b50acd11cd34
-source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 1%
+source-wordcount: '896'
+ht-degree: 0%
 
 ---
 
@@ -118,11 +118,11 @@ Lägga till en **Sida`<head>`** gör du så här:
    >
    >Du kan bara lägga till `<script>` och `<style>` -element till `<head>` -avsnitt. Lägger till `<div>` taggar och andra element kan orsaka resterande `<head>` element som ska visas i `<body>`.
 
-1. Klicka på knappen **[!UICONTROL Advanced editing options]**. Uttrycksredigeraren öppnas.
+1. Klicka på **[!UICONTROL Advanced editing options]** -knappen. Anpassningsredigeraren öppnas.
 
    ![](assets/web-designer-add-modification-head-advanced.png)
 
-   Du kan använda [!DNL Journey Optimizer] Uttrycksredigeraren med alla dess funktioner för personalisering och redigering. [Läs mer](../personalization/personalization-build-expressions.md)
+   Du kan använda [!DNL Journey Optimizer] personaliseringsredigerare med alla dess funktioner för personalisering och redigering. [Läs mer](../personalization/personalization-build-expressions.md)
 
 #### Exempel på anpassad kod {#custom-code-examples}
 
@@ -153,7 +153,7 @@ Du kan använda **[!UICONTROL Page `<head>`]** ändringstyp till:
 
 +++ **Radbryt alltid den anpassade koden i ett element.**
 
-Exempel:
+Till exempel:
 
 ```
 <script>

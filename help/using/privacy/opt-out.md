@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c5bae757-a109-45f8-bf8d-182044a73cca
-source-git-commit: 30018b08da7c02d9d9aac431db2fa39f91163cfd
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1041'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Lär dig hur du hanterar avanmälan i Journey Optimizer e-post och SMS-meddeland
 
 >[!NOTE]
 >
->I [!DNL Journey Optimizer], samtycke hanteras av Experience Platform [Samtyckesschema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. By default, the value for the consent field is empty and treated as consent to receive your communications. You can modify this default value while onboarding to one of the possible values listed [here](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}.
+>I [!DNL Journey Optimizer], samtycke hanteras av Experience Platform [Samtyckesschema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. Som standard är värdet för medgivandefältet tomt och behandlas som samtycke för att ta emot dina meddelanden. Du kan ändra det här standardvärdet när du går vidare till något av de möjliga värdena som anges [här](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}.
 
 ## Genomför personalisering {#opt-out-personalization}
 
@@ -98,9 +98,9 @@ Om en användare har:
 >
 >Medgivande för att profildata används i [datamodellering](../offers/ranking/ai-models.md) stöds inte ännu [!DNL Journey Optimizer].
 
-### I uttrycksredigeraren {#opt-out-expression-editor}
+### I personaliseringsredigeraren {#opt-out-expression-editor}
 
-The [Uttrycksredigerare](../personalization/personalization-build-expressions.md) inte utför någon kontroll eller verkställighet av samtycke eftersom den inte deltar i meddelandeleveransen.
+The [personaliseringsredigerare](../personalization/personalization-build-expressions.md) inte utför någon kontroll eller verkställighet av samtycke eftersom den inte deltar i meddelandeleveransen.
 
 Men användningen av högerbaserade åtkomstkontrollsetiketter gör det möjligt att begränsa vilka fält som kan användas för personalisering. The [förhandsgranska meddelande](../content-management/preview.md) och [e-poståtergivningstjänst](../content-management/rendering.md) maskerar de fält som identifieras med känslig information.
 
@@ -132,7 +132,7 @@ Du kan använda segmentregelbyggaren för att skapa en målgrupp som innehåller
 
    ![](assets/perso-consent-audience-no.png)
 
-1. Klicka på **[!UICONTROL Save]**.
+1. Klicka **[!UICONTROL Save]**.
 
 Nu kan ni använda den här målgruppen för att filtrera bort profiler som inte har gett sitt medgivande till personalisering från era kampanjer.
 

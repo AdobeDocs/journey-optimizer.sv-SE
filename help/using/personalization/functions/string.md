@@ -6,16 +6,16 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 8674ef9e-261b-49d9-800e-367f9f7ef979
-source-git-commit: 118eddf540d1dfb3a30edb0b877189ca908944b1
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
-source-wordcount: '1857'
-ht-degree: 5%
+source-wordcount: '1846'
+ht-degree: 0%
 
 ---
 
 # Strängfunktioner {#string}
 
-Lär dig hur du använder strängfunktioner i uttrycksredigeraren.
+Lär dig hur du använder strängfunktioner i personaliseringsredigeraren.
 
 ## Camera Case {#camelCase}
 
@@ -209,7 +209,7 @@ Följande fråga avgör, med skiftlägeskänslighet, om personens e-postadress s
 ```
 
 
-## Är lika med{#equals}
+## Lika med{#equals}
 
 The `equals` -funktionen används för att avgöra om en sträng är lika med den angivna strängen, med skiftlägeskänslighet.
 
@@ -368,7 +368,7 @@ The `indexOf` -funktionen används för att returnera positionen (i det första 
 
 Returnerar 6.
 
-## Is empty {#isEmpty}
+## Är tom {#isEmpty}
 
 The `isEmpty` -funktionen används för att avgöra om en sträng är tom.
 
@@ -437,7 +437,7 @@ The `leftTrim` används för att ta bort blanksteg från början av en sträng.
 {%= leftTrim(string) %}
 ```
 
-## Length {#length}
+## Längd {#length}
 
 The `length` används för att hämta antalet tecken i en sträng eller ett uttryck.
 
@@ -622,7 +622,7 @@ Följande fråga används för att extrahera domännamnet från en e-postadress.
 {%= regexGroup(emailAddress,"@(\\w+)", 1) %}
 ```
 
-## Replace {#replace}
+## Ersätt {#replace}
 
 The `replace` -funktionen används för att ersätta en viss delsträng i en sträng med en annan delsträng.
 

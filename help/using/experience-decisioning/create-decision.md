@@ -7,10 +7,10 @@ role: User
 level: Experienced
 badge: label="Begränsad tillgänglighet"
 exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
-source-git-commit: 5b36d082e054b7b75b09bd0392f9a58527a9c0a3
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
 source-wordcount: '1456'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -159,13 +159,13 @@ Rankade erbjudanden: Erbjudande 5, Erbjudande 3, Erbjudande 4, Erbjudande 2, Erb
 
 ## Använd beslutsprincipen i kodredigeraren {#use-decision-policy}
 
-När du har skapat en beslutspolicy kan du använda den i [Uttrycksredigerare](../code-based/create-code-based.md#edit-code). Följ stegen nedan för att göra det.
+När du har skapat en beslutspolicy kan du använda den i [personaliseringsredigerare](../code-based/create-code-based.md#edit-code). Följ stegen nedan för att göra det.
 
 >[!NOTE]
 >
->Kodbaserad upplevelse utnyttjar [!DNL Journey Optimizer] Uttrycksredigeraren med alla dess funktioner för personalisering och redigering. [Läs mer](../personalization/personalization-build-expressions.md)
+>Kodbaserad upplevelse utnyttjar [!DNL Journey Optimizer] personaliseringsredigerare med alla dess funktioner för personalisering och redigering. [Läs mer](../personalization/personalization-build-expressions.md)
 
-1. Klicka på knappen **[!UICONTROL Insert policy]**. Koden som motsvarar beslutspolicyn läggs till.
+1. Klicka på **[!UICONTROL Insert policy]** -knappen. Koden som motsvarar beslutspolicyn läggs till.
 
    ![](assets/decision-code-based-add-decision.png)
 
@@ -186,7 +186,7 @@ När du har skapat en beslutspolicy kan du använda den i [Uttrycksredigerare](.
 
    ![](assets/decision-code-based-add-decision-attributes.png)
 
-1. Du kan också lägga till andra attribut som är tillgängliga i uttrycksredigeraren, till exempel profilattribut.
+1. Du kan också lägga till andra attribut som är tillgängliga i personaliseringsredigeraren, till exempel profilattribut.
 
    ![](assets/decision-code-based-decision-profile-attribute.png)
 

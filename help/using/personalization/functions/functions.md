@@ -6,7 +6,7 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
 source-wordcount: '1872'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Använd [!DNL Journey Optimizer] mallspråk för att utföra dataåtgärder, t.e
 
 ➡️ [Lär dig hur du använder hjälpfunktioner i den här videon](#video)
 
-Mallspråk används i hjälpfunktioner som finns i listrutan Personalisering i personaliseringsredigeraren, enligt nedan:
+Mallspråk används i hjälpfunktioner som finns i personaliseringslistrutan i personaliseringsredigeraren, enligt nedan:
 
 ![](../assets/access-helper-functions.png)
 
@@ -29,7 +29,7 @@ Mallspråk används i hjälpfunktioner som finns i listrutan Personalisering i p
 >
 >De funktioner och funktioner som finns i personaliseringsredigeraren skiljer sig från dem som finns i [Avancerad uttrycksredigerare för Journey](../../building-journeys/expression/expressionadvanced.md).
 
-I [!DNL Journey Optimizer] Personaliseringsredigeraren, hjälpfunktionerna är indelade i tre kategorier: [Funktioner](#functions-helper), [Hjälpmedel](#helper-helper) och [Operatorer](#operators-helper).
+I [!DNL Journey Optimizer] personaliseringsredigerare och hjälpfunktioner är grupperade i tre kategorier: [Funktioner](#functions-helper), [Hjälpmedel](#helper-helper) och [Operatorer](#operators-helper).
 
 Välj en kategori för att komma åt underkategorier och funktioner.
 
@@ -229,7 +229,7 @@ Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den
     </tr>
         </tr>
     <tr>
-        <td><a href="string.md#equals">Är lika med</a></td><td>Den här funktionen används för att avgöra om en sträng inte börjar med en angiven delsträng, med skiftlägeskänslighet</td>
+        <td><a href="string.md#equals">Lika med</a></td><td>Den här funktionen används för att avgöra om en sträng inte börjar med en angiven delsträng, med skiftlägeskänslighet</td>
     </tr>
     <tr>
         <td><a href="string.md#equalsIgnoreCase">Lika med Ignorera skiftläge</a></td><td>Den här funktionen används för att avgöra om en sträng inte börjar med en angiven delsträng, utan skiftlägeskänslighet</td>
@@ -416,7 +416,7 @@ Jämförelsefunktioner används för att jämföra mellan olika uttryck och vär
 
 <table>
     <tr>
-        <td><a href="operators.md#equals">Är lika med</a></td><td>Den här åtgärden kontrollerar om värdena är lika</td>
+        <td><a href="operators.md#equals">Lika med</a></td><td>Den här åtgärden kontrollerar om värdena är lika</td>
     </tr>
     <tr>
         <td><a href="operators.md#greaterthan">Större än</a></td><td>Operatorn kontrollerar om det första värdet är större än det andra värdet</td>

@@ -9,9 +9,9 @@ role: User
 level: Beginner
 mini-toc-levels: 1
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: 01c14590fe55d8f11c1ff2b18141933b0b3dd5ca
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
-source-wordcount: '1834'
+source-wordcount: '1854'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ När anrikningsattributen har lagts till i en fältgrupp kan du utnyttja dem på
 
   ![](assets/audience-enrichment-attribute-condition.png){width="70%" zoomable="yes"}
 
-* **Anpassa era meddelanden** under resor eller kampanjer genom att lägga till anrikningsattribut från målgruppen i uttrycksredigeraren. [Lär dig arbeta med uttrycksredigeraren](../personalization/personalization-build-expressions.md)
+* **Anpassa era meddelanden** på resor eller kampanjer genom att lägga till anrikningsattribut från målgruppen i personaliseringsredigeraren. [Lär dig arbeta med personaliseringsredigeraren](../personalization/personalization-build-expressions.md)
 
   ![](assets/audience-enrichment-attribute-perso.png){width="70%" zoomable="yes"}
 
@@ -120,7 +120,7 @@ Gruppsegmentering är ett alternativ till direktuppspelningssegmentering som bea
 
 +++ Kantsegmentering
 
-Kantsegmentering är möjligheten att omedelbart utvärdera segment i Adobe Experience Platform [på kanten](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"}, enabling same-page and next-page personalization use cases. Currently only select query types can be evaluated with edge segmentation. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/edge-segmentation.html#query-types){target="_blank"}
+Kantsegmentering är möjligheten att omedelbart utvärdera segment i Adobe Experience Platform [på kanten](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"}, vilket möjliggör användning av personalisering på samma sida och nästa sida. För närvarande kan endast utvalda frågetyper utvärderas med kantsegmentering. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/edge-segmentation.html#query-types){target="_blank"}
 
 +++
 
@@ -175,7 +175,7 @@ Målgrupper från målgruppssammansättning och anpassad uppladdning kan hämtas
   >
   >Om&quot;Inkrementell läsning&quot; är aktiverat i en återkommande resa hämtas profiler endast vid den första upprepningen, eftersom dessa målgrupper är fasta.
 
-Dessutom kan dessa målgrupper användas i Expression Editor för att personalisera meddelanden under resor och kampanjer. [Lär dig arbeta med uttrycksredigeraren](../personalization/personalization-build-expressions.md)
+Dessutom kan dessa målgrupper användas i personaliseringsredigeraren för att personalisera meddelanden under resor och kampanjer. [Lär dig arbeta med personaliseringsredigeraren](../personalization/personalization-build-expressions.md)
 
 +++
 

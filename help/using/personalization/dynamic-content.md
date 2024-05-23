@@ -9,7 +9,7 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, dynamiskt innehåll
 exl-id: 639ad7df-0d0f-4c9b-95d1-f3101267aae2
-source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Med Adobe Journey Optimizer kan du använda villkorliga regler som skapats i biblioteket för att lägga till dynamiskt innehåll i dina meddelanden.
 
-Dynamiskt innehåll kan skapas i alla fält där du kan lägga till personalisering med Expression Editor. Detta inkluderar ämnesrad, länkar, push-meddelanden och textrepresentationer. [Läs mer om personaliseringssammanhang](personalization-contexts.md)
+Dynamiskt innehåll kan skapas i alla fält där du kan lägga till personalisering med personaliseringsredigeraren. Detta inkluderar ämnesrad, länkar, push-meddelanden och textrepresentationer. [Läs mer om personaliseringssammanhang](personalization-contexts.md)
 
 Dessutom kan du använda villkorliga regler i e-postdesignern för att skapa flera varianter av en innehållskomponent.
 
@@ -28,7 +28,7 @@ Dessutom kan du använda villkorliga regler i e-postdesignern för att skapa fle
 
 Stegen för att lägga till dynamiskt innehåll i uttryck är följande:
 
-1. Navigera till fältet där du vill lägga till dynamiskt innehåll och öppna sedan uttrycksredigeraren.
+1. Navigera till fältet där du vill lägga till dynamiskt innehåll och öppna sedan redigeraren för anpassning.
 
 1. Välj **[!UICONTROL Conditions]** för att visa listan med tillgängliga villkorliga regler. Klicka på plusknappen bredvid en regel för att lägga till den i det aktuella uttrycket.
 

@@ -9,9 +9,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, villkorsstyrd, regler
 exl-id: 246a4a55-059e-462c-ac1e-43b90f4abda4
-source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Villkorliga regler är uppsättningar regler som definierar vilket innehåll som ska visas i dina meddelanden, beroende på olika kriterier som profilattribut, målgruppsmedlemskap eller sammanhangsbaserade händelser.
 
-Villkorliga regler skapas med uttrycksredigeraren och kan lagras om du vill återanvända dem i hela innehållet. [Lär dig hur du sparar en villkorlig regel i biblioteket](#save)
+Villkorliga regler skapas med personaliseringsredigeraren och kan lagras om du vill återanvända dem i hela innehållet. [Lär dig hur du sparar en villkorlig regel i biblioteket](#save)
 
 >[!NOTE]
 >
@@ -28,13 +28,13 @@ Villkorliga regler skapas med uttrycksredigeraren och kan lagras om du vill åte
 
 ## Åtkomst till villkorsregelbyggaren {#access}
 
-Villkorliga regler skapas från **[!UICONTROL Conditions]** -menyn i uttrycksredigeraren, som du kommer åt antingen:
+Villkorliga regler skapas från **[!UICONTROL Conditions]** -menyn i personaliseringsredigeraren, som är tillgänglig antingen:
 
 * Från e-postdesignern när du aktiverar dynamiskt innehåll för en komponent i e-postbrödtexten. [Lär dig hur du lägger till dynamiskt innehåll i e-post](dynamic-content.md#emails)
 
   ![](assets/conditions-access-email.png)
 
-* Inom alla områden där du kan lägga till personalisering med [Uttrycksredigeraren](personalization-build-expressions.md).
+* Inom alla områden där du kan lägga till personalisering med [personaliseringsredigerare](personalization-build-expressions.md).
 
   ![](assets/conditions-access-editor.png)
 
@@ -52,7 +52,7 @@ Villkorliga regler skapas från **[!UICONTROL Conditions]** -menyn i uttrycksred
 
 Så här skapar du en villkorlig regel:
 
-1. Öppna **[!UICONTROL Conditions]** från Expression Editor eller Email Designer och klicka sedan på **[!UICONTROL Create new]**.
+1. Öppna **[!UICONTROL Conditions]** från personaliseringsredigeraren eller e-postdesignern och klicka sedan på **[!UICONTROL Create new]**.
 
 1. Bygg den villkorliga regeln efter dina behov. Det gör du genom att dra och släppa och ordna de önskade attributen från den vänstra menyn på arbetsytan.
 

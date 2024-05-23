@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 5b7faccbf563c6877a1077b0f6012418848c0ccb
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
 source-wordcount: '2351'
 ht-degree: 0%
@@ -296,11 +296,11 @@ Du kan lägga till upp till 10 spårningsparametrar med **[!UICONTROL Add new pa
 
 Om du vill konfigurera en URL-spårningsparameter kan du ange önskade värden direkt i dialogrutan **[!UICONTROL Name]** och **[!UICONTROL Value]** fält.
 
-Du kan också redigera varje **[!UICONTROL Value]** fält med [Uttrycksredigeraren](../personalization/personalization-build-expressions.md). Klicka på utgåveikonen för att öppna redigeraren. Därifrån kan du välja tillgängliga sammanhangsberoende attribut och/eller redigera texten direkt.
+Du kan också redigera varje **[!UICONTROL Value]** fält med [personaliseringsredigerare](../personalization/personalization-build-expressions.md). Klicka på utgåveikonen för att öppna redigeraren. Därifrån kan du välja tillgängliga sammanhangsberoende attribut och/eller redigera texten direkt.
 
 ![](assets/preset-url-tracking-editor.png)
 
-Följande fördefinierade värden är tillgängliga via uttrycksredigeraren:
+Följande fördefinierade värden är tillgängliga via personaliseringsredigeraren:
 
 * **Källåtgärds-ID**: ID för den e-poståtgärd som lagts till i resan eller kampanjen.
 
@@ -316,7 +316,7 @@ Följande fördefinierade värden är tillgängliga via uttrycksredigeraren:
 
 >[!NOTE]
 >
->Du kan kombinera textvärden och använda sammanhangsberoende attribut från uttrycksredigeraren. Varje **[!UICONTROL Value]** får innehålla ett antal tecken upp till gränsen på 5 kB.
+>Du kan kombinera textvärden och använda sammanhangsberoende attribut från personaliseringsredigeraren. Varje **[!UICONTROL Value]** får innehålla ett antal tecken upp till gränsen på 5 kB.
 
 <!--You can drag and drop the parameters to reorder them.-->
 

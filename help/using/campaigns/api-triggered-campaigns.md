@@ -9,7 +9,7 @@ role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: 352ffebda7eda2ceb54b0f5c3f6d3b577522191f
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 0%
@@ -97,7 +97,7 @@ Låt oss ta det här exemplet där kunderna vill återställa sitt lösenord och
 >
 >Till skillnad från profilaktiverade händelser används kontextdata som skickas i REST API för engångskommunikation och lagras inte mot profil. Profilen skapas med namnutrymmesinformationen om den saknas.
 
-Om du vill använda dessa data i dina kampanjer måste du skicka dem till API-nyttolasten och lägga till dem i meddelandet med uttrycksredigeraren. Använd `{{context.<contextualAttribute>}}` syntax, där `<contextualAttribute>` ska matcha namnet på variabeln i API-nyttolasten som innehåller de data som du vill skicka.
+För att kunna använda dessa data i era kampanjer måste ni skicka dem till API-nyttolasten och lägga till dem i meddelandet med personaliseringsredigeraren. Använd `{{context.<contextualAttribute>}}` syntax, där `<contextualAttribute>` ska matcha namnet på variabeln i API-nyttolasten som innehåller de data som du vill skicka.
 
 The `{{context.<contextualAttribute>}}` syntaxen mappas endast till datatypen String.
 

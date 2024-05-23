@@ -9,10 +9,10 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, syntax, personalisering
 exl-id: 5a562066-ece0-4a78-92a7-52bf3c3b2eea
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 3%
+source-wordcount: '719'
+ht-degree: 0%
 
 ---
 
@@ -46,7 +46,7 @@ Orden **true**, **false**, **null** och **undefined** tillåts endast i den för
 
 I Handtag-fält returneras värdena av {{expression}} är **HTML-escape**. Om uttrycket innehåller `&`genereras returnerade utdata från HTML som `&amp;`. Om du inte vill att Handlebars ska kringgå ett värde använder du &quot;trippelstreck&quot;.
 
-När det gäller argument för literala funktioner stöder inte mallspråksparsern ett omvänt snedstreck (`\`). Det här tecknet måste föregås av ett extra omvänt snedstreck (`\`). Exempel :
+När det gäller argument för literala funktioner stöder inte mallspråksparsern ett omvänt snedstreck (`\`). Det här tecknet måste föregås av ett extra omvänt snedstreck (`\`). Exempel:
 
 `{%= regexGroup("abc@xyz.com","@(\\w+)", 1)%}`
 
@@ -164,7 +164,7 @@ Med Journey Optimizer kan du anpassa en eller flera URL-adresser i meddelandet g
 
 >[!NOTE]
 >
->När du redigerar en anpassad URL i uttrycksredigeraren inaktiveras hjälpfunktioner och målgruppsmedlemskap av säkerhetsskäl.
+>När du redigerar en personlig URL i personaliseringsredigeraren inaktiveras hjälpfunktioner och målgruppsmedlemskap av säkerhetsskäl.
 >
 
 **Exempel på personaliserade URL:er**
