@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: 8253b4f3fdc177f5e5f19ab19de748b78456137b
+source-git-commit: f47f4e783dd66d9031c7f7c447c1b20418a583c0
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1225'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_business_rules_message_frequency_rules"
 >title="Affärsregler"
->abstract="Använd affärsregler för att styra hur ofta användare ska få ett meddelande eller delta i en resa genom att ange flerkanalsregler som automatiskt utesluter överbegärda profiler från meddelanden och åtgärder."
+>abstract="Regler för meddelandefrekvens är en typ av affärsregel som begränsar antalet gånger som användare får meddelanden eller deltar i resor över en eller flera kanaler. Dessa flerkanalsregler exkluderar automatiskt överbegärda profiler från meddelanden och åtgärder."
 
-[!DNL Journey Optimizer] Med kan du styra hur ofta användare ska få ett meddelande eller delta i en resa genom att ställa in flerkanalsregler som automatiskt utesluter överbegärda profiler från meddelanden och åtgärder.
+[!DNL Journey Optimizer] Med kan du styra hur ofta användare ska få ett meddelande eller delta i en resa över en eller flera kanaler. Regler för meddelandefrekvens som automatiskt exkluderar överbegärda profiler från meddelanden och åtgärder.
 
 För ett varumärke kan till exempel en regel vara att inte skicka mer än fyra marknadsföringsmeddelanden per månad till sina kunder. För att göra detta kan du använda en affärsregel som begränsar antalet meddelanden som skickas baserat på en eller flera kanaler under en månadskalenderperiod.
 
