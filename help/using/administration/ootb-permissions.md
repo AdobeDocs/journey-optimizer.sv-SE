@@ -9,10 +9,10 @@ role: Admin, User
 level: Intermediate
 keywords: behörigheter, författare, meddelanden
 exl-id: 5d014017-ca7c-4206-b783-989677ec0e1c
-source-git-commit: c400104c86e1a9a2de819db7743b3f77153ad90b
+source-git-commit: aba2d6a1b55f5948da5ded3ae2cab721651caa94
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 1%
+source-wordcount: '754'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +35,6 @@ Inbyggda behörigheter representerar de olika behörigheter som kan tilldelas ti
 | Beslutshantering | **[!DNL Manage decisions]**: läsa, skapa, redigera och ta bort beslutsenheter.</br>**[!DNL Manage offers]**: läsa, skapa, redigera och ta bort alla erbjudanden, komponenter, läsbeslut och samlingar.</br>**[!DNL Manage ranking strategies]**: läsa, skapa, redigera och ta bort anpassade rapporter och använda åtgärdsfunktioner.</br>**[!DNL View decisions]**: skrivskyddad åtkomst till erbjuder entiteter.<!--**[!DNL Manage Experience decisions]**: read, create, edit, and delete Experience decisioning entities.</br>--> |
 | Mål  | **[!DNL Activate destinations]**: ger användarna möjlighet att aktivera målgrupper för befintliga destinationer.</br>**[!DNL Activate segment without mapping]**: ger användarna möjlighet att aktivera målgrupper för befintliga destinationer, utan att visa mappningssteget. Användare kan lägga till och ta bort målgrupper i aktiveringsarbetsflöden, men kan inte lägga till eller ta bort mappade attribut eller identiteter.</br>**[!DNL Destination authoring]**: författarmål med Adobe Experience Platform Destination SDK.</br>**[!DNL Manage and activate dataset destination]**: läsa, skapa, redigera och inaktivera datauppsättningsexportflöden. Möjlighet att även aktivera data till aktiva datauppsättningar som har skapats.</br>**[!DNL Manage destinations]**: läsa, skapa och ta bort aktiveringsflöden och destinationskonton.</br>**[!DNL View destinations]**: skrivskyddad åtkomst till tillgängliga mål på fliken Katalog och autentiserade mål på fliken Bläddra. |
 | Identitetshantering | **[!DNL Manage identity namespaces]**: läsa, skapa och redigera identitetsnamnutrymmen.</br>**[!DNL Manage identity settings]**: läsa, skapa och redigera identitetsinställningar.</br>**[!DNL View identity namespaces]**: skrivskyddad åtkomst till identitetsnamnutrymmen.</br>**[!DNL View identity settings]**: skrivskyddad åtkomst till identitetsinställningar.</br>**[!DNL View identity graph]**: skrivskyddad åtkomst för identitetsdiagram. |
-| Konfigurationer för IP-värmare | **[!DNL Manage IP warmup plans]**: läs, skapa och redigera IP-beredskapsplaner.</br>**[!DNL View IP warmup plans]**: skrivskyddad åtkomst till planer för IP-värmare.</br>**[!DNL View IP warmup reports]**: läs och redigera rapporter om IP-armup. |
 | Journey Optimizer Library | **[!DNL Manage Library Items]**: lägg till och ta bort sparade uttryck i [!DNL Journey Optimizer] Bibliotek </br>**[!DNL Simulate content]**: åtkomst till alternativet Simulera innehåll för förhandsgranskning och korrektur. |
 | Journey Optimizer-regler | **[!DNL Manage frequency rules]**: få åtkomst till, skapa, redigera eller ta bort regler för meddelandefrekvens.</br>**[!DNL View frequency rules]**: skrivskyddad åtkomst till regler. |
 | Resor | **[!DNL Manage journeys]**: läsa, skapa, redigera och ta bort resor. Om du vill få åtkomst till och hantera resor kombinerar du behörigheten med **[!DNL View journeys events, data sources and actions]**.</br>**[!DNL Manage journeys events, data sources and actions]**: läs, skapa, redigera och ta bort händelser, källor eller åtgärder.</br>**[!DNL Publish journeys]**: publicera resor.</br>**[!DNL View journeys]**: skrivskyddad åtkomst till ljud.</br>**[!DNL View journeys events, data sources and actions]**: Skrivskyddad åtkomst till resehändelser, anpassade reseåtgärder och datakällor för resan.</br>**[!DNL View journeys report]**: läs och redigera reseregistrering.</br> |
@@ -44,3 +43,5 @@ Inbyggda behörigheter representerar de olika behörigheter som kan tilldelas ti
 | Sandlådeadministration | **[!DNL Export sandboxes]**: möjlighet att exportera en sandlåda.</br>**[!DNL Manage packages]**: läsa, skapa, redigera och ta bort paket.</br>**[!DNL Manage sandboxes]**: läsa, skapa, redigera och ta bort sandlådor.</br>**[!DNL View sandboxes]**: skrivskyddad åtkomst för sandlådor som tillhör din organisation.</br>**[!DNL Reset sandboxes]**: möjlighet att återställa en sandlåda. |
 
 {style="table-layout:fixed"}
+
+<!--|IP warmup configurations|**[!DNL Manage IP warmup plans]**: read, create, and edit IP warmup plans.</br>**[!DNL View IP warmup plans]**: read-only access to IP warmup plans.</br>**[!DNL View IP warmup reports]**: read and edit IP Warmup reports. |-->
