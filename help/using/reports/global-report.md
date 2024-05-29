@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: ec15e700-7659-4dbf-8446-6534ea48c5c8
-source-git-commit: 82b8c9032d6c377cb76acce4d5cc45afb0ddd6ba
+source-git-commit: 46d69dd422090a67c377acd6c8f44c4468e27f69
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '793'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Kontrollpanelen har sparats. Dina olika ändringar kommer att tillämpas på nyt
 
 Du kan enkelt exportera dina olika rapporter till PDF eller CSV-format så att du kan dela och skriva ut dem. Hur du exporterar rapporter beskrivs på flikarna nedan.
 
-➡️ [Upptäck den här funktionen i en video](#video-csv)
+➡️ [Upptäck den här funktionen i video](#video-csv)
 
 
 >[!BEGINTABS]
@@ -127,3 +127,220 @@ Lär dig hur du hämtar en CSV-rapport för en rapport och för en enda widget i
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424603?quality=12)
 
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_CTR"
+>title="CTR"
+>abstract="CTR-widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_clicks"
+>title="Klickningar"
+>abstract="Klicka på widgeten"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_delivered"
+>title="Levererat"
+>abstract="Levererad widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_overview"
+>title="Kampanjöversikt"
+>abstract="Widget för kampanjöversikt"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_funnel"
+>title="Kampanjtrattresultat"
+>abstract="Widget för kampanjtrattresultat"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_tracking_link"
+>title="Spårade länketiketter"
+>abstract="Widgeten Spårade länketiketter"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_displays"
+>title="Visar"
+>abstract="Visar widget"
+
+<!--campaign email-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_email_delivered_click"
+>title="Trend för leverans och klickning"
+>abstract="Widgeten Levererat och klickat"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_email_delivery_status"
+>title="Leveransstatus"
+>abstract="Leveransstatuswidget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_email_sending_statistics"
+>title="Skicka statistik"
+>abstract="Skicka statistikwidget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_email_tracking_statistics"
+>title="Spårningsstatistik"
+>abstract="Widgeten Spårningsstatistik"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_email_domains"
+>title="E-postdomäner"
+>abstract="Widget för e-postdomäner"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_email_tracked_link"
+>title="Spårade länketiketter"
+>abstract="Widgeten Spåra länketiketter"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_email_tracked_link_urls"
+>title="URL för spårad länk"
+>abstract="Widgeten Spårade länk-URL:er"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_email_subjects"
+>title="E-postämnen"
+>abstract="Widget för e-postämnen"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_email_bounce_reasons"
+>title="Brytningsorsaker"
+>abstract="Widgeten för studsorsaker"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_email_exclude"
+>title="Exkludera orsaker"
+>abstract="Widgeten Exkludera orsaker"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_email_error"
+>title="Felorsaker"
+>abstract="Widgeten Felorsaker"
+
+
+<!--campaign push-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_push_sending_statistics"
+>title="Skicka statistik"
+>abstract="Skicka statistikwidget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_push_tracking_statistics"
+>title="Spårningsstatistik"
+>abstract="Widgeten Spårningsstatistik"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_push_tracked_link"
+>title="Spårade länketiketter"
+>abstract="Widgeten Spåra länketiketter"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_push_tracked_link_urls"
+>title="URL för spårad länk"
+>abstract="Widgeten Spårade länk-URL:er"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_push_bounce_reasons"
+>title="Brytningsorsaker"
+>abstract="Widgeten för studsorsaker"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_push_exclude"
+>title="Undantagna orsaker"
+>abstract="Widgeten Exkluderade orsaker"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_push_email_error"
+>title="Felorsaker"
+>abstract="Widgeten Felorsaker"
+
+<!--campaign inapp-->
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_inapp_impression"
+>title="Trend för tryck och klickning"
+>abstract="Widgeten Impression &amp; Click Trend"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_inapp_clicks"
+>title="Klickningar"
+>abstract="Klicka på widgeten"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_inapp_displays"
+>title="Visar"
+>abstract="Visar widget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_inapp_tracking_data"
+>title="Spårningsdata"
+>abstract="Widgeten Spåra data"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_inapp_tracked_link"
+>title="Spårade länketiketter"
+>abstract="Widgeten Spårade länketiketter"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_inapp_tracked_link_urls"
+>title="URL för spårad länk"
+>abstract="Widgeten Spårade länk-URL:er"
+
+<!--campaign sms-->
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_sms_delivered_click"
+>title="Trend för leverans och klickning"
+>abstract="Widgeten Levererat och klickat"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_sms_delivery_status"
+>title="Leveransstatus"
+>abstract="Leveransstatuswidget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_sms_tracked_link"
+>title="Spårade länketiketter"
+>abstract="Widgeten Spåra länketiketter"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_sms_tracked_link_urls"
+>title="URL för spårad länk"
+>abstract="Widgeten Spårade länk-URL:er"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_sms_inbound"
+>title="SMS inkommande meddelande"
+>abstract="SMS inkommande meddelandewidget"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_sms_message_type"
+>title="SMS-meddelandetyp"
+>abstract="Widget för SMS-meddelandetyp"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_sms_providers"
+>title="SMS-leverantörer"
+>abstract="widgeten SMS-leverantörer"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_sms_bounce"
+>title="Brytningsorsaker"
+>abstract="Widgeten för studsorsaker"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_sms_exclude"
+>title="Exkludera orsaker"
+>abstract="Widgeten Exkludera orsaker"
+
+>[!CONTEXTUALHELP]
+>id="ajo_report_campaign_sms_error"
+>title="Felorsaker"
+>abstract="Widgeten Felorsaker"
