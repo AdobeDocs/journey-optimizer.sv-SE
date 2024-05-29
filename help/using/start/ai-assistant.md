@@ -9,7 +9,7 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 43adfef7632e7c9ad4c79544286b210abe5a964f
+source-git-commit: 8cd9374130725a89208acadc3a02574408f98599
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
@@ -46,11 +46,11 @@ I Adobe Journey Optimizer har du tillgång till följande användningsområden:
 
 Om du vill ställa en fråga anger du den i fältet längst ned på skärmen och trycker på Retur.
 
-![](assets/do-not-localize/ai-assistant-ask.png){width="50%" align="left"}
+![](assets/do-not-localize/ai-assistant-ask.png){width="40%" align="left"}
 
 Kontrollera svaret och använd **Visa källor** för att få direktlänkar till produktdokumentationen och få mer information.
 
-![](assets/do-not-localize/ai-assistant-answer.png){width="50%" align="left"}
+![](assets/do-not-localize/ai-assistant-answer.png){width="40%" align="left"}
 
 Använd reglaget uppåt eller nedåt för att betygsätta svaret.
 
