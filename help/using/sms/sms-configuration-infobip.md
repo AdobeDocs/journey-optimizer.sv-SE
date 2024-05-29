@@ -6,10 +6,11 @@ description: Lär dig hur du konfigurerar miljön för att skicka textmeddelande
 feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+exl-id: 7b6dc89a-1a81-49c2-b2a7-bf24b9d215e3
+source-git-commit: 8f045e1b709c0059ce21cda68c21e8732f58e51e
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 1%
+source-wordcount: '304'
+ht-degree: 0%
 
 ---
 
@@ -17,11 +18,11 @@ ht-degree: 1%
 
 Så här konfigurerar du Infobip med Journey Optimizer:
 
-1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]** och väljer **[!UICONTROL API Credentials]** -menyn. Klicka på knappen **[!UICONTROL Create new API credentials]**.
-
-   ![](assets/sms_6.png)
+1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]** och väljer **[!UICONTROL API Credentials]** -menyn. Klicka på **[!UICONTROL Create new API credentials]** -knappen.
 
 1. Konfigurera dina API-autentiseringsuppgifter enligt anvisningarna nedan.
+
+   * **[!UICONTROL SMS vendor]**: Infobip.
 
    * **[!UICONTROL Name]**: välj ett namn för API-autentiseringsuppgifterna.
 

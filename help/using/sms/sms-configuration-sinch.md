@@ -6,10 +6,11 @@ description: Lär dig hur du konfigurerar miljön för att skicka textmeddelande
 feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+exl-id: 85412a85-edf0-4069-8bc7-b80371375f1f
+source-git-commit: 8f045e1b709c0059ce21cda68c21e8732f58e51e
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 2%
+source-wordcount: '479'
+ht-degree: 0%
 
 ---
 
@@ -25,11 +26,11 @@ När du använder Sinch-providern med Journey Optimizer finns det två olika alt
 
 Så här konfigurerar du din Sinch-leverantör för att skicka SMS-meddelanden och MMS med Journey Optimizer:
 
-1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och väljer **[!UICONTROL API Credentials]** -menyn. Klicka på knappen **[!UICONTROL Create new API credentials]**.
-
-   ![](assets/sms_6.png)
+1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och väljer **[!UICONTROL API Credentials]** -menyn. Klicka på **[!UICONTROL Create new API credentials]** -knappen.
 
 1. Konfigurera dina SMS API-autentiseringsuppgifter enligt nedanstående:
+
+   * **[!UICONTROL SMS vendor]**: Sinch.
 
    * **[!UICONTROL Name]**: välj ett namn för API-autentiseringsuppgifterna.
 
@@ -63,15 +64,18 @@ När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu s
 
 Så här konfigurerar du Sinch MMS att skicka MMS med Journey Optimizer:
 
-1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och väljer **[!UICONTROL API Credentials]** -menyn. Klicka på knappen **[!UICONTROL Create new API credentials]**.
+1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och väljer **[!UICONTROL API Credentials]** -menyn. Klicka på **[!UICONTROL Create new API credentials]** -knappen.
 
-   ![](assets/sms_6.png)
+1. Konfigurera MMS API-autentiseringsuppgifterna enligt nedan:
 
-1. Konfigurera dina SMS API-autentiseringsuppgifter enligt nedanstående:
+   * **[!UICONTROL SMS vendor]**: Sinch MMS.
 
    * **[!UICONTROL Name]**: välj ett namn för API-autentiseringsuppgifterna.
 
-   * **[!UICONTROL Project ID]**, **[!UICONTROL App ID]** och **[!UICONTROL API Token]**: på konversations-API-menyn hittar du dina inloggningsuppgifter på App-menyn. Läs mer i [Sänk dokumentation](https://docs.cc.sinch.com/cloud/service-configuration/en/oxy_ex-1/common/wln1620131604643.html){target="_blank"}.
+   * **[!UICONTROL Project ID]**, **[!UICONTROL App ID]** och **[!UICONTROL API Token]**: följ stegen nedan för att samla in dina MMS API-autentiseringsuppgifter.
+
+      * För **[!UICONTROL Project ID]** och **[!UICONTROL App ID]**: Använd **Översikt över konversation-API** sidan i ditt Sinch-projekt på din Sinch Dashboard.
+      * För **[!UICONTROL API Token]**: Hämta **Åtkomstnycklar** för ditt Sinch-projekt och generera en **Base64 API-token** från ditt Sinch-projekt **Åtkomstnycklar**.
 
    * **[!UICONTROL Service Plan ID]** och **[!UICONTROL SMS API Token]**: din **[!UICONTROL Service Plan ID]** och **[!UICONTROL SMS API Token]** finns på fliken SMS på API-sidan.
 

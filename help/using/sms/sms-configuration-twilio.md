@@ -6,10 +6,11 @@ description: Lär dig hur du konfigurerar miljön för att skicka textmeddelande
 feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+exl-id: d6f74566-c913-4727-83b9-473a798a0158
+source-git-commit: 8f045e1b709c0059ce21cda68c21e8732f58e51e
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 3%
+source-wordcount: '133'
+ht-degree: 1%
 
 ---
 
@@ -17,11 +18,11 @@ ht-degree: 3%
 
 Om du vill konfigurera Twilio med Journey Optimizer måste du skapa nya API-autentiseringsuppgifter som används för Twilio:
 
-1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och väljer **[!UICONTROL API Credentials]** -menyn. Klicka på knappen **[!UICONTROL Create new API credentials]**.
-
-   ![](assets/sms_6.png)
+1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och väljer **[!UICONTROL API Credentials]** -menyn. Klicka på **[!UICONTROL Create new API credentials]** -knappen.
 
 1. Konfigurera dina SMS API-autentiseringsuppgifter enligt nedanstående:
+
+   * **[!UICONTROL SMS vendor]**: Twilio.
 
    * **[!UICONTROL Name]**: välj ett namn för API-autentiseringsuppgifterna.
 
@@ -32,4 +33,3 @@ Om du vill konfigurera Twilio med Journey Optimizer måste du skapa nya API-aute
 1. Klicka **[!UICONTROL Submit]** när du är klar med konfigurationen av dina API-autentiseringsuppgifter.
 
 När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu skapa en kanal för SMS- och MMS-meddelanden. [Läs mer](sms-configuration-surface.md)
-
