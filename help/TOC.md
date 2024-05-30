@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 43adfef7632e7c9ad4c79544286b210abe5a964f
+source-git-commit: 83997271d16e15fb0d7ccdd21aa8ac8b8221a0d5
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1817'
 ht-degree: 19%
 
 ---
@@ -311,9 +311,12 @@ ht-degree: 19%
       + Användningsexempel för personalisering{#personalization-use-cases}
          + [Meddelande om orderstatus](using/personalization/personalization-use-case.md)
          + [E-post om att kunden överger en kundvagn](using/personalization/personalization-use-case-helper-functions.md)
-   + Hantera återanvändbart innehåll {#reusable-content}
-      + [Arbeta med innehållsmallar](using/content-management/content-templates.md)
-      + [Arbeta med fragment](using/content-management/fragments.md)
+   + [Innehållsmallar](using/content-management/content-templates.md)
+   + Återanvändbara innehållsfragment {#fragments}
+      + [Kom igång med fragment](using/content-management/fragments.md)
+      + [Skapa ett fragment](using/content-management/create-fragments.md)
+      + [Spara befintligt innehåll som fragment](using/content-management/save-fragments.md)
+      + [Hantera fragment](using/content-management/manage-fragments.md)
    + Dynamiskt innehåll {#dynamic}
       + [Kom igång med dynamiskt innehåll](using/personalization/get-started-dynamic-content.md)
       + [Skapa villkorsregler](using/personalization/create-conditions.md)
