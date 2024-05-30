@@ -9,10 +9,10 @@ role: Admin, Developer, Architect
 level: Experienced
 keywords: objekt, nivå, åtkomst, kontroll, etiketter, plats, auktorisering
 exl-id: 02ccdd95-426c-4b61-9834-7f2dcd5abdbb
-source-git-commit: c400104c86e1a9a2de819db7743b3f77153ad90b
+source-git-commit: 342b9210f79266cb11628dcdc411f90844a84e37
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 2%
+source-wordcount: '381'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="ajo_olac_manage_access"
 >title="Åtkomstkontroll på objektnivå"
->abstract="Om du använder etiketter som du inte har åtkomst till kommer åtkomsten till objektet att återkallas."
+>abstract="Om du vill behålla åtkomsten till det här objektet använder du bara de etiketter som du har behörighet för."
 
 Med åtkomstkontrollen på objektnivå (OLAC) kan du definiera behörigheter för att hantera dataåtkomst till ett urval av objekt:
 
@@ -48,7 +48,7 @@ I Adobe Journey Optimizer kan du med OLAC skydda data och ge specifik åtkomst t
 
 **[!UICONTROL Labels]** gör att du kan kategorisera datauppsättningar och fält enligt de användarprofiler som gäller för dessa data. **[!UICONTROL Labels]** kan tillämpas när som helst, vilket ger flexibilitet i hur du väljer att styra data.
 
-Du kan skapa etiketter i [!DNL Permissions] produkt. Mer information finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/labels.html).
+Du kan skapa etiketter i [!DNL Permissions] produkt. Mer information finns i [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/labels.html).
 
 **[!UICONTROL Labels]** kan också skapas direkt i Journey Optimizer:
 
