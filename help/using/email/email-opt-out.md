@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: avanmälan, e-post, länk, avanmälan
 exl-id: 4bb51bef-5dab-4a72-8511-1a5e528f4b95
-source-git-commit: 9c095df4c8cab4cae8f5f3a5e000dfc5872b1a8b
+source-git-commit: fb6a2e29f92e4b7e65eb495a654960e3249f9508
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 0%
@@ -31,7 +31,6 @@ Om du vill infoga en länk för att avbryta prenumerationen i ditt e-postinnehå
 * Aktivera **länk för avanmälan med ett klick** för din e-post.  [Lär dig hur du lägger till en länk för avanmälan med ett enda klick](#one-click-opt-out)
 
 * Infoga en **länk till en landningssida**. [Lär dig hur du lägger till en startsida för avanmälan](#opt-out-external-lp)
-
 
 ## Avanmäl dig i ett steg {#opt-out-one-step}
 
