@@ -10,7 +10,7 @@ exl-id: 1b73b398-050a-40bb-a8ae-1c66e3e26ce8
 source-git-commit: f586d2de34939c1cd105c26dc64c656c1f0fb990
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -81,7 +81,7 @@ Följ stegen nedan för att skapa en urvalsstrategi.
 
    * Om du vill använda en viss beräknad poäng för att välja vilket erbjudande du vill leverera väljer du [Formel](#ranking-formula) eller [AI-modell](#ai-ranking).
 
-1. Klicka på **[!UICONTROL Create]**. Den är nu klar att användas i en [beslutspolitik](create-decision.md)
+1. Klicka **[!UICONTROL Create]**. Den är nu klar att användas i en [beslutspolitik](create-decision.md)
 
 ## Välj en rangordningsmetod {#select-ranking-method}
 
