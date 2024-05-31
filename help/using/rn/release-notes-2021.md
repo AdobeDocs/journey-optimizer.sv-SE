@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 hidefromtoc: true
 exl-id: 0e43be98-f471-4860-be84-8f99ab93e983
-source-git-commit: 4461100b19bd84a75f036e300e88c47b9b20db9b
+source-git-commit: 9c095df4c8cab4cae8f5f3a5e000dfc5872b1a8b
 workflow-type: tm+mt
-source-wordcount: '2075'
+source-wordcount: '2032'
 ht-degree: 7%
 
 ---
@@ -277,7 +277,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 **Innehållsdesign**
 
 * **Bakgrund** - Bakgrundsbilder stöds nu i direktförhandsvisning. [Läs mer](../content-management/preview-test.md)
-* **Länk för avanmälan med ett klick** - Du kan infoga en ny typ av länk i ditt e-postinnehåll: **Avanmäl dig** kan man säga upp prenumerationen från att ta emot meddelanden med bara ett klick, utan att behöva omdirigeras till en landningssida för att bekräfta avanmälan. [Läs mer](../privacy/opt-out.md#one-click-opt-out-link)
+  <!--* **One-click opt-out link** - You can insert a new type of link into your email content: the **Opt-out** link allows users to unsubscribe from receiving your communications in just one click, without being redirected to a landing page to confirm opting out. [Learn more](../privacy/opt-out.md#one-click-opt-out-link)-->
 
 **Personalisering**
 

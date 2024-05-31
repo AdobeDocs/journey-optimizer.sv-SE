@@ -9,7 +9,7 @@ feature: Channel Configuration, Email
 topic: Administration
 keywords: e-post, konfiguration, yta, underdomäner
 exl-id: 1fc9a4f6-6c34-4414-b400-aac6bda9ee25
-source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
+source-git-commit: 9c095df4c8cab4cae8f5f3a5e000dfc5872b1a8b
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 7%
@@ -37,7 +37,7 @@ Att kunna skicka e-post via resor och kampanjer i [!DNL Journey Optimizer]måste
 
    * Här väljer du den underdomän som ska användas för att skicka e-postmeddelanden och de IP-pooler som ska associeras med ytan. [Läs mer](email-settings.md#subdomains-and-ip-pools)
 
-   ![](assets/preset-subdomain-ip-pool.png)
+   ![](assets/surface-subdomain-ip-pool.png)
 
    * The **[!UICONTROL Sender email]** och **[!UICONTROL Error email]** adresser måste använda den aktuella markerade delegerade underdomänen. [Läs mer](email-settings.md#email-header)
 

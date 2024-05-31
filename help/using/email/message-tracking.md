@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 keywords: länkar, spåra, övervaka, e-post
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
+source-git-commit: 9c095df4c8cab4cae8f5f3a5e000dfc5872b1a8b
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 0%
@@ -158,7 +158,7 @@ The [E-postdesigner](content-from-scratch.md) gör att du kan hantera spårade U
    * **[!UICONTROL Tracked]**: Aktiverar spårning på denna URL.
    * **[!UICONTROL Opt out]**: Betraktar denna URL som en avanmälnings- eller avanmälnings-URL.
    * **[!UICONTROL Mirror page]**: Ser den här URL:en som en spegelsida.
-   * **[!UICONTROL Never]**: Aktiverar aldrig spårning av denna URL. <!--This information is saved: if the URL appears again in a future message, its tracking is automatically deactivated.-->
+   * **[!UICONTROL Never]**: Aktiverar aldrig spårning av denna URL.
 
 Rapportering om öppningar och klick finns i [Live-rapport](../reports/live-report.md) och i [Global rapport](../reports/global-report.md).
 
