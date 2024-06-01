@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: landning, landningssida, fallstudie
 exl-id: 8c00d783-54a3-45d9-bd8f-4dc58804d922
-source-git-commit: f915ab3430f3051772484708a7a1eca030dc3b0c
+source-git-commit: daba85693c4733333d6a62ebb5c1f290dbcb1511
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '936'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Nedan finns några exempel på hur du kan använda [!DNL Journey Optimizer] landningssidor så att dina kunder kan välja att inte ta emot vissa eller alla meddelanden.
 
-## Prenumerera på en tjänst {#subscription-to-a-service}
+## Prenumeration på en tjänst {#subscription-to-a-service}
 
 Ett av de vanligaste användningsområdena är att bjuda in kunderna till [prenumerera på en tjänst](subscription-list.md) (till exempel ett nyhetsbrev eller ett evenemang) via en landningssida. De viktigaste stegen visas i diagrammet nedan:
 
@@ -88,7 +88,7 @@ Alla användare som har registrerat sig för din aktivitet får bekräftelsemedd
 
 <!--The event registration's subscription list tracks the profiles who registered and you can send them targeted event updates.-->
 
-## Landningssida för avanmälan {#opt-out}
+## Välj ut {#opt-out}
 
 Om du vill att mottagarna ska kunna avbeställa din kommunikation kan du inkludera en länk till en avanmälningssida i dina e-postmeddelanden.
 
@@ -107,7 +107,7 @@ Därför måste du alltid inkludera en **avbeställ länk** i varje e-postmeddel
 
 ### Konfigurera e-postavanmälan {#configure-opt-out}
 
-Följ stegen nedan för att göra det möjligt för mottagarna av ett e-postmeddelande att avbeställa din kommunikation via en landningssida:
+Följ stegen nedan om du vill att mottagarna av ett e-postmeddelande ska kunna avbeställa från din kommunikation via en landningssida.
 
 1. Skapa en landningssida. [Läs mer](create-lp.md)
 
@@ -167,12 +167,6 @@ Information om avanmälan finns i **Samtycketjänstens datauppsättning**. [Läs
 >
 >Även om inga batchar har lagts till i den här datauppsättningen kommer den fortfarande att innehålla information om anmälan/avanmälan.
 
-
-
-**Se även:**
-
-* [Avanmäl dig med ett klick](../email/email-opt-out.md#one-click-opt-out-link)
-* [Länk för avanmälan i e-posthuvudet](../email/email-opt-out.md#unsubscribe-header)
 
 <!--
 
