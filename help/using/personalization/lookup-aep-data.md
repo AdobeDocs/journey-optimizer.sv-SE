@@ -11,9 +11,9 @@ keywords: uttryck, redigerare
 hidefromtoc: true
 hide: true
 exl-id: 2fc10fdd-ca9e-46f0-94ed-2d7ea4de5baf
-source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
+source-git-commit: d2bebc33b6afde51cef12049cfafc8217c377f9d
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '571'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 >
 >Den här funktionen är för närvarande endast tillgänglig som en privat betaversion.
 >
->För närvarande är den bara tillgänglig för testningsändamål i den icke-produktionssandlåda som du har gett Adobe och för de datauppsättningar som har begärts för betaversionen.
+>För tillfället är den bara tillgänglig för **e-postkanal** och för testning i icke-produktionssandlådan som du har gett Adobe och för de datauppsättningar som begärts för betaversionen.
 
 Med Journey Optimizer kan ni utnyttja data från Adobe Experience Platform i personaliseringsredigeraren i [personalisera ert innehåll](../personalization/personalize.md). Stegen är följande:
 
