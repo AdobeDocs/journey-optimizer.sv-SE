@@ -10,9 +10,9 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 03136a25-b826-49e9-86c4-b3711913ee72
-source-git-commit: ddb8c02a309c6e016e95cb8b9fcde24f0f751078
+source-git-commit: a6b7dce05dbcc9c12595646eac47295f4db3aea3
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,11 @@ AI-assistenten är en funktion i användargränssnittet som du kan använda för
 Du öppnar AI-assistenten genom att klicka på ikonen i det övre fältet. AI-assistenten visas till höger på skärmen.
 
 ![](assets/do-not-localize/ai-assistant-open.png)
+
+
+>[!CAUTION]
+>
+>Du måste godkänna användarriktlinjerna för Adobe Experience Cloud Generative AI innan du kan använda AI Assistant. Läs mer om avtalet i [den här sidan](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ai-assistant){target="_blank"}.
 
 I Adobe Journey Optimizer har du tillgång till följande användningsområden:
 
