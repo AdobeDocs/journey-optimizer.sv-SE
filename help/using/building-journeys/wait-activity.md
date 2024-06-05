@@ -2,52 +2,52 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Vänta på aktivitet
-description: Läs mer om vänteaktiviteten
+description: Lär dig hur du konfigurerar vänteaktiviteten
 feature: Journeys, Activities
 topic: Content Management
 role: User
 level: Intermediate
 keywords: vänta, aktivitet, resa, nästa, arbetsyta
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
-source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
+source-git-commit: 505a418819b7a8ac9883d78a4f3d05a78cf5aa31
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 5%
+source-wordcount: '530'
+ht-degree: 0%
 
 ---
 
-# Vänta på aktivitet{#wait-activity}
+# Vänta på aktivitet {#wait-activity}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_wait"
 >title="Vänta på aktivitet"
 >abstract="Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en Wait-aktivitet. Du kan definiera tidpunkten då nästa aktivitet ska köras. Det finns två alternativ: duration och anpassad."
 
-Om du vill vänta innan nästa aktivitet körs i sökvägen kan du använda en **[!UICONTROL Wait]** aktivitet. Du kan definiera tidpunkten då nästa aktivitet ska köras. Följande alternativ är tillgängliga:
+Du kan använda en **[!UICONTROL Wait]** aktivitet som definierar en varaktighet innan nästa aktivitet körs. Följande alternativ är tillgängliga:
 
 * [Varaktighet](#duration)
-* [Anpassat](#custom)
+* [Egen](#custom)
 
 <!--
 * [Email send time optimization](#email_send_time_optimization)
 * [Fixed date](#fixed_date) 
 -->
 
-## Om aktiviteten Vänta{#about_wait}
+## Om aktiviteten Vänta {#about_wait}
 
-Den maximala väntetiden är 29 dagar. I testläge **[!UICONTROL Wait time in test]** kan du definiera hur länge varje vänteaktivitet ska vara. Den förinställda tiden är tio sekunder. Detta säkerställer att du får testresultaten snabbt. Läs [den här sidan](../building-journeys/testing-the-journey.md).
+Den maximala väntetiden är 29 dagar. I testläge **[!UICONTROL Wait time in test]** kan du definiera hur länge varje vänteaktivitet ska vara. Standardtiden är 10 sekunder. Detta säkerställer att du får testresultaten snabbt. Läs mer i [den här sidan](../building-journeys/testing-the-journey.md).
 
-Var försiktig när du använder flera Wait-aktiviteter under en resa när den globala resetidsgränsen är 30 dagar, vilket innebär att en profil alltid kommer att försvinna 30 dagar efter att han/hon har registrerat sig. Läs [den här sidan](../building-journeys/journey-gs.md#global_timeout).
+Var försiktig när du använder flera **Vänta** aktiviteter under en resa, då tidsgränsen för den globala resan är 30 dagar, vilket innebär att en profil alltid kommer att försvinna 30 dagar efter att han/hon har gått in i den. Läs mer i [den här sidan](../building-journeys/journey-gs.md#global_timeout).
 
-En enskild person kan bara förlägga en vänteaktivitet om han eller hon har tillräckligt med tid kvar på resan för att slutföra väntetiden innan tidsgränsen på 30 dagar för resan har nåtts. Om du till exempel lägger till två vänteaktiviteter som är inställda på 20 dagar vardera, kommer systemet att upptäcka att den andra väntetiden kommer att sluta efter timeout-värdet på 30 dagar. Den andra väntetiden kommer därför att ignoreras och personen kommer att avsluta resan innan den påbörjas. I det exemplet stannar kunden totalt 20 dagar under resan.
+En individ kan ange en **Vänta** endast om de har tillräckligt med tid kvar på resan för att slutföra väntetiden före tidsgränsen på 30 dagar. Om du till exempel lägger till två **Vänta** aktiviteterna inställda på 20 dagar vardera upptäcker systemet att den andra **Vänta** aktiviteten upphör efter tidsgränsen på 30 dagar. Den andra **Vänta** aktiviteten kommer därför att ignoreras och personen kommer att avsluta resan innan den påbörjas. I det exemplet stannar kunden totalt 20 dagar under resan.
 
-Det är bäst att inte använda väntetider för att blockera återinträde. Använd i stället **Tillåt återinträde** på egenskapsnivå för resan. Läs [den här sidan](../building-journeys/journey-gs.md#entrance).
+En god vana att inte använda **Vänta** aktiviteter för att blockera återinträde. Använd i stället **Tillåt återinträde** på egenskapsnivå för resan. Läs mer i [den här sidan](../building-journeys/journey-gs.md#entrance).
 
-## Väntetid{#duration}
+## Väntetid {#duration}
 
 Ange väntetiden innan nästa aktivitet körs. Maximala längden är 29 dagar.
 
-![](assets/journey55.png)
+![Definiera väntetiden](assets/journey55.png)
 
 <!--
 ## Fixed date wait{#fixed_date}
@@ -58,19 +58,25 @@ Select the date for the execution of the next activity.
 
 -->
 
-## Anpassad väntetid{#custom}
+## Anpassad väntetid {#custom}
 
-Med det här alternativet kan du definiera ett anpassat datum, till exempel 12 juli 2023 klockan 17.00, med hjälp av ett avancerat uttryck som baseras på ett fält som kommer från en händelse eller en datakälla. Du kan inte definiera en anpassad längd, till exempel 7 dagar. Uttrycket i uttrycksredigeraren ska ha formatet dateTimeOnly. Se detta [page](expression/expressionadvanced.md). Mer information om formatet dateTimeOnly finns i [page](expression/data-types.md).
+Använd **Egen** typ för att definiera ett anpassat datum, med hjälp av ett avancerat uttryck som baseras på ett fält som kommer från en händelse eller ett anpassat åtgärdssvar. Du kan inte definiera en relativ varaktighet direkt, till exempel 7 dagar, men du kan använda funktioner för att beräkna den om det behövs (till exempel 2 dagar efter köpet).
+
+![Definiera en anpassad väntan med ett uttryck](assets/journey57.png)
+
+Uttrycket i redigeraren ska innehålla en `dateTimeOnly` format. Se [den här sidan](expression/expressionadvanced.md). Mer information om formatet dateTimeOnly finns i [den här sidan](expression/data-types.md).
+
+Det bästa sättet är att använda anpassade datum som är specifika för dina profiler och undvika att använda samma datum för alla. Definiera till exempel inte `toDateTimeOnly('2024-01-01T01:11:00Z')` men snarare `toDateTimeOnly(@event{Event.productDeliveryDate})` som är specifik för varje profil. Tänk på att användning av fasta datum kan orsaka problem vid körningen av din resa.
+
 
 >[!NOTE]
 >
->Du kan återanvända ett dateTimeOnly-uttryck eller använda en funktion för att konvertera till dateTimeOnly. Till exempel: toDateTimeOnly(@event{Event.offerOpened.activity.endTime}), fältet i händelsen har formatet 2023-08-12T09:46:06Z.
+>Du kan använda `dateTimeOnly` uttryck eller använda en funktion för att konvertera till `dateTimeOnly`. Till exempel: `toDateTimeOnly(@event{Event.offerOpened.activity.endTime})`, fältet i händelse av formatet 2023-08-12T09:46:06Z.
 >
->The **tidszon** är förväntat i egenskaperna för din resa. Därför är det inte möjligt att i dag gå från gränssnittet till en direkt punkt vid en fullständig ISO-8601-tidsstämpelblandningstid och tidszonsförskjutning som 2023-08-12T09:46:6.982-05. Läs [den här sidan](../building-journeys/timezone-management.md).
+>The **tidszon** är förväntat i egenskaperna för din resa. Därför är det inte möjligt att direkt peka från användargränssnittet vid en fullständig ISO-8601-tidsstämpelblandningstid och tidszonsförskjutning som 2023-08-12T09:46:6.982-05. [Läs mer](../building-journeys/timezone-management.md).
 
-![](assets/journey57.png)
 
-Om du vill verifiera att vänteaktiviteten fungerar som förväntat kan du använda steghändelser. Läs [den här sidan](../reports/query-examples.md#common-queries).
+Om du vill verifiera att vänteaktiviteten fungerar som förväntat kan du använda steghändelser. [Läs mer](../reports/query-examples.md#common-queries).
 
 <!--## Email send time optimization{#email_send_time_optimization}
 
