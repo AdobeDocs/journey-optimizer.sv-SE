@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: vänta, aktivitet, resa, nästa, arbetsyta
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
-source-git-commit: 505a418819b7a8ac9883d78a4f3d05a78cf5aa31
+source-git-commit: db48c85e3707fcd5fbee61994d488cf640e9afa7
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,9 @@ ht-degree: 0%
 >title="Vänta på aktivitet"
 >abstract="Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en Wait-aktivitet. Du kan definiera tidpunkten då nästa aktivitet ska köras. Det finns två alternativ: duration och anpassad."
 
-Du kan använda en **[!UICONTROL Wait]** aktivitet som definierar en varaktighet innan nästa aktivitet körs. Följande alternativ är tillgängliga:
+Du kan använda en **[!UICONTROL Wait]** aktivitet som definierar en varaktighet innan nästa aktivitet körs.  Maximal väntetid är **29 dagar**.
+
+Följande typer är tillgängliga:
 
 * [Varaktighet](#duration)
 * [Egen](#custom)
@@ -33,19 +35,26 @@ Du kan använda en **[!UICONTROL Wait]** aktivitet som definierar en varaktighet
 * [Fixed date](#fixed_date) 
 -->
 
-## Om aktiviteten Vänta {#about_wait}
+## Recommendations {#wait-recommendations}
 
-Den maximala väntetiden är 29 dagar. I testläge **[!UICONTROL Wait time in test]** kan du definiera hur länge varje vänteaktivitet ska vara. Standardtiden är 10 sekunder. Detta säkerställer att du får testresultaten snabbt. Läs mer i [den här sidan](../building-journeys/testing-the-journey.md).
+### Flera väntande aktiviteter {#multiple-wait-activities}
 
-Var försiktig när du använder flera **Vänta** aktiviteter under en resa, då tidsgränsen för den globala resan är 30 dagar, vilket innebär att en profil alltid kommer att försvinna 30 dagar efter att han/hon har gått in i den. Läs mer i [den här sidan](../building-journeys/journey-gs.md#global_timeout).
+Vid användning av flera **Vänta** ska du vara medveten om att tidsgränsen för den globala resan är 30 dagar, vilket innebär att profiler alltid utesluts från resan högst 30 dagar efter att de har gått in i den. Läs mer i [den här sidan](../building-journeys/journey-gs.md#global_timeout).
 
 En individ kan ange en **Vänta** endast om de har tillräckligt med tid kvar på resan för att slutföra väntetiden före tidsgränsen på 30 dagar. Om du till exempel lägger till två **Vänta** aktiviteterna inställda på 20 dagar vardera upptäcker systemet att den andra **Vänta** aktiviteten upphör efter tidsgränsen på 30 dagar. Den andra **Vänta** aktiviteten kommer därför att ignoreras och personen kommer att avsluta resan innan den påbörjas. I det exemplet stannar kunden totalt 20 dagar under resan.
 
+### Vänta och återinträde {#wait-re-entrance}
+
 En god vana att inte använda **Vänta** aktiviteter för att blockera återinträde. Använd i stället **Tillåt återinträde** på egenskapsnivå för resan. Läs mer i [den här sidan](../building-journeys/journey-gs.md#entrance).
+
+### Vänta- och testläge {#wait-test-modd}
+
+I testläge **[!UICONTROL Wait time in test]** kan du definiera tiden för varje **Vänta** aktiviteten varar. Standardtiden är 10 sekunder. Detta säkerställer att du får testresultaten snabbt. Läs mer i [den här sidan](../building-journeys/testing-the-journey.md).
+
 
 ## Väntetid {#duration}
 
-Ange väntetiden innan nästa aktivitet körs. Maximala längden är 29 dagar.
+Välj **Varaktighet** typ för att ange väntetiden innan nästa aktivitet körs. Den maximala längden är **29 dagar**.
 
 ![Definiera väntetiden](assets/journey55.png)
 
@@ -60,7 +69,7 @@ Select the date for the execution of the next activity.
 
 ## Anpassad väntetid {#custom}
 
-Använd **Egen** typ för att definiera ett anpassat datum, med hjälp av ett avancerat uttryck som baseras på ett fält som kommer från en händelse eller ett anpassat åtgärdssvar. Du kan inte definiera en relativ varaktighet direkt, till exempel 7 dagar, men du kan använda funktioner för att beräkna den om det behövs (till exempel 2 dagar efter köpet).
+Välj **Egen** typ för att definiera ett anpassat datum, med hjälp av ett avancerat uttryck som baseras på ett fält som kommer från en händelse eller ett anpassat åtgärdssvar. Du kan inte definiera en relativ varaktighet direkt, till exempel 7 dagar, men du kan använda funktioner för att beräkna den om det behövs (till exempel 2 dagar efter köpet).
 
 ![Definiera en anpassad väntan med ett uttryck](assets/journey57.png)
 

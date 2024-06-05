@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: fcd8c4077bead912d709b726c6ff15464357a8be
+source-git-commit: db48c85e3707fcd5fbee61994d488cf640e9afa7
 workflow-type: tm+mt
-source-wordcount: '5330'
+source-wordcount: '5351'
 ht-degree: 12%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 12%
 # Dokumentationsuppdateringar {#latest-updates}
 
 På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimizer] dokumentation.
+
+## Juni 2024 {#june-2024}
+
+* Sidan om hur du konfigurerar en **Vänta** aktiviteten i en resa har reformerats och förbättrats. [Läs mer](../building-journeys/wait-activity.md)
 
 ## Maj 2024 {#may-2024}
 
