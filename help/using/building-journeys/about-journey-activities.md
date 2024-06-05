@@ -9,20 +9,20 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, aktiviteter, komma igång, händelser, åtgärd
 exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
-source-git-commit: 28a4f04ebcda27213d3bac763fb9bea8ea4a0146
+source-git-commit: 9562a194244e2a3323680d98cc8aa5ed65d93a67
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 13%
+source-wordcount: '515'
+ht-degree: 0%
 
 ---
 
 # Kom igång med reseaktiviteter {#about-journey-activities}
 
-Kombinera de olika händelserna, orkestreringen och åtgärderna för att skapa scenarier i flera steg över olika kanaler.
+Kombinera de olika händelserna, samordningen och åtgärderna för att skapa flerstegsscenarier för olika kanaler.
 
-## Händelseaktiviteter {#event-activities}
+## Evenemangsaktiviteter {#event-activities}
 
-Det är händelser som utlöser en personaliserad resa, till exempel ett onlineköp. När någon väl går in på en resa förflyttas de som en individ, och inga två personer följer med på samma hastighet eller längs samma väg. När du påbörjar en resa med en händelse aktiveras resan när händelsen tas emot. Varje person på resan följer sedan, individuellt, de steg som definieras på din resa.
+Personaliserade resor utlöses av händelser, t.ex. ett onlineköp. När en profil går in på en resa förflyttas de som en individ, och inga två personer följer med på samma hastighet eller längs samma väg. När du påbörjar en resa med en händelse aktiveras resan när händelsen tas emot. Varje person på resan följer sedan, individuellt, de steg som definieras på din resa.
 
 Händelser som konfigurerats av den tekniska användaren (se [den här sidan](../event/about-events.md)) visas i den första kategorin på paletten, till vänster på skärmen. Följande aktiviteter är tillgängliga:
 
@@ -36,7 +36,7 @@ Starta din resa genom att dra och släppa en händelseaktivitet. Du kan också d
 
 ![](assets/journey44.png)
 
-## Orkestreringsaktiviteter {#orchestration-activities}
+## Orchestration-verksamhet {#orchestration-activities}
 
 Orchestration-aktiviteter är olika villkor som hjälper till att bestämma nästa steg i resan. Det kan vara om personen har ett öppet supportärende eller inte, väderprognosen på sin nuvarande plats, om de slutförde ett köp eller inte, eller uppnådde 10 000 förmånspoäng.
 
@@ -48,7 +48,7 @@ På paletten till vänster på skärmen finns följande orkestreringsfunktioner:
 
 ![](assets/journey49.png)
 
-## Åtgärdsaktiviteter {#action-activities}
+## Verksamheter {#action-activities}
 
 Åtgärder är vad du vill ska hända som ett resultat av någon typ av utlösare, som att skicka ett meddelande. Det är den del av resan som kundupplevelsen innebär.
 
@@ -92,6 +92,6 @@ I vissa specifika sammanhang kan du åsidosätta parametrarnas värden för spec
 
 ### Lägg till en alternativ sökväg
 
-När ett fel inträffar i en åtgärd eller ett villkor upphör en individs resa. Det enda sättet att få den att fortsätta är att markera rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [det här avsnittet](../building-journeys/using-the-journey-designer.md#paths).
+När ett fel inträffar i en åtgärd eller ett villkor upphör kundens resa. Det enda sättet att få det att fortsätta är att markera kryssrutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [det här avsnittet](../building-journeys/using-the-journey-designer.md#paths).
 
 ![](assets/journey42.png)
