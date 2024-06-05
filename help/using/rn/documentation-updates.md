@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: daba85693c4733333d6a62ebb5c1f290dbcb1511
+source-git-commit: fcd8c4077bead912d709b726c6ff15464357a8be
 workflow-type: tm+mt
-source-wordcount: '5331'
+source-wordcount: '5330'
 ht-degree: 12%
 
 ---
@@ -391,7 +391,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 
 * Förbättrade **Snabbstart** sida med steg för olika profiler. [Läs mer](../start/quick-start.md)
 
-* Nu gäller alla funktioner för beslutshantering som beskrivs i det särskilda avsnittet även för Adobe Experience Platform-användare som använder Offera decisioningens programtjänst. [Läs mer](../offers/get-started/starting-offer-decisioning.md)
+* Nu gäller alla funktioner för beslutshantering som beskrivs i det särskilda avsnittet även för de Adobe Experience Platform-användare som använder Offera decisioningen. [Läs mer](../offers/get-started/starting-offer-decisioning.md)
 
 * Lagt till ett underavsnitt för att förtydliga skillnaderna mellan att använda målgrupper jämfört med beslutsregler när en begränsning tillämpas för att begränsa urvalet av erbjudanden för en viss placering. [Läs mer](../offers/offer-activities/create-offer-activities.md#segments-vs-decision-rules)
 

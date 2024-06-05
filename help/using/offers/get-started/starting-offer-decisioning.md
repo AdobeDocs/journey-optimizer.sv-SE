@@ -1,15 +1,15 @@
 ---
 title: Kom igång med Beslutshantering
-description: Lär dig om hur Adobe Journey Optimizer kan hjälpa dig att skicka rätt erbjudande till kunderna vid rätt tidpunkt
+description: Läs om hur Adobe Journey Optimizer kan hjälpa er att skicka rätt erbjudande till era kunder vid rätt tidpunkt
 feature: Decision Management
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: 659984cb-b232-47ba-9f5a-604bf97a5e92
-source-git-commit: d4a91dcd032af03504ab7bbf97b2e19338c32397
+source-git-commit: fcd8c4077bead912d709b726c6ff15464357a8be
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 49%
+source-wordcount: '892'
+ht-degree: 21%
 
 ---
 
@@ -37,7 +37,7 @@ Några fördelar:
 
 >[!NOTE]
 >
->Om du är [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} använder **Offer decisioning** för programtjänsten gäller alla funktioner för beslutshantering som beskrivs i detta avsnitt även dig.
+>Om du är [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} använder **Offer decisioning** Alla funktioner för beslutshantering som beskrivs i detta avsnitt gäller även dig.
 
 ## Om erbjudanden och beslut {#about-offers-and-decisions}
 
@@ -79,31 +79,31 @@ De behörigheter som är specifika för beslutshanteringen finns i [det här avs
 
 Nedan finns en lista över de viktigaste koncept du kommer att arbeta med när du använder Beslutshantering.
 
-* **Begränsning** eller **antal begränsningar**: en begränsning för att definiera hur många gånger ett erbjudande presenteras. Det finns två typer av begränsningar. Hur många gånger ett erbjudande kan föreslås för den kombinerade målgruppen, även kallat ”Total begränsning” och hur många gånger ett erbjudande kan föreslås för samma slutanvändare, även kallat ”Profilbegränsning”.
+* **Takning** eller **Frekvensbegränsning**: Capping används som en begränsning för att definiera hur många gånger ett erbjudande presenteras. Det finns två typer av tak, hur många gånger ett erbjudande kan föreslås för den kombinerade målgruppen, även kallat&quot;Total caps&quot; och hur många gånger ett erbjudande kan föreslås för samma slutanvändare, även kallat&quot;Profile Cap&quot;.
 
-* **Samlingar**: samlingar är underuppsättningar av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare såsom erbjudandets kategori.
+* **Samlingar**: Samlingar är delmängder av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare, t.ex. erbjudandets kategori.
 
 * **Beslut**: Ett beslut innehåller den logik som ligger till grund för valet av erbjudande.
 
-* **Beslutsregel**: beslutsregler är begränsningar som läggs till på ett personaliserat erbjudande och tillämpas på en profil för att fastställa berättigande.
+* **Beslutsregel**: Beslutsreglerna läggs till i ett personligt erbjudande och tillämpas på en profil för att avgöra om det är berättigat.
 
-* **Berättigat erbjudande**: ett berättigat erbjudande uppfyller de krav som anges ovan och kan konsekvent erbjudas till en profil.
+* **Berättigat erbjudande**: Ett kvalificerat erbjudande uppfyller de krav som anges ovan och som konsekvent kan erbjudas en profil.
 
 * **Beslutshantering**: Gör att ni kan skapa och leverera personaliserade erbjudandeupplevelser för slutanvändare i alla kanaler och i alla tillämpningar med hjälp av logiska funktioner och beslutsregler.
 
-* **Reserverbjudanden**: ett reserverbjudande är erbjudandet som visas när en slutanvändare inte är berättigad till något av de personaliserade erbjudandena i samlingen.
+* **Reserverbjudanden**: Ett reserverbjudande är standarderbjudande som visas när en slutanvändare inte är berättigad till något av de anpassade erbjudandena i samlingen.
 
-* **Erbjudande**: ett erbjudande är ett marknadsföringsmeddelande som kan ha kopplade regler som fastställer vem som kan se erbjudandet.
+* **Erbjudande**: Ett erbjudande är ett marknadsföringsmeddelande som kan ha kopplade regler som anger vem som kan se erbjudandet.
 
 * **Erbjudandebibliotek**: Erbjudandebiblioteket är ett centralt bibliotek som används för att hantera personaliserade erbjudanden och reserverbjudanden, beslutsregler och beslut.
 
-* **Personaliserade erbjudanden**: ett personaliserat erbjudande är ett anpassningsbart marknadsföringsmeddelande som baseras på berättiganderegler och -begränsningar.
+* **Personaliserade erbjudanden**: Ett personaliserat erbjudande är ett anpassningsbart marknadsföringsmeddelande baserat på regler och begränsningar för behörighet.
 
-* **Placeringar**: en placering är den plats och/eller det sammanhang där ett erbjudande visas för en slutanvändare.
+* **Placeringar**: En placering är den plats och/eller det sammanhang där ett erbjudande visas för en slutanvändare.
 
-* **Prioritet**: prioritet används för att rangordna erbjudanden som uppfyller alla begränsningar såsom berättigande, kalender och begränsningar.
+* **Prioritet**: Prioritet används för att rangordna erbjudanden som uppfyller alla krav, som berättigande, kalender och appning.
 
-* **Representationer**: en representation är information som används av en kanal, såsom plats eller språk, för att visa ett erbjudande.
+* **Representationer**: En representation är information som används av en kanal, till exempel plats eller språk för att visa ett erbjudande.
 
 ## Instruktionsfilmer{#video}
 
