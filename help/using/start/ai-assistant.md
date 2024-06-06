@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 03136a25-b826-49e9-86c4-b3711913ee72
-source-git-commit: 2e0c8dbe40e953ceb59df43c91bcd12a07e048e9
+source-git-commit: 02a3ed25c7047ce709271a386d9ab4c2e976e42f
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Du öppnar AI-assistenten genom att klicka på ikonen i det övre fältet. AI-as
 
 >[!CAUTION]
 >
->Du måste godkänna användarriktlinjerna för Adobe Experience Cloud Generative AI innan du kan använda AI Assistant. Läs mer om avtalet i [den här sidan](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ai-assistant){target="_blank"}.
+>Du måste godkänna användarriktlinjerna för Adobe Experience Cloud Generative AI innan du kan använda AI Assistant. Läs mer om avtalet i [den här sidan](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"}.
 
 I Adobe Journey Optimizer har du tillgång till följande användningsområden:
 
@@ -58,4 +58,4 @@ Kontrollera svaret och använd **Visa källor** för att få direktlänkar till 
 
 Använd reglaget uppåt eller nedåt för att betygsätta svaret.
 
-Om du vill lära dig hur du använder AI Assistant läser du exempelmålen som du kan uppnå med AI Assistant och lär dig mer om hur AI Assistant fungerar, se [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ai-assistant){target="_blank"}.
+Om du vill lära dig hur du använder AI Assistant läser du exempelmålen som du kan uppnå med AI Assistant och lär dig mer om hur AI Assistant fungerar, se [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"}.
