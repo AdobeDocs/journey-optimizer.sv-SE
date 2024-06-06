@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 03136a25-b826-49e9-86c4-b3711913ee72
-source-git-commit: 02a3ed25c7047ce709271a386d9ab4c2e976e42f
+source-git-commit: f64cf166d5fa732ae0353414b5638c97d43099a1
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%
@@ -30,14 +30,18 @@ Du öppnar AI-assistenten genom att klicka på ikonen i det övre fältet. AI-as
 
 I Adobe Journey Optimizer har du tillgång till följande användningsområden:
 
-* Produktkunskap (allmän tillgänglighet) Produktkunskapsfrågor handlar om Adobe koncept som rör aspekter av Adobe Journey Optimizer. Några exempel på frågor om produktkunskap är:
+* **Produktkunskap** (Allmän tillgänglighet)
+
+  Frågor om produktkunskaper handlar om Adobe koncept som rör aspekter av Adobe Journey Optimizer. Några exempel på frågor om produktkunskap är:
 
    * Hur många aktiva aktiviteter kan jag ha i en Adobe Journey Optimizer-sandlåda?
    * Hur skapar jag en kampanj i Adobe Journey Optimizer?
    * Hur skapar jag en anpassad åtgärd för Adobe Journey Optimizer resor?
 
 
-* Operativa insikter om resor (betaversion) Frågor om driftsinsikter gäller reseobjekten i organisationens sandlåda. Några exempel på frågor eller frågor om driftsinsikter är:
+* **Driftsinsikter** under resor (beta)
+
+  Frågor om driftsinsikt handlar om reseobjekten i organisationens sandlåda. Några exempel på frågor eller frågor om driftsinsikter är:
 
    * Hur många direktresor har jag i Adobe Journey Optimizer?
    * Ge mig en lista över alla schemalagda resor
@@ -50,11 +54,11 @@ I Adobe Journey Optimizer har du tillgång till följande användningsområden:
 
 Om du vill ställa en fråga anger du den i fältet längst ned på skärmen och trycker på Retur.
 
-![](assets/do-not-localize/ai-assistant-ask.png){width="300" align="left"}
+![](assets/do-not-localize/ai-assistant-ask.png){width="50%" align="left"}
 
 Kontrollera svaret och använd **Visa källor** för att få direktlänkar till produktdokumentationen och få mer information.
 
-![](assets/do-not-localize/ai-assistant-answer.png){width="300" align="left"}
+![](assets/do-not-localize/ai-assistant-answer.png){width="50%" align="left"}
 
 Använd reglaget uppåt eller nedåt för att betygsätta svaret.
 
