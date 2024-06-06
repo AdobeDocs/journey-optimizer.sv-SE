@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: vänta, aktivitet, resa, nästa, arbetsyta
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
-source-git-commit: db48c85e3707fcd5fbee61994d488cf640e9afa7
+source-git-commit: ab6292e93bf848671d39037bdfe0de8bdd7191b6
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
@@ -25,10 +25,10 @@ ht-degree: 0%
 
 Du kan använda en **[!UICONTROL Wait]** aktivitet som definierar en varaktighet innan nästa aktivitet körs.  Maximal väntetid är **29 dagar**.
 
-Följande typer är tillgängliga:
+Du kan ange två typer av **Vänta** aktivitet:
 
-* [Varaktighet](#duration)
-* [Egen](#custom)
+* En väntan baserad på en fast varaktighet. [Läs mer](#duration)
+* En anpassad väntan som använder funktioner för att beräkna den. [Läs mer](#custom)
 
 <!--
 * [Email send time optimization](#email_send_time_optimization)
@@ -51,8 +51,9 @@ En god vana att inte använda **Vänta** aktiviteter för att blockera återintr
 
 I testläge **[!UICONTROL Wait time in test]** kan du definiera tiden för varje **Vänta** aktiviteten varar. Standardtiden är 10 sekunder. Detta säkerställer att du får testresultaten snabbt. Läs mer i [den här sidan](../building-journeys/testing-the-journey.md).
 
+## Konfiguration {#wait-configuration}
 
-## Väntetid {#duration}
+### Väntetid {#duration}
 
 Välj **Varaktighet** typ för att ange väntetiden innan nästa aktivitet körs. Den maximala längden är **29 dagar**.
 
@@ -67,9 +68,9 @@ Select the date for the execution of the next activity.
 
 -->
 
-## Anpassad väntetid {#custom}
+### Anpassad väntetid {#custom}
 
-Välj **Egen** typ för att definiera ett anpassat datum, med hjälp av ett avancerat uttryck som baseras på ett fält som kommer från en händelse eller ett anpassat åtgärdssvar. Du kan inte definiera en relativ varaktighet direkt, till exempel 7 dagar, men du kan använda funktioner för att beräkna den om det behövs (till exempel 2 dagar efter köpet).
+Välj **Egen** typ för att definiera en anpassad varaktighet, med hjälp av ett avancerat uttryck som baseras på ett fält som kommer från en händelse eller ett anpassat åtgärdssvar. Du kan inte definiera en relativ varaktighet direkt, till exempel 7 dagar, men du kan använda funktioner för att beräkna den om det behövs (till exempel 2 dagar efter köpet).
 
 ![Definiera en anpassad väntan med ett uttryck](assets/journey57.png)
 
