@@ -2,16 +2,16 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Journey Optimizer
-description: Identifiera de viktigaste funktionerna och användningsområdena i Adobe Journey Optimizer
+description: Adobe Journey Optimizer viktigaste funktioner och användningsområden
 feature: Get Started
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 956178c0-9985-4ff8-a29e-17dd367ce4d4
-source-git-commit: c2f2dde40385f56ea86be15a5857fa9e5e2e2fed
+source-git-commit: ceead77b1b0f03d853f69c763a09c9fbd0584723
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 2%
+source-wordcount: '660'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 2%
 ➡️ [Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/introduction-to-journey-optimizer/introduction.html){target="_blank"} (video)
 
 
-## Användningsfall {#use-cases}
+## Användningsexempel {#use-cases}
 
 * Marknadsförarna kan använda [!DNL Adobe Journey Optimizer] för att skicka både individanpassad kommunikation och målgruppsbaserad kommunikation. En klädbutik skickar till exempel vanligen enkäter till alla kunder som köpt produkter den senaste veckan. På grund av infallsvädret försenades några leveranser. När man ser vilka kunder som inte har fått leveranser kan klädbutiken utesluta dem från den schemalagda kundnöjdheten och istället skicka ett personligt mejl med en ursäkt för fördröjningen och erbjuda en rabattkod med produktrekommendationer som baseras på kundens tidigare inköp.
 
@@ -34,7 +34,7 @@ ht-degree: 2%
 
 * Icke-marknadsförare som verksamhetsteam och kundsupport som är engagerade i kundupplevelsen kan använda [!DNL Adobe Journey Optimizer] för att hantera en mängd olika uppgifter, till exempel operativa meddelanden eller till och med övervaka introduktionsprocessen. Exempel: en nöjespark där parkbesökare laddar ned en mobilapp som en del av sin parkupplevelse. Underhållspersonal kan använda [!DNL Adobe Journey Optimizer] att meddela parkbesökare om de platser som för närvarande är stängda på grund av underhåll.
 
-## Viktiga möjligheter {#key-capabilities}
+## Viktiga funktioner {#key-capabilities}
 
 [!DNL Adobe Journey Optimizer] är en flexibel och skalbar applikation för att skapa och leverera personaliserade, sammankopplade och vältajmade kundupplevelser i alla appar, enheter och kanaler.
 
@@ -61,9 +61,9 @@ Förstå den grundläggande arkitekturen i [!DNL Adobe Journey Optimizer], integ
 > Du måste också vara medveten om [Garantier för kundprofildata i realtid innan du startar](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html).
 
 
-**Se även**
-
-* [Viktiga steg att starta](quick-start.md)
-* [Designa resor och skicka meddelanden](../building-journeys/journey-gs.md)
-* [Live-rapporter](../reports/live-report.md)
-* [Journey Optimizer - säkerhetsöversikt](https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf) (PDF)
+>[!MORELIKETHIS]
+>
+>* [Viktiga steg att starta](quick-start.md)
+>* [Designa resor och skicka meddelanden](../building-journeys/journey-gs.md)
+>* [Live-rapporter](../reports/live-report.md)
+>* [Journey Optimizer - säkerhetsöversikt](https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf) (PDF)

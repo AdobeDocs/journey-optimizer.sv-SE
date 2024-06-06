@@ -8,10 +8,10 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: scheman, plattform, data, struktur
 exl-id: c2a8df2e-ff94-4f9a-a53e-bbf9f663cc81
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: ceead77b1b0f03d853f69c763a09c9fbd0584723
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 2%
+source-wordcount: '286'
+ht-degree: 0%
 
 ---
 
@@ -42,10 +42,10 @@ Lär dig hur du skapar ett schema, lägger till fältgrupper, skapar och konfigu
 
 >[!VIDEO](https://video.tv.adobe.com/v/334461?quality=12)
 
-**Se även**
-
-* [Skapa ett schema, en datauppsättning och inmatningsdata för att lägga till testprofiler i Journey Optimizer](../audience/creating-test-profiles.md)
-* [XDM - systemöversikt](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}
-* [Bästa tillvägagångssätt för datamodellering](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html){target="_blank"}
-* [Skapa ett schema med API:t för schemaregister](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-api.html){target="_blank"}
-* [Definiera en relation mellan två scheman med Schemaredigeraren](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html){target="_blank"}
+>[!MORELIKETHIS]
+>
+>* [Skapa ett schema, en datauppsättning och inmatningsdata för att lägga till testprofiler i Journey Optimizer](../audience/creating-test-profiles.md)
+>* [XDM - systemöversikt](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}
+>* [Bästa tillvägagångssätt för datamodellering](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html){target="_blank"}
+>* [Skapa ett schema med API:t för schemaregister](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-api.html){target="_blank"}
+>* [Definiera en relation mellan två scheman med Schemaredigeraren](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html){target="_blank"}
