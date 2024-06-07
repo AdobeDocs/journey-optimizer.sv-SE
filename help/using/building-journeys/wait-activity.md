@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: vänta, aktivitet, resa, nästa, arbetsyta
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
-source-git-commit: ab6292e93bf848671d39037bdfe0de8bdd7191b6
+source-git-commit: 846c601c02a28119dddb3029e5273cfccf141a2c
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,8 @@ Du kan använda en **[!UICONTROL Wait]** aktivitet som definierar en varaktighet
 
 Du kan ange två typer av **Vänta** aktivitet:
 
-* En väntan baserad på en fast varaktighet. [Läs mer](#duration)
-* En anpassad väntan som använder funktioner för att beräkna den. [Läs mer](#custom)
+* En väntetid baserad på en relativ längd. [Läs mer](#duration)
+* Ett anpassat datum som använder funktioner för att beräkna det. [Läs mer](#custom)
 
 <!--
 * [Email send time optimization](#email_send_time_optimization)
@@ -55,7 +55,7 @@ I testläge **[!UICONTROL Wait time in test]** kan du definiera tiden för varje
 
 ### Väntetid {#duration}
 
-Välj **Varaktighet** typ för att ange väntetiden innan nästa aktivitet körs. Den maximala längden är **29 dagar**.
+Välj **Varaktighet** typ för att ange den relativa väntetiden innan nästa aktivitet körs. Den maximala längden är **29 dagar**.
 
 ![Definiera väntetiden](assets/journey55.png)
 
@@ -70,7 +70,7 @@ Select the date for the execution of the next activity.
 
 ### Anpassad väntetid {#custom}
 
-Välj **Egen** typ för att definiera en anpassad varaktighet, med hjälp av ett avancerat uttryck som baseras på ett fält som kommer från en händelse eller ett anpassat åtgärdssvar. Du kan inte definiera en relativ varaktighet direkt, till exempel 7 dagar, men du kan använda funktioner för att beräkna den om det behövs (till exempel 2 dagar efter köpet).
+Välj **Egen** typ för att definiera ett anpassat datum, med hjälp av ett avancerat uttryck som baseras på ett fält som kommer från en händelse eller ett anpassat åtgärdssvar. Du kan inte definiera en relativ varaktighet direkt, till exempel 7 dagar, men du kan använda funktioner för att beräkna den om det behövs (till exempel 2 dagar efter köpet).
 
 ![Definiera en anpassad väntan med ett uttryck](assets/journey57.png)
 
