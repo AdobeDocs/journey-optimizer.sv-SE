@@ -7,15 +7,20 @@ feature: Fragments
 topic: Content Management
 role: User
 level: Beginner, Intermediate
-source-git-commit: 83997271d16e15fb0d7ccdd21aa8ac8b8221a0d5
+exl-id: 1fc708e1-a993-4a2a-809c-c5dc08a4bae1
+source-git-commit: e35f6b8ddc1e7bb8a737b33be200115a3022c99c
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 2%
+source-wordcount: '494'
+ht-degree: 1%
 
 ---
 
-
 # Hantera fragment {#manage-fragments}
+
+>[!CONTEXTUALHELP]
+>id="ajo_fragment_statuses"
+>title="Nya fragmentstatusar"
+>abstract="Sedan **Utkast** och **Live** statusvärden har introducerats i Journey Optimizer Juniversion, där alla fragment som skapats före den här versionen har statusen &quot;Utkast&quot;, även om de används under en resa eller kampanj. Om du ändrar något i dessa fragment måste du publicera dem för att göra dem&quot;Live&quot; och sprida ändringarna till tillhörande kampanjer och resor."
 
 Om du vill hantera dina fragment kan du komma åt fragmentlistan från **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]** vänster meny.
 
