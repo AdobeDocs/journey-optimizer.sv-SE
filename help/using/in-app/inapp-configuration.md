@@ -6,7 +6,7 @@ feature: In App
 level: Intermediate
 keywords: in-app, meddelande, konfiguration, plattform
 exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
-source-git-commit: 83e93b18a3f5a8e688ad519d3e1c0d70d91dfc9f
+source-git-commit: 07c453366280b21f5546322430a90752fd996099
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 0%
@@ -26,7 +26,6 @@ Ett specifikt tillstånd måste beviljas för att få åtkomst till **Appytor** 
 1. Om du använder innehållsexperiment måste du se till att följa de krav som listas i [det här avsnittet](#experiment-prerequisite).
 
 När du är klar kan du skapa, konfigurera och skicka ditt första meddelande i appen. Lär dig hur du uppnår detta i [det här avsnittet](create-in-app.md).
-
 
 ## Leveransvillkor {#delivery-prerequisites}
 

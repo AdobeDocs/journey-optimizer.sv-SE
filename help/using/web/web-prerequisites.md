@@ -6,7 +6,7 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 9509fd67-6d12-4440-aad8-59690936be97
-source-git-commit: 83e93b18a3f5a8e688ad519d3e1c0d70d91dfc9f
+source-git-commit: 07c453366280b21f5546322430a90752fd996099
 workflow-type: tm+mt
 source-wordcount: '1131'
 ht-degree: 0%
@@ -28,7 +28,6 @@ För att kunna komma åt och skriva webbsidor i [!DNL Journey Optimizer] följer
 * Ingår [!DNL Journey Optimizer] kan du bara skapa webbupplevelser i **kampanjer**. [Läs mer](../campaigns/create-campaign.md#configure)
 
 * [!DNL Journey Optimizer] webbkampanjer riktar sig till nya profiler som inte har varit engagerade tidigare i andra kanaler. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids. Licensvärden för varje paket visas på sidan [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} sida.
-
 
 >[!AVAILABILITY]
 >
