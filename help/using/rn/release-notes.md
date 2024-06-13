@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: ceead77b1b0f03d853f69c763a09c9fbd0584723
+source-git-commit: 0362cb5af7845333d5657829b073881e1ee3c542
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '826'
 ht-degree: 5%
 
 ---
@@ -28,7 +28,9 @@ ht-degree: 5%
 
 ## Uppdateringar från juni 2024
 
-Nu kan du arbeta med Adobe Experience Platform AI Assistant i Adobe Journey Optimizer. [Läs mer](../start/ai-assistant.md)
+* Nu kan du arbeta med Adobe Experience Platform AI Assistant i Adobe Journey Optimizer. [Läs mer](../start/ai-assistant.md)
+
+* **Stöd för flera regler i beslutshantering** - Du kan nu lägga till upp till 10 regler om begränsning av ett visst erbjudande i Beslutshantering. På så sätt kan ni öka kontrollen över hur erbjudandena skickas. [Läs mer](../offers/offer-library/add-constraints.md#capping)
 
 ## Versionsinformation maj 2024 {#may-2024}
 
@@ -37,7 +39,6 @@ Nu kan du arbeta med Adobe Experience Platform AI Assistant i Adobe Journey Opti
 ### Nya funktioner {#e-features}
 
 Den här versionen innehåller de nya funktionerna som beskrivs nedan.
-
 
 <table>
 <thead>

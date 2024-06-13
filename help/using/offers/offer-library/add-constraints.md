@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
-source-git-commit: 260b9ec0a70526ac37da444e183fc1d01b97b22b
+source-git-commit: 0362cb5af7845333d5657829b073881e1ee3c542
 workflow-type: tm+mt
-source-wordcount: '2539'
+source-wordcount: '2555'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Om du till exempel anger följande begränsningar:
 >id="od_offer_eligibility"
 >title="Om rätt att köpa"
 >abstract="I det här avsnittet kan du använda beslutsregler för att avgöra vilka användare som är berättigade till erbjudandet."
->additional-url="https://video.tv.adobe.com/v/329373" text="Se demovideon"
+>additional-url="https://video.tv.adobe.com/v/329373" text="Titta på filmen"
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_total_profile_estimate"
@@ -119,7 +119,7 @@ Om du vill tillämpa en begränsning kan du begränsa urvalet av erbjudanden til
 
 En målgrupps utdata är i princip en lista med profiler, medan en beslutsregel är en funktion som körs på begäran mot en enskild profil under beslutsprocessen. Skillnaden mellan dessa två användningar beskrivs nedan.
 
-* **Publiker**
+* **Målgrupper**
 
   Å ena sidan är målgrupperna en grupp Adobe Experience Platform-profiler som matchar en viss logik baserat på profilattribut och upplevelsehändelser. Erbjudandehanteringen innebär dock inte att publiken beräknas om, vilket kanske inte är aktuellt när erbjudandet presenteras.
 
@@ -141,26 +141,22 @@ En målgrupps utdata är i princip en lista med profiler, medan en beslutsregel 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_capping"
 >title="Använd begränsning"
->abstract="För att undvika att kunderna blir överdrivna bör du definiera hur många gånger ett erbjudande får presenteras med capping."
+>abstract="För att undvika att kunderna blir överdrivna bör du definiera hur många gånger ett erbjudande får presenteras med capping. Du kan skapa upp till 10 regler för ett visst erbjudande."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-constraints.html#capping-change-date" text="Ändrade datum kan påverka capping"
 
-Begränsning används som en begränsning för att definiera det maximala antal gånger ett erbjudande kan presenteras.
+Begränsning används som en begränsning för att definiera det maximala antal gånger ett erbjudande kan presenteras. Genom att begränsa antalet gånger användarna får specifika erbjudanden kan ni undvika att överdriva era kunder och därmed optimera varje kontaktyta med det bästa erbjudandet.
 
-Genom att begränsa antalet gånger användarna får specifika erbjudanden kan ni undvika att överdriva era kunder och därmed optimera varje kontaktyta med det bästa erbjudandet.
+Du kan lägga till upp till 10 regler för ett visst erbjudande. Klicka på knappen **[!UICONTROL Create capping]** följer du stegen nedan:
 
-Följ huvudstegen nedan när du vill ställa in capping.
-
-1. Se till att **[!UICONTROL Enable capping]** växlingsknappen är markerad. Takning är aktiverat som standard.
-
-   >[!CAUTION]
-   >
-   >Det går inte att aktivera eller inaktivera frekvensbegränsning för tidigare skapade erbjudanden. För att göra det måste ni skapa ett nytt erbjudande.
+>[!CAUTION]
+>
+>Det går inte att aktivera eller inaktivera frekvensbegränsning för tidigare skapade erbjudanden. För att göra det måste ni skapa ett nytt erbjudande.
 
 1. Definiera vilken **[!UICONTROL Capping event]** beaktas för att öka räknaren. [Läs mer](#capping-event)
 
-1. Ange hur många gånger erbjudandet kan presenteras. [Läs mer](#capping-count)
-
 1. Välj om du vill att appningen ska användas för alla användare eller bara för en profil. [Läs mer](#capping-type)
+
+1. Ange hur många gånger erbjudandet kan presenteras. [Läs mer](#capping-count)
 
 1. Ange **[!UICONTROL Frequency]** för att definiera hur ofta antalet capping återställs. [Läs mer](#frequency-capping)
 
@@ -183,18 +179,18 @@ Det antal gånger ett erbjudande föreslås beräknas vid e-postförberedelsen. 
 >title="Impression"
 >abstract="Användningen av visningar som capping-händelser är endast tillgänglig för inkommande kanaler."
 
-The **[!UICONTROL Capping event]** kan du definiera vilken händelse som ska beaktas för att öka räknaren:
+The **[!UICONTROL Choose capping event]** kan du definiera vilken händelse som ska beaktas för att öka räknaren:
 
 ![](../assets/offer-capping-event.png)
 
 * **[!UICONTROL Decision event]** (standardvärde): Maximalt antal gånger ett erbjudande kan presenteras.
+* **[!UICONTROL Clicks]**: Maximalt antal gånger som en användare kan klicka på erbjudandet.
 * **[!UICONTROL Impression]**: Maximalt antal gånger som erbjudandet kan visas för en användare.
 
   >[!NOTE]
   >
   >Användning av visningar när capping-händelser är tillgängliga för **inkommande kanaler** endast.
 
-* **[!UICONTROL Clicks]**: Maximalt antal gånger som en användare kan klicka på erbjudandet.
 * **[!UICONTROL Custom event]**: Du kan definiera en anpassad händelse som ska användas för att begränsa antalet erbjudanden som skickas. Du kan t.ex. sätta ett tak för antalet inlösen tills de är lika med 10000 eller tills en viss profil har lösts in 1 gång. Om du vill göra det använder du [Adobe Experience Platform XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"} scheman för att skapa en anpassad händelseregel.
 
   <!--For example, you can cap on the number of redemptions so that the offer can be shown until redemptions equal 10000. You can only select XDM ExperienceEvents. -->
@@ -202,8 +198,6 @@ The **[!UICONTROL Capping event]** kan du definiera vilken händelse som ska bea
   I exemplet nedan vill du ha en övre gräns för antalet utcheckningar.
 
    1. Välj **[!UICONTROL Custom event]** i listan och använd **[!UICONTROL Add custom event]** -knappen.
-
-      ![](../assets/offer-capping-custom-event-add.png)
 
    1. Använd **[!UICONTROL Create custom event rules]** builder för att välja den relevanta händelsen. Du kan välja vilken användaråtgärd som helst som du vill sätta på erbjudandet.
 
@@ -221,6 +215,20 @@ The **[!UICONTROL Capping event]** kan du definiera vilken händelse som ska bea
 >
 >För att vara säker på att varje takthändelse spåras och tas med i appningsräknaren måste du se till att schemat som används för att samla in upplevelsehändelser innehåller rätt fältgrupp för den händelsen. [Läs mer](../data-collection/schema-requirement.md)
 
+### Taktyp {#capping-type}
+
+Du kan ange om du vill att appen ska användas för alla användare eller för en viss profil:
+
+![](../assets/offer-capping-total.png)
+
+* Välj **[!UICONTROL In total]** för att definiera hur många gånger ett erbjudande kan föreslås för den kombinerade målgruppen, vilket betyder för alla användare.
+
+  Om du till exempel är en återförsäljare av elektronikprodukter och har en &quot;TV-affär&quot; vill du att erbjudandet bara ska returneras 200 gånger för alla profiler.
+
+* Välj **[!UICONTROL Per profile]** för att definiera hur många gånger ett erbjudande kan erbjudas en och samma användare.
+
+  Om du till exempel är en bank med ett Platinum-kreditkortserbjudande vill du inte att det här erbjudandet ska visas mer än fem gånger per profil. Ni tror faktiskt att om användaren har sett erbjudandet fem gånger och inte har följt det, har de större chans att agera på nästa bästa erbjudande.
+
 ### Antal tak {#capping-count}
 
 The **[!UICONTROL Capping count limit]** kan du ange hur många gånger erbjudandet kan presenteras.
@@ -233,20 +241,6 @@ The **[!UICONTROL Capping count limit]** kan du ange hur många gånger erbjudan
 
 Du har till exempel definierat en anpassad capping-händelse som antalet utcheckningar som ska beaktas. Om du anger 10 i dialogrutan **[!UICONTROL Capping count limit]** inga fler erbjudanden skickas efter 10 utcheckningar.
 
-### Taktyp {#capping-type}
-
-Du kan också ange om du vill att appen ska användas för alla användare eller för en viss profil:
-
-![](../assets/offer-capping-total.png)
-
-* Välj **[!UICONTROL In total]** för att definiera hur många gånger ett erbjudande kan föreslås för den kombinerade målgruppen, vilket betyder för alla användare.
-
-  Om du till exempel är en återförsäljare av elektronikprodukter och har en &quot;TV-affär&quot; vill du att erbjudandet bara ska returneras 200 gånger för alla profiler.
-
-* Välj **[!UICONTROL Per profile]** för att definiera hur många gånger ett erbjudande kan erbjudas en och samma användare.
-
-  Om du till exempel är en bank med ett Platinum-kreditkortserbjudande vill du inte att det här erbjudandet ska visas mer än fem gånger per profil. Ni tror faktiskt att om användaren har sett erbjudandet fem gånger och inte har följt det, har de större chans att agera på nästa bästa erbjudande.
-
 ### Frekvensbegränsning {#frequency-capping}
 
 >[!CONTEXTUALHELP]
@@ -254,7 +248,7 @@ Du kan också ange om du vill att appen ska användas för alla användare eller
 >title="Ange takfrekvens"
 >abstract="Du kan välja att återställa antalet erbjudanden per dag, vecka eller månad. Observera att när du har publicerat erbjudandet med frekvensbegränsning aktiverat kan du inte ändra den frekvens som har definierats."
 
-The **[!UICONTROL Frequency]** kan du definiera hur ofta antalet capping återställs. Om du vill göra det anger du tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och anger hur många dagar/veckor/månader du vill ha. Om du till exempel vill att antalet fästingar ska återställas varannan vecka väljer du **[!UICONTROL Weekly]** från motsvarande nedrullningsbar lista och typ **2** i det andra fältet.
+The **[!UICONTROL Reset capping frequency]** I kan du definiera hur ofta antalet capping återställs. Om du vill göra det anger du tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och anger hur många dagar/veckor/månader du vill ha. Om du till exempel vill att antalet fästingar ska återställas varannan vecka väljer du **[!UICONTROL Weekly]** från motsvarande nedrullningsbar lista och typ **2** i det andra fältet.
 
 ![](../assets/offer-capping-frequency.png)
 
