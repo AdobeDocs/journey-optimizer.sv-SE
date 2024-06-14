@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 3847ac1d-2c0a-4f80-8df9-e8e304faf261
-source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
+source-git-commit: 11cae07d061b67136f50201e89c0e349e919620d
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1032'
 ht-degree: 1%
 
 ---
@@ -106,7 +106,6 @@ Följ stegen nedan när du vill börja skapa webbkampanjer.
    * Rubrik - Att använda den här komponenten påminner om att använda **[!UICONTROL Text]** i e-postdesignern. [Läs mer](../email/content-components.md#text)
    * Stycke - Att använda den här komponenten påminner om att använda **[!UICONTROL Text]** i e-postdesignern. [Läs mer](../email/content-components.md#text)
    * Länk
-   * [Beslut om erbjudandet](../email/add-offers-email.md)
 
    ![](assets/web-designer-components.png)
 
@@ -126,15 +125,11 @@ Följ stegen nedan när du vill börja skapa webbkampanjer.
 
    ![](assets/web-designer-header-style.png)
 
-## Lägg till personalisering och erbjudanden
+## Lägg till personalisering
 
 Om du vill lägga till personalisering markerar du en behållare och väljer personaliseringsikonen på den snabbmenyrad som visas. Lägg till ändringarna med personaliseringsredigeraren. [Läs mer](../personalization/personalization-build-expressions.md)
 
 ![](assets/web-designer-personalization.png)
-
-Använd **[!UICONTROL Offer decision]** komponent som ska infogas [erbjudanden](../offers/get-started/starting-offer-decisioning.md) till dina webbsidor. Processen är densamma som när [lägga till ett erbjudande i ett e-postmeddelande](../email/add-offers-email.md). Det kommer att utnyttja Beslutshantering för att välja det bästa erbjudandet att leverera till era kunder.
-
-![](assets/web-designer-offer.png)
 
 ## Navigera i webbdesignern {#navigate-web-designer}
 
