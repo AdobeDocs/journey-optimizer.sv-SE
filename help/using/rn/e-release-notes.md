@@ -6,10 +6,10 @@ description: Journey Optimizer tidiga versionsinformation
 feature: Release Notes
 topic: Content Management
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: cf4437dd9018466aea9b03b0decab76abb696952
+source-git-commit: f34e7e246339371be8c19c54b9fff921177f5ace
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 3%
+source-wordcount: '454'
+ht-degree: 2%
 
 ---
 
@@ -167,7 +167,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 * Den globala tidsgränsen för resan har ökat från 30 till 91 dagar.
 * Adobe Journey Optimizer har nu stöd för förfrågningar om borttagning/åtkomst av sekretess samt livscykelhantering av data.
 * Du kan nu ändra storlek på kolumnerna i kundresans lager.
-* **Avancerad uttrycksredigerare i händelsekonfigurationen** är nu GA - Du kan nu använda den avancerade uttrycksredigeraren när du konfigurerar en händelse, så att du kan definiera mer komplexa uttryck eller använda funktioner i händelse-id-villkoret. Den här funktionen lanseras i begränsad tillgänglighet för utvalda kunder. [Läs mer](../event/about-creating.md)
+* **Avancerad uttrycksredigerare i händelsekonfigurationen** är nu GA - Du kan nu använda den avancerade uttrycksredigeraren när du konfigurerar en händelse, så att du kan definiera mer komplexa uttryck eller använda funktioner i händelse-id-villkoret. Den här funktionen lanseras i begränsad tillgänglighet för utvalda kunder. <!--[Read more](../event/about-creating.md)-->
 * **Sammanfoga profiler** är nu GA - de sammanslagningsprinciper som används av en resa är nu synliga och konsekventa under hela resan. Den här funktionen lanseras i begränsad tillgänglighet för utvalda kunder. <!--[Read more](../building-journeys/journey-gs.md#merge-policies)-->
 
 
@@ -188,7 +188,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Kanal i appen**
 
-* **Uttrycksfragment** - Uttrycksfragment är nu tillgängliga för **Kanal i appen**. [Läs mer](../personalization/use-expression-fragments.md)
+* **Uttrycksfragment** - Uttrycksfragment är nu tillgängliga för **Kanal i appen**. <!--[Read more](../personalization/use-expression-fragments.md)-->
 
 
 * Du kan nu använda Edge Delivery-pluginen för att få den information som behövs för att förstå och felsöka dina inkommande implementeringar.
