@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 8bc808da-4796-4767-9433-71f1f2f0a432
-source-git-commit: cb1fed2460ddbf3b226fe191b9695008970937c1
+source-git-commit: baf76d3c571c62105c1f0a59e07ca70e61a83cc6
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Så här skapar du en rankningsformel:
    >
    >När du skapar en rankningsformel stöds inte möjligheten att gå tillbaka till en tidigare tidsperiod. Om du till exempel anger en upplevelsehändelse som inträffade under den sista månaden som en komponent i formeln. Alla försök att inkludera en uppslagsperiod när formeln skapas kommer att utlösa ett fel när den sparas.
 
-1. Klicka på **[!UICONTROL Save]**. Din rankningsformel skapas. Du kan välja den i listan för att få information och redigera eller ta bort den.
+1. Klicka **[!UICONTROL Save]**. Din rankningsformel skapas. Du kan välja den i listan för att få information och redigera eller ta bort den.
 
    Det är nu klart att användas i ett beslut om att rangordna kvalificerade erbjudanden för en placering (se [Konfigurera urval av erbjudanden i beslut](../offer-activities/configure-offer-selection.md)).
 
@@ -112,8 +112,8 @@ if( offer.selectionConstraint.endDate occurs <= 24 hours after now, offer.rank.p
 **Rankningsformel:**
 
 ```
-if (@event{_xdm.context.additionalParameters;version=1}.weather.isNotNull()
-and offer.characteristics.get("weather")=@event{_xdm.context.additionalParameters;version=1}.weather, offer.rank.priority + 5, offer.rank.priority)
+if (@{_xdm.context.additionalParameters;version=1}.weather.isNotNull()
+and offer.characteristics.get("weather")=@{_xdm.context.additionalParameters;version=1}.weather, offer.rank.priority + 5, offer.rank.priority)
 ```
 
 Observera att när du använder API:t för beslutsfattande läggs kontextdata till i elementet profile i begärandebrödtexten, som i exemplet nedan.
