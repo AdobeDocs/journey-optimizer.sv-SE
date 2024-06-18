@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 354c05746b6aa45356969fab9af6ffdcee6b9e66
+source-git-commit: d2e53b85638a7ca5defcbe67aff6e19bc029f9a0
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1321'
 ht-degree: 4%
 
 ---
@@ -166,13 +166,17 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 <!--* **Audits** - The **Change log** tab allowing you to see all the changes that have been made to an offer or a decision has been removed. Changes related to offers and decisions can now be seen in the **Audits** menu. -->
 
-<!--**Content fragments**
+**Content Fragments**
 
-* Fragments can now be edited, and changes can be propagated across all live journeys and campaigns where they are used.
-* New statuses for content fragments have been introduced: **Draft**, **Live**, **Publishing**, and **Archived**. 
-* To use a fragment in a journey or campaign, it must now be in the **Live** status. A new step has been added to the fragment creation process, allowing the fragment to be published and made available for use in journeys and campaigns. Note that fragment publishing requires a new permission.
-   
-   **CAUTION** - Since **Draft** and **Live** statuses have been introduced with Journey Optimizer June release, all fragments created before this release have the **Draft** status, even if they are used in a journey or campaign. Learn how to update your existing fragments in this section.-->
+>[!AVAILABILITY]
+>
+>Observera att dessa förbättringar kommer att introduceras gradvis under flera dagar efter den första versionen. Vissa användare har omedelbar åtkomst, men andra kan uppleva en fördröjning innan den blir tillgänglig i deras miljöer.
+
+* Fragment kan nu redigeras och ändringar kan spridas över alla liveresor och -kampanjer där de används.
+* Nya statusar för innehållsfragment har införts: **Utkast**, **Live**, **Publicering** och **Arkiverad**.
+* Om du vill använda ett fragment i en resa eller kampanj måste det nu finnas i **Live** status. Ett nytt steg har lagts till i processen för att skapa fragment, vilket gör att fragmentet kan publiceras och göras tillgängligt för användning under resor och kampanjer. Observera att fragmentpublicering kräver en ny behörighet.
+
+  **FÖRSIKTIGHET** - sedan **Utkast** och **Live** statusar har introducerats i Journey Optimizer Juniversion, där alla fragment som skapats före den här versionen har **Utkast** status, även om de används i en resa eller kampanj. Lär dig hur du uppdaterar befintliga fragment i det här avsnittet.
 
 **Resor**
 
