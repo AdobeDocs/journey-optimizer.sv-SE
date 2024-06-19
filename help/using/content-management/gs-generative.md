@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="ajo_ai_generation_settings"
->title="AI Assistant"
+>title="AI-assistenten"
 >abstract="När du har skapat och skräddarsytt din leverans kan du använda AI-assistenten för att förbättra innehållet. Den här funktionen förenklar processen med personalisering och innehållsförbättring genom att du kan finjustera innehållet genom att beskriva vad du vill generera."
 
 
