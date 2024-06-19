@@ -9,9 +9,9 @@ role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
+source-git-commit: ef32423dafa33406244e09f6dddd760e44e4edbf
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '985'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,10 @@ Följ stegen nedan för att skapa en API-utlöst kampanj. Detaljerad information
 1. I **[!UICONTROL Audience]** anger du namnutrymmet som ska användas för att identifiera de enskilda personerna.
 
    * Om du skapar en **transaktionsbaserad**-typkampanj måste målprofilerna definieras i API-anropet. The **[!UICONTROL Create new profiles]** kan du automatiskt skapa profiler som inte finns i databasen. [Läs mer om att skapa profiler vid kampanjkörning](#profile-creation)
+
+     >[!NOTE]
+     >
+     >Ett enda API-anrop stöder upp till 20 unika mottagare. Varje mottagare måste ha ett unikt användar-ID. Dubblerade användar-ID tillåts inte. Läs mer i [API-dokumentation för interaktiv meddelandekörning](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution/operation/postIMUnitaryMessageExecution){target="_blank"}
 
    * För **marknadsföring** liknande kampanjer, klicka på **[!UICONTROL Audience]** för att välja målgrupp.
 
