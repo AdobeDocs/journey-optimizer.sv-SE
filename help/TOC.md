@@ -2,13 +2,13 @@
 product: Journey Optimizer
 audience: end-user
 user-guide-title: Användarhandbok om Journey Optimizer
-user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personaliserade upplevelser till era kunder
+user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 83997271d16e15fb0d7ccdd21aa8ac8b8221a0d5
+source-git-commit: 2a5c04477b38e2fccdde86af56714261c6638160
 workflow-type: tm+mt
-source-wordcount: '1817'
-ht-degree: 19%
+source-wordcount: '1843'
+ht-degree: 28%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 19%
 
 + [Journey Optimizer-dokumentation](ajo-home.md)
 + Nyheter? {#whats-new}
-   + [Tidiga versionsinformation](using/rn/e-release-notes.md)
-   + [Tidiga versionsinformation](using/rn/early-release-notes.md)
+   + [Tidig versionsinformation](using/rn/e-release-notes.md)
+   + [Tidig versionsinformation](using/rn/early-release-notes.md)
    + [Senaste versionsinformation](using/rn/release-notes.md)
    + Tidigare versionsinformation {#previous-rn-new}
       + [2024](using/rn/release-notes-2024.md)
@@ -26,7 +26,7 @@ ht-degree: 19%
       + [2021](using/rn/release-notes-2021.md)
    + [Dokumentationsuppdateringar](using/rn/documentation-updates.md)
    + [Förbättrad arbetsyta](using/rn/new-canvas.md)
-+ Kom igång{#get-started}
++ Komma igång{#get-started}
    + [Vad är Journey Optimizer?](using/start/get-started.md)
    + Snabbstartguider{#quick-start}
       + [Översikt](using/start/quick-start.md)
@@ -41,7 +41,7 @@ ht-degree: 19%
    + [Arbeta med AI-assistenten](using/start/ai-assistant.md)
    + [Integreringar](using/start/ajo-integrations.md)
    + [Guardrails](using/start/guardrails.md)
-   + [God praxis](using/start/best-practices.md)
+   + [Bästa praxis](using/start/best-practices.md)
 + Resor {#orchestrate-journeys}
    + [Kom igång med resor](using/building-journeys/journey.md)
    + Skapa en resa{#create-journey}
@@ -52,7 +52,7 @@ ht-degree: 19%
       + [Publicera din resa](using/building-journeys/publishing-the-journey.md)
    + Hantera dina resor{#manage-journey}
       + [Avsluta din resa](using/building-journeys/end-journey.md)
-      + [Tidszonshantering](using/building-journeys/timezone-management.md)
+      + [Hantering av tidszoner](using/building-journeys/timezone-management.md)
       + [Profilingångshantering](using/building-journeys/entry-management.md)
       + [Kopiera en resa till en annan sandlåda](using/building-journeys/copy-to-sandbox.md)
       + [Felsök din resa](using/building-journeys/troubleshooting.md)
@@ -64,7 +64,7 @@ ht-degree: 19%
       + [Målgruppskvalifikation](using/building-journeys/audience-qualification-events.md)
       + [Villkor](using/building-journeys/condition-activity.md)
       + [Vänta](using/building-journeys/wait-activity.md)
-      + [Läsa målgrupper](using/building-journeys/read-audience.md)
+      + [Läs målgrupp](using/building-journeys/read-audience.md)
       + [E-post, i appen, push, SMS](using/building-journeys/journeys-message.md)
       + [Anpassade åtgärder](using/building-journeys/using-custom-actions.md)
       + [Adobe Campaign Standard-åtgärder](using/building-journeys/using-adobe-campaign-standard.md)
@@ -74,28 +74,28 @@ ht-degree: 19%
    + Bygga uttryck {#building-advanced-conditions-journeys}
       + [Översikt](using/building-journeys/expression/expressionadvanced.md)
       + Syntax {#syntax}
-         + [Generaliseringar](using/building-journeys/expression/generalities.md)
+         + [Allmänt](using/building-journeys/expression/generalities.md)
          + [Villkorlig instruktion](using/building-journeys/expression/conditional-instruction.md)
          + [Datatyper](using/building-journeys/expression/data-types.md)
          + [Fältreferenser](using/building-journeys/expression/field-references.md)
-         + [Hanteringsfunktioner för samlingar](using/building-journeys/expression/collection-management-functions.md)
+         + [Funktioner för att hantera samlingar](using/building-journeys/expression/collection-management-functions.md)
          + [Operatorer](using/building-journeys/expression/operators.md)
-         + [Reseegenskaper](using/building-journeys/expression/journey-properties.md)
+         + [Resans egenskaper](using/building-journeys/expression/journey-properties.md)
          + [Exempel](using/building-journeys/expression/advanced-editor-use-cases.md)
       + Funktioner {#main-functions-journey}
          + [Huvudfunktioner](using/building-journeys/expression/functions.md)
          + Adobe Experience Platform {#adobe-experience-platform}
             + [inAudience](using/building-journeys/functions/functioninaudience.md)
-         + Aggregering {#aggregation}
+         + Aggregera {#aggregation}
             + [avg](using/building-journeys/functions/functionavg.md)
-            + [antal](using/building-journeys/functions/functioncount.md)
+            + [count](using/building-journeys/functions/functioncount.md)
             + [countOnlyNull](using/building-journeys/functions/functioncountonlynull.md)
             + [countWithNull](using/building-journeys/functions/functioncountwithnull.md)
-            + [clearCount](using/building-journeys/functions/functiondistinctcount.md)
-            + [clearCountWithNull](using/building-journeys/functions/functiondistinctcountwithnull.md)
+            + [distinctCount](using/building-journeys/functions/functiondistinctcount.md)
+            + [distinctCountWithNull](using/building-journeys/functions/functiondistinctcountwithnull.md)
             + [max](using/building-journeys/functions/functionmax.md)
             + [min](using/building-journeys/functions/functionmin.md)
-            + [summa](using/building-journeys/functions/functionsum.md)
+            + [sum](using/building-journeys/functions/functionsum.md)
          + Konvertering {#conversion}
             + [toBool](using/building-journeys/functions/functiontobool.md)
             + [toDateOnly](using/building-journeys/functions/functiontodateonly.md)
@@ -106,7 +106,7 @@ ht-degree: 19%
             + [toInteger](using/building-journeys/functions/functiontointeger.md)
             + [toString](using/building-journeys/functions/functiontostring.md)
          + Datum {#date}
-            + [currentTime &#x200B; InMillis](using/building-journeys/functions/functioncurrenttimeinmillis.md)
+            + [currentTimeInMillis](using/building-journeys/functions/functioncurrenttimeinmillis.md)
             + [inLastDays](using/building-journeys/functions/functioninlastdays.md)
             + [inLastHours](using/building-journeys/functions/functioninlasthours.md)
             + [inLastMonths](using/building-journeys/functions/functioninlastmonths.md)
@@ -115,14 +115,14 @@ ht-degree: 19%
             + [inNextHours](using/building-journeys/functions/functioninnexthours.md)
             + [inNextMonths](using/building-journeys/functions/functioninnextmonths.md)
             + [inNextYears](using/building-journeys/functions/functioninnextyears.md)
-            + [nu](using/building-journeys/functions/functionnow.md)
+            + [now](using/building-journeys/functions/functionnow.md)
             + [nowWithDelta](using/building-journeys/functions/functionnowwithdelta.md)
             + [setHours](using/building-journeys/functions/functionsethours.md)
             + [setDays](using/building-journeys/functions/functionsetdays.md)
             + [updateTimeZone](using/building-journeys/functions/functionupdatetimezone.md)
          + Lista {#list}
-            + [distinkt](using/building-journeys/functions/functiondistinct.md)
-            + [clearWithNull](using/building-journeys/functions/functiondistinctwithnull.md)
+            + [distinct](using/building-journeys/functions/functiondistinct.md)
+            + [distinctWithNull](using/building-journeys/functions/functiondistinctwithnull.md)
             + [filter](using/building-journeys/functions/functionfilter.md)
             + [getListItem](using/building-journeys/functions/functiongetlistitem.md)
             + [in](using/building-journeys/functions/functionin.md)
@@ -130,13 +130,13 @@ ht-degree: 19%
             + [gräns](using/building-journeys/functions/functionlimit.md)
             + [listSize](using/building-journeys/functions/functionlistsize.md)
             + [serializeList](using/building-journeys/functions/functionserializelist.md)
-            + [sortera](using/building-journeys/functions/functionsort.md)
+            + [sort](using/building-journeys/functions/functionsort.md)
          + Matematik {#math}
             + [random](using/building-journeys/functions/functionrandom.md)
-            + [rund](using/building-journeys/functions/functionround.md)
+            + [round](using/building-journeys/functions/functionround.md)
          + Sträng {#string}
             + [concat](using/building-journeys/functions/functionconcat.md)
-            + [innehåller](using/building-journeys/functions/functioncontain.md)
+            + [contain](using/building-journeys/functions/functioncontain.md)
             + [containIgnoreCase](using/building-journeys/functions/functioncontainwithignorecase.md)
             + [endWith](using/building-journeys/functions/functionendwith.md)
             + [endWithIgnorecase](using/building-journeys/functions/functionendwithignorecase.md)
@@ -149,16 +149,16 @@ ht-degree: 19%
             + [nedre](using/building-journeys/functions/functionlower.md)
             + [matchRegExp](using/building-journeys/functions/functionmatchregexp.md)
             + [notequalIgnoreCase](using/building-journeys/functions/functionnotequalignorecase.md)
-            + [ersätt](using/building-journeys/functions/functionreplace.md)
+            + [ersätta](using/building-journeys/functions/functionreplace.md)
             + [replaceAll](using/building-journeys/functions/functionreplaceall.md)
             + [dela](using/building-journeys/functions/functionsplit.md)
             + [startWith](using/building-journeys/functions/functionstartwith.md)
             + [startWithIgnoreCase](using/building-journeys/functions/functionstartwithignorecase.md)
             + [substr](using/building-journeys/functions/functionsubstr.md)
-            + [trimma](using/building-journeys/functions/functiontrim.md)
-            + [uppåt](using/building-journeys/functions/functionupper.md)
+            + [trim](using/building-journeys/functions/functiontrim.md)
+            + [övre](using/building-journeys/functions/functionupper.md)
             + [uuid](using/building-journeys/functions/functionuuid.md)
-   + Användningsexempel {#journey-use-cases}
+   + Användningsfall {#journey-use-cases}
       + Användningsexempel {#business-use-cases}
          + [Skicka flerkanalsmeddelanden](using/building-journeys/journeys-uc.md)
          + [Skicka ett meddelande med Campaign v7/v8](using/building-journeys/ajo-ac.md)
@@ -177,7 +177,7 @@ ht-degree: 19%
       + [Kom igång med innehållsexperiment](using/campaigns/get-started-experiment.md)
       + [Skapa ett innehållsexperiment](using/campaigns/content-experiment.md)
       + [Konfigurera experimentrapporter](using/campaigns/reporting-configuration.md)
-      + Technotes {#technotes}
+      + Tekniska anmärkningar {#technotes}
          + [Förstå statistiska beräkningar](using/campaigns/experiment-calculations.md)
          + [Förstå statistiska beräkningar i experimentrapporten](using/campaigns/experiment-report-calculations.md)
    + [Utlösa kampanjer med API:er](using/campaigns/api-triggered-campaigns.md)
@@ -237,7 +237,7 @@ ht-degree: 19%
       + [Konfigurera Infobip-provider](using/sms/sms-configuration-infobip.md)
       + [Konfigurera Twilio-provider](using/sms/sms-configuration-twilio.md)
       + [Skapa en SMS-yta](using/sms/sms-configuration-surface.md)
-+ Direktreklam {#direct-mail}
++ Direktutskick {#direct-mail}
    + [Kom igång med direktreklam](using/direct-mail/get-started-direct-mail.md)
    + [Skapa direktreklam](using/direct-mail/create-direct-mail.md)
    + [Kontrollera och skicka ett direktutskick](using/direct-mail/test-send-direct-mail.md)
@@ -346,14 +346,14 @@ ht-degree: 19%
 + Spåra och övervaka {#reporting}
    + Live-rapport {#live-report}
       + [Kom igång med Live Report](using/reports/live-report.md)
-      + [Förteckning över komponenter](using/reports/live-report-components.md)
+      + [Lista över komponenter](using/reports/live-report-components.md)
       + [Journey Live-rapport](using/reports/journey-live-report.md)
       + [Campaign Live-rapport](using/reports/campaign-live-report.md)
       + [Live-rapport för landningssida](using/reports/lp-report-live.md)
       + [Live-rapport om prenumerationslista](using/reports/subscription-report-live.md)
    + Global rapport {#global-report}
       + [Kom igång med global rapport](using/reports/global-report.md)
-      + [Förteckning över komponenter](using/reports/global-report-components.md)
+      + [Lista över komponenter](using/reports/global-report-components.md)
       + [Rapport om global resa](using/reports/journey-global-report.md)
       + [Global kampanjrapport](using/reports/campaign-global-report.md)
       + [Målrapport](using/reports/objective-report.md)
@@ -380,6 +380,14 @@ ht-degree: 19%
    + [Larm](using/reports/alerts.md)
    + [Arbeta med Customer Journey Analytics](using/reports/cja-ajo.md)
    + [Uteslutningsorsaker](using/reports/exclusion-list.md)
++ Nytt rapporteringsgränssnitt (beta){#channel-report}
+   + [Kom igång med det nya rapporteringsgränssnittet](using/reports/report-gs-cja.md)
+   + [Hantera dina rapporter](using/reports/report-cja-manage.md)
+   + [Reserapport](using/reports/journey-global-report-cja.md)
+   + [Kampanjrapport](using/reports/campaign-global-report-cja.md)
+   + [Översiktsrapport](using/reports/channel-report-cja.md)
+   + [Rapport om landningssida](using/reports/lp-report-global-cja.md)
+   + [Rapport över prenumerationslista](using/reports/subscription-report-global-cja.md)
 + Beslut {#decisioning}
    + Beslutsledning {#offer-decisioning}
       + Kom igång med beslutshantering {#get-started-decision}
@@ -577,17 +585,17 @@ ht-degree: 19%
          + [Arbeta med resehändelser](using/event/about-events.md)
          + Konfigurera en enhetshändelse {#unitary-events}
             + [Kom igång med Unitary Events](using/event/about-creating.md)
-            + [Om ExperienceEvent-scheman](using/event/experience-event-schema.md)
+            + [Om scheman i ExperienceEvent](using/event/experience-event-schema.md)
             + [Arbeta med Adobe Analytics](using/event/about-analytics.md)
          + [Konfigurera en affärshändelse](using/event/about-creating-business.md)
          + [Ytterligare steg för att skicka händelser](using/event/additional-steps-to-send-events-to-journey.md)
       + Datakällans konfiguration{#data-source-journeys}
          + [Om datakällor](using/datasource/about-data-sources.md)
          + [Konfigurera en datakälla](using/datasource/configure-data-sources.md)
-         + [Adobe Experience Platform datakälla](using/datasource/adobe-experience-platform-data-source.md)
+         + [Datakällan i Adobe Experience Platform](using/datasource/adobe-experience-platform-data-source.md)
          + [Externa datakällor](using/datasource/external-data-sources.md)
       + Åtgärdskonfiguration {#action-journeys}
-         + [Om funktionsmakron](using/action/action.md)
+         + [Om åtgärder](using/action/action.md)
          + [Konfigurera en åtgärd](using/action/about-custom-action-configuration.md)
          + [Integrera med Adobe Campaign Standard](using/action/acs-action.md)
          + [Integrera med Adobe Campaign v7/v8](using/action/acc-action.md)
@@ -603,12 +611,12 @@ ht-degree: 19%
    + [Attributbaserad åtkomstkontroll](using/administration/attribute-based-access.md)
    + [Åtkomstkontroll på objektnivå](using/administration/object-based-access.md)
    + [Hantering av sandlådor](using/administration/sandboxes.md)
-+ Integritet {#privacy}
++ Sekretess {#privacy}
    + [Kom igång med sekretess](using/privacy/get-started-privacy.md)
-   + [Sekretessförfrågningar](using/privacy/requests.md)
+   + [Förfrågningar om användarens information](using/privacy/requests.md)
    + [Granskningsåtgärder för resurser](using/privacy/audit-logs.md)
    + [Utför datahygien](using/privacy/data-hygiene.md)
-   + Hantera samtycke {#consent}
+   + Hantera medgivande {#consent}
       + [Hantera avanmälan](using/privacy/opt-out.md)
       + [Arbeta med policyer för samtycke](using/action/consent.md)
    + [Datastyrning](using/action/action-privacy.md)

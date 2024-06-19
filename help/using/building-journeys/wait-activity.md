@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: vänta, aktivitet, resa, nästa, arbetsyta
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
-source-git-commit: 846c601c02a28119dddb3029e5273cfccf141a2c
+source-git-commit: 6ff54583c729175c74b3a7ea4ab9188505fde897
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -35,21 +35,21 @@ Du kan ange två typer av **Vänta** aktivitet:
 * [Fixed date](#fixed_date) 
 -->
 
-## Recommendations {#wait-recommendations}
+## Rekommendationer {#wait-recommendations}
 
 ### Flera väntande aktiviteter {#multiple-wait-activities}
 
-Vid användning av flera **Vänta** ska du vara medveten om att tidsgränsen för den globala resan är 30 dagar, vilket innebär att profiler alltid utesluts från resan högst 30 dagar efter att de har gått in i den. Läs mer i [den här sidan](../building-journeys/journey-gs.md#global_timeout).
+Vid användning av flera **Vänta** ska du vara medveten om att [tidsgräns för global resa](journey-gs.md#global_timeout) är 91 dagar, vilket innebär att profiler alltid tas bort från resan högst 91 dagar efter att de har gått in i den. Läs mer på [den här sidan](../building-journeys/journey-gs.md#global_timeout).
 
-En individ kan ange en **Vänta** endast om de har tillräckligt med tid kvar på resan för att slutföra väntetiden före tidsgränsen på 30 dagar. Om du till exempel lägger till två **Vänta** aktiviteterna inställda på 20 dagar vardera upptäcker systemet att den andra **Vänta** aktiviteten upphör efter tidsgränsen på 30 dagar. Den andra **Vänta** aktiviteten kommer därför att ignoreras och personen kommer att avsluta resan innan den påbörjas. I det exemplet stannar kunden totalt 20 dagar under resan.
+En individ kan ange en **Vänta** endast om de har tillräckligt med tid kvar på resan för att slutföra väntetiden före timeout för 91-dagarsresan. Om du till exempel lägger till två **Vänta** aktiviteterna inställda på 20 dagar vardera upptäcker systemet att den andra **Vänta** aktiviteten upphör efter 91 dagars timeout. Den andra **Vänta** aktiviteten kommer därför att ignoreras och personen kommer att avsluta resan innan den påbörjas. I det exemplet stannar kunden totalt 20 dagar under resan.
 
 ### Vänta och återinträde {#wait-re-entrance}
 
-En god vana att inte använda **Vänta** aktiviteter för att blockera återinträde. Använd i stället **Tillåt återinträde** på egenskapsnivå för resan. Läs mer i [den här sidan](../building-journeys/journey-gs.md#entrance).
+En god vana att inte använda **Vänta** aktiviteter för att blockera återinträde. Använd i stället **Tillåt återinträde** på egenskapsnivå för resan. Läs mer på [den här sidan](../building-journeys/journey-gs.md#entrance).
 
 ### Vänta- och testläge {#wait-test-modd}
 
-I testläge **[!UICONTROL Wait time in test]** kan du definiera tiden för varje **Vänta** aktiviteten varar. Standardtiden är 10 sekunder. Detta säkerställer att du får testresultaten snabbt. Läs mer i [den här sidan](../building-journeys/testing-the-journey.md).
+I testläge **[!UICONTROL Wait time in test]** kan du definiera tiden för varje **Vänta** aktiviteten varar. Den förinställda tiden är tio sekunder. Detta säkerställer att du får testresultaten snabbt. Läs mer på [den här sidan](../building-journeys/testing-the-journey.md).
 
 ## Konfiguration {#wait-configuration}
 

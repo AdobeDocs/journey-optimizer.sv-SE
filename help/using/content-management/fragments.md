@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 7131a953-baca-4e7c-a8df-97c0bd6ac567
-source-git-commit: e7ff784d51da48c1970841e416c655c02cfafb7c
+source-git-commit: 893f7146b358da48153b1e6bc74b8f622028df76
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
@@ -46,9 +46,7 @@ Så här använder du fragment på bästa sätt:
 
 ## Före start {#fragment-prerequisites}
 
->[!NOTE]
->
->Om du vill skapa, redigera och arkivera fragment måste du ha **[!DNL Manage library items]** behörighet som ingår i **[!DNL Content Library Manager]** produktprofil. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager)
+Om du vill skapa, redigera och arkivera fragment måste du ha **[!DNL Manage library items]** behörighet som ingår i **[!DNL Content Library Manager]** produktprofil. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager)
 
 I den här versionen gäller följande begränsningar:
 
@@ -62,17 +60,16 @@ Det finns två typer av fragment:
 * **Visuella fragment** är fördefinierade visuella block som du kan återanvända i flera e-postleveranser med [E-postdesigner](../email/get-started-email-design.md)eller i [mallar](../email/use-email-templates.md).
 * **Uttrycksfragment** är fördefinierade uttryck som är tillgängliga från en dedikerad post i [personaliseringsredigerare](../personalization/personalization-build-expressions.md).
 
-
-Alla fragment är tillgängliga från **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]**  vänster meny.
+Alla skapade fragment är tillgängliga från **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]**  vänster meny. [Lär dig hantera fragment](../content-management/manage-fragments.md)
 
 ![](assets/fragment-list.png)
 
 ## Instruktionsvideo {#video-fragments}
 
-Lär dig hur du hanterar, redigerar och använder visuella fragment i [!DNL Journey Optimizer].
+Lär dig hantera, redigera och använda **visuella fragment** in [!DNL Journey Optimizer].
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419932/?quality=12)
 
-Lär dig hur du hanterar, redigerar och använder uttrycksfragment i [!DNL Journey Optimizer].
+Lär dig hantera, redigera och använda **uttrycksfragment** in [!DNL Journey Optimizer].
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424587/?quality=12)

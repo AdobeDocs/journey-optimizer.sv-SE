@@ -7,10 +7,10 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: d6f74566-c913-4727-83b9-473a798a0158
-source-git-commit: 8f045e1b709c0059ce21cda68c21e8732f58e51e
+source-git-commit: 794ac45177e467be4bd5b8f7288e07c85e4d806a
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 1%
+source-wordcount: '156'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Om du vill konfigurera Twilio med Journey Optimizer måste du skapa nya API-autentiseringsuppgifter som används för Twilio:
 
-1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och väljer **[!UICONTROL API Credentials]** -menyn. Klicka på **[!UICONTROL Create new API credentials]** -knappen.
+1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och väljer **[!UICONTROL API Credentials]** -menyn. Klicka på knappen **[!UICONTROL Create new API credentials]**.
 
 1. Konfigurera dina SMS API-autentiseringsuppgifter enligt nedanstående:
 
@@ -29,6 +29,8 @@ Om du vill konfigurera Twilio med Journey Optimizer måste du skapa nya API-aute
    * **[!UICONTROL Account SID]** och **[!UICONTROL Auth Token]**: åtkomst till **Kontoinformation** på Twilio Console Dashboard-sidan där du hittar dina inloggningsuppgifter.
 
    * **[!UICONTROL Message SID]**: Ange den unika identifierare som tilldelats alla meddelanden som skapas av Twilios API. Läs mer i [Twilio-dokumentation](https://support.twilio.com/hc/en-us/articles/223134387-What-is-a-Message-SID-){target="_blank"}.
+
+   * **[!UICONTROL Inbound Number]**: lägg till ditt unika inkommande nummer. På så sätt kan du använda samma API-autentiseringsuppgifter för olika sandlådor, var och en med ett eget inkommande nummer.
 
 1. Klicka **[!UICONTROL Submit]** när du är klar med konfigurationen av dina API-autentiseringsuppgifter.
 

@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: c68e72d170792fc0ea3b6eb09b3acf818ec2cfd5
+source-git-commit: 6ff54583c729175c74b3a7ea4ab9188505fde897
 workflow-type: tm+mt
-source-wordcount: '2046'
-ht-degree: 4%
+source-wordcount: '2583'
+ht-degree: 3%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 4%
 
 
 
-## Förutsättningar{#start-prerequisites}
+## Förhandskrav{#start-prerequisites}
 
 För att kunna skicka meddelanden med resor krävs följande konfigurationer:
 
@@ -90,13 +90,13 @@ Status kan vara:
 * **Stängd**: resan har avslutats med **Nära nya ingångar** -knappen. Resan slutar med att nya individer kan komma in på resan. Personer som redan är på resan kan slutföra resan normalt.
 * **Utkast**: resan befinner sig i sitt första skede. Den har inte publicerats än.
 * **Utkast (test)**: testläget har aktiverats med **Testläge** -knappen.
-* **Slutförd**: resan ändras automatiskt till denna status efter den globala standardtidsgränsen på 30 dagar. Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan.
+* **Slutförd**: resan automatiskt övergår till denna status efter 91-dagarsperioden [standardtimeout](journey-gs.md#global_timeout). Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan.
 * **Live**: resan har publicerats med **Publicera** -knappen.
 * **Stoppad**: resan har stängts av med **Stoppa** -knappen. Alla individer lämnar resan direkt.
 
 >[!NOTE]
 >
->Reseutvecklingscykeln innehåller också en uppsättning mellanliggande statusvärden som inte är tillgängliga för filtrering: &quot;Publicera&quot; (mellan &quot;Utkast&quot; och &quot;Live&quot;), &quot;Aktivera testläge&quot; eller &quot;Inaktivera testläge&quot; (mellan &quot;Utkast&quot; och &quot;Utkast (test)&quot;) och &quot;Stoppar&quot; mellan &quot;Live&quot; och &quot;Stoppad&quot;). När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad.
+>Reseutvecklingscykeln innehåller också en uppsättning mellanliggande statusvärden som inte är tillgängliga för filtrering: &quot;Publicera&quot; (mellan &quot;Utkast&quot; och &quot;Live&quot;), &quot;Aktivera testläge&quot; eller &quot;Inaktivera testläge&quot; (mellan &quot;Utkast&quot; och &quot;Utkast (test)&quot;) och &quot;Stoppar&quot; (mellan &quot;Live&quot; och &quot;Stoppad&quot;). När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad.
 
 Använd **[!UICONTROL Creation filters]** för att filtrera resorna efter när de skapades eller efter den användare som skapade dem.
 
@@ -186,7 +186,7 @@ Mer information om hantering av tidszoner finns i [den här sidan](../building-j
 
 Du kan definiera en **Startdatum**. Om du inte har angett någon sådan kommer den att definieras automatiskt vid publiceringstidpunkten.
 
-Du kan också lägga till en **Slutdatum**. Detta gör att profiler kan avslutas automatiskt när datumet nås. Om inget slutdatum anges kan profilerna behållas tills [tidsgräns för global resa](#global_timeout) (som i allmänhet är 30 dagar och reducerat till 7 dagar med tilläggserbjudande till hälso- och sjukvårdsskölden). Det enda undantaget är återkommande läsningar på målgruppsresor med **Tvinga återinträde vid upprepning** som slutar vid startdatumet för nästa förekomst.
+Du kan också lägga till en **Slutdatum**. Detta gör att profiler kan avslutas automatiskt när datumet nås. Om inget slutdatum anges kan profilerna behållas tills [tidsgräns för global resa](#global_timeout) (som i allmänhet är 91 dagar och reducerat till 7 dagar med tilläggserbjudande till hälso- och sjukvårdsskölden). Det enda undantaget är återkommande läsningar på målgruppsresor med **Tvinga återinträde vid upprepning** som slutar vid startdatumet för nästa förekomst.
 
 ### Tidsgräns och fel i reseaktiviteter {#timeout_and_error}
 
@@ -202,15 +202,123 @@ Journeys använder också en global tidsgräns. Se [nästa avsnitt](#global_time
 
 Förutom [timeout](#timeout_and_error) som används i reseaktiviteter finns det också en timeout för den globala resan som inte visas i gränssnittet och som inte kan ändras.
 
-Den här globala tidsgränsen stoppar de enskilda personernas framsteg under resan **30 dagar** efter att de gått in. Den här tidsgränsen reduceras till **7 dagar** med tilläggserbjudande för hälso- och sjukvårdssköld. Det innebär att en persons resa inte kan vara längre än 30 dagar (eller 7 dagar). Efter denna timeout-period tas personens data bort. Individer som fortfarande flyter i resan i slutet av timeoutperioden kommer att stoppas och de kommer inte att beaktas vid rapporteringen. Du kan därför se fler människor komma in på resan än att gå ut.
+Den här globala tidsgränsen stoppar de enskilda personernas framsteg under resan **91 dagar** efter att de gått in. Den här tidsgränsen reduceras till **7 dagar** med tilläggserbjudande för hälso- och sjukvårdssköld. Det innebär att en persons resa inte kan vara längre än 91 dagar (eller 7 dagar). Efter denna timeout-period tas personens data bort. Individer som fortfarande flyter i resan i slutet av timeoutperioden kommer att stoppas och de kommer inte att beaktas vid rapporteringen. Du kan därför se fler människor komma in på resan än att gå ut.
 
 >[!NOTE]
 >
->Resor reagerar inte direkt på förfrågningar om avanmälan, åtkomst eller radering av sekretess. Den globala tidsgränsen säkerställer dock att individer aldrig stannar mer än 30 dagar under någon resa.
+>Resor reagerar inte direkt på förfrågningar om avanmälan, åtkomst eller radering av sekretess. Den globala tidsgränsen säkerställer dock att individer aldrig stannar mer än 91 dagar på någon resa.
 
-På grund av den 30-dagars tidsgränsen för resan kan vi inte säkerställa att återinträdesspärren fungerar mer än 30 dagar när resan inte tillåts. Eftersom vi tar bort all information om personer som tagit sig in på resan 30 dagar efter ankomsten, kan vi inte veta vem som tagit sig in tidigare, mer än 30 dagar sedan.
+På grund av den 91-dagars tidsgränsen för resan kan vi inte säkerställa att återinträdesspärren fungerar mer än 91 dagar när resan inte tillåts. Eftersom vi tar bort all information om personer som tagit sig in på resan 91 dagar efter ankomsten, kan vi inte veta vem som tagit sig in tidigare, mer än 91 dagar sedan.
 
-En enskild person kan bara förlägga en vänteaktivitet om han eller hon har tillräckligt med tid kvar på resan för att slutföra väntetiden innan tidsgränsen på 30 dagar för resan har nåtts. Läs [den här sidan](../building-journeys/wait-activity.md).
+En enskild person kan bara förlägga en vänteaktivitet om han eller hon har tillräckligt med tid kvar på resan för att slutföra väntetiden innan tidsgränsen på 91 dagar för en resa är slut. Läs [den här sidan](../building-journeys/wait-activity.md).
+
+
+#### TTL (Time-to-Live) och datalagring - frågor och svar {#timeout-faq}
+
+**För Unitary Journeys**
+<table style="table-layout:auto">
+  <tr style="border: 1;">
+    <td>
+      <p>Vad händer med den resa som publiceras efter att TTL-tillägget lanserats?</p>
+    </td>
+    <td>
+      <p>Profiler som kommer in på den nya resan får automatiskt en TTL på 91 dagar.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>Vad händer med en profil som går in på en resa som publicerades innan TTL-tillägget startades?</p>
+    </td>
+    <td>
+      <p>Profilen kommer att ha en TTL på 91 dagar (7 dagar för HIPAA), vilket motsvarar den tid då resan ursprungligen publicerades.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>Vad händer med en profil som redan har registrerat en resa när TTL-tillägget startas?</p>
+    </td>
+    <td>
+      <p>Profilen behåller en TTL på 91 dagar (7 dagar för HIPAA) enligt den ursprungliga publiceringstiden för resan.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>Vad händer med en profil i en tidigare version som publiceras om efter att TTL-tillägget startats?</p>
+    </td>
+    <td>
+      <p>Profilen behåller en TTL på 91 dagar (7 dagar för HIPAA), i linje med den ursprungliga reseversionens publiceringstid.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>Vad händer med en ny profil som anger en återpublicerad reseversion efter att TTL-tillägget har startats?</p>
+    </td>
+    <td>
+      <p>Profilen kommer att ha en TTL på 91 dagar, vilket matchar TTL-värdet för den nypublicerade reseversionen.</p>
+    </td>
+  </tr>
+</table>
+
+**För segmentutlösarresor**
+
+<table style="table-layout:auto">
+  <tr style="border: 1;">
+    <td>
+      <p>Vad händer med nya engångsresor som publiceras efter tillägget för TTL?</p>
+    </td>
+    <td>
+      <p>Profiler som kommer in på den nya resan kommer att ha en TTL på 91 dagar automatiskt.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>Vad händer med nya återkommande resor utan tvingad återinträde som publiceras efter tillägget för TTL?</p>
+    </td>
+    <td>
+      <p>Profiler som kommer in på den nya resan kommer att ha en TTL på 91 dagar automatiskt.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>Vad händer med nya återkommande resor med tvingad återinträde som publiceras efter tillägget för TTL?</p>
+    </td>
+    <td>
+      <p>Profiler som går in på den nya resan kommer att ha en TTL som motsvarar upprepningsperioden. Om resan till exempel körs dagligen är TTL 1 dag.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>Vad händer med en profil som går in på en resa som publicerades innan TTL-tillägget startades?</p>
+    </td>
+    <td>
+      <p>Profilen kommer att ha en TTL på 91 dagar (7 dagar för HIPAA), vilket överensstämmer med den ursprungliga publiceringstiden. För återkommande resor med tvingad återinträde kommer TTL-värdet att matcha upprepningsperioden.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>Vad händer med en profil som körs genom en resa när TTL-tillägget startas?</p>
+    </td>
+    <td>
+      <p>Profilen behåller en TTL på 91 dagar (7 dagar för HIPAA) enligt den ursprungliga publiceringstiden för resan. För återkommande resor med tvingad återinträde kommer TTL-värdet att matcha upprepningsperioden.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>Vad händer med en profil som körs i en tidigare version som publiceras om efter att tillägget TTL har startats?</p>
+    </td>
+    <td>
+      <p>Profilen behåller en TTL på 91 dagar (7 dagar för HIPPA), i linje med den ursprungliga reseversionens publiceringstid. För återkommande resor med tvingad återinträde kommer TTL-värdet att matcha upprepningsperioden.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>Vad händer med en ny profil som anger en återpublicerad reseversion efter att TTL-tillägget har startats?</p>
+    </td>
+    <td>
+      <p>Profilen kommer att ha en TTL på 91 dagar, vilket matchar TTL-värdet för den nypublicerade reseversionen. För återkommande resor med tvingad återinträde kommer TTL-värdet att matcha upprepningsperioden.</p>
+    </td>
+  </tr>
+</table>
 
 ### Sammanfoga profiler {#merge-policies}
 
@@ -219,13 +327,9 @@ Resan använder sammanfogningsprinciper när profildata hämtas från Adobe Expe
 * På läs målgrupps- eller målgruppsklassificeringsresor: målgruppspolicyn används
 * Vid händelseutlösta resor: Standardprincipen för sammanslagning används
 
-Resan kommer att respektera den sammanslagningspolicy som används under hela resan.
+Resan kommer att respektera den sammanslagningspolicy som används under hela resan. Om flera målgrupper används i en resa (t.ex. i&quot;inAudience&quot;-funktioner), vilket skapar inkonsekvenser med den sammanfogningspolicy som används under resan, uppstår därför ett fel och publiceringen blockeras. Men om en inkonsekvent målgrupp används i meddelandepersonalisering visas ingen varning trots inkonsekvensen. Därför rekommenderar vi att du kontrollerar vilken sammanfogningspolicy som är kopplad till målgruppen när den här målgruppen används i meddelandepersonalisering.
 
->[!NOTE]
->
->Den här funktionen är endast tillgänglig i begränsad tillgänglighet (LA) för utvalda kunder.
-
-Mer information om kopplingsregler finns i detta [page](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
+Mer information om kopplingsregler finns i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
 
 ## Duplicera en resa {#duplicate-a-journey}
 

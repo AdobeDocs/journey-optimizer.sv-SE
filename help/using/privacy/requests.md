@@ -7,10 +7,10 @@ feature: Privacy
 role: User
 level: Intermediate
 exl-id: 19ec3410-761e-4a9c-a277-f105fc446d7a
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 41717213cb75185476f054bd076e67f942be0f1c
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 14%
+source-wordcount: '456'
+ht-degree: 1%
 
 ---
 
@@ -25,4 +25,224 @@ Sekretessförfrågningar kan skapas och hanteras från **[!UICONTROL Requests]**
 Mer information om Privacy Service och hur du skapar och hanterar sekretessförfrågningar finns i Adobe Experience Platform dokumentation:
 
 * [Översikt över Privacy Servicen](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv)
-* [Hantera sekretessjobb i Privacy Servicens användargränssnitt](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=sv)
+* [Hantera sekretessjobb i Privacy Servicens användargränssnitt](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html)
+
+
+
+## Hantera enskilda förfrågningar om dataintegritet som du kan skicka till Adobe Journey Optimizer {#data-privacy-requests}
+
+Du kan skicka enskilda förfrågningar om åtkomst till och radering av konsumentdata från Adobe Journey Optimizer på två sätt:
+
+* Via **Privacy Servicens användargränssnitt**. Läs dokumentationen [här](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide#_blank).
+* Via **Privacy Services-API**. Läs dokumentationen [här](https://developer.adobe.com/experience-platform-apis/references/privacy-service/#_blank) och API-information [här](https://developer.adobe.com/experience-platform-apis/#_blank).
+
+Privacy Servicen stöder två typer av förfrågningar: **dataåtkomst** och **borttagning av data**.
+
+>[!NOTE]
+>
+>Den här guiden handlar bara om hur du gör sekretessförfrågningar för Adobe Journey Optimizer. Om du även planerar att göra sekretessförfrågningar för datasjön för plattformen, se denna [stödlinje](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/privacy) förutom den här självstudiekursen. Kundprofilen i realtid finns här [stödlinje](https://experienceleague.adobe.com/en/docs/experience-platform/profile/privacy) och för identitetstjänsten, se [stödlinje](https://experienceleague.adobe.com/en/docs/experience-platform/identity/privacy). För borttagnings- och åtkomstbegäranden måste du anropa dessa enskilda system för att se till att förfrågningarna hanteras av var och en av dem. Data tas inte bort från alla dessa system om du gör en sekretessförfrågan till Adobe Journey Optimizer.
+
+För **åtkomstbegäranden** anger du&quot;Adobe Journey Optimizer&quot; från användargränssnittet (eller&quot;CJM&quot; som produktkod i API:t).
+
+För **ta bort begäranden** förutom&quot;Adobe Journey Optimizer&quot;-begäran måste du även skicka borttagningsbegäranden till tre tjänster i uppströmmen för att förhindra att Journey Optimizer återställer borttagna data. Om dessa tjänster i det överordnade flödet inte anges kommer Adobe Journey Optimizer-begäran att förbli i tillståndet&quot;bearbetar&quot; tills begäranden om borttagning för de överordnade tjänsterna skapas.
+
+De tre tjänsterna är:
+
+* Profil (produktkod: &quot;profileService&quot;)
+* AEP Data Lake (produktkod:&quot;AdobeCloudPlatform&quot;)
+* Identitet (produktkod: &quot;identity&quot;)
+
+## Skapa begäranden om åtkomst och borttagning
+
+### Förhandskrav
+
+Om du vill göra en begäran om åtkomst- och borttagningsdata för Adobe Journey Optimizer måste du ha:
+
+* ett IMS-organisations-ID
+* en identitetsidentifierare för den person du vill agera på och motsvarande namnutrymmen. Mer information om identitetsnamnutrymmen i Adobe Journey Optimizer och Experience Platform finns i [Översikt över namnutrymmet identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
+
+### Obligatoriska fältvärden i Adobe Journey Optimizer för API-begäranden
+
+```json
+"companyContexts":
+    "namespace": imsOrgID
+    "value": <Your IMS Org ID Value>
+
+"users":
+    "action": either access or delete
+
+    "userIDs":
+        "namespace": e.g. email, aaid, ecid, etc.
+        "type": standard
+        "value": <Data Subject's Identity Identifier>
+
+"include":
+    CJM (which is the Adobe product code for Adobe Journey Optimizer)
+    profileService (product code for Profile)
+    AdobeCloudPlatform (product code for AEP Data Lake)
+    identity (product code for Identity)
+
+"regulation":
+    gdpr, ccpa, pdpa, lgpd_bra, or nzpa_nzl (which is the privacy regulation that applies to the request)
+```
+
+
+### Exempel på GDPR-åtkomstbegäran:
+
+Från gränssnittet:
+
+![](assets/accessrequest.png)
+
+Via API:
+
+```json
+// JSON Request
+{
+   "companyContexts":[
+      {
+         "namespace":"imsOrgID",
+         "value":"745F37C35E4B776E0A49421B@AdobeOrg"
+      }
+   ],
+   "users":[
+      {
+         "action":[
+            "access"
+         ],
+         "userIDs":[
+            {
+               "namespace":"ecid",
+               "value":"38400000-8cf0-11bd-b23e-10b96e40000d",
+               "type":"standard"
+            },
+            {
+               "namespace":"email",
+               "value":"johndoe4@gmail.com",
+               "type":"standard"
+            }
+         ]
+      }
+   ],
+   "include":[
+      "CJM"
+   ],
+   "regulation":"gdpr"
+}
+```
+
+```json
+// JSON Response
+{
+    "requestId": "17163122360480365RX-705",
+    "totalRecords": 1,
+    "jobs": [
+        {
+            "jobId": "e709b1f4-1796-11ef-b422-eddd0aebc40d",
+            "customer": {
+                "user": {
+                    "key": "John Doe",
+                    "action": [
+                        "access"
+                    ],
+                    "userIDs": [
+                        {
+                            "namespace": "ecid",
+                            "value": "38400000-8cf0-11bd-b23e-10b96e40000d",
+                            "type": "standard",
+                            "namespaceId": 4,
+                            "isDeletedClientSide": false
+                        },
+                        {
+                            "namespace": "email",
+                            "value": "johndoe4@gmail.com",
+                            "type": "standard",
+                            "namespaceId": 6,
+                            "isDeletedClientSide": false
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
+```
+
+### Exempel på GDPR-borttagningsbegäran:
+
+Från gränssnittet:
+
+![](assets/deleterequest.png)
+
+Via API:
+
+```json
+// JSON Request
+{
+  "companyContexts": [
+    {
+      "namespace": "imsOrgID",
+      "value": "745F37C35E4B776E0A49421B@AdobeOrg"
+    }
+  ],
+  "users": [
+    {
+      "action": [
+          "delete"
+      ],
+      "userIDs": [
+        {
+          "namespace": "ecid",
+          "value": "38400000-8cf0-11bd-b23e-10b96e40000d",
+          "type": "standard"
+        },
+                {
+          "namespace": "email",
+          "value": "johndoe4@gmail.com",
+          "type": "standard"
+        }
+      ]
+    }
+  ],
+  "include": [
+    "CJM", "profileService", "AdobeCloudPlatform", "identity"
+  ],
+  "regulation": "gdpr"
+}
+```
+
+```json
+// JSON Response
+{
+    "requestId": "17163122360480365RX-705",
+    "totalRecords": 1,
+    "jobs": [
+        {
+            "jobId": "e709b1f4-1796-11ef-b422-eddd0aebc40d",
+            "customer": {
+                "user": {
+                    "key": "John Doe",
+                    "action": [
+                        "delete"
+                    ],
+                    "userIDs": [
+                        {
+                            "namespace": "ecid",
+                            "value": "38400000-8cf0-11bd-b23e-10b96e40000d",
+                            "type": "standard",
+                            "namespaceId": 4,
+                            "isDeletedClientSide": false
+                        },
+                        {
+                            "namespace": "email",
+                            "value": "johndoe4@gmail.com",
+                            "type": "standard",
+                            "namespaceId": 6,
+                            "isDeletedClientSide": false
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
+```

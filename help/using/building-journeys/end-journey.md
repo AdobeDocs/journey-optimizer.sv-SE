@@ -8,9 +8,9 @@ role: User
 level: Intermediate
 keywords: återinträde, resa, slut, live, stopp
 exl-id: ea1ecbb0-12b5-44e8-8e11-6d3b8bff06aa
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: 6ff54583c729175c74b3a7ea4ab9188505fde897
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '642'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ En resa kan avslutas på grund av följande orsaker:
 
 Genom att stänga en resa manuellt försäkrar du dig om att kunder som redan har gått in på resan kan slutföra sin resa, men att nya användare inte kan ta sig in på resan. När en resa stängs (av någon av anledningarna ovan) får den statusen **[!UICONTROL Closed]**. Resan slutar med att nya individer kan komma in på resan. Personer som redan är på resan kan slutföra resan normalt.
 
-Efter 30 dagar har en läsande målgruppsresa gått över till **Slutförd** status. Detta beteende är inställt för endast 30 dagar (d.v.s. standardvärdet för timeout för resa) eftersom all information om profiler som har gått in i resan tas bort 30 dagar efter att de har gått in. Personer som fortfarande befinner sig på resan påverkas automatiskt. De avslutar resan efter 30-dagarstimeout.
+Efter 91-dagarsperioden [standardtimeout](journey-gs.md#global_timeout), en läsande målgruppsresa växlar till **Slutförd** status. Detta beteende är inställt för endast 91 dagar (dvs. [timeout för resa, standardvärde](journey-gs.md#global_timeout)) eftersom all information om profiler som gått in i resan tas bort 91 dagar efter att de gått in. Personer som fortfarande befinner sig på resan påverkas automatiskt. De avslutar resan efter 91-dagarstimeout.
 
 Se det här [section](../building-journeys/journey-gs.md#global_timeout).
 

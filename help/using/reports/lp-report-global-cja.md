@@ -1,0 +1,123 @@
+---
+solution: Journey Optimizer
+product: journey optimizer
+title: Global rapport för landningssida
+description: Lär dig hur du använder data från landningssidor
+feature: Reporting, Landing Pages
+topic: Content Management
+role: User
+level: Intermediate
+badge: label="Beta" type="Informative"
+source-git-commit: 854f593710a28bde605aa995d747d4e084a6c4b4
+workflow-type: tm+mt
+source-wordcount: '695'
+ht-degree: 0%
+
+---
+
+# Rapport om landningssida {#lp-report-global-cja}
+
+The **Landningssida** rapporten ger värdefulla insikter om användarbeteende, engagemangsmönster, konverteringsgrader och andra viktiga mätvärden, så att ni kan fatta välgrundade beslut och optimera landningssidans prestanda effektivt.
+
+Om du vill komma åt dina rapporter väljer du **[!UICONTROL Report]** på den avancerade menyn på den valda landningssidan.
+
+![](assets/cja-lp.png)
+
+Mer information om arbetsytan i Customer Journey Analytics och hur du filtrerar och analyserar data finns i [den här sidan](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
+
+## Konverteringsgrad för landningssida {#lp-conversion}
+
+![](assets/cja-lp-conversion-rate.png)
+
+The **[!UICONTROL Landing page Conversion rate]** Med nyckeltal kan du bedöma hur effektiv landningssidan är baserat på antalet besök och interaktioner.
+
+* **[!UICONTROL Landing page Conversion rate]**: Antal personer som interagerat med landningssidan, t.ex. prenumererat på ett formulär, i förhållande till det totala antalet besök.
+
+## Studsfrekvens för landningssida {#lp-bounce-rate}
+
+![](assets/cja-lp-bounce-rate.png)
+
+The **[!UICONTROL Landing page Bounce rate]** KPI ger information om profiler som visade din landningssida utan att interagera eller klicka på några element.
+
+* **[!UICONTROL Landing page Bounce rate]**: Antal personer som inte interagerade med landningssidan och inte fullföljde prenumerationsåtgärden i förhållande till det totala antalet besök.
+
+## Vyer för landningssida {#lp-views}
+
+![](assets/cja-lp-views.png)
+
+The **[!UICONTROL Landing page Views]** Med KPI kan du se hur landningssidan påverkas.
+
+* **[!UICONTROL Landing page Views]**: Totalt antal besök på landningssidan som kommer från resor och externa källor, inklusive flera besök i en profil.
+
+## Unika startsidesvyer {#lp-unique-views}
+
+![](assets/cja-lp-unique-views.png)
+
+The **[!UICONTROL Unique Landing page Views]** Med KPI kan du mäta landningssidans påverkan genom att utesluta flera vyer från samma profil.
+
+* **[!UICONTROL Unique Landing page Views]**: Antal personer som besökte din landningssida beaktas inte flera besök i en profil.
+
+## Landningssidans prestanda över tid {#lp-performance-overtime}
+
+![](assets/cja-lp-performance-overtime.png)
+
+The **[!UICONTROL Landing page performance over time]** graf mäter hur väl landningssidorna fungerar och vilken effekt de har på målgruppen.
+
+* **[!UICONTROL Landing page Views]**: Totalt antal besök på landningssidan som kommer från resor och externa källor, inklusive flera besök i en profil.
+
+* **[!UICONTROL Landing page Conversion rate]**: Antal personer som interagerat med landningssidan, t.ex. prenumererat på ett formulär, i förhållande till det totala antalet besök.
+
+## Prestanda för landningssida {#lp-performance}
+
+![](assets/cja-lp-performance.png)
+
+The **[!UICONTROL Landing page performance]** tabellen fungerar som en omfattande kontrollpanel med en detaljerad beskrivning av nyckeltal relaterade till landningssidan.
+
+* **[!UICONTROL Landing page Conversion rate]**: Antal personer som interagerat med landningssidan, t.ex. prenumererat på ett formulär, i förhållande till det totala antalet besök.
+
+* **[!UICONTROL Landing page Bounce rate]**: Antal personer som inte interagerade med landningssidan och inte fullföljde prenumerationsåtgärden i förhållande till det totala antalet besök.
+
+* **[!UICONTROL Unique Landing page Views]**: Antal personer som besökte din landningssida beaktas inte flera besök i en profil.
+
+* **[!UICONTROL Unique Landing page Conversion rate]**: Antal personer som interagerat med landningssidan, flera interaktioner i en profil beaktas inte.
+
+* **[!UICONTROL Landing page Views]**: Totalt antal besök på landningssidan som kommer från resor och externa källor, inklusive flera besök i en profil.
+
+* **[!UICONTROL Landing page Conversion]**: Antal personer som interagerat med landningssidan, t.ex. prenumererade på ett formulär.
+
+## Resor {#lp-journeys}
+
+The **[!UICONTROL Journey]** tabellen ger en omfattande översikt med detaljerad information om hur ofta besöken på landningssidan ska göras i samband med en användares resa. Denna insiktsfulla representation ger värdefulla data om användarinteraktioner, så att ni kan förstå hur besökare navigerar på er webbplats och interagera med ert innehåll.
+
+* **[!UICONTROL Landing page Views]**: Totalt antal besök på landningssidan som kommer från resor och externa källor, inklusive flera besök i en profil.
+
+* **[!UICONTROL Landing page Conversion]**: Antal personer som interagerat med landningssidan, t.ex. prenumererade på ett formulär.
+
+## Kampanjer {#lp-campaigns}
+
+The **[!UICONTROL Campaigns]** tabellen ger insikter om antalet besök som dirigeras till landningssidan som ett resultat av specifika kampanjer, vilket ger en heltäckande bild av kampanjens effektivitet och engagemang i innehållet på landningssidan.
+
+* **[!UICONTROL Landing page Views]**: Totalt antal besök på landningssidan som kommer från resor och externa källor, inklusive flera besök i en profil.
+
+* **[!UICONTROL Landing page Conversion]**: Antal personer som interagerat med landningssidan, t.ex. prenumererade på ett formulär.
+
+## Kanal {#lp-channels}
+
+The **[!UICONTROL Channel]** tabellen visar antalet besök på landningssidan kategoriserade per kanal.
+
+* **[!UICONTROL Landing page Views]**: Totalt antal besök på landningssidan som kommer från resor och externa källor, inklusive flera besök i en profil.
+
+* **[!UICONTROL Landing page Conversion]**: Antal personer som interagerat med landningssidan, t.ex. prenumererade på ett formulär.
+
+## Länkar som klickats överst {#lp-top-clicked}
+
+The **[!UICONTROL Top Clicked Links]** tabellen ger insikter om hur besökarna interagerar med leveransen, och visar vilka länkar som får mest engagemang och uppmärksamhet från er målgrupp.
+
+* **[!UICONTROL Landing page Clicks]**: Antal gånger som ett innehåll klickades på på landningssidan.
+
+
+
+
+
+
+

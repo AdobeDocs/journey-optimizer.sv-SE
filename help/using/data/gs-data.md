@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: data, hantering, plattform
 exl-id: 25519acb-a017-446a-992b-653d3a8a3d96
-source-git-commit: ef34cb0207d3011eca6d76ad6568f3edc00e13a3
+source-git-commit: 1ed007d5921573dce30df6faa625bb0bce5d6616
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 0%
+source-wordcount: '655'
+ht-degree: 1%
 
 ---
 
@@ -70,14 +70,14 @@ Du kan använda [!DNL Journey Optimizer]Med sin flexibilitet att hantera dina sp
   Observera att innehåll som används i resor eller kampanjer inte kan extraheras via API- eller målmetoder som nämns ovan.
 
 <!--
-* **Profile Service Data Retention**: For Behavioral and Time series data appended to any Profile, you may choose to use Journey Optimizer’s default setting of retaining this data for up to 30 days from the date of its addition to a Profile, or until an alternative time-period selected by the you. The time that Adobe keeps this data varies from contract to contract, and is outlined in an organization’s data retention policy.
+* **Profile Service Data Retention**: For Behavioral and Time series data appended to any Profile, you may choose to use Journey Optimizer’s default setting of retaining this data for up to 91 days from the date of its addition to a Profile, or until an alternative time-period selected by the you. The time that Adobe keeps this data varies from contract to contract, and is outlined in an organization’s data retention policy.
 
   Learn more about Experience Event expirations in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/event-expirations.html){target="_blank"}.
 -->
 
 * **Rensa och arkivera**: Rensning av data och arkivering kan definieras fritt och automatiseras i [!DNL Adobe Journey Optimizer] att automatisera datalagringspolicyer. Det är möjligt att definiera olika strategier för åldersfördelning för olika datatabeller. Exportmekanismer kan också definieras för att automatiskt exportera åldersfördelningsdata innan de rensas eller arkiveras.
 
-  Med arbetsytan Datahygien kan du skapa och övervaka olika datahygien-uppgifter, som att ta bort konsumentidentiteter och schemalägga förfallodatum för datauppsättningar. Den här arbetsytan är tillgänglig med skölden för skydd och integritet och med hälso- och sjukvårdsskölden. Läs mer i [den här sidan](../privacy/data-hygiene.md).
+  Med arbetsytan Datahygien kan du skapa och övervaka olika datahygien-uppgifter, som att ta bort konsumentidentiteter och schemalägga förfallodatum för datauppsättningar. Den här arbetsytan är tillgänglig med skölden för skydd och integritet och med hälso- och sjukvårdsskölden. Läs mer på [den här sidan](../privacy/data-hygiene.md).
 
 <!--
 * **Data Lake and Deletions**: Customer Data stored in the Data Lake can be retained by Journey Optimizer:

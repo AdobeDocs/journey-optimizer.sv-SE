@@ -9,9 +9,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, bibliotek, personalisering
 exl-id: 74b1be18-4829-4c67-ae45-cf13278cda65
-source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
+source-git-commit: 893f7146b358da48153b1e6bc74b8f622028df76
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 När du använder **personaliseringsredigerare** kan du använda alla uttrycksfragment som har skapats eller sparats i den aktuella sandlådan.
 
-Lär dig hur du skapar och hanterar fragment i [det här avsnittet](../content-management/fragments.md).
+Ett fragment är en återanvändbar komponent som kan refereras till i [!DNL Journey Optimizer] kampanjer och resor. Med den här funktionen kan man skapa flera anpassade innehållsblock som kan användas av marknadsföringsanvändare för att snabbt sammanställa innehåll i en förbättrad designprocess. [Lär dig skapa och hantera fragment](../content-management/fragments.md).
 
 ➡️ [Lär dig hur du hanterar, redigerar och använder fragment i den här videon](../content-management/fragments.md#video-fragments)
 
@@ -28,17 +28,17 @@ Lär dig hur du skapar och hanterar fragment i [det här avsnittet](../content-m
 
 Följ stegen nedan om du vill lägga till uttrycksfragment i ditt innehåll.
 
+>[!NOTE]
+>
+>Du kan lägga till upp till 30 fragment i en viss leverans. Fragment kan bara kapslas upp till 1 nivå.
+
 1. Öppna [personaliseringsredigerare](personalization-build-expressions.md) och väljer **[!UICONTROL Fragments]** till vänster.
+
+   I listan visas alla uttrycksfragment som har skapats eller sparats som fragment i den aktuella sandlådan. De sorteras efter skapandedatum: nyligen tillagda uttrycksfragment visas först i listan. [Läs mer](../content-management/fragments.md#create-expression-fragment)
 
    ![](assets/expression-fragments-pane.png)
 
-   I listan visas alla uttrycksfragment som har skapats eller sparats som fragment i den aktuella sandlådan. [Läs mer](../content-management/fragments.md#create-expression-fragment)
-
-   >[!NOTE]
-   >
-   >Fragment sorteras efter skapandedatum: nyligen tillagda uttrycksfragment visas först i listan.
-
-1. Du kan också uppdatera listan.
+   Du kan även uppdatera den här listan.
 
    >[!NOTE]
    >
@@ -48,15 +48,15 @@ Följ stegen nedan om du vill lägga till uttrycksfragment i ditt innehåll.
 
    ![](assets/expression-fragment-add.png)
 
-   När fragment-ID:t har lagts till, om du öppnar motsvarande uttrycksfragment och [redigera den](../content-management/fragments.md#edit-fragments) från gränssnittet synkroniseras ändringarna. De sprids automatiskt till alla **[!UICONTROL Draft]** resor/kampanjer som innehåller detta fragment-ID.
-
-   >[!NOTE]
+   >[!CAUTION]
    >
-   >Ändringarna sprids inte till innehåll som används i **[!UICONTROL Live]** resor eller kampanjer.
+   >Du kan lägga till valfritt **Utkast** eller **Live** till ert innehåll. Du kan dock inte aktivera din resa eller kampanj om ett fragment med statusen Utkast används i det. Vid en resa eller kampanjpublicering kommer utkastsfragment att visa ett fel och du måste godkänna dem för att kunna publicera.
+   >
+   > Observera att fragmentstatus gradvis introduceras under flera dagar efter Journey Optimizer juni-utgåvan. Vissa användare har omedelbar åtkomst, men andra kan uppleva en fördröjning innan den blir tillgänglig i deras miljöer. Observera att fragment inte behöver vara **Live** för att användas i era resor och kampanjer.
 
-1. Klicka på **[!UICONTROL More actions]** -knapp intill ett fragment.
+1. När fragment-ID:t har lagts till, om du öppnar motsvarande uttrycksfragment och [redigera den](../content-management/fragments.md#edit-fragments) från gränssnittet synkroniseras ändringarna. De sprids automatiskt till alla utkast- eller direktresor/kampanjer som innehåller detta fragment-ID.
 
-1. På snabbmenyn som öppnas väljer du **[!UICONTROL View fragment]** om du vill ha mer information om det fragmentet. The **[!UICONTROL Fragment ID]** visas också och kan kopieras härifrån.
+1. Klicka på **[!UICONTROL More actions]** -knapp intill ett fragment. På snabbmenyn som öppnas väljer du **[!UICONTROL View fragment]** om du vill ha mer information om det fragmentet. The **[!UICONTROL Fragment ID]** visas också och kan kopieras härifrån.
 
    ![](assets/expression-fragment-view.png)
 

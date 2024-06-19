@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: aktivitet, resa, läsning, målgrupp, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: e45ec5f0e1bbcc73892f9cde5923627886f44ef6
+source-git-commit: 6ff54583c729175c74b3a7ea4ab9188505fde897
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
@@ -126,7 +126,7 @@ To activate this mode, click the **Segment Filters** toggle. Two fields are disp
 
 >[!NOTE]
 >
->En bild Läs målgruppsresorna flyttas till statusen Slutförd 30 dagar efter resans genomförande. För schemalagda läsningsmålgrupper är det 30 dagar efter att den senaste förekomsten har körts.
+>En bild Läs målgruppsresorna och gå till **Slutförd** status 91 dagar ([standardtimeout](journey-gs.md#global_timeout)) efter resan. För schemalagda läsmålgrupper är det 91 dagar efter den sista förekomsten.
 
 ## Testa och publicera resan {#testing-publishing}
 

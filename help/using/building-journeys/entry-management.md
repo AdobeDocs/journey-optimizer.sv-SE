@@ -8,9 +8,9 @@ role: User
 level: Intermediate
 keywords: återinträde, resa, profil, återkommande
 exl-id: 8874377c-6594-4a5a-9197-ba5b28258c02
-source-git-commit: e45ec5f0e1bbcc73892f9cde5923627886f44ef6
+source-git-commit: 6ff54583c729175c74b3a7ea4ab9188505fde897
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '681'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Vid Unitary Events- och Audience-kvalificeringsresor kan du aktivera eller inakt
 
 * Om återinträde är inaktiverat kan en profil inte ange flera gånger samma resa inom den globala resetidsgränsen. Se det här [section](../building-journeys/journey-gs.md#global_timeout).
 
-Som standard tillåter resor återinträde. När **Tillåt återinträde** är aktiverat, **Vänteperiod för återinträde** -fältet visas. Det gör att du kan definiera väntetiden innan du tillåter att en profil går in på resan igen. Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 29 dagar.
+Som standard tillåter resor återinträde. När **Tillåt återinträde** är aktiverat, **Vänteperiod för återinträde** -fältet visas. Det gör att du kan definiera väntetiden innan du tillåter att en profil går in på resan igen. Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 91 dagar ([standardtimeout](journey-gs.md#global_timeout)).
 
 <!--
 When a journey ends, its status is **[!UICONTROL Closed]**. New individuals can no longer enter the journey. Persons already in the journey automatically exit the journey. [Learn more](journey-gs.md#entrance)
@@ -49,7 +49,7 @@ When a journey ends, its status is **[!UICONTROL Closed]**. New individuals can 
 Efter återinträdesperioden kan profilerna återinträda i resan. För att undvika detta och helt inaktivera återinträde för dessa profiler kan du lägga till ett villkor som testar om profilen redan har angetts eller inte, med hjälp av profil- eller målgruppsdata.
 
 <!--
-Due to the 30-day journey timeout, when journey re-entrance is not allowed, we cannot make sure the re-entrance blocking will work more than 30 days. Indeed, as we remove all information about persons who entered the journey 30 days after they enter, we cannot know the person entered previously, more than 30 days ago. -->
+Due to the 30-day journey timeout, when journey re-entrance is not allowed, we cannot make sure the re-entrance blocking will work more than 91 days. Indeed, as we remove all information about persons who entered the journey 91 days after they enter, we cannot know the person entered previously, more than 91 days ago. -->
 
 ## Affärsresor{#entry-business}
 
@@ -90,5 +90,5 @@ Det finns två alternativ för återkommande målgruppsresor:
 Mer information finns i [section](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
 
 <!--
-After 30 days, a Read audience journey switches to the **Finished** status. This behavior is set for 30 days only (i.e. journey timeout default value) as all information about profiles who entered the journey is removed 30 days after they entered. Persons still in the journey automatically are impacted. They exit the journey after the 30 day timeout. 
+After 91 days, a Read audience journey switches to the **Finished** status. This behavior is set for 91 days only (i.e. journey timeout default value) as all information about profiles who entered the journey is removed 91 days after they entered. Persons still in the journey automatically are impacted. They exit the journey after the 30 day timeout. 
 -->

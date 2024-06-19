@@ -5,9 +5,9 @@ description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: 0ba1e007ebdb3f7d68df270c4a7332bf37eec2b2
+source-git-commit: 6b9044117dcdd7554dea0c5f791a6dcfb0218010
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '375'
 ht-degree: 17%
 
 ---
@@ -20,27 +20,29 @@ Få en glimt av de senaste förbättringarna i Journey Optimizer-produkter och -
 
 >[!BEGINTABS]
 
->[!TAB Maj-releasen är live!]
+>[!TAB Juniversionen är live!]
 
 Upptäck nya funktioner och förbättringar som kommer i Adobe Journey Optimizer majversion.
 
 [![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
->[!TAB Experience Decision]
+>[!TAB Rapportering med Customer Journey Analytics (beta)]
 
-Experience Decision förenklar personaliseringen genom att erbjuda en centraliserad katalog med marknadsföringserbjudanden som kallas beslutsposter och en sofistikerad beslutsmotor.
+Journey Optimizer rapportering är nu helt integrerad med Customer Journey Analytics-funktioner, vilket standardiserar rapporteringen på båda plattformarna och förbättrar datakonsekvensen och tillförlitligheten.
 
-![](using/rn/assets/do-not-localize/gif-exd.gif)
+[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/reports/cja-ajo.md)
 
-[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/experience-decisioning/gs-experience-decisioning.md)
+>[!TAB AI Assistant]
 
->[!TAB Ny reseupplevelse]
+AI-assistenten är en funktion i användargränssnittet som du kan använda för att navigera bland och förstå Adobe-koncept och få driftsinsikter för just din miljö.
 
-I den här versionen finns ett förbättrat användargränssnitt på arbetsytan för resor och en mer intuitiv och effektiv användarupplevelse. Aktiviteterna blir tydligare och ger mer information om arbetsytan med färre klick.
+[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](/help/using/start/ai-assistant.md)
 
-![](using/rn/assets/new-canvas3.gif)
+>[!TAB Content Fragments]
 
-[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/rn/new-canvas.md)
+Fragment kan nu redigeras och ändringar kan spridas över alla liveresor och -kampanjer där de används.
+
+[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/content-management/fragments.md)
 
 >[!ENDTABS]
 

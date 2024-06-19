@@ -7,20 +7,21 @@ feature: Fragments
 topic: Content Management
 role: User
 level: Beginner, Intermediate
-source-git-commit: 83997271d16e15fb0d7ccdd21aa8ac8b8221a0d5
+exl-id: 70e88ea0-f2b0-4c13-8693-619741762429
+source-git-commit: 893f7146b358da48153b1e6bc74b8f622028df76
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '571'
 ht-degree: 0%
 
 ---
 
 # Spara innehåll som fragment {#save-as-fragment}
 
-När du redigerar innehåll i [!DNL Journey Optimizer]kan du spara hela eller delar av innehållet som fragment för framtida återanvändning.
+När du redigerar innehåll i [!DNL Journey Optimizer]kan du spara hela eller delar av innehållet som fragment för framtida återanvändning. Du kan spara innehåll som fragment antingen [från e-postdesignern](#save-as-visual-fragment), eller [från uttrycksredigeraren](#save-as-expression-fragment).
 
-## Spara innehåll som visuellt fragment {#save-as-visual-fragment}
+## Spara som visuellt fragment {#save-as-visual-fragment}
 
-När du utformar en [innehållsmall](content-templates.md) eller en [e-post](../email/get-started-email-design.md) i en kampanj eller en resa kan du spara en del av innehållet som ett visuellt fragment. Följ stegen nedan för att göra detta.
+Så här sparar du innehåll från e-postdesignern som fragment:
 
 1. I [E-postdesigner](../email/get-started-email-design.md)klickar du på ellipsen högst upp till höger på skärmen.
 
@@ -30,29 +31,31 @@ När du utformar en [innehållsmall](content-templates.md) eller en [e-post](../
 
 1. The **[!UICONTROL Save as fragment]** visas. Här väljer du de element som du vill inkludera i fragmentet, inklusive anpassningsfält och dynamiskt innehåll. Observera att kontextuella attribut inte stöds i fragment.
 
+   ![](assets/fragment-save-as-screen.png)
+
    >[!CAUTION]
    >
    >Du kan bara markera intilliggande avsnitt. Du kan inte markera en tom struktur eller ett annat fragment.
 
-   ![](assets/fragment-save-as-screen.png)
+1. Klicka **[!UICONTROL Create]** och fyll i fragmentnamnet och beskrivningen (om det behövs).
 
-1. Klicka **[!UICONTROL Create]**. Fyll i fragmentinformationen, dvs. namn och beskrivning (om det behövs).
-
-1. Om du vill tilldela egna eller grundläggande dataanvändningsetiketter till fragmentet väljer du **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md).
+1. Klicka på knappen **[!UICONTROL Manage access]** i skärmens övre del. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md).
 
 1. Markera eller skapa Adobe Experience Platform-taggar från **Taggar** fält för att kategorisera mallen för förbättrad sökning. [Läs mer](../start/search-filter-categorize.md#tags)
 
-1. Klicka **[!UICONTROL Create]** igen. Fragmentet sparas i [fragmentlista](#access-manage-fragments), kan du nå från [!DNL Journey Optimizer] egen meny.
+1. Klicka på **[!UICONTROL Create]**. Fragmentet läggs till i [fragmentlista](#access-manage-fragments) med **Utkast** status. Det blir ett fristående fragment som kan användas som vilket annat visuellt fragment som helst från den listan.
 
-   Det blir ett fristående fragment som kan [använd](#access-manage-fragments), [redigerad](#edit-fragments) och [arkiverad](#archive-fragments) som alla andra objekt i den listan.
+   >[!NOTE]
+   >
+   >Ändringar i det nya fragmentet sprids inte till e-postmeddelandet eller mallen som det kommer från. På samma sätt ändras inte det nya fragmentet när det ursprungliga innehållet redigeras i e-postmeddelandet eller mallen.
 
-Du kan nu använda det här fragmentet när du skapar [e-post](../email/get-started-email-design.md) eller [innehållsmall](content-templates.md) inom [!DNL Journey Optimizer]. [Lär dig mer](../email/use-visual-fragments.md)
+1. För att kunna använda fragmentet i era resor och kampanjer måste ni göra det levande. [Lär dig förhandsgranska och publicera ett fragment](../content-management/create-fragments.md#publish)
 
 >[!NOTE]
 >
->Ändringar i det nya fragmentet sprids inte till e-postmeddelandet eller mallen som det kommer från. På samma sätt ändras inte det nya fragmentet när det ursprungliga innehållet redigeras i e-postmeddelandet eller mallen.
+>Fragmentpublicering lanseras gradvis under flera dagar efter Journey Optimizer juni-utgåvan. Vissa användare har omedelbar åtkomst, men andra kan uppleva en fördröjning innan den blir tillgänglig i deras miljöer. Om den här förbättringen ännu inte är tillgänglig i din miljö, observera att fragmentpublicering inte krävs för att använda fragment på era resor och i era kampanjer.
 
-## Spara innehåll som uttrycksfragment {#save-as-expression-fragment}
+## Spara som uttrycksfragment {#save-as-expression-fragment}
 
 >[!CONTEXTUALHELP]
 >id="ajo_perso_library"
@@ -65,16 +68,22 @@ Följ stegen nedan om du vill spara innehåll som ett uttrycksfragment.
 
 1. I [personaliseringsredigerare](../personalization/personalization-build-expressions.md) gränssnitt, skapa ett uttryck och klicka sedan på **[!UICONTROL Save as fragment]**.
 
+   >[!NOTE]
+   >
+   >Uttryck får inte överskrida 200 kB.
+
 1. I den högra rutan anger du ett namn och en beskrivning för uttrycket så att användarna enklare kan hitta det.
 
    ![](assets/expression-fragment-save-as.png)
 
-1. Klicka **[!UICONTROL Save fragment]**.
+1. Klicka på **[!UICONTROL Save fragment]**.
 
    <!--An expression fragment cannot be nested inside another fragment.-->
 
-1. Uttrycksfragmentet läggs till i [fragmentlista](#access-manage-fragments). Nu kan ni använda den för att skapa personaliserat innehåll.
+1. Fragmentet läggs till i [fragmentlista](#access-manage-fragments) med **Utkast** status. Det blir ett fristående fragment som kan användas som andra uttrycksfragment från den listan.
+
+1. För att kunna använda fragmentet i era resor och kampanjer måste ni göra det levande. [Lär dig förhandsgranska och publicera ett fragment](../content-management/create-fragments.md#publish)
 
 >[!NOTE]
 >
->Uttryck får inte överskrida 200 kB.
+>Fragmentpublicering lanseras gradvis under flera dagar efter Journey Optimizer juni-utgåvan. Vissa användare har omedelbar åtkomst, men andra kan uppleva en fördröjning innan den blir tillgänglig i deras miljöer. Om den här förbättringen ännu inte är tillgänglig i din miljö, observera att fragmentpublicering inte krävs för att använda fragment på era resor och i era kampanjer.

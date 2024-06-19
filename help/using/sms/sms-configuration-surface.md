@@ -7,9 +7,9 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 0d541520-016e-468f-b011-808712847556
-source-git-commit: 82c58753b0beb1c6c60b4e1a8188725b3cb83390
+source-git-commit: 794ac45177e467be4bd5b8f7288e07c85e4d806a
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ När din SMS/MMS-kanal har konfigurerats måste du skapa en kanal för att kunna
 
 Så här skapar du en kanalyta:
 
-1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och markera **[!UICONTROL Branding]** > **[!UICONTROL Channel surfaces]**. Klicka på **[!UICONTROL Create channel surface]** -knappen.
+1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och markera **[!UICONTROL Branding]** > **[!UICONTROL Channel surfaces]**. Klicka på knappen **[!UICONTROL Create channel surface]**.
 
    ![](assets/preset-create.png)
 
@@ -67,13 +67,12 @@ Så här skapar du en kanalyta:
    >
    >Om du vill kunna välja en underdomän kontrollerar du att du tidigare har konfigurerat minst en SMS/MMS-underdomän. [Lär dig mer](sms-subdomains.md)
 
-<!--
-1. Enter the **[!UICONTROL Opt-out number]** you want to use for this surface. When profiles opt out from this number, you are still able to send them messages from other numbers you may be using to send out text messages with [!DNL Journey Optimizer].
+1. Ange **[!UICONTROL Opt-out number]** som du vill använda för den här ytan. När profiler avanmäler sig från det här numret kan du fortfarande skicka meddelanden från andra nummer som du använder för att skicka ut textmeddelanden med [!DNL Journey Optimizer].
 
-    >[!NOTE]
-    >
-    >In [!DNL Journey Optimizer], opt-out for text messages is no longer managed at the channel level. It is now specific to a number.
--->
+   >[!NOTE]
+   >
+   >I [!DNL Journey Optimizer], avanmälning för textmeddelanden hanteras inte längre på kanalnivå. Den är nu specifik för ett tal.
+
 1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara kanalytan som ett utkast och återuppta konfigurationen senare.
 
    ![](assets/sms-submit-surface.png)

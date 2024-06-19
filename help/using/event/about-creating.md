@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: händelse, enhet, skapa, resa
 exl-id: e22e2bc7-0c15-457a-8980-97bea5da7784
-source-git-commit: 0f1c4b96e930e8e473463002c1d8ef66341a07c4
+source-git-commit: 531662b7d5e2455a017d68d6037c44b6950cc894
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1571'
 ht-degree: 9%
 
 ---
@@ -61,20 +61,17 @@ Här följer de första stegen för att konfigurera en ny händelse:
    >
    >När du väljer **[!UICONTROL System Generated]** type är bara scheman som har type-fältet eventID tillgängliga. När du väljer **[!UICONTROL Rule Based]** är alla Experience Event-scheman tillgängliga.
 
-1. För regelbaserade händelser klickar du inuti **[!UICONTROL Event ID condition]** fält. Använd den enkla eller avancerade uttrycksredigeraren för att definiera villkoret som ska användas av systemet för att identifiera de händelser som utlöser din resa.
-   ![](assets/jo-event6.png)
+1. För regelbaserade händelser klickar du inuti **[!UICONTROL Event ID condition]** fält. Använda <!--simple or advanced--> Uttrycksredigeraren definierar det villkor som ska användas av systemet för att identifiera de händelser som utlöser din resa.
 
-   >[!NOTE]
-   >
-   >Den avancerade uttrycksredigeraren i Event-konfigurationen är tillgänglig i Begränsad tillgänglighet för utvalda kunder.
+![](assets/jo-event6.png)
 
-   I vårt exempel skrev vi ett villkor baserat på profilens stad. Det innebär att när systemet tar emot en händelse som matchar det här villkoret (**[!UICONTROL City]** fält och **[!UICONTROL Paris]** värde), kommer det att skickas till resorna.
+I vårt exempel skrev vi ett villkor baserat på profilens stad. Det innebär att när systemet tar emot en händelse som matchar det här villkoret (**[!UICONTROL City]** fält och **[!UICONTROL Paris]** värde), kommer det att skickas till resorna.
 
-   >[!NOTE]
-   >
-   >I den enkla uttrycksredigeraren är inte alla operatorer tillgängliga, de är beroende av datatypen. För en strängtyp av fält kan du till exempel använda &quot;contains&quot; eller &quot;equal to&quot;.
-   >
-   >Om du ändrar schemat med nya uppräkningsvärden efter att du har skapat händelsen måste du följa de här stegen för att tillämpa ändringarna på den befintliga händelsen: avmarkera uppräkningsfältet från händelsefälten, bekräfta valet och sedan markera uppräkningsfältet igen. Det nya uppräkningsvärdet visas nu.
+>[!NOTE]
+>
+>I den enkla uttrycksredigeraren är inte alla operatorer tillgängliga, de är beroende av datatypen. För en strängtyp av fält kan du till exempel använda &quot;contains&quot; eller &quot;equal to&quot;.
+>
+>Om du ändrar schemat med nya uppräkningsvärden efter att du har skapat händelsen måste du följa de här stegen för att tillämpa ändringarna på den befintliga händelsen: avmarkera uppräkningsfältet från händelsefälten, bekräfta valet och sedan markera uppräkningsfältet igen. Det nya uppräkningsvärdet visas nu.
 
 1. Lägg till en namnrymd. Det här steget är valfritt men rekommenderas eftersom du kan lägga till en namnrymd vilket innebär att du kan utnyttja information som lagras i realtidskundprofilen. Denna definierar vilken typ av nyckel händelsen har. Se [det här avsnittet](../event/about-creating.md#select-the-namespace).
 
@@ -159,14 +156,23 @@ Om du behöver använda en annan nyckel, t.ex. ett CRM-ID eller en e-postadress,
 
    ![](assets/journey16.png)
 
-1. Välj det fält som valts som nyckel i listan över nyttolastfält. Du kan också växla till den avancerade uttrycksredigeraren för att skapa mer komplexa nycklar (till exempel en sammanfogning av två fält med händelserna).
-
-   ![](assets/journey20.png)
+1. Välj det fält som valts som nyckel i listan över nyttolastfält.
 
 När händelsen tas emot kan nyckelns värde göra det möjligt för systemet att identifiera den person som är associerad med händelsen. Associerat till ett namnutrymme (se [det här avsnittet](../event/about-creating.md#select-the-namespace)) kan nyckeln användas för att utföra frågor på Adobe Experience Platform. Se [den här sidan](../building-journeys/about-journey-activities.md#orchestration-activities).
 Nyckeln används också för att kontrollera att en person befinner sig på en resa. En person kan faktiskt inte befinna sig på två olika platser på samma resa. Därför tillåter systemet inte att samma nyckel, till exempel nyckeln CRMID=3224, finns på olika platser under samma resa.
 
-Du har även tillgång till de avancerade uttrycksfunktionerna (**[!UICONTROL Advanced mode]**) om du vill utföra ytterligare ändringar. Dessa funktioner gör att du kan ändra de värden som används för att utföra specifika frågor, till exempel ändra format, utföra fältsammanfogningar, med hänsyn enbart till en del av ett fält (till exempel de 10 första tecknen). Läs den här [sidan](../building-journeys/expression/expressionadvanced.md).
+### Avancerad uttrycksredigerare {#adv-exp-editor}
+
+
+När du definierar profilidentifieraren kan du växla till den avancerade uttrycksredigeraren för att skapa mer komplexa nycklar (till exempel en sammanfogning av två fält för händelserna).
+
+![](assets/journey20.png)
+
+Du har tillgång till de avancerade uttrycksfunktionerna från **[!UICONTROL Advanced mode]** om du vill utföra ytterligare ändringar. Dessa funktioner gör att du kan ändra de värden som används för att utföra specifika frågor, till exempel ändra format, utföra fältsammanfogningar, med hänsyn enbart till en del av ett fält (till exempel de 10 första tecknen). Läs den här [sidan](../building-journeys/expression/expressionadvanced.md).
+
+>[!AVAILABILITY]
+>
+>Den avancerade uttrycksredigeraren är bara tillgänglig för en uppsättning organisationer (LA).
 
 ## Förhandsgranska nyttolasten {#preview-the-payload}
 

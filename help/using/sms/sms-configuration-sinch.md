@@ -7,10 +7,10 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 85412a85-edf0-4069-8bc7-b80371375f1f
-source-git-commit: 342b9210f79266cb11628dcdc411f90844a84e37
+source-git-commit: 794ac45177e467be4bd5b8f7288e07c85e4d806a
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 0%
+source-wordcount: '504'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ När du använder Sinch-providern med Journey Optimizer finns det två olika alt
 
 Så här konfigurerar du din Sinch-leverantör för att skicka SMS-meddelanden och MMS med Journey Optimizer:
 
-1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och väljer **[!UICONTROL API Credentials]** -menyn. Klicka på **[!UICONTROL Create new API credentials]** -knappen.
+1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och väljer **[!UICONTROL API Credentials]** -menyn. Klicka på knappen **[!UICONTROL Create new API credentials]**.
 
 1. Konfigurera dina SMS API-autentiseringsuppgifter enligt nedanstående:
 
@@ -52,6 +52,8 @@ Så här konfigurerar du din Sinch-leverantör för att skicka SMS-meddelanden o
 
    * **[!UICONTROL Double Opt-In Message]**: ange det anpassade svar som automatiskt skickas som svar på bekräftelsen av dubbel anmälan.
 
+   * **[!UICONTROL Inbound Number]**: lägg till ditt unika inkommande nummer. På så sätt kan du använda samma API-autentiseringsuppgifter för olika sandlådor, var och en med ett eget inkommande nummer.
+
 1. Klicka **[!UICONTROL Submit]** när du är klar med konfigurationen av dina API-autentiseringsuppgifter.
 
 När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu skapa en kanal för SMS-meddelanden. [Läs mer](sms-configuration-surface.md)
@@ -64,7 +66,7 @@ När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu s
 
 Så här konfigurerar du Sinch MMS att skicka MMS med Journey Optimizer:
 
-1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och väljer **[!UICONTROL API Credentials]** -menyn. Klicka på **[!UICONTROL Create new API credentials]** -knappen.
+1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och väljer **[!UICONTROL API Credentials]** -menyn. Klicka på knappen **[!UICONTROL Create new API credentials]**.
 
 1. Konfigurera MMS API-autentiseringsuppgifterna enligt nedan:
 

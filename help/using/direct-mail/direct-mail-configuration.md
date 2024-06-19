@@ -7,10 +7,10 @@ role: User
 level: Experienced
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
-source-git-commit: 3686127299107eb19db8e9290be1b737c1c87ec3
+source-git-commit: c7d8dd94bde49e8d02fe553fbac3942f55bf73fe
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 0%
+source-wordcount: '1194'
+ht-degree: 1%
 
 ---
 
@@ -58,11 +58,19 @@ Innan du kan generera filen måste du skapa:
 >title="Välj AWS"
 >abstract="Markera det geografiska område på AWS-servern där du vill exportera dina direktmeddelandefiler. Som allmän praxis är det att föredra att välja den närmaste regionen till den plats där direktreklamleverantören finns."
 
+>[!NOTE]
+>
+>För närvarande stöds Amazon S3, SFTP och Azure i [!DNL Journey Optimizer].
+
 Om du vill leverera ett direktmejl [!DNL Journey Optimizer] genererar och exporterar filen som innehåller målgruppsdata till en server.
 
 Du måste ange den serverinformationen så att din e-postleverantör kan komma åt och använda filen för att leverera e-post.
 
 Följ stegen nedan för att konfigurera filflödet.
+
+>[!BEGINTABS]
+
+>[!TAB Amazon S3]
 
 1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL File routing configuration]** > **[!UICONTROL File Routing]** menyn och klicka sedan på **[!UICONTROL Create routing configuration]**.
 
@@ -70,33 +78,89 @@ Följ stegen nedan för att konfigurera filflödet.
 
 1. Ange ett namn för konfigurationen.
 
-1. Välj **[!UICONTROL Server type]** som du vill använda för att exportera direktmeddelandefiler.
+1. Välj **Amazon S3** som **[!UICONTROL Server type]** som används för att exportera direktmeddelandefiler.
 
    ![](assets/file-routing-config-type.png){width="800" align="center"}
 
-   >[!NOTE]
-   >
-   >För närvarande stöds Amazon S3, SFTP och Azure i [!DNL Journey Optimizer].
+1. Fyll i information och autentiseringsuppgifter för servern
 
-1. Fyll i information och autentiseringsuppgifter för servern, t.ex. serveradress, åtkomstnyckel.
+   * **AWS-bucketnamn**:Om du vill veta var du hittar ditt AWS-bucket-namn kan du läsa [den här sidan](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html).
 
-   ![](assets/file-routing-config-sftp-details.png)
+   * **AWS åtkomstnyckel**: Om du vill veta var du hittar ditt ID för AWS-åtkomstnyckel kan du läsa [den här sidan](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html#access-keys-and-secret-access-keys).
 
-1. Om du valde **[!UICONTROL Amazon S3]** väljer du **[!UICONTROL AWS region]** var serverinfrastrukturen ska placeras.
+   * **AWS hemlig nyckel**: Om du vill veta var du hittar din hemliga AWS-nyckel kan du läsa [den här sidan](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+
+   * **AWS**: välj **[!UICONTROL AWS region]** var serverinfrastrukturen ska placeras. AWS-regioner är geografiska områden som AWS använder för sin molninfrastruktur. Som allmän praxis är det att föredra att välja den region som ligger närmast din direktreklamleverantörs plats.
 
    ![](assets/file-routing-config-aws-region.png){width="800" align="center"}
 
-   >[!NOTE]
-   >
-   >AWS-regioner är geografiska områden som AWS använder för sin molninfrastruktur. Som allmän praxis är det att föredra att välja den region som ligger närmast din direktreklamleverantörs plats.
+1. Kopiera och klistra in krypteringsnyckeln i **[!UICONTROL PGP/GPG encryption key]** fält.
+
+1. Välj **[!UICONTROL Submit]**.  Filroutningskonfigurationen skapas med **[!UICONTROL Active]** status. Den är nu klar att användas i en [direktreklamyta](#direct-mail-surface).
+
+   Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningskonfigurationen, men du kan inte markera den på en yta förrän den är **[!UICONTROL Active]**.
+
+>[!TAB SFTP]
+
+1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL File routing configuration]** > **[!UICONTROL File Routing]** menyn och klicka sedan på **[!UICONTROL Create routing configuration]**.
+
+   ![](assets/file-routing-config-button.png){width="800" align="center"}
+
+1. Ange ett namn för konfigurationen.
+
+1. Välj SFTP som **[!UICONTROL Server type]** som används för att exportera direktmeddelandefiler.
+
+   ![](assets/file-routing-config-type-sftp.png){width="800" align="center"}
+
+1. Fyll i information och autentiseringsuppgifter för servern:
+
+   * **Konto**: Kontonamn som används för att ansluta till SFTP-servern.
+
+   * **Serveradress**: &#x200B; URL för SFTP-servern.
+
+   * **Port**: Portnummer för FTP-anslutning.
+
+   * **Lösenord**: &#x200B; lösenord som används för att ansluta till SFTP-servern.
+
+   ![](assets/file-routing-config-sftp-detail.png)
 
 1. Kopiera och klistra in krypteringsnyckeln i **[!UICONTROL PGP/GPG encryption key]** fält.
 
-1. Välj **[!UICONTROL Submit]**. Filroutningskonfigurationen skapas med **[!UICONTROL Active]** status. Den är nu klar att användas i en [direktreklamyta](#direct-mail-surface).
+1. Välj **[!UICONTROL Submit]**.  Filroutningskonfigurationen skapas med **[!UICONTROL Active]** status. Den är nu klar att användas i en [direktreklamyta](#direct-mail-surface).
 
-   >[!NOTE]
-   >
-   >Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningskonfigurationen, men du kan inte markera den på en yta förrän den är **[!UICONTROL Active]**.
+   Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningskonfigurationen, men du kan inte markera den på en yta förrän den är **[!UICONTROL Active]**.
+
+>[!TAB Azure]
+
+1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL File routing configuration]** > **[!UICONTROL File Routing]** menyn och klicka sedan på **[!UICONTROL Create routing configuration]**.
+
+   ![](assets/file-routing-config-button.png){width="800" align="center"}
+
+1. Ange ett namn för konfigurationen.
+
+1. Välj Azure **[!UICONTROL Server type]** som används för att exportera direktmeddelandefiler.
+
+   ![](assets/file-routing-config-type-azure.png){width="800" align="center"}
+
+1. Fyll i information och autentiseringsuppgifter för servern:
+
+   * **Azure Connection String**: Hitta **Azure Connection String**, se [den här sidan](https://learn.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string#configure-a-connection-string-for-an-azure-storage-account).
+
+     The **Azure Connection String** ska följa formatet nedan:
+
+     `DefaultEndpointsProtocol=[http|https];AccountName=myAccountName;AccountKey=myAccountKey`
+
+   * **Behållarnamn**: Hitta **Behållarnamn**, se [den här sidan](https://learn.microsoft.com/en-us/azure/storage/blobs/blob-containers-portal).
+
+     The **Behållarnamn** ska bara innehålla behållarens namn utan snedstreck. Om du vill ange en sökväg i behållaren för att spara filen uppdaterar du filnamnet för direktreklamkampanjen så att den innehåller den önskade sökvägen.
+
+1. Kopiera och klistra in krypteringsnyckeln i **[!UICONTROL PGP/GPG encryption key]** fält.
+
+1. Välj **[!UICONTROL Submit]**.  Filroutningskonfigurationen skapas med **[!UICONTROL Active]** status. Den är nu klar att användas i en [direktreklamyta](#direct-mail-surface).
+
+   Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningskonfigurationen, men du kan inte markera den på en yta förrän den är **[!UICONTROL Active]**.
+
+>[!ENDTABS]
 
 ## Skapa en yta för direktreklam {#direct-mail-surface}
 

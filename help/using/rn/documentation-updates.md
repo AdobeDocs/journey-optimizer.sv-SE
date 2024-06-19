@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: db48c85e3707fcd5fbee61994d488cf640e9afa7
+source-git-commit: 6ff54583c729175c74b3a7ea4ab9188505fde897
 workflow-type: tm+mt
-source-wordcount: '5351'
-ht-degree: 12%
+source-wordcount: '5385'
+ht-degree: 13%
 
 ---
 
@@ -21,6 +21,8 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 
 ## Juni 2024 {#june-2024}
 
+* Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version från 24 juni finns utförlig i dokumentationen. [Läs mer](release-notes.md)
+* En anteckning om användningen av kopplingspolicyer under resor har lagts till i [den här sidan](../building-journeys/journey-gs.md#merge-policies).
 * Sidan om hur du konfigurerar en **Vänta** aktiviteten i en resa har reformerats och förbättrats. [Läs mer](../building-journeys/wait-activity.md)
 
 ## Maj 2024 {#may-2024}

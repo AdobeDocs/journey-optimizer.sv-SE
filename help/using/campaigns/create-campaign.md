@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: 2edff0123084fa1736fb8198c3b4e8ff4e40341d
+source-git-commit: c58fda6a59daae7a404058609bce01623064f9fb
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '893'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 Om du vill skapa en ny kampanj öppnar du **[!UICONTROL Campaigns]** menyn och klicka sedan på **[!UICONTROL Create campaign]**. Du kan också duplicera en befintlig livekampanj och skapa en ny. [Läs mer](modify-stop-campaign.md#duplicate)
 
-## Välj kampanjtyp och kanal {#campaigntype}
+## Välj kampanjtyp {#campaigntype}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_type"
@@ -39,25 +39,13 @@ Om du vill skapa en ny kampanj öppnar du **[!UICONTROL Campaigns]** menyn och k
 >title="Kampanjkategori"
 >abstract="Om du skapar en schemalagd kampanj visas **marknadsföring** text väljs automatiskt. Välj om du vill skicka en **marknadsföring** meddelande (kampanjmeddelande som kräver användarens samtycke) eller **transaktionsbaserad** meddelande (icke-kommersiellt meddelande, som också kan skickas till profiler som inte längre prenumererar i specifika sammanhang)."
 
-1. I **[!UICONTROL Properties]** anger du hur kampanjen ska köras. Det finns två typer av kampanjer:
+1. Välj den typ av kampanj som du vill köra
 
-   * **[!UICONTROL Scheduled]**: kör kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka **marknadsföring** meddelanden. De konfigureras och körs från användargränssnittet.
+   * **[!UICONTROL Scheduled - Marketing]**: kör kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka **marknadsföring** meddelanden. De konfigureras och körs från användargränssnittet.
 
-   * **[!UICONTROL API-triggered]**: kör kampanjen med ett API-anrop. API-utlösta kampanjer syftar till att skicka antingen **marknadsföring**, eller **transaktionsbaserad** meddelanden, t.ex. meddelanden som skickas ut efter en åtgärd som har utförts av en person: lösenordsåterställning, kundvagn osv. [Lär dig hur du utlöser en kampanj med API:er](api-triggered-campaigns.md)
+   * **[!UICONTROL API-triggered - Marketing/Transactional]**: kör kampanjen med ett API-anrop. API-utlösta kampanjer syftar till att skicka antingen **marknadsföring**, eller **transaktionsbaserad** meddelanden, t.ex. meddelanden som skickas ut efter en åtgärd som har utförts av en person: lösenordsåterställning, kundvagn osv. [Lär dig hur du utlöser en kampanj med API:er](api-triggered-campaigns.md)
 
-1. Om du skapar en schemalagd kampanj visas **marknadsföring** text väljs automatiskt. Välj om du vill skicka en **marknadsföring** eller **transaktionsbaserad** meddelande.&quot;
-
-1. I **[!UICONTROL Actions]** väljer du kanal och kanal för att skicka meddelandet.
-
-   En yta är en konfiguration som har definierats av en [Systemadministratör](../start/path/administrator.md). Den innehåller alla tekniska parametrar för att skicka meddelandet, som rubrikparametrar, underdomän, mobilappar osv. [Läs mer](../configuration/channel-surfaces.md).
-
-   Endast kanalytor som är kompatibla med marknadsföringskampanjtypen visas i listrutan.
-
-   ![](assets/create-campaign-action.png)
-
-   >[!NOTE]
-   >
-   >Om du skapar en kampanj för push-meddelanden kan du aktivera **[!UICONTROL Rapid delivery mode]**, som är ett Journey Optimizer-tillägg som gör att det går att skicka mycket snabba push-meddelanden i stora volymer. [Läs mer](../push/create-push.md#rapid-delivery)
+   ![](assets/create-campaign-modal.png)
 
 1. Klicka **[!UICONTROL Create]** för att skapa kampanjen.
 
@@ -71,13 +59,41 @@ Om du vill skapa en ny kampanj öppnar du **[!UICONTROL Campaigns]** menyn och k
 
 1. Klicka på knappen **[!UICONTROL Manage access]** -knappen. [Läs mer om OLA (Object Level Access Control)](../administration/object-based-access.md)
 
+## Definiera kampanjmålgruppen {#audience}
+
+Definiera målgruppen för kampanjen genom att följa dessa steg:
+
+>[!IMPORTANT]
+>
+>Användning av målgrupper och attribut från [publiksammansättning](../audience/get-started-audience-orchestration.md) och [anpassad uppladdning (CSV-fil) målgrupper](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) för närvarande inte kan användas tillsammans med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
+>
+>För API-utlösta kampanjer måste målgruppen anges via API-anrop.
+
+1. I **Målgrupp** klickar du på **[!UICONTROL Select audience]** för att visa en lista över tillgängliga Adobe Experience Platform-målgrupper. [Läs mer om målgrupper](../audience/about-audiences.md)
+
+1. I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera individerna från det valda segmentet.
+
+   Individer som tillhör ett segment som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kommer inte att omfattas av kampanjen. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace)
+
+   ![](assets/create-campaign-namespace.png)
+
+   <!--If you are are creating an API-triggered campaign, the **[!UICONTROL cURL request]** section allows you to retrieve the **[!UICONTROL Campaign ID]** to use in the API call. [Learn more](api-triggered-campaigns.md)-->
+
 ## Skapa meddelandet och konfigurera spårning {#content}
 
-I **[!UICONTROL Actions]** skapar du meddelandet som ska skickas med kampanjen.
+1. I **[!UICONTROL Actions]** väljer du kanal och yta för att skicka meddelandet.
 
-1. Klicka på **[!UICONTROL Edit content]** och sedan skapa och utforma meddelandeinnehållet.
+   En yta är en konfiguration som har definierats av en [Systemadministratör](../start/path/administrator.md). Den innehåller alla tekniska parametrar för att skicka meddelandet, som rubrikparametrar, underdomän, mobilappar osv. [Läs mer](../configuration/channel-surfaces.md).
 
-   Lär dig detaljerade steg för att skapa meddelandeinnehåll på följande sidor:
+   Endast kanalytor som är kompatibla med marknadsföringskampanjtypen visas i listrutan.
+
+   ![](assets/create-campaign-action.png)
+
+   >[!NOTE]
+   >
+   >Om du skapar en kampanj för push-meddelanden kan du aktivera **[!UICONTROL Rapid delivery mode]**, som är ett Journey Optimizer-tillägg som gör att det går att skicka mycket snabba push-meddelanden i stora volymer. [Läs mer](../push/create-push.md#rapid-delivery)
+
+1. Klicka på **[!UICONTROL Edit content]** för att skapa och utforma meddelanden. Lär dig detaljerade steg för att skapa meddelandeinnehåll på följande sidor:
 
    <table style="table-layout:fixed">
     <tr style="border: 0;">
@@ -119,24 +135,6 @@ I **[!UICONTROL Actions]** skapar du meddelandet som ska skickas med kampanjen.
 1. I **[!UICONTROL Actions tracking]** anger du om du vill spåra hur mottagarna svarar på leveransen: du kan spåra klick och/eller öppningar.
 
    Spåra resultat kan nås från kampanjrapporten när kampanjen har genomförts. [Läs mer om kampanjrapporter](../reports/campaign-global-report.md)
-
-## Definiera målgruppen {#audience}
-
-Klicka på **[!UICONTROL Select audience]** för att visa en lista över tillgängliga Adobe Experience Platform-målgrupper. [Läs mer om målgrupper](../audience/about-audiences.md)
-
->[!IMPORTANT]
->
->Användning av målgrupper och attribut från [publiksammansättning](../audience/get-started-audience-orchestration.md) och [anpassad uppladdning (CSV-fil) målgrupper](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) för närvarande inte kan användas tillsammans med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
->
->För API-utlösta kampanjer måste målgruppen anges via API-anrop.
-
-I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera individerna från det valda segmentet.
-
-Individer som tillhör ett segment som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kommer inte att omfattas av kampanjen. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace)
-
-![](assets/create-campaign-namespace.png)
-
-<!--If you are are creating an API-triggered campaign, the **[!UICONTROL cURL request]** section allows you to retrieve the **[!UICONTROL Campaign ID]** to use in the API call. [Learn more](api-triggered-campaigns.md)-->
 
 ## Schemalägg kampanjen {#schedule}
 

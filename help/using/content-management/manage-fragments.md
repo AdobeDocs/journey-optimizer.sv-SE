@@ -8,70 +8,97 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 1fc708e1-a993-4a2a-809c-c5dc08a4bae1
-source-git-commit: 16c079bbb4c6847720716bcbaf1937d1c401aeae
+source-git-commit: 893f7146b358da48153b1e6bc74b8f622028df76
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 1%
+source-wordcount: '944'
+ht-degree: 0%
 
 ---
 
 # Hantera fragment {#manage-fragments}
+
+Om du vill hantera dina fragment kan du komma åt fragmentlistan från **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]** vänster meny.
+
+Alla fragment som skapades i den aktuella sandlådan - antingen [från **[!UICONTROL Fragments]** meny](#create-fragments), antingen med [Spara som fragment](#save-as-fragment) -alternativ visas.
+
+![](assets/fragment-list-filters.png)
+
+Du kan filtrera fragment på deras:
+
+* Status (utkast eller Live)
+* Typ (visuellt eller uttryck)
+* Skapad eller ändrad den
+* Delstat (arkiverad eller ej)
+* Taggar
+
+Du kan också välja att visa alla fragment eller bara de objekt som den aktuella användaren har skapat eller ändrat.
+
+Från **[!UICONTROL More actions]** intill varje fragment kan du:
+
+* Duplicera ett fragment.
+* Använd **[!UICONTROL Explore references]** möjlighet att se resorna, kampanjerna eller mallarna där de används. [Läs mer](#explore-references)
+* Arkivera ett fragment. [Läs mer](#archive-fragments)
+* Redigera ett fragments taggar [Lär dig hur du arbetar med enhetliga taggar](../start/search-filter-categorize.md#tags).
+
+![](assets/fragment-list-more-actions.png)
+
+## Fragmentstatus
 
 >[!CONTEXTUALHELP]
 >id="ajo_fragment_statuses"
 >title="Nya fragmentstatusar"
 >abstract="Sedan **Utkast** och **Live** statusvärden har introducerats i Journey Optimizer Juniversion, där alla fragment som skapats före den här versionen har statusen &quot;Utkast&quot;, även om de används under en resa eller kampanj. Om du ändrar något i dessa fragment måste du publicera dem för att göra dem&quot;Live&quot; och sprida ändringarna till tillhörande kampanjer och resor. Ni måste också skapa en ny resa/kampanjversion och publicera den. Publicering kräver användarbehörighet."
 
-Om du vill hantera dina fragment kan du komma åt fragmentlistan från **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]** vänster meny.
+>[!AVAILABILITY]
+>
+> Observera att fragmentstatus gradvis introduceras under flera dagar efter Journey Optimizer juni-utgåvan. Vissa användare har omedelbar åtkomst, men andra kan uppleva en fördröjning innan den blir tillgänglig i deras miljöer. Observera att fragment inte behöver vara **Live** för att användas i era resor och kampanjer.
 
-![](assets/fragment-list.png)
+Fragment kan ha flera statusar:
 
-Alla fragment som skapades i den aktuella sandlådan - antingen [från **[!UICONTROL Fragments]** meny](#create-fragments), antingen med [Spara som fragment](#save-as-fragment) -alternativ visas.
+* **[!UICONTROL Draft]**: Fragmentet redigeras och har inte godkänts.
 
-Du kan filtrera fragment på deras:
+* **[!UICONTROL Live]**: Fragmentet har godkänts och är live. [Lär dig publicera ett fragment](../content-management/create-fragments.md#publish)
 
-* Typ: **[!UICONTROL Visual]** eller **[!UICONTROL Expression]**
-* Taggar
-* Skapad eller ändrad den
+  När ett live-fragment redigeras visas en specifik ikon bredvid dess status. Klicka på den här ikonen för att öppna utkastet av fragmentet.
 
-Du kan välja att visa alla fragment eller bara de objekt som den aktuella användaren har skapat eller ändrat.
+* **[!UICONTROL Publishing]**: Fragmentet har godkänts och publiceras.
+* **[!UICONTROL Archived]**: Fragmentet har arkiverats. [Lär dig arkivera fragment](#archive-fragments)
 
-Du kan även visa **[!UICONTROL Archived]** fragment. [Läs mer](#archive-fragments)
-
-![](assets/fragment-list-filters.png)
-
-Från **[!UICONTROL More actions]** intill varje fragment kan du:
-
-* Duplicera ett fragment.
-
-* Använd **[!UICONTROL Explore references]** möjlighet att se resorna, kampanjerna eller mallarna där de används. [Läs mer](#explore-references)
-
-* Arkivera ett fragment. [Läs mer](#archive-fragments)
-
-* Redigera ett fragment [taggar](../start/search-filter-categorize.md#tags).
-
-![](assets/fragment-list-more-actions.png)
+>[!CAUTION]
+>
+>Sedan **Utkast** och **Live** statusvärden har introducerats i Journey Optimizer Juniversion, där alla fragment som skapats före den här versionen har statusen &quot;Utkast&quot;, även om de används under en resa eller kampanj. Om du ändrar något i dessa fragment måste du publicera dem för att göra dem&quot;Live&quot; och sprida ändringarna till tillhörande kampanjer och resor. Ni måste också skapa en ny resa/kampanjversion och publicera den. Publicering kräver användarbehörighet.
 
 ## Redigera fragment {#edit-fragments}
 
 Om du vill redigera ett fragment följer du stegen nedan.
 
-1. Klicka på önskat objekt på **[!UICONTROL Fragments]** lista.
-1. Från fragmentegenskaperna kan du [utforska referenser](#explore-references), [hantera åtkomsten](../administration/object-based-access.md)och uppdatera fragmentinformationen inklusive [taggar](../start/search-filter-categorize.md#tags).
+1. Klicka på önskat fragment i dialogrutan **[!UICONTROL Fragments]** lista.
 
-   ![](../email/assets/fragment-edit-content.png)
+1. Fragmentegenskaperna öppnas med en förhandsgranskning av innehållet.
 
-1. Markera motsvarande knapp om du vill redigera innehåll på samma sätt som när du skapar ett fragment från början. [Läs mer](#create-from-scratch)
+1. Om fragmentet som redigeras har **Live** status, klicka på **Ändra** om du vill skapa ett utkast av fragmentet. Den aktuella versionen av fragmentet fortsätter att vara aktiv tills du publicerar utkastet.
 
->[!NOTE]
+1. Gör önskade ändringar av fragmentet. Om du vill redigera innehållet klickar du på **Redigera** redigerar sedan innehållet på samma sätt som när du skapar ett fragment från grunden. [Lär dig skapa ett fragment](#create-from-scratch)
+
+   >[!NOTE]
+   >
+   >När du redigerar ett uttrycksfragment kan du ta bort alla anpassningsfält, men inte lägga till nya i fragmentinnehållet. Om du vill lägga till anpassningsfält duplicerar du fragmentet för att skapa ett nytt.
+
+   Du kan även kontrollera listan över resor, kampanjer och innehållsmallar där fragmentet används genom att välja **Utforskarreferenser** alternativ. [Läs mer](#explore-references)
+
+   ![](assets/fragment-edit.png)
+
+1. När ändringarna är klara klickar du på **Publicera** för att göra ändringarna dynamiska.
+
+När du redigerar ett fragment sprids ändringarna automatiskt till allt innehåll som använder det fragmentet, inklusive direktresor och kampanjer, med undantag för innehåll där du har brutit arv från det ursprungliga fragmentet. Lär dig bryta arv i [Lägg till visuella fragment i e-postmeddelanden](../email/use-visual-fragments.md#break-inheritance) och [Utnyttja uttrycksfragment](../personalization/use-expression-fragments.md#break-inheritance) -avsnitt.
+
+>[!AVAILABILITY]
 >
->När du redigerar ett fragment sprids ändringarna automatiskt till allt innehåll som använder det fragmentet, utom innehåll som används i **[!UICONTROL Live]** resor eller kampanjer. Du kan också bryta arv från det ursprungliga fragmentet. Läs mer i [Lägg till visuella fragment i e-postmeddelanden](../email/use-visual-fragments.md#break-inheritance) och [Utnyttja uttrycksfragment](../personalization/use-expression-fragments.md#break-inheritance) -avsnitt.
+>Observera att spridning av fragment ändras under pågående resor och kampanjer gradvis under flera dagar efter Journey Optimizer juni-releasen. Vissa användare har omedelbar åtkomst, men andra kan uppleva en fördröjning innan den blir tillgänglig i deras miljöer. Om den här förbättringen ännu inte är tillgänglig i din miljö kommer ändringarna inte att spridas till innehåll som används i direktresor eller kampanjer.
 
 ## Utforska referenser {#explore-references}
 
-Du kan visa en lista över de resor, kampanjer och innehållsmallar som för närvarande använder ett fragment.
-
-Om du vill göra det väljer du **[!UICONTROL Explore references]** antingen från **[!UICONTROL More actions]** i fragmentlistan eller från skärmen för fragmentegenskaper.
+Du kan visa en lista över de resor, kampanjer och innehållsmallar som för närvarande använder ett fragment. Om du vill göra det väljer du **[!UICONTROL Explore references]** antingen från **[!UICONTROL More actions]** i fragmentlistan eller från skärmen för fragmentegenskaper.
 
 ![](assets/fragment-explore-references.png)
 

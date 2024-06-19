@@ -7,10 +7,10 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 7b6dc89a-1a81-49c2-b2a7-bf24b9d215e3
-source-git-commit: 8f045e1b709c0059ce21cda68c21e8732f58e51e
+source-git-commit: 794ac45177e467be4bd5b8f7288e07c85e4d806a
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 0%
+source-wordcount: '327'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Så här konfigurerar du Infobip med Journey Optimizer:
 
-1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]** och väljer **[!UICONTROL API Credentials]** -menyn. Klicka på **[!UICONTROL Create new API credentials]** -knappen.
+1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]** och väljer **[!UICONTROL API Credentials]** -menyn. Klicka på knappen **[!UICONTROL Create new API credentials]**.
 
 1. Konfigurera dina API-autentiseringsuppgifter enligt anvisningarna nedan.
 
@@ -51,6 +51,8 @@ Så här konfigurerar du Infobip med Journey Optimizer:
    * **[!UICONTROL Validity Period]**: Ange meddelandets giltighetsperiod i timmar. Om det inte går att leverera meddelanden inom den här tidsramen gör systemet ytterligare försök att skicka dem igen. Standardgiltighetsperioden är inställd på 48 timmar.
 
    * **[!UICONTROL Callback Data]**: Ange ytterligare klientdata som ska skickas på Notify URL.
+
+   * **[!UICONTROL Inbound Number]**: lägg till ditt unika inkommande nummer. På så sätt kan du använda samma API-autentiseringsuppgifter för olika sandlådor, var och en med ett eget inkommande nummer.
 
 1. Klicka **[!UICONTROL Submit]** när du är klar med konfigurationen av dina API-autentiseringsuppgifter.
 
