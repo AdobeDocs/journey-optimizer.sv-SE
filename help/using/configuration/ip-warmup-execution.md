@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: 752ffd7f-09c2-4aa3-a067-2dbe0634709c
-source-git-commit: 666af4bbc3731f16ce1d5c11ceb7e704996f5a68
+source-git-commit: cd95614329e6efdc7ac4b6e0a5c683757a14b379
 workflow-type: tm+mt
-source-wordcount: '2418'
+source-wordcount: '2462'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Varje fas består av flera körningar, som ni tilldelar en enda kampanj till.
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_campaigns_excluded"
 >title="Uteslut kampanjmålgrupper"
->abstract="Välj kampanjer för att exkludera deras målgrupper från den aktuella fasen. Detta är för att förhindra att tidigare kontaktade profiler från andra faser eller andra IP-uppvärmningsplaner målas igen."
+>abstract="Välj kampanjer för att exkludera deras målgrupper från den aktuella fasen. Detta förhindrar att tidigare kontaktade profiler målgruppsanpassas igen. Endast de som har fått kommunikation via resan kommer att uteslutas."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_domains_excluded"
@@ -60,7 +60,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
 <!--![](assets/ip-warmup-plan-phase-1.png)-->
 
-1. För varje fas väljer du den kampanj som du vill associera med den här fasen i IP-värmerapporten.
+1. Välj den kampanj som du vill associera med den första fasen i IP-värmningsplanen.
 
    >[!NOTE]
    >
@@ -72,7 +72,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
    >
    >* Bara kampanjer med **[!UICONTROL IP warmup plan activation]** aktiverat alternativ är tillgängligt för markering. [Läs mer](#create-ip-warmup-campaign)
    >
-   >* Du måste välja en kampanj som använder samma yta som den som valts för den aktuella IP-värmerapporten.
+   >* Det går bara att välja kampanjer som använder samma yta som den valda IP-warmup-planen.
 
 1. När en kampanj har valts för den aktuella fasen visas avsnitten för att utesluta profiler, kampanjmålgrupper och domängrupper.
 
@@ -117,7 +117,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
       >
       >Det här avsnittet kan inte redigeras.
 
-1. Vid behov kan du ersätta kampanjen med **[!UICONTROL Replace]** -knappen. Du kan även rensa den valda kampanjen med **[!UICONTROL Clear]** -knappen. Du kan sedan välja en ny kampanj antingen direkt eller vid ett senare tillfälle.
+1. Vid behov kan du ersätta kampanjen med **[!UICONTROL Replace]** -knappen. Du kan också **[!UICONTROL Clear]** den valda kampanjen med **[!UICONTROL Clear]** -knappen. Den här åtgärden rensar inte bara kampanjen utan även andra fasnivåegenskaper som t.ex. Uteslutning av domängrupp, Campaign, Uteslutning av resor med flera. När ni har rensat kan ni välja en ny kampanj antingen direkt eller vid ett senare tillfälle.
 
    ![](assets/ip-warmup-plan-replace-campaign.png)
 
@@ -125,7 +125,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
    >
    >Den här åtgärden är bara möjlig innan den första körningen av fasen aktiveras. När en körning har aktiverats kan kampanjen inte ersättas, såvida du inte [dela körningen](#split-phase) till en ny fas.
 
-1. Du kan lägga till en fas om det behövs. Den läggs till efter den sista aktuella fasen.
+1. Du kan lägga till en fas om det behövs. Den kommer att läggas till efter den sista fasen.
 
    ![](assets/ip-warmup-plan-add-phase.png)
 
@@ -236,9 +236,9 @@ När du aktiverar en körning skapas flera målgrupper automatiskt.
 
 * Om du aktiverar den första körningen av en fas:
 
-   * An [publik](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html){target="_blank"} har skapats för de uteslutna kampanjmålgrupperna (om sådana finns), med följande namnkonvention: `<warmupName>_Phase<phaseNo>-Audience Exclusion`.
+   * An [publik](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html){target="_blank"} har skapats för de uteslutna kampanjmålgrupperna (om sådana finns), med följande namnkonvention: `<warmupName>-Phase<phaseNo>-Audience Exclusion `.
 
-   * En målgrupp skapas för de domängrupper som (om sådana finns) har utelämnats med följande namnkonvention: `<warmupName>_Phase<phaseNo>-Domain Exclusion`.
+   * En målgrupp skapas för de domängrupper som (om sådana finns) har utelämnats med följande namnkonvention: `<warmupName>-Phase<phaseNo>-Domain Exclusion`.
 
    * En annan målgrupp skapas för de målgrupper som inte omfattas (om sådana finns), med följande namnkonvention: `<warmupName>-Phase<phaseNo>-Journey Audience Exclusion`.
 
@@ -246,11 +246,11 @@ När du aktiverar en körning skapas flera målgrupper automatiskt.
   >
   >Målgrupperna rensas bort efter att vårdsplanen markerats som slutförd.
   >
-  >Systemet skapar inte en ny målgrupp om det inte sker någon förändring i de uteslutna kampanjmålgrupperna eller domängrupperna för efterföljande faser.
+  >Systemet skapar inte en ny målgrupp om det inte sker någon förändring av de uteslutna kampanjmålgrupperna, exkluderade målgrupper eller domängrupper för efterföljande faser.
 
 * Vid aktivering av körningar:
 
-   * En annan målgrupp skapas för det senaste interaktionsfiltret, med följande namnkonvention: `<warmupName>_Phase<phaseNo>_Run<runNo>-Engagement Filter`.
+   * En annan målgrupp skapas för det senaste interaktionsfiltret, med följande namnkonvention: `<warmupName>-Phase<phaseNo>_Run<runNo>-Engagement Filter`.
 
      >[!NOTE]
      >
@@ -298,9 +298,9 @@ En körning kan ha följande status:
 
 * **[!UICONTROL Draft]** : när en körning skapas, antingen när [skapa en ny plan](ip-warmup-plan.md) eller [lägga till en körning](#define-runs) från användargränssnittet tar **[!UICONTROL Draft]** status.
 * **[!UICONTROL Live]**: varje gång du aktiverar en körning tar det **[!UICONTROL Live]** status. Det innebär att systemet har accepterat begäran om att schemalägga körningen, inte att sändningen har startats. I det här skedet kan du se live-körningens status genom att klicka på **[!UICONTROL View status]** i tabellen. På så sätt kan ni spåra hur många målprofiler som faktiskt är kvalificerade.
-* **[!UICONTROL Completed]**: kampanjkörningen för den här körningen har slutförts. Du får tillgång till en detaljerad körningsrapport genom att klicka på **[!UICONTROL View report]** i tabellen. Med det här alternativet kan du spåra körningens e-postleveransstatus, inklusive uppdelningar som är specifika för domängrupper för förbättrad övervakning. [Läs mer](#reports)
-* **[!UICONTROL Cancelled]**: a **[!UICONTROL Live]** körningen avbröts med **[!UICONTROL Stop]** eller aktiverade **[!UICONTROL Cancel activated runs in case of errors]** och ett fel inträffade. [Läs mer](#define-runs)
-* **[!UICONTROL Failed]**: ett fel påträffades av systemet eller kampanjen som användes för den aktuella fasen stoppades. Om en körning misslyckas kan du schemalägga en ny körning för nästa dag.
+* **[!UICONTROL Completed]**: kampanjkörningen för den här körningen har slutförts. Du får tillgång till en detaljerad körningsrapport genom att klicka på **[!UICONTROL View report]** i tabellen. Med det här alternativet kan du spåra körningens e-postleveransstatus, inklusive uppdelningar som är specifika för domängrupper för förbättrad övervakning. Observera att den kampanj som är associerad med den kommer att anges som Stoppad.[Läs mer](#reports)
+* **[!UICONTROL Cancelled]**: a **[!UICONTROL Live]** körningen avbröts med **[!UICONTROL Cancel]** -knappen.[Läs mer](#define-runs)
+* **[!UICONTROL Failed]**: ett fel påträffades av systemet, kampanjen som användes för den aktuella fasen stoppades eller så aktiverade du **[!UICONTROL Cancel activated runs in case of errors]** och ett fel inträffade. Om en körning misslyckas kan du schemalägga en ny körning för nästa dag.
 
 ### Använd rapporter {#reports}
 
@@ -363,7 +363,7 @@ Låt oss ta ett exempel:
 
 ### Markera en plan som slutförd {#mark-as-completed}
 
-Om din plan inte fungerar tillräckligt bra eller om du vill släppa den för att skapa en till, kan du markera den som slutförd.
+Om dina IP-adresser har värms upp med önskad volym, om din plan inte fungerar tillräckligt bra eller om du vill släppa den för att skapa en till, kan du markera den som slutförd.
 
 Klicka på **[!UICONTROL More]** överst till höger i IP-värmningsplanen och välj **[!UICONTROL Mark as completed]**.
 

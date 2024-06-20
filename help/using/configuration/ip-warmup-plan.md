@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: c2434086-2ed4-4cd0-aecd-2eea8f0a55f6
-source-git-commit: c400104c86e1a9a2de819db7743b3f77153ad90b
+source-git-commit: cd95614329e6efdc7ac4b6e0a5c683757a14b379
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1584'
 ht-degree: 0%
 
 ---
@@ -112,7 +112,7 @@ Nedan visas ett exempel på en fil som innehåller en IP-värmerapport.
 
 * Detta planerade arbete pågår till sex **faser**, som alla innehåller minst en omgång.
 
-* Du kan ha så många kolumner du vill för de domäner du vill leverera till. I det här exemplet är planen uppdelad i sex kolumner:
+* Du kan ha upp till 6 kolumner (5 kolumner för domängrupper och en för **Övriga** kolumn). I det här exemplet är planen uppdelad i sex kolumner:
 
    * Fyra av dessa motsvarar **färdiga domängrupper** som du kan använda i din plan (Gmail, Microsoft, Yahoo och Orange).
    * Den ena motsvarar en anpassad domängrupp (som du måste lägga till med [Anpassad domängrupp](#custom-domain-group-tab) -fliken).
@@ -188,7 +188,7 @@ Du kan också lägga till fler kolumner i din plan genom att ta med anpassade do
 
 Använd **[!UICONTROL Custom Domain Group]** för att definiera en ny domängrupp. För varje domän kan du lägga till alla underdomäner som den omfattar.<!--TBC-->
 
-Se till att varje domän är unik för sin domängrupp och inte överlappar andra domängrupper. Eftersom globala domängrupper definieras automatiskt bör användare tänka på detta när de skapar anpassade domängrupper.
+För domängrupper som används i den planen måste du se till att varje domän är unik för sin domängrupp och inte överlappar andra domängrupper. Eftersom globala domängrupper definieras automatiskt bör användare tänka på detta när de skapar anpassade domängrupper.
 
 Om du till exempel lägger till den anpassade domänen Luma vill du att följande underdomäner ska inkluderas: luma.com, luma.co.uk, luma.it, luma.fr, luma.de osv.
 
@@ -201,7 +201,7 @@ Säg att du vill ha två anpassade domängrupper:
 * En för Hotmail-domäner.
 * En för alla andra domäner i domängruppen Microsoft (och utesluter därmed alla Hotmail-domäner).
 
-Observera att alla andra domäner samlas i **[!UICONTROL Others]** kolumn.
+Domäner utanför Hotmail och från domängruppen Microsoft samlas in i **[!UICONTROL Others]** kolumn.
 
 1. I **[!UICONTROL Custom Domain Group]** -fliken, skapa **Hotmail** domängrupp.
 
@@ -220,10 +220,6 @@ Observera att alla andra domäner samlas i **[!UICONTROL Others]** kolumn.
 1. Skapa tre kolumner: en för **Hotmail**, en för **Microsoft_X** och en för **Övriga**.
 
 1. Fyll i kolumnerna efter behov.
-
->[!NOTE]
->
->När IP-värmningsplanen har överförts till [!DNL Journey Optimizer]behöver du inte utesluta Microsoft domängrupper.
 
 <!--Only the domain groups listed in the **[!UICONTROL IP Warmup Plan]** tab will be taken into account.-->
 

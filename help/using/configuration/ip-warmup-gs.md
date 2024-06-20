@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 badge: label="Beta"
 exl-id: 393f051d-b86d-4b4f-b564-7a9ae3a5d4b8
-source-git-commit: 9d48213d8367fdc6c0fae62b73d1706bc4983d9d
+source-git-commit: cd95614329e6efdc7ac4b6e0a5c683757a14b379
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '271'
 ht-degree: 2%
 
 ---
@@ -31,10 +31,6 @@ Vad du hittar i den här handboken:
 * [Kör IP-värmerappen](ip-warmup-execution.md)
 
 >[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->IP-värmerfunktionen är för närvarande endast tillgänglig som betaversion för utvalda användare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
 
 Med [!DNL Journey Optimizer]kan du enkelt utföra arbetsflöden för IP-värmare direkt från användargränssnittet på ett standardiserat och effektivt sätt som följer bästa praxis för optimal leverans.
 
