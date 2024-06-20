@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 6ff54583c729175c74b3a7ea4ab9188505fde897
+source-git-commit: d66596f7416f040c99fe8a9b4ea1b887e4ad4fa0
 workflow-type: tm+mt
 source-wordcount: '5385'
 ht-degree: 13%
@@ -22,7 +22,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 ## Juni 2024 {#june-2024}
 
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Version från 24 juni finns utförlig i dokumentationen. [Läs mer](release-notes.md)
-* En anteckning om användningen av kopplingspolicyer under resor har lagts till i [den här sidan](../building-journeys/journey-gs.md#merge-policies).
+* En anteckning om användningen av kopplingspolicyer under resor har lagts till i [den här sidan](../building-journeys/journey-properties.md#merge-policies).
 * Sidan om hur du konfigurerar en **Vänta** aktiviteten i en resa har reformerats och förbättrats. [Läs mer](../building-journeys/wait-activity.md)
 
 ## Maj 2024 {#may-2024}
@@ -82,7 +82,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 
 * Alla nya funktioner och förbättringar som ingår [!DNL Journey Optimizer] Januariversion 24 har detaljerats i dokumentationen. [Läs mer](release-notes.md)
 * Ett skyddsräcke om resestorleken har lagts till. [Läs mer](../start/guardrails.md#journeys-guardrails-journeys)
-* Tidsgränsen för resan har beskrivits [i följande avsnitt](../building-journeys/journey-gs.md#global_timeout).
+* Tidsgränsen för resan har beskrivits [i följande avsnitt](../building-journeys/journey-properties.md#global_timeout).
 * Journey Optimizer [dokumentation, startsida](../../ajo-home.md) sidan har fått en ny design.
 * Recommendations om aktiviteten Uppdatera profiler har lagts till. [Läs mer](../building-journeys/update-profiles.md)
 * Information har lagts till om beteendet för tidsgränser för händelseaktiviteter under resor. Om ingen händelse tas emot under den angivna tidsgränsen fortsätter den enskilda personen resan om ingen tidsgräns anges. [Läs mer](../building-journeys/general-events.md#events-specific-time)

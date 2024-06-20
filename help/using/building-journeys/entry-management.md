@@ -8,7 +8,7 @@ role: User
 level: Intermediate
 keywords: återinträde, resa, profil, återkommande
 exl-id: 8874377c-6594-4a5a-9197-ba5b28258c02
-source-git-commit: 6ff54583c729175c74b3a7ea4ab9188505fde897
+source-git-commit: fec6b15db9f8e6b2a07b55bc9e8fc4d9cb0d73d7
 workflow-type: tm+mt
 source-wordcount: '681'
 ht-degree: 1%
@@ -36,12 +36,12 @@ Vid Unitary Events- och Audience-kvalificeringsresor kan du aktivera eller inakt
 
 * Om återinträde är aktiverat kan en profil gå in på en resa flera gånger, men kan inte göra det förrän han har avslutat hela den tidigare instansen av resan.
 
-* Om återinträde är inaktiverat kan en profil inte ange flera gånger samma resa inom den globala resetidsgränsen. Se det här [section](../building-journeys/journey-gs.md#global_timeout).
+* Om återinträde är inaktiverat kan en profil inte ange flera gånger samma resa inom den globala resetidsgränsen. Se det här [section](../building-journeys/journey-properties.md#global_timeout).
 
-Som standard tillåter resor återinträde. När **Tillåt återinträde** är aktiverat, **Vänteperiod för återinträde** -fältet visas. Det gör att du kan definiera väntetiden innan du tillåter att en profil går in på resan igen. Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 91 dagar ([standardtimeout](journey-gs.md#global_timeout)).
+Som standard tillåter resor återinträde. När **Tillåt återinträde** är aktiverat, **Vänteperiod för återinträde** -fältet visas. Det gör att du kan definiera väntetiden innan du tillåter att en profil går in på resan igen. Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 91 dagar ([global timeout](journey-properties.md#global_timeout)).
 
 <!--
-When a journey ends, its status is **[!UICONTROL Closed]**. New individuals can no longer enter the journey. Persons already in the journey automatically exit the journey. [Learn more](journey-gs.md#entrance)
+When a journey ends, its status is **[!UICONTROL Closed]**. New individuals can no longer enter the journey. Persons already in the journey automatically exit the journey. 
 -->
 
 ![](assets/journey-re-entrance.png)

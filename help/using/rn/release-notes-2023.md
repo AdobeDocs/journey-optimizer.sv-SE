@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 61e6291f-c063-44a0-950c-8bb76de693f2
-source-git-commit: 2b9d8cd80664abc2743c985ee1cd858ffa0344ee
+source-git-commit: fec6b15db9f8e6b2a07b55bc9e8fc4d9cb0d73d7
 workflow-type: tm+mt
-source-wordcount: '4395'
+source-wordcount: '4393'
 ht-degree: 8%
 
 ---
@@ -87,7 +87,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 * Den längsta väntetid du kan ange är nu 29 dagar i stället för 30. Denna förbättring har införts för att förhindra att väntetider överskrider den 30 dagar långa transporttiden. Detta gäller
 
    * den **Tidsmängd** fältet i [vänteaktivitet](../building-journeys/wait-activity.md)
-   * den **Vänteperiod för återinträde** in [egenskaper för resa](../building-journeys/journey-gs.md#entrance)
+   * den **Vänteperiod för återinträde** in [egenskaper för resa](../building-journeys/journey-properties.md#entrance)
    * den **Vänta på** fält i timeout-definitionen för [evenemang](../building-journeys/general-events.md#events-specific-time).
 
 <!--
@@ -200,7 +200,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Resor**
 
-* När du duplicerar en resa kan du nu definiera namnet på kopian av resan. [Läs mer](../building-journeys/journey-gs.md#uplicate-a-travel
+* När du duplicerar en resa kan du nu definiera namnet på kopian av resan. [Läs mer](../building-journeys/journey-gs.md#duplicate-a-journey)
 
 * Stöd för anpassade åtgärdssvar är nu GA. Med den här funktionen kan ni utnyttja API-anropssvar i anpassade åtgärder och samordna er resa baserat på dessa svar. Dessutom har [nytt skyddsräcke](../start/guardrails.md#custom-actions-g) har lagts till för att automatiskt begränsa anpassade åtgärdsanrop. [Läs mer](../action/action-response.md)
 <!--
@@ -221,7 +221,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 * Nu kan du kryptera filer som är avsedda för direktreklamleverantörer när de överförs till en server. För att göra detta finns ett nytt fält tillgängligt på konfigurationsskärmen för filroutning, som gör att du kan kopiera och klistra in krypteringsnyckeln. [Läs mer](../direct-mail/direct-mail-configuration.md)
 
-**Rapporter**
+**Rapportering**
 
 * Nu kan du exportera Journey Optimizer-rapporter som CSV-filer. Läs mer i [detaljerad dokumentation](../reports/global-report.md#export-reports) och [instruktionsvideo](../reports/global-report.md#video-csv).
 
@@ -720,7 +720,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 * När en [E-post](../email/create-email.md), [SMS](../sms/create-sms.md) eller [Push](../push/create-push.md) åtgärder på en resa är ytan nu förfylld som standard med den senast använda ytan för den kanalen under den aktuella resan.
 * Nu kan du definiera statiska eller dynamiska frågeparametrar i dina anpassade åtgärder. [Läs mer](../action/about-custom-action-configuration.md#url-configuration)
 
-**Rapporter**
+**Rapportering**
 
 * Nu kan du exportera Journey Optimizer-rapporter som PDF. [Läs mer](../reports/global-report.md#export-reports)
 
@@ -820,7 +820,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
 * Du kan nu inkludera standardreservtext för strängbaserade profilattribut i uttrycksredigeraren. Dessa värden visas om de valda attributen inte ger något resultat. [Läs mer](../personalization/personalization-build-expressions.md#add)
 
-**Rapporter**
+**Rapportering**
 
 * Rapportwidgetfunktionen har förbättrats med möjligheten att anpassa hur användarna visar sina data. Med den här förbättringen kan man nu välja mellan flera visualiseringsalternativ, inklusive diagram-, tabell- och dondiagram.
 
@@ -922,7 +922,7 @@ Note that each widget can be resized and deleted as needed.
 
 **Resor**
 
-* The **Vänteperiod för återinträde** fältet har lagts till i reseegenskaperna. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. [Läs mer](../building-journeys/journey-gs.md#entrance)
+* The **Vänteperiod för återinträde** fältet har lagts till i reseegenskaperna. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. [Läs mer](../building-journeys/journey-properties.md#entrance)
 
 * Förbättringar har gjorts för **start- och slutdatum för resan**. Om du inte har angett något startdatum läggs det nu till automatiskt vid publiceringstidpunkten. För **Läsa målgrupper** på resor kan du nu lägga till ett slutdatum. Detta gör att profiler kan avslutas automatiskt när datumet nås. [Läs mer](../building-journeys/journey-gs.md#dates)
 
@@ -940,7 +940,7 @@ Note that each widget can be resized and deleted as needed.
 -->
 
 
-**Administrering**
+**Administration**
 
 * **Tillåtelselista** - Du kan nu hämta tillåtelselista som en CSV-fil. [Läs mer](../configuration/allow-list.md#download-allowed-list)
 
@@ -1006,7 +1006,7 @@ Note that each widget can be resized and deleted as needed.
 
 * Du kan nu exportera e-postinnehållet från **Exportera HTML** -menyn. Exporterade filer är tillgängliga i en arkivfil (.ZIP).
 
-**Administrering**
+**Administration**
 
 * Ett nytt underavsnitt ger rekommendationer om hur du skapar **Svara (e-post)** adressera och säkerställa en korrekt svarshantering. [Läs mer](../email/email-settings.md#reply-to-email)
 

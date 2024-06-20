@@ -8,10 +8,10 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: a6b2c1585867719a48f9abc4bf0eb81558855d85
+source-git-commit: fec6b15db9f8e6b2a07b55bc9e8fc4d9cb0d73d7
 workflow-type: tm+mt
-source-wordcount: '1227'
-ht-degree: 30%
+source-wordcount: '1250'
+ht-degree: 26%
 
 ---
 
@@ -41,11 +41,11 @@ API:er för resor har stöd för upp till 5 000 händelser per sekund, men vissa
 
 Varje gång ett API-anrop utförs via resor skickas det via API-motorn. Om gränsvärdet i API:t nås, avvisas anropet antingen om du använder API:t för begränsning, eller köas i upp till 6 timmar och behandlas så snart som möjligt i den ordning som de togs emot om du använder API:t för begränsning.
 
-Anta till exempel att du har definierat en regel för reglering eller begränsning på 200 anrop per sekund för det externa systemet. Ditt system anropas av en anpassad åtgärd på tio olika resor. Om en resa tar emot 300 anrop per sekund används de 200 tillgängliga facken och de 100 återstående facken tas bort eller köas. Eftersom den högsta nivån har överskridits har de övriga nio resorna inte några fack kvar. Denna precision hjälper till att skydda det externa systemet från överbelastning och krascher.
+Anta till exempel att du har definierat en begränsning på 200 anrop per sekund för det externa systemet. Ditt system anropas av en anpassad åtgärd på tio olika resor. Om en resa tar emot 300 anrop per sekund används de 200 tillgängliga facken och de 100 återstående facken tas bort eller köas. Eftersom den högsta nivån har överskridits har de övriga nio resorna inte några fack kvar. Denna precision hjälper till att skydda det externa systemet från överbelastning och krascher.
 
 >[!IMPORTANT]
 >
->**Regleringsregler** är konfigurerade på sandlådenivå, för en specifik slutpunkt (den anropade URL:en), men är globala till alla resor i den sandlådan. Det finns ett tak för både datakällor och anpassade åtgärder.
+>**Begränsningsregler** är konfigurerade på sandlådenivå, för en specifik slutpunkt (den anropade URL:en), men globala till alla resor i den sandlådan. Det finns ett tak för både datakällor och anpassade åtgärder.
 >
 >**Begränsningsregler** konfigureras endast för produktionssandlådor, för en specifik slutpunkt, men är globala för alla resor över alla sandlådor. Du kan bara ha en begränsningskonfiguration per organisation. Begränsning är bara tillgängligt för anpassade åtgärder.
 >
@@ -72,7 +72,7 @@ För **anpassade åtgärder** måste du utvärdera kapaciteten för ditt externa
 
 Om begränsnings- eller begränsningsregeln är uppfylld tillämpas timeout-regeln.
 
-Under varje resa kan du definiera en tidsgräns. Detta gör att du kan ange en maximal varaktighet när du anropar ett externt system. Tidsgränsen har konfigurerats i egenskaperna för en resa. Se [den här sidan](../building-journeys/journey-gs.md#timeout_and_error).
+Under varje resa kan du definiera en tidsgräns. Detta gör att du kan ange en maximal varaktighet när du anropar ett externt system. Tidsgränsen har konfigurerats i egenskaperna för en resa. Se [den här sidan](../building-journeys/journey-properties.md#timeout_and_error).
 
 Den här tidsgränsen är global för alla externa anrop (externa API-anrop i anpassade åtgärder och anpassade datakällor). Som standard är den inställd på 30 sekunder.
 
@@ -90,7 +90,7 @@ Låt oss ta ett exempel i 5 sekunder.
    * Om ett av de tre försöken lyckas före slutet av de fem sekunderna utförs anropet och det finns inget fel.
    * Om tidsgränsen nås under återförsöken avbryts anropet och räknas som ett timeout-fel i rapporteringen.
 
-## Frågor och svar{#faq}
+## Vanliga frågor och svar{#faq}
 
 **Hur konfigurerar jag en begränsning eller begränsning? Finns det en standardregel?**
 
@@ -102,4 +102,4 @@ För ett visst anrop kan högst tre försök utföras efter det första anropet,
 
 **Var kan jag konfigurera tidsgränsen? Finns det ett maxvärde?**
 
-Under varje resa kan du definiera en tidsgräns. Tidsgränsen har konfigurerats i egenskaperna för en resa. Tidsgränsen måste vara mellan 1 och 30 sekunder. Se [det här avsnittet](../configuration/external-systems.md#timeout) och [den här sidan](../building-journeys/journey-gs.md#timeout_and_error).
+Under varje resa kan du definiera en tidsgräns. Tidsgränsen har konfigurerats i egenskaperna för en resa. Tidsgränsen måste vara mellan 1 och 30 sekunder. Se [det här avsnittet](../configuration/external-systems.md#timeout) och [den här sidan](../building-journeys/journey-properties.md#timeout_and_error).

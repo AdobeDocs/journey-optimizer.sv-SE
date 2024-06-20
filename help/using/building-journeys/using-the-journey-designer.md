@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: design, arbetsyta, resa, gränssnitt, dra, släpp
 exl-id: 1998f6fc-60fd-4038-8669-39cd55bc02d1
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: fec6b15db9f8e6b2a07b55bc9e8fc4d9cb0d73d7
 workflow-type: tm+mt
 source-wordcount: '1614'
 ht-degree: 0%
@@ -47,7 +47,7 @@ The **arbetsyta** är den centrala zonen i resedesignern. Det är i den här zon
 
 ![](assets/journey39.png)
 
-The **verktygsfält**, som finns i det övre högra hörnet av arbetsytan, gör att du kan visa/dölja stödrastret, zooma in/ut och hämta en skärmbild av arbetsytan. Se det här [section](../building-journeys/journey-gs.md#timeout_and_error).
+The **verktygsfält**, som finns i det övre högra hörnet av arbetsytan, gör att du kan visa/dölja stödrastret, zooma in/ut och hämta en skärmbild av arbetsytan. Se det här [section](../building-journeys/journey-properties.md#timeout_and_error).
 
 <!--and show/hide timeout and error paths-->
 
@@ -107,7 +107,7 @@ Använd anpassade åtgärder från åtgärdsaktiviteterna för att skicka meddel
 
 Du kan definiera en reservåtgärd om ett fel uppstår eller tidsgränsen överskrids för följande reseaktiviteter: **[!UICONTROL Condition]** och **[!UICONTROL Action]**.
 
-Om du vill lägga till en reservåtgärd för en aktivitet väljer du **[!UICONTROL Add an alternative path in case of a timeout or an error]** i aktivitetsegenskaperna: en annan sökväg läggs till efter aktiviteten. Tidsgränsen definieras av administratörsanvändare i [egenskaper för resa](../building-journeys/journey-gs.md#change-properties). Om det t.ex. tar för lång tid att skicka ett e-postmeddelande eller om ett fel uppstår, kan du välja att skicka ett push-meddelande.
+Om du vill lägga till en reservåtgärd för en aktivitet väljer du **[!UICONTROL Add an alternative path in case of a timeout or an error]** i aktivitetsegenskaperna: en annan sökväg läggs till efter aktiviteten. Tidsgränsen definieras av administratörsanvändare i [egenskaper för resa](../building-journeys/journey-properties.md). Om det t.ex. tar för lång tid att skicka ett e-postmeddelande eller om ett fel uppstår, kan du välja att skicka ett push-meddelande.
 
 ![](assets/journey42.png)
 

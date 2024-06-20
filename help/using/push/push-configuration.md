@@ -7,10 +7,10 @@ feature: Push, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 7099d44e-5d5d-4eef-9477-f68f4eaa1983
-source-git-commit: 03c714833930511fa734662b637d2416728073c2
+source-git-commit: c1dc3f3805bc0677a24466687026fac0d4990a5b
 workflow-type: tm+mt
-source-wordcount: '1479'
-ht-degree: 3%
+source-wordcount: '1414'
+ht-degree: 2%
 
 ---
 
@@ -332,7 +332,7 @@ Din aktivitet har skapats och kan nu användas på en resa.
 
 1. Klicka **[!UICONTROL Create Journey]** för att skapa en ny resa.
 
-1. Redigera resans egenskaper i konfigurationsrutan som visas till höger. Läs mer om detta [section](../building-journeys/journey-gs.md#change-properties).
+1. Redigera resans egenskaper i konfigurationsrutan som visas till höger. Läs mer om detta [section](../building-journeys/journey-properties.md).
 
 1. Börja med att dra och släppa händelsen som skapades i föregående steg från **[!UICONTROL Events]** nedrullningsbar meny.
 

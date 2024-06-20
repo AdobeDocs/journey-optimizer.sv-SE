@@ -6,7 +6,7 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 7964aed332bf37170e94c8b1215208f1d09d43a2
+source-git-commit: fec6b15db9f8e6b2a07b55bc9e8fc4d9cb0d73d7
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 6%
@@ -183,15 +183,15 @@ Läs mer i [innehållsfragment](../content-management/fragments.md) dokumentatio
 
 **Resor**
 
-* Den globala tidsgränsen för resor har utökats till 91 dagar. [Läs mer](../building-journeys/journey-gs.md#global_timeout)
+* Den globala tidsgränsen för resor har utökats till 91 dagar. [Läs mer](../building-journeys/journey-properties.md#global_timeout)
 
-  Alla nya resor som skapas kommer att få den här nya tidsgränsen angiven. Se det här [Frågor och svar](../building-journeys/journey-gs.md#timeout-faq) om du vill veta mer. Observera att dessa ändringar kommer att införas gradvis under juni månad.
+  Alla nya resor som skapas kommer att få den här nya tidsgränsen angiven. Se det här [Frågor och svar](../building-journeys/journey-properties.md#timeout-faq) om du vill veta mer. Observera att dessa ändringar kommer att införas gradvis under juni månad.
 
 
 * Adobe Journey Optimizer har nu stöd för förfrågningar om borttagning/åtkomst av sekretess samt livscykelhantering av data. [Läs mer](../privacy/requests.md)
 * Du kan nu ändra storlek på kolumnerna i kundresans lager.
   <!--* **Advanced expression editor in Event configuration** is now GA - You can now leverage the advanced expression editor while configuring an event, allowing you to define more complex expressions or use functions in the event id condition. This capability is released in Limited Availability for selected customers. [Read more](../event/about-creating.md)-->
-* **Sammanfoga profiler** är nu GA - de sammanslagningsprinciper som används av en resa är nu synliga och konsekventa under hela resan. [Läs mer](../building-journeys/journey-gs.md#merge-policies)
+* **Sammanfoga profiler** är nu GA - de sammanslagningsprinciper som används av en resa är nu synliga och konsekventa under hela resan. [Läs mer](../building-journeys/journey-properties.md#merge-policies)
 
 
 
