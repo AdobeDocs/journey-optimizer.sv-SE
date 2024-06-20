@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: fec6b15db9f8e6b2a07b55bc9e8fc4d9cb0d73d7
+source-git-commit: ca743774017e8f6cf5f385119d9c71de6020bb19
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '771'
 ht-degree: 6%
 
 ---
@@ -54,21 +54,22 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </table-->
 
 
-<!--<table>
+<table>
 <thead>
 <tr>
-<th><strong>Content Fragments customization</strong><br/></th>
+<th><strong>Anpassning av innehållsfragment</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now define specific fields in a fragment that can be edited when the fragment is added to a campaign or journey. This allows for the adjustment of content portions at the time of use, providing flexibility to override default values with context-specific details.</p>
-<p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p>
+<p>Nu kan du definiera specifika fält i ett fragment som kan redigeras när fragmentet läggs till i en kampanj eller resa. Detta gör det möjligt att justera innehållsdelar vid tiden för användningen, vilket ger flexibilitet att åsidosätta standardvärden med kontextspecifika detaljer.</p>
+<img src="../content-management/assets/do-not-localize/gif-fragments.gif"/>
+<p>Mer information finns i den <a href="../content-management/customizable-fragments.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
-</table>-->
+</table>
 
 
 

@@ -9,9 +9,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, bibliotek, personalisering
 exl-id: 74b1be18-4829-4c67-ae45-cf13278cda65
-source-git-commit: 893f7146b358da48153b1e6bc74b8f622028df76
+source-git-commit: ca743774017e8f6cf5f385119d9c71de6020bb19
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,22 @@ Följ stegen nedan om du vill lägga till uttrycksfragment i ditt innehåll.
 >[!NOTE]
 >
 >Om du skapar ett uttrycksfragment som innehåller flera radbrytningar och använder det i [SMS](../sms/create-sms.md#sms-content) eller [push](../push/design-push.md) så bevaras radbrytningarna. Se därför till att testa [SMS](../sms/send-sms.md) eller [push](../push/send-push.md) meddelande innan det skickas.
+
+## Anpassa redigerbara fält {#customize-fields}
+
+Om vissa delar av ett uttrycksfragment har gjorts redigerbara med hjälp av variabler, kan du åsidosätta deras standardvärden med en viss syntax. [Lär dig hur du anpassar fragment](../content-management/customizable-fragments.md)
+
+Följ de här stegen för att anpassa fälten:
+
+1. Infoga fragmentet i koden från **Fragment** -menyn.
+
+1. Använd `<fieldId>="<value>"` koden i slutet av syntaxen för att åsidosätta variabelns standardvärde.
+
+   I exemplet nedan åsidosätter vi värdet för en variabel vars ID är &quot;sport&quot; med &quot;yoga&quot;-värdet. Då visas&quot;yoga&quot; i fragmentinnehållet överallt där variabeln&quot;sport&quot; refereras.
+
+   ![](../content-management/assets/fragment-expression-use.png)
+
+Ett exempel som visar hur du lägger till redigerbara fält i ett uttrycksfragment och åsidosätter deras värden när du skapar ett e-postmeddelande finns i [det här avsnittet](../content-management/customizable-fragments.md#example).
 
 ## Bryt arv {#break-inheritance}
 

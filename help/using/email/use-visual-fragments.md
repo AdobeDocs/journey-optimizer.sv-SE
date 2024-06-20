@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 25a00f74-ed08-479c-9a5d-4185b5f3c684
-source-git-commit: 893f7146b358da48153b1e6bc74b8f622028df76
+source-git-commit: ca743774017e8f6cf5f385119d9c71de6020bb19
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '733'
 ht-degree: 1%
 
 ---
@@ -74,6 +74,22 @@ Följ stegen nedan om du vill använda ett fragment i ett e-postmeddelande.
 1. Vid behov kan du bryta arvet med det ursprungliga fragmentet. [Läs mer](#break-inheritance)
 
 1. Lägg till så många fragment du vill och **[!UICONTROL Save]** dina ändringar.
+
+## Anpassa redigerbara fält {#customize-fields}
+
+Om vissa delar av det markerade fragmentet har gjorts redigerbara kan du åsidosätta deras standardvärde efter att du har lagt till fragmentet i innehållet. [Lär dig hur du anpassar fragment](../content-management/customizable-fragments.md)
+
+Så här anpassar du redigerbara fält i ett fragment:
+
+1. Lägg till fragmentet i ditt innehåll och markera det för att öppna egenskapspanelen till höger.
+
+1. Alla redigerbara fält i fragmentet visas i **Inställningar** -fliken, under **Fragment** -avsnitt.
+
+   Redigerbara fält markeras med grönt i förhandsgranskningsfönstret när de markeras i den högra rutan, vilket gör det enkelt att identifiera var de finns i ditt innehåll.
+
+   I exemplet nedan är bilden **källa** och **alt-text** kan redigeras, liksom knappen Klicka här **URL**.
+
+   ![](assets/fragment-editable.png)
 
 ## Bryt arv {#break-inheritance}
 
