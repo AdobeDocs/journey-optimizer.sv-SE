@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: 6ff54583c729175c74b3a7ea4ab9188505fde897
+source-git-commit: db841b1378a6b897c68809fe19f1f0b90d7fd9c5
 workflow-type: tm+mt
-source-wordcount: '2583'
+source-wordcount: '2602'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,6 @@ ht-degree: 3%
 >id="ajo_homepage_card2"
 >title="Skapa resor"
 >abstract="Använd **Adobe Journey Optimizer** för att skapa användningsfall för realtidssamordning med hjälp av kontextuella data lagrade i händelser eller datakällor."
-
 
 
 ## Förhandskrav{#start-prerequisites}
@@ -326,6 +325,7 @@ Resan använder sammanfogningsprinciper när profildata hämtas från Adobe Expe
 
 * På läs målgrupps- eller målgruppsklassificeringsresor: målgruppspolicyn används
 * Vid händelseutlösta resor: Standardprincipen för sammanslagning används
+* Vid affärsevenemangsresor: sammanfogningspolicyn från målgruppen i följande Läs målgruppsaktivitet används
 
 Resan kommer att respektera den sammanslagningspolicy som används under hela resan. Om flera målgrupper används i en resa (t.ex. i&quot;inAudience&quot;-funktioner), vilket skapar inkonsekvenser med den sammanfogningspolicy som används under resan, uppstår därför ett fel och publiceringen blockeras. Men om en inkonsekvent målgrupp används i meddelandepersonalisering visas ingen varning trots inkonsekvensen. Därför rekommenderar vi att du kontrollerar vilken sammanfogningspolicy som är kopplad till målgruppen när den här målgruppen används i meddelandepersonalisering.
 
