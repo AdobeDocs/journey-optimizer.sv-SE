@@ -6,7 +6,7 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: b19bc2774a55df656a0652e6a148873787051c93
+source-git-commit: 2891375fed8ebc98a099e0ca4926f2f871048306
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 5%
@@ -139,8 +139,6 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </tbody>
 </table>
 
-
-
 <!--table>
 <thead>
 <tr>
@@ -160,7 +158,6 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 ### Förbättringar {#june24-improvements}
 
 Den här versionen innehåller de förbättringar som anges nedan.
-
 
 **Beslutshantering**
 
