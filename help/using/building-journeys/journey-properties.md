@@ -8,9 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: resa, konfiguration, egenskaper
-source-git-commit: 67032a4bcbfd56552d783f3ef78593375bfcc378
+exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
+source-git-commit: 21b53c72976d1a65651bc142e23ba847dc40a305
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1718'
 ht-degree: 0%
 
 ---
@@ -50,7 +51,23 @@ The **Kopiera teknisk information** Med kan du kopiera teknisk information om de
 
 ## Ingång och återinträde {#entrance}
 
+### Tillåt återinträde  {#allow-re-entrance}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_properties_entrance"
+>title="Tillåt återinträde"
+>abstract="Som standard tillåter nya resor återinträde. Du kan avmarkera **Tillåt återinträde** om du vill erbjuda en engångspresentation när en person går in i en affär."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
+
 Som standard tillåter nya resor återinträde. Du kan avmarkera **Tillåt återinträde** om du vill erbjuda en engångspresentation när en person går in i en affär.
+
+### Vänteperiod för återinträde  {#re-entrance-wait}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_properties_re-entrance_wait"
+>title="Vänteperiod för återinträde"
+>abstract=" Ange en väntetid innan du tillåter att en profil går in på resan igen på en resa. Detta förhindrar att användarna återkommer till resan under en viss tid. Maximal varaktighet: 29 dagar."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
 
 När **Tillåt återinträde** är aktiverat, **Vänteperiod för återinträde** -fältet visas. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 29 dagar.
 
@@ -70,6 +87,17 @@ Mer information om hantering av tidszoner finns i [den här sidan](../building-j
 
 ## Start- och slutdatum {#dates}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_properties_start_date"
+>title="Startdatum"
+>abstract="Välj det datum då resan kan börja. Om inget startdatum anges anges det automatiskt vid publiceringstidpunkten."
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_properties_end_date"
+>title="Slutdatum"
+>abstract="Välj slutdatum för din resa. När det datumet har nåtts avslutar profiler på den resan automatiskt och nya kan inte längre komma in i den."
+
 Du kan definiera en **Startdatum**. Om du inte har angett någon sådan kommer den att definieras automatiskt vid publiceringstidpunkten.
 
 Du kan också lägga till en **Slutdatum**. Detta gör att profiler kan avslutas automatiskt när datumet nås. Om inget slutdatum anges kan profilerna behållas tills [tidsgräns för global resa](#global_timeout) (som i allmänhet är 91 dagar och reducerat till 7 dagar med tilläggserbjudande till hälso- och sjukvårdsskölden). Det enda undantaget är återkommande läsningar på målgruppsresor med **Tvinga återinträde vid upprepning** som slutar vid startdatumet för nästa förekomst.
@@ -77,6 +105,12 @@ Du kan också lägga till en **Slutdatum**. Detta gör att profiler kan avslutas
 ## Timeout {#timeout}
 
 ### Tidsgräns eller fel i reseaktiviteter {#timeout_and_error}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_properties_timout"
+>title="Timeout"
+>abstract="Ange hur lång tid resan ska försöka utföra en åtgärd eller verifiera ett villkor innan det betraktas som en timeout."
+
 
 När du redigerar en åtgärd eller villkorsaktivitet kan du definiera en alternativ sökväg om ett fel eller en timeout inträffar. Om bearbetningen av aktiviteten som förhör ett tredjepartssystem överskrider tidsgränsen som anges i **[!UICONTROL Timeout or error]** för resans egenskaper väljs den andra vägen för att utföra en eventuell reservåtgärd.
 
@@ -221,4 +255,3 @@ Resan använder sammanfogningsprinciper när profildata hämtas från Adobe Expe
 Resan kommer att respektera den sammanslagningspolicy som används under hela resan. Om flera målgrupper används i en resa (t.ex. i&quot;inAudience&quot;-funktioner), vilket skapar inkonsekvenser med den sammanfogningspolicy som används under resan, uppstår därför ett fel och publiceringen blockeras. Men om en inkonsekvent målgrupp används i meddelandepersonalisering visas ingen varning trots inkonsekvensen. Därför rekommenderar vi att du kontrollerar vilken sammanfogningspolicy som är kopplad till målgruppen när den här målgruppen används i meddelandepersonalisering.
 
 Mer information om kopplingsregler finns i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
-
