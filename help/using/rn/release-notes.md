@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: ca743774017e8f6cf5f385119d9c71de6020bb19
+source-git-commit: 522f1815ae6de33f9e0a7ea598d52c8e88d2ff0d
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '760'
 ht-degree: 6%
 
 ---
@@ -222,4 +222,4 @@ Läs mer i [innehållsfragment](../content-management/fragments.md) dokumentatio
 
 **Direktpostkanal**
 
-* Direktreklamkanalen är nu tillgänglig för organisationer som köpt Adobe **Hälsovårdssköld** och **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
+* Direktreklamkanalen är nu tillgänglig för alla kunder. [Läs mer](../direct-mail/get-started-direct-mail.md)
