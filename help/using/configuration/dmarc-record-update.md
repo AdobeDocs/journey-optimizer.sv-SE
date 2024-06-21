@@ -8,9 +8,10 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: underdomän, domän, e-post, marc, post
-source-git-commit: 745474d6232f01ee959db8d706110477ed0220e2
+exl-id: 15b10a61-6ecd-4ffa-b1c2-21e862263f6d
+source-git-commit: da5b8d6c95e76af98b27ffcff11e75c26b90200a
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -44,21 +45,20 @@ eller
 eller
    * Konfigurera DMARC för dina delegerade underdomäner **i[!DNL Journey Optimizer]** användargränssnitt för konfiguration. [Lär dig mer](dmarc-record.md#implement-dmarc)
 
-  >[!IMPORTANT]
-  >
-  >CNAME-konfigurationen kräver dock även ytterligare information i värdlösningen. Se därför till att du samarbetar med din IT-avdelning så att de kan utföra de uppdateringar som beskrivs i [det här avsnittet](dmarc-record.md#implement-dmarc).
+  CNAME-konfigurationen kräver dock även ytterligare information i värdlösningen. Se därför till att du samarbetar med din IT-avdelning så att de kan utföra de uppdateringar som beskrivs i [det här avsnittet](dmarc-record.md#implement-dmarc).
 
-De senaste tidslinjer som delas av Google och Yahoo! är följande:
+<!--The most recent timelines shared by Google and Yahoo! are as follows:
 
 * Google:
 
-   * **Februari 2024** - Tillfälliga studsar avsedda att varna för bristande efterlevnad börjar. E-postmeddelanden kommer fortfarande att levereras som vanligt efter en kort fördröjning om du ännu inte uppfyller kraven. Om ni uppfyller alla krav kommer det inte att finnas några tillfälliga studsar och ni kommer inte att påverkas.
+    * **February 2024** – Temporary bounces designed to provide warning of non-compliance will begin. Emails will still be delivered as normal after a short delay if you are not yet in compliance. If you are fully in compliance there will be no temporary bounces and you will not be affected.
 
-   * **April 2024** - Blocken börjar för avsändare som inte uppfyller DMARC-kraven. Endast en del av e-postmeddelandet som inte uppfyller kraven blockeras först, och procentandelen blockerad ökar med tiden.
+    * **April 2024** – Blocks will begin for senders who are not in compliance with DMARC requirement. Only a portion of non-compliant email will be blocked at first, with the percentage blocked increasing over time.
 
-   * **1 juni 2024** - Avsändare som inte uppfyller alla krav blockeras.
+    * **June 1st, 2024** – Any sender not in full compliance will experience blocking.
 
-* Yahoo! har inte angett några exakta datum, men har sagt att&quot;genomförandet av lagstiftningen kommer att börja i februari 2024. Tvingande åtgärder kommer att successivt sättas ut&quot;.
+* Yahoo! has not provided exact dates, but has said "the rollout of enforcement will begin in February 2024. Enforcement will be gradually rolled out".
+-->
 
 >[!NOTE]
 >

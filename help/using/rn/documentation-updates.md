@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: d66596f7416f040c99fe8a9b4ea1b887e4ad4fa0
+source-git-commit: 4de37520b3ea7842d7f385f38c07cdf4984a5939
 workflow-type: tm+mt
-source-wordcount: '5385'
+source-wordcount: '5367'
 ht-degree: 13%
 
 ---
@@ -418,7 +418,6 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Avsnittet Aktivera tillåtelselista har uppdaterats. [Läs mer](../configuration/allow-list.md#enable-allow-list)
 * Avsnittet Monitor-meddelandets förinställningar har uppdaterats med orsaker till att förinställningarna inte kunde skapas och information om sådana fel. [Läs mer](../configuration/channel-surfaces.md#monitor-channel-surfaces)
 * Uppdaterat och ändrat namn på avsnittet för återförsöksperiod för att återspegla det faktum att du nu kan ändra inställningen för återförsök via e-post i meddelandeförinställningarna. [Läs mer](../configuration/retries.md#retry-duration)
-* Ett nytt avsnitt har lagts till som beskriver hur du infogar en länk för att välja bort ett enstaka klick i e-postinnehåll. [Läs mer](../privacy/opt-out.md#one-click-opt-out-link)
 * Uppdaterade avsnittet Delegera en underdomän med mer detaljerad information om valideringsprocessen som utfördes av Adobe. [Läs mer](../configuration/delegate-subdomain.md#subdomain-validation)
 * Ett avsnitt har lagts till som beskriver hur du manuellt lägger till e-postadresser och domäner i listan över inaktiveringar. [Läs mer](../configuration/manage-suppression-list.md#add-addresses-and-domains)
 * Uppdaterade [Åtkomst till listan över inaktiveringar](../configuration/manage-suppression-list.md#access-suppression-list) och [Försök igen](../configuration/retries.md) -avsnitt som återspeglar det nya användargränssnittet.

@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: daba85693c4733333d6a62ebb5c1f290dbcb1511
+source-git-commit: 4de37520b3ea7842d7f385f38c07cdf4984a5939
 workflow-type: tm+mt
-source-wordcount: '2351'
+source-wordcount: '2458'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Om du vill börja skapa ett e-postmeddelande måste du skapa e-postkanalsytor so
 
 Definiera e-postinställningarna i det dedikerade avsnittet av kanalytans konfiguration, enligt nedan.
 
-![](assets/preset-email-settings.png)
+![](assets/surface-email-settings.png){width="50%" align="left"}
 
 E-postytans konfiguration hämtas för att skicka kommunikation enligt logiken nedan:
 
@@ -36,7 +36,7 @@ E-postytans konfiguration hämtas för att skicka kommunikation enligt logiken n
 
 >[!NOTE]
 >
->De uppdaterade inställningarna för e-postyta hämtas automatiskt under den eller de resor eller kampanjer där ytan används.
+>De uppdaterade inställningarna för e-postyta hämtas automatiskt under resan/sätten eller kampanjerna där ytan används.
 
 ## E-posttyp {#email-type}
 
@@ -67,7 +67,7 @@ Om du vill bevara domänens anseende, snabba upp processen för IP-uppvärmning 
 
 Välj den IP-pool som ska associeras med ytan. [Läs mer](../configuration/ip-pools.md)
 
-![](assets/preset-subdomain-ip-pool.png){width="50%" align="left"}
+![](assets/surface-subdomain-ip-pool.png){width="50%" align="left"}
 
 Du kan inte fortsätta skapa en yta medan den valda IP-poolen är under [utgåva](../configuration/ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) och har aldrig kopplats till den valda underdomänen. Annars kommer den äldsta versionen av associationen för IP-poolen/underdomänen fortfarande att användas. I så fall sparar du ytan som utkast och försöker igen när IP-poolen har **[!UICONTROL Success]** status.
 
@@ -81,41 +81,48 @@ När en IP-pool har valts visas PTR-information när du hovrar över IP-adresser
 >
 >Om en PTR-post inte är konfigurerad kan du kontakta Adobe.
 
-## Avbeställ lista {#list-unsubscribe}
+## Avbeställ sidhuvud{#list-unsubscribe}
+
+<!--Do not modify - Legal Review Done -->
+
 
 Vid [välja en underdomän](#subdomains-and-ip-pools) från listan, **[!UICONTROL Enable List-Unsubscribe]** visas.
 
-Det här alternativet är aktiverat som standard. Om du låter det vara aktiverat inkluderas en länk för att avbryta prenumerationen automatiskt i e-posthuvudet, till exempel:
+Det här alternativet är aktiverat som standard för att inkludera en avbruten URL-adress med ett klick i e-posthuvudet, till exempel:
 
 ![](assets/preset-list-unsubscribe-header.png)
 
-Om du inaktiverar det här alternativet visas ingen länk för att avbryta prenumerationen i e-posthuvudet.
+Om du inaktiverar det här alternativet visas ingen avbruten URL i e-posthuvudet med ett enda klick.
 
-Du kan välja medgivandenivå på menyn **Samtyckesnivå** listruta. Den kan vara specifik för kanalen eller för profilens identitet. Baserat på den här inställningen uppdateras medgivandet i Adobe Journey Optimizer antingen på kanalnivå eller på ID-nivå när en användare avbeställer prenumerationen via länken för att avbryta prenumerationen i ett e-postmeddelande.
+Du kan välja medgivandenivå på menyn **[!UICONTROL Consent level]** listruta. Den kan vara specifik för kanalen eller för profilens identitet. Baserat på den här inställningen uppdateras medgivandet i Adobe Journey Optimizer antingen på kanalnivå eller på ID-nivå när en användare avbeställer prenumerationen med hjälp av den listadress för avbeställning som finns i huvudet i ett e-postmeddelande.
 
-Länken för att avbryta prenumerationen består av två element:
+Listan Avbeställ sidhuvud har två funktioner (mailto och One-click unsubscribe URL, som förklaras nedan) som är aktiverade som standard om du inte avmarkerar en eller båda funktionerna:
 
-* An **avbeställ e-postadress** som alla avbeställningar skickas till.
+* A **Mailto (avsluta prenumeration)** adress, vilket är den måladress dit avbeställningar dirigeras för automatisk bearbetning.
 
-  I [!DNL Journey Optimizer], är e-postadressen för avanmälan standard **[!UICONTROL Mailto (unsubscribe)]** adressen som visas i kanalytan, baserat på [vald underdomän](#subdomains-and-ip-pools).
+  I Journey Optimizer är e-postadressen för avbeställning standard **Mailto (avsluta prenumeration)** som visas i kanalytan, baserat på din [vald underdomän](#subdomains-and-ip-pools).
 
-  ![](assets/preset-list-unsubscribe-mailto.png){width="50%" align="left"}
+  ![](assets/surface-list-unsubscribe-mailto.png){width="50%" align="left"}
 
-* The **avbeställ URL**, vilket är URL:en till landningssidan där användaren omdirigeras när prenumerationen har upphört.
 
-  Om du lägger till en [länk för avanmälan med ett klick](../privacy/opt-out.md#one-click-opt-out) för ett meddelande som skapas med den här ytan är avanmälnings-URL:en den URL som definierats för länken med ett klick.
+* The **Avbeställ en URL med ett klick**, som är standard är den enklicksversion av vårt URL-genererade sidhuvud för att avbryta prenumerationen, baserat på den underdomän som du anger och konfigurerar i inställningarna för Kanalyta.
 
-  ![](assets/preset-list-unsubscribe-opt-out-url.png)
+<!--
+    >[!AVAILABILITY]
+    >
+    >One-click Unsubscribe URL Header will be available in Adobe Journey Optimizer starting June 3, 2024.
+    >
+-->
 
-  >[!NOTE]
-  >
-  >Om du inte lägger till en länk för avanmälan med ett enda klick i meddelandeinnehållet visas ingen landningssida för användaren.
+The **[!UICONTROL Mailto (unsubscribe)]** -funktionen och **[!UICONTROL One-click Unsubscribe URL]** är valfria. Om du inte vill använda den standardgenererade URL-adressen för ett enda klick kan du avmarkera funktionen. I scenariot där **[!UICONTROL Opt-out configuration]** är aktiverat och **[!UICONTROL One-click Unsubscribe URL]** funktionen är inte markerad om du lägger till en [länk för avanmälan med ett klick](../privacy/opt-out.md#one-click-opt-out) till ett meddelande som skapas med den här ytan kommer rubriken för att avbryta prenumerationen att hämta länken för att välja bort en klickning som du har infogat i e-postmeddelandets brödtext och använda den som URL-värde för att avsluta prenumerationen med ett klick.
 
-Läs mer om hur du lägger till en länk för att avbryta prenumerationen i dina meddelanden i [det här avsnittet](../privacy/opt-out.md#unsubscribe-header).
+![](assets/preset-list-unsubscribe-opt-out-url.png)
 
-<!--If you have added one or more dynamic subdomains, URLs will be populated based on the resolved dynamic subdomain. [Learn more](../email/surface-personalization.md#dynamic-subdomains)-->
+>[!NOTE]
+>
+>Om du inte lägger till en länk för avanmälan med ett enda klick i meddelandeinnehållet och standardURL:en för att avbryta prenumerationen är avmarkerad i Kanalytsinställningarna, skickas ingen URL till e-posthuvudet som en del av rubriken för att avbryta prenumerationen.
 
-<!--Select the **[!UICONTROL Custom List-Unsubscribe]** option to enter your own Unsubscribe URL and/or your own Unsubscribe email address.(to add later)-->
+Läs mer om hur du hanterar funktioner för att avbryta prenumerationen i dina meddelanden i [det här avsnittet](../email/email-opt-out.md#unsubscribe-header).
 
 ## Huvudparametrar {#email-header}
 
