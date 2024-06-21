@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
-source-git-commit: 21b53c72976d1a65651bc142e23ba847dc40a305
+source-git-commit: 87fa5875dfdbae091b36129812948362324f2516
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1714'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ The **Kopiera teknisk information** Med kan du kopiera teknisk information om de
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_entrance"
 >title="Tillåt återinträde"
->abstract="Som standard tillåter nya resor återinträde. Du kan avmarkera **Tillåt återinträde** om du vill erbjuda en engångspresentation när en person går in i en affär."
+>abstract="Som standard tillåter nya resor återinträde. Du kan avmarkera **Tillåt återinträde** om du till exempel vill erbjuda en engångspresentation när en person går in i en affär."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
 
 Som standard tillåter nya resor återinträde. Du kan avmarkera **Tillåt återinträde** om du vill erbjuda en engångspresentation när en person går in i en affär.
@@ -107,7 +107,7 @@ Du kan också lägga till en **Slutdatum**. Detta gör att profiler kan avslutas
 ### Tidsgräns eller fel i reseaktiviteter {#timeout_and_error}
 
 >[!CONTEXTUALHELP]
->id="ajo_journey_properties_timout"
+>id="ajo_journey_properties_timeout"
 >title="Timeout"
 >abstract="Ange hur lång tid resan ska försöka utföra en åtgärd eller verifiera ett villkor innan det betraktas som en timeout."
 
