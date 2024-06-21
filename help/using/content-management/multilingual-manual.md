@@ -8,31 +8,22 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
-hide: true
-hidefromtoc: true
 exl-id: 6244d717-fbd6-468e-9164-60451d0d62f0
-badge: label="Beta" type="Informative"
-source-git-commit: b62f8954e09f50896ad5e70784c5a93943617e85
+badge: label="Begränsad tillgänglighet" type="Informative"
+source-git-commit: 89c03a4be653b39838ef8a7c77deb6a1781004a1
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '555'
 ht-degree: 1%
 
 ---
 
 # Skapa flerspråkigt innehåll med manuell översättning {#multilingual-manual}
 
->[!BEGINSHADEBOX]
+>[!AVAILABILITY]
+>
+>Flerspråkigt innehåll är för närvarande endast tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
-**Innehållsförteckning**
-
-* [Kom igång med flerspråkigt innehåll](multilingual-gs.md)
-* Skapa flerspråkigt innehåll med manuell översättning
-* [Skapa flerspråkigt innehåll med automatiserad översättning](multilingual-automated.md)
-* [Flerspråkig kampanjrapport](multilingual-report.md)
-
->[!ENDSHADEBOX]
-
-Med det manuella flödet kan ni enkelt översätta ert innehåll direkt i kampanjen för e-post, push-meddelanden eller SMS, vilket ger er precis kontroll och anpassningsbara alternativ för flerspråkiga meddelanden. Dessutom kan du enkelt importera redan befintligt flerspråkigt innehåll med alternativet Importera HTML.
+Med det manuella flödet kan ni enkelt översätta ert innehåll direkt i kampanjen och resan för e-post, push-meddelanden eller SMS, vilket ger er precis kontroll och anpassningsbara alternativ för flerspråkiga meddelanden. Dessutom kan du enkelt importera redan befintligt flerspråkigt innehåll med alternativet Importera HTML.
 
 Följ de här stegen för att skapa flerspråkigt innehåll med hjälp av manuell översättning:
 
@@ -40,15 +31,13 @@ Följ de här stegen för att skapa flerspråkigt innehåll med hjälp av manuel
 
 1. [Skapa språkinställningar](#create-language-settings).
 
-1. [Skapa en flerspråkig kampanj](#create-a-multilingual-campaign).
+1. [Skapa flerspråkigt innehåll](#create-a-multilingual-campaign).
 
 ## Skapa nationella inställningar {#create-locale}
 
 När du konfigurerar språkinställningarna enligt beskrivningen i [Skapa språkinställningar](#language-settings) om det inte finns någon specifik språkinställning för ditt flerspråkiga innehåll kan du skapa så många nya språkinställningar som behövs med **[!UICONTROL Translation]** -menyn.
 
-1. Från **[!UICONTROL Administration]** meny, åtkomst **[!UICONTROL Channel]**.
-
-   På översättningsmenyn får du tillgång till listan över aktiverade språkområden.
+1. Från **[!UICONTROL Content management]** meny, åtkomst **[!UICONTROL Translation]**.
 
 1. Klicka på **[!UICONTROL Add locale]** på fliken **[!UICONTROL Locale dictionary]**.
 
@@ -104,15 +93,15 @@ I det här avsnittet kan du ange ditt primära språk och tillhörande språk f�
 1. Select your **[!UICONTROL Locales dictionary]** and add as many as needed.
 -->
 
-## Skapa en flerspråkig kampanj {#create-multilingual-campaign}
+## Skapa flerspråkigt innehåll {#create-multilingual-campaign}
 
-När du har konfigurerat ditt flerspråkiga innehåll är du redo att skapa en kampanj och anpassa innehållet för alla valda språkområden.
+När du har konfigurerat ditt flerspråkiga innehåll är du redo att skapa en kampanj eller resa och anpassa innehållet för alla valda språkområden.
 
-1. Börja med att skapa och konfigurera din e-post-, SMS- eller push-meddelandekampanj enligt dina krav. [Läs mer](../campaigns/create-campaign.md)
+1. Börja med att skapa och konfigurera e-post, SMS eller push-meddelanden [kampanj](../campaigns/create-campaign.md) eller [resa](../building-journeys/journeys-message.md) enligt dina krav.
 
-1. Navigera till **[!UICONTROL Actions]** och väljer **[!UICONTROL Edit content]**.
-
-   ![](assets/multilingual-campaign-1.png)
+   >[!AVAILABILITY]
+   >
+   >Vi rekommenderar att du endast inkluderar ett översättningsprojekt per resa.
 
 1. Skapa eller importera ditt ursprungliga innehåll och anpassa det efter behov.
 
@@ -148,11 +137,7 @@ När du har konfigurerat ditt flerspråkiga innehåll är du redo att skapa en k
 
    ![](assets/multilingual-campaign-8.png)
 
-1. Kontrollera att kampanjen är korrekt konfigurerad och klicka sedan på **[!UICONTROL Activate]**.
-
-Din kampanj är nu aktiverad. Meddelandet som konfigurerats i kampanjen skickas omedelbart, eller på det angivna datumet. Observera att så fort Campaign är klar kan den inte ändras. Om du vill återanvända innehåll kan du duplicera din kampanj.
-
-När ni har skickat dem kan ni mäta effekten av era kampanjer i kampanjrapporterna.
+Nu kan ni aktivera kampanjen eller resan. När ni har skickat dem kan ni mäta effekten av er flerspråkiga resa eller kampanj i rapporter.
 
 <!--
 # Create a multilingual journey {#create-multilingual-journey}
