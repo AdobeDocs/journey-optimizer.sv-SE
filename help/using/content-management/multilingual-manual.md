@@ -10,7 +10,7 @@ level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: 6244d717-fbd6-468e-9164-60451d0d62f0
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: 89c03a4be653b39838ef8a7c77deb6a1781004a1
+source-git-commit: 59dee15d2952438a074db57a94b3d896b38cd4f3
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 1%
@@ -87,6 +87,7 @@ I det här avsnittet kan du ange ditt primära språk och tillhörande språk f�
 
 <!--
 1. Access the **[!UICONTROL Channel surfaces]** menu and create a new channel surface or select an existing one.
+
 
 1. In the **[!UICONTROL Header parameters]** section, select the **[!UICONTROL Enable multilingual]** option.
 
