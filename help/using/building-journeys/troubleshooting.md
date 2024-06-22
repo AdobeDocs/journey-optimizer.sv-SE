@@ -9,18 +9,18 @@ role: User
 level: Intermediate
 keywords: felsökning, felsökning, resa, kontroll, fel
 exl-id: 03fbc4f4-b0a8-46d5-91f9-620685b11493
-source-git-commit: 417eea2a52d4fb38ae96cf74f90658f87694be5a
+source-git-commit: 135dd7528e87a6fde7e148745ef2f49104809bc1
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 80%
+source-wordcount: '1001'
+ht-degree: 69%
 
 ---
 
-# Felsök din resa{#troubleshooting}
+# Felsök din resa {#troubleshooting}
 
-I det här avsnittet lär du dig att felsöka resor innan de testas eller publiceras. Alla kontroller som anges nedan kan utföras medan resan är i testläge eller när den är live. Rekommendationen är att göra alla kontroller nedan i testläget och sedan gå vidare till publiceringen. Läs [den här sidan](../building-journeys/testing-the-journey.md).
+I det här avsnittet får du lära dig hur du felsöker resor innan du testar eller publicerar. Alla kontroller som anges nedan kan utföras medan resan är i testläge eller när den är live. Rekommendationen är att göra alla kontroller nedan i testläget och sedan gå vidare till publiceringen. Läs [den här sidan](../building-journeys/testing-the-journey.md).
 
-## Kontrollera om det finns fel före testning{#checking-for-errors-before-testing}
+## Kontrollera om det finns fel före testning {#checking-for-errors-before-testing}
 
 Kontrollera att alla aktiviteter är konfigurerade korrekt innan du testar och publicerar din resa. Du kan inte utföra tester eller publikationer om fel fortfarande upptäcks av systemet.
 
@@ -44,15 +44,15 @@ Fel och varningar som är globala för resan visas först i listan. Fel och varn
 
 När ett fel inträffar i en åtgärd eller ett villkor upphör en individs resa. Det enda sättet att få den att fortsätta är att markera rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [det här avsnittet](../building-journeys/using-the-journey-designer.md#paths).
 
-## Kontrollera att händelser skickas korrekt{#checking-that-events-are-properly-sent}
+## Kontrollera att händelser skickas korrekt {#checking-that-events-are-properly-sent}
 
 Startpunkten för en resa är alltid en händelse. Du kan utföra tester med verktyg som Postman.
 
 Du kan kontrollera om API-anropet som skickas via dessa verktyg skickas korrekt eller inte. Om du får tillbaka ett fel innebär det att ditt anrop har ett problem. Kontrollera nyttolasten igen, rubriken (och särskilt ditt organisations-ID) och destinationswebbadressen. Du kan fråga administratören om vilken webbadress som ska användas.
 
-Händelser skjuts inte direkt från källan till resor. Resorna är beroende av Adobe Experience Platform API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför hänvisa till [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target="_blank"} för felsökning av API:er för direktuppspelning.
+Händelser skjuts inte direkt från källan till resor. Resorna förlitar sig faktiskt på Adobe Experience Platform API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför hänvisa till [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target="_blank"} för felsökning av API:er för direktuppspelning.
 
-## Kontrollera om personer kommer in på resan{#checking-if-people-enter-the-journey}
+## Kontrollera om personer kommer in på resan {#checking-if-people-enter-the-journey}
 
 Reserapporter mäter människors inträde på en resa i realtid.
 
@@ -72,7 +72,7 @@ Du kan börja felsöka med frågorna nedan:
   Content-type - application/json
   ```
 
-## Kontrollera hur människor navigerar genom resan{#checking-how-people-navigate-through-the-journey}
+## Kontrollera hur människor navigerar genom resan {#checking-how-people-navigate-through-the-journey}
 
 Reserapportering mäter enskilda personers framsteg inom en resa. Det är enkelt att identifiera var och varför en person stoppats.
 
@@ -81,11 +81,11 @@ Här följer några saker att kontrollera:
 * Är det på grund av ett tillstånd som utesluter personen i fråga? Villkoret kan till exempel vara &quot;kön = man&quot; och personen är en kvinna. Den här kontrollen kan utföras av en företagsanvändare om villkoret inte är för komplext.
 * Är orsaken att ett anrop till en datakälla inte svarar? När resan är i testläge kan denna information visas i testlägets loggar. När resan är live kan en administratör testa direktanrop till datakällan och kontrollera svaret som tas emot. En administratör kan även göra dubbletter av resan och testa den.
 
-## Kontrollera att meddelanden har skickats{#checking-that-messages-are-sent-successfully}
+## Kontrollera att meddelanden har skickats {#checking-that-messages-are-sent-successfully}
 
 Om enskilda personer flödar rätt väg i resan, men inte får meddelanden som de bör få, kan du kontrollera om:
 
 * [!DNL Journey Optimizer] har tagit hänsyn till begäran om att skicka meddelandet. Affärsanvändare kan komma åt meddelandet som ska skickas och kontrollera om tidpunkten för den senaste körningen motsvarar körningstiden för din resa. De kan även kontrollera de senaste API-anropen/händelserna som tagits emot.
 * [!DNL Journey Optimizer] har skickat meddelandet. Kontrollera reserapporteringen för att se till att det inte finns några fel.
 
-Om ett meddelande skickas via en anpassad åtgärd är det enda som kan kontrolleras i resan det faktum att anropet till den anpassade åtgärdens system leder till ett fel eller inte. Det kan hända att anropet till det externa system som är kopplat till den anpassade åtgärden inte leder till ett fel men inte heller leder till att ett meddelande skickas. I dessa fall bör undersökningar utföras på det externa systemet.
+Om ett meddelande skickas via en anpassad åtgärd är det enda som kan kontrolleras under resan att anropet till den anpassade åtgärdens system leder till ett fel eller inte. Om anropet till det externa system som är kopplat till den anpassade åtgärden inte leder till ett fel, men inte leder till att ett meddelande skickas, bör vissa undersökningar utföras på den externa datorns sida.

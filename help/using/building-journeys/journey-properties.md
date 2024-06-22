@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
-source-git-commit: 87fa5875dfdbae091b36129812948362324f2516
+source-git-commit: 135dd7528e87a6fde7e148745ef2f49104809bc1
 workflow-type: tm+mt
-source-wordcount: '1714'
+source-wordcount: '1748'
 ht-degree: 0%
 
 ---
@@ -28,10 +28,12 @@ ht-degree: 0%
 >title="Kriterier för avresa"
 >abstract="I det här avsnittet visas alternativen för avslutningskriterier. Du kan skapa en eller flera regler för avslutningskriterier för din resa."
 
-Resetillgångarna är centraliserade till rätt spår under resan. Det här avsnittet visas som standard när du skapar en ny resa. Klicka på pennikonen bredvid resans namn för att komma åt dess egenskaper för befintliga resor.
 
+## Åtkomst till egenskaperna för en resa {#access-properties}
 
-Använd det här avsnittet för att ange namnet på resan, lägga till en beskrivning och:
+Resans egenskaper är centraliserade i rätt spår. Det här avsnittet visas som standard när du skapar en ny resa. Klicka på pennikonen bredvid resans namn för att öppna befintliga resor.
+
+I det här avsnittet kan du definiera namnet på resan, lägga till en beskrivning och:
 
 * hantera [inträde och återinträde](#entrance),
 * välj start och slut [datum](#dates),
@@ -50,6 +52,10 @@ The **Kopiera teknisk information** Med kan du kopiera teknisk information om de
 
 
 ## Ingång och återinträde {#entrance}
+
+Profilinmatningsläget definieras på resenivån i den högra konfigurationsrutan. Inställningarna beskrivs nedan.
+
+Profilingångshantering beror på typen av resor. Läs mer om hantering av profilentré och återinträde på marknaden i [den här sidan](entry-management.md).
 
 ### Tillåt återinträde  {#allow-re-entrance}
 
@@ -71,7 +77,6 @@ Som standard tillåter nya resor återinträde. Du kan avmarkera **Tillåt åter
 
 När **Tillåt återinträde** är aktiverat, **Vänteperiod för återinträde** -fältet visas. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 29 dagar.
 
-Läs mer om hantering av profilentré och återinträde på marknaden i [det här avsnittet](entry-management.md).
 
 ## Hantera åtkomst {#manage-access}
 
