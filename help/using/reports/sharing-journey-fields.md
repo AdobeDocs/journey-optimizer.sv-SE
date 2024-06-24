@@ -8,16 +8,22 @@ topic: Content Management
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 exl-id: 177b4a97-c757-40ca-a190-fbd88169e5e2
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 619bcbc16b4117c29c482c85323603a4281298e0
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 7%
+source-wordcount: '78'
+ht-degree: 6%
 
 ---
 
 # Resefält {#sharing-journey-fields}
 
-Den här fältgruppen används i transportschemat (i relation till travelStepEvent). Den innehåller följande fält:
+Den här fältgruppen används i **resa** schema (i relation till **travelStepEvent**). Den innehåller fälten som listas nedan.
+
+
+>[!NOTE]
+>
+>Läs mer om attribut för reseegenskaper [i det här avsnittet](../building-journeys/expression/journey-properties.md#journey-propertoes-fields).
+
 
 ## travelID {#journeyid-field}
 

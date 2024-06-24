@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: aktivitet, villkor, arbetsyta, resa
 exl-id: 496c7666-a133-4aeb-be8e-c37b3b9bf5f9
-source-git-commit: e34c39c02f71361277f28b1a116a54390875f93d
+source-git-commit: 619bcbc16b4117c29c482c85323603a4281298e0
 workflow-type: tm+mt
 source-wordcount: '1435'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -54,7 +54,7 @@ Låt oss till exempel ta exemplet med den första sökvägens villkor&quot;Perso
 
 Du kan skapa en annan sökväg för målgrupper som inte uppfyller de definierade villkoren genom att markera **[!UICONTROL Show path for other cases than the one(s) above]**. Observera att det här alternativet inte är tillgängligt vid delning. Se [Procentdelning](#percentage_split).
 
-I det enkla läget kan du utföra enkla frågor baserat på en kombination av fält. Alla tillgängliga fält visas till vänster på skärmen. Dra och släpp fält till huvudzonen. Om du vill kombinera de olika elementen, låser du ihop dem till varandra för att skapa olika grupper och/eller gruppnivåer. Du kan sedan välja en logisk operator för att kombinera element på samma nivå:
+I det enkla läget kan du utföra enkla frågor baserat på en kombination av fält. Alla tillgängliga fält visas till vänster på skärmen. Dra och släpp fält till huvudzonen. Om du vill kombinera de olika elementen, låser du ihop dem till varandra för att skapa olika grupper och/eller gruppnivåer. Du kan sedan välja en logisk operatör för att kombinera element på samma nivå:
 
 * OCH: en korsning av två kriterier. Endast de element som uppfyller alla villkor beaktas.
 * ELLER: en förening av två kriterier. Element som matchar minst ett av de två villkoren beaktas.
@@ -66,9 +66,9 @@ Om du använder [Adobe Experience Platform segmenteringstjänst](https://experie
 
 >[!NOTE]
 >
->Du kan inte utföra frågor på tidsserier (till exempel en lista över inköp, tidigare klick på meddelanden) med den enkla redigeraren. För detta behöver du den avancerade redigeraren. Se [den här sidan](expression/expressionadvanced.md).
+>Du kan inte utföra frågor på tidsserier (till exempel en lista över inköp, tidigare klick på meddelanden) med den enkla redigeraren. För detta behöver du den avancerade redigeraren. Läs [den här sidan](expression/expressionadvanced.md).
 
-När ett fel inträffar i en åtgärd eller ett villkor upphör kundens resa. Det enda sättet att få det att fortsätta är att markera kryssrutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [det här avsnittet](../building-journeys/using-the-journey-designer.md#paths).
+När ett fel inträffar i en åtgärd eller ett villkor upphör en individs resa. Det enda sättet att få den att fortsätta är att markera rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [det här avsnittet](../building-journeys/using-the-journey-designer.md#paths).
 
 I den enkla redigeraren hittar du även kategorin Reseegenskaper, nedanför kategorierna event och datakälla. Denna kategori innehåller tekniska fält som rör resan för en viss profil. Det här är den information som hämtats av systemet från direktresor, till exempel rese-ID:t eller de specifika fel som påträffats. [Läs mer](expression/journey-properties.md)
 
@@ -116,7 +116,7 @@ På så sätt kan du definiera ett annat flöde baserat på datumet. Om personen
 
 >[!NOTE]
 >
->Tidszonen är inte längre specifik för ett villkor och har nu definierats på färdsnivå i färdegenskaperna. Se [den här sidan](../building-journeys/timezone-management.md).
+>Tidszonen är inte längre specifik för ett villkor och har nu definierats på färdsnivå i färdegenskaperna. Läs [den här sidan](../building-journeys/timezone-management.md).
 
 ![](assets/journey53.png)
 
@@ -140,8 +140,8 @@ Den nominella banan har alltid företräde framför den alternativa banan, även
 
 Här följer de tröskelvärden som ska beaktas för att se till att gränsvärdet uppnås:
 
-* För ett lock som är större än 10000 måste antalet distinkta profiler som ska injiceras vara minst 1,3 gånger så stort som locket.
-* För ett lock under 10000 måste antalet distinkta profiler som ska injiceras vara 1000 plus locket.
+* För ett lock som är större än 10 000 måste antalet distinkta profiler som ska injiceras vara minst 1,3 gånger det.
+* För en kapsyl under 10 000 måste antalet distinkta profiler som ska injiceras vara 1 000 plus kapsylen.
 
 Profilände beaktas inte i testläge.
 

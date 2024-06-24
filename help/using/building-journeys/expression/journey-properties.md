@@ -8,33 +8,31 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: resa, uttryck, redigerare, egenskaper
 exl-id: eb1ab0ed-90bd-4613-b63d-b28693947db2
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: 619bcbc16b4117c29c482c85323603a4281298e0
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 1%
+source-wordcount: '589'
+ht-degree: 0%
 
 ---
 
 # Attribut för reseegenskaper {#journey-properties}
 
-I den avancerade uttrycksredigeraren hittar du **Reseegenskaper** -kategorin, under kategorierna för händelsen och datakällan. Denna kategori innehåller tekniska fält som rör resan för en viss profil. Det här är den information som hämtats av systemet från direktresor, till exempel rese-ID:t eller de specifika fel som påträffats.
-
->[!NOTE]
->
->Attribut för reseegenskaper är också tillgängliga i redigeraren för enkla uttryck. Se det här [section](../condition-activity.md#about_condition)
+I [enkel uttrycksredigerare](../condition-activity.md#about_condition)och i [avancerad uttrycksredigerare](../expression/expressionadvanced.md), under **Händelse** och **Datakälla** -kategorier kan du komma åt **Reseegenskaper** kategori. Denna kategori innehåller tekniska fält som rör resan för en viss profil. Det här är den information som hämtats av systemet från direktresor, t.ex. rese-ID:t, eller de specifika fel som påträffats.
 
 ![](../assets/journey-properties.png)
 
-Du hittar information om:
+Den innehåller information om:
 
 * reseversion: reseversion, resversion-id, instansens-uid, osv.
 * fel: datahämtning, åtgärdskörning osv.
 * aktuellt steg, senaste aktuella steg osv.
 * ignorerade profiler
 
+  Listan med fält är tillgänglig [i det här avsnittet](#journey-properties-fields).
+
 Du kan använda dessa fält för att skapa uttryck. Under körningen hämtas värdena direkt från resan.
 
-Här är några exempel på användningsområden:
+Nedan följer några exempel på användningsområden:
 
 * **Logga ignorerade profiler**: du kan skicka alla profiler som har uteslutits från ett meddelande med en begränsningsregel till ett tredjepartssystem för loggning. För detta anger du en sökväg i händelse av timeout och fel och lägger till ett villkor som ska filtreras efter en viss feltyp, t.ex.&quot;ignorera personer genom att appa regel&quot;. Du kan sedan överföra de borttagna profilerna till ett tredjepartssystem via en anpassad åtgärd.
 

@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: fec6b15db9f8e6b2a07b55bc9e8fc4d9cb0d73d7
+source-git-commit: 619bcbc16b4117c29c482c85323603a4281298e0
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 7%
@@ -123,7 +123,7 @@ Designa resor för att leverera personaliserade, sammanhangsbaserade upplevelser
 
 ➡️ [Upptäck den här funktionen i video](journey.md#video)
 
-Steg för att skicka meddelanden via resor listas nedan.
+Steg för att skicka meddelanden via resor anges nedan:
 
 1. Från **Bläddra** flik, klicka **[!UICONTROL Create Journey]** för att skapa en ny resa.
 

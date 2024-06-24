@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
-source-git-commit: 135dd7528e87a6fde7e148745ef2f49104809bc1
+source-git-commit: 619bcbc16b4117c29c482c85323603a4281298e0
 workflow-type: tm+mt
-source-wordcount: '1748'
+source-wordcount: '1769'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,8 @@ I det här avsnittet kan du definiera namnet på resan, lägga till en beskrivni
 >För direktresor visar den här skärmen endast publiceringsdatumet och namnet på den användare som publicerade resan.
 
 The **Kopiera teknisk information** Med kan du kopiera teknisk information om den resa som supportteamet kan använda för att felsöka. Följande information kopieras: `JourneyVersion UID`, `OrgID`, `orgName`, `sandboxName`, `lastDeployedBy`, `lastDeployedAt`.
+
+Läs mer om tekniska fält som rör en resa för en viss profil och hur du använder dem [på den här sidan](expression/journey-properties.md).
 
 
 ## Ingång och återinträde {#entrance}

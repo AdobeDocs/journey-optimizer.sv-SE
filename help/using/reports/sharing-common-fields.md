@@ -8,20 +8,26 @@ topic: Content Management
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 exl-id: 42aec986-2352-456a-a725-7f1585ae01f8
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 619bcbc16b4117c29c482c85323603a4281298e0
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
 
 # historikstegshändelser, vanliga fält {#sharing-common-fields}
 
-Den här fältgruppen delas av travelStepEvent och travelStepProfileEvent.
+Den här fältgruppen delas av följande händelser: **travelStepEvent** och **travelStepProfileEvent**.
 
 Det här är de vanliga XDM-fälten som [!DNL Journey Optimizer] skickar till Adobe Experience Platform. Vanliga fält skickas för varje steg som bearbetas under en resa. Mer specifika fält används för anpassade åtgärder och berikning.
 
 Vissa av dessa fält är bara tillgängliga i specifika bearbetningsmönster (åtgärdskörning, datahämtning osv.) för att begränsa storleken på händelser.
+
+
+>[!NOTE]
+>
+>Läs mer om attribut för reseegenskaper [i det här avsnittet](../building-journeys/expression/journey-properties.md#journey-propertoes-fields).
+
 
 ## entré {#entrance-field}
 
