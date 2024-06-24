@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: utsädeslista, seedlist, seed, configuration
 exl-id: 0172f6bc-da8b-4a83-a0fc-4ed41324568f
-source-git-commit: 815595f907ed3ea05b7772a1df96187509351bf9
+source-git-commit: 59ecb9a5376e697061ddac4cc68f09dee68570c0
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 2%
@@ -48,7 +48,7 @@ Seed-adresser är inte riktiga profiler eller testprofiler eftersom de inte inne
 
 >[!NOTE]
 >
->Varianter stöds. dirigeringsadresserna får en kopia av varje variant av samma budskap (t.ex. olika behandlingar av en [innehållsexperiment](../campaigns/get-started-experiment.md)).
+>Varianter stöds. dirigeringsadresserna får en kopia av varje variant av samma budskap (t.ex. olika behandlingar av en [innehållsexperiment](../content-management/get-started-experiment.md)).
 
 ## Åtkomst till startlistor {#access-seed-lists}
 

@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate, Experienced
 badge: label="Begränsad tillgänglighet"
-source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
+source-git-commit: 59ecb9a5376e697061ddac4cc68f09dee68570c0
 workflow-type: tm+mt
 source-wordcount: '314'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -42,15 +42,15 @@ Definiera två leveransbehandlingar som var och en innehåller olika beslutspoli
 
 1. Skapa en kampanj och välj **[!UICONTROL Code-base experience]** åtgärd. [Läs mer](../code-based/create-code-based.md)
 
-1. Klicka på i kampanjsammanfattningssidan **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment. [Läs mer](../campaigns/content-experiment.md)
+1. Klicka på i kampanjsammanfattningssidan **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment. [Läs mer](../content-management/content-experiment.md)
 
 1. Välj **[!UICONTROL Decisions]** ikon, klicka **[!UICONTROL Create a decision]** och fyll i beslutsdetaljerna. [Läs mer](create-decision.md)
 
    ![](assets/decision-code-based-create.png)
 
-1. Definiera urvalsstrategierna för ditt beslut. Klicka **[!UICONTROL Add strategy]**.
+1. Definiera urvalsstrategierna för ditt beslut. Klicka på **[!UICONTROL Add strategy]**.
 
-1. Klicka **[!UICONTROL Create]**. Det nya beslutet läggs till under **[!UICONTROL Decisions]**.
+1. Klicka på **[!UICONTROL Create]**. Det nya beslutet läggs till under **[!UICONTROL Decisions]**.
 
    ![](assets/decision-code-based-decision-added.png)
 

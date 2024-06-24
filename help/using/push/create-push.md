@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 2ebbcd7d-dcfc-4528-974d-6230fc0dca3d
-source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
+source-git-commit: 59ecb9a5376e697061ddac4cc68f09dee68570c0
 workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -58,7 +58,7 @@ Följ stegen nedan för att skapa ett push-meddelande:
 
    ![](assets/push_create_3.png)
 
-1. Klicka **[!UICONTROL Create]**.
+1. Klicka på **[!UICONTROL Create]**.
 
 1. Från **[!UICONTROL Properties]** redigerar du Campaigns **[!UICONTROL Title]** och **[!UICONTROL Description]**.
 
@@ -70,7 +70,7 @@ Följ stegen nedan för att skapa ett push-meddelande:
 
    ![](assets/push_create_5.png)
 
-1. Klicka **[!UICONTROL Create experiment]** för att börja konfigurera ert innehållsexperiment och skapa behandlingar för att mäta deras prestanda och identifiera det bästa alternativet för er målgrupp. [Läs mer](../campaigns/content-experiment.md)
+1. Klicka **[!UICONTROL Create experiment]** för att börja konfigurera ert innehållsexperiment och skapa behandlingar för att mäta deras prestanda och identifiera det bästa alternativet för er målgrupp. [Läs mer](../content-management/content-experiment.md)
 
 1. Kampanjer är utformade för att köras ett visst datum eller med en återkommande frekvens. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** av kampanjen i [det här avsnittet](../campaigns/create-campaign.md#schedule).
 
@@ -79,7 +79,7 @@ Följ stegen nedan för att skapa ett push-meddelande:
    * En gång
    * Dagligen
    * Vecka
-   * Månadsvis
+   * Månatligen
 
 1. På skärmen för kampanjkonfiguration klickar du på **[!UICONTROL Edit content]** för att konfigurera push-innehållet. [Utforma ett push-meddelande](design-push.md)
 
@@ -109,7 +109,7 @@ Snabba leveranser används när fördröjningar i meddelandeleverans är affärs
 
 Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html).
 
-### Förutsättningar {#prerequisites}
+### Förhandskrav {#prerequisites}
 
 Snabba leveransmeddelanden innehåller följande krav:
 

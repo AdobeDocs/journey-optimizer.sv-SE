@@ -8,7 +8,8 @@ topic: Content Management
 role: User
 level: Intermediate
 badge: label="Beta" type="Informative"
-source-git-commit: 854f593710a28bde605aa995d747d4e084a6c4b4
+exl-id: 51cbe27f-3f3f-471e-a5d9-e3a88fcfdd68
+source-git-commit: 59ecb9a5376e697061ddac4cc68f09dee68570c0
 workflow-type: tm+mt
 source-wordcount: '3896'
 ht-degree: 0%
@@ -134,7 +135,7 @@ The **[!UICONTROL Experimentation]** KPI (Key Performance Indicators) fungerar s
 
 * **[!UICONTROL Lift]**: Mät den procentuella förbättringen av konverteringsgraden för en viss behandling jämfört med baslinjen.
 
-* **[!UICONTROL Confidence]** Bevis på att en viss behandling är densamma som den initiala behandlingen. [Läs mer](../campaigns/experiment-calculations.md#understand-confidence)
+* **[!UICONTROL Confidence]** Bevis på att en viss behandling är densamma som den initiala behandlingen. [Läs mer](../content-management/experiment-calculations.md#understand-confidence)
 
 +++
 
@@ -143,7 +144,7 @@ The **[!UICONTROL Experimentation]** KPI (Key Performance Indicators) fungerar s
 ![](assets/cja-experimentation-variants.png)
 
 The **[!UICONTROL Variant by Inbound clicks]** widgeten anger prestanda för varje variant.
-En djupdykning i dessa resultat och hur du tolkar dem finns i [den här sidan](../campaigns/get-started-experiment.md#interpret-results).
+En djupdykning i dessa resultat och hur du tolkar dem finns i [den här sidan](../content-management/get-started-experiment.md#interpret-results).
 
 +++ Läs mer om Mätvärden för inkommande klick för Variant
 
@@ -155,7 +156,7 @@ En djupdykning i dessa resultat och hur du tolkar dem finns i [den här sidan](.
 
 * **[!UICONTROL Lift]**: Mät den procentuella förbättringen av konverteringsgraden för en viss behandling jämfört med baslinjen.
 
-* **[!UICONTROL Confidence]** Bevis på att en viss behandling är densamma som den initiala behandlingen. [Läs mer](../campaigns/experiment-calculations.md#understand-confidence)
+* **[!UICONTROL Confidence]** Bevis på att en viss behandling är densamma som den initiala behandlingen. [Läs mer](../content-management/experiment-calculations.md#understand-confidence)
 
 <!--
 * **[!UICONTROL Confidence Upper bound]**:
@@ -167,7 +168,7 @@ En djupdykning i dessa resultat och hur du tolkar dem finns i [den här sidan](.
 
 ![](assets/cja-experimentation-conversion.png)
 
-The **[!UICONTROL Confidence interval]** graf mäter osäkerheten kring förbättringen. Här anges den procentuella skillnaden i prestanda mellan baslinjen och den bästa behandlingen. [Läs mer](../campaigns/experiment-calculations.md#confidence-intervals).
+The **[!UICONTROL Confidence interval]** graf mäter osäkerheten kring förbättringen. Här anges den procentuella skillnaden i prestanda mellan baslinjen och den bästa behandlingen. [Läs mer](../content-management/experiment-calculations.md#confidence-intervals).
 
 ## E-post {#email-global}
 
@@ -784,4 +785,3 @@ The **[!UICONTROL Tracked link URLs]** tabellen ger en omfattande översikt öve
 * **[!UICONTROL Unique displays]**: Antal gånger som meddelandet öppnades beaktas inte flera interaktioner för en profil.
 
 +++
-

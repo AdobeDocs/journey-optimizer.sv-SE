@@ -6,7 +6,7 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 9509fd67-6d12-4440-aad8-59690936be97
-source-git-commit: 07c453366280b21f5546322430a90752fd996099
+source-git-commit: 59ecb9a5376e697061ddac4cc68f09dee68570c0
 workflow-type: tm+mt
 source-wordcount: '1131'
 ht-degree: 0%
@@ -137,7 +137,7 @@ Om du vill aktivera innehållsexperiment för webbkanalen måste du se till att 
 
 Om du lägger till en datauppsättning som inte finns i webbdataströmmen när du konfigurerar experimentrapporter, kommer webbdata alltså inte att visas i innehållsexperimentrapporter.
 
-Lär dig hur du lägger till datauppsättningar för att experimentera med innehåll i [det här avsnittet](../campaigns/reporting-configuration.md#add-datasets).
+Lär dig hur du lägger till datauppsättningar för att experimentera med innehåll i [det här avsnittet](../content-management/reporting-configuration.md#add-datasets).
 
 >[!NOTE]
 >

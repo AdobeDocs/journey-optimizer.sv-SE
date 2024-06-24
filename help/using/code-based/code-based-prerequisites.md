@@ -6,7 +6,7 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: ac901f88-5fde-4220-88c6-fe05433866cc
-source-git-commit: 07c453366280b21f5546322430a90752fd996099
+source-git-commit: 59ecb9a5376e697061ddac4cc68f09dee68570c0
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -67,7 +67,7 @@ Om du vill aktivera innehållsexperiment för den kodbaserade kanalen måste du 
 
 Om du lägger till en datauppsättning som inte finns i appens datastam, visas alltså inte appdata i innehållsexperimentrapporter när du konfigurerar experimentrapporter.
 
-Lär dig hur du lägger till datauppsättningar för att experimentera med innehåll i [det här avsnittet](../campaigns/reporting-configuration.md#add-datasets).
+Lär dig hur du lägger till datauppsättningar för att experimentera med innehåll i [det här avsnittet](../content-management/reporting-configuration.md#add-datasets).
 
 >[!NOTE]
 >

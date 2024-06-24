@@ -11,7 +11,7 @@ badge: label="Beta" type="Informative"
 hide: true
 hidefromtoc: true
 exl-id: c47af613-0529-4922-bd0d-5ef4cc619305
-source-git-commit: b62f8954e09f50896ad5e70784c5a93943617e85
+source-git-commit: 59ecb9a5376e697061ddac4cc68f09dee68570c0
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 1%
@@ -52,11 +52,11 @@ När du har skapat och personaliserat dina meddelanden kan du lyfta fram ditt in
 
    ![](assets/experiment-genai-3.png)
 
-1. I fönstret Content Experiment kan du gå till **[!UICONTROL Experiment settings]** för att konfigurera ditt experiment. [Läs mer om Content Experiment](../campaigns/content-experiment.md)
+1. I fönstret Content Experiment kan du gå till **[!UICONTROL Experiment settings]** för att konfigurera ditt experiment. [Läs mer om Content Experiment](../content-management/content-experiment.md)
 
    ![](assets/experiment-genai-4.png)
 
-1. När ditt innehållsexperiment är klart kan du klicka på **[!UICONTROL Review to activate]** för att visa en sammanfattning av kampanjen. Varningar visas om någon parameter är felaktig eller saknas. [Läs mer](../campaigns/content-experiment.md#treatment-experiment)
+1. När ditt innehållsexperiment är klart kan du klicka på **[!UICONTROL Review to activate]** för att visa en sammanfattning av kampanjen. Varningar visas om någon parameter är felaktig eller saknas. [Läs mer](../content-management/content-experiment.md#treatment-experiment)
 
 1. Kontrollera att alla konfigurationer är korrekta innan du startar kampanjen och klicka sedan på **[!UICONTROL Activate]**.
 

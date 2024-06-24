@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 89c03a4be653b39838ef8a7c77deb6a1781004a1
+source-git-commit: 59ecb9a5376e697061ddac4cc68f09dee68570c0
 workflow-type: tm+mt
-source-wordcount: '1846'
+source-wordcount: '1848'
 ht-degree: 28%
 
 ---
@@ -174,13 +174,6 @@ ht-degree: 28%
    + [Skapa en kampanj](using/campaigns/create-campaign.md)
    + [Granska och aktivera en kampanj](using/campaigns/review-activate-campaign.md)
    + [Hantera kampanjer](using/campaigns/modify-stop-campaign.md)
-   + Innehållsexperiment {#content-experiment}
-      + [Kom igång med innehållsexperiment](using/campaigns/get-started-experiment.md)
-      + [Skapa ett innehållsexperiment](using/campaigns/content-experiment.md)
-      + [Konfigurera experimentrapporter](using/campaigns/reporting-configuration.md)
-      + Tekniska anmärkningar {#technotes}
-         + [Förstå statistiska beräkningar](using/campaigns/experiment-calculations.md)
-         + [Förstå statistiska beräkningar i experimentrapporten](using/campaigns/experiment-report-calculations.md)
    + [Utlösa kampanjer med API:er](using/campaigns/api-triggered-campaigns.md)
 + E-postkanal {#email}
    + [Kom igång med e-post](using/email/get-started-email.md)
@@ -283,6 +276,13 @@ ht-degree: 28%
       + [Kom igång med flerspråkigt innehåll](using/content-management/multilingual-gs.md)
       + [Skapa flerspråkigt innehåll med manuell översättning](using/content-management/multilingual-manual.md)
       + [Skapa flerspråkigt innehåll med automatiserad översättning](using/content-management/multilingual-automated.md)
+   + Experimentera med material {#content-experiment}
+      + [Kom igång med innehållsexperiment](using/content-management/get-started-experiment.md)
+      + [Skapa ett innehållsexperiment](using/content-management/content-experiment.md)
+      + [Konfigurera experimentrapporter](using/content-management/reporting-configuration.md)
+      + Tekniska anmärkningar {#technotes}
+         + [Förstå statistiska beräkningar](using/content-management/experiment-calculations.md)
+         + [Förstå statistiska beräkningar i experimentrapporten](using/content-management/experiment-report-calculations.md)
    + Resurser/bilder {#assets-images}
       + [Arbeta med Experience Manager Assets](using/content-management/assets.md)
       + [Arbeta med Adobe Stock](using/content-management/stock.md)
