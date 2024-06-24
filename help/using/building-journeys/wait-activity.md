@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: vänta, aktivitet, resa, nästa, arbetsyta
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
-source-git-commit: fec6b15db9f8e6b2a07b55bc9e8fc4d9cb0d73d7
+source-git-commit: cb6a3b279158eb065c3dca5436bd992efb79fcff
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 6%
+source-wordcount: '503'
+ht-degree: 7%
 
 ---
 
@@ -39,9 +39,9 @@ Du kan ange två typer av **Vänta** aktivitet:
 
 ### Flera väntande aktiviteter {#multiple-wait-activities}
 
-Vid användning av flera **Vänta** ska du vara medveten om att [global timeout](journey-properties.md#global_timeout) för resor är 91 dagar, vilket innebär att profiler alltid utesluts från resan högst 91 dagar efter att de passerat in i den. Läs mer på [den här sidan](journey-properties.md#global_timeout).
+Vid användning av flera **Vänta** ska du vara medveten om att [global timeout](journey-properties.md#global_timeout) för resor är 90 dagar, vilket innebär att profiler alltid utesluts från resan högst 90 dagar efter att de passerat in i den. Läs mer på [den här sidan](journey-properties.md#global_timeout).
 
-En individ kan ange en **Vänta** endast om de har tillräckligt med tid kvar på resan för att slutföra väntetiden före timeout för 91-dagarsresan. Om du till exempel lägger till två **Vänta** aktiviteterna inställda på 20 dagar vardera upptäcker systemet att den andra **Vänta** aktiviteten upphör efter 91 dagars timeout. Den andra **Vänta** aktiviteten kommer därför att ignoreras och personen kommer att avsluta resan innan den påbörjas. I det exemplet stannar kunden totalt 20 dagar under resan.
+En individ kan ange en **Vänta** endast om de har tillräckligt med tid kvar på resan för att slutföra väntetiden före timeout för 90-dagarsresan.
 
 ### Vänta och återinträde {#wait-re-entrance}
 

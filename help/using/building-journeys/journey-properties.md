@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
-source-git-commit: 619bcbc16b4117c29c482c85323603a4281298e0
+source-git-commit: cb6a3b279158eb065c3dca5436bd992efb79fcff
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1716'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Som standard tillåter nya resor återinträde. Du kan avmarkera **Tillåt åter
 >abstract=" Ange en väntetid innan du tillåter att en profil går in på resan igen på en resa. Detta förhindrar att användarna återkommer till resan under en viss tid. Maximal varaktighet: 29 dagar."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
 
-När **Tillåt återinträde** är aktiverat, **Vänteperiod för återinträde** -fältet visas. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 29 dagar.
+När **Tillåt återinträde** är aktiverat, **Vänteperiod för återinträde** -fältet visas. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 90 dagar.
 
 
 ## Hantera åtkomst {#manage-access}
@@ -107,7 +107,7 @@ Mer information om hantering av tidszoner finns i [den här sidan](../building-j
 
 Du kan definiera en **Startdatum**. Om du inte har angett någon sådan kommer den att definieras automatiskt vid publiceringstidpunkten.
 
-Du kan också lägga till en **Slutdatum**. Detta gör att profiler kan avslutas automatiskt när datumet nås. Om inget slutdatum anges kan profilerna behållas tills [tidsgräns för global resa](#global_timeout) (som i allmänhet är 91 dagar och reducerat till 7 dagar med tilläggserbjudande till hälso- och sjukvårdsskölden). Det enda undantaget är återkommande läsningar på målgruppsresor med **Tvinga återinträde vid upprepning** som slutar vid startdatumet för nästa förekomst.
+Du kan också lägga till en **Slutdatum**. Detta gör att profiler kan avslutas automatiskt när datumet nås. Om inget slutdatum anges kan profilerna behållas tills [tidsgräns för global resa](#global_timeout) (vilket normalt är 91 dagar). Det enda undantaget är återkommande läsningar på målgruppsresor med **Tvinga återinträde vid upprepning** som slutar vid startdatumet för nästa förekomst.
 
 ## Timeout {#timeout}
 
@@ -131,11 +131,7 @@ Journeys använder också en global tidsgräns enligt informationen nedan.
 
 Förutom [timeout](#timeout_and_error) som används i reseaktiviteter används en timeout för den globala resan. Den visas inte i gränssnittet och kan inte ändras.
 
-Den här globala tidsgränsen stoppar de enskilda personernas framsteg under resan **91 dagar** efter att de gått in. Den här tidsgränsen reduceras till **7 dagar** med tilläggserbjudande för hälso- och sjukvårdssköld. Det innebär att en persons resa inte kan vara längre än 91 dagar (eller 7 dagar). Efter denna timeout-period tas personens data bort. Individer som fortfarande flyter i resan i slutet av timeoutperioden kommer att stoppas och de kommer inte att beaktas vid rapporteringen. Du kan därför se fler människor komma in på resan än att gå ut.
-
->[!NOTE]
->
->Resor reagerar inte direkt på förfrågningar om avanmälan, åtkomst eller radering av sekretess. Den globala tidsgränsen säkerställer dock att individer aldrig stannar mer än 91 dagar på någon resa.
+Den här globala tidsgränsen stoppar de enskilda personernas framsteg under resan **91 dagar** efter att de gått in. Det innebär att en persons resa inte kan vara längre än 91 dagar. Efter denna timeout-period tas personens data bort. Individer som fortfarande flyter i resan i slutet av timeoutperioden kommer att stoppas och de kommer inte att beaktas vid rapporteringen. Du kan därför se fler människor komma in på resan än att gå ut.
 
 På grund av den 91-dagars tidsgränsen för resan kan vi inte säkerställa att återinträdesspärren fungerar mer än 91 dagar när resan inte tillåts. Eftersom vi tar bort all information om personer som tagit sig in på resan 91 dagar efter ankomsten, kan vi inte veta vem som tagit sig in tidigare, mer än 91 dagar sedan.
 
