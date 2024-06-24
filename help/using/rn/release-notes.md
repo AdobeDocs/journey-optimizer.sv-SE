@@ -6,7 +6,7 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 6c4e0418776622467e7f5b7bb3d9332d965becf1
+source-git-commit: 25cedf0f900d6625e766f90d95393d704b5e156d
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 5%
@@ -84,6 +84,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <tr>
 <td>
 <p>Journey Optimizer rapportering har en förbättrad interoperabilitet med Customer Journey Analytics, standardiserad rapportering på båda plattformarna och förbättrad datakonsekvens och tillförlitlighet. Denna smidiga integrering mellan Journey Optimizer och Customer Journey Analytics ger en tydligare bild av prestandamätningarna, så att användarna kan fatta mer välgrundade beslut.</p>
+<img src="assets/do-not-localize/ajo-cja.gif"/>
 <p>Mer information finns i den <a href="../reports/report-gs-cja.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
