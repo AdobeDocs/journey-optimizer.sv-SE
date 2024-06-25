@@ -8,9 +8,9 @@ role: Developer, Data Engineer
 level: Experienced
 keywords: resa, datakällor, begränsning, genomströmning, anpassade åtgärder
 exl-id: 45d6bb82-88ea-4510-a023-a75a82cc6f7b
-source-git-commit: bf937d9c7198c3a9d31fe93d0cfec6f41df70e28
+source-git-commit: 0738443c024499079d8527fe2cc1c80f42f4f476
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ Detta kan göras med:
 * **Datakällor**: för att samla in information från externa system och använda den i kundresans sammanhang, t.ex. för att få väderinformation om profilstaden och få ett dedikerat reseflöde baserat på detta.
 
 * **Anpassade åtgärder**: för att skicka information till externa system, t.ex. för att skicka e-post via en extern lösning med Journey Optimizer orkestreringsfunktioner tillsammans med profilinformation, målgruppsdata och resekontext.
+
+>[!NOTE]
+>
+>Eftersom svaren nu stöds bör du använda anpassade åtgärder i stället för datakällor för externa datakällor som användningsfall. Mer information om svar finns i [section](../action/action-response.md)
 
 Om du arbetar med externa datakällor eller anpassade åtgärder kanske du vill skydda dina externa system genom att begränsa resans genomströmning: upp till 5 000 instanser/sekund för enastående resor och upp till 2 000 instanser/sekund för målgruppsinlösta.
 
