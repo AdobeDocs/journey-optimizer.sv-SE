@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
+source-git-commit: 3f7d71eecf282b21eb09423378008c3b9ccd7edc
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '971'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampa
 
    >[!NOTE]
    >
-   >Funktionen för upplevelsebeslut är för närvarande endast tillgänglig som betaversion för utvalda användare.
+   >Experience Decision är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
 
 1. Klicka **[!UICONTROL Save and close]** för att bekräfta dina ändringar.
