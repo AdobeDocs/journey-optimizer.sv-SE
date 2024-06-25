@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 4de37520b3ea7842d7f385f38c07cdf4984a5939
+source-git-commit: 975bb9d37a69fe8df02bc39ce2ccdf2da9953ebb
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 0%
@@ -102,7 +102,7 @@ Listan Avbeställ sidhuvud har två funktioner (mailto och One-click unsubscribe
 
   I Journey Optimizer är e-postadressen för avbeställning standard **Mailto (avsluta prenumeration)** som visas i kanalytan, baserat på din [vald underdomän](#subdomains-and-ip-pools).
 
-  ![](assets/surface-list-unsubscribe-mailto.png){width="50%" align="left"}
+  ![](assets/surface-list-unsubscribe-mailto.png){width="80%" align="left"}
 
 
 * The **Avbeställ en URL med ett klick**, som är standard är den enklicksversion av vårt URL-genererade sidhuvud för att avbryta prenumerationen, baserat på den underdomän som du anger och konfigurerar i inställningarna för Kanalyta.
