@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 024e43468cade1f2ac4ca6f8e21bcbc71f6c771b
+source-git-commit: 3d3714675833f685c0775be68a403f4e9de3ce27
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1031'
 ht-degree: 5%
 
 ---
@@ -51,7 +51,6 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </tbody>
 </table-->
 
-#### Anpassning av innehållsfragment
 
 <table>
 <thead>
@@ -71,7 +70,6 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </table>
 
 
-#### Rapportering med Customer Journey Analytics
 
 <table>
 <thead>
@@ -90,7 +88,6 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </tbody>
 </table>
 
-#### AI-assistenten
 
 <table>
 <thead>
@@ -108,7 +105,6 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </tbody>
 </table>
 
-#### Flerspråkiga meddelanden under resor och kampanjer
 
 <table>
 <thead>
@@ -126,7 +122,6 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </tbody>
 </table>
 
-#### Experimentera på resor
 
 <table>
 <thead>
