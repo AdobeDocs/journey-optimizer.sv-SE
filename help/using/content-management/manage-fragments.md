@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 1fc708e1-a993-4a2a-809c-c5dc08a4bae1
-source-git-commit: d9942f578db6ef42a801c0e62a4c3e6a4a72ce71
+source-git-commit: 8ca75a149db65ee65bf28fe6c0688ee18488fcec
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '1015'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,7 @@ Från **[!UICONTROL More actions]** intill varje fragment kan du:
 >id="ajo_fragment_statuses"
 >title="Nya fragmentstatusar"
 >abstract="Sedan **Utkast** och **Live** statusvärden har introducerats i Journey Optimizer Juniversion, där alla fragment som skapats före den här versionen har statusen &quot;Utkast&quot;, även om de används under en resa eller kampanj. Om du ändrar något i dessa fragment måste du publicera dem för att göra dem&quot;Live&quot; och sprida ändringarna till tillhörande kampanjer och resor. Ni måste också skapa en ny resa/kampanjversion och publicera den. Publicering kräver användarbehörighet."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manager" text="Läs mer om behörigheter för innehållsfragment"
 
 >[!AVAILABILITY]
 >
