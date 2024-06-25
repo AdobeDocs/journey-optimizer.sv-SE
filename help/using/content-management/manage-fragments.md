@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 1fc708e1-a993-4a2a-809c-c5dc08a4bae1
-source-git-commit: 893f7146b358da48153b1e6bc74b8f622028df76
+source-git-commit: d9942f578db6ef42a801c0e62a4c3e6a4a72ce71
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,16 @@ Fragment kan ha flera statusar:
 >Sedan **Utkast** och **Live** statusvärden har introducerats i Journey Optimizer Juniversion, där alla fragment som skapats före den här versionen har statusen &quot;Utkast&quot;, även om de används under en resa eller kampanj. Om du ändrar något i dessa fragment måste du publicera dem för att göra dem&quot;Live&quot; och sprida ändringarna till tillhörande kampanjer och resor. Ni måste också skapa en ny resa/kampanjversion och publicera den. Publicering kräver användarbehörighet.
 
 ## Redigera fragment {#edit-fragments}
+
+>[!CONTEXTUALHELP]
+>id="ajo_fragments_update_campaigns"
+>title="Fragment uppdateras i kampanjer"
+>abstract="Den här kampanjen uppdateras inte om du publicerar ändringar i fragmentet. Den kräver att en ny version publiceras så att fragmentuppdateringsfunktionen kan användas."
+
+>[!CONTEXTUALHELP]
+>id="ajo_fragments_update_journeys"
+>title="Fragmentuppdatering i resor"
+>abstract="Den här resan uppdateras inte om du publicerar ändringar i fragmentet. Den kräver att en ny version publiceras så att fragmentuppdateringsfunktionen kan användas."
 
 Om du vill redigera ett fragment följer du stegen nedan.
 
