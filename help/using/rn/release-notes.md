@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 25cedf0f900d6625e766f90d95393d704b5e156d
+source-git-commit: 024e43468cade1f2ac4ca6f8e21bcbc71f6c771b
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '1050'
 ht-degree: 5%
 
 ---
@@ -28,8 +28,6 @@ ht-degree: 5%
 
 
 ## Versionsinformation juni 2024 {#24-6-2024}
-
-**Tidiga versionsinformation nedan kan ändras utan föregående meddelande till dess att releasedatumet blir tillgängligt**.
 
 **Releasedatum**: 18-19 juni 2024
 
@@ -53,6 +51,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </tbody>
 </table-->
 
+#### Anpassning av innehållsfragment
 
 <table>
 <thead>
@@ -72,7 +71,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </table>
 
 
-
+#### Rapportering med Customer Journey Analytics
 
 <table>
 <thead>
@@ -91,6 +90,8 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </tbody>
 </table>
 
+#### AI-assistenten
+
 <table>
 <thead>
 <tr>
@@ -106,6 +107,8 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </tr>
 </tbody>
 </table>
+
+#### Flerspråkiga meddelanden under resor och kampanjer
 
 <table>
 <thead>
@@ -123,6 +126,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </tbody>
 </table>
 
+#### Experimentera på resor
 
 <table>
 <thead>
@@ -160,13 +164,13 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 
 Den här versionen innehåller de förbättringar som anges nedan.
 
-**Beslutshantering**
+#### Beslutshantering
 
 * **Stöd för flera regler i beslutshantering** - Du kan nu lägga till upp till 10 regler om begränsning av ett visst erbjudande i Beslutshantering. På så sätt kan ni öka kontrollen över hur erbjudandena skickas. [Läs mer](../offers/offer-library/add-constraints.md#capping)
 
 <!--* **Audits** - The **Change log** tab allowing you to see all the changes that have been made to an offer or a decision has been removed. Changes related to offers and decisions can now be seen in the **Audits** menu. -->
 
-**Content Fragments**
+#### Innehållsfragment
 
 >[!AVAILABILITY]
 >
@@ -180,7 +184,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 Läs mer i [innehållsfragment](../content-management/fragments.md) dokumentation.
 
-**Resor**
+#### Resor
 
 * Den globala tidsgränsen för resor har utökats till 91 dagar. [Läs mer](../building-journeys/journey-properties.md#global_timeout)
 
@@ -194,16 +198,17 @@ Läs mer i [innehållsfragment](../content-management/fragments.md) dokumentatio
 
 
 
-**Kampanjer**
+#### Kampanjer
 
 * När du skapar en kampanj i Adobe Journey Optimizer kan du nu välja kampanjtyp (schemalagd eller utlöst) i en ny modal. [Läs mer](../campaigns/create-campaign.md)
 
-**E-postkanal**
+#### E-postkanal
 
 * **List-unsubscribe** - Efter de senaste Gmail- och Yahoo-meddelandena om bulkavsändare stöder Journey Optimizer alternativet&quot;post/1-click&quot; List-Unsubscribe. Se följande sidor: [Hantering av avanmälan via e-post](../email/email-opt-out.md#unsubscribe-header) och [Konfigurera e-postinställningar](../email/email-settings.md#list-unsubscribe).
 
+  **ANMÄRKNING** - För alla nya kanalytor aktiveras som standard alternativet för att avbryta prenumerationen. För befintliga ytor är som standard alternativet för att avbryta prenumeration av URL-adress med ett klick i kanalytans inställningar avmarkerat. Om du använde en avanmälnings-URL med ett klick i e-postmeddelandets brödtext tidigare är den här inställningen fortfarande giltig. Om du markerar alternativet för att avbryta prenumerationen med ett klick i inställningarna för kanalens yta, använder Adobe Journey Optimizer den standardgenererade URL-adressen för att avbryta prenumerationen med ett klick i inställningarna för kanalens yta.
 
-**SMS-kanal**
+#### SMS-kanal
 
 * Nu kan du lägga till unika korta koder för varje sandlåda med en enda API-konfiguration, vilket gör processen effektivare och smidigare. [Läs mer](../sms/sms-configuration.md)
 
@@ -211,13 +216,13 @@ Läs mer i [innehållsfragment](../content-management/fragments.md) dokumentatio
 
 <!--* You can now modify existing SMS configurations.-->
 
-**Kanal i appen**
+#### Kanal i appen
 
 <!--* **Expression fragment** - Expression fragments are now available for the **In-app channel**. [Read more](../personalization/use-expression-fragments.md)-->
 
 * Du kan nu använda Edge Delivery-pluginen för att få den information som behövs för att förstå och felsöka dina inkommande implementeringar. [Läs mer om Edge Delivery View](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery){target="_blank"}.
 
 
-**Direktpostkanal**
+#### Direktpostkanal
 
 * Direktreklamkanalen är nu tillgänglig för alla kunder. [Läs mer](../direct-mail/get-started-direct-mail.md)
