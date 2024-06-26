@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: da3ffe9c-a244-4246-b4b5-a3a1d0508676
-source-git-commit: c843ca5bda10aa5f3ee8a676630d78c5ec092b14
+source-git-commit: ffeaa49cde2871b28c85598469e62f4d9acbf060
 workflow-type: tm+mt
 source-wordcount: '696'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 >id="ajo_create_visual_fragment"
 >title="Markera den visuella typen"
 >abstract="Skapa ett fristående visuellt fragment för att göra innehållet återanvändbart i ett e-postmeddelande inom en resa eller kampanj, eller i en innehållsmall."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/email/design-email/add-content/use-visual-fragments.html" text="Lägg till visuella fragment i e-postmeddelanden"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/email/design-email/add-content/use-visual-fragments" text="Lägg till visuella fragment i e-postmeddelanden"
 
 >[!CONTEXTUALHELP]
 >id="ajo_create_expression_fragment"
@@ -61,7 +61,7 @@ Följ stegen nedan för att skapa ett fragment.
 
 ## Designa fragmentinnehållet {#content}
 
-När du har konfigurerat fragmentets egenskaper öppnas e-postdesignern eller personaliseringsredigeraren, beroende på vilken typ av fragment du skapar.
+När du har konfigurerat fragmentets egenskaper öppnas e-post-Designer eller personaliseringsredigeraren, beroende på vilken typ av fragment du skapar.
 
 * För visuella fragment kan du redigera ditt innehåll efter behov på samma sätt som för alla e-postmeddelanden som finns på en resa eller en kampanj. [Läs mer](../email/get-started-email-design.md)
 
@@ -81,17 +81,17 @@ Klicka på **Spara** -knappen. Fragmentet skapas och läggs till i fragmentlista
 
 >[!NOTE]
 >
->Om du vill publicera ett fragment måste du ha **Publicera fragment** relaterad behörighet. [Läs mer om behörigheter](../administration/ootb-permissions.md)
+>Om du vill publicera ett fragment måste du ha **Publish Fragment** relaterad behörighet. [Läs mer om behörigheter](../administration/ootb-permissions.md)
 
 Om ditt fragment är klart att publiceras kan du förhandsgranska och publicera det så att det blir tillgängligt på dina resor och i kampanjer. Gör så här:
 
 1. Gå tillbaka till skärmen för att skapa fragment när du har utformat dess innehåll, eller öppna den från listan med fragment.
 
-1. En förhandsgranskning av fragmentet finns under **Taggar** -fält, så att återgivningen kan kontrolleras. Om du behöver göra några ändringar klickar du på **Redigera** i skärmens övre del för att öppna e-postdesignern eller redigeraren för anpassning beroende på fragmenttypen.
+1. En förhandsgranskning av fragmentet finns under **Taggar** -fält, så att återgivningen kan kontrolleras. Om du behöver göra några ändringar klickar du på **Redigera** i skärmens övre del för att öppna e-post-Designer eller anpassningsredigeraren beroende på fragmenttyp.
 
    ![](assets/fragment-preview.png)
 
-1. Klicka på **Publicera** i det övre högra hörnet för att publicera fragmentet.
+1. Klicka på **Publish** i det övre högra hörnet för att publicera fragmentet.
 
    Om fragmentet används i en direktresa eller kampanj öppnas ett meddelande som informerar dig. Klicka på **Se mer** länk för att få tillgång till listan över resor och/eller kampanjer där det hänvisas till. [Lär dig hur du utforskar referenser till ett fragment](../content-management/manage-fragments.md#explore-references)
 
@@ -99,7 +99,7 @@ Om ditt fragment är klart att publiceras kan du förhandsgranska och publicera 
 
    ![](assets/fragment-publish.png){width="70%" align="center"}
 
-Fragmentet är nu **Live**, och blir tillgängligt när du skapar innehåll i [!DNL Journey Optimizer] E-postdesigner eller personaliseringsredigerare:
+Fragmentet är nu **Live**, och blir tillgängligt när du skapar innehåll i [!DNL Journey Optimizer] Skicka e-post till Designer eller en personaliseringsredigerare:
 
 * [Lär dig använda visuella fragment](../email/use-visual-fragments.md)
 * [Lär dig använda uttrycksfragment](../personalization/use-expression-fragments.md)
