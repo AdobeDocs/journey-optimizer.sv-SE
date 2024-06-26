@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: vänta, aktivitet, resa, nästa, arbetsyta
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
-source-git-commit: e5b32629dac368855df09313edaad55e3bc143dc
+source-git-commit: cae6d394ad1c2356e55bd5f1cb4ad7494c9623dd
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 7%
@@ -23,7 +23,7 @@ ht-degree: 7%
 >title="Vänta på aktivitet"
 >abstract="Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en Wait-aktivitet. Du kan definiera tidpunkten då nästa aktivitet ska köras. Det finns två alternativ: duration och anpassad."
 
-Du kan använda en **[!UICONTROL Wait]** aktivitet som definierar en varaktighet innan nästa aktivitet körs.  Maximal väntetid är **29 dagar**.
+Du kan använda en **[!UICONTROL Wait]** aktivitet som definierar en varaktighet innan nästa aktivitet körs.  Maximal väntetid är **90 dagar**.
 
 Du kan ange två typer av **Vänta** aktivitet:
 
@@ -55,7 +55,7 @@ I testläge **[!UICONTROL Wait time in test]** kan du definiera tiden för varje
 
 ### Väntetid {#duration}
 
-Välj **Varaktighet** typ för att ange den relativa väntetiden innan nästa aktivitet körs. Den maximala längden är **29 dagar**.
+Välj **Varaktighet** typ för att ange den relativa väntetiden innan nästa aktivitet körs. Den maximala längden är **90 dagar**.
 
 ![Definiera väntetiden](assets/journey55.png)
 
