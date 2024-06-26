@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
-source-git-commit: cb6a3b279158eb065c3dca5436bd992efb79fcff
+source-git-commit: a43179e67a7d5387e67bd3f6bb3ac3f24dd6325a
 workflow-type: tm+mt
 source-wordcount: '1716'
 ht-degree: 0%
@@ -157,7 +157,7 @@ Från och med Adobe Journey Optimizer-versionen från juni 2024 har den globala 
       <p>Vad händer med en profil som går in på en resa som publicerades innan TTL-tillägget startades?</p>
     </td>
     <td>
-      <p>Profilen kommer att ha en TTL på 91 dagar (7 dagar för HIPAA), vilket motsvarar den tid då resan ursprungligen publicerades.</p>
+      <p>Profilen kommer att ha en TTL på 30 dagar (7 dagar för HIPAA), vilket motsvarar den tid då resan ursprungligen publicerades.</p>
     </td>
   </tr>
   <tr style="border: 1;">
@@ -165,7 +165,7 @@ Från och med Adobe Journey Optimizer-versionen från juni 2024 har den globala 
       <p>Vad händer med en profil som redan har registrerat en resa när TTL-tillägget startas?</p>
     </td>
     <td>
-      <p>Profilen behåller en TTL på 91 dagar (7 dagar för HIPAA) enligt den ursprungliga publiceringstiden för resan.</p>
+      <p>Profilen behåller en TTL på 30 dagar (7 dagar för HIPAA) enligt den ursprungliga publiceringstiden för resan.</p>
     </td>
   </tr>
   <tr style="border: 1;">
@@ -173,7 +173,7 @@ Från och med Adobe Journey Optimizer-versionen från juni 2024 har den globala 
       <p>Vad händer med en profil i en tidigare version som publiceras om efter att TTL-tillägget startats?</p>
     </td>
     <td>
-      <p>Profilen behåller en TTL på 91 dagar (7 dagar för HIPAA), i linje med den ursprungliga reseversionens publiceringstid.</p>
+      <p>Profilen behåller en TTL på 30 dagar (7 dagar för HIPAA), i linje med den ursprungliga reseversionens publiceringstid.</p>
     </td>
   </tr>
   <tr style="border: 1;">
@@ -218,7 +218,7 @@ Från och med Adobe Journey Optimizer-versionen från juni 2024 har den globala 
       <p>Vad händer med en profil som går in på en resa som publicerades innan TTL-tillägget startades?</p>
     </td>
     <td>
-      <p>Profilen kommer att ha en TTL på 91 dagar (7 dagar för HIPAA), vilket överensstämmer med den ursprungliga publiceringstiden. För återkommande resor med tvingad återinträde kommer TTL-värdet att matcha upprepningsperioden.</p>
+      <p>Profilen kommer att ha en TTL på 30 dagar (7 dagar för HIPAA), vilket överensstämmer med den ursprungliga publiceringstiden. För återkommande resor med tvingad återinträde kommer TTL-värdet att matcha upprepningsperioden.</p>
     </td>
   </tr>
   <tr style="border: 1;">
@@ -226,7 +226,7 @@ Från och med Adobe Journey Optimizer-versionen från juni 2024 har den globala 
       <p>Vad händer med en profil som körs genom en resa när TTL-tillägget startas?</p>
     </td>
     <td>
-      <p>Profilen behåller en TTL på 91 dagar (7 dagar för HIPAA) enligt den ursprungliga publiceringstiden för resan. För återkommande resor med tvingad återinträde kommer TTL-värdet att matcha upprepningsperioden.</p>
+      <p>Profilen behåller en TTL på 30 dagar (7 dagar för HIPAA) enligt den ursprungliga publiceringstiden för resan. För återkommande resor med tvingad återinträde kommer TTL-värdet att matcha upprepningsperioden.</p>
     </td>
   </tr>
   <tr style="border: 1;">
@@ -234,7 +234,7 @@ Från och med Adobe Journey Optimizer-versionen från juni 2024 har den globala 
       <p>Vad händer med en profil som körs i en tidigare version som publiceras om efter att tillägget TTL har startats?</p>
     </td>
     <td>
-      <p>Profilen behåller en TTL på 91 dagar (7 dagar för HIPPA), i linje med den ursprungliga reseversionens publiceringstid. För återkommande resor med tvingad återinträde kommer TTL-värdet att matcha upprepningsperioden.</p>
+      <p>Profilen behåller en TTL på 30 dagar (7 dagar för HIPPA), i linje med den ursprungliga reseversionens publiceringstid. För återkommande resor med tvingad återinträde kommer TTL-värdet att matcha upprepningsperioden.</p>
     </td>
   </tr>
   <tr style="border: 1;">
