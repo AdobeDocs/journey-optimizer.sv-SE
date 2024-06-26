@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 59ecb9a5376e697061ddac4cc68f09dee68570c0
+source-git-commit: 59c675dd2ac94b6967cfb3a93f74b2016a090190
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1865'
 ht-degree: 28%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 28%
       + [Designa din resa](using/building-journeys/using-the-journey-designer.md)
       + [Testa din resa](using/building-journeys/testing-the-journey.md)
       + [Simulera din resa](using/building-journeys/journey-simulation.md)
-      + [Publicera din resa](using/building-journeys/publishing-the-journey.md)
+      + [Publish din resa](using/building-journeys/publishing-the-journey.md)
    + Hantera dina resor{#manage-journey}
       + [Avsluta din resa](using/building-journeys/end-journey.md)
       + [Hantering av tidszoner](using/building-journeys/timezone-management.md)
@@ -259,7 +259,7 @@ ht-degree: 28%
       + [Om landningssidans design](using/landing-pages/design-lp.md)
       + [Skapa innehållet på landningssidan](using/landing-pages/lp-content.md)
       + [Skapa mallar](using/landing-pages/lp-templates.md)
-      + [Lägg till anpassat JavaScript](using/landing-pages/lp-custom-js.md)
+      + [Lägg till anpassad JavaScript](using/landing-pages/lp-custom-js.md)
    + [Skapa en prenumerationslista](using/landing-pages/subscription-list.md)
    + [Lär dig mer om användningsexempel](using/landing-pages/lp-use-cases.md)
    + Konfigurera landningssidor {#lp-configuration}
@@ -283,19 +283,19 @@ ht-degree: 28%
       + Tekniska anmärkningar {#technotes}
          + [Förstå statistiska beräkningar](using/content-management/experiment-calculations.md)
          + [Förstå statistiska beräkningar i experimentrapporten](using/content-management/experiment-report-calculations.md)
-   + Resurser/bilder {#assets-images}
+   + Assets/bilder {#assets-images}
       + [Arbeta med Experience Manager Assets](using/content-management/assets.md)
       + [Arbeta med Adobe Stock](using/content-management/stock.md)
    + Personalisering {#personalization}
       + [Kom igång med personalisering](using/personalization/personalize.md)
-      + [Personaliseringskontexter](using/personalization/personalization-contexts.md)
-      + [Anpassningssyntax](using/personalization/personalization-syntax.md)
+      + [Personalization-kontexter](using/personalization/personalization-contexts.md)
+      + [Personalization syntax](using/personalization/personalization-syntax.md)
       + [Använd Adobe Experience Platform-data för personalisering](using/personalization/lookup-aep-data.md)
       + Arbeta med personaliseringsredigeraren {#expression-editor}
          + [Om personaliseringsredigeraren](using/personalization/personalization-build-expressions.md)
          + [Lägg till attribut i favoriter](using/personalization/personalization-favorites.md)
          + [Använd uttrycksfragment](using/personalization/use-expression-fragments.md)
-         + [Validering av personalisering](using/personalization/personalization-validation.md)
+         + [Personalization-validering](using/personalization/personalization-validation.md)
       + Hjälpfunktioner{#functions}
          + [Kom igång med hjälpfunktioner](using/personalization/functions/functions.md)
          + [Sammanställningsfunktioner](using/personalization/functions/aggregation.md)
@@ -308,10 +308,15 @@ ht-degree: 28%
          + [Matematiska funktioner](using/personalization/functions/math.md)
          + [Objektfunktioner](using/personalization/functions/objects.md)
          + [Strängfunktioner](using/personalization/functions/string.md)
-      + Användningsexempel för personalisering{#personalization-use-cases}
+      + Användningsexempel för Personalization{#personalization-use-cases}
          + [Meddelande om orderstatus](using/personalization/personalization-use-case.md)
          + [E-post om att kunden överger en kundvagn](using/personalization/personalization-use-case-helper-functions.md)
-   + [Innehållsmallar](using/content-management/content-templates.md)
+   + Innehållsmallar {#content-templates}
+      + [Kom igång med innehållsmallar](using/content-management/content-templates.md)
+      + [Få åtkomst till och hantera mallar](using/content-management/access-content-templates.md)
+      + [Skapa innehållsmallar](using/content-management/create-content-templates.md)
+      + [Testa innehållsmallar](using/content-management/test-content-templates.md)
+      + [Använda innehållsmallar](using/content-management/use-content-templates.md)
    + Återanvändbara innehållsfragment {#fragments}
       + [Kom igång med fragment](using/content-management/fragments.md)
       + [Skapa ett fragment](using/content-management/create-fragments.md)
@@ -527,7 +532,7 @@ ht-degree: 28%
          + Leverera erbjudanden med API:er {#offer-delivery-api}
             + [Kom igång med erbjudandeleverans-API:er](using/offers/api-reference/offer-delivery-api/start-offer-delivery-apis.md)
             + [Besluts-API](using/offers/api-reference/offer-delivery-api/decisioning-api.md)
-            + [API för Edge Decisioning](using/offers/api-reference/offer-delivery-api/edge-decisioning-api.md)
+            + [Edge Decisioning API](using/offers/api-reference/offer-delivery-api/edge-decisioning-api.md)
             + [API för gruppbeslut](using/offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
    + Experience Decision (LA) {#experience-decisioning}
       + [Kom igång med Experience Decision](using/experience-decisioning/gs-experience-decisioning.md)
