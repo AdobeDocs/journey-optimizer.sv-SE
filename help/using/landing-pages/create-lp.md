@@ -12,7 +12,7 @@ exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
 source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
 source-wordcount: '1664'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -61,7 +61,7 @@ Klicka på de tre punkterna bredvid en landningssida för att välja önskad åt
 >title="Definiera och konfigurera landningssidan"
 >abstract="Om du vill skapa en landningssida måste du välja en förinställning, konfigurera den primära sidan och underordnade sidor och slutligen testa sidan innan du publicerar den."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/lp-configuration/lp-presets.html#lp-create-preset" text="Skapa förinställningar för landningssidor"
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/create-lp.html#publish-landing-page" text="Publicera landningssidan"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/create-lp.html#publish-landing-page" text="Publish landningssida"
 
 >[!CONTEXTUALHELP]
 >id="ajo_lp_access_management_labels"
@@ -89,7 +89,7 @@ De viktigaste stegen för att skapa landningssidor är följande:
 
    ![](assets/lp_create-lp-presets.png)
 
-1. Klicka **[!UICONTROL Create]**.
+1. Klicka på **[!UICONTROL Create]**.
 
 1. Den primära sidan och dess egenskaper visas. Lär dig hur du konfigurerar inställningarna för den primära sidan [här](#configure-primary-page).
 
@@ -288,7 +288,7 @@ Två typer av varningar kan inträffa:
 > To be able to publish your message, you must resolve all **error** alerts.
 -->
 
-## Publicera landningssidan {#publish-landing-page}
+## Publish landningssida {#publish-landing-page}
 
 >[!CAUTION]
 >

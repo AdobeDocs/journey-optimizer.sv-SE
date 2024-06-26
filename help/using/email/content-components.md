@@ -11,12 +11,12 @@ keywords: komponenter, e-postdesigner, redigerare, e-post
 exl-id: a4aaa814-3fd4-439e-8f34-faf97208378a
 source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
 workflow-type: tm+mt
-source-wordcount: '1270'
+source-wordcount: '1265'
 ht-degree: 0%
 
 ---
 
-# Använda e-postdesignerns innehållskomponenter {#content-components}
+# Använda e-posta Designer-innehållskomponenter {#content-components}
 
 >[!CONTEXTUALHELP]
 >id="ac_content_components_email"
@@ -46,9 +46,9 @@ Du kan lägga till så många innehållskomponenter du behöver i en eller flera
 
 Följ stegen nedan för att lägga till innehållskomponenter i e-postmeddelanden och anpassa dem efter dina behov.
 
-1. Använd ett befintligt innehåll i e-postdesignern eller dra och släpp **[!UICONTROL Structure components]** till ditt tomma innehåll för att definiera layouten för ditt e-postmeddelande. [Lär dig mer](content-from-scratch.md)
+1. Använd ett befintligt innehåll eller dra och släpp i Designer för e-post **[!UICONTROL Structure components]** till ditt tomma innehåll för att definiera layouten för ditt e-postmeddelande. [Lär dig mer](content-from-scratch.md)
 
-1. Så här öppnar du **[!UICONTROL Content components]** markerar du motsvarande knapp i den vänstra rutan i E-postdesignern.
+1. Så här öppnar du **[!UICONTROL Content components]** markerar du motsvarande knapp i den vänstra rutan för e-post-Designer.
 
    ![](assets/email_designer_content_components.png)
 
@@ -82,7 +82,7 @@ Använd **[!UICONTROL Button]** om du vill infoga en eller flera knappar i e-pos
 
 1. Från **[!UICONTROL Content components]**, dra och släpp **[!UICONTROL Button]** till en **[!UICONTROL Structure component]**.
 
-1. Klicka på den nya knappen för att anpassa texten och få tillgång till **[!UICONTROL Settings]** och **[!UICONTROL Styles]** -flikar i det högra fönstret i E-postdesignern.
+1. Klicka på den nya knappen för att anpassa texten och få tillgång till **[!UICONTROL Settings]** och **[!UICONTROL Styles]** -flikar i det högra fönstret i e-postfönstret för Designer.
 
    ![](assets/email_designer_button_component.png)
 
@@ -108,7 +108,7 @@ Använd **[!UICONTROL Text]** om du vill infoga text i e-postmeddelandet och jus
 
 1. Från **[!UICONTROL Content components]**, dra och släpp **[!UICONTROL Text]** till en **[!UICONTROL Structure component]**.
 
-1. Klicka på den komponent som du har lagt till för att anpassa texten och för att få tillgång till **[!UICONTROL Settings]** och **[!UICONTROL Styles]** i den högra rutan i e-postdesignern.
+1. Klicka på den komponent som du har lagt till för att anpassa texten och för att få tillgång till **[!UICONTROL Settings]** och **[!UICONTROL Styles]** i den högra rutan i e-post-Designer.
 
 1. Ändra texten med följande alternativ i verktygsfältet:
 
@@ -157,7 +157,7 @@ Använd **[!UICONTROL HTML]** om du vill kopiera och klistra in de olika delarna
 
 >[!NOTE]
 >
->Adobe rekommenderar att du skapar ett meddelande från grunden och kopierar innehållet från ditt befintliga e-postmeddelande till komponenter, så att det externa innehållet helt enkelt blir kompatibelt med e-postdesignern.
+>Adobe rekommenderar att du skapar ett meddelande från grunden och kopierar innehållet från ditt befintliga e-postmeddelande till komponenter för att få ett externt innehåll som är kompatibelt med e-postmeddelandet från Designer.
 
 ## Bild {#image}
 
@@ -173,7 +173,7 @@ Använd **[!UICONTROL Image]** om du vill infoga en bildfil från datorn i ditt 
 
    >[!NOTE]
    >
-   > För att länkarna ska förbli aktiva och undvika problem med förfallodatum rekommenderar vi att du använder Adobe Assets i stället för att förlita dig på en käll-URL för dina bilder.
+   > För att länkarna ska förbli aktiva och för att undvika problem med förfallodatum bör du använda Adobe Assets i stället för att förlita dig på en käll-URL för dina bilder.
 
 1. Du kan även söka direkt i Adobe Stock med **[!UICONTROL Find Adobe Stock photos]** alternativ.
 
@@ -206,7 +206,7 @@ Använd **[!UICONTROL Social]** för att infoga länkar till sidor för sociala 
 
    ![](assets/email_designer_21.png)
 
-1. Du kan också ändra ikonerna för vart och ett av dina sociala medier om det behövs från dina resurser.
+1. Du kan också ändra ikonerna för vart och ett av dina sociala medier om det behövs från din Assets.
 
 1. Justera övriga formatattribut, t.ex. format, marginal, kant. från **[!UICONTROL Styles]** -fliken.
 

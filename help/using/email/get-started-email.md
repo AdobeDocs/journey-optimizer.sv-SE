@@ -21,9 +21,9 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="ajo_homepage_card4"
 >title="Designa e-postmeddelanden"
->abstract="Använd **Adobe Journey Optimizer** för att skicka e-postmeddelanden till kunderna. Du kan skapa, anpassa och förhandsgranska meddelanden i e-postdesignern."
+>abstract="Använd **Adobe Journey Optimizer** för att skicka e-postmeddelanden till kunderna. Du kan skapa, anpassa och förhandsgranska meddelanden i e-post-Designer."
 
-Använd [!DNL Journey Optimizer] för att skicka e-postmeddelanden till kunderna. Du kan skapa, anpassa och förhandsgranska meddelanden i e-postdesignern.
+Använd [!DNL Journey Optimizer] för att skicka e-postmeddelanden till kunderna. Du kan skapa, anpassa och förhandsgranska meddelanden i e-post-Designer.
 
 E-postleveranser kan skapas:
 

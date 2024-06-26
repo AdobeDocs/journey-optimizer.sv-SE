@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Skapa ett e-postmeddelande
-description: Lär dig skapa e-postmeddelanden i Journey Optimizer
+description: Lär dig hur du skapar ett e-postmeddelande i Journey Optimizer
 feature: Email
 topic: Content Management
 role: User
@@ -12,7 +12,7 @@ exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
 source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ajo_message_email"
 >title="Skapa e-post"
->abstract="Definiera din ämnesrad för e-post och öppna e-postdesignern för att skapa innehållet i e-postmeddelandet."
+>abstract="Definiera din ämnesrad för e-post och öppna e-post-Designer för att skapa innehållet i e-postmeddelandet."
 
 
 ## Lägg till en e-poståtgärd {#email-action}
@@ -56,7 +56,7 @@ Mer information om hur du konfigurerar en resa finns i [den här sidan](../build
 
    ![](assets/email_campaign.png)
 
-1. Klicka **[!UICONTROL Create]**.
+1. Klicka på **[!UICONTROL Create]**.
 
 1. Slutför stegen för att skapa en e-postkampanj, t.ex. kampanjegenskaperna, [publik](../audience/about-audiences.md)och [schema](../campaigns/create-campaign.md#schedule).
 
@@ -79,7 +79,7 @@ Mer information om hur du konfigurerar en kampanj finns i [den här sidan](../ca
 >[!CONTEXTUALHELP]
 >id="test_id"
 >title="Konfigurera e-postinnehåll"
->abstract="Skapa innehållet i e-postmeddelandet. Definiera ämnet och använd sedan e-postdesignern för att skapa och anpassa e-postmeddelandets brödtext."
+>abstract="Skapa innehållet i e-postmeddelandet. Definiera ämnet och använd sedan e-post-Designer för att skapa och personalisera e-postmeddelandets brödtext."
 
 1. Klicka på **[!UICONTROL Edit content]** för att konfigurera e-postinnehållet. [Läs mer](get-started-email-design.md)
 
@@ -91,7 +91,7 @@ Mer information om hur du konfigurerar en kampanj finns i [den här sidan](../ca
 
 1. Lägg till en ämnesrad för meddelandet. Om du vill konfigurera och anpassa ämnesraden med personaliseringsredigeraren klickar du på **[!UICONTROL Open personalization dialog]** -ikon. [Läs mer](../personalization/personalization-build-expressions.md)
 
-1. Klicka på **[!UICONTROL Edit email body]** för att komma åt e-postdesignern och börja bygga ditt innehåll. [Läs mer](get-started-email-design.md)
+1. Klicka på **[!UICONTROL Edit email body]** för att komma åt e-post-Designer och börja skapa ditt innehåll. [Läs mer](get-started-email-design.md)
 
    ![](assets/email_designer_edit_email_body.png)
 
@@ -101,7 +101,7 @@ Mer information om hur du konfigurerar en kampanj finns i [den här sidan](../ca
 
    >[!NOTE]
    >
-   >Om du redan har skapat eller importerat innehåll via e-postdesignern visas det här innehållet i HTML.
+   >Om du redan har skapat eller importerat innehåll via e-post-Designer visas det här innehållet i HTML.
 
 ## Kontrollera aviseringar {#check-email-alerts}
 

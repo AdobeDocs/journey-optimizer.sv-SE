@@ -11,7 +11,7 @@ keywords: innehåll, redigerare, e-post, börja
 exl-id: 151594f2-85e4-4c79-9c15-334fbd3768c4
 source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ac_edition_columns_email"
 >title="Definiera e-postkolumner"
->abstract="Med e-postdesignern kan du enkelt definiera layouten för e-postmeddelandet genom att välja kolumnstrukturen."
+>abstract="Med e-post-Designer kan du enkelt definiera layouten för e-postmeddelandet genom att välja kolumnstrukturen."
 
 >[!CONTEXTUALHELP]
 >id="ac_edition_columns_landing_page"
@@ -64,7 +64,7 @@ Använd Adobe Journey Optimizer Designer för att enkelt definiera innehållsstr
 
 Följ stegen nedan när du vill börja skapa ditt innehåll:
 
-1. På startsidan för Designer väljer du **[!UICONTROL Design from scratch]** alternativ.
+1. På Designer hemsida väljer du **[!UICONTROL Design from scratch]** alternativ.
 
    ![](assets/email_designer.png)
 

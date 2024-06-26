@@ -71,8 +71,8 @@ Så här skapar du ett dispositionsarbetsflöde:
 
 >[!CONTEXTUALHELP]
 >id="ajo_ao_publish"
->title="Publicera er målgrupp"
->abstract="Publicera materialet för att spara målgrupper i Adobe Experience Platform."
+>title="Publish er målgrupp"
+>abstract="Publish din komposition för att spara de resulterande målgrupperna i Adobe Experience Platform."
 
 Alla skapade kompositioner kan nås via **[!UICONTROL Compositions]** -fliken. Du kan när som helst duplicera eller ta bort en befintlig komposition med hjälp av ellipsknappen i listan.
 

@@ -29,7 +29,7 @@ För större flexibilitet och bättre kontroll över e-postinställningarna [!DN
 
 >[!CONTEXTUALHELP]
 >id="ajo_surface_perso_not_available"
->title="Personalisering är inte tillgängligt"
+>title="Personalization är inte tillgängligt"
 >abstract="Den här ytan skapades utan några personaliseringsattribut. Läs dokumentationen om hur du löser ett problem med personalisering."
 
 >[!CONTEXTUALHELP]
@@ -148,9 +148,9 @@ När du använder en yta med personaliserade inställningar i en kampanj eller e
 
 1. Skapa ett e-postmeddelande [kampanj](../campaigns/create-campaign.md) eller [resa](../building-journeys/journey-gs.md).
 
-1. Välj **[!UICONTROL Edit content]** -knappen.
+1. Markera knappen **[!UICONTROL Edit content]**.
 
-1. Klicka på **[!UICONTROL View surface details]** -knappen.
+1. Klicka på knappen **[!UICONTROL View surface details]**.
 
    ![](assets/campaign-view-surface-details.png)
 
