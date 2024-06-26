@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
-source-git-commit: a43179e67a7d5387e67bd3f6bb3ac3f24dd6325a
+source-git-commit: e5b32629dac368855df09313edaad55e3bc143dc
 workflow-type: tm+mt
 source-wordcount: '1716'
 ht-degree: 0%
@@ -74,7 +74,7 @@ Som standard tillåter nya resor återinträde. Du kan avmarkera **Tillåt åter
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_re-entrance_wait"
 >title="Vänteperiod för återinträde"
->abstract=" Ange en väntetid innan du tillåter att en profil går in på resan igen på en resa. Detta förhindrar att användarna återkommer till resan under en viss tid. Maximal varaktighet: 29 dagar."
+>abstract=" Ange en väntetid innan du tillåter att en profil går in på resan igen på en resa. Detta förhindrar att användarna återkommer till resan under en viss tid. Maximal varaktighet: 90 dagar."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
 
 När **Tillåt återinträde** är aktiverat, **Vänteperiod för återinträde** -fältet visas. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 90 dagar.
