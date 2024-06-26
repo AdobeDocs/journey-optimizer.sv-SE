@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: da9e898b-8e5d-43da-9226-5c9ccb78e174
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+source-git-commit: e213261a1c2cb3421d59ba6c44c832a5f5929cd1
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,6 @@ Om du vill komma åt den här funktionen väljer du **[!UICONTROL Simulation]** 
 >id="ajo_decisioning_simulation_test_profile"
 >title="Lägga till testprofiler"
 >abstract="Du kan lägga till en testprofil genom att välja ett identitetsnamnutrymme och ett motsvarande identitetsvärde. Du måste ha testprofiler tillgängliga för att kunna använda dem för simulering."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/audiences-profiles-identities/profiles/creating-test-profiles.html" text="Skapa testprofiler"
 
 Först måste du välja de testprofiler som du ska använda för simulering.
 
