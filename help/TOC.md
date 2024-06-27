@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 59c675dd2ac94b6967cfb3a93f74b2016a090190
+source-git-commit: b80d794f3782056a10310c65144a8eecbddaaf3e
 workflow-type: tm+mt
 source-wordcount: '1865'
 ht-degree: 28%
@@ -386,7 +386,7 @@ ht-degree: 28%
    + [Larm](using/reports/alerts.md)
    + [Arbeta med Customer Journey Analytics](using/reports/cja-ajo.md)
    + [Uteslutningsorsaker](using/reports/exclusion-list.md)
-+ Nytt rapporteringsgränssnitt (beta){#channel-report}
++ Nytt rapporteringsgränssnitt (LA){#channel-report}
    + [Kom igång med det nya rapporteringsgränssnittet](using/reports/report-gs-cja.md)
    + [Hantera dina rapporter](using/reports/report-cja-manage.md)
    + [Reserapport](using/reports/journey-global-report-cja.md)

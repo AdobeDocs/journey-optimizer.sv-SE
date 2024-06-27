@@ -7,10 +7,11 @@ feature: Journeys, Subscriptions
 topic: Content Management
 role: User
 level: Intermediate
-badge: label="Beta" type="Informative"
-source-git-commit: 854f593710a28bde605aa995d747d4e084a6c4b4
+badge: label="Begränsad tillgänglighet" type="Informative"
+exl-id: d1c4ae5f-2f5c-4e25-a8b4-4c5fe254bfb9
+source-git-commit: b80d794f3782056a10310c65144a8eecbddaaf3e
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -88,4 +89,3 @@ The **[!UICONTROL Channel]** tabellen visar antalet profiler som prenumererar oc
 * **[!UICONTROL Subscription list adds]**: Totalt antal prenumerationer för den berörda perioden.
 
 * **[!UICONTROL Subscription list removes]**: Totalt antal avbeställningar under den aktuella perioden.
-

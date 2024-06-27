@@ -7,10 +7,11 @@ feature: Reporting, Journeys
 topic: Content Management
 role: User
 level: Intermediate
-badge: label="Beta" type="Informative"
-source-git-commit: 854f593710a28bde605aa995d747d4e084a6c4b4
+badge: label="Begränsad tillgänglighet" type="Informative"
+exl-id: d43ae701-6e3b-4dcf-8da1-11c07be10fcf
+source-git-commit: b80d794f3782056a10310c65144a8eecbddaaf3e
 workflow-type: tm+mt
-source-wordcount: '3820'
+source-wordcount: '3821'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,7 @@ The **[!UICONTROL Journey report]** Sidan visas med följande flikar beroende p�
 * [Webb](#web-cja)
 * [Direktmeddelande](#direct-mail-cja)
 
-Mer information om arbetsytan i Customer Journey Analytics och hur du filtrerar och analyserar data finns i [den här sidan](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
+Mer information om Customer Journey Analytics Workspace och hur du filtrerar och analyserar data finns i [den här sidan](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
 
 ## Reseöversikt {#journey-global}
 
