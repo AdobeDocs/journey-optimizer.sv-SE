@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 badge: label="Beta" type="Informative"
 exl-id: bfd88d2a-e7b8-4e3b-85a1-4a14b0ba56dc
-source-git-commit: 6c4e0418776622467e7f5b7bb3d9332d965becf1
+source-git-commit: c2fda001969867aebcc4e5c6854183c30240fddb
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
@@ -48,3 +48,9 @@ Journey Optimizer rapportering har en förbättrad interoperabilitet med Custome
 * Om du vill få åtkomst till kontrollpanelen i Journey Optimizer behöver du bara aktivera **[!UICONTROL Use new Experience]** i rapporten.
 
   ![](assets/cja-option.png)
+
+## Instruktionsvideo{#video}
+
+I videon nedan visas hur du tilldelar **Hantera appkonfiguration** behörighet att komma åt appens ytmeny.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3430413)
