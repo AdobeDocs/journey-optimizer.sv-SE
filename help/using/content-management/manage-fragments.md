@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 1fc708e1-a993-4a2a-809c-c5dc08a4bae1
-source-git-commit: 8ca75a149db65ee65bf28fe6c0688ee18488fcec
+source-git-commit: 09287aaa41664cc497060df9a10a7d46985e4ae4
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1020'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Från **[!UICONTROL More actions]** intill varje fragment kan du:
 >[!CONTEXTUALHELP]
 >id="ajo_fragment_statuses"
 >title="Nya fragmentstatusar"
->abstract="Sedan **Utkast** och **Live** statusvärden har introducerats i Journey Optimizer Juniversion, där alla fragment som skapats före den här versionen har statusen &quot;Utkast&quot;, även om de används under en resa eller kampanj. Om du ändrar något i dessa fragment måste du publicera dem för att göra dem&quot;Live&quot; och sprida ändringarna till tillhörande kampanjer och resor. Ni måste också skapa en ny resa/kampanjversion och publicera den. Publicering kräver användarbehörighet."
+>abstract="Sedan **Utkast** och **Live** statusvärden har introducerats i Journey Optimizer Juniversion, där alla fragment som skapats före den här versionen har statusen &quot;Utkast&quot;, även om de används under en resa eller kampanj. Om du ändrar något i dessa fragment måste du publicera dem för att göra dem&quot;Live&quot; och sprida ändringarna till tillhörande kampanjer och resor. Ni måste också skapa en ny resa/kampanjversion och publicera den. För publicering krävs användarbehörighet för Publish Fragment."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manager" text="Läs mer om behörigheter för innehållsfragment"
 
 >[!AVAILABILITY]
@@ -67,7 +67,7 @@ Fragment kan ha flera statusar:
 
 >[!CAUTION]
 >
->Sedan **Utkast** och **Live** statusvärden har introducerats i Journey Optimizer Juniversion, där alla fragment som skapats före den här versionen har statusen &quot;Utkast&quot;, även om de används under en resa eller kampanj. Om du ändrar något i dessa fragment måste du publicera dem för att göra dem&quot;Live&quot; och sprida ändringarna till tillhörande kampanjer och resor. Ni måste också skapa en ny resa/kampanjversion och publicera den. Publicering kräver användarbehörighet.
+>Sedan **Utkast** och **Live** statusvärden har introducerats i Journey Optimizer Juniversion, där alla fragment som skapats före den här versionen har statusen &quot;Utkast&quot;, även om de används under en resa eller kampanj. Om du ändrar något i dessa fragment måste du publicera dem för att göra dem&quot;Live&quot; och sprida ändringarna till tillhörande kampanjer och resor. Ni måste också skapa en ny resa/kampanjversion och publicera den. Publicering kräver [Publish Fragment](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manager)** användarbehörighet.
 
 ## Redigera fragment {#edit-fragments}
 
@@ -99,7 +99,7 @@ Om du vill redigera ett fragment följer du stegen nedan.
 
    ![](assets/fragment-edit.png)
 
-1. När ändringarna är klara klickar du på **Publicera** för att göra ändringarna dynamiska.
+1. När ändringarna är klara klickar du på **Publish** för att göra ändringarna dynamiska.
 
 När du redigerar ett fragment sprids ändringarna automatiskt till allt innehåll som använder det fragmentet, inklusive direktresor och kampanjer, med undantag för innehåll där du har brutit arv från det ursprungliga fragmentet. Lär dig bryta arv i [Lägg till visuella fragment i e-postmeddelanden](../email/use-visual-fragments.md#break-inheritance) och [Utnyttja uttrycksfragment](../personalization/use-expression-fragments.md#break-inheritance) -avsnitt.
 
