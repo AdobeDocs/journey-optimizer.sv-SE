@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 7131a953-baca-4e7c-a8df-97c0bd6ac567
-source-git-commit: 0ee93c3f3e922d0640b2867dcf5ebb83d67aa826
+source-git-commit: c42fc1069e11b8e34b7477fc26ed8a6b4ef95ac7
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Så här använder du fragment på bästa sätt:
 
 ## Före start {#fragment-prerequisites}
 
-Om du vill skapa, redigera och arkivera fragment måste du ha **[!DNL Manage library items]** behörighet som ingår i **[!DNL Content Library Manager]** produktprofil. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager)
+För att skapa, redigera, arkivera och publicera fragment behöver du **[!DNL Manage library items]** och **[Publish Fragment]** behörigheter i **[!DNL Content Library Manager]** produktprofil. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager)
 
 I den här versionen gäller följande begränsningar:
 
@@ -47,7 +47,7 @@ I den här versionen gäller följande begränsningar:
 
 Det finns två typer av fragment:
 
-* **Visuella fragment** är fördefinierade visuella block som du kan återanvända i flera e-postleveranser med [E-postdesigner](../email/get-started-email-design.md)eller i [mallar](../email/use-email-templates.md).
+* **Visuella fragment** är fördefinierade visuella block som du kan återanvända i flera e-postleveranser med [E-posta Designer](../email/get-started-email-design.md)eller i [mallar](../email/use-email-templates.md).
 * **Uttrycksfragment** är fördefinierade uttryck som är tillgängliga från en dedikerad post i [personaliseringsredigerare](../personalization/personalization-build-expressions.md).
 
 Alla skapade fragment är tillgängliga från **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]**  vänster meny. [Lär dig hantera fragment](../content-management/manage-fragments.md)

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: da3ffe9c-a244-4246-b4b5-a3a1d0508676
-source-git-commit: e6924928e03d494817a2368b33997029ca2eca1c
+source-git-commit: c42fc1069e11b8e34b7477fc26ed8a6b4ef95ac7
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Klicka på **Spara** -knappen. Fragmentet skapas och läggs till i fragmentlista
 
 >[!NOTE]
 >
->Om du vill publicera ett fragment måste du ha **Publish Fragment** relaterad behörighet. [Läs mer om behörigheter](../administration/ootb-permissions.md)
+>Om du vill publicera ett fragment måste du ha [Publish Fragment](../administration/ootb-product-profiles.md#content-library-manager) användarbehörighet.
 
 Om ditt fragment är klart att publiceras kan du förhandsgranska och publicera det så att det blir tillgängligt på dina resor och i kampanjer. Gör så här:
 
