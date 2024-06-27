@@ -1,21 +1,21 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Om den avancerade uttrycksredigeraren
-description: Lär dig skapa avancerade uttryck
+title: Arbeta med den avancerade uttrycksredigeraren
+description: Läs mer om hur du skapar avancerade uttryck
 feature: Journeys
 role: Data Engineer, Architect
 level: Experienced
 keywords: uttrycksredigerare, data, resa
 exl-id: 9ea6cc3a-6a1b-4e8f-82ff-f8b1812617d7
-source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
+source-git-commit: 2de94e8ce3fe77399c8dc1d515ae73d58cb8f43d
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 1%
+source-wordcount: '648'
+ht-degree: 63%
 
 ---
 
-# Om den avancerade uttrycksredigeraren {#about-the-advanced-expression-editor}
+# Arbeta med den avancerade uttrycksredigeraren {#about-the-advanced-expression-editor}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_expression_advanced"
@@ -24,56 +24,55 @@ ht-degree: 1%
 
 Använd den avancerade uttrycksredigeraren Journey för att skapa avancerade uttryck på olika skärmar i gränssnittet. Du kan till exempel skapa uttryck när du konfigurerar och använder resor och när du definierar ett datakällsvillkor.
 
+Den är också tillgänglig varje gång du behöver definiera åtgärdsparametrar som kräver specifika dataändringar. Du kan utnyttja data från händelser eller ytterligare information som hämtats från datakällan. I en resa är den lista med händelsefält som visas sammanhangsberoende och varierar beroende på vilka händelser som läggs till i resan.
+
+![](../assets/journey65.png)
+
+
+Den avancerade uttrycksredigeraren har en uppsättning inbyggda funktioner och operatorer som du använder för att manipulera värden och definiera ett uttryck som passar dina behov. Med den avancerade uttrycksredigeraren kan du även definiera värden för den externa datakällans parameter samt ändra kartläggningsfält och samlingar, till exempel upplevelsehändelser.
+
 >[!NOTE]
 >
 >De funktioner och funktioner som finns i den avancerade uttrycksredigeraren Journey skiljer sig från dem som finns i [personaliseringsredigerare](../../personalization/functions/functions.md).
 
-Det är också tillgängligt varje gång du behöver definiera åtgärdsparametrar som kräver specifika dataändringar. Du kan utnyttja data från händelser eller ytterligare information som hämtats från datakällan. Under en resa är den visade listan med händelsefält sammanhangsberoende och varierar beroende på vilka händelser som läggs till under resan.
+## Åtkomst till den avancerade uttrycksredigeraren {#accessing-the-advanced-expression-editor}
 
-Den avancerade uttrycksredigeraren har en uppsättning inbyggda funktioner och operatorer som du kan använda för att ändra värden och definiera ett uttryck som passar just dina behov. Med den avancerade uttrycksredigeraren kan du också definiera värden för den externa datakällparametern, ändra mappningsfält och samlingar, till exempel upplevelsehändelser.
+Den avancerade uttrycksredigeraren kan användas till att:
 
-![](../assets/journey65.png)
+* skapa [avancerade villkor](../condition-activity.md#about_condition) för datakällor och händelseinformation
+* definiera anpassade [vänteaktiviteter](../wait-activity.md#custom)
+* definiera kartläggning av åtgärdsparametrar
 
-_Det avancerade gränssnittet för uttrycksredigeraren_
-
-Den avancerade uttrycksredigeraren kan användas för att:
-
-* skapa [avancerade villkor](../condition-activity.md#about_condition) om datakällor och händelseinformation
-* definiera egen [vänteaktiviteter](../wait-activity.md#custom)
-* definiera åtgärdsparametermappning
-
-När det är möjligt kan du växla mellan de två lägena med **[!UICONTROL Advanced mode]** / **[!UICONTROL Simple mode]** -knappen. Det enkla läget beskrivs [här](../condition-activity.md#about_condition).
+När det är möjligt kan du växla mellan de två lägena med hjälp av knappen **[!UICONTROL Advanced mode]**/**[!UICONTROL Simple mode]** . Det enkla läget beskrivs [här](../condition-activity.md#about_condition).
 
 >[!NOTE]
 >
->Villkoren kan definieras i den enkla eller avancerade uttrycksredigeraren. De returnerar alltid en boolesk typ.
+>Villkor kan definieras i den enkla eller avancerade uttrycksredigeraren. De returnerar alltid en boolesk typ.
 >
->Åtgärdsparametrar kan definieras genom att välja fält eller via den avancerade uttrycksredigeraren. De returnerar en viss datatyp enligt deras uttryck.
+>Åtgärdsparametrar kan definieras genom fältval eller via den avancerade uttrycksredigeraren. De returnerar en viss datatyp enligt sina uttryck.
 
-## Åtkomst till den avancerade uttrycksredigeraren {#accessing-the-advanced-expression-editor}
+Du kan komma åt den avancerade uttrycksredigeraren på olika sätt.
 
-Du kan komma åt den avancerade uttrycksredigeraren på olika sätt:
-
-* När du skapar ett villkor för en datakälla kan du komma åt den avancerade redigeraren genom att klicka på **[!UICONTROL Advanced mode]**.
+* När du skapar ett villkor för datakällan kan du klicka på **[!UICONTROL Advanced mode]** för att komma åt den avancerade redigeraren.
 
   ![](../assets/journeyuc2_33.png)
 
 * När du skapar en anpassad timer visas den avancerade redigeraren direkt.
-* När du mappar åtgärdsparametern klickar du på **[!UICONTROL Advanced mode]**.
+* Klicka på **[!UICONTROL Advanced mode]** när du kartlägger en åtgärdsparameter.
 
-## Identifiera gränssnittet{#discovering-the-interface}
+## Upptäck gränssnittet {#discovering-the-interface}
 
-På den här skärmen kan du skriva ditt uttryck manuellt.
+Med den här skärmen kan du ange ett uttryck manuellt.
 
 ![](../assets/journey70.png)
 
 Till vänster på skärmen visas tillgängliga fält och funktioner:
 
-* **[!UICONTROL Events]**: välj ett av fälten som tagits emot från den inkommande händelsen. Den visade listan med händelsefält är sammanhangsberoende och varierar beroende på vilka händelser som läggs till under resan. [Läs mer](../../event/about-events.md)
+* **[!UICONTROL Events]**: välj ett av fälten som har tagits emot från den inkommande händelsen. Den visade listan med händelsefält är sammanhangsberoende och varierar beroende på vilka händelser som läggs till under resan. [Läs mer](../../event/about-events.md)
 * **[!UICONTROL Audiences]**: om du har släppt en **[!UICONTROL Audience qualification]** väljer du den målgrupp du vill använda i ditt uttryck. [Läs mer](../condition-activity.md#using-a-segment)
 * **[!UICONTROL Data Sources]**: välj i listan över fält som är tillgängliga från fältgrupperna i datakällorna. [Läs mer](../../datasource/about-data-sources.md)
 * **[!UICONTROL Journey properties]**: I det här avsnittet grupperas de tekniska fält som rör resan för en viss profil om. [Läs mer](journey-properties.md)
-* **[!UICONTROL Functions]**: välj i en lista över inbyggda funktioner som gör att du kan utföra komplex filtrering. Funktionerna är ordnade efter kategorier. [Läs mer](functions.md)
+* **[!UICONTROL Functions]**: välj i listan bland inbyggda funktioner som du använder för att utföra komplex filtrering. Funktionerna är ordnade efter kategorier. [Läs mer](functions.md)
 
 ![](../assets/journey65.png)
 
@@ -81,14 +80,14 @@ En mekanism för automatisk komplettering visar sammanhangsberoende förslag.
 
 ![](../assets/journey68.png)
 
-En syntaxvalideringsmekanism kontrollerar kodens integritet. Fel visas högst upp i redigeraren.
+En mekanism för syntaxvalidering kontrollerar kodens integritet. Fel visas överst på redigeraren.
 
 ![](../assets/journey69.png)
 
 **Behovet av parametrar när du skapar villkor med den avancerade uttrycksredigeraren**
 
-Om du väljer ett fält från en extern datakälla som kräver att en parameter anropas (se [den här sidan](../../datasource/external-data-sources.md)) visas en ny flik till höger där du kan ange den här parametern. Parametervärdet kan komma från händelser som är placerade i resan eller Experience Platform-datakällan (och inte från andra externa datakällor). I en väderrelaterad datakälla kommer till exempel parametern&quot;city&quot; att användas ofta. Därför måste du välja var du vill få den här parametern city. Funktioner kan också användas för parametrar för att utföra formatändringar eller sammanfogningar.
+Om du väljer ett fält från en extern datakälla som kräver att en parameter anropas (se [den här sidan](../../datasource/external-data-sources.md)) visas en ny flik till höger där du kan ange den här parametern. Parametervärdet kan komma från händelser som är placerade i resan eller Experience Platform-datakällan (och inte från andra externa datakällor). I en väderrelaterad datakälla används till exempel parametern &quot;city&quot; ofta. Därför måste du välja var du vill hämta den här parametern &quot;city&quot;. Funktioner kan även tillämpas på parametrar om man vill utföra formateringsändringar eller sammansättningar.
 
 ![](../assets/journeyuc2_19.png)
 
-Om du vill ta med parametrarna för datakällan i huvuduttrycket kan du definiera deras värden med nyckelordet &quot;params&quot; för mer komplicerade användningsområden. Se [den här sidan](../expression/field-references.md).
+För mer komplicerade användningsfall kan du definiera parametrarnas värden med nyckelordet &quot;params&quot; för att inkludera dem från datakällan i huvuduttrycket. Läs [den här sidan](../expression/field-references.md).

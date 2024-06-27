@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: b80d794f3782056a10310c65144a8eecbddaaf3e
+source-git-commit: 2de94e8ce3fe77399c8dc1d515ae73d58cb8f43d
 workflow-type: tm+mt
-source-wordcount: '1865'
-ht-degree: 28%
+source-wordcount: '1873'
+ht-degree: 27%
 
 ---
 
@@ -52,9 +52,9 @@ ht-degree: 28%
       + [Simulera din resa](using/building-journeys/journey-simulation.md)
       + [Publish din resa](using/building-journeys/publishing-the-journey.md)
    + Hantera dina resor{#manage-journey}
-      + [Avsluta din resa](using/building-journeys/end-journey.md)
-      + [Hantering av tidszoner](using/building-journeys/timezone-management.md)
       + [Profilingångshantering](using/building-journeys/entry-management.md)
+      + [Hantering av tidszoner](using/building-journeys/timezone-management.md)
+      + [Avsluta din resa](using/building-journeys/end-journey.md)
       + [Kopiera en resa till en annan sandlåda](using/building-journeys/copy-to-sandbox.md)
       + [Felsök din resa](using/building-journeys/troubleshooting.md)
       + [Integrera med intelligenta tjänster](using/building-journeys/ai-services-overview.md)
@@ -73,9 +73,9 @@ ht-degree: 28%
       + [Hoppa](using/building-journeys/jump.md)
       + [Uppdatera profil](using/building-journeys/update-profiles.md)
    + Bygga uttryck {#building-advanced-conditions-journeys}
-      + [Översikt](using/building-journeys/expression/expressionadvanced.md)
+      + [Arbeta med den avancerade uttrycksredigeraren](using/building-journeys/expression/expressionadvanced.md)
       + Syntax {#syntax}
-         + [Allmänt](using/building-journeys/expression/generalities.md)
+         + [Syntax för avancerad uttrycksredigerare](using/building-journeys/expression/generalities.md)
          + [Villkorlig instruktion](using/building-journeys/expression/conditional-instruction.md)
          + [Datatyper](using/building-journeys/expression/data-types.md)
          + [Fältreferenser](using/building-journeys/expression/field-references.md)
