@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: e-post, mallar, design
 exl-id: 94d5e615-a7d6-468c-bee8-1ae5fcd4a694
-source-git-commit: 08f12adf384b98dfa1d69cbc2d684c3bf58d31fa
+source-git-commit: 5be9ac1f77d7a09089dd8115fd7c9cfa0a3ab0d2
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '235'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,6 @@ ht-degree: 1%
 >id="ajo_use_template"
 >title="Skapa innehåll från en mall"
 >abstract="Om du vill börja skapa ditt e-postinnehåll väljer du antingen en mall som inte är klar eller en egen mall som har skapats från grunden eller sparats som en mall från ett tidigare e-postmeddelande."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-templates#create-content-templates" text="Skapa innehållsmallar"
 
 Från **[!UICONTROL Create your email]** skärm, använd **[!UICONTROL Select design template]** för att börja skapa innehåll från en mall.
 
@@ -40,7 +39,7 @@ Du kan välja mellan:
 
 Följ stegen nedan när du vill börja skapa innehåll med någon av exempelmallarna eller sparade mallar.
 
-1. [Öppna e-postdesignern](get-started-email-design.md) från e-postmeddelandet **[!UICONTROL Edit content]** skärm.
+1. [Öppna Designer för e-post](get-started-email-design.md) från e-postmeddelandet **[!UICONTROL Edit content]** skärm.
 
 1. På **[!UICONTROL Create your email]** skärm, **[!UICONTROL Sample templates]** -fliken är markerad som standard.
 
@@ -60,4 +59,4 @@ Följ stegen nedan när du vill börja skapa innehåll med någon av exempelmall
 
 1. Klicka **[!UICONTROL Use this template]** längst upp till höger på skärmen.
 
-1. Redigera ditt innehåll efter behov med e-postdesignern.
+1. Redigera ditt innehåll med e-post-Designer.
