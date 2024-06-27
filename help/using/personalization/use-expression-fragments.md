@@ -9,9 +9,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, bibliotek, personalisering
 exl-id: 74b1be18-4829-4c67-ae45-cf13278cda65
-source-git-commit: ca743774017e8f6cf5f385119d9c71de6020bb19
+source-git-commit: e6924928e03d494817a2368b33997029ca2eca1c
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
@@ -51,8 +51,6 @@ Följ stegen nedan om du vill lägga till uttrycksfragment i ditt innehåll.
    >[!CAUTION]
    >
    >Du kan lägga till valfritt **Utkast** eller **Live** till ert innehåll. Du kan dock inte aktivera din resa eller kampanj om ett fragment med statusen Utkast används i det. Vid en resa eller kampanjpublicering kommer utkastsfragment att visa ett fel och du måste godkänna dem för att kunna publicera.
-   >
-   > Observera att fragmentstatus gradvis introduceras under flera dagar efter Journey Optimizer juni-utgåvan. Vissa användare har omedelbar åtkomst, men andra kan uppleva en fördröjning innan den blir tillgänglig i deras miljöer. Observera att fragment inte behöver vara **Live** för att användas i era resor och kampanjer.
 
 1. När fragment-ID:t har lagts till, om du öppnar motsvarande uttrycksfragment och [redigera den](../content-management/fragments.md#edit-fragments) från gränssnittet synkroniseras ändringarna. De sprids automatiskt till alla utkast- eller direktresor/kampanjer som innehåller detta fragment-ID.
 

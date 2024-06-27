@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: da3ffe9c-a244-4246-b4b5-a3a1d0508676
-source-git-commit: ffeaa49cde2871b28c85598469e62f4d9acbf060
+source-git-commit: e6924928e03d494817a2368b33997029ca2eca1c
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
@@ -72,10 +72,6 @@ När du har konfigurerat fragmentets egenskaper öppnas e-post-Designer eller pe
   ![](assets/fragment-expression-editor.png)
 
 Klicka på **Spara** -knappen. Fragmentet skapas och läggs till i fragmentlistan med **Utkast** status. Ni kan förhandsgranska den och publicera den för att göra den tillgänglig på resor och i kampanjer.
-
->[!NOTE]
->
->Fragmentpublicering lanseras gradvis under flera dagar efter Journey Optimizer juni-utgåvan. Vissa användare har omedelbar åtkomst, men andra kan uppleva en fördröjning innan den blir tillgänglig i deras miljöer. Om den här förbättringen ännu inte är tillgänglig i din miljö, observera att fragmentpublicering inte krävs för att använda fragment på era resor och i era kampanjer.
 
 ## Förhandsgranska och publicera fragmentet {#publish}
 

@@ -8,22 +8,22 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 70e88ea0-f2b0-4c13-8693-619741762429
-source-git-commit: 893f7146b358da48153b1e6bc74b8f622028df76
+source-git-commit: e6924928e03d494817a2368b33997029ca2eca1c
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
 
 # Spara innehåll som fragment {#save-as-fragment}
 
-När du redigerar innehåll i [!DNL Journey Optimizer]kan du spara hela eller delar av innehållet som fragment för framtida återanvändning. Du kan spara innehåll som fragment antingen [från e-postdesignern](#save-as-visual-fragment), eller [från uttrycksredigeraren](#save-as-expression-fragment).
+När du redigerar innehåll i [!DNL Journey Optimizer]kan du spara hela eller delar av innehållet som fragment för framtida återanvändning. Du kan spara innehåll som fragment antingen [från e-postprogrammet Designer](#save-as-visual-fragment), eller [från uttrycksredigeraren](#save-as-expression-fragment).
 
 ## Spara som visuellt fragment {#save-as-visual-fragment}
 
-Så här sparar du innehåll från e-postdesignern som fragment:
+Så här sparar du innehåll från e-post-Designer som fragment:
 
-1. I [E-postdesigner](../email/get-started-email-design.md)klickar du på ellipsen högst upp till höger på skärmen.
+1. I [E-posta Designer](../email/get-started-email-design.md)klickar du på ellipsen högst upp till höger på skärmen.
 
 1. Välj **[!UICONTROL Save as fragment]** i listrutan.
 
@@ -50,10 +50,6 @@ Så här sparar du innehåll från e-postdesignern som fragment:
    >Ändringar i det nya fragmentet sprids inte till e-postmeddelandet eller mallen som det kommer från. På samma sätt ändras inte det nya fragmentet när det ursprungliga innehållet redigeras i e-postmeddelandet eller mallen.
 
 1. För att kunna använda fragmentet i era resor och kampanjer måste ni göra det levande. [Lär dig förhandsgranska och publicera ett fragment](../content-management/create-fragments.md#publish)
-
->[!NOTE]
->
->Fragmentpublicering lanseras gradvis under flera dagar efter Journey Optimizer juni-utgåvan. Vissa användare har omedelbar åtkomst, men andra kan uppleva en fördröjning innan den blir tillgänglig i deras miljöer. Om den här förbättringen ännu inte är tillgänglig i din miljö, observera att fragmentpublicering inte krävs för att använda fragment på era resor och i era kampanjer.
 
 ## Spara som uttrycksfragment {#save-as-expression-fragment}
 
@@ -83,7 +79,3 @@ Följ stegen nedan om du vill spara innehåll som ett uttrycksfragment.
 1. Fragmentet läggs till i [fragmentlista](#access-manage-fragments) med **Utkast** status. Det blir ett fristående fragment som kan användas som andra uttrycksfragment från den listan.
 
 1. För att kunna använda fragmentet i era resor och kampanjer måste ni göra det levande. [Lär dig förhandsgranska och publicera ett fragment](../content-management/create-fragments.md#publish)
-
->[!NOTE]
->
->Fragmentpublicering lanseras gradvis under flera dagar efter Journey Optimizer juni-utgåvan. Vissa användare har omedelbar åtkomst, men andra kan uppleva en fördröjning innan den blir tillgänglig i deras miljöer. Om den här förbättringen ännu inte är tillgänglig i din miljö, observera att fragmentpublicering inte krävs för att använda fragment på era resor och i era kampanjer.

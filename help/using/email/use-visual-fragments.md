@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 25a00f74-ed08-479c-9a5d-4185b5f3c684
-source-git-commit: ca743774017e8f6cf5f385119d9c71de6020bb19
+source-git-commit: e6924928e03d494817a2368b33997029ca2eca1c
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '665'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Följ stegen nedan om du vill använda ett fragment i ett e-postmeddelande.
 >Du kan lägga till upp till 30 fragment i en viss leverans. Fragment kan bara kapslas upp till 1 nivå.
 
 
-1. Öppna e-post- eller mallinnehåll med [E-postdesigner](get-started-email-design.md).
+1. Öppna e-post- eller mallinnehåll med [E-posta Designer](get-started-email-design.md).
 
 1. Välj **[!UICONTROL Fragments]** ikonen från den vänstra listen.
 
@@ -54,8 +54,6 @@ Följ stegen nedan om du vill använda ett fragment i ett e-postmeddelande.
    >[!CAUTION]
    >
    >Du kan lägga till valfritt **Utkast** eller **Live** till ert innehåll. Du kan dock inte aktivera din resa eller kampanj om ett fragment med statusen Utkast används i det. Vid en resa eller kampanjpublicering kommer utkastsfragment att visa ett fel och du måste godkänna dem för att kunna publicera.
-   >
-   > Observera att fragmentstatus gradvis introduceras under flera dagar efter Journey Optimizer juni-utgåvan. Vissa användare har omedelbar åtkomst, men andra kan uppleva en fördröjning innan den blir tillgänglig i deras miljöer. Observera att fragment inte behöver vara **Live** för att användas i era resor och kampanjer.
 
 1. Precis som andra komponenter kan du flytta runt fragmentet i innehållet.
 
