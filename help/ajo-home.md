@@ -5,28 +5,28 @@ description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: 6c4e0418776622467e7f5b7bb3d9332d965becf1
+source-git-commit: 695296b6aa6f2da0390648be13efb8a83fe287ec
 workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
 # Adobe [!DNL Journey Optimizer] Dokumentation {#cjm-documentation}
 
-## Nyheter?
+## Nyheter
 
 Få en glimt av de senaste förbättringarna i Journey Optimizer-produkter och -dokumentation! En omfattande lista över funktioner, förbättringar och korrigeringar finns i [versionsinformationen](using/rn/release-notes.md). Håll dig uppdaterad om de senaste ändringarna i vår dokumentation genom att besöka [dokumentuppdateringssidan](using/rn/documentation-updates.md).
 
 >[!BEGINTABS]
 
->[!TAB Juniversionen är live!]
+>[!TAB Juni-versionen är här!]
 
 Upptäck nya funktioner och förbättringar som kommer i Adobe Journey Optimizer majversion.
 
 [![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
->[!TAB Rapportering med Customer Journey Analytics (beta)]
+>[!TAB Rapportering med Customer Journey Analytics (Beta)]
 
 Journey Optimizer rapportering har en förbättrad interoperabilitet med Customer Journey Analytics, standardiserad rapportering på båda plattformarna och förbättrad datakonsekvens och tillförlitlighet.
 
@@ -96,7 +96,7 @@ Fragment kan nu redigeras och ändringar kan spridas över alla liveresor och -k
   <tr style="border: 0;">
     <td>
       <img src="using/assets/do-not-localize/icon-content.svg" width="35px"><br/>
-      <strong>Innehållshantering</strong><br/><a href="using/content-management/assets.md">Resurser/bilder</a> - <a href="using/personalization/personalize.md">Personalisering</a> - <a href="using/content-management/content-templates.md">Återanvändbar</a> &amp; <a href="using/personalization/dynamic-content.md">dynamisk</a> innehåll - <a href="using/content-management/preview-test.md">Testa och förhandsgranska innehåll</a>
+      <strong>Innehållshantering</strong><br/><a href="using/content-management/assets.md">Assets/bilder</a> - <a href="using/personalization/personalize.md">Personalization</a> - <a href="using/content-management/content-templates.md">Återanvändbar</a> &amp; <a href="using/personalization/dynamic-content.md">dynamisk</a> innehåll - <a href="using/content-management/preview-test.md">Testa och förhandsgranska innehåll</a>
     </td>
     <td>
       <img src="using/assets/do-not-localize/icon_profile-audience.svg" width="35px"><br/>
