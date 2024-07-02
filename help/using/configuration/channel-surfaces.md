@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 272c8c01982ef256afc5da07e716bcd5e32ee238
+source-git-commit: 9af49f0a47ad5bc1d2cea3e822ec20e2930140d3
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 >abstract="TBC"
 
 >[!CONTEXTUALHELP]
->id="ajo_admin_app_idd"
+>id="ajo_admin_app_id"
 >title="Program-ID"
 >abstract="TBC"
 
