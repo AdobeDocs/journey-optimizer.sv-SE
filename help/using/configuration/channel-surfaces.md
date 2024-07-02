@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: 272c8c01982ef256afc5da07e716bcd5e32ee238
 workflow-type: tm+mt
-source-wordcount: '1674'
+source-wordcount: '1694'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,36 @@ ht-degree: 0%
 >id="ajo_admin_channel_surfaces"
 >title="Kanalyta"
 >abstract="En kanalyta är en konfiguration som har definierats av en systemadministratör. Den innehåller alla tekniska parametrar för att skicka meddelandet, som rubrikparametrar, underdomän, mobilappar osv."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_marketing_action"
+>title="Marknadsföringsåtgärd"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_app_idd"
+>title="Program-ID"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_location"
+>title="Plats på sida"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_page_rule"
+>title="Matchningsregel för sidor"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_default_url"
+>title="Standard-URL"
+>abstract="TBC"
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_surface_uri"
+>title="Surface URI"
+>abstract="TBC"
 
 Med [!DNL Journey Optimizer]kan du konfigurera kanalytor (t.ex. meddelandeförinställningar) som definierar alla tekniska parametrar som krävs för dina meddelanden: e-posttyp, avsändarens e-postadress och namn, mobilappar, SMS-konfiguration med mera.
 
