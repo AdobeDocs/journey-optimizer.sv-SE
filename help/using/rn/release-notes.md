@@ -6,10 +6,10 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: b80d794f3782056a10310c65144a8eecbddaaf3e
+source-git-commit: 0454008d81a5aebccbbf75b0ef723fa869589597
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 5%
+source-wordcount: '1062'
+ht-degree: 4%
 
 ---
 
@@ -175,7 +175,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 * Nya statusar för innehållsfragment har införts: **Utkast**, **Live**, **Publicering** och **Arkiverad**.
 * Om du vill använda ett fragment i en resa eller kampanj måste det nu finnas i **Live** status. Ett nytt steg har lagts till i processen för att skapa fragment, vilket gör att fragmentet kan publiceras och göras tillgängligt för användning under resor och kampanjer. Observera att fragmentpublicering kräver en ny behörighet.
 
-  **FÖRSIKTIGHET** - sedan **Utkast** och **Live** statusar har introducerats i Journey Optimizer Juniversion, där alla fragment som skapats före den här versionen har **Utkast** status, även om de används i en resa eller kampanj. Lär dig hur du uppdaterar befintliga fragment i det här avsnittet.
+  **FÖRSIKTIGHET** - sedan **Utkast** och **Live** statusar har introducerats i Journey Optimizer Juniversion, där alla fragment som skapats före den här versionen har **Utkast** status, även om de används i en resa eller kampanj. Om du ändrar något i dessa fragment måste du [publicera dem](../content-management/create-fragments.md#publish) för att göra dem&quot;Live&quot; och sprida ändringarna till tillhörande kampanjer och resor. Ni måste också skapa en ny resa/kampanjversion och publicera den.
 
 Läs mer i [innehållsfragment](../content-management/fragments.md) dokumentation.
 
