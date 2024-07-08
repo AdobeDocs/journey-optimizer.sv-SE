@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: händelse, enhet, skapa, resa
 exl-id: e22e2bc7-0c15-457a-8980-97bea5da7784
-source-git-commit: 531662b7d5e2455a017d68d6037c44b6950cc894
+source-git-commit: 60a7e79a5a40eada7645c1b6b94d8b165d2453b4
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1574'
 ht-degree: 9%
 
 ---
@@ -61,7 +61,7 @@ Här följer de första stegen för att konfigurera en ny händelse:
    >
    >När du väljer **[!UICONTROL System Generated]** type är bara scheman som har type-fältet eventID tillgängliga. När du väljer **[!UICONTROL Rule Based]** är alla Experience Event-scheman tillgängliga.
 
-1. För regelbaserade händelser klickar du inuti **[!UICONTROL Event ID condition]** fält. Använda <!--simple or advanced--> Uttrycksredigeraren definierar det villkor som ska användas av systemet för att identifiera de händelser som utlöser din resa.
+1. För regelbaserade händelser klickar du inuti **[!UICONTROL Event ID condition]** fält. Använd den enkla eller avancerade uttrycksredigeraren för att definiera villkoret som ska användas av systemet för att identifiera de händelser som utlöser din resa.
 
 ![](assets/jo-event6.png)
 
