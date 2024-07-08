@@ -6,7 +6,7 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 18fca9796e40d43f886ad8d53ef7d1b6b6642aa6
+source-git-commit: 55666c0fc3e4efb3785de96b96e58ba44016f33d
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 4%
@@ -30,7 +30,7 @@ ht-degree: 4%
 
 **Senaste uppdatering**: 8 juli 2024
 
-**Avancerad uttrycksredigerare i konfiguration av reseventen** - Du kan nu använda den avancerade uttrycksredigeraren när du konfigurerar en händelse, så att du kan definiera mer komplexa uttryck eller använda funktioner i händelse-id-villkoret. [Läs mer](../event/about-creating.md#adv-exp-editor)
+**Avancerad uttrycksredigerare i konfiguration av reseventen** - Du kan nu använda den avancerade uttrycksredigeraren när du konfigurerar en händelse, så att du kan definiera mer komplexa uttryck eller använda funktioner i händelse-ID-villkoret. [Läs mer](../event/about-creating.md#adv-exp-editor)
 
 
 ## Versionsinformation juni 2024 {#24-6-2024}
