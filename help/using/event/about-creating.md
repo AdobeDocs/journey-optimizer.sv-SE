@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: händelse, enhet, skapa, resa
 exl-id: e22e2bc7-0c15-457a-8980-97bea5da7784
-source-git-commit: 2edb6f9d9b359293afcf5409b8b18068f43a38ec
+source-git-commit: 65a1672c2440a3498ec1fc1c7db62080aa306cf4
 workflow-type: tm+mt
-source-wordcount: '1561'
+source-wordcount: '1566'
 ht-degree: 9%
 
 ---
@@ -161,9 +161,9 @@ Om du behöver använda en annan nyckel, t.ex. ett CRM-ID eller en e-postadress,
 När händelsen tas emot kan nyckelns värde göra det möjligt för systemet att identifiera den person som är associerad med händelsen. Associerat till ett namnutrymme (se [det här avsnittet](../event/about-creating.md#select-the-namespace)) kan nyckeln användas för att utföra frågor på Adobe Experience Platform. Se [den här sidan](../building-journeys/about-journey-activities.md#orchestration-activities).
 Nyckeln används också för att kontrollera att en person befinner sig på en resa. En person kan faktiskt inte befinna sig på två olika platser på samma resa. Därför tillåter systemet inte att samma nyckel, till exempel nyckeln CRMID=3224, finns på olika platser under samma resa.
 
-### Avancerad uttrycksredigerare {#adv-exp-editor}
+## Avancerad uttrycksredigerare {#adv-exp-editor}
 
-När du definierar profilidentifieraren kan du växla till den avancerade uttrycksredigeraren för att skapa mer komplexa nycklar (till exempel en sammanfogning av två fält för händelserna).
+När du definierar villkoret för händelse-ID eller profilidentifieraren kan du växla till den avancerade uttrycksredigeraren för att skapa mer komplexa nycklar (till exempel en sammanfogning av två fält för händelserna).
 
 ![](assets/journey20.png)
 
