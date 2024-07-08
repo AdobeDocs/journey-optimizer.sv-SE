@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: händelse, enhet, skapa, resa
 exl-id: e22e2bc7-0c15-457a-8980-97bea5da7784
-source-git-commit: 60a7e79a5a40eada7645c1b6b94d8b165d2453b4
+source-git-commit: 852b79a7a2cdcaeac700e2bb8b0cf1aa0d421bc9
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1561'
 ht-degree: 9%
 
 ---
@@ -43,35 +43,35 @@ Här följer de första stegen för att konfigurera en ny händelse:
    >
    >Endast alfanumeriska tecken och understreck tillåts. Maximala längden är 30 tecken.
 
-1. I **[!UICONTROL Type]** fält, välj **Unitary**.
+1. I dialogrutan **[!UICONTROL Type]** fält, välj **Enhetlig**.
 
    ![](assets/jo-event3bis.png)
 
-1. I **[!UICONTROL Event ID type]** väljer du den typ av händelse-ID som du vill använda: **Regelbaserad** eller **Systemgenererat**. Läs mer om händelse-ID-typer i [det här avsnittet](../event/about-events.md#event-id-type).
+1. I dialogrutan **[!UICONTROL Event ID type]** markerar du den typ av händelse-ID som du vill använda: **Regelbaserad** eller **Systemgenererad**. Läs mer om typ av händelse-ID i [det här avsnittet](../event/about-events.md#event-id-type).
 
    ![](assets/jo-event4.png)
 
 1. Antalet resor som använder den här händelsen visas i fältet **[!UICONTROL Used in]**. Du kan klicka på ikonen **[!UICONTROL View journeys]** för att visa en lista över resor som använder den här händelsen.
 
-1. Definiera schema- och nyttolastfälten: Här väljer du den händelseinformation (kallas vanligtvis nyttolast) som ska tas emot. Du kan sedan använda den här informationen i din resa. Se [det här avsnittet](../event/about-creating.md#define-the-payload-fields).
+1. Definiera schema- och nyttolastfälten: Det är här du väljer den händelseinformation (kallas vanligtvis för nyttolast) som resor förväntar sig att ta emot. Du kan sedan använda den här informationen i din resa. Se [det här avsnittet](../event/about-creating.md#define-the-payload-fields).
 
    ![](assets/jo-event5.png)
 
    >[!NOTE]
    >
-   >När du väljer **[!UICONTROL System Generated]** type är bara scheman som har type-fältet eventID tillgängliga. När du väljer **[!UICONTROL Rule Based]** är alla Experience Event-scheman tillgängliga.
+   >När du väljer kommandot **[!UICONTROL System Generated]** typ är endast scheman som har fältet eventID tillgängliga. När du väljer kommandot **[!UICONTROL Rule Based]** typ är alla Experience Event-scheman tillgängliga.
 
-1. För regelbaserade händelser klickar du inuti **[!UICONTROL Event ID condition]** fält. Använd den enkla eller avancerade uttrycksredigeraren för att definiera villkoret som ska användas av systemet för att identifiera de händelser som utlöser din resa.
+1. För regelbaserade händelser klickar du i **[!UICONTROL Event ID condition]** område. Använd den enkla eller avancerade uttrycksredigeraren och definiera det villkor som ska användas av systemet för att identifiera de händelser som kommer att utlösa din resa.
 
-![](assets/jo-event6.png)
+   ![](assets/jo-event6.png)
 
-I vårt exempel skrev vi ett villkor baserat på profilens stad. Det innebär att när systemet tar emot en händelse som matchar det här villkoret (**[!UICONTROL City]** fält och **[!UICONTROL Paris]** värde), kommer det att skickas till resorna.
+   I vårt exempel skrev vi ett villkor baserat på profilens stad. Detta innebär att när systemet tar emot en händelse som matchar detta villkor (**[!UICONTROL City]** och **[!UICONTROL Paris]** värde) kommer det att föras vidare till resor.
 
->[!NOTE]
->
->I den enkla uttrycksredigeraren är inte alla operatorer tillgängliga, de är beroende av datatypen. För en strängtyp av fält kan du till exempel använda &quot;contains&quot; eller &quot;equal to&quot;.
->
->Om du ändrar schemat med nya uppräkningsvärden efter att du har skapat händelsen måste du följa de här stegen för att tillämpa ändringarna på den befintliga händelsen: avmarkera uppräkningsfältet från händelsefälten, bekräfta valet och sedan markera uppräkningsfältet igen. Det nya uppräkningsvärdet visas nu.
+   >[!NOTE]
+   >
+   >I den enkla uttrycksredigeraren är inte alla operatorer tillgängliga, de beror på datatypen. För en strängtyp av fält kan du till exempel använda &quot;contains&quot; eller &quot;equal to&quot;.
+   >
+   >Om du ändrar schemat med nya uppräkningsvärden efter att du har skapat händelsen måste du följa de här stegen för att tillämpa ändringarna på den befintliga händelsen: avmarkera uppräkningsfältet från händelsefälten, bekräfta valet och sedan markera uppräkningsfältet igen. Det nya uppräkningsvärdet visas nu.
 
 1. Lägg till en namnrymd. Det här steget är valfritt men rekommenderas eftersom du kan lägga till en namnrymd vilket innebär att du kan utnyttja information som lagras i realtidskundprofilen. Denna definierar vilken typ av nyckel händelsen har. Se [det här avsnittet](../event/about-creating.md#select-the-namespace).
 
@@ -158,29 +158,25 @@ Om du behöver använda en annan nyckel, t.ex. ett CRM-ID eller en e-postadress,
 
 1. Välj det fält som valts som nyckel i listan över nyttolastfält.
 
-När händelsen tas emot kan nyckelns värde göra det möjligt för systemet att identifiera den person som är associerad med händelsen. Associerat till ett namnutrymme (se [det här avsnittet](../event/about-creating.md#select-the-namespace)) kan nyckeln användas för att utföra frågor på Adobe Experience Platform. Se [den här sidan](../building-journeys/about-journey-activities.md#orchestration-activities).
-Nyckeln används också för att kontrollera att en person befinner sig på en resa. En person kan faktiskt inte befinna sig på två olika platser på samma resa. Därför tillåter systemet inte att samma nyckel, till exempel nyckeln CRMID=3224, finns på olika platser under samma resa.
+När händelsen tas emot kan systemet med hjälp av nyckelns värde identifiera den person som är associerad med händelsen. Associerat med ett namnområde (se [det här avsnittet](../event/about-creating.md#select-the-namespace)), kan du använda den för att utföra sökningar på Adobe Experience Platform. Se [den här sidan](../building-journeys/about-journey-activities.md#orchestration-activities).
+Nyckeln används också för att kontrollera att en person befinner sig på en resa. En person kan faktiskt inte befinna sig på två olika platser under samma resa. Det innebär att systemet inte tillåter att samma nyckel, till exempel nyckeln CRMID=3224, finns på olika platser under samma resa.
 
 ### Avancerad uttrycksredigerare {#adv-exp-editor}
 
-
-När du definierar profilidentifieraren kan du växla till den avancerade uttrycksredigeraren för att skapa mer komplexa nycklar (till exempel en sammanfogning av två fält för händelserna).
+När du definierar profilidentifieraren kan du växla till den avancerade uttrycksredigeraren för att skapa mer komplexa nycklar (till exempel en sammanfogning av två fält i händelserna).
 
 ![](assets/journey20.png)
 
-Du har tillgång till de avancerade uttrycksfunktionerna från **[!UICONTROL Advanced mode]** om du vill utföra ytterligare ändringar. Dessa funktioner gör att du kan ändra de värden som används för att utföra specifika frågor, till exempel ändra format, utföra fältsammanfogningar, med hänsyn enbart till en del av ett fält (till exempel de 10 första tecknen). Läs den här [sidan](../building-journeys/expression/expressionadvanced.md).
+Du har tillgång till de avancerade uttrycksfunktionerna från **[!UICONTROL Advanced mode]** -knappen om du vill utföra ytterligare ändringar. Med dessa funktioner kan du manipulera de värden som används för att utföra specifika frågor, t.ex. ändra format och utföra fältsammanfogningar, så att endast en del av ett fält beaktas (t.ex. de tio första tecknen). Läs den här [sidan](../building-journeys/expression/expressionadvanced.md).
 
->[!AVAILABILITY]
->
->Den avancerade uttrycksredigeraren är bara tillgänglig för en uppsättning organisationer (LA).
 
 ## Förhandsgranska nyttolasten {#preview-the-payload}
 
-Med nyttolastens förhandsgranskning kan du validera nyttolastdefinitionen.
+Förhandsgranskning av nyttolast låter dig validera nyttolastdefinitionen.
 
 >[!NOTE]
 >
->För systemgenererade händelser sparar du händelsen och öppnar den igen när du skapar en händelse innan du visar nyttolastförhandsvisningen. Det här steget behövs för att generera ett händelse-ID i nyttolasten.
+>För systemgenererade händelser sparar du händelsen och öppnar den igen när du skapar en händelse innan du visar förhandsgranskningen av nyttolasten. Det här steget behövs för att generera ett händelse-ID i nyttolasten.
 
 1. Klicka på **[!UICONTROL View Payload]** om du vill förhandsgranska den nyttolast som systemet förväntar sig.
 
