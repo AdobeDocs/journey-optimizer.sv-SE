@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: fa4bcf281e9d58f5291a0128d0d33884016f407b
+source-git-commit: 18fca9796e40d43f886ad8d53ef7d1b6b6642aa6
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1104'
 ht-degree: 4%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="ajo_homepage_card1"
 >title="Nyheter?"
->abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i dessa versionsinformation."
+>abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i dessa versionsinformation.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen.
 
 [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver av sina senaste innovationer och förbättringar. Läs mer om de här ändringarna i [Versionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
@@ -30,7 +30,7 @@ ht-degree: 4%
 
 **Senaste uppdatering**: 8 juli 2024
 
-**Avancerad uttrycksredigerare i konfiguration av reseventen** - Du kan nu använda den avancerade uttrycksredigeraren när du konfigurerar en händelse, så att du kan definiera mer komplexa uttryck eller använda funktioner i händelse-id-villkoret. Den här förbättringen fanns nu tillgänglig för alla kunder tidigare i Limited Availability (LA). [Läs mer](../event/about-creating.md#adv-exp-editor)
+**Avancerad uttrycksredigerare i konfiguration av reseventen** - Du kan nu använda den avancerade uttrycksredigeraren när du konfigurerar en händelse, så att du kan definiera mer komplexa uttryck eller använda funktioner i händelse-id-villkoret. [Läs mer](../event/about-creating.md#adv-exp-editor)
 
 
 ## Versionsinformation juni 2024 {#24-6-2024}
@@ -67,7 +67,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <tbody>
 <tr>
 <td>
-<p>Du kan nu definiera specifika fält i ett avsnitt som kan redigeras när avsnittet läggs till i en kampanj eller resa. Det gör att du kan justera innehållsdelar när du använder dem, vilket ger dig flexibilitet att åsidosätta standardvärden med sammanhangsberoende detaljer.</p>
+<p>Nu kan du definiera specifika fält i ett fragment som kan redigeras när fragmentet läggs till i en kampanj eller resa. Detta gör det möjligt att justera innehållsdelar vid tiden för användningen, vilket ger flexibilitet att åsidosätta standardvärden med kontextspecifika detaljer.</p>
 <img src="../content-management/assets/do-not-localize/gif-fragments.gif"/>
 <p>Mer information finns i den <a href="../content-management/customizable-fragments.md">detaljerade dokumentationen</a>.</p>
 </td>
@@ -98,13 +98,13 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>AI-assistent i Adobe Journey Optimizer</strong><br/></th>
+<th><strong>AI Assistant i Adobe Journey Optimizer</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>AI Assistant är en gränssnittsfunktion som du kan använda för att navigera och förstå Adobe-begrepp och få driftinsikter om din specifika omgivning. Det finns för flera produkter i Adobe Experience Cloud, inklusive Adobe Journey Optimizer.</p>
+<p>AI-assistenten är en funktion i användargränssnittet som du kan använda för att navigera bland och förstå Adobe-koncept och få driftsinsikter för just din miljö. Det finns i flera Adobe Experience Cloud-produkter, inklusive Adobe Journey Optimizer.</p>
 <p>Mer information finns i den <a href="../start/ai-assistant.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
@@ -115,7 +115,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Flerspråkiga meddelanden på resor och i kampanjer (begränsad tillgänglighet)</strong><br/></th>
+<th><strong>Flerspråkiga meddelanden under resor och kampanjer (begränsad tillgänglighet)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -167,7 +167,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 #### Beslutshantering
 
-* **Stöd för flera regler i beslutshantering** - Du kan nu lägga till upp till 10 regler om begränsning av ett visst erbjudande i Beslutshantering. På så sätt kan du öka kontrollen över hur erbjudanden skickas. [Läs mer](../offers/offer-library/add-constraints.md#capping)
+* **Stöd för flera regler i beslutshantering** - Du kan nu lägga till upp till 10 regler om begränsning av ett visst erbjudande i Beslutshantering. På så sätt kan ni öka kontrollen över hur erbjudandena skickas. [Läs mer](../offers/offer-library/add-constraints.md#capping)
 
 <!--* **Audits** - The **Change log** tab allowing you to see all the changes that have been made to an offer or a decision has been removed. Changes related to offers and decisions can now be seen in the **Audits** menu. -->
 
@@ -175,7 +175,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 >[!AVAILABILITY]
 >
->Observera att dessa förbättringar kommer att introduceras gradvis under flera dagar efter den första versionen. Vissa användare har omedelbar åtkomst, men andra kan uppleva en fördröjning innan det blir tillgängligt i deras miljöer.
+>Observera att dessa förbättringar kommer att introduceras gradvis under flera dagar efter den första versionen. Vissa användare har omedelbar åtkomst, men andra kan uppleva en fördröjning innan den blir tillgänglig i deras miljöer.
 
 * Fragment kan nu redigeras och ändringar kan spridas över alla liveresor och -kampanjer där de används.
 * Nya statusar för innehållsfragment har införts: **Utkast**, **Live**, **Publicering** och **Arkiverad**.
@@ -193,9 +193,9 @@ Läs mer i [innehållsfragment](../content-management/fragments.md) dokumentatio
 
 
 * Adobe Journey Optimizer har nu stöd för förfrågningar om borttagning/åtkomst av sekretess samt livscykelhantering av data. [Läs mer](../privacy/requests.md)
-* Du kan nu ändra storlek på kolumnerna i Journalförteckningen.
+* Du kan nu ändra storlek på kolumnerna i kundresans lager.
   <!--* **Advanced expression editor in Event configuration** is now GA - You can now leverage the advanced expression editor while configuring an event, allowing you to define more complex expressions or use functions in the event id condition. This capability is released in Limited Availability for selected customers. [Read more](../event/about-creating.md)-->
-* **Sammanfoga principer** är nu GA - sammanslagningspolicyer som används av en resa är nu synliga och konsekventa under hela resan. [Läs mer](../building-journeys/journey-properties.md#merge-policies)
+* **Sammanfoga profiler** är nu GA - de sammanslagningsprinciper som används av en resa är nu synliga och konsekventa under hela resan. [Läs mer](../building-journeys/journey-properties.md#merge-policies)
 
 
 
@@ -205,9 +205,9 @@ Läs mer i [innehållsfragment](../content-management/fragments.md) dokumentatio
 
 #### E-postkanal
 
-* **List-unsubscribe** - Efter de senaste Gmail- och Yahoo-meddelandena för massavsändare stöder Journey Optimizer alternativet &quot;post/1-click&quot; list-unsubscribe. Se följande sidor: [Hantering av bortvalsning via e-post](../email/email-opt-out.md#unsubscribe-header) och [Konfigurera e-postinställningar](../email/email-settings.md#list-unsubscribe).
+* **List-unsubscribe** - Efter de senaste Gmail- och Yahoo-meddelandena om bulkavsändare stöder Journey Optimizer alternativet&quot;post/1-click&quot; List-Unsubscribe. Se följande sidor: [Hantering av avanmälan via e-post](../email/email-opt-out.md#unsubscribe-header) och [Konfigurera e-postinställningar](../email/email-settings.md#list-unsubscribe).
 
-  **ANTECKNING** - För alla nya kanalytor är som standard alternativet för att ta bort prenumeration aktiverat. För befintliga ytor är som standard alternativet Avsluta prenumeration på URL med ett klick i inställningarna för kanalyta avmarkerat. Om du tidigare använde en opt out-URL med ett klick i e-postmeddelandets brödtext är den här inställningen fortfarande giltig. Om avregistrerings-URL:en med ett klick i kanalytans inställningar är markerad kommer Adobe Journey Optimizer i stället att använda den standardgenererade avregistrerings-URL:en med ett klick i kanalytans inställningar.
+  **ANMÄRKNING** - För alla nya kanalytor aktiveras som standard alternativet för att avbryta prenumerationen. För befintliga ytor är som standard alternativet för att avbryta prenumeration av URL-adress med ett klick i kanalytans inställningar avmarkerat. Om du använde en avanmälnings-URL med ett klick i e-postmeddelandets brödtext tidigare är den här inställningen fortfarande giltig. Om du markerar alternativet för att avbryta prenumerationen med ett klick i inställningarna för kanalens yta, använder Adobe Journey Optimizer den standardgenererade URL-adressen för att avbryta prenumerationen med ett klick i inställningarna för kanalens yta.
 
 #### SMS-kanal
 
