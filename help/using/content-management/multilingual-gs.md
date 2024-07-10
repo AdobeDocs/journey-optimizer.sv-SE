@@ -10,9 +10,9 @@ level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: b57683b4-6dcc-4f6c-a8b2-4ba371d78d21
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: 59dee15d2952438a074db57a94b3d896b38cd4f3
+source-git-commit: b5dbfbd6d1bb4f1451f1ccab7387af3c37d6d060
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '151'
 ht-degree: 2%
 
 ---
@@ -35,3 +35,9 @@ Med Journey Optimizer kan du skapa flerspråkigt innehåll på två olika sätt:
 </br>
 
 ![](assets/translation_schema.png)
+
+## Instruktionsvideo {#video}
+
+Lär dig hur du skapar innehåll på flera språk i en enda kampanj eller resa.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3430921/)
