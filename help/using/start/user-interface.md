@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 59ecb9a5376e697061ddac4cc68f09dee68570c0
+source-git-commit: 0ccc6453594aaf501f15e5342331b1649346bfa3
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 5%
@@ -134,7 +134,7 @@ Styr din sekretesshantering och dina förfrågningar från det här avsnittet.
 
 * **[!UICONTROL Sandboxes]** - Adobe Experience Platform tillhandahåller sandlådor som partitionerar en instans i separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. Bläddra i det här avsnittet för att hantera dina sandlådor. [Läs mer](../administration/sandboxes.md)
 
-* **[!UICONTROL Channels]** - Använd det här avsnittet för att konfigurera dina kanaler, inklusive undermappar, ytor och leveransinställningar. [Läs mer](../configuration/get-started-configuration.md)
+* **[!UICONTROL Channels]** - Använd det här avsnittet för att konfigurera dina kanaler, inklusive underdomäner, ytor och leveransinställningar. [Läs mer](../configuration/get-started-configuration.md)
 
 * **[!UICONTROL Tags]** - Med enhetliga taggar kan ni enkelt klassificera era resor och kampanjer för att förbättra sökningen från listorna. [Läs mer](../start/search-filter-categorize.md#work-with-unified-tags)
 
