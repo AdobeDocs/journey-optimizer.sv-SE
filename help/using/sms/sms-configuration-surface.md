@@ -7,9 +7,9 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 0d541520-016e-468f-b011-808712847556
-source-git-commit: 794ac45177e467be4bd5b8f7288e07c85e4d806a
+source-git-commit: 080928d14a9d6ec116286386748b77a6a25e76f8
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ När din SMS/MMS-kanal har konfigurerats måste du skapa en kanal för att kunna
 
 Så här skapar du en kanalyta:
 
-1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och markera **[!UICONTROL Branding]** > **[!UICONTROL Channel surfaces]**. Klicka på knappen **[!UICONTROL Create channel surface]**.
+1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och väljer **[!UICONTROL Branding]** > **[!UICONTROL Channel surfaces]**. Klicka på knappen **[!UICONTROL Create channel surface]**.
 
    ![](assets/preset-create.png)
 
@@ -36,54 +36,48 @@ Så här skapar du en kanalyta:
 
    >[!NOTE]
    >
-   > Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-` tecken.
+   > Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt `.` och bindestreck `-`.
 
-1. Definiera **SMS-inställningar**.
+1. Definiera **SMS-inställningarna**.
 
    ![](assets/sms-surface-settings.png)
 
-   Börja med att välja **[!UICONTROL SMS Type]** som ska skickas med ytan: **[!UICONTROL Transactional]** eller **[!UICONTROL Marketing]**.
+   Börja med att markera **[!UICONTROL SMS Type]** som ska skickas med ytan: **[!UICONTROL Transactional]** eller **[!UICONTROL Marketing]**.
 
-   * Välj **Marknadsföring** för kampanjmeddelanden: dessa meddelanden kräver användarens samtycke.
-   * Välj **Transactional** för icke-kommersiella meddelanden, t.ex. orderbekräftelse, meddelanden om lösenordsåterställning eller leveransinformation.
+   * Välj **Marknadsföring** för kampanjtextmeddelanden: dessa meddelanden kräver användarens samtycke.
+   * Välj **Transaktionell** för icke-kommersiella meddelanden, till exempel orderbekräftelse, meddelanden om lösenordsåterställning eller leveransinformation.
 
    När du skapar ett SMS/MMS måste du välja en giltig kanalyta som matchar den kategori som du valde för meddelandet.
 
    >[!CAUTION]
    >
-   >**Transactional** meddelanden kan skickas till profiler som avbeställer marknadskommunikation. Dessa meddelanden kan bara skickas i särskilda sammanhang.
+   >**Transaktionsmeddelanden** kan skickas till profiler som avbeställt marknadskommunikation. Dessa meddelanden kan bara skickas i särskilda sammanhang.
 
-1. Välj **[!UICONTROL SMS configuration]** för att associera med ytan.
+1. Markera **[!UICONTROL SMS configuration]** som ska associeras med ytan.
 
    Mer information om hur du konfigurerar miljön för att skicka SMS-meddelanden finns i [det här avsnittet](#create-api).
 
-1. Ange **[!UICONTROL Sender number]** &#x200B; som du vill använda för din kommunikation.
+1. Ange den **[!UICONTROL Sender number]**-&#x200B; som du vill använda för kommunikationen.
 
-1. Välj **[!UICONTROL SMS Execution Field]** för att välja **[!UICONTROL Profile attribute]** som är kopplade till profilens telefonnummer.
+1. Välj din **[!UICONTROL SMS Execution Field]** för att välja **[!UICONTROL Profile attribute]** som är associerad med profilens telefonnummer.
 
-1. Om du vill använda förkortningsfunktionen för URL i dina SMS-meddelanden väljer du ett alternativ på menyn **[!UICONTROL Subdomain]** lista.
-
-   >[!NOTE]
-   >
-   >Om du vill kunna välja en underdomän kontrollerar du att du tidigare har konfigurerat minst en SMS/MMS-underdomän. [Lär dig mer](sms-subdomains.md)
-
-1. Ange **[!UICONTROL Opt-out number]** som du vill använda för den här ytan. När profiler avanmäler sig från det här numret kan du fortfarande skicka meddelanden från andra nummer som du använder för att skicka ut textmeddelanden med [!DNL Journey Optimizer].
+1. Om du vill använda förkortningsfunktionen för URL i dina SMS-meddelanden väljer du ett objekt i listan **[!UICONTROL Subdomain]**.
 
    >[!NOTE]
    >
-   >I [!DNL Journey Optimizer], avanmälning för textmeddelanden hanteras inte längre på kanalnivå. Den är nu specifik för ett tal.
+   >Om du vill kunna välja en underdomän kontrollerar du att du tidigare har konfigurerat minst en SMS/MMS-underdomän. [Lär dig hur](sms-subdomains.md)
 
 1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara kanalytan som ett utkast och återuppta konfigurationen senare.
 
    ![](assets/sms-submit-surface.png)
 
-1. När kanalytan har skapats visas den i listan med **[!UICONTROL Processing]** status.
+1. När kanalytan har skapats visas den i listan med statusen **[!UICONTROL Processing]**.
 
    >[!NOTE]
    >
-   >Om kontrollerna inte lyckas kan du läsa mer om orsakerna till eventuella fel i [det här avsnittet](#monitor-channel-surfaces).
+   >Om kontrollerna inte lyckas kan du läsa mer om möjliga felorsaker i [det här avsnittet](#monitor-channel-surfaces).
 
-1. När kontrollerna är klara får kanalytan **[!UICONTROL Active]** status. Den är klar att användas för att leverera meddelanden.
+1. När kontrollerna har slutförts får kanalytan statusen **[!UICONTROL Active]**. Den är klar att användas för att leverera meddelanden.
 
    ![](assets/preset-active.png)
 
