@@ -24,31 +24,31 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_business_rules_rule_sets"
 >title="Regeluppsättningar"
->abstract="Använd regeluppsättningar för att tillämpa frekvensbegränsning för olika typer av marknadsföringskommunikation. Du kan till exempel skapa en regeluppsättning som begränsar antalet **kampanjkommunikation** skickas till dina kunder och skapar en annan regeluppsättning för att begränsa antalet **nyhetsbrev** skickas till dem."
+>abstract="Använd regeluppsättningar för att tillämpa frekvensbegränsning för olika typer av marknadsföringskommunikation. Du kan till exempel skapa en regeluppsättning som begränsar antalet **kampanjmeddelanden** som skickas till dina kunder och skapa en annan regeluppsättning som begränsar antalet **nyhetsbrev** som skickas till dem."
 
 >[!AVAILABILITY]
 >
->Regeluppsättningar är för närvarande endast tillgängliga som betaversioner för valda användare. Kontakta din Adobe-representant för att få delta i betaversionen.
+>Regeluppsättningar är för närvarande endast tillgängliga som betaversioner för valda användare. Kontakta din Adobe-representant för att få delta i Beta.
 
 ## Vad är regeluppsättningar? {#what}
 
-Förutom globala affärsregler som begränsar antalet gånger som användare får meddelanden i en eller flera kanaler, kan du med regeluppsättningar **gruppera flera regler i regeluppsättningar** och tillämpa dem på valfria kampanjer. Detta ger en förbättrad detaljrikedom som styr hur ofta användarna får ett meddelande beroende på kommunikationstypen.
+Förutom globala affärsregler som begränsar antalet gånger som användare får meddelanden i en eller flera kanaler, kan du med regeluppsättningar **gruppera flera regler i regeluppsättningar** och tillämpa dem på de kampanjer du väljer. Detta ger en förbättrad detaljrikedom som styr hur ofta användarna får ett meddelande beroende på kommunikationstypen.
 
-Du kan till exempel skapa en regeluppsättning som begränsar antalet **kampanjkommunikation** skickas till dina kunder och en annan regeluppsättning för att begränsa antalet **nyhetsbrev** skickas till dem. Beroende på vilken typ av kampanj du skapar kan du sedan välja att använda antingen kampanjkommunikationen eller regeluppsättningen för nyhetsbrev.
+Du kan till exempel skapa en regeluppsättning som begränsar antalet **kampanjmeddelanden** som skickas till dina kunder och en annan regeluppsättning som begränsar antalet **nyhetsbrev** som skickas till dem. Beroende på vilken typ av kampanj du skapar kan du sedan välja att använda antingen kampanjkommunikationen eller regeluppsättningen för nyhetsbrev.
 
 ## Globala och anpassade regeluppsättningar {#global-custom}
 
-Vid åtkomst av regeluppsättningar för första gången från **[!UICONTROL Administration]** > **[!UICONTROL Business rules (Beta)]** är en standardregeluppsättning redan skapad och aktiv: **Global standardregeluppsättning**.
+När du använder regeluppsättningar för första gången från menyn **[!UICONTROL Administration]** > **[!UICONTROL Business rules (Beta)]** skapas en standardregeluppsättning och är aktiv: **Global standardregeluppsättning**.
 
 Den här regeluppsättningen innehåller globala regler som du kan tillämpa för att styra hur ofta användare får meddelanden i en eller flera kanaler, på samma sätt som nuvarande affärsregler fungerar. Alla regler som definieras i den här regeluppsättningen gäller för alla valda kanaler, oavsett om kommunikationen skickas från en resa eller en kampanj. [Lär dig arbeta med affärsregler](frequency-rules.md)
 
-Utöver den här uppsättningen regler för global standardregeluppsättning kan du skapa **anpassad regel** uppsättningar som du kan tillämpa på valfri kampanj för att begränsa antalet meddelanden som skickas inom den kampanjen. [Lär dig skapa anpassade regeluppsättningar](#create)
+Utöver den här regeluppsättningen för global standardregel kan du skapa **anpassade regeluppsättningar** som du kan tillämpa på alla kampanjer för att begränsa antalet meddelanden som skickas inom kampanjen. [Lär dig skapa anpassade regeluppsättningar](#create)
 
 ![](assets/rule-sets-default.png)
 
 >[!IMPORTANT]
 >
->För tillfället kan anpassade regeluppsättningar användas på **kampanjer** endast. Endast de regler som definieras i regeluppsättningen&quot;Global standardregel&quot; gäller för både resor och kampanjkommunikation.
+>Just nu kan anpassade regeluppsättningar endast användas för **kampanjer**. Endast de regler som definieras i regeluppsättningen&quot;Global standardregel&quot; gäller för både resor och kampanjkommunikation.
 
 ## Skapa din första anpassade regeluppsättning {#create-rule-set}
 
@@ -60,7 +60,7 @@ Följ stegen nedan för att skapa en regeluppsättning.
 >
 >Du kan skapa upp till tre anpassade regeluppsättningar.
 
-1. Öppna **[!UICONTROL Rules sets]** lista och klicka sedan på **[!UICONTROL Create rule set]**.
+1. Öppna listan **[!UICONTROL Rules sets]** och klicka sedan på **[!UICONTROL Create rule set]**.
 
    ![](assets/rule-sets-create-button.png)
 
@@ -72,7 +72,7 @@ Följ stegen nedan för att skapa en regeluppsättning.
    >
    >Regeluppsättningsnamnet måste vara unikt.
 
-1. Nu kan du [definiera reglerna](#create-new-rule) du vill lägga till i den här regeluppsättningen.
+1. Nu kan du [definiera reglerna](#create-new-rule) som du vill lägga till i den här regeluppsättningen.
 
 ### Lägg till regler i regeluppsättningen {#create-new-rule}
 
@@ -98,29 +98,29 @@ Följ stegen nedan för att skapa en regeluppsättning.
 
 Följ stegen nedan om du vill lägga till en regel i en regeluppsättning.
 
-1. Från den regeluppsättning du just skapade klickar du på **[!UICONTROL Add rule]**.
+1. Klicka på **[!UICONTROL Add rule]** i den regeluppsättning du nyss skapade.
 
    ![](assets/rule-sets-create-rule-button.png)
 
-1. Definiera en unik **Regelnamn**.
+1. Definiera ett unikt **regelnamn**.
 
-1. The **Kategori** -fältet anger vilken meddelandekategori regeln gäller för. För tillfället är det här fältet skrivskyddat som endast **[!UICONTROL Marketing]** finns tillgänglig.
+1. Fältet **Kategori** anger vilken meddelandekategori regeln gäller för. För tillfället är det här fältet skrivskyddat eftersom endast kategorin **[!UICONTROL Marketing]** är tillgänglig.
 
-1. Från **[!UICONTROL Duration]** väljer du om du vill att capping ska användas varje månad, vecka eller dag. Frekvensgränsen baseras på den valda kalenderperioden. Den återställs i början av motsvarande tidsram.
+1. I listrutan **[!UICONTROL Duration]** väljer du om du vill att capping ska användas varje månad, vecka eller dag. Frekvensgränsen baseras på den valda kalenderperioden. Den återställs i början av motsvarande tidsram.
 
    ![](assets/rule-set-capping-duration.png)
 
    Räknaren för varje period har följande förfallodatum:
 
-   * **[!UICONTROL Monthly]**: Frekvensbegränsningen gäller till den sista dagen i månaden vid 23:59:59 UTC. Månadsförfallodatumet för januari är till exempel 01-31 23:59:59 UTC.
+   * **[!UICONTROL Monthly]**: Frekvensgränsen gäller till den sista dagen i månaden vid 23:59:59 UTC. Månadsförfallodatumet för januari är till exempel 01-31 23:59:59 UTC.
 
-   * **[!UICONTROL Weekly]**: Frekvensbegränsningen gäller till lördag 23:59:59 UTC den veckan då kalenderveckan börjar på söndag. Utgångsdatumet är oberoende av hur regeln skapas. Om regeln till exempel skapas på torsdag gäller den till lördag den 23:59:59.
+   * **[!UICONTROL Weekly]**: Frekvensgränsen gäller till lördag :59:{59 UTC den veckan när kalenderveckan börjar på söndag. Utgångsdatumet är oberoende av hur regeln skapas. Om regeln till exempel skapas på torsdag gäller den till lördag den 23:59:59.
 
-   * **[!UICONTROL Daily]**: Den dagliga frekvensen gäller för dagen till 23:59:59 UTC och återställer till 0 i början av nästa dag.
+   * **[!UICONTROL Daily]**: Den dagliga frekvensen gäller för dagen till 23:59:59 UTC och återställs till 0 i början av nästa dag.
 
      >[!CAUTION]
      >
-     >För att säkerställa exaktheten i de dagliga reglerna för frekvensbegränsning bör man använda [strömningssegmentering](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html){target="_blank"} är obligatoriskt. Läs mer om metoder för målgruppsutvärdering i [det här avsnittet](../audience/about-audiences.md#evaluation-method-in-journey-optimizer).
+     >För att säkerställa noggrannhet för regler för daglig frekvensbegränsning är det obligatoriskt att använda [direktuppspelningssegmentering](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html){target="_blank"}. Läs mer om metoder för målgruppsutvärdering i [det här avsnittet](../audience/about-audiences.md#evaluation-method-in-journey-optimizer).
 
    Observera att profilräknarvärdet uppdateras när kommunikationen har skickats. Tänk på det här när du skickar stora mängder kommunikation eftersom dataflödet kan resultera i att mottagaren får e-postminuterna eller till och med timmar efter att kommunikationen har startats (om du skickar miljontals meddelanden samtidigt).
 
@@ -140,7 +140,7 @@ Följ stegen nedan om du vill lägga till en regel i en regeluppsättning.
 
    Ange till exempel 5 som capping och markera både e-postkanalen och sms-kanalen. Om en profil redan har fått 3 marknadsföringsmeddelanden och 2 marknadsföringsmeddelanden för den valda perioden, kommer profilen att uteslutas från nästa leverans av marknadsföringsmeddelanden eller sms.
 
-1. Klicka **[!UICONTROL Save]** för att bekräfta att regeln har skapats. Meddelandet läggs till i regeluppsättningen med **[!UICONTROL Draft]** status.
+1. Klicka på **[!UICONTROL Save]** för att bekräfta att regeln har skapats. Meddelandet läggs till i regeluppsättningen med statusen **[!UICONTROL Draft]**.
 
    ![](assets/rule-set-rule-created.png)
 
@@ -150,7 +150,7 @@ Nu måste du aktivera varje regel innan den kan tillämpas på alla meddelanden.
 
 ### Aktivera reglerna och regeluppsättningen {#activate-rule}
 
-När en regel skapas har den **[!UICONTROL Draft]** status och påverkar ännu inte något meddelande. Om du vill aktivera den klickar du på **[!UICONTROL More actions]** knapp bredvid regeln och markera **[!UICONTROL Activate]**.
+När en regel skapas har den statusen **[!UICONTROL Draft]** och påverkar ännu inte något meddelande. Om du vill aktivera den klickar du på knappen **[!UICONTROL More actions]** bredvid regeln och väljer **[!UICONTROL Activate]**.
 
 ![](assets/rule-set-activate-rule.png)
 
@@ -164,7 +164,7 @@ Du måste också aktivera regeluppsättningen för att kunna komma åt den i kam
 
 <!--Currently, once a rule set is activated, no more rules can be added to that rule set.-->
 
-Om du vill inaktivera en regel eller en regeluppsättning klickar du på **[!UICONTROL More actions]** intill önskat objekt och markera **[!UICONTROL Deactivate]**.
+Om du vill inaktivera en regel eller en regeluppsättning klickar du på knappen **[!UICONTROL More actions]** bredvid det önskade objektet och väljer **[!UICONTROL Deactivate]**.
 
 ![](assets/rule-set-inactive-rule.png)
 
@@ -176,7 +176,7 @@ Dess status ändras till **[!UICONTROL Inactive]** och regeln gäller inte för 
 
 ## Få åtkomst till och hantera regeluppsättningar {#access-rule-sets}
 
-Alla skapade regeluppsättningar visas i **[!UICONTROL Administration]** > **[!UICONTROL Business rules (Beta)]** -menyn. De sorteras efter senaste ändringsdatum.
+Alla skapade regeluppsättningar visas på menyn **[!UICONTROL Administration]** > **[!UICONTROL Business rules (Beta)]**. De sorteras efter senaste ändringsdatum.
 
 ![](assets/rule-sets-list.png)
 
@@ -188,7 +188,7 @@ Klicka på ett regeluppsättningsnamn om du vill visa och redigera innehållet. 
 
 ![](assets/rule-set-example.png)
 
-För varje regel i regeluppsättningen **[!UICONTROL More actions]** Med knappen kan du:
+För varje regel i regeluppsättningen kan du med knappen **[!UICONTROL More actions]**:
 
 * Redigera regeln
 * Aktivera regeln [läs mer](#activate-rule)
@@ -210,17 +210,17 @@ Learn more about permissions in [this section](../administration/high-low-permis
 
 Följ stegen nedan för att tillämpa en affärsregel på ett meddelande.
 
-1. När en [kampanj](../campaigns/create-campaign.md)markerar du en av de kanaler som du har definierat för regeluppsättningen och redigerar innehållet i meddelandet.
+1. När du skapar en [kampanj](../campaigns/create-campaign.md) väljer du en av de kanaler som du har definierat för regeluppsättningen och redigerar innehållet i meddelandet.
 
-1. På skärmen för innehållsutgåvan klickar du på **[!UICONTROL Add Business Rule]** -knappen.
+1. Klicka på knappen **[!UICONTROL Add Business Rule]** på skärmen för innehållsutgåva.
 
-1. Välj [regeluppsättning som du har skapat](#create-rule-set).
+1. Välj den [regeluppsättning du skapade](#create-rule-set).
 
    ![](assets/rule-set-campaign-add-rule-button.png)
 
    >[!NOTE]
    >
-   >Endast [aktiverad](#activate-rule) regeluppsättningar visas i listan.
+   >Endast [aktiverade](#activate-rule) regeluppsättningar visas i listan.
 
    <!--Messages where the category selected is **[!UICONTROL Transactional]** will not be evaluated against business rules.-->
 
@@ -230,7 +230,7 @@ Följ stegen nedan för att tillämpa en affärsregel på ett meddelande.
 
    ![](assets/rule-set-schedule-campaign.png)
 
-1. Du kan visa antalet profiler som har uteslutits från leverans i [Global rapport](../reports/global-report.md)och i [Live-rapport](../reports/live-report.md), där frekvensreglerna listas som en möjlig orsak för användare som inte får leverera.
+1. Du kan visa antalet profiler som har uteslutits från leveransen i den [globala rapporten](../reports/global-report.md) och i [Live-rapporten](../reports/live-report.md), där frekvensreglerna listas som en möjlig orsak för användare som inte har levererats.
 
 >[!NOTE]
 >
@@ -265,4 +265,4 @@ In this scenario, an individual profile:
 * can receive up to 12 marketing messages per month;
 * but will be excluded from marketing push notifications after they have received 4 push notifications.-->
 
-När du testar frekvensregler bör du använda en ny [testprofil](../audience/creating-test-profiles.md)eftersom det inte finns något sätt att återställa räknaren förrän nästa punkt i en profils frekvensbegränsning har nåtts. Om du inaktiverar en regel kan mappade profiler ta emot meddelanden, men inga räknarsteg tas bort eller tas bort.
+När du testar frekvensregler rekommenderar vi att du använder en ny [testprofil](../audience/creating-test-profiles.md) eftersom det inte finns något sätt att återställa räknaren förrän nästa period när en profils frekvensgräns har nåtts. Om du inaktiverar en regel kan mappade profiler ta emot meddelanden, men inga räknarsteg tas bort eller tas bort.

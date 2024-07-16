@@ -16,11 +16,11 @@ ht-degree: 3%
 
 # Kom igång med AI-modeller {#ai-models}
 
-[!DNL Journey Optimizer] gör att du kan använda ett tränat modellsystem som rangordnar erbjudanden för en viss profil.
+[!DNL Journey Optimizer] låter dig använda ett tränat modellsystem som rangordnar erbjudanden för en viss profil.
 
-Med den här funktionen kan du skapa olika **AI-modeller** baserat på era affärsmål. Genom att använda dessa olika målbaserade strategier i ett beslut kommer det tränade modellsystemet att hjälpa dig att förstå hur de olika AI-modellerna påverkar era mål.
+Med den här funktionen kan du skapa olika **AI-modeller** utifrån dina affärsmål. Genom att använda dessa olika målbaserade strategier i ett beslut kommer det tränade modellsystemet att hjälpa dig att förstå hur de olika AI-modellerna påverkar era mål.
 
-Du kan till exempel välja en AI-modell för e-postkanalen och en annan för push-kanalen. För varje kanal utnyttjar det tränade modellsystemet flera datapunkter för att avgöra vilket erbjudande som ska presenteras först för en viss placering, i stället för att beakta offertens prioritetspoäng eller en [rankningsformel](create-ranking-formulas.md).
+Du kan till exempel välja en AI-modell för e-postkanalen och en annan för push-kanalen. För varje kanal utnyttjar det tränade modellsystemet flera datapunkter för att avgöra vilket erbjudande som ska presenteras först för en viss placering, i stället för att ta hänsyn till erbjudandenas prioritetspoäng eller en [rankningsformel](create-ranking-formulas.md).
 
 >[!IMPORTANT]
 >
@@ -31,14 +31,14 @@ Du kan till exempel välja en AI-modell för e-postkanalen och en annan för pus
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_ai_model_type"
 >title="Välj modelltyp"
->abstract="Välj den typ av AI-modell som du vill skapa: **Automatisk optimering** optimerar erbjudanden baserat på tidigare erbjudanden, medan **Anpassad optimering** optimerar och personaliserar erbjudanden baserat på målgrupper och erbjuder resultat."
+>abstract="Välj den typ av AI-modell som du vill skapa: **Automatisk optimering** optimerar erbjudanden baserat på tidigare erbjudanden, medan **Anpassad optimering** optimerar och personaliserar erbjudanden baserat på målgrupper och erbjudandeprestanda."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/create-ranking-strategies#create-ranking-strategy" text="Skapa en AI-modell"
 
 Det finns två typer av AI-modeller i [!DNL Journey Optimizer]:
 
-* **Automatiskt optimerade modeller** sträva efter att leverera erbjudanden som maximerar den avkastning (KPI) som affärsklienterna sätter. Dessa nyckeltal kan vara i form av konverteringsgrader, intäkter osv. I nuläget fokuserar automatisk optimering på att optimera erbjudandeklick med erbjudandekonvertering som mål. Automatisk optimering är icke-personaliserat och optimerar baserat på erbjudandets&quot;globala&quot; prestanda. [Läs mer](auto-optimization-model.md)
+* **Automatiska optimeringsmodeller** syftar till att leverera erbjudanden som maximerar den avkastning (KPI) som anges av affärsklienter. Dessa nyckeltal kan vara i form av konverteringsgrader, intäkter osv. I nuläget fokuserar automatisk optimering på att optimera erbjudandeklick med erbjudandekonvertering som mål. Automatisk optimering är icke-personaliserat och optimerar baserat på erbjudandets&quot;globala&quot; prestanda. [Läs mer](auto-optimization-model.md)
 
-* **Personaliserade optimeringsmodeller** kan ni definiera affärsmål och använda kunddata för att utbilda affärsinriktade modeller för att leverera personaliserade erbjudanden och maximera nyckeltal. [Läs mer](personalized-optimization-model.md)
+* Med **personaliserade optimeringsmodeller** kan du definiera affärsmål och använda kunddata för att utbilda affärsorienterade modeller för att leverera personaliserade erbjudanden och maximera nyckeltal. [Läs mer](personalized-optimization-model.md)
 
 ## Skapa en AI-modell {#create-ai-model}
 
@@ -52,6 +52,6 @@ De viktigaste stegen för att skapa och använda AI-modeller är följande:
 
    >[!IMPORTANT]
    >
-   >Rankningsmodeller kräver att feedback-händelser skickas in som upplevelsehändelser för att samlas in. [Läs mer om datainsamling för beslutshantering](../data-collection/data-collection.md)
+   >Rankningsmodeller kräver att feedback-händelser skickas in som upplevelsehändelser för att samlas in. [Läs mer om insamling av data för beslutshantering](../data-collection/data-collection.md)
 
 1. Tilldela AI-modellen till en placering i ett beslut om att rangordna kvalificerade erbjudanden. [Läs mer](../offer-activities/configure-offer-selection.md)

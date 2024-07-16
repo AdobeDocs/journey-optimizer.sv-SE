@@ -21,31 +21,31 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_admin_dmarc_banner_link"
 >title="Läs mer om obligatorisk DMARC-uppdatering"
->abstract="Google och Yahoo kräver att ni har en **DMARC-post** för alla domäner som du använder för att skicka e-post till dem, med början på **1 februari 2024**.<br>Därför måste du se till att du har DMARC-posten inställd för alla underdomäner som du har delegerat till Adobe i Journey Optimizer."
+>abstract="Som en del av deras branschledande praxis kräver både Google och Yahoo att du har en **DMARC-post** för alla domäner som du använder för att skicka e-post till dem, med början den **1 februari 2024**.<br>Du måste därför se till att DMARC-posten har konfigurerats för alla underdomäner som du har delegerat till Adobe i Journey Optimizer."
 
 Domänbaserad Message Authentication, Reporting och Conformance (DMARC) är en autentiseringsmetod som gör att domänägare kan skydda sin domän från obehörig användning. Genom att erbjuda en tydlig profil till e-postleverantörer/Internet-leverantörer hjälper den till att förhindra att oseriösa aktörer skickar e-postmeddelanden som påstår sig vara från din domän. Implementering av DMARC minskar risken för att legitima e-postmeddelanden markeras som skräppost eller avvisas, och förbättrar e-postleveransen.
 
-Google och Yahoo är en del av deras branschledande arbetsmetoder! kräver båda **DMARC-post** för alla domäner som du använder för att skicka e-post till dem. Detta nya krav börjar gälla **1 februari 2024**.
+Google och Yahoo är en del av deras branschledande arbetsmetoder! båda kräver en **DMARC-post** för alla domäner som du använder för att skicka e-post till dem. Det nya kravet gäller från och med den **1 februari 2024**.
 
 >[!CAUTION]
 >
 >Misslyckas med att uppfylla det nya kravet från Gmail och Yahoo! förväntas resultera i att e-postmeddelanden landar i skräppostmappen eller blockeras.
 
-Därför rekommenderar Adobe starkt att du har DMARC-posten inställd för alla underdomäner som du har delegerat till Adobe i [!DNL Journey Optimizer]. Följ stegen nedan som gäller ditt ärende:
+Därför rekommenderar Adobe att du ser till att DMARC-posten har konfigurerats för alla underdomäner som du har delegerat till Adobe i [!DNL Journey Optimizer]. Följ stegen nedan som gäller ditt ärende:
 
-* Om du har [helt delegerad](delegate-subdomain.md#full-subdomain-delegation) Om du vill skicka underdomäner till Adobe följer du något av följande alternativ:
+* Om du har [delegerat](delegate-subdomain.md#full-subdomain-delegation) dina sändande underdomäner till Adobe följer du ett av alternativen nedan:
 
    * Konfigurera DMARC på den överordnade domänen för dina delegerade underdomäner **i din värdlösning**.
 eller
-   * Konfigurera DMARC för dina delegerade underdomäner **i[!DNL Journey Optimizer]** användargränssnitt för konfiguration - utan extra arbete med värdlösningen. [Lär dig mer](dmarc-record.md#implement-dmarc)
+   * Konfigurera DMARC för dina delegerade underdomäner **i användargränssnittet för[!DNL Journey Optimizer]**-konfigurationen, utan något extra arbete med värdlösningen. [Lär dig hur](dmarc-record.md#implement-dmarc)
 
-* Om du har konfigurerat dina sändande underdomäner med [CNAME](delegate-subdomain.md#cname-subdomain-delegation)följer du något av alternativen nedan:
+* Om du har konfigurerat dina sändande underdomäner med [CNAME](delegate-subdomain.md#cname-subdomain-delegation) följer du något av alternativen nedan:
 
    * Konfigurera DMARC på dina underdomäner eller på den överordnade domänen för dina underdomäner **i din värdlösning**.
 eller
-   * Konfigurera DMARC för dina delegerade underdomäner **i[!DNL Journey Optimizer]** användargränssnitt för konfiguration. [Lär dig mer](dmarc-record.md#implement-dmarc)
+   * Konfigurera DMARC för dina delegerade underdomäner **i användargränssnittet för[!DNL Journey Optimizer]**-konfigurationen. [Lär dig hur](dmarc-record.md#implement-dmarc)
 
-  CNAME-konfigurationen kräver dock även ytterligare information i värdlösningen. Se därför till att du samarbetar med din IT-avdelning så att de kan utföra de uppdateringar som beskrivs i [det här avsnittet](dmarc-record.md#implement-dmarc).
+  CNAME-konfigurationen kräver dock även ytterligare information i värdlösningen. Se därför till att du är koordinerad med din IT-avdelning så att de kan utföra uppdateringen som beskrivs i [det här avsnittet](dmarc-record.md#implement-dmarc).
 
 <!--The most recent timelines shared by Google and Yahoo! are as follows:
 
@@ -66,8 +66,8 @@ eller
 
 **Användbara länkar**
 
-* Läs mer om DMARC i [Handbok om bästa praxis för leverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html#about){target="_blank"}
-* Läs mer om [Google Gmail-meddelande](https://blog.google/products/gmail/gmail-security-authentication-spam-protection/){target="_blank"}
-* Läs mer om [Yahoo! meddelande](https://blog.postmaster.yahooinc.com/post/730172167494483968/more-secure-less-spam){target="_blank"}
+* Läs mer om DMARC i [Handboken om bästa praxis för slutprodukter](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html#about){target="_blank"}
+* Läs [Google Gmail-meddelandet](https://blog.google/products/gmail/gmail-security-authentication-spam-protection/){target="_blank"}
+* Läs upp [Yahoo! meddelande](https://blog.postmaster.yahooinc.com/post/730172167494483968/more-secure-less-spam){target="_blank"}
 
 <!--Find more guidance about these changes in the [Deliverability Best Practice Guide]-->

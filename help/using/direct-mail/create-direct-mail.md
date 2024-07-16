@@ -10,7 +10,7 @@ exl-id: 6b438268-d983-4ab8-9276-c4b7de74e6bd
 source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -27,33 +27,33 @@ Skapa en schemalagd kampanj och konfigurera extraheringsfilen om du vill skapa d
 >
 >Kontrollera att du har konfigurerat innan du skapar ett direktmeddelandemeddelande:
 >
->1. A [konfiguration för filroutning](../direct-mail/direct-mail-configuration.md#file-routing-configuration) som anger den server där extraheringsfilen ska överföras och lagras,
->1. A [meddelandeyta för direktreklam](../direct-mail/direct-mail-configuration.md#direct-mail-surface) som refererar till filroutningskonfigurationen.
+>1. En [filroutningskonfiguration](../direct-mail/direct-mail-configuration.md#file-routing-configuration) som anger på vilken server extraheringsfilen ska överföras och lagras,
+>1. En [direktmeddelandeyta](../direct-mail/direct-mail-configuration.md#direct-mail-surface) som refererar till filroutningskonfigurationen.
 
 
 ## Skapa en kampanj för direktreklam{#create-dm-campaign}
 
 Så här skapar du en direktreklamkampanj:
 
-1. Skapa en ny schemalagd kampanj och välj **[!UICONTROL Direct mail]** som åtgärden.
+1. Skapa en ny schemalagd kampanj och välj **[!UICONTROL Direct mail]** som åtgärd.
 
-1. Välj **[!UICONTROL Direct mail surface]** använda och klicka **[!UICONTROL Create]**. [Lär dig hur du skapar en direktreklamyta](direct-mail-configuration.md#direct-mail-surface).
+1. Markera **[!UICONTROL Direct mail surface]** som ska användas och klicka på **[!UICONTROL Create]**. [Lär dig hur du skapar en yta för direktreklam](direct-mail-configuration.md#direct-mail-surface).
 
    ![](assets/direct-mail-campaign.png){width="800" align="center"}
 
-1. I **[!UICONTROL Properties]** redigerar du Campaigns **[!UICONTROL Title]** och **[!UICONTROL Description]**.
+1. I avsnittet **[!UICONTROL Properties]** redigerar du kampanjens **[!UICONTROL Title]** och **[!UICONTROL Description]**.
 
-1. Definiera målgruppen genom att klicka på **[!UICONTROL Select audience]** och välj bland de tillgängliga Adobe Experience Platform-målgrupperna. [Läs mer](../audience/about-audiences.md).
+1. Om du vill definiera målgruppen klickar du på knappen **[!UICONTROL Select audience]** och väljer bland de tillgängliga Adobe Experience Platform-målgrupperna. [Läs mer](../audience/about-audiences.md).
 
    >[!IMPORTANT]
    >
    >För närvarande är valet av målgrupp begränsat till 3 miljoner profiler. Denna begränsning kan hävas på begäran av Adobe.
 
-1. I **[!UICONTROL Identity namespace]** markerar du lämpligt namnutrymme för att identifiera personer inom den valda målgruppen. [Läs mer](../event/about-creating.md#select-the-namespace).
+1. I fältet **[!UICONTROL Identity namespace]** väljer du lämpligt namnutrymme för att identifiera personer inom den valda målgruppen. [Läs mer](../event/about-creating.md#select-the-namespace).
 
    ![](assets/direct-mail-campaign-properties.png){width="800" align="center"}
 
-1. Kampanjer kan schemaläggas för ett specifikt datum eller ställas in så att de återkommer med regelbundna intervall. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** av kampanjen i [det här avsnittet](../campaigns/create-campaign.md#schedule).
+1. Kampanjer kan schemaläggas för ett specifikt datum eller ställas in så att de återkommer med regelbundna intervall. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** för din kampanj i [det här avsnittet](../campaigns/create-campaign.md#schedule).
 
 Nu kan du börja konfigurera extraheringsfilen som ska skickas till din direktmeddelandeleverantör.
 
@@ -67,17 +67,17 @@ Nu kan du börja konfigurera extraheringsfilen som ska skickas till din direktme
 >[!CONTEXTUALHELP]
 >id="ajo_direct_mail_formatting"
 >title="Filformatering för extrahering"
->abstract="För varje fält anger du en etikett och den information som ska visas med personaliseringsredigeraren. <br/><br/> The <b>Sortera efter</b> kan du använda det markerade fältet för att sortera extraheringsfilens kolumner."
+>abstract="För varje fält anger du en etikett och den information som ska visas med personaliseringsredigeraren. <br/><br/> Med alternativet <b>Sortera efter</b> kan du använda det valda fältet för att sortera extraheringsfilens kolumner."
 
 1. Konfigurera kolumnerna och den information som ska visas i extraheringsfilen:
 
-   1. Klicka på **[!UICONTROL Add]** för att skapa en ny kolumn.
+   1. Klicka på knappen **[!UICONTROL Add]** för att skapa en ny kolumn.
 
-   1. The **[!UICONTROL Formatting]** visas till höger så att du kan ställa in den markerade kolumnen. Ange en **[!UICONTROL Label]** för kolumnen.
+   1. Fönstret **[!UICONTROL Formatting]** visas till höger, så att du kan ställa in den markerade kolumnen. Ange en **[!UICONTROL Label]** för kolumnen.
 
-   1. I **[!UICONTROL Data]** väljer du de profilattribut som ska visas med [personaliseringsredigerare](../personalization/personalization-build-expressions.md).
+   1. I fältet **[!UICONTROL Data]** väljer du de profilattribut som ska visas med [anpassningsredigeraren](../personalization/personalization-build-expressions.md).
 
-   1. Om du vill sortera extraheringsfilen med en kolumn markerar du kolumnen och växlar på **[!UICONTROL Sort by]** alternativ. The **[!UICONTROL Sort By]** visas bredvid kolumnens etikett i dialogrutan **[!UICONTROL Data Fields]** -avsnitt.
+   1. Om du vill sortera extraheringsfilen med en kolumn markerar du kolumnen och växlar till alternativet **[!UICONTROL Sort by]**. Ikonen **[!UICONTROL Sort By]** visas bredvid kolumnens etikett i avsnittet **[!UICONTROL Data Fields]**.
 
 
 
@@ -87,32 +87,32 @@ Nu kan du börja konfigurera extraheringsfilen som ska skickas till din direktme
 
 Extraheringsfilen krävs av direktreklamleverantörer för att skicka e-post till dina kunder. Så här definierar du extraheringsfilens konfiguration:
 
-1. På skärmen för kampanjkonfiguration klickar du på **[!UICONTROL Edit content]** för att konfigurera extraheringsfilens innehåll.
+1. Klicka på knappen **[!UICONTROL Edit content]** på konfigurationsskärmen för kampanjen för att konfigurera innehållet i extraheringsfilen.
 
 1. Justera extraheringsfilens egenskaper:
 
-   1. Ange önskat **[!UICONTROL Filename]** för extraheringsfilen.
+   1. Ange önskad **[!UICONTROL Filename]** för extraheringsfilen.
 
-   1. Om du vill kan du aktivera **[!UICONTROL Append timestamp to export filename]** om du vill lägga till en automatisk tidsstämpel till det angivna filnamnet.
+   1. Du kan också aktivera alternativet **[!UICONTROL Append timestamp to export filename]** om du vill lägga till en automatisk tidsstämpel till det angivna filnamnet.
 
-   1. Ibland kan du behöva lägga till information i början eller slutet av extraheringsfilen. Använd **[!UICONTROL Notes]** anger du sedan om du vill ta med anteckningen som sidhuvud eller sidfot.
+   1. Ibland kan du behöva lägga till information i början eller slutet av extraheringsfilen.  Om du vill göra det använder du fältet **[!UICONTROL Notes]** och anger sedan om du vill ta med anteckningen som sidhuvud eller sidfot.
 
       ![](assets/direct-mail-properties.png){width="800" align="center"}
 
 1. Konfigurera kolumnerna och den information som ska visas i extraheringsfilen:
 
-   1. Klicka på **[!UICONTROL Add]** för att skapa en ny kolumn.
+   1. Klicka på knappen **[!UICONTROL Add]** för att skapa en ny kolumn.
 
-   1. The **[!UICONTROL Formatting]** visas till höger så att du kan ställa in den markerade kolumnen. Ange en **[!UICONTROL Label]** för kolumnen.
+   1. Fönstret **[!UICONTROL Formatting]** visas till höger, så att du kan ställa in den markerade kolumnen. Ange en **[!UICONTROL Label]** för kolumnen.
 
-   1. I **[!UICONTROL Data]** väljer du de profilattribut som ska visas med [personaliseringsredigerare](../personalization/personalization-build-expressions.md).
+   1. I fältet **[!UICONTROL Data]** väljer du de profilattribut som ska visas med [anpassningsredigeraren](../personalization/personalization-build-expressions.md).
 
-   1. Om du vill sortera extraheringsfilen med en kolumn markerar du kolumnen och växlar på **[!UICONTROL Sort by]** alternativ. The **[!UICONTROL Sort By]** visas bredvid kolumnens etikett i dialogrutan **[!UICONTROL Data Fields]** -avsnitt.
+   1. Om du vill sortera extraheringsfilen med en kolumn markerar du kolumnen och växlar till alternativet **[!UICONTROL Sort by]**. Ikonen **[!UICONTROL Sort By]** visas bredvid kolumnens etikett i avsnittet **[!UICONTROL Data Fields]**.
 
       ![](assets/direct-mail-content.png){width="800" align="center"}
 
    1. Upprepa dessa steg om du vill lägga till så många kolumner som behövs för extraheringsfilen. Observera att du kan lägga till upp till 50 kolumner.
 
-      Om du vill ändra en kolumns position drar och släpper du den till önskad plats i dialogrutan **[!UICONTROL Data field]** -avsnitt. Om du vill ta bort en kolumn markerar du den och klickar på **[!UICONTROL Remove]** knappen i **[!UICONTROL Formatting]** fönster.
+      Om du vill ändra en kolumns position drar och släpper du den till önskad plats i avsnittet **[!UICONTROL Data field]**. Om du vill ta bort en kolumn markerar du den och klickar på knappen **[!UICONTROL Remove]** i rutan **[!UICONTROL Formatting]**.
 
-Nu kan du testa ditt direktutskick och skicka det till din publik. [Lär dig hur du testar och skickar direktreklam](test-send-direct-mail.md)
+Nu kan du testa ditt direktutskick och skicka det till din publik. [Lär dig hur du testar och skickar direktmeddelanden](test-send-direct-mail.md)

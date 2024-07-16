@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Delegering till underdomän i [!DNL Journey Optimizer]
+title: Delegering av underdomän i  [!DNL Journey Optimizer]
 description: Lär dig delegera dina underdomäner
 feature: Subdomains
 topic: Administration
@@ -16,7 +16,7 @@ ht-degree: 23%
 
 ---
 
-# Delegering till underdomän i [!DNL Journey Optimizer] {#subdomain-delegation}
+# Delegering av underdomän i [!DNL Journey Optimizer] {#subdomain-delegation}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_delegated_subdomains"
@@ -29,7 +29,7 @@ Om du delar en domän och den blockeras eller läggs till i blockeringslista kan
 
 >[!NOTE]
 >
->Du kan inte använda samma sändande domän för att skicka ut meddelanden från [!DNL Adobe Journey Optimizer] och från en annan produkt, som [!DNL Adobe Campaign] eller [!DNL Adobe Marketo Engage].
+>Du kan inte använda samma sändande domän för att skicka ut meddelanden från [!DNL Adobe Journey Optimizer] och från en annan produkt, till exempel [!DNL Adobe Campaign] eller [!DNL Adobe Marketo Engage].
 
 ## Varför konfigurera underdomäner? {#why-set-up-subdomains}
 
@@ -48,17 +48,17 @@ Dessa krav hanteras via komponenter som finns både på Adobe och hos kunden, me
 
 **Läs mer**
 
-* Lär dig hur [delegera dina underdomäner](delegate-subdomain.md) direkt från gränssnittet
-* Lär dig hur [lägg till Google TXT-poster](google-txt.md) till dina underdomäner för att säkerställa att e-postmeddelanden skickas till Gmail-adresser
-* Lär dig hur [få åtkomst till PTR-posterna](ptr-records.md) som har genererats för dina underdomäner, så att de kan verifieras genom att e-postservrar skickas
+* Lär dig hur du [delegerar dina underdomäner](delegate-subdomain.md) direkt från gränssnittet
+* Lär dig hur du [lägger till Google TXT-poster](google-txt.md) i dina underdomäner för att se till att e-postmeddelanden skickas till Gmail-adresser
+* Lär dig hur du [får åtkomst till de PTR-poster](ptr-records.md) som genererats för dina underdomäner, så att de kan verifieras genom att skicka e-postservrar
 
 ## Konfigurationsmetoder för underdomäner {#subdomain-delegation-methods}
 
 Med subdomänkonfigurationen kan du konfigurera ett underavsnitt av din domän (tekniskt en &quot;DNS-zon&quot;) för användning med Adobe Campaign. Tillgängliga installationsmetoder är:
 
-* **Fullständig delegering till underdomäner till Adobe** (rekommenderas): Underdomänen har delegerats helt till Adobe. Adobe kan styra och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra meddelanden. [Läs mer om fullständig delegering av underdomäner](delegate-subdomain.md#full-subdomain-delegation)
+* **Fullständig underdomändelegering till Adobe** (rekommenderas): Underdomänen har delegerats till Adobe. Adobe kan styra och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra meddelanden. [Läs mer om fullständig delegering av underdomäner](delegate-subdomain.md#full-subdomain-delegation)
 
-* **Användning av CNAME**: Skapa en underdomän och använd CNAME för att peka på Adobe-specifika poster. Med den här konfigurationen delar både du och Adobe ansvaret för att underhålla DNS. [Läs mer om delegering av CNAME-underdomäner](delegate-subdomain.md#cname-subdomain-delegation)
+* **Använda CNAME**: Skapa en underdomän och använd CNAME för att peka mot Adobe-specifika poster. Med den här konfigurationen delar både du och Adobe ansvaret för att underhålla DNS. [Läs mer om delegering av CNAME-underdomäner](delegate-subdomain.md#cname-subdomain-delegation)
 
 >[!CAUTION]
 >
@@ -79,18 +79,18 @@ Om du har några frågor om konfigureringsmetoder för subdomäner kan du kontak
 
 ## Åtkomst till delegerade underdomäner {#access-delegated-subdomains}
 
-Alla dina delegerade underdomäner visas i **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Subdomains]** -menyn. Det finns filter som hjälper dig att förfina listan (delegeringsdatum, användare eller status).
+Alla dina delegerade underdomäner visas på menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Subdomains]**. Det finns filter som hjälper dig att förfina listan (delegeringsdatum, användare eller status).
 
 ![](assets/subdomain-list.png)
 
-The **[!UICONTROL Status]** kolumnen innehåller information om delegeringsprocessen för underdomäner:
+Kolumnen **[!UICONTROL Status]** innehåller information om delegeringsprocessen för underdomäner:
 
 * **[!UICONTROL Draft]**: Underdomänsdelegeringen har sparats som ett utkast. Klicka på underdomänens namn för att återuppta delegeringsprocessen,
 * **[!UICONTROL Processing]**: Underdomänen genomgår flera konfigurationskontroller innan den kan användas,
 * **[!UICONTROL Success]**: Underdomänen har gått igenom kontrollerna och kan användas för att leverera meddelanden,
 * **[!UICONTROL Failed]**: En eller flera kontroller misslyckades efter att delegeringen av underdomäner skickades.
 
-Få detaljerad information om en underdomän med **[!UICONTROL Success]** status, öppna den i listan.
+Om du vill få tillgång till detaljerad information om en underdomän med statusen **[!UICONTROL Success]** öppnar du den i listan.
 
 ![](assets/subdomain-delegated.png)
 
@@ -98,7 +98,7 @@ Du kan:
 
 * Hämta det underdomännamn (skrivskyddat) som konfigurerats under delegeringsprocessen samt de URL:er som genereras (resurser, spegelsidor, spårnings-URL:er),
 
-* Lägg till en TXT-post för Google platsverifiering i din underdomän för att kontrollera att den är verifierad (se [Lägga till en Google TXT-post i en underdomän](google-txt.md)).
+* Lägg till en TXT-post för webbplatsverifiering från Google i din underdomän för att kontrollera att den är verifierad (se [Lägg till en TXT-post från Google i en underdomän](google-txt.md)).
 
 
 >[!CAUTION]

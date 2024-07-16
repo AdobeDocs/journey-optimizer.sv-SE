@@ -8,8 +8,8 @@ level: Intermediate
 exl-id: b33e4bca-d2e9-4610-9f04-008d47f686d0
 source-git-commit: 45f19563c79d298eeec6cb757636a9ce47e54adf
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 3%
+source-wordcount: '449'
+ht-degree: 1%
 
 ---
 
@@ -20,10 +20,10 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="ajo_web_designer_modifications_views"
 >title="Tillämpa ändringar på markerade vyer"
->abstract="Ändringarna används bara för de valda vyerna. Vyer kan identifieras med **Bläddra** och navigera till dem. Hittar du inte den vy du söker?"
+>abstract="Ändringarna används bara för de valda vyerna. Vyer kan identifieras med läget **Bläddra** och navigera till dem. Hittar du inte den vy du söker?"
 >additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
 
-**Single-page applications** (SPA) kan nu redigeras i webbdesignerns visuella redigerare. Detta gör att du kan välja vilken specifik **vyer** du vill använda dina webbsidesändringar på.
+**Enkelsidiga program** (SPA) kan nu redigeras i webbdesignerns visuella redigerare. På så sätt kan du välja vilka specifika **vyer** du vill använda webbsidesändringarna på.
 
 [Lär dig hur du skapar enkelsidiga program i den här videon](#video)
 
@@ -33,21 +33,21 @@ Det krävs en engångsinstallation av utvecklare för att definiera vyerna i imp
 
 ## Definiera vyer i Web SDK-implementeringen {#define-views}
 
-XDM-vyer kan användas i Adobe [!DNL Journey Optimizer] för att göra det möjligt för marknadsförare att köra webbpersonaliserings- och experimenteringskampanjer på SPA via den webbaserade visuella redigeraren. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html){target="_blank"}
+XDM-vyer kan utnyttjas i Adobe [!DNL Journey Optimizer] för att marknadsförare ska kunna köra webbpersonaliserings- och experimenteringskampanjer på SPA via den webbaserade visuella redigeraren. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html){target="_blank"}
 
-För att kunna komma åt och redigera vyer i [!DNL Journey Optimizer] -användargränssnittet bör du följa stegen i [det här avsnittet](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html#implement-xdm-views){target="_blank"}.
+Om du vill kunna komma åt och redigera vyer i användargränssnittet för [!DNL Journey Optimizer] måste du följa de steg som anges i [det här avsnittet](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html#implement-xdm-views){target="_blank"}.
 
 ## Upptäck vyer i webbdesignern {#discover-views}
 
 När SPA har konfigurerats i Adobe Experience Platform Web SDK-implementeringen måste du navigera bland alla vyer på webbplatsen som du vill ändra. Följ stegen nedan.
 
-1. [Skapa en webbkampanj](create-web.md) och få tillgång till [webbdesigner](edit-web-content.md).
+1. [Skapa en webbkampanj](create-web.md) och få tillgång till [webbdesignern](edit-web-content.md).
 
    Den vy du befinner dig i visas längst upp till vänster.
 
    ![](assets/web-designer-view-home.png)
 
-1. Växla till **[!UICONTROL Browse]** läge. [Läs mer](../web/edit-web-content.md#browse-mode)
+1. Växla till läget **[!UICONTROL Browse]**. [Läs mer](../web/edit-web-content.md#browse-mode)
 
    ![](assets/web-designer-view-browse.png)
 
@@ -61,13 +61,13 @@ När du har lagt till en ändring i en viss vy kan du använda den i andra marke
 
 >[!CAUTION]
 >
->Om du inte har upptäckt vyer med **[!UICONTROL Browse]** kan du inte markera dem för att tillämpa ändringarna. [Läs mer](#discover-views)
+>Om du inte har identifierat vyer i läget **[!UICONTROL Browse]** kan du inte markera dem för att tillämpa ändringarna. [Läs mer](#discover-views)
 
-1. Välj **[!UICONTROL Modifications]** om du vill visa motsvarande ruta till vänster.
+1. Markera ikonen **[!UICONTROL Modifications]** om du vill visa motsvarande ruta till vänster.
 
    ![](assets/web-designer-view-modifications-pane.png)
 
-1. Markera en ändring och klicka på **[!UICONTROL More actions]** intill den. Välj **[!UICONTROL Apply to more views]**.
+1. Markera en ändring och klicka på knappen **[!UICONTROL More actions]** bredvid den. Välj **[!UICONTROL Apply to more views]**.
 
    ![](assets/web-designer-modifications-more-actions.png)
 
@@ -77,7 +77,7 @@ När du har lagt till en ändring i en viss vy kan du använda den i andra marke
 
 1. Klicka på **[!UICONTROL Apply]**.
 
-1. Växla till **[!UICONTROL Browse]** läge för att kontrollera om ändringarna används på de önskade sidorna.
+1. Växla till läget **[!UICONTROL Browse]** om du vill kontrollera att ändringarna tillämpas på de önskade sidorna.
 
    ![](assets/web-designer-modifications-applied-view.png)
 
@@ -85,7 +85,7 @@ När du har lagt till en ändring i en viss vy kan du använda den i andra marke
 
 I den här videon beskrivs hur du:
 
-* Upptäck SPA vyer med **[!UICONTROL Browse]** läge
+* Identifiera SPA vyer i läget **[!UICONTROL Browse]**
 * Utför redigering i den aktuella vyn
 * Använd webbplatsändringar på flera vyer eller på alla vyer som identifierats
 * Göra satsåtgärder på ändringar

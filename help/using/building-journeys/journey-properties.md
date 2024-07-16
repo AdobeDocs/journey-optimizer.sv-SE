@@ -38,9 +38,9 @@ I det här avsnittet kan du definiera namnet på resan, lägga till en beskrivni
 * hantera [inträde och återinträde](#entrance),
 * välj start och slut [datum](#dates),
 * hantera [åtkomst till data](#manage-access),
-* definiera [varaktighet för timeout](#timeout) i reseverksamhet (endast för administratörer),
-* välj resa och profil [tidszoner](#timezone)
-* Tilldela enhetliga Adobe Experience Platform-taggar till din resa för att enkelt klassificera dem och förbättra sökningen från kampanjlistan. [Lär dig hur du arbetar med taggar](../start/search-filter-categorize.md#tags)
+* definiera en [timeout-varaktighet](#timeout) i reseaktiviteter (endast för administratörsanvändare),
+* välj resan och profilen [tidszoner](#timezone)
+* Tilldela enhetliga Adobe Experience Platform-taggar till din resa för att enkelt klassificera dem och förbättra sökningen från kampanjlistan. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags)
 
 ![](assets/journey32.png)
 
@@ -48,7 +48,7 @@ I det här avsnittet kan du definiera namnet på resan, lägga till en beskrivni
 >
 >För direktresor visar den här skärmen endast publiceringsdatumet och namnet på den användare som publicerade resan.
 
-The **Kopiera teknisk information** Med kan du kopiera teknisk information om den resa som supportteamet kan använda för att felsöka. Följande information kopieras: `JourneyVersion UID`, `OrgID`, `orgName`, `sandboxName`, `lastDeployedBy`, `lastDeployedAt`.
+Med den tekniska informationen för **Kopiera** kan du kopiera teknisk information om den resa som supportteamet kan använda för att felsöka. Följande information kopieras: `JourneyVersion UID`, `OrgID`, `orgName`, `sandboxName`, `lastDeployedBy`, `lastDeployedAt`.
 
 Läs mer om tekniska fält som rör en resa för en viss profil och hur du använder dem [på den här sidan](expression/journey-properties.md).
 
@@ -57,17 +57,17 @@ Läs mer om tekniska fält som rör en resa för en viss profil och hur du anvä
 
 Profilinmatningsläget definieras på resenivån i den högra konfigurationsrutan. Inställningarna beskrivs nedan.
 
-Profilingångshantering beror på typen av resor. Läs mer om hantering av profilentré och återinträde på marknaden i [den här sidan](entry-management.md).
+Profilingångshantering beror på typen av resor. Läs mer om hantering av profilentré och återinträde på webben i [den här sidan](entry-management.md).
 
 ### Tillåt återinträde  {#allow-re-entrance}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_entrance"
 >title="Tillåt återinträde"
->abstract="Som standard tillåter nya resor återinträde. Du kan avmarkera **Tillåt återinträde** om du till exempel vill erbjuda en engångspresentation när en person går in i en affär."
+>abstract="Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet **Tillåt återinträde** till exempel om du vill erbjuda en engångspresentation när en person går in i en affär."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
 
-Som standard tillåter nya resor återinträde. Du kan avmarkera **Tillåt återinträde** om du vill erbjuda en engångspresentation när en person går in i en affär.
+Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet **Tillåt återinträde** för engångsresor, till exempel om du vill erbjuda en engångsgåva när en person går till en affär.
 
 ### Vänteperiod för återinträde  {#re-entrance-wait}
 
@@ -77,12 +77,12 @@ Som standard tillåter nya resor återinträde. Du kan avmarkera **Tillåt åter
 >abstract=" Ange en väntetid innan du tillåter att en profil går in på resan igen på en resa. Detta förhindrar att användarna återkommer till resan under en viss tid. Maximal varaktighet: 90 dagar."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
 
-När **Tillåt återinträde** är aktiverat, **Vänteperiod för återinträde** -fältet visas. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 90 dagar.
+När alternativet **Tillåt återinträde** är aktiverat visas fältet **Återinträde av vänteperiod**. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 90 dagar.
 
 
 ## Hantera åtkomst {#manage-access}
 
-Om du vill tilldela etiketter för anpassad eller grundläggande dataanvändning till resan klickar du på **[!UICONTROL Manage access]** -knappen. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md)
+Klicka på knappen **[!UICONTROL Manage access]** om du vill tilldela anpassade eller grundläggande dataanvändningsetiketter till resan. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md)
 
 ![](assets/journeys-manage-access.png)
 
@@ -90,7 +90,7 @@ Om du vill tilldela etiketter för anpassad eller grundläggande dataanvändning
 
 Tidszonen definieras på resenivå. Du kan ange en fast tidszon eller använda Adobe Experience Platform-profiler för att definiera resetidszonen. Om en tidszon definieras i Adobe Experience Platform-profilen kan den hämtas under resan.
 
-Mer information om hantering av tidszoner finns i [den här sidan](../building-journeys/timezone-management.md).
+Mer information om hantering av tidszoner finns på [den här sidan](../building-journeys/timezone-management.md).
 
 ## Start- och slutdatum {#dates}
 
@@ -105,9 +105,9 @@ Mer information om hantering av tidszoner finns i [den här sidan](../building-j
 >title="Slutdatum"
 >abstract="Välj slutdatum för din resa. När det datumet har nåtts avslutar profiler på den resan automatiskt och nya kan inte längre komma in i den."
 
-Du kan definiera en **Startdatum**. Om du inte har angett någon sådan kommer den att definieras automatiskt vid publiceringstidpunkten.
+Du kan definiera ett **startdatum**. Om du inte har angett någon sådan kommer den att definieras automatiskt vid publiceringstidpunkten.
 
-Du kan också lägga till en **Slutdatum**. Detta gör att profiler kan avslutas automatiskt när datumet nås. Om inget slutdatum anges kan profilerna behållas tills [tidsgräns för global resa](#global_timeout) (vilket normalt är 91 dagar). Det enda undantaget är återkommande läsningar på målgruppsresor med **Tvinga återinträde vid upprepning** som slutar vid startdatumet för nästa förekomst.
+Du kan också lägga till ett **slutdatum**. Detta gör att profiler kan avslutas automatiskt när datumet nås. Om inget slutdatum anges kan profiler stanna tills den [globala resetidsgränsen](#global_timeout) (som vanligtvis är 91 dagar). Det enda undantaget är återkommande läspmålsresor med **Tvinga återinträde vid upprepning** aktiverat, som slutar vid startdatumet för nästa förekomst.
 
 ## Timeout {#timeout}
 
@@ -119,19 +119,19 @@ Du kan också lägga till en **Slutdatum**. Detta gör att profiler kan avslutas
 >abstract="Ange hur lång tid resan ska försöka utföra en åtgärd eller verifiera ett villkor innan det betraktas som en timeout."
 
 
-När du redigerar en åtgärd eller villkorsaktivitet kan du definiera en alternativ sökväg om ett fel eller en timeout inträffar. Om bearbetningen av aktiviteten som förhör ett tredjepartssystem överskrider tidsgränsen som anges i **[!UICONTROL Timeout or error]** för resans egenskaper väljs den andra vägen för att utföra en eventuell reservåtgärd.
+När du redigerar en åtgärd eller villkorsaktivitet kan du definiera en alternativ sökväg om ett fel eller en timeout inträffar. Om bearbetningen av aktiviteten som förhör ett tredjepartssystem överskrider tidsgränsen som anges i fältet **[!UICONTROL Timeout or error]** för resans egenskaper, väljs den andra sökvägen för att utföra en eventuell reservåtgärd.
 
 Giltiga värden är mellan 1 och 30 sekunder.
 
-Vi rekommenderar att du definierar en mycket kort **[!UICONTROL Timeout or error]** om resan är tidskänslig (exempel: reagera på en persons realtidsplats) eftersom du inte kan fördröja åtgärden i mer än några sekunder. Om resan är mindre tidskänslig kan du använda ett längre värde för att ge mer tid till det system som anropas för att skicka ett giltigt svar.
+Vi rekommenderar att du definierar ett mycket kort **[!UICONTROL Timeout or error]**-värde om din resa är tidskänslig (exempel: reagerar på en persons realtidsplats) eftersom du inte kan fördröja åtgärden i mer än några sekunder. Om resan är mindre tidskänslig kan du använda ett längre värde för att ge mer tid till det system som anropas för att skicka ett giltigt svar.
 
 Journeys använder också en global tidsgräns enligt informationen nedan.
 
 ### Tidsgräns för global resa {#global_timeout}
 
-Förutom [timeout](#timeout_and_error) som används i reseaktiviteter används en timeout för den globala resan. Den visas inte i gränssnittet och kan inte ändras.
+Utöver den [timeout](#timeout_and_error) som används i reseaktiviteter används en timeout för den globala resan. Den visas inte i gränssnittet och kan inte ändras.
 
-Den här globala tidsgränsen stoppar de enskilda personernas framsteg under resan **91 dagar** efter att de gått in. Det innebär att en persons resa inte kan vara längre än 91 dagar. Efter denna timeout-period tas personens data bort. Individer som fortfarande flyter i resan i slutet av timeoutperioden kommer att stoppas och de kommer inte att beaktas vid rapporteringen. Du kan därför se fler människor komma in på resan än att gå ut.
+Den här globala tidsgränsen avbryter förloppet för personer på resan **91 dagar** efter att de har gått in. Det innebär att en persons resa inte kan vara längre än 91 dagar. Efter denna timeout-period tas personens data bort. Individer som fortfarande flyter i resan i slutet av timeoutperioden kommer att stoppas och de kommer inte att beaktas vid rapporteringen. Du kan därför se fler människor komma in på resan än att gå ut.
 
 På grund av den 91-dagars tidsgränsen för resan kan vi inte säkerställa att återinträdesspärren fungerar mer än 91 dagar när resan inte tillåts. Eftersom vi tar bort all information om personer som tagit sig in på resan 91 dagar efter ankomsten, kan vi inte veta vem som tagit sig in tidigare, mer än 91 dagar sedan.
 
@@ -257,4 +257,4 @@ Resan använder sammanfogningsprinciper när profildata hämtas från Adobe Expe
 
 Resan kommer att respektera den sammanslagningspolicy som används under hela resan. Om flera målgrupper används i en resa (t.ex. i&quot;inAudience&quot;-funktioner), vilket skapar inkonsekvenser med den sammanfogningspolicy som används under resan, uppstår därför ett fel och publiceringen blockeras. Men om en inkonsekvent målgrupp används i meddelandepersonalisering visas ingen varning trots inkonsekvensen. Därför rekommenderar vi att du kontrollerar vilken sammanfogningspolicy som är kopplad till målgruppen när den här målgruppen används i meddelandepersonalisering.
 
-Mer information om kopplingsregler finns i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
+Mer information om sammanfogningsprinciper finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.

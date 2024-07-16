@@ -21,15 +21,15 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="ajo_homepage_card4"
 >title="Designa e-postmeddelanden"
->abstract="Använd **Adobe Journey Optimizer** för att skicka e-postmeddelanden till kunderna. Du kan skapa, anpassa och förhandsgranska meddelanden i e-post-Designer."
+>abstract="Använd **Adobe Journey Optimizer** för att skicka e-postmeddelanden till dina kunder. Du kan skapa, anpassa och förhandsgranska meddelanden i e-post-Designer."
 
-Använd [!DNL Journey Optimizer] för att skicka e-postmeddelanden till kunderna. Du kan skapa, anpassa och förhandsgranska meddelanden i e-post-Designer.
+Använd [!DNL Journey Optimizer] för att skicka e-postmeddelanden till dina kunder. Du kan skapa, anpassa och förhandsgranska meddelanden i e-post-Designer.
 
 E-postleveranser kan skapas:
 
-* I en **Resa**: när du har lagt till en **[!UICONTROL Email]** -aktiviteten på din resa och definierade grundläggande inställningar, använd **[!UICONTROL Actions: Email]** höger ruta för att skapa innehållet för meddelandet. [Lär dig skapa en resa](../building-journeys/journey-gs.md)
+* I en **resa**: när du har lagt till en **[!UICONTROL Email]**-aktivitet på din resa, och har definierat grundläggande inställningar, använder du den högra panelen i **[!UICONTROL Actions: Email]** för att skapa innehållet för meddelandet. [Lär dig skapa en resa](../building-journeys/journey-gs.md)
 
-* I en **Campaign**: när du har skapat en kampanj väljer du **[!UICONTROL Email]** som din åtgärd och definiera grundläggande inställningar. [Lär dig skapa en kampanj](../campaigns/create-campaign.md#configure)
+* I en **kampanj**: när du har skapat en kampanj väljer du **[!UICONTROL Email]** som din åtgärd och definierar grundläggande inställningar. [Lär dig skapa en kampanj](../campaigns/create-campaign.md#configure)
 
 
 >[!IMPORTANT]

@@ -19,14 +19,14 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_exd_items"
 >title="Hantera beslutsobjekt"
->abstract="Med Journey Optimizer kan ni skapa marknadsföringserbjudanden, så kallade beslutsobjekt, som ni kan skapa och ordna i en centraliserad katalog och samlingar. För närvarande konsolideras alla skapade beslutsobjekt i en enda katalog för erbjudanden. Från den här skärmen kan du även komma åt katalogschemat via **Redigera schema** och skapa anpassade attribut för dina beslutsobjekt."
+>abstract="Med Journey Optimizer kan ni skapa marknadsföringserbjudanden, så kallade beslutsobjekt, som ni kan skapa och ordna i en centraliserad katalog och samlingar. För närvarande konsolideras alla skapade beslutsobjekt i en enda katalog för erbjudanden. Från den här skärmen kan du även komma åt katalogschemat med knappen **Redigera schema** och skapa anpassade attribut för dina beslutsobjekt."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/decision-items/catalogs.html" text="Konfigurera artikelkatalogen"
 
 Med Journey Optimizer kan ni skapa marknadsföringserbjudanden, så kallade beslutsobjekt, som ni kan skapa och ordna i en centraliserad katalog och samlingar. De består av standardattribut och anpassade attribut som är anpassade efter just dina behov. Dessutom innehåller de profilbegränsningar som gör att du kan definiera till vilka ett beslutsobjekt kan visas.
 
-Kontrollera att du har skapat en **beslutsregel** om du vill ange villkor för att bestämma vem beslutsobjektet kan visas för. [Lär dig hur du skapar beslutsregler](rules.md).
+Innan du skapar ett beslutsobjekt måste du se till att du har skapat en **beslutsregel** om du vill ange villkor för att avgöra vem beslutsobjektet kan visas för. [Lär dig skapa beslutsregler](rules.md).
 
-Om du vill skapa ett beslutsobjekt går du till **[!UICONTROL Experience Decisioning]** > **[!UICONTROL  Catalogs]** och sedan klicka **[!UICONTROL Create item]** följer du de steg som beskrivs i avsnitten nedan.
+Om du vill skapa ett beslutsobjekt går du till **[!UICONTROL Experience Decisioning]** > **[!UICONTROL  Catalogs]** och klickar sedan på **[!UICONTROL Create item]**. Följ sedan stegen som beskrivs i avsnitten nedan.
 
 ## Definiera beslutsobjektets attribut {#attributes}
 
@@ -47,14 +47,14 @@ Börja med att definiera beslutsobjektets standardattribut och anpassade attribu
 
 1. Ange ett namn och en beskrivning.
 1. Ange start- och slutdatum. Posten kommer endast att beaktas av beslutsmotorn inom dessa datum.
-1. Ange **[!UICONTROL Priority]** för beslutsobjektet jämfört med andra, om en profil kvalificerar för flera poster. En högre prioritet ger objektet företräde framför andra.
-1. The **Taggar** I kan du tilldela enhetliga Adobe Experience Platform-taggar till dina beslutsobjekt. På så sätt kan du enkelt klassificera dem och förbättra sökningen. [Lär dig hur du arbetar med taggar](../start/search-filter-categorize.md#tags)
+1. Ange **[!UICONTROL Priority]** för beslutsobjektet jämfört med andra, om en profil kvalificerar för flera objekt. En högre prioritet ger objektet företräde framför andra.
+1. I fältet **Taggar** kan du tilldela enhetliga Adobe Experience Platform-taggar till dina beslutsobjekt. På så sätt kan du enkelt klassificera dem och förbättra sökningen. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags)
 
    >[!NOTE]
    >
    >Prioriteten är en heltalsdatatyp. Alla attribut som är heltalsdatatyper ska innehålla heltalsvärden (inga decimaler).
 
-1. Ange anpassade attribut (valfritt). Anpassade attribut är specifika attribut som är anpassade efter dina behov och som du kan tilldela till ett beslutsobjekt. De definieras i beslutsobjektens katalogschema. [Lär dig hur du arbetar med kataloger](catalogs.md)
+1. Ange anpassade attribut (valfritt). Anpassade attribut är specifika attribut som är anpassade efter dina behov och som du kan tilldela till ett beslutsobjekt. De definieras i beslutsobjektens katalogschema. [Lär dig arbeta med kataloger](catalogs.md)
 
 1. När beslutsobjektets attribut har definierats klickar du på **[!UICONTROL Next]**.
 
@@ -73,19 +73,19 @@ Som standard är alla profiler berättigade att ta emot beslutsobjektet, men du 
 
 En målgrupps utdata är i princip en lista med profiler, medan en beslutsregel är en funktion som körs på begäran mot en enskild profil under beslutsprocessen.
 
-* **Målgrupper**: Å ena sidan är målgrupperna en grupp Adobe Experience Platform-profiler som matchar en viss logik baserat på profilattribut och upplevelsehändelser. Erbjudandehanteringen innebär dock inte att publiken beräknas om, vilket kanske inte är aktuellt när erbjudandet presenteras.
+* **Publiker**: Å ena sidan är målgrupper en grupp Adobe Experience Platform-profiler som matchar en viss logik baserat på profilattribut och upplevelsehändelser. Erbjudandehanteringen innebär dock inte att publiken beräknas om, vilket kanske inte är aktuellt när erbjudandet presenteras.
 
 * **Beslutsregler**: Å andra sidan baseras en beslutsregel på data som är tillgängliga i Adobe Experience Platform och avgör till vem ett erbjudande kan visas. När regeln har valts i ett erbjudande eller i ett beslut för en viss placering verkställs den varje gång ett beslut fattas, vilket säkerställer att varje profil får det senaste och bästa erbjudandet.
 
 +++
 
-* Om du vill begränsa presentationen av beslutsobjektet till medlemmarna i en eller flera av Adobe Experience Platform målgrupper väljer du **[!UICONTROL Visitors who fall into one or multiple audiences]** lägg sedan till en eller flera målgrupper från den vänstra rutan och kombinera dem med **[!UICONTROL And]** / **[!UICONTROL Or]** logiska operatorer. [Läs mer om målgrupper](../audience/about-audiences.md).
+* Om du vill begränsa presentationen av beslutsobjektet till medlemmar i en eller flera Adobe Experience Platform-målgrupper väljer du alternativet **[!UICONTROL Visitors who fall into one or multiple audiences]**, lägger sedan till en eller flera målgrupper från den vänstra rutan och kombinerar dem med de logiska operatorerna **[!UICONTROL And]** / **[!UICONTROL Or]** . [Läs mer om målgrupper](../audience/about-audiences.md).
 
-* Om du vill koppla en specifik beslutsregel till beslutsobjektet väljer du **[!UICONTROL By rule]** drar du sedan den önskade regeln från den vänstra rutan till det centrala området. [Läs mer om beslutsregler](rules.md).
+* Om du vill koppla en specifik beslutsregel till beslutsobjektet väljer du **[!UICONTROL By rule]** och drar sedan önskad regel från den vänstra rutan till den centrala delen. [Läs mer om beslutsregler](rules.md).
 
 ![](assets/item-constraints.png)
 
-När du väljer målgrupper eller beslutsregler kan du se information om de uppskattade kvalificerade profilerna. Klicka **[!UICONTROL Refresh]** för att uppdatera data.
+När du väljer målgrupper eller beslutsregler kan du se information om de uppskattade kvalificerade profilerna. Klicka på **[!UICONTROL Refresh]** för att uppdatera data.
 
 >[!NOTE]
 >
@@ -102,46 +102,46 @@ Begränsning används som en begränsning för att definiera det maximala antal 
 >
 >Det kan ta upp till 3 sekunder att uppdatera värdet för den räknare som används. Anta att du visar en webbanderoll som visar ett erbjudande på din webbplats. Om en viss användare bläddrar till nästa sida på webbplatsen på mindre än 3 sekunder ökas inte räknarvärdet för den användaren.
 
-Klicka på knappen **[!UICONTROL Create capping]** följer du dessa steg:
+Klicka på knappen **[!UICONTROL Create capping]** och följ sedan de här stegen för att ange regler för fästning för beslutsobjektet:
 
-1. Definiera vilken **[!UICONTROL Capping event]** beaktas för att öka räknaren.
+1. Ange vilken **[!UICONTROL Capping event]** som ska beaktas för att öka räknaren.
 
    * **[!UICONTROL Decision event]** (standardvärde): Maximalt antal gånger ett erbjudande kan presenteras.
    * **[!UICONTROL Impression]** (endast inkommande kanaler): Maximalt antal gånger som erbjudandet kan visas för en användare.
    * **[!UICONTROL Clicks]**: Maximalt antal gånger en användare kan klicka på beslutsobjektet.
-   * **[!UICONTROL Custom event]**: Du kan definiera en anpassad händelse som ska användas för att ange hur många gånger objektet ska skickas. Du kan t.ex. sätta ett tak för antalet inlösen tills de är lika med 10000 eller tills en viss profil har lösts in 1 gång. Om du vill göra det använder du [Adobe Experience Platform XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"} scheman för att skapa en anpassad händelseregel.
+   * **[!UICONTROL Custom event]**: Du kan definiera en anpassad händelse som ska användas för att ange hur många gånger objektet ska skickas. Du kan t.ex. sätta ett tak för antalet inlösen tills de är lika med 10000 eller tills en viss profil har lösts in 1 gång. Använd [Adobe Experience Platform XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}-scheman för att skapa en anpassad händelseregel.
 
    >[!NOTE]
    >
    >För alla takthändelser utom beslutshändelser kanske feedback för beslutshanteringen inte samlas in automatiskt, vilket kan leda till att appningsräknaren inte ökas korrekt. För att vara säker på att varje takthändelse spåras och tas med i appningsräknaren måste du se till att schemat som används för att samla in upplevelsehändelser innehåller rätt fältgrupp för den händelsen. Detaljerad information om datainsamling finns i Journey Optimizer beslutsdokumentation:
-   >* [Insamling av data för beslutshantering](../offers/data-collection/data-collection.md)
+   >* [Datainsamling för beslutshantering](../offers/data-collection/data-collection.md)
    >* [Konfigurera datainsamling](../offers/data-collection/schema-requirement.md)
 
 1. Välj typ av begränsning:
 
-   * Välj **[!UICONTROL In total]** för att definiera hur många gånger objektet kan föreslås för den kombinerade målgruppen, vilket betyder för alla användare. Om du till exempel är en återförsäljare av elektronikprodukter och har en &quot;TV-affär&quot; vill du att erbjudandet bara ska returneras 200 gånger för alla profiler.
+   * Välj **[!UICONTROL In total]** om du vill definiera hur många gånger objektet kan föreslås för den kombinerade målgruppen, vilket betyder för alla användare. Om du till exempel är en återförsäljare av elektronikprodukter och har en &quot;TV-affär&quot; vill du att erbjudandet bara ska returneras 200 gånger för alla profiler.
 
-   * Välj **[!UICONTROL Per profile]** för att definiera hur många gånger erbjudandet kan erbjudas en och samma användare. Om du till exempel är en bank med ett Platinum-kreditkortserbjudande vill du inte att det här erbjudandet ska visas mer än fem gånger per profil. Ni tror faktiskt att om användaren har sett erbjudandet fem gånger och inte har följt det, har de större chans att agera på nästa bästa erbjudande.
+   * Välj **[!UICONTROL Per profile]** om du vill definiera hur många gånger erbjudandet kan föreslås för samma användare. Om du till exempel är en bank med ett Platinum-kreditkortserbjudande vill du inte att det här erbjudandet ska visas mer än fem gånger per profil. Ni tror faktiskt att om användaren har sett erbjudandet fem gånger och inte har följt det, har de större chans att agera på nästa bästa erbjudande.
 
-1. I **[!UICONTROL Capping count limit]** anger du hur många gånger erbjudandet kan visas för alla användare eller per profil, beroende på vilken typ av appning som valts. Talet måste vara ett heltal större än 0.
+1. I fältet **[!UICONTROL Capping count limit]** anger du hur många gånger erbjudandet kan visas för alla användare eller per profiler, beroende på den valda begränsningstypen. Talet måste vara ett heltal större än 0.
 
-   Du har till exempel definierat en anpassad capping-händelse som antalet utcheckningar som ska beaktas. Om du anger 10 i dialogrutan **[!UICONTROL Capping count limit]** inga fler erbjudanden skickas efter 10 utcheckningar.
+   Du har till exempel definierat en anpassad capping-händelse som antalet utcheckningar som ska beaktas. Om du anger 10 i fältet **[!UICONTROL Capping count limit]** skickas inga fler erbjudanden efter 10 utcheckningar.
 
-1. I **[!UICONTROL Reset capping frequency]** i den nedrullningsbara listan anger hur ofta räknaren återställs. Det gör du genom att definiera tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och ange hur många dagar/veckor/månader du vill ha. Om du till exempel vill att antalet fästingar ska återställas varannan vecka väljer du **[!UICONTROL Weekly]** från motsvarande nedrullningsbar lista och typ **2** i det andra fältet.
+1. I listrutan **[!UICONTROL Reset capping frequency]** anger du med vilken frekvens räknaren för fästning ska återställas. Det gör du genom att definiera tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och ange hur många dagar/veckor/månader du vill ha. Om du till exempel vill att antalet capping ska återställas varannan vecka, väljer du **[!UICONTROL Weekly]** i motsvarande listruta och skriver **** i det andra fältet.
 
    >[!NOTE]
    >
-   >Räknaren för frekvensbegränsning återställs på **12 am UTC**, den dag du definierade eller den första dagen i veckan/månaden, om tillämpligt. Veckostartdagen är **söndag**. Den längd du väljer får inte överskrida **2 år** (dvs. motsvarande antal månader, veckor eller dagar).
+   >Räknaren för frekvensbegränsning återställs kl. **12 UTC**, den dag du definierade eller den första dagen i veckan/månaden, om tillämpligt. Veckostartdagen är **Söndag**. En varaktighet som du väljer får inte vara längre än **2 år** (d.v.s. motsvarande antal månader, veckor eller dagar).
    >
-   >När du har publicerat din beslutspost kan du inte ändra tidsperioden (månadsvis, veckovis eller dagligen) som du har valt för frekvensen. Du kan fortfarande redigera frekvensbegränsningen om objektet har **[!UICONTROL Draft]** status och har aldrig publicerats tidigare med frekvensbegränsning aktiverad.
+   >När du har publicerat din beslutspost kan du inte ändra tidsperioden (månadsvis, veckovis eller dagligen) som du har valt för frekvensen. Du kan fortfarande redigera frekvensbegränsningen om objektet har statusen **[!UICONTROL Draft]** och aldrig har publicerats tidigare med frekvensbegränsning aktiverad.
 
-1. Klicka **[!UICONTROL Create]** för att bekräfta att en regel har skapats. Du kan skapa upp till 10 regler för ett enskilt beslutsobjekt. Klicka på **[!UICONTROL Create capping]** och upprepa stegen ovan.
+1. Klicka på **[!UICONTROL Create]** för att bekräfta skapandet av begränsningsregeln. Du kan skapa upp till 10 regler för ett enskilt beslutsobjekt. Om du vill göra det klickar du på knappen **[!UICONTROL Create capping]** och upprepar stegen ovan.
 
    ![](assets/item-capping-rules.png)
 
-1. När du har definierat regler för behörighet och begränsning för beslutsobjektet klickar du på **[!UICONTROL Next]** för att granska och spara objektet.
+1. När du har definierat beslutsobjektets regler för behörighet och begränsning klickar du på **[!UICONTROL Next]** för att granska och spara objektet.
 
-1. Beslutsobjektet visas nu i listan med **[!UICONTROL Draft]** status. Klicka på ellipsknappen och markera när den är klar att visas för profiler **[!UICONTROL Approve]**.
+1. Beslutsobjektet visas nu i listan med statusen **[!UICONTROL Draft]**. Klicka på ellipsknappen och välj **[!UICONTROL Approve]** när det är klart att visas för profiler.
 
    ![](assets/item-approve.png)
 
@@ -150,7 +150,7 @@ If a marketer wants to determine how many times a specific customer has been sho
 
 ## Hantera beslutsobjekt {#manage}
 
-I listan över beslutsobjekt kan du redigera ett beslutsobjekt och ändra dess status (**Utkast**, **Godkänd**, **Arkiverad**), duplicera eller ta bort den.
+I listan över beslutsobjekt kan du redigera ett beslutsobjekt, ändra dess status (**Utkast**, **Godkänt**, **Arkiverat**), duplicera eller ta bort det.
 
 Om du vill ändra ett beslutsobjekt öppnar du det, gör ändringarna och sparar det.
 
@@ -158,7 +158,7 @@ Om du väljer ett beslutsobjekt eller klickar på ellipsknappen aktiveras de åt
 
 * **[!UICONTROL Approve]**: Anger beslutsobjektets status till Godkänd.
 * **[!UICONTROL Undo approve]**: Anger beslutsobjektets status tillbaka till **[!UICONTROL Draft]**.
-* **[!UICONTROL Duplicate]**: Skapar ett beslutsobjekt med identiska attribut och begränsningar. Som standard har det nya objektet **[!UICONTROL Draft]** status.
+* **[!UICONTROL Duplicate]**: Skapar ett beslutsobjekt med identiska attribut och begränsningar. Som standard har det nya objektet statusen **[!UICONTROL Draft]**.
 * **[!UICONTROL Delete]**: Tar bort beslutsobjektet från listan.
 
   >[!IMPORTANT]

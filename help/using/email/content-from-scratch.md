@@ -21,22 +21,22 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ac_structure_components_email"
 >title="Lägg till strukturkomponenter"
->abstract="Strukturkomponenter definierar layouten för e-postmeddelandet. Dra och släpp en **Struktur** på arbetsytan för att börja designa ditt e-postinnehåll."
+>abstract="Strukturkomponenter definierar layouten för e-postmeddelandet. Dra och släpp en **Structure**-komponent på arbetsytan för att börja designa ditt e-postinnehåll."
 
 >[!CONTEXTUALHELP]
 >id="ac_structure_components_landing_page"
 >title="Lägg till strukturkomponenter"
->abstract="Strukturkomponenter definierar landningssidans layout. Dra och släpp en **Struktur** till arbetsytan för att börja designa innehållet på landningssidan."
+>abstract="Strukturkomponenter definierar landningssidans layout. Dra och släpp en **Structure**-komponent på arbetsytan för att börja designa innehållet på landningssidan."
 
 >[!CONTEXTUALHELP]
 >id="ac_structure_components_fragment"
 >title="Lägg till strukturkomponenter"
->abstract="Strukturkomponenter definierar fragmentets layout. Dra och släpp en **Struktur** till arbetsytan för att börja designa innehållet i fragmentet."
+>abstract="Strukturkomponenter definierar fragmentets layout. Dra och släpp en **Structure**-komponent på arbetsytan för att börja designa innehållet i fragmentet."
 
 >[!CONTEXTUALHELP]
 >id="ac_structure_components_template"
 >title="Lägg till strukturkomponenter"
->abstract="Strukturkomponenter definierar mallens layout. Dra och släpp en **Struktur** på arbetsytan för att börja designa innehållet i mallen."
+>abstract="Strukturkomponenter definierar mallens layout. Dra och släpp en **Struktur**-komponent på arbetsytan för att börja designa innehållet i mallen."
 
 
 >[!CONTEXTUALHELP]
@@ -64,7 +64,7 @@ Använd Adobe Journey Optimizer Designer för att enkelt definiera innehållsstr
 
 Följ stegen nedan när du vill börja skapa ditt innehåll:
 
-1. På Designer hemsida väljer du **[!UICONTROL Design from scratch]** alternativ.
+1. På Designer hemsida väljer du alternativet **[!UICONTROL Design from scratch]**.
 
    ![](assets/email_designer.png)
 
@@ -76,23 +76,23 @@ Följ stegen nedan när du vill börja skapa ditt innehåll:
 
    <!--Once placed in the email, you cannot move nor remove your components unless there is already a content component or a fragment placed inside. This is not true in AJO - TBC?-->
 
-1. Lägg till så många **[!UICONTROL Structures]** vid behov och redigera inställningarna i den dedikerade rutan till höger.
+1. Lägg till så många **[!UICONTROL Structures]** som behövs och redigera inställningarna i den dedikerade rutan till höger.
 
    ![](assets/email_designer_structure_components.png)
 
-   Välj **[!UICONTROL n:n column]** -komponent för att definiera hur många kolumner du vill ha (mellan 3 och 10). Du kan också definiera bredden på varje kolumn genom att flytta pilarna längst ned i varje kolumn.
+   Välj komponenten **[!UICONTROL n:n column]** för att definiera antalet kolumner som du vill använda (mellan 3 och 10). Du kan också definiera bredden på varje kolumn genom att flytta pilarna längst ned i varje kolumn.
 
    >[!NOTE]
    >
    >Varje kolumnstorlek får inte vara mindre än 10 % av strukturkomponentens totala bredd. Du kan inte ta bort en kolumn som inte är tom.
 
-1. Expandera **[!UICONTROL Contents]** och lägg till så många element du behöver i en eller flera strukturkomponenter. [Läs mer om innehållskomponenter](content-components.md)
+1. Expandera avsnittet **[!UICONTROL Contents]** och lägg till så många element du behöver i en eller flera strukturkomponenter. [Läs mer om innehållskomponenter](content-components.md)
 
-1. Varje komponent kan anpassas ytterligare med **[!UICONTROL Settings]** eller **[!UICONTROL Style]** i den högra menyn. Du kan till exempel ändra textstil, utfyllnad eller marginal för varje komponent. [Läs mer om justering och utfyllnad](alignment-and-padding.md)
+1. Varje komponent kan anpassas ytterligare med flikarna **[!UICONTROL Settings]** eller **[!UICONTROL Style]** på den högra menyn. Du kan till exempel ändra textstil, utfyllnad eller marginal för varje komponent. [Läs mer om justering och utfyllnad](alignment-and-padding.md)
 
    ![](assets/email_designer_structure_component.png)
 
-1. Från **[!UICONTROL Asset picker]** kan du välja resurser som lagras i **[!UICONTROL Assets library]**. [Läs mer om resurshantering](../content-management/assets.md)
+1. Från **[!UICONTROL Asset picker]** kan du välja resurser som lagras direkt i **[!UICONTROL Assets library]**. [Läs mer om resurshantering](../content-management/assets.md)
 
    Dubbelklicka på den mapp som innehåller dina resurser. Dra och släpp dem i en strukturkomponent.
 
@@ -102,22 +102,22 @@ Följ stegen nedan när du vill börja skapa ditt innehåll:
 
    ![](assets/email_designer_personalization.png)
 
-1. Klicka **[!UICONTROL Enable condition content]** för att lägga till dynamiskt innehåll och anpassa innehållet till målprofilerna baserat på villkorliga regler. [Kom igång med dynamiskt innehåll](../personalization/get-started-dynamic-content.md)
+1. Klicka på **[!UICONTROL Enable condition content]** om du vill lägga till dynamiskt innehåll och anpassa innehållet till målprofilerna baserat på villkorliga regler. [Kom igång med dynamiskt innehåll](../personalization/get-started-dynamic-content.md)
 
    ![](assets/email_designer_dynamic-content.png)
 
-1. Klicka på **[!UICONTROL Links]** från den vänstra panelen för att visa alla URL:er för ditt innehåll som ska spåras. Du kan ändra deras **[!UICONTROL Tracking Type]** eller **[!UICONTROL Label]** och lägga till **[!UICONTROL Tags]** vid behov. [Läs mer om länkar och spårning](message-tracking.md)
+1. Klicka på fliken **[!UICONTROL Links]** i den vänstra rutan för att visa alla URL:er för ditt innehåll som ska spåras. Du kan ändra deras **[!UICONTROL Tracking Type]** eller **[!UICONTROL Label]** och lägga till **[!UICONTROL Tags]** vid behov. [Läs mer om länkar och spårning](message-tracking.md)
 
    ![](assets/email_designer_links.png)
 
-1. Om det behövs kan du anpassa e-postmeddelandet ytterligare genom att klicka på **[!UICONTROL Switch to code editor]** på den avancerade menyn. På så sätt kan du redigera e-postkällkoden, till exempel för att lägga till spårningstaggar eller anpassade HTML-taggar. [Läs mer om kodredigeraren](code-content.md)
+1. Om det behövs kan du anpassa din e-post ytterligare genom att klicka på **[!UICONTROL Switch to code editor]** på den avancerade menyn. På så sätt kan du redigera e-postkällkoden, till exempel för att lägga till spårningstaggar eller anpassade HTML-taggar. [Läs mer om kodredigeraren](code-content.md)
 
    >[!CAUTION]
    >
    >Du kan inte återgå till den visuella designern för det här e-postmeddelandet efter att du har växlat till kodredigeraren.
 
-1. Klicka på **[!UICONTROL Simulate content]** för att kontrollera återgivningen. Du kan välja skrivbordsvy eller mobilvy. Detaljerad information om hur du väljer testprofiler och förhandsgranskar innehållet finns i [Innehållshantering](../content-management/preview-test.md) -avsnitt.
+1. När innehållet är klart klickar du på knappen **[!UICONTROL Simulate content]** för att kontrollera återgivningen. Du kan välja skrivbordsvy eller mobilvy. Detaljerad information om hur du väljer testprofiler och förhandsgranskar innehåll finns i avsnittet [Innehållshantering](../content-management/preview-test.md).
 
    ![](assets/email_designer_simulate_content.png)
 
-1. När innehållet är klart klickar du **[!UICONTROL Save]**.
+1. När innehållet är klart klickar du på **[!UICONTROL Save]**.
