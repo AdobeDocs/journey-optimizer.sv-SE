@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, publicering
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
+source-git-commit: ab4219c7045f9c4ba77fceb2cbb46fbbe6f536ac
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 1%
@@ -20,25 +20,25 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->För att kunna testa och publicera landningssidor måste du ha **[!UICONTROL Publish Messages]** behörighet.
+>För att kunna testa och publicera landningssidor måste du ha behörighet **[!UICONTROL Publish Messages]**.
 
-Om du vill dirigera kunderna till en definierad webbsida som du vill visa när de klickar på en viss länk skapar du en landningssida i [!DNL Journey Optimizer], konfigurera den primära sidan och eventuella underordnade sidor, testa den och publicera den.
+Om du vill dirigera dina kunder till en definierad webbsida som du vill visa när de klickar på en viss länk, skapar du en landningssida i [!DNL Journey Optimizer], konfigurerar den primära sidan och eventuella underordnade sidor, testar den och publicerar den.
 
 >[!CAUTION]
 >
->Du kan inte komma åt landningssidan genom att kopiera och klistra in den URL-adress som definierats i en webbläsare när [skapa sidan](#create-landing-page), även om de är publicerade. I stället kan du testa den med förhandsvisningsfunktionen som beskrivs i [det här avsnittet](#test-landing-page).
+>Du kan inte komma åt din landningssida genom att kopiera och klistra in den URL-adress som definierades när [sidan skapades](#create-landing-page) i en webbläsare, även om den publicerades. I stället kan du testa den med förhandsvisningsfunktionen som beskrivs i [det här avsnittet](#test-landing-page).
 
 ## Åtkomst till landningssidor {#access-landing-pages}
 
-Om du vill få åtkomst till landningssidans lista väljer du **[!UICONTROL Journey Management]** > **[!UICONTROL Landing pages]** från den vänstra menyn.
+Välj **[!UICONTROL Journey Management]** > **[!UICONTROL Landing pages]** på den vänstra menyn för att komma åt landningssidans lista.
 
 ![](assets/lp_access-list.png)
 
-The **[!UICONTROL Landing Pages]** visas alla objekt som har skapats. Du kan filtrera dem baserat på deras status eller ändringsdatum.
+Listan **[!UICONTROL Landing Pages]** visar alla objekt som skapats. Du kan filtrera dem baserat på deras status eller ändringsdatum.
 
 ![](assets/lp_access-list-filter.png)
 
-I den här listan kan du komma åt [landningssida Live-rapport](../reports/lp-report-live.md) eller [Global rapport för landningssida](../reports/lp-report-global.md) för publicerade objekt.
+Från den här listan kan du komma åt [landningssidans Live-rapport](../reports/lp-report-live.md) eller [landningssidans globala rapport](../reports/lp-report-global.md) för publicerade objekt.
 
 Du kan också ta bort, duplicera och avpublicera en landningssida.
 
@@ -52,7 +52,7 @@ Klicka på de tre punkterna bredvid en landningssida för att välja önskad åt
 
 >[!NOTE]
 >
->Du kan inte ta bort en [publicerad](#publish-landing-page) landningssida. Om du vill ta bort den måste du först avpublicera den.
+>Du kan inte ta bort en [publicerad](#publish-landing-page)-landningssida. Om du vill ta bort den måste du först avpublicera den.
 
 ## Skapa en landningssida {#create-landing-page}
 
@@ -73,7 +73,7 @@ De viktigaste stegen för att skapa landningssidor är följande:
 
 ![](assets/lp-creation-process.png)
 
-1. I listan över landningssidor klickar du på **[!UICONTROL Create landing page]**.
+1. Klicka på **[!UICONTROL Create landing page]** i listan över landningssidor.
 
    ![](assets/lp_create-lp.png)
 
@@ -81,9 +81,9 @@ De viktigaste stegen för att skapa landningssidor är följande:
 
    ![](assets/lp_create-lp-details.png)
 
-1. Om du vill tilldela etiketter för anpassad eller grundläggande dataanvändning till landningssidan väljer du **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md)
+1. Välj **[!UICONTROL Manage access]** om du vill tilldela etiketter för anpassad eller viktig dataanvändning till landningssidan. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md)
 
-1. Markera eller skapa Adobe Experience Platform-taggar från **[!UICONTROL Tags]** fält för att kategorisera landningssidan för förbättrad sökning. [Läs mer](../start/search-filter-categorize.md#tags)
+1. Välj eller skapa Adobe Experience Platform-taggar från fältet **[!UICONTROL Tags]** för att kategorisera landningssidan för förbättrad sökning. [Läs mer](../start/search-filter-categorize.md#tags)
 
 1. Välj en förinställning. Lär dig hur du skapar förinställningar för landningssidor i [det här avsnittet](../landing-pages/lp-presets.md#lp-create-preset).
 
@@ -99,7 +99,7 @@ De viktigaste stegen för att skapa landningssidor är följande:
 
    ![](assets/lp_add-subpage.png)
 
-När du har konfigurerat och utformat [primär sida](#configure-primary-page)och [undersidor](#configure-subpages) om det finns något, kan du [test](#test-landing-page) och [publicera](#publish-landing-page) din landningssida.
+När du har konfigurerat och utformat den [primära sidan](#configure-primary-page) och eventuella [underordnade sidor](#configure-subpages) kan du [testa](#test-landing-page) och [publicera](#publish-landing-page) din landningssida.
 
 >[!CAUTION]
 >
@@ -117,20 +117,20 @@ När du har konfigurerat och utformat [primär sida](#configure-primary-page)och
 >id="ajo_lp_access_settings"
 >title="Ange URL-adress för landningssida"
 >abstract="I det här avsnittet definierar du en unik URL för landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan som en del av den förinställning du valde."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/lp-configuration/lp-subdomains.html" text="Konfigurera underdomäner för landningssidor"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/landing-pages/lp-configuration/lp-subdomains" text="Konfigurera underdomäner för landningssidor"
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/lp-configuration/lp-presets.html#lp-create-preset" text="Skapa förinställningar för landningssidor"
 
 Den primära sidan är den sida som visas omedelbart för användarna efter att de har klickat på länken till din landningssida, till exempel från ett e-postmeddelande eller en webbplats.
 
 Följ stegen nedan för att definiera inställningarna för den primära sidan.
 
-1. Du kan ändra sidnamnet, vilket är **[!UICONTROL Primary page]** som standard.
+1. Du kan ändra sidnamnet, som är **[!UICONTROL Primary page]** som standard.
 
-1. Redigera innehållet på sidan med hjälp av innehållsdesignern. Lär dig definiera innehåll för landningssidor [här](design-lp.md).
+1. Redigera innehållet på sidan med hjälp av innehållsdesignern. Lär dig hur du definierar innehåll för landningssidan [här](design-lp.md).
 
    ![](assets/lp_open-designer.png)
 
-1. Definiera URL-adressen till landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan som en del av [förinställning](../landing-pages/lp-presets.md#lp-create-preset) du markerade. [Läs mer](../landing-pages/lp-subdomains.md)
+1. Definiera URL-adressen till landningssidan. Den första delen av URL:en kräver att du tidigare har konfigurerat en underdomän för landningssidan som en del av den [förinställning](../landing-pages/lp-presets.md#lp-create-preset) som du valde. [Läs mer](../landing-pages/lp-subdomains.md)
 
    >[!CAUTION]
    >
@@ -152,25 +152,25 @@ Följ stegen nedan för att definiera inställningarna för den primära sidan.
 
 1. Du kan ange ett förfallodatum för sidan. I så fall måste du välja en åtgärd när sidan förfaller:
 
-   * **[!UICONTROL Redirect URL]**: Ange URL-adressen till sidan som användarna ska omdirigeras till när sidan förfaller.
+   * **[!UICONTROL Redirect URL]**: Ange URL-adressen till sidan som användarna kommer att omdirigeras till när sidan förfaller.
    * **[!UICONTROL Custom page]**: [Konfigurera en undersida](#configure-subpages) och välj den i listrutan som visas.
    * **[!UICONTROL Browser error]**: Skriv den feltext som ska visas i stället för sidan.
 
    ![](assets/lp_expiry-date.png)
 
-1. I **[!UICONTROL Additional data]** definierar du en eller flera nycklar och deras motsvarande parametervärden. Du kan använda dessa tangenter i innehållet på din primära sida och dina underordnade sidor med [personaliseringsredigerare](../personalization/personalization-build-expressions.md). Läs mer i [det här avsnittet](lp-content.md#use-form-component#use-additional-data).
+1. I avsnittet **[!UICONTROL Additional data]** definierar du en eller flera nycklar och deras motsvarande parametervärden. Du kan använda dessa nycklar i innehållet på din primära sida och dina underordnade sidor med [anpassningsredigeraren](../personalization/personalization-build-expressions.md). Läs mer i [det här avsnittet](lp-content.md#use-form-component#use-additional-data).
 
    ![](assets/lp_create-lp-additional-data.png)
 
-1. Om du valde en eller flera prenumerationer visas [utforma den primära sidan](design-lp.md)visas de i **[!UICONTROL Subscription list]** -avsnitt.
+1. Om du valde en eller flera prenumerationslistor när [du designade den primära sidan](design-lp.md) visas de i avsnittet **[!UICONTROL Subscription list]**.
 
    ![](assets/lp_subscription-list.png)
 
-1. Från landningssidan kan du [skapa en resa](../building-journeys/journey-gs.md#jo-build) som skickar ett bekräftelsemeddelande till användarna när de skickar formuläret. Lär dig hur du skapar en sådan resa i slutet av detta [användningsfall](lp-use-cases.md#subscription-to-a-service).
+1. Från landningssidan kan du direkt [skapa en resa](../building-journeys/journey-gs.md#jo-build) som skickar ett bekräftelsemeddelande till användare när de skickar formuläret. Lär dig hur du skapar en sådan resa i slutet av det här [användningsfallet](lp-use-cases.md#subscription-to-a-service).
 
    ![](assets/lp_create-journey.png)
 
-   Klicka **[!UICONTROL Create journey]** omdirigeras till **[!UICONTROL Journey Management]** > **[!UICONTROL Journeys]** lista.
+   Klicka på **[!UICONTROL Create journey]** om du vill omdirigeras till listan **[!UICONTROL Journey Management]** > **[!UICONTROL Journeys]**.
 
 ## Konfigurera undersidor {#configure-subpages}
 
@@ -191,9 +191,9 @@ Du kan lägga till upp till två undersidor. Du kan till exempel skapa en&quot;t
 
 Följ stegen nedan för att definiera inställningar för undersidan.
 
-1. Du kan ändra sidnamnet, vilket är **[!UICONTROL Subpage 1]** som standard.
+1. Du kan ändra sidnamnet, som är **[!UICONTROL Subpage 1]** som standard.
 
-1. Redigera innehållet på sidan med hjälp av innehållsdesignern. Lär dig definiera innehåll för landningssidor [här](design-lp.md).
+1. Redigera innehållet på sidan med hjälp av innehållsdesignern. Lär dig hur du definierar innehåll för landningssidan [här](design-lp.md).
 
    >[!NOTE]
    >
@@ -217,29 +217,29 @@ Följ stegen nedan för att definiera inställningar för undersidan.
 >abstract="När du har definierat inställningarna för landningssidan och innehållet kan du använda testprofiler för att förhandsgranska den."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/audiences-profiles-identities/profiles/creating-test-profiles.html" text="Välj testprofiler"
 
-När inställningarna för landningssidan och innehållet har definierats kan du använda testprofiler för att förhandsgranska den. Om du infogade [personaliserat innehåll](../personalization/personalize.md)kan du med hjälp av testprofildata kontrollera hur det här innehållet visas på landningssidan.
+När inställningarna för landningssidan och innehållet har definierats kan du använda testprofiler för att förhandsgranska den. Om du infogade [anpassat innehåll](../personalization/personalize.md) kan du med hjälp av testprofildata kontrollera hur det här innehållet visas på landningssidan.
 
 >[!CAUTION]
 >
->För att kunna testa landningssidor måste du ha **[!UICONTROL Publish Messages]** behörighet.
+>För att kunna testa landningssidor måste du ha behörighet **[!UICONTROL Publish Messages]**.
 >
->Du måste ha testprofiler tillgängliga för att kunna förhandsgranska dina meddelanden och skicka korrektur. Lär dig hur [skapa testprofiler](../audience/creating-test-profiles.md).
+>Du måste ha testprofiler tillgängliga för att kunna förhandsgranska dina meddelanden och skicka korrektur. Lär dig hur du [skapar testprofiler](../audience/creating-test-profiles.md).
 
-1. Klicka på **[!UICONTROL Simulate content]** för att komma åt valet av testprofil.
+1. Klicka på knappen **[!UICONTROL Simulate content]** i landningssidans gränssnitt för att komma åt valet av testprofil.
 
    ![](assets/lp_simulate-button.png)
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Simulate content]** kan även användas av innehållsdesignern.
+   >Knappen **[!UICONTROL Simulate content]** är också tillgänglig från innehållsdesignern.
 
-1. Från **[!UICONTROL Simulate]** väljer du en eller flera testprofiler.
+1. Välj en eller flera testprofiler på skärmen **[!UICONTROL Simulate]**.
 
    ![](assets/lp_test-profiles.png)
 
-   Stegen för att välja testprofiler är desamma som när du testar ett meddelande. De beskrivs i [Innehållshantering](../content-management/test-profiles.md) -avsnitt.
+   Stegen för att välja testprofiler är desamma som när du testar ett meddelande. De beskrivs i avsnittet [Innehållshantering](../content-management/test-profiles.md).
 
-1. Välj **[!UICONTROL Open preview]** för att testa landningssidan.
+1. Välj **[!UICONTROL Open preview]** om du vill testa landningssidan.
 
    ![](assets/lp_open-preview.png)
 
@@ -263,15 +263,15 @@ Varningar visas högst upp till höger på skärmen, som visas nedan:
 
 Två typer av varningar kan inträffa:
 
-* **Varningar** hänvisa till rekommendationer och bästa praxis. <!--For example, a message will display if -->
+* **Varningar** hänvisar till rekommendationer och bästa praxis. <!--For example, a message will display if -->
 
-* **Fel** hindra dig från att publicera landningssidan så länge som de inte är lösta. Du får till exempel en varning om den primära sidans URL saknas.
+* **Fel** hindrar dig från att publicera landningssidan så länge som de inte har lösts. Du får till exempel en varning om den primära sidans URL saknas.
 
 <!--All possible warnings and errors are detailed [below](#alerts-and-warnings).-->
 
 >[!CAUTION]
 >
-> Du måste lösa alla **fel** aviseringar före publicering.
+> Du måste lösa alla **error**-varningar innan du kan publicera.
 
 <!--The settings and elements checked by the system are listed below. You will also find information on how to adapt your configuration to resolve the corresponding issues.
 
@@ -292,7 +292,7 @@ Två typer av varningar kan inträffa:
 
 >[!CAUTION]
 >
->För att kunna publicera landningssidor måste du ha **[!UICONTROL Publish Messages]** behörighet.
+>Om du vill kunna publicera landningssidor måste du ha behörigheten **[!UICONTROL Publish Messages]**.
 
 När landningssidan är klar kan du publicera den för att göra den tillgänglig för användning i ett meddelande.
 
@@ -302,12 +302,12 @@ När landningssidan är klar kan du publicera den för att göra den tillgängli
 >
 >Kontrollera och åtgärda varningar innan du publicerar. [Läs mer](#check-alerts)
 
-När landningssidan har publicerats läggs den till i listan över landningssidor med **[!UICONTROL Published]** status.
+När landningssidan har publicerats läggs den till i listan över landningssidor med statusen **[!UICONTROL Published]**.
 
-Den är nu klar att användas i en [!DNL Journey Optimizer] som skickas via en [resa](../building-journeys/journey.md).
+Det är nu direktsänt och klart att användas i ett [!DNL Journey Optimizer]-meddelande som skickas via en [resa](../building-journeys/journey.md).
 
 >[!NOTE]
 >
->Du kan inte komma åt landningssidan genom att kopiera och klistra in den URL-adress som definierats i en webbläsare när [skapa sidan](#create-landing-page), även om de är publicerade. I stället kan du testa den med förhandsvisningsfunktionen som beskrivs i [det här avsnittet](#test-landing-page).
+>Du kan inte komma åt din landningssida genom att kopiera och klistra in den URL-adress som definierades när [sidan skapades](#create-landing-page) i en webbläsare, även om den publicerades. I stället kan du testa den med förhandsvisningsfunktionen som beskrivs i [det här avsnittet](#test-landing-page).
 
 Ni kan övervaka hur landningssidan påverkas genom specifika rapporter. [Läs mer](../reports/lp-report-live.md)
