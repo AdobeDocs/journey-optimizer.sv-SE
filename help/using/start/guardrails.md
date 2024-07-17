@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: fec6b15db9f8e6b2a07b55bc9e8fc4d9cb0d73d7
+source-git-commit: dcf1edb654639d41472d1e1ca263020df9fb63ec
 workflow-type: tm+mt
 source-wordcount: '2061'
 ht-degree: 0%
@@ -17,27 +17,27 @@ ht-degree: 0%
 
 # Skyddsritningar och begränsningar {#limitations}
 
-Tillstånd, produktbegränsningar och prestandaskydd finns i [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
-Du måste också vara medveten om [Garantier för kundprofildata i realtid innan du startar](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"}.
+Du måste också känna till [Guardsändningar för kundprofildata i realtid innan du startar](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"}.
 
 Nedan finns ytterligare skyddsutkast och begränsningar när du använder [!DNL Adobe Journey Optimizer].
 
 ## Webbläsare som stöds {#browsers}
 
-Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera optimalt i den senaste versionen av Google Chrome. Du kan ha problem med att använda vissa funktioner i äldre versioner eller i andra webbläsare.
+Adobe [!DNL Journey Optimizer]-gränssnittet är utformat för att fungera optimalt i den senaste versionen av Google Chrome. Du kan ha problem med att använda vissa funktioner i äldre versioner eller i andra webbläsare.
 
 ## Meddelandeskyddsutkast {#message-guardrails}
 
 * Du kan inte lägga till bilagor i ett e-postmeddelande med [!DNL Journey Optimizer].
-* Du kan inte använda samma sändande domän för att skicka ut meddelanden från [!DNL Adobe Journey Optimizer] och från en annan produkt, som [!DNL Adobe Campaign] eller [!DNL Adobe Marketo Engage] till exempel.
+* Du kan inte använda samma sändande domän för att skicka ut meddelanden från [!DNL Adobe Journey Optimizer] och från en annan produkt, till exempel [!DNL Adobe Campaign] eller [!DNL Adobe Marketo Engage].
 
 ## Garantier för landningssidor {#lp-guardrails}
 
-* Bara en **Formulär** -komponenten kan användas på en enda primär sida.
-* The **Formulär** -komponenten kan inte användas i undersidor.
+* Endast en **Form**-komponent kan användas på en enda primär sida.
+* Komponenten **Form** kan inte användas i undersidor.
 * Du kan inte lägga till en förrubrik på en landningssida.
-* Du kan inte välja **Koda din egen** när du utformar en primär landningssida.
+* Du kan inte välja alternativet **Kod för egen** när du utformar en primär landningssida.
 
 ## SMS-skyddsräcken {#sms-guardrails}
 
@@ -47,7 +47,7 @@ Adobe [!DNL Journey Optimizer] -gränssnittet är utformat för att fungera opti
 
 ## Underdomänsskydd {#subdomain-guardrails}
 
-Som standard [!DNL Journey Optimizer] Med kan du delegera upp till 10 underdomäner totalt (som omfattar både e-post och webbkanaler).
+Som standard kan du i [!DNL Journey Optimizer] delegera upp till 10 underdomäner totalt (som omfattar både e-post- och webbkanaler).
 
 Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. Kontakta Adobe och läs mer om hur många underdomäner du har rätt till.
 
@@ -70,17 +70,17 @@ Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. K
 ### Allmänna åtgärder {#general-actions-g}
 
 * Tre försök utförs systematiskt om ett fel uppstår. Du kan inte justera antalet försök enligt det mottagna felmeddelandet. Alla HTTP-fel utom HTTP 401, 403 och 404 anges på nytt.
-* Den inbyggda **Reaktion** -händelsen gör att du kan reagera på åtgärder som är klara. Läs mer i [den här sidan](../building-journeys/reaction-events.md). Om du vill reagera på ett meddelande som skickas via en anpassad åtgärd måste du konfigurera en dedikerad händelse.
+* Den inbyggda **Reaction**-händelsen gör att du kan reagera på åtgärder som inte är i kartong. Läs mer på [den här sidan](../building-journeys/reaction-events.md). Om du vill reagera på ett meddelande som skickas via en anpassad åtgärd måste du konfigurera en dedikerad händelse.
 * Du kan inte placera två åtgärder parallellt. Du måste lägga till dem en i taget.
 * En profil kan inte finnas flera gånger på samma resa samtidigt. Om återinträde är aktiverat kan en profil återansluta en resa, men kan inte göra det förrän den tidigare instansen av resan har avslutats helt. [Läs mer](../building-journeys/end-journey.md)
 
 ### Reseversioner {#journey-versions-g}
 
-* En resa som börjar med en händelseaktivitet i v1 kan inte börja med något annat än en händelse i andra versioner. Du kan inte påbörja en resa med en **Målgruppskvalifikation** -händelse.
-* En resa som börjar med en **Målgruppskvalifikation** aktivitet i v1 måste alltid börja med en **Målgruppskvalifikation** i andra versioner.
-* Den målgrupp och det namnutrymme som valts i **Målgruppskvalifikation** (första noden) kan inte ändras i nya versioner.
+* En resa som börjar med en händelseaktivitet i v1 kan inte börja med något annat än en händelse i andra versioner. Du kan inte starta en resa med en **målgruppskvalificeringshändelse**.
+* En resa som börjar med en **målgruppskvalifikation**-aktivitet i v1 måste alltid börja med en **målgruppskompetens** i andra versioner.
+* Den målgrupp och det namnområde som valts i **Målgruppskvalifikation** (första noden) kan inte ändras i nya versioner.
 * Regeln för återinträde måste vara densamma i alla reseversioner.
-* En resa som börjar med en **Läs målgrupp** kan inte börja med en annan händelse i nästa version.
+* En resa som börjar med en **Läs målgrupp** kan inte börja med en annan händelse i nästa versioner.
 * Du kan inte skapa en ny version av en läsande målgruppsresa med inkrementell läsning. Du måste duplicera resan.
 
 ### Anpassade åtgärder {#custom-actions-g}
@@ -90,12 +90,12 @@ Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. K
 * Anropsmetoderna POST, PUT och GET stöds
 * Namnet på frågeparametern eller -rubriken får inte börja med &quot;.&quot; eller &quot;$&quot;
 * IP-adresser tillåts inte
-* Adobe adresser (`.adobe.*`) tillåts inte i URL:er och API:er.
+* Interna Adobe-adresser (`.adobe.*`) tillåts inte i URL:er och API:er.
 * Inbyggda anpassade åtgärder kan inte tas bort.
 * Anpassade åtgärder stöder bara JSON-format när du använder begäran- eller svarsnyttolaster. Läs [den här sidan](../action/about-custom-action-configuration.md#custom-actions-limitations).
 * När du väljer en slutpunkt som ska användas som mål med en anpassad åtgärd ska du se till att:
 
-   * Den här slutpunkten kan stödja resans genomströmning med hjälp av konfigurationer från [Begränsnings-API](../configuration/throttling.md) eller [API för begränsning](../configuration/capping.md) för att begränsa den. Var försiktig med att en begränsningskonfiguration inte får vara lägre än 200 TPS. Alla målpunkter måste ha stöd för minst 200 TPS.
+   * Den här slutpunkten kan ha stöd för resans genomströmning genom att använda konfigurationer från [API:t för begränsning](../configuration/throttling.md) eller [API:t för begränsning](../configuration/capping.md). Var försiktig med att en begränsningskonfiguration inte får vara lägre än 200 TPS. Alla målpunkter måste ha stöd för minst 200 TPS.
    * Den här slutpunkten måste ha en svarstid som är så låg som möjligt. Beroende på förväntat dataflöde kan en hög svarstid påverka det faktiska dataflödet.
 
 ### Händelser {#events-g}
@@ -103,12 +103,12 @@ Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. K
 * För systemgenererade händelser måste strömmande data som används för att initiera en kundresa konfigureras inom Journey Optimizer först för att få ett unikt orkestrerings-ID. Detta Orchestration-ID måste bifogas till strömningsnyttolasten som kommer till Adobe Experience Platform. Denna begränsning gäller inte regelbaserade händelser.
 * Affärsevenemang kan inte användas tillsammans med enhetsevenemang eller målgruppsaktiviteter.
 * Enhetsresor (som inleds med en händelse eller en publikation) innehåller ett skyddsräcke som förhindrar att resorna aktiveras felaktigt flera gånger för samma händelse. Återinträde av profiler blockeras tillfälligt som standard i 5 minuter. Om en händelse till exempel utlöser en resa kl. 12:01 för en viss profil och en annan tar emot kl. 12:03 (oavsett om det är samma händelse eller en annan som utlöser samma resa) kommer den resan inte att starta igen för den här profilen.
-* Journey Optimizer kräver att händelser direktuppspelas till datainsamlingens bastjänst (DCCS) för att kunna utlösa en resa. Insamlade händelser i en grupp eller händelser från interna Journey Optimizer-datauppsättningar (meddelandefeedback, e-postspårning osv.) kan inte användas för att utlösa en resa. Om du inte kan få direktuppspelade händelser kan du bygga en målgrupp baserat på dessa händelser och använda **Läs målgrupp** i stället. Målgruppskvalificering kan tekniskt sett användas, men kan orsaka problem längre fram i kedjan baserat på de åtgärder som används.
+* Journey Optimizer kräver att händelser direktuppspelas till datainsamlingens bastjänst (DCCS) för att kunna utlösa en resa. Insamlade händelser i en grupp eller händelser från interna Journey Optimizer-datauppsättningar (meddelandefeedback, e-postspårning osv.) kan inte användas för att utlösa en resa. Om du inte kan få direktuppspelade händelser ska du skapa en målgrupp baserat på dessa händelser och använda aktiviteten **Läs målgrupp** i stället. Målgruppskvalificering kan tekniskt sett användas, men kan orsaka problem längre fram i kedjan baserat på de åtgärder som används.
 
 ### Datakällor {#data-sources-g}
 
 * Externa datakällor kan utnyttjas inom en kundresa för att söka efter externa data i realtid. Dessa källor måste kunna användas via REST API, ha stöd för JSON och kunna hantera antalet begäranden.
-* Adobe adresser (`.adobe.*`) tillåts inte i URL:er och API:er.
+* Interna Adobe-adresser (`.adobe.*`) tillåts inte i URL:er och API:er.
 
 >[!NOTE]
 >
@@ -140,13 +140,13 @@ Du kan välja mellan följande två lösningar:
 
 * Den här funktionen är för närvarande inte tillgänglig för vårdkunder.
 
-* Personalisering kan bara innehålla profilattribut.
+* Personalization kan bara innehålla profilattribut.
 
 * Visning i appen är knuten till resans livscykel, vilket innebär att när resan avslutas för en profil kommer alla meddelanden i appen under resan inte att visas för den profilen.  Det är därför inte möjligt att stoppa ett meddelande i appen direkt från en reseaktivitet. I stället måste du avsluta hela kundresan för att stoppa visningen av meddelanden i appen från att visas i profilen.
 
-* I testläge beror visningen i appen på resans livslängd. Justera **[!UICONTROL Wait time]** värde för **[!UICONTROL Wait]** verksamhet.
+* I testläge beror visningen i appen på resans livslängd. Om du vill förhindra att resan avslutas för tidigt under testningen justerar du värdet **[!UICONTROL Wait time]** för dina **[!UICONTROL Wait]**-aktiviteter.
 
-* **[!UICONTROL Reaction]** -aktiviteter kan inte användas för att reagera på en öppning eller klickning i appen.
+* **[!UICONTROL Reaction]** aktiviteter kan inte användas för att reagera på en öppning eller ett klick i appen.
 
 * En aktiveringsfördröjning kan uppstå från det att en användarprofil når en aktivitet i appen på arbetsytan till dess att meddelandet visas i appen.
 
@@ -165,22 +165,22 @@ Leveransflödet motsvarar antalet beslutssvar som kan levereras av beslutsstyrni
 | API | Beslut per sekund |
 |---------|----------|
 | API-begäranden för beslut | 500 per sekund |
-| API-begäranden för Edge Decision | 1 500 per sekund |
+| API-begäranden för Edge-beslut | 1 500 per sekund |
 
 ### Begränsningar {#offers-limitations}
 
 Begränsningarna för beslutshantering anges nedan.
 
-* **Godkända personaliserade erbjudanden + reseräkningar** - Upp till 10 000 kombinerade godkända personliga erbjudanden och godkända reserverbjudanden.
-* **Beslut** - Upp till 10 000 beslut.
+* **Godkända personliga erbjudanden + reserverbjudanden** - upp till 10 000 kombinerade godkända personliga erbjudanden och godkända reserverbjudanden.
+* **Beslut** - upp till 10 000 beslut.
 * **Live-beslut** - Offer decisioning App Service stöder upp till 1 000 Live-beslut.
-* **Erbjudanden som returneras per svar** - Offera decisioningen stöder upp till 100 returnerade erbjudanden per begäran för alla beslutsomfattningar som efterfrågas.
+* **Erbjudanden som returneras per svar** - Offera decisioningen stöder upp till 100 erbjudanden som returneras per begäran för alla beslutsomfattningar som begärs.
 * **Samlingar** - Upp till 10 000 samlingar.
 * **Samlingar per beslut** - Upp till 30 samlingar per beslut.
-* **Beslutsregler + rangordningsfunktioner** Upp till 10 000 kombinerade beslutsregler och rankningsfunktioner.
-* **Placeringar** - Upp till 1 000 praktik.
-* **Placeringar per beslut** - Upp till 30 praktik per beslut.
-* **Rankningsmetod per beslut** - Offer decisioning App Service stöder upp till 30 rankningsfunktioner per beslut.
+* **Beslutsregler + rangordningsfunktioner** Upp till 10 000 kombinerade beslutsregler och rangordningsfunktioner.
+* **Placeringar** - Upp till 1 000 placeringar.
+* **Placeringar per beslut** - upp till 30 praktik per beslut.
+* **Rankningsmetod per beslut** - Offer decisioning App Service har stöd för upp till 30 rankningsfunktioner per beslut.
 * **AI-rankningsmodell** - Offer decisioning App Service stöder upp till 5 AI-rankningsmodeller.
 * **Samlingskvalificerare per erbjudande eller samling** - Offer decisioning App Service har stöd för upp till 20 samlingskvalificerare i ett personligt erbjudande eller en enda samling.
-* **Totalt antal samlingskvalificerare** - Offer decisioning App Service stöder upp till 1 000 Collection Qualifiers.
+* **Totalt antal samlingskvalificerare** - Offer decisioning App Service stöder upp till 1 000 samlingskvalificerare.
