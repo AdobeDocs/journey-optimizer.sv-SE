@@ -8,8 +8,8 @@ level: Intermediate
 exl-id: 401ce05b-412b-4fa0-a516-bf75727f6387
 source-git-commit: 91f52af0c2e42556c4456be9b6b0cb84378c2a23
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 4%
+source-wordcount: '397'
+ht-degree: 3%
 
 ---
 
@@ -21,29 +21,29 @@ Du kan skapa beslutsregler för erbjudanden baserat på data som är tillgängli
 
 Du kan t.ex. ange att du bara vill att ett &quot;Kläddererbjudande för kvinnor&quot; ska visas när (Kön = &quot;Kvinna&quot;) och (Region = &#39;Nordost&#39;).
 
-➡️ [Upptäck den här funktionen i en video](#video)
+➡️ [Upptäck den här funktionen i videon](#video)
 
 Här följer en lista över begränsningar som ska vara kända när man arbetar med beslutsregler:
 
-* Edge-decimering använder kantprofilen som inte lagrar händelser, så alla regler som används i ett edge-beslut blir ogiltiga.
+* Edge-beslut använder kantprofilen som inte lagrar händelser, så alla regler som används i ett edge-beslut blir ogiltiga.
 * När du skapar en beslutsregel stöds inte möjligheten att gå tillbaka till en tidigare tidsperiod. Om du till exempel anger en upplevelsehändelse som inträffade under den sista månaden som en komponent i regeln. Alla försök att inkludera en uppslagsperiod när regler skapas kommer att utlösa ett fel när den sparas.
   <!--* Decision requests that use the hub profile will look at the last 100 experience events on the profile to evaluate rules that reference historical experience events.-->
 
 ## Skapa en beslutsregel {#create}
 
-Listan med skapade beslutsregler finns i **[!UICONTROL Components]** -menyn.
+Listan med skapade beslutsregler finns på menyn **[!UICONTROL Components]**.
 
 ![](../assets/decision_rules_list.png)
 
 Så här skapar du en beslutsregel:
 
-1. Gå till **[!UICONTROL Rules]** tabbtangenten och klicka sedan på **[!UICONTROL Create rule]**.
+1. Gå till fliken **[!UICONTROL Rules]** och klicka sedan på **[!UICONTROL Create rule]**.
 
    ![](../assets/offers_decision_rule_creation.png)
 
 1. Ge regeln ett namn och ange en beskrivning och konfigurera sedan regeln efter behov.
 
-   För att göra detta måste Adobe Experience Platform **Segment Builder** är tillgängligt för att hjälpa dig att skapa regelns villkor. [Lär dig hur du skapar segmentdefinitioner](../../audience/creating-a-segment-definition.md)
+   För att göra detta finns Adobe Experience Platform **Segment Builder** tillgänglig som hjälp att skapa regelns villkor. [Lär dig hur du skapar segmentdefinitioner](../../audience/creating-a-segment-definition.md)
 
    <!--In this example, the rule will target customers that have the "Gold" loyalty level.-->
 
@@ -51,9 +51,9 @@ Så här skapar du en beslutsregel:
 
    >[!NOTE]
    >
-   >Segment Builder som tillhandahålls för att skapa beslutsregler har vissa särdrag jämfört med den som används med **[!UICONTROL Segmentation]** service. Den globala processen som beskrivs i [Segment Builder](../../audience/creating-a-segment-definition.md) Dokumentationen kan fortfarande användas för att skapa beslutsregler för erbjudanden. Läs mer i [Dokumentation för Adobe Experience Platform Segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).
+   >Segment Builder som har tillhandahållits för att skapa beslutsregler har vissa egenskaper jämfört med den som används med tjänsten **[!UICONTROL Segmentation]**. Den globala processen som beskrivs i [Segment Builder](../../audience/creating-a-segment-definition.md) -dokumentationen är dock fortfarande giltig för att skapa beslutsregler för erbjudanden. Läs mer i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).
 
-1. När du lägger till och konfigurerar nya fält på arbetsytan visas **[!UICONTROL Audience properties]** visas information om de beräknade profilerna som tillhör målgruppen. Klicka **[!UICONTROL Refresh estimate]** för att uppdatera data.
+1. När du lägger till och konfigurerar nya fält på arbetsytan visas information om de beräknade profilerna som tillhör målgruppen i rutan **[!UICONTROL Audience properties]**. Klicka på **[!UICONTROL Refresh estimate]** för att uppdatera data.
 
    ![](../assets/offers_decision_rule_creation_estimate.png)
 
@@ -63,13 +63,13 @@ Så här skapar du en beslutsregel:
 
 1. Klicka på **[!UICONTROL Save]** för att bekräfta.
 
-1. När regeln har skapats visas den i **[!UICONTROL Rules]** lista. Du kan markera den för att visa dess egenskaper och redigera eller ta bort den.
+1. När regeln har skapats visas den i listan **[!UICONTROL Rules]**. Du kan markera den för att visa dess egenskaper och redigera eller ta bort den.
 
    ![](../assets/rule_created.png)
 
 >[!CAUTION]
 >
->Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [event](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#events){target="_blank"}, kommer du inte att kunna utnyttja erbjudandet.
+>Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [händelse](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#events){target="_blank"} kan du inte utnyttja den i ett erbjudande.
 
 ## Självstudievideo {#video}
 

@@ -9,7 +9,7 @@ exl-id: 21ef8f50-8389-4675-a8e5-0438a3eee592
 source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 5%
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ Aritmetiska funktioner används för att utföra grundläggande beräkningar på
 
 ## Lägg till{#add}
 
-The `+` Funktionen (addition) används för att hitta summan av två argumentuttryck.
+Funktionen `+` (addition) används för att hitta summan av två argumentuttryck.
 
 **Syntax**
 
@@ -37,7 +37,7 @@ Följande operation summerar priset på två olika produkter.
 
 ## Multiplicera{#multiply}
 
-The `*` (multiplikation) används för att hitta produkten av två argumentuttryck.
+Funktionen `*` (multiplikation) används för att hitta produkten av två argumentuttryck.
 
 **Syntax**
 
@@ -55,7 +55,7 @@ Följande åtgärd hittar produkten i lagret och priset på en produkt för att 
 
 ## Ta bort{#substract}
 
-The `-` (subtraktion) används för att hitta skillnaden mellan två argumentuttryck.
+Funktionen `-` (subtraktion) används för att hitta skillnaden mellan två argumentuttryck.
 
 **Syntax**
 
@@ -73,7 +73,7 @@ Följande åtgärd identifierar prisskillnaden mellan två olika produkter.
 
 ## Dela{#divide}
 
-The `/` Funktionen (division) används för att hitta kvoten mellan två argumentuttryck.
+Funktionen `/` (division) används för att hitta kvoten mellan två argumentuttryck.
 
 **Syntax**
 
@@ -91,7 +91,7 @@ I följande åtgärd hittas kvoten mellan de totala sålda produkterna och de to
 
 ## Återstående{#remainder}
 
-The `%` Funktionen (modulo/rest) används för att hitta resten efter att de två argumentuttrycken har delats.
+Funktionen `%` (modulo/rest) används för att hitta resten efter att de två argumentuttrycken har delats.
 
 **Syntax**
 

@@ -22,11 +22,11 @@ ht-degree: 0%
 
 ![](assets/cja-analyze.png)
 
-Förbättra dataanalysupplevelsen med **[!DNL Customer Journey Analytics]** genom att utnyttja **[!UICONTROL Analyze in CJA]** i alla rapporter.
+Förbättra dataanalysupplevelsen med din **[!DNL Customer Journey Analytics]**-licens genom att utnyttja funktionen **[!UICONTROL Analyze in CJA]** som finns i alla rapporter.
 
-Det här kraftfulla alternativet dirigerar om dig till **[!DNL Customer Journey Analytics]** -miljö, vilket gör att du kan personalisera dina rapporter i stor utsträckning. Ni kan berika era widgetar med specialiserade Customer Journey Analytics-mätvärden och ta era insikter till en helt ny nivå.
+Det här kraftfulla alternativet dirigerar om dig till din **[!DNL Customer Journey Analytics]**-miljö, så att du kan anpassa dina rapporter i stor utsträckning. Ni kan berika era widgetar med specialiserade Customer Journey Analytics-mätvärden och ta era insikter till en helt ny nivå.
 
-[Läs mer i gränssnittet Customer Journey Analytics.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-getting-started)
+[Läs mer i Customer Journey Analytics-gränssnittet.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-getting-started)
 
 ## Definiera rapportperioden {#report-period}
 
@@ -48,7 +48,7 @@ Du kan enkelt exportera dina olika rapporter till PDF eller CSV-format så att d
 
 >[!TAB Exportera rapporten som en CSV-fil]
 
-1. Klicka på **[!UICONTROL Export]** och markera **[!UICONTROL CSV file]** för att generera en CSV-fil på övergripande rapportnivå.
+1. Klicka på **[!UICONTROL Export]** i rapporten och välj **[!UICONTROL CSV file]** för att generera en CSV-fil på den övergripande rapportnivån.
 
    ![](assets/export_cja_csv.png)
 
@@ -58,11 +58,11 @@ Du kan enkelt exportera dina olika rapporter till PDF eller CSV-format så att d
 
 >[!TAB Exportera rapporten som en PDF-fil]
 
-1. Klicka på **[!UICONTROL Export]** och markera **[!UICONTROL PDF file]**.
+1. Klicka på **[!UICONTROL Export]** i rapporten och välj **[!UICONTROL PDF file]**.
 
    ![](assets/export_cja_pdf.png)
 
-1. När nedladdningen har begärts klickar du på **[!UICONTROL Download]**.
+1. När hämtningen har begärts klickar du på **[!UICONTROL Download]**.
 
    ![](assets/export_cja_pdf_2.png)
 

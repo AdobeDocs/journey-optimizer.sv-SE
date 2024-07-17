@@ -18,15 +18,15 @@ ht-degree: 0%
 
 # Försök igen {#retries}
 
-När ett e-postmeddelande misslyckas på grund av ett tillfälligt **Mjuk studsa** fel för en viss adress, flera försök utförs. Varje fel ökar en felräknare. När den här räknaren når gränsvärdet läggs e-postadressen till i listan över spärrade adresser.
+När ett e-postmeddelande misslyckas på grund av ett tillfälligt **mjukt avhoppsfel** för en viss adress, utförs flera försök. Varje fel ökar en felräknare. När den här räknaren når gränsvärdet läggs e-postadressen till i listan över spärrade adresser.
 
 >[!NOTE]
 >
->Läs mer om olika typer av fel i [Leveransfel](../reports/suppression-list.md#delivery-failures) -avsnitt.
+>Läs mer om feltyperna i avsnittet [Leveransfel](../reports/suppression-list.md#delivery-failures).
 
 I standardkonfigurationen är tröskelvärdet 5 fel.
 
-* För samma leverans påträffades fel den femte i [återförsökstid](#retry-duration), är adressen undertryckt.
+* Adressen undertrycks vid det femte felet inom [återförsöksperioden](#retry-duration) för samma leverans.
 
 * Om det finns olika leveranser och två fel inträffar med minst 24 timmars mellanrum, ökas felräknaren vid varje fel och adressen visas inte vid det femte försöket. Fel ackumuleras för varje adress.
 
@@ -64,15 +64,15 @@ Om standardvärdet 5 inte passar dina behov kan du ändra feltröskeln enligt st
 
    >[!CAUTION]
    >
-   >Värden över 10 kan orsaka problem med leveransens anseende, liksom IP-begränsning eller blockeringslistning från Internet-leverantörer. [Läs mer om leverans](../reports/deliverability.md)
+   >Värden över 10 kan orsaka problem med leveransens anseende, liksom IP-begränsning eller blockeringslistning från Internet-leverantörer. [Läs mer om levererbarhet](../reports/deliverability.md)
 
 ## Tidsperiod för återförsök {#retry-duration}
 
-The **återförsökstid** är den tidsram inom vilken ett e-postmeddelande om leveransen som påträffade ett tillfälligt fel eller en mjuk avhoppning kommer att skickas igen.
+Tidsperioden **för nytt försök** är den tidsram inom vilken alla e-postmeddelanden om leveransen som påträffade ett tillfälligt fel eller en mjuk studsa kommer att provas igen.
 
-Som standard utförs återförsök för **3,5 dagar** (eller **84 timmar**) när meddelandet lades till i e-postkön.
+Som standard kommer nya försök att utföras i **3,5 dagar** (eller **84 timmar**) från den tidpunkt då meddelandet lades till i e-postkön.
 
-För att vara säker på att försök inte utförs igen när de inte längre behövs kan du ändra den här inställningen efter behov när du skapar eller redigerar en [kanalyta](channel-surfaces.md) (t.ex. meddelandeförinställning) som gäller för e-postkanalen.
+För att vara säker på att försök inte utförs igen när de inte längre behövs kan du ändra den här inställningen efter dina behov när du skapar eller redigerar en [kanalyta](channel-surfaces.md) (d.v.s. meddelandeförinställning) som gäller för e-postkanalen.
 
 Du kan t.ex. ange återförsöksperioden till 24 timmar för ett transaktionsmejl som relaterar till lösenordsåterställning och som innehåller en länk som bara är giltig för en dag. På samma sätt kan du vid en midnatt-försäljning definiera en återförsöksperiod på 6 timmar.
 
@@ -80,5 +80,5 @@ Du kan t.ex. ange återförsöksperioden till 24 timmar för ett transaktionsmej
 >
 >Återförsöksperioden får inte vara längre än 84 timmar. Den minsta återförsöksperioden är 6 timmar för marknadsföringsmeddelanden och 10 minuter för transaktionsmeddelanden.
 
-Lär dig hur du justerar parametrarna för återförsök i e-postmeddelanden när du skapar en kanalyta i [det här avsnittet](../email/email-settings.md#email-retry).
+Lär dig hur du justerar parametrarna för e-poståterförsök när du skapar en kanalyta i [det här avsnittet](../email/email-settings.md#email-retry).
 

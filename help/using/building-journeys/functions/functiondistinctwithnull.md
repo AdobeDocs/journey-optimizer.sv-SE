@@ -18,7 +18,7 @@ ht-degree: 4%
 
 Returnerar de distinkta värdena eller objekten i en viss lista. Om listan har minst en null-post kommer en null-post att finnas i den returnerade listan.
 
-Observera att parametern `<listObject>` stöds inte i den här funktionen.
+Observera att parametern `<listObject>` inte stöds i den här funktionen.
 
 ## Kategori
 

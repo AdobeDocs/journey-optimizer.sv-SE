@@ -9,13 +9,13 @@ exl-id: 8f06b8f0-f64d-42f7-9b10-7bb76f63d1c5
 source-git-commit: 6999f52a3426aa252f31440189ba9d1a7118dd0a
 workflow-type: tm+mt
 source-wordcount: '160'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
 # Kom igång med webbkanalen {#get-sarted-web}
 
-[!DNL Journey Optimizer] gör att ni kan skapa och leverera personaliserade webbupplevelser visuellt till era kunder.
+Med [!DNL Journey Optimizer] kan du visuellt skapa och leverera personaliserade webbupplevelser till dina kunder.
 
 Tack vare ett intuitivt visuellt gränssnitt kan ni enkelt ändra era webbegenskaper för att experimentera, optimera och personalisera era slutanvändarkampanjer.
 
@@ -24,7 +24,7 @@ Tack vare ett intuitivt visuellt gränssnitt kan ni enkelt ändra era webbegensk
 
 Om ni redan använder utgående kanaler som e-post, SMS eller push-meddelanden kan ni nu utnyttja den inkommande webbkanalen för att erbjuda en verkligt personaliserad upplevelse som sträcker sig över alla kanaler.
 
-När du skapat en kampanj väljer du **Webb** som din åtgärd och definiera grundläggande inställningar. Mer information om hur du konfigurerar kampanjen finns i [page](../campaigns/create-campaign.md#configure).
+När du har skapat en kampanj väljer du **Webb** som åtgärd och definierar grundläggande inställningar. Mer information om hur du konfigurerar kampanjen finns på [sidan](../campaigns/create-campaign.md#configure).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Upptäck de detaljerade stegen för att skapa en webbkampanj i [den här videon]
 <a href="web-prerequisites.md">
 <img alt="Lead" src="../assets/do-not-localize/web-prerequisites.jpg">
 </a>
-<div><a href="web-prerequisites.md"><strong>Förutsättningar</strong>
+<div><a href="web-prerequisites.md"><strong>Förhandskrav</strong>
 </div>
 <p>
 </td>

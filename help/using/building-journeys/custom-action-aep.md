@@ -21,13 +21,13 @@ Det här användningsexemplet förklarar hur du skriver anpassade händelser til
 
 ## Konfigurera ett IO-projekt
 
-1. Klicka på Adobe Developer Console **Projekt** och öppna IO-projektet.
+1. Klicka på **Projekt** i Adobe Developer Console och öppna IO-projektet.
 
-1. I **Referenser** avsnitt, klicka **OAuth Server-till-server**.
+1. Klicka på **OAuth Server-to-Server** i avsnittet **Autentiseringsuppgifter**.
 
    ![](assets/custom-action-aep-1.png)
 
-1. Klicka **Visa cURL, kommando**.
+1. Klicka på **Visa cURL-kommando**.
 
    ![](assets/custom-action-aep-2.png)
 
@@ -39,21 +39,21 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 
 >[!CAUTION]
 >
->När du har skapat projektet på Adobe Developer Console måste du ge utvecklare och API-åtkomstkontroll med rätt behörigheter. Läs mer i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#grant-developer-and-api-access-control){target="_blank"}
+>När du har skapat ditt projekt på Adobe Developer Console måste du ge utvecklare och API-åtkomstkontroll med rätt behörigheter. Läs mer i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#grant-developer-and-api-access-control){target="_blank"}
 
-## Konfigurera källan med HTTP API Inlet
+## Konfigurera Source med HTTP API Inlet
 
 1. Skapa en slutpunkt i Adobe Experience Platform för att skriva data från resor.
 
-1. Klicka på i Adobe Experience Platform **Källor**, under **Anslutningar** i den vänstra menyn. Under **HTTP-API**, klicka **Lägg till data**.
+1. I Adobe Experience Platform klickar du på **Källor** under **Anslutningar** i den vänstra menyn. Klicka på **Lägg till data** under **HTTP API**.
 
    ![](assets/custom-action-aep-3.png)
 
-1. Välj **Nytt konto** och aktivera autentisering. Klicka på **Anslut till källa**.
+1. Välj **Nytt konto** och aktivera autentisering. Klicka på **Anslut till Source**.
 
    ![](assets/custom-action-aep-4.png)
 
-1. Klicka på **Nästa** och markera den datauppsättning där du vill skriva data. Klicka **Nästa** och **Slutför**.
+1. Klicka på **Nästa** och markera datauppsättningen där du vill skriva data. Klicka på **Nästa** och **Slutför**.
 
    ![](assets/custom-action-aep-5.png)
 
@@ -96,7 +96,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 
 ## Konfigurera den anpassade åtgärden
 
-1. Öppna Adobe Journey Optimizer och klicka på **Konfigurationer**, under **Administration** i den vänstra menyn. Under **Åtgärder**, klicka **Hantera** och klicka **Skapa åtgärd**.
+1. Öppna Adobe Journey Optimizer och klicka på **Konfigurationer** under **Administration** i den vänstra menyn. Under **Åtgärder** klickar du på **Hantera** och sedan på **Skapa åtgärd**.
 
 1. Ange URL-adressen och välj metoden Post.
 
@@ -108,7 +108,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 
 ### Konfigurera autentiseringen
 
-1. Välj **Typ** as **Egen** med följande nyttolast.
+1. Välj **Type** som **Custom** med följande nyttolast.
 
 1. Klistra in client_secrets, client_id, scope och grant_type (från IO-projektets nyttolast som användes tidigare).
 
@@ -136,13 +136,13 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
    }
    ```
 
-1. Använd **Klicka för att testa autentiseringen** för att testa anslutningen.
+1. Använd **Klicka för att testa autentiserings**-knappen för att testa anslutningen.
 
    ![](assets/custom-action-aep-8.png)
 
 ### Ställ in nyttolasten
 
-1. I **Begäran** och **Svar** -fält, klistra in nyttolasten från den tidigare källanslutningen.
+1. Klistra in nyttolasten från den tidigare källanslutningen i fälten **Begäran** och **Svar**.
 
    ```
    {

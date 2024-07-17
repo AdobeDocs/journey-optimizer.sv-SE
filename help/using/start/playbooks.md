@@ -7,7 +7,8 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 21e7d416548dd9220d5535573bc6ff17dd0479ec
+exl-id: 2214ec90-580e-469e-9b14-d8cb2d4bb050
+source-git-commit: 61bd9ce680c56b0eb8737804fb013dbad430f1cc
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 1%
@@ -18,7 +19,7 @@ ht-degree: 1%
 
 >[!PREREQUISITES]
 >
->Följande konfigurationssteg krävs innan du arbetar med Använd fallspelningsböcker. Detaljerad information om varje steg finns i Use Case Playbooks-dokumentationen [Kom igång](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html){target="_blank"} sida.
+>Följande konfigurationssteg krävs innan du arbetar med Använd fallspelningsböcker. Detaljerad information om varje steg finns i dokumentationen för Use Case Playbooks [Get started](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html){target="_blank"}.
 >
 >* Skapa en sandlåda
 >* Konfigurera användarbehörigheter
@@ -30,11 +31,11 @@ Använd fallspelsböcker är fördefinierade arbetsflöden som åtgärdar vanlig
 
 Varje spelbok innehåller en omfattande översikt som innehåller avsikter, mål, målinriktade personligheter och resurser som behövs för att implementera den. Dessutom finns det en mindmap i varje spelbok som visuellt representerar verkliga kundkontaktytor som är kopplade till spelboken.
 
-![Övergiven Cart-spelbok som visas i vyn Upptäck spelningsböcker](assets/playbooks-detail.png){width="85%"}
+![Övergiven spelningsbok för kundvagn visas i vyn Upptäck spelningsböcker](assets/playbooks-detail.png){width="85%"}
 
-Navigera till **[!UICONTROL Playbooks]** meny i det vänstra navigeringsfältet. Biblioteket innehåller flera spelböcker som har implementerats med Adobe Journey Optimizer. Om du enkelt vill komma åt dem använder du de filter som finns bredvid sökfältet. En omfattande lista över Journey Optimizer spelböcker finns i [Använd dokumentation för fallspelningsböcker](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/playbooks-list.html){target="_blank"}.
+Om du vill få åtkomst till spelböcker går du till menyn **[!UICONTROL Playbooks]** som finns i den vänstra navigeringslisten. Biblioteket innehåller flera spelböcker som har implementerats med Adobe Journey Optimizer. Om du enkelt vill komma åt dem använder du de filter som finns bredvid sökfältet. En omfattande lista över Journey Optimizer spelböcker finns i [Use Case Playbooks-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/playbooks-list.html){target="_blank"}.
 
-![Spelböcker, lista med filterfönster öppna](assets/playbooks-filter.png){width="85%"}
+![Spelningsbokslista med filterruta öppnad](assets/playbooks-filter.png){width="85%"}
 
 När du har valt den spelbok som bäst passar dina behov kan du aktivera den. Detta skapar en instans av spelboken och genererar automatiskt de resurser som behövs för att stödja ditt specifika användningsfall. Resurserna innehåller Journey Optimizer-resurser som resor, meddelanden och Adobe Experience Platform-resurser som scheman eller segment.
 
@@ -44,4 +45,4 @@ När du har valt den spelbok som bäst passar dina behov kan du aktivera den. De
 
 Om du vill implementera ditt användningssätt kan du navigera till varje objekt för att anpassa det efter dina behov. Du kan också dela URL:en för spelningsbokens instanssida mellan ditt team för att samarbeta vid implementeringen av användningsexemplet.
 
-Dessutom kan du importera spelboksresurser till andra sandlådor. På så sätt kan du justera de genererade resurserna mot dina befintliga resurser och se till att de är kompatibla med dina data, om du redan har konfigurerat dina egna scheman, fält och fältgrupper. Dessa steg beskrivs i [Använd dokumentation för fallspelningsböcker](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/data-awareness.html){target="_blank"}.
+Dessutom kan du importera spelboksresurser till andra sandlådor. På så sätt kan du justera de genererade resurserna mot dina befintliga resurser och se till att de är kompatibla med dina data, om du redan har konfigurerat dina egna scheman, fält och fältgrupper. De här stegen beskrivs i [Använd fallspelningsböcker](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/data-awareness.html){target="_blank"}.

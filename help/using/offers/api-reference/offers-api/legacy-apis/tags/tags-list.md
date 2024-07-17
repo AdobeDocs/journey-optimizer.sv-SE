@@ -9,7 +9,7 @@ exl-id: cc577989-198c-4e21-80e7-32ebb7a60606
 source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 Med samlingskvalificerare (som tidigare kallades&quot;taggar&quot;) kan du bättre ordna och sortera dina erbjudanden. Du kan till exempel märka dina erbjudanden på Black Friday med&quot;Black Friday&quot;-samlingskvalificeraren. Du kan sedan använda sökfunktionen i erbjudandebiblioteket för att enkelt hitta alla erbjudanden med den samlingskvalificeraren.
 
-Samlingskvalificerare kan också användas för att gruppera erbjudanden i samlingar. Mer information finns i självstudiekursen om [skapa samlingar](../../../../offer-library/creating-collections.md).
+Samlingskvalificerare kan också användas för att gruppera erbjudanden i samlingar. Mer information finns i självstudiekursen om att [skapa samlingar](../../../../offer-library/creating-collections.md).
 
-Du kan visa en lista över alla samlingskvalificerare genom att utföra en enda GET-förfrågan till [!DNL Offer Library] API.
+Du kan visa en lista över alla samlingskvalificerare genom att utföra en enda GET-begäran till API:t [!DNL Offer Library].
 
 **API-format**
 
@@ -56,7 +56,7 @@ De vanligaste frågeparametrarna för sidindelning är:
 
 | Parameter | Beskrivning | Exempel |
 | --------- | ----------- | ------- |
-| `property` | En valfri egenskap: <ul><li>Egenskaperna grupperas efter AND-åtgärd.</li><li>Parametrar kan upprepas så här: property={PROPERTY_EXPR}[&amp;property={PROPERTY_EXPR2}...] eller property={PROPERTY_EXPR1}[,{PROPERTY_EXPR2}...]</li><li>Egenskapsuttryck är i format `[!]field[op]value`, med `op` in `[==,!=,<=,>=,<,>,~]`, med stöd för reguljära uttryck.</li></ul> | `property=name!=abc&property=id~.*1234.*&property=description equivalent with property=name!=abc,id~.*1234.*,description.` |
+| `property` | En valfri egenskap: <ul><li>Egenskaperna grupperas efter AND-åtgärd.</li><li>Parametrar kan upprepas så här: property={PROPERTY_EXPR}[&amp;property={PROPERTY_EXPR2}..] eller property={PROPERTY_EXPR1}[,{PROPERTY_EXPR2}..]</li><li>Egenskapsuttryck har formatet `[!]field[op]value`, med `op` i `[==,!=,<=,>=,<,>,~]`, som stöder reguljära uttryck.</li></ul> | `property=name!=abc&property=id~.*1234.*&property=description equivalent with property=name!=abc,id~.*1234.*,description.` |
 | `orderBy` | Sortera resultat efter en specifik egenskap. Om du lägger till ett - före namn (orderBy=-name) sorteras objekten efter namn i fallande ordning (Z-A). Banuttryck är i form av punktavgränsade banor. Den här parametern kan upprepas så här: `orderby=field1[,-fields2,field3,...]` | `orderby=id`,`-name` |
 | `limit` | Begränsa antalet enheter som returneras. | `limit=5` |
 

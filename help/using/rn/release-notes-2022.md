@@ -12,13 +12,13 @@ exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
 source-git-commit: e34c39c02f71361277f28b1a116a54390875f93d
 workflow-type: tm+mt
 source-wordcount: '3598'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
-# Versionsinformation 2022 {#release-notes-2022}
+# Versionsinformation för 2022 {#release-notes-2022}
 
-På den här sidan visas alla funktioner och förbättringar för [!DNL Journey Optimizer] släppt 2022.
+På den här sidan visas alla funktioner och förbättringar för [!DNL Journey Optimizer] som släpptes 2022.
 
 
 
@@ -50,7 +50,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 **Resor**
 
-* The **Tvinga återinträde vid upprepning** har lagts till i återkommande parametrar för lässchema. Med det här alternativet kan du göra så att alla profiler som fortfarande finns i resan automatiskt avslutar den vid nästa körning. När alternativet är inaktiverat måste profilerna slutföra resan innan de kan återkomma i en annan förekomst. [Läs mer](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
+* Alternativet **Tvinga återinträde vid upprepning** har lagts till i återkommande parametrar för läsmålgruppsschema. Med det här alternativet kan du göra så att alla profiler som fortfarande finns i resan automatiskt avslutar den vid nästa körning. När alternativet är inaktiverat måste profilerna slutföra resan innan de kan återkomma i en annan förekomst. [Läs mer](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
 
 **Administration**
 
@@ -164,7 +164,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer har stöd för att definiera användarroller och åtkomstprinciper för att hantera behörigheter för funktioner och objekt. Via <strong>Adobe Experience Cloud-behörigheter</strong>kan du skapa och hantera roller samt tilldela önskade resursbehörigheter för rollerna. Med behörigheter kan du också hantera etiketter, sandlådor och användare som är kopplade till en viss roll.</p>
+<p>Journey Optimizer har stöd för att definiera användarroller och åtkomstprinciper för att hantera behörigheter för funktioner och objekt. Genom <strong>Adobe Experience Cloud-behörigheter</strong> kan du skapa och hantera roller samt tilldela önskade resursbehörigheter för dessa roller. Med behörigheter kan du också hantera etiketter, sandlådor och användare som är kopplade till en viss roll.</p>
 <p> Användningen av behörigheter är för närvarande begränsad till utvalda kunder och kommer att distribueras till alla miljöer i en framtida version.</p>
 <p>Mer information finns i den <a href="../administration/attribute-based-access.md">detaljerade dokumentationen</a>.
 </td>
@@ -211,7 +211,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 **Resor**
 
-* The **Enhetsdatauppsättning** finns nu som en färdig datauppsättning i Adobe Journey Optimizer. Den här uppslagsuppsättningen innehåller metadata som berikar informationen om spårnings- och feedbackdatauppsättningar. Detta hjälper er att förbättra era rapporter och frågor med mer begripliga data. [Läs mer](../data/datasets-query-examples.md#entity-dataset)
+* **Entitetsdatauppsättningen** är nu tillgänglig som en färdig datauppsättning i Adobe Journey Optimizer. Den här uppslagsuppsättningen innehåller metadata som berikar informationen om spårnings- och feedbackdatauppsättningar. Detta hjälper er att förbättra era rapporter och frågor med mer begripliga data. [Läs mer](../data/datasets-query-examples.md#entity-dataset)
 * Ett nytt skyddsräcke har lagts till för enstaka resor (med början vid en händelse eller en målgruppskompetens) för att förhindra att resor utlöses felaktigt flera gånger för samma händelse. Återinträde av profiler blockeras nu tillfälligt som standard i 5 minuter. [Läs mer](../start/guardrails.md#events-g)
 
 **Administration**
@@ -227,7 +227,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 **Arkiveringsstöd**
 
-* Den nya **Enhetsdatauppsättning** innehåller ett mallfält som gör att du kan exportera format och struktur för skickade meddelanden i alla kanaler för arkiveringsändamål. [Läs mer](../configuration/archiving-support.md)
+* Den nya **entitetsdatauppsättningen** innehåller ett mallfält som gör att du kan exportera format och struktur för skickade meddelanden i alla kanaler för arkiveringsändamål. [Läs mer](../configuration/archiving-support.md)
 
 **Landningssidor**
 
@@ -261,7 +261,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <td>
 <p>Använd Journey Optimizer kampanjer för att leverera engångsinnehåll till en viss målgrupp via olika kanaler. När du använder resor är åtgärderna utformade för att utföras i sekvens. Med kampanjer utförs åtgärder samtidigt, antingen omedelbart eller baserat på ett angivet schema. </p>
 <img src="assets/do-not-localize/campaigns.gif"/>
-<p>Lär dig hur du skapar en kampanj i <a href="../campaigns/get-started-with-campaigns.md">detaljerad dokumentation</a> och <a href="https://video.tv.adobe.com/v/346680">funktionsvideo</a>.
+<p>Lär dig hur du skapar en kampanj i videon <a href="../campaigns/get-started-with-campaigns.md">med detaljerad dokumentation</a> och <a href="https://video.tv.adobe.com/v/346680">funktioner</a>.
 </td>
 </tr>
 </tbody>
@@ -278,7 +278,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <td>
 <p>Nu kan du skapa, anpassa och skicka SMS i Journey Optimizer via en integrering med <b>Sinch</b> eller <b>Twilio</b>.</p>
 <img src="assets/do-not-localize/SMS.gif"/>
-<p>Lär dig hur du skapar och skickar ett SMS i det här <a href="../sms/create-sms.md">detaljerad dokumentation</a>.</p>
+<p>Lär dig hur du skapar och skickar ett SMS i den här <a href="../sms/create-sms.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -364,7 +364,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <td>
 <p>Nu kan du köra batchbeslutsjobb från användargränssnittet, så att jag inte behöver någon utvecklare för att köra batchAPI-jobb och jag kan minska tiden som krävs för marknadsföring. Med det här nya gränssnittet kan du skapa jobb och hantera aktuella/tidigare jobb.</p>
 <img src="assets/do-not-localize/batch.gif"/>
-<p>Mer information finns i <a href="../offers/batch-delivery.md">detaljerad dokumentation.</p>
+<p>Mer information finns i <a href="../offers/batch-delivery.md">den detaljerade dokumentationen.</p>
 </td>
 </tr>
 </tbody>
@@ -392,10 +392,10 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 **Resor**
 
-* **Avsluta en resa** - På resans arbetsyta **End** aktiviteten har tagits bort från paletten. Sluttaggar läggs nu till som standard i slutet av varje bana och kan inte tas bort. Denna förbättring gör det möjligt att bättre rapportera var en kund lämnade resan, utan att någon åtgärd krävs från kundens sida. Se [dokumentation](../building-journeys/end-journey.md) och [funktionsvideo](https://video.tv.adobe.com/v/345376){target="_blank"}.
+* **Slutar en resa** - I arbetsytan har aktiviteten **Slut** tagits bort från paletten. Sluttaggar läggs nu till som standard i slutet av varje bana och kan inte tas bort. Denna förbättring gör det möjligt att bättre rapportera var en kund lämnade resan, utan att någon åtgärd krävs från kundens sida. Se videon [documentation](../building-journeys/end-journey.md) och [feature ](https://video.tv.adobe.com/v/345376){target="_blank"}.
 
 
-* The **Tidszon för profil** alternativet är nu avmarkerat som standard i resans egenskaper. [Läs mer](../building-journeys/timezone-management.md#timezone-from-profiles)
+* Alternativet **Tidszon för profil** är nu avmarkerat som standard i resans egenskaper. [Läs mer](../building-journeys/timezone-management.md#timezone-from-profiles)
 
 **Meddelanden**
 
@@ -403,17 +403,17 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 **Administration**
 
-* **PTR-postversion** - När du nu uppdaterar en PTR-post tar bearbetningstiden endast upp till 3 timmar. [Läs mer](../configuration/ptr-records.md#processing)
+* **PTR-postversion** - När en PTR-post uppdateras tar bearbetningstiden endast upp till 3 timmar. [Läs mer](../configuration/ptr-records.md#processing)
 
-* **Tillåtelselista UI** - Nu kan du använda Journey Optimizer användargränssnitt för att lägga till nya e-postadresser eller domäner i tillåtelselista. [Läs mer](../configuration/allow-list.md)
+* **Tillåtelselista-gränssnitt** - Nu kan du använda Journey Optimizer användargränssnitt för att lägga till nya e-postadresser eller domäner i tillåtelselista. [Läs mer](../configuration/allow-list.md)
 
-* **Tillåtelselista logikuppdatering** - Nu gäller logiken i tillåtelselista så snart funktionen är aktiverad, även om listan är tom. [Läs mer](../configuration/allow-list.md#logic)
+* **Tillåtelselista-logikuppdatering** - Nu gäller logiken i tillåtelselista så snart funktionen är aktiverad, även om listan är tom. [Läs mer](../configuration/allow-list.md#logic)
 
-* **URL-spårningsparametrar** - Du kan nu använda uttrycksredigeraren för att konfigurera parametrar för URL-spårning i dina e-postytor (dvs förinställningar). [Läs mer](../email/email-settings.md#url-tracking)
+* **Parametrar för URL-spårning** - Nu kan du använda uttrycksredigeraren för att konfigurera parametrar för URL-spårning i e-postytorna (t.ex. förinställningar). [Läs mer](../email/email-settings.md#url-tracking)
 
-**Beslutsledning**
+**Beslutshantering**
 
-* **Målgruppsstorlek** - En ny uppskattad målgruppsstorlekskomponent visas nu i användargränssnittet när du skapar en beslutsregel, när du väljer en målgrupp eller en regel för att ange ett erbjudande, eller när du lägger till en målgrupp eller en regel i ett beslutsomfång.
+* **Målgruppsstorlek** - En ny uppskattningskomponent för målgruppsstorlek visas nu i användargränssnittet när du skapar en beslutsregel, när du väljer en målgrupp eller en regel för att ange ett erbjudande eller när du lägger till en målgrupp eller en regel i ett beslutsomfång.
 
 
 ## Version från juni 2022 {#june-2022-release}
@@ -432,7 +432,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <p>Nu kan du skapa, anpassa och skicka SMS i Journey Optimizer via en integrering med <b>Sinch</b> eller <b>Twilio</b>.</p>
 <!--img src="assets/do-not-localize/SMS.gif"/-->
 <p>SMS-kanalen är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill veta mer.</p>
-<p>Lär dig hur du skapar och skickar ett SMS i det här <a href="../sms/create-sms.md">detaljerad dokumentation</a>.</p>
+<p>Lär dig hur du skapar och skickar ett SMS i den här <a href="../sms/create-sms.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -448,7 +448,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <tbody>
 <tr>
 <td>
-<p>Integreringspluginen för Adobe Stock och Adobe Journey Optimizer Email Designer ger kunderna ett enkelt sätt att navigera, licensiera och spara bilder för användning vid meddelandeframtagning. </br> Den nya <b>Hitta liknande Stock-foton</b> kan du också söka efter Stock-foton som matchar innehållet, färgen och kompositionen för dina bilder. </p>
+<p>Integreringspluginen Adobe Stock och Adobe Journey Optimizer Email Designer ger kunderna ett enkelt sätt att navigera, licensiera och spara bilder för användning vid framtagning av meddelanden. </br> Med det nya alternativet <b>Sök efter liknande Stock-foton</b> kan du även söka efter Stock-foton som matchar innehållet, färgen och kompositionen för dina bilder. </p>
 <!--img src="assets/do-not-localize/stock-rn.gif"/-->
 <p>Mer information finns i den <a href="../content-management/stock.md">detaljerade dokumentationen</a>.</p>
 </td>
@@ -512,23 +512,23 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 ### Förbättringar
 
-**Beslutsledning**
+**Beslutshantering**
 
-* **Stöd för HTML och JSON-filer** - Nu kan du dra och släppa externa HTML- och JSON-filer från Adobe Experience Cloud resursbibliotek till erbjudanderepresentationsinnehållet. [Läs mer](../offers/offer-library/add-representations.md#html-json)
+* **HTML och JSON-filer har stöd för** - Nu kan du dra och släppa externa HTML och JSON-filer från Adobe Experience Cloud Asset-biblioteket till erbjudanderepresentationsinnehållet. [Läs mer](../offers/offer-library/add-representations.md#html-json)
 
 
 **E-post**
 
-* **Spara som mall** - Du kan nu spara ett e-postinnehåll som en mall och återanvända det när du skapar andra meddelanden. [Läs mer](../content-management/content-templates.md#save-as-template)
+* **Spara som mall** - Nu kan du spara ett e-postinnehåll som en mall och återanvända det när du skapar andra meddelanden. [Läs mer](../content-management/content-templates.md#save-as-template)
 
 
 **Administration**
 
-* **URL-parametrar för förhandsspårning** - När du konfigurerar en meddelandeförinställning och definierar parametrar för URL-spårning, visas nu en dynamisk förhandsgranskning av den resulterande spårnings-URL:en. [Läs mer](../email/email-settings.md#url-tracking)
+* **URL-parametrar för förhandsgranskningsspårning** - Om du definierar URL-spårningsparametrar när du konfigurerar en meddelandeförinställning visas nu en dynamisk förhandsgranskning av den resulterande spårnings-URL:en. [Läs mer](../email/email-settings.md#url-tracking)
 
-* **Meddelandeförinställningsversion** - När du nu uppdaterar en meddelandeförinställning kan bearbetningstiden bara ta upp till 3 timmar. [Läs mer](../configuration/channel-surfaces.md#edit-channel-surface)
+* **Meddelandeförinställning** - När du uppdaterar en meddelandeförinställning kan bearbetningstiden bara ta upp till 3 timmar. [Läs mer](../configuration/channel-surfaces.md#edit-channel-surface)
 
-* **IP-poolversion** - När du nu uppdaterar en IP-pool kan bearbetningstiden bara ta upp till 3 timmar. [Läs mer](../configuration/ip-pools.md#edit-ip-pool)
+* **IP-poolversion** - När du uppdaterar en IP-pool kan bearbetningstiden bara ta upp till 3 timmar. [Läs mer](../configuration/ip-pools.md#edit-ip-pool)
 
 
 
@@ -607,25 +607,25 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 ### Förbättringar
 
-**Personalisering**
+**Personalization**
 
-* **Ny hjälpfunktion för dolda tecken** - `mask` hjälpfunktionen gör att du kan ersätta en del av en sträng med&quot;X&quot;-tecken. [Läs mer](../personalization/functions/string.md#mask)
+* **Ny hjälpfunktion för tecken som döljs** - Med hjälpfunktionen `mask` kan du ersätta en del av en sträng med X-tecken. [Läs mer](../personalization/functions/string.md#mask)
 
 **Landningssidor**
 
 * **Landningssidor utan formulär** - Nu kan du skapa och publicera en landningssida som inte innehåller något formulär och som inte kräver någon åtgärd från besökarna.
-* **Mallar för landningssidor** - Du kan nu spara en landningssida som en mall och återanvända den när du skapar andra landningssidor. [Läs mer](../landing-pages/lp-templates.md)
-* **Tillbaka till den primära sidan** - Du kan nu lägga till en länk till den primära sidan från en undersida på samma landningssida.
-* **Anpassat JavaScript-stöd** - Du kan nu lägga till egen JavaScript-kod i innehållet på landningssidan för att utföra avancerad formatering eller lägga till anpassade beteenden på landningssidorna.    [Läs mer](../landing-pages/lp-custom-js.md)
+* **Landningssidmallar** - Nu kan du spara en landningssida som en mall och återanvända den när du skapar andra landningssidor. [Läs mer](../landing-pages/lp-templates.md)
+* **Tillbaka till den primära sidan** - Nu kan du lägga till en länk till den primära sidan från en undersida inom samma landningssida.
+* **Anpassat stöd för JavaScript** - Nu kan du lägga till anpassad JavaScript till ditt landningssidinnehåll för att utföra avancerad formatering eller lägga till anpassade beteenden på dina landningssidor.    [Läs mer](../landing-pages/lp-custom-js.md)
 
 **Resor**
 
-* **Läsa målgrupper** - En bild Läs målgruppsresor går nu över till slutstatus 30 dagar efter det att resan har slutförts. För schemalagda läsningsmålgrupper är det 30 dagar efter att den senaste förekomsten har körts. [Läs mer](../building-journeys/read-audience.md)
-* **Uttrycksredigerare** - [limit](../building-journeys/functions/functionlimit.md) -funktionen har lagts till så att du kan begränsa antalet objekt i en lista. The [sortera](../building-journeys/functions/functionsort.md) kan du nu sortera ut ett listobjekt. Stödet för listObject har också lagts till i [diskurkt](../building-journeys/functions/functiondistinct.md) och [clearWithNull](../building-journeys/functions/functiondistinctwithnull.md) funktioner.
+* **Läsa målgrupp** - En bild Läs målgruppsresor flyttar nu till slutstatus 30 dagar efter resan. För schemalagda läsningsmålgrupper är det 30 dagar efter att den senaste förekomsten har körts. [Läs mer](../building-journeys/read-audience.md)
+* **Uttrycksredigeraren** - Funktionen [limit](../building-journeys/functions/functionlimit.md) har lagts till så att du kan begränsa antalet objekt i en lista. Med funktionen [sort](../building-journeys/functions/functionsort.md) kan du nu sortera ett listobjekt. Stöd för listObject har också lagts till i funktionerna [disctinct](../building-journeys/functions/functiondistinct.md) och [distinktWithNull](../building-journeys/functions/functiondistinctwithnull.md) .
 
 **Administration**
 
-* **Uppdatering av kontrollpanelen för licensanvändning** - Kontrollpanelen för licensanvändning finns i [!DNL Adobe Journey Optimizer] användargränssnittet återspeglar nu det korrekta värdet för **Licensierad** Genomsnittlig profilrikedom. Du kommer att se en minskning i den här måttvisningen, vilket innebär att licensgränsen nu rapporteras korrekt. [Läs mer](../audience/license-usage.md)
+* **Kontrollpanelsuppdatering för licensanvändning** - Kontrollpanelen för licensanvändning som finns i användargränssnittet i [!DNL Adobe Journey Optimizer] visar nu det korrekta värdet för den genomsnittliga profilrikedomen i **Licensierad**. Du kommer att se en minskning i den här måttvisningen, vilket innebär att licensgränsen nu rapporteras korrekt. [Läs mer](../audience/license-usage.md)
 
 
 ## Version från april 2022 {#april-2022-release}
@@ -634,21 +634,21 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 **Landningssidor**
 
-* **Nytt alternativ för kryssrutor för anmälan/avanmälan** - Nu kan du infoga en enda kryssruta för deltagande/avanmälan på prenumerationens landningssidor. Användarna måste markera kryssrutan för att godkänna (anmälan) och avmarkera den för att ta bort sitt samtycke (avanmälan). [Läs mer](../landing-pages/design-lp.md#define-lp-specific-content)
+* **Nytt alternativ för kryssrutor för anmälan/avanmälan** - Nu kan du infoga en enda kryssruta för avanmälan/avanmälan på prenumerationens landningssidor. Användarna måste markera kryssrutan för att godkänna (anmälan) och avmarkera den för att ta bort sitt samtycke (avanmälan). [Läs mer](../landing-pages/design-lp.md#define-lp-specific-content)
 
-* **förifyllda landningssidor** - Det är nu möjligt att ge användarna möjlighet att förifylla landningssidans fält med profilinformation. [Läs mer](../landing-pages/create-lp.md#configure-primary-page)
+* **Fyll i fält för landningssidor i förväg** - Nu kan användarna fylla i fält för landningssidor i förväg med profilinformation. [Läs mer](../landing-pages/create-lp.md#configure-primary-page)
 
-**Beslutsledning**
+**Beslutshantering**
 
-* **Besluts-API på Edge** - Edge Decisioning API kan leverera och återge personaliserade erbjudanden som hanteras i beslutsprocessen. Du kan skapa erbjudanden och andra relaterade objekt med hjälp av användargränssnittet (UI) eller API:erna för beslutshanteringen. [Läs mer](../offers/api-reference/offer-delivery-api/edge-decisioning-api.md)
+* **API för beslutsfattande på Edge** - API för Edge Decisioning kan leverera och återge personaliserade erbjudanden som hanteras i beslutsprocessen. Du kan skapa erbjudanden och andra relaterade objekt med hjälp av användargränssnittet (UI) eller API:erna för beslutshanteringen. [Läs mer](../offers/api-reference/offer-delivery-api/edge-decisioning-api.md)
 
 **Administration**
 
-* **PTR-varaktighet** - Tidslängden för PTR-redigering är nu några timmar. [Läs mer](../configuration/ptr-records.md#processing)
+* **Varaktighet för PTR-sändning** - Varaktigheten för PTR-redigering är nu några timmar. [Läs mer](../configuration/ptr-records.md#processing)
 
 **E-postdesign**
 
-* **20 nya e-postmallar** kan nu designa ditt e-postinnehåll i Journey Optimizer.
+* **20 nya e-postmallar** finns nu tillgängliga för att utforma ditt e-postinnehåll i Journey Optimizer.
 
 **Användargränssnitt**
 
@@ -675,7 +675,7 @@ Som Adobe Campaign Standard-kund kan du nu skicka e-post, push-meddelanden och S
 * För att undvika att det finns onödiga fält i det enhetliga profilschemat är händelseschemat för resan som standard inte längre aktiverat för profiler. Om det behövs kan du aktivera det. [Läs mer](../reports/sharing-overview.md)
 * Nya steghändelser för exportjobb skickas nu av Journey Optimizer till Adobe Experience Platform. Exempel på frågor har lagts till i dokumentationen. [Läs mer](../reports/query-examples.md)
 
-**Beslutsledning**
+**Beslutshantering**
 
 * Du kan nu ange om begränsningen av erbjudanden ska gälla för alla användare eller för en viss profil, och för alla placeringar eller per placering. [Läs mer](../offers/offer-library/add-constraints.md#capping)
 * Med API:t för gruppbeslut kan organisationer använda beslutsfunktioner för alla profiler i en viss målgrupp i ett enda anrop. Erbjudandeinnehållet för varje profil i målgruppen placeras i en AEP-datauppsättning där det är tillgängligt för anpassade batcharbetsflöden. [Läs mer](../offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
@@ -683,9 +683,9 @@ Som Adobe Campaign Standard-kund kan du nu skicka e-post, push-meddelanden och S
 **Administration**
 
 * Du kan nu aktivera/inaktivera länken för att avbryta prenumerationen i/från e-posthuvudet på den förinställda meddelandenivån och ange en anpassad URL för att avbryta prenumerationen på meddelandenivån. [Läs mer](../configuration/channel-surfaces.md#list-unsubscribe)
-* Tillåtelselista kan nu aktiveras och inaktiveras via [!DNL Journey Optimizer] gränssnitt för produktions- och icke-produktionssandlådor. [Läs mer](../configuration/allow-list.md#enable-allow-list)
+* Tillåtelselista kommer nu att kunna aktiveras och inaktiveras via [!DNL Journey Optimizer]-gränssnittet i sandlådor för produktion och icke-produktion. [Läs mer](../configuration/allow-list.md#enable-allow-list)
 
-**Personalisering**
+**Personalization**
 
 * Du kan nu spara mer än 40 personaliseringsuttryck i biblioteket. [Läs mer](../personalization/use-expression-fragments.md)
 
@@ -703,7 +703,7 @@ Som Adobe Campaign Standard-kund kan du nu skicka e-post, push-meddelanden och S
 <tr>
 <td>
 <p>Nu kan du skapa och utforma landningssidor i Journey Optimizer och dirigera dina användare till onlineformulär där de kan välja att inte ta emot meddelanden eller prenumerera på en viss tjänst som ett nyhetsbrev.</p>
-<p>Mer information finns i <a href="../landing-pages/create-lp.md">detaljerad dokumentation</a> och relaterade <a href="../landing-pages/lp-use-cases.md">exempel</a>.</p>
+<p>Mer information finns i <a href="../landing-pages/create-lp.md">detaljerad dokumentation</a> och relaterat <a href="../landing-pages/lp-use-cases.md">exempel på användning</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -712,7 +712,7 @@ Som Adobe Campaign Standard-kund kan du nu skicka e-post, push-meddelanden och S
 <table>
 <thead>
 <tr>
-<th><strong>Nytt bibliotek för anpassningsuttryck</strong><br/></th>
+<th><strong>Nytt Personalization Expression Library</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -778,7 +778,7 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 
 <!--* decision management reports are now available in Journey Optimizer. You can access the following metrics: Offers sent - Offers' impression rate - Offers' click rate - Breakdown report on Offers' sent.-->
 
-**Beslutsledning**
+**Beslutshantering**
 
 * Rankningar och AI-rankning grupperas nu tillsammans i en enda flik.
 
@@ -795,7 +795,7 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 <tbody>
 <tr>
 <td>
-<p>När en <strong>Villkor</strong> -aktivitet på en resa kan du nu definiera en profilövre gräns. Med den här nya villkorstypen kan du ange ett maximalt antal profiler för en resväg. När den här gränsen nås får de inmatade profilerna en alternativ sökväg. Detta gör att du kan öka volymen på dina leveranser (IP-förstärkning). Du kan till exempel vilja förbättra leveransen på en domän genom att dela upp körningen: skicka 1 000 meddelanden dag 1, 2 000 dag 2 osv.</p>
+<p>När du konfigurerar en <strong>villkorsaktivitet</strong> på en resa kan du nu definiera en profillistlinje. Med den här nya villkorstypen kan du ange ett maximalt antal profiler för en resväg. När den här gränsen nås får de inmatade profilerna en alternativ sökväg. Detta gör att du kan öka volymen på dina leveranser (IP-förstärkning). Du kan till exempel vilja förbättra leveransen på en domän genom att dela upp körningen: skicka 1 000 meddelanden dag 1, 2 000 dag 2 osv.</p>
 <p>Mer information finns i den <a href="../building-journeys/condition-activity.md#profile_cap">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
@@ -811,7 +811,7 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 <tbody>
 <tr>
 <td>
-<p>The <strong>Inkrementell läsning</strong> har lagts till i återkommande <strong>Läsa målgrupper</strong> verksamhet. Med det här alternativet kan ni endast rikta er mot de personer som har gått in i målgruppen sedan den senaste körningen av resan. Den första exekveringen riktar sig alltid till alla målgruppsmedlemmar.</p>
+<p>Alternativet <strong>Inkrementell läsning</strong> har lagts till i återkommande <strong>läs målgruppsaktiviteter</strong>. Med det här alternativet kan ni endast rikta er mot de personer som har gått in i målgruppen sedan den senaste körningen av resan. Den första exekveringen riktar sig alltid till alla målgruppsmedlemmar.</p>
 <p>Mer information finns i den <a href="../building-journeys/read-audience.md#configuring-segment-trigger-activity">detaljerade dokumentationen</a>.
 </td>
 </tr>
@@ -822,9 +822,9 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 
 **Resor**
 
-* Journey Optimizer steg-händelser kan nu länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html). The **profileID** -fältet, i det inbyggda schemat för händelser i resan, definieras nu som ett identitetsfält. [Läs mer](../reports/sharing-overview.md#integration-cja)
+* Journey Optimizer steghändelser kan nu länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html). Fältet **profileID**, i det inbyggda händelseschemat för kundsteg, har nu definierats som ett identitetsfält. [Läs mer](../reports/sharing-overview.md#integration-cja)
 
-**Beslutsledning**
+**Beslutshantering**
 
 * När du uppdaterar ett erbjudande, ett reserverbjudande, en erbjudandesamling eller ett erbjudandebeslut som direkt eller indirekt hänvisas till i ett publicerat meddelande, återspeglas uppdateringarna nu automatiskt i motsvarande meddelande, utan att det behöver publiceras på nytt. [Läs mer](../offers/offers-e2e.md#insert-decision-in-email)
 
@@ -834,6 +834,6 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 
 * Administratörer kan nu redigera PTR-poster med en CNAME-konfigurerad underdomän. [Läs mer](../configuration/ptr-records.md#edit-ptr-subdomains-cname)
 
-**Personalisering**
+**Personalization**
 
-* **Lägg till i Favoriter** - För att förbättra effektiviteten i arbetet med personalisering har vi introducerat begreppet att spara favoriter. Genom att lägga till olika attribut på Favoriter-menyn får du snabb åtkomst till de objekt du använder mest. [Läs mer](../personalization/personalize.md#fav)
+* **Lägg till i favoriter** - För att förbättra effektiviteten när vi arbetar med personalisering har vi introducerat begreppet att spara favoriter. Genom att lägga till olika attribut på Favoriter-menyn får du snabb åtkomst till de objekt du använder mest. [Läs mer](../personalization/personalize.md#fav)

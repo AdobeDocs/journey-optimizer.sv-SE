@@ -8,8 +8,8 @@ level: Intermediate
 exl-id: 7a217c97-57e1-4f04-a92c-37632f8dfe91
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
-source-wordcount: '2161'
-ht-degree: 1%
+source-wordcount: '2291'
+ht-degree: 0%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 Besluten är behållare för dina erbjudanden som utnyttjar beslutsmotorn för erbjudanden för att välja det bästa erbjudandet som ska levereras, beroende på leveransmålet.
 
-➡️ [Lär dig hur du skapar erbjudandeaktiviteter i den här videon](#video)
+➡️ [Lär dig skapa erbjudandeaktiviteter i den här videon](#video)
 
-Listan över beslut finns i **[!UICONTROL Offers]** meny > **[!UICONTROL Decisions]** -fliken. Det finns filter som hjälper dig att hämta beslut utifrån status eller start- och slutdatum.
+Listan med beslut finns på **[!UICONTROL Offers]**-menyn > fliken **[!UICONTROL Decisions]**. Det finns filter som hjälper dig att hämta beslut utifrån status eller start- och slutdatum.
 
 ![](../assets/activities-list.png)
 
@@ -36,11 +36,11 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 
 1. Ange beslutets namn.
 
-1. Definiera start- och slutdatum och sluttid om det behövs, och klicka sedan på **[!UICONTROL Next]**.
+1. Definiera start- och slutdatum och sluttid om det behövs och klicka sedan på **[!UICONTROL Next]**.
 
    ![](../assets/activities-name.png)
 
-1. Om du vill tilldela egna eller centrala dataanvändningsetiketter till ett beslut väljer du **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../../administration/object-based-access.md)
+1. Välj **[!UICONTROL Manage access]** om du vill tilldela etiketter för anpassad eller viktig dataanvändning till beslutet. [Läs mer om OLAC (Object Level Access Control)](../../administration/object-based-access.md)
 
 ## Definiera beslutsomfattningar {#add-decision-scopes}
 
@@ -48,7 +48,7 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 
    ![](../assets/activities-placement.png)
 
-1. Klicka **[!UICONTROL Add]** för att välja utvärderingskriterier för den här placeringen.
+1. Klicka på **[!UICONTROL Add]** om du vill välja utvärderingskriterier för den här placeringen.
 
    ![](../assets/activities-evaluation-criteria.png)
 
@@ -64,33 +64,33 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 
    >[!NOTE]
    >
-   >Du kan klicka på **[!UICONTROL Open offer collections]** om du vill visa en lista med samlingar på en ny flik, som gör att du kan bläddra bland samlingarna och erbjudandena som de innehåller.
+   >Du kan klicka på länken **[!UICONTROL Open offer collections]** om du vill visa listan över samlingar på en ny flik, som gör att du kan bläddra bland samlingarna och erbjudandena som de innehåller.
 
    Den valda samlingen läggs till i villkoren.
 
    ![](../assets/activities-collection-added.png)
 
-1. Använd **[!UICONTROL Eligibility]** om du vill begränsa urvalet av erbjudanden för den här placeringen.
+1. Använd fältet **[!UICONTROL Eligibility]** för att begränsa urvalet av erbjudanden för den här placeringen.
 
-   Den här begränsningen kan tillämpas med en **beslutsregel** eller en eller flera **Adobe Experience Platform målgrupper**. Båda beskrivs i [det här avsnittet](../offer-library/add-constraints.md#segments-vs-decision-rules).
+   Den här begränsningen kan tillämpas med en **beslutsregel** eller en eller flera **Adobe Experience Platform-målgrupper**. Båda beskrivs i [det här avsnittet](../offer-library/add-constraints.md#segments-vs-decision-rules).
 
-   * Om du vill begränsa urvalet av erbjudanden till medlemmarna i en Experience Platform-målgrupp väljer du **[!UICONTROL Audiences]** och sedan klicka **[!UICONTROL Add audiences]**.
+   * Om du vill begränsa urvalet av erbjudanden till medlemmarna i en Experience Platform-målgrupp väljer du **[!UICONTROL Audiences]** och klickar sedan på **[!UICONTROL Add audiences]**.
 
      ![](../assets/activity_constraint_segment.png)
 
-     Lägg till en eller flera målgrupper från den vänstra rutan och kombinera dem med **[!UICONTROL And]** / **[!UICONTROL Or]** logiska operatorer.
+     Lägg till en eller flera målgrupper från den vänstra rutan och kombinera dem med de logiska operatorerna **[!UICONTROL And]** / **[!UICONTROL Or]** .
 
      ![](../assets/activity_constraint_segment2.png)
 
      Lär dig hur du arbetar med målgrupper i [det här avsnittet](../../audience/about-audiences.md).
 
-   * Om du vill lägga till en markeringsbegränsning med en beslutsregel använder du **[!UICONTROL Decision rule]** och välj önskad regel.
+   * Om du vill lägga till en markeringsbegränsning med en beslutsregel använder du alternativet **[!UICONTROL Decision rule]** och väljer önskad regel.
 
      ![](../assets/activity_constraint_rule.png)
 
      Lär dig hur du skapar en beslutsregel i [det här avsnittet](../offer-library/creating-decision-rules.md).
 
-1. När du väljer målgrupper eller beslutsregler kan du se information om de uppskattade kvalificerade profilerna. Klicka **[!UICONTROL Refresh]** för att uppdatera data.
+1. När du väljer målgrupper eller beslutsregler kan du se information om de uppskattade kvalificerade profilerna. Klicka på **[!UICONTROL Refresh]** för att uppdatera data.
 
    >[!NOTE]
    >
@@ -102,11 +102,11 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 
    ![](../assets/activity_ranking-method.png)
 
-   * Om flera erbjudanden är berättigade till den här placeringen är **[!UICONTROL Offer priority]** använder det värde som anges i erbjudandena: erbjudandet med högsta prioritet levereras till användaren.
+   * Om flera erbjudanden är berättigade för den här placeringen använder metoden **[!UICONTROL Offer priority]** det värde som definieras i erbjudandena: erbjudandet med högsta prioritet levereras till användaren.
 
-   * Om du vill använda en viss beräknad poäng för att välja vilket erbjudande du vill leverera väljer du **[!UICONTROL Formula]** eller **[!UICONTROL AI model]**. [Läs mer](../offer-activities/configure-offer-selection.md).
+   * Om du vill använda en viss beräknad poäng för att välja vilket erbjudande som ska levereras väljer du **[!UICONTROL Formula]** eller **[!UICONTROL AI model]**. [Läs mer](../offer-activities/configure-offer-selection.md).
 
-1. Klicka **[!UICONTROL Add]** för att definiera fler villkor för samma placering.
+1. Klicka på **[!UICONTROL Add]** om du vill definiera fler villkor för samma placering.
 
    ![](../assets/activity_add-collection.png)
 
@@ -126,11 +126,11 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 
    >[!CAUTION]
    >
-   >* If [AI-modell](../ranking/ai-models.md) används i en grupp av utvärderingskriterier måste alla utvärderingskriterier i gruppen använda AI-rankningsmetoden och de måste använda samma specifika AI-modell.
+   >* Om [AI-modellen](../ranking/ai-models.md) används i en utvärderingskriteriegrupp måste alla utvärderingskriterier i den gruppen använda AI-rangordningsmetoden och de måste använda samma specifika AI-modell.
    >
    >* Endast en kriteriegrupp för utvärdering kan använda AI-modellen. Andra grupper inom ett beslutsområde måste använda andra rangordningsmetoder (prioritet eller formel). [Läs mer om rangordningsmetoder](../offer-activities/configure-offer-selection.md)
 
-1. Använd **[!UICONTROL New scope]** -knappen. Upprepa stegen ovan för varje beslutsomfattning.
+1. Använd knappen **[!UICONTROL New scope]** om du vill lägga till en ny placering för dina erbjudanden som en del av det här beslutet. Upprepa stegen ovan för varje beslutsomfattning.
 
    ![](../assets/activity_new-scope.png)
 
@@ -148,15 +148,15 @@ I ett och samma beslutsomfång avgör flera kriterier och gruppering av dem prio
 
 Du har till exempel två samlingar, en i utvärderingskriterier A och en i utvärderingskriterier B. Begäran är att två erbjudanden ska skickas tillbaka. Låt oss säga att det finns två godtagbara erbjudanden från utvärderingskriterier A och tre giltiga erbjudanden från utvärderingskriterier B.
 
-* Om de två utvärderingskriterierna är **inte kombinerad** och/eller i sekventiell ordning (1 och 2), kommer de två främsta godtagbara anbuden från utvärderingskriterierna att returneras på första raden. Om det inte finns två godtagbara erbjudanden för de första utvärderingskriterierna kommer beslutsmotorn att gå vidare till nästa utvärderingskriterier i följd för att hitta så många erbjudanden som fortfarande behövs, och kommer vid behov att returnera en reservlösning.
+* Om de två utvärderingskriterierna **inte kombineras** och/eller i sekventiell ordning (1 och 2), returneras de två främsta godtagbara erbjudandena från utvärderingskriterierna på första raden. Om det inte finns två godtagbara erbjudanden för de första utvärderingskriterierna kommer beslutsmotorn att gå vidare till nästa utvärderingskriterier i följd för att hitta så många erbjudanden som fortfarande behövs, och kommer vid behov att returnera en reservlösning.
 
   ![](../assets/activity_consecutive-rank-collections.png)
 
-* Om de två samlingarna **utvärderas samtidigt** Eftersom det finns två godtagbara erbjudanden från utvärderingskriterierna A och tre godtagbara erbjudanden från utvärderingskriterierna B, kommer samtliga fem erbjudanden att rangordnas tillsammans baserat på det värde som fastställs i respektive rangordningsmetod. Två erbjudanden begärs, och därför returneras de två främsta erbjudandena från dessa fem.
+* Om de två samlingarna **utvärderas samtidigt**, eftersom det finns två giltiga erbjudanden från utvärderingskriterierna A och tre giltiga erbjudanden från utvärderingskriterier B, kommer alla fem erbjudanden att rangordnas tillsammans baserat på det värde som fastställs av respektive rangordningsmetod. Två erbjudanden begärs, och därför returneras de två främsta erbjudandena från dessa fem.
 
   ![](../assets/activity_same-rank-collections.png)
 
-+++ **Exempel med flera kriterier**
++++ **Exempel med flera villkor**
 
 Låt oss nu titta på ett exempel där du har flera kriterier för ett enskilt omfång indelade i olika grupper.
 
@@ -173,16 +173,19 @@ De berättigade anbuden för varje kriterium och deras prioritet (används vid r
 
 De högst prioriterade erbjudandena utvärderas först och läggs till i listan med rankade erbjudanden.
 
-**Upprepning 1:**
+**Iteration 1:**
 
 Kriterium 1 och Villkor 2 utvärderas tillsammans (erbjudande 1, erbjudande 2, erbjudande 3, erbjudande 4, erbjudande 5). Låt oss säga att resultatet är:
 
-Erbjudande 1 - 10 Erbjudande 2 - 20 Erbjudande 3 - 30 från villkor 1, 45 från villkor 2. Det högsta av båda kommer att övervägas, så 45 kommer att beaktas.
-Erbjudande 4 - 40 Erbjudande 5 - 50
+Erbjudande 1-10
+Erbjudande 2-20
+Erbjudande 3-30 från kriterium 1, 45 från kriterium 2. Det högsta av båda kommer att övervägas, så 45 kommer att beaktas.
+Erbjudande 4-40
+Erbjudande 5-50
 
 Rankat erbjudande: Erbjudande 5, Erbjudande 3, Erbjudande 4, Erbjudande 2, Erbjudande 1.
 
-**Upprepning 2:**
+**Iteration 2:**
 
 Villkor 3 utvärderas (erbjudande 5, erbjudande 6). Låt oss säga att resultatet är:
 
@@ -201,7 +204,7 @@ När du lägger till flera beslutsomfattningar i ett beslut, och om duplicering 
 
 >[!NOTE]
 >
->The **[!UICONTROL Allow Duplicates across placements]** -parametern ställs in på placeringsnivån. Om duplicering är inställt på false för en placering i en beslutsbegäran, ärver alla placeringar i begäran inställningen false. [Läs mer om dupliceringsparametern](../offer-library/creating-placements.md)
+>Parametern **[!UICONTROL Allow Duplicates across placements]** är inställd på placeringsnivån. Om duplicering är inställt på false för en placering i en beslutsbegäran, ärver alla placeringar i begäran inställningen false. [Läs mer om dupliceringsparametern](../offer-library/creating-placements.md)
 
 Låt oss ta ett exempel där du har lagt till två beslutsomfattningar som:
 
@@ -235,11 +238,11 @@ I det här exemplet nådde Erbjudande 1 och Erbjudande 3 sin frekvensgräns. [L�
 Markeringen ser ut så här:
 
 1. De två återstående giltiga erbjudandena från Scope 1 returneras (Erbjudande 2, Erbjudande 4).
-1. Det finns inga fler berättigade erbjudanden för Scope 2, så [grunderbjudande](#add-fallback) returneras.
+1. Det finns inga andra berättigade erbjudanden för Scope 2, så [reserverbjudandet](#add-fallback) returneras.
 
 +++
 
-**Om duplicering är aktiverat**
+**Om duplicering är på**
 
 När duplicering tillåts på alla ersättningar kan samma erbjudande föreslås flera gånger på olika platser. Om det är aktiverat kommer systemet att överväga samma erbjudande för flera praktik. [Läs mer om dupliceringsparametern](../offer-library/creating-placements.md)
 
@@ -285,13 +288,13 @@ Markeringen ser ut så här:
 
 När du har definierat beslutsomfattningarna definierar du det reserverbjudande som presenteras som en sista utväg till de kunder som inte matchar reglerna och begränsningarna för erbjudanden.
 
-Det gör du genom att välja det i listan över tillgängliga reserverbjudanden för de ersättningar som definierats i beslutet och sedan klicka på **[!UICONTROL Next]**.
+Det gör du genom att markera det i listan över tillgängliga reserverbjudanden för de ersättningar som definierats i beslutet och sedan klicka på **[!UICONTROL Next]**.
 
 ![](../assets/add-fallback-offer.png)
 
 >[!NOTE]
 >
->Du kan klicka på **[!UICONTROL Open offer library]** länk för att visa listan med erbjudanden på en ny flik.
+>Du kan klicka på länken **[!UICONTROL Open offer library]** för att visa listan med erbjudanden på en ny flik.
 
 ## Granska och spara beslutet {#review}
 
@@ -301,7 +304,7 @@ Om allt är korrekt konfigurerat visas en sammanfattning av beslutsegenskaperna.
 
    ![](../assets/review-decision.png)
 
-1. Du kan expandera eller komprimera varje placering. Du kan förhandsgranska tillgängliga erbjudanden, berättigandeinformation och rankningsinformation för varje placering. Du kan även visa information om de uppskattade kvalificerade profilerna. Klicka **[!UICONTROL Refresh]** för att uppdatera data.
+1. Du kan expandera eller komprimera varje placering. Du kan förhandsgranska tillgängliga erbjudanden, berättigandeinformation och rankningsinformation för varje placering. Du kan även visa information om de uppskattade kvalificerade profilerna. Klicka på **[!UICONTROL Refresh]** för att uppdatera data.
 
    ![](../assets/review-decision-details.png)
 
@@ -312,35 +315,35 @@ Om allt är korrekt konfigurerat visas en sammanfattning av beslutsegenskaperna.
 
    Du kan också spara beslutet som utkast för att redigera det och aktivera det senare.
 
-Beslutet visas i listan med **[!UICONTROL Live]** eller **[!UICONTROL Draft]** status, beroende på om du har aktiverat den eller inte i föregående steg.
+Beslutet visas i listan med statusen **[!UICONTROL Live]** eller **[!UICONTROL Draft]**, beroende på om du aktiverade det eller inte i det föregående steget.
 
 Den är nu klar att användas för att leverera erbjudanden till kunder.
 
 ## Beslutslista {#decision-list}
 
-I beslutslistan kan du välja vilket beslut som ska visas. Därifrån kan du även redigera den och ändra dess status (**Utkast**, **Live**, **Complete**, **Arkiverad**), duplicera beslutet eller ta bort det.
+I beslutslistan kan du välja vilket beslut som ska visas. Därifrån kan du även redigera den, ändra dess status (**Utkast**, **Live**, **Fullständigt**, **Arkiverat**), duplicera beslutet eller ta bort det.
 
 ![](../assets/decision_created.png)
 
-Välj **[!UICONTROL Edit]** knapp för att gå tillbaka till beslutsversionsläget, där du kan ändra beslutets [information](#create-activity), [beslutsomfattningar](#add-decision-scopes) och [grunderbjudande](#add-fallback).
+Klicka på knappen **[!UICONTROL Edit]** om du vill gå tillbaka till beslutsversionsläget, där du kan ändra beslutets [information](#create-activity), [beslutsomfattningar](#add-decision-scopes) och [reserverbjudande](#add-fallback).
 
 >[!IMPORTANT]
 >
 >Om ett beslut om erbjudande som används i ett kundmeddelande ändras måste du avpublicera resan och publicera den på nytt.  På så sätt säkerställs att ändringarna införlivas i kundens budskap och att meddelandet överensstämmer med de senaste uppdateringarna.
 
-Välj ett beslut och klicka **[!UICONTROL Deactivate]** för att återställa beslutsstatus till **[!UICONTROL Draft]**.
+Välj ett live-beslut och klicka på **[!UICONTROL Deactivate]** för att återställa beslutsstatusen till **[!UICONTROL Draft]**.
 
-Om du vill ange status igen till **[!UICONTROL Live]** väljer du **[!UICONTROL Activate]** som nu visas.
+Om du vill ange status till **[!UICONTROL Live]** igen väljer du knappen **[!UICONTROL Activate]** som nu visas.
 
 ![](../assets/decision_activate.png)
 
-The **[!UICONTROL More actions]** aktiverar de åtgärder som beskrivs nedan.
+Knappen **[!UICONTROL More actions]** aktiverar de åtgärder som beskrivs nedan.
 
 ![](../assets/decision_more-actions.png)
 
-* **[!UICONTROL Complete]**: anger beslutets status till **[!UICONTROL Complete]**, vilket innebär att beslutet inte kan anropas längre. Den här åtgärden är bara tillgänglig för aktiverade beslut. Beslutet är fortfarande tillgängligt i listan, men du kan inte återställa dess status till **[!UICONTROL Draft]** eller **[!UICONTROL Approved]**. Du kan bara duplicera, ta bort eller arkivera den.
+* **[!UICONTROL Complete]**: anger beslutets status till **[!UICONTROL Complete]**, vilket innebär att det inte går att anropa beslutet längre. Den här åtgärden är bara tillgänglig för aktiverade beslut. Beslutet är fortfarande tillgängligt från listan, men du kan inte återställa dess status till **[!UICONTROL Draft]** eller **[!UICONTROL Approved]**. Du kan bara duplicera, ta bort eller arkivera den.
 
-* **[!UICONTROL Duplicate]**: skapar ett beslut med samma egenskaper, beslutsomfattningar och reserverbjudande. Som standard har det nya beslutet **[!UICONTROL Draft]** status.
+* **[!UICONTROL Duplicate]**: skapar ett beslut med samma egenskaper, beslutsomfattningar och reserverbjudande. Som standard har det nya beslutet statusen **[!UICONTROL Draft]**.
 
 * **[!UICONTROL Delete]**: tar bort beslutet från listan.
 
@@ -350,7 +353,7 @@ The **[!UICONTROL More actions]** aktiverar de åtgärder som beskrivs nedan.
   >
   >Om beslutet används i ett annat objekt kan det inte tas bort.
 
-* **[!UICONTROL Archive]**: anger beslutsstatus till **[!UICONTROL Archived]**. Beslutet är fortfarande tillgängligt i listan, men du kan inte återställa dess status till **[!UICONTROL Draft]** eller **[!UICONTROL Approved]**. Du kan bara duplicera eller ta bort den.
+* **[!UICONTROL Archive]**: anger beslutsstatus till **[!UICONTROL Archived]**. Beslutet är fortfarande tillgängligt från listan, men du kan inte återställa dess status till **[!UICONTROL Draft]** eller **[!UICONTROL Approved]**. Du kan bara duplicera eller ta bort den.
 
 Du kan också ta bort eller ändra status för flera beslut samtidigt genom att markera motsvarande kryssrutor.
 
@@ -364,7 +367,7 @@ När ett beslut har skapats kan du klicka på dess namn i listan.
 
 ![](../assets/decision_click-name.png)
 
-På så sätt kan du få tillgång till detaljerad information för det beslutet. Välj **[!UICONTROL Change log]** tabba till [övervaka alla ändringar](../get-started/user-interface.md#changes-log) som har tagits till beslutet.
+På så sätt kan du få tillgång till detaljerad information för det beslutet. Välj fliken **[!UICONTROL Change log]** om du vill [övervaka alla ändringar ](../get-started/user-interface.md#changes-log) som har gjorts i beslutet.
 
 ![](../assets/decision_information.png)
 

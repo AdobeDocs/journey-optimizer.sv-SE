@@ -9,7 +9,7 @@ exl-id: 6a05efca-31bd-46d5-998d-ff3038d9013f
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '119'
-ht-degree: 9%
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ Beslutsregler läggs till i ett personaliserat erbjudande och tillämpas på en 
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
-I följande tabell visas giltiga värden som utgör *Content-Type* fält i begärandehuvudet:
+I följande tabell visas giltiga värden som utgör fältet *Content-Type* i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
@@ -68,7 +68,7 @@ curl -X POST 'https://platform.adobe.io/data/core/dps/offer-rules' \
 
 **Svar**
 
-Ett svar returnerar information om den nya beslutsregeln `id`. Du kan använda `id` i senare steg för att uppdatera eller ta bort din beslutsregel eller använda den i en senare självstudie för att skapa beslut, beslutsregler och reserverbjudanden.
+Ett svar returnerar information om den nyskapade beslutsregeln `id`. Du kan använda `id` i senare steg för att uppdatera eller ta bort din beslutsregel eller använda den i en senare självstudie för att skapa beslut, beslutsregler och reserverbjudanden.
 
 ```json
 {

@@ -23,11 +23,11 @@ ht-degree: 0%
 >title="Meddelandeaktivitet"
 >abstract="Journey Optimizer har inbyggda meddelandefunktioner. Du kan enkelt lägga till ett push-meddelande (SMS/MMS), en meddelandeaktivitet i appen eller ett e-postmeddelande under resan och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan."
 
-[!DNL Journey Optimizer] innehåller inbyggda meddelandefunktioner. Du kan enkelt lägga till en push-funktion, ett SMS/MMS-meddelande, en aktivitet i appen eller ett e-postmeddelande under resan och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan.
+[!DNL Journey Optimizer] har inbyggda meddelandefunktioner. Du kan enkelt lägga till en push-funktion, ett SMS/MMS-meddelande, en aktivitet i appen eller ett e-postmeddelande under resan och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan.
 
 Du kan också ange specifika åtgärder för att skicka meddelanden till dig:
 
-* Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en anpassad åtgärd. Läs mer om detta [section](../action/action.md).
+* Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en anpassad åtgärd. Läs mer i det här [avsnittet](../action/action.md).
 
 * Om du arbetar med Campaign och Journey Optimizer, se följande avsnitt:
 
@@ -36,9 +36,9 @@ Du kan också ange specifika åtgärder för att skicka meddelanden till dig:
 
 Följ stegen nedan om du vill lägga till ett meddelande under en resa:
 
-1. Påbörja din resa med en [Händelse](general-events.md) eller en [Läs målgrupp](read-audience.md) aktivitet.
+1. Starta din resa med en [Event](general-events.md)- eller [Read Audience](read-audience.md)-aktivitet.
 
-1. Från **Åtgärder** dra och släpp en **e-post**, en **I appen**, en **SMS** eller en **Push** till arbetsytan.
+1. Dra och släpp en **e-postadress**, en **i appen**, en **SMS** eller en **push** -aktivitet på arbetsytan från **Åtgärder** på paletten.
 
 1. Konfigurera aktiviteten. Lär dig detaljerade steg för att skapa meddelandeinnehåll på följande sidor:
 
@@ -48,7 +48,7 @@ Följ stegen nedan om du vill lägga till ett meddelande under en resa:
    <a href="../email/create-email.md">
    <img alt="Lead" src="../assets/do-not-localize/email.jpg">
    </a>
-   <div><a href="../email/create-email.md"><strong>Skapa e-postmeddelanden</strong>
+   <div><a href="../email/create-email.md"><strong>Skapa e-post</strong>
    </div>
    <p>
    </td>
@@ -56,7 +56,7 @@ Följ stegen nedan om du vill lägga till ett meddelande under en resa:
    <a href="../in-app/create-in-app.md">
    <img alt="Lead" src="../assets/do-not-localize/in-app.jpg">
    </a>
-   <div><a href="../in-app/create-in-app.md"><strong>Skapa meddelanden i appen</strong>
+   <div><a href="../in-app/create-in-app.md"><strong>Skapa meddelanden i programmet</strong>
    </div>
    <p>
    </td>
@@ -85,7 +85,7 @@ Följ stegen nedan om du vill lägga till ett meddelande under en resa:
 
 Du kan uppdatera innehållet i ett meddelande (e-post, i appen, push, SMS) under en direktresa.
 
-Det gör du genom att öppna din liveresa, välja meddelandeaktivitet och klicka på **Redigera innehåll**.
+Det gör du genom att öppna din liveresa, välja meddelandeaktiviteten och klicka på **Redigera innehåll**.
 
 ![](assets/add-a-message2.png)
 
@@ -129,15 +129,15 @@ Den här informationen lagras med användarens profil och hänvisas till vid kö
 
 Vad kan optimering av sändningstid göra? Hur hanteras nya profiler? Sprider den sändningen över ett 24-12-12-timmarsfönster?
 
-Tidsoptimering försöker förutse den bästa tiden att interagera med kunderna och optimera öppnings-/klickfrekvensen för e-postmeddelanden. Poängen har formatet `3*7*24` attribut för varje profil. The `7*24` attribut beskriver rangordningen för den bästa tidpunkten för att skicka ut e-post till mottagaren och 3 är för att optimera öppningsfrekvensen för e-post, klickfrekvens för e-post och push-öppningsfrekvens.
+Tidsoptimering försöker förutse den bästa tiden att interagera med kunderna och optimera öppnings-/klickfrekvensen för e-postmeddelanden. Poängen har formatet `3*7*24` attribut för varje profil. Attributen `7*24` beskriver rangordningen för den förväntade bästa tiden att skicka ut e-postmeddelanden till mottagaren och 3 är för att optimera öppningsfrekvensen för e-post, klickfrekvensen för e-post och push-öppningsfrekvensen.
 
 Var kan jag se den förväntade sändningstiden för varje profil?
 
-Du kan se den övergripande poängen i **Profiler** gränssnitt. För var och en av de tre uppsättningarna med 168 poäng går rangordningarna från -83 till 84. Ju högre rankning desto bättre tid valdes att interagera med mottagaren. Eftersom du kan definiera start och varaktighet för en resa kanske den bästa rangordningen (84) inte hamnar i det tidsfönstret. I det här fallet rekommenderar vi att du väljer en timme med det högsta rangvärdet.
+Du kan se det övergripande poängtalet i gränssnittet **Profiler**. För var och en av de tre uppsättningarna med 168 poäng går rangordningarna från -83 till 84. Ju högre rankning desto bättre tid valdes att interagera med mottagaren. Eftersom du kan definiera start och varaktighet för en resa kanske den bästa rangordningen (84) inte hamnar i det tidsfönstret. I det här fallet rekommenderar vi att du väljer en timme med det högsta rangvärdet.
 
 Vilken rapportering finns tillgänglig?
 
-Kom åt din resa genom att klicka på **Visa rapport** överst till höger och välj **Resa** till vänster. [Läs mer](../reports/journey-global-report.md)
+Kom åt din resa genom att klicka på knappen **Visa rapport** i det övre högra hörnet och välja fliken **Resa** till vänster. [Läs mer](../reports/journey-global-report.md)
 
 Hur påverkar data för optimering av sändningstid profilens detaljrikedom?
 
@@ -155,15 +155,15 @@ Sändningsoptimering lägger till poäng/attribut i varje profil, men ingen ny p
 >title="Aktivera optimering av sändningstid"
 >abstract="Standardinställningen för push-meddelanden är öppningsalternativet, eftersom klickningar inte kan användas för push-meddelanden. Du kan också välja att klamra de sändningstider som används av systemet genom att ange ett värde för Skicka i nästa alternativ."
 
-Aktivera optimering av sändningstid för ett e-postmeddelande eller push-meddelande genom att välja **Sändningsoptimering** växla från aktivitetsparametrarna.
+Aktivera Send-Time Optimization för ett e-postmeddelande eller push-meddelande genom att välja **Send-Time Optimization** från aktivitetsparametrarna.
 
 ![](../building-journeys/assets/jo-message5.png)
 
 För e-postmeddelanden väljer du om du vill optimera e-postöppningar eller e-postklick genom att välja lämplig alternativknapp. Standardinställningen för push-meddelanden är öppningsalternativet, eftersom klickningar inte kan användas för push-meddelanden.
 
-Du kan också välja att klamra de sändningstider som används av systemet genom att ange ett värde för **Skicka inom nästa** alternativ. Om du väljer&quot;sex timmar&quot; som värde, [!DNL Journey Optimizer] kontrollerar varje användarprofil och väljer den optimala sändningstiden inom sex timmar från körningstiden för resan.
+Du kan också välja att klamra de sändningstider som används av systemet genom att ange ett värde för alternativet **Skicka inom nästa**. Om du väljer&quot;sex timmar&quot; som värde kontrollerar [!DNL Journey Optimizer] varje användarprofil och väljer den optimala sändningstiden inom sex timmar från körningstiden för resan.
 
-**Vad händer om den optimala tiden är utanför fönstret?**
+**Vad händer om den optimala tiden ligger utanför fönstret?**
 
 Låt oss ta ett exempel med följande inställningar:
 

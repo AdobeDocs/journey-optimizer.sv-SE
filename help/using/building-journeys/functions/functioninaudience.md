@@ -10,7 +10,7 @@ exl-id: 8417af75-6e97-4ad4-86b4-3ecd264a5560
 source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
 workflow-type: tm+mt
 source-wordcount: '189'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ Kontrollerar om en person tillhör en viss målgrupp.
 
 Målgruppsnamnet måste vara en strängkonstant. Det kan inte vara en fältreferens eller ett uttryck.
 
-Målgrupper definieras i [Adobe Experience Platform](https://platform.adobe.com/audience/overview). Uttrycksredigeraren innehåller en automatiskt ifylld lista över målgrupper.
+Målgrupper definieras i [Adobe Experience Platform](https://platform.adobe.com/audience/overview) . Uttrycksredigeraren innehåller en automatiskt ifylld lista över målgrupper.
 
 Målgrupper kan ha tre statusvärden:
 
@@ -32,7 +32,7 @@ Målgrupper kan ha tre statusvärden:
 * realiserad: företaget går in i målgruppen.
 * avslutad: entiteten avslutar publiken.
 
-Endast personer med **Realiserad** och **Befintlig** Status för målgruppsdeltagande kommer att betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results).
+Endast personer med **Realiserad** och **befintlig** status för målgruppsdeltagande betraktas som medlemmar i målgruppen. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results).
 
 `inAudience('audienceName') == true` betyder att du har ett segmentMembership med den angivna/befintliga statusen.
 
@@ -64,4 +64,4 @@ Returnerar ett booleskt värde.
 
 Förklaring:
 
-Funktionen returneras **[!UICONTROL true]** om personen i reseinstansen är en del av Adobe Experience Platform målgrupp med namnet&quot;män över 50&quot;, **[!UICONTROL false]** annars.
+Funktionen returnerar **[!UICONTROL true]** om personen i reseinstansen är en del av Adobe Experience Platform-publiken med namnet&quot;män över 50&quot;, annars **[!UICONTROL false]**.

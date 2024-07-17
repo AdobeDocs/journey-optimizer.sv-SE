@@ -8,7 +8,7 @@ level: Intermediate
 exl-id: 851d988a-2582-4c30-80f3-b881d90771be
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1075'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ I det här avsnittet presenteras ett exempel från början till slut som visar h
 
 De viktigaste stegen för att konfigurera erbjudanden, inkludera dem i ett beslut och utnyttja detta beslut i ett e-postmeddelande är följande:
 
-1. Innan du skapar erbjudanden [definiera dina komponenter](#define-components)
+1. [Definiera dina komponenter](#define-components) innan du skapar erbjudanden
 
    * Skapa placeringar
    * Skapa beslutsregler
@@ -39,7 +39,7 @@ De viktigaste stegen för att konfigurera erbjudanden, inkludera dem i ett beslu
 
 1. [Skapa ett reserverbjudande](#create-fallback)
 
-1. [Skapa en samling](#create-collection) för att inkludera de personaliserade erbjudanden du har skapat
+1. [Skapa en samling](#create-collection) som innehåller de anpassade erbjudanden du har skapat
 
 1. [Konfigurera beslutet](#configure-decision)
 
@@ -65,7 +65,7 @@ Innan du börjar skapa erbjudanden måste du definiera flera komponenter som du 
 
 Du hittar dem under **[!UICONTROL Decision Management]** > **[!UICONTROL Components menu]**.
 
-1. Börja med att skapa **placeringar** för era erbjudanden.
+1. Börja med att skapa **placeringar** för dina erbjudanden.
 
    Du använder dessa ersättningar för att definiera var erbjudandet ska visas när du definierar ditt beslut om erbjudande.
 
@@ -83,7 +83,7 @@ Du hittar dem under **[!UICONTROL Decision Management]** > **[!UICONTROL Compone
 
    Beslutsreglerna ger det bästa erbjudandet till en profil i Adobe Experience Platform.
 
-   Konfigurera två enkla regler med **[!UICONTROL XDM Individual Profile > Person > Gender]** attribute:
+   Konfigurera två enkla regler med attributet **[!UICONTROL XDM Individual Profile > Person > Gender]**:
 
    * *Kunder som är kvinnor*
    * *Manliga kunder*
@@ -92,11 +92,11 @@ Du hittar dem under **[!UICONTROL Decision Management]** > **[!UICONTROL Compone
 
    De detaljerade stegen för att skapa regler beskrivs i [det här avsnittet](../../using/offers/offer-library/creating-decision-rules.md).
 
-1. Du kan också skapa en **samlingskvalificerare**.
+1. Du kan också skapa en **mängdkvalificerare**.
 
    Du kan sedan koppla erbjudandet till dina erbjudanden och använda den här samlingskvalificeraren för att gruppera dina erbjudanden i en samling.
 
-   I det här exemplet skapar du *Yoga* samlingskvalificerare.
+   I det här exemplet skapar du samlingskvalificeraren *Yoga*.
 
    ![](assets/offers-e2e-tag.png)
 
@@ -108,7 +108,7 @@ Du hittar dem under **[!UICONTROL Decision Management]** > **[!UICONTROL Compone
 
    >[!NOTE]
    >
-   >I det här exemplet använder vi bara prioritetspoängen. Läs mer på [regler och begränsningar för behörighet](../../using/offers/offer-library/creating-personalized-offers.md#eligibility).
+   >I det här exemplet använder vi bara prioritetspoängen. Läs mer om [regler och begränsningar för behörighet](../../using/offers/offer-library/creating-personalized-offers.md#eligibility).
 
 ## Konfigurera erbjudanden {#configure-offers}
 
@@ -118,9 +118,9 @@ Nu kan du skapa och konfigurera dina erbjudanden. I det här exemplet skapar du 
 
 1. Skapa tre representationer i det här erbjudandet. Varje representation måste vara en kombination av en placering som du skapade tidigare och en resurs:
 
-   * En som motsvarar *Webb - bild* placering
-   * En som motsvarar *E-post - bild* placering
-   * En som motsvarar *Icke-digital - text* placering
+   * En som motsvarar placeringen *Webb - bild*
+   * En som motsvarar placeringen *Email - Image*
+   * En som motsvarar placeringen *Icke-digital - text*
 
    >[!NOTE]
    >
@@ -128,15 +128,15 @@ Nu kan du skapa och konfigurera dina erbjudanden. I det här exemplet skapar du 
 
    Läs mer om representationer i [det här avsnittet](../../using/offers/offer-library/creating-personalized-offers.md#representations).
 
-1. Välj en lämplig bild för de två första placeringarna. Ange egen text för *Icke-digital - text* placering.
+1. Välj en lämplig bild för de två första placeringarna. Ange anpassad text för placeringen *Icke-digital - Text*.
 
    ![](assets/offers-e2e-representations.png)
 
-1. I **[!UICONTROL Offer eligibility]** avsnitt, markera **[!UICONTROL By defined decision rule]** och dra och släpp valfri regel.
+1. I avsnittet **[!UICONTROL Offer eligibility]** markerar du **[!UICONTROL By defined decision rule]** och drar och släpper önskad regel.
 
    ![](assets/offers-e2e-eligibility.png)
 
-1. Fyll i **[!UICONTROL Priority]**. I det här exemplet lägger du till *25*.
+1. Fyll i **[!UICONTROL Priority]**. Lägg till *25* i det här exemplet.
 
 1. Granska ditt erbjudande och klicka sedan på **[!UICONTROL Save and approve]**.
 
@@ -144,10 +144,10 @@ Nu kan du skapa och konfigurera dina erbjudanden. I det här exemplet skapar du 
 
 1. I det här exemplet skapar du ytterligare tre erbjudanden med samma representationer, men med olika resurser. Tilldela dem olika regler och prioriteringar, till exempel:
 
-   * Första erbjudandet - Beslutsregel: *Kunder som är kvinnor*, Prioritet: *25*
-   * Andra erbjudandet - Beslutsregel: *Kunder som är kvinnor*, Prioritet: *15*
-   * Tredje erbjudandet - beslutsregel: *Manliga kunder*, Prioritet: *25*
-   * Fjärde erbjudandet - beslutsregel: *Manliga kunder*, Prioritet: *15*
+   * Första erbjudandet - Beslutsregel: *Kunder som är kvinnor*, prioritet: *25*
+   * Andra erbjudandet - Beslutsregel: *Kunder som är kvinnor*, prioritet: *15*
+   * Tredje erbjudandet - Beslutsregel: *Handkunder*, prioritet: *25*
+   * Fjärde erbjudandet - beslutsregel: *Handkunder*, prioritet: *15*
 
    ![](assets/offers-e2e-offers-created.png)
 
@@ -161,9 +161,9 @@ De detaljerade stegen för att skapa och konfigurera erbjudanden beskrivs i [det
 
    Varje representation måste vara en kombination av en placering som du skapade tidigare och en resurs:
 
-   * En som motsvarar *Webb - bild* placering
-   * En som motsvarar *E-post - bild* placering
-   * En som motsvarar *Icke-digital - text* placering
+   * En som motsvarar placeringen *Webb - bild*
+   * En som motsvarar placeringen *Email - Image*
+   * En som motsvarar placeringen *Icke-digital - text*
 
    ![](assets/offers-e2e-fallback-representations.png)
 
@@ -181,7 +181,7 @@ När du konfigurerar beslutet måste du lägga till dina personliga erbjudanden 
 
 1. Om du vill snabba upp beslutsprocessen skapar du en dynamisk samling.
 
-1. Använd *Yoga* samlingskvalificerare för att välja de fyra personaliserade erbjudanden du skapade tidigare.
+1. Använd samlingskvalificeraren *Yoga* för att välja de fyra personliga erbjudanden du skapade tidigare.
 
    ![](assets/offers-e2e-collection-using-tag.png)
 
@@ -195,9 +195,9 @@ Den här kombinationen används av beslutsmotorn för att hitta det bästa erbju
 
 Följ stegen nedan för att skapa och konfigurera ett erbjudande:
 
-1. Skapa ett beslut. Läs mer i [det här avsnittet](../../using/offers/offer-activities/create-offer-activities.md#create-activity).
+1. Ta ett beslut. Läs mer i [det här avsnittet](../../using/offers/offer-activities/create-offer-activities.md#create-activity).
 
-1. Välj *Webb - bild*, *E-post - bild* och *Icke-digital - text* placeringar.
+1. Välj placeringen *Webb - bild*, *E-post - bild* och *Ej digital - text*.
 
    ![](assets/offers-e2e-decision-placements.png)
 
@@ -205,7 +205,7 @@ Följ stegen nedan för att skapa och konfigurera ett erbjudande:
 
    ![](assets/offers-e2e-decision-collection.png)
 
-1. Om du definierade en rankning när [bygga komponenter](#define-components)kan du tilldela den till en placering i beslutet. Om flera erbjudanden kan presenteras på den här platsen, kommer beslutet att använda den här formeln för att beräkna vilket erbjudande som ska levereras först.
+1. Om du definierade en rankning när du [byggde dina komponenter](#define-components) kan du tilldela den till en placering i beslutet. Om flera erbjudanden kan presenteras på den här platsen, kommer beslutet att använda den här formeln för att beräkna vilket erbjudande som ska levereras först.
 
    De detaljerade stegen för att tilldela en rankningsformel till en placering beskrivs i [det här avsnittet](../../using/offers/offer-activities/configure-offer-selection.md#assign-ranking-formula).
 
@@ -223,6 +223,6 @@ De detaljerade stegen för att skapa och konfigurera ett beslut beskrivs i [det 
 
 ## Infoga beslutet i ett e-postmeddelande {#insert-decision-in-email}
 
-Nu när ditt beslut är klart kan du infoga det i ett e-postmeddelande. Gör så här: [den här sidan](../../using/email/add-offers-email.md).
+Nu när ditt beslut är klart kan du infoga det i ett e-postmeddelande. Om du vill göra det följer du de steg som beskrivs på [den här sidan](../../using/email/add-offers-email.md).
 
 ![](assets/offers-e2e-offers-displayed.png)

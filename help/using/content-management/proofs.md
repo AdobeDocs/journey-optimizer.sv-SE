@@ -4,9 +4,10 @@ description: Lär dig hur du skickar e-postkorrektur.
 feature: Preview, Proofs
 role: User
 level: Beginner
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+exl-id: e742c04e-2987-4466-84af-bdaf4d714552
+source-git-commit: feae2cb9d0bed35f12eb117cf2969c9290ebc06f
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -15,29 +16,29 @@ ht-degree: 0%
 
 Ett korrektur är ett specifikt meddelande som gör att du kan testa ett meddelande innan det skickas till huvudmålgruppen. Mottagarna av beviset ansvarar för att godkänna meddelandet: rendering, innehåll, personaliseringsinställningar, konfiguration.
 
-En gång [testprofiler](test-profiles.md) om du har valt det här alternativet kan du skicka korrektur.
+När [testprofiler](test-profiles.md) har valts kan du skicka korrektur.
 
-1. I **[!UICONTROL Simulate]** klickar du på **[!UICONTROL Send proof]** -knappen.
+1. Klicka på knappen **[!UICONTROL Send proof]** på skärmen **[!UICONTROL Simulate]**.
 
    ![](../email/assets/send-proof-button.png)
 
-1. Från **[!UICONTROL Send proof]** fönster, skriv in mottagarens e-postadress och klicka på **[!UICONTROL Add]** för att skicka beviset till dig själv eller medlemmar i din organisation.
+1. I fönstret **[!UICONTROL Send proof]** skriver du in mottagarens e-postadress och klickar på **[!UICONTROL Add]** för att skicka korrekturet till dig själv eller medlemmar i din organisation.
 
    Observera att du kan lägga till upp till tio mottagare för korrekturleveransen.
 
    ![](../email/assets/send-proof-add.png)
 
-1. Välj **Testprofiler** för att anpassa meddelandeinnehållet.
+1. Välj de **Testprofiler** som ska användas för att anpassa meddelandeinnehållet.
 
    Varje mottagare av korrekturet får lika många meddelanden som antalet valda testprofiler. Om du till exempel har lagt till fem e-postmeddelanden till mottagare och valt tio testprofiler, skickar du femtio korrekturmeddelanden och varje mottagare får tio av dem.
 
-1. Du kan vid behov lägga till ett prefix till korrekturens ämnesrad. Endast alfanumeriska tecken och specialtecken som . - _ ( ) [ ] är tillåtna som prefix till ämnesraden.
+1. Du kan vid behov lägga till ett prefix till korrekturens ämnesrad. Endast alfanumeriska tecken och specialtecken som . - _ ( ) [ ] tillåts som prefix till ämnesraden.
 
 1. Klicka på **[!UICONTROL Send proof]**.
 
    ![](../email/assets/send-proof-select.png)
 
-1. Tillbaka i **[!UICONTROL Simulate]** klickar du på  **[!UICONTROL View proofs]** för att kontrollera status.
+1. Klicka på knappen **[!UICONTROL View proofs]** på skärmen **[!UICONTROL Simulate]** för att kontrollera status.
 
    ![](../email/assets/send-proof-view.png)
 

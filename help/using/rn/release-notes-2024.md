@@ -17,7 +17,7 @@ ht-degree: 6%
 
 # Versionsinformation för 2024 {#release-notes-2024}
 
-På den här sidan visas alla funktioner och förbättringar för [!DNL Journey Optimizer] släppt 2024.
+På den här sidan visas alla funktioner och förbättringar för [!DNL Journey Optimizer] som släpptes 2024.
 
 
 
@@ -119,14 +119,14 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 
 Den här versionen innehåller de förbättringar som anges nedan.
 
-**Experience Decision** (Begränsad tillgänglighet)
+**Experience Decision** (begränsad tillgänglighet)
 
 Från betaversion till den här versionen har följande förbättringar lagts till:
 
-* **Experience Decision + Code-based experiences** - Nu kan ni utnyttja beslutsfunktionen i Experience för att använda beslutsobjekt i era kodbaserade kampanjer. Obs! Den kodbaserade upplevelsekanalen och Experience Decision är inte tillgängliga för organisationer som har köpt Adobe Healthcare Shield och tillägg till Privacy and Security Shield. [Läs mer](../code-based/get-started-code-based.md)
-* **Kontextdata** - Nu kan du utnyttja kontextdata från Adobe Experience Platform i dina regler för beslutsfattande och rangordningsformler. [Läs mer](../experience-decisioning/context-data.md)
-* **Ny behörighet** - Det finns nu en ny behörighet för att hantera Experience Decision Management-resursen. Det gör att ni kan hantera rättigheter för Experience Decision. [Läs mer](../experience-decisioning/gs-experience-decisioning.md)
-* **Begränsningsregler** - Du kan nu lägga till flera regler för att sätta stopp för ett visst beslutsobjekt i Experience Decisioning. På så sätt kan ni öka kontrollen över hur erbjudandena skickas. [Läs mer](../experience-decisioning/items.md#capping)
+* **Experience Decision + Code-based experiences** - Nu kan du använda funktionen Experience Decision för att använda beslutsobjekt i dina kodbaserade kampanjer. Obs! Den kodbaserade upplevelsekanalen och Experience Decision är inte tillgängliga för organisationer som har köpt Adobe Healthcare Shield och tillägg till Privacy and Security Shield. [Läs mer](../code-based/get-started-code-based.md)
+* **Kontextdata** - Nu kan du utnyttja kontextdata från Adobe Experience Platform i dina beslutsregler och rangordningsformler. [Läs mer](../experience-decisioning/context-data.md)
+* **Ny behörighet** - Det finns nu en ny behörighet för att hantera upplevelsebeslut för beslutshanteringsresursen. Det gör att ni kan hantera rättigheter för Experience Decision. [Läs mer](../experience-decisioning/gs-experience-decisioning.md)
+* **Begränsningsregler** - Nu kan du lägga till flera appningsregler för ett visst beslutsobjekt i Experience Decision. På så sätt kan ni öka kontrollen över hur erbjudandena skickas. [Läs mer](../experience-decisioning/items.md#capping)
 * **Rapportering** - Nu kan du skapa anpassade rapportinstrumentpaneler för Experience Decision-kampanjer med [!DNL Customer Journey Analytics]. [Läs mer](../experience-decisioning/cja-reporting.md)
 
 
@@ -142,7 +142,7 @@ Från betaversion till den här versionen har följande förbättringar lagts ti
 * **List-unsubscribe** - Following on the recent Gmail and Yahoo announcements for bulk senders, Journey Optimizer supports the "post/1-click" List-Unsubscribe option. Refer to the following pages: [Email opt-out management](../email/email-opt-out.md#unsubscribe-header) and [Configure email settings](../email/email-settings.md#list-unsubscribe)
 -->
 
-* **Skräddarsy poäng** (Beta) - Nu kan du kontrollera ditt innehåll som skräppost i en dedikerad skräppostrapport. Med SpamAssassin kan Adobe Journey Optimizer nu testa ditt e-postinnehåll och ge det ett poängvärde som anger om Internet-leverantörer eller postlådeleverantörer kommer att betrakta det som skräppost eller inte. [Läs mer](../content-management/spam-report.md)
+* **Spam-poäng** (Beta) - Nu kan du kontrollera ditt innehåll-spam-poäng i en dedikerad spam-rapport. Med SpamAssassin kan Adobe Journey Optimizer nu testa ditt e-postinnehåll och ge det ett poängvärde som anger om Internet-leverantörer eller postlådeleverantörer kommer att betrakta det som skräppost eller inte. [Läs mer](../content-management/spam-report.md)
 
   >[!AVAILABILITY]
   >
@@ -160,10 +160,10 @@ Från betaversion till den här versionen har följande förbättringar lagts ti
 **Resor**
 
 <!--* **Merge policies** (Limited Availability)- Merge policies used by a journey are now visible and consistent throughout the journey.-->
-* **Stöd för mTLS** - mTLS-autentisering stöds nu i anpassade åtgärder. Det krävs ingen ytterligare konfiguration i den anpassade åtgärden eller resan för att aktivera mTLS. Den sker automatiskt när en mTLS-aktiverad slutpunkt identifieras. [Läs mer](../action/about-custom-action-configuration.md#mtls-protocol-support)
-* **Sök tabeller i händelser** - Du kan nu utnyttja data från en uppslagsdatauppsättning när en relation har definierats med ett attribut inuti en objektmatris. Uppslagsvärdena är tillgängliga i resor (villkor, anpassade åtgärder osv.) och personalisering av meddelanden. [Läs mer](../event/experience-event-schema.md#relationships_limitations)
-* **Avancerad uttrycksredigerare i händelsekonfigurationen** (LA) - Du kan nu använda den avancerade uttrycksredigeraren när du konfigurerar en händelse, så att du kan definiera mer komplexa uttryck eller använda funktioner i händelse-id-villkoret. Den här funktionen lanseras i begränsad tillgänglighet för utvalda kunder. [Läs mer](../event/about-creating.md#adv-exp-editor)
-* **Sammanfoga profiler** (LA) - Sammanslagningspolicyer som används av en resa är nu synliga och konsekventa under hela resan. Den här funktionen lanseras i begränsad tillgänglighet för utvalda kunder. [Läs mer](../building-journeys/journey-properties.md#merge-policies)
+* **mTLS-stöd** - mTLS-autentisering stöds nu i anpassade åtgärder. Det krävs ingen ytterligare konfiguration i den anpassade åtgärden eller resan för att aktivera mTLS. Den sker automatiskt när en mTLS-aktiverad slutpunkt identifieras. [Läs mer](../action/about-custom-action-configuration.md#mtls-protocol-support)
+* **Uppslagstabeller i händelser** - Nu kan du utnyttja data från en uppslagsdatauppsättning när en relation har definierats med ett attribut inuti en objektmatris. Uppslagsvärdena är tillgängliga i resor (villkor, anpassade åtgärder osv.) och personalisering av meddelanden. [Läs mer](../event/experience-event-schema.md#relationships_limitations)
+* **Avancerad uttrycksredigerare i händelsekonfiguration** (LA) - Du kan nu utnyttja den avancerade uttrycksredigeraren när du konfigurerar en händelse, så att du kan definiera mer komplexa uttryck eller använda funktioner i händelse-ID-villkoret. Den här funktionen lanseras i begränsad tillgänglighet för utvalda kunder. [Läs mer](../event/about-creating.md#adv-exp-editor)
+* **Sammanslagningsprinciper** (LA) - Sammanslagningsprinciper som används av en resa är nu synliga och konsekventa under hela resan. Den här funktionen lanseras i begränsad tillgänglighet för utvalda kunder. [Läs mer](../building-journeys/journey-properties.md#merge-policies)
 
 **Globalisering**
 
@@ -199,7 +199,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Förbättrad resedesigner och liverapporter</strong><br/></th>
+<th><strong>Förbättrad Journey Designer och liverapporter</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -209,7 +209,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <img src="assets/new-canvas3.gif"/>
 <p>Förutom den förbättrade utformningen av arbetsytan på resan introducerar vi möjligheten att se de senaste 24 timmarnas rapportvärden direkt i arbetsytan på resan. </p>
 <img src="assets/new-canvas6bis.png"/>
-<p><strong>Anteckning</strong>: Dessa ändringar kommer gradvis att lanseras i alla miljöer från och med aprilversionen.</p>
+<p><strong>Obs!</strong> De här ändringarna kommer gradvis att lanseras i alla miljöer från och med aprilversionen.</p>
 <p>Mer information finns i den <a href="new-canvas.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
@@ -275,9 +275,9 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 * Nu kan du simulera innehållsmallar för alla kanaler. [Läs mer](../content-management/content-templates.md#test-templates)
 
-**Personalisering**
+**Personalization**
 
-* Den nya **toInt** hjälpfunktionen är tillgänglig i uttrycksredigeraren. Du kan konvertera alla dessa typer (tal, double, int, long, float, short, byte, boolean, string) till ett heltal. [Läs mer](../personalization/functions/math.md#to-int)
+* Den nya hjälpfunktionen **toInt** är tillgänglig i uttrycksredigeraren. Du kan konvertera alla dessa typer (tal, double, int, long, float, short, byte, boolean, string) till ett heltal. [Läs mer](../personalization/functions/math.md#to-int)
 
 
 
@@ -315,7 +315,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Innehållsmallar**
 
-* **Miniatyrbilder** - A **Stödrastervisning** läge är nu tillgängligt för innehållsmallar och visar miniatyrbilder för förbättrad visuell åtkomst. För närvarande stöds endast e-postmallar för HTML. [Läs mer](../content-management/content-templates.md#template-thumbnails)
+* **Miniatyrbilder** - **Stödrastervyn** är nu tillgänglig för innehållsmallar och visar miniatyrbilder för förbättrad visuell åtkomst. För närvarande stöds endast e-postmallar för HTML. [Läs mer](../content-management/content-templates.md#template-thumbnails)
 
   >[!AVAILABILITY]
   >
@@ -325,9 +325,9 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 Nya mellanliggande statusvärden har lagts till i reseutvecklingscykeln:
 
-* **Publicering** status mellan **Utkast** status och **Live** status
-* **Stoppar** status mellan **Live** status och **Stoppad** status
-* **Aktiverar testläge** eller **Inaktiverar testläge** statusvärden mellan **Utkast** status och **Utkast (test)** status
+* **Publicering**-status mellan **Utkast**-status och **Live**-status
+* **Stoppar**-status mellan **Live**-status och **Stoppad**-status
+* **Aktiverar testläge** eller **Inaktiverar testläge** mellan statusen **Utkast** och statusen **Utkast (test)**
 
 När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad. [Läs mer](../building-journeys/journey-gs.md#filter)
 
@@ -380,29 +380,29 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Publiker**
 
-* **Utsändningslistor** - Varianter stöds nu när de använder **listor med startsidor**. Startadresserna får en kopia av alla varianter av samma budskap (t.ex. olika behandlingar av ett innehållsexperiment). [Läs mer](../configuration/seed-lists.md)
+* **Startlistor** - Varianter stöds nu när **startlistor** används. Startadresserna får en kopia av alla varianter av samma budskap (t.ex. olika behandlingar av ett innehållsexperiment). [Läs mer](../configuration/seed-lists.md)
 
-Tidigare som betaversion är följande förbättringar nu tillgängliga för alla användare:
+Tidigare i Beta är följande förbättringar nu tillgängliga för alla användare:
 
-* Nu kan du ange mål **målgrupper skapade genom målgruppssammansättning** och utnyttja anrikningsattributen i Journeys. [Läs mer](../building-journeys/read-audience.md)
+* Nu kan du rikta in dig på **målgrupper som skapats med målgruppskomposition** och utnyttja anrikningsattribut i Journeys. [Läs mer](../building-journeys/read-audience.md)
 
-* Nu kan du ange mål **målgrupper som överförts från en CSV-fil** på resor och kampanjer. [Läs mer](../audience/about-audiences.md#segments-in-journey-optimizer)
+* Du kan nu rikta in dig på **målgrupper som överförts från en CSV-fil** på resor och kampanjer. [Läs mer](../audience/about-audiences.md#segments-in-journey-optimizer)
 
   >[!AVAILABILITY]
   >
   >* Användningen av målgrupper och attribut från målgruppssammansättning och anpassad uppladdning (CSV-fil) är för närvarande inte tillgänglig för användning med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
-  >* The **målgruppsuppladdning från en CSV-fil** förbättring introduceras gradvis under flera dagar efter den första releasen. Vissa användare har omedelbar åtkomst, men andra kan uppleva en fördröjning innan den blir tillgänglig i sin miljö.
+  >* Förbättringen av **målgruppsuppladdningen från en CSV-fil** introduceras gradvis under flera dagar efter den första versionen. Vissa användare har omedelbar åtkomst, men andra kan uppleva en fördröjning innan den blir tillgänglig i sin miljö.
 
 **Resor**
 
-* **Filtrera dina resor** - Nu kan du använda **anpassade datum för att filtrera resorna** lager, utöver befintliga fördefinierade datumfilter. På så sätt kan du förfina listan genom att visa resor som skapats eller publicerats på ett visst datum, inom en viss månad, under ett helt år eller inom angivna tidsintervall. [Läs mer](../building-journeys/journey-gs.md#filter)
-* **Anpassade åtgärder** - Du kan nu uppdatera **content-type** header. Den här nya **content-type** ska referera till JSON-innehåll. [Läs mer](../action/about-custom-action-configuration.md#url-configuration)
-* **Konfiguration** - Attributet identityMap i stepEvents är nu förfyllt. Den primära identiteten definieras som &quot;primär = true&quot;. [Läs mer](../reports/sharing-field-list.md)
-* **Användargränssnitt** - Den övre ribban på skärmar har omstrukturerats för en förbättrad upplevelse. Bland de olika uppdateringarna kan du lägga märke till att pennikonen som gör att du kan komma åt färgegenskaperna nu visas till vänster om det övre fältet, bredvid resans namn. [Läs mer](../building-journeys/journey-properties.md)
+* **Filtrera dina resor** - Nu kan du använda **anpassade datum för att filtrera lagret för resor**, utöver de befintliga fördefinierade datumfiltren. På så sätt kan du förfina listan genom att visa resor som skapats eller publicerats på ett visst datum, inom en viss månad, under ett helt år eller inom angivna tidsintervall. [Läs mer](../building-journeys/journey-gs.md#filter)
+* **Anpassade åtgärder** - Nu kan du uppdatera rubriken **content-type**. Den nya **innehållstypen** ska referera till JSON-innehåll. [Läs mer](../action/about-custom-action-configuration.md#url-configuration)
+* **Configuration** - Attributet identityMap i stepEvents är nu förifyllt. Den primära identiteten definieras som &quot;primär = true&quot;. [Läs mer](../reports/sharing-field-list.md)
+* **Användargränssnitt** - Det översta fältet på skärmar har organiserats om för en förbättrad upplevelse. Bland de olika uppdateringarna kan du lägga märke till att pennikonen som gör att du kan komma åt färgegenskaperna nu visas till vänster om det övre fältet, bredvid resans namn. [Läs mer](../building-journeys/journey-properties.md)
 
 **SMS-kanal**
 
-* **Nyckelord för anmälan/avanmälan** - När du konfigurerar din SMS-kanal kan du nu anpassa **Nyckelord för deltagande och avanmälan** enligt dina önskemål. Journey Optimizer utlöser svaret baserat på dessa angivna nyckelord. [Läs mer](../sms/sms-configuration.md)
+* **Nyckelord för avanmälan/avanmälan** - När du konfigurerar din SMS-kanal kan du nu anpassa nyckelorden **för avanmälan och avanmälan** enligt dina inställningar. Journey Optimizer utlöser svaret baserat på dessa angivna nyckelord. [Läs mer](../sms/sms-configuration.md)
 
 **Kampanjer**
 
@@ -464,7 +464,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Rapportering**
 
-* **Nya domänbaserade uppdelningswidgetar** - Nya widgetar har lagts till för att förbättra kampanjrapporten och reserapporten. The **Studsa orsaker efter domän**, **Skickat och levererat av domäner**, **Öppnar och klickar per domän** och **Studsa och fel efter domän** widgetar ger en detaljerad beskrivning på domännivå för viktiga e-postleveranser och spårningsvärden. [Läs mer](../reports/channel-report.md)
+* **Nya domänbaserade nedbrytningswidgetar** - Nya widgetar har lagts till för att förbättra dina Campaign- och Journey-rapporter. Widgetarna **Studsa orsaker efter domän**, **Skickat och levererat av domäner**, **Öppnar och klickar efter domän** och **Studsa och fel efter domän** ger en detaljerad fördelning på domännivå för viktiga e-postleveranser och spårningsmått. [Läs mer](../reports/channel-report.md)
 
 **SMS-kanal**
 
@@ -474,24 +474,24 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Resor**
 
-* **Varaktighet för reaktionshändelser** - Den maximala varaktighet som du kan definiera i **Reaktionshändelser** är nu 29 dagar i stället för 30. [Läs mer](../building-journeys/reaction-events.md)
+* **Varaktighet för reaktionshändelser** - Den maximala varaktighet som du kan definiera i **reaktionshändelser** är nu 29 dagar i stället för 30. [Läs mer](../building-journeys/reaction-events.md)
 
 <!--* **Date filters** - You can now use custom dates to filter the journeys inventory, in addition to the existing predefined date filters. This allows you to refine the list by displaying journeys published on a specific date, within a particular month, throughout an entire year, or within specified time ranges. [Learn more](../building-journeys/journey-gs.md#filter)-->
 
-* **Läsa målgrupper**  - **Läs målgrupp** aktiviteten bygger nu på data för profilögonblicksbilder för batchsegment, som bara genereras en gång om dagen efter att det schemalagda dagliga batchjobbet har körts, och därför kommer data att uppdateras till det senaste dagliga batchjobbet. [Läs mer](../building-journeys/read-audience.md)
+* **Läsa målgrupp** - Aktiviteten **Läs målgrupp** är nu beroende av data för profilögonblicksbilder för gruppsegment, som bara genereras en gång om dagen efter att det schemalagda dagliga batchjobbet har körts, så data uppdateras till det senaste dagliga batchjobbet. [Läs mer](../building-journeys/read-audience.md)
 
-* **Fältgrupper** - Den här versionen åtgärdar ett problem som hindrade fältgrupper från att sparas i vissa fall.
+* **Fältgrupper** - Den här versionen åtgärdar ett fel som gjorde att fältgrupper inte kunde sparas i vissa fall.
 
 * Stöd för `<listObject>` har ändrats i flera funktioner.
 
 **Frekvensregler**
 
-* **Frekvensgräns varje vecka** - Du kan nu ange maximalt antal meddelanden som skickas till en kundprofil per vecka, utöver månaden. Frekvensbegränsningen baseras på den valda kalenderperioden och återställs i början av motsvarande tidsram. [Läs mer](../configuration/frequency-rules.md#create-new-rule)
+* **Veckointervall** - Du kan nu ange maximalt antal meddelanden som ska skickas till en kundprofil per vecka, utöver månaden. Frekvensbegränsningen baseras på den valda kalenderperioden och återställs i början av motsvarande tidsram. [Läs mer](../configuration/frequency-rules.md#create-new-rule)
 
   >[!NOTE]
   >
   >Daglig frekvens finns också tillgänglig vid behov. Kontakta din Adobe-representant.
 
-**Beslutsledning**
+**Beslutshantering**
 
-* **Frekvensbegränsning på Edge** - Räknaren för frekvensbegränsning har nu uppdaterats och är tillgänglig i ett beslut av Edge Decisioning API på mindre än 3 sekunder. [Läs mer](../offers/api-reference/offer-delivery-api/start-offer-delivery-apis.md)
+* **Frekvensbegränsning på Edge** - Räknaren för frekvensbegränsning uppdateras nu och är tillgänglig i ett beslut av Edge Decisioning API på mindre än 3 sekunder. [Läs mer](../offers/api-reference/offer-delivery-api/start-offer-delivery-apis.md)

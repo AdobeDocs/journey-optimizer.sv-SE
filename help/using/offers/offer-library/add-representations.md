@@ -26,17 +26,17 @@ Ett erbjudande kan visas på olika platser i ett meddelande: i en översta bande
 
 Följ stegen nedan om du vill lägga till en eller flera representationer i ditt erbjudande och konfigurera dem.
 
-1. För den första representationen börjar du med att välja **[!UICONTROL Channel]** som kommer att användas.
+1. För den första representationen börjar du med att välja **[!UICONTROL Channel]** som ska användas.
 
    ![](../assets/channel-placement.png)
 
    >[!NOTE]
    >
-   >Endast de tillgängliga placeringarna för den valda kanalen visas i **[!UICONTROL Placement]** listruta.
+   >Endast de tillgängliga placeringarna för den valda kanalen visas i listrutan **[!UICONTROL Placement]**.
 
 1. Välj en placering i listan.
 
-   Du kan också använda knappen bredvid knappen **[!UICONTROL Placement]** om du vill bläddra bland alla placeringar.
+   Du kan också använda knappen bredvid listrutan **[!UICONTROL Placement]** för att bläddra bland alla placeringar.
 
    ![](../assets/browse-button-placements.png)
 
@@ -44,19 +44,19 @@ Följ stegen nedan om du vill lägga till en eller flera representationer i ditt
 
    ![](../assets/browse-placements.png)
 
-1. Lägg till innehåll i din representation. Läs mer i [det här avsnittet](#content).
+1. Lägg till innehåll i din representation. Lär dig hur i [det här avsnittet](#content).
 
-1. När du lägger till innehåll som en bild eller URL kan du ange en **[!UICONTROL Destination link]**: de användare som klickar på erbjudandet dirigeras till motsvarande sida.
+1. När du lägger till innehåll som en bild eller URL kan du ange **[!UICONTROL Destination link]**: de användare som klickar på erbjudandet dirigeras till motsvarande sida.
 
    ![](../assets/offer-destination-link.png)
 
 1. Välj slutligen det språk du vill använda för att identifiera och hantera vad som ska visas för användarna.
 
-1. Använd knappen **[!UICONTROL Add representation]** och lägg till så många representationer som behövs.
+1. Om du vill lägga till ytterligare en representation använder du knappen **[!UICONTROL Add representation]** och lägger till så många representationer som behövs.
 
    ![](../assets/offer-add-representation.png)
 
-1. När du har lagt till alla representationer väljer du **[!UICONTROL Next]**.
+1. När du har lagt till alla dina representationer väljer du **[!UICONTROL Next]**.
 
 ## Definiera innehåll för dina representationer {#content}
 
@@ -68,13 +68,13 @@ Du kan lägga till olika typer av innehåll i en representation.
 
 ### Lägg till bilder {#images}
 
-Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Adobe Experience Cloud Asset** bibliotek, ett centraliserat arkiv med resurser från [!DNL Adobe Experience Manager Assets].
+Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Adobe Experience Cloud Asset** -biblioteket, en centraliserad databas med resurser från [!DNL Adobe Experience Manager Assets].
 
 >[!NOTE]
 >
-> Arbeta med [Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}måste ni driftsätta [!DNL Assets Essentials] för din organisation och se till att användarna är en del av **Assets Essentials-användare** eller/och **Assets Essentials** Produktprofiler. Läs mer på [den här sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html){target="_blank"}.
+> Om du vill arbeta med [Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"} måste du distribuera [!DNL Assets Essentials] för din organisation och se till att användarna tillhör produktprofilerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. Läs mer på [den här sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html){target="_blank"}.
 
-1. Välj **[!UICONTROL Asset library]** alternativ.
+1. Välj alternativet **[!UICONTROL Asset library]**.
 
 1. Välj **[!UICONTROL Browse]**.
 
@@ -82,25 +82,25 @@ Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Ado
 
 1. Bläddra bland resurserna och välj den bild du vill använda
 
-1. Klicka **[!UICONTROL Select]**.
+1. Klicka på **[!UICONTROL Select]**.
 
    ![](../assets/offer-select-asset.png)
 
 ### Lägg till HTML eller JSON-filer {#html-json}
 
-Om den markerade placeringen är HTML kan du även lägga till HTML eller JSON-innehåll från [Adobe Experience Cloud Asset Library](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}).
+Om den markerade placeringen är av HTML-typ kan du även lägga till HTML eller JSON-innehåll från [Adobe Experience Cloud-resursbiblioteket](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}).
 
-Du har t.ex. skapat en e-postmall för HTML i [Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager.html){target="_blank"} och du vill använda den filen för ert erbjudandeinnehåll. I stället för att skapa en ny fil kan du överföra mallen till **Resursbibliotek** för att kunna återanvända det i ert erbjudande.
+Du har till exempel skapat en HTML-e-postmall i [Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager.html){target="_blank"} och vill använda den filen för ditt erbjudandeinnehåll. I stället för att skapa en ny fil kan du överföra mallen till **resursbiblioteket** för att kunna återanvända den i offertens representationer.
 
-Om du vill återanvända innehållet i en representation bläddrar du till **Resursbibliotek** enligt beskrivning i [det här avsnittet](#images) och markera den HTML- eller JSON-fil du vill använda.
+Om du vill återanvända ditt innehåll i en representation bläddrar du till **resursbiblioteket** enligt beskrivningen i [det här avsnittet](#images) och väljer den HTML- eller JSON-fil du vill använda.
 
 ![](../assets/offer-browse-asset-library-json.png)
 
 ### Lägg till URL:er {#urls}
 
-Om du vill lägga till innehåll från en extern offentlig plats väljer du **[!UICONTROL URL]** anger du sedan URL-adressen till det innehåll som ska läggas till.
+Om du vill lägga till innehåll från en extern offentlig plats väljer du **[!UICONTROL URL]** och anger sedan URL-adressen för innehållet som ska läggas till.
 
-Du kan anpassa URL-adresser med personaliseringsredigeraren. Läs mer på [personalisering](../../personalization/personalize.md#use-expression-editor).
+Du kan anpassa URL-adresser med personaliseringsredigeraren. Läs mer om [personalisering](../../personalization/personalize.md#use-expression-editor).
 
 ![](../assets/offer-content-url.png)
 
@@ -110,13 +110,13 @@ Använd personaliseringsredigeraren för att hämta profilattribut som lagras i 
 
 ![](../assets/offer-content-url-personalization.png)
 
-Om du anger en **[!UICONTROL Destination link]** kan du också anpassa den URL som användarna som klickar på erbjudandet ska dirigeras till.
+Om du anger **[!UICONTROL Destination link]** kan du även anpassa URL:en som användarna som klickar på erbjudandet dirigeras till.
 
 ### Lägga till egen text {#custom-text}
 
 Du kan också infoga text när du väljer en kompatibel placering.
 
-1. Välj **[!UICONTROL Custom]** och klicka **[!UICONTROL Add content]**.
+1. Välj alternativet **[!UICONTROL Custom]** och klicka på **[!UICONTROL Add content]**.
 
    ![](../assets/offer-add-content.png)
 
@@ -128,19 +128,19 @@ Du kan också infoga text när du väljer en kompatibel placering.
 
    ![](../assets/offer-text-content.png)
 
-   Ni kan personalisera ert innehåll med personaliseringsredigeraren. Läs mer på [personalisering](../../personalization/personalize.md#use-expression-editor).
+   Ni kan personalisera ert innehåll med personaliseringsredigeraren. Läs mer om [personalisering](../../personalization/personalize.md#use-expression-editor).
 
    ![](../assets/offer-personalization.png)
 
    >[!NOTE]
    >
-   >Endast **[!UICONTROL Profile attributes]**, **[!UICONTROL Audiences]** och **[!UICONTROL Helper functions]** Det finns källor för beslutsförvaltning.
+   >Endast källorna **[!UICONTROL Profile attributes]**, **[!UICONTROL Audiences]** och **[!UICONTROL Helper functions]** är tillgängliga för beslutshantering.
 
 ## Anpassa representationer baserat på kontextdata{#context-data}
 
-När kontextdata skickas i [Kantbeslut](../api-reference/offer-delivery-api/edge-decisioning-api.md) kan ni utnyttja dessa data för att personalisera representationer dynamiskt. Du kan till exempel anpassa representationen av ett erbjudande baserat på realtidsfaktorer som aktuella väderförhållanden när beslutet fattas.
+När kontextdata skickas i [Edge-beslutsanropet](../api-reference/offer-delivery-api/edge-decisioning-api.md) kan du använda dessa data för att anpassa representationer dynamiskt. Du kan till exempel anpassa representationen av ett erbjudande baserat på realtidsfaktorer som aktuella väderförhållanden när beslutet fattas.
 
-Det gör du genom att infoga kontextdatavariabeln direkt i representationsinnehållet med hjälp av `profile.timeSeriesEvents.` namnutrymme.
+Det gör du genom att infoga kontextdatavariabeln direkt i representationsinnehållet med hjälp av namnutrymmet `profile.timeSeriesEvents.`.
 
 Här följer ett syntaxexempel som används för att anpassa en offerts representation baserat på användarnas operativsystem:
 

@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Personalisering använder skiftläge&kolon; orderstatusmeddelande
+title: Personalization use case&colon; order status notification
 description: Lär dig hur du personaliserar ett meddelande med profil, offertbeslut och kontextinformation.
 feature: Personalization
 topic: Personalization
@@ -16,73 +16,73 @@ ht-degree: 0%
 
 ---
 
-# Personalisering - användningsfall: orderstatusmeddelande {#personalization-use-case}
+# Personalization användningsfall: orderstatusmeddelande {#personalization-use-case}
 
 I det här fallet får du se hur du kan använda flera typer av personalisering i ett enda push-meddelande. Tre typer av personalisering kommer att användas:
 
-* **Profil**: meddelandepersonalisering baserad på ett profilfält
-* **Beslut om erbjudandet**: personalisering baserad på variabler för beslutshantering
-* **Kontext**: personalisering baserad på kontextuella data från resan
+* **Profil**: meddelandeanpassning baserad på ett profilfält
+* **Erbjudandebeslut**: personalisering baserad på variabler för beslutshantering
+* **Kontext**: personalisering baserad på kontextdata från resan
 
 Målet med det här exemplet är att skicka en händelse till [!DNL Journey Optimizer] varje gång en kundorder uppdateras. Därefter skickas ett push-meddelande till kunden med information om beställningen och ett personligt erbjudande.
 
 I det här fallet krävs följande krav:
 
-* konfigurera en orderhändelse som innehåller ordernummer, status och artikelnamn. Se detta [section](../event/about-events.md).
-* skapa ett beslut, se [section](../offers/offer-activities/create-offer-activities.md).
+* konfigurera en orderhändelse som innehåller ordernummer, status och artikelnamn. Se det här [avsnittet](../event/about-events.md).
+* skapa ett beslut, se det här [avsnittet](../offers/offer-activities/create-offer-activities.md).
 
-➡️ [Upptäck ett liknande användningsfall i en video](#video)
+➡️ [Upptäck ett liknande användningsfall i video](#video)
 
 ## Steg 1 - Skapa resan {#create-journey}
 
-1. Klicka på **[!UICONTROL Journeys]** och skapa en ny resa.
+1. Klicka på menyn **[!UICONTROL Journeys]** och skapa en ny resa.
 
    ![](assets/perso-uc4.png)
 
-1. Lägg till ditt tävlingsbidrag och en **Push** Åtgärdsaktivitet.
+1. Lägg till din anmälningshändelse och en **push**-åtgärdsaktivitet.
 
    ![](assets/perso-uc5.png)
 
-1. Konfigurera och utforma push-meddelanden. Se detta [section](../push/create-push.md).
+1. Konfigurera och utforma push-meddelanden. Se det här [avsnittet](../push/create-push.md).
 
 ## Steg 2 - Lägg till personalisering i profil {#add-perso}
 
-1. I **Push** aktivitet, klicka **Redigera innehåll**.
+1. Klicka på **Redigera innehåll** i aktiviteten **Tryck**.
 
-1. Klicka på **Titel** fält.
+1. Klicka på fältet **Titel**.
 
    ![](assets/perso-uc2.png)
 
-1. Ange ämnet och lägg till profilanpassning. Använd sökfältet för att hitta profilens förnamnsfält. Placera markören där du vill infoga anpassningsfältet i ämnestexten och klicka på **+** -ikon. Klicka **Spara**.
+1. Ange ämnet och lägg till profilanpassning. Använd sökfältet för att hitta profilens förnamnsfält. Placera markören där du vill infoga anpassningsfältet i ämnestexten och klicka på ikonen **+** . Klicka på **Spara**.
 
    ![](assets/perso-uc3.png)
 
 ## Steg 3 - Lägg till personalisering på kontextuella data {#add-perso-contextual-data}
 
-1. I **Push** aktivitet, klicka **Redigera innehåll** och klicka på **Titel** fält.
+1. Klicka på **Redigera innehåll** i aktiviteten **Skjut** och klicka på fältet **Titel**.
 
    ![](assets/perso-uc9.png)
 
-1. Välj **Sammanhangsberoende attribut** -menyn. Sammanhangsberoende attribut är bara tillgängliga om en resa har skickat kontextuella data till meddelandet. Klicka **Journey Orchestration**. Följande sammanhangsberoende information visas:
+1. Välj menyn **Sammanhangsberoende attribut**. Sammanhangsberoende attribut är bara tillgängliga om en resa har skickat kontextuella data till meddelandet. Klicka på **Journey Orchestration**. Följande sammanhangsberoende information visas:
 
-   * **Händelser**: den här kategorin grupperar alla fält från händelser som placerats före kanalåtgärdsaktiviteten på resan.
-   * **Reseegenskaper**: de tekniska fält som rör resan för en viss profil, t.ex. rese-ID eller de specifika fel som påträffats. Läs mer i [Journey Orchestration dokumentation](../building-journeys/expression/journey-properties.md).
+   * **Händelser**: Den här kategorin grupperar alla fält från händelser som placerats före kanalåtgärdsaktiviteten i resan.
+   * **Resegenskaper**: De tekniska fälten för resan för en viss profil, till exempel rese-ID:t eller de specifika fel som påträffats. Läs mer i [Journey Orchestration-dokumentationen](../building-journeys/expression/journey-properties.md).
 
    ![](assets/perso-uc10.png)
 
-1. Expandera **Händelser** och leta efter ordernummerfältet som hör till din händelse. Du kan också använda sökrutan. Klicka på **+** om du vill infoga anpassningsfältet i ämnestexten. Klicka **Spara**.
+1. Expandera objektet **Händelser** och sök efter det ordernummerfält som är relaterat till din händelse. Du kan också använda sökrutan. Klicka på ikonen **+** för att infoga anpassningsfältet i ämnestexten. Klicka på **Spara**.
 
    ![](assets/perso-uc11.png)
 
-1. Klicka nu på **Brödtext** fält.
+1. Klicka nu på fältet **Brödtext**.
 
    ![](assets/perso-uc12.png)
 
-1. Skriv meddelandet och infoga från **[!UICONTROL Contextual attributes]** -menyn, namnet på orderobjektet och orderförloppet.
+1. Skriv meddelandet och infoga orderobjektets namn och orderförloppet på menyn **[!UICONTROL Contextual attributes]**.
 
    ![](assets/perso-uc13.png)
 
-1. Välj **Erbjudandebeslut** om du vill infoga en decimalvariabel. Markera placeringen och klicka på **+** -ikonen bredvid beslutet om att lägga till den i brödtexten.
+1. Välj **Erbjud beslut** på den vänstra menyn om du vill infoga en beslutsvariabel. Markera placeringen och klicka på ikonen **+** bredvid beslutet för att lägga till den i brödtexten.
 
    ![](assets/perso-uc14.png)
 
@@ -92,11 +92,11 @@ I det här fallet krävs följande krav:
 
 ## Steg 4 - Testa och publicera resan {#test-publish}
 
-1. Klicka på **Testa** knapp och sedan klicka **Utlös en händelse**.
+1. Klicka på knappen **Testa** och sedan på **Utlös en händelse**.
 
    ![](assets/perso-uc17.png)
 
-1. Ange de olika värden som ska godkännas i testet. Testläget fungerar bara med testprofiler. Profilidentifieraren måste motsvara en testprofil. Klicka **Skicka**.
+1. Ange de olika värden som ska godkännas i testet. Testläget fungerar bara med testprofiler. Profilidentifieraren måste motsvara en testprofil. Klicka på **Skicka**.
 
    ![](assets/perso-uc18.png)
 

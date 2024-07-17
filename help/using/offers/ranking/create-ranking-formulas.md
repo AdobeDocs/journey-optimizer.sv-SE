@@ -17,27 +17,27 @@ ht-degree: 0%
 
 ## Om rankningsformler {#about-ranking-formulas}
 
-**Rankningsformler** gör det möjligt att definiera regler som avgör vilket erbjudande som ska presenteras först för en viss placering, i stället för att ta hänsyn till offertens prioritetspoäng.
+**Rankningsformler** gör att du kan definiera regler som avgör vilket erbjudande som ska presenteras först för en viss placering, i stället för att ta hänsyn till offertens prioritetspoäng.
 
-Rankningsformler uttrycks i **PQL-syntax** och kan utnyttja profilattribut, kontextdata och erbjuda attribut. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
+Rankningsformler uttrycks i **PQL-syntax** och kan utnyttja profilattribut, kontextdata och attribut. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
 
-När en rankningsformel har skapats kan du tilldela den till en placering i ett beslut. Mer information finns i [Konfigurera urval av erbjudanden i beslut](../offer-activities/configure-offer-selection.md).
+När en rankningsformel har skapats kan du tilldela den till en placering i ett beslut. Mer information finns i [Konfigurera erbjudandeval i beslut](../offer-activities/configure-offer-selection.md).
 
 ## Skapa en rankningsformel {#create-ranking-formula}
 
 Så här skapar du en rankningsformel:
 
-1. Öppna **[!UICONTROL Components]** väljer du **[!UICONTROL Ranking]** -fliken. The **[!UICONTROL Formulas]** -fliken är markerad som standard. Listan med formler som skapats tidigare visas.
+1. Gå till menyn **[!UICONTROL Components]** och välj fliken **[!UICONTROL Ranking]**. Fliken **[!UICONTROL Formulas]** är markerad som standard. Listan med formler som skapats tidigare visas.
 
    ![](../assets/rankings-list.png)
 
-1. Klicka **[!UICONTROL Create ranking]** för att skapa en ny rankningsformel.
+1. Klicka på **[!UICONTROL Create ranking]** om du vill skapa en ny rankningsformel.
 
    ![](../assets/ranking-create-formula.png)
 
 1. Ange formelnamn, beskrivning och formel.
 
-   I det här exemplet vill vi prioritera alla erbjudanden med attributet&quot;hot&quot; om vädret är varmt. För att göra detta **contextData.west=hot** har skickats i beslutsanropet.
+   I det här exemplet vill vi prioritera alla erbjudanden med attributet&quot;hot&quot; om vädret är varmt. För att göra detta skickades **contextData.wall=hot** i beslutsanropet.
 
    ![](../assets/ranking-syntax.png)
 
@@ -45,7 +45,7 @@ Så här skapar du en rankningsformel:
    >
    >När du skapar en rankningsformel stöds inte möjligheten att gå tillbaka till en tidigare tidsperiod. Om du till exempel anger en upplevelsehändelse som inträffade under den sista månaden som en komponent i formeln. Alla försök att inkludera en uppslagsperiod när formeln skapas kommer att utlösa ett fel när den sparas.
 
-1. Klicka **[!UICONTROL Save]**. Din rankningsformel skapas. Du kan välja den i listan för att få information och redigera eller ta bort den.
+1. Klicka på **[!UICONTROL Save]**. Din rankningsformel skapas. Du kan välja den i listan för att få information och redigera eller ta bort den.
 
    Det är nu klart att användas i ett beslut om att rangordna kvalificerade erbjudanden för en placering (se [Konfigurera urval av erbjudanden i beslut](../offer-activities/configure-offer-selection.md)).
 
@@ -107,7 +107,7 @@ if( offer.selectionConstraint.endDate occurs <= 24 hours after now, offer.rank.p
 
 ### Förbättra erbjudanden med vissa attribut baserade på kontextdata
 
-Öka vissa erbjudanden baserat på de kontextdata som skickas i beslutsanropet. Om `contextData.weather=hot` har skickats in i beslutsanropet, prioriteten för alla erbjudanden med `attribute=hot` måste förstärkas.
+Öka vissa erbjudanden baserat på de kontextdata som skickas i beslutsanropet. Om till exempel `contextData.weather=hot` skickas i beslutsanropet måste prioriteten för alla erbjudanden med `attribute=hot` ökas.
 
 **Rankningsformel:**
 
@@ -118,7 +118,7 @@ and offer.characteristics.get("weather")=@{_xdm.context.additionalParameters;ver
 
 Observera att när du använder API:t för beslutsfattande läggs kontextdata till i elementet profile i begärandebrödtexten, som i exemplet nedan.
 
-**Fragment från begärandetext:**
+**Fragment från begärandeinnehåll:**
 
 ```
 "xdm:profiles": [
@@ -145,7 +145,7 @@ Observera att när du använder API:t för beslutsfattande läggs kontextdata ti
 
 Ni kan höja poängen för ett erbjudande baserat på kundens benägenhetspoäng.
 
-I det här exemplet är instansen tenant *_salesvelocity* och profilschemat innehåller ett intervall med bakgrundsmusik som lagras i en array:
+I det här exemplet är instanstenanten *_salesvelocity* och profilschemat innehåller ett intervall med poäng lagrade i en array:
 
 ![](../assets/ranking-example-schema.png)
 
@@ -173,7 +173,7 @@ Erbjudandena skulle innehålla ett attribut för *propensityType* som matchar ka
 
 ![](../assets/ranking-example-propensityType.png)
 
-Din rankningsformel kan sedan ange prioriteten för varje erbjudande som ska vara lika med kunderna *propensityScore* för *propensityType*. Om ingen poäng hittas, använd den statiska prioriteten som angetts i erbjudandet:
+Din rankningsformel kan sedan ange prioriteten för varje erbjudande till lika med kunderna *propensityScore* för den *propensityType*. Om ingen poäng hittas, använd den statiska prioriteten som angetts i erbjudandet:
 
 ```
 let score = (select _Individual_Scoring1 from _salesvelocity.individualScoring

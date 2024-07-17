@@ -11,24 +11,24 @@ keywords: e-post, design, stockinnehåll, resurser
 exl-id: e4f91870-f06a-4cd3-98b7-4c413233e310
 source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 3%
+source-wordcount: '472'
+ht-degree: 2%
 
 ---
 
 # Kom igång med e-postdesign {#get-started-content-design}
 
-Du kan importera ett befintligt innehåll i [!DNL Journey Optimizer] eller utnyttja designfunktionerna:
+Du kan importera ett befintligt innehåll i [!DNL Journey Optimizer] eller utnyttja funktionerna för innehållsdesign:
 
-* Använd [!DNL Journey Optimizer] **funktioner för e-postdesign** för att designa eller importera responsiva e-postmeddelanden. [Läs mer](content-from-scratch.md)
+* Använd [!DNL Journey Optimizer] **e-postdesignfunktioner** för att utforma eller importera responsiva e-postmeddelanden. [Läs mer](content-from-scratch.md)
 
-* Utnyttja **Adobe Experience Manager Assets Essentials** för att berika era e-postmeddelanden, bygga och hantera er egen databas för mediefiler. [Läs mer](../content-management/assets.md)
+* Utnyttja **Adobe Experience Manager Assets Essentials** för att utöka dina e-postmeddelanden, bygga och hantera din egen databas för resurser. [Läs mer](../content-management/assets.md)
 
-* Sök **Adobe Stock foton** för att skapa innehåll och förbättra e-postdesignen. [Läs mer](../content-management/stock.md)
+* Hitta **Adobe Stock-foton** för att skapa ditt innehåll och förbättra din e-postdesign. [Läs mer](../content-management/stock.md)
 
 * Förbättra kundernas upplevelse genom att skapa personaliserade och dynamiska meddelanden utifrån deras profilattribut. Läs mer om [personalisering](../personalization/personalize.md) och [dynamiskt innehåll](../personalization/get-started-dynamic-content.md).
 
-➡️ [Upptäck den här funktionen i en video](#video)
+➡️ [Upptäck den här funktionen i videon](#video)
 
 ## Bästa praxis för e-postdesign {#best-practices}
 
@@ -38,33 +38,33 @@ För att minimera dessa återgivningsproblem rekommenderar vi att du håller e-p
 
 ## Viktiga steg för att skapa e-postinnehåll {#key-steps}
 
-När du har [lade till ett e-postmeddelande](create-email.md) till en resa eller en kampanj kan du börja skapa ditt e-postinnehåll.
+När du har [lagt till ett e-postmeddelande](create-email.md) till en resa eller en kampanj kan du börja skapa ditt e-postinnehåll.
 
-1. Gå igenom **[!UICONTROL Edit content]** för att komma åt e-postdesignern. [Läs mer](create-email.md#define-email-content)
+1. Gå igenom skärmen **[!UICONTROL Edit content]** från kundresan eller kampanjkonfigurationsskärmen för att få åtkomst till e-post-Designer. [Läs mer](create-email.md#define-email-content)
 
    ![](assets/email_designer_edit_email_body.png)
 
-1. På e-postdesignerns startsida väljer du hur du vill utforma e-postmeddelandet bland följande alternativ:
+1. På Designer hemsida för e-post väljer du hur du vill utforma e-postmeddelandet bland följande alternativ:
 
-   * **Designa din e-post från grunden** via e-postdesignerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets](../content-management/assets.md). Lär dig hur du utformar e-postinnehåll i [det här avsnittet](content-from-scratch.md).
+   * **Designa din e-post från grunden** via e-postdesignerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets](../content-management/assets.md). Lär dig hur du utformar ditt e-postinnehåll i [det här avsnittet](content-from-scratch.md).
 
-   * **Kod eller klistra in Raw HTML** direkt i e-postdesignern. Lär dig koda eget innehåll i [det här avsnittet](code-content.md).
+   * **Kod eller klistra in Raw-HTML** direkt i e-postdesignern. Lär dig hur du kodar ditt eget innehåll i [det här avsnittet](code-content.md).
 
      >[!NOTE]
      >
-     >I en kampanj kan du även välja **[!UICONTROL Code Editor]** från **[!UICONTROL Edit content]** skärm. [Läs mer](create-email.md#define-email-content)
+     >I en kampanj kan du även välja knappen **[!UICONTROL Code Editor]** på skärmen **[!UICONTROL Edit content]**. [Läs mer](create-email.md#define-email-content)
 
    * **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig hur du importerar ett e-postinnehåll i [det här avsnittet](existing-content.md).
 
-   * **Välj ett befintligt innehåll** från en lista med inbyggda eller anpassade mallar. Lär dig hur du arbetar med e-postmallar [det här avsnittet](../email/use-email-templates.md).
+   * **Välj ett befintligt innehåll** i en lista med inbyggda eller anpassade mallar. Lär dig hur du arbetar med e-postmallar [det här avsnittet](../email/use-email-templates.md).
 
    ![](assets/email_designer_create_options.png)
 
-1. När e-postinnehållet har definierats och anpassats kan du exportera innehållet för validering eller för senare bruk. Klicka **[!UICONTROL Export HTML]** om du vill spara en ZIP-fil på datorn som innehåller HTML och resurser.
+1. När e-postinnehållet har definierats och anpassats kan du exportera innehållet för validering eller för senare bruk. Klicka på **[!UICONTROL Export HTML]** om du vill spara en ZIP-fil på datorn som innehåller HTML och resurser.
 
    ![](assets/email_designer_export.png)
 
-## Instruktionsvideor {#video}
+## Instruktionsfilmer {#video}
 
 Lär dig skapa e-postinnehåll med meddelanderedigeraren.
 

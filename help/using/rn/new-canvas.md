@@ -15,12 +15,12 @@ ht-degree: 0%
 
 ---
 
-# Välkommen till den förbättrade resedesignern {#new-canvas}
+# Välkommen till den förbättrade Designer-resan {#new-canvas}
 
-Journey Optimizer erbjuder nu **förenklad resemodell** som syftar till att förbättra användarupplevelsen och interna processer. Från och med aprilversionen har du tillgång till följande funktioner:
+Journey Optimizer erbjuder nu en **förenklad resemodell** som syftar till att förbättra användarupplevelsen och de interna processerna. Från och med aprilversionen har du tillgång till följande funktioner:
 
-* A **omdesignad arbetsyta** för en moderniserad användarupplevelse
-* A **live-rapportering** Gränssnitt som är direkt tillgängliga på arbetsytan
+* En **omdesignad arbetsyta** för en moderniserad användarupplevelse
+* Ett **live-rapportgränssnitt** som är direkt tillgängligt på arbetsytan
 
 >[!NOTE]
 >
@@ -28,30 +28,30 @@ Journey Optimizer erbjuder nu **förenklad resemodell** som syftar till att för
 
 ## Uppdateringar av resemodellen
 
-Den nya resemodellen kommer att leva tillsammans med den befintliga, vilket innebär att det kommer att finnas resor som använder **två olika modeller**:
+Den nya resemodellen kommer att finnas tillsammans med den befintliga, vilket innebär att det kommer att finnas resor med **två olika modeller**:
 
 * Den äldre modellen
 * Den nya modellen
 
-Alla resor i den äldre modellen stannar kvar i den. Du kan fortfarande redigera, testa och publicera dem. Alla nya versioner som skapas från en resa i den äldre modellen behålls också i den. Det finns **inga funktionsändringar** runt de där resorna.
+Alla resor i den äldre modellen stannar kvar i den. Du kan fortfarande redigera, testa och publicera dem. Alla nya versioner som skapas från en resa i den äldre modellen behålls också i den. Det finns **inga funktionella ändringar** runt dessa resor.
 
 Som du ser på skärmbilden nedan är noderna rundformade, vilket är det gamla användargränssnittet för resor med den äldre modellen.
 
 ![](assets/new-canvas.png)
 
-När du **skapa en ny resa** eller **duplicera en befintlig**, kommer den att finnas i den nya modellen. Resor i den äldre modellen stöds fortfarande tills en majoritet av kunderna går över till den nya.
+När du **skapar en ny resa** eller **duplicerar en befintlig** placeras den i den nya modellen. Resor i den äldre modellen stöds fortfarande tills en majoritet av kunderna går över till den nya.
 
-Det finns en begränsning i den nya resemodellen som **det går inte att kopiera och klistra in aktiviteter från den äldre modellen till den nya och vice versa**. Om du vill göra det rekommenderar vi dig att duplicera din tidigare resa för att byta till den nya modellen och sedan kopiera dina aktiviteter.
+Det finns en begränsning för den nya resemodellen. Det går **inte att kopiera och klistra in aktiviteter från den äldre modellen till den nya och vice versa**. Om du vill göra det rekommenderar vi dig att duplicera din tidigare resa för att byta till den nya modellen och sedan kopiera dina aktiviteter.
 
 På skärmbilden nedan ser du det omdesignade gränssnittet för arbetsytan (endast tillgängligt med den nya modellen):
 
 ![](assets/new-canvas2.png)
 
-**Alla nya funktioner som läggs till resedesignern (inklusive direktrapportering) kommer endast att vara tillgängliga för resor med den nya modellen från och med nu.**
+**Alla nya funktioner som läggs till i resedesignern (inklusive direktrapportering) är endast tillgängliga för resor med den nya modellen från och med den här tidpunkten.**
 
 ## Förbättrad design av arbetsyta
 
-Med den nya resemodellen introducerar vi en ny och förbättrad **arbetsytans gränssnitt**, som smidigt passar in i Adobe Experience Cloud lösningar och ekosystem, vilket ger en intuitiv och effektiv användarupplevelse. Alla resor i den nya modellen kommer att göras i den nya designen.
+Med den nya resemodellen introducerar vi ett nytt och förbättrat användargränssnitt för **arbetsytan på resan**, som smidigt passar i Adobe Experience Cloud lösningar och ekosystem, vilket ger en intuitiv och effektiv användarupplevelse. Alla resor i den nya modellen kommer att göras i den nya designen.
 
 ![](assets/new-canvas3.gif)
 
@@ -62,7 +62,7 @@ Aktiviteter visas nu med fyrkantiga rutor med följande funktioner:
 
 ![](assets/new-canvas4.png)
 
-Det nya användargränssnittet förbättrar läsbarheten på arbetsytan genom att tillhandahålla **tydligare aktivitetsetiketter och -typer**.
+Det nya gränssnittet förbättrar läsbarheten för arbetsytan genom att tillhandahålla **tydligare aktivitetsetiketter och aktivitetstyper**.
 
 Det gör det även möjligt för produktteamet att lägga till mer information på arbetsytan med färre klick. Ett exempel på&quot;mer information&quot; kan vara att lägga in live-rapportering på arbetsytan där du kan se profiler som läggs in och avslutas på grund av fel.
 
@@ -70,7 +70,7 @@ Det gör det även möjligt för produktteamet att lägga till mer information p
 
 ## Live-rapportering på arbetsytan under resan
 
-Förutom den förbättrade arbetsytelayouten för resan introduceras en ny funktion som gör det möjligt för användare att visa realtidsstatistik från **senaste dygnet**, vilket kallas live-rapportering, direkt på arbetsytan.
+Förutom den förbättrade arbetsytelayouten för resan introduceras en ny funktion som gör att användare kan visa realtidsstatistik från **de senaste 24 timmarna**, som kallas live-rapportering, direkt på arbetsytan.
 
 För varje aktivitet i varje live-resa som använder den nya modellen har du tillgång till:
 

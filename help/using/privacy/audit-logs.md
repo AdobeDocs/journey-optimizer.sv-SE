@@ -20,41 +20,41 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Om du vill visa och exportera granskningsloggen måste du ha **[!DNL View User Activity Log]** tillstånd har beviljats. [Läs mer](../administration/ootb-product-profiles.md)
+>Om du vill visa och exportera granskningsloggen måste du ha behörighet **[!DNL View User Activity Log]**. [Läs mer](../administration/ootb-product-profiles.md)
 
 Med Journey Optimizer kan du identifiera vilka åtgärder som användare i systemet utför på olika tjänster och funktioner som resor, meddelanden, landningssidor osv.
 
 Detta gör att ni kan öka synligheten för aktiviteter som utförs i systemet, felsöka problem och hjälpa ert företag att följa regler och policyer för företagsdatahantering.
 
-Varje åtgärd registreras med metadata i &quot;granskningsloggar&quot; som är tillgängliga i Adobe Experience Platform. Mer information om granskningsloggar, inklusive hur du visar och hanterar dem i användargränssnittet eller API finns i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html).
+Varje åtgärd registreras med metadata i &quot;granskningsloggar&quot; som är tillgängliga i Adobe Experience Platform. Mer information om granskningsloggar, inklusive hur du visar och hanterar dem i användargränssnittet eller API, finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html).
 
 ![](assets/audit-logs.png)
 
 ## Händelsetyper som hämtats av granskningsloggar {#events}
 
-Följande tabell visar vilka åtgärder som Journey Optimizer-resurser registreras på i granskningsloggarna. Den fullständiga listan över åtgärder som fångats i granskningsloggarna finns i [Dokumentation för Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html#category).
+Följande tabell visar vilka åtgärder som Journey Optimizer-resurser registreras på i granskningsloggarna. Den fullständiga listan över åtgärder som har hämtats i granskningsloggarna finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html#category).
 
 >[!NOTE]
 >
->Granskningsloggar relaterade till **beslutsfattande** är bara synliga från CSV-filen som kan hämtas med **[!UICONTROL Download log]** -knappen.
+>Granskningsloggar som är relaterade till **beslutshantering** visas bara från CSV-filen som kan hämtas med knappen **[!UICONTROL Download log]**.
 
 | Resurs | Åtgärd |
 |-----------|------------------|
 | AJO-kampanj | Skapa/ta bort/uppdatera/aktivera/stoppa |
-| Allmän inställning för AJO-kanal | Skapa/ta bort/uppdatera |
+| Allmänna inställningar för AJO-kanaler | Skapa/ta bort/uppdatera |
 | AJO IP-pool | Skapa/ta bort/uppdatera |
-| AJO - startsida | Skapa/ta bort/uppdatera/publicera/avpublicera |
-| Mall för AJO-landningssida HTML | Skapa/ta bort/uppdatera |
-| Förinställning för AJO-landningssida | Skapa/ta bort/uppdatera |
-| AJO - underdomän för landningssida | Skapa/ta bort/uppdatera |
+| AJO landningssida | Create / Delete / Update / Publish / Unpublish |
+| AJO landningssida HTML mall | Skapa/ta bort/uppdatera |
+| AJO förinställning för landningssida | Skapa/ta bort/uppdatera |
+| Underdomän för AJO landningssida | Skapa/ta bort/uppdatera |
 | AJO-meddelandeförinställning | Skapa/ta bort/uppdatera |
 | AJO PTR-post | Skapa/ta bort/uppdatera |
 | AJO sparad uttrycksmall | Skapa/ta bort/uppdatera |
 | AJO SMS API-autentiseringsuppgifter | Skapa/ta bort/uppdatera |
-| AJO-underdomän | Skapa/ta bort/uppdatera |
-| AJO-undertryckningslista | Skapa/ta bort/hämta CSV |
+| AJO subdomän | Skapa/ta bort/uppdatera |
+| AJO Suppression List | Skapa/ta bort/hämta CSV |
 | Fältgrupp | Skapa/ta bort/uppdatera |
-| Resa | Skapa/ta bort/uppdatera/stoppa/publicera |
+| Resa | Create / Delete / Update / Stop / Publish |
 | Anpassad reseåtgärd | Skapa/ta bort/uppdatera |
 | Resurs, datakälla | Skapa/ta bort/uppdatera |
 | Resehändelse | Skapa/ta bort/uppdatera |

@@ -27,12 +27,12 @@ Det finns en integrering om du har Adobe Campaign v7 eller v8. Det gör att du k
 
 Anslutningen mellan Journey Optimizer- och Campaign-instanserna konfigureras av Adobe vid etableringstidpunkten. Kontakta Adobe.
 
-För att detta ska fungera måste du konfigurera en dedikerad åtgärd. Se detta [section](../action/acc-action.md).
+För att detta ska fungera måste du konfigurera en dedikerad åtgärd. Se det här [avsnittet](../action/acc-action.md).
 
-Ett heltäckande exempel på användning presenteras i detta [section](../building-journeys/ajo-ac.md).
+Ett slutanvändarfall visas i det här [avsnittet](../building-journeys/ajo-ac.md).
 
-1. Designa din resa och börja med ett evenemang. Se det här [section](../building-journeys/journey.md).
-1. I **Åtgärd** väljer du en Campaign-åtgärd och lägger till den på din resa.
-1. I **Åtgärdsparametrar** visas alla fält som förväntas i meddelandets nyttolast. Du måste mappa vart och ett av dessa fält till det fält som du vill använda, antingen från händelsen eller från datakällan. Detta liknar anpassade åtgärder. Se detta [section](../building-journeys/using-custom-actions.md).
+1. Designa din resa och börja med ett evenemang. Se [avsnittet](../building-journeys/journey.md).
+1. Välj en Campaign-åtgärd i **Åtgärd**-delen av paletten och lägg till den på din resa.
+1. I **åtgärdsparametrarna** visas alla fält som förväntas i meddelandenyttolasten. Du måste mappa vart och ett av dessa fält till det fält som du vill använda, antingen från händelsen eller från datakällan. Detta liknar anpassade åtgärder. Se det här [avsnittet](../building-journeys/using-custom-actions.md).
 
 ![](assets/accintegration2.png)

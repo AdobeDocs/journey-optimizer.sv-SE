@@ -26,17 +26,17 @@ ht-degree: 2%
 
 ## Lägg till en e-poståtgärd {#email-action}
 
-Skapa ett e-postmeddelande i [!DNL Journey Optimizer], lägga till **[!UICONTROL Email]** åtgärder för en resa eller en kampanj. Följ sedan instruktionerna nedan.
+Om du vill skapa ett e-postmeddelande i [!DNL Journey Optimizer] lägger du till en **[!UICONTROL Email]**-åtgärd för en resa eller en kampanj. Följ sedan instruktionerna nedan.
 
 >[!BEGINTABS]
 
 >[!TAB Lägg till ett e-postmeddelande till en resa]
 
-1. Öppna din resa och dra och släpp en **[!UICONTROL Email]** aktivitet från **[!UICONTROL Actions]** på paletten.
+1. Öppna din resa och dra och släpp en **[!UICONTROL Email]**-aktivitet från **[!UICONTROL Actions]**-delen av paletten.
 
 1. Ange grundläggande information i meddelandet (etikett, beskrivning, kategori).
 
-1. Välj [e-postyta](email-settings.md) att använda.
+1. Välj den [e-postyta](email-settings.md) som ska användas.
 
    ![](assets/email_journey.png)
 
@@ -46,19 +46,19 @@ Skapa ett e-postmeddelande i [!DNL Journey Optimizer], lägga till **[!UICONTROL
 >
 >Du kan använda alternativet för optimering av sändningstid för att förutsäga den bästa tidpunkten för att skicka meddelandet för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser. [Lär dig hur du arbetar med optimering vid sändning](../building-journeys/journeys-message.md#send-time-optimization)
 
-Mer information om hur du konfigurerar en resa finns i [den här sidan](../building-journeys/journey-gs.md).
+Mer information om hur du konfigurerar en resa finns på [den här sidan](../building-journeys/journey-gs.md).
 
->[!TAB Lägga till ett e-postmeddelande till en kampanj]
+>[!TAB Lägg till ett e-postmeddelande till en kampanj]
 
-1. Skapa en ny schemalagd eller API-utlöst kampanj och välj **[!UICONTROL Email]** som er handling.
+1. Skapa en ny schemalagd eller API-utlöst kampanj och välj **[!UICONTROL Email]** som din åtgärd.
 
-1. Välj [e-postyta](email-settings.md) att använda.
+1. Välj den [e-postyta](email-settings.md) som ska användas.
 
    ![](assets/email_campaign.png)
 
 1. Klicka på **[!UICONTROL Create]**.
 
-1. Slutför stegen för att skapa en e-postkampanj, t.ex. kampanjegenskaperna, [publik](../audience/about-audiences.md)och [schema](../campaigns/create-campaign.md#schedule).
+1. Slutför stegen för att skapa en e-postkampanj, till exempel kampanjegenskaperna, [målgrupp](../audience/about-audiences.md) och [schema](../campaigns/create-campaign.md#schedule).
 
    ![](assets/email_campaign_steps.png)
 
@@ -68,7 +68,7 @@ From the **[!UICONTROL Action]** section, specify if you want to track how your 
 ![](assets/email_campaign_tracking.png)
 -->
 
-Mer information om hur du konfigurerar en kampanj finns i [den här sidan](../campaigns/get-started-with-campaigns.md).
+Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../campaigns/get-started-with-campaigns.md).
 
 >[!ENDTABS]
 
@@ -81,21 +81,21 @@ Mer information om hur du konfigurerar en kampanj finns i [den här sidan](../ca
 >title="Konfigurera e-postinnehåll"
 >abstract="Skapa innehållet i e-postmeddelandet. Definiera ämnet och använd sedan e-post-Designer för att skapa och personalisera e-postmeddelandets brödtext."
 
-1. Klicka på **[!UICONTROL Edit content]** för att konfigurera e-postinnehållet. [Läs mer](get-started-email-design.md)
+1. Klicka på knappen **[!UICONTROL Edit content]** på skärmen för resan eller kampanjkonfigurationen för att konfigurera e-postinnehållet. [Läs mer](get-started-email-design.md)
 
    ![](assets/email_campaign_edit_content.png)
 
-   I **[!UICONTROL Header]** i **[!UICONTROL Edit content]** skärm, **[!UICONTROL From name]**, **[!UICONTROL From email]** och **[!UICONTROL BCC]** -fältet konfigureras i den e-postyta som du valde. [Läs mer](email-settings.md) <!--check if same for journey-->
+   I avsnittet **[!UICONTROL Header]** på skärmen **[!UICONTROL Edit content]** är fältet **[!UICONTROL From name]**, **[!UICONTROL From email]** och **[!UICONTROL BCC]** konfigurerade i den e-postyta som du valde. [Läs mer](email-settings.md) <!--check if same for journey-->
 
    ![](assets/email_designer_edit_content_header.png)
 
-1. Lägg till en ämnesrad för meddelandet. Om du vill konfigurera och anpassa ämnesraden med personaliseringsredigeraren klickar du på **[!UICONTROL Open personalization dialog]** -ikon. [Läs mer](../personalization/personalization-build-expressions.md)
+1. Lägg till en ämnesrad för meddelandet. Klicka på ikonen **[!UICONTROL Open personalization dialog]** om du vill konfigurera och anpassa ämnesraden med personaliseringsredigeraren. [Läs mer](../personalization/personalization-build-expressions.md)
 
-1. Klicka på **[!UICONTROL Edit email body]** för att komma åt e-post-Designer och börja skapa ditt innehåll. [Läs mer](get-started-email-design.md)
+1. Klicka på knappen **[!UICONTROL Edit email body]** för att komma åt e-post-Designer och börja skapa ditt innehåll. [Läs mer](get-started-email-design.md)
 
    ![](assets/email_designer_edit_email_body.png)
 
-1. Om du deltar i en kampanj kan du även klicka på **[!UICONTROL Code Editor]** om du vill koda ditt eget innehåll i HTML med hjälp av popup-fönstret som visas.
+1. Om du deltar i en kampanj kan du även klicka på knappen **[!UICONTROL Code Editor]** för att koda ditt eget innehåll i oformaterad HTML med hjälp av popup-fönstret som visas.
 
    ![](assets/email_designer_edit_code_editor.png)
 
@@ -117,49 +117,49 @@ De inställningar och element som kontrolleras av systemet visas nedan. Du hitta
 
 Två typer av varningar kan inträffa:
 
-* **Varningar** hänvisa till rekommendationer och bästa praxis, t.ex.
+* **Varningar** hänvisar till rekommendationer och bästa praxis, som:
 
-   * **[!UICONTROL The opt-out link is not present in the email body]**: det är bra att lägga till en länk för att avbryta prenumerationen i e-postmeddelandet. Lär dig hur du konfigurerar det i [det här avsnittet](../privacy/opt-out.md#opt-out-management).
+   * **[!UICONTROL The opt-out link is not present in the email body]**: det är bäst att lägga till en länk för att avbryta prenumerationen i e-postmeddelandet. Lär dig hur du konfigurerar det i [det här avsnittet](../privacy/opt-out.md#opt-out-management).
 
      >[!NOTE]
      >
-     >E-postmeddelanden av marknadsföringstyp måste innehålla en länk för avanmälan, vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [kanalyta](email-settings.md#email-type) nivå och när [skapar meddelandet](#create-email-journey-campaign) från en resa eller en kampanj.
+     >E-postmeddelanden av marknadsföringstyp måste innehålla en länk för avanmälan, vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras på [kanalytnivå](email-settings.md#email-type) och när [meddelandet ](#create-email-journey-campaign) skapas från en resa eller en kampanj.
 
-   * **[!UICONTROL Text version of HTML is empty]**: glöm inte att definiera en textversion av e-posttexten, eftersom den kommer att användas när HTML inte kan visas. Lär dig hur du skapar textversionen i [det här avsnittet](text-version-email.md).
+   * **[!UICONTROL Text version of HTML is empty]**: glöm inte att definiera en textversion av din e-postbrödtext, eftersom den kommer att användas när HTML-innehåll inte kan visas. Lär dig skapa textversionen i [det här avsnittet](text-version-email.md).
 
-   * **[!UICONTROL Empty link is present in email body]**: kontrollera att alla länkar i e-postmeddelandet är korrekta. Lär dig hantera innehåll och länkar i [det här avsnittet](content-from-scratch.md).
+   * **[!UICONTROL Empty link is present in email body]**: Kontrollera att alla länkar i e-postmeddelandet är korrekta. Lär dig hantera innehåll och länkar i [det här avsnittet](content-from-scratch.md).
 
-   * **[!UICONTROL Email size has exceeded the limit of 100KB]**: för optimal leverans bör du kontrollera att e-postens storlek inte överstiger 100 kB. Lär dig hur du redigerar e-postinnehåll i [det här avsnittet](content-from-scratch.md).
+   * **[!UICONTROL Email size has exceeded the limit of 100KB]**: Kontrollera att e-postmeddelandets storlek inte överstiger 100 kB för optimal leverans. Lär dig hur du redigerar e-postinnehåll i [det här avsnittet](content-from-scratch.md).
 
-* **Fel** hindra dig från att testa eller aktivera resan/kampanjen så länge som de inte är lösta, till exempel:
+* **Fel** hindrar dig från att testa eller aktivera resan/kampanjen så länge de inte är lösta, till exempel:
 
-   * **[!UICONTROL The subject line is missing]**: Ämnesrad för e-post är obligatorisk. Lär dig definiera och personalisera det i [det här avsnittet](create-email.md).
+   * **[!UICONTROL The subject line is missing]**: Ämnesraden för e-post är obligatorisk. Lär dig hur du definierar och anpassar den i [det här avsnittet](create-email.md).
 
   <!--HTML is empty when Amp HTML is present-->
 
-   * **[!UICONTROL The email version of the message is empty]**: det här felet visas när e-postinnehållet inte har konfigurerats. Lär dig hur du utformar e-postinnehåll i [det här avsnittet](get-started-email-design.md).
+   * **[!UICONTROL The email version of the message is empty]**: Det här felet visas när e-postinnehållet inte har konfigurerats. Lär dig hur du utformar e-postinnehåll i [det här avsnittet](get-started-email-design.md).
 
-   * **[!UICONTROL Surface doesn't exist]**: du kan inte använda meddelandet om den yta som du har markerat tas bort efter att meddelandet har skapats. Om det här felet inträffar väljer du en annan yta i meddelandet **[!UICONTROL Properties]**. Läs mer om kanalytor i [det här avsnittet](../configuration/channel-surfaces.md).
+   * **[!UICONTROL Surface doesn't exist]**: Du kan inte använda ditt meddelande om den yta du har markerat tas bort efter att meddelandet har skapats. Om det här felet inträffar väljer du en annan yta i meddelandet **[!UICONTROL Properties]**. Läs mer om kanalytor i [det här avsnittet](../configuration/channel-surfaces.md).
 
 >[!CAUTION]
 >
->För att kunna testa eller aktivera resan/kampanjen med e-postmeddelandet måste du lösa alla **fel** varningar.
+>Om du vill kunna testa eller aktivera resan/kampanjen med e-postmeddelandet måste du lösa alla **error**-varningar.
 
 ## Kontrollera och skicka din e-post
 
 När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska det, skicka korrektur och kontrollera återgivningen i vanliga dator-, mobil- och webbaserade klienter. Om du har infogat anpassat innehåll kan du kontrollera hur det här innehållet visas i meddelandet med hjälp av testprofildata.
 
-Det gör du genom att klicka **[!UICONTROL Simulate content]** lägg sedan till en testprofil för att kontrollera meddelandet med testprofilsdata.
+Det gör du genom att klicka på **[!UICONTROL Simulate content]** och sedan lägga till en testprofil för att kontrollera meddelandet med hjälp av testprofildata.
 
 ![](assets/email_designer_edit_simulate.png)
 
-Detaljerad information om hur du väljer testprofiler och förhandsgranskar innehållet finns i [Innehållshantering](../content-management/preview-test.md) -avsnitt.
+Detaljerad information om hur du väljer testprofiler och förhandsgranskar innehåll finns i avsnittet [Innehållshantering](../content-management/preview-test.md).
 
-När din e-post är klar slutför du konfigurationen av [resa](../building-journeys/journey-gs.md) eller [kampanj](../campaigns/create-campaign.md)och aktivera det för att skicka meddelandet.
+När din e-post är klar slutför du konfigurationen av din [resa](../building-journeys/journey-gs.md) eller [kampanj](../campaigns/create-campaign.md) och aktiverar den för att skicka meddelandet.
 
 >[!NOTE]
 >
->Om du vill spåra mottagarnas beteende via e-postöppningar och/eller interaktioner kontrollerar du att de dedikerade alternativen i dialogrutan **[!UICONTROL Tracking]** -avsnittet aktiveras i resans [e-postaktivitet](../building-journeys/journeys-message.md) eller i e-postmeddelandet [kampanj](../campaigns/create-campaign.md).<!--to move?-->
+>Om du vill spåra mottagarnas beteende genom att öppna e-post och/eller interaktioner kontrollerar du att de dedikerade alternativen i avsnittet **[!UICONTROL Tracking]** är aktiverade i kundens [e-postaktivitet](../building-journeys/journeys-message.md) eller i e-postkampanjen [kampanjen](../campaigns/create-campaign.md).<!--to move?-->
 
 <!--
 

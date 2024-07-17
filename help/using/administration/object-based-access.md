@@ -12,7 +12,7 @@ exl-id: 02ccdd95-426c-4b61-9834-7f2dcd5abdbb
 source-git-commit: 342b9210f79266cb11628dcdc411f90844a84e37
 workflow-type: tm+mt
 source-wordcount: '381'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -44,19 +44,19 @@ I Adobe Journey Optimizer kan du med OLAC skydda data och ge specifik åtkomst t
 
 >[!IMPORTANT]
 >
->Om du vill kunna skapa etiketter måste du vara en del av en roll med **[!UICONTROL Manage usage labels]** behörighet.
+>Om du vill kunna skapa etiketter måste du vara en del av en roll med behörigheten **[!UICONTROL Manage usage labels]**.
 
-**[!UICONTROL Labels]** gör att du kan kategorisera datauppsättningar och fält enligt de användarprofiler som gäller för dessa data. **[!UICONTROL Labels]** kan tillämpas när som helst, vilket ger flexibilitet i hur du väljer att styra data.
+Med **[!UICONTROL Labels]** kan du kategorisera datauppsättningar och fält enligt användarprofiler som gäller för dessa data. **[!UICONTROL Labels]** kan användas när som helst, vilket ger flexibilitet i hur du väljer att styra data.
 
-Du kan skapa etiketter i [!DNL Permissions] produkt. Mer information finns i [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/labels.html).
+Du kan skapa etiketter i produkten [!DNL Permissions]. Mer information finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/labels.html).
 
 **[!UICONTROL Labels]** kan också skapas direkt i Journey Optimizer:
 
-1. Här finns ett nyskapat objekt från Adobe Journey Optimizer **[!UICONTROL Campaign]** klickar du på **[!UICONTROL Manage access]** -knappen.
+1. Klicka på knappen **[!UICONTROL Manage access]** från ett Adobe Journey Optimizer-objekt, här en nyskapad **[!UICONTROL Campaign]**.
 
    ![](assets/olac_1.png)
 
-1. Från **[!UICONTROL Manage access]** fönster, klicka **[!UICONTROL Create label]**.
+1. Klicka på **[!UICONTROL Create label]** i fönstret **[!UICONTROL Manage access]**.
 
    ![](assets/olac_2.png)
 
@@ -67,31 +67,31 @@ Du kan skapa etiketter i [!DNL Permissions] produkt. Mer information finns i [de
 
    ![](assets/olac_3.png)
 
-1. Klicka **[!UICONTROL Create]** för att spara **[!UICONTROL Label]**.
+1. Klicka på **[!UICONTROL Create]** om du vill spara **[!UICONTROL Label]**.
 
-Ditt nyskapade **[!UICONTROL Label]** finns nu i listan. Om det behövs kan du ändra det i [!DNL Permissions] produkt.
+Din nyskapade **[!UICONTROL Label]** är nu tillgänglig i listan. Om det behövs kan du ändra det i [!DNL Permissions]-produkten.
 
 ## Tilldela etiketter {#assign-labels}
 
 >[!IMPORTANT]
 >
->För att kunna tilldela etiketter måste du vara en del av en roll med behörigheten Hantera, dvs. [!DNL Manage journeys], [!DNL Manage Campaigns] eller [!DNL Manage decisions]. Utan den här behörigheten **[!UICONTROL Manage access]** knappen blir nedtonad.
+>Om du vill kunna tilldela etiketter måste du vara en del av en roll med behörigheten Hantera, dvs. [!DNL Manage journeys], [!DNL Manage Campaigns] eller [!DNL Manage decisions]. Utan den här behörigheten kommer knappen **[!UICONTROL Manage access]** att vara nedtonad.
 
 Så här tilldelar du anpassade eller grundläggande dataanvändningsetiketter till dina Journey Optimizer-objekt:
 
-1. Här finns ett nyskapat objekt från Adobe Journey Optimizer **[!UICONTROL Campaign]** klickar du på **[!UICONTROL Manage access]** -knappen.
+1. Klicka på knappen **[!UICONTROL Manage access]** från ett Adobe Journey Optimizer-objekt, här en nyskapad **[!UICONTROL Campaign]**.
 
    ![](assets/olac_1.png)
 
-1. Från **[!UICONTROL Manage access]** väljer du egna eller grundläggande etiketter för dataanvändning för att hantera åtkomst till det här objektet.
+1. I fönstret **[!UICONTROL Manage access]** väljer du egna etiketter eller etiketter för kärndataanvändning för att hantera åtkomst till det här objektet.
 
-   Mer information om etiketter för användning av kärndata finns i [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html).
+   Mer information om etiketter för användning av kärndata finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html).
 
    ![](assets/olac_4.png)
 
-1. Klicka **[!UICONTROL Save]** om du vill tillämpa den här etikettbegränsningen.
+1. Klicka på **[!UICONTROL Save]** om du vill använda den här etikettbegränsningen.
 
-För att få åtkomst till det här objektet måste användarna ha den specifika **[!UICONTROL Label]** ingår i **[!UICONTROL Roles]**.
+Om du vill ha åtkomst till det här objektet måste användarna ha det specifika **[!UICONTROL Label]** inkluderat i sina **[!UICONTROL Roles]**.
 En användare med etiketten C1 har till exempel bara åtkomst till objekt som är märkta eller omärkta med C1.
 
-Mer information om tilldelning **[!UICONTROL Label]** till **[!UICONTROL Role]**, se [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/permissions.html#manage-labels-for-a-role).
+Mer information om hur du tilldelar **[!UICONTROL Label]** till en **[!UICONTROL Role]** finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/permissions.html#manage-labels-for-a-role).

@@ -11,7 +11,7 @@ keywords: IP, pooler, grupp, underdomäner, leveransbarhet
 exl-id: 606334c3-e3e6-41c1-a10e-63508a3ed747
 source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## Om IP-pooler {#about-ip-pools}
 
-Med [!DNL Journey Optimizer]kan du skapa IP-pooler för att gruppera IP-adresserna för dina underdomäner.
+Med [!DNL Journey Optimizer] kan du skapa IP-pooler för att gruppera IP-adresserna för dina underdomäner.
 
 Vi rekommenderar starkt att du skapar IP-pooler för e-postleverans. På så sätt kan du förhindra att en underdomän får ett anseende som påverkar dina andra underdomäner.
 
@@ -44,7 +44,7 @@ Ett exempel är att ha en IP-pool för dina marknadsföringsmeddelanden och en a
 
 Så här skapar du en IP-pool:
 
-1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL IP pools]** menyn och klicka sedan på **[!UICONTROL Create IP Pool]**.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL IP pools]** och klicka sedan på **[!UICONTROL Create IP Pool]**.
 
    ![](assets/ip-pool-create.png)
 
@@ -100,16 +100,16 @@ Om du vill redigera en IP-pool följer du stegen nedan.
 
 1. Spara ändringarna.
 
-Uppdateringen träder i kraft omedelbart eller asynkront, beroende på vilken IP-pool som är associerad med en [kanalyta](channel-surfaces.md) eller inte:
+Uppdateringen träder i kraft omedelbart eller asynkront, beroende på om IP-poolen är associerad med en [kanalyta](channel-surfaces.md) eller inte:
 
-* Om IP-poolen är **not** som är associerad med valfri kanalyta, uppdateras omedelbart (**[!UICONTROL Success]** status).
-* Om IP-poolen **är** som är kopplad till en kanalyta kan uppdateringen ta upp till 3 timmar (**[!UICONTROL Processing]** status).
+* Om IP-poolen **inte** är associerad med någon kanalyta är uppdateringen omedelbar (**[!UICONTROL Success]** status).
+* Om IP-poolen **är** associerad med en kanalyta kan uppdateringen ta upp till 3 timmar (**[!UICONTROL Processing]** status).
 
 >[!NOTE]
 >
->När [skapa en kanalyta](channel-surfaces.md#create-channel-surface), om du väljer en IP-pool som ingår i utgåvan (**[!UICONTROL Processing]** status) och aldrig har associerats med den underdomän som har valts för den ytan, kan du inte fortsätta med att skapa en yta. [Läs mer](channel-surfaces.md#subdomains-and-ip-pools)
+>När [skapar en kanalyta](channel-surfaces.md#create-channel-surface) kan du inte fortsätta skapa en yta om du väljer en IP-pool som är under utgåva (**[!UICONTROL Processing]** status) och aldrig har associerats med den underdomän som har valts för den ytan. [Läs mer](channel-surfaces.md#subdomains-and-ip-pools)
 
-Om du vill kontrollera IP-poolens uppdateringsstatus klickar du på **[!UICONTROL More actions]** knapp och markera **[!UICONTROL Recent updates]**.
+Om du vill kontrollera IP-poolens uppdateringsstatus klickar du på knappen **[!UICONTROL More actions]** och väljer **[!UICONTROL Recent updates]**.
 
 ![](assets/ip-pool-recent-update.png)
 
@@ -119,5 +119,5 @@ Om du vill kontrollera IP-poolens uppdateringsstatus klickar du på **[!UICONTRO
 >* några minuter innan det konsumeras av enhetsmeddelanden,
 >* till nästa batch för att IP-poolen ska börja gälla i batchmeddelanden.
 
-Du kan också använda **[!UICONTROL Delete]** för att ta bort en IP-pool. Observera att du inte kan ta bort en IP-pool som har kopplats till en kanalyta.
+Du kan också använda knappen **[!UICONTROL Delete]** för att ta bort en IP-pool. Observera att du inte kan ta bort en IP-pool som har kopplats till en kanalyta.
 

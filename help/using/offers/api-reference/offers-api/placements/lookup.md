@@ -9,13 +9,13 @@ exl-id: db337b5c-426a-4695-81e8-3a1b041791f2
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '72'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 # Slå upp en placering {#look-up-placement}
 
-Du kan söka efter specifika placeringar genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller placeringen `id`.
+Du kan söka efter specifika placeringar genom att göra en GET-förfrågan till [!DNL Offer Library]-API:t som innehåller placeringen `id`.
 
 **API-format**
 
@@ -39,7 +39,7 @@ curl -X GET 'https://platform.adobe.io/data/core/dps/placements/offerPlacement12
 
 **Svar**
 
-Ett godkänt svar returnerar information om placeringen inklusive information om unik placering `id`.
+Ett godkänt svar returnerar information om placeringen inklusive information om den unika placeringen `id`.
 
 ```json
 {

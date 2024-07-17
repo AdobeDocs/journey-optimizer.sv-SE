@@ -9,7 +9,7 @@ exl-id: e2d1f093-c1b8-4c4c-a20f-4bd7c2ea5269
 source-git-commit: ba7d065523116c12e22eec300df13c29d92a54fb
 workflow-type: tm+mt
 source-wordcount: '98'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -41,7 +41,7 @@ curl -X GET 'https://platform.adobe.io/data/core/dps/tags/tag1234' \
 
 **Svar**
 
-Ett godkänt svar returnerar information om samlingskvalificeraren, inklusive information om ditt behållar-ID, instans-ID och unik samlingskvalificerare `@id`.
+Ett lyckat svar returnerar information om samlingskvalificeraren, inklusive information om ditt behållar-ID, instans-ID och den unika samlingskvalificeraren `@id`.
 
 ```json
 {

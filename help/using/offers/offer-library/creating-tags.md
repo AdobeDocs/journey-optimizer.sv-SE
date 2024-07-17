@@ -8,8 +8,8 @@ level: Intermediate
 exl-id: fe2b7ce4-dc63-477a-a64f-f3828c6a232e
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 2%
+source-wordcount: '179'
+ht-degree: 0%
 
 ---
 
@@ -24,15 +24,15 @@ Genom att associera samlingskvalificerare (som tidigare kallats&quot;taggar&quot
 
 Samlingskvalificerare kan också användas för att gruppera erbjudanden i olika mängder. Se [Skapa samlingar](../offer-library/creating-collections.md).
 
-➡️ [Upptäck den här funktionen i en video](#video)
+➡️ [Upptäck den här funktionen i videon](#video)
 
-Listan över skapade samlingskvalificerare finns i **[!UICONTROL Components]** -menyn.
+Listan med skapade samlingskvalificerare är tillgänglig på menyn **[!UICONTROL Components]**.
 
 ![](../assets/tags_list.png)
 
 Så här skapar du en samlingskvalificerare:
 
-1. Gå till **[!UICONTROL Collection qualifiers]** tabbtangenten och klicka sedan på **[!UICONTROL Create collection qualifier]**.
+1. Gå till fliken **[!UICONTROL Collection qualifiers]** och klicka sedan på **[!UICONTROL Create collection qualifier]**.
 
 1. Ange samlingskvalificerarens namn och klicka sedan på **[!UICONTROL Save]**.
 

@@ -25,7 +25,7 @@ Börja skriva in innehåll för att visa de bästa resultaten. Hjälpartiklar om
 
 ![](assets/unified-search.png)
 
-Tryck **Retur** för att få tillgång till alla resultat och filtrera efter affärsobjekt.
+Tryck på **Retur** för att få tillgång till alla resultat och filtrera efter affärsobjekt.
 
 ![](assets/search-and-filter.png)
 
@@ -35,7 +35,7 @@ I de flesta av listorna använder du sökfältet för att hitta specifika objekt
 
 Du kommer åt filter genom att klicka på filterikonen högst upp till vänster i en lista. Med filtermenyn kan du filtrera de element som visas enligt olika villkor: Du kan välja att endast visa element av en viss typ eller status, de element som du har skapat eller de som har ändrats under de senaste 30 dagarna. Alternativen varierar beroende på sammanhanget.
 
-Dessutom kan du använda enhetliga taggar för att filtrera en lista beroende på vilka taggar som tilldelats ett objekt. För närvarande finns det taggar för resor och kampanjer. [Lär dig hur du arbetar med taggar](#tags)
+Dessutom kan du använda enhetliga taggar för att filtrera en lista beroende på vilka taggar som tilldelats ett objekt. För närvarande finns det taggar för resor och kampanjer. [Lär dig arbeta med taggar](#tags)
 
 >[!NOTE]
 >
@@ -52,14 +52,14 @@ I listorna kan du utföra grundläggande åtgärder för varje element. Du kan t
 >title="Taggar"
 >abstract="I det här fältet kan du tilldela enhetliga Adobe Experience Platform-taggar till din kampanj. På så sätt kan ni enkelt klassificera dem och förbättra sökningen från kampanjlistan."
 
-Med Adobe Experience Platform [Enhetliga taggar](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/overview.html)kan du enkelt klassificera dina Journey Optimizer-resor och -kampanjer för att förbättra sökningen från listorna.
+Med Adobe Experience Platform [enhetliga taggar](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/overview.html) kan du enkelt klassificera dina Journey Optimizer-resor och -kampanjer för att förbättra sökningen från listorna.
 
 ![](../rn/assets/do-not-localize/campaigns-tag.gif)
 
 
 ### Lägga till taggar i ett objekt
 
-The **[!UICONTROL Tags]** I kan du definiera taggar för objektet. Taggar är tillgängliga för följande objekt:
+I fältet **[!UICONTROL Tags]** kan du definiera taggar för objektet. Taggar är tillgängliga för följande objekt:
 
 * [Kampanjer](../campaigns/create-campaign.md#create)
 * [Beslutsobjekt](../experience-decisioning/items.md)
@@ -79,11 +79,11 @@ Du kan antingen markera en befintlig tagg eller skapa en ny. Följ stegen nedan 
    >
    > Taggar är inte skiftlägeskänsliga.
 
-1. Om taggen som du söker efter inte är tillgänglig klickar du på **[!UICONTROL Create ""]** om du vill definiera ett nytt objekt, läggs det automatiskt till i det aktuella objektet och blir tillgängligt för alla andra objekt.
+1. Om taggen som du söker efter inte är tillgänglig klickar du på **[!UICONTROL Create ""]** för att definiera en ny. Den läggs automatiskt till i det aktuella objektet och blir tillgänglig för alla andra objekt.
 
    ![](assets/tags4.png)
 
-1. Listan med de markerade eller skapade taggarna visas under **[!UICONTROL Tags]** fält. Du kan definiera så många taggar som behövs.
+1. Listan med de markerade eller skapade taggarna visas under fältet **[!UICONTROL Tags]**. Du kan definiera så många taggar som behövs.
 
 >[!NOTE]
 > 
@@ -97,14 +97,14 @@ Ett filter är också tillgängligt för att endast visa objekt med vissa taggar
 
 ![](assets/tags2.png)
 
-Du kan lägga till eller ta bort taggar från alla typer av resor och kampanjer (live, draft, etc.). Klicka på **[!UICONTROL More actions]** -ikon bredvid objektet och markera **[!UICONTROL Edit tags]**.
+Du kan lägga till eller ta bort taggar från alla typer av resor och kampanjer (live, draft, etc.). Det gör du genom att klicka på ikonen **[!UICONTROL More actions]** bredvid objektet och välja **[!UICONTROL Edit tags]**.
 
 ![](assets/tags3.png)
 
 ### Hantera taggar
 
-Administratörer kan ta bort taggar och ordna dem efter kategorier med hjälp av **[!UICONTROL Tags]** meny, under **[!UICONTROL ADMINISTRATION]**. Läs mer om tagghantering i [Dokumentation för enhetliga taggar](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/ui/managing-tags.html).
+Administratörer kan ta bort taggar och ordna dem efter kategorier med hjälp av menyn **[!UICONTROL Tags]** under **[!UICONTROL ADMINISTRATION]**. Läs mer om tagghantering i [dokumentationen för enhetliga taggar](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/ui/managing-tags.html).
 
 >[!NOTE]
 >
-> Taggar skapade direkt från **[!UICONTROL Tags]** i Journey Optimizer läggs automatiskt till i den inbyggda kategorin&quot;Ej kategoriserad&quot;.
+> Taggar som skapas direkt från fältet **[!UICONTROL Tags]** i Journey Optimizer läggs automatiskt till i den inbyggda kategorin&quot;Ej kategoriserad&quot;.

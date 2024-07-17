@@ -18,11 +18,11 @@ ht-degree: 0%
 
 ## Åtkomst till innehållsmallar {#access}
 
-Om du vill komma åt innehållsmalllistan väljer du **[!UICONTROL Content Management]** > **[!UICONTROL Content Templates]** från den vänstra menyn.
+Om du vill komma åt innehållsmalllistan väljer du **[!UICONTROL Content Management]** > **[!UICONTROL Content Templates]** på den vänstra menyn.
 
 ![](assets/content-template-list.png)
 
-Alla mallar som skapades i den aktuella sandlådan - antingen från en resa eller en kampanj med **[!UICONTROL Save as template]** alternativ, antingen från **[!UICONTROL Content Templates]** -menyn visas. [Lär dig hur du skapar mallar](#create-content-templates)
+Alla mallar som skapades i den aktuella sandlådan, antingen från en resa eller en kampanj med alternativet **[!UICONTROL Save as template]**, antingen från menyn **[!UICONTROL Content Templates]**, visas. [Lär dig skapa mallar](#create-content-templates)
 
 Du kan sortera innehållsmallar efter:
 * Typ
@@ -40,7 +40,7 @@ Du kan också välja att bara visa de objekt som du själv har skapat eller änd
 
   ![](assets/content-template-edit.png)
 
-* Om du vill ta bort en mall väljer du **[!UICONTROL More actions]** intill önskad mall och välj **[!UICONTROL Delete]**.
+* Om du vill ta bort en mall markerar du knappen **[!UICONTROL More actions]** bredvid önskad mall och väljer **[!UICONTROL Delete]**.
 
   ![](assets/content-template-list-delete.png)
 
@@ -50,7 +50,7 @@ Du kan också välja att bara visa de objekt som du själv har skapat eller änd
 
 ## Visa mallar som miniatyrbilder {#template-thumbnails}
 
-Välj **[!UICONTROL Grid view]** om du vill visa varje mall som en miniatyrbild.
+Välj läget **[!UICONTROL Grid view]** om du vill visa varje mall som en miniatyrbild.
 
 >[!AVAILABILITY]
 >

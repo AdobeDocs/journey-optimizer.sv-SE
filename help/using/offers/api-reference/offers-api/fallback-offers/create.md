@@ -9,17 +9,17 @@ exl-id: 156d6c71-d8fd-4631-ae0c-44452d664dde
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '113'
-ht-degree: 9%
+ht-degree: 8%
 
 ---
 
 # Skapa ett reserverbjudande {#create-fallback-offer}
 
-Du kan skapa ett reserverbjudande genom att göra en POST till [!DNL Offer Library] API.
+Du kan skapa ett reserverbjudande genom att göra en POST-förfrågan till API:t [!DNL Offer Library].
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
-I följande tabell visas giltiga värden som utgör *Content-Type* fält i begärandehuvudet:
+I följande tabell visas giltiga värden som utgör fältet *Content-Type* i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
@@ -74,7 +74,7 @@ curl -X POST 'https://platform.adobe.io/data/core/dps/offers?offer-type=fallback
 
 **Svar**
 
-Ett lyckat svar returnerar information om det nya reserverbjudandet, inklusive det unika reserverbjudandet `id`. Du kan använda `id` i senare steg för att uppdatera eller ta bort ditt reserverbjudande eller för att skapa ett beslut i en senare självstudiekurs.
+Ett lyckat svar returnerar information om det nya reserverbjudandet, inklusive det unika reserverbjudandet `id`. Du kan använda `id` i senare steg för att uppdatera eller ta bort ditt reserverbjudande eller för att skapa ett beslut i en senare självstudie.
 
 
 ```json

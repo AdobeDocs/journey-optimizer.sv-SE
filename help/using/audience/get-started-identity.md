@@ -18,15 +18,15 @@ ht-degree: 0%
 
 En identitet är data som är unika för en enhet, vanligtvis ett objekt i verkligheten, till exempel en enskild person, en maskinvaruenhet eller en webbläsare. En fullständigt kvalificerad identitet består av två delar:
 
-* The **namnutrymme för identitet** fungerar som en indikator för det sammanhang som en identitet relateras till.
-* The **identitetsvärde** är en sträng som representerar en entitet.
+* **Identitetsnamnrymden** fungerar som en indikator för det sammanhang som en identitet relateras till.
+* **Identitetsvärdet** är en sträng som representerar en entitet.
 
-Ring 555-555-1234. I det här exemplet är strängen &quot;555-555-1234&quot; en **identitetsvärde** som kan kategoriseras i en&quot;telefon&quot; **namnutrymme för identitet**.
+Ring 555-555-1234. I det här exemplet är strängen &quot;555-555-1234&quot; ett **identitetsvärde** som kan kategoriseras i ett &quot;Phone&quot; **identity-namnutrymme**.
 
-The **Identiteter** menyn i [!DNL Adobe Journey Optimizer] Med kan du effektivt bläddra bland de olika identifierare som utgör kunderna i din databas.
+Med menyn **Identiteter** i [!DNL Adobe Journey Optimizer] kan du effektivt bläddra bland de olika identifierare som utgör kunderna i din databas.
 
 ![](assets/identities-home.png)
 
-Den ger en **Identitetsdiagram**, som är en karta över relationerna mellan olika identiteter för en viss kund, vilket ger er en visuell representation av hur kunden interagerar med ert varumärke i olika kanaler. Alla kundidentitetsdiagram hanteras och uppdateras gemensamt av Adobe Experience Platform Identity Service som svar på kundaktivitet.
+Den innehåller ett **identitetsdiagram**, som är en karta över relationer mellan olika identiteter för en viss kund, som ger dig en visuell representation av hur kunden interagerar med varumärket i olika kanaler. Alla kundidentitetsdiagram hanteras och uppdateras gemensamt av Adobe Experience Platform Identity Service som svar på kundaktivitet.
 
-Detaljerad information om hur du arbetar med identiteter finns i [Identitetstjänstens dokumentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=sv){target="_blank"}.
+Detaljerad information om hur du arbetar med identiteter finns i [identitetstjänstens dokumentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=sv){target="_blank"}.

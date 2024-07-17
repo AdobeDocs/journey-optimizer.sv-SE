@@ -27,15 +27,15 @@ Push-meddelanden hjälper dig att nå mobilappsanvändare när som helst, särsk
 
 Push-meddelanden kan skapas:
 
-* I en **Resa**: När du har lagt till en push-aktivitet under resan och har definierat grundläggande inställningar använder du **[!UICONTROL Actions: Push]** till höger för att skapa innehåll för push-meddelanden. [Lär dig skapa en resa](../building-journeys/journey-gs.md)
+* I en **resa**: När du har lagt till en push-aktivitet i din resa och definierat grundläggande inställningar använder du den högra panelen i **[!UICONTROL Actions: Push]** för att skapa innehållet för push-meddelanden. [Lär dig skapa en resa](../building-journeys/journey-gs.md)
 
-* I en **Campaign**: När du har skapat en kampanj väljer du Push-meddelande som åtgärd och definierar grundläggande inställningar. [Lär dig skapa en kampanj](../campaigns/create-campaign.md#configure)
+* I en **kampanj**: När du har skapat en kampanj väljer du Push-meddelande som åtgärd och definierar grundläggande inställningar. [Lär dig skapa en kampanj](../campaigns/create-campaign.md#configure)
 
-Använd de dedikerade flikarna för att definiera inställningar för push-meddelanden för **iOS** och **Android** operativsystem.
+Använd de dedikerade flikarna för att definiera inställningar för push-meddelanden för operativsystemen **iOS** och **Android** .
 
 >[!NOTE]
 >
->while **[!DNL Journey Optimizer]** innehåller sätt att hantera avanmälan i e-postmeddelanden och SMS-meddelanden. Push-meddelanden kräver ingen åtgärd från din sida, eftersom mottagarna kan avbeställa prenumerationen via sina enheter. När du till exempel hämtar eller använder programmet kan de välja att stoppa meddelanden. På samma sätt kan de ändra meddelandeinställningarna via det mobila operativsystemet.
+>I **[!DNL Journey Optimizer]** finns sätt att hantera avanmälan i e-postmeddelanden och SMS-meddelanden, men push-meddelanden kräver ingen åtgärd från din sida, eftersom mottagarna kan avbeställa prenumerationen via sina enheter själva. När du till exempel hämtar eller använder programmet kan de välja att stoppa meddelanden. På samma sätt kan de ändra meddelandeinställningarna via det mobila operativsystemet.
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
@@ -51,7 +51,7 @@ Använd de dedikerade flikarna för att definiera inställningar för push-medde
 <img alt="Sällan" src="../assets/do-not-localize/push-design.jpg">
 </a>
 <div>
-<a href="design-push.md"><strong>Utforma ett push-meddelande</strong></a>
+<a href="design-push.md"><strong>Utforma ditt push-meddelande</strong></a>
 </div>
 <p></td>
 <td>
@@ -59,7 +59,7 @@ Använd de dedikerade flikarna för att definiera inställningar för push-medde
 <img alt="Validering" src="../assets/do-not-localize/push-sending.jpg">
 </a>
 <div>
-<a href="send-push.md"><strong>Skicka push-meddelanden</strong></a>
+<a href="send-push.md"><strong>Skicka ditt push-meddelande</strong></a>
 </div>
 <p>
 </td>

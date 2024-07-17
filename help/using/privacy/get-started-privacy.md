@@ -10,7 +10,7 @@ exl-id: b1ff5780-d453-46b3-8cf4-abea085782ef
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '240'
-ht-degree: 9%
+ht-degree: 7%
 
 ---
 
@@ -22,15 +22,15 @@ Dessutom anges i bestämmelser som GDPR att du måste uppfylla specifika krav in
 
 Adobe Experience Platform och Journey Optimizer har olika verktyg för att säkerställa integritetsskydd.
 
-* **Hantera dataförfrågningar**: Använd Adobe Experience Platform Privacy Service för att hantera kundförfrågningar för att få tillgång till och ta bort personuppgifter. [Läs mer](requests.md)
+* **Hantera dataförfrågningar**: Använd Adobe Experience Platform Privacy Service för att hantera kundförfrågningar för att komma åt och ta bort personuppgifter. [Läs mer](requests.md)
 
-* **Granska användaråtgärder**: Använd granskningsloggar för att identifiera åtgärder som utförs av användare i systemet, felsöka problem och hjälpa ditt företag att följa regler och policyer för hantering av företagsdata. [Läs mer](audit-logs.md)
+* **Granska användaråtgärder**: Använd granskningsloggar för att identifiera åtgärder som utförs av användare i systemet, felsöka problem och hjälpa ditt företag att följa regler och policyer för företagsdatahantering. [Läs mer](audit-logs.md)
 
-* **Spåra och hantera samtycke**: Spåra kundernas samtycke till kommunikation och hantera sina preferenser och prenumerationer. [Läs mer](opt-out.md)
+* **Spåra och hantera samtycke**: Spåra kundernas samtycke till kommunikation och hantera deras inställningar och prenumerationer. [Läs mer](opt-out.md)
 
-* **Tillämpa samtyckespolicyer**: Definiera Adobe Experience Platform medgivandepolicyer och tillämpa dem på dina anpassade åtgärder för att ta hänsyn till dina kunders önskemål. [Läs mer](../action/consent.md)
+* **Använd medgivandeprinciper**: Definiera Adobe Experience Platform-medgivandeprinciper och tillämpa dem på dina anpassade åtgärder för att ta hänsyn till dina kunders önskemål. [Läs mer](../action/consent.md)
 
-* **Tillämpa styrningsprinciper**: Använd Adobe Experience Platform policy för styrning för att förhindra att känsliga fält exporteras till tredjepartssystem via anpassade åtgärder. [Läs mer](../action/action-privacy.md)
+* **Använd styrningsprinciper**: Använd Adobe Experience Platform styrningsprinciper för att förhindra att känsliga fält exporteras till tredjepartssystem via anpassade åtgärder. [Läs mer](../action/action-privacy.md)
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
@@ -63,7 +63,7 @@ Adobe Experience Platform och Journey Optimizer har olika verktyg för att säke
 <img alt="Validering" src="../assets/do-not-localize/privacy-consent-policies.jpeg">
 </a>
 <div>
-<a href="../action/consent.md"><strong>Tillämpa samtyckespolicyer</strong></a>
+<a href="../action/consent.md"><strong>Använd profiler för samtycke</strong></a>
 </div>
 <p>
 </td>
@@ -72,7 +72,7 @@ Adobe Experience Platform och Journey Optimizer har olika verktyg för att säke
 <img alt="Validering" src="../assets/do-not-localize/privacy-governance.jpeg">
 </a>
 <div>
-<a href="../action/action-privacy.md"><strong>Tillämpa styrningsprinciper</strong></a>
+<a href="../action/action-privacy.md"><strong>Använd styrningsprinciper</strong></a>
 </div>
 <p>
 </td>

@@ -47,7 +47,7 @@ Returnera en datetime utan att överväga tidszon.
 
 `toDateTimeOnly ("2023-08-18")`
 
-returnerar ett dateTime som representerar 2023-08-18T00:00:00,000
+returnerar ett dateTime som representerar 2023-08-18T00:00:00.000
 
 `toDateTimeOnly(now())`
 

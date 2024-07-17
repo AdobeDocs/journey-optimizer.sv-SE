@@ -53,13 +53,13 @@ ht-degree: 0%
 >title="Surface URI"
 >abstract="TBC"
 
-Med [!DNL Journey Optimizer]kan du konfigurera kanalytor (t.ex. meddelandeförinställningar) som definierar alla tekniska parametrar som krävs för dina meddelanden: e-posttyp, avsändarens e-postadress och namn, mobilappar, SMS-konfiguration med mera.
+Med [!DNL Journey Optimizer] kan du konfigurera kanalytor (t.ex. meddelandeförinställningar) som definierar alla tekniska parametrar som krävs för dina meddelanden: e-posttyp, avsändarens e-postadress och namn, mobilappar, SMS-konfiguration med mera.
 
 >[!CAUTION]
 >
-> * Om du vill skapa, redigera och ta bort kanalytor måste du ha [Hantera meddelandeförinställningar](../administration/high-low-permissions.md#administration-permissions) behörighet.
+> * Om du vill skapa, redigera och ta bort kanalytor måste du ha behörigheten [Hantera meddelandeförinställningar](../administration/high-low-permissions.md#administration-permissions) .
 >
-> * Du måste utföra [E-postkonfiguration](../email/get-started-email-config.md), [Push-konfiguration](../push/push-configuration.md), [SMS-konfiguration](../sms/sms-configuration.md) och [Konfiguration av direktreklam](../direct-mail/direct-mail-configuration.md) innan du skapar kanalytor.
+> * Du måste utföra stegen för [e-postkonfigurationen](../email/get-started-email-config.md), [push-konfigurationen](../push/push-configuration.md), [SMS-konfigurationen](../sms/sms-configuration.md) och [Direct mail configuration](../direct-mail/direct-mail-configuration.md) innan du skapar kanalytor.
 
 När kanalytorna har konfigurerats kan du välja dem när du skapar meddelanden från en resa eller en kampanj.
 
@@ -86,7 +86,7 @@ När kanalytorna har konfigurerats kan du välja dem när du skapar meddelanden 
 
 Så här skapar du en kanalyta:
 
-1. Öppna **[!UICONTROL Channels]** > **[!UICONTROL Branding]** > **[!UICONTROL Channel surfaces]** menyn och klicka sedan på **[!UICONTROL Create channel surface]**.
+1. Gå till menyn **[!UICONTROL Channels]** > **[!UICONTROL Branding]** > **[!UICONTROL Channel surfaces]** och klicka sedan på **[!UICONTROL Create channel surface]**.
 
    ![](assets/preset-create.png)
 
@@ -96,15 +96,15 @@ Så här skapar du en kanalyta:
 
    >[!NOTE]
    >
-   > Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-` tecken.
+   > Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt `.` och bindestreck `-`.
 
-1. Om du vill tilldela etiketter för anpassad eller grundläggande dataanvändning till ytan kan du välja **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md).
+1. Om du vill tilldela etiketter för anpassad eller viktig dataanvändning till ytan kan du välja **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md).
 
-1. Om du valde **[!UICONTROL Email]** kanal, konfigurera dina inställningar enligt beskrivningen i [det här avsnittet](../email/email-settings.md).
+1. Om du valde **[!UICONTROL Email]**-kanalen konfigurerar du inställningarna enligt beskrivningen i [det här avsnittet](../email/email-settings.md).
 
    ![](assets/preset-email.png)
 
-1. För **[!UICONTROL Push Notification]** välj minst en plattform -  **iOS** och/eller **Android** - och de mobilapplikationer som ska användas för varje plattform.
+1. För **[!UICONTROL Push Notification]**-kanalen väljer du minst en plattform - **iOS** och/eller **Android** - och de mobilprogram som ska användas för varje plattform.
 
    ![](assets/preset-push.png)
 
@@ -112,7 +112,7 @@ Så här skapar du en kanalyta:
    >
    >Mer information om hur du konfigurerar miljön för att skicka push-meddelanden finns i [det här avsnittet](../push/push-gs.md).
 
-1. För **[!UICONTROL SMS]** kanal, ange dina inställningar enligt [det här avsnittet](../sms/sms-configuration.md).
+1. För **[!UICONTROL SMS]**-kanalen definierar du dina inställningar så som beskrivs i [det här avsnittet](../sms/sms-configuration.md).
 
    ![](assets/preset-sms.png)
 
@@ -120,11 +120,11 @@ Så här skapar du en kanalyta:
    >
    >Mer information om hur du konfigurerar miljön för att skicka SMS-meddelanden finns i [det här avsnittet](../sms/sms-configuration.md).
 
-1. Välj en **[!UICONTROL Marketing action]** för att koppla medgivandeprinciper till meddelanden som använder den här ytan. Alla policyer för samtycke som är kopplade till den marknadsföringsåtgärden utnyttjas för att ta hänsyn till era kunders preferenser. [Läs mer](../action/consent.md#surface-marketing-actions)
+1. Välj en **[!UICONTROL Marketing action]** om du vill associera medgivandeprinciper med de meddelanden som använder den här ytan. Alla policyer för samtycke som är kopplade till den marknadsföringsåtgärden utnyttjas för att ta hänsyn till era kunders preferenser. [Läs mer](../action/consent.md#surface-marketing-actions)
 
    >[!NOTE]
    >
-   >Samtyckesprofiler är för närvarande bara tillgängliga för organisationer som har köpt **Hälsovårdssköld** och **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
+   >Samtyckespolicyer är för närvarande bara tillgängliga för organisationer som har köpt tilläggen **Healthcare Shield** och **Privacy and Security Shield**.
 
    ![](assets/surface-marketing-action.png)
 
@@ -138,19 +138,19 @@ Så här skapar du en kanalyta:
 
    >[!NOTE]
    >
-   >Du kan inte fortsätta med att skapa e-postyta medan den valda IP-poolen är under [utgåva](ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) och har aldrig kopplats till den valda underdomänen. [Läs mer](#subdomains-and-ip-pools)
+   >Du kan inte fortsätta med att skapa e-postyta medan den valda IP-poolen är under [utgåva](ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) och har aldrig associerats med den valda underdomänen. [Läs mer](#subdomains-and-ip-pools)
    >
-   >Spara ytan som utkast och vänta tills IP-poolen har **[!UICONTROL Success]** status för att återuppta skapande av yta.
+   >Spara ytan som utkast och vänta tills IP-poolen har statusen **[!UICONTROL Success]** för att återuppta skapandet av ytan.
 
-1. När kanalytan har skapats visas den i listan med **[!UICONTROL Processing]** status.
+1. När kanalytan har skapats visas den i listan med statusen **[!UICONTROL Processing]**.
 
    Under det här steget kommer flera kontroller att utföras för att verifiera att den har konfigurerats korrekt. <!--The processing time is around **48h-72h**, and can take up to **7-10 business days**.-->
 
    >[!NOTE]
    > När du skapar en e-postyta för en underdomän varierar bearbetningstiden enligt följande:
    >
-   > * För **nya underdomäner** kan processen för att skapa den första kanalytan ta **10 till 10 dagar**.
-   > * För **icke-produktionssandlådor** eller om den valda underdomänen är **används redan** i en annan godkänd kanalyta, tar processen bara upp till **3 timmar**.
+   > * För **nya underdomäner** kan processen för att skapa den första kanalytan ta **10 minuter till 10 dagar**.
+   > * För **icke-produktionssandlådor**, eller om den valda underdomänen **redan används** i en annan godkänd kanalyta, tar processen bara upp till **3 timmar**.
 
 
    Dessa kontroller omfattar konfigurations- och tekniska tester som utförs av Adobe-teamet:
@@ -166,15 +166,15 @@ Så här skapar du en kanalyta:
 
    >[!NOTE]
    >
-   >Om kontrollerna inte lyckas kan du läsa mer om orsakerna till eventuella fel i [det här avsnittet](#monitor-channel-surfaces).
+   >Om kontrollerna inte lyckas kan du läsa mer om möjliga felorsaker i [det här avsnittet](#monitor-channel-surfaces).
 
-1. När kontrollerna är klara får kanalytan **[!UICONTROL Active]** status. Den är klar att användas för att leverera meddelanden.
+1. När kontrollerna har slutförts får kanalytan statusen **[!UICONTROL Active]**. Den är klar att användas för att leverera meddelanden.
 
    ![](assets/preset-active.png)
 
 ## Skärmkanalsytor {#monitor-channel-surfaces}
 
-Alla kanalytor visas i **[!UICONTROL Channels]** > **[!UICONTROL Channel surfaces]** -menyn. Det finns filter som hjälper dig att bläddra igenom listan (kanal, användare, status).
+Alla dina kanalytor visas på menyn **[!UICONTROL Channels]** > **[!UICONTROL Channel surfaces]**. Det finns filter som hjälper dig att bläddra igenom listan (kanal, användare, status).
 
 ![](assets/preset-filters.png)
 
@@ -188,17 +188,17 @@ När kanalytorna har skapats kan de ha följande status:
 
 Om det inte går att skapa en kanalyta beskrivs detaljerna för varje möjlig felorsak nedan.
 
-Om något av dessa fel inträffar, kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} för att få hjälp.
+Kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} om något av dessa fel inträffar.
 
-* **SPF-valideringen misslyckades**: SPF (Sender Policy Framework) är ett autentiseringsprotokoll för e-post som tillåter att auktoriserade IP-adresser kan skicka e-post från en viss underdomän. SPF-valideringsfel innebär att IP-adresserna i SPF-posten inte matchar IP-adresserna som används för att skicka e-post till postlådeprovidern.
+* **SPF-validering misslyckades**: SPF (Sender Policy Framework) är ett autentiseringsprotokoll för e-post som tillåter att auktoriserade IP-adresser kan skicka e-post från en angiven underdomän. SPF-valideringsfel innebär att IP-adresserna i SPF-posten inte matchar IP-adresserna som används för att skicka e-post till postlådeprovidern.
 
 * **DKIM-validering misslyckades**: DKIM (DomainKeys Identified Mail) gör det möjligt för mottagarservern att verifiera att det mottagna meddelandet skickades av den äkta avsändaren av den associerade domänen och att innehållet i det ursprungliga meddelandet inte ändrades. DKIM-valideringsfel innebär att de mottagande e-postservrarna inte kan verifiera meddelandeinnehållets autenticitet och dess koppling till den sändande domänen:
 
-* **MX-postvalideringen misslyckades**: MX-postvalideringsfel (Mail eXchange) innebär att de e-postservrar som ansvarar för att ta emot inkommande e-post för en viss underdomän inte är korrekt konfigurerade.
+* **MX-postvalidering misslyckades**: MX-postvalideringsfel (eXchange) innebär att de e-postservrar som ansvarar för att ta emot inkommande e-post för en viss underdomän inte är korrekt konfigurerade.
 
-* **Konfigurationer för slutbarhet misslyckades**: Fel i leveranskonfigurationer kan uppstå på grund av någon av följande orsaker:
+* **Leveranskonfigurationer misslyckades**: Fel i leveranskonfigurationer kan inträffa på grund av någon av följande orsaker:
    * Blockeringslistning av tilldelade IP-adresser
-   * Ogiltig `helo` name
+   * Ogiltigt `helo`-namn
    * E-postmeddelanden skickas från andra IP-adresser än de som anges i IP-poolen för motsvarande yta
    * Det går inte att leverera e-postmeddelanden till inkorg hos viktiga Internet-leverantörer
 
@@ -218,31 +218,31 @@ Om du vill redigera en kanalyta följer du stegen nedan.
 
    >[!NOTE]
    >
-   >Om en kanalyta har **[!UICONTROL Active]** status, **[!UICONTROL Name]**, **[!UICONTROL Select channel]** och **[!UICONTROL Subdomain]** fält är nedtonade och kan inte redigeras.
+   >Om en kanalyta har statusen **[!UICONTROL Active]** är fälten **[!UICONTROL Name]**, **[!UICONTROL Select channel]** och **[!UICONTROL Subdomain]** nedtonade och kan inte redigeras.
 
-1. Klicka **[!UICONTROL Submit]** för att bekräfta dina ändringar.
+1. Klicka på **[!UICONTROL Submit]** för att bekräfta ändringarna.
 
    >[!NOTE]
    >
    >Du kan också spara kanalytan som utkast och återuppta uppdateringen senare.
 
-När ändringarna har skickats går kanalytan igenom en valideringscykel som liknar den som finns när [skapa en kanalyta](#create-channel-surface). Versionshanteringstiden kan ta upp till **3 timmar**.
+När ändringarna har skickats går kanalytan igenom en valideringscykel som liknar den som fanns när [en kanalyta skapades](#create-channel-surface). Versionens bearbetningstid kan ta upp till **3 timmar**.
 
 >[!NOTE]
 >
->Om du bara redigerar **[!UICONTROL Description]**, **[!UICONTROL Email type]** och/eller **[!UICONTROL Email retry parameters]** uppdateras uppdateringen omedelbart.
+>Om du bara redigerar fälten **[!UICONTROL Description]**, **[!UICONTROL Email type]** och/eller **[!UICONTROL Email retry parameters]** uppdateras uppdateringen omedelbart.
 
 ### Uppdatera information {#update-details}
 
-För kanalytor som har **[!UICONTROL Active]** status kan du kontrollera uppdateringens information. För att göra detta:
+För kanalytor med statusen **[!UICONTROL Active]** kan du kontrollera uppdateringens information. För att göra detta:
 
-Klicka på **[!UICONTROL Recent update]** -ikonen som visas bredvid det aktiva ytnamnet.
+Klicka på ikonen **[!UICONTROL Recent update]** som visas bredvid namnet på den aktiva ytan.
 
 ![](assets/preset-recent-update-icon.png)
 
 <!--You can also access the update details from an active channel surface while update is in progress.-->
 
-På **[!UICONTROL Recent update]** visas information som uppdateringsstatus och listan över begärda ändringar.
+På skärmen **[!UICONTROL Recent update]** kan du se information som uppdateringsstatus och listan över begärda ändringar.
 
 <!--![](assets/preset-recent-update-screen.png)-->
 
@@ -252,7 +252,7 @@ En uppdatering av en kanalyta kan ha följande status:
 
 * **[!UICONTROL Processing]**: Kanalytans uppdatering har skickats och genomgår flera verifieringssteg.
 * **[!UICONTROL Success]**: Den uppdaterade kanalytan har verifierats och kan väljas för att skapa meddelanden.
-* **[!UICONTROL Failed]**: En eller flera kontroller misslyckades under uppdateringsverifieringen av kanalytan.
+* **[!UICONTROL Failed]**: En eller flera kontroller misslyckades under verifieringen av kanalytans uppdatering.
 
 Varje status visas nedan.
 
@@ -262,15 +262,15 @@ Flera leveranskontroller kommer att utföras för att kontrollera att ytan har u
 
 >[!NOTE]
 >
->Om du bara redigerar **[!UICONTROL Description]**, **[!UICONTROL Email type]** och/eller **[!UICONTROL Email retry parameters]** uppdateras uppdateringen omedelbart.
+>Om du bara redigerar fälten **[!UICONTROL Description]**, **[!UICONTROL Email type]** och/eller **[!UICONTROL Email retry parameters]** uppdateras uppdateringen omedelbart.
 
-Bearbetningstiden kan ta upp till **3 timmar**. Läs mer om kontroller som utförts under valideringscykeln i [det här avsnittet](#create-channel-surface).
+Bearbetningstiden kan ta upp till **3 timmar**. Läs mer om de kontroller som har utförts under valideringscykeln i [det här avsnittet](#create-channel-surface).
 
 Om du redigerar en yta som redan var aktiv:
 
-* Dess status kvarstår **[!UICONTROL Active]** när valideringsprocessen pågår.
+* Dess status är fortfarande **[!UICONTROL Active]** medan verifieringsprocessen pågår.
 
-* The **[!UICONTROL Recent update]** visas bredvid namnet på ytan i kanalens ytlista.
+* Ikonen **[!UICONTROL Recent update]** visas bredvid namnet på ytan i kanalens ytlista.
 
 * Under valideringsprocessen används fortfarande den äldre versionen av ytan för meddelanden som konfigurerats med den här ytan.
 
@@ -294,15 +294,15 @@ När uppdateringen misslyckas blir ytan redigerbar igen. Du kan klicka på dess 
 
 ## Inaktivera en kanalyta {#deactivate-a-surface}
 
-Skapa en **[!UICONTROL Active]** Kanalytan är inte tillgänglig för att skapa nya meddelanden. Du kan inaktivera den. Resebudskap som för närvarande använder denna yta kommer dock inte att påverkas och kommer att fortsätta fungera.
+Om du vill göra en **[!UICONTROL Active]**-kanalyta otillgänglig för att skapa nya meddelanden kan du inaktivera den. Resebudskap som för närvarande använder denna yta kommer dock inte att påverkas och kommer att fortsätta fungera.
 
 >[!NOTE]
 >
->Du kan inte inaktivera en kanalyta medan en uppdatering bearbetas. Du måste vänta tills uppdateringen har slutförts eller misslyckats. Läs mer på [redigera kanalytor](#edit-channel-surface) och [uppdateringsstatus](#update-statuses).
+>Du kan inte inaktivera en kanalyta medan en uppdatering bearbetas. Du måste vänta tills uppdateringen har slutförts eller misslyckats. Läs mer om att [redigera kanalytor](#edit-channel-surface) och om [uppdatera status](#update-statuses).
 
 1. Öppna listan över kanalytor.
 
-1. Klicka på **[!UICONTROL More actions]** -knappen.
+1. Klicka på knappen **[!UICONTROL More actions]** om du vill se den aktiva ytan.
 
 1. Välj **[!UICONTROL Deactivate]**.
 

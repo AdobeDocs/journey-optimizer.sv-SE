@@ -18,22 +18,22 @@ ht-degree: 1%
 
 Du kan testa återgivningen av vissa e-postmallar, oavsett om de har skapats från grunden eller från ett befintligt innehåll. Följ stegen nedan för att göra det.
 
-1. Få åtkomst till innehållsmalllistan via **[!UICONTROL Content Management]** > **[!UICONTROL Content Templates]** och välj en e-postmall.
+1. Öppna listan med innehållsmallar via menyn **[!UICONTROL Content Management]** > **[!UICONTROL Content Templates]** och välj en e-postmall.
 
-1. Klicka **[!UICONTROL Edit content]** från **[!UICONTROL Template properties]**.
+1. Klicka på **[!UICONTROL Edit content]** i **[!UICONTROL Template properties]**.
 
-1. Klicka **[!UICONTROL Simulate Content]** och välj en testprofil för att kontrollera återgivningen. [Läs mer](../content-management/preview-test.md)
+1. Klicka på **[!UICONTROL Simulate Content]** och välj en testprofil för att kontrollera återgivningen. [Läs mer](../content-management/preview-test.md)
 
    ![](assets/content-template-stimulate.png)
 
 1. Du kan skicka ett bevis för att testa ditt innehåll och få det godkänt av vissa interna användare innan du använder det under en resa eller i en kampanj.
 
-   * Klicka på **[!UICONTROL Send proof]** och följer stegen som beskrivs i [det här avsnittet](../content-management/proofs.md).
+   * Om du vill göra det klickar du på knappen **[!UICONTROL Send proof]** och följer stegen som beskrivs i [det här avsnittet](../content-management/proofs.md).
 
-   * Innan du skickar korrekturet måste du välja [e-postyta](../configuration/channel-surfaces.md) som kommer att användas för att testa ditt innehåll.
+   * Innan du skickar korrekturet måste du markera den [e-postyta](../configuration/channel-surfaces.md) som ska användas för att testa ditt innehåll.
 
      ![](assets/content-template-stimulate-proof-surface.png)
 
 >[!CAUTION]
 >
->Spårning stöds för närvarande inte vid testning av mallar för e-postinnehåll, vilket innebär att spårningshändelser, UTM-parametrar och länkar på landningssidor inte kommer att vara effektiva i korrektur som skickas från en mall. Testa spårning [använda innehållsmallen](../email/use-email-templates.md) i ett mejl och [skicka ett bevis](../content-management/preview-test.md#send-proofs).
+>Spårning stöds för närvarande inte vid testning av mallar för e-postinnehåll, vilket innebär att spårningshändelser, UTM-parametrar och länkar på landningssidor inte kommer att vara effektiva i korrektur som skickas från en mall. Om du vill testa spårning [använder du innehållsmallen](../email/use-email-templates.md) i ett e-postmeddelande och [skickar ett korrektur](../content-management/preview-test.md#send-proofs).

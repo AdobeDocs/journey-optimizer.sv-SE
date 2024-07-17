@@ -34,7 +34,7 @@ På så sätt kan ni fatta datadrivna beslut för att optimera era era affärsm�
 
 I Adobe Journey Optimizer kan du testa idéer som:
 
-* **Subject line**: Vilka konsekvenser kan en ändring av tonen eller graden av personalisering av en ämnesrad få?
+* **Ämnesrad**: Vilken effekt kan en ändring av tonen eller graden av personalisering av en ämnesrad få?
 * **Meddelandeinnehåll**: Kommer en ändring av den visuella layouten för ett e-postmeddelande att resultera i fler klick på e-postmeddelandet?
 
 ## Hur fungerar innehållsexperimenten? {#content-experiment-work}
@@ -45,7 +45,7 @@ Innehållsexperiment i Adobe Journey Optimizer använder en pseudoslumpmässig h
 
 MumurHash3 32-bitarsalgoritmen används i detalj för att hash-koda användaridentitetssträngen till en av 10 000 bucket. I ett innehållsexperiment, där 50% av all trafik tilldelas till varje behandling, får användare som hamnar i bucket 1-5 000 den första behandlingen, medan användare i bucketerna 5 001-10 000 får den andra behandlingen. Eftersom pseudoslumpmässiga hashningar används kanske den delade besökaren inte är exakt 50-50, men delningen är ändå statistiskt likvärdig med måldelningsprocenten.
 
-Observera att du måste välja ett identitetsnamnutrymme som userId väljs från för slumpgenereringsalgoritmen när du konfigurerar varje kampanj med ett innehållsexperiment. Detta är oberoende av [körningsadresser](../configuration/primary-email-addresses.md).
+Observera att du måste välja ett identitetsnamnutrymme som userId väljs från för slumpgenereringsalgoritmen när du konfigurerar varje kampanj med ett innehållsexperiment. Detta är oberoende av [körningsadresserna](../configuration/primary-email-addresses.md).
 
 ### Datainsamling och -analys
 
@@ -119,19 +119,19 @@ Här följer några riktlinjer för hur du tolkar resultatet av din Content Expe
 
 Observera att en fullständig beskrivning av resultaten bör beakta alla tillgängliga bevis (dvs. urvalsstorlekar, konverteringsgrader, konfidensintervall osv.), och inte bara försäkran om att resultatet är slutgiltigt eller inte. Även om resultatet ännu inte är entydigt kan det ändå finnas övertygande bevis för att en behandling skiljer sig från en annan.
 
-Om du vill förstå statistiska beräkningar kan du läsa detta [page](../content-management/experiment-calculations.md).
+Mer information om statistiska beräkningar finns på [sidan](../content-management/experiment-calculations.md).
 
 ### 1. Jämför normaliserade värden {#normalized-metrics}
 
 När du jämför prestandan för två behandlingar bör du alltid jämföra normaliserade värden för att ta hänsyn till eventuella skillnader i antalet profiler som exponeras för varje behandling.
 
-Om experimentmålet till exempel är inställt på **[!UICONTROL Unique Opens]**, och en viss behandling visades till 10 000 profiler med 200 unika öppningar inspelade, så representerar detta **[!UICONTROL Conversion Rate]** av 2 %. För icke-unika mått, t.ex. opens-metriska, visas det normaliserade måttet som en **[!UICONTROL Count per Profile]**, medan det normaliserade måttet visas som en **[!UICONTROL Total per Profile]**.
+Om experimentmålet till exempel är **[!UICONTROL Unique Opens]** och en viss behandling visades till 10 000 profiler med 200 unika öppningar, representerar detta **[!UICONTROL Conversion Rate]** 2 %. För icke-unika mått, t.ex. Öppnar mätvärden, visas det normaliserade måttet som **[!UICONTROL Count per Profile]**, medan det normaliserade måttet visas som **[!UICONTROL Total per Profile]** för kontinuerliga mätvärden som Totalt pris.
 
 ### 2. Fokus på konfidensintervall {#confidence-intervals}
 
 När du experimenterar med prov på dina profiler, representerar den konverteringsgrad som observerats för en given behandling en uppskattning av den verkliga underliggande konverteringsgraden.
 
-Om till exempel Behandling A har en **[!UICONTROL Conversion Rate]** 3% medan behandling B har observerats **[!UICONTROL Conversion Rate]** 2 procent, är behandling A bättre än behandling B? För att svara på detta måste vi först kvantifiera osäkerheten i dessa observerade konverteringsgrader.
+Om till exempel Behandling A har **[!UICONTROL Conversion Rate]** på 3%, medan behandling B har observerats till **[!UICONTROL Conversion Rate]** på 2%, är behandling A en bättre prestation än behandling B? För att svara på detta måste vi först kvantifiera osäkerheten i dessa observerade konverteringsgrader.
 
 Konfidensintervall bidrar till att kvantifiera mängden osäkerhet i de uppskattade konverteringsgraden, men bredare konfidensintervall innebär större osäkerhet. När fler profiler läggs till i experimentet blir intervallen mindre, vilket ger en mer exakt uppskattning. Konfidensintervallet representerar ett intervall av konverteringsgrader som är kompatibla med observerade data.
 
@@ -141,11 +141,11 @@ Adobe använder 95 % Anytime Valid Confidence Intervals, eller Confidence Sequen
 
 ### 3. Förstå Lyft {#understand-lift}
 
-Sammanfattningen av expertrapporten visar **[!UICONTROL Lift over Baseline]**, vilket är ett mått på den procentuella förbättringen av konverteringsgraden för en given behandling jämfört med baslinjen. Definierat exakt är det skillnaden i prestanda mellan en given behandling och baslinjen, dividerat med baslinjens prestanda, uttryckt i procent.
+Sammanfattningen av experimentrapporten visar **[!UICONTROL Lift over Baseline]**, vilket är ett mått på den procentuella förbättringen av konverteringsgraden för en given behandling över baslinjen. Definierat exakt är det skillnaden i prestanda mellan en given behandling och baslinjen, dividerat med baslinjens prestanda, uttryckt i procent.
 
 ### 3. Förstå förtroende {#understand-confidence}
 
-Du bör fokusera på **[!UICONTROL Confidence interval]** För varje behandlingsstart visar Adobe också förtroendet, vilket är ett sannolikhetsmått på hur mycket det finns belägg för att en viss behandling är densamma som ursprungsbehandlingen. Ett högre konfidensintervall tyder på att det inte finns tillräckligt med belägg för antagandet att behandlingar före och efter utgångsvärdet har samma resultat. Mer exakt är den säkerhet som visas en sannolikhet (uttryckt i procent) att vi skulle ha observerat en mindre skillnad i konverteringsgraden mellan en viss behandling och baslinjen, om det i själva verket inte finns någon skillnad i den verkliga underliggande konverteringsgraden. När det gäller p-värden är den konfidensnivå som visas 1 - p-värde.
+Även om du i första hand bör fokusera på **[!UICONTROL Confidence interval]** för utförandet av varje behandling, så visar Adobe också förtroendet, vilket är ett sannolikhetsmått på hur mycket det finns belägg för att en viss behandling är densamma som basbehandlingen. Ett högre konfidensintervall tyder på att det inte finns tillräckligt med belägg för antagandet att behandlingar före och efter utgångsvärdet har samma resultat. Mer exakt är den säkerhet som visas en sannolikhet (uttryckt i procent) att vi skulle ha observerat en mindre skillnad i konverteringsgraden mellan en viss behandling och baslinjen, om det i själva verket inte finns någon skillnad i den verkliga underliggande konverteringsgraden. När det gäller p-värden är den konfidensnivå som visas 1 - p-värde.
 
 Adobe använder &quot;Anytime Valid&quot; Confidence, och &quot;Anytime Valid&quot; p-värden som överensstämmer med de Confidence Sequences som beskrivs ovan.
 
@@ -159,7 +159,7 @@ Adobe förklarar att en expert är entydig när förtroendet är över 95 %.
 
 När du har kört din Experiment finns det flera möjliga uppföljningsåtgärder:
 
-* **Skapa vinnande idéer**
+* **Distribuera vinnande idéer**
 
   Med ett entydigt resultat kan ni ta fram denna vinnande idé, antingen genom att erbjuda alla era kunder den bästa behandlingen, eller genom att skapa nya kampanjer där strukturen för den bästa behandlingen replikeras.
   </br>Observera att det som fungerar bra på en gång kanske inte fungerar bra senare i en dynamisk miljö.
@@ -170,7 +170,7 @@ När du har kört din Experiment finns det flera möjliga uppföljningsåtgärde
 
   Om den hypotes du testade fortfarande är relevant, kan det vara bäst att göra ett uppföljningstest på en större eller annan publik, eller att ändra behandlingarna så att det finns tydligare skillnader.
 
-* **Gör djupare analyser**
+* **Gör djupgående analyser**
 
   Den behandling som fungerar bra för en viss målgrupp kanske inte är den bästa behandlingen för en annan målgrupp. Genom att göra djupare analyser av hur behandlingar fungerar för olika målgrupper kan du generera idéer för nya tester.
 

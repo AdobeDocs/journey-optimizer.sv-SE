@@ -29,33 +29,33 @@ Händelser, samordning och åtgärder har en särskild roll och plats i processe
 
 ## Kom igång med resedesign {#gs-journey-design}
 
-The **palett** finns till vänster på skärmen. Alla tillgängliga aktiviteter är sorterade i flera kategorier: [Händelser](#jo-event), [Orchestration](#jo-orch) och [Åtgärder](#jo-actions). Du kan expandera/komprimera de olika kategorierna genom att klicka på deras namn. Om du vill använda en aktivitet på din resa drar och släpper du den från paletten till arbetsytan.
+**Paletten** finns till vänster på skärmen. Alla tillgängliga aktiviteter sorteras i flera kategorier: [Händelser](#jo-event), [Orchestration](#jo-orch) och [Åtgärder](#jo-actions). Du kan expandera/komprimera de olika kategorierna genom att klicka på deras namn. Om du vill använda en aktivitet på din resa drar och släpper du den från paletten till arbetsytan.
 
 När du påbörjar en ny resa döljs element som inte kan släppas på arbetsytan som det första steget. Detta gäller alla åtgärder, villkorsaktiviteten, väntetiden och reaktionen.
 
 ![](assets/journey38.png)
 
-The **[!UICONTROL Filter items]** -ikonen i det övre vänstra hörnet kan du visa följande filter:
+Med ikonen **[!UICONTROL Filter items]** i det övre vänstra hörnet kan du visa följande filter:
 
-* **Visa endast tillgängliga objekt**: dölj eller visa otillgängliga element på paletten, t.ex. händelser som använder ett annat namnutrymme än de som används under din resa. Som standard är otillgängliga objekt dolda. Om du väljer att visa dem visas de som nedtonade.
+* **Visa endast tillgängliga objekt**: dölj eller visa otillgängliga element på paletten, till exempel händelser som använder ett annat namnutrymme än de som används under din resa. Som standard är otillgängliga objekt dolda. Om du väljer att visa dem visas de som nedtonade.
 
-* **Visa endast senaste objekt**: det här filtret gör att du bara kan visa de fem senast använda händelserna och åtgärderna, förutom de som är färdiga. Detta är specifikt för varje användare. Som standard visas alla objekt.
+* **Visa endast de senaste objekten**: med det här filtret kan du bara visa de fem senast använda händelserna och åtgärderna, förutom de som är klara att användas. Detta är specifikt för varje användare. Som standard visas alla objekt.
 
-Du kan också använda **[!UICONTROL Search]** fält. Endast händelser och åtgärder filtreras.
+Du kan också använda fältet **[!UICONTROL Search]**. Endast händelser och åtgärder filtreras.
 
-The **arbetsyta** är den centrala zonen i resedesignern. Det är i den här zonen som du kan släppa dina aktiviteter och konfigurera dem. Klicka på en aktivitet på arbetsytan för att konfigurera den. Aktivitetskonfigurationsrutan öppnas till höger.
+**Arbetsytan** är den centrala zonen i resedesignern. Det är i den här zonen som du kan släppa dina aktiviteter och konfigurera dem. Klicka på en aktivitet på arbetsytan för att konfigurera den. Aktivitetskonfigurationsrutan öppnas till höger.
 
 ![](assets/journey39.png)
 
-The **verktygsfält**, som finns i det övre högra hörnet av arbetsytan, gör att du kan visa/dölja stödrastret, zooma in/ut och hämta en skärmbild av arbetsytan. Se det här [section](../building-journeys/journey-properties.md#timeout_and_error).
+Med **verktygsfältet**, som finns i det övre högra hörnet av arbetsytan, kan du visa/dölja stödrastret, zooma in/ut och hämta en skärmbild av arbetsytan. Se [avsnittet](../building-journeys/journey-properties.md#timeout_and_error).
 
 <!--and show/hide timeout and error paths-->
 
 ![](assets/toolbar.png){width="70%" align="left"}
 
-The **aktivitetskonfigurationsruta** visas när du klickar på en aktivitet på paletten. Fyll i obligatoriska fält. Klicka på **[!UICONTROL Delete]** -ikonen för att ta bort aktiviteten. Klicka **[!UICONTROL Cancel]** för att avbryta ändringarna eller **[!UICONTROL Ok]** för att bekräfta. Om du vill ta bort aktiviteter kan du även markera en aktivitet (eller flera) och trycka på backstegstangenten. Om du trycker på Esc-tangenten stängs aktivitetskonfigurationsrutan.
+**Aktivitetskonfigurationsrutan** visas när du klickar på en aktivitet på paletten. Fyll i obligatoriska fält. Klicka på ikonen **[!UICONTROL Delete]** för att ta bort aktiviteten. Klicka på **[!UICONTROL Cancel]** om du vill avbryta ändringarna eller på **[!UICONTROL Ok]** om du vill bekräfta. Om du vill ta bort aktiviteter kan du även markera en aktivitet (eller flera) och trycka på backstegstangenten. Om du trycker på Esc-tangenten stängs aktivitetskonfigurationsrutan.
 
-Som standard är skrivskyddade fält dolda. Om du vill visa skrivskyddade fält klickar du på **Visa skrivskyddade fält** ikonen längst upp till vänster i aktivitetskonfigurationsrutan. Denna inställning gäller för alla aktiviteter på alla resor.
+Som standard är skrivskyddade fält dolda. Om du vill visa skrivskyddade fält klickar du på ikonen **Visa skrivskyddade fält** längst upp till vänster i aktivitetskonfigurationsrutan. Denna inställning gäller för alla aktiviteter på alla resor.
 
 ![](assets/journey59bis.png)
 
@@ -67,9 +67,9 @@ Beroende på resans status kan du utföra olika åtgärder under resan med hjäl
 
 När du utformar din resa är den första frågan du vill ställa hur profiler kommer in på resan. Det finns två möjligheter:
 
-1. **Börja med en händelse**: när en resa är inställd på att avlyssna händelser, kommer individer in på resan **unitärt** i realtid. Meddelanden som ingår i din resa skickas till den person som för tillfället är på väg in på resan. [Läs mer om evenemang](../event/about-events.md)
+1. **Börja med en händelse**: När en resa är inställd på att lyssna på händelser, kommer individer in på resan **unitally** i realtid. Meddelanden som ingår i din resa skickas till den person som för tillfället är på väg in på resan. [Läs mer om händelser](../event/about-events.md)
 
-1. **Börja med en läspublik**: ni kan göra er resa för att lyssna på Adobe Experience Platform målgrupper. I det här fallet kommer alla personer som tillhör den angivna målgruppen in på resan. Meddelanden som ingår i din resa skickas till personer som tillhör målgruppen. Läs mer om [läs målgrupp](read-audience.md).
+1. **Börja med en läs målgrupp**: du kan ange att din resa ska lyssna på Adobe Experience Platform målgrupper. I det här fallet kommer alla personer som tillhör den angivna målgruppen in på resan. Meddelanden som ingår i din resa skickas till personer som tillhör målgruppen. Läs mer om [läsmålgruppen](read-audience.md).
 
 ## Definiera nästa steg{#define-next-steps}
 
@@ -81,17 +81,17 @@ Det är händelser som utlöser en personaliserad resa, till exempel ett onlinek
 
 När du påbörjar en resa med en händelse aktiveras resan när händelsen tas emot. Varje person på resan följer sedan, individuellt, de steg som definieras på din resa.
 
-Du kan lägga till **flera händelser** under resan, så länge de använder samma namnutrymme. Händelser konfigureras i förväg. [Läs mer om reseevenemang](about-journey-activities.md#event-activities)
+Du kan lägga till **flera händelser** under din resa, så länge de använder samma namnutrymme. Händelser konfigureras i förväg. [Läs mer om resehändelser](about-journey-activities.md#event-activities)
 
-Du kan också lägga till en **Reaktion** händelse efter ett meddelande om att reagera på spårningsdata som är relaterade till meddelandet. Detta gör att du till exempel kan skicka ett till meddelande om personen öppnade det föregående meddelandet eller klickade i det. [Läs mer om reaktionshändelser](reaction-events.md).
+Du kan också lägga till en **Reaction** -händelse efter ett meddelande för att reagera på spårningsdata som är relaterade till meddelandet. Detta gör att du till exempel kan skicka ett till meddelande om personen öppnade det föregående meddelandet eller klickade i det. [Läs mer om reaktionshändelser](reaction-events.md).
 
-Använd **Målgruppskvalifikation** Evenemangsaktiviteter som får enskilda att komma in på eller gå framåt i en resa baserat på Adobe Experience Platform entréer och utgångar. Ni kan få alla nya silverkunder att delta i en resa och skicka personaliserade meddelanden. Läs mer om detta [section](audience-qualification-events.md).
+Använd aktiviteten **Målgruppskvalificering** för att få enskilda personer att komma in på eller gå framåt i en resa baserat på Adobe Experience Platform målgruppsinkomster och utträden. Ni kan få alla nya silverkunder att delta i en resa och skicka personaliserade meddelanden. Läs mer i det här [avsnittet](audience-qualification-events.md).
 
 ### Orchestration{#jo-orch}
 
 Orchestration-aktiviteter är olika villkor som hjälper till att bestämma nästa steg i resan.
 
-I orkestreringsaktiviteterna använder du **Läs målgrupp** för att få din resa att lyssna på en Adobe Experience Platform-publik. [Läs mer om aktiviteten Läs målgrupp](read-audience.md).
+Använd aktiviteten **Läs målgrupp** från orkestreringsaktiviteterna för att ange din resa för att lyssna på en Adobe Experience Platform-målgrupp. [Läs mer om aktiviteten Läs målgrupp](read-audience.md).
 
 Med de andra aktiviteterna kan du lägga till villkor för din resa för att definiera flera olika vägar, ange en väntetid innan nästa aktivitet utförs eller avsluta din resa. [Läs mer om orkestreringsaktiviteter](about-journey-activities.md#orchestration-activities).
 
@@ -99,15 +99,15 @@ Med de andra aktiviteterna kan du lägga till villkor för din resa för att def
 
 Åtgärder är vad du vill ska hända som ett resultat av någon typ av utlösare, som att skicka ett meddelande. Det är den del av resan som kundupplevelsen innebär. Det kan vara ett e-postmeddelande, SMS eller push-meddelande eller en åtgärd från tredje part, som ett Slack-meddelande.
 
-Med kanalåtgärdsaktiviteterna kan du inkludera ett meddelande som är utformat i [!DNL Journey Optimizer]. [Läs mer om kanalaktiviteter](journeys-message.md)
+Med kanalåtgärdsaktiviteterna kan du inkludera ett meddelande som är utformat i [!DNL Journey Optimizer]. [Läs mer om kanalåtgärdsaktiviteter](journeys-message.md)
 
 Använd anpassade åtgärder från åtgärdsaktiviteterna för att skicka meddelanden med tredjepartssystem. [Läs mer om anpassade åtgärder](about-journey-activities.md#action-activities).
 
 ## Lägg till alternativa banor{#paths}
 
-Du kan definiera en reservåtgärd om ett fel uppstår eller tidsgränsen överskrids för följande reseaktiviteter: **[!UICONTROL Condition]** och **[!UICONTROL Action]**.
+Du kan definiera en reservåtgärd om ett fel eller en timeout inträffar för följande reseaktiviteter: **[!UICONTROL Condition]** och **[!UICONTROL Action]**.
 
-Om du vill lägga till en reservåtgärd för en aktivitet väljer du **[!UICONTROL Add an alternative path in case of a timeout or an error]** i aktivitetsegenskaperna: en annan sökväg läggs till efter aktiviteten. Tidsgränsen definieras av administratörsanvändare i [egenskaper för resa](../building-journeys/journey-properties.md). Om det t.ex. tar för lång tid att skicka ett e-postmeddelande eller om ett fel uppstår, kan du välja att skicka ett push-meddelande.
+Om du vill lägga till en reservåtgärd för en aktivitet markerar du rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]** i aktivitetsegenskaperna: en annan sökväg läggs till efter aktiviteten. Tidsgränsen har definierats av Admin-användare i [reseegenskaperna](../building-journeys/journey-properties.md). Om det t.ex. tar för lång tid att skicka ett e-postmeddelande eller om ett fel uppstår, kan du välja att skicka ett push-meddelande.
 
 ![](assets/journey42.png)
 
@@ -115,7 +115,7 @@ Med olika aktiviteter (händelse, åtgärd, vänta) kan du lägga till flera sö
 
 När du lyssnar på en händelse rekommenderar vi att du inte väntar på händelsen i oändlighet. Det är inte obligatoriskt, bara en god praxis. Om du bara vill lyssna på en eller flera händelser under en viss tid, placerar du en eller flera händelser och en vänteaktivitet parallellt. Se [det här avsnittet](../building-journeys/general-events.md#events-specific-time).
 
-Om du vill ta bort banan placerar du markören på den och klickar på **[!UICONTROL Delete path]** -ikon.
+Om du vill ta bort banan placerar du markören på den och klickar på ikonen **[!UICONTROL Delete path]**.
 
 ![](assets/journey42ter.png)
 
@@ -139,10 +139,10 @@ Du kan kopiera en eller flera aktiviteter under en resa och klistra in dem antin
 Så här kopierar/klistrar du in aktiviteter:
 
 1. Öppna en resa.
-1. Välj de aktiviteter du vill kopiera genom att flytta musen medan du klickar. Du kan också klicka på varje aktivitet samtidigt som du trycker på **Ctrl/Kommando** -tangenten. Använd **Ctrl/Kommando + A** om du vill markera alla aktiviteter.
+1. Välj de aktiviteter du vill kopiera genom att flytta musen medan du klickar. Du kan också klicka på varje aktivitet samtidigt som du trycker på tangenten **Ctrl/Kommando**. Använd **Ctrl/Cmd + A** om du vill markera alla aktiviteter.
    ![](assets/copy-paste1.png)
-1. Tryck **Ctrl/Kommando + C**.
-Om du bara vill kopiera en aktivitet kan du klicka på den och använda **Kopiera** ikonen i det övre vänstra hörnet i aktivitetskonfigurationsfönstret.
+1. Tryck på **Ctrl/Kommando + C**.
+Om du bara vill kopiera en aktivitet kan du klicka på den och använda ikonen **Kopiera** längst upp till vänster i aktivitetskonfigurationsrutan.
    ![](assets/copy-paste2.png)
-1. Under alla resor, tryck **Ctrl/Kommando + V** om du vill klistra in aktiviteterna utan att länka dem till en befintlig nod. Inklistrade aktiviteter placeras i samma ordning. När du har klistrat in aktiviteter förblir de markerade så att du enkelt kan flytta dem. Du kan också placera markören på en tom platshållare och trycka på **Ctrl/Kommando + V**. Inklistrade aktiviteter länkas till noden.
+1. Tryck på **Ctrl/Cmd + V** för att klistra in aktiviteterna utan att länka dem till en befintlig nod. Inklistrade aktiviteter placeras i samma ordning. När du har klistrat in aktiviteter förblir de markerade så att du enkelt kan flytta dem. Du kan också placera markören på en tom platshållare och trycka på **Ctrl/Kommando + V**. Inklistrade aktiviteter länkas till noden.
    ![](assets/copy-paste3.png)

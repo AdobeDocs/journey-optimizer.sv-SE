@@ -18,20 +18,20 @@ ht-degree: 1%
 
 # Utforma innehållet på landningssidan {#design-lp}
 
-Börja skapa innehåll för landningen [primär sida](create-lp.md#configure-primary-page) eller [undersida](create-lp.md#configure-subpages)håller du muspekaren över sidinnehållet och klickar **[!UICONTROL Open Designer]**. Du kan också klicka på motsvarande knapp på den högra paletten.
+Om du vill börja skapa innehåll för din [primära sida](create-lp.md#configure-primary-page) eller [undersida](create-lp.md#configure-subpages) för du muspekaren över sidinnehållet och klickar på **[!UICONTROL Open Designer]**. Du kan också klicka på motsvarande knapp på den högra paletten.
 
 ![](assets/lp_open-designer.png)
 
 Därifrån kan man
 
-* **Designa din landningssida från grunden** genom innehållsdesignerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets](../content-management/assets.md). Lär dig hur du utformar innehåll <!--or use built-in templates--> [i det här avsnittet](../email/content-from-scratch.md).
+* **Utforma landningssidan från grunden** via innehållsdesignerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets](../content-management/assets.md). Lär dig hur du utformar ditt innehåll <!--or use built-in templates--> [i det här avsnittet](../email/content-from-scratch.md).
 
-* **Kod eller klistra in Raw HTML** direkt in i innehållsdesignern. Lär dig koda eget innehåll [i det här avsnittet](../email/code-content.md).
+* **Kod eller klistra in Raw-HTML** direkt i innehållsdesignern. Lär dig hur du kodar ditt eget innehåll [i det här avsnittet](../email/code-content.md).
 
-* **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig hur du importerar innehåll [i det här avsnittet](../email/existing-content.md).
+* **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig hur du importerar innehåll [ i det här avsnittet](../email/existing-content.md).
 
-* **Använda en sparad landningssidmall** som [!DNL Journey Optimizer]. [Läs mer](lp-templates.md)
+* **Använd en sparad landningssidmall** som skapats i [!DNL Journey Optimizer]. [Läs mer](lp-templates.md)
 
 >[!NOTE]
 >
->Innehållsdesignern för landningssidan liknar oftast e-postdesignern. Läs mer på [designa innehåll med [!DNL Journey Optimizer]](../email/get-started-email-design.md).
+>Innehållsdesignern för landningssidan liknar oftast e-postdesignern. Läs mer om [att utforma innehåll med  [!DNL Journey Optimizer]](../email/get-started-email-design.md).

@@ -41,7 +41,7 @@ Med begränsningar kan du definiera villkoren för hur ett erbjudande ska visas.
 
    ![](../assets/offer-eligibility.png)
 
-1. Definiera **[!UICONTROL Priority]** av erbjudandet jämfört med andra, om användaren kvalificerar sig för mer än ett erbjudande. Ju högre prioritet ett erbjudande har, desto högre blir prioriteringen jämfört med andra erbjudanden.
+1. Definiera **[!UICONTROL Priority]** för erbjudandet jämfört med andra om användaren kvalificerar för mer än ett erbjudande. Ju högre prioritet ett erbjudande har, desto högre blir prioriteringen jämfört med andra erbjudanden.
 
    ![](../assets/offer-priority.png)
 
@@ -49,11 +49,11 @@ Med begränsningar kan du definiera villkoren för hur ett erbjudande ska visas.
    >
    >Erbjudandeprioriteten måste vara ett heltalsvärde (inga decimaler).
 
-1. Ange erbjudandets **[!UICONTROL Capping]**, vilket innebär hur många gånger erbjudandet kommer att presenteras. [Läs mer](#capping)
+1. Ange erbjudandets **[!UICONTROL Capping]**, vilket innebär det antal gånger som erbjudandet kommer att presenteras. [Läs mer](#capping)
 
    ![](../assets/offer-capping.png)
 
-1. Klicka **[!UICONTROL Next]** för att bekräfta alla begränsningar som du har definierat.
+1. Klicka på **[!UICONTROL Next]** för att bekräfta alla begränsningar som du har definierat.
 
 Om du till exempel anger följande begränsningar:
 
@@ -74,38 +74,38 @@ Om du till exempel anger följande begränsningar:
 >id="od_offer_eligibility"
 >title="Om rätt att köpa"
 >abstract="I det här avsnittet kan du använda beslutsregler för att avgöra vilka användare som är berättigade till erbjudandet."
->additional-url="https://video.tv.adobe.com/v/329373" text="Titta på filmen"
+>additional-url="https://video.tv.adobe.com/v/329373" text="Se demovideon"
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_total_profile_estimate"
 >title="Total profiluppskattning"
 >abstract="När du väljer målgrupper eller beslutsregler kan du se information om de uppskattade kvalificerade profilerna."
 
-The **[!UICONTROL Offer eligibility]** kan ni begränsa erbjudandet till specifika profiler som ni definierar med hjälp av målgrupper eller beslutsregler.
+I avsnittet **[!UICONTROL Offer eligibility]** kan du begränsa erbjudandet till specifika profiler som du definierar med hjälp av målgrupper eller beslutsregler.
 
 >[!NOTE]
 >
->Läs mer om hur du använder **målgrupper** kontra **beslutsregler** in [det här avsnittet](#segments-vs-decision-rules).
+>Läs mer om hur du använder **målgrupper** jämfört med **beslutsregler** i [det här avsnittet](#segments-vs-decision-rules).
 
-* Som standard är **[!UICONTROL All visitors]** är valt, vilket innebär att alla profiler är berättigade att presenteras erbjudandet.
+* Som standard är alternativet **[!UICONTROL All visitors]** valt, vilket innebär att alla profiler är berättigade att presenteras erbjudandet.
 
   ![](../assets/offer-eligibility-default.png)
 
-* Du kan även begränsa presentationen av erbjudandet till medlemmarna i en eller flera [Adobe Experience Platform målgrupper](../../audience/about-audiences.md).
+* Du kan också begränsa hur erbjudandet visas för medlemmar i en eller flera [Adobe Experience Platform-målgrupper](../../audience/about-audiences.md).
 
-  Aktivera **[!UICONTROL Visitors who fall into one or multiple audiences]** lägg sedan till en eller flera målgrupper från den vänstra rutan och kombinera dem med **[!UICONTROL And]** / **[!UICONTROL Or]** logiska operatorer.
+  Aktivera alternativet **[!UICONTROL Visitors who fall into one or multiple audiences]** och lägg sedan till en eller flera målgrupper från den vänstra rutan och kombinera dem med de logiska operatorerna **[!UICONTROL And]** / **[!UICONTROL Or]**.
 
   ![](../assets/offer-eligibility-segment.png)
 
-* Om du vill associera en viss [beslutsregel](../offer-library/creating-decision-rules.md) till erbjudandet väljer du **[!UICONTROL By defined decision rule]** och sedan dra den önskade regeln från den vänstra rutan till **[!UICONTROL Decision rule]** område.
+* Om du vill koppla en specifik [beslutsregel](../offer-library/creating-decision-rules.md) till erbjudandet väljer du **[!UICONTROL By defined decision rule]** och drar sedan önskad regel från den vänstra rutan till **[!UICONTROL Decision rule]**-området.
 
   ![](../assets/offer-rule.png)
 
   >[!CAUTION]
   >
-  >Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [event](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#events){target="_blank"}, kommer du inte att kunna utnyttja erbjudandet.
+  >Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [händelse](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#events){target="_blank"} kan du inte utnyttja den i ett erbjudande.
 
-När du väljer målgrupper eller beslutsregler kan du se information om de uppskattade kvalificerade profilerna. Klicka **[!UICONTROL Refresh]** för att uppdatera data.
+När du väljer målgrupper eller beslutsregler kan du se information om de uppskattade kvalificerade profilerna. Klicka på **[!UICONTROL Refresh]** för att uppdatera data.
 
 ![](../assets/offer-eligibility-segment-estimate.png)
 
@@ -115,11 +115,11 @@ När du väljer målgrupper eller beslutsregler kan du se information om de upps
 
 ### Använda målgrupper och beslutsregler {#segments-vs-decision-rules}
 
-Om du vill tillämpa en begränsning kan du begränsa urvalet av erbjudanden till medlemmarna i en eller flera **Adobe Experience Platform målgrupper** eller så kan du använda en **beslutsregel**, båda lösningarna motsvarar olika användningsområden.
+Om du vill tillämpa en begränsning kan du begränsa urvalet av erbjudanden till medlemmarna i en eller flera **Adobe Experience Platform-målgrupper**, eller så kan du använda en **beslutsregel** som båda lösningarna motsvarar olika användningar.
 
 En målgrupps utdata är i princip en lista med profiler, medan en beslutsregel är en funktion som körs på begäran mot en enskild profil under beslutsprocessen. Skillnaden mellan dessa två användningar beskrivs nedan.
 
-* **Målgrupper**
+* **Publiker**
 
   Å ena sidan är målgrupperna en grupp Adobe Experience Platform-profiler som matchar en viss logik baserat på profilattribut och upplevelsehändelser. Erbjudandehanteringen innebär dock inte att publiken beräknas om, vilket kanske inte är aktuellt när erbjudandet presenteras.
 
@@ -146,21 +146,21 @@ En målgrupps utdata är i princip en lista med profiler, medan en beslutsregel 
 
 Begränsning används som en begränsning för att definiera det maximala antal gånger ett erbjudande kan presenteras. Genom att begränsa antalet gånger användarna får specifika erbjudanden kan ni undvika att överdriva era kunder och därmed optimera varje kontaktyta med det bästa erbjudandet.
 
-Du kan lägga till upp till 10 regler för ett visst erbjudande. Klicka på knappen **[!UICONTROL Create capping]** följer du stegen nedan:
+Du kan lägga till upp till 10 regler för ett visst erbjudande. Klicka på knappen **[!UICONTROL Create capping]** och följ sedan stegen nedan för att ange en begränsningsregel:
 
 >[!CAUTION]
 >
 >Det går inte att aktivera eller inaktivera frekvensbegränsning för tidigare skapade erbjudanden. För att göra det måste ni skapa ett nytt erbjudande.
 
-1. Definiera vilken **[!UICONTROL Capping event]** beaktas för att öka räknaren. [Läs mer](#capping-event)
+1. Ange vilken **[!UICONTROL Capping event]** som ska beaktas för att öka räknaren. [Läs mer](#capping-event)
 
 1. Välj om du vill att appningen ska användas för alla användare eller bara för en profil. [Läs mer](#capping-type)
 
 1. Ange hur många gånger erbjudandet kan presenteras. [Läs mer](#capping-count)
 
-1. Ange **[!UICONTROL Frequency]** för att definiera hur ofta antalet capping återställs. [Läs mer](#frequency-capping)
+1. Ange **[!UICONTROL Frequency]** för att definiera hur ofta antalet fästingar återställs. [Läs mer](#frequency-capping)
 
-1. Om du har definierat flera [representationer](add-representations.md) för ditt erbjudande, ange om du vill tillämpa begränsning **över alla placeringar** eller **till varje placering**. [Läs mer](#placements)
+1. Om du har definierat flera [representationer](add-representations.md) för ditt erbjudande anger du om du vill tillämpa begränsning **för alla placeringar** eller **för varje placering**. [Läs mer](#placements)
 
 1. När erbjudandet har sparats och godkänts, och om det har angetts det antal gånger som du har angett i det här fältet enligt villkoren och tidsramen som du definierade, upphör leveransen.
 
@@ -179,7 +179,7 @@ Det antal gånger ett erbjudande föreslås beräknas vid e-postförberedelsen. 
 >title="Impression"
 >abstract="Användningen av visningar som capping-händelser är endast tillgänglig för inkommande kanaler."
 
-The **[!UICONTROL Choose capping event]** kan du definiera vilken händelse som ska beaktas för att öka räknaren:
+I fältet **[!UICONTROL Choose capping event]** kan du definiera vilken händelse som ska beaktas för att öka räknaren:
 
 ![](../assets/offer-capping-event.png)
 
@@ -189,23 +189,23 @@ The **[!UICONTROL Choose capping event]** kan du definiera vilken händelse som 
 
   >[!NOTE]
   >
-  >Användning av visningar när capping-händelser är tillgängliga för **inkommande kanaler** endast.
+  >Användningen av visningar som capping-händelser är endast tillgänglig för **inkommande kanaler**.
 
-* **[!UICONTROL Custom event]**: Du kan definiera en anpassad händelse som ska användas för att begränsa antalet erbjudanden som skickas. Du kan t.ex. sätta ett tak för antalet inlösen tills de är lika med 10000 eller tills en viss profil har lösts in 1 gång. Om du vill göra det använder du [Adobe Experience Platform XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"} scheman för att skapa en anpassad händelseregel.
+* **[!UICONTROL Custom event]**: Du kan definiera en anpassad händelse som ska användas för att begränsa antalet erbjudanden som skickas. Du kan t.ex. sätta ett tak för antalet inlösen tills de är lika med 10000 eller tills en viss profil har lösts in 1 gång. Använd [Adobe Experience Platform XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}-scheman för att skapa en anpassad händelseregel.
 
   <!--For example, you can cap on the number of redemptions so that the offer can be shown until redemptions equal 10000. You can only select XDM ExperienceEvents. -->
 
   I exemplet nedan vill du ha en övre gräns för antalet utcheckningar.
 
-   1. Välj **[!UICONTROL Custom event]** i listan och använd **[!UICONTROL Add custom event]** -knappen.
+   1. Välj **[!UICONTROL Custom event]** i listan och använd knappen **[!UICONTROL Add custom event]**.
 
-   1. Använd **[!UICONTROL Create custom event rules]** builder för att välja den relevanta händelsen. Du kan välja vilken användaråtgärd som helst som du vill sätta på erbjudandet.
+   1. Använd **[!UICONTROL Create custom event rules]**-verktyget för att välja den relevanta händelsen. Du kan välja vilken användaråtgärd som helst som du vill sätta på erbjudandet.
 
-      Här väljer du **[!UICONTROL Commerce]** > **[!UICONTROL Checkouts]** > **[!UICONTROL Value]** och markera **[!UICONTROL exists]** i listrutan.
+      Välj **[!UICONTROL Commerce]** > **[!UICONTROL Checkouts]** > **[!UICONTROL Value]** och välj **[!UICONTROL exists]** i listrutan.
 
       ![](../assets/offer-capping-custom-event.png)
 
-   1. När regeln har skapats visas den i **[!UICONTROL Custom event query]** fält.
+   1. När regeln har skapats visas den i fältet **[!UICONTROL Custom event query]**.
 
       ![](../assets/offer-capping-custom-event-query.png)
 
@@ -221,17 +221,17 @@ Du kan ange om du vill att appen ska användas för alla användare eller för e
 
 ![](../assets/offer-capping-total.png)
 
-* Välj **[!UICONTROL In total]** för att definiera hur många gånger ett erbjudande kan föreslås för den kombinerade målgruppen, vilket betyder för alla användare.
+* Välj **[!UICONTROL In total]** om du vill definiera hur många gånger ett erbjudande kan föreslås för den kombinerade målgruppen, vilket innebär för alla användare.
 
   Om du till exempel är en återförsäljare av elektronikprodukter och har en &quot;TV-affär&quot; vill du att erbjudandet bara ska returneras 200 gånger för alla profiler.
 
-* Välj **[!UICONTROL Per profile]** för att definiera hur många gånger ett erbjudande kan erbjudas en och samma användare.
+* Välj **[!UICONTROL Per profile]** om du vill definiera hur många gånger ett erbjudande kan föreslås för samma användare.
 
   Om du till exempel är en bank med ett Platinum-kreditkortserbjudande vill du inte att det här erbjudandet ska visas mer än fem gånger per profil. Ni tror faktiskt att om användaren har sett erbjudandet fem gånger och inte har följt det, har de större chans att agera på nästa bästa erbjudande.
 
 ### Antal tak {#capping-count}
 
-The **[!UICONTROL Capping count limit]** kan du ange hur många gånger erbjudandet kan presenteras.
+I fältet **[!UICONTROL Capping count limit]** kan du ange hur många gånger erbjudandet kan presenteras.
 
 ![](../assets/offer-capping-times.png)
 
@@ -239,7 +239,7 @@ The **[!UICONTROL Capping count limit]** kan du ange hur många gånger erbjudan
 >
 >Talet måste vara ett heltal större än 0.
 
-Du har till exempel definierat en anpassad capping-händelse som antalet utcheckningar som ska beaktas. Om du anger 10 i dialogrutan **[!UICONTROL Capping count limit]** inga fler erbjudanden skickas efter 10 utcheckningar.
+Du har till exempel definierat en anpassad capping-händelse som antalet utcheckningar som ska beaktas. Om du anger 10 i fältet **[!UICONTROL Capping count limit]** skickas inga fler erbjudanden efter 10 utcheckningar.
 
 ### Frekvensbegränsning {#frequency-capping}
 
@@ -248,26 +248,26 @@ Du har till exempel definierat en anpassad capping-händelse som antalet utcheck
 >title="Ange takfrekvens"
 >abstract="Du kan välja att återställa antalet erbjudanden per dag, vecka eller månad. Observera att när du har publicerat erbjudandet med frekvensbegränsning aktiverat kan du inte ändra den frekvens som har definierats."
 
-The **[!UICONTROL Reset capping frequency]** I kan du definiera hur ofta antalet capping återställs. Om du vill göra det anger du tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och anger hur många dagar/veckor/månader du vill ha. Om du till exempel vill att antalet fästingar ska återställas varannan vecka väljer du **[!UICONTROL Weekly]** från motsvarande nedrullningsbar lista och typ **2** i det andra fältet.
+I fältet **[!UICONTROL Reset capping frequency]** kan du definiera hur ofta antalet appningar återställs. Om du vill göra det anger du tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och anger hur många dagar/veckor/månader du vill ha. Om du till exempel vill att antalet capping ska återställas varannan vecka, väljer du **[!UICONTROL Weekly]** i motsvarande listruta och skriver **** i det andra fältet.
 
 ![](../assets/offer-capping-frequency.png)
 
 >[!NOTE]
 >
->Räknaren för frekvensbegränsning återställs på **12 am UTC**, den dag du definierade eller den första dagen i veckan/månaden, om tillämpligt. Veckostartdagen är **söndag**. Den längd du väljer får inte överskrida **2 år** (dvs. motsvarande antal månader, veckor eller dagar).
+>Räknaren för frekvensbegränsning återställs kl. **12 UTC**, den dag du definierade eller den första dagen i veckan/månaden, om tillämpligt. Veckostartdagen är **Söndag**. En varaktighet som du väljer får inte vara längre än **2 år** (d.v.s. motsvarande antal månader, veckor eller dagar).
 >
->När du har publicerat ditt erbjudande kan du inte ändra den tidsperiod (månadsvis, veckovis eller dagligen) som du har valt för frekvensen. Du kan fortfarande redigera frekvensbegränsningen om erbjudandet innehåller **[!UICONTROL Draft]** status och har aldrig publicerats tidigare med frekvensbegränsning aktiverad.
+>När du har publicerat ditt erbjudande kan du inte ändra den tidsperiod (månadsvis, veckovis eller dagligen) som du har valt för frekvensen. Du kan fortfarande redigera frekvensbegränsningen om erbjudandet har statusen **[!UICONTROL Draft]** och aldrig har publicerats tidigare med frekvensbegränsning aktiverad.
 
-+++ **Måste läsas: API för frekvensbegränsning och Edge Decision**
++++ **Måste läsas: API för frekvensappning och Edge Decisioning**
 
 Räknaren för frekvensbegränsning uppdateras och är tillgänglig i ett beslut av Edge Decisioning API på mindre än 3 sekunder.
 
-Varje navområde är associerat med ett eller flera kantområden. Regler för frekvensbegränsning genereras och exporteras från varje navregion till de associerade kantområdena. När ett beslut fattas med Edge Decision API, verkställer systemet reglerna som finns i samma edge-region:
+Varje navområde är associerat med ett eller flera kantområden. Regler för frekvensbegränsning genereras och exporteras från varje navregion till de associerade kantområdena. När ett beslut fattas med hjälp av Edge Decisioning API verkställer systemet de regler som finns i samma kantregion:
 
 * Om det finns en matchande regel ökas profilens räknare för frekvensbegränsning.
 * Annars skapas ingen räknare för profilen och regeln för frekvensbegränsning gäller inte. Profilen kommer därför även i fortsättningen att få personaliserade erbjudanden, även om tröskelvärdet överskrids.
 
-Låt oss till exempel se organisationens navet som *NLD2* och du skickar en beslutsbegäran från Europa (*IRL1* kantområde). I det här scenariot kommer beslutsbegäran att öka profilens räknare, eftersom reglerna är tillgängliga i (Irland) *IRL1* region. Om beslutsbegäran däremot kommer från en region som Japan (*JPN3*), som inte är ett kantområde knutet till (Nederländerna) *NLD2* navregion, ingen räknare skapas och reglerna för frekvensbegränsning kommer inte att tillämpas.
+Låt oss till exempel se din organisations navregion som *NLD2* och du skickar en beslutsbegäran från Europa (*IRL1* edge region). I det här scenariot ökar beslutsbegäran profilens räknare eftersom reglerna är tillgängliga i regionen *IRL1* (Irland). Om beslutsbegäran däremot kommer från en region som Japan (*JPN3*), som inte är ett kantområde som är knutet till (Nederländerna) *NLD2* -navet, skapas ingen räknare och reglerna för frekvensbegränsning tillämpas inte.
 
 Om du vill ha mer information om vilka nav- och kantområden som är kopplade till din organisation kan du kontakta din Adobe-representant.
 
@@ -275,17 +275,17 @@ Om du vill ha mer information om vilka nav- och kantområden som är kopplade ti
 
 ### Takning och placeringar {#placements}
 
-Om du har definierat flera [representationer](add-representations.md) Ange om du vill tillämpa begränsning på alla eller alla placeringar.
+Om du har definierat flera [representationer](add-representations.md) för ditt erbjudande anger du om du vill tillämpa begränsning på alla placeringar eller på varje placering.
 
 ![](../assets/offer-capping-placement.png)
 
-* **[!UICONTROL Apply capping across all placements]**: antalet appar innebär att alla beslut summeras för alla ersättningar som är kopplade till erbjudandet.
+* **[!UICONTROL Apply capping across all placements]**: Antalet takappar kommer att summera alla beslut för alla placeringar som är associerade med erbjudandet.
 
-  Om ett erbjudande till exempel har **E-post** placering och en **Webb** placeringen, och du ställer in cappen på **2 per profil för alla placeringar** kan varje profil få upp till två gånger i rabatt, oberoende av placeringsmix.
+  Om ett erbjudande t.ex. har en **e-postplacering** och en **webb**-placering och du anger en begränsning på **2 per profil för alla ersättningar**, kan varje profil få erbjudandet upp till två gånger totalt, oavsett placeringsblandning.
 
-* **[!UICONTROL Apply capping to each placement]**: antalet licenser tillämpas separat på antalet beslut för varje placering.
+* **[!UICONTROL Apply capping to each placement]**: Antalet takappar avgör antalet beslut separat för varje placering.
 
-  Om ett erbjudande till exempel har **E-post** placering och en **Webb** placeringen, och du ställer in cappen på **2 per profil för varje placering** kan varje profil få upp till två gånger för e-postplaceringen och ytterligare två gånger för webblatsplaceringen.
+  Om ett erbjudande till exempel har en **e-postplacering** och en **webb**-placering, och du anger en begränsning på **2 per profil för varje placering**, kan varje profil få erbjudandet upp till två gånger för e-postplaceringen och ytterligare två gånger för webblplaceringen.
 
 ### Påverkan av ändrade datum vid fästning {#capping-change-date}
 
@@ -296,8 +296,8 @@ Om du har definierat flera [representationer](add-representations.md) Ange om du
 
 Du måste vara försiktig när du ändrar datumet för ett erbjudande, eftersom detta kan påverka antalet capping om följande villkor uppfylls:
 
-* Erbjudandet är [godkänd](#review).
-* [Takning](#capping) används redan för erbjudandet.
+* Erbjudandet är [godkänt](#review).
+* [Paket](#capping) har redan tillämpats på erbjudandet.
 * Taket definieras per profil.
 
 >[!NOTE]
@@ -308,30 +308,30 @@ Vid kap per profil sparas antalet på varje profil. När du ändrar start- och s
 
 ![](../assets/offer-capping-change-date.png)
 
-Här är möjliga scenarier när **ändra startdatum för erbjudande**:
+Här följer möjliga scenarier när **ett startdatum för erbjudandet ändras**:
 
-| Scenario<br>Om.. | Vad händer:<br>sedan... | Möjlig effekt på antalet decimaler |
+| Scenario:<br>Om... | Vad händer:<br>sedan... | Möjlig effekt på antalet decimaler |
 |--- |--- |--- |
 | ... startdatumet för erbjudandet uppdateras innan startdatumet för det ursprungliga erbjudandet har börjat, | ... antalet får börja på det nya startdatumet. | Nej |
 | ... det nya startdatumet infaller före det aktuella slutdatumet, | ... takvärdet fortsätter med ett nytt startdatum och det föregående antalet appningar för varje profil fortsätter. | Nej |
 | ... det nya startdatumet infaller efter det aktuella slutdatumet, | ... den aktuella begränsningen upphör att gälla och det nya antalet fästingar börjar om från 0 för alla profiler på det nya startdatumet. | Ja |
 
-Här är möjliga scenarier när **förlänga erbjudandets slutdatum**:
+Här följer möjliga scenarier när **förlänger ett erbjudandeslutdatum**:
 
-| Scenario<br>Om.. | Vad händer:<br>sedan... | Möjlig effekt på antalet decimaler |
+| Scenario:<br>Om... | Vad händer:<br>sedan... | Möjlig effekt på antalet decimaler |
 |--- |--- |--- |
 | ... en beslutsbegäran infaller före det ursprungliga erbjudandets slutdatum, | ... antalet capping uppdateras och det föregående antalet capping för varje profil fortsätter. | Nej |
 | ... ingen beslutsbegäran infaller före det ursprungliga slutdatumet, | ... antalet fästingar återställs på det ursprungliga slutdatumet för varje profil. Det nya antalet capping börjar sedan igen från 0 för alla nya beslutsbegäranden som kommer att inträffa efter det ursprungliga slutdatumet. | Ja |
 
 **Exempel**
 
-Säg att du har ett erbjudande med ett ursprungligt startdatum som är inställt på **1 januari**, förfaller den **31 januari**.
+Anta att du har ett erbjudande med ett ursprungligt startdatum som är inställt på **Januari, 1**, som upphör **Januari, 31**.
 
 1. Profilerna X, Y och Z presenteras.
-1. På **10 januari**, erbjudandets slutdatum ändras till **15 februari**.
-1. **11 januari-31 januari**, visas endast profilen Z.
+1. Den **januari, 10**, ändras erbjudandets slutdatum till **februari, 15**.
+1. **Från 11 januari till 31 januari** visas endast profilen Z.
 
-   * På grund av att en beslutsbegäran inträffade före det ursprungliga slutdatumet **för profil Z** kan erbjudandets slutdatum förlängas till **15 februari**.
-   * Eftersom ingen aktivitet utfördes före det ursprungliga slutdatumet för **profilerna X och Y** kommer deras räknare att förfalla och deras antal att räknas om till 0 på **31 januari**.
+   * Eftersom en beslutsbegäran gjordes före det ursprungliga slutdatumet **för profilen Z**, kan erbjudandets slutdatum förlängas till **februari, 15**.
+   * Eftersom ingen aktivitet utfördes före det ursprungliga slutdatumet för **profilerna X och Y** kommer deras räknare att förfalla och deras antal att fästas kommer att återställas till 0 **januari, 31**.
 
 ![](../assets/offer-capping-change-date-ex.png)

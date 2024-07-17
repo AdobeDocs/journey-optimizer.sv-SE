@@ -45,11 +45,11 @@ E-postytans konfiguration hämtas för att skicka kommunikation enligt logiken n
 >title="Definiera e-posttypen"
 >abstract="Välj vilken typ av e-postmeddelanden som ska skickas när du använder den här ytan: Marknadsföring för marknadsföringsmeddelanden, som kräver användarens samtycke, eller Transaktion för icke-kommersiella e-postmeddelanden, som också kan skickas till profiler som inte längre prenumererar i specifika sammanhang."
 
-I **E-posttyp** väljer du typ av meddelande för ytan: **[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**.
+I avsnittet **E-posttyp** väljer du typ av meddelande för ytan: **[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**.
 
-* Välj **Marknadsföring** för e-postreklam, till exempel veckokampanjer för en butik. Dessa meddelanden kräver användarens samtycke.
+* Välj **Marknadsföring** för e-postreklam, till exempel veckokampanjer för en återförsäljare. Dessa meddelanden kräver användarens samtycke.
 
-* Välj **Transactional** för icke-kommersiell e-post, till exempel orderbekräftelse, meddelanden om lösenordsåterställning eller leveransinformation. Dessa e-postmeddelanden kan skickas till profiler som **avbeställa** från marknadskommunikation. Dessa meddelanden kan bara skickas i särskilda sammanhang.
+* Välj **Transaktionell** för icke-kommersiell e-post, till exempel orderbekräftelse, meddelanden om lösenordsåterställning eller leveransinformation. Dessa e-postmeddelanden kan skickas till profiler som **avbeställer** från marknadsföringsmeddelanden. Dessa meddelanden kan bara skickas i särskilda sammanhang.
 
 När du skapar ett meddelande måste du välja en giltig kanalyta som matchar den kategori du valde för e-postmeddelandet.
 
@@ -69,11 +69,11 @@ Välj den IP-pool som ska associeras med ytan. [Läs mer](../configuration/ip-po
 
 ![](assets/surface-subdomain-ip-pool.png){width="50%" align="left"}
 
-Du kan inte fortsätta skapa en yta medan den valda IP-poolen är under [utgåva](../configuration/ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) och har aldrig kopplats till den valda underdomänen. Annars kommer den äldsta versionen av associationen för IP-poolen/underdomänen fortfarande att användas. I så fall sparar du ytan som utkast och försöker igen när IP-poolen har **[!UICONTROL Success]** status.
+Du kan inte fortsätta skapa en yta medan den valda IP-poolen är under [utgåva](../configuration/ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) och aldrig har associerats med den valda underdomänen. Annars kommer den äldsta versionen av associationen för IP-poolen/underdomänen fortfarande att användas. Om så är fallet sparar du ytan som utkast och försöker igen när IP-poolen har statusen **[!UICONTROL Success]**.
 
 >[!NOTE]
 >
->I icke-produktionsmiljöer skapar inte Adobe körklara testunderdomäner och ger inte heller åtkomst till en delad sändande IP-pool. Du måste [delegera dina egna underdomäner](../configuration/delegate-subdomain.md) och använd IP-adresserna från poolen som tilldelats din organisation.
+>I icke-produktionsmiljöer skapar inte Adobe körklara testunderdomäner och ger inte heller åtkomst till en delad sändande IP-pool. Du måste [delegera dina egna underdomäner](../configuration/delegate-subdomain.md) och använda IP-adresserna från poolen som tilldelats din organisation.
 
 När en IP-pool har valts visas PTR-information när du hovrar över IP-adresserna som visas under listrutan IP-pool. [Läs mer om PTR-poster](../configuration/ptr-records.md)
 
@@ -86,7 +86,7 @@ När en IP-pool har valts visas PTR-information när du hovrar över IP-adresser
 <!--Do not modify - Legal Review Done -->
 
 
-Vid [välja en underdomän](#subdomains-and-ip-pools) från listan, **[!UICONTROL Enable List-Unsubscribe]** visas.
+När [du väljer en underdomän ](#subdomains-and-ip-pools) i listan visas alternativet **[!UICONTROL Enable List-Unsubscribe]**.
 
 Det här alternativet är aktiverat som standard för att inkludera en avbruten URL-adress med ett klick i e-posthuvudet, till exempel:
 
@@ -94,18 +94,18 @@ Det här alternativet är aktiverat som standard för att inkludera en avbruten 
 
 Om du inaktiverar det här alternativet visas ingen avbruten URL i e-posthuvudet med ett enda klick.
 
-Du kan välja medgivandenivå på menyn **[!UICONTROL Consent level]** listruta. Den kan vara specifik för kanalen eller för profilens identitet. Baserat på den här inställningen uppdateras medgivandet i Adobe Journey Optimizer antingen på kanalnivå eller på ID-nivå när en användare avbeställer prenumerationen med hjälp av den listadress för avbeställning som finns i huvudet i ett e-postmeddelande.
+Du kan välja medgivandenivå i listrutan **[!UICONTROL Consent level]**. Den kan vara specifik för kanalen eller för profilens identitet. Baserat på den här inställningen uppdateras medgivandet i Adobe Journey Optimizer antingen på kanalnivå eller på ID-nivå när en användare avbeställer prenumerationen med hjälp av den listadress för avbeställning som finns i huvudet i ett e-postmeddelande.
 
 Listan Avbeställ sidhuvud har två funktioner (mailto och One-click unsubscribe URL, som förklaras nedan) som är aktiverade som standard om du inte avmarkerar en eller båda funktionerna:
 
-* A **Mailto (avsluta prenumeration)** adress, vilket är den måladress dit avbeställningar dirigeras för automatisk bearbetning.
+* En **e-postadress (avbeställ)**, som är den måladress dit avbeställningar skickas för automatisk bearbetning.
 
-  I Journey Optimizer är e-postadressen för avbeställning standard **Mailto (avsluta prenumeration)** som visas i kanalytan, baserat på din [vald underdomän](#subdomains-and-ip-pools).
+  I Journey Optimizer är e-postadressen för avanmälan den **e-postadress (unsubscribe)** som är standard och som visas i kanalytan, baserat på din [valda underdomän](#subdomains-and-ip-pools).
 
   ![](assets/surface-list-unsubscribe-mailto.png){width="80%" align="left"}
 
 
-* The **Avbeställ en URL med ett klick**, som är standard är den enklicksversion av vårt URL-genererade sidhuvud för att avbryta prenumerationen, baserat på den underdomän som du anger och konfigurerar i inställningarna för Kanalyta.
+* **En-klicksavbehör-URL**, som är standardvärdet för vårt enklicksmeddelande för att välja URL-genererat sidhuvud för att avbryta prenumerationen, baserat på den underdomän som du har angett och konfigurerat i inställningarna för Kanalyta.
 
 <!--
     >[!AVAILABILITY]
@@ -114,7 +114,7 @@ Listan Avbeställ sidhuvud har två funktioner (mailto och One-click unsubscribe
     >
 -->
 
-The **[!UICONTROL Mailto (unsubscribe)]** -funktionen och **[!UICONTROL One-click Unsubscribe URL]** är valfria. Om du inte vill använda den standardgenererade URL-adressen för ett enda klick kan du avmarkera funktionen. I scenariot där **[!UICONTROL Opt-out configuration]** är aktiverat och **[!UICONTROL One-click Unsubscribe URL]** funktionen är inte markerad om du lägger till en [länk för avanmälan med ett klick](../privacy/opt-out.md#one-click-opt-out) till ett meddelande som skapas med den här ytan kommer rubriken för att avbryta prenumerationen att hämta länken för att välja bort en klickning som du har infogat i e-postmeddelandets brödtext och använda den som URL-värde för att avsluta prenumerationen med ett klick.
+Funktionen **[!UICONTROL Mailto (unsubscribe)]** och funktionen **[!UICONTROL One-click Unsubscribe URL]** är valfria. Om du inte vill använda den standardgenererade URL-adressen för ett enda klick kan du avmarkera funktionen. Om du lägger till en [-klicksavanmälningslänk ](../privacy/opt-out.md#one-click-opt-out) i ett meddelande som skapats med den här ytan, kommer listans avanmälningshuvud att hämta den enklicksavanmälningslänk som du har infogat i e-postmeddelandets brödtext och använda den som ett-klicksavregistrerings-URL-värde.**[!UICONTROL Opt-out configuration]****[!UICONTROL One-click Unsubscribe URL]**
 
 ![](assets/preset-list-unsubscribe-opt-out-url.png)
 
@@ -126,31 +126,31 @@ Läs mer om hur du hanterar funktioner för att avbryta prenumerationen i dina m
 
 ## Huvudparametrar {#email-header}
 
-I **[!UICONTROL Header parameters]** anger du avsändarens namn och e-postadresser som är kopplade till den typ av e-post som skickas med den aktuella ytan.
+I avsnittet **[!UICONTROL Header parameters]** anger du avsändarnamnen och e-postadresserna som är kopplade till den typ av e-post som skickas med den aktuella ytan.
 
 * **[!UICONTROL Sender name]**: Avsändarens namn, till exempel ditt varumärkes namn.
 * **[!UICONTROL Sender email]**: Den e-postadress som du vill använda för din kommunikation.
-* **[!UICONTROL Reply to (name)]**: Namnet som ska användas när mottagaren klickar på **Svara** i klientprogramvaran för e-post.
-* **[!UICONTROL Reply to (email)]**: Den e-postadress som ska användas när mottagaren klickar på **Svara** i klientprogramvaran för e-post. [Läs mer](#reply-to-email)
+* **[!UICONTROL Reply to (name)]**: Namnet som ska användas när mottagaren klickar på knappen **Svara** i sin e-postklientprogramvara.
+* **[!UICONTROL Reply to (email)]**: Den e-postadress som ska användas när mottagaren klickar på knappen **Svara** i sin e-postklientprogramvara. [Läs mer](#reply-to-email)
 * **[!UICONTROL Error email]**: Alla fel som genereras av Internet-leverantörer efter några dagar efter att e-post har levererats (asynkrona studsar) tas emot på den här adressen. Meddelanden och svar på frågor tas också emot på den här adressen.
 
-  Om du vill få meddelanden och svar på frågor på en viss e-postadress som inte har delegerats till Adobe måste du konfigurera en [framåtprocess](#forward-email). I så fall ska du se till att du har en manuell eller automatiserad lösning för att bearbeta e-postmeddelanden som landar i den här inkorgen.
+  Om du vill få meddelanden och svar på frågor om att tjänsten inte är på kontoret på en viss e-postadress som inte har delegerats till Adobe måste du konfigurera en [framåtriktad process](#forward-email). I så fall ska du se till att du har en manuell eller automatiserad lösning för att bearbeta e-postmeddelanden som landar i den här inkorgen.
 
 >[!CAUTION]
 >
->The **[!UICONTROL Sender email]** och **[!UICONTROL Error email]** adresser måste använda de aktuella markerade [delegerad underdomän](../configuration/about-subdomain-delegation.md). Om den delegerade underdomänen till exempel är *marketing.luma.com* kan du använda *contact@marketing.luma.com* och *error@marketing.luma.com*.
+>**[!UICONTROL Sender email]**- och **[!UICONTROL Error email]**-adresserna måste använda den valda [delegerade underdomänen](../configuration/about-subdomain-delegation.md). Om den delegerade underdomänen till exempel är *marketing.luma.com* kan du använda *contact@marketing.luma.com* och *error@marketing.luma.com*.
 
 ![](assets/preset-header.png)
 
 >[!NOTE]
 >
->Adresser måste börja med en bokstav (A-Z) och får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-` tecken.
+>Adresser måste börja med en bokstav (A-Z) och får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt `.` och bindestreck `-`.
 
 ### Svara på e-post {#reply-to-email}
 
-När du definierar **[!UICONTROL Reply to (email)]** kan du ange vilken e-postadress som helst, förutsatt att det är en giltig adress, i korrekt format och utan att du behöver skriva någon.
+När du definierar **[!UICONTROL Reply to (email)]**-adressen kan du ange vilken e-postadress som helst, förutsatt att det är en giltig adress, i korrekt format och utan att behöva skriva något.
 
-Den inkorg som används för svar kommer att ta emot alla svarsmeddelanden, utom meddelanden som inte är installerade och svarsfrågor som tas emot på **[!UICONTROL Error email]** adress.
+Den inkorg som används för svar kommer att ta emot alla svarsmeddelanden, utom meddelanden som inte är på kontoret och svarsfrågor som tas emot på **[!UICONTROL Error email]**-adressen.
 
 Följ rekommendationerna nedan för att säkerställa korrekt svarshantering:
 
@@ -160,21 +160,21 @@ Följ rekommendationerna nedan för att säkerställa korrekt svarshantering:
 
 * Markera inte meddelanden som skräppost i svarsinkorgen eftersom det påverkar alla andra svar som skickas till den här adressen.
 
-När du definierar **[!UICONTROL Reply to (email)]** måste du se till att använda en underdomän som har en giltig MX-postkonfiguration, annars misslyckas bearbetningen av e-postytan.
+När du definierar adressen **[!UICONTROL Reply to (email)]** måste du dessutom se till att använda en underdomän som har en giltig MX-postkonfiguration, annars misslyckas bearbetningen av e-postytan.
 
 Om du får ett felmeddelande när du skickar e-postytan betyder det att MX-posten inte är konfigurerad för underdomänen till den angivna adressen. Kontakta administratören för att konfigurera motsvarande MX-post eller använd en annan adress med en giltig MX-postkonfiguration.
 
 >[!NOTE]
 >
->Om underdomänen för den adress du angav är en domän som var [helt delegerad](../configuration/delegate-subdomain.md#full-subdomain-delegation) till Adobe, kontakta er kontoansvarige på Adobe.
+>Om underdomänen för den adress du angav är en domän som [delegerats](../configuration/delegate-subdomain.md#full-subdomain-delegation) till Adobe, kontaktar du din kontoansvarige på Adobe.
 
 ### Vidarebefordra e-post {#forward-email}
 
-Vidarebefordra till en viss e-postadress alla e-postmeddelanden som tas emot av [!DNL Journey Optimizer] för den delegerade underdomänen, kontakta Adobe kundtjänst.
+Om du vill vidarebefordra alla e-postmeddelanden till en viss e-postadress som tagits emot av [!DNL Journey Optimizer] för den delegerade underdomänen kontaktar du Adobe kundtjänst.
 
 >[!NOTE]
 >
->Om den underdomän som används för **[!UICONTROL Reply to (email)]** adressen har inte delegerats till Adobe, vidarebefordran fungerar inte för den här adressen.
+>Om den underdomän som används för adressen **[!UICONTROL Reply to (email)]** inte har delegerats till Adobe kan vidarebefordran inte fungera för den här adressen.
 
 Du måste ange:
 
@@ -189,17 +189,17 @@ Du måste ange:
 
 E-postadressen för vidarebefordran konfigureras av Adobe. Detta kan ta 3 till 4 dagar.
 
-När du är klar tas alla meddelanden emot på **[!UICONTROL Reply to (email)]** och **[!UICONTROL Error email]** Adresser vidarebefordras till den angivna e-postadressen.
+När du är klar vidarebefordras alla meddelanden som tas emot på **[!UICONTROL Reply to (email)]**- och **[!UICONTROL Error email]**-adresserna till den angivna e-postadressen.
 
 ## BCC-e-post {#bcc-email}
 
-Du kan skicka en identisk kopia (eller en kopia med kopia) av e-postmeddelanden som skickas av [!DNL Journey Optimizer] till en inkorg för kontroll av webbläsarkompatibilitet där de lagras för att uppfylla regelkrav eller arkiveras.
+Du kan skicka en identisk kopia (eller blind kopia) av e-postmeddelanden som skickats av [!DNL Journey Optimizer] till en BCC-inkorg där de lagras för att uppfylla regelkraven eller arkiveras.
 
-Aktivera **[!UICONTROL BCC email]** valfri funktion på kanalytnivå. [Läs mer](../configuration/archiving-support.md#bcc-email)
+Aktivera den valfria funktionen **[!UICONTROL BCC email]** på kanalytnivå för att göra detta. [Läs mer](../configuration/archiving-support.md#bcc-email)
 
 ![](assets/preset-bcc.png)
 
-När du definierar **[!UICONTROL Bcc email]** måste du se till att använda en underdomän som har en giltig MX-postkonfiguration, annars misslyckas bearbetningen av e-postytan.
+När du definierar adressen **[!UICONTROL Bcc email]** måste du dessutom se till att använda en underdomän som har en giltig MX-postkonfiguration, annars misslyckas bearbetningen av e-postytan.
 
 Om du får ett felmeddelande när du skickar e-postytan betyder det att MX-posten inte är konfigurerad för underdomänen till den angivna adressen. Kontakta administratören för att konfigurera motsvarande MX-post eller använd en annan adress med en giltig MX-postkonfiguration.
 
@@ -213,15 +213,15 @@ Om du får ett felmeddelande när du skickar e-postytan betyder det att MX-poste
 
 >[!IMPORTANT]
 >
->Det här alternativet är bara tillgängligt om du har valt **[!UICONTROL Transactional]** e-posttyp. [Läs mer](#email-type)
+>Det här alternativet är bara tillgängligt om du har valt e-posttypen **[!UICONTROL Transactional]**. [Läs mer](#email-type)
 
-I [!DNL Journey Optimizer], samlas alla e-postadresser som markeras som hårda studsar, mjuka studsar och skräppostklagomål automatiskt in i [utelämningslista](../configuration/manage-suppression-list.md) och exkluderas från att skicka in en resa eller en kampanj.
+I [!DNL Journey Optimizer] samlas alla e-postadresser som är markerade som hårda studsar, mjuka studsar och skräppostklagomål automatiskt in i [suppressionslistan](../configuration/manage-suppression-list.md) och utesluts från att skickas in en resa eller en kampanj.
 
-Du kan dock bestämma dig för att fortsätta skicka meddelanden från **transaktionsbaserad** skriv till profiler även om deras e-postadresser finns i listan över inaktiveringar på grund av skräppost från användaren.
+Du kan dock bestämma dig för att fortsätta skicka meddelanden av typen **transactional** till profiler även om deras e-postadresser finns med i listan över inaktiveringar på grund av skräppost från användaren.
 
 Transaktionsmeddelanden innehåller vanligtvis användbar och förväntad information, t.ex. en orderbekräftelse eller ett meddelande om lösenordsåterställning. Även om de har rapporterat ett av dina marknadsföringsmeddelanden som skräppost vill ni därför oftast att kunderna ska få den här typen av icke-kommersiell e-post.
 
-Om du vill ta med e-postadresser som inte har angetts på grund av skräppost i målgruppen för transaktionsmeddelanden väljer du motsvarande alternativ i dialogrutan **[!UICONTROL Send to suppressed email addresses]** -avsnitt.
+Om du vill inkludera e-postadresser som inte har angetts på grund av skräppost i målgruppen för transaktionsmeddelanden väljer du motsvarande alternativ i avsnittet **[!UICONTROL Send to suppressed email addresses]**.
 
 ![](assets/preset-suppressed-email-addresses.png)
 
@@ -241,13 +241,13 @@ När det här alternativet är aktiverat kan kunden, trots att kunden har marker
 >abstract="Välj önskad startlista för att automatiskt lägga till specifika interna adresser till era målgrupper. Dessa dirigerade adresser kommer att inkluderas vid leveranstillfället och kommer att få en exakt kopia av meddelandet i säkerhetssyfte."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/seed-lists.html#use-seed-list" text="Vad är utsädeslistor?"
 
-En lista med startsidor i [!DNL Journey Optimizer] gör att du automatiskt kan inkludera specifika e-postadresser i dina leveranser. [Läs mer](../configuration/seed-lists.md)
+Med en startvärdeslista i [!DNL Journey Optimizer] kan du automatiskt inkludera specifika e-postadresser i dina leveranser. [Läs mer](../configuration/seed-lists.md)
 
 >[!CAUTION]
 >
 >Den här funktionen gäller för närvarande bara för e-postkanalen.
 
-Välj den lista som är relevant för dig i **[!UICONTROL Seed list]** -avsnitt. Lär dig hur du skapar en startvärdeslista i [det här avsnittet](../configuration/seed-lists.md#create-seed-list).
+Välj den lista som är relevant för dig i avsnittet **[!UICONTROL Seed list]**. Lär dig hur du skapar en startvärdeslista i [det här avsnittet](../configuration/seed-lists.md#create-seed-list).
 
 ![](../configuration/assets/seed-list-surface.png)
 
@@ -267,11 +267,11 @@ Lär dig hur du använder startvärdeslista i en kampanj eller en resa i [det h�
 >abstract="Försök utförs i 3,5 dagar (84 timmar) när en e-postleverans misslyckas på grund av ett tillfälligt fel med mjuk avhoppning. Du kan justera den här standardperioden för återförsök så att den passar dina behov bättre."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/retries.html" text="Om återförsök"
 
-Du kan konfigurera **Parametrar för återförsök av e-post**.
+Du kan konfigurera **parametrarna för återförsök via e-post**.
 
 ![](assets/preset-retry-parameters.png)
 
-Som standard är [återförsökstid](../configuration/retries.md#retry-duration) är inställt på 84 timmar, men du kan justera den här inställningen så att den passar dina behov bättre.
+Som standard är [återförsökstiden](../configuration/retries.md#retry-duration) inställd på 84 timmar, men du kan justera den här inställningen så att den passar dina behov bättre.
 
 Du måste ange ett heltalsvärde (i timmar eller minuter) inom följande intervall:
 
@@ -293,37 +293,37 @@ Läs mer om återförsök i [det här avsnittet](../configuration/retries.md).
 >title="Förhandsgranska URL-spårningsparametrar"
 >abstract="Granska hur spårningsparametrar läggs till i de URL:er som finns i ditt e-postinnehåll."
 
-Du kan använda **[!UICONTROL URL tracking parameters]** för att mäta effektiviteten i era marknadsföringssatsningar över olika kanaler. Den här funktionen är valfri.
+Du kan använda **[!UICONTROL URL tracking parameters]** för att mäta effekten av dina marknadsföringssatsningar i alla kanaler. Den här funktionen är valfri.
 
 Parametrarna som definieras i det här avsnittet läggs till i slutet av de URL:er som ingår i e-postmeddelandeinnehållet. Du kan sedan hämta parametrarna i webbanalysverktyg som Adobe Analytics eller Google Analytics och skapa olika prestandarapporter.
 
-Du kan lägga till upp till 10 spårningsparametrar med **[!UICONTROL Add new parameter]** -knappen.
+Du kan lägga till upp till 10 spårningsparametrar med knappen **[!UICONTROL Add new parameter]**.
 
 ![](assets/preset-url-tracking.png)
 
-Om du vill konfigurera en URL-spårningsparameter kan du ange önskade värden direkt i dialogrutan **[!UICONTROL Name]** och **[!UICONTROL Value]** fält.
+Om du vill konfigurera en URL-spårningsparameter kan du ange önskade värden direkt i fälten **[!UICONTROL Name]** och **[!UICONTROL Value]**.
 
-Du kan också redigera varje **[!UICONTROL Value]** fält med [personaliseringsredigerare](../personalization/personalization-build-expressions.md). Klicka på utgåveikonen för att öppna redigeraren. Därifrån kan du välja tillgängliga sammanhangsberoende attribut och/eller redigera texten direkt.
+Du kan också redigera varje **[!UICONTROL Value]**-fält med [anpassningsredigeraren](../personalization/personalization-build-expressions.md). Klicka på utgåveikonen för att öppna redigeraren. Därifrån kan du välja tillgängliga sammanhangsberoende attribut och/eller redigera texten direkt.
 
 ![](assets/preset-url-tracking-editor.png)
 
 Följande fördefinierade värden är tillgängliga via personaliseringsredigeraren:
 
-* **Källåtgärds-ID**: ID för den e-poståtgärd som lagts till i resan eller kampanjen.
+* **Source åtgärds-ID**: ID för e-poståtgärden som har lagts till i resan eller kampanjen.
 
-* **Namn på källåtgärd**: namn på den e-poståtgärd som lagts till i resan eller kampanjen.
+* **Source-åtgärdsnamn**: namnet på e-poståtgärden som har lagts till i resan eller kampanjen.
 
-* **Käll-ID**: ID för resan eller kampanjen som e-postmeddelandet skickades med.
+* **Source-id**: ID för resan eller kampanjen som e-postmeddelandet skickades med.
 
-* **Källnamn**: namn på resan eller kampanjen som e-postmeddelandet skickades med.
+* **Source-namn**: namn på den resa eller kampanj som e-postmeddelandet skickades med.
 
-* **Källversions-ID**: ID för resan eller kampanjversionen som e-postmeddelandet skickades med.
+* **Source version-ID**: ID för resan eller kampanjversionen som e-postmeddelandet skickades med.
 
 * **Erbjudande-ID**: ID för erbjudandet som används i e-postmeddelandet.
 
 >[!NOTE]
 >
->Du kan kombinera textvärden och använda sammanhangsberoende attribut från personaliseringsredigeraren. Varje **[!UICONTROL Value]** får innehålla ett antal tecken upp till gränsen på 5 kB.
+>Du kan kombinera textvärden och använda sammanhangsberoende attribut från personaliseringsredigeraren. Varje **[!UICONTROL Value]**-fält kan innehålla ett antal tecken upp till gränsen på 5 kB.
 
 <!--You can drag and drop the parameters to reorder them.-->
 

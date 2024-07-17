@@ -8,14 +8,14 @@ level: Experienced
 exl-id: 7c02041c-b022-4027-b932-294b207add80
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '161'
 ht-degree: 3%
 
 ---
 
 # Ta bort en beslutsregel {#delete-decision-rule}
 
-Ibland kan det vara nödvändigt att ta bort (DELETE) en beslutsregel. Endast beslutsregler som du skapar i innehavarbehållaren kan tas bort. Detta görs genom att en DELETE-begäran görs till [!DNL Offer Library] API som använder instans-ID för den beslutsregel som du vill ta bort.
+Ibland kan det vara nödvändigt att ta bort (DELETE) en beslutsregel. Endast beslutsregler som du skapar i innehavarbehållaren kan tas bort. Detta görs genom att utföra en DELETE-begäran till [!DNL Offer Library]-API:t med instans-ID:t för den beslutsregel som du vill ta bort.
 
 **API-format**
 

@@ -9,13 +9,13 @@ exl-id: 99159704-fa39-47ff-b445-0cd6b325007d
 source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
 workflow-type: tm+mt
 source-wordcount: '152'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 # Slå upp ett beslut {#look-up-decision}
 
-Du kan slå upp specifika beslut genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller antingen beslut `@id` eller namnet på beslutet i sökvägen till begäran.
+Du kan slå upp specifika beslut genom att göra en GET-begäran till API:t [!DNL Offer Library] som innehåller antingen besluten `@id` eller namnet på beslutet i sökvägen för begäran.
 
 **API-format**
 
@@ -28,7 +28,7 @@ GET /{ENDPOINT_PATH}/{CONTAINER_ID}/queries/core/search?schema={SCHEMA_ACTIVITIE
 | `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
 | `{CONTAINER_ID}` | Behållaren där besluten finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
 | `{SCHEMA_ACTIVITIES}` | Definierar det schema som är associerat med beslut. | `https://ns.adobe.com/experience/offer-management/offer-activity;version=0.5` |
-| `id` | En sträng som matchar `@id` enheternas egenskap. Strängen matchas exakt. Parametrarna `id` och `name` kan inte användas tillsammans. | `xcore:offer-activity:124527ab00b2ebbc` |
+| `id` | En sträng som används för att matcha egenskapen `@id` för entiteterna. Strängen matchas exakt. Parametrarna `id` och `name` kan inte användas tillsammans. | `xcore:offer-activity:124527ab00b2ebbc` |
 | `name` | En sträng som används för att matcha egenskapen xdm:name för entiteterna. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametern id och name kan inte användas tillsammans | `LBAR` |
 
 **Begäran**
@@ -45,7 +45,7 @@ curl -X GET \
 
 **Svar**
 
-Ett godkänt svar returnerar information om placeringen inklusive information om ditt behållar-ID, instans-ID och unikt beslut `@id`.
+Ett lyckat svar returnerar information om placeringen inklusive information om ditt behållar-ID, instans-ID och unikt beslut `@id`.
 
 ```json
 {

@@ -23,9 +23,9 @@ ht-degree: 0%
 >title="Villkor"
 >abstract="Med villkorliga regler kan du visa flera innehållsvarianter i dina meddelanden baserat på profilattribut, sammanhangsberoende händelser eller målgrupper."
 
-Med dynamiskt innehåll kan ni anpassa innehållet i era meddelanden baserat på **villkorliga regler** som kan bestå av profilattribut, sammanhangsberoende händelser eller målgrupper. Villkorliga regler skapas med en visuell regelbyggare i personaliseringsredigeraren, där du kan lagra dem för ytterligare återanvändning under alla resor och kampanjer.
+Med dynamiskt innehåll kan du anpassa innehållet i dina meddelanden baserat på **villkorsregler** som kan bestå av profilattribut, sammanhangsbaserade händelser eller målgrupper. Villkorliga regler skapas med en visuell regelbyggare i personaliseringsredigeraren, där du kan lagra dem för ytterligare återanvändning under alla resor och kampanjer.
 
-Villkorliga regler kan användas i e-postdesignern och personaliseringsredigeraren för att **skapa dynamiskt innehåll** som anpassar sig till de profiler som ni riktar er till i era meddelanden.
+Villkorliga regler kan utnyttjas i e-post-Designer och personaliseringsredigeraren för att **skapa dynamiskt innehåll** som anpassar sig till profilerna som är angivna i dina meddelanden.
 
 ![](assets/conditions-overview.png)
 

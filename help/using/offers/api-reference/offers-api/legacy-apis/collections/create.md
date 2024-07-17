@@ -17,11 +17,11 @@ ht-degree: 5%
 
 Samlingar är delmängder av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare, t.ex. erbjudandets kategori.
 
-Du kan skapa en samling genom att göra en POST-förfrågan till [!DNL Offer Library] API, samtidigt som du anger ditt behållar-ID.
+Du kan skapa en samling genom att göra en POST-förfrågan till API:t [!DNL Offer Library] och samtidigt ange ditt behållar-ID.
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
-I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
+I följande tabell visas giltiga värden som omfattar fälten *Content-Type* och *Accept* i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
@@ -61,7 +61,7 @@ curl -X POST \
 
 **Svar**
 
-Ett godkänt svar returnerar information om den nyligen skapade samlingen, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort din samling. Du kan använda din unika samling `@id` i en senare självstudiekurs för att skapa ett beslut.
+Ett lyckat svar returnerar information om den nyligen skapade samlingen, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort din samling. Du kan använda din unika samling `@id` i en senare självstudiekurs för att skapa ett beslut.
 
 ```json
 {

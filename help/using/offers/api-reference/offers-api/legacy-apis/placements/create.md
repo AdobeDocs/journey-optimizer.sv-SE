@@ -15,11 +15,11 @@ ht-degree: 6%
 
 # Skapa en placering {#create-placement}
 
-Du kan skapa en placering genom att göra en POST-förfrågan till [!DNL Offer Library] API, samtidigt som du anger ditt behållar-ID.
+Du kan skapa en placering genom att göra en POST-förfrågan till [!DNL Offer Library]-API:t och samtidigt ange ditt behållar-ID.
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
-I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
+I följande tabell visas giltiga värden som omfattar fälten *Content-Type* och *Accept* i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
@@ -58,7 +58,7 @@ curl -X POST \
 
 **Svar**
 
-Ett godkänt svar returnerar information om den nya placeringen, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort placeringen. Du kan använda din unika placering `@id` i senare självstudiekurser för att skapa beslut, beslutsregler och reserverbjudanden.
+Ett godkänt svar returnerar information om den nyligen skapade placeringen, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort placeringen. Du kan använda din unika placering `@id` i senare självstudier för att skapa beslut, beslutsregler och reserverbjudanden.
 
 ```json
 {

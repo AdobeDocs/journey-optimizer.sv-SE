@@ -29,7 +29,7 @@ Adobe Journey Optimizer använder identitetstjänsten för att sammanfoga profil
    * Detta kan ta 30 min - 4 timmar att slutföra.
    * Vanligtvis genererar den här inloggningshändelsen ett identitetsdiagram som länkar CRMID till ECID.
 
-1. Efter den första sammanfogningen kopplas alla data som skickas in med någon av de två identiteterna till den sammanfogade profilen och är tillgängliga för personalisering i Journey Optimizer i realtid. Det kan ta upp till en minut att uppdatera profilen med de senaste beteendedata. Se detta [page](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=sv).
+1. Efter den första sammanfogningen kopplas alla data som skickas in med någon av de två identiteterna till den sammanfogade profilen och är tillgängliga för personalisering i Journey Optimizer i realtid. Det kan ta upp till en minut att uppdatera profilen med de senaste beteendedata. Se den här [sidan](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=sv).
 
 Tänk på följande när du bygger användningsexempel:
 
@@ -52,18 +52,18 @@ I det här avsnittet får du hjälp med att skala med följande två begränsnin
 
 Det finns ett antal bästa metoder som du kan implementera och som hjälper dig att hålla dig inom räckhåll och använda systemet effektivt.
 
-* Om du närmar dig gränsen för direktresor är det första du kan ta är att gå till **Ökning** flik under **Resor** för att se hur många resor som var aktiva under de senaste 24 timmarna (resor som hade aktiva profiler). Du kan kontrollera antalet profiler som kommer in och avslutar resan i det här avsnittet för att avgöra det.
+* Om du närmar dig gränsen för antal resor i realtid går du till fliken **Översikt** under **Resor** för att se hur många resor som har varit aktiva under de senaste 24 timmarna (resor som hade aktiva profiler). Du kan kontrollera antalet profiler som kommer in och avslutar resan i det här avsnittet för att avgöra det.
 
   ![](assets/journey-guardrails2.png)
 
-* I avsnittet Resurslager kan du sedan filtrera alla resor efter Status = &quot;Live&quot; och Typ = &quot;Läs målgrupp&quot;. Sortera sedan efter publiceringsdatum (äldsta till nyaste). Klicka på resan och gå till schemat. Stoppa alla liveresor som hade en tidsplan för körning **En gång** eller **Så snart som möjligt** som är äldre än en dag och bara har en åtgärd.
+* I avsnittet Resurslager kan du sedan filtrera alla resor efter Status = &quot;Live&quot; och Typ = &quot;Läs målgrupp&quot;. Sortera sedan efter publiceringsdatum (äldsta till nyaste). Klicka på resan och gå till schemat. Stoppa alla liveresor som hade ett schema för att köra **En gång** eller **Så snart som möjligt** och som är äldre än en dag och bara har en åtgärd.
 
   ![](assets/journey-guardrails1.png)
 
-* Om **Läsa målgrupper** resan har bara en åtgärd, inga väntningar/beslut eller optimering av sändningstiden, överväg att flytta dem till Journey Optimizer Campaigns. Kampanjer passar bättre för engagemanget i ett enda steg. En av de största skillnaderna mellan Campaign och Journeys är om ni anser att det är viktigt att aktivt lyssna på användarengagemanget för att avgöra nästa steg och engagera er i en annan åtgärd.
+* Om din **läs målgruppsresa** bara har en åtgärd, inga väntningar/beslut eller optimering av sändningstiden bör du överväga att flytta dem till Journey Optimizer Campaigns. Kampanjer passar bättre för engagemanget i ett enda steg. En av de största skillnaderna mellan Campaign och Journeys är om ni anser att det är viktigt att aktivt lyssna på användarengagemanget för att avgöra nästa steg och engagera er i en annan åtgärd.
 * Om du vill minska antalet aktiviteter inom en resa kontrollerar du villkorsstegen. Det finns många tillfällen då du kan flytta villkoren till segmentdefinition eller målgruppskomposition.
 * Om samma villkor upprepas på flera resor (samtyckeskontroller, inaktiveringar) bör du överväga att flytta dem som en del av segmentdefinitionen. Om du t.ex. har ett villkor för att kontrollera att e-postadressen inte är tom på flera resor, ska villkoret ingå i segmentdefinitionen.
 * Om kundresan har flera villkor som delar upp målgruppen för att se siffrorna i varje steg bör du överväga att använda Customer Journey Analytics eller någon annan rapporteringslösning som är bättre lämpad för analys.
 * Om du närmar dig gränsen för antal noder på arbetsytan bör du överväga att konsolidera åtgärder med dynamiska parametrar eller innehåll för att leverera rätt innehåll i stället för explicita noder.
 
-* Om du har en **Läs målgrupp** resa med gruppsegment (A) och om du använder inom resan i målgruppsdirektuppspelningssegment (B) för att exkludera (dvs. utföra A-B), bör du överväga att flytta den logiken till segmenteringslogik och använda uteslutningen som en del av själva segmenteringslogiken.
+* Om du har en **Läs målgrupp**-resa med batchsegment (A) och om du använder inom resan i segmentet för direktuppspelning av publik (B) för att exkludera (d.v.s. utföra A-B), bör du överväga att flytta den logiken till segmenteringslogik och använda exkluderingen som en del av själva segmenteringslogiken.

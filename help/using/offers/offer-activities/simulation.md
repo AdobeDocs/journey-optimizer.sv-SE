@@ -30,15 +30,15 @@ På så sätt kan ni testa och förfina olika versioner av era erbjudanden utan 
 
 >[!NOTE]
 >
->Den här funktionen simulerar en enda begäran till [!DNL Decisioning] API. Läs mer på [Leverera erbjudanden med hjälp av besluts-API](../api-reference/offer-delivery-api/decisioning-api.md).
+>Den här funktionen simulerar en enda begäran till API:t [!DNL Decisioning]. Läs mer om [Leverera erbjudanden med hjälp av besluts-API:t](../api-reference/offer-delivery-api/decisioning-api.md).
 
-Om du vill komma åt den här funktionen väljer du **[!UICONTROL Simulation]** -fliken från **[!UICONTROL Decision management]** > **[!UICONTROL Offers]** -menyn.
+Om du vill komma åt den här funktionen väljer du fliken **[!UICONTROL Simulation]** på menyn **[!UICONTROL Decision management]** > **[!UICONTROL Offers]**.
 
 ![](../assets/offers_simulation-tab.png)
 
 >[!NOTE]
 >
->Eftersom simuleringen inte genererar någon beslutshändelse kan [capping](../offer-library/creating-personalized-offers.md#capping) antalet påverkas inte.
+>Eftersom simuleringen inte genererar någon beslutshändelse påverkas inte antalet [capping](../offer-library/creating-personalized-offers.md#capping).
 
 <!--
 ➡️ [Discover this feature in video](#video)
@@ -55,13 +55,13 @@ Först måste du välja de testprofiler som du ska använda för simulering.
 
 >[!CAUTION]
 >
->Du måste ha testprofiler tillgängliga för att simulera vilka erbjudanden som ska levereras till dem. Lär dig hur [skapa testprofiler](../../audience/creating-test-profiles.md).
+>Du måste ha testprofiler tillgängliga för att simulera vilka erbjudanden som ska levereras till dem. Lär dig hur du [skapar testprofiler](../../audience/creating-test-profiles.md).
 
 1. Klicka på **[!UICONTROL Manage profile]**.
 
    ![](../assets/offers_simulation-manage-profile.png)
 
-1. Markera det identitetsnamnutrymme som du vill använda för att identifiera testprofiler. I det här exemplet använder vi **E-post** namnutrymme.
+1. Markera det identitetsnamnutrymme som du vill använda för att identifiera testprofiler. I det här exemplet använder vi namnutrymmet **Email**.
 
    >[!NOTE]
    >
@@ -75,15 +75,15 @@ Först måste du välja de testprofiler som du ska använda för simulering.
 
    ![](../assets/offers_simulation-save-profiles.png)
 
-1. När du har lagt till visas alla profiler i listrutan under **[!UICONTROL Test profile]**. Du kan växla mellan de sparade testprofilerna för att visa resultatet för varje vald profil.
+1. När du har lagt till dem listas alla profiler i listrutan under **[!UICONTROL Test profile]**. Du kan växla mellan de sparade testprofilerna för att visa resultatet för varje vald profil.
 
    ![](../assets/offers_simulation-saved-profiles.png)
 
    >[!NOTE]
    >
-   >De valda profilerna visas som testprofiler i **[!UICONTROL Simulation]** tabba från session till session tills de tas bort med **[!UICONTROL Manage profile]**.
+   >De valda profilerna förblir listade som testprofiler på fliken **[!UICONTROL Simulation]** från session till session tills de tas bort med **[!UICONTROL Manage profile]**.
 
-1. Du kan klicka på **[!UICONTROL Profile details]** för att visa valda profildata.
+1. Du kan klicka på länken **[!UICONTROL Profile details]** om du vill visa de valda profildata.
 
 ## Lägg till beslutsomfattningar {#add-decision-scopes}
 
@@ -100,7 +100,7 @@ Välj sedan de erbjudandebeslut som du vill simulera i dina testprofiler.
 1. De tillgängliga besluten visas.
 
    * Du kan använda sökfältet för att förfina markeringen.
-   * Du kan klicka på **[!UICONTROL Open offer decisions]** om du vill öppna en lista med alla beslut som du har skapat. Läs mer på [beslut](create-offer-activities.md).
+   * Du kan klicka på länken **[!UICONTROL Open offer decisions]** för att öppna listan med alla beslut som du har skapat. Läs mer om [beslut](create-offer-activities.md).
 
    Välj önskat beslut och klicka på **[!UICONTROL Add]**.
 
@@ -132,15 +132,15 @@ Om du vill redigera standardinställningarna för dina simuleringar följer du s
 
    ![](../assets/offers_simulation-settings.png)
 
-1. I **[!UICONTROL Deduplication]** kan du välja att tillåta dubbletter av erbjudanden mellan beslut och/eller placeringar. Det innebär att flera beslut/ersättningar kan tilldelas samma erbjudande.
+1. I avsnittet **[!UICONTROL Deduplication]** kan du välja att tillåta dubbla erbjudanden mellan beslut och/eller placeringar. Det innebär att flera beslut/ersättningar kan tilldelas samma erbjudande.
 
    ![](../assets/offers_simulation-settings-deduplication.png)
 
    >[!NOTE]
    >
-   >Som standard är alla dedupliceringsflaggor aktiverade för simulering, vilket innebär att beslutsmotorn tillåter dubbletter och därmed kan göra samma förslag för flera beslut/placeringar. Läs mer på [!DNL Decisioning] Egenskaper för API-begäran i [det här avsnittet](../api-reference/offer-delivery-api/decisioning-api.md).
+   >Som standard är alla dedupliceringsflaggor aktiverade för simulering, vilket innebär att beslutsmotorn tillåter dubbletter och därmed kan göra samma förslag för flera beslut/placeringar. Läs mer om egenskaperna för [!DNL Decisioning] API-begäran i [det här avsnittet](../api-reference/offer-delivery-api/decisioning-api.md).
 
-1. I **[!UICONTROL Response format]** kan du välja att ta med metadata i kodvyn. Markera motsvarande alternativ och välj de metadata du vill använda. De visas i begäran- och svarsnyttolasterna när du väljer **[!UICONTROL View code]**. Läs mer i [Visa simuleringsresultat](#simulation-results) -avsnitt.
+1. I avsnittet **[!UICONTROL Response format]** kan du välja att ta med metadata i kodvyn. Markera motsvarande alternativ och välj de metadata du vill använda. De visas i begäran- och svarsnyttolasterna när du väljer **[!UICONTROL View code]**. Läs mer i avsnittet [Visa simuleringsresultat](#simulation-results).
 
    ![](../assets/offers_simulation-settings-response-format.png)
 
@@ -152,7 +152,7 @@ Om du vill redigera standardinställningarna för dina simuleringar följer du s
 
 >[!NOTE]
 >
->För närvarande kan du bara använda **[!UICONTROL Hub]** API.
+>För närvarande kan du bara använda API:t **[!UICONTROL Hub]** för simuleringsdata.
 
 <!--
 In the **[!UICONTROL API for simulation]** section, select the API you want to use: **[!UICONTROL Hub]** or **[!UICONTROL Edge]**.
@@ -182,7 +182,7 @@ När du har lagt till ett beslutsområde och valt en testprofil kan du visa resu
 
    ![](../assets/offers_simulation-offer-details.png)
 
-1. Klicka **[!UICONTROL View code]** för att visa nyttolasterna för begäran och svar. [Läs mer](#view-code)
+1. Klicka på **[!UICONTROL View code]** för att visa begäran- och svarsnyttolaster. [Läs mer](#view-code)
 
 1. Välj en annan profil i listan om du vill visa resultatet av erbjudandebesluten för en annan testprofil.
 
@@ -190,23 +190,23 @@ När du har lagt till ett beslutsområde och valt en testprofil kan du visa resu
 
 >[!NOTE]
 >
->Varje gång du ändrar profiler eller uppdaterar beslutsomfattningar måste du uppdatera resultaten med **[!UICONTROL View results]** -knappen.
+>Varje gång du ändrar profiler eller uppdaterar beslutsomfattningar måste du uppdatera resultaten med knappen **[!UICONTROL View results]**.
 
 ## Visa kod {#view-code}
 
-1. Använd **[!UICONTROL View code]** för att visa begäran- och svarsnyttolaster.
+1. Använd knappen **[!UICONTROL View code]** för att visa nyttolasterna för begäran och svar.
 
    ![](../assets/offers_simulation-view-code.png)
 
-   I kodvyn visas utvecklarinformationen för den aktuella användaren. Som standard är **[!UICONTROL Response payload]** visas.
+   I kodvyn visas utvecklarinformationen för den aktuella användaren. Som standard visas **[!UICONTROL Response payload]**.
 
    ![](../assets/offers_simulation-request-payload.png)
 
-1. Klicka **[!UICONTROL Response payload]** eller **[!UICONTROL Request payload]** för att navigera mellan de två flikarna.
+1. Klicka på **[!UICONTROL Response payload]** eller **[!UICONTROL Request payload]** för att navigera mellan de två flikarna.
 
    ![](../assets/offers_simulation-response-payload.png)
 
-1. Använda nyttolasten utanför [!DNL Journey Optimizer] - t.ex. för felsökningssyfte kopiera den med **[!UICONTROL Copy to clipboard]** överst i kodvyn.
+1. Om du vill använda nyttolasten för begäran utanför [!DNL Journey Optimizer], till exempel i felsökningssyfte, kopierar du den med knappen **[!UICONTROL Copy to clipboard]** ovanför kodvyn.
 
    ![](../assets/offers_simulation-copy-payload.png)
 
@@ -214,5 +214,5 @@ När du har lagt till ett beslutsområde och valt en testprofil kan du visa resu
 
    >[!NOTE]
    >
-   >När du kopierar begäran- eller svarsnyttolasterna till din egen kod måste du ersätta {USER_TOKEN} och {API_KEY} med giltiga värden. Lär dig hur du hämtar dessa värden i [Adobe Experience Platform API:er](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html){target="_blank"} dokumentation.
+   >När du kopierar begäran- eller svarsnyttolasterna till din egen kod måste du ersätta {USER_TOKEN} och {API_KEY} med giltiga värden. Lär dig hur du hämtar dessa värden i dokumentationen för [Adobe Experience Platform API:er](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html){target="_blank"}.
 

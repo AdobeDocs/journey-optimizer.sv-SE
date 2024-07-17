@@ -8,20 +8,20 @@ level: Experienced
 exl-id: 98c5ccf9-2a7f-4129-a520-d0671a86e13d
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '144'
 ht-degree: 4%
 
 ---
 
 # Uppdatera ett beslut {#update-decision}
 
-Du kan ändra eller uppdatera ett beslut genom att göra en PATCH-begäran till [!DNL Offer Library] API.
+Du kan ändra eller uppdatera ett beslut genom att göra en PATCH-begäran till API:t [!DNL Offer Library].
 
-Mer information om JSON Patch, inklusive tillgängliga åtgärder, finns i [JSON Patch-dokumentation](https://jsonpatch.com/).
+Mer information om JSON Patch, inklusive tillgängliga åtgärder, finns i den officiella [JSON Patch-dokumentationen](https://jsonpatch.com/).
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
-I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
+I följande tabell visas giltiga värden som omfattar fälten *Content-Type* och *Accept* i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
@@ -63,13 +63,13 @@ curl -X PATCH 'https://platform.adobe.io/data/core/dps/offer-decisions/offerDeci
 
 | Parameter | Beskrivning |
 | --------- | ----------- |
-| `op` | Åtgärdsanropet som används för att definiera den åtgärd som krävs för att uppdatera anslutningen. Åtgärderna omfattar: `add`, `replace`, `remove`, `copy` och `test`. |
+| `op` | Åtgärdsanropet som används för att definiera den åtgärd som krävs för att uppdatera anslutningen. Åtgärderna är: `add`, `replace`, `remove`, `copy` och `test`. |
 | `path` | Sökvägen till den parameter som ska uppdateras. |
 | `value` | Det nya värdet som du vill uppdatera parametern med. |
 
 **Svar**
 
-Ett godkänt svar returnerar de uppdaterade detaljerna av beslutet, inklusive beslutet `id`.
+Ett godkänt svar returnerar den uppdaterade informationen om beslutet, inklusive beslutet `id`.
 
 ```json
 {

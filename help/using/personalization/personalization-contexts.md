@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Personaliseringskontexter
+title: Personalization-kontexter
 description: Läs mer om hur du kan anpassa innehållet och visningen av dina meddelanden.
 feature: Personalization
 topic: Personalization
@@ -16,25 +16,25 @@ ht-degree: 0%
 
 ---
 
-# Personaliseringskontexter{#personalization-areas}
+# Personalization-kontexter{#personalization-areas}
 
-Innehåll och visning av meddelanden som levereras av [!DNL Journey Optimizer] kan personaliseras på flera olika sätt. I alla fält med redigeringsikonen kan du öppna personaliseringsredigeraren (kallas även personaliseringsredigerare) och definiera personalisering.
+Innehållet och visningen av meddelanden som levereras av [!DNL Journey Optimizer] kan anpassas på flera olika sätt. I alla fält med redigeringsikonen kan du öppna personaliseringsredigeraren (kallas även personaliseringsredigerare) och definiera personalisering.
 
 ![](assets/perso_icon.png)
 
 ## Anpassa e-postmeddelanden {#personalize-emails}
 
-När du skapar ett e-postmeddelande kan du lägga till personalisering i **[!UICONTROL Subject line]** meddelandets fält.
+När du skapar ett e-postmeddelande kan du lägga till en anpassning i fältet **[!UICONTROL Subject line]** i meddelandet.
 
 ![](assets/perso_subject.png)
 
 I e-postdesignern kan du anpassa innehållet:
 
-* I **message**: klicka inuti ett textblock, klicka på **Lägg till personalisering** ikonen i det sammanhangsberoende verktygsfältet. Mer information om gränssnittet för e-postdesignern finns i [section](../email/get-started-email-design.md).
+* I **meddelandet**: klicka i ett textblock och klicka på ikonen **Lägg till Personalization** i det sammanhangsberoende verktygsfältet. Mer information om e-post-Designer-gränssnittet finns i det här [avsnittet](../email/get-started-email-design.md).
 
   ![](assets/perso_insert.png)
 
-* För **link**: markera text eller bild i ett textblock, klicka på **Infoga länk** ikonen i det sammanhangsberoende verktygsfältet. I fönstret kan du lägga till ett anpassningsblock genom att klicka på **Lägg till personalisering** -ikon.
+* För en **länk**: markera text eller bild i ett textblock klickar du på ikonen **Infoga länk** i det sammanhangsberoende verktygsfältet. I fönstret kan du lägga till ett anpassningsblock genom att klicka på ikonen **Lägg till personalisering** .
 
   ![](assets/perso_link.png)
 
@@ -44,23 +44,23 @@ I båda fallen får du tillgång till personaliseringsredigeraren.
 
 ## Anpassa push-meddelanden {#personalize-push}
 
-Du kan också anpassa dina **Push-meddelanden** i följande fält:
+Du kan också anpassa dina **push-meddelanden** i följande fält:
 
 * **Titel**
 * **Brödtext**
-* **Eget ljud**
+* **Anpassat ljud**
 * **Badges**
 * **Anpassade data**
 
 ![](assets/perso_push.png)
 
-Läs mer om konfigurationen för push-meddelanden i [det här avsnittet](../push/push-gs.md).
+Läs mer om konfigurationen av push-meddelanden i [det här avsnittet](../push/push-gs.md).
 
 ## Anpassa era erbjudanden {#personalize-offers}
 
 Du kan även komma åt personaliseringsredigeraren när du lägger till textinnehåll till offerternas representationer.
 
-Läs mer om hur du hanterar innehåll med beslutsstöd i [det här avsnittet](../offers/offer-library/creating-personalized-offers.md#custom-text).
+Läs mer om hur du hanterar innehåll med beslutshantering i [det här avsnittet](../offers/offer-library/creating-personalized-offers.md#custom-text).
 
 ## Skapa personliga URL:er{#personalize-urls}
 

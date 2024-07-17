@@ -9,26 +9,26 @@ level: Intermediate
 exl-id: 81d07ec8-e808-4bc6-97b1-b9f7db2aec22
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 3%
+source-wordcount: '392'
+ht-degree: 2%
 
 ---
 
 # Skapa AI-modeller {#ai-rankings}
 
-[!DNL Journey Optimizer] kan du skapa **AI-modeller** att rangordna erbjudanden baserat på era affärsmål.
+Med [!DNL Journey Optimizer] kan du skapa **AI-modeller** för att rangordna erbjudanden baserat på dina affärsmål.
 
 >[!CAUTION]
 >
->Om du vill skapa, redigera eller ta bort AI-modeller måste du ha **Hantera rankningsstrategier** behörighet. [Läs mer](../../administration/high-low-permissions.md#manage-ranking-strategies)
+>Om du vill skapa, redigera eller ta bort AI-modeller måste du ha behörigheten **Hantera rankningsstrategier**. [Läs mer](../../administration/high-low-permissions.md#manage-ranking-strategies)
 
 ## Skapa en AI-modell {#create-ranking-strategy}
 
 Så här skapar du en AI-modell:
 
-1. Skapa en datauppsättning där konverteringshändelser samlas in. [Lär dig mer](../data-collection/create-dataset.md)
+1. Skapa en datauppsättning där konverteringshändelser samlas in. [Lär dig hur](../data-collection/create-dataset.md)
 
-1. I **[!UICONTROL Components]** -menyn, gå till **[!UICONTROL Ranking]** tabbtangenten och sedan välja **[!UICONTROL AI models]**.
+1. Gå till fliken **[!UICONTROL Ranking]** på menyn **[!UICONTROL Components]** och välj sedan **[!UICONTROL AI models]**.
 
    ![](../assets/ai-ranking-list.png)
 
@@ -39,17 +39,17 @@ Så här skapar du en AI-modell:
 1. Ange ett unikt namn och en beskrivning för AI-modellen och välj sedan den typ av AI-modell som du vill skapa:
 
    * **[!UICONTROL Auto-optimization]** optimerar erbjudanden baserat på tidigare erbjudanden. [Läs mer](auto-optimization-model.md)
-   * **[!UICONTROL Personalized optimization]** optimerar och personaliserar erbjudanden baserat på målgrupper och erbjuder resultat. [Läs mer](personalized-optimization-model.md)
+   * **[!UICONTROL Personalized optimization]** optimerar och personaliserar erbjudanden baserat på målgrupper och erbjuder prestanda. [Läs mer](personalized-optimization-model.md)
 
    ![](../assets/ai-ranking-fields.png)
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Optimization metric]** innehåller information om den konverteringshändelse som används av AI-modellen för att beräkna offerternas rankning.
+   >Avsnittet **[!UICONTROL Optimization metric]** innehåller information om konverteringshändelsen som används av AI-modellen för att beräkna offerternas rankning.
    >
-   >[!DNL Journey Optimizer] Rangordna erbjudanden baserat på **konverteringsgrad** (Konverteringstakt = Totalt antal konverteringshändelser / Totalt antal tryckningshändelser). Konverteringsgraden beräknas med hjälp av två typer av mätvärden:
+   >[!DNL Journey Optimizer] rangordnade erbjudanden baserat på **konverteringsgrad** (konverteringsgrad = totalt antal konverteringshändelser/totalt antal inställningshändelser). Konverteringsgraden beräknas med hjälp av två typer av mätvärden:
    >* **Impression-händelser** (erbjudanden som visas)
-   >* **Konverteringshändelser** (erbjudanden som leder till klickningar via e-post eller webben).
+   >* **Konverteringshändelser** (erbjudanden som resulterar i klickningar via e-post eller webben).
    >
    >Dessa händelser hämtas automatiskt med Web SDK eller Mobile SDK som har angetts. Läs mer om detta i [Adobe Experience Platform Web SDK - översikt](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html).
 
@@ -59,11 +59,11 @@ Så här skapar du en AI-modell:
 
    >[!CAUTION]
    >
-   >Endast datauppsättningar som skapats från scheman som är kopplade till **[!UICONTROL Experience Event - Proposition Interactions]** fältgruppen (som tidigare kallades mixin) visas i listrutan.
+   >Endast datauppsättningar som skapats från scheman som är kopplade till fältgruppen **[!UICONTROL Experience Event - Proposition Interactions]** (som tidigare kallades mixin) visas i listrutan.
 
-1. Om du skapar en **[!UICONTROL Personalized optimization]** AI-modellen väljer du de segment som ska användas för att utbilda AI-modellen.
+1. Om du skapar en **[!UICONTROL Personalized optimization]** AI-modell väljer du de segment som ska användas för att utbilda AI-modellen.
 
-   ➡️ [Upptäck den här funktionen i en video](#video)
+   ➡️ [Upptäck den här funktionen i videon](#video)
 
    ![](../assets/ai-ranking-segments.png)
 
@@ -81,9 +81,9 @@ Så här skapar du en AI-modell:
 * defined which type of event you want to capture - offer displayed (impression) and/or offer clicked (conversion),
 * and in which dataset you want to collect the event data.-->
 
-Varje gång ett erbjudande visas och/eller klickas vill du att motsvarande händelse ska spelas in automatiskt av **[!UICONTROL Experience Event - Proposition Interactions]** fältgrupp med [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/web-sdk-faq.html#what-is-adobe-experience-platform-web-sdk%3F){target="_blank"} eller Mobile SDK.
+Varje gång ett erbjudande visas och/eller klickas vill du att motsvarande händelse ska hämtas automatiskt av fältgruppen **[!UICONTROL Experience Event - Proposition Interactions]** med [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/web-sdk-faq.html#what-is-adobe-experience-platform-web-sdk%3F){target="_blank"} eller Mobile SDK.
 
-För att kunna skicka i händelsetyper (erbjudandet visas eller erbjudandet klickas) måste du ange rätt värde för varje händelsetyp i en upplevelsehändelse som skickas till Adobe Experience Platform. [Lär dig mer](../data-collection/schema-requirement.md)
+För att kunna skicka i händelsetyper (erbjudandet visas eller erbjudandet klickas) måste du ange rätt värde för varje händelsetyp i en upplevelsehändelse som skickas till Adobe Experience Platform. [Lär dig hur](../data-collection/schema-requirement.md)
 
 ## Instruktionsvideo {#video}
 

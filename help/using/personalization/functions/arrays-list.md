@@ -8,8 +8,8 @@ level: Experienced
 exl-id: dfe611fb-9c50-473c-9eb7-b983e1e6f01e
 source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 5%
+source-wordcount: '564'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ Använd de här funktionerna för att underlätta interaktionen med arrayer, lis
 
 ## Endast antal null {#count-only-null}
 
-The `countOnlyNull` används för att räkna antalet null-värden i en lista.
+Funktionen `countOnlyNull` används för att räkna antalet null-värden i en lista.
 
 **Syntax**
 
@@ -37,7 +37,7 @@ Returnerar 3.
 
 ## Antal med null {#count-with-null}
 
-The `countWithNull` används för att räkna alla element i en lista inklusive null-värden.
+Funktionen `countWithNull` används för att räkna alla element i en lista inklusive null-värden.
 
 **Syntax**
 
@@ -55,7 +55,7 @@ Returnerar 6.
 
 ## Distinkt{#distinct}
 
-The `distinct` används för att hämta värden från en array eller lista där dubblettvärden har tagits bort.
+Funktionen `distinct` används för att hämta värden från en array eller lista där dubblettvärden har tagits bort.
 
 **Syntax**
 
@@ -73,7 +73,7 @@ Följande åtgärd anger personer som har gjort beställningar i mer än en buti
 
 ## Distinkt antal med null {#distinct-count-with-null}
 
-The `distinctCountWithNull` används för att räkna antalet olika värden i en lista inklusive null-värden.
+Funktionen `distinctCountWithNull` används för att räkna antalet olika värden i en lista inklusive null-värden.
 
 **Syntax**
 
@@ -91,7 +91,7 @@ Returnerar 3.
 
 ## Första objektet{#head}
 
-The `head` -funktionen används för att returnera det första objektet i en array eller lista.
+Funktionen `head` används för att returnera det första objektet i en array eller lista.
 
 **Syntax**
 
@@ -101,15 +101,15 @@ The `head` -funktionen används för att returnera det första objektet i en arr
 
 **Exempel**
 
-Följande åtgärd returnerar den första av de fem främsta beställningarna med det högsta priset. Mer information om `topN` -funktionen finns i [först `n` i array](#first-n) -avsnitt.
+Följande åtgärd returnerar den första av de fem främsta beställningarna med det högsta priset. Mer information om funktionen `topN` finns i avsnittet [first `n` i array](#first-n).
 
 ```sql
 {%= head(topN(orders,price, 5)) %}
 ```
 
-## Första `n` i array {#first-n}
+## Första `n` i matris {#first-n}
 
-The `topN` -funktionen används för att returnera den första `N` objekt i en array, när de sorteras i stigande ordning baserat på det givna numeriska uttrycket.
+Funktionen `topN` används för att returnera de första `N` objekten i en array, sorterade i stigande ordning baserat på det angivna numeriska uttrycket.
 
 **Syntax**
 
@@ -133,7 +133,7 @@ Följande åtgärd returnerar de första fem beställningarna med det lägsta pr
 
 ## I{#in}
 
-The `in` används för att avgöra om ett objekt är medlem i en array eller lista.
+Funktionen `in` används för att avgöra om ett objekt är medlem i en array eller lista.
 
 **Syntax**
 
@@ -151,7 +151,7 @@ Följande åtgärd definierar personer med födelsedagar i mars, juni eller sept
 
 ## Inkluderar{#includes}
 
-The `includes` används för att avgöra om en array eller lista innehåller ett visst objekt.
+Funktionen `includes` används för att avgöra om en array eller lista innehåller ett visst objekt.
 
 **Syntax**
 
@@ -169,7 +169,7 @@ Följande åtgärd definierar personer vars favoritfärg innehåller rött.
 
 ## Överlappningar{#intersects}
 
-The `intersects` används för att avgöra om två arrayer eller listor har minst en gemensam medlem.
+Funktionen `intersects` används för att avgöra om två arrayer eller listor har minst en gemensam medlem.
 
 **Syntax**
 
@@ -205,9 +205,9 @@ intersection(person1.favoriteColors,person2.favoriteColors) = ["red", "blue", "g
 ```
 -->
 
-## Senaste `n` i array{#last-n}
+## Senaste `n` i matris{#last-n}
 
-The `bottomN` -funktionen används för att returnera den sista `N` objekt i en array, när de sorteras i stigande ordning baserat på det givna numeriska uttrycket.
+Funktionen `bottomN` används för att returnera de sista `N` objekten i en array, sorterade i stigande ordning baserat på det angivna numeriska uttrycket.
 
 **Syntax**
 
@@ -231,11 +231,11 @@ Följande åtgärd returnerar de fem sista beställningarna med det högsta pris
 
 ## Inte i{#notin}
 
-The `notIn` används för att avgöra om ett objekt inte är medlem i en array eller lista.
+Funktionen `notIn` används för att avgöra om ett objekt inte är medlem i en array eller lista.
 
 >[!NOTE]
 >
->The `notIn` function *även* säkerställer att inget av värdena är lika med null. Resultatet är därför inte en exakt negation av `in` funktion.
+>`notIn`-funktionen *ser också* till att inget av värdena är lika med null. Resultatet är därför inte en exakt negation av funktionen `in`.
 
 **Syntax**
 
@@ -254,7 +254,7 @@ Följande åtgärd definierar personer med födelsedagar som inte är i mars, ju
 
 ## Delmängd av{#subset}
 
-The `subsetOf` används för att avgöra om en viss array (array A) är en delmängd av en annan array (array B). Det vill säga att alla element i array A är element i array B.
+Funktionen `subsetOf` används för att avgöra om en viss array (array A) är en delmängd av en annan array (array B). Det vill säga att alla element i array A är element i array B.
 
 **Syntax**
 
@@ -272,7 +272,7 @@ Följande åtgärd definierar personer som har besökt alla sina favoritstäder.
 
 ## Supermängd till{#superset}
 
-The `supersetOf` används för att avgöra om en viss array (array A) är en överordnad mängd till en annan array (array B). Arrayen A innehåller alltså alla element i array B.
+Funktionen `supersetOf` används för att avgöra om en viss array (array A) är en överordnad mängd till en annan array (array B). Arrayen A innehåller alltså alla element i array B.
 
 **Syntax**
 

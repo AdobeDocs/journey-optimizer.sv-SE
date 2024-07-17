@@ -18,15 +18,15 @@ ht-degree: 0%
 
 # Lägg till textbundna formatattribut {#inline-styling}
 
-När du markerar ett element och visar dess inställningar på sidopanelen i gränssnittet för e-postdesignern kan du anpassa infogade attribut och deras värde för det specifika elementet.
+När du markerar ett element och visar inställningarna på sidopanelen i e-postgränssnittet i Designer kan du anpassa infogade attribut och deras värde för det specifika elementet.
 
 1. Markera ett element i innehållet.
 
-1. Från **[!UICONTROL Styles]** flik, leta efter **[!UICONTROL Styles Inline]** inställningarna under **[!UICONTROL Advanced]** nedrullningsbar meny.
+1. På fliken **[!UICONTROL Styles]** söker du efter inställningarna för **[!UICONTROL Styles Inline]** i listrutan **[!UICONTROL Advanced]**.
 
    ![](assets/styles_1.png)
 
-1. Ändra värdena för de befintliga attributen eller lägg till nya med **+** -knappen. Du kan lägga till alla attribut och värden som är CSS-kompatibla.
+1. Ändra värden för befintliga attribut eller lägg till nya med knappen **+**. Du kan lägga till alla attribut och värden som är CSS-kompatibla.
 
    ![](assets/styles_2.png)
 

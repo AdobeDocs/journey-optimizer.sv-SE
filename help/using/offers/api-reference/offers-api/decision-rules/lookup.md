@@ -9,13 +9,13 @@ exl-id: 54368710-1021-43c0-87b7-5176cc6c72f7
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '96'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 # Söka efter en beslutsregel {#lookup-decision-rule}
 
-Du kan söka efter en specifik beslutsregel genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller beslutsregeln `id` i sökvägen till begäran.
+Du kan söka efter en specifik beslutsregel genom att göra en GET-begäran till [!DNL Offer Library]-API:t som innehåller beslutsregeln `id` i sökvägen för begäran.
 
 **API-format**
 
@@ -41,7 +41,7 @@ curl -X GET 'https://platform.adobe.io/data/core/dps/offer-rules/offerRule1234' 
 
 **Svar**
 
-Ett godkänt svar returnerar detaljerna för den specifika beslutsregel du sökte efter, inklusive information om dess unika beslutsregel `id`.
+Ett lyckat svar returnerar information om den specifika beslutsregel du sökte efter, inklusive information om dess unika beslutsregel `id`.
 
 ```json
   {

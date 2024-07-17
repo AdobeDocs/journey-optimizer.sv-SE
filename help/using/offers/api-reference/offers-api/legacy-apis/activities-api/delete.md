@@ -8,14 +8,14 @@ level: Experienced
 exl-id: 36a87d98-fd61-416e-83a1-e267a7b4d455
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 3%
+source-wordcount: '143'
+ht-degree: 2%
 
 ---
 
 # Ta bort ett beslut {#delete-decision}
 
-Ibland kan det vara nödvändigt att ta bort (DELETE) ett beslut. Endast beslut som du skapar i innehavarbehållaren kan tas bort. Detta görs genom att en DELETE-begäran görs till [!DNL Offer Library] API som använder $id för det reserverbjudande som du vill ta bort.
+Ibland kan det vara nödvändigt att ta bort (DELETE) ett beslut. Endast beslut som du skapar i innehavarbehållaren kan tas bort. Detta görs genom att utföra en DELETE-begäran till [!DNL Offer Library]-API:t med $id för det reserverbjudande som du vill ta bort.
 
 **API-format**
 

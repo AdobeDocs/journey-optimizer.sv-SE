@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Använda innehållsmallar
-description: Lär dig hur du använder innehållsmallar när du skapar innehåll för valfri kanal (utom webben) i [!DNL Journey Optimizer]
+description: Lär dig hur du använder innehållsmallar när du skapar innehåll för valfri kanal (utom webben) i  [!DNL Journey Optimizer]
 feature: Templates
 topic: Content Management
 role: User
@@ -17,15 +17,15 @@ ht-degree: 3%
 
 # Använda innehållsmallar {#use-content-templates}
 
-När du skapar innehåll för valfri kanal (utom webben) i [!DNL Journey Optimizer]kan du använda en anpassad mall som du antingen:
+När du skapar innehåll för valfri kanal (utom webben) i [!DNL Journey Optimizer] kan du använda en anpassad mall som du antingen:
 
-* Skapat från grunden med **[!UICONTROL Content templates]** -menyn. [Läs mer](#create-template-from-scratch)
+* Skapad från början med menyn **[!UICONTROL Content templates]**. [Läs mer](#create-template-from-scratch)
 
-* Sparas från ett befintligt innehåll på en resa eller en kampanj med hjälp av **[!UICONTROL Save as content template]** alternativ. [Läs mer](#save-as-template)
+* Sparas från ett befintligt innehåll på en resa eller en kampanj med alternativet **[!UICONTROL Save as content template]**. [Läs mer](#save-as-template)
 
 Följ stegen nedan när du vill börja skapa innehåll med någon av dessa mallar.
 
-1. Oavsett om det gäller en kampanj eller resa, efter att du har valt **[!UICONTROL Edit content]** klickar du på **[!UICONTROL Content template]** -knappen.
+1. Oavsett om du befinner dig i en kampanj eller resa klickar du på knappen **[!UICONTROL Content template]** när du har valt **[!UICONTROL Edit content]**.
 
 1. Välj **[!UICONTROL Apply content template]**.
 
@@ -45,4 +45,4 @@ Följ stegen nedan när du vill börja skapa innehåll med någon av dessa malla
 
 >[!NOTE]
 >
->Börja utforma ett e-postmeddelande från en innehållsmall med [E-posta Designer](../email/get-started-email-design.md)följer du de steg som beskrivs i [det här avsnittet](../email/use-email-templates.md).
+>Om du vill börja designa ett e-postmeddelande från en innehållsmall med [Designer](../email/get-started-email-design.md) följer du stegen som beskrivs i [det här avsnittet](../email/use-email-templates.md).

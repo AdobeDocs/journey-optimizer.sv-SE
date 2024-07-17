@@ -32,31 +32,31 @@ ht-degree: 0%
 >title="Ange en webbunderdomän"
 >abstract="Markera en underdomän i listan över underdomäner som har delegerats till Adobe. Du kan ange den här webbunderdomänen som standardunderdomän, men bara en standardunderdomän i taget kan användas."
 
-Om du lägger till innehåll från [Adobe Experience Manager Assets](../content-management/assets.md) måste du konfigurera den underdomän som ska användas för att publicera innehållet.
+Om du lägger till innehåll från biblioteket [Adobe Experience Manager Assets](../content-management/assets.md) när du skapar webbupplevelser måste du konfigurera den underdomän som ska användas för att publicera det här innehållet.
 
-Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en annan underdomän. Läs mer om hur du delegerar underdomäner till Adobe in [det här avsnittet](../configuration/delegate-subdomain.md).
+Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en annan underdomän. Läs mer om hur du delegerar underdomäner till Adobe i [det här avsnittet](../configuration/delegate-subdomain.md).
 
 >[!CAUTION]
 >
 >Konfigurationen av webbunderdomäner är gemensam för alla miljöer. Därför:
 >
->* Om du vill komma åt och redigera webbunderdomäner måste du ha **[!UICONTROL Manage Web Subdomains]** behörighet i produktionssandlådan.
+>* Om du vill komma åt och redigera webbunderdomäner måste du ha behörigheten **[!UICONTROL Manage Web Subdomains]** i produktionssandlådan.
 >
 > * Eventuella ändringar av en webbunderdomän påverkar också produktionssandlådorna.
 
-Du kan skapa flera webbunderdomäner, men bara de **standard** underdomänen kommer att användas. Du kan ändra standardwebbunderdomänen, men bara en åt gången kan användas.
+Du kan skapa flera webbunderdomäner, men endast underdomänen **default** används. Du kan ändra standardwebbunderdomänen, men bara en åt gången kan användas.
 
 ## Få åtkomst till och hantera webbunderdomäner {#access-web-subdomains}
 
-1. Gå till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** väljer du **[!UICONTROL Web configuration]** > **[!UICONTROL Web subdomains]**. Alla underdomäner som har konfigurerats med den aktuella sandlådan visas.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och välj sedan **[!UICONTROL Web configuration]** > **[!UICONTROL Web subdomains]**. Alla underdomäner som har konfigurerats med den aktuella sandlådan visas.
 
    ![](assets/web-access-subdomains.png)
 
-1. Du kan filtrera efter användare som delegerat varje underdomän eller en av delegeringsstatusen (**[!UICONTROL Draft]**, **[!UICONTROL Processing]**, **[!UICONTROL Success]** eller **[!UICONTROL Failed]**).
+1. Du kan filtrera efter den användare som delegerat varje underdomän eller en av delegeringsstatusen (**[!UICONTROL Draft]**, **[!UICONTROL Processing]**, **[!UICONTROL Success]** eller **[!UICONTROL Failed]**).
 
    ![](assets/web-filter-subdomains.png)
 
-1. The **[!UICONTROL Default]** emblem visas bredvid den underdomän som används som standard. Om du vill ändra standardunderdomänen väljer du **[!UICONTROL Set as default]** från **[!UICONTROL More actions]** -knapp intill önskad underdomän.
+1. Märket **[!UICONTROL Default]** visas bredvid den underdomän som används som standard. Om du vill ändra standardunderdomänen väljer du **[!UICONTROL Set as default]** på knappen **[!UICONTROL More actions]** bredvid önskad underdomän.
 
    ![](assets/web-subdomain-default.png)
 
@@ -68,11 +68,11 @@ Du kan skapa flera webbunderdomäner, men bara de **standard** underdomänen kom
 
 Om du vill använda en underdomän som redan har delegerats till Adobe följer du stegen nedan.
 
-1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** väljer du **[!UICONTROL Web configuration]** > **[!UICONTROL Web subdomains]**.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och välj sedan **[!UICONTROL Web configuration]** > **[!UICONTROL Web subdomains]**.
 
 1. Klicka på **[!UICONTROL Set up subdomain]**.
 
-1. Välj **[!UICONTROL Use delegated subdomain]** från **[!UICONTROL Configuration type]** och välj en delegerad underdomän i listan.
+1. Välj alternativet **[!UICONTROL Use delegated subdomain]** i avsnittet **[!UICONTROL Configuration type]** och välj en delegerad underdomän i listan.
 
    ![](assets/web-subdomain-details.png)
 
@@ -88,13 +88,13 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 
    >[!NOTE]
    >
-   >Endast **standard** underdomänen kommer att användas.
+   >Endast underdomänen **default** kommer att användas.
 
-1. Klicka på **[!UICONTROL Submit]**. Underdomänen får **[!UICONTROL Success]** status. Det är klart att användas för era webbupplevelser.
+1. Klicka på **[!UICONTROL Submit]**. Underdomänen får statusen **[!UICONTROL Success]**. Det är klart att användas för era webbupplevelser.
 
    >[!NOTE]
    >
-   >I mycket sällsynta fall kan en underdomänskonfiguration misslyckas. I det här fallet kan du ta bort **[!UICONTROL Failed]** för att rensa listan med **[!UICONTROL Delete]** från **[!UICONTROL More actions]** -ikon.
+   >I mycket sällsynta fall kan en underdomänskonfiguration misslyckas. I det här fallet kan du ta bort underdomänen **[!UICONTROL Failed]** och rensa listan med knappen **[!UICONTROL Delete]** från ikonen **[!UICONTROL More actions]** .
 
 ## Konfigurera en ny underdomän {#web-configure-new-subdomain}
 
@@ -107,13 +107,13 @@ Följ stegen nedan för att konfigurera en ny underdomän.
 
 >[!NOTE]
 >
->Som standard [!DNL Journey Optimizer] Med kan du delegera upp till 10 underdomäner totalt (som omfattar både e-post och webbkanaler). Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. Kontakta Adobe och läs mer om hur många underdomäner du har rätt till.
+>Som standard kan du i [!DNL Journey Optimizer] delegera upp till 10 underdomäner totalt (som omfattar både e-post- och webbkanaler). Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. Kontakta Adobe och läs mer om hur många underdomäner du har rätt till.
 
-1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** väljer du **[!UICONTROL web configuration]** > **[!UICONTROL web subdomains]**.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och välj sedan **[!UICONTROL web configuration]** > **[!UICONTROL web subdomains]**.
 
 1. Klicka på **[!UICONTROL Set up subdomain]**.
 
-1. Välj **[!UICONTROL Add your own domain]** från **[!UICONTROL Configuration type]** -avsnitt.
+1. Välj **[!UICONTROL Add your own domain]** i avsnittet **[!UICONTROL Configuration type]**.
 
 1. Ange den underdomän som ska delegeras.
 
@@ -135,11 +135,11 @@ Följ stegen nedan för att konfigurera en ny underdomän.
 
    >[!NOTE]
    >
-   >Endast **standard** underdomänen kommer att användas.
+   >Endast underdomänen **default** kommer att användas.
 
 1. Posten som ska placeras i dina DNS-servrar visas. Kopiera den här posten eller hämta en CSV-fil och navigera sedan till din värdlösning för domänen för att generera den matchande DNS-posten.
 
-1. Kontrollera att DNS-posten har genererats i din domänvärdslösning. Om allt är korrekt konfigurerat markerar du rutan &quot;Jag bekräftar ...&quot; och klickar sedan på **[!UICONTROL Submit]**.
+1. Kontrollera att DNS-posten har genererats i din domänvärdslösning. Om allt är korrekt konfigurerat markerar du rutan Jag bekräftar.. och klickar sedan på **[!UICONTROL Submit]**.
 
    ![](assets/web-add-your-own-domain-confirm.png)
 
@@ -147,15 +147,15 @@ Följ stegen nedan för att konfigurera en ny underdomän.
    >
    >När du konfigurerar en ny webbunderdomän pekar den alltid på en CNAME-post.
 
-1. När underdomänsdelegeringen har skickats visas underdomänen i listan med **[!UICONTROL Processing]** status. Mer information om underdomänernas status finns i [det här avsnittet](../configuration/about-subdomain-delegation.md#access-delegated-subdomains).<!--Same statuses?-->
+1. När underdomänsdelegeringen har skickats visas underdomänen med statusen **[!UICONTROL Processing]** i listan. Mer information om underdomäners status finns i [det här avsnittet](../configuration/about-subdomain-delegation.md#access-delegated-subdomains).<!--Same statuses?-->
 
    >[!NOTE]
    >
    >Innan du kan använda den underdomänen för att skicka webbmeddelanden måste du vänta tills Adobe utför de kontroller som krävs, vilket kan ta upp till 4 timmar.
 
-1. När kontrollerna är slutförda får underdomänen **[!UICONTROL Success]** status. Den är klar att användas för att skapa webbkanalsytor.
+1. När kontrollerna har slutförts får underdomänen statusen **[!UICONTROL Success]**. Den är klar att användas för att skapa webbkanalsytor.
 
-   Observera att underdomänen markeras som **[!UICONTROL Failed]** om du inte skapar valideringsposten i din värdlösning.
+   Observera att underdomänen markeras som **[!UICONTROL Failed]** om du inte kan skapa valideringsposten i din värdlösning.
 
 <!--
 Only a subdomain with the **[!UICONTROL Success]** status can be set as default.

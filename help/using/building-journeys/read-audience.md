@@ -25,43 +25,43 @@ ht-degree: 0%
 >title="Läs målgruppsaktivitet"
 >abstract="Med aktiviteten Läs målgrupp kan du få alla som tillhör en Adobe Experience Platform-målgrupp att delta i en resa. Ingången till en resa kan genomföras antingen en gång eller regelbundet."
 
-Använd **Läs målgrupp** aktivitet för att få alla enskilda personer i en målgrupp att komma in på resan. Ingången till en resa kan genomföras antingen en gång eller regelbundet.
+Använd aktiviteten **Läs målgrupp** för att få alla personer i en målgrupp att komma in på resan. Ingången till en resa kan genomföras antingen en gång eller regelbundet.
 
-Låt oss som exempel ta målgruppen&quot;Luma app opening and checkout&quot; som skapats i [Bygg målgrupper](../audience/about-audiences.md) användningsfall. Med aktiviteten Läs målgrupp kan ni få alla personer som tillhör den här målgruppen att resa in på en resa och få dem att flöda in i personaliserade resor som kan utnyttja alla resefunktioner: villkor, tidtagare, händelser och aktiviteter.
+Låt oss som exempel ta målgruppen&quot;Luma app opening and checkout&quot; som skapats i [Build audiences](../audience/about-audiences.md) -användningsexemplet. Med aktiviteten Läs målgrupp kan ni få alla personer som tillhör den här målgruppen att resa in på en resa och få dem att flöda in i personaliserade resor som kan utnyttja alla resefunktioner: villkor, tidtagare, händelser och aktiviteter.
 
-➡️ [Upptäck den här funktionen i video](#video)
+➡️ [Upptäck den här funktionen i videon](#video)
 
 ## Måste läsas {#must-read}
 
-* För resor med **Läs målgrupp** aktiviteten, det finns ett maximalt antal resor som kan påbörjas samtidigt. Nya försök kommer att utföras av systemet, men det går inte att utföra mer än fem resor (med **Läs målgrupp**, schemalagd eller med start&quot;så snart som möjligt&quot;) med början vid exakt samma tidpunkt. Det bästa är att sprida dem över tiden, till exempel mellan 5 och 10 minuter.
+* För resor som använder en **Läs målgrupp**-aktivitet finns det ett maximalt antal resor som kan påbörjas exakt samtidigt. Återförsök kommer att utföras av systemet men undvik att ha fler än fem resor (med **Läs målgrupp**, schemalagd eller starta &quot;så snart som möjligt&quot;) med början vid exakt samma tidpunkt. Det bästa är att sprida dem över tiden, till exempel mellan 5 och 10 minuter.
 
-* Det går inte att använda fältgrupper för upplevelsehändelser i resor som börjar med en **Läsa målgrupper** aktivitet, **[Målgruppskvalifikation](audience-qualification-events.md)** aktivitet eller en affärshändelseaktivitet.
+* Det går inte att använda fältgrupper för upplevelsehändelser på resor som börjar med en **läsmålgruppsaktivitet**, en **[målgruppsklassificeringsaktivitet](audience-qualification-events.md)** eller en affärshändelseaktivitet.
 
-* Vi rekommenderar att du endast använder gruppmålgrupper i en **Läsa målgrupper** aktivitet. Detta ger en tillförlitlig och enhetlig räkning för de målgrupper som används under en resa. Läsarna är utformade för att gruppbearbetas. Om ditt användningsfall behöver realtidsdata ska du använda **[Målgruppskvalifikation](audience-qualification-events.md)** aktivitet.
+* Vi rekommenderar att du bara använder gruppmålgrupper i en **Läs målgrupp** -aktivitet. Detta ger en tillförlitlig och enhetlig räkning för de målgrupper som används under en resa. Läsarna är utformade för att gruppbearbetas. Om ditt användningsfall behöver realtidsdata använder du aktiviteten **[Målgruppskvalificering](audience-qualification-events.md)**.
 
-* Målgrupper [importerad från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) eller som härrör från [arbetsflöden för disposition](../audience/get-started-audience-orchestration.md) kan markeras i **Läs målgrupp** aktivitet. Dessa målgrupper är inte tillgängliga i **Målgruppskvalifikation** aktivitet.
+* Publiker [som har importerats från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) eller som är resultatet av [dispositionsarbetsflöden](../audience/get-started-audience-orchestration.md) kan väljas i aktiviteten **Läs målgrupp**. Dessa målgrupper är inte tillgängliga i aktiviteten **Målgruppskvalificering**.
 
 ## Konfigurera aktiviteten {#configuring-segment-trigger-activity}
 
 Så här konfigurerar du aktiviteten Läs målgrupp:
 
-1. Ta fram **[!UICONTROL Orchestration]** kategori och släpp en **[!UICONTROL Read Audience]** på arbetsytan.
+1. Öppna kategorin **[!UICONTROL Orchestration]** och släpp en **[!UICONTROL Read Audience]**-aktivitet på arbetsytan.
 
    Aktiviteten måste placeras som det första steget i en resa.
 
-1. Lägg till en **[!UICONTROL Label]** till aktiviteten (valfritt).
+1. Lägg till en **[!UICONTROL Label]** i aktiviteten (valfritt).
 
-1. I **[!UICONTROL Audience]** väljer du den Adobe Experience Platform-målgrupp som ska delta i resan och klickar sedan **[!UICONTROL Save]**. Du kan välja vilken Adobe Experience Platform-målgrupp som helst som genereras med [segmentdefinitioner](../audience/creating-a-segment-definition.md).
+1. I fältet **[!UICONTROL Audience]** väljer du den Adobe Experience Platform-målgrupp som ska delta i resan och klickar sedan på **[!UICONTROL Save]**. Du kan välja vilken Adobe Experience Platform-målgrupp som helst som har genererats med [segmentdefinitioner](../audience/creating-a-segment-definition.md).
 
    >[!NOTE]
    >
-   >Dessutom kan ni inrikta er på Adobe Experience Platform målgrupper som skapats med [målgruppskompositioner](../audience/get-started-audience-orchestration.md) eller [överförd från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}.
+   >Dessutom kan du rikta in dig på Adobe Experience Platform-målgrupper som skapats med [målgruppskompositioner](../audience/get-started-audience-orchestration.md) eller [överförda från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}.
 
    Observera att du kan anpassa kolumnerna som visas i listan och sortera dem.
 
    ![](assets/read-segment-selection.png)
 
-   När målgruppen lagts till **[!UICONTROL Copy]** kan du kopiera dess namn och ID:
+   När målgruppen har lagts till kan du med knappen **[!UICONTROL Copy]** kopiera dess namn och ID:
 
    `{"name":"Luma app opening and checkout","id":"8597c5dc-70e3-4b05-8fb9-7e938f5c07a3"}`
 
@@ -69,15 +69,15 @@ Så här konfigurerar du aktiviteten Läs målgrupp:
 
    >[!NOTE]
    >
-   >Endast personer med **Realiserad** och **Befintlig** Status för målgruppsdeltagande kommer att ta sig in på resan. Mer information om hur du utvärderar en målgrupp finns i [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
+   >Det är bara de personer som har status **Realiserad** och **Befintlig** målgruppsdeltagare som kommer in på resan. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
 
-1. I **[!UICONTROL Namespace]** väljer du det namnutrymme som ska användas för att identifiera de enskilda personerna. Som standard är fältet förifyllt med det senast använda namnutrymmet. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace).
+1. I fältet **[!UICONTROL Namespace]** väljer du det namnutrymme som ska användas för att identifiera personerna. Som standard är fältet förifyllt med det senast använda namnutrymmet. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace).
 
    >[!NOTE]
    >
-   >Individer som tillhör en målgrupp som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kan inte ta sig in på resan. Du kan bara välja ett personbaserat ID-namnutrymme. Om du har definierat ett namnutrymme för en uppslagstabell (till exempel: ProductID-namnutrymme för en produktsökning), är det inte tillgängligt i **Namnutrymme** listruta.
+   >Individer som tillhör en målgrupp som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kan inte ta sig in på resan. Du kan bara välja ett personbaserat ID-namnutrymme. Om du har definierat ett namnområde för en uppslagstabell (till exempel: ProductID-namnområde för en produktsökning), är det inte tillgängligt i listrutan **Namespace**.
 
-1. Ange **[!UICONTROL Reading rate]**. Det här är det maximala antalet profiler som kan komma in på resan per sekund. Denna avgift gäller endast denna aktivitet och inga andra delar av resan. Om du till exempel vill definiera en begränsningsfrekvens för anpassade åtgärder måste du använda begränsnings-API:t. Se detta [page](../configuration/throttling.md).
+1. Ange **[!UICONTROL Reading rate]**. Det här är det maximala antalet profiler som kan komma in på resan per sekund. Denna avgift gäller endast denna aktivitet och inga andra delar av resan. Om du till exempel vill definiera en begränsningsfrekvens för anpassade åtgärder måste du använda begränsnings-API:t. Se den här [sidan](../configuration/throttling.md).
 
    Det här värdet lagras i transportversionens nyttolast. Standardvärdet är 5 000 profiler per sekund. Du kan ändra det här värdet från 500 till 20 000 profiler per sekund.
 
@@ -85,25 +85,25 @@ Så här konfigurerar du aktiviteten Läs målgrupp:
    >
    >Den totala läshastigheten per sandlåda är satt till 20 000 profiler per sekund. Läsfrekvensen för alla läsmålgrupper som körs samtidigt i samma sandlåda uppgår därför till högst 20 000 profiler per sekund. Du kan inte ändra denna ände.
 
-1. The **[!UICONTROL Read Audience]** gör att du kan ange när målgruppen ska gå in på resan. Klicka på **[!UICONTROL Edit journey schedule]** länk för att komma åt resans egenskaper och konfigurera sedan **[!UICONTROL Scheduler type]** fält.
+1. Med aktiviteten **[!UICONTROL Read Audience]** kan du ange vid vilken tidpunkt målgruppen ska gå in på resan. Om du vill göra det klickar du på länken **[!UICONTROL Edit journey schedule]** för att komma åt resans egenskaper och konfigurerar sedan fältet **[!UICONTROL Scheduler type]**.
 
    ![](assets/read-segment-schedule.png)
 
-   Som standard deltar målgrupperna i resan **[!UICONTROL As soon as possible]**. Om du vill att publiken ska ange resan ett visst datum/tid eller regelbundet, väljer du önskat värde i listan.
+   Som standard går målgrupper in på resan **[!UICONTROL As soon as possible]**. Om du vill att publiken ska ange resan ett visst datum/tid eller regelbundet, väljer du önskat värde i listan.
 
    >[!NOTE]
    >
-   >Observera att **[!UICONTROL Schedule]** -avsnittet är bara tillgängligt när en **[!UICONTROL Read Audience]** aktiviteten har släppts på arbetsytan.
+   >Observera att avsnittet **[!UICONTROL Schedule]** bara är tillgängligt när en **[!UICONTROL Read Audience]**-aktivitet har släppts på arbetsytan.
 
    ![](assets/read-segment-schedule-list.png)
 
-   **Inkrementell läsning** alternativ: när en resa med återkommande **Läsa målgrupper** körs för första gången så att alla profiler i målgruppen kommer in på resan. Med det här alternativet kan ni efter den första förekomsten endast inrikta er på de personer som har gått in i målgruppen sedan den senaste körningen av resan.
+   **Inkrementell läsning**: När en resa med en återkommande **läsmålgrupp** körs för första gången kommer alla profiler i målgruppen in på resan. Med det här alternativet kan ni efter den första förekomsten endast inrikta er på de personer som har gått in i målgruppen sedan den senaste körningen av resan.
 
        >[!OBS!]
        >
-       >Om du riktar in dig på en [anpassad publik för överföring](../audience/about-audiences.md#segments-in-travel-optimizer) i din resa hämtas profiler endast vid den första upprepningen om det här alternativet är aktiverat i en återkommande resa, eftersom dessa målgrupper är fasta.
+       >Om du riktar in dig på en [anpassad publik för överföring](../audience/about-audiences.md#segments-in-travel-optimizer) i din resa hämtas profiler bara vid den första upprepningen om det här alternativet aktiveras i en återkommande resa, eftersom dessa målgrupper är fasta.
    
-   **Tvinga återinträde vid upprepning**: det här alternativet gör att du kan göra så att alla profiler fortfarande finns kvar i resan automatiskt avslutar den vid nästa körning. Om du till exempel har två dagar på dig att vänta på en daglig återkommande resa, genom att aktivera det här alternativet, kommer profiler alltid att flyttas på nästa körning (så dagen efter), oavsett om de är i nästa körda målgrupp eller inte. Om livscykeln för dina profiler under den här resan kan vara längre än frekvensen för återkommande aktiviteter ska du inte aktivera det här alternativet för att säkerställa att profilerna kan slutföra sin resa.
+   **Tvinga återinträde vid upprepning**: Med det här alternativet kan du göra så att alla profiler som fortfarande finns i resan automatiskt avslutar den vid nästa körning. Om du till exempel har två dagar på dig att vänta på en daglig återkommande resa, genom att aktivera det här alternativet, kommer profiler alltid att flyttas på nästa körning (så dagen efter), oavsett om de är i nästa körda målgrupp eller inte. Om livscykeln för dina profiler under den här resan kan vara längre än frekvensen för återkommande aktiviteter ska du inte aktivera det här alternativet för att säkerställa att profilerna kan slutföra sin resa.
 
 <!--
 
@@ -126,11 +126,11 @@ To activate this mode, click the **Segment Filters** toggle. Two fields are disp
 
 >[!NOTE]
 >
->En bild Läs målgruppsresorna och gå till **Slutförd** status 91 dagar ([global tidsgräns för resa](journey-properties.md#global_timeout)) efter resan. För schemalagda läsmålgrupper är det 91 dagar efter den sista förekomsten.
+>En bild Läs målgruppsresor flyttar till statusen **Slutförd** 91 dagar ([global tidsgräns för resa](journey-properties.md#global_timeout)) efter resan. För schemalagda läsmålgrupper är det 91 dagar efter den sista förekomsten.
 
 ## Testa och publicera resan {#testing-publishing}
 
-The **[!UICONTROL Read Audience]** kan du testa resan med en enhetlig profil.
+Med aktiviteten **[!UICONTROL Read Audience]** kan du testa resan med en enhetsprofil.
 
 Det gör du genom att aktivera testläget.
 
@@ -138,11 +138,11 @@ Det gör du genom att aktivera testläget.
 
 Konfigurera och kör testläget som vanligt. [Lär dig testa en resa](testing-the-journey.md).
 
-När testet är klart **[!UICONTROL Show logs]** kan du se testresultaten. Mer information finns i [det här avsnittet](testing-the-journey.md#viewing_logs)
+När testet har körts kan du med knappen **[!UICONTROL Show logs]** se testresultaten. Mer information finns i [det här avsnittet](testing-the-journey.md#viewing_logs)
 
 ![](assets/read-segment-log.png)
 
-När testerna är klara kan du publicera din resa (se [Publicera resan](publishing-the-journey.md)). Personer som tillhör målgruppen kommer att delta i resan det datum/den tidpunkt som anges i färdens egendom **[!UICONTROL Scheduler]** -avsnitt.
+När testerna har slutförts kan du publicera din resa (se [Publicera resan](publishing-the-journey.md)). Enskilda personer som tillhör målgruppen kommer att gå in på resan det datum/den tid som anges i avsnittet med egenskaper **[!UICONTROL Scheduler]** för resan.
 
 >[!NOTE]
 >
@@ -150,7 +150,7 @@ När testerna är klara kan du publicera din resa (se [Publicera resan](publishi
 
 ## Målgruppsanpassning för målgruppsbaserade resor
 
-Målgruppsbaserade resor börjar alltid med en **Läs målgrupp** aktivitet för att ta fram individer som tillhör en Adobe Experience Platform-publik.
+Målgruppsbaserade resor börjar alltid med en **Läs målgrupp**-aktivitet för att hämta personer som tillhör en Adobe Experience Platform-målgrupp.
 
 Den målgrupp som tillhör målgruppen hämtas en gång eller regelbundet.
 
@@ -158,7 +158,7 @@ Efter att du gått in på resan kan du skapa målgruppsexempel som gör att indi
 
 **Segmentering**
 
-Du kan använda villkor för att utföra segmentering med **Villkor** aktivitet. Du kan t.ex. få VIP personer att ta en viss sökväg och icke-VIP i en annan bana.
+Du kan använda villkor för att utföra segmentering med aktiviteten **Villkor**. Du kan t.ex. få VIP personer att ta en viss sökväg och icke-VIP i en annan bana.
 
 Segmenteringen kan baseras på:
 
@@ -172,7 +172,7 @@ Segmenteringen kan baseras på:
 
 **Uteslutning**
 
-Samma **Villkor** som används för segmentering (se ovan) gör det även möjligt att utesluta en del av populationen. Du kan till exempel utesluta VIP personer genom att låta dem flöda in i en gren med ett slutsteg direkt efter.
+Med samma **villkorsaktivitet** som används för segmentering (se ovan) kan du även utesluta en del av populationen. Du kan till exempel utesluta VIP personer genom att låta dem flöda in i en gren med ett slutsteg direkt efter.
 
 Detta kan inträffa direkt efter det att målgruppen har hämtats, för att räkna antalet personer eller längs en flerstegsresa.
 

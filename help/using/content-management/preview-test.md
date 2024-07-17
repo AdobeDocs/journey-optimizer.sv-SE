@@ -26,23 +26,23 @@ ht-degree: 0%
 
 ## Förhandsgranska och testa innehåll {#about}
 
-När innehållet har definierats kan du använda testprofiler för att [förhandsgranska](preview.md) innehållet innan meddelandet skickas. Detta är ett viktigt steg för att säkerställa att det är korrekt, men även fritt från fel, både i innehålls- och personaliseringsinställningarna.
+När innehållet har definierats kan du använda testprofiler för att [förhandsgranska](preview.md) innehållet innan du skickar meddelandet. Detta är ett viktigt steg för att säkerställa att det är korrekt, men även fritt från fel, både i innehålls- och personaliseringsinställningarna.
 
-Dessutom kan du [skicka testleveranser](proofs.md) (korrektur) av dina e-postmeddelanden till specifika mottagare eller prenumeranter för testning och validering, och [kontrollera återgivningen](rendering.md) på vanliga datorer, mobilkunder och webbaserade klienter.
+Dessutom kan du [skicka testleveranser](proofs.md) (korrektur) av dina e-postmeddelanden till specifika mottagare eller prenumeranter för testning och validering, och [kontrollera deras återgivning](rendering.md) i vanliga dator-, mobil- och webbaserade klienter.
 
-Alla dessa åtgärder kan utföras med **[!UICONTROL Simulate Content]** som du kommer åt från skärmen Redigera innehåll i meddelandet eller från e-post- och webbdesigners för e-post- och webbkanaler.
+Alla dessa åtgärder kan utföras med knappen **[!UICONTROL Simulate Content]**, som du kommer åt från redigeringsfönstret i ditt meddelande, eller från e-post- och webbdesigners för e-post- och webbkanalerna.
 
 ![](../email/assets/email-preview-button.png)
 
 >[!CAUTION]
 >
->När du förhandsgranskar ett meddelande eller skickar korrektur visas endast profilpersonaliseringsdata. Personalisering som bygger på kontextdata, t.ex. händelseinformation, kan bara testas i samband med en resa. Lär dig hur du testar personalisering i [det här användningsfallet](../personalization/personalization-use-case.md).
+>När du förhandsgranskar ett meddelande eller skickar korrektur visas endast profilpersonaliseringsdata. Personalization baserat på kontextdata, t.ex. händelseinformation, kan bara testas i samband med en resa. Lär dig hur du testar personalisering i [det här användningsexemplet](../personalization/personalization-use-case.md).
 
-➡️ [Lär dig hur du förhandsgranskar och korrekturerar e-postmeddelanden i den här videon](#video-preview)
+➡️ [Lär dig hur du förhandsgranskar och korrektur av e-postmeddelanden i den här videon](#video-preview)
 
-## Förutsättningar {#prerequisites}
+## Förhandskrav {#prerequisites}
 
-Om du vill simulera innehåll måste du ha **[!DNL Manage Simulate Content]** behörighet som ingår i **[!DNL Content Library Manager]** produktprofil. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager).
+Om du vill simulera innehåll måste du ha behörigheten **[!DNL Manage Simulate Content]** i produktprofilen **[!DNL Content Library Manager]**. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager).
 
 Du måste också ha testprofiler tillgängliga för att kunna förhandsgranska dina meddelanden. [Lär dig skapa testprofiler](../audience/creating-test-profiles.md)
 

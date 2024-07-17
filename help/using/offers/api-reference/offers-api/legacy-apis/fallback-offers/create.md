@@ -15,11 +15,11 @@ ht-degree: 7%
 
 # Skapa ett reserverbjudande {#create-fallback-offer}
 
-Du kan skapa ett reserverbjudande genom att göra en POST till [!DNL Offer Library] API, samtidigt som du anger ditt behållar-ID.
+Du kan skapa ett reserverbjudande genom att göra en POST-förfrågan till API:t [!DNL Offer Library] och samtidigt ange ditt behållar-ID.
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
-I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
+I följande tabell visas giltiga värden som omfattar fälten *Content-Type* och *Accept* i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
@@ -71,7 +71,7 @@ curl -X POST \
 
 **Svar**
 
-Ett svar returnerar information om det nya reserverbjudandet, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort ditt reserverbjudande. Du kan använda ditt unika reserverbjudande `@id` i en senare självstudiekurs för att skapa ett beslut.
+Ett lyckat svar returnerar information om det nya reserverbjudandet, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort ditt reserverbjudande. Du kan använda ditt unika reserverbjudande `@id` i en senare självstudiekurs för att fatta ett beslut.
 
 
 ```json

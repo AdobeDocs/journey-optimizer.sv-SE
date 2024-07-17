@@ -33,23 +33,23 @@ Följ de här stegen för att skapa flerspråkigt innehåll med hjälp av automa
 
 1. [Skapa språkinställningar](#create-language-settings).
 
-1. [Skapa flerspråkigt innehåll](#create-a-multilingual-campaign).
+1. [Skapa ett flerspråkigt innehåll](#create-a-multilingual-campaign).
 
-1. [Granska din översättningsuppgift (valfritt)](#review-translation-project).
+1. [Granska översättningsaktiviteten (valfritt)](#review-translation-project).
 
 ## Skapa nationella inställningar {#create-locale}
 
-När du konfigurerar språkinställningarna enligt beskrivningen i [Skapa språkinställningar](#language-settings) om det inte finns någon specifik språkinställning för ditt flerspråkiga innehåll kan du skapa så många nya språkinställningar som behövs med **[!UICONTROL Translation]** -menyn.
+När du konfigurerar språkinställningarna, enligt beskrivningen i avsnittet [Skapa språkinställningar](#language-settings) , kan du skapa så många nya språkinställningar som behövs på menyn **[!UICONTROL Translation]** om det inte finns någon tillgänglig språkinställning för det flerspråkiga innehållet.
 
-1. Från **[!UICONTROL Content management]** meny, åtkomst **[!UICONTROL Translation]**.
+1. Gå till **[!UICONTROL Translation]** på menyn **[!UICONTROL Content management]**.
 
 1. Klicka på **[!UICONTROL Add locale]** på fliken **[!UICONTROL Locale dictionary]**.
 
    ![](assets/locale_1.png)
 
-1. Välj din språkinställningskod på menyn **[!UICONTROL Language]** lista och associerade **[!UICONTROL Region]**.
+1. Välj din språkkod i listan **[!UICONTROL Language]** och tillhörande **[!UICONTROL Region]**.
 
-1. Klicka **[!UICONTROL Save]** för att skapa din språkinställning.
+1. Klicka på **[!UICONTROL Save]** för att skapa din språkinställning.
 
    ![](assets/locale_2.png)
 
@@ -57,11 +57,11 @@ När du konfigurerar språkinställningarna enligt beskrivningen i [Skapa språk
 
 Starta översättningsprojektet genom att ange språkområdet som mål, vilket anger det specifika språket eller den specifika regionen för innehållet. Du kan sedan välja översättningsleverantör.
 
-1. Från **[!UICONTROL Translation]** meny under **[!UICONTROL Content management]**, klicka **[!UICONTROL Create project]** i **[!UICONTROL Projects]** -fliken.
+1. Klicka på **[!UICONTROL Create project]** på fliken **[!UICONTROL Projects]** på menyn **[!UICONTROL Translation]** under **[!UICONTROL Content management]**.
 
    ![](assets/translation_project_1.png)
 
-1. Type-in a **[!UICONTROL Name]** och **[!UICONTROL Description]**.
+1. Ange ett **[!UICONTROL Name]** och **[!UICONTROL Description]**.
 
 1. Markera **[!UICONTROL Source locale]**.
 
@@ -69,18 +69,18 @@ Starta översättningsprojektet genom att ange språkområdet som mål, vilket a
 
 1. Välj om du vill aktivera följande alternativ:
 
-   * **[!UICONTROL Automatically publish approved translations]**: När översättningarna har godkänts integreras de automatiskt i kampanjen utan att något manuellt ingripande behövs.
-   * **[!UICONTROL Enable Review workflow]**: Gäller endast för översatta språkområden. På så sätt kan en intern granskare effektivt utvärdera och antingen godkänna eller avvisa översatt innehåll. [Läs mer](#review-translation-project)
+   * **[!UICONTROL Automatically publish approved translations]**: När översättningar har godkänts integreras de automatiskt i kampanjen utan att något manuellt behöver göras.
+   * **[!UICONTROL Enable Review workflow]**: Gäller endast för översatta språkinställningar. På så sätt kan en intern granskare effektivt utvärdera och antingen godkänna eller avvisa översatt innehåll. [Läs mer](#review-translation-project)
 
-1. Klicka **[!UICONTROL Add locale]** för att öppna menyn och definiera språk för översättningsprojektet.
+1. Klicka på **[!UICONTROL Add locale]** för att komma åt menyn och definiera språken för översättningsprojektet.
 
-   Om en **[!UICONTROL Locale]** saknas kan du skapa den manuellt i förväg från **[!UICONTROL Translation]** eller av API. Se [Skapa en ny språkinställning](#create-locale).
+   Om **[!UICONTROL Locale]** saknas kan du skapa den manuellt på menyn **[!UICONTROL Translation]** eller via API. Se [Skapa en ny språkinställning](#create-locale).
 
    ![](assets/translation_project_3.png)
 
-1. Välj i listan **[!UICONTROL Target locale(s)]** och välja vilken **[!UICONTROL Translation provider]** som du vill använda för varje språkområde.
+1. Välj i listan din **[!UICONTROL Target locale(s)]** och välj vilken **[!UICONTROL Translation provider]** du vill använda för varje språkinställning.
 
-   **[!UICONTROL Translation provider]** du kommer åt inställningarna via **[!UICONTROL Translation]** i **[!UICONTROL Administration]** menyavsnitt.
+   **[!UICONTROL Translation provider]**-inställningar kan nås från menyn **[!UICONTROL Translation]** i menyavsnittet **[!UICONTROL Administration]**.
 
    >[!NOTE]
    >
@@ -88,13 +88,13 @@ Starta översättningsprojektet genom att ange språkområdet som mål, vilket a
    >
    ></br>Översättningsprovidern äger det översatta innehållets kvalitet.
 
-1. Klicka **[!UICONTROL Add a locale]** när du har länkat målspråket till rätt översättningsleverantör. Klicka sedan på **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Add a locale]** när du har länkat målspråket till rätt översättningsleverantör. Klicka sedan på **[!UICONTROL Save]**.
 
    Observera, att om en provider är nedtonad för ett målland innebär det att providern inte stöder det aktuella språkområdet.
 
    ![](assets/translation_project_4.png)
 
-1. Klicka **[!UICONTROL Save]** när ditt översättningsprojekt är konfigurerat.
+1. Klicka på **[!UICONTROL Save]** när ditt översättningsprojekt har konfigurerats.
 
 Ditt översättningsprojekt har skapats och kan användas i en flerspråkig kampanj.
 
@@ -102,33 +102,33 @@ Ditt översättningsprojekt har skapats och kan användas i en flerspråkig kamp
 
 I det här avsnittet kan du ange ditt primära språk och tillhörande språk för hantering av ditt flerspråkiga innehåll. Du kan också välja det attribut som du vill använda för att söka efter information om profilspråket.
 
-1. Från **[!UICONTROL Administration]** meny, åtkomst **[!UICONTROL Channel]**.
+1. Gå till **[!UICONTROL Channel]** på menyn **[!UICONTROL Administration]**.
 
-1. I **[!UICONTROL Language settings]** meny, klicka **[!UICONTROL Create language settings]**.
+1. Klicka på **[!UICONTROL Create language settings]** på menyn **[!UICONTROL Language settings]**.
 
    ![](assets/language_settings_1.png)
 
-1. Ange ditt namn **[!UICONTROL Language settings]**.
+1. Ange namnet på din **[!UICONTROL Language settings]**.
 
 1. Välj alternativet **[!UICONTROL Translation project]**.
 
-1. Från **[!UICONTROL Translation project]** fält, klicka **[!UICONTROL Edit]** och välj det du skapat tidigare **[!UICONTROL Translation project]**.
+1. Klicka på **[!UICONTROL Edit]** i fältet **[!UICONTROL Translation project]** och välj den **[!UICONTROL Translation project]** som du skapade tidigare.
 
    De tidigare konfigurerade språkinställningarna importeras automatiskt.
 
    ![](assets/language_settings_2.png)
 
-1. Från **[!UICONTROL Sending preference]** väljer du det attribut du vill söka efter för att hitta information om profilspråk.
+1. På menyn **[!UICONTROL Sending preference]** väljer du det attribut du vill söka efter för att hitta information om profilspråk.
 
-1. Klicka **[!UICONTROL Edit]** bredvid **[!UICONTROL Locale]** för att ytterligare personalisera den och lägga till **[!UICONTROL Profile preferences]**.
+1. Klicka på **[!UICONTROL Edit]** bredvid din **[!UICONTROL Locale]** om du vill anpassa den ytterligare och lägga till **[!UICONTROL Profile preferences]**.
 
    ![](assets/language_settings_3.png)
 
-1. Om **[!UICONTROL Translation project]** uppdateras, klicka **[!UICONTROL Refresh]** för att spegla dessa ändringar i **[!UICONTROL Language settings]**.
+1. Om **[!UICONTROL Translation project]** har uppdaterats klickar du på **[!UICONTROL Refresh]** för att spegla dessa ändringar i **[!UICONTROL Language settings]**.
 
    ![](assets/language_settings_4.png)
 
-1. Klicka **[!UICONTROL Submit]** för att skapa **[!UICONTROL Language settings]**.
+1. Klicka på **[!UICONTROL Submit]** för att skapa din **[!UICONTROL Language settings]**.
 
 <!--
 1. Access the **[!UICONTROL Channel surfaces]** menu and create a new channel surface or select an existing one.
@@ -145,17 +145,17 @@ När du har konfigurerat översättningsprojektet och språkinställningarna är
 
 1. Börja med att skapa och konfigurera e-post, SMS eller push-meddelanden [kampanj](../campaigns/create-campaign.md) eller [resa](../building-journeys/journeys-message.md) enligt dina krav.
 
-1. När det primära innehållet har skapats klickar du på **[!UICONTROL Save]** och gå tillbaka till kampanjkonfigurationsskärmen.
+1. När det primära innehållet har skapats klickar du på **[!UICONTROL Save]** och går tillbaka till kampanjkonfigurationsskärmen.
 
-1. Klicka **[!UICONTROL Add languages]**.  [Läs mer](#create-language-settings)
+1. Klicka på **[!UICONTROL Add languages]**.  [Läs mer](#create-language-settings)
 
    ![](assets/multilingual-campaign-automated-1.png)
 
-1. Välj dina tidigare skapade **[!UICONTROL Language settings]**.
+1. Välj den **[!UICONTROL Language settings]** som du skapade tidigare.
 
    ![](assets/multilingual-campaign-automated-2.png)
 
-1. Nu när språkinställningarna har importerats klickar du på **[!UICONTROL Send to translate]** om du vill vidarebefordra innehållet till den tidigare valda översättningsleverantören.
+1. Nu när språkinställningarna har importerats klickar du på **[!UICONTROL Send to translate]** för att vidarebefordra innehållet till den tidigare valda översättningsleverantören.
 
    ![](assets/multilingual-campaign-automated-3.png)
 
@@ -165,21 +165,21 @@ När du har konfigurerat översättningsprojektet och språkinställningarna är
 
    ![](assets/multilingual-campaign-automated-4.png)
 
-1. Klicka **[!UICONTROL Open translation]** för att få tillgång till ditt översättningsprojekt och granska det.
+1. Klicka på **[!UICONTROL Open translation]** för att komma åt översättningsprojektet och granska det.
 
    ![](assets/multilingual-campaign-automated-5.png)
 
 1. På den här sidan följer du översättningsprojektets status:
 
-   * **[!UICONTROL Translation in progress]**: Din tjänsteleverantör arbetar aktivt med översättningen.
+   * **[!UICONTROL Translation in progress]**: Din tjänstleverantör arbetar aktivt med översättningen.
 
-     Om du valde **Intern översättning** när du konfigurerar **Språkinställningar** kan du översätta innehållet direkt i översättningsprojektet. [Läs mer](#manage-ht-project)
+     Om du valde den interna **översättningen** när du konfigurerade dina **språkinställningar** kan du översätta ditt innehåll direkt i översättningsprojektet. [Läs mer](#manage-ht-project)
 
    * **[!UICONTROL Ready for review]**: Granskningsprocessen är klar att börja, vilket ger dig möjlighet att komma åt översättningen och antingen avvisa eller godkänna den.
 
-     Om du valde **[!UICONTROL Enable review worflow]** i **[!UICONTROL Translation project]** kan du granska översättningen direkt i Journey Optimizer när du är klar av den valda översättningsleverantören. [Läs mer](#review-translation-project)
+     Om du har markerat **[!UICONTROL Enable review worflow]** i din **[!UICONTROL Translation project]** kan du granska översättningen direkt i Journey Optimizer när den har slutförts av den valda översättningsleverantören. [Läs mer](#review-translation-project)
 
-   * **[!UICONTROL Reviewed]**: Översättningen har godkänts och är klar att skickas till kampanjen.
+   * **[!UICONTROL Reviewed]**: Översättningen har godkänts och kan skickas till kampanjen.
 
    * **[!UICONTROL Ready to publish]**: Maskinöversättning har slutförts och kan nu skickas till din kampanj.
 
@@ -191,7 +191,7 @@ När du har konfigurerat översättningsprojektet och språkinställningarna är
 
    ![](assets/translation_review_9.png)
 
-1. Klicka **[!UICONTROL Review to activate]** för att visa en sammanfattning av kampanjen.
+1. Klicka på **[!UICONTROL Review to activate]** om du vill visa en sammanfattning av kampanjen.
 
    Sammanfattningen gör att du kan ändra kampanjen om det behövs och kontrollera om någon parameter är felaktig eller saknas.
 
@@ -207,29 +207,29 @@ Nu kan ni aktivera kampanjen eller resan. När ni har skickat dem kan ni mäta e
 
 Om du valde den interna översättningen när du konfigurerade språkinställningarna kan du översätta innehållet direkt i översättningsprojektet.
 
-1. Från **[!UICONTROL Translation project]**, få åtkomst till **[!UICONTROL More actions]** meny och välj **[!UICONTROL In-house translation]**.
+1. Gå till menyn **[!UICONTROL More actions]** från din **[!UICONTROL Translation project]** och välj **[!UICONTROL In-house translation]**.
 
    ![](assets/inhouse-translation-1.png)
 
-1. Du kan exportera din CSV-fil för översättning med hjälp av ett externt översättningsprogram. Du kan även importera CSV-filen tillbaka till översättningsprojektet genom att klicka på **[!UICONTROL Import CSV]** -knappen.
+1. Du kan exportera din CSV-fil för översättning med hjälp av ett externt översättningsprogram. Du kan också importera CSV-filen tillbaka till ditt översättningsprojekt genom att klicka på knappen **[!UICONTROL Import CSV]**.
 
    ![](assets/inhouse-translation-3.png)
 
-1. Klicka **[!UICONTROL Edit]** för att lägga till översättningsinnehåll.
+1. Klicka på **[!UICONTROL Edit]** om du vill lägga till översättningsinnehållet.
 
    ![](assets/inhouse-translation-2.png)
 
-1. Om du vill publicera den översatta texten klickar du på **[!UICONTROL Finalize]**.
+1. Om du är redo att publicera den översatta texten klickar du på **[!UICONTROL Finalize]**.
 
 ## Granska ditt översättningsprojekt {#review-translation-project}
 
-Om du valde **[!UICONTROL Enable review worflow]** i **[!UICONTROL Translation project]** kan du granska översättningen direkt i Journey Optimizer när du är klar av den valda översättningsleverantören.
+Om du har markerat **[!UICONTROL Enable review worflow]** i din **[!UICONTROL Translation project]** kan du granska översättningen direkt i Journey Optimizer när den har slutförts av den valda översättningsleverantören.
 
-Observera att om det här alternativet är inaktiverat, när översättningen är klar av din leverantör, ställs översättningsuppgiftens status automatiskt in på **[!UICONTROL Reviewed]** så att du snabbt kan fortsätta genom att klicka **[!UICONTROL Publish]**.
+Observera att om det här alternativet är inaktiverat, när översättningen är klar av din leverantör, ställs översättningsaktivitetens status automatiskt in på **[!UICONTROL Reviewed]**, vilket gör att du snabbt kan fortsätta genom att klicka på **[!UICONTROL Publish]**.
 
-1. När översättningen är klar från din tjänsteleverantör kan du få åtkomst till översättningen för granskning från din **[!UICONTROL Translation project]** eller direkt från **[!UICONTROL Campaign]**.
+1. När översättningen har slutförts från tjänsteleverantören kan du komma åt översättningen för granskning från **[!UICONTROL Translation project]** eller direkt från **[!UICONTROL Campaign]**.
 
-   Från **[!UICONTROL More actions]** meny, klicka **[!UICONTROL Review]**.
+   Klicka på **[!UICONTROL Review]** på menyn **[!UICONTROL More actions]**.
 
    ![](assets/translation_review_1.png)
 
@@ -237,7 +237,7 @@ Observera att om det här alternativet är inaktiverat, när översättningen ä
 
    ![](assets/translation_review_3.png)
 
-1. Klicka **[!UICONTROL Edit]** om du vill ändra innehållet i översättningssträngen.
+1. Klicka på **[!UICONTROL Edit]** om du vill ändra innehållet i översättningssträngen.
 
    ![](assets/translation_review_2.png)
 
@@ -247,25 +247,25 @@ Observera att om det här alternativet är inaktiverat, när översättningen ä
 
 1. Du kan också välja att **[!UICONTROL Reject all]** eller **[!UICONTROL Approve all]** direkt.
 
-   Vid val **[!UICONTROL Reject all]**, lägga till en kommentar och klicka på **[!UICONTROL Reject]**.
+   När du väljer **[!UICONTROL Reject all]** lägger du till en kommentar och klickar på **[!UICONTROL Reject]**.
 
-1. Klicka **[!UICONTROL Preview]** för att kontrollera återgivningen av det översatta innehållet på varje språk.
+1. Klicka på **[!UICONTROL Preview]** för att kontrollera återgivningen av det översatta innehållet på varje språk.
 
-1. Om du vill publicera den översatta texten klickar du på **[!UICONTROL Finalize]**.
+1. Om du är redo att publicera den översatta texten klickar du på **[!UICONTROL Finalize]**.
 
    ![](assets/translation_review_5.png)
 
-1. Från **[!UICONTROL Translation project]**, väljer du ett av dina projekt för att få mer information. Om du avvisade översättningen kan du välja att skicka tillbaka den till översättningen.
+1. Välj ett av dina projekt i **[!UICONTROL Translation project]** om du vill ha mer information. Om du avvisade översättningen kan du välja att skicka tillbaka den till översättningen.
 
    ![](assets/translation_review_6.png)
 
-1. När du **[!UICONTROL Translation project]** statusen är Granskad, du kan skicka den till din kampanj.
+1. När din **[!UICONTROL Translation project]**-status har angetts till Granskad kan du skicka den till din kampanj.
 
-   Från **[!UICONTROL More actions]** meny, klicka **[!UICONTROL Publish]**.
+   Klicka på **[!UICONTROL Publish]** på menyn **[!UICONTROL More actions]**.
 
    ![](assets/translation_review_7.png)
 
-1. Kontrollera att din översättningsstatus har ändrats till **[!UICONTROL Translation complete]**. Nu kan du skicka ditt flerspråkiga innehåll, se steg 10 i [det här avsnittet](#create-multilingual-campaign).
+1. Kontrollera att din översättningsstatus har ändrats till **[!UICONTROL Translation complete]** i din kampanj. Du kan nu skicka ditt flerspråkiga innehåll, se steg 10 i [det här avsnittet](#create-multilingual-campaign).
 
    ![](assets/translation_review_9.png)
 

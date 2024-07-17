@@ -9,7 +9,7 @@ exl-id: f3f7cccb-0173-409e-8b76-8b6e136a22ac
 source-git-commit: ba7d065523116c12e22eec300df13c29d92a54fb
 workflow-type: tm+mt
 source-wordcount: '121'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ Du kan skapa en samlingskvalificerare (som tidigare kallades &quot;tagg&quot;) g
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
-I följande tabell visas giltiga värden som utgör *Content-Type* fält i begärandehuvudet:
+I följande tabell visas giltiga värden som omfattar fälten *Content-Type* i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
@@ -53,7 +53,7 @@ curl -X POST 'https://platform.adobe.io/data/core/dps/tags' \
 
 **Svar**
 
-Ett godkänt svar returnerar information om den nyligen skapade samlingskvalificeraren, inklusive dess unika `id`. Du kan använda `id` i senare steg för att uppdatera eller ta bort samlingskvalificeraren. Du kan använda din unika samlingskvalificerare `id` i senare självstudiekurser för att skapa samlingar och personaliserade erbjudanden.
+Ett godkänt svar returnerar information om den nyligen skapade samlingskvalificeraren, inklusive dess unika `id`. Du kan använda `id` i senare steg för att uppdatera eller ta bort samlingskvalificeraren. Du kan använda din unika samlingskvalificerare `id` i senare självstudier för att skapa samlingar och anpassade erbjudanden.
 
 ```json
 {

@@ -32,8 +32,8 @@ I enlighet med branschens standarder och bestämmelser måste alla SMS-marknadsf
 
 Som standard hanterar Adobe Journey Optimizer följande vanliga engelskspråkiga svarsmeddelanden för korta koder, avgiftsfria meddelanden och långa kodmeddelanden:
 
-* **Avanmäl dig**: STOP, QUIT, CANCEL, END, UNSUBSCRIBE, NO.
-* **Anmäl dig**: SUBSCRIBE, YES, UNSTOP, START, FORTSÄTT, RESUME, BEGIN.
+* **Opt-Out**: STOP, QUIT, CANCEL, END, UNSUBSCRIBE, NO.
+* **Opt-In**: SUBSCRIBE, YES, UNSTOP, START, FORTSÄTT, RESUME, BEGIN.
 * **Hjälp**: HJÄLP.
 
 Dessa nyckelord utlöser vanligtvis ett automatiskt standardsvar från din tredje part-leverantör. Du kan bekräfta detta direkt hos leverantören eller via deras dokumentationswebbplats.
@@ -45,7 +45,7 @@ Inga steg krävs för att säkerställa att SMS-avanmälningsfunktioner fungerar
 
 ## Blockeringslista {#sms-blocklists}
 
-Förutom att Adobe Journey Optimizer stoppar sändning baserat på avanmälningsstatus (för direktintegrering med Twilio, Infobip eller Sinch) har de flesta SMS-gatewayleverantörer också en blockeringslista som säkerställer att SMS-meddelanden inte levereras till en person som har valt att avanmäla sig. Om du använder en annan leverantör än Sinch eller Twilio och skickar ett SMS via [anpassad kanal](../building-journeys/using-custom-actions.md)måste du bekräfta detta med din leverantör.
+Förutom att Adobe Journey Optimizer stoppar sändning baserat på avanmälningsstatus (för direktintegrering med Twilio, Infobip eller Sinch) har de flesta SMS-gatewayleverantörer också en blockeringslista som säkerställer att SMS-meddelanden inte levereras till en person som har valt att avanmäla sig. Om du använder en annan leverantör än Sinch eller Twilio och skickar ett SMS via [anpassad kanal](../building-journeys/using-custom-actions.md) måste du bekräfta detta hos din leverantör.
 
 
 ## Korta koder {#short-codes}

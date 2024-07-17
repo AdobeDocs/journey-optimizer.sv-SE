@@ -11,8 +11,8 @@ keywords: landning, landningssida, start, komma igång
 exl-id: 0da96e32-52ad-4cc3-bac4-844b1f39ed16
 source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 4%
+source-wordcount: '209'
+ht-degree: 2%
 
 ---
 
@@ -20,15 +20,15 @@ ht-degree: 4%
 
 En landningssida är en fristående webbsida som en användare dirigeras till efter att ha klickat igenom från ett e-postmeddelande, en webbplats, en annons eller någon annan digital plats.
 
-[!DNL Journey Optimizer] gör att du kan skapa och utforma landningssidor som dirigerar användarna till onlineformulär där de kan välja att inte ta emot meddelanden eller prenumerera på en viss tjänst, t.ex. ett nyhetsbrev.
+Med [!DNL Journey Optimizer] kan du skapa och utforma landningssidor för att dirigera dina användare till onlineformulär där de kan välja att inte ta emot meddelanden eller prenumerera på en viss tjänst, till exempel ett nyhetsbrev.
 
 ➡️ [Läs mer om hur du konfigurerar prenumerationer och skapar landningssidor i den här videon](#video)
 
-* Utnyttja [!DNL Journey Optimizer] funktioner för att enkelt bygga **responsiva landningssidor**.
-* Konfigurera **avanmälnings- och avanmälningsflöden** snabbt och smidigt.
-* Skapa prenumerationslistor så att användarna kan **prenumerera på en tjänst**. [Läs mer](lp-use-cases.md#subscription-to-a-service)
-* Förse mottagarna med **möjlighet att avbryta prenumerationen** från att ta emot meddelanden. [Läs mer](lp-use-cases.md#opt-out)
-* Skicka en **bekräftelsemeddelande** vid anmälan eller avanmälan. [Läs mer](lp-use-cases.md#send-confirmation-email)
+* Utnyttja funktionerna för [!DNL Journey Optimizer]-innehållsdesign för att enkelt bygga **responsiva landningssidor**.
+* Konfigurera **anmälnings- och avanmälningsflöden** snabbt och smidigt.
+* Skapa prenumerationslistor så att användare kan **prenumerera på en tjänst**. [Läs mer](lp-use-cases.md#subscription-to-a-service)
+* Förse dina mottagare med **möjligheten att avbryta prenumerationen** från att ta emot dina meddelanden. [Läs mer](lp-use-cases.md#opt-out)
+* Skicka ett **bekräftelsemeddelande** via e-post vid anmälan eller avanmälan. [Läs mer](lp-use-cases.md#send-confirmation-email)
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>

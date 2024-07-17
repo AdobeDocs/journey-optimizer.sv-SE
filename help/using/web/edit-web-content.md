@@ -15,15 +15,15 @@ ht-degree: 1%
 
 # Redigera webbinnehåll {#edit-web-content}
 
-En gång [lade till en webbåtgärd](create-web.md#create-web-campaign) till er kampanj kan ni redigera innehållet på er webbplats med webbdesignern.
+När du har [lagt till en webbåtgärd](create-web.md#create-web-campaign) i kampanjen kan du redigera innehållet på webbplatsen med webbdesignern.
 
 [Lär dig hur du skapar en webbkampanj i den här videon](#video)
 
-I [!DNL Journey Optimizer], används webbutveckling av **Adobe Experience Cloud Visual Helper** webbläsartillägg för fönsterstandard. [Läs mer](web-prerequisites.md#visual-authoring-prerequisites)
+I [!DNL Journey Optimizer] drivs webbutveckling av webbläsartillägget **Adobe Experience Cloud Visual Helper** . [Läs mer](web-prerequisites.md#visual-authoring-prerequisites)
 
 >[!CAUTION]
 >
->För att kunna komma åt och skriva webbsidor i [!DNL Journey Optimizer] måste du följa de krav som anges i [det här avsnittet](web-prerequisites.md).
+>Om du vill kunna komma åt och redigera webbsidor i användargränssnittet för [!DNL Journey Optimizer] måste du följa de krav som anges i [det här avsnittet](web-prerequisites.md).
 
 Gå till följande avsnitt för att lära dig mer om varje ämne:
 
@@ -47,7 +47,7 @@ Gå till följande avsnitt för att lära dig mer om varje ämne:
 
 Följ stegen nedan när du vill börja skapa webbkampanjer.
 
-1. Från **[!UICONTROL Action]** -fliken i [kampanj](create-web.md#create-web-campaign), markera **[!UICONTROL Edit content]**.<!--change screen with rule-->
+1. Välj **[!UICONTROL Edit content]** på fliken **[!UICONTROL Action]** i [kampanjen](create-web.md#create-web-campaign).<!--change screen with rule-->
 
    ![](assets/web-campaign-edit-content.png)
 
@@ -63,13 +63,13 @@ Följ stegen nedan när du vill börja skapa webbkampanjer.
    >
    >Webbsidan måste innehålla [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}. [Läs mer](web-prerequisites.md#implementation-prerequisites)
 
-1. Klicka **[!UICONTROL Edit web page]** för att börja skapa det. Webbdesignern visas.
+1. Klicka på **[!UICONTROL Edit web page]** för att börja redigera den. Webbdesignern visas.
 
    ![](assets/web-designer.png)
 
    >[!NOTE]
    >
-   >Om du försöker läsa in en webbplats som inte kan läsas in visas ett meddelande om att du har installerat [Webbläsartillägg för hjälp för visuell redigering](#install-visual-editing-helper). Se några tips om felsökning i [det här avsnittet](web-prerequisites.md#troubleshooting).
+   >Om du försöker läsa in en webbplats som inte kan läsas in visas ett meddelande om att du har installerat webbläsartillägget [Visuell redigeringshjälp](#install-visual-editing-helper). Se några tips om felsökning i [det här avsnittet](web-prerequisites.md#troubleshooting).
 
 1. Markera ett element på arbetsytan, till exempel bild, knapp, stycke, text, behållare, rubrik, länk osv. [Läs mer](#content-components)
 
@@ -89,7 +89,7 @@ Följ stegen nedan när du vill börja skapa webbkampanjer.
 
 >[!NOTE]
 >
->Webbinnehållsdesignern liknar oftast e-postdesignern. Läs mer på [designa innehåll med [!DNL Journey Optimizer]](../email/get-started-email-design.md).
+>Webbinnehållsdesignern liknar oftast e-postdesignern. Läs mer om [att utforma innehåll med  [!DNL Journey Optimizer]](../email/get-started-email-design.md).
 
 ## Använda komponenter {#content-components}
 
@@ -98,24 +98,24 @@ Följ stegen nedan när du vill börja skapa webbkampanjer.
 >title="Lägga till komponenter på webbsidan"
 >abstract="Du kan lägga till ett antal komponenter på webbsidan och redigera dem efter behov."
 
-1. Från **[!UICONTROL Components]** till vänster markerar du ett objekt. Du kan lägga till följande komponenter på webbsidan och redigera dem efter behov:
+1. Markera ett objekt i rutan **[!UICONTROL Components]** till vänster. Du kan lägga till följande komponenter på webbsidan och redigera dem efter behov:
 
    * [Delare](../email/content-components.md#divider)
    * [HTML](../email/content-components.md#HTML)
    * [Bild](../email/content-components.md#image)
-   * Rubrik - Att använda den här komponenten påminner om att använda **[!UICONTROL Text]** i e-postdesignern. [Läs mer](../email/content-components.md#text)
-   * Stycke - Att använda den här komponenten påminner om att använda **[!UICONTROL Text]** i e-postdesignern. [Läs mer](../email/content-components.md#text)
+   * Rubrik - Att använda den här komponenten påminner om att använda komponenten **[!UICONTROL Text]** i e-postdesignern. [Läs mer](../email/content-components.md#text)
+   * Stycke - Att använda den här komponenten påminner om att använda komponenten **[!UICONTROL Text]** i e-postdesignern. [Läs mer](../email/content-components.md#text)
    * Länk
 
    ![](assets/web-designer-components.png)
 
-1. Hovra på sidan och klicka på **[!UICONTROL Insert before]** eller **[!UICONTROL Insert after]** om du vill lägga till komponenten i ett befintligt element på sidan.
+1. Håll muspekaren på sidan och klicka på knappen **[!UICONTROL Insert before]** eller **[!UICONTROL Insert after]** för att lägga till komponenten i ett befintligt element på sidan.
 
    ![](assets/web-designer-insert-components.png)
 
    >[!NOTE]
    >
-   >Avmarkera en komponent genom att klicka på **[!UICONTROL ESC]** i den kontextuella blå banderollen som visas ovanpå arbetsytan.
+   >Om du vill avmarkera en komponent klickar du på knappen **[!UICONTROL ESC]** i den kontextuella blå banderollen som visas ovanpå arbetsytan.
 
 1. Redigera komponenten efter behov direkt i innehållet på sidan.
 
@@ -139,7 +139,7 @@ I det här avsnittet beskrivs olika sätt att navigera i webbdesignern. Informat
 
 1. Markera ett element på arbetsytan.
 
-1. Klicka på **[!UICONTROL Expand/Collapse Breadcrumbs]** på skärmens nedre vänstra sida för att snabbt visa information om det markerade elementet.
+1. Klicka på knappen **[!UICONTROL Expand/Collapse Breadcrumbs]** längst ned till vänster på skärmen för att snabbt visa information om det markerade elementet.
 
    ![](assets/web-designer-breadcrumbs.png)
 
@@ -154,19 +154,19 @@ I det här avsnittet beskrivs olika sätt att navigera i webbdesignern. Informat
 >title="Använda bläddringsläget"
 >abstract="I det här läget kan du navigera till den exakta sidan från den markerade ytan som du vill anpassa."
 
-Du kan växla från standardinställningen **[!UICONTROL Design]** till **[!UICONTROL Browse]** läge med den dedikerade knappen.
+Du kan växla från standardläget **[!UICONTROL Design]** till läget **[!UICONTROL Browse]** med den dedikerade knappen.
 
 ![](assets/web-designer-browse-mode.png)
 
-Från **[!UICONTROL Browse]** kan du navigera till den exakta sidan från den markerade ytan som du vill anpassa.
+I läget **[!UICONTROL Browse]** kan du navigera till den exakta sidan från den markerade ytan som du vill anpassa.
 
-Det är särskilt användbart när du hanterar sidor som är bakom autentisering eller som inte är tillgängliga från början på en viss URL. Du kan till exempel autentisera, navigera till din kontosida eller till kundvagnssidan och sedan växla tillbaka till **[!UICONTROL Design]** för att utföra ändringarna på den önskade sidan.
+Det är särskilt användbart när du hanterar sidor som är bakom autentisering eller som inte är tillgängliga från början på en viss URL. Du kan till exempel autentisera, navigera till din kontosida eller till kundvagnssidan och sedan växla tillbaka till läget **[!UICONTROL Design]** för att kunna utföra ändringarna på den önskade sidan.
 
-Använda **[!UICONTROL Browse]** I kan du även navigera i alla vyer på webbplatsen när du skapar enkelsidiga program. [Läs mer](web-spa.md)
+I **[!UICONTROL Browse]**-läget kan du även navigera i alla vyer på webbplatsen när du redigerar ensidiga program. [Läs mer](web-spa.md)
 
 ### Ändra enhetsstorlek {#change-device-size}
 
-Du kan ändra enhetsstorleken för webbdesignerskärmen till en fördefinierad storlek, till exempel **[!UICONTROL Tablet]** eller **[!UICONTROL Mobile landscape]** eller definiera en egen storlek genom att ange önskat antal pixlar.
+Du kan ändra enhetsstorleken för webbdesignervisningen till en fördefinierad storlek som **[!UICONTROL Tablet]** eller **[!UICONTROL Mobile landscape]**, eller definiera en anpassad storlek genom att ange önskat antal pixlar.
 
 Du kan också ändra zoomfokus - från 25 % till 400 %.
 
@@ -178,10 +178,10 @@ Möjligheten att ändra enhetsstorleken är utformad för responsiva sajter som 
 >
 >Du kan redigera en webbupplevelse med en viss enhetsstorlek. Så länge väljarna är desamma gäller dock dessa ändringar för alla storlekar och enheter, inte bara för den enhetsstorlek som du arbetar i. På samma sätt tillämpas ändringarna på alla skärmstorlekar, inte bara på skrivbordsvyn, när du redigerar en upplevelse i den normala skrivbordsvyn.
 >
->För närvarande [!DNL Journey Optimizer] stöder inte enhetsstorleksspecifika sidändringar. Det innebär att om du till exempel har en separat mobilwebbplats med en separat webbplatsstruktur, bör du göra ändringarna specifika för din mobilwebbplats i en annan kampanj.
+>[!DNL Journey Optimizer] stöder för närvarande inte enhetsstorleksspecifika sidändringar. Det innebär att om du till exempel har en separat mobilwebbplats med en separat webbplatsstruktur, bör du göra ändringarna specifika för din mobilwebbplats i en annan kampanj.
 
 ## Instruktionsvideo{#video}
 
-I videon nedan visas hur du skapar en webbupplevelse med webbdesignern i [!DNL Journey Optimizer] kampanjer.
+I videon nedan visas hur du skapar en webbupplevelse med webbdesignern i [!DNL Journey Optimizer]-kampanjer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418803/?quality=12&learn=on)

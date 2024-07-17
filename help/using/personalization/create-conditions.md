@@ -24,17 +24,17 @@ Villkorliga regler skapas med personaliseringsredigeraren och kan lagras om du v
 
 >[!NOTE]
 >
->Enskilda behöver [Hantera biblioteksobjekt](../administration/ootb-product-profiles.md) behörighet att spara eller ta bort villkorliga regler. Sparade villkor kan användas av alla användare i en organisation.
+>Enskilda behöver behörigheten [Hantera biblioteksobjekt](../administration/ootb-product-profiles.md) för att kunna spara eller ta bort villkorliga regler. Sparade villkor kan användas av alla användare i en organisation.
 
 ## Åtkomst till villkorsregelbyggaren {#access}
 
-Villkorliga regler skapas från **[!UICONTROL Conditions]** -menyn i personaliseringsredigeraren, som är tillgänglig antingen:
+Villkorliga regler skapas från menyn **[!UICONTROL Conditions]** i anpassningsredigeraren, som är tillgänglig antingen:
 
-* Från e-postdesignern när du aktiverar dynamiskt innehåll för en komponent i e-postbrödtexten. [Lär dig hur du lägger till dynamiskt innehåll i e-post](dynamic-content.md#emails)
+* Från Email Designer när du aktiverar dynamiskt innehåll för en komponent i e-postbrödtexten. [Lär dig hur du lägger till dynamiskt innehåll i e-postmeddelanden](dynamic-content.md#emails)
 
   ![](assets/conditions-access-email.png)
 
-* Inom alla områden där du kan lägga till personalisering med [personaliseringsredigerare](personalization-build-expressions.md).
+* I alla fält där du kan lägga till personalisering med [personaliseringsredigeraren](personalization-build-expressions.md).
 
   ![](assets/conditions-access-editor.png)
 
@@ -52,25 +52,25 @@ Villkorliga regler skapas från **[!UICONTROL Conditions]** -menyn i personalise
 
 Så här skapar du en villkorlig regel:
 
-1. Öppna **[!UICONTROL Conditions]** från personaliseringsredigeraren eller e-postdesignern och klicka sedan på **[!UICONTROL Create new]**.
+1. Gå till menyn **[!UICONTROL Conditions]** från anpassningsredigeraren eller e-post-Designer och klicka sedan på **[!UICONTROL Create new]**.
 
 1. Bygg den villkorliga regeln efter dina behov. Det gör du genom att dra och släppa och ordna de önskade attributen från den vänstra menyn på arbetsytan.
 
-Stegen för att kombinera attribut på arbetsytan liknar de som används för att skapa segment. Mer information om hur du arbetar med arbetsytan i regelbyggaren finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#rule-builder-canvas).
+Stegen för att kombinera attribut på arbetsytan liknar de som används för att skapa segment. Mer information om hur du arbetar med regelbyggararbetsytan finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#rule-builder-canvas).
 
     ![](assets/conditions-create.png)
     
     Attribut är ordnade i tre flikar:
     
-    **[!UICONTROL Profile]**:
-    **[!UICONTROL Audiences]** visar alla målgruppsattribut (t.ex. status, version osv.) for [Adobe Experience Platform Segmentation service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html),
-    **[!UICONTROL XDM Individual profiles]** listar alla profilattribut som är kopplade till [Experience Data Model (XDM)-schemat](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) som definieras i Adobe Experience Platform.
-    **[!UICONTROL Contextual]**: När ditt meddelande används i en resa är fält för sammanhangsberoende resa tillgängliga via den här fliken.
-    **[!UICONTROL Audiences]**: visar en lista över alla målgrupper som genererats från segmentdefinitioner som skapats i [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
+    * **[!UICONTROL Profile]**:
+    * **[!UICONTROL Audiences]** visar alla målgruppsattribut (dvs. status, version osv.) för [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html),
+    * **[!UICONTROL XDM Individual profiles]** listar alla profilattribut som är kopplade till [Experience Data Model (XDM) schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) som definierats i Adobe Experience Platform.
+    * **[!UICONTROL Contextual]**: När ditt meddelande används i en resa är sammanhangsberoende resefält tillgängliga via den här fliken.
+    * **[!UICONTROL Audiences]**: visar alla målgrupper som genererats från segmentdefinitioner som skapats i [Adobe Experience Platform Segmentation Service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
 
 1. När den villkorliga regeln är klar kan du lägga till den i meddelandet för att skapa dynamiskt innehåll. [Lär dig hur du lägger till dynamiskt innehåll](dynamic-content.md)
 
-   Du kan också spara regeln för att tillåta ytterligare återanvändning. [Lär dig spara ett villkor](#save)
+   Du kan också spara regeln för att tillåta ytterligare återanvändning. [Lär dig hur du sparar ett villkor](#save)
 
 ## Spara en villkorlig regel {#save}
 
@@ -80,7 +80,7 @@ Om det finns villkorsregler som du ofta återanvänder kan du spara dem i villko
 >
 >Villkorliga regler som utnyttjar resans kontextattribut kan inte sparas i biblioteket.
 
-1. Klicka på knappen **[!UICONTROL Save condition]** -knappen.
+1. Klicka på knappen **[!UICONTROL Save condition]** på skärmen för villkorsutgåvan.
 
 1. Ge regeln ett namn och en beskrivning (valfritt) och klicka sedan på **[!UICONTROL Add]**.
 

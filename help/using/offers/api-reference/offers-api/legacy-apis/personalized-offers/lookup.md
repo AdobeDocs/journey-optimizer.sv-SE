@@ -9,7 +9,7 @@ exl-id: 679f2229-19c6-47f9-b293-e1c3c8dcb61e
 source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
 workflow-type: tm+mt
 source-wordcount: '178'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Ett personaliserat erbjudande är ett anpassningsbart marknadsföringsmeddelande som baseras på regler och begränsningar för behörighet.
 
-Du kan slå upp specifika personliga erbjudanden genom att göra en GET-förfrågan till **Erbjudandebibliotek** API som innehåller antingen det anpassade erbjudandet `@id` eller namnet på det personaliserade erbjudandet i sökvägen.
+Du kan slå upp specifika anpassade erbjudanden genom att göra en GET-förfrågan till API:t **Offer Library** som innehåller antingen det anpassade erbjudandet `@id` eller namnet på det anpassade erbjudandet i sökvägen till förfrågan.
 
 **API-format**
 
@@ -30,7 +30,7 @@ GET /{ENDPOINT_PATH}/{CONTAINER_ID}/queries/core/search?schema={SCHEMA_PERSONALI
 | `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
 | `{CONTAINER_ID}` | Behållaren där personaliserade erbjudanden finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
 | `{SCHEMA_PERSONALIZED_OFFER}` | Definierar det schema som är associerat med personaliserade erbjudanden. | `https://ns.adobe.com/experience/offer-management/personalized-offer;version=0.5` |
-| `id` | En sträng som matchar `@id` enheternas egenskap. Strängen matchas exakt. Parametern id och name kan inte användas tillsammans. | `xcore:personalized-offer:124cc332095cfa74` |
+| `id` | En sträng som används för att matcha egenskapen `@id` för entiteterna. Strängen matchas exakt. Parametern id och name kan inte användas tillsammans. | `xcore:personalized-offer:124cc332095cfa74` |
 | `name` | En sträng som används för att matcha egenskapen xdm:name för entiteterna. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametrarna `id` och `name` kan inte användas tillsammans | `Discount offer` |
 
 **Begäran**
@@ -47,7 +47,7 @@ curl -X GET \
 
 **Svar**
 
-Ett godkänt svar returnerar information om placeringen inklusive information om ditt behållar-ID, instans-ID och unikt personligt erbjudande `@id`.
+Ett lyckat svar returnerar information om placeringen, inklusive information om ditt behållar-ID, instans-ID och det unika anpassade erbjudandet `@id`.
 
 ```json
 {

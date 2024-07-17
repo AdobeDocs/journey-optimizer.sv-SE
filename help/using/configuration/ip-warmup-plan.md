@@ -32,45 +32,45 @@ Vad du hittar i den här handboken:
 
 >[!ENDSHADEBOX]
 
-När du har skapat en eller flera [IP-kampanjer](ip-warmup-campaign.md) med en dedikerad yta och motsvarande alternativ aktiverat, kan du börja skapa din IP-värdplan.
+När du har skapat en eller flera [IP-värmeringskampanjer](ip-warmup-campaign.md) med en dedikerad yta och motsvarande alternativ aktiverat, kan du börja skapa din IP-värmerplan.
 
-Om du vill komma åt, skapa, redigera och ta bort IP-beredskapsplanerna måste du ha **[!UICONTROL Deliverability Consultant]** roller eller IP-värmeringsplanerrelaterade behörigheter.
+Om du vill få åtkomst till, skapa, redigera och ta bort IP-beredskapsplanerna måste du ha behörighet som är relaterad till rollen **[!UICONTROL Deliverability Consultant]** eller IP-beredningsplanerna.
 
 +++Lär dig hur du tilldelar rollen Deliverability Consultant eller IP Warmup-planerrelaterade behörigheter
 
 Åtkomstkontroll på objektnivå gör att du kan skydda data och ge specifik åtkomst för att visa och hantera dina planer. Om ingen etikett har tilldelats din IP-värmerappsplan öppnas den för visning och redigering av alla användare.
 
-Bevilja **[!UICONTROL View IP warmup plans]** behörigheter begränsar åtkomsten till att endast visa och publicera, samtidigt som **[!UICONTROL Manage IP warmup plans]** behörigheter tillåter användare att både visa och redigera planen.
+Om du ger behörigheten **[!UICONTROL View IP warmup plans]** begränsas åtkomsten till enbart visning och publicering, medan du tilldelar behörigheten **[!UICONTROL Manage IP warmup plans]** kan användare både visa och redigera planen.
 
-Så här tilldelar du motsvarande behörighet till en viss **[!UICONTROL Role]**:
+Så här tilldelar du motsvarande behörighet till en specifik **[!UICONTROL Role]**:
 
-1. Från [!DNL Permissions] -produkt, navigera till **[!UICONTROL Roles]** och välj den roll som du vill uppdatera med den nya **[!UICONTROL IP Warmup Configurations]** behörigheter.
+1. Navigera från produkten [!DNL Permissions] till menyn **[!UICONTROL Roles]** och välj den roll som du vill uppdatera med de nya **[!UICONTROL IP Warmup Configurations]** behörigheterna.
 
-1. Från **[!UICONTROL Role]** kontrollpanel, klicka **[!UICONTROL Edit]**.
+1. Klicka på **[!UICONTROL Edit]** på din **[!UICONTROL Role]**-instrumentpanel.
 
    ![](assets/ip_permissions_1.png)
 
-1. Dra och släpp **[!UICONTROL IP Warmup Configurations]** resurs för att tilldela behörighet.
+1. Dra och släpp **[!UICONTROL IP Warmup Configurations]**-resursen för att tilldela behörighet.
 
-1. Från **[!UICONTROL IP Warmup Configurations]** nedrullningsbar resursmeny, välj vilka behörigheter användaren behöver: **[!UICONTROL View IP Warmup Plans]**, **[!UICONTROL Manage IP Warmup Plans]** och/eller **[!UICONTROL View IP Warmup Reports]**. Du kan markera alla samtidigt om det behövs.
+1. I den nedrullningsbara listan **[!UICONTROL IP Warmup Configurations]**-resurser väljer du vilka behörigheter användaren behöver: **[!UICONTROL View IP Warmup Plans]**, **[!UICONTROL Manage IP Warmup Plans]** och/eller **[!UICONTROL View IP Warmup Reports]**. Du kan markera alla samtidigt om det behövs.
 
    ![](assets/ip_permissions_2.png)
 
 1. Klicka på **[!UICONTROL Save]**.
 
-Tilldela motsvarande roll till en **[!UICONTROL User]**:
+Så här tilldelar du motsvarande roll till en **[!UICONTROL User]**:
 
-1. Från [!DNL Permissions] -produkt, navigera till **[!UICONTROL Roles]** och väljer **[!UICONTROL Deliverability Consultant]** inbyggd roll.
+1. Navigera från produkten [!DNL Permissions] till menyn **[!UICONTROL Roles]** och välj den inbyggda rollen **[!UICONTROL Deliverability Consultant]**.
 
-1. Från **[!UICONTROL Role]** kontrollpanel, gå till **[!UICONTROL Users]** -fliken.
+1. Gå till fliken **[!UICONTROL Users]** från din **[!UICONTROL Role]**-kontrollpanel.
 
    ![](assets/ip_permissions_3.png)
 
-1. Klicka **[!UICONTROL Add user]** för att tilldela **[!UICONTROL Deliverability Consultant]** inbyggd roll.
+1. Klicka på **[!UICONTROL Add user]** för att tilldela den inbyggda rollen **[!UICONTROL Deliverability Consultant]**.
 
    ![](assets/ip_permissions_4.png)
 
-1. Välj **[!UICONTROL User]** och klicka **[!UICONTROL Save]**.
+1. Markera **[!UICONTROL User]** och klicka på **[!UICONTROL Save]**.
 
    ![](assets/ip_permissions_5.png)
 
@@ -84,11 +84,11 @@ Denna aktivitet utförs vanligtvis med hjälp av en expert på slutprodukter som
 
 <!--When working with the [!DNL Journey Optimizer] IP warmup feature, this plan takes the form of an Excel file that must contain a number of predefined columns.-->
 
-Innan du kan skapa en IP-uppvärmningsplan i [!DNL Journey Optimizer] måste du fylla i en Excel-mall med alla data som matar in planen.
+Innan du kan skapa en IP-uppvärmningsplan i gränssnittet [!DNL Journey Optimizer] måste du fylla i en Excel-mall med alla data som matar in din plan.
 
-* I användargränssnittet kan du hämta den tomma Excel:n [Prenumerationsplanmall för IP-värmare](assets/IPWarmupPlan-Template.xlsx) fylla i.
+* Från användargränssnittet kan du hämta den tomma mallen [för IP-värmerappen](assets/IPWarmupPlan-Template.xlsx) för Excel för att fylla i den.
 
-* Du kan även hämta en [exempelplan för IP-värmare](assets/IPWarmupPlan-Sample.xlsx) som redan har fyllts i med data som du kan använda som exempel.
+* Du kan även hämta ett [exempel på en IP-värmare](assets/IPWarmupPlan-Sample.xlsx) som redan har fyllts i med data som du kan använda som exempel.
 
 <!--
 * From the user interface you can download the blank Excel IP warmup plan template to fill in.
@@ -108,15 +108,15 @@ Nedan visas ett exempel på en fil som innehåller en IP-värmerapport.
 
 ### Fliken IP Warmup Plan {#ip-warmup-plan-tab}
 
-* I det här exemplet har en plan förberetts som sträcker sig över 17 dagar (kallas&quot;**körningar**&#39;) för att nå en målvolym på över en miljon profiler.
+* I det här exemplet har en plan förberetts för att sträcka sig över 17 dagar (kallas **kör**) för att nå en målvolym på över en miljon profiler.
 
-* Detta planerade arbete pågår till sex **faser**, som alla innehåller minst en omgång.
+* Den här planerade åtgärden utförs genom sex **faser**, där var och en innehåller minst en körning.
 
-* Du kan ha upp till 6 kolumner (5 kolumner för domängrupper och en för **Övriga** kolumn). I det här exemplet är planen uppdelad i sex kolumner:
+* Du kan ha upp till 6 kolumner (5 kolumner för domängrupper och en för kolumnen **Övriga**). I det här exemplet är planen uppdelad i sex kolumner:
 
-   * Fyra av dessa motsvarar **färdiga domängrupper** som du kan använda i din plan (Gmail, Microsoft, Yahoo och Orange).
-   * Den ena motsvarar en anpassad domängrupp (som du måste lägga till med [Anpassad domängrupp](#custom-domain-group-tab) -fliken).
-   * Den sjätte kolumnen, **Övriga**, innehåller alla återstående adresser från andra domäner som inte uttryckligen omfattas av planen. Den här kolumnen är valfri: om den utelämnas kommer e-post endast att skickas till de angivna domänerna.
+   * Fyra av dem motsvarar **färdiga domängrupper** som du kan använda i din plan (Gmail, Microsoft, Yahoo och Orange).
+   * Den ena motsvarar en anpassad domängrupp (som du måste lägga till på fliken [Anpassad domängrupp](#custom-domain-group-tab)).
+   * Den sjätte kolumnen, **Övrigt**, innehåller alla återstående adresser från andra domäner som inte omfattas uttryckligen i planen. Den här kolumnen är valfri: om den utelämnas kommer e-post endast att skickas till de angivna domänerna.
 
 Tanken är att stegvis öka antalet måladresser i varje körning och samtidigt minska antalet körningar för varje fas.
 
@@ -140,53 +140,67 @@ De färdiga huvuddomängrupperna som du kan lägga till i din plan visas nedan:
 * Apple
 -->
 
-+++ Gmail gmail.com;google.com;googlemail.com;googlemail.co.uk
++++ Gmail
+gmail.com;google.com;googlemail.com;googlemail.co.uk
 +++
 
-+++WP wp.pl;o2.pl
++++WP
+wp.pl;o2.pl
 +++
 
-+++Comcast comcast.net
++++Comcast
+comcast.net
 +++
 
-+++Yahoo aol.fi;games.com;cs.com;yahoo.com.in;y7mail.com;yahoo.co.uk;yahoo.hu;yahoo.co.hu;yahoo.cn;yahoogroups.com.sg;yahoogroups.com.au;aol.es;yahoo.com.au;yahoo.com.vn;yahoo.ca;aol.hk;dina aktiviteter;åolpoland.pl;aolnorge.no;din tur;yahoo.fi;dina;öppningar;öppningar;ååååååååååååååååååååååååå;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;er;yahoo.hr;aol.cz;yahoo.ee;aol.be;aolcom.tr;yahoo.si;din tur;aol.it;din tur;yahoo.es;yahoo.dk;yahoogroups.ca;din tur;aol.kr;yahoo.ie;aol.jp;din hoo.lt;din tur;aol.nl;din tur;yahoo.bg;din tur;din tur;aol.se;din tur;yahoo.de;din tur;din tur;yahoo.nl;din tur;aol.dk;din tur;åhoo.cz;din;din o.sk;inrapportering;yahoogroups.de;yahoo.gr;inrapportering;inrapportering;yahoo.ro;inrapportering;yahoo.at;inrapportering;inrapportering;aol.fr;yahoo.in;aol.in;din inrapportering;yahoo.rs;aol.de;din indelning;inrapportering;inrapportering;yahoo.se;myaol.jp;åååå.pt;ååååå;ååååå;ååååå.dk;yahoo.fr;åååå;ååååå;åååååå;åååååå;ååååå;ååååå;åååååå;åååååå.cl;ååååååååååååå;ååååååååååååååååååååååååå;åå;åååååååååååååååååå;åå;ååååååååååå;åååååååååååååååå;åå;ååååå100;inrapportering;inrapportering;yahoo.be;inrapportering;aol.tw;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;aol.ru;inrapportering;inrapportering;yahoo.lv;aolpolska.pl;aol.at;yahoo.pl
++++Yahoo
+aol.fi;games.com;cs.com;;yahoo.com.in;y7mail.com;yahoo.co.uk;yahoo.hu;yahoo.co.hu;yahoo.cn;yahoogroups.com.sg;yahoogroups.com.au;aol.es;yahoo.com.au;yahoo.com.vn;yahoo.ca;aol.hk;din;din tur;aolpoland.pl;aolnorge.no;din;yahoo.fi;din;din;din;din;din;din;din;din;på;på;på;på;på;på;på;din;på;på;på;på;på;på;på;på;på;på;på;på;på;på;på;på;på;på;på;på;;;;;;;;;aol.cz;yahoo.ee;aol.be;aolcom.tr;yahoo.si;din tur;aol.it;din tur;yahoo.es;yahoo.dk;yahoogroups.ca;din tur;din;aol.kr;yahoo.ie;aol.jp;din;yahoo.lt;ahoo;ahoo;ahoo.se;ahoo;ahoo.se;ahoo;ahoo;ahoo;ahoo.se;se;ahoo.ahoo;ahoo;aoeaoeahoo.aeaeaeaeaeahoo.se;ahoo.aeaoeaoeaeaeae;aol.nl;åååå.bg;åååå;åååå;åååå;åååå;åååå;åååå;åååå;ååååå;ååååå;ååååå;åahoo.cz;åååååå;ååååå;ååååå;ååååååå;åååååååååååååååå;ååååååååååååååååååå;åååååååååååååååååå;åå;åå;ååååååååååååååååå;åååååååå;åå;åååååahoogroups.de;yahoo.gr;inrapportering;yahoo.ro;inbud;åahoo.at;inrapportering;inrapportering;aol.fr;yahoo.in;aol.in;din inrapportering;yahoo.rs;aol.de;din inrapportering;din inrapportering;inrapportering;inrapportering;infallande;yahoo.se;myahoo.yahoo.se;myaool.jp inrapportering;yahoo.pt;inrapportering;inrapportering;yahoodina.dk;yahoo.fr;inrapportering;inrapportering;aol.pl;inrapportering;aol.ch;yahoo.it;inrapportering;inrapportering;aolpolcka.pl;inrapportering;yahoogruppi.it;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;yahoo.be;åligganden;åå.tw;åligganden;åligganden;åligganden;åligganden;åååå;åååå;åååå;åååååååå.lv;aolpolska.pl;aol.at;yahoo.pl
 +++
 
-+++Bigpond bigpond.com;bigpond.com.au;bigpond.net;telstra.com;bigpond.net.au
++++Bigpond
+bigpond.com;bigpond.com.au;bigpond.net;telstra.com;bigpond.net.au
 +++
 
-+++Orange voila.com;francetelecom.com;orange.com;orange.fr;wanadoo.fr;voila.fr
++++Orange
+voila.com;francetelecom.com;orange.com;orange.fr;wanadoo.fr;voila.fr
 +++
 
-+++Softbank c.vodafone.ne.jp;jp-h.ne.jp;k.vodafone.ne.jp;;jp-d.ne.jp;jp-c.ne.jp;t.vodafone.ne.jp;h.vodafone.ne.jp;r.vodafone.ne.jp;q.vodafone.ne.jp;jp-t.ne.jp;bud;bud;bud;bud;kontrakt;kontrakt;bud;kontrakt;kontrakt;kontrakt
++++Softbank
+c.vodafone.ne.jp;jp-h.ne.jp;k.vodafone.ne.jp;jp-d.ne.jp;jp-q.ne.jp;jp-c.ne.jp;t.vodafone.ne.jp;h.vodafone.ne.jp;r.vodafone.ne.jp;q.vodafone.ne.jp;jp-t.ne.jp;åligganden;åligganden;åligganden;åligganden;avslutning
 +++
 
-+++Docomo docomo.ne.jp
++++Docomo
+docomo.ne.jp
 +++
 
-+++United Internet gmx.de;1and1.com;gmx.fr;mail.com;1und1.de;gmx.com;gmx.net;gmx.at;web.de;gmx.ch
++++United Internet
+gmx.de;1and1.com;gmx.fr;mail.com;1und1.de;gmx.com;gmx.net;gmx.at;web.de;gmx.ch
 +++
 
-+++Microsoft hotmail.com.tr;live.de;live.ru;live.nl;windowslive.com;live.jp;mts.net;xbox.com;hotmail.fr;hotmail.cl;hotmail.jp;live.cl;live.at;live.com.au;live.hk;hotmail.com.au;hotmail.co.th;hotmail.com;hotmail.co.kr;live.ie;dina tjänster;hotmail.dk;dina aktiviteter;din;din;utlook;utlook.ie;ie;ie;ie;ie;ie;klart.ie.ie;ie;klart;klart;in;in;in;se.se.se;in;in;in;in;in;live.se;live;live.se;live;live;live;live;live;live;live;live;live;live;live;live;live;live;live;live;live;live;live;live;live;live;live livd.cn;priser;hotmail.es;live.fr;live.no;live.dk;hotmail.it;din tur;livd.se;livd.be;din livesändning;livesändning;livesändning;hotmail.ch;din tur;din tur;hotmail.gr;livesändning;hotmail.ca;din;livesändning;hotmail.de.de
++++Microsoft
+hotmail.com.tr;live.de;live.ru;live.nl;windowslive.com;live.jp;mts.net;xbox.com;hotmail.fr;hotmail.cl;hotmail.jp;live.cl;live.at;live.com.au;live.hk;hotmail.com.au;hotmail.com;live.com.my;hotmail.co.kr;live.ie;dina tjänster;hotmail.dk;din tur;din;din;outlook.ie;live.cn;åligganden;väntande;hotmail.es;live.fr;live.no;live.dk;hotmail.it;dina aktiviteter;live.se;klart.att;live.in;live.in;hotmail.se;din tur;hotmail.ch;dina aktiviteter;din tur;hotmail.gr;livedatmail.ca;dina aktiviteter;live.ca;hotmail.de
 +++
 
-+++KDDI au.com;ezweb.ne.jp;uqmobile.jp
++++KDDI
+au.com;ezweb.ne.jp;uqmobile.jp
 +++
 
-+++Italia Online inwind.it;blu.it;virgilio.it;giallo.it;iol.it;libero.it
++++Italia online
+inwind.it;blu.it;virgilio.it;giallo.it;iol.it;libero.it
 +++
 
-+++La Poste laposte.net
++++La Poste
+laposte.net
 +++
 
-+++Apple mac.com;icloud.com;apple.com;me.com
++++Apple
+mac.com;icloud.com;apple.com;me.com
 +++
 
 ### Fliken Anpassad domängrupp {#custom-domain-group-tab}
 
 Du kan också lägga till fler kolumner i din plan genom att ta med anpassade domängrupper.
 
-Använd **[!UICONTROL Custom Domain Group]** för att definiera en ny domängrupp. För varje domän kan du lägga till alla underdomäner som den omfattar.<!--TBC-->
+Använd fliken **[!UICONTROL Custom Domain Group]** för att definiera en ny domängrupp. För varje domän kan du lägga till alla underdomäner som den omfattar.<!--TBC-->
 
 För domängrupper som används i den planen måste du se till att varje domän är unik för sin domängrupp och inte överlappar andra domängrupper. Eftersom globala domängrupper definieras automatiskt bör användare tänka på detta när de skapar anpassade domängrupper.
 
@@ -201,23 +215,23 @@ Säg att du vill ha två anpassade domängrupper:
 * En för Hotmail-domäner.
 * En för alla andra domäner i domängruppen Microsoft (och utesluter därmed alla Hotmail-domäner).
 
-Domäner utanför Hotmail och från domängruppen Microsoft samlas in i **[!UICONTROL Others]** kolumn.
+Domäner utanför Hotmail och från domängruppen Microsoft samlas i kolumnen **[!UICONTROL Others]**.
 
-1. I **[!UICONTROL Custom Domain Group]** -fliken, skapa **Hotmail** domängrupp.
+1. Skapa domängruppen **Hotmail** på fliken **[!UICONTROL Custom Domain Group]**.
 
 1. Lägg till alla Hotmail-domäner på samma rad.
 
-   Du kan [kopiera och klistra in](#copy-paste) alla Hotmail-domäner som listas i [Fliken IP Warmup Plan](#ip-warmup-plan-tab) -avsnitt.
+   Du kan [kopiera och klistra in](#copy-paste) alla Hotmail-domäner som listas på fliken [IP Warmup Plan](#ip-warmup-plan-tab).
 
 1. Lägg till en till rad.
 
-1. Skapa **Microsoft_X** domängrupp.
+1. Skapa domängruppen **Microsoft_X**.
 
 1. Lägg till alla Microsoft-domäner som inte är Hotmail på samma rad. På samma sätt kan du kopiera och klistra in dem från listan ovan. [Läs mer](#copy-paste)
 
-1. Gå tillbaka till **[!UICONTROL IP Warmup Plan]** -fliken.
+1. Gå tillbaka till fliken **[!UICONTROL IP Warmup Plan]**.
 
-1. Skapa tre kolumner: en för **Hotmail**, en för **Microsoft_X** och en för **Övriga**.
+1. Skapa tre kolumner: en för **Hotmail**, en för **Microsoft_X** och en för **Andra**.
 
 1. Fyll i kolumnerna efter behov.
 
@@ -225,34 +239,34 @@ Domäner utanför Hotmail och från domängruppen Microsoft samlas in i **[!UICO
 
 ### Kopiera och klistra in standarddomäner {#copy-paste}
 
-Om du vill skapa en anpassad domängrupp som innehåller alla Hotmail-domäner, till exempel, kan du kopiera och klistra in domänerna från standardlistan [ovan](#ip-warmup-plan-tab).
+Om du till exempel vill skapa en anpassad domängrupp som innehåller alla Hotmail-domäner kan du kopiera och klistra in domänerna från standardlistan [ovan](#ip-warmup-plan-tab).
 
 Använd sedan Excel-konverteringsverktyget för att konvertera text till kolumner:
 
-1. Välj **[!UICONTROL Data]** > **[!UICONTROL Text to columns...]**, välja **[!UICONTROL Delimited]** och markera **[!UICONTROL Next]**.
+1. Välj **[!UICONTROL Data]** > **[!UICONTROL Text to columns...]**, välj **[!UICONTROL Delimited]** och välj **[!UICONTROL Next]**.
 
-1. Välj **[!UICONTROL Semicolon]**, klicka **[!UICONTROL Next]** och **[!UICONTROL Finish]**.
+1. Välj **[!UICONTROL Semicolon]**, klicka på **[!UICONTROL Next]** och **[!UICONTROL Finish]**.
 
 Varje domän visas nu i en egen kolumn på samma rad.
 
 ## Få åtkomst till och hantera IP-värmerelayouter {#manage-ip-warmup-plans}
 
-1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL IP warmup plans]** -menyn. Alla IP-uppvärmningsplaner som har skapats hittills visas.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL IP warmup plans]**. Alla IP-uppvärmningsplaner som har skapats hittills visas.
 
    ![](assets/ip-warmup-filter-list.png)
 
 1. Du kan filtrera efter status. De olika statusvärdena är:
 
-   * **Inte startat**: ingen körning har aktiverats ännu. [Läs mer](ip-warmup-execution.md#define-runs)
-   * **Live**: planen ändras till den här statusen så snart den första körningen i den första fasen har aktiverats. [Läs mer](ip-warmup-execution.md#define-runs)
+   * **Inte igång**: Ingen körning har aktiverats än. [Läs mer](ip-warmup-execution.md#define-runs)
+   * **Live**: Planen ändras till den här statusen så snart den första körningen i den första fasen har aktiverats. [Läs mer](ip-warmup-execution.md#define-runs)
    * **Slutförd**: planen har markerats som slutförd. <!--This option is only available if all the runs in the plan are in **[!UICONTROL Completed]** or **[!UICONTROL Draft]** status (no run can be **[!UICONTROL Live]**).--> [Läs mer](ip-warmup-execution.md#mark-as-completed)
      <!--* **Paused**: to check (user action)-->
 
-1. Om du vill ta bort en IP-uppvärmningsplan väljer du **[!UICONTROL Delete]** -ikonen bredvid namnet på en plan och bekräfta borttagningen.
+1. Om du vill ta bort en IP-värdplan markerar du ikonen **[!UICONTROL Delete]** bredvid namnet på en plan och bekräftar borttagningen.
 
    >[!NOTE]
    >
-   >Endast planer med **Inte startat** kan tas bort.
+   >Endast planer med statusen **Inte startad** kan tas bort.
 
    ![](assets/ip-warmup-delete-plan.png)
 
@@ -277,7 +291,7 @@ Varje domän visas nu i en egen kolumn på samma rad.
 
 Följ stegen nedan om du vill skapa en IP-värmeringsplan.
 
-1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL IP warmup plans]** menyn och klicka sedan på **[!UICONTROL Create IP warmup plan]**.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL IP warmup plans]** och klicka sedan på **[!UICONTROL Create IP warmup plan]**.
 
    ![](assets/ip-warmup-create-plan.png)
 
@@ -285,7 +299,7 @@ Följ stegen nedan om du vill skapa en IP-värmeringsplan.
 
    ![](assets/ip-warmup-plan-details.png)
 
-1. Välj [yta](channel-surfaces.md) som du vill värma upp. Endast marknadsföringsytor är tillgängliga för urval. [Läs mer om e-posttyp](../email/email-settings.md#email-type)
+1. Markera den [yta](channel-surfaces.md) som du vill värma upp. Endast marknadsföringsytor är tillgängliga för urval. [Läs mer om e-posttyp](../email/email-settings.md#email-type)
 
    >[!NOTE]
    >
@@ -300,14 +314,14 @@ Följ stegen nedan om du vill skapa en IP-värmeringsplan.
 
    >[!NOTE]
    >
-   >Om överföringen misslyckas bör du kontrollera att du använder rätt format (.xls eller .xlsx). Använd [mall](assets/IPWarmupPlan-Template.xlsx) som tillhandahålls av Adobe.
+   >Om överföringen misslyckas bör du kontrollera att du använder rätt format (.xls eller .xlsx). Använd [mallen](assets/IPWarmupPlan-Template.xlsx) från Adobe.
 
-1. Klicka på **[!UICONTROL Create]**. Alla faser, körningar, kolumner och deras innehåll som definieras i den överförda filen visas automatiskt i [!DNL Journey Optimizer] gränssnitt.
+1. Klicka på **[!UICONTROL Create]**. Alla faser, körningar, kolumner och deras innehåll som definieras i filen som du överförde visas automatiskt i [!DNL Journey Optimizer]-gränssnittet.
 
    ![](assets/ip-warmup-plan-uploaded.png)
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Targeted]** kolumn visar summan av alla profiler som är avsedda för varje körning, vilket betyder alla profiler från varje domängrupp som du har definierat, inklusive **Övriga** kolumn om sådan finns.
+   >Kolumnen **[!UICONTROL Targeted]** visar summan av alla profiler som är avsedda för varje körning, vilket innebär alla profiler från alla domängrupper som du har definierat, inklusive kolumnen **Övriga** om det finns några.
 
 Du är nu redo att genomföra din IP-värmeringsplan. [Läs mer](ip-warmup-execution.md)

@@ -21,22 +21,22 @@ ht-degree: 0%
 På den här sidan hittar du en lista över Adobe Journey Optimizer datamängder och relaterade användningsfall:
 
 [Händelsedatauppsättning för e-postspårning](#email-tracking-experience-event-dataset)
-[Händelsedatauppsättning för meddelandefeedback](#message-feedback-event-dataset)
-[Händelsedatauppsättning för push-spårning](#push-tracking-experience-event-dataset)
+[ Händelsedatauppsättning för meddelandefeedback ](#message-feedback-event-dataset)
+[Push Tracking Experience, händelsedatauppsättning](#push-tracking-experience-event-dataset)
 [Resestegshändelse](#journey-step-event)
-[Datamängd för beslutshändelse](#ode-decisionevents)
-[BCC Feedback, händelsedatauppsättning](#bcc-feedback-event-dataset)
-[Enhetsdatauppsättning](#entity-dataset)
+[Information om beslutningshändelse](#ode-decisionevents)
+[BCC Feedback Event DataSet](#bcc-feedback-event-dataset)
+[Entitetsdatauppsättning ](#entity-dataset)
 
-Om du vill visa en fullständig lista över fält och attribut för varje schema läser du i [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
+Om du vill visa en fullständig lista över fält och attribut för varje schema kan du läsa [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
 
 ## Händelsedatauppsättning för e-postspårning{#email-tracking-experience-event-dataset}
 
-_Namn i gränssnittet: AJO Email Tracking Experience Event Dataset_
+_Namn i gränssnittet: AJO händelsedatauppsättning för e-postspårning_
 
 Systemdatauppsättning för inhämtning av e-postspårningshändelser från Journey Optimizer.
 
-Det relaterade schemat är AJO Email Tracking Experience Event Schema.
+Det relaterade schemat är AJO händelseschema för e-postspårning.
 
 Den här frågan visar antalet olika e-postinteraktioner (öppnas, klickas) för ett visst meddelande:
 
@@ -76,7 +76,7 @@ _Namn i gränssnittet: AJO Message Feedback Event Dataset_
 
 Datauppsättning för inmatning av e-post och push-meddelanden från Journey Optimizer.
 
-Det relaterade schemat är händelseschema för AJO-meddelandefeedback.
+Det relaterade schemat är AJO Message Feedback Event Schema.
 
 Den här frågan visar antalet olika e-postfeedbackstatusar (skickade, avhoppade osv.) för ett visst meddelande:
 
@@ -170,11 +170,11 @@ Ta bort adresserna från listan över Journey Optimizer-adresser när de har ide
 
 ## Händelsedatauppsättning för push-spårning {#push-tracking-experience-event-dataset}
 
-_Namn i gränssnittet: AJO Push Tracking Experience, händelsedatauppsättning_
+_Namn i gränssnittet: AJO Push Tracking Experience Event-datauppsättning_
 
 Datauppsättning för inhämtning av upplevelsehändelser för mobilspårning för push från Journey Optimizer.
 
-Det relaterade schemat är händelseschema för push-spårning av AJO.
+Det relaterade schemat är AJO Push Tracking Experience Event Schema.
 
 Frågeexempel:
 
@@ -338,7 +338,7 @@ _Namn i gränssnittet: ajo_entity_dataset (system dataset)_
 
 Datauppsättning som lagrar entitetsmetadata för meddelanden som skickas till slutanvändaren.
 
-Det relaterade schemat är AJO-entitetsschema.
+Det relaterade schemat är AJO entitetsschema.
 
 Den här datauppsättningen ger er tillgång till marknadsföringsdefinierade metadata som gör att ni får bättre rapportinsikter när Journey Optimizer datauppsättningar exporteras ut för att rapportera visualisering i externa verktyg. Detta uppnås med messageID-attributet som hjälper till att sammanfoga olika datauppsättningar, t.ex. datauppsättningar för meddelandefeedback och datauppsättningar för uppföljning av upplevelsehändelser, för att få information om en meddelandeleverans från sändning till spårning på profilnivå.
 

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Kom igång med e-postformat {#get-started-email-style}
 
-När du har börjat skapa e-postinnehåll i [!DNL Journey Optimizer]kan du justera ett antal formatparametrar och attribut från e-postdesignern **[!UICONTROL Styles]** fönster.
+När du har börjat skapa ditt e-postinnehåll i [!DNL Journey Optimizer] kan du justera ett antal formatparametrar och attribut från e-postfönstret i Designer **[!UICONTROL Styles]**.
 
 Du kan antingen tillämpa ändringarna på e-postbrödtexten, på en strukturkomponent eller på en innehållskomponent.
 
@@ -26,6 +26,6 @@ Du kan antingen tillämpa ändringarna på e-postbrödtexten, på en strukturkom
 
 Följ länkarna nedan om du vill veta hur du justerar vissa formatinställningar i ditt e-postmeddelande.
 
-* Lär dig hur [personalisera din e-postbakgrund](backgrounds.md)
-* Lär dig hur [hantera lodrät justering och utfyllnad](alignment-and-padding.md)
-* Lär dig hur [anpassa textbundna formatattribut](inline-styling.md)
+* Lär dig hur du [anpassar din e-postbakgrund](backgrounds.md)
+* Lär dig hur du [hanterar lodrät justering och utfyllnad](alignment-and-padding.md)
+* Lär dig hur du [anpassar textbundna formatattribut](inline-styling.md)

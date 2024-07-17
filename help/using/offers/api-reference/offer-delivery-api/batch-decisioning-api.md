@@ -9,24 +9,24 @@ exl-id: 1ed01a6b-5e42-47c8-a436-bdb388f50b4e
 source-git-commit: bab4cd8065830e36fd6188d3ebf0bd62a63947f3
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 
-# Leverera erbjudanden med [!DNL Batch Decisioning] API {#deliver-offers-batch}
+# Leverera erbjudanden med API:t [!DNL Batch Decisioning] {#deliver-offers-batch}
 
-The [!DNL Batch Decisioning] Med API kan organisationer använda beslutsfunktioner för alla profiler i en viss målgrupp i ett enda anrop. Erbjudandeinnehållet för varje profil i målgruppen placeras i en Adobe Experience Platform-datauppsättning där det är tillgängligt för anpassade grupparbetsflöden.
+Med API:t [!DNL Batch Decisioning] kan organisationer använda beslutsfunktioner för alla profiler i en viss målgrupp i ett enda anrop. Erbjudandeinnehållet för varje profil i målgruppen placeras i en Adobe Experience Platform-datauppsättning där det är tillgängligt för anpassade grupparbetsflöden.
 
-Med [!DNL Batch Decisioning] API kan ni fylla i en datauppsättning med de bästa erbjudandena för alla profiler i en Adobe Experience Platform-målgrupp för beslutsomfattningar. En organisation kanske vill köra [!DNL Batch Decisioning] så att de kan skicka erbjudanden till en meddelandeleverantör. Erbjudandena används sedan som innehåll som skickas ut för batchmeddelandeleverans till samma målgrupp.
+Med API:t [!DNL Batch Decisioning] kan du fylla i en datauppsättning med de bästa erbjudandena för alla profiler i en Adobe Experience Platform-målgrupp för beslutsomfattningar. En organisation kanske vill köra [!DNL Batch Decisioning] så att den kan skicka erbjudanden till en meddelandeleverantör. Erbjudandena används sedan som innehåll som skickas ut för batchmeddelandeleverans till samma målgrupp.
 
 För att göra detta skulle organisationen:
 
-* Kör [!DNL Batch Decisioning] API, som innehåller två begäranden:
+* Kör API:t [!DNL Batch Decisioning] som innehåller två begäranden:
 
-   1. A **Begäran om batchvis POST** för att starta en arbetsbelastning för att batchbearbeta erbjudandeval.
+   1. En **gruppbearbetningsbegäran** om att starta en arbetsbelastning för batchbearbetning av erbjudandeval.
 
-   2. A **Batchbegäran om GET** för att hämta batcharbetsbelastningsstatus.
+   2. En **Batch GET-begäran** om att hämta batcharbetsbelastningsstatus.
 
 * Exportera datauppsättningen till meddelandeleverantörens API.
 
@@ -34,10 +34,10 @@ För att göra detta skulle organisationen:
 
 >[!NOTE]
 >
->Gruppbeslut kan också utföras med Journey Optimizer gränssnitt. Mer information finns i [det här avsnittet](../../batch-delivery.md), som innehåller information om globala krav och begränsningar som ska beaktas vid gruppbeslut.
+>Gruppbeslut kan också utföras med Journey Optimizer gränssnitt. Mer information finns i [det här avsnittet](../../batch-delivery.md), som innehåller information om globala krav och begränsningar som ska beaktas när gruppbeslut används.
 
-* **Antalet batchjobb som körs per datamängd**: Upp till fem batchjobb kan köras åt gången, per datauppsättning. Alla andra gruppförfrågningar med samma utdatamängd läggs till i kön. Ett jobb i kö plockas upp för bearbetning när det föregående jobbet har slutförts.
-* **Frekvensbegränsning**: En batch körs bort från den profilögonblicksbild som inträffar en gång om dagen. The [!DNL Batch Decisioning] API kapslar frekvensen och läser alltid in profiler från den senaste ögonblicksbilden.
+* **Antalet batchjobb som körs per datamängd**: Upp till fem batchjobb kan köras åt gången, per datamängd. Alla andra gruppförfrågningar med samma utdatamängd läggs till i kön. Ett jobb i kö plockas upp för bearbetning när det föregående jobbet har slutförts.
+* **Frekvensbegränsning**: En grupp körs bort från profilögonblicksbilden som inträffar en gång om dagen. API:t [!DNL Batch Decisioning] kapslar frekvensen och läser alltid in profiler från den senaste ögonblicksbilden.
 
 ## Komma igång {#getting-started}
 
@@ -45,19 +45,19 @@ Innan du använder detta API måste du utföra följande steg.
 
 ### Förbered beslutet {#prepare-decision}
 
-Om du vill förbereda ett eller flera beslut måste du skapa en datauppsättning, en målgrupp och ett beslut. Dessa förutsättningar beskrivs närmare i [det här avsnittet](../../batch-delivery.md).
+Om du vill förbereda ett eller flera beslut måste du skapa en datauppsättning, en målgrupp och ett beslut. Dessa krav beskrivs i [det här avsnittet](../../batch-delivery.md).
 
 ### API-krav {#api-requirements}
 
-Alla [!DNL Batch Decisioning] kräver följande rubriker förutom de som anges i [Utvecklarhandbok för API för beslutshantering](../getting-started.md):
+Alla [!DNL Batch Decisioning]-begäranden kräver följande huvuden förutom de som refereras i [API-utvecklarhandboken för beslutshantering](../getting-started.md):
 
 * `Content-Type`: `application/json`
 * `x-request-id`: En unik sträng som identifierar begäran.
-* `x-sandbox-name`: Namn på sandlådan.
+* `x-sandbox-name`: Sandlådans namn.
 
 ## Starta en gruppbearbetning {#start-a-batch-process}
 
-Om du vill starta en arbetsbelastning för att gruppbearbeta beslut, skickar du en POST till `/workloads/decisions` slutpunkt.
+Om du vill starta en arbetsbelastning för att batchbearbeta beslut gör du en POST till slutpunkten `/workloads/decisions`.
 
 >[!NOTE]
 >
@@ -108,9 +108,9 @@ curl -X POST 'https://platform.adobe.io/data/core/dwm/workloads/decisions' \
 | `xdm:activityId` | Beslutets unika identifierare. | `xcore:offer-activity:1410cdcda196707b` |
 | `xdm:placementId` | Den unika placeringsidentifieraren. | `xcore:offer-placement:1410c4117306488a` |
 | `xdm:itemCount` | Det här är ett valfritt fält som visar antalet objekt, t.ex. alternativ som begärts för beslutsomfånget. Som standard returnerar API ett alternativ per omfång, men du kan uttryckligen be om fler alternativ genom att ange det här fältet. Minst 1 och högst 30 alternativ kan begäras per scope. | `1` |
-| `xdm:includeContent` | Detta är ett valfritt fält och är `false` som standard. If `true`, ingår erbjudandeinnehållet i beslutshändelserna för datauppsättningen. | `false` |
+| `xdm:includeContent` | Det här är ett valfritt fält och är `false` som standard. Om `true` inkluderas erbjudandeinnehållet i beslutshändelserna för datauppsättningen. | `false` |
 
-Se [Beslutsledningens dokumentation](../../get-started/starting-offer-decisioning.md) om du vill ha en översikt över de viktigaste begreppen och egenskaperna.
+I [beslutsdokumentationen](../../get-started/starting-offer-decisioning.md) finns en översikt över de viktigaste begreppen och egenskaperna.
 
 **Svar**
 
@@ -132,7 +132,7 @@ Se [Beslutsledningens dokumentation](../../get-started/starting-offer-decisionin
 
 ## Hämta information om ett batchbeslut {#retrieve-information-on-a-batch-decision}
 
-Om du vill hämta information om ett visst beslut skickar du en GET-förfrågan till `/workloads/decisions` slutpunkt när du anger motsvarande ID-värde för arbetsbelastning för ditt beslut.
+Om du vill hämta information om ett specifikt beslut gör du en GET-förfrågan till slutpunkten `/workloads/decisions` och anger motsvarande ID-värde för arbetsbelastning för ditt beslut.
 
 **API-format**
 
@@ -179,4 +179,4 @@ curl -X GET 'https://platform.adobe.io/data/core/dwm/workloads/decisions/f395ab1
 
 ## Nästa steg {#next-steps}
 
-Genom att följa den här API-guiden har du kontrollerat arbetsbelastningsstatus och levererade erbjudanden med hjälp av [!DNL] [!DNL Batch Decisioning]] API. Mer information finns i [Översikt över beslutsfattandet](../../get-started/starting-offer-decisioning.md).
+Genom att följa den här API-guiden har du kontrollerat arbetsbelastningsstatusen och levererat erbjudanden med API:t [!DNL [!DNL Batch Decisioning]]. Mer information finns i [översikten över beslutshantering](../../get-started/starting-offer-decisioning.md).

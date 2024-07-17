@@ -9,13 +9,13 @@ exl-id: 8f1fa116-30d2-4732-8973-bbce0dc66dec
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '88'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 # Slå upp reserverbjudanden {#look-up-fallback-offers}
 
-Du kan slå upp specifika reserverbjudanden genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller ID för reserverbjudande i sökvägen för begäran.
+Du kan slå upp specifika reserverbjudanden genom att göra en GET-förfrågan till [!DNL Offer Library]-API:t som innehåller reserverbjudandets ID i sökvägen för begäran.
 
 **API-format**
 

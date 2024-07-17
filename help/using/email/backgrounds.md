@@ -23,7 +23,7 @@ ht-degree: 0%
 >title="Bakgrundsinställningar"
 >abstract="Du kan anpassa bakgrundsfärgen eller bakgrundsbilden för innehållet. Observera att bakgrundsbilden inte stöds av alla e-postklienter."
 
-När det gäller att ange bakgrunder med e-postdesignern rekommenderar Adobe följande:
+När det gäller att ange bakgrunder med e-post-Designer rekommenderar Adobe följande:
 
 1. Använd en bakgrundsfärg på e-postmeddelandets brödtext om det behövs i designen.
 1. Vanligtvis anger du bakgrundsfärger på kolumnnivå.
@@ -31,11 +31,11 @@ När det gäller att ange bakgrunder med e-postdesignern rekommenderar Adobe fö
 
 Nedan visas de tillgängliga bakgrundsinställningarna som du kan använda.
 
-* Ange en **[!UICONTROL Background color]** för hela mejlet. Se till att du väljer brödtextinställningarna i navigeringsträdet som du kommer åt från den vänstra paletten.
+* Ange en **[!UICONTROL Background color]** för hela e-postmeddelandet. Se till att du väljer brödtextinställningarna i navigeringsträdet som du kommer åt från den vänstra paletten.
 
   ![](assets/background_1.png)
 
-* Ange samma bakgrundsfärg för alla strukturkomponenter genom att markera **[!UICONTROL Viewport background color]**. Med det här alternativet kan du välja en annan inställning från bakgrundsfärgen.
+* Ange samma bakgrundsfärg för alla strukturkomponenter genom att välja **[!UICONTROL Viewport background color]**. Med det här alternativet kan du välja en annan inställning från bakgrundsfärgen.
 
   ![](assets/background_2.png)
 
@@ -45,7 +45,7 @@ Nedan visas de tillgängliga bakgrundsinställningarna som du kan använda.
 
   ![](assets/background_3.png)
 
-* Ange en **[!UICONTROL Background image]** för innehållet i en strukturkomponent.
+* Ange **[!UICONTROL Background image]** för innehållet i en strukturkomponent.
 
   >[!NOTE]
   >

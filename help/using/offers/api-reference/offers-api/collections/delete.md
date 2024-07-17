@@ -9,13 +9,13 @@ exl-id: 2eaa0092-2436-4679-83f1-7530ab4a858f
 source-git-commit: ba7d065523116c12e22eec300df13c29d92a54fb
 workflow-type: tm+mt
 source-wordcount: '117'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
 # Ta bort en samling {#delete-collection}
 
-Ibland kan det vara nödvändigt att ta bort (DELETE) en samling. Detta görs genom att en DELETE-begäran görs till [!DNL Offer Library] API med `id` för den samling som du vill ta bort.
+Ibland kan det vara nödvändigt att ta bort (DELETE) en samling. Detta görs genom att utföra en DELETE-begäran till [!DNL Offer Library]-API:t med `id` för den samling som du vill ta bort.
 
 **API-format**
 

@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Använd dirigerade listor {#seed-lists}
 
-Seed-listor i [!DNL Journey Optimizer] gör att du automatiskt kan inkludera specifika dirigerade adresser i dina leveranser.
+Med hjälp av dirigeringslistor i [!DNL Journey Optimizer] kan du automatiskt inkludera specifika dirigeringsadresser i dina leveranser.
 
 >[!CAUTION]
 >
@@ -48,11 +48,11 @@ Seed-adresser är inte riktiga profiler eller testprofiler eftersom de inte inne
 
 >[!NOTE]
 >
->Varianter stöds, inklusive flerspråkiga varianter och experimentella varianter. Varje startadress får en kopia av varje variant av samma meddelande, t.ex. olika versioner från en [innehållsexperiment](../content-management/get-started-experiment.md). Observera att separata e-postmeddelanden inte skickas för villkorligt innehåll.
+>Varianter stöds, inklusive flerspråkiga varianter och experimentella varianter. Varje startadress får en kopia av varje variant av samma meddelande, t.ex. olika versioner från ett [innehållsexperiment](../content-management/get-started-experiment.md). Observera att separata e-postmeddelanden inte skickas för villkorligt innehåll.
 
 ## Åtkomst till startlistor {#access-seed-lists}
 
-Om du vill få tillgång till de startlistor som redan skapats går du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** och markera **[!UICONTROL Seed list]**.
+Gå till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** och välj **[!UICONTROL Seed list]** om du vill komma åt de startlistor som redan har skapats.
 
 <!--
 >[!CAUTION]
@@ -61,7 +61,7 @@ Om du vill få tillgång till de startlistor som redan skapats går du till **[!
 
 >[!CAUTION]
 >
->För att kunna visa, redigera och hantera dirigerade listor måste du ha **[!UICONTROL Manage Seedlist]** behörighet.
+>Om du vill kunna visa, redigera och hantera dirigerade listor måste du ha behörigheten **[!UICONTROL Manage Seedlist]**.
 
 ![](assets/seed-list-access.png)
 
@@ -69,7 +69,7 @@ Du kan söka efter dirigerade listor efter namn och/eller filtrera den användar
 
 ![](assets/seed-list-filtering.png)
 
-Använd **[!UICONTROL Delete]** om du vill ta bort en post permanent.
+Använd knappen **[!UICONTROL Delete]** om du vill ta bort en post permanent.
 
 >[!CAUTION]
 >
@@ -92,7 +92,7 @@ Du kan klicka på ett namn på en startlista om du vill redigera den. <!--Use th
 
 Följ stegen nedan för att skapa en startvärdeslista.
 
-1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL Seed list]** -menyn.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL Seed list]**.
 
 1. Markera knappen **[!UICONTROL Create seed list]**.
 
@@ -122,7 +122,7 @@ Följ stegen nedan för att skapa en startvärdeslista.
    >
    >Du kan kombinera båda alternativen, men det totala antalet adresser i en startvärdeslista får inte överstiga 50.
 
-1. Klicka **[!UICONTROL Create]** för att bekräfta. Listan med nyskapade startvärden visas i [Skärm för lista med startsidor](#access-seed-lists).
+1. Bekräfta genom att klicka på **[!UICONTROL Create]**. Den nyskapade startvärdeslistan visas på skärmen [Startlista](#access-seed-lists).
 
 ## Använd en startlista i en kampanj eller resa {#use-seed-list}
 
@@ -132,9 +132,9 @@ Nu när din startlista har skapats kan du använda den i alla kampanjer och unde
 >
 >Meddelanden som skickas till dirigerade adresser ingår inte i rese- eller kampanjrapporter.
 
-1. Skapa en yta och välj **[!UICONTROL Email]** kanal. [Läs mer](../email/email-settings.md)
+1. Skapa en yta och välj kanalen **[!UICONTROL Email]**. [Läs mer](../email/email-settings.md)
 
-1. Välj önskad lista i listan [motsvarande avsnitt](../email/email-settings.md#seed-list).
+1. Välj önskad startvärdeslista i [motsvarande avsnitt](../email/email-settings.md#seed-list).
 
    >[!NOTE]
    >
@@ -146,11 +146,11 @@ Nu när din startlista har skapats kan du använda den i alla kampanjer och unde
 
 1. Skapa en [kampanj](../campaigns/create-campaign.md) eller en [resa](../building-journeys/journey-gs.md).
 
-1. Välj **[!UICONTROL Email]** och väljer [yta](channel-surfaces.md) inklusive den utsädeslista som är relevant för dig.
+1. Välj åtgärden **[!UICONTROL Email]** och markera [ytan](channel-surfaces.md) med den startvärdeslista som är relevant för dig.
 
    ![](assets/seed-list-campaign-email.png)
 
-1. Aktivera [kampanj](../campaigns/review-activate-campaign.md) eller publicera [resa](../building-journeys/publishing-the-journey.md).
+1. Aktivera din [kampanj](../campaigns/review-activate-campaign.md) eller publicera din [resa](../building-journeys/publishing-the-journey.md).
 
 Varje gång ett e-postmeddelande skickas till kunderna via kampanjen eller resan får e-postadresserna på den valda startlistan också det på samma villkor, vid samma tidpunkt och med samma innehåll som målmottagarna.
 

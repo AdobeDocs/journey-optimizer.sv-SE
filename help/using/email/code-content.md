@@ -11,43 +11,43 @@ keywords: kod, HTML, redigerare
 exl-id: 5fb79300-08c6-4c06-a77c-d0420aafca31
 source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 5%
+source-wordcount: '180'
+ht-degree: 2%
 
 ---
 
 # Koda eget innehåll {#code-content}
 
-Använd **[!UICONTROL Code your own]** läge för att importera obearbetat HTML och/eller koda ditt e-postinnehåll. Den här metoden kräver kunskaper i HTML.
+Använd läget **[!UICONTROL Code your own]** för att importera oformaterat HTML och/eller koda ditt e-postinnehåll. Den här metoden kräver kunskaper i HTML.
 
-➡️ [Upptäck den här funktionen i en video](#video)
+➡️ [Upptäck den här funktionen i videon](#video)
 
 >[!CAUTION]
 >
-> Bilder från [Adobe Experience Manager Assets](../content-management/assets.md) kan inte refereras när den här metoden används. De bilder som refereras i HTML-koden måste lagras på en offentlig plats.
+> Det går inte att referera till bilder från [Adobe Experience Manager Assets](../content-management/assets.md) när den här metoden används. De bilder som refereras i HTML-koden måste lagras på en offentlig plats.
 
-1. På e-postdesignerns startsida väljer du **[!UICONTROL Code your own]**.
+1. Välj **[!UICONTROL Code your own]** på startsidan för e-post till Designer.
 
    ![](assets/code-your-own.png)
 
 1. Ange eller klistra in Raw-HTML-koden.
 
-1. Använd den vänstra rutan för att utnyttja [!DNL Journey Optimizer] personaliseringsfunktioner. [Läs mer](../personalization/personalize.md)
+1. Använd den vänstra rutan för att utnyttja [!DNL Journey Optimizer]-personaliseringsfunktioner. [Läs mer](../personalization/personalize.md)
 
    ![](assets/code-editor.png)
 
-1. Om du vill rensa ditt e-postinnehåll och starta ditt e-postmeddelande från en ny design väljer du **[!UICONTROL Change your design]** på Alternativ-menyn.
+1. Om du vill ta bort ditt e-postinnehåll och starta e-postmeddelandet från en ny design väljer du **[!UICONTROL Change your design]** på Alternativ-menyn.
 
    ![](assets/code-editor-change-design.png)
 
    >[!NOTE]
    >
-   >Den här åtgärden öppnar den valda mallen i e-postdesignern. Därifrån kan du antingen slutföra designen av ditt e-postmeddelande eller gå tillbaka till kodredigeraren med **[!UICONTROL Switch to code editor]** alternativ.
+   >Den här åtgärden öppnar den markerade mallen i e-post-Designer. Därifrån kan du antingen slutföra designen av ditt e-postmeddelande eller gå tillbaka till kodredigeraren med alternativet **[!UICONTROL Switch to code editor]**.
 
-1. Klicka på **[!UICONTROL Preview]** för att kontrollera meddelandets utformning och personalisering med testprofiler. [Läs mer](../content-management/preview-test.md)
+1. Klicka på knappen **[!UICONTROL Preview]** om du vill kontrollera meddelandets design och anpassning med testprofiler. [Läs mer](../content-management/preview-test.md)
 
    ![](assets/code-editor-preview.png)
 
-1. När koden är klar klickar du **[!UICONTROL Save]** går du tillbaka till skärmen för att skapa meddelanden för att slutföra meddelandet.
+1. När koden är klar klickar du på **[!UICONTROL Save]** och går sedan tillbaka till skärmen för att skapa meddelandet för att slutföra meddelandet.
 
    ![](assets/code-editor-save.png)

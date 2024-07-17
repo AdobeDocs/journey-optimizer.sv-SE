@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Översiktsrapporten ger användarna en detaljerad sammanfattning av trafik- och engagemangsmätningar för alla kampanjer och resor inom er miljö. Dessa mätvärden kombineras för att presentera enhetliga värden för åtgärder som kommer från olika kanaler, vilket omfattar olika kampanjer och resor.
 
-Du kommer åt översiktsrapporten genom att gå till **Rapporter** menyn i **Resehantering** -avsnitt.
+Du kommer åt översiktsrapporten genom att gå till menyn **Rapporter** i avsnittet **Resehantering** .
 
 Rapportsidan visas med följande flikar:
 
@@ -28,29 +28,29 @@ Rapportsidan visas med följande flikar:
 * [Kampanjer](#campaign)
 * [Kanaler](#channel)
 
-Mer information om Customer Journey Analytics Workspace och hur du filtrerar och analyserar data finns i [den här sidan](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
+Mer information om Customer Journey Analytics Workspace och hur du filtrerar och analyserar data finns på [den här sidan](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
 
 ## Högdagrar {#highlights}
 
 ![](assets/cja-highlights.png)
 
-The **[!UICONTROL Highlights]** KPI:er fungerar som en omfattande kontrollpanel med en detaljerad beskrivning av nyckeltal för alla kampanjer och resor i er miljö, så att ni snabbt kan utvärdera resultatet och identifiera områden som ska förbättras.
+KPI:erna för **[!UICONTROL Highlights]** fungerar som en omfattande kontrollpanel med en detaljerad beskrivning av nyckeltal för alla kampanjer och resor i din miljö, så att du snabbt kan utvärdera prestanda och identifiera områden som ska förbättras.
 
 +++ Läs mer om Highlights metrics
 
-* **[!UICONTROL Journey engagement]**: Totalt antal personer som interagerat med de meddelanden som skickats från resan.
+* **[!UICONTROL Journey engagement]**: Totalt antal personer som interagerat med meddelanden som skickats från resan.
 
-* **[!UICONTROL Journey Enters]**: Totalt antal personer som har nått ingångshändelsen för resan.
+* **[!UICONTROL Journey Enters]**: Totalt antal personer som har nått resans anmälningshändelse.
 
-* **[!UICONTROL Journey Failures]**: Totalt antal enskilda resor som inte slutfördes.
+* **[!UICONTROL Journey Failures]**: Totalt antal enskilda resor som inte kördes korrekt.
 
-* **[!UICONTROL Click through rate]**: Procentandel klick i meddelanden.
+* **[!UICONTROL Click through rate]**: Procentandel klick i dina meddelanden.
 
 * **[!UICONTROL Click-through open rate (CTOR)]**: Antal gånger som meddelandet öppnades.
 
 * **[!UICONTROL People]**: Antal användarprofiler som kvalificerar sig som målprofiler för dina meddelanden.
 
-* **[!UICONTROL Clicks]**: Antal gånger som användaren klickat på ett innehåll i dina meddelanden.
+* **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina meddelanden.
 
 * **[!UICONTROL Spam complaints]**: Antal gånger ett meddelande har deklarerats som skräppost eller skräppost.
 
@@ -62,17 +62,17 @@ The **[!UICONTROL Highlights]** KPI:er fungerar som en omfattande kontrollpanel 
 
 ![](assets/cja-channel-journeys.png)
 
-The **[!UICONTROL Journey]** tabellen fungerar som en omfattande kontrollpanel som ger en analys av viktiga mått som rör din resa. Det innehåller detaljer som antalet profiler som angetts och antalet misslyckade enskilda resor, vilket ger en grundlig förståelse för hur effektiv resan är och hur hög den är.
+Tabellen **[!UICONTROL Journey]** fungerar som en omfattande kontrollpanel som ger en analys av nyckeltal relaterade till din resa. Det innehåller detaljer som antalet profiler som angetts och antalet misslyckade enskilda resor, vilket ger en grundlig förståelse för hur effektiv resan är och hur hög den är.
 
 Genom att klicka på namnet på en resa som listas i tabellen kan du enkelt utforska varje resa individuellt och få omedelbar tillgång till den fullständiga rapporten på en ny flik.
 
 +++ Läs mer om resestatistik
 
-* **[!UICONTROL Journey Enters]**: Totalt antal personer som har nått ingångshändelsen för resan.
+* **[!UICONTROL Journey Enters]**: Totalt antal personer som har nått resans anmälningshändelse.
 
 * **[!UICONTROL Journey Exits]**: Totalt antal personer som avbrutit resan.
 
-* **[!UICONTROL Journey Failures]**: Totalt antal enskilda resor som inte slutfördes.
+* **[!UICONTROL Journey Failures]**: Totalt antal enskilda resor som inte kördes korrekt.
 
 +++
 
@@ -80,7 +80,7 @@ Genom att klicka på namnet på en resa som listas i tabellen kan du enkelt utfo
 
 ![](assets/cja-channel-campaigns.png)
 
-The **[!UICONTROL Campaign]** tabellfunktioner som en heltäckande kontrollpanel, med en detaljerad översikt över viktiga mätvärden för er kampanj. Det innehåller viktiga data som antal profiler och utskick, vilket ger er en heltäckande insikt i kampanjens resultat och engagemangsnivåer.
+Tabellen **[!UICONTROL Campaign]** fungerar som en heltäckande kontrollpanel, med en detaljerad översikt över viktiga mätvärden för kampanjen. Det innehåller viktiga data som antal profiler och utskick, vilket ger er en heltäckande insikt i kampanjens resultat och engagemangsnivåer.
 
 Genom att klicka på namnet på en kampanj i den här tabellen kan du enkelt utforska varje enskild kampanj och få omedelbar tillgång till den fullständiga rapporten på en ny flik.
 
@@ -92,7 +92,7 @@ Genom att klicka på namnet på en kampanj i den här tabellen kan du enkelt utf
 
 * **[!UICONTROL Displays]**: Antal gånger som meddelandet öppnades.
 
-* **[!UICONTROL Clicks]**: Antal gånger som användaren klickat på ett innehåll i dina meddelanden.
+* **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina meddelanden.
 
 +++
 
@@ -102,19 +102,19 @@ Genom att klicka på namnet på en kampanj i den här tabellen kan du enkelt utf
 
 ![](assets/cja-channels.png)
 
-The **[!UICONTROL Channels]** tabellen ger en detaljerad beskrivning av hur era profiler interagerar med era meddelanden på kanalnivå. På så sätt kan ni få djupare insikter i hur olika kanaler fungerar.
+Tabellen **[!UICONTROL Channels]** innehåller en detaljerad beskrivning av hur dina profiler interagerar med dina meddelanden på kanalnivå. På så sätt kan ni få djupare insikter i hur olika kanaler fungerar.
 
 +++ Läs mer om kanalstatistik
 
 * **[!UICONTROL People]**: Antal användarprofiler som kvalificerar sig som målprofiler för dina meddelanden.
 
-* **[!UICONTROL Click through rate]**: Procentandel klick i meddelanden.
+* **[!UICONTROL Click through rate]**: Procentandel klick i dina meddelanden.
 
 * **[!UICONTROL Sends]**: Totalt antal skickade meddelanden för varje kampanj.
 
 * **[!UICONTROL Displays]**: Antal gånger som meddelandet öppnades.
 
-* **[!UICONTROL Clicks]**: Antal gånger som användaren klickat på ett innehåll i dina meddelanden.
+* **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina meddelanden.
 
 +++
 
@@ -122,10 +122,10 @@ The **[!UICONTROL Channels]** tabellen ger en detaljerad beskrivning av hur era 
 
 ![](assets/cja-channels-outbound-errors.png)
 
-The **[!UICONTROL Outbound errors]** tabellen ger dig möjlighet att identifiera de exakta fel som har uppstått under sändningsprocessen, vilket ger en tydlig förståelse för eventuella problem som har uppstått.
+Tabellen **[!UICONTROL Outbound errors]** ger dig möjlighet att identifiera de exakta fel som uppstod under sändningsprocessen, vilket ger en tydlig förståelse för eventuella problem som påträffas.
 
 ### Utgående undantag
 
 ![](assets/cja-channels-outbound-excluded.png)
 
-The **[!UICONTROL Outbound exclusions]** tabellen ger en heltäckande bild av de olika faktorer som har lett till att användarprofiler har utelämnats från målgruppen, vilket leder till att meddelandet inte tas emot.
+Tabellen **[!UICONTROL Outbound exclusions]** innehåller en heltäckande vy över de olika faktorer som ledde till att användarprofiler exkluderades från målgruppen, vilket ledde till att meddelandet inte togs emot.

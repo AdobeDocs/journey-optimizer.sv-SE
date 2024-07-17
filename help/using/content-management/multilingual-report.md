@@ -18,24 +18,24 @@ ht-degree: 0%
 
 # Flerspråkig kampanjrapport {#multilingual-campaign-report}
 
-Globala rapporter, tillgängliga från **Alltid** visar du händelser som inträffade för minst två timmar sedan och täcker händelser under en viss tidsperiod. Kampanjens globala rapport kan nås direkt från er Campaign via **[!UICONTROL View report]** -knappen.
+Globala rapporter, som du kommer åt från fliken **All time**, visar händelser som inträffade för minst två timmar sedan och täcker händelser under en vald tidsperiod. Kampanjens globala rapport kan nås direkt från din kampanj med knappen **[!UICONTROL View report]**.
 
-Mer information om tillgängliga data i Campaign-rapporten finns i [den här sidan](../reports/campaign-global-report.md).
+Mer information om tillgängliga data i Campaign-rapporten finns på [den här sidan](../reports/campaign-global-report.md).
 
 ![](assets/report_multilingual.png)
 
-The **[!UICONTROL Email sending statistics by languages]** information om hur framgångsrik leveransen är beroende på din **[!UICONTROL Locales]**:
+Widgeten **[!UICONTROL Email sending statistics by languages]** visar hur framgångsrik leveransen är beroende på din **[!UICONTROL Locales]**:
 
 * **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
 
-* **[!UICONTROL Bounces]**: Totalt antal fel som har ackumulerats under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.
+* **[!UICONTROL Bounces]**: Totalt antal fel som har ackumulerats under leverans och automatisk returbearbetning i relation till totalt antal skickade meddelanden.
 
 * **[!UICONTROL Errors]**: Totalt antal fel som uppstod under en leverans och som förhindrar att den skickas till profiler.
 
-The **[!UICONTROL Email tracking statistics by languages]** widgeten innehåller tillgängliga data för mottagaraktivitet för leveransen beroende på din **[!UICONTROL Locales]**:
+Widgeten **[!UICONTROL Email tracking statistics by languages]** innehåller tillgängliga data för mottagaraktivitet för leveransen beroende på din **[!UICONTROL Locales]**:
 
 * **[!UICONTROL Unsubscribes]**: Antal klick på länken för att avbryta prenumerationen.
 
 * **[!UICONTROL Opens]**: Antal gånger som meddelandet öppnades.
 
-* **[!UICONTROL Clicks]**: Antal gånger som användaren klickat på ett innehåll.
+* **[!UICONTROL Clicks]**: Antal gånger som användaren klickade på ett innehåll.

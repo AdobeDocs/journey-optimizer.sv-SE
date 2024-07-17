@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Publicera resan
+title: Publish hela resan
 description: Lär dig hur du publicerar en resa
 feature: Journeys
 topic: Content Management
@@ -16,18 +16,18 @@ ht-degree: 1%
 
 ---
 
-# Publicera din resa{#publishing-the-journey}
+# Publish din resa{#publishing-the-journey}
 
 Du kan publicera en resa efter att ha testat dess giltighet.
 
-➡️ [Upptäck den här funktionen i video](#video)
+➡️ [Upptäck den här funktionen i videon](#video)
 
 Om du behöver göra ändringar i en publicerad resa måste du skapa en ny version av din resa. Se [den här sidan](../building-journeys/journey.md). När en resa är skrivskyddad kan du bara ändra aktivitetsetiketter och beskrivningar, kundens namn och resans beskrivning.
 
 Om du avbryter en resa stoppas den permanent. Alla personer som flyter på resan kommer att stoppas permanent och resan kommer att upphöra så att nya deltagare tillåts. Om du behöver använda resan igen måste du duplicera den och publicera den.
 
 1. Innan du publicerar din resa kontrollerar du att den är giltig och att det inte finns något fel. Du kommer inte att kunna publicera en resa med fel. Se [det här avsnittet](../building-journeys/troubleshooting.md#checking-for-errors-before-testing). Vi rekommenderar även att du testar din resa innan du publicerar den. Läs [den här sidan](../building-journeys/testing-the-journey.md).
-1. Klicka på **[!UICONTROL Publish]** i den övre högra menyn.
+1. Om du vill publicera resan klickar du på alternativet **[!UICONTROL Publish]** som finns i den övre högra menyn.
 
    ![](assets/journeyuc1_18.png)
 

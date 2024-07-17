@@ -37,7 +37,7 @@ Konvertering
 
 >[!NOTE]
 >
->Tidszons-ID måste vara en strängkonstant. Det kan inte vara en fältreferens eller ett uttryck. Mer information om datatyper finns i [den här sidan](../expression/data-types.md).
+>Tidszons-ID måste vara en strängkonstant. Det kan inte vara en fältreferens eller ett uttryck. Mer information om datatyper finns på [den här sidan](../expression/data-types.md).
 
 ## Underskrifter och returnerade typer
 
@@ -74,15 +74,15 @@ Return a datetime.
 
 `toDateTime ("2023-08-18T23:17:59.123Z")`
 
-Returnerar 2023-08-18T23:17:59,123Z
+Returnerar 2023-08-18T23:17:59.123Z
 
 `toDateTime(toDateTimeOnly("UTC", "2023-08-18T23:17:59.123"))`
 
-Returnerar 2023-08-18T23:17:59,123Z
+Returnerar 2023-08-18T23:17:59.123Z
 
 `toDateTime(1560762190189)`
 
-Returer 2023-06-17T09:03:10,189Z
+Returnerar 2023-06-17T09:03:10.189Z
 
 <!--`toDateTime ("2016-08-18T23:17:59.123", "UTC")`
 

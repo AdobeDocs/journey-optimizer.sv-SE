@@ -16,7 +16,7 @@ ht-degree: 5%
 
 # toDateOnly{#toDateOnly}
 
-Konverterar ett argument till ett dateOnly-typvärde. Mer information om datatyper finns i [section](../expression/data-types.md).
+Konverterar ett argument till ett dateOnly-typvärde. Mer information om datatyper finns i [avsnittet](../expression/data-types.md).
 
 ## Kategori
 
@@ -30,7 +30,7 @@ Konvertering
 
 | Parameter | Typ |
 |-----------|------------------|
-| Strängbeteckning för ett datum som &quot;YYY-MM-DD&quot; (XDM-format). Stöder även ISO-8601-format: endast **fulldatum** part beaktas (se [RFC 3339, avsnitt 5.6](https://www.rfc-editor.org/rfc/rfc3339#section-5.6) | string |
+| Strängbeteckning för ett datum som &quot;YYY-MM-DD&quot; (XDM-format). Stöder även ISO-8601-format: endast **heldatum**-delen beaktas (se [RFC 3339, avsnitt 5.6](https://www.rfc-editor.org/rfc/rfc3339#section-5.6)) | string |
 | tid | dateTime |
 | datum tid utan tidszon | dateTimeOnly |
 | heltalsvärde för en epok i millisekunder | heltal |

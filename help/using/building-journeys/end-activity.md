@@ -23,6 +23,6 @@ ht-degree: 7%
 >title="Avsluta aktivitet"
 >abstract="Med aktiviteten Slutför kan du markera slutet på varje väg på resan. Det är inte obligatoriskt men rekommenderas för att synskärpan ska bli tydlig. Om resan har flera slutaktiviteter rekommenderar vi att du lägger till en etikett i varje ände för att göra rapporter enklare att läsa."
 
-The **[!UICONTROL End]** kan du markera slutet på varje väg på resan. Det är inte obligatoriskt men rekommenderas för att synskärpan ska bli tydlig. Om resan har flera slutaktiviteter rekommenderar vi att du lägger till en etikett i varje ände för att göra rapporter enklare att läsa. Läs [den här sidan](../reports/live-report.md).
+Med aktiviteten **[!UICONTROL End]** kan du markera slutet på varje väg på resan. Det är inte obligatoriskt men rekommenderas för att synskärpan ska bli tydlig. Om resan har flera slutaktiviteter rekommenderar vi att du lägger till en etikett i varje ände för att göra rapporter enklare att läsa. Läs [den här sidan](../reports/live-report.md).
 
 ![](assets/journey54.png)

@@ -42,15 +42,15 @@ ht-degree: 0%
 
 Med Sandbox Tooling kan du kopiera objekt över flera sandlådor genom att utnyttja export och import av paket. Ett paket kan bestå av ett eller flera objekt. Alla objekt som ingår i ett paket måste komma från samma sandlåda.
 
-Den här sidan beskriver hur du använder sandlådeverktyg i Journey Optimizer. Mer information om själva funktionen finns i [Experience Platform dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html).
+Den här sidan beskriver hur du använder sandlådeverktyg i Journey Optimizer. Mer information om själva funktionen finns i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html).
 
 >[!NOTE]
 >
->Den här funktionen kräver följande behörigheter från **Sandlådeadministration** funktioner: Hantera sandlådor (eller Visa sandlådor) och Hantera paket. [Läs mer](../administration/ootb-permissions.md)
+>Den här funktionen kräver följande behörigheter från funktionen **Sandlådeadministration**: Hantera sandlådor (eller Visa sandlådor) och Hantera paket. [Läs mer](../administration/ootb-permissions.md)
 
 ## Kom igång med sandlådeverktyg{#sandbox-gs}
 
-Med Journey Optimizer kan du kopiera en hel resa från en sandlåda till en annan. Du kan t.ex. kopiera en resa från sandlådemiljön på scenen till produktionssandlådan. Förutom själva resan kopierar Journey Optimizer även de flesta av de objekt som resan är beroende av: målgrupper, scheman, händelser och handlingar. Mer information om kopierade objekt finns i [section](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html#abobe-journey-optimizer-objects).
+Med Journey Optimizer kan du kopiera en hel resa från en sandlåda till en annan. Du kan t.ex. kopiera en resa från sandlådemiljön på scenen till produktionssandlådan. Förutom själva resan kopierar Journey Optimizer även de flesta av de objekt som resan är beroende av: målgrupper, scheman, händelser och handlingar. Mer information om kopierade objekt finns i [avsnittet](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html#abobe-journey-optimizer-objects).
 
 >[!CAUTION]
 >
@@ -63,19 +63,19 @@ Kopieringsprocessen utförs via en paketexport och import mellan käll- och mål
 1. Lägg till resan som ett paket i källsandlådan.
 1. Exportera paketet till målsandlådan.
 
-Dessutom kan man utnyttja Journey Optimizer **REST API för objektkopieringstjänst** för att hantera sandlådans objekt. [Lär dig hur du arbetar med REST API för objektkopieringstjänsten](https://developer.adobe.com/journey-optimizer-apis/references/sandbox/)
+Dessutom kan du använda Journey Optimizer **Object Copy Service REST API** för att hantera sandlådeobjekt. [Lär dig hur du arbetar med REST API:t för objektkopieringstjänsten](https://developer.adobe.com/journey-optimizer-apis/references/sandbox/)
 
 ## Lägg till resan som ett paket{#export}
 
 Om du vill kopiera en resa till en annan sandlåda måste du först lägga till resan som ett paket i källsandlådan. Följ de här stegen:
 
-1. Klicka på **[!UICONTROL Journeys]**. Listan över resor visas.
+1. Klicka på **[!UICONTROL Journeys]** på menyn RESURSHANTERING. Listan över resor visas.
 
-1. Sök efter den resa du vill kopiera och klicka på **Fler åtgärder** ikon (de tre punkterna bredvid resans namn) och klicka på **Lägg till i paket**.
+1. Sök efter den resa du vill kopiera genom att klicka på ikonen **Fler åtgärder** (de tre punkterna bredvid resans namn) och klicka på **Lägg till i paket**.
 
    ![](assets/journey-sandbox1.png)
 
-   The **Lägg till i paket** visas.
+   Fönstret **Lägg till i paketet** visas.
 
    ![](assets/journey-sandbox2.png)
 
@@ -84,11 +84,11 @@ Om du vill kopiera en resa till en annan sandlåda måste du först lägga till 
    * **Befintligt paket**: välj paketet i listrutan.
    * **Skapa ett nytt paket**: skriv paketnamnet. Du kan också lägga till en beskrivning.
 
-1. Klicka på **[!UICONTROL Sandboxes]** väljer du **Paket** och klicka på det paket som du vill exportera.
+1. Klicka på **[!UICONTROL Sandboxes]** på menyn Administration, välj fliken **Paket** och klicka på det paket som du vill exportera.
 
    ![](assets/journey-sandbox3.png)
 
-1. Markera de objekt som du vill exportera och klicka på **Publicera**
+1. Markera de objekt som du vill exportera och klicka på **Publish**
 
    ![](assets/journey-sandbox4.png)
 
@@ -100,11 +100,11 @@ Om du vill kopiera en resa till en annan sandlåda måste du först lägga till 
 
 När paketet har publicerats måste du exportera det till målsandlådan.
 
-1. Klicka på **[!UICONTROL Sandboxes]** väljer du **Paket** och klicka på ikonen + bredvid det paket som du vill exportera.
+1. Klicka på menyn **[!UICONTROL Sandboxes]** i källsandlådan, välj fliken **Paket** och klicka på ikonen + bredvid det paket som du vill exportera.
 
    ![](assets/journey-sandbox5.png)
 
-1. Välj **Målsandlåda** i listrutan och klicka på **Nästa**. Endast sandlådor i din organisation är tillgängliga.
+1. Markera **målsandlådan** i listrutan och klicka på **Nästa**. Endast sandlådor i din organisation är tillgängliga.
 
    ![](assets/journey-sandbox6.png)
 
@@ -112,12 +112,12 @@ När paketet har publicerats måste du exportera det till målsandlådan.
 
    ![](assets/journey-sandbox7.png)
 
-1. Klicka på **Slutför** i det övre högra hörnet för att börja kopiera paketet till målsandlådan. Kopieringsprocessen varierar beroende på hur komplicerad resan är och hur många objekt som behöver kopieras.
+1. Klicka på knappen **Slutför** i det övre högra hörnet för att börja kopiera paketet till målsandlådan. Kopieringsprocessen varierar beroende på hur komplicerad resan är och hur många objekt som behöver kopieras.
 
 1. Klicka på importjobbet för att granska kopieringsresultatet:
 
-   * Klicka **Visa importerade objekt** för att visa varje enskilt objekt som har kopierats.
-   * Klicka **Visa importinformation** om du vill kontrollera importresultaten för varje objekt.
+   * Klicka på **Visa importerade objekt** om du vill visa varje kopierat objekt.
+   * Klicka på **Visa importinformation** för att kontrollera importresultaten för varje objekt.
 
    ![](assets/journey-sandbox8.png)
 

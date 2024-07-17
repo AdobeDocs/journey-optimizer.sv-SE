@@ -19,7 +19,7 @@ Beslutsregler läggs till i ett personaliserat erbjudande och tillämpas på en 
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
-I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
+I följande tabell visas giltiga värden som omfattar fälten *Content-Type* och *Accept* i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
@@ -72,7 +72,7 @@ curl -X POST \
 
 **Svar**
 
-Ett godkänt svar returnerar information om den nya beslutsregeln, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort din beslutsregel. Du kan använda din unika beslutsregel `@id` i en senare självstudiekurs för att skapa personaliserade erbjudanden.
+Ett lyckat svar returnerar information om den nyskapade beslutsregeln, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort din beslutsregel. Du kan använda din unika beslutsregel `@id` i en senare självstudie för att skapa anpassade erbjudanden.
 
 ```json
 {

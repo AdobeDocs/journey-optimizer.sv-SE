@@ -23,9 +23,9 @@ Leverans är ett mått på hur väl leveransen når mottagarnas inkorgar.
 >
 >För kunder som licensierar hälsovård använder Adobe TLS 1.2 (Transport Layer Security) för att säkra datautbytet mellan användarnas system (mottagare) och Journey Optimizer (avsändare). Om den mottagande e-postservern inte har stöd för TLS 1.2 kommer kunderna att få leveransproblem, inklusive e-poststudsar tillbaka till den ursprungliga avsändaren.
 
-**E-postleverans** avser den uppsättning egenskaper som avgör om ett meddelande kan nå sin destination via en personlig e-postadress inom en kort tid och med den förväntade kvaliteten i fråga om innehåll och format. Dessa egenskaper kan delas in i fyra huvudkategorier: datakvalitet, meddelande och innehåll, sändande infrastruktur och anseende. Tillsammans utgör de grunden för ett framgångsrikt program för e-postleverans.
+**E-postleveransen** refererar till den uppsättning egenskaper som avgör om ett meddelande kan nå sin destination via en personlig e-postadress inom en kort tid och med den förväntade kvaliteten i fråga om innehåll och format. Dessa egenskaper kan delas in i fyra huvudkategorier: datakvalitet, meddelande och innehåll, sändande infrastruktur och anseende. Tillsammans utgör de grunden för ett framgångsrikt program för e-postleverans.
 
-The **leveransgrad** är antalet meddelanden som når mottagarnas inkorgar jämfört med antalet meddelanden som levererades. Det beror på flera faktorer, särskilt:
+**Leveransgraden** är antalet meddelanden som når mottagarnas inkorgar jämfört med antalet meddelanden som levererats. Det beror på flera faktorer, särskilt:
 
 * Begränsade skräppostklagomål
 * Låga studsfrekvenser
@@ -33,9 +33,9 @@ The **leveransgrad** är antalet meddelanden som når mottagarnas inkorgar jämf
 * Meddelandeinnehåll
 * Avsändarens rykte
 
-För att optimera leveransen av [!DNL Journey Optimizer] rekommenderar vi att du använder de bästa metoderna som anges i det här avsnittet. Leveransproblem är i allmänhet kopplade till skydd mot skräppost som implementeras av Internet-leverantörer och e-postserveradministratörer.
+För att optimera leveransen av dina [!DNL Journey Optimizer]-upplevelser rekommenderar vi att du använder de bästa metoderna som listas i det här avsnittet. Leveransproblem är i allmänhet kopplade till skydd mot skräppost som implementeras av Internet-leverantörer och e-postserveradministratörer.
 
-En djupdykning i vad som är möjligt och mer information om termer, begrepp och metoder för leverans finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html){target="_blank"}.
+En djupdykning i vad som kan levereras och mer information om viktiga termer, begrepp och tillvägagångssätt för leverans finns i [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=sv){target="_blank"}.
 
 ## Minska antalet klagomål {#reduce-complaint-rate}
 
@@ -55,9 +55,9 @@ För att skydda leveransen utesluts de mottagare vars adresser finns med i lista
 
 ## Använd övervakningsverktyg {#monitoring-tools}
 
-Använd funktionerna i [!DNL Journey Optimizer] för att övervaka leveransen.
+Använd de funktioner som [!DNL Journey Optimizer] erbjuder för att övervaka din leveransbarhet.
 
-The **[!UICONTROL Executions]** -fliken i meddelandelistan gör att du kan kontrollera hur leveranserna fungerar med hjälp av en uppsättning realtidsindikatorer. På den här fliken visas bland annat:
+Fliken **[!UICONTROL Executions]** i meddelandelistan gör att du kan kontrollera hur dina leveranser fungerar med hjälp av en uppsättning realtidsindikatorer. På den här fliken visas bland annat:
 * Antalet meddelanden som har körts, skickats och levererats.
 * Antalet meddelanden som har öppnats och antalet meddelanden/länkar som har klickats.
 
@@ -67,9 +67,9 @@ I mindre utsträckning kan innehållet i vissa meddelanden identifieras som skr�
 
 Om du vill förbättra leveransgraden och se till att dina e-postmeddelanden når dina mottagare ska du följa principerna nedan när du utformar meddelandeinnehållet:
 
-* **Avsändarens namn och adress**: Adressen måste uttryckligen identifiera avsändaren. Domänen måste ägas av och registreras hos avsändaren. Domänregistret får inte privatiseras.
+* **Avsändarens namn och adress**: Adressen måste explicit identifiera avsändaren. Domänen måste ägas av och registreras hos avsändaren. Domänregistret får inte privatiseras.
 
-* **Avbeställ länk- och landningssida**: Avbeställningen är nödvändig. Den måste vara synlig och giltig och formuläret måste vara funktionellt.
+* **Avbeställ länk- och landningssida**: Avbeställningslänken är viktig. Den måste vara synlig och giltig och formuläret måste vara funktionellt.
 
 [Läs mer om hur du utformar e-postinnehåll](../email/get-started-email-design.md)
 
@@ -81,7 +81,7 @@ Om du nyligen har flyttat till en annan e-postleverantör, IP-adress, e-postdom�
 
 ## Implementera DMARC {#dmarc}
 
-För att hjälpa er att minska risken för att legitima e-postmeddelanden markeras som skräppost eller avvisas och för att förhindra leveransproblem, [!DNL Journey Optimizer] I kan du konfigurera DMARC-posten för alla underdomäner som du delegerar till Adobe.
+För att minska risken för att legitima e-postmeddelanden markeras som skräppost eller avvisas, och för att förhindra leveransproblem, kan du med [!DNL Journey Optimizer] konfigurera DMARC-posten för alla underdomäner som du delegerar till Adobe.
 
 Domänbaserad Message Authentication, Reporting och Conformance (DMARC) är en autentiseringsmetod som gör att domänägare kan skydda sin domän från obehörig användning av obehöriga aktörer.
 
@@ -91,7 +91,7 @@ Domänbaserad Message Authentication, Reporting och Conformance (DMARC) är en a
 
 En feedbackslinga (FBL) är en tjänst som erbjuds av vissa Internet-leverantörer som gör att e-postavsändaren automatiskt kan meddelas när den användare som tar emot ett e-postmeddelande väljer att markera det som skräppost (kallas även för ett klagomål).
 
-När en slutanvändare har skapat ett klagomål som skickas tillbaka till Adobe av Internet-leverantören, läggs e-postadressen automatiskt till i [utelämningslista](../reports/suppression-list.md) och exkluderas från framtida leveranser. Om du skickar e-post till användare som har markerat dem som skräppost påverkas avsändarens anseende negativt, vilket kan orsaka leveransproblem. [Läs mer om skräppostklagomål](../reports/suppression-list.md#spam-complaints)
+När en slutanvändare har genererat ett klagomål som skickas tillbaka till Adobe från Internet-leverantören, läggs e-postadressen automatiskt till i [listan över inaktiveringar](../reports/suppression-list.md) och tas inte med i kommande leveranser. Om du skickar e-post till användare som har markerat dem som skräppost påverkas avsändarens anseende negativt, vilket kan orsaka leveransproblem. [Läs mer om skräppostklagomål](../reports/suppression-list.md#spam-complaints)
 
 >[!IMPORTANT]
 >

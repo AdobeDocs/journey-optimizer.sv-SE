@@ -9,13 +9,13 @@ exl-id: 3099736d-7109-4c94-aea6-053a9b885278
 source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
 workflow-type: tm+mt
 source-wordcount: '165'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 # Söka efter en beslutsregel {#lookup-decision-rule}
 
-Du kan söka efter en specifik beslutsregel genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller antingen beslutsregeln `@id` eller namnet på beslutsregeln i sökvägen för begäran.
+Du kan söka efter en specifik beslutsregel genom att göra en GET-begäran till API:t [!DNL Offer Library] som innehåller antingen beslutsregeln `@id` eller namnet på beslutsregeln i sökvägen för begäran.
 
 **API-format**
 
@@ -28,7 +28,7 @@ GET /{ENDPOINT_PATH}/{CONTAINER_ID}/queries/core/search?schema={SCHEMA_ELIGIBILI
 | `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
 | `{CONTAINER_ID}` | Behållaren där beslutsreglerna finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
 | `{SCHEMA_ELIGIBILITY_RULE}` | Definierar det schema som är associerat med beslutsregler. | `https://ns.adobe.com/experience/offer-management/eligibility-rule;version=0.3` |
-| `id` | En sträng som matchar `@id` enheternas egenskap. Strängen matchas exakt. Parametern s `id` och `name` kan inte användas tillsammans. | `xcore:eligibility-rule:124e0faf5b8ee89b` |
+| `id` | En sträng som används för att matcha egenskapen `@id` för entiteterna. Strängen matchas exakt. Parametern `id` och `name` kan inte användas tillsammans. | `xcore:eligibility-rule:124e0faf5b8ee89b` |
 | `name` | En sträng som används för att matcha egenskapen xdm:name för entiteterna. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametrarna `id` och `name` kan inte användas tillsammans | `Sales rule` |
 
 **Begäran**
@@ -45,7 +45,7 @@ curl -X GET \
 
 **Svar**
 
-Ett godkänt svar returnerar detaljerna för den specifika beslutsregel du sökte efter, inklusive information om dess unika beslutsregel `id`.
+Ett lyckat svar returnerar information om den specifika beslutsregel du sökte efter, inklusive information om dess unika beslutsregel `id`.
 
 ```json
   {

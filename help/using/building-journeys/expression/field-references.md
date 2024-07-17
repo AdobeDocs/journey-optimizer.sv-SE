@@ -23,9 +23,9 @@ Om du använder specialtecken i ett fält måste du använda dubbla citattecken 
 
 * fältet börjar med numeriska tecken
 * fältet börjar med tecknet &quot;-&quot;
-* fältet innehåller något annat än _a_-_z_, _A_-_Z_, _0_-_9_, _ , _-_
+* fältet innehåller något annat än: _a_-_z_, _A_-_Z_, _0_-_9_, _, _-_
 
-Om fältet till exempel är _3 tim_: _#{OpenWeather.westData.rain.&#39;3h&#39;} > 0_
+Om fältet till exempel är _3h_: _#{OpenWeather.westData.rain.&#39;3h&#39;} > 0_
 
 ```json
 // event field
@@ -56,7 +56,7 @@ Ett standardvärde kan associeras med ett fältnamn. Syntaxen är följande:
 
 >[!NOTE]
 >
->Fälttypen och standardvärdet måste vara samma. Till exempel: `@event{LobbyBeacon.endUserIDs._experience.emailid.id, defaultValue : 2}` är ogiltigt eftersom standardvärdet är ett heltal medan det förväntade värdet ska vara en sträng.
+>Fälttypen och standardvärdet måste vara samma. `@event{LobbyBeacon.endUserIDs._experience.emailid.id, defaultValue : 2}` är till exempel ogiltigt eftersom standardvärdet är ett heltal medan det förväntade värdet ska vara en sträng.
 
 Exempel:
 
@@ -109,19 +109,19 @@ Exempel:
 
 ## Referens till ett fält som definieras i en karta
 
-### `entry` function
+### Funktionen `entry`
 
-För att kunna hämta ett element i en karta använder vi inmatningsfunktionen med en given nyckel. Det används till exempel när du definierar nyckeln för en händelse enligt det valda namnutrymmet. Mer information finns i [den här sidan](../../event/about-creating.md#select-the-namespace).
+För att kunna hämta ett element i en karta använder vi inmatningsfunktionen med en given nyckel. Det används till exempel när du definierar nyckeln för en händelse enligt det valda namnutrymmet. Mer information finns på [den här sidan](../../event/about-creating.md#select-the-namespace).
 
 ```json
 @event{MyEvent.identityMap.entry('Email').first().id}
 ```
 
-I det här uttrycket hämtar vi posten för nyckeln Email i fältet IdentityMap för en händelse. E-postposten är en samling från vilken vi tar ID:t i det första elementet med first(). Mer information finns i [den här sidan](../expression/collection-management-functions.md).
+I det här uttrycket hämtar vi posten för nyckeln Email i fältet IdentityMap för en händelse. E-postposten är en samling från vilken vi tar ID:t i det första elementet med first(). Mer information finns på [den här sidan](../expression/collection-management-functions.md).
 
-### `firstEntryKey` function
+### Funktionen `firstEntryKey`
 
-Om du vill hämta kartans första inmatningsnyckel använder du `firstEntryKey` funktion.
+Om du vill hämta den första startnyckeln för en karta använder du funktionen `firstEntryKey`.
 
 I det här exemplet visas hur du hämtar den första e-postadressen för prenumeranterna i en viss lista:
 
@@ -129,11 +129,11 @@ I det här exemplet visas hur du hämtar den första e-postadressen för prenume
 #{ExperiencePlatform.Subscriptions.profile.consents.marketing.email.subscriptions.entry('daily-email').subscribers.firstEntryKey()}
 ```
 
-I det här exemplet heter prenumerationslistan `daily-email`. E-postadresser definieras som nycklar i `subscribers` karta, som är länkad till prenumerationslistans karta.
+I det här exemplet heter prenumerationslistan `daily-email`. E-postadresser definieras som nycklar i kartan `subscribers` som är länkad till prenumerationslistans karta.
 
-### `keys` function
+### Funktionen `keys`
 
-Om du vill hämta nycklarna för en karta använder du `keys` funktion.
+Använd funktionen `keys` om du vill hämta alla nycklar för en karta.
 
 I det här exemplet visas hur du hämtar, för en viss profil, alla e-postadresser som är kopplade till prenumeranterna i en viss lista:
 
@@ -145,7 +145,7 @@ I det här exemplet visas hur du hämtar, för en viss profil, alla e-postadress
 
 Om du väljer ett fält från en extern datakälla som kräver att en parameter anropas, visas en ny flik till höger där du kan ange den här parametern. Läs [den här sidan](../expression/expressionadvanced.md).
 
-Om du vill inkludera parametrarna för datakällan i huvuduttrycket kan du definiera deras värden med nyckelordet för mer komplicerade användningsområden _parametrar_. En parameter kan vara vilket giltigt uttryck som helst, även från en annan datakälla som även innehåller en annan parameter.
+Om du vill ta med parametrarna för datakällan i huvuduttrycket kan du definiera deras värden med nyckelordet _params_ för mer komplexa användningsområden. En parameter kan vara vilket giltigt uttryck som helst, även från en annan datakälla som även innehåller en annan parameter.
 
 >[!NOTE]
 >

@@ -10,8 +10,8 @@ level: Experienced
 exl-id: 948fe843-47cf-4b20-976a-48069eb9cf5c
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 4%
+source-wordcount: '377'
+ht-degree: 3%
 
 ---
 
@@ -47,7 +47,7 @@ Värden:
 * http
 * capping
 * tidsgränsen
-* error
+* fel
 
 ## fetchErrorCode {#fetcherrorcode-field}
 
@@ -77,7 +77,7 @@ Typ: sträng
 
 ## fetchOriginErrorCode {#fetchoriginerrorcode-field}
 
-Felkoden som tillhandahålls av systemet [!DNL Journey Optimizer] frågar. Det kan till exempel vara en 404, 500 osv.
+Felkoden som tillhandahålls av systemet [!DNL Journey Optimizer] efterfrågas. Det kan till exempel vara en 404, 500 osv.
 
 Typ: sträng
 

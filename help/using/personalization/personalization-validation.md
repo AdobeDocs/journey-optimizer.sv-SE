@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Validering av personalisering
+title: Personalization-validering
 description: Läs mer om validering av personalisering och felsökning.
 feature: Personalization
 topic: Personalization
@@ -16,14 +16,14 @@ ht-degree: 0%
 
 ---
 
-# Validering av personalisering {#personalization-validation}
+# Personalization-validering {#personalization-validation}
 
 ## Valideringsmekanismer {#validation-mechanisms}
 
-I **personaliseringsredigerare** skärm, använd **Validera** för att kontrollera din personaliseringssyntax.
+Använd knappen **Validera** på skärmen **personaliseringsredigerare** för att kontrollera din personaliseringssyntax.
 
 >[!NOTE]
-> Valideringen utförs automatiskt när du klickar på **Lägg till** för att stänga redigeringsfönstret.
+> Valideringen körs automatiskt när du klickar på knappen **Lägg till** för att stänga redigeringsfönstret.
 >
 
 ![](assets/perso_validation1.png)
@@ -38,17 +38,17 @@ I **personaliseringsredigerare** skärm, använd **Validera** för att kontrolle
 
 När du försöker referera till ett fält som inte är definierat i schemat.
 
-I detta fall **firstName1** är inte definierad som attribut i profilschemat:
+I det här fallet har **firstName1** inte definierats som attribut i profilschemat:
 
 ```
 {{profile.person.name.firstName1}}
 ```
 
-* **Typmatchningsfel för variabeln XYZ. Förväntad array. En sträng hittades.**
+* **Typmatchningsfel för variabeln XYZ. Förväntad array. Hittade sträng.**
 
 När du försöker iterera över en sträng i stället för en array:
 
-I detta fall **produkt** är inte en array:
+I det här fallet är **product** inte en matris:
 
 ```
 {{each profile.person.name.firstName as |product|}}
@@ -56,7 +56,7 @@ I detta fall **produkt** är inte en array:
 {{/each}}
 ```
 
-* **Ogiltig syntax för verktygsfält. Hittade`‘[XYZ}}’`**
+* **Felaktig syntax för verktygsfält.`‘[XYZ}}’`** hittades
 
 När ogiltig syntax för verktygsfält används.
 
@@ -85,7 +85,7 @@ Valideringen utförs under innehållsvalideringen i personaliseringsredigeraren.
 <table> 
  <thead> 
   <tr> 
-   <th> Feltitel<br /> </th> 
+   <th> Feltitel <br /> </th> 
    <th> Validering/upplösning <br /> </th> 
   </tr> 
  </thead> 
@@ -114,8 +114,8 @@ Resurs med id activityID och typen OfferActivity hittades inte<br/></td>
   <tr> 
    <td>Erbjudandeattributet offer-attribute är ogiltigt.</td> 
    <td>Kontrollera om erbjudandeattributet som refereras i erbjudandeofferten är giltigt. Följande attribut är giltiga: <br/>
-Bild: deliveryURL, linkURL<br/>
-Text: innehåll<br/>
+Bild: deliveryURL, linkURL <br/>
+Text: content <br/>
 HTML: innehåll<br/></td> 
   </tr> 
  </tbody> 

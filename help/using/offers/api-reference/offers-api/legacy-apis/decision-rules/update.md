@@ -9,17 +9,17 @@ exl-id: 33da2c42-0c6c-49d3-bad8-1a85a5172cd8
 source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
 workflow-type: tm+mt
 source-wordcount: '121'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
 # Uppdatera en beslutsregel {#update-decision-rule}
 
-Du kan skapa ett reserverbjudande genom att göra en POST till [!DNL Offer Library] API, samtidigt som du anger ditt behållar-ID.
+Du kan skapa ett reserverbjudande genom att göra en POST-förfrågan till API:t [!DNL Offer Library] och samtidigt ange ditt behållar-ID.
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
-I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
+I följande tabell visas giltiga värden som omfattar fälten *Content-Type* och *Accept* i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
@@ -60,7 +60,7 @@ curl -X PATCH \
 
 **Svar**
 
-Ett godkänt svar returnerar den uppdaterade informationen om beslutsregeln, inklusive dess unika instans-ID och beslutsregel `@id`.
+Ett lyckat svar returnerar den uppdaterade informationen om beslutsregeln, inklusive dess unika instans-ID och beslutsregel `@id`.
 
 
 ```json

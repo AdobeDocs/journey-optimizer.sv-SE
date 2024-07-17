@@ -9,7 +9,7 @@ exl-id: de6a8da2-55cf-4105-ba93-40c556732626
 source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
 source-wordcount: '102'
-ht-degree: 5%
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ Använd kartfunktioner i personalisering för att underlätta interaktionen med 
 
 ## Hämta{#get}
 
-The `get` används för att hämta värdet för en karta för en viss nyckel.
+Funktionen `get` används för att hämta värdet för en karta för en given nyckel.
 
 **Syntax**
 
@@ -37,7 +37,7 @@ Följande åtgärd hämtar värdet för identitetskartan för nyckeln `example@e
 
 ## Tangenter{#keys}
 
-The `keys` används för att hämta alla nycklar för en viss karta.
+Funktionen `keys` används för att hämta alla nycklar för en given karta.
 
 **Syntax**
 
@@ -55,7 +55,7 @@ Följande åtgärd hämtar alla nycklar för kartan `identityMap`.
 
 ## Värden{#values}
 
-The `values` används för att hämta alla värden för en viss karta.
+Funktionen `values` används för att hämta alla värden för en given karta.
 
 **Syntax**
 

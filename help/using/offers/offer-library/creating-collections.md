@@ -8,8 +8,8 @@ level: Intermediate
 exl-id: 0c8808e3-9148-4a33-9fd5-9218e02c2dfd
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 2%
+source-wordcount: '358'
+ht-degree: 1%
 
 ---
 
@@ -22,27 +22,27 @@ ht-degree: 2%
 
 Med samlingar kan du ordna dina erbjudanden genom att gruppera om dem i olika kategorier. Du kan till exempel skapa en&quot;sport&quot;-samling som bara innehåller sportrelaterade erbjudanden.
 
-➡️ [Upptäck den här funktionen i en video](#video)
+➡️ [Upptäck den här funktionen i videon](#video)
 
-Listan med erbjudandesamlingar finns i **[!UICONTROL Offers]** -menyn.
+Listan med erbjudandesamlingar finns på menyn **[!UICONTROL Offers]**.
 
 ![](../assets/collections_list.png)
 
 Du kan skapa två typer av samlingar:
 
-* **Dynamiska samlingar** är samlingar av erbjudanden som baseras på samlingskvalificerare (som tidigare kallades &quot;taggar&quot;). Dessa samlingar uppdateras automatiskt. Om till exempel ett nytt erbjudande skapas med den valda samlingskvalificeraren läggs det automatiskt till i samlingen.
+* **Dynamiska samlingar** är samlingar med erbjudanden som baseras på samlingskvalificerare (som tidigare kallas taggar). Dessa samlingar uppdateras automatiskt. Om till exempel ett nytt erbjudande skapas med den valda samlingskvalificeraren läggs det automatiskt till i samlingen.
 
-* **Statiska samlingar** är samlingar som skapats genom att du manuellt väljer enskilda erbjudanden som ska ingå i samlingen. Samlingen kan bara uppdateras genom att fler erbjudanden läggs till manuellt.
+* **Statiska samlingar** är samlingar som har skapats genom att du manuellt väljer enskilda erbjudanden som ska ingå i samlingen. Samlingen kan bara uppdateras genom att fler erbjudanden läggs till manuellt.
 
 Så här skapar du en samling:
 
-1. Gå till **[!UICONTROL Collections]** tabbtangenten och klicka sedan på **[!UICONTROL Create collection]**.
+1. Gå till fliken **[!UICONTROL Collections]** och klicka sedan på **[!UICONTROL Create collection]**.
 
 1. Ange namn och typ av samling som ska skapas.
 
    ![](../assets/collection_create.png)
 
-1. Om du vill skapa en dynamisk samling använder du den vänstra rutan för att välja den som ska lägga till erbjudandena i samlingen. Klicka sedan på **[!UICONTROL Save]**. Alla erbjudanden med den valda samlingskvalificeraren sparas i samlingen.
+1. Om du vill skapa en dynamisk samling använder du den vänstra rutan för att välja den samlingskvalificerare som erbjudandena ska lägga till i samlingen. Klicka sedan på **[!UICONTROL Save]**. Alla erbjudanden med den valda samlingskvalificeraren sparas i samlingen.
 
    Mer information om att skapa samlingskvalificerare finns i [Skapa samlingskvalificerare](../offer-library/creating-tags.md).
 
@@ -56,7 +56,7 @@ Så här skapar du en samling:
    >
    >Statiska samlingar uppdateras inte automatiskt. Om du vill lägga till erbjudanden i en statisk samling måste du redigera den och lägga till dem manuellt.
 
-1. Om du vill tilldela anpassade eller grundläggande användningsrubriker till en statisk samling väljer du **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../../administration/object-based-access.md)
+1. Välj **[!UICONTROL Manage access]** om du vill tilldela etiketter för anpassad eller viktig dataanvändning till en statisk samling. [Läs mer om OLAC (Object Level Access Control)](../../administration/object-based-access.md)
 
    >[!NOTE]
    >

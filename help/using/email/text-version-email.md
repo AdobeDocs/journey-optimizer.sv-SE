@@ -20,15 +20,15 @@ ht-degree: 0%
 
 Vi rekommenderar att du skapar en textversion av e-postbrödtexten, som används när HTML inte kan visas.
 
-Som standard skapar e-postdesignern en **[!UICONTROL Plain text]** version av e-postmeddelandet, inklusive personaliseringsfält. Den här versionen genereras och synkroniseras automatiskt med HTML-versionen av ditt innehåll.
+Som standard skapar e-post-Designer en **[!UICONTROL Plain text]**-version av ditt e-postmeddelande, inklusive anpassningsfält. Den här versionen genereras och synkroniseras automatiskt med HTML-versionen av ditt innehåll.
 
 Om du föredrar att använda ett annat innehåll för den oformaterade textversionen följer du stegen nedan:
 
-1. I ditt e-postmeddelande väljer du **[!UICONTROL Plain text]** -ikon.
+1. Välj ikonen **[!UICONTROL Plain text]** i ditt e-postmeddelande.
 
    ![](assets/text_version_3.png)
 
-1. Använd **[!UICONTROL Sync with HTML]** om du vill inaktivera synkronisering.
+1. Använd växlingsknappen **[!UICONTROL Sync with HTML]** för att inaktivera synkronisering.
 
    ![](assets/text_version_1.png)
 
@@ -40,6 +40,6 @@ Om du föredrar att använda ett annat innehåll för den oformaterade textversi
 
 >[!CAUTION]
 >
->* Ändringar gjorda i **[!UICONTROL Plain text]** vyn inte visas i HTML.
+>* Ändringar som görs i vyn **[!UICONTROL Plain text]** visas inte i vyn HTML.
 >
->* Om du aktiverar **[!UICONTROL Sync with HTML]** när du har uppdaterat oformaterad text kommer ändringarna att gå förlorade och ersättas med textinnehåll som genererats från HTML-versionen.
+>* Om du återaktiverar alternativet **[!UICONTROL Sync with HTML]** efter att du har uppdaterat innehållet i oformaterad text, kommer ändringarna att gå förlorade och ersättas med textinnehåll som genererats från HTML-versionen.

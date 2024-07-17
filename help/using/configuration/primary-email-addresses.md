@@ -30,9 +30,9 @@ ht-degree: 0%
 
 När du anger en profil som mål kan det finnas flera e-postadresser eller telefonnummer i databasen (professionell e-postadress, personligt telefonnummer osv.).
 
-I så fall [!DNL Journey Optimizer] använder **[!UICONTROL Execution fields]** för att avgöra vilken e-postadress eller vilket telefonnummer som ska användas från profiltjänsten i prioritetsordning.
+I så fall använder [!DNL Journey Optimizer] **[!UICONTROL Execution fields]** för att avgöra vilken e-postadress eller vilket telefonnummer som ska användas från profiltjänsten i prioritetsordning.
 
-Om du vill kontrollera de fält som används som standard går du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL General]** > **[!UICONTROL Executions fields]** -menyn.
+Om du vill kontrollera de fält som används som standard går du till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL General]** > **[!UICONTROL Executions fields]** .
 
 ![](assets/primary-address-execution-fields.png)
 
@@ -46,9 +46,9 @@ I de flesta fall ändrar du ett körningsfält globalt och definierar ett värde
 
 Om du vill ändra körningsfälten globalt på sandlådenivå följer du stegen nedan.
 
-1. Öppna  **[!UICONTROL Channels]** > **[!UICONTROL General]** > **[!UICONTROL Executions fields]** -menyn.
+1. Gå till menyn **[!UICONTROL Channels]** > **[!UICONTROL General]** > **[!UICONTROL Executions fields]**.
 
-1. Klicka **[!UICONTROL Edit]** om du vill ändra standardvärdena.
+1. Klicka på **[!UICONTROL Edit]** om du vill ändra standardvärdena.
 
    ![](assets/primary-address.png)
 
@@ -60,7 +60,7 @@ Om du vill ändra körningsfälten globalt på sandlådenivå följer du stegen 
 
    ![](assets/primary-address-select-field.png)
 
-1. Klicka **[!UICONTROL Save]** för att bekräfta ditt val.
+1. Klicka på **[!UICONTROL Save]** för att bekräfta ditt val.
 
 Körningsfältet uppdateras och kommer nu att användas som primär adress.
 
@@ -70,17 +70,17 @@ Körningsfältet uppdateras och kommer nu att användas som primär adress.
 
 Endast för särskilda användningsfall kan du åsidosätta det körningsfält som ställts in globalt och definiera ett annat värde på resenivån, särskilt för e-postkanalen.
 
-När en **[!UICONTROL Email]** åtgärd till [resa](../email/create-email.md#create-email-journey-campaign)visas den primära e-postadressen under de avancerade parametrarna för resan.
+När du lägger till en **[!UICONTROL Email]**-åtgärd för en [resa](../email/create-email.md#create-email-journey-campaign) visas den primära e-postadressen under de avancerade parametrarna för resan.
 
-I vissa specifika sammanhang kan du åsidosätta det här värdet med **[!UICONTROL Enable parameter override]** ikonen till höger om **[!UICONTROL address]** fält.
+I vissa specifika sammanhang kan du åsidosätta det här värdet med ikonen **[!UICONTROL Enable parameter override]** till höger om fältet **[!UICONTROL address]**.
 
 ![](assets/journey-enable-parameter-override.png)
 
 >[!CAUTION]
 >
->Åsidosättning av e-postadresser ska endast användas för särskilda användningsfall. Oftast behöver du inte ändra e-postadressen eftersom värdet är definierat som den primära adressen i **[!UICONTROL Execution fields]** är den som bör användas.
+>Åsidosättning av e-postadresser ska endast användas för särskilda användningsfall. Oftast behöver du inte ändra e-postadressen eftersom det värde som definieras som primär adress i **[!UICONTROL Execution fields]** är den som ska användas.
 
 Att åsidosätta det här värdet kan vara användbart för att:
 
 * Testa ett mejl. Du kan lägga till en egen e-postadress: när du har publicerat resan skickas e-postmeddelandet till dig.
-* Skicka ett e-postmeddelande till prenumeranterna av en lista. Läs mer i [det här användningsfallet](../building-journeys/message-to-subscribers-uc.md).
+* Skicka ett e-postmeddelande till prenumeranterna av en lista. Läs mer i [det här användningsexemplet](../building-journeys/message-to-subscribers-uc.md).

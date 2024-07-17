@@ -18,11 +18,11 @@ ht-degree: 1%
 
 # Lägga till länkar och spåra meddelanden {#tracking}
 
-Använd [!DNL Journey Optimizer] för att lägga till länkar till ditt innehåll och spåra meddelanden som skickas för att övervaka mottagarnas beteende.
+Använd [!DNL Journey Optimizer] om du vill lägga till länkar till ditt innehåll och spåra meddelanden som skickats för att övervaka mottagarnas beteende.
 
 ## Aktivera spårning {#enable-tracking}
 
-Du kan aktivera spårning på e-postmeddelandenivå genom att kontrollera **[!UICONTROL Email opens]** och/eller **[!UICONTROL Click on email]** när du skapar ett meddelande inuti en resa eller kampanj.
+Du kan aktivera spårning på e-postmeddelandenivå genom att kontrollera alternativen **[!UICONTROL Email opens]** och/eller **[!UICONTROL Click on email]** när du skapar ditt meddelande inuti en resa eller kampanj.
 
 >[!BEGINTABS]
 
@@ -51,11 +51,11 @@ När du utformar ett meddelande kan du lägga till länkar till innehållet.
 
 >[!NOTE]
 >
->När [spårning är aktiverat](#enable-tracking)spåras alla länkar som finns i meddelandeinnehållet.
+>När [spårning är aktiverat](#enable-tracking) spåras alla länkar som ingår i meddelandeinnehållet.
 
 Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
 
-1. Markera ett element och klicka på **[!UICONTROL Insert link]** i kontextverktygsfältet.
+1. Markera ett element och klicka på **[!UICONTROL Insert link]** i det sammanhangsberoende verktygsfältet.
 
    ![](assets/message-tracking-insert-link.png)
 
@@ -65,11 +65,11 @@ Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
 
    * **[!UICONTROL Landing page]**: Infoga en länk till en landningssida. [Läs mer](../landing-pages/get-started-lp.md)
 
-   * **[!UICONTROL One click Opt-out]**: Infoga en länk som gör det möjligt för användare att snabbt avbryta prenumerationen på dina meddelanden utan att behöva bekräfta att de vill avanmäla sig. [Läs mer](email-opt-out.md#one-click-opt-out).
+   * **[!UICONTROL One click Opt-out]**: Infoga en länk så att användare snabbt kan avbryta prenumerationen på dina meddelanden utan att behöva bekräfta att de vill avanmäla sig. [Läs mer](email-opt-out.md#one-click-opt-out).
 
-   * **[!UICONTROL External Opt-in/Subscription]**: Infoga en länk för att ta emot meddelanden från ert varumärke.
+   * **[!UICONTROL External Opt-in/Subscription]**: Infoga en länk för att ta emot meddelanden från ditt varumärke.
 
-   * **[!UICONTROL External Opt-out/Unsubscription]**: Infoga en länk om du inte längre vill få information från ditt varumärke. Läs mer om avanmälningshantering i [det här avsnittet](email-opt-out.md#opt-out-management).
+   * **[!UICONTROL External Opt-out/Unsubscription]**: Infoga en länk om du vill avbryta prenumerationen på meddelanden från ditt varumärke. Läs mer om hantering av avanmälan i [det här avsnittet](email-opt-out.md#opt-out-management).
 
    * **[!UICONTROL Mirror page]**: Lägg till en länk för att visa e-postinnehållet i en webbläsare. [Läs mer](#mirror-page)
 
@@ -77,41 +77,41 @@ Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
 
    >[!NOTE]
    >
-   >För att tolka URL:er [!DNL Journey Optimizer] följer URI-syntaxen ([RFC 3986-standard](https://datatracker.ietf.org/doc/html/rfc3986){target="_blank"}), vilket inaktiverar vissa internationella specialtecken i URL:er. När du försöker skicka korrekturet eller e-postmeddelandet och returnerar ett fel som inbegriper en URL som har lagts till i innehållet, kan du URL-koda strängen som en tillfällig lösning.
+   >För att tolka URL:er uppfyller [!DNL Journey Optimizer] URI-syntaxen ([RFC 3986 standard](https://datatracker.ietf.org/doc/html/rfc3986){target="_blank"}), som inaktiverar vissa internationella specialtecken i URL:er. När du försöker skicka korrekturet eller e-postmeddelandet och returnerar ett fel som inbegriper en URL som har lagts till i innehållet, kan du URL-koda strängen som en tillfällig lösning.
 
 1. Du kan anpassa länkarna. [Läs mer](../personalization/personalization-syntax.md#perso-urls)
 
 1. Spara ändringarna.
 
-1. När länken har skapats kan du fortfarande ändra den från **[!UICONTROL Settings]** och **[!UICONTROL Styles]** rutor till höger.
+1. När länken har skapats kan du fortfarande ändra den från rutorna **[!UICONTROL Settings]** och **[!UICONTROL Styles]** till höger.
 
    ![](assets/message-tracking-link-settings.png)
 
 >[!NOTE]
 >
->E-postmeddelanden av marknadsföringstyp måste innehålla en [länk för avanmälan](../privacy/opt-out.md#opt-out-management), vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [kanalyta](../configuration/channel-surfaces.md#email-type) när meddelandet skapas.
+>E-postmeddelanden av marknadsföringstyp måste innehålla en [länk för avanmälan](../privacy/opt-out.md#opt-out-management), vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [kanalytan](../configuration/channel-surfaces.md#email-type) när meddelandet skapas.
 
 ## Justera länkar {#adjust-links}
 
-Du kan justera länkarna med **[!UICONTROL Settings]** och **[!UICONTROL Styles]** rutor till höger. Du kan stryka under en länk, redigera dess färg och välja dess mål.
+Du kan justera länkarna med rutorna **[!UICONTROL Settings]** och **[!UICONTROL Styles]** till höger. Du kan stryka under en länk, redigera dess färg och välja dess mål.
 
-1. I en **[!UICONTROL Text]** markerar du länken där en länk infogas.
+1. Markera länken i en **[!UICONTROL Text]**-komponent där en länk infogas.
 
-1. Från **[!UICONTROL Settings]** väljer du hur målgruppen ska omdirigeras med **[!UICONTROL Target]** nedrullningsbar lista:
+1. På fliken **[!UICONTROL Settings]** väljer du hur din målgrupp ska omdirigeras med listrutan **[!UICONTROL Target]**:
 
    * **[!UICONTROL None]**: öppnar länken i samma ram som den klickades på (standard).
    * **[!UICONTROL Blank]**: öppnar länken i ett nytt fönster eller på en ny flik.
    * **[!UICONTROL Self]**: öppnar länken i samma ram som den klickades på.
    * **[!UICONTROL Parent]**: öppnar länken i den överordnade ramen.
-   * **[!UICONTROL Top]**: öppnar länken i hela fönstret.
+   * **[!UICONTROL Top]**: öppnar länken i hela fönstrets brödtext.
 
    ![](assets/link_2.png)
 
-1. Kontrollera **[!UICONTROL Underline link]** om du vill stryka under etikettexten för länken.
+1. Markera **[!UICONTROL Underline link]** om du vill stryka under etikettexten för länken.
 
    ![](assets/link_1.png)
 
-1. Om du vill ändra färg på länken klickar du på **[!UICONTROL Link color]** från **[!UICONTROL Styles]** -fliken.
+1. Om du vill ändra färg på länken klickar du på **[!UICONTROL Link color]** på fliken **[!UICONTROL Styles]**.
 
    ![](assets/link_3.png)
 
@@ -121,7 +121,7 @@ Du kan justera länkarna med **[!UICONTROL Settings]** och **[!UICONTROL Styles]
 
 Spegelsidan är en HTML-sida som är tillgänglig online via en webbläsare. Innehållet är identiskt med innehållet i ditt e-postmeddelande.
 
-Om du vill lägga till en länk till en spegelsida i ditt e-postmeddelande [infoga en länk](#insert-links) och markera **[!UICONTROL Mirror page]** som typ av länk.
+Om du vill lägga till en länk till en spegelsida i ditt e-postmeddelande [infogar du en länk](#insert-links) och väljer **[!UICONTROL Mirror page]** som typ av länk.
 
 ![](assets/message-tracking-mirror-page.png)
 
@@ -135,42 +135,42 @@ När e-postmeddelandet har skickats visas innehållet i e-postmeddelandet i sin 
 
 >[!NOTE]
 >
->I [bevis](../content-management/proofs.md) som skickas till testprofilerna är länken till spegelsidan inte aktiv. Den aktiveras endast i de slutliga meddelandena.
+>I det [korrektur](../content-management/proofs.md) som skickas till testprofilerna är länken till spegelsidan inte aktiv. Den aktiveras endast i de slutliga meddelandena.
 
 Kvarhållningsperioden för en spegelsida är 60 dagar. Efter den fördröjningen är spegelsidan inte längre tillgänglig.
 
 ## Hantera spårning {#manage-tracking}
 
-The [E-postdesigner](content-from-scratch.md) gör att du kan hantera spårade URL-adresser, t.ex. redigera spårningstypen för varje länk.
+Med [e-post-Designer](content-from-scratch.md) kan du hantera spårade URL-adresser, till exempel redigera spårningstypen för varje länk.
 
-1. Klicka på **[!UICONTROL Links]** i den vänstra rutan för att visa en lista med alla URL:er för ditt innehåll som ska spåras.
+1. Klicka på ikonen **[!UICONTROL Links]** i den vänstra rutan om du vill visa en lista över alla URL:er för ditt innehåll som ska spåras.
 
    Med den här listan kan du ha en centraliserad vy och hitta varje URL i e-postinnehållet.
 
 1. Om du vill redigera en länk klickar du på motsvarande pennikon.
 
-1. Du kan ändra **[!UICONTROL Tracking Type]** vid behov:
+1. Du kan ändra **[!UICONTROL Tracking Type]** om det behövs:
 
    ![](assets/message-tracking-edit-a-link.png)
 
    För varje spårad URL kan du ange spårningsläget till något av följande värden:
 
-   * **[!UICONTROL Tracked]**: Aktiverar spårning på denna URL.
-   * **[!UICONTROL Opt out]**: Betraktar denna URL som en avanmälnings- eller avanmälnings-URL.
-   * **[!UICONTROL Mirror page]**: Ser den här URL:en som en spegelsida.
-   * **[!UICONTROL Never]**: Aktiverar aldrig spårning av denna URL.
+   * **[!UICONTROL Tracked]**: Aktiverar spårning på den här URL:en.
+   * **[!UICONTROL Opt out]**: Utser den här URL:en som en avanmälnings- eller avanmälnings-URL.
+   * **[!UICONTROL Mirror page]**: Den här URL:en är en URL för en spegelsida.
+   * **[!UICONTROL Never]**: Aktiverar aldrig spårning av den här URL:en.
 
-Rapportering om öppningar och klick finns i [Live-rapport](../reports/live-report.md) och i [Global rapport](../reports/global-report.md).
+Rapportering om öppningar och klick finns i [Live-rapporten](../reports/live-report.md) och i [Global-rapporten](../reports/global-report.md).
 
 ## Anpassa URL-spårning {#url-tracking}
 
-Vanligtvis [URL-uppföljning](email-settings.md#url-tracking) hanteras på ytnivå, men profilattribut stöds inte. För närvarande är det enda sättet att göra det på att [personalisera URL:er](../personalization/personalization-syntax.md#perso-urls) i e-postdesignern.
+Vanligtvis hanteras [URL-spårning](email-settings.md#url-tracking) på ytnivå, men profilattribut stöds inte. Det enda sättet att göra det är för närvarande att [anpassa URL:er](../personalization/personalization-syntax.md#perso-urls) i e-postdesignern.
 
 Följ stegen nedan om du vill lägga till personaliserade URL-spårningsparametrar för länkarna.
 
-1. Markera en länk och klicka på **[!UICONTROL Insert link]** i kontextverktygsfältet.
+1. Markera en länk och klicka på **[!UICONTROL Insert link]** i det sammanhangsberoende verktygsfältet.
 
-1. Välj personaliseringsikonen. Den är bara tillgänglig för följande typer av länkar: **Extern länk**, **Länk för att avbryta prenumeration** och **Avanmäl dig**.
+1. Välj personaliseringsikonen. Det är bara tillgängligt för följande typer av länkar: **Extern länk**, **Avprenumerationslänk** och **Avanmäl dig**.
 
    ![](assets/message-tracking-insert-link-perso.png)
 
@@ -186,4 +186,4 @@ När e-postmeddelandet skickas läggs den här parametern automatiskt till i slu
 
 >[!NOTE]
 >
->Om du vill verifiera den slutliga URL:en kan du [skicka ett bevis](../content-management/preview-test.md#send-proofs) och klicka på länken i e-postmeddelandet när du har fått korrekturet. URL:en ska visa spårningsparametern. I exemplet ovan kommer den slutliga URL:en att vara: <https://luma.enablementadobe.com/content/luma/us/en.html?utm_contact=profile.userAccount.contactDetails.homePhone.number>
+>Om du vill verifiera den slutliga URL:en kan du [skicka ett korrektur](../content-management/preview-test.md#send-proofs) och klicka på länken i innehållet i e-postmeddelandet när du har fått korrekturet. URL:en ska visa spårningsparametern. I exemplet ovan blir den slutliga URL:en: <https://luma.enablementadobe.com/content/luma/us/en.html?utm_contact=profile.userAccount.contactDetails.homePhone.number>

@@ -9,17 +9,17 @@ exl-id: 7b735873-86f5-466f-b079-5e84d9f03a08
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '109'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
 # Skapa en placering {#create-placement}
 
-Du kan skapa en placering genom att göra en POST-förfrågan till [!DNL Offer Library] API.
+Du kan skapa en placering genom att göra en POST-förfrågan till API:t [!DNL Offer Library].
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
-I följande tabell visas giltiga värden som utgör *Content-Type* fält i begärandehuvudet:
+I följande tabell visas giltiga värden som utgör fältet *Content-Type* i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
@@ -66,7 +66,7 @@ curl -X POST 'https://platform.adobe.io/data/core/dps/placements' \
 
 **Svar**
 
-Ett godkänt svar returnerar information om den nya placeringen och placeringen `id`. Du kan använda de senare stegen för att uppdatera eller ta bort din placering. Du kan använda din unika placering `id` i senare självstudiekurser för att skapa beslut, beslutsregler och reserverbjudanden.
+Ett godkänt svar returnerar information om den nyligen skapade placeringen och placeringen `id`. Du kan använda de senare stegen för att uppdatera eller ta bort din placering. Du kan använda din unika placering `id` i senare självstudier för att skapa beslut, beslutsregler och reserverbjudanden.
 
 ```json
 {

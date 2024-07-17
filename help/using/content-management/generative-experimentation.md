@@ -40,23 +40,23 @@ När du har skapat och personaliserat dina meddelanden kan du lyfta fram ditt in
 
    ![](assets/experiment-genai-1.png)
 
-1. Bläddra bland de genererade **[!UICONTROL Variations]** och klicka **[!UICONTROL Preview]** om du vill visa en fullskärmsversion av den valda varianten.
+1. Bläddra igenom den genererade **[!UICONTROL Variations]** och klicka på **[!UICONTROL Preview]** för att visa en fullskärmsversion av den valda varianten.
 
    ![](assets/experiment-genai-2.png)
 
-1. Välj **[!UICONTROL Enable Experiment]** för att börja skapa **[!UICONTROL Treatments]** för dina experiment.
+1. Välj **[!UICONTROL Enable Experiment]** om du vill börja skapa **[!UICONTROL Treatments]** för din experimentering.
 
 1. Välj de variationer som du vill ta med i ditt experiment.
 
-1. Klicka **Lägg till X-behandlingar**.
+1. Klicka på **Lägg till X-behandling**.
 
    ![](assets/experiment-genai-3.png)
 
-1. I fönstret Content Experiment kan du gå till **[!UICONTROL Experiment settings]** för att konfigurera ditt experiment. [Läs mer om Content Experiment](../content-management/content-experiment.md)
+1. I fönstret Innehållsexperiment öppnar du knappen **[!UICONTROL Experiment settings]** för att konfigurera ditt experiment. [Läs mer om innehållsexperiment](../content-management/content-experiment.md)
 
    ![](assets/experiment-genai-4.png)
 
-1. När ditt innehållsexperiment är klart kan du klicka på **[!UICONTROL Review to activate]** för att visa en sammanfattning av kampanjen. Varningar visas om någon parameter är felaktig eller saknas. [Läs mer](../content-management/content-experiment.md#treatment-experiment)
+1. När ditt innehållsexperiment är klart kan du från kampanjsammanfattningssidan klicka på **[!UICONTROL Review to activate]** för att visa en sammanfattning av kampanjen. Varningar visas om någon parameter är felaktig eller saknas. [Läs mer](../content-management/content-experiment.md#treatment-experiment)
 
 1. Kontrollera att alla konfigurationer är korrekta innan du startar kampanjen och klicka sedan på **[!UICONTROL Activate]**.
 

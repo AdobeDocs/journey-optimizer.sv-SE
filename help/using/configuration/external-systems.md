@@ -37,7 +37,7 @@ När Journey Optimizer gör ett anrop till ett externt API körs de tekniska gar
 
 När du konfigurerar en datakälla eller en åtgärd upprättar du en anslutning till ett system för att antingen hämta ytterligare information som ska användas under dina resor eller skicka meddelanden eller API-anrop.
 
-API:er för resor har stöd för upp till 5 000 händelser per sekund, men vissa externa system eller API:er har kanske inte samma genomströmning. Du kan förhindra att dessa system överbelastas med **Takning** och **Begränsning** API:er som begränsar antalet händelser som skickas per sekund.
+API:er för resor har stöd för upp till 5 000 händelser per sekund, men vissa externa system eller API:er har kanske inte samma genomströmning. Om du vill förhindra att dessa system överbelastas kan du använda API:erna **Capping** och **Throttling** för att begränsa antalet händelser som skickas per sekund.
 
 Varje gång ett API-anrop utförs via resor skickas det via API-motorn. Om gränsvärdet i API:t nås, avvisas anropet antingen om du använder API:t för begränsning, eller köas i upp till 6 timmar och behandlas så snart som möjligt i den ordning som de togs emot om du använder API:t för begränsning.
 
@@ -45,18 +45,18 @@ Anta till exempel att du har definierat en begränsning på 200 anrop per sekund
 
 >[!IMPORTANT]
 >
->**Begränsningsregler** är konfigurerade på sandlådenivå, för en specifik slutpunkt (den anropade URL:en), men globala till alla resor i den sandlådan. Det finns ett tak för både datakällor och anpassade åtgärder.
+>**Takregler** är konfigurerade på sandlådenivå för en specifik slutpunkt (den anropade URL:en), men globala för alla resor i den sandlådan. Det finns ett tak för både datakällor och anpassade åtgärder.
 >
 >**Begränsningsregler** konfigureras endast för produktionssandlådor, för en specifik slutpunkt, men är globala för alla resor över alla sandlådor. Du kan bara ha en begränsningskonfiguration per organisation. Begränsning är bara tillgängligt för anpassade åtgärder.
 >
->The **maxCallCount** värdet måste vara större än 1.
+>Värdet **maxCallCount** måste vara större än 1.
 
 Mer information om hur du arbetar med API:erna finns i följande avsnitt:
 
 * [API för reglering](capping.md)
 * [API för begränsning](throttling.md)
 
-En detaljerad beskrivning av API:erna finns i [Dokumentation för Adobe Journey Optimizer API:er](https://developer.adobe.com/journey-optimizer-apis/references/journeys/)
+En detaljerad beskrivning av API:erna finns i [dokumentationen för Adobe Journey Optimizer API:er](https://developer.adobe.com/journey-optimizer-apis/references/journeys/)
 
 ### Datakällor och kapacitet för anpassade åtgärder {#capacity}
 
@@ -70,7 +70,7 @@ För **anpassade åtgärder** måste du utvärdera kapaciteten för ditt externa
 
 >[!NOTE]
 >
->Eftersom svaren nu stöds bör du använda anpassade åtgärder i stället för datakällor för externa datakällor som användningsfall. Mer information om svar finns i [section](../action/action-response.md)
+>Eftersom svaren nu stöds bör du använda anpassade åtgärder i stället för datakällor för externa datakällor som användningsfall. Mer information om svar finns i [avsnittet](../action/action-response.md)
 
 ## Timeout och försök igen{#timeout}
 
@@ -100,10 +100,10 @@ Låt oss ta ett exempel i 5 sekunder.
 
 Som standard finns det ingen begränsning eller begränsning. Regler definieras på sandlådenivå för en specifik slutpunkt (den URL som anropas) med API:t för begränsning eller begränsning. Se [det här avsnittet](../configuration/external-systems.md#capping).
 
-**Hur många återförsök görs? Kan jag ändra antalet återförsök eller definiera en minsta vänteperiod mellan återförsök?**
+**Hur många försök utförs? Kan jag ändra antalet återförsök eller definiera en minsta vänteperiod mellan återförsök?**
 
 För ett visst anrop kan högst tre försök utföras efter det första anropet, tills tidsgränsen för anropet har nåtts. Antalet försök och tiden mellan varje nytt försök kan inte ändras. Se [det här avsnittet](../configuration/external-systems.md#timeout).
 
-**Var kan jag konfigurera tidsgränsen? Finns det ett maxvärde?**
+**Var kan jag konfigurera timeout? Finns det ett maxvärde?**
 
-Under varje resa kan du definiera en tidsgräns. Tidsgränsen har konfigurerats i egenskaperna för en resa. Tidsgränsen måste vara mellan 1 och 30 sekunder. Se [det här avsnittet](../configuration/external-systems.md#timeout) och [den här sidan](../building-journeys/journey-properties.md#timeout_and_error).
+Under varje resa kan du definiera en tidsgräns. Tidsgränsen har konfigurerats i egenskaperna för en resa. Tidsgränsen måste vara mellan 1 och 30 sekunder. Se [det här avsnittet](../configuration/external-systems.md#timeout) och [sidan](../building-journeys/journey-properties.md#timeout_and_error).

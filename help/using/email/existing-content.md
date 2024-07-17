@@ -18,10 +18,10 @@ ht-degree: 0%
 
 # Importera e-postinnehåll {#existing-content}
 
-[!DNL Journey Optimizer] gör att du kan importera befintligt HTML-innehåll för att utforma dina e-postmeddelanden. Innehållet kan vara:
+Med [!DNL Journey Optimizer] kan du importera befintligt HTML-innehåll för att utforma dina e-postmeddelanden. Innehållet kan vara:
 
-* An **HTML-fil** med en inbyggd formatmall,
-* A **ZIP-mapp** inklusive en HTML-fil, formatmallen (.css) och bilder.
+* En **HTML-fil** med en inbyggd formatmall;
+* En **.zip-mapp** som innehåller en HTML-fil, formatmallen (.css) och bilder.
 
   >[!NOTE]
   >
@@ -29,27 +29,27 @@ ht-degree: 0%
 
 Om du vill importera en fil som innehåller HTML-innehåll följer du stegen nedan:
 
-1. På e-postdesignerns startsida väljer du **[!UICONTROL Import HTML]**.
+1. Välj **[!UICONTROL Import HTML]** på startsidan för e-post till Designer.
 
    ![](assets/import-html_2.png)
 
-1. Dra och släpp HTML- eller ZIP-filen med HTML och klicka på **[!UICONTROL Import]**.
+1. Dra och släpp HTML- eller ZIP-filen med ditt HTML-innehåll och klicka på **[!UICONTROL Import]**.
 
    ![](assets/html-imported_2.png)
 
-1. När HTML-innehållet har överförts är ditt innehåll **[!UICONTROL Compatibility mode]**.
+1. När HTML-innehållet har överförts är ditt innehåll i **[!UICONTROL Compatibility mode]**.
 
    I det här läget kan du bara anpassa texten, lägga till länkar eller inkludera resurser i innehållet.
 
-1. Om du vill kunna utnyttja e-postdesignerns innehållskomponenter ska du gå till **[!UICONTROL HTML converter]** och klicka **[!UICONTROL Convert]**.
+1. Om du vill kunna utnyttja e-postkomponenterna för Designer-innehåll går du till fliken **[!UICONTROL HTML converter]** och klickar på **[!UICONTROL Convert]**.
 
    ![](assets/html-imported.png)
 
    >[!NOTE]
    >
-   > Använda `<table>` taggen som det första lagret i en HTML-fil kan orsaka formatförlust, inklusive inställningar för bakgrund och bredd i den översta lagertaggen.
+   > Om du använder en `<table>`-tagg som det första lagret i en HTML-fil kan du förlora stilar, inklusive inställningar för bakgrund och bredd i den översta lagertaggen.
 
-1. Du kan nu anpassa den importerade filen efter behov med e-postdesignerfunktionerna [Läs mer](content-from-scratch.md).
+1. Du kan nu anpassa den importerade filen efter behov med e-post-Designer-funktionerna [Läs mer](content-from-scratch.md).
 
 ## Instruktionsvideo {#video}
 

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Anpassa inställningar för e-postyta {#surface-personalization}
 
-För större flexibilitet och bättre kontroll över e-postinställningarna [!DNL Journey Optimizer] gör att du kan definiera personaliserade värden för underdomäner och rubriker<!--and URL tracking parameters--> när du skapar e-postytor.
+För större flexibilitet och kontroll över e-postinställningarna kan du med [!DNL Journey Optimizer] definiera anpassade värden för underdomäner och rubriker <!--and URL tracking parameters--> när du skapar e-postytor.
 
 >[!AVAILABILITY]
 >
@@ -49,21 +49,21 @@ Om du till exempel har juridiska begränsningar för att skicka meddelanden frå
 
 Följ stegen nedan för att definiera dynamiska underdomäner i en e-postkanal.
 
-1. Innan du skapar en yta ska du ställa in de underdomäner som du vill använda för att skicka e-postmeddelanden utifrån ditt användningsfall. [Lär dig mer](../configuration/about-subdomain-delegation.md)
+1. Innan du skapar en yta ska du ställa in de underdomäner som du vill använda för att skicka e-postmeddelanden utifrån ditt användningsfall. [Lär dig hur](../configuration/about-subdomain-delegation.md)
 
    Anta att du vill använda olika underdomäner för olika länder: konfigurera en underdomän som är specifik för USA, en som är specifik för Storbritannien, osv.
 
-1. Skapa en kanalyta. [Lär dig mer](../configuration/channel-surfaces.md)
+1. Skapa en kanalyta. [Lär dig hur](../configuration/channel-surfaces.md)
 
-1. Välj **[!UICONTROL Email]** kanal.
+1. Välj kanalen **[!UICONTROL Email]**.
 
-1. I **Underdomän** -sektion, aktivera **[!UICONTROL Dynamic Subdomain]** alternativ.
+1. Aktivera alternativet **[!UICONTROL Dynamic Subdomain]** i avsnittet **Underdomän**.
 
    ![](assets/surface-email-dynamic-subdomain.png)
 
-1. Välj redigeringsikonen bredvid den första **[!UICONTROL Condition]** fält.
+1. Välj redigeringsikonen bredvid det första **[!UICONTROL Condition]**-fältet.
 
-1. The [personaliseringsredigerare](../personalization/personalization-build-expressions.md) öppnas. I det här exemplet anger du ett villkor som `Country` är lika med `US`.
+1. [Anpassningsredigeraren](../personalization/personalization-build-expressions.md) öppnas. I det här exemplet anger du ett villkor som `Country` är lika med `US`.
 
    ![](assets/surface-email-edit-condition.png)
 
@@ -71,7 +71,7 @@ Följ stegen nedan för att definiera dynamiska underdomäner i en e-postkanal.
 
    >[!NOTE]
    >
-   >Vissa underdomäner är för närvarande inte tillgängliga för val på grund av väntande [feedback-slinga](../reports/deliverability.md#feedback-loops) registrering. Den här processen kan ta upp till 10 arbetsdagar. När du är klar kan du välja bland alla tillgängliga underdomäner. <!--where FL registration happens? is it when delegating a subdomain and you're awaiting from subdomain validation? or is it on ISP side only?-->
+   >Vissa underdomäner är för närvarande inte tillgängliga för markering på grund av registrering av [feedbackloop](../reports/deliverability.md#feedback-loops). Den här processen kan ta upp till 10 arbetsdagar. När du är klar kan du välja bland alla tillgängliga underdomäner. <!--where FL registration happens? is it when delegating a subdomain and you're awaiting from subdomain validation? or is it on ISP side only?-->
 
    ![](assets/surface-email-select-subdomain.png)
 
@@ -83,40 +83,40 @@ Följ stegen nedan för att definiera dynamiska underdomäner i en e-postkanal.
 
    <!--Select the [IP pool](../configuration/ip-pools.md) to associate with the surface. [Learn more](email-settings.md#subdomains-and-ip-pools)-->
 
-1. Definiera alla andra [e-postinställningar](email-settings.md) och [skicka](../configuration/channel-surfaces.md#create-channel-surface) din yta.
+1. Definiera alla andra [e-postinställningar](email-settings.md) och [skicka](../configuration/channel-surfaces.md#create-channel-surface) i ytan.
 
 När du har lagt till en eller flera dynamiska underdomäner till en yta fylls följande objekt i baserat på den lösta dynamiska underdomänen för den här ytan:
 
 * Alla URL:er (resurs-URL, URL för spegelsida och URL för spårning)
 
-* The [avbeställ URL](email-settings.md#list-unsubscribe)
+* URL:en [för att avbryta prenumerationen](email-settings.md#list-unsubscribe)
 
-* The **Från e-post** och **E-postfel** suffix
+* Suffixen **Från e-post** och **Felmeddelande**
 
 >[!NOTE]
 >
->Om du konfigurerar dynamiska underdomäner och sedan inaktiverar **[!UICONTROL Dynamic Subdomain]** tas alla dynamiska värden bort. Markera en underdomän och skicka ytan så att ändringarna börjar gälla.
+>Om du konfigurerar dynamiska underdomäner och sedan inaktiverar alternativet **[!UICONTROL Dynamic Subdomain]** tas alla dynamiska värden bort. Markera en underdomän och skicka ytan så att ändringarna börjar gälla.
 
 ## Anpassa sidhuvudet {#personalize-header}
 
 Du kan också använda personalisering för alla rubrikparametrar som definieras i en yta.
 
-Om du till exempel har flera varumärken kan du skapa en enda yta och använda anpassade värden för dina e-posthuvuden. På så sätt kan ni se till att alla e-postmeddelanden som skickas från olika varumärken adresseras till var och en av era kunder med rätt **Från** namn och e-post. När mottagarna trycker på **Svara** i e-postklientprogramvaran vill du ha **Svara till** namn och e-post motsvarar rätt varumärke för rätt användare.
+Om du till exempel har flera varumärken kan du skapa en enda yta och använda anpassade värden för dina e-posthuvuden. På så sätt kan du se till att alla e-postmeddelanden som skickas från dina olika varumärken adresseras till var och en av dina kunder med rätt **From**-namn och e-postmeddelanden. När mottagarna trycker på knappen **Svara** i e-postklientprogramvaran vill du på liknande sätt att **Svara på** namn och e-post motsvarar rätt varumärke för rätt användare.
 
 Följ stegen nedan om du vill använda personaliserade variabler för sidhuvudsparametrarna på ytan.
 
 >[!NOTE]
 >
->Ni kan personalisera alla **[!UICONTROL Header parameters]** fält, utom **[!UICONTROL Error email prefix]** fält.
+>Du kan anpassa alla **[!UICONTROL Header parameters]**-fält utom fältet **[!UICONTROL Error email prefix]**.
 
 
-1. Definiera sidhuvudsparametrarna som vanligt. [Lär dig mer](email-settings.md#email-header)
+1. Definiera sidhuvudsparametrarna som vanligt. [Lär dig hur](email-settings.md#email-header)
 
 1. För varje fält väljer du ikonen Redigera.
 
    ![](assets/surface-email-personalize-header.png)
 
-1. The [personaliseringsredigerare](../personalization/personalization-build-expressions.md) öppnas. Definiera ditt tillstånd så som du vill ha det och spara dina ändringar.
+1. [Anpassningsredigeraren](../personalization/personalization-build-expressions.md) öppnas. Definiera ditt tillstånd så som du vill ha det och spara dina ändringar.
 
    Ange till exempel ett villkor som varje mottagare får ett e-postmeddelande från sin egen varumärkesrepresentant.
 
@@ -128,7 +128,7 @@ Följ stegen nedan om du vill använda personaliserade variabler för sidhuvudsp
 
 >[!NOTE]
 >
->Om du har lagt till en eller flera dynamiska underdomäner på ytan, visas **Från e-post** och **E-postfel** suffix fylls i baserat på de lösta [dynamisk underdomän](#dynamic-subdomains).
+>Om du har lagt till en eller flera dynamiska underdomäner på din yta fylls suffixen **Från e-post** och **Fel-e-post** i baserat på den matchade [dynamiska underdomänen](#dynamic-subdomains).
 
 <!--
 ## Use personalized URL tracking {#personalize-url-tracking}
@@ -146,7 +146,7 @@ Now when the email is sent out, this parameter will be automatically appended to
 
 När du använder en yta med personaliserade inställningar i en kampanj eller en yta kan du visa ytdetaljer direkt i kampanjen eller ytan. Följ stegen nedan.
 
-1. Skapa ett e-postmeddelande [kampanj](../campaigns/create-campaign.md) eller [resa](../building-journeys/journey-gs.md).
+1. Skapa ett [kampanj](../campaigns/create-campaign.md) eller [resa](../building-journeys/journey-gs.md) via e-post.
 
 1. Markera knappen **[!UICONTROL Edit content]**.
 
@@ -154,12 +154,12 @@ När du använder en yta med personaliserade inställningar i en kampanj eller e
 
    ![](assets/campaign-view-surface-details.png)
 
-1. The **[!UICONTROL Delivery settings]** visas. Du kan visa alla ytinställningar, inklusive dynamiska underdomäner och anpassade rubrikparametrar.
+1. Fönstret **[!UICONTROL Delivery settings]** visas. Du kan visa alla ytinställningar, inklusive dynamiska underdomäner och anpassade rubrikparametrar.
 
    >[!NOTE]
    >
    >All information på den här skärmen är skrivskyddad.
 
-1. Välj **[!UICONTROL Expand]** för att visa information om de dynamiska underdomänerna.
+1. Välj **[!UICONTROL Expand]** om du vill visa information om de dynamiska underdomänerna.
 
    ![](assets/campaign-delivery-settings-subdomain-expand.png)

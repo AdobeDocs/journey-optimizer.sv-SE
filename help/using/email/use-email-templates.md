@@ -23,31 +23,31 @@ ht-degree: 1%
 >title="Skapa innehåll från en mall"
 >abstract="Om du vill börja skapa ditt e-postinnehåll väljer du antingen en mall som inte är klar eller en egen mall som har skapats från grunden eller sparats som en mall från ett tidigare e-postmeddelande."
 
-Från **[!UICONTROL Create your email]** skärm, använd **[!UICONTROL Select design template]** för att börja skapa innehåll från en mall.
+Använd avsnittet **[!UICONTROL Select design template]** på skärmen **[!UICONTROL Create your email]** för att börja skapa ditt innehåll från en mall.
 
 ![](assets/email_designer-templates.png)
 
 Du kan välja mellan:
 
-* **Exempelmallar**. The [!DNL Journey Optimizer] -gränssnittet har 20 färdiga e-postmallar som du kan välja bland.
+* **Exempelmallar**. Gränssnittet [!DNL Journey Optimizer] innehåller 20 körklara e-postmallar som du kan välja mellan.
 
 * **Sparade mallar**. Du kan också använda en anpassad mall som du antingen:
 
-   * Skapat från grunden med **[!UICONTROL Content templates]** -menyn. [Läs mer](../content-management/content-templates.md#create-template-from-scratch)
+   * Skapad från början med menyn **[!UICONTROL Content templates]**. [Läs mer](../content-management/content-templates.md#create-template-from-scratch)
 
-   * Sparas från ett e-postmeddelande under en resa eller en kampanj med **[!UICONTROL Save as content template]** alternativ. [Läs mer](../content-management/content-templates.md#save-as-template)
+   * Sparas från ett e-postmeddelande under en resa eller en kampanj med alternativet **[!UICONTROL Save as content template]**. [Läs mer](../content-management/content-templates.md#save-as-template)
 
 Följ stegen nedan när du vill börja skapa innehåll med någon av exempelmallarna eller sparade mallar.
 
-1. [Öppna Designer för e-post](get-started-email-design.md) från e-postmeddelandet **[!UICONTROL Edit content]** skärm.
+1. [Öppna e-postmeddelandet för Designer](get-started-email-design.md) från e-postskärmen **[!UICONTROL Edit content]**.
 
-1. På **[!UICONTROL Create your email]** skärm, **[!UICONTROL Sample templates]** -fliken är markerad som standard.
+1. Fliken **[!UICONTROL Sample templates]** är markerad som standard på skärmen **[!UICONTROL Create your email]**.
 
-1. Gå till **[!UICONTROL Saved templates]** -fliken.
+1. Om du vill använda en anpassad mall går du till fliken **[!UICONTROL Saved templates]**.
 
    ![](assets/email_designer-saved-templates-tab.png)
 
-1. Listan med alla [mallar](../content-management/content-templates.md#create-content-templates) som har skapats i den aktuella sandlådan visas. Du kan sortera dem **[!UICONTROL By name]**, **[!UICONTROL Last modified]** och **[!UICONTROL Last created]**.
+1. Listan med alla [innehållsmallar](../content-management/content-templates.md#create-content-templates) som skapats i den aktuella sandlådan visas. Du kan sortera dem **[!UICONTROL By name]**, **[!UICONTROL Last modified]** och **[!UICONTROL Last created]**.
 
    ![](assets/email_designer-saved-templates-filter.png)
 
@@ -57,6 +57,6 @@ Följ stegen nedan när du vill börja skapa innehåll med någon av exempelmall
 
    ![](assets/email_designer-saved-templates-navigate.png)
 
-1. Klicka **[!UICONTROL Use this template]** längst upp till höger på skärmen.
+1. Klicka på **[!UICONTROL Use this template]** överst till höger på skärmen.
 
 1. Redigera ditt innehåll med e-post-Designer.

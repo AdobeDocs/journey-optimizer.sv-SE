@@ -11,8 +11,8 @@ keywords: analys, integrering, web sdk, plattform
 exl-id: 9d842722-e5eb-4743-849d-b7ba9448062f
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 6%
+source-wordcount: '706'
+ht-degree: 5%
 
 ---
 
@@ -37,23 +37,23 @@ För att detta ska fungera med Adobe Analytics måste du:
 
 Data som kommer från Adobe Analytics eller Adobe Experience Platform Web SDK måste vara aktiverade för att kunna användas på dina resor.
 
-Följ stegen nedan för att göra detta:
+Gör så här:
 
-1. Gå till **[!UICONTROL Sources]** -menyn.
+1. Bläddra till menyn **[!UICONTROL Sources]**.
 
-1. I Adobe Analytics väljer du **[!UICONTROL Add data]**
+1. I avsnittet Adobe Analytics väljer du **[!UICONTROL Add data]**
 
    ![](assets/ajo-aa_1.png)
 
-1. I listan över tillgängliga Adobe Analytics-rapportsviter väljer du **[!UICONTROL Report suite]** för att aktivera. Klicka sedan på **[!UICONTROL Next]**.
+1. I listan över tillgängliga Adobe Analytics-rapportsviter väljer du **[!UICONTROL Report suite]** som ska aktiveras. Klicka sedan på **[!UICONTROL Next]**.
 
    ![](assets/ajo-aa_2.png)
 
 1. Välj om du vill använda ett standardschema eller ett anpassat schema.
 
-1. Från **[!UICONTROL Dataflow detail]** väljer du en **[!UICONTROL Dataflow name]**.
+1. Välj **[!UICONTROL Dataflow name]** på skärmen **[!UICONTROL Dataflow detail]**.
 
-1. När konfigurationen är klar klickar du **[!UICONTROL Finish]**.
+1. När konfigurationen är klar klickar du på **[!UICONTROL Finish]**.
 
    ![](assets/ajo-aa_3.png)
 
@@ -61,13 +61,13 @@ Detta aktiverar Analytics-källkopplingen för den rapportsviten. När informati
 
 ![](assets/ajo-aa_4.png)
 
-Läs mer om Adobe Analytics källanslutning i  [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html){target="_blank"} and [tutorial](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html){target="_blank"}.
+Läs mer om Adobe Analytics källanslutning i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html){target="_blank"} och [självstudiekurs](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html){target="_blank"}.
 
 ## Aktivera den här konfigurationen {#activate-analytics-data}
 
 När konfigurationen är klar kontaktar du Adobe för att aktivera Journey Optimizer-miljön för att använda den här datakällan. Det här steget krävs bara för Adobe Analytics datakällor. Så här gör du:
 
-1. Hämta datakällans ID. Den här informationen är tillgänglig i användargränssnittet: bläddra till datakällan som du skapade från **Dataflöden** -fliken i **Källor** -menyn. Det enklaste sättet att hitta den är att filtrera på Adobe Analytics-källor.
+1. Hämta datakällans ID. Den här informationen är tillgänglig i användargränssnittet: bläddra till datakällan som du skapade på fliken **Dataflöden** på menyn **Källor**. Det enklaste sättet att hitta den är att filtrera på Adobe Analytics-källor.
 1. Kontakta Adobe kundtjänst och lämna följande uppgifter:
 
    * Angående: Aktivera Adobe Analytics-event för resor
@@ -89,20 +89,20 @@ I exemplet nedan får du lära dig att rikta in dig på användare som har lagt 
 * Om beställningen är klar får användarna ett uppföljningsmejl två dagar senare för att be om feedback.
 * Om beställningen inte är slutförd får användarna ett e-postmeddelande som påminner dem om att de kan slutföra beställningen.
 
-1. Från Adobe Journey Optimizer kommer du åt **[!UICONTROL Configuration]** -menyn.
+1. Öppna menyn **[!UICONTROL Configuration]** från Adobe Journey Optimizer.
 
-1. Välj sedan **[!UICONTROL Manage]** från **[!UICONTROL Events]** kort.
+1. Välj sedan **[!UICONTROL Manage]** från **[!UICONTROL Events]**-kortet.
 
    ![](assets/ajo-aa_5.png)
 
 1. Klicka på **[!UICONTROL Create event]**. Konfigurationsfönstret för händelsen öppnas till höger på skärmen.
 
-1. Fyll i **[!UICONTROL Event]** parametrar:
+1. Fyll i **[!UICONTROL Event]**-parametrarna:
 
    * **[!UICONTROL Name]**: Anpassa namnet på **[!UICONTROL Event]**.
-   * **[!UICONTROL Type]**: Välj **[!UICONTROL Unitary]** Typ. [Läs mer](../event/about-events.md)
-   * **[!UICONTROL Event ID type]**: Välj **[!UICONTROL Rule based]** Händelse-ID-typ. [Läs mer](../event/about-events.md#event-id-type)
-   * **[!UICONTROL Schema]**: Välj Analytics- eller WebSDK-schema [skapad före](#leverage-analytics-data).
+   * **[!UICONTROL Type]**: Välj **[!UICONTROL Unitary]**-typ. [Läs mer](../event/about-events.md)
+   * **[!UICONTROL Event ID type]**: Välj typ av **[!UICONTROL Rule based]** händelse-ID. [Läs mer](../event/about-events.md#event-id-type)
+   * **[!UICONTROL Schema]**: Välj Analytics- eller WebSDK-schemat [som skapades före](#leverage-analytics-data).
    * **[!UICONTROL Fields]**: Välj nyttolastfälten. [Läs mer](../event/about-creating.md#define-the-payload-fields)
    * **[!UICONTROL Event ID condition]**: Definiera villkoret för att identifiera de händelser som utlöser din resa.
 
@@ -111,11 +111,11 @@ I exemplet nedan får du lära dig att rikta in dig på användare som har lagt 
 
    ![](assets/ajo-aa_6.png)
 
-1. Välj **[!UICONTROL Save]**.
+1. Välj **[!UICONTROL Save]** när den är konfigurerad.
 
 Nu när evenemanget är klart kan du skapa en resa för att använda det.
 
-1. Från **[!UICONTROL Journeys]** meny, öppna eller skapa en resa. Mer information om detta finns i [det här avsnittet](../building-journeys/journey-gs.md).
+1. Öppna eller skapa en resa på menyn **[!UICONTROL Journeys]**. Mer information om detta finns i [det här avsnittet](../building-journeys/journey-gs.md).
 
 1. Lägg till en tidigare konfigurerad Analytics-händelse på resan.
 
@@ -123,13 +123,13 @@ Nu när evenemanget är klart kan du skapa en resa för att använda det.
 
 1. Lägg till en händelse som utlöses om en order slutförs.
 
-1. Från **[!UICONTROL Event menu]** väljer du **[!UICONTROL Define the event timeout]** och **[!UICONTROL Set a timeout path]** alternativ.
+1. Välj alternativen **[!UICONTROL Define the event timeout]** och **[!UICONTROL Set a timeout path]** i din **[!UICONTROL Event menu]**.
 
    ![](assets/ajo-aa_9.png)
 
-1. Lägg till en **[!UICONTROL Email]** åtgärd. Den här sökvägen kommer att användas för att skicka ett e-postmeddelande till kunder som inte slutfört en order för att påminna dem om att deras kundvagnar fortfarande är tillgängliga.
+1. Lägg till en **[!UICONTROL Email]**-åtgärd från timeoutsökvägen. Den här sökvägen kommer att användas för att skicka ett e-postmeddelande till kunder som inte slutfört en order för att påminna dem om att deras kundvagnar fortfarande är tillgängliga.
 
-1. Lägg till en **[!UICONTROL Wait]** efter huvudsökvägen och ange den till önskad längd.
+1. Lägg till en **[!UICONTROL Wait]**-aktivitet efter huvudsökvägen och ställ in den på önskad varaktighet.
 
    ![](assets/ajo-aa_10.png)
 

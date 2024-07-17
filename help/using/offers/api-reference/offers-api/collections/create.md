@@ -9,7 +9,7 @@ exl-id: 683f8b86-8545-46d0-a4a8-25c5b3c7b9c3
 source-git-commit: ba7d065523116c12e22eec300df13c29d92a54fb
 workflow-type: tm+mt
 source-wordcount: '128'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 7%
 
 Samlingar är delmängder av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare, t.ex. erbjudandets kategori.
 
-Du kan skapa en samling genom att göra en POST-förfrågan till [!DNL Offer Library] API.
+Du kan skapa en samling genom att göra en POST-förfrågan till API:t [!DNL Offer Library].
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
-I följande tabell visas giltiga värden som utgör *Content-Type* fält i begärandehuvudet:
+I följande tabell visas giltiga värden som utgör fältet *Content-Type* i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
@@ -61,7 +61,7 @@ curl -X POST 'https://platform.adobe.io/data/core/dps/offer-collections' \
 
 **Svar**
 
-Ett godkänt svar returnerar information om den nyligen skapade samlingen, inklusive dess `id`. Du kan använda `id` i senare steg för att uppdatera eller ta bort din samling eller i en senare självstudiekurs för att fatta ett beslut.
+Ett godkänt svar returnerar information om den nyligen skapade samlingen, inklusive dess `id`. Du kan använda `id` i senare steg för att uppdatera eller ta bort din samling eller i en senare självstudiekurs för att skapa ett beslut.
 
 ```json
 {

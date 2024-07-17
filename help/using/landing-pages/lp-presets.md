@@ -22,13 +22,13 @@ ht-degree: 2%
 >title="Skapa en förinställning för landningssida"
 >abstract="För att kunna bygga en landningssida och använda den via Journey Optimizer måste du skapa en förinställning för landningssidan som innehåller den underdomän som ska användas."
 
-När [skapa en landningssida](../landing-pages/create-lp.md#create-a-lp)måste du välja en förinställning för landningssidan för att kunna bygga landningssidan och använda den **[!DNL Journey Optimizer]**.
+När du [skapar en landningssida](../landing-pages/create-lp.md#create-a-lp) måste du välja en förinställning för landningssidan för att kunna skapa landningssidan och använda den via **[!DNL Journey Optimizer]**.
 
 ## Åtkomst till förinställningar för landningssidor {#access-lp-presets}
 
 Följ stegen nedan för att få tillgång till förinställningarna för landningssidan.
 
-1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** -menyn.
+1. Öppna menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]**.
 
 1. Välj **[!UICONTROL Branding]** > **[!UICONTROL Landing page presets]**.
 
@@ -44,9 +44,9 @@ Följ stegen nedan för att skapa en förinställning för landningssidan.
 
 >[!NOTE]
 >
->För att kunna skapa en förinställning måste du kontrollera att du tidigare har konfigurerat minst en underdomän för landningssida. [Lär dig mer](lp-subdomains.md)
+>För att kunna skapa en förinställning måste du kontrollera att du tidigare har konfigurerat minst en underdomän för landningssida. [Lär dig hur](lp-subdomains.md)
 
-1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** väljer du **[!UICONTROL Branding]** > **[!UICONTROL Landing page presets]**.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och välj sedan **[!UICONTROL Branding]** > **[!UICONTROL Landing page presets]**.
 
 1. Välj **[!UICONTROL Create landing page preset]**.
 
@@ -56,7 +56,7 @@ Följ stegen nedan för att skapa en förinställning för landningssidan.
 
    >[!NOTE]
    >
-   > Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt`.` och bindestreck `-` tecken.
+   > Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt `.` och bindestreck `-`.
 
 1. Välj en underdomän för landningssida i listrutan.
 
@@ -64,25 +64,25 @@ Följ stegen nedan för att skapa en förinställning för landningssidan.
 
    >[!NOTE]
    >
-   >Om du vill kunna välja en underdomän kontrollerar du att du tidigare har konfigurerat minst en underdomän för landningssida. [Lär dig mer](#lp-subdomains)
+   >Om du vill kunna välja en underdomän kontrollerar du att du tidigare har konfigurerat minst en underdomän för landningssida. [Lär dig hur](#lp-subdomains)
 
    De inställningar som motsvarar den valda underdomänens visning.
 
-1. Om du vill välja landningssidans underdomän för spårnings-URL:en kontrollerar du **[!UICONTROL Same as landing page subdomain]** alternativ. [Läs mer om spårning](../email/message-tracking.md)
+1. Om du vill välja landningssidans underdomän för spårnings-URL:en markerar du alternativet **[!UICONTROL Same as landing page subdomain]**. [Läs mer om spårning](../email/message-tracking.md)
 
    ![](assets/lp_preset-subdomain-settings-same.png)
 
    Om till exempel landningssidans URL är pages.mail.luma.com och spårnings-URL:en är data.mail.luma.com kan du välja pages.mail.luma.com som ska användas som spårningsunderdomän.
 
-1. Klicka **[!UICONTROL Submit]** för att bekräfta att förinställningen för landningssidan har skapats. <!--You can also save the preset as draft and resume its configuration later on.-->
+1. Klicka på **[!UICONTROL Submit]** för att bekräfta att förinställningen för landningssidan har skapats. <!--You can also save the preset as draft and resume its configuration later on.-->
 
    <!--![](assets/lp_preset-subdomain-settings-submit.png)-->
 
-1. När förinställningen för landningssidan har skapats visas den i listan med **[!UICONTROL Active]** status. Den är klar att användas för dina landningssidor.
+1. När förinställningen för landningssidan har skapats visas den med statusen **[!UICONTROL Active]** i listan. Den är klar att användas för dina landningssidor.
 
    ![](assets/lp-preset-active-temp.png)
 
-Du är nu redo att [skapa landningssidor](../landing-pages/create-lp.md) in [!DNL Journey Optimizer].
+Du kan nu [skapa landningssidor](../landing-pages/create-lp.md) i [!DNL Journey Optimizer].
 <!--
 >[!NOTE]
 >

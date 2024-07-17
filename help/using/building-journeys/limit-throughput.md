@@ -23,25 +23,25 @@ Med Adobe Journey Optimizer kan användare skicka API-anrop till externa system 
 
 Detta kan göras med:
 
-* **Datakällor**: för att samla in information från externa system och använda den i kundresans sammanhang, t.ex. för att få väderinformation om profilstaden och få ett dedikerat reseflöde baserat på detta.
+* **Datakällor**: om du vill samla in information från externa system och använda den i kundresan, till exempel för att få väderinformation om profilstaden och få ett dedikerat kundressflöde baserat på detta.
 
-* **Anpassade åtgärder**: för att skicka information till externa system, t.ex. för att skicka e-post via en extern lösning med Journey Optimizer orkestreringsfunktioner tillsammans med profilinformation, målgruppsdata och resekontext.
+* **Anpassade åtgärder**: om du vill skicka information till externa system, till exempel för att skicka e-post via en extern lösning med Journey Optimizer orkestreringsfunktioner tillsammans med profilinformation, målgruppsdata och resekontext.
 
 >[!NOTE]
 >
->Eftersom svaren nu stöds bör du använda anpassade åtgärder i stället för datakällor för externa datakällor som användningsfall. Mer information om svar finns i [section](../action/action-response.md)
+>Eftersom svaren nu stöds bör du använda anpassade åtgärder i stället för datakällor för externa datakällor som användningsfall. Mer information om svar finns i [avsnittet](../action/action-response.md)
 
 Om du arbetar med externa datakällor eller anpassade åtgärder kanske du vill skydda dina externa system genom att begränsa resans genomströmning: upp till 5 000 instanser/sekund för enastående resor och upp till 2 000 instanser/sekund för målgruppsinlösta.
 
-För anpassade åtgärder finns begränsningsfunktioner på produktnivå. Se detta [page](../configuration/external-systems.md#capping).
+För anpassade åtgärder finns begränsningsfunktioner på produktnivå. Se den här [sidan](../configuration/external-systems.md#capping).
 
 För externa datakällor kan du definiera en begränsning på slutpunktsnivå för att undvika att överbelasta dessa externa system med hjälp av Journey Optimizer API:er för begränsning. Alla återstående begäranden efter att gränsen har nåtts kommer dock att tas bort. I det här avsnittet hittar du tillfälliga lösningar som du kan använda för att optimera dataflödet.
 
-Mer information om hur du integrerar med externa system finns i [page](../configuration/external-systems.md).
+Mer information om hur du integrerar med externa system finns på [sidan](../configuration/external-systems.md).
 
 ## Implementering
 
-För **målgruppsutlösta resor** kan du definiera läsfrekvensen för din Läs publikation-aktivitet som påverkar resans genomströmning. [Läs mer](../building-journeys/read-audience.md)
+För **målgruppsinlösta resor** kan du definiera läsfrekvensen för din Läs målgrupp-aktivitet som påverkar resans genomströmning. [Läs mer](../building-journeys/read-audience.md)
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Du kan ändra det här värdet från 500 till 20 000 instanser per sekund. Om du
 
 ![](assets/limit-throughput-2.png)
 
-Låt oss ta ett exempel på en **målgruppsutlösta resor** som arbetar med en population av **10 000 profiler** och skicka data till ett externt system som stöder **100 förfrågningar/sekund**.
+Låt oss ta ett exempel på en **målgruppsinställd resa** som arbetar med en population av **10 000 profiler** och skickar data till ett externt system som stöder **100 förfrågningar/sekund**.
 
 1. Du kan definiera din läspublik för att läsa profiler med ett genomflöde på 500 profiler/sekund, vilket innebär att det tar 20 sekunder att läsa alla dina profiler. På andra sidan kommer du att läsa 500 av dem, på andra 2 500 till osv.
 

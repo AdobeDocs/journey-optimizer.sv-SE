@@ -11,7 +11,7 @@ keywords: landning, landningssida, lista, prenumeration, service
 exl-id: 5e5419a0-5121-4aa7-a975-b1f08e2918c9
 source-git-commit: f63f9d6ffd28d276f8a3dadbf8dc6b947b8331e7
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '429'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 2%
 >abstract="Skapa en prenumerationslista för att samla in profiler som har valt att ta emot meddelanden om ett visst ämne eller evenemang. "
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/subscription-list.html#define-subscription-list" text="Skapa en prenumerationslista"
 
-En prenumerationstjänst avser marknadsföringsvaror och marknadsföringstjänster som tillhandahålls kunder som har valt att ta emot meddelanden om ett visst ämne/evenemang/intresse/osv. fortlöpande. I [!DNL Journey Optimizer], samlas dessa kunder i en prenumerationslista.
+En prenumerationstjänst avser marknadsföringsvaror och marknadsföringstjänster som tillhandahålls kunder som har valt att ta emot meddelanden om ett visst ämne/evenemang/intresse/osv. fortlöpande. I [!DNL Journey Optimizer] samlas de här kunderna i en prenumerationslista.
 
 En prenumerationstjänst kan vara:
 
@@ -36,13 +36,13 @@ En prenumerationstjänst kan vara:
 * en ränta på en viss produkt/sport/tjänst/osv., t.ex.:&quot;Intresserad att köpa ett hus under de kommande 12 månaderna&quot;
 * en inställning för hur du ska meddelas, till exempel:&quot;Få nya låtmeddelanden via e-post&quot;
 
-Profilerna kan läggas till i en prenumerationslista via en [landningssida](create-lp.md). Ett exempel presenteras i [det här avsnittet](lp-use-cases.md#subscription-to-a-service).
+Profilerna kan läggas till i en prenumerationslista via en [landningssida](create-lp.md). Ett exempel visas i [det här avsnittet](lp-use-cases.md#subscription-to-a-service).
 
 ## Skapa en prenumerationslista {#define-subscription-list}
 
 Följ stegen nedan för att skapa en prenumerationslista.
 
-1. Om du vill öppna prenumerationslistorna väljer du **[!UICONTROL Customer]** > **[!UICONTROL Subscription list]**.
+1. Välj **[!UICONTROL Customer]** > **[!UICONTROL Subscription list]** om du vill få tillgång till prenumerationslistorna.
 
    ![](assets/lp_subscription-lists.png)
 
@@ -56,13 +56,13 @@ Följ stegen nedan för att skapa en prenumerationslista.
 
    >[!CAUTION]
    >
-   >För närvarande kan du inte använda avstånd eller ange ett namn som redan finns för en annan prenumerationslista i **[!UICONTROL Title]** fält.
+   >För närvarande kan du inte använda avstånd eller ange ett namn som redan finns för en annan prenumerationslista i fältet **[!UICONTROL Title]**.
 
 1. Du kan definiera ett startdatum och ett slutdatum.
 
    ![](assets/lp_subscription-list-dates.png)
 
-1. Markera eller skapa Adobe Experience Platform-taggar från **[!UICONTROL Tags]** fält för att kategorisera landningssidan för förbättrad sökning. [Läs mer](../start/search-filter-categorize.md#tags)
+1. Välj eller skapa Adobe Experience Platform-taggar från fältet **[!UICONTROL Tags]** för att kategorisera landningssidan för förbättrad sökning. [Läs mer](../start/search-filter-categorize.md#tags)
 
 1. Klicka på **[!UICONTROL Save]**.
 
@@ -78,7 +78,7 @@ Möjliga statusvärden är följande:
 
 När prenumerationslistan har skapats kan du använda den på en landningssida. De profiler som anmäler sig via landningssidans formulär läggs till i listan. [Läs mer](design-lp.md)
 
-Du kan också använda prenumerationslistor som målgrupper när [byggnadsresor](../building-journeys/journey-gs.md#jo-build) och lägga till personalisering.
+Du kan också använda prenumerationslistor som målgrupper när du [skapar resor](../building-journeys/journey-gs.md#jo-build) och lägger till personalisering.
 
 >[!NOTE]
 >

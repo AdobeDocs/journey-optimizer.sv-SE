@@ -38,7 +38,7 @@ Varje person i målgruppen får en version av ett e-postmeddelande med en ämnes
 * en som direkt marknadsför ett 10-procentigt erbjudande på den nya samlingen och en bild.
 * den andra bara ger ut ett specialerbjudande utan att ange 10 % rabatt utan någon bild.
 
-Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet beroende på det mottagna experimentet. Vi väljer därför **[!UICONTROL Email Opens]** som det primära målmåttet i detta innehållsexperiment.
+Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet beroende på det mottagna experimentet. Därför kommer vi att välja **[!UICONTROL Email Opens]** som det primära målmåttet i den här innehållsexperimenten.
 
 ![](assets/content_experiment.png)
 
@@ -50,7 +50,7 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
    >
    >Experimentation i Journey är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
-1. Från **[!UICONTROL Edit content]** börjar du personalisera behandling A.
+1. Börja personalisera behandling A från fönstret **[!UICONTROL Edit content]**.
 
    För den här behandlingen ska vi specificera specialerbjudandet direkt i ämnesraden och lägga till personalisering.
 
@@ -70,27 +70,27 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 >title="Resultatmått"
 >abstract="Resultatmått används för att spåra och utvärdera den bästa behandlingen i ett experiment. Var noga med att konfigurera datauppsättningen för vissa mätvärden innan du använder den."
 
-1. När ditt meddelande är anpassat går du till kampanjsammanfattningssidan och klickar på **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment.
+1. När ditt meddelande har anpassats kan du gå till kampanjsammanfattningssidan och klicka på **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment.
 
    ![](assets/content_experiment_3.png)
 
-1. Välj **[!UICONTROL Success metric]** som du vill använda för ditt experiment.
+1. Välj den **[!UICONTROL Success metric]** som du vill ange för ditt experiment.
 
-   I detta exempel väljer du **[!UICONTROL Email open]** för att testa om profiler öppnar sina e-postmeddelanden om kampanjkoden finns på ärenderaden.
+   I det här exemplet väljer du **[!UICONTROL Email open]** om du vill testa om profilerna öppnar sina e-postmeddelanden om kampanjkoden finns på ämnesraden.
 
    ![](assets/content_experiment_11.png)
 
-1. När du skapar ett experiment med hjälp av appen eller webbkanalen och väljer **[!UICONTROL Inbound Clicks]**, **[!UICONTROL Unique Inbound Clicks]** , **[!UICONTROL Page Views]** , eller **[!UICONTROL Unique Page Views metrics]** , **[!UICONTROL Click Action]**  I den här listrutan kan du hålla reda på och övervaka klick och vyer på specifika sidor.
+1. När du skapar ett experiment med hjälp av InApp- eller webbkanalen och väljer **[!UICONTROL Inbound Clicks]**, **[!UICONTROL Unique Inbound Clicks]** , **[!UICONTROL Page Views]** eller **[!UICONTROL Unique Page Views metrics]** kan du med hjälp av listrutan **[!UICONTROL Click Action]** spåra och övervaka klick och vyer på specifika sidor.
 
    ![](assets/content_experiment_20.png)
 
-1. Klicka **[!UICONTROL Add treatment]** för att skapa så många nya behandlingar som behövs.
+1. Klicka på **[!UICONTROL Add treatment]** för att skapa så många nya behandlingar som behövs.
 
    ![](assets/content_experiment_8.png)
 
-1. Ändra **[!UICONTROL Title]** för att särskilja dem bättre.
+1. Ändra **[!UICONTROL Title]** för din behandling så att du bättre kan skilja dem åt.
 
-1. Välj att lägga till en **[!UICONTROL Holdout]** gruppera efter leverans. Den här gruppen kommer inte att få något innehåll från den här kampanjen.
+1. Välj att lägga till en **[!UICONTROL Holdout]**-grupp i leveransen. Den här gruppen kommer inte att få något innehåll från den här kampanjen.
 
    Om du aktiverar alternativfältet tar det automatiskt 10 % av din befolkning. Du kan justera procentandelen om det behövs.
 
@@ -100,32 +100,32 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 
    ![](assets/content_experiment_12.png)
 
-1. Du kan sedan välja att tilldela en exakt procentsats till varje **[!UICONTROL Treatment]** eller bara aktivera **[!UICONTROL Distribute evenly]** växlingsfält.
+1. Du kan sedan välja att tilldela en exakt procentsats till varje **[!UICONTROL Treatment]** eller bara växla till **[!UICONTROL Distribute evenly]**-växlingsfältet.
 
    ![](assets/content_experiment_13.png)
 
-1. Klicka **[!UICONTROL Create]** när konfigurationen är inställd.
+1. Klicka på **[!UICONTROL Create]** när konfigurationen är inställd.
 
 ## Utforma dina behandlingar {#treatment-experiment}
 
-1. Från **[!UICONTROL Edit content]** väljer du behandling B för att ändra innehållet.
+1. I fönstret **[!UICONTROL Edit content]** väljer du din behandling B för att ändra innehållet.
 
    Här väljer vi att inte ange erbjudandet i **[!UICONTROL Subject line]**.
 
    ![](assets/content_experiment_18.png)
 
-1. Klicka **[!UICONTROL Edit email body]** för att ytterligare personalisera behandlingen B.
+1. Klicka på **[!UICONTROL Edit email body]** om du vill anpassa din behandling ytterligare B.
 
    ![](assets/content_experiment_9.png)
 
-1. När du har utformat dina behandlingar klickar du **[!UICONTROL More actions]** för att få tillgång till behandlingar: **[!UICONTROL Rename]**, **[!UICONTROL Duplicate]** och **[!UICONTROL Delete]**.
+1. När du har utformat dina behandlingar klickar du på **[!UICONTROL More actions]** för att komma åt alternativ som är relaterade till dina behandlingar: **[!UICONTROL Rename]**, **[!UICONTROL Duplicate]** och **[!UICONTROL Delete]**.
 
    ![](assets/content_experiment_7.png)
 
-1. Om det behövs kan du komma åt **[!UICONTROL Experiment settings]** för att ändra din behandlingskonfiguration.
+1. Om det behövs kan du gå till **[!UICONTROL Experiment settings]**-menyn och ändra din behandlingskonfiguration.
 
    ![](assets/content_experiment_19.png)
 
-1. När meddelandeinnehållet har definierats klickar du på **[!UICONTROL Simulate content]** för att styra återgivningen av leveransen och kontrollera personaliseringsinställningarna med testprofiler. [Läs mer](../content-management/preview-test.md)
+1. När meddelandeinnehållet har definierats klickar du på knappen **[!UICONTROL Simulate content]** för att kontrollera återgivningen av leveransen och kontrollera personaliseringsinställningarna med testprofiler. [Läs mer](../content-management/preview-test.md)
 
 När du har konfigurerat dina experiment kan du följa resultatet av leveransen med din rapport. [Läs mer](../reports/campaign-global-report.md#experimentation-report)

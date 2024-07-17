@@ -8,14 +8,14 @@ level: Experienced
 exl-id: cc67519e-7a80-49c7-8c8b-c777be633026
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 1%
+source-wordcount: '159'
+ht-degree: 0%
 
 ---
 
 # Ta bort en samlingskvalificerare {#delete-tag}
 
-Ibland kan det vara nödvändigt att ta bort (DELETE) en samlingskvalificerare (tidigare kallad &quot;tagg&quot;). Endast samlingskvalificerare som du skapar i innehavarbehållaren kan tas bort. Detta görs genom att en DELETE-begäran görs till [!DNL Offer Library] API som använder $id för den samlingskvalificerare som du vill ta bort.
+Ibland kan det vara nödvändigt att ta bort (DELETE) en samlingskvalificerare (tidigare kallad &quot;tagg&quot;). Endast samlingskvalificerare som du skapar i innehavarbehållaren kan tas bort. Detta görs genom att utföra en DELETE-begäran till [!DNL Offer Library]-API:t med $id för den samlingskvalificerare som du vill ta bort.
 
 **API-format**
 

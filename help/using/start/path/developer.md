@@ -20,12 +20,12 @@ ht-degree: 0%
 
 Som utvecklare måste du **konfigurera din mobilapp** för att kunna skicka push-meddelanden med [!DNL Adobe Journey Optimizer].
 
-[!DNL Journey Optimizer] kan ni skapa resor och skicka meddelanden till riktade målgrupper. Innan du börjar skicka push-meddelanden med [!DNL Journey Optimizer]måste ni se till att konfigurationer och integreringar finns på plats i mobilappen och i [!DNL Adobe Experience Platform] och [!DNL Adobe Experience Platform Launch]. För att förstå dataflödet för push-meddelanden i [!DNL Adobe Journey Optimizer] se [den här sidan](../../push/push-gs.md).
+Med [!DNL Journey Optimizer] kan du skapa dina resor och skicka meddelanden till riktade målgrupper. Innan du börjar skicka push-meddelanden med [!DNL Journey Optimizer] måste du se till att det finns konfigurationer och integreringar på mobilappen samt i [!DNL Adobe Experience Platform] och [!DNL Adobe Experience Platform Launch]. Om du vill veta mer om dataflödet för push-meddelanden i [!DNL Adobe Journey Optimizer] kan du läsa [den här sidan](../../push/push-gs.md).
 
-Steg för att konfigurera push-meddelandekanalen och testa mobilappsintegreringen finns i [den här sidan](../../push/push-configuration.md).
+Steg för att konfigurera push-meddelandekanalen och testa mobilappsintegreringen beskrivs på [den här sidan](../../push/push-configuration.md).
 
 ## Arbeta med API:er {#work-apis}
 
 Du kan också utföra flera åtgärder med **[!DNL Adobe Journey Optimizer]API:er**.
 
-Steg som hjälper dig att börja använda [!DNL Offer Library] API är detaljerad [i det här avsnittet](../../offers/api-reference/getting-started.md). Den här guiden innehåller exempel på API-anrop för att utföra nyckelåtgärder med beslutsmotorn.
+Steg som hjälper dig att börja använda API:t [!DNL Offer Library] finns detaljerade [i det här avsnittet](../../offers/api-reference/getting-started.md). Den här guiden innehåller exempel på API-anrop för att utföra nyckelåtgärder med beslutsmotorn.

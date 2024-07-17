@@ -30,15 +30,15 @@ Med anpassade åtgärder kan du konfigurera anslutningar med ett tredjepartssyst
 I Journey Optimizer kan du tillämpa policyer för datastyrning och samtycke på anpassade åtgärder för att förhindra att specifika fält exporteras till tredjepartssystem eller utesluta kunder som inte har samtyckt till att ta emot e-post, push eller SMS-kommunikation. Mer information finns på följande sidor:
 
 * [Datastyrning](../action/action-privacy.md).
-* [Godkännande](../action/consent.md).
+* [Samtycke](../action/consent.md).
 
 ## URL-konfiguration
 
-Konfigurationsrutan för **Anpassad åtgärd** aktiviteten visar URL-konfigurationsparametrarna och autentiseringsparametrarna som har konfigurerats för den anpassade åtgärden. Du kan inte konfigurera den statiska delen av URL-adressen i resan, utan i den globala konfigurationen för den anpassade åtgärden. [Läs mer](../action/about-custom-action-configuration.md).
+Konfigurationsrutan för aktiviteten **Anpassad åtgärd** visar URL-konfigurationsparametrarna och autentiseringsparametrarna som har konfigurerats för den anpassade åtgärden. Du kan inte konfigurera den statiska delen av URL-adressen i resan, utan i den globala konfigurationen för den anpassade åtgärden. [Läs mer](../action/about-custom-action-configuration.md).
 
 ### Dynamisk sökväg
 
-Om URL:en innehåller en dynamisk sökväg anger du sökvägen i **[!UICONTROL Path]** fält.
+Om URL:en innehåller en dynamisk sökväg anger du sökvägen i fältet **[!UICONTROL Path]**.
 
 Om du vill sammanfoga fält och enkla textsträngar använder du strängfunktionerna eller plustecknet (+) i den avancerade uttrycksredigeraren. Omsluter enkla textsträngar med enkla citattecken (&#39;) eller inom dubbla citattecken (&quot;). [Läs mer](expression/expressionadvanced.md).
 
@@ -51,13 +51,13 @@ I den här tabellen visas ett exempel på konfiguration:
 
 Den sammanfogade URL:en har följande format:
 
-`https://xxx.yyy.com:8080/somethingstatic/`\&lt;id>`/messages`
+`https://xxx.yyy.com:8080/somethingstatic/`\&lt;ID>`/messages`
 
 ![](assets/journey-custom-action-url.png)
 
 ### Huvuden och frågeparametrar {#headers}
 
-The **[!UICONTROL URL Configuration]** -avsnittet visar de dynamiska huvud- och frågeparameterfälten, men inte konstantfälten. Dynamiska huvud- och frågeparameterfält definieras som variabler i åtgärdskonfigurationsfönstret. [Läs mer](../action/about-custom-action-configuration.md#url-configuration)
+Avsnittet **[!UICONTROL URL Configuration]** visar de dynamiska huvud- och frågeparameterfälten, men inte konstantfälten. Dynamiska huvud- och frågeparameterfält definieras som variabler i åtgärdskonfigurationsfönstret. [Läs mer](../action/about-custom-action-configuration.md#url-configuration)
 
 Om du vill ange värdet för dynamiska huvud- och frågeparameterfält klickar du i fältet eller på pennikonen och markerar önskat fält.
 
@@ -65,7 +65,7 @@ Om du vill ange värdet för dynamiska huvud- och frågeparameterfält klickar d
 
 ## Åtgärdsparametrar
 
-I **[!UICONTROL Action parameters]** visas meddelandeparametrar som _&quot;Variabel&quot;_. För de här parametrarna kan du definiera var informationen ska hämtas (till exempel händelser, datakällor), skicka värden manuellt eller använda den avancerade uttrycksredigeraren för avancerade användningsfall. Avancerade användningsområden kan vara datahantering och annan funktionsanvändning. Se detta [page](expression/expressionadvanced.md).
+I avsnittet **[!UICONTROL Action parameters]** ser du meddelandeparametrarna som är definierade som _&quot;Variabel&quot;_. För de här parametrarna kan du definiera var informationen ska hämtas (till exempel händelser, datakällor), skicka värden manuellt eller använda den avancerade uttrycksredigeraren för avancerade användningsfall. Avancerade användningsområden kan vara datahantering och annan funktionsanvändning. Se den här [sidan](expression/expressionadvanced.md).
 
 **Relaterade ämnen**
 

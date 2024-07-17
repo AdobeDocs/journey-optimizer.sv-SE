@@ -20,15 +20,15 @@ ht-degree: 1%
 
 ## Arkivera meddelanden {#about-archiving}
 
-Regeringar som HIPAA kräver att [!DNL Journey Optimizer] bör vara ett sätt att arkivera meddelanden som skickas till enskilda personer. Om era kunder gör anspråk bör de ha möjlighet att få en kopia av det skickade meddelandet för verifieringsändamål.
+Regler som HIPAA kräver att [!DNL Journey Optimizer] ska tillhandahålla ett sätt att arkivera meddelanden som skickas till enskilda personer. Om era kunder gör anspråk bör de ha möjlighet att få en kopia av det skickade meddelandet för verifieringsändamål.
 
-* För e-postkanalen [!DNL Journey Optimizer] har en inbyggd funktion för e-post i BCC. [Läs mer](#bcc-email)
+* För e-postkanalen har [!DNL Journey Optimizer] en inbyggd e-postfunktion för BCC. [Läs mer](#bcc-email)
 
-* För alla kanaler kan du dessutom använda fältet &quot;Mall&quot; i **Enhetsdatauppsättning**, som innehåller information om de icke-personliga meddelandemallarna. Exportera datauppsättningen med det här fältet om du vill spara metadata som vem som skickade meddelandet, till vem och när. Observera att personaliserade data inte exporteras - endast mallen (meddelandets format och struktur) beaktas. [Läs mer](../data/datasets-query-examples.md#entity-dataset)
+* För alla kanaler kan du dessutom använda fältet Template i **Entity Dataset** som innehåller information om de icke-personliga meddelandemallarna. Exportera datauppsättningen med det här fältet om du vill spara metadata som vem som skickade meddelandet, till vem och när. Observera att personaliserade data inte exporteras - endast mallen (meddelandets format och struktur) beaktas. [Läs mer](../data/datasets-query-examples.md#entity-dataset)
 
 >[!NOTE]
 >
->[!DNL Journey Optimizer] har inte stöd för kraven på SMS-arkivering. Om du vill ha dedikerat stöd för arkivering kan du arbeta med din SMS-leverantör (Synch, Infobip eller Twilio).
+>[!DNL Journey Optimizer] har inte stöd för SMS-arkiveringskrav. Om du vill ha dedikerat stöd för arkivering kan du arbeta med din SMS-leverantör (Synch, Infobip eller Twilio).
 
 ## Så här använder du BCC för e-post {#bcc-email}
 
@@ -37,17 +37,17 @@ Regeringar som HIPAA kräver att [!DNL Journey Optimizer] bör vara ett sätt at
 >title="Definiera en e-postadress för hemlig kopia"
 >abstract="Du kan behålla en kopia av skickade e-postmeddelanden genom att skicka dem till en inkorg för hemlig kopia. Ange den e-postadress du vill använda så att alla e-postmeddelanden som skickas är blinda och kopieras till den här BCC-adressen. Observera att BCC-adressdomänen måste vara en annan än alla underdomäner som har delegerats till Adobe. Den här funktionen är valfri."
 
-Du kan skicka en kopia (BCC) av ett e-postmeddelande som skickas av [!DNL Journey Optimizer] till en dedikerad BCC-adress. Med den här valfria funktionen kan du behålla kopior av e-postmeddelanden som du skickar till användarna för att uppfylla regelkrav och/eller arkivera. BCC-adressen är inte synlig för andra mottagare av meddelandet.
+Du kan skicka en blind kopia (BCC) av ett e-postmeddelande som skickats av [!DNL Journey Optimizer] till en dedikerad BCC-adress. Med den här valfria funktionen kan du behålla kopior av e-postmeddelanden som du skickar till användarna för att uppfylla regelkrav och/eller arkivera. BCC-adressen är inte synlig för andra mottagare av meddelandet.
 
 ### Aktivera BCC-e-post {#enable-bcc}
 
-Aktivera **[!UICONTROL BCC email]** anger du den e-postadress du vill använda i det dedikerade fältet i [kanalyta](channel-surfaces.md) (t.ex. meddelandeförinställning). Du kan ange en extern adress i rätt format, förutom en e-postadress som har definierats för en underdomän som har delegerats till Adobe. Om du till exempel har delegerat *marketing.luma.com* subdomain to Adobe, any address like *abc@marketing.luma.com* är förbjudet.
+Om du vill aktivera alternativet **[!UICONTROL BCC email]** anger du den e-postadress du vill ha i det dedikerade fältet på [kanalytan](channel-surfaces.md) (d.v.s. meddelandeförinställningen). Du kan ange en extern adress i rätt format, förutom en e-postadress som har definierats för en underdomän som har delegerats till Adobe. Om du till exempel har delegerat underdomänen *marketing.luma.com* till Adobe tillåts inte adresser som *abc@marketing.luma.com*.
 
 >[!CAUTION]
 >
 >Du kan bara definiera en e-postadress för hemlig kopia. Kontrollera att det finns tillräckligt med mottagningskapacitet på BCC-adressen för att lagra alla e-postmeddelanden som skickas med den aktuella kanalytan.
 >
->Fler rekommendationer finns i [det här avsnittet](#bcc-recommendations-limitations).
+>Fler rekommendationer visas i [det här avsnittet](#bcc-recommendations-limitations).
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Inställningen för BCC-e-postadressen sparas och bearbetas omedelbart på ytniv
 
 ![](assets/preset-bcc-in-msg.png)
 
-BCC-adressen hämtas dock upp för att skicka kommunikation enligt den logik som beskrivs [här](../email/email-settings.md).
+BCC-adressen hämtas emellertid upp för att skicka kommunikation enligt logiken som beskrivs [här](../email/email-settings.md).
 
 ### Recommendations och begränsningar {#bcc-recommendations-limitations}
 
@@ -75,7 +75,7 @@ BCC-adressen hämtas dock upp för att skicka kommunikation enligt den logik som
 
 * Din inkorg som används för BCC bör hanteras på rätt sätt för utrymme och leverans. Om inkorgen returnerar studsar kanske vissa e-postmeddelanden inte tas emot och kommer därför inte att arkiveras.
 
-* Meddelanden kan levereras till e-postadressen för den kopierade kopian före målmottagarna. BCC-meddelanden kan också skickas trots att de ursprungliga meddelandena kan ha [studsade](../reports/suppression-list.md#delivery-failures).
+* Meddelanden kan levereras till e-postadressen för den kopierade kopian före målmottagarna. BCC-meddelanden kan också skickas trots att de ursprungliga meddelandena har [studsat](../reports/suppression-list.md#delivery-failures).
 
   <!--OR: Only successfully sent emails are taken in account. [Bounces](../reports/suppression-list.md#delivery-failures) are not. TO CHECK -->
 
@@ -89,21 +89,21 @@ BCC-adressen hämtas dock upp för att skicka kommunikation enligt den logik som
 
 ### GDPR-efterlevnad {#gdpr-compliance}
 
-I sådana förordningar som GDPR anges att registrerade bör kunna ändra sitt samtycke när som helst. Eftersom de BCC-e-postmeddelanden du skickar med Journey Optimizer innehåller personligt identifierbar information (PII) måste du redigera **[!UICONTROL CJM Email BCC Feedback Event Schema]** kunna hantera dessa PII i enlighet med GDPR och liknande regler.
+I sådana förordningar som GDPR anges att registrerade bör kunna ändra sitt samtycke när som helst. Eftersom de BCC-e-postmeddelanden som du skickar med Journey Optimizer innehåller personligt identifierbar information (PII) måste du redigera **[!UICONTROL CJM Email BCC Feedback Event Schema]** för att kunna hantera dessa PII i enlighet med GDPR och liknande regler.
 
 Följ stegen nedan för att göra detta.
 
-1. Gå till **[!UICONTROL Data management]** > **[!UICONTROL Schemas]** > **[!UICONTROL Browse]** och markera **[!UICONTROL CJM Email BCC Feedback Event Schema]**.
+1. Gå till **[!UICONTROL Data management]** > **[!UICONTROL Schemas]** > **[!UICONTROL Browse]** och välj **[!UICONTROL CJM Email BCC Feedback Event Schema]**.
 
    ![](assets/preset-bcc-schema.png)
 
-1. Klicka för att expandera **[!UICONTROL _experience]**, **[!UICONTROL customerJourneyManagment]** sedan **[!UICONTROL secondaryRecipientDetail]**.
+1. Klicka för att expandera **[!UICONTROL _experience]**, **[!UICONTROL customerJourneyManagment]** och sedan **[!UICONTROL secondaryRecipientDetail]**.
 
 1. Välj **[!UICONTROL originalRecipientAddress]**.
 
-1. I **[!UICONTROL Field properties]** till höger rullar du nedåt till **[!UICONTROL Identity]** kryssrutan.
+1. Bläddra nedåt till kryssrutan **[!UICONTROL Identity]** i **[!UICONTROL Field properties]** till höger.
 
-1. Markera den och markera den **[!UICONTROL Primary identity]**.
+1. Markera den och välj även **[!UICONTROL Primary identity]**.
 
 1. Välj ett namnutrymme i listrutan.
 
@@ -113,17 +113,17 @@ Följ stegen nedan för att göra detta.
 
 >[!NOTE]
 >
->Läs mer om hur du hanterar sekretess och tillämpliga regler i [Experience Platform dokumentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv){target="_blank"}.
+>Läs mer om hur du hanterar sekretess och tillämpliga regler i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv){target="_blank"}.
 
 ### BCC-rapporteringsdata {#bcc-reporting}
 
-Det går inte att rapportera som sådant på en hemlig kopia i rese- och meddelanderapporterna. Information lagras emellertid på en systemdatauppsättning som kallas **[!UICONTROL AJO BCC Feedback Event Dataset]**. Du kan köra frågor mot den här datauppsättningen om du till exempel vill hitta användbar information för felsökning.
+Det går inte att rapportera som sådant på en hemlig kopia i rese- och meddelanderapporterna. Information lagras emellertid på en systemdatauppsättning med namnet **[!UICONTROL AJO BCC Feedback Event Dataset]**. Du kan köra frågor mot den här datauppsättningen om du till exempel vill hitta användbar information för felsökning.
 
-Du kan komma åt den här datauppsättningen via användargränssnittet. Välj **[!UICONTROL Data management]** > **[!UICONTROL Datasets]** > **[!UICONTROL Browse]** och aktivera **[!UICONTROL Show system datasets]** växla från filtret för att visa systemgenererade datauppsättningar. Läs mer om hur du får åtkomst till datauppsättningar i [det här avsnittet](../data/get-started-datasets.md#access-datasets).
+Du kan komma åt den här datauppsättningen via användargränssnittet. Välj **[!UICONTROL Data management]** > **[!UICONTROL Datasets]** > **[!UICONTROL Browse]** och aktivera växlingen **[!UICONTROL Show system datasets]** från filtret för att visa de systemgenererade datauppsättningarna. Läs mer om hur du får åtkomst till datauppsättningar i [det här avsnittet](../data/get-started-datasets.md#access-datasets).
 
 ![](assets/preset-bcc-dataset.png)
 
-Om du vill köra frågor mot den här datauppsättningen kan du använda Frågeredigeraren från [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"}. Om du vill komma åt den väljer du **[!UICONTROL Data management]** > **[!UICONTROL Queries]** och klicka **[!UICONTROL Create query]**. [Läs mer](../data/get-started-queries.md)
+Om du vill köra frågor mot den här datauppsättningen kan du använda frågeredigeraren som tillhandahålls av [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"}. Om du vill komma åt den väljer du **[!UICONTROL Data management]** > **[!UICONTROL Queries]** och klickar på **[!UICONTROL Create query]**. [Läs mer](../data/get-started-queries.md)
 
 ![](assets/preset-bcc-queries.png)
 
@@ -148,7 +148,7 @@ Beroende på vilken information du söker kan du köra följande frågor.
 
    >[!NOTE]
    >
-   >För att få `<journey version id>`väljer du motsvarande [reseversion](../building-journeys/journey.md#journey-versions) från **[!UICONTROL Journey management]** > **[!UICONTROL Journeys]** -menyn. Resursversions-ID visas i slutet av den URL som visas i webbläsaren.
+   >Om du vill hämta parametern `<journey version id>`väljer du motsvarande [reseversion](../building-journeys/journey.md#journey-versions) på menyn **[!UICONTROL Journey management]** > **[!UICONTROL Journeys]** . Resursversions-ID visas i slutet av den URL som visas i webbläsaren.
    >
    >![](assets/preset-bcc-action-id.png)
 
@@ -178,7 +178,7 @@ Beroende på vilken information du söker kan du köra följande frågor.
 
    >[!NOTE]
    >
-   >För att få `<journey action id>` kör du den första frågan som beskrivs ovan med resversion-ID:t. The `<recipient email address>` parametern är målmottagarens eller den faktiska mottagarens e-postadress.
+   >Om du vill hämta parametern `<journey action id>` kör du den första frågan som beskrivs ovan med reseversion-ID:t. Parametern `<recipient email address>` är målmottagarens eller den faktiska mottagarens e-postadress.
 
 1. Kör den här frågan om du vill hämta alla BCC-meddelandefeedbackhändelser som genererats för ett visst meddelande och som är riktat till en viss användare under de senaste två dagarna:
 

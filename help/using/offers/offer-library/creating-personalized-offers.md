@@ -17,13 +17,13 @@ ht-degree: 2%
 
 Innan du skapar ett erbjudande måste du kontrollera att du har skapat:
 
-* A **placering** i vilket erbjudandet kommer att visas. Se [Skapa placeringar](../offer-library/creating-placements.md)
-* Om du vill lägga till ett villkor för behörighet: **beslutsregel** som kommer att definiera villkoren för hur erbjudandet ska presenteras. Se [Skapa beslutsregler](../offer-library/creating-decision-rules.md).
-* En eller flera **samlingskvalificerare** (tidigare kallat &quot;taggar&quot;) som du kanske vill koppla till erbjudandet. Se [Skapa samlingskvalificerare](../offer-library/creating-tags.md).
+* En **placering** där erbjudandet visas. Se [Skapa placeringar](../offer-library/creating-placements.md)
+* Om du vill lägga till ett berättigandevillkor: en **beslutsregel** som definierar det villkor som erbjudandet presenteras under. Se [Skapa beslutsregler](../offer-library/creating-decision-rules.md).
+* En eller flera **samlingskvalificerare** (kallas tidigare taggar) som du kanske vill associera med erbjudandet. Se [Skapa samlingskvalificerare](../offer-library/creating-tags.md).
 
-➡️ [Upptäck den här funktionen i video](#video)
+➡️ [Upptäck den här funktionen i videon](#video)
 
-Listan över personaliserade erbjudanden finns på **[!UICONTROL Offers]** -menyn.
+Listan med anpassade erbjudanden finns på menyn **[!UICONTROL Offers]**.
 
 ![](../assets/offers_list.png)
 
@@ -39,9 +39,9 @@ Listan över personaliserade erbjudanden finns på **[!UICONTROL Offers]** -meny
 >title="Erbjudandeattribut"
 >abstract="Med attribut för erbjudanden kan du koppla nyckelvärdepar till erbjudandet i rapporterings- och analyssyfte."
 
-Skapa en **erbjudande** gör du så här:
+Så här skapar du ett **erbjudande**:
 
-1. Klicka **[!UICONTROL Create offer]** väljer **[!UICONTROL Personalized offer]**.
+1. Klicka på **[!UICONTROL Create offer]** och välj sedan **[!UICONTROL Personalized offer]**.
 
    ![](../assets/create_offer.png)
 
@@ -57,11 +57,11 @@ Skapa en **erbjudande** gör du så här:
    >
    >Uppdatering av start- och slutdatum kan påverka capping. [Läs mer](add-constraints.md#capping-change-date)
 
-1. Du kan också koppla en eller flera befintliga **[!UICONTROL collection qualifiers]** så att du enklare kan söka efter och ordna erbjudandebiblioteket. [Läs mer](creating-tags.md).
+1. Du kan även associera en eller flera befintliga **[!UICONTROL collection qualifiers]** till erbjudandet, så att du enklare kan söka efter och ordna erbjudandebiblioteket. [Läs mer](creating-tags.md).
 
-1. The **[!UICONTROL Offer attributes]** kan du koppla nyckelvärdepar till erbjudandet för rapportering och analys.
+1. I avsnittet **[!UICONTROL Offer attributes]** kan du associera nyckelvärdepar med erbjudandet i rapporterings- och analyssyfte.
 
-1. Om du vill tilldela etiketter för anpassad eller viktig dataanvändning till erbjudandet väljer du **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../../administration/object-based-access.md)
+1. Välj **[!UICONTROL Manage access]** om du vill tilldela etiketter för anpassad eller viktig dataanvändning till erbjudandet. [Läs mer om OLAC (Object Level Access Control)](../../administration/object-based-access.md)
 
    ![](../assets/offer_manage-access.png)
 
@@ -77,7 +77,7 @@ Skapa en **erbjudande** gör du så här:
 
    >[!NOTE]
    >
-   >När du väljer målgrupper eller beslutsregler kan du se information om de uppskattade kvalificerade profilerna. Klicka **[!UICONTROL Refresh]** för att uppdatera data.
+   >När du väljer målgrupper eller beslutsregler kan du se information om de uppskattade kvalificerade profilerna. Klicka på **[!UICONTROL Refresh]** för att uppdatera data.
    >
    >Observera att profiluppskattningar inte är tillgängliga när regelparametrar innehåller data som inte finns i profilen, t.ex. kontextdata. Exempel: en regel som kräver att det aktuella vädret är ≥80 grader.
 
@@ -91,11 +91,11 @@ När regler och begränsningar för behörighet har definierats visas en sammanf
 
 1. Kontrollera att allt är rätt konfigurerat.
 
-1. Du kan visa information om de uppskattade kvalificerade profilerna. Klicka **[!UICONTROL Refresh]** för att uppdatera data.
+1. Du kan visa information om de uppskattade kvalificerade profilerna. Klicka på **[!UICONTROL Refresh]** för att uppdatera data.
 
    ![](../assets/offer-summary-estimate.png)
 
-1. När erbjudandet är klart för användarna klickar du på **[!UICONTROL Finish]**.
+1. När ditt erbjudande är klart att visas för användarna klickar du på **[!UICONTROL Finish]**.
 
 1. Välj **[!UICONTROL Save and approve]**.
 
@@ -103,7 +103,7 @@ När regler och begränsningar för behörighet har definierats visas en sammanf
 
    Du kan också spara erbjudandet som ett utkast för att redigera det och godkänna det senare.
 
-Erbjudandet visas i listan med **[!UICONTROL Approved]** eller **[!UICONTROL Draft]** status, beroende på om du har godkänt den eller inte i föregående steg.
+Erbjudandet visas i listan med statusen **[!UICONTROL Approved]** eller **[!UICONTROL Draft]**, beroende på om du godkände det eller inte i föregående steg.
 
 Den är nu klar att levereras till användarna.
 
@@ -111,23 +111,23 @@ Den är nu klar att levereras till användarna.
 
 ## Hantera erbjudanden {#offer-list}
 
-I erbjudandelistan kan du välja erbjudandet för att visa dess egenskaper. Du kan också redigera det och ändra dess status (**Utkast**, **Godkänd**, **Arkiverad**), duplicera erbjudandet eller ta bort det.
+I erbjudandelistan kan du välja erbjudandet för att visa dess egenskaper. Du kan också redigera det, ändra dess status (**Utkast**, **Godkänt**, **Arkiverat**), duplicera erbjudandet eller ta bort det.
 
 ![](../assets/offer_created.png)
 
-Välj **[!UICONTROL Edit]** för att gå tillbaka till erbjudandeversionen där du kan ändra erbjudandets [information](#create-offer), [representationer](#representations)och du kan redigera [regler och begränsningar för behörighet](#eligibility).
+Välj knappen **[!UICONTROL Edit]** om du vill gå tillbaka till erbjudandeversionsläget, där du kan ändra erbjudandets [information](#create-offer), [representationer](#representations) samt redigera [berättiganderegler och begränsningar](#eligibility).
 
-Välj ett godkänt erbjudande och klicka på **[!UICONTROL Undo approve]** för att återställa erbjudandestatusen till **[!UICONTROL Draft]**.
+Välj ett godkänt erbjudande och klicka på **[!UICONTROL Undo approve]** för att ange erbjudandestatusen till **[!UICONTROL Draft]**.
 
-Om du vill ange status igen till **[!UICONTROL Approved]** markerar du motsvarande knapp som nu visas.
+Om du vill ange status till **[!UICONTROL Approved]** igen väljer du motsvarande knapp som nu visas.
 
 ![](../assets/offer_approve.png)
 
-The **[!UICONTROL More actions]** aktiverar de åtgärder som beskrivs nedan.
+Knappen **[!UICONTROL More actions]** aktiverar de åtgärder som beskrivs nedan.
 
 ![](../assets/offer_more-actions.png)
 
-* **[!UICONTROL Duplicate]**: skapar ett erbjudande med samma egenskaper, representationer, regler och begränsningar för behörighet. Som standard har det nya erbjudandet **[!UICONTROL Draft]** status.
+* **[!UICONTROL Duplicate]**: skapar ett erbjudande med samma egenskaper, representationer, regler och begränsningar för behörighet. Som standard har det nya erbjudandet statusen **[!UICONTROL Draft]**.
 * **[!UICONTROL Delete]**: tar bort erbjudandet från listan.
 
   >[!CAUTION]
@@ -136,7 +136,7 @@ The **[!UICONTROL More actions]** aktiverar de åtgärder som beskrivs nedan.
   >
   >Om erbjudandet används i en samling eller ett beslut kan det inte tas bort. Du måste ta bort erbjudandet från alla objekt först.
 
-* **[!UICONTROL Archive]**: anger erbjudandestatusen till **[!UICONTROL Archived]**. Erbjudandet är fortfarande tillgängligt från listan, men du kan inte återställa dess status till **[!UICONTROL Draft]** eller **[!UICONTROL Approved]**. Du kan bara duplicera eller ta bort den.
+* **[!UICONTROL Archive]**: anger erbjudandestatusen till **[!UICONTROL Archived]**. Erbjudandet är fortfarande tillgängligt från listan, men du kan inte återställa status till **[!UICONTROL Draft]** eller **[!UICONTROL Approved]**. Du kan bara duplicera eller ta bort den.
 
 Du kan också ta bort eller ändra status för flera erbjudanden samtidigt genom att markera motsvarande kryssrutor.
 
@@ -150,7 +150,7 @@ När ett erbjudande har skapats kan du klicka på dess namn i listan.
 
 ![](../assets/offer_click-name.png)
 
-På så sätt kan du få tillgång till detaljerad information om erbjudandet. Välj **[!UICONTROL Change log]** tabba till [övervaka alla ändringar](../get-started/user-interface.md#monitoring-changes) som har erbjudandet.
+På så sätt kan du få tillgång till detaljerad information om erbjudandet. Välj fliken **[!UICONTROL Change log]** om du vill [övervaka alla ändringar ](../get-started/user-interface.md#monitoring-changes) som har gjorts i erbjudandet.
 
 ![](../assets/offer_information.png)
 

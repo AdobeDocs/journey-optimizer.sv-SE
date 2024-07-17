@@ -23,7 +23,7 @@ ht-degree: 2%
 >title="Reaktionshändelser"
 >abstract="Med den här aktiviteten kan du reagera på spårningsdata som är relaterade till ett meddelande som skickas inom samma resa. Vi hämtar denna information i realtid när den delas med Adobe Experience Platform."
 
-Bland de olika aktiviteterna som finns på paletten finns de inbyggda **[!UICONTROL Reactions]** -händelse. Med den här aktiviteten kan du reagera på spårningsdata som är relaterade till ett meddelande som skickas inom samma resa. Vi hämtar denna information i realtid när den delas med Adobe Experience Platform.
+En av de olika händelseaktiviteterna som finns på paletten finns i den inbyggda **[!UICONTROL Reactions]**-händelsen. Med den här aktiviteten kan du reagera på spårningsdata som är relaterade till ett meddelande som skickas inom samma resa. Vi hämtar denna information i realtid när den delas med Adobe Experience Platform.
 
 Du kan reagera på klickade eller öppna meddelanden.
 
@@ -31,16 +31,16 @@ Du kan också använda den här funktionen för att utföra en åtgärd när det
 
 Observera att du bara kan använda en reaktionsaktivitet på arbetsytan om det finns en kanalåtgärdsaktivitet före (E-post och push).
 
-Se [Om funktionsmakron](../building-journeys/about-journey-activities.md#action-activities).
+Se [Om åtgärdsaktiviteter](../building-journeys/about-journey-activities.md#action-activities).
 
 ![](assets/journey45.png)
 
 Här följer de olika stegen för att konfigurera reaktionshändelser:
 
-1. Lägg till en **[!UICONTROL Label]** till reaktionen. Det här steget är valfritt.
+1. Lägg till en **[!UICONTROL Label]** i svaret. Det här steget är valfritt.
 1. Välj den åtgärd som du vill reagera på i listrutan. Du kan välja vilken åtgärdsaktivitet som helst som placerats i banans tidigare steg.
 1. Beroende på vilken åtgärd du har valt väljer du vad du vill reagera på.
-1. Du kan definiera en timeout för en händelse (mellan 40 sekunder och 29 dagar) och en timeout-sökväg. Detta skapar en andra väg för individer som inte reagerade inom den angivna tiden. När du testar en resa där en reaktionshändelse används, testläget **[!UICONTROL Wait time]** standard och minsta värde är 40 sekunder. Se [det här avsnittet](../building-journeys/testing-the-journey.md).
+1. Du kan definiera en timeout för en händelse (mellan 40 sekunder och 29 dagar) och en timeout-sökväg. Detta skapar en andra väg för individer som inte reagerade inom den angivna tiden. När du testar en resa som använder en reaktionshändelse är standardvärdet **[!UICONTROL Wait time]** och minimivärdet 40 sekunder. Se [det här avsnittet](../building-journeys/testing-the-journey.md).
 
 >[!NOTE]
 >

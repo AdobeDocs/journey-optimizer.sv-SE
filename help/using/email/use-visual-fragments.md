@@ -30,9 +30,9 @@ Följ stegen nedan om du vill använda ett fragment i ett e-postmeddelande.
 >Du kan lägga till upp till 30 fragment i en viss leverans. Fragment kan bara kapslas upp till 1 nivå.
 
 
-1. Öppna e-post- eller mallinnehåll med [E-posta Designer](get-started-email-design.md).
+1. Öppna e-post- eller mallinnehåll med hjälp av [e-post-Designer](get-started-email-design.md).
 
-1. Välj **[!UICONTROL Fragments]** ikonen från den vänstra listen.
+1. Välj ikonen **[!UICONTROL Fragments]** i den vänstra listen.
 
    ![](assets/fragments-in-designer.png)
 
@@ -53,7 +53,7 @@ Följ stegen nedan om du vill använda ett fragment i ett e-postmeddelande.
 
    >[!CAUTION]
    >
-   >Du kan lägga till valfritt **Utkast** eller **Live** till ert innehåll. Du kan dock inte aktivera din resa eller kampanj om ett fragment med statusen Utkast används i det. Vid en resa eller kampanjpublicering kommer utkastsfragment att visa ett fel och du måste godkänna dem för att kunna publicera.
+   >Du kan lägga till valfritt **utkast**- eller **Live**-fragment till ditt innehåll. Du kan dock inte aktivera din resa eller kampanj om ett fragment med statusen Utkast används i det. Vid en resa eller kampanjpublicering kommer utkastsfragment att visa ett fel och du måste godkänna dem för att kunna publicera.
 
 1. Precis som andra komponenter kan du flytta runt fragmentet i innehållet.
 
@@ -61,13 +61,13 @@ Följ stegen nedan om du vill använda ett fragment i ett e-postmeddelande.
 
    ![](assets/fragment-right-pane.png)
 
-1. Från **[!UICONTROL Settings]** kan du
+1. På fliken **[!UICONTROL Settings]** kan du:
 
    * Välj de enheter som du vill att fragmentet ska visas på.
    * Öppna fragmentet på en ny flik om du vill redigera det. [Läs mer](../content-management/fragments.md#edit-fragments)
    * Utforska referenser. [Läs mer](../content-management/fragments.md#explore-references)
 
-1. Du kan anpassa fragmentet ytterligare med **[!UICONTROL Styles]** -fliken.
+1. Du kan anpassa fragmentet ytterligare med fliken **[!UICONTROL Styles]**.
 
 1. Vid behov kan du bryta arvet med det ursprungliga fragmentet. [Läs mer](#break-inheritance)
 
@@ -81,11 +81,11 @@ Så här anpassar du redigerbara fält i ett fragment:
 
 1. Lägg till fragmentet i ditt innehåll och markera det för att öppna egenskapspanelen till höger.
 
-1. Alla redigerbara fält i fragmentet visas i **Inställningar** -fliken, under **Fragment** -avsnitt.
+1. Alla redigerbara fält i fragmentet visas på fliken **Inställningar** under avsnittet **Fragment** .
 
    Redigerbara fält markeras med grönt i förhandsgranskningsfönstret när de markeras i den högra rutan, vilket gör det enkelt att identifiera var de finns i ditt innehåll.
 
-   I exemplet nedan är bilden **källa** och **alt-text** kan redigeras, liksom knappen Klicka här **URL**.
+   I exemplet nedan kan bilden **source** och **alt text** redigeras, liksom knappen &quot;Klicka här&quot; **URL**.
 
    ![](assets/fragment-editable.png)
 

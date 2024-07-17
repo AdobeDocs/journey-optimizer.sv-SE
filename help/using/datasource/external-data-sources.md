@@ -27,11 +27,11 @@ Med externa datakällor kan du definiera en anslutning till tredjepartssystem om
 
 >[!NOTE]
 >
->Garantier som används i externa system finns i [den här sidan](../configuration/external-systems.md).
+>Garantier visas på [den här sidan](../configuration/external-systems.md) när du arbetar med externa system.
 
 >[!NOTE]
 >
->Eftersom svaren nu stöds bör du använda anpassade åtgärder i stället för datakällor för externa datakällor som användningsfall. Mer information om svar finns i [section](../action/action-response.md)
+>Eftersom svaren nu stöds bör du använda anpassade åtgärder i stället för datakällor för externa datakällor som användningsfall. Mer information om svar finns i [avsnittet](../action/action-response.md)
 
 Stöd finns för REST API:er som använder POST eller GET och returnerar JSON. API-nyckel samt grundläggande och anpassade autentiseringslägen stöds.
 
@@ -69,13 +69,13 @@ Här följer de viktigaste stegen för att skapa och konfigurera en ny extern da
 
    ![](assets/journey27.png)
 
-1. Konfigurera autentiseringen beroende på den externa tjänstens konfiguration: **[!UICONTROL No authentication]**, **[!UICONTROL Basic]**, **[!UICONTROL Custom]** eller **[!UICONTROL API key]**.
+1. Konfigurera autentiseringen beroende på den externa tjänstkonfigurationen: **[!UICONTROL No authentication]**, **[!UICONTROL Basic]**, **[!UICONTROL Custom]** eller **[!UICONTROL API key]**.
 
    För det grundläggande autentiseringsläget måste du fylla i ett användarnamn och ett lösenord.
 
    >[!NOTE]
    >
-   >När autentiseringsanropet utförs visas `<username>:<password>` strängen, kodad i base64, läggs till i autentiseringshuvudet.
+   >När autentiseringsanropet utförs läggs strängen `<username>:<password>`, som är kodad i base64, till i autentiseringshuvudet.
 
    Mer information om det anpassade autentiseringsläget finns i [det här avsnittet](../datasource/external-data-sources.md#custom-authentication-mode). I det här exemplet väljer vi autentiseringsläget för API-nyckel:
 
@@ -99,7 +99,7 @@ För parameteruppsättningen &quot;long/lat&quot; skapar vi en fältgrupp med f�
 
 Om ett GET-anrop som kräver parametrar används ska du ange parametrarna i fältet **[!UICONTROL Dynamic Values]** och de läggs sedan till automatiskt i slutet av anropet. Om ett POST-anrop används måste du:
 
-* lista parametrarna som ska skickas vid anropet i **[!UICONTROL Dynamic Values]** (i exemplet nedan: &quot;identifier&quot;).
+* lista de parametrar som ska skickas vid anropet i fältet **[!UICONTROL Dynamic Values]** (i exemplet nedan: &quot;identifier&quot;).
 * även ange dem med exakt samma syntax i brödtexten i den skickade nyttolasten. Om du vill göra det måste du lägga till: &quot;param&quot;: &quot;name of your parameter&quot; (i exemplet nedan: &quot;identifier&quot;). Följ syntaxen nedan:
 
   ```
@@ -137,7 +137,7 @@ Med den här autentiseringen blir åtgärdskörningen en process med två steg:
 
 >[!NOTE]
 >
->**Autentiseringen består av två delar.**
+>**Den här autentiseringen består av två delar.**
 
 ### Definition av slutpunkten som ska anropas för att generera åtkomsttoken{#custom-authentication-endpoint}
 
@@ -146,7 +146,7 @@ Med den här autentiseringen blir åtgärdskörningen en process med två steg:
 * rubriker: nyckelvärdepar som ska matas in som rubriker i detta anrop om det behövs
 * brödtext: beskriver anropets brödtext om metoden är POST. Vi stöder en begränsad brödstruktur, som definieras i bodyParams (key-value pairs). Brödtextens typ beskriver formatet och kodningen för brödtexten i anropet:
    * &#39;form&#39;: innebär att innehållstypen blir application/x-www-form-urlencoded (charset UTF-8) och nyckelvärdepar serialiseras som: key1=value1&amp;key2=value2&amp;...
-   * &#39;json&#39;: det innebär att innehållstypen blir application/json (charset UTF-8) och nyckelvärdepar kommer att serialiseras som ett json-objekt som det är: _{ &quot;key1&quot;: &quot;value1&quot;, &quot;key2&quot;: &quot;value2&quot;, ...}_
+   * json: det innebär att innehållstypen blir application/json (charset UTF-8) och nyckelvärdepar kommer att serialiseras som ett json-objekt som är: _{ &quot;key1&quot;: &quot;value1&quot;, &quot;key2&quot;: &quot;value2&quot;, ...}_
 
 ### Definition av hur åtkomsttoken måste matas in i åtgärdens HTTP-begäran{#custom-authentication-access-token}
 

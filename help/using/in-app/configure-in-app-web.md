@@ -16,11 +16,11 @@ ht-degree: 1%
 
 # Konfigurera webbkanalen i appen {#configure-in-app-web}
 
-## Förutsättningar {#prerequisites}
+## Förhandskrav {#prerequisites}
 
-* Säkerställ att du använder den senaste versionen för **Adobe Experience Platform Web SDK** tillägg.
+* Kontrollera att du använder den senaste versionen för ditt **Adobe Experience Platform Web SDK**-tillägg.
 
-* Installera **Adobe Experience Platform Web SDK** i din **Taggegenskaper** och aktivera **Personalisering av lagring** alternativ.
+* Installera tillägget **Adobe Experience Platform Web SDK** i **taggegenskaperna** och aktivera alternativet **Personalization Storage**.
 
   Den här konfigurationen är nödvändig för att lagra händelsehistorik på klienten, vilket är en förutsättning för att regler för frekvens ska kunna implementeras i Regelbyggaren. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html?lang=en)
 
@@ -28,55 +28,55 @@ ht-degree: 1%
 
 ## Konfigurera regel för skickade data till plattformen {#configure-sent-data-trigger}
 
-1. Få åtkomst till dina **Adobe Experience Platform Data Collection** instansen och navigera till **Taggegenskaper** konfigurerad med **Adobe Experience Platform Web SDK** tillägg.
+1. Få åtkomst till din **Adobe Experience Platform Data Collection**-instans och navigera till **Taggegenskaper** som konfigurerats med **Adobe Experience Platform Web SDK**-tillägget.
 
-1. Från **Redigering** meny, välja **Regler** sedan **Skapa ny regel** eller **Lägg till regel**.
+1. Välj **Regler** och sedan **Skapa ny regel** eller **Lägg till regel** på menyn **Redigering**.
 
    ![](assets/configure_web_inapp_2.png)
 
-1. I **Händelser** avsnitt, klicka **Lägg till** och konfigurera det enligt följande:
+1. I avsnittet **Händelser** klickar du på **Lägg till** och konfigurerar det enligt följande:
 
    * **Tillägg**: Kärna
 
-   * **Händelsetyp**: Bibliotek inläst (sidan ovanpå).
+   * **Händelsetyp**: Biblioteket har lästs in (sidan överst).
 
    ![](assets/configure_web_inapp_3.png)
 
-1. Klicka **Behåll ändringar** för att spara händelsekonfigurationen.
+1. Klicka på **Behåll ändringar** för att spara händelsekonfigurationen.
 
-1. I **Åtgärder** avsnitt, klicka **Lägg till** och konfigurera det enligt följande:
+1. Klicka på **Lägg till** i avsnittet **Åtgärder** och konfigurera det på följande sätt:
 
    * **Tillägg**: Adobe Experience Platform Web SDK
 
-   * **Åtgärdstyp**: Skicka-händelse
+   * **Åtgärdstyp**: Skicka händelse
 
    ![](assets/configure_web_inapp_4.png)
 
-1. I **Personalisering** i **Åtgärd** type, aktivera **Ge visuella personaliseringsbeslut** alternativ.
+1. Aktivera alternativet **Återge visuella personaliseringsbeslut** i **Personalization**-avsnittet av din **åtgärdstyp**.
 
    ![](assets/configure_web_inapp_5.png)
 
-1. I **Beslutskontext** -avsnittet, definiera **Nyckel** och **Värde** par som avgör vilka upplevelser som ska levereras.
+1. I avsnittet **Beslutskontext** definierar du de **Key** - och **Value** -par som avgör vilken upplevelse som ska levereras.
 
    ![](assets/configure_web_inapp_6.png)
 
-1. Spara **Åtgärd** genom att klicka på **Behåll ändringar**.
+1. Spara din **Åtgärdskonfiguration** genom att klicka på **Behåll ändringar**.
 
-1. Navigera till **Publiceringsflöde** -menyn. Skapa ett nytt **Bibliotek** eller välja en befintlig **Bibliotek** och lägga till dina nyskapade **Regel** till den. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=en#create-a-library)
+1. Navigera till menyn **Publiceringsflöde**. Skapa ett nytt **bibliotek** eller markera ett befintligt **bibliotek** och lägg till din nya **regel** i det. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=en#create-a-library)
 
-1. Från **Bibliotek**, markera **Spara och bygg för utveckling**.
+1. Välj **Spara och bygg till utveckling** i ditt **bibliotek**.
 
    ![](assets/configure_web_inapp_7.png)
 
 ## Konfigurera manuell regel {#configure-manual-trigger}
 
-1. Få åtkomst till dina **Adobe Experience Platform Data Collection** instansen och navigera till **Taggegenskaper** konfigurerad med **Adobe Experience Platform Web SDK** tillägg.
+1. Få åtkomst till din **Adobe Experience Platform Data Collection**-instans och navigera till **Taggegenskaper** som konfigurerats med **Adobe Experience Platform Web SDK**-tillägget.
 
-1. Från **Redigering** meny, välja **Regler** sedan **Skapa ny regel** eller **Lägg till regel**.
+1. Välj **Regler** och sedan **Skapa ny regel** eller **Lägg till regel** på menyn **Redigering**.
 
    ![](assets/configure_web_inapp_8.png)
 
-1. I **Händelser** avsnitt, klicka **Lägg till** och konfigurera det enligt följande:
+1. I avsnittet **Händelser** klickar du på **Lägg till** och konfigurerar det enligt följande:
 
    * **Tillägg**: Kärna
 
@@ -84,13 +84,13 @@ ht-degree: 1%
 
    ![](assets/configure_web_inapp_9.png)
 
-1. I **Klicka på konfiguration**, definierar **Väljare** som kommer att utvärderas.
+1. I **Klicka på konfigurationen** och definiera den **väljare** som ska utvärderas.
 
    ![](assets/configure_web_inapp_10.png)
 
-1. Klicka **Behåll ändringar** för att spara **Händelse** konfiguration.
+1. Klicka på **Behåll ändringar** för att spara **Event**-konfigurationen.
 
-1. I **Åtgärder** avsnitt, klicka **Lägg till** och konfigurera det enligt följande:
+1. Klicka på **Lägg till** i avsnittet **Åtgärder** och konfigurera det på följande sätt:
 
    * **Tillägg**: Adobe Experience Platform Web SDK
 
@@ -98,15 +98,15 @@ ht-degree: 1%
 
    ![](assets/configure_web_inapp_11.png)
 
-1. I **Åtgärden Utvärdera regeluppsättningar** i **Åtgärd** type, aktivera **Ge visuella personaliseringsbeslut** alternativ.
+1. Aktivera alternativet **Återge visuella personaliseringsbeslut** i **Utvärdera regeluppsättningsåtgärd** för **åtgärdstypen**.
 
    ![](assets/configure_web_inapp_13.png)
 
-1. I **Beslutskontext** -avsnittet, definiera **Nyckel** och **Värde** par som avgör vilka upplevelser som ska levereras.
+1. I avsnittet **Beslutskontext** definierar du de **Key** - och **Value** -par som avgör vilken upplevelse som ska levereras.
 
-1. Öppna **Publiceringsflöde** meny, skapa en ny **Bibliotek** eller välja en befintlig **Bibliotek** och lägga till dina nyskapade **Regel**. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=en#create-a-library)
+1. Gå till menyn **Publiceringsflöde**, skapa ett nytt **bibliotek** eller välj ett befintligt **bibliotek** och lägg till din nya **regel**. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=en#create-a-library)
 
-1. Från **Bibliotek**, markera **Spara och bygg för utveckling**.
+1. Välj **Spara och bygg till utveckling** i ditt **bibliotek**.
 
    ![](assets/configure_web_inapp_14.png)
 

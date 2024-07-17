@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Attribut för reseegenskaper {#journey-properties}
 
-I [enkel uttrycksredigerare](../condition-activity.md#about_condition)och i [avancerad uttrycksredigerare](../expression/expressionadvanced.md), under **Händelse** och **Datakälla** -kategorier kan du komma åt **Reseegenskaper** kategori. Denna kategori innehåller tekniska fält som rör resan för en viss profil. Det här är den information som hämtats av systemet från direktresor, t.ex. rese-ID:t, eller de specifika fel som påträffats.
+I den [enkla uttrycksredigeraren](../condition-activity.md#about_condition) och i den [avancerade uttrycksredigeraren](../expression/expressionadvanced.md), under kategorierna **Event** och **Data source**, har du tillgång till kategorin **Reseegenskaper** . Denna kategori innehåller tekniska fält som rör resan för en viss profil. Det här är den information som hämtats av systemet från direktresor, t.ex. rese-ID:t, eller de specifika fel som påträffats.
 
 ![](../assets/journey-properties.png)
 
@@ -28,15 +28,15 @@ Den innehåller information om:
 * aktuellt steg, senaste aktuella steg osv.
 * ignorerade profiler
 
-  Listan med fält är tillgänglig [i det här avsnittet](#journey-properties-fields).
+  Listan med fält är tillgänglig [ i det här avsnittet](#journey-properties-fields).
 
 Du kan använda dessa fält för att skapa uttryck. Under körningen hämtas värdena direkt från resan.
 
 Nedan följer några exempel på användningsområden:
 
-* **Logga ignorerade profiler**: du kan skicka alla profiler som har uteslutits från ett meddelande med en begränsningsregel till ett tredjepartssystem för loggning. För detta anger du en sökväg i händelse av timeout och fel och lägger till ett villkor som ska filtreras efter en viss feltyp, t.ex.&quot;ignorera personer genom att appa regel&quot;. Du kan sedan överföra de borttagna profilerna till ett tredjepartssystem via en anpassad åtgärd.
+* **Logga ignorerade profiler**: Du kan skicka alla profiler som har uteslutits från ett meddelande via en begränsningsregel till ett tredjepartssystem för loggning. För detta anger du en sökväg i händelse av timeout och fel och lägger till ett villkor som ska filtreras efter en viss feltyp, t.ex.&quot;ignorera personer genom att appa regel&quot;. Du kan sedan överföra de borttagna profilerna till ett tredjepartssystem via en anpassad åtgärd.
 
-* **Skicka varningar vid fel**: du kan skicka ett meddelande till ett tredjepartssystem varje gång ett fel inträffar i ett meddelande. För detta anger du en sökväg om ett fel uppstår, lägger till ett villkor och en anpassad åtgärd. Du kan till exempel skicka ett meddelande på en Slack-kanal med en beskrivning av det fel som påträffats.
+* **Skicka aviseringar vid fel**: du kan skicka ett meddelande till ett tredjepartssystem varje gång ett fel inträffar i ett meddelande. För detta anger du en sökväg om ett fel uppstår, lägger till ett villkor och en anpassad åtgärd. Du kan till exempel skicka ett meddelande på en Slack-kanal med en beskrivning av det fel som påträffats.
 
 * **Förfina fel i rapportering** : I stället för att bara ha en sökväg för felmeddelanden kan du definiera ett villkor per feltyp. På så sätt kan du förfina rapporteringen och visa alla feltyper och data.
 

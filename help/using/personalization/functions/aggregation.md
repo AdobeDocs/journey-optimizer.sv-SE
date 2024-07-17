@@ -9,7 +9,7 @@ exl-id: a029f716-ea1e-4d79-82b7-59770f05161b
 source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
 source-wordcount: '157'
-ht-degree: 7%
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ Sammanställningsfunktioner används för att gruppera flera värden för att sk
 
 ## Genomsnittlig{#average}
 
-The `average` returnerar det aritmetiska medelvärdet för alla markerade värden i arrayen.
+Funktionen `average` returnerar det aritmetiska medelvärdet för alla markerade värden i arrayen.
 
 **Syntax**
 
@@ -37,7 +37,7 @@ Följande åtgärd returnerar genomsnittspriset för alla order.
 
 ## Antal{#count}
 
-The `count` returnerar antalet element i den angivna arrayen.
+Funktionen `count` returnerar antalet element i den angivna arrayen.
 
 **Syntax**
 
@@ -55,7 +55,7 @@ Följande åtgärd returnerar antalet order i arrayen.
 
 ## Maximal{#max}
 
-The `max` returnerar den största av alla markerade värden i arrayen.
+Funktionen `max` returnerar det största av alla markerade värden i arrayen.
 
 **Syntax**
 
@@ -73,7 +73,7 @@ Följande åtgärd returnerar det högsta priset för alla order.
 
 ## Minimum{#min}
 
-The `min` returnerar det minsta av alla markerade värden i arrayen.
+Funktionen `min` returnerar det minsta av alla markerade värden i arrayen.
 
 **Syntax**
 
@@ -91,7 +91,7 @@ Följande åtgärd returnerar det lägsta priset för alla order.
 
 ## Summa{#sum}
 
-The `sum` returnerar summan av alla markerade värden i arrayen.
+Funktionen `sum` returnerar summan av alla markerade värden i arrayen.
 
 **Syntax**
 

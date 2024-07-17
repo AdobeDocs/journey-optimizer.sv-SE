@@ -17,13 +17,13 @@ ht-degree: 1%
 
 ## Komma igång och krav {#edge-overview-and-prerequisites}
 
-The [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html#video-overview) är ett JavaScript-bibliotek på klientsidan som gör att Adobe Experience Cloud-kunder kan interagera med de olika tjänsterna i Experience Cloud via Experience Platform Edge Network.
+[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html#video-overview) är ett JavaScript-bibliotek på klientsidan som gör att Adobe Experience Cloud-kunder kan interagera med de olika tjänsterna i Experience Cloud via Experience Platform Edge Network.
 
-Experience Platform Web SDK stöder frågor om personaliseringslösningarna på Adobe, inklusive beslutsstöd, så att du kan hämta och återge personaliserade erbjudanden som du har skapat med hjälp av API:er eller erbjudandebiblioteket. Mer detaljerad information finns i dokumentationen om [skapa ett erbjudande](../../get-started/starting-offer-decisioning.md).
+Experience Platform Web SDK stöder frågor om personaliseringslösningarna på Adobe, inklusive beslutsstöd, så att du kan hämta och återge personaliserade erbjudanden som du har skapat med hjälp av API:er eller erbjudandebiblioteket. Mer detaljerad information finns i dokumentationen om att [skapa ett erbjudande](../../get-started/starting-offer-decisioning.md).
 
-Det finns två sätt att genomföra beslutsfattandet med [Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html#video-overview). Ett sätt är inriktat på utvecklare och kräver kunskaper om webbplatser och programmering. Det andra sättet är att använda Adobe Experience Platform användargränssnitt för att ställa in erbjudanden som bara kräver att ett litet skript refereras till i sidhuvudet på HTML-sidan.
+Det finns två sätt att implementera beslutshantering med [Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html#video-overview). Ett sätt är inriktat på utvecklare och kräver kunskaper om webbplatser och programmering. Det andra sättet är att använda Adobe Experience Platform användargränssnitt för att ställa in erbjudanden som bara kräver att ett litet skript refereras till i sidhuvudet på HTML-sidan.
 
-Läs Adobe Experience Platform-dokumentationen på [beslutsfattande](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html#enabling-offer-decisioning) om du vill ha mer information om hur du kan leverera personaliserade erbjudanden med Adobe Experience Platform Web SDK.
+Mer information om hur du levererar personaliserade erbjudanden med Adobe Experience Platform Web SDK finns i Adobe Experience Platform-dokumentationen om [beslutshantering](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html#enabling-offer-decisioning).
 
 ## Webb-SDK för Adobe Experience Platform {#aep-web-sdk}
 
@@ -42,9 +42,9 @@ SDK kombinerade inte dessa bibliotek och är en ny implementering från grunden.
 
 1. [Konfigurera ditt datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) på fliken Datainsamling i ditt konto i Adobe Experience Cloud.
 
-1. Installera SDK. Det finns flera metoder för detta, som beskrivs i [Installera SDK-sidan](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html). Den här sidan fortsätter med varje implementeringsmetod.
+1. Installera SDK. Det finns flera metoder för detta, som beskrivs på [Installera SDK-sidan](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html). Den här sidan fortsätter med varje implementeringsmetod.
 
-För att kunna använda SDK måste du ha en [schema](../../../data/get-started-schemas.md) och [datastream](../../../data/get-started-datasets.md) definierad.
+För att du ska kunna använda SDK måste du ha ett [schema](../../../data/get-started-schemas.md) och en [datastream](../../../data/get-started-datasets.md) definierad.
 
 <!-- ****TODO - Configure schema**** -->
 
@@ -62,25 +62,25 @@ Det här alternativet är mer användarvänligt för personer som kan ha en mind
 
 1. [Lägg till inbäddningskoden](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html)
 
-1. Installera och konfigurera Adobe Experience Platform Web SDK-tillägget med den dataström du skapade genom att välja konfigurationen i listrutan Datastream. Läs dokumentationen om [tillägg](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/overview.html).
+1. Installera och konfigurera Adobe Experience Platform Web SDK-tillägget med den dataström du skapade genom att välja konfigurationen i listrutan Datastream. Mer information finns i dokumentationen om [tillägg](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/overview.html).
 
    ![Webb-SDK för Adobe Experience Platform](../../assets/installed-catalog-web-sdk.png)
 
    ![Konfigurera tillägg](../../assets/configure-sdk-extension.png)
 
-1. Skapa de nödvändiga [Dataelement](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html). Minimikravet är att du måste skapa en plattformsbaserad SDK-identitetskarta och ett XDM-objektdataelement för plattformswebben.
+1. Skapa nödvändiga [dataelement](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html). Minimikravet är att du måste skapa en plattformsbaserad SDK-identitetskarta och ett XDM-objektdataelement för plattformswebben.
 
    ![Identitetskarta](../../assets/sdk-identity-map.png)
 
    ![XDM-objekt](../../assets/xdm-object.png)
 
-1. Skapa [Regler](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html):
+1. Skapa dina [regler](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html):
 
    Lägg till en SDK-sändningshändelse för en plattform och lägg till relevanta beslutsomfattningar i åtgärdens konfiguration
 
-   ![Renderingserbjudande](../../assets/rule-render-offer.png)
+   ![Återgivningserbjudande](../../assets/rule-render-offer.png)
 
-   ![Erbjudande](../../assets/rule-request-offer.png)
+   ![Erbjudande för förfrågan](../../assets/rule-request-offer.png)
 
 1. [Skapa och publicera](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html) ett bibliotek som innehåller alla relevanta regler, dataelement och tillägg som du har konfigurerat.
 
@@ -88,7 +88,7 @@ Det här alternativet är mer användarvänligt för personer som kan ha en mind
 
 Här är de steg som krävs för att använda beslutshantering med den färdiga fristående installationen av web SDK. I den här handboken förutsätts att det är första gången du implementerar SDK, så alla steg kanske inte gäller för dig. Den här guiden förutsätter också viss utvecklingsupplevelse.
 
-Inkludera följande JavaScript-kodfragment från alternativ 2: Den fördefinierade fristående versionen på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html) i `<head>` på HTML-sidan.
+Inkludera följande JavaScript-utdrag från alternativ 2: Den fördefinierade fristående versionen på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html) i avsnittet `<head>` på HTML-sidan.
 
 ```
 javascript
@@ -121,11 +121,11 @@ javascript
     });
 ```
 
-Installera tillägget för felsökningskrom som ska användas med felsökning. Här hittar du: <https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob>
+Installera tillägget Debugger Chrome som ska användas med felsökning. Det finns här: <https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob>
 
 Logga sedan in på ditt konto i felsökaren. Gå sedan till Loggar och kontrollera att du är ansluten till rätt arbetsyta. Nu kan du kopiera base64-kodad version av beslutsomfånget från ditt erbjudande.
 
-När du redigerar webbplatsen inkluderar du skriptet med konfigurationen och `sendEvent` funktion för att skicka beslutsomfånget till Adobe.
+När du redigerar webbplatsen inkluderar du skriptet med konfigurationen och funktionen `sendEvent` som skickar beslutsomfånget till Adobe.
 
 **Exempel**:
 
@@ -175,7 +175,7 @@ json
 }
 ```
 
-Hantera svarsobjektet och analysera de data du behöver. Du kan skicka flera beslutsomfattningar i ett `sendEvent` ditt svar kan se lite annorlunda ut.
+Hantera svarsobjektet och analysera de data du behöver. Eftersom du kan skicka flera beslutsomfattningar i ett `sendEvent`-samtal kan svaret se något annorlunda ut.
 
 ```
 json
@@ -233,7 +233,7 @@ json
 }
 ```
 
-I det här exemplet var den väg som behövdes för att hantera och använda den erbjudandespecifika informationen på webbsidan: `result['decisions'][0]['items'][0]['data']['content']`
+I det här exemplet var sökvägen som krävs för att hantera och använda den erbjudandespecifika informationen på webbsidan: `result['decisions'][0]['items'][0]['data']['content']`
 
 Så här anger du JS-variabler:
 

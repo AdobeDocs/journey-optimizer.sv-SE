@@ -8,14 +8,14 @@ level: Experienced
 exl-id: 351d1f44-f3dc-49f9-bc3d-c775dad3cad4
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 5%
+source-wordcount: '154'
+ht-degree: 4%
 
 ---
 
 # Ta bort en samling {#delete-collection}
 
-Ibland kan det vara nödvändigt att ta bort (DELETE) en samling. Endast samlingar som du skapar i innehavarbehållaren kan tas bort. Detta görs genom att en DELETE-begäran görs till [!DNL Offer Library] API som använder $id för den samling du vill ta bort.
+Ibland kan det vara nödvändigt att ta bort (DELETE) en samling. Endast samlingar som du skapar i innehavarbehållaren kan tas bort. Detta görs genom att utföra en DELETE-begäran till [!DNL Offer Library]-API:t med $id för den samling som du vill ta bort.
 
 **API-format**
 

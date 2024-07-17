@@ -8,14 +8,14 @@ level: Experienced
 exl-id: 52a5053d-3b94-47fd-a064-a20f9a595150
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 5%
+source-wordcount: '116'
+ht-degree: 4%
 
 ---
 
 # Ta bort ett personaliserat erbjudande {#delete-personalized-offer}
 
-Ibland kan det vara nödvändigt att ta bort (DELETE) ett personaliserat erbjudande. Detta görs genom att en DELETE-begäran görs till [!DNL Offer Library] API med ID:t för det anpassade erbjudande du vill ta bort.
+Ibland kan det vara nödvändigt att ta bort (DELETE) ett personaliserat erbjudande. Detta görs genom att utföra en DELETE-begäran till [!DNL Offer Library]-API:t med ID:t för det anpassade erbjudande som du vill ta bort.
 
 **API-format**
 

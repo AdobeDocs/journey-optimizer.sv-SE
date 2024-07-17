@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Adobe Experience Platform **Privacy Service** innehåller ett RESTful-API och användargränssnitt som hjälper dig att hantera kunddataförfrågningar. Med Privacy Service kan ni skicka in förfrågningar om åtkomst till och radering av personuppgifter från Adobe Experience Cloud-program, vilket underlättar automatiserad efterlevnad av juridiska och organisatoriska sekretessbestämmelser.
 
-Sekretessförfrågningar kan skapas och hanteras från **[!UICONTROL Requests]** -menyn.
+Sekretessförfrågningar kan skapas och hanteras från menyn **[!UICONTROL Requests]**.
 
 ![](assets/requests.png)
 
@@ -33,18 +33,18 @@ Mer information om Privacy Service och hur du skapar och hanterar sekretessförf
 
 Du kan skicka enskilda förfrågningar om åtkomst till och radering av konsumentdata från Adobe Journey Optimizer på två sätt:
 
-* Via **Privacy Servicens användargränssnitt**. Läs dokumentationen [här](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide#_blank).
-* Via **Privacy Services-API**. Läs dokumentationen [här](https://developer.adobe.com/experience-platform-apis/references/privacy-service/#_blank) och API-information [här](https://developer.adobe.com/experience-platform-apis/#_blank).
+* Genom användargränssnittet **för** Privacy Servicen. Se dokumentationen [här](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide#_blank).
+* Via **Privacy Services-API**. Se dokumentationen [här](https://developer.adobe.com/experience-platform-apis/references/privacy-service/#_blank) och API-information [här](https://developer.adobe.com/experience-platform-apis/#_blank).
 
-Privacy Servicen stöder två typer av förfrågningar: **dataåtkomst** och **borttagning av data**.
+Privacy Servicen stöder två typer av förfrågningar: **dataåtkomst** och **databorttagning**.
 
 >[!NOTE]
 >
->Den här guiden handlar bara om hur du gör sekretessförfrågningar för Adobe Journey Optimizer. Om du även planerar att göra sekretessförfrågningar för datasjön för plattformen, se denna [stödlinje](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/privacy) förutom den här självstudiekursen. Kundprofilen i realtid finns här [stödlinje](https://experienceleague.adobe.com/en/docs/experience-platform/profile/privacy) och för identitetstjänsten, se [stödlinje](https://experienceleague.adobe.com/en/docs/experience-platform/identity/privacy). För borttagnings- och åtkomstbegäranden måste du anropa dessa enskilda system för att se till att förfrågningarna hanteras av var och en av dem. Data tas inte bort från alla dessa system om du gör en sekretessförfrågan till Adobe Journey Optimizer.
+>Den här guiden handlar bara om hur du gör sekretessförfrågningar för Adobe Journey Optimizer. Om du även planerar att göra sekretessförfrågningar för sjön med plattformsdata kan du läsa den här [handboken](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/privacy) förutom den här självstudiekursen. Kundprofil i realtid finns i den här [guiden](https://experienceleague.adobe.com/en/docs/experience-platform/profile/privacy) och för identitetstjänsten, se den här [guiden](https://experienceleague.adobe.com/en/docs/experience-platform/identity/privacy). För borttagnings- och åtkomstbegäranden måste du anropa dessa enskilda system för att se till att förfrågningarna hanteras av var och en av dem. Data tas inte bort från alla dessa system om du gör en sekretessförfrågan till Adobe Journey Optimizer.
 
 För **åtkomstbegäranden** anger du&quot;Adobe Journey Optimizer&quot; från användargränssnittet (eller&quot;CJM&quot; som produktkod i API:t).
 
-För **ta bort begäranden** förutom&quot;Adobe Journey Optimizer&quot;-begäran måste du även skicka borttagningsbegäranden till tre tjänster i uppströmmen för att förhindra att Journey Optimizer återställer borttagna data. Om dessa tjänster i det överordnade flödet inte anges kommer Adobe Journey Optimizer-begäran att förbli i tillståndet&quot;bearbetar&quot; tills begäranden om borttagning för de överordnade tjänsterna skapas.
+För **borttagningsbegäranden** måste du, förutom Adobe Journey Optimizer-begäran, även skicka borttagningsbegäranden till tre överordnade tjänster för att förhindra att Journey Optimizer återställer borttagna data. Om dessa tjänster i det överordnade flödet inte anges kommer Adobe Journey Optimizer-begäran att förbli i tillståndet&quot;bearbetar&quot; tills begäranden om borttagning för de överordnade tjänsterna skapas.
 
 De tre tjänsterna är:
 
@@ -59,7 +59,7 @@ De tre tjänsterna är:
 Om du vill göra en begäran om åtkomst- och borttagningsdata för Adobe Journey Optimizer måste du ha:
 
 * ett IMS-organisations-ID
-* en identitetsidentifierare för den person du vill agera på och motsvarande namnutrymmen. Mer information om identitetsnamnutrymmen i Adobe Journey Optimizer och Experience Platform finns i [Översikt över namnutrymmet identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
+* en identitetsidentifierare för den person som du vill agera på och motsvarande namnutrymmen. Mer information om namnutrymmen för identiteter i Adobe Journey Optimizer och Experience Platform finns i [översikten över namnområden för identiteter](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
 
 ### Obligatoriska fältvärden i Adobe Journey Optimizer för API-begäranden
 

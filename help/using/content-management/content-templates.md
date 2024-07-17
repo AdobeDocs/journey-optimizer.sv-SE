@@ -26,15 +26,15 @@ Med den här funktionen kan innehållsorienterade användare arbeta med mallar u
 
 En användare i företaget ansvarar t.ex. bara för innehållet och har därför inte tillgång till kampanjer eller resor. Den här användaren kan dock skapa en e-postmall som organisationens marknadsförare kan välja att använda i alla e-postmeddelanden som utgångspunkt.
 
-Du kan också skapa och hantera innehållsmallar med API:er. Mer information finns i [Dokumentation för Journey Optimizer API:er](https://developer.adobe.com/journey-optimizer-apis/references/content/){target="_blank"}.
+Du kan också skapa och hantera innehållsmallar med API:er. Mer information finns i dokumentationen för [Journey Optimizer API:er](https://developer.adobe.com/journey-optimizer-apis/references/content/){target="_blank"}.
 
-➡️ [Lär dig hur du skapar och använder mallar i den här videon](#video-templates)
+➡️ [Lär dig skapa och använda mallar i den här videon](#video-templates)
 
 >[!CAUTION]
 >
 >Innehållsmallar är för närvarande inte tillgängliga för webbkanalen.
 >
->Om du vill skapa, redigera och ta bort innehållsmallar måste du ha **[!DNL Manage library items]** behörighet som ingår i **[!DNL Content Library Manager]** produktprofil. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager)
+>Om du vill skapa, redigera och ta bort innehållsmallar måste du ha behörigheten **[!DNL Manage library items]** i produktprofilen för **[!DNL Content Library Manager]**. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager)
 
 ## Instruktionsvideo {#video-templates}
 

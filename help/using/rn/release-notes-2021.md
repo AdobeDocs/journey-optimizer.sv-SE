@@ -18,7 +18,7 @@ ht-degree: 8%
 
 # Versionsinformation för 2021 {#release-notes-2021}
 
-På den här sidan visas alla funktioner och förbättringar för [!DNL Journey Optimizer] släppt 2021.
+På den här sidan visas alla funktioner och förbättringar för [!DNL Journey Optimizer] som släpptes 2021.
 
 ## November 2021-utgåvan {#november-2021-release}
 
@@ -33,7 +33,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <td>
 <p>Adobe Journey Optimizer har nu stöd för CNAME. En CNAME-post, eller kanoniskt namnpost, är en post som pekar på en annan domänadress i stället för en IP-adress. Med CNAME-delegering av underdomäner kan du skapa en underdomän och använda CNAME för att peka mot Adobe-specifika poster. Med den här konfigurationen delar både du och Adobe ansvaret för att underhålla DNS för att konfigurera miljön för att skicka, återge och spåra e-postmeddelanden.</p>
 <p>Den här metoden rekommenderas om din organisations principer begränsar den fullständiga delegeringsmetoden för underdomäner.</p>
-<p>Läs mer om delegering av CNAME-underdomäner i <a href="../configuration/delegate-subdomain.md#cname-subdomain-delegation">detaljerad dokumentation</a>.</p>
+<p>Läs mer om delegering av CNAME-underdomäner i den <a href="../configuration/delegate-subdomain.md#cname-subdomain-delegation">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -77,22 +77,22 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 </table>
 
 
-Se även [Versionsinformation om Adobe Experience Platform oktober](https://experienceleague.adobe.com/docs/experience-platform/release-notes/2021/october-2021.html){target="_blank"} för fler ändringar.
+Se även [Versionsinformation för Adobe Experience Platform oktober](https://experienceleague.adobe.com/docs/experience-platform/release-notes/2021/october-2021.html){target="_blank"} för fler ändringar.
 
 ### Förbättringar
 
 **Resor**
 
-* **Uttrycksredigerare** - Som kraftfull användare kan du nu använda funktioner för att arbeta med kartor. Den här funktionen kan utnyttjas med prenumerationslistorna. Från en viss målgrupp kan du nu till exempel få en e-postadress från en prenumerationslista. [Läs mer i det här exemplet](../building-journeys/message-to-subscribers-uc.md)
+* **Uttrycksredigeraren** - Som kraftfull användare kan du nu använda funktioner för att arbeta med kartor. Den här funktionen kan utnyttjas med prenumerationslistorna. Från en viss målgrupp kan du nu till exempel få en e-postadress från en prenumerationslista. [Läs mer i exemplet](../building-journeys/message-to-subscribers-uc.md)
 
-* **Övervakning** - Steghändelser för direktresor och testläge har förbättrats. [Nya fält](../reports/sharing-field-list.md#serviceevents) har lagts till i samband med profilexportjobb. För en bättre användarupplevelse är steghändelsefält nu ordnade i olika kategorier. Alla föregående steg-händelsefält är fortfarande tillgängliga i [stepEvents](../reports/sharing-legacy-fields.md) kategori.
-* **Tillgänglighet** - Tillgänglighetsförbättringar har införts under resor.
-* **Samlingar** - Arrayer med objekt som innehåller underobjekt stöds nu. [Läs mer](../building-journeys/collections.md)
+* **Övervakning** - steghändelser för direktresor och testläge har förbättrats. [Nya fält](../reports/sharing-field-list.md#serviceevents) har lagts till i samband med profilexportjobb. För en bättre användarupplevelse är steghändelsefält nu ordnade i olika kategorier. Alla föregående steg-händelsefält är fortfarande tillgängliga i kategorin [stepEvents](../reports/sharing-legacy-fields.md).
+* **Tillgänglighet** - Tillgänglighetsförbättringar har implementerats under resor.
+* **Samlingar** - Nu stöds arrayer med objekt som innehåller underobjekt. [Läs mer](../building-journeys/collections.md)
 * **Listor** - Listskärmar har förbättrats för resor, händelser, åtgärder och datakällor.
 
 **Rapportering**
 
-* **Dataformat i global vy** - Nu kan du växla mellan siffror och procenttal i dialogrutan **Global vy** i **Körning** -fliken.
+* **Dataformat i global vy** - Nu kan du växla mellan siffror och procenttal i den **globala vyn** på fliken **Körning**.
 
 
 **Administration**
@@ -100,20 +100,20 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 * **Redigera meddelandeförinställningar** - Nu kan du redigera meddelandeförinställningar och övervaka deras uppdateringsstatus. [Läs mer](../configuration/channel-surfaces.md#edit-channel-surface)
 * **Redigera PTR-poster** - Nu kan du redigera PTR-poster och övervaka deras uppdateringsstatus. [Läs mer](../configuration/ptr-records.md#edit-ptr-record)
 
-**Personalisering**
+**Personalization**
 
-* **Ny hjälpfunktion för datumformatering** - Du kan nu ange hur en datumsträng ska representeras. [Läs mer](../personalization/functions/dates.md#format-date)
+* **Ny hjälpfunktion för datumformatering** - Nu kan du ange hur en datumsträng ska visas. [Läs mer](../personalization/functions/dates.md#format-date)
 
 
 **Beslutshantering**
 
-* **Utvärderingssekvenser** - Med det nya och förbättrade beslutsflödet kan du inte bara navigera smidigare mellan beslutsobjekten, utan du får också en fullständig kontroll över hur offertsamlingar utvärderas av beslutsmotorn. Detta inkluderar vilka samlingar som utvärderas tillsammans jämfört med separat, och i vilken ordning samlingarna ska utvärderas. [Läs mer](../offers/offer-activities/create-offer-activities.md#add-decision-scopes)
+* **Utvärderingssekvensering** - Det nya och förbättrade beslutsflödet gör att du inte bara kan navigera mellan beslutsobjekt utan även får en fullständig kontroll över hur offertsamlingar utvärderas av beslutsmotorn. Detta inkluderar vilka samlingar som utvärderas tillsammans jämfört med separat, och i vilken ordning samlingarna ska utvärderas. [Läs mer](../offers/offer-activities/create-offer-activities.md#add-decision-scopes)
 
 ### Korrigeringar
 
 * Ett problem som gjorde att reselistan, meddelandelistan och e-postdesignern inte kunde visas när webbläsarspråket inte var engelska har åtgärdats.
 * Korrigerade ett syntaxfel som uppstod när personalisering lades till med ett uttryck i e-postdesignern: tecken kunde inte komma undan.
-* Ett problem som orsakade ett 404-fel vid navigering i dialogrutan har korrigerats **Administration** -menyn.
+* Korrigerade ett problem som ledde till ett 404-fel vid navigering på menyn **Administration**.
 * Korrigerade ett problem som utlöste andra direktresor när en resa testades med hjälp av en affärshändelse.
 
 
@@ -130,7 +130,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 <tbody>
 <tr>
 <td>
-<p>Nya mätvärden är tillgängliga vid rapportering: Riktade och exkluderade för e-post- och push-meddelanden är synliga i både live- och globala rapporter. </br> Observera att du måste återställa de olika rapportinstrumentpanelerna för varje kanal och rapporttyp för att få tillgång till de senaste mätvärdena. Mer information om anpassning av kontrollpanelen finns i <a href="../reports/live-report.md">detaljerad dokumentation.</a></p>
+<p>Nya mätvärden är tillgängliga vid rapportering: Riktade och exkluderade för e-post- och push-meddelanden är synliga i både live- och globala rapporter. </br> Observera att du måste återställa de olika rapportinstrumentpanelerna för varje kanal och rapporttyp för att få tillgång till de senaste mätvärdena. Mer information om anpassning av kontrollpanelen finns i den <a href="../reports/live-report.md">detaljerade dokumentationen.</a></p>
 <p>En ny kolumn i meddelandekörningslistan visar antalet målprofiler för varje meddelandekörning. </p>
 <p>Mer information finns i den <a href="../reports/global-report.md">detaljerade dokumentationen</a>.</p>
 </td>
@@ -151,7 +151,7 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 <p>Nu kan du skicka samlingar eller en lista med data i dina anpassade åtgärdsparametrar som fylls i dynamiskt vid körning. Det finns två sorters samlingar: enkla samlingar och objektsamlingar. Tidigare skapade anpassade åtgärder fortsätter att fungera. </p>
 <p>Mer information om samlingar finns i <a href="../building-journeys/collections.md">detaljerad dokumentation</a>. </p>
 <p>Funktionerna för att filtrera och överlappa har lagts till i listan med funktioner som är tillgängliga i den avancerade uttrycksredigeraren. Det ger fler möjligheter att filtrera och jämföra samlingar.</p>
-<p>Läs dokumentationen på <a href="../building-journeys/functions/functionfilter.md">filter</a> och <a href="../building-journeys/functions/functionintersect.md">korsa</a> funktioner.</p>
+<p>Läs dokumentationen om funktionerna <a href="../building-journeys/functions/functionfilter.md">filter</a> och <a href="../building-journeys/functions/functionintersect.md">överlappa</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -162,8 +162,8 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 **Resor**
 
 * Systemgenererade scheman och datauppsättningar som har skapats under etablering av steghändelser är nu skrivskyddade, vilket skyddar mot oavsiktliga ändringar av viktiga scheman. [Läs mer](../reports/sharing-overview.md)
-* Etikettera **Vänta** aktivitet med en etikett som ska visas på arbetsytan. Etiketten används också i loggar för rapportering och testläge för att tydligt identifiera vad du gör. [Läs mer](../building-journeys/about-journey-activities.md#best-practices)
-* Hitta händelser och funktionsmakron snabbare genom att filtrera elementen i **Händelser** och **Åtgärd** kategorier med hjälp av sökning. Orchestration-aktiviteter är inte längre filtrerade. [Läs mer](../building-journeys/using-the-journey-designer.md)
+* Etikettera **Wait**-aktiviteten med en etikett som visas på arbetsytan. Etiketten används också i loggar för rapportering och testläge för att tydligt identifiera vad du gör. [Läs mer](../building-journeys/about-journey-activities.md#best-practices)
+* Hitta dina händelser och åtgärder snabbare genom att filtrera elementen i kategorierna **Händelser** och **Åtgärd** med hjälp av sökning. Orchestration-aktiviteter är inte längre filtrerade. [Läs mer](../building-journeys/using-the-journey-designer.md)
 * När du definierar ett händelse-ID-villkor i en regelbaserad händelse eller en affärshändelse är operatorn &quot;contains&quot; nu tillgänglig för strängtyper av fält. [Läs mer](../event/about-creating.md)
 
 **E-postkonfiguration**
@@ -264,8 +264,8 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 
 **Resor**
 
-* **Dynamiska rubriker** - Du kan nu skicka dynamiska data i HTTP-rubrikparametrar. De här parametrarna kan användas av de integreringssystem som tar emot resans åtgärd via HTTP-anrop, till exempel tidsstämpel eller spårnings-ID. [Läs mer](../action/about-custom-action-configuration.md#url-configuration)
-* **Dynamiska webbadresser** - Nu kan du ställa in dynamiska URL-sökvägar för anpassade åtgärder. [Läs mer](../action/about-custom-action-configuration.md#url-configuration)
+* **Dynamiska rubriker** - Nu kan du skicka dynamiska data i HTTP-rubrikparametrar. De här parametrarna kan användas av de integreringssystem som tar emot resans åtgärd via HTTP-anrop, till exempel tidsstämpel eller spårnings-ID. [Läs mer](../action/about-custom-action-configuration.md#url-configuration)
+* **Dynamiska URL-sökvägar** - Nu kan du ställa in dynamiska URL-sökvägar för anpassade åtgärder. [Läs mer](../action/about-custom-action-configuration.md#url-configuration)
 * Den totala begränsningsfrekvensen för läsmålgrupper har ändrats från 17 000 till 20 000 meddelanden per sekund. [Läs mer](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
 
 **Användargränssnitt**
@@ -278,16 +278,16 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 * **Bakgrund** - Bakgrundsbilder stöds nu i direktförhandsvisning. [Läs mer](../content-management/preview-test.md)
   <!--* **One-click opt-out link** - You can insert a new type of link into your email content: the **Opt-out** link allows users to unsubscribe from receiving your communications in just one click, without being redirected to a landing page to confirm opting out. [Learn more](../privacy/opt-out.md#one-click-opt-out-link)-->
 
-**Personalisering**
+**Personalization**
 
-* **Uttrycksredigerare** - Du kan nu enkelt lägga till ett reservvärde när du definierar personalisering: när personaliseringsfältet är tomt för en profil visas reservvärdet. [Läs mer](../personalization/functions/helpers.md)
+* **Uttrycksredigeraren** - Nu kan du enkelt lägga till ett reservvärde när du definierar personalisering: när anpassningsfältet är tomt för en profil visas reservvärdet. [Läs mer](../personalization/functions/helpers.md)
 
 **E-postkonfiguration**
 
 * **Tillåtelselista** - tillåtelselista kan nu aktiveras och inaktiveras på en icke-produktionssandlåda via ett API-anrop. [Läs mer](../configuration/allow-list.md#enable-allow-list)
-* **Navigering** - Suppressionslistan, som var tillgänglig under **Administration > Kanaler > E-postkonfiguration > Allmänt** har flyttats till den nya menyn **Undertryckningslista** undermeny, som samlar alla relaterade funktioner för enklare åtkomst. [Läs mer](../configuration/manage-suppression-list.md#access-suppression-list)
+* **Navigering** - Den undertryckningslista som var tillgänglig under menyn **Administration > Kanaler > E-postkonfiguration > Allmänt** har flyttats till den nya undermenyn **Undertryckningslista** som samlar alla relaterade funktioner för enklare åtkomst. [Läs mer](../configuration/manage-suppression-list.md#access-suppression-list)
 
-**Beslutsledning**
+**Beslutshantering**
 
 * Sättet på vilket du lägger till och konfigurerar representationer när du skapar ett erbjudande har uppdaterats för att förbättra användarupplevelsen. Resursbiblioteket visas nu endast när du definierar bildtypsinnehåll för en representation. [Läs mer](../offers/offer-library/creating-personalized-offers.md#representations)
 
@@ -342,19 +342,19 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 **Resor**
 
 * Den totala begränsningsfrekvensen för alla läsmålgrupper som körs samtidigt i samma sandlåda är begränsad till 17 000 meddelanden per sekund. [Läs mer](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
-* The **Cachevaraktighet** -fältet har tagits bort från konfigurationspanelen för datakällan. [Läs mer](../datasource/about-data-sources.md)
+* Fältet **Cachevaraktighet** har tagits bort från konfigurationspanelen för datakällan. [Läs mer](../datasource/about-data-sources.md)
 * För externa datakällor definieras nu en begränsningsregel på 15 anrop per sekund automatiskt. [Läs mer](../configuration/external-systems.md#capping)
 * För direktresor visas nu publiceringsdatumet och namnet på den användare som publicerade resan på skärmen för reseegenskaper. [Läs mer](../building-journeys/journey-gs.md#change-properties)
 * På skärmen för reselistan har filtret för resetyp lagts till. [Läs mer](../start/user-interface.md#filter-lists)
-* The **[!UICONTROL Throttling rate]** parametern har lagts till i aktiviteten Läsa målgrupp. [Läs mer](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
+* Parametern **[!UICONTROL Throttling rate]** har lagts till i aktiviteten Läsa målgrupp. [Läs mer](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
 
 **Förhandsgranska och testa**
 
-* Identitet och namnutrymme visas nu i **[!UICONTROL Preview]** skärm. [Läs mer](../content-management/preview-test.md#preview-your-messages)
+* Identitet och namnutrymme visas nu på skärmen **[!UICONTROL Preview]**. [Läs mer](../content-management/preview-test.md#preview-your-messages)
 * Antalet testmeddelanden för korrektur är nu begränsat till 10.
-* Tecken tillåts för **Subject line prefix** i korrektur är nu begränsade. [Läs mer](../content-management/preview-test.md#send-proofs)
+* Tecken som tillåts för **ämnesradsprefixet** i korrektur är nu begränsade. [Läs mer](../content-management/preview-test.md#send-proofs)
 
-**Redigerare för anpassningsuttryck**
+**Personalization uttrycksredigerare**
 
 * Hjälplistan har fått ett nytt namn och ordnats om.
 
@@ -365,4 +365,4 @@ Se även [Versionsinformation om Adobe Experience Platform oktober](https://expe
 * Ett problem där IP-information saknades på PTR-inspelningsskärmen har korrigerats.
 * Lokalisering i erbjudandefältet i Expression Editor är nu implementerat.
 * Felaktigt avstånd i informationspopup-fönster har korrigerats.
-* Korrigerade ett fel i e-postdesignern vid överföring av en HTML-fil där en intern formatmall med `background-image` egenskapen stöds inte.
+* Korrigerade ett fel i e-postdesignern vid överföring av en HTML-fil där en intern formatmall med egenskapen `background-image` inte stöds.

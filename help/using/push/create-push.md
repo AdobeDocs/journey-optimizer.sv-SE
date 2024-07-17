@@ -28,13 +28,13 @@ Följ stegen nedan för att skapa ett push-meddelande:
 
 >[!BEGINTABS]
 
->[!TAB Lägg till en push-funktion på en resa]
+>[!TAB Lägg till en push i en resa]
 
 1. Öppna resan och dra och släpp en push-aktivitet från funktionsmakroavsnittet på paletten.
 
    ![](assets/push_create_1.png)
 
-1. Ange grundläggande information i meddelandet (etikett, beskrivning, kategori) och välj sedan den meddelandeyta som ska användas. The **[!UICONTROL Surface]** som standard är fältet förifyllt med den sista yta som användaren använder för den kanalen.
+1. Ange grundläggande information i meddelandet (etikett, beskrivning, kategori) och välj sedan den meddelandeyta som ska användas. Fältet **[!UICONTROL Surface]** är som standard förfyllt med den sista ytan som används av användaren för den kanalen.
 
    ![](assets/push_create_2.png)
 
@@ -42,52 +42,52 @@ Följ stegen nedan för att skapa ett push-meddelande:
    >
    >Om du skickar ett push-meddelande från en resa kan du utnyttja Adobe Journey Optimizer funktion för optimering av sändningstid för att förutsäga den bästa tidpunkten för att skicka meddelandet för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser. [Lär dig hur du arbetar med optimering vid sändning](../building-journeys/journeys-message.md#send-time-optimization)
 
-   Mer information om hur du konfigurerar en resa finns i [den här sidan](../building-journeys/journey-gs.md)
+   Mer information om hur du konfigurerar en resa finns på [sidan](../building-journeys/journey-gs.md)
 
-1. Klicka på knappen **[!UICONTROL Edit content]** för att konfigurera push-innehållet. [Utforma ett push-meddelande](design-push.md)
+1. Klicka på knappen **[!UICONTROL Edit content]** på skärmen för konfiguration av resan för att konfigurera push-innehållet. [Designa ett push-meddelande](design-push.md)
 
 1. När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska innehållet.
 
-1. Slutför konfigurationen av [resa](../building-journeys/journey-gs.md) för att skicka den.
+1. När din push-funktion är klar slutför du konfigurationen av din [resa](../building-journeys/journey-gs.md) för att skicka den.
 
-   Om du vill spåra mottagarnas beteende genom push-öppningar och/eller interaktioner kontrollerar du att de dedikerade alternativen i spårningsavsnittet är aktiverade i [e-postaktivitet](../building-journeys/journeys-message.md).
+   Om du vill spåra mottagarnas beteende genom push-öppningar och/eller interaktioner kontrollerar du att de dedikerade alternativen i spårningsavsnittet är aktiverade i [e-postaktiviteten](../building-journeys/journeys-message.md).
 
->[!TAB Lägga till en push-knapp i en kampanj]
+>[!TAB Lägg till en push-knapp i en kampanj]
 
-1. Skapa en ny schemalagd eller API-utlöst kampanj, välj **[!UICONTROL Push notification]** som din åtgärd och väljer **[!UICONTROL App surface]** att använda. [Läs mer om push-konfiguration](push-configuration.md).
+1. Skapa en ny schemalagd eller API-utlöst kampanj, välj **[!UICONTROL Push notification]** som din åtgärd och välj den **[!UICONTROL App surface]** som ska användas. [Läs mer om push-konfiguration](push-configuration.md).
 
    ![](assets/push_create_3.png)
 
 1. Klicka på **[!UICONTROL Create]**.
 
-1. Från **[!UICONTROL Properties]** redigerar du Campaigns **[!UICONTROL Title]** och **[!UICONTROL Description]**.
+1. I avsnittet **[!UICONTROL Properties]** redigerar du din kampanjs **[!UICONTROL Title]** och **[!UICONTROL Description]**.
 
    ![](assets/push_create_4.png)
 
-1. Klicka på **[!UICONTROL Select audience]** för att definiera målgruppen i listan över tillgängliga Adobe Experience Platform-målgrupper. [Läs mer](../audience/about-audiences.md).
+1. Klicka på knappen **[!UICONTROL Select audience]** för att definiera målgruppen i listan över tillgängliga Adobe Experience Platform-målgrupper. [Läs mer](../audience/about-audiences.md).
 
-1. I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera personer från den valda målgruppen. [Läs mer](../event/about-creating.md#select-the-namespace).
+1. I fältet **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera personer från den valda målgruppen. [Läs mer](../event/about-creating.md#select-the-namespace).
 
    ![](assets/push_create_5.png)
 
-1. Klicka **[!UICONTROL Create experiment]** för att börja konfigurera ert innehållsexperiment och skapa behandlingar för att mäta deras prestanda och identifiera det bästa alternativet för er målgrupp. [Läs mer](../content-management/content-experiment.md)
+1. Klicka på **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment och skapa behandlingar för att mäta deras prestanda och identifiera det bästa alternativet för målgruppen. [Läs mer](../content-management/content-experiment.md)
 
-1. Kampanjer är utformade för att köras ett visst datum eller med en återkommande frekvens. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** av kampanjen i [det här avsnittet](../campaigns/create-campaign.md#schedule).
+1. Kampanjer är utformade för att köras ett visst datum eller med en återkommande frekvens. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** för din kampanj i [det här avsnittet](../campaigns/create-campaign.md#schedule).
 
-1. Från **[!UICONTROL Action triggers]** väljer du **[!UICONTROL Frequency]** av ditt push-meddelande:
+1. Välj **[!UICONTROL Frequency]** för ditt push-meddelande på menyn **[!UICONTROL Action triggers]**:
 
    * En gång
    * Dagligen
    * Vecka
    * Månatligen
 
-1. På skärmen för kampanjkonfiguration klickar du på **[!UICONTROL Edit content]** för att konfigurera push-innehållet. [Utforma ett push-meddelande](design-push.md)
+1. Klicka på knappen **[!UICONTROL Edit content]** på konfigurationsskärmen för kampanjen för att konfigurera push-innehållet. [Designa ett push-meddelande](design-push.md)
 
 1. När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska innehållet.
 
-1. Slutför konfigurationen av [kampanj](../campaigns/create-campaign.md) för att skicka den.
+1. Slutför konfigurationen av din [kampanj](../campaigns/create-campaign.md) för att skicka den när din push-funktion är klar.
 
-   Om du vill spåra mottagarnas beteende genom push-öppningar och/eller interaktioner kontrollerar du att de dedikerade alternativen i spårningsavsnittet är aktiverade i [kampanj](../campaigns/create-campaign.md).
+   Om du vill spåra mottagarnas beteende genom push-öppningar och/eller interaktioner kontrollerar du att de dedikerade alternativen i spårningsavsnittet är aktiverade i [kampanjen](../campaigns/create-campaign.md).
 
 >[!ENDTABS]
 
@@ -103,7 +103,7 @@ Följ stegen nedan för att skapa ett push-meddelande:
 >title="Snabb leverans"
 >abstract="I läget för snabb leverans kan du skicka meddelanden med hög hastighet via push-kanalen till en målgrupp på under 30 MB."
 
-Snabb leverans är en [!DNL Journey Optimizer] tillägg som gör det möjligt att skicka mycket snabba push-meddelanden i stora volymer via kampanjer.
+Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer.
 
 Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp.
 
@@ -113,14 +113,14 @@ Mer information om prestanda när du använder läget Snabb leverans finns i [Ad
 
 Snabba leveransmeddelanden innehåller följande krav:
 
-* Snabb leverans finns för **[!UICONTROL Scheduled]** endast kampanjer och inte för API-utlösta kampanjer,
+* Snabb leverans är endast tillgänglig för **[!UICONTROL Scheduled]** kampanjer och är inte tillgänglig för API-utlösta kampanjer,
 * Ingen personalisering tillåts i push-meddelandet,
 * Målgruppen måste innehålla färre än 30M profiler,
 * Du kan köra upp till 5 kampanjer samtidigt i läget Snabb leverans.
 
 ### Aktivera läget Snabb leverans
 
-1. Skapa en push-meddelandekampanj och aktivera **[!UICONTROL Rapid delivery]** alternativ.
+1. Skapa en kampanj för push-meddelanden och aktivera alternativet **[!UICONTROL Rapid delivery]**.
 
 ![](assets/create-campaign-burst.png)
 

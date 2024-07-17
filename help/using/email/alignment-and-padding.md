@@ -20,19 +20,19 @@ ht-degree: 2%
 
 I det här exemplet justerar vi utfyllnad och lodrät justering inuti en strukturkomponent som består av tre kolumner.
 
-1. Markera strukturkomponenten direkt i e-postmeddelandet eller med **[!UICONTROL Navigation tree]** finns i den vänstra menyn.
+1. Markera strukturkomponenten direkt i e-postmeddelandet eller använd **[!UICONTROL Navigation tree]** som finns i den vänstra menyn.
 
-1. I verktygsfältet klickar du på **[!UICONTROL Select a column]** och välj den som du vill redigera. Du kan också välja det i strukturträdet.
+1. Klicka på **[!UICONTROL Select a column]** i verktygsfältet och välj den som du vill redigera. Du kan också välja det i strukturträdet.
 
-   De redigerbara parametrarna för den kolumnen visas i **[!UICONTROL Styles]** -fliken.
+   De redigerbara parametrarna för den kolumnen visas på fliken **[!UICONTROL Styles]**.
 
    ![](assets/alignment_2.png)
 
-1. Under **[!UICONTROL Alignment]**, markera **[!UICONTROL Top]**, **[!UICONTROL Middle]** eller **[!UICONTROL Bottom]**.
+1. Under **[!UICONTROL Alignment]** väljer du **[!UICONTROL Top]**, **[!UICONTROL Middle]** eller **[!UICONTROL Bottom]**.
 
    ![](assets/alignment_3.png)
 
-1. Under **[!UICONTROL Padding]**, definierar utfyllnaden för alla sidor.
+1. Ange utfyllnaden för alla sidor under **[!UICONTROL Padding]**.
 
    Välj **[!UICONTROL Different padding for each side]** om du vill finjustera utfyllnaden. Klicka på låsikonen för att bryta synkroniseringen.
 

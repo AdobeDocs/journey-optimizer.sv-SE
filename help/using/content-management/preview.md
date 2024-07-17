@@ -4,7 +4,8 @@ description: Lär dig hur du förhandsgranskar innehåll.
 feature: Preview, Proofs
 role: User
 level: Beginner
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+exl-id: 6477270c-0309-411a-8254-c7ffc4419492
+source-git-commit: feae2cb9d0bed35f12eb117cf2969c9290ebc06f
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 3%
@@ -13,9 +14,9 @@ ht-degree: 3%
 
 # Förhandsgranska ditt innehåll {#preview}
 
-En gång [testprofiler](test-profiles.md) om du har valt det här alternativet kan du förhandsgranska innehållet. Följ stegen nedan:
+När [testprofiler](test-profiles.md) har valts kan du förhandsgranska innehållet. Följ stegen nedan:
 
-1. I fönstret Redigera innehåll i meddelandet eller i e-postdesignern klickar du på **[!UICONTROL Simulate content]** -knappen.
+1. Klicka på knappen **[!UICONTROL Simulate content]** på skärmen Redigera innehåll i ditt meddelande eller i e-post-Designer.
 
 1. Välj en testprofil. Du kan kontrollera de värden som är tillgängliga i kolumnerna. Använd höger-/vänsterpilarna för att bläddra bland data.
 
@@ -25,7 +26,7 @@ En gång [testprofiler](test-profiles.md) om du har valt det här alternativet k
    >
    >Om du vill lägga till fler testprofiler väljer du **[!UICONTROL Manage test profiles]**. [Läs mer](test-profiles.md)
 
-1. Klicka på **[!UICONTROL Select data]** -ikonen ovanför listan för att lägga till eller ta bort kolumner.
+1. Klicka på ikonen **[!UICONTROL Select data]** ovanför listan för att lägga till eller ta bort kolumner.
 
    I slutet av listan visas personaliseringsfält som är specifika för det aktuella meddelandet. I det här exemplet är profilens ort, förnamn och efternamn. Markera de fälten och se till att dessa värden är ifyllda i testprofilerna.
 

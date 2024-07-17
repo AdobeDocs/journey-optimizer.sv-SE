@@ -9,17 +9,17 @@ exl-id: 7cb906b9-8925-4482-9915-448a41e11d9d
 source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
 workflow-type: tm+mt
 source-wordcount: '107'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
 # Skapa ett beslut {#create-decision}
 
-Du kan skapa ett beslut genom att göra en POST-förfrågan till [!DNL Offer Library] API, samtidigt som du anger ditt behållar-ID.
+Du kan skapa ett beslut genom att göra en POST-förfrågan till API:t [!DNL Offer Library] och samtidigt ange ditt behållar-ID.
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
-I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
+I följande tabell visas giltiga värden som omfattar fälten *Content-Type* och *Accept* i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
@@ -71,7 +71,7 @@ curl -X POST \
 
 **Svar**
 
-Svaret returnerar information om det nya beslutet, inklusive dess unika `id`. Du kan använda `id` i senare steg för att uppdatera eller ta bort ditt beslut.
+Ett lyckat svar returnerar information om det nyskapade beslutet, inklusive dess unika `id`. Du kan använda `id` i senare steg för att uppdatera eller ta bort ditt beslut.
 
 ```json
 {

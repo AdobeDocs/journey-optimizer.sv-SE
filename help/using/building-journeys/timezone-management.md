@@ -24,7 +24,7 @@ ht-degree: 1%
 >abstract="Välj resetid. När en fast tidszon används är det samma för alla personer som reser in på resan."
 
 
-Du kan definiera en tidszon i dialogrutan [egenskaper](../building-journeys/journey-properties.md#timezone) av din resa.
+Du kan definiera en tidszon i [egenskaperna](../building-journeys/journey-properties.md#timezone) för din resa.
 
 Klicka på pennikonen i skärmens övre högra hörn för att få åtkomst till reseegenskaperna.
 
@@ -38,13 +38,13 @@ Den här tidszonen kommer att användas för varje aktivitet i resan som innehå
 * [Fixed date wait](../building-journeys/wait-activity.md#fixed_date)
 -->
 
-Du kan välja en [tidszon](#fixed-timezone) eller välj att använda tidszonen [definieras i användarprofilen](#timezone-from-profiles).
+Du kan välja en [fast tidszon](#fixed-timezone) eller välja att använda tidszonen [som definieras i användarprofilen](#timezone-from-profiles).
 
 ## Definiera en fast tidszon {#fixed-timezone}
 
 Tidszonen kan korrigeras. Rensa den fördefinierade tidszonen och välj en i listrutan. Om du använder en fast tidszon är den densamma för alla personer som deltar i resan.
 
-Om du vill göra det går du till **[!UICONTROL Journey Properties]** väljer du en tidszon.
+Gör detta genom att markera en tidszon i rutan **[!UICONTROL Journey Properties]**.
 
 ![](assets/journey72.png)
 
@@ -55,7 +55,7 @@ Om du vill göra det går du till **[!UICONTROL Journey Properties]** väljer du
 >title="Använd profilens tidszon"
 >abstract="Markera kryssrutan om du vill använda tidszonen för realtidsprofilen i väntan- och villkorsaktiviteter. Om en tidszon har definierats för en profil hämtas den och används av resan. Annars är tidszonen den som definieras i tidszonsfältet ovan."
 
-Om resans inträde-händelse har ett namnutrymme, vilket innebär att resan kan nå kundprofiltjänsten i realtid i Adobe Experience Platform, kanske du vill använda den tidszon som har definierats på profilnivån. Gör så här: **Egenskaper**, kontrollera **Använd profilens tidszon i väntetider och villkor**. Det här alternativet är inte markerat som standard.
+Om resans inträde-händelse har ett namnutrymme, vilket innebär att resan kan nå kundprofiltjänsten i realtid i Adobe Experience Platform, kanske du vill använda den tidszon som har definierats på profilnivån. Om du vill göra det går du till **Egenskaper** och markerar **Använd profiltidszon i väntetider och villkor**. Det här alternativet är inte markerat som standard.
 
 Om en tidszon har definierats för en profil hämtas den och används av resan. Om så inte är fallet används tidszonen som definieras i tidszonsfältet.
 
@@ -63,7 +63,7 @@ Om en tidszon har definierats för en profil hämtas den och används av resan. 
 
 >[!NOTE]
 >
->Tidszonen för profilen fungerar med **timeZone** fältet finns i **Inställningsinformation** fältgrupp.
+>Profilens tidszon fungerar med fältet **timeZone** som finns i fältgruppen **Inställningsinformation**.
 
 ## Använd tidszoner i uttryck {#timezone-in-expressions}
 

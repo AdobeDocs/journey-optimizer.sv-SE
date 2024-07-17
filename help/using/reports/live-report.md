@@ -17,18 +17,18 @@ ht-degree: 0%
 
 # Kom igång med Live Report {#live-report}
 
-Använd **[!UICONTROL Live report]** att i realtid mäta och visualisera påverkan och resultat av era resor och era meddelanden i en inbyggd kontrollpanel.
-Data finns i **[!UICONTROL Live report]** så snart leveransen har skickats eller din resa har körts från **[!UICONTROL Last 24hrs]** -fliken.
+Använd **[!UICONTROL Live report]** för att i realtid mäta och visualisera påverkan och prestanda för dina resor och dina meddelanden på en inbyggd kontrollpanel.
+Data är tillgängliga i **[!UICONTROL Live report]** så snart din leverans har skickats eller din resa har körts från fliken **[!UICONTROL Last 24hrs]**.
 
-* Om du vill rikta in dig på en resa i samband med en resa, från **[!UICONTROL Journeys]** -menyn, få åtkomst till din resa och klicka på **[!UICONTROL View report]** -knappen.
+* Om du vill rikta in dig på en resa i sammanhanget för en resa går du till **[!UICONTROL Journeys]**-menyn, öppnar din resa och klickar på knappen **[!UICONTROL View report]** .
 
   ![](assets/report_journey.png)
 
-* Om du vill rikta in en kampanj går du till **[!UICONTROL Campaigns]** öppnar du kampanjen och klickar på **[!UICONTROL Reports]** -knappen.
+* Om du vill rikta in dig på en kampanj går du till **[!UICONTROL Campaigns]**-menyn och klickar på knappen **[!UICONTROL Reports]**.
 
   ![](assets/report_campaign.png)
 
-* Om du vill växla från **[!UICONTROL Global report]** till **[!UICONTROL Live report]** för leverans klickar du **[!UICONTROL Last 24hrs]** i flikväxlaren.
+* Om du vill växla från **[!UICONTROL Global report]** till **[!UICONTROL Live report]** för leveransen klickar du på **[!UICONTROL Last 24hrs]** i flikväljaren.
 
   ![](assets/report_3.png)
 
@@ -38,11 +38,11 @@ En detaljerad lista över alla mätvärden som är tillgängliga i Adobe Journey
 
 Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort. Om du ändrar widgetarna påverkas bara den aktuella användarens kontrollpanel. Andra användare ser sina egna kontrollpaneler eller de som har angetts som standard.
 
-1. Från **[!UICONTROL Actions]** väljer du om du vill rapportera en viss åtgärd på dina resor.
+1. I listrutan **[!UICONTROL Actions]** väljer du om du vill rapportera en viss åtgärd på dina resor.
 
-1. Välj om du vill utesluta testhändelser från dina rapporter med hjälp av alternativfältet. Mer information om testhändelser finns i [den här sidan](../building-journeys/testing-the-journey.md).
+1. Välj om du vill utesluta testhändelser från dina rapporter med hjälp av alternativfältet. Mer information om testhändelser finns på [den här sidan](../building-journeys/testing-the-journey.md).
 
-   Observera att **[!UICONTROL Exclude test events]** alternativet är bara tillgängligt för reserapporter.
+   Observera att alternativet **[!UICONTROL Exclude test events]** bara är tillgängligt för reserapporter.
 
    ![](assets/report_modify_6.png)
 
@@ -54,7 +54,7 @@ Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller 
 
    ![](assets/report_modify_8.png)
 
-1. Klicka **[!UICONTROL Remove]** för att ta bort widgetar du inte behöver.
+1. Klicka på **[!UICONTROL Remove]** för att ta bort widgetar som du inte behöver.
 
    ![](assets/report_modify_9.png)
 
@@ -64,7 +64,7 @@ Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller 
 
    ![](assets/report_modify_11.png)
 
-Kontrollpanelen har sparats. Dina olika ändringar kommer att tillämpas på nytt för en senare användning av dina liverapporter. Använd **[!UICONTROL Reset]** för att återställa standardordningen för widgetar och widgetar.
+Kontrollpanelen har sparats. Dina olika ändringar kommer att tillämpas på nytt för en senare användning av dina liverapporter. Använd alternativet **[!UICONTROL Reset]** om det behövs för att återställa standardordningen för widgetar och widgetar.
 
 ## Exportera rapporter {#export-reports}
 
@@ -74,7 +74,7 @@ Du kan enkelt exportera dina olika rapporter till PDF eller CSV-format så att d
 
 >[!TAB Exportera rapporten som en PDF-fil]
 
-1. Klicka på **[!UICONTROL Export]** och markera **[!UICONTROL PDF file]**.
+1. Klicka på **[!UICONTROL Export]** i rapporten och välj **[!UICONTROL PDF file]**.
 
    ![](assets/export_6.png)
 
@@ -88,11 +88,11 @@ Din rapport är nu tillgänglig för visning eller delning i en PDF-fil.
 
 >[!TAB Exportera rapporten som en CSV-fil]
 
-1. Klicka på **[!UICONTROL Export]** och markera **[!UICONTROL CSV file]** för att generera en CSV-fil på övergripande rapportnivå.
+1. Klicka på **[!UICONTROL Export]** i rapporten och välj **[!UICONTROL CSV file]** för att generera en CSV-fil på den övergripande rapportnivån.
 
    ![](assets/export_4.png)
 
-1. Du kan också välja att exportera data från en viss widget. Klicka **[!UICONTROL Export widget data to CSV]** bredvid den valda widgeten.
+1. Du kan också välja att exportera data från en viss widget. Klicka på **[!UICONTROL Export widget data to CSV]** bredvid den valda widgeten.
 
    ![](assets/export_5.png)
 

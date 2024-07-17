@@ -61,9 +61,9 @@ Dessa funktioner förklaras nedan. I följande exempel använder vi händelsenyt
 }
 ```
 
-**Funktionen &quot;all()`<condition>`)&quot;**
+**Funktionen &quot;all(`<condition>`)&quot;**
 
-The **[!UICONTROL all]** funktionen aktiverar definitionen av ett filter i en viss samling med hjälp av ett booleskt uttryck.
+Funktionen **[!UICONTROL all]** aktiverar definitionen av ett filter för en given samling genom att använda ett booleskt uttryck.
 
 ```json
 <listExpression>.all(<condition>)
@@ -71,11 +71,11 @@ The **[!UICONTROL all]** funktionen aktiverar definitionen av ett filter i en vi
 
 Bland alla appanvändare kan du till exempel hämta de som använder IOS 13 (booleskt uttryck &quot;app used == IOS 13&quot;). Resultatet av den här funktionen är den filtrerade lista som innehåller objekt som matchar det booleska uttrycket (exempel: appanvändare 1, appanvändare 34, appanvändare 432).
 
-I en aktivitet i Datakällans villkor kan du kontrollera om resultatet av **[!UICONTROL all]** är null eller inte. Du kan också kombinera detta **[!UICONTROL all]** funktion med andra funktioner som **[!UICONTROL count]**. Mer information finns i [Villkorsaktivitet för datakälla](../condition-activity.md#data_source_condition).
+I en Data Source Condition-aktivitet kan du kontrollera om resultatet av **[!UICONTROL all]**-funktionen är null eller inte. Du kan också kombinera den här **[!UICONTROL all]**-funktionen med andra funktioner som **[!UICONTROL count]**. Mer information finns i [Datavillkorsaktivitet för Source](../condition-activity.md#data_source_condition).
 
 **Exempel 1:**
 
-Vi vill kontrollera om en användare har installerat en specifik version av ett program. För detta får vi alla push-meddelandetoken som är associerade med mobilprogram som har version 1.0. Sedan utför vi ett villkor med **[!UICONTROL count]** -funktion för att kontrollera att den returnerade listan med token innehåller minst ett element.
+Vi vill kontrollera om en användare har installerat en specifik version av ett program. För detta får vi alla push-meddelandetoken som är associerade med mobilprogram som har version 1.0. Sedan utför vi ett villkor med funktionen **[!UICONTROL count]** för att kontrollera att den returnerade tokenlistan innehåller minst ett element.
 
 ```json
 count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all(currentEventField.application.version == "1.0").token}) > 0
@@ -85,7 +85,7 @@ Resultatet är sant.
 
 **Exempel 2:**
 
-Här använder vi **[!UICONTROL count]** funktion för att kontrollera om det finns push-meddelandetoken i samlingen.
+Här använder vi funktionen **[!UICONTROL count]** för att kontrollera om det finns push-meddelandetoken i samlingen.
 
 ```json
 count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all().token}) > 0
@@ -118,7 +118,7 @@ earlier timestamp) in order to only consider prior events.-->
 
 >[!NOTE]
 >
->När filtervillkoret i **all()** om funktionen är tom returneras alla element i listan. **För att antalet element i en samling ska kunna räknas krävs dock inte funktionen all.**
+>När filtervillkoret i funktionen **all()** är tomt returnerar filtret alla element i listan. **För att antalet element i en samling ska kunna räknas krävs dock inte funktionen all.**
 
 
 ```json
@@ -129,7 +129,7 @@ Resultatet av uttrycket är **3**.
 
 **Exempel 3:**
 
-Här kontrollerar vi om en individ inte har fått någon information inom de senaste 24 timmarna. Vi filtrerar samlingen av upplevelsehändelser som hämtats från ExperiencePlatform-datakällan med två uttryck som baseras på två element i samlingen. I synnerhet jämförs tidsstämpeln för händelsen med dateTime som returneras av **[!UICONTROL nowWithDelta]** funktion.
+Här kontrollerar vi om en individ inte har fått någon information inom de senaste 24 timmarna. Vi filtrerar samlingen av upplevelsehändelser som hämtats från ExperiencePlatform-datakällan med två uttryck som baseras på två element i samlingen. Händelsens tidsstämpel jämförs med den dateTime som returneras av funktionen **[!UICONTROL nowWithDelta]**.
 
 ```json
 count(#{ExperiencePlatform.MarltonExperience.experienceevent.all(
@@ -169,13 +169,13 @@ The result will be:
 
 >[!NOTE]
 >
->**[!UICONTROL currentEventField]** är endast tillgängligt när du hanterar händelsesamlingar, **[!UICONTROL currentDataPackField]** när du hanterar datakällsamlingar och **[!UICONTROL currentActionField]** när du hanterar egna åtgärdssvarssamlingar.
+>**[!UICONTROL currentEventField]** är bara tillgängligt när du hanterar händelsesamlingar, **[!UICONTROL currentDataPackField]** när du ändrar datakällsamlingar och **[!UICONTROL currentActionField]** när du ändrar anpassade åtgärdssvarssamlingar.
 >
->Vid bearbetning av samlingar med **[!UICONTROL all]**, **[!UICONTROL first]** och **[!UICONTROL last]**, slingrar vi varje element i samlingen ett i taget. **[!UICONTROL currentEventField]**, **currentDataPackField** och **[!UICONTROL currentActionField]** motsvarar elementet som repeteras.
+>När vi bearbetar samlingar med **[!UICONTROL all]**, **[!UICONTROL first]** och **[!UICONTROL last]** slingor för varje element i samlingen ett i taget. **[!UICONTROL currentEventField]**, **currentDataPackField** och **[!UICONTROL currentActionField]** motsvarar elementet som repeteras.
 
-**Funktionerna &quot;first(`<condition>`)&quot; och&quot;last(`<condition>`)&quot;**
+**Funktionerna &quot;first(`<condition>`)&quot; och &quot;last(`<condition>`)&quot;**
 
-The **[!UICONTROL first]** och **[!UICONTROL last]** funktioner aktiverar även definitionen av ett filter i samlingen samtidigt som det första/sista elementet i listan som uppfyller filtret returneras.
+Funktionerna **[!UICONTROL first]** och **[!UICONTROL last]** aktiverar även definitionen av ett filter i samlingen när det första/sista elementet i listan som uppfyller filtret returneras.
 
 _`<listExpression>.first(<condition>)`_
 
@@ -205,8 +205,8 @@ Resultatet är &quot;token_2&quot;.
 >
 >Experience Events hämtas från Adobe Experience Platform som en samling i omvänd kronologisk ordning, vilket innebär att
 >
->* **[!UICONTROL first]** funktionen returnerar den senaste händelsen
->* **[!UICONTROL last]** returnerar den äldsta.
+>* Funktionen **[!UICONTROL first]** returnerar den senaste händelsen
+>* Funktionen **[!UICONTROL last]** returnerar den äldsta.
 
 **Exempel 3:**
 
@@ -219,7 +219,7 @@ currentDataPackField.placeContext.geo.dmaID > 0).placeContext.geo.dmaID} == 602
 
 **Funktionen &quot;at(`<index>`)&quot;**
 
-The **[!UICONTROL at]** kan du referera till ett visst element i en samling enligt ett index.
+Med funktionen **[!UICONTROL at]** kan du referera till ett specifikt element i en samling enligt ett index.
 Index 0 är samlingens första index.
 
 _`<listExpression>`.at(`<index>`)_

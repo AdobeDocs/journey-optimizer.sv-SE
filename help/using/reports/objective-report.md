@@ -20,11 +20,11 @@ ht-degree: 2%
 
 # Global kampanjrapport {#objective-report}
 
-Kampanjens globala rapport kan nås direkt från er Campaign via **[!UICONTROL View report]** -knappen.
+Kampanjens globala rapport kan nås direkt från din kampanj med knappen **[!UICONTROL View report]**.
 
-Kampanjen **[!UICONTROL Global report]** är uppdelat i olika widgetar som detaljerat beskriver kampanjens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [section](../reports/global-report.md#modify-dashboard).
+Campaign **[!UICONTROL Global report]** är uppdelad i olika widgetar som beskriver kampanjens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [avsnittet](../reports/global-report.md#modify-dashboard).
 
-En detaljerad lista över alla mätvärden som är tillgängliga i Adobe Journey Optimizer finns på [den här sidan](global-report.md#list-of-components-global.md)
+En detaljerad lista över alla tillgängliga mätvärden i Adobe Journey Optimizer finns på [den här sidan](global-report.md#list-of-components-global.md)
 
 ## Fliken Kampanj {#campaign-global-objectives}
 
@@ -32,11 +32,11 @@ En detaljerad lista över alla mätvärden som är tillgängliga i Adobe Journey
 
 ![](assets/campaign_report_global_1.png)
 
-The **[!UICONTROL Campaign's Statistics]** widgetinformation om huvudinformationen i förhållande till kampanjen:
+Widgeten **[!UICONTROL Campaign's Statistics]** visar huvudinformationen i förhållande till din kampanj:
 
 * **[!UICONTROL Entered profiles]**: Antal profiler som påbörjade resan.
 
-* **[!UICONTROL Actions delivered]**: Totalt antal unika gånger en åtgärd i resan har utförts.
+* **[!UICONTROL Actions delivered]**: Totalt antal unika gånger en åtgärd i resan har levererats.
 
 * **[!UICONTROL Actions failed in %]**: Totalt antal unika gånger en åtgärd misslyckades under resan jämfört med det totala antalet unika gånger en åtgärd har levererats.
 
@@ -44,43 +44,43 @@ The **[!UICONTROL Campaign's Statistics]** widgetinformation om huvudinformation
 
 >[!AVAILABILITY]
 >
->The **Målrapport** är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill veta mer.
+>Funktionen **Målrapport** är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill veta mer.
 
 ![](assets/performance_report.gif)
 
-The **[!UICONTROL Objectives]** kan du finjustera leveransrapporter bättre genom att ange ett specifikt mätvärde.
+På fliken **[!UICONTROL Objectives]** kan du finjustera leveransrapporter bättre genom att ange ett specifikt mätvärde.
 
-The **[!UICONTROL Objectives]** listade är länkade till **[!UICONTROL Datasets]** som definierar en anslutning till ett system för att hämta ytterligare information. En lista med inbyggda **[!UICONTROL Objectives]** är tillgängligt, men du kan lägga till egna genom att lägga till nya **[!UICONTROL Dataset]**. För det detaljerade förfarandet, se [section](../content-management/reporting-configuration.md).
+**[!UICONTROL Objectives]** i listan är länkad till **[!UICONTROL Datasets]** som definierar en anslutning till ett system för att hämta ytterligare information. En lista med inbyggda **[!UICONTROL Objectives]** är tillgänglig, men du kan lägga till egna genom att lägga till nya **[!UICONTROL Dataset]**. Detaljerade anvisningar finns i det här [avsnittet](../content-management/reporting-configuration.md).
 
-När du har valt de mål som du vill ha som mål för **[!UICONTROL Performance overview]** och **[!UICONTROL Campaign objective]** -widgetar ger en detaljerad sammanfattning av leveransresultatet.
+När du har valt de mål som du vill ha som mål på, kommer de två **[!UICONTROL Performance overview]**- och **[!UICONTROL Campaign objective]**-widgetarna att ge en detaljerad sammanfattning av leveransresultaten.
 
-Med **[!UICONTROL Campaign objective]** kan du också välja att jämföra huvudmålet med ett annat mätvärde.
+Med widgeten **[!UICONTROL Campaign objective]** kan du även välja att jämföra huvudmålet med ett annat mätvärde.
 
 ### Experimentationsrapport {#experimentation-global-objectives}
 
 ![](assets/experimentation_report_3.png)
 
-The **[!UICONTROL Experimentation]** ger viktiga insikter om prestanda för varje variant och identifierar den mest framgångsrika.
+Fliken **[!UICONTROL Experimentation]** ger viktiga insikter om prestanda för varje variant och identifierar den som fungerar bäst.
 
-Observera att det kan ta en stund att definiera den bästa utföraren, men den representeras av den här ikonen ![](assets/experimentation_report_1.png).
+Observera att det kan ta lite tid att definiera den bästa utföraren, men den representeras av den här ikonen ![](assets/experimentation_report_1.png).
 
 +++Läs mer om de olika mätvärden och widgetar som är tillgängliga för rapporten Experimentation.
 
-The **[!UICONTROL Experiment result]** widgeten anger prestanda för varje variant. Du kan ändra din baslinje genom att välja en av behandlingarna i **[!UICONTROL Baseline]** listrutan. Den bästa behandlingen visas med en stjärnikon.
+Widgeten **[!UICONTROL Experiment result]** visar prestanda för varje variant. Du kan ändra din baslinje genom att välja en av behandlingarna i listrutan **[!UICONTROL Baseline]**. Den bästa behandlingen visas med en stjärnikon.
 
 Tabellen visar följande mått:
 
-* **[!UICONTROL Lift over baseline]**: Mät den procentuella förbättringen av konverteringsgraden för en viss behandling jämfört med baslinjen.
+* **[!UICONTROL Lift over baseline]**: Mät den procentuella förbättringen av konverteringsgraden för en given behandling över baslinjen.
 
-* **[!UICONTROL Confidence]** Bevis på att en viss behandling är densamma som den initiala behandlingen. [Läs mer](../content-management/experiment-calculations.md#understand-confidence)
+* **[!UICONTROL Confidence]**: Bevis på att en viss behandling är densamma som den initiala behandlingen. [Läs mer](../content-management/experiment-calculations.md#understand-confidence)
 
-* **[!UICONTROL Unique outbound clicks]**: Totalt antal klick i utgående kanaler.
+* **[!UICONTROL Unique outbound clicks]**: Totalt antal klick över utgående kanaler.
 
 * **[!UICONTROL Profiles]**: Antal profiler som är avsedda för den här behandlingen.
 
-* **[!UICONTROL Unique outbound clicks/profiles]**: Totalt värde för resultatmåttet, som tidigare valdes när du skapade dina experiment, delat med antalet profiler.
+* **[!UICONTROL Unique outbound clicks/profiles]**: Det totala värdet för resultatmåttet, som tidigare valdes när du skapade dina experiment, delat med antalet profiler.
 
-The **[!UICONTROL Confidence interval]** graf mäter osäkerheten kring förbättringen. Här anges den procentuella skillnaden i prestanda mellan baslinjen och den bästa behandlingen. [Läs mer](../content-management/experiment-calculations.md#confidence-intervals).
+Diagrammet **[!UICONTROL Confidence interval]** mäter osäkerheten kring förbättringen. Här anges den procentuella skillnaden i prestanda mellan baslinjen och den bästa behandlingen. [Läs mer](../content-management/experiment-calculations.md#confidence-intervals).
 +++
 
-En djupdykning i dessa resultat och hur du tolkar dem finns i [den här sidan](../content-management/get-started-experiment.md#interpret-results).
+En djupdykning i dessa resultat och hur du tolkar dem finns på [den här sidan](../content-management/get-started-experiment.md#interpret-results).

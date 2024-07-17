@@ -15,11 +15,11 @@ ht-degree: 0%
 
 # Kom igång med hjälp av hjälpfunktioner{#functions}
 
-Använd [!DNL Journey Optimizer] mallspråk för att utföra dataåtgärder, t.ex. beräkningar, dataformatering eller konvertering, villkor och hantera dem i personaliseringssammanhang. Läs riktlinjerna för syntaxen för personalisering i [den här sidan](../personalization-syntax.md).
+Använd mallspråket [!DNL Journey Optimizer] för att utföra dataåtgärder, till exempel beräkningar, dataformatering eller konvertering, villkor och ändra dem i personaliseringssammanhang. Lär dig riktlinjerna för anpassningssyntax på [den här sidan](../personalization-syntax.md).
 
 
 
-➡️ [Lär dig hur du använder hjälpfunktioner i den här videon](#video)
+➡️ [Lär dig använda hjälpfunktioner i den här videon](#video)
 
 Mallspråk används i hjälpfunktioner som finns i personaliseringslistrutan i personaliseringsredigeraren, enligt nedan:
 
@@ -27,15 +27,15 @@ Mallspråk används i hjälpfunktioner som finns i personaliseringslistrutan i p
 
 >[!NOTE]
 >
->De funktioner och funktioner som finns i personaliseringsredigeraren skiljer sig från dem som finns i [Avancerad uttrycksredigerare för Journey](../../building-journeys/expression/expressionadvanced.md).
+>De funktioner och funktioner som är tillgängliga i personaliseringsredigeraren skiljer sig från dem som finns i den avancerade uttrycksredigeraren [Journey](../../building-journeys/expression/expressionadvanced.md).
 
-I [!DNL Journey Optimizer] personaliseringsredigerare och hjälpfunktioner är grupperade i tre kategorier: [Funktioner](#functions-helper), [Hjälpmedel](#helper-helper) och [Operatorer](#operators-helper).
+Hjälpfunktionerna i redigeraren för anpassning av [!DNL Journey Optimizer] är grupperade i tre kategorier: [Funktioner](#functions-helper), [Hjälpprogram](#helper-helper) och [Operatorer](#operators-helper).
 
 Välj en kategori för att komma åt underkategorier och funktioner.
 
-Åtkomst till underkategorier genom att klicka på `>` -ikon. Välj en funktion genom att klicka på `+` ikon: funktionen läggs automatiskt till på skärmen för anpassning.
+Du får åtkomst till underkategorier genom att klicka på ikonen `>`. Välj en funktion genom att klicka på ikonen `+`: funktionen läggs automatiskt till på anpassningsskärmen.
 
-Klicka på `...` om du vill visa beskrivningen av funktionen och lägga till den i dina favoriter. [Läs mer](../personalize.md#fav)
+Klicka på ikonen `...` för att visa beskrivningen av funktionen och lägga till den i dina favoriter. [Läs mer](../personalize.md#fav)
 
 ## Funktioner{#functions-helper}
 
@@ -425,7 +425,7 @@ Jämförelsefunktioner används för att jämföra mellan olika uttryck och vär
         <td><a href="operators.md#greaterthanorequal">Större eller lika med</a></td><td>Operatorn kontrollerar om det första värdet är större än eller lika med det andra värdet</td>
     </tr>
     <tr>
-        <td><a href="operators.md#lessthanorequal">Mindre än eller lika med</a> </td><td>Operatorn kontrollerar om det första värdet är mindre än eller lika med det andra värdet</td>
+        <td><a href="operators.md#lessthanorequal">Mindre än eller lika med </a> </td><td>Operatorn kontrollerar om det första värdet är mindre än eller lika med det andra värdet</td>
     </tr>
     <tr>
         <td><a href="operators.md#notequal">Inte lika med</a></td><td>Den här operatorn kontrollerar om det angivna uttrycket inte är lika med värdet</td>

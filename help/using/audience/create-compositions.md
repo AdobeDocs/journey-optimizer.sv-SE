@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-Dokumentationen innehåller detaljerad information om hur du arbetar med målgruppsdispositioner i Adobe Journey Optimizer. Om du inte använder Adobe Journey Optimizer [klicka här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html){target="_blank"}.
+Dokumentationen innehåller detaljerad information om hur du arbetar med målgruppsdispositioner i Adobe Journey Optimizer. Om du inte använder Adobe Journey Optimizer [klickar du här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html){target="_blank"}.
 
 >[!ENDSHADEBOX]
 
@@ -27,7 +27,7 @@ Dokumentationen innehåller detaljerad information om hur du arbetar med målgru
 
 Så här skapar du ett dispositionsarbetsflöde:
 
-1. Öppna **[!UICONTROL Audiences]** meny och välj **[!UICONTROL Create Audience]**.
+1. Gå till menyn **[!UICONTROL Audiences]** och välj **[!UICONTROL Create Audience]**.
 
 1. Välj **[!UICONTROL Compose Audience]**.
 
@@ -35,7 +35,7 @@ Så här skapar du ett dispositionsarbetsflöde:
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Build rule]** kan du skapa en ny segmentdefinition med [Segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html).
+   >Med metoden för att skapa **[!UICONTROL Build rule]** kan du skapa en ny segmentdefinition med [segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html).
 
 1. Arbetsytan i kompositionen visas med två standardaktiviteter:
 
@@ -43,7 +43,7 @@ Så här skapar du ett dispositionsarbetsflöde:
 
    * **[!UICONTROL Save]**: det sista steget i kompositionen. Med den här aktiviteten kan du spara resultatet av arbetsflödet till en ny målgrupp.
 
-   Mer information om hur du konfigurerar aktiviteter på arbetsytan för dispositionsarbetsflöden finns i [Arbeta med arbetsytan](composition-canvas.md).
+   Mer information om hur du konfigurerar aktiviteter i dispositionsarbetsytan finns i [Arbeta med dispositionsarbetsytan](composition-canvas.md).
 
 1. Öppna dispositionsegenskaperna för att ange en titel och en beskrivning.
 
@@ -51,11 +51,11 @@ Så här skapar du ett dispositionsarbetsflöde:
 
    ![](assets/audiences-properties.png)
 
-1. Konfigurera kompositionen genom att lägga till så många aktiviteter som behövs mellan **[!UICONTROL Audience]** och **[!UICONTROL Save]** verksamhet. [Lär dig hur du arbetar med arbetsytan](composition-canvas.md)
+1. Konfigurera kompositionen genom att lägga till så många aktiviteter som behövs mellan **[!UICONTROL Audience]** och **[!UICONTROL Save]** aktiviteter. [Lär dig hur du arbetar med kompositionsytan](composition-canvas.md)
 
    ![](assets/audiences-publish.png)
 
-1. Klicka på **[!UICONTROL Publish]** för att publicera kompositionen och spara målgrupperna i Adobe Experience Platform.
+1. När kompositionen är klar klickar du på knappen **[!UICONTROL Publish]** för att publicera kompositionen och spara målgrupperna i Adobe Experience Platform.
 
    >[!IMPORTANT]
    >
@@ -74,15 +74,15 @@ Så här skapar du ett dispositionsarbetsflöde:
 >title="Publish er målgrupp"
 >abstract="Publish din komposition för att spara de resulterande målgrupperna i Adobe Experience Platform."
 
-Alla skapade kompositioner kan nås via **[!UICONTROL Compositions]** -fliken. Du kan när som helst duplicera eller ta bort en befintlig komposition med hjälp av ellipsknappen i listan.
+Alla skapade kompositioner kan nås från fliken **[!UICONTROL Compositions]**. Du kan när som helst duplicera eller ta bort en befintlig komposition med hjälp av ellipsknappen i listan.
 
 Kompositioner kan ha flera statusvärden:
 
 * **[!UICONTROL Draft]**: kompositionen pågår och har inte publicerats.
-* **[!UICONTROL Published]**: kompositionen har publicerats, målgrupperna har sparats och är tillgängliga för användning.
+* **[!UICONTROL Published]**: kompositionen har publicerats, resulterande målgrupper har sparats och är tillgängliga för användning.
 
 ![](assets/audiences-compositions.png)
 
 >[!NOTE]
 >
->Målgruppskomposition är för närvarande inte integrerat med funktionen för återställning av sandlådor. Innan du initierar en sandlådeåterställning måste du ta bort dina kompositioner manuellt för att se till att de associerade målgruppsdata rensas ordentligt. Detaljerad information finns i Adobe Experience Platform [Sandlådedokumentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html#delete-audience-compositions)
+>Målgruppskomposition är för närvarande inte integrerat med funktionen för återställning av sandlådor. Innan du initierar en sandlådeåterställning måste du ta bort dina kompositioner manuellt för att se till att de associerade målgruppsdata rensas ordentligt. Detaljerad information finns i Adobe Experience Platform [sandlådedokumentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html#delete-audience-compositions)

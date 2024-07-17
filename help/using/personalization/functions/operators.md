@@ -8,8 +8,8 @@ level: Experienced
 exl-id: 75b0b380-d9a6-418e-b9f6-e64de385ba8d
 source-git-commit: f4068450dde5f85652096c09e7f817dbab40a3d8
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 10%
+source-wordcount: '308'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ Booleska funktioner används för att utföra boolesk logik för olika element.
 
 ### Och{#and}
 
-The `and` -funktionen används för att skapa en logisk koppling.
+Funktionen `and` används för att skapa en logisk koppling.
 
 **Syntax**
 
@@ -39,7 +39,7 @@ Följande operation kommer att återlämna alla med hemland som Frankrike och f�
 
 ### eller{#or}
 
-The `or` används för att skapa en logisk förskjutning.
+Funktionen `or` används för att skapa en logisk förskjutning.
 
 **Syntax**
 
@@ -80,9 +80,9 @@ not (homeAddress.countryISO = "CA")
 
 Jämförelsefunktioner används för att jämföra mellan olika uttryck och värden och returnera sant eller falskt efter det.
 
-### Är lika med{#equals}
+### Lika med{#equals}
 
-The `=` (lika med)-funktionen kontrollerar om ett värde eller uttryck är lika med ett annat värde eller uttryck.
+Funktionen `=` (lika med) kontrollerar om ett värde eller uttryck är lika med ett annat värde eller uttryck.
 
 **Syntax**
 
@@ -100,7 +100,7 @@ Följande åtgärd kontrollerar om hemadresslandet är Frankrike.
 
 ### Inte lika med{#notequal}
 
-The `!=` (inte lika med) kontrollerar funktionen om ett värde eller uttryck är **not** är lika med ett annat värde eller uttryck.
+Funktionen `!=` (inte lika med) kontrollerar om ett värde eller uttryck är **inte** lika med ett annat värde eller uttryck.
 
 **Syntax**
 
@@ -116,9 +116,9 @@ Följande åtgärd kontrollerar om hemadresslandet inte är Frankrike.
 {%= profile.homeAddress.country != "France" %}
 ```
 
-### Greater than{#greaterthan}
+### Större än{#greaterthan}
 
-The `>` (större än) används för att kontrollera om det första värdet är större än det andra värdet.
+Funktionen `>` (större än) används för att kontrollera om det första värdet är större än det andra värdet.
 
 **Syntax**
 
@@ -134,9 +134,9 @@ Följande operation definierar personer som är födda strikt efter 1970.
 {%= profile.person.birthYear > 1970 %}
 ```
 
-### Greater than or equal to{#greaterthanorequal}
+### Större än eller lika med{#greaterthanorequal}
 
-The `>=` (större än eller lika med) används för att kontrollera om det första värdet är större än eller lika med det andra värdet.
+Funktionen `>=` (större än eller lika med) används för att kontrollera om det första värdet är större än eller lika med det andra värdet.
 
 **Syntax**
 
@@ -152,9 +152,9 @@ Följande operation definierar personer födda i eller efter 1970.
 {%= profile.person.birthYear >= 1970 %}
 ```
 
-### Less than{#lessthan}
+### Mindre än{#lessthan}
 
-The `<` (mindre än) används för att kontrollera om det första värdet är mindre än det andra värdet.
+Jämförelsefunktionen `<` (mindre än) används för att kontrollera om det första värdet är mindre än det andra värdet.
 
 **Syntax**
 
@@ -170,9 +170,9 @@ Följande åtgärd definierar personer som är födda före 2000.
 {%= profile.person.birthYear < 2000 %}
 ```
 
-### Less than or equal to{#lessthanorequal}
+### Mindre än eller lika med{#lessthanorequal}
 
-The `<=` (mindre än eller lika med) används för att kontrollera om det första värdet är mindre än eller lika med det andra värdet.
+Jämförelsefunktionen `<=` (mindre än eller lika med) används för att kontrollera om det första värdet är mindre än eller lika med det andra värdet.
 
 **Syntax**
 

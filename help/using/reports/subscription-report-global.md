@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: 4509c1e9-02e6-4c00-83ba-0b5512e70c41
 source-git-commit: c14a9385191cfa4368e0b84ab16a63c4c87e2c69
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -24,22 +24,22 @@ ht-degree: 0%
 
 Globala rapporter, som du kommer åt från fliken All time, visar händelser som inträffat för minst två timmar sedan och täcker händelser under en vald tidsperiod. Live-rapporter fokuserar på händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten.
 
-Klicka på **[!UICONTROL Report]** ikonen för den valda prenumerationslistan.
+Du öppnar dina rapporter genom att klicka på ikonen **[!UICONTROL Report]** i den valda prenumerationslistan.
 
 ![](assets/subscription_report_7.png)
 
-Prenumerationen **[!UICONTROL Global report]** är uppdelat i olika widgetar som detaljerat beskriver dina prenumerationer och avbeställningar. Varje widget kan storleksändras och tas bort vid behov. Mer information om detta finns i [section](global-report.md).
+Prenumerationen **[!UICONTROL Global report]** är uppdelad i olika widgetar som detaljerar dina prenumerationer och prenumerationer. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [avsnittet](global-report.md).
 
 ![](assets/subscription_report_1.png)
 
-The **[!UICONTROL Subscription performance]** nyckeltal och **[!UICONTROL Subscriptions by journey]**/**[!UICONTROL Unsubscribes by journey]** tabellerna innehåller detaljerad information om besökarnas engagemang på landningssidan. Tabellerna och KPI:erna innehåller tillgängliga uppgifter om landningssidan, t.ex.:
+KPI:erna **[!UICONTROL Subscription performance]** och tabellerna **[!UICONTROL Subscriptions by journey]**/**[!UICONTROL Unsubscribes by journey]** visar huvudinformationen i förhållande till besökarnas engagemang på din landningssida. Tabellerna och KPI:erna innehåller tillgängliga uppgifter om landningssidan, t.ex.:
 
-* **[!UICONTROL Subscribes]**: Totalt antal prenumerationer för den berörda perioden.
+* **[!UICONTROL Subscribes]**: Totalt antal prenumerationer för den aktuella perioden.
 
-* **[!UICONTROL Unsubscribes]**: Totalt antal avbeställningar under den aktuella perioden.
+* **[!UICONTROL Unsubscribes]**: Totalt antal prenumerationer för den aktuella perioden.
 
-The **[!UICONTROL Subscription performance]** Diagram visar hur prenumerationerna har utvecklats under den berörda perioden.
+Diagrammet **[!UICONTROL Subscription performance]** visar utvecklingen av prenumerationer för den aktuella perioden.
 
 ![](assets/subscription_report_2.png)
 
-The **Prenumerationer - uppdelning** och **Avbeställ - Uppdelning** representerar det totala antalet personer som under den valda tidsperioden har tecknat eller avbrutit prenumerationen, beroende på meddelanden, landningssidor och kanaler.
+**Prenumerationer - uppdelning** och **Avbeställningar - uppdelning** representerar det totala antalet personer som har prenumererat eller avbeställt under den valda tidsperioden beroende på meddelanden, landningssidor och kanaler.

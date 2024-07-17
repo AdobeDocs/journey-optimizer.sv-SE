@@ -9,13 +9,13 @@ exl-id: e470d491-b30b-4d26-83a6-e5b34e49fe61
 source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 # Slå upp reserverbjudanden {#look-up-fallback-offers}
 
-Du kan slå upp specifika reserverbjudanden genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller antingen reserverbjudandet `@id` eller namnet på reserverbjudandet i sökvägen för begäran.
+Du kan slå upp specifika reserverbjudanden genom att göra en GET-förfrågan till [!DNL Offer Library]-API:t som innehåller antingen reserverbjudandet `@id` eller namnet på reserverbjudandet i sökvägen för begäran.
 
 **API-format**
 
@@ -28,7 +28,7 @@ GET /{ENDPOINT_PATH}/{CONTAINER_ID}/queries/core/search?schema={SCHEMA_FALLBACK_
 | `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
 | `{CONTAINER_ID}` | Behållaren där reserverbjudandena finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
 | `{SCHEMA_FALLBACK_OFFER}` | Definierar det schema som är associerat med reserverbjudanden. | `https://ns.adobe.com/experience/offer-management/fallback-offer;version=0.1` |
-| `id` | En sträng som matchar `@id` enheternas egenskap. Strängen matchas exakt. Parametrarna `id` och `name` kan inte användas tillsammans. | `xcore:fallback-offer:122206064e0d98df` |
+| `id` | En sträng som används för att matcha egenskapen `@id` för entiteterna. Strängen matchas exakt. Parametrarna `id` och `name` kan inte användas tillsammans. | `xcore:fallback-offer:122206064e0d98df` |
 | `name` | En sträng som används för att matcha egenskapen xdm:name för entiteterna. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametrarna `id` och `name` kan inte användas tillsammans | `F1: Web fallback` |
 
 **Begäran**
@@ -45,7 +45,7 @@ curl -X GET \
 
 **Svar**
 
-Ett godkänt svar returnerar information om placeringen inklusive information om ditt behållar-ID, instans-ID och unikt reserverbjudande `@id`.
+Ett lyckat svar returnerar information om placeringen, inklusive information om ditt behållar-ID, instans-ID och unikt reserverbjudande `@id`.
 
 ```json
 {

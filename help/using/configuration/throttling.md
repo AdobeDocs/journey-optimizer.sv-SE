@@ -10,7 +10,7 @@ keywords: extern, API, optimerare, capping
 exl-id: b837145b-1727-43c0-a0e2-bf0e8a35347c
 source-git-commit: d4ecfecdc74c26890658d68d352c36b75f7c9039
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '769'
 ht-degree: 91%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 91%
 
 API:t för begränsning hjälper dig att skapa, konfigurera och övervaka dina begränsningskonfigurationer för att begränsa antalet händelser som skickas per sekund.
 
-Det här avsnittet innehåller global information om hur du arbetar med API:t. En detaljerad API-beskrivning finns i [Dokumentation för Adobe Journey Optimizer API:er](https://developer.adobe.com/journey-optimizer-apis/).
+Det här avsnittet innehåller global information om hur du arbetar med API:t. En detaljerad API-beskrivning finns i [dokumentationen för Adobe Journey Optimizer API](https://developer.adobe.com/journey-optimizer-apis/).
 
 >[!IMPORTANT]
 >
@@ -143,7 +143,7 @@ Den här Postman-samlingen har konfigurerats för att dela den samling med Postm
 
 När du hämtat och laddat upp till Postman måste du lägga till tre variabler: `{JO_HOST}`,`{BASE_PATH}` och `{SANDBOX_NAME}`.
 * `{JO_HOST}`: [!DNL Journey Optimizer] Gateway-URL
-* `{BASE_PATH}`: startpunkt för API:et. 
+* `{BASE_PATH}` : startpunkt för API.
 * `{SANDBOX_NAME}`: sidhuvudet **x-sandbox-name** (till exempel ”produktion”) som motsvarar namnet på sandlådan där API-åtgärderna utförs. Se [översikten över sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=sv) för mer information.
 
 I följande avsnitt hittar du listan över Rest API-anrop ordnade för att utföra fallstudien.

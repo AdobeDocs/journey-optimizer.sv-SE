@@ -16,25 +16,25 @@ ht-degree: 0%
 
 ---
 
-# Om ExperienceEvent-scheman för [!DNL Journey Optimizer] Händelser {#about-experienceevent-schemas}
+# Om ExperienceEvent-scheman för [!DNL Journey Optimizer]-händelser {#about-experienceevent-schemas}
 
-[!DNL Journey Optimizer] -händelser är XDM Experience Events som skickas till Adobe Experience Platform via Streaming Ingmit.
+[!DNL Journey Optimizer] händelser är XDM Experience Events som skickas till Adobe Experience Platform via Streaming Ingakes.
 
-Därför är en viktig förutsättning för att skapa händelser för [!DNL Journey Optimizer] är att du känner till Adobe Experience Platform Experience Data Model (eller XDM) och hur du skapar XDM Experience Event-scheman samt hur du direktuppspelar XDM-formaterade data till Adobe Experience Platform.
+Därför är en viktig förutsättning för att du ska kunna konfigurera händelser för [!DNL Journey Optimizer] att du känner till Adobe Experience Platform Experience Data Model (eller XDM) och hur du skapar XDM Experience Event-scheman samt hur du direktuppspelar XDM-formaterade data till Adobe Experience Platform.
 
-## Schemakrav för [!DNL Journey Optimizer] Händelser  {#schema-requirements}
+## Schemakrav för [!DNL Journey Optimizer]-händelser  {#schema-requirements}
 
-Det första steget i att konfigurera en händelse för [!DNL Journey Optimizer] är att se till att du har ett definierat XDM-schema för att representera händelsen och en datauppsättning som skapas för att registrera instanser av händelsen på Adobe Experience Platform. Det är inte absolut nödvändigt att ha en datauppsättning för dina händelser, men om du skickar händelserna till en viss datauppsättning kan du behålla användarens händelsehistorik för framtida referens och analys, så det är alltid en bra idé. Om du inte redan har ett lämpligt schema och datamängd för händelsen kan båda dessa åtgärder utföras i Adobe Experience Platform webbgränssnitt.
+Det första steget i att konfigurera en händelse för [!DNL Journey Optimizer] är att se till att du har ett definierat XDM-schema som representerar händelsen och en datauppsättning som skapats för att registrera instanser av händelsen på Adobe Experience Platform. Det är inte absolut nödvändigt att ha en datauppsättning för dina händelser, men om du skickar händelserna till en viss datauppsättning kan du behålla användarens händelsehistorik för framtida referens och analys, så det är alltid en bra idé. Om du inte redan har ett lämpligt schema och datamängd för händelsen kan båda dessa åtgärder utföras i Adobe Experience Platform webbgränssnitt.
 
 ![](assets/schema1.png)
 
-Alla XDM-scheman som ska användas för [!DNL Journey Optimizer] ska uppfylla följande krav:
+Alla XDM-scheman som används för [!DNL Journey Optimizer]-händelser ska uppfylla följande krav:
 
 * Schemat måste vara av klassen XDM ExperienceEvent.
 
   ![](assets/schema2.png)
 
-* För systemgenererade händelser måste schemat innehålla fältgruppen Orchestration-händelseID. [!DNL Journey Optimizer] använder det här fältet för att identifiera händelser som används under resor.
+* För systemgenererade händelser måste schemat innehålla fältgruppen Orchestration-händelseID. [!DNL Journey Optimizer] använder det här fältet för att identifiera händelser som används i resor.
 
   ![](assets/schema3.png)
 
@@ -72,14 +72,14 @@ Här är inköpsschemat med relationen definierad i produkt-ID-fältet.
 
 >[!NOTE]
 >
->Läs mer om schemarelationer i [Experience Platform dokumentation](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/configure-relationships-between-schemas.html).
+>Läs mer om schemarelationer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/configure-relationships-between-schemas.html).
 
 I Journey Optimizer kan du sedan använda alla fält från de länkade tabellerna:
 
-* när en affärshändelse eller en enhetshändelse konfigureras, [Läs mer](../event/experience-event-schema.md#unitary_event_configuration)
-* vid användning av villkor under en resa, [Läs mer](../event/experience-event-schema.md#journey_conditions_using_event_context)
-* personalisering av meddelanden, [Läs mer](../event/experience-event-schema.md#message_personalization)
-* personalisering av anpassade åtgärder, [Läs mer](../event/experience-event-schema.md#custom_action_personalization_with_journey_event_context)
+* [Läs mer](../event/experience-event-schema.md#unitary_event_configuration) när du konfigurerar en affärshändelse eller en enhetshändelse
+* [Läs mer](../event/experience-event-schema.md#journey_conditions_using_event_context) när villkor används i en resa
+* i meddelandeanpassning, [Läs mer](../event/experience-event-schema.md#message_personalization)
+* i anpassad åtgärdspersonalisering, [Läs mer](../event/experience-event-schema.md#custom_action_personalization_with_journey_event_context)
 
 ### Arrayer{#relationships_limitations}
 
@@ -105,7 +105,7 @@ De länkade fälten är inte tillgängliga:
 * i händelsenyckelformeln
 * händelse-id-villkor (regelbaserade händelser)
 
-Mer information om hur du konfigurerar en enhetshändelse finns i detta [page](../event/about-creating.md).
+Mer information om hur du konfigurerar en enhetshändelse finns på [sidan](../event/about-creating.md).
 
 ### Resevillkor med händelsetyp{#journey_conditions_using_event_context}
 
@@ -115,7 +115,7 @@ Lägg till ett villkor i en resa, redigera uttrycket och visa händelsnoden i ut
 
 ![](assets/schema12.png)
 
-Mer information om hur du definierar resevillkor finns i detta [page](../building-journeys/condition-activity.md).
+Mer information om hur du definierar resevillkor finns på [sidan](../building-journeys/condition-activity.md).
 
 ### Skräddarsytt meddelande{#message_personalization}
 
@@ -123,7 +123,7 @@ De länkade fälten är tillgängliga när du anpassar ett meddelande. De relate
 
 ![](assets/schema14.png)
 
-Om du vill lära dig hur du anpassar ett meddelande med sammanhangsbaserad reseinformation kan du läsa detta [page](../personalization/personalization-use-case.md).
+Om du vill lära dig hur du anpassar ett meddelande med sammanhangsbaserad reseinformation kan du läsa den här [sidan](../personalization/personalization-use-case.md).
 
 ### Anpassad åtgärdspersonalisering med reseventkontext{#custom_action_personalization_with_journey_event_context}
 
@@ -131,4 +131,4 @@ De länkade fälten är tillgängliga när åtgärdsparametrarna för en anpassa
 
 ![](assets/schema13.png)
 
-Mer information om hur du använder anpassade åtgärder finns i [page](../building-journeys/using-custom-actions.md).
+Mer information om hur du använder anpassade åtgärder finns på [sidan](../building-journeys/using-custom-actions.md).

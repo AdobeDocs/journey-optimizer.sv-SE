@@ -12,7 +12,7 @@ exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
 source-git-commit: 067c990f7f82594418d59c3b1587a62a04799c09
 workflow-type: tm+mt
 source-wordcount: '1512'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -25,28 +25,28 @@ ht-degree: 0%
 
 Om du använder ett tredjepartssystem för att skicka meddelanden eller om du vill att resor ska skicka API-anrop till ett tredjepartssystem, använder du anpassade åtgärder för att konfigurera anslutningen till din resa. Du kan till exempel ansluta till följande system med anpassade åtgärder: Epsilon, Slack, [Adobe Developer](https://developer.adobe.com){target="_blank"}, Firebase osv.
 
-Anpassade åtgärder är ytterligare åtgärder som definieras av tekniska användare och görs tillgängliga för marknadsförare. När de är konfigurerade visas de på den vänstra paletten på din resa i **[!UICONTROL Action]** kategori. Läs mer i [den här sidan](../building-journeys/about-journey-activities.md#action-activities).
+Anpassade åtgärder är ytterligare åtgärder som definieras av tekniska användare och görs tillgängliga för marknadsförare. När de har konfigurerats visas de i den vänstra paletten på din resa i kategorin **[!UICONTROL Action]**. Läs mer på [den här sidan](../building-journeys/about-journey-activities.md#action-activities).
 
 ## Begränsningar{#custom-actions-limitations}
 
-Anpassade åtgärder har några begränsningar som anges i [den här sidan](../start/guardrails.md).
+Anpassade åtgärder har några begränsningar som anges på [den här sidan](../start/guardrails.md).
 
-I anpassade åtgärdsparametrar kan du skicka en enkel samling samt en samling med objekt. Läs mer om begränsningar för samlingar i [den här sidan](../building-journeys/collections.md#limitations).
+I anpassade åtgärdsparametrar kan du skicka en enkel samling samt en samling med objekt. Läs mer om samlingsbegränsningar på [den här sidan](../building-journeys/collections.md#limitations).
 
-Observera också att de anpassade åtgärdsparametrarna har ett förväntat format (till exempel sträng, decimal). Du måste vara försiktig med att ta hänsyn till dessa förväntade format. Läs mer om detta [användningsfall](../building-journeys/collections.md).
+Observera också att de anpassade åtgärdsparametrarna har ett förväntat format (till exempel sträng, decimal). Du måste vara försiktig med att ta hänsyn till dessa förväntade format. Läs mer i det här [användningsexemplet](../building-journeys/collections.md).
 
-Anpassade åtgärder stöder bara JSON-format när du använder [förfrågan](../action/about-custom-action-configuration.md#define-the-message-parameters) eller [svarsnyttolaster](../action/action-response.md).
+Anpassade åtgärder stöder bara JSON-format när [request](../action/about-custom-action-configuration.md#define-the-message-parameters) eller [response nyttloads](../action/action-response.md) används.
 
-## God praxis{#custom-action-enhancements-best-practices}
+## Bästa praxis{#custom-action-enhancements-best-practices}
 
 När du väljer en slutpunkt som ska användas som mål med en anpassad åtgärd ska du se till att:
 
-* Den här slutpunkten kan stödja resans genomströmning med hjälp av konfigurationer från [Begränsnings-API](../configuration/throttling.md) eller [API för begränsning](../configuration/capping.md) för att begränsa den. Var försiktig med att en begränsningskonfiguration inte får vara lägre än 200 TPS. Alla målpunkter måste ha stöd för minst 200 TPS.
+* Den här slutpunkten kan ha stöd för resans genomströmning genom att använda konfigurationer från [API:t för begränsning](../configuration/throttling.md) eller [API:t för begränsning](../configuration/capping.md). Var försiktig med att en begränsningskonfiguration inte får vara lägre än 200 TPS. Alla målpunkter måste ha stöd för minst 200 TPS.
 * Den här slutpunkten måste ha en svarstid som är så låg som möjligt. Beroende på förväntat dataflöde kan en hög svarstid påverka det faktiska dataflödet.
 
-En begränsning på 300 000 anrop över en minut har definierats för alla anpassade åtgärder. Dessutom utförs standardcapping per värd och per sandlåda. Om du till exempel har två slutpunkter med samma värd i en sandlåda (till exempel: `https://www.adobe.com/endpoint1` och `https://www.adobe.com/endpoint2`) gäller det för alla slutpunkter under adobe.com. &quot;endpoint1&quot; och &quot;endpoint2&quot; har samma begränsningskonfiguration och om en slutpunkt når gränsen påverkas den andra slutpunkten.
+En begränsning på 300 000 anrop över en minut har definierats för alla anpassade åtgärder. Dessutom utförs standardcapping per värd och per sandlåda. Om du till exempel har två slutpunkter med samma värd (till exempel: `https://www.adobe.com/endpoint1` och `https://www.adobe.com/endpoint2`) i en sandlåda, gäller det för alla slutpunkter under adobe.com. &quot;endpoint1&quot; och &quot;endpoint2&quot; har samma begränsningskonfiguration och om en slutpunkt når gränsen påverkas den andra slutpunkten.
 
-Den här gränsen har fastställts baserat på kundanvändning för att skydda externa slutpunkter som har anpassats efter anpassade åtgärder. Du måste ta hänsyn till detta vid målgruppsbaserade resor genom att definiera en lämplig läsfrekvens (5 000 profiler/er när anpassade åtgärder används). Om det behövs kan du åsidosätta den här inställningen genom att definiera en större begränsning för begränsning eller begränsning via våra API:er för begränsning/begränsning. Se [den här sidan](../configuration/external-systems.md).
+Den här gränsen har fastställts baserat på kundanvändning för att skydda externa slutpunkter som har anpassats efter anpassade åtgärder. Du måste ta hänsyn till detta vid målgruppsbaserade resor genom att definiera en lämplig läsfrekvens (5 000 profiler/er när anpassade åtgärder används). Om det behövs kan du åsidosätta den här inställningen genom att definiera en större begränsning för begränsning eller begränsning via våra API:er för begränsning/begränsning. Läs [den här sidan](../configuration/external-systems.md).
 
 Du bör inte ange allmänna slutpunkter som mål med anpassade åtgärder av olika anledningar:
 
@@ -59,14 +59,14 @@ Du bör inte ange allmänna slutpunkter som mål med anpassade åtgärder av oli
 I Journey Optimizer kan du tillämpa policyer för datastyrning och samtycke på anpassade åtgärder för att förhindra att specifika fält exporteras till tredjepartssystem eller utesluta kunder som inte har samtyckt till att ta emot e-post, push eller SMS-kommunikation. Mer information finns på följande sidor:
 
 * [Datastyrning](../action/action-privacy.md).
-* [Godkännande](../action/action-privacy.md).
+* [Samtycke](../action/action-privacy.md).
 
 
 ## Konfigurationssteg {#configuration-steps}
 
 Här följer de huvudsteg som krävs för att konfigurera en anpassad åtgärd:
 
-1. I avsnittet ADMINISTRATION-menyn väljer du **[!UICONTROL Configurations]**. I  **[!UICONTROL Actions]** avsnitt, klicka **[!UICONTROL Manage]**. Klicka **[!UICONTROL Create Action]** för att skapa en ny åtgärd. Åtgärdskonfigurationsrutan öppnas till höger på skärmen.
+1. Välj **[!UICONTROL Configurations]** på menyn Administration. Klicka på **[!UICONTROL Manage]** i avsnittet **[!UICONTROL Actions]**. Klicka på **[!UICONTROL Create Action]** om du vill skapa en ny åtgärd. Åtgärdskonfigurationsrutan öppnas till höger på skärmen.
 
    ![](assets/custom2.png)
 
@@ -77,25 +77,25 @@ Här följer de huvudsteg som krävs för att konfigurera en anpassad åtgärd:
    >Endast alfanumeriska tecken och understreck tillåts. Maximala längden är 30 tecken.
 
 1. Lägg till en beskrivning av åtgärden. Det här steget är valfritt.
-1. Antalet resor som använder den här åtgärden visas i **[!UICONTROL Used in]** fält. Du kan klicka på **[!UICONTROL View journeys]** om du vill visa en lista över resor som använder den här åtgärden.
-1. Definiera de olika **[!UICONTROL URL Configuration]** parametrar. Se [den här sidan](../action/about-custom-action-configuration.md#url-configuration).
-1. Konfigurera **[!UICONTROL Authentication]** -avsnitt. Den här konfigurationen är densamma som för datakällor.  Se [det här avsnittet](../datasource/external-data-sources.md#custom-authentication-mode).
-1. Definiera **[!UICONTROL Action parameters]**. Se [den här sidan](../action/about-custom-action-configuration.md#define-the-message-parameters).
-1. Klicka **[!UICONTROL Save]**.
+1. Antalet resor som använder den här åtgärden visas i fältet **[!UICONTROL Used in]**. Du kan klicka på knappen **[!UICONTROL View journeys]** om du vill visa listan över resor som använder den här åtgärden.
+1. Definiera de olika **[!UICONTROL URL Configuration]**-parametrarna. Läs [den här sidan](../action/about-custom-action-configuration.md#url-configuration).
+1. Konfigurera avsnittet **[!UICONTROL Authentication]**. Den här konfigurationen är densamma som för datakällor.  Se [det här avsnittet](../datasource/external-data-sources.md#custom-authentication-mode).
+1. Definiera **[!UICONTROL Action parameters]**. Läs [den här sidan](../action/about-custom-action-configuration.md#define-the-message-parameters).
+1. Klicka på **[!UICONTROL Save]**.
 
-   Den anpassade åtgärden är nu konfigurerad och klar att användas på dina resor. Se [den här sidan](../building-journeys/about-journey-activities.md#action-activities).
+   Den anpassade åtgärden är nu konfigurerad och klar att användas på dina resor. Läs [den här sidan](../building-journeys/about-journey-activities.md#action-activities).
 
    >[!NOTE]
    >
-   >När en anpassad åtgärd används i en resa är de flesta parametrar skrivskyddade. Du kan bara ändra **[!UICONTROL Name]**, **[!UICONTROL Description]**, **[!UICONTROL URL]** fält och **[!UICONTROL Authentication]** -avsnitt.
+   >När en anpassad åtgärd används i en resa är de flesta parametrar skrivskyddade. Du kan bara ändra fälten **[!UICONTROL Name]**, **[!UICONTROL Description]**, **[!UICONTROL URL]** och avsnittet **[!UICONTROL Authentication]**.
 
 ## Konfiguration av slutpunkt {#url-configuration}
 
-När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICONTROL Endpoint Configuration]** parametrar:
+När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICONTROL Endpoint Configuration]**-parametrar:
 
 ![](assets/action-response1bis.png){width="70%" align="left"}
 
-1. I **[!UICONTROL URL]** anger du URL-adressen för den externa tjänsten:
+1. Ange URL-adressen för den externa tjänsten i fältet **[!UICONTROL URL]**:
 
    * Om URL:en är statisk anger du URL:en i det här fältet.
 
@@ -111,25 +111,25 @@ När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICO
    >
    >Endast standardportar tillåts när en anpassad åtgärd definieras: 80 för http och 443 för https.
 
-1. Välj samtalet **[!UICONTROL Method]**: det kan vara antingen **[!UICONTROL POST]**, **[!UICONTROL GET]** eller **[!UICONTROL PUT]**.
+1. Välj anropet **[!UICONTROL Method]**: det kan vara antingen **[!UICONTROL POST]**, **[!UICONTROL GET]** eller **[!UICONTROL PUT]**.
 
    >[!NOTE]
    >
-   > The **DELETE** -metoden stöds inte. Om du behöver uppdatera en befintlig resurs väljer du **PUT** -metod.
+   > Metoden **DELETE** stöds inte. Om du behöver uppdatera en befintlig resurs väljer du metoden **PUT**.
 
 1. Definiera rubriker och frågeparametrar:
 
-   * I **[!UICONTROL Headers]** avsnitt, klicka **[!UICONTROL Add a header field]** för att definiera HTTP-rubrikerna för det begärandemeddelande som ska skickas till den externa tjänsten. The **[!UICONTROL Content-Type]** och **[!UICONTROL Charset]** rubrikfält anges som standard. Du kan inte ta bort dessa fält. Endast **[!UICONTROL Content-Type]** kan ändras. Dess värde ska följa JSON-formatet. Här är standardvärdet:
+   * I avsnittet **[!UICONTROL Headers]** klickar du på **[!UICONTROL Add a header field]** för att definiera HTTP-rubrikerna för det begärandemeddelande som ska skickas till den externa tjänsten. Rubrikfälten **[!UICONTROL Content-Type]** och **[!UICONTROL Charset]** anges som standard. Du kan inte ta bort dessa fält. Endast rubriken **[!UICONTROL Content-Type]** kan ändras. Dess värde ska följa JSON-formatet. Här är standardvärdet:
 
    ![](assets/content-type-header.png)
 
-   * I **[!UICONTROL Query parameters]** avsnitt, klicka **[!UICONTROL Add a Query parameter field]** för att definiera de parametrar som du vill lägga till i URL-adressen.
+   * I avsnittet **[!UICONTROL Query parameters]** klickar du på **[!UICONTROL Add a Query parameter field]** för att definiera de parametrar som du vill lägga till i URL:en.
 
    ![](assets/journeyurlconfiguration2bis.png)
 
 1. Ange fältets etikett eller namn.
 
-1. Välj typ: **[!UICONTROL Constant]** eller **[!UICONTROL Variable]**. Om du har valt **[!UICONTROL Constant]** anger du sedan det konstanta värdet i **[!UICONTROL Value]** fält. Om du har valt **[!UICONTROL Variable]** anger du den här variabeln när du lägger till den anpassade åtgärden på en resa. [Läs mer](../building-journeys/using-custom-actions.md).
+1. Välj typ: **[!UICONTROL Constant]** eller **[!UICONTROL Variable]**. Om du har markerat **[!UICONTROL Constant]** anger du det konstanta värdet i fältet **[!UICONTROL Value]**. Om du har valt **[!UICONTROL Variable]** anger du den här variabeln när du lägger till den anpassade åtgärden på en resa. [Läs mer](../building-journeys/using-custom-actions.md).
 
    ![](assets/journeyurlconfiguration2.png)
 
@@ -147,9 +147,9 @@ Samuell TLS-autentisering (mTLS) stöds i anpassade åtgärder. Det krävs ingen
 
 ## Definiera nyttolastparametrarna {#define-the-message-parameters}
 
-1. I **[!UICONTROL Request]** klistra in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten. Det här fältet är valfritt och endast tillgängligt för anropsmetoder för POST och PUT.
+1. I avsnittet **[!UICONTROL Request]** klistrar du in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten. Det här fältet är valfritt och endast tillgängligt för anropsmetoder för POST och PUT.
 
-1. I **[!UICONTROL Response]** klistra in ett exempel på nyttolasten som returneras av anropet. Det här fältet är valfritt och tillgängligt för alla anropsmetoder. Detaljerad information om hur du utnyttjar API-anropssvar i anpassade åtgärder finns i [den här sidan](../action/action-response.md).
+1. Klistra in ett exempel på nyttolasten som returneras av anropet i avsnittet **[!UICONTROL Response]**. Det här fältet är valfritt och tillgängligt för alla anropsmetoder. Mer information om hur du använder API-anropssvar i anpassade åtgärder finns på [den här sidan](../action/action-response.md).
 
 >[!NOTE]
 >
@@ -166,6 +166,6 @@ Du kan definiera parametertypen (t.ex. sträng, heltal).
 Du kan också välja mellan att ange om en parameter är en konstant eller en variabel:
 
 * **Konstant** betyder att parameterns värde definieras av en teknisk person i åtgärdskonfigurationsfönstret. Värdet är alltid detsamma oavsett resa. Det kommer inte att variera och marknadsföraren kommer inte att se det när han eller hon använder den anpassade åtgärden under resan. Det kan till exempel vara ett ID som tredjepartssystemet förväntar sig. I så fall är fältet till höger om växlingskonstanten/variabeln det värde som skickas.
-* **Variabel** betyder att parameterns värde kommer att variera. Marknadsförare som använder den här anpassade åtgärden under en resa kan skicka det värde de vill ha eller ange var värdet för den här parametern ska hämtas (t.ex. från händelsen, från Adobe Experience Platform). I så fall är fältet till höger om växlingskonstanten/variabeln den etikett marknadsförarna kommer att se under resan för att namnge den här parametern.
+* **Variabel** innebär att parameterns värde varierar. Marknadsförare som använder den här anpassade åtgärden under en resa kan skicka det värde de vill ha eller ange var värdet för den här parametern ska hämtas (t.ex. från händelsen, från Adobe Experience Platform). I så fall är fältet till höger om växlingskonstanten/variabeln den etikett marknadsförarna kommer att se under resan för att namnge den här parametern.
 
 ![](assets/customactionpayloadmessage2.png)

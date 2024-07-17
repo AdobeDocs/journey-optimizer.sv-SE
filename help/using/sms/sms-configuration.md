@@ -45,18 +45,18 @@ Innan du skickar SMS eller MMS måste du konfigurera Adobe Journey Optimizer-mil
    * [Med Twilio](sms-configuration-twilio.md)
 1. [Skapa en SMS-yta](sms-configuration-surface.md)
 
-Dessa steg måste utföras av en Adobe Journey Optimizer [Systemadministratör](../start/path/administrator.md).
+Dessa steg måste utföras av en Adobe Journey Optimizer [systemadministratör](../start/path/administrator.md).
 
-## Förutsättningar{#sms-prerequisites}
+## Förhandskrav{#sms-prerequisites}
 
-Adobe Journey Optimizer är för närvarande integrerat med tredjepartsleverantörer som erbjuder textmeddelandetjänster oberoende av Adobe Journey Optimizer. Leverantörer som stöds för textmeddelanden och MMS är: **Sinch**, **Twilio** och **Infobip**.
+Adobe Journey Optimizer är för närvarande integrerat med tredjepartsleverantörer som erbjuder textmeddelandetjänster oberoende av Adobe Journey Optimizer. Providrar som stöds för textmeddelanden och MMS är: **Sinch**, **Twilio** och **Infobip**.
 
-Innan du konfigurerar SMS-kanalen måste du skapa ett konto hos någon av dessa leverantörer för att få tillgång till **API-token** och **Tjänst-ID**, som du måste konfigurera anslutningen mellan Adobe Journey Optimizer och den tillämpliga leverantören.
+Innan du konfigurerar SMS-kanalen måste du skapa ett konto hos någon av dessa leverantörer för att få din **API-token** och **tjänst-ID**, som du måste konfigurera anslutningen mellan Adobe Journey Optimizer och den tillämpliga providern.
 
 Din användning av textmeddelanden och MMS-tjänster regleras av ytterligare villkor från tillämplig leverantör. Som tredjepartslösningar är Sinch, Twilio och Infobip tillgängliga för Adobe Journey Optimizer-användare via integrering. Adobe kontrollerar inte, och ansvarar inte för, tredjepartsprodukter. Kontakta din leverantör om du har problem eller vill ha hjälp med SMS/MMS.
 
 >[!CAUTION]
 >
->Om du vill komma åt och redigera SMS-underdomäner måste du ha **[!UICONTROL Manage SMS Subdomains]** behörighet i produktionssandlådan. Läs mer om behörigheter i [den här sidan](../administration/high-low-permissions.md#administration-permissions).
+>Om du vill komma åt och redigera SMS-underdomäner måste du ha behörigheten **[!UICONTROL Manage SMS Subdomains]** i produktionssandlådan. Läs mer om behörigheter på [den här sidan](../administration/high-low-permissions.md#administration-permissions).
 >
 

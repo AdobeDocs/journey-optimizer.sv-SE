@@ -18,54 +18,54 @@ ht-degree: 1%
 
 # Hantera listan över inaktiveringar {#manage-suppression-list}
 
-Med [!DNL Journey Optimizer]kan ni övervaka alla e-postadresser som automatiskt utesluts från att skickas under en resa eller en kampanj, till exempel hårda studsar, mjuka studsar och skräppostklagomål.
+Med [!DNL Journey Optimizer] kan du övervaka alla e-postadresser som automatiskt utesluts från att skickas i en resa eller en kampanj, till exempel hårda studsar, mjuka studsar och skräppostklagomål.
 
-Sådana e-postadresser samlas automatiskt in i Journey Optimizer **utelämningslista**. En undertryckningslista består av adresser och domäner som ska uteslutas från era målgrupper. Den samlar in e-postadresser och domäner som inte används i alla e-postmeddelanden i en enda klientmiljö, vilket är specifikt för ett organisations-ID som är kopplat till ett sandbox-ID.
+Sådana e-postadresser samlas automatiskt in i Journey Optimizer **undertryckningslista**. En undertryckningslista består av adresser och domäner som ska uteslutas från era målgrupper. Den samlar in e-postadresser och domäner som inte används i alla e-postmeddelanden i en enda klientmiljö, vilket är specifikt för ett organisations-ID som är kopplat till ett sandbox-ID.
 
-Läs mer om begrepp och användning i listan över inaktiveringar i [det här avsnittet](../reports/suppression-list.md).
+Läs mer om konceptet för inaktiveringslistan och användningen i [det här avsnittet](../reports/suppression-list.md).
 
 >[!NOTE]
 >
 >Adobe håller en uppdaterad lista över kända dåliga adresser som har visat sig vara skadliga för engagemanget och utskickets anseende och ser till att e-post inte skickas till dem. Den här listan hanteras i en global undertryckningslista som är gemensam för alla Adobe-kunder. Adresserna och domännamnen som finns i den globala undertryckningslistan är dolda. Endast antalet uteslutna mottagare anges i leveransrapporterna.
 
-Dessutom kan du använda Journey Optimizer **Suppression REST API** för att styra utgående meddelanden med hjälp av suppression och tillåtelselista. [Lär dig hur du arbetar med Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression/){target="_blank"}
+Dessutom kan du använda Journey Optimizer **Suppression REST API** för att styra dina utgående meddelanden med hjälp av suppression och tillåtelselista. [Lär dig hur du arbetar med Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression/){target="_blank"}
 
 ## Åtkomst till listan över inaktiveringar {#access-suppression-list}
 
-Om du vill få tillgång till en detaljerad lista över utelämnade e-postadresser och domäner går du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** och markera **[!UICONTROL Suppression list]**.
+Om du vill få tillgång till en detaljerad lista över utelämnade e-postadresser och domäner går du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** och väljer **[!UICONTROL Suppression list]**.
 
 
 ![](assets/suppression-list-access.png)
 
 >[!CAUTION]
 >
->Behörigheterna att visa, exportera och hantera undertryckningslistan är begränsade till [Reseadministratörer](../administration/ootb-product-profiles.md#journey-administrator). Läs mer om hantering [!DNL Journey Optimizer] användarrättigheter i [det här avsnittet](../administration/permissions-overview.md).
+>Behörigheter att visa, exportera och hantera undertryckningslistan är begränsade till [Reseadministratörer](../administration/ootb-product-profiles.md#journey-administrator). Läs mer om hur du hanterar [!DNL Journey Optimizer] användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
 
 
 Det finns filter som du kan använda för att bläddra igenom listan.
 
 ![](assets/suppression-list-filters.png)
 
-Du kan filtrera på **[!UICONTROL Suppression category]**, **[!UICONTROL Address type]**, eller **[!UICONTROL Reason]**. Välj ett eller flera alternativ för varje kriterium. När du har valt det här alternativet kan du rensa alla filter eller alla filter som visas ovanpå listan.
+Du kan filtrera på **[!UICONTROL Suppression category]**, **[!UICONTROL Address type]** eller **[!UICONTROL Reason]**. Välj ett eller flera alternativ för varje kriterium. När du har valt det här alternativet kan du rensa alla filter eller alla filter som visas ovanpå listan.
 
 ![](assets/suppression-list-filtering-example.png)
 
 
 ## Förstå orsaker till misslyckanden {#suppression-categories-and-reasons}
 
-När ett meddelande inte kan levereras till en e-postadress, [!DNL Journey Optimizer] avgör varför leveransen misslyckades och associerar den med en **[!UICONTROL Suppression category]**.
+När ett meddelande inte kan levereras till en e-postadress avgör [!DNL Journey Optimizer] varför leveransen misslyckades och associerar det med en **[!UICONTROL Suppression category]**.
 
 Undertryckningskategorierna är följande:
 
 * **Hård**: Ett hårt studsande indikerar en ogiltig e-postadress (dvs. en e-postadress som inte finns). Detta innebär ett studsmeddelande från den mottagande e-postservern som uttryckligen anger att adressen är ogiltig. E-postadressen skickas omedelbart till listan över inaktiveringar.
 
-  När felet beror på ett skräppostklagomål hamnar det också i **Hård** kategori. E-postadressen till mottagaren som skickade klagomålet skickas omedelbart till suppressionslistan.
+  När felet är resultatet av ett skräppostklagomål hamnar det också i kategorin **Hård** . E-postadressen till mottagaren som skickade klagomålet skickas omedelbart till suppressionslistan.
 
-* **Mjuk**: Ett mjukt studs är ett tillfälligt e-poststudsande som inträffar för en giltig e-postadress. E-postadressen läggs till i listan efter flera försök. Mjuka fel skickar en adress till listan när felräknaren når gränsvärdet. [Läs mer om återförsök](retries.md)
+* **Mjuk**: Ett mjukt studsande är ett tillfälligt e-poststuds som inträffade för en giltig e-postadress. E-postadressen läggs till i listan efter flera försök. Mjuka fel skickar en adress till listan när felräknaren når gränsvärdet. [Läs mer om återförsök](retries.md)
 
 * **Manuell**: Manuella fel har lagts till manuellt i listan över undertryckningar. [Läs mer](#add-addresses-and-domains)
 
-För varje e-postadress som visas kan du även kontrollera **[!UICONTROL Type]** (e-post eller domän), **[!UICONTROL Reason]** för att utesluta den, vem som lagt till den och datumet/tiden som den lades till i listan över inaktiveringar.
+För varje e-postadress som visas kan du även kontrollera **[!UICONTROL Type]** (e-post eller domän), **[!UICONTROL Reason]** för att utesluta den, vem som lagt till den och datumet/tiden som den lades till i listan över utelämnanden.
 
 ![](assets/suppression-list.png)
 
@@ -83,12 +83,12 @@ Möjliga orsaker till leveransfel är:
 
 >[!NOTE]
 >
->Användare som avbeställer prenumerationen får inte e-post från [!DNL Journey Optimizer]Därför kan deras e-postadresser inte skickas till listan över inaktiveringar. Deras val hanteras på Experience Platform-nivå. [Läs mer om avanmälan](../privacy/opt-out.md)
+>Användare som avbeställer prenumerationen får inte e-post från [!DNL Journey Optimizer], och deras e-postadresser kan därför inte skickas till listan över inaktiveringar. Deras val hanteras på Experience Platform-nivå. [Läs mer om att avanmäla dig](../privacy/opt-out.md)
 
 
 ### Undertryckningsregler  {#suppression-rules}
 
-Från **[!UICONTROL Suppression list]** kan du även redigera den parameter för nytt försök som är kopplad till reglerna för inaktivering från **[!UICONTROL Edit suppression rules]** -knappen. Använd det här alternativet om du vill uppdatera tröskelvärdet för nya försök för den aktuella sandlådan. [Läs mer om återförsök](retries.md).
+I vyn **[!UICONTROL Suppression list]** kan du även redigera den återförsöksparameter som är kopplad till undertryckningsreglerna från knappen **[!UICONTROL Edit suppression rules]** . Använd det här alternativet om du vill uppdatera tröskelvärdet för nya försök för den aktuella sandlådan. [Läs mer om återförsök](retries.md).
 
 
 ## Lägga till adresser och domäner i listan över undertryckningar{#add-addresses-and-domains}
@@ -105,13 +105,13 @@ Från **[!UICONTROL Suppression list]** kan du även redigera den parameter för
 
 När ett meddelande inte kan levereras till en e-postadress läggs adressen automatiskt till i listan över undertryckningar baserat på den definierade undertryckningsregeln eller studsantalet.
 
-Du kan även fylla i [!DNL Journey Optimizer] utelämningslista om du vill exkludera specifika e-postadresser och/eller domäner från din sändning.
+Du kan även fylla i listan [!DNL Journey Optimizer] manuellt om du vill utesluta vissa e-postadresser och/eller domäner från sändningen.
 
 >[!NOTE]
 >
->Det kan ta upp till 60 minuter i [!DNL Journey Optimizer] för att ta hänsyn till inaktiverade adresser i utgående e-postmeddelanden.
+>Det kan ta upp till 60 minuter för [!DNL Journey Optimizer] att ta hänsyn till inaktiverade adresser i utgående e-postmeddelanden.
 
-Du kan lägga till e-postadresser eller domäner [en åt gången](#add-one-address-or-domain), eller [i gruppläge](#upload-csv-file) via en CSV-filöverföring.
+Du kan lägga till e-postadresser eller domäner [en i taget](#add-one-address-or-domain), eller [i gruppläge](#upload-csv-file) via en CSV-filöverföring.
 
 ### Lägg till en adress eller domän {#add-one-address-or-domain}
 
@@ -130,7 +130,7 @@ Följ stegen nedan om du vill lägga till en e-postadress eller en domän i list
 
    ![](assets/suppression-list-add-email-address.png)
 
-1. Välj adresstyp: **[!UICONTROL Email]** eller **[!UICONTROL Domain]**.
+1. Välj adresstypen: **[!UICONTROL Email]** eller **[!UICONTROL Domain]**.
 
 1. Ange den e-postadress eller domän som du vill utesluta från sändningen.
 
@@ -140,7 +140,7 @@ Följ stegen nedan om du vill lägga till en e-postadress eller en domän i list
 
 1. (valfritt) Ange en orsak. Alla ASCII-utskrivbara tecken mellan 32 och 126 är tillåtna i det här fältet.
 
-1. Använd **[!UICONTROL Submit]** för att bekräfta.
+1. Använd knappen **[!UICONTROL Submit]** för att bekräfta.
 
 ### Överföra en CSV-fil {#upload-csv-file}
 
@@ -164,7 +164,7 @@ Följ stegen nedan om du vill lägga till en grupp e-postadresser eller en domä
    DOMAIN,somedomain.com,Comment
    ```
 
-1. Fyll i CSV-mallen med de e-postadresser och/eller domäner som ska läggas till i listan över utelämnanden. Alla ASCII-utskrivbara tecken mellan 32 och 126 tillåts i **KOMMENTAR** kolumn.
+1. Fyll i CSV-mallen med de e-postadresser och/eller domäner som ska läggas till i listan över utelämnanden. Alla ASCII-utskrivbara tecken mellan 32 och 126 tillåts i kolumnen **COMMENT**.
 
    >[!CAUTION]
    >
@@ -173,15 +173,15 @@ Följ stegen nedan om du vill lägga till en grupp e-postadresser eller en domä
    >Filstorleken får inte överstiga 1 MB.
    >
 
-1. När du är klar drar och släpper du CSV-filen och använder **[!UICONTROL Submit]** för att bekräfta.
+1. När du är klar drar och släpper du CSV-filen och använder knappen **[!UICONTROL Submit]** för att bekräfta.
 
    ![](assets/suppression-list-upload-csv-submit.png)
 
-När överföringen är klar kan du kontrollera dess status från [Senaste överföringar](#recent-uploads) som beskrivs nedan.
+När överföringen är klar kan du kontrollera dess status från knappen [Senaste överföringar](#recent-uploads), vilket beskrivs nedan.
 
 ### Kontrollera överföringsstatus {#recent-uploads}
 
-Använd **[!UICONTROL Recent uploads]** för att kontrollera status för de senaste överförda CSV-filerna.
+Använd knappen **[!UICONTROL Recent uploads]** för att kontrollera status för de senaste överförda CSV-filerna.
 
 ![](assets/suppression-list-recent-uploads-button.png)
 
@@ -191,9 +191,9 @@ Möjliga statusar är:
 * **[!UICONTROL Error]**: Filöverföringen misslyckades på grund av ett tekniskt fel eller ett filformatsfel.
 * **[!UICONTROL Complete]**: Filöverföringen har slutförts.
 
-Om vissa adresser inte har rätt format läggs de inte till i [!DNL Journey Optimizer] lista över inaktiveringar.
+Om vissa adresser inte har rätt format läggs de inte till i listan [!DNL Journey Optimizer] under överföringen.
 
-När överföringen är klar kopplas den då till en rapport. Du kan ladda ned den för att kontrollera de fel som uppstått<!-- and understand why they were not added to the suppression list-->.
+När överföringen är klar kopplas den då till en rapport. Du kan hämta den för att kontrollera de fel som påträffats <!-- and understand why they were not added to the suppression list-->.
 
 ![](assets/suppression-list-recent-uploads-report.png)
 
@@ -213,9 +213,9 @@ Domain,!examplecom,MANUAL,Invalid format for value: !examplecom
 
 Du kan uppdatera listan för inaktivering manuellt. Att ta bort en e-postadress från karantän är en känslig åtgärd som kan påverka IP-anseendet och leveransfrekvensen. Var noga med att fortsätta med försiktighet.
 
-När du tar bort en e-postadress eller en domän från listan över inaktiveringar kan Adobe Journey Optimizer börja leverera till den här adressen eller domänen igen.  Läs mer om slutprodukter i [det här avsnittet](../reports/deliverability.md).
+När du tar bort en e-postadress eller en domän från listan över inaktiveringar kan Adobe Journey Optimizer börja leverera till den här adressen eller domänen igen.  Läs mer om levererbarhet i [det här avsnittet](../reports/deliverability.md).
 
-Om du vill ta bort en adress från listan kan du använda **[!UICONTROL Delete]** -knappen.
+Använd knappen **[!UICONTROL Delete]** om du vill ta bort en adress från listan.
 
 ![](assets/suppression-list-delete.png)
 
@@ -226,13 +226,13 @@ Om du vill ta bort en adress från listan kan du använda **[!UICONTROL Delete]*
 
 Om en Internet-leverantör till exempel har ett avbrott markeras e-post felaktigt som fasta studsar eftersom de inte kan levereras till mottagaren. Dessa e-postadresser måste tas bort från listan över inaktiveringar.
 
-Om du vill hämta adresserna kör du en specifik fråga med anpassade parametrar, baserat på driftstoppets kontext. [Läs mer i det här exemplet](../data/datasets-query-examples.md#isp-outage-query).
+Om du vill hämta adresserna kör du en specifik fråga med anpassade parametrar, baserat på driftstoppets kontext. [Läs mer i exemplet](../data/datasets-query-examples.md#isp-outage-query).
 
-När de berörda e-postadresserna har identifierats kan du filtrera listan så att de visas. Exempel: ett avbrott i en Internet-leverantör inträffar från 11 november 2022 till 13 november 2022 på **test.com** domän, filtrera adresserna som lagts till i listan under tidsramen enligt nedan:
+När de berörda e-postadresserna har identifierats kan du filtrera listan så att de visas. Om ett ISP-avbrott inträffar från 11 nov 2022 till 13 nov 2022 i domänen **test.com** kan du filtrera adresserna som lagts till i listan under tidsramen enligt nedan:
 
 ![](assets/remove-from-supp-list.png)
 
-Du kan sedan ta bort e-postadresser i karantän från listan över inaktiveringar med hjälp av **[!UICONTROL Delete]** -knappen.
+Du kan sedan ta bort e-postadresser i karantän från listan över inaktiveringar med knappen **[!UICONTROL Delete]**.
 
 ## Hämta listan över inaktiveringar {#download-suppression-list}
 

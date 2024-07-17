@@ -23,9 +23,9 @@ ht-degree: 7%
 >title="Vänta på aktivitet"
 >abstract="Om du vill vänta innan du kör nästa aktivitet i sökvägen kan du använda en Wait-aktivitet. Du kan definiera tidpunkten då nästa aktivitet ska köras. Det finns två alternativ: duration och anpassad."
 
-Du kan använda en **[!UICONTROL Wait]** aktivitet som definierar en varaktighet innan nästa aktivitet körs.  Maximal väntetid är **90 dagar**.
+Du kan använda en **[!UICONTROL Wait]**-aktivitet för att definiera en varaktighet innan du kör nästa aktivitet.  Maximal väntetid är **90 dagar**.
 
-Du kan ange två typer av **Vänta** aktivitet:
+Du kan ange två typer av **Wait**-aktivitet:
 
 * En väntetid baserad på en relativ längd. [Läs mer](#duration)
 * Ett anpassat datum som använder funktioner för att beräkna det. [Läs mer](#custom)
@@ -39,23 +39,23 @@ Du kan ange två typer av **Vänta** aktivitet:
 
 ### Flera väntande aktiviteter {#multiple-wait-activities}
 
-Vid användning av flera **Vänta** ska du vara medveten om att [global timeout](journey-properties.md#global_timeout) för resor är 91 dagar, vilket innebär att profiler alltid utesluts från resan högst 91 dagar efter att de passerat in i den. Läs mer på [den här sidan](journey-properties.md#global_timeout).
+När du använder flera **Wait**-aktiviteter på en resa ska du vara medveten om att den [globala tidsgränsen](journey-properties.md#global_timeout) för resor är 91 dagar, vilket innebär att profiler alltid tas bort från resan högst 91 dagar efter att de har registrerat sig. Läs mer på [den här sidan](journey-properties.md#global_timeout).
 
-En individ kan ange en **Vänta** endast om de har tillräckligt med tid kvar på resan för att slutföra väntetiden före timeout för 91-dagarsresan.
+En individ kan bara ange en **Wait**-aktivitet om han eller hon har tillräckligt med tid kvar på resan för att slutföra väntetiden innan tidsgränsen på 91 dagars resa har uppnåtts.
 
 ### Vänta och återinträde {#wait-re-entrance}
 
-En god vana att inte använda **Vänta** aktiviteter för att blockera återinträde. Använd i stället **Tillåt återinträde** på egenskapsnivå för resan. Läs mer på [den här sidan](../building-journeys/journey-properties.md#entrance).
+Det är en god vana att inte använda **Wait**-aktiviteter för att blockera återinträde. Använd i stället alternativet **Tillåt återinträde** på resans egenskapsnivå. Läs mer på [den här sidan](../building-journeys/journey-properties.md#entrance).
 
 ### Vänta- och testläge {#wait-test-modd}
 
-I testläge **[!UICONTROL Wait time in test]** kan du definiera tiden för varje **Vänta** aktiviteten varar. Den förinställda tiden är tio sekunder. Detta säkerställer att du får testresultaten snabbt. Läs mer på [den här sidan](../building-journeys/testing-the-journey.md).
+I testläge kan du med parametern **[!UICONTROL Wait time in test]** definiera den tid som varje **Wait** -aktivitet ska hålla. Den förinställda tiden är tio sekunder. Detta säkerställer att du får testresultaten snabbt. Läs mer på [den här sidan](../building-journeys/testing-the-journey.md).
 
 ## Konfiguration {#wait-configuration}
 
 ### Väntetid {#duration}
 
-Välj **Varaktighet** typ för att ange den relativa väntetiden innan nästa aktivitet körs. Den maximala längden är **90 dagar**.
+Välj typen **Varaktighet** om du vill ange den relativa väntetiden innan nästa aktivitet körs. Maximala längden är **90 dagar**.
 
 ![Definiera väntetiden](assets/journey55.png)
 
@@ -70,20 +70,20 @@ Select the date for the execution of the next activity.
 
 ### Anpassad väntetid {#custom}
 
-Välj **Egen** typ för att definiera ett anpassat datum, med hjälp av ett avancerat uttryck som baseras på ett fält som kommer från en händelse eller ett anpassat åtgärdssvar. Du kan inte definiera en relativ varaktighet direkt, till exempel 7 dagar, men du kan använda funktioner för att beräkna den om det behövs (till exempel 2 dagar efter köpet).
+Välj typen **Egen** om du vill definiera ett anpassat datum, med hjälp av ett avancerat uttryck som baseras på ett fält som kommer från en händelse eller ett anpassat åtgärdssvar. Du kan inte definiera en relativ varaktighet direkt, till exempel 7 dagar, men du kan använda funktioner för att beräkna den om det behövs (till exempel 2 dagar efter köpet).
 
 ![Definiera en anpassad väntan med ett uttryck](assets/journey57.png)
 
-Uttrycket i redigeraren ska innehålla en `dateTimeOnly` format. Se [den här sidan](expression/expressionadvanced.md). Mer information om formatet dateTimeOnly finns i [den här sidan](expression/data-types.md).
+Uttrycket i redigeraren ska ha formatet `dateTimeOnly`. Se [den här sidan](expression/expressionadvanced.md). Mer information om formatet dateTimeOnly finns på [den här sidan](expression/data-types.md).
 
-Det bästa sättet är att använda anpassade datum som är specifika för dina profiler och undvika att använda samma datum för alla. Definiera till exempel inte `toDateTimeOnly('2024-01-01T01:11:00Z')` men snarare `toDateTimeOnly(@event{Event.productDeliveryDate})` som är specifik för varje profil. Tänk på att användning av fasta datum kan orsaka problem vid körningen av din resa.
+Det bästa sättet är att använda anpassade datum som är specifika för dina profiler och undvika att använda samma datum för alla. Definiera till exempel inte `toDateTimeOnly('2024-01-01T01:11:00Z')` utan `toDateTimeOnly(@event{Event.productDeliveryDate})` som är specifik för varje profil. Tänk på att användning av fasta datum kan orsaka problem vid körningen av din resa.
 
 
 >[!NOTE]
 >
->Du kan använda `dateTimeOnly` uttryck eller använda en funktion för att konvertera till `dateTimeOnly`. Till exempel: `toDateTimeOnly(@event{Event.offerOpened.activity.endTime})`, fältet i händelse av formatet 2023-08-12T09:46:06Z.
+>Du kan utnyttja ett `dateTimeOnly`-uttryck eller använda en funktion för att konvertera till en `dateTimeOnly`. Till exempel: `toDateTimeOnly(@event{Event.offerOpened.activity.endTime})`, fältet i händelsen har formatet 2023-08-12T09:46:06Z.
 >
->The **tidszon** är förväntat i egenskaperna för din resa. Därför är det inte möjligt att direkt peka från användargränssnittet vid en fullständig ISO-8601-tidsstämpelblandningstid och tidszonsförskjutning som 2023-08-12T09:46:6.982-05. [Läs mer](../building-journeys/timezone-management.md).
+>**Tidszonen** förväntas i egenskaperna för din resa. Därför är det inte möjligt att direkt peka från användargränssnittet vid en fullständig ISO-8601-tidsstämpelblandningstid och tidszonsförskjutning som 2023-08-12T09:46:06.982-05. [Läs mer](../building-journeys/timezone-management.md).
 
 
 Om du vill verifiera att vänteaktiviteten fungerar som förväntat kan du använda steghändelser. [Läs mer](../reports/query-examples.md#common-queries).

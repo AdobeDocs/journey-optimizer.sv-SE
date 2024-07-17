@@ -19,9 +19,9 @@ ht-degree: 0%
 
 Den villkorliga instruktionen (if, then, else) stöds i den avancerade redigeraren. Det gör det möjligt att definiera mer komplexa uttryck. Den består av följande element:
 
-* **[!UICONTROL if]**: det villkor som ska utvärderas först.
-* **[!UICONTROL then]**: det uttryck som ska utvärderas om resultatet av villkorsutvärderingen är sant.
-* **[!UICONTROL else]**: det uttryck som ska utvärderas om resultatet av villkorsutvärderingen är false.
+* **[!UICONTROL if]**: villkoret som ska utvärderas först.
+* **[!UICONTROL then]**: uttrycket som ska utvärderas om resultatet av villkorsutvärderingen är sant.
+* **[!UICONTROL else]**: uttrycket som ska utvärderas om resultatet av villkorsutvärderingen är false.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ else
    (<expression3>)
 ```
 
-`<expression1>` måste returnera en **boolesk**.
+`<expression1>` måste returnera **boolesk**.
 
 `<expression2>` och `<expression3>` måste ha samma typ eller kompatibla typer. De signaturer och returtyper som stöds är:
 

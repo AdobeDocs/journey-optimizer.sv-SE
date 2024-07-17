@@ -8,20 +8,20 @@ level: Experienced
 exl-id: 6990918c-e736-4f28-9ac6-9ac3101b069f
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '143'
 ht-degree: 4%
 
 ---
 
 # Uppdatera en placering {#update-placement}
 
-Du kan ändra eller uppdatera en placering genom att göra en PATCH-förfrågan till [!DNL Offer Library] API.
+Du kan ändra eller uppdatera en placering genom att göra en PATCH-begäran till API:t för [!DNL Offer Library].
 
-Mer information om JSON Patch, inklusive tillgängliga åtgärder, finns i [JSON Patch-dokumentation](https://jsonpatch.com/).
+Mer information om JSON Patch, inklusive tillgängliga åtgärder, finns i den officiella [JSON Patch-dokumentationen](https://jsonpatch.com/).
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
-I följande tabell visas giltiga värden som utgör *Content-Type* fält i begärandehuvudet:
+I följande tabell visas giltiga värden som utgör fältet *Content-Type* i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
@@ -63,13 +63,13 @@ curl -X PATCH 'https://platform.adobe.io/data/core/dps/placements/offerPlacement
 
 | Parameter | Beskrivning |
 | --------- | ----------- |
-| `op` | Åtgärdsanropet som används för att definiera den åtgärd som krävs för att uppdatera anslutningen. Åtgärderna omfattar: `add`, `replace`, `remove`, `copy` och `test`. |
+| `op` | Åtgärdsanropet som används för att definiera den åtgärd som krävs för att uppdatera anslutningen. Åtgärderna är: `add`, `replace`, `remove`, `copy` och `test`. |
 | `path` | Sökvägen till den parameter som ska uppdateras. |
 | `value` | Det nya värdet som du vill uppdatera parametern med. |
 
 **Svar**
 
-Ett godkänt svar returnerar de uppdaterade detaljerna om placeringen, inklusive dess unika placering `id`.
+Ett godkänt svar returnerar de uppdaterade detaljerna för placeringen, inklusive den unika placeringen `id`.
 
 ```json
 {

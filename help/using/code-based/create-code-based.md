@@ -15,9 +15,9 @@ ht-degree: 1%
 
 # Skapa kodbaserade upplevelser {#create-code-based}
 
-Ingår [!DNL Journey Optimizer] kan ni bara skapa kodbaserade upplevelser i **kampanjer**.
+I [!DNL Journey Optimizer] kan du för närvarande bara skapa kodbaserade upplevelser i **kampanjer**.
 
-Specifika skyddsutkast och rekommendationer för kodbaserade upplevelser finns i [den här sidan](code-based-prerequisites.md).
+Specifika skyddsutkast och rekommendationer för kodbaserade upplevelser finns på [den här sidan](code-based-prerequisites.md).
 
 ## Skapa en kodbaserad kampanj {#create-code-based-campaign}
 
@@ -25,7 +25,7 @@ Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampa
 
 1. Skapa en kampanj. [Läs mer](../campaigns/create-campaign.md)
 
-1. Välj **[!UICONTROL Code-based experience]** åtgärd.
+1. Välj åtgärden **[!UICONTROL Code-based experience]**.
 
 1. Ange den kodbaserade upplevelseytan. [Läs mer](#surface-definition)
 
@@ -37,7 +37,7 @@ Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampa
 
 1. Välj **[!UICONTROL Create]**.
 
-1. Slutför stegen för att skapa en kampanj, t.ex. kampanjegenskaperna, [publik](../audience/about-audiences.md)och [schema](../campaigns/create-campaign.md#schedule). Mer information om hur du konfigurerar en kampanj finns i [den här sidan](../campaigns/get-started-with-campaigns.md).
+1. Slutför stegen för att skapa en kampanj, till exempel kampanjegenskaperna, [målgrupp](../audience/about-audiences.md) och [schema](../campaigns/create-campaign.md#schedule). Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../campaigns/get-started-with-campaigns.md).
 
 1. Redigera ditt innehåll med personaliseringsredigeraren. [Läs mer](#edit-code)
 
@@ -51,11 +51,11 @@ Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampa
 >abstract="Infoga och redigera koden som du vill leverera som en del av den här kodbaserade upplevelseåtgärden."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/expression-editor/personalization-build-expressions.html" text="Kom igång med personaliseringsredigeraren"
 
-1. Välj **[!UICONTROL Edit code]**.
+1. Välj **[!UICONTROL Edit code]** på skärmen för kampanjversionen.
 
    ![](assets/code-based-campaign-edit-code.png)
 
-1. The [personaliseringsredigerare](../personalization/personalization-build-expressions.md) öppnas. Det är ett gränssnitt för att skapa icke-visuella upplevelser som gör att du kan skapa koden.
+1. [Anpassningsredigeraren](../personalization/personalization-build-expressions.md) öppnas. Det är ett gränssnitt för att skapa icke-visuella upplevelser som gör att du kan skapa koden.
 
 1. Du kan växla mellan redigeringsläget HTML och JSON, och vice versa.
 
@@ -65,13 +65,13 @@ Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampa
    >
    >Om du ändrar redigeringsläget förlorar du all aktuell kod, så se till att växla läge innan du börjar redigera.
 
-1. Ange koden efter behov. Du kan använda [!DNL Journey Optimizer] personaliseringsredigerare med alla dess funktioner för personalisering och redigering. [Läs mer](../personalization/personalization-build-expressions.md)
+1. Ange koden efter behov. Du kan utnyttja personaliseringsredigeraren [!DNL Journey Optimizer] med alla dess funktioner för personalisering och redigering. [Läs mer](../personalization/personalization-build-expressions.md)
 
-1. Du kan lägga till HTML eller JSON-uttrycksfragment om det behövs. [Lär dig mer](../personalization/use-expression-fragments.md)
+1. Du kan lägga till HTML eller JSON-uttrycksfragment om det behövs. [Lär dig hur](../personalization/use-expression-fragments.md)
 
-   Du kan också spara en del av kodinnehållet som fragment. [Lär dig mer](../content-management/fragments.md#save-as-expression-fragment)
+   Du kan också spara en del av kodinnehållet som fragment. [Lär dig hur](../content-management/fragments.md#save-as-expression-fragment)
 
-1. I kodbaserade kampanjer kan ni använda funktionen för upplevelsebeslut. Välj **[!UICONTROL Decisions]** ikonen från det vänstra fältet och klicka på **[!UICONTROL Create decision]**. [Läs mer](../experience-decisioning/create-decision.md)
+1. I kodbaserade kampanjer kan ni använda funktionen för upplevelsebeslut. Välj ikonen **[!UICONTROL Decisions]** i det vänstra fältet och klicka på **[!UICONTROL Create decision]**. [Läs mer](../experience-decisioning/create-decision.md)
 
    ![](assets/code-based-campaign-create-decision.png)
 
@@ -80,7 +80,7 @@ Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampa
    >Experience Decision är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
 
-1. Klicka **[!UICONTROL Save and close]** för att bekräfta dina ändringar.
+1. Klicka på **[!UICONTROL Save and close]** för att bekräfta ändringarna.
 
 Så snart utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll för den valda ytan tillämpas ändringarna på din webbsida eller app.
 
@@ -91,17 +91,17 @@ Så snart utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll f�
 >title="Förgranska din kodbaserade upplevelse"
 >abstract="Få en simulering av hur er kodbaserade upplevelse kommer att se ut."
 
-Följ stegen nedan för att visa en förhandsgranskning av din ändrade kodbaserade upplevelse. Detaljerad information om hur du väljer testprofiler och förhandsgranskar innehållet finns i [Förhandsgranska och testa din innehållssida](../content-management/preview-test.md).
+Följ stegen nedan för att visa en förhandsgranskning av din ändrade kodbaserade upplevelse. Detaljerad information om hur du väljer testprofiler och förhandsgranskar ditt innehåll finns på [Förhandsgranska och testa din innehållssida](../content-management/preview-test.md).
 
 >[!CAUTION]
 >
->Du måste ha testprofiler tillgängliga för att simulera vilka erbjudanden som ska levereras till dem. Lär dig hur [skapa testprofiler](../audience/creating-test-profiles.md).
+>Du måste ha testprofiler tillgängliga för att simulera vilka erbjudanden som ska levereras till dem. Lär dig hur du [skapar testprofiler](../audience/creating-test-profiles.md).
 
-1. Välj **[!UICONTROL Simulate content]**.
+1. Välj **[!UICONTROL Simulate content]** i anpassningsredigeraren eller på skärmen för att redigera innehåll.
 
    ![](assets/code-based-campaign-simulate.png)
 
-1. Klicka **[!UICONTROL Manage test profiles]** om du vill välja en eller flera testprofiler.
+1. Klicka på **[!UICONTROL Manage test profiles]** för att välja en eller flera testprofiler.
 
 1. En förhandsgranskning av den ändrade kodbaserade upplevelsen visas.
 
@@ -114,13 +114,13 @@ Följ stegen nedan för att visa en förhandsgranskning av din ändrade kodbaser
 
 ## Aktivera den kodbaserade kampanjen {#activate-code-based-campaign}
 
-När du har definierat din kodbaserade kampanj och redigerat innehållet som du vill med [kodbaserad redigerare](#edit-code)kan du granska och aktivera den. Följ stegen nedan.
+När du har definierat din kodbaserade kampanj och redigerat innehållet som du vill med den [kodbaserade redigeraren](#edit-code) kan du granska och aktivera den. Följ stegen nedan.
 
 >[!NOTE]
 >
 >Du kan också förhandsgranska kampanjinnehållet innan du aktiverar det. [Läs mer](#test-code-based-campaign)
 
-1. Välj **[!UICONTROL Review to activate]**.
+1. Välj **[!UICONTROL Review to activate]** från din kodbaserade kampanj.
 
    ![](assets/code-based-campaign-review.png)
 
@@ -132,17 +132,17 @@ När du har definierat din kodbaserade kampanj och redigerat innehållet som du 
 
    >[!NOTE]
    >
-   >När du klickat **[!UICONTROL Activate]** kan det ta upp till en minut innan kodbaserade kampanjändringar blir tillgängliga live på er plats.
+   >När du har klickat på **[!UICONTROL Activate]** kan det ta upp till en minut innan kodbaserade kampanjändringar är tillgängliga direkt på din plats.
 
-Din kodbaserade kampanj tar **[!UICONTROL Live]** och nu visas för den valda publiken. Alla mottagare av kampanjen kan se dina ändringar.
+Din kodbaserade kampanj har statusen **[!UICONTROL Live]** och är nu synlig för den valda målgruppen. Alla mottagare av kampanjen kan se dina ändringar.
 
 >[!NOTE]
 >
->Om du har definierat ett schema för din kodbaserade kampanj har den **[!UICONTROL Scheduled]** status tills startdatumet och starttiden nås.
+>Om du har definierat ett schema för den kodbaserade kampanjen har den statusen **[!UICONTROL Scheduled]** tills startdatumet och starttiden nås.
 >
 >Om du aktiverar en kodbaserad kampanj som påverkar samma platser som en annan kampanj som redan är aktiv, tillämpas alla ändringar på dina platser.
 
-Läs mer om att aktivera kampanjer i [det här avsnittet](../campaigns/review-activate-campaign.md).
+Läs mer om hur du aktiverar kampanjer i [det här avsnittet](../campaigns/review-activate-campaign.md).
 
 ## Stoppa en kodbaserad kampanj {#stop-code-based-campaign}
 
@@ -150,7 +150,7 @@ När en kodbaserad kampanj är aktiv kan ni stoppa den för att hindra publiken 
 
 1. Välj en livekampanj i listan.
 
-1. I den övre menyn väljer du **[!UICONTROL Stop campaign]**.
+1. Välj **[!UICONTROL Stop campaign]** på den översta menyn.
 
    ![](assets/code-based-campaign-stop.png)
 
@@ -168,26 +168,26 @@ Globala rapporter visar händelser som inträffade för minst två timmar sedan 
 
 ### Kodbaserad live-rapport {#live-report-code-based}
 
-Från er kampanj **[!UICONTROL Live report]**, **[!UICONTROL Code-based experience]** -fliken innehåller information om huvudinformationen i förhållande till dina program eller webbsidor. [Läs mer i live-rapporten](../reports/campaign-live-report.md)
+Från din kampanj **[!UICONTROL Live report]** anger fliken **[!UICONTROL Code-based experience]** huvudinformationen i förhållande till dina appar eller webbsidor. [Läs mer i live-rapporten](../reports/campaign-live-report.md)
 
 +++Läs mer om de olika mätvärden och widgetar som är tillgängliga för den kodbaserade upplevelserapporten.
 
-The **[!UICONTROL Code-based experience performance]** KPI:er detaljerar den viktigaste informationen i relation till besökarnas engagemang med era kodbaserade upplevelser, som:
+KPI:erna för **[!UICONTROL Code-based experience performance]** detaljerar huvudinformationen i relation till besökarnas engagemang med dina kodbaserade upplevelser, som:
 
-* **[!UICONTROL Impressions]**: totalt antal upplevelser som levereras till alla användare.
+* **[!UICONTROL Impressions]**: Totalt antal upplevelser som levereras till alla användare.
 
 * **[!UICONTROL Interactions]**: totalt antal ärenden för din app/sida. Detta inkluderar alla åtgärder som användaren utför, t.ex. klickningar eller andra interaktioner.
 
-The **[!UICONTROL Code-based experience summary]** diagram visar hur upplevelserna har utvecklats (visningar, unika intryck och interaktioner) de senaste 24 timmarna.
+Diagrammet **[!UICONTROL Code-based experience summary]** visar hur dina upplevelser har utvecklats (visningar, unika visningar och interaktioner) de senaste 24 timmarna.
 
 <!--The **[!UICONTROL Interactions by element]** table details the main information relative to your visitors' engagement with the various elements on your app/pages.-->
 +++
 
 ### Kodbaserad global rapport {#global-report-code-based}
 
-Kodbaserad global kampanjrapport kan nås direkt från din kampanj med **[!UICONTROL View report]** -knappen. [Läs mer om global rapport](../reports/campaign-global-report.md)
+Kodbaserad global kampanjrapport kan nås direkt från din kampanj med knappen **[!UICONTROL View report]**. [Läs mer om global rapport](../reports/campaign-global-report.md)
 
-Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Code-based experience]** -fliken innehåller information om huvudinformationen i förhållande till dina program eller webbsidor.
+Från din kampanj **[!UICONTROL Global report]** anger fliken **[!UICONTROL Code-based experience]** huvudinformationen i förhållande till dina appar eller webbsidor.
 
 ![](assets/code-based-campaign-global-report.png)
 
@@ -195,15 +195,15 @@ Från er kampanj **[!UICONTROL Global report]**, **[!UICONTROL Code-based experi
 
 +++Läs mer om de olika mätvärden och widgetar som är tillgängliga för den kodbaserade upplevelserapporten.
 
-The **[!UICONTROL Code-based experience performance]** Nyckeltal anger den viktigaste informationen i relation till besökarnas engagemang i era upplevelser, till exempel:
+KPI:erna för **[!UICONTROL Code-based experience performance]** detaljerar huvudinformationen i relation till besökarnas engagemang med dina upplevelser, som:
 
-* **[!UICONTROL Unique impressions]**: antal unika användare som upplevelsen levererades till.
+* **[!UICONTROL Unique impressions]**: antal unika användare som upplevelsen har levererats till.
 
-* **[!UICONTROL Impressions]**: totalt antal upplevelser som levereras till alla användare.
+* **[!UICONTROL Impressions]**: Totalt antal upplevelser som levereras till alla användare.
 
-* **[!UICONTROL Interactions]**: procent av engagemanget med din app/sida. Detta inkluderar alla åtgärder som användaren utför, t.ex. klickningar eller andra interaktioner.
+* **[!UICONTROL Interactions]**: procentandel av engagemang med din app/sida. Detta inkluderar alla åtgärder som användaren utför, t.ex. klickningar eller andra interaktioner.
 
-The **[!UICONTROL Code-based experience summary]** diagram visar hur era upplevelser har utvecklats (unika intryck, visningar och interaktioner) under den aktuella perioden.
+Diagrammet **[!UICONTROL Code-based experience summary]** visar hur dina upplevelser har utvecklats (unika intryck, visningar och interaktioner) under den aktuella perioden.
 
 <!--The **[!UICONTROL Interactions by element]** table details the main information relative to your visitors' engagement with the various elements on your apps/pages.-->
 +++

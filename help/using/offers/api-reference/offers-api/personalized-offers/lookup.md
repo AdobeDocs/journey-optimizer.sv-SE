@@ -9,7 +9,7 @@ exl-id: 2e30b155-688b-432b-a703-d09de12ebdfd
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '102'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Ett personaliserat erbjudande är ett anpassningsbart marknadsföringsmeddelande som baseras på regler och begränsningar för behörighet.
 
-Du kan slå upp specifika personliga erbjudanden genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller det anpassade erbjudande-ID:t i sökvägen till begäran.
+Du kan slå upp specifika anpassade erbjudanden genom att göra en GET-förfrågan till [!DNL Offer Library]-API:t som innehåller det anpassade erbjudande-ID:t i förfrågningssökvägen.
 
 **API-format**
 
@@ -43,7 +43,7 @@ curl -X GET 'https://platform.adobe.io/data/core/dps/offers/personalizedOffer123
 
 **Svar**
 
-Ett lyckat svar returnerar detaljerna om det personaliserade erbjudandet inklusive information om ditt unika personliga erbjudande `id`.
+Ett svar returnerar information om det personliga erbjudandet, inklusive information om ditt unika personliga erbjudande `id`.
 
 ```json
 {

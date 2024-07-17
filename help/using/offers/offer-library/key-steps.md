@@ -9,7 +9,7 @@ exl-id: e375fd3a-b10d-45f4-a95b-ceb48116e841
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '346'
-ht-degree: 10%
+ht-degree: 8%
 
 ---
 
@@ -19,17 +19,17 @@ Nedan beskrivs de viktigaste stegen för att skapa, konfigurera och hantera erbj
 
 ![](../assets/offer-create-manage-process.png)
 
-Ett komplett exempel som visar hur man konfigurerar erbjudanden får du om du använder dem i ett beslut och använder det i ett e-postmeddelande. [den här sidan](../offers-e2e.md).
+Ett fullständigt exempel från början till slut som visar hur du konfigurerar erbjudanden får du om du använder dem i ett beslut och använder det här beslutet i ett e-postmeddelande. Läs [den här sidan](../offers-e2e.md).
 
 ## Skapa komponenter {#create-components}
 
 Innan du börjar skapa erbjudanden måste du definiera flera komponenter som du ska använda i dina erbjudanden.
 
-1. **Skapa placeringar**, som är behållare som används för att visa upp dina erbjudanden. Du kan till exempel skapa en placering som är dedikerad till erbjudanden i endast bildformatet och som ligger högst upp i dina meddelanden.
+1. **Skapa placeringar**, som är behållare som ska användas för att visa upp dina erbjudanden. Du kan till exempel skapa en placering som är dedikerad till erbjudanden i endast bildformatet och som ligger högst upp i dina meddelanden.
 
-1. **Skapa beslutsregler** som anger villkoren för hur anbuden ska presenteras.
+1. **Skapa beslutsregler** som anger villkoren som erbjudandena presenteras under.
 
-1. **Skapa samlingskvalificerare** (kallades tidigare&quot;taggar&quot;) som du kopplar till erbjudandena, så att du enkelt kan ordna och söka efter dem i biblioteket.
+1. **Skapa samlingskvalificerare** (kallas tidigare&quot;taggar&quot;) som du kopplar till erbjudandena så att du enkelt kan ordna och söka efter dem i biblioteket.
 
 1. Om du vill definiera regler som avgör vilket erbjudande som ska presenteras först för en viss placering (i stället för att ta hänsyn till offertens prioritetspoäng), kan du **skapa en rankningsformel**.
 
@@ -71,7 +71,7 @@ Innan du börjar skapa erbjudanden måste du definiera flera komponenter som du 
 
 1. **Skapa reserverbjudanden**, som är det sista erbjudandet som visas om kunderna inte är berättigade till något av de valda erbjudandena.
 
-1. **Skapa en samling** för att inkludera de personaliserade erbjudanden ni skapat och använda dem i ett beslut.
+1. **Skapa en samling** för att inkludera de anpassade erbjudanden du har skapat och använda dem i ett beslut.
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
@@ -101,11 +101,11 @@ Innan du börjar skapa erbjudanden måste du definiera flera komponenter som du 
 
 ## Skapa och konfigurera beslut {#create-and-configure-decisions}
 
-1. **Skapa ett beslut** som kombinerar placeringar med personaliserade erbjudanden och reserverbjudanden. Den här kombinationen används av beslutsmotorn för att hitta det bästa erbjudandet för en viss profil.
+1. **Skapa ett beslut** som kombinerar ersättningar med personaliserade erbjudanden och reserverbjudanden. Den här kombinationen används av beslutsmotorn för att hitta det bästa erbjudandet för en viss profil.
 
 1. **Konfigurera beslutet**. Om du vill göra det markerar du placeringarna och för varje placering väljer du en samling och en reserv.
 
-1. Om det behövs kan du **tilldela en rankningsformel** till en placering när beslutet konfigureras.
+1. Vid behov kan du **tilldela en rankningsformel** till en placering när du konfigurerar beslutet.
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">

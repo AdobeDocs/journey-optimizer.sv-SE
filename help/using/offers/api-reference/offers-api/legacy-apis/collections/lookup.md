@@ -9,7 +9,7 @@ exl-id: 91317c46-d8b6-456e-8282-aef1169941af
 source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
 workflow-type: tm+mt
 source-wordcount: '176'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Samlingar är delmängder av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare, t.ex. erbjudandets kategori.
 
-Du kan söka efter specifika samlingar genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller antingen samlingen `@id` eller namnet på samlingen i sökvägen för begäran.
+Du kan söka efter specifika samlingar genom att göra en GET-förfrågan till [!DNL Offer Library]-API:t som innehåller antingen samlingen `@id` eller namnet på samlingen i sökvägen för begäran.
 
 **API-format**
 
@@ -30,7 +30,7 @@ GET /{ENDPOINT_PATH}/{CONTAINER_ID}/queries/core/search?schema={SCHEMA_FILTER}&{
 | `{ENDPOINT_PATH}` | Slutpunktssökvägen för databas-API:er. | `https://platform.adobe.io/data/core/xcore/` |
 | `{CONTAINER_ID}` | Behållaren där samlingarna finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
 | `{SCHEMA_FILTER}` | Definierar det schema som är associerat med samlingar. | `https://ns.adobe.com/experience/offer-management/offer-filter;version=0.1` |
-| `id` | En sträng som matchar `@id` enheternas egenskap. Strängen matchas exakt. Parametrarna `id` och `name` kan inte användas tillsammans. | `xcore:offer-filter:124bd44648f17ec1` |
+| `id` | En sträng som används för att matcha egenskapen `@id` för entiteterna. Strängen matchas exakt. Parametrarna `id` och `name` kan inte användas tillsammans. | `xcore:offer-filter:124bd44648f17ec1` |
 | `name` | En sträng som används för att matcha egenskapen xdm:name för entiteterna. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametrarna `id` och `name` kan inte användas tillsammans | `Mobile demo` |
 
 **Begäran**
@@ -47,7 +47,7 @@ curl -X GET \
 
 **Svar**
 
-Ett godkänt svar returnerar information om placeringen inklusive information om ditt behållar-ID, instans-ID och unik samling `@id`.
+Ett lyckat svar returnerar information om placeringen, inklusive information om ditt behållar-ID, instans-ID och den unika samlingen `@id`.
 
 ```json
 {

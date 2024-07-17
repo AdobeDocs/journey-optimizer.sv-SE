@@ -11,8 +11,8 @@ keywords: subdomain, google, txt, record, gmail, deliverability
 exl-id: 311eb2d1-e445-43e6-bc2c-c6288b637f47
 source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 10%
+source-wordcount: '201'
+ht-degree: 7%
 
 ---
 
@@ -25,18 +25,18 @@ ht-degree: 10%
 
 TXT-poster är en typ av DNS-post som används för att tillhandahålla textinformation om en domän, som kan läsas av externa källor.
 
-För att säkerställa optimal leverans och framgångsrik leverans av e-post till Gmail-adresser, [!DNL Journey Optimizer] Med kan du lägga till särskilda TXT-poster för verifiering av Google-webbplatser i din underdomän för att kontrollera att den är verifierad.
+För att säkerställa optimal leverans och korrekt leverans av e-post till Gmail-adresser kan du med [!DNL Journey Optimizer] lägga till särskilda TXT-poster för verifiering av Google-webbplatser i din underdomän för att se till att den är verifierad.
 
 >[!CAUTION]
 >
-> Den här åtgärden kan bara utföras när en underdomän har **[!UICONTROL Success]** status. Mer information om underdomänernas status finns i [det här avsnittet](about-subdomain-delegation.md#access-delegated-subdomains).
+> Den här åtgärden kan bara utföras när en underdomän har statusen **[!UICONTROL Success]**. Mer information om underdomäners status finns i [det här avsnittet](about-subdomain-delegation.md#access-delegated-subdomains).
 
 Så här lägger du till en Google TXT-post i din underdomän:
 
-1. Öppna underdomänen från **[!UICONTROL Channels]** / **[!UICONTROL Subdomains]** -menyn.
+1. Öppna underdomänen från menyn **[!UICONTROL Channels]** / **[!UICONTROL Subdomains]**.
 
-1. I **[!UICONTROL Google txt record]** anger du verifieringskoden som genereras från [Google Workspace](https://support.google.com/a/answer/183895){target="_blank"}<!--G Suite Admin tools-->och sedan klicka **[!UICONTROL Save]**.
+1. I avsnittet **[!UICONTROL Google txt record]** anger du den verifieringskod som har genererats från [Google Workspace](https://support.google.com/a/answer/183895){target="_blank"}<!--G Suite Admin tools--> och klickar sedan på **[!UICONTROL Save]**.
 
    ![](assets/subdomain-google-txt.png)
 
-1. När TXT-posten har lagts till måste den verifieras av Google. Om du vill göra det går du till [Google Workspace](https://support.google.com/a/answer/183895){target="_blank"}<!--G Suite Admin tools-->startar du sedan verifieringssteget.
+1. När TXT-posten har lagts till måste den verifieras av Google. Navigera till [Google Workspace](https://support.google.com/a/answer/183895){target="_blank"}<!--G Suite Admin tools--> och starta sedan verifieringssteget.

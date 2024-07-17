@@ -10,7 +10,7 @@ keywords: plattform, datasjön, skapa, sjö, datamängder, profil
 exl-id: 66b5c691-ddc4-4e9b-9386-2ce6c307451c
 source-git-commit: e45ec5f0e1bbcc73892f9cde5923627886f44ef6
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '867'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Genom att exportera dina data regelbundet kan ni säkerställa att ni har en ful
 
 ## Tillgängliga molnlagringsdestinationer {#destinations}
 
-Du kan exportera datauppsättningar till sex molnlagringsmål som är tillgängliga från **[!UICONTROL Destinations]** -menyn på **[!UICONTROL Catalog]** -fliken.
+Du kan exportera datauppsättningar till sex molnlagringsmål som är tillgängliga på menyn **[!UICONTROL Destinations]** på fliken **[!UICONTROL Catalog]**.
 
 ![](assets/dataset-export-setup.png)
 
@@ -31,9 +31,9 @@ Du kan exportera datauppsättningar till sex molnlagringsmål som är tillgängl
 Mer information om respektive mål finns i Adobe Experience Platform-dokumentationen:
 
 * [Amazon S3](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3.html)
-* [Azure Blob](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob.html)
+* [Azure-blob](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob.html)
 * [Azure Data Lake Gen 2](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/adls-gen2.html)
-* [Datallandningszon](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html)
+* [Datalandningszon](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html)
 * [Google Cloud-lagring](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage.html)
 * [SFTP](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/sftp.html)
 
@@ -43,16 +43,16 @@ Förstå vilka Journey Optimizer-datauppsättningar du kan exportera från tabel
 
 | Datauppsättning | Beskrivning |
 | ------- | ------- | 
-| AJO BCC Feedback, händelsedatauppsättning | AJO BCC Feedback, händelsedatauppsättning |
-| AJO-klassificering, datauppsättning | Datauppsättning för inmatning av e-post och push-meddelanden från Journey Optimizer. Skapat via SDK. |
-| AJO-sambandstjänst, datauppsättning | Lagrar information om samtycke för en profil. |
-| AJO Email Tracking Experience, händelsedatauppsättning | Interaktionsloggar för e-postkanal som används för att skapa rapporter och målgrupper.  |
-| AJO-entitetsdatauppsättning | Datauppsättning som lagrar entitetsmetadata för meddelanden som skickas till slutanvändaren.  |
-| AJO - inkommande aktivitetshändelsedatauppsättning | Datauppsättning för Journey Optimizer web- och inApp-kanaler för leverans- och interaktionshändelser. |
+| AJO BCC Feedback Event Dataset | AJO BCC Feedback Event Dataset |
+| AJO Klassificeringsdatauppsättning | Datauppsättning för inmatning av e-post och push-meddelanden från Journey Optimizer. Skapat via SDK. |
+| Datamängd för tjänsten AJO Consent | Lagrar information om samtycke för en profil. |
+| AJO Experience Event-datauppsättning för e-postspårning | Interaktionsloggar för e-postkanal som används för att skapa rapporter och målgrupper.  |
+| AJO Entity Dataset | Datauppsättning som lagrar entitetsmetadata för meddelanden som skickas till slutanvändaren.  |
+| Inkommande aktivitetshändelsedatauppsättning för AJO | Datauppsättning för Journey Optimizer web- och inApp-kanaler för leverans- och interaktionshändelser. |
 | AJO Interactive Messaging Profile - datauppsättning | Lagrar profiler som skapats för stöd för API-utlösta kampanjer |
 | AJO Message Feedback Event Dataset | Meddelandeleveransloggar. Information om alla mejl från Journey Optimizer för rapportering och målgruppsframställning. Feedback från e-postleverantörer om studsar registreras också i den här datauppsättningen. |
-| Tillägg för AJO-profilräknare | Innehåller en karta över objekt som innehåller counter_value och expirationDate, transparenta av counter_id |
-| AJO-push-profildatauppsättning | Lagrar push-tokens för en profil. |
+| AJO Profile Counters Extension | Innehåller en karta över objekt som innehåller counter_value och expirationDate, transparenta av counter_id |
+| AJO Push Profile DataSet | Lagrar push-tokens för en profil. |
 | AJO Push Tracking Experience, händelsedatauppsättning | Interaktionsloggar för push-kanal som används för att skapa rapporter och målgrupper.  |
 | AJO Surfaces Dataset | Tom datamängd som är relaterad till schemat för inkommande Journey Optimizer-ytor |
 | AOOutputForUPSDataset | Innehåller alla AO-målgruppsmedlemskap som kan skrivas tillbaka till UPS |
@@ -65,9 +65,9 @@ Förstå vilka Journey Optimizer-datauppsättningar du kan exportera från tabel
 | Resor | Inhysningsinformation för metadatadatauppsättning för varje steg i en resa |
 | ODE-beslutHändelser - preliminär beslut | När vi fattar ett beslut baserat på en begäran räknar vi det som en beslutshändelse |
 
-## Förutsättningar {#prerequisites}
+## Förhandskrav {#prerequisites}
 
-Om du vill exportera datauppsättningar måste du ha [behörigheter för åtkomstkontroll](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#permissions){target="_blank"} listed below. Read the [access control overview](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/overview.html){target="_blank"} eller kontakta produktadministratören för att få de behörigheter som krävs.
+Om du vill exportera datauppsättningar behöver du de [åtkomstkontrollsbehörigheter](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#permissions){target="_blank"} som anges nedan. Läs [åtkomstkontrollsöversikten](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/overview.html){target="_blank"} eller kontakta produktadministratören för att få den behörighet som krävs.
 
 | Kategori | Behörighet |
 |--|--|
@@ -81,25 +81,25 @@ De viktigaste stegen för att exportera en datauppsättning till en molnlagrings
 
 ![](assets/dataset-export-process.png)
 
-Detaljerad information om varje steg finns i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target="_blank"}.
+Detaljerad information om varje steg finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target="_blank"}.
 
-1. **Konfigurera molnlagringsmålet**. Om du inte redan har gjort det ansluter du till ett molnlagringsmål från målkatalogen. Lär dig hur du skapar en ny målanslutning i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/connect-destination.html#setup){target="_blank"}.
+1. **Konfigurera molnlagringsmålet**. Om du inte redan har gjort det ansluter du till ett molnlagringsmål från målkatalogen. Lär dig hur du skapar en ny målanslutning i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/connect-destination.html#setup){target="_blank"}.
 
    <!--![](assets/dataset-export-setup.png)-->
 
-1. **Välj molnlagringsmål** där du vill exportera datauppsättningarna. Klicka på knappen **[!UICONTROL Export datasets]** på det önskade kortet och välj den anslutning som ska användas.
+1. **Välj molnlagringsmålet** där du vill exportera datauppsättningarna. Klicka på knappen **[!UICONTROL Export datasets]** på det önskade kortet i målkatalogen och välj den anslutning som ska användas.
 
    <!--![](assets/dataset-export-destination.png)-->
 
    >[!NOTE]
    >
-   >Om du använder Adobe Journey Optimizer tillsammans med kundprofiler i realtid visas en **Aktivera** så att du kan både exportera datauppsättningar och aktivera målgrupper för det här målet, beroende på vilka behörigheter du har aktiverat.
+   >Om du använder Adobe Journey Optimizer tillsammans med kundprofiler i realtid, kommer målkorten att visa en **Aktivera**-knapp, så att du kan både exportera datauppsättningar och aktivera målgrupper för det här målet, beroende på vilka behörigheter du har aktiverat.
 
-1. **Välj datauppsättning(ar)** som du vill exportera till det valda målet. [Läs mer om Journey Optimizer datamängder för export](#datasets)
+1. **Markera de datauppsättningar** som du vill exportera till det valda målet. [Läs mer om Journey Optimizer datauppsättningar som är tillgängliga för export](#datasets)
 
    <!--![](assets/dataset-export-dataset-selection.png)-->
 
-1. **Schemalägg exporten** av din datauppsättning. Ange när exporten ska börja och med vilken frekvens den ska ske.
+1. **Schemalägg export** av datauppsättningen. Ange när exporten ska börja och med vilken frekvens den ska ske.
 
    <!--![](assets/dataset-export-schedule.png)-->
 
@@ -107,4 +107,4 @@ Detaljerad information om varje steg finns i [Adobe Experience Platform-dokument
 
    <!--![](assets/dataset-export-review.png)-->
 
-När exporten är klar, lagras innehållet i datauppsättningen på din molnlagringsplats enligt det schema som du har konfigurerat. [Lär dig hur du verifierar lyckad datauppsättningsexport](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html#verify){target="_blank"}.
+När exporten är klar, lagras innehållet i datauppsättningen på din molnlagringsplats enligt det schema som du har konfigurerat. [Lär dig hur du verifierar datauppsättningsexporten](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html#verify){target="_blank"}.

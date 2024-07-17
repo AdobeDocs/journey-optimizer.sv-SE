@@ -26,11 +26,11 @@ Du öppnar AI-assistenten genom att klicka på ikonen i det övre fältet. AI-as
 
 >[!CAUTION]
 >
->Du måste godkänna användarriktlinjerna för Adobe Experience Cloud Generative AI innan du kan använda AI Assistant. Läs mer om avtalet i [den här sidan](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"}.
+>Du måste godkänna användarriktlinjerna för Adobe Experience Cloud Generative AI innan du kan använda AI Assistant. Läs mer om avtalet på [den här sidan](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"}.
 
 I Adobe Journey Optimizer har du tillgång till följande användningsområden:
 
-* **Produktkunskap** (Allmän tillgänglighet)
+* **Produktkunskap** (allmän tillgänglighet)
 
   Frågor om produktkunskaper handlar om Adobe koncept som rör aspekter av Adobe Journey Optimizer. Några exempel på frågor om produktkunskap är:
 
@@ -39,7 +39,7 @@ I Adobe Journey Optimizer har du tillgång till följande användningsområden:
    * Hur skapar jag en anpassad åtgärd för Adobe Journey Optimizer resor?
 
 
-* **Driftsinsikter** under resor (beta)
+* **Driftsinsikter** under resor (Beta)
 
   Frågor om driftsinsikt handlar om reseobjekten i organisationens sandlåda. Några exempel på frågor eller frågor om driftsinsikter är:
 
@@ -49,17 +49,17 @@ I Adobe Journey Optimizer har du tillgång till följande användningsområden:
 
   >[!NOTE]
   >
-  >Det enda Adobe Journey Optimizer-objekt du har tillgång till för att ställa frågor om AI Assistant-driftsinsikter är **Resor**. Det kommer bara att ha data för den sandlåda du befinner dig i.
+  >Det enda Adobe Journey Optimizer-objekt som du har tillgång till för att ställa frågor om AI Assistant-driftsinsikter är **Journeys**. Det kommer bara att ha data för den sandlåda du befinner dig i.
 
 
 Om du vill ställa en fråga anger du den i fältet längst ned på skärmen och trycker på Retur.
 
 ![](assets/do-not-localize/ai-assistant-ask.png){width="50%" align="left"}
 
-Kontrollera svaret och använd **Visa källor** för att få direktlänkar till produktdokumentationen och få mer information.
+Kontrollera svaret och använd knappen **Visa källor** för att få direkta länkar till produktdokumentationen och läs mer.
 
 ![](assets/do-not-localize/ai-assistant-answer.png){width="50%" align="left"}
 
 Använd reglaget uppåt eller nedåt för att betygsätta svaret.
 
-Om du vill lära dig hur du använder AI Assistant läser du exempelmålen som du kan uppnå med AI Assistant och lär dig mer om hur AI Assistant fungerar, se [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"}.
+Mer information om hur du använder AI Assistant finns i exempelmål som du kan uppnå med AI Assistant, och hur AI Assistant fungerar, i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"}.

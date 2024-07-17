@@ -9,8 +9,8 @@ keywords: currentTimeInMillis, funktion, uttryck, resa
 exl-id: 8deec661-d504-4764-85d7-afe80b62c477
 source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
 workflow-type: tm+mt
-source-wordcount: '36'
-ht-degree: 11%
+source-wordcount: '37'
+ht-degree: 5%
 
 ---
 

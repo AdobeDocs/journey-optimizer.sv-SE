@@ -17,23 +17,23 @@ ht-degree: 14%
 
 # Snabbstart {#cjm-quick-start}
 
-Med [!DNL Adobe Journey Optimizer]kan ni importera befintligt meddelandeinnehåll eller utforma nytt innehåll, anpassa meddelanden med kundprofildata, skapa händelser för att utlösa meddelanden, definiera målgrupper, skapa och lägga till erbjudanden samt få tillgång till en komplett uppsättning rapporterings- och övervakningsverktyg för att mäta effekten av era meddelanden och kundresor.
+Med [!DNL Adobe Journey Optimizer] kan du importera befintligt meddelandeinnehåll eller utforma ett nytt innehåll, anpassa meddelanden med kundprofildata, skapa händelser för att utlösa meddelanden, definiera målgrupper, skapa och lägga till erbjudanden samt få tillgång till en komplett uppsättning rapporterings- och övervakningsverktyg för att mäta effekten av dina meddelanden och kundresor.
 
 Beroende på din organisation kan du definiera flera typer av användare och ge dem åtkomst till vissa funktioner beroende på deras behörigheter.
 
-Börja bara med [!DNL Journey Optimizer]? Erfaren användare med specifika frågor? Administratör för din företagsinstans? Ta din egen väg för att nå dina mål snabbare!
+Ska vi börja med [!DNL Journey Optimizer]? Erfaren användare med specifika frågor? Administratör för din företagsinstans? Ta din egen väg för att nå dina mål snabbare!
 
 Välj din profil om du vill lära dig och upptäcka styrkan i Adobe Journey Optimizer med stegvis vägledning.
 
-* Jag är en **Administratör**
+* Jag är **administratör**
 
   Förbered din miljö, ge åtkomst, konfigurera inställningar. [Läs mer](path/administrator.md)
 
-* Jag är en **Datatekniker**
+* Jag är **datatekniker**
 
   Importera profiler, skapa målgrupper, scheman och datauppsättningar. [Läs mer](path/data-engineer.md)
 
-* Jag är en **Marknadsförare**
+* Jag är **marknadsförare**
 
   Designa meddelanden, lägg till erbjudanden, resurser och bygg kundresor. [Läs mer](path/marketer.md)
 

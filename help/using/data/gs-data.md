@@ -20,9 +20,9 @@ ht-degree: 1%
 
 Riktighet och täckning av slutkundsdata är vad som definierar styrkan och framgången hos alla kundupplevelselösningar, och dessa data är skalbara och av högsta värde för varje enskild kund. Teknikval är nu inbyggt i en strikt utvärdering av datahanteringsfunktioner.
 
-Med [!DNL Adobe Journey Optimizer]kan ni enkelt hantera, behålla och exportera dessa data till plattformar eller system som ingår i er teknologi.
+Med [!DNL Adobe Journey Optimizer] kan du enkelt hantera, behålla och exportera dessa data till plattformar eller system som ingår i din teknikstack.
 
-**Mina data, Mina regler** - [!DNL Adobe Journey Optimizer] kontinuerligt (och i realtid) skapar en omfattande uppsättning kundprofildata utöver alla kunddata och erbjuder data som är inbyggda i dess verksamhet. Med smidiga versioner av användardata som hämtas från era databaser kan ni berika och omvandla dem till värdefulla data med täckning och djup. Ni vill att dessa data ska vara säkra, och samtidigt vara universella, så att ni kan utnyttja deras värde i hela IT-ekosystemet.
+**Mina data, Mina regler** - [!DNL Adobe Journey Optimizer] skapar kontinuerligt (och i realtid) en omfattande uppsättning kundprofildata, utöver alla kundresedata och erbjuder data som är inbyggda i dess åtgärder. Med smidiga versioner av användardata som hämtas från era databaser kan ni berika och omvandla dem till värdefulla data med täckning och djup. Ni vill att dessa data ska vara säkra, och samtidigt vara universella, så att ni kan utnyttja deras värde i hela IT-ekosystemet.
 
 Den flexibilitet du vill ha från dina data är dessutom:
 
@@ -31,7 +31,7 @@ Den flexibilitet du vill ha från dina data är dessutom:
 <tr style="border: 0;">
   <td>
     <div><img alt="mål" src="assets/do-not-localize/dest.png" /> 
-    <br>Finns på andra platser - men [!DNL Adobe Journey Optimizer] skapar synergier och integrerar data för en hyper-personaliserad kundupplevelse och vill ha dessa data i andra system i det övergripande tekniklandskapet, samtidigt som ni letar efter andra sätt att utnyttja dessa data.
+    <br> Finns för andra ändamål - Även om [!DNL Adobe Journey Optimizer] kan göra data mer tilltalande och integrerade för en hyperpersonaliserad kundupplevelse, vill du ha dessa data i andra system i det övergripande tekniska landskapet, samtidigt som du letar efter andra sätt att utnyttja dessa data.
     <div>
      <a href="../start/ajo-integrations.md">Läs mer</a></div>
     </div>
@@ -50,7 +50,7 @@ Den flexibilitet du vill ha från dina data är dessutom:
 <tr style="border: 0;">
   <td>
     <div><img alt="policy" src="assets/do-not-localize/policy.png" /> 
-    <br>Borttagen bas - en överenskommen tidslinje eller er policy - Dataradering är en viktig del av dataskyddet och är ett viktigt steg i alla processer för datastyrning. [!DNL Adobe Journey Optimizer] kan producera mer data än vad som krävs. Dessutom vill ni ta största möjliga hand om vad som händer efter att en datamängd har fått den varaktighet som krävs - oavsett om det beror på verktyg eller reglering. Den kontroll du behöver är att ta bort data vid en given tidpunkt. 
+    <br> Borttagen grund, en överenskommen tidslinje eller din policy - Dataradering är en viktig del av dataskyddet och är ett viktigt steg i alla datastyrningsprocesser. [!DNL Adobe Journey Optimizer] kan producera mer data än vad som krävs. Dessutom vill ni ta största möjliga hand om vad som händer efter att en datamängd har fått den varaktighet som krävs - oavsett om det beror på verktyg eller reglering. Den kontroll du behöver är att ta bort data vid en given tidpunkt. 
     </div>
       <div>
      <a href="../privacy/data-hygiene.md">Läs mer</a></div>
@@ -59,13 +59,13 @@ Den flexibilitet du vill ha från dina data är dessutom:
 </tr>
 </table>
 
-[!DNL Adobe Experience Platform], som [!DNL Adobe Journey Optimizer] är skapat och ger er högsta möjliga kontroll över data - både under engagemanget och i slutet av engagemanget. Inom [!DNL Journey Optimizer]har du fullständig kontroll över data (som antingen hämtas in eller skapas av, [!DNL Journey Optimizer]), styrningen av dessa data och de destinationer dit dessa data skickas.
+[!DNL Adobe Experience Platform], som [!DNL Adobe Journey Optimizer] byggs på, ger dig störst kontroll över data - både under engagemanget och i slutet av engagemanget. Inom [!DNL Journey Optimizer] har du fullständig kontroll över data (som hämtas till eller skapas av [!DNL Journey Optimizer]), den styrning som överlagras för dessa data och de destinationer dit dessa data skickas.
 
 Alla data betraktas som kundens egendom och kan bara underhållas, krypteras, distribueras eller förstöras på din begäran. Adobe fungerar som förvaltare, utan några som helst rättigheter till era uppgifter.
 
-Du kan använda [!DNL Journey Optimizer]Med sin flexibilitet att hantera dina specifika krav vad gäller datalagring, arkivering eller radering:
+Du kan använda flexibiliteten för data i [!DNL Journey Optimizer] för att uppfylla dina specifika krav för datalagring, arkivering eller borttagning:
 
-* **Extrahering/export av data**: Du kan initiera extraheringen av källdata när som helst via API:t för dataåtkomst utan straffar eller tidsfördröjningar. The [API för dataåtkomst](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html){target="_blank"} ger användarna ett RESTful-gränssnitt som fokuserar på att upptäcka om inkapslade datauppsättningar är tillgängliga eller inte [!DNL Adobe Experience Platform]. <!--In the future (on roadmap), you can use file-based destinations to export and migrate log data from Adobe Journey Optimizer. -->
+* **Dataextrahering/export**: Du kan initiera extraheringen av källdata när som helst via API:t för dataåtkomst utan straffar eller tidsfördröjningar. [API:t för dataåtkomst](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html){target="_blank"} ger användarna ett RESTful-gränssnitt som fokuserar på identifierbarhet och tillgänglighet för kapslade datauppsättningar i [!DNL Adobe Experience Platform]. <!--In the future (on roadmap), you can use file-based destinations to export and migrate log data from Adobe Journey Optimizer. -->
 
   Observera att innehåll som används i resor eller kampanjer inte kan extraheras via API- eller målmetoder som nämns ovan.
 
@@ -75,7 +75,7 @@ Du kan använda [!DNL Journey Optimizer]Med sin flexibilitet att hantera dina sp
   Learn more about Experience Event expirations in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/event-expirations.html){target="_blank"}.
 -->
 
-* **Rensa och arkivera**: Rensning av data och arkivering kan definieras fritt och automatiseras i [!DNL Adobe Journey Optimizer] att automatisera datalagringspolicyer. Det är möjligt att definiera olika strategier för åldersfördelning för olika datatabeller. Exportmekanismer kan också definieras för att automatiskt exportera åldersfördelningsdata innan de rensas eller arkiveras.
+* **Töm- och arkiveringsmekanismer**: Tömning av data och arkivering kan definieras fritt och automatiseras i [!DNL Adobe Journey Optimizer] för att automatisera datalagringsprinciper. Det är möjligt att definiera olika strategier för åldersfördelning för olika datatabeller. Exportmekanismer kan också definieras för att automatiskt exportera åldersfördelningsdata innan de rensas eller arkiveras.
 
   Med arbetsytan Datahygien kan du skapa och övervaka olika datahygien-uppgifter, som att ta bort konsumentidentiteter och schemalägga förfallodatum för datauppsättningar. Den här arbetsytan är tillgänglig med skölden för skydd och integritet och med hälso- och sjukvårdsskölden. Läs mer på [den här sidan](../privacy/data-hygiene.md).
 
@@ -87,6 +87,6 @@ Du kan använda [!DNL Journey Optimizer]Med sin flexibilitet att hantera dina sp
 
 -->
 
-* **Dataextrahering vid avslutning/avslutning av engagemang**: När kontraktet avslutas tas data bort helt från Adobe lagringsutrymme. Du kan även hämta fullständiga profilextraheringar innan du säger upp ett avtal. Det kostar inget mer. Detta kan göras när som helst och inte bara när det sägs upp.
+* **Dataextrahering vid avtalsslut/ avslut**: När kontraktet avslutas tas dina data bort helt från Adobe lagringsutrymme. Du kan även hämta fullständiga profilextraheringar innan du säger upp ett avtal. Det kostar inget mer. Detta kan göras när som helst och inte bara när det sägs upp.
 
-Ovannämnda metoder är avtalsenligt definierade och detaljerade i det databehandlingsavtal (DPA) som Adobe ömsesidigt instämmer med dig i början av ett ärende. Adobe-program, inklusive [!DNL Journey Optimizer], bygger på principen att varje kunds data behandlas som den kundens egna datatillgångar.
+Ovannämnda metoder är avtalsenligt definierade och detaljerade i det databehandlingsavtal (DPA) som Adobe ömsesidigt instämmer med dig i början av ett ärende. Adobe-program, inklusive [!DNL Journey Optimizer], är uppbyggda kring principen att varje kunds data ska behandlas som den klientens egna datatillgångar.

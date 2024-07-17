@@ -31,7 +31,7 @@ Låt oss titta på ett scenario där du har beslutsposter med Yoga-relaterade pr
 >
 >Förutom beslutsregler på artikel- och urvalsstrateginivå kan ni också definiera er avsedda målgrupp på kampanjnivå. [Läs mer](../campaigns/create-campaign.md#audience)
 
-Listan över beslutsregler finns i **[!UICONTROL Strategy setup]** -menyn.
+Listan med beslutsregler finns på menyn **[!UICONTROL Strategy setup]**.
 
 ![](assets/decision-rules-list.png)
 
@@ -39,11 +39,11 @@ Listan över beslutsregler finns i **[!UICONTROL Strategy setup]** -menyn.
 
 Så här skapar du en beslutsregel:
 
-1. Navigera till **[!UICONTROL Strategy setup]** / **[!UICONTROL Decision rules]** klicka sedan på **[!UICONTROL Create rule]** -knappen.
+1. Navigera till **[!UICONTROL Strategy setup]** / **[!UICONTROL Decision rules]** och klicka sedan på knappen **[!UICONTROL Create rule]**.
 
 1. Skärmen för att skapa beslutsregler öppnas. Ge regeln ett namn och ange en beskrivning.
 
-1. Bygg en beslutsregel som passar dina behov med Adobe Experience Platform Segment Builder. För att göra detta kan du utnyttja olika datakällor, t.ex. profilattribut, målgrupper eller kontextdata från Adobe Experience Platform. [Lär dig utnyttja kontextdata](#context-data)
+1. Bygg en beslutsregel som passar dina behov med Adobe Experience Platform Segment Builder. För att göra detta kan du utnyttja olika datakällor, t.ex. profilattribut, målgrupper eller kontextdata från Adobe Experience Platform. [Lär dig hur du använder kontextdata](#context-data)
 
    ![](assets/decision-rules-build.png)
 
@@ -51,11 +51,11 @@ Så här skapar du en beslutsregel:
    >
    >Segment Builder som används för att skapa beslutsregler har vissa särdrag jämfört med den som används i Adobe Experience Platform Segmentation Service.  Den globala process som beskrivs i dokumentationen är dock fortfarande giltig för att skapa beslutsregler. [Lär dig hur du skapar segmentdefinitioner](../audience/creating-a-segment-definition.md)
 
-1. När du lägger till och konfigurerar nya fält på arbetsytan visas **[!UICONTROL Audience properties]** visas information om de beräknade profilerna som tillhör målgruppen. Klicka **[!UICONTROL Refresh estimate]** för att uppdatera data.
+1. När du lägger till och konfigurerar nya fält på arbetsytan visas information om de beräknade profilerna som tillhör målgruppen i rutan **[!UICONTROL Audience properties]**. Klicka på **[!UICONTROL Refresh estimate]** för att uppdatera data.
 
    >[!NOTE]
    >
    >Profiluppskattningar är inte tillgängliga när regelparametrar innehåller data som inte finns i profilen, till exempel kontextdata.
 
-1. När beslutsregeln är klar klickar du på **[!UICONTROL Save]**. Den skapade regeln visas i listan och är tillgänglig för användning i beslutsposter och urvalsstrategier som styr presentationen av beslutsposter i profiler.
+1. När din beslutsregel är klar klickar du på **[!UICONTROL Save]**. Den skapade regeln visas i listan och är tillgänglig för användning i beslutsposter och urvalsstrategier som styr presentationen av beslutsposter i profiler.
 

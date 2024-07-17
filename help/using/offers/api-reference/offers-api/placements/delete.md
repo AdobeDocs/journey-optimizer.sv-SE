@@ -8,14 +8,14 @@ level: Experienced
 exl-id: ca7af3b0-62cd-44ac-8856-b3d1ec15f284
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 4%
+source-wordcount: '109'
+ht-degree: 3%
 
 ---
 
 # Ta bort en placering {#delete-placement}
 
-Ibland kan det vara nödvändigt att ta bort (DELETE) en placering. Detta görs genom att en DELETE-begäran görs till [!DNL Offer Library] API som använder ID:t för placeringen som du vill ta bort.
+Ibland kan det vara nödvändigt att ta bort (DELETE) en placering. Detta görs genom att utföra en DELETE-begäran till [!DNL Offer Library]-API:t med ID:t för den placering som du vill ta bort.
 
 **API-format**
 

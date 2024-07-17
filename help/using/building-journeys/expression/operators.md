@@ -38,7 +38,7 @@ not (@event{LobbyBeacon.endUserIDs._experience.emailid.id}=="example@adobe.com")
 
 ## Viktiga anteckningar{#important-notes}
 
-* Vid användning av en multiplikation (`*`) måste båda åtgärdsfälten ha samma typ, antingen heltal eller decimal. Exempel:
+* När du använder en multiplikation (`*`) måste båda åtgärdsfälten ha samma typ, antingen heltal eller decimal. Exempel:
    * följande exempel är korrekt: `3.0 * 4.0`
    * `3 * 4.0` leder till ett fel
 
@@ -50,7 +50,7 @@ not (@event{LobbyBeacon.endUserIDs._experience.emailid.id}=="example@adobe.com")
 <expression1> and <expression2>
 ```
 
-Båda &lt;expression1> och &lt;expression2> måste vara booleskt. Resultatet är booleskt.
+Både &lt;expression1> och &lt;expression2> måste vara booleska. Resultatet är booleskt.
 
 Exempel:
 
@@ -64,7 +64,7 @@ Exempel:
 <expression1> or <expression2>
 ```
 
-Båda &lt;expression1> och &lt;expression2> måste vara booleskt. Resultatet är booleskt.
+Både &lt;expression1> och &lt;expression2> måste vara booleska. Resultatet är booleskt.
 
 Exempel:
 
@@ -152,7 +152,7 @@ Returnerar false eftersom &quot;&quot; inte betraktas som null.
 
 >[!NOTE]
 >
->För &lt;expression1> och &lt;expression2> det inte finns någon datatypskontroll.
+>Det finns ingen datatypskontroll för &lt;expression1> och &lt;expression2>.
 
 Exempel:
 
@@ -172,7 +172,7 @@ Exempel:
 
 >[!NOTE]
 >
-För &lt;expression1> och &lt;expression2> det inte finns någon datatypskontroll.
+Det finns ingen datatypskontroll för &lt;expression1> och &lt;expression2>.
 
 Resultatet är booleskt.
 
@@ -434,13 +434,13 @@ Exempel:
 "the current time is " + (now())
 ```
 
-Returnerar &quot;den aktuella tiden är 2023-09-23T09:30:06,693Z&quot;
+Returnerar &quot;den aktuella tiden är 2023-09-23T09:30:06.693Z&quot;
 
 ```json
 (now()) + " is the current time"
 ```
 
-Returnerar &quot;2023-09-23T09:30:06,693Z är den aktuella tiden&quot;
+Returnerar &quot;2023-09-23T09:30:06.693Z är den aktuella tiden&quot;
 
 ```json
 "a" + "b" + "c" + 1234
@@ -464,22 +464,22 @@ Exempel:
 (toDateTime("2023-12-03T15:15:30Z")) + (toDuration("PT15M"))  
 ```
 
-Returnerar ett _dateTime_ 2023-12-03T15:30:30Z
+Returnerar en _dateTime_ 2023-12-03T15:30:30Z
 
 ```json
 (toDateTimeOnly("2023-12-03T15:15:30")) + (toDuration("PT15M"))
 ```
 
-Returnerar ett _dateTimeOnly_ 2023-12-03T15:30:30
+Returnerar _dateTimeOnly_ 2023-12-03T15:30:30
 
 ```json
 (now()) + (toDuration("PT1H"))
 ```
 
-Returnerar ett _dateTime_ (med UTC-tidszon) en timme senare än aktuell tid
+Returnerar _dateTime_ (med UTC-tidszon) en timme senare från aktuell tid
 
 ```json
 (toDuration("PT1H")) + (toDuration("PT1H"))
 ```
 
-Returnerar ett _varaktighet_ PT2H
+Returnerar en _varaktighet_ PT2H

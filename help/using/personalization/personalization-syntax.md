@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Anpassningssyntax
+title: Personalization syntax
 description: Lär dig hur du använder personaliseringssyntax.
 feature: Personalization
 topic: Personalization
@@ -12,14 +12,14 @@ exl-id: 5a562066-ece0-4a78-92a7-52bf3c3b2eea
 source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Anpassningssyntax {#personalization-syntax}
+# Personalization syntax {#personalization-syntax}
 
-Personalisering i [!DNL Journey Optimizer] baseras på den mallsyntax som kallas Handlebars.
-En fullständig beskrivning av Handlebars-syntaxen finns i [HandlebarsJS-dokumentation](https://handlebarsjs.com/).
+Personalization i [!DNL Journey Optimizer] baseras på den mallsyntax som kallas Handlebars.
+En fullständig beskrivning av Handlebars syntax finns i [HandlebarsJS-dokumentationen](https://handlebarsjs.com/).
 
 Den använder en mall och ett indataobjekt för att generera HTML eller andra textformat. Mallar för handtag ser ut som vanlig text med inbäddade handtagsuttryck.
 
@@ -42,23 +42,23 @@ Whitespace ! " # % & ' ( ) * + , . / ; < = > @ [ \ ] ^ ` { | } ~
 
 Syntaxen är skiftlägeskänslig.
 
-Orden **true**, **false**, **null** och **undefined** tillåts endast i den första delen av ett sökvägsuttryck.
+Orden **true**, **false**, **null** och **undefined** tillåts bara i den första delen av ett sökvägsuttryck.
 
-I Handtag-fält returneras värdena av {{expression}} är **HTML-escape**. Om uttrycket innehåller `&`genereras returnerade utdata från HTML som `&amp;`. Om du inte vill att Handlebars ska kringgå ett värde använder du &quot;trippelstreck&quot;.
+I Handlebars är värdena som returneras av {{expression}} **HTML-escape**. Om uttrycket innehåller `&` genereras returnerade utdata för HTML-escape som `&amp;`. Om du inte vill att Handlebars ska kringgå ett värde använder du &quot;trippelstreck&quot;.
 
-När det gäller argument för literala funktioner stöder inte mallspråksparsern ett omvänt snedstreck (`\`). Det här tecknet måste föregås av ett extra omvänt snedstreck (`\`). Exempel:
+När det gäller argument för literala funktioner saknar den mallande språkparsern stöd för ett omvänt snedstreck (`\`) av typen unescape. Det här tecknet måste föregås av ett ytterligare omvänt snedstreck (`\`). Exempel:
 
 `{%= regexGroup("abc@xyz.com","@(\\w+)", 1)%}`
 
 ## Profil
 
-Med det här namnutrymmet kan du referera till alla attribut som definieras i profilschemat som beskrivs i [Dokumentation för Adobe Experience Platform Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}.
+Med det här namnutrymmet kan du referera till alla attribut som definieras i profilschemat som beskrivs i [dokumentationen för Adobe Experience Platform datamodell (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}.
 
-Attributen måste definieras i schemat innan de refereras i en [!DNL Journey Optimizer] personaliseringsblock.
+Attributen måste definieras i schemat innan de refereras i ett [!DNL Journey Optimizer]-anpassningsblock.
 
 >[!NOTE]
 >
->Lär dig hur du utnyttjar profilattribut under förhållanden i [det här avsnittet](functions/helpers.md#if-function).
+>Lär dig hur du utnyttjar profilattribut i villkoren i [det här avsnittet](functions/helpers.md#if-function).
 
 **Exempelreferenser:**
 
@@ -78,7 +78,7 @@ Attributen måste definieras i schemat innan de refereras i en [!DNL Journey Opt
 
 ## Målgrupper{#perso-segments}
 
-Lär dig hur du utnyttjar profilattribut under förhållanden i [det här avsnittet](functions/helpers.md#if-function).
+Lär dig hur du utnyttjar profilattribut i villkoren i [det här avsnittet](functions/helpers.md#if-function).
 
 >[!NOTE]
 >Mer information om segmenteringstjänsten finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
@@ -94,12 +94,12 @@ Den här sökvägen har följande struktur:
 
 där:
 
-* `offers` identifierar det sökvägsuttryck som tillhör namnutrymmet offer
-* `Type`  fastställer typen av erbjudanderepresentation. Möjliga värden är: `image`, `html` och `text`
+* `offers` identifierar sökvägsuttrycket som tillhör namnutrymmet offer
+* `Type` bestämmer typen av erbjudanderepresentation. Möjliga värden är: `image`, `html` och `text`
 * `Placement Id` och `Activity Id` är placerings- och aktivitetsidentifierare
-* `Attributes` är specifika attribut som är beroende av erbjudandetypen. Exempel: `deliveryUrl` för bilder
+* `Attributes` erbjuder specifika attribut som är beroende av erbjudandetypen. Exempel: `deliveryUrl` för bilder
 
-Mer information om beslut-API och offertrepresentation finns i [den här sidan](../offers/api-reference/offer-delivery-api/decisioning-api.md)
+Mer information om besluts-API och offertrepresentation finns på [den här sidan](../offers/api-reference/offer-delivery-api/decisioning-api.md)
 
 Alla referenser valideras mot offertschema med en valideringsmekanism som beskrivs i [den här sidan](personalization-validation.md)
 
@@ -128,17 +128,17 @@ Handtag-hjälpen är en enkel identifierare som kan följas av parametrar.
 Varje parameter är ett Handlebars-uttryck. Hjälpprogrammen kan nås från alla sammanhang i en mall.
 
 Dessa blockhjälpare identifieras med # före hjälpnamnet och en matchande avslutande /, med samma namn krävs.
-Block är uttryck som har en blocköppning ({{# }}) and closing ({{/}}).
+Block är uttryck som har ett blocköppningsblock ({{# }}) and closing ({{/}}).
 
 
 >[!NOTE]
 >
->Hjälpfunktionerna beskrivs i [det här avsnittet](functions/helpers.md).
+>Hjälpfunktioner beskrivs i [det här avsnittet](functions/helpers.md).
 >
 
 ## Literala typer {#literal-types}
 
-[!DNL Adobe Journey Optimizer] har stöd för följande literala typer:
+[!DNL Adobe Journey Optimizer] stöder följande literaltyper:
 
 | Literal | Definition |
 | ------- | ---------- |
@@ -149,16 +149,16 @@ Block är uttryck som har en blocköppning ({{# }}) and closing ({{/}}).
 
 >[!CAUTION]
 >
->Användning av **xEvent** variabeln är inte tillgänglig i personaliseringsuttryck. Alla referenser till xEvent resulterar i valideringsfel.
+>Det går inte att använda variabeln **xEvent** i personaliseringsuttryck. Alla referenser till xEvent resulterar i valideringsfel.
 
-## URL-anpassning{#perso-urls}
+## URL PERSONALIZATION{#perso-urls}
 
 Personaliserade URL:er tar mottagarna till specifika sidor på en webbplats eller till en personlig mikrowebbplats, beroende på profilattributen. I Adobe Journey Optimizer kan du lägga till personalisering i URL-adresser i ditt meddelandeinnehåll. URL-personalisering kan tillämpas på text och bilder och använda profildata eller kontextuella data.
 
 Med Journey Optimizer kan du anpassa en eller flera URL-adresser i meddelandet genom att lägga till anpassningsfält till dem. Följ stegen nedan för att anpassa en URL-adress:
 
 1. Skapa en länk i meddelandeinnehållet. [Läs mer](../email/message-tracking.md#insert-links)
-1. Välj attribut från personaliseringsikonen. Ikonen för anpassning är bara tillgänglig för följande typer av länkar: **Extern länk**, **Länk för att avbryta prenumeration** och **Avanmäl dig**.
+1. Välj attribut från personaliseringsikonen. Ikonen för anpassning är bara tillgänglig för följande typer av länkar: **Extern länk**, **Avprenumerationslänk** och **Avanmäl dig**.
 
    ![](assets/perso-url.png)
 
@@ -167,7 +167,7 @@ Med Journey Optimizer kan du anpassa en eller flera URL-adresser i meddelandet g
 >När du redigerar en personlig URL i personaliseringsredigeraren inaktiveras hjälpfunktioner och målgruppsmedlemskap av säkerhetsskäl.
 >
 
-**Exempel på personaliserade URL:er**
+**Exempel på personliga URL:er**
 
 * `https://www.adobe.com/users/{{profile.person.name.lastName}}`
 * `https://www.adobe.com/users?uid={{profile.person.name.firstName}}`

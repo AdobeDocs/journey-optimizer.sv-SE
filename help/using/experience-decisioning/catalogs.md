@@ -18,26 +18,26 @@ ht-degree: 0%
 
 I Experience Decision fungerar kataloger som centrala behållare för att organisera beslutsobjekt. Varje katalog är länkad till ett Adobe Experience Platform-schema som innehåller alla attribut som kan tilldelas ett beslutsobjekt.
 
-För närvarande konsolideras alla beslutsobjekt som skapats i en enda katalog, tillgänglig via **[!UICONTROL  Catalogs]** -menyn.
+För närvarande konsolideras alla beslutsobjekt som skapats i en enda katalog för erbjudanden som nås via menyn **[!UICONTROL  Catalogs]**.
 
 ![](assets/catalogs-list.png)
 
 Följ de här stegen för att komma åt katalogschemat där beslutsobjektens attribut lagras:
 
-1. Klicka på **[!UICONTROL Edit schema]** knappen finns bredvid **[!UICONTROL Create item]** -knappen.
+1. Klicka på knappen **[!UICONTROL Edit schema]** bredvid knappen **[!UICONTROL Create item]** i objektlistan.
 
 1. Katalogens schema öppnas på en ny flik, enligt strukturen nedan:
 
-   * The **`_experience`** noden innehåller standardobjektattribut som namn, start- och slutdatum samt beskrivning.
-   * The **`_<imsOrg>`** noden innehåller anpassade beslutsobjektattribut. Som standard har inga anpassade attribut konfigurerats, men du kan lägga till så många som behövs för att passa dina behov. När du är klar visas anpassade attribut tillsammans med standardattributen på skärmen för att skapa beslutsobjekt.
+   * Noden **`_experience`** innehåller standardattribut för beslutsobjekt som namn, start- och slutdatum samt beskrivning.
+   * Noden **`_<imsOrg>`** innehåller attribut för anpassade beslutsobjekt. Som standard har inga anpassade attribut konfigurerats, men du kan lägga till så många som behövs för att passa dina behov. När du är klar visas anpassade attribut tillsammans med standardattributen på skärmen för att skapa beslutsobjekt.
 
    ![](assets/catalogs-schema.png)
 
-1. Om du vill lägga till ett anpassat attribut i schemat expanderar du **`_<imsOrg>`** och klicka på plusknappen (+) på önskad plats i strukturen.
+1. Om du vill lägga till ett anpassat attribut i schemat expanderar du noden **`_<imsOrg>`** och klickar på plusknappen (+) på önskad plats i strukturen.
 
    ![](assets/catalogs-add.png)
 
-1. Fyll i de fält som behövs för attributet som lagts till och klicka på **[!UICONTROL Apply]**.
+1. Fyll i de fält som krävs för det tillagda attributet och klicka på **[!UICONTROL Apply]**.
 
    >[!CAUTION]
    >
@@ -45,6 +45,6 @@ Följ de här stegen för att komma åt katalogschemat där beslutsobjektens att
 
    Värdet som anges för ett attribut med ett decimalresursattribut är en publik url. För det mesta pekar detta på en bild.
 
-   Detaljerad information om hur du arbetar med Adobe Experience Platform scheman finns i [XDM-systemdokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html).
+   Detaljerad information om hur du arbetar med Adobe Experience Platform-scheman finns i [XDM-systemdokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html).
 
-1. Spara schemat när du har lagt till de anpassade attributen. Det nya fältet är nu tillgängligt på skärmen för att skapa artikelbeslut i **[!UICONTROL Custom attributes]** -avsnitt.
+1. Spara schemat när du har lagt till de anpassade attributen. Det nya fältet är nu tillgängligt på skärmen där objektbeslut skapas, i avsnittet **[!UICONTROL Custom attributes]**.

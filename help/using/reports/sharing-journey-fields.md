@@ -17,7 +17,7 @@ ht-degree: 6%
 
 # Resefält {#sharing-journey-fields}
 
-Den här fältgruppen används i **resa** schema (i relation till **travelStepEvent**). Den innehåller fälten som listas nedan.
+Den här fältgruppen används i schemat **travel** (i relation till **travelStepEvent**). Den innehåller fälten som listas nedan.
 
 
 >[!NOTE]

@@ -11,7 +11,7 @@ exl-id: 5b978eef-7d3e-41fe-bb08-0cf37c3b125d
 source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
 workflow-type: tm+mt
 source-wordcount: '185'
-ht-degree: 39%
+ht-degree: 31%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 39%
 
 En funktion kan ha olika signaturer (en annan uppsättning ordnade parametrar). En funktionssignatur kan ha 0-N-uttryck som ordnade parametrar.
 
-`<function name>`(`<expression as param 1>`, `<expression as param 2>`, ... ,`<expression as param N>`)
+`<function name>`(`<expression as param 1>`, `<expression as param 2>`, ..., `<expression as param N>`)
 
 Varje funktion har en specifik returtyp.
 
@@ -66,8 +66,8 @@ Här är en lista över funktioner som stöds.
 | Lista | [filter](../functions/functionfilter.md) |
 | Lista | [getListItem](../functions/functiongetlistitem.md) |
 | Lista | [in](../functions/functionin.md) |
-| Lista | [korsa](../functions/functionintersect.md) |
-| Lista | [limit](../functions/functionlimit.md) |
+| Lista | [överlappa](../functions/functionintersect.md) |
+| Lista | [gräns](../functions/functionlimit.md) |
 | Lista | [listSize](../functions/functionlistsize.md) |
 | Lista | [serializeList](../functions/functionserializelist.md) |
 | Lista | [sort](../functions/functionsort.md) |

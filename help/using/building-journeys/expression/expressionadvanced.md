@@ -33,7 +33,7 @@ Den avancerade uttrycksredigeraren har en uppsättning inbyggda funktioner och o
 
 >[!NOTE]
 >
->De funktioner och funktioner som finns i den avancerade uttrycksredigeraren Journey skiljer sig från dem som finns i [personaliseringsredigerare](../../personalization/functions/functions.md).
+>De funktioner och funktioner som är tillgängliga i den avancerade uttrycksredigeraren för Journey skiljer sig från dem som är tillgängliga i [personaliseringsredigeraren](../../personalization/functions/functions.md).
 
 ## Åtkomst till den avancerade uttrycksredigeraren {#accessing-the-advanced-expression-editor}
 
@@ -69,9 +69,9 @@ Med den här skärmen kan du ange ett uttryck manuellt.
 Till vänster på skärmen visas tillgängliga fält och funktioner:
 
 * **[!UICONTROL Events]**: välj ett av fälten som har tagits emot från den inkommande händelsen. Den visade listan med händelsefält är sammanhangsberoende och varierar beroende på vilka händelser som läggs till under resan. [Läs mer](../../event/about-events.md)
-* **[!UICONTROL Audiences]**: om du har släppt en **[!UICONTROL Audience qualification]** väljer du den målgrupp du vill använda i ditt uttryck. [Läs mer](../condition-activity.md#using-a-segment)
+* **[!UICONTROL Audiences]**: Om du har släppt en **[!UICONTROL Audience qualification]** -händelse väljer du den målgrupp du vill använda i ditt uttryck. [Läs mer](../condition-activity.md#using-a-segment)
 * **[!UICONTROL Data Sources]**: välj i listan över fält som är tillgängliga från fältgrupperna i datakällorna. [Läs mer](../../datasource/about-data-sources.md)
-* **[!UICONTROL Journey properties]**: I det här avsnittet grupperas de tekniska fält som rör resan för en viss profil om. [Läs mer](journey-properties.md)
+* **[!UICONTROL Journey properties]**: I det här avsnittet grupperas de tekniska fält som är relaterade till resan för en viss profil om. [Läs mer](journey-properties.md)
 * **[!UICONTROL Functions]**: välj i listan bland inbyggda funktioner som du använder för att utföra komplex filtrering. Funktionerna är ordnade efter kategorier. [Läs mer](functions.md)
 
 ![](../assets/journey65.png)

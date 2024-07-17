@@ -94,7 +94,7 @@ The **Action parameters** section has been renamed **Payloads**. Two fields are 
 
 1. Skapa den anpassade åtgärden. Se [den här sidan](../action/about-custom-action-configuration.md).
 
-1. Klicka inuti **Svar** fält.
+1. Klicka i fältet **Svar**.
 
    ![](assets/action-response2.png){width="80%" align="left"}
 
@@ -115,7 +115,7 @@ The **Action parameters** section has been renamed **Payloads**. Two fields are 
 
    ![](assets/action-response9.png){width="80%" align="left"}
 
-1. Klicka **Spara**.
+1. Klicka på **Spara**.
 
 ## Utnyttja svarsalternativen under en resa {#response-in-journey}
 
@@ -127,11 +127,11 @@ Du kan till exempel lägga till ett villkor för att kontrollera antalet förmå
 
 1. Lägg till din händelse och den anpassade lojalitetsåtgärden som skapades tidigare.
 
-1. I den anpassade lojalitetsåtgärden kopplar du frågeparametern för kund-ID till profil-ID:t. Markera alternativet **Lägg till en alternativ sökväg vid timeout eller fel**.
+1. I den anpassade lojalitetsåtgärden kopplar du frågeparametern för kund-ID till profil-ID:t. Markera alternativet **Lägg till en alternativ sökväg om en timeout eller ett fel inträffar**.
 
    ![](assets/action-response10.png)
 
-1. Lägg till ett villkor i den första grenen och använd den avancerade redigeraren för att utnyttja åtgärdssvarsfälten, under **Kontext** nod.
+1. Lägg till ett villkor i den första grenen och använd den avancerade redigeraren för att utnyttja åtgärdssvarsfälten, under noden **Kontext** .
 
    ![](assets/action-response6.png)
 
@@ -143,8 +143,8 @@ Du kan till exempel lägga till ett villkor för att kontrollera antalet förmå
    >
    >Varje profil som anger den anpassade åtgärden utlöser ett anrop. Även om svaret alltid är detsamma kommer Journey fortfarande att ringa ett samtal per profil.
 
-1. Lägg till ett villkor och utnyttja det inbyggda **jo_status_code** fält. I vårt exempel använder vi
-   **http_400** feltyp. Se [det här avsnittet](#error-status).
+1. Lägg till ett villkor i timeout- och felgrenen och utnyttja det inbyggda fältet **jo_status_code**. I vårt exempel använder vi
+   **http_400** -feltyp. Se [det här avsnittet](#error-status).
 
    ```
    @action{ActionLoyalty.jo_status_code} == "http_400"
@@ -158,26 +158,26 @@ Du kan till exempel lägga till ett villkor för att kontrollera antalet förmå
 
 ## Loggar för testläge {#test-mode-logs}
 
-I testläge har du åtkomst till statusloggar som är relaterade till anpassade åtgärdssvar. Om du har definierat anpassade åtgärder med svar under din resa visas en **actionsHistory** -avsnittet på dessa loggar med den nyttolast som returneras av den externa slutpunkten (som ett svar från den anpassade åtgärden). Detta kan vara mycket användbart när det gäller felsökning.
+I testläge har du åtkomst till statusloggar som är relaterade till anpassade åtgärdssvar. Om du har definierat anpassade åtgärder med svar under din resa, visas ett **actionsHistory** -avsnitt i loggarna med den nyttolast som returneras av den externa slutpunkten (som ett svar från den anpassade åtgärden). Detta kan vara mycket användbart när det gäller felsökning.
 
 ![](assets/action-response12.png)
 
 ## Felstatus {#error-status}
 
-The **jo_status_code** -fältet är alltid tillgängligt även när ingen svarsnyttolast har definierats.
+Fältet **jo_status_code** är alltid tillgängligt även när ingen svarsnyttolast har definierats.
 
 Här är möjliga värden för det här fältet:
 
 * http-statuskod: http_`<HTTP API call returned code>`, till exempel http_200 eller http_400
-* timeout-fel: **tidsgränsen**
-* capping-fel: **mappad**
+* timeout-fel: **timeout**
+* capping-fel: **cApped**
 * internt fel: **internalError**
 
 Ett åtgärdsanrop hanteras av fel när den returnerade http-koden är större än 2xx eller om ett fel inträffar. I sådana fall skickas resan till den särskilda tidsgränsen eller felavdelningen.
 
 >[!WARNING]
 >
->Endast nya anpassade åtgärder innehåller **jo_status_code** fältet är körklart. Om du vill använda den med en befintlig anpassad åtgärd måste du uppdatera åtgärden. Du kan till exempel uppdatera beskrivningen och spara den.
+>Endast nyligen skapade anpassade åtgärder inkluderar fältet **jo_status_code** som är körklar. Om du vill använda den med en befintlig anpassad åtgärd måste du uppdatera åtgärden. Du kan till exempel uppdatera beskrivningen och spara den.
 
 ## Uttryckssyntax {#exp-syntax}
 
@@ -202,7 +202,7 @@ Här är några exempel:
  @action{ActionLoyalty.points, defaultValue: @event{myEvent.newPoints}}
 ```
 
-När du hanterar samlingar i ett anpassat funktionsmakro kan du lita på `currentActionField` för att komma åt det aktuella objektet:
+När du ändrar samlingar i ett anpassat åtgärdssvar kan du förlita dig på `currentActionField` för att komma åt det aktuella objektet:
 
 ```json
 count(

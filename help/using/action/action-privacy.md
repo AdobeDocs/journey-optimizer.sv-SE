@@ -33,7 +33,7 @@ Mer information om ramverket för datastyrning och hur du arbetar med etiketter 
 
 * [Översikt över tjänsten Datastyrning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html)
 * [Översikt över etiketter för dataanvändning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/overview.html)
-* [Dataanvändningspolicyer](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html)
+* [Dataanvändningsprinciper](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html)
 
 ## Viktiga anteckningar {#important-notes}
 
@@ -48,48 +48,48 @@ Du kan använda befintliga etiketter, marknadsföringsåtgärder och policyer. H
 * Definiera en marknadsföringsåtgärd för varje anpassad åtgärd från tredje part som används på dina resor.
 * Skapa en styrningspolicy och koppla den till etikett- och marknadsföringsåtgärden.
 
-Mer information om hur du hanterar principer finns i [dokumentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy)
+Mer information om hur du hanterar principer finns i [dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy)
 
 Låt oss ta ett exempel på det blodtypsfält som du måste märka som känsligt och begränsa dig från att exporteras till tredje part. Här är de olika stegen:
 
-1. I den vänstra menyn, under **Integritet**, klicka **Profiler**.
-1. Välj **Etiketter** och klicka **Skapa etikett**.
+1. Klicka på **Profiler** under **Integritet** på den vänstra menyn.
+1. Välj fliken **Etiketter** och klicka på **Skapa etikett**.
    ![](assets/action-privacy1.png)
-1. Definiera ett namn och ett eget namn för den här etiketten. Till exempel: _ePHI1_.
-1. I den vänstra menyn, under **Datahantering**, klicka **Scheman** och klickar på **Använd etiketter för åtkomst och datastyrning** -knappen. Välj schema och fält (blodtyp) och markera den tidigare skapade etiketten, _ePHI1_ i vårt exempel.
+1. Definiera ett namn och ett eget namn för den här etiketten. Exempel: _ePHI1_.
+1. Klicka på **Scheman** under **Datahantering** på den vänstra menyn och klicka sedan på knappen **Använd åtkomst- och datastyrningsetiketter** . Markera ditt schema och fält (blodtyp) och markera den etikett som skapats tidigare, _ePHI1_ i vårt exempel.
    ![](assets/action-privacy3.png)
-1. Gå tillbaka till **Profiler** väljer du **Marknadsföringsåtgärd** och klicka **Skapa marknadsföringsåtgärd**. Vi rekommenderar att ni skapar en marknadsföringsåtgärd för varje anpassad åtgärd från tredje part som används på era resor. Låt oss skapa en _Marknadsföringsåtgärder för Slack_ som kommer att användas för din anpassade Slack-åtgärd.
+1. Gå tillbaka till menyn **Profiler**, välj fliken **Marknadsföringsåtgärd** och klicka på **Skapa marknadsföringsåtgärd**. Vi rekommenderar att ni skapar en marknadsföringsåtgärd för varje anpassad åtgärd från tredje part som används på era resor. Låt oss till exempel skapa en _Slack-marknadsföringsåtgärd_ som ska användas för din anpassade Slack-åtgärd.
    ![](assets/action-privacy4.png)
-1. Välj **Bläddra** flik, klicka **Skapa princip** och markera **Datastyrningspolicy**. Välj etikett (_ePHI1_) och marknadsföringsåtgärder (_Marknadsföringsåtgärder för Slack_).
+1. Välj fliken **Bläddra**, klicka på **Skapa princip** och välj **Datastyrningsprincip**. Markera etiketten (_ePHI1_) och marknadsföringsåtgärden (_Slack marknadsföringsåtgärd_).
    ![](assets/action-privacy5.png)
 
-När du ska använda din anpassade Slack-åtgärd i en resa konfigurerad med _Marknadsföringsåtgärder för Slack_, kommer den tillhörande policyn att utnyttjas.
+När du ska använda din anpassade Slack-åtgärd som konfigurerats med _Slack marknadsföringsåtgärden_ på en resa, kommer den associerade principen att utnyttjas.
 
 ## Konfigurera den anpassade åtgärden {#consent-custom-action}
 
-I den vänstra menyn, under **Administration**, klicka **Konfigurationer** och markera **Åtgärder**. Öppna din anpassade Slack-åtgärd. När du konfigurerar en anpassad åtgärd kan två fält användas för datastyrning.
+Klicka på **Konfigurationer** under **Administration** på den vänstra menyn och välj **Åtgärder**. Öppna din anpassade Slack-åtgärd. När du konfigurerar en anpassad åtgärd kan två fält användas för datastyrning.
 
 ![](assets/action-privacy6.png)
 
-* The **Kanal** kan du välja kanal för den här anpassade åtgärden: **E-post**, **SMS**, eller **Push-meddelande**. Den fyller i **Obligatorisk marknadsföringsåtgärd** fält med standardmarknadsföringsåtgärd för den valda kanalen. Om du väljer **övriga**, kommer inga marknadsföringsåtgärder att definieras som standard. I vårt exempel väljer vi kanalen **övriga**.
+* I fältet **Kanal** kan du välja kanal som är relaterad till den här anpassade åtgärden: **E-post**, **SMS** eller **Push-meddelande**. Det kommer att förifylla fältet **Obligatorisk marknadsföringsåtgärd** med standardmarknadsföringsåtgärden för den valda kanalen. Om du väljer **other** definieras ingen marknadsföringsåtgärd som standard. I vårt exempel väljer vi kanalen **other**.
 
-* The **Obligatorisk marknadsföringsåtgärd** gör att du kan definiera de marknadsföringsåtgärder som är kopplade till din anpassade åtgärd. Om du till exempel använder den anpassade åtgärden för att skicka e-post med en tredje part kan du välja **Målgruppsanpassning**. I vårt exempel väljer vi _Marknadsföringsåtgärder för Slack_. De styrningsprinciper som är kopplade till marknadsföringsåtgärden hämtas och utnyttjas.
+* Med den **obligatoriska marknadsföringsåtgärden** kan du definiera marknadsföringsåtgärden som är relaterad till din anpassade åtgärd. Om du till exempel använder den anpassade åtgärden för att skicka e-post med en tredje part kan du välja **E-postmarknadsföring**. I vårt exempel väljer vi marknadsföringsåtgärden _Slack_. De styrningsprinciper som är kopplade till marknadsföringsåtgärden hämtas och utnyttjas.
 
-De andra stegen för att konfigurera en anpassad åtgärd finns i [det här avsnittet](../action/about-custom-action-configuration.md#consent-management).
+De andra stegen för att konfigurera en anpassad åtgärd beskrivs i [det här avsnittet](../action/about-custom-action-configuration.md#consent-management).
 
 ## Bygg resan {#consent-journey}
 
-I den vänstra menyn, under **Resehantering**, klicka **Resor**. Skapa din resa och lägg till en anpassad åtgärd.  När du lägger till en anpassad åtgärd under en resa kan du hantera datastyrning med flera alternativ. Klicka på **Visa skrivskyddade fält** för att visa alla parametrar.
+Klicka på **Resor** på den vänstra menyn under **Resehantering**. Skapa din resa och lägg till en anpassad åtgärd.  När du lägger till en anpassad åtgärd under en resa kan du hantera datastyrning med flera alternativ. Klicka på **Visa skrivskyddade fält** om du vill visa alla parametrar.
 
-The **Kanal** och **Obligatorisk marknadsföringsåtgärd**, som definieras när den anpassade åtgärden konfigureras, visas längst upp på skärmen. Du kan inte ändra dessa fält.
+Marknadsföringsåtgärden **Kanal** och **Obligatorisk**, som definieras när den anpassade åtgärden konfigureras, visas längst upp på skärmen. Du kan inte ändra dessa fält.
 
 ![](assets/action-privacy7.png)
 
-Du kan definiera en **Ytterligare marknadsföringsåtgärder** för att ange typ av anpassad åtgärd. På så sätt kan du definiera syftet med den anpassade åtgärden under den här resan. Utöver den nödvändiga marknadsföringsåtgärden, som vanligtvis är specifik för en kanal, kan ni definiera ytterligare en marknadsföringsåtgärd som är specifik för den anpassade åtgärden under den här resan. Exempel: en träningskommunikation, ett nyhetsbrev, ett friskvårdsmeddelande osv. Både den marknadsföringsåtgärd som krävs och den ytterligare marknadsföringsåtgärden gäller.
+Du kan definiera en **ytterligare marknadsföringsåtgärd** för att ange typen av anpassad åtgärd. På så sätt kan du definiera syftet med den anpassade åtgärden under den här resan. Utöver den nödvändiga marknadsföringsåtgärden, som vanligtvis är specifik för en kanal, kan ni definiera ytterligare en marknadsföringsåtgärd som är specifik för den anpassade åtgärden under den här resan. Exempel: en träningskommunikation, ett nyhetsbrev, ett friskvårdsmeddelande osv. Både den marknadsföringsåtgärd som krävs och den ytterligare marknadsföringsåtgärden gäller.
 
 I vårt exempel använder vi inte någon ytterligare marknadsföringsåtgärd.
 
-Om något av fälten är märkt _ePHI1_ (fältet för blodtyp i vårt exempel) upptäcks i åtgärdsparametrarna, ett fel visas som förhindrar dig från att publicera resan.
+Om ett av fälten med etiketten _ePHI1_ (blodet i vårt exempel) identifieras i åtgärdsparametrarna visas ett fel som förhindrar dig från att publicera resan.
 
 ![](assets/action-privacy8.png)
 

@@ -8,14 +8,14 @@ level: Experienced
 exl-id: 1eb19ff1-b210-4891-ab41-5488e2635527
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 4%
+source-wordcount: '109'
+ht-degree: 3%
 
 ---
 
 # Ta bort ett beslut {#delete-decision}
 
-Ibland kan det vara nödvändigt att ta bort (DELETE) ett beslut. Detta görs genom att en DELETE-begäran görs till [!DNL Offer Library] API med `id` av det beslut du vill ta bort.
+Ibland kan det vara nödvändigt att ta bort (DELETE) ett beslut. Detta görs genom att utföra en DELETE-begäran till [!DNL Offer Library]-API:t med `id` för det beslut som du vill ta bort.
 
 **API-format**
 

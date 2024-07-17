@@ -33,19 +33,19 @@ I många fall ger den en kort sammanfattning av e-postmeddelandet och är vanlig
 
 Följ stegen nedan för att definiera e-postprerubriken:
 
-1. Lägg till minst en **[!UICONTROL Structure components]** för att börja designa din e-post.
+1. Lägg till minst en **[!UICONTROL Structure components]** från e-post-Designer för att börja designa ditt e-postmeddelande.
 
-1. Klicka på **[!UICONTROL Navigation tree]** ikonen i den vänstra rutan och väljer **[!UICONTROL Body]**.
+1. Klicka på ikonen **[!UICONTROL Navigation tree]** i den vänstra rutan och välj **[!UICONTROL Body]**.
 
    ![](assets/preheader_body.png)
 
-1. Från **[!UICONTROL Settings]** klickar du på ikonen för anpassning bredvid **[!UICONTROL Preheader]** fält för att lägga till innehåll.
+1. Klicka på personaliseringsikonen bredvid fältet **[!UICONTROL Preheader]** på fliken **[!UICONTROL Settings]** för att lägga till innehåll.
 
    ![](assets/preheader_body_settings.png)
 
-1. Från **[!UICONTROL Edit Personalization]** fönster, du kan lägga till **[!UICONTROL Content block]**, **[!UICONTROL Dynamic content]** eller **[!UICONTROL Personalization fields]**.
+1. I fönstret **[!UICONTROL Edit Personalization]** kan du lägga till **[!UICONTROL Content block]**, **[!UICONTROL Dynamic content]** eller **[!UICONTROL Personalization fields]**.
 
-1. Klicka **[!UICONTROL Validate]** för att kontrollera din personaliseringssyntax.
+1. Klicka på **[!UICONTROL Validate]** för att kontrollera din personaliseringssyntax.
 
    ![](assets/preheader_4.png)
 

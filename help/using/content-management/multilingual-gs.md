@@ -27,7 +27,7 @@ Med den flerspråkiga funktionen kan ni enkelt skapa innehåll på flera språk 
 
 Med Journey Optimizer kan du skapa flerspråkigt innehåll på två olika sätt:
 
-* **Manuell översättning**: Översätt materialet direkt i e-post-Designer eller importera befintligt flerspråkigt innehåll. [Läs mer](multilingual-manual.md)
+* **Manuell översättning**: Översätt ditt innehåll direkt i e-post-Designer eller importera befintligt flerspråkigt innehåll. [Läs mer](multilingual-manual.md)
 
 * **Automatisk översättning**: Skicka innehåll till den önskade språkleverantören för automatisk översättning. [Läs mer](multilingual-automated.md)
 

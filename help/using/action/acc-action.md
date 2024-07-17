@@ -25,9 +25,9 @@ ht-degree: 0%
 
 Den här integreringen är tillgänglig för Adobe Campaign v7/v8 från och med version 7.1 och Adobe Campaign v8. Det gör att du kan skicka e-post, push-meddelanden och SMS med Adobe Campaign Transactional Messaging-funktioner.
 
-Ett heltäckande exempel på användning presenteras i detta [section](../building-journeys/ajo-ac.md).
+Ett slutanvändarfall visas i det här [avsnittet](../building-journeys/ajo-ac.md).
 
-För varje konfigurerad åtgärd finns en åtgärdsaktivitet tillgänglig på paletten Resursdesigner. Se detta [section](../building-journeys/using-adobe-campaign-v7-v8.md).
+För varje konfigurerad åtgärd finns en åtgärdsaktivitet tillgänglig på paletten Resursdesigner. Se det här [avsnittet](../building-journeys/using-adobe-campaign-v7-v8.md).
 
 ## Åtkomst {#access}
 
@@ -56,9 +56,9 @@ Från Adobe Campaign:
 
 * Du kan inte använda en Campaign-åtgärd med en publikkvalificeringshändelse.
 
-## Förutsättningar {#prerequisites}
+## Förhandskrav {#prerequisites}
 
-I Campaign måste du skapa och publicera ett transaktionsmeddelande och tillhörande händelse. Se [Adobe Campaign-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html#transactional-messaging){target="_blank"}.
+I Campaign måste du skapa och publicera ett transaktionsmeddelande och tillhörande händelse. Se [Adobe Campaign-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html#transactional-messaging){target="_blank"}.
 
 Du kan skapa din JSON-nyttolast som motsvarar varje meddelande enligt mönstret nedan. Du klistrar sedan in nyttolasten när du konfigurerar åtgärden i Journey Optimizer (se nedan)
 
@@ -75,19 +75,19 @@ Här är ett exempel:
 }
 ```
 
-* **kanal**: den kanal som har definierats för er transaktionsmall för Campaign
+* **kanal**: kanalen som är definierad för din transaktionsmall för Campaign
 * **eventType**: det interna namnet på Campaign-händelsen
-* **ctx**: variabel baserad på den personalisering du har i ditt meddelande.
+* **ctx**: variabel baserad på den personalisering du har i meddelandet.
 
 ## Konfigurera åtgärden {#configure-action}
 
 I Journey Optimizer måste du konfigurera en åtgärd per transaktionsmeddelande. Följ de här stegen:
 
-1. Skapa en ny åtgärd. Se detta [section](../action/action.md).
+1. Skapa en ny åtgärd. Se det här [avsnittet](../action/action.md).
 1. Ange namn och beskrivning.
-1. I **Åtgärdstyp** fält, markera **Adobe Campaign Classic**.
-1. Klicka på **Nyttolast** och klistra in ett exempel på JSON-nyttolasten som motsvarar kampanjmeddelandet. Kontakta Adobe för att få denna nyttolast.
+1. I fältet **Åtgärdstyp** väljer du **Adobe Campaign Classic**.
+1. Klicka i fältet **Nyttolast** och klistra in ett exempel på JSON-nyttolasten som motsvarar Campaign-meddelandet. Kontakta Adobe för att få denna nyttolast.
 1. Justera de olika fälten så att de blir statiska eller variabla beroende på om du vill mappa dem på arbetsytan på resan. Vissa fält, till exempel kanalparametrar för e-postadresser och anpassningsfält (ctx), kan behöva definieras som variabler för mappning i samband med resan.
-1. Klicka **Spara**.
+1. Klicka på **Spara**.
 
 ![](assets/accintegration1.png)

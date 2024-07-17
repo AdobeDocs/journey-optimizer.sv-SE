@@ -23,17 +23,17 @@ Scheman är standardmetoden för att beskriva data i Experience Platform, vilket
 
 Ett schema är en uppsättning regler som representerar och validerar datastrukturen och dataformatet. På en hög nivå ger scheman en abstrakt definition av ett objekt i verkligheten (till exempel en person) och ger en översikt över vilka data som ska inkluderas i varje instans av objektet (till exempel förnamn, efternamn, födelsedag o.s.v.).
 
-Lär dig skapa scheman i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html){target="_blank"}
+Lär dig hur du skapar scheman i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html){target="_blank"}
 
-The **Scheman** arbetsyta i [!DNL Adobe Journey Optimizer] Med användargränssnittet kan du hantera XDM-resurser (Experience Data Model), inklusive scheman, klasser, schemafältgrupper och datatyper. Du kan visa och utforska kärnresurser från Adobe och skapa anpassade resurser och scheman för din organisation.
+Med arbetsytan **Scheman** i användargränssnittet [!DNL Adobe Journey Optimizer] kan du hantera Experience Data Model-resurser (XDM), inklusive scheman, klasser, schemafältgrupper och datatyper. Du kan visa och utforska kärnresurser från Adobe och skapa anpassade resurser och scheman för din organisation.
 
 ![](assets/schemas-home.png)
 
 Lär dig hur du använder schemaanvändargränssnittet i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html){target="_blank"}
 
-Stegvis dokumentation om hur du skapar ett schema med Schemaredigeraren finns i [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html){target="_blank"}
+Stegvis dokumentation om hur du skapar ett schema med Schemaredigeraren finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html){target="_blank"}
 
-Om du vill visa en fullständig lista över fält och attribut för varje schema läser du i [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
+Om du vill visa en fullständig lista över fält och attribut för varje schema kan du läsa [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
 
 
 ## Instruktionsvideo{#video-schema}
@@ -45,7 +45,7 @@ Lär dig hur du skapar ett schema, lägger till fältgrupper, skapar och konfigu
 >[!MORELIKETHIS]
 >
 >* [Skapa ett schema, en datauppsättning och inmatningsdata för att lägga till testprofiler i Journey Optimizer](../audience/creating-test-profiles.md)
->* [XDM - systemöversikt](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}
+>* [Översikt över XDM-systemet](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}
 >* [Bästa tillvägagångssätt för datamodellering](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html){target="_blank"}
 >* [Skapa ett schema med API:t för schemaregister](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-api.html){target="_blank"}
 >* [Definiera en relation mellan två scheman med Schemaredigeraren](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html){target="_blank"}

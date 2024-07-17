@@ -15,14 +15,14 @@ ht-degree: 12%
 
 # Åtkomst till den exporterade erbjudandekatalogen {#access-exported-catalog}
 
-Katalogen för exporterade erbjudanden är tillgänglig i Adobe Experience Platform **[!UICONTROL Datasets]** -menyn. En datauppsättning skapas för varje objekt i erbjudandebiblioteket.
+Katalogen för det exporterade erbjudandet är tillgänglig på Adobe Experience Platform **[!UICONTROL Datasets]**-menyn. En datauppsättning skapas för varje objekt i erbjudandebiblioteket.
 
 ![](../assets/datasets-list.png)
 
 Klicka på en datauppsättning för att komma åt informationen om den.
 
-The **[!UICONTROL Preview dataset]** kan du visa den senaste lyckade gruppen i datauppsättningen.
+Med knappen **[!UICONTROL Preview dataset]** kan du visa den senaste lyckade gruppen i datauppsättningen.
 
 ![](../assets/dataset-activity.png)
 
-Mer information om hur du bläddrar bland och använder datauppsättningar finns i [den här sidan](../../data/get-started-datasets.md).
+Mer information om hur du bläddrar bland och använder datauppsättningar finns på [den här sidan](../../data/get-started-datasets.md).

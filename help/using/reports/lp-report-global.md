@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: e88cf8ad-986a-4e4c-8921-d406c6876031
 source-git-commit: 03c714833930511fa734662b637d2416728073c2
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -24,49 +24,49 @@ ht-degree: 0%
 
 Globala rapporter, som du kommer åt från fliken All time, visar händelser som inträffat för minst två timmar sedan och täcker händelser under en vald tidsperiod. Live-rapporter fokuserar på händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten.
 
-Om du vill komma åt dina rapporter väljer du **[!UICONTROL Report]** på den avancerade menyn på den valda landningssidan.
+Om du vill få åtkomst till dina rapporter väljer du **[!UICONTROL Report]** på den avancerade menyn på den valda landningssidan.
 
 ![](assets/landing_page_report.png)
 
-Landningssidan **[!UICONTROL Global report]** är uppdelat i olika widgetar som detaljerat beskriver leveransens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information om detta finns i [section](global-report.md).
+Landningssidan **[!UICONTROL Global report]** är uppdelad i olika widgetar med information om leveransens framgång och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [avsnittet](global-report.md).
 
 ![](assets/landing_page_global.png)
 
 +++Läs mer om de olika mätvärden och widgetar som är tillgängliga för den globala rapporten om landningssidan.
 
-The **[!UICONTROL Number of visits]** och **[!UICONTROL Number of visits over time]** Med widgetar kan du se effekten av landningssidan under den valda tidsperioden genom ett diagram och KPI:er med följande mått:
+Med widgetarna **[!UICONTROL Number of visits]** och **[!UICONTROL Number of visits over time]** kan du se effekten av din landningssida under den valda tidsperioden genom ett diagram och KPI:er med följande mått:
 
-* **[!UICONTROL Total visits]**: Totalt antal besök på landningssidan som kommer från resor och externa källor, inklusive flera besök av en mottagare.
+* **[!UICONTROL Total visits]**: Totalt antal besök på din landningssida som kommer från resor och externa källor, inklusive flera besök av en mottagare.
 
-* **[!UICONTROL Unique visitors]**: Antal personer som besökte din landningssida beaktas inte flera besök av en mottagare.
+* **[!UICONTROL Unique visitors]**: Antal personer som besökte din landningssida, flera besök av en mottagare beaktas inte.
 
-The **[!UICONTROL Landing page performance]** widgeten innehåller information om huvudinformationen i förhållande till meddelandet via KPI:er:
+Widgeten **[!UICONTROL Landing page performance]** visar huvudinformationen i relation till meddelandet via KPI:er:
 
 * **[!UICONTROL Conversion rate]**: Antal personer som interagerat med landningssidan, t.ex. prenumererat på ett formulär, i förhållande till det totala antalet besök.
 
 * **[!UICONTROL Bounce rate]**: Antal personer som inte interagerade med landningssidan och inte slutförde prenumerationsåtgärden i förhållande till det totala antalet besök.
 
-The **[!UICONTROL Visit sources]** widgeten visar hur besökare kommer åt din landningssida:
+Widgeten **[!UICONTROL Visit sources]** visar hur besökare kommer åt din landningssida:
 
-* **[!UICONTROL Journey(s)]**: Antal besök på landningssidan som kommer från en resa.
+* **[!UICONTROL Journey(s)]**: Antal besök på din landningssida som kommer från en resa.
 
-* **[!UICONTROL Other sources]**: Antal besök på landningssidan som kommer från en extern källa i stället för en resa.
+* **[!UICONTROL Other sources]**: Antal besök på din landningssida som kommer från en extern källa i stället för en resa.
 
-The **[!UICONTROL Top clicked links]** identifierar besökarnas interaktion med leveransen:
+**[!UICONTROL Top clicked links]** identifierar besökarnas interaktion med leveransen:
 
 * **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på på landningssidan.
 
 * **[!UICONTROL Click rate]**: Procentandel klick på landningssidan.
 
-The **[!UICONTROL Journey(s)]** widgeten visar antalet besök på din landningssida från en resa:
+Widgeten **[!UICONTROL Journey(s)]** representerar antalet besök på din landningssida från en resa:
 
-* **[!UICONTROL Visits]**: Antal besök på landningssidan, inklusive flera besök av en mottagare.
+* **[!UICONTROL Visits]**: Antal besök på din landningssida, inklusive flera besök av en mottagare.
 
-The **[!UICONTROL Other sources]** widgeten representerar antalet besök på din landningssida från en extern källa i stället för en resa.
+Widgeten **[!UICONTROL Other sources]** representerar antalet besök på din landningssida från en extern källa i stället för en resa.
 
-The **[!UICONTROL Visits by messages]** / **[!UICONTROL Conversions by messages]** diagram visar det totala antalet besök och personer som lyckades interagera med landningssidan under den aktuella perioden, beroende på skickade meddelanden.
+Diagrammen **[!UICONTROL Visits by messages]** / **[!UICONTROL Conversions by messages]** representerar det totala antalet besök och personer som interagerat framgångsrikt med landningssidan under den aktuella perioden, beroende på skickade meddelanden.
 
-The **[!UICONTROL Visits by channels]** / **[!UICONTROL Conversions by channels]** Diagrammen visar det totala antalet besök och personer som lyckades interagera med landningssidan under den aktuella perioden, beroende på kanalerna.
+Diagrammen **[!UICONTROL Visits by channels]** / **[!UICONTROL Conversions by channels]** representerar det totala antalet besök och personer som interagerat framgångsrikt med landningssidan under den aktuella perioden, beroende på kanalerna.
 +++
 
 En detaljerad lista över alla mätvärden som är tillgängliga i Adobe Journey Optimizer finns på [den här sidan](global-report.md#list-of-components-global).

@@ -72,7 +72,7 @@ Den angivna tidsstämpeln fungerar som datum-/tidsvärde, den andra är antalet 
 
 Det här uttrycket returnerar ett booleskt värde.
 
-**Nu ska vi skapa ett uttryck som kontrollerar att produkten finns i lager**
+**Låt oss nu skapa ett uttryck som kontrollerar att produkten finns i lager**
 
 * I Inventory söker det här uttrycket efter kvantitetsfält för en produkt och anger att det ska vara större än 0.
 
@@ -82,7 +82,7 @@ Det här uttrycket returnerar ett booleskt värde.
 
 `#{ArriveLumaStudio._acpevangelists1.location.location}`
 
-* Och ange SKU med funktionen `first` för att hämta den senaste&quot;addToCart&quot;-interaktionen:
+* Ange SKU och använd funktionen `first` för att hämta den senaste addToCart-åtgärden:
 
   ```json
       #{ExperiencePlatformDataSource
@@ -112,9 +112,9 @@ Detta villkor hämtar endast geofence-händelser som utlöses i&quot;Arlington&q
                     .name} == "Arlington"
 ```
 
-Förklaring: Detta är en strikt strängjämförelse (skiftlägeskänslig), som motsvarar en fråga i enkelt läge som använder `equal to` med `Is sensitive` markerad.
+Förklaring: Detta är en strikt strängjämförelse (skiftlägeskänslig), som motsvarar en fråga i enkelt läge där `equal to` används med `Is sensitive` markerat.
 
-Samma fråga med `Is sensitive` om du inte markerar det här alternativet genereras följande uttryck i avancerat läge:
+Samma fråga med `Is sensitive` avmarkerat genererar följande uttryck i avancerat läge:
 
 ```json
         equalIgnoreCase(@event{GeofenceEntry
@@ -124,7 +124,7 @@ Samma fråga med `Is sensitive` om du inte markerar det här alternativet genere
                         .name}, "Arlington")
 ```
 
-**I funktionsmakron**
+**I åtgärder**
 
 Följande uttryck gör att du kan definiera CRM-ID:t i ett åtgärdspersonaliseringsfält:
 
@@ -145,6 +145,6 @@ substr(
 )
 ```
 
-Förklaring: I det här exemplet används `substr` och `lastIndexOf` funktioner för att ta bort klammerparenteser som omger det CRM-ID som skickas med en starthändelse för mobilappar.
+Förklaring: I det här exemplet används funktionerna `substr` och `lastIndexOf` för att ta bort klammerparenteser som omger det CRM-ID som skickas med en starthändelse för en mobilapp.
 
-Mer information om hur du använder den avancerade uttrycksredigeraren finns i [den här videon](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/introduction-to-building-a-journey.html).
+Titta på [den här videon](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/introduction-to-building-a-journey.html) om du vill veta mer om hur du använder den avancerade uttrycksredigeraren.

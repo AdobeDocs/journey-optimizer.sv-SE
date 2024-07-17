@@ -9,14 +9,14 @@ keywords: nowWithDelta, funktion, uttryck, resa
 exl-id: cb1eb221-8532-4637-ac6c-8e058463ac94
 source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 6%
+source-wordcount: '114'
+ht-degree: 4%
 
 ---
 
 # nowWithDelta {#nowWithDelta}
 
-Returnerar aktuell datetime inklusive en offset. Om ett tidszon-ID anges används tidszonsförskjutningen. Mer information om datatyper finns i [den här sidan](../expression/data-types.md).
+Returnerar aktuell datetime inklusive en offset. Om ett tidszon-ID anges används tidszonsförskjutningen. Mer information om datatyper finns på [den här sidan](../expression/data-types.md).
 
 ## Kategori
 

@@ -11,7 +11,7 @@ keywords: resa, taggar
 exl-id: 44c255d1-121c-47d4-b407-161626ca3cb4
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ Som Journey Optimizer-läkare kan du ordna dina resor med hjälp av taggar. Tagg
 
 ## Lägga till taggar till en resa
 
-The **Taggar** -fältet, i reseegenskaperna, gör att du kan definiera taggar för din resa. Du kan antingen markera en befintlig tagg eller skapa en ny. Börja skriva namnet på den önskade taggen och markera den i listan. Om den inte är tillgänglig klickar du på **Skapa** för att skapa en ny och lägga till den på din resa. Du kan definiera så många taggar som behövs.
+I fältet **Taggar** i resans egenskaper kan du definiera taggar för din resa. Du kan antingen markera en befintlig tagg eller skapa en ny. Börja skriva namnet på den önskade taggen och markera den i listan. Om den inte är tillgänglig klickar du på **Skapa** för att skapa en ny och lägga till den på din resa. Du kan definiera så många taggar som behövs.
 
 ![](assets/tags1.png)
 
-Listan med definierade taggar visas under **Taggar** fält.
+Listan med definierade taggar visas under fältet **Taggar**.
 
 >[!NOTE]
 >
@@ -42,13 +42,13 @@ Ett filter är också tillgängligt för att endast visa resor med vissa taggar.
 
 ![](assets/tags2.png)
 
-Du kan lägga till eller ta bort taggar från alla typer av resor (live, draft, etc.). Klicka på **Fler åtgärder** -ikon bredvid resan och välj **Redigera taggar**.
+Du kan lägga till eller ta bort taggar från alla typer av resor (live, draft, etc.). Klicka på ikonen **Fler åtgärder** bredvid resan och välj **Redigera taggar**.
 
 ![](assets/tags3.png)
 
 ## Hantera taggar
 
-Administratörer kan ta bort taggar och ordna dem efter kategorier med hjälp av **Taggar** meny, under **ADMINISTRATION**. Se detta [dokumentation](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/overview.html).
+Administratörer kan ta bort taggar och ordna dem efter kategorier med hjälp av menyn **Taggar** under **ADMINISTRATION**. Läs den här [dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/overview.html).
 
 >[!NOTE]
 >

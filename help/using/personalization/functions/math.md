@@ -9,7 +9,7 @@ exl-id: b9149ad6-2be7-4bdf-82eb-7ab52780cb4e
 source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -19,7 +19,7 @@ Lär dig använda Math-funktioner i personaliseringsredigeraren.
 
 ## Absolut {#absolute}
 
-The `absolute` -funktionen används för att konvertera ett tal som är absolut värde.
+Funktionen `absolute` används för att konvertera ett tal som är absolut värde.
 
 **Syntax**
 
@@ -29,7 +29,7 @@ The `absolute` -funktionen används för att konvertera ett tal som är absolut 
 
 ## formatNumber {#format-number}
 
-The `formatNumber` -funktionen används för att formatera valfritt tal till sin språkkänsliga representation.
+Funktionen `formatNumber` används för att formatera valfritt tal till dess språkkänsliga representation.
 
 Den accepterar ett tal och en sträng som representerar språkområdet och returnerar en formaterad sträng med talet i det önskade språkområdet.
 
@@ -39,7 +39,7 @@ Den accepterar ett tal och en sträng som representerar språkområdet och retur
 {%= formatNumber(number/double,string) %}: string
 ```
 
-Du kan använda formatering och giltiga språkområden enligt sammanfattningen i [Oraclets dokumentation](https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html) och [Språk som stöds](https://www.oracle.com/java/technologies/javase/jdk11-suported-locales.html){_blank}
+Du kan använda formatering och giltiga språkinställningar enligt sammanfattningen i [Oraclets dokumentation](https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html) och [Språkinställningar som stöds](https://www.oracle.com/java/technologies/javase/jdk11-suported-locales.html){_blank}
 
 **Exempel**
 
@@ -51,7 +51,7 @@ Den här frågan returnerar en formaterad sträng på arabiska som motsvarar 123
 
 ## Slumpmässig {#random}
 
-The `random` används för att returnera ett slumpmässigt värde mellan 0 och 1.
+Funktionen `random` används för att returnera ett slumpmässigt värde mellan 0 och 1.
 
 **Syntax**
 
@@ -61,7 +61,7 @@ The `random` används för att returnera ett slumpmässigt värde mellan 0 och 1
 
 ## Avrunda nedåt {#round-down}
 
-The `roundDown` -funktionen används för att avrunda ett tal nedåt.
+Funktionen `roundDown` används för att avrunda ett tal.
 
 **Syntax**
 
@@ -71,7 +71,7 @@ The `roundDown` -funktionen används för att avrunda ett tal nedåt.
 
 ## Avrunda uppåt {#round-up}
 
-The `Count only null` -funktionen används för att avrunda ett tal.
+Funktionen `Count only null` används för att avrunda ett tal.
 
 **Syntax**
 
@@ -81,7 +81,7 @@ The `Count only null` -funktionen används för att avrunda ett tal.
 
 ## Till hexadecimal sträng {#to-hex-string}
 
-The `toHexString` funktionen konverterar alla tal till sin hexadecimala sträng.
+Funktionen `toHexString` konverterar alla tal till sin hexadecimala sträng.
 
 **Syntax**
 
@@ -99,7 +99,7 @@ Frågan returnerar det hexadecimala värdet 158, dvs 9e.
 
 ## Till int {#to-int}
 
-The `toInt` används för att konvertera någon av dessa typer (tal, double, int, long, float, short, byte, boolean, string) till ett heltal.
+Funktionen `toInt` används för att konvertera någon av dessa typer (number, double, int, long, float, short, byte, boolean, string) till ett heltal.
 
 **Syntax**
 
@@ -117,7 +117,7 @@ Den här frågan returnerar heltalsvärdet 42,6, dvs. 42.
 
 ## Till procent {#to-percentage}
 
-The `toPercentage` används för att konvertera ett tal till ett procenttal.
+Funktionen `toPercentage` används för att konvertera ett tal till procent.
 
 **Syntax**
 
@@ -127,7 +127,7 @@ The `toPercentage` används för att konvertera ett tal till ett procenttal.
 
 ## Till precision {#to-precision}
 
-The `toPrecision` -funktionen används för att konvertera ett tal till önskad precision.
+Funktionen `toPrecision` används för att konvertera ett tal till nödvändig precision.
 
 **Syntax**
 
@@ -137,7 +137,7 @@ The `toPrecision` -funktionen används för att konvertera ett tal till önskad 
 
 ## Till sträng {#to-string}
 
-The **toString** funktionen konverterar alla tal till sin strängbeteckning.
+Funktionen **toString** konverterar alla tal till sin strängbeteckning.
 
 **Syntax**
 

@@ -23,7 +23,7 @@ ht-degree: 7%
 >title="Affärshändelser"
 >abstract="Med händelsekonfigurationen kan du definiera den information som Journey Optimizer ska ta emot som händelser. Du kan använda flera händelser (i olika steg på en resa) och flera resor kan använda samma händelse. Till skillnad från enhetshändelser är affärshändelser inte länkade till en viss profil. Händelse-ID-typen är alltid regelbaserad."
 
-Till skillnad från enhetshändelser är affärshändelser inte länkade till en viss profil. Händelse-ID-typen är alltid regelbaserad. Läs mer om affärsevenemang i [det här avsnittet](../event/about-events.md).
+Till skillnad från enhetshändelser är affärshändelser inte länkade till en viss profil. Händelse-ID-typen är alltid regelbaserad. Läs mer om affärshändelser i [det här avsnittet](../event/about-events.md).
 
 Läsningen av målgruppsbaserade resor kan aktiveras i ett enda försök, av en schemaläggare regelbundet eller av en affärshändelse, när händelsen inträffar.
 
@@ -31,7 +31,7 @@ Affärshändelser kan vara&quot;en produkt är tillbaka i lager&quot;,&quot;ett 
 
 >[!NOTE]
 >
->Du kan också titta på hur affärshändelser används [självstudiekurs](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-business-event.html). Observera att schemat inte behöver aktiveras för profilen.
+>Du kan också titta på användningsexemplet [självstudiekurs](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-business-event.html) för affärshändelser. Observera att schemat inte behöver aktiveras för profilen.
 
 ## Viktiga anteckningar {#important-notes}
 
@@ -40,7 +40,7 @@ Affärshändelser kan vara&quot;en produkt är tillbaka i lager&quot;,&quot;ett 
 * Affärsevenemang kan bara tas bort som det första steget i en resa.
 * När du släpper en affärshändelse som första steg i en resa blir transportens schemaläggartyp&quot;affärshändelse&quot;.
 * Bara en läsmålgruppsaktivitet kan tas bort efter en affärshändelse. Det läggs automatiskt till som nästa steg.
-* Aktivera motsvarande alternativ i dialogrutan **[!UICONTROL Execution]** del av resans egenskaper.
+* Om du vill tillåta flera körningar av affärshändelser aktiverar du motsvarande alternativ i avsnittet **[!UICONTROL Execution]** i resans egenskaper.
 * När en affärshändelse har utlösts blir det en fördröjning att exportera målgruppen från 15 minuter till upp till en timme.
 * När du testar en affärshändelse måste du godkänna händelseparametrarna och identifieraren för den testprofil som kommer att gå in i testet. När du testar en affärshändelsebaserad resa kan du dessutom bara utlösa en enskild profilentré. Se [det här avsnittet](../building-journeys/testing-the-journey.md#test-business). I testläge finns inget kodläge tillgängligt.
 * Vad händer med individer som för närvarande är på resa om en ny affärshändelse inträffar? Det fungerar på samma sätt som när enskilda personer fortfarande befinner sig på en återkommande resa när ett nytt återkommande händer. Deras väg är slut. Därför måste marknadsförarna vara uppmärksamma på att de inte behöver skapa för långa resor om de förväntar sig återkommande affärshändelser.
@@ -50,19 +50,19 @@ Affärshändelser kan vara&quot;en produkt är tillbaka i lager&quot;,&quot;ett 
 
 Här är några viktiga kommentarer som gäller när flera affärshändelser tas emot i rad.
 
-**Hur beter sig en affärshändelse när resan pågår?**
+**Vad är beteendet när en affärshändelse tas emot medan resan bearbetas?**
 
 Affärshändelser följer reglerna för återinträde på samma sätt som för enhetshändelser. Om en resa tillåter återinträde kommer nästa affärshändelse att behandlas.
 
-**Vilka är skyddsräckena för att undvika att överbelasta materialiserade målgrupper?**
+**Vilka är skyddsräckena för att undvika att materialiserade målgrupper läses in för mycket?**
 
-När det gäller företagsevenemang som tagits under en viss resa återanvänds data som drivs av det första händelsejobbet under en 1-timmars tidsperiod. För schemalagda resor finns det ingen garanti. Läs mer om målgrupper i [Dokumentation för Adobe Experience Platform Segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
+När det gäller företagsevenemang som tagits under en viss resa återanvänds data som drivs av det första händelsejobbet under en 1-timmars tidsperiod. För schemalagda resor finns det ingen garanti. Läs mer om målgrupper i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
 
 ## Kom igång med affärsevenemang {#gs-business-events}
 
 Här följer de första stegen för att konfigurera en affärshändelse:
 
-1. I avsnittet ADMINISTRATION-menyn väljer du **[!UICONTROL Configurations]**. I  **[!UICONTROL Events]** avsnitt, klicka **[!UICONTROL Manage]**. Listan med händelser visas.
+1. Välj **[!UICONTROL Configurations]** på menyn Administration. Klicka på **[!UICONTROL Manage]** i avsnittet **[!UICONTROL Events]**. Listan med händelser visas.
 
    ![](assets/jo-event1.png)
 
@@ -78,7 +78,7 @@ Här följer de första stegen för att konfigurera en affärshändelse:
    >
    >Endast alfanumeriska tecken och understreck tillåts. Maximala längden är 30 tecken.
 
-1. I **[!UICONTROL Type]** fält, välj **Företag**.
+1. Välj **Business** i fältet **[!UICONTROL Type]**.
 
    ![](assets/jo-event3bis-business.png)
 
@@ -92,7 +92,7 @@ Här följer de första stegen för att konfigurera en affärshändelse:
 
    ![](assets/test-profiles-4.png)
 
-1. Klicka inuti **[!UICONTROL Event ID condition]** fält. Använd den enkla uttrycksredigeraren för att definiera det villkor som används av systemet för att identifiera de händelser som utlöser din resa.
+1. Klicka inuti fältet **[!UICONTROL Event ID condition]**. Använd den enkla uttrycksredigeraren för att definiera det villkor som används av systemet för att identifiera de händelser som utlöser din resa.
 
    ![](assets/jo-event6-business.png)
 
@@ -110,9 +110,9 @@ Här följer de första stegen för att konfigurera en affärshändelse:
 
 ## Definiera nyttolastfälten {#define-the-payload-fields}
 
-Nyttolastdefinitionen gör att du kan välja vilken information systemet förväntar sig från händelsen under din resa och nyckeln för att identifiera vilken person som är associerad med händelsen. Nyttolasten baseras på Experience Cloud XDM-fältdefinitionen. Mer information om XDM finns i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}.
+Nyttolastdefinitionen gör att du kan välja vilken information systemet förväntar sig från händelsen under din resa och nyckeln för att identifiera vilken person som är associerad med händelsen. Nyttolasten baseras på Experience Cloud XDM-fältdefinitionen. Mer information om XDM finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}.
 
-1. Välj ett XDM-schema i listan och klicka på **[!UICONTROL Fields]** fält eller på **[!UICONTROL Edit]** -ikon.
+1. Välj ett XDM-schema i listan och klicka på fältet **[!UICONTROL Fields]** eller på ikonen **[!UICONTROL Edit]** .
 
    ![](assets/journey8-business.png)
 
@@ -126,7 +126,7 @@ Nyttolastdefinitionen gör att du kan välja vilken information systemet förvä
 
 1. Markera de fält som du förväntar dig att ta emot från händelsen. Det här är de områden som affärsanvändaren kommer att utnyttja under resan.
 
-1. När du är klar med att markera de fält som behövs klickar du på **[!UICONTROL Save]** eller tryck **[!UICONTROL Enter]**.
+1. När du är klar med att markera de fält som behövs klickar du på **[!UICONTROL Save]** eller trycker på **[!UICONTROL Enter]**.
 
    Antalet markerade fält visas i **[!UICONTROL Fields]**.
 
@@ -136,7 +136,7 @@ Nyttolastdefinitionen gör att du kan välja vilken information systemet förvä
 
 Använd nyttolastförhandsvisningen för att validera nyttolastdefinitionen.
 
-1. Klicka på **[!UICONTROL View Payload]** om du vill förhandsgranska den nyttolast som systemet förväntar sig.
+1. Klicka på ikonen **[!UICONTROL View Payload]** om du vill förhandsgranska den nyttolast som systemet förväntar sig.
 
    ![](assets/journey13-business.png)
 
@@ -146,4 +146,4 @@ Använd nyttolastförhandsvisningen för att validera nyttolastdefinitionen.
 
 1. Kontrollera förhandsgranskningen för att validera nyttolastdefinitionen.
 
-1. Sedan kan du dela nyttolastförhandsvisningen med den person som ansvarar för händelsen som skickar. Denna nyttolast kan hjälpa dem att utforma konfigurationen av en händelse som [!DNL Journey Optimizer]. Läs [den här sidan](../event/additional-steps-to-send-events-to-journey.md).
+1. Sedan kan du dela nyttolastförhandsvisningen med den person som ansvarar för händelsen som skickar. Den här nyttolasten kan hjälpa dem att utforma konfigurationen för en händelse som skickas till [!DNL Journey Optimizer]. Läs [den här sidan](../event/additional-steps-to-send-events-to-journey.md).

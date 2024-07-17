@@ -19,7 +19,7 @@ ht-degree: 2%
 
 En undertryckningslista består av adresser och domäner som du vill utesluta från leveranser, eftersom det kan skada ditt sändningsrykte och din leveransfrekvens om du skickar till dessa kontakter.
 
-The [!DNL Journey Optimizer] Suppressionslistan hanteras på din egen miljönivå, dvs. för en viss sandlåda.
+Suppressionslistan [!DNL Journey Optimizer] hanteras på din egen miljönivå, dvs. för en given sandlåda.
 
 Den samlar in e-postadresser och domäner som inte används i alla e-postmeddelanden i en enda klientmiljö, vilket är specifikt för ett organisations-ID som är kopplat till ett sandbox-ID.
 
@@ -27,7 +27,7 @@ Den samlar in e-postadresser och domäner som inte används i alla e-postmeddela
 >
 >Adobe håller en uppdaterad lista över kända dåliga adresser som har visat sig vara skadliga för engagemanget och utskickets anseende och ser till att e-post inte skickas till dem. Den här listan hanteras i en global undertryckningslista som är gemensam för alla Adobe-kunder. Adresserna och domännamnen som finns i den globala undertryckningslistan är dolda. Endast antalet uteslutna mottagare anges i leveransrapporterna.
 
-Dessutom kan man utnyttja Journey Optimizer **Suppression REST API** för att styra utgående meddelanden med hjälp av suppression och tillåtelselista. [Lär dig hur du arbetar med Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression/){target="_blank"}
+Dessutom kan du använda Journey Optimizer **Suppression REST API** för att styra dina utgående meddelanden med hjälp av suppression och tillåtelselista. [Lär dig hur du arbetar med Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression/){target="_blank"}
 
 ## Varför en lista över inaktiveringar? {#why-suppression-list}
 
@@ -41,36 +41,36 @@ Mottagare vars e-postadresser inte visas exkluderas automatiskt från meddelande
 
 Adresser läggs till i listan över undertryckningar enligt följande:
 
-* Alla **skarpa studsar** och **skräppost** skickar automatiskt motsvarande adresser till suppressionslistan efter en enstaka förekomst. Läs mer om skräppostklagomål i [det här avsnittet](#spam-complaints).
+* Alla **hårda studsar** och **skräppostklagomål** skickar automatiskt motsvarande adresser till listan över spärrade adresser efter en enstaka förekomst. Läs mer om skräppostklagomål i [det här avsnittet](#spam-complaints).
 
-* **Mjuka studsar** skickar inte omedelbart en adress till listan, men de ökar en felräknare. Flera [återförsök](../configuration/retries.md) utförs sedan och när felräknaren når tröskelvärdet läggs adressen till i listan över utelämnanden.
+* **Mjuka studsar** skickar inte omedelbart en adress till listan över inaktiveringar, men de ökar en felräknare. Flera [försök](../configuration/retries.md) utförs sedan, och när felräknaren når tröskelvärdet läggs adressen till i listan.
 
-* Du kan också [**manuellt** lägga till en adress eller en domän](../configuration/manage-suppression-list.md#add-addresses-and-domains) till listan över undertryckningar.
+* Du kan också [**manuellt** lägga till en adress eller en domän ](../configuration/manage-suppression-list.md#add-addresses-and-domains) i listan över inaktiveringar.
 
 Läs mer om hårda studsar och mjuka studsar i [det här avsnittet](#delivery-failures).
 
 >[!NOTE]
 >
->Det går inte att skicka adresser för att avbryta prenumerationen till listan över inaktiveringar eftersom de inte får e-post från [!DNL Journey Optimizer]. Deras val hanteras på Experience Platform-nivå. Läs mer på [avanmäla](../privacy/opt-out.md).
+>Det går inte att skicka adresser för att avbryta prenumerationen till listan över inaktiveringar eftersom de inte får e-post från [!DNL Journey Optimizer]. Deras val hanteras på Experience Platform-nivå. Läs mer om [avanmälan](../privacy/opt-out.md).
 
-För varje adress, den grundläggande orsaken till inaktiveringen och undertryckningskategorin (mjuk, hård, osv.) visas i listan. Läs mer om hur du använder och hanterar listan över inaktiveringar i [det här avsnittet](../configuration/manage-suppression-list.md).
+För varje adress, den grundläggande orsaken till inaktiveringen och undertryckningskategorin (mjuk, hård, osv.) visas i listan. Läs mer om hur du får åtkomst till och hanterar listan över inaktiveringar i [det här avsnittet](../configuration/manage-suppression-list.md).
 
 >[!NOTE]
 >
->Profilerna med **[!UICONTROL Suppressed]** status exkluderas under meddelandeprocessen. Därför är **Reserapporter** visar att dessa profiler har flyttats genom resan ([Läs målgrupp](../building-journeys/read-audience.md) och [meddelandeaktiviteter](../building-journeys/journeys-message.md)), **E-postrapporter** inkluderar dem inte i **[!UICONTROL Sent]** mätvärden när de filtreras ut innan e-postmeddelanden skickas.
+>Profilerna med statusen **[!UICONTROL Suppressed]** har uteslutits under meddelandeöverföringsprocessen. Det innebär att även om **reserapporterna** visar att de här profilerna har flyttats genom resan ([Läs målgrupp](../building-journeys/read-audience.md) och [meddelandeaktiviteter](../building-journeys/journeys-message.md)) så inkluderas de inte i **e-postrapporterna** i **[!UICONTROL Sent]**-måtten eftersom de filtreras ut innan e-postmeddelanden skickas.
 >
->Läs mer på [Live-rapport](../reports/live-report.md) och [Global rapport](../reports/global-report.md). Om du vill ta reda på orsaken till alla undantagsfall kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"}.
+>Läs mer i [Live-rapporten](../reports/live-report.md) och [Global rapport](../reports/global-report.md). Om du vill ta reda på orsaken till alla undantagsfall kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"}.
 
 ### Leveransfel {#delivery-failures}
 
 Det finns två typer av fel när en leverans misslyckas:
 
-* **Hård studs**. Ett hårt studsande indikerar en ogiltig e-postadress (dvs. en e-postadress som inte finns). Detta innebär ett studsmeddelande från den mottagande e-postservern som uttryckligen anger att adressen är ogiltig.
-* **Mjuk studsa**. Detta är ett tillfälligt e-poststuds som inträffade för en giltig e-postadress.
+* **Hårt studs**. Ett hårt studsande indikerar en ogiltig e-postadress (dvs. en e-postadress som inte finns). Detta innebär ett studsmeddelande från den mottagande e-postservern som uttryckligen anger att adressen är ogiltig.
+* **Mjukt studs**. Detta är ett tillfälligt e-poststuds som inträffade för en giltig e-postadress.
 
-A **hård studsa** lägger automatiskt till e-postadressen i listan över undertryckningar.
+Ett **hårt studsande** lägger automatiskt till e-postadressen i listan över utelämnanden.
 
-A **mjuk studsa** <!--or an **ignored** error--> som inträffar för många gånger skickar även e-postadressen till listan över inaktiveringar efter flera försök. [Läs mer om återförsök](../configuration/retries.md)
+En **mjuk studsa** <!--or an **ignored** error--> som inträffar för många gånger skickar även e-postadressen till utelämningslistan efter flera försök. [Läs mer om återförsök](../configuration/retries.md)
 
 Om du fortsätter att skicka till de här adresserna kan det påverka leveransfrekvensen, eftersom den talar om för Internet-leverantörer att du kanske inte följer god praxis för underhåll av e-postadresslistor och därför kanske inte är en betrodd avsändare.
 

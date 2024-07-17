@@ -22,7 +22,7 @@ Genom att lägga till olika attribut på Favoriter-menyn får du snabb åtkomst 
 
 ![](assets/favorite-option.png)
 
-Använd alternativet **[!UICONTROL Favorites]** i den vänstra rutan.
+Använd menyn **[!UICONTROL Favorites]** i den vänstra rutan för att få åtkomst till objekt som du har gett rätt.
 
 I den här listan kan du snabbt lägga till personaliseringsobjektet i det aktuella uttrycket.
 

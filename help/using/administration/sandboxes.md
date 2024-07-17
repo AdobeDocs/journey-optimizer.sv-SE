@@ -11,8 +11,8 @@ keywords: sandlådor, virtuella, miljöer, organisation, plattform
 exl-id: 14f80d5d-0840-4b79-9922-6d557a7e1247
 source-git-commit: 9f43387ff63c3d2c2849fad1ca6a98310b3915b3
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 15%
+source-wordcount: '315'
+ht-degree: 16%
 
 ---
 
@@ -24,7 +24,7 @@ Med [!DNL Journey Optimizer] kan du partitionera instansen i separerade virtuell
 Sandlådor tilldelas via roller i behörigheter. [Lär dig tilldela sandlådor](permissions.md#create-product-profile).
 
 [!DNL Journey Optimizer] speglar Adobe Experience Platform-sandlådor som har skapats för en viss organisation.
-Sandlådorna i Adobe Experience Platform kan skapas eller återställas från din instans i Adobe Experience Platform. [Läs mer i användarhandboken för Sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html){target="_blank"}.
+Sandlådorna i Adobe Experience Platform kan skapas eller återställas från din instans i Adobe Experience Platform. [Läs mer i användarhandboken för sandlådan](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html){target="_blank"}.
 
 Du hittar kontrollen för sandlådeväljaren högst upp till höger på skärmen bredvid organisationens namn. Klicka på den för närvarande aktiva sandlådan i väljaren för att växla från en sandlåda till en annan och välj sedan en annan sandlåda på rullgardinsmenyn.
 
@@ -36,23 +36,23 @@ Du hittar kontrollen för sandlådeväljaren högst upp till höger på skärmen
 
 >[!IMPORTANT]
 >
-> Hantering av sandlådor kan endast utföras av en **[!UICONTROL Product]** eller **[!UICONTROL System]** administratör.
+> Hantering av sandlådor kan bara utföras av en **[!UICONTROL Product]**- eller **[!UICONTROL System]**-administratör.
 
-Du kan välja att tilldela olika sandlådor till färdiga eller anpassade **[!UICONTROL Roles]**.
+Du kan välja att tilldela olika sandlådor till körklara eller anpassade **[!UICONTROL Roles]**.
 
 Så här tilldelar du sandlådor:
 
-1. I [!DNL Permissions], från **[!UICONTROL Roles]** -flik, välja en **[!UICONTROL Role]**.
+1. Välj en **[!UICONTROL Role]** på fliken [!DNL Permissions].**[!UICONTROL Roles]**
 
    ![](assets/sandbox_1.png)
 
 1. Klicka på **[!UICONTROL Edit]**.
 
-1. Från **[!UICONTROL Sandboxes]** i den nedrullningsbara resurslistan väljer du den sandlåda som ska tilldelas din roll.
+1. I resurslistrutan **[!UICONTROL Sandboxes]** väljer du den sandlåda som ska tilldelas din roll.
 
    ![](assets/sandbox_3.png)
 
-1. Om det behövs klickar du på X-ikonen bredvid för att ta bort sandlådeåtkomst till **[!UICONTROL Role]**.
+1. Om det behövs klickar du på X-ikonen bredvid för att ta bort sandlådeåtkomst till din **[!UICONTROL Role]**.
 
    ![](assets/sandbox_4.png)
 
@@ -60,7 +60,7 @@ Så här tilldelar du sandlådor:
 
 ## Åtkomst till innehåll {#content-access}
 
-Om du vill konfigurera innehållets tillgänglighet måste du tilldela en delad mapp till var och en av sandlådorna. Du kan skapa och konfigurera din delade mapp i **[!UICONTROL Storage]** -fliken som visas i [!DNL Admin Console] för administratörer. Om du har åtkomst till [!DNL Admin Console] Som systemadministratör kan du skapa delade mappar och lägga till delegater med olika åtkomstnivå till dina delade mappar.
+Om du vill konfigurera innehållets tillgänglighet måste du tilldela en delad mapp till var och en av sandlådorna. Du kan skapa och konfigurera din delade mapp på fliken **[!UICONTROL Storage]** som visas i [!DNL Admin Console] för administratörer. Om du har åtkomst till [!DNL Admin Console] som systemadministratör kan du skapa delade mappar och lägga till delegater med olika åtkomstnivå till dina delade mappar.
 
 ![](assets/do-not-localize/content_access.png)
 

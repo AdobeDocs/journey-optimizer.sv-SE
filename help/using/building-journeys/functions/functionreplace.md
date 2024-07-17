@@ -9,8 +9,8 @@ keywords: ersätt, funktion, uttryck, resa
 exl-id: 3eb35fd6-2d11-4f24-b0d9-5334e7ed7872
 source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 4%
+source-wordcount: '152'
+ht-degree: 2%
 
 ---
 
@@ -55,8 +55,8 @@ Eftersom målparametern är en RegExp, beroende på vilken sträng du vill ersä
 * sträng som ska utvärderas: `|OFFER_A|OFFER_B`
 * tillhandahålls av ett profilattribut `#{ExperiencePlatform.myFieldGroup.profile.myOffers}`
 * Sträng som ska ersättas: `|OFFER_A`
-* Sträng ersatt med: `''`
-* Du måste lägga till `\\` före `|` tecken.
+* Sträng ersatt av: `''`
+* Du måste lägga till `\\` före tecknet `|`.
 
 Uttrycket är:
 

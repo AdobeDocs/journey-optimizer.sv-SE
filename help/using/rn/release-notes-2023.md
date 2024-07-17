@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # Versionsinformation för 2023 {#release-notes-2023}
 
-På den här sidan visas alla funktioner och förbättringar för [!DNL Journey Optimizer] släppt 2023.
+På den här sidan visas alla funktioner och förbättringar för [!DNL Journey Optimizer] som släpptes 2023.
 
 
 ## Versionsinformation oktober 2023 {#oct-rn-2023}
@@ -86,16 +86,16 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 * Den längsta väntetid du kan ange är nu 29 dagar i stället för 30. Denna förbättring har införts för att förhindra att väntetider överskrider den 30 dagar långa transporttiden. Detta gäller
 
-   * den **Tidsmängd** fältet i [vänteaktivitet](../building-journeys/wait-activity.md)
-   * den **Vänteperiod för återinträde** in [egenskaper för resa](../building-journeys/journey-properties.md#entrance)
-   * den **Vänta på** fält i timeout-definitionen för [evenemang](../building-journeys/general-events.md#events-specific-time).
+   * fältet **Mängd tid** i [vänteaktiviteten](../building-journeys/wait-activity.md)
+   * **Vänteperioden för återinträde** i [resans egenskaper](../building-journeys/journey-properties.md#entrance)
+   * **Vänta på fältet** i timeoutdefinitionen för [händelseaktiviteter](../building-journeys/general-events.md#events-specific-time).
 
 <!--
 **Consent in channel configuration**
 
 * You can now select a marketing action at the channel surface level. When used in a surface, all consent policies associated with that marketing action are leveraged in order to respect the preferences of your customers.-->
 
-**Beslutsledning**
+**Beslutshantering**
 
 * Flera etiketter som rör anbudsbegränsning i beslutsgränssnittet har uppdaterats. [Läs mer](../offers/offer-library/add-constraints.md#capping)
 
@@ -117,7 +117,7 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <tr>
 <td>
 <p>Beräknade attribut gör det enkelt att sammanfatta händelsedata i profilattribut via ett intuitivt användargränssnitt för förbättrad beteendebaserad segmentering, personalisering och aktivering. Med den här funktionen kan du skapa beräknade attribut på ett självbetjäningssätt, hantera dem och använda dem vid segmentering, kundprofilmål i realtid eller Journey Optimizer.<br/><br/>
-Beräknade attribut förenklar dessutom arbetsflödena för segmentering och resor så att ni smidigt kan leverera relevanta upplevelser. Läs mer i <a href="../audience/computed-attributes.md">detaljerad dokumentation</a>.</p>
+Beräknade attribut förenklar dessutom arbetsflödena för segmentering och resor så att ni smidigt kan leverera relevanta upplevelser. Läs mer i den <a href="../audience/computed-attributes.md">detaljerade dokumentationen</a>.</p>
 <img src="assets/do-not-localize/computed-attributes.gif">
 </tr>
 </tbody>
@@ -134,9 +134,9 @@ Beräknade attribut förenklar dessutom arbetsflödena för segmentering och res
 <tr>
 <td>
 <p>Med funktionen Kanalrapport kan analytiker och marknadsförare få en heltäckande översikt över trafik- och engagemangsmått på kanalnivå.</p>
-<p>Så här öppnar du <b>Rapport</b> måste du ha <b>Visa kanalrapporter</b> behörighet.</p>
+<p>Om du vill få åtkomst till menyn <b>Rapport</b> måste du ha behörigheten <b>Visa kanalrapporter</b> .</p>
 <img src="assets/channel-reports.png"/>
-<p>Mer information finns i <a href="../reports/channel-report.md">detaljerad dokumentation</a>och <a href="../reports/channel-report.md#channel-report-video">instruktionsvideo</a>.</p>
+<p>Mer information finns i <a href="../reports/channel-report.md">detaljerad dokumentation</a> och <a href="../reports/channel-report.md#channel-report-video">instruktionsvideo</a>.</p>
 </tr>
 </tbody>
 </table>
@@ -182,13 +182,13 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 * Nu finns nya API:er för att skapa och hantera beslutshanteringsobjekt. Dessa API:er ger bättre prestanda och en förbättrad användarupplevelse. Äldre API:er stöds till 2024-03-27. [Läs mer](../offers/api-reference/getting-started.md)
 
-**Personalisering**
+**Personalization**
 
 * Förutom visuella fragment går det nu att skapa, spara och återanvända uttrycksfragment från Journey Optimizer-gränssnittet via uttrycksredigeraren. Uttrycksfragment ersätter uttryck som sparats tidigare. [Läs mer](../personalization/use-expression-fragments.md)
 
-**Varningar**
+**Varning**
 
-* En ny typ av systemvarning har införts. Du kan nu få meddelanden när en **Läs målgrupp** aktiviteten misslyckas. [Läs mer](../reports/alerts.md).
+* En ny typ av systemvarning har införts. Du kan nu få ett meddelande när en **Läs målgrupp**-aktivitet misslyckas. [Läs mer](../reports/alerts.md).
 
 **Webbkanal**
 
@@ -202,20 +202,20 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 * När du duplicerar en resa kan du nu definiera namnet på kopian av resan. [Läs mer](../building-journeys/journey-gs.md#duplicate-a-journey)
 
-* Stöd för anpassade åtgärdssvar är nu GA. Med den här funktionen kan ni utnyttja API-anropssvar i anpassade åtgärder och samordna er resa baserat på dessa svar. Dessutom har [nytt skyddsräcke](../start/guardrails.md#custom-actions-g) har lagts till för att automatiskt begränsa anpassade åtgärdsanrop. [Läs mer](../action/action-response.md)
+* Stöd för anpassade åtgärdssvar är nu GA. Med den här funktionen kan ni utnyttja API-anropssvar i anpassade åtgärder och samordna er resa baserat på dessa svar. Dessutom har ett [nytt spärrskyddsutkast](../start/guardrails.md#custom-actions-g) lagts till för att automatiskt begränsa anpassade åtgärdsanrop. [Läs mer](../action/action-response.md)
 <!--
 * The maximum duration that you can define in the Wait activity is now 29 days instead of 30.
 -->
 
 **E-postkanal**
 
-* Ett nytt alternativ i konfigurationen av e-postytan gör att du kan välja att skicka transaktionsmeddelanden till profiler även om deras e-postadresser finns på Adobe [!DNL Journey Optimizer] lista över inaktiveringar. [Läs mer](../email/email-settings.md#send-to-suppressed-email-addresses)
+* Ett nytt alternativ i konfigurationen av e-postytan gör att du kan välja att skicka transaktionsmeddelanden till profiler även om deras e-postadresser finns i Adobe [!DNL Journey Optimizer]-listan. [Läs mer](../email/email-settings.md#send-to-suppressed-email-addresses)
 
 **SMS-kanal**
 
-* Två nya fält, **Inloggningsmeddelande** och **Hjälpmeddelande**, har lagts till i API-konfigurationsskärmen, vilket gör att användare kan anpassa svar för inkommande nyckelord. Observera att det här endast är tillgängligt för SMS-providern för Sinch. [Läs mer](../sms/sms-configuration.md)
+* Två nya fält, **Opt-in message** och **Help message**, har lagts till i API-konfigurationsskärmen så att användarna kan anpassa svaren för inkommande nyckelord. Observera att det här endast är tillgängligt för SMS-providern för Sinch. [Läs mer](../sms/sms-configuration.md)
 
-* SMS-avanmälan hanteras inte längre på kanalnivå. Det är nu nummerspecifikt, vilket innebär att om vissa profiler avanmäler sig från ett visst nummer eller en viss kort kod, kan du fortfarande skicka meddelanden från andra nummer som du använder för att skicka ut SMS-meddelanden. Med ett nytt alternativ kan du välja **Avanmälningsnummer** som du vill använda för en viss yta. [Läs mer](../sms/sms-configuration.md)
+* SMS-avanmälan hanteras inte längre på kanalnivå. Det är nu nummerspecifikt, vilket innebär att om vissa profiler avanmäler sig från ett visst nummer eller en viss kort kod, kan du fortfarande skicka meddelanden från andra nummer som du använder för att skicka ut SMS-meddelanden. Med ett nytt alternativ kan du välja det **avankomstnummer** som du vill använda för en viss yta. [Läs mer](../sms/sms-configuration.md)
 
 **Direktpostkanal**
 
@@ -223,11 +223,11 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Rapportering**
 
-* Nu kan du exportera Journey Optimizer-rapporter som CSV-filer. Läs mer i [detaljerad dokumentation](../reports/global-report.md#export-reports) och [instruktionsvideo](../reports/global-report.md#video-csv).
+* Nu kan du exportera Journey Optimizer-rapporter som CSV-filer. Läs mer i den [detaljerade dokumentationen](../reports/global-report.md#export-reports) och videon [Handledning](../reports/global-report.md#video-csv).
 
-**Resurser**
+**Assets**
 
-* Med ett nytt alternativ för Resurser kan du välja databas för dina resurser i Journey Optimizer. Du kan välja mellan en Assets Essentials-databas eller en Assets as a Cloud Service-databas, förutsatt att du äger den här lösningen. [Läs mer](../content-management/assets.md)
+* Med ett nytt alternativ för Assets kan du välja databas för din Assets i Journey Optimizer. Du kan välja mellan en Assets Essentials-databas eller en Assets as a Cloud Service-databas, förutsatt att du äger den här lösningen. [Läs mer](../content-management/assets.md)
 
 <!--**Decision management**
 
@@ -338,7 +338,7 @@ A new option is available in the email surface settings to include email address
 <p>Nu kan du skapa arbetsflöden för kompositioner för att kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och utnyttja olika aktiviteter (dela, berika...) för att skapa nya målgrupper. Nyligen skapade målgrupper sparas tillbaka i Adobe Experience Platform tillsammans med befintliga målgrupper och kan utnyttjas i Journey Optimizer kampanjer för att nå ut till kunder.</p>
 <img src="assets/do-not-localize/gif-ao.gif"/>
 <p>Mer information finns i den <a href="../audience/get-started-audience-orchestration.md">detaljerade dokumentationen</a>.</p>
-<p>Målgruppsdispositionen är helt integrerad med den nya Adobe Experience Platform-menyn"Publiker", som fungerar som en central portal till målgrupper. Nu kan du använda en bläddringssida som innehåller en ny instrumentpanel med segmenttrender och överlappningar för att hitta nya insikter och utforska organisationsverktygen för mappning och taggning. Detta innefattar styrningskontroller för standardiserad målgruppsmärkning och funktioner för hantering av målgruppslivscykler för att hantera aktiveringsarbetsflöden. Med den nya hanteringsupplevelsen kan ni nu enkelt och säkert hantera målgrupper från ett och samma ställe. Mer information finns i <a href="https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html" target="_blank">Adobe Experience Platform-dokumentation</a>.</p></p>
+<p>Målgruppsdispositionen är helt integrerad med den nya Adobe Experience Platform-menyn"Publiker", som fungerar som en central portal till målgrupper. Nu kan du använda en bläddringssida som innehåller en ny instrumentpanel med segmenttrender och överlappningar för att hitta nya insikter och utforska organisationsverktygen för mappning och taggning. Detta innefattar styrningskontroller för standardiserad målgruppsmärkning och funktioner för hantering av målgruppslivscykler för att hantera aktiveringsarbetsflöden. Med den nya hanteringsupplevelsen kan ni nu enkelt och säkert hantera målgrupper från ett och samma ställe. Mer information finns i <a href="https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html" target="_blank">Adobe Experience Platform-dokumentationen</a>.</p></p>
 </td>
 </tr>
 </tbody>
@@ -560,7 +560,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 <table>
 <thead>
 <tr>
-<th><strong>Använd taggar i era kampanjer (beta)</strong><br/></th>
+<th><strong>Använd taggar i era kampanjer (Beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -638,11 +638,11 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
 **Beslutshantering**
 
-* Du kan nu redigera frekvensbegränsningen om erbjudandet innehåller **[!UICONTROL Draft]** status och har aldrig publicerats tidigare med frekvensbegränsning aktiverad. [Läs mer](../offers/offer-library/add-constraints.md#frequency-capping)
+* Du kan nu redigera frekvensbegränsningen om erbjudandet har statusen **[!UICONTROL Draft]** och aldrig har publicerats tidigare med frekvensbegränsning aktiverad. [Läs mer](../offers/offer-library/add-constraints.md#frequency-capping)
 
-**Personalisering**
+**Personalization**
 
-* Du kan nu välja och infoga resursreferenser direkt från personaliseringsredigeraren när du arbetar i HTML-innehåll.
+* Du kan nu välja och infoga resursreferenser direkt från Personalization Editor när du arbetar i HTML-innehåll.
 
 ### Korrigeringar{#may-2023-fixes}
 
@@ -676,7 +676,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 <table>
 <thead>
 <tr>
-<th><strong>Snabbstartarbetsflöde för introduktion av mobilappar (beta)</strong><br/></th>
+<th><strong>Snabbstart för introduktion av mobilappar (Beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -693,15 +693,15 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 <table>
 <thead>
 <tr>
-<th><strong>Ny kontrollpanel för resan (beta)</strong><br/></th>
+<th><strong>Ny kontrollpanel för resan (Beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
 <p> Kontrollpanelen för resan är nu uppdelad på två flikar:</p>
-<ul><li>Använd <strong>Ökning</strong> för att få tillgång till en ny kontrollpanel som visar viktiga mått för dina resor.</li>
-<li>Använd <strong>Bläddra</strong> för att få tillgång till listan över alla resor.</li></ul>
+<ul><li>Använd fliken <strong>Översikt</strong> för att komma åt en ny instrumentpanel som visar viktiga mått för dina resor.</li>
+<li>Använd fliken <strong>Bläddra</strong> för att få åtkomst till listan över alla resor.</li></ul>
 <p>Denna förmåga är tillgänglig på alla resor som en allmän betaversion.</p>
 <img src="assets/do-not-localize/journey-dashboard.gif"/>
 <p>Mer information finns i den <a href="../building-journeys/journey-gs.md#journey-access">detaljerade dokumentationen</a>.</p>
@@ -717,14 +717,14 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 * På arbetsytan för resan visas nu aktivitets-ID för meddelandeaktiviteter och sluttaggar. Detta förbättrar rapportering och återmarknadsföring.
 * Konfigurationsrutans layout, som visas i åtgärder, datakällor, händelser och resor, har förbättrats.
 * Nya insikter om antalet noder på arbetsytan med skydd för att hjälpa till att växa: håll resorna enkla att läsa, QA och felsöka med maximalt antal noder per resa vid 50. [Läs mer](../start/guardrails.md#journeys-guardrails-journeys)
-* När en [E-post](../email/create-email.md), [SMS](../sms/create-sms.md) eller [Push](../push/create-push.md) åtgärder på en resa är ytan nu förfylld som standard med den senast använda ytan för den kanalen under den aktuella resan.
+* När du lägger till en [e-post](../email/create-email.md)-, [SMS](../sms/create-sms.md)- eller [push](../push/create-push.md)-åtgärd i en resa är ytan nu som standard förfylld med den senast använda ytan för den kanalen i den aktuella resan.
 * Nu kan du definiera statiska eller dynamiska frågeparametrar i dina anpassade åtgärder. [Läs mer](../action/about-custom-action-configuration.md#url-configuration)
 
 **Rapportering**
 
 * Nu kan du exportera Journey Optimizer-rapporter som PDF. [Läs mer](../reports/global-report.md#export-reports)
 
-**Content Designer**
+**Innehåll i Designer**
 
 * Adobe Journey Optimizer Content Designer har uppdaterats och det är nu enklare att komma åt designformat och komponenter. Den nya versionen ger en förbättrad användarupplevelse och har bättre prestanda, partiell kompatibilitet i mörkt läge och stöd för nya tillgänglighetsstandarder.
 
@@ -770,7 +770,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 <table>
 <thead>
 <tr>
-<th><strong>Använd taggar i dina resor (beta)</strong><br/></th>
+<th><strong>Använd taggar i dina resor (Beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -787,9 +787,9 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
 **Resor**
 
-* Den nya **Begränsnings-API** gör att du kan ange en gräns för hur många händelser som skickas per sekund, vilket förhindrar överväldigande trafiktoppar i externa system eller API. När den angivna gränsen nås ställs alla efterföljande API-anrop i kö och behandlas så snart som möjligt, i den ordning som de togs emot. Observera att den här funktionen bara har stöd för en begränsad konfiguration i alla sandlådor. [Läs mer](../configuration/external-systems.md)
+* Med det nya **Begränsnings-API:t** kan du ange en gräns för hur många händelser som skickas per sekund, vilket förhindrar överväldigande trafiktoppar på externa system eller API. När den angivna gränsen nås ställs alla efterföljande API-anrop i kö och behandlas så snart som möjligt, i den ordning som de togs emot. Observera att den här funktionen bara har stöd för en begränsad konfiguration i alla sandlådor. [Läs mer](../configuration/external-systems.md)
 * Resans arbetsyta har förbättrats för en enklare och förbättrad användarupplevelse. I slutet av varje bana på arbetsytan har platshållarna tagits bort. Nu kan du enkelt lägga till dina aktiviteter genom att dra dem i slutet av en bana.
-* På arbetsytan är etiketten för **End** -taggen anges inte längre automatiskt med den föregående aktivitetens namn. Användarna kan lägga till en anpassad etikett manuellt vid behov.
+* På arbetsytan för resan ställs etiketten för taggen **End** inte längre in automatiskt med den föregående aktivitetens namn. Användarna kan lägga till en anpassad etikett manuellt vid behov.
 * Standardtidsgränsen och fellängden för resans egenskaper har ändrats från 5 till 30 sekunder. [Läs mer](../configuration/external-systems.md#timeout)
 * Standardbegränsningsfrekvensen för läsmålgruppsaktiviteter har ändrats från 20 000 till 5 000 meddelanden per sekund. [Läs mer](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
 * Ett skyddsutkast har lagts till i testläget för att endast lyssna på händelser som skickas via gränssnittet. Händelser som skickas via ett externt verktyg beaktas inte. [Läs mer](../building-journeys/testing-the-journey.md)
@@ -804,7 +804,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
     * Use the **Browse** tab to access list of all journeys.
 -->
 
-**Beslutsledning**
+**Beslutshantering**
 
 * För att undvika eventuella problem med den senaste versionen av taggfunktionen i Adobe Experience Platform har taggarna för beslutshantering bytt namn till&quot;Samlingskvalificerare&quot;.
 
@@ -816,7 +816,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
 * Ytterligare parametrar har lagts till på skärmen där placeringar skapas. De gör det möjligt för er att styra om ett erbjudande kan dupliceras över flera ersättningar och ange om erbjudandets innehåll och metadata ska inkluderas i API-svaret. [Läs mer](../offers/offer-library/creating-placements.md)
 
-**Personalisering**
+**Personalization**
 
 * Du kan nu inkludera standardreservtext för strängbaserade profilattribut i uttrycksredigeraren. Dessa värden visas om de valda attributen inte ger något resultat. [Läs mer](../personalization/personalization-build-expressions.md#add)
 
@@ -824,7 +824,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
 * Rapportwidgetfunktionen har förbättrats med möjligheten att anpassa hur användarna visar sina data. Med den här förbättringen kan man nu välja mellan flera visualiseringsalternativ, inklusive diagram-, tabell- och dondiagram.
 
-  Observera att du måste återställa de olika rapportinstrumentpanelerna för att få tillgång till de senaste widgetarna. Mer information om anpassning av kontrollpanelen finns i [detaljerad dokumentation](../reports/global-report.md#modify-dashboard).
+  Observera att du måste återställa de olika rapportinstrumentpanelerna för att få tillgång till de senaste widgetarna. Mer information om anpassning av kontrollpanelen finns i [den detaljerade dokumentationen](../reports/global-report.md#modify-dashboard).
 
 ## Versionsinformation februari 2023 {#feb-2023}
 
@@ -833,7 +833,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 <table>
 <thead>
 <tr>
-<th><strong>Kanal i appen (beta)</strong><br/></th>
+<th><strong>Kanal i appen (Beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -851,7 +851,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 <table>
 <thead>
 <tr>
-<th><strong>Exportera Journey Optimizer-datauppsättningar till molnlagringsmål (beta)</strong><br/></th>
+<th><strong>Exportera Journey Optimizer-datauppsättningar till molnlagringsmål (Beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -922,9 +922,9 @@ Note that each widget can be resized and deleted as needed.
 
 **Resor**
 
-* The **Vänteperiod för återinträde** fältet har lagts till i reseegenskaperna. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. [Läs mer](../building-journeys/journey-properties.md#entrance)
+* Fältet **Vänteperiod** för återinträde har lagts till i reseegenskaperna. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. [Läs mer](../building-journeys/journey-properties.md#entrance)
 
-* Förbättringar har gjorts för **start- och slutdatum för resan**. Om du inte har angett något startdatum läggs det nu till automatiskt vid publiceringstidpunkten. För **Läsa målgrupper** på resor kan du nu lägga till ett slutdatum. Detta gör att profiler kan avslutas automatiskt när datumet nås. [Läs mer](../building-journeys/journey-gs.md#dates)
+* Förbättringar har gjorts för **resans start- och slutdatum**. Om du inte har angett något startdatum läggs det nu till automatiskt vid publiceringstidpunkten. För **läsning av målgruppsresor** kan du nu lägga till ett slutdatum. Detta gör att profiler kan avslutas automatiskt när datumet nås. [Läs mer](../building-journeys/journey-gs.md#dates)
 
 <!--
 
@@ -942,17 +942,17 @@ Note that each widget can be resized and deleted as needed.
 
 **Administration**
 
-* **Tillåtelselista** - Du kan nu hämta tillåtelselista som en CSV-fil. [Läs mer](../configuration/allow-list.md#download-allowed-list)
+* **Tillåtelselista** - Nu kan du hämta tillåtelselista som en CSV-fil. [Läs mer](../configuration/allow-list.md#download-allowed-list)
 
-* **E-postyta** - Ytterligare en kontroll har lagts till i inställningarna för e-postytan: om MX-posten för den underdomän som används i **Svara på (e-postadress)** eller i **E-postadress för hemlig kopia** är inte korrekt konfigurerad, e-postytan kan inte skapas längre. Du måste ha den konfigurerad eller använda en annan. [Läs mer](../email/email-settings.md#reply-to-email)
+* **E-postyta** - En extra kontroll har lagts till i inställningarna för e-postytan: om MX-posten för den underdomän som används i **svarsadressen** eller i **BCC-e-postadressen** inte är korrekt konfigurerad kan e-postytan inte längre skapas. Du måste ha den konfigurerad eller använda en annan. [Läs mer](../email/email-settings.md#reply-to-email)
 
-* **E-postyta** - I dialogrutan **URL-spårningsparametrar** av inställningarna för e-postytan, gränsen för varje **Värde** har uppdaterats från 255 tecken till 5 kB för kompatibilitet med Adobe Analytics tracking. [Läs mer](../email/email-settings.md#url-tracking)
+* **E-postyta** - I avsnittet **URL-spårningsparametrar** i inställningarna för e-postytan har begränsningen för varje **Värde**-fält uppdaterats från 255 tecken till 5 kB för kompatibilitet med Adobe Analytics-spårning. [Läs mer](../email/email-settings.md#url-tracking)
 
-**Beslutsledning**
+**Beslutshantering**
 
-* **Placeringar** - Ytterligare parametrar har lagts till på skärmen där placeringar skapas. De gör det möjligt för er att styra om ett erbjudande kan dupliceras över flera ersättningar och ange om erbjudandets innehåll och metadata ska inkluderas i API-svaret. [Läs mer](../offers/offer-library/creating-placements.md)
+* **Placements** - Ytterligare parametrar har lagts till på skärmen där placeringar skapas. De gör det möjligt för er att styra om ett erbjudande kan dupliceras över flera ersättningar och ange om erbjudandets innehåll och metadata ska inkluderas i API-svaret. [Läs mer](../offers/offer-library/creating-placements.md)
 
-* **URL-personalisering** - När du lägger till URL:er som innehåll till offerternas representationer kan du nu anpassa dessa URL:er med Uttrycksredigeraren. [Läs mer](../offers/offer-library/add-representations.md)
+* **URL-personalisering** - När du lägger till URL:er som innehåll till dina erbjudanden kan du nu anpassa dessa URL:er med uttrycksredigeraren. [Läs mer](../offers/offer-library/add-representations.md)
 
 ## Versionsinformation januari 2023{#jan-2023-release}
 
@@ -969,7 +969,7 @@ Note that each widget can be resized and deleted as needed.
 <td>
 <p>Adobe Experience Platform har en serie funktioner för datthygien som gör att du kan hantera lagrade data genom att ta bort konsumentposter och datauppsättningar programmatiskt. Den här funktionen är nu tillgänglig för Adobe Journey Optimizer. </p>
 <p>Du kan hantera dina datalager för att se till att informationen används som förväntat, uppdateras när felaktiga data behöver korrigeras och tas bort när organisationsprofiler anser det nödvändigt.</p>
-<p><strong>Varning</strong> - Datahygienfunktionerna är för närvarande bara tillgängliga för organisationer som har köpt <strong>Hälsovårdssköld</strong> och <strong>Sköld för skydd av privatlivet och säkerheten</strong> tilläggserbjudanden.</p><p>Mer information finns i den <a href="../privacy/data-hygiene.md">detaljerade dokumentationen</a>.
+<p><strong>Varning</strong> - Datahygienfunktionerna är för närvarande bara tillgängliga för organisationer som har köpt tilläggserbjudandena <strong>Hälsovårdssköld</strong> och <strong>Sekretess och säkerhetssköld</strong>.</p><p>Mer information finns i den <a href="../privacy/data-hygiene.md">detaljerade dokumentationen</a>.
 </td>
 </tr>
 </tbody>
@@ -998,33 +998,33 @@ Note that each widget can be resized and deleted as needed.
 
 **Resor**
 
-* När en **Målgruppskvalifikation** eller **Läsa målgrupper** I en resa är namnutrymmet nu som standard förfyllt med det senast använda namnutrymmet. Se [Målgruppskvalifikation](../building-journeys/audience-qualification-events.md#about-segment-qualification) och [Läsa målgrupper](../building-journeys/read-audience.md#configuring-segment-trigger-activity) -avsnitt.
+* När du lägger till en **målgruppskvalifikation** eller **Läser målgrupp** under en resa är namnutrymmet nu som standard förifyllt med det senast använda namnutrymmet. Se avsnitten [Målgruppskvalificering](../building-journeys/audience-qualification-events.md#about-segment-qualification) och [Läsa målgrupper](../building-journeys/read-audience.md#configuring-segment-trigger-activity).
 
 * I arbetsytan på resan finns en ny knapp i verktygsfältet som gör att du kan hämta en skärmbild av din resa.
 
 **Email Designer**
 
-* Du kan nu exportera e-postinnehållet från **Exportera HTML** -menyn. Exporterade filer är tillgängliga i en arkivfil (.ZIP).
+* Du kan nu exportera e-postinnehållet från menyn **Exportera HTML**. Exporterade filer är tillgängliga i en arkivfil (.ZIP).
 
 **Administration**
 
-* Ett nytt underavsnitt ger rekommendationer om hur du skapar **Svara (e-post)** adressera och säkerställa en korrekt svarshantering. [Läs mer](../email/email-settings.md#reply-to-email)
+* Ett nytt underavsnitt ger rekommendationer om hur du skapar adressen **Svar till (e-post)** och säkerställer korrekt svarshantering. [Läs mer](../email/email-settings.md#reply-to-email)
 
 * När du skapar eller redigerar **IP-pooler** visas nu de associerade PTR-posterna i IP-listan och när du hovrar över de valda IP-adresserna. [Läs mer](../configuration/ip-pools.md#create-ip-pool)
 
 * När en IP-pool har valts på en kanal visas nu PTR-postinformation när du hovrar över IP-adresserna. [Läs mer](../email/email-settings.md#subdomains-and-ip-pools)
 
-* Användargränssnittet för redigering [PTR-poster](../configuration/ptr-records.md#edit-ptr-record) och [körningsfält](../configuration/primary-email-addresses.md) har uppdaterats.
+* Användargränssnittet för redigering av [PTR-poster](../configuration/ptr-records.md#edit-ptr-record) och [körningsfält](../configuration/primary-email-addresses.md) har uppdaterats.
 
 * Användargränssnittet för att skapa och redigera underdomäner har förbättrats. [Läs mer](../configuration/delegate-subdomain.md)
 
-* Undertryckningslistan **Senaste överföringar** skärmen har uppdaterats. [Läs mer](../configuration/manage-suppression-list.md#recent-uploads)
+* Skärmen **Senaste överföringar** av listan över inaktiveringar har uppdaterats. [Läs mer](../configuration/manage-suppression-list.md#recent-uploads)
 
 **Kampanjer**
 
 * Ett exempel på en cURL-begäran som tillåter körning av API-utlösta kampanjer genereras nu automatiskt och blir tillgänglig på kampanjskärmen. [Läs mer](../campaigns/api-triggered-campaigns.md)
 
 
-**Personalisering**
+**Personalization**
 
 * Det finns nya hjälpfunktioner: formatCurrency, charCodeAt, stringToDate, toString, formatNumber och toHexString. Funktionen toDateTimeOnly accepterar nu även fälttyperna string, date, long och int. [Läs mer](../personalization/functions/functions.md)

@@ -9,13 +9,13 @@ exl-id: ee242f0f-f331-4f41-9418-938b4ca1dda3
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '80'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 # Slå upp ett beslut {#look-up-decision}
 
-Du kan slå upp specifika beslut genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller besluten `id` i sökvägen till begäran.
+Du kan slå upp specifika beslut genom att göra en GET-begäran till [!DNL Offer Library]-API:t som innehåller besluten `id` i sökvägen till begäran.
 
 **API-format**
 

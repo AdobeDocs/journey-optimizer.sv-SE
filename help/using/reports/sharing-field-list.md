@@ -72,4 +72,4 @@ Den här mixinen innehåller alla fält som motsvarar ett profilexportjobb.
 
 ## stepEvents {#stepevents-field}
 
-Den här kategorin innehåller de ursprungliga fälten för steghändelser. Se detta [section](../reports/sharing-legacy-fields.md).
+Den här kategorin innehåller de ursprungliga fälten för steghändelser. Se det här [avsnittet](../reports/sharing-legacy-fields.md).

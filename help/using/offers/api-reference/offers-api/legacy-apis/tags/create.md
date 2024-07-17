@@ -9,17 +9,17 @@ exl-id: 84f0efa5-28af-4569-994c-12d87828a277
 source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
 workflow-type: tm+mt
 source-wordcount: '141'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 # Skapa en samlingskvalificerare {#create-tag}
 
-Du kan skapa en samlingskvalificerare (som tidigare kallades &quot;tagg&quot;) genom att göra en POST-förfrågan till [!DNL Offer Library] API, samtidigt som du anger ditt behållar-ID.
+Du kan skapa en samlingskvalificerare (som tidigare kallades&quot;tagg&quot;) genom att göra en POST-förfrågan till [!DNL Offer Library]-API:t och samtidigt ange ditt behållar-ID.
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
-I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
+I följande tabell visas giltiga värden som omfattar fälten *Content-Type* och *Accept* i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
@@ -55,7 +55,7 @@ curl -X POST \
 
 **Svar**
 
-Ett godkänt svar returnerar information om den nyligen skapade samlingskvalificeraren, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort samlingskvalificeraren. Du kan använda din unika samlingskvalificerare `@id` i senare självstudiekurser för att skapa samlingar och personaliserade erbjudanden.
+Ett lyckat svar returnerar information om den nyligen skapade samlingskvalificeraren, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort samlingskvalificeraren. Du kan använda din unika samlingskvalificerare `@id` i senare självstudier för att skapa samlingar och anpassade erbjudanden.
 
 ```json
 {

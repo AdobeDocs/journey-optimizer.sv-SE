@@ -24,11 +24,11 @@ ht-degree: 2%
 
 Det finns två sätt att skapa innehållsmallar:
 
-* Skapa en innehållsmall från grunden med den vänstra listen **[!UICONTROL Content Templates]** -menyn. [Lär dig mer](#create-template-from-scratch)
+* Skapa en innehållsmall från grunden med hjälp av menyn **[!UICONTROL Content Templates]** i den vänstra listen. [Lär dig hur](#create-template-from-scratch)
 
-* Spara innehållet som en mall när du utformar innehållet i en kampanj eller resa. [Lär dig mer](#save-as-template)
+* Spara innehållet som en mall när du utformar innehållet i en kampanj eller resa. [Lär dig hur](#save-as-template)
 
-När du har sparat din innehållsmall är den tillgänglig för användning i en kampanj eller på en resa. Oavsett om du har skapat från grunden eller från ett tidigare innehåll kan du nu använda den här mallen när du skapar innehåll i [!DNL Journey Optimizer]. [Lär dig mer](#use-content-templates)
+När du har sparat din innehållsmall är den tillgänglig för användning i en kampanj eller på en resa. Oavsett om du har skapat från grunden eller från ett tidigare innehåll kan du nu använda den här mallen när du skapar innehåll i [!DNL Journey Optimizer]. [Lär dig hur](#use-content-templates)
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ När du har sparat din innehållsmall är den tillgänglig för användning i en
 
 Följ stegen nedan för att skapa en innehållsmall från grunden.
 
-1. Få åtkomst till innehållsmalllistan via **[!UICONTROL Content Management]** > **[!UICONTROL Content Templates]** vänster meny.
+1. Öppna innehållsmalllistan via den vänstra menyn **[!UICONTROL Content Management]** > **[!UICONTROL Content Templates]**.
 
 1. Välj **[!UICONTROL Create template]**.
 
@@ -56,15 +56,15 @@ Följ stegen nedan för att skapa en innehållsmall från grunden.
 
    ![](assets/content-template-type.png)
 
-   * För **[!UICONTROL Email]** om du väljer **[!UICONTROL Content]** kan du definiera [Subject line](../email/create-email.md#define-email-content) som en del av din mall. Om du väljer **[!UICONTROL HTML]** kan du bara definiera innehållet i e-postbrödtexten.
+   * Om du väljer **[!UICONTROL Content]** för **[!UICONTROL Email]** kan du definiera [Ämnesraden](../email/create-email.md#define-email-content) som en del av mallen. Om du väljer **[!UICONTROL HTML]** kan du bara definiera innehållet i e-postbrödtexten.
 
-   * För **[!UICONTROL SMS]**, **[!UICONTROL Push]**, **[!UICONTROL In-App]** och **[!UICONTROL Direct Mail]**&#x200B;är bara standardtypen tillgänglig för den aktuella kanalen. Du måste fortfarande markera den.
+   * För **[!UICONTROL SMS]**, **[!UICONTROL Push]**, **[!UICONTROL In-App]** och **[!UICONTROL Direct Mail]** är endast standardtypen tillgänglig för den aktuella kanalen. Du måste fortfarande markera den.
 
-1. Markera eller skapa Adobe Experience Platform-taggar från **[!UICONTROL Tags]** fält för att kategorisera mallen för förbättrad sökning. [Läs mer](../start/search-filter-categorize.md#tags)
+1. Välj eller skapa Adobe Experience Platform-taggar från fältet **[!UICONTROL Tags]** för att kategorisera mallen för förbättrad sökning. [Läs mer](../start/search-filter-categorize.md#tags)
 
-1. Om du vill tilldela etiketter för anpassad eller grundläggande dataanvändning till mallen kan du välja **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md).
+1. Om du vill tilldela etiketter för anpassad eller viktig dataanvändning till mallen kan du välja **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md).
 
-1. Klicka **[!UICONTROL Create]** och utforma innehållet efter behov, på samma sätt som du gör för allt innehåll i en resa eller kampanj - enligt den kanal du valt.
+1. Klicka på **[!UICONTROL Create]** och utforma ditt innehåll efter behov, på samma sätt som du gör för innehåll inuti en resa eller en kampanj - enligt den kanal du valt.
 
    ![](assets/content-template-edition.png)
 
@@ -75,15 +75,15 @@ Följ stegen nedan för att skapa en innehållsmall från grunden.
    * [Definiera innehåll för direktreklam](../direct-mail/create-direct-mail.md)
    * [Definiera innehåll i appen](../in-app/design-in-app.md)
 
-1. Om du skapar en **[!UICONTROL Email]** mall med **[!UICONTROL HTML]** kan du testa ditt innehåll. [Lär dig mer](#test-template)
+1. Om du skapar en **[!UICONTROL Email]**-mall med typen **[!UICONTROL HTML]** kan du testa ditt innehåll. [Lär dig hur](#test-template)
 
-1. När mallen är klar klickar du **[!UICONTROL Save]**.
+1. När mallen är klar klickar du på **[!UICONTROL Save]**.
 
-1. Klicka på pilen bredvid mallnamnet för att gå tillbaka till **[!UICONTROL Details]** skärm.
+1. Klicka på pilen bredvid mallnamnet för att gå tillbaka till skärmen **[!UICONTROL Details]**.
 
    ![](assets/content-template-back.png)
 
-Den här mallen kan nu användas när du skapar innehåll i [!DNL Journey Optimizer]. [Lär dig mer](#use-content-templates)
+Den här mallen kan nu användas när du skapar innehåll i [!DNL Journey Optimizer]. [Lär dig hur](#use-content-templates)
 
 ## Spara innehåll som innehållsmall {#save-as-template}
 
@@ -94,13 +94,13 @@ Den här mallen kan nu användas när du skapar innehåll i [!DNL Journey Optimi
 
 När du utformar innehåll i en kampanj eller resa kan du spara det för framtida återanvändning. Följ stegen nedan för att göra detta.
 
-1. Från meddelandet **[!UICONTROL Edit content]** klickar du på **[!UICONTROL Content template]** -knappen.
+1. Klicka på knappen **[!UICONTROL Content template]** på skärmen **[!UICONTROL Edit content]**.
 
 1. Välj **[!UICONTROL Save as content template]** i listrutan.
 
    ![](assets/content-template-button-save.png)
 
-   Om du är i [E-posta Designer](../email/get-started-email-design.md)kan du också välja det här alternativet på **[!UICONTROL More]** nedrullningsbar lista längst upp till höger på skärmen.
+   Om du befinner dig i [e-post-Designer](../email/get-started-email-design.md) kan du även välja det här alternativet i listrutan **[!UICONTROL More]** längst upp till höger på skärmen.
 
    ![](assets/content-template-more-button-save.png)
 
@@ -110,17 +110,17 @@ När du utformar innehåll i en kampanj eller resa kan du spara det för framtid
 
    >[!NOTE]
    >
-   >Den aktuella kanalen och typen fylls i automatiskt och kan inte redigeras. För e-postmallar som skapats från [E-posta Designer](../email/get-started-email-design.md), **[!UICONTROL HTML]** text väljs automatiskt.
+   >Den aktuella kanalen och typen fylls i automatiskt och kan inte redigeras. För e-postmallar som skapas från [e-post-Designer](../email/get-started-email-design.md) väljs typen **[!UICONTROL HTML]** automatiskt.
 
-1. Markera eller skapa en Adobe Experience Platform-tagg från **Taggar** fält för att kategorisera mallen. [Läs mer](../start/search-filter-categorize.md#tags)
+1. Markera eller skapa en Adobe Experience Platform-tagg från fältet **Taggar** för att kategorisera mallen. [Läs mer](../start/search-filter-categorize.md#tags)
 
-1. Om du vill tilldela etiketter för anpassad eller grundläggande dataanvändning till mallen kan du välja **[!UICONTROL Manage access]**. [Läs mer](../administration/object-based-access.md).
+1. Om du vill tilldela etiketter för anpassad eller viktig dataanvändning till mallen kan du välja **[!UICONTROL Manage access]**. [Läs mer](../administration/object-based-access.md).
 
 1. Klicka på **[!UICONTROL Save]**.
 
-1. Mallen sparas i **[!UICONTROL Content Templates]** lista, tillgänglig från [!DNL Journey Optimizer] egen meny. Det blir en fristående innehållsmall som du kan komma åt, redigera och ta bort som alla andra objekt i listan. [Läs mer](#access-manage-templates)
+1. Mallen sparas i listan **[!UICONTROL Content Templates]**, som du kommer åt från den dedikerade menyn [!DNL Journey Optimizer]. Det blir en fristående innehållsmall som du kan komma åt, redigera och ta bort som alla andra objekt i listan. [Läs mer](#access-manage-templates)
 
-Du kan nu använda den här mallen när du skapar innehåll i [!DNL Journey Optimizer]. [Lär dig mer](#use-content-templates)
+Du kan nu använda den här mallen när du skapar innehåll i [!DNL Journey Optimizer]. [Lär dig hur](#use-content-templates)
 
 >[!NOTE]
 >

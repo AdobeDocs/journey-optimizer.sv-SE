@@ -9,13 +9,13 @@ exl-id: f31e6a17-c99a-4db9-a301-426a1f0bcc92
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
 source-wordcount: '90'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 # Söka efter en samlingskvalificerare {#look-up-tag}
 
-Du kan söka efter särskilda samlingskvalificerare (kallas tidigare&quot;taggar&quot;) genom att göra en GET-förfrågan till [!DNL Offer Library] API som innehåller mängdkvalificeraren `id` i sökvägen till begäran.
+Du kan söka efter specifika samlingskvalificerare (som tidigare kallades &quot;taggar&quot;) genom att göra en GET-begäran till [!DNL Offer Library]-API:t som innehåller samlingskvalificeraren `id` i sökvägen för begäran.
 
 **API-format**
 
@@ -41,7 +41,7 @@ curl -X GET 'https://platform.adobe.io/data/core/dps/tags/tag1234' \
 
 **Svar**
 
-Ett godkänt svar returnerar information om insamlingskvalificeraren inklusive information om din unika insamlingskvalificerare `id`.
+Ett lyckat svar returnerar information om samlingskvalificeraren, inklusive information om din unika samlingskvalificerare `id`.
 
 ```json
 {

@@ -9,8 +9,8 @@ level: Beginner
 exl-id: 359ea3c6-7746-469e-8a24-624f9726f2d8
 source-git-commit: d4ecfecdc74c26890658d68d352c36b75f7c9039
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 5%
+source-wordcount: '104'
+ht-degree: 0%
 
 ---
 
@@ -24,4 +24,4 @@ Lär dig mer om källanslutningar och hur du konfigurerar dem i Journey Optimize
 
 >[!VIDEO](https://video.tv.adobe.com/v/335919?quality=12)
 
-Läs mer om hur du importerar data från externa källor med källkopplingar i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/home.htmll?lang=sv){target="_blank"}.
+Läs mer om hur du importerar data från externa källor med Source-anslutningar i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/sources/home.htmll?lang=sv){target="_blank"}.

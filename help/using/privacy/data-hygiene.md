@@ -9,8 +9,8 @@ level: Intermediate
 exl-id: 8045b559-bf5e-4b5f-9da4-accd44641a68
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 4%
+source-wordcount: '121'
+ht-degree: 0%
 
 ---
 
@@ -18,12 +18,12 @@ ht-degree: 4%
 
 >[!AVAILABILITY]
 >
->Datahygienfunktionerna är för närvarande bara tillgängliga för organisationer som har köpt **Hälsovårdssköld** och **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
+>Datahygienfunktionerna är för närvarande bara tillgängliga för organisationer som har köpt tilläggserbjudandena **Hälsovårdssköld** och **Sekretess och säkerhetssköld**.
 
 
 När data hela tiden importeras till Adobe Experience Platform blir det viktigt att dina data används på rätt sätt, uppdateras vid behov och raderas enligt organisationsprofiler.
 
-Dessa åtgärder kan utföras med **[!UICONTROL Data Hygiene]** -meny, som gör att du kan konfigurera och schemalägga dataåtgärder för hygienen så att dina register bevaras på rätt sätt.
+Dessa åtgärder kan utföras med hjälp av menyn **[!UICONTROL Data Hygiene]**, som gör att du kan konfigurera och schemalägga datahygienåtgärder och på så sätt se till att dina poster underhålls på rätt sätt.
 
 ![](assets/data-hygiene.png)
 

@@ -11,38 +11,38 @@ keywords: landning, landningssida, javascript, kod
 exl-id: 2a7ebead-5f09-4ea5-8f00-8b5625963290
 source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 2%
+source-wordcount: '567'
+ht-degree: 1%
 
 ---
 
 # Använda anpassad JavaScript på en landningssida {#lp-custom-js}
 
-Du kan definiera innehållet på landningssidan med hjälp av anpassad JavaScript. Om du till exempel behöver utföra avancerad formatering eller om du vill lägga till anpassade beteenden på dina landningssidor, kan du skapa egna kontroller och köra dem i [!DNL Journey Optimizer].
+Du kan definiera innehållet på landningssidan med anpassade JavaScript. Om du till exempel behöver utföra avancerad formatering eller om du vill lägga till anpassade beteenden på dina landningssidor, kan du skapa egna kontroller och köra dem i [!DNL Journey Optimizer].
 
 ## Infoga JavaScript-kod på en landningssida
 
-Om du vill infoga anpassad JavaScript i innehållet på landningssidan kan du antingen göra följande:
+Om du vill infoga anpassad JavaScript i startsidans innehåll kan du antingen göra följande:
 
-* Importera befintligt HTML-innehåll när du börjar skapa ditt innehåll och markera filen som innehåller din anpassade JavaScript-kod. Lär dig hur du importerar innehåll [i det här avsnittet](../email/existing-content.md).
+* Importera befintligt HTML-innehåll när du börjar skapa ditt innehåll och markera filen som innehåller din anpassade JavaScript-kod. Lär dig hur du importerar innehåll [ i det här avsnittet](../email/existing-content.md).
 
-* Utforma landningssidan från grunden eller från en sparad mall. Dra och släpp **[!UICONTROL HTML]** innehållskomponenten på arbetsytan och visa källkoden för att lägga till JavaSCript i komponenten. Lär dig hur du använder komponenten HTML i [det här avsnittet](../email/content-components.md#HTML). <!--You can also simply switch the whole landing page content to code view and enter or paste your JavaScript code.-->
+* Utforma landningssidan från grunden eller från en sparad mall. Dra och släpp innehållskomponenten **[!UICONTROL HTML]** på arbetsytan och visa källkoden för att lägga till JavaScript i komponenten. Lär dig hur du använder komponenten HTML i [det här avsnittet](../email/content-components.md#HTML). <!--You can also simply switch the whole landing page content to code view and enter or paste your JavaScript code.-->
 
   ![](assets/lp_designer-html-component.png)
 
-* Ange eller klistra in JavaScript-kod direkt i innehållsdesignern. Lär dig koda eget innehåll [i det här avsnittet](../email/code-content.md).
+* Ange eller klistra in JavaScript-kod direkt i innehållsdesignern. Lär dig hur du kodar ditt eget innehåll [i det här avsnittet](../email/code-content.md).
 
 >[!NOTE]
 >
->För närvarande kan du inte visa JavaScript i praktiken när [förhandsgranska landningssidan](create-lp.md#test-landing-page).
+>För närvarande kan du inte visa JavaScript i aktion när [förhandsgranskar landningssidan](create-lp.md#test-landing-page).
 
 För att landningssidan ska visas korrekt använder du följande syntax enligt beskrivningen i avsnitten nedan.
 
 ## Kodinitiering
 
-Om du vill initiera JavaScript-koden måste du använda `lpRuntimeReady` -händelse. Den här händelsen utlöses när biblioteket har initierats. Återanropet utförs med `lpRuntime` objekt som visar biblioteksmetoden och krokarna.
+Om du vill initiera din JavaScript-kod måste du använda händelsen `lpRuntimeReady`. Den här händelsen utlöses när biblioteket har initierats. Återanropet körs med objektet `lpRuntime` för att visa biblioteksmetoden och krokarna.
 
-`LpRuntime` står för&quot;Landing page Runtime&quot;. Det här objektet är huvudidentifieraren för biblioteket. Den visar kopplingar, formuläröverföringsmetoder och andra verktygsmetoder som kan användas i anpassad JavaScript.
+`LpRuntime` står för&quot;Landing page Runtime&quot;. Det här objektet är huvudidentifieraren för biblioteket. Den visar kopplingar, formuläröverföringsmetoder och andra verktygsmetoder som kan användas i anpassade JavaScript.
 
 **Exempel:**
 
@@ -87,7 +87,7 @@ De metoder som anges nedan används för att skicka anpassade formulär.
 
 >[!NOTE]
 >
->Eftersom formuläröverföringen hanteras av anpassad JavaScript måste standardöverföringen inaktiveras explicit genom att en global variabel anges `disableDefaultFormSubmission` till `true`.
+>Eftersom formuläröverföringen hanteras av anpassad JavaScript måste standardöverföringen inaktiveras uttryckligen genom att den globala variabeln `disableDefaultFormSubmission` anges till `true`.
 
 | Namn | Beskrivning |
 |--- |--- |
@@ -113,7 +113,7 @@ lpRuntime.submitFormPartial(formSubmissionData,{   // This will not trigger the 
 
 | Namn | Beskrivning |
 |--- |--- |
-| getFormData | Den här metoden kan användas för att hämta `formData` som ett JSON-objekt. Det här objektet kan skickas till `submitForm` för att skicka in formulär. |
+| getFormData | Den här metoden kan användas för att hämta `formData` i form av ett JSON-objekt. Det här objektet kan skickas till `submitForm` för att skicka formulär. |
 
 **Exempel:**
 

@@ -25,9 +25,9 @@ ht-degree: 5%
 
 Följande typer av villkor är tillgängliga:
 
-* [Datakällans villkor](#data_source_condition)
+* [Data, Source-villkor](#data_source_condition)
 * [Tidsvillkor](#time_condition)
-* [Procentdelning](#percentage_split)
+* [Procentandel av delning](#percentage_split)
 * [Datumvillkor](#date_condition)
 * [Profilände](#profile_cap)
 
@@ -42,7 +42,7 @@ Följande typer av villkor är tillgängliga:
 
 När du använder flera villkor under en resa kan du definiera etiketter för var och en av dem för att lättare kunna identifiera dem.
 
-Klicka **[!UICONTROL Add a path]** om du vill definiera flera villkor. För varje villkor läggs en ny bana till på arbetsytan efter aktiviteten.
+Klicka på **[!UICONTROL Add a path]** om du vill definiera flera villkor. För varje villkor läggs en ny bana till på arbetsytan efter aktiviteten.
 
 ![](assets/journey47.png)
 
@@ -52,7 +52,7 @@ Låt oss till exempel ta exemplet med den första sökvägens villkor&quot;Perso
 
 ![](assets/journey48.png)
 
-Du kan skapa en annan sökväg för målgrupper som inte uppfyller de definierade villkoren genom att markera **[!UICONTROL Show path for other cases than the one(s) above]**. Observera att det här alternativet inte är tillgängligt vid delning. Se [Procentdelning](#percentage_split).
+Du kan skapa en annan sökväg för målgrupper som inte uppfyller de definierade villkoren genom att markera **[!UICONTROL Show path for other cases than the one(s) above]**. Observera att det här alternativet inte är tillgängligt vid delning. Se [Procentandel av delning](#percentage_split).
 
 I det enkla läget kan du utföra enkla frågor baserat på en kombination av fält. Alla tillgängliga fält visas till vänster på skärmen. Dra och släpp fält till huvudzonen. Om du vill kombinera de olika elementen, låser du ihop dem till varandra för att skapa olika grupper och/eller gruppnivåer. Du kan sedan välja en logisk operatör för att kombinera element på samma nivå:
 
@@ -61,7 +61,7 @@ I det enkla läget kan du utföra enkla frågor baserat på en kombination av f�
 
 ![](assets/journey64.png)
 
-Om du använder [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} för att skapa era målgrupper kan ni utnyttja dem under era resor. Se [Använda målgrupper under förhållanden](../building-journeys/condition-activity.md#using-a-segment).
+Om du använder [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} för att skapa dina målgrupper kan du utnyttja dem under dina reseförhållanden. Se [Använda målgrupp i villkor](../building-journeys/condition-activity.md#using-a-segment).
 
 
 >[!NOTE]
@@ -72,9 +72,9 @@ När ett fel inträffar i en åtgärd eller ett villkor upphör en individs resa
 
 I den enkla redigeraren hittar du även kategorin Reseegenskaper, nedanför kategorierna event och datakälla. Denna kategori innehåller tekniska fält som rör resan för en viss profil. Det här är den information som hämtats av systemet från direktresor, till exempel rese-ID:t eller de specifika fel som påträffats. [Läs mer](expression/journey-properties.md)
 
-## Datakällans villkor {#data_source_condition}
+## Source-villkor för data {#data_source_condition}
 
-På så sätt kan du definiera ett villkor baserat på fält från datakällorna eller händelser som tidigare placerats under resan. Läs om hur du använder uttrycksredigeraren i [det här avsnittet](expression/expressionadvanced.md).
+På så sätt kan du definiera ett villkor baserat på fält från datakällorna eller händelser som tidigare placerats under resan. Lär dig hur du använder uttrycksredigeraren i [det här avsnittet](expression/expressionadvanced.md).
 
 Om du till exempel riktar dig till en målgrupp med anrikningsattribut som genererats med ett dispositionsarbetsflöde eller en anpassad uppladdning (CSV-fil), kan du använda dessa anrikningsattribut för att bygga upp ditt villkor.
 
@@ -100,7 +100,7 @@ Tre filtreringsalternativ är tillgängliga:
 
 ## Procentdelning {#percentage_split}
 
-Med det här alternativet kan du slumpmässigt dela målgruppen för att definiera olika åtgärder för varje grupp. Definiera antalet delningar och partitioneringen för varje sökväg. Delningsberäkningen är statistisk eftersom systemet inte kan förutse hur många personer som kommer att flöda i den här kundresan. Därför har delningen en mycket låg felmarginal. Den här funktionen är baserad på en slumpmässig Java-mekanism (se det här [page](https://docs.oracle.com/javase/7/docs/api/java/util/Random.html)).
+Med det här alternativet kan du slumpmässigt dela målgruppen för att definiera olika åtgärder för varje grupp. Definiera antalet delningar och partitioneringen för varje sökväg. Delningsberäkningen är statistisk eftersom systemet inte kan förutse hur många personer som kommer att flöda i den här kundresan. Därför har delningen en mycket låg felmarginal. Den här funktionen är baserad på en slumpmässig Java-mekanism (se den här [sidan](https://docs.oracle.com/javase/7/docs/api/java/util/Random.html)).
 
 I testläge väljs alltid den översta grenen när en delning nås. Du kan ordna om placeringen av de delade grenarna om du vill att testet ska välja en annan bana. Se [den här sidan](../building-journeys/testing-the-journey.md)
 
@@ -149,20 +149,20 @@ Profilände beaktas inte i testläge.
 
 ## Använda målgrupper under förhållanden {#using-a-segment}
 
-I det här avsnittet beskrivs hur du använder en målgrupp i ett resevillkor. Mer information om målgrupper och hur du bygger dem finns i [det här avsnittet](../audience/about-audiences.md).
+I det här avsnittet beskrivs hur du använder en målgrupp i ett resevillkor. Mer information om målgrupper och hur du skapar dem finns i [det här avsnittet](../audience/about-audiences.md).
 
 Följ de här stegen för att använda en målgrupp i ett resevillkor:
 
-1. Öppna en resa, släpp en **[!UICONTROL Condition]** -aktivitet och välj **Villkor för datakälla**.
+1. Öppna en resa, släpp en **[!UICONTROL Condition]**-aktivitet och välj **Data Source Condition**.
 
    ![](assets/segment3.png)
 
-1. Klicka **[!UICONTROL Add a path]** för varje extra sökväg som behövs. Klicka på **[!UICONTROL Expression]** fält.
+1. Klicka på **[!UICONTROL Add a path]** för varje extra sökväg som behövs. Klicka på fältet **[!UICONTROL Expression]** för varje sökväg.
 
-1. På vänster sida, unfold **[!UICONTROL Audiences]** nod. Dra och släpp den målgrupp du vill använda för ditt villkor. Som standard är villkoret för målgruppen sant.
+1. Till vänster kan du visa **[!UICONTROL Audiences]**-noden. Dra och släpp den målgrupp du vill använda för ditt villkor. Som standard är villkoret för målgruppen sant.
 
    ![](assets/segment4.png)
 
    >[!NOTE]
    >
-   >Observera att endast de personer som har **Realiserad** och **Befintlig** Status för målgruppsdeltagande kommer att betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
+   >Observera att endast de personer som har status **Realiserad** och **Befintlig** målgruppsdeltagare betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.

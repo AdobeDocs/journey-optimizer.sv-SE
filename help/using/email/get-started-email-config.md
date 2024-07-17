@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Kom igång med e-postkonfiguration
-description: Läs mer om e-postkonfiguration i [!DNL Journey Optimizer]
+description: Läs mer om e-postkonfigurationen i  [!DNL Journey Optimizer]
 role: Admin
 level: Experienced
 feature: Channel Configuration, Email
@@ -18,9 +18,9 @@ ht-degree: 7%
 
 # Kom igång med e-postkonfiguration {#get-starte-email-config}
 
-Att kunna skicka e-post via resor och kampanjer i [!DNL Journey Optimizer]måste du gå igenom ett antal konfigurationssteg.
+Om du vill kunna skicka e-post via resor och kampanjer i [!DNL Journey Optimizer] måste du gå igenom ett antal konfigurationssteg.
 
-1. För att säkerställa optimal leverans och skydda ditt rykte börjar du med att delegera till Adobe de underdomäner du tänker använda för att skicka e-post med [!DNL Journey Optimizer]. Dessa underdomäner avgör element som webbsidor som ska spåras och URL:er för spegelsidor. [Läs mer](../configuration/about-subdomain-delegation.md)
+1. För att säkerställa optimal leverans och skydda ditt rykte börjar du med att delegera till Adobe de underdomäner som du tänker använda för att skicka e-postmeddelanden med [!DNL Journey Optimizer]. Dessa underdomäner avgör element som webbsidor som ska spåras och URL:er för spegelsidor. [Läs mer](../configuration/about-subdomain-delegation.md)
 
    ![](../configuration/assets/subdomain-list.png)
 
@@ -28,7 +28,7 @@ Att kunna skicka e-post via resor och kampanjer i [!DNL Journey Optimizer]måste
 
    ![](../configuration/assets/ip-pool-create.png)
 
-1. Skapa kanalytor och välj **[!UICONTROL Email]** kanal. [Läs mer](../configuration/channel-surfaces.md)
+1. Skapa kanalytor och välj kanalen **[!UICONTROL Email]**. [Läs mer](../configuration/channel-surfaces.md)
 
 
    ![](../configuration/assets/preset-general.png)
@@ -39,7 +39,7 @@ Att kunna skicka e-post via resor och kampanjer i [!DNL Journey Optimizer]måste
 
    ![](assets/surface-subdomain-ip-pool.png)
 
-   * The **[!UICONTROL Sender email]** och **[!UICONTROL Error email]** adresser måste använda den aktuella markerade delegerade underdomänen. [Läs mer](email-settings.md#email-header)
+   * **[!UICONTROL Sender email]**- och **[!UICONTROL Error email]**-adresserna måste använda den valda delegerade underdomänen. [Läs mer](email-settings.md#email-header)
 
    ![](assets/preset-header.png)
 

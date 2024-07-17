@@ -4,7 +4,8 @@ description: Lär dig hur du väljer testprofiler för att förhandsgranska och 
 feature: Preview, Proofs
 role: User
 level: Beginner
-source-git-commit: 6da7f4c8caa5a0a6cfda1e90d0c6cd4787c6afca
+exl-id: c51e4089-7f51-437d-a5ed-de10bab46cf8
+source-git-commit: feae2cb9d0bed35f12eb117cf2969c9290ebc06f
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
@@ -22,11 +23,11 @@ Innan du förhandsgranskar eller testar innehållet måste du först välja test
 
 Så här väljer du testprofiler:
 
-1. I fönstret Redigera innehåll i meddelandet eller i e-postdesignern klickar du på **[!UICONTROL Simulate content]** -knappen.
+1. Klicka på knappen **[!UICONTROL Simulate content]** på skärmen Redigera innehåll i ditt meddelande eller i e-post-Designer.
 
-1. Klicka på **[!UICONTROL Manage test profiles]** och sedan markera det namnutrymme som ska användas för att identifiera testprofiler genom att klicka på **[!UICONTROL Identity namespace]** markeringsikon. [Läs mer om Adobe Experience Platform identitetsnamnutrymmen](../audience/get-started-identity.md).
+1. Klicka på knappen **[!UICONTROL Manage test profiles]** och markera sedan det namnutrymme som ska användas för att identifiera testprofiler genom att klicka på markeringsikonen **[!UICONTROL Identity namespace]** . [Läs mer om Adobe Experience Platform identitetsnamnutrymmen](../audience/get-started-identity.md).
 
-   I exemplet nedan använder vi **E-post** namnutrymme.
+   I exemplet nedan använder vi namnutrymmet **Email**.
 
    ![](../email/assets/previewselect-namespace.png)
 
@@ -34,7 +35,7 @@ Så här väljer du testprofiler:
 
    ![](../email/assets/preview-email-namespace.png)
 
-1. I **[!UICONTROL Identity value]** anger du värdet (här är e-postadressen) för att identifiera testprofilen och klickar på **[!UICONTROL Add profile]**.
+1. I fältet **[!UICONTROL Identity value]** anger du värdet (här e-postadressen) för att identifiera testprofilen och klickar på **[!UICONTROL Add profile]**.
 
    <!--![](assets/preview-identity-value.png)-->
 

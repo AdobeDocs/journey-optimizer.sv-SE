@@ -8,8 +8,8 @@ level: Intermediate
 exl-id: 8c7135d7-bf5a-4671-afdf-afec60907a56
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 5%
+source-wordcount: '438'
+ht-degree: 3%
 
 ---
 
@@ -24,21 +24,21 @@ Om flera erbjudanden är berättigade till en viss placering kan du välja den m
 
 ## Prioritet {#offer-priority}
 
-När flera erbjudanden kan komma i fråga för en viss placering i ett beslut är de som har högst **prioritet** kommer att levereras till kunderna först.
+När flera erbjudanden är berättigade till en viss placering i ett beslut levereras erbjudandena med den högsta **prioriteten** till kunderna först.
 
 ![](../assets/offer-priority.png)
 
-Prioritetspoäng för erbjudanden tilldelas när ett erbjudande skapas. Lär dig hur du skapar ett personaliserat erbjudande i [det här avsnittet](../offer-library/creating-personalized-offers.md).
+Prioritetspoäng för erbjudanden tilldelas när ett erbjudande skapas. Lär dig hur du skapar ett personligt erbjudande i [det här avsnittet](../offer-library/creating-personalized-offers.md).
 
 ## Rankningsformel {#assign-ranking-formula}
 
-Förutom att ge prioritet kan du med Journey Optimizer skapa **rankningsformler**. Detta är formler som avgör vilket erbjudande som ska presenteras först för en viss placering, i stället för att beakta offertens prioritetspoäng.
+Förutom att erbjuda prioritet kan du med Journey Optimizer skapa **rankningsformler**. Detta är formler som avgör vilket erbjudande som ska presenteras först för en viss placering, i stället för att beakta offertens prioritetspoäng.
 
 Du kan till exempel öka prioriteten för alla erbjudanden där slutdatumet är mindre än 24 timmar från och med nu, eller öka erbjudandena från kategorin&quot;löpande&quot; om profilens intressepunkt är&quot;igång&quot;.
 
-Lär dig skapa en rankningsformel i [det här avsnittet](../ranking/create-ranking-formulas.md).
+Lär dig hur du skapar en rankningsformel i [det här avsnittet](../ranking/create-ranking-formulas.md).
 
-När du har skapat en formel kan du tilldela den till en placering i ett beslut. Följ stegen nedan för att göra detta:
+När du har skapat en formel kan du tilldela den till en placering i ett beslut. Gör så här:
 
 1. Skapa ett beslut eller redigera ett befintligt. Se [Skapa beslut](../offer-activities/create-offer-activities.md).
 
@@ -46,7 +46,7 @@ När du har skapat en formel kan du tilldela den till en placering i ett beslut.
 
 1. Lägg till en samling för varje placering. Se [Skapa samlingar](../offer-library/creating-collections.md).
 
-1. Välj **[!UICONTROL Formula]** som rangordningsmetod och klicka sedan på **[!UICONTROL Add ranking]**.
+1. Välj **[!UICONTROL Formula]** som rankningsmetod och klicka sedan på **[!UICONTROL Add ranking]**.
 
    ![](../assets/offer-activity-ranking.png)
 
@@ -62,7 +62,7 @@ Om flera erbjudanden kan presenteras på den här platsen, kommer beslutet att a
 
 <!--If you are an [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} user leveraging the **Offer Decisioning** application service,-->
 
-Du kan också använda ett utbildat modellsystem som automatiskt rangordnar erbjudanden för en viss profil genom att välja en AI-modell. Lär dig skapa en AI-modell i [det här avsnittet](../ranking/create-ranking-strategies.md).
+Du kan också använda ett utbildat modellsystem som automatiskt rangordnar erbjudanden för en viss profil genom att välja en AI-modell. Lär dig hur du skapar en AI-modell i [det här avsnittet](../ranking/create-ranking-strategies.md).
 
 När en AI-modell har skapats kan du tilldela den till en placering i ett beslut. Gör så här:
 
@@ -72,7 +72,7 @@ När en AI-modell har skapats kan du tilldela den till en placering i ett beslut
 
 1. Lägg till en samling för varje placering. Se [Skapa samlingar](../offer-library/creating-collections.md).
 
-1. Välj om du vill rangordna erbjudanden efter **[!UICONTROL AI ranking]** i listrutan och klicka på **[!UICONTROL Add ranking]**.
+1. Välj att rangordna erbjudanden efter **[!UICONTROL AI ranking]** i listrutan och klicka på **[!UICONTROL Add ranking]**.
 
    ![](../assets/ranking-selection-ai-ranking.png)
 

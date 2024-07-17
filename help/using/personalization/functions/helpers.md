@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ## Standardvärde för reserv{#default-value}
 
-The `Default Fallback Value` hjälpfunktionen används för att returnera ett standardreservvärde om ett attribut är tomt eller null. Den här mekanismen fungerar för profilattribut och resthändelser.
+Hjälpprogrammet `Default Fallback Value` används för att returnera ett standardreservvärde om ett attribut är tomt eller null. Den här mekanismen fungerar för profilattribut och resthändelser.
 
 **Syntax**
 
@@ -25,11 +25,11 @@ The `Default Fallback Value` hjälpfunktionen används för att returnera ett st
 Hello {%=profile.personalEmail.name.firstName ?: "there" %}!
 ```
 
-I det här exemplet är värdet `there` visas om `firstName` Profilens attribut är tomt eller null.
+I det här exemplet visas värdet `there` om attributet `firstName` för den här profilen är tomt eller null.
 
 ## Villkor{#if-function}
 
-The `if` hjälpfunktionen används för att definiera ett villkorsstyrt block.
+Hjälpprogrammet `if` används för att definiera ett villkorsblock.
 Om uttrycksutvärderingen returnerar true återges blocket, i annat fall hoppas det över.
 
 **Syntax**
@@ -39,8 +39,8 @@ Om uttrycksutvärderingen returnerar true återges blocket, i annat fall hoppas 
 <a href="https://www.adobe.com/academia">Check out this link</a>
 ```
 
-Efter `if` kan du ange en `else` -programsats för att ange ett kodblock som ska köras, om samma villkor är false.
-The `elseif` -programsatsen anger ett nytt villkor som ska testas om den första programsatsen returnerar false.
+Efter hjälpen för `if` kan du ange en `else`-sats för att ange ett kodblock som ska köras, om samma villkor är falskt.
+Programsatsen `elseif` anger ett nytt villkor som ska testas om den första programsatsen returnerar false.
 
 
 **Format**
@@ -80,7 +80,7 @@ The `elseif` -programsatsen anger ett nytt villkor som ska testas om den första
    {%/if%}
    ```
 
-1. **Lägga till en villkorlig länk**
+1. **Lägg till en villkorlig länk**
 
    Följande åtgärd lägger till en länk till www.adobe.com/academia&#39; webbplats för profiler med e-postadresserna .edu, till www.adobe.com/org&#39; webbplats för profiler med e-postadresserna .org och standardwebbadressen www.adobe.com/users&#39; för alla andra profiler:
 
@@ -106,12 +106,12 @@ The `elseif` -programsatsen anger ett nytt villkor som ska testas om den första
 
 >[!NOTE]
 >
->Mer information om målgrupper och segmenteringstjänsten finns i [section](../../audience/about-audiences.md).
+>Mer information om målgrupper och segmenteringstjänsten finns i [avsnittet](../../audience/about-audiences.md).
 
 
 ## Om{#unless}
 
-The `unless` hjälpfunktionen används för att definiera ett villkorsstyrt block. Genom att motsätta sig `if`  helper, om uttrycksutvärderingen returnerar false återges blocket.
+Hjälpprogrammet `unless` används för att definiera ett villkorsblock. Om uttrycksutvärderingen returnerar false återges blocket som motsatt till hjälpen `if`.
 
 **Syntax**
 
@@ -133,9 +133,9 @@ Some edu specific content Content
 
 ## Varje{#each}
 
-The `each` helper används för att iterera över en array.
-Hjälpens syntax är ```{{#each ArrayName}}``` Ditt innehåll {{/each}}
-Vi kan referera till de enskilda arrayobjekten med nyckelordet **this** inuti blocket. Index för arrayelementet kan återges med {{@index}}.
+Hjälpprogrammet `each` används för att iterera över en array.
+Den hjälpandes syntax är ```{{#each ArrayName}}``` YourContent {{/each}}
+Vi kan referera till de enskilda arrayobjekten genom att använda nyckelordet **this** inuti blocket. Index för arrayelementet kan återges med {{@index}}.
 
 **Syntax**
 
@@ -167,7 +167,7 @@ Visa en lista över produkter som den här användaren har i kundvagnen:
 
 ## Med{#with}
 
-The `with` hjälpfunktionen används för att ändra utvärderingstoken för malldel.
+Hjälpprogrammet `with` används för att ändra utvärderingstoken för malldel.
 
 **Syntax**
 
@@ -177,7 +177,7 @@ The `with` hjälpfunktionen används för att ändra utvärderingstoken för mal
 {{/with}}
 ```
 
-The `with` hjälpfunktionen är också användbar när du vill definiera en variabel för kortkommandon.
+Hjälpprogrammet `with` är också användbart för att definiera en genvägsvariabel.
 
 **Exempel**
 
@@ -192,7 +192,7 @@ Använd med för att skapa alias för långa variabelnamn för kortare:
 
 ## Låt{#let}
 
-The `let` -funktionen tillåter att ett uttryck lagras som en variabel som kan användas senare i en fråga.
+Funktionen `let` tillåter att ett uttryck lagras som en variabel som kan användas senare i en fråga.
 
 **Syntax**
 

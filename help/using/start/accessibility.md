@@ -16,9 +16,9 @@ ht-degree: 2%
 
 # Tillgänglighet i Journey Optimizer{#accessibility}
 
-Hjälpmedel är en serie funktioner som gör en programprodukt användbar, med så lite ansträngning som möjligt, för användare med visuella, auditiva, kognitiva, motoriska eller andra typer av funktionshinder. Adobe är branschledande inom tillgänglighet och stöder skapandet av enastående webbupplevelser genom att uppmuntra utvecklare att producera engagerande innehåll som är tillgängligt för alla användare. Läs mer om Adobe engagemang för tillgänglighet i [Adobe hjälpmedelssida](https://www.adobe.com/accessibility.html){target="_blank"}.
+Hjälpmedel är en serie funktioner som gör en programprodukt användbar, med så lite ansträngning som möjligt, för användare med visuella, auditiva, kognitiva, motoriska eller andra typer av funktionshinder. Adobe är branschledande inom tillgänglighet och stöder skapandet av enastående webbupplevelser genom att uppmuntra utvecklare att producera engagerande innehåll som är tillgängligt för alla användare. Läs mer om Adobe engagemang för tillgänglighet på [hjälpmedelssidan för Adobe](https://www.adobe.com/accessibility.html){target="_blank"}.
 
-För att uppnå målen för tillgänglighet [!DNL Journey Optimizer] följer vedertagen praxis i Web Content Accessibility Guidelines (WCAG) 2.1 Level A och Level AA. Läs mer i den senaste [Adobe Journey Optimizer Accessibility Conformance Report](https://www.adobe.com/accessibility/compliance/adobe-journey-optimizer-2022.html){target="_blank"}.
+[!DNL Journey Optimizer] följer den internationellt erkända bästa metoden i Web Content Accessibility Guidelines (WCAG) 2.1 Level A och Level AA för att uppnå målet om tillgänglighet. Läs mer i den senaste [Adobe Journey Optimizer Accessibility Conformance Report](https://www.adobe.com/accessibility/compliance/adobe-journey-optimizer-2022.html){target="_blank"}.
 
 
 Tillgänglighetsfunktionerna i [!DNL Adobe Journey Optimizer] ärvs från Adobe Experience Platform:
@@ -27,9 +27,9 @@ Tillgänglighetsfunktionerna i [!DNL Adobe Journey Optimizer] ärvs från Adobe 
 * Färgkontrast
 * Validering av obligatoriska fält
 
-Tillgänglighetsfunktionerna i Adobe Experience Platform är detaljerade [i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/accessibility/features.html){target="_blank"}.
+Hjälpmedelsfunktionerna i Adobe Experience Platform är detaljerade [i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/accessibility/features.html){target="_blank"}.
 
-Följande vanliga kortkommandon finns i [!DNL Journey Optimizer]:
+Följande vanliga kortkommandon är tillgängliga i [!DNL Journey Optimizer]:
 
 | Åtgärd | Genväg |
 | --- | --- |
@@ -39,7 +39,7 @@ Följande vanliga kortkommandon finns i [!DNL Journey Optimizer]:
 | Markera eller rensa ett element som är i fokus | Enter eller mellanslagstangenten |
 | Avbryt en markering, komprimera en ruta eller stänga en dialogruta | Esc |
 
-Du kan använda dessa kortkommandon i vissa områden i [!DNL Journey Optimizer] användargränssnitt:
+Du kan använda dessa genvägar i specifika områden i användargränssnittet för [!DNL Journey Optimizer]:
 
 <table>
   <thead>
@@ -113,7 +113,7 @@ Du kan använda dessa kortkommandon i vissa områden i [!DNL Journey Optimizer] 
   <tr>
     <td>Textfält</td>
     <td>Markera all text i det markerade fältet</td>
-    <td>Ctrl + A (Windows)<br/>Cmd + A (Mac)</td>
+    <td>Ctrl + A (Windows)<br/>Kommando + A (Mac)</td>
   </tr>
   <tr>
     <td rowspan="2">Popup-fönster</td>
@@ -137,6 +137,6 @@ Du kan använda dessa kortkommandon i vissa områden i [!DNL Journey Optimizer] 
   <tr>
     <td>Förhandsgranska nyttolast</td>
     <td>Välj nyttolast</td>
-    <td>Ctrl + A (Windows)<br/>Cmd + A (Mac)</td>
+    <td>Ctrl + A (Windows)<br/>Kommando + A (Mac)</td>
   </tr>
 </table>

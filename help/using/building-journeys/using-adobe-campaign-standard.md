@@ -23,13 +23,13 @@ ht-degree: 1%
 >title="Anpassade åtgärder"
 >abstract="Om du har Adobe Campaign Standard kan du integrera programmet. Det gör att du kan skicka e-post, push-meddelanden och SMS med Adobe Campaign Transactional Messaging-funktioner."
 
-Om du har Adobe Campaign Standard finns följande inbyggda funktionsmakron: **[!UICONTROL Email]**, **[!UICONTROL Push]** och **[!UICONTROL SMS]**.
+Om du har Adobe Campaign Standard är följande inbyggda åtgärdsaktiviteter tillgängliga: **[!UICONTROL Email]**, **[!UICONTROL Push]** och **[!UICONTROL SMS]**.
 
 >[!NOTE]
 >
 >Därför måste du konfigurera den inbyggda åtgärden. Se [den här sidan](../action/acs-action.md).
 
-För var och en av dessa kanaler väljer du ett transaktionsmeddelande från Adobe Campaign Standard **mall**. För de inbyggda e-post-, SMS- och push-kanalerna använder vi Transactional Messaging för att skicka meddelanden. Det innebär att om du vill använda en viss meddelandemall under dina resor måste du publicera den i Adobe Campaign Standard. Se [den här sidan](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv) om du vill lära dig hur du använder den här funktionen.
+För var och en av dessa kanaler väljer du en Adobe Campaign Standard Transactional Messaging **mall**. För de inbyggda e-post-, SMS- och push-kanalerna använder vi Transactional Messaging för att skicka meddelanden. Det innebär att om du vill använda en viss meddelandemall under dina resor måste du publicera den i Adobe Campaign Standard. Mer information om hur du använder den här funktionen finns på [den här sidan](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv).
 
 >[!NOTE]
 >
@@ -49,23 +49,23 @@ När du väljer en mall visas alla fält som förväntas i meddelandenyttolasten
 
 ## E-post och SMS {#section_asc_51g_nhb}
 
-För **[!UICONTROL Email]** och **[!UICONTROL SMS]**, parametrarna är identiska.
+Parametrarna är identiska för **[!UICONTROL Email]** och **[!UICONTROL SMS]**.
 
 >[!NOTE]
 >
->När du använder en profils transaktionsmall för e-post hanteras avprenumerationsfunktionen automatiskt av Adobe Campaign Standard. För att implementera detta kan du enkelt inkludera en **[!UICONTROL Unsubscription link]** innehållsblock inuti [e-postmall för transaktioner](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv). Om du däremot använder en händelsebaserad mall (rtEvent) måste du infoga en länk i meddelandet som skickar mottagarens e-post som en URL-parameter och dirigerar dem till en startsida som inte är en prenumeration. Det är nödvändigt att skapa denna landningssida och se till att mottagarens beslut att säga upp prenumerationen verkligen vidarebefordras till Adobe.
+>När du använder en profils transaktionsmall för e-post hanteras avprenumerationsfunktionen automatiskt av Adobe Campaign Standard. För att implementera detta kan du enkelt inkludera ett **[!UICONTROL Unsubscription link]**-innehållsblock i [e-postmallen för transaktioner](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv). Om du däremot använder en händelsebaserad mall (rtEvent) måste du infoga en länk i meddelandet som skickar mottagarens e-post som en URL-parameter och dirigerar dem till en startsida som inte är en prenumeration. Det är nödvändigt att skapa denna landningssida och se till att mottagarens beslut att säga upp prenumerationen verkligen vidarebefordras till Adobe.
 
 Först måste du välja en transaktionsmall.
 
 Det finns två kategorier: **[!UICONTROL Address]** och **[!UICONTROL Personalization Data]**.
 
-Du kan enkelt ange var du vill hämta **[!UICONTROL Address]** eller **[!UICONTROL Personalization Data]** med hjälp av gränssnittet. Du kan bläddra bland händelser och den tillgängliga datakällans fält. Du kan också använda den avancerade uttrycksredigeraren för mer avancerade användningsområden, som att använda en datakälla som kräver att parametrar skickas eller att manipulationer utförs. Läs [den här sidan](expression/expressionadvanced.md).
+Du kan enkelt definiera var **[!UICONTROL Address]** eller **[!UICONTROL Personalization Data]** ska hämtas via gränssnittet. Du kan bläddra bland händelser och den tillgängliga datakällans fält. Du kan också använda den avancerade uttrycksredigeraren för mer avancerade användningsområden, som att använda en datakälla som kräver att parametrar skickas eller att manipulationer utförs. Läs [den här sidan](expression/expressionadvanced.md).
 
 **[!UICONTROL Address]**
 
 >[!NOTE]
 >
->Den här kategorin är bara synlig om du väljer ett transaktionsmeddelande av typen &quot;event&quot;. För &quot;profilmeddelanden&quot; visas **[!UICONTROL Address]** -fältet hämtas automatiskt från Adobe Campaign Standard av systemet.
+>Den här kategorin är bara synlig om du väljer ett transaktionsmeddelande av typen &quot;event&quot;. För profilmeddelanden hämtas fältet **[!UICONTROL Address]** automatiskt från Adobe Campaign Standard av systemet.
 
 Det här är de fält som systemet behöver för att kunna skicka meddelandet. För en e-postmall är det e-postadressen. För ett SMS är det mobiltelefonnumret.
 
@@ -83,7 +83,7 @@ Detta är de fält som förväntas av Adobe Campaign Standard-meddelandet. Dessa
 
 ## Push {#section_im3_hvf_nhb}
 
-Innan du använder push-aktiviteten måste din mobilapp konfigureras tillsammans med Campaign Standard för att skicka push-meddelanden. Använd den här [artikel](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/configuring-mobile/supported-mobile-use-cases.html?lang=sv) för att vidta nödvändiga implementeringsåtgärder för mobilen.
+Innan du använder push-aktiviteten måste din mobilapp konfigureras tillsammans med Campaign Standard för att skicka push-meddelanden. Använd den här [artikeln](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/configuring-mobile/supported-mobile-use-cases.html?lang=sv) om du vill utföra de nödvändiga implementeringsstegen för mobilen.
 
 Först måste du välja en mobilapp i listrutan och ett transaktionsmeddelande.
 
@@ -95,11 +95,11 @@ Det finns två kategorier: **[!UICONTROL Target]** och **[!UICONTROL Personaliza
 
 >[!NOTE]
 >
->Den här kategorin visas bara om du väljer ett händelsemeddelande. För profilmeddelanden visas **[!UICONTROL Target]** fält hämtas automatiskt av systemet med den avstämning som har utförts av Adobe Campaign Standard.
+>Den här kategorin visas bara om du väljer ett händelsemeddelande. För profilmeddelanden hämtas fälten **[!UICONTROL Target]** automatiskt av systemet med den avstämning som har utförts av Adobe Campaign Standard.
 
 I det här avsnittet måste du definiera **[!UICONTROL Push platform]**. I listrutan kan du välja **[!UICONTROL Apple Push Notification Server]** (iOS) eller **[!UICONTROL Firebase Cloud Messaging]** (Android). Du kan också välja ett specifikt fält från en händelse eller datakälla eller definiera ett avancerat uttryck.
 
-Du måste också definiera **[!UICONTROL Registration Token]**. Uttrycket beror på hur variabeln definieras i händelsens nyttolast eller i andra [!DNL Journey Optimizer] information. Det kan vara ett enkelt fält eller ett mer komplext uttryck om token definieras i en samling, till exempel:
+Du måste också definiera **[!UICONTROL Registration Token]**. Uttrycket beror på hur token definieras i händelsenyttolasten eller i annan [!DNL Journey Optimizer]-information. Det kan vara ett enkelt fält eller ett mer komplext uttryck om token definieras i en samling, till exempel:
 
 ```
 @event{Event_push._experience.campaign.message.profileSnapshot.pushNotificationTokens.first().token}

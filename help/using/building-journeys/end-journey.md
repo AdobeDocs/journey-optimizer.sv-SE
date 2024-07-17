@@ -20,7 +20,7 @@ ht-degree: 1%
 En resa kan ta slut för en individ i två specifika sammanhang:
 
 * Personen kommer till den sista aktiviteten i en bana.
-* Personen kommer till en **Villkor** aktivitet (eller **Vänta** aktivitet med ett villkor) och matchar inte något av villkoren.
+* Personen kommer till en **villkorsaktivitet** (eller en **Wait**-aktivitet med ett villkor) och matchar inte något av villkoren.
 
 Personen kan sedan återinträda i resan om återinträde tillåts. Se [den här sidan](../building-journeys/journey-properties.md#entrance)
 
@@ -52,30 +52,30 @@ The **[!UICONTROL End]** activity allows you to mark the end of each path of the
 
 En resa kan avslutas på grund av följande orsaker:
 
-* Resan stängs manuellt via **[!UICONTROL Close to new entrances]** -knappen.
+* Resan stängs manuellt med knappen **[!UICONTROL Close to new entrances]**.
 * En segmentbaserad resa som utförts i ett enda steg.
 * Efter den sista förekomsten av en återkommande målgruppsbaserad resa.
 
 Genom att stänga en resa manuellt försäkrar du dig om att kunder som redan har gått in på resan kan slutföra sin resa, men att nya användare inte kan ta sig in på resan. När en resa stängs (av någon av anledningarna ovan) får den statusen **[!UICONTROL Closed]**. Resan slutar med att nya individer kan komma in på resan. Personer som redan är på resan kan slutföra resan normalt.
 
-Efter 91-dagarsperioden [global timeout](journey-properties.md#timeout), en läsande målgruppsresa växlar till **Slutförd** status. Detta beteende är inställt för endast 91 dagar (dvs. [globalt tidsgränsvärde för resa](journey-properties.md#global_timeout)) eftersom all information om profiler som gått in i resan tas bort 91 dagar efter att de gått in. Personer som fortfarande befinner sig på resan påverkas automatiskt. De avslutar resan efter 91-dagarstimeout.
+Efter den [globala tidsgränsen ](journey-properties.md#timeout) på 91 dagar ändras målgruppsresan till statusen **Slutförd**. Det här beteendet är inställt för endast 91 dagar (dvs. [globalt tidsgränsvärde för resa](journey-properties.md#global_timeout)) eftersom all information om profiler som har gått in i resan tas bort 91 dagar efter att de har gått in. Personer som fortfarande befinner sig på resan påverkas automatiskt. De avslutar resan efter 91-dagarstimeout.
 
-Se det här [section](../building-journeys/journey-properties.md#global_timeout).
+Se [avsnittet](../building-journeys/journey-properties.md#global_timeout).
 
 En stängd reseversion kan inte startas om eller tas bort. Du kan skapa en ny version av den eller duplicera den. Endast slutförda resor kan tas bort.
 
-Om du vill stänga en resa från listan över resor klickar du på **[!UICONTROL Ellipsis]** knapp som finns till höger om resenamnet och väljer **[!UICONTROL Close to new entrances]**.
+Om du vill stänga en resa från listan med resor klickar du på knappen **[!UICONTROL Ellipsis]** som finns till höger om resenamnet och väljer **[!UICONTROL Close to new entrances]**.
 
 ![](assets/journey-finish-quick-action.png)
 
 Du kan även:
 
-1. I **[!UICONTROL Journeys]** klickar du på den resa du vill stänga.
+1. Klicka på den resa du vill stänga i listan **[!UICONTROL Journeys]**.
 1. Klicka på nedpilen i det övre högra hörnet.
 
    ![](assets/finish_drop_down_list.png)
 
-1. Klicka **[!UICONTROL Close to new entrances]** och bekräfta i dialogrutan.
+1. Klicka på **[!UICONTROL Close to new entrances]** och bekräfta i dialogrutan.
 
 ## Stoppa en resa{#stop-journey}
 
@@ -83,17 +83,17 @@ Om ni behöver stoppa alla enskilda personers framsteg på resan kan ni stoppa d
 
 Det går inte att starta om en stoppad reseversion.
 
-När det stoppas anges resans status till **[!UICONTROL Stopped]**.
+När den stoppas anges resestatusen till **[!UICONTROL Stopped]**.
 
-Du kan till exempel stoppa en resa om en marknadsförare upptäcker att resan riktar sig mot fel målgrupp eller en anpassad åtgärd som ska leverera meddelanden inte fungerar korrekt. Om du vill stoppa en resa från listan över resor klickar du på **[!UICONTROL Ellipsis]** knapp som finns till höger om resenamnet och väljer **[!UICONTROL Stop]**.
+Du kan till exempel stoppa en resa om en marknadsförare upptäcker att resan riktar sig mot fel målgrupp eller en anpassad åtgärd som ska leverera meddelanden inte fungerar korrekt. Om du vill stoppa en resa från listan med resor klickar du på knappen **[!UICONTROL Ellipsis]** som finns till höger om resenamnet och väljer **[!UICONTROL Stop]**.
 
 ![](assets/journey-finish-quick-action.png)
 
 Du kan även:
 
-1. I **[!UICONTROL Journeys]** klickar du på den resa du vill stoppa.
+1. Klicka på den resa du vill stoppa i listan **[!UICONTROL Journeys]**.
 1. Klicka på nedpilen i det övre högra hörnet.
 
    ![](assets/finish_drop_down_list2.png)
 
-1. Klicka **[!UICONTROL Stop]** och bekräfta i dialogrutan.
+1. Klicka på **[!UICONTROL Stop]** och bekräfta i dialogrutan.

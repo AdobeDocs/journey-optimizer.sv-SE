@@ -21,21 +21,21 @@ ht-degree: 0%
 >
 > Om anpassade frågor ställs via API:er när du använder frågetjänsten kan du vänta dig en viss fördröjning för dina rapporter.
 
-Använd **[!UICONTROL Global report]** för att mäta effekten av resor och leveranser under en viss tidsperiod.
+Använd **[!UICONTROL Global report]** för att mäta effekten av dina resor och leveranser under en vald tidsperiod.
 
-* Om du vill rikta in dig på en resa eller leveranser i samband med en resa, från **[!UICONTROL Journeys]** -menyn, få åtkomst till din resa och klicka på **[!UICONTROL View report]** -knappen. Du kan sedan hitta de globala rapporterna Resa, E-post, SMS och Push.
+* Om du vill rikta in dig på en resa eller leveranser i samband med en resa går du till **[!UICONTROL Journeys]**-menyn och klickar på knappen **[!UICONTROL View report]**. Du kan sedan hitta de globala rapporterna Resa, E-post, SMS och Push.
 
   ![](assets/report_journey.png)
 
-* Om du vill rikta in en kampanj går du till **[!UICONTROL Campaigns]** öppnar du kampanjen och klickar på **[!UICONTROL Reports]** -knappen.
+* Om du vill rikta in dig på en kampanj går du till **[!UICONTROL Campaigns]**-menyn och klickar på knappen **[!UICONTROL Reports]**.
 
   ![](assets/report_campaign.png)
 
-* Om du vill växla från **[!UICONTROL Live report]** till **[!UICONTROL Global report]** för leverans klickar du **[!UICONTROL All time]** i flikväxlaren.
+* Om du vill växla från **[!UICONTROL Live report]** till **[!UICONTROL Global report]** för leveransen klickar du på **[!UICONTROL All time]** i flikväljaren.
 
   ![](assets/report_5.png)
 
-En detaljerad lista över alla mätvärden som är tillgängliga i Adobe Journey Optimizer finns på [den här sidan](#list-of-components-global)
+En detaljerad lista över alla tillgängliga mätvärden i Adobe Journey Optimizer finns på [den här sidan](#list-of-components-global)
 
 ## Anpassa kontrollpanelen {#modify-dashboard}
 
@@ -47,17 +47,17 @@ Varje rapportkontrollpanel kan ändras genom att tidsperioden ändras och widget
 
 1. För dina reserapporter som omfattar flera konfigurerade **[!UICONTROL Actions]** väljer du en specifik **[!UICONTROL Action]** i listrutan.
 
-1. Om du bara vill rikta in dig på ett eller flera återkommande meddelanden väljer du det i dialogrutan **[!UICONTROL Execution time]** nedrullningsbar meny.
+1. Om du bara vill rikta in dig på ett eller flera återkommande meddelanden väljer du det i listrutan **[!UICONTROL Execution time]**.
 
    ![](assets/report_modify_12.png)
 
-1. Välj om du vill utesluta testhändelser från dina rapporter med hjälp av alternativfältet. Mer information om testhändelser finns i [den här sidan](../building-journeys/testing-the-journey.md).
+1. Välj om du vill utesluta testhändelser från dina rapporter med hjälp av alternativfältet. Mer information om testhändelser finns på [den här sidan](../building-journeys/testing-the-journey.md).
 
-   Observera att **[!UICONTROL Exclude test events]** alternativet är bara tillgängligt för reserapporter.
+   Observera att alternativet **[!UICONTROL Exclude test events]** bara är tillgängligt för reserapporter.
 
    ![](assets/report_modify_2.png)
 
-1. Klicka **[!UICONTROL Modify]** för att börja anpassa kontrollpanelen.
+1. Klicka på **[!UICONTROL Modify]** för att börja anpassa instrumentpanelen.
 
    ![](assets/report_modify_3.png)
 
@@ -65,7 +65,7 @@ Varje rapportkontrollpanel kan ändras genom att tidsperioden ändras och widget
 
    ![](assets/report_modify_4.png)
 
-1. Klicka **[!UICONTROL Remove]** för att ta bort widgetar du inte behöver.
+1. Klicka på **[!UICONTROL Remove]** för att ta bort widgetar som du inte behöver.
 
    ![](assets/report_modify_5.png)
 
@@ -75,24 +75,24 @@ Varje rapportkontrollpanel kan ändras genom att tidsperioden ändras och widget
 
    ![](assets/report_modify_10.png)
 
-Kontrollpanelen har sparats. Dina olika ändringar kommer att tillämpas på nytt för en senare användning av dina liverapporter. Använd **[!UICONTROL Reset]** för att återställa standardordningen för widgetar och widgetar.
+Kontrollpanelen har sparats. Dina olika ändringar kommer att tillämpas på nytt för en senare användning av dina liverapporter. Använd alternativet **[!UICONTROL Reset]** om det behövs för att återställa standardordningen för widgetar och widgetar.
 
 ## Exportera rapporter {#export-reports}
 
 Du kan enkelt exportera dina olika rapporter till PDF eller CSV-format så att du kan dela och skriva ut dem. Hur du exporterar rapporter beskrivs på flikarna nedan.
 
-➡️ [Upptäck den här funktionen i video](#video-csv)
+➡️ [Upptäck den här funktionen i videon](#video-csv)
 
 
 >[!BEGINTABS]
 
 >[!TAB Exportera rapporten som en CSV-fil]
 
-1. Klicka på **[!UICONTROL Export]** och markera **[!UICONTROL CSV file]** för att generera en CSV-fil på övergripande rapportnivå.
+1. Klicka på **[!UICONTROL Export]** i rapporten och välj **[!UICONTROL CSV file]** för att generera en CSV-fil på den övergripande rapportnivån.
 
    ![](assets/export_1.png)
 
-1. Du kan också välja att exportera data från en viss widget. Klicka **[!UICONTROL Export widget data to CSV]** bredvid den valda widgeten.
+1. Du kan också välja att exportera data från en viss widget. Klicka på **[!UICONTROL Export widget data to CSV]** bredvid den valda widgeten.
 
    ![](assets/export_3.png)
 
@@ -104,7 +104,7 @@ Du kan enkelt exportera dina olika rapporter till PDF eller CSV-format så att d
 
 >[!TAB Exportera rapporten som en PDF-fil]
 
-1. Klicka på **[!UICONTROL Export]** och markera **[!UICONTROL PDF file]**.
+1. Klicka på **[!UICONTROL Export]** i rapporten och välj **[!UICONTROL PDF file]**.
 
    ![](assets/export_2.png)
 
@@ -146,7 +146,7 @@ Lär dig hur du hämtar en CSV-rapport för en rapport och för en enda widget i
 
 >[!CONTEXTUALHELP]
 >id="ajo_report_campaign_overview"
->title="Kampanjöversikt"
+>title="Översikt över Campaign"
 >abstract="Widget för kampanjöversikt"
 
 >[!CONTEXTUALHELP]

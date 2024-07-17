@@ -9,14 +9,14 @@ keywords: toVaraktighet, funktion, uttryck, resa
 exl-id: c78e30c5-99ee-4dc7-a03a-17f7ee65f83a
 source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 2%
+source-wordcount: '289'
+ht-degree: 1%
 
 ---
 
 # toDuration {#toDuration}
 
-Konverterar ett argumentvärde till en längd. Mer information om datatyper finns i [den här sidan](../expression/data-types.md).
+Konverterar ett argumentvärde till en längd. Mer information om datatyper finns på [den här sidan](../expression/data-types.md).
 
 ## Kategori
 

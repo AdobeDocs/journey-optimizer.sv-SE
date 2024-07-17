@@ -26,7 +26,7 @@ Du kan utforma och skicka SMS- och MMS-meddelanden med Adobe Journey Optimizer. 
 
 >[!NOTE]
 >
->I enlighet med branschens standarder och bestämmelser måste alla SMS/MMS-marknadsföringsmeddelanden innehålla ett sätt för mottagarna att enkelt avbryta prenumerationen. För att göra detta kan SMS-mottagare svara med nyckelord för deltagande och avanmälan. [Lär dig hur du hanterar avanmälan](../privacy/opt-out.md#sms-opt-out-management-sms-opt-out-management)
+>I enlighet med branschens standarder och bestämmelser måste alla SMS/MMS-marknadsföringsmeddelanden innehålla ett sätt för mottagarna att enkelt avbryta prenumerationen. För att göra detta kan SMS-mottagare svara med nyckelord för deltagande och avanmälan. [Lär dig hantera avanmälan](../privacy/opt-out.md#sms-opt-out-management-sms-opt-out-management)
 
 
 ## Lägga till ett textmeddelande {#create-sms-journey-campaign}
@@ -35,9 +35,9 @@ Bläddra bland flikarna nedan för att lära dig hur du lägger till ett textmed
 
 >[!BEGINTABS]
 
->[!TAB Lägga till ett textmeddelande på en resa]
+>[!TAB Lägg till ett textmeddelande på en resa]
 
-1. Öppna resan och dra och släpp en SMS-aktivitet från **Åtgärder** på paletten.
+1. Öppna din resa och dra och släpp en SMS-aktivitet från **Åtgärder**-delen av paletten.
 
    ![](assets/sms_create_1.png)
 
@@ -45,44 +45,44 @@ Bläddra bland flikarna nedan för att lära dig hur du lägger till ett textmed
 
    ![](assets/sms_create_2.png)
 
-   Mer information om hur du konfigurerar en resa finns i [den här sidan](../building-journeys/journey-gs.md)
+   Mer information om hur du konfigurerar en resa finns på [sidan](../building-journeys/journey-gs.md)
 
-   The **[!UICONTROL Surface]** som standard är fältet förifyllt med den sista yta som användaren använder för den kanalen.
+   Fältet **[!UICONTROL Surface]** är som standard förfyllt med den sista ytan som används av användaren för den kanalen.
 
-Nu kan du börja designa ditt SMS-meddelande via **[!UICONTROL Edit content]** som beskrivs nedan.
+Nu kan du börja designa innehållet i SMS-meddelandet med knappen **[!UICONTROL Edit content]**, som beskrivs nedan.
 
->[!TAB Lägga till ett textmeddelande i en kampanj]
+>[!TAB Lägg till ett textmeddelande i en kampanj]
 
-1. Skapa en ny schemalagd eller API-utlöst kampanj, välj **[!UICONTROL SMS]** som din åtgärd och väljer **[!UICONTROL App surface]** att använda. Läs mer om SMS-konfiguration i [den här sidan](sms-configuration.md).
+1. Skapa en ny schemalagd eller API-utlöst kampanj, välj **[!UICONTROL SMS]** som din åtgärd och välj den **[!UICONTROL App surface]** som ska användas. Läs mer om SMS-konfigurationen på [den här sidan](sms-configuration.md).
 
    ![](assets/sms_create_3.png)
 
 1. Klicka på **[!UICONTROL Create]**.
 
-1. Från **[!UICONTROL Properties]** redigerar du Campaigns **[!UICONTROL Title]** och **[!UICONTROL Description]**.
+1. I avsnittet **[!UICONTROL Properties]** redigerar du din kampanjs **[!UICONTROL Title]** och **[!UICONTROL Description]**.
 
    ![](assets/sms_create_4.png)
 
-1. Klicka på **[!UICONTROL Select audience]** för att definiera målgruppen i listan över tillgängliga Adobe Experience Platform-målgrupper. [Läs mer](../audience/about-audiences.md).
+1. Klicka på knappen **[!UICONTROL Select audience]** för att definiera målgruppen i listan över tillgängliga Adobe Experience Platform-målgrupper. [Läs mer](../audience/about-audiences.md).
 
-1. I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera personer från den valda målgruppen. [Läs mer](../event/about-creating.md#select-the-namespace).
+1. I fältet **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera personer från den valda målgruppen. [Läs mer](../event/about-creating.md#select-the-namespace).
 
    ![](assets/sms_create_5.png)
 
-1. Klicka **[!UICONTROL Create experiment]** för att börja konfigurera ert innehållsexperiment och skapa behandlingar för att mäta deras prestanda och identifiera det bästa alternativet för er målgrupp. [Läs mer](../content-management/content-experiment.md)
+1. Klicka på **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment och skapa behandlingar för att mäta deras prestanda och identifiera det bästa alternativet för målgruppen. [Läs mer](../content-management/content-experiment.md)
 
-1. I **[!UICONTROL Actions tracking]** anger du om du vill spåra klickningar på länkar i SMS-meddelandet.
+1. I avsnittet **[!UICONTROL Actions tracking]** anger du om du vill spåra klickningar på länkar i SMS-meddelandet.
 
-1. Kampanjer är utformade för att köras ett visst datum eller med en återkommande frekvens. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** av kampanjen i [det här avsnittet](../campaigns/create-campaign.md#schedule).
+1. Kampanjer är utformade för att köras ett visst datum eller med en återkommande frekvens. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** för din kampanj i [det här avsnittet](../campaigns/create-campaign.md#schedule).
 
-1. Från **[!UICONTROL Action triggers]** väljer du **[!UICONTROL Frequency]** av SMS-meddelandet:
+1. Välj **[!UICONTROL Frequency]** i SMS-meddelandet på menyn **[!UICONTROL Action triggers]**:
 
    * En gång
    * Dagligen
    * Vecka
    * Månad
 
-Nu kan du börja designa textmeddelandets innehåll från **[!UICONTROL Edit content]** som beskrivs nedan.
+Nu kan du börja designa innehållet i ditt textmeddelande med knappen **[!UICONTROL Edit content]**, som beskrivs nedan.
 
 >[!ENDTABS]
 
@@ -95,31 +95,31 @@ Nu kan du börja designa textmeddelandets innehåll från **[!UICONTROL Edit con
 
 Följ stegen nedan för att konfigurera ditt SMS-innehåll. Inställningarna för MMS finns i [det här avsnittet](#mms-content).
 
-1. Klicka på **[!UICONTROL Edit content]** för att konfigurera textmeddelandets innehåll.
+1. Klicka på knappen **[!UICONTROL Edit content]** på skärmen för resan eller kampanjkonfigurationen för att konfigurera textmeddelandeinnehållet.
 
-1. Klicka på **[!UICONTROL Message]** för att öppna personaliseringsredigeraren.
+1. Klicka på fältet **[!UICONTROL Message]** för att öppna anpassningsredigeraren.
 
    ![](assets/sms-content.png)
 
 1. Använd personaliseringsredigeraren för att definiera innehåll, lägga till personalisering och dynamiskt innehåll. Du kan använda alla attribut, till exempel profilnamnet eller stad. Du kan också definiera villkorliga regler. Bläddra till följande sidor om du vill veta mer om [personalisering](../personalization/personalize.md) och [dynamiskt innehåll](../personalization/get-started-dynamic-content.md) i personaliseringsredigeraren.
 
-1. När du har definierat innehållet kan du lägga till spårade URL:er i meddelandet. Om du vill göra det går du till **[!UICONTROL Helper functions]** meny och välj **[!UICONTROL Helpers]**.
+1. När du har definierat innehållet kan du lägga till spårade URL:er i meddelandet. Gå till menyn **[!UICONTROL Helper functions]** och välj **[!UICONTROL Helpers]** om du vill göra det.
 
    Observera att för att kunna använda funktionen för förkortning av URL-adresser måste du först konfigurera en underdomän som sedan länkas till din yta. [Läs mer](sms-subdomains.md)
 
    >[!CAUTION]
    >
-   > Om du vill komma åt och redigera SMS-underdomäner måste du ha **[!UICONTROL Manage SMS Subdomains]** behörighet i produktionssandlådan. Läs mer om behörigheter i [det här avsnittet](../administration/high-low-permissions.md).
+   > Om du vill komma åt och redigera SMS-underdomäner måste du ha behörigheten **[!UICONTROL Manage SMS Subdomains]** i produktionssandlådan. Läs mer om behörigheter i [det här avsnittet](../administration/high-low-permissions.md).
 
    ![](assets/sms_tracking_1.png)
 
-1. I **[!UICONTROL Helper functions]** meny, klicka **[!UICONTROL URL function]** och sedan **[!UICONTROL Add URL]**.
+1. Klicka på **[!UICONTROL URL function]** på menyn **[!UICONTROL Helper functions]** och välj sedan **[!UICONTROL Add URL]**.
 
    ![](assets/sms_tracking_2.png)
 
-1. I `originalUrl` klistra in den URL som du vill förkorta och klicka på **[!UICONTROL Save]**.
+1. Klistra in den URL som du vill förkorta i fältet `originalUrl` och klicka på **[!UICONTROL Save]**.
 
-1. Klicka **[!UICONTROL Save]** och kontrollera meddelandet i förhandsgranskningen. Nu kan du testa och kontrollera meddelandeinnehållet enligt [det här avsnittet](#sms-mms-test).
+1. Klicka på **[!UICONTROL Save]** och kontrollera meddelandet i förhandsgranskningen. Du kan nu testa och kontrollera meddelandeinnehållet enligt beskrivningen i [det här avsnittet](#sms-mms-test).
 
 ## Definiera ditt MMS-innehåll{#mms-content}
 
@@ -127,33 +127,33 @@ Du kan förbättra kommunikationen genom att skicka MMS-meddelanden (Multimedia 
 
 >[!NOTE]
 >
->* MMS-kanalen har några begränsningar som anges i [den här sidan](../start/guardrails.md#sms-guardrails).
+>* MMS-kanalen har några begränsningar som anges på [den här sidan](../start/guardrails.md#sms-guardrails).
 
 Så här skapar du MMS-innehåll:
 
-1. Skapa ett SMS enligt anvisningarna i [det här avsnittet](#create-sms-journey-campaign).
+1. Skapa ett SMS enligt beskrivningen i [det här avsnittet](#create-sms-journey-campaign).
 
-1. Redigera ditt SMS-innehåll enligt informationen i [det här avsnittet](#sms-content).
+1. Redigera ditt SMS-innehåll enligt anvisningarna i [det här avsnittet](#sms-content).
 
 1. Aktivera alternativet MMS för att lägga till media i SMS-innehåll.
 
    ![](assets/sms_create_6.png)
 
-1. Lägg till en **[!UICONTROL Title]** till era medier.
+1. Lägg till en **[!UICONTROL Title]** till dina media.
 
-1. Ange URL-adressen till dina media i dialogrutan **[!UICONTROL Media]** fält.
+1. Ange URL-adressen till dina media i fältet **[!UICONTROL Media]**.
 
    ![](assets/sms_create_7.png)
 
-1. Klicka **[!UICONTROL Save]** och kontrollera meddelandet i förhandsgranskningen. Du kan nu testa och kontrollera meddelandeinnehållet enligt beskrivningen nedan.
+1. Klicka på **[!UICONTROL Save]** och kontrollera meddelandet i förhandsgranskningen. Du kan nu testa och kontrollera meddelandeinnehållet enligt beskrivningen nedan.
 
 ## Testa och skicka meddelanden {#sms-mms-test}
 
-Använd **[!UICONTROL Simulate content]** för att förhandsgranska textmeddelandeinnehåll, förkortade URL:er och anpassat innehåll.
+Använd knappen **[!UICONTROL Simulate content]** om du vill förhandsgranska ditt textmeddelandeinnehåll, förkortade URL:er och anpassat innehåll.
 
 ![](assets/sms-content-preview.png)
 
-När du har utfört testerna och validerat innehållet kan du skicka textmeddelandet till mottagarna. Dessa steg beskrivs i [den här sidan](send-sms.md)
+När du har utfört testerna och validerat innehållet kan du skicka textmeddelandet till mottagarna. De här stegen beskrivs i [den här sidan](send-sms.md)
 
 När ni har skickat det kan ni mäta effekten av ert SMS i kampanjrapporten eller reserapporten. Mer information om rapportering finns i [det här avsnittet](../reports/campaign-global-report.md#sms-tab).
 

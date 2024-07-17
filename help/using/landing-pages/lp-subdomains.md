@@ -10,7 +10,7 @@ keywords: landning, landningssida, underdomäner, konfiguration
 exl-id: dd1af8dc-3920-46cb-ae4d-a8f4d4c26e89
 source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -34,15 +34,15 @@ ht-degree: 0%
 >abstract="Om du vill kunna skapa en förinställning för landningssida måste du kontrollera att du tidigare har konfigurerat minst en underdomän för landningssida att välja från listan med underdomännamn."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/lp-configuration/lp-presets.html#lp-create-preset" text="Skapa förinställningar för landningssidor"
 
-För att kunna [skapa förinställningar för landningssidor](lp-presets.md)måste du konfigurera de underdomäner som du ska använda för dina landningssidor.
+Om du vill kunna [skapa förinställningar för landningssidor](lp-presets.md) måste du konfigurera de underdomäner som du ska använda för dina landningssidor.
 
-Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en annan underdomän. Läs mer om hur du delegerar underdomäner till Adobe in [det här avsnittet](../configuration/delegate-subdomain.md).
+Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en annan underdomän. Läs mer om hur du delegerar underdomäner till Adobe i [det här avsnittet](../configuration/delegate-subdomain.md).
 
 >[!CAUTION]
 >
 >Konfigurationen av deldomäner för landningssidor är gemensam för alla miljöer. Därför:
 >
->* Om du vill komma åt och redigera underdomäner för landningssidor måste du ha **[!UICONTROL Manage Landing Page Subdomains]** behörighet i produktionssandlådan.
+>* Om du vill få åtkomst till och redigera underdomäner för landningssidor måste du ha behörigheten **[!UICONTROL Manage Landing Page Subdomains]** i produktionssandlådan.
 >
 > * Alla ändringar av en underdomän för landningssidor påverkar också produktionssandlådorna.
 
@@ -50,7 +50,7 @@ Du kan använda en underdomän som redan har delegerats till Adobe eller konfigu
 
 Om du vill använda en underdomän som redan har delegerats till Adobe följer du stegen nedan.
 
-1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** väljer du **[!UICONTROL Email configuration]** > **[!UICONTROL Landing page subdomains]**.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och välj sedan **[!UICONTROL Email configuration]** > **[!UICONTROL Landing page subdomains]**.
 
    ![](assets/lp_access-subdomains.png)
 
@@ -58,7 +58,7 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 
    ![](assets/lp_set-up-subdomain.png)
 
-1. Välj **[!UICONTROL Use delegated domain]** från **[!UICONTROL Configuration type]** -avsnitt.
+1. Välj **[!UICONTROL Use delegated domain]** i avsnittet **[!UICONTROL Configuration type]**.
 
    ![](assets/lp_use-delegated-subdomain.png)
 
@@ -82,11 +82,11 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 
    >[!CAUTION]
    >
-   >Om du väljer en domän som delegerats till Adobe med [CNAME-metod](../configuration/delegate-subdomain.md#cname-subdomain-delegation)måste du skapa DNS-posten på din värdplattform. För att generera DNS-posten är processen densamma som när du konfigurerar en ny underdomän för landningssida. Läs mer i [det här avsnittet](#lp-configure-new-subdomain).
+   >Om du väljer en domän som delegerats till Adobe med [CNAME-metoden](../configuration/delegate-subdomain.md#cname-subdomain-delegation) måste du skapa DNS-posten på din värdplattform. För att generera DNS-posten är processen densamma som när du konfigurerar en ny underdomän för landningssida. Lär dig hur i [det här avsnittet](#lp-configure-new-subdomain).
 
 1. Klicka på **[!UICONTROL Submit]**.
 
-1. När den har skickats visas underdomänen i listan med **[!UICONTROL Processing]** status. Mer information om underdomänernas status finns i [det här avsnittet](../configuration/about-subdomain-delegation.md#access-delegated-subdomains).<!--Same statuses?-->
+1. När den har skickats visas underdomänen i listan med statusen **[!UICONTROL Processing]**. Mer information om underdomäners status finns i [det här avsnittet](../configuration/about-subdomain-delegation.md#access-delegated-subdomains).<!--Same statuses?-->
 
    ![](assets/lp_subdomain-processing.png)
 
@@ -94,7 +94,7 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
    >
    >Innan du kan använda den underdomänen för att skicka meddelanden måste du vänta tills Adobe utför de kontroller som krävs, vilket kan ta upp till 4 timmar.<!--Learn more in [this section](delegate-subdomain.md#subdomain-validation).-->
 
-1. När kontrollerna är slutförda får underdomänen **[!UICONTROL Success]** status. Den är klar att användas för att skapa förinställningar för landningssidor.
+1. När kontrollerna har slutförts får underdomänen statusen **[!UICONTROL Success]**. Den är klar att användas för att skapa förinställningar för landningssidor.
 
 ## Konfigurera en ny underdomän {#lp-configure-new-subdomain}
 
@@ -105,11 +105,11 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 
 Följ stegen nedan för att konfigurera en ny underdomän.
 
-1. Öppna **[!UICONTROL Administration]** > **[!UICONTROL Channels]** väljer du **[!UICONTROL Email configuration]** > **[!UICONTROL Landing page subdomains]**.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och välj sedan **[!UICONTROL Email configuration]** > **[!UICONTROL Landing page subdomains]**.
 
 1. Klicka på **[!UICONTROL Set up subdomain]**.
 
-1. Välj **[!UICONTROL Add your own domain]** från **[!UICONTROL Configuration type]** -avsnitt.
+1. Välj **[!UICONTROL Add your own domain]** i avsnittet **[!UICONTROL Configuration type]**.
 
    ![](assets/lp_add-your-own-subdomain.png)
 
@@ -129,7 +129,7 @@ Följ stegen nedan för att konfigurera en ny underdomän.
 
 1. Posten som ska placeras i dina DNS-servrar visas. Kopiera den här posten eller hämta en CSV-fil och navigera sedan till din värdlösning för domänen för att generera den matchande DNS-posten.
 
-1. Kontrollera att DNS-posten har genererats i din domänvärdslösning. Om allt är korrekt konfigurerat markerar du rutan &quot;Jag bekräftar ...&quot; och klickar sedan på **[!UICONTROL Submit]**.
+1. Kontrollera att DNS-posten har genererats i din domänvärdslösning. Om allt är korrekt konfigurerat markerar du rutan Jag bekräftar.. och klickar sedan på **[!UICONTROL Submit]**.
 
    ![](assets/lp_add-your-own-subdomain-confirm.png)
 
@@ -137,12 +137,12 @@ Följ stegen nedan för att konfigurera en ny underdomän.
    >
    >När du konfigurerar en ny underdomän för landningssida pekar den alltid på en CNAME-post.
 
-1. När underdomänsdelegeringen har skickats visas underdomänen i listan med **[!UICONTROL Processing]** status. Mer information om underdomänernas status finns i [det här avsnittet](../configuration/about-subdomain-delegation.md#access-delegated-subdomains).<!--Same statuses?-->
+1. När underdomänsdelegeringen har skickats visas underdomänen med statusen **[!UICONTROL Processing]** i listan. Mer information om underdomäners status finns i [det här avsnittet](../configuration/about-subdomain-delegation.md#access-delegated-subdomains).<!--Same statuses?-->
 
    >[!NOTE]
    >
    >Innan du kan använda den underdomänen för dina landningssidor måste du vänta tills Adobe utför de kontroller som krävs, vilket kan ta upp till 4 timmar.<!--Learn more in [this section](#subdomain-validation).-->
 
-1. När kontrollerna är slutförda får underdomänen **[!UICONTROL Success]** status. Den är klar att användas för att skapa förinställningar för landningssidor.
+1. När kontrollerna har slutförts får underdomänen statusen **[!UICONTROL Success]**. Den är klar att användas för att skapa förinställningar för landningssidor.
 
-   Observera att underdomänen markeras som **[!UICONTROL Failed]** om du inte skapar valideringsposten i din värdlösning.
+   Observera att underdomänen markeras som **[!UICONTROL Failed]** om du inte kan skapa valideringsposten i din värdlösning.

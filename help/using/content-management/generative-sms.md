@@ -13,7 +13,7 @@ hidefromtoc: true
 exl-id: 5fd1cc3a-c023-4e8e-bfac-9a86bd33bbb3
 source-git-commit: b62f8954e09f50896ad5e70784c5a93943617e85
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '792'
 ht-degree: 1%
 
 ---
@@ -40,66 +40,66 @@ Gå igenom flikarna nedan och lär dig hur du använder AI Assistant i Journey O
 
 >[!NOTE]
 >
->Innan du börjar använda den här funktionen bör du läsa upp relaterade [Gardrutor och begränsningar](gs-generative.md#generative-guardrails).
+>Innan du börjar använda den här funktionen bör du läsa upp relaterade [säkerhetsutkast och begränsningar](gs-generative.md#generative-guardrails).
 
 >[!BEGINTABS]
 
->[!TAB Full SMS-generering]
+>[!TAB Fullständig SMS-generering]
 
 1. När du har skapat och konfigurerat din SMS-kampanj klickar du på **[!UICONTROL Edit content]**.
 
-   Mer information om hur du konfigurerar din SMS-kampanj finns i [den här sidan](../sms/create-sms.md).
+   Mer information om hur du konfigurerar din SMS-kampanj finns på [den här sidan](../sms/create-sms.md).
 
-1. Fyll i **[!UICONTROL Basic details]** för er kampanj. När du är klar klickar du **[!UICONTROL Edit content]**.
+1. Fyll i **[!UICONTROL Basic details]** för din kampanj. Klicka på **[!UICONTROL Edit content]** när du är klar.
 
 1. Anpassa SMS-meddelandet efter behov. [Läs mer](../sms/create-sms.md)
 
-1. Öppna **[!UICONTROL Show AI Assistant]** -menyn.
+1. Öppna menyn **[!UICONTROL Show AI Assistant]**.
 
-   ![](assets/sms-genai-1.png){zoomable=&quot;yes&quot;}
+   ![](assets/sms-genai-1.png){zoomable="yes"}
 
-1. Aktivera **[!UICONTROL Use original content]** för AI Assistant för att anpassa nytt innehåll baserat på kampanjinnehåll, namn och vald målgrupp.
+1. Aktivera alternativet **[!UICONTROL Use original content]** för AI-assistenten för att anpassa nytt innehåll baserat på kampanjinnehåll, namn och vald målgrupp.
 
    Din fråga måste alltid vara kopplad till ett visst sammanhang.
 
-1. Finjustera innehållet genom att beskriva vad du vill generera i **[!UICONTROL Prompt]** fält.
+1. Finjustera innehållet genom att beskriva vad du vill generera i fältet **[!UICONTROL Prompt]**.
 
-   Om du behöver hjälp med att skapa din fråga kan du gå till **[!UICONTROL Prompt Library]** som ger ett brett urval av snabba idéer för att förbättra era kampanjer.
+   Om du vill ha hjälp med att skapa din fråga kan du få tillgång till **[!UICONTROL Prompt Library]**, som innehåller en mängd olika tips för att förbättra dina kampanjer.
 
-   ![](assets/sms-genai-2.png){zoomable=&quot;yes&quot;}
+   ![](assets/sms-genai-2.png){zoomable="yes"}
 
-1. Välj **[!UICONTROL Upload brand asset]** om du vill lägga till alla varumärkesresurser som innehåller innehåll som kan ge ytterligare kontext i AI-assistenten.
+1. Välj **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext till AI-assistenten.
 
 1. Skräddarsy uppmaningen med de olika alternativen:
 
-   * **[!UICONTROL Communication strategy]**: Välj önskat kommunikationssätt för den genererade texten.
+   * **[!UICONTROL Communication strategy]**: Välj önskad kommunikationsmetod för den genererade texten.
    * **[!UICONTROL Language]**: Välj språk för variantens innehåll.
-   * **[!UICONTROL Tone]**: Se till att texten är lämplig för din målgrupp och ditt syfte.
-   * **[!UICONTROL Length]**: Välj längden på innehållet med intervallreglaget.
+   * **[!UICONTROL Tone]**: Se till att texten passar din målgrupp och ditt syfte.
+   * **[!UICONTROL Length]**: Välj längden på ditt innehåll med intervallreglaget.
 
-   ![](assets/sms-genai-3.png){zoomable=&quot;yes&quot;}
+   ![](assets/sms-genai-3.png){zoomable="yes"}
 
-1. När frågan är klar klickar du på **[!UICONTROL Generate]**.
+1. Klicka på **[!UICONTROL Generate]** när din fråga är klar.
 
-1. Bläddra bland de genererade **[!UICONTROL Variations]** och klicka **[!UICONTROL Preview]** om du vill visa en fullskärmsversion av den valda varianten.
+1. Bläddra igenom den genererade **[!UICONTROL Variations]** och klicka på **[!UICONTROL Preview]** för att visa en fullskärmsversion av den valda varianten.
 
-1. Navigera till **[!UICONTROL Refine]** i **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner och finjustera dina varianter:
+1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner och finjustera variationerna efter dina inställningar:
 
    * **[!UICONTROL Use as reference content]**: Den valda varianten fungerar som referensinnehåll för att generera andra resultat.
 
-   * **[!UICONTROL Rephrase]**:AI-assistenten kan omformulera sitt budskap på olika sätt, vilket håller skrivandet aktuellt och engagerande för olika målgrupper.
+   * **[!UICONTROL Rephrase]**:AI-assistenten kan omformulera ditt meddelande på olika sätt, vilket håller skrivandet aktuellt och engagerande för olika målgrupper.
 
    * **[!UICONTROL Use simpler language]**: Utnyttja AI-assistenten för att förenkla ditt språk och säkerställa tydlighet och tillgänglighet för en större publik.
 
-   ![](assets/sms-genai-4.png){zoomable=&quot;yes&quot;}
+   ![](assets/sms-genai-4.png){zoomable="yes"}
 
-1. Klicka **[!UICONTROL Select]** när du hittat rätt innehåll.
+1. Klicka på **[!UICONTROL Select]** när du har hittat rätt innehåll.
 
    Du kan också göra det möjligt att experimentera med ditt innehåll. [Läs mer](generative-experimentation.md)
 
 1. Infoga anpassningsfält för att anpassa ditt SMS-innehåll baserat på profildata. [Läs mer om innehållspersonalisering](../personalization/personalize.md)
 
-1. När du har definierat meddelandeinnehållet klickar du på **[!UICONTROL Simulate content]** för att styra återgivningen och kontrollera personaliseringsinställningarna med testprofiler. [Läs mer](../personalization/personalize.md)
+1. När du har definierat meddelandeinnehållet klickar du på knappen **[!UICONTROL Simulate content]** för att kontrollera återgivningen och kontrollerar personaliseringsinställningarna med testprofiler. [Läs mer](../personalization/personalize.md)
 
 När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo att förbereda er SMS-kampanj. [Läs mer](../campaigns/review-activate-campaign.md)
 
@@ -107,58 +107,58 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 
 1. När du har skapat och konfigurerat din SMS-kampanj klickar du på **[!UICONTROL Edit content]**.
 
-   Mer information om hur du konfigurerar din SMS-kampanj finns i [den här sidan](../sms/create-sms.md).
+   Mer information om hur du konfigurerar din SMS-kampanj finns på [den här sidan](../sms/create-sms.md).
 
-1. Fyll i **[!UICONTROL Basic details]** för er kampanj. När du är klar klickar du **[!UICONTROL Edit content]**.
+1. Fyll i **[!UICONTROL Basic details]** för din kampanj. Klicka på **[!UICONTROL Edit content]** när du är klar.
 
 1. Anpassa SMS-meddelandet efter behov. [Läs mer](../sms/create-sms.md)
 
-1. Öppna **[!UICONTROL Edit text with AI Assistant]** -menyn bredvid **[!UICONTROL Message]** fält.
+1. Gå till menyn **[!UICONTROL Edit text with AI Assistant]** bredvid fältet **[!UICONTROL Message]**.
 
-   ![](assets/sms-text-genai-1.png){zoomable=&quot;yes&quot;}
+   ![](assets/sms-text-genai-1.png){zoomable="yes"}
 
-1. Aktivera **[!UICONTROL Use reference content]** för AI Assistant för att anpassa nytt innehåll baserat på kampanjinnehåll, namn och vald målgrupp.
+1. Aktivera alternativet **[!UICONTROL Use reference content]** för AI-assistenten för att anpassa nytt innehåll baserat på kampanjinnehåll, namn och vald målgrupp.
 
    Din fråga måste alltid vara kopplad till ett visst sammanhang.
 
-1. Finjustera innehållet genom att beskriva vad du vill generera i **[!UICONTROL Prompt]** fält.
+1. Finjustera innehållet genom att beskriva vad du vill generera i fältet **[!UICONTROL Prompt]**.
 
-   Om du behöver hjälp med att skapa din fråga kan du gå till **[!UICONTROL Prompt Library]** som ger ett brett urval av snabba idéer för att förbättra era kampanjer.
+   Om du vill ha hjälp med att skapa din fråga kan du få tillgång till **[!UICONTROL Prompt Library]**, som innehåller en mängd olika tips för att förbättra dina kampanjer.
 
-   ![](assets/sms-text-genai-1.png){zoomable=&quot;yes&quot;}
+   ![](assets/sms-text-genai-1.png){zoomable="yes"}
 
-1. Välj **[!UICONTROL Upload brand asset]** om du vill lägga till alla varumärkesresurser som innehåller innehåll som kan ge ytterligare kontext i AI-assistenten.
+1. Välj **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext till AI-assistenten.
 
 1. Skräddarsy uppmaningen med de olika alternativen:
 
-   * **[!UICONTROL Communication strategy]**: Välj önskat kommunikationssätt för den genererade texten.
+   * **[!UICONTROL Communication strategy]**: Välj önskad kommunikationsmetod för den genererade texten.
    * **[!UICONTROL Language]**: Välj språk för variantens innehåll.
-   * **[!UICONTROL Tone]**: Se till att texten är lämplig för din målgrupp och ditt syfte.
-   * **[!UICONTROL Length]**: Välj längden på innehållet med intervallreglaget.
+   * **[!UICONTROL Tone]**: Se till att texten passar din målgrupp och ditt syfte.
+   * **[!UICONTROL Length]**: Välj längden på ditt innehåll med intervallreglaget.
 
-   ![](assets/sms-text-genai-3.png){zoomable=&quot;yes&quot;}
+   ![](assets/sms-text-genai-3.png){zoomable="yes"}
 
-1. När frågan är klar klickar du på **[!UICONTROL Generate]**.
+1. Klicka på **[!UICONTROL Generate]** när din fråga är klar.
 
-1. Bläddra bland de genererade **[!UICONTROL Variations]** och klicka **[!UICONTROL Preview]** om du vill visa en fullskärmsversion av den valda varianten.
+1. Bläddra igenom den genererade **[!UICONTROL Variations]** och klicka på **[!UICONTROL Preview]** för att visa en fullskärmsversion av den valda varianten.
 
-1. Navigera till **[!UICONTROL Refine]** i **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner och finjustera dina varianter:
+1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner och finjustera variationerna efter dina inställningar:
 
    * **[!UICONTROL Use as reference content]**: Den valda varianten fungerar som referensinnehåll för att generera andra resultat.
 
-   * **[!UICONTROL Rephrase]**:AI-assistenten kan omformulera sitt budskap på olika sätt, vilket håller skrivandet aktuellt och engagerande för olika målgrupper.
+   * **[!UICONTROL Rephrase]**:AI-assistenten kan omformulera ditt meddelande på olika sätt, vilket håller skrivandet aktuellt och engagerande för olika målgrupper.
 
    * **[!UICONTROL Use simpler language]**: Utnyttja AI-assistenten för att förenkla ditt språk och säkerställa tydlighet och tillgänglighet för en större publik.
 
-   ![](assets/sms-text-genai-4.png){zoomable=&quot;yes&quot;}
+   ![](assets/sms-text-genai-4.png){zoomable="yes"}
 
-1. Klicka **[!UICONTROL Select]** när du hittat rätt innehåll.
+1. Klicka på **[!UICONTROL Select]** när du har hittat rätt innehåll.
 
    Du kan också göra det möjligt att experimentera med ditt innehåll. [Läs mer](generative-experimentation.md)
 
 1. Infoga anpassningsfält för att anpassa ditt SMS-innehåll baserat på profildata. [Läs mer om innehållspersonalisering](../personalization/personalize.md)
 
-1. När du har definierat meddelandeinnehållet klickar du på **[!UICONTROL Simulate content]** för att styra återgivningen och kontrollera personaliseringsinställningarna med testprofiler.
+1. När du har definierat meddelandeinnehållet klickar du på knappen **[!UICONTROL Simulate content]** för att kontrollera återgivningen och kontrollerar personaliseringsinställningarna med testprofiler.
 
 När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo att förbereda er SMS-kampanj. [Läs mer](../campaigns/review-activate-campaign.md)
 

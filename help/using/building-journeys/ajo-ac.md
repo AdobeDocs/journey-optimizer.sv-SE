@@ -37,13 +37,13 @@ Din Campaign-instans måste etableras för den här integreringen. Funktionen f�
 
 1. Logga in på din Campaign-kontrollinstans.
 
-1. Under **Administration** > **Plattform** > **Uppräkningar** väljer du **Händelsetyp** (eventType)-uppräkning. Skapa en ny händelsetyp (&quot;travel-event&quot;, i vårt exempel). Du måste använda det interna namnet för händelsetypen när du skriver JSON-filen senare.
+1. Välj uppräkningen **Event type** (eventType) under **Administration** > **Platform** > **Enumerations**. Skapa en ny händelsetyp (&quot;travel-event&quot;, i vårt exempel). Du måste använda det interna namnet för händelsetypen när du skriver JSON-filen senare.
 
    ![](assets/accintegration-uc-1.png)
 
 1. Koppla från och återanslut till instansen för att skapa.
 
-1. Under **Meddelandecenter** > **Mallar för transaktionsmeddelanden** skapar du en ny e-postmall baserad på händelsetypen som skapades tidigare.
+1. Skapa en ny e-postmall baserad på den händelsetyp som skapats tidigare under **Meddelandecenter** > **Mallar för transaktionsmeddelanden**.
 
    ![](assets/accintegration-uc-2.png)
 
@@ -51,7 +51,7 @@ Din Campaign-instans måste etableras för den här integreringen. Funktionen f�
 
    ![](assets/accintegration-uc-3.png)
 
-1. Publicera din transaktionsmall.
+1. Publish din transaktionsmall.
 
    ![](assets/accintegration-uc-4.png)
 
@@ -79,15 +79,15 @@ Din Campaign-instans måste etableras för den här integreringen. Funktionen f�
 
    ![](assets/accintegration-uc-5.png)
 
-1. Sedan måste ni i Journey Optimizer skapa en åtgärd som motsvarar er Campaign-mall. I **Åtgärdstyp** nedrullningsbar meny, välja **Adobe Campaign Classic**.
+1. Sedan måste ni i Journey Optimizer skapa en åtgärd som motsvarar er Campaign-mall. I listrutan **Åtgärdstyp** väljer du **Adobe Campaign Classic**.
 
    ![](assets/accintegration-uc-6.png)
 
-1. Klicka på **Nyttolastfält** och klistra in den JSON som skapades tidigare.
+1. Klicka på **Nyttolastfältet** och klistra in den JSON som skapades tidigare.
 
    ![](assets/accintegration-uc-7.png)
 
-1. För e-postadressen och de två anpassningsfälten ändrar du **Konstant** till **Variabel**.
+1. Ändra **Konstant** till **Variabel** för e-postadressen och de två anpassningsfälten.
 
    ![](assets/accintegration-uc-8.png)
 

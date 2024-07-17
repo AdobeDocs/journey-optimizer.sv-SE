@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # Syntax för avancerad uttrycksredigerare {#syntax}
 
-Grunderna för syntax i [Avancerad uttrycksredigerare](expressionadvanced.md) visas nedan. Exempel på användning av den avancerade uttrycksredigeraren finns i [den här sidan](advanced-editor-use-cases.md).
+Syntaxgrunderna när du använder [redigeraren för avancerade uttryck](expressionadvanced.md) visas nedan. Exempel på användning av den avancerade uttrycksredigeraren finns på [den här sidan](advanced-editor-use-cases.md).
 
 ## Parenteser och uttrycksprioritet {#parentheses-and-expression-priority}
 
-Parenteser kan användas för att göra ett komplext uttryck mer läsbart. _(&lt;expression>)_ motsvarar _&lt;expression>_. Parenteser kan också användas för att definiera utvärderingsordningen och associativiteten.
+Parenteser kan användas för att göra ett komplext uttryck mer läsbart. _(&lt;expression>)_ är motsvarigheten till _&lt;expression>_. Parenteser kan också användas för att definiera utvärderingsordningen och associativiteten.
 
 Uttrycken utvärderas från vänster till höger. Associativiteten för aritmetiska operatorer måste tillämpas: multiplikationer och indelningar prioriteras framför tillägg och subtraktioner. För att införa en viss ordning måste parenteser läggas till för att avgränsa operationerna. Exempel:
 
@@ -36,8 +36,8 @@ Uttrycken utvärderas från vänster till höger. Associativiteten för aritmeti
 
 Här är de olika reglerna för skiftlägeskänslighet:
 
-* Alla operatorer (och, eller, osv.) ska skrivas med gemener. Till exempel _`<expression1>`och`<expression2>`_ är ett giltigt uttryck medan uttrycket _`<expression1>`OCH`<expression2>`_ inte.
-* Alla funktionsnamn är versalkänsliga. Till exempel _inAudience()_ är giltigt medan funktionen _INAUDIENCE()_ inte.
+* Alla operatorer (och, eller, osv.) ska skrivas med gemener. _`<expression1>`och`<expression2>`_ är till exempel ett giltigt uttryck, men uttrycket _`<expression1>`AND`<expression2>`_ är inte det.
+* Alla funktionsnamn är versalkänsliga. _inAudience()_ är till exempel giltig, men funktionen _INAUDIENCE()_ är inte giltig.
 * Fältreferenser och konstanta värden är skiftlägeskänsliga: de är inte inbyggda element i språket (till skillnad från operatorer och funktioner), utan skapas av slutanvändaren.
 
 ## Returnerad uttryckstyp {#returned-expression-type}

@@ -7,13 +7,13 @@ feature: Fragments
 topic: Content Management
 role: User
 level: Beginner, Intermediate
-source-git-commit: c84c09aac2d888c689591f2517269c88bee0cda6
+exl-id: cd47ca1d-f707-4425-b865-14f3fbbe5fd1
+source-git-commit: 19b75282b6f6fbc847805a263126534c9035ad5d
 workflow-type: tm+mt
 source-wordcount: '1183'
 ht-degree: 0%
 
 ---
-
 
 # Anpassningsbara fragment {#customizable-fragments}
 
@@ -33,13 +33,13 @@ Gör så här för att göra delar av ett visuellt fragment redigerbara:
 
 >[!NOTE]
 >
->Redigerbara fält kan läggas till i **image**, **text** och **knapp** -komponenter. För **HTML** -komponenter, redigerbara fält läggs till med personaliseringsredigeraren, på samma sätt som uttrycksfragment. [Lär dig hur du lägger till redigerbara fält i HTML-komponenter och uttrycksfragment](#expression)
+>Redigerbara fält kan läggas till i komponenterna **image**, **text** och **button**. För **HTML**-komponenter läggs redigerbara fält till med anpassningsredigeraren, ungefär som uttrycksfragment. [Lär dig hur du lägger till redigerbara fält i HTML-komponenter och uttrycksfragment](#expression)
 
 1. Öppna skärmen för fragmentinnehållsutgåva.
 
 1. Markera den komponent i fragmentet där du vill konfigurera redigerbara fält.
 
-1. Panelen Komponentegenskaper öppnas till höger. Välj **Redigerbara fält** och växla sedan **Aktivera utgåva** alternativ.
+1. Panelen Komponentegenskaper öppnas till höger. Markera fliken **Redigerbara fält** och växla sedan till alternativet **Aktivera utgåva**.
 
 1. Alla fält som kan redigeras för den valda komponenten visas i rutan. Vilka fält som är tillgängliga för redigering beror på den valda komponenttypen.
 
@@ -47,7 +47,7 @@ Gör så här för att göra delar av ett visuellt fragment redigerbara:
 
    ![](assets/fragment-param-enable.png)
 
-1. Klicka på **Ökning** om du vill kontrollera alla redigerbara fält och deras standardvärden.
+1. Klicka på **Översikt** om du vill kontrollera alla redigerbara fält och deras standardvärden.
 
    I det här exemplet visas knappens URL-fält med det standardvärde som definierats i komponenten. Det här värdet kan anpassas av användare efter att de har lagt till fragmentet i innehållet.
 
@@ -55,13 +55,13 @@ Gör så här för att göra delar av ett visuellt fragment redigerbara:
 
 1. När du är klar sparar du ändringarna för att uppdatera fragmentet.
 
-1. När du har lagt till fragmentet i ett e-postmeddelande kan användarna anpassa alla redigerbara fält som är konfigurerade i fragmentet. [Lär dig anpassa redigerbara fält i ett visuellt fragment](../email/use-visual-fragments.md#customize-fields)
+1. När du har lagt till fragmentet i ett e-postmeddelande kan användarna anpassa alla redigerbara fält som är konfigurerade i fragmentet. [Lär dig hur du anpassar redigerbara fält i ett visuellt fragment](../email/use-visual-fragments.md#customize-fields)
 
 ## Lägga till redigerbara fält i HTML-komponenter och uttrycksfragment {#expression}
 
-Om du vill göra delar av en HTML-komponent eller ett uttrycksfragment redigerbara måste du använda en specifik syntax i uttrycksredigeraren. Detta innebär att en **variabel** med ett standardvärde som användare kan åsidosätta efter att ha lagt till fragmentet i innehållet.
+Om du vill göra delar av en HTML-komponent eller ett uttrycksfragment redigerbara måste du använda en specifik syntax i uttrycksredigeraren. Detta innebär att deklarera en **variabel** med ett standardvärde som användare kan åsidosätta efter att ha lagt till fragmentet i innehållet.
 
-Anta till exempel att du vill skapa ett fragment som ska läggas till i dina e-postmeddelanden, och tillåta användare att anpassa en viss färg som används på olika platser, till exempel ramar eller knappars bakgrundsfärger. När du skapar fragmentet måste du deklarera en variabel med en **unikt ID**, t.ex.&quot;color&quot;, och anropa den vid de önskade platserna i fragmentinnehållet där du vill använda den här färgen. När du lägger till fragmentet i innehållet kan användarna anpassa färgen som används där variabeln refereras.
+Anta till exempel att du vill skapa ett fragment som ska läggas till i dina e-postmeddelanden, och tillåta användare att anpassa en viss färg som används på olika platser, till exempel ramar eller knappars bakgrundsfärger. När du skapar fragmentet måste du deklarera en variabel med ett **unikt ID**, till exempel &quot;color&quot;, och anropa den på de önskade platserna i fragmentinnehållet där du vill använda den här färgen. När du lägger till fragmentet i innehållet kan användarna anpassa färgen som används där variabeln refereras.
 
 För HTML-komponenter kan bara specifika element bli redigerbara fält. Expandera avsnittet nedan om du vill ha mer information.
 
@@ -81,15 +81,15 @@ I koden nedan kan till exempel varje element som är markerat med rött bli en e
 
 Så här deklarerar du en variabel och använder den i fragmentet:
 
-1. Öppna uttrycksfragmentet och redigera sedan innehållet i personaliseringsredigeraren. För HTML-komponenter markerar du komponenten i fragmentet och klickar på **Visa källkoden** -knappen.
+1. Öppna uttrycksfragmentet och redigera sedan innehållet i personaliseringsredigeraren. För HTML-komponenter markerar du komponenten i fragmentet och klickar på knappen **Visa källkoden** .
 
    ![](assets/fragment-html-edit.png)
 
-1. Deklarera variabeln som du vill att användarna ska redigera. Navigera till **Hjälpfunktioner** menyn i den vänstra navigeringsrutan och lägg till **inline** hjälpfunktion. Syntaxen för att deklarera och anropa variabeln läggs automatiskt till i innehållet.
+1. Deklarera variabeln som du vill att användarna ska redigera. Navigera till menyn **Hjälpfunktioner** i den vänstra navigeringsrutan och lägg till hjälpfunktionen **inline** . Syntaxen för att deklarera och anropa variabeln läggs automatiskt till i innehållet.
 
    ![](assets/fragment-add-helper.png)
 
-1. Ersätt `"name"` med ett unikt ID som identifierar det redigerbara fältet.
+1. Ersätt `"name"` med ett unikt ID för att identifiera det redigerbara fältet.
 
    >[!NOTE]
    >
@@ -99,12 +99,12 @@ Så här deklarerar du en variabel och använder den i fragmentet:
 
    | Åtgärd | Parameter | Exempel |
    | ------- | ------- | ------- |
-   | Deklarera ett redigerbart fält med en **standardvärde**. När du lägger till fragmentet i ditt innehåll kommer det här standardvärdet att användas om du inte anpassar det. | Lägg till standardvärdet mellan de infogade taggarna. | `{{#inline "editableFieldID"}}default_value{{/inline}}` |
-   | Definiera en **label** för det redigerbara fältet. Den här etiketten visas i e-post-Designer när du redigerar fragmentets fält. | `name="title"` | `{{#inline "editableFieldID" name="title"}}default_value{{/inline}}` |
-   | Deklarera ett redigerbart fält som innehåller ett **Bildkälla** som måste publiceras. | `assetType="image"` | `{{#inline "editableFieldID" assetType="image"}}default_value{{/inline}}` |
-   | Deklarera ett redigerbart fält som innehåller ett **URL** som behöver spåras.<br/>Observera att fördefinierade block av typen &quot;Spegelsidans URL&quot; och &quot;Avsluta länk&quot; inte kan bli redigerbara. | `assetType="url"` | `{{#inline "editableFieldID" assetType="url"}}default_value{{/inline}}` |
+   | Deklarera ett redigerbart fält med ett **standardvärde**. När du lägger till fragmentet i ditt innehåll kommer det här standardvärdet att användas om du inte anpassar det. | Lägg till standardvärdet mellan de infogade taggarna. | `{{#inline "editableFieldID"}}default_value{{/inline}}` |
+   | Definiera en **etikett** för det redigerbara fältet. Den här etiketten visas i e-post-Designer när du redigerar fragmentets fält. | `name="title"` | `{{#inline "editableFieldID" name="title"}}default_value{{/inline}}` |
+   | Deklarera ett redigerbart fält som innehåller en **bildkälla** som måste publiceras. | `assetType="image"` | `{{#inline "editableFieldID" assetType="image"}}default_value{{/inline}}` |
+   | Deklarera ett redigerbart fält som innehåller en **URL** som måste spåras.<br/>Observera att fördefinierade block av typen &quot;Spegelsidans URL&quot; och &quot;Avsluta länk&quot; inte kan bli redigerbara. | `assetType="url"` | `{{#inline "editableFieldID" assetType="url"}}default_value{{/inline}}` |
 
-1. Använd `{{{name}}}` syntax i koden på alla ställen där du vill visa värdet för det redigerbara fältet. Ersätt `name` med det unika ID:t för fältet som definierats tidigare.
+1. Använd syntaxen `{{{name}}}` i koden på alla ställen där du vill visa värdet för det redigerbara fältet. Ersätt `name` med det unika ID:t för fältet som definierats tidigare.
 
    ![](assets/fragment-call-variable.png)
 
@@ -112,13 +112,13 @@ Så här deklarerar du en variabel och använder den i fragmentet:
 
 När du lägger till fragmentet i e-postinnehållet kan användare nu åsidosätta variabelns standardvärden med sina valda värden:
 
-* För uttrycksfragment används en specifik syntax för att åsidosätta variabelvärden. [Lär dig anpassa redigerbara fält i ett uttrycksfragment](../personalization/use-expression-fragments.md#customize-fields)
+* För uttrycksfragment används en specifik syntax för att åsidosätta variabelvärden. [Lär dig hur du anpassar redigerbara fält i ett uttrycksfragment](../personalization/use-expression-fragments.md#customize-fields)
 
-* För HTML-komponenter visas variabeln i listan med redigerbara fält i e-postens Designer. [Lär dig anpassa redigerbara fält i ett visuellt fragment](../email/use-visual-fragments.md#customize-fields)
+* För HTML-komponenter visas variabeln i listan med redigerbara fält i e-postens Designer. [Lär dig hur du anpassar redigerbara fält i ett visuellt fragment](../email/use-visual-fragments.md#customize-fields)
 
 ## Exempel på redigerbart uttrycksfragment {#example}
 
-I exemplet nedan skapar vi ett uttrycksfragment med nya sportsamlingar. Som standard visar fragmentet det här innehållet: *Söker du mer? Missa inte vår senaste sportsamling!*
+I exemplet nedan skapar vi ett uttrycksfragment med nya sportsamlingar. Som standard visar fragmentet det här innehållet: *Letar du efter mer? Missa inte vår senaste sportsamling!*
 
 Vi vill att användarna ska kunna ersätta&quot;sport&quot; i det här innehållet med den sport de väljer. Till exempel: *Söker du mer? Missa inte vår senaste yogasamling!*
 
@@ -126,12 +126,12 @@ För att göra detta:
 
 1. Deklarera en idrottsvariabel med ID &quot;sport&quot;.
 
-   Om användare inte ändrar variabelns värde efter att ha lagt till fragmentet i innehållet, visas som standard det värde som definierats mellan `{{#inline}}` och `{{/inline}}` taggar, dvs. &quot;sport&quot;.
+   Om användare inte ändrar variabelns värde efter att de har lagt till fragmentet i sitt innehåll, visas som standard det värde som definierats mellan taggarna `{{#inline}}` och `{{/inline}}`, dvs. &quot;sport&quot;.
 
-1. Lägg till ``{{{sport}}}`` i fragmentinnehållet där du vill visa variabelvärdet, d.v.s. &quot;sport&quot; som standard, eller det värde som användarna väljer.
+1. Lägg till syntaxen ``{{{sport}}}`` i fragmentinnehållet där du vill visa variabelvärdet, d.v.s. &quot;sport&quot; som standard, eller det värde som användarna väljer.
 
    ![](assets/fragment-expression-custom.png)
 
-1. När du lägger till uttrycksfragmentet i innehållet kan användare ändra variabelns värde genom att välja direkt från uttrycksredigeraren. [Lär dig anpassa redigerbara fält i ett uttrycksfragment](../personalization/use-expression-fragments.md#customize-fields)
+1. När du lägger till uttrycksfragmentet i innehållet kan användare ändra variabelns värde genom att välja direkt från uttrycksredigeraren. [Lär dig hur du anpassar redigerbara fält i ett uttrycksfragment](../personalization/use-expression-fragments.md#customize-fields)
 
    ![](assets/fragment-expression-use.png)

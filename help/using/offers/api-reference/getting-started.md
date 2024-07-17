@@ -25,26 +25,26 @@ ht-degree: 1%
 >title="Nya API:er för beslutshantering"
 >abstract="Nu finns nya API:er för att skapa och hantera beslutshanteringsobjekt. Det äldre API:t stöds till och med 2024-03-27."
 
-Den här utvecklarhandboken innehåller steg som hjälper dig att börja använda [!DNL Offer Library] API. Handboken innehåller sedan exempel på API-anrop för att utföra nyckelåtgärder med beslutsmotorn.
+Den här utvecklarhandboken innehåller steg som hjälper dig att börja använda API:t för [!DNL Offer Library]. Handboken innehåller sedan exempel på API-anrop för att utföra nyckelåtgärder med beslutsmotorn.
 
 ➡️ [Läs mer om komponenterna i Beslutshantering i den här videon](#video)
 
-## Förutsättningar {#prerequisites}
+## Förhandskrav {#prerequisites}
 
 Handboken kräver en fungerande förståelse av följande komponenter i Adobe Experience Platform:
 
-* [[!DNL Experience Data Model (XDM) System]](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}: Det standardiserade ramverk som [!DNL Experience Platform] organiserar kundupplevelsedata.
-   * [Grunderna för schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html){target="_blank"}: Lär dig mer om grundläggande byggstenar i XDM-scheman.
-* [Beslutshantering](../../../using/offers/get-started/starting-offer-decisioning.md): Beskriver de begrepp och komponenter som används för Experience Decision i allmänhet och i synnerhet för beslutshantering. Illustrerar de strategier som används för att välja det bästa alternativet att presentera under en kunds upplevelse.
+* [[!DNL Experience Data Model (XDM) System]](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}: Det standardiserade ramverk som [!DNL Experience Platform] organiserar kundupplevelsedata med.
+   * [Grunderna i schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html){target="_blank"}: Lär dig mer om grundläggande byggstenar i XDM-scheman.
+* [Beslutshantering](../../../using/offers/get-started/starting-offer-decisioning.md): Beskriver de koncept och komponenter som används för Experience Decision i allmänhet och i synnerhet beslutshantering. Illustrerar de strategier som används för att välja det bästa alternativet att presentera under en kunds upplevelse.
 * [[!DNL Profile Query Language (PQL)]](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html){target="_blank"}: PQL är ett kraftfullt språk för att skriva uttryck över XDM-instanser. PQL används för att definiera beslutsregler.
 
 ## Läser exempel-API-anrop {#reading-sample-api-calls}
 
-Den här guiden innehåller exempel på API-anrop som visar hur du formaterar dina begäranden. Det kan vara sökvägar, obligatoriska rubriker och korrekt formaterade begärandenyttolaster. Ett exempel på JSON som returneras i API-svar finns också. Information om konventionerna som används i dokumentationen för exempel-API-anrop finns i avsnittet om [läsa exempel-API-anrop](https://experienceleague.adobe.com/docs/experience-platform/landing/troubleshooting.html#how-do-i-format-an-api-request){target="_blank"} i [!DNL Experience Platform] felsökningsguide.
+Den här guiden innehåller exempel på API-anrop som visar hur du formaterar dina begäranden. Det kan vara sökvägar, obligatoriska rubriker och korrekt formaterade begärandenyttolaster. Ett exempel på JSON som returneras i API-svar finns också. Information om de konventioner som används i dokumentationen för exempel-API-anrop finns i avsnittet [Så här läser du exempel-API-anrop](https://experienceleague.adobe.com/docs/experience-platform/landing/troubleshooting.html#how-do-i-format-an-api-request){target="_blank"} i felsökningsguiden för [!DNL Experience Platform].
 
 ## Samla in värden för obligatoriska rubriker {#gather-values-for-required-headers}
 
-För att ringa [!DNL Adobe Experience Platform] API:er måste du först slutföra [självstudiekurs om autentisering](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html){target="_blank"}. När du är klar med självstudiekursen för autentisering visas värdena för var och en av de obligatoriska rubrikerna i alla [!DNL Experience Platform] API-anrop enligt nedan:
+För att kunna anropa [!DNL Adobe Experience Platform] API:er måste du först slutföra [autentiseringssjälvstudiekursen](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html){target="_blank"}. När du slutför självstudiekursen för autentisering visas värdena för var och en av de obligatoriska rubrikerna i alla [!DNL Experience Platform] API-anrop, vilket visas nedan:
 
 * `Authorization: Bearer {ACCESS_TOKEN}`
 * `x-api-key: {API_KEY}`
@@ -57,7 +57,7 @@ Alla begäranden som innehåller en nyttolast (POST, PUT, PATCH) kräver ytterli
 
 ## Nästa steg {#next-steps}
 
-Det här dokumentet innehöll de nödvändiga kunskaperna som krävs för att ringa till [!DNL Offer Library] API. Du kan nu gå vidare till exempelsamtalen i den här utvecklarhandboken och följa med i instruktionerna för dessa.
+Det här dokumentet innehöll den nödvändiga kunskapen som krävs för att anropa API:t [!DNL Offer Library]. Du kan nu gå vidare till exempelsamtalen i den här utvecklarhandboken och följa med i instruktionerna för dessa.
 <!--
 >[!NOTE]
 >

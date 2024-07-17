@@ -36,7 +36,7 @@ Med PTR-poster kan e-postservrar som tar emot e-post kontrollera e-postservrarna
 
 ## Få åtkomst till dina underdomäners PTR-poster {#access-ptr-records}
 
-En gång [delegera](delegate-subdomain.md) din första underdomän till Adobe in [!DNL Journey Optimizer]skapas PTR-poster automatiskt för dina IP-adresser. Du kommer åt dem via **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL PTR records]** -menyn.
+När du [delegerar](delegate-subdomain.md) din första underdomän till Adobe i [!DNL Journey Optimizer] skapas PTR-poster automatiskt för dina IP-adresser. Du kommer åt dem på menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL PTR records]**.
 
 ![](assets/ptr-records.png)
 
@@ -50,7 +50,7 @@ Du kan öppna en PTR-post från listan för att visa det associerade underdomän
 
 ## Redigera en PTR-post {#edit-ptr-record}
 
-I [!DNL Journey Optimizer]kan du inte skapa PTR-poster manuellt. I stället, när du [delegera](delegate-subdomain.md) din första underdomän till Adobe skapas PTR-poster automatiskt för dina IP-adresser.
+I [!DNL Journey Optimizer] kan du inte skapa PTR-poster manuellt. När du [delegerar](delegate-subdomain.md) din första underdomän till Adobe skapas PTR-poster automatiskt för dina IP-adresser.
 
 Var och en av dina IP-adresser får en enda PTR-post. Alla PTR-poster har följande format: &#39;rxx.subdomain&#39;, där &#39;subdomain&#39; är den första underdomänen du delegerat i [!DNL Journey Optimizer].
 
@@ -64,31 +64,31 @@ När du skapar ytterligare underdomäner måste du ändra en eller flera PTR-pos
 
 ### Fullt delegerade underdomäner {#fully-delegated-subdomains}
 
-Redigera en PTR-post med en underdomän som är [helt delegerad](delegate-subdomain.md#full-subdomain-delegation) till Adobe följer du stegen nedan.
+Om du vill redigera en PTR-post med en underdomän som är [helt delegerad](delegate-subdomain.md#full-subdomain-delegation) till Adobe följer du stegen nedan.
 
 1. Öppna en PTR-post genom att klicka på dess namn i listan.
 
    ![](assets/ptr-record-select.png)
 
-1. Välj en underdomän [helt delegerad](delegate-subdomain.md#full-subdomain-delegation) till Adobe från listan.
+1. Markera en underdomän [som har delegerats till Adobe](delegate-subdomain.md#full-subdomain-delegation) i listan.
 
    ![](assets/ptr-record-subdomain.png)
 
-1. Klicka **[!UICONTROL Save]** för att bekräfta dina ändringar.
+1. Klicka på **[!UICONTROL Save]** för att bekräfta ändringarna.
 
 >[!NOTE]
 >
->Du kan inte ändra **[!UICONTROL IP]** och **[!UICONTROL PTR record]** fält.
+>Du kan inte ändra fälten **[!UICONTROL IP]** och **[!UICONTROL PTR record]**.
 
 ### Delegerade underdomäner med CNAME-metoden {#edit-ptr-subdomains-cname}
 
-Så här redigerar du en PTR-post med en underdomän som har delegerats till Adobe med [CNAME-metod](delegate-subdomain.md#cname-subdomain-delegation)följer du stegen nedan.
+Om du vill redigera en PTR-post med en underdomän som har delegerats till Adobe med [CNAME-metoden](delegate-subdomain.md#cname-subdomain-delegation) följer du stegen nedan.
 
 1. Öppna en PTR-post genom att klicka på dess namn i listan.
 
    ![](assets/ptr-record-select-cname.png)
 
-1. Markera en underdomän som delegerats till Adobe med [CNAME-metod](delegate-subdomain.md#cname-subdomain-delegation) från listan.
+1. Markera en underdomän som har delegerats till Adobe med metoden [CNAME](delegate-subdomain.md#cname-subdomain-delegation) i listan.
 
    ![](assets/ptr-record-subdomain-cname.png)
 
@@ -102,21 +102,21 @@ Så här redigerar du en PTR-post med en underdomän som har delegerats till Ado
    >   * Kontrollera DNS-providern om den vidarebefordrade DNS-posten har skapats.
    >   * Poster i hela DNS kanske inte synkroniseras omedelbart. Vänta några minuter och försök igen.
 
-1. Klicka **[!UICONTROL Save]** för att bekräfta dina ändringar.
+1. Klicka på **[!UICONTROL Save]** för att bekräfta ändringarna.
 
 >[!NOTE]
 >
->Du kan inte ändra **[!UICONTROL IP]** och **[!UICONTROL PTR record]** fält.
+>Du kan inte ändra fälten **[!UICONTROL IP]** och **[!UICONTROL PTR record]**.
 
 ## Kontrollera uppdateringsinformation för PTR-post {#check-ptr-record-update}
 
-När du har bekräftat redigeringen av PTR-posten kan du **[!UICONTROL Processing]** visas bredvid namnet på PTR-posten i listan.
+När du har bekräftat redigeringen av PTR-posten visas ikonen **[!UICONTROL Processing]** bredvid namnet på PTR-posten i listan.
 
 ![](assets/ptr-record-updating.png)
 
 >[!NOTE]
 >
->The [uppdateringsbearbetning](#processing) kan ta upp till 3 timmar.
+>[Uppdateringsbearbetningen](#processing) kan ta upp till 3 timmar.
 
 Om du vill kontrollera uppdateringsinformationen för PTR-posten klickar du på ikonen bredvid den. Läs mer om de statusar som är associerade med de olika ikonerna i [det här avsnittet](#ptr-record-update-statuses).
 
@@ -140,7 +140,7 @@ Flera leveranskontroller kommer att utföras för att verifiera att den nya unde
 
 >[!NOTE]
 >
->Du kan inte ändra en PTR-post medan uppdateringen pågår. Du kan fortfarande klicka på namnet, men **[!UICONTROL Subdomain]** fältet är nedtonat. Ändringarna visas inte förrän uppdateringen har slutförts.
+>Du kan inte ändra en PTR-post medan uppdateringen pågår. Du kan fortfarande klicka på namnet, men fältet **[!UICONTROL Subdomain]** är nedtonat. Ändringarna visas inte förrän uppdateringen har slutförts.
 
 Under valideringsprocessen är den gamla underdomänen fortfarande kopplad till IP-adressen.
 

@@ -26,9 +26,9 @@ Gör så här:
 
    ![](assets/in_app_create_6.png)
 
-1. Från **[!UICONTROL Connect to device]** fönster, klicka **[!UICONTROL Start]**.
+1. Klicka på **[!UICONTROL Start]** i fönstret **[!UICONTROL Connect to device]**.
 
-1. Ange **[!UICONTROL Base URL]** av programmet och klicka på **[!UICONTROL Next]**.
+1. Ange **[!UICONTROL Base URL]** för programmet och klicka på **[!UICONTROL Next]**.
 
    ![](assets/in_app_create_7.png)
 
@@ -40,9 +40,9 @@ Ditt meddelande i appen kan nu utlösas direkt på din enhet så att du kan för
 
 När ditt meddelande i appen har definierats kan du använda testprofiler för att förhandsgranska det. Om du har infogat anpassat innehåll kan du kontrollera hur det här innehållet visas i meddelandet med hjälp av testprofildata.
 
-Det gör du genom att klicka **[!UICONTROL Simulate content]** lägg sedan till en testprofil för att kontrollera meddelandet med testprofilsdata.
+Det gör du genom att klicka på **[!UICONTROL Simulate content]** och sedan lägga till en testprofil för att kontrollera meddelandet med hjälp av testprofildata.
 
-Detaljerad information om hur du väljer testprofiler och förhandsgranskar innehållet finns i [Innehållshantering](../content-management/preview-test.md) -avsnitt.
+Detaljerad information om hur du väljer testprofiler och förhandsgranskar innehåll finns i avsnittet [Innehållshantering](../content-management/preview-test.md).
 
 ## Granska och aktivera meddelanden i appen{#in-app-review}
 
@@ -50,7 +50,7 @@ När ditt meddelande i appen har skapats och dess innehåll har definierats och 
 
 Gör så här:
 
-1. Använd **[!UICONTROL Review to activate]** om du vill visa en sammanfattning av meddelandet.
+1. Använd knappen **[!UICONTROL Review to activate]** för att visa en sammanfattning av meddelandet.
 
    Sammanfattningen gör att du kan ändra kampanjen om det behövs och kontrollera om någon parameter är felaktig eller saknas.
 

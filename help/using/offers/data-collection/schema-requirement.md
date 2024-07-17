@@ -9,7 +9,7 @@ level: Experienced
 exl-id: f70ba749-f517-4e09-a381-243b21713b48
 source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -20,20 +20,20 @@ För att kunna få feedback om andra händelsetyper än beslutshändelser måste
 
 >[!CAUTION]
 >
->Kontrollera att schemat som används i datauppsättningen har **[!UICONTROL Experience Event - Proposition Interactions]** fältgrupp som är associerad med den. [Läs mer](create-dataset.md)
+>Kontrollera att schemat som används i datauppsättningen har fältgruppen **[!UICONTROL Experience Event - Proposition Interactions]** associerad för varje händelsetyp. [Läs mer](create-dataset.md)
 
-Nedan visas schemakraven som du måste implementera i JavaScript-koden.
+Nedan visas schemakraven som du måste implementera i din JavaScript-kod.
 
 >[!NOTE]
 >
->Beslutsevenemang behöver inte skickas in eftersom beslutshanteringen automatiskt genererar dessa händelser och placerar dem i **[!UICONTROL ODE DecisionEvents]** datauppsättning<!--to check--> som genereras automatiskt.
+>Beslutshändelser behöver inte skickas in eftersom beslutshanteringen genererar dessa händelser automatiskt och placerar dem i den **[!UICONTROL ODE DecisionEvents]** datauppsättning <!--to check--> som genereras automatiskt.
 
 ## Spåra visningar {#track-impressions}
 
 Kontrollera att händelsetypen och källan är följande:
 
 **Typ av upplevelsehändelse:** `decisioning.propositionDisplay`
-**Källa:** Web.sdk/Alloy.js (`sendEvent command -> xdm : {eventType, interactionMixin}`) eller batchförtäring
+**Source:** Web.sdk/Alloy.js (`sendEvent command -> xdm : {eventType, interactionMixin}`) eller batchhantering
 +++**Exempel på nyttolast:**
 
 ```
@@ -67,7 +67,7 @@ Kontrollera att händelsetypen och källan är följande:
 Kontrollera att händelsetypen och källan är följande:
 
 **Typ av upplevelsehändelse:** `decisioning.propositionInteract`
-**Källa:** Web.sdk/Alloy.js (`sendEvent command -> xdm : {eventType, interactionMixin}`) eller batchförtäring
+**Source:** Web.sdk/Alloy.js (`sendEvent command -> xdm : {eventType, interactionMixin}`) eller batchhantering
 +++**Exempel på nyttolast:**
 
 ```
@@ -98,13 +98,13 @@ Kontrollera att händelsetypen och källan är följande:
 
 ## Spåra anpassade händelser {#track-custom-events}
 
-För anpassade händelser måste schemat som används i datauppsättningen också ha **[!UICONTROL Experience Event - Proposition Interactions]** fältgrupp som är associerad med den, men det finns inga specifika krav på händelsetypen upplevelse som måste användas för att tagga dessa händelser.
+För anpassade händelser måste schemat som används i datauppsättningen också ha fältgruppen **[!UICONTROL Experience Event - Proposition Interactions]** associerad med den, men det finns inga specifika krav på händelsetypen för upplevelse som måste användas för att tagga dessa händelser.
 
 >[!NOTE]
 >
->Om du vill att dina anpassade händelser ska räknas med i [frekvensbegränsning](../offer-library/add-constraints.md#capping)måste du ansluta upplevelsehändelsen till Adobe Experience Platform-slutpunkter genom att skicka den till någon av dessa två Edge-datainsamlingsslutpunkter:
+>Om du vill att dina anpassade händelser ska räknas med i [frekvensbegränsning](../offer-library/add-constraints.md#capping) måste du ansluta upplevelsehändelsen till Adobe Experience Platform-slutpunkter genom att skicka den till någon av dessa två Edge datainsamlingsslutpunkter:
 >
 >* POST /ee/v2/interact
 >* POST /ee/v2/collect
 >
->Om du använder [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"} or [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}skapas anslutningen automatiskt.
+>Om du använder [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"} eller [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"} skapas anslutningen automatiskt.

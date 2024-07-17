@@ -8,8 +8,8 @@ level: Experienced
 exl-id: edc040de-dfb3-4ebc-91b4-239e10c2260b
 source-git-commit: 3a4a58f8601c67e8e9a2b606a47c6b4bcc2dab05
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 3%
+source-wordcount: '384'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ Datum- och tidsfunktioner används för att utföra datum- och tidsåtgärder p�
 
 ## Ålder{#age}
 
-The `age` används för att hämta åldern från ett visst datum.
+Funktionen `age` används för att hämta åldern från ett visst datum.
 
 **Syntax**
 
@@ -39,7 +39,7 @@ The following operation gets the value of the identity map for the key `example@
 
 ## Aktuell tid i millisekunder{#current-time}
 
-The `currentTimeInMillis` används för att hämta aktuell tid i epok millisekunder.
+Funktionen `currentTimeInMillis` används för att hämta aktuell tid i epok i millisekunder.
 
 **Syntax**
 
@@ -59,7 +59,7 @@ The following operation gets all the keys for the map `identityMap`.
 
 ## Datumdifferens{#date-diff}
 
-The `dateDiff` används för att hämta skillnaden mellan två datum i antal dagar.
+Funktionen `dateDiff` används för att hämta skillnaden mellan två datum i antal dagar.
 
 **Syntax**
 
@@ -80,7 +80,7 @@ The following operation gets all the values for the map `identityMap`.
 
 ## Veckodag{#day-week}
 
-The `dayOfWeek` används för att hämta veckodag.
+Funktionen `dayOfWeek` används för att hämta veckodag.
 
 **Syntax**
 
@@ -100,7 +100,7 @@ The following operation gets all the values for the map `identityMap`.
 
 ## Dag på året{#day-year}
 
-The `dayOfYear` -funktionen används för att hämta dagen på året.
+Funktionen `dayOfYear` används för att hämta dagen på året.
 
 **Syntax**
 
@@ -120,7 +120,7 @@ The following operation gets all the values for the map `identityMap`.
 
 ## Formateringsdatum{#format-date}
 
-The `formatDate` -funktionen används för att formatera ett datum/tid-värde. Formatet ska vara ett giltigt Java DateTimeFormat-mönster.
+Funktionen `formatDate` används för att formatera ett datum/tid-värde. Formatet ska vara ett giltigt Java DateTimeFormat-mönster.
 
 **Syntax**
 
@@ -134,7 +134,7 @@ Där den första strängen är datumattributet och det andra värdet är hur du 
 >
 > Om ett datummönster är ogiltigt återgår datumet till ISO-standardformat.
 >
-> Du kan använda Java-datumformateringsfunktioner enligt sammanfattningen i [Oraclets dokumentation](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html){_blank}
+> Du kan använda Java-datumformateringsfunktioner som sammanfattas i [Oraclets dokumentation](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html){_blank}
 
 **Exempel**
 
@@ -146,7 +146,7 @@ Följande åtgärd returnerar datumet i följande format: MM/DD/YY.
 
 ## Formatera datum med språkstöd{#format-date-locale}
 
-The `formatDate` används för att formatera ett datum- och tidsvärde till motsvarande språkkänsliga representation, dvs. i önskad språkinställning. Formatet ska vara ett giltigt Java DateTimeFormat-mönster.
+Funktionen `formatDate` används för att formatera ett datum- och tidvärde till motsvarande språkkänsliga representation, dvs. i ett önskat språkområde. Formatet ska vara ett giltigt Java DateTimeFormat-mönster.
 
 **Syntax**
 
@@ -160,9 +160,9 @@ Där den första strängen är datumattributet är det andra värdet hur du vill
 >
 > Om ett datummönster är ogiltigt återgår datumet till ISO-standardformat.
 >
-> Du kan använda Java-datumformateringsfunktioner enligt sammanfattningen i [Oraclets dokumentation](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html).
+> Du kan använda Java-datumformateringsfunktioner som sammanfattas i [Oraclets dokumentation](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html).
 >
-> Du kan använda formatering och giltiga språkområden enligt sammanfattningen i [Oraclets dokumentation](https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html) och [Språk som stöds](https://www.oracle.com/java/technologies/javase/jdk11-suported-locales.html).
+> Du kan använda formatering och giltiga språkinställningar enligt sammanfattningen i [Oraclets dokumentation](https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html) och [Språkinställningar som stöds](https://www.oracle.com/java/technologies/javase/jdk11-suported-locales.html).
 
 
 **Exempel**
@@ -175,7 +175,7 @@ Följande åtgärd returnerar datumet i följande format: MM/DD/YY och språkomr
 
 ## Ange dagar{#set-days}
 
-The `setDays` -funktionen används för att ange dag i månaden för angivet datum/tid.
+Funktionen `setDays` används för att ange dag i månaden för angivet datum/tid.
 
 **Syntax**
 
@@ -195,7 +195,7 @@ The following operation gets all the values for the map `identityMap`.
 
 ## Ange timmar{#set-hours}
 
-The `setHours` -funktionen används för att ställa in timmen för datum-tid.
+Funktionen `setHours` används för att ange timmen för datum-tid.
 
 **Syntax**
 
@@ -216,7 +216,7 @@ The following operation gets all the values for the map `identityMap`.
 
 ## Till UTC{#to-utc}
 
-The `toUTC` används för att konvertera en datetime till UTC.
+Funktionen `toUTC` används för att konvertera en datetime till UTC.
 
 
 **Syntax**
@@ -238,7 +238,7 @@ The following operation gets all the values for the map `identityMap`.
 
 ## Vecka på året UTC{#week-of-year}
 
-The `weekOfYear` -funktionen används för att hämta årets vecka.
+Funktionen `weekOfYear` används för att hämta årets vecka.
 
 **Syntax**
 

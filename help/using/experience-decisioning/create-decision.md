@@ -10,7 +10,7 @@ exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
 source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
 source-wordcount: '1456'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,7 @@ Beslutspolicyer innehåller all urvalslogik för att beslutsmotorn ska kunna vä
 
 >[!NOTE]
 >
->I [!DNL Journey Optimizer] användargränssnitt, beslutsprinciper anges som beslut<!--but they are decision policies. TBC if this note is needed-->.
+>Beslutsprinciper anges som beslut <!--but they are decision policies. TBC if this note is needed--> i användargränssnittet [!DNL Journey Optimizer].
 
 ## Lägga till en beslutsprincip i en kodbaserad kampanj {#add-decision}
 
@@ -51,9 +51,9 @@ Beslutspolicyer innehåller all urvalslogik för att beslutsmotorn ska kunna vä
 
 Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för besökarna på din webbplats eller i din mobilapp lägger du till en beslutspolicy i en kodbaserad kampanj. Följ stegen nedan för att göra det.
 
-1. Skapa en kampanj och välj **[!UICONTROL Code-base experience]** åtgärd. [Läs mer](../code-based/create-code-based.md)
+1. Skapa en kampanj och välj åtgärden **[!UICONTROL Code-base experience]**. [Läs mer](../code-based/create-code-based.md)
 
-1. Från [kodredigerare](../code-based/create-code-based.md#edit-code)väljer du **[!UICONTROL Decision policy]** ikon och klicka **[!UICONTROL Add decision policy]**.
+1. I [kodredigeraren](../code-based/create-code-based.md#edit-code) väljer du ikonen **[!UICONTROL Decision policy]** och klickar på **[!UICONTROL Add decision policy]**.
 
    ![](assets/decision-code-based-create.png)
 
@@ -61,13 +61,13 @@ Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för bes�
 
    >[!NOTE]
    >
-   >För närvarande är det bara standardinställningen **[!UICONTROL Offers]** katalogen är tillgänglig.
+   >För närvarande är bara standardkatalogen **[!UICONTROL Offers]** tillgänglig.
 
    ![](assets/decision-code-based-details.png)
 
-1. Välj det antal objekt som du vill returnera. Om du till exempel väljer 2 visas de två bästa erbjudandena för den aktuella ytan. Klicka **[!UICONTROL Next]**
+1. Välj det antal objekt som du vill returnera. Om du till exempel väljer 2 visas de två bästa erbjudandena för den aktuella ytan. Klicka på **[!UICONTROL Next]**
 
-1. Använd **[!UICONTROL Add strategy]** för att definiera urvalsstrategier för din beslutspolicy. Varje strategi består av en erbjudandesamling som är kopplad till en begränsning för behörighet och en rangordningsmetod för att avgöra vilka erbjudanden som ska visas. [Läs mer](selection-strategies.md)
+1. Använd knappen **[!UICONTROL Add strategy]** för att definiera urvalsstrategier för din beslutspolicy. Varje strategi består av en erbjudandesamling som är kopplad till en begränsning för behörighet och en rangordningsmetod för att avgöra vilka erbjudanden som ska visas. [Läs mer](selection-strategies.md)
 
    ![](assets/decision-code-based-strategies.png)
 
@@ -75,7 +75,7 @@ Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för bes�
    >
    >Minst en strategi krävs. Du kan inte lägga till fler än 10 strategier.
 
-1. Från **[!UICONTROL Add strategy]** kan du även skapa en strategi. The **[!UICONTROL Create selection strategy]** omdirigerar dig till **[!UICONTROL Experience decisioning]** > **[!UICONTROL Strategy setup]** -menyn. [Läs mer](selection-strategies.md)
+1. Från skärmen **[!UICONTROL Add strategy]** kan du även skapa en strategi. Knappen **[!UICONTROL Create selection strategy]** dirigerar om dig till menyn **[!UICONTROL Experience decisioning]** > **[!UICONTROL Strategy setup]**. [Läs mer](selection-strategies.md)
 
    ![](assets/decision-code-based-add-strategy.png)
 
@@ -89,13 +89,13 @@ Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för bes�
 
    ![](assets/decision-code-based-strategy-fallback.png)
 
-   Du kan välja valfritt objekt i listan, som visar alla beslutsobjekt som har skapats i den aktuella sandlådan. Om ingen urvalsstrategi är kvalificerad visas reservdelen för användaren oavsett datum och behörighetskrav för den valda artikeln<!--nor frequency capping when available - TO CLARIFY-->.
+   Du kan välja valfritt objekt i listan, som visar alla beslutsobjekt som har skapats i den aktuella sandlådan. Om ingen urvalsstrategi är kvalificerad visas reservdelen för användaren oavsett vilka datum och villkor för behörighet som gäller för det valda objektet <!--nor frequency capping when available - TO CLARIFY-->.
 
    >[!NOTE]
    >
    >En reservlösning är valfri. Om ingen reservlösning har valts och ingen strategi är kvalificerad visas ingenting av [!DNL Journey Optimizer].
 
-1. Spara markeringen och klicka **[!UICONTROL Create]**. Nu när beslutspolicyn har skapats kan du använda beslutsattributen i ditt kodbaserade upplevelseinnehåll. [Läs mer](#use-decision-policy)
+1. Spara markeringen och klicka på **[!UICONTROL Create]**. Nu när beslutspolicyn har skapats kan du använda beslutsattributen i ditt kodbaserade upplevelseinnehåll. [Läs mer](#use-decision-policy)
 
    ![](assets/decision-code-based-decision-added.png)
 
@@ -112,11 +112,11 @@ Flera strategier och grupperingar av dem avgör prioriteringen av strategierna o
 
 Du har till exempel två samlingar, en i strategi A och en i strategi B. Begäran är att två beslutsobjekt ska skickas tillbaka. Låt oss säga att det finns två giltiga erbjudanden från strategi A och tre giltiga erbjudanden från strategi B.
 
-* Om de två strategierna är **inte kombinerad** eller i sekventiell ordning (1 och 2), returneras de två främsta erbjudandena från den första strategin på den första raden. Om det inte finns två godtagbara erbjudanden för den första strategin kommer beslutsmotorn att gå vidare till nästa strategi i sekvens för att hitta så många erbjudanden som fortfarande behövs, och kommer i slutändan att returnera en reservlösning om det behövs.
+* Om de två strategierna **inte kombineras** eller i sekventiell ordning (1 och 2) returneras de två främsta giltiga erbjudandena från den första strategin på den första raden. Om det inte finns två godtagbara erbjudanden för den första strategin kommer beslutsmotorn att gå vidare till nästa strategi i sekvens för att hitta så många erbjudanden som fortfarande behövs, och kommer i slutändan att returnera en reservlösning om det behövs.
 
   ![](assets/decision-code-based-consecutive-strategies.png)
 
-* Om de två samlingarna **utvärderas samtidigt** Eftersom det finns två godtagbara erbjudanden från strategi A och tre giltiga erbjudanden från strategi B, kommer alla fem erbjudanden att samlas i hög med det värde som fastställs av respektive rangordningsmetod. Två erbjudanden begärs, och därför returneras de två främsta erbjudandena från dessa fem.
+* Om de två samlingarna **utvärderas samtidigt**, eftersom det finns två giltiga erbjudanden från strategi A och tre giltiga erbjudanden från strategi B, kommer alla fem erbjudanden att grupperas tillsammans baserat på det värde som fastställs av respektive rangordningsmetod. Två erbjudanden begärs, och därför returneras de två främsta erbjudandena från dessa fem.
 
   ![](assets/decision-code-based-combined-strategies.png)
 
@@ -137,16 +137,19 @@ De berättigade erbjudandena för varje strategi och deras prioritet (används v
 
 Strategierbjudanden med högst prioritet utvärderas först och läggs till i listan med rankade erbjudanden.
 
-**Upprepning 1:**
+**Iteration 1:**
 
 Strategi 1 och strategi 2-erbjudanden utvärderas tillsammans (erbjudande 1, erbjudande 2, erbjudande 3, erbjudande 4, erbjudande 5). Låt oss säga att resultatet är:
 
-Erbjudande 1 - 10 Erbjudande 2 - 20 Erbjudande 3 - 30 från strategi 1, 45 från strategi 2. Det högsta av båda kommer att övervägas, så 45 kommer att beaktas.
-Erbjudande 4 - 40 Erbjudande 5 - 50
+Erbjudande 1-10
+Erbjudande 2-20
+Erbjudande 3-30 från strategi 1, 45 från strategi 2. Det högsta av båda kommer att övervägas, så 45 kommer att beaktas.
+Erbjudande 4-40
+Erbjudande 5-50
 
 Rankade erbjudanden: Erbjudande 5, Erbjudande 3, Erbjudande 4, Erbjudande 2, Erbjudande 1.
 
-**Upprepning 2:**
+**Iteration 2:**
 
 Strategi 3-erbjudanden utvärderas (erbjudande 5, erbjudande 6). Låt oss säga att resultatet är:
 
@@ -159,27 +162,27 @@ Rankade erbjudanden: Erbjudande 5, Erbjudande 3, Erbjudande 4, Erbjudande 2, Erb
 
 ## Använd beslutsprincipen i kodredigeraren {#use-decision-policy}
 
-När du har skapat en beslutspolicy kan du använda den i [personaliseringsredigerare](../code-based/create-code-based.md#edit-code). Följ stegen nedan för att göra det.
+När beslutsprincipen har skapats kan den användas i [personaliseringsredigeraren](../code-based/create-code-based.md#edit-code). Följ stegen nedan för att göra det.
 
 >[!NOTE]
 >
->Kodbaserad upplevelse utnyttjar [!DNL Journey Optimizer] personaliseringsredigerare med alla dess funktioner för personalisering och redigering. [Läs mer](../personalization/personalization-build-expressions.md)
+>Kodbaserad upplevelse utnyttjar personaliseringsredigeraren [!DNL Journey Optimizer] med alla dess funktioner för personalisering och redigering. [Läs mer](../personalization/personalization-build-expressions.md)
 
-1. Klicka på **[!UICONTROL Insert policy]** -knappen. Koden som motsvarar beslutspolicyn läggs till.
+1. Klicka på knappen **[!UICONTROL Insert policy]**. Koden som motsvarar beslutspolicyn läggs till.
 
    ![](assets/decision-code-based-add-decision.png)
 
    >[!NOTE]
    >
-   >Den här sekvensen upprepas det antal gånger som du vill att beslutsprincipen ska returneras. Om du t.ex. väljer att returnera två objekt när [skapa beslut](#add-decision), upprepas samma sekvens två gånger.
+   >Den här sekvensen upprepas det antal gånger som du vill att beslutsprincipen ska returneras. Om du t.ex. väljer att returnera två objekt när [du skapar beslutet](#add-decision) kommer samma sekvens att upprepas två gånger.
 
-1. Nu kan du lägga till alla beslutsattribut du vill i den koden. De tillgängliga attributen lagras i **[!UICONTROL Offers]** katalogschema. Anpassade attribut lagras i **`_<imsOrg`>** mapp- och standardattribut i **`_experience`** mapp. [Läs mer om offertkatalogens schema](catalogs.md)
+1. Nu kan du lägga till alla beslutsattribut du vill i den koden. De tillgängliga attributen lagras i **[!UICONTROL Offers]**-katalogens schema. Anpassade attribut lagras i mappen **`_<imsOrg`>** och standardattribut i mappen **`_experience`**. [Läs mer i offertkatalogens schema](catalogs.md)
 
    ![](assets/decision-code-based-decision-attributes.png)
 
    >[!NOTE]
    >
-   >För artikelspårning för beslutspolicy finns `trackingToken`Attributet måste läggas till enligt följande för beslutspolicyinnehåll:
+   >För artikelspårning för beslutsprincip måste attributet `trackingToken` läggas till enligt följande för beslutsprincipinnehåll:
    >`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
 
 1. Klicka på varje mapp för att expandera den. Placera musmarkören på önskad plats och klicka på ikonen + bredvid det attribut du vill lägga till. Du kan lägga till så många attribut du vill i koden.
@@ -194,10 +197,10 @@ När du har skapat en beslutspolicy kan du använda den i [personaliseringsredig
 
 Om du arbetar med Customer Journey Analytics kan du skapa anpassade rapportinstrumentpaneler för kodbaserade kampanjer med hjälp av Experience Decision.
 
-De huvudsakliga stegen visas nedan. Detaljerad information om hur du arbetar med Customer Journey Analytics finns i [Customer Journey Analytics dokumentation](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-landing){target="_blank"}.
+De huvudsakliga stegen visas nedan. Detaljerad information om hur du arbetar med Customer Journey Analytics finns i [Customer Journey Analytics-dokumentationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-landing){target="_blank"}.
 
-1. Skapa och konfigurera en **anslutning** i Customer Journey Analytics. På så sätt kan du ansluta till den datauppsättning som du vill ha rapporter för. [Lär dig hur du skapar en anslutning](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection){target="_blank"}
+1. Skapa och konfigurera en **anslutning** i Customer Journey Analytics. På så sätt kan du ansluta till den datauppsättning som du vill ha rapporter för. [Lär dig skapa en anslutning](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection){target="_blank"}
 
-1. Skapa en **datavy** och koppla den till anslutningen som skapades tidigare. I **[!UICONTROL Components]** väljer du de relevanta schemafält som du vill visa i rapporter. Se till att du inkluderar **proposiinteract** och **propositionDisplay** fält. [Lär dig skapa och konfigurera datavyer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview){target="_blank"}
+1. Skapa en **datavy** och koppla den till anslutningen som skapades tidigare. På fliken **[!UICONTROL Components]** väljer du de relevanta schemafält som du vill visa i rapporter. Se till att du tar med fälten **propositionInteract** och **propositionDisplay** i Experience Decision. [Lär dig hur du skapar och konfigurerar datavyer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview){target="_blank"}
 
-1. Kombinera datakomponenter, tabeller och visualiseringar i **arbetsyteprojekt** för att skapa och dela rapporter för er kodbaserade kampanj.[Lär dig hur du skapar arbetsyteprojekt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects){target="_blank"}
+1. Kombinera datakomponenter, tabeller och visualiseringar i **arbetsyteprojekt** för att skapa och dela rapporter för den kodbaserade kampanjen.[Lär dig skapa arbetsyteprojekt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects){target="_blank"}

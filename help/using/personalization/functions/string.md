@@ -9,7 +9,7 @@ exl-id: 8674ef9e-261b-49d9-800e-367f9f7ef979
 source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
 workflow-type: tm+mt
 source-wordcount: '1846'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ Lär dig hur du använder strängfunktioner i personaliseringsredigeraren.
 
 ## Camera Case {#camelCase}
 
-The `camelCase` funktionen ändrar den första bokstaven i varje ord i en sträng till versal.
+Funktionen `camelCase` ändrar den första bokstaven i varje ord i en sträng till versal.
 
 **Syntax**
 
@@ -37,7 +37,7 @@ Med följande funktion infogas den första bokstaven i ordet i profilens gatuadr
 
 ## Teckenkod på {#char-code-at}
 
-The `charCodeAt` funktionen returnerar ASCII-värdet för ett tecken, som funktionen charCodeAt i JavaScript. Den tar en sträng och ett heltal (som definierar positionen för tecknet) som indataargument och returnerar motsvarande ASCII-värde.
+Funktionen `charCodeAt` returnerar ASCII-värdet för ett tecken, precis som funktionen charCodeAt i JavaScript. Den tar en sträng och ett heltal (som definierar positionen för tecknet) som indataargument och returnerar motsvarande ASCII-värde.
 
 **Syntax**
 
@@ -55,7 +55,7 @@ Följande funktion returnerar ASCII-värdet för o, d.v.s. 11.
 
 ## Concat {#concate}
 
-The `concat` funktionen kombinerar två strängar till en.
+Funktionen `concat` kombinerar två strängar till en.
 
 **Syntax**
 
@@ -73,7 +73,7 @@ Följande funktion kombinerar profilens ort och land i en enda sträng.
 
 ## Innehåller {#contains}
 
-The `contains` -funktionen används för att avgöra om en sträng innehåller en angiven delsträng.
+Funktionen `contains` används för att avgöra om en sträng innehåller en angiven delsträng.
 
 **Syntax**
 
@@ -103,7 +103,7 @@ The `contains` -funktionen används för att avgöra om en sträng innehåller e
 
 ## Innehåller inte{#doesNotContain}
 
-The `doesNotContain` -funktionen används för att avgöra om en sträng inte innehåller en angiven delsträng.
+Funktionen `doesNotContain` används för att avgöra om en sträng inte innehåller en angiven delsträng.
 
 **Syntax**
 
@@ -128,7 +128,7 @@ Följande fråga avgör, med skiftlägeskänslighet, om personens e-postadress i
 
 ## Slutar inte med{#doesNotEndWith}
 
-The `doesNotEndWith` -funktionen används för att avgöra om en sträng inte avslutas med en angiven delsträng.
+Funktionen `doesNotEndWith` används för att avgöra om en sträng inte avslutas med en angiven delsträng.
 
 **Syntax**
 
@@ -152,7 +152,7 @@ doesNotEndWith(person.emailAddress,".com")
 
 ## Börjar inte med{#doesNotStartWith}
 
-The `doesNotStartWith` -funktionen används för att avgöra om en sträng inte börjar med en angiven delsträng.
+Funktionen `doesNotStartWith` används för att avgöra om en sträng inte börjar med en angiven delsträng.
 
 **Syntax**
 
@@ -176,7 +176,7 @@ Följande fråga avgör, med skiftlägeskänslighet, om personens namn inte bör
 
 ## Koda 64{#encode64}
 
-The `encode64` -funktionen används för att koda en sträng för att bevara personlig information (PI) om den ska inkluderas t.ex. i en URL.
+Funktionen `encode64` används för att koda en sträng för att bevara personlig information (PI) om den ska inkluderas t.ex. i en URL.
 
 **Syntax**
 
@@ -186,7 +186,7 @@ The `encode64` -funktionen används för att koda en sträng för att bevara per
 
 ## Slutar med{#endsWith}
 
-The `endsWith` -funktionen används för att avgöra om en sträng avslutas med en angiven delsträng.
+Funktionen `endsWith` används för att avgöra om en sträng avslutas med en angiven delsträng.
 
 **Syntax**
 
@@ -211,7 +211,7 @@ Följande fråga avgör, med skiftlägeskänslighet, om personens e-postadress s
 
 ## Lika med{#equals}
 
-The `equals` -funktionen används för att avgöra om en sträng är lika med den angivna strängen, med skiftlägeskänslighet.
+Funktionen `equals` används för att avgöra om en sträng är lika med den angivna strängen, med skiftlägeskänslighet.
 
 **Syntax**
 
@@ -234,7 +234,7 @@ Följande fråga avgör, med skiftlägeskänslighet, om personens namn är &quot
 
 ## Lika med Ignorera skiftläge{#equalsIgnoreCase}
 
-The `equalsIgnoreCase` används för att avgöra om en sträng är lika med den angivna strängen, utan skiftlägeskänslighet.
+Funktionen `equalsIgnoreCase` används för att avgöra om en sträng är lika med den angivna strängen, utan skiftlägeskänslighet.
 
 **Syntax**
 
@@ -257,7 +257,7 @@ Följande fråga avgör, utan skiftlägeskänslighet, om personens namn är &quo
 
 ## Extract Email Domain {#extractEmailDomain}
 
-The `extractEmailDomain` används för att extrahera domänen för en e-postadress.
+Funktionen `extractEmailDomain` används för att hämta domänen för en e-postadress.
 
 **Syntax**
 
@@ -275,7 +275,7 @@ Följande fråga extraherar e-postdomänen för den personliga e-postadressen.
 
 ## Formatera valuta {#format-currency}
 
-The `formatCurrency` används för att konvertera ett tal till motsvarande språkkänsliga valutarepresentation beroende på vilket språk som skickas som en sträng i det andra argumentet.
+Funktionen `formatCurrency` används för att konvertera valfritt tal till motsvarande språkkänsliga valutarepresentation beroende på vilket språk som skickas som en sträng i det andra argumentet.
 
 **Syntax**
 
@@ -293,7 +293,7 @@ Frågan returnerar 56,00 GBP
 
 ## Hämta URL-värd {#get-url-host}
 
-The `getUrlHost` -funktionen används för att hämta värdnamnet för en URL.
+Funktionen `getUrlHost` används för att hämta värdnamnet för en URL.
 
 **Syntax**
 
@@ -311,7 +311,7 @@ Returnerar &quot;www.myurl.com&quot;
 
 ## Hämta URL-sökväg {#get-url-path}
 
-The `getUrlPath` används för att hämta sökvägen efter domännamnet för en URL.
+Funktionen `getUrlPath` används för att hämta sökvägen efter domännamnet för en URL.
 
 **Syntax**
 
@@ -329,7 +329,7 @@ Returnerar &quot;/contact.html&quot;
 
 ## Hämta URL-protokoll {#get-url-protocol}
 
-The `getUrlProtocol` -funktionen används för att hämta protokollet för en URL.
+Funktionen `getUrlProtocol` används för att hämta protokollet för en URL.
 
 **Syntax**
 
@@ -347,7 +347,7 @@ Returnerar &quot;http&quot;
 
 ## index för {#index-of}
 
-The `indexOf` -funktionen används för att returnera positionen (i det första argumentet) för den första förekomsten av den andra parametern. Returnerar -1 om det inte finns någon matchning.
+Funktionen `indexOf` används för att returnera positionen (i det första argumentet) för den första förekomsten av den andra parametern. Returnerar -1 om det inte finns någon matchning.
 
 **Syntax**
 
@@ -370,7 +370,7 @@ Returnerar 6.
 
 ## Är tom {#isEmpty}
 
-The `isEmpty` -funktionen används för att avgöra om en sträng är tom.
+Funktionen `isEmpty` används för att avgöra om en sträng är tom.
 
 **Syntax**
 
@@ -388,7 +388,7 @@ Följande funktion returnerar &#39;true&#39; om profilens mobiltelefonnummer är
 
 ## Är inte tom {#is-not-empty}
 
-The `isNotEmpty` -funktionen används för att avgöra om en sträng inte är tom.
+Funktionen `isNotEmpty` används för att avgöra om en sträng inte är tom.
 
 **Syntax**
 
@@ -406,7 +406,7 @@ Följande funktion returnerar &#39;true&#39; om profilens mobiltelefonnummer int
 
 ## Senaste index för {#last-index-of}
 
-The `lastIndexOf` -funktionen används för att returnera positionen (i det första argumentet) för den sista förekomsten av den andra parametern. Returnerar -1 om det inte finns någon matchning.
+Funktionen `lastIndexOf` används för att returnera positionen (i det första argumentet) för den sista förekomsten av den andra parametern. Returnerar -1 om det inte finns någon matchning.
 
 **Syntax**
 
@@ -429,7 +429,7 @@ Returnerar 7.
 
 ## Vänster trimning {#leftTrim}
 
-The `leftTrim` används för att ta bort blanksteg från början av en sträng.
+Funktionen `leftTrim` används för att ta bort blanksteg från början av en sträng.
 
 **Syntax**
 
@@ -439,7 +439,7 @@ The `leftTrim` används för att ta bort blanksteg från början av en sträng.
 
 ## Längd {#length}
 
-The `length` används för att hämta antalet tecken i en sträng eller ett uttryck.
+Funktionen `length` används för att hämta antalet tecken i en sträng eller ett uttryck.
 
 **Syntax**
 
@@ -457,7 +457,7 @@ Följande funktion returnerar längden på profilens stadsnamn.
 
 ## Gilla{#like}
 
-The `like` används för att avgöra om en sträng matchar ett angivet mönster.
+Funktionen `like` används för att avgöra om en sträng matchar ett angivet mönster.
 
 **Syntax**
 
@@ -480,7 +480,7 @@ Följande fråga hämtar alla städer där profiler som innehåller mönstret &q
 
 ## Gemener{#lower}
 
-The `lowerCase` funktionen konverterar en sträng till gemener.
+Funktionen `lowerCase` konverterar en sträng till gemener.
 
 **Syntax**
 
@@ -498,7 +498,7 @@ Den här funktionen konverterar profilens förnamn till gemener.
 
 ## Matchar{#matches}
 
-The `matches` används för att avgöra om en sträng matchar ett visst reguljärt uttryck. Se [det här dokumentet](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html) för mer information om att matcha mönster i reguljära uttryck.
+Funktionen `matches` används för att avgöra om en sträng matchar ett visst reguljärt uttryck. Mer information om att matcha mönster i reguljära uttryck finns i [det här dokumentet](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html).
 
 **Syntax**
 
@@ -516,7 +516,7 @@ Följande fråga avgör, utan skiftlägeskänslighet, om personens namn börjar 
 
 ## Mask {#mask}
 
-The `Mask` används för att ersätta en del av en sträng med &quot;X&quot;-tecken.
+Funktionen `Mask` används för att ersätta en del av en sträng med X-tecken.
 
 **Syntax**
 
@@ -536,7 +536,7 @@ Frågan returnerar `1XXXXXX89`.
 
 ## MD5 {#md5}
 
-The `md5` -funktionen används för att beräkna och returnera md5-hash för en sträng.
+Funktionen `md5` används för att beräkna och returnera md5-hash för en sträng.
 
 **Syntax**
 
@@ -554,7 +554,7 @@ Returnerar &quot;5eb63bbbe01eed093cb22bb8f5acdc3&quot;
 
 ## Inte lika med{#notEqualTo}
 
-The `notEqualTo` används för att avgöra om en sträng inte är lika med den angivna strängen.
+Funktionen `notEqualTo` används för att avgöra om en sträng inte är lika med den angivna strängen.
 
 **Syntax**
 
@@ -577,7 +577,7 @@ Följande fråga avgör, med skiftlägeskänslighet, om personens namn inte är&
 
 ## Inte lika med Ignorera skiftläge {#not-equal-with-ignore-case}
 
-The `notEqualWithIgnoreCase` används för att jämföra två strängar utan skiftläge.
+Funktionen `notEqualWithIgnoreCase` används för att jämföra två strängar utan skiftläge.
 
 **Syntax**
 
@@ -600,7 +600,7 @@ Följande fråga avgör om personens namn inte är &quot;john&quot;, utan skiftl
 
 ## Grupp för reguljära uttryck{#regexGroup}
 
-The `Group` -funktionen används för att extrahera specifik information baserat på det reguljära uttrycket.
+Funktionen `Group` används för att extrahera specifik information baserat på det reguljära uttrycket som anges.
 
 **Syntax**
 
@@ -624,7 +624,7 @@ Följande fråga används för att extrahera domännamnet från en e-postadress.
 
 ## Ersätt {#replace}
 
-The `replace` -funktionen används för att ersätta en viss delsträng i en sträng med en annan delsträng.
+Funktionen `replace` används för att ersätta en given delsträng i en sträng med en annan delsträng.
 
 **Syntax**
 
@@ -648,7 +648,7 @@ Returnerar&quot;Hello Mark, här kommer ditt månatliga nyhetsbrev!&quot;
 
 ## Ersätt alla{#replaceAll}
 
-The `replaceAll` används för att ersätta alla delsträngar i en text som matchar &quot;regex&quot;-uttrycket med den angivna literala &quot;ersättningssträngen&quot;. Regex har specialhantering av &quot;\&quot; och &quot;+&quot; och alla regex-uttryck följer PQL:s flyktstrategi. Ersättningen fortsätter från början av strängen till slutet, t.ex. om&quot;a&quot; ersätts med&quot;b&quot; i strängen&quot;aaa&quot; resulterar det i&quot;ba&quot; i stället för&quot;ab&quot;.
+Funktionen `replaceAll` används för att ersätta alla delsträngar för en text som matchar uttrycket &quot;regex&quot; med den angivna strängen &quot;teckenersättning&quot;. Regex har specialhantering av &quot;\&quot; och &quot;+&quot; och alla regex-uttryck följer PQL escape-strategi. Ersättningen fortsätter från början av strängen till slutet, t.ex. om&quot;a&quot; ersätts med&quot;b&quot; i strängen&quot;aaa&quot; resulterar det i&quot;ba&quot; i stället för&quot;ab&quot;.
 
 **Syntax**
 
@@ -658,14 +658,14 @@ The `replaceAll` används för att ersätta alla delsträngar i en text som matc
 
 >[!NOTE]
 >
-> När uttrycket som används som andra argument är ett särskilt regex-tecken använder du dubbelt omvänt snedstreck (`//`).  Specialtecken för regex är: [., +, *, ?, ^, $, (, ), [,], {, }, |, \.]
+> När uttrycket som tagits som ett andra argument är ett särskilt regex-tecken använder du ett dubbelt omvänt snedstreck (`//`).  Specialregextecken är: [., +, *, ?, ^, $, (, ), [,], {, }, |, \.]
 > 
 > Läs mer i [Oraclets dokumentation](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html){_blank}.
 >
 
 ## Högertrimning {#rightTrim}
 
-The `rightTrim` funktionen används för att ta bort blanksteg från slutet av en sträng.
+Funktionen `rightTrim` används för att ta bort tomrum från strängens slut.
 
 **Syntax**
 
@@ -675,7 +675,7 @@ The `rightTrim` funktionen används för att ta bort blanksteg från slutet av e
 
 ## Dela {#split}
 
-The `split` -funktionen används för att dela en sträng med ett visst tecken.
+Funktionen `split` används för att dela en sträng med ett givet tecken.
 
 **Syntax**
 
@@ -685,7 +685,7 @@ The `split` -funktionen används för att dela en sträng med ett visst tecken.
 
 ## Börjar med{#startsWith}
 
-The `startsWith` -funktionen används för att avgöra om en sträng börjar med en angiven delsträng.
+Funktionen `startsWith` används för att avgöra om en sträng börjar med en angiven delsträng.
 
 **Syntax**
 
@@ -709,7 +709,7 @@ Följande fråga avgör, med skiftlägeskänslighet, om personens namn börjar m
 
 ## Sträng till datum {#string-to-date}
 
-The `stringToDate` funktionen konverterar ett strängvärde till ett datum/tid-värde. Den har två argument: strängbeteckning för ett datum- och tidsvärde samt strängbeteckning för formateringen.
+Funktionen `stringToDate` konverterar ett strängvärde till ett datum/tid-värde. Den har två argument: strängbeteckning för ett datum- och tidsvärde samt strängbeteckning för formateringen.
 
 **Syntax**
 
@@ -725,7 +725,7 @@ The `stringToDate` funktionen konverterar ett strängvärde till ett datum/tid-v
 
 ## Sträng till heltal {#string-to-integer}
 
-The `string_to_integer` används för att konvertera ett strängvärde till ett heltalsvärde.
+Funktionen `string_to_integer` används för att konvertera ett strängvärde till ett heltalsvärde.
 
 **Syntax**
 
@@ -735,7 +735,7 @@ The `string_to_integer` används för att konvertera ett strängvärde till ett 
 
 ## Sträng till tal {#string-to-number}
 
-The `stringToNumber` används för att konvertera en sträng till tal. Den returnerar samma sträng som utdata för ogiltiga indata.
+Funktionen `stringToNumber` används för att konvertera en sträng till tal. Den returnerar samma sträng som utdata för ogiltiga indata.
 
 **Syntax**
 
@@ -745,7 +745,7 @@ The `stringToNumber` används för att konvertera en sträng till tal. Den retur
 
 ## Delsträng {#sub-string}
 
-The `Count string` -funktionen används för att returnera delsträngen för stränguttrycket mellan startindexet och slutindexet.
+Funktionen `Count string` används för att returnera delsträngen för stränguttrycket mellan startindexet och slutindexvärdet.
 **Syntax**
 
 ```sql
@@ -754,7 +754,7 @@ The `Count string` -funktionen används för att returnera delsträngen för str
 
 ## Inledande versal{#titleCase}
 
-The **titleCase** -funktionen används för att ge inledande versal i varje ord i en sträng.
+Funktionen **titleCase** används för att ge inledande versal för varje ord i en sträng.
 
 **Syntax**
 
@@ -772,7 +772,7 @@ Om personen bor i Washington High Street, returnerar den här funktionen Washing
 
 ## Till boolesk {#to-bool}
 
-The `toBool` -funktionen används för att konvertera ett argumentvärde till ett booleskt värde, beroende på dess typ.
+Funktionen `toBool` används för att konvertera ett argumentvärde till ett booleskt värde, beroende på dess typ.
 
 **Syntax**
 
@@ -782,7 +782,7 @@ The `toBool` -funktionen används för att konvertera ett argumentvärde till et
 
 ## Till datum och tid {#to-date-time}
 
-The `toDateTime` -funktionen används för att konvertera strängen till ett datum. Det returnerar epokdatumet som utdata för ogiltiga indata.
+Funktionen `toDateTime` används för att konvertera en sträng till ett datum. Det returnerar epokdatumet som utdata för ogiltiga indata.
 
 **Syntax**
 
@@ -792,7 +792,7 @@ The `toDateTime` -funktionen används för att konvertera strängen till ett dat
 
 ## Endast till datum och tid {#to-date-time-only}
 
-The `toDateTimeOnly` -funktionen används för att konvertera ett argumentvärde till ett värde som bara gäller för datum och tid. Det returnerar epokdatumet som utdata för ogiltiga indata. Den här funktionen accepterar fälttyperna string, date, long och int.
+Funktionen `toDateTimeOnly` används för att konvertera ett argumentvärde till ett värde som bara gäller för datum och tid. Det returnerar epokdatumet som utdata för ogiltiga indata. Den här funktionen accepterar fälttyperna string, date, long och int.
 
 **Syntax**
 
@@ -802,7 +802,7 @@ The `toDateTimeOnly` -funktionen används för att konvertera ett argumentvärde
 
 ## Rensa {#trim}
 
-The **trimma** funktionen tar bort alla blanksteg från början och slutet av en sträng.
+Funktionen **trim** tar bort alla tomrum från början och slutet av en sträng.
 
 **Syntax**
 
@@ -812,7 +812,7 @@ The **trimma** funktionen tar bort alla blanksteg från början och slutet av en
 
 ## Versaler{#upper}
 
-The **upperCase** funktionen konverterar en sträng till versaler.
+Funktionen **upperCase** konverterar en sträng till versaler.
 
 **Syntax**
 
@@ -830,7 +830,7 @@ Den här funktionen konverterar profilens efternamn till versaler.
 
 ## URL-avkodning {#url-decode}
 
-The `urlDecode` används för att avkoda en URL-kodad sträng.
+Funktionen `urlDecode` används för att avkoda en URL-kodad sträng.
 
 **Syntax**
 
@@ -840,7 +840,7 @@ The `urlDecode` används för att avkoda en URL-kodad sträng.
 
 ## URL-kodning {#url-encode}
 
-The `Count only null` används för att URL-koda en sträng.
+Funktionen `Count only null` används för att URL-koda en sträng.
 
 **Syntax**
 

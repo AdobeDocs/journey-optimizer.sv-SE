@@ -8,8 +8,8 @@ level: Intermediate
 exl-id: 51830c63-fa88-47e7-8605-192297fcf6b8
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 48%
+source-wordcount: '285'
+ht-degree: 39%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 48%
 
 Varje gång en beslutshantering fattar ett beslut om en viss profil, skickas information om dessa händelser automatiskt till Adobe Experience Platform.
 
-På så sätt kan ni få insikter om era beslut, till exempel för att veta vilket erbjudande som presenterades för en viss profil. Du kan exportera dessa data för att analysera dem i ditt eget rapporteringssystem eller använda Adobe Experience Platform [Frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv) i kombination med andra verktyg för bättre analys och rapportering.
+På så sätt kan ni få insikter om era beslut, till exempel för att veta vilket erbjudande som presenterades för en viss profil. Du kan exportera dessa data för att analysera dem i ditt eget rapporteringssystem, eller använda Adobe Experience Platform [frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv) i kombination med andra verktyg för förbättrade analys- och rapportsyften.
 
 ## Nyckelinformation finns i datauppsättningar {#key-information}
 
@@ -36,11 +36,11 @@ Mer information om alla XDM-fält som skickas med varje beslut finns i [det här
 
 ## Åtkomst till datauppsättningar {#access-datasets}
 
-Datauppsättningar som innehåller beslutshanteringshändelser är tillgängliga från Adobe Experience Platform **[!UICONTROL Datasets]** -menyn. En datauppsättning skapas automatiskt vid etablering för var och en av dina instanser.
+Datamängderna som innehåller beslutshanteringshändelser är tillgängliga från Adobe Experience Platform **[!UICONTROL Datasets]**-menyn. En datauppsättning skapas automatiskt vid etablering för var och en av dina instanser.
 
 ![](../assets/events-datasets-list.png)
 
-Dessa datauppsättningar är baserade på **[!UICONTROL ODE DecisionEvents]** schema, som innehåller alla XDM-fält som krävs för att skicka information från Beslutshantering till Adobe Experience Platform.
+Dessa datauppsättningar är baserade på schemat **[!UICONTROL ODE DecisionEvents]**, som innehåller alla XDM-fält som krävs för att skicka information från beslutshanteringen till Adobe Experience Platform.
 
 >[!NOTE]
 >

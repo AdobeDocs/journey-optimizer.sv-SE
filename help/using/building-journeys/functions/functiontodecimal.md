@@ -9,8 +9,8 @@ keywords: decimal, funktion, uttryck, resa
 exl-id: d761fa4d-5f99-4dee-b747-3eab464c4071
 source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 9%
+source-wordcount: '80'
+ht-degree: 6%
 
 ---
 

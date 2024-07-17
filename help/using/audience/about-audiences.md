@@ -28,15 +28,15 @@ ht-degree: 0%
 >title="Välj kampanjmålgrupp"
 >abstract="I den här listan visas alla tillgängliga Adobe Experience Platform-målgrupper. Välj målgrupp för er kampanj. Meddelandet som konfigurerats i kampanjen skickas till alla personer som tillhör den valda målgruppen. [Läs mer om målgrupper](../audience/about-audiences.md)"
 
-En målgrupp är en uppsättning personer som har liknande beteenden och/eller egenskaper. Läs mer om målgrupper i [Dokumentation för Adobe Experience Platform Segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
+En målgrupp är en uppsättning personer som har liknande beteenden och/eller egenskaper. Läs mer om målgrupper i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 
-[!DNL Journey Optimizer] kan ni skapa Adobe Experience Platform-målgrupper direkt från **[!UICONTROL Audiences]** och utnyttja dem i era resor eller kampanjer.
+Med [!DNL Journey Optimizer] kan du skapa Adobe Experience Platform-målgrupper direkt från menyn **[!UICONTROL Audiences]** och utnyttja dem i dina resor eller kampanjer.
 
 Målgrupper kan genereras på olika sätt:
 
-* **Segmentdefinitioner**: Skapa en ny målgruppsdefinition med Adobe Experience Platform Segmentation Service. [Lär dig hur du skapar segmentdefinitioner](creating-a-segment-definition.md)
-* **Anpassad överföring**: Importera en målgrupp med en CSV-fil. Lär dig hur du importerar målgrupper i Adobe Experience Platform [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}.
-* **Målgruppskomposition**: Skapa ett dispositionsarbetsflöde för att kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och utnyttja olika aktiviteter (dela, exkludera..) för att skapa nya målgrupper. [Kom igång med målgruppsmaterial](get-started-audience-orchestration.md)
+* **Segmentdefinitioner**: Skapa en ny målgruppsdefinition med Adobe Experience Platform segmenteringstjänst. [Lär dig hur du skapar segmentdefinitioner](creating-a-segment-definition.md)
+* **Anpassad överföring**: Importera en målgrupp med en CSV-fil. Lär dig hur du importerar målgrupper i Adobe Experience Platform [dokumentation för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}.
+* **Målgruppskomposition**: Skapa ett dispositionsarbetsflöde för att kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och utnyttja olika aktiviteter (dela, exkludera..) för att skapa nya målgrupper. [Kom igång med målgruppsdisposition](get-started-audience-orchestration.md)
 
 ## Målgrupper i [!DNL Journey Optimizer] {#segments-in-journey-optimizer}
 
@@ -46,15 +46,15 @@ I kampanjer och resor kan ni välja alla målgrupper som genereras med segmentde
 >
 >Användningen av målgrupper och attribut från målgruppssammansättning och målgrupper med anpassad uppladdning (CSV-fil) är för närvarande inte tillgänglig för användning med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten. [Lär dig använda attribut för målgruppsberikning i Journey Optimizer](../audience/about-audiences.md#enrichment)
 
-Ni kan utnyttja målgrupper i **[!DNL Journey Optimizer]** på olika sätt:
+Du kan utnyttja målgrupper i **[!DNL Journey Optimizer]** på olika sätt:
 
-* Välj en målgrupp för **kampanj**, där meddelandet skickas till alla personer som tillhör den valda målgruppen. [Lär dig definiera målgruppen för en kampanj](../campaigns/create-campaign.md#define-the-audience-audience).
+* Välj en målgrupp för en **kampanj**, där meddelandet skickas till alla personer som tillhör den valda målgruppen. [Lär dig definiera målgruppen för en kampanj](../campaigns/create-campaign.md#define-the-audience-audience).
 
-* Använd en **Läsa målgrupper** orkestreringsaktivitet på en resa för att få alla personer i publiken att komma in på resan och ta emot de meddelanden som ingår i resan. Säg att ni har en&quot;silverkund&quot; som målgrupp. Med den här aktiviteten kan ni få alla silverkunder att ta sig in på en resa och skicka en serie personaliserade meddelanden till dem. [Lär dig konfigurera en målgruppsaktivitet för läsning](../building-journeys/read-audience.md#configuring-segment-trigger-activity).
+* Använd en **Läs målgruppsorganisation** i en resa för att få alla personer i målgruppen att komma in på resan och ta emot de meddelanden som ingår i din resa. Säg att ni har en&quot;silverkund&quot; som målgrupp. Med den här aktiviteten kan ni få alla silverkunder att ta sig in på en resa och skicka en serie personaliserade meddelanden till dem. [Lär dig konfigurera en målgruppsaktivitet för läsning](../building-journeys/read-audience.md#configuring-segment-trigger-activity).
 
-* Använd **Villkor** aktiviteter på en resa för att skapa villkor baserade på medlemskap för målgrupper. [Lär dig hur du använder målgrupper under förhållanden](../building-journeys/condition-activity.md#using-a-segment).
+* Använd aktiviteten **Villkor** i en resa för att skapa villkor baserat på målgruppsmedlemskap. [Lär dig hur du använder målgrupper i villkor](../building-journeys/condition-activity.md#using-a-segment).
 
-* Använd **Målgruppskvalifikation** händelseaktivitet på en resa för att få individer att komma in på eller gå framåt i resan baserat på Adobe Experience Platform entréer och utgångar. Du kan till exempel få alla nya silverkunder att resa och skicka meddelanden till dem. Mer information om hur du använder den här aktiviteten finns i [Lär dig hur du konfigurerar en aktivitet för målgruppskvalificering](../building-journeys/audience-qualification-events.md).
+* Använd aktiviteten **Målgruppskvalificering** för att få enskilda personer att komma in på eller gå framåt i resan baserat på Adobe Experience Platform målgruppsinkomster och utträden. Du kan till exempel få alla nya silverkunder att resa och skicka meddelanden till dem. Mer information om hur du använder den här aktiviteten finns i [Lär dig hur du konfigurerar en målgruppsklassificeringsaktivitet](../building-journeys/audience-qualification-events.md).
 
   >[!NOTE]
   >
@@ -64,7 +64,7 @@ Ni kan utnyttja målgrupper i **[!DNL Journey Optimizer]** på olika sätt:
 
 När ni riktar in er på en målgrupp som skapats med arbetsflöden för dispositioner kan ni utnyttja anrikningsattribut från dessa målgrupper för att bygga upp er resa och personalisera era budskap.
 
-Om du vill använda anrikningsattribut i en resa måste du se till att de läggs till i en fältgrupp i datakällan ExperiencePlatform.
+Om du vill använda anrikningsattribut i en resa måste du se till att de läggs till i en fältgrupp i Data Source för ExperiencePlatform.
 
 +++ Lär dig hur du lägger till anrikningsattribut i en fältgrupp
 
@@ -82,11 +82,11 @@ Detaljerad information om datakällor finns i följande avsnitt:
 
 När anrikningsattributen har lagts till i en fältgrupp kan du utnyttja dem på olika platser i Journey Optimizer:
 
-* **Skapa flera vägar i en resa** baserat på regler som utnyttjar målgruppens anrikningsattribut. För att göra detta bör du rikta in dig på målgruppen med en [Läsa målgrupper](../building-journeys/read-audience.md) skapar sedan regler i en [Villkor](../building-journeys/condition-activity.md) verksamhet som bygger på målgruppens anrikningsattribut.
+* **Skapa flera sökvägar i en resa** baserat på regler som utnyttjar målpublikens anrikningsattribut. Det gör du genom att rikta in målgruppen med en [Läs målgrupp](../building-journeys/read-audience.md) -aktivitet och sedan skapa regler i en [Villkor](../building-journeys/condition-activity.md) -aktivitet baserat på målgruppens anrikningsattribut.
 
   ![](assets/audience-enrichment-attribute-condition.png){width="70%" zoomable="yes"}
 
-* **Anpassa era meddelanden** på resor eller kampanjer genom att lägga till anrikningsattribut från målgruppen i personaliseringsredigeraren. [Lär dig arbeta med personaliseringsredigeraren](../personalization/personalization-build-expressions.md)
+* **Anpassa dina meddelanden** på resor eller i kampanjer genom att lägga till anrikningsattribut från målgruppen i personaliseringsredigeraren. [Lär dig arbeta med personaliseringsredigeraren](../personalization/personalization-build-expressions.md)
 
   ![](assets/audience-enrichment-attribute-perso.png){width="70%" zoomable="yes"}
 
@@ -118,9 +118,9 @@ Gruppsegmentering är ett alternativ till direktuppspelningssegmentering som bea
 
 +++
 
-+++ Kantsegmentering
++++ Edge segmentering
 
-Kantsegmentering är möjligheten att omedelbart utvärdera segment i Adobe Experience Platform [på kanten](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"}, vilket möjliggör användning av personalisering på samma sida och nästa sida. För närvarande kan endast utvalda frågetyper utvärderas med kantsegmentering. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/edge-segmentation.html#query-types){target="_blank"}
+Edge-segmentering är möjligheten att omedelbart utvärdera segment i Adobe Experience Platform [på kanten](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"}, vilket möjliggör användning av personalisering på samma sida och nästa sida. För närvarande kan endast utvalda frågetyper utvärderas med kantsegmentering. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/edge-segmentation.html#query-types){target="_blank"}
 
 +++
 
@@ -142,21 +142,21 @@ Det kan ta upp till 24 timmar att fylla målgruppen med tidigare data. När mål
 
 ### Händelseanvändning med direktuppspelningssegmentering {#streaming-segmentation-events-guardrails}
 
-Strömmande segmentering är användbart för personalisering i realtid med värdefulla användningsexempel. Det är dock viktigt att välja höger [händelser](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#events){target="_blank"} som ska användas som segmenteringskriterier.
+Strömmande segmentering är användbart för personalisering i realtid med värdefulla användningsexempel. Det är dock viktigt att välja rätt [händelser](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#events){target="_blank"} som ska användas som segmenteringskriterier.
 
 Därför bör du undvika följande händelser för optimala prestanda vid direktuppspelningssegmentering:
 
-* **Meddelandet har öppnats** Interaktionstyp-händelse
+* **Meddelandet öppnat** händelse för interaktionstyp
 
-  När ni skapar er målgrupp använder ni **Meddelandet har öppnats** interaktionshändelser blev otillförlitliga eftersom de inte är faktiska indikatorer för användaraktivitet och kan påverka segmenteringsprestanda negativt. Läs varför i det här [Adobe blogginlägg](https://blog.adobe.com/en/publish/2021/06/24/what-apples-mail-privacy-protection-means-for-email-marketers){target="_blank"}. Adobe rekommenderar därför att du inte använder **Meddelandet har öppnats** interaktionshändelser med direktuppspelningssegmentering. Använd istället riktiga användaraktivitetssignaler som klickningar, köp eller beacon-data.
+  När du skapade din målgrupp blev användningen av **Message Opened**-interaktionshändelser otillförlitlig, eftersom de inte är faktiska indikatorer för användaraktivitet och kan påverka segmenteringsprestanda negativt. Läs varför i det här [Adobe-blogginlägget](https://blog.adobe.com/en/publish/2021/06/24/what-apples-mail-privacy-protection-means-for-email-marketers){target="_blank"}. Adobe rekommenderar därför att interaktionshändelser för **Öppna meddelande** inte används med direktuppspelningssegmentering. Använd istället riktiga användaraktivitetssignaler som klickningar, köp eller beacon-data.
 
-* **Meddelandet har skickats** Feedback Status-händelse
+* **Meddelande skickat** Feedback-statushändelse
 
-  The **Meddelandet har skickats** Feedback-händelse används ofta för frekvens- eller undertryckskontroll innan du skickar ett e-postmeddelande. Adobe rekommenderar att du undviker det eftersom det sätter tryck på prestandan och kan orsaka att systemet försämras. Använd därför affärsregler i stället för, för frekvens- eller undertryckningslogik **Meddelandet har skickats** feedback-händelser. Observera att det inom kort kommer att finnas ett dagligt tak för frekvenser för enskilda profiler, vilket kompletterar den befintliga månadsgränsen för affärsregler.
+  Feedback-händelsen **Meddelande skickat** används ofta för frekvens- eller undertryckskontroll innan ett e-postmeddelande skickas. Adobe rekommenderar att du undviker det eftersom det sätter tryck på prestandan och kan orsaka att systemet försämras. Använd därför affärsregler i stället för **Meddelanden som skickas** för frekvens- eller undertryckningslogik. Observera att det inom kort kommer att finnas ett dagligt tak för frekvenser för enskilda profiler, vilket kompletterar den befintliga månadsgränsen för affärsregler.
 
 >[!NOTE]
 >
->Du kan använda **Meddelandet har öppnats** och **Meddelande skickat** händelser i gruppsegmentering utan några prestandaproblem.
+>Du kan använda händelserna **Meddelande öppnat** och **Meddelande skickat** i gruppsegmentering utan några prestandaproblem.
 
 
 ## Vanliga frågor och svar om målgruppskomposition och anpassad överföring {#faq}
@@ -167,9 +167,9 @@ I följande avsnitt visas vanliga frågor om hur målgrupper som skapats med dis
 
 Målgrupper från målgruppssammansättning och anpassad uppladdning kan hämtas antingen från kampanjer och resor. [Lär dig målinrikta målgrupper i [!DNL Journey Optimizer]](#segments-in-journey-optimizer)
 
-* I **Kampanjer** visas dessa målgrupper i målgruppsväljaren efter att du klickat på knappen Välj målgrupp.
+* I **kampanjer** visas de här målgrupperna i målgruppsväljaren efter att du klickat på knappen Välj målgrupp.
 
-* I **Resor** kan ni använda dessa målgrupper i en&quot;Läs målgrupp&quot;-aktivitet när ni väljer målgrupp och i en&quot;Villkor&quot;-aktivitet för att kontrollera målgruppsmedlemskap. På grund av deras gruppkaraktär visas dock inte dessa målgrupper i aktiviteten&quot;Audience Qualification&quot;.
+* I **Journeys** kan du använda dessa målgrupper i en&quot;Läs målgrupp&quot;-aktivitet under valet av målgrupp och i en&quot;Villkor&quot;-aktivitet för kontroller av målgruppsmedlemskap. På grund av deras gruppkaraktär visas dock inte dessa målgrupper i aktiviteten&quot;Audience Qualification&quot;.
 
   >[!NOTE]
   >
@@ -183,7 +183,7 @@ Dessutom kan dessa målgrupper användas i personaliseringsredigeraren för att 
 
 Enrichment-attribut är ytterligare attribut som är sammanhangsberoende och specifika för en viss målgrupp. De är inte associerade med profilen och används vanligtvis för personalisering.
 
-Anrikningsattribut länkas till en målgrupp via en [Förfina](composition-canvas.md#enrich) i målgruppssammansättning eller genom den anpassade överföringsprocessen.
+Anrikningsattribut är länkade till en målgrupp via en [Berika](composition-canvas.md#enrich) -aktivitet i målgruppssammansättning eller via den anpassade överföringsprocessen.
 
 +++
 
@@ -203,14 +203,14 @@ Anrikningsattribut från publikens komposition kan användas inom följande omr�
 
 +++ Hur aktiverar jag anrikningsattribut i Journeys?
 
-Om du vill använda anrikningsattribut i en resa måste du se till att de läggs till i en fältgrupp i datakällan ExperiencePlatform. Information om hur du lägger till anrikningsattribut i en fältgrupp finns i [det här avsnittet](#enrichment)
+Om du vill använda anrikningsattribut i en resa måste du se till att de läggs till i en fältgrupp i Data Source för ExperiencePlatform. Information om hur du lägger till anrikningsattribut i en fältgrupp finns i [det här avsnittet](#enrichment)
 
 +++
 
 +++ När kan jag publicera en målgrupp från en publikkomposition eller en anpassad uppladdning i Journey Optimizer?
 
-* Målgrupper från **publiksammansättning** exekveras dagligen så du kan behöva vänta upp till 24 timmar för att använda dem i Journey Optimizer.
-* Målgrupper från **anpassad överföring** publiceras i Journey Optimizer cirka 2 timmar efter publiceringen.
+* Målgrupper från **målgruppskomposition** körs dagligen, så du kan behöva vänta upp till 24 timmar på att använda dem i Journey Optimizer.
+* Publikationer från **anpassad överföring** blir tillgängliga i Journey Optimizer cirka 2 timmar efter publicering.
 
 +++
 
@@ -224,7 +224,7 @@ För närvarande inte. Även efter vänta- eller händelsnoder är värdena för
 
 Under den anpassade överföringsprocessen anger du det CSV-attribut som ska användas som identitet och den profilidentitet som det mappas till. Detta skapar en länk mellan målgruppsdata och profilen. Om CSV-filen innehåller ett identitetsvärde som inte finns i profilen skapas en ny profil med det identitetsvärdet.
 
-Detaljerad information om den anpassade överföringsprocessen finns i Adobe Experience Platform [Dokumentation för segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}.
+Detaljerad information om den anpassade överföringsprocessen finns i Adobe Experience Platform [dokumentation för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}.
 
 +++
 

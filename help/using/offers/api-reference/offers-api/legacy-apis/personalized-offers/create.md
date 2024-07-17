@@ -17,11 +17,11 @@ ht-degree: 6%
 
 Ett personaliserat erbjudande är ett anpassningsbart marknadsföringsmeddelande som baseras på regler och begränsningar för behörighet.
 
-Du kan skapa ett personaliserat erbjudande genom att göra en POST till [!DNL Offer Library] API, samtidigt som du anger ditt behållar-ID.
+Du kan skapa ett anpassat erbjudande genom att göra en POST-förfrågan till [!DNL Offer Library]-API:t och samtidigt ange ditt behållar-ID.
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
-I följande tabell visas giltiga värden som utgör *Content-Type* och *Acceptera* fält i begärandehuvudet:
+I följande tabell visas giltiga värden som omfattar fälten *Content-Type* och *Accept* i begärandehuvudet:
 
 | Rubriknamn | Värde |
 | ----------- | ----- |
@@ -86,7 +86,7 @@ curl -X POST \
 
 **Svar**
 
-Ett lyckat svar returnerar information om det nya personaliserade erbjudandet, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort ditt anpassade erbjudande.
+Ett godkänt svar returnerar information om det nya anpassade erbjudandet, inklusive dess unika instans-ID och placering `@id`. Du kan använda instans-ID:t i senare steg för att uppdatera eller ta bort ditt anpassade erbjudande.
 
 ```json
 {
@@ -104,4 +104,4 @@ Ett lyckat svar returnerar information om det nya personaliserade erbjudandet, i
 
 ## Begränsningar {#limitations}
 
-Erbjudanderepresentationer och vissa begränsningar för erbjudanden stöds för närvarande inte i mobilen [!DNL Experience Edge] arbetsflöden, till exempel `Capping`. The `Capping` fältvärdet anger hur många gånger ett erbjudande kan presenteras för alla användare. Mer information finns i [Dokumentation om regler och begränsningar för erbjudanden](../../../../offer-library/creating-personalized-offers.md).
+Erbjudanderepresentationer och vissa begränsningar för erbjudanden stöds för närvarande inte i arbetsflödena för mobila [!DNL Experience Edge], till exempel `Capping`. Fältvärdet `Capping` anger hur många gånger ett erbjudande kan visas för alla användare. Mer information finns i [Erbjud berättiganderegler och begränsningsdokumentation](../../../../offer-library/creating-personalized-offers.md).

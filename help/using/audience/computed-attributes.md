@@ -30,7 +30,7 @@ Varje beräknat attribut är ett profilattribut som ni kan använda för segment
 
 ## Skapa beräknade attribut {#manage}
 
-Om du vill skapa beräknade attribut går du till **[!UICONTROL Computed attributes]** i **[!UICONTROL Profiles]** menyn till vänster.
+Om du vill skapa beräknade attribut går du till fliken **[!UICONTROL Computed attributes]** på menyn **[!UICONTROL Profiles]** som finns till vänster.
 
 Från den här skärmen kan du skapa beräknade attribut genom att skapa regler som kombinerar händelseattribut, sammanställningsfunktioner och en angiven uppslagsperiod. Du kan till exempel beräkna summan av inköp som gjorts de senaste tre månaderna, identifiera den senaste artikeln som visas av en profil som inte har gjort ett köp den senaste veckan eller räkna upp de totala belöningspoängen som ackumulerats av varje profil.
 
@@ -38,23 +38,23 @@ Från den här skärmen kan du skapa beräknade attribut genom att skapa regler 
 
 När regeln är klar publicerar du det beräknade attributet så att det blir tillgängligt i andra tjänster längre fram i kedjan, inklusive Journey Optimizer.
 
-Detaljerad information om hur du skapar och hanterar beräknade attribut finns i [Dokumentation för beräknade attribut](https://experienceleague.adobe.com/docs/experience-platform/profile/computed-attributes/overview.html)
+Detaljerad information om hur du skapar och hanterar beräknade attribut finns i [dokumentationen om beräknade attribut](https://experienceleague.adobe.com/docs/experience-platform/profile/computed-attributes/overview.html)
 
 ## Lägg till beräknade attribut i Adobe Experience Platform-datakällan {#source}
 
-För att kunna utnyttja beräknade attribut i Journey Optimizer måste du först lägga till dem i Journey Optimizer **Experience Platform** datakälla.
+För att kunna utnyttja beräknade attribut i Journey Optimizer måste du först lägga till dem i datakällan Journey Optimizer **Experience Platform**.
 
 Adobe Experience Platform datakälla definierar anslutningen till Adobe kundprofil i realtid. Den här datakällan är utformad för att hämta profildata och Experience Events-data från kundprofiltjänsten i realtid.
 
 Så här lägger du till beräknade attribut i datakällan:
 
-1. Navigera till **[!UICONTROL Configurations]** vänster handmeny och klicka sedan på **[!UICONTROL Data sources]** kort.
+1. Navigera till den vänstra menyn **[!UICONTROL Configurations]** och klicka sedan på kortet **[!UICONTROL Data sources]**.
 
-1. Välj **[!UICONTROL Experience Platform]** datakälla.
+1. Välj datakällan **[!UICONTROL Experience Platform]**.
 
    ![](assets/computed-attributes-add.png)
 
-1. Lägg till **[!UICONTROL SystemComputedAttributes]** fältgrupp som innehåller alla skapade beräknade attribut.
+1. Lägg till fältgruppen **[!UICONTROL SystemComputedAttributes]** som innehåller alla skapade beräknade attribut.
 
    ![](assets/computed-attributes-fieldgroup.png)
 
@@ -70,6 +70,6 @@ Detaljerad information om hur du lägger till fältgrupper i Adobe Experience Pl
 
 Beräknade attribut erbjuder en mångsidig uppsättning funktioner i Journey-optimeraren. Du kan använda dem för olika syften, till exempel för att personalisera meddelandeinnehåll, skapa nya målgrupper eller dela upp resor baserat på ett specifikt beräknat attribut. Du kan t.ex. dela upp en resa baserat på en profils totala inköp de senaste tre veckorna genom att lägga till ett enda beräknat attribut i en villkorsaktivitet. Du kan också anpassa ett e-postmeddelande genom att visa det senast visade objektet för varje profil.
 
-Eftersom beräknade attribut är profilattributfält som har skapats i ditt profilföreningsschema kan du komma åt dem från personaliseringsredigeraren i **SystemComputedAttributes** fältgrupp. Därifrån kan du lägga till ett beräknat attribut i dina uttryck och behandla dem som vilket annat profilattribut som helst för att utföra de önskade åtgärderna.
+Eftersom beräknade attribut är profilattributfält som har skapats i ditt profilunionsschema kan du komma åt dem från personaliseringsredigeraren i fältgruppen **SystemComputedAttributes**. Därifrån kan du lägga till ett beräknat attribut i dina uttryck och behandla dem som vilket annat profilattribut som helst för att utföra de önskade åtgärderna.
 
 ![](assets/computed-attributes-ajo.png)

@@ -35,18 +35,18 @@ Med samlingar kan du kategorisera och gruppera dina beslutsobjekt enligt dina ö
 
 Anta att du har lagt till ett anpassat kategoriattribut i beslutsobjektens katalogschema. På så sätt kan du skapa en samling som innehåller alla beslutsobjekt med värdet Yoga i attributet Kategori.
 
-Listan med samlingar finns på **[!UICONTROL  Catalogs]** -menyn.
+Listan med samlingar finns på menyn **[!UICONTROL  Catalogs]**.
 
 Så här skapar du en samling:
 
-1. Navigera till **[!UICONTROL  Catalogs]** > **[!UICONTROL Collections]** och klicka **[!UICONTROL Create collection]**.
+1. Navigera till **[!UICONTROL  Catalogs]** > **[!UICONTROL Collections]** och klicka på **[!UICONTROL Create collection]**.
 1. Ange ett namn och en beskrivning för samlingen.
 1. Lägg till en eller flera regler för att bestämma vilka objekt som ska inkluderas i samlingen. Så här gör du:
 
    1. Välj ett objektattribut att använda som villkor. Attributlistan innehåller alla standardattribut och anpassade attribut som definierats i katalogschemat. [Läs mer om objektets katalog](catalogs.md)
    1. Markera önskad operator och ange värdet som ska filtreras.
-   1. Upprepa dessa steg om du vill lägga till så många regler som behövs. När flera regler har lagts till kan du välja mellan **Och** och **eller** -operatorer för att kombinera dem. Om du vill göra det klickar du på operatormärket för att växla mellan de två alternativen.
-   1. Klicka på **[!UICONTROL Preview collection]** om du vill visa de objekt som uppfyller de regler som du har definierat.
+   1. Upprepa dessa steg om du vill lägga till så många regler som behövs. När flera regler läggs till kan du välja mellan operatorerna **och** och **Eller** för att kombinera dem. Om du vill göra det klickar du på operatormärket för att växla mellan de två alternativen.
+   1. Klicka på knappen **[!UICONTROL Preview collection]** för att visa de objekt som uppfyller de regler som du har definierat.
 
    ![](assets/collection-create.png)
 

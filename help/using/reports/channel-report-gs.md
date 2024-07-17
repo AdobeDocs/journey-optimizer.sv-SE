@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: 247b966d-4f84-453b-8178-9c9ebcd494ef
 source-git-commit: 0b4af69bcd410d467f7b6a26aa407b1df23a965e
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -21,35 +21,35 @@ Kanalrapporterna är ett kraftfullt verktyg som ger en omfattande översikt öve
 
 Kanalrapporterna är helt anpassningsbara, så du kan ändra storlek på eller ta bort widgetar och skapa en instrumentpanel som passar dina specifika behov. Du kan också exportera rapportdata till en PDF- eller CSV-fil för ytterligare analys.
 
-Läs mer om olika mätvärden och widgetar som är tillgängliga för kanalrapporter i det här [page](channel-report.md).
+Läs mer om de olika mätvärden och widgetar som är tillgängliga för kanalrapporterna på den här [sidan](channel-report.md).
 
 ## Före start {#manage-reports-prereq}
 
-Kontrollera att du har åtkomst till **[!UICONTROL Reports]** -menyn.
+Kontrollera att du har åtkomst till menyn **[!UICONTROL Reports]** innan du startar.
 
-Om du inte kan se **[!UICONTROL Reports]** måste dina åtkomsträttigheter utökas till att omfatta **[!UICONTROL View Channel Reports]** behörighet. Du kan utöka dina egna behörigheter om du har tillgång till Adobe Experience Platform [Behörigheter](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html){target="_blank"} för er organisation. Om inte, kontakta Adobe Journey Optimizer-administratören.
+Om du inte kan se **[!UICONTROL Reports]**-menyn måste dina åtkomsträttigheter utökas så att de omfattar behörigheten **[!UICONTROL View Channel Reports]**. Du kan utöka dina egna behörigheter om du har åtkomst till Adobe Experience Platform [behörigheter](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html){target="_blank"} för din organisation. Om inte, kontakta Adobe Journey Optimizer-administratören.
 
 +++Lär dig hur du tilldelar rapportbehörigheter
 
-Observera att denna behörighet ingår i följande inbyggda **[!UICONTROL Roles]**: Campaign Manager, Campaign Approver, Campaign Viewer och Campaign Administrator.
+Observera att den här behörigheten ingår i följande inbyggda **[!UICONTROL Roles]**: Campaign Manager, Campaign Approver, Campaign Viewer och Campaign Administrator.
 
-Så här tilldelar du motsvarande behörighet till **[!UICONTROL Role]**:
+Så här tilldelar du motsvarande behörighet till din **[!UICONTROL Role]**:
 
-1. Från [!DNL Permissions] -produkt, navigera till **[!UICONTROL Roles]** och välj den roll som du vill uppdatera med den nya **[!UICONTROL View Channel Reports]** behörighet.
+1. Gå till menyn **[!UICONTROL Roles]** i produkten [!DNL Permissions] och välj den roll som du vill uppdatera med den nya behörigheten **[!UICONTROL View Channel Reports]**.
 
-1. Från **[!UICONTROL Role]** kontrollpanel, klicka **[!UICONTROL Edit]**.
+1. Klicka på **[!UICONTROL Edit]** på din **[!UICONTROL Role]**-instrumentpanel.
 
    ![](assets/channel_permission_1.png)
 
-1. Dra och släpp **[!UICONTROL Reports]** resurs för att tilldela behörighet.
+1. Dra och släpp **[!UICONTROL Reports]**-resursen för att tilldela behörighet.
 
-   Från **[!UICONTROL Report]** nedrullningsbar resurs, välj **[!UICONTROL View Channel Reports]** behörighet.
+   Välj behörigheten **[!UICONTROL View Channel Reports]** i listrutan **[!UICONTROL Report]**-resurs.
 
    ![](assets/channel_permission_2.png)
 
 1. Klicka på **[!UICONTROL Save]**.
 
-Användare som tilldelats denna **[!UICONTROL Role]** har nu åtkomst till **[!UICONTROL Reports]** -menyn.
+Användare som är tilldelade denna **[!UICONTROL Role]** har nu åtkomst till menyn **[!UICONTROL Reports]**.
 
 +++
 
@@ -57,17 +57,17 @@ Användare som tilldelats denna **[!UICONTROL Role]** har nu åtkomst till **[!U
 
 Följ de här stegen för att få åtkomst till och hantera dina kanalrapporter:
 
-1. Navigera till **[!UICONTROL Reports]** menyn i **[!UICONTROL Journey Management]** -avsnitt.
+1. Navigera till menyn **[!UICONTROL Reports]** i avsnittet **[!UICONTROL Journey Management]**.
 
    ![](assets/channel_report_1.png)
 
-1. Välj en **Starta** och **[!UICONTROL End time]** för att rikta in specifika data.
+1. Välj en **Start** och **[!UICONTROL End time]** på din instrumentpanel för att ange specifika data som mål.
 
-1. Från **[!UICONTROL Action from]** väljer du om du vill ha kampanjer, resor eller båda som mål.
+1. I listrutan **[!UICONTROL Action from]** väljer du om du vill ha kampanjer, resor eller båda som mål.
 
    ![](assets/channel_report_2.png)
 
-1. Klicka **[!UICONTROL Modify]** för att ändra storlek på eller ta bort widgetar för att skapa en instrumentpanel som uppfyller dina specifika behov.
+1. Klicka på **[!UICONTROL Modify]** om du vill ändra storlek på eller ta bort widgetar för att skapa en instrumentpanel som uppfyller dina specifika behov.
 
    ![](assets/channel_report_3.png)
 
@@ -87,7 +87,7 @@ Du kan enkelt exportera dina olika rapporter till PDF eller CSV-format så att d
 
 >[!TAB Exportera rapporten som en PDF-fil]
 
-1. Klicka på **[!UICONTROL Export]** och markera **[!UICONTROL PDF file]**.
+1. Klicka på **[!UICONTROL Export]** i rapporten och välj **[!UICONTROL PDF file]**.
 
 1. Konfigurera dokumentet i utskriftsfönstret efter behov. Observera att alternativen kan variera beroende på vilken webbläsare du använder.
 
@@ -99,9 +99,9 @@ Din rapport är nu tillgänglig för visning eller delning i en PDF-fil.
 
 >[!TAB Exportera rapporten som en CSV-fil]
 
-1. Klicka på **[!UICONTROL Export]** och markera **[!UICONTROL CSV file]** för att generera en CSV-fil på övergripande rapportnivå.
+1. Klicka på **[!UICONTROL Export]** i rapporten och välj **[!UICONTROL CSV file]** för att generera en CSV-fil på den övergripande rapportnivån.
 
-1. Du kan också välja att exportera data från en viss widget. Klicka **[!UICONTROL Export widget data to CSV]** bredvid den valda widgeten.
+1. Du kan också välja att exportera data från en viss widget. Klicka på **[!UICONTROL Export widget data to CSV]** bredvid den valda widgeten.
 
 1. Filen hämtas automatiskt och kan finnas i dina lokala filer.
 

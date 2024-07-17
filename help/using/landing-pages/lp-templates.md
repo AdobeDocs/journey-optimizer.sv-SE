@@ -20,7 +20,7 @@ ht-degree: 4%
 
 ## Spara en sida som en mall {#save-as-template}
 
-När du designat [innehåll på landningssidan](lp-content.md)kan du spara den för framtida bruk. Följ stegen nedan för att göra detta.
+När du har utformat [innehållet på landningssidan](lp-content.md) kan du spara det för framtida återanvändning. Följ stegen nedan för att göra detta.
 
 1. Klicka på ellipsen högst upp till höger på skärmen.
 
@@ -34,13 +34,13 @@ När du designat [innehåll på landningssidan](lp-content.md)kan du spara den f
 
 1. Klicka på **[!UICONTROL Save]**.
 
-Nästa gång du skapar en landningssida kan du använda den här mallen för att bygga ditt innehåll. Läs mer i [section](#use-saved-template) nedan.
+Nästa gång du skapar en landningssida kan du använda den här mallen för att bygga ditt innehåll. Lär dig hur i [avsnittet](#use-saved-template) nedan.
 
 ![](assets/lp_designer-saved-template.png)
 
 ## Använda en sparad mall {#use-saved-template}
 
-1. Öppna [designer av landningssidans innehåll](design-lp.md). Listan över alla mallar som sparats tidigare visas.
+1. Öppna [designern för landningssidans innehåll](design-lp.md). Listan över alla mallar som sparats tidigare visas.
 
 1. Du kan sortera dem **[!UICONTROL By name]**, **[!UICONTROL Last modified]** och **[!UICONTROL Last created]**.
 

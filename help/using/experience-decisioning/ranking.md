@@ -25,17 +25,17 @@ Med rangordningsmetoder kan du rangordna objekt som ska visas för en viss profi
 
 Det finns två sorteringsmetoder:
 
-* **Formler** gör att du kan definiera regler som avgör vilket objekt som ska presenteras först, i stället för att ta hänsyn till objektets prioritetspoäng.
+* **Med formler** kan du definiera regler som avgör vilket objekt som ska presenteras först, i stället för att ta hänsyn till objektets prioritetspoäng.
 
-* **AI-modeller** gör att du kan använda tränade modellsystem som utnyttjar flera datapunkter för att avgöra vilken artikel som ska presenteras först.
+* **AI-modeller** gör att du kan använda tränade modellsystem som utnyttjar flera datapunkter för att avgöra vilket objekt som ska presenteras först.
 
 ## Skapa rangordningsmetoder {#create}
 
 Så här skapar du en rangordningsmetod:
 
-1. Navigera till **[!UICONTROL Strategy setup]** väljer du **[!UICONTROL Formulas]** eller **[!UICONTROL AI models]** menyn beroende på vilken typ av rankning du vill använda.
+1. Navigera till menyn **[!UICONTROL Strategy setup]** och välj sedan menyn **[!UICONTROL Formulas]** eller **[!UICONTROL AI models]** beroende på vilken typ av rankning du vill använda.
 
-1. Klicka på **[!UICONTROL Create formula]** eller **[!UICONTROL Create AI model]** i skärmens övre högra hörn.
+1. Klicka på knappen **[!UICONTROL Create formula]** eller **[!UICONTROL Create AI model]** i skärmens övre högra hörn.
 
    ![](assets/ranking-create.png)
 
@@ -49,7 +49,7 @@ Så här skapar du en rangordningsmetod:
 
 ## Utnyttja attribut för beslutsunderlag i formler {#items}
 
-Rankningsformler uttrycks i **PQL-syntax** och kan utnyttja olika attribut, till exempel profilattribut, [kontextdata](context-data.md) och attribut som relaterar till dina beslutsposter.
+Rankningsformler uttrycks i **PQL-syntax** och kan utnyttja olika attribut, t.ex. profilattribut, [kontextdata](context-data.md) och attribut relaterade till dina beslutsobjekt.
 
 Om du vill använda attribut som hör till dina beslutsobjekt i formler måste du följa syntaxen nedan i din rankningsreceptas kod. Expandera varje avsnitt för mer information:
 

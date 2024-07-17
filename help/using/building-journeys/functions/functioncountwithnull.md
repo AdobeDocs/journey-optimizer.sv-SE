@@ -10,7 +10,7 @@ exl-id: 8d53b6d8-f00f-4d1a-b6df-951f84a15430
 source-git-commit: 2f47209ad2a5e5b5d26f01949f5e9ade63c2581f
 workflow-type: tm+mt
 source-wordcount: '57'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 8%
 
 Räknar alla element i listan inklusive null-värden.
 
-Observera att parametern `<listObject>` stöds inte i den här funktionen.
+Observera att parametern `<listObject>` inte stöds i den här funktionen.
 
 ## Kategori
 

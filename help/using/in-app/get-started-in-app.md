@@ -22,7 +22,7 @@ Använd Journey Optimizer för att skapa meddelanden i appen och konfigurera upp
 
 >[!AVAILABILITY]
 >
->Kanalen i appen är inte tillgänglig för organisationer som har köpt Adobe **Hälsovårdssköld** och **Sköld för skydd av privatlivet och säkerheten** tilläggserbjudanden.
+>Kanalen i appen är inte tillgänglig för organisationer som har köpt tilläggen **Adobe Healthcare Shield** och **Privacy and Security Shield**.
 
 
 <table style="table-layout:fixed"><tr style="border: 0;">
@@ -31,7 +31,7 @@ Använd Journey Optimizer för att skapa meddelanden i appen och konfigurera upp
 <img alt="Validering" src="../assets/do-not-localize/inapp-config.jpg">
 </a>
 <div>
-<a href="inapp-configuration.md"><strong>Konfigurera appkanalen</strong></a>
+<a href="inapp-configuration.md"><strong>Konfigurera kanalen i appen</strong></a>
 </div>
 <p>
 </td>

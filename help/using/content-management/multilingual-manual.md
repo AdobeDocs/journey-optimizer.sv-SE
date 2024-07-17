@@ -31,21 +31,21 @@ Följ de här stegen för att skapa flerspråkigt innehåll med hjälp av manuel
 
 1. [Skapa språkinställningar](#create-language-settings).
 
-1. [Skapa flerspråkigt innehåll](#create-a-multilingual-campaign).
+1. [Skapa ett flerspråkigt innehåll](#create-a-multilingual-campaign).
 
 ## Skapa nationella inställningar {#create-locale}
 
-När du konfigurerar språkinställningarna enligt beskrivningen i [Skapa språkinställningar](#language-settings) om det inte finns någon specifik språkinställning för ditt flerspråkiga innehåll kan du skapa så många nya språkinställningar som behövs med **[!UICONTROL Translation]** -menyn.
+När du konfigurerar språkinställningarna, enligt beskrivningen i avsnittet [Skapa språkinställningar](#language-settings) , kan du skapa så många nya språkinställningar som behövs på menyn **[!UICONTROL Translation]** om det inte finns någon tillgänglig språkinställning för det flerspråkiga innehållet.
 
-1. Från **[!UICONTROL Content management]** meny, åtkomst **[!UICONTROL Translation]**.
+1. Gå till **[!UICONTROL Translation]** på menyn **[!UICONTROL Content management]**.
 
 1. Klicka på **[!UICONTROL Add locale]** på fliken **[!UICONTROL Locale dictionary]**.
 
    ![](assets/locale_1.png)
 
-1. Välj din språkinställningskod på menyn **[!UICONTROL Language]** lista och associerade **[!UICONTROL Region]**.
+1. Välj din språkkod i listan **[!UICONTROL Language]** och tillhörande **[!UICONTROL Region]**.
 
-1. Klicka **[!UICONTROL Save]** för att skapa din språkinställning.
+1. Klicka på **[!UICONTROL Save]** för att skapa din språkinställning.
 
    ![](assets/locale_2.png)
 
@@ -53,37 +53,37 @@ När du konfigurerar språkinställningarna enligt beskrivningen i [Skapa språk
 
 I det här avsnittet kan du ange ditt primära språk och tillhörande språk för hantering av ditt flerspråkiga innehåll. Du kan också välja det attribut som du vill använda för att söka efter information om profilspråket
 
-1. Från **[!UICONTROL Administration]** meny, åtkomst **[!UICONTROL Channel]**.
+1. Gå till **[!UICONTROL Channel]** på menyn **[!UICONTROL Administration]**.
 
-1. I **[!UICONTROL Language settings]** meny, klicka **[!UICONTROL Create language settings]**.
+1. Klicka på **[!UICONTROL Create language settings]** på menyn **[!UICONTROL Language settings]**.
 
    ![](assets/multilingual-settings-1.png)
 
-1. Ange ditt namn **[!UICONTROL Language settings]**.
+1. Ange namnet på din **[!UICONTROL Language settings]**.
 
-1. Välj **[!UICONTROL Locales]** som är kopplade till dessa inställningar. Du kan lägga till högst 50 språkområden.
+1. Välj **[!UICONTROL Locales]** som är associerad med de här inställningarna. Du kan lägga till högst 50 språkområden.
 
-   Om en **[!UICONTROL Locale]** saknas kan du skapa den manuellt i förväg från **[!UICONTROL Translation]** eller av API. Se [Skapa en ny språkinställning](#create-locale).
+   Om **[!UICONTROL Locale]** saknas kan du skapa den manuellt på menyn **[!UICONTROL Translation]** eller via API. Se [Skapa en ny språkinställning](#create-locale).
 
    ![](assets/multilingual-settings-2.png)
 
-1. Från **[!UICONTROL Sending preference]** väljer du det attribut du vill söka efter för att hitta information om profilspråk.
+1. På menyn **[!UICONTROL Sending preference]** väljer du det attribut du vill söka efter för att hitta information om profilspråk.
 
    ![](assets/multilingual-settings-3.png)
 
-1. Klicka **[!UICONTROL Edit]** bredvid **[!UICONTROL Locale]** för att ytterligare personalisera den och lägga till **[!UICONTROL Profile preferences]**.
+1. Klicka på **[!UICONTROL Edit]** bredvid din **[!UICONTROL Locale]** om du vill anpassa den ytterligare och lägga till **[!UICONTROL Profile preferences]**.
 
    ![](assets/multilingual-settings-4.png)
 
-1. Välj andra **[!UICONTROL Locales]** från listrutan Profilinställningar och klicka på **[!UICONTROL Add profiles]**.
+1. Välj andra **[!UICONTROL Locales]** i listrutan Profilinställningar och klicka på **[!UICONTROL Add profiles]**.
 
-1. Gå till den avancerade menyn i **[!UICONTROL Locale]** för att definiera **[!UICONTROL Primary locale]**, dvs. standardspråket om profilattributet inte anges.
+1. Gå till den avancerade menyn i **[!UICONTROL Locale]** för att definiera din **[!UICONTROL Primary locale]**, d.v.s. standardspråket om profilattributet inte har angetts.
 
    Du kan även ta bort språkområdet från den här avancerade menyn.
 
    ![](assets/multilingual-settings-5.png)
 
-1. Klicka **[!UICONTROL Submit]** för att skapa **[!UICONTROL Language settings]**.
+1. Klicka på **[!UICONTROL Submit]** för att skapa din **[!UICONTROL Language settings]**.
 
 <!--
 1. Access the **[!UICONTROL Channel surfaces]** menu and create a new channel surface or select an existing one.
@@ -106,31 +106,31 @@ När du har konfigurerat ditt flerspråkiga innehåll är du redo att skapa en k
 
 1. Skapa eller importera ditt ursprungliga innehåll och anpassa det efter behov.
 
-1. När det primära innehållet har skapats klickar du på **[!UICONTROL Save]** och gå tillbaka till kampanjkonfigurationsskärmen.
+1. När det primära innehållet har skapats klickar du på **[!UICONTROL Save]** och går tillbaka till kampanjkonfigurationsskärmen.
 
    ![](assets/multilingual-campaign-2.png)
 
-1. Klicka **[!UICONTROL Add languages]** och markera dina tidigare skapade **[!UICONTROL Language settings]**. [Läs mer](#create-language-settings)
+1. Klicka på **[!UICONTROL Add languages]** och markera **[!UICONTROL Language settings]** som du skapat tidigare. [Läs mer](#create-language-settings)
 
    ![](assets/multilingual-campaign-3.png)
 
-1. Få åtkomst till de avancerade inställningarna i **[!UICONTROL Locales]** meny och välj **[!UICONTROL Copy primary to all locales]**.
+1. Gå till de avancerade inställningarna på menyn **[!UICONTROL Locales]** och välj **[!UICONTROL Copy primary to all locales]**.
 
    ![](assets/multilingual-campaign-4.png)
 
-1. Nu när det primära innehållet dupliceras i hela det markerade  **[!UICONTROL Locales]**, komma åt de olika språkinställningarna och klicka **[!UICONTROL Edit email body]** att översätta innehållet.
+1. Nu när ditt primära innehåll har duplicerats genom hela den valda **[!UICONTROL Locales]** kan du komma åt varje språkinställning och klicka på **[!UICONTROL Edit email body]** för att översätta ditt innehåll.
 
    ![](assets/multilingual-campaign-5.png)
 
-1. Du kan välja att inaktivera eller aktivera språkområden med **[!UICONTROL More action]** menyn för det valda språkområdet.
+1. Du kan välja att inaktivera eller aktivera språkinställningar med menyn **[!UICONTROL More action]** för den valda språkinställningen.
 
    ![](assets/multilingual-campaign-6.png)
 
-1. Om du vill inaktivera flerspråkig konfiguration klickar du på **[!UICONTROL Add languages]** och välj det språk du vill behålla som lokalt språk.
+1. Om du vill inaktivera den flerspråkiga konfigurationen klickar du på **[!UICONTROL Add languages]** och väljer det språk som du vill behålla som lokalt språk.
 
    ![](assets/multilingual-campaign-7.png)
 
-1. Klicka **[!UICONTROL Review to activate]** för att visa en sammanfattning av kampanjen.
+1. Klicka på **[!UICONTROL Review to activate]** om du vill visa en sammanfattning av kampanjen.
 
    Sammanfattningen gör att du kan ändra kampanjen om det behövs och kontrollera om någon parameter är felaktig eller saknas.
 

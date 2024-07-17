@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Använd uttrycksfragment
-description: Lär dig använda uttrycksfragment i [!DNL Journey Optimizer] personaliseringsredigerare.
+description: Lär dig hur du använder uttrycksfragment i  [!DNL Journey Optimizer] personaliseringsredigeraren.
 feature: Personalization, Fragments
 topic: Personalization
 role: Data Engineer
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Utnyttja uttrycksfragment {#use-expression-fragments}
 
-När du använder **personaliseringsredigerare** kan du använda alla uttrycksfragment som har skapats eller sparats i den aktuella sandlådan.
+När du använder **anpassningsredigeraren** kan du utnyttja alla uttrycksfragment som har skapats eller sparats i den aktuella sandlådan.
 
-Ett fragment är en återanvändbar komponent som kan refereras till i [!DNL Journey Optimizer] kampanjer och resor. Med den här funktionen kan man skapa flera anpassade innehållsblock som kan användas av marknadsföringsanvändare för att snabbt sammanställa innehåll i en förbättrad designprocess. [Lär dig skapa och hantera fragment](../content-management/fragments.md).
+Ett fragment är en återanvändbar komponent som kan refereras till mellan [!DNL Journey Optimizer] kampanjer och resor. Med den här funktionen kan man skapa flera anpassade innehållsblock som kan användas av marknadsföringsanvändare för att snabbt sammanställa innehåll i en förbättrad designprocess. [Lär dig skapa och hantera fragment](../content-management/fragments.md).
 
 ➡️ [Lär dig hur du hanterar, redigerar och använder fragment i den här videon](../content-management/fragments.md#video-fragments)
 
@@ -32,7 +32,7 @@ Följ stegen nedan om du vill lägga till uttrycksfragment i ditt innehåll.
 >
 >Du kan lägga till upp till 30 fragment i en viss leverans. Fragment kan bara kapslas upp till 1 nivå.
 
-1. Öppna [personaliseringsredigerare](personalization-build-expressions.md) och väljer **[!UICONTROL Fragments]** till vänster.
+1. Öppna [anpassningsredigeraren](personalization-build-expressions.md) och välj knappen **[!UICONTROL Fragments]** i den vänstra rutan.
 
    I listan visas alla uttrycksfragment som har skapats eller sparats som fragment i den aktuella sandlådan. De sorteras efter skapandedatum: nyligen tillagda uttrycksfragment visas först i listan. [Läs mer](../content-management/fragments.md#create-expression-fragment)
 
@@ -50,23 +50,23 @@ Följ stegen nedan om du vill lägga till uttrycksfragment i ditt innehåll.
 
    >[!CAUTION]
    >
-   >Du kan lägga till valfritt **Utkast** eller **Live** till ert innehåll. Du kan dock inte aktivera din resa eller kampanj om ett fragment med statusen Utkast används i det. Vid en resa eller kampanjpublicering kommer utkastsfragment att visa ett fel och du måste godkänna dem för att kunna publicera.
+   >Du kan lägga till valfritt **utkast**- eller **Live**-fragment till ditt innehåll. Du kan dock inte aktivera din resa eller kampanj om ett fragment med statusen Utkast används i det. Vid en resa eller kampanjpublicering kommer utkastsfragment att visa ett fel och du måste godkänna dem för att kunna publicera.
 
-1. När fragment-ID:t har lagts till, om du öppnar motsvarande uttrycksfragment och [redigera den](../content-management/fragments.md#edit-fragments) från gränssnittet synkroniseras ändringarna. De sprids automatiskt till alla utkast- eller direktresor/kampanjer som innehåller detta fragment-ID.
+1. När fragment-ID har lagts till synkroniseras ändringarna om du öppnar motsvarande uttrycksfragment och [redigerar det](../content-management/fragments.md#edit-fragments) från gränssnittet. De sprids automatiskt till alla utkast- eller direktresor/kampanjer som innehåller detta fragment-ID.
 
-1. Klicka på **[!UICONTROL More actions]** -knapp intill ett fragment. På snabbmenyn som öppnas väljer du **[!UICONTROL View fragment]** om du vill ha mer information om det fragmentet. The **[!UICONTROL Fragment ID]** visas också och kan kopieras härifrån.
+1. Klicka på knappen **[!UICONTROL More actions]** bredvid ett fragment. Välj **[!UICONTROL View fragment]** på snabbmenyn som öppnas om du vill ha mer information om det fragmentet. **[!UICONTROL Fragment ID]** visas också och kan kopieras härifrån.
 
    ![](assets/expression-fragment-view.png)
 
-1. Du kan öppna uttrycksfragmentet i ett annat fönster för att redigera dess innehåll och egenskaper, antingen med **[!UICONTROL Open fragment]** på snabbmenyn eller på **[!UICONTROL Fragment info]** fönster. [Lär dig redigera ett fragment](../content-management/fragments.md#edit-fragments)
+1. Du kan öppna uttrycksfragmentet i ett annat fönster om du vill redigera dess innehåll och egenskaper, antingen med alternativet **[!UICONTROL Open fragment]** på snabbmenyn eller i rutan **[!UICONTROL Fragment info]**. [Lär dig hur du redigerar ett fragment](../content-management/fragments.md#edit-fragments)
 
    ![](assets/expression-fragment-open.png)
 
-1. Sedan kan ni anpassa och validera innehållet som vanligt med hjälp av alla personaliserings- och redigeringsfunktionerna i [personaliseringsredigerare](personalization-build-expressions.md).
+1. Du kan sedan anpassa och validera ditt innehåll som vanligt med hjälp av alla anpassnings- och redigeringsfunktioner i [personaliseringsredigeraren](personalization-build-expressions.md).
 
 >[!NOTE]
 >
->Om du skapar ett uttrycksfragment som innehåller flera radbrytningar och använder det i [SMS](../sms/create-sms.md#sms-content) eller [push](../push/design-push.md) så bevaras radbrytningarna. Se därför till att testa [SMS](../sms/send-sms.md) eller [push](../push/send-push.md) meddelande innan det skickas.
+>Om du skapar ett uttrycksfragment som innehåller flera radbrytningar och använder det i [SMS](../sms/create-sms.md#sms-content) - eller [push](../push/design-push.md) -innehåll, bevaras radbrytningarna. Testa därför ditt [SMS](../sms/send-sms.md) eller [push](../push/send-push.md)-meddelande innan du skickar det.
 
 ## Anpassa redigerbara fält {#customize-fields}
 
@@ -74,9 +74,9 @@ Om vissa delar av ett uttrycksfragment har gjorts redigerbara med hjälp av vari
 
 Följ de här stegen för att anpassa fälten:
 
-1. Infoga fragmentet i koden från **Fragment** -menyn.
+1. Infoga fragmentet i koden från menyn **Fragment** .
 
-1. Använd `<fieldId>="<value>"` koden i slutet av syntaxen för att åsidosätta variabelns standardvärde.
+1. Använd `<fieldId>="<value>"`-koden i slutet av syntaxen för att åsidosätta variabelns standardvärde.
 
    I exemplet nedan åsidosätter vi värdet för en variabel vars ID är &quot;sport&quot; med &quot;yoga&quot;-värdet. Då visas&quot;yoga&quot; i fragmentinnehållet överallt där variabeln&quot;sport&quot; refereras.
 
@@ -88,7 +88,7 @@ Ett exempel som visar hur du lägger till redigerbara fält i ett uttrycksfragme
 
 När du lägger till ett fragment-ID i personaliseringsredigeraren synkroniseras ändringarna som gjorts i det ursprungliga uttrycksfragmentet.
 
-Du kan även klistra in innehållet i ett uttrycksfragment i redigeraren. Välj **[!UICONTROL Paste fragment]** för att infoga innehållet.
+Du kan även klistra in innehållet i ett uttrycksfragment i redigeraren. Välj **[!UICONTROL Paste fragment]** på snabbmenyn för att infoga innehållet.
 
 ![](assets/expression-fragment-paste.png)
 

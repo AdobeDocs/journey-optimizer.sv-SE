@@ -11,8 +11,8 @@ keywords: kampanj, standard, integrering, capping, action
 exl-id: 2f0218c9-e1b1-44ba-be51-15824b9fc6d2
 source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 3%
+source-wordcount: '418'
+ht-degree: 0%
 
 ---
 
@@ -38,13 +38,13 @@ Campaign Standardens transaktionsmeddelande och tillhörande händelse måste pu
 
 Så här konfigurerar du den:
 
-1. Välj **[!UICONTROL Configurations]** på menyn Administration. I  **[!UICONTROL Actions]** avsnitt, klicka **[!UICONTROL Manage]**. Listan med åtgärder visas.
+1. Välj **[!UICONTROL Configurations]** i ADMINISTRATION-menyavsnittet. Klicka på **[!UICONTROL Manage]** i avsnittet **[!UICONTROL Actions]**. Listan med åtgärder visas.
 
-1. Välj det inbyggda **[!UICONTROL AdobeCampaignStandard]** åtgärd. Åtgärdskonfigurationsrutan öppnas till höger på skärmen.
+1. Välj den inbyggda **[!UICONTROL AdobeCampaignStandard]**-åtgärden. Åtgärdskonfigurationsrutan öppnas till höger på skärmen.
 
    ![](assets/actioncampaign.png)
 
-1. Kopiera din Adobe Campaign Standard-instans-URL och klistra in den **[!UICONTROL URL]** fält.
+1. Kopiera din Adobe Campaign Standard-instans-URL och klistra in den i fältet **[!UICONTROL URL]**.
 
 1. Klicka på **[!UICONTROL Test the instance URL]** för att testa instansens giltighet.
 
@@ -58,10 +58,10 @@ Så här konfigurerar du den:
    >
    >Den ORG som är associerad med den här Adobe Campaign Standard-instansen är samma som Journey Optimizer ORG.
 
-När du utformar din resa kommer tre åtgärder att vara tillgängliga i **[!UICONTROL Action]** kategori: **[!UICONTROL Email]**, **[!UICONTROL Push]**, **[!UICONTROL SMS]** (se [Använda Adobe Campaign-åtgärder](../building-journeys/using-adobe-campaign-standard.md)).
+När du utformar din resa är tre åtgärder tillgängliga i kategorin **[!UICONTROL Action]**: **[!UICONTROL Email]**, **[!UICONTROL Push]**, **[!UICONTROL SMS]** (se [Använda Adobe Campaign-åtgärder](../building-journeys/using-adobe-campaign-standard.md)).
 
 ![](assets/journey58.png)
 
-Du kan använda en **Reaktioner** händelse för att reagera på spårningsdata som rör ett Campaign Standard-meddelande som skickas inom samma resa. För push-meddelanden kan du reagera på klickade, skickade eller misslyckade meddelanden. För SMS-meddelanden kan du reagera på skickade eller misslyckade meddelanden. För e-postmeddelanden kan du reagera på klickade, skickade, öppnade eller misslyckade meddelanden. Se [Reaktionshändelser](../building-journeys/reaction-events.md).
+Du kan använda en **Reactions**-händelse för att reagera på spårningsdata som är kopplade till ett Campaign Standard-meddelande som skickas inom samma resa. För push-meddelanden kan du reagera på klickade, skickade eller misslyckade meddelanden. För SMS-meddelanden kan du reagera på skickade eller misslyckade meddelanden. För e-postmeddelanden kan du reagera på klickade, skickade, öppnade eller misslyckade meddelanden. Se [Reaktionshändelser](../building-journeys/reaction-events.md).
 
-Om du använder ett tredjepartssystem för att skicka meddelanden måste du lägga till och konfigurera en anpassad åtgärd. Se [Om anpassad åtgärdskonfiguration](../action/about-custom-action-configuration.md).
+Om du använder ett tredjepartssystem för att skicka meddelanden måste du lägga till och konfigurera en anpassad åtgärd. Se [Om konfiguration för anpassad åtgärd](../action/about-custom-action-configuration.md).

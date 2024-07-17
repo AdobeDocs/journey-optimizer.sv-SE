@@ -31,21 +31,21 @@ Observera att meddelanden i appen inte påverkas av användarens val att välja 
 
 Så här lägger du till ett meddelande i appen under en resa:
 
-1. Öppna din resa och dra och släpp en **[!UICONTROL In-app]** aktivitet från **[!UICONTROL Actions]** på paletten.
+1. Öppna din resa och dra och släpp en **[!UICONTROL In-app]**-aktivitet från **[!UICONTROL Actions]**-delen av paletten.
 
    När en profil når slutet av sin resa kommer alla meddelanden i appen som visas för dem automatiskt att upphöra att gälla. Av den anledningen läggs en Wait-aktivitet automatiskt till efter aktiviteten i appen för att säkerställa korrekt timing.
 
    ![](assets/in_app_journey_1.png)
 
-1. Ange en **[!UICONTROL Label]** och **[!UICONTROL Description]** för ditt meddelande.
+1. Ange **[!UICONTROL Label]** och **[!UICONTROL Description]** för meddelandet.
 
-1. Välj [Yta i appen](inapp-configuration.md) att använda.
+1. Välj den [yta i appen](inapp-configuration.md) som ska användas.
 
    ![](assets/in_app_journey_2.png)
 
-1. Nu kan du börja utforma ditt innehåll med **[!UICONTROL Edit content]** -knappen. [Läs mer](design-in-app.md)
+1. Nu kan du börja designa ditt innehåll med knappen **[!UICONTROL Edit content]**. [Läs mer](design-in-app.md)
 
-1. Klicka **[!UICONTROL Edit triggers]** för att välja händelser och villkor som ska utlösa meddelandet. Regelbyggare gör det möjligt för användare att ange villkor och värden som, när de möts, utlöser en uppsättning åtgärder, till exempel att skicka ett meddelande i appen.
+1. Klicka på **[!UICONTROL Edit triggers]** för att välja händelser och villkor som ska utlösa meddelandet. Regelbyggare gör det möjligt för användare att ange villkor och värden som, när de möts, utlöser en uppsättning åtgärder, till exempel att skicka ett meddelande i appen.
 
    ![](assets/in_app_journey_4.png)
 
@@ -56,9 +56,9 @@ Så här lägger du till ett meddelande i appen under en resa:
       | Paket | Utlösare | Definition |
       |---|---|---|
       | Skicka data till plattformen | Skickade data till plattformen | Utlöses när mobilappen utfärdar en edge experience-händelse för att skicka data till Adobe Experience Platform. Vanligtvis API-anropet [sendEvent](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) från AEP Edge-tillägget. |
-      | Core tracking | Spåra åtgärd | Utlöses när de äldre funktionerna i API:t för mobilkod finns [trackAction](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) anropas. |
-      | Core tracking | Spåra läge | Utlöses när de äldre funktionerna i API:t för mobilkod finns [trackState](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) anropas. |
-      | Core tracking | Samla in PII | Utlöses när de äldre funktionerna i API:t för mobilkod finns [collectPII](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#collectpii) anropas. |
+      | Core tracking | Spåra åtgärd | Utlöses när den äldre funktionaliteten som erbjuds i API:t [trackAction](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) för mobilkod anropas. |
+      | Core tracking | Spåra läge | Utlöses när den äldre funktionaliteten som erbjuds i API:t [trackState](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) för mobilkod anropas. |
+      | Core tracking | Samla in PII | Utlöses när den äldre funktionaliteten som erbjuds i API:t [collectPII](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#collectpii) för mobilkod anropas. |
       | Programmets livscykel | Programstart | Utlöses vid varje körning, inklusive krascher och installationer. Utlöses också vid ett återköp från bakgrunden när tidsgränsen för livscykelsessionen har överskridits. |
       | Programmets livscykel | Programinstallation | Utlöses vid första körningen efter installation eller ominstallation. |
       | Programmets livscykel | Programuppdatering | Utlöses vid första körningen efter en uppgradering eller när versionsnumret ändras. |
@@ -69,13 +69,13 @@ Så här lägger du till ett meddelande i appen under en resa:
 
 +++
 
-   1. Klicka **[!UICONTROL Add condition]** om du vill att utlösaren ska ta hänsyn till flera händelser eller villkor.
+   1. Klicka på **[!UICONTROL Add condition]** om du vill att utlösaren ska ta hänsyn till flera händelser eller villkor.
 
-   1. Välj **[!UICONTROL Or]** villkor om du vill lägga till fler **[!UICONTROL Triggers]** för att ytterligare utöka regeln.
+   1. Välj villkoret **[!UICONTROL Or]** om du vill lägga till fler **[!UICONTROL Triggers]** för att utöka regeln ytterligare.
 
       ![](assets/in_app_create_3.png)
 
-   1. Välj **[!UICONTROL And]** villkor om du vill lägga till **[!UICONTROL Traits]** och finjustera regeln bättre.
+   1. Välj villkoret **[!UICONTROL And]** om du vill lägga till **[!UICONTROL Traits]** och finjustera regeln bättre.
 
       +++Se tillgängliga fack.
 
@@ -103,49 +103,49 @@ Så här lägger du till ett meddelande i appen under en resa:
 
       ![](assets/in_app_create_8.png)
 
-   1. Klicka **[!UICONTROL Make group]** för att gruppera utlösare tillsammans.
+   1. Klicka på **[!UICONTROL Make group]** för att gruppera utlösare.
 
       ![](assets/in_app_journey_3.png)
 
    1. Välj hur ofta utlösaren ska visas när meddelandet i appen är aktivt:
 
-      * **[!UICONTROL Show every time]**: Visa alltid meddelandet när de händelser som valts i **[!UICONTROL Mobile app trigger]** inträffar.
-      * **[!UICONTROL Show once]**: Visa endast det här meddelandet första gången de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
-      * **[!UICONTROL Show until click through]**: Visa det här meddelandet när händelser har markerats i **[!UICONTROL Mobile app trigger]** rullgardinsmenyn inträffar tills en interaktionshändelse skickas av SDK med åtgärden&quot;klickad&quot;.
+      * **[!UICONTROL Show every time]**: Visa alltid meddelandet när de händelser som valts i listrutan **[!UICONTROL Mobile app trigger]** inträffar.
+      * **[!UICONTROL Show once]**: Visa endast det här meddelandet första gången som de händelser som är markerade i listrutan **[!UICONTROL Mobile app trigger]** inträffar.
+      * **[!UICONTROL Show until click through]**: Visa det här meddelandet när de händelser som är markerade i listrutan **[!UICONTROL Mobile app trigger]** inträffar tills en interaktionshändelse skickas av SDK med åtgärden &quot;klickad&quot;.
 
 1. Slutför vid behov kundresan genom att dra och släppa ytterligare åtgärder eller händelser. [Läs mer](../building-journeys/about-journey-activities.md)
 
 1. När ditt meddelande i appen är klart slutför du konfigurationen och publicerar din resa för att aktivera den.
 
-Mer information om hur du konfigurerar en resa finns i [den här sidan](../building-journeys/journey-gs.md).
+Mer information om hur du konfigurerar en resa finns på [den här sidan](../building-journeys/journey-gs.md).
 
->[!TAB Lägga till ett meddelande i appen till en kampanj]
+>[!TAB Lägg till ett meddelande i appen i en kampanj]
 
 Så här lägger du till ett meddelande i appen i en kampanj:
 
-1. Öppna **[!UICONTROL Campaigns]** menyn och klicka sedan på **[!UICONTROL Create campaign]**.
+1. Öppna menyn **[!UICONTROL Campaigns]** och klicka sedan på **[!UICONTROL Create campaign]**.
 
-1. I **[!UICONTROL Properties]** väljer du när kampanjkörningstypen har schemalagts eller API-utlösts. Läs mer om kampanjtyper i [den här sidan](../campaigns/create-campaign.md#campaigntype).
+1. I avsnittet **[!UICONTROL Properties]** väljer du när kampanjkörningstypen: Schemalagd eller API-utlöst. Läs mer om kampanjtyper på [den här sidan](../campaigns/create-campaign.md#campaigntype).
 
-1. I **[!UICONTROL Actions]** väljer du **[!UICONTROL In-app message]** och **[!UICONTROL App surface]** tidigare konfigurerat för ditt meddelande i appen. Klicka sedan på **[!UICONTROL Create]**.
+1. I avsnittet **[!UICONTROL Actions]** väljer du **[!UICONTROL In-app message]** och **[!UICONTROL App surface]** som tidigare konfigurerats för ditt meddelande i appen. Klicka sedan på **[!UICONTROL Create]**.
 
-   Läs mer om konfigurationen i appen i [den här sidan](inapp-configuration.md).
+   Läs mer om konfigurationen i appen på [den här sidan](inapp-configuration.md).
 
    ![](assets/in_app_create_1.png)
 
-1. Från **[!UICONTROL Properties]** anger du **[!UICONTROL Title]** och **[!UICONTROL Description]** description.
+1. I avsnittet **[!UICONTROL Properties]** anger du **[!UICONTROL Title]** och **[!UICONTROL Description]**-beskrivningen.
 
-1. Om du vill tilldela etiketter för anpassad eller viktig dataanvändning till meddelandet i appen väljer du **[!UICONTROL Manage access]**. [Läs mer](../administration/object-based-access.md).
+1. Välj **[!UICONTROL Manage access]** om du vill tilldela etiketter för anpassad eller viktig dataanvändning till meddelandet i appen. [Läs mer](../administration/object-based-access.md).
 
-1. Klicka på **[!UICONTROL Select audience]** för att definiera målgruppen i listan över tillgängliga Adobe Experience Platform-målgrupper. [Läs mer](../audience/about-audiences.md).
+1. Klicka på knappen **[!UICONTROL Select audience]** för att definiera målgruppen i listan över tillgängliga Adobe Experience Platform-målgrupper. [Läs mer](../audience/about-audiences.md).
 
    ![](assets/in_app_create_2.png)
 
-1. I **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera personer från den valda målgruppen. [Läs mer](../event/about-creating.md#select-the-namespace).
+1. I fältet **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera personer från den valda målgruppen. [Läs mer](../event/about-creating.md#select-the-namespace).
 
-1. Klicka **[!UICONTROL Create experiment]** för att börja konfigurera ert innehållsexperiment och skapa behandlingar för att mäta deras prestanda och identifiera det bästa alternativet för er målgrupp. [Läs mer](../content-management/content-experiment.md)
+1. Klicka på **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment och skapa behandlingar för att mäta deras prestanda och identifiera det bästa alternativet för målgruppen. [Läs mer](../content-management/content-experiment.md)
 
-1. Klicka **[!UICONTROL Edit triggers]** för att välja händelser och villkor som ska utlösa meddelandet. Regelbyggare gör det möjligt för användare att ange villkor och värden som, när de möts, utlöser en uppsättning åtgärder, till exempel att skicka ett meddelande i appen.
+1. Klicka på **[!UICONTROL Edit triggers]** för att välja händelser och villkor som ska utlösa meddelandet. Regelbyggare gör det möjligt för användare att ange villkor och värden som, när de möts, utlöser en uppsättning åtgärder, till exempel att skicka ett meddelande i appen.
 
    1. Klicka på händelselistrutan för att ändra utlösaren om det behövs.
 
@@ -154,9 +154,9 @@ Så här lägger du till ett meddelande i appen i en kampanj:
       | Paket | Utlösare | Definition |
       |---|---|---|
       | Skicka data till plattformen | Skickade data till plattformen | Utlöses när mobilappen utfärdar en edge experience-händelse för att skicka data till Adobe Experience Platform. Vanligtvis API-anropet [sendEvent](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) från AEP Edge-tillägget. |
-      | Core tracking | Spåra åtgärd | Utlöses när de äldre funktionerna i API:t för mobilkod finns [trackAction](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) anropas. |
-      | Core tracking | Spåra läge | Utlöses när de äldre funktionerna i API:t för mobilkod finns [trackState](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) anropas. |
-      | Core tracking | Samla in PII | Utlöses när de äldre funktionerna i API:t för mobilkod finns [collectPII](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#collectpii) anropas. |
+      | Core tracking | Spåra åtgärd | Utlöses när den äldre funktionaliteten som erbjuds i API:t [trackAction](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) för mobilkod anropas. |
+      | Core tracking | Spåra läge | Utlöses när den äldre funktionaliteten som erbjuds i API:t [trackState](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) för mobilkod anropas. |
+      | Core tracking | Samla in PII | Utlöses när den äldre funktionaliteten som erbjuds i API:t [collectPII](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#collectpii) för mobilkod anropas. |
       | Programmets livscykel | Programstart | Utlöses vid varje körning, inklusive krascher och installationer. Utlöses också vid ett återköp från bakgrunden när tidsgränsen för livscykelsessionen har överskridits. |
       | Programmets livscykel | Programinstallation | Utlöses vid första körningen efter installation eller ominstallation. |
       | Programmets livscykel | Programuppdatering | Utlöses vid första körningen efter en uppgradering eller när versionsnumret ändras. |
@@ -167,13 +167,13 @@ Så här lägger du till ett meddelande i appen i en kampanj:
 
 +++
 
-   1. Klicka **[!UICONTROL Add condition]** om du vill att utlösaren ska ta hänsyn till flera händelser eller villkor.
+   1. Klicka på **[!UICONTROL Add condition]** om du vill att utlösaren ska ta hänsyn till flera händelser eller villkor.
 
-   1. Välj **[!UICONTROL Or]** villkor om du vill lägga till fler **[!UICONTROL Triggers]** för att ytterligare utöka regeln.
+   1. Välj villkoret **[!UICONTROL Or]** om du vill lägga till fler **[!UICONTROL Triggers]** för att utöka regeln ytterligare.
 
       ![](assets/in_app_create_3.png)
 
-   1. Välj **[!UICONTROL And]** villkor om du vill lägga till **[!UICONTROL Traits]** och finjustera regeln bättre.
+   1. Välj villkoret **[!UICONTROL And]** om du vill lägga till **[!UICONTROL Traits]** och finjustera regeln bättre.
 
       +++Se tillgängliga fack.
 
@@ -201,22 +201,22 @@ Så här lägger du till ett meddelande i appen i en kampanj:
 
       ![](assets/in_app_create_8.png)
 
-   1. Klicka **[!UICONTROL Make group]** för att gruppera utlösare tillsammans.
+   1. Klicka på **[!UICONTROL Make group]** för att gruppera utlösare.
 
 1. Välj hur ofta utlösaren ska visas när meddelandet i appen är aktivt. Följande alternativ är tillgängliga:
 
-   * **[!UICONTROL Everytime]**: Visa alltid meddelandet när de händelser som valts i **[!UICONTROL Mobile app trigger]** inträffar.
-   * **[!UICONTROL Once]**: Visa endast det här meddelandet första gången de händelser som markerats i **[!UICONTROL Mobile app trigger]** inträffar.
-   * **[!UICONTROL Until click through]**: Visa det här meddelandet när händelser har markerats i **[!UICONTROL Mobile app trigger]** rullgardinsmenyn inträffar tills en interaktionshändelse skickas av SDK med åtgärden&quot;klickad&quot;.
+   * **[!UICONTROL Everytime]**: Visa alltid meddelandet när de händelser som valts i listrutan **[!UICONTROL Mobile app trigger]** inträffar.
+   * **[!UICONTROL Once]**: Visa endast det här meddelandet första gången som de händelser som är markerade i listrutan **[!UICONTROL Mobile app trigger]** inträffar.
+   * **[!UICONTROL Until click through]**: Visa det här meddelandet när de händelser som är markerade i listrutan **[!UICONTROL Mobile app trigger]** inträffar tills en interaktionshändelse skickas av SDK med åtgärden &quot;klickad&quot;.
    * **[!UICONTROL X number of times]**: Visa det här meddelandet X-tid.
 
-1. Välj vid behov **[!UICONTROL Day of the week]** eller **[!UICONTROL Time of day]** meddelandet visas i appen.
+1. Om det behövs väljer du vilken **[!UICONTROL Day of the week]** eller **[!UICONTROL Time of day]** meddelandet i appen ska visas.
 
-1. Kampanjer är utformade för att köras ett visst datum eller med en återkommande frekvens. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** av kampanjen i [det här avsnittet](../campaigns/create-campaign.md#schedule).
+1. Kampanjer är utformade för att köras ett visst datum eller med en återkommande frekvens. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** för din kampanj i [det här avsnittet](../campaigns/create-campaign.md#schedule).
 
    ![](assets/in-app-schedule.png)
 
-1. Nu kan du börja utforma ditt innehåll med **[!UICONTROL Edit content]** -knappen. [Läs mer](design-in-app.md)
+1. Nu kan du börja designa ditt innehåll med knappen **[!UICONTROL Edit content]**. [Läs mer](design-in-app.md)
 
    ![](assets/in_app_create_4.png)
 

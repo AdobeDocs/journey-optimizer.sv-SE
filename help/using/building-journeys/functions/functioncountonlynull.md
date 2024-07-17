@@ -10,7 +10,7 @@ exl-id: d06fc594-33dd-48ce-8c62-2f2892a867da
 source-git-commit: 2f47209ad2a5e5b5d26f01949f5e9ade63c2581f
 workflow-type: tm+mt
 source-wordcount: '56'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 8%
 
 Räknar antalet null-värden i listan.
 
-Observera att parametern `<listObject>` stöds inte i den här funktionen.
+Observera att parametern `<listObject>` inte stöds i den här funktionen.
 
 ## Kategori
 
