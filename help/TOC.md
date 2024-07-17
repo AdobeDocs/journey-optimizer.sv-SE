@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 2de94e8ce3fe77399c8dc1d515ae73d58cb8f43d
+source-git-commit: f1d6c293fb8b22085911ab45c18f944a63b9655b
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1877'
 ht-degree: 27%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 27%
    + [Bästa praxis](using/start/best-practices.md)
 + Resor {#orchestrate-journeys}
    + [Kom igång med resor](using/building-journeys/journey.md)
-   + Skapa en resa{#create-journey}
+   + Skapa en resa {#create-journey}
       + [Skapa den första resan](using/building-journeys/journey-gs.md)
       + [Ange egenskaper för din resa](using/building-journeys/journey-properties.md)
       + [Designa din resa](using/building-journeys/using-the-journey-designer.md)
@@ -160,7 +160,7 @@ ht-degree: 27%
             + [övre](using/building-journeys/functions/functionupper.md)
             + [uuid](using/building-journeys/functions/functionuuid.md)
    + Användningsfall {#journey-use-cases}
-      + Användningsexempel {#business-use-cases}
+      + Affärsanvändningsfall {#business-use-cases}
          + [Skicka flerkanalsmeddelanden](using/building-journeys/journeys-uc.md)
          + [Skicka ett meddelande med Campaign v7/v8](using/building-journeys/ajo-ac.md)
          + [Skicka ett meddelande till prenumeranter](using/building-journeys/message-to-subscribers-uc.md)
@@ -178,14 +178,14 @@ ht-degree: 27%
 + E-postkanal {#email}
    + [Kom igång med e-post](using/email/get-started-email.md)
    + [Skapa ett e-postmeddelande](using/email/create-email.md)
-   + Designa e-postinnehåll {#design-email}
+   + Designa ditt e-postinnehåll {#design-email}
       + [Kom igång med e-postdesign](using/email/get-started-email-design.md)
       + Börja skapa innehåll {#start-creating-content}
          + [Designa innehåll från grunden](using/email/content-from-scratch.md)
          + [Importera innehåll](using/email/existing-content.md)
          + [Koda eget innehåll](using/email/code-content.md)
          + [Använd e-postmallar](using/email/use-email-templates.md)
-      + Designa innehåll {#add-content}
+      + Designa ditt innehåll {#add-content}
          + [Använda innehållskomponenter](using/email/content-components.md)
          + [Utnyttja visuella fragment](using/email/use-visual-fragments.md)
          + [Lägga till länkar och spåra meddelanden](using/email/message-tracking.md)
@@ -203,19 +203,19 @@ ht-degree: 27%
       + [Kom igång med e-postkonfiguration](using/email/get-started-email-config.md)
       + [Konfigurera inställningar för e-postyta](using/email/email-settings.md)
       + [Anpassa inställningar för e-postyta](using/email/surface-personalization.md)
-+ Kanal i appen{#in-app}
++ Kanal i appen {#in-app}
    + [Kom igång med kanalen i appen](using/in-app/get-started-in-app.md)
    + [Krav för kanaler i appen](using/in-app/inapp-configuration.md)
    + [Skapa ett meddelande i appen för mobiler](using/in-app/create-in-app.md)
    + [Skapa ett meddelande i appen för webben](using/in-app/create-in-app-web.md)
    + [Designa ditt innehåll i appen](using/in-app/design-in-app.md)
    + [Kontrollera och skicka meddelanden i appen](using/in-app/send-in-app.md)
-+ Push-meddelandekanal{#push}
++ Push-meddelandekanal {#push}
    + [Kom igång med push-meddelanden](using/push/get-started-push.md)
    + [Skapa ett push-meddelande](using/push/create-push.md)
    + [Utforma ett push-meddelande](using/push/design-push.md)
    + [Kontrollera och skicka push-meddelanden](using/push/send-push.md)
-   + Konfigurera push-meddelanden{#push-config}
+   + Konfigurera push-meddelanden {#push-config}
       + [Push-meddelandeflöde](using/push/push-gs.md)
       + [Konfigurera kanal för push-meddelanden](using/push/push-configuration.md)
       + [Arbetsflöde för snabb start av mobil introduktion](using/push/mobile-onboarding-wf.md)
@@ -266,7 +266,7 @@ ht-degree: 27%
       + [Konfigurera underdomäner för landningssidor](using/landing-pages/lp-subdomains.md)
       + [Definiera förinställningar för landningssidor](using/landing-pages/lp-presets.md)
 + Innehållshantering {#content-management}
-   + Arbeta med AI-assistenten{#ai-assistant}
+   + Arbeta med AI-assistenten {#ai-assistant}
       + [Kom igång med AI-assistenten](using/content-management/gs-generative.md)
       + [E-postgenerering](using/content-management/generative-email.md)
       + [Push-generering](using/content-management/generative-push.md)
@@ -276,14 +276,14 @@ ht-degree: 27%
       + [Kom igång med flerspråkigt innehåll](using/content-management/multilingual-gs.md)
       + [Skapa flerspråkigt innehåll med manuell översättning](using/content-management/multilingual-manual.md)
       + [Skapa flerspråkigt innehåll med automatiserad översättning](using/content-management/multilingual-automated.md)
-   + Experimentera med material {#content-experiment}
+   + Arbeta med innehållsexperiment {#content-experiment}
       + [Kom igång med innehållsexperiment](using/content-management/get-started-experiment.md)
       + [Skapa ett innehållsexperiment](using/content-management/content-experiment.md)
       + [Konfigurera experimentrapporter](using/content-management/reporting-configuration.md)
       + Tekniska anmärkningar {#technotes}
          + [Förstå statistiska beräkningar](using/content-management/experiment-calculations.md)
          + [Förstå statistiska beräkningar i experimentrapporten](using/content-management/experiment-report-calculations.md)
-   + Assets/bilder {#assets-images}
+   + Assets/Bilder {#assets-images}
       + [Arbeta med Experience Manager Assets](using/content-management/assets.md)
       + [Arbeta med Adobe Stock](using/content-management/stock.md)
    + Personalisering {#personalization}
@@ -296,7 +296,7 @@ ht-degree: 27%
          + [Lägg till attribut i favoriter](using/personalization/personalization-favorites.md)
          + [Använd uttrycksfragment](using/personalization/use-expression-fragments.md)
          + [Personalization-validering](using/personalization/personalization-validation.md)
-      + Hjälpfunktioner{#functions}
+      + Hjälpfunktioner {#functions}
          + [Kom igång med hjälpfunktioner](using/personalization/functions/functions.md)
          + [Sammanställningsfunktioner](using/personalization/functions/aggregation.md)
          + [Aritmetiska funktioner](using/personalization/functions/arithmetic-functions.md)
@@ -308,9 +308,10 @@ ht-degree: 27%
          + [Matematiska funktioner](using/personalization/functions/math.md)
          + [Objektfunktioner](using/personalization/functions/objects.md)
          + [Strängfunktioner](using/personalization/functions/string.md)
-      + Användningsexempel för Personalization{#personalization-use-cases}
+      + Personalization-användningsfall{#personalization-use-cases}
          + [Meddelande om orderstatus](using/personalization/personalization-use-case.md)
          + [E-post om att kunden överger en kundvagn](using/personalization/personalization-use-case-helper-functions.md)
+         + [E-post om förskrivningar av hälsoplaner](using/personalization/perso-uc-plan-prescriptions.md)
    + Innehållsmallar {#content-templates}
       + [Kom igång med innehållsmallar](using/content-management/content-templates.md)
       + [Få åtkomst till och hantera mallar](using/content-management/access-content-templates.md)
@@ -394,8 +395,8 @@ ht-degree: 27%
    + [Översiktsrapport](using/reports/channel-report-cja.md)
    + [Rapport om landningssida](using/reports/lp-report-global-cja.md)
    + [Rapport över prenumerationslista](using/reports/subscription-report-global-cja.md)
-+ Beslut {#decisioning}
-   + Beslutsledning {#offer-decisioning}
++ Avgör {#decisioning}
+   + Beslutshantering {#offer-decisioning}
       + Kom igång med beslutshantering {#get-started-decision}
          + [Om beslutshantering](using/offers/get-started/starting-offer-decisioning.md)
          + [Användargränssnitt](using/offers/get-started/user-interface.md)
@@ -430,7 +431,7 @@ ht-degree: 27%
          + [Komma igång med datainsamling](using/offers/data-collection/data-collection.md)
          + [Skapa en datauppsättning för att samla in händelser](using/offers/data-collection/create-dataset.md)
          + [Konfigurera händelsehämtning](using/offers/data-collection/schema-requirement.md)
-      + Skapa rapporter om beslutshantering {#create-reports}
+      + Skapa beslutshanteringsrapporter {#create-reports}
          + [Arbeta med beslutsledningshändelser](using/offers/reports/get-started-events.md)
          + [Åtkomst till XDM-fält för händelser](using/offers/reports/xdm-fields.md)
       + Exportera din erbjudandekatalog {#export-catalog}
@@ -540,7 +541,7 @@ ht-degree: 27%
          + [Konfigurera artikelkatalogen](using/experience-decisioning/catalogs.md)
          + [Skapa beslutsobjekt](using/experience-decisioning/items.md)
          + [Hantera artikelsamlingar](using/experience-decisioning/collections.md)
-      + Konfigurera artikelval {#selection}
+      + Konfigurera objektmarkering {#selection}
          + [Skapa beslutsregler](using/experience-decisioning/rules.md)
          + [Skapa rangordningsmetoder](using/experience-decisioning/ranking.md)
          + [Utnyttja kontextdata](using/experience-decisioning/context-data.md)
@@ -550,7 +551,7 @@ ht-degree: 27%
 + Datahantering {#data-management}
    + [Kom igång med datahantering](using/data/gs-data.md)
    + [Arbeta med scheman](using/data/get-started-schemas.md)
-   + Journey Optimizer dataset {#datasets}
+   + Journey Optimizer-datauppsättningar {#datasets}
       + [Kom igång med datauppsättningar](using/data/get-started-datasets.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
@@ -566,7 +567,7 @@ ht-degree: 27%
       + [Lägg till en Google TXT-post](using/configuration/google-txt.md)
       + [Få åtkomst till och redigera PTR-poster](using/configuration/ptr-records.md)
       + [Skapa IP-pooler](using/configuration/ip-pools.md)
-   + Implementera en IP-värmerappsplan {#implement-ip-warmup-plan}
+   + Implementera en IP-värmare {#implement-ip-warmup-plan}
       + [Kom igång med planer för IP-värmare](using/configuration/ip-warmup-gs.md)
       + [Skapa IP-värmningskampanjer](using/configuration/ip-warmup-campaign.md)
       + [Skapa en IP-värdplan](using/configuration/ip-warmup-plan.md)
