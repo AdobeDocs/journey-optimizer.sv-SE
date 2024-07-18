@@ -7,9 +7,9 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 85412a85-edf0-4069-8bc7-b80371375f1f
-source-git-commit: 794ac45177e467be4bd5b8f7288e07c85e4d806a
+source-git-commit: 7dfedb1b66101204b4923ddeb7793c80887ebdc0
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '510'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Så här konfigurerar du din Sinch-leverantör för att skicka SMS-meddelanden o
 
    * **[!UICONTROL Double Opt-In Message]**: Ange det anpassade svar som skickas automatiskt som svar på bekräftelsen av dubbel anmälan.
 
-   * **[!UICONTROL Inbound Number]**: lägg till ditt unika inkommande nummer. På så sätt kan du använda samma API-autentiseringsuppgifter för olika sandlådor, var och en med ett eget inkommande nummer.
+   * **[!UICONTROL Inbound Number]**: lägg till ditt unika inkommande nummer eller din korta kod. På så sätt kan du använda samma API-autentiseringsuppgifter för olika sandlådor, var och en med ett eget inkommande nummer eller kort kod.
 
 1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av dina API-autentiseringsuppgifter.
 
