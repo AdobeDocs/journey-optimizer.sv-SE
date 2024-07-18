@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 topic: Content Management
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 4dc269b0671b99eaddeebf358ebe4e45f5c4c721
+source-git-commit: f0b08b9cb9c12f7920e5a26a565b34b4bec8c84a
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '446'
 ht-degree: 2%
 
 ---
@@ -128,7 +128,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 * (Tillgänglighet: 8 juli) Du kan nu använda den avancerade uttrycksredigeraren när du konfigurerar en händelse, så att du kan definiera mer komplexa uttryck eller använda funktioner i händelse-ID-villkoret. [Läs mer](../event/about-creating.md#adv-exp-editor)
 
-* Villkoret `event-id` fylls nu automatiskt i i testläge.
+<!--* The `event-id` condition is now automatically filled during test mode. -->
 
 **SMS-kanal**
 
