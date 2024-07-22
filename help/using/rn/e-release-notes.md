@@ -8,10 +8,10 @@ hide: true
 hidefromtoc: true
 topic: Content Management
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 1cbc5512fe23db22eca4fe1a2cb512a154b01844
+source-git-commit: 2387b9912b1c4c2272643a85de6f5dcc9477b2cd
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 2%
+source-wordcount: '321'
+ht-degree: 3%
 
 ---
 
@@ -81,27 +81,27 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </table>
 
 
-<table>
+<!--table>
 <thead>
 <tr>
-<th><strong>Förbättrade kanalkonfigurationer</strong><br/></th>
+<th><strong>Improved channel configurations</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>De nuvarande kanalens ytfunktioner har förbättrats för att alla kanaler ska fungera enhetligt. Du kan nu definiera, hantera och återanvända dessa konfigurationer för alla dina kanaler.</p>
+<p>The current channel surface capabilities have been enhanced for a consistent approach across all channels. You can now define, manage, and reuse these configurations for any of your channels.</p>
 <p><ul>
-<li>Kanalytorna har nu bytt namn till <strong>Kanalkonfigurationer</strong></li>
-<li>Från kanalkonfigurationslagret kan du nu skapa återanvändbara kanalkonfigurationer för alla kanaler, inklusive nu webben, meddelanden i appen eller kodbaserad upplevelse</li>
-<li>Åtkomstkontroll på objektnivå (OLAC) är nu tillgänglig för varje kanalkonfiguration, så att du kan bestämma vilka användare som får skapa eller använda specifika konfigurationer</li>
-<li>För vissa kanaler kan du skapa kanalkonfigurationer för flera plattformar. Ett exempel här är en konfiguration för meddelandekanal i appen som kan användas för en webbsida, en iOS-app och en Android-app.</li>
+<li>Channel surfaces are now renamed to <strong>Channel configurations</strong></li>
+<li>From the Channel configurations inventory you can now create reusable channel configurations for all channels, including now Web, In-app messaging, or Code-based experience</li>
+<li>Object level access control (OLAC) is now available for each channel configuration, allowing you to decide which of your users are allowed to create or use specific configurations</li>
+<li>For some channels, you can create channel configurations that target multiple platforms. An example here would be an In-app messaging channel configuration that can target a web page, an iOS app and an Android app.</li>
 </ul></p>
-<!--p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p-->
+<p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 
 <!--table>
@@ -144,4 +144,4 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Publiker**
 
-* Målgrupper och attribut från målgruppssammansättning och anpassad uppladdning (CSV-fil) kan nu användas med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
+* Målgrupper och attribut från målgruppssammansättning och anpassad uppladdning (CSV-fil) kan nu användas med tilläggen Sköld för hälso- och sjukvård och sköld för skydd och säkerhet.
