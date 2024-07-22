@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 topic: Content Management
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 9a00387d0f44fd989dd9019cef33e3223b1701de
+source-git-commit: c64d0dbc41089fa50f0fbc4829ba60818dd25a37
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '281'
 ht-degree: 3%
 
 ---
@@ -138,10 +138,10 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 * Uttrycksfragment är nu tillgängliga för kanalen i appen.
 
-**Skjut kanalen**
-
-* Nu kan du lägga till dina push-autentiseringsuppgifter för mobilprogram i Adobe Journey Optimizer kanalkonfigurationsinställningar. Du behöver inte längre skapa en appyta i Adobe Experience Platform Data Collection.
-
 **Publiker**
 
 * Målgrupper från anpassad uppladdning (CSV-fil) kan nu användas med skölden för skydd av privatlivet och säkerheten.
+<!--
+**Push channel**
+
+* You can now add your mobile application push credentials inside Adobe Journey Optimizer channel configuration settings. Creating an App surface in Adobe Experience Platform Data Collection is no longer required.-->
