@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, i appen
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: 2c4c9064b11bce44331b6604c91221ba9829eff7
 workflow-type: tm+mt
 source-wordcount: '1177'
 ht-degree: 0%
@@ -127,21 +127,30 @@ Den här informationen lagras med användarens profil och hänvisas till vid kö
 
 ### Vanliga frågor {#faq-send-time}
 
-Vad kan optimering av sändningstid göra? Hur hanteras nya profiler? Sprider den sändningen över ett 24-12-12-timmarsfönster?
++++ Vad kan optimering av sändningstid göra? Hur hanteras nya profiler? Sprider den sändningen över ett 24-12-12-timmarsfönster?
 
 Tidsoptimering försöker förutse den bästa tiden att interagera med kunderna och optimera öppnings-/klickfrekvensen för e-postmeddelanden. Poängen har formatet `3*7*24` attribut för varje profil. Attributen `7*24` beskriver rangordningen för den förväntade bästa tiden att skicka ut e-postmeddelanden till mottagaren och 3 är för att optimera öppningsfrekvensen för e-post, klickfrekvensen för e-post och push-öppningsfrekvensen.
 
-Var kan jag se den förväntade sändningstiden för varje profil?
++++
+
++++Var kan jag se den förväntade sändningstiden för varje profil?
 
 Du kan se det övergripande poängtalet i gränssnittet **Profiler**. För var och en av de tre uppsättningarna med 168 poäng går rangordningarna från -83 till 84. Ju högre rankning desto bättre tid valdes att interagera med mottagaren. Eftersom du kan definiera start och varaktighet för en resa kanske den bästa rangordningen (84) inte hamnar i det tidsfönstret. I det här fallet rekommenderar vi att du väljer en timme med det högsta rangvärdet.
 
-Vilken rapportering finns tillgänglig?
++++
+
+
++++Vilken rapportering finns tillgänglig?
 
 Kom åt din resa genom att klicka på knappen **Visa rapport** i det övre högra hörnet och välja fliken **Resa** till vänster. [Läs mer](../reports/journey-global-report.md)
 
-Hur påverkar data för optimering av sändningstid profilens detaljrikedom?
++++
+
++++Hur påverkar data för Send-Time Optimization profilens detaljrikedom?
 
 Sändningsoptimering lägger till poäng/attribut i varje profil, men ingen ny profil skapas.
+
++++
 
 ### Aktivera optimering av sändningstid{#activate-send-time-optimization}
 
