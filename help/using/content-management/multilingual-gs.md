@@ -10,10 +10,10 @@ level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: b57683b4-6dcc-4f6c-a8b2-4ba371d78d21
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: b5dbfbd6d1bb4f1451f1ccab7387af3c37d6d060
+source-git-commit: e2ebb540fe9380497b42d331d1ea259538d72f00
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 2%
+source-wordcount: '252'
+ht-degree: 1%
 
 ---
 
@@ -31,10 +31,19 @@ Med Journey Optimizer kan du skapa flerspråkigt innehåll på två olika sätt:
 
 * **Automatisk översättning**: Skicka innehåll till den önskade språkleverantören för automatisk översättning. [Läs mer](multilingual-automated.md)
 
-
 </br>
 
 ![](assets/translation_schema.png)
+
+## Förhandskrav {#prerequisites}
+
+Adobe Journey Optimizer är för närvarande integrerat med översättningsleverantörer som erbjuder översättningstjänster från tredje part (maskinöversättning eller mänsklig översättning) oberoende av Adobe Journey Optimizer.
+
+Innan du lägger till den valda översättningsprovidern måste du skapa ett konto hos den aktuella providern.
+
+Användningen av en översättningsleverantörs översättningstjänster regleras av ytterligare villkor från den aktuella leverantören.  Som tredjepartslösningar är översättningstjänster tillgängliga för Adobe Journey Optimizer-användare via integrering.  Adobe kontrollerar inte och ansvarar inte för tredjepartsprodukter.
+
+Om du har frågor eller vill ha hjälp med dina översättningar kontaktar du tillämplig översättningsleverantör.
 
 ## Instruktionsvideo {#video}
 
