@@ -5,8 +5,10 @@ title: Versionsinformation
 description: Journey Optimizer tidiga versionsinformation
 feature: Release Notes
 topic: Content Management
+hide: true
+hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: ad4599874cb04b58d26a93197485818f4db1ecc4
+source-git-commit: 18d74badf3f5ea98f613d6b31303aa3108c979a5
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 3%
@@ -59,7 +61,6 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </tr>
 </tbody>
 </table>
-
 
 <table>
 <thead>
