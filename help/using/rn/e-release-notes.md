@@ -6,9 +6,9 @@ description: Journey Optimizer tidiga versionsinformation
 feature: Release Notes
 topic: Content Management
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 469fb402ef44ea363a8ca55e3bd4299845e0b95d
+source-git-commit: f24f4526d4b324df8da56013f0e41c11e1268ca8
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '305'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <tbody>
 <tr>
 <td>
-<p>Federated Audience Composition är nu tillgängligt i Adobe Journey Optimizer. Det gör det möjligt för företag att sammanställa data för bättre användning i olika användningsfall. Med detta nya tillvägagångssätt, som Adobe Real-time Customer Data Platform- och/eller Adobe Journey Optimizer-användare, kan ni federera datauppsättningar direkt från ert befintliga datalager för att berika Adobe Experience Platform målgrupper och attribut i ett och samma system.</p>
+<p>Federated Audience Composition är nu tillgängligt i Adobe Journey Optimizer. Det gör det möjligt för företag att sammanställa data för bättre användning i olika användningsfall. Med detta nya tillvägagångssätt, som Adobe Real-time Customer Data Platform- och/eller Adobe Journey Optimizer-användare, kan ni federera datauppsättningar direkt från ert befintliga datalager för att skapa och berika Adobe Experience Platform målgrupper och attribut i ett och samma system.</p>
 <!--p>For more information, refer to the <a href="https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home"  target="_blank">detailed documentation</a>.</p-->
 </td>
 </tr>
