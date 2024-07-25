@@ -6,7 +6,7 @@ description: Journey Optimizer tidiga versionsinformation
 feature: Release Notes
 topic: Content Management
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: f24f4526d4b324df8da56013f0e41c11e1268ca8
+source-git-commit: 5ccf9e08a24f840de7adbf04dc545904eaa32b8c
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 2%
@@ -156,3 +156,4 @@ Den här versionen innehåller de förbättringar som anges nedan.
 **Push channel**
 
 * You can now add your mobile application push credentials inside Adobe Journey Optimizer channel configuration settings. Creating an App surface in Adobe Experience Platform Data Collection is no longer required.-->
+

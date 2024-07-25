@@ -6,7 +6,7 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 55666c0fc3e4efb3785de96b96e58ba44016f33d
+source-git-commit: 5ccf9e08a24f840de7adbf04dc545904eaa32b8c
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 4%
@@ -227,3 +227,4 @@ Läs mer i dokumentationen för [innehållsfragment](../content-management/fragm
 #### Direktpostkanal
 
 * Direktreklamkanalen är nu tillgänglig för alla kunder. [Läs mer](../direct-mail/get-started-direct-mail.md)
+
