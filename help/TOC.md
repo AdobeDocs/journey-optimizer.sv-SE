@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 8b92f0c2bc5dd44e9059154e4a9b40872ad802f8
+source-git-commit: af03ad62c2c7b29d695670f083e0dfb6d0c71b93
 workflow-type: tm+mt
-source-wordcount: '1883'
+source-wordcount: '1888'
 ht-degree: 27%
 
 ---
@@ -230,6 +230,7 @@ ht-degree: 27%
       + [Konfigurera Sinch-provider](using/sms/sms-configuration-sinch.md)
       + [Konfigurera Infobip-provider](using/sms/sms-configuration-infobip.md)
       + [Konfigurera Twilio-provider](using/sms/sms-configuration-twilio.md)
+      + [Konfigurera en anpassad leverantör (Beta)](using/sms/sms-configuration-custom.md)
       + [Skapa en SMS-yta](using/sms/sms-configuration-surface.md)
 + Direktutskick {#direct-mail}
    + [Kom igång med direktreklam](using/direct-mail/get-started-direct-mail.md)
