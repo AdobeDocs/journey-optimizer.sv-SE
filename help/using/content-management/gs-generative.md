@@ -11,7 +11,7 @@ badge: label="Beta" type="Informative"
 hide: true
 hidefromtoc: true
 exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
-source-git-commit: 267d1850cbe30b1078f3b5b5bd228364bb63edd6
+source-git-commit: 930070843c2c1ce022beb5dc6e8a61c8d4f70365
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 0%
@@ -28,8 +28,8 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="ajo_ai_generation_context"
->title="Definiera kontext med AI Assistant"
->abstract="Om du vill använda det markerade innehållet som indata för innehållsgenerering aktiverar du alternativet **Använd ursprungligt innehåll**. Ni kan också överföra ert varumärkesmaterial för att använda det som en källa. Om du inte använder det valda innehållet är det obligatoriskt att överföra och välja varumärkesresurser."
+>title="Ladda upp varumärkesresurs"
+>abstract="På menyn Överför varumärkesresurser kan du lägga till alla varumärkesresurser som innehåller innehåll som kan ge ytterligare kontext för AI-assistenten eller välja en tidigare överförd resurs. Med det här alternativet får AI-assistenten tillgång till allt material som behövs för att förbättra funktionaliteten och relevansen."
 
 
 >[!CONTEXTUALHELP]
