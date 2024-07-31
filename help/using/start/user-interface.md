@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 0ccc6453594aaf501f15e5342331b1649346bfa3
+source-git-commit: 452aecc02f265b8bcbe89f221bd7b1a50ffa0976
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 5%
+source-wordcount: '1407'
+ht-degree: 4%
 
 ---
 
@@ -290,3 +290,15 @@ Så här byter du språk:
 >id="ajo_mobile_web_setup_push_android_studio"
 >title="Starta programmet från Android Studio"
 >abstract="TBC"
+
+<!-- priority scores-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_campaign_priority"
+>title="Prioritet"
+>abstract="Tilldela kampanjens prioritetspoäng, från 0 till 100. Ett högre tal anger en högre prioritet. När två kampanjer använder samma yta väljer Journey Optimizer den kampanj som har högst prioritet. Om kampanjerna har samma poäng väljs den senaste kampanjen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_priority"
+>title="Prioritet"
+>abstract="&quot;Tilldela resepoäng från 0 till 100. Ett högre tal anger en högre prioritet. När två resor använder samma yta väljer Journey Optimizer den resa som har högst prioritet. Om resorna har samma poäng väljs den resa som senast ändrades."
