@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: f1d6c293fb8b22085911ab45c18f944a63b9655b
+source-git-commit: 0d93e2a3a5707c6229894459348378a0ae538db1
 workflow-type: tm+mt
-source-wordcount: '5403'
+source-wordcount: '5443'
 ht-degree: 13%
 
 ---
@@ -19,8 +19,13 @@ ht-degree: 13%
 
 På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimizer]-dokumentationen.
 
+## Augusti 2024 {#aug-2024}
+
+* Prestandaskyddsutkast för Beslutshantering har uppdaterats för att omnämna leveranshastigheter med eller utan Edge Segmentation. [Läs mer](../start/guardrails.md#decision-management)
+
 ## Juli 2024 {#july-2024}
 
+* Alla nya funktioner och förbättringar som kommer med [!DNL Journey Optimizer] juliversionen 24 har beskrivits i dokumentationen. [Läs mer](release-notes.md)
 * Ett exempel på hur man personaliserar ett e-postmeddelande med information om hälsoplaner och recept har lagts till. [Läs mer](../personalization/perso-uc-plan-prescriptions.md)
 
 ## Juni 2024 {#june-2024}
