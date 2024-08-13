@@ -8,13 +8,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 keywords: IP, pooler, leveransbarhet
-hide: true
-hidefromtoc: true
-badge: label="Beta"
 exl-id: a9995ca1-d7eb-4f8d-a9d9-fe56198ac325
-source-git-commit: c400104c86e1a9a2de819db7743b3f77153ad90b
+source-git-commit: bdd3b951e44adaf3ff362b8af69f5ab74d13f484
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '411'
 ht-degree: 2%
 
 ---
@@ -26,17 +23,6 @@ ht-degree: 2%
 >title="Aktivera alternativet för IP-värmningsplan"
 >abstract="När du väljer det här alternativet kan kampanjen användas i en IP-uppvärmningsplan. Kampanjschemat styrs sedan av IP-värmeringsplanen som det är kopplat till."
 
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här handboken:
-
-* [Kom igång med planer för IP-värmare](ip-warmup-gs.md)
-* **[Skapa IP-värmeringskampanjer](ip-warmup-campaign.md)**
-* [Skapa en IP-värmeringsplan](ip-warmup-plan.md)
-* [Kör IP-värmerappen](ip-warmup-execution.md)
-
->[!ENDSHADEBOX]
-
 Innan du skapar IP-värmeringsplanen i [!DNL Journey Optimizer] måste du först skapa en eller flera kampanjer som är särskilt utformade för att användas i en IP-värmeringsplan<!--through a dedicated option-->.
 
 Följ stegen nedan om du vill skapa en IP-värmare.
@@ -45,9 +31,9 @@ Följ stegen nedan om du vill skapa en IP-värmare.
 
    >[!NOTE]
    >
-   >Lär dig hur du väljer vilken domän och vilka IP-adresser som ska användas i en e-postyta i [det här avsnittet](../email/email-settings.md#subdomains-and-ip-pools).
+   >* Lär dig hur du väljer vilken domän och vilka IP-adresser som ska användas i en e-postyta i [det här avsnittet](../email/email-settings.md#subdomains-and-ip-pools).
    >
-   >Arbeta med din leveranskonsult för att identifiera den domän och de IP-adresser som ska användas för din IP-warmup-plan.<!--TBC-->
+   >* Arbeta med din leveranskonsult för att identifiera den domän och de IP-adresser som ska användas för din IP-warmup-plan.<!--TBC-->
 
 1. Skapa en [kampanj](../campaigns/create-campaign.md) för den schemalagda marknadsföringen och välj åtgärden [E-post](../email/create-email.md#create-email-journey-campaign).
 
@@ -71,17 +57,13 @@ Följ stegen nedan om du vill skapa en IP-värmare.
 
    Observera att ni måste välja en regelbaserad målgrupp för er IP-värmare. [Läs mer](../audience/creating-a-segment-definition.md)
 
-   >[!NOTE]
-   >
-   >Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../campaigns/get-started-with-campaigns.md).
+   Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../campaigns/get-started-with-campaigns.md).
 
 1. [Aktivera](../campaigns/review-activate-campaign.md) kampanjen. Dess status ändras till **[!UICONTROL Live]**.
 
    Observera att affärsregler inte ska användas för IP-värmerapport. Om dessa regler tillämpas kan det bli svårt att nå det önskade antalet målgruppsprofiler för kampanjer.
 
-   >[!NOTE]
-   >
-   >Knappen **[!UICONTROL Delete]** är tillgänglig tills den är associerad med en IP-värmeringsplan för en aktiv kampanj med en IP-värmeringsplan aktiverad. När kampanjen väl har använts i en plan kan den inte längre tas bort.
+   Knappen **[!UICONTROL Delete]** är tillgänglig tills den är associerad med en IP-värmeringsplan för en aktiv kampanj med en IP-värmeringsplan aktiverad. När kampanjen väl har använts i en plan kan den inte längre tas bort.
 
 1. Kampanjen visas i listan **[!UICONTROL Campaigns]**. Om du enkelt vill hämta alla IP-uppvärmningskampanjer som skapats i den aktuella sandlådan kan du filtrera efter kampanjalternativet **[!UICONTROL IP warmup]**.
 

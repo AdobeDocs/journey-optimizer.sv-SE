@@ -8,29 +8,15 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: IP, grupp, underdomäner, leveransbarhet
-hide: true
-hidefromtoc: true
-badge: label="Beta"
 exl-id: 752ffd7f-09c2-4aa3-a067-2dbe0634709c
-source-git-commit: cd95614329e6efdc7ac4b6e0a5c683757a14b379
+source-git-commit: bdd3b951e44adaf3ff362b8af69f5ab74d13f484
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2434'
 ht-degree: 0%
 
 ---
 
 # Kör IP-värmerappen {#ip-warmup-running}
-
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här handboken:
-
-* [Kom igång med planer för IP-värmare](ip-warmup-gs.md)
-* [Skapa IP-värmningskampanjer](ip-warmup-campaign.md)
-* [Skapa en IP-värmeringsplan](ip-warmup-plan.md)
-* **[Kör IP-värmningsplanen](ip-warmup-execution.md)**
-
->[!ENDSHADEBOX]
 
 När du har [skapat en IP-uppvärmningsplan](ip-warmup-plan.md) och överfört filen som har förberetts med din leveranskonsult, kan du definiera faserna och körningarna i din plan.
 

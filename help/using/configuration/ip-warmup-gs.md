@@ -8,45 +8,29 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: IP, leverans
-hide: true
-hidefromtoc: true
-badge: label="Beta"
 exl-id: 393f051d-b86d-4b4f-b564-7a9ae3a5d4b8
-source-git-commit: cd95614329e6efdc7ac4b6e0a5c683757a14b379
+source-git-commit: 34c1180e3ba5b6b39287e70651c45351fa71e6b1
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '239'
 ht-degree: 2%
 
 ---
 
 # Kom igång med planer för IP-värmare {#ip-warmup-gs}
 
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här handboken:
-
-* **[Kom igång med IP-värmning](ip-warmup-gs.md)**
-* [Skapa IP-värmningskampanjer](ip-warmup-campaign.md)
-* [Skapa en IP-värmeringsplan](ip-warmup-plan.md)
-* [Kör IP-värmerappen](ip-warmup-execution.md)
-
->[!ENDSHADEBOX]
-
-Med [!DNL Journey Optimizer] kan du enkelt utföra arbetsflöden för IP-uppvärmning direkt från användargränssnittet på ett standardiserat och effektivt sätt som följer bästa praxis för optimal leverans.
-
-➡️ [Lär dig hur du skapar och kör en IP-uppvärmningsplan i den här videon](#video)
-
->[!CAUTION]
->
->Den här funktionen gäller endast för e-postkanalen.
-
-När e-postmeddelanden skickas via en ny plattform, är Internetleverantörer (ISP) misstänkta för IP-adresser som inte känns igen. Om stora mängder e-postmeddelanden plötsligt skickas markerar internetleverantörerna dem ofta som skräppost.
+Med [!DNL Journey Optimizer] kan du enkelt utföra arbetsflöden för IP-uppvärmning direkt från användargränssnittet på ett standardiserat och effektivt sätt som följer bästa praxis för optimal leverans. När e-postmeddelanden skickas via en ny plattform, är Internetleverantörer (ISP) misstänkta för IP-adresser som inte känns igen. Om stora mängder e-postmeddelanden plötsligt skickas markerar internetleverantörerna dem ofta som skräppost.
 
 För att undvika att markeras som skräppost kan du öka volymen som skickas stegvis med funktionen för IP-värmerappning. Med det här nya alternativet på menyn **[!UICONTROL Administration]** kan du göra det enklare på ett konsoliderat sätt i stället för att skapa komplexa dagliga resor.
 
->[!NOTE]
+<!--➡️ [Learn how to create and execute an IP warmup plan in this video](#video)-->
+
+>[!AVAILABILITY]
 >
->Läs mer om hur du kan förbättra ditt e-postanseende med IP-uppvärmning i [Guide för bästa praxis för slutleverans](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html).
+>Den här funktionen kan bara aktiveras i sandlådor av produktionstyp.
+>
+>Det är inte tillgängligt för organisationer som har köpt tillägget **Hälsovårdssköld** eller **sekretess och säkerhetssköld** för Adobe.
+
+
 
 <!--
 Benefits
@@ -68,8 +52,15 @@ De viktigaste stegen för att implementera en plan för IP-uppvärmning är föl
 
 1. Välj en kampanj för varje fas i planen och aktivera motsvarande körningar. [Läs mer](ip-warmup-execution.md)
 
-## Instruktionsvideo {#video}
+<!--Old UI
+## How-to video {#video}
 
-Lär dig hur du skapar och kör en IP-värmeringsplan.
+Learn how to create and execute an IP warmup plan.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425965/?quality=12&learn=on)
+-->
+
+
+>[!NOTE]
+>
+>Läs mer om hur du kan förbättra ditt e-postanseende med IP-uppvärmning i [Guiden ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html) Leveranssätt med bästa praxis.

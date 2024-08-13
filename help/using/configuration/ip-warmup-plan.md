@@ -8,29 +8,15 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: IP, grupp, underdomäner, leveransbarhet
-hide: true
-hidefromtoc: true
-badge: label="Beta"
 exl-id: c2434086-2ed4-4cd0-aecd-2eea8f0a55f6
-source-git-commit: cd95614329e6efdc7ac4b6e0a5c683757a14b379
+source-git-commit: bdd3b951e44adaf3ff362b8af69f5ab74d13f484
 workflow-type: tm+mt
-source-wordcount: '1584'
+source-wordcount: '1581'
 ht-degree: 0%
 
 ---
 
 # Skapa en IP-värmeringsplan {#ip-warmup}
-
->[!BEGINSHADEBOX]
-
-Vad du hittar i den här handboken:
-
-* [Kom igång med planer för IP-värmare](ip-warmup-gs.md)
-* [Skapa IP-värmningskampanjer](ip-warmup-campaign.md)
-* **[Skapa en IP-värmeringsplan](ip-warmup-plan.md)**
-* [Kör IP-värmerappen](ip-warmup-execution.md)
-
->[!ENDSHADEBOX]
 
 När du har skapat en eller flera [IP-värmeringskampanjer](ip-warmup-campaign.md) med en dedikerad yta och motsvarande alternativ aktiverat, kan du börja skapa din IP-värmerplan.
 
@@ -112,11 +98,12 @@ Nedan visas ett exempel på en fil som innehåller en IP-värmerapport.
 
 * Den här planerade åtgärden utförs genom sex **faser**, där var och en innehåller minst en körning.
 
-* Du kan ha upp till 6 kolumner (5 kolumner för domängrupper och en för kolumnen **Övriga**). I det här exemplet är planen uppdelad i sex kolumner:
+* Du kan ha upp till sex kolumner (fyra kolumner för domängrupper, en för kolumnen **Övriga** och en för kolumnen **Förlovningsdagar**). I det här exemplet är planen uppdelad i sex kolumner:
 
-   * Fyra av dem motsvarar **färdiga domängrupper** som du kan använda i din plan (Gmail, Microsoft, Yahoo och Orange).
+   * Tre av dessa motsvarar **färdiga domängrupper** som du kan använda i din plan (Gmail, Microsoft och Orange).
    * Den ena motsvarar en anpassad domängrupp (som du måste lägga till på fliken [Anpassad domängrupp](#custom-domain-group-tab)).
-   * Den sjätte kolumnen, **Övrigt**, innehåller alla återstående adresser från andra domäner som inte omfattas uttryckligen i planen. Den här kolumnen är valfri: om den utelämnas kommer e-post endast att skickas till de angivna domänerna.
+   * Den femte kolumnen, **Övrigt**, innehåller alla återstående adresser från andra domäner som inte omfattas uttryckligen i planen. Den här kolumnen är valfri: om den utelämnas kommer e-post endast att skickas till de angivna domänerna.
+   * I den sista kolumnen, **Förlovningsdagar**, kan du ange hur många dagar som förlovningen ska spåras eller utvärderas.
 
 Tanken är att stegvis öka antalet måladresser i varje körning och samtidigt minska antalet körningar för varje fas.
 

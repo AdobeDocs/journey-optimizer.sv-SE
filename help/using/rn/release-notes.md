@@ -6,10 +6,10 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: b2459757d1f1964c7d0b59de814bed29b0a394bb
+source-git-commit: bdd3b951e44adaf3ff362b8af69f5ab74d13f484
 workflow-type: tm+mt
-source-wordcount: '1244'
-ht-degree: 5%
+source-wordcount: '1316'
+ht-degree: 6%
 
 ---
 
@@ -26,29 +26,34 @@ ht-degree: 5%
 
 ![Nyhetsbrev](../assets/do-not-localize/nl-icon.png) Registrera dig för [Adobe Journey Optimizer kvartalsnyhetsbrev](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} idag och få de senaste produktuppdateringarna, spännande historier, användningsexempel, tips och mycket mer levererade direkt till din inkorg varje kvartal.
 
-## Versionsinformation juli 2024 {#27-4-2024}
+## Augustiuppdateringar {#24-8-2024}
+
+Följande ändringar har släppts i augusti:
+
+<table>
+<thead>
+<tr>
+<th><strong>Arbetsflöde för IP-förstärkning</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Tillgänglighetsdatum: 13 aug</p>
+<p>Om du skickar e-post till en helt ny IP-adress kan du nu enkelt utföra arbetsflöden för IP-värmare direkt från användargränssnittet. Adobe Journey Optimizer erbjuder ett standardiserat och effektivt sätt att värma upp era IP-adresser som följer de bästa metoderna för optimal leverans.</p>
+<p>Mer information finns i den <a href="../configuration/ip-warmup-gs.md">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## Versionsinformation juli 2024 {#24-7-2024}
 
 **Releasedatum**: 30-31 juli 2024
 
 ### Nya funktioner {#27-4-features}
 
 Den här versionen innehåller de nya funktionerna som beskrivs nedan.
-
-<!--table>
-<thead>
-<tr>
-<th><strong>IP Warmup Workflow</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>If you are sending email on a brand new IP address, you can now easily perform IP warmup workflows directly from the user interface. Adobe Journey Optimizer offers a standardized and efficient way to warm up your IP adresses that follows the best practices for optimal deliverability.</p>
-<p>For more information, refer to the <a href="../configuration/ip-warmup-gs.md">detailed documentation</a>.</p>
-</td>
-</tr>
-</tbody>
-</table-->
 
 <table>
 <thead>
