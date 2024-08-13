@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: dcf1edb654639d41472d1e1ca263020df9fb63ec
+source-git-commit: 202e4e9bf99bc8d4423153431a7e86c9ac4be903
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2074'
 ht-degree: 0%
 
 ---
@@ -165,7 +165,8 @@ Leveransflödet motsvarar antalet beslutssvar som kan levereras av beslutsstyrni
 | API | Beslut per sekund |
 |---------|----------|
 | API-begäranden för beslut | 500 per sekund |
-| API-begäranden för Edge-beslut | 1 500 per sekund |
+| Edge Decisioning API requests with Edge Segmentation | 1 500 per sekund |
+| Edge Decisioning API-begäranden utan Edge Segmentering | 5 000 per sekund |
 
 ### Begränsningar {#offers-limitations}
 
