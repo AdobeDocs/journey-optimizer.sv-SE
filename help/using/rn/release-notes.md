@@ -6,7 +6,7 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: bdd3b951e44adaf3ff362b8af69f5ab74d13f484
+source-git-commit: 2a4d4511cd3ba2986b8356edd734f85f84037e02
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 6%
@@ -96,9 +96,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 * (Tillgänglighetsdatum: 8 juli) **Avancerad uttrycksredigerare i konfiguration av resthändelser** - Du kan nu utnyttja den avancerade uttrycksredigeraren när du konfigurerar en händelse, så att du kan definiera mer komplexa uttryck eller använda funktioner i händelse-ID-villkoret. [Läs mer](../event/about-creating.md#adv-exp-editor)
 
-<!--**Audiences**
 
-* The use of audiences from custom upload (CSV file) is now available for use with Privacy and Security Shield.-->
 
 ## Versionsinformation juni 2024 {#24-6-2024}
 

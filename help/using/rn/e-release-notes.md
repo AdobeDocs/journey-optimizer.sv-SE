@@ -8,10 +8,10 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 9fdaff7a4364bb7ecfeec27446ed8f4b4ce34488
+source-git-commit: 2a4d4511cd3ba2986b8356edd734f85f84037e02
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 5%
+source-wordcount: '571'
+ht-degree: 3%
 
 ---
 
@@ -32,13 +32,45 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Marketo Engage, anpassad åtgärd</strong><br/></th>
+<th><strong>Anpassad åtgärd för Marketo Engage</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
 <p>Nu kan ni integrera Adobe Journey Optimizer med Adobe Marketo Engage för att skapa era B2B-användningsfall. Från en resa kan ni med en ny anpassad åtgärd importera data till Marketo.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Inställningar för guidad kanal</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med Guided Channel Setup kan ni automatisera stegen för konfiguration av mobilkanaler i en enhetlig upplevelse och komma igång snabbare med Journey Optimizer. Denna installation underlättar snabb konfigurering av marknadsföringskanaler och säkerställer att alla nödvändiga resurser finns tillgängliga i Experience Platform, Journey Optimizer och Data Collection. På så sätt kan marknadsföringsteamet omedelbart börja med att skapa kampanjer och resor.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Innehållskort</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Innehållskortet är en ny funktion för digitala meddelanden i Adobe Journey Optimizer som levererar personaliserat och engagerande innehåll direkt inifrån mobilappar och webbplatser. Till skillnad från traditionella push-meddelanden integreras Content Cards smidigt i användargränssnittet med permanenta, icke-påträngande uppdateringar som förbättrar användarinteraktionen och upplevelsen.</p>
+<p>Med den här funktionen kan marknadsförarna presentera relevant, multimediematerial för användarna, vilket ökar engagemanget och säkerställer att viktiga meddelanden syns utan att störa användarresan.</p>
 </td>
 </tr>
 </tbody>
@@ -61,6 +93,23 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <li>För vissa kanaler kan du skapa kanalkonfigurationer för flera plattformar. Ett exempel här är en konfiguration för meddelandekanal i appen som kan användas för en webbsida, en iOS-app och en Android-app.</li>
 </ul></p>
 <p>Mer information finns i den <a href="../configuration/ip-warmup-gs.md">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Variabler i innehållsfragment</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Fragment kan nu använda indatavariabler, både i <a href="../personalization/use-expression-fragments.md">uttrycksfragment</a> och <a href="../email/use-visual-fragments.md">visuella fragment</a>. Ni kan använda dessa variabler för att personalisera ert meddelandeinnehåll och era parametrar i era kampanjer och resor.</p>
+</p>
 </td>
 </tr>
 </tbody>
@@ -90,10 +139,13 @@ Den här versionen innehåller de förbättringar som anges nedan.
 **Resor**
 
 * I aktiviteten **Condition** är tidsvillkoret som standard inställt per timme, från 00:00 till 12:00. [Läs mer](../building-journeys/condition-activity.md#time_condition)
+* När du skapar dina resor visas nu varningar i en nedrullningsbar lista som är anpassad efter kampanjvarningar och ger en enhetlig användarupplevelse. [Läs mer](../building-journeys/troubleshooting.md#checking-for-errors-before-testing)
+* Zoomalternativen i reseverktygsfältet har förbättrats: zoomningsprocenten är nu synlig och du kan nu enkelt återställa zoomvärdet till 100 %.
 
 **Publiker**
 
 * Målgrupper från anpassad uppladdning (CSV-fil) kan nu användas med skölden för skydd av privatlivet och säkerheten.
+* När ni riktar in er på en anpassad publik för överföring (CSV-fil) kan ni nu använda attribut från filen i era kampanjer och resor. Dessa attribut är tillgängliga i personaliseringsredigeraren, för att personalisera dina meddelanden och den avancerade uttrycksredigeraren.
 
 <!--
 **Push channel**
