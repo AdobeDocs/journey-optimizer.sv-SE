@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: kvalificering, evenemang, målgrupp, resa, plattform
 exl-id: 7e70b8a9-7fac-4450-ad9c-597fe0496df9
-source-git-commit: e45ec5f0e1bbcc73892f9cde5923627886f44ef6
+source-git-commit: 817f9c16ae48b1127e5092add6fbcefa8dd3ba9f
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1053'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Den här typen av händelse kan placeras som det första steget eller senare und
 
 ### Viktiga anteckningar{#important-notes-segment-qualification}
 
-* Kom ihåg att Adobe Experience Platform-målgrupper beräknas antingen en gång om dagen (**batch** målgrupper) eller i realtid (**direktuppspelade** målgrupper, med alternativet High Frequency Audiences i Adobe Experience Platform).
+* Kom ihåg att Adobe Experience Platform-målgrupper beräknas antingen en gång om dagen (**batch** målgrupper) eller i realtid (för **direktuppspelade** målgrupper, med alternativet High Frequency Audiences i Adobe Experience Platform).
 
    * Om den valda publiken direktuppspelas kan de personer som tillhör den här publiken komma in på resan i realtid.
    * Om målgruppen är en batch kommer personer som nyligen är kvalificerade för den här målgruppen att kunna delta i resan när målgruppsberäkningen görs på Adobe Experience Platform.
@@ -51,6 +51,8 @@ Den här typen av händelse kan placeras som det första steget eller senare und
 * När du använder en målgruppskvalifikation på en resa kan det ta upp till 10 minuter innan målgruppsaktiviteten är aktiv och lyssnar på profiler som kommer in eller lämnar målgruppen.
 
 ### Konfigurera aktiviteten{#cnfigure-segment-qualification}
+
+Så här konfigurerar du aktiviteten **[!UICONTROL Audience Qualification]**:
 
 1. Öppna kategorin **[!UICONTROL Events]** och släpp en **[!UICONTROL Audience Qualification]**-aktivitet på arbetsytan.
 

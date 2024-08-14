@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: hopp, aktivitet, resa, dela, dela upp
 exl-id: 46d8950b-8b02-4160-89b4-1c492533c0e2
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: 817f9c16ae48b1127e5092add6fbcefa8dd3ba9f
 workflow-type: tm+mt
 source-wordcount: '817'
 ht-degree: 2%
@@ -32,7 +32,7 @@ Lägg bara till en **[!UICONTROL Jump]**-aktivitet och välj en målresa i den u
 
 Under målresan kommer den första händelsen som utlöses internt av aktiviteten **[!UICONTROL Jump]** att få det enskilda flödet i resan.
 
-## Livscykel
+## Livscykel {#jump-lifecycle}
 
 Säg att du har lagt till en **[!UICONTROL Jump]**-aktivitet i en resa A på en resa B. Resa A är den **ursprungliga resan** och resa B, den **målresan**.
 Här är de olika stegen i körningsprocessen:
@@ -52,9 +52,9 @@ Under resa B utlöses den första händelsen internt via aktiviteten **[!UICONTR
 >
 >Resa B kan också utlösas via en extern händelse.
 
-## God praxis och begränsningar
+## God praxis och begränsningar {#jump-limitations}
 
-### Redigering
+### Redigering {#jump-limitations-authoring}
 
 * Aktiviteten **[!UICONTROL Jump]** är bara tillgänglig på resor som använder ett namnutrymme.
 * Du kan bara hoppa till en resa som använder samma namnutrymme som ursprungsresan.
@@ -65,12 +65,12 @@ Under resa B utlöses den första händelsen internt via aktiviteten **[!UICONTR
 * Målresan kan även innehålla så många **[!UICONTROL Jump]** aktiviteter som behövs.
 * Loopmönster stöds inte. Det finns inget sätt att länka samman två eller flera resor som skulle skapa en oändlig slinga. Aktivitetskonfigurationsskärmen **[!UICONTROL Jump]** förhindrar dig från att göra detta.
 
-### Körning
+### Körning {#jump-limitations-exec}
 
 * När aktiviteten **[!UICONTROL Jump]** körs aktiveras den senaste versionen av målresan.
 * Som vanligt kan en unik individ bara vara närvarande en gång under samma resa. Om den person som har åsamkats från ursprungsresan redan befinner sig på målresan, kommer personen alltså inte att ta sig in på målresan. Inget fel rapporteras för aktiviteten **[!UICONTROL Jump]** eftersom detta är ett normalt beteende.
 
-## Konfigurera hoppaktiviteten
+## Konfigurera hoppaktiviteten {#jump-configure}
 
 1. Utforma din **ursprungliga resa**.
 
@@ -110,7 +110,7 @@ När en **[!UICONTROL Jump]**-aktivitet har konfigurerats på en resa läggs en 
 
 ![](assets/jump7.png)
 
-## Felsökning
+## Felsökning {#jump-troubleshoot}
 
 Fel uppstår om:
 * målresan inte längre existerar

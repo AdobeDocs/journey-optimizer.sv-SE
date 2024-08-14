@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 202e4e9bf99bc8d4423153431a7e86c9ac4be903
+source-git-commit: aa69046bde7ea5862fb507695d12584939fae9f8
 workflow-type: tm+mt
-source-wordcount: '2074'
+source-wordcount: '2223'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. K
 * Anpassade åtgärder stöder bara JSON-format när du använder begäran- eller svarsnyttolaster. Läs [den här sidan](../action/about-custom-action-configuration.md#custom-actions-limitations).
 * När du väljer en slutpunkt som ska användas som mål med en anpassad åtgärd ska du se till att:
 
-   * Den här slutpunkten kan ha stöd för resans genomströmning genom att använda konfigurationer från [API:t för begränsning](../configuration/throttling.md) eller [API:t för begränsning](../configuration/capping.md). Var försiktig med att en begränsningskonfiguration inte får vara lägre än 200 TPS. Alla målpunkter måste ha stöd för minst 200 TPS.
+   * Den här slutpunkten kan ha stöd för resans genomströmning genom att använda konfigurationer från [API:t för begränsning](../configuration/throttling.md) eller [API:t för begränsning](../configuration/capping.md). Var försiktig med att en begränsningskonfiguration inte får vara lägre än 200 TPS. Alla målslutpunkter måste ha stöd för minst 200 TPS.
    * Den här slutpunkten måste ha en svarstid som är så låg som möjligt. Beroende på förväntat dataflöde kan en hög svarstid påverka det faktiska dataflödet.
 
 ### Händelser {#events-g}
@@ -103,7 +103,8 @@ Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. K
 * För systemgenererade händelser måste strömmande data som används för att initiera en kundresa konfigureras inom Journey Optimizer först för att få ett unikt orkestrerings-ID. Detta Orchestration-ID måste bifogas till strömningsnyttolasten som kommer till Adobe Experience Platform. Denna begränsning gäller inte regelbaserade händelser.
 * Affärsevenemang kan inte användas tillsammans med enhetsevenemang eller målgruppsaktiviteter.
 * Enhetsresor (som inleds med en händelse eller en publikation) innehåller ett skyddsräcke som förhindrar att resorna aktiveras felaktigt flera gånger för samma händelse. Återinträde av profiler blockeras tillfälligt som standard i 5 minuter. Om en händelse till exempel utlöser en resa kl. 12:01 för en viss profil och en annan tar emot kl. 12:03 (oavsett om det är samma händelse eller en annan som utlöser samma resa) kommer den resan inte att starta igen för den här profilen.
-* Journey Optimizer kräver att händelser direktuppspelas till datainsamlingens bastjänst (DCCS) för att kunna utlösa en resa. Insamlade händelser i en grupp eller händelser från interna Journey Optimizer-datauppsättningar (meddelandefeedback, e-postspårning osv.) kan inte användas för att utlösa en resa. Om du inte kan få direktuppspelade händelser ska du skapa en målgrupp baserat på dessa händelser och använda aktiviteten **Läs målgrupp** i stället. Målgruppskvalificering kan tekniskt sett användas, men kan orsaka problem längre fram i kedjan baserat på de åtgärder som används.
+* Journey Optimizer kräver att händelser direktuppspelas till datainsamlingens bastjänst (DCCS) för att kunna utlösa en resa. Insamlade händelser i en grupp eller händelser från interna Journey Optimizer-datauppsättningar (meddelandefeedback, e-postspårning osv.) kan inte användas för att utlösa en resa. I de fall där du inte kan få direktuppspelade händelser måste du skapa en målgrupp baserat på dessa händelser och använda aktiviteten **Läs målgrupp** i stället. Målgruppskompetens kan användas tekniskt, men rekommenderas inte eftersom den kan orsaka efterföljande utmaningar baserat på de åtgärder som används.
+
 
 ### Datakällor {#data-sources-g}
 
@@ -126,23 +127,44 @@ Du kan välja mellan följande två lösningar:
 
 * Konfigurera en resa som inte omedelbart utnyttjar profilen. Om resan till exempel är utformad för att bekräfta att ett konto har skapats, kan upplevelsehändelsen innehålla information som behövs för att skicka det första bekräftelsemeddelandet (förnamn, efternamn, e-postadress osv.).
 
+### Uppdatera profil {#update-profile-g}
+
+Specifika skyddsutkast gäller för aktiviteten **[!UICONTROL Update profile]**. De listas på [den här sidan](../building-journeys/update-profiles.md).
+
+
 ### Läs målgrupp {#read-segment-g}
+
+Följande skyddsutkast gäller för aktiviteten **[!UICONTROL Read Audience]**:
 
 * Direktuppspelade målgrupper är alltid uppdaterade, men batchmålgrupper beräknas inte vid hämtningen. De utvärderas endast varje dag vid den dagliga grupputvärderingen.
 * För resor som använder aktiviteten Läs målgrupp finns det ett maximalt antal resor som kan påbörjas exakt samtidigt. Nya försök kommer att utföras av systemet men undvik att ha fler än fem resor (med Läs publik, schemalagd eller starta&quot;så snart som möjligt&quot;) med början vid exakt samma tidpunkt genom att sprida dem över tiden, till exempel med 5 till 10 minuters mellanrum.
+* Det går inte att använda målgruppsaktiviteten Läs med Adobe Campaign-aktiviteter.
+* Det går endast att använda aktiviteten Läsa målgrupp som en första aktivitet i en resa, efter en affärshändelseaktivitet.
+* En resa kan bara ha en målgruppsaktivitet för att läsa.
+* Se även rekommendationer om hur du använder aktiviteten Läs målgrupp på [den här sidan](../building-journeys/read-audience.md).
+
+
+### Målgruppskvalifikation {#audience-qualif-g}
+
+Följande skyddsutkast gäller för aktiviteten **[!UICONTROL Audience Qualification]**:
+
+* Det går inte att använda aktiviteten Audience-kvalificering med Adobe Campaign-aktiviteter.
+
 
 ### Uttrycksredigerare {#expression-editor}
 
-* Det går inte att använda fältgrupper för upplevelsehändelser på resor som börjar med en läsare, en målgrupp eller en affärshändelseaktivitet. Ni måste skapa en ny målgrupp och använda ett villkor för målgrupp under resan.
+* Det går inte att använda fältgrupper för upplevelsehändelser på resor som börjar med en läsare, en målgrupp eller en affärshändelseaktivitet. Du måste skapa en ny målgrupp och använda ett villkor för målgrupp under resan.
 
 
-### Aktivitetsbegränsningar i appen {#in-app-activity-limitations}
+### Aktivitet i appen {#in-app-activity-limitations}
 
 * Den här funktionen är för närvarande inte tillgänglig för vårdkunder.
 
 * Personalization kan bara innehålla profilattribut.
 
-* Visning i appen är knuten till resans livscykel, vilket innebär att när resan avslutas för en profil kommer alla meddelanden i appen under resan inte att visas för den profilen.  Det är därför inte möjligt att stoppa ett meddelande i appen direkt från en reseaktivitet. I stället måste du avsluta hela kundresan för att stoppa visningen av meddelanden i appen från att visas i profilen.
+* Aktiviteten i appen kan inte användas med Adobe Campaign-aktiviteter.
+
+* Visning i appen är knuten till resans livscykel, vilket innebär att när resan avslutas för en profil kommer alla meddelanden i appen under resan inte att visas för den profilen.  Det är därför inte möjligt att stoppa ett meddelande i appen direkt från en reseaktivitet. I stället måste du avsluta hela kundresan för att förhindra att meddelanden i appen visas i profilen.
 
 * I testläge beror visningen i appen på resans livslängd. Om du vill förhindra att resan avslutas för tidigt under testningen justerar du värdet **[!UICONTROL Wait time]** för dina **[!UICONTROL Wait]**-aktiviteter.
 
@@ -155,6 +177,17 @@ Du kan välja mellan följande två lösningar:
 ## Målgrupper och skyddsräcken {#audience}
 
 * Du kan publicera upp till 10 publikkompositioner i en given sandlåda. Om du har nått det här tröskelvärdet måste du ta bort en disposition för att frigöra utrymme och publicera en ny.
+
+### Hoppaktivitet {#jump-g}
+
+Specifika skyddsutkast gäller för aktiviteten **[!UICONTROL Jump]**. De listas på [den här sidan](../building-journeys/jump.md#jump-limitations).
+
+### Kampanjaktiviteter {#ac-g}
+
+Följande skyddsförslag gäller för **[!UICONTROL Campaign v7/v8]**- och **[!UICONTROL Campaign Standard]**-aktiviteterna:
+
+* Adobe Campaign-aktiviteter kan inte användas med en läs- eller målgruppsaktivitet.
+* Dessa aktiviteter kan inte användas med aktiviteter i appen.
 
 ## Handläggningsgaranti {#decision-management}
 
