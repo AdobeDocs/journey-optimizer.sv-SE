@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: IP, leverans
 exl-id: 393f051d-b86d-4b4f-b564-7a9ae3a5d4b8
-source-git-commit: 34c1180e3ba5b6b39287e70651c45351fa71e6b1
+source-git-commit: d880d38784c2687f9710e6733c1489601e6760ba
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '251'
 ht-degree: 2%
 
 ---
@@ -52,14 +52,11 @@ De viktigaste stegen för att implementera en plan för IP-uppvärmning är föl
 
 1. Välj en kampanj för varje fas i planen och aktivera motsvarande körningar. [Läs mer](ip-warmup-execution.md)
 
-<!--Old UI
-## How-to video {#video}
+## Instruktionsvideo {#video}
 
-Learn how to create and execute an IP warmup plan.
+Lär dig hur du skapar och kör en IP-värmeringsplan.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425965/?quality=12&learn=on)
--->
-
+>[!VIDEO](https://video.tv.adobe.com/v/3432637/?learn=on)
 
 >[!NOTE]
 >
