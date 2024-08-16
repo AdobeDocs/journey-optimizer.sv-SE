@@ -10,9 +10,9 @@ level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: 38e82eb2-67d9-4a7d-8c1f-77dab20bcec4
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: 59dee15d2952438a074db57a94b3d896b38cd4f3
+source-git-commit: 8484c39cf610fc4044e656243eba88deb8c50867
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1178'
 ht-degree: 1%
 
 ---
@@ -173,7 +173,7 @@ När du har konfigurerat översättningsprojektet och språkinställningarna är
 
    * **[!UICONTROL Translation in progress]**: Din tjänstleverantör arbetar aktivt med översättningen.
 
-     Om du valde den interna **översättningen** när du konfigurerade dina **språkinställningar** kan du översätta ditt innehåll direkt i översättningsprojektet. [Läs mer](#manage-ht-project)
+     Om du valde **Insourcing** när du konfigurerade dina **språkinställningar** kan du översätta ditt innehåll direkt i översättningsprojektet. [Läs mer](#manage-ht-project)
 
    * **[!UICONTROL Ready for review]**: Granskningsprocessen är klar att börja, vilket ger dig möjlighet att komma åt översättningen och antingen avvisa eller godkänna den.
 
@@ -203,11 +203,11 @@ När du har konfigurerat översättningsprojektet och språkinställningarna är
 
 Nu kan ni aktivera kampanjen eller resan. När ni har skickat dem kan ni mäta effekten av er flerspråkiga resa eller kampanj i rapporter.
 
-## Hantera internt översättningsprojekt {#manage-ht-project}
+## Hantera översättningsprojekt från Insourcing {#manage-ht-project}
 
-Om du valde den interna översättningen när du konfigurerade språkinställningarna kan du översätta innehållet direkt i översättningsprojektet.
+Om du valde Insourcing när du konfigurerade språkinställningarna kan du översätta innehållet direkt i översättningsprojektet.
 
-1. Gå till menyn **[!UICONTROL More actions]** från din **[!UICONTROL Translation project]** och välj **[!UICONTROL In-house translation]**.
+1. Gå till menyn **[!UICONTROL More actions]** från din **[!UICONTROL Translation project]** och välj **[!UICONTROL Insourcing]**.
 
    ![](assets/inhouse-translation-1.png)
 
