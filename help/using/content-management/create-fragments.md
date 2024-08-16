@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: da3ffe9c-a244-4246-b4b5-a3a1d0508676
-source-git-commit: c42fc1069e11b8e34b7477fc26ed8a6b4ef95ac7
+source-git-commit: 33e007e66eb072441c816ae168727c6fc2c82262
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 >id="ajo_create_expression_fragment"
 >title="Välj uttryckstyp"
 >abstract="Skapa ett fristående uttrycksfragment som gör att innehållet kan återanvändas på flera resor och i flera kampanjer. När du använder personaliseringsredigeraren kan du utnyttja alla uttrycksfragment som har skapats i den aktuella sandlådan."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/expression-editor/use-expression-fragments.html" text="Utnyttja uttrycksfragment"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/personalization/expression-editor/use-expression-fragments" text="Utnyttja uttrycksfragment"
 
 Fragment kan skapas från grunden på den vänstra menyn **[!UICONTROL Fragments]**. Dessutom kan du spara en del av befintligt innehåll som fragment när du utformar innehåll. [Lär dig hur](#save-as-fragment)
 
