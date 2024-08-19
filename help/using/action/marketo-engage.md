@@ -10,7 +10,7 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 keywords: marknadsföring, marknadsföra, engagera integreringen
-source-git-commit: 6a49f4b2e0220b1c875b42f70dcb44f3405c6ad2
+source-git-commit: 8a8741281edafb812f92ebb8da6dd68d3535f3e1
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%
@@ -37,17 +37,17 @@ Satsa på en resa med smidig dataintegrering med Marketo Engage. Denna anpassade
 * Klicka på Skapa åtgärd i listan Åtgärder. Läs mer om att skapa en anpassad åtgärd här (+link)
 * Ange namn, beskrivning och välj Adobe Marketo Engage som åtgärdstyp
 
-![](assets/engage-customaction-creation.png)
+![](assets/engage-customaction-creation.png){width="40%" align="left"}
 
 * Klicka på Redigera nyttolast för dina **Request**- och **Response**-nyttolaster.
 * För båda delarna skapar du din nyttolast och klistrar in den i det dedikerade popup-fönstret.
 
-![](assets/engage-customaction-payload.png)
+![](assets/engage-customaction-payload.png){width="70%" align="left"}
 
 * Inspect och konfigurera nyttolastvärden
 Obs! Om du vill skicka värden dynamiskt ändrar du **Konstant** till **Variabel** för varje fält.
 
-![](assets/engage-customaction-payload-fields.png)
+![](assets/engage-customaction-payload-fields.png){width="70%" align="left"}
 
 * Klicka på **Spara** i fönstret Fältkonfiguration och sedan på **Spara** för din anpassade åtgärd.
 
@@ -114,5 +114,5 @@ Nu kan du använda din anpassade åtgärd på din dedikerade arbetsyta.
 * Dra den anpassade åtgärden till arbetsytan på resan. (Se hur du använder en anpassad åtgärd/länk)
 * Klicka på Redigera för var och en av parametrarna med dynamiska värden som du har konfigurerat i nyttolasten i Begäranparametrar.
 
-![](assets/engage-use-canvas.png)
+![](assets/engage-use-canvas.png){width="70%" align="left"}
 
