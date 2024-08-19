@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: f0a131313eb96ef50b5a27011d67e59eb730b108
+source-git-commit: 3f6d1026d78584e21e03d3ef5c1bc37b59168176
 workflow-type: tm+mt
 source-wordcount: '1942'
 ht-degree: 26%
@@ -538,20 +538,20 @@ ht-degree: 26%
             + [API för gruppbeslut](using/offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
    + Experience Decision (LA) {#experience-decisioning}
       + [Kom igång med Experience Decision](using/experience-decisioning/gs-experience-decisioning.md)
-      + [API-referens]{#api-reference}
-         + [Beslutsobjekt]{#decision-items}
+      + API-referens {#api-reference}
+         + Beslutsobjekt {#decision-items}
             + [Skapa beslutsobjekt](using/experience-decisioning/api-reference/decisions-items/create.md)
             + [Lista över beslutsobjekt](using/experience-decisioning/api-reference/decisions-items/decision-items-list.md)
             + [Radera beslutsobjekt](/help/using/experience-decisioning/api-reference/decisions-items/delete.md)
             + [Söka efter beslutsobjekt](/help/using/experience-decisioning/api-reference/decisions-items/lookup.md)
             + [Uppdatera beslutsobjekt](/help/using/experience-decisioning/api-reference/decisions-items/update.md)
-         + [Objektsamlingar]{#items-collections}
+         + Objektsamlingar{#items-collections}
             + [Skapa objektsamlingar](/help/using/experience-decisioning/api-reference/items-collections/create.md)
             + [Ta bort objektsamlingar](/help/using/experience-decisioning/api-reference/items-collections/delete.md)
             + [Lista över objektsamlingar](/help/using/experience-decisioning/api-reference/items-collections/items-collections-list.md)
             + [Söka efter objektsamlingar](/help/using/experience-decisioning/api-reference/items-collections/lookup.md)
             + [Uppdatera artikelsamlingar](/help/using/experience-decisioning/api-reference/items-collections/update.md)
-         + [Markeringsstrategier]{#selection-strategies}
+         + Markeringsstrategier{#selection-strategies}
             + [Skapa urvalsstrategier](/help/using/experience-decisioning/api-reference/selection-strategies/create.md)
             + [Ta bort urvalsstrategier](/help/using/experience-decisioning/api-reference/selection-strategies/delete.md)
             + [Sökstrategier för markering](/help/using/experience-decisioning/api-reference/selection-strategies/lookup.md)
