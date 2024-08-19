@@ -5,9 +5,9 @@ feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: c555e6a6d88f43d7c29e27060d464b8fd21aed96
+source-git-commit: eb89bc5205d98a67cd0bb42bebbd9429786e33e7
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Ta bort ett beslutsobjekt {#delete-decision-item}
 
-Ibland kan det vara nödvändigt att ta bort (DELETE) en beslutspost. Detta gör du genom att utföra en DELETE-begäran till offertbiblioteks-API med ID:t för det beslutsobjekt som du vill ta bort.
+Om du vill ta bort ett beslutsobjekt ska du utföra en DELETE-begäran till offertbiblioteks-API:t med ID:t för det beslutsobjekt som du vill ta bort.
 
 **API-format**
 

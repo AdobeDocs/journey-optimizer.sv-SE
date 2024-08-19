@@ -1,12 +1,14 @@
 ---
 title: Uppdatera urvalsstrategier
+description: Urvalsstrategier består av samlingar som är kopplade till begränsningar och rangordningsmetoder för att fastställa erbjudanden.
+feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: c555e6a6d88f43d7c29e27060d464b8fd21aed96
+source-git-commit: eb89bc5205d98a67cd0bb42bebbd9429786e33e7
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 2%
+source-wordcount: '127'
+ht-degree: 1%
 
 ---
 
@@ -16,14 +18,6 @@ ht-degree: 2%
 Du kan ändra eller uppdatera en urvalsstrategi genom att göra en PATCH-begäran till Offer Library API.
 
 Mer information om JSON Patch, inklusive tillgängliga åtgärder, finns i den officiella [JSON Patch-dokumentationen](http://jsonpatch.com/).
-
-**Godkänn och Content-Type-rubriker**
-
-I följande tabell visas giltiga värden som omfattar fälten Content-Type i begärandehuvudet:
-
-| Rubriknamn | Värde |
-| ----------- | ----- |
-| Content-Type | `application/json` |
 
 **API-format**
 

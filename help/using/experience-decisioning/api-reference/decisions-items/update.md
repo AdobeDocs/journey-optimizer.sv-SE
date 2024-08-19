@@ -5,9 +5,9 @@ feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: dcff8803404228bbed40e998d802bb6c0f4ac67e
+source-git-commit: eb89bc5205d98a67cd0bb42bebbd9429786e33e7
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '137'
 ht-degree: 1%
 
 ---
@@ -18,14 +18,6 @@ ht-degree: 1%
 Du kan ändra eller uppdatera ett beslutsobjekt genom att göra en PATCH-begäran till Offer Library API.
 
 Mer information om JSON Patch, inklusive tillgängliga åtgärder, finns i den officiella [JSON Patch-dokumentationen](http://jsonpatch.com/).
-
-**Godkänn och Content-Type-rubriker**
-
-I följande tabell visas giltiga värden som omfattar fälten Content-Type i begärandehuvudet:
-
-| Rubriknamn | Värde |
-| ----------- | ----- |
-| Content-Type | `application/json` |
 
 **API-format**
 
@@ -66,11 +58,11 @@ curl -X PATCH 'https://platform.adobe.io/data/core/dps/offer-items/offerItem1234
 | --------- | ----------- |
 | `value` | Det nya värdet som du vill uppdatera parametern med. |
 | `path` | Sökvägen till den parameter som ska uppdateras. |
-| `op` | Åtgärdsanropet som används för att definiera den åtgärd som krävs för att uppdatera anslutningen. Åtgärderna är: `add`, `replace`, `remove`, `copy` och `test`. |
+| `op` | Den typ av åtgärd som ska utföras. Åtgärderna är: `add`, `replace`, `remove`, `copy` och `test`. |
 
 **Svar**
 
-Ett godkänt svar returnerar information om det nya beslutsobjektet, inklusive ID:t. Du kan använda ID:t i senare steg för att uppdatera eller ta bort beslutsobjektet.
+Ett godkänt svar returnerar information om det uppdaterade objektet, inklusive ID:t. Du kan använda ID:t i senare steg för att uppdatera eller ta bort beslutsobjektet.
 
 ```json
 {

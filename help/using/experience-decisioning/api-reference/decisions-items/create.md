@@ -1,13 +1,13 @@
 ---
 title: Skapa ett beslutsobjekt
-description: Beslutsobjekt är marknadsföringserbjudanden som du kan skapa och ordna i samlingar och kataloger.
+description: Lär dig hur du skapar ett beslutsobjekt med hjälp av API:t för erbjudandebibliotek.
 feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: dcff8803404228bbed40e998d802bb6c0f4ac67e
+source-git-commit: eb89bc5205d98a67cd0bb42bebbd9429786e33e7
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '79'
 ht-degree: 1%
 
 ---
@@ -16,14 +16,6 @@ ht-degree: 1%
 # Skapa ett beslutsobjekt {#create-decision-items}
 
 Du kan skapa ett beslutsobjekt genom att göra en POST-förfrågan till Offer Library API.
-
-**Godkänn och Content-Type-rubriker**
-
-I följande tabell visas giltiga värden som omfattar fälten Content-Type i begärandehuvudet:
-
-| Rubriknamn | Värde |
-| ----------- | ----- |
-| Content-Type | `application/json` |
 
 **API-format**
 
@@ -68,7 +60,7 @@ curl -X POST 'https://platform.adobe.io/data/core/dps/offer-items' \
         }
     },
     "_<imsOrg>": {
-        "some_field": "some value"
+        "foo": "bar"
     }
 }'
 ```

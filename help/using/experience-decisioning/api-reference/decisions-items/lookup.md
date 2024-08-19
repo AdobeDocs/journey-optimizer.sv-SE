@@ -5,9 +5,9 @@ feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: dcff8803404228bbed40e998d802bb6c0f4ac67e
+source-git-commit: eb89bc5205d98a67cd0bb42bebbd9429786e33e7
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '80'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Söka efter ett beslutsobjekt {#lookup-decision-items}
 
-Du kan söka efter ett specifikt beslutsobjekt genom att göra en GET-begäran till Offer Library API som innehåller ID:t i sökvägen till begäran.
+Om du vill söka efter specifika beslutsobjekt genom att göra en GET-begäran till Offer Library API som innehåller ID:t i sökvägen till begäran.
 
 **API-format**
 

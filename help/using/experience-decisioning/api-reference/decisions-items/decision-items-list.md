@@ -5,9 +5,9 @@ feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: dc47e2835379fbb2afb768beea6e4a1596f70ee9
+source-git-commit: eb89bc5205d98a67cd0bb42bebbd9429786e33e7
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ curl -X GET '<https://platform.adobe.io/data/core/dps/offer-items?limit=2>' \
 
 **Svar**
 
-Ett godkänt svar returnerar en lista med erbjudandeartiklar som du har tillgång till. The _<imsOrg> noden innehåller anpassade beslutsobjektattribut.
+Ett godkänt svar returnerar en lista med erbjudandeartiklar som du har tillgång till. Noden `_<imsOrg>` innehåller attribut för anpassade beslutsobjekt.
 
 ```json
 {
@@ -131,7 +131,7 @@ Ett godkänt svar returnerar en lista med erbjudandeartiklar som du har tillgån
                     }
                 }
             },
-            "_<imsOrg>": {
+            "YOUR_CUSTOM_ATTRIBUTES": {
                 "some_field": "some value",
                 "some_boolean_field": true
             }

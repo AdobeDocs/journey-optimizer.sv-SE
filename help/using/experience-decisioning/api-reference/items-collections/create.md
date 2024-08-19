@@ -5,9 +5,9 @@ feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: dcff8803404228bbed40e998d802bb6c0f4ac67e
+source-git-commit: eb89bc5205d98a67cd0bb42bebbd9429786e33e7
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '80'
 ht-degree: 1%
 
 ---
@@ -16,14 +16,6 @@ ht-degree: 1%
 # Skapa en objektsamling {#create-decision-items}
 
 Du kan skapa en objektsamling genom att göra en POST-förfrågan till Offer Library API.
-
-**Godkänn och Content-Type-rubriker**
-
-I följande tabell visas giltiga värden som omfattar fälten Content-Type i begärandehuvudet:
-
-| Rubriknamn | Värde |
-| ----------- | ----- |
-| Content-Type | `application/json` |
 
 **API-format**
 

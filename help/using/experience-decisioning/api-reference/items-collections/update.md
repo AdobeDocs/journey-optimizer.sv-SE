@@ -1,12 +1,14 @@
 ---
 title: Uppdatera en objektsamling
+description: Samlingar är delmängder av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare, t.ex. erbjudandets kategori.
+feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: c555e6a6d88f43d7c29e27060d464b8fd21aed96
+source-git-commit: eb89bc5205d98a67cd0bb42bebbd9429786e33e7
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 2%
+source-wordcount: '132'
+ht-degree: 1%
 
 ---
 
@@ -16,14 +18,6 @@ ht-degree: 2%
 Du kan ändra eller uppdatera en objektsamling genom att göra en PATCH-begäran till Offer Library API.
 
 Mer information om JSON Patch, inklusive tillgängliga åtgärder, finns i den officiella [JSON Patch-dokumentationen](http://jsonpatch.com/).
-
-**Godkänn och Content-Type-rubriker**
-
-I följande tabell visas giltiga värden som omfattar fälten Content-Type i begärandehuvudet:
-
-| Rubriknamn | Värde |
-| ----------- | ----- |
-| Content-Type | `application/json` |
 
 **API-format**
 
