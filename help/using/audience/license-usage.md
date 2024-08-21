@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 7e91face-c8f4-4e70-9123-9e36bae7e67e
-source-git-commit: 3f96cc0037b5bcdb2ce94e2721b02ba13b3cff36
+source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,8 @@ Gå till **[!UICONTROL Administration]** > **[!UICONTROL License Usage]** om du 
 >[!NOTE]
 >
 >Om du vill kunna visa kontrollpanelen måste du ha behörighet [Visa kontrollpanelen för licensanvändning](https://experienceleague.adobe.com/docs/experience-platform/dashboards/permissions.html#available-permissions){target="_blank"}.
+
+För [!DNL Adobe Journey Optimizer] kan du kontrollera antalet **aktiveringsbara profiler** på den här instrumentpanelen. En engagerande profil är ett register med information som representerar en individ och representeras i profiltjänsten. Dessa poster är profiler som du har försökt att använda Journey Optimizer funktioner för att skapa, fatta beslut, leverera, experimentera eller orkestrera under de senaste 12 månaderna.
 
 Läs mer i Adobe Experience Platform-dokumentationen:
 

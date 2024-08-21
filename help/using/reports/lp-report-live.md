@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: df13e473-8003-4dde-aaf8-df8385c9ee21
-source-git-commit: 03c714833930511fa734662b637d2416728073c2
+source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 >id="ajo_landing_page_live_report"
 >title="Landningssidans Live-rapport"
 >abstract="Med landningssidans Live-rapport kan du i realtid mäta och visualisera landningssidans effekt och prestanda endast under de senaste 24 timmarna. Din rapport är uppdelad i olika widgetar som beskriver hur landningssidan fungerar och vilka fel den innehåller. Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort."
+
+>[!AVAILABILITY]
+>
+>Den aktuella rapportupplevelsen kommer att tas ur bruk i oktober-versionen. Efter detta datum kommer den nya rapportupplevelsen att bli standard. Vi rekommenderar att du behärskar de nya funktionerna så att övergången blir smidig. [Kom igång med Journey Optimizer nya rapporteringsgränssnitt.](report-gs-cja.md)
 
 Live-rapporter, som du kommer åt från fliken Senaste 24 timmarna, visar händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten. Som jämförelse fokuserar Global-rapporter på händelser som inträffade för minst två timmar sedan och täcker händelser under en vald tidsperiod.
 

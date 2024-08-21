@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: bae533c5-1bfc-48bf-9f8d-1145383c040c
-source-git-commit: 51924e403741829f068675eaa94ccbd63cc2b206
+source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
 workflow-type: tm+mt
-source-wordcount: '3170'
+source-wordcount: '3352'
 ht-degree: 6%
 
 ---
@@ -18,6 +18,58 @@ ht-degree: 6%
 # Versionsinformation för 2024 {#release-notes-2024}
 
 På den här sidan visas alla funktioner och förbättringar för [!DNL Journey Optimizer] som släpptes 2024.
+
+
+## Versionsinformation juli 2024 {#24-7-2024}
+
+**Releasedatum**: 30-31 juli 2024
+
+### Nya funktioner {#27-4-features}
+
+Den här versionen innehåller de nya funktionerna som listas nedan.
+
+<table>
+<thead>
+<tr>
+<th><strong>SMS-kanal med valfri leverantör (Beta)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du konfigurera ytterligare SMS-leverantörer i Journey Optimizer, utöver standardleverantörerna Sinch, Infobip och Twilio.</p>
+<img src="assets/do-not-localize/byo_sms.gif"/>
+<p>Mer information finns i den <a href="../sms/sms-configuration-custom.md">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Federated Audience Composition (begränsad tillgänglighet)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Federated Audience Composition är nu tillgängligt i Adobe Journey Optimizer. Det gör det möjligt för företag att sammanställa data för bättre användning i olika användningsfall. Med detta nya tillvägagångssätt, som Adobe Real-time Customer Data Platform- och/eller Adobe Journey Optimizer-användare, kan ni federera datauppsättningar direkt från ert befintliga datalager för att skapa och berika Adobe Experience Platform målgrupper och attribut i ett och samma system.</p>
+<p>Mer information finns i den <a href="https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home"  target="_blank">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Förbättringar {#27-4-improvements}
+
+Den här versionen innehåller de förbättringar som anges nedan.
+
+**Resor**
+
+* (Tillgänglighetsdatum: 8 juli) **Avancerad uttrycksredigerare i konfiguration av resthändelser** - Du kan nu utnyttja den avancerade uttrycksredigeraren när du konfigurerar en händelse, så att du kan definiera mer komplexa uttryck eller använda funktioner i händelse-ID-villkoret. [Läs mer](../event/about-creating.md#adv-exp-editor)
+
+
 
 ## Versionsinformation juni 2024 {#24-6-2024}
 

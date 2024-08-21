@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 25a00f74-ed08-479c-9a5d-4185b5f3c684
-source-git-commit: e6924928e03d494817a2368b33997029ca2eca1c
+source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '709'
 ht-degree: 1%
 
 ---
@@ -72,6 +72,12 @@ Följ stegen nedan om du vill använda ett fragment i ett e-postmeddelande.
 1. Vid behov kan du bryta arvet med det ursprungliga fragmentet. [Läs mer](#break-inheritance)
 
 1. Lägg till så många fragment du vill och **[!UICONTROL Save]** dina ändringar.
+
+## Använd implicita variabler {#implicit-variables-in-fragments}
+
+De implicita variablerna förbättrar de befintliga fragmentfunktionerna för att förbättra effektiviteten vid återanvändning av innehåll och användning av skript. Fragment kan använda indatavariabler och skapa utdatavariabler som kan användas i kampanj- och reseinnehåll.
+
+Lär dig använda implicita variabler i [det här avsnittet](../personalization/use-expression-fragments.md#implicit-variables).
 
 ## Anpassa redigerbara fält {#customize-fields}
 

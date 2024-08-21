@@ -8,14 +8,18 @@ topic: Administration
 role: User
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
-source-git-commit: ddf9465fb940706fb38dc05038336ac22abecbc0
+source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
 
 # Kom igång med aviseringar {#alerts}
+
+När du skapar resor och kampanjer använder du knappen **Varningar** för att kontrollera och åtgärda fel innan du kör eller publicerar dem. Lär dig felsöka dina resor på [den här sidan](../building-journeys/troubleshooting.md). Lär dig hur du granskar kampanjer på [den här sidan](../campaigns/review-activate-campaign.md).
+
+Du kan även prenumerera på Adobe Journey Optimizer systemvarningar enligt den här sidan.
 
 ## Få åtkomst till och prenumerera på aviseringar {#alerting-capabilities}
 
@@ -88,5 +92,5 @@ Så här felsöker du **anpassade åtgärdsmeddelanden**:
   ![](assets/alert-troubleshooting-3.png)
 
 * Kontrollera kundens resaHändelser för att hitta mer information om &quot;errorReason&quot;.
-* Kontrollera din konfiguration för anpassad åtgärd och verifiera att autentiseringen fortfarande är OK. Gör en manuell kontroll med Postman,
-till exempel.
+
+* Kontrollera din konfiguration för anpassad åtgärd och verifiera att autentiseringen fortfarande är OK. Gör till exempel en manuell kontroll med Postman.

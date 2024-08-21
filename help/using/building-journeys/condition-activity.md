@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: aktivitet, villkor, arbetsyta, resa
 exl-id: 496c7666-a133-4aeb-be8e-c37b3b9bf5f9
-source-git-commit: 619bcbc16b4117c29c482c85323603a4281298e0
+source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1455'
 ht-degree: 5%
 
 ---
@@ -74,7 +74,7 @@ I den enkla redigeraren hittar du även kategorin Reseegenskaper, nedanför kate
 
 ## Source-villkor för data {#data_source_condition}
 
-På så sätt kan du definiera ett villkor baserat på fält från datakällorna eller händelser som tidigare placerats under resan. Lär dig hur du använder uttrycksredigeraren i [det här avsnittet](expression/expressionadvanced.md).
+Använd en **[!UICONTROL Data Source condition]** för att definiera ett villkor baserat på fält från datakällorna eller händelser som tidigare placerats under resan. Den här typen av villkor definieras med uttrycksredigeraren. Lär dig hur du använder uttrycksredigeraren i [det här avsnittet](expression/expressionadvanced.md).
 
 Om du till exempel riktar dig till en målgrupp med anrikningsattribut som genererats med ett dispositionsarbetsflöde eller en anpassad uppladdning (CSV-fil), kan du använda dessa anrikningsattribut för att bygga upp ditt villkor.
 
@@ -82,13 +82,15 @@ Med den avancerade uttrycksredigeraren kan du ställa in mer avancerade villkor 
 
 ![](assets/journey50.png)
 
-## Tidsvillkor{#time_condition}
+## Tidsvillkor {#time_condition}
 
-På så sätt kan du utföra olika åtgärder beroende på timmen på dagen och/eller veckodagen. Du kan till exempel bestämma dig för att skicka push-meddelanden under dagtid och e-postmeddelanden på natten under vardagar.
+Använd en **[!UICONTROL Time condition]** för att utföra olika åtgärder beroende på timmen på dagen och/eller veckodagen. Du kan till exempel bestämma dig för att skicka push-meddelanden under dagtid och e-postmeddelanden på natten under vardagar.
 
 >[!NOTE]
 >
->Tidszonen är inte specifik för ett villkor och definieras på färdsnivå i reseegenskaperna. Se [den här sidan](../building-journeys/timezone-management.md).
+>* Tidszonen är inte specifik för ett villkor och definieras på färdsnivå i reseegenskaperna. Läs mer på [den här sidan](../building-journeys/timezone-management.md).
+>
+>* Som standard anges **[!UICONTROL Time condition]** som timma, från 00:00 till 12:00.
 
 ![](assets/journey51.png)
 

@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: felsökning, felsökning, resa, kontroll, fel
 exl-id: 03fbc4f4-b0a8-46d5-91f9-620685b11493
-source-git-commit: 135dd7528e87a6fde7e148745ef2f49104809bc1
+source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 69%
+source-wordcount: '940'
+ht-degree: 54%
 
 ---
 
@@ -24,25 +24,37 @@ I det här avsnittet får du lära dig hur du felsöker resor innan du testar el
 
 Kontrollera att alla aktiviteter är konfigurerade korrekt innan du testar och publicerar din resa. Du kan inte utföra tester eller publikationer om fel fortfarande upptäcks av systemet.
 
-Fel visas med en varningssymbol på själva aktiviteterna på arbetsytan. Placera markören på utropstecknet för att visa felmeddelandet. Klicka på aktiviteten för att se raden i felet med en varning. Om till exempel ett obligatoriskt fält är tomt visas ett fel.
 
-![](assets/journey63.png)
+### Fel i aktiviteter {#activity-errors}
 
-Om till exempel två aktiviteter inte är kopplade visas en varning på arbetsytan.
+Fel visas med en varningssymbol på själva aktiviteterna på arbetsytan. Placera markören på utropstecknet för att visa felmeddelandet. Klicka på aktiviteten för att se raden i felet med en varning. Exempel:
 
-![](assets/canvas-disconnected.png)
+* om ett obligatoriskt fält är tomt visas ett fel
 
-Bredvid växlingsknappen **[!UICONTROL Test]** och knappen **[!UICONTROL Publish]** kan ett varningstecken visas. Det här varningstecknet visar fel som upptäckts av systemet och förhindrar aktivering av testläget eller publicering av resan. Vanligtvis är fel som upptäcks av systemet länkade till fel som visas i aktiviteterna. Ibland är de dock länkade till andra problem. I det här fallet kan du visa dem och försöka identifiera problemet med hjälp av felbeskrivningen. Om du inte kan identifiera problemet kan du kopiera informationen och skicka den till administratören eller till supporten. Observera att fel som blockerar testet och publikationen är snarlika.
+  ![](assets/journey63.png)
 
-Systemet upptäcker två typer av problem – fel och varningar. Fel blockerar publicering och testaktivering. Varningar indikerar potentiella problem som inte blockerar testaktivering eller publicering. En beskrivning av problemet och ett ID från felloggen med typen ERR_XXX_XXX visas. Detta hjälper teknisk support att identifiera problemet.
+* på arbetsytan visas en varning när två aktiviteter är frånkopplade
 
-Två olika färger kan visas på tecknet bredvid växlingsknappen **[!UICONTROL Test]** och knappen **[!UICONTROL Publish]**. Vid fel visas tecknet i rött. Vid varningar visas tecknet i orange.
+  ![](assets/canvas-disconnected.png)
 
-![](assets/journey75.png)
+### Fel under resan {#canvas-errors}
 
-Fel och varningar som är globala för resan visas först i listan. Fel och varningar som rör specifika aktiviteter listas därefter per aktivitetsordning eller när de dyker upp i resan från vänster till höger. Med knappen **[!UICONTROL Copy details]** kopieras teknisk information om resan som supportteamet kan använda för att felsöka.
+Fel visas också från knappen **[!UICONTROL Alerts]** ovanför arbetsytan. Med den här knappen kan du se fel som upptäcks av systemet och som förhindrar aktivering av testläget eller publicering av resan.
 
-När ett fel inträffar i en åtgärd eller ett villkor upphör en individs resa. Det enda sättet att få den att fortsätta är att markera rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [det här avsnittet](../building-journeys/using-the-journey-designer.md#paths).
+Systemet identifierar två typer av problem: **fel** och **varningar**. Fel blockerar publicering och testaktivering. Varningar indikerar potentiella problem som inte blockerar testaktivering eller publicering. En beskrivning av problemet och ett ID från felloggen med typen ERR_XXX_XXX visas. Detta kan hjälpa till att identifiera problemet.
+
+![](assets/journey-error-and-warning.png)
+
+<!--Most of the time, errors detected by the system are linked to errors visible on the activities but they can also relate to other issues. In all cases, check alerts and resolve the issue using to the error description. If you cannot identify the issue, use the **[!UICONTROL Copy details]** button to store the alerts, and send them to your administrator.-->
+
+Fel och varningar som är globala för resan visas först i listan. Fel och varningar som rör specifika aktiviteter listas därefter per aktivitetsordning eller när de dyker upp i resan från vänster till höger. Längst ned i listan med varningar kan du med knappen **[!UICONTROL Copy details]** kopiera teknisk information om resan som är användbar för att felsöka problemen.
+
+### Lägg till en alternativ sökväg {#canvas-add-path}
+
+Du kan definiera en reservåtgärd om ett fel uppstår för följande reseaktiviteter: **[!UICONTROL Condition]** och **[!UICONTROL Action]**.
+
+När ett fel inträffar i en åtgärd eller ett villkor upphör en individs resa. Det enda sättet att få det att fortsätta är att lösa problemet. För att undvika att avbryta resan kan du även kontrollera alternativet **[!UICONTROL Add an alternative path in case of a timeout or an error]** i aktivitetens egenskaper. Läs mer i [det här avsnittet](../building-journeys/using-the-journey-designer.md#paths).
+
 
 ## Kontrollera att händelser skickas korrekt {#checking-that-events-are-properly-sent}
 

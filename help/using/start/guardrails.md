@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: aa69046bde7ea5862fb507695d12584939fae9f8
+source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
 workflow-type: tm+mt
-source-wordcount: '2223'
+source-wordcount: '2279'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,11 @@ Adobe [!DNL Journey Optimizer]-gränssnittet är utformat för att fungera optim
 * Mediefiler för MMS kan inkluderas via en URL som stöds. Kontrollera att mediefilen överförs separat.
 * Synkronisering av meddelandefeedback är för närvarande inte tillgängligt för MMS.
 * Samtalshantering fungerar på SMS-kanalnivå för MMS.
+
+### Skyddsutkast för webbkanal {#web-guardrails}
+
+Webbkampanjer för [!DNL Journey Optimizer] har nya profiler som inte har varit engagerade tidigare i andra kanaler som mål. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids. Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+
 
 ## Underdomänsskydd {#subdomain-guardrails}
 
@@ -174,9 +179,7 @@ Följande skyddsutkast gäller för aktiviteten **[!UICONTROL Audience Qualifica
 
 * Innehållets storlek för meddelanden i appen är begränsad till 2 MB. Om du inkluderar stora bilder kan det försvåra publiceringsprocessen.
 
-## Målgrupper och skyddsräcken {#audience}
 
-* Du kan publicera upp till 10 publikkompositioner i en given sandlåda. Om du har nått det här tröskelvärdet måste du ta bort en disposition för att frigöra utrymme och publicera en ny.
 
 ### Hoppaktivitet {#jump-g}
 
@@ -188,6 +191,10 @@ Följande skyddsförslag gäller för **[!UICONTROL Campaign v7/v8]**- och **[!U
 
 * Adobe Campaign-aktiviteter kan inte användas med en läs- eller målgruppsaktivitet.
 * Dessa aktiviteter kan inte användas med aktiviteter i appen.
+
+## Målgrupper och skyddsräcken {#audience}
+
+Du kan publicera upp till 10 publikkompositioner i en given sandlåda. Om du har nått det här tröskelvärdet måste du ta bort en disposition för att frigöra utrymme och publicera en ny.
 
 ## Handläggningsgaranti {#decision-management}
 

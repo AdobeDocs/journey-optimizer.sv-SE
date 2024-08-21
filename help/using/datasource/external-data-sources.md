@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: externa, källor, data, konfiguration, anslutning, tredje part
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
-source-git-commit: 0738443c024499079d8527fe2cc1c80f42f4f476
+source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 72%
+source-wordcount: '1496'
+ht-degree: 61%
 
 ---
 
@@ -102,7 +102,7 @@ Om ett GET-anrop som kräver parametrar används ska du ange parametrarna i fäl
 * lista de parametrar som ska skickas vid anropet i fältet **[!UICONTROL Dynamic Values]** (i exemplet nedan: &quot;identifier&quot;).
 * även ange dem med exakt samma syntax i brödtexten i den skickade nyttolasten. Om du vill göra det måste du lägga till: &quot;param&quot;: &quot;name of your parameter&quot; (i exemplet nedan: &quot;identifier&quot;). Följ syntaxen nedan:
 
-  ```
+  ```json
   {"id":{"param":"identifier"}}
   ```
 
@@ -141,28 +141,28 @@ Med den här autentiseringen blir åtgärdskörningen en process med två steg:
 
 ### Definition av slutpunkten som ska anropas för att generera åtkomsttoken{#custom-authentication-endpoint}
 
-* slutpunkt: URL som ska användas för att generera slutpunkten
-* metoden för HTTP-begäran på slutpunkten (GET eller POST)
-* rubriker: nyckelvärdepar som ska matas in som rubriker i detta anrop om det behövs
-* brödtext: beskriver anropets brödtext om metoden är POST. Vi stöder en begränsad brödstruktur, som definieras i bodyParams (key-value pairs). Brödtextens typ beskriver formatet och kodningen för brödtexten i anropet:
-   * &#39;form&#39;: innebär att innehållstypen blir application/x-www-form-urlencoded (charset UTF-8) och nyckelvärdepar serialiseras som: key1=value1&amp;key2=value2&amp;...
-   * json: det innebär att innehållstypen blir application/json (charset UTF-8) och nyckelvärdepar kommer att serialiseras som ett json-objekt som är: _{ &quot;key1&quot;: &quot;value1&quot;, &quot;key2&quot;: &quot;value2&quot;, ...}_
+* `endpoint`: URL som ska användas för att generera slutpunkten
+* HTTP-begärans metod på slutpunkten (`GET` eller `POST`)
+* `headers`: nyckelvärdepar som ska injiceras som huvuden i det här anropet om det behövs
+* `body`: beskriver brödtexten för anropet om metoden är POST. Vi stöder en begränsad brödstruktur, som definieras i bodyParams (key-value pairs). Brödtextens typ beskriver formatet och kodningen för brödtexten i anropet:
+   * `form`: innebär att innehållstypen kommer att vara application/x-www-form-urlencoded (charset UTF-8) och nyckelvärdepar kommer att serialiseras som: key1=value1&amp;key2=value2&amp;...
+   * `json`: innebär att innehållstypen blir application/json (charset UTF-8) och nyckelvärdepar kommer att serialiseras som ett json-objekt som är: _{ &quot;key1&quot;: &quot;value1&quot;, &quot;key2&quot;: &quot;value2&quot;, ...}_
 
 ### Definition av hur åtkomsttoken måste matas in i åtgärdens HTTP-begäran{#custom-authentication-access-token}
 
-* authorizationType: definierar hur den genererade åtkomsttoken måste injiceras i HTTP-anropet för åtgärden. Möjliga värden är:
+* **permissionType**: definierar hur den genererade åtkomsttoken måste injiceras i HTTP-anropet för åtgärden. Möjliga värden är:
 
-   * innehavare: anger att en åtkomsttoken måste injiceras i auktoriseringsrubriken såsom: _behörighet: innehavare &lt;åtkomsttoken>_
-   * rubrik: anger att en åtkomsttoken måste injiceras som en rubrik där dess namn definieras av egenskapen tokenTarget. Om till exempel tokenTarget är myHeader injiceras åtkomsttoken som en rubrik som: _myHeader: &lt;åtkomsttoken>_
-   * queryParam: anger att en åtkomsttoken måste injiceras som en queryParam där dess namn definieras av egenskapen tokenTarget. Om till exempel tokenTarget är myQueryParam blir webbadressen för åtgärdsanropet: _&lt;url>?myQueryParam=&lt;åtkomsttoken>_
+   * `bearer`: anger att åtkomsttoken måste injiceras i auktoriseringshuvudet, till exempel: _Auktorisering: Bearer &lt;åtkomsttoken>_
+   * `header`: anger att åtkomsttoken måste matas in som ett huvud, det rubriknamn som definieras av egenskapen `tokenTarget`. Om till exempel `tokenTarget` är `myHeader` kommer åtkomsttoken att matas in som en rubrik som: _myHeader: &lt;åtkomsttoken>_
+   * `queryParam`: anger att åtkomsttoken måste matas in som queryParam, frågeparameternamnet som definieras av egenskapen tokenTarget. Om till exempel tokenTarget är myQueryParam blir webbadressen för åtgärdsanropet: _&lt;url>?myQueryParam=&lt;åtkomsttoken>_
 
-* tokenInResponse: anger hur du extraherar åtkomsttoken från autentiseringsanropet. Den här egenskapen kan vara:
-   * &quot;response&quot;: anger att HTTP-svaret är åtkomsttoken
-   * en väljare i en json (förutsatt att svaret är en json. Vi har inte stöd för andra format som XML). Den här väljarens format är _json://&lt;sökväg till åtkomsttokens egenskap>_. Om svaret på anropet till exempel är: _{ &quot;access_token&quot;: &quot;theToken&quot;, &quot;timestamp&quot;: 12323445656 }_, kommer tokenInResponse att vara: _json: //access_token_
+* **tokenInResponse**: anger hur åtkomsttoken ska extraheras från autentiseringsanropet. Den här egenskapen kan vara:
+   * `response`: anger att HTTP-svaret är åtkomsttoken
+   * en väljare i en json (förutsatt att svaret är en json, stöder vi inte andra format som XML). Den här väljarens format är _json://&lt;sökväg till åtkomsttokens egenskap>_. Om svaret på anropet till exempel är: _{ &quot;access_token&quot;: &quot;theToken&quot;, &quot;timestamp&quot;: 12323445656 }_, kommer tokenInResponse att vara: _json: //access_token_
 
 Autentiseringsformatet är:
 
-```
+```json
 {
     "type": "customAuthorization",
     "endpoint": "<URL of the authentication endpoint>",
@@ -193,15 +193,13 @@ Autentiseringsformatet är:
 >
 >Encode64 är den enda funktionen som är tillgänglig i autentiseringsnyttolasten.
 
-Du kan ändra cachevaraktigheten på en token för en anpassad autentiseringsdatakälla. Nedan visas ett exempel på en anpassad autentiseringsnyttolast. Cachevaraktigheten definieras i parametern &quot;cacheDuration&quot;. Den anger varaktigheten för den genererade token i cachen. Enheten kan vara millisekunder, sekunder, minuter, timmar, dagar, månader och år.
+Du kan ändra cachevaraktigheten på en token för en anpassad autentiseringsdatakälla. Nedan visas ett exempel på en anpassad autentiseringsnyttolast. Cachevaraktigheten definieras i parametern `cacheDuration`. Den anger varaktigheten för den genererade token i cachen. Enheten kan vara millisekunder, sekunder, minuter, timmar, dagar, månader och år.
 
 Här följer ett exempel på autentiseringstypen för innehavare:
 
-```
+```json
 {
-  "authentication": {
     "type": "customAuthorization",
-    "authorizationType": "Bearer",
     "endpoint": "https://<your_auth_endpoint>/epsilon/oauth2/access_token",
     "method": "POST",
     "headers": {
@@ -220,9 +218,8 @@ Här följer ett exempel på autentiseringstypen för innehavare:
     "cacheDuration": {
       "duration": 5,
       "timeUnit": "minutes"
-    }
-  }
-}
+    },
+  },
 ```
 
 >[!NOTE]
@@ -234,11 +231,9 @@ Här följer ett exempel på autentiseringstypen för innehavare:
 
 Här är ett exempel på autentiseringstypen för sidhuvud:
 
-```
+```json
 {
   "type": "customAuthorization",
-  "authorizationType": "header",
-  "tokenTarget": "x-auth-token",
   "endpoint": "https://myapidomain.com/v2/user/login",
   "method": "POST",
   "headers": {
@@ -255,13 +250,15 @@ Här är ett exempel på autentiseringstypen för sidhuvud:
   "cacheDuration": {
     "expiryInResponse": "json://expiryDuration",
     "timeUnit": "minutes"
-  }
-}
+  },
+  "authorizationType": "header",
+  "tokenTarget": "x-auth-token"
+} 
 ```
 
 Här är ett exempel på svaret på inloggnings-API-anropet:
 
-```
+```json
 {
   "token": "xDIUssuYE9beucIE_TFOmpdheTqwzzISNKeysjeODSHUibdzN87S",
   "expiryDuration" : 5

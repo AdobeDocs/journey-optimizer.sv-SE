@@ -6,9 +6,9 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 9509fd67-6d12-4440-aad8-59690936be97
-source-git-commit: 59ecb9a5376e697061ddac4cc68f09dee68570c0
+source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1133'
 ht-degree: 0%
 
 ---
@@ -35,13 +35,13 @@ Om du vill kunna komma åt och skapa webbsidor i användargränssnittet för [!D
 
 ## Krav för implementering {#implementation-prerequisites}
 
-För närvarande stöds två typer av implementeringar för att möjliggöra utveckling och leverans av webbkanalskampanjer på dina webbegenskaper:
+Två typer av implementeringar stöds för att skapa och leverera webbkanalskampanjer på era webbegenskaper:
 
 * Endast på klientsidan - Om du vill lägga till ändringar på webbplatsen måste du implementera [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} på webbplatsen.
 
   >[!NOTE]
   >
-  >Kontrollera att AEP Web SDK-versionen är 2.16 eller senare.
+  >Kontrollera att din [Adobe Experience Platform Web SDK-version](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/release-notes){target="_blank"} är 2.16 eller senare.
 
 * Hybridläge - Du kan använda [API:t för AEP Edge Network-servern](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html){target="_blank"} för att begära anpassning på serversidan. Svaret ges till Adobe Experience Platform Web SDK för att återge ändringarna på klientsidan. Läs mer i Adobe Experience Platform [Edge Network Server API-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html){target="_blank"}. Du kan ta reda på mer om hybridläget och kontrollera några implementeringsexempel i [det här blogginlägget](https://blog.developer.adobe.com/hybrid-personalization-in-the-adobe-experience-platform-web-sdk-6a1bb674bf41){target="_blank"}.
 

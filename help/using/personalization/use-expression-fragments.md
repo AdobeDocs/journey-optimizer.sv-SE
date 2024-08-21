@@ -9,9 +9,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, bibliotek, personalisering
 exl-id: 74b1be18-4829-4c67-ae45-cf13278cda65
-source-git-commit: e6924928e03d494817a2368b33997029ca2eca1c
+source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,39 @@ Följ stegen nedan om du vill lägga till uttrycksfragment i ditt innehåll.
 >[!NOTE]
 >
 >Om du skapar ett uttrycksfragment som innehåller flera radbrytningar och använder det i [SMS](../sms/create-sms.md#sms-content) - eller [push](../push/design-push.md) -innehåll, bevaras radbrytningarna. Testa därför ditt [SMS](../sms/send-sms.md) eller [push](../push/send-push.md)-meddelande innan du skickar det.
+
+## Använd implicita variabler {#implicit-variables}
+
+De implicita variablerna förbättrar befintliga fragmentfunktioner för att förbättra effektiviteten vid återanvändning av innehåll och skriptanvändning. Fragment kan använda indatavariabler och skapa utdatavariabler som kan användas i kampanj- och reseinnehåll.
+
+Den här funktionen kan till exempel användas för att initiera spårningsparametrar för dina e-postmeddelanden, baserat på den aktuella kampanjen eller resan, och använda dessa parametrar i de anpassade länkar som läggs till i e-postinnehållet.
+
+Följande användningsområden är möjliga:
+
+1. Använda indatavariabler i ett fragment
+
+   När ett fragment används i ett Campaign-/reseåtgärdsinnehåll kan det utnyttja variabler som deklarerats utanför fragmentet. Nedan visas ett exempel:
+
+   ![](../personalization/assets/variable-in-a-fragment.png)
+
+   Ovanför `utm_content`-variabeln har deklarerats i kampanjinnehållet. När fragmentet **Hero-blocket** används visas en länk till vilken `utm_content`-parametervärdet ska läggas till. Slutresultatet är: `https://luma.enablementadobe.com?utm_campaign= Product_launch&utm_content= start_shopping`.
+
+1. Använda en utdatavariabel från ett fragment
+
+   Variabler som beräknas eller definieras inuti ett fragment är tillgängliga för användning i innehållet. I följande exempel deklarerar ett fragment **F1** en uppsättning variabler:
+
+   ![](../personalization/assets/personalize-with-variables.png)
+
+   I ett e-postinnehåll kan vi ha följande personalisering:
+
+   ![](../personalization/assets/use-fragment-variable.png)
+
+   Fragmentet F1 initierar följande variabler: `utm_campaign` och `utm_content`. Länken i meddelandeinnehållet får sedan dessa parametrar tillagda. Slutresultatet är: `https://luma.enablementadobe.com?utm_campaign= Product_launch&utm_content= start_shopping`.
+
+>[!NOTE]
+>
+>Under körning expanderar systemet det som är inuti fragment och tolkar sedan personaliseringskoden uppifrån och ned. Med detta i åtanke kan man uppnå mer komplexa användningsfall. Du kan till exempel ha ett fragment F1 som skickar variabler till ett annat fragment F2 som sitter nedanför. Du kan också ha ett visuellt fragment F1 som skickar variabler till ett kapslat uttrycksfragment F2.
+
 
 ## Anpassa redigerbara fält {#customize-fields}
 

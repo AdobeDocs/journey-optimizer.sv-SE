@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: design, arbetsyta, resa, gränssnitt, dra, släpp
 exl-id: 1998f6fc-60fd-4038-8669-39cd55bc02d1
-source-git-commit: fec6b15db9f8e6b2a07b55bc9e8fc4d9cb0d73d7
+source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
 workflow-type: tm+mt
 source-wordcount: '1614'
 ht-degree: 0%
@@ -103,7 +103,7 @@ Med kanalåtgärdsaktiviteterna kan du inkludera ett meddelande som är utformat
 
 Använd anpassade åtgärder från åtgärdsaktiviteterna för att skicka meddelanden med tredjepartssystem. [Läs mer om anpassade åtgärder](about-journey-activities.md#action-activities).
 
-## Lägg till alternativa banor{#paths}
+## Lägg till alternativa banor {#paths}
 
 Du kan definiera en reservåtgärd om ett fel eller en timeout inträffar för följande reseaktiviteter: **[!UICONTROL Condition]** och **[!UICONTROL Action]**.
 
