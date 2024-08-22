@@ -7,12 +7,10 @@ feature: Journeys, Actions, Custom Actions
 topic: Administration
 role: Data Engineer, Data Architect, Admin
 level: Intermediate
-hide: true
-hidefromtoc: true
 keywords: marknadsföring, marknadsföra, engagera integreringen
-source-git-commit: 8a8741281edafb812f92ebb8da6dd68d3535f3e1
+source-git-commit: 92591457d2189e3c43ea38c4a09d7cf565bb5d57
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -28,13 +26,13 @@ Satsa på en resa med smidig dataintegrering med Marketo Engage. Denna anpassade
 ## Förhandskrav {#prerequisites}
 
 * Kundinstansen av Marketo Engage måste vara IMS-aktiverad.
-* Marketo Engage-instansen och AEP/AJO-instansen måste finnas i samma IMS-organisation. +link
-* Kunden måste etableras med MktoSync: Inghit Service-åtkomst (NOTE TO ADD HERE + link)
+* Marketo Engage-instansen och AEP/AJO-instansen måste finnas i samma IMS-organisation.
+* Kunden måste etableras med **MktoSync: åtkomst till matningstjänsten**
 
 ## Konfigurera åtgärden {#configure-marketo-action}
 
 * Navigera till Administration > Konfigurationer > Åtgärder och klicka på Hantera
-* Klicka på Skapa åtgärd i listan Åtgärder. Läs mer om att skapa en anpassad åtgärd här (+link)
+* Klicka på Skapa åtgärd i listan Åtgärder. Läs mer om [Anpassade åtgärder](../building-journeys/using-custom-actions.md){target="_blank"}.
 * Ange namn, beskrivning och välj Adobe Marketo Engage som åtgärdstyp
 
 ![](assets/engage-customaction-creation.png){width="40%" align="left"}
@@ -111,8 +109,8 @@ Nu kan du använda din anpassade åtgärd på din dedikerade arbetsyta.
 
 ## Använda åtgärden {#engage-using}
 
-* Dra den anpassade åtgärden till arbetsytan på resan. (Se hur du använder en anpassad åtgärd/länk)
-* Klicka på Redigera för var och en av parametrarna med dynamiska värden som du har konfigurerat i nyttolasten i Begäranparametrar.
+* Dra den anpassade åtgärden till arbetsytan på resan.
+* I avsnittet **Begäranparametrar** klickar du på Redigera för var och en av parametrarna med dynamiska värden som du har konfigurerat i nyttolasten.
 
 ![](assets/engage-use-canvas.png){width="70%" align="left"}
 
