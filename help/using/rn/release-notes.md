@@ -6,7 +6,7 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 6a2c594d427501dee3f979a2c88355fe63bff514
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 8%
@@ -147,7 +147,6 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </tbody>
 </table>
 
-
 ### Förbättringar {#8-improvements}
 
 Den här versionen innehåller de förbättringar som anges nedan.
@@ -167,7 +166,6 @@ Den här versionen innehåller de förbättringar som anges nedan.
 **Skjut kanalen**
 
 * Nu kan du lägga till dina push-autentiseringsuppgifter för mobilprogram i Adobe Journey Optimizer kanalkonfigurationsinställningar. Du behöver inte längre skapa en appyta i Adobe Experience Platform Data Collection.
-
 
 ### Andra ändringar {#changes}
 

@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 6a2c594d427501dee3f979a2c88355fe63bff514
 workflow-type: tm+mt
-source-wordcount: '1950'
+source-wordcount: '1949'
 ht-degree: 26%
 
 ---
@@ -200,8 +200,8 @@ ht-degree: 26%
    + [Hantera e-postavanmälan](using/email/email-opt-out.md)
    + Konfigurera e-postkanal {#configure-email}
       + [Kom igång med e-postkonfiguration](using/email/get-started-email-config.md)
-      + [Konfigurera inställningar för e-postyta](using/email/email-settings.md)
-      + [Anpassa inställningar för e-postyta](using/email/surface-personalization.md)
+      + [Konfigurera e-postkonfigurationsinställningar](using/email/email-settings.md)
+      + [Anpassa e-postkonfigurationen](using/email/surface-personalization.md)
 + Kanal i appen {#in-app}
    + [Kom igång med kanalen i appen](using/in-app/get-started-in-app.md)
    + [Krav för kanaler i appen](using/in-app/inapp-configuration.md)
@@ -230,7 +230,7 @@ ht-degree: 26%
       + [Konfigurera Infobip-provider](using/sms/sms-configuration-infobip.md)
       + [Konfigurera Twilio-provider](using/sms/sms-configuration-twilio.md)
       + [Konfigurera en anpassad leverantör (Beta)](using/sms/sms-configuration-custom.md)
-      + [Skapa en SMS-yta](using/sms/sms-configuration-surface.md)
+      + [Skapa en SMS-konfiguration](using/sms/sms-configuration-surface.md)
 + Direktutskick {#direct-mail}
    + [Kom igång med direktreklam](using/direct-mail/get-started-direct-mail.md)
    + [Skapa direktreklam](using/direct-mail/create-direct-mail.md)
@@ -581,7 +581,7 @@ ht-degree: 26%
    + [Frågor](using/data/get-started-queries.md)
 + Konfiguration {#configuration}
    + [Kom igång med Journey Optimizer-konfiguration](using/configuration/get-started-configuration.md)
-   + [Konfigurera kanalytor](using/configuration/channel-surfaces.md)
+   + [Konfigurera kanalkonfigurationer](using/configuration/channel-surfaces.md)
    + Delegera e-postunderdomäner {#delegate-subdomains}
       + [Kom igång med delegering till underdomäner](using/configuration/about-subdomain-delegation.md)
       + [Delegera en underdomän](using/configuration/delegate-subdomain.md)
