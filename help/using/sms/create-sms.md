@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 59ecb9a5376e697061ddac4cc68f09dee68570c0
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '969'
 ht-degree: 2%
 
 ---
@@ -41,33 +41,37 @@ Bläddra bland flikarna nedan för att lära dig hur du lägger till ett textmed
 
    ![](assets/sms_create_1.png)
 
-1. Ange grundläggande information i meddelandet (etikett, beskrivning, kategori) och välj sedan den meddelandeyta som ska användas.
+1. Ange grundläggande information i meddelandet (etikett, beskrivning, kategori) och välj sedan den meddelandekonfiguration som ska användas.
 
    ![](assets/sms_create_2.png)
 
    Mer information om hur du konfigurerar en resa finns på [sidan](../building-journeys/journey-gs.md)
 
-   Fältet **[!UICONTROL Surface]** är som standard förfyllt med den sista ytan som används av användaren för den kanalen.
+   Fältet **[!UICONTROL configuration]** är som standard förfyllt med den senaste konfigurationen som används av användaren för den kanalen.
 
 Nu kan du börja designa innehållet i SMS-meddelandet med knappen **[!UICONTROL Edit content]**, som beskrivs nedan.
 
 >[!TAB Lägg till ett textmeddelande i en kampanj]
 
-1. Skapa en ny schemalagd eller API-utlöst kampanj, välj **[!UICONTROL SMS]** som din åtgärd och välj den **[!UICONTROL App surface]** som ska användas. Läs mer om SMS-konfigurationen på [den här sidan](sms-configuration.md).
+1. Öppna menyn **[!UICONTROL Campaigns]** och klicka sedan på **[!UICONTROL Create campaign]**.
 
-   ![](assets/sms_create_3.png)
+1. Välj den typ av kampanj som du vill köra
 
-1. Klicka på **[!UICONTROL Create]**.
+   * **Schemalagd - marknadsföring**: Kör kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka marknadsföringsmeddelanden. De konfigureras och körs från användargränssnittet.
+
+   * **API-utlöst - Markering/transaktion**: Kör kampanjen med ett API-anrop. API-utlösta kampanjer syftar till att skicka antingen marknadsförings- eller transaktionsmeddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförs av en individ: lösenordsåterställning, kundvagn osv.
 
 1. I avsnittet **[!UICONTROL Properties]** redigerar du din kampanjs **[!UICONTROL Title]** och **[!UICONTROL Description]**.
-
-   ![](assets/sms_create_4.png)
 
 1. Klicka på knappen **[!UICONTROL Select audience]** för att definiera målgruppen i listan över tillgängliga Adobe Experience Platform-målgrupper. [Läs mer](../audience/about-audiences.md).
 
 1. I fältet **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera personer från den valda målgruppen. [Läs mer](../event/about-creating.md#select-the-namespace).
 
-   ![](assets/sms_create_5.png)
+1. I avsnittet **[!UICONTROL Actions]** väljer du **[!UICONTROL SMS]** och väljer eller skapar en ny konfiguration.
+
+   Läs mer om SMS-konfigurationen på [den här sidan](sms-configuration.md).
+
+   ![](assets/sms_create_3.png)
 
 1. Klicka på **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment och skapa behandlingar för att mäta deras prestanda och identifiera det bästa alternativet för målgruppen. [Läs mer](../content-management/content-experiment.md)
 
@@ -105,7 +109,7 @@ Följ stegen nedan för att konfigurera ditt SMS-innehåll. Inställningarna fö
 
 1. När du har definierat innehållet kan du lägga till spårade URL:er i meddelandet. Gå till menyn **[!UICONTROL Helper functions]** och välj **[!UICONTROL Helpers]** om du vill göra det.
 
-   Observera att för att kunna använda funktionen för förkortning av URL-adresser måste du först konfigurera en underdomän som sedan länkas till din yta. [Läs mer](sms-subdomains.md)
+   Observera att för att du ska kunna använda funktionen för förkortning av URL måste du först konfigurera en underdomän som sedan länkas till din konfiguration. [Läs mer](sms-subdomains.md)
 
    >[!CAUTION]
    >

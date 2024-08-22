@@ -7,10 +7,10 @@ role: User
 level: Beginner
 keywords: direktreklam, meddelande, kampanj
 exl-id: 6b438268-d983-4ab8-9276-c4b7de74e6bd
-source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 3%
+source-wordcount: '753'
+ht-degree: 2%
 
 ---
 
@@ -28,18 +28,20 @@ Skapa en schemalagd kampanj och konfigurera extraheringsfilen om du vill skapa d
 >Kontrollera att du har konfigurerat innan du skapar ett direktmeddelandemeddelande:
 >
 >1. En [filroutningskonfiguration](../direct-mail/direct-mail-configuration.md#file-routing-configuration) som anger på vilken server extraheringsfilen ska överföras och lagras,
->1. En [direktmeddelandeyta](../direct-mail/direct-mail-configuration.md#direct-mail-surface) som refererar till filroutningskonfigurationen.
+>1. En [konfiguration för direktmeddelandetjänst](../direct-mail/direct-mail-configuration.md#direct-mail-surface) som refererar till filroutningskonfigurationen.
 
 
 ## Skapa en kampanj för direktreklam{#create-dm-campaign}
 
 Så här skapar du en direktreklamkampanj:
 
-1. Skapa en ny schemalagd kampanj och välj **[!UICONTROL Direct mail]** som åtgärd.
+1. Öppna menyn **[!UICONTROL Campaigns]** och klicka sedan på **[!UICONTROL Create campaign]**.
 
-1. Markera **[!UICONTROL Direct mail surface]** som ska användas och klicka på **[!UICONTROL Create]**. [Lär dig hur du skapar en yta för direktreklam](direct-mail-configuration.md#direct-mail-surface).
+1. Välj den typ av kampanj som du vill köra
 
-   ![](assets/direct-mail-campaign.png){width="800" align="center"}
+   * **Schemalagd - marknadsföring**: Kör kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka marknadsföringsmeddelanden. De konfigureras och körs från användargränssnittet.
+
+   * **API-utlöst - Markering/transaktion**: Kör kampanjen med ett API-anrop. API-utlösta kampanjer syftar till att skicka antingen marknadsförings- eller transaktionsmeddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförs av en individ: lösenordsåterställning, kundvagn osv.
 
 1. I avsnittet **[!UICONTROL Properties]** redigerar du kampanjens **[!UICONTROL Title]** och **[!UICONTROL Description]**.
 
@@ -51,7 +53,11 @@ Så här skapar du en direktreklamkampanj:
 
 1. I fältet **[!UICONTROL Identity namespace]** väljer du lämpligt namnutrymme för att identifiera personer inom den valda målgruppen. [Läs mer](../event/about-creating.md#select-the-namespace).
 
-   ![](assets/direct-mail-campaign-properties.png){width="800" align="center"}
+1. Välj **[!UICONTROL Direct mail]** i avsnittet **[!UICONTROL Actions]**.
+
+1. Välj eller skapa en ny konfiguration för **[!UICONTROL Direct mail configuration]** att använda. [Lär dig hur du skapar en konfiguration för direktreklam](direct-mail-configuration.md#direct-mail-surface).
+
+   ![](assets/direct-mail-campaign.png){width="800" align="center"}
 
 1. Kampanjer kan schemaläggas för ett specifikt datum eller ställas in så att de återkommer med regelbundna intervall. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** för din kampanj i [det här avsnittet](../campaigns/create-campaign.md#schedule).
 
@@ -78,12 +84,6 @@ Nu kan du börja konfigurera extraheringsfilen som ska skickas till din direktme
    1. I fältet **[!UICONTROL Data]** väljer du de profilattribut som ska visas med [anpassningsredigeraren](../personalization/personalization-build-expressions.md).
 
    1. Om du vill sortera extraheringsfilen med en kolumn markerar du kolumnen och växlar till alternativet **[!UICONTROL Sort by]**. Ikonen **[!UICONTROL Sort By]** visas bredvid kolumnens etikett i avsnittet **[!UICONTROL Data Fields]**.
-
-
-
-
-
-
 
 Extraheringsfilen krävs av direktreklamleverantörer för att skicka e-post till dina kunder. Så här definierar du extraheringsfilens konfiguration:
 

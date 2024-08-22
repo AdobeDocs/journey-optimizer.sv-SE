@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 3c41154f54fb7d93fc6eb2f4c84957db517686c8
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1950'
 ht-degree: 26%
 
 ---
@@ -241,6 +241,7 @@ ht-degree: 26%
    + Konfigurera webbkanal {#configure-web-channel}
       + [Förutsättningar för webbkanaler](using/web/web-prerequisites.md)
       + [Konfigurera webbunderdomäner](using/web/web-delegated-subdomains.md)
+      + [Skapa webbkanalskonfiguration](using/web/web-configuration.md)
    + [Skapa webbupplevelser](using/web/create-web.md)
    + Skapa webbsidor {#author-web-pages}
       + [Redigera webbsidesinnehåll](using/web/edit-web-content.md)
@@ -250,6 +251,7 @@ ht-degree: 26%
 + Kodbaserad upplevelse {#code-based-experience}
    + [Kom igång med kodbaserad kanal](using/code-based/get-started-code-based.md)
    + [Garantier och krav](using/code-based/code-based-prerequisites.md)
+   + [Skapa kodbaserad upplevelsekonfiguration](using/code-based/code-based-configuration.md)
    + [Exempel på implementeringsmetoder](using/code-based/code-based-implementation-samples.md)
    + [Skapa kodbaserade upplevelser](using/code-based/create-code-based.md)
 + Landningssidor {#landing-pages}

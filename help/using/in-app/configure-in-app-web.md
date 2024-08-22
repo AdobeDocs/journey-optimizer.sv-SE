@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
-source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '646'
 ht-degree: 1%
 
 ---
@@ -110,3 +110,49 @@ ht-degree: 1%
 
    ![](assets/configure_web_inapp_14.png)
 
+## Skapa en webbkonfiguration i programmet {#in-app-config}
+
+1. Gå till menyn **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** och klicka sedan på **[!UICONTROL Create channel configuration]**.
+
+   ![](assets/in-app-web-config-1.png)
+
+1. Ange ett namn och en beskrivning (valfritt) för konfigurationen och välj sedan den kanal som ska konfigureras.
+
+   >[!NOTE]
+   >
+   > Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt `.` och bindestreck `-`.
+
+1. Om du vill tilldela anpassade eller grundläggande dataanvändningsetiketter till konfigurationen kan du välja **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md).
+
+1. Välj **[!UICONTROL Marketing action]** om du vill associera medgivandeprinciper till meddelanden som använder den här konfigurationen. Alla policyer för samtycke som är kopplade till marknadsföringsåtgärden utnyttjas för att ta hänsyn till kundernas preferenser. [Läs mer](../action/consent.md#surface-marketing-actions)
+
+1. Välj **Meddelandekanal i appen**.
+
+1. Definiera en appkonfiguration. Du kan göra ändringar på två sätt:
+
+   * Du kan antingen ange en **[!UICONTROL Page URL]** för att tillämpa ändringar på en viss sida.
+
+   * Du kan skapa en regel för flera URL:er som följer samma mönster.
+
++++ Så här skapar du en sidmatchningsregel.
+
+      1. Välj **[!UICONTROL Pages matching rule]** som appkonfiguration och ange **[!UICONTROL Page URL]**.
+
+      1. I fönstret **[!UICONTROL Edit configuration rule]** definierar du dina villkor för fälten **[!UICONTROL Domain]** och **[!UICONTROL Page]**.
+      1. I listrutorna kan du anpassa villkoren ytterligare.
+
+         Här kan du till exempel redigera element som visas på alla försäljningsproduktsidor på Luma-webbplatsen genom att välja Domän > Börjar med > luma och Sida > Innehåller > Försäljning.
+
+         ![](assets/in_app_web_surface_4.png)
+
+      1. Klicka på **[!UICONTROL Add another page rule]** om du vill skapa en annan regel om det behövs.
+
+      1. Markera **[!UICONTROL Default authoring and preview URL]**.
+
+      1. Spara ändringarna. Regeln visas på skärmen **[!UICONTROL Create campaign]**.
+
++++
+
+1. Skicka in webbkonfigurationen i appen.
+
+Du kan nu [skapa en webb-i-app](../in-app/create-in-app-web.md) i en kampanj.

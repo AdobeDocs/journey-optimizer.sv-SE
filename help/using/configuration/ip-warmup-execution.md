@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: IP, grupp, underdomäner, leveransbarhet
 exl-id: 752ffd7f-09c2-4aa3-a067-2dbe0634709c
-source-git-commit: bdd3b951e44adaf3ff362b8af69f5ab74d13f484
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '2434'
 ht-degree: 0%
@@ -58,7 +58,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
    >
    >* Det är bara kampanjer med alternativet **[!UICONTROL IP warmup plan activation]** aktiverat som kan väljas. [Läs mer](#create-ip-warmup-campaign)
    >
-   >* Det går bara att välja kampanjer som använder samma yta som den valda IP-warmup-planen.
+   >* Det går bara att välja kampanjer som använder samma konfiguration som den valda IP-warmup-planen.
 
 1. När en kampanj har valts för den aktuella fasen visas avsnitten för att utesluta profiler, kampanjmålgrupper och domängrupper.
 

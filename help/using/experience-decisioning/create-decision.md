@@ -7,7 +7,7 @@ role: User
 level: Experienced
 badge: label="Begränsad tillgänglighet"
 exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
-source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '1456'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Beslutspolicyer innehåller all urvalslogik för att beslutsmotorn ska kunna vä
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_item_number"
 >title="Definiera antalet artiklar som ska returneras"
->abstract="Välj det antal beslutsartiklar som du vill returnera. Om du till exempel väljer 2 visas de två bästa erbjudandena för den aktuella ytan."
+>abstract="Välj det antal beslutsartiklar som du vill returnera. Om du till exempel väljer 2 visas de två bästa erbjudandena för den aktuella konfigurationen."
 
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_fallback"
@@ -65,7 +65,7 @@ Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för bes�
 
    ![](assets/decision-code-based-details.png)
 
-1. Välj det antal objekt som du vill returnera. Om du till exempel väljer 2 visas de två bästa erbjudandena för den aktuella ytan. Klicka på **[!UICONTROL Next]**
+1. Välj det antal objekt som du vill returnera. Om du till exempel väljer 2 visas de två bästa erbjudandena för den aktuella konfigurationen. Klicka på **[!UICONTROL Next]**
 
 1. Använd knappen **[!UICONTROL Add strategy]** för att definiera urvalsstrategier för din beslutspolicy. Varje strategi består av en erbjudandesamling som är kopplad till en begränsning för behörighet och en rangordningsmetod för att avgöra vilka erbjudanden som ska visas. [Läs mer](selection-strategies.md)
 

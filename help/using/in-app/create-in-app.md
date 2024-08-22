@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: b3b79fe2-7db3-490d-9c3d-87267aa55eea
-source-git-commit: 59ecb9a5376e697061ddac4cc68f09dee68570c0
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1920'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Så här lägger du till ett meddelande i appen under en resa:
 
 1. Ange **[!UICONTROL Label]** och **[!UICONTROL Description]** för meddelandet.
 
-1. Välj den [yta i appen](inapp-configuration.md) som ska användas.
+1. Välj den [konfiguration i appen](inapp-configuration.md#channel-prerequisites) som du vill använda.
 
    ![](assets/in_app_journey_2.png)
 
@@ -125,13 +125,11 @@ Så här lägger du till ett meddelande i appen i en kampanj:
 
 1. Öppna menyn **[!UICONTROL Campaigns]** och klicka sedan på **[!UICONTROL Create campaign]**.
 
-1. I avsnittet **[!UICONTROL Properties]** väljer du när kampanjkörningstypen: Schemalagd eller API-utlöst. Läs mer om kampanjtyper på [den här sidan](../campaigns/create-campaign.md#campaigntype).
+1. Välj den typ av kampanj som du vill köra
 
-1. I avsnittet **[!UICONTROL Actions]** väljer du **[!UICONTROL In-app message]** och **[!UICONTROL App surface]** som tidigare konfigurerats för ditt meddelande i appen. Klicka sedan på **[!UICONTROL Create]**.
+   * **Schemalagd - marknadsföring**: Kör kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka marknadsföringsmeddelanden. De konfigureras och körs från användargränssnittet.
 
-   Läs mer om konfigurationen i appen på [den här sidan](inapp-configuration.md).
-
-   ![](assets/in_app_create_1.png)
+   * **API-utlöst - Markering/transaktion**: Kör kampanjen med ett API-anrop. API-utlösta kampanjer syftar till att skicka antingen marknadsförings- eller transaktionsmeddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförs av en individ: lösenordsåterställning, kundvagn osv.
 
 1. I avsnittet **[!UICONTROL Properties]** anger du **[!UICONTROL Title]** och **[!UICONTROL Description]**-beskrivningen.
 
@@ -142,6 +140,12 @@ Så här lägger du till ett meddelande i appen i en kampanj:
    ![](assets/in_app_create_2.png)
 
 1. I fältet **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera personer från den valda målgruppen. [Läs mer](../event/about-creating.md#select-the-namespace).
+
+1. I avsnittet **[!UICONTROL Actions]** väljer du **[!UICONTROL In-app message]** och väljer eller skapar en ny konfiguration.
+
+   Läs mer om konfigurationen i appen på [den här sidan](inapp-configuration.md).
+
+   ![](assets/in_app_create_1.png)
 
 1. Klicka på **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment och skapa behandlingar för att mäta deras prestanda och identifiera det bästa alternativet för målgruppen. [Läs mer](../content-management/content-experiment.md)
 

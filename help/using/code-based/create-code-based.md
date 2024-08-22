@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: 3f7d71eecf282b21eb09423378008c3b9ccd7edc
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '1028'
 ht-degree: 1%
 
 ---
@@ -23,21 +23,21 @@ Specifika skyddsutkast och rekommendationer för kodbaserade upplevelser finns p
 
 Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampanj.
 
-1. Skapa en kampanj. [Läs mer](../campaigns/create-campaign.md)
+1. Öppna menyn **[!UICONTROL Campaigns]** och klicka sedan på **[!UICONTROL Create campaign]**. [Läs mer](../campaigns/create-campaign.md)
+
+1. Välj den typ av kampanj som du vill köra
+
+   * **Schemalagd - marknadsföring**: Kör kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka marknadsföringsmeddelanden. De konfigureras och körs från användargränssnittet.
+
+   * **API-utlöst - Markering/transaktion**: Kör kampanjen med ett API-anrop. API-utlösta kampanjer syftar till att skicka antingen marknadsförings- eller transaktionsmeddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförs av en individ: lösenordsåterställning, kundvagn osv.
+
+1. Slutför stegen för att skapa en kampanj, till exempel kampanjegenskaperna, [målgrupp](../audience/about-audiences.md) och [schema](../campaigns/create-campaign.md#schedule). Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../campaigns/get-started-with-campaigns.md).
 
 1. Välj åtgärden **[!UICONTROL Code-based experience]**.
 
-1. Ange den kodbaserade upplevelseytan. [Läs mer](#surface-definition)
+1. Välj eller skapa den kodbaserade upplevelsekonfigurationen. [Läs mer](code-based-configuration.md)
 
    ![](assets/code-based-campaign-surface.png)
-
-   >[!CAUTION]
-   >
-   >Kontrollera att den yt-URI som används i din kodbaserade kampanj matchar den som används i din egen implementering. Annars levereras inte ändringarna.
-
-1. Välj **[!UICONTROL Create]**.
-
-1. Slutför stegen för att skapa en kampanj, till exempel kampanjegenskaperna, [målgrupp](../audience/about-audiences.md) och [schema](../campaigns/create-campaign.md#schedule). Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../campaigns/get-started-with-campaigns.md).
 
 1. Redigera ditt innehåll med personaliseringsredigeraren. [Läs mer](#edit-code)
 
@@ -82,7 +82,7 @@ Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampa
 
 1. Klicka på **[!UICONTROL Save and close]** för att bekräfta ändringarna.
 
-Så snart utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll för den valda ytan tillämpas ändringarna på din webbsida eller app.
+Så snart utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll för den yta som definieras i kanalkonfigurationen tillämpas ändringarna på webbsidan eller appen.
 
 ## Testa den kodbaserade kampanjen {#test-code-based-campaign}
 
@@ -124,7 +124,7 @@ När du har definierat din kodbaserade kampanj och redigerat innehållet som du 
 
    ![](assets/code-based-campaign-review.png)
 
-1. Kontrollera och redigera vid behov innehåll, egenskaper, yta, målgrupp och schema.
+1. Kontrollera och redigera vid behov innehåll, egenskaper, konfiguration, målgrupp och schema.
 
 1. Välj **[!UICONTROL Activate]**.
 

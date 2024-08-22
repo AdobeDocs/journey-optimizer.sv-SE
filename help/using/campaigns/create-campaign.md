@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: 59ecb9a5376e697061ddac4cc68f09dee68570c0
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '882'
 ht-degree: 1%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Innan du skapar en ny kampanj måste du se till att du har en ytkanal (t.ex. en meddelandeförinställning) och en Adobe Experience Platform-målgrupp klar att använda. Läs mer i följande avsnitt:
+>Innan du skapar en ny kampanj måste du se till att du har en kanalkonfiguration (dvs. meddelandeyta) och en Adobe Experience Platform-målgrupp klar att använda. Läs mer i följande avsnitt:
 >
->* [Skapa kanalytor](../configuration/channel-surfaces.md)
+>* [Skapa kanalkonfigurationer](../configuration/channel-surfaces.md)
 >* [Kom igång med målgrupper](../audience/about-audiences.md)
 
 Om du vill skapa en ny kampanj öppnar du menyn **[!UICONTROL Campaigns]** och klickar sedan på **[!UICONTROL Create campaign]**. Du kan också duplicera en befintlig livekampanj och skapa en ny. [Läs mer](modify-stop-campaign.md#duplicate)
@@ -81,11 +81,11 @@ Definiera målgruppen för kampanjen genom att följa dessa steg:
 
 ## Skapa meddelandet och konfigurera spårning {#content}
 
-1. I avsnittet **[!UICONTROL Actions]** väljer du kanal och yta som ska användas för att skicka meddelandet.
+1. I avsnittet **[!UICONTROL Actions]** väljer eller skapar du en ny konfiguration.
 
-   En yta är en konfiguration som har definierats av en [systemadministratör](../start/path/administrator.md). Den innehåller alla tekniska parametrar för att skicka meddelandet, som rubrikparametrar, underdomän, mobilappar osv. [Läs mer](../configuration/channel-surfaces.md).
+   En konfiguration definieras av en [systemadministratör](../start/path/administrator.md). Den innehåller alla tekniska parametrar för att skicka meddelandet, som rubrikparametrar, underdomän, mobilappar osv. [Läs mer](../configuration/channel-surfaces.md).
 
-   Endast kanalytor som är kompatibla med marknadsföringskampanjtypen visas i listrutan.
+   Endast kanalkonfigurationer som är kompatibla med marknadsföringskampanjtypen visas i listrutan.
 
    ![](assets/create-campaign-action.png)
 

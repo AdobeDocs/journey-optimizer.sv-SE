@@ -8,7 +8,7 @@ role: Admin
 level: Experienced
 keywords: landning, landningssida, konfigurera, miljö, underdomän, förinställningar
 exl-id: 7cf1f083-bef0-40b5-8ddd-920a9d108eca
-source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 2%
@@ -30,7 +30,7 @@ Följ stegen nedan för att få tillgång till förinställningarna för landnin
 
 1. Öppna menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]**.
 
-1. Välj **[!UICONTROL Branding]** > **[!UICONTROL Landing page presets]**.
+1. Välj **[!UICONTROL Landing page settings]** > **[!UICONTROL Landing page presets]**.
 
    ![](assets/lp_presets-access.png)
 
@@ -46,7 +46,7 @@ Följ stegen nedan för att skapa en förinställning för landningssidan.
 >
 >För att kunna skapa en förinställning måste du kontrollera att du tidigare har konfigurerat minst en underdomän för landningssida. [Lär dig hur](lp-subdomains.md)
 
-1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och välj sedan **[!UICONTROL Branding]** > **[!UICONTROL Landing page presets]**.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och välj sedan **[!UICONTROL Landing page settings]** > **[!UICONTROL Landing page presets]**.
 
 1. Välj **[!UICONTROL Create landing page preset]**.
 
@@ -80,13 +80,11 @@ Följ stegen nedan för att skapa en förinställning för landningssidan.
 
 1. När förinställningen för landningssidan har skapats visas den med statusen **[!UICONTROL Active]** i listan. Den är klar att användas för dina landningssidor.
 
-   ![](assets/lp-preset-active-temp.png)
-
 Du kan nu [skapa landningssidor](../landing-pages/create-lp.md) i [!DNL Journey Optimizer].
 <!--
 >[!NOTE]
 >
->Learn how to create channel surfaces for push notifications and emails in [this section](channel-surfaces.md).-->
+>Learn how to create channel configurations for push notifications and emails in [this section](channel-surfaces.md).-->
 
 **Relaterade ämnen**:
 

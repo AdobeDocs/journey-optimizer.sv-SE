@@ -6,9 +6,9 @@ feature: In App
 level: Intermediate
 keywords: in-app, meddelande, konfiguration, plattform
 exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
-source-git-commit: 59ecb9a5376e697061ddac4cc68f09dee68570c0
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '815'
 ht-degree: 1%
 
 ---
@@ -20,9 +20,8 @@ ht-degree: 1%
 Om du vill skicka meddelanden i appen under dina resor och kampanjer med [!DNL Journey Optimizer] måste du gå igenom följande konfigurationssteg.
 
 1. Se till att du har rätt behörigheter för Journey Optimizer-kampanjer innan du startar, även om du bara tänker använda meddelanden i appen under resor. Kampanjbehörigheter krävs fortfarande. [Läs mer](../campaigns/get-started-with-campaigns.md#campaign-prerequisites).
-En specifik behörighet måste beviljas för åtkomst till menyn **Appytor** i Adobe Experience Platform Data Collection. Läs mer i [den här videon](#video).
 1. Aktivera Adobe Journey Optimizer i datastream för Adobe Experience Platform Data Collection och kontrollera din standardpolicy för sammanslagning i Adobe Experience Platform, enligt beskrivningen i [Leveranskrav](#delivery-prerequisites) nedan.
-1. Skapa och konfigurera en appyta i Adobe Experience Platform Data Collection, vilket beskrivs i [det här avsnittet](#channel-prerequisites).
+1. Skapa en konfiguration för meddelandekanal i appen i Administration > Kanaler > Kanalkonfigurationer, vilket beskrivs i [det här avsnittet](#channel-prerequisites).
 1. Om du använder innehållsexperiment måste du följa de krav som anges i [det här avsnittet](#experiment-prerequisite).
 
 När du är klar kan du skapa, konfigurera och skicka ditt första meddelande i appen. Lär dig hur du uppnår detta i [det här avsnittet](create-in-app.md).
@@ -53,77 +52,62 @@ För att meddelanden i appen ska kunna levereras på rätt sätt måste följand
 
   [Läs mer om Edge Delivery-vyn](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery)
 
-## Krav för kanalkonfiguration {#channel-prerequisites}
+## Skapa en konfiguration i appen {#channel-prerequisites}
 
-1. Öppna menyn **[!UICONTROL App surfaces]** och klicka på **[!UICONTROL Create App surface]**.
+1. Gå till menyn **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** och klicka sedan på **[!UICONTROL Create channel configuration]**.
 
-1. Lägg till ett namn i din **[!UICONTROL App surface]**.
+   ![](assets/inapp_config_1.png)
 
-   ![](assets/inapp_config_2b.png)
+1. Ange ett namn och en beskrivning (valfritt) för konfigurationen och välj sedan den kanal som ska konfigureras.
 
-1. Konfigurera ditt mobilprogram för Apple iOS i listrutan **[!UICONTROL Apple iOS]**.
+   >[!NOTE]
+   >
+   > Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt `.` och bindestreck `-`.
 
-+++ Läs mer
+1. Om du vill tilldela anpassade eller grundläggande dataanvändningsetiketter till konfigurationen kan du välja **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md).
 
-   1. Skriv in din/ditt **[!UICONTROL iOS Bundle ID]**. Mer information om **Paket-ID** finns i [Apple-dokumentationen](https://developer.apple.com/documentation/appstoreconnectapi/bundle_ids).
+1. Välj **[!UICONTROL Marketing action]** om du vill associera medgivandeprinciper till meddelanden som använder den här konfigurationen. Alla policyer för samtycke som är kopplade till marknadsföringsåtgärden utnyttjas för att ta hänsyn till kundernas preferenser. [Läs mer](../action/consent.md#surface-marketing-actions)
 
-   1. (valfritt) Välj **[!UICONTROL Sandbox]** varifrån du vill skicka push-meddelanden. Observera att den nödvändiga åtkomstbehörigheten krävs för att du ska kunna välja en viss sandlåda.
+1. Välj **Meddelandekanal i appen**.
 
-      Mer information om sandlådehantering finns på [den här sidan](../administration/sandboxes.md#assign-sandboxes).
+   ![](assets/inapp_config_9.png)
 
-   1. Aktivera alternativet **[!UICONTROL Push credentials]** om du vill dra och släppa .p8-filen för autentiseringsnyckel.
+1. Välj plattformen som meddelandet i appen ska tillämpas på.
 
-      Du kan också aktivera alternativet **[!UICONTROL Manually enter push credentials]** om du vill kopiera och klistra in APN:s auth-nyckel direkt.
+   ![](assets/inapp_config_10.png)
 
-   1. Ange din **[!UICONTROL Key ID]** och **[!UICONTROL Team ID]**.
+1. För webben:
 
-      ![](assets/inapp_config_2.png)
+   * Du kan antingen ange en **[!UICONTROL Page URL]** för att tillämpa ändringar på en viss sida.
+
+   * Du kan skapa en regel för flera URL:er som följer samma mönster.
+
++++ Så här skapar du en sidmatchningsregel.
+
+      1. Välj **[!UICONTROL Pages matching rule]** som appkonfiguration och ange **[!UICONTROL Page URL]**.
+
+      1. I fönstret **[!UICONTROL Edit configuration rule]** definierar du dina villkor för fälten **[!UICONTROL Domain]** och **[!UICONTROL Page]**.
+      1. I listrutorna kan du anpassa villkoren ytterligare.
+
+         Här kan du till exempel redigera element som visas på alla försäljningsproduktsidor på Luma-webbplatsen genom att välja Domän > Börjar med > luma och Sida > Innehåller > Försäljning.
+
+         ![](assets/in_app_web_surface_4.png)
+
+      1. Klicka på **[!UICONTROL Add another page rule]** om du vill skapa en annan regel om det behövs.
+
+      1. Markera **[!UICONTROL Default authoring and preview URL]**.
+
+      1. Spara ändringarna. Regeln visas på skärmen **[!UICONTROL Create campaign]**.
 
 +++
 
-1. Konfigurera ditt mobilprogram för Android i listrutan **[!UICONTROL Android]**.
+1. För iOS och Android:
 
-+++ Läs mer
+   * Ange din **[!UICONTROL App id]**.
 
-   1. Skriv in din/ditt **[!UICONTROL Android package name]**. Mer information om **paketnamn** finns i [Android-dokumentationen](https://support.google.com/admob/answer/9972781?hl=en#:~:text=The%20package%20name%20of%20an,supported%20third%2Dparty%20Android%20stores).
+1. Skicka in ändringarna.
 
-   1. (valfritt) Välj **[!UICONTROL Sandbox]** varifrån du vill skicka push-meddelanden. Observera att den nödvändiga åtkomstbehörigheten krävs för att du ska kunna välja en viss sandlåda.
-
-      Mer information om sandlådehantering finns på [den här sidan](../administration/sandboxes.md#assign-sandboxes).
-
-   1. Aktivera alternativet **[!UICONTROL Push credentials]** om du vill dra och släppa .json-filen med den privata nyckeln.
-
-      Du kan också aktivera alternativet **[!UICONTROL Manually enter push credentials]** om du vill kopiera och klistra in den privata FCM-nyckeln direkt.
-
-      ![](assets/inapp_config_7.png)
-
-1. Klicka på **[!UICONTROL Save]** när du är klar med konfigurationen av **[!UICONTROL App surface]**.
-
-   ![](assets/inapp_config_3.png)
-
-   Din **[!UICONTROL App surface]** är nu tillgänglig när du skapar en ny kampanj med ett meddelande i appen. [Läs mer](create-in-app.md)
-
-1. När du har skapat appytan måste du nu skapa en mobil egenskap.
-
-   Mer information finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html#for-mobile).
-
-   ![](assets/inapp_config_4.png)
-
-1. Installera följande tillägg på menyn Tillägg för den nya egenskapen:
-
-   * Adobe Experience Platform Edge Network
-   * Adobe Journey Optimizer
-   * AEP Assurance
-   * Godkännande
-   * Identitet
-   * Mobile Core
-   * Profil
-
-   Mer information finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/overview.html#add-a-new-extension).
-
-   ![](assets/inapp_config_5.png)
-
-Kanalen i appen är nu konfigurerad. Du kan börja skicka meddelanden i appen till dina användare.
+Du kan nu välja din konfiguration när du skapar ett meddelande i appen.
 
 ## Förutsättningar för innehållsexperiment {#experiment-prerequisites}
 
@@ -142,13 +126,6 @@ Om du **inte** använder följande fördefinierade [fältgrupper](https://experi
 >[!NOTE]
 >
 >När du lägger till dessa fältgrupper påverkas inte den normala datainsamlingen. Den är bara additiv för de sidor där ett experiment pågår, och lämnar all annan spårning orörd.
-
-## Instruktionsvideo{#video}
-
-I videon nedan visas hur du tilldelar behörigheten **Hantera appkonfiguration** för att komma åt appens ytmeny.
-
->[!VIDEO](https://video.tv.adobe.com/v/3421607)
-
 
 **Relaterade ämnen:**
 

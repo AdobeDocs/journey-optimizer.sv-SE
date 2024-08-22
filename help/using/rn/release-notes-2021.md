@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 hidefromtoc: true
 exl-id: 0e43be98-f471-4860-be84-8f99ab93e983
-source-git-commit: 4de37520b3ea7842d7f385f38c07cdf4984a5939
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '2032'
 ht-degree: 8%
@@ -285,7 +285,7 @@ Se även [Versionsinformation för Adobe Experience Platform oktober](https://ex
 **E-postkonfiguration**
 
 * **Tillåtelselista** - tillåtelselista kan nu aktiveras och inaktiveras på en icke-produktionssandlåda via ett API-anrop. [Läs mer](../configuration/allow-list.md#enable-allow-list)
-* **Navigering** - Den undertryckningslista som var tillgänglig under menyn **Administration > Kanaler > E-postkonfiguration > Allmänt** har flyttats till den nya undermenyn **Undertryckningslista** som samlar alla relaterade funktioner för enklare åtkomst. [Läs mer](../configuration/manage-suppression-list.md#access-suppression-list)
+* **Navigering** - Den undertryckningslista som var tillgänglig under menyn **Administration > Kanaler > E-postinställningar > Allmänt** har flyttats till den nya undermenyn **Undertryckningslista** som samlar alla relaterade funktioner för enklare åtkomst. [Läs mer](../configuration/manage-suppression-list.md#access-suppression-list)
 
 **Beslutshantering**
 

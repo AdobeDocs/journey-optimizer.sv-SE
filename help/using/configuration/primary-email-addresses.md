@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: primär, körning, e-post, mål, profil, optimering
 exl-id: fe2f6516-7790-4501-a3a1-3d7cb94d7874
-source-git-commit: 9cc263d127fdc56f808770d908030b1d14b1f784
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
@@ -32,7 +32,7 @@ När du anger en profil som mål kan det finnas flera e-postadresser eller telef
 
 I så fall använder [!DNL Journey Optimizer] **[!UICONTROL Execution fields]** för att avgöra vilken e-postadress eller vilket telefonnummer som ska användas från profiltjänsten i prioritetsordning.
 
-Om du vill kontrollera de fält som används som standard går du till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL General]** > **[!UICONTROL Executions fields]** .
+Om du vill kontrollera de fält som används som standard går du till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Executions fields]** .
 
 ![](assets/primary-address-execution-fields.png)
 
@@ -46,7 +46,7 @@ I de flesta fall ändrar du ett körningsfält globalt och definierar ett värde
 
 Om du vill ändra körningsfälten globalt på sandlådenivå följer du stegen nedan.
 
-1. Gå till menyn **[!UICONTROL Channels]** > **[!UICONTROL General]** > **[!UICONTROL Executions fields]**.
+1. Gå till menyn **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Executions fields]**.
 
 1. Klicka på **[!UICONTROL Edit]** om du vill ändra standardvärdena.
 

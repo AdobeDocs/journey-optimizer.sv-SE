@@ -9,7 +9,7 @@ role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: ef32423dafa33406244e09f6dddd760e44e4edbf
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Följ stegen nedan för att skapa en API-utlöst kampanj. Detaljerad information
 
 1. Välj kategorin **[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]** beroende på vilken typ av kommunikation du vill skicka.
 
-1. Välj en av kanalerna som stöds och den associerade kanalytan som ska användas för att skicka meddelandet och klicka sedan på **[!UICONTROL Create]**.
+1. Välj en av kanalerna som stöds och den associerade kanalkonfigurationen som ska användas för att skicka meddelandet och klicka sedan på **[!UICONTROL Create]**.
 
    ![](assets/api-triggered-type.png)
 

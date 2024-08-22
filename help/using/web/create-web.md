@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: e28c038b-49ed-4685-bfe6-514116eb0711
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,8 @@ Med [!DNL Journey Optimizer] kan du anpassa webbupplevelsen som du levererar til
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_surface"
->title="Definiera en webbyta"
->abstract="En webbyta kan matcha en eller flera sidor, vilket gör att du kan leverera innehållsändringar på en eller flera webbsidor."
+>title="Definiera en webbkonfiguration"
+>abstract="En webbkonfiguration kan matcha en eller flera sidor, vilket gör att du kan leverera innehållsändringar på en eller flera webbsidor."
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_surface_rule"
@@ -41,39 +41,20 @@ Följ stegen nedan för att börja skapa en webbupplevelse genom en kampanj.
 >
 >Om det här är första gången du skapar en webbupplevelse måste du följa de krav som beskrivs i [det här avsnittet](web-prerequisites.md).
 
-1. Skapa en kampanj. [Läs mer](../campaigns/create-campaign.md)
+1. Öppna menyn **[!UICONTROL Campaigns]** och klicka sedan på **[!UICONTROL Create campaign]**.[Läs mer](../campaigns/create-campaign.md)
+
+
+1. Välj den typ av kampanj som du vill köra
+
+   * **Schemalagd - marknadsföring**: Kör kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka marknadsföringsmeddelanden. De konfigureras och körs från användargränssnittet.
+
+   * **API-utlöst - Markering/transaktion**: Kör kampanjen med ett API-anrop. API-utlösta kampanjer syftar till att skicka antingen marknadsförings- eller transaktionsmeddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförs av en individ: lösenordsåterställning, kundvagn osv.
+
+1. Slutför stegen för att skapa en webbkampanj, till exempel kampanjegenskaperna, [målgrupp](../audience/about-audiences.md) och [schema](../campaigns/create-campaign.md#schedule).
 
 1. Välj åtgärden **[!UICONTROL Web]**.
 
-1. Definiera en webbyta.
-
-   >[!NOTE]
-   >
-   >En webbyta är en webbegenskap som identifieras av en URL där innehållet levereras. Den kan matcha en eller flera sidors URL-adresser så att du kan leverera ändringar för en eller flera webbsidor.
-
-   Du kan antingen ange **[!UICONTROL Page URL]** om du bara vill tillämpa ändringarna på en sida.
-
-   ![](assets/web-campaign-surface.png)
-
-1. Eller så kan du skapa en **[!UICONTROL Pages matching rule]** som mål för flera URL:er som matchar samma regel, till exempel om du vill tillämpa ändringarna på en hjältebanderoll på en hel webbplats eller lägga till en toppbild som visas på alla produktsidor på en webbplats.
-
-   Om du vill göra det väljer du **[!UICONTROL Pages matching rule]** och klickar på **[!UICONTROL Create rule]**.
-
-   ![](assets/web-campaign-matching-rule.png)
-
-1. Definiera dina villkor för fälten **[!UICONTROL Domain]** och **[!UICONTROL Page]**.
-
-   Om du till exempel vill redigera element som visas på alla sidor med produkter för kvinnor på din Luma-webbplats väljer du **[!UICONTROL Domain]** > **[!UICONTROL Starts with]** > `luma` och **[!UICONTROL Page]** > **[!UICONTROL Contains]** > `women`.
-
-   ![](assets/web-pages-matching-rule.png)
-
-1. Spara ändringarna. Regeln visas på skärmen **[!UICONTROL Create campaign]**.
-
-   ![](assets/web-pages-matching-rule-example.png)
-
-1. När du har definierat webbytan väljer du **[!UICONTROL Create]**.
-
-1. Slutför stegen för att skapa en webbkampanj, till exempel kampanjegenskaperna, [målgrupp](../audience/about-audiences.md) och [schema](../campaigns/create-campaign.md#schedule).
+1. Välj eller skapa en ny konfiguration. [Läs mer om webbkonfiguration](web-configuration.md)
 
    ![](assets/web-campaign-steps.png)
 
@@ -111,7 +92,7 @@ När du har definierat inställningarna för din [webbkampanj](#configure-web-ca
 
 1. Välj **[!UICONTROL Review to activate]** från webbkampanjen.
 
-1. Kontrollera och redigera vid behov innehåll, egenskaper, yta, målgrupp och schema.
+1. Kontrollera och redigera vid behov innehåll, egenskaper, konfiguration, målgrupp och schema.
 
 1. Välj **[!UICONTROL Activate]**.
 

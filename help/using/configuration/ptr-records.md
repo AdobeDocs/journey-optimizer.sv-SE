@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: underdomän, PTR, poster, DNS, domän, post
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
-source-git-commit: b2118310bcd84a11aa9b19f1606e4ba0ef39bde4
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Med PTR-poster kan e-postservrar som tar emot e-post kontrollera e-postservrarna
 
 ## Få åtkomst till dina underdomäners PTR-poster {#access-ptr-records}
 
-När du [delegerar](delegate-subdomain.md) din första underdomän till Adobe i [!DNL Journey Optimizer] skapas PTR-poster automatiskt för dina IP-adresser. Du kommer åt dem på menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL PTR records]**.
+När du [delegerar](delegate-subdomain.md) din första underdomän till Adobe i [!DNL Journey Optimizer] skapas PTR-poster automatiskt för dina IP-adresser. Du kommer åt dem på menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL PTR records]**.
 
 ![](assets/ptr-records.png)
 
@@ -86,7 +86,7 @@ Om du vill redigera en PTR-post med en underdomän som har delegerats till Adobe
 
 1. Öppna en PTR-post genom att klicka på dess namn i listan.
 
-   ![](assets/ptr-record-select-cname.png)
+   ![](assets/ptr-record-select.png)
 
 1. Markera en underdomän som har delegerats till Adobe med metoden [CNAME](delegate-subdomain.md#cname-subdomain-delegation) i listan.
 

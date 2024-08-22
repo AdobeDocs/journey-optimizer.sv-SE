@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: 50473c401e05b483387f8ff3c5c480020e8d5c14
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 1%
@@ -27,7 +27,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="campaigns_list"
 >title="Kampanjer"
->abstract="Skapa kampanjer för att leverera engångsinnehåll till en viss målgrupp i olika kanaler. Innan du skapar en kampanj måste du se till att du har en kanal och en Adobe Experience Platform-publik klar att använda."
+>abstract="Skapa kampanjer för att leverera engångsinnehåll till en viss målgrupp i olika kanaler. Innan du skapar en kampanj bör du kontrollera att du har en kanalkonfiguration och en Adobe Experience Platform-målgrupp klar att använda."
 
 Använd Journey Optimizer kampanjer för att leverera engångsinnehåll till en viss målgrupp via olika kanaler. När du använder resor utförs åtgärderna i sekvens. Med kampanjer utförs åtgärder samtidigt, antingen omedelbart eller baserat på ett angivet schema.
 
@@ -63,7 +63,7 @@ Kontrollera följande innan du börjar skapa din första kampanj i Journey Optim
 +++
 
 1. **Du behöver en målgrupp**. Målgrupper måste vara tillgängliga innan kampanjen kan skapas. Läs mer om målgrupper [på den här sidan](../audience/about-audiences.md).
-1. **Du behöver en kanalyta**. Om du vill kunna markera en kanal måste du ha motsvarande kanalyta (dvs. förinställning) skapad och tillgänglig. Läs mer om kanalytor [på den här sidan](../configuration/channel-surfaces.md).
+1. **Du behöver en kanalkonfiguration**. Om du vill kunna välja en kanal måste du ha motsvarande kanalkonfiguration (dvs. förinställning) skapad och tillgänglig. Läs mer om kanalkonfigurationer [på den här sidan](../configuration/channel-surfaces.md).
 
 ## Instruktionsvideo {#video}
 

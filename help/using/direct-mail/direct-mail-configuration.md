@@ -7,9 +7,9 @@ role: User
 level: Experienced
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
-source-git-commit: c7d8dd94bde49e8d02fe553fbac3942f55bf73fe
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1293'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Innan du kan generera filen måste du skapa:
    >
    >Om du vill skapa en filroutningskonfiguration måste du ha den inbyggda behörigheten **[!DNL Manage file routing]**. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager).
 
-1. En [direkt e-postyta](#direct-mail-surface) som refererar till filroutningskonfigurationen. Om du inte har konfigurerat något alternativ för filroutning kan du inte skapa en direktreklamyta.
+1. En [direktadresskonfiguration](#direct-mail-configuration) som refererar till filroutningskonfigurationen. Om du inte har konfigurerat något alternativ för filroutning kommer du inte att kunna skapa en direktadresskonfiguration.
 
 ## Konfigurera filroutning {#file-routing-configuration}
 
@@ -72,7 +72,7 @@ Följ stegen nedan för att konfigurera filflödet.
 
 >[!TAB Amazon S3]
 
-1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL File routing configuration]** > **[!UICONTROL File Routing]** och klicka sedan på **[!UICONTROL Create routing configuration]**.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Direct mail settings]** > **[!UICONTROL File Routing]** och klicka sedan på **[!UICONTROL Create routing configuration]**.
 
    ![](assets/file-routing-config-button.png){width="800" align="center"}
 
@@ -96,13 +96,13 @@ Följ stegen nedan för att konfigurera filflödet.
 
 1. Om du vill kryptera filen kopierar och klistrar du in krypteringsnyckeln i fältet **[!UICONTROL PGP/GPG encryption key]**.
 
-1. Välj **[!UICONTROL Submit]**.  Filroutningskonfigurationen skapas med statusen **[!UICONTROL Active]**. Den är nu klar att användas i en [direktutskick](#direct-mail-surface).
+1. Välj **[!UICONTROL Submit]**.  Filroutningskonfigurationen skapas med statusen **[!UICONTROL Active]**. Den är nu klar att användas i en [direktadresskonfiguration](#direct-mail-surface).
 
-   Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningskonfigurationen, men du kan inte markera den i en yta förrän den är **[!UICONTROL Active]**.
+   Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningskonfigurationen, men du kan inte välja den i en konfiguration förrän den är **[!UICONTROL Active]**.
 
 >[!TAB SFTP]
 
-1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL File routing configuration]** > **[!UICONTROL File Routing]** och klicka sedan på **[!UICONTROL Create routing configuration]**.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Direct mail settings]** > **[!UICONTROL File Routing]** och klicka sedan på **[!UICONTROL Create routing configuration]**.
 
    ![](assets/file-routing-config-button.png){width="800" align="center"}
 
@@ -126,13 +126,13 @@ Följ stegen nedan för att konfigurera filflödet.
 
 1. Om du vill kryptera filen kopierar och klistrar du in krypteringsnyckeln i fältet **[!UICONTROL PGP/GPG encryption key]**.
 
-1. Välj **[!UICONTROL Submit]**.  Filroutningskonfigurationen skapas med statusen **[!UICONTROL Active]**. Den är nu klar att användas i en [direktutskick](#direct-mail-surface).
+1. Välj **[!UICONTROL Submit]**.  Filroutningskonfigurationen skapas med statusen **[!UICONTROL Active]**. Den är nu klar att användas i en [direktadresskonfiguration](#direct-mail-surface).
 
-   Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningskonfigurationen, men du kan inte markera den i en yta förrän den är **[!UICONTROL Active]**.
+   Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningskonfigurationen, men du kan inte välja den i en konfiguration förrän den är **[!UICONTROL Active]**.
 
 >[!TAB Azure]
 
-1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL File routing configuration]** > **[!UICONTROL File Routing]** och klicka sedan på **[!UICONTROL Create routing configuration]**.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Direct mail settings]** > **[!UICONTROL File Routing]** och klicka sedan på **[!UICONTROL Create routing configuration]**.
 
    ![](assets/file-routing-config-button.png){width="800" align="center"}
 
@@ -156,18 +156,18 @@ Följ stegen nedan för att konfigurera filflödet.
 
 1. Om du vill kryptera filen kopierar och klistrar du in krypteringsnyckeln i fältet **[!UICONTROL PGP/GPG encryption key]**.
 
-1. Välj **[!UICONTROL Submit]**.  Filroutningskonfigurationen skapas med statusen **[!UICONTROL Active]**. Den är nu klar att användas i en [direktutskick](#direct-mail-surface).
+1. Välj **[!UICONTROL Submit]**.  Filroutningskonfigurationen skapas med statusen **[!UICONTROL Active]**. Den är nu klar att användas i en [direktadresskonfiguration](#direct-mail-surface).
 
-   Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningskonfigurationen, men du kan inte markera den i en yta förrän den är **[!UICONTROL Active]**.
+   Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningskonfigurationen, men du kan inte välja den i en konfiguration förrän den är **[!UICONTROL Active]**.
 
 >[!ENDTABS]
 
-## Skapa en yta för direktreklam {#direct-mail-surface}
+## Skapa en konfiguration för direktreklam {#direct-mail-surface}
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_surface_settings"
 >title="Definiera inställningar för direktreklam"
->abstract="En yta för direktreklam innehåller formateringsinställningarna för filen som innehåller målgruppsdata och kommer att användas av e-postleverantören. Du måste också definiera var filen ska exporteras genom att välja filroutningskonfigurationen."
+>abstract="En konfiguration för direktreklam innehåller formateringsinställningarna för filen som innehåller målgruppsdata och kommer att användas av e-postleverantören. Du måste också definiera var filen ska exporteras genom att välja filroutningskonfigurationen."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/direct-mail/direct-mail-configuration.html#file-routing-configuration" text="Konfigurera filroutning"
 
 <!--
@@ -181,17 +181,29 @@ Följ stegen nedan för att konfigurera filflödet.
 >title="Definiera tröskelvärdet för fildelning"
 >abstract="Du måste ange maximalt antal poster för varje fil som innehåller målgruppsdata. Du kan välja valfritt tal mellan 1 och 200 000 poster. När det angivna tröskelvärdet har nåtts skapas en annan fil för de återstående posterna."
 
-Om du vill kunna leverera direktreklam med [!DNL Journey Optimizer] måste du skapa en kanalyta som definierar inställningarna för formateringen av filen som ska användas av e-postleverantören.
+För att kunna leverera direktreklam med [!DNL Journey Optimizer] måste du skapa en kanalkonfiguration som definierar inställningarna för formateringen av filen som ska användas av e-postleverantören.
 
-En direktreklamyta måste även innehålla den filroutningskonfiguration som definierar den server där direktpostfilen ska exporteras.
+En konfiguration för direktreklam måste även innehålla den filroutningskonfiguration som definierar den server där direktpostfilen ska exporteras.
 
-1. Skapa en kanalyta. [Läs mer](../configuration/channel-surfaces.md)
+1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och väljer **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]**. Klicka på knappen **[!UICONTROL Create channel configuration]**. [Läs mer](../configuration/channel-surfaces.md)
+
+   ![](assets/direct-mail-config-1.png)
+
+1. Ange ett namn och en beskrivning (valfritt) för konfigurationen och välj sedan den kanal som ska konfigureras.
+
+   >[!NOTE]
+   >
+   > Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt `.` och bindestreck `-`.
+
+1. Om du vill tilldela anpassade eller grundläggande dataanvändningsetiketter till konfigurationen kan du välja **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md).
 
 1. Välj kanalen **[!UICONTROL Direct mail]**.
 
-   ![](assets/surface-direct-mail-channel.png){width="800" align="center"}
+   ![](assets/direct-mail-config-2.png)
 
-1. Definiera inställningarna för direktreklam i det dedikerade avsnittet i kanalytans konfiguration.
+1. Välj **[!UICONTROL Marketing action]** om du vill associera medgivandeprinciper till meddelanden som använder den här konfigurationen. Alla policyer för samtycke som är kopplade till marknadsföringsåtgärden utnyttjas för att ta hänsyn till kundernas preferenser. [Läs mer](../action/consent.md#surface-marketing-actions)
+
+1. Definiera inställningarna för direktreklam i det dedikerade avsnittet i kanalkonfigurationen.
 
    ![](assets/surface-direct-mail-settings.png){width="800" align="center"}
 
@@ -207,13 +219,13 @@ En direktreklamyta måste även innehålla den filroutningskonfiguration som def
 
    >[!CAUTION]
    >
-   >Om du inte har konfigurerat något alternativ för filroutning kan du inte skapa en direktreklamyta. [Läs mer](#file-routing-configuration)
+   >Om du inte har konfigurerat något alternativ för filroutning kommer du inte att kunna skapa en direktadresskonfiguration. [Läs mer](#file-routing-configuration)
 
    ![](assets/surface-direct-mail-file-routing.png){width="800" align="center"}
 
    <!--![](assets/surface-direct-mail-file-routing-with-insertion.png)-->
 
-1. Skicka direktreklamytan.
+1. Skicka konfigurationen för direktreklam.
 
 Du kan nu [skapa ett direktmeddelandemeddelande](../direct-mail/create-direct-mail.md) inuti en kampanj. När kampanjen har startats exporteras filen som innehåller målgruppsdata automatiskt till den server som du har definierat. Leverantören av direktreklam kan då hämta filen och fortsätta med leveransen av direktreklam.
 

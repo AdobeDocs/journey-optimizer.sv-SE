@@ -9,7 +9,7 @@ role: Admin, User
 level: Intermediate
 keywords: behörigheter, författare, meddelanden
 exl-id: 5a968bd8-cf76-4242-aa80-3cfb3d551511
-source-git-commit: c2d9fde723c8dab28faf84152bfbaab437430ca9
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '1159'
 ht-degree: 5%
@@ -79,7 +79,7 @@ Den här rollen innehåller följande behörigheter:
 | Resurser | Behörigheter |
 |-|-|
 | Resor | <ul><li> **[!DNL Manage journeys]**: läs, skapa, redigera och ta bort resor.</li><li>**[!DNL Publish journeys]**: publicera resor.</li><li>**[!DNL Manage journeys events, data sources and actions]**: läs, skapa, redigera och ta bort händelser, källor eller åtgärder.</li><li>**[!DNL View journeys report]**: läs och redigera reserapport.</li></ul> |
-| Kanalkonfigurationer | <ul><li>**[!DNL Manage subdomains delegation]**: läsa, skapa, redigera och ta bort underdomänsdelegering.</li><li>**[!DNL Manage IP pools]**: läs, skapa, redigera och ta bort IP-pool.</li><li>**[!DNL Manage PTR records]**: läs och redigera PTR-poster.</li><li>**[!DNL View PTR records]**: skrivskyddad åtkomst till PTR-poster.</li><li>**[!DNL Manage messages presets]**: läs, skapa, redigera och ta bort innehållsmärkning.</li><li>**[!DNL Manage Landing page settings]**: skapa, redigera och ta bort deldomäner för landningssidor och förinställningar för landningssidor.</li><li> **[!DNL Manage messages general settings]**: läs, skapa, redigera och ta bort allmänna inställningar för meddelanden.</li><li>**[!DNL Manage SMS settings]**: skapa, redigera och ta bort API-autentiseringsuppgifter och SMS-kanalsytor som krävs för att aktivera SMS-kanalen.</li><li>**[!DNL Manage suppression rules]**: få åtkomst till regler för att läsa, skapa, redigera och ta bort inaktiveringar.</li><li>**[!DNL View suppression list]**: läs och exportera en lokal undertryckningslista.</li><li>**[!DNL Manage alerts]**: aktivera/inaktivera aviseringar för resor och berättiganden.</li></ul> |
+| Kanalkonfigurationer | <ul><li>**[!DNL Manage subdomains delegation]**: läsa, skapa, redigera och ta bort underdomänsdelegering.</li><li>**[!DNL Manage IP pools]**: läs, skapa, redigera och ta bort IP-pool.</li><li>**[!DNL Manage PTR records]**: läs och redigera PTR-poster.</li><li>**[!DNL View PTR records]**: skrivskyddad åtkomst till PTR-poster.</li><li>**[!DNL Manage messages presets]**: läs, skapa, redigera och ta bort innehållsmärkning.</li><li>**[!DNL Manage Landing page settings]**: skapa, redigera och ta bort deldomäner för landningssidor och förinställningar för landningssidor.</li><li> **[!DNL Manage messages general settings]**: läs, skapa, redigera och ta bort allmänna inställningar för meddelanden.</li><li>**[!DNL Manage SMS settings]**: skapa, redigera och ta bort API-autentiseringsuppgifter och SMS-kanalskonfigurationer som krävs för att aktivera SMS-kanalen.</li><li>**[!DNL Manage suppression rules]**: få åtkomst till regler för att läsa, skapa, redigera och ta bort inaktiveringar.</li><li>**[!DNL View suppression list]**: läs och exportera en lokal undertryckningslista.</li><li>**[!DNL Manage alerts]**: aktivera/inaktivera aviseringar för resor och berättiganden.</li></ul> |
 | Beslutshantering | <ul><li>**[!DNL Manage decisions]**: läsa, skapa, redigera och ta bort beslut.</li><li>**[!DNL Manage ranking strategies]**: läs, skapa, redigera och ta bort rankningsstrategier.</li></ul> |
 | Adobe Experience Platform | <ul><li>**[!DNL Sandbox]**: Bevilja åtkomst till sandlådor.</li><li>**[!DNL Manage segments]**: läsa, skapa, redigera och ta bort segmentdefinitioner.</li><li>**[!DNL Manage profiles]**: läsa, skapa, redigera och ta bort profiler.</li><li>**[!DNL Read datasets]**: skrivskyddad åtkomst till datauppsättningar.</li><li>**[!DNL Read schemas]**: skrivskyddad åtkomst till scheman.</li><li>**[!DNL Read Identity namespace]**: skrivskyddad åtkomst till identitetsnamnrymden.</li><li>**[!DNL Manage merge policies]**: läsa, skapa, redigera och ta bort sammanfogningsprinciper.</li></ul> |
 | Journey Optimizer Library | <ul><li>**[!DNL Manage Library Items]**: lägg till och ta bort sparade uttryck i [!DNL Journey Optimizer]-biblioteket.</li></ul> |
@@ -96,7 +96,7 @@ Den här rollen innehåller följande behörigheter:
 | Resor | <ul><li>**[!DNL Manage journeys]**: läs, skapa, redigera och ta bort resor.</li><li>**[!DNL Publish journey]**: publicera resor.</li><li>**[!DNL View journeys events, data sources and actions]**: skrivskyddad åtkomst till resehändelser, anpassade åtgärder för resan och datakällor för resedata.</li><li>**[!DNL View journeys report]**: läs, redigera reserapporter.</li></ul> |
 | Beslutshantering | <ul><li>**[!DNL Manage decisions]**: läsa, skapa, redigera och ta bort beslutsenheter.</li><li>**[!DNL Manage ranking strategies]**: läs, skapa, redigera och ta bort anpassade rapporter och använd åtgärdsfunktioner.</li></ul> |
 | Adobe Experience Platform | <ul><li>**[!DNL Manage segments]**: läsa, skapa, redigera och ta bort segmentdefinitioner.</li><li>**[!DNL Manage profiles]**: läsa, skapa, redigera och ta bort profiler.</li><li>**[!DNL Read datasets]**: skrivskyddad åtkomst till datauppsättningar.</li><li>**[!DNL Read schemas]**: skrivskyddad åtkomst till scheman.</li><li>**[!DNL Manage merge policies]**: läsa, skapa, redigera och ta bort sammanfogningsprinciper.</li></ul> |
-| Kanalkonfigurationer | <ul><li>**[!DNL View channel surfaces]**: skrivskyddad åtkomst till kanalytor.</li></ul> |
+| Kanalkonfigurationer | <ul><li>**[!DNL View channel configurations]**: skrivskyddad åtkomst till kanalkonfigurationer.</li></ul> |
 
 ## [!DNL Journey Manager] {#journey-manager}
 
@@ -109,7 +109,7 @@ Den här rollen innehåller följande behörigheter:
 | Resor | <ul><li>**[!DNL Manage journeys]**: läs, skapa, redigera och ta bort resor.</li><li>**[!DNL View journeys events]**: skrivskyddad åtkomst till resehändelser, anpassade åtgärder för resan och datakällor för resedata.</li><li>**[!DNL View journeys report]**: läs, redigera reserapport.</li></ul> |
 | Beslutshantering | <ul><li>**[!DNL Manage decisions]**: läsa, skapa, redigera och ta bort beslutsenheter.</li><li>**[!DNL Manage ranking strategies]**: läs, skapa, redigera och ta bort anpassade rapporter och använd åtgärdsfunktioner.</li></ul> |
 | Adobe Experience Platform | <ul><li> **[!DNL Manage segments]**: läsa, skapa, redigera och ta bort segmentdefinitioner.</li><li>**[!DNL Manage profiles]**: läsa, skapa, redigera och ta bort profiler.</li><li>**[!DNL Read datasets]**: skrivskyddad åtkomst till datauppsättningar.</li><li>**[!DNL Read schemas]**: skrivskyddad åtkomst till scheman.</li><li>**[!DNL Manage merge policies]**: läsa, skapa, redigera och ta bort sammanfogningsprinciper.</li></ul> |
-| Kanalkonfigurationer | <ul><li>**[!DNL View channel surfaces]**: skrivskyddad åtkomst till kanalytor.</li></ul> |
+| Kanalkonfigurationer | <ul><li>**[!DNL View channel configurations]**: skrivskyddad åtkomst till kanalkonfigurationer.</li></ul> |
 
 ## [!DNL Journey Viewer] {#journey-viewer}
 

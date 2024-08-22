@@ -9,7 +9,7 @@ exl-id: 0964a484-f957-4aae-a571-61b2a1615026
 feature: Application Settings
 topic: Administration
 keywords: konfiguration, konfigurera, meddelanden, kanal, sandlåda, optimerare
-source-git-commit: 970fef96b6fa04f2b5ce1a8d10f89802f513b373
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 10%
@@ -33,7 +33,7 @@ För att kunna skapa dina resor och skicka meddelanden måste du gå igenom konf
 
    * För **SMS**-kanalen måste du konfigurera instansen för att skicka SMS, inklusive att integrera providerinställningarna med [!DNL Journey Optimizer]. [Läs mer](../sms/sms-configuration.md)
 
-1. När du är klar måste du skapa **kanalytor** för att konfigurera alla tekniska parametrar som krävs för att leverera meddelanden. [Läs mer](channel-surfaces.md)
+1. När du är klar måste du skapa **kanalkonfigurationer** för att konfigurera alla tekniska parametrar som krävs för att leverera meddelanden. [Läs mer](channel-surfaces.md)
 
 1. Du kan även:
 

@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 keywords: länkar, spåra, övervaka, e-post
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: 4de37520b3ea7842d7f385f38c07cdf4984a5939
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 1%
@@ -89,7 +89,7 @@ Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
 
 >[!NOTE]
 >
->E-postmeddelanden av marknadsföringstyp måste innehålla en [länk för avanmälan](../privacy/opt-out.md#opt-out-management), vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [kanalytan](../configuration/channel-surfaces.md#email-type) när meddelandet skapas.
+>E-postmeddelanden av marknadsföringstyp måste innehålla en [länk för avanmälan](../privacy/opt-out.md#opt-out-management), vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [kanalkonfigurationen](../configuration/channel-surfaces.md#email-type) när meddelandet skapas.
 
 ## Justera länkar {#adjust-links}
 
@@ -164,7 +164,7 @@ Rapportering om öppningar och klick finns i [Live-rapporten](../reports/live-re
 
 ## Anpassa URL-spårning {#url-tracking}
 
-Vanligtvis hanteras [URL-spårning](email-settings.md#url-tracking) på ytnivå, men profilattribut stöds inte. Det enda sättet att göra det är för närvarande att [anpassa URL:er](../personalization/personalization-syntax.md#perso-urls) i e-postdesignern.
+Vanligtvis hanteras [URL-spårning](email-settings.md#url-tracking) på konfigurationsnivå, men profilattribut stöds inte. Det enda sättet att göra det är för närvarande att [anpassa URL:er](../personalization/personalization-syntax.md#perso-urls) i e-postdesignern.
 
 Följ stegen nedan om du vill lägga till personaliserade URL-spårningsparametrar för länkarna.
 

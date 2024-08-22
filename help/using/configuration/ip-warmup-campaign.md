@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: IP, pooler, leveransbarhet
 exl-id: a9995ca1-d7eb-4f8d-a9d9-fe56198ac325
-source-git-commit: bdd3b951e44adaf3ff362b8af69f5ab74d13f484
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 2%
@@ -27,11 +27,11 @@ Innan du skapar IP-värmeringsplanen i [!DNL Journey Optimizer] måste du först
 
 Följ stegen nedan om du vill skapa en IP-värmare.
 
-1. Skapa en [e-postkanal ](../email/email-settings.md) [yta](channel-surfaces.md) för domänen och de IP-adresser som du har identifierat för din värdplan.
+1. Skapa en [e-post](../email/email-settings.md) kanal [konfiguration](channel-surfaces.md) för domänen och IP-adresserna som du har identifierat för din värdplan.
 
    >[!NOTE]
    >
-   >* Lär dig hur du väljer vilken domän och vilka IP-adresser som ska användas i en e-postyta i [det här avsnittet](../email/email-settings.md#subdomains-and-ip-pools).
+   >Lär dig hur du väljer vilken domän och vilka IP-adresser som ska användas i en e-postkonfiguration i [det här avsnittet](../email/email-settings.md#subdomains-and-ip-pools).
    >
    >* Arbeta med din leveranskonsult för att identifiera den domän och de IP-adresser som ska användas för din IP-warmup-plan.<!--TBC-->
 
@@ -39,11 +39,11 @@ Följ stegen nedan om du vill skapa en IP-värmare.
 
    <!--Select the Marketing category. The IP warmup plan activation option is only available for  marketing-type campaigns.-->
 
-1. Välj den yta som du skapade för IP-värmare.
+1. Välj konfigurationen som du skapade för IP-värmare.
 
    ![](assets/ip-warmup-campaign-surface.png)
 
-   <!--You must use the same surface as the one that will be used for the asociated IP warmup plan. [Learn how to create an IP warmup plan](#create-ip-warmup-plan)-->
+   <!--You must use the same configuration as the one that will be used for the asociated IP warmup plan. [Learn how to create an IP warmup plan](#create-ip-warmup-plan)-->
 
 1. Klicka på **[!UICONTROL Create]**.
 

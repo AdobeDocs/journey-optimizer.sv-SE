@@ -1,36 +1,36 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Konfigurera SMS-ytan
-description: Lär dig hur du konfigurerar din SMS/MMS-yta för att skicka textmeddelanden med Journey Optimizer
+title: Konfigurera SMS-konfigurationen
+description: Lär dig hur du konfigurerar din SMS/MMS-konfiguration för att skicka textmeddelanden med Journey Optimizer
 feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 0d541520-016e-468f-b011-808712847556
-source-git-commit: 080928d14a9d6ec116286386748b77a6a25e76f8
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 0%
 
 ---
 
-# Skapa en SMS/MMS-yta {#message-preset-sms}
+# Skapa en SMS/MMS-konfiguration {#message-preset-sms}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_surface_sms_type"
 >title="Definiera meddelandekategorin"
->abstract="Välj typ av textmeddelanden med den här ytan: Marknadsföring för marknadsföringsmeddelanden som kräver användarens samtycke eller Transaktionsmeddelanden för icke-kommersiella meddelanden, till exempel lösenordsåterställning."
+>abstract="Välj typ av textmeddelanden med den här konfigurationen: Marknadsföring för kampanjmeddelanden som kräver användarens samtycke eller Transaktionsmeddelanden för icke-kommersiella meddelanden, till exempel lösenordsåterställning."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/privacy/consent/opt-out.html#sms-opt-out-management" text="Avanmäl dig i marknadsföringstextmeddelanden"
 
-När din SMS/MMS-kanal har konfigurerats måste du skapa en kanal för att kunna skicka SMS- och MMS-meddelanden från **[!DNL Journey Optimizer]**.
+När din SMS/MMS-kanal har konfigurerats måste du skapa en kanalkonfiguration för att kunna skicka SMS- och MMS-meddelanden från **[!DNL Journey Optimizer]**.
 
-Så här skapar du en kanalyta:
+Så här skapar du en kanalkonfiguration:
 
-1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och väljer **[!UICONTROL Branding]** > **[!UICONTROL Channel surfaces]**. Klicka på knappen **[!UICONTROL Create channel surface]**.
+1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och väljer **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]**. Klicka på knappen **[!UICONTROL Create channel configuration]**.
 
    ![](assets/preset-create.png)
 
-1. Ange ett namn och en beskrivning (valfritt) för ytan och välj sedan SMS-kanalen.
+1. Ange ett namn och en beskrivning (valfritt) för konfigurationen och välj sedan SMS-kanalen.
 
    ![](assets/sms-create-surface.png)
 
@@ -42,18 +42,18 @@ Så här skapar du en kanalyta:
 
    ![](assets/sms-surface-settings.png)
 
-   Börja med att markera **[!UICONTROL SMS Type]** som ska skickas med ytan: **[!UICONTROL Transactional]** eller **[!UICONTROL Marketing]**.
+   Börja med att markera **[!UICONTROL SMS Type]** som ska skickas med konfigurationen: **[!UICONTROL Transactional]** eller **[!UICONTROL Marketing]**.
 
    * Välj **Marknadsföring** för kampanjtextmeddelanden: dessa meddelanden kräver användarens samtycke.
    * Välj **Transaktionell** för icke-kommersiella meddelanden, till exempel orderbekräftelse, meddelanden om lösenordsåterställning eller leveransinformation.
 
-   När du skapar ett SMS/MMS måste du välja en giltig kanalyta som matchar den kategori som du valde för meddelandet.
+   När du skapar ett SMS/MMS måste du välja en giltig kanalkonfiguration som matchar den kategori som du valde för meddelandet.
 
    >[!CAUTION]
    >
    >**Transaktionsmeddelanden** kan skickas till profiler som avbeställt marknadskommunikation. Dessa meddelanden kan bara skickas i särskilda sammanhang.
 
-1. Markera **[!UICONTROL SMS configuration]** som ska associeras med ytan.
+1. Markera **[!UICONTROL SMS configuration]** som ska associeras med konfigurationen.
 
    Mer information om hur du konfigurerar miljön för att skicka SMS-meddelanden finns i [det här avsnittet](#create-api).
 
@@ -67,17 +67,17 @@ Så här skapar du en kanalyta:
    >
    >Om du vill kunna välja en underdomän kontrollerar du att du tidigare har konfigurerat minst en SMS/MMS-underdomän. [Lär dig hur](sms-subdomains.md)
 
-1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara kanalytan som ett utkast och återuppta konfigurationen senare.
+1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara kanalkonfigurationen som utkast och återuppta konfigurationen senare.
 
    ![](assets/sms-submit-surface.png)
 
-1. När kanalytan har skapats visas den i listan med statusen **[!UICONTROL Processing]**.
+1. När kanalkonfigurationen har skapats visas den i listan med statusen **[!UICONTROL Processing]**.
 
    >[!NOTE]
    >
    >Om kontrollerna inte lyckas kan du läsa mer om möjliga felorsaker i [det här avsnittet](#monitor-channel-surfaces).
 
-1. När kontrollerna har slutförts får kanalytan statusen **[!UICONTROL Active]**. Den är klar att användas för att leverera meddelanden.
+1. När kontrollerna har slutförts får kanalkonfigurationen statusen **[!UICONTROL Active]**. Den är klar att användas för att leverera meddelanden.
 
    ![](assets/preset-active.png)
 

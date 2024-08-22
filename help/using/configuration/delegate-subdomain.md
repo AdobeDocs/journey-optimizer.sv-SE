@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: underdomän, delegering, domän, DNS
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: f24d638711c9fd755dad1553fcbfa82810eaaab6
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '1779'
 ht-degree: 5%
@@ -57,7 +57,7 @@ Du kan förlita dig på att Adobe upprätthåller den DNS-infrastruktur som krä
 
 Följ stegen nedan om du vill delegera en ny underdomän till Adobe helt:
 
-1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Subdomains]** och klicka sedan på **[!UICONTROL Set up subdomain]**.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL Subdomains]** och klicka sedan på **[!UICONTROL Set up subdomain]**.
 
    ![](assets/subdomain-delegate.png)
 
@@ -137,7 +137,7 @@ Med funktionen för konfigurering av CNAME-underdomäner kan du skapa en underdo
 
 Följ stegen nedan för att konfigurera en underdomän med CNAME:
 
-1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Subdomains]** och klicka sedan på **[!UICONTROL Set up subdomain]**.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL Subdomains]** och klicka sedan på **[!UICONTROL Set up subdomain]**.
 
 1. Välj metoden **[!UICONTROL CNAME set up]**.
 

@@ -7,10 +7,10 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: 5a67177e-a7cf-41a8-9e7d-37f7fe3d34dc
-source-git-commit: 85aee5c5ff9ceee10b2dc01ef9e31947cef9daae
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 2%
+source-wordcount: '574'
+ht-degree: 3%
 
 ---
 
@@ -24,43 +24,19 @@ Följ stegen nedan för att konfigurera webbkanalen i appen:
 
 * Anpassa utlösarna. Meddelanden i appen stöder två typer av utlösare: Skickade data till plattformen och Manuella utlösare. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-in-app-messaging.html)
 
+* Skapa en webbkonfiguration i appen. [Läs mer](inapp-configuration.md)
+
 ## Skapa en webbkampanj i appen {#create-inapp-web-campaign}
 
 1. Öppna menyn **[!UICONTROL Campaigns]** och klicka sedan på **[!UICONTROL Create campaign]**.
 
-1. I avsnittet **[!UICONTROL Properties]** väljer du när kampanjkörningstypen: Schemalagd eller API-utlöst. Läs mer om kampanjtyper på [den här sidan](../campaigns/create-campaign.md#campaigntype).
+1. Välj typ av kampanjkörning: Schemalagd eller API-utlöst. Läs mer om kampanjtyper på [den här sidan](../campaigns/create-campaign.md#campaigntype).
 
-1. Välj **[!UICONTROL In-app message]** i avsnittet **[!UICONTROL Actions]**. Välj Webb i listrutan **[!UICONTROL Send to]**.
+1. Välj **[!UICONTROL In-app message]** i listrutan **[!UICONTROL Actions]**.
 
    ![](assets/in_app_web_surface_1.png)
 
-1. Definiera en appyta. Du kan göra ändringar på två sätt:
-
-   * Du kan antingen ange en **[!UICONTROL Page URL]** för att tillämpa ändringar på en viss sida.
-
-   * Du kan skapa en regel för flera URL:er som följer samma mönster.
-
-+++ Så här skapar du en sidmatchningsregel.
-
-      1. Välj **[!UICONTROL Pages matching rule]** som appyta.
-      1. Klicka på **[!UICONTROL Create rule]**.
-
-         ![](assets/in_app_web_surface_3.png)
-
-      1. I fönstret **[!UICONTROL Edit surface rule]** definierar du dina villkor för fälten **[!UICONTROL Domain]** och **[!UICONTROL Page]**.
-      1. I listrutorna kan du anpassa villkoren ytterligare.
-
-         Här kan du till exempel redigera element som visas på alla försäljningsproduktsidor på Luma-webbplatsen genom att välja Domän > Börjar med > luma och Sida > Innehåller > Försäljning.
-
-         ![](assets/in_app_web_surface_4.png)
-
-      1. Spara ändringarna. Regeln visas på skärmen **[!UICONTROL Create campaign]**.
-
-+++
-
-   ![](assets/in_app_web_surface_2.png)
-
-1. När appytan har valts och konfigurerats klickar du på **[!UICONTROL Create]**.
+1. Välj eller skapa en appkonfiguration. [Läs mer](inapp-configuration.md#channel-prerequisites)
 
 ## Definiera webbkampanjen i appen {#configure-inapp}
 
@@ -74,7 +50,7 @@ Följ stegen nedan för att konfigurera webbkanalen i appen:
 
 1. I fältet **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera personer från den valda målgruppen. [Läs mer](../event/about-creating.md#select-the-namespace).
 
-1. På menyn **[!UICONTROL Action]** hittar du de inställningar som tidigare konfigurerats som **[!UICONTROL App surface]**. Du kan göra ändringar här om det behövs eller uppdatera regeln genom att klicka på **[!UICONTROL Edit Rule]**.
+1. På menyn **[!UICONTROL Action]** hittar du de inställningar som tidigare konfigurerats som **[!UICONTROL App configuration]**. Du kan göra ändringar här om det behövs eller uppdatera regeln genom att klicka på **[!UICONTROL Edit Rule]**.
 
 1. Klicka på **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment och skapa behandlingar för att mäta deras prestanda och identifiera det bästa alternativet för målgruppen. [Läs mer](../content-management/content-experiment.md)
 

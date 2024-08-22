@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 2214ec90-580e-469e-9b14-d8cb2d4bb050
-source-git-commit: 61bd9ce680c56b0eb8737804fb013dbad430f1cc
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 >
 >* Skapa en sandlåda
 >* Konfigurera användarbehörigheter
->* Konfigurera Journey Optimizer-kanalytor för e-post-, push- och SMS-meddelanden
+>* Konfigurera Journey Optimizer-kanalkonfigurationer för e-post-, push- och SMS-meddelanden
 
 Använd fallspelsböcker är fördefinierade arbetsflöden som åtgärdar vanliga användningsfall som du kan utföra med Adobe Experience Platform och Journey Optimizer.
 

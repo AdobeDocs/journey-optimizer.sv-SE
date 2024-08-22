@@ -7,7 +7,8 @@ feature: Templates
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 59c675dd2ac94b6967cfb3a93f74b2016a090190
+exl-id: 01726ab6-f581-4d19-aedd-2541bc0f27c6
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 1%
@@ -30,7 +31,7 @@ Du kan testa återgivningen av vissa e-postmallar, oavsett om de har skapats fr�
 
    * Om du vill göra det klickar du på knappen **[!UICONTROL Send proof]** och följer stegen som beskrivs i [det här avsnittet](../content-management/proofs.md).
 
-   * Innan du skickar korrekturet måste du markera den [e-postyta](../configuration/channel-surfaces.md) som ska användas för att testa ditt innehåll.
+   * Innan du skickar korrekturet måste du välja den [e-postkonfiguration](../configuration/channel-surfaces.md) som ska användas för att testa ditt innehåll.
 
      ![](assets/content-template-stimulate-proof-surface.png)
 

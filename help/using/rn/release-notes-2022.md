@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 hidefromtoc: true
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
-source-git-commit: e34c39c02f71361277f28b1a116a54390875f93d
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '3598'
 ht-degree: 8%
@@ -217,8 +217,8 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 **Administration**
 
 * När du aktiverar eller inaktiverar tillåtelselista visas nu en ny varning som detaljerar effekterna av varje åtgärd. [Läs mer](../configuration/allow-list.md#enable-allow-list)
-* Användargränssnittet för att skapa kanalytor, skapa IP-pooler, hantera suppressionslistan och tillåtelselista samt konfigurera SMS-kanalen har uppdaterats.
-* När du nu skapar den första kanalytan för en viss underdomän tar bearbetningstiden 10 minuter till 10 dagar och bara upp till 3 timmar för efterföljande ytor som använder den underdomänen. [Läs mer](../configuration/channel-surfaces.md#create-channel-surface)
+* Användargränssnittet för att skapa kanalkonfigurationer, skapa IP-pooler, hantera inaktiveringslistan och tillåtelselista samt konfigurera SMS-kanalen har uppdaterats.
+* När du nu skapar den första kanalkonfigurationen för en viss underdomän tar bearbetningstiden 10 minuter till 10 dagar och endast upp till 3 timmar för efterföljande ytor som använder den underdomänen. [Läs mer](../configuration/channel-surfaces.md#create-channel-surface)
 * Användargränssnittet för att skapa förinställningar för landningssidor och underdomäner för landningssidor har uppdaterats. [Läs mer](../landing-pages/lp-subdomains.md)
 
 **Granskningskontroller**
@@ -399,7 +399,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 **Meddelanden**
 
-* Meddelandeförinställningar är nu **kanalytor**. [Läs mer](../configuration/channel-surfaces.md)
+* Meddelandeförinställningar är nu **kanalkonfigurationer**. [Läs mer](../configuration/channel-surfaces.md)
 
 **Administration**
 

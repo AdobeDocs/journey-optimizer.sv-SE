@@ -9,7 +9,7 @@ feature: Channel Configuration, Email
 topic: Administration
 keywords: e-post, konfiguration, yta, underdomäner
 exl-id: 1fc9a4f6-6c34-4414-b400-aac6bda9ee25
-source-git-commit: bd5e5e501d557e11fb0c1c71a0f9289f39601348
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 7%
@@ -28,14 +28,14 @@ Om du vill kunna skicka e-post via resor och kampanjer i [!DNL Journey Optimizer
 
    ![](../configuration/assets/ip-pool-create.png)
 
-1. Skapa kanalytor och välj kanalen **[!UICONTROL Email]**. [Läs mer](../configuration/channel-surfaces.md)
+1. Skapa kanalkonfigurationer och välj kanalen **[!UICONTROL Email]**. [Läs mer](../configuration/channel-surfaces.md)
 
 
    ![](../configuration/assets/preset-general.png)
 
-1. Konfigurera alla tekniska parametrar som krävs för att leverera e-postmeddelanden i varje e-postkanal. [Läs mer](email-settings.md)
+1. Konfigurera alla tekniska parametrar som krävs för att leverera e-postmeddelanden i varje e-postkanalskonfiguration. [Läs mer](email-settings.md)
 
-   * Här väljer du den underdomän som ska användas för att skicka e-postmeddelanden och de IP-pooler som ska associeras med ytan. [Läs mer](email-settings.md#subdomains-and-ip-pools)
+   * Här väljer du den underdomän som ska användas för att skicka e-postmeddelanden och de IP-pooler som ska associeras med konfigurationen. [Läs mer](email-settings.md#subdomains-and-ip-pools)
 
    ![](assets/surface-subdomain-ip-pool.png)
 

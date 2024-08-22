@@ -10,7 +10,7 @@ level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: 38e82eb2-67d9-4a7d-8c1f-77dab20bcec4
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: 8484c39cf610fc4044e656243eba88deb8c50867
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '1178'
 ht-degree: 1%
@@ -102,7 +102,7 @@ Ditt översättningsprojekt har skapats och kan användas i en flerspråkig kamp
 
 I det här avsnittet kan du ange ditt primära språk och tillhörande språk för hantering av ditt flerspråkiga innehåll. Du kan också välja det attribut som du vill använda för att söka efter information om profilspråket.
 
-1. Gå till **[!UICONTROL Channel]** på menyn **[!UICONTROL Administration]**.
+1. Gå till **[!UICONTROL Channel]** > **[!UICONTROL General settings]** på menyn **[!UICONTROL Administration]**.
 
 1. Klicka på **[!UICONTROL Create language settings]** på menyn **[!UICONTROL Language settings]**.
 
@@ -131,7 +131,7 @@ I det här avsnittet kan du ange ditt primära språk och tillhörande språk f�
 1. Klicka på **[!UICONTROL Submit]** för att skapa din **[!UICONTROL Language settings]**.
 
 <!--
-1. Access the **[!UICONTROL Channel surfaces]** menu and create a new channel surface or select an existing one.
+1. Access the **[!UICONTROL channel configurations]** menu and create a new channel configuration or select an existing one.
 
 1. In the **[!UICONTROL Header parameters]** section, select the **[!UICONTROL Enable multilingual]** option.
 

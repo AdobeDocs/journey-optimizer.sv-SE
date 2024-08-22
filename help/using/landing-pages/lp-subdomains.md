@@ -8,7 +8,7 @@ role: Admin
 level: Experienced
 keywords: landning, landningssida, underdomäner, konfiguration
 exl-id: dd1af8dc-3920-46cb-ae4d-a8f4d4c26e89
-source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 0%
@@ -50,9 +50,7 @@ Du kan använda en underdomän som redan har delegerats till Adobe eller konfigu
 
 Om du vill använda en underdomän som redan har delegerats till Adobe följer du stegen nedan.
 
-1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och välj sedan **[!UICONTROL Email configuration]** > **[!UICONTROL Landing page subdomains]**.
-
-   ![](assets/lp_access-subdomains.png)
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och välj sedan **[!UICONTROL Landing page settings]** > **[!UICONTROL Landing page subdomains]**.
 
 1. Klicka på **[!UICONTROL Set up subdomain]**.
 
@@ -105,7 +103,7 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 
 Följ stegen nedan för att konfigurera en ny underdomän.
 
-1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och välj sedan **[!UICONTROL Email configuration]** > **[!UICONTROL Landing page subdomains]**.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och välj sedan **[!UICONTROL Landing page settings]** > **[!UICONTROL Landing page subdomains]**.
 
 1. Klicka på **[!UICONTROL Set up subdomain]**.
 

@@ -9,7 +9,7 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: politik, styrning, plattform, hälso- och sjukvård, samtycke
 exl-id: 01ca4b3e-3778-4537-81e9-97ef92c9aa9e
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 0%
@@ -34,14 +34,14 @@ Du kan till exempel [skapa medgivandeprinciper](https://experienceleague.adobe.c
 
    * Om du har Adobe **hälso- och sjukvårdsskölden** eller **skölden för sekretess och säkerhet** kan du skapa en anpassad samtyckespolicy som åsidosätter standardlogiken. Du kan till exempel definiera en profil som endast skickar e-postmeddelanden till alla personer som har valt att delta. Om det inte finns någon anpassad princip gäller standardprincipen.
 
-  Om du vill tillämpa en anpassad policy måste du definiera en marknadsföringsåtgärd i den policyn och associera den med en kanalyta. [Läs mer](#surface-marketing-actions)
+  Om du vill tillämpa en anpassad profil måste du definiera en marknadsföringsåtgärd i den principen och associera den med en kanalkonfiguration. [Läs mer](#surface-marketing-actions)
 
 På kundresenivån kan du tillämpa medgivandeprinciper för dina anpassade åtgärder:
 
 * När **konfigurerar en anpassad åtgärd** kan du definiera en kanal- och marknadsföringsåtgärd. [Läs mer](#consent-custom-action)
 * När du lägger till den anpassade **åtgärden i en resa** kan du definiera ytterligare en marknadsföringsåtgärd. [Läs mer](#consent-journey)
 
-## Utnyttja samtyckesregler via kanalytor {#surface-marketing-actions}
+## Utnyttja samtyckespolicyer via kanalkonfigurationer {#surface-marketing-actions}
 
 I [!DNL Journey Optimizer] hanteras samtycke av Experience Platform [Medgivandeschema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. Som standard är värdet för medgivandefältet tomt och behandlas som samtycke för att ta emot dina meddelanden. Du kan ändra det här standardvärdet vid introduktion till ett av de möjliga värden som anges [här](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}.
 
@@ -73,13 +73,13 @@ Om du till exempel vill skapa en samtyckespolicy för att endast rikta sig till 
 
 1. Skapa en e-postyta i Journey Optimizer. [Lär dig hur](../configuration/channel-surfaces.md#create-channel-surface)
 
-1. Markera marknadsföringsåtgärden **[!UICONTROL Email Targeting]** i informationen om e-postytan.
+1. Välj marknadsföringsåtgärden **[!UICONTROL Email Targeting]** i e-postkonfigurationsinformationen.
 
    ![](assets/surface-marketing-action.png)
 
 Alla policyer för samtycke som är kopplade till den marknadsföringsåtgärden utnyttjas automatiskt för att ta hänsyn till kundernas preferenser.
 
-I det här exemplet skickas därför alla [e-postmeddelanden](../email/create-email.md) som använder den ytan i en kampanj eller en resa endast till de profiler som har godkänt att ta emot e-postmeddelanden från dig. Profiler som inte har samtyckt till att ta emot e-postmeddelanden exkluderas.
+I det här exemplet skickas därför alla [e-postmeddelanden](../email/create-email.md) som använder den konfigurationen i en kampanj eller en resa endast till de profiler som har godkänt att ta emot e-postmeddelanden från dig. Profiler som inte har samtyckt till att ta emot e-postmeddelanden exkluderas.
 
 ## Utnyttja policyer för medgivande genom anpassade åtgärder {#journey-custom-actions}
 

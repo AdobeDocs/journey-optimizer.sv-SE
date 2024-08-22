@@ -10,7 +10,7 @@ level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: 6244d717-fbd6-468e-9164-60451d0d62f0
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: 59dee15d2952438a074db57a94b3d896b38cd4f3
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 1%
@@ -53,11 +53,11 @@ När du konfigurerar språkinställningarna, enligt beskrivningen i avsnittet [S
 
 I det här avsnittet kan du ange ditt primära språk och tillhörande språk för hantering av ditt flerspråkiga innehåll. Du kan också välja det attribut som du vill använda för att söka efter information om profilspråket
 
-1. Gå till **[!UICONTROL Channel]** på menyn **[!UICONTROL Administration]**.
+1. Gå till **[!UICONTROL Channel]** > **[!UICONTROL General settings]** på menyn **[!UICONTROL Administration]**.
 
 1. Klicka på **[!UICONTROL Create language settings]** på menyn **[!UICONTROL Language settings]**.
 
-   ![](assets/multilingual-settings-1.png)
+   ![](assets/language_settings_1.png)
 
 1. Ange namnet på din **[!UICONTROL Language settings]**.
 
@@ -86,7 +86,7 @@ I det här avsnittet kan du ange ditt primära språk och tillhörande språk f�
 1. Klicka på **[!UICONTROL Submit]** för att skapa din **[!UICONTROL Language settings]**.
 
 <!--
-1. Access the **[!UICONTROL Channel surfaces]** menu and create a new channel surface or select an existing one.
+1. Access the **[!UICONTROL channel configurations]** menu and create a new channel configuration or select an existing one.
 
 
 1. In the **[!UICONTROL Header parameters]** section, select the **[!UICONTROL Enable multilingual]** option.

@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 956178c0-9985-4ff8-a29e-17dd367ce4d4
-source-git-commit: ceead77b1b0f03d853f69c763a09c9fbd0584723
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 2%
@@ -46,7 +46,7 @@ Viktiga funktioner:
 
 * **Modern flerkanalsmarknadsföring och -körning** - en enda arbetsyta där man kan harmonisera och optimera kundresan för personliga kundengagemang och marknadsföringsaktiviteter - för att hjälpa varumärken att leverera mer värde under hela kundlivscykeln. Kundresor som utformats i [!DNL Adobe Journey Optimizer] kan vara dynamiska och händelsebaserade för att hjälpa varumärken att reagera på realtidssignaler och koppla dessa interaktioner till schemalagda kampanjer så att rätt beslut kan fattas om vilken kommunikation som ska skickas till en kund, när och via vilka kanaler.
 
-* **Intelligent Decisioning &amp; Personalization** - Varumärken kan tillämpa centraliserad beslutsfattande och införliva artificiell intelligens och maskininlärning för att ta del av prediktiva insikter i hela kundupplevelsen, vilket gör det enklare att automatisera besluten och optimera upplevelsen i stor skala. Beslutsfattandet driver centraliserade erbjudanden över flera kanaler i stor skala genom [!DNL Adobe Journey Optimizer].
+* **Intelligent Decisioning &amp; Personalization** - Varumärken kan tillämpa centraliserad beslutsfattande och införliva artificiell intelligens och maskininlärning för att konfigurera prediktiva insikter i hela kundupplevelsen, vilket gör det enklare att automatisera beslut och optimera upplevelsen i stor skala. Beslutsfattandet driver centraliserade erbjudanden över flera kanaler i stor skala genom [!DNL Adobe Journey Optimizer].
 
 ## Arkitektur {#architecture}
 

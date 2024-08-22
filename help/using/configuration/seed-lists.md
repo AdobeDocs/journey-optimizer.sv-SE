@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: utsädeslista, seedlist, seed, configuration
 exl-id: 0172f6bc-da8b-4a83-a0fc-4ed41324568f
-source-git-commit: 534c40c824962a983fe503c67bdc1bec2f9d9ae5
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 2%
@@ -52,7 +52,7 @@ Seed-adresser är inte riktiga profiler eller testprofiler eftersom de inte inne
 
 ## Åtkomst till startlistor {#access-seed-lists}
 
-Gå till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** och välj **[!UICONTROL Seed list]** om du vill komma åt de startlistor som redan har skapats.
+Gå till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** och välj **[!UICONTROL Seed list]** om du vill komma åt de startlistor som redan har skapats.
 
 <!--
 >[!CAUTION]
@@ -73,7 +73,7 @@ Använd knappen **[!UICONTROL Delete]** om du vill ta bort en post permanent.
 
 >[!CAUTION]
 >
->Det går inte att ta bort en startvärdeslista som används i en aktiv [kampanj](../campaigns/review-activate-campaign.md) eller [resa](../building-journeys/publishing-the-journey.md). Du måste inaktivera kampanjen/resan eller redigera den för att använda en annan yta som inte har startvärdeslistan markerad. [Läs mer om hur du använder en startvärdeslista](#use-seed-list)
+>Det går inte att ta bort en startvärdeslista som används i en aktiv [kampanj](../campaigns/review-activate-campaign.md) eller [resa](../building-journeys/publishing-the-journey.md). Du måste inaktivera kampanjen/resan eller redigera den för att använda en annan konfiguration som inte har startvärdeslistan markerad. [Läs mer om hur du använder en startvärdeslista](#use-seed-list)
 
 Du kan klicka på ett namn på en startlista om du vill redigera den. <!--Use the **[!UICONTROL Edit]** button to edit a seed list.-->
 
@@ -92,7 +92,7 @@ Du kan klicka på ett namn på en startlista om du vill redigera den. <!--Use th
 
 Följ stegen nedan för att skapa en startvärdeslista.
 
-1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL Seed list]**.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL Seed list]**.
 
 1. Markera knappen **[!UICONTROL Create seed list]**.
 
@@ -132,7 +132,7 @@ Nu när din startlista har skapats kan du använda den i alla kampanjer och unde
 >
 >Meddelanden som skickas till dirigerade adresser ingår inte i rese- eller kampanjrapporter.
 
-1. Skapa en yta och välj kanalen **[!UICONTROL Email]**. [Läs mer](../email/email-settings.md)
+1. Skapa en konfiguration och välj kanalen **[!UICONTROL Email]**. [Läs mer](../email/email-settings.md)
 
 1. Välj önskad startvärdeslista i [motsvarande avsnitt](../email/email-settings.md#seed-list).
 
@@ -142,11 +142,11 @@ Nu när din startlista har skapats kan du använda den i alla kampanjer och unde
 
    ![](assets/seed-list-surface.png)
 
-1. Skicka in ytan.
+1. Skicka konfigurationen.
 
 1. Skapa en [kampanj](../campaigns/create-campaign.md) eller en [resa](../building-journeys/journey-gs.md).
 
-1. Välj åtgärden **[!UICONTROL Email]** och markera [ytan](channel-surfaces.md) med den startvärdeslista som är relevant för dig.
+1. Välj åtgärden **[!UICONTROL Email]** och välj [konfiguration](channel-surfaces.md) med den startvärdeslista som är relevant för dig.
 
    ![](assets/seed-list-campaign-email.png)
 

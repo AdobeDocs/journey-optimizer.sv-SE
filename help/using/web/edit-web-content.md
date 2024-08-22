@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 3847ac1d-2c0a-4f80-8df9-e8e304faf261
-source-git-commit: 11cae07d061b67136f50201e89c0e349e919620d
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '1032'
 ht-degree: 1%
@@ -36,7 +36,7 @@ Gå till följande avsnitt för att lära dig mer om varje ämne:
 >[!CONTEXTUALHELP]
 >id="ajo_web_url_to_edit_surface"
 >title="Bekräfta den URL som ska redigeras"
->abstract="Bekräfta URL-adressen till den specifika webbsida som ska användas för att redigera innehållet som ska användas på den webbyta som definieras ovan. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
+>abstract="Bekräfta URL-adressen till den specifika webbsidan som ska användas för att redigera innehållet som ska användas i webbkonfigurationen som definieras ovan. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
 >additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
 
 >[!CONTEXTUALHELP]
@@ -55,7 +55,7 @@ Följ stegen nedan när du vill börja skapa webbkampanjer.
 
    >[!NOTE]
    >
-   >Om du angav en enda URL som webbyta fylls URL:en som ska anpassas redan i.
+   >Om du angav en enda URL som webbkonfiguration fylls URL:en som ska anpassas redan i.
 
    ![](assets/web-edit-enter-url.png)
 
@@ -152,13 +152,13 @@ I det här avsnittet beskrivs olika sätt att navigera i webbdesignern. Informat
 >[!CONTEXTUALHELP]
 >id="ajo_web_designer_browse"
 >title="Använda bläddringsläget"
->abstract="I det här läget kan du navigera till den exakta sidan från den markerade ytan som du vill anpassa."
+>abstract="I det här läget kan du navigera till den exakta sidan från den valda konfigurationen som du vill anpassa."
 
 Du kan växla från standardläget **[!UICONTROL Design]** till läget **[!UICONTROL Browse]** med den dedikerade knappen.
 
 ![](assets/web-designer-browse-mode.png)
 
-I läget **[!UICONTROL Browse]** kan du navigera till den exakta sidan från den markerade ytan som du vill anpassa.
+I **[!UICONTROL Browse]**-läget kan du navigera till den exakta sidan från den valda konfigurationen som du vill anpassa.
 
 Det är särskilt användbart när du hanterar sidor som är bakom autentisering eller som inte är tillgängliga från början på en viss URL. Du kan till exempel autentisera, navigera till din kontosida eller till kundvagnssidan och sedan växla tillbaka till läget **[!UICONTROL Design]** för att kunna utföra ändringarna på den önskade sidan.
 

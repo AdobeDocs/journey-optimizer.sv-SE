@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: IP, pooler, grupp, underdomäner, leveransbarhet
 exl-id: 606334c3-e3e6-41c1-a10e-63508a3ed747
-source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Ett exempel är att ha en IP-pool för dina marknadsföringsmeddelanden och en a
 
 Så här skapar du en IP-pool:
 
-1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL IP pools]** och klicka sedan på **[!UICONTROL Create IP Pool]**.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL IP pools]** och klicka sedan på **[!UICONTROL Create IP Pool]**.
 
    ![](assets/ip-pool-create.png)
 
@@ -74,17 +74,13 @@ När en IP-pool har skapats visas PTR-information när du hovrar över IP-adress
 
 ![](assets/ip-pool-ptr-record-tooltip.png)
 
-IP-poolen skapas nu och visas i listan. Du kan markera den för att komma åt dess egenskaper och visa den associerade kanalytan (t.ex. meddelandeförinställning). Mer information om hur du associerar en kanalyta med en IP-pool finns i [det här avsnittet](channel-surfaces.md).
-
-![](assets/ip-pool-created.png)
+IP-poolen skapas nu och visas i listan. Du kan markera den för att komma åt dess egenskaper och visa den associerade kanalkonfigurationen (t.ex. meddelandeförinställning). Mer information om hur du associerar en kanalkonfiguration med en IP-pool finns i [det här avsnittet](channel-surfaces.md).
 
 ## Redigera en IP-pool {#edit-ip-pool}
 
 Om du vill redigera en IP-pool följer du stegen nedan.
 
 1. Öppna IP-poolnamnet genom att klicka på det i listan.
-
-   ![](assets/ip-pool-list.png)
 
 1. Redigera egenskaperna efter behov. Du kan ändra beskrivningen och lägga till eller ta bort IP-adresser.
 
@@ -100,14 +96,14 @@ Om du vill redigera en IP-pool följer du stegen nedan.
 
 1. Spara ändringarna.
 
-Uppdateringen träder i kraft omedelbart eller asynkront, beroende på om IP-poolen är associerad med en [kanalyta](channel-surfaces.md) eller inte:
+Uppdateringen träder i kraft omedelbart eller asynkront, beroende på om IP-poolen är associerad med en [kanalkonfiguration](channel-surfaces.md) eller inte:
 
-* Om IP-poolen **inte** är associerad med någon kanalyta är uppdateringen omedelbar (**[!UICONTROL Success]** status).
-* Om IP-poolen **är** associerad med en kanalyta kan uppdateringen ta upp till 3 timmar (**[!UICONTROL Processing]** status).
+* Om IP-poolen **inte** är associerad med någon kanalkonfiguration är uppdateringen omedelbar (**[!UICONTROL Success]** status).
+* Om IP-poolen **är** associerad med en kanalkonfiguration kan uppdateringen ta upp till 3 timmar (**[!UICONTROL Processing]** status).
 
 >[!NOTE]
 >
->När [skapar en kanalyta](channel-surfaces.md#create-channel-surface) kan du inte fortsätta skapa en yta om du väljer en IP-pool som är under utgåva (**[!UICONTROL Processing]** status) och aldrig har associerats med den underdomän som har valts för den ytan. [Läs mer](channel-surfaces.md#subdomains-and-ip-pools)
+>När [skapar en kanalkonfiguration](channel-surfaces.md#create-channel-surface) och du väljer en IP-pool som är under utgåva (**[!UICONTROL Processing]** status) och aldrig har associerats med den underdomän som valts för den konfigurationen, kan du inte fortsätta med att skapa en konfiguration. [Läs mer](channel-surfaces.md#subdomains-and-ip-pools)
 
 Om du vill kontrollera IP-poolens uppdateringsstatus klickar du på knappen **[!UICONTROL More actions]** och väljer **[!UICONTROL Recent updates]**.
 
@@ -119,5 +115,5 @@ Om du vill kontrollera IP-poolens uppdateringsstatus klickar du på knappen **[!
 >* några minuter innan det konsumeras av enhetsmeddelanden,
 >* till nästa batch för att IP-poolen ska börja gälla i batchmeddelanden.
 
-Du kan också använda knappen **[!UICONTROL Delete]** för att ta bort en IP-pool. Observera att du inte kan ta bort en IP-pool som har kopplats till en kanalyta.
+Du kan också använda knappen **[!UICONTROL Delete]** för att ta bort en IP-pool. Observera att du inte kan ta bort en IP-pool som har kopplats till en kanalkonfiguration.
 

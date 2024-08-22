@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: dämpning, lista, studsa, e-post, optimering, karantän
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-source-git-commit: 0ba1af43f5447df861e419b56f34a418cfbce241
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 1%
@@ -32,7 +32,7 @@ Dessutom kan du använda Journey Optimizer **Suppression REST API** för att sty
 
 ## Åtkomst till listan över inaktiveringar {#access-suppression-list}
 
-Om du vill få tillgång till en detaljerad lista över utelämnade e-postadresser och domäner går du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** och väljer **[!UICONTROL Suppression list]**.
+Om du vill få tillgång till en detaljerad lista över utelämnade e-postadresser och domäner går du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** och väljer **[!UICONTROL Suppression list]**.
 
 
 ![](assets/suppression-list-access.png)
@@ -66,8 +66,6 @@ Undertryckningskategorierna är följande:
 * **Manuell**: Manuella fel har lagts till manuellt i listan över undertryckningar. [Läs mer](#add-addresses-and-domains)
 
 För varje e-postadress som visas kan du även kontrollera **[!UICONTROL Type]** (e-post eller domän), **[!UICONTROL Reason]** för att utesluta den, vem som lagt till den och datumet/tiden som den lades till i listan över utelämnanden.
-
-![](assets/suppression-list.png)
 
 Möjliga orsaker till leveransfel är:
 
@@ -230,8 +228,6 @@ Om du vill hämta adresserna kör du en specifik fråga med anpassade parametrar
 
 När de berörda e-postadresserna har identifierats kan du filtrera listan så att de visas. Om ett ISP-avbrott inträffar från 11 nov 2022 till 13 nov 2022 i domänen **test.com** kan du filtrera adresserna som lagts till i listan under tidsramen enligt nedan:
 
-![](assets/remove-from-supp-list.png)
-
 Du kan sedan ta bort e-postadresser i karantän från listan över inaktiveringar med knappen **[!UICONTROL Delete]**.
 
 ## Hämta listan över inaktiveringar {#download-suppression-list}
@@ -250,8 +246,6 @@ Om du vill exportera listan över inaktiveringar som en CSV-fil följer du stege
    ![](assets/suppression-list-download-csv.png)
 
 1. Vänta tills filen har skapats.
-
-   ![](assets/suppression-list-download-generate.png)
 
    >[!NOTE]
    >

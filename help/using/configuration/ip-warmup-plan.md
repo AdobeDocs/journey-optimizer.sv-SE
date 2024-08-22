@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: IP, grupp, underdomäner, leveransbarhet
 exl-id: c2434086-2ed4-4cd0-aecd-2eea8f0a55f6
-source-git-commit: bdd3b951e44adaf3ff362b8af69f5ab74d13f484
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '1581'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Skapa en IP-värmeringsplan {#ip-warmup}
 
-När du har skapat en eller flera [IP-värmeringskampanjer](ip-warmup-campaign.md) med en dedikerad yta och motsvarande alternativ aktiverat, kan du börja skapa din IP-värmerplan.
+När du har skapat en eller flera [IP-värmeringskampanjer](ip-warmup-campaign.md) med en dedikerad konfiguration och motsvarande alternativ aktiverat, kan du börja skapa din IP-värmerplan.
 
 Om du vill få åtkomst till, skapa, redigera och ta bort IP-beredskapsplanerna måste du ha behörighet som är relaterad till rollen **[!UICONTROL Deliverability Consultant]** eller IP-beredningsplanerna.
 
@@ -238,7 +238,7 @@ Varje domän visas nu i en egen kolumn på samma rad.
 
 ## Få åtkomst till och hantera IP-värmerelayouter {#manage-ip-warmup-plans}
 
-1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL IP warmup plans]**. Alla IP-uppvärmningsplaner som har skapats hittills visas.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL IP warmup plans]**. Alla IP-uppvärmningsplaner som har skapats hittills visas.
 
    ![](assets/ip-warmup-filter-list.png)
 
@@ -271,14 +271,14 @@ Varje domän visas nu i en egen kolumn på samma rad.
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_surface"
->title="Välj en marknadsföringsyta"
->abstract="Du måste välja samma yta som den som valts i kampanjen som du vill associera med din IP-värmerappsplan."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/channel-surfaces.html" text="Konfigurera kanalytor"
+>title="Välj en marknadsföringskonfiguration"
+>abstract="Du måste välja samma konfiguration som den som valts i kampanjen som du vill koppla till din IP-värmeringsplan."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/channel-surfaces.html" text="Konfigurera kanalkonfigurationer"
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/channel-surfaces.html" text="Skapa IP-värmningskampanjer"
 
 Följ stegen nedan om du vill skapa en IP-värmeringsplan.
 
-1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL IP warmup plans]** och klicka sedan på **[!UICONTROL Create IP warmup plan]**.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]**> **[!UICONTROL IP warmup plans]** och klicka sedan på **[!UICONTROL Create IP warmup plan]**.
 
    ![](assets/ip-warmup-create-plan.png)
 
@@ -286,11 +286,11 @@ Följ stegen nedan om du vill skapa en IP-värmeringsplan.
 
    ![](assets/ip-warmup-plan-details.png)
 
-1. Markera den [yta](channel-surfaces.md) som du vill värma upp. Endast marknadsföringsytor är tillgängliga för urval. [Läs mer om e-posttyp](../email/email-settings.md#email-type)
+1. Välj den [konfiguration](channel-surfaces.md) som du vill värma upp. Endast marknadsföringskonfigurationer kan väljas. [Läs mer om e-posttyp](../email/email-settings.md#email-type)
 
    >[!NOTE]
    >
-   >De kampanjer som du vill associera med din IP-värmeringsplan måste använda samma yta. [Lär dig hur du skapar en IP-värmerskampanj](ip-warmup-campaign.md)
+   >De kampanjer som du vill associera med din IP-värdplan måste använda samma konfiguration. [Lär dig hur du skapar en IP-värmerskampanj](ip-warmup-campaign.md)
 
 1. Överför den Excel-fil som innehåller din IP-värmeringsplan. [Läs mer](#prepare-file)
 

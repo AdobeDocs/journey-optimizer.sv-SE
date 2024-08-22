@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: arkiv, meddelanden, HIPAA, BCC, e-post
 exl-id: 186a5044-80d5-4633-a7a7-133e155c5e9f
-source-git-commit: be758a577dbff2ae400d0642f9e898b423353f90
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 1%
@@ -41,11 +41,11 @@ Du kan skicka en blind kopia (BCC) av ett e-postmeddelande som skickats av [!DNL
 
 ### Aktivera BCC-e-post {#enable-bcc}
 
-Om du vill aktivera alternativet **[!UICONTROL BCC email]** anger du den e-postadress du vill ha i det dedikerade fältet på [kanalytan](channel-surfaces.md) (d.v.s. meddelandeförinställningen). Du kan ange en extern adress i rätt format, förutom en e-postadress som har definierats för en underdomän som har delegerats till Adobe. Om du till exempel har delegerat underdomänen *marketing.luma.com* till Adobe tillåts inte adresser som *abc@marketing.luma.com*.
+Om du vill aktivera alternativet **[!UICONTROL BCC email]** anger du den e-postadress du vill ha i det dedikerade fältet i [kanalkonfigurationen](channel-surfaces.md) (d.v.s. meddelandeförinställningen). Du kan ange en extern adress i rätt format, förutom en e-postadress som har definierats för en underdomän som har delegerats till Adobe. Om du till exempel har delegerat underdomänen *marketing.luma.com* till Adobe tillåts inte adresser som *abc@marketing.luma.com*.
 
 >[!CAUTION]
 >
->Du kan bara definiera en e-postadress för hemlig kopia. Kontrollera att det finns tillräckligt med mottagningskapacitet på BCC-adressen för att lagra alla e-postmeddelanden som skickas med den aktuella kanalytan.
+>Du kan bara definiera en e-postadress för hemlig kopia. Kontrollera att det finns tillräckligt med mottagningskapacitet på BCC-adressen för att lagra alla e-postmeddelanden som skickas med den aktuella kanalkonfigurationen.
 >
 >Fler rekommendationer visas i [det här avsnittet](#bcc-recommendations-limitations).
 
@@ -55,13 +55,13 @@ Om du vill aktivera alternativet **[!UICONTROL BCC email]** anger du den e-posta
 
 ![](assets/preset-bcc.png)
 
-När konfigurationen är klar kopieras alla e-postmeddelanden som är baserade på den här ytan till den e-postadress som du angav. Därifrån kan meddelanden bearbetas och arkiveras i ett externt system.
+När konfigurationen är klar kopieras alla e-postmeddelanden som är baserade på den här konfigurationen automatiskt till den e-postadress som du angav för den kontroll av webbläsarkompatibilitet som du angav. Därifrån kan meddelanden bearbetas och arkiveras i ett externt system.
 
 >[!CAUTION]
 >
->Användningen av din BCC-funktion räknas av mot det antal meddelanden som du är licensierad för. Aktivera det därför bara i de ytor som används för viktig kommunikation som du vill arkivera. Kontrollera om det finns licensierade volymer i ditt avtal.
+>Användningen av din BCC-funktion räknas av mot det antal meddelanden som du är licensierad för. Aktivera det därför bara i de konfigurationer som används för viktig kommunikation som du vill arkivera. Kontrollera om det finns licensierade volymer i ditt avtal.
 
-Inställningen för BCC-e-postadressen sparas och bearbetas omedelbart på ytnivå. När du skapar ett nytt meddelande med hjälp av den här ytan visas e-postadressen för hemlig kopia automatiskt.
+Inställningen för e-postadress för hemlig kopia sparas och bearbetas omedelbart på konfigurationsnivån. När du skapar ett nytt meddelande med den här konfigurationen, visas e-postadressen för BCC automatiskt.
 
 ![](assets/preset-bcc-in-msg.png)
 

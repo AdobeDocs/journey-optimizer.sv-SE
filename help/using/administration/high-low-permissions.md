@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 level: Experienced
 keywords: behörighet, hög nivå, låg nivå, profil, administratörskonsol
 exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
-source-git-commit: 5d214812b1d7e189fe8a964f445545916d00c0a4
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 0%
@@ -360,7 +360,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 
 +++
 
-* **[!DNL Manage messages presets]** högnivåbehörighet tillåter användare att läsa, skapa, redigera och ta bort kanalytor över kanaler på sandlådenivå.
+* **[!DNL Manage messages presets]** högnivåbehörighet tillåter användare att läsa, skapa, redigera och ta bort kanalkonfigurationer över kanaler på sandlådenivå.
 
 +++ Den innehåller följande lågnivåbehörigheter:
 
@@ -478,9 +478,9 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 +++
 
 <!--
-### [!DNL View channel surface] permission {#view-channel-surface}
+### [!DNL View channel configuration] permission {#view-channel-surface}
 
-The **[!DNL View channel surface]** high-level permission allows users to view channel surfaces in order to know which channel surfaces to use. 
+The **[!DNL View channel configuration]** high-level permission allows users to view channel configurations in order to know which channel configurations to use. 
   +++ It includes the following low-level permissions:  
 
 * messages_presets.read

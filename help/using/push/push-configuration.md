@@ -7,10 +7,10 @@ feature: Push, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 7099d44e-5d5d-4eef-9477-f68f4eaa1983
-source-git-commit: c1dc3f3805bc0677a24466687026fac0d4990a5b
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 2%
+source-wordcount: '1526'
+ht-degree: 3%
 
 ---
 
@@ -84,7 +84,7 @@ Följ stegen nedan för att tilldela **Egenskap** och **Företag** behörigheter
    * **[!UICONTROL Manage App Configurations]**
    * **[!UICONTROL Manage Properties]**
 
-   Dessa behörigheter krävs för att mobilappsutvecklaren ska kunna ställa in push-autentiseringsuppgifter i **Adobe Experience Platform Data Collection** och definiera kanalytor för push-meddelanden (t.ex. meddelandeförinställningar) i **Adobe Journey Optimizer**.
+   Dessa behörigheter krävs för att mobilappsutvecklaren ska kunna ställa in push-autentiseringsuppgifter i **Adobe Experience Platform Data Collection** och definiera kanalkonfigurationer för push-meddelanden (t.ex. meddelandeförinställningar) i **Adobe Journey Optimizer**.
 
    ![](assets/push_product_5.png)
 
@@ -112,7 +112,7 @@ Följ stegen nedan för att tilldela **[!UICONTROL Product profile]** till anvä
 
 ### Konfigurera din app {#configure-app}
 
-Den tekniska konfigurationen innefattar nära samarbete mellan apputvecklaren och företagsadministratören. Innan du börjar skicka push-meddelanden med [!DNL Journey Optimizer] måste du definiera inställningar i [!DNL Adobe Experience Platform Data Collection] och integrera din mobilapp med Adobe Experience Platform Mobile SDK:er.
+Den tekniska konfigurationen innefattar nära samarbete mellan apputvecklaren och företagsadministratören. Innan du börjar skicka push-meddelanden med [!DNL Journey Optimizer] måste du skapa push-autentiseringsuppgifter, en push-kanalskonfiguration i Adobe Journey Optimizer och integrera din mobilapp med Adobe Experience Platform Mobile SDK:er.
 
 Följ implementeringsstegen som beskrivs i länkarna nedan:
 
@@ -126,29 +126,27 @@ Adobe Experience Platform Mobile SDK innehåller API:er för integrering på kli
 I slutet av detta bör du även ha skapat och konfigurerat en mobil egenskap i [!DNL Adobe Experience Platform Data Collection]. Du skapar vanligtvis en mobil egenskap för varje mobilprogram som du vill hantera. Lär dig hur du skapar och konfigurerar en mobil egenskap i [Adobe Experience Platform Mobile SDK-dokumentationen](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
 
 
-## Steg 1: Lägg till push-autentiseringsuppgifter för appen i Adobe Experience Platform Data Collection {#push-credentials-launch}
+## Steg 1: Lägg till dina push-autentiseringsuppgifter för appar i Journey Optimizer {#push-credentials-launch}
 
-När du har gett rätt användarbehörigheter måste du nu lägga till dina push-autentiseringsuppgifter för mobilprogrammet i [!DNL Adobe Experience Platform Data Collection].
+När du har gett rätt användarbehörigheter måste du nu lägga till dina push-autentiseringsuppgifter för mobilprogrammet i Journey Optimizer.
 
 Registrering av push-autentiseringsuppgifter krävs för mobilappen för att godkänna att Adobe skickar push-meddelanden åt dig. Se stegen nedan:
 
-1. I [!DNL Adobe Experience Platform Data Collection] väljer du fliken **[!UICONTROL App Surfaces]** på den vänstra panelen.
+1. Gå till **[!UICONTROL Channels]** > **[!UICONTROL Push settings]** > **[!UICONTROL Push credentials]**-menyn.
 
-1. Klicka på **[!UICONTROL Create App Surface]** om du vill skapa en ny konfiguration.
+1. Klicka på **[!UICONTROL Create push credential]**.
 
-   ![](assets/add-app-config.png)
-
-1. Ange **[!UICONTROL Name]** som konfiguration.
-
-1. Välj operativsystemet från **[!UICONTROL Mobile Application Configuration]**:
+1. Välj Operativsystemet i listrutan **[!UICONTROL Platform]**:
 
    * **För iOS**
 
      ![](assets/add-app-config-ios.png)
 
-      1. Ange mobilappens **paket-ID** i fältet **[!UICONTROL App ID (iOS Bundle ID)]**. Program-ID:t finns på fliken **Allmänt** för det primära målet i **XCode**.
+      1. Ange mobilappen **[!UICONTROL App ID]**.
 
-      1. Växlade på knappen **[!UICONTROL Push Credentials]** för att lägga till dina autentiseringsuppgifter.
+      1. Aktivera alternativet **[!UICONTROL Apply to all sandboxes]** om du vill att de här push-autentiseringsuppgifterna ska vara tillgängliga i alla sandlådor. Om en specifik sandlåda har egna autentiseringsuppgifter för samma Platform- och App ID-par har dessa sandlådespecifika autentiseringsuppgifter företräde.
+
+      1. Växlade på knappen **[!UICONTROL Manually enter push Credentials]** för att lägga till dina autentiseringsuppgifter.
 
       1. Dra och släpp .p8-filen Apple Push Notification Authentication Key. Den här nyckeln kan hämtas från sidan **Certifikat**, **Identifierare** och **Profiler**.
 
@@ -160,14 +158,16 @@ Registrering av push-autentiseringsuppgifter krävs för mobilappen för att god
 
      ![](assets/add-app-config-android.png)
 
-      1. Ange **[!UICONTROL App ID (Android package name)]**: vanligtvis är paketnamnet program-ID i din `build.gradle`-fil.
+      1. Ange **[!UICONTROL App ID]**, vanligtvis är paketnamnet program-ID i din `build.gradle`-fil.
 
-      1. Växlade på knappen **[!UICONTROL Push Credentials]** för att lägga till dina autentiseringsuppgifter.
+      1. Aktivera alternativet **[!UICONTROL Apply to all sandboxes]** om du vill att de här push-autentiseringsuppgifterna ska vara tillgängliga i alla sandlådor. Om en specifik sandlåda har egna autentiseringsuppgifter för samma Platform- och App ID-par har dessa sandlådespecifika autentiseringsuppgifter företräde.
+
+      1. Växlade på knappen **[!UICONTROL Manually enter push credentials]** för att lägga till dina autentiseringsuppgifter.
 
       1. Dra och släpp FCM-push-inloggningsuppgifterna. Mer information om hur du hämtar push-autentiseringsuppgifter finns i [Google-dokumentationen](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
 
-1. Klicka på **[!UICONTROL Save]** om du vill skapa appkonfigurationen.
+1. Klicka på **[!UICONTROL Submit]** om du vill skapa appkonfigurationen.
 
 <!--
 ## Step 2: Set up a mobile property in Adobe Experience Platform Launch {#launch-property}
@@ -187,7 +187,38 @@ To get the SDKs needed for push notification to work you will need the following
 Learn more about [!DNL Adobe Experience Platform Launch] extensions in [Adobe Experience Platform Launch documentation](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-add-extensions.html).
 -->
 
-## Steg 2: Konfigurera Adobe Journey Optimizer Extension i din mobila egenskap {#configure-journey-optimizer-extension}
+## Steg 2: Skapa en kanalkonfiguration för push{#message-preset}
+
+När du har skapat dina push-autentiseringsuppgifter måste du skapa en konfiguration för att kunna skicka push-meddelanden från **[!DNL Journey Optimizer]**.
+
+1. Gå till menyn **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** och klicka sedan på **[!UICONTROL Create channel configuration]**.
+
+   ![](assets/push-config-9.png)
+
+1. Ange ett namn och en beskrivning (valfritt) för konfigurationen.
+
+   >[!NOTE]
+   >
+   > Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt `.` och bindestreck `-`.
+
+
+1. Om du vill tilldela anpassade eller grundläggande dataanvändningsetiketter till konfigurationen kan du välja **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md).
+
+1. Välj **Push**-kanal.
+
+   ![](assets/push-config-10.png)
+
+1. Välj **[!UICONTROL Marketing action]** om du vill associera medgivandeprinciper till meddelanden som använder den här konfigurationen. Alla policyer för samtycke som är kopplade till marknadsföringsåtgärden utnyttjas för att ta hänsyn till kundernas preferenser. [Läs mer](../action/consent.md#surface-marketing-actions)
+
+1. Välj din **[!UICONTROL Platform]**.
+
+1. Välj samma **[!UICONTROL App id]** som för de [push-autentiseringsuppgifter](#push-credentials-launch) som konfigurerats ovan.
+
+1. Spara ändringarna.
+
+Du kan nu välja din konfiguration när du skapar push-meddelanden.
+
+## Steg 3: Konfigurera Adobe Journey Optimizer Extension i din mobila egenskap {#configure-journey-optimizer-extension}
 
 **Adobe Journey Optimizer-tillägget** för Adobe Experience Platform Mobile SDK:er hanterar push-meddelanden för dina mobilappar och hjälper dig att samla in push-tokens för användare och hantera interaktionsmätning med Adobe Experience Platform-tjänster.
 
@@ -258,7 +289,7 @@ To configure the `ProfileDataSource`, use the `ProfileDCInletURL` from [!DNL Ado
 
 -->
 
-## Steg 3: Testa mobilappen med en händelse {#mobile-app-test}
+## Steg 4: Testa mobilappen med en händelse {#mobile-app-test}
 
 När du har konfigurerat din mobilapp i både Adobe Experience Platform och i [!DNL Adobe Experience Platform Data Collection] kan du testa den nu innan du skickar push-meddelanden till dina profiler. I det här fallet skapar vi en resa för att rikta in oss på vår mobilapp och ställa in en händelse som utlöser push-meddelandet.
 
@@ -354,13 +385,3 @@ Din aktivitet har skapats och kan nu användas på en resa.
 
 Din händelse kommer att utlösas och du kommer att få ditt push-meddelande till din mobilapp.
 
-## Steg 4: Skapa en kanalyta för push{#message-preset}
-
-När din mobilapp har konfigurerats i [!DNL Adobe Experience Platform Data Collection] måste du skapa en yta för att kunna skicka push-meddelanden från **[!DNL Journey Optimizer]**.
-
-Lär dig hur du skapar och konfigurerar en kanalyta i [det här avsnittet](../configuration/channel-surfaces.md).
-
-Nu kan du skicka push-meddelanden med Journey Optimizer.
-
-* Lär dig hur du skapar ett push-meddelande på [den här sidan](create-push.md).
-* Lär dig hur du lägger till ett meddelande till en resa i [det här avsnittet](../building-journeys/journeys-message.md).

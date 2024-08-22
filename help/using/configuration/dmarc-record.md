@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: underdomän, domän, e-post, marc, post
 exl-id: f9e217f8-5aa8-4d3a-96fc-65defcb5d340
-source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 0%
@@ -82,7 +82,7 @@ Med administrationsgränssnittet [!DNL Journey Optimizer] kan du konfigurera DMA
 
 Följ stegen nedan för att se till att du har konfigurerat en DMARC-post för alla underdomäner som du har delegerat i [!DNL Journey Optimizer].
 
-1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Subdomains]** och klicka sedan på **[!UICONTROL Set up subdomain]**.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL Subdomains]** och klicka sedan på **[!UICONTROL Set up subdomain]**.
 
 1. Kontrollera kolumnen **[!UICONTROL DMARC Record]** för varje delegerad underdomän. Om ingen post hittades för en viss underdomän visas en varning.
 

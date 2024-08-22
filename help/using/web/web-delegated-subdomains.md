@@ -8,7 +8,7 @@ feature: Web Channel, Subdomains
 level: Experienced
 keywords: webb, underdomäner, konfiguration
 exl-id: 6e00466d-4ce5-4d80-89ff-c7331a5ab158
-source-git-commit: c7c72a74b451759bf99f909bc146897c783f78ed
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Du kan skapa flera webbunderdomäner, men endast underdomänen **default** anvä
 
 ## Få åtkomst till och hantera webbunderdomäner {#access-web-subdomains}
 
-1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och välj sedan **[!UICONTROL Web configuration]** > **[!UICONTROL Web subdomains]**. Alla underdomäner som har konfigurerats med den aktuella sandlådan visas.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och välj sedan **[!UICONTROL Web settings]** > **[!UICONTROL Web subdomains]**. Alla underdomäner som har konfigurerats med den aktuella sandlådan visas.
 
    ![](assets/web-access-subdomains.png)
 
@@ -68,7 +68,7 @@ Du kan skapa flera webbunderdomäner, men endast underdomänen **default** anvä
 
 Om du vill använda en underdomän som redan har delegerats till Adobe följer du stegen nedan.
 
-1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och välj sedan **[!UICONTROL Web configuration]** > **[!UICONTROL Web subdomains]**.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och välj sedan **[!UICONTROL Web settings]** > **[!UICONTROL Web subdomains]**.
 
 1. Klicka på **[!UICONTROL Set up subdomain]**.
 
@@ -109,7 +109,7 @@ Följ stegen nedan för att konfigurera en ny underdomän.
 >
 >Som standard kan du i [!DNL Journey Optimizer] delegera upp till 10 underdomäner totalt (som omfattar både e-post- och webbkanaler). Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. Kontakta Adobe och läs mer om hur många underdomäner du har rätt till.
 
-1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och välj sedan **[!UICONTROL web configuration]** > **[!UICONTROL web subdomains]**.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och välj sedan **[!UICONTROL Web settings]** > **[!UICONTROL Web subdomains]**.
 
 1. Klicka på **[!UICONTROL Set up subdomain]**.
 
@@ -153,7 +153,7 @@ Följ stegen nedan för att konfigurera en ny underdomän.
    >
    >Innan du kan använda den underdomänen för att skicka webbmeddelanden måste du vänta tills Adobe utför de kontroller som krävs, vilket kan ta upp till 4 timmar.
 
-1. När kontrollerna har slutförts får underdomänen statusen **[!UICONTROL Success]**. Den är klar att användas för att skapa webbkanalsytor.
+1. När kontrollerna har slutförts får underdomänen statusen **[!UICONTROL Success]**. Det är klart att användas för att skapa webbkanalskonfigurationer.
 
    Observera att underdomänen markeras som **[!UICONTROL Failed]** om du inte kan skapa valideringsposten i din värdlösning.
 

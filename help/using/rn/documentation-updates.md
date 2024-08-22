@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 30144c26a03d145c9dc98c7a4db007d5c454a639
+source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
 workflow-type: tm+mt
 source-wordcount: '5450'
 ht-degree: 13%
@@ -205,7 +205,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * En anteckning har lagts till för att ange att om ändringar görs i ett erbjudandebeslut som används i en resa måste du avpublicera resan och publicera den på nytt. [Läs mer](../building-journeys/publishing-the-journey.md)
 * Förklaring om hur du ser till att händelser räknas på rätt sätt i appningsräknaren har klargjorts i avsnittet för beslutshantering **Capping-händelse**. [Läs mer](../offers/offer-library/add-constraints.md#capping-event)
 * Ett nytt avsnitt har lagts till på sidan **Ändra körningsadresser**. Det anger att det är möjligt att åsidosätta körningsfältet som angetts globalt i de avancerade parametrarna för resan, men åsidosättningen av e-postadressen ska bara användas för särskilda användningsfall. För det mesta är det värde som definieras som den primära adressen i **körningsfälten** det som ska användas. [Läs mer](../configuration/primary-email-addresses.md#journey-parameters)
-* Avsnittet **URL-spårning** innehåller nu en lista och beskrivning av alla kontextattribut som kan anges för URL-spårning i en e-postkanal. [Läs mer](../email/email-settings.md#url-tracking)
+* Avsnittet **URL-spårning** innehåller nu en lista och beskrivning av alla kontextattribut som kan anges för URL-spårning i en e-postkanalskonfiguration. [Läs mer](../email/email-settings.md#url-tracking)
 
 ## Mars 2023 {#march-2023}
 
@@ -296,7 +296,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 ## Juli 2022 {#july-2022}
 
 * Alla nya funktioner och förbättringar som kommer med versionen [!DNL Journey Optimizer] den 22 juli har beskrivits i dokumentationen. [Läs mer](release-notes.md)
-* Avsnittet **Konfigurera kanalytor** har klargjorts och uppdaterats med länkar till sidan som beskriver hur du konfigurerar SMS-kanalen. [Läs mer](../configuration/channel-surfaces.md#create-channel-surface)
+* Avsnittet **Konfigurera kanalkonfigurationer** har klargjorts och uppdaterats med länkar till sidan som beskriver hur du konfigurerar SMS-kanalen. [Läs mer](../configuration/channel-surfaces.md#create-channel-surface)
 * Alternativet **Tidszon för profil** är nu inaktiverat som standard i reseegenskaperna. [Läs mer](../building-journeys/timezone-management.md#timezone-from-profiles)
 * Alternativet **Fast datum** är inte längre tillgängligt i aktiviteten **Vänta**. [Läs mer](../building-journeys/wait-activity.md)
 * Mer information om alternativet **Inkrementell läsning** har lagts till i aktiviteten **Läs målgrupp**. [Läs mer](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
