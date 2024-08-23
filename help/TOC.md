@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 6a2c594d427501dee3f979a2c88355fe63bff514
+source-git-commit: 8fb87d2e2085d98dd8b014df6aa4d734bab4e997
 workflow-type: tm+mt
-source-wordcount: '1949'
+source-wordcount: '1972'
 ht-degree: 26%
 
 ---
@@ -582,6 +582,11 @@ ht-degree: 26%
 + Konfiguration {#configuration}
    + [Kom igång med Journey Optimizer-konfiguration](using/configuration/get-started-configuration.md)
    + [Konfigurera kanalkonfigurationer](using/configuration/channel-surfaces.md)
+   + Inställningar för guidad kanal {#guided-setup}
+      + [Kom igång med konfiguration av guidade kanaler](using/configuration/set-mobile-config.md)
+      + [Konfigurera Android mobilkanal](using/configuration/set-mobile-android.md)
+      + [Konfigurera iOS mobilkanal](using/configuration/set-mobile-ios.md)
+      + [Konfigurera webbkanal](using/configuration/set-mobile-web.md)
    + Delegera e-postunderdomäner {#delegate-subdomains}
       + [Kom igång med delegering till underdomäner](using/configuration/about-subdomain-delegation.md)
       + [Delegera en underdomän](using/configuration/delegate-subdomain.md)

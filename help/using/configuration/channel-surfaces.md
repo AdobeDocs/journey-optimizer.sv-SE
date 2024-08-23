@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 8fb87d2e2085d98dd8b014df6aa4d734bab4e997
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1660'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,8 @@ Med [!DNL Journey Optimizer] kan du konfigurera kanalkonfigurationer (t.ex. medd
 > * Du måste utföra stegen [E-postkonfiguration](../email/get-started-email-config.md), [push-konfiguration](../push/push-configuration.md), [SMS-konfiguration](../sms/sms-configuration.md), [konfiguration i programmet](../in-app/inapp-configuration.md), [kodbaserad konfiguration](../code-based/code-based-configuration.md), [Webbkonfiguration](../web/web-configuration.md) och [Direkt e-postkonfiguration](../direct-mail/direct-mail-configuration.md) innan du skapar kanalkonfigurationer.
 
 När kanalkonfigurationer har konfigurerats kan du välja dem när du skapar meddelanden från en resa eller en kampanj.
+
+Du kan också använda konfigurationen av den guidade kanalen för att automatisera och validera kanalkonfigurationen i en enhetlig upplevelse, vilket snabbar upp processen att komma igång med Journey Optimizer. [Läs mer](set-mobile-config.md)
 
 <!--
 ➡️ [Learn how to create and use email configurations in this video](#video-presets)

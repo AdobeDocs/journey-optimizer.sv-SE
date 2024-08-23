@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 8fb87d2e2085d98dd8b014df6aa4d734bab4e997
 workflow-type: tm+mt
-source-wordcount: '1407'
-ht-degree: 4%
+source-wordcount: '1215'
+ht-degree: 5%
 
 ---
 
@@ -194,111 +194,3 @@ Så här byter du språk:
 * Välj önskat språk och klicka på **Spara**. Du kan välja ett andra språk om komponenten som du använder inte är lokaliserad på ditt första språk.
   ![](assets/select-language.png)
 
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_name"
->title="Mobil- och webbkonfigurationsnamn"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_swift_dependencies_add"
->title="Lägg till beroenden"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_swift_initialization_code"
->title="Lägg till initieringskod"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_validate_assurance"
->title="Validera med Assurance"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_javascript_code"
->title="Javascript-kod"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_javascript_site"
->title="Starta webbplatsen och validera"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_push_token"
->title="Hämta enhetstoken"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_push_xcode"
->title="Starta programmet från Xcode"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_push_certificate"
->title="Ange ett push-certifikat"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_push_key_id"
->title="Nyckel-ID"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_push_team_id"
->title="Team-ID"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_inapp_tag_property"
->title="Välj taggegenskap"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_push_certificate_fcm"
->title="Ange ett push-certifikat"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_android_dependencies_add"
->title="Lägg till beroenden"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_swift_dependencies_import"
->title="Importera beroenden"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_android_dependencies_import"
->title="Importera beroenden"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_android_initialization_code"
->title="Lägg till initieringskod"
->abstract="TBC"
-
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_push_token_android"
->title="Hämta enhetstoken"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_push_android_studio"
->title="Starta programmet från Android Studio"
->abstract="TBC"
-
-<!-- priority scores-->
-
->[!CONTEXTUALHELP]
->id="ajo_campaigns_campaign_priority"
->title="Prioritet"
->abstract="Tilldela kampanjens prioritetspoäng, från 0 till 100. Ett högre tal anger en högre prioritet. När två kampanjer använder samma yta väljer Journey Optimizer den kampanj som har högst prioritet. Om kampanjerna har samma poäng väljs den senaste kampanjen."
-
->[!CONTEXTUALHELP]
->id="ajo_journey_priority"
->title="Prioritet"
->abstract="Tilldela en prioritetspoäng till resan, från 0 till 100. Ett högre tal anger en högre prioritet. När två resor använder samma yta väljer Journey Optimizer den resa som har högst prioritet. Om resorna har samma poäng väljs den resa som senast ändrades."
