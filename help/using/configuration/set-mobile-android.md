@@ -10,9 +10,9 @@ level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 hide: true
 hidefromtoc: true
-source-git-commit: 8fb87d2e2085d98dd8b014df6aa4d734bab4e997
+source-git-commit: f0273d24a85488d406b836bee8c2300d189d83e9
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '988'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Denna Android-installation effektiviserar den snabba konfigurationen av marknads
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_android_initialization_code"
 >title="Lägg till initieringskod"
->abstract="TBC"
+>abstract="Integrera initieringskoden i metoden **onCreate()** i programmet. Den här metoden körs när programmet skapas för första gången, så att koden körs under den inledande konfigurationsfasen. Korrekt placering av koden här är avgörande för att säkerställa att programmet är korrekt konfigurerat och initierat innan efterföljande åtgärder utförs."
 
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_android_dependencies_add"
@@ -206,10 +206,12 @@ När du har skapat konfigurationen kan du enkelt gå tillbaka till den när som 
 
 ## Konfigurera kanal i appen {#inapp-channel}
 
+<!--
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_inapp_tag_property"
->title="Välj taggegenskap"
+>title="Choose your tag property"
 >abstract="TBC"
+-->
 
 Kanalen i appen kräver ingen ytterligare konfiguration. För att verifiera att konfigurationen är korrekt kan du enkelt skicka ett testmeddelande med hjälp av funktionen Säkerhet. Detta ger omedelbar feedback om systemets beredskap att leverera meddelanden i appen effektivt.
 
@@ -229,7 +231,7 @@ Du kan nu skicka meddelanden i appen med den tidigare konfigurerade **[!UICONTRO
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_push_xcode"
 >title="Starta programmet från Xcode"
->abstract="TBC"
+>abstract="Starta programmet med Xcode om du vill hämta din push-token. När programmet har startats startar du om det för att kontrollera att valideringsprocessen har slutförts. Adobe kommer sedan att tillhandahålla din push-token som en del av valideringsresultaten. Denna token är väsentlig för att aktivera push-meddelanden och kommer att visas när konfigurationen har validerats."
 
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_push_certificate_fcm"

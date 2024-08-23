@@ -10,10 +10,10 @@ level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 hide: true
 hidefromtoc: true
-source-git-commit: 8fb87d2e2085d98dd8b014df6aa4d734bab4e997
+source-git-commit: f0273d24a85488d406b836bee8c2300d189d83e9
 workflow-type: tm+mt
-source-wordcount: '972'
-ht-degree: 1%
+source-wordcount: '1004'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +39,7 @@ Den här iOS-installationen förenklar den snabba konfigurationen av marknadsfö
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_swift_initialization_code"
 >title="Lägg till initieringskod"
->abstract="TBC"
+>abstract="Om du vill initiera appen på rätt sätt infogar du den angivna initieringskoden i metoden **didFinishLaunchingWithOptions** i AppDelegate-filen. Detta säkerställer att det körs vid rätt tidpunkt under programmets startprocess."
 
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_swift_dependencies_import"
