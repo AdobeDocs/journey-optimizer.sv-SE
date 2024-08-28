@@ -10,10 +10,10 @@ level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 hide: true
 hidefromtoc: true
-source-git-commit: f0273d24a85488d406b836bee8c2300d189d83e9
+source-git-commit: 4a089308cfc2fa90cc4c0a6baa15a89598e8edd6
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 0%
+source-wordcount: '904'
+ht-degree: 1%
 
 ---
 
@@ -29,23 +29,6 @@ ht-degree: 0%
 Den här iOS-installationen förenklar den snabba konfigurationen av marknadsföringskanaler och gör alla viktiga resurser tillgängliga i apparna Experience Platform, Journey Optimizer och Data Collection. På så sätt kan marknadsföringsteamet snabbt börja skapa kampanjer och resor.
 
 ## Skapa en ny iOS-konfiguration {#new-setup-ios}
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_swift_dependencies_add"
->title="Lägg till beroenden"
->abstract="I Xcode lägger du till paketet Assurance för att inspektera, verifiera, simulera och validera datainsamling och upplevelser i din app. Lägg också till AEP Messaging för att skicka push-meddelandetokens och klickbar feedback till Adobe Experience Platform."
->additional-url="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/install-sdks#swift-package-manager" text="Se dokumentationen för datainsamling"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_swift_initialization_code"
->title="Lägg till initieringskod"
->abstract="Om du vill initiera appen på rätt sätt infogar du den angivna initieringskoden i metoden **didFinishLaunchingWithOptions** i AppDelegate-filen. Detta säkerställer att det körs vid rätt tidpunkt under programmets startprocess."
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_swift_dependencies_import"
->title="Importera beroenden"
->abstract="I programmets **AppDelegate**-klass importerar du följande beroenden: AEPCore, AEPAssurance, AEPEdge, AEPEdgeIdentity och AEPMessaging."
->additional-url="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/install-sdks#import-extensions" text="Se dokumentationen för datainsamling"
 
 1. På Journey Optimizer hemsida klickar du på **[!UICONTROL Begin]** från **[!UICONTROL Set up mobile and web channels]**-kortet.
 

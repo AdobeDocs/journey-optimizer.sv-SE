@@ -10,9 +10,9 @@ level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 hide: true
 hidefromtoc: true
-source-git-commit: 8fb87d2e2085d98dd8b014df6aa4d734bab4e997
+source-git-commit: 4a089308cfc2fa90cc4c0a6baa15a89598e8edd6
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '261'
 ht-degree: 1%
 
 ---
@@ -27,8 +27,8 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_validate_assurance"
 >title="Validera med Assurance"
->abstract="Säkerställ kvaliteten på mobilappens datainsamling och användarupplevelsen med Assurance. Det här verktyget erbjuder grundlig analys, validering och optimering. Dessutom kan du ansluta appen direkt för att verifiera den korrekta SDK-integreringen."
->additional-url="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/assurance" text="Se Assurance-dokumentation"
+>abstract="Adobe Experience Platform Assurance är inbäddat i det här arbetsflödet så att du kan inspektera SDK-implementeringen samt simulera och validera programhändelser."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home" text="Adobe Experience Platform Assurance - översikt"
 
 
 Denna installation underlättar snabb konfigurering av marknadsföringskanaler och säkerställer att alla nödvändiga resurser finns tillgängliga i Experience Platform, Journey Optimizer och Data Collection. På så sätt kan marknadsföringsteamet omedelbart börja med att skapa kampanjer och resor.

@@ -10,9 +10,9 @@ level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 hide: true
 hidefromtoc: true
-source-git-commit: f0273d24a85488d406b836bee8c2300d189d83e9
+source-git-commit: 4a089308cfc2fa90cc4c0a6baa15a89598e8edd6
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '442'
 ht-degree: 1%
 
 ---
@@ -22,12 +22,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_javascript_code"
 >title="Javascript-kod"
->abstract="Taggen `<head>` innehåller viktiga metadata och resurser som läses in före huvudinnehållet på din webbsida. Genom att placera kod i det här avsnittet kan du vara säker på att den initieras korrekt och körs tidigt, så att webbsidan kan läsas in och fungera effektivt. Genom att lägga till kod i avsnittet `<head>` kan du förbättra webbplatsens struktur, prestanda och övergripande användarupplevelse."
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_javascript_site"
->title="Starta webbplatsen och validera"
->abstract="Ange din bas-URL när koden har implementerats och finns på webbplatsen. Om det behövs kan du gå tillbaka till den här sidan i ett senare skede för att validera och bekräfta att konfigurationen fungerar som förväntat."
+>abstract="The <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-16"> -taggen innehåller viktiga metadata och resurser som läses in före huvudinnehållet på din webbsida. Genom att placera kod i det här avsnittet kan du vara säker på att den initieras korrekt och körs tidigt, så att webbsidan kan läsas in och fungera effektivt. Genom att lägga till kod i <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-16"> hjälper dig att förbättra strukturen, prestandan och den övergripande användarupplevelsen på din webbplats."
 
 Denna installation underlättar snabb konfigurering av marknadsföringskanaler och säkerställer att alla nödvändiga resurser finns tillgängliga i Experience Platform, Journey Optimizer och Data Collection. På så sätt kan marknadsföringsteamet omedelbart börja med att skapa kampanjer och resor.
 

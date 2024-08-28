@@ -10,9 +10,9 @@ level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 hide: true
 hidefromtoc: true
-source-git-commit: f0273d24a85488d406b836bee8c2300d189d83e9
+source-git-commit: 4a089308cfc2fa90cc4c0a6baa15a89598e8edd6
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '880'
 ht-degree: 1%
 
 ---
@@ -29,34 +29,6 @@ ht-degree: 1%
 Denna Android-installation effektiviserar den snabba konfigurationen av marknadsföringskanaler och ser till att alla nödvändiga resurser är lättillgängliga i apparna Experience Platform, Journey Optimizer och Data Collection. På så sätt kan marknadsföringsteamet snabbt börja skapa kampanjer och resor.
 
 ## Skapa en ny Android-konfiguration {#new-setup-android}
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_android_initialization_code"
->title="Lägg till initieringskod"
->abstract="Integrera initieringskoden i metoden **onCreate()** i programmet. Den här metoden körs när programmet skapas för första gången, så att koden körs under den inledande konfigurationsfasen. Korrekt placering av koden här är avgörande för att säkerställa att programmet är korrekt konfigurerat och initierat innan efterföljande åtgärder utförs."
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_android_dependencies_add"
->title="Lägg till beroenden"
->abstract="Du måste lägga till följande bibliotek i ditt projekt med programmets Gradle-fil: Core, Assurance, Edge, Edge Identity och Messaging."
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_android_dependencies_import"
->title="Importera beroenden"
->abstract="Importera följande paket i appens programklass: Mobile Core, Assurance, Edge, Edge Identity och Messaging."
->additional-url="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/install-sdks#import-extensions" text="Se dokumentationen för datainsamling"
-
-<!--
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_push_token_android"
->title="Retrieve the device token"
->abstract="TBC"
-
->[!CONTEXTUALHELP]
->id="ajo_mobile_web_setup_push_android_studio"
->title="Launch the application from Android Studio"
->abstract="TBC"
--->
 
 1. På Journey Optimizer hemsida klickar du på **[!UICONTROL Begin]** från **[!UICONTROL Set up mobile and web channels]**-kortet.
 
