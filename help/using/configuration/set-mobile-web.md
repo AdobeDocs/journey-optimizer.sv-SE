@@ -10,9 +10,9 @@ level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 hide: true
 hidefromtoc: true
-source-git-commit: 4a089308cfc2fa90cc4c0a6baa15a89598e8edd6
+source-git-commit: 7a1f337e2bc257d8f0fa9bda17abdaff92a86de5
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '444'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_javascript_code"
 >title="Javascript-kod"
->abstract="The <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-16"> -taggen innehåller viktiga metadata och resurser som läses in före huvudinnehållet på din webbsida. Genom att placera kod i det här avsnittet kan du vara säker på att den initieras korrekt och körs tidigt, så att webbsidan kan läsas in och fungera effektivt. Genom att lägga till kod i <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-16"> hjälper dig att förbättra strukturen, prestandan och den övergripande användarupplevelsen på din webbplats."
+>abstract="Taggen head innehåller viktiga metadata och resurser som läses in före huvudinnehållet på din webbsida. Genom att placera kod i det här avsnittet kan du vara säker på att den initieras korrekt och körs tidigt, så att webbsidan kan läsas in och fungera effektivt. Genom att lägga till kod i head-avsnittet kan du förbättra strukturen, prestandan och den övergripande användarupplevelsen för din webbplats."
 
 Denna installation underlättar snabb konfigurering av marknadsföringskanaler och säkerställer att alla nödvändiga resurser finns tillgängliga i Experience Platform, Journey Optimizer och Data Collection. På så sätt kan marknadsföringsteamet omedelbart börja med att skapa kampanjer och resor.
 
