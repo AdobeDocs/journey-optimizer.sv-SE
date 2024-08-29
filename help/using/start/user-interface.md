@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 8fb87d2e2085d98dd8b014df6aa4d734bab4e997
+source-git-commit: 1c34c916843600d8602c5c1fe7164aebc83becd9
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1325'
 ht-degree: 5%
 
 ---
@@ -194,3 +194,14 @@ Så här byter du språk:
 * Välj önskat språk och klicka på **Spara**. Du kan välja ett andra språk om komponenten som du använder inte är lokaliserad på ditt första språk.
   ![](assets/select-language.png)
 
+<!--CONTEXTUAL HELP TO DISPATCH IN DOCS ONCE FEATURE LIVE-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_priority"
+>title="Prioritet"
+>abstract="Tilldela en prioritetspoäng till resan, från 0 till 100. Ett högre tal anger en högre prioritet. När två resor använder samma yta väljer Journey Optimizer den resa som har högst prioritet. Om resorna har samma poäng väljs den resa som senast ändrades."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_campaign_priority"
+>title="Prioritet"
+>abstract="Tilldela kampanjens prioritetspoäng, från 0 till 100. Ett högre tal anger en högre prioritet. När två kampanjer använder samma yta väljer Journey Optimizer den kampanj som har högst prioritet. Om kampanjerna har samma poäng väljs den senaste kampanjen."
