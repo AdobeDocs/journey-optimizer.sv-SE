@@ -11,9 +11,9 @@ badge: label="Beta" type="Informative"
 hide: true
 hidefromtoc: true
 exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
-source-git-commit: 930070843c2c1ce022beb5dc6e8a61c8d4f70365
+source-git-commit: 392fe9d87e1061a2ba40fbcae042cd1a0891a829
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Allmänna riktlinjer för hur du använder AI Assistant i Journey Optimizer för
 * Den maximala storleken för överförda varumärkesresurser är 50 MB. Större filer eller mycket bilder kan fungera, men bearbetningstiden ökar.
 * Använd en e-postmall som skapats av Adobe Campaign, helst [inbyggda e-postmallar](../email/use-email-templates.md), en varumärkesspecifik mall eller anpassad mall för att skapa ditt e-postinnehåll. E-postmall med upp till 8-10 bilder rekommenderas.
 * Var noga med att rapportera eventuella problematiska utdata med ikonerna för tummen uppåt, tummen nedåt eller flagga när du väljer varianter.
-* Din användning av AI-assistenten regleras av Adobe Experience Cloud Generative AI User Guidelines. [Läs mer](https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html)
+* Din användning av AI-assistenten regleras av Adobe Experience Cloud Generative AI User Guidelines. [Läs mer](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 Följande begränsningar gäller för AI Assistant i Journey Optimizer:
 

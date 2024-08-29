@@ -5,9 +5,9 @@ feature: Code-based Experiences, Channel Configuration
 topic: Content Management
 role: Admin
 level: Experienced
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 392fe9d87e1061a2ba40fbcae042cd1a0891a829
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '1096'
 ht-degree: 1%
 
 ---
@@ -33,6 +33,16 @@ ht-degree: 1%
 >id="ajo_admin_default_mobile_url"
 >title="URL för standardredigering och förhandsgranskning"
 >abstract="Det här fältet ser till att sidorna som genereras eller matchas av regeln har en angiven URL-adress, vilket är nödvändigt för att både skapa och förhandsgranska innehåll effektivt."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_default_web_url"
+>title="URL för standardredigering och förhandsgranskning"
+>abstract="Det här fältet ser till att sidorna som genereras eller matchas av regeln har en angiven URL-adress, vilket är nödvändigt för att både skapa och förhandsgranska innehåll effektivt."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_mobile_url_preview"
+>title="Förhandsgranska URL"
+>abstract="Det här fältet är viktigt för att du ska kunna simulera och förhandsgranska ditt innehåll direkt på enheten i programmet."
 
 ## Skapa en kanalkonfiguration {#reatte-code-based-configuration}
 
@@ -68,6 +78,8 @@ Så här skapar du en kanalkonfiguration:
 
    * Ange din **[!UICONTROL App id]** och **[!UICONTROL Location or path inside the app]**.
 
+     ![](assets/code_config_3.png)
+
 1. Välj Annan som plattform om implementeringen inte är för webben, iOS eller Android, eller om du behöver ange specifika URI:er som mål. När du väljer flera plattformar eller lägger till flera URI:er levereras innehållet till alla valda sidor eller appar.
 
    * Ange **[!UICONTROL Surface URI]**.
@@ -75,6 +87,35 @@ Så här skapar du en kanalkonfiguration:
    >[!CAUTION]
    >
    >Kontrollera att den yt-URI som används i din kodbaserade kampanj matchar den som används i din egen implementering. Annars levereras inte ändringarna.
+
+1. Fyll i fältet **[!UICONTROL Preview URL]** om du vill aktivera förhandsvisningar på enheten. Den här URL:en informerar förhandsgranskningstjänsten om den specifika URL:en som ska användas när en förhandsgranskning aktiveras.
+
+   * För webben:
+
+      * Om du anger en URL för en sida används den URL:en för förhandsgranskningen.
+      * Om en sidmatchningsregel är markerad måste du ange en standardförhandsvisnings-URL som ska användas för att förhandsgranska upplevelsen i webbläsaren.
+
+   * För mobilplattformar (iOS/Android):
+
+      * Förhandsgransknings-URL är en överordnad länk som konfigurerats av apputvecklaren i din app. Detta garanterar att alla URL:er som matchar deplink-schemat öppnas i appen i stället för i en mobil webbläsare. Kontakta apputvecklaren för att få ett deplink-schema som är konfigurerat för din app.
+
++++  Följande resurser kan hjälpa dig att konfigurera djupa länkar för appimplementeringen
+
+      * För Android:
+
+         * [Skapa djupa länkar till appkontext](https://developer.android.com/training/app-links/deep-linking)
+
+      * För iOS:
+
+         * [Definiera ett anpassat URL-schema för din app](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app)
+
+         * [Supporting Universal Links in your app](https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app)
+
++++
+
+   >[!NOTE]
+   >
+   >Om du stöter på problem när du förhandsgranskar upplevelsen kan du läsa [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/troubleshooting#app-does-not-open-link).
 
 1. Välj det format som programmet förväntar sig på den aktuella platsen. Detta kommer att användas vid utvecklingen av den kodbaserade upplevelsen i kampanjer och resor.
 
