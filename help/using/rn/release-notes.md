@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 8fb87d2e2085d98dd8b014df6aa4d734bab4e997
+source-git-commit: 377f75a67f3a392957cefb7b2ba9347c364c11a1
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '661'
 ht-degree: 8%
 
 ---
@@ -177,3 +177,11 @@ Den här versionen innehåller de förbättringar som anges nedan.
 * Den aktuella rapportupplevelsen kommer att tas ur bruk i oktober-versionen. Efter detta datum kommer den nya rapportupplevelsen att bli standard. Vi rekommenderar att du behärskar de nya funktionerna så att övergången blir smidig.
 
 [Kom igång med Journey Optimizer nya rapporteringsgränssnitt](../reports/report-gs-cja.md)
+
+* Nya användningsfall har lagts till i den nya rapportupplevelsen:
+
+   * Skapa anpassade beräknade mätvärden direkt i dina rapporter.
+   * Skapa en publik utifrån rapportdata.
+   * Använd verktyget för experimentell analys för att enkelt skapa tabeller och visualiseringar från dina valda **[!UICONTROL Dimensions]** och **[!UICONTROL Metrics]**.
+
+  Mer information finns i den [detaljerade dokumentationen](../reports/report-cja-manage.md).
