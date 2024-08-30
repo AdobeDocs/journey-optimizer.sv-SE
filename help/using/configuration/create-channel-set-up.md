@@ -10,9 +10,9 @@ level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 hide: true
 hidefromtoc: true
-source-git-commit: 06f79b7af3fe3c5ca556e2226d7e241a9c5b56d3
+source-git-commit: d7a1384ee83f81060333ca02c97b1db67427fbe5
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_javascript_code"
 >title="Javascript-kod"
->abstract="The <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-16"> -taggen innehåller viktiga metadata och resurser som läses in före huvudinnehållet på din webbsida. Genom att placera kod i det här avsnittet kan du vara säker på att den initieras korrekt och körs tidigt, så att webbsidan kan läsas in och fungera effektivt. Genom att lägga till kod i <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-16"> hjälper dig att förbättra strukturen, prestandan och den övergripande användarupplevelsen på din webbplats."
+>abstract="Taggen head innehåller viktiga metadata och resurser som läses in före huvudinnehållet på din webbsida. Genom att placera kod i det här avsnittet kan du vara säker på att den initieras korrekt och körs tidigt, så att webbsidan kan läsas in och fungera effektivt. Genom att lägga till kod i head-avsnittet kan du förbättra strukturen, prestandan och den övergripande användarupplevelsen för din webbplats."
 
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_push_token"
