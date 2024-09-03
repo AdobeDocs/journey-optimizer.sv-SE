@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 1c34c916843600d8602c5c1fe7164aebc83becd9
+source-git-commit: 762fa346d9303865f1509bfc9c2e9cb3528227e4
 workflow-type: tm+mt
-source-wordcount: '1325'
-ht-degree: 5%
+source-wordcount: '1361'
+ht-degree: 4%
 
 ---
 
@@ -196,6 +196,8 @@ Så här byter du språk:
 
 <!--CONTEXTUAL HELP TO DISPATCH IN DOCS ONCE FEATURE LIVE-->
 
+<!--PRIORITIZATION & CONFLICT MANAGEMENT-->
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_priority"
 >title="Prioritet"
@@ -205,3 +207,33 @@ Så här byter du språk:
 >id="ajo_campaigns_campaign_priority"
 >title="Prioritet"
 >abstract="Tilldela kampanjens prioritetspoäng, från 0 till 100. Ett högre tal anger en högre prioritet. När två kampanjer använder samma yta väljer Journey Optimizer den kampanj som har högst prioritet. Om kampanjerna har samma poäng väljs den senaste kampanjen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_campaign_conflict"
+>title="Visningsprogrammet i konflikt i kampanjer"
+>abstract="Visningsprogrammet i konflikt i kampanjer"
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_conflict"
+>title="Konfliktvisningsprogrammet under resor"
+>abstract="Konfliktvisningsprogrammet under resor"
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_object_type"
+>title="Objekttyp"
+>abstract="Objekttyp"
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_rule_set"
+>title="Använd regeluppsättning för resor"
+>abstract="TBD"
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_rule_set"
+>title="Använd regeluppsättning för kampanjer"
+>abstract="TBD"
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_prioritization"
+>title="Faktor i prioritering"
+>abstract="TBD"
