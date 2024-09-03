@@ -6,7 +6,7 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 1aff2f6f-914c-4088-afd8-58bd9edfe07d
-source-git-commit: 7bfbb88c2817d18b7897a7fe1657ebf11be6eb58
+source-git-commit: a025a269353d7451ff0426895688f62211768383
 workflow-type: tm+mt
 source-wordcount: '1096'
 ht-degree: 1%
@@ -79,7 +79,7 @@ Så här skapar du en kanalkonfiguration:
 
    * Ange din **[!UICONTROL App id]** och **[!UICONTROL Location or path inside the app]**.
 
-     ![](assets/code_config_3.png)
+     ![](assets/code_config_3.png){width="500"}
 
 1. Välj Annan som plattform om implementeringen inte är för webben, iOS eller Android, eller om du behöver ange specifika URI:er som mål. När du väljer flera plattformar eller lägger till flera URI:er levereras innehållet till alla valda sidor eller appar.
 
