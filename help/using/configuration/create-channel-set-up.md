@@ -8,7 +8,7 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
-source-git-commit: 0144809646e9e3b57089820290723ed7f9ed0acc
+source-git-commit: 77e2892dc188ebdd79031792434b4f55913ee811
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -51,6 +51,7 @@ ht-degree: 0%
 >id="ajo_mobile_web_setup_push_team_id"
 >title="Team-ID"
 >abstract="Team-ID:t, som är ett strängvärde som används för att identifiera ditt team, finns på fliken **Medlemskap** i ditt utvecklarkonto."
+
 
 Den här konfigurationen förenklar den snabba konfigurationen av marknadsföringskanaler och gör alla nödvändiga resurser tillgängliga i apparna Experience Platform, Journey Optimizer och Data Collection. På så sätt kan marknadsföringsteamet snabbt börja skapa kampanjer och resor.
 
