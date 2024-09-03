@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 846e0d11-798b-4f3b-80db-848a17d32830
-source-git-commit: 549efb9e12dccedb27335553194e09deab09a35f
+source-git-commit: 0144809646e9e3b57089820290723ed7f9ed0acc
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 3%
@@ -390,3 +390,4 @@ Nedan visas en omfattande lista med alla resurser som skapats på skärmen **Kon
   </table>
 
 >[!ENDTABS]
+
