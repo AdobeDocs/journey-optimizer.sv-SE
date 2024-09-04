@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: d2ff175a-8bca-4b62-931c-a909cfd9308d
-source-git-commit: 3098b63ef643da63a205f539ac48f902e823bbd1
+source-git-commit: 9be8b3864a41b37f3a61f24b6e6b54ec184d41aa
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '846'
 ht-degree: 0%
 
 ---
@@ -140,6 +140,10 @@ d. Open the report for the journey that you added the metric to and ensure that 
 -->
 
 ## Skapa en publik utifrån rapportdata {#create-audience}
+
+>[!IMPORTANT]
+>
+>Varje organisation är begränsad till att publicera 25 målgrupper. Dessutom kan användare publicera högst 5 målgrupper per timme och 20 per dag
 
 Nu kan du markera specifika data i tabellen och direkt skapa en målgrupp utifrån dessa markeringar, vilket effektiviserar och förenklar processen för att skapa målgrupper.
 

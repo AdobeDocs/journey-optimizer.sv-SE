@@ -5,7 +5,8 @@ feature: Web Channel, Channel Configuration
 topic: Content Management
 role: Admin
 level: Experienced
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+exl-id: 2161baf0-38b7-4397-bffe-083929e8033a
+source-git-commit: 9be8b3864a41b37f3a61f24b6e6b54ec184d41aa
 workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 0%
@@ -81,15 +82,46 @@ Tillgängliga operatorer för att skapa sidmatchningsregler:
 
 * **Sökväg**
 
-  | | | |
-  |-|-|-|
-  | Operator  | Beskrivning  | Exempel  |
-  | Lika med  | Exakt matchning av sökvägen.  |    |
-  | Börjar med  | Matchar alla sökvägar (inklusive delsökvägar) som börjar med den angivna strängen.  |    |
-  | Slutar med  | Matchar alla sökvägar (inklusive delsökvägar) som slutar med den sträng som anges.  |    |
-  | Alla  | Matchar alla sökvägar - användbart när du riktar in dig på alla sökvägar under en eller flera domäner.  |    |
-  | Matchning av jokertecken  | Operatorn &quot;Jokerteckenmatchning&quot; gör att användaren kan definiera ett internt jokertecken i sökvägen, till exempel &quot;/products/*/detail&quot;.  Jokertecknet * i komponenten Path ** matchar alla teckensekvenser tills det första / tecknet påträffas.  /*/ matchar alla teckensekvenser (inklusive delsökvägar)  | Exempel: &quot;Jokerteckenmatchning: /products/*/detail&quot;, matchar alla sökvägar som:  example.com/products/yoga/detail  example.com/products/surf/detail  example.com/products/tennis/detail  example.com/products/yoga/pants/detail   Exempel: &quot;Matchar: /prod*/detail, matchar alla sökvägar som:  example.com/products/detail  example.com/production/detail   matchar inte sökvägar som:  example.com/products/yoga/detail  |
-  | Innehåller  | &quot;contains&quot; översätts till ett jokertecken som &quot;mystring&quot; och matchar alla sökvägar som innehåller den här teckensekvensen.  | Exempel: &quot;Innehåller: product&quot;, matchar alla sökvägar som innehåller strängprodukten, som: example.com/products, example.com/yoga/perfproduct, example.com/surf/productdescription, example.com/home/product/page  |
-
+<table>
+    <thead>
+    <tr>
+        <th><strong>Operatör</th>
+        <th><strong>Beskrivning</th>
+        <th><strong>Exempel</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Lika med</td>
+        <td>Exakt matchning av sökvägen. </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Börjar med</td>
+        <td>Matchar alla sökvägar (inklusive delsökvägar) som börjar med den angivna strängen.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Slutar med</td>
+        <td>Matchar alla sökvägar (inklusive delsökvägar) som slutar med den sträng som anges.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Alla</td>
+        <td>Matchar alla sökvägar - användbart när du riktar in dig på alla sökvägar under en eller flera domäner.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Matchning av jokertecken</td>
+        <td>Med operatorn"Jokerteckenmatchning" kan användaren definiera ett internt jokertecken inuti sökvägen, till exempel"/products/*/detail".  Jokertecknet * i komponenten Path ** matchar alla teckensekvenser tills det första / tecknet påträffas.  /*/ matchar alla teckensekvenser (inklusive underbanor)</td>
+        <td>Exempel: "Jokerteckenmatchning: /products/*/detail", matchar alla sökvägar som: <ul>example.com/products/yoga/detail</ul><ul>example.com/products/surf/detail</ul><ul>example.com/products/tennis/detail</ul><ul>example.com/products/yoga/pants/detail</ul>Exempel: "Matchar: /prod*/detail, matchar alla sökvägar som:  <ul>example.com/products/detail</ul><ul>example.com/production/detail</ul>  matchar inte sökvägar som: <ul>example.com/products/yoga/detail</ul></td>
+    </tr>
+    <tr>
+        <td>Innehåller</td>
+        <td>"contains" översätts till ett jokertecken som "mystring" och matchar alla sökvägar som innehåller den här teckensekvensen.</td>
+        <td>Exempel: "Innehåller: product", matchar alla sökvägar som innehåller strängprodukten, som: <ul>example.com/products</ul><ul>example.com/yoga/perfproduct</ul><ul>example.com/surf/productdescription</ul><ul>example.com/home/product/page</ul></td>
+    </tr>
+    </tbody>
+</table>
 
 Om ditt användningsfall inte kan modelleras med en regel har du möjlighet att lägga till flera sidregler och du kan använda operatorerna Eller eller Exkludera mellan dem. Exkludera är användbart när en av sidorna som matchar den definierade regeln inte ska ha något mål: till exempel alla exempel&quot;example.com&quot;-sidor som innehåller&quot;product&quot;, exklusive följande sida: `https://example.com/blogs/productinfo`.
