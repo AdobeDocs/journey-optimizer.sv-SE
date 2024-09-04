@@ -6,7 +6,7 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 2161baf0-38b7-4397-bffe-083929e8033a
-source-git-commit: 9be8b3864a41b37f3a61f24b6e6b54ec184d41aa
+source-git-commit: 37e60e5d7c0ad164cde67015b72341e1f4eda6a9
 workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 0%
@@ -114,12 +114,12 @@ Tillgängliga operatorer för att skapa sidmatchningsregler:
     <tr>
         <td>Matchning av jokertecken</td>
         <td>Med operatorn"Jokerteckenmatchning" kan användaren definiera ett internt jokertecken inuti sökvägen, till exempel"/products/*/detail".  Jokertecknet * i komponenten Path ** matchar alla teckensekvenser tills det första / tecknet påträffas.  /*/ matchar alla teckensekvenser (inklusive underbanor)</td>
-        <td>Exempel: "Jokerteckenmatchning: /products/*/detail", matchar alla sökvägar som: <ul>example.com/products/yoga/detail</ul><ul>example.com/products/surf/detail</ul><ul>example.com/products/tennis/detail</ul><ul>example.com/products/yoga/pants/detail</ul>Exempel: "Matchar: /prod*/detail, matchar alla sökvägar som:  <ul>example.com/products/detail</ul><ul>example.com/production/detail</ul>  matchar inte sökvägar som: <ul>example.com/products/yoga/detail</ul></td>
+        <td>Exempel: "Jokerteckenmatchning: /products/*/detail", matchar alla sökvägar som: <ul><li>example.com/products/yoga/detail</li><li>example.com/products/surf/detail</li><li>example.com/products/tennis/detail</li><li>example.com/products/yoga/pants/detail</li></ul>Exempel: "Matchar: /prod*/detail, matchar alla sökvägar som: <ul><li>example.com/products/detail</li><li>example.com/production/detail</li></ul>matchar inte sökvägar som: <ul><li>example.com/products/yoga/detail</li></ul></td>
     </tr>
     <tr>
         <td>Innehåller</td>
         <td>"contains" översätts till ett jokertecken som "mystring" och matchar alla sökvägar som innehåller den här teckensekvensen.</td>
-        <td>Exempel: "Innehåller: product", matchar alla sökvägar som innehåller strängprodukten, som: <ul>example.com/products</ul><ul>example.com/yoga/perfproduct</ul><ul>example.com/surf/productdescription</ul><ul>example.com/home/product/page</ul></td>
+        <td>Exempel: "Innehåller: product", matchar alla sökvägar som innehåller strängprodukten, som: <ul><li>example.com/products</li><li>example.com/yoga/perfproduct</li><li>example.com/surf/productdescription</li><li>example.com/home/product/page</li></ul></td>
     </tr>
     </tbody>
 </table>
