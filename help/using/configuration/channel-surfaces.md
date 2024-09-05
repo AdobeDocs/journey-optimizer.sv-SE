@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 8fb87d2e2085d98dd8b014df6aa4d734bab4e997
+source-git-commit: 4cd7e193079f0e9d141d28ca80dd0cf7a899fbea
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1676'
 ht-degree: 0%
 
 ---
@@ -271,10 +271,9 @@ Du kan inte redigera en inaktiverad kanalkonfiguration direkt. Du kan dock dupli
 
 ![](assets/preset-activate.png)
 
-<!--
-## How-to video{#video-presets}
 
-Learn how to create channel configurations, how to use them and how to delegate a subdomain and create an IP pool.
+## Instruktionsvideo{#video-presets}
 
->[!VIDEO](https://video.tv.adobe.com/v/334343?quality=12)
--->
+Lär dig vilka kanalkonfigurationer som är och hur de används i Adobe Journey Optimizer.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3433124/?learn=on)
