@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 762fa346d9303865f1509bfc9c2e9cb3528227e4
+source-git-commit: 6c2e974cb690866e9c34e80ba9e48b5375185024
 workflow-type: tm+mt
-source-wordcount: '1361'
+source-wordcount: '1420'
 ht-degree: 4%
 
 ---
@@ -237,3 +237,45 @@ Så här byter du språk:
 >id="ajo_rule_set_prioritization"
 >title="Faktor i prioritering"
 >abstract="TBD"
+
+<!--CONTENT LOCKING-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_governance"
+>title="Styrning"
+>abstract="Styrning"
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_mode"
+>title="Läge"
+>abstract="Läge"
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_content_addition"
+>title="Aktivera tillägg av innehåll"
+>abstract="Aktivera tillägg av innehåll"
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_structure"
+>title="Låsning av innehåll i struktur"
+>abstract="Låsning av innehåll i struktur"
+
+>[!CONTEXTUALHELP]
+>id="ajo_locking_component"
+>title="Använd specifik låsning i komponenten"
+>abstract="Använd specifik låsning i komponenten"
+
+>[!CONTEXTUALHELP]
+>id="ajo_email_editable_areas"
+>title="Markera redigerbara områden"
+>abstract="Markera redigerbara områden"
+
+>[!CONTEXTUALHELP]
+>id="ajo_email_locking_activated"
+>title="Styrning har aktiverats"
+>abstract="Lås innehåll aktiveras och kan förhindra att du gör ändringar."
+
+>[!CONTEXTUALHELP]
+>id="ajo_email_locking_read_only"
+>title="Skrivskyddad"
+>abstract="Det här innehållet är skrivskyddat och kan inte ändras."
