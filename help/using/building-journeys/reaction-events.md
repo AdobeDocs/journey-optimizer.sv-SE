@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: resa, händelser, reaktion, spårning, plattform
 exl-id: 235384f3-0dce-4797-8f42-1d4d01fa42d9
-source-git-commit: 110fd5f1055455ec040ab8de0b599a343e8de298
+source-git-commit: 343e7bbebf35711259d2f3392f1ce5658865599a
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 2%
@@ -40,7 +40,7 @@ Här följer de olika stegen för att konfigurera reaktionshändelser:
 1. Lägg till en **[!UICONTROL Label]** i svaret. Det här steget är valfritt.
 1. Välj den åtgärd som du vill reagera på i listrutan. Du kan välja vilken åtgärdsaktivitet som helst som placerats i banans tidigare steg.
 1. Beroende på vilken åtgärd du har valt väljer du vad du vill reagera på.
-1. Du kan definiera en timeout för en händelse (mellan 40 sekunder och 29 dagar) och en timeout-sökväg. Detta skapar en andra väg för individer som inte reagerade inom den angivna tiden. När du testar en resa som använder en reaktionshändelse är standardvärdet **[!UICONTROL Wait time]** och minimivärdet 40 sekunder. Se [det här avsnittet](../building-journeys/testing-the-journey.md).
+1. Du kan definiera en timeout för en händelse (mellan 40 sekunder och 90 dagar) och en timeout-sökväg. Detta skapar en andra väg för individer som inte reagerade inom den angivna tiden. När du testar en resa som använder en reaktionshändelse är standardvärdet **[!UICONTROL Wait time]** och minimivärdet 40 sekunder. Se [det här avsnittet](../building-journeys/testing-the-journey.md).
 
 >[!NOTE]
 >
