@@ -10,14 +10,24 @@ level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: 38e82eb2-67d9-4a7d-8c1f-77dab20bcec4
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: a190b5547c2d8e13563391bd9d784add75c55fd4
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1467'
 ht-degree: 1%
 
 ---
 
 # Skapa flerspråkigt innehåll med automatiserad översättning {#multilingual-automated}
+
+>[!CONTEXTUALHELP]
+>id="ajo_multi_add_provider"
+>title="Lägg till provider"
+>abstract="Lägg till översättningsleverantörer och språkområden efter behov. På så sätt kan ni hantera vilka leverantörer och språkområden som är aktiva i projektet, vilket ger er flexibilitet att justera resurser och inrikta er på målgrupper baserat på era aktuella krav och projektomfattning."
+
+>[!CONTEXTUALHELP]
+>id="ajo_multi_edit_provider"
+>title="Redigera provider"
+>abstract="Ändra befintliga översättningsleverantörer och lägg till språkområden efter behov. Med den här funktionen kan du styra vilka leverantörer och språkområden som är aktiva i ditt projekt, vilket ger dig flexibilitet att justera resurser och inrikta dig på specifika målgrupper utifrån dina aktuella behov och projektmål."
 
 >[!AVAILABILITY]
 >
@@ -39,6 +49,11 @@ Följ de här stegen för att skapa flerspråkigt innehåll med hjälp av automa
 
 ## Skapa nationella inställningar {#create-locale}
 
+>[!CONTEXTUALHELP]
+>id="ajo_multi_add_locale"
+>title="Lägg till nationella inställningar"
+>abstract="När du konfigurerar språkinställningarna kan du skapa ytterligare språkområden om det önskade inte är tillgängligt för ditt flerspråkiga innehåll."
+
 När du konfigurerar språkinställningarna, enligt beskrivningen i avsnittet [Skapa språkinställningar](#language-settings) , kan du skapa så många nya språkinställningar som behövs på menyn **[!UICONTROL Translation]** om det inte finns någon tillgänglig språkinställning för det flerspråkiga innehållet.
 
 1. Gå till **[!UICONTROL Translation]** på menyn **[!UICONTROL Content management]**.
@@ -54,6 +69,16 @@ När du konfigurerar språkinställningarna, enligt beskrivningen i avsnittet [S
    ![](assets/locale_2.png)
 
 ## Skapa översättningsprojekt {#translation-project}
+
+>[!CONTEXTUALHELP]
+>id="ajo_multi_create_project"
+>title="Skapa projekt"
+>abstract="Om du vill börja skapa flerspråkigt innehåll börjar du med att identifiera målspråkinställningen och väljer språk eller regional dialekt för målgruppen. Därefter väljer du en översättningsleverantör som passar ditt projekts behov."
+
+>[!CONTEXTUALHELP]
+>id="ajo_multi_edit_project"
+>title="Redigera projekt"
+>abstract="Uppdatera översättningsprojektet så att det innehåller fler språkområden, så att innehållet kan nå en större publik."
 
 Starta översättningsprojektet genom att ange språkområdet som mål, vilket anger det specifika språket eller den specifika regionen för innehållet. Du kan sedan välja översättningsleverantör.
 
@@ -205,6 +230,11 @@ Nu kan ni aktivera kampanjen eller resan. När ni har skickat dem kan ni mäta e
 
 ## Hantera översättningsprojekt från Insourcing {#manage-ht-project}
 
+>[!CONTEXTUALHELP]
+>id="ajo_multi_insourcing_project"
+>title="Översättningsprojekt läggs in"
+>abstract="Genom att lägga in översättningsprojekt kan ni hantera och utföra översättningar direkt i översättningsprojektet, effektivisera processen och behålla större kontroll över översättningskvalitet och konsekvens."
+
 Om du valde Insourcing när du konfigurerade språkinställningarna kan du översätta innehållet direkt i översättningsprojektet.
 
 1. Gå till menyn **[!UICONTROL More actions]** från din **[!UICONTROL Translation project]** och välj **[!UICONTROL Insourcing]**.
@@ -222,6 +252,16 @@ Om du valde Insourcing när du konfigurerade språkinställningarna kan du över
 1. Om du är redo att publicera den översatta texten klickar du på **[!UICONTROL Finalize]**.
 
 ## Granska ditt översättningsprojekt {#review-translation-project}
+
+>[!CONTEXTUALHELP]
+>id="ajo_multi_review_project"
+>title="Granska ditt översättningsprojekt"
+>abstract="När översättningsleverantören är klar med översättningen kan du granska resultatet direkt i Journey Optimizer. På så sätt kan du bedöma översättningens exakthet och kvalitet och säkerställa att den överensstämmer med dina förväntningar och projektkrav innan du slutför den."
+
+>[!CONTEXTUALHELP]
+>id="ajo_multi_preview_project"
+>title="Förhandsgranska översättningsprojektet"
+>abstract="I förhandsgranskningsfönstret kan du visa hur det översatta innehållet visas på varje språk. Med den här funktionen kan du granska återgivningen och se till att innehållet visas korrekt och effektivt på alla valda språk."
 
 Om du har markerat **[!UICONTROL Enable review worflow]** i din **[!UICONTROL Translation project]** kan du granska översättningen direkt i Journey Optimizer när den har slutförts av den valda översättningsleverantören.
 
