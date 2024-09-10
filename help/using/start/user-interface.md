@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 9c6e4647b1c3f0b39ebfaa1711c5c87d0c7168e5
+source-git-commit: ba519e940feb35bc7f708f432a05b20948c487ee
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1460'
 ht-degree: 4%
 
 ---
@@ -297,12 +297,12 @@ Så här byter du språk:
 >[!CONTEXTUALHELP]
 >id="ajo_approval_policy_request_approval"
 >title="Begär godkännande"
->abstract="Begär godkännande (två separata ID:n?)"
+>abstract="Begär godkännande"
 
 >[!CONTEXTUALHELP]
 >id="ajo_approval_policy_request_change"
 >title="Begär ändring"
->abstract="Begär ändring (två separata ID:n?)"
+>abstract="Begär ändring"
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_edit_disabled"
@@ -317,7 +317,7 @@ Så här byter du språk:
 >[!CONTEXTUALHELP]
 >id="ajo_approval_policy_approval_status"
 >title="Godkännandestatus"
->abstract="Godkännandestatus (två separata ID:n?)"
+>abstract="Godkännandestatus"
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_approve"
