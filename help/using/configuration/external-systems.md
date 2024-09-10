@@ -8,10 +8,10 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: 0738443c024499079d8527fe2cc1c80f42f4f476
+source-git-commit: ae92a1e950822d4a0dbac1aa535078fe535113c0
 workflow-type: tm+mt
-source-wordcount: '1278'
-ht-degree: 25%
+source-wordcount: '1343'
+ht-degree: 24%
 
 ---
 
@@ -98,7 +98,7 @@ Låt oss ta ett exempel i 5 sekunder.
 
 **Hur konfigurerar jag en begränsning eller begränsning? Finns det en standardregel?**
 
-Som standard finns det ingen begränsning eller begränsning. Regler definieras på sandlådenivå för en specifik slutpunkt (den URL som anropas) med API:t för begränsning eller begränsning. Se [det här avsnittet](../configuration/external-systems.md#capping).
+Se [det här avsnittet](../configuration/external-systems.md#capping) om du vill skapa regler för begränsning och begränsning. Som standard finns det ingen begränsning, men en begränsning på 300 000 anrop över en minut som definierats för alla anpassade åtgärder, per värd och per sandlåda. Den här gränsen har fastställts baserat på kundanvändning för att skydda externa slutpunkter som har anpassats efter anpassade åtgärder. Du måste ta hänsyn till detta vid målgruppsbaserade resor genom att definiera en lämplig läsfrekvens (5 000 profiler/er när anpassade åtgärder används). Om det behövs kan du åsidosätta den här inställningen genom att definiera en större begränsning för begränsning eller begränsning via våra API:er för begränsning/begränsning.
 
 **Hur många försök utförs? Kan jag ändra antalet återförsök eller definiera en minsta vänteperiod mellan återförsök?**
 
