@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 06f79b7af3fe3c5ca556e2226d7e241a9c5b56d3
+source-git-commit: ca28d323a2ef310ec82c732484c8aed1e2641135
 workflow-type: tm+mt
-source-wordcount: '1963'
+source-wordcount: '1965'
 ht-degree: 26%
 
 ---
@@ -174,6 +174,14 @@ ht-degree: 26%
    + [Granska och aktivera en kampanj](using/campaigns/review-activate-campaign.md)
    + [Hantera kampanjer](using/campaigns/modify-stop-campaign.md)
    + [Utlösa kampanjer med API:er](using/campaigns/api-triggered-campaigns.md)
++ Testa dina leveranser {#test}
+   + Förhandsgranska och testa innehåll {#preview-test}
+      + [Kom igång med förhandsgranskning och test](using/content-management/preview-test.md)
+      + [Välj testprofiler](using/content-management/test-profiles.md)
+      + [Förhandsgranska ditt innehåll](using/content-management/preview.md)
+      + [Skicka e-postkorrektur](using/content-management/proofs.md)
+      + [Testa e-poståtergivning](using/content-management/rendering.md)
+      + [Rapport om skräppost](using/content-management/spam-report.md)
 + E-postkanal {#email}
    + [Kom igång med e-post](using/email/get-started-email.md)
    + [Skapa ett e-postmeddelande](using/email/create-email.md)
@@ -330,13 +338,6 @@ ht-degree: 26%
       + [Kom igång med dynamiskt innehåll](using/personalization/get-started-dynamic-content.md)
       + [Skapa villkorsregler](using/personalization/create-conditions.md)
       + [Skapa dynamiskt innehåll](using/personalization/dynamic-content.md)
-   + Förhandsgranska och testa ditt innehåll {#preview-test}
-      + [Kom igång med förhandsgranskning och test](using/content-management/preview-test.md)
-      + [Välj testprofiler](using/content-management/test-profiles.md)
-      + [Förhandsgranska ditt innehåll](using/content-management/preview.md)
-      + [Skicka e-postkorrektur](using/content-management/proofs.md)
-      + [Testa e-poståtergivning](using/content-management/rendering.md)
-      + [Rapport om skräppost](using/content-management/spam-report.md)
 + Målgrupper, profiler och identitet{#audiences-profiles-identities}
    + Målgrupper {#audiences}
       + [Kom igång med målgrupper](using/audience/about-audiences.md)
