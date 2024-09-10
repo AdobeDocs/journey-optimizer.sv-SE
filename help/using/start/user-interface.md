@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: ba519e940feb35bc7f708f432a05b20948c487ee
+source-git-commit: 6268aafbec0aa21a7c8881514227cdb41674791a
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1470'
 ht-degree: 4%
 
 ---
@@ -328,3 +328,15 @@ Så här byter du språk:
 >id="ajo_journey_approve"
 >title="Godkänn"
 >abstract="Godkänn (resor)"
+
+<!--Multilingual-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_multi_custom_conditional"
+>title="Anpassade villkorsinställningar"
+>abstract="Anpassade villkorsinställningar"
+
+>[!CONTEXTUALHELP]
+>id="ajo_multi_fallback"
+>title="Inställningar för reserv"
+>abstract="Inställningar för reserv"
