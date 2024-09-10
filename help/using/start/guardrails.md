@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
+source-git-commit: 75b7d7402363709a0790ffaae051cf836bed6c81
 workflow-type: tm+mt
-source-wordcount: '2279'
+source-wordcount: '2345'
 ht-degree: 0%
 
 ---
@@ -142,11 +142,12 @@ Specifika skyddsutkast gäller för aktiviteten **[!UICONTROL Update profile]**.
 Följande skyddsutkast gäller för aktiviteten **[!UICONTROL Read Audience]**:
 
 * Direktuppspelade målgrupper är alltid uppdaterade, men batchmålgrupper beräknas inte vid hämtningen. De utvärderas endast varje dag vid den dagliga grupputvärderingen.
-* För resor som använder aktiviteten Läs målgrupp finns det ett maximalt antal resor som kan påbörjas exakt samtidigt. Nya försök kommer att utföras av systemet men undvik att ha fler än fem resor (med Läs publik, schemalagd eller starta&quot;så snart som möjligt&quot;) med början vid exakt samma tidpunkt genom att sprida dem över tiden, till exempel med 5 till 10 minuters mellanrum.
-* Det går inte att använda målgruppsaktiviteten Läs med Adobe Campaign-aktiviteter.
-* Det går endast att använda aktiviteten Läsa målgrupp som en första aktivitet i en resa, efter en affärshändelseaktivitet.
-* En resa kan bara ha en målgruppsaktivitet för att läsa.
-* Se även rekommendationer om hur du använder aktiviteten Läs målgrupp på [den här sidan](../building-journeys/read-audience.md).
+* För resor som använder en **Läs målgrupp**-aktivitet finns det ett maximalt antal resor som kan påbörjas exakt samtidigt. Återförsök kommer att utföras av systemet men undvik att ha fler än fem resor (med **Läs målgrupp**, schemalagd eller starta&quot;så snart som möjligt&quot;) med början vid exakt samma tid genom att sprida dem över tiden, t.ex. mellan 5 och 10 minuter.
+* Det går inte att använda aktiviteten **Läs målgrupp** med Adobe Campaign-aktiviteter.
+* Aktiviteten **Läs målgrupp** kan bara användas som en första aktivitet i en resa, efter en affärshändelseaktivitet.
+* En resa kan bara ha en **Läs målgrupp**-aktivitet.
+* Se även rekommendationer om hur du använder aktiviteten **Läs målgrupp** i [den här sidan](../building-journeys/read-audience.md).
+* Återförsök används som standard på målgruppsinlösta resor (med början från en **Läs målgrupp** eller en **affärshändelse**) när exportjobbet hämtas. Om ett fel inträffar när exportjobbet skapas görs nya försök var 10:e minut (max 1 timme). Efter det kommer vi att betrakta det som ett misslyckande. Dessa typer av resor kan därför utföras upp till en timme efter den schemalagda tiden.
 
 
 ### Målgruppskvalifikation {#audience-qualif-g}
