@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 3a94d00a599a7dc87127802ceae91a552a0157ef
+source-git-commit: 5fd0ad50a39fbb57a2dd11ddb84f1d5b2598bcea
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '820'
 ht-degree: 8%
 
 ---
@@ -40,11 +40,16 @@ ht-degree: 8%
 <p>Med Guided Channel Setup kan man automatisera och validera kanalkonfigurationen i en enhetlig upplevelse och därmed få igång Journey Optimizer snabbare. Denna nya guidade installation effektiviserar konfigurationen av kanaler så att alla nödvändiga resurser snabbt kan installeras och användas i Experience Platform, Journey Optimizer och datainsamling. På så sätt kan marknadsförings-, produkt- och datateknikteam snabbt börja med att skapa kampanjer och resor.</p>
 <p>Mer information finns i den <a href="../configuration/set-mobile-config.md">detaljerade dokumentationen</a>.</p>
 <img src="assets/do-not-localize/guided-setup.gif"/>
+<p>Tillgänglighetsdatum: 3 september</p>
 </br>
 </td>
 </tr>
 </tbody>
 </table>
+
+**Resor**
+
+(Tillgänglighetsdatum: 10 sep) **Återförsöksfunktion** - Återförsök används nu som standard på målgruppsinställda resor (med början från **Läs målgrupp** eller en **affärshändelse**) när exportjobbet hämtas. Om ett fel inträffar när exportjobbet skapas görs nya försök var 10:e minut (max 1 timme). Efter det kommer vi att betrakta det som ett misslyckande. Dessa typer av resor kan därför utföras upp till en timme efter den schemalagda tiden. [Läs mer](../building-journeys/read-audience.md#retries)
 
 ## Versionsinformation augusti 2024 {#8-2024}
 
