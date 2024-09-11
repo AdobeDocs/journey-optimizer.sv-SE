@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 33dd0568ff55750d0f067e51442b5187820ec36a
+source-git-commit: 17b05590d1518b5cc6aa33a45619c96d6bd4a78e
 workflow-type: tm+mt
-source-wordcount: '1973'
+source-wordcount: '1979'
 ht-degree: 26%
 
 ---
@@ -278,11 +278,11 @@ ht-degree: 26%
 + Innehållshantering {#content-management}
    + Arbeta med AI-assistenten {#ai-assistant}
       + [Kom igång med AI Assistant - Content Accelerator](using/content-management/gs-generative.md)
-      + [E-postgenerering](using/content-management/generative-email.md)
-      + [Push-generering](using/content-management/generative-push.md)
-      + [SMS-generering](using/content-management/generative-sms.md)
-      + [Webbgenerering](using/content-management/generative-web.md)
-      + [Experimentera med AI-assistenten](using/content-management/generative-experimentation.md)
+      + [E-postgenerering med AI](using/content-management/generative-email.md)
+      + [Push-generering med AI](using/content-management/generative-push.md)
+      + [SMS-generering med AI](using/content-management/generative-sms.md)
+      + [Webbgenerering med AI](using/content-management/generative-web.md)
+      + [Innehållsexperiment med AI](using/content-management/generative-experimentation.md)
       + [Användningsexempel för AI-assistenten](using/content-management/generative-uc.md)
    + Arbeta med flerspråkigt innehåll{#content-multilingual}
       + [Kom igång med flerspråkigt innehåll](using/content-management/multilingual-gs.md)
