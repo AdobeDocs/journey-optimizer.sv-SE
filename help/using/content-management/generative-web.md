@@ -7,14 +7,14 @@ feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: f188566fb68ba369085ed03649899648858b894b
+source-git-commit: 5798d4850ef9f8f2bc6761a9468fe6120460c524
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '923'
 ht-degree: 1%
 
 ---
 
-# Skapa webbsidor med AI Assistant i Journey Optimizer - Content Accelerator {#generative-web}
+# Skapa webbsidor med AI Assistant - Content Accelerator {#generative-web}
 
 >[!IMPORTANT]
 >

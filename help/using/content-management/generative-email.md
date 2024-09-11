@@ -8,14 +8,14 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1b3930ff-f7b0-43f0-bcf2-5c3de0a88b25
-source-git-commit: 24561293e744c048dd3f895360a487c8598b0765
+source-git-commit: 5798d4850ef9f8f2bc6761a9468fe6120460c524
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1471'
 ht-degree: 1%
 
 ---
 
-# E-postgenerering med AI Assistant i Journey Optimizer - Content Accelerator {#generative-email}
+# E-postgenerering med AI Assistant - Content Accelerator {#generative-email}
 
 >[!IMPORTANT]
 >
