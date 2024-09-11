@@ -10,7 +10,7 @@ level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: b57683b4-6dcc-4f6c-a8b2-4ba371d78d21
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: e3685815dfed23c9fefa148e0025181258537135
+source-git-commit: 27c0be31ffc4ce7c43975a4db431713cd68f0461
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Med Journey Optimizer kan du skapa flerspråkigt innehåll på två olika sätt:
 
 >[!CONTEXTUALHELP]
 >id="ajo_multi_translation_error"
->title="Översättningsfel
+>title="Översättningsfel"
 >abstract="Om du inte kommer åt översättningssidan beror det troligtvis på att översättningsfunktionen inte är aktiverad. För att lösa det här problemet måste du se till att översättningsfunktionen aktiveras av din organisations- och sandlådeadministratör."
 
 Adobe Journey Optimizer är för närvarande integrerat med översättningsleverantörer som erbjuder översättningstjänster från tredje part (maskinöversättning eller mänsklig översättning) oberoende av Adobe Journey Optimizer.
