@@ -10,9 +10,9 @@ level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: b57683b4-6dcc-4f6c-a8b2-4ba371d78d21
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: e2ebb540fe9380497b42d331d1ea259538d72f00
+source-git-commit: e3685815dfed23c9fefa148e0025181258537135
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '408'
 ht-degree: 1%
 
 ---
@@ -37,6 +37,11 @@ Med Journey Optimizer kan du skapa flerspråkigt innehåll på två olika sätt:
 
 ## Förhandskrav {#prerequisites}
 
+>[!CONTEXTUALHELP]
+>id="ajo_multi_translation_error"
+>title="Översättningsfel
+>abstract="Om du inte kommer åt översättningssidan beror det troligtvis på att översättningsfunktionen inte är aktiverad. För att lösa det här problemet måste du se till att översättningsfunktionen aktiveras av din organisations- och sandlådeadministratör."
+
 Adobe Journey Optimizer är för närvarande integrerat med översättningsleverantörer som erbjuder översättningstjänster från tredje part (maskinöversättning eller mänsklig översättning) oberoende av Adobe Journey Optimizer.
 
 Innan du lägger till den valda översättningsprovidern måste du skapa ett konto hos den aktuella providern.
@@ -44,6 +49,22 @@ Innan du lägger till den valda översättningsprovidern måste du skapa ett kon
 Användningen av en översättningsleverantörs översättningstjänster regleras av ytterligare villkor från den aktuella leverantören.  Som tredjepartslösningar är översättningstjänster tillgängliga för Adobe Journey Optimizer-användare via integrering.  Adobe kontrollerar inte och ansvarar inte för tredjepartsprodukter.
 
 Om du har frågor eller vill ha hjälp med dina översättningar kontaktar du tillämplig översättningsleverantör.
+
+Om du inte kommer åt översättningssidan måste du aktivera översättningsfunktionen.
+
++++ Lär dig aktivera översättningsfunktionen
+
+1. Om följande felsida visas indikerar den att funktionen **[!UICONTROL Translation]** inte har aktiverats än. Kontakta din organisations- och sandlådeadministratör. för att begära åtkomst.
+
+   ![](assets/multi-troubleshoot.png)
+
+1. Administratören måste navigera till menyn **[!UICONTROL Translation]** i den vänstra sidofältet. Systemet aktiverar översättningsfunktionen automatiskt.
+
+1. När funktionen har aktiverats kan du komma åt sidan **[!UICONTROL Translation]** tillsammans med flikarna **[!UICONTROL Projects]**, **[!UICONTROL Providers]** och **[!UICONTROL Locale]**.
+
+1. Om den här proceduren har misslyckats visas fortfarande samma felsida. Kontakta i så fall din Adobe-representant för att få mer hjälp.
+
++++
 
 ## Instruktionsvideo {#video}
 
