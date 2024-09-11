@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
-source-git-commit: 448568ff9ee96d4fa6dbaaa43ce2d45e38d6b920
+source-git-commit: 616a9c30da4558d1e8b71733732dd4fd1f531ef8
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 1%
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 >[!INFO]
 >
->Fördjupa dig i en praktisk upplevelse med [vår interaktiva demo](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator) som är utformad för att du ska kunna utforska dess funktioner först och till fullo förstå dess funktioner.
+>Fördjupa dig i en praktisk upplevelse med [vår interaktiva demo](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"} som är utformad för att du ska kunna utforska dess funktioner först och till fullo förstå dess funktioner.
 
 
 AI Assistant i Adobe Journey Optimizer for Content Acceleration, som drivs av Microsoft Azure OpenAI och Adobe Firefly, ger förebyggande förslag på varianter av text och bilder. Det är tillgängligt för e-post-, push- och SMS-kanaler. Den nya funktionen ger snabb generering av text och bilder. Bildgenereringen hanteras med Adobe Firefly.
@@ -47,7 +47,7 @@ Använd AI Assistant i Adobe Journey Optimizer for Content Acceleration för att
 >* Innan du börjar använda den här funktionen bör du läsa upp relaterade [säkerhetsutkast och begränsningar](#generative-guardrails).
 >
 >
->* Du måste godkänna ett [användaravtal](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) innan du kan använda AI-assistenten i Adobe Journey Optimizer för innehållsacceleration. Kontakta din Adobe-representant om du vill veta mer.
+>* Du måste godkänna ett [användaravtal](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} innan du kan använda AI-assistenten i Adobe Journey Optimizer för innehållsacceleration. Kontakta din Adobe-representant om du vill veta mer.
 
 ## Få åtkomst till AI Assistant Content Accelerator {#generative-access}
 
