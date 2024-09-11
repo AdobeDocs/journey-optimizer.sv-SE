@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 5fd0ad50a39fbb57a2dd11ddb84f1d5b2598bcea
+source-git-commit: 633d2f423301680a7aff83b748a08a6f1a1bbf16
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '923'
 ht-degree: 8%
 
 ---
@@ -27,6 +27,24 @@ ht-degree: 8%
 ![Nyhetsbrev](../assets/do-not-localize/nl-icon.png) Registrera dig för [Adobe Journey Optimizer kvartalsnyhetsbrev](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} idag och få de senaste produktuppdateringarna, spännande historier, användningsexempel, tips och mycket mer levererade direkt till din inkorg varje kvartal.
 
 ## September-uppdateringar {#9-2024}
+
+<table>
+<thead>
+<tr>
+<th><strong>AI Assistant i Journey-optimering - Content Accelerator </strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>När du har skapat och skräddarsytt ditt budskap går du ett steg längre med AI Assistant i Journey Optimizer for Content Acceleration. Nu kan du använda AI-assistenten för att optimera budskapets effekt genom att experimentera med olika huvudtitlar och bilder. Varje variant hanteras som en unik behandling för att mäta och jämföra vilken titel som effektivt genererar fler klick.</p>
+<p>Fördjupa dig i en praktisk upplevelse med <a href="https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator">vår förhandsvisning av aktiva funktioner</a>, som är utformad för att du först ska kunna utforska dess funktioner och till fullo förstå dess funktioner.</a>.</p>
+<p>Mer information finns i den <a href="../content-management/gs-generative.md">detaljerade dokumentationen</a>.</p>
+<img src="assets/do-not-localize/ai-content.gif"/>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>

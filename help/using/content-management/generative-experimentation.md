@@ -1,40 +1,32 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Experimentera med AI-assistenten
-description: Experimentera med AI-assistenten
+title: Experimentera med AI Assistant i Journey Optimizer - Content Accelerator
+description: Experimentera med AI Assistant i Journey Optimizer för att få materialet att accelerera
 feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
-badge: label="Beta" type="Informative"
-hide: true
-hidefromtoc: true
 exl-id: c47af613-0529-4922-bd0d-5ef4cc619305
-source-git-commit: 59ecb9a5376e697061ddac4cc68f09dee68570c0
+source-git-commit: d331c475f2460facf33ed275131f0c2e9517e27c
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 1%
+source-wordcount: '263'
+ht-degree: 4%
 
 ---
 
-# Experimentera med AI-assistenten {#generative-experimentation}
+# Experimentera med AI Assistant i Journey Optimizer - Content Accelerator {#generative-experimentation}
 
->[!BEGINSHADEBOX]
+>[!IMPORTANT]
+>
+>Innan du börjar använda den här funktionen bör du läsa upp relaterade [säkerhetsutkast och begränsningar](gs-generative.md#generative-guardrails).
+></br>
+>
+>Du måste godkänna ett [användaravtal](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) innan du kan använda AI-assistenten i Journey Optimizer för innehållsacceleration. Kontakta din Adobe-representant om du vill veta mer.
 
-**Innehållsförteckning**
+När du har skapat och personaliserat dina meddelanden kan du lyfta fram ditt innehåll med AI Assistant i Adobe Journey Optimizer for Content Acceleration, som innehåller funktionen för innehållsexperiment. Med det här verktyget kan du definiera flera olika leveranssätt, med varierande innehåll, för att mäta målgruppens prestanda.
 
-* [Kom igång med AI-assistenten](gs-generative.md)
-* [E-postgenerering med AI-assistenten](generative-email.md)
-* [SMS-generering med AI-assistenten](generative-sms.md)
-* [Push-generering med AI Assistant](generative-push.md)
-* Experimentera med AI-assistenten
-
->[!ENDSHADEBOX]
-
-När du har skapat och personaliserat dina meddelanden kan du lyfta fram ditt innehåll med AI Assistant i Adobe Journey Optimizer, som innehåller funktionen för innehållsexperiment. Med det här verktyget kan du definiera flera olika leveranssätt, med varierande innehåll, för att mäta målgruppens prestanda.
-
-1. Skapa en kampanj och använd AI-assistenten för att generera varianter.
+1. Skapa en kampanj och använd AI Assistant för innehållsacceleration för att generera varianter.
 
    I det här exemplet har vi skapat ett e-postmeddelande med en kampanjkod.
 
@@ -48,7 +40,7 @@ När du har skapat och personaliserat dina meddelanden kan du lyfta fram ditt in
 
 1. Välj de variationer som du vill ta med i ditt experiment.
 
-1. Klicka på **Lägg till X-behandling**.
+1. Klicka på **Lägg till för att experimentera**.
 
    ![](assets/experiment-genai-3.png)
 

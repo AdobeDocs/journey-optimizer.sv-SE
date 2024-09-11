@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: ca28d323a2ef310ec82c732484c8aed1e2641135
+source-git-commit: 633d2f423301680a7aff83b748a08a6f1a1bbf16
 workflow-type: tm+mt
-source-wordcount: '1965'
+source-wordcount: '1971'
 ht-degree: 26%
 
 ---
@@ -281,7 +281,9 @@ ht-degree: 26%
       + [E-postgenerering](using/content-management/generative-email.md)
       + [Push-generering](using/content-management/generative-push.md)
       + [SMS-generering](using/content-management/generative-sms.md)
+      + [Webbgenerering](using/content-management/generative-web.md)
       + [Experimentera med AI-assistenten](using/content-management/generative-experimentation.md)
+      + [Användningsexempel för AI-assistenten](using/content-management/generative-uc.md)
    + Arbeta med flerspråkigt innehåll{#content-multilingual}
       + [Kom igång med flerspråkigt innehåll](using/content-management/multilingual-gs.md)
       + [Skapa flerspråkigt innehåll med manuell översättning](using/content-management/multilingual-manual.md)

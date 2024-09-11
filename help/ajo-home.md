@@ -5,10 +5,10 @@ description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
+source-git-commit: 0bf1b65787eaf4d66964430bf89488fe4f930bfc
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 17%
+source-wordcount: '362'
+ht-degree: 18%
 
 ---
 
@@ -20,23 +20,16 @@ Få en glimt av de senaste förbättringarna i Journey Optimizer-produkter och -
 
 >[!BEGINTABS]
 
->[!TAB Augustiversionen är aktiv!]
+>[!TAB AI-assistenten i reseoptimering - Innehållsaccelerator]
 
-Upptäck nya funktioner och förbättringar som ingår i Adobe Journey Optimizer Augustiversion.
-
-[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
+Låt dig uppslukas av en praktisk upplevelse med vår förgranskning av aktiva funktioner, som är utformad för att du först ska kunna utforska dess funktioner och till fullo förstå dess funktioner.
+[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator)
 
 >[!TAB Rapportering med Customer Journey Analytics (Beta)]
 
 Journey Optimizer rapportering har en förbättrad interoperabilitet med Customer Journey Analytics, standardiserad rapportering på båda plattformarna och förbättrad datakonsekvens och tillförlitlighet.
 
 [![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/reports/cja-ajo.md)
-
->[!TAB AI-assistenten]
-
-AI-assistenten är en funktion i användargränssnittet som du kan använda för att navigera bland och förstå Adobe-koncept och få driftsinsikter för just din miljö.
-
-[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](/help/using/start/ai-assistant.md)
 
 >[!TAB Content Fragments]
 

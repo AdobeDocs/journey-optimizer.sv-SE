@@ -2,45 +2,33 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: SMS-generering med AI-assistenten
-description: Börja generera SMS-innehåll med AI-assistenten
+description: Börja generera SMS-innehåll med AI-assistenten i Journey Optimizer för innehållsacceleration
 feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
-badge: label="Beta" type="Informative"
-hide: true
-hidefromtoc: true
 exl-id: 5fd1cc3a-c023-4e8e-bfac-9a86bd33bbb3
-source-git-commit: b62f8954e09f50896ad5e70784c5a93943617e85
+source-git-commit: 24561293e744c048dd3f895360a487c8598b0765
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 1%
+source-wordcount: '815'
+ht-degree: 2%
 
 ---
 
-# SMS-generering med AI-assistenten {#generative-sms}
+# SMS-generering med AI Assistant i Journey Optimizer - Content Accelerator  {#generative-sms}
 
->[!BEGINSHADEBOX]
+>[!IMPORTANT]
+>
+>Innan du börjar använda den här funktionen bör du läsa upp relaterade [säkerhetsutkast och begränsningar](gs-generative.md#generative-guardrails).
+></br>
+>
+>Du måste godkänna ett [användaravtal](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) innan du kan använda AI-assistenten i Journey Optimizer för innehållsacceleration. Kontakta din Adobe-representant om du vill veta mer.
 
-**Innehållsförteckning**
-
-* [Kom igång med AI-assistenten](gs-generative.md)
-* [E-postgenerering med AI-assistenten](generative-email.md)
-* SMS-generering med AI-assistenten
-* [Push-generering med AI Assistant](generative-push.md)
-* [Experimentera med AI-assistenten](generative-experimentation.md)
-
->[!ENDSHADEBOX]
-
-När du har skapat och skräddarsytt dina SMS-meddelanden så att de passar er målgrupp kan du kommunicera med AI Assistant i Journey Optimizer.
+När du har skapat och skräddarsytt dina SMS-meddelanden så att de passar er målgrupp kan du kommunicera med AI Assistant i Journey Optimizer för innehållsacceleration.
 
 Den här resursen ger insiktsfulla rekommendationer för att finjustera ert innehåll, vilket hjälper ert budskap att få genklang och öka engagemanget.
 
-Gå igenom flikarna nedan och lär dig hur du använder AI Assistant i Journey Optimizer.
-
->[!NOTE]
->
->Innan du börjar använda den här funktionen bör du läsa upp relaterade [säkerhetsutkast och begränsningar](gs-generative.md#generative-guardrails).
+Gå igenom flikarna nedan och lär dig hur du använder AI Assistant i Journey Optimizer för innehållsacceleration.
 
 >[!BEGINTABS]
 
@@ -58,19 +46,13 @@ Gå igenom flikarna nedan och lär dig hur du använder AI Assistant i Journey O
 
    ![](assets/sms-genai-1.png){zoomable="yes"}
 
-1. Aktivera alternativet **[!UICONTROL Use original content]** för AI-assistenten för att anpassa nytt innehåll baserat på kampanjinnehåll, namn och vald målgrupp.
-
-   Din fråga måste alltid vara kopplad till ett visst sammanhang.
-
 1. Finjustera innehållet genom att beskriva vad du vill generera i fältet **[!UICONTROL Prompt]**.
 
    Om du vill ha hjälp med att skapa din fråga kan du få tillgång till **[!UICONTROL Prompt Library]**, som innehåller en mängd olika tips för att förbättra dina kampanjer.
 
    ![](assets/sms-genai-2.png){zoomable="yes"}
 
-1. Välj **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext till AI-assistenten.
-
-1. Skräddarsy uppmaningen med de olika alternativen:
+1. Skräddarsy din fråga med alternativet **[!UICONTROL Text settings]**:
 
    * **[!UICONTROL Communication strategy]**: Välj önskad kommunikationsmetod för den genererade texten.
    * **[!UICONTROL Language]**: Välj språk för variantens innehåll.
@@ -79,9 +61,13 @@ Gå igenom flikarna nedan och lär dig hur du använder AI Assistant i Journey O
 
    ![](assets/sms-genai-3.png){zoomable="yes"}
 
+1. Klicka på **[!UICONTROL Upload brand asset]** på menyn **[!UICONTROL Brand assets]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext till AI-assistenten eller välja en som har överförts tidigare.
+
+   Tidigare överförda filer är tillgängliga i listrutan **[!UICONTROL Uploaded brand assets]**. Du behöver bara växla mellan de resurser du vill ha med i din generation.
+
 1. Klicka på **[!UICONTROL Generate]** när din fråga är klar.
 
-1. Bläddra igenom den genererade **[!UICONTROL Variations]** och klicka på **[!UICONTROL Preview]** för att visa en fullskärmsversion av den valda varianten.
+1. Bläddra igenom den genererade **[!UICONTROL Variations]**.
 
 1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner och finjustera variationerna efter dina inställningar:
 
@@ -90,6 +76,8 @@ Gå igenom flikarna nedan och lär dig hur du använder AI Assistant i Journey O
    * **[!UICONTROL Rephrase]**:AI-assistenten kan omformulera ditt meddelande på olika sätt, vilket håller skrivandet aktuellt och engagerande för olika målgrupper.
 
    * **[!UICONTROL Use simpler language]**: Utnyttja AI-assistenten för att förenkla ditt språk och säkerställa tydlighet och tillgänglighet för en större publik.
+
+   Du kan också ändra **[!UICONTROL Tone]** och **[!UICONTROL Communication strategy]** för texten.
 
    ![](assets/sms-genai-4.png){zoomable="yes"}
 
@@ -103,7 +91,7 @@ Gå igenom flikarna nedan och lär dig hur du använder AI Assistant i Journey O
 
 När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo att förbereda er SMS-kampanj. [Läs mer](../campaigns/review-activate-campaign.md)
 
->[!TAB Textgenerering]
+>[!TAB Generering av endast text]
 
 1. När du har skapat och konfigurerat din SMS-kampanj klickar du på **[!UICONTROL Edit content]**.
 
@@ -117,19 +105,15 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 
    ![](assets/sms-text-genai-1.png){zoomable="yes"}
 
-1. Aktivera alternativet **[!UICONTROL Use reference content]** för AI-assistenten för att anpassa nytt innehåll baserat på kampanjinnehåll, namn och vald målgrupp.
-
-   Din fråga måste alltid vara kopplad till ett visst sammanhang.
+1. Aktivera alternativet **[!UICONTROL Use reference content]** för AI-assistenten för innehållsacceleration för att anpassa nytt innehåll baserat på det valda innehållet.
 
 1. Finjustera innehållet genom att beskriva vad du vill generera i fältet **[!UICONTROL Prompt]**.
 
    Om du vill ha hjälp med att skapa din fråga kan du få tillgång till **[!UICONTROL Prompt Library]**, som innehåller en mängd olika tips för att förbättra dina kampanjer.
 
-   ![](assets/sms-text-genai-1.png){zoomable="yes"}
+   ![](assets/sms-text-genai-2.png){zoomable="yes"}
 
-1. Välj **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext till AI-assistenten.
-
-1. Skräddarsy uppmaningen med de olika alternativen:
+1. Skräddarsy din fråga med alternativet **[!UICONTROL Text settings]**:
 
    * **[!UICONTROL Communication strategy]**: Välj önskad kommunikationsmetod för den genererade texten.
    * **[!UICONTROL Language]**: Välj språk för variantens innehåll.
@@ -137,6 +121,10 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
    * **[!UICONTROL Length]**: Välj längden på ditt innehåll med intervallreglaget.
 
    ![](assets/sms-text-genai-3.png){zoomable="yes"}
+
+1. Klicka på **[!UICONTROL Upload brand asset]** på menyn **[!UICONTROL Brand assets]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext till AI-assistenten eller välja en som har överförts tidigare.
+
+   Tidigare överförda filer är tillgängliga i listrutan **[!UICONTROL Uploaded brand assets]**. Du behöver bara växla mellan de resurser du vill ha med i din generation.
 
 1. Klicka på **[!UICONTROL Generate]** när din fråga är klar.
 
