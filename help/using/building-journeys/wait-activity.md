@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: vänta, aktivitet, resa, nästa, arbetsyta
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
-source-git-commit: cae6d394ad1c2356e55bd5f1cb4ad7494c9623dd
+source-git-commit: f81fde0076fc8689c689fae7a0ee8c7aa9fdbeed
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 7%
+source-wordcount: '593'
+ht-degree: 6%
 
 ---
 
@@ -107,3 +107,13 @@ This type of wait uses a score calculated in Adobe Experience Platform. The scor
     >Note that the send time score can be unavailable because there is not enough data to perform the calculation. In this case, you will be informed, at publication time, that the default time applies.
 
 ![](assets/journey57bis.png)-->
+
+## Automatisk väntenod  {#auto-wait-node}
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_auto_wait_node "
+>title="Om den automatiska väntenoden"
+>abstract="En **Vänta**-aktivitet läggs automatiskt till efter den här aktiviteten. Den är inställd på 3 dagar. Du kan ta bort eller konfigurera den efter behov."
+
+Varje inkommande meddelandeaktivitet (meddelande i appen, kodbaserad upplevelse eller kort) levereras med en 3-dagars **Wait** -aktivitet. Eftersom inkommande meddelanden automatiskt avslutas när en profil når ut utanför kundens slut, antar vi att du vill att användarna ska se den i minst tre dagar. Du kan ta bort den här **Vänta**-aktiviteten eller ändra dess konfiguration om det behövs.

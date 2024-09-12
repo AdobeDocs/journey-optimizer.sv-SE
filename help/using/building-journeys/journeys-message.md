@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, i appen
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: 2c4c9064b11bce44331b6604c91221ba9829eff7
+source-git-commit: f81fde0076fc8689c689fae7a0ee8c7aa9fdbeed
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1195'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,9 @@ Följ stegen nedan om du vill lägga till ett meddelande under en resa:
 
 1. Dra och släpp en **e-postadress**, en **i appen**, en **SMS** eller en **push** -aktivitet på arbetsytan från **Åtgärder** på paletten.
 
-1. Konfigurera aktiviteten. Lär dig detaljerade steg för att skapa meddelandeinnehåll på följande sidor:
+1. Konfigurera aktiviteten.
+
+   Lär dig detaljerade steg för att skapa meddelandeinnehåll på följande sidor:
 
    <table style="table-layout:fixed">
    <tr style="border: 0;">
@@ -80,6 +82,11 @@ Följ stegen nedan om du vill lägga till ett meddelande under en resa:
    </td>
    </tr>
    </table>
+
+>[!NOTE]
+>
+>Varje inkommande meddelandeaktivitet (meddelande i appen, kodbaserad upplevelse eller kort) levereras med en 3-dagars **Wait** -aktivitet. [Läs mer](../building-journeys/wait-activity.md#auto-wait-node)
+>
 
 ## Uppdatera liveinnehåll{#update-live-content}
 
