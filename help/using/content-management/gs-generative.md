@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
-source-git-commit: a531f4b0a9f3fbc3185a0e84d9c2634e3b589011
+source-git-commit: 9de2f498e104d316491e6061cbd851b2eb506036
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '884'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 >[!INFO]
 >
->Fördjupa dig i en praktisk upplevelse med [vår interaktiva demo](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"} som är utformad för att du ska kunna utforska dess funktioner först och till fullo förstå dess funktioner.
+>Fördjupa dig i en praktisk upplevelse med [vår förhandsvisning av aktiva funktioner](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}, som är utformad för att du ska kunna utforska dess funktioner först och till fullo förstå dess funktioner.
 
 
 AI Assistant i Adobe Journey Optimizer for Content Acceleration, som drivs av Microsoft Azure OpenAI och Adobe Firefly, ger förebyggande förslag på varianter av text och bilder. Det är tillgängligt för e-post-, push- och SMS-kanaler. Den nya funktionen ger snabb generering av text och bilder. Bildgenereringen hanteras med Adobe Firefly.
