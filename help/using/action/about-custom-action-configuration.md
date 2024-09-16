@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: 067c990f7f82594418d59c3b1587a62a04799c09
+source-git-commit: 3d79eca67dbfe5011a4bbc4955bbbfb5d6c17b38
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -150,10 +150,6 @@ Samuell TLS-autentisering (mTLS) stöds i anpassade åtgärder. Det krävs ingen
 1. I avsnittet **[!UICONTROL Request]** klistrar du in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten. Det här fältet är valfritt och endast tillgängligt för anropsmetoder för POST och PUT.
 
 1. Klistra in ett exempel på nyttolasten som returneras av anropet i avsnittet **[!UICONTROL Response]**. Det här fältet är valfritt och tillgängligt för alla anropsmetoder. Mer information om hur du använder API-anropssvar i anpassade åtgärder finns på [den här sidan](../action/action-response.md).
-
->[!NOTE]
->
->Svarsfunktionen finns för närvarande i betaversionen.
 
 ![](assets/action-response2bis.png){width="70%" align="left"}
 
