@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: a531f4b0a9f3fbc3185a0e84d9c2634e3b589011
+source-git-commit: 8a902298bbbac5689b4f84266dd9c9027e45fad5
 workflow-type: tm+mt
-source-wordcount: '1979'
-ht-degree: 26%
+source-wordcount: '2010'
+ht-degree: 25%
 
 ---
 
@@ -262,6 +262,14 @@ ht-degree: 26%
    + [Skapa kodbaserad upplevelsekonfiguration](using/code-based/code-based-configuration.md)
    + [Exempel på implementeringsmetoder](using/code-based/code-based-implementation-samples.md)
    + [Skapa kodbaserade upplevelser](using/code-based/create-code-based.md)
++ Innehållskort (LA){#content-card}
+   + [Kom igång med innehållskort](using/content-card/get-started-content-card.md)
+   + Konfigurera innehållskortskanalen {#configure}
+      + [Krav för innehållskort](using/content-card/content-card-configuration-prereq.md)
+      + [Konfigurera innehållskortskanal i Journey Optimizer](using/content-card/content-card-configuration.md)
+   + [Skapa innehållskort](using/content-card/create-content-card.md)
+   + [Utforma innehållskort](using/content-card/design-content-card.md)
+   + [Rapport om innehållskort](using/content-card/content-card-report.md)
 + Landningssidor {#landing-pages}
    + [Kom igång med landningssidor](using/landing-pages/get-started-lp.md)
    + [Skapa en landningssida](using/landing-pages/create-lp.md)
