@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
-source-git-commit: c15894e0d474fbf3a8aa789632719b2c4c8d9612
+source-git-commit: fbe8d14ba81e168ecfb141d54bf3009a2565751c
 workflow-type: tm+mt
 source-wordcount: '1716'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 >abstract="I det här avsnittet visas resans egenskaper. Som standard är skrivskyddade parametrar dolda. Vilka inställningar som är tillgängliga beror på resans status, på dina behörigheter och din produktkonfiguration."
 
 >[!CONTEXTUALHELP]
->id="ajo_journey_exit_criteria"
+>id="ajo_journey_exit_criterias"
 >title="Utträdeskriterier för resor"
 >abstract="I det här avsnittet visas alternativen för avslutningskriterier. Du kan skapa en eller flera regler för avslutningskriterier för din resa."
 
