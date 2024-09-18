@@ -8,7 +8,7 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: d998a66421c277b7a46e5f15585a9768bc360a7a
+source-git-commit: 9fdfc729346bc15f5781a7bca39c76055af71eb2
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 3%
@@ -189,7 +189,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 * [Adobe Journey Optimizer API-dokumentationen ](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target="_blank"} är nu interaktiv. Utforska API-slutpunkterna direkt från dokumentationssidorna för att få omedelbar feedback och snabba upp den tekniska implementeringen.
 
-  Alla API-referenssidor har nu en **Prova**-funktion som du kan använda för att testa API-anrop direkt på dokumentationswebbplatsen. [Hämta nödvändiga autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication){target="_blank"} och börja använda funktionen för att utforska API-slutpunkterna.
+  Alla API-referenssidor har nu en **Prova**-funktion som du kan använda för att testa API-anrop direkt på dokumentationswebbplatsen. [Hämta nödvändiga autentiseringsuppgifter](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"} och börja använda funktionen för att utforska API-slutpunkterna.
 
   Använd den här nya funktionen för att utforska förfrågningar och svar från API-slutpunkter, för att få omedelbar feedback och snabba upp den tekniska implementeringen.
 
