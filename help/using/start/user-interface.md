@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 1c2505ba3dcd86834aa9961fa4e53cee9320724d
+source-git-commit: 9833f24479891bbf19b99674036856f585c53b3d
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1540'
 ht-degree: 4%
 
 ---
@@ -299,7 +299,7 @@ Så här byter du språk:
 >[!CONTEXTUALHELP]
 >id="ajo_data_governance_policy_violation"
 >title="Överträdelse av databehandlingspolicy"
->abstract="Överträdelse av databehandlingspolicy"
+>abstract="Om systemet identifierar ett begränsat fält i en resa/kampanj, eller en anpassad åtgärd, visas ett fel som hindrar dig från att publicera det. Använd datalänksdiagrammet i den här dialogrutan för att förstå vilka andra konfigurationsändringar som behöver göras innan du kan aktivera din resa eller kampanj."
 
 <!--APPROVAL POLICIES-->
 
