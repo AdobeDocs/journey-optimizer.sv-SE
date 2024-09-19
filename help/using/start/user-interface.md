@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 9833f24479891bbf19b99674036856f585c53b3d
+source-git-commit: f5bcafb0963c5adf4a0ab307f611fd9cc0b34005
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 4%
+source-wordcount: '1746'
+ht-degree: 3%
 
 ---
 
@@ -201,22 +201,22 @@ Så här byter du språk:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_priority"
 >title="Prioritet"
->abstract="Tilldela en prioritetspoäng till resan, från 0 till 100. Ett högre tal anger en högre prioritet. När två resor använder samma yta väljer Journey Optimizer den resa som har högst prioritet. Om resorna har samma poäng väljs den resa som senast ändrades."
+>abstract="Tilldela en prioritetspoäng till resan, från 0 till 100. Ett högre tal anger en högre prioritet. Prioritetsvärdet som infogas här ärvs av alla inkommande åtgärder (till exempel i appen) som ingår i den här resan. I situationer där samma inkommande yta används i andra kampanjer eller resor visas den inkommande åtgärden med högsta prioritet för mottagaren. Om flera resor eller kampanjer har samma poäng väljs det element som senast ändrades."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_priority"
 >title="Prioritet"
->abstract="Tilldela kampanjens prioritetspoäng, från 0 till 100. Ett högre tal anger en högre prioritet. När två kampanjer använder samma yta väljer Journey Optimizer den kampanj som har högst prioritet. Om kampanjerna har samma poäng väljs den senaste kampanjen."
+>abstract="Tilldela kampanjens prioritetspoäng, från 0 till 100. Ett högre tal anger en högre prioritet. I situationer där samma inkommande yta (till exempel i appen) används i andra kampanjer eller resor visas den inkommande åtgärden med högsta prioritet för mottagaren. Om flera resor eller kampanjer har samma poäng väljs det element som senast ändrades."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_conflict"
 >title="Visningsprogrammet i konflikt i kampanjer"
->abstract="Visningsprogrammet i konflikt i kampanjer"
+>abstract="Det här verktyget kan hjälpa dig att avgöra om andra resor, kampanjer eller ytor överlappar varandra. Om du vill identifiera överlappning för målgrupper, start- och slutdatum, kanalkonfiguration, kanal eller regeluppsättning kan du visa potentiella konflikter här. "
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_conflict"
 >title="Konfliktvisningsprogrammet under resor"
->abstract="Konfliktvisningsprogrammet under resor"
+>abstract="Det här verktyget kan hjälpa dig att avgöra om andra resor, kampanjer eller ytor överlappar varandra. Om du vill identifiera överlappning för målgrupper, start- och slutdatum, kanalkonfiguration, kanal eller regeluppsättning kan du visa potentiella konflikter här. "
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_set_domain"
@@ -226,7 +226,7 @@ Så här byter du språk:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_capping_rule"
 >title="Använd regeluppsättning för resor"
->abstract="TBD"
+>abstract="Använd en regeluppsättning för att exkludera den här resan till en del av målgruppen baserat på regler för frekvensbegränsning."
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_set_rule_type"
@@ -236,7 +236,7 @@ Så här byter du språk:
 >[!CONTEXTUALHELP]
 >id="ajo_rule_set_concurrency_prioritization"
 >title="Prioriteringstidens försprång"
->abstract="Prioriteringstidens försprång"
+>abstract=" Om en resa med högre prioritet schemaläggs inom den tidsperiod som anges här, kommer kunden inte att kunna delta i den här resan. För situationer där du vill att resor ska påbörjas, kan vi först och främst tjäna på att välja perioden för daglig look ahead och se till att prioriteringspoängen för andra resor den dagen är mindre än prioriteringspoängen för resan. Att ge 100 poäng för en resa är också en garanti för att den görs."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_capping_rule"
