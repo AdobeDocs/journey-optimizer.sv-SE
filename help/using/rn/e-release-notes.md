@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 23ff5c26620c8d7119abec5994c7ac3e7e2a208d
+source-git-commit: 27f7c60380dc408a486651e77dab58a25e23db2a
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '1008'
 ht-degree: 3%
 
 ---
@@ -89,7 +89,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <tbody>
 <tr>
 <td>
-<p>Du kan nu definiera och kombinera regler för avslutningskriterier för dina resor.</p>
+<p>Nu definierar ni utträdeskriterier på resenivå. Genom att lägga till kriterier för att avsluta resan gör du så att profilerna avslutas så snart en händelse inträffar (t.ex. köp) eller så kvalificerar de sig för en viss målgrupp. Detta förhindrar användaren från att få ut mer information från resan.</p>
 <!--p>For more information, refer to the <a href="../content-management/gs-generative.md">detailed documentation</a>.</p>
 <img src="assets/do-not-localize/ai-content.gif"/-->
 </td>
