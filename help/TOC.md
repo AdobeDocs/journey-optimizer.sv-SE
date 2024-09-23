@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 6229f295b961b0535139b64928216e40c3759947
+source-git-commit: c609694693f11c77bc61ab31f0e7851262aadcce
 workflow-type: tm+mt
-source-wordcount: '2016'
+source-wordcount: '2019'
 ht-degree: 25%
 
 ---
@@ -175,6 +175,7 @@ ht-degree: 25%
    + [Hantera kampanjer](using/campaigns/modify-stop-campaign.md)
    + [Utlösa kampanjer med API:er](using/campaigns/api-triggered-campaigns.md)
 + Testa dina leveranser {#test}
+   + [Konflikthantering och -prioritering](using/test-approve/conflict-prioritization.md)
    + Förhandsgranska och testa innehåll {#preview-test}
       + [Testa innehållet med anpassade profiler](using/test-approve/test-custom-profiles.md)
       + [Kom igång med förhandsgranskning och test](using/content-management/preview-test.md)

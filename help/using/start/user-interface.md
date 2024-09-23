@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 6229f295b961b0535139b64928216e40c3759947
+source-git-commit: c609694693f11c77bc61ab31f0e7851262aadcce
 workflow-type: tm+mt
-source-wordcount: '1738'
-ht-degree: 3%
+source-wordcount: '1507'
+ht-degree: 4%
 
 ---
 
@@ -197,26 +197,6 @@ Så här byter du språk:
 <!--CONTEXTUAL HELP TO DISPATCH IN DOCS ONCE FEATURE LIVE-->
 
 <!--PRIORITIZATION & CONFLICT MANAGEMENT-->
-
->[!CONTEXTUALHELP]
->id="ajo_journey_priority"
->title="Prioritet"
->abstract="Tilldela en prioritetspoäng till resan, från 0 till 100. Ett högre tal anger en högre prioritet. Prioritetsvärdet som infogas här ärvs av alla inkommande åtgärder (till exempel i appen) som ingår i den här resan. I situationer där samma inkommande yta används i andra kampanjer eller resor visas den inkommande åtgärden med högsta prioritet för mottagaren. Om flera resor eller kampanjer har samma poäng väljs det element som senast ändrades."
-
->[!CONTEXTUALHELP]
->id="ajo_campaigns_campaign_priority"
->title="Prioritet"
->abstract="Tilldela kampanjens prioritetspoäng, från 0 till 100. Ett högre tal anger en högre prioritet. I situationer där samma inkommande yta (till exempel i appen) används i andra kampanjer eller resor visas den inkommande åtgärden med högsta prioritet för mottagaren. Om flera resor eller kampanjer har samma poäng väljs det element som senast ändrades."
-
->[!CONTEXTUALHELP]
->id="ajo_campaigns_campaign_conflict"
->title="Visningsprogrammet i konflikt i kampanjer"
->abstract="Det här verktyget kan hjälpa dig att avgöra om andra resor, kampanjer eller ytor överlappar varandra. Om du vill identifiera överlappning för målgrupper, start- och slutdatum, kanalkonfiguration, kanal eller regeluppsättning kan du visa potentiella konflikter här. "
-
->[!CONTEXTUALHELP]
->id="ajo_journey_conflict"
->title="Konfliktvisningsprogrammet under resor"
->abstract="Det här verktyget kan hjälpa dig att avgöra om andra resor, kampanjer eller ytor överlappar varandra. Om du vill identifiera överlappning för målgrupper, start- och slutdatum, kanalkonfiguration, kanal eller regeluppsättning kan du visa potentiella konflikter här. "
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_set_domain"
