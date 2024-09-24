@@ -8,9 +8,9 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: fråga, samlingar, funktioner, nyttolast, resa
 exl-id: 09b38179-9ace-4921-985b-ddd17eb64681
-source-git-commit: b58d6bbcf2311be3f841f7eef0c0bf10692f1704
+source-git-commit: 1ba767ba8d2ecaabc17b717a983e7ad285dd52bb
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '676'
 ht-degree: 0%
 
 ---
@@ -236,10 +236,14 @@ Resultatet är &quot;token_2&quot;.
 
 **Andra exempel**
 
+Det här uttrycket returnerar produktnamnen baserat på SKU-värdet. Listan med de här produkterna finns i händelselistan, med villkoret händelse-ID.
+
 ```json
-#{ExperiencePlatform.ExperienceEventFieldGroup.experienceevent. all(currentDataPackField._aepgdcdevenablement2.purchase_event.receipt_nbr == "10-337-4016"). 
-_aepgdcdevenablement2.purchase_event.productListItems. all(currentDataPackField.SKU == "AB17 1234 1775 19DT B4DR 8HDK 762").name}
+#{ExperiencePlatform.ExperienceEventFieldGroup.experienceevent.all(currentDataPackField._aepgdcdevenablement2.purchase_event.receipt_nbr == "10-337-4016"). 
+_aepgdcdevenablement2.purchase_event.productListItems.all(currentDataPackField.SKU == "AB17 1234 1775 19DT B4DR 8HDK 762").name}
 ```
+
+Det här uttrycket hämtar namnet på den sista produkten i produktlistan för en e-handelshändelse där händelsetypen är productListAdds och det totala priset är större än eller lika med 150.
 
 ```json
  #{ExperiencePlatform.ExperienceEventFieldGroup.experienceevent.last(
