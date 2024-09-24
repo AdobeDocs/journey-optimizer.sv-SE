@@ -10,14 +10,19 @@ level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: b57683b4-6dcc-4f6c-a8b2-4ba371d78d21
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: 34156eb7f801586154506fbb18546d705e542f25
+source-git-commit: 7a324f3ece4d30085e3e447526cd0a2ff7fa72dd
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '443'
 ht-degree: 1%
 
 ---
 
 # Kom igång med flerspråkigt innehåll {#multilingual-gs}
+
+>[!CONTEXTUALHELP]
+>id="ajo_multi_translation_homepage"
+>title="Översättningar"
+>abstract="Med den flerspråkiga funktionen kan ni enkelt skapa innehåll på flera språk i en enda kampanj eller resa. På sidan Översättningar kan du konfigurera projekt, välja översättningsleverantörer eller hantera språkspecifika ordlistor"
 
 >[!AVAILABILITY]
 >
