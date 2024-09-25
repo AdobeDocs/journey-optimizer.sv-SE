@@ -10,7 +10,7 @@ level: Intermediate
 badge: label="Beta"
 hide: true
 hidefromtoc: true
-source-git-commit: 854a1398e1619f75c201b79e957088a1b6fef0d2
+source-git-commit: 13221645a22524deadc5576624bf6c31633c55c5
 workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_simulate_sample_profiles"
 >title="Simulera med exempelindata"
->abstract="På den här skärmen kan du testa olika varianter av ditt e-postinnehåll genom att ange värden för anpassningsfält via en CSV-mall (hämta CSV) eller genom att ange värdena manuellt.
+>abstract="På den här skärmen kan du testa olika varianter av ditt e-postinnehåll genom att ange värden för anpassningsfält via en CSV-mall (hämta CSV) eller genom att ange värdena manuellt."
 
 >[!AVAILABILITY]
 >
