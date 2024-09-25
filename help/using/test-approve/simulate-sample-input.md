@@ -10,9 +10,9 @@ level: Intermediate
 badge: label="Beta"
 hide: true
 hidefromtoc: true
-source-git-commit: 131cacc88670a965ed2e233984ffa941b37e8a08
+source-git-commit: 854a1398e1619f75c201b79e957088a1b6fef0d2
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '742'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ De viktigaste stegen för att testa ditt innehåll är följande:
 
 Innan du börjar testa ditt innehåll med exempelindata bör du tänka på följande säkerhetsdetaljer och krav.
 
-* Från och med nu är testning med exempelindata bara tillgängligt för e-postkanalen.
+* Från och med nu är testning med exempelindata bara tillgängligt för e-postkanalen. Det går inte att komma åt upplevelsen via knappen&quot;Simulera innehåll&quot; i e-post-Designer.
 * Följande funktioner är inte tillgängliga i den aktuella versionen: Inkorgsåtergivning, skräppostrapporter, flerspråkigt innehåll och innehållsexperiment. Om du vill använda de här funktionerna väljer du knappen **[!UICONTROL Simulate content]** i ditt innehåll för att komma åt det tidigare användargränssnittet.
 * Endast profilattribut stöds för närvarande. Om kontextuella attribut används i ditt innehåll för personalisering kan du inte testa ditt innehåll med dessa attribut.
 * Endast följande datatyper stöds när du anger data för dina varianter: tal (heltal och decimal), sträng, boolesk och datumtyp. Alla andra datatyper kommer att visa ett fel.
