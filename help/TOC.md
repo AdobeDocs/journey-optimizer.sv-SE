@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: c609694693f11c77bc61ab31f0e7851262aadcce
+source-git-commit: 131cacc88670a965ed2e233984ffa941b37e8a08
 workflow-type: tm+mt
-source-wordcount: '2019'
+source-wordcount: '2020'
 ht-degree: 25%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 25%
    + [Användargränssnitt](using/start/user-interface.md)
    + [Söka, filtrera, kategorisera](using/start/search-filter-categorize.md)
    + [Tillgänglighet](using/start/accessibility.md)
-   + [Spelböcker med användningsexempel](using/start/playbooks.md)
+   + [Use Case Playbooks](using/start/playbooks.md)
    + [Arbeta med AI-assistenten](using/start/ai-assistant.md)
    + [Integreringar](using/start/ajo-integrations.md)
    + [Guardrails](using/start/guardrails.md)
@@ -177,7 +177,7 @@ ht-degree: 25%
 + Testa dina leveranser {#test}
    + [Konflikthantering och -prioritering](using/test-approve/conflict-prioritization.md)
    + Förhandsgranska och testa innehåll {#preview-test}
-      + [Testa innehållet med anpassade profiler](using/test-approve/test-custom-profiles.md)
+      + [Testa innehållet med exempelindata](using/test-approve/simulate-sample-input.md)
       + [Kom igång med förhandsgranskning och test](using/content-management/preview-test.md)
       + [Välj testprofiler](using/content-management/test-profiles.md)
       + [Förhandsgranska ditt innehåll](using/content-management/preview.md)
@@ -359,7 +359,7 @@ ht-degree: 25%
          + [Skapa kompositionsarbetsflöden](using/audience/create-compositions.md)
          + [Arbeta med arbetsytan](using/audience/composition-canvas.md)
          + [Få åtkomst till och hantera målgrupper](using/audience/access-audiences.md)
-      + [Sammansatt målgruppskomposition (begränsad tillgänglighet)](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home)
+      + [Sammansatt målgruppskomposition (begränsad tillgänglighet)](https://experienceleague.adobe.com/sv/docs/federated-audience-composition/using/home)
    + Profiler{#profiles}
       + [Kom igång med profiler](using/audience/get-started-profiles.md)
       + [Skapa testprofiler](using/audience/creating-test-profiles.md)
@@ -400,7 +400,7 @@ ht-degree: 25%
       + [Kom igång med leverans](using/reports/deliverability.md)
       + [Förstå listan över inaktiveringar](using/reports/suppression-list.md)
       + [Nytt DMARC-krav](using/configuration/dmarc-record-update.md)
-   + [Larm](using/reports/alerts.md)
+   + [Aviseringar](using/reports/alerts.md)
    + [Arbeta med Customer Journey Analytics](using/reports/cja-ajo.md)
    + [Uteslutningsorsaker](using/reports/exclusion-list.md)
 + Nytt rapporteringsgränssnitt (LA){#channel-report}
@@ -665,5 +665,5 @@ ht-degree: 25%
    + Hantera medgivande {#consent}
       + [Hantera avanmälan](using/privacy/opt-out.md)
       + [Arbeta med policyer för samtycke](using/action/consent.md)
-   + [Datastyrning](using/action/action-privacy.md)
+   + [Dataförvaltning](using/action/action-privacy.md)
    + [Konfigurera och hantera kundhanterade nycklar](using/privacy/cmk.md)
