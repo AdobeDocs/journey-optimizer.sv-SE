@@ -6,10 +6,10 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: a33b1f0323efd0a482781d21fded66c9c8dd6360
+source-git-commit: 2efff12350ffeada28728ef32cf59bfb0f5d5c49
 workflow-type: tm+mt
-source-wordcount: '1584'
-ht-degree: 5%
+source-wordcount: '1596'
+ht-degree: 7%
 
 ---
 
@@ -178,6 +178,10 @@ Den här versionen innehåller de förbättringar som anges nedan.
 * When targeting a custom upload (CSV file) audience, you can now use attributes from the file in your campaigns and journeys. These attributes are available in the personalization editor, to personalize your messages, and the journey advanced expression editor.-->
 * (Tillgänglighetsdatum: 17 september) **Licensanvändning** - Kontrollpanelen för licensanvändning visar nu de aktiveringsbara profilerna i stället för de engagerande målgrupperna. [Läs mer](../audience/license-usage.md)
 
+**Innehållshantering**
+
+* Nu kan du exportera innehållsmallar och fragment mellan sandlådor.
+
 **Datastyrning**
 
 * Ni kan nu tillämpa policyer för datastyrning på Journey Optimizer-kanaler, utöver anpassade åtgärder inom resor. Den här förbättringen förhindrar användning av känsliga fält i kommunikationen genom att vidta marknadsföringsåtgärder direkt i kanalkonfigurationerna.
@@ -225,7 +229,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
   >[!CAUTION]
   >
-  >Tänk på att du med hjälp av den interaktiva API-funktionen på dokumentationssidorna gör riktiga API-anrop till slutpunkterna. Tänk på detta när du experimenterar med produktionssandlådor.
+  >Tänk på att du gör riktiga API-anrop till slutpunkterna när du använder den interaktiva API-funktionen på dokumentationssidorna. Tänk på detta när du experimenterar med produktionssandlådor.
 
 
 ## Versionsinformation augusti 2024 {#8-2024}
