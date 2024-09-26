@@ -9,7 +9,7 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 271fb85d-5621-4a12-b3d1-65cf6021b174
-source-git-commit: e411810196c591727fb1049826dc761e3807ed03
+source-git-commit: e19cd0c301b1f2a8f47ca4c9f9882d36fd560dbe
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 0%
@@ -50,9 +50,14 @@ I det här avsnittet får du hjälp med att skala med följande två begränsnin
 
 * När du publicerar resor skalas och justeras Journey Optimizer automatiskt för att säkerställa maximal genomströmning och stabilitet. I närheten av milstolpen för 100 live-resor på en gång i en sandlåda visas en orange övertäckning och ett varningstecken i gränssnittet för den här uppgiften. Om du ser det här meddelandet och behöver förlänga dina resor mer än 100 resor i taget kan du skapa en biljett för kundvård så hjälper vi dig att nå dina mål.
 
+<!--DOCAC-10977
+
+* As you publish journeys, Journey Optimizer automatically scales and adjusts to ensure maximum throughput and stability. As you near the milestone of 500 live journeys at one time in a sandbox, you will see an orange overlay and warning sign appear in the interface on this achievement. If you see this notification and have a need to extend your journeys beyond 500 live journeys at a time, please create a ticket for customer care and we will help you reach your goals.-->
+
+
 Det finns ett antal bästa metoder som du kan implementera och som hjälper dig att hålla dig inom räckhåll och använda systemet effektivt.
 
-* Om du närmar dig gränsen för antal resor i realtid går du till fliken **Översikt** under **Resor** för att se hur många resor som har varit aktiva under de senaste 24 timmarna (resor som hade aktiva profiler). Du kan kontrollera antalet profiler som kommer in och avslutar resan i det här avsnittet för att avgöra det.
+* Om du närmar dig gränsen för antal resor i realtid går du till fliken **Översikt** under **Resor** för att se hur många resor som har varit aktiva under de senaste 24 timmarna som hade aktiva profiler. Du kan kontrollera antalet profiler som kommer in och avslutar resan i det här avsnittet för att avgöra det.
 
   ![](assets/journey-guardrails2.png)
 

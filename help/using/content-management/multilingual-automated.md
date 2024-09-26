@@ -10,9 +10,9 @@ level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: 38e82eb2-67d9-4a7d-8c1f-77dab20bcec4
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: a190b5547c2d8e13563391bd9d784add75c55fd4
+source-git-commit: dd4173698d7034173b7ae9f44afec397d62a6f78
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1511'
 ht-degree: 1%
 
 ---
@@ -225,6 +225,10 @@ När du har konfigurerat översättningsprojektet och språkinställningarna är
    ![](assets/multilingual-campaign-automated-7.png)
 
 1. Kontrollera att kampanjen är korrekt konfigurerad och klicka sedan på **[!UICONTROL Activate]**.
+
+   >[!IMPORTANT]
+   >
+   >Från och med versionen från september kan ni med en ny kampanjupplevelse och upplevelse av aktivering av resor hantera hela godkännandeprocessen och säkerställa att kampanjer och resor granskas noggrant och godkänns av lämpliga intressenter innan de publiceras. Den här funktionen är tillgänglig med begränsad tillgänglighet. [Läs mer](../test-approve/gs-approval.md)
 
 Nu kan ni aktivera kampanjen eller resan. När ni har skickat dem kan ni mäta effekten av er flerspråkiga resa eller kampanj i rapporter.
 

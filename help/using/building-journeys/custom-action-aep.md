@@ -8,18 +8,18 @@ topic: Content Management
 role: Developer, Data Engineer
 level: Experienced
 exl-id: 890a194f-f54d-4230-863a-fb2b924d716a
-source-git-commit: 778ef71a531346774c5e10e296dbf1112fed891d
+source-git-commit: f00b157ec843eacdee480dcfe00a8724ab4a3495
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
 
-# Använd skiftläge: Använd anpassade åtgärder för att skriva resthändelser i Experience Platform{#custom-action-aep}
+# Använd skiftläge: Använd anpassade åtgärder för att skriva resthändelser i Experience Platform {#custom-action-aep}
 
 Det här användningsexemplet förklarar hur du skriver anpassade händelser till Adobe Experience Platform från Journeys med hjälp av anpassade åtgärder och autentiserade samtal.
 
-## Konfigurera ett IO-projekt
+## Konfigurera ett IO-projekt {#custom-action-aep-IO}
 
 1. Klicka på **Projekt** i Adobe Developer Console och öppna IO-projektet.
 
@@ -94,7 +94,11 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 }
 ```
 
-## Konfigurera den anpassade åtgärden
+## Konfigurera den anpassade åtgärden {#custom-action-config}
+
+Konfigurationen av anpassade åtgärder beskrivs på [den här sidan](../action/about-custom-action-configuration.md).
+
+I det här exemplet gör du så här:
 
 1. Öppna Adobe Journey Optimizer och klicka på **Konfigurationer** under **Administration** i den vänstra menyn. Under **Åtgärder** klickar du på **Hantera** och sedan på **Skapa åtgärd**.
 
@@ -106,7 +110,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 
    ![](assets/custom-action-aep-7bis.png)
 
-### Konfigurera autentiseringen
+### Konfigurera autentiseringen {#custom-action-aep-authentication}
 
 1. Välj **Type** som **Custom** med följande nyttolast.
 
@@ -140,7 +144,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 
    ![](assets/custom-action-aep-8.png)
 
-### Ställ in nyttolasten
+### Ställ in nyttolasten {#custom-action-aep-payload}
 
 1. Klistra in nyttolasten från den tidigare källanslutningen i fälten **Begäran** och **Svar**.
 
@@ -167,7 +171,9 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
    }
    ```
 
-1. Ändra fältkonfigurationen från **Konstant** till **Variabel** för fält som fylls i dynamiskt. Spara den anpassade åtgärden.
+1. Ändra fältkonfigurationen från **Konstant** till **Variabel** för fält som fylls i dynamiskt.
+
+1. Spara den anpassade åtgärden.
 
 ## Resa
 

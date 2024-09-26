@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 18296fe54dcef6620d4f74374848199368f01475
 workflow-type: tm+mt
 source-wordcount: '5450'
 ht-degree: 13%
@@ -169,7 +169,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 ## Juli 2023 {#july-2023}
 
 * Alla nya funktioner och förbättringar som kommer med versionen [!DNL Journey Optimizer] den 23 juli har beskrivits i dokumentationen. [Läs mer](release-notes.md)
-* Dokumentationssidan för vänteaktivitet har förbättrats med ytterligare information och bästa praxis för användning av global tidsgräns och återinträde. [Läs mer](../building-journeys/wait-activity.md)
+* Dokumentationssidan för vänteaktivitet har förbättrats med ytterligare information och bästa praxis för global tidsgräns och återinträde. [Läs mer](../building-journeys/wait-activity.md)
 * Sidan om hantering av inträde har förbättrats. [Läs mer](../building-journeys/entry-management.md)
 * Ytterligare information om begränsningsgraden finns i dokumentationen om målgruppsaktivitet. [Läs mer](../building-journeys/read-audience.md)
 * Ytterligare information om återförsök har lagts till. [Läs mer](../start/guardrails.md#general-actions-g)

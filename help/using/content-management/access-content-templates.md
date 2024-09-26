@@ -6,13 +6,13 @@ description: Lär dig hur du får tillgång till och hanterar innehållsmallar
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 59c675dd2ac94b6967cfb3a93f74b2016a090190
+exl-id: ef6110c4-1aa6-4835-b0b0-b3c4fe0e7024
+source-git-commit: 62b5cfd480414c898ab6f123de8c6b9f99667b7d
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
-
 
 # Få åtkomst till och hantera innehållsmallar {#access-manage-templates}
 
@@ -63,3 +63,9 @@ Välj läget **[!UICONTROL Grid view]** om du vill visa varje mall som en miniat
 >För närvarande kan riktiga miniatyrbilder bara skapas för e-postinnehållsmallar av HTML-typ.
 
 När du uppdaterar ett innehåll kan du behöva vänta några sekunder innan ändringarna visas i miniatyrbilden.
+
+## Exportera innehållsmallar till en annan sandlåda {#export}
+
+Med Journey Optimizer kan du kopiera en innehållsmall från en sandlåda till en annan. Du kan till exempel kopiera en mall från sandlådemiljön på scenen till produktionssandlådan.
+
+Kopieringsprocessen utförs via en **paketexport och import** mellan käll- och målsandlådorna. Detaljerad information om hur du exporterar objekt och importerar dem till en målsandlåda finns i det här avsnittet: [Kopiera objekt till en annan sandlåda](../configuration/copy-objects-to-sandbox.md)

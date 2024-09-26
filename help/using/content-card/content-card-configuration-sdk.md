@@ -5,21 +5,14 @@ feature: Channel Configuration
 topic: Content Management
 role: Admin
 level: Experienced
-badge: label="Begränsad tillgänglighet" type="Informative"
-hide: true
-hidefromtoc: true
-source-git-commit: 8a902298bbbac5689b4f84266dd9c9027e45fad5
+source-git-commit: 12cf3f9ed82350dd55b74de4596e10be9d5654ef
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
 
 # Konfigurera stöd för innehållskort i Web SDK {#content-card-configuration-sdk}
-
->[!AVAILABILITY]
->
->Innehållskort är för närvarande bara tillgängliga för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
 I det här exemplet visas hur du hämtar innehållskort från Adobe Journey Optimizer (AJO) med Adobe Experience Platform. Genom att utnyttja [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) hämtas personaliseringsinnehållet och återges helt på klientsidan.
 

@@ -5,40 +5,21 @@ feature: Channel Configuration
 topic: Content Management
 role: Admin
 level: Experienced
-badge: label="Begränsad tillgänglighet" type="Informative"
-hide: true
-hidefromtoc: true
-source-git-commit: 8a902298bbbac5689b4f84266dd9c9027e45fad5
+source-git-commit: 12cf3f9ed82350dd55b74de4596e10be9d5654ef
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '252'
 ht-degree: 1%
 
 ---
 
 # Krav för innehållskort {#content-card-configuration-prereq}
 
->[!BEGINSHADEBOX]
-
-**Innehållsförteckning**
-
-* [Kom igång med innehållskort](get-started-content-card.md)
-* **Krav för innehållskort**
-* [Konfigurera innehållskortskanal i Journey Optimizer](content-card-configuration.md)
-* [Skapa innehållskort](create-content-card.md)
-* [Utforma innehållskort](design-content-card.md)
-* [Rapport om innehållskort](content-card-report.md)
-
->[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->Innehållskort är för närvarande bara tillgängliga för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
-
 För att Adobe Journey Optimizer ska kunna visa innehållskort på rätt sätt måste du konfigurera följande Adobe Experience Platform-inställningar:
 
 * **Adobe Experience Platform-datainsamling**
 
-  [Skapa en datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) och [lägg till tjänsten Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#aep). Aktivera alternativen **[!UICONTROL Edge Segmentation]** och **[!UICONTROL Adobe Journey Optimizer]**. Detta säkerställer att Journey Optimizer-händelser hanteras av Adobe Experience Platform Edge Network. Mer information om hur du konfigurerar ett datastream finns i [datastreams-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure).
+  [Skapa en datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) och [lägg till tjänsten Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#aep). Aktivera alternativen **[!UICONTROL Edge Segmentation]** och **[!UICONTROL Adobe Journey Optimizer]**. Detta säkerställer att Journey Optimizer-händelser hanteras av Adobe Experience Platform Edge Network.
+Lägg till fältgruppen **Experience Event - Proposition Interaction** i datauppsättningen för att inkludera dessa data i dina rapporter. [Läs mer om datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
 
 * **Adobe Experience Platform**
 

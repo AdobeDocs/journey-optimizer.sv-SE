@@ -6,10 +6,10 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 2efff12350ffeada28728ef32cf59bfb0f5d5c49
+source-git-commit: 53b33a97a8361d1d9579ccd2111e02a263a0aa37
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 7%
+source-wordcount: '1567'
+ht-degree: 9%
 
 ---
 
@@ -28,11 +28,12 @@ ht-degree: 7%
 
 ## Versionsinformation september 2024 {#24-9-rn}
 
-
+<!--
 >[!CAUTION]
 >
->**Noteringar för tidig version nedan kan ändras utan föregående meddelande till releasedatum**. Länkar, skärmar och uppdaterad dokumentation publiceras på releasedatum.
+>**Early release notes below are subject to change without prior notice until the release date**. Links, screens and updated documentation are published at the release date.
 >
+-->
 
 **Releasedatum**: 24-26 september 2024
 
@@ -40,56 +41,57 @@ ht-degree: 7%
 
 Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 
-<!--table>
+<table>
 <thead>
 <tr>
-<th><strong>Content Cards for mobile apps and websites</strong><br/></th>
+<th><strong>Innehållskort för mobilappar och webbplatser</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Content cards are a new digital messaging feature in Adobe Journey Optimizer that delivers personalized and engaging content directly within mobile apps and websites. Unlike traditional push notifications, Content Cards integrate seamlessly into the user interface, offering persistent, non-intrusive updates that enhance user interaction and experience.</p>
-<p>This feature enables marketers to present relevant, rich media content to users, driving higher engagement and ensuring important messages are seen without disrupting the user journey.</p>
+<p>Innehållskort är en ny funktion för digitala meddelanden i Adobe Journey Optimizer som levererar personaliserat och engagerande innehåll direkt inifrån mobilappar och webbplatser. Till skillnad från traditionella push-meddelanden integreras Content Cards smidigt i användargränssnittet med permanenta, icke-påträngande uppdateringar som förbättrar användarinteraktionen och upplevelsen.</p>
+<p>Med den här funktionen kan marknadsförarna presentera relevant, multimediematerial för användarna, vilket ökar engagemanget och säkerställer att viktiga meddelanden syns utan att störa användarresan.</p>
+<p>Mer information finns i den <a href="../content-card/get-started-content-card.md">detaljerade dokumentationen</a>.</p>
+<img src="assets/do-not-localize/content-card.gif"/>
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
 
 <table>
 <thead>
 <tr>
-<th><strong>Godkännanden av resor och kampanjer</strong><br/></th>
+<th><strong>Godkännanden av resor och kampanjer (LA)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
 <p>Med godkännandepolicyer kan ni nu skapa en godkännandeprocess i Journey Optimizer som gör det möjligt för marknadsföringsteamen att se till att kampanjer och resor granskas och signeras av lämpliga intressenter innan de publiceras.</p>
-<!--p>For more information, refer to the <a href="../content-management/gs-generative.md">detailed documentation</a>.</p>
-<img src="assets/do-not-localize/ai-content.gif"/-->
+<p>Godkännandepolicyer är för närvarande bara tillgängliga för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
+<p>Mer information finns i den <a href="../test-approve/gs-approval.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-
-<table>
+<!--<table>
 <thead>
 <tr>
-<th><strong>Låsning av e-postinnehåll</strong><br/></th>
+<th><strong>Email Content Locking</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Med Journey Optimizer kan du nu låsa innehåll i e-postmallar, antingen genom att låsa hela mallen eller specifika strukturer och komponenter. På så sätt kan ni förhindra oavsiktliga redigeringar och borttagningar, vilket ger er bättre kontroll över mallanpassning och förbättrar effektiviteten och tillförlitligheten i era e-postkampanjer.</p>
-<!--p>For more information, refer to the <a href="../content-management/gs-generative.md">detailed documentation</a>.</p>
-<img src="assets/do-not-localize/ai-content.gif"/-->
+<p>Journey Optimizer now allows you to lock content in email templates, either by locking the entire template or specific structures and component. This allows you to prevent unintentional edits or deletions, giving you greater control over template customization, and improving the efficiency and reliability of your email campaigns.</p>
+<p>For more information, refer to the <a href="../content-management/gs-generative.md">detailed documentation</a>.</p>
+<img src="assets/do-not-localize/gif-content-locking.gif">
 </td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
 <table>
 <thead>
@@ -101,8 +103,8 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <tr>
 <td>
 <p>Nu definierar ni utträdeskriterier på resenivå. Genom att lägga till kriterier för att avsluta resan gör du så att profilerna avslutas så snart en händelse inträffar (t.ex. köp) eller så kvalificerar de sig för en viss målgrupp. Detta förhindrar användaren från att få ut mer information från resan.</p>
-<!--p>For more information, refer to the <a href="../content-management/gs-generative.md">detailed documentation</a>.</p>
-<img src="assets/do-not-localize/ai-content.gif"/-->
+<p>Mer information finns i den <a href="../building-journeys/journey-properties.md">detaljerade dokumentationen</a>.</p>
+<img src="assets/do-not-localize/ai-content.gif" /-->
 </td>
 </tr>
 </tbody>
@@ -123,6 +125,20 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </tbody>
 </table-->
 
+<!--table>
+<thead>
+<tr>
+<th><strong>Web experiences in journeys</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>With the Web channel, Adobe Journey Optimizer allows you to personalize the web experience you deliver to your customers through inbound web journeys. The Web channel is now available in the journey canvas.</p>
+<p>For more information, refer to the <a href="../web/get-started-web.md">detailed documentation</a>.</p>
+</tr>
+</tbody>
+</table-->
 
 <table>
 <thead>
@@ -165,7 +181,8 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 >[!IMPORTANT]
 >
 >Den aktuella rapportupplevelsen kommer att tas ur bruk i oktober-versionen. Efter detta datum kommer den nya rapportupplevelsen att bli standard. Vi rekommenderar att du behärskar de nya funktionerna så att övergången blir smidig.
-> [Kom igång med Journey Optimizer nya rapporteringsgränssnitt](../reports/report-gs-cja.md)
+>
+> [Lär dig hur du kommer igång med Journey Optimizer nya rapporteringsgränssnitt](../reports/report-gs-cja.md)
 
 
 ### Förbättringar {#24-9-improvements}
@@ -174,54 +191,51 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Publiker**
 
-<!--* The use of audiences from custom upload (CSV file) is now available for use with Privacy and Security Shield add-on.
-* When targeting a custom upload (CSV file) audience, you can now use attributes from the file in your campaigns and journeys. These attributes are available in the personalization editor, to personalize your messages, and the journey advanced expression editor.-->
+<!--* The use of audiences from custom upload (CSV file) is now available for use with Privacy and Security Shield add-on.-->
 * (Tillgänglighetsdatum: 17 september) **Licensanvändning** - Kontrollpanelen för licensanvändning visar nu de aktiveringsbara profilerna i stället för de engagerande målgrupperna. [Läs mer](../audience/license-usage.md)
 
 **Innehållshantering**
 
-* Nu kan du exportera innehållsmallar och fragment mellan sandlådor.
+* Nu kan du exportera innehållsmallar och fragment mellan sandlådor. [Läs mer](../configuration/copy-objects-to-sandbox.md)
 
-**Datastyrning**
+<!--**Data Governance**
 
-* Ni kan nu tillämpa policyer för datastyrning på Journey Optimizer-kanaler, utöver anpassade åtgärder inom resor. Den här förbättringen förhindrar användning av känsliga fält i kommunikationen genom att vidta marknadsföringsåtgärder direkt i kanalkonfigurationerna.
+* You can now apply data governance policies to Journey Optimizer channels, in addition to custom actions within journeys. This enhancement helps prevent the use of sensitive fields in communications by applying marketing actions directly within your channel configurations.    -->
 
 <!--
-**Frequency and priority management**
-
-* **Frequency capping by campaign or journey** - You can now create frequency rules to apply to your journeys, allowing you to limit the number of journeys per day, week, or month, as well as control the number of concurrent journeys running simultaneously.
+**Conflict and priority management**
 
 * **Priority score** - You can now assign a priority score to a campaign or a journey, ranging from 0 to 100. A higher number indicates a higher priority. When two campaigns or journeys use the same surface, Journey Optimizer will select the one with the highest priority score. If the campaigns have the same score, the campaign that was most recently modified will be chosen. Priority score is available for all inbound channels in campaigns, and for the in-app channel in journeys.    
 
 * **View conflicts** - A new **View conflicts** button in journeys and campaigns now allows you to check whenever there's a possibility of overlap with other journeys or campaigns such as the start date, the targeted audience, or the selected channel configuration.
 -->
 
-
 **Resor**
 
-* **Max antal Live-resor** - Journey Optimizer har nu 500 live-resor i produktionssandlådor, i stället för 100. Antalet direktresor visas på arbetsytan.
+<!-- DOCAC-10977 * **Max number of Live journeys** - Journey Optimizer now has a guardrail of 500 live journeys on production sandboxes, instead of 100. The number of live journeys is visible in the journey canvas.-->
 
-* **Förbättringar av Live-rapportering** - Live-rapportering ger insikter om hur dina resor har fungerat de senaste 24 timmarna. Vi har förbättrat den genom att lägga till nya mätvärden (som anges, utelämnas, tas bort och profiler av misstag) så att du får en djupare förståelse för användarbeteende och prestanda direkt från arbetsytan på resan.
+* **Förbättringar av Live-rapportering** - Live-rapportering ger insikter om hur dina resor har fungerat de senaste 24 timmarna. Vi har förbättrat den genom att lägga till nya mätvärden (som anges, utelämnas, tas bort och profiler av misstag) så att du får en djupare förståelse för användarbeteende och prestanda direkt från arbetsytan på resan. [Läs mer](../building-journeys/report-journey.md)
 
-* **Parametrar i anpassade åtgärder** - NULL och valfria parametrar stöds nu i anpassade åtgärder.
+<!-- DOCAC-10562* **Parameters in custom actions** - NULL and optional parameters are now supported in custom actions. [Learn more](../action/about-custom-action-configuration.md#define-the-message-parameters)-->
 
 * (Tillgänglighetsdatum: 10 september) **Automatiska återförsök vid läsning av målgrupp** - återförsök används nu som standard på målgruppsinställda resor (med början från en **läsning** eller en **affärshändelse**) när exportjobbet hämtas. Om ett fel inträffar när exportjobbet skapas görs nya försök var 10:e minut (max 1 timme). Efter det kommer vi att betrakta det som ett misslyckande. Dessa typer av resor kan därför utföras upp till en timme efter den schemalagda tiden. [Läs mer](../building-journeys/read-audience.md#retries)
 
 **E-postkanal**
 
-* **BCC-meddelandehuvud** - En ny rubrik har lagts till i alla e-postmeddelanden. Det här rubrikens värde är unikt för alla skickade e-postmeddelanden och för motsvarande BCC-e-postkopia. Den här rubriken lagras också i datamängderna för meddelanden och feedback från BCC, som gör att du kan stämma av BCC-kopian och motsvarande skickade e-postinformation.
+* **Meddelanderubrik i skickat e-postmeddelande och BCC-kopia** - En ny rubrik har lagts till i alla e-postmeddelanden. Det här rubrikens värde är unikt för alla skickade e-postmeddelanden och för motsvarande BCC-e-postkopia. Den här rubriken lagras också i datamängderna för meddelanden och feedback från BCC, som gör att du kan stämma av BCC-kopian och motsvarande skickade e-postinformation. [Läs mer](../configuration/archiving-support.md#bcc-header)
+
 * **Spam-poäng** (GA) - Nu kan du kontrollera ditt innehåll-spam-poäng i en dedikerad spam-rapport. Med SpamAssassin kan Adobe Journey Optimizer nu testa ditt e-postinnehåll och ge det ett poängvärde som anger om Internet-leverantörer eller postlådeleverantörer kommer att betrakta det som skräppost eller inte. [Läs mer](../content-management/spam-report.md)
 
 **SMS-kanal**
 
 * **Redigera API-autentiseringsuppgifter** - Nu kan du redigera inställningar i SMS API-autentiseringsuppgifter, inklusive uppdateringar av nyckelord för avanmälan/utanmälan och svar.
-* Du kan nu ändra befintliga SMS-konfigurationer.
 
 **API:er**
 
 * **API för kampanjsimulering** - Använd det här API:t för att utlösa ett korrekturjobb för en kampanj. Att skicka Campaign-korrektur är en asynkron process. API:t returnerar ett proofJobId som kan användas för att kontrollera korrekturets status. [Läs mer](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target="_blank"}
 
-* [Adobe Journey Optimizer API-dokumentationen ](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target="_blank"} är nu interaktiv. Utforska API-slutpunkterna direkt från dokumentationssidorna för att få omedelbar feedback och snabba upp den tekniska implementeringen.
+* (Tillgänglighetsdatum: 10 sep) [Adobe Journey Optimizer API-dokumentationen ](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target="_blank"} är nu interaktiv. Utforska API-slutpunkterna direkt från dokumentationssidorna för att få omedelbar feedback och snabba upp den tekniska implementeringen.
+
 
   Alla API-referenssidor har nu en **Prova**-funktion som du kan använda för att testa API-anrop direkt på dokumentationswebbplatsen. [Hämta nödvändiga autentiseringsuppgifter](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"} och börja använda funktionen för att utforska API-slutpunkterna.
 

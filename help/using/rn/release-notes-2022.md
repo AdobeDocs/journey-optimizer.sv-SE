@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 hidefromtoc: true
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 18296fe54dcef6620d4f74374848199368f01475
 workflow-type: tm+mt
 source-wordcount: '3598'
 ht-degree: 8%
@@ -212,7 +212,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 **Resor**
 
 * **Entitetsdatauppsättningen** är nu tillgänglig som en färdig datauppsättning i Adobe Journey Optimizer. Den här uppslagsuppsättningen innehåller metadata som berikar informationen om spårnings- och feedbackdatauppsättningar. Detta hjälper er att förbättra era rapporter och frågor med mer begripliga data. [Läs mer](../data/datasets-query-examples.md#entity-dataset)
-* Ett nytt skyddsräcke har lagts till för enstaka resor (med början vid en händelse eller en målgruppskompetens) för att förhindra att resor utlöses felaktigt flera gånger för samma händelse. Återinträde av profiler blockeras nu tillfälligt som standard i 5 minuter. [Läs mer](../start/guardrails.md#events-g)
+* Ett nytt skyddsräcke har lagts till för enstaka resor (med början vid en händelse eller en målgruppskompetens) för att förhindra att resor utlöses felaktigt flera gånger för samma händelse. Profilåterinträde blockeras nu tillfälligt som standard i 5 minuter. [Läs mer](../start/guardrails.md#events-g)
 
 **Administration**
 

@@ -8,7 +8,7 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, upptäckt, komma igång
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
-source-git-commit: e34c39c02f71361277f28b1a116a54390875f93d
+source-git-commit: 18296fe54dcef6620d4f74374848199368f01475
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 1%

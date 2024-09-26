@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 1fc708e1-a993-4a2a-809c-c5dc08a4bae1
-source-git-commit: c42fc1069e11b8e34b7477fc26ed8a6b4ef95ac7
+source-git-commit: 62b5cfd480414c898ab6f123de8c6b9f99667b7d
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -128,3 +128,9 @@ Om du vill göra det klickar du på knappen **[!UICONTROL More actions]** bredvi
 Om du vill arkivera ett fragment, filtrerar du på **[!UICONTROL Archived]**-objekten och väljer **[!UICONTROL Unarchive]** på **[!UICONTROL More actions]**-menyn. Det är nu igen tillgängligt från fragmentlistan och kan användas i alla e-postmeddelanden och mallar.
 
 ![](assets/fragment-list-unarchive.png)
+
+## Exportera fragment till en annan sandlåda {#export}
+
+Med Journey Optimizer kan du kopiera ett fragment från en sandlåda till en annan. Du kan t.ex. kopiera ett fragment från sandlådemiljön på scenen till produktionssandlådan.
+
+Kopieringsprocessen utförs via en **paketexport och import** mellan käll- och målsandlådorna. Detaljerad information om hur du exporterar objekt och importerar dem till en målsandlåda finns i det här avsnittet: [Kopiera objekt till en annan sandlåda](../configuration/copy-objects-to-sandbox.md)

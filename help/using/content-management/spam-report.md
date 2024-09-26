@@ -4,11 +4,10 @@ description: Lär dig hur du använder skräppostrapporten.
 feature: Preview
 role: User
 level: Beginner
-badge: label="Beta"
 exl-id: 9ab43b14-41cf-49f1-bdcf-6fee58db5000
-source-git-commit: 5f69b252f5812f43b3d0a6fed0aac074ece0d10f
+source-git-commit: 9d95c3cf5c7f9a0da98654795370f40e84611dc9
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -21,10 +20,6 @@ ht-degree: 0%
 >abstract="Med skräppostrapporten kan du kontrollera hur ditt e-postinnehåll beter sig. Det här poängtalet anger om Internet-leverantörer eller postlådeleverantörer kommer att betrakta ditt meddelande som skräppost eller inte. Ju lägre poäng, desto bättre. Om e-postinnehållets poäng är högre än 2 bör du överväga att åtgärda problem som gör att testerna misslyckas."
 
 Du kan kontrollera hur ditt e-postinnehåll beter sig i en dedikerad skräppostrapport. Med [SpamAssassin](https://spamassassin.apache.org/){target="_blank"} kan Adobe Journey Optimizer testa ditt e-postinnehåll och ge det ett poängvärde som anger om Internet-leverantörer eller postlådeleverantörer kommer att betrakta det som skräppost eller inte.
-
->[!AVAILABILITY]
->
->Funktionen finns för närvarande i betaversion och är endast tillgänglig för betatestare. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.
 
 När du redigerar eller förhandsgranskar ditt e-postinnehåll ger knappen **[!UICONTROL Spam report]** en poäng och råd för att förbättra poängen för varje enskilt objekt i listan.
 
@@ -49,6 +44,11 @@ Följ stegen nedan för att få åtkomst till **[!UICONTROL Spam report]**.
 1. Kontrollera poängen och beskrivningarna för varje objekt.
 
    Ju lägre poäng, desto bättre. Om poängen är högre än 5 visas en varning: den anger att vissa meddelanden kan blockeras eller markeras som skräppost när de tas emot. Det bästa är att ha en poäng som är lägre än 2.
+
+   >[!NOTE]
+   >
+   >Spam-poäng härleds via [SpamAssassin](https://spamassassin.apache.org/){target="_blank"} och reglerna ägs inte av Adobe. Mer information om de här reglerna finns i SpamAssassin-dokumentationen.
+   >
 
 1. Om du anser att vissa element kan förbättras baserat på den poängsättningen kan du redigera ditt innehåll i [e-postmeddelandet för Designer](../email/content-from-scratch.md) och göra nödvändiga uppdateringar.
 

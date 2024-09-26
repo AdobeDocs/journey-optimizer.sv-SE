@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: 9e9c235a-b78c-4669-af82-822b6f1e6fca
-source-git-commit: 364e78e0ef3a9e8bcd54c4983c0503863bce1e34
+source-git-commit: dd4173698d7034173b7ae9f44afec397d62a6f78
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '390'
 ht-degree: 3%
 
 ---
@@ -45,6 +45,10 @@ Det gör du genom att klicka på **[!UICONTROL Simulate content]** och sedan lä
 Detaljerad information om hur du väljer testprofiler och förhandsgranskar innehåll finns i avsnittet [Innehållshantering](../content-management/preview-test.md).
 
 ## Granska och aktivera meddelanden i appen{#in-app-review}
+
+>[!IMPORTANT]
+>
+>Från och med versionen från september kan ni med en ny kampanjupplevelse och upplevelse av aktivering av resor hantera hela godkännandeprocessen och säkerställa att kampanjer och resor granskas noggrant och godkänns av lämpliga intressenter innan de publiceras. Den här funktionen är tillgänglig med begränsad tillgänglighet. [Läs mer](../test-approve/gs-approval.md)
 
 När ditt meddelande i appen har skapats och dess innehåll har definierats och anpassats kan du granska och aktivera det.
 

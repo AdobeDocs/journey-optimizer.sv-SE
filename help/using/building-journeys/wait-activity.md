@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: vänta, aktivitet, resa, nästa, arbetsyta
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
-source-git-commit: f81fde0076fc8689c689fae7a0ee8c7aa9fdbeed
+source-git-commit: 18296fe54dcef6620d4f74374848199368f01475
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 6%
@@ -43,7 +43,7 @@ När du använder flera **Wait**-aktiviteter på en resa ska du vara medveten om
 
 En individ kan bara ange en **Wait**-aktivitet om han eller hon har tillräckligt med tid kvar på resan för att slutföra väntetiden innan tidsgränsen på 91 dagars resa har uppnåtts.
 
-### Vänta och återinträde {#wait-re-entrance}
+### Vänta och återinträde {#wait-reentrance}
 
 Det är en god vana att inte använda **Wait**-aktiviteter för att blockera återinträde. Använd i stället alternativet **Tillåt återinträde** på resans egenskapsnivå. Läs mer på [den här sidan](../building-journeys/journey-properties.md#entrance).
 

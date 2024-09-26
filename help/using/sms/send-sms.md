@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 31c9b080-e334-4a11-af33-4c6f115c70a4
-source-git-commit: 75638e9b463278efab16b2b85ed2707640f088f2
+source-git-commit: dd4173698d7034173b7ae9f44afec397d62a6f78
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 1%
+source-wordcount: '304'
+ht-degree: 2%
 
 ---
 
@@ -43,6 +43,10 @@ Du måste kontrollera varningar i den övre delen av redigeraren. Vissa av dem �
 > Använd telefonnumren i de format som stöds av leverantören för att förbättra leveransmöjligheterna. Twilio och Sinch har till exempel bara stöd för telefonnummer i E.164-format.
 
 ## Skicka dina textmeddelanden {#sms-send}
+
+>[!IMPORTANT]
+>
+>Från och med versionen från september kan ni med en ny kampanjupplevelse och upplevelse av aktivering av resor hantera hela godkännandeprocessen och säkerställa att kampanjer och resor granskas noggrant och godkänns av lämpliga intressenter innan de publiceras. Den här funktionen är tillgänglig med begränsad tillgänglighet. [Läs mer](../test-approve/gs-approval.md)
 
 När textmeddelandet är klart slutför du konfigurationen av din [resa](../building-journeys/journey-gs.md) eller [kampanj](../campaigns/create-campaign.md) för att skicka det.
 

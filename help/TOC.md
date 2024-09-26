@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 131cacc88670a965ed2e233984ffa941b37e8a08
+source-git-commit: 62b5cfd480414c898ab6f123de8c6b9f99667b7d
 workflow-type: tm+mt
-source-wordcount: '2020'
+source-wordcount: '2042'
 ht-degree: 25%
 
 ---
@@ -50,6 +50,7 @@ ht-degree: 25%
       + [Testa din resa](using/building-journeys/testing-the-journey.md)
       + [Simulera din resa](using/building-journeys/journey-simulation.md)
       + [Publish din resa](using/building-journeys/publishing-the-journey.md)
+      + [Live-rapport under din resa](using/building-journeys/report-journey.md)
    + Hantera dina resor{#manage-journey}
       + [Profilingångshantering](using/building-journeys/entry-management.md)
       + [Hantering av tidszoner](using/building-journeys/timezone-management.md)
@@ -174,7 +175,7 @@ ht-degree: 25%
    + [Granska och aktivera en kampanj](using/campaigns/review-activate-campaign.md)
    + [Hantera kampanjer](using/campaigns/modify-stop-campaign.md)
    + [Utlösa kampanjer med API:er](using/campaigns/api-triggered-campaigns.md)
-+ Testa dina leveranser {#test}
++ Testa och godkänn {#test}
    + [Konflikthantering och -prioritering](using/test-approve/conflict-prioritization.md)
    + Förhandsgranska och testa innehåll {#preview-test}
       + [Testa innehållet med exempelindata](using/test-approve/simulate-sample-input.md)
@@ -184,6 +185,11 @@ ht-degree: 25%
       + [Skicka e-postkorrektur](using/content-management/proofs.md)
       + [Testa e-poståtergivning](using/content-management/rendering.md)
       + [Rapport om skräppost](using/content-management/spam-report.md)
+   + Godkänn resor och kampanjer {#approve}
+      + [Kom igång med godkännanden](using/test-approve/gs-approval.md)
+      + [Skapa och hantera godkännandepolicyer](using/test-approve/approval-policies.md)
+      + [Begär godkännande](using/test-approve/request-approval.md)
+      + [Godkänn en begäran](using/test-approve/review-approve-request.md)
 + E-postkanal {#email}
    + [Kom igång med e-post](using/email/get-started-email.md)
    + [Skapa ett e-postmeddelande](using/email/create-email.md)
@@ -264,14 +270,13 @@ ht-degree: 25%
    + [Skapa kodbaserad upplevelsekonfiguration](using/code-based/code-based-configuration.md)
    + [Exempel på implementeringsmetoder](using/code-based/code-based-implementation-samples.md)
    + [Skapa kodbaserade upplevelser](using/code-based/create-code-based.md)
-+ Innehållskort (LA){#content-card}
++ Innehållskort{#content-card}
    + [Kom igång med innehållskort](using/content-card/get-started-content-card.md)
    + Konfigurera innehållskortskanalen {#configure}
       + [Krav för innehållskort](using/content-card/content-card-configuration-prereq.md)
       + [Konfigurera innehållskortskanal i Journey Optimizer](using/content-card/content-card-configuration.md)
    + [Skapa innehållskort](using/content-card/create-content-card.md)
    + [Utforma innehållskort](using/content-card/design-content-card.md)
-   + [Rapport om innehållskort](using/content-card/content-card-report.md)
 + Landningssidor {#landing-pages}
    + [Kom igång med landningssidor](using/landing-pages/get-started-lp.md)
    + [Skapa en landningssida](using/landing-pages/create-lp.md)
@@ -647,6 +652,7 @@ ht-degree: 25%
          + [Använd API-anropssvar i anpassade åtgärder](using/action/action-response.md)
          + [Integrera med Marketo Engage](using/action/marketo-engage.md)
    + [Källor](using/start/get-started-sources.md)
+   + [Exportera objekt till en annan sandlåda](using/configuration/copy-objects-to-sandbox.md)
 + Åtkomstkontroll {#access-control}
    + Översikt över åtkomstkontroll {#privacy}
       + [Kom igång med användarhantering](using/administration/permissions-overview.md)

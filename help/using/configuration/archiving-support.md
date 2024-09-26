@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: arkiv, meddelanden, HIPAA, BCC, e-post
 exl-id: 186a5044-80d5-4633-a7a7-133e155c5e9f
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 794724670c41e5d36ff063072a2e29c37dd5fadd
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1283'
 ht-degree: 1%
 
 ---
@@ -119,9 +119,9 @@ Följ stegen nedan för att göra detta.
 
 Det går inte att rapportera som sådant på en hemlig kopia i rese- och meddelanderapporterna. Information lagras emellertid på en systemdatauppsättning med namnet **[!UICONTROL AJO BCC Feedback Event Dataset]**. Du kan köra frågor mot den här datauppsättningen om du till exempel vill hitta användbar information för felsökning.
 
-Du kan komma åt den här datauppsättningen via användargränssnittet. Välj **[!UICONTROL Data management]** > **[!UICONTROL Datasets]** > **[!UICONTROL Browse]** och aktivera växlingen **[!UICONTROL Show system datasets]** från filtret för att visa de systemgenererade datauppsättningarna. Läs mer om hur du får åtkomst till datauppsättningar i [det här avsnittet](../data/get-started-datasets.md#access-datasets).
+Om du vill komma åt den här datauppsättningen via användargränssnittet väljer du **[!UICONTROL Data management]** > **[!UICONTROL Datasets]** > **[!UICONTROL Browse]**. Läs mer om hur du får åtkomst till datauppsättningar i [det här avsnittet](../data/get-started-datasets.md#access-datasets).
 
-![](assets/preset-bcc-dataset.png)
+<!--![](assets/preset-bcc-dataset.png)-->
 
 Om du vill köra frågor mot den här datauppsättningen kan du använda frågeredigeraren som tillhandahålls av [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"}. Om du vill komma åt den väljer du **[!UICONTROL Data management]** > **[!UICONTROL Queries]** och klickar på **[!UICONTROL Create query]**. [Läs mer](../data/get-started-queries.md)
 
@@ -223,3 +223,65 @@ Beroende på vilken information du söker kan du köra följande frågor.
    mfe._experience.customerjourneymanagement.messagedeliveryfeedback.feedbackstatus IN ('bounce', 'out_of_band') 
     WHERE bcc.timestamp > now() - INTERVAL '30' DAY;
    ```
+
+### Använd meddelanderubrik för att stämma av BCC-kopia och skickad e-postinformation {#bcc-header}
+
+När dina BCC-kopior för e-post arkiveras på ett externt system kan du hämta information om motsvarande skickade e-postmeddelanden med en rubrik som finns i meddelandet.
+
+Alla e-postmeddelanden innehåller nu en rubrik med namnet `x-message-profile-id`. Värdet för det här huvudet är olika för varje profil: det är unikt för varje skickat e-postmeddelande och för motsvarande BCC-e-postkopia.
+
+Rubriken `x-message-profile-id` lagras också i följande systemdatauppsättningar: [AJO Message Feedback Event Dataset](../data/datasets-query-examples.md#message-feedback-event-dataset) (skickade e-postmeddelanden) och [AJO BCC Feedback Event Dataset](#bcc-reporting) (BCC-kopior). Du kan söka efter dessa datauppsättningar för att stämma av kopian av den kostnadsfria kopian och motsvarande e-postadress.
+
+* Om du vill komma åt dessa datauppsättningar via användargränssnittet väljer du **[!UICONTROL Data management]** > **[!UICONTROL Datasets]** > **[!UICONTROL Browse]**. Läs mer om hur du får åtkomst till datauppsättningar i [det här avsnittet](../data/get-started-datasets.md#access-datasets).
+
+* Använd Frågeredigeraren som tillhandahålls av [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"}. Om du vill komma åt den väljer du **[!UICONTROL Data management]** > **[!UICONTROL Queries]** och klickar på **[!UICONTROL Create query]**. [Läs mer](../data/get-started-queries.md)
+
+Nedan visas några exempelfrågor som du kan köra för att hämta information som motsvarar dina BCC-kopior.
+
+**Fråga 1**
+
+Så här sätter du ihop BCC-händelsen med motsvarande feedback-händelse för det faktiska e-postmeddelandet med kampanjåtgärdsinformationen:
+
+```
+SELECT
+  mfe.timestamp as OriginalRecipientFeedbackEventTime,
+  mfe._experience.customerJourneyManagement.emailChannelContext.address AS OriginalRecipientEmailAddress,
+  mfe._experience.customerjourneymanagement.messagedeliveryfeedback.feedbackstatus AS OriginalRecipientMessageFeedbackStatus,
+  mfe._experience.customerJourneyManagement.messageExecution.campaignID AS CampaignID,
+  mfe._experience.customerJourneyManagement.messageExecution.campaignActionID AS CampaignActionID,
+  mfe._experience.customerJourneyManagement.messageExecution.batchInstanceID AS BatchInstanceID,
+  mfe._experience.customerJourneyManagement.messageExecution.messageID AS MessageID AS MessageID
+FROM ajo_bcc_feedback_event_dataset bcc
+LEFT JOIN cjm_message_feedback_event_dataset mfe
+ON bcc._experience.customerJourneyManagement.messageProfile.messageProfileID =
+    mfe._experience.customerJourneyManagement.messageProfile.messageProfileID AND 
+    mfe.timestamp > now() - INTERVAL '30' day
+WHERE 
+  bcc.timestamp > now() - INTERVAL '30' DAY AND 
+  bcc._experience.customerJourneyManagement.messageProfile.messageProfileID = 'x-message-profile-id'
+ORDER BY timestamp DESC;
+```
+
+**Fråga 2**
+
+Så här sätter du ihop BCC-händelsen med motsvarande feedback-händelse för det faktiska e-postmeddelandet med information om reseåtgärder:
+
+```
+SELECT
+  mfe.timestamp as OriginalRecipientFeedbackEventTime,
+  mfe._experience.customerJourneyManagement.emailChannelContext.address AS OriginalRecipientEmailAddress,
+  mfe._experience.customerjourneymanagement.messagedeliveryfeedback.feedbackstatus AS OriginalRecipientMessageFeedbackStatus,
+  mfe._experience.customerJourneyManagement.messageExecution.journeyVersionID AS JourneyVersionID,
+  mfe._experience.customerJourneyManagement.messageExecution.journeyVersionInstanceID AS JourneyVersionInstanceID,
+  mfe._experience.customerJourneyManagement.messageExecution.batchInstanceID AS BatchInstanceID,
+  mfe._experience.customerJourneyManagement.messageExecution.messageID AS MessageID AS MessageID
+FROM ajo_bcc_feedback_event_dataset bcc
+LEFT JOIN cjm_message_feedback_event_dataset mfe
+ON bcc._experience.customerJourneyManagement.messageProfile.messageProfileID =
+    mfe._experience.customerJourneyManagement.messageProfile.messageProfileID AND 
+    mfe.timestamp > now() - INTERVAL '30' day
+WHERE 
+  bcc.timestamp > now() - INTERVAL '30' DAY AND 
+  bcc._experience.customerJourneyManagement.messageProfile.messageProfileID = 'x-message-profile-id'
+ORDER BY timestamp DESC;
+```

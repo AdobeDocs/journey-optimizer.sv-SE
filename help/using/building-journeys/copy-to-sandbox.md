@@ -9,9 +9,9 @@ role: User, Developer, Data Engineer
 level: Experienced
 keywords: sandlåda, resa, kopia, miljö
 exl-id: 8c63f2f2-5cec-4cb2-b3bf-2387eefb5002
-source-git-commit: b7c31db7a126eb134c353e26c9e263a9bd1674a6
+source-git-commit: 62b5cfd480414c898ab6f123de8c6b9f99667b7d
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '119'
 ht-degree: 0%
 
 ---
@@ -40,85 +40,8 @@ ht-degree: 0%
 >abstract="This is the list of associated objects used in the journey. This list displays the name, the object type, as well as the internal Journey Optimizer ID."
 -->
 
-Med Sandbox Tooling kan du kopiera objekt över flera sandlådor genom att utnyttja export och import av paket. Ett paket kan bestå av ett eller flera objekt. Alla objekt som ingår i ett paket måste komma från samma sandlåda.
+Med Journey Optimizer kan du kopiera en hel resa från en sandlåda till en annan. Du kan t.ex. kopiera en resa från sandlådemiljön på scenen till produktionssandlådan.
 
-Den här sidan beskriver hur du använder sandlådeverktyg i Journey Optimizer. Mer information om själva funktionen finns i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html).
+Förutom själva resan kopierar Journey Optimizer även de flesta av de objekt som resan är beroende av: målgrupper, scheman, händelser och handlingar.
 
->[!NOTE]
->
->Den här funktionen kräver följande behörigheter från funktionen **Sandlådeadministration**: Hantera sandlådor (eller Visa sandlådor) och Hantera paket. [Läs mer](../administration/ootb-permissions.md)
-
-## Kom igång med sandlådeverktyg{#sandbox-gs}
-
-Med Journey Optimizer kan du kopiera en hel resa från en sandlåda till en annan. Du kan t.ex. kopiera en resa från sandlådemiljön på scenen till produktionssandlådan. Förutom själva resan kopierar Journey Optimizer även de flesta av de objekt som resan är beroende av: målgrupper, scheman, händelser och handlingar. Mer information om kopierade objekt finns i [avsnittet](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html#abobe-journey-optimizer-objects).
-
->[!CAUTION]
->
->Vi garanterar inte att alla länkade element kopieras till målsandlådan. Vi rekommenderar att du gör en grundlig kontroll innan du publicerar resan. På så sätt kan du identifiera eventuella saknade objekt.
-
-De kopierade objekten i målsandlådan är unika och det finns ingen risk för att befintliga element skrivs över. Både resan och alla meddelanden under resan överförs i utkastläge. På så sätt kan du utföra en grundlig validering innan den publiceras i målsandlådan. Kopieringsprocessen kopierar bara metadata om resan och objekten i den resan. Inga profil- eller datauppsättningsdata kopieras som en del av den här processen.
-
-Kopieringsprocessen utförs via en paketexport och import mellan käll- och målsandlådorna. Här är de allmänna stegen för att kopiera en resa från en sandlåda till en annan:
-
-1. Lägg till resan som ett paket i källsandlådan.
-1. Exportera paketet till målsandlådan.
-
-Dessutom kan du använda Journey Optimizer **Object Copy Service REST API** för att hantera sandlådeobjekt. [Lär dig hur du arbetar med REST API:t för objektkopieringstjänsten](https://developer.adobe.com/journey-optimizer-apis/references/sandbox/)
-
-## Lägg till resan som ett paket{#export}
-
-Om du vill kopiera en resa till en annan sandlåda måste du först lägga till resan som ett paket i källsandlådan. Följ de här stegen:
-
-1. Klicka på **[!UICONTROL Journeys]** på menyn RESURSHANTERING. Listan över resor visas.
-
-1. Sök efter den resa du vill kopiera genom att klicka på ikonen **Fler åtgärder** (de tre punkterna bredvid resans namn) och klicka på **Lägg till i paket**.
-
-   ![](assets/journey-sandbox1.png)
-
-   Fönstret **Lägg till i paketet** visas.
-
-   ![](assets/journey-sandbox2.png)
-
-1. Välj om du vill lägga till resan i ett befintligt paket eller skapa ett nytt paket:
-
-   * **Befintligt paket**: välj paketet i listrutan.
-   * **Skapa ett nytt paket**: skriv paketnamnet. Du kan också lägga till en beskrivning.
-
-1. Klicka på **[!UICONTROL Sandboxes]** på menyn Administration, välj fliken **Paket** och klicka på det paket som du vill exportera.
-
-   ![](assets/journey-sandbox3.png)
-
-1. Markera de objekt som du vill exportera och klicka på **Publish**
-
-   ![](assets/journey-sandbox4.png)
-
-   Om publiceringen misslyckas kan du kontrollera loggarna för att identifiera felorsaken. Öppna paketet, klicka på **Se misslyckade jobb**, markera importjobbet och klicka på **Visa importinformation**.
-
-   ![](assets/journey-sandbox9.png)
-
-## Exportera paketet till målsandlådan {#import}
-
-När paketet har publicerats måste du exportera det till målsandlådan.
-
-1. Klicka på menyn **[!UICONTROL Sandboxes]** i källsandlådan, välj fliken **Paket** och klicka på ikonen + bredvid det paket som du vill exportera.
-
-   ![](assets/journey-sandbox5.png)
-
-1. Markera **målsandlådan** i listrutan och klicka på **Nästa**. Endast sandlådor i din organisation är tillgängliga.
-
-   ![](assets/journey-sandbox6.png)
-
-1. Granska paketobjekten och beroendena. Det här är listan över associerade objekt som används under resan. I den här listan visas namnet och objekttypen. För varje objekt kan du välja att skapa ett nytt eller använda ett befintligt objekt i målsandlådan.
-
-   ![](assets/journey-sandbox7.png)
-
-1. Klicka på knappen **Slutför** i det övre högra hörnet för att börja kopiera paketet till målsandlådan. Kopieringsprocessen varierar beroende på hur komplicerad resan är och hur många objekt som behöver kopieras.
-
-1. Klicka på importjobbet för att granska kopieringsresultatet:
-
-   * Klicka på **Visa importerade objekt** om du vill visa varje kopierat objekt.
-   * Klicka på **Visa importinformation** för att kontrollera importresultaten för varje objekt.
-
-   ![](assets/journey-sandbox8.png)
-
-1. Få åtkomst till målsandlådan och kontrollera alla kopierade objekt noggrant.
+Kopieringsprocessen utförs via en **paketexport och import** mellan käll- och målsandlådorna. Detaljerad information om hur du exporterar objekt och importerar dem till en målsandlåda finns i det här avsnittet: [Kopiera objekt till en annan sandlåda](../configuration/copy-objects-to-sandbox.md)

@@ -4,34 +4,14 @@ description: Läs om innehållskortet i Journey Optimizer
 topic: Content Management
 role: User
 level: Beginner
-badge: label="Begränsad tillgänglighet" type="Informative"
-hide: true
-hidefromtoc: true
-source-git-commit: 8a902298bbbac5689b4f84266dd9c9027e45fad5
+source-git-commit: 12cf3f9ed82350dd55b74de4596e10be9d5654ef
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '104'
 ht-degree: 0%
 
 ---
 
 # Kom igång med innehållskort {#get-started-content-card}
-
->[!BEGINSHADEBOX]
-
-**Innehållsförteckning**
-
-* **Kom igång med innehållskort**
-* [Krav för innehållskort](content-card-configuration-prereq.md)
-* [Konfigurera innehållskortskanal i Journey Optimizer](content-card-configuration.md)
-* [Skapa innehållskort](create-content-card.md)
-* [Utforma innehållskort](design-content-card.md)
-* [Rapport om innehållskort](content-card-report.md)
-
->[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->Innehållskort är för närvarande bara tillgängliga för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
 Innehållskort är en ny funktion för digitala meddelanden i Adobe Journey Optimizer som levererar personaliserat och engagerande innehåll direkt inifrån mobilappar och webbplatser. Till skillnad från traditionella push-meddelanden integreras Content Cards smidigt i användargränssnittet med permanenta, icke-påträngande uppdateringar som förbättrar användarinteraktionen och upplevelsen.
 

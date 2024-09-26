@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: aad4e08a-3369-454d-9e32-974347a3b393
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: dd4173698d7034173b7ae9f44afec397d62a6f78
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '375'
 ht-degree: 1%
 
 ---
@@ -49,6 +49,10 @@ Du måste kontrollera varningar i den övre delen av redigeraren. Vissa av dem �
 > För bättre leverans bör du alltid använda telefonnumren i de format som stöds av leverantören. Twilio och Sinch har till exempel bara stöd för telefonnummer i E.164-format.
 
 ## Skicka push-meddelanden{#push-send}
+
+>[!IMPORTANT]
+>
+>Från och med versionen från september kan ni med en ny kampanjupplevelse och upplevelse av aktivering av resor hantera hela godkännandeprocessen och säkerställa att kampanjer och resor granskas noggrant och godkänns av lämpliga intressenter innan de publiceras. Den här funktionen är tillgänglig med begränsad tillgänglighet. [Läs mer](../test-approve/gs-approval.md)
 
 När ditt push-meddelande är klart slutför du konfigurationen av din [resa](../building-journeys/journey-gs.md) eller [kampanj](../campaigns/create-campaign.md) för att skicka det.
 

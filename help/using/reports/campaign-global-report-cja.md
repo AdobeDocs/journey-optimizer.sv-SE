@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: 51cbe27f-3f3f-471e-a5d9-e3a88fcfdd68
-source-git-commit: b80d794f3782056a10310c65144a8eecbddaaf3e
+source-git-commit: 12cf3f9ed82350dd55b74de4596e10be9d5654ef
 workflow-type: tm+mt
-source-wordcount: '3897'
+source-wordcount: '4234'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,7 @@ Sidan **Kampanjrapport** visas med följande flikar beroende på vald kanal:
 * [Push-meddelande](#push-notification)
 * [Direktmeddelande](#direct-mail)
 * [Webb](#web)
+* [Innehållskort](#content-card)
 
 Mer information om Customer Journey Analytics Workspace och hur du filtrerar och analyserar data finns på [den här sidan](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
 
@@ -784,5 +785,73 @@ Tabellen **[!UICONTROL Tracked link URLs]** innehåller en omfattande översikt 
 * **[!UICONTROL Displays]**: Antal gånger som meddelandet öppnades.
 
 * **[!UICONTROL Unique displays]**: Det antal gånger som meddelandet öppnades tas ingen hänsyn till flera interaktioner för en profil.
+
++++
+
+## Innehållskort {#content-card}
+
+### Visa och klicka på trend {#display-click}
+
+![](assets/content-card-report-1.png)
+
+Diagrammen **[!UICONTROL Display & click trend]** hjälper dig att förstå både meddelandets övergripande räckvidd och antalet unika profiler som är kopplade till det.
+
++++ Läs mer om Visa och klicka på mätvärden
+
+* **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på på i innehållskortet.
+
+* **[!UICONTROL Displays]**: Antal gånger som meddelandet öppnades.
+
+* **[!UICONTROL Unique displays]**: Det antal gånger som meddelandet öppnades tas ingen hänsyn till flera interaktioner för en profil.
+
++++
+
+### Spårningsdata {#tracking-data}
+
+![](assets/content-card-report-2.png)
+
+Tabellen **[!UICONTROL Tracking data]** innehåller en detaljerad ögonblicksbild av profilaktiviteten som är kopplad till dina innehållskort, vilket ger viktiga insikter i engagemanget och innehållskortets effektivitet.
+
++++ Läs mer om att spåra datamätningar
+
+* **[!UICONTROL People]**: Antal användarprofiler som kvalificerar som målprofiler för dina innehållskort.
+
+* **[!UICONTROL Click through rate (CTR)]**: Procentandel användare som interagerade med innehållskortet.
+
+* **[!UICONTROL Clicks]**: Antal gånger som ett innehåll har klickats på på ditt innehållskort.
+
+* **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll på ditt innehållskort.
+
+* **[!UICONTROL Displays]**: Antal gånger som meddelandet öppnades.
+
+* **[!UICONTROL Unique displays]**: Det antal gånger som meddelandet öppnades tas ingen hänsyn till flera interaktioner för en profil.
+
++++
+
+### Spårade etiketter {#tracked-labels}
+
+Tabellen **[!UICONTROL Tracked labels]** innehåller en omfattande översikt över länketiketterna på dina innehållskort, som visar de som genererar den högsta besökstrafiken. Med den här funktionen kan du identifiera och prioritera de mest populära länkarna.
+
++++ Läs mer om mätvärden för spårade etiketter
+
+* **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i dina innehållskort.
+
+* **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina innehållskort.
+
+* **[!UICONTROL Displays]**: Antal gånger som meddelandet öppnades.
+
+* **[!UICONTROL Unique displays]**: Det antal gånger som meddelandet öppnades tas ingen hänsyn till flera interaktioner för en profil.
+
++++
+
+### URL för spårad länk {#tracked-link-url}
+
+Tabellen **[!UICONTROL Tracked link URLs]** innehåller en omfattande översikt över de URL:er på dina innehållskort som lockar till sig den högsta besökstrafiken. På så sätt kan ni identifiera och prioritera de populäraste länkarna och öka er förståelse för hur proffsen interagerar med specifikt innehåll på era innehållskort.
+
++++ Läs mer om URL:er för spårade länkar
+
+* **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i dina innehållskort.
+
+* **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina innehållskort.
 
 +++

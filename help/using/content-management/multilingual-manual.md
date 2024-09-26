@@ -10,9 +10,9 @@ level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: 6244d717-fbd6-468e-9164-60451d0d62f0
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: dd4173698d7034173b7ae9f44afec397d62a6f78
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '599'
 ht-degree: 1%
 
 ---
@@ -139,6 +139,10 @@ När du har konfigurerat ditt flerspråkiga innehåll är du redo att skapa en k
    ![](assets/multilingual-campaign-8.png)
 
 Nu kan ni aktivera kampanjen eller resan. När ni har skickat dem kan ni mäta effekten av er flerspråkiga resa eller kampanj i rapporter.
+
+>[!IMPORTANT]
+>
+>Från och med versionen från september kan ni med en ny kampanjupplevelse och upplevelse av aktivering av resor hantera hela godkännandeprocessen och säkerställa att kampanjer och resor granskas noggrant och godkänns av lämpliga intressenter innan de publiceras. Den här funktionen är tillgänglig med begränsad tillgänglighet. [Läs mer](../test-approve/gs-approval.md)
 
 <!--
 # Create a multilingual journey {#create-multilingual-journey}

@@ -4,34 +4,14 @@ description: Lär dig designa innehåll för innehållskort
 topic: Content Management
 role: User
 level: Beginner
-badge: label="Begränsad tillgänglighet" type="Informative"
-hide: true
-hidefromtoc: true
-source-git-commit: 8a902298bbbac5689b4f84266dd9c9027e45fad5
+source-git-commit: 12cf3f9ed82350dd55b74de4596e10be9d5654ef
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '453'
 ht-degree: 1%
 
 ---
 
 # Utforma innehåll för innehållskort {#design-content-card}
-
->[!BEGINSHADEBOX]
-
-**Innehållsförteckning**
-
-* [Kom igång med innehållskort](get-started-content-card.md)
-* [Krav för innehållskort](content-card-configuration-prereq.md)
-* [Konfigurera innehållskortskanal i Journey Optimizer](content-card-configuration.md)
-* [Skapa innehållskort](create-content-card.md)
-* **Utforma innehållskort**
-* [Rapport om innehållskort](content-card-report.md)
-
->[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->Innehållskort är för närvarande bara tillgängliga för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
 Utvecklingskonstruktionen för kort är en formulärbaserad redigeringsupplevelse som ger marknadsförarna grundläggande indata som kan användas för att återges av utvecklaren.
 

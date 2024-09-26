@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: e28c038b-49ed-4685-bfe6-514116eb0711
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: dd4173698d7034173b7ae9f44afec397d62a6f78
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '776'
 ht-degree: 0%
 
 ---
@@ -82,6 +82,10 @@ Du kan även öppna den i standardwebbläsaren eller kopiera test-URL:en och kli
 Detaljerad information om hur du väljer testprofiler och förhandsgranskar innehåll finns i avsnittet [Innehållshantering](../content-management/preview-test.md).
 
 ## Aktivera webbkampanjen {#activate-web-campaign}
+
+>[!IMPORTANT]
+>
+>Från och med versionen från september kan ni med en ny kampanjupplevelse och upplevelse av aktivering av resor hantera hela godkännandeprocessen och säkerställa att kampanjer och resor granskas noggrant och godkänns av lämpliga intressenter innan de publiceras. Den här funktionen är tillgänglig med begränsad tillgänglighet. [Läs mer](../test-approve/gs-approval.md)
 
 När du har definierat inställningarna för din [webbkampanj](#configure-web-campaign) och har redigerat ditt innehåll med [webbdesignern](edit-web-content.md#work-with-web-designer) kan du granska och aktivera din webbkampanj. Följ stegen nedan.
 

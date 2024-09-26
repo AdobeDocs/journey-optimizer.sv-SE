@@ -9,7 +9,7 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: händelse, resa, verksamhet, konfiguration
 exl-id: 39eb40e1-d7f5-4a8e-9b64-c620940d5ff2
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: 18296fe54dcef6620d4f74374848199368f01475
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 7%

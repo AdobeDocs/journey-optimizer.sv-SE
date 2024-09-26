@@ -9,14 +9,18 @@ role: User
 level: Intermediate
 keywords: kampanj, granskning, validering, aktivering, aktivering, optimering
 exl-id: 7c4afc98-0d79-4e26-90f8-558bac037169
-source-git-commit: d4ecfecdc74c26890658d68d352c36b75f7c9039
+source-git-commit: dd4173698d7034173b7ae9f44afec397d62a6f78
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '288'
 ht-degree: 3%
 
 ---
 
 # Granska och aktivera en kampanj {#review-activate}
+
+>[!IMPORTANT]
+>
+>Från och med versionen från september kan ni med en ny kampanjupplevelse och upplevelse av aktivering av resor hantera hela godkännandeprocessen och säkerställa att kampanjer och resor granskas noggrant och godkänns av lämpliga intressenter innan de publiceras. Den här funktionen är tillgänglig med begränsad tillgänglighet. [Läs mer](../test-approve/gs-approval.md)
 
 När kampanjen har konfigurerats måste du granska dess parameter och innehåll innan du aktiverar den. Följ dessa steg för att göra detta:
 

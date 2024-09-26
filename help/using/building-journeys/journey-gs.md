@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: a7234350c0ca66d033bbbd77c1b14063147468cf
+source-git-commit: 18296fe54dcef6620d4f74374848199368f01475
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 7%
@@ -60,7 +60,7 @@ Klicka på **[!UICONTROL Journeys]** på menyn RESURSHANTERING. Det finns två f
 * **Bearbetade profiler**: totalt antal profiler som har bearbetats under de senaste 24 timmarna
 * **Live-resor**: Totalt antal live-resor med trafik under de senaste 24 timmarna. Live-resor omfattar **Unitary-resor** (händelsebaserade) och **Batch-resor** (läs målgrupp).
 * **Felfrekvens**: förhållandet mellan alla felaktiga profiler och det totala antalet profiler som har angetts under de senaste 24 timmarna.
-* **Ignorera frekvens**: förhållandet mellan alla ignorerade profiler och det totala antalet profiler som har angetts under de senaste 24 timmarna. En ignorerad profil representerar en person som inte är berättigad att delta i resan, till exempel på grund av ett felaktigt namnutrymme eller på grund av regler för återinträde.
+* **Ignorera frekvens**: förhållandet mellan alla ignorerade profiler och det totala antalet profiler som har angetts under de senaste 24 timmarna. En ignorerad profil representerar en person som inte är berättigad att delta i resan, till exempel på grund av ett felaktigt namnutrymme eller på grund av återinträdesregler.
 
 >[!NOTE]
 >

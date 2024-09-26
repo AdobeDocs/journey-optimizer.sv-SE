@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: dd4173698d7034173b7ae9f44afec397d62a6f78
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1072'
 ht-degree: 1%
 
 ---
@@ -113,6 +113,10 @@ Följ stegen nedan för att visa en förhandsgranskning av din ändrade kodbaser
     When copying the test URI, the content displayed is the one personalized for the test profile used when the content simulation was generated in [!DNL Journey Optimizer].-->
 
 ## Aktivera den kodbaserade kampanjen {#activate-code-based-campaign}
+
+>[!IMPORTANT]
+>
+>Från och med versionen från september kan ni med en ny kampanjupplevelse och upplevelse av aktivering av resor hantera hela godkännandeprocessen och säkerställa att kampanjer och resor granskas noggrant och godkänns av lämpliga intressenter innan de publiceras. Den här funktionen är tillgänglig med begränsad tillgänglighet. [Läs mer](../test-approve/gs-approval.md)
 
 När du har definierat din kodbaserade kampanj och redigerat innehållet som du vill med den [kodbaserade redigeraren](#edit-code) kan du granska och aktivera den. Följ stegen nedan.
 

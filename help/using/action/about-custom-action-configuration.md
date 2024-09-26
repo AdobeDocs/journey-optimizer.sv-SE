@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: b86a459681cda66596e0658b9f703185821aceea
+source-git-commit: 9f990d2b311237e49c3b93201cd7e9c2b02facef
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1517'
 ht-degree: 2%
 
 ---
@@ -149,7 +149,7 @@ Samuell TLS-autentisering (mTLS) stöds i anpassade åtgärder. Det krävs ingen
 
 Du kan definiera nyttolastparametern så som beskrivs nedan:
 
-1. I avsnittet **[!UICONTROL Request]** klistrar du in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten. Det här fältet är valfritt och endast tillgängligt för anropsmetoder för POST och PUT.
+1. I avsnittet **[!UICONTROL Request]** klistrar du in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten. Det här fältet är valfritt och endast tillgängligt för anropsmetoder för POST och PUT. <!--DOCAC-10562 - Enable the **[!UICONTROL Allow NULL values]** option to keep Null values in the external call. Note that sending arrays of int, string, etc. with Null values within is not fully supported. For example the following array of integers [1, null, 2, 3] is sent as [1, 2, 3] even if this option is checked.-->
 
 1. Klistra in ett exempel på nyttolasten som returneras av anropet i avsnittet **[!UICONTROL Response]**. Det här fältet är valfritt och tillgängligt för alla anropsmetoder. Mer information om hur du använder API-anropssvar i anpassade åtgärder finns på [den här sidan](../action/action-response.md).
 
@@ -157,7 +157,8 @@ Du kan definiera nyttolastparametern så som beskrivs nedan:
 
 >[!NOTE]
 >
->Nyttolastexemplet får inte innehålla null-värden. Fältnamn i nyttolasten får inte innehålla &quot;.&quot; tecken. De kan inte börja med tecknet &quot;$&quot;.
+>Fältnamn i nyttolasten får inte innehålla &quot;.&quot; tecken. De kan inte börja med tecknet &quot;$&quot;.
+>
 
 ![](assets/customactionpayloadmessage2.png)
 
@@ -171,3 +172,9 @@ I fältkonfigurationen måste du:
 
    * **Variabel** innebär att parameterns värde varierar. Marknadsförare som använder den här anpassade åtgärden under en resa kan skicka det värde de vill ha eller ange var värdet för den här parametern ska hämtas (t.ex. från händelsen, från Adobe Experience Platform). I så fall är fältet till höger om växlingskonstanten/variabeln den etikett marknadsförarna kommer att se under resan för att namnge den här parametern.
 
+<!--DOCAC-10562 - For optional parameters, enable the **[!UICONTROL Is optional]** option at the end of the line. By checking this option, you mark the parameter as non-mandatory, and let the journey practitioners choose to fill it or not when authoring that custom action in a journey.-->
+
+>[!NOTE]
+>
+>Om du konfigurerar valfria parametrar samtidigt som du tillåter Null-värden, skickas parametrar som inte fyllts i av en reseadministratör som Null.
+>
