@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
-source-git-commit: 0cdf61bc97baaa8df08822d62a5b9f658c44c117
+source-git-commit: 7f21098d5ae157f1c0d3de3aa584564c6f73310a
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Du har tillgång till följande för din direktresa:
 * **[!UICONTROL Discarded profiles]**: Totalt antal personer som tagits bort från resan av någon av följande orsaker:
 
    * För **målgruppskvalificeringsaktiviteter** kan ett utkast tas bort om det förväntade verbet för målgruppskompetens inte matchar den resa som har tagits emot (t.ex. &quot;avslutad&quot; i stället för &quot;realiserad&quot;).
-   * För **händelseutlösta** resor kan ett utkast göras om personen försökte återansluta till resan för tidigt eller när återinträde inte var tillåtet.
+   * För **händelseutlösta** resor kan ett utkast göras om personen försökte att återresa in på resan för tidigt eller när återinträde inte var tillåtet.
    * På **återkommande** resor räknas ett kasserat värde för varje upprepning om personen redan befinner sig på resan och återanmälningsprincipen inte är inställd på &quot;tvinga återinträde&quot;.
    * På **Läsa målgrupp**-aktiviteter inträffar ett ignoreringsförsök om ingen identitet har angetts för den exporterade personen eller om det mottagna ID-namnområdet inte matchar det förväntade för resan.
 

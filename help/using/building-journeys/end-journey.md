@@ -8,7 +8,7 @@ role: User
 level: Intermediate
 keywords: återinträde, resa, slut, live, stopp
 exl-id: ea1ecbb0-12b5-44e8-8e11-6d3b8bff06aa
-source-git-commit: 18296fe54dcef6620d4f74374848199368f01475
+source-git-commit: 7f21098d5ae157f1c0d3de3aa584564c6f73310a
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
@@ -22,7 +22,7 @@ En resa kan ta slut för en individ i två specifika sammanhang:
 * Personen kommer till den sista aktiviteten i en bana.
 * Personen kommer till en **villkorsaktivitet** (eller en **Wait**-aktivitet med ett villkor) och matchar inte något av villkoren.
 
-Personen kan sedan återinträda i resan om återinträde tillåts. Se [den här sidan](../building-journeys/journey-properties.md#entrance)
+Personen kan sedan återkomma till resan om återinträde tillåts. Se [den här sidan](../building-journeys/journey-properties.md#entrance)
 
 Om du vill avsluta en direktresa rekommenderar vi att du stänger den. Nya kunders ankomst till resan kommer då att blockeras. Kunder som redan är med på resan kan uppleva det hela tiden. Se [det här avsnittet](../building-journeys/journey.md#close-journey)
 

@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
-source-git-commit: fbe8d14ba81e168ecfb141d54bf3009a2565751c
+source-git-commit: 7f21098d5ae157f1c0d3de3aa584564c6f73310a
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1975'
 ht-degree: 0%
 
 ---
@@ -22,12 +22,6 @@ ht-degree: 0%
 >id="ajo_journey_properties"
 >title="Resans egenskaper"
 >abstract="I det här avsnittet visas resans egenskaper. Som standard är skrivskyddade parametrar dolda. Vilka inställningar som är tillgängliga beror på resans status, på dina behörigheter och din produktkonfiguration."
-
->[!CONTEXTUALHELP]
->id="ajo_journey_exit_criterias"
->title="Utträdeskriterier för resor"
->abstract="I det här avsnittet visas alternativen för avslutningskriterier. Du kan skapa en eller flera regler för avslutningskriterier för din resa."
-
 
 ## Åtkomst till egenskaperna för en resa {#access-properties}
 
@@ -57,9 +51,9 @@ Läs mer om tekniska fält som rör en resa för en viss profil och hur du anvä
 
 Profilinmatningsläget definieras på resenivån i den högra konfigurationsrutan. Inställningarna beskrivs nedan.
 
-Profilingångshantering beror på typen av resor. Läs mer om hantering av profilentré och återinträde på webben i [den här sidan](entry-management.md).
+Profilingångshantering beror på typen av resor. Läs mer om hantering av profilinträde och återinträde på webben på [den här sidan](entry-management.md).
 
-### Tillåt återinträde  {#allow-re-entrance}
+### Tillåt återinträde  {#allow-reentrance}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_entrance"
@@ -69,15 +63,15 @@ Profilingångshantering beror på typen av resor. Läs mer om hantering av profi
 
 Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet **Tillåt återinträde** för engångsresor, till exempel om du vill erbjuda en engångsgåva när en person går till en affär.
 
-### Vänteperiod för återinträde  {#re-entrance-wait}
+### Vänteperiod för återinträde  {#reentrance-wait}
 
 >[!CONTEXTUALHELP]
->id="ajo_journey_properties_re-entrance_wait"
+>id="ajo_journey_properties_reentrance_wait"
 >title="Vänteperiod för återinträde"
->abstract=" Ange en väntetid innan du tillåter att en profil går in på resan igen på en resa. Detta förhindrar att användarna återkommer till resan under en viss tid. Maximal varaktighet: 90 dagar."
+>abstract="Ange en väntetid innan du tillåter att en profil går in på resan igen på en resa. Detta förhindrar att användarna kommer in på resan igen under en viss tid. Maximal varaktighet: 90 dagar."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
 
-När alternativet **Tillåt återinträde** är aktiverat visas fältet **Återinträde av vänteperiod**. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 90 dagar.
+När alternativet **Tillåt återinträde** är aktiverat visas fältet **Återkommande vänteperiod**. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 90 dagar.
 
 
 ## Hantera åtkomst {#manage-access}
@@ -107,7 +101,7 @@ Mer information om hantering av tidszoner finns på [den här sidan](../building
 
 Du kan definiera ett **startdatum**. Om du inte har angett någon sådan kommer den att definieras automatiskt vid publiceringstidpunkten.
 
-Du kan också lägga till ett **slutdatum**. Detta gör att profiler kan avslutas automatiskt när datumet nås. Om inget slutdatum anges kan profiler stanna tills den [globala resetidsgränsen](#global_timeout) (som vanligtvis är 91 dagar). Det enda undantaget är återkommande läspmålsresor med **Tvinga återinträde vid upprepning** aktiverat, som slutar vid startdatumet för nästa förekomst.
+Du kan också lägga till ett **slutdatum**. Detta gör att profiler kan avslutas automatiskt när datumet nås. Om inget slutdatum anges kan profiler stanna tills den [globala resetidsgränsen](#global_timeout) (som vanligtvis är 91 dagar). Det enda undantaget är återkommande läsmålgruppsresor med **Tvinga återinträde vid upprepning** aktiverat, som slutar vid startdatumet för nästa förekomst.
 
 ## Timeout {#timeout}
 
@@ -133,7 +127,7 @@ Utöver den [timeout](#timeout_and_error) som används i reseaktiviteter använd
 
 Den här globala tidsgränsen avbryter förloppet för personer på resan **91 dagar** efter att de har gått in. Det innebär att en persons resa inte kan vara längre än 91 dagar. Efter denna timeout-period tas personens data bort. Individer som fortfarande flyter i resan i slutet av timeoutperioden kommer att stoppas och de kommer inte att beaktas vid rapporteringen. Du kan därför se fler människor komma in på resan än att gå ut.
 
-På grund av den 91-dagars tidsgränsen för resan kan vi inte säkerställa att återinträdesspärren fungerar mer än 91 dagar när resan inte tillåts. Eftersom vi tar bort all information om personer som tagit sig in på resan 91 dagar efter ankomsten, kan vi inte veta vem som tagit sig in tidigare, mer än 91 dagar sedan.
+På grund av den 91-dagars tidsgränsen för resor, när återinträde inte tillåts, kan vi inte säkerställa att återinträdesspärren fungerar mer än 91 dagar. Eftersom vi tar bort all information om personer som tagit sig in på resan 91 dagar efter ankomsten, kan vi inte veta vem som tagit sig in tidigare, mer än 91 dagar sedan.
 
 En enskild person kan bara förlägga en vänteaktivitet om han eller hon har tillräckligt med tid kvar på resan för att slutföra väntetiden innan tidsgränsen på 91 dagar för en resa är slut. Läs [den här sidan](../building-journeys/wait-activity.md).
 
@@ -258,3 +252,55 @@ Resan använder sammanfogningsprinciper när profildata hämtas från Adobe Expe
 Resan kommer att respektera den sammanslagningspolicy som används under hela resan. Om flera målgrupper används i en resa (t.ex. i&quot;inAudience&quot;-funktioner), vilket skapar inkonsekvenser med den sammanfogningspolicy som används under resan, uppstår därför ett fel och publiceringen blockeras. Men om en inkonsekvent målgrupp används i meddelandepersonalisering visas ingen varning trots inkonsekvensen. Därför rekommenderar vi att du kontrollerar vilken sammanfogningspolicy som är kopplad till målgruppen när den här målgruppen används i meddelandepersonalisering.
 
 Mer information om sammanfogningsprinciper finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
+
+
+## Avslutningskriterier {#exit-criteria}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_exit_criterias"
+>title="Utträdeskriterier för resor"
+>abstract="I det här avsnittet visas alternativen för avslutningskriterier. Du kan skapa en eller flera regler för avslutningskriterier för din resa."
+
+### Beskrivning
+
+Marknadsförarna vill ofta ta bort profiler från en resa när de inte längre uppfyller kundens syfte. Detta uppnås med **globala avslutningskriterier**, som är nära kopplade till målhantering.
+
+**Exempel på användning:**
+
+En marknadsförare har en marknadsföringsresa som har en serie kommunikationer. Alla dessa meddelanden syftar till att få kunden att göra ett inköp. Så snart köpet är klart bör kunden inte få resten av meddelandena i serien. Genom att definiera ett avslutningskriterium tas alla profiler som har gjort ett köp bort från resan.
+
+### Konfiguration och användning
+
+Avslutskriterier ställs in på resenivå. En resa kan ha flera exitkriterier. När du har angett flera avslutsvillkor utförs utvärderingen uppifrån och ned med en ELLER-logik. Om du har avslutningskriterium n o.1 och avslutningskriterium n o.2 utvärderas det som n o.m. 1 **eller** n o.2. Kriterierna utvärderas under varje steg av resan.
+
+Så här **skapar du** och slutvillkor:
+
+* Klicka på följande ikon ![](assets/exitcriteria_icon.png){width="40%" align="left"} till höger.
+* Klicka på knappen **Lägg till avslutsvillkor**.
+
+![](assets/exitcriteria.png){width="40%" align="left"}
+
+* Du kan lägga till flera avslutningskriterier.
+* Ange en **etikett** och välj om ditt avslutsvillkor är baserat på en händelse eller en målgrupp.
+
+### Avslutningskriterier baserade på en händelse
+
+Välj endast enställig händelse.
+
+![](assets/exitcriteria_event.png){width="40%" align="left"}
+
+### Avslutningskriterier baserade på en målgrupp
+
+Välj en målgrupp.
+
+![](assets/exitcriteria_audience.png){width="40%" align="left"}
+
+Obs! Det kan ta upp till 10 minuter innan avslutningskriterierna används med en målgrupp.
+
+### Begränsningar och begränsningar
+
+* Avslutningskriterier definieras i utkastläge
+* Samstämmighet mellan händelser och händelsebaserade kriterier för utträde på resan
+
+
+
