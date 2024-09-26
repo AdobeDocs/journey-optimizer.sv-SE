@@ -8,9 +8,9 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: uttryck, syntax, operatorer, redigerare, resa
 exl-id: 706e2e02-9bd9-46e7-a73d-dda3c9ae4ba8
-source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
+source-git-commit: 20dfd2a0c5e660601e6a0acea661eadfd42423d7
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '551'
 ht-degree: 5%
 
 ---
@@ -41,6 +41,10 @@ not (@event{LobbyBeacon.endUserIDs._experience.emailid.id}=="example@adobe.com")
 * När du använder en multiplikation (`*`) måste båda åtgärdsfälten ha samma typ, antingen heltal eller decimal. Exempel:
    * följande exempel är korrekt: `3.0 * 4.0`
    * `3 * 4.0` leder till ett fel
+
+* När du använder operatorn `+` måste uttrycket kapslas in mellan parenteser. Exempel:
+   * `toDateTimeOnly(toDateTime((currentTimeInMillis()) + 1))` är korrekt
+   * `toDateTimeOnly(toDateTime(currentTimeInMillis() + 1))` leder till ett fel
 
 ## Logisk  {#logical}
 
