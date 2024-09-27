@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: d1f9b9ef52727877a43b8c09cb38c8b634261584
+source-git-commit: aeafadeac819d25518de879747866a71d032b4b0
 workflow-type: tm+mt
-source-wordcount: '2049'
+source-wordcount: '2055'
 ht-degree: 25%
 
 ---
@@ -672,6 +672,7 @@ ht-degree: 25%
    + Hantera medgivande {#consent}
       + [Hantera avanmälan](using/privacy/opt-out.md)
       + [Arbeta med policyer för samtycke](using/action/consent.md)
+      + [Arbeta med policyer för samtycke](using/action/consent-restricted.md)
    + [Dataförvaltning](using/action/action-privacy.md)
+   + [Dataförvaltning](using/action/action-privacy-restricted.md)
    + [Konfigurera och hantera kundhanterade nycklar](using/privacy/cmk.md)
-

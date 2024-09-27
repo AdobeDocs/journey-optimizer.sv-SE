@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: c609694693f11c77bc61ab31f0e7851262aadcce
+source-git-commit: aeafadeac819d25518de879747866a71d032b4b0
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1453'
 ht-degree: 4%
 
 ---
@@ -273,13 +273,6 @@ Så här byter du språk:
 >id="ajo_email_locking_read_only"
 >title="Skrivskyddad"
 >abstract="Det här innehållet är skrivskyddat och kan inte ändras."
-
-<!--GOVERNANCE POLICIES-->
-
->[!CONTEXTUALHELP]
->id="ajo_data_governance_policy_violation"
->title="Överträdelse av databehandlingspolicy"
->abstract="Om systemet identifierar ett begränsat fält i en resa/kampanj, eller en anpassad åtgärd, visas ett fel som hindrar dig från att publicera det. Använd datalänksdiagrammet i den här dialogrutan för att förstå vilka andra konfigurationsändringar som behöver göras innan du kan aktivera din resa eller kampanj."
 
 <!--APPROVAL POLICIES-->
 
