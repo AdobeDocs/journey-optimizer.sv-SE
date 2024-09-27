@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: IP, leverans
 exl-id: 393f051d-b86d-4b4f-b564-7a9ae3a5d4b8
-source-git-commit: d880d38784c2687f9710e6733c1489601e6760ba
+source-git-commit: 5e0d683bf52df4992773c6147b9e418241777e5d
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '245'
 ht-degree: 2%
 
 ---
@@ -22,15 +22,11 @@ Med [!DNL Journey Optimizer] kan du enkelt utföra arbetsflöden för IP-uppvär
 
 För att undvika att markeras som skräppost kan du öka volymen som skickas stegvis med funktionen för IP-värmerappning. Med det här nya alternativet på menyn **[!UICONTROL Administration]** kan du göra det enklare på ett konsoliderat sätt i stället för att skapa komplexa dagliga resor.
 
-<!--➡️ [Learn how to create and execute an IP warmup plan in this video](#video)-->
+➡️ [Lär dig hur du skapar och kör en IP-uppvärmningsplan i den här videon](#video)
 
 >[!AVAILABILITY]
 >
 >Den här funktionen kan bara aktiveras i sandlådor av produktionstyp.
->
->Det är inte tillgängligt för organisationer som har köpt tillägget **Hälsovårdssköld** eller **sekretess och säkerhetssköld** för Adobe.
-
-
 
 <!--
 Benefits

@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 12c3c1e2d6dabdc5c9b741742fd36c35c8b0992c
+source-git-commit: 5e0d683bf52df4992773c6147b9e418241777e5d
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1103'
 ht-degree: 9%
 
 ---
@@ -243,3 +243,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
   >[!CAUTION]
   >
   >Tänk på att du gör riktiga API-anrop till slutpunkterna när du använder den interaktiva API-funktionen på dokumentationssidorna. Tänk på detta när du experimenterar med produktionssandlådor.
+
+**Konfiguration**
+
+* IP-beredskapsplaner - Den här funktionen är nu tillgänglig för alla kunder, inklusive organisationer som har köpt tillägget **Healthcare Shield** eller **Privacy and Security Shield** på Adobe. [Läs mer](../configuration/ip-warmup-gs.md)
