@@ -9,7 +9,7 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: politik, styrning, plattform, hälso- och sjukvård, samtycke
 exl-id: 01ca4b3e-3778-4537-81e9-97ef92c9aa9e
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: f61bd7d8d03ba2fd4e92c277f0cbfb730b3703c1
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 0%
