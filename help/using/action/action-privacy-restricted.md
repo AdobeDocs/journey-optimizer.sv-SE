@@ -11,7 +11,7 @@ keywords: data, styrning, DULE, etiketter, märkning, plattform, policy
 hide: true
 hidefromtoc: true
 badgePrivateBeta: label="Private Beta" type="Informative"
-source-git-commit: aeafadeac819d25518de879747866a71d032b4b0
+source-git-commit: 7384bcbba3e9793018628a66bb683c381d00e87a
 workflow-type: tm+mt
 source-wordcount: '1303'
 ht-degree: 0%
@@ -90,7 +90,7 @@ Innan resan eller kampanjen aktiveras verifieras om marknadsföringsåtgärden i
 
 Om systemet identifierar ett begränsat fält visas ett fel som hindrar dig från att publicera resan eller kampanjen. [Lär dig hur du upptäcker brott mot styrningsprinciper](#violation)
 
-![](../privacy/assets/governance-policy-schema.png){zoomable="yes"}
+![](assets/governance-policy-schema.png){zoomable="yes"}
 
 *Analyssteg för policyöverträdelse för resor och kampanjer*
 
@@ -126,7 +126,7 @@ Låt oss ta ett exempel på det blodtypsfält som du behöver begränsa från at
 
 Om ett av fälten med etiketten _ePHI1_ (blodet i vårt exempel) identifieras i åtgärdsparametrarna visas ett fel som förhindrar dig från att publicera resan. [Lär dig hur du upptäcker brott mot styrningsprinciper](#violation)
 
-![](../privacy/assets/governance-policy-custom-action-schema.png){zoomable="yes"}
+![](assets/governance-policy-custom-action-schema.png){zoomable="yes"}
 
 *Analyssteg för policyöverträdelse för anpassade åtgärder för resor*
 
