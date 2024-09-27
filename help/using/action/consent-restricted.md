@@ -11,9 +11,9 @@ keywords: politik, styrning, plattform, hälso- och sjukvård, samtycke
 hide: true
 hidefromtoc: true
 badgePrivateBeta: label="Private Beta" type="Informative"
-source-git-commit: aeafadeac819d25518de879747866a71d032b4b0
+source-git-commit: b783832bc43e6a12d97b210e7d4441381eac63a2
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1248'
 ht-degree: 0%
 
 ---
@@ -128,21 +128,6 @@ För vissa typer av viktig kommunikation, t.ex. ett transaktionsmeddelande som s
 De andra stegen för att konfigurera en anpassad åtgärd beskrivs i [det här avsnittet](../action/about-custom-action-configuration.md#consent-management).
 
 ### Utnyttja policyer för samtycke när du lägger till en anpassad åtgärd under en resa {#consent-journey}
-
->[!CONTEXTUALHELP]
->id="ajo_consent_required_marketing_action_canvas"
->title="Obligatorisk marknadsföringsåtgärd"
->abstract="En nödvändig marknadsföringsåtgärd definieras när en anpassad åtgärd skapas. Denna nödvändiga marknadsföringsåtgärd kan inte tas bort från åtgärden eller ändras."
-
->[!CONTEXTUALHELP]
->id="ajo_consent_additional_marketing_action_canvas"
->title="Ytterligare marknadsföringsåtgärder"
->abstract="Lägg till ytterligare en marknadsföringsåtgärd utöver den som krävs. Samtyckesprinciper som är relaterade till båda marknadsföringsåtgärderna kommer att verkställas."
-
->[!CONTEXTUALHELP]
->id="ajo_consent_refresh_policies_canvas"
->title="Visualisera medgivandeprinciper som ska gälla vid körning"
->abstract="Marknadsföringsåtgärder lägger in medgivandeprinciper som kombinerar åtgärdsparametrar och individuella profiler för att filtrera bort användare. Hämta den senaste definitionen av dessa profiler genom att klicka på knappen för att uppdatera."
 
 När du lägger till den anpassade åtgärden på en resa kan du hantera samtycke med flera alternativ. Klicka på **Visa skrivskyddade fält** om du vill visa alla parametrar.
 
