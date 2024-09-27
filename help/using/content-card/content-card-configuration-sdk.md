@@ -5,9 +5,9 @@ feature: Channel Configuration
 topic: Content Management
 role: Admin
 level: Experienced
-source-git-commit: 12cf3f9ed82350dd55b74de4596e10be9d5654ef
+source-git-commit: 02c4b61f22591a99824eb727aaccfd0cbe1facfc
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,10 @@ När den första sidan läses in visas sidans standardläge. Om du interagerar m
 
 ## Köra exemplet {#run-sample}
 
-Krav: du måste installera nod och npm. [Läs den här dokumentationen](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+>[!PREREQUISITES]
+>
+>Du måste installera nod och npm. [Läs den här dokumentationen](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+
 
 1. Konfigurera lokala SSL-certifikat för HTTPS. Dessa exempel kräver lokalt signerade SSL-certifikat för att leverera innehåll via HTTPS:
 
