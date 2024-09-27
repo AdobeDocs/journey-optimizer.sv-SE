@@ -5,10 +5,10 @@ description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: 68cf533bb459f33d2ebf951624b9a05910003fbb
+source-git-commit: 12c3c1e2d6dabdc5c9b741742fd36c35c8b0992c
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 18%
+source-wordcount: '392'
+ht-degree: 17%
 
 ---
 
@@ -20,13 +20,19 @@ Få en glimt av de senaste förbättringarna i Journey Optimizer-produkter och -
 
 >[!BEGINTABS]
 
->[!TAB AI Assistant Content Accelerator]
+>[!TAB September-version]
+
+Septemberversionen är nu live, inklusive innehållskort för mobilappar och webbplatser, godkännandepolicyer för resor och kampanjer (LA), globala exitkriterier för resor och mycket mer/
+
+[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
+
+>[!TAB AI-assistenten]
 
 ✨ fördjupa dig i en praktisk upplevelse med vår förhandsgranskning av funktionen [AI Assistant Content Accelerator](../help/using/content-management/gs-generative.md) som gör att du kan utforska dess funktioner först och fullt ut förstår dess funktioner.
 
 [![läs mer](using/assets/do-not-localize/try-it-button.svg)](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}
 
->[!TAB Rapportering med Customer Journey Analytics (Beta)]
+>[!TAB Rapportering med Customer Journey Analytics]
 
 Journey Optimizer rapportering har en förbättrad interoperabilitet med Customer Journey Analytics, standardiserad rapportering på båda plattformarna och förbättrad datakonsekvens och tillförlitlighet.
 
