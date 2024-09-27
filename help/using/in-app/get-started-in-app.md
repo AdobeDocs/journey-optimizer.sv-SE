@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: 51562843-7b50-4eb5-bf79-5ce03f7549cb
-source-git-commit: f759c88ed46d8c13e2844c48a71a2634d9507fd8
+source-git-commit: 6adad3dfc9a0ec23c26be2027b0e1b3e2b757f6a
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,6 @@ ht-degree: 0%
 Meddelanden i appen är meddelanden som kan skickas till användare i appen, och som vägleder dem till specifika intressepunkter. Dessa meddelanden kan användas för olika syften, t.ex. för att marknadsföra nya funktioner, presentera specialerbjudanden eller underlätta för användarna att komma igång. Genom att utnyttja meddelanden i appen kan ni effektivt interagera med er målgrupp och styra dem mot viktiga aspekter av er applikation.
 
 Använd Journey Optimizer för att skapa meddelanden i appen och konfigurera upplevelsealternativ, inklusive meddelandelayout, visning, text och knappalternativ.
-
->[!AVAILABILITY]
->
->Kanalen i appen är inte tillgänglig för organisationer som har köpt tilläggen **Adobe Healthcare Shield** och **Privacy and Security Shield**.
-
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>

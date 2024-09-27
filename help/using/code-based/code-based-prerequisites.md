@@ -6,10 +6,10 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: ac901f88-5fde-4220-88c6-fe05433866cc
-source-git-commit: 59ecb9a5376e697061ddac4cc68f09dee68570c0
+source-git-commit: 6adad3dfc9a0ec23c26be2027b0e1b3e2b757f6a
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 0%
+source-wordcount: '574'
+ht-degree: 1%
 
 ---
 
@@ -23,9 +23,7 @@ Om du vill kunna använda kodbaserade upplevelseåtgärder i [!DNL Journey Optim
 
 >[!CAUTION]
 >
->* Den kodbaserade upplevelsekanalen är inte tillgänglig för organisationer som har köpt tilläggserbjudandena för **Hälsovårdssköld** och **sekretess och säkerhetssköld** för Adobe.
->
->* Du kan bara skapa kodbaserade upplevelser i **kampanjer**. [Läs mer](../campaigns/create-campaign.md#configure).
+>Du kan bara skapa kodbaserade upplevelser i **kampanjer**. [Läs mer](../campaigns/create-campaign.md#configure).
 
 ## Krav för implementering {#implementation-prerequisites}
 

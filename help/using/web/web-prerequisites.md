@@ -6,9 +6,9 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 9509fd67-6d12-4440-aad8-59690936be97
-source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
+source-git-commit: 6adad3dfc9a0ec23c26be2027b0e1b3e2b757f6a
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1110'
 ht-degree: 0%
 
 ---
@@ -28,10 +28,6 @@ Om du vill kunna komma åt och skapa webbsidor i användargränssnittet för [!D
 * I [!DNL Journey Optimizer] kan du för närvarande bara skapa webbupplevelser i **kampanjer**. [Läs mer](../campaigns/create-campaign.md#configure)
 
 * Webbkampanjer för [!DNL Journey Optimizer] har nya profiler som inte har varit engagerade tidigare i andra kanaler som mål. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids. Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
-
->[!AVAILABILITY]
->
->För närvarande är webbkanalen inte tillgänglig för organisationer som har köpt tilläggen **Adobe Healthcare Shield** och **Privacy and Security Shield**.
 
 ## Krav för implementering {#implementation-prerequisites}
 
