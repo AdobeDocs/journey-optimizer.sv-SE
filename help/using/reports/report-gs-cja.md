@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: bfd88d2a-e7b8-4e3b-85a1-4a14b0ba56dc
-source-git-commit: b80d794f3782056a10310c65144a8eecbddaaf3e
+source-git-commit: 40fde856e76d7e2d609ba90f93d4e07fe90f858f
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 0%
+source-wordcount: '340'
+ht-degree: 2%
 
 ---
 
@@ -42,9 +42,18 @@ Journey Optimizer rapportering har en förbättrad interoperabilitet med Custome
 
 ## Förhandskrav {#prerequisites}
 
-* Om du **inte** äger Customer Journey Analytics, eller om du äger den men **inte** har tillgång till någon produktprofil för Customer Journey Analytics, hanteras behörigheter i Journey Optimizer. I det här fallet behöver du bara behörigheten **[!UICONTROL View channel reports]** eller relaterade roller. [Läs mer om Journey Optimizer-behörigheter](../administration/permissions.md)
-* Om du äger Customer Journey Analytics och har tillgång till en produktprofil för Customer Journey Analytics gäller standardbehörigheter för Customer Journey Analytics. Customer Journey Analytics-administratören ansvarar för att upprätthålla korrekt användaråtkomst. [Läs mer om behörigheter i Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control)
+* Om du **inte** äger Customer Journey Analytics, eller om du äger den men **inte** har tillgång till någon produktprofil för Customer Journey Analytics, hanteras behörigheter i Journey Optimizer. I så fall behöver du:
+
+   * **[!UICONTROL View channel reports]** behörighet eller relaterade roller. [Läs mer](../administration/permissions.md)
+
+* Om du **äger** Customer Journey Analytics och har tillgång till en produktprofil för Customer Journey Analytics behöver du:
+
+   * **[!UICONTROL Audience Creation]** och **[!UICONTROL Audience View]** behörigheter för Customer Journey Analytics. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control)
+
+   * **[!UICONTROL Manage profiles]** behörighet för Adobe Journey Optimizer. [Läs mer](../administration/permissions.md)
+
 * Customer Journey Analytics-datavyer måste konfigureras med följande inställning: **Ange som standarddatavy i Adobe Journey Optimizer**. [Läs mer om datavyer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)
+
 * Aktivera alternativet **[!UICONTROL Use new Experience]** i din rapport om du vill få åtkomst till instrumentpanelen för Customer Journey Analytics i Journey Optimizer.
 
   ![](assets/cja-option.png)
