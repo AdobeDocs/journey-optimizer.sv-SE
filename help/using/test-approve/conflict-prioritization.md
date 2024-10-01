@@ -7,9 +7,9 @@ level: Beginner
 badge: label="Beta"
 hide: true
 hidefromtoc: true
-source-git-commit: c609694693f11c77bc61ab31f0e7851262aadcce
+source-git-commit: 0322a13304875c4ba9ae8a9e7710fa2e71e459b3
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '950'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Med Journey Optimizer kan ni kontrollera närhelst det finns en möjlighet att �
 
    >[!NOTE]
    >
-   >Knappen **[!UICONTROL View potential conflicts]** blir tillgänglig att välja så snart du har tilldelat någon av följande inställningar: **[!UICONTROL Start / end date]**, **[!UICONTROL Audience]**, **[!UICONTROL Channel]**, **[!UICONTROL Channel configuration]** och **[!UICONTROL Rule set]**.
+   >Knappen **[!UICONTROL View potential conflicts]** blir tillgänglig att välja så snart du har tilldelat någon av följande inställningar: **[!UICONTROL Start / end date]**, **[!UICONTROL Audience]**, **[!UICONTROL Channel]**, **[!UICONTROL Channel configuration]** och **[!UICONTROL Rule set]**. Se till att du väljer **[!UICONTROL Save]** när du har tilldelat de här inställningarna eftersom knappen inte kan markeras förrän ändringarna har sparats.
 
 1. Fönstret **[!UICONTROL Potential conflicts]** öppnas så att du kan visualisera alla element som överlappar den aktuella resan/kampanjen.
 
@@ -91,7 +91,7 @@ Med Journey Optimizer kan ni tilldela en prioritetspoäng till en resa eller kam
 
 >[!NOTE]
 >
->Prioritetspoäng är tillgängligt för inkommande kanaler: webbkanaler, appkanaler och kodbaserade kanaler. Prioritetspoäng är endast tillgänglig för kanalen **i appen**.
+>Prioritetspoäng är tillgängligt för inkommande kanaler: webbkanaler, appkanaler och kodbaserade kanaler. Prioritetspoäng är endast tillgänglig för kanalerna **i appen** och **kodbaserad**.
 
 Det är viktigt att du tilldelar en prioritetspoäng för inkommande kommunikation, som webben, mobiler och appar. Om du har flera kampanjer med samma kanalkonfiguration (t.ex. en banderoll högst upp på webbsidan) kan det vara problematiskt eftersom bara innehåll från en kampanj kan visas. Prioritetspoängen är den plats där du infogar din inställning för vilken kampanj ska visas när mottagaren kan kvalificera sig för mer än en kampanj.
 
